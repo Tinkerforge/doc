@@ -1,0 +1,31 @@
+{% raw %}
+{% from "macros.html" import tfheader %}
+{% from "macros.html" import tffooter %}
+{% endraw %}
+
+{% extends '!layout.html' %}
+
+{% block extrahead %}
+{% raw %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='jquery-ui-1.8.13.custom.cs22s', _external=True) }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css', _external=True) }}" />
+{% endraw %}
+{% endblock %}
+
+{% block relbar1 %}<div id="tfcontent"><div class="boxContent3">{% endblock %}
+{% block relbar2 %}</div></div>{% endblock %}
+
+{% block sidebarsourcelink %}{% endblock %}
+{% block sidebarsearch %}{% endblock %}
+
+{% block header %}
+{% raw %}
+{{ tfheader(g.stagingprefix, g.langs, g.username, g.current_lang, request.url, 'doc') }}
+{% endraw %}
+{% endblock %}
+
+{% block footer %}
+{% raw %}
+{{ tffooter(g.stagingprefix, g.langs, g.current_lang) }}
+{% endraw %}
+{% endblock %}
