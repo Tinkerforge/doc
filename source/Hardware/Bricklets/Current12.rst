@@ -92,8 +92,10 @@ the Ambient Light Bricklet and examples in your programming language.
 Interfaces and Coding
 ---------------------
 
-:ref:`High Level Interfaces <pi_hlpi>`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+High Level Interfaces
+^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
@@ -103,18 +105,6 @@ Interfaces and Coding
    "Java", ":ref:`API <current12_bricklet_java_api>`", ":ref:`Examples <current12_bricklet_java_examples>`", "Installation"
    "C", ":ref:`API <current12_bricklet_c_api>`", ":ref:`Examples <current12_bricklet_c_examples>`", "Installation"
    "C++", ":ref:`API <current12_bricklet_cpp_api>`", ":ref:`Examples <current12_bricklet_cpp_examples>`", "Installation"
-
-
-:ref:`Low Level Interfaces <pi_llpi>`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. csv-table::
-   :header: "Interface", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
-
-   "SPI, over Brick", "API", "Example", "Installation"
-   "I2C, over Brick", "API", "Example", "Installation"
-   "UART(serial), over Brick", "API", "Example", "Installation"
-   "Analog Voltage, directly", "\-", "Example", "\-"
 
 .. Troubleshoot
 .. ------------
