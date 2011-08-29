@@ -55,9 +55,9 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/ambient-light_dimensions.png
+.. figure:: /Images/Dimensions/ambient-light_dimensions.png
    :width: 300pt
-   :alt: alternate text
+   :alt: Ambient Light Bricklet outline and drilling plan
    :align: center
 
 
