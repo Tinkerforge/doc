@@ -14,6 +14,11 @@ There exist four types of hardware components:
    Boards to power a Stack of 
    :ref:`Bricks <product_overview_bricks>` plugged below the Stack.
 
+.. note::
+
+   See our tutorial TODOTODOTODOTODO for an explanation how to use everything
+   together.
+
 
 .. _product_overview_bricks:
 
