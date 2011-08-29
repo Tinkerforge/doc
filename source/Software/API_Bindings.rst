@@ -1,6 +1,6 @@
 .. _api_bindings:
 
-API_Bindings
+API Bindings
 ============
 
 
