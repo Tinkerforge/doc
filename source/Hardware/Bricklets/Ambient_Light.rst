@@ -1,6 +1,6 @@
 .. _ambient_light_bricklet:
 
-Ambient-Light
+Ambient Light
 =============
 
 
