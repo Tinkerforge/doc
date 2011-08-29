@@ -1,7 +1,7 @@
-.. _piezo-buzzer_bricklet:
+.. _lcd_16x2_bricklet:
 
-Piezo-Buzzer
-============
+LCD 16x2
+========
 
 
 .. raw:: html
@@ -16,15 +16,17 @@ Piezo-Buzzer
 Description
 -----------
 
-The `Piezo-Buzzer <http://en.wikipedia.org/wiki/Buzzer>`_
-:ref:`Bricklet <product_overview_bricklets>` let
-extend you the features of every :ref:`Brick <product_overview_bricks>` by 
-audio signaling. The device can output 1kHz beeps in different
-lengths. It is possible to beep a specified time or to transmit a
-`Morse Code <http://en.wikipedia.org/wiki/Morse_code>`_ string.
+This LCD :ref:`Bricklet <product_overview_bricklets>` is equipped with a
+16x2 alphanummeric chars display with blue backlight and three push buttons. 
+You can control it by connecting it to a :ref:`Brick <product_overview_bricks>`.
+The API lets you write chars or lines to the LCD, get the state of each button,
+switch the backlight on or off and configure events for each button.
 
-It is applicable different signaling applications like signal events
-("email received") or to localize a lost R/C model.
+You can use this bricklet to display any information you like to.
+For example you can use it to display song information on your PC or 
+measured values from other bricklets.
+
+
 
 Technical Specifications
 ------------------------
@@ -32,18 +34,18 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Dimensions                        25mm x 25mm (0.98" x 0.98")
+Dimensions                        80mm x 31mm (3.15" x 1.22")
 Weight
-Buzzer                            PS1420P02CT (TDK Corporation)
-Output: Beep                      Frequency 1kHz, definable duration
-Sound Pressure                    63 dB/10cm (according to datasheet)
+LCD                               Alphanummeric, 16 chars per line, 2 lines
+Backlight                         Blue, software switchable on/off
+Contrast                          Contrast voltage adjustable with potentiometer
 ================================  ============================================================
 
 Resources
 ---------
 
  * Schematic (Download)
- * PS1420P02CT Datasheet (`Download <http://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/PS%20Series%20Rev2008.pdf>`_)
+ * LCD Controller KS0066U Datasheet (`Download <http://www.asix.cz/download/pvk40/ks0066u.pdf>`_)
  * Kicad Project (Download)
 
    `Kicad Project Page <http://kicad.sourceforge.net/>`_
@@ -54,7 +56,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/piezo-buzzer_dimensions.png
+.. image:: /Images/Dimensions/lcd-16x2_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center
@@ -84,8 +86,11 @@ on device illumination. You can now go on with writing your own application.
 See :ref:`Interface and Coding <ambl_interface_coding>` section for the API of
 the Ambient Light Bricklet and examples in your programming language.
 
+Contrast
 
-.. _piezobuzzer_interface_coding:
+
+
+.. _lcd16x2_interface_coding:
 
 Interfaces and Coding
 ---------------------
@@ -97,10 +102,11 @@ Interfaces and Coding
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <piezo_buzzer_bricklet_python_api>`", ":ref:`Examples <piezo_buzzer_bricklet_python_examples>`", "Installation"
-   "Java", ":ref:`API <piezo_buzzer_bricklet_java_api>`", ":ref:`Examples <piezo_buzzer_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <piezo_buzzer_bricklet_c_api>`", ":ref:`Examples <piezo_buzzer_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <piezo_buzzer_bricklet_cpp_api>`", ":ref:`Examples <piezo_buzzer_bricklet_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <lcd_16x2_bricklet_python_api>`", ":ref:`Examples <lcd_16x2_bricklet_python_examples>`", "Installation"
+   "Java", ":ref:`API <lcd_16x2_bricklet_java_api>`", ":ref:`Examples <lcd_16x2_bricklet_java_examples>`", "Installation"
+   "C", ":ref:`API <lcd_16x2_bricklet_c_api>`", ":ref:`Examples <lcd_16x2_bricklet_c_examples>`", "Installation"
+   "C++", ":ref:`API <lcd_16x2_bricklet_cpp_api>`", ":ref:`Examples <lcd_16x2_bricklet_cpp_examples>`", "Installation"
+
 
 :ref:`Low Level Interfaces <concepts_llpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -113,13 +119,15 @@ Interfaces and Coding
    "UART(serial), over Brick", "API", "Example", "Installation"
    "Analog Voltage, directly", "\-", "Example", "\-"
 
-.. Troubleshoot
-.. ------------
 
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
+Troubleshoot
+------------
 
-.. **Solution:**
-..  * Check input voltage.
+I do not see anything on the display
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Reason:** Maybe your contrast is to low
+
+**Solution:**
+  * Set contrast as described in TODODODODODO
 

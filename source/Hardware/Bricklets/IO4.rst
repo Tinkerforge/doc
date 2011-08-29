@@ -1,7 +1,7 @@
-.. _linear-poti_bricklet:
+.. _io4_bricklet:
 
-Linear-Poti
-===========
+IO4
+===
 
 
 .. raw:: html
@@ -16,14 +16,18 @@ Linear-Poti
 Description
 -----------
 
-This :ref:`Bricklet <product_overview_bricklets>` is equipped with a linear 
-`potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`_
-("fader", "slider"). After connecting it to a :ref:`Brick <product_overview_bricks>` you
-can readout the position of the slider. Additionally you can configure different
-events triggered when the slider reaches a specific position.
+With the IO-4 :ref:`Bricklet <product_overview_bricklets>` the features of
+every :ref:`Brick <product_overview_bricks>` can be extended by external digital inputs 
+and outputs.
 
-You can use this Bricklet for purposes like speed or volume control.
+The bricklet features 1x4 pins which can be independently configured as
+digital inputs or outputs. Each input pin can additionally be configured with
+pullups or as interrupt source. 
+Via terminal blocks all signals can be accessed.
+A single terminal block deliver the switched output voltage and GND. 
 
+Human interfaces are typical applications of this bricklet since switches, push-bottons and
+LEDs can be easily connected.
 
 Technical Specifications
 ------------------------
@@ -31,10 +35,13 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Dimensions                        85mm x 25mm (3.35" x 0.98")
+Dimensions                        25mm x 25mm (0.98" x 0.98")
 Weight
-Linear potentiometer              59mm (2.32") adjustable length
-Output: Slider position           0 - 100 (slider down - slider up)
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Number of I/Os                    1x8
+I/O voltages                      Fixed 3.3V
+Update frequency                  
 ================================  ============================================================
 
 Resources
@@ -45,10 +52,13 @@ Resources
 
    `Kicad Project Page <http://kicad.sourceforge.net/>`_
 
+.. Connectivity
+.. ------------
+
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/linear-poti_dimensions.png
+.. image:: /Images/Dimensions/io-4_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center
@@ -79,7 +89,7 @@ See :ref:`Interface and Coding <ambl_interface_coding>` section for the API of
 the Ambient Light Bricklet and examples in your programming language.
 
 
-.. _linear_poti_interface_coding:
+.. _io4_interface_coding:
 
 Interfaces and Coding
 ---------------------
@@ -91,10 +101,11 @@ Interfaces and Coding
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <linear_poti_bricklet_python_api>`", ":ref:`Examples <linear_poti_bricklet_python_examples>`", "Installation"
-   "Java", ":ref:`API <linear_poti_bricklet_java_api>`", ":ref:`Examples <linear_poti_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <linear_poti_bricklet_c_api>`", ":ref:`Examples <linear_poti_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <linear_poti_bricklet_cpp_api>`", ":ref:`Examples <linear_poti_bricklet_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <io4_bricklet_python_api>`", ":ref:`Examples <io4_bricklet_python_examples>`", "Installation"
+   "Java", ":ref:`API <io4_bricklet_java_api>`", ":ref:`Examples <io4_bricklet_java_examples>`", "Installation"
+   "C", ":ref:`API <io4_bricklet_c_api>`", ":ref:`Examples <io4_bricklet_c_examples>`", "Installation"
+   "C++", ":ref:`API <io4_bricklet_cpp_api>`", ":ref:`Examples <io4_bricklet_cpp_examples>`", "Installation"
+
 
 :ref:`Low Level Interfaces <concepts_llpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

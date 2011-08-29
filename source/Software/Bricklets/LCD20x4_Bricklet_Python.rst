@@ -1,11 +1,13 @@
 ..
  #############################################################
- # This file was automatically generated on 2011-08-23.      #
+ # This file was automatically generated on 2011-08-29.      #
  #                                                           #
  # If you have a bugfix for this file and want to commit it, #
  # please fix the bug in the generator. You can find a link  #
  # to the generator git on tinkerforge.com                   #
  #############################################################
+
+.. _lcd_20x4_bricklet_python:
 
 Python - LCD20x4 Bricklet
 =========================

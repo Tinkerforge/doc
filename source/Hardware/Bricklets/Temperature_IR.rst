@@ -1,6 +1,6 @@
-.. _temperature-ir_bricklet:
+.. _temperature_ir_bricklet:
 
-Temperature-IR
+Temperature IR
 ==============
 
 

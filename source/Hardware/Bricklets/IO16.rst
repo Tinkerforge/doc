@@ -1,7 +1,7 @@
-.. _LCD-16x2_bricklet:
+.. _io16_bricklet:
 
-LCD-16x2
-========
+IO16
+====
 
 
 .. raw:: html
@@ -16,17 +16,19 @@ LCD-16x2
 Description
 -----------
 
-This LCD :ref:`Bricklet <product_overview_bricklets>` is equipped with a
-16x2 alphanummeric chars display with blue backlight and three push buttons. 
-You can control it by connecting it to a :ref:`Brick <product_overview_bricks>`.
-The API lets you write chars or lines to the LCD, get the state of each button,
-switch the backlight on or off and configure events for each button.
+With the IO-16 :ref:`Bricklet <product_overview_bricklets>` the features of
+every :ref:`Brick <product_overview_bricks>` can be extended by external digital inputs 
+and outputs.
 
-You can use this bricklet to display any information you like to.
-For example you can use it to display song information on your PC or 
-measured values from other bricklets.
+The bricklet features 2x8 pins which can be independently configured as
+digital inputs or outputs. Each input pin can additionally be configured with
+pullups or as interrupt source. The input/output voltages can be switched manually
+between 3.3V and 5V. Via terminal blocks all signals can be accessed and additional
+GND signals can be accessed. A single terminal block deliver the switched output 
+voltage. 
 
-
+Human interfaces are typical applications of this bricklet since switches, push-bottons and
+LEDs can be easily connected.
 
 Technical Specifications
 ------------------------
@@ -34,18 +36,20 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Dimensions                        80mm x 31mm (3.15" x 1.22")
+Dimensions                        75mm x 35mm (2.95" x 1.38")
 Weight
-LCD                               Alphanummeric, 16 chars per line, 2 lines
-Backlight                         Blue, software switchable on/off
-Contrast                          Contrast voltage adjustable with potentiometer
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Number of I/Os                    2x8
+I/O voltages                      Switchable between 3.3V and 5V
+Update frequency                  
 ================================  ============================================================
 
 Resources
 ---------
 
  * Schematic (Download)
- * LCD Controller KS0066U Datasheet (`Download <http://www.asix.cz/download/pvk40/ks0066u.pdf>`_)
+ * MCP23017 Datasheet (`Download <http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf>`_)
  * Kicad Project (Download)
 
    `Kicad Project Page <http://kicad.sourceforge.net/>`_
@@ -56,7 +60,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/lcd-16x2_dimensions.png
+.. image:: /Images/Dimensions/io-16_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center
@@ -86,11 +90,8 @@ on device illumination. You can now go on with writing your own application.
 See :ref:`Interface and Coding <ambl_interface_coding>` section for the API of
 the Ambient Light Bricklet and examples in your programming language.
 
-Contrast
 
-
-
-.. _lcd16x2_interface_coding:
+.. _io16_interface_coding:
 
 Interfaces and Coding
 ---------------------
@@ -102,11 +103,10 @@ Interfaces and Coding
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <lcd_16x2_bricklet_python_api>`", ":ref:`Examples <lcd_16x2_bricklet_python_examples>`", "Installation"
-   "Java", ":ref:`API <lcd_16x2_bricklet_java_api>`", ":ref:`Examples <lcd_16x2_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <lcd_16x2_bricklet_c_api>`", ":ref:`Examples <lcd_16x2_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <lcd_16x2_bricklet_cpp_api>`", ":ref:`Examples <lcd_16x2_bricklet_cpp_examples>`", "Installation"
-
+   "Python", ":ref:`API <io16_bricklet_python_api>`", ":ref:`Examples <io16_bricklet_python_examples>`", "Installation"
+   "Java", ":ref:`API <io16_bricklet_java_api>`", ":ref:`Examples <io16_bricklet_java_examples>`", "Installation"
+   "C", ":ref:`API <io16_bricklet_c_api>`", ":ref:`Examples <io16_bricklet_c_examples>`", "Installation"
+   "C++", ":ref:`API <io16_bricklet_cpp_api>`", ":ref:`Examples <io16_bricklet_cpp_examples>`", "Installation"
 
 :ref:`Low Level Interfaces <concepts_llpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -119,15 +119,13 @@ Interfaces and Coding
    "UART(serial), over Brick", "API", "Example", "Installation"
    "Analog Voltage, directly", "\-", "Example", "\-"
 
+.. Troubleshoot
+.. ------------
 
-Troubleshoot
-------------
+.. Servos dither
+.. ^^^^^^^^^^^^^
+.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
 
-I do not see anything on the display
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Reason:** Maybe your contrast is to low
-
-**Solution:**
-  * Set contrast as described in TODODODODODO
+.. **Solution:**
+..  * Check input voltage.
 

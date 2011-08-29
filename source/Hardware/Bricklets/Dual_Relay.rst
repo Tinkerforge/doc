@@ -1,7 +1,7 @@
-.. _io-16_bricklet:
+.. _dual_relay_bricklet:
 
-IO-16
-=====
+Dual Relay
+===========
 
 
 .. raw:: html
@@ -16,40 +16,42 @@ IO-16
 Description
 -----------
 
-With the IO-16 :ref:`Bricklet <product_overview_bricklets>` the features of
-every :ref:`Brick <product_overview_bricks>` can be extended by external digital inputs 
-and outputs.
+With the Dual Relay :ref:`Bricklet <product_overview_bricklets>` the features of
+every :ref:`Brick <product_overview_bricks>` can be extended by two 
+`relays <http://en.wikipedia.org/wiki/Relay>`_. Each relay has three
+terminals such that the terminal in the middle is electrically connected to 
+the terminal left or right depending on the state. 
+The state is visualized by a LED.
 
-The bricklet features 2x8 pins which can be independently configured as
-digital inputs or outputs. Each input pin can additionally be configured with
-pullups or as interrupt source. The input/output voltages can be switched manually
-between 3.3V and 5V. Via terminal blocks all signals can be accessed and additional
-GND signals can be accessed. A single terminal block deliver the switched output 
-voltage. 
+You can use this Bricklet to switch power-supplies, motors, lamps, etc.
+Consider the maximum voltage and current.
 
-Human interfaces are typical applications of this bricklet since switches, push-bottons and
-LEDs can be easily connected.
+.. warning::
+
+   Be aware that handling of higher voltages is potentially dangerous!
+
+   Note that terminals and contacts are not insulated. 
+   Do not touch when switching higher voltages. 
+   Doing so might cause electric shock.
 
 Technical Specifications
 ------------------------
 
-================================  ============================================================
-Property                          Value
-================================  ============================================================
-Dimensions                        75mm x 35mm (2.95" x 1.38")
+=================================  ============================================================
+Property                           Value
+=================================  ============================================================
+Dimensions                         45mm x 45mm (1.77" x 1.77")
 Weight
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Number of I/Os                    2x8
-I/O voltages                      Switchable between 3.3V and 5V
-Update frequency                  
-================================  ============================================================
+Current Consumption (per Channel)
+---------------------------------  ------------------------------------------------------------
+---------------------------------  ------------------------------------------------------------
+Maximum Voltage/Current            250V/10A or 125V/15A
+=================================  ============================================================
 
 Resources
 ---------
 
  * Schematic (Download)
- * MCP23017 Datasheet (`Download <http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf>`_)
  * Kicad Project (Download)
 
    `Kicad Project Page <http://kicad.sourceforge.net/>`_
@@ -60,7 +62,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/io-16_dimensions.png
+.. image:: /Images/Dimensions/dual-relay_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center
@@ -91,7 +93,7 @@ See :ref:`Interface and Coding <ambl_interface_coding>` section for the API of
 the Ambient Light Bricklet and examples in your programming language.
 
 
-.. _io16_interface_coding:
+.. _dualrelay_interface_coding:
 
 Interfaces and Coding
 ---------------------
@@ -103,10 +105,16 @@ Interfaces and Coding
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <io16_bricklet_python_api>`", ":ref:`Examples <io16_bricklet_python_examples>`", "Installation"
-   "Java", ":ref:`API <io16_bricklet_java_api>`", ":ref:`Examples <io16_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <io16_bricklet_c_api>`", ":ref:`Examples <io16_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <io16_bricklet_cpp_api>`", ":ref:`Examples <io16_bricklet_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <dual_relay_bricklet_python_api>`", ":ref:`Examples <dual_relay_bricklet_python_examples>`", "Installation"
+   "Java", ":ref:`API <dual_relay_bricklet_java_api>`", ":ref:`Examples <dual_relay_bricklet_java_examples>`", "Installation"
+   "C", ":ref:`API <dual_relay_bricklet_c_api>`", ":ref:`Examples <dual_relay_bricklet_c_examples>`", "Installation"
+   "C++", ":ref:`API <dual_relay_bricklet_cpp_api>`", ":ref:`Examples <dual_relay_bricklet_cpp_examples>`", "Installation"
+
+   "Python", "API", "Example", "Installation"
+   "Java", "API", "Example", "Installation"
+   "C", "API", "Example", "Installation"
+   "C++", "API", "Example", "Installation"
+
 
 :ref:`Low Level Interfaces <concepts_llpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

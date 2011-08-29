@@ -1,7 +1,7 @@
-.. _current-25_bricklet:
+.. _lcd_20x4_bricklet:
 
-Current-25
-==========
+LCD 20x4
+========
 
 
 .. raw:: html
@@ -16,15 +16,17 @@ Current-25
 Description
 -----------
 
-The Current-25 :ref:`Bricklet <product_overview_bricklets>` extend the features
-of an :ref:`Brick <product_overview_bricks>` by bidirectional current flow
-measurments up to 25 Ampere. 
-The measured current can be readout in `Ampere <http://en.wikipedia.org/wiki/Ampere>`_ 
-directly. Additionally events can be configured, triggered when a specified current is 
-exceeded.
+This LCD :ref:`Bricklet <product_overview_bricklets>` is equipped with a
+20x4 alphanummeric chars display with blue backlight and three push buttons. 
+You can control it by connecting it to a :ref:`Brick <product_overview_bricks>`.
+The API lets you write chars or lines to the LCD, get the state of each button,
+switch the backlight on or off and configure events for each button.
 
-Typical applications can be found in robotics. The bidirectional current 
-flow measurement is advantageous since you can distinguish between charge and discharge.
+You can use this bricklet to display any information you like to.
+For example you can use it to display song information on your PC or 
+measured values from other bricklets.
+
+
 
 Technical Specifications
 ------------------------
@@ -32,20 +34,18 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Dimensions                        25mm x 25mm (0.98" x 0.98")
+Dimensions                        98mm x 60mm (3.86" x 2.36")
 Weight
-Current Consumption
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Sensor                            ACS711 25A Version (Allegro Microsystems)
-Output: Current                   -25A to 25A, unit 10mA, resolution 12bit
+LCD                               Alphanummeric, 20 chars per line, 4 lines
+Backlight                         Blue, software switchable on/off
+Contrast                          Contrast voltage adjustable with potentiometer
 ================================  ============================================================
 
 Resources
 ---------
 
  * Schematic (Download)
- * ACS711 Datasheet (`Download <http://www.allegromicro.com/en/Products/Part_Numbers/0711/0711.pdf>`_)
+ * LCD Controller KS0066U Datasheet (`Download <http://www.asix.cz/download/pvk40/ks0066u.pdf>`_)
  * Kicad Project (Download)
 
    `Kicad Project Page <http://kicad.sourceforge.net/>`_
@@ -56,7 +56,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/current-25_dimensions.png
+.. image:: /Images/Dimensions/lcd-20x4_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center
@@ -86,8 +86,11 @@ on device illumination. You can now go on with writing your own application.
 See :ref:`Interface and Coding <ambl_interface_coding>` section for the API of
 the Ambient Light Bricklet and examples in your programming language.
 
+Contrast
 
-.. _current25_interface_coding:
+
+
+.. _lcd20x4_interface_coding:
 
 Interfaces and Coding
 ---------------------
@@ -99,10 +102,10 @@ Interfaces and Coding
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <current25_bricklet_python_api>`", ":ref:`Examples <current25_bricklet_python_examples>`", "Installation"
-   "Java", ":ref:`API <current25_bricklet_java_api>`", ":ref:`Examples <current25_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <current25_bricklet_c_api>`", ":ref:`Examples <current25_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <current25_bricklet_cpp_api>`", ":ref:`Examples <current25_bricklet_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <lcd_20x4_bricklet_python_api>`", ":ref:`Examples <lcd_20x4_bricklet_python_examples>`", "Installation"
+   "Java", ":ref:`API <lcd_20x4_bricklet_java_api>`", ":ref:`Examples <lcd_20x4_bricklet_java_examples>`", "Installation"
+   "C", ":ref:`API <lcd_20x4_bricklet_c_api>`", ":ref:`Examples <lcd_20x4_bricklet_c_examples>`", "Installation"
+   "C++", ":ref:`API <lcd_20x4_bricklet_cpp_api>`", ":ref:`Examples <lcd_20x4_bricklet_cpp_examples>`", "Installation"
 
 
 :ref:`Low Level Interfaces <concepts_llpi>`
@@ -116,13 +119,15 @@ Interfaces and Coding
    "UART(serial), over Brick", "API", "Example", "Installation"
    "Analog Voltage, directly", "\-", "Example", "\-"
 
-.. Troubleshoot
-.. ------------
 
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
+Troubleshoot
+------------
 
-.. **Solution:**
-..  * Check input voltage.
+I do not see anything on the display
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Reason:** Maybe your contrast is to low
+
+**Solution:**
+  * Set contrast as described in TODODODODODO
 
