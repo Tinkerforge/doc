@@ -1,4 +1,4 @@
-.. _rs485-extension:
+.. _rs485_extension:
 
 RS485 Extension
 ===============
