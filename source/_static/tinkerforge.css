@@ -375,3 +375,13 @@ blockquote ul li {
 ul.simple {
     color: #000;
 }
+
+div.leftside {
+    width: 380px;
+    padding: 0px 3px 0px 0px;
+    float: left;
+}
+
+div.rightside {
+    margin-left: 380px;
+}
