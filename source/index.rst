@@ -12,12 +12,12 @@ Tinkerforge Documentation
 
    Getting_Started
    Product_Overview
+   Software
 
 .. toctree::
    :maxdepth: 1
 
    Programming_Interfaces
-   Software
    Technical_Data
 
 

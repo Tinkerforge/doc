@@ -78,7 +78,7 @@ div.sphinxsidebar h3 a {
 div.sphinxsidebar h4 {
     font-family: 'Trebuchet MS', sans-serif;
     color: #00adee;
-    font-size: 1.3em;
+    font-size: 0.95em;
     font-weight: normal;
     margin: 5px 0 0 0;
     padding: 0;
@@ -220,7 +220,7 @@ pre {
 tt {
     background-color: #e5e5e5;
     padding: 0 1px 0 1px;
-    font-size: 0.95em;
+    font-size: 1.3em;
 }
 
 
@@ -263,8 +263,11 @@ a.reference:visited span  { color:#036; }
 
 a.reference tt.docutils span.pre {
     color: #222;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-weight: normal;
+    font-size: 1.25em;
+    margin-left: 0.8em;
+    line-height: 1.5em;
+    text-decoration: none;
 }
 
 a.reference tt.xref span.pre {
@@ -374,14 +377,4 @@ blockquote ul li {
 
 ul.simple {
     color: #000;
-}
-
-div.leftside {
-    width: 380px;
-    padding: 0px 3px 0px 0px;
-    float: left;
-}
-
-div.rightside {
-    margin-left: 380px;
 }
