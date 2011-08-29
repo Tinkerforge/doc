@@ -95,7 +95,7 @@ Servo Brick.
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/servo_dimensions.png
+.. image:: /Images/Dimensions/servo_brick_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

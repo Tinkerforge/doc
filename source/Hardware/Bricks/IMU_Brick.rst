@@ -93,7 +93,7 @@ IMU Brick.
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/imu_dimensions.png
+.. image:: /Images/Dimensions/imu_brick_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

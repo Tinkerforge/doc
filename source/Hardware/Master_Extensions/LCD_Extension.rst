@@ -67,7 +67,7 @@ The following picture depicts the different connection possibilities of the
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/lcd-extension_dimensions.png
+.. image:: /Images/Dimensions/lcd_extension_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

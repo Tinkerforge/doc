@@ -84,7 +84,7 @@ Chibi-Extension.
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/chibi-extension_dimensions.png
+.. image:: /Images/Dimensions/chibi_extension_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

@@ -54,7 +54,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/piezo-buzzer_dimensions.png
+.. image:: /Images/Dimensions/piezo_buzzer_bricklet_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

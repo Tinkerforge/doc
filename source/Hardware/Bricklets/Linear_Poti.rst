@@ -48,7 +48,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/linear-poti_dimensions.png
+.. image:: /Images/Dimensions/linear_poti_bricklet_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

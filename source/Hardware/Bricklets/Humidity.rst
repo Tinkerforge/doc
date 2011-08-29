@@ -56,7 +56,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/humidity_dimensions.png
+.. image:: /Images/Dimensions/humidity_bricklet_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

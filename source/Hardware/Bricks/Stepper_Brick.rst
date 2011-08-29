@@ -95,7 +95,7 @@ Stepper Brick.
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/stepper_dimensions.png
+.. image:: /Images/Dimensions/stepper_brick_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center
