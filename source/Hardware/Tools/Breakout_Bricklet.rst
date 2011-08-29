@@ -1,7 +1,7 @@
 .. _breakout_bricklet:
 
-Breakout
-========
+Breakout Bricklet
+=================
 
 
 .. raw:: html

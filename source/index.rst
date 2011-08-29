@@ -49,7 +49,6 @@ Bricklets
    Hardware/Bricklets/*
 
 * :ref:`ambient_light_bricklet` (API: :ref:`C/C++ <ambient_light_bricklet_c>`, :ref:`Java <ambient_light_bricklet_java>`, :ref:`Python <ambient_light_bricklet_python>`)
-* :ref:`breakout_bricklet`
 * :ref:`current12_bricklet` (API: :ref:`C/C++ <current12_bricklet_c>`, :ref:`Java <current12_bricklet_java>`, :ref:`Python <current12_bricklet_python>`)
 * :ref:`current25_bricklet` (API: :ref:`C/C++ <current25_bricklet_c>`, :ref:`Java <current25_bricklet_java>`, :ref:`Python <current25_bricklet_python>`)
 * :ref:`distance_ir_bricklet` (API: :ref:`C/C++ <distance_ir_bricklet_c>`, :ref:`Java <distance_ir_bricklet_java>`, :ref:`Python <distance_ir_bricklet_python>`)

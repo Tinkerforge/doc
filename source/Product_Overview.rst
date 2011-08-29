@@ -96,12 +96,12 @@ boards together to Stacks, add Master Bricks and cable based or wireless
 Extensions and can run his previous written code without any changes.
 
 .. csv-table::
-   :header: "Name", "Description", "Datasheet"
-   :widths: 15, 40, 5
+   :header: "Name", "Description", "Datasheet", "C/C++", "Python"
+   :widths: 20, 70, 5, 5, 5
 
-   "Chibi Extension", "Wireless Chibi Master Extension", ":ref:`Datasheet <chibi_extension>`"
-   "LCD Extension", "Graphic LCD for ontop Stack usage", ":ref:`Datasheet <lcd_extension>`"
-   "RS485 Extension", "Cable based RS485 Master Extension", ":ref:`Datasheet <rs485_extension>`"
+   "Chibi Extension", "Wireless Chibi Master Extension", ":ref:`Datasheet <chibi_extension>`", "", ""
+   "LCD Extension", "Graphic LCD for ontop Stack usage", ":ref:`Datasheet <lcd_extension>`", "", ""
+   "RS485 Extension", "Cable based RS485 Master Extension", ":ref:`Datasheet <rs485_extension>`", "", ""
 
 
 .. _product_overview_bricklets:
@@ -135,7 +135,6 @@ detects the new features and new software methods are available. See
    :widths: 20, 70, 5, 5, 5
 
    "Ambient Light", "Ambient Light Sensor", ":ref:`Datasheet <ambient_light_bricklet>`", ":ref:`C/C++ <ambient_light_bricklet_c>`", ":ref:`Python <ambient_light_bricklet_python>`"
-   "Breakout", "Breakout Board", ":ref:`Datasheet <breakout_bricklet>`", "", ""
    "Current12", "Bidirectional Current Sensor max. 12.5 A", ":ref:`Datasheet <current12_bricklet>`", ":ref:`C/C++ <current12_bricklet_c>`", ":ref:`Python <current12_bricklet_python>`"
    "Current25", "Bidirectional Current Sensor max. 25 A", ":ref:`Datasheet <current25_bricklet>`", ":ref:`C/C++ <current25_bricklet_c>`", ":ref:`Python <current25_bricklet_python>`"
    "Distance IR", "Measure Distances with IR Light", ":ref:`Datasheet <distance_ir_bricklet>`", ":ref:`C/C++ <distance_ir_bricklet_c>`", ":ref:`Python <distance_ir_bricklet_python>`"
@@ -174,8 +173,8 @@ boards have the same size as :ref:`Bricks <product_overview_bricks>` and are
 plugged at the bottom of the stack.
 
 .. csv-table::
-   :header: "Name", "Description", "Datasheet"
-   :widths: 20, 70, 5
+   :header: "Name", "Description", "Datasheet", "C/C++", "Python"
+   :widths: 20, 70, 5, 5, 5
 
-   "Step-Down", "Buck converter to power a Stack", ":ref:`Datasheet <step-down>`"
+   "Step-Down", "Buck converter to power a Stack", ":ref:`Datasheet <step-down>`", "", ""
 
