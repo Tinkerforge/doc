@@ -69,3 +69,10 @@ Tools
    Hardware/Tools/*
 
 
+.. toctree::
+   :glob:
+   :hidden:
+
+   Software/*
+   Software/Bricks/*
+   Software/Bricklets/*
