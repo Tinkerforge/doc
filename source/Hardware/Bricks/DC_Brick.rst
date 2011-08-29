@@ -16,30 +16,38 @@ Description
 -----------
 
 The DC :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit ARM
-microcontroller and is able to drive one 
+microcontroller and is able to control one 
 `DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`_
-with max **5A** and **28V**. The current consumption can be measured, 
-velocity and acceleration of the motor can be controlled.
-In case of overtemperature and overcurrent events are triggered.
+bi-directional with max **5A** and **28V**. The current consumption and
+power supply voltages can be measured. 
+Velocity and acceleration of the motor can be controlled.
+In case of overtemperature and overcurrent signals are triggered.
+For battery driven applications an undervoltage signal is user configureable.
+Additionally, the drive mode can be switched between Drive/Brake and 
+Drive/Coast (see :ref:`Drive Modes <dc_brick_drive_mode>`).
 
 It is compatible to other Tinkerforge 
 :ref:`Bricks <product_overview_bricks>`
-and can be used within a Stack. 
+and can be used within a stack. 
 Two :ref:`Bricklet <product_overview_bricklets>` ports 
-can be used to extend the features of this device by 
-Bricklets. 
+can be used to extend the features of this device. 
+
+The dc motor can be powered by an external powersupply connected
+directly to the Brick or by the stack internal powersupply.
+If an external powersupply is connected the Brick switches
+automatically to this powersupply.
 
 Controlling the device is possible in several ways. You can control it via 
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless 
 (**Zigbee**, **WLAN**) connections via an additional Master Brick with according 
-Master-Extension (:ref:`High Level Concept <concepts_hlpi>`). 
+Master-Extension (:ref:`High Level Concept <pi_hlpi>`). 
 
 In the future it will be possible to control the device low level via a 
 **I2C**, **SPI** or **UART (serial)** interface from other microcontroller 
-boards (:ref:`Low Level Concept <concepts_llpi>`). 
+boards (:ref:`Low Level Concept <pi_llpi>`). 
 Since the firmware is opensource it is of course possible to program the device
-directly (:ref:`On Device Programming <concepts_odpi>`). 
+directly (:ref:`On Device Programming <pi_odpi>`). 
 Currently we are not offering an on device API.
 
 Technical Specifications
@@ -52,18 +60,16 @@ Maximum Motor Current (Peak)      5A
 Minimum/Maximum Input Voltage     6V/28V
 Device Current Consumption        TBD
 --------------------------------  ------------------------------------------------------------
-
 --------------------------------  ------------------------------------------------------------
-PWM Frequency                     TBD
-Velocity Resolution               TBD
-Acceleration Resolution           :math:`\frac{1}{2^{16}}\;\frac{\text{Velocity}}{\text{s}^2}`
+PWM Frequency                     Configurable, 1-20khz, default 15khz
+Velocity                          -32767 to 32767, full reverse to full forward, 0=stop
+Acceleration                      0 to 65535, velocity/s, increment for velocity per second
 --------------------------------  ------------------------------------------------------------
-
 --------------------------------  ------------------------------------------------------------
+Bricklet Ports                    2
 Dimensions (W x D x H)            40mm x 40mm x 17mm  (1.57" x 1.57" x 0.67")
 Weight                            TBD
 ================================  ============================================================
-
 
 Resources
 ---------
@@ -74,6 +80,7 @@ Resources
 
    `Kicad Project Page <http://kicad.sourceforge.net/>`_
 
+  
 Connectivity
 ------------
 
@@ -94,22 +101,46 @@ Outline and Drilling Plan
    :align: center
 
 
-Powersupply
-^^^^^^^^^^^
+Motor Powersupply
+-----------------
 
 .. Todo: Bildchen
 
-The connected servos can be powered through the onboard power-connector
-or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a Stack.
-The Brick switches autonomously to the onboard power-connector when
-a voltage is there measured. :ref:`API <_dc_brick_python_api>`
+The connected motor can be powered through the onboard power-connector
+or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a stack.
+The Brick switches autonomously to the onboard power-connector when there
+is a voltage measured. 
 
+.. _dc_brick_drive_mode:
+
+Drive Modes
+-----------
+
+There are two possible modes of motor controls:
+ * Drive/Brake
+
+   In this mode the motor is always either driving or braking, there is no 
+   freewheeling possible. A more linear correlation between PWM and velocity 
+   is an advantage of this mode. 
+   Therefore it is possible to accelerate more precise. 
+   Typically motors can be driven with slower velocities in this mode.
+   Disadvantageous is a higher current consumption and a resulting higher
+   heat-up of the driver.
+
+ * Drive/Coast
+
+   In this mode the motor is either driving or freewheeling.
+   Advantageous is a lower current consumption and a resulting lesser heat-up.
+   Therefore it might be possible that it the control of the velocity and 
+   acceleration is less precise.
+ 
 
 Interfaces and Coding
 ---------------------
 
-:ref:`High Level Interfaces <concepts_hlpi>`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+High Level Interfaces
+^^^^^^^^^^^^^^^^^^^^^
+See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"

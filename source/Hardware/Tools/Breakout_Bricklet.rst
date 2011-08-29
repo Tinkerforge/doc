@@ -1,7 +1,7 @@
-.. _dc-adapter:
+.. _breakout_bricklet:
 
-DC-Adapter
-==========
+Breakout Bricklet
+=================
 
 
 .. raw:: html
@@ -16,11 +16,11 @@ DC-Adapter
 Description
 -----------
 
-With the Ambient Light :ref:`Bricklet <product_overview_bricklets>` the features of
-every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
-measure the ambient light. 
-The measured illuminance can be readout in `lux
-<http://en.wikipedia.org/wiki/Lux>`_ directly.
+This board is a simple breakout board. It is possible to interface all signals of our 
+:ref:`Bricklet Connector <connector_bricklet>`.
+There is no special firmware present, and this board can not be detected by any 
+:ref:`Brick <product_overview_bricks>`.
+You can use this board for your own purposes.
 
 Technical Specifications
 ------------------------
@@ -28,17 +28,14 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Dimensions
+Dimensions                        25mm x 25mm (0.98" x 0.98")
 Weight
-TBD                               TBD
-Sensor                            TEMT6000
 ================================  ============================================================
 
 Resources
 ---------
 
  * Schematic (Download)
- * TEMT6000 Datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`_)
  * Kicad Project (Download)
 
    `Kicad Project Page <http://kicad.sourceforge.net/>`_
@@ -49,9 +46,8 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/dc-adapter_dimensions.png
-   :height: 300pt
+.. image:: /Images/Dimensions/breakout_dimensions.png
+   :width: 300pt
    :alt: alternate text
    :align: center
-
 

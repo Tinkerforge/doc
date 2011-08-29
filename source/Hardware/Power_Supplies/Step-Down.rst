@@ -1,7 +1,7 @@
-.. _485-extension:
+.. _step-down:
 
-485-Extension
-=============
+Step-Down Powersupply
+=====================
 
 .. raw:: html
 
@@ -15,14 +15,20 @@
 Description
 -----------
 
-The 485-Extension is a :ref:`Master-Extension <product_overview_master_extensions>`
-which can be used to provide a :ref:`Master Bricks <master_brick>` with a
-`RS485 <http://en.wikipedia.org/wiki/RS485>`_ interface.
-Usage is only intended together with a Master Brick.
+This powersupply can plugged below a stack to power it.
+It is equipped with a high efficiency buck regulator.
+You can connect an external power source (6V-27V)
+like a battery to this device and it creates 5V for all
+:ref:`Bricks <product_overview_bricks>` and 
+:ref:`Bricklets <product_overview_bricklets>`
+of the stack.
+Besides it connects the external power source with the
+stack power signals, such that driver Bricks can use this power source
+to power external motors. The :ref:`Master Brick <master_brick>`
+which acts as master of the stack can measure the drawn current
+and the voltage of the external power source.
 
-Since RS485 is differental interface standard, information can be communicated
-over large distances. Therefore this interface is better suited to connect a
-:ref:`Stack <concepts_stack>` cable-based to a PC than USB.
+The device is short circuit protected but an external fuse is recommended.
 
 Technical Specifications
 ------------------------
@@ -30,24 +36,19 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Device Current Consumption        TBD
+Minimum/Maximum Input Voltage     6V/27V
+Maximum Input Current             TBD
+Maximum Output Current 5V Supply  3A
 --------------------------------  ------------------------------------------------------------
-
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
 Weight                            TBD
 ================================  ============================================================
 
-
-Bus Assembly
-------------
- * Picture Bus
- * explain termination
-
-
 Resources
 ---------
 
+ * AOZ1212 Datasheet (`Download <http://www.aosmd.com/res/data_sheets/AOZ1212AI.pdf>`_)
  * Schematic (Download)
  * Kicad Project (Download)
 
@@ -67,22 +68,15 @@ The following picture depicts the different connection possibilities of the
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/rs485-extension_dimensions.png
+.. image:: /Images/Dimensions/step-down_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center
 
-
-.. Powersupply
-.. ^^^^^^^^^^^
-
-.. Todo: Bildchen
-
-
 Usage
 -----
+ * explain usage with images
 
- * Explain usage
 
 Troubleshoot
 ------------

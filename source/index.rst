@@ -3,22 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Introduction
-============
+#########################
+Tinkerforge Documentation
+#########################
 
 .. toctree::
    :maxdepth: 2
 
    Getting_Started
    Product_Overview
+   Programming_Interfaces
+
+.. toctree::
+   :maxdepth: 1
+
    Technical_Data
 
 
-Products
-========
-
+******
 Bricks
-------
+******
 
 .. toctree::
    :maxdepth: 1
@@ -33,8 +37,9 @@ Bricks
 * :ref:`Servo_Brick` (API: :ref:`C/C++ <servo_brick_c>`, :ref:`Java <servo_brick_java>`, :ref:`Python <servo_brick_python>`)
 * :ref:`Stepper_Brick` (API: :ref:`C/C++ <stepper_brick_c>`, :ref:`Java <stepper_brick_java>`, :ref:`Python <stepper_brick_python>`)
 
+*********
 Bricklets
----------
+*********
 
 .. toctree::
    :maxdepth: 1
@@ -44,7 +49,6 @@ Bricklets
    Hardware/Bricklets/*
 
 * :ref:`ambient_light_bricklet` (API: :ref:`C/C++ <ambient_light_bricklet_c>`, :ref:`Java <ambient_light_bricklet_java>`, :ref:`Python <ambient_light_bricklet_python>`)
-* :ref:`breakout_bricklet`
 * :ref:`current12_bricklet` (API: :ref:`C/C++ <current12_bricklet_c>`, :ref:`Java <current12_bricklet_java>`, :ref:`Python <current12_bricklet_python>`)
 * :ref:`current25_bricklet` (API: :ref:`C/C++ <current25_bricklet_c>`, :ref:`Java <current25_bricklet_java>`, :ref:`Python <current25_bricklet_python>`)
 * :ref:`distance_ir_bricklet` (API: :ref:`C/C++ <distance_ir_bricklet_c>`, :ref:`Java <distance_ir_bricklet_java>`, :ref:`Python <distance_ir_bricklet_python>`)
@@ -62,26 +66,29 @@ Bricklets
 * :ref:`temperature_ir_bricklet` (API: :ref:`C/C++ <temperature_ir_bricklet_c>`, :ref:`Java <temperature_ir_bricklet_java>`, :ref:`Python <temperature_ir_bricklet_python>`)
 * :ref:`voltage_bricklet` (API: :ref:`C/C++ <voltage_bricklet_c>`, :ref:`Java <voltage_bricklet_java>`, :ref:`Python <voltage_bricklet_python>`)
 
-Master-Extensions
------------------
+*****************
+Master Extensions
+*****************
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   Hardware/Master-Extensions/*
+   Hardware/Master_Extensions/*
 
-Power-Supply
-------------
+**************
+Power Supplies
+**************
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   Hardware/Power-Supply/*
+   Hardware/Power_Supplies/*
 
+*****
 Tools
------
+*****
 
 .. toctree::
    :maxdepth: 1
@@ -98,9 +105,9 @@ Tools
    Software/Bricks/*
    Software/Bricklets/*
 
-
+******************
 Indices and tables
-==================
+******************
 
 * :ref:`genindex`
 * :ref:`modindex`

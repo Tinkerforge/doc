@@ -1,7 +1,7 @@
-.. _breakout_bricklet:
+.. _dc_adapter:
 
-Breakout
-========
+DC Adapter
+==========
 
 
 .. raw:: html
@@ -16,11 +16,9 @@ Breakout
 Description
 -----------
 
-This board is a simple breakout board. It is possible to interface all signals of our 
-:ref:`Bricklet Connector <connector_bricklet>`.
-There is no special firmware present, and this board can not be detected by any 
-:ref:`Brick <product_overview_bricks>`.
-You can use this board for your own purposes.
+This device is an adapter between a 5mm DC-Jack and our power plugs.
+It is intended to be used when you like to power our devices by an external
+power-supply with 5mm DC-Jacks.
 
 Technical Specifications
 ------------------------
@@ -28,7 +26,8 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Dimensions                        25mm x 25mm (0.98" x 0.98")
+Maximum Current                   3A
+Dimensions (WxLxH)                15mm x 25mm x 15mm (0.59" x 0.98" x 0.59")
 Weight
 ================================  ============================================================
 
@@ -46,8 +45,9 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/breakout_dimensions.png
-   :width: 300pt
+.. image:: /Images/Dimensions/dc-adapter_dimensions.png
+   :height: 300pt
    :alt: alternate text
    :align: center
+
 

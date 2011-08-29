@@ -16,7 +16,7 @@ Distance IR
 Description
 -----------
 
-The Dist-IR :ref:`Bricklet <product_overview_bricklets>` can extend the features of
+The Distance IR :ref:`Bricklet <product_overview_bricklets>` can extend the features of
 every :ref:`Brick <product_overview_bricks>` by the possibility to
 measure distances. The Bricklet can be attached to `Sharp <http://www.sharpsma.com>`_ 
 analog infrared proximity sensors. 
@@ -102,7 +102,7 @@ the Ambient Light Bricklet and examples in your programming language.
 Interfaces and Coding
 ---------------------
 
-:ref:`High Level Interfaces <concepts_hlpi>`
+:ref:`High Level Interfaces <pi_hlpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. csv-table::
@@ -115,7 +115,7 @@ Interfaces and Coding
    "C++", ":ref:`API <distance_ir_bricklet_cpp_api>`", ":ref:`Examples <distance_ir_bricklet_cpp_examples>`", "Installation"
 
 
-:ref:`Low Level Interfaces <concepts_llpi>`
+:ref:`Low Level Interfaces <pi_llpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. csv-table::
    :header: "Interface", "API", "Examples", "Installation"
