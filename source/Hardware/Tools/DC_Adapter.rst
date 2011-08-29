@@ -45,7 +45,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/dc-adapter_dimensions.png
+.. image:: /Images/Dimensions/dc_adapter_dimensions.png
    :height: 300pt
    :alt: alternate text
    :align: center

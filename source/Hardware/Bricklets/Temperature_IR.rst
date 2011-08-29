@@ -65,7 +65,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/temperature-ir_dimensions.png
+.. image:: /Images/Dimensions/temperature_ir_bricklet_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

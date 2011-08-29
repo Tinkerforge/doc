@@ -60,7 +60,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/io-16_dimensions.png
+.. image:: /Images/Dimensions/io16_bricklet_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

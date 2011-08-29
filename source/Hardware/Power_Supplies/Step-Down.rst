@@ -68,7 +68,7 @@ The following picture depicts the different connection possibilities of the
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/step-down_dimensions.png
+.. image:: /Images/Dimensions/step_down_powersupply_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

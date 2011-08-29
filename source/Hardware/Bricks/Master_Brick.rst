@@ -77,7 +77,7 @@ Master Brick.
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/master_dimensions.png
+.. image:: /Images/Dimensions/master_brick_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

@@ -66,7 +66,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/distir_dimensions.png
+.. image:: /Images/Dimensions/dist_ir_bricklet_dimensions.png
    :height: 300pt
    :alt: alternate text
    :align: center

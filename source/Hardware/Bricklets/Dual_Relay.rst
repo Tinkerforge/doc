@@ -62,7 +62,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/dual-relay_dimensions.png
+.. image:: /Images/Dimensions/dual_relay_bricklet_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

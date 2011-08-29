@@ -51,7 +51,7 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/voltage_dimensions.png
+.. image:: /Images/Dimensions/voltage_bricklet_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center
