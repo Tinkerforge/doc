@@ -33,24 +33,6 @@ Bricks
 * :ref:`Servo_Brick` (API: :ref:`C/C++ <servo_brick_c>`, :ref:`Java <servo_brick_java>`, :ref:`Python <servo_brick_python>`)
 * :ref:`Stepper_Brick` (API: :ref:`C/C++ <stepper_brick_c>`, :ref:`Java <stepper_brick_java>`, :ref:`Python <stepper_brick_python>`)
 
-Master-Extensions
------------------
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   Hardware/Master-Extensions/*
-
-Power-Supply
-------------
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   Hardware/Power-Supply/*
-
 Bricklets
 ---------
 
@@ -79,6 +61,24 @@ Bricklets
 * :ref:`temperature_bricklet` (API: :ref:`C/C++ <temperature_bricklet_c>`, :ref:`Java <temperature_bricklet_java>`, :ref:`Python <temperature_bricklet_python>`)
 * :ref:`temperature_ir_bricklet` (API: :ref:`C/C++ <temperature_ir_bricklet_c>`, :ref:`Java <temperature_ir_bricklet_java>`, :ref:`Python <temperature_ir_bricklet_python>`)
 * :ref:`voltage_bricklet` (API: :ref:`C/C++ <voltage_bricklet_c>`, :ref:`Java <voltage_bricklet_java>`, :ref:`Python <voltage_bricklet_python>`)
+
+Master-Extensions
+-----------------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   Hardware/Master-Extensions/*
+
+Power-Supply
+------------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   Hardware/Power-Supply/*
 
 Tools
 -----
