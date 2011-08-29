@@ -3,15 +3,21 @@
 Ambient Light
 =============
 
+.. container:: twocol 
 
-.. raw:: html
+   .. container:: leftside
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
+     .. image:: /Images/Bricklets/ambient_light_0_thumb.jpg
+        :scale: 100 %
+        :alt: Ambient Light Bricklet
+        :target: ../../_images/Bricklets/ambient_light_0_big.jpg
 
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+   .. container:: rightside
 
+     .. image:: /Images/Bricklets/ambient_light_1_thumb.jpg
+        :scale: 100 %
+        :alt: Ambient Light Bricklet
+        :target: ../../_images/Bricklets/ambient_light_1_big.jpg
 
 Description
 -----------
@@ -55,10 +61,11 @@ Resources
 Outline and Drilling Plan
 -------------------------
 
-.. figure:: /Images/Dimensions/ambient-light_dimensions.png
+.. image:: /Images/Dimensions/ambient-light_dimensions.png
    :width: 300pt
    :alt: Ambient Light Bricklet outline and drilling plan
    :align: center
+   :target: ../../_images/Dimensions/ambient-light_dimensions.png
 
 
 Test your Ambient Light Bricklet
@@ -67,10 +74,11 @@ Test your Ambient Light Bricklet
 For a simple test connect your Ambient Light Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/ambient_light_with_master_thumb.jpg
    :scale: 100 %
    :alt: alternate text
    :align: center
+   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
 After installing our software (Brickd, Brickv) you can see the connected Ambient
 Light Bricklet in the Brickv.
