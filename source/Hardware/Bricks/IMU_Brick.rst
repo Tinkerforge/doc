@@ -27,7 +27,7 @@ not a common term.
 
 It is compatible to other Tinkerforge 
 :ref:`Bricks <product_overview_bricks>`
-and can be used within a :ref:`Stack <concepts_stack>`. 
+and can be used within a Stack. 
 Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device by 
 interfacing up to two Bricklets. 

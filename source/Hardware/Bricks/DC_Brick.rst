@@ -24,7 +24,7 @@ In case of overtemperature and overcurrent events are triggered.
 
 It is compatible to other Tinkerforge 
 :ref:`Bricks <product_overview_bricks>`
-and can be used within a :ref:`Stack <concepts_stack>`. 
+and can be used within a Stack. 
 Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device by 
 Bricklets. 
@@ -100,7 +100,7 @@ Powersupply
 .. Todo: Bildchen
 
 The connected servos can be powered through the onboard power-connector
-or through a :ref:`Power-Supply Board <concepts_powersupply>` in a Stack.
+or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a Stack.
 The Brick switches autonomously to the onboard power-connector when
 a voltage is there measured. :ref:`API <_dc_brick_python_api>`
 

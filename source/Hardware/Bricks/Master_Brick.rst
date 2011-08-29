@@ -21,7 +21,7 @@ used for two purposes. First of all it is equipped with four
 applications where a great many of Bricklets are used.
 
 Secondly, the Master Brick can be used for communication purposes.
-When building a :ref:`Stack <concepts_stack>` the lowermost Master Brick
+When building a Stack the lowermost Master Brick
 acts as the master of this Stack and routes all communication between the
 boards of the Stack and the PC. Other Master Bricks in the Stack detect this 
 and does not act as master. They are only provide their attached Bricklets.
