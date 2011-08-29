@@ -1,7 +1,7 @@
-.. _chibi-extension:
+.. _step-down:
 
-Chibi-Extension
-===============
+Step-Down Powersupply
+=====================
 
 .. raw:: html
 
@@ -15,14 +15,14 @@ Chibi-Extension
 Description
 -----------
 
-The 485-Extension is a :ref:`Master-Extension <product_overview_master_extensions>`
+The 485 Extension is a :ref:`Master Extension <product_overview_master_extensions>`
 which can be used to provide a :ref:`Master Bricks <master_brick>` with a
 `RS485 <http://en.wikipedia.org/wiki/RS485>`_ interface.
 Usage is only intended together with a Master Brick.
 
 Since RS485 is differental interface standard, information can be communicated
 over large distances. Therefore this interface is better suited to connect a
-:ref:`Stack <concepts_stack>` cable-based to a PC than USB.
+Stack cable-based to a PC than USB.
 
 Technical Specifications
 ------------------------
@@ -67,7 +67,7 @@ The following picture depicts the different connection possibilities of the
 Outline and Drilling Plan
 -------------------------
 
-.. image:: /Images/Dimensions/chibi-extension_dimensions.png
+.. image:: /Images/Dimensions/step-down_dimensions.png
    :width: 300pt
    :alt: alternate text
    :align: center

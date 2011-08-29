@@ -28,17 +28,17 @@ and does not act as master. They are only provide their attached Bricklets.
 
 In the simple case the communication with a Stack is routed 
 over the USB connection of the master. This interface can be changed with 
-:ref:`Master-Extensions <product_overview_master_extensions>`. There are
-Master-Extensions for cable based or wireless interfaces. Master-Extensions
+:ref:`Master Extensions <product_overview_master_extensions>`. There are
+Master Extensions for cable based or wireless interfaces. Master Extensions
 will be plugged on the topside of the master. The master detect them
 and use this additional interface.
 
 Also it is possible to control the device low level via a **I2C**, **SPI** or
 **UART (serial)** interface from other microcontroller boards
-(:ref:`Low Level Concept <concepts_llpi>`). A direct interface for
+(:ref:`Low Level Concept <pi_llpi>`). A direct interface for
 Arduinos is provided by our :doc:`Tinkershield </Hardware/Tinkershield>`.
 Since the firmware is opensource it is of course possible to program the device
-directly (:ref:`On Device Programming <concepts_odpi>`).
+directly (:ref:`On Device Programming <pi_odpi>`).
 
 Technical Specifications
 ------------------------
@@ -98,7 +98,7 @@ beispiel
 Interfaces and Coding
 ---------------------
 
-:ref:`High Level Interfaces <concepts_hlpi>`
+:ref:`High Level Interfaces <pi_hlpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. csv-table::

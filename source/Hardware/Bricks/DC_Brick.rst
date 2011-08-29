@@ -33,13 +33,13 @@ Controlling the device is possible in several ways. You can control it via
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless 
 (**Zigbee**, **WLAN**) connections via an additional Master Brick with according 
-Master-Extension (:ref:`High Level Concept <concepts_hlpi>`). 
+Master Extension (:ref:`High Level Concept <pi_hlpi>`). 
 
 In the future it will be possible to control the device low level via a 
 **I2C**, **SPI** or **UART (serial)** interface from other microcontroller 
-boards (:ref:`Low Level Concept <concepts_llpi>`). 
+boards (:ref:`Low Level Concept <pi_llpi>`). 
 Since the firmware is opensource it is of course possible to program the device
-directly (:ref:`On Device Programming <concepts_odpi>`). 
+directly (:ref:`On Device Programming <pi_odpi>`). 
 Currently we are not offering an on device API.
 
 Technical Specifications
@@ -108,7 +108,7 @@ a voltage is there measured. :ref:`API <_dc_brick_python_api>`
 Interfaces and Coding
 ---------------------
 
-:ref:`High Level Interfaces <concepts_hlpi>`
+:ref:`High Level Interfaces <pi_hlpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. csv-table::

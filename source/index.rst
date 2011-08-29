@@ -11,6 +11,7 @@ Introduction
 
    Getting_Started
    Product_Overview
+   Programming_Interfaces
    Technical_Data
 
 
@@ -69,7 +70,7 @@ Master-Extensions
    :maxdepth: 1
    :glob:
 
-   Hardware/Master-Extensions/*
+   Hardware/Master_Extensions/*
 
 Power-Supply
 ------------
@@ -78,7 +79,7 @@ Power-Supply
    :maxdepth: 1
    :glob:
 
-   Hardware/Power-Supply/*
+   Hardware/Power_Supplies/*
 
 Tools
 -----

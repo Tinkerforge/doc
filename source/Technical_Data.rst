@@ -36,18 +36,18 @@ Description
 """""""""""
 
  * **Stack SPI** (HLPI/LLPI): SPI Bus for in Stack 
-   :ref:`Brick <concepts_brick>` <-> 
-   Master communication (:ref:`HLPI <concepts_hlpi>`) 
-   or interfacing Bricks via SPI (:ref:`LLPI <concepts_llpi>`).
+   :ref:`Brick <product_overview_brick>` <-> 
+   Master communication (:ref:`HLPI <pi_hlpi>`) 
+   or interfacing Bricks via SPI (:ref:`LLPI <pi_llpi>`).
  * **JTAG**: Debug Interface, shared with other signals. JTAG must
    not be used when a board is stacked with others.
  * **Reset**: Signal to reset a Brick, routed through a
-   :ref:`Stack <concepts_stack>` such that all Bricks can be resetted.
+   Stack such that all Bricks can be resetted.
  * **Stack Detect** (HLPI): Signal to detect the presence of a 
-   :ref:`Master-Brick <master-brick>`.
+   :ref:`Master Brick <master_brick>`.
    All Bricks except the Master-Brick have the signals on top and bottom 
    internally connected and check for a high signal (input pulldown) to detect
-   :ref:`Stack <concepts_stacks>` operation. Master-Bricks have two independent
+   Stack operation. Master-Bricks have two independent
    signals for top and bottom side. Each Master-Brick sets the top signal 
    output high and the bottom to input pulldown. If a low signal is detected on
    bottomside the Master-Brick will act as a master for the Stack. If a high
@@ -116,7 +116,7 @@ Description
 
  * **PGND**: Stack power ground signal (0V).
  * **PVCC**: Stack power signal (max. 25V) only powered by 
-   :ref:`Power-Supply <product_overview_powersupplies>` boards.
+   :ref:`Power Supply <product_overview_powersupplies>` boards.
  * **GND**: Common ground signal (0V).
  * **5V**: 5V power supply, powered by every Brick (per USB) or Power-Supply 
    boards. Since the USB voltage depents on your PC/ USB-Hub etc. It is possible

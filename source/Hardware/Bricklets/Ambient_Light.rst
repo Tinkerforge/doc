@@ -91,7 +91,7 @@ the Ambient Light Bricklet and examples in your programming language.
 Interfaces and Coding
 ---------------------
 
-:ref:`High Level Interfaces <concepts_hlpi>`
+:ref:`High Level Interfaces <pi_hlpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. csv-table::
@@ -105,7 +105,7 @@ Interfaces and Coding
    "C++", ":ref:`API <ambient_light_bricklet_cpp_api>`", ":ref:`Examples <ambient_light_bricklet_cpp_examples>`", "Installation"
 
 
-:ref:`Low Level Interfaces <concepts_llpi>`
+:ref:`Low Level Interfaces <pi_llpi>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. csv-table::
    :header: "Interface", "API", "Examples", "Installation"

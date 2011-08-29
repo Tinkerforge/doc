@@ -1,7 +1,7 @@
-.. _485-extension:
+.. _rs485_extension:
 
-485-Extension
-=============
+RS485 Extension
+===============
 
 .. raw:: html
 
@@ -15,14 +15,14 @@
 Description
 -----------
 
-The 485-Extension is a :ref:`Master-Extension <product_overview_master_extensions>`
+The RS485 Extension is a :ref:`Master Extension <product_overview_master_extensions>`
 which can be used to provide a :ref:`Master Bricks <master_brick>` with a
 `RS485 <http://en.wikipedia.org/wiki/RS485>`_ interface.
 Usage is only intended together with a Master Brick.
 
 Since RS485 is differental interface standard, information can be communicated
 over large distances. Therefore this interface is better suited to connect a
-:ref:`Stack <concepts_stack>` cable-based to a PC than USB.
+Stack cable-based to a PC than USB.
 
 Technical Specifications
 ------------------------
@@ -57,7 +57,7 @@ Connectivity
 ------------
 
 The following picture depicts the different connection possibilities of the 
-485-Extension.
+RS485 Extension.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
