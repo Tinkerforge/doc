@@ -16,27 +16,26 @@ Description
 -----------
 
 The Master :ref:`Brick <product_overview_bricks>` is a microcontroller board 
-used for two purposes. First of all it is equipped with four 
-:ref:`Bricklet <product_overview_bricklets>` ports and therefore ideally suited for 
-applications where a great many of Bricklets are used.
+used for two purposes. First of all it is equipped with **four** 
+:ref:`Bricklet <product_overview_bricklets>` ports and therefore ideally 
+suited for applications where a great many of Bricklets are used.
 
 Secondly, the Master Brick can be used for communication purposes.
-When building a Stack the lowermost Master Brick
-acts as the master of this Stack and routes all communication between the
-boards of the Stack and the PC. Other Master Bricks in the Stack detect this 
+When building a stack the lowermost Master Brick
+acts as the master of this stack and routes all communication between the
+boards of the stack and the PC. Other Master Bricks in the stack detect this 
 and does not act as master. They are only provide their attached Bricklets.
 
-In the simple case the communication with a Stack is routed 
+In the simple case the communication with a stack is routed 
 over the USB connection of the master. This interface can be changed with 
-:ref:`Master Extensions <product_overview_master_extensions>`. There are
-Master Extensions for cable based or wireless interfaces. Master Extensions
+:ref:`Master-Extensions <product_overview_master_extensions>`. There are
+Master-Extensions for cable based or wireless interfaces. Master-Extensions
 will be plugged on the topside of the master. The master detect them
 and use this additional interface.
 
-Also it is possible to control the device low level via a **I2C**, **SPI** or
-**UART (serial)** interface from other microcontroller boards
-(:ref:`Low Level Concept <pi_llpi>`). A direct interface for
-Arduinos is provided by our :doc:`Tinkershield </Hardware/Tinkershield>`.
+In the future it will be possible to control the device low level 
+via a **I2C**, **SPI** or **UART (serial)** interface from other microcontroller boards
+(:ref:`Low Level Concept <pi_llpi>`). 
 Since the firmware is opensource it is of course possible to program the device
 directly (:ref:`On Device Programming <pi_odpi>`).
 
@@ -50,6 +49,7 @@ Device Current Consumption        TBD
 --------------------------------  ------------------------------------------------------------
 
 --------------------------------  ------------------------------------------------------------
+Bricklet Ports                    4
 Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
 Weight                            TBD
 ================================  ============================================================
@@ -91,6 +91,7 @@ Outline and Drilling Plan
 Stacking
 --------
 
+Auf Tutorial verweisen.
 Todo: Hier Plug/Play beschreiben
 wann module erkannt
 beispiel
@@ -98,8 +99,9 @@ beispiel
 Interfaces and Coding
 ---------------------
 
-:ref:`High Level Interfaces <pi_hlpi>`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+High Level Interfaces
+^^^^^^^^^^^^^^^^^^^^^
+See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
@@ -112,23 +114,37 @@ Interfaces and Coding
 
 Low Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^
-.. csv-table::
-   :header: "Interface", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
+ .. note::  Comming soon! 
 
-   "SPI", "API", "Examples", "Installation"
-   "I2C", "API", "Examples", "Installation"
-   "UART(serial)", "API", "Examples", "Installation"
+  Currently you have to modify the firmware to use this feature.
+  SPI, I2C and UART interface are present and can be easily accessed with our
+  :ref:`Breakout Board <breakout_brick>`. A special firmware is planned
+  to control this brick over the different interfaces by transmitted commands.
+  
+..
+  .. csv-table::
+     :header: "Interface", "API", "Examples", "Installation"
+     :widths: 25, 8, 15, 12
+
+     "SPI", "API", "Examples", "Installation"
+     "I2C", "API", "Examples", "Installation"
+     "UART(serial)", "API", "Examples", "Installation"
 
 
 Direct on Device Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. csv-table::
-   :header: "Interface", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
 
-   "Programming", "API", "Examples", "Installation"
+ .. note:: Coming soon!
 
+  Currently no API or special documentation exists for direct programming.
+  You can use our firmware as startingpoint for your own modifications.
+
+..
+  .. csv-table::
+     :header: "Interface", "API", "Examples", "Installation"
+     :widths: 25, 8, 15, 12
+
+     "Programming", "API", "Examples", "Installation"
 
 Troubleshoot
 ------------

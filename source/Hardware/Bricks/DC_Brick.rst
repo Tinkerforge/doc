@@ -15,7 +15,7 @@ DC Brick
 Description
 -----------
 
-The DC :ref:`Brick <concepts_hardware_bricks>` is equipped with a 32-bit ARM
+The DC :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit ARM
 microcontroller and is able to control one 
 `DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`_
 bi-directional with max **5A** and **28V**. The current consumption and
@@ -27,9 +27,9 @@ Additionally, the drive mode can be switched between Drive/Brake and
 Drive/Coast (see :ref:`Drive Modes <dc_brick_drive_mode>`).
 
 It is compatible to other Tinkerforge 
-:ref:`Bricks <concepts_hardware_bricks>`
+:ref:`Bricks <product_overview_bricks>`
 and can be used within a stack. 
-Two :ref:`Bricklet <concepts_hardware_bricklets>` ports 
+Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device. 
 
 The dc motor can be powered by an external powersupply connected
@@ -41,13 +41,13 @@ Controlling the device is possible in several ways. You can control it via
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless 
 (**Zigbee**, **WLAN**) connections via an additional Master Brick with according 
-Master-Extension (:ref:`High Level Concept <concepts_software_hlpi>`). 
+Master-Extension (:ref:`High Level Concept <pi_hlpi>`). 
 
 In the future it will be possible to control the device low level via a 
 **I2C**, **SPI** or **UART (serial)** interface from other microcontroller 
-boards (:ref:`Low Level Concept <concepts_software_llpi>`). 
+boards (:ref:`Low Level Concept <pi_llpi>`). 
 Since the firmware is opensource it is of course possible to program the device
-directly (:ref:`On Device Programming <concepts_software_odpi>`). 
+directly (:ref:`On Device Programming <pi_odpi>`). 
 Currently we are not offering an on device API.
 
 Technical Specifications
@@ -107,7 +107,7 @@ Motor Powersupply
 .. Todo: Bildchen
 
 The connected motor can be powered through the onboard power-connector
-or through a :ref:`Power-Supply Board <concepts_hardware_powersupplies>` in a stack.
+or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a stack.
 The Brick switches autonomously to the onboard power-connector when there
 is a voltage measured. 
 
@@ -140,7 +140,7 @@ Interfaces and Coding
 
 High Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^^
-See :ref:`High Level Interfaces <concepts_software_hlpi>` for a detailed description.
+See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"

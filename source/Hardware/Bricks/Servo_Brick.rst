@@ -15,7 +15,7 @@ Servo Brick
 Description
 -----------
 
-The Servo :ref:`Brick <concepts_hardware_bricks>` is equipped with a 32-bit 
+The Servo :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit 
 ARM microcontroller and is able to control up to **7**
 `RC servos <http://en.wikipedia.org/wiki/Servo_Motor#RC_servos>`_
 with a maximum current up to **3A**.
@@ -24,9 +24,9 @@ servo can be measured independently.
 Additionally output PWM is configurable for each servo independently.
 
 It is compatible to other Tinkerforge 
-:ref:`Bricks <concepts_hardware_bricks>`
+:ref:`Bricks <product_overview_bricks>`
 and can be used within a stack. 
-Two :ref:`Bricklet <concepts_hardware_bricklets>` ports 
+Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device. 
 
 The servos can be powered by an external powersupply connected
@@ -38,13 +38,13 @@ Controlling the device is possible in several ways. You can control it via
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless 
 (**Zigbee**, **WLAN**) connections via an additional Master Brick with according 
-Master Extension (:ref:`High Level Concept <concepts_software_hlpi>`). 
+Master Extension (:ref:`High Level Concept <pi_hlpi>`). 
 
 In the future it will be possible to control the device low level via a 
 **I2C**, **SPI** or **UART (serial)** interface from other microcontroller 
-boards (:ref:`Low Level Concept <concepts_software_llpi>`). 
+boards (:ref:`Low Level Concept <pi_llpi>`). 
 Since the firmware is opensource it is of course possible to program the device
-directly (:ref:`On Device Programming <concepts_software_odpi>`). 
+directly (:ref:`On Device Programming <pi_odpi>`). 
 Currently we are not offering an on device API.
 
 
@@ -108,7 +108,7 @@ Servo Powersupply
 This device is equipped with an internal power-supply.
 It offers the possibilty to adjust the output voltages for the connected servos.
 The internal powersupply can be powered through the onboard power-connector
-or through a :ref:`Power-Supply Board <concepts_hardware_powersupplies>` in a stack.
+or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a stack.
 The Brick switches autonomously to the onboard power-connector when there
 is a voltage measured. Since we use a step-down switcher for the internal power-supply
 please consider that the input voltage of the Brick has to be 1V higher 
@@ -150,7 +150,7 @@ Interfaces and Coding
 
 High Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^^
-See :ref:`High Level Interfaces <concepts_software_hlpi>` for a detailed description.
+See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
@@ -163,23 +163,37 @@ See :ref:`High Level Interfaces <concepts_software_hlpi>` for a detailed descrip
 
 Low Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^
-.. csv-table::
-   :header: "Interface", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
+ .. note::  Comming soon! 
 
-   "SPI", "API", "Examples", "Installation"
-   "I2C", "API", "Examples", "Installation"
-   "UART(serial)", "API", "Examples", "Installation"
+  Currently you have to modify the firmware to use this feature.
+  SPI, I2C and UART interface are present and can be easily accessed with our
+  :ref:`Breakout Board <breakout_brick>`. A special firmware is planned
+  to control this brick over the different interfaces by transmitted commands.
+  
+..
+  .. csv-table::
+     :header: "Interface", "API", "Examples", "Installation"
+     :widths: 25, 8, 15, 12
+
+     "SPI", "API", "Examples", "Installation"
+     "I2C", "API", "Examples", "Installation"
+     "UART(serial)", "API", "Examples", "Installation"
 
 
 Direct on Device Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. csv-table::
-   :header: "Interface", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
 
-   "Programming", "API", "Examples", "Installation"
+ .. note:: Coming soon!
 
+  Currently no API or special documentation exists for direct programming.
+  You can use our firmware as startingpoint for your own modifications.
+
+..
+  .. csv-table::
+     :header: "Interface", "API", "Examples", "Installation"
+     :widths: 25, 8, 15, 12
+
+     "Programming", "API", "Examples", "Installation"
 
 Troubleshoot
 ------------

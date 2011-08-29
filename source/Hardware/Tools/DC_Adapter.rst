@@ -1,6 +1,6 @@
-.. _dc-adapter:
+.. _dc_adapter:
 
-DC-Adapter
+DC Adapter
 ==========
 
 
@@ -16,11 +16,9 @@ DC-Adapter
 Description
 -----------
 
-With the Ambient Light :ref:`Bricklet <product_overview_bricklets>` the features of
-every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
-measure the ambient light. 
-The measured illuminance can be readout in `lux
-<http://en.wikipedia.org/wiki/Lux>`_ directly.
+This device is an adapter between a 5mm DC-Jack and our power plugs.
+It is intended to be used when you like to power our devices by an external
+power-supply with 5mm DC-Jacks.
 
 Technical Specifications
 ------------------------
@@ -28,17 +26,15 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Dimensions
+Maximum Current                   3A
+Dimensions (WxLxH)                15mm x 25mm x 15mm (0.59" x 0.98" x 0.59")
 Weight
-TBD                               TBD
-Sensor                            TEMT6000
 ================================  ============================================================
 
 Resources
 ---------
 
  * Schematic (Download)
- * TEMT6000 Datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`_)
  * Kicad Project (Download)
 
    `Kicad Project Page <http://kicad.sourceforge.net/>`_

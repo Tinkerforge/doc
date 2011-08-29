@@ -1,4 +1,4 @@
-.. _rs485_extension:
+.. _rs485-extension:
 
 RS485 Extension
 ===============
@@ -15,14 +15,20 @@ RS485 Extension
 Description
 -----------
 
-The RS485 Extension is a :ref:`Master Extension <product_overview_master_extensions>`
-which can be used to provide a :ref:`Master Bricks <master_brick>` with a
-`RS485 <http://en.wikipedia.org/wiki/RS485>`_ interface.
-Usage is only intended together with a Master Brick.
+Two or more of this 
+:ref:`Master Extension <product_overview_master_extensions>` with one
+:ref:`Master Bricks <master_brick>` each
+can be used to create a `RS-485 bus <http://en.wikipedia.org/wiki/RS-485>`_
+between them. 
+Each Master Brick can be a master of a stack. Using our
+:ref:`High Level Concept <pi_hlpi>` this bus
+is completely transparent, which means that each device in this bus
+is usable like it would be connected to the PC with its own USB connection.
+You can write the same programming code.
 
 Since RS485 is differental interface standard, information can be communicated
 over large distances. Therefore this interface is better suited to connect a
-Stack cable-based to a PC than USB.
+stack cable-based to a PC than USB when it is further away.
 
 Technical Specifications
 ------------------------
@@ -31,19 +37,18 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Device Current Consumption        TBD
+Maximum Baud Rate                 TBD
 --------------------------------  ------------------------------------------------------------
-
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
 Weight                            TBD
 ================================  ============================================================
 
 
-Bus Assembly
-------------
+RS485 Bus Assembly
+------------------
  * Picture Bus
  * explain termination
-
 
 Resources
 ---------
@@ -57,7 +62,7 @@ Connectivity
 ------------
 
 The following picture depicts the different connection possibilities of the 
-RS485 Extension.
+485-Extension.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %

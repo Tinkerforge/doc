@@ -15,14 +15,14 @@ LCD Extension
 Description
 -----------
 
-The LCD Extension is a :ref:`Master Extension <product_overview_master_extensions>`
+The 485 Extension is a :ref:`Master Extension <product_overview_master_extensions>`
 which can be used to provide a :ref:`Master Bricks <master_brick>` with a
 `RS485 <http://en.wikipedia.org/wiki/RS485>`_ interface.
 Usage is only intended together with a Master Brick.
 
 Since RS485 is differental interface standard, information can be communicated
 over large distances. Therefore this interface is better suited to connect a
-Stack cable-based to a PC than USB.
+stack cable-based to a PC than USB.
 
 Technical Specifications
 ------------------------
