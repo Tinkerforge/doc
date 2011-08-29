@@ -377,11 +377,11 @@ ul.simple {
 }
 
 div.leftside {
-    width: 500px;
+    width: 380px;
     padding: 0px 3px 0px 0px;
     float: left;
 }
 
 div.rightside {
-    margin-left: 500px;
+    margin-left: 380px;
 }
