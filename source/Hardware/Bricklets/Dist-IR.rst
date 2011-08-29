@@ -16,8 +16,8 @@ Dist-IR
 Description
 -----------
 
-The Dist-IR :ref:`Bricklet <concepts_bricklets>` can extend the features of
-every :ref:`Brick <concepts_bricks>` by the possibility to
+The Dist-IR :ref:`Bricklet <product_overview_bricklets>` can extend the features of
+every :ref:`Brick <product_overview_bricks>` by the possibility to
 measure distances. The Bricklet can be attached to `Sharp <http://www.sharpsma.com>`_ 
 analog infrared proximity sensors. 
 After configuring the attached sensor you can read out the measured distance 
@@ -76,7 +76,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

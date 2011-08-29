@@ -10,15 +10,9 @@ Introduction
    :maxdepth: 2
 
    Getting_Started
-   Concepts
+   Product_Overview
    Technical_Data
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 Products
 ========
@@ -76,3 +70,11 @@ Tools
    Software/*
    Software/Bricks/*
    Software/Bricklets/*
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

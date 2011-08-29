@@ -1,32 +1,21 @@
-Tinkerforge Documentation
--------------------------
-
-.. toctree::
-   :maxdepth: 2
-
-   Getting_Started
-   Technical_Data
-
-
-Products
---------
+Product Overview
+----------------
 
 There exist four types of hardware components:
- * :ref:`Bricks <concepts_bricks>`: 
+ * :ref:`Bricks <product_overview_bricks>`: 
    Stackable microcontroller boards for sensing and controlling purposes.
- * :ref:`Master-Extensions <concepts_master-extensions>`:
+ * :ref:`Master-Extensions <product_overview_master_extensions>`:
    Boards which extend the communication interfaces of a
    :ref:`Master-Brick <master_brick>`.
- * :ref:`Bricklets <concepts_bricklets>`:
+ * :ref:`Bricklets <product_overview_bricklets>`:
    Non-stackable sensor/actor boards which extend the features of a 
-   :ref:`Brick <concepts_bricks>`.
- * :ref:`Power-Supplys <concepts_power-supplys>`:
-   Boards to power a
-   :ref:`Stack <concepts_stacks>` of 
-   :ref:`Bricks <concepts_bricks>` plugged below the Stack.
+   :ref:`Brick <product_overview_bricks>`.
+ * :ref:`Power-Supplys <product_overview_powersupplies>`:
+   Boards to power a Stack of 
+   :ref:`Bricks <product_overview_bricks>` plugged below the Stack.
 
 
-.. _concepts_bricks:
+.. _product_overview_bricks:
 
 Bricks
 ^^^^^^
@@ -37,14 +26,13 @@ Bricks
 
 Bricks are 4 x 4cm (1.57" x 1.57") boards equipped with a 32bit
 microcontroller, an USB port, two status LEDs, connectors for 
-:ref:`stacking <concepts_stacks>`
-and up to four connectors for :ref:`Bricklets <concepts_bricklets>`. 
+stacking and up to four connectors for :ref:`Bricklets <product_overview_bricklets>`. 
 There are Bricks which perform complex 
 sensor tasks (e.g. :ref:`IMU-Brick <imu_brick>`), 
 communicate (e.g. :ref:`Master-Brick <master_brick>`) 
 and driving motors (e.g. :ref:`DC-Brick <dc_brick>`).
 
-Bricks can be plugged together to a :ref:`Stack <concepts_stacks>`.
+Bricks can be plugged together to a Stack.
 A :ref:`Master-Brick <master_brick>`
 at the bottom of this Stack can control all boards within the Stack. 
 This master routes the messages between the boards in the Stack and the PC 
@@ -52,13 +40,13 @@ This master routes the messages between the boards in the Stack and the PC
 For the user it behaves as all Bricks are connected seperately over USB with
 the PC. The interface between PC and the Master-Brick can be the USB 
 connection of the master. This connection can be changed by the usage of 
-:ref:`Master-Extensions <concepts_master-extensions>`. There are
+:ref:`Master-Extensions <product_overview_master_extensions>`. There are
 Master-Extensions for cable-based or wireless interfaces.
 The boards of a Stack can be powered by the master of the Stack but this is
 limited. Large Stacks might draw to much power. Therefore special
-:ref:`Power-Supplys <concepts_power-supplys>` exist. These boards
+:ref:`Power-Supplys <product_overview_powersupplies>` exist. These boards
 will connected below the Stack and power it.
-See :ref:`Building a Stack <concepts_stacks>` for more information
+See TODO Tutorial Stacking for more information
 about Stacks.
 
 Besides the :ref:`High Level Programming Interface <concepts_hlpi>` it is also
@@ -131,7 +119,7 @@ or :ref:`On Device Programming Interface <concepts_hlpi>` concept.
 	</table>
 
 
-.. _concepts_master_extensions:
+.. _product_overview_master_extensions:
 
 Master-Extensions
 ^^^^^^^^^^^^^^^^^
@@ -142,13 +130,13 @@ Master-Extensions
 
 When using our :ref:`High Level Programming Interface <concepts_hlpi>` concept
 :ref:`Master-Bricks <master_brick>` can route messages between 
-:ref:`Bricks <concepts_bricks>` and the PC. To establish a connection 
+:ref:`Bricks <product_overview_bricks>` and the PC. To establish a connection 
 between an PC and the Master-Brick typically the USB port is used.
 Master-Extensions can be utilized to change the interface of a Master-Brick.
 There are cable based or wireless Master-Extensions available. The usage of the
 different interfaces is transparent for the user. 
 It behaves such as every board of the 
-:ref:`Stack <concepts_stacks>` is directly connected to the 
+Stack is directly connected to the 
 PC with its USB connection. This means:
 
 The user can develop his application with all
@@ -157,7 +145,7 @@ boards together to Stacks, add Master-Bricks and cable based or wireless
 Extensions and can run his previous written code without any changes.
 
 
-.. _concepts_bricklets:
+.. _product_overview_bricklets:
 
 Bricklets
 ^^^^^^^^^
@@ -166,14 +154,14 @@ Bricklets
    :alt: Chibi-Extension
 
 Bricklets can be used to extend the features of a 
-:ref:`Brick <concepts_bricks>`. There are Bricklets to measure rotation,
+:ref:`Brick <product_overview_bricks>`. There are Bricklets to measure rotation,
 voltage, current, ambient light and other physical values. 
 Also there are Bricklets for control purposes like
 switching relays, digital Input and Output and drawing on LCDs. 
 
-Unlike :ref:`Bricks <concepts_bricks>`
+Unlike :ref:`Bricks <product_overview_bricks>`
 Bricklets have no fixed size. Each Bricklet has the size it needs.
-Each :ref:`Brick <concepts_bricks>` has up to four connectors for Bricklets.
+Each :ref:`Brick <product_overview_bricks>` has up to four connectors for Bricklets.
 You can easily connect the Bricklet with the supplied cable. The Brick than
 detects the new features and new software methods are available. See 
 :ref:`High Level Programming Interface <concepts_hlpi>` for more information.
@@ -206,7 +194,7 @@ Boards
 :ref:`Voltage <voltage_bricklet>`
 
 
-.. _concepts_powersupplies:
+.. _product_overview_powersupplies:
 
 Power-Supply
 ^^^^^^^^^^^^
@@ -214,8 +202,7 @@ Power-Supply
    :scale: 100 %
    :alt: Step-Down Powersupply
 
-A stack (see section :ref:`Brick <concepts_bricks>`, 
-:ref:`Building a Stack <concepts_building a stack>`) can be powered by the
+A stack can be powered by the
 master of the stack over its USB connection (if connected). 
 This option is of course limited by the USB specification (500mA). 
 A large stack may need more than these 500mA.
@@ -223,16 +210,6 @@ A large stack may need more than these 500mA.
 To provide greater currents Power-Supply boards are available.
 These boards power the stack and can additionally be used to supply the power
 for driver bricks (e.g. :ref:`DC-Brick <dc_brick>`). These Power-Supply
-boards have the same size as :ref:`Bricks <concepts_bricks>` and are
+boards have the same size as :ref:`Bricks <product_overview_bricks>` and are
 mounted at the bottom of the stack.
 
-
-
-
-
-Indices and tables
-------------------
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

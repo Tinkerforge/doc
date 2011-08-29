@@ -17,8 +17,8 @@ Description
 -----------
 
 The `Piezo-Buzzer <http://en.wikipedia.org/wiki/Buzzer>`_
-:ref:`Bricklet <concepts_bricklets>` let
-extend you the features of every :ref:`Brick <concepts_bricks>` by 
+:ref:`Bricklet <product_overview_bricklets>` let
+extend you the features of every :ref:`Brick <product_overview_bricks>` by 
 audio signaling. The device can output 1kHz beeps in different
 lengths. It is possible to beep a specified time or to transmit a
 `Morse Code <http://en.wikipedia.org/wiki/Morse_code>`_ string.
@@ -64,7 +64,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

@@ -16,8 +16,8 @@ Dual-Relay
 Description
 -----------
 
-With the Dual Relay :ref:`Bricklet <concepts_bricklets>` the features of
-every :ref:`Brick <concepts_bricks>` can be extended by two 
+With the Dual Relay :ref:`Bricklet <product_overview_bricklets>` the features of
+every :ref:`Brick <product_overview_bricks>` can be extended by two 
 `relays <http://en.wikipedia.org/wiki/Relay>`_. Each relay has three
 terminals such that the terminal in the middle is electrically connected to 
 the terminal left or right depending on the state. 
@@ -72,7 +72,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

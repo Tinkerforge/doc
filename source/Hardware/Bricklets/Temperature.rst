@@ -16,8 +16,8 @@ Temperature
 Description
 -----------
 
-With the Temperature :ref:`Bricklet <concepts_bricklets>` the features of
-every :ref:`Brick <concepts_bricks>` can be extended by the possibility to
+With the Temperature :ref:`Bricklet <product_overview_bricklets>` the features of
+every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
 measure the temperatures. 
 The measured illuminance can be readout in `°C
 <http://en.wikipedia.org/wiki/Degree_Celsius>`_ directly.
@@ -65,7 +65,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

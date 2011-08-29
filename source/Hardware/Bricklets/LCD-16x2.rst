@@ -16,9 +16,9 @@ LCD-16x2
 Description
 -----------
 
-This LCD :ref:`Bricklet <concepts_bricklets>` is equipped with a
+This LCD :ref:`Bricklet <product_overview_bricklets>` is equipped with a
 16x2 alphanummeric chars display with blue backlight and three push buttons. 
-You can control it by connecting it to a :ref:`Brick <concepts_bricks>`.
+You can control it by connecting it to a :ref:`Brick <product_overview_bricks>`.
 The API lets you write chars or lines to the LCD, get the state of each button,
 switch the backlight on or off and configure events for each button.
 
@@ -66,7 +66,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

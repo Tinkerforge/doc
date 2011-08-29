@@ -16,8 +16,8 @@ Joystick
 Description
 -----------
 
-This :ref:`Bricklet <concepts_bricklets>` can be connected to every 
-:ref:`Brick <concepts_bricks>` and can be used as input device. 
+This :ref:`Bricklet <product_overview_bricklets>` can be connected to every 
+:ref:`Brick <product_overview_bricks>` and can be used as input device. 
 It is two directional moveable and equipped with a push button.
 You can readout the position of the stick (X/Y coordinates) and
 the state of the button. Additionally you can configure events triggered
@@ -61,7 +61,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

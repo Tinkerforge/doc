@@ -16,8 +16,8 @@ Voltage
 Description
 -----------
 
-With the Voltage :ref:`Bricklet <concepts_bricklets>` the features of
-every :ref:`Brick <concepts_bricks>` can be extended by the possibility to
+With the Voltage :ref:`Bricklet <product_overview_bricklets>` the features of
+every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
 measure the voltages. It is equipped with a terminal block which let you 
 easily connect the voltage to be measured. The voltage can be readout in `Volt
 <http://en.wikipedia.org/wiki/Volt>`_ directly. Events can be defined which
@@ -61,7 +61,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

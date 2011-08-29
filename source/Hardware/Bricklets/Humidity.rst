@@ -16,8 +16,8 @@ Humidity
 Description
 -----------
 
-With the Humidity :ref:`Bricklet <concepts_bricklets>` the features of
-every :ref:`Brick <concepts_bricks>` can be extended by the possibility to
+With the Humidity :ref:`Bricklet <product_overview_bricklets>` the features of
+every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
 measure the `relative humidity <http://en.wikipedia.org/wiki/Relative_humidity>`_. 
 The measured humidity can be readout in percent directly, no conversions are 
 necessary. You can configure events triggered when a particular humidity threshold 
@@ -66,7 +66,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

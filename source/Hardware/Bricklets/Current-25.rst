@@ -16,8 +16,8 @@ Current-25
 Description
 -----------
 
-The Current-25 :ref:`Bricklet <concepts_bricklets>` extend the features
-of an :ref:`Brick <concepts_bricks>` by bidirectional current flow
+The Current-25 :ref:`Bricklet <product_overview_bricklets>` extend the features
+of an :ref:`Brick <product_overview_bricks>` by bidirectional current flow
 measurments up to 25 Ampere. 
 The measured current can be readout in `Ampere <http://en.wikipedia.org/wiki/Ampere>`_ 
 directly. Additionally events can be configured, triggered when a specified current is 
@@ -66,7 +66,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

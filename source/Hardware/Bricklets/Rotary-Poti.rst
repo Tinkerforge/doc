@@ -16,9 +16,9 @@ Rotary-Poti
 Description
 -----------
 
-This :ref:`Bricklet <concepts_bricklets>` is equipped with a 1-turn rotary 
+This :ref:`Bricklet <product_overview_bricklets>` is equipped with a 1-turn rotary 
 `potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`_. 
-After connecting it to a :ref:`Brick <concepts_bricks>` you
+After connecting it to a :ref:`Brick <product_overview_bricks>` you
 can readout the position of the potentiometer. Additionally you can configure 
 different events triggered when the potentiometer reaches a specific position.
 
@@ -58,7 +58,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

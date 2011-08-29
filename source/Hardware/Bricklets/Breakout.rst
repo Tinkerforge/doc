@@ -19,7 +19,7 @@ Description
 This board is a simple breakout board. It is possible to interface all signals of our 
 :ref:`Bricklet Connector <connector_bricklet>`.
 There is no special firmware present, and this board can not be detected by any 
-:ref:`Brick <concepts_bricks>`.
+:ref:`Brick <product_overview_bricks>`.
 You can use this board for your own purposes.
 
 Technical Specifications

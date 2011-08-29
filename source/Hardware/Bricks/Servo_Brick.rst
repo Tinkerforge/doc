@@ -15,13 +15,13 @@ Servo Brick
 Description
 -----------
 
-The Servo :ref:`Brick <concepts_bricks>` is a microcontroller board 
+The Servo :ref:`Brick <product_overview_bricks>` is a microcontroller board 
 that is able to control 
 `RC servo <http://en.wikipedia.org/wiki/Servo_Motor#RC_servos>`_
 motors. It is compatible to other Tinkerforge 
-:ref:`Bricks <concepts_bricks>`
+:ref:`Bricks <product_overview_bricks>`
 and can be used within a :ref:`Stack <concepts_stack>`. 
-Two :ref:`Bricklet <concepts_bricklets>` ports 
+Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device by 
 interfacing up to two Bricklets. The Brick can drive up to **7 Servos** with 
 a maximum current up to **3A**. The current consumption of each Servo 

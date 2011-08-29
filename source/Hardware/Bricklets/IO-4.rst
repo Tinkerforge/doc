@@ -16,8 +16,8 @@ IO-4
 Description
 -----------
 
-With the IO-4 :ref:`Bricklet <concepts_bricklets>` the features of
-every :ref:`Brick <concepts_bricks>` can be extended by external digital inputs 
+With the IO-4 :ref:`Bricklet <product_overview_bricklets>` the features of
+every :ref:`Brick <product_overview_bricks>` can be extended by external digital inputs 
 and outputs.
 
 The bricklet features 1x4 pins which can be independently configured as
@@ -68,7 +68,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

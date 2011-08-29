@@ -15,7 +15,7 @@ Step-Down Powersupply
 Description
 -----------
 
-The 485-Extension is a :ref:`Master-Extension <concepts_master-extensions>`
+The 485-Extension is a :ref:`Master-Extension <product_overview_master_extensions>`
 which can be used to provide a :ref:`Master Bricks <master_brick>` with a
 `RS485 <http://en.wikipedia.org/wiki/RS485>`_ interface.
 Usage is only intended together with a Master Brick.

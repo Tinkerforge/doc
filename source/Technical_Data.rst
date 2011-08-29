@@ -116,7 +116,7 @@ Description
 
  * **PGND**: Stack power ground signal (0V).
  * **PVCC**: Stack power signal (max. 25V) only powered by 
-   :ref:`Power-Supply <concepts_power-supplys>` boards.
+   :ref:`Power-Supply <product_overview_powersupplies>` boards.
  * **GND**: Common ground signal (0V).
  * **5V**: 5V power supply, powered by every Brick (per USB) or Power-Supply 
    boards. Since the USB voltage depents on your PC/ USB-Hub etc. It is possible

@@ -15,9 +15,9 @@ Master Brick
 Description
 -----------
 
-The Master :ref:`Brick <concepts_bricks>` is a microcontroller board 
+The Master :ref:`Brick <product_overview_bricks>` is a microcontroller board 
 used for two purposes. First of all it is equipped with four 
-:ref:`Bricklet <concepts_bricklets>` ports and therefore ideally suited for 
+:ref:`Bricklet <product_overview_bricklets>` ports and therefore ideally suited for 
 applications where a great many of Bricklets are used.
 
 Secondly, the Master Brick can be used for communication purposes.
@@ -28,7 +28,7 @@ and does not act as master. They are only provide their attached Bricklets.
 
 In the simple case the communication with a Stack is routed 
 over the USB connection of the master. This interface can be changed with 
-:ref:`Master-Extensions <concepts_master-extensions>`. There are
+:ref:`Master-Extensions <product_overview_master_extensions>`. There are
 Master-Extensions for cable based or wireless interfaces. Master-Extensions
 will be plugged on the topside of the master. The master detect them
 and use this additional interface.

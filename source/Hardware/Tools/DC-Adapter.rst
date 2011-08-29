@@ -16,8 +16,8 @@ DC-Adapter
 Description
 -----------
 
-With the Ambient Light :ref:`Bricklet <concepts_bricklets>` the features of
-every :ref:`Brick <concepts_bricks>` can be extended by the possibility to
+With the Ambient Light :ref:`Bricklet <product_overview_bricklets>` the features of
+every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
 measure the ambient light. 
 The measured illuminance can be readout in `lux
 <http://en.wikipedia.org/wiki/Lux>`_ directly.

@@ -16,7 +16,7 @@ Temperature-IR
 Description
 -----------
 
-The Temperature-IR :ref:`Bricklet <concepts_bricklets>` is equipped with a
+The Temperature-IR :ref:`Bricklet <product_overview_bricklets>` is equipped with a
 `infrared thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`_.
 It uses thermal radiation emitted by the measured object. The
 `emmissivity <http://en.wikipedia.org/wiki/Emissivity>`_ of an object is
@@ -75,7 +75,7 @@ Test your Ambient Light Bricklet
 --------------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <concepts_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

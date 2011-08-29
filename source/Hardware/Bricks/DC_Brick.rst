@@ -15,7 +15,7 @@ DC Brick
 Description
 -----------
 
-The DC :ref:`Brick <concepts_bricks>` is equipped with a 32-bit ARM
+The DC :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit ARM
 microcontroller and is able to drive one 
 `DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`_
 with max **5A** and **28V**. The current consumption can be measured, 
@@ -23,9 +23,9 @@ velocity and acceleration of the motor can be controlled.
 In case of overtemperature and overcurrent events are triggered.
 
 It is compatible to other Tinkerforge 
-:ref:`Bricks <concepts_bricks>`
+:ref:`Bricks <product_overview_bricks>`
 and can be used within a :ref:`Stack <concepts_stack>`. 
-Two :ref:`Bricklet <concepts_bricklets>` ports 
+Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device by 
 Bricklets. 
 
