@@ -34,7 +34,7 @@ Controlling the device is possible in several ways. You can control it via
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless 
 (**Zigbee**, **WLAN**) connections via a Master Brick with according 
-Master Extension (:ref:`High Level Concept <_pi_hlpi>`). 
+Master Extension (:ref:`High Level Concept <pi_hlpi>`). 
 Also it is possible to control the device low level via a **I2C**, **SPI** or
 **UART (serial)** interface from other microcontroller boards
 (:ref:`Low Level Concept <pi_llpi>`). A direct interface for
