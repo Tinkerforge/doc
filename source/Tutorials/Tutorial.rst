@@ -1,5 +1,5 @@
-High Level Programming Tutorial
-===============================
+Tutorial
+========
 
 TBD
 
