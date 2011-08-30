@@ -132,8 +132,8 @@ Generally, fast decay mode (small value) will be noisier but also
 allow higher motor speeds.
 
 
-Interfaces and Coding
----------------------
+Programming Interfaces
+----------------------
 
 High Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^^

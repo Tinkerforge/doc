@@ -83,17 +83,17 @@ Light Bricklet in the Brickv.
 
 Click on the Ambient Light tab and see how the measured values change dependend 
 on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_interface_coding>` section for the API of
+See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
 the Ambient Light Bricklet and examples in your programming language.
 
 Contrast
 
 
 
-.. _lcd20x4_interface_coding:
+.. _lcd20x4_programming_interfaces:
 
-Interfaces and Coding
----------------------
+Programming Interfaces
+----------------------
 
 High Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^^

@@ -138,15 +138,15 @@ Brick in the Brickv.
 
 Click on the Servo Brick tab and control the connected servo.
 You can now go on with writing your own application.
-See :ref:`Interface and Coding <servo_interface_coding>` section for the API of
+See :ref:`Interface and Coding <servo_programming_interfaces>` section for the API of
 the Servo Brick and examples in your programming language.
 
 
-.. _servo_interface_coding:
+.. _servo_programming_interfaces:
 
 
-Interfaces and Coding
----------------------
+Programming Interfaces
+----------------------
 
 High Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^^

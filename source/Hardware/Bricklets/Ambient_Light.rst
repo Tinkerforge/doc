@@ -91,14 +91,14 @@ approximately like in the screenshot below.
    :target: ../../_images/Bricklets/ambient_light_brickv.png
 
 As a next step you might pick your favorite of the available programming
-languages (see :ref:`below <ambl_interface_coding>`) and understand and 
+languages (see :ref:`below <ambl_programming_interfaces>`) and understand and 
 execute one of the available examples. From there it should be straight 
 forward to integrate the Ambient Light Bricklet into your project.
 
-.. _ambl_interface_coding:
+.. _ambl_programming_interfaces:
 
-Interfaces and Coding
----------------------
+Programming Interfaces
+----------------------
 
 High Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^^

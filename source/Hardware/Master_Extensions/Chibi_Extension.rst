@@ -20,9 +20,9 @@ This board is equipped with a AT86RF212 900Mhz Transceiver of
 for long range `Zigbee <http://en.wikipedia.org/wiki/Zigbee>`_ networks.
 Since Zigbee licences are not GPL compatible we decided to use a free implementation
 by Akriba. See this 
-`article <http://freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`_
+`article <http://freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`__
 for more information about chibi. In this 
-`article <http://freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`_
+`article <http://freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`__
 the GPL problem of Zigbee is explained.
 
 Two or more of this 

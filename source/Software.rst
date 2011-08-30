@@ -7,4 +7,5 @@ Software
    Software/Brickd
    Software/Brickv
    Software/IPConnection
+   Software/API_Bindings
 

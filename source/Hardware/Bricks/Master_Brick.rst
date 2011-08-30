@@ -96,8 +96,8 @@ Todo: Hier Plug/Play beschreiben
 wann module erkannt
 beispiel
 
-Interfaces and Coding
----------------------
+Programming Interfaces
+----------------------
 
 High Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^^
