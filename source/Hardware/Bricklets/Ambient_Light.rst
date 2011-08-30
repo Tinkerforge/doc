@@ -50,49 +50,50 @@ Resources
 ---------
 
  * Schematic (Download)
- * TEMT6000 Datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`_)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
-
-.. Connectivity
-.. ------------
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/ambient_light_bricklet_dimensions.png
-   :width: 300pt
-   :alt: Ambient Light Bricklet outline and drilling plan
-   :align: center
-   :target: ../../_images/Dimensions/ambient-light_dimensions.png
-
+ * Outline and drilling plan (`Download <../../_images/Dimensions/ambient-light_dimensions.png>`__)
+ * TEMT6000 datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`__)
+ * `Kicad <http://kicad.sourceforge.net/>`__ Project (Download)
 
 Test your Ambient Light Bricklet
 --------------------------------
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+To test your Ambient Light Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial). 
+The former is a bridge between the Bricks/Bricklets and the programming 
+language API bindings (you need this in any case if you want to use the 
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Now you can connect your Ambient Light Bricklet to any
+:ref:`Brick <product_overview_bricks>`. You should have received a suitable
+cable with the Bricklet. 
 
 .. image:: /Images/Bricklets/ambient_light_with_master_thumb.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Ambient Light Bricklet connected to Master Brick
    :align: center
    :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB,
+you should see a tab named "Ambient Light" in the Brick Viewer after you
+pressed "connect".
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+If everything went as expected you can now see the exact illuminance in lux,
+a graphical representation of the illuminance and a graph that shows the
+illuminance over time. A good test of the sensor is to darken the room and
+slowly move a flashlight over the sensor, the graph should then look
+approximately like in the screenshot below.
+
+.. image:: /Images/Bricklets/ambient_light_brickv.png
    :scale: 100 %
-   :alt: alternate text
+   :alt: Ambient Light Bricklet view in Brick Viewer
    :align: center
+   :target: ../../_images/Bricklets/ambient_light_brickv.png
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_interface_coding>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
-
+As a next step you might pick your favorite of the available programming
+languages (see :ref:`below <ambl_interface_coding>`) and understand and 
+execute one of the available examples. From there it should be straight 
+forward to integrate the Ambient Light Bricklet into your project.
 
 .. _ambl_interface_coding:
 

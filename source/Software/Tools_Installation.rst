@@ -3,6 +3,7 @@
 Tools Installation
 ==================
 
+.. _tools_installation_brickdv:
 
 Brickd/ Brickv
 --------------
