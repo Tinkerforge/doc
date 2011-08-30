@@ -6,12 +6,56 @@ Current25
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
+	<div id="container">
+	<!-- Start Advanced Gallery Html Containers -->
+	<div id="gallery2" class="content">
+	<div id="controls" class="controls"></div>
+	<div class="slideshow-container">
+	<div id="loading" class="loader"></div>
+	<div id="slideshow" class="slideshow"></div>
+	</div>
+	<div id="caption" class="caption-container"></div>
+	</div>
+	<div id="thumbs" class="navigation">
+	<ul class="thumbs noscript">
+	<li>
+	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #0">
+	<img src="../../_images/test_k.jpg" alt="Title #0" />
+	</a>
+	</li>
 
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+	<li>
+	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #1">
+	<img src="../../_images/test_k.jpg" alt="Title #1" />
+	</a>
+	</li>
+	<li>
+	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #0">
+	<img src="../../_images/test_k.jpg" alt="Title #0" />
+	</a>
+	</li>
 
+	<li>
+	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #1">
+	<img src="../../_images/test_k.jpg" alt="Title #1" />
+	</a>
+	</li>
+	<li>
+	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #0">
+	<img src="../../_images/test_k.jpg" alt="Title #0" />
+	</a>
+	</li>
+
+	<li>
+	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #1">
+	<img src="../../_images/test_k.jpg" alt="Title #1" />
+	</a>
+	</li>
+
+	</ul>
+	</div>
+	<div style="clear: both;"></div>
+	</div>
 
 Description
 -----------

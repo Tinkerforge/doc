@@ -21,6 +21,14 @@
 {% block header %}
 {% raw %}
 {{ tfheader(g.stagingprefix, g.langs, g.username, g.current_lang, request.url, 'doc') }}
+<!-- batti -->
+<link rel="stylesheet" href="../../_static/galleriffic.css" type="text/css" />
+<script type="text/javascript" src="../../_static/jquery.galleriffic.js"></script>
+<script type="text/javascript" src="../../_static/jquery.opacityrollover.js"></script>
+<script type="text/javascript">
+	document.write('<style>.noscript { display: none; }</style>');
+</script>
+<script type="text/javascript" src="../../_static/gallery.js"></script>
 {% endraw %}
 {% endblock %}
 
