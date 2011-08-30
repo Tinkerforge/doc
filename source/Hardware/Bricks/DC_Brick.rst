@@ -135,8 +135,8 @@ There are two possible modes of motor controls:
    acceleration is less precise.
  
 
-Interfaces and Coding
----------------------
+Programming Interfaces
+----------------------
 
 High Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^^

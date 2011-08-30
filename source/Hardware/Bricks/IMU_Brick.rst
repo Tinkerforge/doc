@@ -104,8 +104,8 @@ IMU Calibration
 
 TBD
 
-Interfaces and Coding
----------------------
+Programming Interfaces
+----------------------
 
 High Level Interfaces
 ^^^^^^^^^^^^^^^^^^^^^
