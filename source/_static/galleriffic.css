@@ -67,8 +67,8 @@ div.slideshow img {
 div.download {
 }
 div.caption-container {
-	position: absolute;
-	left:700px; top:527px; with:32px; height:32px;
+	position: relative;
+	left:0px; top:0px; with:32px; height:32px;
 	clear: left;
 	height: 15px; /* batti 75px; */
 }
@@ -76,8 +76,8 @@ span.image-caption {
 	display: block;
 	position: absolute;
 	width: 450px;
-	top: -40px;
-	left: -5px;
+	top: -30px;
+	left: 5px;
 }
 div.caption {
 	padding: 0px;
