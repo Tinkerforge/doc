@@ -46,10 +46,10 @@ Output: Illumination              0-900 lux, unit 0.1 lux, resolution 12bit
 Resources
 ---------
 
- * Schematic (Download)
- * Outline and drilling plan (`Download <../../_images/Dimensions/ambient-light_dimensions.png>`__)
- * TEMT6000 datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`__)
- * `Kicad <http://kicad.sourceforge.net/>`__ Project (Download)
+* Schematic (Download)
+* Outline and drilling plan (`Download <../../_images/Dimensions/ambient-light_dimensions.png>`__)
+* TEMT6000 datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`__)
+* `Kicad <http://kicad.sourceforge.net/>`__ Project (Download)
 
 
 .. _ambient_light_bricklet_test:
