@@ -93,7 +93,8 @@
 		onPageTransitionOut:       undefined, // accepts a delegate like such: function(callback) { ... }
 		onPageTransitionIn:        undefined, // accepts a delegate like such: function() { ... }
 		onImageAdded:              undefined, // accepts a delegate like such: function(imageData, $li) { ... }
-		onImageRemoved:            undefined  // accepts a delegate like such: function(imageData, $li) { ... }
+		onImageRemoved:            undefined,  // accepts a delegate like such: function(imageData, $li) { ... }
+		scaleWidth:                350
 	};
 
 	// Primary Galleriffic initialization function that should be called on the thumbnail container.
@@ -328,6 +329,18 @@
 				
 				// Preload the image
 				var image = new Image();
+
+				// http://blog.lysender.com/2010/04/galleriffic-scale-images-a-quick-hack-jquery/
+
+      			image.alt = imageData.title; 
+				image.src = imageData.slideUrl; 
+      			var origWidth = image.width; 
+      			var origHeight = image.height; 
+      			var newWidth = this.scaleWidth; 
+      			var newHeight = parseInt((parseInt(origHeight) * parseInt(newWidth) / parseInt(origWidth))); 
+      			image.height = newHeight; 
+      			image.width = newWidth;  
+
 				
 				image.onload = function() {
 					imageData.image = this;
@@ -595,6 +608,18 @@
 
 				if (!imageData.image) {
 					var image = new Image();
+
+					// http://blog.lysender.com/2010/04/galleriffic-scale-images-a-quick-hack-jquery/
+					image.alt = imageData.title; 
+					image.src = imageData.slideUrl; 
+    	  			var origWidth = image.width; 
+      				var origHeight = image.height; 
+	      			var newWidth = this.scaleWidth; 
+	      			var newHeight = parseInt((parseInt(origHeight) * parseInt(newWidth) / parseInt(origWidth))); 
+	      			image.height = newHeight; 
+	      			image.width = newWidth;  
+
+
 					
 					// Wire up mainImage onload event
 					image.onload = function() {
