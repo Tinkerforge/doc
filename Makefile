@@ -34,6 +34,7 @@ html:
 	mkdir -p $(BUILDDIR)/html/_images
 	cp -r source/Images/* $(BUILDDIR)/html/_images/
 	mkdir -p $(BUILDDIR)/html/_static/examples
+	cp source/Software/*example* $(BUILDDIR)/html/_static/examples/
 	cp source/Software/*/*example* $(BUILDDIR)/html/_static/examples/
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
