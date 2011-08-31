@@ -28,7 +28,7 @@ div.nav-controls {
 div.slideshow-container {
 	position: relative;
 	clear: both;
-	height: 300px; /* This should be set to be at least the height of the largest image in the slideshow */
+	height: 354px; /* This should be set to be at least the height of the largest image in the slideshow */
 }
 div.loader {
 	position: absolute;
@@ -37,8 +37,8 @@ div.loader {
 	background-image: url('loader.gif');
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 450px;
-	height: 300px; /* This should be set to be at least the height of the largest image in the slideshow */
+	width: 380px;
+	height: 354px; /* This should be set to be at least the height of the largest image in the slideshow */
 }
 div.slideshow {
 
@@ -48,12 +48,15 @@ div.slideshow span.image-wrapper {
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 354px;
+	width: 354px;
+	border: 1px solid #CCCCCC;
 }
 div.slideshow a.advance-link {
-/*	display: block;*/
-	width: 450px;
-	height: 300px; /* This should be set to be at least the height of the largest image in the slideshow */
-	line-height: 300px; /* This should be set to be at least the height of the largest image in the slideshow */
+	display: block;
+	width: 354px;
+	height: 354px; /* This should be set to be at least the height of the largest image in the slideshow */
+	line-height: 354px; /* This should be set to be at least the height of the largest image in the slideshow */
 	text-align: center;
 }
 div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
@@ -61,7 +64,6 @@ div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.sli
 }
 div.slideshow img {
 	vertical-align: middle;
-	border: 1px solid #ccc;
 	margin-left: 0px;
 }
 div.download {
@@ -75,8 +77,8 @@ div.caption-container {
 span.image-caption {
 	display: block;
 	position: absolute;
-	width: 450px;
-	top: 12px;
+	width: 50px;
+	top: -37px;
 	left: 5px;
 }
 div.caption {
@@ -108,10 +110,6 @@ ul.thumbs li {
 a.thumb {
 	padding: 1px;
 	display: block;
-	border: 1px solid #ccc;
-}
-ul.thumbs li.selected a.thumb {
-	background: #00adee;
 }
 a.thumb:focus {
 	outline: none;
@@ -120,6 +118,7 @@ ul.thumbs img {
 	border: none;
 	display: block;
 	margin-left: 0px;
+	width:100%
 }
 div.pagination {
 	clear: both;
@@ -152,3 +151,19 @@ div.pagination span.ellipsis {
 	border: none;
 	padding: 5px 0 3px 2px;
 }
+
+div.thumbimgbox {
+	width: 100px;
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.thumbbox {
+	border: 1px solid #CCCCCC;
+}
+
+ul.thumbs li.selected a.thumb div.thumbbox{
+	border: 1px solid #00adee;
+}
+

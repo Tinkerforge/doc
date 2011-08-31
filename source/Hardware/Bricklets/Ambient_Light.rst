@@ -3,21 +3,18 @@
 Ambient Light
 =============
 
-.. container:: twocol 
 
-   .. container:: leftside
+.. raw:: html
 
-     .. image:: /Images/Bricklets/ambient_light_0_thumb.jpg
-        :scale: 100 %
-        :alt: Ambient Light Bricklet
-        :target: ../../_images/Bricklets/ambient_light_0_big.jpg
+        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+        {{ tfdocstart() }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocimg("Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_big.jpg", "Title #0") }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocimg("Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_big.jpg", "Title #0") }}
+        {{ tfdocend() }}
 
-   .. container:: rightside
 
-     .. image:: /Images/Bricklets/ambient_light_1_thumb.jpg
-        :scale: 100 %
-        :alt: Ambient Light Bricklet
-        :target: ../../_images/Bricklets/ambient_light_1_big.jpg
 
 Description
 -----------
