@@ -17,7 +17,7 @@ can be found :ref:`here <product_overview>`.
 Example
 --------
 
-`Download <../_static/examples/IPConnection_Python_example.py>`__
+`Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/IPConnection_Python_example.py>`__
 
 .. literalinclude:: IPConnection_Python_example.py
  :language: python
