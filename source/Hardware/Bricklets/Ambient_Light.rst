@@ -51,6 +51,9 @@ Resources
  * TEMT6000 datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`__)
  * `Kicad <http://kicad.sourceforge.net/>`__ Project (Download)
 
+
+.. _ambient_light_bricklet_test:
+
 Test your Ambient Light Bricklet
 --------------------------------
 
