@@ -6,56 +6,11 @@ Current25
 
 .. raw:: html
 
-	<div id="container">
-	<!-- Start Advanced Gallery Html Containers -->
-	<div id="gallery2" class="content">
-	<div id="controls" class="controls"></div>
-	<div class="slideshow-container">
-	<div id="loading" class="loader"></div>
-	<div id="slideshow" class="slideshow"></div>
-	</div>
-	<div id="caption" class="caption-container"></div>
-	</div>
-	<div id="thumbs" class="navigation">
-	<ul class="thumbs noscript">
-	<li>
-	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #0">
-	<img src="../../_images/test_k.jpg" alt="Title #0" />
-	</a>
-	</li>
-
-	<li>
-	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #1">
-	<img src="../../_images/test_k.jpg" alt="Title #1" />
-	</a>
-	</li>
-	<li>
-	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #0">
-	<img src="../../_images/test_k.jpg" alt="Title #0" />
-	</a>
-	</li>
-
-	<li>
-	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #1">
-	<img src="../../_images/test_k.jpg" alt="Title #1" />
-	</a>
-	</li>
-	<li>
-	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #0">
-	<img src="../../_images/test_k.jpg" alt="Title #0" />
-	</a>
-	</li>
-
-	<li>
-	<a class="thumb" name="leaf" href="../../_images/Bricklets/test.jpg" title="Title #1">
-	<img src="../../_images/test_k.jpg" alt="Title #1" />
-	</a>
-	</li>
-
-	</ul>
-	</div>
-	<div style="clear: both;"></div>
-	</div>
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
+	{{ tfdocend() }}
 
 Description
 -----------

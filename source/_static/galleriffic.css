@@ -3,6 +3,7 @@ div.content {
 	display: none;
 	float: right;
 	width: 420px; 
+	margin-top: 5px;
 }
 div.content a, div.navigation a {
 	text-decoration: none;
@@ -64,10 +65,10 @@ div.slideshow img {
 	margin-left: 0px;
 }
 div.download {
-	float: right;
 }
 div.caption-container {
-	position: relative;
+	position: absolute;
+	left:700px; top:527px; with:32px; height:32px;
 	clear: left;
 	height: 15px; /* batti 75px; */
 }
@@ -75,11 +76,11 @@ span.image-caption {
 	display: block;
 	position: absolute;
 	width: 450px;
-	top: 0;
-	left: 0;
+	top: -40px;
+	left: -5px;
 }
 div.caption {
-	padding: 12px;
+	padding: 0px;
 }
 div.image-title {
 	font-weight: bold;
@@ -91,7 +92,7 @@ div.image-desc {
 }
 div.navigation {
 	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
-	margin-top: 23px;
+	margin-top: 0px;
 }
 ul.thumbs {
 	clear: both;
