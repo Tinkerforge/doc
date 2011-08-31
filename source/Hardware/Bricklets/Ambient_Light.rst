@@ -3,21 +3,18 @@
 Ambient Light
 =============
 
-.. container:: twocol 
 
-   .. container:: leftside
+.. raw:: html
 
-     .. image:: /Images/Bricklets/ambient_light_0_thumb.jpg
-        :scale: 100 %
-        :alt: Ambient Light Bricklet
-        :target: ../../_images/Bricklets/ambient_light_0_big.jpg
+        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+        {{ tfdocstart() }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocimg("Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_big.jpg", "Title #0") }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocimg("Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_big.jpg", "Title #0") }}
+        {{ tfdocend() }}
 
-   .. container:: rightside
 
-     .. image:: /Images/Bricklets/ambient_light_1_thumb.jpg
-        :scale: 100 %
-        :alt: Ambient Light Bricklet
-        :target: ../../_images/Bricklets/ambient_light_1_big.jpg
 
 Description
 -----------
@@ -49,10 +46,10 @@ Output: Illumination              0-900 lux, unit 0.1 lux, resolution 12bit
 Resources
 ---------
 
- * Schematic (Download)
- * Outline and drilling plan (`Download <../../_images/Dimensions/ambient-light_dimensions.png>`__)
- * TEMT6000 datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`__)
- * `Kicad <http://kicad.sourceforge.net/>`__ Project (Download)
+* Schematic (Download)
+* Outline and drilling plan (`Download <../../_images/Dimensions/ambient-light_dimensions.png>`__)
+* TEMT6000 datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`__)
+* `Kicad <http://kicad.sourceforge.net/>`__ Project (Download)
 
 
 .. _ambient_light_bricklet_test:

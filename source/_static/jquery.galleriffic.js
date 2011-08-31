@@ -115,8 +115,11 @@
 				if (!this.enableHistory) {
 					// The href attribute holds the unique hash for an image
 					var hash = $.galleriffic.normalizeHash($(link).attr('href'));
-					$.galleriffic.gotoImage(hash);
-					e.preventDefault();
+					var imageData = $.galleriffic.getImage(hash);
+					if (imageData.image) {	
+						$.galleriffic.gotoImage(hash);
+						e.preventDefault();
+					}
 				}
 			},
 
@@ -332,23 +335,22 @@
 
 				// http://blog.lysender.com/2010/04/galleriffic-scale-images-a-quick-hack-jquery/
 
-      			image.alt = imageData.title; 
-				image.src = imageData.slideUrl; 
-      			var origWidth = image.width; 
-      			var origHeight = image.height; 
-      			var newWidth = this.scaleWidth; 
-      			var newHeight = parseInt((parseInt(origHeight) * parseInt(newWidth) / parseInt(origWidth))); 
-      			image.height = newHeight; 
-      			image.width = newWidth;  
-
+				var scaleWidth = this.scaleWidth; 
+				image.alt = imageData.title;
+				image.src = imageData.slideUrl;
 				
 				image.onload = function() {
 					imageData.image = this;
+	      				var origWidth = image.width; 
+      					var origHeight = image.height; 
+      					var newWidth = scaleWidth; 
+      					var newHeight = parseInt((parseInt(origHeight) * parseInt(newWidth) / parseInt(origWidth))); 
+	      				image.height = newHeight; 
+      					image.width = newWidth;  
+					//alert('a' + image.width + ' ' + image.height)
 					gallery.preloadNext(startIndex, currentIndex);
 				};
 
-				image.alt = imageData.title;
-				image.src = imageData.slideUrl;
 
 				return this;
 			},
@@ -522,7 +524,6 @@
 				
 				this.currentImage = imageData;
 				this.preloadRelocate(index);
-				
 				this.refresh();
 				
 				return this;
@@ -609,16 +610,10 @@
 				if (!imageData.image) {
 					var image = new Image();
 
-					// http://blog.lysender.com/2010/04/galleriffic-scale-images-a-quick-hack-jquery/
-					image.alt = imageData.title; 
-					image.src = imageData.slideUrl; 
-    	  			var origWidth = image.width; 
-      				var origHeight = image.height; 
-	      			var newWidth = this.scaleWidth; 
-	      			var newHeight = parseInt((parseInt(origHeight) * parseInt(newWidth) / parseInt(origWidth))); 
-	      			image.height = newHeight; 
-	      			image.width = newWidth;  
-
+					var scaleWidth = this.scaleWidth
+					// set alt and src
+					image.alt = imageData.title;
+					image.src = imageData.slideUrl;
 
 					
 					// Wire up mainImage onload event
@@ -627,14 +622,22 @@
 
 						// Only build image if the out transition has completed and we are still on the same image hash
 						if (!isTransitioning && imageData.hash == gallery.data[gallery.currentImage.index].hash) {
+
+							// http://blog.lysender.com/2010/04/galleriffic-scale-images-a-quick-hack-jquery/
+	    	  					var origWidth = image.width; 
+		      					var origHeight = image.height; 
+	      						var newWidth = scaleWidth; 
+	      						var newHeight = parseInt((parseInt(origHeight) * parseInt(newWidth) / parseInt(origWidth))); 
+				      			image.height = newHeight; 
+	      						image.width = newWidth;  
+							//alert('b' + image.width + ' ' + image.height)
+
 							gallery.buildImage(imageData, isSync);
 						}
 					};
 
-					// set alt and src
-					image.alt = imageData.title;
-					image.src = imageData.slideUrl;
-				}
+
+									}
 
 				// This causes the preloader (if still running) to relocate out from the currentIndex
 				this.relocatePreload = true;
