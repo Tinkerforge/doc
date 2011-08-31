@@ -76,7 +76,7 @@ span.image-caption {
 	display: block;
 	position: absolute;
 	width: 450px;
-	top: -30px;
+	top: 12px;
 	left: 5px;
 }
 div.caption {
@@ -92,7 +92,7 @@ div.image-desc {
 }
 div.navigation {
 	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
-	margin-top: 0px;
+	margin-top: 10px;
 }
 ul.thumbs {
 	clear: both;
