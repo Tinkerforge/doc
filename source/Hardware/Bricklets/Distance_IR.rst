@@ -119,7 +119,62 @@ the Distance IR Bricklet and examples in your programming language.
 Configure Infrared Sensor
 -------------------------
 
-TBD
+The supported infrared sensors simply produce an output voltage
+based on the measured distance. This voltage is measured by the ADC 
+of the connected Brick. To compute the corresponding distance to this voltage
+an voltage/distance mapping is needed. This mapping is stored on the 
+Distance IR Bricklet. If you like to change the infrared distance sensor
+you have to write this voltage/distance mapping if you want correct distances.
+
+
+Store Voltage/Distance Mapping
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To write the voltage/distance mapping you have to connect the Bricklet
+with an Brick to your PC. Start the :ref:`Brick Daemon <brickd>` and the 
+:ref:`Brick Viewer <brickv>` 
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+
+Press "connect" in the Brick Viewer and you should see the Distance IR tab.
+Click on it. You should now see something like depicted below.
+
+.. image:: /Images/Bricklets/distance_ir_brickv_sp.jpg
+   :scale: 100 %
+   :alt: Distance IR Bricklet Brickv view to configure a sensor
+   :align: center
+   :target: ../../_images/Bricklets/distance_ir_brickv_sp.jpg
+
+Press the "File.." Button (1) and choose an voltage/distance mapping file.
+After this press "Save" Button (2) to write this data on to the Bricklet,
+you will get an graphical representation of the written data.
+
+After this press the reset button on the Brick or cycle power to
+load the new stored voltage/distance mapping.
+
+
+
+Voltage/Distance Mappings
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+We provide the voltage/distance mappings for the following sensors:
+
+.. csv-table::
+   :header: "Type", "Range", "Mapping File"
+   :widths: 15, 25, 10
+
+	"GP2D120XJ00F", "4- 30cm (1.57" - 11.81")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
+	"GP2Y0A21YK0F", "10- 80cm (3.94" - 31.50")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
+	"GP2Y0A02YK0F", "20-150cm (7.87" - 59.06")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A02.txt>`__"
+
+Of course you can write your own voltage/distance mapping for a sensor we 
+currently do not offer. Or you can modify an existing mapping file to achieve
+a better quality of your sensor.
+
+A voltage/distance mapping file consists of comments (lines beginning with '#')
+and lines containing one "cm : analog value" tuple each. Look in the provided 
+files above to get an idea.
+
+
 
 
 
