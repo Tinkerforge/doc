@@ -51,25 +51,17 @@ Maximum Voltage/Current            250V/10A or 125V/15A
 Resources
 ---------
 
- * Schematic (Download)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
-
-.. Connectivity
-.. ------------
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/dual_relay_bricklet_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
+* Relay Datasheet (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/datasheets/ORWH-SH.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/hardware/dual-relay-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/dual_relay_bricklet_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-Test your Ambient Light Bricklet
---------------------------------
+.. _dual_relay_bricklet_test:
+
+Test your Dual Relay Bricklet
+-----------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
@@ -98,33 +90,17 @@ the Ambient Light Bricklet and examples in your programming language.
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <dual_relay_bricklet_python_api>`", ":ref:`Examples <dual_relay_bricklet_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <dual_relay_bricklet_c_api>`", ":ref:`Examples <dual_relay_bricklet_c_examples>`", "Installation"
+   "C#", ":ref:`API <dual_relay_bricklet_csharp_api>`", ":ref:`Examples <dual_relay_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <dual_relay_bricklet_java_api>`", ":ref:`Examples <dual_relay_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <dual_relay_bricklet_c_api>`", ":ref:`Examples <dual_relay_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <dual_relay_bricklet_cpp_api>`", ":ref:`Examples <dual_relay_bricklet_cpp_examples>`", "Installation"
-
-   "Python", "API", "Example", "Installation"
-   "Java", "API", "Example", "Installation"
-   "C", "API", "Example", "Installation"
-   "C++", "API", "Example", "Installation"
-
-
-.. Troubleshoot
-.. ------------
-
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
-
-.. **Solution:**
-..  * Check input voltage.
+   "Python", ":ref:`API <dual_relay_bricklet_python_api>`", ":ref:`Examples <dual_relay_bricklet_python_examples>`", "Installation"
 

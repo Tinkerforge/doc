@@ -40,8 +40,8 @@ Output: Voltage                   0V - 50V, unit: mV, resolution 12bit
 Resources
 ---------
 
- * Schematic (Download)
- * Kicad Project (Download)
+* Schematic (Download)
+* Kicad Project (Download)
 
    `Kicad Project Page <http://kicad.sourceforge.net/>`_
 

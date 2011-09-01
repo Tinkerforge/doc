@@ -6,11 +6,15 @@ Humidity
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ tfdocend() }}
 
 
 Description
@@ -44,26 +48,19 @@ Output: Relative Humidity (RH)    0-100% RH, unit 0.1% RH, resolution 12bit
 Resources
 ---------
 
- * Schematic (Download)
- * HIH-5030 Datasheet (`Download <http://sensing.honeywell.com/index.cfm?ci_id=155943>`_)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
-
-.. Connectivity
-.. ------------
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/humidity_bricklet_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
+* HIH-5030 Datasheet (`Download <https://github.com/Tinkerforge/humidity-bricklet/raw/master/datasheets/hih-5030.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/humidity-bricklet/raw/master/hardware/humidity-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/humidity_bricklet_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/humidity-bricklet/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-Test your Ambient Light Bricklet
---------------------------------
+
+.. _humidity_bricklet_test:
+
+
+Test your Humidity Bricklet
+---------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
@@ -92,27 +89,18 @@ the Ambient Light Bricklet and examples in your programming language.
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <humidity_bricklet_python_api>`", ":ref:`Examples <humidity_bricklet_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <humidity_bricklet_c_api>`", ":ref:`Examples <humidity_bricklet_c_examples>`", "Installation"
+   "C#", ":ref:`API <humidity_bricklet_csharp_api>`", ":ref:`Examples <humidity_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <humidity_bricklet_java_api>`", ":ref:`Examples <humidity_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <humidity_bricklet_c_api>`", ":ref:`Examples <humidity_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <humidity_bricklet_cpp_api>`", ":ref:`Examples <humidity_bricklet_cpp_examples>`", "Installation"   
+   "Python", ":ref:`API <humidity_bricklet_python_api>`", ":ref:`Examples <humidity_bricklet_python_examples>`", "Installation"
 
-.. Troubleshoot
-.. ------------
-
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
-
-.. **Solution:**
-..  * Check input voltage.
 

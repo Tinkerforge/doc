@@ -3,14 +3,13 @@
 Breakout Brick
 ==============
 
-
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+        {{ tfdocstart() }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocend() }}
 
 
 Description
@@ -36,20 +35,8 @@ Weight
 Resources
 ---------
 
- * Schematic (Download)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
-
-.. Connectivity
-.. ------------
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/breakout_brick_dimensions.png
-   :height: 300pt
-   :alt: alternate text
-   :align: center
-
+* Schematic (`Download <https://github.com/Tinkerforge/breakout-brick/raw/master/hardware/breakout-brick-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/breakout_brick_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/breakout-brick/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 

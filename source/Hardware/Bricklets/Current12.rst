@@ -43,26 +43,17 @@ Output: Current                   -12.5A to 12.5A, unit 1mA, resolution 12bit
 Resources
 ---------
 
- * Schematic (Download)
- * ACS711 Datasheet (`Download <http://www.allegromicro.com/en/Products/Part_Numbers/0711/0711.pdf>`_)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
-
-.. Connectivity
-.. ------------
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/current12_bricklet_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
+* ACS711 Datasheet (`Download <https://github.com/Tinkerforge/current12-bricklet/blob/master/datasheets/ACS711.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/current12-bricklet/raw/master/hardware/current-12-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/current12_bricklet_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/current12-bricklet/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-Test your Ambient Light Bricklet
---------------------------------
+.. _current12_bricklet_test:
+
+Test your Current12 Bricklet
+----------------------------
 
 For a simple test connect your Ambient Light Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
@@ -91,27 +82,18 @@ the Ambient Light Bricklet and examples in your programming language.
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <current12_bricklet_python_api>`", ":ref:`Examples <current12_bricklet_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <current12_bricklet_c_api>`", ":ref:`Examples <current12_bricklet_c_examples>`", "Installation"
+   "C#", ":ref:`API <current12_bricklet_csharp_api>`", ":ref:`Examples <current12_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <current12_bricklet_java_api>`", ":ref:`Examples <current12_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <current12_bricklet_c_api>`", ":ref:`Examples <current12_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <current12_bricklet_cpp_api>`", ":ref:`Examples <current12_bricklet_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <current12_bricklet_python_api>`", ":ref:`Examples <current12_bricklet_python_examples>`", "Installation"
 
-.. Troubleshoot
-.. ------------
-
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
-
-.. **Solution:**
-..  * Check input voltage.
 

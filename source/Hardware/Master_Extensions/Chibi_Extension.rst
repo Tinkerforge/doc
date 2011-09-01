@@ -5,11 +5,11 @@ Chibi Extension
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+        {{ tfdocstart() }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocend() }}
 
 
 Description
@@ -56,19 +56,19 @@ Weight                            TBD
 
 Chibi Network Assembly
 ----------------------
- * Picture Network
- * explain creation and configuration
- * explain usage
+* Picture Network
+* explain creation and configuration
+* explain usage
 
 
 Resources
 ---------
  
- * AT86RF212 datasheet (`Download <http://atmel.com/dyn/resources/prod_documents/doc8168.pdf>`_)
- * Schematic (Download)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
+* AT86RF212 datasheet (Download)
+* Schematic (Download)
+* Outline and drilling plan (Download)
+* Project (Download)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 Connectivity
 ------------

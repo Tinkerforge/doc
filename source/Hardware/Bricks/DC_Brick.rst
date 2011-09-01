@@ -5,11 +5,11 @@ DC Brick
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+        {{ tfdocstart() }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocend() }}
 
 
 Description
@@ -74,11 +74,17 @@ Weight                            TBD
 Resources
 ---------
 
- * Schematic (Download)
- * MC33926 Datasheet (`Download <http://cache.freescale.com/files/analog/doc/data_sheet/MC33926.pdf>`_)
- * Kicad Project (Download)
+* MC33926 Datasheet (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/datasheets/MC33926.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/hardware/dc-brick-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/dc_brick_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/dc-brick/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
+
+.. _dc_brick_test:
+
+Test your DC Brick
+------------------
 
   
 Connectivity
@@ -89,14 +95,6 @@ DC Brick.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
-   :alt: alternate text
-   :align: center
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/dc_brick_dimensions.png
-   :width: 300pt
    :alt: alternate text
    :align: center
 
@@ -138,22 +136,24 @@ There are two possible modes of motor controls:
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <dc_brick_python_api>`", ":ref:`Examples <dc_brick_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <dc_brick_c_api>`", ":ref:`Examples <dc_brick_c_examples>`", "Installation"
+   "C#", ":ref:`API <dc_brick_csharp_api>`", ":ref:`Examples <dc_brick_csharp_examples>`", "Installation"
    "Java", ":ref:`API <dc_brick_java_api>`", ":ref:`Examples <dc_brick_java_examples>`", "Installation"
-   "C", ":ref:`API <dc_brick_c_api>`", ":ref:`Examples <dc_brick_c_examples>`", "Installation"
-   "C++", ":ref:`API <dc_brick_cpp_api>`", ":ref:`Examples <dc_brick_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <dc_brick_python_api>`", ":ref:`Examples <dc_brick_python_examples>`", "Installation"
 
 
-Low Level Interfaces
-^^^^^^^^^^^^^^^^^^^^
+Low Level Interface
+^^^^^^^^^^^^^^^^^^^
+
  .. note::  Comming soon! 
 
   Currently you have to modify the firmware to use this feature.

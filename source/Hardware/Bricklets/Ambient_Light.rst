@@ -46,10 +46,11 @@ Output: Illumination              0-900 lux, unit 0.1 lux, resolution 12bit
 Resources
 ---------
 
-* Schematic (Download)
+* TEMT6000 datasheet (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/raw/master/datasheets/TEMT6000.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/raw/master/hardware/ambient-light-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/ambient-light_dimensions.png>`__)
-* TEMT6000 datasheet (`Download <http://www.vishay.com/docs/81579/temt6000.pdf>`__)
-* `Kicad <http://kicad.sourceforge.net/>`__ Project (Download)
+* Project (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__ 
 
 
 .. _ambient_light_bricklet_test:
@@ -100,29 +101,18 @@ forward to integrate the Ambient Light Bricklet into your project.
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
 
-   "Python", ":ref:`API <ambient_light_bricklet_python_api>`", ":ref:`Examples <ambient_light_bricklet_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <ambient_light_bricklet_c_api>`", ":ref:`Examples <ambient_light_bricklet_c_examples>`", "Installation"
+   "C#", ":ref:`API <ambient_light_bricklet_csharp_api>`", ":ref:`Examples <ambient_light_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <ambient_light_bricklet_java_api>`", ":ref:`Examples <ambient_light_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <ambient_light_bricklet_c_api>`", ":ref:`Examples <ambient_light_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <ambient_light_bricklet_cpp_api>`", ":ref:`Examples <ambient_light_bricklet_cpp_examples>`", "Installation"
-
-
-.. Troubleshoot
-.. ------------
-
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
-
-.. **Solution:**
-..  * Check input voltage.
+   "Python", ":ref:`API <ambient_light_bricklet_python_api>`", ":ref:`Examples <ambient_light_bricklet_python_examples>`", "Installation"
 
