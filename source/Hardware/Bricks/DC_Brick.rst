@@ -151,7 +151,7 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    "Python", ":ref:`API <dc_brick_python_api>`", ":ref:`Examples <dc_brick_python_examples>`", "Installation"
 
 
-Low Level Interface
+Low Level Programming Interface
 ^^^^^^^^^^^^^^^^^^^
 
  .. note::  Comming soon! 
@@ -171,7 +171,7 @@ Low Level Interface
      "UART(serial)", "API", "Examples", "Installation"
 
 
-Direct on Device Programming
+On Device Programming Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  .. note:: Coming soon!
