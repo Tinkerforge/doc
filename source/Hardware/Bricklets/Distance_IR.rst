@@ -71,26 +71,56 @@ Resources
 Test your Distance IR Bricklet
 ------------------------------
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+To test your Distance IR Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Connect an infrared distance sensor to the Bricklet and connect it
+to an arbitrary :ref:`Brick <product_overview_bricks>`. 
+You should have received a suitable cable with the Bricklet.
+
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Distance IR Bricklet with infrared distance sensor connected to Master Brick
    :align: center
+   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+
+If you then connect the Brick to the PC over USB,
+you should see a tab named "Distance IR" in the Brick Viewer after you
+pressed "connect". 
+If everything went as expected you can now see the measured distance
+of the sensor, the output voltage of the distance sensor
+and a graph that shows the distance over time. 
+
+Click on the Distance IR tab and see how the measured values change dependend 
+on the distance in front of sensor. Move your hand in direction
+of the sensor and see how the distance will decrease. When you move your 
+hand away from the sensor the measured distance should increase.
+A typical graph for this test is depicted in the image below.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Distance IR Bricklet view in Brick Viewer
    :align: center
+   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+You can now go on with writing your own application.
+See :ref:`Interface and Coding <distir_programming_interfaces>` section for the API of
+the Distance IR Bricklet and examples in your programming language.
+
+
+.. _distir_conf_sensor:
+
+Configure Infrared Sensor
+-------------------------
+
+TBD
+
 
 
 .. _distir_programming_interfaces:
@@ -111,4 +141,19 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    "C#", ":ref:`API <distance_ir_bricklet_csharp_api>`", ":ref:`Examples <distance_ir_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <distance_ir_bricklet_java_api>`", ":ref:`Examples <distance_ir_bricklet_java_examples>`", "Installation"
    "Python", ":ref:`API <distance_ir_bricklet_python_api>`", ":ref:`Examples <distance_ir_bricklet_python_examples>`", "Installation"
+
+
+Troubleshoot
+------------
+
+The measured distance is wrong
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**You have configured the wrong infrared sensor**
+
+* Configure the correct infrared sensor, see section :ref:`Configure Infrared Sensor <distir_conf_sensor>`.
+
+**The ADC of your Brick is uncalibrated:**
+
+* Configure the ADC of your Brick, see :ref:`Brickv documentation <brickv_adc_calibration>`.
+
 
