@@ -59,26 +59,52 @@ Resources
 Test your Current25 Bricklet
 ----------------------------
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+To test your Current25 Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Now you can connect your Current25 Bricklet to any
+:ref:`Brick <product_overview_bricks>`. You should have received a suitable
+cable with the Bricklet.
+
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Current25 Bricklet connected to Master Brick
    :align: center
+   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+
+Additionally connect a circuit to the Bricklet as displayed
+in the following image:
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Current25 Bricklet with connected circuit
    :align: center
+   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+If you then connect the Brick to the PC over USB,
+you should see a tab named "Current25" in the Brick Viewer after you
+pressed "connect". 
+If everything went as expected you can now see the exact current in ampere 
+and a graph that shows the current over time. 
+
+
+.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+   :scale: 100 %
+   :alt: Current25 Bricklet view in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
+
+Click on the Current25 tab and see how the measured values change dependend 
+on the current flow through the bricklet. 
+You can now go on with writing your own application.
+See :ref:`Interface and Coding <current25_programming_interfaces>` section for the API of
+the Current25 Bricklet and examples in your programming language.
 
 
 .. _current25_programming_interfaces:

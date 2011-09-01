@@ -85,14 +85,14 @@ in the following image:
 
 If you then connect the Brick to the PC over USB,
 you should see a tab named "Current12" in the Brick Viewer after you
-pressed "connect". Now 
+pressed "connect". 
 If everything went as expected you can now see the exact current in ampere 
 and a graph that shows the current over time. 
 
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: Current 12 Bricklet view in Brick Viewer
+   :alt: Current12 Bricklet view in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 

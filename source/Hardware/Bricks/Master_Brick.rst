@@ -97,8 +97,8 @@ beispiel
 Programming Interfaces
 ----------------------
 
-High Level Programming Interfaces
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
