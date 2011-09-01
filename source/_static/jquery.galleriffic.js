@@ -6,7 +6,11 @@
  *   http://www.opensource.org/licenses/mit-license.php
  *
  * Much thanks to primary contributer Ponticlaro (http://www.ponticlaro.com)
+ *
+ * Some changes of implemented:
+ * http://blog.lysender.com/2010/04/galleriffic-scale-images-a-quick-hack-jquery/
  */
+
 ;(function($) {
 	// Globally keep track of all images by their unique hash.  Each item is an image data object.
 	var allImages = {};
