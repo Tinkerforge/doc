@@ -164,7 +164,7 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
 
 
 Low Level Programming Interface
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  .. note::  Comming soon! 
 
@@ -184,7 +184,7 @@ Low Level Programming Interface
 
 
 On Device Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  .. note:: Coming soon!
 
