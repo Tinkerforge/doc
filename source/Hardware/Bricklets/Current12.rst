@@ -73,9 +73,8 @@ cable with the Bricklet.
    :align: center
    :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
-
-Additionally connect a circuit to the Bricklet as displayed
-in the following image:
+If you like you can connect a circuit to the Bricklet like the one displayed
+in the following image. If you not connt
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %

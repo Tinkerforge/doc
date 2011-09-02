@@ -56,6 +56,8 @@ Resources
 Test your Linear Poti Bricklet
 ------------------------------
 
+* move from 0 to 100 and back
+
 For a simple test connect your Ambient Light Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 

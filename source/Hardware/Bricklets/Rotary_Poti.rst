@@ -55,6 +55,8 @@ Resources
 Test your Rotary Poti Bricklet
 ------------------------------
 
+* rotate poti from -150 degree to 150 degree
+
 For a simple test connect your Ambient Light Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 

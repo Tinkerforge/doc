@@ -68,6 +68,9 @@ Resources
 Test your Temperature IR Bricklet
 ---------------------------------
 
+* play around, orient in different directions
+* emmessivity default = 0.98 * 0xffff = 64224, explain
+
 For a simple test connect your Ambient Light Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 

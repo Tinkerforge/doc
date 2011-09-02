@@ -55,6 +55,9 @@ Resources
 Test your Joystick Bricklet
 ---------------------------
 
+* hold bricklet connector away from you
+* up, down, right, left
+
 For a simple test connect your Ambient Light Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
