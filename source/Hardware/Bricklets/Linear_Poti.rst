@@ -58,26 +58,31 @@ Test your Linear Poti Bricklet
 
 * move from 0 to 100 and back
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+For a simple test connect your Linear Poti Brickler to an arbitrary 
+:ref:`Brick <product_overview_bricks>` over the supplied cable 
+(see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Linear Poti Bricklet
    :align: center
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+After installing our software (Brickd, Brickv) you can see the connected Linear
+Poti Bricklet in the Brickv.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/linear_poti_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of Linear Poti Bricklet
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Click on the Linear Poti Bricklet and and move the potentiometer.
+You should be able to create a graph like that one depicted in the image above 
+by moving the potentiometer from lower to top.
+
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <linear_poti_programming_interfaces>` section 
+for the API of the Linear Poti Bricklet and examples in your programming 
+language.
 
 
 .. _linear_poti_programming_interfaces:

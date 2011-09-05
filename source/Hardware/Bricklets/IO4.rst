@@ -64,29 +64,43 @@ Resources
 Test your IO4 Bricklet
 ----------------------
 
-* attach led and switch
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
-
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
-   :scale: 100 %
-   :alt: alternate text
-   :align: center
-
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+For a simple test connect your IO4 Bricklet to an arbitrary 
+:ref:`Brick <product_overview_bricks>` over the supplied cable.
+Connect an LED with series resistor to the board
+by attaching the anode to pin 0 and the cathode to one GND pin.
+Additonally connect a button which can short pin 1 to GND
+(see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected IO4 Bricklet
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+After installing our software (Brickd, Brickv) you can see the connected IO4
+Bricklet in the Brickv.
 
+.. image:: /Images/Bricklets/io4_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of the IO4 Bricklet
+   :align: center
+
+Click on the IO4 Bricklet tab. First you can change the "Debounce Period", 
+it is the time in ms ... TODO
+Below you can configure each pin as input/output and in case of an input pin 
+the pullup option.
+Simply choose a port and a pin configure the direction and value and press 
+save. The current state is depicted in the tabular below.
+
+For example lets test the LED. Configure pin 0 as output and change 
+the value. When the pin is high the LED should light. To test the button 
+configure pin 1 as input pullup. We need the pullup to define a stable
+state when the button is not pressed. Now look in the tabular, you should
+see that you can change the value of the pin by pressing the button.
+
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <io4_programming_interfaces>` section for the API of
+the IO4 Bricklet and examples in your programming language.
 
 .. _io4_programming_interfaces:
 

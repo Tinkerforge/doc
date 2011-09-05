@@ -60,28 +60,29 @@ Resources
 Test your Temperature Bricklet
 ------------------------------
 
-* Put finger on sensor ic
-
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+For a simple test connect your Temperature Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Temperature Bricklet
    :align: center
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+After installing our software (Brickd, Brickv) you can see the connected 
+Temperature Bricklet in the Brickv.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/temperature_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of Temperature Bricklet
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Click on the Temperature Bricklet tab and see how the measured values change dependend 
+on the device temperature. For example put your finger on the sensor and see the 
+temperature rising.
+
+You can now go on with writing your own application.
+See :ref:`Interface and Coding <temperature_programming_interfaces>` section for the API of
+the Temperature Bricklet and examples in your programming language.
 
 
 .. _temperature_programming_interfaces:

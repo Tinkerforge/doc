@@ -59,26 +59,27 @@ Resources
 Test your Piezo Buzzer Bricklet
 -------------------------------
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+For a simple test connect your Piezo Buzzer Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Piezo Buzzer Bricklet
    :align: center
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+After installing our software (Brickd, Brickv) you can see the connected Piezo
+Buzzer Bricklet in the Brickv.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/piezo_buzzer_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of the Piezo Buzzer Bricklet
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Click on the Piezo Buzzer tab an enter a morse code you want to morse. You can enter
+also the duration of every tone. Play around. 
+You can now go on with writing your own application.
+See :ref:`Interface and Coding <piezobuzzer_programming_interfaces>` section for the API of
+the Piezo Buzzer Bricklet and examples in your programming language.
 
 
 .. _piezobuzzer_programming_interfaces:

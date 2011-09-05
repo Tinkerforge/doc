@@ -57,26 +57,29 @@ Test your Rotary Poti Bricklet
 
 * rotate poti from -150 degree to 150 degree
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+For a simple test connect your Rotary Potentiometer Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Rotary Poti Bricklet
    :align: center
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+After installing our software (Brickd, Brickv) you can see the connected Rotary
+Potentiometer Bricklet in the Brickv.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/rotary_poti_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of Rotary Poti Bricklet
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Click on the Rotary Poti Bricklet tab and play around by turning the potentiometer.
+You should be able to create a similar graph by turning the potentiometer full left
+and then right.
+
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <rotary_poti_programming_interfaces>` section for the API of
+the Rotary Poti Bricklet and examples in your programming language.
 
 
 .. _rotary_poti_programming_interfaces:

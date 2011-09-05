@@ -64,26 +64,28 @@ Test your Humidity Bricklet
 
 * breath over sensor
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+For a simple test connect your Humidity Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Humidity Bricklet
    :align: center
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+After installing our software (Brickd, Brickv) you can see the connected Humidity
+Bricklet in the Brickv.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/humidity_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of Humidity Bricklet
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Click on the Humidity Bricklet tab and see how the measured values change.
+For example breath over the sensor and see the relative humidity rising.
+It will fall again when you stop breathing over the sensor.
+After this test you can go on with writing your own application.
+See :ref:`Interface and Coding <humidity_programming_interfaces>` section for the API of
+the Humidity Bricklet and examples in your programming language.
 
 
 .. _humidity_programming_interfaces:

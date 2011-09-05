@@ -63,26 +63,27 @@ Resources
 Test your Dual Relay Bricklet
 -----------------------------
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+To test your Dual Relay Bricklet connect it to arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Dual Relais Bricklet with connected Master Brick
    :align: center
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+After installing our software (Brickd, Brickv) you can see the connected Dual
+Relais Bricklet in the Brickv.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/dual_relay_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of Dual Relais
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Click on the Dual Relais tab and play around with the two relay buttons.
+You should hear the relay switching when toggeling the buttons.
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <dualrelay_programming_interfaces>` section for the API of
+the Dual Relay Bricklet and examples in your programming language.
 
 
 .. _dualrelay_programming_interfaces:

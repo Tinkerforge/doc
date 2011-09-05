@@ -55,29 +55,32 @@ Resources
 Test your Joystick Bricklet
 ---------------------------
 
-* hold bricklet connector away from you
-* up, down, right, left
-
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+For a simple test connect your Joystick Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Joystick Bricklet
    :align: center
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+After installing our software (Brickd, Brickv) you can see the connected 
+Joystick Bricklet in the Brickv.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/joystick_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of the Joystick Bricklet
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Click on the Joystick Bricklet tab and see a coordinate system which
+shows you the current position of the joystick and if the button is pressed.
+Below you can find a graph which visualizes your movements over time.
+You can produce the depicted graph when you move the joystick first up, 
+then down and right and at the end left (directions when you hold the Bricklet
+with the connector away from you).
+
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <joystick_programming_interfaces>` section for the API of
+the Joystick Bricklet and examples in your programming language.
 
 
 .. _joystick_programming_interfaces:

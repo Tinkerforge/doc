@@ -56,34 +56,45 @@ Resources
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
+Change LCD's contrast
+---------------------
+
+Depending on your power supply it might be possible that the contrast
+of the LCD is not as you wish. To modify it you have to take
+a screwdriver and turn the potentiometer on the bricklet.
+The potentiometer is attached beside the Bricklet connector.
+
+
 .. _lcd_20x4_bricklet_test:
 
 Test your LCD 20x4 Bricklet
 ---------------------------
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+For a simple test connect your LCD 20x4 Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected LCD 20x4 Bricklet
    :align: center
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+After installing our software (Brickd, Brickv) you can see the connected LCD
+20x4 Bricklet in the Brickv.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/lcd_20x4_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of the LCD 20x4 Bricklet
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Click on the LCD 20x4 tab and input an string to the text field.
+You can choose the line and the start position at which the text is displayed.
+Press "Send Text" to display it. Press "Backlight On" such that you can read
+the LCD easier. Play around with the three onboard buttons and look 
+how their values changes.
 
-Contrast
-
+After this short test you can go on with writing your own application.
+See :ref:`Interface and Coding <lcd20x4_programming_interfaces>` section for the API of
+the LCD 20x4 Bricklet and examples in your programming language.
 
 
 .. _lcd20x4_programming_interfaces:

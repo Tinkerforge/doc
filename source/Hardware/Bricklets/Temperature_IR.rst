@@ -68,29 +68,34 @@ Resources
 Test your Temperature IR Bricklet
 ---------------------------------
 
-* play around, orient in different directions
-* emmessivity default = 0.98 * 0xffff = 64224, explain
-
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+For a simple test connect your Temperature IR Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Temperature IR Bricklet
    :align: center
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+After installing our software (Brickd, Brickv) you can see the connected 
+Temperature IR Bricklet in the Brickv.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/temperature_ir_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of Temperature IR Bricklet
    :align: center
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Click on the Temperature IR Bricklet tab and point the device in different
+directions. The Brick Viewer will show you the ambient temperature (the 
+temperature of the device) and the object temperature you point at.
+
+Since the emmissivity depends on the material you can configure it.
+Enter 0xFFFF = 65535 for an emmissivity of 1.0.
+The default is an emmisivity of 0.98 (0.98 * 0xFFFF = 64224).
+
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <temperatureir_programming_interfaces>` 
+section for the API of the Ambient Light Bricklet and examples in your 
+programming language.
 
 
 .. _temperatureir_programming_interfaces:
