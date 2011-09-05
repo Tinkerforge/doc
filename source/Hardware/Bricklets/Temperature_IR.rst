@@ -23,14 +23,14 @@ Description
 The Temperature IR :ref:`Bricklet <product_overview_bricklets>` is equipped with a
 `infrared thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`_.
 It uses thermal radiation emitted by the measured object. The
-`emmissivity <http://en.wikipedia.org/wiki/Emissivity>`_ of an object is
+`emissivity <http://en.wikipedia.org/wiki/Emissivity>`_ of an object is
 material specific, a good list can be found 
 `here <http://www.infrared-thermography.com/material.htm>`_.
-Many infrared thermometers have a fixed emmissivity of 0.95 or 1.0
+Many infrared thermometers have a fixed emissivity of 0.95 or 1.0
 and measure wrong temperatures depending of the material.
 
 The API of the Bricklet let you readout the object temperature and the
-ambient temperature in degree Celsius.You can define the emmissivity dependend 
+ambient temperature in degree Celsius.You can define the emissivity dependend 
 of your measurement or use the default value of 1.0. Additionally you can
 configure events triggered when a specified temperature is exceeded.
 
@@ -88,9 +88,9 @@ Click on the Temperature IR Bricklet tab and point the device in different
 directions. The Brick Viewer will show you the ambient temperature (the 
 temperature of the device) and the object temperature you point at.
 
-Since the emmissivity depends on the material you can configure it.
-Enter 0xFFFF = 65535 for an emmissivity of 1.0.
-The default is an emmisivity of 0.98 (0.98 * 0xFFFF = 64224).
+Since the emissivity depends on the material you can configure it.
+Enter 0xFFFF = 65535 for an emissivity of 1.0.
+The default is an emisivity of 0.98 (0.98 * 0xFFFF = 64224).
 
 After this you can go on with writing your own application.
 See :ref:`Interface and Coding <temperatureir_programming_interfaces>` 
