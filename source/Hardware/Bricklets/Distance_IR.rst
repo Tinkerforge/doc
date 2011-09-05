@@ -103,7 +103,7 @@ of the sensor and see how the distance will decrease. When you move your
 hand away from the sensor the measured distance should increase.
 A typical graph for this test is depicted in the image below.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/distance_ir_brickv.jpg
    :scale: 100 %
    :alt: Distance IR Bricklet view in Brick Viewer
    :align: center
