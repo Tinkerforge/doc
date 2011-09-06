@@ -36,7 +36,9 @@ html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
-	sed 's/\'doc\'/\'bugs\'/ build/html/Report_Bugs.html >build/html/Report_Bugs.htmltmp
+	@echo
+	@echo "Changing Report_Bugs.html from doc to bugs"
+	sed -e "s|'doc'|'bugs'|" build/html/Report_Bugs.html > build/html/Report_Bugs.htmltmp
 	mv build/html/Report_Bugs.htmltmp build/html/Report_Bugs.html
 
 dirhtml:
