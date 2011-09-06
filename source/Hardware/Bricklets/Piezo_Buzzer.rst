@@ -59,6 +59,13 @@ Resources
 Test your Piezo Buzzer Bricklet
 -------------------------------
 
+To test your Piezo Buzzer Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
 For a simple test connect your Piezo Buzzer Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
@@ -66,6 +73,7 @@ For a simple test connect your Piezo Buzzer Bricklet to an arbitrary
    :scale: 100 %
    :alt: Master Brick with connected Piezo Buzzer Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
 After installing our software (Brickd, Brickv) you can see the connected Piezo
 Buzzer Bricklet in the Brickv.
@@ -74,6 +82,7 @@ Buzzer Bricklet in the Brickv.
    :scale: 100 %
    :alt: Brickv view of the Piezo Buzzer Bricklet
    :align: center
+   :target: ../../_images/Bricklets/piezo_buzzer_brickv.jpg
 
 Click on the Piezo Buzzer tab an enter a morse code you want to morse. You can enter
 also the duration of every tone. Play around. 

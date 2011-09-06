@@ -107,7 +107,7 @@ A typical graph for this test is depicted in the image below.
    :scale: 100 %
    :alt: Distance IR Bricklet view in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
+   :target: ../../_images/Bricklets/distance_ir_brickv.jpg
 
 You can now go on with writing your own application.
 See :ref:`Interface and Coding <distir_programming_interfaces>` section for the API of

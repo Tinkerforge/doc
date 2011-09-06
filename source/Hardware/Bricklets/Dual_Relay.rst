@@ -63,13 +63,21 @@ Resources
 Test your Dual Relay Bricklet
 -----------------------------
 
-To test your Dual Relay Bricklet connect it to arbitrary 
+To test your Dual Relay Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Connect your Dual Relay Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
    :alt: Dual Relais Bricklet with connected Master Brick
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
 After installing our software (Brickd, Brickv) you can see the connected Dual
 Relais Bricklet in the Brickv.
@@ -78,6 +86,7 @@ Relais Bricklet in the Brickv.
    :scale: 100 %
    :alt: Brickv view of Dual Relais
    :align: center
+   :target: ../../_images/Bricklets/dual_relay_brickv.jpg
 
 Click on the Dual Relais tab and play around with the two relay buttons.
 You should hear the relay switching when toggeling the buttons.

@@ -52,7 +52,14 @@ Resources
 Test your Voltage Bricklet
 --------------------------
 
-For a simple test connect your Voltage Bricklet to an arbitrary 
+To test your Voltage Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Connect your Voltage Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable.
 Additionally connect a voltage source to the Bricklet. 
 For testing purposes we have connected a battery
@@ -62,21 +69,26 @@ For testing purposes we have connected a battery
    :scale: 100 %
    :alt: Master Brick with connected Voltage Bricklet and Battery
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected 
-Voltage Bricklet in the Brickv.
+If you connect the Brick to the PC over USB,
+you should see a tab named "Voltage" in the Brick Viewer after you
+pressed "connect", select this tab.
+If everything went as expected you can now see the exact voltage in volt
+and a graph that shows the voltage over time. 
 
 .. image:: /Images/Bricklets/voltage_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of the Voltage Bricklet
    :align: center
+   :target: ../../_images/Bricklets/voltage_brickv.jpg
 
-Click on the Voltage tab and see how the measured values change dependend 
-on the applied voltage. 
+In our test we have connected the battery not from beginning.
+You can see the rising voltage after connecting the battery in the graph.
 
-You can now go on with writing your own application.
-See :ref:`Interface and Coding <voltage_programming_interfaces>` section for the API of
-the Voltage Bricklet and examples in your programming language.
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <voltage_programming_interfaces>` section for 
+the API of the Voltage Bricklet and examples in your programming language.
 
 
 .. _voltage_programming_interfaces:

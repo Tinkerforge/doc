@@ -55,15 +55,21 @@ Resources
 Test your Rotary Poti Bricklet
 ------------------------------
 
-* rotate poti from -150 degree to 150 degree
+To test your Rotary Poti Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
 
-For a simple test connect your Rotary Potentiometer Bricklet to an arbitrary 
+Connect your Rotary Potentiometer Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
    :alt: Master Brick with connected Rotary Poti Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
 After installing our software (Brickd, Brickv) you can see the connected Rotary
 Potentiometer Bricklet in the Brickv.
@@ -72,6 +78,7 @@ Potentiometer Bricklet in the Brickv.
    :scale: 100 %
    :alt: Brickv view of Rotary Poti Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
 Click on the Rotary Poti Bricklet tab and play around by turning the potentiometer.
 You should be able to create a similar graph by turning the potentiometer full left

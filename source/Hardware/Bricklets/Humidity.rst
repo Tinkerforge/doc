@@ -62,15 +62,22 @@ Resources
 Test your Humidity Bricklet
 ---------------------------
 
-* breath over sensor
+To test your Humidity Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
 
-For a simple test connect your Humidity Sensor to an arbitrary 
+Connect your Humidity Sensor to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
    :alt: Master Brick with connected Humidity Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
+
 
 After installing our software (Brickd, Brickv) you can see the connected Humidity
 Bricklet in the Brickv.
@@ -79,6 +86,7 @@ Bricklet in the Brickv.
    :scale: 100 %
    :alt: Brickv view of Humidity Bricklet
    :align: center
+   :target: ../../_images/Bricklets/humidity_brickv.jpg
 
 Click on the Humidity Bricklet tab and see how the measured values change.
 For example breath over the sensor and see the relative humidity rising.

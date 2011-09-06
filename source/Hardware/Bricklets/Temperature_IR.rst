@@ -68,13 +68,21 @@ Resources
 Test your Temperature IR Bricklet
 ---------------------------------
 
-For a simple test connect your Temperature IR Bricklet to an arbitrary 
+To test your Temperature IR Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Connect your Temperature IR Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
    :alt: Master Brick with connected Temperature IR Bricklet
    :align: center
+	:target: ../../_images/Bricklets/current12_brickv.jpg
 
 After installing our software (Brickd, Brickv) you can see the connected 
 Temperature IR Bricklet in the Brickv.
@@ -83,6 +91,7 @@ Temperature IR Bricklet in the Brickv.
    :scale: 100 %
    :alt: Brickv view of Temperature IR Bricklet
    :align: center
+   :target: ../../_images/Bricklets/temperature_ir_brickv.jpg
 
 Click on the Temperature IR Bricklet tab and point the device in different
 directions. The Brick Viewer will show you the ambient temperature (the 

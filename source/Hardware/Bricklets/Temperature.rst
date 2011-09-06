@@ -60,13 +60,21 @@ Resources
 Test your Temperature Bricklet
 ------------------------------
 
-For a simple test connect your Temperature Bricklet to an arbitrary 
+To test your Temperature Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Connect your Temperature Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
    :alt: Master Brick with connected Temperature Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
 After installing our software (Brickd, Brickv) you can see the connected 
 Temperature Bricklet in the Brickv.
@@ -75,6 +83,7 @@ Temperature Bricklet in the Brickv.
    :scale: 100 %
    :alt: Brickv view of Temperature Bricklet
    :align: center
+   :target: ../../_images/Bricklets/temperature_brickv.jpg
 
 Click on the Temperature Bricklet tab and see how the measured values change dependend 
 on the device temperature. For example put your finger on the sensor and see the 

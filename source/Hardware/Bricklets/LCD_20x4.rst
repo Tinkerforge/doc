@@ -70,13 +70,21 @@ The potentiometer is attached beside the Bricklet connector.
 Test your LCD 20x4 Bricklet
 ---------------------------
 
-For a simple test connect your LCD 20x4 Bricklet to an arbitrary 
+To test your LCD 20x4 Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Connect your LCD 20x4 Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
    :alt: Master Brick with connected LCD 20x4 Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
 After installing our software (Brickd, Brickv) you can see the connected LCD
 20x4 Bricklet in the Brickv.
@@ -85,6 +93,7 @@ After installing our software (Brickd, Brickv) you can see the connected LCD
    :scale: 100 %
    :alt: Brickv view of the LCD 20x4 Bricklet
    :align: center
+   :target: ../../_images/Bricklets/lcd_20x4_brickv.jpg
 
 Click on the LCD 20x4 tab and input an string to the text field.
 You can choose the line and the start position at which the text is displayed.

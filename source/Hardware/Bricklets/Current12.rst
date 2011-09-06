@@ -64,42 +64,35 @@ Bricks/Bricklets). The latter is only for testing purposes.
 
 Now you can connect your Current12 Bricklet to any
 :ref:`Brick <product_overview_bricks>`. You should have received a suitable
-cable with the Bricklet.
-
-
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
-   :scale: 100 %
-   :alt: Current12 Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
-
-If you like you can connect a circuit to the Bricklet like the one displayed
-in the following image. If you not connt
+cable with the Bricklet. If you like you can connect a Motor
+and a Battery to the Bricklet like displayed in the following image.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: Current12 Bricklet with connected circuit
+   :alt: Master Brick with connected Current12 Bricklet, Battery and Motor
    :align: center
    :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
-If you then connect the Brick to the PC over USB,
+If you connect the Brick to the PC over USB,
 you should see a tab named "Current12" in the Brick Viewer after you
-pressed "connect". 
+pressed "connect", select this tab.
 If everything went as expected you can now see the exact current in ampere 
 and a graph that shows the current over time. 
 
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/current12_brickv.jpg
    :scale: 100 %
    :alt: Current12 Bricklet view in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
-Click on the Current12 tab and see how the measured values change dependend 
-on the current flow through the bricklet. 
-You can now go on with writing your own application.
-See :ref:`Interface and Coding <current12_programming_interfaces>` section for the API of
-the Current12 Bricklet and examples in your programming language.
+In our test we have connected the battery not from beginning. 
+When connecting the battery, you
+can see the high current peak caused by the motor when start running.
+   
+After this test you can go on with writing your own application.
+See :ref:`Interface and Coding <current12_programming_interfaces>` section for 
+the API of the Current12 Bricklet and examples in your programming language.
 
 
 .. _current12_programming_interfaces:

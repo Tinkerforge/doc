@@ -64,8 +64,14 @@ Resources
 Test your IO4 Bricklet
 ----------------------
 
+To test your IO4 Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
 
-For a simple test connect your IO4 Bricklet to an arbitrary 
+Connect your IO4 Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable.
 Connect an LED with series resistor to the board
 by attaching the anode to pin 0 and the cathode to one GND pin.
@@ -76,6 +82,9 @@ Additonally connect a button which can short pin 1 to GND
    :scale: 100 %
    :alt: Master Brick with connected IO4 Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
+
+
 
 After installing our software (Brickd, Brickv) you can see the connected IO4
 Bricklet in the Brickv.
@@ -84,10 +93,20 @@ Bricklet in the Brickv.
    :scale: 100 %
    :alt: Brickv view of the IO4 Bricklet
    :align: center
+   :target: ../../_images/Bricklets/io4_brickv.jpg
+
+
 
 Click on the IO4 Bricklet tab. First you can change the "Debounce Period", 
-it is the time in ms ... TODO
-Below you can configure each pin as input/output and in case of an input pin 
+it is the period for interrupt callbacks. 
+For example: If you set this value to 100, you will get interrupts
+maximal every 100ms. This is necessary if something that bounces is
+connected to the IO4 Bricklet, such as a button. You can test the optimal
+value in the Brick Viewer such that you can use this value later in your
+own program.
+
+Below the debounce period configuration you can configure the pins.
+Each pin can be configured as input/output and in case of an input pin 
 the pullup option.
 Simply choose a port and a pin configure the direction and value and press 
 save. The current state is depicted in the tabular below.
