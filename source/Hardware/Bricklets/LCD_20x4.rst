@@ -86,8 +86,10 @@ Connect your LCD 20x4 Bricklet to an arbitrary
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected LCD
-20x4 Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"LCD 20x4 Bricklet" in the Brick Viewer after you pressed "connect", select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
 .. image:: /Images/Bricklets/lcd_20x4_brickv.jpg
    :scale: 100 %
@@ -95,7 +97,7 @@ After installing our software (Brickd, Brickv) you can see the connected LCD
    :align: center
    :target: ../../_images/Bricklets/lcd_20x4_brickv.jpg
 
-Click on the LCD 20x4 tab and input an string to the text field.
+Input an string to the text field.
 You can choose the line and the start position at which the text is displayed.
 Press "Send Text" to display it. Press "Backlight On" such that you can read
 the LCD easier. Play around with the three onboard buttons and look 

@@ -45,7 +45,6 @@ Weight
 --------------------------------  ------------------------------------------------------------
 Number of I/Os                    1x8
 I/O voltages                      Fixed 3.3V
-Update frequency                  
 ================================  ============================================================
 
 Resources
@@ -84,10 +83,8 @@ Additonally connect a button which can short pin 1 to GND
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-
-
-After installing our software (Brickd, Brickv) you can see the connected IO4
-Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"IO4 Bricklet" in the Brick Viewer after you pressed “connect”, select it.
 
 .. image:: /Images/Bricklets/io4_brickv.jpg
    :scale: 100 %
@@ -96,8 +93,7 @@ Bricklet in the Brickv.
    :target: ../../_images/Bricklets/io4_brickv.jpg
 
 
-
-Click on the IO4 Bricklet tab. First you can change the "Debounce Period", 
+in this tab you can change the "Debounce Period", 
 it is the period for interrupt callbacks. 
 For example: If you set this value to 100, you will get interrupts
 maximal every 100ms. This is necessary if something that bounces is

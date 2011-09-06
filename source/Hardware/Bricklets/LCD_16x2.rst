@@ -80,7 +80,8 @@ language API bindings (you need this in any case if you want to use the
 Bricks/Bricklets). The latter is only for testing purposes.
 
 Connect your LCD 16x2 Bricklet to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+:ref:`Brick <product_overview_bricks>` over the supplied cable 
+(see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
@@ -88,8 +89,10 @@ Connect your LCD 16x2 Bricklet to an arbitrary
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected LCD
-16x2 Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"LCD 16x2 Bricklet" in the Brick Viewer after you pressed "connect", select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
 .. image:: /Images/Bricklets/lcd_16x2_brickv.jpg
    :scale: 100 %
@@ -97,19 +100,19 @@ After installing our software (Brickd, Brickv) you can see the connected LCD
    :align: center
    :target: ../../_images/Bricklets/lcd_16x2_brickv.jpg
 
-Click on the LCD 16x2 tab and input an string to the text field.
+Input an string to the text field.
 You can choose the line and the start position at which the text is displayed.
 Press "Send Text" to display it. Press "Backlight On" such that you can read
 the LCD easier. Play around with the three onboard buttons and look 
 how their values changes.
 
 After this short test you can go on with writing your own application.
-See :ref:`Interface and Coding <lcd16x2_programming_interfaces>` section for the API of
+See :ref:`Interface and Coding <lcd_16x2_programming_interfaces>` section for the API of
 the LCD 16x2 Bricklet and examples in your programming language.
 
 
 
-.. _lcd16x2_programming_interfaces:
+.. _lcd_16x2_programming_interfaces:
 
 Programming Interfaces
 ----------------------

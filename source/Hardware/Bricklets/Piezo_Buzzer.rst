@@ -38,7 +38,7 @@ Property                          Value
 ================================  ============================================================
 Dimensions                        25mm x 25mm (0.98" x 0.98")
 Weight
-Buzzer                            PS1420P02CT (TDK Corporation)
+Buzzer                            PS1420P02CT
 Output: Beep                      Frequency 1kHz, definable duration
 Sound Pressure                    63 dB/10cm (according to datasheet)
 ================================  ============================================================
@@ -75,8 +75,11 @@ For a simple test connect your Piezo Buzzer Bricklet to an arbitrary
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected Piezo
-Buzzer Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Piezo Buzzer Bricklet" in the Brick Viewer after you pressed "connect", 
+select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
 .. image:: /Images/Bricklets/piezo_buzzer_brickv.jpg
    :scale: 100 %
@@ -84,11 +87,12 @@ Buzzer Bricklet in the Brickv.
    :align: center
    :target: ../../_images/Bricklets/piezo_buzzer_brickv.jpg
 
-Click on the Piezo Buzzer tab an enter a morse code you want to morse. You can enter
+Enter a morse code you want to morse. You can enter
 also the duration of every tone. Play around. 
 You can now go on with writing your own application.
-See :ref:`Interface and Coding <piezobuzzer_programming_interfaces>` section for the API of
-the Piezo Buzzer Bricklet and examples in your programming language.
+See :ref:`Interface and Coding <piezobuzzer_programming_interfaces>` section 
+for the API of the Piezo Buzzer Bricklet and examples in your programming 
+language.
 
 
 .. _piezobuzzer_programming_interfaces:

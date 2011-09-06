@@ -129,6 +129,14 @@ Generally, fast decay mode (small value) will be noisier but also
 allow higher motor speeds.
 
 
+Error LED Sources
+-----------------
+
+* so long as undervoltage
+
+
+.. _stepper_brick_programming_interfaces:
+
 Programming Interfaces
 ----------------------
 

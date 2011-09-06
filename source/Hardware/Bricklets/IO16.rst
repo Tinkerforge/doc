@@ -46,7 +46,6 @@ Weight
 --------------------------------  ------------------------------------------------------------
 Number of I/Os                    2x8
 I/O voltages                      Switchable between 3.3V and 5V
-Update frequency                  
 ================================  ============================================================
 
 Resources
@@ -84,9 +83,8 @@ Additonally connect a button which can short port B pin 0 to GND
    :align: center
    :target: ../../_images/Bricklets/io16_brickv.jpg
 
-
-After installing our software (Brickd, Brickv) you can see the connected IO16
-Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"IO16 Bricklet" in the Brick Viewer after you pressed “connect”, select it.
 
 .. image:: /Images/Bricklets/io16_brickv.jpg
    :scale: 100 %
@@ -95,7 +93,7 @@ Bricklet in the Brickv.
    :target: ../../_images/Bricklets/io16_brickv.jpg
 
 
-Click on the IO16 Bricklet tab. First you can change the "Debounce Period", 
+In this tab you can change the "Debounce Period",
 it is the period for interrupt callbacks. 
 For example: If you set this value to 100, you will get interrupts
 maximal every 100ms. This is necessary if something that bounces is

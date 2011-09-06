@@ -41,7 +41,7 @@ Weight
 Power Consumption                 
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Sensor                            HIH-5030 (Honeywell)
+Sensor                            HIH-5030
 Output: Relative Humidity (RH)    0-100% RH, unit 0.1% RH, resolution 12bit
 ================================  ============================================================
 
@@ -69,7 +69,7 @@ The former is a bridge between the Bricks/Bricklets and the programming
 language API bindings (you need this in any case if you want to use the
 Bricks/Bricklets). The latter is only for testing purposes.
 
-Connect your Humidity Sensor to an arbitrary 
+Connect your Humidity Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
@@ -78,9 +78,11 @@ Connect your Humidity Sensor to an arbitrary
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-
-After installing our software (Brickd, Brickv) you can see the connected Humidity
-Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Humidity Bricklet" in the Brick Viewer after you pressed “connect”.
+Select it.
+If everything went as expected you can now see the measured relative humidity
+and a graph that shows the humidity over time.
 
 .. image:: /Images/Bricklets/humidity_brickv.jpg
    :scale: 100 %
@@ -88,9 +90,9 @@ Bricklet in the Brickv.
    :align: center
    :target: ../../_images/Bricklets/humidity_brickv.jpg
 
-Click on the Humidity Bricklet tab and see how the measured values change.
-For example breath over the sensor and see the relative humidity rising.
+To test the sensor breath over the sensor and see the relative humidity rising.
 It will fall again when you stop breathing over the sensor.
+
 After this test you can go on with writing your own application.
 See :ref:`Interface and Coding <humidity_programming_interfaces>` section for the API of
 the Humidity Bricklet and examples in your programming language.

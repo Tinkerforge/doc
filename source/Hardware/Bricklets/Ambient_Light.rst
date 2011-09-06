@@ -39,7 +39,7 @@ Weight                            1.2g
 Power Consumption                 TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Sensor                            TEMT6000 (Vishay)
+Sensor                            TEMT6000
 Output: Illumination              0-900 lux, unit 0.1 lux, resolution 12bit
 ================================  ============================================================
 
@@ -76,8 +76,8 @@ cable with the Bricklet.
    :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
 If you then connect the Brick to the PC over USB,
-you should see a tab named "Ambient Light" in the Brick Viewer after you
-pressed "connect".
+you should see a tab named "Ambient Light Bricklet" in the Brick Viewer after 
+you pressed "connect", select it.
 
 If everything went as expected you can now see the exact illuminance in lux,
 a graphical representation of the illuminance and a graph that shows the

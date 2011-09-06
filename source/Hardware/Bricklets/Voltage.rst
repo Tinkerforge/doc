@@ -72,7 +72,7 @@ For testing purposes we have connected a battery
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
 If you connect the Brick to the PC over USB,
-you should see a tab named "Voltage" in the Brick Viewer after you
+you should see a tab named "Voltage Bricklet" in the Brick Viewer after you
 pressed "connect", select this tab.
 If everything went as expected you can now see the exact voltage in volt
 and a graph that shows the voltage over time. 

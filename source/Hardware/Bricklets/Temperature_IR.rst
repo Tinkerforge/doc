@@ -44,7 +44,7 @@ Property                             Value
 ===================================  =====================================================================
 Dimensions                           20mm x 25mm (0.79" x 0.98")
 Weight
-Sensor                               MLX90614ESF-BAA (Melexis)
+Sensor                               MLX90614ESF-BAA
 Temperature range                    * -40 to +85°C ambient temperature
 
                                      * -70 to 380°C object temperature
@@ -84,8 +84,11 @@ Connect your Temperature IR Bricklet to an arbitrary
    :align: center
 	:target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected 
-Temperature IR Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Temperature IR Bricklet" in the Brick Viewer after you pressed "connect", 
+select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
 .. image:: /Images/Bricklets/temperature_ir_brickv.jpg
    :scale: 100 %
@@ -93,7 +96,7 @@ Temperature IR Bricklet in the Brickv.
    :align: center
    :target: ../../_images/Bricklets/temperature_ir_brickv.jpg
 
-Click on the Temperature IR Bricklet tab and point the device in different
+Point the Bricklet in different
 directions. The Brick Viewer will show you the ambient temperature (the 
 temperature of the device) and the object temperature you point at.
 

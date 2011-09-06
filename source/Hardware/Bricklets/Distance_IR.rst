@@ -38,15 +38,15 @@ the measured distance will be smaller.
 Technical Specifications
 ------------------------
 
-================================  ============================================================
+================================  ==================================================================
 Property                          Value
-================================  ============================================================
+================================  ==================================================================
 Dimensions                        13mm x 44.6mm (0.51" x 1.76") fitting on backside of sensor
 Weight
 Current Consumption
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Sensor Range                      Depends on attached Sharp IR Sensor:
+--------------------------------  ------------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------------
+Sensor Range                      Depends on attached `Sharp <http://www.sharpsma.com>`_ IR Sensor:
 
                                   * GP2D120XJ00F:   4- 30cm (1.57" - 11.81")
                                   * GP2Y0A21YK0F:  10- 80cm (3.94" - 31.50")
@@ -54,7 +54,7 @@ Sensor Range                      Depends on attached Sharp IR Sensor:
 
                                   and others...
 Output: Distance                  Distance range depends on sensor, unit mm, resolution 12bit.                     
-================================  ============================================================
+================================  ==================================================================
 
 Resources
 ---------
@@ -91,8 +91,8 @@ You should have received a suitable cable with the Bricklet.
 
 
 If you then connect the Brick to the PC over USB,
-you should see a tab named "Distance IR" in the Brick Viewer after you
-pressed "connect". 
+you should see a tab named "Distance IR Bricklet" in the Brick Viewer after you
+pressed "connect", select it. 
 If everything went as expected you can now see the measured distance
 of the sensor, the output voltage of the distance sensor
 and a graph that shows the distance over time. 
@@ -144,8 +144,8 @@ Click on it. You should now see something like depicted below.
    :align: center
    :target: ../../_images/Bricklets/distance_ir_brickv_sp.jpg
 
-Press the "File.." Button (1) and choose an voltage/distance mapping file.
-After this press "Save" Button (2) to write this data on to the Bricklet,
+Press the "File.." Button and choose an voltage/distance mapping file.
+After this press "Save" Button to write this data on to the Bricklet,
 you will get an graphical representation of the written data.
 
 After this press the reset button on the Brick or cycle power to

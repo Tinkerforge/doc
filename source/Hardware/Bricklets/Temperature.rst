@@ -36,7 +36,7 @@ Property                          Value
 ================================  ============================================================
 Dimensions                        15mm x 25mm (0.59" x 0.98")
 Weight
-Sensor                            TMP102 (Texas Instruments)
+Sensor                            TMP102
 Temperature range                 -40°C to 125°C
 Accuracy                          0.5°C
 --------------------------------  ------------------------------------------------------------
@@ -76,8 +76,11 @@ Connect your Temperature Bricklet to an arbitrary
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected 
-Temperature Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Temperature Bricklet" in the Brick Viewer after you pressed "connect", 
+select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
 .. image:: /Images/Bricklets/temperature_brickv.jpg
    :scale: 100 %
@@ -85,7 +88,7 @@ Temperature Bricklet in the Brickv.
    :align: center
    :target: ../../_images/Bricklets/temperature_brickv.jpg
 
-Click on the Temperature Bricklet tab and see how the measured values change dependend 
+See how the measured values change dependend 
 on the device temperature. For example put your finger on the sensor and see the 
 temperature rising.
 

@@ -71,8 +71,8 @@ Connect your Joystick Bricklet to an arbitrary
    :align: center
    :target: ../../_images/Bricklets/joystick_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected 
-Joystick Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Joystick Bricklet" in the Brick Viewer after you pressed "connect", select it.
 
 .. image:: /Images/Bricklets/joystick_brickv.jpg
    :scale: 100 %
@@ -80,16 +80,17 @@ Joystick Bricklet in the Brickv.
    :align: center
    :target: ../../_images/Bricklets/joystick_brickv.jpg
 
-Click on the Joystick Bricklet tab and see a coordinate system which
+The tab consits of a coordinate system which
 shows you the current position of the joystick and if the button is pressed.
-Below you can find a graph which visualizes your movements over time.
+Below this coordinate system you can find a graph which visualizes your movements 
+over time.
 You can produce the depicted graph when you move the joystick first up, 
 then down and right and at the end left (directions when you hold the Bricklet
 with the connector away from you).
 
 After this you can go on with writing your own application.
-See :ref:`Interface and Coding <joystick_programming_interfaces>` section for the API of
-the Joystick Bricklet and examples in your programming language.
+See :ref:`Interface and Coding <joystick_programming_interfaces>` section for 
+the API of the Joystick Bricklet and examples in your programming language.
 
 
 .. _joystick_programming_interfaces:

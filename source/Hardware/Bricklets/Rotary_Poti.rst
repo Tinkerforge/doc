@@ -71,16 +71,19 @@ Connect your Rotary Potentiometer Bricklet to an arbitrary
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected Rotary
-Potentiometer Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Rotary Poti Bricklet" in the Brick Viewer after you pressed "connect", 
+select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
 .. image:: /Images/Bricklets/rotary_poti_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of Rotary Poti Bricklet
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/rotary_poti_brickv.jpg
 
-Click on the Rotary Poti Bricklet tab and play around by turning the potentiometer.
+Play around by turning the potentiometer.
 You should be able to create a similar graph by turning the potentiometer full left
 and then right.
 

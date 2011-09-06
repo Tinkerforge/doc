@@ -73,8 +73,11 @@ Connect your Linear Poti Brickler to an arbitrary
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected Linear
-Poti Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Linear Poti Bricklet" in the Brick Viewer after you pressed "connect", 
+select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
 .. image:: /Images/Bricklets/linear_poti_brickv.jpg
    :scale: 100 %
@@ -82,7 +85,7 @@ Poti Bricklet in the Brickv.
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-Click on the Linear Poti Bricklet and and move the potentiometer.
+Move the potentiometer.
 You should be able to create a graph like that one depicted in the image above 
 by moving the potentiometer from lower to top.
 

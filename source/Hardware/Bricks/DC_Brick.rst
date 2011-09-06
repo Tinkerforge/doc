@@ -131,7 +131,15 @@ There are two possible modes of motor controls:
    Advantageous is a lower current consumption and a resulting lesser heat-up.
    Therefore it might be possible that it the control of the velocity and 
    acceleration is less precise.
- 
+
+Error LED Sources
+-----------------
+
+* so long as undervoltage
+* emergency shutdown (over temperature over current of driver ic) 
+  until reenabling or disabling driver
+
+.. _dc_brick_programming_interfaces:
 
 Programming Interfaces
 ----------------------

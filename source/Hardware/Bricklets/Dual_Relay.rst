@@ -6,12 +6,15 @@ Dual Relay
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
-
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ tfdocend() }}
 
 Description
 -----------
@@ -79,8 +82,11 @@ Connect your Dual Relay Bricklet to an arbitrary
    :align: center
    :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected Dual
-Relais Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Dual Relay Bricklet" in the Brick Viewer after you pressed "connect", 
+select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
 .. image:: /Images/Bricklets/dual_relay_brickv.jpg
    :scale: 100 %
@@ -88,8 +94,9 @@ Relais Bricklet in the Brickv.
    :align: center
    :target: ../../_images/Bricklets/dual_relay_brickv.jpg
 
-Click on the Dual Relais tab and play around with the two relay buttons.
-You should hear the relay switching when toggeling the buttons.
+Play around with the two relay buttons,
+you should hear the relay switching when toggeling the buttons.
+
 After this you can go on with writing your own application.
 See :ref:`Interface and Coding <dualrelay_programming_interfaces>` section for the API of
 the Dual Relay Bricklet and examples in your programming language.

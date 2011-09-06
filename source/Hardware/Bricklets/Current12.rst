@@ -36,7 +36,7 @@ Weight
 Current Consumption
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Sensor                            ACS711 12.5A Version (Allegro Microsystems)
+Sensor                            ACS711 12.5A Version
 Output: Current                   -12.5A to 12.5A, unit 1mA, resolution 12bit
 ================================  ============================================================
 
@@ -65,7 +65,7 @@ Bricks/Bricklets). The latter is only for testing purposes.
 Now you can connect your Current12 Bricklet to any
 :ref:`Brick <product_overview_bricks>`. You should have received a suitable
 cable with the Bricklet. If you like you can connect a Motor
-and a Battery to the Bricklet like displayed in the following image.
+and a Battery to the Bricklet as displayed in the following image.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
@@ -74,9 +74,9 @@ and a Battery to the Bricklet like displayed in the following image.
    :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
 If you connect the Brick to the PC over USB,
-you should see a tab named "Current12" in the Brick Viewer after you
+you should see a tab named "Current12 Bricklet" in the Brick Viewer after you
 pressed "connect", select this tab.
-If everything went as expected you can now see the exact current in ampere 
+If everything went as expected you can now see the exact current in Ampere 
 and a graph that shows the current over time. 
 
 
