@@ -43,7 +43,7 @@ Technical Specifications
 Property                             Value
 ===================================  =====================================================================
 Dimensions                           20mm x 25mm (0.79" x 0.98")
-Weight
+Weight                               2.6g
 Sensor                               MLX90614ESF-BAA
 Temperature range                    * -40 to +85°C ambient temperature
 
@@ -82,7 +82,7 @@ Connect your Temperature IR Bricklet to an arbitrary
    :scale: 100 %
    :alt: Master Brick with connected Temperature IR Bricklet
    :align: center
-	:target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "Temperature IR Bricklet" in the Brick Viewer after you pressed "connect", 

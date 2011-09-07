@@ -36,7 +36,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions                        30mm x 25mm (1.18" x 0.98")
-Weight
+Weight                            5.3g (w/o knob) 6.7g (w knob)
 Rotary potentiometer              1-turn, 300 degree
 Output: Potentiometer position    -150 to 150 (left to right)
 ================================  ============================================================

@@ -35,7 +35,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions                        15mm x 25mm (0.59" x 0.98")
-Weight
+Weight                            1.4g
 Sensor                            TMP102
 Temperature range                 -40°C to 125°C
 Accuracy                          0.5°C

@@ -35,15 +35,16 @@ measured values from other bricklets.
 Technical Specifications
 ------------------------
 
-================================  ============================================================
-Property                          Value
-================================  ============================================================
-Dimensions                        98mm x 60mm (3.86" x 2.36")
-Weight
-LCD                               Alphanummeric, 20 chars per line, 4 lines
-Backlight                         Blue, software switchable on/off
-Contrast                          Contrast voltage adjustable with potentiometer
-================================  ============================================================
+===================================  ============================================================
+Property                             Value
+===================================  ============================================================
+Dimensions                           98mm x 60mm (3.86" x 2.36")
+Weight                               96.0g (w/o screws)
+Current Consumption with Backlight   36mA
+LCD                                  Alphanummeric, 20 chars per line, 4 lines
+Backlight                            Blue, software switchable on/off
+Contrast                             Contrast voltage adjustable with potentiometer
+===================================  ============================================================
 
 Resources
 ---------

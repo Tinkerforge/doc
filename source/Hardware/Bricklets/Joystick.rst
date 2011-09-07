@@ -36,7 +36,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions                        45mm x 25mm (1.77" x 0.98")
-Weight
+Weight                            11.8g (w/o knob), 14.7g (w knob)
 Joystick                          Two-axis with push button
 Output: Joystick position         x/y axis position: -100/100, 0=center
 ================================  ============================================================

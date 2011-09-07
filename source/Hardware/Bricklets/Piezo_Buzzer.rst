@@ -37,7 +37,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions                        25mm x 25mm (0.98" x 0.98")
-Weight
+Weight                            3.5g
 Buzzer                            PS1420P02CT
 Output: Beep                      Frequency 1kHz, definable duration
 Sound Pressure                    63 dB/10cm (according to datasheet)

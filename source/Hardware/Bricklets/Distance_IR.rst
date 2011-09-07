@@ -42,8 +42,8 @@ Technical Specifications
 Property                          Value
 ================================  ==================================================================
 Dimensions                        13mm x 44.6mm (0.51" x 1.76") fitting on backside of sensor
-Weight
-Current Consumption
+Weight                            2.0g (w/o cable and sensor)
+Current Consumption               See IR Sensor Datasheet
 --------------------------------  ------------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------------
 Sensor Range                      Depends on attached `Sharp <http://www.sharpsma.com>`_ IR Sensor:
