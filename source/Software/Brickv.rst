@@ -23,6 +23,7 @@ Brick ADC Calibration
    :align: center
 
 
+.. _brickv_flash_plugin:
 
 Bricklet Plugin Flashing
 ------------------------
@@ -34,14 +35,14 @@ Bricklet Plugin Flashing
    :alt: Brickv not connected to Brickd
    :align: center
 
-* push connect
+* press "connect"
 
 .. image:: /Images/Software/brickv_connected_with_master_brick.jpg
    :scale: 100 %
    :alt: Brickv connected to Brickd, one Master Brick attached
    :align: center
 
-* push advanced functions
+* press "advanced functions"
 
 .. image:: /Images/Software/brickv_advanced_functions.jpg
    :scale: 100 %
@@ -49,8 +50,8 @@ Bricklet Plugin Flashing
    :align: center
 
 * then connect bricklet
-* choose port
-* choose bin file, save, wait for \"Check Ok\"
+* choose port on which bricklet is connected
+* choose bin file, press "save", wait for "Check Ok"
 
 
 

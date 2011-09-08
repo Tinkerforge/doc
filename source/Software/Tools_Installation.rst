@@ -96,10 +96,10 @@ TODOTODOTODO: kernel treiber bei linux?
 Building a plugin for a Bricklet
 --------------------------------
 
-*same as firmware but brickletlib and bricklib
+* same as firmware but brickletlib and bricklib
 
 
 Flash plugin on a Bricklet
 --------------------------
 
-TODO: link auf brickv doc?
+See :ref:`brickv_flash_plugin` in :ref:`brickv` documentation for more information.
