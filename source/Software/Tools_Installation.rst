@@ -73,24 +73,31 @@ TODOTODOTODO: kernel treiber bei linux?
 
    from `Atmel <http://www.atmel.com/dyn/products/tools_card.asp?tool_id=3883>`_
 
-* Copy all files in tcl_lib of the brickboot repository to the tcl_lib folder of SAM-BA::
+* Copy all files in tcl_lib of the brickboot repository to the tcl_lib folder 
+  of SAM-BA::
 
     e.g. git clone https://github.com/Tinkerforge/bricklib.git
          cp -r bricklib/tcl_lib/* /srv/sam-ba/tcl-lib/
 
-* Append the following lines to `array set boards` in file `tcl_lib\boards_tcl` of your SAM-BA installation::
+* Append the following lines to `array set boards` in file `tcl_lib\boards_tcl`
+  of your SAM-BA installation::
 
     "at91sam3s2-brick"     "at91sam3s2-brick/at91sam3s2-brick.tcl"
     "at91sam3s4-brick"     "at91sam3s4-brick/at91sam3s4-brick.tcl"
 
 * Set Brick in bootloader
 
-   Press `Erase` botton of the Brick and release it after a short press on `Reset` button.
+   Press `Erase` botton of the Brick and release it after a short press on 
+   `Reset` button. The blue LED should be off.
 
 
-* Start SAM-BA, choose your connection and choose `at91sam3s4-brick` for our Master Brick and `at91sam3s2-brick` for all other Bricks.
-   Click connect and select your firmware (bin) file as `Send File Name`. Click send. Answer `Yes` to lock regions.
-   At the end run `Boot from Flash (GPNVM1)` script. Reset the Brick and it should start with the new firmware.
+* Start SAM-BA, choose your connection and choose `at91sam3s4-brick` for our 
+   Master Brick and `at91sam3s2-brick` for all other Bricks.
+   Click connect, after this the blue LED should be on. 
+   Select your firmware (bin) file as `Send File Name` and click send. 
+   Answer `Yes` to lock regions.
+   At the end select `Boot from Flash (GPNVM1)` script and execute it. 
+   Reset the Brick or cycle power and it should start with the new firmware.
 
 
 Building a plugin for a Bricklet
