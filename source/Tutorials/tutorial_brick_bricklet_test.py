@@ -3,8 +3,8 @@
 
 HOST = "localhost"
 PORT = 4223
-UID_DC = "9yEBJP3Jnf3" # Change to your UID
-UID_POTI = "2wx" # Change to your UID
+UID_DC = "9yEBJP3Jnf3" # Change to the UID of your DC Brick
+UID_POTI = "2wx" # Change to the UID of your Rotary Poti Bricklet
 
 from ip_connection import IPConnection
 from brick_dc import DC
@@ -14,7 +14,7 @@ dc = None
 
 # Callback function for position callback (parameter has range -150 to 150)
 def cb_position(position):
-    velocity = 0xFFFF/2*position/150
+    velocity = 0xFFFF/2*position/150 # Velocity: -32767/32767
     print('Set Position/Velocity: ' + str(position) + '/' + str(velocity))
     dc.set_velocity(velocity)
 

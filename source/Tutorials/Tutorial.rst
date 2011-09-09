@@ -4,15 +4,19 @@ Tutorial
 ========
 
 The following tutorial will demonstrate how to use our products with the 
-:ref:`High Level Programming Interface<pi_hlpi>`. See :ref:`<pi>` for
-other possibilities. We will demonstrate our system with specific products
-representative for all others.
+:ref:`High Level Programming Interface <pi_hlpi>`. 
+See :ref:`Programming Interfaces <pi>` for other possibilities. 
+
+In the following we will demonstrate our system with specific products as 
+representatives for all others.
 
 Use a single Brick
 ------------------
 
-We choose our :ref:`DC Brick <dc_brick>` for this tutorial part as representative
-for all other :ref:`Bricks <product_overview_bricks>`.
+For this tutorial part we choose the :ref:`DC Brick <dc_brick>` as 
+representative.
+Click :ref:`here <product_overview_bricks>` for an overview over all other
+Bricks.
 
 Phase 1: Testing
 ^^^^^^^^^^^^^^^^
@@ -22,7 +26,7 @@ Firstly install the :ref:`brickd` and :ref:`brickv` on your PC as described
 Bricks/Bricklets. The latter is a GUI only for testing purposes.
 
 Now you are ready to play around. Take the DC Brick and 
-connect a Motor and a battery as depicted in the picture below.
+connect a motor and a battery as depicted in the picture below:
 
 .. image:: /Images/Bricks/dc_brick_with_motor_battery.jpg
    :scale: 100 %
@@ -34,7 +38,7 @@ connect a Motor and a battery as depicted in the picture below.
 Start the Brick Viewer and connect your
 DC Brick over the supplied USB cable with your PC. After pressing the "connect"
 button in the viewer you should get a tab called "DC Brick". Select it.
-Your Brick Viewer should now look like below.
+Your Brick Viewer should now look like below:
 
 .. image:: /Images/Bricks/dc_brickv.jpg
    :scale: 100 %
@@ -42,12 +46,15 @@ Your Brick Viewer should now look like below.
    :align: center
    :target: ../../_images/Bricks/dc_brickv.jpg
 
-You can see the voltage of your connected battery and the current flow.
+You can see the voltage of your connected battery as external voltage
+and the current flow.
 Different sliders allow you to modify velocity and acceleration
 of the motor as well as the 
 `PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency 
 of the driver. To play around you have to click "Enable", after this
-you are in control. Have fun!
+you are in control. 
+
+Have fun!
 
 Phase 2: Write your own Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -57,8 +64,7 @@ programming languages we choose `Python <http://www.python.org>`__
 in this tutorial. The necessary steps to get everything working are essentially
 the same. This tutorial together with the examples in the 
 "Programming Interfaces" section of every product should allow you to get
-everything working in other languages than Python (see a installation 
-description for bindings :ref:`here <tools_installation_bindings>`).
+everything working in other languages than Python.
 
 We suggest that you have installed python already, when not
 download it `here <http://python.org/download/>`__ and install it.
@@ -69,10 +75,10 @@ Download the Python bindings for the DC Brick from our
 and place them in the folder.
 
 Download an example for the DC Brick as starting point 
-`here <https://github.com/Tinkerforge/dc-brick/raw/master/software/bindings/python/example_configuration.py>`__.
-Place it in your folder.
+`here <https://github.com/Tinkerforge/dc-brick/raw/master/software/bindings/python/example_configuration.py>`__
+and place it in your folder.
 
-Have a look at *example_configuration.py*:
+Have a look at this example (**example_configuration.py**):
 
 .. literalinclude:: /Software/Bricks/DC_Brick_Python_example_configuration.py
  :language: python
@@ -80,21 +86,19 @@ Have a look at *example_configuration.py*:
  :tab-width: 4
 
 **Line 12** creates an IP Connection to the Brick Deamon running on the host 
-and port defined in **Lines 4-5**. This way enables you to run your program on 
+defined in **Lines 4-5**. This way enables you to run your program on 
 another PC than the one which has the Brick Deamon running and the connected 
 hardware (Bricks/Bricklets).
 
 **Line 14** creates an object which lets you control your DC Brick. 
 Therefore it is necessary to assign the Unique Identifier (UID) of your Brick
-(In this example defined in **Line 6**). 
+(in this example defined in **Line 6**). Change it corresponding to your device!
 
-You have multiple options to get the UID of your device:
+.. note::
+   The simplest way to get the UID of your device is to use the Brick Viewer.
+   If you connect a device to your PC, the Viewer will show you in the "Setup" 
+   tab a tabular with the connected devices and their corresponding UIDs.
 
-* Brickv: Brickv shows you all devices with corresponding UIDs
-* Information of your Operating System: TODO
-* The supplied UID packaged with the device when you bought ir (TODO correct?)
-
-Change it corresponding to your device!
 
 In **Line 15** the DC Brick object is attached to the IP Connection to your 
 Brick Deamon. This way a program can control multiple devices on different 
@@ -112,14 +116,15 @@ for your own project.
 .. note::
 
    A full description of the API and further examples can you find in the
-   product description pages. For example in case of the DC Brick 
-   :ref:`here <dc_brick>`
+   description page of the product. For example in case of the DC Brick 
+   :ref:`here <dc_brick_programming_interfaces>`
 
 Add Bricklets to extend features
 --------------------------------
 
 You can add Bricklets to extend the features of your Brick.
-See :ref:`here <product_overview_bricklets>` for an overview over all Bricklets.
+Click :ref:`here <product_overview_bricklets>` for an overview over all 
+Bricklets.
 
 To use a Bricklet connect it to your Brick over the supplied cable
 when the Brick is not powered.
@@ -133,8 +138,7 @@ when the Brick is not powered.
    This can lead to a shortcut and destroyed hardware.
 
 
-In this tutorial we use a
-:ref:`Rotary Poti Bricklet <rotary_poti_bricklet>` and the
+We use a :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>` and the
 :ref:`DC Brick <dc_brick>` from the previous part of this tutorial as 
 representative for all other Bricklets and Bricks.
 
@@ -167,9 +171,10 @@ Phase 2: Write your own Program
 
 After these Tests lets take the previous created DC Brick test folder
 and download the Python bindings for the Rotary Poti Bricklet 
-`here <TBD TODO>`__ and place them in the folder.
+:ref:`here <downloads_firmwares_plugins>` and place them in the folder.
 
-Have a look at *tutorial_brick_bricklet_test.py*:
+Download *tutorial_brick_bricklet_test.py* the following python 
+script (`Download <TBD>`__):
 
 .. literalinclude:: tutorial_brick_bricklet_test.py
  :language: python
@@ -179,8 +184,7 @@ Have a look at *tutorial_brick_bricklet_test.py*:
 Essentially the script is a mixture from different DC Brick and
 Rotary Poti Bricklet examples.
 
-**Lines 4-7** are the typical configuration and has to be adapted by
-your used hardware.  
+**Lines 4-7** are the typical configuration and has to be adapted.
 
 In **Lines 23-28** an IP Connection to the Brick Deamon is established
 the Brick/Bricklet devices are created and added to the IP Connection.
@@ -211,11 +215,29 @@ The stacking is transparent, that means there is no code change necessary
 between a version which uses Bricks seperately connected over USB to a PC
 or a version with an additional Master and stacked Bricks.
 
+In the following we extend the previous part. Simply take a Master Brick
+and attach it below the DC Brick.
 
-* 2x Bricks -> Master + 2x Bricks (Stack)
+.. note::
+
+   Hint: The white corner shows you how to plug the Bricks together.
+
+Phase 1: Testing
+^^^^^^^^^^^^^^^^
+
+Phase 2: Write your own Program
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 Cross-Link Stacks
 -----------------
 
-* 2x Stacks (USB) -> Chibi
+.. 2x Stacks (USB) -> Chibi
+
+.. note::
+
+   Coming soon!
+   We will show you how to connect two stacks without any code modifications.
+   Be patient...
 
