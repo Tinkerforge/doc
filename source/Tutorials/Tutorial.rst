@@ -10,6 +10,14 @@ See :ref:`Programming Interfaces <pi>` for other possibilities.
 In the following we will demonstrate our system with specific products as 
 representatives for all others.
 
+In the first part of this example we will start with driving a DC motor by
+a :ref:`Brick <product_overview_bricks>`. After this we will make the
+velocity of this motor controllable by a rotary 
+`potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`__ by attaching
+an adaquate :ref:`Bricklet <product_overview_bricklets>`. At the end
+we will show how you can stack Bricks together to reduce wiring and
+communicate over wireless or cable based interfaces.
+
 Use a single Brick
 ------------------
 
@@ -17,6 +25,7 @@ For this tutorial part we choose the :ref:`DC Brick <dc_brick>` as
 representative.
 Click :ref:`here <product_overview_bricks>` for an overview over all other
 Bricks.
+
 
 Phase 1: Testing
 ^^^^^^^^^^^^^^^^
@@ -220,7 +229,7 @@ and attach it below the DC Brick.
 
 .. note::
 
-   Hint: The white corner shows you how to plug the Bricks together.
+   The white corner shows you how to plug the Bricks together.
 
 Phase 1: Testing
 ^^^^^^^^^^^^^^^^
@@ -238,6 +247,7 @@ Cross-Link Stacks
 .. note::
 
    Coming soon!
+
    We will show you how to connect two stacks without any code modifications.
    Be patient...
 
