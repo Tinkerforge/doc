@@ -1,3 +1,5 @@
+.. _tutorial:
+
 Tutorial
 ========
 
@@ -9,8 +11,11 @@ representative for all others.
 Use a single Brick
 ------------------
 
-We choose our :ref:`DC Brick <dc_brick>` for this tutorial part as representation
+We choose our :ref:`DC Brick <dc_brick>` for this tutorial part as representative
 for all other :ref:`Bricks <product_overview_bricks>`.
+
+Phase 1: Testing
+^^^^^^^^^^^^^^^^
 
 Firstly install the :ref:`brickd` and :ref:`brickv` on your PC as described 
 :ref:`here <tools_installation_brickdv>`. The former is a bridge between the 
@@ -38,12 +43,16 @@ Your Brick Viewer should now look like below.
    :target: ../../_images/Bricks/dc_brickv.jpg
 
 You can see the voltage of your connected battery and the current flow.
-Different sliders allow you to modify the velocity and the acceleration
-of the motor. To play around you have to click "Enable", after this
+Different sliders allow you to modify velocity and acceleration
+of the motor as well as the 
+`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency 
+of the driver. To play around you have to click "Enable", after this
 you are in control. Have fun!
 
+Phase 2: Write your own Program
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After this test lets write our own application. Since we support many
+After this test let us write our own application. Since we support many
 programming languages we choose `Python <http://www.python.org>`__
 in this tutorial. The necessary steps to get everything working are essentially
 the same. This tutorial together with the examples in the 
@@ -55,7 +64,8 @@ We suggest that you have installed python already, when not
 download it `here <http://python.org/download/>`__ and install it.
 
 Create a folder for your DC Brick test project.
-Download the Python bindings for the DC Brick `here <TBD TODO>`__
+Download the Python bindings for the DC Brick from our
+:ref:`Downloads page <downloads>`
 and place them in the folder.
 
 Download an example for the DC Brick as starting point 
@@ -97,7 +107,13 @@ speed forward.
 press any key.
 
 Run this python script and use it or other examples as startingpoint
-for your own project. 
+for your own project.
+
+.. note::
+
+   A full description of the API and further examples can you find in the
+   product description pages. For example in case of the DC Brick 
+   :ref:`here <dc_brick>`
 
 Add Bricklets to extend features
 --------------------------------
@@ -105,32 +121,84 @@ Add Bricklets to extend features
 You can add Bricklets to extend the features of your Brick.
 See :ref:`here <product_overview_bricklets>` for an overview over all Bricklets.
 
-To use a Bricklet simply connect it to your Brick over the supplied cable.
-Press the "Reset" button on the Brick to let it initialize the Bricklet
-and make it useable. See the "Test your ... Bricklet" section in the 
-documentation of your Bricklet for further instructions and tests.
-
-If you like to replace a Bricklet by another, do the following:
-
-1. Remove old Bricklet
-2. Press "reset" at Brick:
-
-   *After this the Brick's Bricklet port is configured default as input.*
-3. Connect new Bricklet
-4. Press "reset" at Brick again:
-
-   *After this the Bricklet code is loaded and Brick's Bricklet port is 
-   configured according to new connected Bricklet.*
+To use a Bricklet connect it to your Brick over the supplied cable
+when the Brick is not powered.
 
 .. warning::
 
    A wrong handling of Bricklets can destroy your hardware!
 
-   If you replace a Bricklet without removing power of the Brick or bringing 
-   the Brick's Bricklet port in an input state 
-   (e.g. by removing the old Bricklet and afterwards resetting the Brick)
+   If you replace a Bricklet without removing power of the Brick
    you can connect two hardware modules both active driving a signal.
    This can lead to a shortcut and destroyed hardware.
+
+
+In this tutorial we use a
+:ref:`Rotary Poti Bricklet <rotary_poti_bricklet>` and the
+:ref:`DC Brick <dc_brick>` from the previous part of this tutorial as 
+representative for all other Bricklets and Bricks.
+
+Phase 1: Testing
+^^^^^^^^^^^^^^^^
+
+Connect the Rotary Poti Bricklet to your DC Brick as depicted in the image 
+below.
+
+.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+   :scale: 100 %
+   :alt: DC Brick with connected Rotary Poti Bricklet
+   :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
+
+As in the former part of this tutorial connect the DC Brick to you PC
+and notice the "DC Brick" and "Rotary Poti Bricklet" tabs in the Brick Viewer.
+Lets select the "Rotary Poti Bricklet" tab and rotate the potentiometer.
+You should see a corresponding movement in the viewer.
+
+.. image:: /Images/Bricklets/rotary_poti_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of the Rotary Poti Bricklet
+   :align: center
+   :target: ../../_images/Bricklets/rotary_poti_brickv.jpg
+
+
+Phase 2: Write your own Program
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After these Tests lets take the previous created DC Brick test folder
+and download the Python bindings for the Rotary Poti Bricklet 
+`here <TBD TODO>`__ and place them in the folder.
+
+Have a look at *tutorial_brick_bricklet_test.py*:
+
+.. literalinclude:: tutorial_brick_bricklet_test.py
+ :language: python
+ :linenos:
+ :tab-width: 4
+
+Essentially the script is a mixture from different DC Brick and
+Rotary Poti Bricklet examples.
+
+**Lines 4-7** are the typical configuration and has to be adapted by
+your used hardware.  
+
+In **Lines 23-28** an IP Connection to the Brick Deamon is established
+the Brick/Bricklet devices are created and added to the IP Connection.
+
+We configure the Rotary Poti Bricklet, such that it calls a method 
+**cb_position** everytime the position of the potentiometer changes.
+**Line 31** configures this callback to be called with a period of
+50ms if the position changes permanently. If the position is unchanged we will
+get no callbacks. Therefore it is a very efficient implementation.
+The callback method is registered in **Line 32**.
+**cb_position** is defined in **Line 16-19**. 
+It sets a new velocity based on the current position of the potentiometer.
+
+In **Lines 35-36** we enable the motor and set a maximum acceleration such
+that the motor will follow our potentiometer movements immediately.
+
+In **Lines 36-38** we wait for user input to prevent programm termination.
+After this we stop the motor and destroy the IP Connection.
 
 Building Stacks
 ---------------
