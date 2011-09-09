@@ -1,7 +1,7 @@
 .. _brickv:
 
-Brickv
-======
+Brick Viewer (brickv)
+=====================
 
 
 Installation

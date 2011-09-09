@@ -9,6 +9,7 @@ Brickd/ Brickv
 --------------
 
 
+.. _tools_installation_bindings:
 
 Programming Language Bindings
 -----------------------------

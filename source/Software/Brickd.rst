@@ -1,7 +1,7 @@
 .. _brickd:
 
-Brickd
-======
+Brick Deamon (brickd)
+=====================
 
 
 Installation
