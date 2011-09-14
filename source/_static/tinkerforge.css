@@ -22,12 +22,12 @@ div.document {
 }
 
 div.documentwrapper {
-    float: left;
+/*    float: left;*/
     width: 100%;
 }
 
 div.bodywrapper {
-    margin: 0 0 0 230px;
+/*    margin: 0 0 0 230px;*/
 }
 
 div.body {
@@ -60,6 +60,10 @@ div.related a {
 }
 
 div.sphinxsidebar {
+	float: right;
+	width: auto;
+	margin-left: auto;
+  background-color: #FFFFFF;
 }
 
 div.sphinxsidebar h3 {
