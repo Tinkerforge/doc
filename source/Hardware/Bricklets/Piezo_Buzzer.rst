@@ -6,11 +6,15 @@ Piezo Buzzer
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ tfdocend() }}
 
 
 Description
@@ -33,8 +37,8 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions                        25mm x 25mm (0.98" x 0.98")
-Weight
-Buzzer                            PS1420P02CT (TDK Corporation)
+Weight                            3.5g
+Buzzer                            PS1420P02CT
 Output: Beep                      Frequency 1kHz, definable duration
 Sound Pressure                    63 dB/10cm (according to datasheet)
 ================================  ============================================================
@@ -42,47 +46,53 @@ Sound Pressure                    63 dB/10cm (according to datasheet)
 Resources
 ---------
 
- * Schematic (Download)
- * PS1420P02CT Datasheet (`Download <http://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/PS%20Series%20Rev2008.pdf>`_)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
-
-.. Connectivity
-.. ------------
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/piezo_buzzer_bricklet_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
+* Buzzer Datasheet (`Download <https://github.com/Tinkerforge/piezo-buzzer-bricklet/raw/master/datasheets/ef532_ps.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/piezo-buzzer-bricklet/raw/master/hardware/piezo-buzzer-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/piezo_buzzer_bricklet_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/piezo-buzzer-bricklet/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-Test your Ambient Light Bricklet
---------------------------------
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+.. _piezo_buzzer_bricklet_test:
+
+Test your Piezo Buzzer Bricklet
+-------------------------------
+
+To test your Piezo Buzzer Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+For a simple test connect your Piezo Buzzer Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Piezo Buzzer Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Piezo Buzzer Bricklet" in the Brick Viewer after you pressed "connect", 
+select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/piezo_buzzer_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of the Piezo Buzzer Bricklet
    :align: center
+   :target: ../../_images/Bricklets/piezo_buzzer_brickv.jpg
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Enter a morse code you want to morse. You can enter
+also the duration of every tone. Play around. 
+You can now go on with writing your own application.
+See :ref:`Interface and Coding <piezobuzzer_programming_interfaces>` section 
+for the API of the Piezo Buzzer Bricklet and examples in your programming 
+language.
 
 
 .. _piezobuzzer_programming_interfaces:
@@ -90,27 +100,18 @@ the Ambient Light Bricklet and examples in your programming language.
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
+   "C/C++", ":ref:`API <piezo_buzzer_bricklet_c_api>`", ":ref:`Examples <piezo_buzzer_bricklet_c_examples>`", "Installation"
+   "C#", ":ref:`API <piezo_buzzer_bricklet_csharp_api>`", ":ref:`Examples <piezo_buzzer_bricklet_csharp_examples>`", "Installation"
    "Python", ":ref:`API <piezo_buzzer_bricklet_python_api>`", ":ref:`Examples <piezo_buzzer_bricklet_python_examples>`", "Installation"
    "Java", ":ref:`API <piezo_buzzer_bricklet_java_api>`", ":ref:`Examples <piezo_buzzer_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <piezo_buzzer_bricklet_c_api>`", ":ref:`Examples <piezo_buzzer_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <piezo_buzzer_bricklet_cpp_api>`", ":ref:`Examples <piezo_buzzer_bricklet_cpp_examples>`", "Installation"
 
-.. Troubleshoot
-.. ------------
-
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
-
-.. **Solution:**
-..  * Check input voltage.
 

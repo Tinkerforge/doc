@@ -6,11 +6,15 @@ Rotary Poti
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ tfdocend() }}
 
 
 Description
@@ -32,7 +36,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions                        30mm x 25mm (1.18" x 0.98")
-Weight
+Weight                            5.3g (w/o knob) 6.7g (w knob)
 Rotary potentiometer              1-turn, 300 degree
 Output: Potentiometer position    -150 to 150 (left to right)
 ================================  ============================================================
@@ -40,43 +44,52 @@ Output: Potentiometer position    -150 to 150 (left to right)
 Resources
 ---------
 
- * Schematic (Download)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/rotary_poti_bricklet_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
+* Schematic (`Download <https://github.com/Tinkerforge/rotary-poti-bricklet/raw/master/hardware/rotary-poti-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/rotary_poti_bricklet_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/rotary-poti-bricklet/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-Test your Ambient Light Bricklet
---------------------------------
+.. _rotary_poti_bricklet_test:
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
+Test your Rotary Poti Bricklet
+------------------------------
+
+To test your Rotary Poti Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Connect your Rotary Potentiometer Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Rotary Poti Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Rotary Poti Bricklet" in the Brick Viewer after you pressed "connect", 
+select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/rotary_poti_brickv.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Brickv view of Rotary Poti Bricklet
    :align: center
+   :target: ../../_images/Bricklets/rotary_poti_brickv.jpg
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+Play around by turning the potentiometer.
+You should be able to create a similar graph by turning the potentiometer full left
+and then right.
+
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <rotary_poti_programming_interfaces>` section for the API of
+the Rotary Poti Bricklet and examples in your programming language.
 
 
 .. _rotary_poti_programming_interfaces:
@@ -84,28 +97,18 @@ the Ambient Light Bricklet and examples in your programming language.
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <rotary_poti_bricklet_python_api>`", ":ref:`Examples <rotary_poti_bricklet_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <rotary_poti_bricklet_c_api>`", ":ref:`Examples <rotary_poti_bricklet_c_examples>`", "Installation"
+   "C#", ":ref:`API <rotary_poti_bricklet_csharp_api>`", ":ref:`Examples <rotary_poti_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <rotary_poti_bricklet_java_api>`", ":ref:`Examples <rotary_poti_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <rotary_poti_bricklet_c_api>`", ":ref:`Examples <rotary_poti_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <rotary_poti_bricklet_cpp_api>`", ":ref:`Examples <rotary_poti_bricklet_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <rotary_poti_bricklet_python_api>`", ":ref:`Examples <rotary_poti_bricklet_python_examples>`", "Installation"
 
-
-.. Troubleshoot
-.. ------------
-
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
-
-.. **Solution:**
-..  * Check input voltage.
 

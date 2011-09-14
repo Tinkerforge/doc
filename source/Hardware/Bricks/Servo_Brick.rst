@@ -5,11 +5,11 @@ Servo Brick
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+        {{ tfdocstart() }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocend() }}
 
 
 Description
@@ -76,10 +76,15 @@ Weight                                TBD
 Resources
 ---------
 
- * Schematic (Download)
- * Kicad Project (Download)
+* MCP3008 Datasheet (`Download <https://github.com/Tinkerforge/servo-brick/raw/master/datasheets/MCP3008.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/servo-brick/raw/master/hardware/servo-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/servo_brick_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/servo-brick/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
+
+
+.. _servo_brick_connectivity:
 
 Connectivity
 ------------
@@ -89,25 +94,69 @@ Servo Brick.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Connectivity of the Servo Brick
    :align: center
+   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
 
-Outline and Drilling Plan
--------------------------
 
-.. image:: /Images/Dimensions/servo_brick_dimensions.png
-   :width: 300pt
-   :alt: alternate text
+
+.. _servo_brick_test:
+
+Test your Servo Brick
+---------------------
+
+To test your Servo Brick you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes. 
+
+Connect a RC Servo to port 0 of the Brick and a appropiate power supply
+(see :ref:`here <servo_brick_connectivity>`). Your assembly should look
+like below.
+
+.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+   :scale: 100 %
+   :alt: Servo Brick with connected Servo and Battery
    :align: center
+   :target: ../../_images/Bricklets/io16_brickv.jpg
+
+Now connect the Brick to the PC over USB, you should see a tab named
+"Servo Brick" in the Brick Viewer after you pressed "connect", select it.
+
+.. image:: /Images/Bricks/servo_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of the Servo Brick
+   :align: center
+   :target: ../../_images/Bricks/servo_brickv.jpg
+
+In the left part of the GUI you can select the servo which you like
+to control. You can enable it, configure the 
+`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ and configure
+the corresponding position. Below you have four sliders to control
+the position, velocity and acceleration of the servo. The fourth slider
+can be used to change the frequency of the PWM 
+(see :ref:`Configure Servo PWM <servo_brick_configure_servo_pwm>` for more 
+information).
+TODO
+
+.. _servo_brick_configure_servo_pwm:
+
+Configure Servo PWM
+-------------------
+
+* explain why pwm min/max (some servos have larger range)
+* explain pwm frequency (defaul
+
 
 Servo Powersupply
 -----------------
 
-.. Todo: Bildchen
-
 This device is equipped with an internal power-supply.
 It offers the possibilty to adjust the output voltages for the connected servos.
 The internal powersupply can be powered through the onboard power-connector
+(black connector)
 or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a stack.
 The Brick switches autonomously to the onboard power-connector when there
 is a voltage measured. Since we use a step-down switcher for the internal power-supply
@@ -142,27 +191,37 @@ See :ref:`Interface and Coding <servo_programming_interfaces>` section for the A
 the Servo Brick and examples in your programming language.
 
 
-.. _servo_programming_interfaces:
+Error LED Sources
+-----------------
+
+* so long as undervoltage
+
+
+
+.. _servo_brick_programming_interfaces:
 
 
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <servo_brick_python_api>`", ":ref:`Examples <servo_brick_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <servo_brick_c_api>`", ":ref:`Examples <servo_brick_c_examples>`", "Installation"
+   "C#", ":ref:`API <servo_brick_csharp_api>`", ":ref:`Examples <servo_brick_csharp_examples>`", "Installation"
    "Java", ":ref:`API <servo_brick_java_api>`", ":ref:`Examples <servo_brick_java_examples>`", "Installation"
-   "C", ":ref:`API <servo_brick_c_api>`", ":ref:`Examples <servo_brick_c_examples>`", "Installation"
-   "C++", ":ref:`API <servo_brick_cpp_api>`", ":ref:`Examples <servo_brick_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <servo_brick_python_api>`", ":ref:`Examples <servo_brick_python_examples>`", "Installation"
 
-Low Level Interfaces
-^^^^^^^^^^^^^^^^^^^^
+
+Low Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
  .. note::  Comming soon! 
 
   Currently you have to modify the firmware to use this feature.
@@ -180,8 +239,8 @@ Low Level Interfaces
      "UART(serial)", "API", "Examples", "Installation"
 
 
-Direct on Device Programming
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+On Device Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  .. note:: Coming soon!
 

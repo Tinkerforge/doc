@@ -265,7 +265,7 @@ a.reference tt.docutils span.pre {
     color: #222;
     font-weight: normal;
     font-size: 1.25em;
-    margin-left: 0.8em;
+/*    margin-left: 0.8em;*/
     line-height: 1.5em;
     text-decoration: none;
 }

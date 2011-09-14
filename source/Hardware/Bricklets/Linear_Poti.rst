@@ -6,11 +6,15 @@ Linear Poti
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
+	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ tfdocend() }}
 
 
 Description
@@ -32,7 +36,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions                        85mm x 25mm (3.35" x 0.98")
-Weight
+Weight                            14.1h (w/o knob) 15.2g (w knob)
 Linear potentiometer              59mm (2.32") adjustable length
 Output: Slider position           0 - 100 (slider down - slider up)
 ================================  ============================================================
@@ -40,43 +44,55 @@ Output: Slider position           0 - 100 (slider down - slider up)
 Resources
 ---------
 
- * Schematic (Download)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/linear_poti_bricklet_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
+* Schematic (`Download <https://github.com/Tinkerforge/linear-poti-bricklet/raw/master/hardware/linear-poti-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/linear_poti_bricklet_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/linear-poti-bricklet/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-Test your Ambient Light Bricklet
---------------------------------
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+.. _linear_poti_bricklet_test:
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
-   :scale: 100 %
-   :alt: alternate text
-   :align: center
+Test your Linear Poti Bricklet
+------------------------------
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+To test your Linear Poti Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
+
+Connect your Linear Poti Brickler to an arbitrary 
+:ref:`Brick <product_overview_bricks>` over the supplied cable 
+(see picture below).
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Linear Poti Bricklet
    :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"Linear Poti Bricklet" in the Brick Viewer after you pressed "connect", 
+select it.
+If everything went as expected you the Brick Viewer should look like
+depicted below.
+
+.. image:: /Images/Bricklets/linear_poti_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of Linear Poti Bricklet
+   :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
+
+Move the potentiometer.
+You should be able to create a graph like that one depicted in the image above 
+by moving the potentiometer from lower to top.
+
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <linear_poti_programming_interfaces>` section 
+for the API of the Linear Poti Bricklet and examples in your programming 
+language.
 
 
 .. _linear_poti_programming_interfaces:
@@ -84,28 +100,17 @@ the Ambient Light Bricklet and examples in your programming language.
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <linear_poti_bricklet_python_api>`", ":ref:`Examples <linear_poti_bricklet_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <linear_poti_bricklet_c_api>`", ":ref:`Examples <linear_poti_bricklet_c_examples>`", "Installation"
+   "C#", ":ref:`API <linear_poti_bricklet_csharp_api>`", ":ref:`Examples <linear_poti_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <linear_poti_bricklet_java_api>`", ":ref:`Examples <linear_poti_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <linear_poti_bricklet_c_api>`", ":ref:`Examples <linear_poti_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <linear_poti_bricklet_cpp_api>`", ":ref:`Examples <linear_poti_bricklet_cpp_examples>`", "Installation"
-
-
-.. Troubleshoot
-.. ------------
-
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
-
-.. **Solution:**
-..  * Check input voltage.
+   "Python", ":ref:`API <linear_poti_bricklet_python_api>`", ":ref:`Examples <linear_poti_bricklet_python_examples>`", "Installation"
 

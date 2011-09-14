@@ -13,6 +13,8 @@ Tinkerforge Documentation
    Getting_Started
    Product_Overview
    Software
+   Downloads
+   Report_Bugs
 
 .. toctree::
    :maxdepth: 1

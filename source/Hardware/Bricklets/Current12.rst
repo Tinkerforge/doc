@@ -32,58 +32,66 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions                        25mm x 25mm (0.98" x 0.98")
-Weight
-Current Consumption
+Weight                            3.9g
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Sensor                            ACS711 12.5A Version (Allegro Microsystems)
+Sensor                            ACS711 12.5A Version
 Output: Current                   -12.5A to 12.5A, unit 1mA, resolution 12bit
 ================================  ============================================================
 
 Resources
 ---------
 
- * Schematic (Download)
- * ACS711 Datasheet (`Download <http://www.allegromicro.com/en/Products/Part_Numbers/0711/0711.pdf>`_)
- * Kicad Project (Download)
-
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
-
-.. Connectivity
-.. ------------
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/current12_bricklet_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
+* ACS711 Datasheet (`Download <https://github.com/Tinkerforge/current12-bricklet/blob/master/datasheets/ACS711.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/current12-bricklet/raw/master/hardware/current-12-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/current12_bricklet_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/current12-bricklet/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-Test your Ambient Light Bricklet
---------------------------------
+.. _current12_bricklet_test:
 
-For a simple test connect your Ambient Light Sensor to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+Test your Current12 Bricklet
+----------------------------
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
-   :scale: 100 %
-   :alt: alternate text
-   :align: center
+To test your Current12 Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes.
 
-After installing our software (Brickd, Brickv) you can see the connected Ambient
-Light Bricklet in the Brickv.
+Now you can connect your Current12 Bricklet to any
+:ref:`Brick <product_overview_bricks>`. You should have received a suitable
+cable with the Bricklet. If you like you can connect a Motor
+and a Battery to the Bricklet as displayed in the following image.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Master Brick with connected Current12 Bricklet, Battery and Motor
    :align: center
+   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
 
-Click on the Ambient Light tab and see how the measured values change dependend 
-on device illumination. You can now go on with writing your own application.
-See :ref:`Interface and Coding <ambl_programming_interfaces>` section for the API of
-the Ambient Light Bricklet and examples in your programming language.
+If you connect the Brick to the PC over USB,
+you should see a tab named "Current12 Bricklet" in the Brick Viewer after you
+pressed "connect", select this tab.
+If everything went as expected you can now see the exact current in Ampere 
+and a graph that shows the current over time. 
+
+
+.. image:: /Images/Bricklets/current12_brickv.jpg
+   :scale: 100 %
+   :alt: Current12 Bricklet view in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
+
+In our test we have connected the battery not from beginning. 
+When connecting the battery, you
+can see the high current peak caused by the motor when start running.
+   
+After this test you can go on with writing your own application.
+See :ref:`Interface and Coding <current12_programming_interfaces>` section for 
+the API of the Current12 Bricklet and examples in your programming language.
 
 
 .. _current12_programming_interfaces:
@@ -91,27 +99,18 @@ the Ambient Light Bricklet and examples in your programming language.
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <current12_bricklet_python_api>`", ":ref:`Examples <current12_bricklet_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <current12_bricklet_c_api>`", ":ref:`Examples <current12_bricklet_c_examples>`", "Installation"
+   "C#", ":ref:`API <current12_bricklet_csharp_api>`", ":ref:`Examples <current12_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <current12_bricklet_java_api>`", ":ref:`Examples <current12_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <current12_bricklet_c_api>`", ":ref:`Examples <current12_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <current12_bricklet_cpp_api>`", ":ref:`Examples <current12_bricklet_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <current12_bricklet_python_api>`", ":ref:`Examples <current12_bricklet_python_examples>`", "Installation"
 
-.. Troubleshoot
-.. ------------
-
-.. Servos dither
-.. ^^^^^^^^^^^^^
-.. **Reason:** The reason for this is typically a voltage drop-in, caused by 
-
-.. **Solution:**
-..  * Check input voltage.
 

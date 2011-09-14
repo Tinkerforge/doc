@@ -5,11 +5,11 @@ DC Brick
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+        {{ tfdocstart() }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocend() }}
 
 
 Description
@@ -74,13 +74,15 @@ Weight                            TBD
 Resources
 ---------
 
- * Schematic (Download)
- * MC33926 Datasheet (`Download <http://cache.freescale.com/files/analog/doc/data_sheet/MC33926.pdf>`_)
- * Kicad Project (Download)
+* MC33926 Datasheet (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/datasheets/MC33926.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/hardware/dc-brick-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/dc_brick_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/dc-brick/zipball/master>`__)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
 
-  
+.. _dc_brick_connectivity:
+
 Connectivity
 ------------
 
@@ -89,25 +91,68 @@ DC Brick.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Connectivity of DC Brick
    :align: center
+   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
 
-Outline and Drilling Plan
--------------------------
 
-.. image:: /Images/Dimensions/dc_brick_dimensions.png
-   :width: 300pt
-   :alt: alternate text
+
+.. _dc_brick_test:
+
+Test your DC Brick
+------------------
+
+To test your DC Brick you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes. 
+
+Connect an DC brushed Motor to the Brick and a appropiate power supply
+(see :ref:`here <dc_brick_connectivity>`). Your assembly should look
+like below.
+
+.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+   :scale: 100 %
+   :alt: DC Brick with connected Motor and Battery
    :align: center
+   :target: ../../_images/Bricklets/io16_brickv.jpg
 
+Now connect the Brick to the PC over USB, you should see a tab named
+"DC Brick" in the Brick Viewer after you pressed "connect", select it.
+
+.. image:: /Images/Bricks/dc_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of the DC Brick
+   :align: center
+   :target: ../../_images/Bricks/dc_brickv.jpg
+
+In this tab you can test your driver if you enable it.
+You have three sliders to control
+the velocity (forward and backward), the acceleration and the 
+`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency which
+is used by the driver to control the connected motor. On the right you see
+the voltages of the two power sources and the current consumption.
+Below you find a graphical representation of the velocity of your motor.
+At the bottom you can configure the minimum motor voltage, which lets you get
+undervoltage signals if the voltage is below.
+
+Below the sliders you can test the "Full Brake" and change the driving modes
+(see :ref:`here <dc_brick_drive_mode>` for more information).
+To start testing enable the driver and play around with the controls.
+
+After this test you can go on with writing your own application.
+See :ref:`Interface and Coding <dc_brick_programming_interfaces>` section for 
+the API of the DC Brick and examples in your programming language.
 
 Motor Powersupply
 -----------------
 
-.. Todo: Bildchen
-
-The connected motor can be powered through the onboard power-connector
-or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a stack.
+The connected motor can be powered through the onboard power-connector 
+(black connector) 
+or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a 
+stack.
 The Brick switches autonomously to the onboard power-connector when there
 is a voltage measured. 
 
@@ -133,27 +178,39 @@ There are two possible modes of motor controls:
    Advantageous is a lower current consumption and a resulting lesser heat-up.
    Therefore it might be possible that it the control of the velocity and 
    acceleration is less precise.
- 
+
+Error LED Sources
+-----------------
+
+The red LED is enabled if you are below the minimum voltage
+(configurable) or the driver is in emergency shutdown state
+caused by over temperature or over current. To get the Brick operational you have
+to increase the voltage or in the latter case you have to let the driver 
+cool down and reenabling or disabling the driver.
+
+.. _dc_brick_programming_interfaces:
 
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <dc_brick_python_api>`", ":ref:`Examples <dc_brick_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <dc_brick_c_api>`", ":ref:`Examples <dc_brick_c_examples>`", "Installation"
+   "C#", ":ref:`API <dc_brick_csharp_api>`", ":ref:`Examples <dc_brick_csharp_examples>`", "Installation"
    "Java", ":ref:`API <dc_brick_java_api>`", ":ref:`Examples <dc_brick_java_examples>`", "Installation"
-   "C", ":ref:`API <dc_brick_c_api>`", ":ref:`Examples <dc_brick_c_examples>`", "Installation"
-   "C++", ":ref:`API <dc_brick_cpp_api>`", ":ref:`Examples <dc_brick_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <dc_brick_python_api>`", ":ref:`Examples <dc_brick_python_examples>`", "Installation"
 
 
-Low Level Interfaces
-^^^^^^^^^^^^^^^^^^^^
+Low Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
  .. note::  Comming soon! 
 
   Currently you have to modify the firmware to use this feature.
@@ -171,8 +228,8 @@ Low Level Interfaces
      "UART(serial)", "API", "Examples", "Installation"
 
 
-Direct on Device Programming
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+On Device Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  .. note:: Coming soon!
 

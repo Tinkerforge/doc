@@ -5,15 +5,17 @@ IMU Brick
 
 .. raw:: html
 
-	<img alt="Servo Brick 1" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-	<img alt="Servo Brick 2" src="../../_images/Bricks/Servo_Brick/servo_brick2.jpg" style="width: 303.0px; height: 233.0px;" /></a>
-.. raw:: latex
-
-	\includegraphics{Images/Bricks/Servo_Brick/servo_brick2.jpg}
+        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+        {{ tfdocstart() }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
+        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocend() }}
 
 
 Description
 -----------
+
+ .. note::  Comming soon! 
 
 The IMU :ref:`Brick <product_overview_bricks>` is a equipped with a 32-bit ARM
 microcontroller and an `inertial measurement unit
@@ -72,12 +74,18 @@ Weight                                               TBD
 Resources
 ---------
 
- * Schematic (Download)
- * 3-axis Accelerometer/Magnetometer LSM303 Datasheet (`Download <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00260288.pdf>`__)
- * 3-axis Gyroscope ITG-3200 Datasheet (`Download <http://invensense.com/mems/gyro/documents/PS-ITG-3200-00-01.4.pdf>`__)
- * Kicad Project (Download)
+* 3-axis Accelerometer/Magnetometer LSM303 Datasheet (Download TODO)
+* 3-axis Gyroscope ITG-3200 Datasheet (Download TODO)
+* Schematic (Download)
+* Outline and drilling plan (Download)
+* Project (Download)
+* `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
-   `Kicad Project Page <http://kicad.sourceforge.net/>`_
+
+.. _imu_brick_test:
+
+Test your IMU Brick
+-------------------
 
 Connectivity
 ------------
@@ -90,15 +98,6 @@ IMU Brick.
    :alt: alternate text
    :align: center
 
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/imu_brick_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
-
-
 IMU Calibration
 ---------------
 
@@ -107,22 +106,26 @@ TBD
 Programming Interfaces
 ----------------------
 
-High Level Interfaces
-^^^^^^^^^^^^^^^^^^^^^
-See :ref:`High Level Interfaces <pi_hlpi>` for a detailed description.
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ .. note::  Comming soon! 
+
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", "API", "Examples", "Installation"
+   "C/C++", "API", "Examples", "Installation"
+   "C#", "API", "Examples", "Installation"
    "Java", "API", "Examples", "Installation"
-   "C", "API", "Examples", "Installation"
-   "C++", "API", "Examples", "Installation"
+   "Python", "API", "Examples", "Installation"
 
 
-Low Level Interfaces
-^^^^^^^^^^^^^^^^^^^^
+Low Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
  .. note::  Comming soon! 
 
   Currently you have to modify the firmware to use this feature.
@@ -140,8 +143,8 @@ Low Level Interfaces
      "UART(serial)", "API", "Examples", "Installation"
 
 
-Direct on Device Programming
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+On Device Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
  .. note:: Coming soon!
 
