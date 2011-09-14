@@ -83,10 +83,8 @@ Resources
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-.. _servo_brick_test:
 
-Test your Servo Brick
----------------------
+.. _servo_brick_connectivity:
 
 Connectivity
 ------------
@@ -96,18 +94,69 @@ Servo Brick.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Connectivity of the Servo Brick
    :align: center
+   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
+
+
+
+.. _servo_brick_test:
+
+Test your Servo Brick
+---------------------
+
+To test your Servo Brick you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes. 
+
+Connect a RC Servo to port 0 of the Brick and a appropiate power supply
+(see :ref:`here <servo_brick_connectivity>`). Your assembly should look
+like below.
+
+.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+   :scale: 100 %
+   :alt: Servo Brick with connected Servo and Battery
+   :align: center
+   :target: ../../_images/Bricklets/io16_brickv.jpg
+
+Now connect the Brick to the PC over USB, you should see a tab named
+"Servo Brick" in the Brick Viewer after you pressed "connect", select it.
+
+.. image:: /Images/Bricks/servo_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of the Servo Brick
+   :align: center
+   :target: ../../_images/Bricks/servo_brickv.jpg
+
+In the left part of the GUI you can select the servo which you like
+to control. You can enable it, configure the 
+`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ and configure
+the corresponding position. Below you have four sliders to control
+the position, velocity and acceleration of the servo. The fourth slider
+can be used to change the frequency of the PWM 
+(see :ref:`Configure Servo PWM <servo_brick_configure_servo_pwm>` for more 
+information).
+TODO
+
+.. _servo_brick_configure_servo_pwm:
+
+Configure Servo PWM
+-------------------
+
+* explain why pwm min/max (some servos have larger range)
+* explain pwm frequency (defaul
 
 
 Servo Powersupply
 -----------------
 
-.. Todo: Bildchen
-
 This device is equipped with an internal power-supply.
 It offers the possibilty to adjust the output voltages for the connected servos.
 The internal powersupply can be powered through the onboard power-connector
+(black connector)
 or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a stack.
 The Brick switches autonomously to the onboard power-connector when there
 is a voltage measured. Since we use a step-down switcher for the internal power-supply

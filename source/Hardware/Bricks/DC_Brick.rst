@@ -81,12 +81,8 @@ Resources
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-.. _dc_brick_test:
+.. _dc_brick_connectivity:
 
-Test your DC Brick
-------------------
-
-  
 Connectivity
 ------------
 
@@ -95,17 +91,68 @@ DC Brick.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Connectivity of DC Brick
    :align: center
+   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
 
+
+
+.. _dc_brick_test:
+
+Test your DC Brick
+------------------
+
+To test your DC Brick you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes. 
+
+Connect an DC brushed Motor to the Brick and a appropiate power supply
+(see :ref:`here <dc_brick_connectivity>`). Your assembly should look
+like below.
+
+.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+   :scale: 100 %
+   :alt: DC Brick with connected Motor and Battery
+   :align: center
+   :target: ../../_images/Bricklets/io16_brickv.jpg
+
+Now connect the Brick to the PC over USB, you should see a tab named
+"DC Brick" in the Brick Viewer after you pressed "connect", select it.
+
+.. image:: /Images/Bricks/dc_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of the DC Brick
+   :align: center
+   :target: ../../_images/Bricks/dc_brickv.jpg
+
+In this tab you can test your driver if you enable it.
+You have three sliders to control
+the velocity (forward and backward), the acceleration and the 
+`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency which
+is used by the driver to control the connected motor. On the right you see
+the voltages of the two power sources and the current consumption.
+Below you find a graphical representation of the velocity of your motor.
+At the bottom you can configure the minimum motor voltage, which lets you get
+undervoltage signals if the voltage is below.
+
+Below the sliders you can test the "Full Brake" and change the driving modes
+(see :ref:`here <dc_brick_drive_mode>` for more information).
+To start testing enable the driver and play around with the controls.
+
+After this test you can go on with writing your own application.
+See :ref:`Interface and Coding <dc_brick_programming_interfaces>` section for 
+the API of the DC Brick and examples in your programming language.
 
 Motor Powersupply
 -----------------
 
-.. Todo: Bildchen
-
-The connected motor can be powered through the onboard power-connector
-or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a stack.
+The connected motor can be powered through the onboard power-connector 
+(black connector) 
+or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a 
+stack.
 The Brick switches autonomously to the onboard power-connector when there
 is a voltage measured. 
 
@@ -135,9 +182,11 @@ There are two possible modes of motor controls:
 Error LED Sources
 -----------------
 
-* so long as undervoltage
-* emergency shutdown (over temperature over current of driver ic) 
-  until reenabling or disabling driver
+The red LED is enabled if you are below the minimum voltage
+(configurable) or the driver is in emergency shutdown state
+caused by over temperature or over current. To get the Brick operational you have
+to increase the voltage or in the latter case you have to let the driver 
+cool down and reenabling or disabling the driver.
 
 .. _dc_brick_programming_interfaces:
 

@@ -63,11 +63,7 @@ Resources
 * Project (`Download <https://github.com/Tinkerforge/master-brick/zipball/master>`__)
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
-
-.. _master_brick_test:
-
-Test your IMU Brick
--------------------
+.. _master_brick_connectivity:
 
 Connectivity
 ------------
@@ -77,22 +73,43 @@ Master Brick.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Connectivity of Master Brick
    :align: center
+   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
 
 
-.. Powersupply
-.. ^^^^^^^^^^^
+.. _master_brick_test:
 
-.. Todo: Bildchen
+Test your Master Brick
+-------------------
 
-Stacking
---------
+To test your Master Brick you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes. 
 
-Auf Tutorial verweisen.
-Todo: Hier Plug/Play beschreiben
-wann module erkannt
-beispiel
+Connect the Brick to the PC over USB. You should see a tab named
+"Master Brick" in the Brick Viewer after you pressed "connect", select it.
+
+.. image:: /Images/Bricks/master_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of the Master Brick
+   :align: center
+   :target: ../../_images/Bricks/master_brickv.jpg
+
+You should see that the Master Brick isn't measuring any Stack voltages or 
+currents. This is because you have not attached a
+:ref:`Power-Supply Board <product_overview_powersupplies>`. When attaching
+such a board you should see the voltage applied to your Stack and the current
+flowing in.
+
+After this small test you can go on with writing your own application.
+See :ref:`Interface and Coding <master_brick_programming_interfaces>` section for 
+the API of the Master Brick and examples in your programming language.
+
+.. _master_brick_programming_interfaces:
 
 Programming Interfaces
 ----------------------
@@ -146,7 +163,4 @@ On Device Programming Interface
      :widths: 25, 8, 15, 12
 
      "Programming", "API", "Examples", "Installation"
-
-Troubleshoot
-------------
 

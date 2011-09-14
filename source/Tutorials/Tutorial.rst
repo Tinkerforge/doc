@@ -216,6 +216,8 @@ After this we stop the motor and destroy the IP Connection.
 Building Stacks
 ---------------
 
+* TODO :ref:`Power-Supply Board <product_overview_powersupplies>` (optional)
+
 To reduce the wiring or saving USB hubs you can stack Bricks.
 You need a :ref:`Master Brick <master_brick>` at the bottom with a PC 
 connection to route the data between the PC and the Bricks of the Stack.
