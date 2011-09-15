@@ -122,15 +122,6 @@ div.sphinxsidebar input {
 
 /* -- body styles ----------------------------------------------------------- */
 
-a {
-    color: #355f7c;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 div.body p, div.body dd, div.body li {
     text-align: justify;
     line-height: 130%;
@@ -406,4 +397,17 @@ div.leftside {
 div.rightside {
     margin-left: 380px;
 }
+
+a.image-reference {
+	 display: block;
+	 margin-bottom: 20px; /* get some space below image */
+	 text-align: center;
+	 vertical-align: middle;
+}
+
+img.align-center {
+		text-align: center;
+		vertical-align: middle;
+}
+
 
