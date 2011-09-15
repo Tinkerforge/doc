@@ -46,7 +46,7 @@ as defined in :file:`ip_connection.h`.
 
 .. c:function:: int ipcon_create(IPConnection *ipcon, const char* host, const int port)
 
- Creates an ip connection object to the Brick Daemon with the given *host* 
+ Creates an ip connection to the Brick Daemon with the given *host* 
  and *port*. With the ip connection itself it is possible to enumerate the 
  available devices. Other then that it is only used to add Bricks and
  Bricklets to the connection.
@@ -78,3 +78,16 @@ as defined in :file:`ip_connection.h`.
  Adds a device (Brick or Bricklet) to the IP Connection. Every device
  has to be added to an ip connection before it can be used. Examples for
  this can be found in the API documentation for every Brick and Bricklet.
+
+.. c:function:: void ipcon_join_thread(IPConnection *ipcon)
+
+ Joins the thread of the ip connection. The call will block until the
+ ip connection is :c:func:`destroyed <ipcon_destroy>`.
+
+ This makes sense if you relies solely on callbacks from listeners or if
+ the ip connection was created in a thread.
+
+.. c:function:: void ipcon_destroy(IPConnection *ipcon)
+
+ Destroys the ip connection. The socket to the Brick Daemon will be closed
+ and the thread of the ip connection terminated. 
