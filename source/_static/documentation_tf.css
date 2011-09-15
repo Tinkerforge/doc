@@ -212,16 +212,15 @@ p.admonition-title:after {
 
 pre {
     padding: 5px;
-    background-color: #efefef;
+    background-color: #f5f5f5;
     color: #333333;
     line-height: 120%;
-    border: 1px solid #efefef;
-    border-left: none;
-    border-right: none;
+    border: 1px solid;
+		border-color: #eee;
 }
 
 tt {
-    background-color: #e5e5e5;
+    background-color: #f5f5f5;
     padding: 0 1px 0 1px;
     font-size: 1.3em;
 }
@@ -258,29 +257,13 @@ tt.descname {
 }
 
 a.reference span {
-    color:#4D87C7;
     background:transparent; 
     text-decoration:none;
 }
 
-a.reference:visited span  { color:#036; }
-
 a.reference tt.docutils span.pre {
-    color: #222;
     font-weight: normal;
-    font-size: 1.25em;
-/*    margin-left: 0.8em;*/
-    line-height: 1.5em;
     text-decoration: none;
-}
-
-a.reference tt.xref span.pre {
-    color: #4D87C7;
-    font-size: 1.1em;
-}
-
-a.reference:visited tt.xref span.pre {
-    color: #036;
 }
 
 a.reference:focus span { 
@@ -289,22 +272,6 @@ a.reference:focus span {
 	background-color: transparent; 
 }
 
-a.reference:active span {
-	color:#182E7A; 
-	text-decoration:underline; 
-	background-color: transparent; 
-}
-
-
-/*tt.xref, a tt span {
-    color: #003366;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.1em;
-    background-color: transparent;
-}*/
-
-
 dl.function {
     margin-bottom: 40px;
 }
@@ -312,12 +279,18 @@ dl.function {
 dl.function dt {
 		font-weight:normal;
     color: #444444;
+		margin-bottom: 5px;
 }
 
 dl.function dt big,
 dl.function dt em {
     color: #000;
 		font-style: normal;
+}
+
+dd p {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 dd p em {
@@ -344,6 +317,8 @@ table.docutils {
     border-left: solid 1px #dae9ee;
     border-bottom: solid 1px #00adee;
     width: 700px;
+		margin-left: auto; /*center table */
+		margin-right:auto;
 }
 
 table.field-list {
