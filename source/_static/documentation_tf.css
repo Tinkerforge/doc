@@ -309,6 +309,10 @@ a.reference:active span {
 }*/
 
 
+dl.function {
+    margin-bottom: 40px;
+}
+
 dl.function dt {
 		font-weight:normal;
     color: #444444;
@@ -317,6 +321,7 @@ dl.function dt {
 dl.function dt big,
 dl.function dt em {
     color: #000;
+		font-style: normal;
 }
 
 table.docutils th {
