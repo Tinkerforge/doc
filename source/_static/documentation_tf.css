@@ -67,6 +67,7 @@ div.sphinxsidebar {
 	float: right;
 	width: auto;
 	margin-left: 20px;
+	margin-top: 50px;
   background-color: #EEEEEE;
   border: solid 1px #aaa;
   border-radius: 5px;
@@ -318,6 +319,11 @@ dl.function dt em {
     color: #000;
 		font-style: normal;
 }
+
+dd p em {
+		font-style: italic;
+}
+
 
 table.docutils th {
     background-color: #c7e3ee;
