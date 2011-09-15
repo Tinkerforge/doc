@@ -66,8 +66,12 @@ div.related a {
 div.sphinxsidebar {
 	float: right;
 	width: auto;
-	margin-left: auto;
-  background-color: #FFFFFF;
+	margin-left: 20px;
+  background-color: #EEEEEE;
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 div.sphinxsidebar h3 {
