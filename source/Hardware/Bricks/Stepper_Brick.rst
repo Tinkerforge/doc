@@ -82,11 +82,6 @@ Resources
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
-.. _stepper_brick_test:
-
-Test your Stepper Brick
------------------------
-
 Connectivity
 ------------
 
@@ -95,13 +90,81 @@ Stepper Brick.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Connectivity of the Stepper Brick
    :align: center
+   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
+
+
+
+
+.. _stepper_brick_test:
+
+Test your Stepper Brick
+-----------------------
+
+To test your Stepper Brick you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings (you need this in any case if you want to use the
+Bricks/Bricklets). The latter is only for testing purposes. 
+
+Connect a Stepper Motor to the Brick and a appropiate power supply
+(see :ref:`here <stepper_brick_connectivity>`). Your assembly should look
+like below.
+
+.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+   :scale: 100 %
+   :alt: Stepper Brick with connected Stepper and Battery
+   :align: center
+   :target: ../../_images/Bricklets/io16_brickv.jpg
+
+Now connect the Brick to the PC over USB, you should see a tab named
+"Stepper Brick" in the Brick Viewer after you pressed "connect", select it.
+
+.. image:: /Images/Bricks/stepper_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of the Stepper Brick
+   :align: center
+   :target: ../../_images/Bricks/stepper_brickv.jpg
+
+In the left part of the GUI you can enable the driver and control
+the velocity, acceleration, deceleration and the decay mode
+(see :ref:`stepper_brick_decay_mode`) of the stepper. Below
+you have three buttons which let control you the direction of
+the stepper and stop. For example if you press "Forward",
+the stepper will increase its speed to "Max Velocity" with the given 
+acceleration. If you press "Stop" it will decrease its speed to "0" with
+the given deceleration.
+
+Below you can set the stepping mode (full, half, quater, eigth) stepping mode
+and trigger a "Full Brake" which lets the motor immediately stop.
+
+If you like you can also drive to a specific position (measured in steps)
+by entering it at "DrivingTo" an press "Go". Also you can drive a
+specific number of steps. By using these controls the motor will accelerate
+until reaching the maximum velocity and decelerating to reach the specified
+position.
+
+On the right side the current position and remaining steps are shown
+as well as the stack and external voltages.
+Below is a graphical representation of the velocity of the stepper.
+Beneath you can configure the minimum input voltage, which lets you get
+undervoltage signals if the voltage is below. The motor current can also be
+adapted to the connected motor (be aware that a too high current can damage your 
+motor).
+
+To start testing enable the driver and play around with the controls.
+
+After this test you can go on with writing your own application.
+See :ref:`Interface and Coding <stepper_brick_programming_interfaces>` section for 
+the API of the Stepper Brick and examples in your programming language.
+
+
+
 
 Powersupply
 ^^^^^^^^^^^
-
-.. Todo: Bildchen
 
 The connected stepper can be powered through the onboard power-connector
 or through a :ref:`Power-Supply Board <product_overview_powersupply>` in a stack.
@@ -132,7 +195,8 @@ allow higher motor speeds.
 Error LED Sources
 -----------------
 
-* so long as undervoltage
+The red LED is enabled so long as the input voltage is below the user 
+configureable minimum voltage.
 
 
 .. _stepper_brick_programming_interfaces:
