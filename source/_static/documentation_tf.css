@@ -253,6 +253,7 @@ tt.descclassname{
 }
 
 tt.descname {
+		color: black;
     font-size: 1.4em;
 }
 
