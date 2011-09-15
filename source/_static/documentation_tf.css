@@ -7,13 +7,17 @@
 
 /* -- page layout ----------------------------------------------------------- */
 
+/*div.boxContent3 div.document {
+	font-size: 100%;
+}*/
+
 body {
-    font-family: sans-serif;
+/*    font-family: sans-serif;
     font-size: 100%;
     background-color: #11303d;
     color: #000;
     margin: 0;
-    padding: 0;
+    padding: 0;*/
 }
 
 div.document {
@@ -62,14 +66,18 @@ div.related a {
 div.sphinxsidebar {
 	float: right;
 	width: auto;
-	margin-left: auto;
-  background-color: #FFFFFF;
+	margin-left: 20px;
+  background-color: #EEEEEE;
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 div.sphinxsidebar h3 {
     font-family: 'Trebuchet MS', sans-serif;
     color: #00adee;
-    font-size: 1.4em;
+    /*font-size: 1.4em;*/
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -114,15 +122,6 @@ div.sphinxsidebar input {
 
 /* -- body styles ----------------------------------------------------------- */
 
-a {
-    color: #355f7c;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 div.body p, div.body dd, div.body li {
     text-align: justify;
     line-height: 130%;
@@ -143,12 +142,18 @@ div.body h6 {
     padding: 3px 0 3px 10px;
 }
 
-div.body h1 { margin-top: 0; font-size: 200%; background-color: transparent; }
-div.body h2 { font-size: 160%; }
-div.body h3 { font-size: 140%; }
-div.body h4 { font-size: 120%; }
-div.body h5 { font-size: 110%; }
+div.body h1 { margin-top: 0; font-size: 140%; background-color: transparent; }
+div.body h2 { font-size: 130%; }
+div.body h3 { font-size: 120%; }
+div.body h4 { font-size: 110%; }
+div.body h5 { font-size: 105%; }
 div.body h6 { font-size: 100%; }
+
+dd p a em,
+a em {
+		font-weight: normal;
+		font-style: normal;
+}
 
 a.headerlink {
     color: #00adee;
@@ -213,16 +218,15 @@ p.admonition-title:after {
 
 pre {
     padding: 5px;
-    background-color: #efefef;
+    background-color: #f5f5f5;
     color: #333333;
     line-height: 120%;
-    border: 1px solid #efefef;
-    border-left: none;
-    border-right: none;
+    border: 1px solid;
+		border-color: #eee;
 }
 
 tt {
-    background-color: #e5e5e5;
+    background-color: #f5f5f5;
     padding: 0 1px 0 1px;
     font-size: 1.3em;
 }
@@ -254,33 +258,18 @@ tt.descclassname{
 }
 
 tt.descname {
+		color: black;
     font-size: 1.4em;
 }
 
 a.reference span {
-    color:#4D87C7;
     background:transparent; 
     text-decoration:none;
 }
 
-a.reference:visited span  { color:#036; }
-
 a.reference tt.docutils span.pre {
-    color: #222;
     font-weight: normal;
-    font-size: 1.25em;
-/*    margin-left: 0.8em;*/
-    line-height: 1.5em;
     text-decoration: none;
-}
-
-a.reference tt.xref span.pre {
-    color: #4D87C7;
-    font-size: 1.1em;
-}
-
-a.reference:visited tt.xref span.pre {
-    color: #036;
 }
 
 a.reference:focus span { 
@@ -289,31 +278,31 @@ a.reference:focus span {
 	background-color: transparent; 
 }
 
-a.reference:active span {
-	color:#182E7A; 
-	text-decoration:underline; 
-	background-color: transparent; 
+dl.function {
+    margin-bottom: 40px;
 }
-
-
-/*tt.xref, a tt span {
-    color: #003366;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.1em;
-    background-color: transparent;
-}*/
-
 
 dl.function dt {
 		font-weight:normal;
     color: #444444;
+		margin-bottom: 5px;
 }
 
 dl.function dt big,
 dl.function dt em {
     color: #000;
+		font-style: normal;
 }
+
+dd p {
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+dd p em {
+		font-style: italic;
+}
+
 
 table.docutils th {
     background-color: #c7e3ee;
@@ -334,6 +323,12 @@ table.docutils {
     border-left: solid 1px #dae9ee;
     border-bottom: solid 1px #00adee;
     width: 700px;
+		margin-left: auto; /*center table */
+		margin-right:auto;
+}
+
+table.docutils.field-list {
+		margin-left: 0; /* don't center parameter in python docu */
 }
 
 table.field-list {
@@ -369,12 +364,6 @@ table.highlighttable {
     border-bottom: 1px solid transparent;
 }
 
-/*a em {
-    font-style: normal;
-    font-weight: normal;
-    color: #003366;
-}*/
-
 blockquote ul li {
     font-style: normal;
 		color: #000f;
@@ -394,3 +383,22 @@ div.rightside {
     margin-left: 380px;
 }
 
+a.image-reference {
+	 display: block;
+	 margin-bottom: 20px; /* get some space below image */
+	 text-align: center;
+	 vertical-align: middle;
+}
+
+img.align-center {
+		text-align: center;
+		vertical-align: middle;
+}
+
+div.center_table table {
+		text-align:center;
+}
+
+div.center_table table tbody tr td{
+		text-align:center;
+}

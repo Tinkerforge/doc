@@ -134,22 +134,51 @@ Now connect the Brick to the PC over USB, you should see a tab named
 In the left part of the GUI you can select the servo which you like
 to control. You can enable it, configure the 
 `PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ and configure
-the corresponding position. Below you have four sliders to control
+the corresponding position. Additionally you can see the current consumption of
+the servo. Below you have four sliders to control
 the position, velocity and acceleration of the servo. The fourth slider
-can be used to change the frequency of the PWM 
+can be used to change the period of the PWM 
 (see :ref:`Configure Servo PWM <servo_brick_configure_servo_pwm>` for more 
 information).
-TODO
+
+On the right side you can see the external and Stack voltage.
+Below are graphical representations for the state of each servo.
+Beneath you can configure the minimum input voltage, which lets you get
+undervoltage signals if the voltage is below.
+Also you can configure the output voltage 
+(Caution: A too high output voltage may damage your servo!).
+In the end there is a "Start Test" button, which starts
+a test sequence performs random movements for each servo.
+
+To start testing enable servo 0 and play around with the controls
+or let the Brick Viewer perform a test.
+
+After this you can go on with writing your own application.
+See :ref:`Interface and Coding <servo_brick_programming_interfaces>` section for 
+the API of the Servo Brick and examples in your programming language.
 
 .. _servo_brick_configure_servo_pwm:
 
 Configure Servo PWM
 -------------------
 
-* explain why pwm min/max (some servos have larger range)
-* explain pwm frequency (defaul
+Typically you control a RC servo by an PWM signal with a 
+period of 20ms and an ontime of 1ms - 2ms depending on the position you want
+to achieve. Some servos seems not to work with this properly. Therefore you are
+able to fully configure the PWM.
 
+Maybe you have to adapt the period of the PWM signal. We have tested several servos
+and a period of 20ms seems not to work on all devices, therefore we use 19.5ms as default
+which should work on all devices.
 
+More interesting may be the minimum and maximum pulse width. Some servos can rotate
+further when decreasing/increasing the minimum/maximum pulse width.
+
+.. warning::
+
+   A wrong PWM configuration can damage your servo.
+
+   
 Servo Powersupply
 -----------------
 
@@ -163,39 +192,15 @@ is a voltage measured. Since we use a step-down switcher for the internal power-
 please consider that the input voltage of the Brick has to be 1V higher 
 than the configured output voltage to assure stable operation.
 
+.. warning::
 
-Test your Servo Brick
----------------------
-
-A simple test consists of a RC servo and a accumulator connected to the Servo
-Brick (check for correct polarities). 
-The test configuration is depicted in the following picture.
-Connect the brick with the USB cable to your PC.
-
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
-   :scale: 100 %
-   :alt: alternate text
-   :align: center
-
-After installing our software (Brickd, Brickv) you can see the connected Servo
-Brick in the Brickv.
-
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
-   :scale: 100 %
-   :alt: alternate text
-   :align: center
-
-Click on the Servo Brick tab and control the connected servo.
-You can now go on with writing your own application.
-See :ref:`Interface and Coding <servo_programming_interfaces>` section for the API of
-the Servo Brick and examples in your programming language.
-
+   A too high output voltage can damage your servo.
 
 Error LED Sources
 -----------------
 
-* so long as undervoltage
-
+The red LED is enabled so long as the input voltage is below the user 
+configureable minimum voltage.
 
 
 .. _servo_brick_programming_interfaces:

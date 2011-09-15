@@ -2,8 +2,10 @@ div.content {
 	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
 	display: none;
 	float: right;
-	width: 420px; 
+	width: 354px; 
 	margin-top: 5px;
+  position: absolute;
+	left: 600px;
 }
 div.content a, div.navigation a {
 	text-decoration: none;
@@ -25,6 +27,10 @@ div.ss-controls {
 div.nav-controls {
 	float: right;
 }
+div #container {
+	height: 354px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+
 div.slideshow-container {
 	position: relative;
 	clear: both;
@@ -37,7 +43,7 @@ div.loader {
 	background-image: url('loader.gif');
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 380px;
+	width: 354px;
 	height: 354px; /* This should be set to be at least the height of the largest image in the slideshow */
 }
 div.slideshow {
@@ -94,7 +100,7 @@ div.image-desc {
 }
 div.navigation {
 	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
-	margin-top: 10px;
+	margin-top: 0;
 }
 ul.thumbs {
 	clear: both;
@@ -124,7 +130,7 @@ div.pagination {
 	clear: both;
 }
 div.navigation div.top {
-	margin-bottom: 12px;
+	margin-bottom: 0;
 	height: 11px;
 }
 div.navigation div.bottom {

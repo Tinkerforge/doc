@@ -81,7 +81,7 @@ Master Brick.
 .. _master_brick_test:
 
 Test your Master Brick
--------------------
+----------------------
 
 To test your Master Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
