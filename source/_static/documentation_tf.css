@@ -391,4 +391,10 @@ img.align-center {
 		vertical-align: middle;
 }
 
+div.center_table table {
+		text-align:center;
+}
 
+div.center_table table tbody tr td{
+		text-align:center;
+}
