@@ -3,8 +3,7 @@
 Downloads
 =========
 
-   By downloading any of our software, bindings, firmwares etc. 
-   you agree to the following terms::
+   By downloading any of our software you agree to the following terms::
 
      OUR SOFTWARE IS PROVIDED TO YOU "AS IS". WITHOUT WARRENTY OF ANY KIND, 
      EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
@@ -19,10 +18,10 @@ Downloads
 .. terms from arduino.cc, and berkely-based copyrights
 
    
-.. _downloads_software:
+.. _downloads_tools:
 
-Software
---------
+Tools
+-----
 
 
 .. raw:: html
