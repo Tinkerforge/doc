@@ -5,7 +5,7 @@ div.content {
 	width: 354px; 
 	margin-top: 5px;
   position: absolute;
-	left: 600px;
+	left: 400px;
 }
 div.content a, div.navigation a {
 	text-decoration: none;
