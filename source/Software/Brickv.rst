@@ -3,9 +3,26 @@
 Brick Viewer (brickv)
 =====================
 
+This tool can be used to test :ref:`Bricks <product_overview_bricks>` and
+:ref:`Bricklets <product_overview_bricklets>`. Each device has its own view
+which shows you the main features or lets you control it.
+
+Additionally this tool can be used to calibrate the analog to digital converter
+(ADC) of the Bricks to improve measurement quality 
+(see :ref:`here <brickv_adc_calibration>`)
+or to flash bricklet plugins (see :ref:`here <brickv_flash_plugin>`).
 
 Installation
 ------------
+
+Windows
+^^^^^^^
+
+Linux
+^^^^^
+
+Mac OS
+^^^^^^
 
 
 Usage
