@@ -63,6 +63,7 @@ powersupply.
    :scale: 100 %
    :alt: alternate text
    :align: center
+   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
 
 Troubleshoot
 ------------
