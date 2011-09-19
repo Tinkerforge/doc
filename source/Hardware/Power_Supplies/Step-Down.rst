@@ -48,35 +48,21 @@ Weight                            TBD
 Resources
 ---------
 
-* AOZ1212 Datasheet (Download)
-* Schematic (Download)
-* Outline and drilling plan (Download)
-* Project (Download)
+* Schematic (`Download <https://github.com/Tinkerforge/step-down-powersupply/raw/master/hardware/step-down-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/step_down_powersupply_dimensions.png>`__)
+* Project (`Download <https://github.com/Tinkerforge/step-down-powersupply/zipball/master>`__)
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 Connectivity
 ------------
 
 The following picture depicts the different connection possibilities of the 
-485-Extension.
+powersupply.
 
 .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
    :alt: alternate text
    :align: center
-
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/step_down_powersupply_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
-
-Usage
------
- * explain usage with images
-
 
 Troubleshoot
 ------------
