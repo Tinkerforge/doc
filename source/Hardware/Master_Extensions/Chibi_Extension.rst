@@ -60,7 +60,7 @@ Resources
  
 * AT86RF212 datasheet (Download)
 * Schematic (Download)
-* Outline and drilling plan (Download)
+* Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extensions_dimensions.png>`__)
 * Project (Download)
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
@@ -81,15 +81,6 @@ Resources
    :alt: alternate text
    :align: center
 
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/chibi_extension_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
-
-
-Troubleshoot
-------------
+.. Troubleshoot
+   ------------
 

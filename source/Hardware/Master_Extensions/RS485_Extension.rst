@@ -52,7 +52,7 @@ Resources
 ---------
 
 * Schematic (Download)
-* Outline and drilling plan (Download)
+* Outline and drilling plan (`Download <../../_images/Dimensions/rs485_extension_dimensions.png>`__)
 * Project (Download)
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
@@ -71,15 +71,6 @@ Resources
    :alt: alternate text
    :align: center
 
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/rs485_extension_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
-
-
-Troubleshoot
-------------
+.. Troubleshoot
+   ------------
 
