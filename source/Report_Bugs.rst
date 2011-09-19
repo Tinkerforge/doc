@@ -16,14 +16,16 @@ Software
 --------
 
 * `Brick Deamon <https://github.com/Tinkerforge/brickd/issues>`__
+   
 * `Brick Viewer <https://github.com/Tinkerforge/brickv/issues>`__
 
 * `Brick Bootloader <https://github.com/Tinkerforge/brickboot/issues>`__
 * `Bricklet Library <https://github.com/Tinkerforge/brickletlib/issues>`__
 * `Brick Library <https://github.com/Tinkerforge/bricklib/issues>`__
 
-* `API <https://github.com/Tinkerforge/generators/issues>`__
-The API is generated for each language from a config (\*.conf) file.
+* `API <https://github.com/Tinkerforge/generators/issues>`__ 
+   The API is generated for each language from a config (\*.conf) file.
+
 
 * `Kicad Libraries <https://github.com/Tinkerforge/kicad-libraries/issues>`__
 
