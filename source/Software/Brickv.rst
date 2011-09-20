@@ -7,6 +7,12 @@ Brick Viewer (brickv)
 Installation
 ------------
 
+Dependencies:
+* python numpy
+* python qwt5
+* python opengl
+* python (matplotlib, numpy, scipy,)
+* python excelerator
 
 Usage
 -----

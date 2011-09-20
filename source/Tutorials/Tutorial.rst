@@ -5,7 +5,7 @@ Tutorial
 
 The following tutorial will demonstrate how to use our products with the 
 :ref:`High Level Programming Interface <pi_hlpi>`. 
-See :ref:`Programming Interfaces <pi>` for other possibilities. 
+See section :ref:`Programming Interfaces <pi>` for other possibilities. 
 
 In the following we will demonstrate our system with specific products as 
 representatives for all others.
