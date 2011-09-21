@@ -5,6 +5,10 @@
 
 {% extends '!layout.html' %}
 
+{% block doctype %}
+<!DOCTYPE html>
+{% endblock %}
+
 {% block htmltitle %}
 <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
 {% raw %}
