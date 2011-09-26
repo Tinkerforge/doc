@@ -53,9 +53,11 @@ as defined in :file:`ip_connection.h`.
 
 .. c:function:: void ipcon_enumerate(IPConnection *ipcon, enumerate_callback_func_t cb)
 
- This method registers a callback with the signature:: 
-  
- 	void callback(char *uid, char *name, uint8_t stack_id, bool is_new)  
+ This method registers a callback with the signature: 
+ 
+ .. code-block:: c
+
+  void callback(char *uid, char *name, uint8_t stack_id, bool is_new)  
 
  that receives four parameters:
 
