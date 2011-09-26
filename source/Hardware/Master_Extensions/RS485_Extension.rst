@@ -17,7 +17,7 @@ Description
 
 Two or more of this 
 :ref:`Master Extension <product_overview_master_extensions>` with one
-:ref:`Master Bricks <master_brick>` each
+:ref:`Master Brick <master_brick>` each
 can be used to create a `RS-485 bus <http://en.wikipedia.org/wiki/RS-485>`_
 between them. 
 Each Master Brick can be a master of a stack. Using our
@@ -29,6 +29,9 @@ You can write the same programming code.
 Since RS485 is differental interface standard, information can be communicated
 over large distances. Therefore this interface is better suited to connect a
 stack cable-based to a PC than USB when it is further away.
+
+.. note:: Coming soon! 
+   Currently not available. Please be patient.
 
 Technical Specifications
 ------------------------
@@ -45,50 +48,29 @@ Weight                            TBD
 ================================  ============================================================
 
 
-RS485 Bus Assembly
-------------------
-* Picture Bus
-* explain termination
-
 Resources
 ---------
 
 * Schematic (Download)
-* Outline and drilling plan (Download)
+* Outline and drilling plan (`Download <../../_images/Dimensions/rs485_extension_dimensions.png>`__)
 * Project (Download)
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
-Connectivity
-------------
+.. RS485 Bus Assembly
+  ------------------
+  * Picture Bus
+  * explain termination
 
-The following picture depicts the different connection possibilities of the 
-485-Extension.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
+.. Connectivity
+  ------------
+  The following picture depicts the different connection possibilities of the 
+  485-Extension.
+  .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
    :alt: alternate text
    :align: center
 
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/rs485_extension_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
-
-
-.. Powersupply
-.. ^^^^^^^^^^^
-
-.. Todo: Bildchen
-
-
-Usage
------
-
- * Explain usage
-
-Troubleshoot
-------------
+.. Troubleshoot
+   ------------
 

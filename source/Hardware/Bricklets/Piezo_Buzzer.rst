@@ -28,7 +28,7 @@ lengths. It is possible to beep a specified time or to transmit a
 `Morse Code <http://en.wikipedia.org/wiki/Morse_code>`_ string.
 
 It is applicable different signaling applications like signal events
-("email received") or to localize a lost R/C model.
+("email received").
 
 Technical Specifications
 ------------------------

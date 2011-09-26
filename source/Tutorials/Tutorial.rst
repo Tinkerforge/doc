@@ -5,7 +5,7 @@ Tutorial
 
 The following tutorial will demonstrate how to use our products with the 
 :ref:`High Level Programming Interface <pi_hlpi>`. 
-See :ref:`Programming Interfaces <pi>` for other possibilities. 
+See section :ref:`Programming Interfaces <pi>` for other possibilities. 
 
 In the following we will demonstrate our system with specific products as 
 representatives for all others.
@@ -216,7 +216,6 @@ After this we stop the motor and destroy the IP Connection.
 Building Stacks
 ---------------
 
-* TODO :ref:`Power-Supply Board <product_overview_powersupplies>` (optional)
 
 To reduce the wiring or saving USB hubs you can stack Bricks.
 You need a :ref:`Master Brick <master_brick>` at the bottom with a PC 
@@ -226,8 +225,36 @@ The stacking is transparent, that means there is no code change necessary
 between a version which uses Bricks seperately connected over USB to a PC
 or a version with an additional Master and stacked Bricks.
 
-In the following we extend the previous part. Simply take a Master Brick
-and attach it below the DC Brick.
+Of course it is possible to use more than one Master Brick in a Stack.
+But only the Master Brick at the bottom of the Stack acts as master of
+the Stack. The other Master Bricks can only be used as interfaces to their
+connected Bricklets.
+
+Additionally we want to show how to power a Stack. The master os a Stack powers
+each device of the Stack over its USB Connection (typical 500mA - 1A).
+In this case the Stack internal power signal is unpowered
+(see :ref:`Stack Power Connector description <connector_stack_power>`).
+That means that every driver Brick in the Stack needs to be powered
+by its own onboard power-connector.
+
+Another possibility is to use an extra 
+:ref:`Power-Supply Board <product_overview_powersupplies>` which
+would be attached at the bottom of the Stack (below the master).
+These boards power the Stack internal power signal.
+That means that each driver Brick which is not powered by its onboard
+power-connector is powered over this Power-Supply Board.
+Additionally these boards create 5V to power the devices of the Stack.
+The master of the Stack can measure the voltage and the current flow
+of the powersupply connected to the Power-Supply Board.
+
+.. note::
+
+   Each driver Brick switches automatically to the Stack internal
+   power signal when no external supply is attached over the onboard 
+   power-connector. Keep this in mind!
+
+In the following we extend the previous part. We take the DC Brick and the
+Rotary Potentiometer and attach a Master Brick below the DC Brick.
 
 .. note::
 
@@ -236,8 +263,28 @@ and attach it below the DC Brick.
 Phase 1: Testing
 ^^^^^^^^^^^^^^^^
 
+Take the Stack consisting of a DC Brick with connected Rotary Poti Bricklet
+and a Master Brick and connect the Master Brick
+over USB with your PC as depicted in the image below.
+
+.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+   :scale: 100 %
+   :alt: Stack (Master Brick, DC Brick) and Rotary Poti Bricklet
+   :align: center
+   :target: ../../_images/Bricklets/current12_brickv.jpg
+
+When running the Brick Viewer you should see the DC Brick and Rotary Poti 
+Bricklet tabs as in the previous part and an additional "Master Brick" tab.
+
+You should be able to control the DC Brick and test the Rotary Poti Bricklet
+as you have done it before.
+
+
 Phase 2: Write your own Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Since the stacking is transparent you should be able to run
+the program of the previous part without any changes.
 
 
 
@@ -250,6 +297,7 @@ Cross-Link Stacks
 
    Coming soon!
 
-   We will show you how to connect two stacks without any code modifications.
+   We will show you how to connect two stacks wireless 
+   without any code modifications.
    Be patient...
 

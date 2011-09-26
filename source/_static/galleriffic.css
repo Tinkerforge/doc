@@ -4,8 +4,8 @@ div.content {
 	float: right;
 	width: 354px; 
 	margin-top: 5px;
-  position: absolute;
-	left: 600px;
+  position: relative;
+	right: 53px;
 }
 div.content a, div.navigation a {
 	text-decoration: none;

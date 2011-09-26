@@ -14,13 +14,13 @@ Tinkerforge Documentation
    Product_Overview
    Software
    Downloads
-   Report_Bugs
 
 .. toctree::
    :maxdepth: 1
 
    Programming_Interfaces
    Technical_Data
+   Report_Bugs
 
 
 ******

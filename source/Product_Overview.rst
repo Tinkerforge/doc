@@ -3,23 +3,23 @@
 Product Overview
 ----------------
 
-There exist four types of hardware components:
- * :ref:`Bricks <product_overview_bricks>`: 
-   Stackable microcontroller boards for sensing and controlling purposes.
- * :ref:`Master Extensions <product_overview_master_extensions>`:
-   Boards which extend the communication interfaces of a
-   :ref:`Master Brick <master_brick>`.
- * :ref:`Bricklets <product_overview_bricklets>`:
-   Non-stackable sensor/actor boards which extend the features of a 
-   :ref:`Brick <product_overview_bricks>`.
- * :ref:`Power Supplies <product_overview_powersupplies>`:
-   Boards to power a Stack of 
-   :ref:`Bricks <product_overview_bricks>` plugged below the Stack.
+There exist four different types of hardware components:
 
-.. note::
+* :ref:`Bricks <product_overview_bricks>`: 
+  Stackable microcontroller boards for sensing and controlling purposes.
+* :ref:`Master Extensions <product_overview_master_extensions>`:
+  Boards which extend the communication interfaces of a
+  :ref:`Master Brick <master_brick>`.
+* :ref:`Bricklets <product_overview_bricklets>`:
+  Non-stackable sensor/actor boards which extend the features of a 
+  :ref:`Brick <product_overview_bricks>`.
+* :ref:`Power Supplies <product_overview_powersupplies>`:
+  Boards to power a Stack of 
+  :ref:`Bricks <product_overview_bricks>` plugged below the Stack.
 
-   See our tutorial TODOTODOTODOTODO for an explanation how to use everything
-   together.
+
+See our :ref:`tutorial <tutorial>` for an explanation how everything works
+together.
 
 
 .. _product_overview_bricks:

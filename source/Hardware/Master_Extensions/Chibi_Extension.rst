@@ -27,7 +27,7 @@ the GPL problem of Zigbee is explained.
 
 Two or more of this 
 :ref:`Master Extension <product_overview_master_extensions>` with one
-:ref:`Master Bricks <master_brick>` each
+:ref:`Master Brick <master_brick>` each
 can be used to create a Chibi network.
 Each Master Brick can be a master of a stack. Using our
 :ref:`High Level Concept <pi_hlpi>` this network
@@ -35,8 +35,8 @@ is completely transparent, which means that each device in this bus
 is usable like it would be connected to the PC with its own USB connection.
 You can write the same programming code.
 
-Since you are using a wireless network the range is limited.
-Typically you can reache TODOTODOTODOTODOTODOTODO
+.. note:: Coming soon! 
+   Currently not available. Please be patient.
 
 Technical Specifications
 ------------------------
@@ -54,42 +54,33 @@ Weight                            TBD
 ================================  ============================================================
 
 
-Chibi Network Assembly
-----------------------
-* Picture Network
-* explain creation and configuration
-* explain usage
-
 
 Resources
 ---------
  
 * AT86RF212 datasheet (Download)
 * Schematic (Download)
-* Outline and drilling plan (Download)
+* Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extensions_dimensions.png>`__)
 * Project (Download)
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
-Connectivity
-------------
+.. Chibi Network Assembly
+  ----------------------
+  * Picture Network
+  * explain creation and configuration
+  * explain usage
 
-The following picture depicts the different connection possibilities of the 
-Chibi-Extension.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
+
+.. Connectivity
+   ------------
+  The following picture depicts the different connection possibilities of the 
+  Chibi-Extension.
+  .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
    :scale: 100 %
    :alt: alternate text
    :align: center
 
-Outline and Drilling Plan
--------------------------
-
-.. image:: /Images/Dimensions/chibi_extension_dimensions.png
-   :width: 300pt
-   :alt: alternate text
-   :align: center
-
-
-Troubleshoot
-------------
+.. Troubleshoot
+   ------------
 

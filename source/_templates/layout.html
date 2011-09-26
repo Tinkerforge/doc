@@ -5,18 +5,24 @@
 
 {% extends '!layout.html' %}
 
+{% block doctype %}
+<!DOCTYPE html>
+{% endblock %}
+
 {% block htmltitle %}
 <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
 {% raw %}
-<link rel="stylesheet" href="{{ url_for('static', filename='base_tf.css', _external=True) }}" />
-<link rel="stylesheet" href="../../_static/galleriffic.css" type="text/css" />
-<script type="text/javascript" src="../../_static/jquery.js"></script>
-<script type="text/javascript" src="../../_static/jquery.galleriffic.js"></script>
-<script type="text/javascript" src="../../_static/jquery.opacityrollover.js"></script>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='base_tf.css', _external=True) }}" />
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='galleriffic.css', _external=True) }}" />
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.js', _external=True) }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.galleriffic.js', _external=True) }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.opacityrollover.js', _external=True) }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='gallery.js', _external=True) }}"></script>
+
+
 <script type="text/javascript">
 	document.write('<style>.noscript { display: none; }</style>');
 </script>
-<script type="text/javascript" src="../../_static/gallery.js"></script>
 {% endraw %}
 {% endblock %}
 
