@@ -17,9 +17,9 @@ can be found :ref:`here <product_overview>`.
 Example
 --------
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/IPConnection_C_example.c>`__
+`Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/example.c>`__
 
-.. literalinclude:: IPConnection_C_example.c
+.. literalinclude:: example.c
  :language: c
  :linenos:
  :tab-width: 4

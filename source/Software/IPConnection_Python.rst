@@ -17,9 +17,9 @@ can be found :ref:`here <product_overview>`.
 Example
 --------
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/IPConnection_Python_example.py>`__
+`Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/example.py>`__
 
-.. literalinclude:: IPConnection_Python_example.py
+.. literalinclude:: example.py
  :language: python
  :linenos:
  :tab-width: 4
