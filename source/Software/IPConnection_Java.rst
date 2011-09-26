@@ -50,14 +50,14 @@ API
 
    The listener receives four parameters:
 
-   * *uid* - str: The UID of the device.
-   * *name* - str: The name of the device (includes "Brick" or "Bricklet" and a version number).
-   * *stackID* - int: The Stack ID of the device (you can find out the position in a stack with this).
-   * *isNew* - bool: True if the device is added, false if it is removed.
+   * *uid*: The UID of the device.
+   * *name*: The name of the device (includes "Brick" or "Bricklet" and a version number).
+   * *stackID*: The Stack ID of the device (you can find out the position in a stack with this).
+   * *isNew*: True if the device is added, false if it is removed.
  
    There are three different possibilities for the listener to be called.
    Firstly, the listener is called with all currently available devices in the
-   IP Connection (with *isMew* true). Secondly, the listener is called if
+   IP Connection (with *isNew* true). Secondly, the listener is called if
    a new Brick is plugged in via USB (with *isNew* true) and lastely it is
    called if a brick is unplugged (with *isNew* false).
 
