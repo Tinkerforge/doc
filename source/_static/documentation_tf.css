@@ -330,6 +330,24 @@ table.field-list {
     width: auto;
 }
 
+
+/* index.rst */
+
+div.indextable table.docutils td {
+    border: none;
+    padding: 0px;
+}
+
+div.indextable table.docutils {
+    border: none;
+    margin-left: 0px;
+    width: auto;
+}
+
+div.indextable ul {
+    margin: 0px;
+}
+
 /**
  * Software API
 **/
