@@ -36,7 +36,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions                        85mm x 25mm (3.35" x 0.98")
-Weight                            14.1h (w/o knob) 15.2g (w knob)
+Weight                            14.1g (w/o knob) 15.2g (w knob)
 Linear potentiometer              59mm (2.32") adjustable length
 Output: Slider position           0 - 100 (slider down - slider up)
 ================================  ============================================================
