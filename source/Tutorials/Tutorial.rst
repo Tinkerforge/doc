@@ -218,7 +218,10 @@ that the motor will follow the potentiometer movements immediately.
 In **Lines 36-38** we wait for user input to prevent program termination.
 After this the motor is stopped and the IP Connection destroyed.
 
-Building Stacks
+
+.. _tutorial_build_stacks:
+
+Build Stacks
 ---------------
 
 To reduce wiring and save space it is possible to stack Bricks.
