@@ -43,7 +43,7 @@ and a servo instead of the DC Brick and a motor):
    :scale: 100 %
    :alt: DC Brick with connected motor and battery
    :align: center
-   :target: ../../_images/Bricks/dc_brick_with_motor_battery.jpg
+   :target: ../_images/Bricks/dc_brick_with_motor_battery.jpg
 
 
 Start the Brick Viewer and connect the
@@ -55,7 +55,7 @@ Your Brick Viewer now looks as below:
    :scale: 100 %
    :alt: DC Brick view in Brick Viewer
    :align: center
-   :target: ../../_images/Bricks/dc_brickv.jpg
+   :target: ../_images/Bricks/dc_brickv.jpg
 
 You can see the voltage of the connected battery as "External Voltage"
 and the current used by the motor as "Current Consumption" as well as 
@@ -166,7 +166,7 @@ below.
    :scale: 100 %
    :alt: DC Brick with connected Rotary Poti Bricklet
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../_images/Bricklets/current12_brickv.jpg
 
 If you now connect the DC Brick to the PC, not only a "DC Brick" tab but
 also a "Rotary Poti Bricklet" tab will be shown in the Brick Viewer.
@@ -177,7 +177,7 @@ You should see a corresponding movement in the viewer.
    :scale: 100 %
    :alt: Brickv view of the Rotary Poti Bricklet
    :align: center
-   :target: ../../_images/Bricklets/rotary_poti_brickv.jpg
+   :target: ../_images/Bricklets/rotary_poti_brickv.jpg
 
 
 Phase 2: Write your own Program
@@ -277,7 +277,7 @@ over USB with your PC as depicted in the image below.
    :scale: 100 %
    :alt: Stack (Master Brick, DC Brick) and Rotary Poti Bricklet
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../_images/Bricklets/current12_brickv.jpg
 
 The Brick Viewer should now show the DC Brick and Rotary Poti 
 Bricklet tabs as in the previous part and an additional "Master Brick" tab.
