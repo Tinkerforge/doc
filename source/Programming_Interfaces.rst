@@ -9,31 +9,31 @@ Programming Interfaces
 High Level Programming Interface (HLPI)
 ---------------------------------------
 
-This interfaces uses preprogrammed devices which are controlled
-by an PC. Each device has its own unique identifier (UID).
+The High Level Programming Interface uses preprogrammed devices that
+are controlled by an PC. Each device has its own unique identifier (UID).
 
-The user calls a method implemented in our :ref:`API Bindings <api_bindings>` 
+The user calls a method implemented in the :ref:`API Bindings <api_bindings>` 
 on a device specified by a UID. 
 This method creates a data package which will be delivered to the
-:ref:`Brick <product_overview_bricks>` with the according UID.
+:ref:`Brick <product_overview_bricks>` with the corresponding UID.
 The Brick performs the task specified in the delivered data. 
-For example in case of an "getTemperature()" call the Brick will readout the
-temperature and sends an data package back which contains it. The method 
-call blocks until the data package is received and final returns 
-the temperature.
+For example in case of a "getTemperature()" call the Brick will read the
+temperature and send it back. The method call blocks until the data package 
+is received and returns the temperature.
 
 In case of calling a :ref:`Bricklet <product_overview_bricklets>` method,
-data is send to the Brick at which the Bricklet is attached. The Brick 
-calls the according method stored in the 
+data is send to the Brick where the Bricklet is attached. The Brick 
+calls the corresponding method stored in the 
 `EEPROM <http://en.wikipedia.org/wiki/EEPROM>`__ on the Bricklet.
-This method performs the according task and can send back data.
+This method performs the task and sends back the requested data.
 
-This interface is available for Windows, Linux and Mac OS systems.
+This interface is available for Windows, Linux and Mac OS as well
+as mobile operating systems, such as Android, iOS and Windows Mobile.
 
 
 .. note::
 
-   See our :ref:`tutorial` for more information how to use it
+   See the :ref:`tutorial` for more information on how to use it
    and an idea of the Brick/Bricklet concept.
 
 
@@ -42,22 +42,23 @@ This interface is available for Windows, Linux and Mac OS systems.
 Low Level Programming Interface (LLPI)
 --------------------------------------
 
-If you have an microcontroller board and want to use our products, 
+If you have a microcontroller board and want to use Bricks/Bricklets, 
 the Low Level Programming Interface may hit the spot. You can
-access every :ref:`Brick <product_overview_bricks>` over a **SPI**, **I2C** or **serial**
-connection. :ref:`Bricklets <product_overview_bricklets>` can be accesses by these
+access every :ref:`Brick <product_overview_bricks>` over a 
+**SPI**, **I2C** or **serial** connection. 
+:ref:`Bricklets <product_overview_bricklets>` can be accesses by these
 interfaces over the connected Brick. 
 
 Additionally it is possible to use our Bricklets as breakout boards
-and read the equipped sensor directly (e.g. the analog voltage of an light
+and read the equipped sensor directly (e.g. the analog voltage of a light
 sensor).
 
-.. note::
+.. warning::
 
-   | Currently only the direct access on Bricklets is supported.
-   | See particular documentation for more information.
+   Currently only the direct access to Bricklets is supported.
+   See the particular Bricklet documentation for more information.
 
-   Support of Bricks will coming soon...
+   The LLPI support for Bricks is not yet implemented.
 
 
 .. _pi_odpi:
@@ -65,14 +66,15 @@ sensor).
 On Device Programming Interface (ODPI)
 --------------------------------------
 
-On Device Programming Interface (ODPI) is an API to write your own firmware on our
-devices.
+The On Device Programming Interface (ODPI) is an API to write your own 
+firmware for Bricks.
 
-.. note::
+.. warning::
 
-   Currently only the source-code of our devices is online (Todo Link). You are
-   free to adapt the code for your own purposes. We are working on a
-   special API to assist easy firmware development.
-
-   Comming soon...
-
+   Currently only the source code of the Bricks is
+   `online <https://github.com/organizations/Tinkerforge>`__. 
+   If you have the skills to set up the compiler environment and can
+   program c, you can adapt the code for your own purposes. 
+   
+   We are working on a simple API to allow easy firmware development
+   (comparable to the Arduino API). 
