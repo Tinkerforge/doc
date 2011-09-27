@@ -3,7 +3,7 @@
 IPConnection
 ============
 
-The IPConnection creates an connection between the
+The IPConnection creates a connection between the
 :ref:`Brick Daemon <brickd>` and the corresponding programming language 
 :ref:`API bindings<api_bindings>`. 
 
