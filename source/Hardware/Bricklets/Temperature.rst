@@ -23,7 +23,7 @@ Description
 With the Temperature :ref:`Bricklet <product_overview_bricklets>` the features of
 every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
 measure the temperatures. 
-The measured illuminance can be readout in `°C
+The measured temperature can be readout in `°C
 <http://en.wikipedia.org/wiki/Degree_Celsius>`_ directly.
 You can define events which will be triggered when a specified temperature
 is exceeded.
