@@ -4,12 +4,9 @@ Report Bugs
 ===========
 
 If you have found a bug in our software or hardware please report it.
-All projects are on `github <https://github.com/Tinkerforge>`__,
-a hosting service which uses 
-`git <http://en.wikipedia.org/wiki/Git_(software)>`__ as revision
-control system.
+All projects are hosted on `github <https://github.com/Tinkerforge>`__.
 
-Below you find the links to the "issues" section of each project:
+Below you can find the links to the "issues" section for each project:
 
 
 Software
