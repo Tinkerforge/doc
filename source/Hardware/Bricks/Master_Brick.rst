@@ -30,8 +30,8 @@ and does not act as master. They are only provide their attached Bricklets.
 In the simple case the communication with a stack is routed 
 over the USB connection of the master. This interface can be changed with 
 :ref:`Master-Extensions <product_overview_master_extensions>`. There are
-Master-Extensions for cable based or wireless interfaces. Master-Extensions
-will be plugged on the topside of the master. The master detect them
+Master-Extensions for cablebased interfaces (RS485, Ethernet) and wireless interfaces (Zigbee, WLAN). 
+Extensions will be plugged on the topside of the master. The master detect them
 and use this additional interface.
 
 In the future it will be possible to control the device low level 
