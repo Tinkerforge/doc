@@ -67,11 +67,11 @@ Bricks/Bricklets). The latter is only for testing purposes.
 Connect your Humidity Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/humidity_with_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected Humidity Bricklet
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/humidity_with_master_1000.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "Humidity Bricklet" in the Brick Viewer after you pressed “connect”.
