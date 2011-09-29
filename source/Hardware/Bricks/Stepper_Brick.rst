@@ -55,6 +55,8 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Microcontroller                   ATSAM3S2B (128kB Flash, 32k RAM)
+--------------------------------  ------------------------------------------------------------
 Maximum Current Per Winding       2.5A
 Minimum/Maximum Input Voltage     8V/38V
 Device Current Consumption        TBD

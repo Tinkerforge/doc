@@ -60,6 +60,8 @@ Technical Specifications
 ===================================================  ============================================================
 Property                                             Value
 ===================================================  ============================================================
+Microcontroller                                      ATSAM3S2B (128kB Flash, 32k RAM)
+---------------------------------------------------  ------------------------------------------------------------
 Acceleration, Magnetic, Angular Velocity Resolution  16-bit
 Roll, Pitch, Yaw Resolution                          16-bit
 Quaternion Resolution                                32-bit

@@ -54,6 +54,8 @@ Technical Specifications
 ===================================== ============================================================
 Property                              Value
 ===================================== ============================================================
+Microcontroller                       ATSAM3S2B (128kB Flash, 32k RAM)
+------------------------------------- ------------------------------------------------------------
 Maximum Motor Current (Sum)           3A
 Minimum/Maximum Input Voltage         5V/25V
 Output Voltage                        Software adustable 2.0 - 9.0V

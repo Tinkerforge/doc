@@ -15,9 +15,10 @@ Master Brick
 Description
 -----------
 
-The Master :ref:`Brick <product_overview_bricks>` is a microcontroller board 
-used for two purposes. First of all it is equipped with **four** 
-:ref:`Bricklet <product_overview_bricklets>` ports and therefore ideally 
+The Master :ref:`Brick <product_overview_bricks>`
+is equipped with a 32-bit ARM microcontroller and can be
+used for two purposes. First of all it has **four** 
+:ref:`Bricklet <product_overview_bricklets>` ports and therefore is ideally 
 suited for applications where a great many of Bricklets are used.
 
 Secondly, the Master Brick can be used for communication purposes.
@@ -45,6 +46,8 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Microcontroller                   ATSAM3S4C (256kB Flash, 48k RAM)
+--------------------------------  ------------------------------------------------------------
 Device Current Consumption        TBD
 --------------------------------  ------------------------------------------------------------
 

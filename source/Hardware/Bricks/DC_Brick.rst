@@ -19,8 +19,8 @@ The DC :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit ARM
 microcontroller and is able to control one 
 `DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`_
 bi-directional with max **5A** and **28V**. The current consumption and
-power supply voltages can be measured. 
-Velocity and acceleration of the motor can be controlled.
+power supply voltages can be measured,
+velocity and acceleration of the motor can be controlled.
 In case of overtemperature and overcurrent signals are triggered.
 For battery driven applications an undervoltage signal is user configureable.
 Additionally, the drive mode can be switched between Drive/Brake and 
@@ -56,6 +56,8 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Microcontroller                   ATSAM3S2B (128kB Flash, 32k RAM)
+--------------------------------  ------------------------------------------------------------
 Maximum Motor Current (Peak)      5A
 Minimum/Maximum Input Voltage     6V/28V
 Device Current Consumption        TBD
