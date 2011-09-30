@@ -59,7 +59,7 @@ Microcontroller                   ATSAM3S2B (128kB Flash, 32k RAM)
 --------------------------------  ------------------------------------------------------------
 Maximum Current Per Winding       2.5A
 Minimum/Maximum Input Voltage     8V/38V
-Device Current Consumption        TBD
+Device Current Consumption        60mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Step Modes                        full, half, quarter, eighth steps
@@ -70,7 +70,7 @@ Maximum Acceleration              0 to 65535, configurable as limit, in steps/sÂ
 --------------------------------  ------------------------------------------------------------
 Bricklet Ports                    4
 Dimensions (W x D x H)            40 x 40 x 17mm  (1.57 x 1.57 x 0.67")
-Weight                            TBD
+Weight                            20g
 ================================  ============================================================
 
 

@@ -59,7 +59,7 @@ Microcontroller                       ATSAM3S2B (128kB Flash, 32k RAM)
 Maximum Motor Current (Sum)           3A
 Minimum/Maximum Input Voltage         5V/25V
 Output Voltage                        Software adustable 2.0 - 9.0V
-Device Current Consumption            TBD
+Device Current Consumption            60mA
 ------------------------------------- ------------------------------------------------------------
 ------------------------------------- ------------------------------------------------------------
 Output Period\*                       2000µs - 65535µs
@@ -70,7 +70,7 @@ Acceleration\*                        1 - 65535 °/100s²
 ------------------------------------- ------------------------------------------------------------
 Bricklet Ports                        2
 Dimensions (W x D x H)                40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
-Weight                                TBD
+Weight                                18g
 ===================================== ============================================================
 
 \* configurable per servo

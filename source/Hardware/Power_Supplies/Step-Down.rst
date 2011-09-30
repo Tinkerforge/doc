@@ -37,12 +37,13 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Minimum/Maximum Input Voltage     6V/27V
+Device Current Consumption        20-30mA (depending on Input Voltage)
 Maximum Input Current             TBD
 Maximum Output Current 5V Supply  3A
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
-Weight                            TBD
+Weight                            14g
 ================================  ============================================================
 
 Resources

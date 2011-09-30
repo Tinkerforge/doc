@@ -61,6 +61,7 @@ Technical Specifications
 Property                                             Value
 ===================================================  ============================================================
 Microcontroller                                      ATSAM3S2B (128kB Flash, 32k RAM)
+Current Consumption                                  53mA
 ---------------------------------------------------  ------------------------------------------------------------
 Acceleration, Magnetic, Angular Velocity Resolution  16-bit
 Roll, Pitch, Yaw Resolution                          16-bit
@@ -69,7 +70,7 @@ Quaternion Resolution                                32-bit
 ---------------------------------------------------  ------------------------------------------------------------
 Bricklet Ports                                       2
 Dimensions (W x D x H)                               40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
-Weight                                               TBD
+Weight                                               12g
 ===================================================  ============================================================
 
 

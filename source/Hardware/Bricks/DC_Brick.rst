@@ -60,7 +60,7 @@ Microcontroller                   ATSAM3S2B (128kB Flash, 32k RAM)
 --------------------------------  ------------------------------------------------------------
 Maximum Motor Current (Peak)      5A
 Minimum/Maximum Input Voltage     6V/28V
-Device Current Consumption        TBD
+Device Current Consumption        53mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 PWM Frequency                     Configurable, 1-20khz, default 15khz
@@ -70,7 +70,7 @@ Acceleration                      0 to 65535, velocity/s, increment for velocity
 --------------------------------  ------------------------------------------------------------
 Bricklet Ports                    2
 Dimensions (W x D x H)            40mm x 40mm x 17mm  (1.57" x 1.57" x 0.67")
-Weight                            TBD
+Weight                            18g
 ================================  ============================================================
 
 Resources
