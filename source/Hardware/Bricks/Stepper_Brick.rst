@@ -30,7 +30,7 @@ and can be used within a stack.
 Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device. 
 
-The dc motor can be powered by an external powersupply connected
+The stepper motor can be powered by an external powersupply connected
 directly to the Brick or by the stack internal powersupply.
 If an external powersupply is connected the Brick switches
 automatically to this powersupply.
