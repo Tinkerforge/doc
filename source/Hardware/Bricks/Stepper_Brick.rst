@@ -68,7 +68,7 @@ Maximum Velocity                  0 to 65535, configurable as limit, in steps/s
 Maximum Acceleration              0 to 65535, configurable as limit, in steps/s²
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Bricklet Ports                    4
+Bricklet Ports                    2
 Dimensions (W x D x H)            40 x 40 x 17mm  (1.57 x 1.57 x 0.67")
 Weight                            20g
 ================================  ============================================================
