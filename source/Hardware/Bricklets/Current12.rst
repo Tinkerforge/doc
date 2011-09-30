@@ -7,8 +7,10 @@ Current12
 
         {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
         {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocimg("Bricklets/bricklet_current_tilted_350.jpg", "Bricklets/bricklet_current_tilted_100.jpg", "Bricklets/bricklet_current_tilted_800.jpg", "Current12 Bricklet") }}
+        {{ tfdocimg("Bricklets/bricklet_current_horizontal_350.jpg", "Bricklets/bricklet_current_horizontal_100.jpg", "Bricklets/bricklet_current_horizontal_800.jpg", "Current12 Bricklet") }}
+        {{ tfdocimg("Bricklets/bricklet_current_vertical_350.jpg", "Bricklets/bricklet_current_vertical_100.jpg", "Bricklets/bricklet_current_vertical_800.jpg", "Current12 Bricklet") }}
+        {{ tfdocimg("Bricklets/bricklet_current_master_350.jpg", "Bricklets/bricklet_current_master_100.jpg", "Bricklets/bricklet_current_master_1200.jpg", "Current12 Bricklet with connected Master Brick") }}
         {{ tfdocend() }}
 
 
@@ -66,11 +68,11 @@ Now you can connect your Current12 Bricklet to any
 cable with the Bricklet. If you like you can connect a Motor
 and a Battery to the Bricklet as displayed in the following image.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_current_master_800.jpg
    :scale: 100 %
    :alt: Master Brick with connected Current12 Bricklet, Battery and Motor
    :align: center
-   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
+   :target: ../../_images/Bricklets/bricklet_current_master_1200.jpg
 
 If you connect the Brick to the PC over USB,
 you should see a tab named "Current12 Bricklet" in the Brick Viewer after you
@@ -79,11 +81,11 @@ If everything went as expected you can now see the exact current in Ampere
 and a graph that shows the current over time. 
 
 
-.. image:: /Images/Bricklets/current12_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_current12_brickv.jpg
    :scale: 100 %
    :alt: Current12 Bricklet view in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_current12_brickv.jpg
 
 In our test we have connected the battery not from beginning. 
 When connecting the battery, you
