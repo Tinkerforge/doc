@@ -6,13 +6,45 @@ Ambient Light
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocimg("Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_big.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocimg("Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_thumb.jpg", "Bricklets/ambient_light_with_master_big.jpg", "Title #0") }}
-        {{ tfdocend() }}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_ambient_light_tilted_350.jpg", 
+	             "Bricklets/bricklet_ambient_light_tilted_100.jpg", 
+	             "Bricklets/bricklet_ambient_light_tilted_800.jpg", 
+	             "Ambient Light Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_ambient_light_vertical_350.jpg", 
+	             "Bricklets/bricklet_ambient_light_vertical_100.jpg", 
+	             "Bricklets/bricklet_ambient_light_vertical_800.jpg", 
+	             "Ambient Light Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_ambient_light_horizontal_350.jpg", 
+	             "Bricklets/bricklet_ambient_light_horizontal_100.jpg", 
+	             "Bricklets/bricklet_ambient_light_horizontal_800.jpg", 
+	             "Ambient Light Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_ambient_light_master_350.jpg", 
+	             "Bricklets/bricklet_ambient_light_master_100.jpg", 
+	             "Bricklets/bricklet_ambient_light_master_800.jpg", 
+	             "Ambient Light Bricklet with Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_ambient_light_brickv_350.jpg", 
+	             "Bricklets/bricklet_ambient_light_brickv_100.jpg", 
+	             "Bricklets/bricklet_ambient_light_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_ambient_bricklet_dimensions_350.png", 
+	             "Bricklets/bricklet_ambient_bricklet_dimensions_100.png", 
+	             "Bricklets/bricklet_ambient_bricklet_dimensions.png", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ tfdocend() }}
 
 
 
