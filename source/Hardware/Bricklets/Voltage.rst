@@ -78,6 +78,7 @@ Resources
 * Project (`Download <https://github.com/Tinkerforge/voltage-bricklet/zipball/master>`__)
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
+.. _voltage_bricklet_test
 
 Test your Voltage Bricklet
 --------------------------
