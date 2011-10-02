@@ -8,12 +8,42 @@ LCD 16x2
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_lcd_16x2_tilted_350.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_tilted_100.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_tilted_800.jpg", 
+	             "LCD 16x2 Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_lcd_16x2_apart_350.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_apart_100.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_apart_800.jpg", 
+	             "LCD 16x2 Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_lcd_16x2_display_350.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_display_100.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_display_800.jpg", 
+	             "LCD 16x2 Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_lcd_16x2_master_350.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_master_100.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_master_800.jpg", 
+	             "LCD 16x2 Bricklet with Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_lcd_16x2_brickv_350.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_brickv_100.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/lcd_16x2_bricklet_dimensions_350.png", 
+	             "Dimensions/lcd_16x2_bricklet_dimensions_100.png", 
+	             "Dimensions/lcd_16x2_bricklet_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
 	{{ tfdocend() }}
 
 

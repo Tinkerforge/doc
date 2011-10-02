@@ -8,12 +8,54 @@ Rotary Poti
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_rotary_poti_tilted_350.jpg", 
+	             "Bricklets/bricklet_rotary_poti_tilted_100.jpg", 
+	             "Bricklets/bricklet_rotary_poti_tilted_800.jpg", 
+	             "Rotary Poti Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_rotary_poti_front_350.jpg", 
+	             "Bricklets/bricklet_rotary_poti_front_100.jpg", 
+	             "Bricklets/bricklet_rotary_poti_front_800.jpg", 
+	             "Rotary Poti Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_rotary_poti_vertical_350.jpg", 
+	             "Bricklets/bricklet_rotary_poti_vertical_100.jpg", 
+	             "Bricklets/bricklet_rotary_poti_vertical_800.jpg", 
+	             "Rotary Poti Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_rotary_poti_horizontal_350.jpg", 
+	             "Bricklets/bricklet_rotary_poti_horizontal_100.jpg", 
+	             "Bricklets/bricklet_rotary_poti_horizontal_800.jpg", 
+	             "Rotary Poti Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_rotary_poti_knob_350.jpg", 
+	             "Bricklets/bricklet_rotary_poti_knob_100.jpg", 
+	             "Bricklets/bricklet_rotary_poti_knob_800.jpg", 
+	             "Rotary Poti Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_rotary_poti_master_350.jpg", 
+	             "Bricklets/bricklet_rotary_poti_master_100.jpg", 
+	             "Bricklets/bricklet_rotary_poti_master_800.jpg", 
+	             "Rotary Poti Bricklet with Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_rotary_poti_brickv_350.jpg", 
+	             "Bricklets/bricklet_rotary_poti_brickv_100.jpg", 
+	             "Bricklets/bricklet_rotary_poti_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/rotary_poti_bricklet_dimensions_350.png", 
+	             "Dimensions/rotary_poti_bricklet_dimensions_100.png", 
+	             "Dimensions/rotary_poti_bricklet_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
 	{{ tfdocend() }}
 
 

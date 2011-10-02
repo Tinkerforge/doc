@@ -8,12 +8,42 @@ Temperature IR
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_temperature_ir_tilted_350.jpg", 
+	             "Bricklets/bricklet_temperature_ir_tilted_100.jpg", 
+	             "Bricklets/bricklet_temperature_ir_tilted_800.jpg", 
+	             "Temperature IR Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_temperature_ir_vertical_350.jpg", 
+	             "Bricklets/bricklet_temperature_ir_vertical_100.jpg", 
+	             "Bricklets/bricklet_temperature_ir_vertical_800.jpg", 
+	             "Temperature IR Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_temperature_ir_horizontal_350.jpg", 
+	             "Bricklets/bricklet_temperature_ir_horizontal_100.jpg", 
+	             "Bricklets/bricklet_temperature_ir_horizontal_800.jpg", 
+	             "Temperature IR Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_temperature_ir_master_350.jpg", 
+	             "Bricklets/bricklet_temperature_ir_master_100.jpg", 
+	             "Bricklets/bricklet_temperature_ir_master_800.jpg", 
+	             "Temperature IR Bricklet with Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_temperature_ir_brickv_350.jpg", 
+	             "Bricklets/bricklet_temperature_ir_brickv_100.jpg", 
+	             "Bricklets/bricklet_temperature_ir_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/temperature_ir_bricklet_dimensions_350.png", 
+	             "Dimensions/temperature_ir_bricklet_dimensions_100.png", 
+	             "Dimensions/temperature_ir_bricklet_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
 	{{ tfdocend() }}
 
 
@@ -106,7 +136,7 @@ The default is an emisivity of 0.98 (0.98 * 0xFFFF = 64224).
 
 After this you can go on with writing your own application.
 See :ref:`Interface and Coding <temperatureir_programming_interfaces>` 
-section for the API of the Ambient Light Bricklet and examples in your 
+section for the API of the Temperature IR Bricklet and examples in your 
 programming language.
 
 

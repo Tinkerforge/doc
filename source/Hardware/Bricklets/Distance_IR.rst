@@ -30,13 +30,25 @@ Distance IR
 	    tfdocimg("Bricklets/bricklet_distance_ir_master_350.jpg", 
 	             "Bricklets/bricklet_distance_ir_master_100.jpg", 
 	             "Bricklets/bricklet_distance_ir_master_800.jpg", 
-	             "Distance IR Bricklet") 
+	             "Distance IR Bricklet with Master Brick") 
 	}}
 	{{ 
 	    tfdocimg("Bricklets/bricklet_distance_ir_sensors_350.jpg", 
 	             "Bricklets/bricklet_distance_ir_sensors_100.jpg", 
 	             "Bricklets/bricklet_distance_ir_sensors_800.jpg", 
-	             "Distance IR Bricklet") 
+	             "Distance IR Bricklet sensors") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_distance_ir_brickv_350.jpg", 
+	             "Bricklets/bricklet_distance_ir_brickv_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/dist_ir_bricklet_dimensions_350.png", 
+	             "Dimensions/dist_ir_bricklet_dimensions_100.png", 
+	             "Dimensions/dist_ir_bricklet_dimensions.png", 
+	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}
 

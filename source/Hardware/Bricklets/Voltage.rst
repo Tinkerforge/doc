@@ -7,12 +7,42 @@ Voltage
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_voltage_tilted_350.jpg", 
+	             "Bricklets/bricklet_voltage_tilted_100.jpg", 
+	             "Bricklets/bricklet_voltage_tilted_800.jpg", 
+	             "Voltage Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_voltage_vertical_350.jpg", 
+	             "Bricklets/bricklet_voltage_vertical_100.jpg", 
+	             "Bricklets/bricklet_voltage_vertical_800.jpg", 
+	             "Voltage Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_voltage_horizontal_350.jpg", 
+	             "Bricklets/bricklet_voltage_horizontal_100.jpg", 
+	             "Bricklets/bricklet_voltage_horizontal_800.jpg", 
+	             "Voltage Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_voltage_master_350.jpg", 
+	             "Bricklets/bricklet_voltage_master_100.jpg", 
+	             "Bricklets/bricklet_voltage_master_800.jpg", 
+	             "Voltage Bricklet with Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_voltage_brickv_350.jpg", 
+	             "Bricklets/bricklet_voltage_brickv_100.jpg", 
+	             "Bricklets/bricklet_voltage_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/voltage_bricklet_dimensions_350.png", 
+	             "Dimensions/voltage_bricklet_dimensions_100.png", 
+	             "Dimensions/voltage_bricklet_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
 	{{ tfdocend() }}
 
 

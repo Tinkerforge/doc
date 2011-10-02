@@ -8,12 +8,48 @@ Dual Relay
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_dual_relay_tilted_350.jpg", 
+	             "Bricklets/bricklet_dual_relay_tilted_100.jpg", 
+	             "Bricklets/bricklet_dual_relay_tilted_800.jpg", 
+	             "Dual Relay Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_dual_relay_horizontal_350.jpg", 
+	             "Bricklets/bricklet_dual_relay_horizontal_100.jpg", 
+	             "Bricklets/bricklet_dual_relay_horizontal_800.jpg", 
+	             "Dual Relay Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_dual_relay_vertical_350.jpg", 
+	             "Bricklets/bricklet_dual_relay_vertical_100.jpg", 
+	             "Bricklets/bricklet_dual_relay_vertical_800.jpg", 
+	             "Dual Relay Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_dual_relay_front_350.jpg", 
+	             "Bricklets/bricklet_dual_relay_front_100.jpg", 
+	             "Bricklets/bricklet_dual_relay_front_800.jpg", 
+	             "Dual Relay Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_dual_relay_master_350.jpg", 
+	             "Bricklets/bricklet_dual_relay_master_100.jpg", 
+	             "Bricklets/bricklet_dual_relay_master_800.jpg", 
+	             "Dual Relay Bricklet with Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_dual_relay_brickv_350.jpg", 
+	             "Bricklets/bricklet_dual_relay_brickv_100.jpg", 
+	             "Bricklets/bricklet_dual_relay_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/dual_relay_bricklet_dimensions_350.png", 
+	             "Dimensions/dual_relay_bricklet_dimensions_100.png", 
+	             "Dimensions/dual_relay_bricklet_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
 	{{ tfdocend() }}
 
 Description

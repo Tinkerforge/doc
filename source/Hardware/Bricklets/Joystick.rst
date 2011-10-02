@@ -8,12 +8,48 @@ Joystick
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_joystick_tilted_350.jpg", 
+	             "Bricklets/bricklet_joystick_tilted_100.jpg", 
+	             "Bricklets/bricklet_joystick_tilted_800.jpg", 
+	             "Joystick Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_joystick_front_350.jpg", 
+	             "Bricklets/bricklet_joystick_front_100.jpg", 
+	             "Bricklets/bricklet_joystick_front_800.jpg", 
+	             "Joystick Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_joystick_horizontal_350.jpg", 
+	             "Bricklets/bricklet_joystick_horizontal_100.jpg", 
+	             "Bricklets/bricklet_joystick_horizontal_800.jpg", 
+	             "Joystick Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_joystick_knob_350.jpg", 
+	             "Bricklets/bricklet_joystick_knob_100.jpg", 
+	             "Bricklets/bricklet_joystick_knob_800.jpg", 
+	             "Joystick Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_joystick_master_350.jpg", 
+	             "Bricklets/bricklet_joystick_master_100.jpg", 
+	             "Bricklets/bricklet_joystick_master_800.jpg", 
+	             "Joystick Bricklet with Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_joystick_brickv_350.jpg", 
+	             "Bricklets/bricklet_joystick_brickv_100.jpg", 
+	             "Bricklets/bricklet_joystick_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/joystick_bricklet_dimensions_350.png", 
+	             "Dimensions/joystick_bricklet_dimensions_100.png", 
+	             "Dimensions/joystick_bricklet_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
 	{{ tfdocend() }}
 
 

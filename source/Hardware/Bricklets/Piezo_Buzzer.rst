@@ -8,12 +8,42 @@ Piezo Buzzer
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_piezo_buzzer_tilted_350.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_tilted_100.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_tilted_800.jpg", 
+	             "Piezo Buzzer Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_piezo_buzzer_vertical_350.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_vertical_100.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_vertical_800.jpg", 
+	             "Piezo Buzzer Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_piezo_buzzer_horizontal_350.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_horizontal_100.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_horizontal_800.jpg", 
+	             "Piezo Buzzer Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_piezo_buzzer_master_350.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_master_100.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_master_800.jpg", 
+	             "Piezo Buzzer Bricklet with Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_piezo_buzzer_brickv_350.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_brickv_100.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/piezo_buzzer_bricklet_dimensions_350.png", 
+	             "Dimensions/piezo_buzzer_bricklet_dimensions_100.png", 
+	             "Dimensions/piezo_buzzer_bricklet_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
 	{{ tfdocend() }}
 
 
