@@ -136,8 +136,8 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "Python", ":ref:`API <voltage_bricklet_python_api>`", ":ref:`Examples <voltage_bricklet_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <voltage_bricklet_c_api>`", ":ref:`Examples <voltage_bricklet_c_examples>`", "Installation"
+   "C#", ":ref:`API <voltage_bricklet_csharp_api>`", ":ref:`Examples <voltage_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <voltage_bricklet_java_api>`", ":ref:`Examples <voltage_bricklet_java_examples>`", "Installation"
-   "C", ":ref:`API <voltage_bricklet_c_api>`", ":ref:`Examples <voltage_bricklet_c_examples>`", "Installation"
-   "C++", ":ref:`API <voltage_bricklet_cpp_api>`", ":ref:`Examples <voltage_bricklet_cpp_examples>`", "Installation"
+   "Python", ":ref:`API <voltage_bricklet_python_api>`", ":ref:`Examples <voltage_bricklet_python_examples>`", "Installation"
 
