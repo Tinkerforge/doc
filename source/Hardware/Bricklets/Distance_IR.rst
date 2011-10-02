@@ -8,12 +8,36 @@ Distance IR
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #2") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #3") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #4") }}
-	{{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #5") }}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_distance_ir_tilted_350.jpg", 
+	             "Bricklets/bricklet_distance_ir_tilted_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_tilted_800.jpg", 
+	             "Distance IR Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_distance_ir_front_350.jpg", 
+	             "Bricklets/bricklet_distance_ir_front_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_front_800.jpg", 
+	             "Distance IR Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_distance_ir_back_350.jpg", 
+	             "Bricklets/bricklet_distance_ir_back_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_back_800.jpg", 
+	             "Distance IR Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_distance_ir_master_350.jpg", 
+	             "Bricklets/bricklet_distance_ir_master_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_master_800.jpg", 
+	             "Distance IR Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_distance_ir_sensors_350.jpg", 
+	             "Bricklets/bricklet_distance_ir_sensors_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_sensors_800.jpg", 
+	             "Distance IR Bricklet") 
+	}}
 	{{ tfdocend() }}
 
 
