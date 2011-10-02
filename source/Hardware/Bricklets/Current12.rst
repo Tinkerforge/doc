@@ -29,7 +29,7 @@ Current12
 		tfdocimg("Bricklets/bricklet_current_master_350.jpg", 
 		         "Bricklets/bricklet_current_master_100.jpg", 
 		         "Bricklets/bricklet_current_master_1200.jpg", 
-		         "Current12 Bricklet with connected Master Brick") 
+		         "Current12 Bricklet with Master Brick") 
 	}}
 	{{ 
 	    tfdocimg("Bricklets/bricklet_current12_brickv_350.jpg", 
@@ -100,7 +100,7 @@ Now you can connect your Current12 Bricklet to any
 cable with the Bricklet. If you like you can connect a Motor
 and a Battery to the Bricklet as displayed in the following image.
 
-.. image:: /Images/Bricklets/bricklet_current_master_800.jpg
+.. image:: /Images/Bricklets/bricklet_current_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected Current12 Bricklet, Battery and Motor
    :align: center

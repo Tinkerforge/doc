@@ -28,7 +28,7 @@ Voltage
 	{{ 
 	    tfdocimg("Bricklets/bricklet_voltage_master_350.jpg", 
 	             "Bricklets/bricklet_voltage_master_100.jpg", 
-	             "Bricklets/bricklet_voltage_master_800.jpg", 
+	             "Bricklets/bricklet_voltage_master_1200.jpg", 
 	             "Voltage Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -95,11 +95,11 @@ Additionally connect a voltage source to the Bricklet.
 For testing purposes we have connected a battery
 (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_voltage_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected Voltage Bricklet and Battery
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_voltage_master_1200.jpg
 
 If you connect the Brick to the PC over USB,
 you should see a tab named "Voltage Bricklet" in the Brick Viewer after you
@@ -107,11 +107,11 @@ pressed "connect", select this tab.
 If everything went as expected you can now see the exact voltage in volt
 and a graph that shows the voltage over time. 
 
-.. image:: /Images/Bricklets/voltage_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_voltage_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of the Voltage Bricklet
    :align: center
-   :target: ../../_images/Bricklets/voltage_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_voltage_brickv.jpg
 
 In our test we have connected the battery not from beginning.
 You can see the rising voltage after connecting the battery in the graph.

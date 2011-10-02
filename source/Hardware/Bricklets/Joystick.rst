@@ -35,7 +35,7 @@ Joystick
 	{{ 
 	    tfdocimg("Bricklets/bricklet_joystick_master_350.jpg", 
 	             "Bricklets/bricklet_joystick_master_100.jpg", 
-	             "Bricklets/bricklet_joystick_master_800.jpg", 
+	             "Bricklets/bricklet_joystick_master_1200.jpg", 
 	             "Joystick Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -101,20 +101,20 @@ Bricks/Bricklets). The latter is only for testing purposes.
 Connect your Joystick Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_joystick_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected Joystick Bricklet
    :align: center
-   :target: ../../_images/Bricklets/joystick_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_joystick_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "Joystick Bricklet" in the Brick Viewer after you pressed "connect", select it.
 
-.. image:: /Images/Bricklets/joystick_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_joystick_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of the Joystick Bricklet
    :align: center
-   :target: ../../_images/Bricklets/joystick_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_joystick_brickv.jpg
 
 The tab consits of a coordinate system which
 shows you the current position of the joystick and if the button is pressed.

@@ -29,7 +29,7 @@ Ambient Light
 	{{ 
 	    tfdocimg("Bricklets/bricklet_ambient_light_master_350.jpg", 
 	             "Bricklets/bricklet_ambient_light_master_100.jpg", 
-	             "Bricklets/bricklet_ambient_light_master_800.jpg", 
+	             "Bricklets/bricklet_ambient_light_master_1200.jpg", 
 	             "Ambient Light Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -100,11 +100,11 @@ Now you can connect your Ambient Light Bricklet to any
 :ref:`Brick <product_overview_bricks>`. You should have received a suitable
 cable with the Bricklet. 
 
-.. image:: /Images/Bricklets/ambient_light_with_master_thumb.jpg
+.. image:: /Images/Bricklets/bricklet_ambient_light_master_600.jpg
    :scale: 100 %
    :alt: Ambient Light Bricklet connected to Master Brick
    :align: center
-   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
+   :target: ../../_images/Bricklets/bricklet_ambient_light_master_1200.jpg
 
 If you then connect the Brick to the PC over USB,
 you should see a tab named "Ambient Light Bricklet" in the Brick Viewer after 
@@ -116,11 +116,11 @@ illuminance over time. A good test of the sensor is to darken the room and
 slowly move a flashlight over the sensor, the graph should then look
 approximately like in the screenshot below.
 
-.. image:: /Images/Bricklets/ambient_light_brickv.png
+.. image:: /Images/Bricklets/bricklet_ambient_light_brickv.jpg
    :scale: 100 %
    :alt: Ambient Light Bricklet view in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/ambient_light_brickv.png
+   :target: ../../_images/Bricklets/bricklet_ambient_light_brickv.jpg
 
 As a next step you might pick your favorite of the available programming
 languages (see :ref:`below <ambl_programming_interfaces>`) and understand and 

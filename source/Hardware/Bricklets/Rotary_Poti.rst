@@ -41,7 +41,7 @@ Rotary Poti
 	{{ 
 	    tfdocimg("Bricklets/bricklet_rotary_poti_master_350.jpg", 
 	             "Bricklets/bricklet_rotary_poti_master_100.jpg", 
-	             "Bricklets/bricklet_rotary_poti_master_800.jpg", 
+	             "Bricklets/bricklet_rotary_poti_master_1200.jpg", 
 	             "Rotary Poti Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -107,11 +107,11 @@ Bricks/Bricklets). The latter is only for testing purposes.
 Connect your Rotary Potentiometer Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_rotary_poti_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected Rotary Poti Bricklet
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_rotary_poti_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "Rotary Poti Bricklet" in the Brick Viewer after you pressed "connect", 
@@ -119,11 +119,11 @@ select it.
 If everything went as expected you the Brick Viewer should look like
 depicted below.
 
-.. image:: /Images/Bricklets/rotary_poti_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_rotary_poti_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of Rotary Poti Bricklet
    :align: center
-   :target: ../../_images/Bricklets/rotary_poti_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_rotary_poti_brickv.jpg
 
 Play around by turning the potentiometer.
 You should be able to create a similar graph by turning the potentiometer full left

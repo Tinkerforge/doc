@@ -29,7 +29,7 @@ Distance IR
 	{{ 
 	    tfdocimg("Bricklets/bricklet_distance_ir_master_350.jpg", 
 	             "Bricklets/bricklet_distance_ir_master_100.jpg", 
-	             "Bricklets/bricklet_distance_ir_master_800.jpg", 
+	             "Bricklets/bricklet_distance_ir_master_1200.jpg", 
 	             "Distance IR Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -119,11 +119,11 @@ to an arbitrary :ref:`Brick <product_overview_bricks>`.
 You should have received a suitable cable with the Bricklet.
 
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_distance_ir_master_600.jpg
    :scale: 100 %
    :alt: Distance IR Bricklet with infrared distance sensor connected to Master Brick
    :align: center
-   :target: ../../_images/Bricklets/ambient_light_with_master_big.jpg
+   :target: ../../_images/Bricklets/bricklet_distance_ir_master_1200.jpg
 
 
 If you then connect the Brick to the PC over USB,
@@ -139,11 +139,11 @@ of the sensor and see how the distance will decrease. When you move your
 hand away from the sensor the measured distance should increase.
 A typical graph for this test is depicted in the image below.
 
-.. image:: /Images/Bricklets/distance_ir_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_distance_ir_brickv.jpg
    :scale: 100 %
    :alt: Distance IR Bricklet view in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/distance_ir_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_distance_ir_brickv.jpg
 
 You can now go on with writing your own application.
 See :ref:`Interface and Coding <distir_programming_interfaces>` section for the API of

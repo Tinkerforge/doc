@@ -29,7 +29,7 @@ Temperature IR
 	{{ 
 	    tfdocimg("Bricklets/bricklet_temperature_ir_master_350.jpg", 
 	             "Bricklets/bricklet_temperature_ir_master_100.jpg", 
-	             "Bricklets/bricklet_temperature_ir_master_800.jpg", 
+	             "Bricklets/bricklet_temperature_ir_master_1200.jpg", 
 	             "Temperature IR Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -108,11 +108,11 @@ Bricks/Bricklets). The latter is only for testing purposes.
 Connect your Temperature IR Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_temperature_ir_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected Temperature IR Bricklet
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_temperature_ir_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "Temperature IR Bricklet" in the Brick Viewer after you pressed "connect", 
@@ -120,11 +120,11 @@ select it.
 If everything went as expected you the Brick Viewer should look like
 depicted below.
 
-.. image:: /Images/Bricklets/temperature_ir_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_temperature_ir_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of Temperature IR Bricklet
    :align: center
-   :target: ../../_images/Bricklets/temperature_ir_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_temperature_ir_brickv.jpg
 
 Point the Bricklet in different
 directions. The Brick Viewer will show you the ambient temperature (the 

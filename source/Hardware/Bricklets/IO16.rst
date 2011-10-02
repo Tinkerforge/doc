@@ -35,7 +35,7 @@ IO16
 	{{ 
 	    tfdocimg("Bricklets/bricklet_io16_master_350.jpg", 
 	             "Bricklets/bricklet_io16_master_100.jpg", 
-	             "Bricklets/bricklet_io16_master_800.jpg", 
+	             "Bricklets/bricklet_io16_master_1200.jpg", 
 	             "IO-16 Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -113,20 +113,20 @@ by attaching the anode to port A pin 0 and the cathode to one GND pin.
 Additonally connect a button which can short port B pin 0 to GND
 (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_io16_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected IO16 Bricklet
    :align: center
-   :target: ../../_images/Bricklets/io16_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_io16_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "IO16 Bricklet" in the Brick Viewer after you pressed “connect”, select it.
 
-.. image:: /Images/Bricklets/io16_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_io16_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of the IO16 Bricklet
    :align: center
-   :target: ../../_images/Bricklets/io16_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_io16_brickv.jpg
 
 
 In this tab you can change the "Debounce Period",

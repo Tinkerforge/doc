@@ -29,7 +29,7 @@ Humidity
 	{{ 
 	    tfdocimg("Bricklets/bricklet_humidity_master_350.jpg", 
 	             "Bricklets/bricklet_humidity_master_100.jpg", 
-	             "Bricklets/bricklet_humidity_master_800.jpg", 
+	             "Bricklets/bricklet_humidity_master_1200.jpg", 
 	             "Humidity Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -101,11 +101,11 @@ Bricks/Bricklets). The latter is only for testing purposes.
 Connect your Humidity Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
-.. image:: /Images/Bricklets/humidity_with_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_humidity_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected Humidity Bricklet
    :align: center
-   :target: ../../_images/Bricklets/humidity_with_master_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_humidity_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "Humidity Bricklet" in the Brick Viewer after you pressed “connect”.
@@ -113,11 +113,11 @@ Select it.
 If everything went as expected you can now see the measured relative humidity
 and a graph that shows the humidity over time.
 
-.. image:: /Images/Bricklets/humidity_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_humidity_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of Humidity Bricklet
    :align: center
-   :target: ../../_images/Bricklets/humidity_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_humidity_brickv.jpg
 
 To test the sensor breath over the sensor and see the relative humidity rising.
 It will fall again when you stop breathing over the sensor.

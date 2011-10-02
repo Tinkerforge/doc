@@ -35,7 +35,7 @@ Dual Relay
 	{{ 
 	    tfdocimg("Bricklets/bricklet_dual_relay_master_350.jpg", 
 	             "Bricklets/bricklet_dual_relay_master_100.jpg", 
-	             "Bricklets/bricklet_dual_relay_master_800.jpg", 
+	             "Bricklets/bricklet_dual_relay_master_1200.jpg", 
 	             "Dual Relay Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -112,11 +112,11 @@ Bricks/Bricklets). The latter is only for testing purposes.
 Connect your Dual Relay Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_dual_relay_master_600.jpg
    :scale: 100 %
-   :alt: Dual Relais Bricklet with connected Master Brick
+   :alt: Dual Relay Bricklet with connected Master Brick
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_dual_relay_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "Dual Relay Bricklet" in the Brick Viewer after you pressed "connect", 
@@ -124,11 +124,11 @@ select it.
 If everything went as expected you the Brick Viewer should look like
 depicted below.
 
-.. image:: /Images/Bricklets/dual_relay_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_dual_relay_brickv.jpg
    :scale: 100 %
-   :alt: Brickv view of Dual Relais
+   :alt: Brickv view of Dual Relay
    :align: center
-   :target: ../../_images/Bricklets/dual_relay_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_dual_relay_brickv.jpg
 
 Play around with the two relay buttons,
 you should hear the relay switching when toggeling the buttons.

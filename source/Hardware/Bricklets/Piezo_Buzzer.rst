@@ -29,7 +29,7 @@ Piezo Buzzer
 	{{ 
 	    tfdocimg("Bricklets/bricklet_piezo_buzzer_master_350.jpg", 
 	             "Bricklets/bricklet_piezo_buzzer_master_100.jpg", 
-	             "Bricklets/bricklet_piezo_buzzer_master_800.jpg", 
+	             "Bricklets/bricklet_piezo_buzzer_master_1200.jpg", 
 	             "Piezo Buzzer Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -99,11 +99,11 @@ Bricks/Bricklets). The latter is only for testing purposes.
 For a simple test connect your Piezo Buzzer Bricklet to an arbitrary 
 :ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_piezo_buzzer_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected Piezo Buzzer Bricklet
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_piezo_buzzer_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "Piezo Buzzer Bricklet" in the Brick Viewer after you pressed "connect", 
@@ -111,11 +111,11 @@ select it.
 If everything went as expected you the Brick Viewer should look like
 depicted below.
 
-.. image:: /Images/Bricklets/piezo_buzzer_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_piezo_buzzer_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of the Piezo Buzzer Bricklet
    :align: center
-   :target: ../../_images/Bricklets/piezo_buzzer_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_piezo_buzzer_brickv.jpg
 
 Enter a morse code you want to morse. You can enter
 also the duration of every tone. Play around. 

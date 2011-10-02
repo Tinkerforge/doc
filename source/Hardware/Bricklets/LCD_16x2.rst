@@ -29,7 +29,7 @@ LCD 16x2
 	{{ 
 	    tfdocimg("Bricklets/bricklet_lcd_16x2_master_350.jpg", 
 	             "Bricklets/bricklet_lcd_16x2_master_100.jpg", 
-	             "Bricklets/bricklet_lcd_16x2_master_800.jpg", 
+	             "Bricklets/bricklet_lcd_16x2_master_1200.jpg", 
 	             "LCD 16x2 Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -114,22 +114,22 @@ Connect your LCD 16x2 Bricklet to an arbitrary
 :ref:`Brick <product_overview_bricks>` over the supplied cable 
 (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_lcd_16x2_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected LCD 16x2 Bricklet
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_lcd_16x2_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "LCD 16x2 Bricklet" in the Brick Viewer after you pressed "connect", select it.
 If everything went as expected you the Brick Viewer should look like
 depicted below.
 
-.. image:: /Images/Bricklets/lcd_16x2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_lcd_16x2_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of the LCD 16x2 Bricklet
    :align: center
-   :target: ../../_images/Bricklets/lcd_16x2_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_lcd_16x2_brickv.jpg
 
 Input an string to the text field.
 You can choose the line and the start position at which the text is displayed.

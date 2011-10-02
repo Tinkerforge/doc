@@ -29,7 +29,7 @@ IO4
 	{{ 
 	    tfdocimg("Bricklets/bricklet_io4_master_350.jpg", 
 	             "Bricklets/bricklet_io4_master_100.jpg", 
-	             "Bricklets/bricklet_io4_master_800.jpg", 
+	             "Bricklets/bricklet_io4_master_1200.jpg", 
 	             "IO-4 Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -107,20 +107,20 @@ by attaching the anode to pin 0 and the cathode to one GND pin.
 Additonally connect a button which can short pin 1 to GND
 (see picture below).
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected IO4 Bricklet
    :align: center
-   :target: ../../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
 "IO4 Bricklet" in the Brick Viewer after you pressed “connect”, select it.
 
-.. image:: /Images/Bricklets/io4_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_io4_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of the IO4 Bricklet
    :align: center
-   :target: ../../_images/Bricklets/io4_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_io4_brickv.jpg
 
 
 in this tab you can change the "Debounce Period", 
