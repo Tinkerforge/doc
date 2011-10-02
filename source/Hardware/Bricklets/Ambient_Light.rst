@@ -39,10 +39,10 @@ Ambient Light
 	             "Brick Viewer screenshot") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_ambient_bricklet_dimensions_350.png", 
-	             "Bricklets/bricklet_ambient_bricklet_dimensions_100.png", 
-	             "Bricklets/bricklet_ambient_bricklet_dimensions.png", 
-	             "Brick Viewer screenshot") 
+	    tfdocimg("Dimensions/ambient_light_bricklet_dimensions_350.png", 
+	             "Dimensions/ambient_light_bricklet_dimensions_100.png", 
+	             "Dimensions/ambient_light_bricklet_dimensions.png", 
+	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}
 
@@ -79,7 +79,7 @@ Resources
 
 * TEMT6000 datasheet (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/raw/master/datasheets/TEMT6000.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/raw/master/hardware/ambient-light-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/ambient-light_dimensions.png>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/ambient_light_bricklet_dimensions.png>`__)
 * Project (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/zipball/master>`__)
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__ 
 
