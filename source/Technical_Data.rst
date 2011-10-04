@@ -1,9 +1,20 @@
 Technical Data
 ==============
 
+In the following you can find a brief description of all connectors.
+If you need more information you can take a look in the schematics or in the 
+kicad development files of each product.
+
+
+
 
 Stack Connectors
 ----------------
+
+Each :ref:`Brick <product_overview_bricks>` has two connector types:
+
+ * **Stack Data Connector:** Used for data exchange between Bricks.
+ * **Stack Power Connector:** Powers the Bricks and attached Bricklets, motors, servos etc.
 
 .. _connector_stack_data:
 
