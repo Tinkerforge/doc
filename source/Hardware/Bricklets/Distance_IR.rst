@@ -109,7 +109,8 @@ Test your Distance IR Bricklet
 
 To test your Distance IR Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+(For an installation guide click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
 language API bindings (you need this in any case if you want to use the
 Bricks/Bricklets). The latter is only for testing purposes.
@@ -168,8 +169,7 @@ Store Voltage/Distance Mapping
 
 To write the voltage/distance mapping you have to connect the Bricklet
 with an Brick to your PC. Start the :ref:`Brick Daemon <brickd>` and the 
-:ref:`Brick Viewer <brickv>` 
-(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+:ref:`Brick Viewer <brickv>`.
 
 Press "connect" in the Brick Viewer and you should see the Distance IR tab.
 Click on it.

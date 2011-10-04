@@ -12,6 +12,8 @@ Additionally brickv can be used to calibrate the analog to digital converter
 (see :ref:`here <brickv_adc_calibration>`)
 and to flash bricklet plugins (see :ref:`here <brickv_flash_plugin>`).
 
+.. _brickv_installation:
+
 Installation
 ------------
 

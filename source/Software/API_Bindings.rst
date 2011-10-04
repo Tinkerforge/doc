@@ -8,9 +8,6 @@ API bindings establish a TCP connection to the
 is send over the Brick Deamon to the Brick. Incoming TCP packages
 are routed back to the calling method.
 
-In :ref:`tools_installation` you get a description how the bindings 
-for each programming language are used.
-
 See also our :ref:`tutorial` for more information how everything works 
 together.
 
@@ -29,6 +26,29 @@ It is used by the bindings and implemented for each programming language:
 * :ref:`C# <ipcon_brick_csharp>`
 * :ref:`Java <ipcon_brick_java>`
 
+Using the Bindings
+------------------
+
+C/C++
+^^^^^
+
+MinGW (Windows)
+"""""""""""""""
+
+Visual Studio (Windows)
+"""""""""""""""""""""""
+
+GCC/G++ (Linux/ MacOS)
+""""""""""""""""""""""
+
+C#
+^^
+
+Java
+^^^^
+
+Python
+^^^^^^
 
 
 

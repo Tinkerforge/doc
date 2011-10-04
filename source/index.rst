@@ -10,7 +10,7 @@ Tinkerforge Documentation
 .. toctree::
    :maxdepth: 2
 
-   Getting_Started
+   Tutorials/Tutorial
    Product_Overview
    Software
    Downloads

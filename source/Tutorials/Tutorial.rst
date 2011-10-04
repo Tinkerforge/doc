@@ -30,7 +30,8 @@ Phase 1: Testing
 
 Before the DC Brick can be used, the :ref:`brickd` and the :ref:`brickv` 
 have to be installed, installation instructions can be found 
-:ref:`here <tools_installation_brickdv>`. The Brick Deamon is a bridge 
+:ref:`here <brickv_installation>` and :ref:`here <brickd_installation>`. 
+The Brick Deamon is a bridge 
 between the Bricks/Bricklets and the programming language API bindings. 
 The Brick Viewer is a GUI for testing purposes.
 

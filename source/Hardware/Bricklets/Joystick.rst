@@ -93,7 +93,8 @@ Test your Joystick Bricklet
 
 To test your Joystick Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
+(For an installation guide click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
 language API bindings (you need this in any case if you want to use the
 Bricks/Bricklets). The latter is only for testing purposes.
