@@ -1,7 +1,10 @@
-.. _report_bugs:
+.. _source_code:
+
+Source Code
+===========
 
 Report Bugs
-===========
+-----------
 
 If you have found a bug in our software or hardware please report it.
 All projects are hosted on `github <https://github.com/Tinkerforge>`__.
