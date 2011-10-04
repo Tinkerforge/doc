@@ -84,6 +84,9 @@ Resources
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
 
 
+
+.. _stepper_brick_connectivity:
+
 Connectivity
 ------------
 
@@ -170,7 +173,7 @@ Powersupply
 ^^^^^^^^^^^
 
 The connected stepper can be powered through the onboard power-connector
-or through a :ref:`Power-Supply Board <product_overview_powersupply>` in a stack.
+or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a stack.
 The Brick switches autonomously to the onboard power-connector when
 a voltage is there measured.
 
