@@ -172,13 +172,7 @@ with an Brick to your PC. Start the :ref:`Brick Daemon <brickd>` and the
 (see :ref:`here <tools_installation_brickdv>` for an installation tutorial).
 
 Press "connect" in the Brick Viewer and you should see the Distance IR tab.
-Click on it. You should now see something like depicted below.
-
-.. image:: /Images/Bricklets/distance_ir_brickv_sp.jpg
-   :scale: 100 %
-   :alt: Distance IR Bricklet Brickv view to configure a sensor
-   :align: center
-   :target: ../../_images/Bricklets/distance_ir_brickv_sp.jpg
+Click on it.
 
 Press the "File.." Button and choose an voltage/distance mapping file.
 After this press "Save" Button to write this data on to the Bricklet,

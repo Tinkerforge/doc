@@ -30,6 +30,7 @@ Logic Voltage                     3.0V - 5.0V
 Dimensions (WxLxH)                40mm x 40mm x 8mm (1.57" x 1.57" x 0.31")*
 Weight
 ================================  ============================================================
+
 * without optional connectors
 
 Resources
