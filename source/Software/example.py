@@ -4,7 +4,7 @@
 HOST = "localhost"
 PORT = 4223
 
-from ip_connection import IPConnection
+from tinkerforge.ip_connection import IPConnection
 
 def cb_enumerate(uid, name, stack_id, is_new):
     if is_new:

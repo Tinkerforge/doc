@@ -1,7 +1,3 @@
-// tested with 
-// gcc -lpthread -lrt -o example ip_connection.c example.c
-// on Ubuntu
-
 #include <stdio.h>
 
 #include "ip_connection.h"
