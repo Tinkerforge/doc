@@ -1,91 +1,97 @@
 .. _source_code:
 
-Source Code
-===========
+Source Code and Bug Tracking
+============================
 
-Report Bugs
------------
+Every product that is released by Tinkerforge is Open Source. The firmware 
+source as well as the hardware design files for all Bricks and Bricklets are
+available. Additionally the source code for all tools, such as the Brick
+Daemon, the Brick Viewer and the generators for the language bindings is
+available.
 
-If you have found a bug in our software or hardware please report it.
-All projects are hosted on `github <https://github.com/Tinkerforge>`__.
+This means you can use all of the Tinkerforge hardware and software as a
+starting point for your own project, extend or modify it. Furthermore
+you can help us in the development effort and most importantly report bugs.
 
-Below you can find the links to the "issues" section for each project:
+To make it easy for the community to commit patches and report bugs, all
+of the `Tinkerforge projects <https://github.com/Tinkerforge>`__ are hosted
+on Github.
 
+If you don't now git, you can find information `here <http://git-scm.com/>`__.
+You can clone projects with:
+ 
+	$ git clone git://github.com/Tinkerforge/PROJECT.git
 
-Software
---------
+Below is a list of the Tinkerforge project repositories and corresponding 
+bug tracker.
 
-* `Brick Deamon <https://github.com/Tinkerforge/brickd/issues>`__
-   
-* `Brick Viewer <https://github.com/Tinkerforge/brickv/issues>`__
+.. csv-table::
+ :header: "", "Repository", "Bug Tracking"
+ :delim: |
+ :widths: 10, 30, 10
 
-* `Brick Bootloader <https://github.com/Tinkerforge/brickboot/issues>`__
-* `Bricklet Library <https://github.com/Tinkerforge/brickletlib/issues>`__
-* `Brick Library <https://github.com/Tinkerforge/bricklib/issues>`__
+ **Tools**: | | 
+ Brick Daemon | `git://github.com/Tinkerforge/brickd.git <https://github.com/Tinkerforge/brickd/>`__ | `Report Bug <https://github.com/Tinkerforge/brickd/issues>`__ 
+ Brick Viewer | `git://github.com/Tinkerforge/brickv.git <https://github.com/Tinkerforge/brickv/>`__ | `Report Bug <https://github.com/Tinkerforge/brickv/issues>`__
+ Brick Bootloader | `git://github.com/Tinkerforge/brickboot.git <https://github.com/Tinkerforge/brickboot/>`__ | `Report Bug <https://github.com/Tinkerforge/brickboot/issues>`__
+ Brick Library | `git://github.com/Tinkerforge/bricklib.git <https://github.com/Tinkerforge/bricklib/>`__ | `Report Bug <https://github.com/Tinkerforge/bricklib/issues>`__
+ Bricklet Library | `git://github.com/Tinkerforge/brickletlib.git <https://github.com/Tinkerforge/brickletlib/>`__ | `Report Bug <https://github.com/Tinkerforge/brickletlib/issues>`__
+ API Generator | `git://github.com/Tinkerforge/generators.git <https://github.com/Tinkerforge/generators/>`__ | `Report Bug <https://github.com/Tinkerforge/generators/issues>`__
+ Kicad Libraries | `git://github.com/Tinkerforge/kicad-libraries.git <https://github.com/Tinkerforge/kicad-libraries/>`__ | `Report Bug <https://github.com/Tinkerforge/kicad-libraries/issues>`__
+ | | 
+ **Bricks**: | | 
+ DC | `git://github.com/Tinkerforge/dc-brick.git <https://github.com/Tinkerforge/dc-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/dc-brick/issues>`__
+ IMU | `git://github.com/Tinkerforge/imu-brick.git <https://github.com/Tinkerforge/imu-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/imu-brick/issues>`__
+ Master | `git://github.com/Tinkerforge/master-brick.git <https://github.com/Tinkerforge/master-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/master-brick/issues>`__
+ Servo | `git://github.com/Tinkerforge/servo-brick.git <https://github.com/Tinkerforge/servo-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/servo-brick/issues>`__
+ Stepper | `git://github.com/Tinkerforge/stepper-brick.git <https://github.com/Tinkerforge/stepper-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/stepper-brick/issues>`__ 
+ | | 
+ **Bricklets**: | | 
+ Ambient Light | `git://github.com/Tinkerforge/ambient-light-bricklet.git <https://github.com/Tinkerforge/ambient-light-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/ambient-light-bricklet/issues>`__
+ Current12 | `git://github.com/Tinkerforge/current12-bricklet.git <https://github.com/Tinkerforge/current12-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/current12-bricklet/issues>`__
+ Current25 | `git://github.com/Tinkerforge/current25-bricklet.git <https://github.com/Tinkerforge/current25-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/current25-bricklet/issues>`__
+ Distance IR | `git://github.com/Tinkerforge/distance-ir-bricklet.git <https://github.com/Tinkerforge/distance-ir-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/distance-ir-bricklet/issues>`__
+ Dual Relay | `git://github.com/Tinkerforge/dual-relay-bricklet.git <https://github.com/Tinkerforge/dual-relay-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/dual-relay-bricklet/issues>`__
+ Humidity | `git://github.com/Tinkerforge/humidity-bricklet.git <https://github.com/Tinkerforge/humidity-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/humidity-bricklet/issues>`__
+ IO 16 | `git://github.com/Tinkerforge/io16-bricklet.git <https://github.com/Tinkerforge/io16-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/io16-bricklet/issues>`__
+ IO 4 | `git://github.com/Tinkerforge/io4-bricklet.git <https://github.com/Tinkerforge/io4-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/io4-bricklet/issues>`__
+ Joystick | `git://github.com/Tinkerforge/joystick-bricklet.git <https://github.com/Tinkerforge/joystick-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/joystick-bricklet/issues>`__
+ LCD 16x2 | `git://github.com/Tinkerforge/lcd-16x2-bricklet.git <https://github.com/Tinkerforge/lcd-16x2-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/lcd-16x2-bricklet/issues>`__
+ LCD 20x4 | `git://github.com/Tinkerforge/lcd-20x4-bricklet.git <https://github.com/Tinkerforge/lcd-20x4-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/lcd-20x4-bricklet/issues>`__
+ Linear Poti | `git://github.com/Tinkerforge/linear-poti-bricklet.git <https://github.com/Tinkerforge/linear-poti-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/linear-poti-bricklet/issues>`__
+ Piezo Buzzer | `git://github.com/Tinkerforge/piezo-buzzer-bricklet.git <https://github.com/Tinkerforge/piezo-buzzer-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/piezo-buzzer-bricklet/issues>`__
+ Rotary Poti | `git://github.com/Tinkerforge/rotary-poti-bricklet.git <https://github.com/Tinkerforge/rotary-poti-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/rotary-poti-bricklet/issues>`__
+ Temperature | `git://github.com/Tinkerforge/temperature-bricklet.git <https://github.com/Tinkerforge/temperature-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/temperature-bricklet/issues>`__
+ Temperature IR | `git://github.com/Tinkerforge/temperature-ir-bricklet.git <https://github.com/Tinkerforge/temperature-ir-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/temperature-ir-bricklet/issues>`__
+ Voltage | `git://github.com/Tinkerforge/voltage-bricklet.git <https://github.com/Tinkerforge/voltage-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/voltage-bricklet/issues>`__
+ | | 
+ **Other Boards**: | | 
+ Step Down Powersupply | `git://github.com/Tinkerforge/step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Report Bug <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
+ DC Adapter | `git://github.com/Tinkerforge/dc-adapter.git <https://github.com/Tinkerforge/dc-adapter/>`__ | `Report Bug <https://github.com/Tinkerforge/dc-adapter/issues>`__
+ Breakout Brick | `git://github.com/Tinkerforge/breakout-brick.git <https://github.com/Tinkerforge/breakout-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/breakout-brick/issues>`__
+ Breakout Bricklet | `git://github.com/Tinkerforge/breakout-bricklet.git <https://github.com/Tinkerforge/breakout-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/breakout-bricklet/issues>`__
 
-* `API <https://github.com/Tinkerforge/generators/issues>`__ 
-   The API is generated for each language from a config (\*.conf) file.
+Where and How do I report Bugs?
+-------------------------------
+If you found a bug in one of the Tinkerforge projects, we would love if you
+could report it! First of all, you have to identify the correct repository for
+your problem:
 
+Bugs that are specific to a Brick/Bricklet (e.g. a specific parameter of a 
+function in a Brick/Bricklet does not work or there is a hardware bug on a 
+Brick/Bricklet) and bugs in the Brick Daemon and Brick Viewer can be reported 
+to the obviously belonging repository.
 
-* `Kicad Libraries <https://github.com/Tinkerforge/kicad-libraries/issues>`__
+However, if the bug is in every Brick (For example: Stack communication is
+erroneous or a bug in the USB communication) report to the Brick Library 
+repository. If it is in every Bricklet (For example: The timing of recurring
+events is wrong) report to the Bricklet Library repository. If it is in the API 
+or the API Documentation (For example: Typo in the API of a Brick/Bricklet or 
+wrong statement in the documentation of a Brick/Bricklet) report to the API 
+Generator repository.
 
-
-Bricks
-------
-
-* `DC Brick <https://github.com/Tinkerforge/dc-brick/issues>`__
-* `Debug Brick <https://github.com/Tinkerforge/debug-brick/issues>`__
-* `IMU Brick <https://github.com/Tinkerforge/imu-brick/issues>`__
-* `Master Brick <https://github.com/Tinkerforge/master-brick/issues>`__
-* `Servo Brick <https://github.com/Tinkerforge/servo-brick/issues>`__
-* `Stepper Brick <https://github.com/Tinkerforge/stepper-brick/issues>`__
-
-Master Extensions
------------------
-
-* `Chibi Extension <https://github.com/Tinkerforge/chibi-extension/issues>`__
-* `LCD Extension <https://github.com/Tinkerforge/lcd-extension/issues>`__
-* `RS485 Extension <https://github.com/Tinkerforge/rs485-extension/issues>`__
-
-Bricklets
----------
-
-* `Ambient Light Bricklet <https://github.com/Tinkerforge/ambient-light-bricklet/issues>`__
-* `Current12 Bricklet <https://github.com/Tinkerforge/current12-bricklet/issues>`__
-* `Current25 Bricklet <https://github.com/Tinkerforge/current25-bricklet/issues>`__
-* `Distance IR Bricklet <https://github.com/Tinkerforge/distance-ir-bricklet/issues>`__
-* `Dual Relay Bricklet <https://github.com/Tinkerforge/dual-relay-bricklet/issues>`__
-* `Humidity Bricklet <https://github.com/Tinkerforge/humidity-bricklet/issues>`__
-* `Incremental Encoder Bricklet <https://github.com/Tinkerforge/incremental-encoder-bricklet/issues>`__
-* `IO 4 Bricklet <https://github.com/Tinkerforge/io4-bricklet/issues>`__
-* `IO 16 Bricklet <https://github.com/Tinkerforge/io16-bricklet/issues>`__
-* `Joystick Bricklet <https://github.com/Tinkerforge/joystick-bricklet/issues>`__
-* `LCD 16x2 Bricklet <https://github.com/Tinkerforge/lcd-16x2-bricklet/issues>`__
-* `LCD 20x4 Bricklet <https://github.com/Tinkerforge/lcd-20x4-bricklet/issues>`__
-* `Linear Poti Bricklet <https://github.com/Tinkerforge/linear-poti-bricklet/issues>`__
-* `Line Bricklet <https://github.com/Tinkerforge/line-bricklet/issues>`__
-* `Piezo Buzzer Bricklet <https://github.com/Tinkerforge/piezo-buzzer-bricklet/issues>`__
-* `Rotary Poti Bricklet <https://github.com/Tinkerforge/rotary-poti-bricklet/issues>`__
-* `Temperature Bricklet <https://github.com/Tinkerforge/temperature-bricklet/issues>`__
-* `Temperature IR Bricklet <https://github.com/Tinkerforge/temperature-ir-bricklet/issues>`__
-* `Voltage Bricklet <https://github.com/Tinkerforge/voltage-bricklet/issues>`__
-
-Powersupply
------------
-
-* `Step Down Powersupply <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
-
-Tinkershield
-------------
-
-* `Tinkershield <https://github.com/Tinkerforge/tinkershield/issues>`__
-
-
-Tools
------
-
-* `Breakout Brick <https://github.com/Tinkerforge/breakout-brick/issues>`__
-* `Breakout Bricklet <https://github.com/Tinkerforge/breakout-bricklet/issues>`__
-* `DC Adapter <https://github.com/Tinkerforge/dc-adapter/issues>`__
-
-
+For us it is important that we can reproduce the bug you found. You should
+try to write anything in the bug report that is needed to reproduce your
+scenario. This includes code snippets that crash something, the setup
+of your hardware project or instructions how you connected Bricks and
+Bricklets.
