@@ -320,6 +320,7 @@ table.docutils {
     width: 700px;
 		margin-left: auto; /*center table */
 		margin-right:auto;
+		margin-bottom: 10px;
 }
 
 table.docutils.field-list {
