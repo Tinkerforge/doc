@@ -38,6 +38,7 @@ code modifications. What you have to do:
 
     e.g.: cd build/; make
 
+.. _flash_firmware_on_brick:
 
 Flash firmware on a Brick
 -------------------------
