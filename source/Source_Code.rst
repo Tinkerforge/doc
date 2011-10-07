@@ -18,7 +18,7 @@ of the `Tinkerforge projects <https://github.com/Tinkerforge>`__ are hosted
 on Github.
 
 If you don't know git, you can find information `here <http://git-scm.com/>`__.
-Our projects can be cloned with:
+Our projects can be cloned with::
  
 	$ git clone git://github.com/Tinkerforge/PROJECT.git
 
