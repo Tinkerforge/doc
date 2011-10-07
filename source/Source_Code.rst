@@ -17,8 +17,8 @@ To make it easy for the community to commit patches and report bugs, all
 of the `Tinkerforge projects <https://github.com/Tinkerforge>`__ are hosted
 on Github.
 
-If you don't now git, you can find information `here <http://git-scm.com/>`__.
-You can clone projects with:
+If you don't know git, you can find information `here <http://git-scm.com/>`__.
+Our projects can be cloned with:
  
 	$ git clone git://github.com/Tinkerforge/PROJECT.git
 
