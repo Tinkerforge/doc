@@ -5,11 +5,51 @@ Master Brick
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocend() }}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ 
+	    tfdocimg("Bricks/brick_master_tilted_front_350.jpg", 
+	             "Bricks/brick_master_tilted_front_100.jpg", 
+	             "Bricks/brick_master_tilted_front_800.jpg", 
+	             "Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_master_tilted_back_350.jpg", 
+	             "Bricks/brick_master_tilted_back_100.jpg", 
+	             "Bricks/brick_master_tilted_back_800.jpg", 
+	             "Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_master_stack_front_big_350.jpg", 
+	             "Bricks/brick_master_stack_front_big_100.jpg", 
+	             "Bricks/brick_master_stack_front_big_1200.jpg", 
+	             "Master Brick in Stack") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_master_stack_back_big_350.jpg", 
+	             "Bricks/brick_master_stack_back_big_100.jpg", 
+	             "Bricks/brick_master_stack_back_big_1200.jpg", 
+	             "Master Brick in Stack") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_master_top_350.jpg", 
+	             "Bricks/brick_master_top_100.jpg", 
+	             "Bricks/brick_master_top_800.jpg", 
+	             "Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_master_bottom_350.jpg", 
+	             "Bricks/brick_master_bottom_100.jpg", 
+	             "Bricks/brick_master_bottom_800.jpg", 
+	             "Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/dc_brick_dimensions_350.png", 
+	             "Dimensions/dc_brick_dimensions_100.png", 
+	             "Dimensions/dc_brick_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
+	{{ tfdocend() }}
 
 
 Description

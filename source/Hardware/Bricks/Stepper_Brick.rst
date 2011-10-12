@@ -5,11 +5,46 @@ Stepper Brick
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocend() }}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ 
+	    tfdocimg("Bricks/brick_stepper_tilted_front_350.jpg", 
+	             "Bricks/brick_stepper_tilted_front_100.jpg", 
+	             "Bricks/brick_stepper_tilted_front_800.jpg", 
+	             "Stepper Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_stepper_tilted_back_350.jpg", 
+	             "Bricks/brick_stepper_tilted_back_100.jpg", 
+	             "Bricks/brick_stepper_tilted_back_800.jpg", 
+	             "Stepper Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_stepper_motor_setup_350.jpg", 
+	             "Bricks/brick_stepper_motor_setup_100.jpg", 
+	             "Bricks/brick_stepper_motor_setup_1200.jpg", 
+	             "Stepper Brick with Motor") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_stepper_top_350.jpg", 
+	             "Bricks/brick_stepper_top_100.jpg", 
+	             "Bricks/brick_stepper_top_800.jpg", 
+	             "Stepper Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_stepper_bottom_350.jpg", 
+	             "Bricks/brick_stepper_bottom_100.jpg", 
+	             "Bricks/brick_stepper_bottom_800.jpg", 
+	             "Stepper Brick") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/dc_brick_dimensions_350.png", 
+	             "Dimensions/dc_brick_dimensions_100.png", 
+	             "Dimensions/dc_brick_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
+	{{ tfdocend() }}
+
 
 
 Description
@@ -119,11 +154,11 @@ Connect a Stepper Motor to the Brick and a appropiate power supply
 (see :ref:`here <stepper_brick_connectivity>`). Your assembly should look
 like below.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricks/brick_stepper_motor_setup_600.jpg
    :scale: 100 %
-   :alt: Stepper Brick with connected Stepper and Battery
+   :alt: Stepper Brick with connected Motor 
    :align: center
-   :target: ../../_images/Bricklets/io16_brickv.jpg
+   :target: ../../_images/Bricks/brick_stepper_motor_setup_1200.jpg
 
 Now connect the Brick to the PC over USB, you should see a tab named
 "Stepper Brick" in the Brick Viewer after you pressed "connect", select it.

@@ -5,11 +5,52 @@ Servo Brick
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocend() }}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ 
+	    tfdocimg("Bricks/brick_servo_tilted_front_350.jpg", 
+	             "Bricks/brick_servo_tilted_front_100.jpg", 
+	             "Bricks/brick_servo_tilted_front_800.jpg", 
+	             "Servo Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_servo_tilted_back_350.jpg", 
+	             "Bricks/brick_servo_tilted_back_100.jpg", 
+	             "Bricks/brick_servo_tilted_back_800.jpg", 
+	             "Servo Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_servo_setup_350.jpg", 
+	             "Bricks/brick_servo_setup_100.jpg", 
+	             "Bricks/brick_servo_setup_1200.jpg", 
+	             "Servo Brick with Servo") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_servo_setup_big_350.jpg", 
+	             "Bricks/brick_servo_setup_big_100.jpg", 
+	             "Bricks/brick_servo_setup_big_1200.jpg", 
+	             "Servo Brick with Servos") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_servo_top_350.jpg", 
+	             "Bricks/brick_servo_top_100.jpg", 
+	             "Bricks/brick_servo_top_800.jpg", 
+	             "Servo Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_servo_bottom_350.jpg", 
+	             "Bricks/brick_servo_bottom_100.jpg", 
+	             "Bricks/brick_servo_bottom_800.jpg", 
+	             "Servo Brick") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/dc_brick_dimensions_350.png", 
+	             "Dimensions/dc_brick_dimensions_100.png", 
+	             "Dimensions/dc_brick_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
+	{{ tfdocend() }}
+
 
 
 Description
@@ -119,11 +160,11 @@ Connect a RC Servo to port 0 of the Brick and a appropiate power supply
 (see :ref:`here <servo_brick_connectivity>`). Your assembly should look
 like below.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricks/brick_servo_setup_600.jpg
    :scale: 100 %
-   :alt: Servo Brick with connected Servo and Battery
+   :alt: Servo Brick with connected Servo
    :align: center
-   :target: ../../_images/Bricklets/io16_brickv.jpg
+   :target: ../../_images/Bricks/brick_servo_setup_1200.jpg
 
 Now connect the Brick to the PC over USB, you should see a tab named
 "Servo Brick" in the Brick Viewer after you pressed "connect", select it.

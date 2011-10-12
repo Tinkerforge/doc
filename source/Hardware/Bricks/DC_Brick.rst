@@ -22,8 +22,8 @@ DC Brick
 	{{ 
 	    tfdocimg("Bricks/brick_dc_motor_setup_350.jpg", 
 	             "Bricks/brick_dc_motor_setup_100.jpg", 
-	             "Bricks/brick_dc_motor_setup_800.jpg", 
-	             "DC Brick with DC Motor") 
+	             "Bricks/brick_dc_motor_setup_1200.jpg", 
+	             "DC Brick with Motor") 
 	}}
 	{{ 
 	    tfdocimg("Bricks/brick_dc_top_350.jpg", 
@@ -149,11 +149,11 @@ Connect an DC brushed Motor to the Brick and a appropiate power supply
 (see :ref:`here <dc_brick_connectivity>`). Your assembly should look
 like below.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Bricks/brick_dc_motor_setup_600.jpg
    :scale: 100 %
-   :alt: DC Brick with connected Motor and Battery
+   :alt: DC Brick with connected Motor 
    :align: center
-   :target: ../../_images/Bricklets/io16_brickv.jpg
+   :target: ../../_images/Bricks/brick_dc_motor_setup_1200.jpg
 
 Now connect the Brick to the PC over USB, you should see a tab named
 "DC Brick" in the Brick Viewer after you pressed "connect", select it.
