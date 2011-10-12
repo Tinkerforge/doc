@@ -5,12 +5,45 @@ DC Brick
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocend() }}
-
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ 
+	    tfdocimg("Bricks/brick_dc_tilted_front_350.jpg", 
+	             "Bricks/brick_dc_tilted_front_100.jpg", 
+	             "Bricks/brick_dc_tilted_front_800.jpg", 
+	             "DC Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_dc_tilted_back_350.jpg", 
+	             "Bricks/brick_dc_tilted_back_100.jpg", 
+	             "Bricks/brick_dc_tilted_back_800.jpg", 
+	             "DC Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_dc_motor_setup_350.jpg", 
+	             "Bricks/brick_dc_motor_setup_100.jpg", 
+	             "Bricks/brick_dc_motor_setup_800.jpg", 
+	             "DC Brick with DC Motor") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_dc_top_350.jpg", 
+	             "Bricks/brick_dc_top_100.jpg", 
+	             "Bricks/brick_dc_top_800.jpg", 
+	             "DC Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricks/brick_dc_bottom_350.jpg", 
+	             "Bricks/brick_dc_bottom_100.jpg", 
+	             "Bricks/brick_dc_bottom_800.jpg", 
+	             "DC Brick") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/dc_brick_dimensions_350.png", 
+	             "Dimensions/dc_brick_dimensions_100.png", 
+	             "Dimensions/dc_brick_dimensions.png", 
+	             "Outline and drilling plan") 
+	}}
+	{{ tfdocend() }}
 
 Description
 -----------
