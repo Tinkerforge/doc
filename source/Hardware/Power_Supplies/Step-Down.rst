@@ -8,15 +8,15 @@ Step-Down Powersupply
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_dc_tilted_front_350.jpg", 
-	             "Power_Supplies/powersupply_dc_tilted_front_100.jpg", 
-	             "Power_Supplies/powersupply_dc_tilted_front_800.jpg", 
+	    tfdocimg("Power_Supplies/powersupply_tilted_front_350.jpg", 
+	             "Power_Supplies/powersupply_tilted_front_100.jpg", 
+	             "Power_Supplies/powersupply_tilted_front_800.jpg", 
 	             "Power Supply") 
 	}}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_dc_tilted_back_350.jpg", 
-	             "Power_Supplies/powersupply_dc_tilted_back_100.jpg", 
-	             "Power_Supplies/powersupply_dc_tilted_back_800.jpg", 
+	    tfdocimg("Power_Supplies/powersupply_tilted_back_350.jpg", 
+	             "Power_Supplies/powersupply_tilted_back_100.jpg", 
+	             "Power_Supplies/powersupply_tilted_back_800.jpg", 
 	             "Power Supply") 
 	}}
 	{{ 
