@@ -32,6 +32,12 @@ Master Brick
 	             "Master Brick in Stack") 
 	}}
 	{{ 
+	    tfdocimg("Bricks/brick_master_caption_350.jpg", 
+	             "Bricks/brick_master_caption_100.jpg", 
+	             "Bricks/brick_master_caption_800.jpg", 
+	             "Master Brick with caption") 
+	}}
+	{{ 
 	    tfdocimg("Bricks/brick_master_top_350.jpg", 
 	             "Bricks/brick_master_top_100.jpg", 
 	             "Bricks/brick_master_top_800.jpg", 
@@ -114,11 +120,11 @@ Connectivity
 The following picture depicts the different connection possibilities of the 
 Master Brick.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
+.. image:: /Images/Bricks/brick_master_caption_600.jpg
    :scale: 100 %
-   :alt: Connectivity of Master Brick
+   :alt: Master Brick with caption
    :align: center
-   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
+   :target: ../../_images/Bricks/brick_master_caption_800.jpg
 
 
 .. _master_brick_test:

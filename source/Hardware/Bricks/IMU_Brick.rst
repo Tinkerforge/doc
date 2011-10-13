@@ -20,6 +20,12 @@ IMU Brick
 	             "IMU Brick") 
 	}}
 	{{ 
+	    tfdocimg("Bricks/brick_imu_caption_350.jpg", 
+	             "Bricks/brick_imu_caption_100.jpg", 
+	             "Bricks/brick_imu_caption_800.jpg", 
+	             "IMU Brick with caption") 
+	}}
+	{{ 
 	    tfdocimg("Bricks/brick_imu_top_350.jpg", 
 	             "Bricks/brick_imu_top_100.jpg", 
 	             "Bricks/brick_imu_top_800.jpg", 
@@ -124,10 +130,11 @@ Connectivity
 The following picture depicts the different connection possibilities of the 
 IMU Brick.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
+.. image:: /Images/Bricks/brick_imu_caption_600.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: IMU Brick with caption
    :align: center
+   :target: ../../_images/Bricks/brick_imu_caption_800.jpg
 
 IMU Calibration
 ---------------

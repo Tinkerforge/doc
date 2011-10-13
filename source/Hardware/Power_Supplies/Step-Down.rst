@@ -20,6 +20,12 @@ Step-Down Powersupply
 	             "Power Supply") 
 	}}
 	{{ 
+	    tfdocimg("Power_Supplies/powersupply_caption_350.jpg", 
+	             "Power_Supplies/powersupply_caption_100.jpg", 
+	             "Power_Supplies/powersupply_caption_800.jpg", 
+	             "Power Supply with caption") 
+	}}
+	{{ 
 	    tfdocimg("Power_Supplies/powersupply_top_350.jpg", 
 	             "Power_Supplies/powersupply_top_100.jpg", 
 	             "Power_Supplies/powersupply_top_800.jpg", 
@@ -88,11 +94,11 @@ Connectivity
 The following picture depicts the different connection possibilities of the 
 powersupply.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
+.. image:: /Images/Power_Supplies/powersupply_bottom_600.jpg
    :scale: 100 %
    :alt: alternate text
    :align: center
-   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
+   :target: ../../_images/Power_Supplies/powersupply_bottom_800.jpg
 
 Troubleshoot
 ------------

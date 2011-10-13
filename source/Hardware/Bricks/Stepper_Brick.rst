@@ -26,6 +26,12 @@ Stepper Brick
 	             "Stepper Brick with Motor") 
 	}}
 	{{ 
+	    tfdocimg("Bricks/brick_stepper_caption_350.jpg", 
+	             "Bricks/brick_stepper_caption_100.jpg", 
+	             "Bricks/brick_stepper_caption_800.jpg", 
+	             "Stepper Brick with caption") 
+	}}
+	{{ 
 	    tfdocimg("Bricks/brick_stepper_top_350.jpg", 
 	             "Bricks/brick_stepper_top_100.jpg", 
 	             "Bricks/brick_stepper_top_800.jpg", 
@@ -128,13 +134,12 @@ Connectivity
 The following picture depicts the different connection possibilities of the 
 Stepper Brick.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
+
+.. image:: /Images/Bricks/brick_stepper_caption_600.jpg
    :scale: 100 %
-   :alt: Connectivity of the Stepper Brick
+   :alt: Stepper Brick with caption
    :align: center
-   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
-
-
+   :target: ../../_images/Bricks/brick_stepper_caption_800.jpg
 
 
 .. _stepper_brick_test:

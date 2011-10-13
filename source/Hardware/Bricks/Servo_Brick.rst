@@ -32,6 +32,12 @@ Servo Brick
 	             "Servo Brick with Servos") 
 	}}
 	{{ 
+	    tfdocimg("Bricks/brick_servo_caption_350.jpg", 
+	             "Bricks/brick_servo_caption_100.jpg", 
+	             "Bricks/brick_servo_caption_800.jpg", 
+	             "Servo Brick with caption") 
+	}}
+	{{ 
 	    tfdocimg("Bricks/brick_servo_top_350.jpg", 
 	             "Bricks/brick_servo_top_100.jpg", 
 	             "Bricks/brick_servo_top_800.jpg", 
@@ -135,12 +141,11 @@ Connectivity
 The following picture depicts the different connection possibilities of the 
 Servo Brick.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
+.. image:: /Images/Bricks/brick_servo_caption_600.jpg
    :scale: 100 %
-   :alt: Connectivity of the Servo Brick
+   :alt: Servo Brick with caption
    :align: center
-   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
-
+   :target: ../../_images/Bricks/brick_servo_caption_800.jpg
 
 
 .. _servo_brick_test:
