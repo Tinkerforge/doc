@@ -62,7 +62,7 @@ For older Versions click `here <http://download.tinkerforge.com/bindings/>`__.
 .. _downloads_firmwares_plugins:
 
 Brick Firmwares and Bricklet Plugins
------------------
+------------------------------------
 
 .. csv-table::
  :header: "", "Firmwares and Plugins"
