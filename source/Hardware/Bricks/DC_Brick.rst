@@ -26,6 +26,12 @@ DC Brick
 	             "DC Brick with Motor") 
 	}}
 	{{ 
+	    tfdocimg("Bricks/brick_dc_caption_350.jpg", 
+	             "Bricks/brick_dc_caption_100.jpg", 
+	             "Bricks/brick_dc_caption_800.jpg", 
+	             "DC Brick with caption") 
+	}}
+	{{ 
 	    tfdocimg("Bricks/brick_dc_top_350.jpg", 
 	             "Bricks/brick_dc_top_100.jpg", 
 	             "Bricks/brick_dc_top_800.jpg", 
@@ -124,13 +130,11 @@ Connectivity
 The following picture depicts the different connection possibilities of the 
 DC Brick.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
+.. image:: /Images/Bricks/brick_dc_caption_600.jpg
    :scale: 100 %
-   :alt: Connectivity of DC Brick
+   :alt: DC Brick with caption
    :align: center
-   :target: ../../_images/Bricks/servo_brick_anschluesse.jpg
-
-
+   :target: ../../_images/Bricks/brick_dc_caption_800.jpg
 
 .. _dc_brick_test:
 
