@@ -1,7 +1,7 @@
-.. _dc_adapter:
+.. _dc_jack_adapter:
 
-DC Adapter
-==========
+DC Jack Adapter
+===============
 
 .. raw:: html
 
@@ -15,7 +15,7 @@ DC Adapter
 Description
 -----------
 
-This device is an adapter between a 5mm DC-Jack and our power plugs.
+This device is an adapter between a 5mm DC-Jack and power plugs.
 It is intended to be used when you like to power our devices by an external
 power-supply with 5mm DC-Jacks.
 
