@@ -94,11 +94,11 @@ Connectivity
 The following picture depicts the different connection possibilities of the 
 powersupply.
 
-.. image:: /Images/Power_Supplies/powersupply_bottom_600.jpg
+.. image:: /Images/Power_Supplies/powersupply_caption_600.jpg
    :scale: 100 %
    :alt: alternate text
    :align: center
-   :target: ../../_images/Power_Supplies/powersupply_bottom_800.jpg
+   :target: ../../_images/Power_Supplies/powersupply_caption_800.jpg
 
 Troubleshoot
 ------------
