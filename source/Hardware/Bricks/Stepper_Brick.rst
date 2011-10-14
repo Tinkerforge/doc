@@ -300,8 +300,8 @@ On Device Programming Interface
 FAQ
 ---
 
-My stepper makes funny noises, help!
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Stepper makes funny noises
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Stepper motors can produce high pitch or humming noises, even if
 they are standing still, if the decay mode is not configured correctly
