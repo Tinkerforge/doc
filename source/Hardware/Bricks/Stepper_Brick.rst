@@ -181,7 +181,7 @@ the stepper will increase its speed to "Max Velocity" with the given
 acceleration. If you press "Stop" it will decrease its speed to "0" with
 the given deceleration.
 
-Below you can set the stepping mode (full, half, quater, eigth) stepping mode
+Below you can set the stepping mode (full, half, quarter, eighth) stepping mode
 and trigger a "Full Brake", which stops the motor immediately.
 
 You can drive to a specific position (measured in steps)
