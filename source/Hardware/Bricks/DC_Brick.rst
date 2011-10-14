@@ -183,7 +183,7 @@ See :ref:`Interface and Coding <dc_brick_programming_interfaces>` section for
 the API of the DC Brick and examples in your programming language.
 
 Motor Power Supply
------------------
+------------------
 
 The connected motor can be powered through the onboard power-connector 
 (black connector) 

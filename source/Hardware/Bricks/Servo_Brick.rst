@@ -234,7 +234,7 @@ produce rattling.
 
    
 Servo Power Supply
------------------
+------------------
 
 The Servo Brick is equipped with an internal power-supply.
 It offers the possibility to adjust the output voltages for the connected 
