@@ -1,7 +1,7 @@
 .. _dc_brick:
 
-DC Brick
-========
+DC
+==
 
 .. raw:: html
 
@@ -79,13 +79,13 @@ automatically to this powersupply.
 Controlling the device is possible in several ways. You can control it via 
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless 
-(**Zigbee**, **WLAN**) connections via an additional Master Brick with according 
-Master-Extension (:ref:`High Level Concept <pi_hlpi>`). 
+(**Zigbee**, **WLAN**) connections via an additional Master Brick with 
+corresponding Master-Extension (:ref:`High Level Concept <pi_hlpi>`). 
 
 In the future it will be possible to control the device low level via a 
 **I2C**, **SPI** or **UART (serial)** interface from other microcontroller 
 boards (:ref:`Low Level Concept <pi_llpi>`). 
-Since the firmware is opensource it is of course possible to program the device
+Since the firmware is opensource it is possible to program the device
 directly (:ref:`On Device Programming <pi_odpi>`). 
 Currently we are not offering an on device API.
 
@@ -116,11 +116,10 @@ Resources
 ---------
 
 * MC33926 Datasheet (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/datasheets/MC33926.pdf>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/hardware/dc-brick-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/dc-brick/blob/master/hardware/dc-brick-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dc_brick_dimensions.png>`__)
 * Project (`Download <https://github.com/Tinkerforge/dc-brick/zipball/master>`__)
 * `Kicad Project Page <http://kicad.sourceforge.net/>`__
-
 
 .. _dc_brick_connectivity:
 
@@ -143,15 +142,13 @@ Test your DC Brick
 
 To test your DC Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>` 
+(For installation guides click :ref:`here <brickd_installation>` 
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes. 
+language API bindings. The latter is only for testing purposes. 
 
-Connect an DC brushed Motor to the Brick and a appropiate power supply
-(see :ref:`here <dc_brick_connectivity>`). Your assembly should look
-like below.
+Connect a DC brushed Motor to the Brick and a suitable power supply. 
+Your setup should look as shown below.
 
 .. image:: /Images/Bricks/brick_dc_motor_setup_600.jpg
    :scale: 100 %
@@ -160,7 +157,7 @@ like below.
    :target: ../../_images/Bricks/brick_dc_motor_setup_1200.jpg
 
 Now connect the Brick to the PC over USB, you should see a tab named
-"DC Brick" in the Brick Viewer after you pressed "connect", select it.
+"DC Brick" in the Brick Viewer after you pressed "connect". Select it.
 
 .. image:: /Images/Bricks/dc_brickv.jpg
    :scale: 100 %
@@ -174,9 +171,9 @@ the velocity (forward and backward), the acceleration and the
 `PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency which
 is used by the driver to control the connected motor. On the right you see
 the voltages of the two power sources and the current consumption.
-Below you find a graphical representation of the velocity of your motor.
-At the bottom you can configure the minimum motor voltage, which lets you get
-undervoltage signals if the voltage is below.
+Below you find a graphical representation of the velocity of the motor.
+At the bottom you can configure the minimum motor voltage, which allows for
+undervoltage signals if the voltage is too low.
 
 Below the sliders you can test the "Full Brake" and change the driving modes
 (see :ref:`here <dc_brick_drive_mode>` for more information).
@@ -186,12 +183,12 @@ After this test you can go on with writing your own application.
 See :ref:`Interface and Coding <dc_brick_programming_interfaces>` section for 
 the API of the DC Brick and examples in your programming language.
 
-Motor Powersupply
+Motor Power Supply
 -----------------
 
 The connected motor can be powered through the onboard power-connector 
 (black connector) 
-or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a 
+or through a :ref:`Power Supply Board <product_overview_powersupplies>` in a 
 stack.
 The Brick switches autonomously to the onboard power-connector when there
 is a voltage measured. 
@@ -209,24 +206,24 @@ There are two possible modes of motor controls:
    is an advantage of this mode. 
    Therefore it is possible to accelerate more precise. 
    Typically motors can be driven with slower velocities in this mode.
-   Disadvantageous is a higher current consumption and a resulting higher
+   Disadvantageous is a higher current consumption and a resulting faster
    heat-up of the driver.
 
  * Drive/Coast
 
    In this mode the motor is either driving or freewheeling.
-   Advantageous is a lower current consumption and a resulting lesser heat-up.
-   Therefore it might be possible that it the control of the velocity and 
-   acceleration is less precise.
+   Advantageous is a lower current consumption and a resulting slower heat-up.
+   The control of the velocity and acceleration is less precise, it can
+   "lag behind".
 
 Error LED Sources
 -----------------
 
-The red LED is enabled if you are below the minimum voltage
+The red LED is enabled if the voltage is below the minimum voltage
 (configurable) or the driver is in emergency shutdown state
-caused by over temperature or over current. To get the Brick operational you have
-to increase the voltage or in the latter case you have to let the driver 
-cool down and reenabling or disabling the driver.
+caused by over temperature or over current. To get the Brick operational 
+again you have to increase the voltage or in the latter case you have to 
+let the driver cool down and enable it again.
 
 .. _dc_brick_programming_interfaces:
 
@@ -253,10 +250,8 @@ Low Level Programming Interface
 
  .. note::  Comming soon! 
 
-  Currently you have to modify the firmware to use this feature.
-  SPI, I2C and UART interface are present and can be easily accessed with our
-  :ref:`Breakout Board <breakout_brick>`. A special firmware is planned
-  to control this brick over the different interfaces by transmitted commands.
+  A special firmware is planned to control the DC Brick over 
+  SPI, I2C and UART.
   
 ..
   .. csv-table::
@@ -273,8 +268,10 @@ On Device Programming Interface
 
  .. note:: Coming soon!
 
-  Currently no API or special documentation exists for direct programming.
-  You can use our firmware as startingpoint for your own modifications.
+  An API and documentation for direct on device programming (comparable
+  to arduino) is planned.
+  You can however already use our firmware as a starting point for your 
+  own modifications (C knowledge required).
 
 ..
   .. csv-table::
@@ -283,25 +280,24 @@ On Device Programming Interface
 
      "Programming", "API", "Examples", "Installation"
 
+..
+	FAQ
+	---
 
-Troubleshoot
-------------
+	Motor is not running correctly
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	**Reasons:** 
+	 * Voltage drop, caused by the connected motor. 
+	 * Low input voltage for the DC Brick.
+	 * Not correctly connected.
+	 * Defective motor.
 
-Motor is not running correctly
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Reasons:** 
- * The reason for this is typically a voltage drop-in, caused by the connected
-   motor. 
- * Another reason might be a low input voltage of the DC Brick.
- * Not correctly connected
- * Defective motor.
-
-**Solutions:**
- * Check input voltage. If too low, change supply.
- * More powerful powersupply. Typically batteries are better suited than wall power adapters.
- * In case of you are using batteries to power the device, check the voltage of
-   the batteries and keep in mind that this voltage can break-in while delivering
-   high currents. 
- * Reduce the load of the motor.
- * Check connection of Brick and motor.
- * Change Motor when defect.
+	**Solutions:**
+	 * Check input voltage. If too low, increase voltage.
+	 * More powerful powersupply. Typically batteries are better suited than wall power adapters.
+	 * In case of you are using batteries to power the device, check the voltage of
+	   the batteries and keep in mind that this voltage can break-in while delivering
+	   high currents. 
+	 * Reduce the load of the motor.
+	 * Check connection between Brick and motor.
+	 * Change Motor when defect.
