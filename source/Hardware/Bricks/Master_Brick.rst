@@ -65,26 +65,26 @@ The Master :ref:`Brick <product_overview_bricks>`
 is equipped with a 32-bit ARM microcontroller and can be
 used for two purposes. First of all it has **four** 
 :ref:`Bricklet <product_overview_bricklets>` ports and therefore is ideally 
-suited for applications where a great many of Bricklets are used.
+suited for applications where a many Bricklets are used.
 
 Secondly, the Master Brick can be used for communication purposes.
 When building a stack the lowermost Master Brick
 acts as the master of this stack and routes all communication between the
-boards of the stack and the PC. Other Master Bricks in the stack detect this 
-and does not act as master. They are only provide their attached Bricklets.
+boards of the stack and the PC. Other Master Bricks in the stack provide their 
+attached Bricklets.
 
-In the simple case the communication with a stack is routed 
-over the USB connection of the master. This interface can be changed with 
+Normally the communication with a stack is routed 
+over the USB connection of the master. This can be changed with 
 :ref:`Master-Extensions <product_overview_master_extensions>`. There are
-Master-Extensions for cablebased interfaces (RS485, Ethernet) and wireless interfaces (Zigbee, WLAN). 
-Extensions will be plugged on the topside of the master. The master detect them
-and use this additional interface.
+Master-Extensions for cable based interfaces (RS485, Ethernet) and wireless 
+interfaces (Zigbee, WLAN). Extensions are plugged on the topside of the master. 
 
 In the future it will be possible to control the device low level 
-via a **I2C**, **SPI** or **UART (serial)** interface from other microcontroller boards
-(:ref:`Low Level Concept <pi_llpi>`). 
-Since the firmware is opensource it is of course possible to program the device
+via a **I2C**, **SPI** or **UART (serial)** interface from other
+microcontroller boards (:ref:`Low Level Concept <pi_llpi>`). 
+Since the firmware is open source it is possible to program the device
 directly (:ref:`On Device Programming <pi_odpi>`).
+Currently we are not offering an on device API.
 
 Technical Specifications
 ------------------------
@@ -109,8 +109,7 @@ Resources
 
 * Schematic (`Download <https://github.com/Tinkerforge/master-brick/raw/master/hardware/master-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/master_brick_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/master-brick/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/master-brick/zipball/master>`__)
 
 .. _master_brick_connectivity:
 
@@ -134,14 +133,13 @@ Test your Master Brick
 
 To test your Master Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes. 
+language API bindings. The latter is only for testing purposes. 
 
 Connect the Brick to the PC over USB. You should see a tab named
-"Master Brick" in the Brick Viewer after you pressed "connect", select it.
+"Master Brick" in the Brick Viewer after you pressed "connect". Select it.
 
 .. image:: /Images/Bricks/master_brickv.jpg
    :scale: 100 %
@@ -151,13 +149,13 @@ Connect the Brick to the PC over USB. You should see a tab named
 
 You should see that the Master Brick isn't measuring any Stack voltages or 
 currents. This is because you have not attached a
-:ref:`Power-Supply Board <product_overview_powersupplies>`. When attaching
+:ref:`Power Supply Board <product_overview_powersupplies>`. When attaching
 such a board you should see the voltage applied to your Stack and the current
 flowing in.
 
 After this small test you can go on with writing your own application.
-See :ref:`Interface and Coding <master_brick_programming_interfaces>` section for 
-the API of the Master Brick and examples in your programming language.
+See :ref:`Interface and Coding <master_brick_programming_interfaces>` section 
+for  the API of the Master Brick and examples in your programming language.
 
 .. _master_brick_programming_interfaces:
 
@@ -184,10 +182,8 @@ Low Level Programming Interface
 
  .. note::  Comming soon! 
 
-  Currently you have to modify the firmware to use this feature.
-  SPI, I2C and UART interface are present and can be easily accessed with our
-  :ref:`Breakout Board <breakout_brick>`. A special firmware is planned
-  to control this brick over the different interfaces by transmitted commands.
+  A special firmware is planned to control the Master Brick over 
+  SPI, I2C and UART.
   
 ..
   .. csv-table::
@@ -204,8 +200,10 @@ On Device Programming Interface
 
  .. note:: Coming soon!
 
-  Currently no API or special documentation exists for direct programming.
-  You can use our firmware as startingpoint for your own modifications.
+  An API and documentation for direct on device programming (comparable
+  to arduino) is planned.
+  You can however already use our firmware as a starting point for your 
+  own modifications (C knowledge required).
 
 ..
   .. csv-table::

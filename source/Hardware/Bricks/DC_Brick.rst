@@ -118,8 +118,7 @@ Resources
 * MC33926 Datasheet (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/datasheets/MC33926.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/dc-brick/blob/master/hardware/dc-brick-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dc_brick_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/dc-brick/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/dc-brick/zipball/master>`__)
 
 .. _dc_brick_connectivity:
 
@@ -250,8 +249,8 @@ Low Level Programming Interface
 
  .. note::  Comming soon! 
 
-  A special firmware is planned to control the DC Brick over 
-  SPI, I2C and UART.
+  A special firmware to control the DC Brick over 
+  SPI, I2C and UART is planned.
   
 ..
   .. csv-table::

@@ -49,21 +49,21 @@ IMU Brick
 Description
 -----------
 
- .. note::  Comming soon! 
+ .. note::  Comming soon! The IMU Brick is not yet ready to buy.
 
 The IMU :ref:`Brick <product_overview_bricks>` is a equipped with a 32-bit ARM
 microcontroller and an `inertial measurement unit
 <http://en.wikipedia.org/wiki/Inertial_measurement_unit>`_.
 It consists of a 3-axis accelerometer, magnetometer and gyroscope.
-The board computes `roll , pitch and yaw
+The board computes `roll, pitch and yaw
 <http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`_ information, 
-therefore it is a complete `Attitude and heading reference system
+it is a complete `Attitude and heading reference system
 <http://en.wikipedia.org/wiki/AHRS>`_. 
-The API lets you access the roll, pitch and yaw data,
+The API allows access to the roll, pitch and yaw data,
 but also acceleration, magnetic field and angular velocity for the 
 three axes. Besides the `euler angles 
 <http://en.wikipedia.org/wiki/Euler_angles>`_ (roll, pitch, yaw) it is 
-possible to get an 
+also possible to get an 
 `quaternion <http://en.wikipedia.org/wiki/Quaternion>`_
 representation which removes the `gimbal lock 
 <http://en.wikipedia.org/wiki/Gimbal_lock>`_ problem of euler angels.
@@ -78,13 +78,13 @@ interfacing up to two Bricklets.
 Controlling the device is possible in several ways. You can control it via 
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless 
-(**Zigbee**, **WLAN**) connections via a Master Brick with according 
+(**Zigbee**, **WLAN**) connections via a Master Brick with corresponding
 Master-Extension (:ref:`High Level Concept <pi_hlpi>`). 
 
 In the future it will be possible to control the device low level via a 
 **I2C**, **SPI** or **UART (serial)** interface from other microcontroller 
 boards (:ref:`Low Level Concept <pi_llpi>`). 
-Since the firmware is opensource it is of course possible to program the device
+Since the firmware is opensource it is possible to program the device
 directly (:ref:`On Device Programming <pi_odpi>`).
 Currently we are not offering an on device API.
 
@@ -111,12 +111,11 @@ Weight                                               12g
 Resources
 ---------
 
-* 3-axis Accelerometer/Magnetometer LSM303 Datasheet (Download TODO)
-* 3-axis Gyroscope ITG-3200 Datasheet (Download TODO)
+* 3-axis Accelerometer/Magnetometer LSM303 Datasheet (`Download <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00260288.pdf>`__)
+* 3-axis Gyroscope ITG-3200 Datasheet (`Download <http://invensense.com/mems/gyro/documents/PS-ITG-3200A.pdf>`__)
 * Schematic (Download)
 * Outline and drilling plan (Download)
-* Project (Download)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (Download)
 
 
 .. _imu_brick_test:
@@ -166,10 +165,8 @@ Low Level Programming Interface
 
  .. note::  Comming soon! 
 
-  Currently you have to modify the firmware to use this feature.
-  SPI, I2C and UART interface are present and can be easily accessed with our
-  :ref:`Breakout Board <breakout_brick>`. A special firmware is planned
-  to control this brick over the different interfaces by transmitted commands.
+  A special firmware to control the IMU Brick over 
+  SPI, I2C and UART is planned.
   
 ..
   .. csv-table::
@@ -186,8 +183,10 @@ On Device Programming Interface
 
  .. note:: Coming soon!
 
-  Currently no API or special documentation exists for direct programming.
-  You can use our firmware as startingpoint for your own modifications.
+  An API and documentation for direct on device programming (comparable
+  to arduino) is planned.
+  You can however already use our firmware as a starting point for your 
+  own modifications (C knowledge required).
 
 ..
   .. csv-table::
@@ -196,14 +195,3 @@ On Device Programming Interface
 
      "Programming", "API", "Examples", "Installation"
 
-Troubleshoot
-------------
-
-
-IMU is not working correctly
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Reasons:** 
- * Erroneous Calibration
-
-**Solutions:**
- * Calibrate your device

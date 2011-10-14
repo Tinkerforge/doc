@@ -65,7 +65,7 @@ Description
 The Servo :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit 
 ARM microcontroller and is able to control up to **7**
 `RC servos <http://en.wikipedia.org/wiki/Servo_Motor#RC_servos>`_
-with a maximum current up to **3A**.
+with a maximum current of **3A**.
 The output voltage is adjustable up to **9V**, the drawn current of each
 servo can be measured independently.
 Additionally output PWM is configurable for each servo independently.
@@ -76,21 +76,21 @@ and can be used within a stack.
 Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device. 
 
-The servos can be powered by an external powersupply connected
-directly to the Brick or by the stack internal powersupply.
-If an external powersupply is connected the Brick switches
-automatically to this powersupply.
+The servos can be powered by an external power supply connected
+directly to the Brick or by the stack internal power supply.
+If an external power supply is connected the Brick switches
+automatically to this power supply.
 
 Controlling the device is possible in several ways. You can control it via 
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless 
-(**Zigbee**, **WLAN**) connections via an additional Master Brick with according 
+(**Zigbee**, **WLAN**) connections via an additional Master Brick with corresponding 
 Master Extension (:ref:`High Level Concept <pi_hlpi>`). 
 
 In the future it will be possible to control the device low level via a 
 **I2C**, **SPI** or **UART (serial)** interface from other microcontroller 
 boards (:ref:`Low Level Concept <pi_llpi>`). 
-Since the firmware is opensource it is of course possible to program the device
+Since the firmware is open source it is possible to program the device
 directly (:ref:`On Device Programming <pi_odpi>`). 
 Currently we are not offering an on device API.
 
@@ -105,7 +105,7 @@ Microcontroller                       ATSAM3S2B (128kB Flash, 32k RAM)
 ------------------------------------- ------------------------------------------------------------
 Maximum Motor Current (Sum)           3A
 Minimum/Maximum Input Voltage         5V/25V
-Output Voltage                        Software adustable 2.0 - 9.0V
+Output Voltage                        Software adustable 2V - 9V
 Device Current Consumption            60mA
 ------------------------------------- ------------------------------------------------------------
 ------------------------------------- ------------------------------------------------------------
@@ -120,7 +120,7 @@ Dimensions (W x D x H)                40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
 Weight                                18g
 ===================================== ============================================================
 
-\* configurable per servo
+\* Configurable per servo
 
 Resources
 ---------
@@ -155,15 +155,13 @@ Test your Servo Brick
 
 To test your Servo Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes. 
+language API bindings. The latter is only for testing purposes. 
 
-Connect a RC Servo to port 0 of the Brick and a appropiate power supply
-(see :ref:`here <servo_brick_connectivity>`). Your assembly should look
-like below.
+Connect a RC Servo to a port of the Brick and a suitable power supply. 
+Your setup should look as shown below.
 
 .. image:: /Images/Bricks/brick_servo_setup_600.jpg
    :scale: 100 %
@@ -172,7 +170,7 @@ like below.
    :target: ../../_images/Bricks/brick_servo_setup_1200.jpg
 
 Now connect the Brick to the PC over USB, you should see a tab named
-"Servo Brick" in the Brick Viewer after you pressed "connect", select it.
+"Servo Brick" in the Brick Viewer after you pressed "connect". Select it.
 
 .. image:: /Images/Bricks/servo_brickv.jpg
    :scale: 100 %
@@ -180,24 +178,24 @@ Now connect the Brick to the PC over USB, you should see a tab named
    :align: center
    :target: ../../_images/Bricks/servo_brickv.jpg
 
-In the left part of the GUI you can select the servo which you like
+In the left part of the GUI you can select the servo
 to control. You can enable it, configure the 
 `PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ and configure
 the corresponding position. Additionally you can see the current consumption of
-the servo. Below you have four sliders to control
+the servo. Below there are four sliders to control
 the position, velocity and acceleration of the servo. The fourth slider
 can be used to change the period of the PWM 
 (see :ref:`Configure Servo PWM <servo_brick_configure_servo_pwm>` for more 
 information).
 
-On the right side you can see the external and Stack voltage.
+On the right side you can see the external and stack voltage.
 Below are graphical representations for the state of each servo.
-Beneath you can configure the minimum input voltage, which lets you get
-undervoltage signals if the voltage is below.
+Beneath you can configure the minimum input voltage, which allows for
+undervoltage signals if the voltage is too low.
 Also you can configure the output voltage 
 (Caution: A too high output voltage may damage your servo!).
-In the end there is a "Start Test" button, which starts
-a test sequence performs random movements for each servo.
+At the bottom right there is a "Start Test" button, which starts
+a test sequence that performs random movements for each servo.
 
 To start testing enable servo 0 and play around with the controls
 or let the Brick Viewer perform a test.
@@ -211,35 +209,43 @@ the API of the Servo Brick and examples in your programming language.
 Configure Servo PWM
 -------------------
 
-Typically you control a RC servo by an PWM signal with a 
-period of 20ms and an ontime of 1ms - 2ms depending on the position you want
-to achieve. Some servos seems not to work with this properly. Therefore you are
-able to fully configure the PWM.
+Typically you control a RC servo by a PWM signal with a 
+period of 20ms and an on-time of 1ms - 2ms depending on the position you want
+to achieve. However, some servos do not work properly with these standard
+settings. Therefore we provide a fully configurable PWM.
 
-Maybe you have to adapt the period of the PWM signal. We have tested several servos
-and a period of 20ms seems not to work on all devices, therefore we use 19.5ms as default
-which should work on all devices.
+The default value for the period is 19.5ms. This period worked on all servos 
+we could get our fingers on (20ms did not work with some of the cheaper 
+chinese servos). If the datasheet of your servo does specify a preferred
+period, use it. But it is likely that you don't have to change this value.
 
-More interesting may be the minimum and maximum pulse width. Some servos can rotate
-further when decreasing/increasing the minimum/maximum pulse width.
+More interesting is the minimum and maximum pulse width. The default pulse
+width is 1ms - 2ms. Most servos can however rotate further when 
+minimum/maximum pulse width is decreased/increased. If your servo comes
+with a datasheet we recommend to use the values described in there. If you
+don't have a datasheet you can try to incrementally extend the pulse width
+until the servo starts to rattle. Use the biggest pulse width that does not
+produce rattling.
 
 .. warning::
 
-   A wrong PWM configuration can damage your servo.
+   A wrong PWM configuration for an extended period of time can damage 
+   your servo.
 
    
-Servo Powersupply
+Servo Power Supply
 -----------------
 
-This device is equipped with an internal power-supply.
-It offers the possibilty to adjust the output voltages for the connected servos.
-The internal powersupply can be powered through the onboard power-connector
-(black connector)
-or through a :ref:`Power-Supply Board <product_overview_powersupplies>` in a stack.
-The Brick switches autonomously to the onboard power-connector when there
-is a voltage measured. Since we use a step-down switcher for the internal power-supply
-please consider that the input voltage of the Brick has to be 1V higher 
-than the configured output voltage to assure stable operation.
+The Servo Brick is equipped with an internal power-supply.
+It offers the possibility to adjust the output voltages for the connected 
+servos.
+The internal power supply can be powered through the onboard power-connector
+(black connector) or through a 
+:ref:`Power Supply Board <product_overview_powersupplies>` in a stack.
+The Servo Brick switches autonomously to the onboard power-connector when 
+there is a voltage measured. Since we use a step-down switcher for the 
+internal power supply please consider that the input voltage of the Brick has
+to be 1V higher than the configured output voltage to assure stable operation.
 
 .. warning::
 
@@ -249,7 +255,7 @@ Error LED Sources
 -----------------
 
 The red LED is enabled so long as the input voltage is below the user 
-configureable minimum voltage.
+configurable minimum voltage.
 
 
 .. _servo_brick_programming_interfaces:
@@ -278,10 +284,8 @@ Low Level Programming Interface
 
  .. note::  Comming soon! 
 
-  Currently you have to modify the firmware to use this feature.
-  SPI, I2C and UART interface are present and can be easily accessed with our
-  :ref:`Breakout Board <breakout_brick>`. A special firmware is planned
-  to control this brick over the different interfaces by transmitted commands.
+  A special firmware is planned to control the Servo Brick over 
+  SPI, I2C and UART.
   
 ..
   .. csv-table::
@@ -298,8 +302,10 @@ On Device Programming Interface
 
  .. note:: Coming soon!
 
-  Currently no API or special documentation exists for direct programming.
-  You can use our firmware as startingpoint for your own modifications.
+  An API and documentation for direct on device programming (comparable
+  to arduino) is planned.
+  You can however already use our firmware as a starting point for your 
+  own modifications (C knowledge required).
 
 ..
   .. csv-table::
@@ -308,26 +314,25 @@ On Device Programming Interface
 
      "Programming", "API", "Examples", "Installation"
 
-Troubleshoot
-------------
+FAQ
+---
 
-Servos dither, not work correctly
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Reasons:** 
- * The reason for this is typically a voltage drop-in, caused by repeated high
-   current peaks produced by the connected servos. 
- * Another reason might be a low input voltage of the Servo Brick.
- * Not correctly connected
- * Defective Servos.
+My servos are shaking, help!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Solutions:**
- * Check input voltage. If too low, change supply.
- * More powerful powersupply. Typically batteries are better suited than wall power adapters.
- * In case of you are using batteries to power the device, check the voltage of
-   the batteries and keep in mind that this voltage can break-in while delivering
-   high currents.
- * Connect less servos.
- * Reduction of load.
- * Check connection of Brick and servos.
- * Look for defective servos. Test them indepentenly until defect servo is
-   found.
+The reason for this is typically a voltage drop, caused by repeated high
+current peaks produced by the connected servos. First you should check
+the input voltage, it should be at least 1V higher then the configured
+output voltage.
+
+Typically this problem occurs when the power supply can't handle the
+high current peaks. To test if your power supply is the problem, you can
+try batteries. Batteries normally don't have problems with current peaks.
+
+If you are using batteries and the problem is still occurring, check
+the voltage of the batteries when the servos are in use. If your batteries
+are too weak, the voltage is dropping (in this case use full batteries).
+
+If your servos only start shaking when you reach the maximum/minimum angle,
+you have configured a too high/low pulse width. In this case you have to 
+reduce the pulse width, otherwise your servos might get damaged over time.
