@@ -49,14 +49,13 @@ Temperature
 
 Description
 -----------
-
-With the Temperature :ref:`Bricklet <product_overview_bricklets>` the features of
-every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
-measure the temperatures. 
-The measured temperature can be readout in `°C
-<http://en.wikipedia.org/wiki/Degree_Celsius>`_ directly.
-You can define events which will be triggered when a specified temperature
-is exceeded.
+The Temperature :ref:`Bricklet <product_overview_bricklets>` can be used to 
+extend the features of :ref:`Bricks <product_overview_bricks>` by the
+capability to measure temperature. 
+The measured temperature can be read out in `°C
+<http://en.wikipedia.org/wiki/Degree_Celsius>`_.
+With configurable events it is possible to react on changing 
+temperatures without polling.
 
 Technical Specifications
 ------------------------
@@ -80,8 +79,8 @@ Resources
 * TMP102 Datasheet (`Download <https://github.com/Tinkerforge/temperature-bricklet/raw/master/datasheets/tmp102.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/temperature-bricklet/raw/master/hardware/temperature-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/temperature_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/temperature-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/temperature-bricklet/zipball/master>`__)
+
 
 
 
@@ -90,16 +89,16 @@ Resources
 Test your Temperature Bricklet
 ------------------------------
 
-To test your Temperature Bricklet you have to start by installing the
+To test the Temperature Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Connect your Temperature Bricklet to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+Connect the Temperature Bricklet to a 
+:ref:`Brick <product_overview_bricks>` with the supplied cable 
+(see picture below).
 
 .. image:: /Images/Bricklets/bricklet_temperature_master_600.jpg
    :scale: 100 %
@@ -108,9 +107,9 @@ Connect your Temperature Bricklet to an arbitrary
    :target: ../../_images/Bricklets/bricklet_temperature_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
-"Temperature Bricklet" in the Brick Viewer after you pressed "connect", 
-select it.
-If everything went as expected you the Brick Viewer should look like
+"Temperature Bricklet" in the Brick Viewer after you pressed "connect". 
+Select it.
+If everything went as expected the Brick Viewer should look as
 depicted below.
 
 .. image:: /Images/Bricklets/bricklet_temperature_brickv.jpg
@@ -119,13 +118,13 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_brickv.jpg
 
-See how the measured values change dependend 
-on the device temperature. For example put your finger on the sensor and see the 
-temperature rising.
+Put your finger on the sensor to see the 
+temperature rising (or falling if it is extremely warm in your room).
 
 You can now go on with writing your own application.
-See :ref:`Interface and Coding <temperature_programming_interfaces>` section for the API of
-the Temperature Bricklet and examples in your programming language.
+See the :ref:`Programming Interface <temperature_programming_interfaces>`
+section for the API of the Temperature Bricklet and examples in different 
+programming languages.
 
 
 .. _temperature_programming_interfaces:

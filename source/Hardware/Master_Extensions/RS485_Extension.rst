@@ -53,8 +53,8 @@ Resources
 
 * Schematic (Download)
 * Outline and drilling plan (`Download <../../_images/Dimensions/rs485_extension_dimensions.png>`__)
-* Project (Download)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (Download)
+
 
 .. RS485 Bus Assembly
   ------------------

@@ -139,12 +139,12 @@ DC Brick.
 Test your DC Brick
 ------------------
 
-To test your DC Brick you have to start by installing the
+To test the DC Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
 (For installation guides click :ref:`here <brickd_installation>` 
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings. The latter is only for testing purposes. 
+language API bindings, the latter is for testing purposes. 
 
 Connect a DC brushed Motor to the Brick and a suitable power supply. 
 Your setup should look as shown below.
@@ -179,8 +179,8 @@ Below the sliders you can test the "Full Brake" and change the driving modes
 To start testing enable the driver and play around with the controls.
 
 After this test you can go on with writing your own application.
-See :ref:`Interface and Coding <dc_brick_programming_interfaces>` section for 
-the API of the DC Brick and examples in your programming language.
+See the :ref:`Programming Interface <dc_brick_programming_interfaces>` section for 
+the API of the DC Brick and examples in different programming languages.
 
 Motor Power Supply
 ------------------

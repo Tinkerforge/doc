@@ -85,8 +85,8 @@ Resources
 
 * Schematic (`Download <https://github.com/Tinkerforge/step-down-powersupply/raw/master/hardware/step-down-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/step_down_powersupply_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/step-down-powersupply/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/step-down-powersupply/zipball/master>`__)
+
 
 Connectivity
 ------------

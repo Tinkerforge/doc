@@ -128,8 +128,8 @@ Resources
 * MCP3008 Datasheet (`Download <https://github.com/Tinkerforge/servo-brick/raw/master/datasheets/MCP3008.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/servo-brick/raw/master/hardware/servo-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/servo_brick_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/servo-brick/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/servo-brick/zipball/master>`__)
+
 
 
 
@@ -153,12 +153,12 @@ Servo Brick.
 Test your Servo Brick
 ---------------------
 
-To test your Servo Brick you have to start by installing the
+To test the Servo Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
 (For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings. The latter is only for testing purposes. 
+language API bindings, the latter is for testing purposes. 
 
 Connect a RC Servo to a port of the Brick and a suitable power supply. 
 Your setup should look as shown below.
@@ -201,8 +201,8 @@ To start testing enable servo 0 and play around with the controls
 or let the Brick Viewer perform a test.
 
 After this you can go on with writing your own application.
-See :ref:`Interface and Coding <servo_brick_programming_interfaces>` section for 
-the API of the Servo Brick and examples in your programming language.
+See the :ref:`Programming Interface <servo_brick_programming_interfaces>` section for 
+the API of the Servo Brick and examples in different programming languages.
 
 .. _servo_brick_configure_servo_pwm:
 

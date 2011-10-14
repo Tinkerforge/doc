@@ -50,19 +50,17 @@ Temperature IR
 Description
 -----------
 
-The Temperature IR :ref:`Bricklet <product_overview_bricklets>` is equipped with a
-`infrared thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`_.
-It uses thermal radiation emitted by the measured object. The
-`emissivity <http://en.wikipedia.org/wiki/Emissivity>`_ of an object is
-material specific, a good list can be found 
-`here <http://www.infrared-thermography.com/material.htm>`_.
-Many infrared thermometers have a fixed emissivity of 0.95 or 1.0
-and measure wrong temperatures depending of the material.
+The Temperature IR :ref:`Bricklet <product_overview_bricklets>` is equipped 
+with a `infrared thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`_. It can extend the features of a Brick with the capability to contactlessly 
+measure temperature.
 
-The API of the Bricklet let you readout the object temperature and the
-ambient temperature in degree Celsius.You can define the emissivity dependend 
-of your measurement or use the default value of 1.0. Additionally you can
-configure events triggered when a specified temperature is exceeded.
+You can read out object temperature and ambient temperature in 
+`°C <http://en.wikipedia.org/wiki/Degree_Celsius>`_.
+It is possible to define the 
+`emissivity <http://en.wikipedia.org/wiki/Emissivity>`_ of the object you 
+want to measure (most infrared thermometers can't do this) .
+With configurable events it is possible to react on changing 
+temperatures without polling.
 
 
 
@@ -88,26 +86,25 @@ Resources
 ---------
 
 * MLX90614 Datasheet (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/blob/master/datasheets/MLX90614.pdf>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/raw/master/hardware/temperature-ir-bricklet-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/raw/master/hardware/temperature-ir-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/temperature_ir_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/zipball/master>`__)
+
 
 .. _temperature_ir_bricklet_test:
 
 Test your Temperature IR Bricklet
 ---------------------------------
 
-To test your Temperature IR Bricklet you have to start by installing the
+To test the Temperature IR Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Connect your Temperature IR Bricklet to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+Connect the Temperature IR Bricklet to a 
+:ref:`Brick <product_overview_bricks>` with the supplied cable (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_temperature_ir_master_600.jpg
    :scale: 100 %
@@ -116,9 +113,9 @@ Connect your Temperature IR Bricklet to an arbitrary
    :target: ../../_images/Bricklets/bricklet_temperature_ir_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
-"Temperature IR Bricklet" in the Brick Viewer after you pressed "connect", 
-select it.
-If everything went as expected you the Brick Viewer should look like
+"Temperature IR Bricklet" in the Brick Viewer after you pressed "connect". 
+Select it.
+If everything went as expected the Brick Viewer should look as
 depicted below.
 
 .. image:: /Images/Bricklets/bricklet_temperature_ir_brickv.jpg
@@ -128,15 +125,16 @@ depicted below.
    :target: ../../_images/Bricklets/bricklet_temperature_ir_brickv.jpg
 
 Point the Bricklet in different
-directions. The Brick Viewer will show you the ambient temperature (the 
-temperature of the device) and the object temperature you point at.
+directions. The Brick Viewer will show the ambient temperature (the 
+temperature of the room) and the object temperature you point at.
 
-Since the emissivity depends on the material you can configure it.
+It is possible to configure the emissivity of the material you
+point at.
 Enter 0xFFFF = 65535 for an emissivity of 1.0.
 The default is an emisivity of 0.98 (0.98 * 0xFFFF = 64224).
 
 After this you can go on with writing your own application.
-See :ref:`Interface and Coding <temperatureir_programming_interfaces>` 
+See the :ref:`Programming Interface <temperatureir_programming_interfaces>` 
 section for the API of the Temperature IR Bricklet and examples in your 
 programming language.
 

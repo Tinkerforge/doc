@@ -62,13 +62,14 @@ Rotary Poti
 Description
 -----------
 
-This :ref:`Bricklet <product_overview_bricklets>` is equipped with a 1-turn rotary 
-`potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`_. 
-After connecting it to a :ref:`Brick <product_overview_bricks>` you
-can readout the position of the potentiometer. Additionally you can configure 
-different events triggered when the potentiometer reaches a specific position.
+The Rotary Poti :ref:`Bricklet <product_overview_bricklets>` is equipped with 
+a 1-turn rotary `potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`_. 
+It can be connected to a 
+:ref:`Brick <product_overview_bricks>`, with which the position of the 
+slider can be read out. With configurable events it is possible to react on
+changing positions without polling.
 
-You can use this Bricklet for purposes like speed or volume control.
+You can use this Bricklet for speed, volume control or similar purposes.
 
 
 Technical Specifications
@@ -88,8 +89,8 @@ Resources
 
 * Schematic (`Download <https://github.com/Tinkerforge/rotary-poti-bricklet/raw/master/hardware/rotary-poti-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/rotary_poti_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/rotary-poti-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/rotary-poti-bricklet/zipball/master>`__)
+
 
 
 .. _rotary_poti_bricklet_test:
@@ -97,16 +98,16 @@ Resources
 Test your Rotary Poti Bricklet
 ------------------------------
 
-To test your Rotary Poti Bricklet you have to start by installing the
+To test the Rotary Poti Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Connect your Rotary Potentiometer Bricklet to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+Connect the Rotary Potentiometer Bricklet to a 
+:ref:`Brick <product_overview_bricks>` with the supplied cable 
+(see picture below).
 
 .. image:: /Images/Bricklets/bricklet_rotary_poti_master_600.jpg
    :scale: 100 %
@@ -115,9 +116,9 @@ Connect your Rotary Potentiometer Bricklet to an arbitrary
    :target: ../../_images/Bricklets/bricklet_rotary_poti_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
-"Rotary Poti Bricklet" in the Brick Viewer after you pressed "connect", 
-select it.
-If everything went as expected you the Brick Viewer should look like
+"Rotary Poti Bricklet" in the Brick Viewer after you pressed "connect". 
+Select it.
+If everything went as expected the Brick Viewer should look as
 depicted below.
 
 .. image:: /Images/Bricklets/bricklet_rotary_poti_brickv.jpg
@@ -126,13 +127,14 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_rotary_poti_brickv.jpg
 
-Play around by turning the potentiometer.
-You should be able to create a similar graph by turning the potentiometer full left
-and then right.
+Turn the potentiometer.
+You should be able to create a similar graph by turning the potentiometer 
+from left left to right and back to left.
 
 After this you can go on with writing your own application.
-See :ref:`Interface and Coding <rotary_poti_programming_interfaces>` section for the API of
-the Rotary Poti Bricklet and examples in your programming language.
+See the :ref:`Programming Interface <rotary_poti_programming_interfaces>` 
+section for the API of the Rotary Poti Bricklet and examples in different 
+programming languages.
 
 
 .. _rotary_poti_programming_interfaces:

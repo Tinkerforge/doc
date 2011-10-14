@@ -36,7 +36,7 @@ Resources
 
 * Schematic (`Download <https://github.com/Tinkerforge/breakout-bricklet/raw/master/hardware/breakout-bricklet-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/breakout_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/breakout-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/breakout-bricklet/zipball/master>`__)
+
 
 

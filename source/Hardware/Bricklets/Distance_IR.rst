@@ -56,20 +56,17 @@ Distance IR
 Description
 -----------
 
-The Distance IR :ref:`Bricklet <product_overview_bricklets>` can extend the features of
-every :ref:`Brick <product_overview_bricks>` by the possibility to
-measure distances. The Bricklet can be attached to `Sharp <http://www.sharpsma.com>`_ 
-analog infrared proximity sensors. 
+The Distance IR :ref:`Bricklet <product_overview_bricklets>` can be used to 
+extend the features of :ref:`Bricks <product_overview_bricks>` by the
+capability to measure distances. `Sharp <http://www.sharpsma.com>`_ analog
+infrared proximity sensors can be attached to the Bricklet. 
 After configuring the attached sensor you can read out the measured distance 
-directly in millimeters. You can configure events triggered when a specified distance
-is exceeded, this supersede polling.
+in millimeters. With configurable events it is possible to react on changing
+distances without polling.
 
-Typically these sensors are used in robotics to measure distances for mapping or 
-localization purposes. But you can also use these sensors in other applications.
-For example you may like to switch something when someone enters a room. 
-You can install the sensor in the entrance in that way that if someone enters the room 
-the measured distance will be smaller.
-
+Typically these types of sensors are used in robotics to measure distances 
+for mapping or localization purposes. But you can also use this sensors in 
+other applications, such as a finding out if a door is opened or closed.
 
 Technical Specifications
 ------------------------
@@ -77,7 +74,7 @@ Technical Specifications
 ================================  ==================================================================
 Property                          Value
 ================================  ==================================================================
-Dimensions                        13mm x 44.6mm (0.51" x 1.76") fitting on backside of sensor
+Dimensions                        13mm x 44.6mm (0.51" x 1.76") fits on backside of sensor
 Weight                            2.0g (w/o cable and sensor)
 Current Consumption               See IR Sensor Datasheet
 --------------------------------  ------------------------------------------------------------------
@@ -88,8 +85,7 @@ Sensor Range                      Depends on attached `Sharp <http://www.sharpsm
                                   * GP2Y0A21YK0F:  10- 80cm (3.94" - 31.50")
                                   * GP2Y0A02YK0F:  20-150cm (7.87" - 59.06")
 
-                                  and others...
-Output: Distance                  Distance range depends on sensor, unit mm, resolution 12bit.                     
+Output: Distance                  Unit mm, resolution 12bit.  
 ================================  ==================================================================
 
 Resources
@@ -97,9 +93,7 @@ Resources
 
 * Schematic (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/hardware/distir-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dist_ir_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
-
+* Project source code and design files (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/zipball/master>`__)
 
 
 .. _distance_ir_bricklet_test:
@@ -107,16 +101,15 @@ Resources
 Test your Distance IR Bricklet
 ------------------------------
 
-To test your Distance IR Bricklet you have to start by installing the
+To test the Distance IR Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
 Connect an infrared distance sensor to the Bricklet and connect it
-to an arbitrary :ref:`Brick <product_overview_bricks>`. 
+to a :ref:`Brick <product_overview_bricks>`. 
 You should have received a suitable cable with the Bricklet.
 
 
@@ -129,16 +122,14 @@ You should have received a suitable cable with the Bricklet.
 
 If you then connect the Brick to the PC over USB,
 you should see a tab named "Distance IR Bricklet" in the Brick Viewer after you
-pressed "connect", select it. 
+pressed "connect". Select it. 
 If everything went as expected you can now see the measured distance
-of the sensor, the output voltage of the distance sensor
+of the sensor, the output voltage of the IR distance sensor
 and a graph that shows the distance over time. 
 
-Click on the Distance IR tab and see how the measured values change dependend 
-on the distance in front of sensor. Move your hand in direction
-of the sensor and see how the distance will decrease. When you move your 
-hand away from the sensor the measured distance should increase.
-A typical graph for this test is depicted in the image below.
+Click on the Distance IR tab and see if the measured values change
+corresponding to the real distance. In the image below we slowly moved a hand
+away from the sensor and to the sensor again.
 
 .. image:: /Images/Bricklets/bricklet_distance_ir_brickv.jpg
    :scale: 100 %
@@ -147,8 +138,9 @@ A typical graph for this test is depicted in the image below.
    :target: ../../_images/Bricklets/bricklet_distance_ir_brickv.jpg
 
 You can now go on with writing your own application.
-See :ref:`Interface and Coding <distir_programming_interfaces>` section for the API of
-the Distance IR Bricklet and examples in your programming language.
+See the :ref:`Programming Interface <distir_programming_interfaces>` section 
+for the API of the Distance IR Bricklet and examples in different programming 
+languages.
 
 
 .. _distir_conf_sensor:
@@ -159,27 +151,29 @@ Configure Infrared Sensor
 The supported infrared sensors simply produce an output voltage
 based on the measured distance. This voltage is measured by the ADC 
 of the connected Brick. To compute the corresponding distance to this voltage
-an voltage/distance mapping is needed. This mapping is stored on the 
-Distance IR Bricklet. If you like to change the infrared distance sensor
-you have to write this voltage/distance mapping if you want correct distances.
+a voltage/distance mapping is needed. This mapping is stored on the 
+Distance IR Bricklet. If you want to use an IR distance sensor not directly
+supported by us, you have to calibrate this voltage/distance mapping 
+yourself.
 
 
 Store Voltage/Distance Mapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To write the voltage/distance mapping you have to connect the Bricklet
-with an Brick to your PC. Start the :ref:`Brick Daemon <brickd>` and the 
+with a Brick to your PC. Start the :ref:`Brick Daemon <brickd>` and the 
 :ref:`Brick Viewer <brickv>`.
 
 Press "connect" in the Brick Viewer and you should see the Distance IR tab.
 Click on it.
 
 Press the "File.." Button and choose an voltage/distance mapping file.
-After this press "Save" Button to write this data on to the Bricklet,
-you will get an graphical representation of the written data.
+After this press the "Save" Button to write the data onto the Bricklet,
+you will get an graphical representation spline interpolation
+that is written.
 
-After this press the reset button on the Brick or cycle power to
-load the new stored voltage/distance mapping.
+After this press the reset button on the Brick or power cycle to
+load the newly stored voltage/distance mapping.
 
 
 
@@ -196,17 +190,13 @@ We provide the voltage/distance mappings for the following sensors:
 	"GP2Y0A21YK0F", "10- 80cm (3.94" - 31.50")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
 	"GP2Y0A02YK0F", "20-150cm (7.87" - 59.06")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A02.txt>`__"
 
-Of course you can write your own voltage/distance mapping for a sensor we 
+You can write your own voltage/distance mapping for a sensor we 
 currently do not offer. Or you can modify an existing mapping file to achieve
 a better quality of your sensor.
 
 A voltage/distance mapping file consists of comments (lines beginning with '#')
-and lines containing one "cm : analog value" tuple each. Look in the provided 
+and lines containing one "cm: analog value" tuple each. Look in the provided 
 files above to get an idea.
-
-
-
-
 
 .. _distir_programming_interfaces:
 
@@ -228,17 +218,18 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    "Python", ":ref:`API <distance_ir_bricklet_python_api>`", ":ref:`Examples <distance_ir_bricklet_python_examples>`", "Installation"
 
 
-Troubleshoot
-------------
+FAQ
+---
 
-The measured distance is wrong
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**You have configured the wrong infrared sensor**
+The distances are wrong
+^^^^^^^^^^^^^^^^^^^^^^^
 
-* Configure the correct infrared sensor, see section :ref:`Configure Infrared Sensor <distir_conf_sensor>`.
+This is likely some kind of calibration problem. First of all you should
+check if the calibration for the correct infrared sensor is installed
+(see :ref:`here <distir_conf_sensor>`) and calibrate the ADC of your
+Brick (see :ref:`here <brickv_adc_calibration>`).
 
-**The ADC of your Brick is uncalibrated:**
-
-* Configure the ADC of your Brick, see :ref:`Brickv documentation <brickv_adc_calibration>`.
-
-
+If the distance measurements are still not precise enough, you have to write
+a voltage/distance mapping that is specific for your device. The
+voltage/distance mapping files provided by us are averaged over several
+sensors.

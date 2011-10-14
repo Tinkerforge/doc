@@ -50,18 +50,19 @@ IO4
 Description
 -----------
 
-With the IO4 :ref:`Bricklet <product_overview_bricklets>` the features of
-every :ref:`Brick <product_overview_bricks>` can be extended by external digital inputs 
+The IO4 :ref:`Bricklet <product_overview_bricklets>` can be used to extend the 
+features of :ref:`Bricks <product_overview_bricks>` by external digital inputs 
 and outputs.
 
-The bricklet features 1x4 pins which can be independently configured as
+The Bricklet features 4 pins that can be independently configured as
 digital inputs or outputs. Each input pin can additionally be configured with
-pullups or as interrupt source. 
-Via terminal blocks all signals can be accessed.
-A single terminal block deliver the switched output voltage and GND. 
+pullups or as interrupt source.
 
-Human interfaces are typical applications of this bricklet since switches, push-bottons and
-LEDs can be easily connected.
+Via terminal blocks all signals can be accessed.
+Two additional terminal blocks deliver the output voltage and GND. 
+
+Human interfaces, such as switches, push-buttons and LEDs are typical 
+applications of this Bricklet.
 
 Technical Specifications
 ------------------------
@@ -73,18 +74,17 @@ Dimensions                        25mm x 25mm (0.98" x 0.98")
 Weight                            6.7g
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Number of I/Os                    1x4
+Number of I/Os                    4
 I/O voltages                      Fixed 3.3V
 ================================  ============================================================
 
 Resources
 ---------
 
-* MCP23017 Datasheet (`Download <https://github.com/Tinkerforge/io16-bricklet/raw/master/datasheets/MCP23017.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/io4-bricklet/raw/master/hardware/io-4-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/io4_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/io4-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/io4-bricklet/zipball/master>`__)
+
 
 
 
@@ -93,19 +93,18 @@ Resources
 Test your IO4 Bricklet
 ----------------------
 
-To test your IO4 Bricklet you have to start by installing the
+To test the IO4 Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Connect your IO4 Bricklet to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable.
-Connect an LED with series resistor to the board
-by attaching the anode to pin 0 and the cathode to one GND pin.
-Additonally connect a button which can short pin 1 to GND
+Connect the IO4 Bricklet to a 
+:ref:`Brick <product_overview_bricks>` with the supplied cable.
+In our test we connected an LED with series resistor to the board
+by attaching the anode to pin 3 and the cathode to a GND pin.
+Additionally we connected a button that can short pin 0 to GND
 (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
@@ -115,7 +114,7 @@ Additonally connect a button which can short pin 1 to GND
    :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
-"IO4 Bricklet" in the Brick Viewer after you pressed “connect”, select it.
+"IO4 Bricklet" in the Brick Viewer after you pressed “connect”. Select it.
 
 .. image:: /Images/Bricklets/bricklet_io4_brickv.jpg
    :scale: 100 %
@@ -124,29 +123,30 @@ If you then connect the Brick to the PC over USB, you should see a tab named
    :target: ../../_images/Bricklets/bricklet_io4_brickv.jpg
 
 
-in this tab you can change the "Debounce Period", 
-it is the period for interrupt callbacks. 
+In this tab you can change the "Debounce Period", 
+it is the debounce time for interrupt callbacks. 
 For example: If you set this value to 100, you will get interrupts
 maximal every 100ms. This is necessary if something that bounces is
 connected to the IO4 Bricklet, such as a button. You can test the optimal
-value in the Brick Viewer such that you can use this value later in your
-own program.
-
+value in the Brick Viewer and use it later in your own program.
+  
 Below the debounce period configuration you can configure the pins.
 Each pin can be configured as input/output and in case of an input pin 
-the pullup option.
-Simply choose a port and a pin configure the direction and value and press 
-save. The current state is depicted in the tabular below.
+as pullup. The current state is depicted in the tabular below.
 
-For example lets test the LED. Configure pin 0 as output and change 
-the value. When the pin is high the LED should light. To test the button 
-configure pin 1 as input pullup. We need the pullup to define a stable
+To test the LED we configure pin 3 as output and change 
+the value. When the pin is high the LED should light up. To test the button 
+configure pin 0 as input pullup. We need the pullup to define a stable
 state when the button is not pressed. Now look in the tabular, you should
-see that you can change the value of the pin by pressing the button.
+see that you can change the value of the pin by toggling the button.
+
+If you don't have a button or a LED you can try to measure voltages with
+a voltage meter or connect a pin with GND or VCC to see changes in the
+Brick Viewer.
 
 After this you can go on with writing your own application.
-See :ref:`Interface and Coding <io4_programming_interfaces>` section for the API of
-the IO4 Bricklet and examples in your programming language.
+See the :ref:`Programming Interface <io4_programming_interfaces>` section for 
+the API of the IO4 Bricklet and examples in different programming languages.
 
 .. _io4_programming_interfaces:
 

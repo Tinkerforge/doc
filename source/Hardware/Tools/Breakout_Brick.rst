@@ -38,6 +38,6 @@ Resources
 
 * Schematic (`Download <https://github.com/Tinkerforge/breakout-brick/raw/master/hardware/breakout-brick-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/breakout_brick_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/breakout-brick/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/breakout-brick/zipball/master>`__)
+
 

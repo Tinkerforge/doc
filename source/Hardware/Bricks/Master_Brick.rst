@@ -131,12 +131,12 @@ Master Brick.
 Test your Master Brick
 ----------------------
 
-To test your Master Brick you have to start by installing the
+To test the Master Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
 (For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings. The latter is only for testing purposes. 
+language API bindings, the latter is for testing purposes. 
 
 Connect the Brick to the PC over USB. You should see a tab named
 "Master Brick" in the Brick Viewer after you pressed "connect". Select it.
@@ -154,8 +154,8 @@ such a board you should see the voltage applied to your Stack and the current
 flowing in.
 
 After this small test you can go on with writing your own application.
-See :ref:`Interface and Coding <master_brick_programming_interfaces>` section 
-for  the API of the Master Brick and examples in your programming language.
+See the :ref:`Programming Interface <master_brick_programming_interfaces>` section 
+for  the API of the Master Brick and examples in different programming languages.
 
 .. _master_brick_programming_interfaces:
 

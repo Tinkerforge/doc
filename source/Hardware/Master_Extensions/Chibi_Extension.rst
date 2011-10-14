@@ -61,8 +61,8 @@ Resources
 * AT86RF212 datasheet (Download)
 * Schematic (Download)
 * Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extensions_dimensions.png>`__)
-* Project (Download)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (Download)
+
 
 .. Chibi Network Assembly
   ----------------------

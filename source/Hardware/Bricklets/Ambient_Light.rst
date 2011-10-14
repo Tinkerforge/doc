@@ -51,14 +51,14 @@ Ambient Light
 Description
 -----------
 
-With the Ambient Light :ref:`Bricklet <product_overview_bricklets>` the features of
-every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
-measure the ambient light.  The measured illuminance can be readout in `lux
-<http://en.wikipedia.org/wiki/Lux>`_ directly. With configureable events
-you can react on changing illuminance without polling.
+The Ambient Light :ref:`Bricklet <product_overview_bricklets>` can be used to 
+extend the features of :ref:`Bricks <product_overview_bricks>` with the 
+capability to measure ambient light. The measured illuminance can be read 
+out in `lux <http://en.wikipedia.org/wiki/Lux>`_. With configurable events
+it is possible to react on changing illuminance without polling.
 
-Typical applications are 
-illuminance dependent switching of backlights, motors etc.
+Typical applications are illuminance dependent switching of 
+backlights, motors etc.
 
 Technical Specifications
 ------------------------
@@ -80,8 +80,7 @@ Resources
 * TEMT6000 datasheet (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/raw/master/datasheets/TEMT6000.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/raw/master/hardware/ambient-light-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/ambient_light_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__ 
+* Project source code and design files (`Download <https://github.com/Tinkerforge/ambient-light-bricklet/zipball/master>`__)
 
 
 .. _ambient_light_bricklet_test:
@@ -89,15 +88,14 @@ Resources
 Test your Ambient Light Bricklet
 --------------------------------
 
-To test your Ambient Light Bricklet you have to start by installing the
+To test the Ambient Light Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming 
-language API bindings (you need this in any case if you want to use the 
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Now you can connect your Ambient Light Bricklet to any
+Now you can connect the Ambient Light Bricklet to any
 :ref:`Brick <product_overview_bricks>`. You should have received a suitable
 cable with the Bricklet. 
 
@@ -109,13 +107,13 @@ cable with the Bricklet.
 
 If you then connect the Brick to the PC over USB,
 you should see a tab named "Ambient Light Bricklet" in the Brick Viewer after 
-you pressed "connect", select it.
+you pressed "connect". Select it.
 
-If everything went as expected you can now see the exact illuminance in lux,
+If everything went as expected you can now see the illuminance in lux,
 a graphical representation of the illuminance and a graph that shows the
-illuminance over time. A good test of the sensor is to darken the room and
+illuminance over time. A good test for the sensor is to darken the room and
 slowly move a flashlight over the sensor, the graph should then look
-approximately like in the screenshot below.
+approximately as in the screenshot shown below.
 
 .. image:: /Images/Bricklets/bricklet_ambient_light_brickv.jpg
    :scale: 100 %
@@ -123,10 +121,9 @@ approximately like in the screenshot below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_ambient_light_brickv.jpg
 
-As a next step you might pick your favorite of the available programming
-languages (see :ref:`below <ambl_programming_interfaces>`) and understand and 
-execute one of the available examples. From there it should be straight 
-forward to integrate the Ambient Light Bricklet into your project.
+After this test you can go on with writing your own application.
+See the :ref:`Programming Interface <ambl_programming_interfaces>` section for 
+the API of the Current12 Bricklet and examples in different programming languages.
 
 .. _ambl_programming_interfaces:
 

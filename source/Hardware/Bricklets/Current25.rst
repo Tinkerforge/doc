@@ -3,11 +3,10 @@
 Current25
 =========
 
-
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
+    {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+    {{ tfdocstart() }}
     {{ 
 		tfdocimg("Bricklets/bricklet_current_tilted_350.jpg", 
 		         "Bricklets/bricklet_current_tilted_100.jpg", 
@@ -30,7 +29,7 @@ Current25
 		tfdocimg("Bricklets/bricklet_current_master_350.jpg", 
 		         "Bricklets/bricklet_current_master_100.jpg", 
 		         "Bricklets/bricklet_current_master_1200.jpg", 
-		         "Current25 Bricklet with connected Master Brick") 
+		         "Current25 Bricklet with Master Brick") 
 	}}
 	{{ 
 	    tfdocimg("Bricklets/bricklet_current25_brickv_350.jpg", 
@@ -46,18 +45,19 @@ Current25
 	}}
 	{{ tfdocend() }}
 
+
 Description
 -----------
 
-The Current25 :ref:`Bricklet <product_overview_bricklets>` extend the features
-of an :ref:`Brick <product_overview_bricks>` by bidirectional current flow
-measurments up to 25 Ampere. 
-The measured current can be readout in `Ampere <http://en.wikipedia.org/wiki/Ampere>`_ 
-directly. Additionally events can be configured, triggered when a specified current is 
-exceeded.
+The Current25 :ref:`Bricklet <product_overview_bricklets>` can be used to 
+extend the features of :ref:`Bricks <product_overview_bricks>` by 
+bidirectional current flow measurments of up to 25 Ampere. 
+Additionally events can be configured to receive signals when a specified 
+current is exceeded.
 
-Typical applications can be found in robotics. The bidirectional current 
-flow measurement is advantageous since you can distinguish between charge and discharge.
+Typical applications can be found in robotics. With the bidirectional current 
+flow measurement it is possible distinguish between 
+charge and discharge.
 
 Technical Specifications
 ------------------------
@@ -70,17 +70,17 @@ Weight                            3.9g
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Sensor                            ACS711 25A Version
-Output: Current                   -25A to 25A, unit 10mA, resolution 12bit
+Output: Current                   -25A to 25A, unit 1mA, resolution 12bit
 ================================  ============================================================
 
 Resources
 ---------
 
-* ACS711 Datasheet (`Download <https://github.com/Tinkerforge/current25-bricklet/blob/master/datasheets/ACS711.pdf>`__)
+* ACS711 Datasheet (`Download <https://github.com/Tinkerforge/current25-bricklet/raw/master/datasheets/ACS711.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/current25-bricklet/raw/master/hardware/current-25-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/current25_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/current25-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/current25-bricklet/zipball/master>`__)
+
 
 
 .. _current25_bricklet_test:
@@ -88,18 +88,19 @@ Resources
 Test your Current25 Bricklet
 ----------------------------
 
-To test your Current25 Bricklet you have to start by installing the
+To test the Current25 Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Now you can connect your Current25 Bricklet to any
+Now you can connect the Current25 Bricklet to any
 :ref:`Brick <product_overview_bricks>`. You should have received a suitable
-cable with the Bricklet. If you like you can connect a Motor
-and a Battery to the Bricklet as displayed in the following image.
+cable with the Bricklet. Connect a Motor
+and a Battery to the Bricklet as displayed in the following image
+(or anything else connected in series to the Current25 Bricklet that 
+produces a current).
 
 .. image:: /Images/Bricklets/bricklet_current_master_600.jpg
    :scale: 100 %
@@ -109,9 +110,9 @@ and a Battery to the Bricklet as displayed in the following image.
 
 If you connect the Brick to the PC over USB,
 you should see a tab named "Current25 Bricklet" in the Brick Viewer after you
-pressed "connect", select this tab.
-If everything went as expected you can now see the exact current in Ampere 
-and a graph that shows the current over time. 
+pressed "connect". Select this tab.
+If everything went as expected you can now see the current used by the 
+motor and a graph that shows the current over time. 
 
 
 .. image:: /Images/Bricklets/bricklet_current25_brickv.jpg
@@ -120,13 +121,13 @@ and a graph that shows the current over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_current25_brickv.jpg
 
-In our test we have connected the battery not from beginning. 
-When connecting the battery, you
-can see the high current peak caused by the motor when start running.
-   
+In the screenshot you can see a high current peak. This is caused by the
+starting of the motor when the battery is connected. 
+
 After this test you can go on with writing your own application.
-See :ref:`Interface and Coding <current25_programming_interfaces>` section for 
-the API of the Current25 Bricklet and examples in your programming language.
+See the :ref:`Programming Interface <current25_programming_interfaces>` section for 
+the API of the Current25 Bricklet and examples in different programming languages.
+
 
 .. _current25_programming_interfaces:
 
@@ -146,4 +147,5 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    "C#", ":ref:`API <current25_bricklet_csharp_api>`", ":ref:`Examples <current25_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <current25_bricklet_java_api>`", ":ref:`Examples <current25_bricklet_java_examples>`", "Installation"
    "Python", ":ref:`API <current25_bricklet_python_api>`", ":ref:`Examples <current25_bricklet_python_examples>`", "Installation"
+
 

@@ -50,14 +50,15 @@ Humidity
 Description
 -----------
 
-With the Humidity :ref:`Bricklet <product_overview_bricklets>` the features of
-every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
-measure the `relative humidity <http://en.wikipedia.org/wiki/Relative_humidity>`_. 
-The measured humidity can be readout in percent directly, no conversions are 
-necessary. You can configure events triggered when a particular humidity threshold 
-is reached so that no polling is necessary.
+The Humidity :ref:`Bricklet <product_overview_bricklets>` can be used to
+extend the features of :ref:`Bricks <product_overview_bricks>` by the 
+capability to measure 
+`relative humidity <http://en.wikipedia.org/wiki/Relative_humidity>`_. 
+The measured humidity can be read out directly in percent, no conversions are 
+necessary. With configurable events it is possible to react on changing humidity 
+without polling.
 
-A weather station is a typical application for this sensor, but it can be also
+A weather station is a typical application for this sensor, but it can also be
 used in drying applications, environment monitoring etc.
 
 Technical Specifications
@@ -80,9 +81,7 @@ Resources
 * HIH-5030 Datasheet (`Download <https://github.com/Tinkerforge/humidity-bricklet/raw/master/datasheets/hih-5030.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/humidity-bricklet/raw/master/hardware/humidity-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/humidity_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/humidity-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
-
+* Project source code and design files (`Download <https://github.com/Tinkerforge/humidity-bricklet/zipball/master>`__)
 
 
 .. _humidity_bricklet_test:
@@ -91,16 +90,16 @@ Resources
 Test your Humidity Bricklet
 ---------------------------
 
-To test your Humidity Bricklet you have to start by installing the
+To test the Humidity Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Connect your Humidity Bricklet to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+Connect the Humidity Bricklet to a 
+:ref:`Brick <product_overview_bricks>` with the supplied cable 
+(see picture below).
 
 .. image:: /Images/Bricklets/bricklet_humidity_master_600.jpg
    :scale: 100 %
@@ -114,18 +113,20 @@ Select it.
 If everything went as expected you can now see the measured relative humidity
 and a graph that shows the humidity over time.
 
+To test the sensor breath over the sensor. The relative humidity should rise
+as long as you breath and fall again afterwards.
+
 .. image:: /Images/Bricklets/bricklet_humidity_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of Humidity Bricklet
    :align: center
    :target: ../../_images/Bricklets/bricklet_humidity_brickv.jpg
 
-To test the sensor breath over the sensor and see the relative humidity rising.
-It will fall again when you stop breathing over the sensor.
 
 After this test you can go on with writing your own application.
-See :ref:`Interface and Coding <humidity_programming_interfaces>` section for the API of
-the Humidity Bricklet and examples in your programming language.
+See the :ref:`Programming Interface <humidity_programming_interfaces>` 
+section for the API of the Humidity Bricklet and examples in different 
+programming languages.
 
 
 .. _humidity_programming_interfaces:
@@ -146,5 +147,3 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    "C#", ":ref:`API <humidity_bricklet_csharp_api>`", ":ref:`Examples <humidity_bricklet_csharp_examples>`", "Installation"
    "Java", ":ref:`API <humidity_bricklet_java_api>`", ":ref:`Examples <humidity_bricklet_java_examples>`", "Installation"
    "Python", ":ref:`API <humidity_bricklet_python_api>`", ":ref:`Examples <humidity_bricklet_python_examples>`", "Installation"
-
-

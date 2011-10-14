@@ -35,7 +35,7 @@ Resources
 
 * Schematic (`Download <https://github.com/Tinkerforge/dc-adapter/raw/master/hardware/dc-adapter-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dc_adapter_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/dc-adapter/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/dc-adapter/zipball/master>`__)
+
 
 

@@ -55,23 +55,21 @@ Dual Relay
 Description
 -----------
 
-With the Dual Relay :ref:`Bricklet <product_overview_bricklets>` the features of
-every :ref:`Brick <product_overview_bricks>` can be extended by two 
+The Dual Relay :ref:`Bricklet <product_overview_bricklets>` can be used to
+extend the features of :ref:`Bricks <product_overview_bricks>` by two 
 `relays <http://en.wikipedia.org/wiki/Relay>`_. Each relay has three
 terminals such that the terminal in the middle is electrically connected to 
 the terminal left or right depending on the state. 
 The state is visualized by a LED.
 
-You can use this Bricklet to switch power-supplies, motors, lamps, etc.
+You can use this Bricklet to switch power supplies, motors, lamps, etc.
 Consider the maximum voltage and current.
 
 .. warning::
 
-   Be aware that handling of higher voltages is potentially dangerous!
-
-   Note that terminals and contacts are not insulated. 
-   Do not touch when switching higher voltages. 
-   Doing so might cause electric shock.
+   Terminals and contacts are not insulated. If you want
+   to switch higher voltages, consider to put the Dual Relay Bricklet
+   in a casing. Touching the contacts is potentially life-threatening.
 
 Technical Specifications
 ------------------------
@@ -93,8 +91,8 @@ Resources
 * Relay Datasheet (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/datasheets/ORWH-SH.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/hardware/dual-relay-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dual_relay_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/zipball/master>`__)
+
 
 
 .. _dual_relay_bricklet_test:
@@ -102,16 +100,15 @@ Resources
 Test your Dual Relay Bricklet
 -----------------------------
 
-To test your Dual Relay Bricklet you have to start by installing the
+To test the Dual Relay Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Connect your Dual Relay Bricklet to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+Connect the Dual Relay Bricklet to a 
+:ref:`Brick <product_overview_bricks>` with the supplied cable (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_dual_relay_master_600.jpg
    :scale: 100 %
@@ -120,9 +117,9 @@ Connect your Dual Relay Bricklet to an arbitrary
    :target: ../../_images/Bricklets/bricklet_dual_relay_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
-"Dual Relay Bricklet" in the Brick Viewer after you pressed "connect", 
-select it.
-If everything went as expected you the Brick Viewer should look like
+"Dual Relay Bricklet" in the Brick Viewer after you pressed "connect". 
+Select it.
+If everything went as expected the Brick Viewer should look as
 depicted below.
 
 .. image:: /Images/Bricklets/bricklet_dual_relay_brickv.jpg
@@ -132,11 +129,12 @@ depicted below.
    :target: ../../_images/Bricklets/bricklet_dual_relay_brickv.jpg
 
 Play around with the two relay buttons,
-you should hear the relay switching when toggeling the buttons.
+you should hear the relay switching when toggling the buttons.
 
 After this you can go on with writing your own application.
-See :ref:`Interface and Coding <dualrelay_programming_interfaces>` section for the API of
-the Dual Relay Bricklet and examples in your programming language.
+See the :ref:`Programming Interface <dualrelay_programming_interfaces>` section 
+for the API of the Dual Relay Bricklet and examples in different programming 
+languages.
 
 
 .. _dualrelay_programming_interfaces:

@@ -49,12 +49,13 @@ Voltage
 Description
 -----------
 
-With the Voltage :ref:`Bricklet <product_overview_bricklets>` the features of
-every :ref:`Brick <product_overview_bricks>` can be extended by the possibility to
-measure the voltages. It is equipped with a terminal block which let you 
-easily connect the voltage to be measured. The voltage can be readout in `Volt
-<http://en.wikipedia.org/wiki/Volt>`_ directly. Events can be defined which
-will be triggered when the voltages exceeds a specified value.
+The Voltage :ref:`Bricklet <product_overview_bricklets>` can be used to 
+extend the features of :ref:`Bricks <product_overview_bricks>` by the 
+capability to measure the voltages.
+The voltage can be read out directly in `Volt
+<http://en.wikipedia.org/wiki/Volt>`_ without conversion. 
+With configurable events it is possible to react on changing
+voltages without polling.
 
 Technical Specifications
 ------------------------
@@ -73,26 +74,25 @@ Output: Voltage                   0V - 50V, unit: mV, resolution 12bit
 Resources
 ---------
 
-* Schematic (`Download <https://github.com/Tinkerforge/voltage-bricklet/raw/master/hardware/voltage-bricklet-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/voltage-bricklet/raw/master/hardware/voltage-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/voltage_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/voltage-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/voltage-bricklet/zipball/master>`__)
+
 
 .. _voltage_bricklet_test:
 
 Test your Voltage Bricklet
 --------------------------
 
-To test your Voltage Bricklet you have to start by installing the
+To test the Voltage Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Connect your Voltage Bricklet to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable.
+Connect the Voltage Bricklet to a 
+:ref:`Brick <product_overview_bricks>` with the supplied cable.
 Additionally connect a voltage source to the Bricklet. 
 For testing purposes we have connected a battery
 (see picture below).
@@ -105,8 +105,8 @@ For testing purposes we have connected a battery
 
 If you connect the Brick to the PC over USB,
 you should see a tab named "Voltage Bricklet" in the Brick Viewer after you
-pressed "connect", select this tab.
-If everything went as expected you can now see the exact voltage in volt
+pressed "connect". Select this tab.
+If everything went as expected you can now see the voltage in volt
 and a graph that shows the voltage over time. 
 
 .. image:: /Images/Bricklets/bricklet_voltage_brickv.jpg
@@ -115,12 +115,10 @@ and a graph that shows the voltage over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_brickv.jpg
 
-In our test we have connected the battery not from beginning.
-You can see the rising voltage after connecting the battery in the graph.
-
 After this you can go on with writing your own application.
-See :ref:`Interface and Coding <voltage_programming_interfaces>` section for 
-the API of the Voltage Bricklet and examples in your programming language.
+See the :ref:`Programming Interface <voltage_programming_interfaces>` section 
+for the API of the Voltage Bricklet and examples in different
+programming languages.
 
 
 .. _voltage_programming_interfaces:

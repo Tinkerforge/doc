@@ -49,15 +49,15 @@ Current12
 Description
 -----------
 
-The Current12 :ref:`Bricklet <product_overview_bricklets>` extend the features
-of an :ref:`Brick <product_overview_bricks>` by bidirectional current flow
-measurments up to 12.5 Ampere. 
-The measured current can be readout in `Ampere <http://en.wikipedia.org/wiki/Ampere>`_ 
-directly. Additionally events can be configured, triggered when a specified current is
-exceeded.
+The Current12 :ref:`Bricklet <product_overview_bricklets>` can be used to 
+extend the features of :ref:`Bricks <product_overview_bricks>` by 
+bidirectional current flow measurments of up to 12.5 Ampere. 
+Additionally events can be configured to receive signals when a specified 
+current is exceeded.
 
-Typical applications can be found in robotics. The bidirectional current 
-flow measurement is advantageous since you can distinguish between charge and discharge.
+Typical applications can be found in robotics. With the bidirectional current 
+flow measurement it is possible distinguish between 
+charge and discharge.
 
 Technical Specifications
 ------------------------
@@ -76,11 +76,11 @@ Output: Current                   -12.5A to 12.5A, unit 1mA, resolution 12bit
 Resources
 ---------
 
-* ACS711 Datasheet (`Download <https://github.com/Tinkerforge/current12-bricklet/blob/master/datasheets/ACS711.pdf>`__)
+* ACS711 Datasheet (`Download <https://github.com/Tinkerforge/current12-bricklet/raw/master/datasheets/ACS711.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/current12-bricklet/raw/master/hardware/current-12-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/current12_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/current12-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/current12-bricklet/zipball/master>`__)
+
 
 
 .. _current12_bricklet_test:
@@ -88,18 +88,19 @@ Resources
 Test your Current12 Bricklet
 ----------------------------
 
-To test your Current12 Bricklet you have to start by installing the
+To test the Current12 Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-Now you can connect your Current12 Bricklet to any
+Now you can connect the Current12 Bricklet to any
 :ref:`Brick <product_overview_bricks>`. You should have received a suitable
-cable with the Bricklet. If you like you can connect a Motor
-and a Battery to the Bricklet as displayed in the following image.
+cable with the Bricklet. Connect a Motor
+and a Battery to the Bricklet as displayed in the following image 
+(or anything else connected in series to the Current12 Bricklet that 
+produces a current).
 
 .. image:: /Images/Bricklets/bricklet_current_master_600.jpg
    :scale: 100 %
@@ -109,9 +110,9 @@ and a Battery to the Bricklet as displayed in the following image.
 
 If you connect the Brick to the PC over USB,
 you should see a tab named "Current12 Bricklet" in the Brick Viewer after you
-pressed "connect", select this tab.
-If everything went as expected you can now see the exact current in Ampere 
-and a graph that shows the current over time. 
+pressed "connect". Select this tab.
+If everything went as expected you can now see the current used by the 
+motor and a graph that shows the current over time. 
 
 
 .. image:: /Images/Bricklets/bricklet_current12_brickv.jpg
@@ -120,13 +121,12 @@ and a graph that shows the current over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_current12_brickv.jpg
 
-In our test we have connected the battery not from beginning. 
-When connecting the battery, you
-can see the high current peak caused by the motor when start running.
-   
+In the screenshot you can see a high current peak. This is caused by the
+starting of the motor when the battery is connected. 
+
 After this test you can go on with writing your own application.
-See :ref:`Interface and Coding <current12_programming_interfaces>` section for 
-the API of the Current12 Bricklet and examples in your programming language.
+See the :ref:`Programming Interface <current12_programming_interfaces>` section for 
+the API of the Current12 Bricklet and examples in different programming languages.
 
 
 .. _current12_programming_interfaces:

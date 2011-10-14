@@ -50,15 +50,14 @@ Piezo Buzzer
 Description
 -----------
 
-The `Piezo-Buzzer <http://en.wikipedia.org/wiki/Buzzer>`_
-:ref:`Bricklet <product_overview_bricklets>` let
-extend you the features of every :ref:`Brick <product_overview_bricks>` by 
-audio signaling. The device can output 1kHz beeps in different
-lengths. It is possible to beep a specified time or to transmit a
+The `Piezo Buzzer <http://en.wikipedia.org/wiki/Buzzer>`_
+:ref:`Bricklet <product_overview_bricklets>` ca be used to
+extend the features of :ref:`Bricks <product_overview_bricks>` by
+the capability to beep. The device can output 1kHz beeps in different
+lengths. It is possible to beep for a specified timespan or to transmit a
 `Morse Code <http://en.wikipedia.org/wiki/Morse_code>`_ string.
 
-It is applicable different signaling applications like signal events
-("email received").
+A typical application is to beep on specific events (e.g. "email received").
 
 Technical Specifications
 ------------------------
@@ -79,8 +78,8 @@ Resources
 * Buzzer Datasheet (`Download <https://github.com/Tinkerforge/piezo-buzzer-bricklet/raw/master/datasheets/ef532_ps.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/piezo-buzzer-bricklet/raw/master/hardware/piezo-buzzer-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/piezo_buzzer_bricklet_dimensions.png>`__)
-* Project (`Download <https://github.com/Tinkerforge/piezo-buzzer-bricklet/zipball/master>`__)
-* `Kicad Project Page <http://kicad.sourceforge.net/>`__
+* Project source code and design files (`Download <https://github.com/Tinkerforge/piezo-buzzer-bricklet/zipball/master>`__)
+
 
 
 
@@ -89,16 +88,16 @@ Resources
 Test your Piezo Buzzer Bricklet
 -------------------------------
 
-To test your Piezo Buzzer Bricklet you have to start by installing the
+To test the Piezo Buzzer Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For an installation guide click :ref:`here <brickd_installation>`
+(For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings (you need this in any case if you want to use the
-Bricks/Bricklets). The latter is only for testing purposes.
+language API bindings, the latter is for testing purposes.
 
-For a simple test connect your Piezo Buzzer Bricklet to an arbitrary 
-:ref:`Brick <product_overview_bricks>` over the supplied cable (see picture below).
+For a simple test connect the Piezo Buzzer Bricklet to a 
+:ref:`Brick <product_overview_bricks>` with the supplied cable 
+(see picture below).
 
 .. image:: /Images/Bricklets/bricklet_piezo_buzzer_master_600.jpg
    :scale: 100 %
@@ -107,9 +106,9 @@ For a simple test connect your Piezo Buzzer Bricklet to an arbitrary
    :target: ../../_images/Bricklets/bricklet_piezo_buzzer_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
-"Piezo Buzzer Bricklet" in the Brick Viewer after you pressed "connect", 
-select it.
-If everything went as expected you the Brick Viewer should look like
+"Piezo Buzzer Bricklet" in the Brick Viewer after you pressed "connect". 
+Select it.
+If everything went as expected the Brick Viewer should look as
 depicted below.
 
 .. image:: /Images/Bricklets/bricklet_piezo_buzzer_brickv.jpg
@@ -118,12 +117,13 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_piezo_buzzer_brickv.jpg
 
-Enter a morse code you want to morse. You can enter
-also the duration of every tone. Play around. 
+Generate a beep by pressing "Send Beep". You should hear a beep with the
+specified duration.
+
 You can now go on with writing your own application.
-See :ref:`Interface and Coding <piezobuzzer_programming_interfaces>` section 
-for the API of the Piezo Buzzer Bricklet and examples in your programming 
-language.
+See the :ref:`Programming Interface <piezobuzzer_programming_interfaces>`
+section for the API of the Piezo Buzzer Bricklet and examples in your 
+programming language.
 
 
 .. _piezobuzzer_programming_interfaces:
@@ -144,5 +144,3 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    "C#", ":ref:`API <piezo_buzzer_bricklet_csharp_api>`", ":ref:`Examples <piezo_buzzer_bricklet_csharp_examples>`", "Installation"
    "Python", ":ref:`API <piezo_buzzer_bricklet_python_api>`", ":ref:`Examples <piezo_buzzer_bricklet_python_examples>`", "Installation"
    "Java", ":ref:`API <piezo_buzzer_bricklet_java_api>`", ":ref:`Examples <piezo_buzzer_bricklet_java_examples>`", "Installation"
-
-
