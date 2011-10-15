@@ -37,7 +37,7 @@ You will need the Brick Daemon if you want to use any Bricks and Bricklets. The 
 
 If you use a linux distribution that does not use .debs or .rpms, you can install the Brick Viewer and the Brick Daemon from source.
 
-\*: Comming soon
+\*: Coming soon
 
 For older Versions click `here <http://download.tinkerforge.com/tools/>`__.
 

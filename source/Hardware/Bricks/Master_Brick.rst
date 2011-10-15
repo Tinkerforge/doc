@@ -180,7 +180,7 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
 Low Level Programming Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. note::  Comming soon! 
+ .. note::  Coming soon! 
 
   A special firmware is planned to control the Master Brick over 
   SPI, I2C and UART.

@@ -49,7 +49,7 @@ IMU Brick
 Description
 -----------
 
- .. note::  Comming soon! The IMU Brick is not yet ready to buy.
+ .. note::  Coming soon! The IMU Brick is not yet ready to buy.
 
 The IMU :ref:`Brick <product_overview_bricks>` is a equipped with a 32-bit ARM
 microcontroller and an `inertial measurement unit
@@ -146,7 +146,7 @@ Programming Interfaces
 High Level Programming Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. note::  Comming soon! 
+ .. note::  Coming soon! 
 
 See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
@@ -163,7 +163,7 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
 Low Level Programming Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. note::  Comming soon! 
+ .. note::  Coming soon! 
 
   A special firmware to control the IMU Brick over 
   SPI, I2C and UART is planned.

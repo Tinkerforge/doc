@@ -247,7 +247,7 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
 Low Level Programming Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. note::  Comming soon! 
+ .. note::  Coming soon! 
 
   A special firmware to control the DC Brick over 
   SPI, I2C and UART is planned.
