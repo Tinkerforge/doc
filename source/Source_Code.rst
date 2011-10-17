@@ -66,7 +66,7 @@ bug tracker.
  Voltage | `git://github.com/Tinkerforge/voltage-bricklet.git <https://github.com/Tinkerforge/voltage-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/voltage-bricklet/issues>`__
  | | 
  **Other Boards**: | | 
- Step Down Powersupply | `git://github.com/Tinkerforge/step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Report Bug <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
+ Step-Down Power Supply | `git://github.com/Tinkerforge/step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Report Bug <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
  DC Adapter | `git://github.com/Tinkerforge/dc-adapter.git <https://github.com/Tinkerforge/dc-adapter/>`__ | `Report Bug <https://github.com/Tinkerforge/dc-adapter/issues>`__
  Breakout Brick | `git://github.com/Tinkerforge/breakout-brick.git <https://github.com/Tinkerforge/breakout-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/breakout-brick/issues>`__
  Breakout Bricklet | `git://github.com/Tinkerforge/breakout-bricklet.git <https://github.com/Tinkerforge/breakout-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/breakout-bricklet/issues>`__

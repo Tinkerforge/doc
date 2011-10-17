@@ -1,7 +1,7 @@
 .. _servo_brick:
 
-Servo Brick
-===========
+Servo
+=====
 
 .. raw:: html
 

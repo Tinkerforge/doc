@@ -87,7 +87,8 @@ Master Extensions
    :maxdepth: 1
    :glob:
 
-   Hardware/Master_Extensions/*
+   Hardware/Master_Extensions/Chibi_Extension
+   Hardware/Master_Extensions/RS485_Extension
 
 **************
 Power Supplies
@@ -107,7 +108,9 @@ Tools
    :maxdepth: 1
    :glob:
 
-   Hardware/Tools/*
+   Hardware/Tools/Breakout_Bricklet
+   Hardware/Tools/Debug_Brick
+   Hardware/Tools/DC_Jack_Adapter
 
 
 .. toctree::
@@ -117,11 +120,3 @@ Tools
    Software/*
    Software/Bricks/*
    Software/Bricklets/*
-
-******************
-Indices and tables
-******************
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
