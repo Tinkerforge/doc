@@ -38,9 +38,9 @@ IMU
 	             "IMU Brick") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/dc_brick_dimensions_350.png", 
-	             "Dimensions/dc_brick_dimensions_100.png", 
-	             "Dimensions/dc_brick_dimensions.png", 
+	    tfdocimg("Dimensions/imu_brick_dimensions_350.png", 
+	             "Dimensions/imu_brick_dimensions_100.png", 
+	             "Dimensions/imu_brick_dimensions.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

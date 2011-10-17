@@ -50,9 +50,9 @@ Servo
 	             "Servo Brick") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/dc_brick_dimensions_350.png", 
-	             "Dimensions/dc_brick_dimensions_100.png", 
-	             "Dimensions/dc_brick_dimensions.png", 
+	    tfdocimg("Dimensions/servo_brick_dimensions_350.png", 
+	             "Dimensions/servo_brick_dimensions_100.png", 
+	             "Dimensions/servo_brick_dimensions.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}
