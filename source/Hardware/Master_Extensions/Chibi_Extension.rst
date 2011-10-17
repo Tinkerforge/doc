@@ -5,63 +5,87 @@ Chibi Extension
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocend() }}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ 
+	    tfdocimg("Extensions/extension_chibi_tilted_350.jpg", 
+	             "Extensions/extension_chibi_tilted_100.jpg", 
+	             "Extensions/extension_chibi_tilted_800.jpg", 
+	             "Chibi Extension") 
+	}}
+	{{ 
+	    tfdocimg("Extensions/extension_chibi_tilted_complete_350.jpg", 
+	             "Extensions/extension_chibi_tilted_complete_100.jpg", 
+	             "Extensions/extension_chibi_tilted_complete_800.jpg", 
+	             "Chibi Extension") 
+	}}
+	{{ 
+	    tfdocimg("Extensions/extension_chibi_top_350.jpg", 
+	             "Extensions/extension_chibi_top_100.jpg", 
+	             "Extensions/extension_chibi_top_800.jpg", 
+	             "Chibi Extension") 
+	}}
+	{{ 
+	    tfdocimg("Extensions/extension_chibi_bottom_350.jpg", 
+	             "Extensions/extension_chibi_bottom_100.jpg", 
+	             "Extensions/extension_chibi_bottom_800.jpg", 
+	             "Chibi Extension") 
+	}}
+	{{ tfdocend() }}
 
 
 Description
 -----------
 
-This board is equipped with a AT86RF212 900Mhz Transceiver of 
-`Atmel <http://www2.atmel.com/>`_. Typically these transceivers are used
-for long range `Zigbee <http://en.wikipedia.org/wiki/Zigbee>`_ networks.
-Since Zigbee licences are not GPL compatible we decided to use a free implementation
-by Akriba. See this 
-`article <http://freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`__
-for more information about chibi. In this 
-`article <http://freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`__
-the GPL problem of Zigbee is explained.
+The Chibi Extension is equipped with a 900Mhz radio transceiver. Typically
+this transceiver is used for long range 
+`Zigbee <http://en.wikipedia.org/wiki/Zigbee>`_ networks. Unfortunately
+the Zigbee terms of use do forbid a GPL implementation of the
+Zigbee protocol stack (see `here <http://freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`__ for more information).
 
-Two or more of this 
-:ref:`Master Extension <product_overview_master_extensions>` with one
-:ref:`Master Brick <master_brick>` each
-can be used to create a Chibi network.
-Each Master Brick can be a master of a stack. Using our
-:ref:`High Level Concept <pi_hlpi>` this network
-is completely transparent, which means that each device in this bus
-is usable like it would be connected to the PC with its own USB connection.
-You can write the same programming code.
+Thus we decided to port the open source `Chibi Wireless Stack <http://freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`__ for this extension. It is a
+simple and small protocol stack that is perfectly suited for our use cases.
+
+In good conditions a **range of up to 2km** can be achieved outdoors.
+
+To establish a Chibi network with Bricks, two Chibi Extensions and two
+Master Bricks are needed. Both Master Bricks can be connected to a
+full stack of Bricks and Bricklets, whereas one Master Brick is Battery
+powered and one is connected with USB. From a programming perspective
+the Chibi network is completely transparent, i.e. the two stacks can
+be used exactly the same way as if they were both connected via USB.
+
+It is also possible to create a network with several Chibi Extension where
+only one is connected via USB (many-to-one routing).
 
 .. note:: Coming soon! 
-   Currently not available. Please be patient.
+   The Chibi Extension is not yet available to buy.
 
-Technical Specifications
-------------------------
+..
+	Technical Specifications
+	------------------------
 
-================================  ============================================================
-Property                          Value
-================================  ============================================================
-Device Current Consumption        TBD
-Range (Outdoor/Indoor)            TBD/TBD
-Maximum Baud Rate                 TBD
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
-Weight                            13g
-================================  ============================================================
+	================================  ============================================================
+	Property                          Value
+	================================  ============================================================
+	Device Current Consumption        TBD
+	Range (Outdoor/Indoor)            TBD/TBD
+	Maximum Baud Rate                 TBD
+	--------------------------------  ------------------------------------------------------------
+	--------------------------------  ------------------------------------------------------------
+	Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
+	Weight                            13g
+	================================  ============================================================
 
 
 
-Resources
----------
- 
-* AT86RF212 datasheet (Download)
-* Schematic (Download)
-* Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extensions_dimensions.png>`__)
-* Project source code and design files (Download)
+	Resources
+	---------
+	 
+	* AT86RF212 datasheet (Download)
+	* Schematic (Download)
+	* Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extensions_dimensions.png>`__)
+	* Project source code and design files (Download)
 
 
 .. Chibi Network Assembly

@@ -63,10 +63,10 @@ and can be used within a stack.
 Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device. 
 
-The dc motor can be powered by an external powersupply connected
-directly to the Brick or by the stack internal powersupply.
-If an external powersupply is connected the Brick switches
-automatically to this powersupply.
+The dc motor can be powered by an external power supply connected
+directly to the Brick or by the stack internal powe rsupply.
+If an external power supply is connected the Brick switches
+automatically to this power supply.
 
 Controlling the device is possible in several ways. You can control it via 
 a PC connection. This connection can be established directly with a **USB**
@@ -285,7 +285,7 @@ On Device Programming Interface
 
 	**Solutions:**
 	 * Check input voltage. If too low, increase voltage.
-	 * More powerful powersupply. Typically batteries are better suited than wall power adapters.
+	 * More powerful power supply. Typically batteries are better suited than wall power adapters.
 	 * In case of you are using batteries to power the device, check the voltage of
 	   the batteries and keep in mind that this voltage can break-in while delivering
 	   high currents. 

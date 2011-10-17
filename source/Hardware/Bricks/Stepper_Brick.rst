@@ -1,7 +1,7 @@
 .. _stepper_brick:
 
-Stepper Brick
-=============
+Stepper
+=======
 
 .. raw:: html
 
@@ -44,9 +44,9 @@ Stepper Brick
 	             "Stepper Brick") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/dc_brick_dimensions_350.png", 
-	             "Dimensions/dc_brick_dimensions_100.png", 
-	             "Dimensions/dc_brick_dimensions.png", 
+	    tfdocimg("Dimensions/stepper_brick_dimensions_350.png", 
+	             "Dimensions/stepper_brick_dimensions_100.png", 
+	             "Dimensions/stepper_brick_dimensions.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

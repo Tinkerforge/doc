@@ -1,7 +1,7 @@
 .. _master_brick:
 
-Master Brick
-============
+Master
+======
 
 .. raw:: html
 
@@ -50,9 +50,9 @@ Master Brick
 	             "Master Brick") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/dc_brick_dimensions_350.png", 
-	             "Dimensions/dc_brick_dimensions_100.png", 
-	             "Dimensions/dc_brick_dimensions.png", 
+	    tfdocimg("Dimensions/master_brick_dimensions_350.png", 
+	             "Dimensions/master_brick_dimensions_100.png", 
+	             "Dimensions/master_brick_dimensions.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}
