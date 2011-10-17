@@ -40,12 +40,11 @@ connect a motor and a battery as shown the picture below (You can of
 course also use a power supply instead of the battery or e.g. a Servo Brick
 and a servo instead of the DC Brick and a motor):
 
-.. image:: /Images/Bricks/dc_brick_with_motor_battery.jpg
+.. image:: /Images/Bricks/brick_dc_motor_setup_600.jpg
    :scale: 100 %
-   :alt: DC Brick with connected motor and battery
+   :alt: DC Brick with connected Motor 
    :align: center
-   :target: ../_images/Bricks/dc_brick_with_motor_battery.jpg
-
+   :target: ../../_images/Bricks/brick_dc_motor_setup_1200.jpg
 
 Start the Brick Viewer and connect the
 DC Brick over a USB cable with your PC. After pressing the "connect"
@@ -163,22 +162,22 @@ Phase 1: Testing
 Connect the Rotary Poti Bricklet to your DC Brick as depicted in the image 
 below.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Tutorial/tutorial_1_600.jpg
    :scale: 100 %
-   :alt: DC Brick with connected Rotary Poti Bricklet
+   :alt: DC Brick with connected Motor and Rotary Poti Bricklet
    :align: center
-   :target: ../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Tutorial_1_1200.jpg
 
 If you now connect the DC Brick to the PC, not only a "DC Brick" tab but
 also a "Rotary Poti Bricklet" tab will be shown in the Brick Viewer.
 Select the "Rotary Poti Bricklet" tab and rotate the potentiometer.
 You should see a corresponding movement in the viewer.
 
-.. image:: /Images/Bricklets/rotary_poti_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_rotary_poti_brickv.jpg
    :scale: 100 %
    :alt: Brickv view of the Rotary Poti Bricklet
    :align: center
-   :target: ../_images/Bricklets/rotary_poti_brickv.jpg
+   :target: ../_images/Bricklets/bricklet_rotary_poti_brickv.jpg
 
 
 Phase 2: Write your own Program
@@ -277,11 +276,11 @@ Take the Stack consisting of a DC Brick with connected Rotary Poti Bricklet
 and a Master Brick and connect the Master Brick
 over USB with your PC as depicted in the image below.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick_test.jpg
+.. image:: /Images/Tutorial/tutorial_2_600.jpg
    :scale: 100 %
-   :alt: Stack (Master Brick, DC Brick) and Rotary Poti Bricklet
+   :alt: DC Brick in Stack with Master and Power Supply with connected Motor and Rotary Poti Bricklet
    :align: center
-   :target: ../_images/Bricklets/current12_brickv.jpg
+   :target: ../../_images/Tutorial_2_1200.jpg
 
 The Brick Viewer should now show the DC Brick and Rotary Poti 
 Bricklet tabs as in the previous part and an additional "Master Brick" tab.
@@ -314,3 +313,10 @@ Stack, which extend the Stack with interfaces other than USB
    to connect two stacks with Chibi (ZigBee) to allow wireless control
    of the DC Brick with the Rotary Poti Bricklet without any code
    modifications!
+
+
+.. image:: /Images/Tutorial/tutorial_4_600.jpg
+   :scale: 100 %
+   :alt: DC Brick with connected Motor in Stack with Master, Chibi Extension and Power Supply as well as Stack with Master, Chibi Extension and Rotary Poti Bricklet
+   :align: center
+   :target: ../../_images/Tutorial_4_1200.jpg
