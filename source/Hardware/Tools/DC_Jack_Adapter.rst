@@ -5,12 +5,21 @@ DC Jack Adapter
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocend() }}
-
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ 
+	    tfdocimg("Tools/dc_jack_adapter_tilted_350.jpg", 
+	             "Tools/dc_jack_adapter_tilted_100.jpg", 
+	             "Tools/dc_jack_adapter_tilted_800.jpg", 
+	             "DC Jack Adapter") 
+	}}
+	{{ 
+	    tfdocimg("Tools/dc_jack_adapter_horizontal_350.jpg", 
+	             "Tools/dc_jack_adapter_horizontal_100.jpg", 
+	             "Tools/dc_jack_adapter_horizontal_800.jpg", 
+	             "DC Jack Adapter") 
+	}}
+	{{ tfdocend() }}
 
 Description
 -----------

@@ -5,11 +5,27 @@ Breakout Bricklet
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocend() }}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart() }}
+	{{ 
+	    tfdocimg("Tools/breakout_bricklet_tilted_350.jpg", 
+	             "Tools/breakout_bricklet_tilted_100.jpg", 
+	             "Tools/breakout_bricklet_tilted_800.jpg", 
+	             "Breakout Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Tools/breakout_bricklet_horizontal_pinheader_350.jpg", 
+	             "Tools/breakout_bricklet_horizontal_pinheader_100.jpg", 
+	             "Tools/breakout_bricklet_horizontal_pinheader_800.jpg", 
+	             "Breakout Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Tools/breakout_bricklet_connected_350.jpg", 
+	             "Tools/breakout_bricklet_connected_100.jpg", 
+	             "Tools/breakout_bricklet_connected_800.jpg", 
+	             "Breakout Bricklet with Rotary Poti") 
+	}}
+	{{ tfdocend() }}
 
 
 Description

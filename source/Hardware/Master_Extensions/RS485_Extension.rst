@@ -8,10 +8,22 @@ RS485 Extension
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Extensions/extension_rs485_tilted_front_350.jpg", 
-	             "Extensions/extension_rs485_tilted_front_100.jpg", 
-	             "Extensions/extension_rs485_tilted_front_800.jpg", 
-	             "RS485 Extension") 
+	    tfdocimg("Extensions/extension_rs485_tilted_350.jpg", 
+	             "Extensions/extension_rs485_tilted_100.jpg", 
+	             "Extensions/extension_rs485_tilted_800.jpg", 
+	             "Chibi Extension") 
+	}}
+	{{ 
+	    tfdocimg("Extensions/extension_rs485_top_350.jpg", 
+	             "Extensions/extension_rs485_top_100.jpg", 
+	             "Extensions/extension_rs485_top_800.jpg", 
+	             "Chibi Extension") 
+	}}
+	{{ 
+	    tfdocimg("Extensions/extension_rs485_bottom_350.jpg", 
+	             "Extensions/extension_rs485_bottom_100.jpg", 
+	             "Extensions/extension_rs485_bottom_800.jpg", 
+	             "Chibi Extension") 
 	}}
 	{{ tfdocend() }}
 

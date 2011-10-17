@@ -8,9 +8,27 @@ Chibi Extension
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Extensions/extension_chibi_tilted_front_350.jpg", 
-	             "Extensions/extension_chibi_tilted_front_100.jpg", 
-	             "Extensions/extension_chibi_tilted_front_800.jpg", 
+	    tfdocimg("Extensions/extension_chibi_tilted_350.jpg", 
+	             "Extensions/extension_chibi_tilted_100.jpg", 
+	             "Extensions/extension_chibi_tilted_800.jpg", 
+	             "Chibi Extension") 
+	}}
+	{{ 
+	    tfdocimg("Extensions/extension_chibi_tilted_complete_350.jpg", 
+	             "Extensions/extension_chibi_tilted_complete_100.jpg", 
+	             "Extensions/extension_chibi_tilted_complete_800.jpg", 
+	             "Chibi Extension") 
+	}}
+	{{ 
+	    tfdocimg("Extensions/extension_chibi_top_350.jpg", 
+	             "Extensions/extension_chibi_top_100.jpg", 
+	             "Extensions/extension_chibi_top_800.jpg", 
+	             "Chibi Extension") 
+	}}
+	{{ 
+	    tfdocimg("Extensions/extension_chibi_bottom_350.jpg", 
+	             "Extensions/extension_chibi_bottom_100.jpg", 
+	             "Extensions/extension_chibi_bottom_800.jpg", 
 	             "Chibi Extension") 
 	}}
 	{{ tfdocend() }}
