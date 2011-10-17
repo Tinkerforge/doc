@@ -416,3 +416,41 @@ div.center_table table {
 div.center_table table tbody tr td{
 		text-align:center;
 }
+
+#gallery img {
+	float: right;
+	border: 1px solid #ddd;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#gallery_img a {
+	display:table-cell;
+	vertical-align: middle;
+}
+
+#gallery_img {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+#gallery_img img {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+#gallery li {
+	list-style-type: none;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+	margin: 2px;
+float: left;
+}
+
+#gallery ul {
+display: block;
+}

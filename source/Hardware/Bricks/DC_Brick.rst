@@ -6,46 +6,38 @@ DC
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Bricks/brick_dc_tilted_front_350.jpg", 
-	             "Bricks/brick_dc_tilted_front_100.jpg", 
-	             "Bricks/brick_dc_tilted_front_800.jpg", 
+	    tfdocstart("Bricks/brick_dc_tilted_front_350.jpg", 
+	             "Bricks/brick_dc_tilted_front_600.jpg", 
 	             "DC Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_dc_tilted_back_350.jpg", 
-	             "Bricks/brick_dc_tilted_back_100.jpg", 
-	             "Bricks/brick_dc_tilted_back_800.jpg", 
+	    tfdocimg("Bricks/brick_dc_tilted_back_100.jpg", 
+	             "Bricks/brick_dc_tilted_back_600.jpg", 
 	             "DC Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_dc_motor_setup_350.jpg", 
-	             "Bricks/brick_dc_motor_setup_100.jpg", 
-	             "Bricks/brick_dc_motor_setup_1200.jpg", 
+	    tfdocimg("Bricks/brick_dc_motor_setup_100.jpg", 
+	             "Bricks/brick_dc_motor_setup_600.jpg", 
 	             "DC Brick with Motor") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_dc_caption_350.jpg", 
-	             "Bricks/brick_dc_caption_100.jpg", 
-	             "Bricks/brick_dc_caption_800.jpg", 
+	    tfdocimg("Bricks/brick_dc_caption_100.jpg", 
+	             "Bricks/brick_dc_caption_600.jpg", 
 	             "DC Brick with caption") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_dc_top_350.jpg", 
-	             "Bricks/brick_dc_top_100.jpg", 
-	             "Bricks/brick_dc_top_800.jpg", 
+	    tfdocimg("Bricks/brick_dc_top_100.jpg", 
+	             "Bricks/brick_dc_top_600.jpg", 
 	             "DC Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_dc_bottom_350.jpg", 
-	             "Bricks/brick_dc_bottom_100.jpg", 
-	             "Bricks/brick_dc_bottom_800.jpg", 
+	    tfdocimg("Bricks/brick_dc_bottom_100.jpg", 
+	             "Bricks/brick_dc_bottom_600.jpg", 
 	             "DC Brick") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/dc_brick_dimensions_350.png", 
-	             "Dimensions/dc_brick_dimensions_100.png", 
+	    tfdocimg("Dimensions/dc_brick_dimensions_100.png", 
 	             "Dimensions/dc_brick_dimensions.png", 
 	             "Outline and drilling plan") 
 	}}

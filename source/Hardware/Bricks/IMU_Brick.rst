@@ -6,11 +6,9 @@ IMU Brick
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Bricks/brick_imu_tilted_front_350.jpg", 
-	             "Bricks/brick_imu_tilted_front_100.jpg", 
-	             "Bricks/brick_imu_tilted_front_800.jpg", 
+	    tfdocstart("Bricks/brick_imu_tilted_front_100.jpg", 
+	             "Bricks/brick_imu_tilted_front_600.jpg", 
 	             "IMU Brick") 
 	}}
 	{{ 

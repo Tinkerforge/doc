@@ -13,18 +13,32 @@
 <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
 {% raw %}
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='base_tf.css', _external=True) }}" />
-<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='galleriffic.css', _external=True) }}" />
-<script type="text/javascript" src="{{ url_for('static', filename='jquery.js', _external=True) }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='jquery.galleriffic.js', _external=True) }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='jquery.opacityrollover.js', _external=True) }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='gallery.js', _external=True) }}"></script>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='jquery.lightbox-0.5.css', _external=True) }}" />
 
 
-<script type="text/javascript">
+
+<!--<script type="text/javascript">
 	document.write('<style>.noscript { display: none; }</style>');
-</script>
+</script>-->
 {% endraw %}
 {% endblock %}
+
+
+{% block extrahead %}
+{% raw %}
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.lightbox-0.5.js', _external=True) }}"></script>
+
+    <script type="text/javascript">
+	    $(function() {
+				        $('#gallery a').lightBox();
+						    });
+    </script>
+
+
+{% endraw %}
+{% endblock %}
+
+
 
 {% block sidebar1 %}{{ sidebar() }}{% endblock %}
 {% block sidebar2 %}{% endblock %}
