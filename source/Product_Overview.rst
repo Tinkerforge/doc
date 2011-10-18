@@ -33,31 +33,31 @@ Bricks
        :scale: 100 %
        :alt: Master Brick
        :align: center
-       :target: ../_images/Bricks/brick_master_tilted_front_800.jpg
+       :target: _images/Bricks/brick_master_tilted_front_800.jpg
 	   
     - .. image:: /Images/Bricks/brick_dc_tilted_front_100.jpg
        :scale: 100 %
        :alt: DC Brick
        :align: center
-       :target: ../_images/Bricks/brick_dc_tilted_front_800.jpg
+       :target: _images/Bricks/brick_dc_tilted_front_800.jpg
 	   
     - .. image:: /Images/Bricks/brick_stepper_tilted_front_100.jpg
        :scale: 100 %
        :alt: Stepper Brick
        :align: center
-       :target: ../_images/Bricks/brick_stepper_tilted_front_800.jpg
+       :target: _images/Bricks/brick_stepper_tilted_front_800.jpg
 
     - .. image:: /Images/Bricks/brick_servo_tilted_front_100.jpg
        :scale: 100 %
        :alt: Servo Brick
        :align: center
-       :target: ../_images/Bricks/brick_servo_tilted_front_800.jpg
+       :target: _images/Bricks/brick_servo_tilted_front_800.jpg
 
     - .. image:: /Images/Bricks/brick_imu_tilted_front_100.jpg
        :scale: 100 %
        :alt: IMU Brick
        :align: center
-       :target: ../_images/Bricks/brick_imu_tilted_front_800.jpg
+       :target: _images/Bricks/brick_imu_tilted_front_800.jpg
 
 
 Bricks are 4 x 4cm (1.57" x 1.57") boards equipped with a 32bit
