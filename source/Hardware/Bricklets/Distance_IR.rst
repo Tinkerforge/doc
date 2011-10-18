@@ -7,47 +7,39 @@ Distance IR
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_distance_ir_tilted_350.jpg", 
-	             "Bricklets/bricklet_distance_ir_tilted_100.jpg", 
-	             "Bricklets/bricklet_distance_ir_tilted_800.jpg", 
+	    tfdocstart("Bricklets/bricklet_distance_ir_tilted_350.jpg", 
+	             "Bricklets/bricklet_distance_ir_tilted_600.jpg", 
 	             "Distance IR Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_distance_ir_front_350.jpg", 
-	             "Bricklets/bricklet_distance_ir_front_100.jpg", 
-	             "Bricklets/bricklet_distance_ir_front_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_distance_ir_front_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_front_600.jpg", 
 	             "Distance IR Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_distance_ir_back_350.jpg", 
-	             "Bricklets/bricklet_distance_ir_back_100.jpg", 
-	             "Bricklets/bricklet_distance_ir_back_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_distance_ir_back_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_back_600.jpg", 
 	             "Distance IR Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_distance_ir_master_350.jpg", 
-	             "Bricklets/bricklet_distance_ir_master_100.jpg", 
-	             "Bricklets/bricklet_distance_ir_master_1200.jpg", 
+	    tfdocimg("Bricklets/bricklet_distance_ir_master_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_master_600.jpg", 
 	             "Distance IR Bricklet with Master Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_distance_ir_sensors_350.jpg", 
-	             "Bricklets/bricklet_distance_ir_sensors_100.jpg", 
-	             "Bricklets/bricklet_distance_ir_sensors_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_distance_ir_sensors_100.jpg", 
+	             "Bricklets/bricklet_distance_ir_sensors_600.jpg", 
 	             "Distance IR Bricklet sensors") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_distance_ir_brickv_350.jpg", 
-	             "Bricklets/bricklet_distance_ir_brickv_100.jpg", 
+	    tfdocimg("Bricklets/bricklet_distance_ir_brickv_100.jpg", 
 	             "Bricklets/bricklet_distance_ir_brickv.jpg", 
 	             "Brick Viewer screenshot") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/dist_ir_bricklet_dimensions_350.png", 
-	             "Dimensions/dist_ir_bricklet_dimensions_100.png", 
-	             "Dimensions/dist_ir_bricklet_dimensions.png", 
+	    tfdocimg("Dimensions/dist_ir_bricklet_dimensions_100.png", 
+	             "Dimensions/dist_ir_bricklet_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

@@ -8,39 +8,33 @@ Current12
     {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
     {{ tfdocstart() }}
     {{ 
-		tfdocimg("Bricklets/bricklet_current_tilted_350.jpg", 
-		         "Bricklets/bricklet_current_tilted_100.jpg", 
-		         "Bricklets/bricklet_current_tilted_800.jpg", 
+		tfdocstart("Bricklets/bricklet_current_tilted_350.jpg", 
+		         "Bricklets/bricklet_current_tilted_600.jpg", 
 		         "Current12 Bricklet") 
 	}}
 	{{
-		tfdocimg("Bricklets/bricklet_current_horizontal_350.jpg", 
-		         "Bricklets/bricklet_current_horizontal_100.jpg", 
-		         "Bricklets/bricklet_current_horizontal_800.jpg", 
+		tfdocimg("Bricklets/bricklet_current_horizontal_100.jpg", 
+		         "Bricklets/bricklet_current_horizontal_600.jpg", 
 		         "Current12 Bricklet") 
 	}}
 	{{ 
-		tfdocimg("Bricklets/bricklet_current_vertical_350.jpg", 
-		         "Bricklets/bricklet_current_vertical_100.jpg", 
-		         "Bricklets/bricklet_current_vertical_800.jpg", 
+		tfdocimg("Bricklets/bricklet_current_vertical_100.jpg", 
+		         "Bricklets/bricklet_current_vertical_600.jpg", 
 		         "Current12 Bricklet") 
 	}}
 	{{ 
-		tfdocimg("Bricklets/bricklet_current_master_350.jpg", 
-		         "Bricklets/bricklet_current_master_100.jpg", 
-		         "Bricklets/bricklet_current_master_1200.jpg", 
+		tfdocimg("Bricklets/bricklet_current_master_100.jpg", 
+		         "Bricklets/bricklet_current_master_600.jpg", 
 		         "Current12 Bricklet with Master Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_current12_brickv_350.jpg", 
-	             "Bricklets/bricklet_current12_brickv_100.jpg", 
+	    tfdocimg("Bricklets/bricklet_current12_brickv_100.jpg", 
 	             "Bricklets/bricklet_current12_brickv.jpg", 
 	             "Brick Viewer screenshot") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/current12_bricklet_dimensions_350.png", 
-	             "Dimensions/current12_bricklet_dimensions_100.png", 
-	             "Dimensions/current12_bricklet_dimensions.png", 
+	    tfdocimg("Dimensions/current12_bricklet_dimensions_100.png", 
+	             "Dimensions/current12_bricklet_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

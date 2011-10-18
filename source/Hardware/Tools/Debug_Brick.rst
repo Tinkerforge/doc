@@ -6,35 +6,29 @@ Debug Brick
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Bricks/brick_debug_tilted_front_350.jpg", 
-	             "Bricks/brick_debug_tilted_front_100.jpg", 
-	             "Bricks/brick_debug_tilted_front_800.jpg", 
+	    tfdocstart("Bricks/brick_debug_tilted_front_350.jpg", 
+	             "Bricks/brick_debug_tilted_front_600.jpg", 
 	             "Debug Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_debug_tilted_back_350.jpg", 
-	             "Bricks/brick_debug_tilted_back_100.jpg", 
-	             "Bricks/brick_debug_tilted_back_800.jpg", 
+	    tfdocimg("Bricks/brick_debug_tilted_back_100.jpg", 
+	             "Bricks/brick_debug_tilted_back_600.jpg", 
 	             "Debug Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_debug_top_350.jpg", 
-	             "Bricks/brick_debug_top_100.jpg", 
-	             "Bricks/brick_debug_top_800.jpg", 
+	    tfdocimg("Bricks/brick_debug_top_100.jpg", 
+	             "Bricks/brick_debug_top_600.jpg", 
 	             "Debug Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_debug_bottom_350.jpg", 
-	             "Bricks/brick_debug_bottom_100.jpg", 
-	             "Bricks/brick_debug_bottom_800.jpg", 
+	    tfdocimg("Bricks/brick_debug_bottom_100.jpg", 
+	             "Bricks/brick_debug_bottom_600.jpg", 
 	             "Debug Brick") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/debug_brick_dimensions_350.png", 
-	             "Dimensions/debug_brick_dimensions_100.png", 
-	             "Dimensions/debug_brick_dimensions.png", 
+	    tfdocimg("Dimensions/debug_brick_dimensions_100.png", 
+	             "Dimensions/debug_brick_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

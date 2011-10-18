@@ -7,41 +7,34 @@ Humidity
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_humidity_tilted_350.jpg", 
-	             "Bricklets/bricklet_humidity_tilted_100.jpg", 
-	             "Bricklets/bricklet_humidity_tilted_800.jpg", 
+	    tfdocstart("Bricklets/bricklet_humidity_tilted_350.jpg", 
+	             "Bricklets/bricklet_humidity_tilted_600.jpg", 
 	             "Humidity Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_humidity_vertical_350.jpg", 
-	             "Bricklets/bricklet_humidity_vertical_100.jpg", 
-	             "Bricklets/bricklet_humidity_vertical_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_humidity_vertical_100.jpg", 
+	             "Bricklets/bricklet_humidity_vertical_600.jpg", 
 	             "Humidity Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_humidity_horizontal_350.jpg", 
-	             "Bricklets/bricklet_humidity_horizontal_100.jpg", 
-	             "Bricklets/bricklet_humidity_horizontal_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_humidity_horizontal_100.jpg", 
+	             "Bricklets/bricklet_humidity_horizontal_600.jpg", 
 	             "Humidity Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_humidity_master_350.jpg", 
-	             "Bricklets/bricklet_humidity_master_100.jpg", 
-	             "Bricklets/bricklet_humidity_master_1200.jpg", 
+	    tfdocimg("Bricklets/bricklet_humidity_master_100.jpg", 
+	             "Bricklets/bricklet_humidity_master_600.jpg", 
 	             "Humidity Bricklet with Master Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_humidity_brickv_350.jpg", 
-	             "Bricklets/bricklet_humidity_brickv_100.jpg", 
+	    tfdocimg("Bricklets/bricklet_humidity_brickv_100.jpg", 
 	             "Bricklets/bricklet_humidity_brickv.jpg", 
 	             "Brick Viewer screenshot") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/humidity_bricklet_dimensions_350.png", 
-	             "Dimensions/humidity_bricklet_dimensions_100.png", 
-	             "Dimensions/humidity_bricklet_dimensions.png", 
+	    tfdocimg("Dimensions/humidity_bricklet_dimensions_100.png", 
+	             "Dimensions/humidity_bricklet_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

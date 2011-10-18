@@ -7,41 +7,34 @@ Ambient Light
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_ambient_light_tilted_350.jpg", 
-	             "Bricklets/bricklet_ambient_light_tilted_100.jpg", 
-	             "Bricklets/bricklet_ambient_light_tilted_800.jpg", 
+	    tfdocstart("Bricklets/bricklet_ambient_light_tilted_350.jpg", 
+	             "Bricklets/bricklet_ambient_light_tilted_600.jpg", 
 	             "Ambient Light Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_ambient_light_vertical_350.jpg", 
-	             "Bricklets/bricklet_ambient_light_vertical_100.jpg", 
-	             "Bricklets/bricklet_ambient_light_vertical_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_ambient_light_vertical_100.jpg", 
+	             "Bricklets/bricklet_ambient_light_vertical_600.jpg", 
 	             "Ambient Light Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_ambient_light_horizontal_350.jpg", 
-	             "Bricklets/bricklet_ambient_light_horizontal_100.jpg", 
-	             "Bricklets/bricklet_ambient_light_horizontal_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_ambient_light_horizontal_100.jpg", 
+	             "Bricklets/bricklet_ambient_light_horizontal_600.jpg", 
 	             "Ambient Light Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_ambient_light_master_350.jpg", 
-	             "Bricklets/bricklet_ambient_light_master_100.jpg", 
-	             "Bricklets/bricklet_ambient_light_master_1200.jpg", 
+	    tfdocimg("Bricklets/bricklet_ambient_light_master_100.jpg", 
+	             "Bricklets/bricklet_ambient_light_master_600.jpg", 
 	             "Ambient Light Bricklet with Master Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_ambient_light_brickv_350.jpg", 
-	             "Bricklets/bricklet_ambient_light_brickv_100.jpg", 
+	    tfdocimg("Bricklets/bricklet_ambient_light_brickv_100.jpg", 
 	             "Bricklets/bricklet_ambient_light_brickv.jpg", 
 	             "Brick Viewer screenshot") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/ambient_light_bricklet_dimensions_350.png", 
-	             "Dimensions/ambient_light_bricklet_dimensions_100.png", 
-	             "Dimensions/ambient_light_bricklet_dimensions.png", 
+	    tfdocimg("Dimensions/ambient_light_bricklet_dimensions_100.png", 
+	             "Dimensions/ambient_light_bricklet_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

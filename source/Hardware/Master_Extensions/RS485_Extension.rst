@@ -6,23 +6,19 @@ RS485 Extension
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Extensions/extension_rs485_tilted_350.jpg", 
-	             "Extensions/extension_rs485_tilted_100.jpg", 
-	             "Extensions/extension_rs485_tilted_800.jpg", 
+	    tfdocstart("Extensions/extension_rs485_tilted_350.jpg", 
+	             "Extensions/extension_rs485_tilted_600.jpg", 
 	             "Chibi Extension") 
 	}}
 	{{ 
-	    tfdocimg("Extensions/extension_rs485_top_350.jpg", 
-	             "Extensions/extension_rs485_top_100.jpg", 
-	             "Extensions/extension_rs485_top_800.jpg", 
+	    tfdocimg("Extensions/extension_rs485_top_100.jpg", 
+	             "Extensions/extension_rs485_top_600.jpg", 
 	             "Chibi Extension") 
 	}}
 	{{ 
-	    tfdocimg("Extensions/extension_rs485_bottom_350.jpg", 
-	             "Extensions/extension_rs485_bottom_100.jpg", 
-	             "Extensions/extension_rs485_bottom_800.jpg", 
+	    tfdocimg("Extensions/extension_rs485_bottom_100.jpg", 
+	             "Extensions/extension_rs485_bottom_600.jpg", 
 	             "Chibi Extension") 
 	}}
 	{{ tfdocend() }}

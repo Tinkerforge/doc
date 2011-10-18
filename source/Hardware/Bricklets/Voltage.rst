@@ -6,41 +6,34 @@ Voltage
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_voltage_tilted_350.jpg", 
-	             "Bricklets/bricklet_voltage_tilted_100.jpg", 
-	             "Bricklets/bricklet_voltage_tilted_800.jpg", 
+	    tfdocstart("Bricklets/bricklet_voltage_tilted_350.jpg", 
+	             "Bricklets/bricklet_voltage_tilted_600.jpg", 
 	             "Voltage Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_voltage_vertical_350.jpg", 
-	             "Bricklets/bricklet_voltage_vertical_100.jpg", 
-	             "Bricklets/bricklet_voltage_vertical_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_voltage_vertical_100.jpg", 
+	             "Bricklets/bricklet_voltage_vertical_600.jpg", 
 	             "Voltage Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_voltage_horizontal_350.jpg", 
-	             "Bricklets/bricklet_voltage_horizontal_100.jpg", 
-	             "Bricklets/bricklet_voltage_horizontal_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_voltage_horizontal_100.jpg", 
+	             "Bricklets/bricklet_voltage_horizontal_600.jpg", 
 	             "Voltage Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_voltage_master_350.jpg", 
-	             "Bricklets/bricklet_voltage_master_100.jpg", 
-	             "Bricklets/bricklet_voltage_master_1200.jpg", 
+	    tfdocimg("Bricklets/bricklet_voltage_master_100.jpg", 
+	             "Bricklets/bricklet_voltage_master_600.jpg", 
 	             "Voltage Bricklet with Master Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_voltage_brickv_350.jpg", 
-	             "Bricklets/bricklet_voltage_brickv_100.jpg", 
+	    tfdocimg("Bricklets/bricklet_voltage_brickv_100.jpg", 
 	             "Bricklets/bricklet_voltage_brickv.jpg", 
 	             "Brick Viewer screenshot") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/voltage_bricklet_dimensions_350.png", 
-	             "Dimensions/voltage_bricklet_dimensions_100.png", 
-	             "Dimensions/voltage_bricklet_dimensions.png", 
+	    tfdocimg("Dimensions/voltage_bricklet_dimensions_100.png", 
+	             "Dimensions/voltage_bricklet_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

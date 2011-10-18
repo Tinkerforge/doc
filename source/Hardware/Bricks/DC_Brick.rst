@@ -38,7 +38,7 @@ DC
 	}}
 	{{ 
 	    tfdocimg("Dimensions/dc_brick_dimensions_100.png", 
-	             "Dimensions/dc_brick_dimensions.png", 
+	             "Dimensions/dc_brick_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

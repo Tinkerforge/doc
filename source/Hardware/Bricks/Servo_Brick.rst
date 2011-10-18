@@ -6,53 +6,44 @@ Servo
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Bricks/brick_servo_tilted_front_350.jpg", 
-	             "Bricks/brick_servo_tilted_front_100.jpg", 
-	             "Bricks/brick_servo_tilted_front_800.jpg", 
+	    tfdocstart("Bricks/brick_servo_tilted_front_350.jpg", 
+	             "Bricks/brick_servo_tilted_front_600.jpg", 
 	             "Servo Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_servo_tilted_back_350.jpg", 
-	             "Bricks/brick_servo_tilted_back_100.jpg", 
-	             "Bricks/brick_servo_tilted_back_800.jpg", 
+	    tfdocimg("Bricks/brick_servo_tilted_back_100.jpg", 
+	             "Bricks/brick_servo_tilted_back_600.jpg", 
 	             "Servo Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_servo_setup_350.jpg", 
-	             "Bricks/brick_servo_setup_100.jpg", 
-	             "Bricks/brick_servo_setup_1200.jpg", 
+	    tfdocimg("Bricks/brick_servo_setup_100.jpg", 
+	             "Bricks/brick_servo_setup_600.jpg", 
 	             "Servo Brick with Servo") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_servo_setup_big_350.jpg", 
-	             "Bricks/brick_servo_setup_big_100.jpg", 
-	             "Bricks/brick_servo_setup_big_1200.jpg", 
+	    tfdocimg("Bricks/brick_servo_setup_big_100.jpg", 
+	             "Bricks/brick_servo_setup_big_600.jpg", 
 	             "Servo Brick with Servos") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_servo_caption_350.jpg", 
-	             "Bricks/brick_servo_caption_100.jpg", 
-	             "Bricks/brick_servo_caption_800.jpg", 
+	    tfdocimg("Bricks/brick_servo_caption_100.jpg", 
+	             "Bricks/brick_servo_caption_600.jpg", 
 	             "Servo Brick with caption") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_servo_top_350.jpg", 
-	             "Bricks/brick_servo_top_100.jpg", 
-	             "Bricks/brick_servo_top_800.jpg", 
+	    tfdocimg("Bricks/brick_servo_top_100.jpg", 
+	             "Bricks/brick_servo_top_600.jpg", 
 	             "Servo Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_servo_bottom_350.jpg", 
-	             "Bricks/brick_servo_bottom_100.jpg", 
-	             "Bricks/brick_servo_bottom_800.jpg", 
+	    tfdocimg("Bricks/brick_servo_bottom_100.jpg", 
+	             "Bricks/brick_servo_bottom_600.jpg", 
 	             "Servo Brick") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/servo_brick_dimensions_350.png", 
-	             "Dimensions/servo_brick_dimensions_100.png", 
-	             "Dimensions/servo_brick_dimensions.png", 
+	    tfdocimg("Dimensions/servo_brick_dimensions_100.png", 
+	             "Dimensions/servo_brick_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

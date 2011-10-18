@@ -6,9 +6,8 @@ Breakout Brick
 .. raw:: html
 
         {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart() }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "test_k.jpg", "Bricklets/test.jpg", "Title #1") }}
+        {{ tfdocstart("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #0") }}
+        {{ tfdocimg("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #1") }}
         {{ tfdocend() }}
 
 

@@ -7,41 +7,34 @@ LCD 20x4
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_lcd_20x4_tilted_350.jpg", 
-	             "Bricklets/bricklet_lcd_20x4_tilted_100.jpg", 
-	             "Bricklets/bricklet_lcd_20x4_tilted_800.jpg", 
+	    tfdocstart("Bricklets/bricklet_lcd_20x4_tilted_350.jpg", 
+	             "Bricklets/bricklet_lcd_20x4_tilted_600.jpg", 
 	             "LCD 20x4 Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_lcd_20x4_apart_350.jpg", 
-	             "Bricklets/bricklet_lcd_20x4_apart_100.jpg", 
-	             "Bricklets/bricklet_lcd_20x4_apart_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_lcd_20x4_apart_100.jpg", 
+	             "Bricklets/bricklet_lcd_20x4_apart_600.jpg", 
 	             "LCD 20x4 Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_lcd_20x4_display_350.jpg", 
-	             "Bricklets/bricklet_lcd_20x4_display_100.jpg", 
-	             "Bricklets/bricklet_lcd_20x4_display_800.jpg", 
+	    tfdocimg("Bricklets/bricklet_lcd_20x4_display_100.jpg", 
+	             "Bricklets/bricklet_lcd_20x4_display_600.jpg", 
 	             "LCD 20x4 Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_lcd_20x4_master_350.jpg", 
-	             "Bricklets/bricklet_lcd_20x4_master_100.jpg", 
-	             "Bricklets/bricklet_lcd_20x4_master_1200.jpg", 
+	    tfdocimg("Bricklets/bricklet_lcd_20x4_master_100.jpg", 
+	             "Bricklets/bricklet_lcd_20x4_master_600.jpg", 
 	             "LCD 20x4 Bricklet with Master Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_lcd_20x4_brickv_350.jpg", 
-	             "Bricklets/bricklet_lcd_20x4_brickv_100.jpg", 
+	    tfdocimg("Bricklets/bricklet_lcd_20x4_brickv_100.jpg", 
 	             "Bricklets/bricklet_lcd_20x4_brickv.jpg", 
 	             "Brick Viewer screenshot") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/lcd_20x4_bricklet_dimensions_350.png", 
-	             "Dimensions/lcd_20x4_bricklet_dimensions_100.png", 
-	             "Dimensions/lcd_20x4_bricklet_dimensions.png", 
+	    tfdocimg("Dimensions/lcd_20x4_bricklet_dimensions_100.png", 
+	             "Dimensions/lcd_20x4_bricklet_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

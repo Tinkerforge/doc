@@ -6,41 +6,34 @@ Step-Down Power Supply
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ tfdocstart() }}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_tilted_front_350.jpg", 
-	             "Power_Supplies/powersupply_tilted_front_100.jpg", 
-	             "Power_Supplies/powersupply_tilted_front_800.jpg", 
+	    tfdocstart("Power_Supplies/powersupply_tilted_front_350.jpg", 
+	             "Power_Supplies/powersupply_tilted_front_600.jpg", 
 	             "Power Supply") 
 	}}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_tilted_back_350.jpg", 
-	             "Power_Supplies/powersupply_tilted_back_100.jpg", 
-	             "Power_Supplies/powersupply_tilted_back_800.jpg", 
+	    tfdocimg("Power_Supplies/powersupply_tilted_back_100.jpg", 
+	             "Power_Supplies/powersupply_tilted_back_600.jpg", 
 	             "Power Supply") 
 	}}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_caption_350.jpg", 
-	             "Power_Supplies/powersupply_caption_100.jpg", 
-	             "Power_Supplies/powersupply_caption_800.jpg", 
+	    tfdocimg("Power_Supplies/powersupply_caption_100.jpg", 
+	             "Power_Supplies/powersupply_caption_600.jpg", 
 	             "Power Supply with caption") 
 	}}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_top_350.jpg", 
-	             "Power_Supplies/powersupply_top_100.jpg", 
-	             "Power_Supplies/powersupply_top_800.jpg", 
+	    tfdocimg("Power_Supplies/powersupply_top_100.jpg", 
+	             "Power_Supplies/powersupply_top_600.jpg", 
 	             "Power Supply") 
 	}}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_bottom_350.jpg", 
-	             "Power_Supplies/powersupply_bottom_100.jpg", 
-	             "Power_Supplies/powersupply_bottom_800.jpg", 
+	    tfdocimg("Power_Supplies/powersupply_bottom_100.jpg", 
+	             "Power_Supplies/powersupply_bottom_600.jpg", 
 	             "Power Supply") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/step_down_powersupply_dimensions_350.png", 
-	             "Dimensions/step_down_powersupply_dimensions_100.png", 
-	             "Dimensions/step_down_powersupply_dimensions.png", 
+	    tfdocimg("Dimensions/step_down_powersupply_dimensions_100.png", 
+	             "Dimensions/step_down_powersupply_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}

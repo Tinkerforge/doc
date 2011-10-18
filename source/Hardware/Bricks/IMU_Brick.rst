@@ -7,38 +7,33 @@ IMU
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ 
-	    tfdocstart("Bricks/brick_imu_tilted_front_100.jpg", 
+	    tfdocstart("Bricks/brick_imu_tilted_front_350.jpg", 
 	             "Bricks/brick_imu_tilted_front_600.jpg", 
 	             "IMU Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_imu_tilted_back_350.jpg", 
-	             "Bricks/brick_imu_tilted_back_100.jpg", 
-	             "Bricks/brick_imu_tilted_back_800.jpg", 
+	    tfdocimg("Bricks/brick_imu_tilted_back_100.jpg", 
+	             "Bricks/brick_imu_tilted_back_600.jpg", 
 	             "IMU Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_imu_caption_350.jpg", 
-	             "Bricks/brick_imu_caption_100.jpg", 
-	             "Bricks/brick_imu_caption_800.jpg", 
+	    tfdocimg("Bricks/brick_imu_caption_100.jpg", 
+	             "Bricks/brick_imu_caption_600.jpg", 
 	             "IMU Brick with caption") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_imu_top_350.jpg", 
-	             "Bricks/brick_imu_top_100.jpg", 
-	             "Bricks/brick_imu_top_800.jpg", 
+	    tfdocimg("Bricks/brick_imu_top_100.jpg", 
+	             "Bricks/brick_imu_top_600.jpg", 
 	             "IMU Brick") 
 	}}
 	{{ 
-	    tfdocimg("Bricks/brick_imu_bottom_350.jpg", 
-	             "Bricks/brick_imu_bottom_100.jpg", 
-	             "Bricks/brick_imu_bottom_800.jpg", 
+	    tfdocimg("Bricks/brick_imu_bottom_100.jpg", 
+	             "Bricks/brick_imu_bottom_600.jpg", 
 	             "IMU Brick") 
 	}}
 	{{ 
-	    tfdocimg("Dimensions/imu_brick_dimensions_350.png", 
-	             "Dimensions/imu_brick_dimensions_100.png", 
-	             "Dimensions/imu_brick_dimensions.png", 
+	    tfdocimg("Dimensions/imu_brick_dimensions_100.png", 
+	             "Dimensions/imu_brick_dimensions_600.png", 
 	             "Outline and drilling plan") 
 	}}
 	{{ tfdocend() }}
