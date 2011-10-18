@@ -447,9 +447,18 @@ div.center_table table tbody tr td{
 	border: 1px solid #ddd;
 	overflow: hidden;
 	margin: 2px;
-float: left;
+	float: left;
 }
 
 #gallery ul {
-display: block;
+	display: block;
+}
+
+div.tfdocimages a {
+	display: block;
+	margin-bottom: 0px;
+}
+
+div.tfdocimages table {
+	width: auto;
 }

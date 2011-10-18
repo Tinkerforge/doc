@@ -8,14 +8,12 @@ There are four different types of hardware components:
 * :ref:`Bricks <product_overview_bricks>`: 
   Stackable microcontroller boards for sensing and controlling.
 * :ref:`Master Extensions <product_overview_master_extensions>`:
-  Boards which extend the communication interfaces of a
+  Boards that extend the communication interfaces of a
   :ref:`Master Brick <master_brick>`.
 * :ref:`Bricklets <product_overview_bricklets>`:
-  Non-stackable sensor/actor boards which extend the features of a 
-  :ref:`Brick <product_overview_bricks>`.
+  Non-stackable sensor/actor boards that extend the features of a Brick.
 * :ref:`Power Supplies <product_overview_powersupplies>`:
-  Boards to power a Stack of 
-  :ref:`Bricks <product_overview_bricks>`, plugged below the Stack.
+  Boards to power a Stack of Bricks, plugged below the Stack.
 
 
 See the :ref:`tutorial <tutorial>` for an explanation of how everything works
@@ -27,15 +25,46 @@ together.
 Bricks
 ^^^^^^
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick2.jpg
-   :scale: 40 %
-   :alt: Servo Brick
+.. container:: tfdocimages
+
+ .. list-table::
+
+  * - .. image:: /Images/Bricks/brick_master_tilted_front_100.jpg
+       :scale: 100 %
+       :alt: Master Brick
+       :align: center
+       :target: ../_images/Bricks/brick_master_tilted_front_800.jpg
+	   
+    - .. image:: /Images/Bricks/brick_dc_tilted_front_100.jpg
+       :scale: 100 %
+       :alt: DC Brick
+       :align: center
+       :target: ../_images/Bricks/brick_dc_tilted_front_800.jpg
+	   
+    - .. image:: /Images/Bricks/brick_stepper_tilted_front_100.jpg
+       :scale: 100 %
+       :alt: Stepper Brick
+       :align: center
+       :target: ../_images/Bricks/brick_stepper_tilted_front_800.jpg
+
+    - .. image:: /Images/Bricks/brick_servo_tilted_front_100.jpg
+       :scale: 100 %
+       :alt: Servo Brick
+       :align: center
+       :target: ../_images/Bricks/brick_servo_tilted_front_800.jpg
+
+    - .. image:: /Images/Bricks/brick_imu_tilted_front_100.jpg
+       :scale: 100 %
+       :alt: IMU Brick
+       :align: center
+       :target: ../_images/Bricks/brick_imu_tilted_front_800.jpg
+
 
 Bricks are 4 x 4cm (1.57" x 1.57") boards equipped with a 32bit
 microcontroller, an USB port, two status LEDs, connectors for 
 stacking and up to four connectors for 
 :ref:`Bricklets <product_overview_bricklets>`. 
-There are Bricks which perform complex 
+There are Bricks that perform complex 
 sensor tasks (e.g. :ref:`IMU Brick <imu_brick>`), 
 communicate (e.g. :ref:`Master Brick <master_brick>`) 
 and drive motors (e.g. :ref:`DC Brick <dc_brick>`).
