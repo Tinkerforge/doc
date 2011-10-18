@@ -1,7 +1,7 @@
 .. _step-down:
 
 Step-Down Power Supply
-=====================
+======================
 
 .. raw:: html
 

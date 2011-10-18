@@ -461,4 +461,10 @@ div.tfdocimages a {
 
 div.tfdocimages table {
 	width: auto;
+	border: 0;
+}
+
+div.tfdocimages table td {
+	width: auto;
+	border: 0;
 }

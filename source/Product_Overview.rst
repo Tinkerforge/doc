@@ -69,8 +69,7 @@ sensor tasks (e.g. :ref:`IMU Brick <imu_brick>`),
 communicate (e.g. :ref:`Master Brick <master_brick>`) 
 and drive motors (e.g. :ref:`DC Brick <dc_brick>`).
 
-Bricks can be plugged together to a Stack.
-A :ref:`Master Brick <master_brick>`
+Bricks can be plugged together to a Stack. A Master Brick
 at the bottom of this Stack can control all boards within the Stack. 
 This master routes the messages between the boards in the Stack and the PC 
 (:ref:`High Level Programming Interface <pi_hlpi>`).
@@ -85,14 +84,14 @@ possible to use Bricks with the
 or the :ref:`On Device Programming Interface <pi_hlpi>`.
 
 .. csv-table::
-   :header: "Name", "Description", "Datasheet", "C/C++", "Python"
-   :widths: 15, 40, 5, 5, 5
+   :header: "Name", "Description", "C/C++", "C#", "Java", "Python"
+   :widths: 15, 40, 5, 5, 5, 5
 
-   "DC Brick", "3A DC Motor Driver", ":ref:`Datasheet <dc_brick>`", ":ref:`C/C++ <dc_brick_c>`", ":ref:`Python <dc_brick_python>`"
-   "IMU Brick", "IMU with 9 degrees of freedom", ":ref:`Datasheet <imu_brick>`", ":ref:`C/C++ <imu_brick_c>`", ":ref:`Python <imu_brick_python>`"
-   "Master Brick", "Allow building of Stacks, 4 Bricklet Ports", ":ref:`Datasheet <master_brick>`", ":ref:`C/C++ <master_brick_c>`", ":ref:`Python <master_brick_python>`"
-   "Servo Brick", "Control up to 7 Servos", ":ref:`Datasheet <servo_brick>`", ":ref:`C/C++ <servo_brick_c>`", ":ref:`Python <servo_brick_python>`"
-   "Stepper Brick", "2.5A Stepper Motor Driver", ":ref:`Datasheet <stepper_brick>`", ":ref:`C/C++ <stepper_brick_c>`", ":ref:`Python <stepper_brick_python>`"
+   ":ref:`dc_brick`", "3A DC Motor Driver", ":ref:`C/C++ <dc_brick_c>`", ":ref:`C# <dc_brick_csharp>`", ":ref:`Java <dc_brick_java>`", ":ref:`Python <dc_brick_python>`"
+   ":ref:`imu_brick`", "IMU with 9 degrees of freedom", ":ref:`C/C++ <imu_brick_c>`", ":ref:`C# <imu_brick_csharp>`", ":ref:`Java <imu_brick_java>`", ":ref:`Python <imu_brick_python>`"
+   ":ref:`master_brick`", "Allow building of Stacks, 4 Bricklet Ports", ":ref:`C/C++ <master_brick_c>`", ":ref:`C# <master_brick_csharp>`", ":ref:`Java <master_brick_java>`", ":ref:`Python <master_brick_python>`"
+   ":ref:`servo_brick`", "Control up to 7 Servos", ":ref:`C/C++ <servo_brick_c>`", ":ref:`C# <servo_brick_csharp>`", ":ref:`Java <servo_brick_java>`", ":ref:`Python <servo_brick_python>`"
+   ":ref:`stepper_brick`", "2.5A Stepper Motor Driver", ":ref:`C/C++ <stepper_brick_c>`", ":ref:`C# <stepper_brick_csharp>`", ":ref:`Java <stepper_brick_java>`", ":ref:`Python <stepper_brick_python>`"
 
 
 .. _product_overview_master_extensions:
@@ -132,12 +131,11 @@ boards together to Stacks, add Master Bricks and cable based or wireless
 Extensions and can run the previously written code without any changes.
 
 .. csv-table::
-   :header: "Name", "Description", "Datasheet", "C/C++", "Python"
-   :widths: 20, 70, 5, 5, 5
+   :header: "Name", "Description"
+   :widths: 20, 70 
 
-   "Chibi Extension", "Wireless Chibi Master Extension", ":ref:`Datasheet <chibi_extension>`", "", ""
-   "LCD Extension", "Graphic LCD for ontop Stack usage", ":ref:`Datasheet <lcd_extension>`", "", ""
-   "RS485 Extension", "Cable based RS485 Master Extension", ":ref:`Datasheet <rs485_extension>`", "", ""
+   ":ref:`chibi_extension`", "Wireless Chibi Master Extension"
+   ":ref:`rs485_extension`", "Cable based RS485 Master Extension"
 
 
 .. _product_overview_bricklets:
@@ -197,35 +195,33 @@ physical values such as rotation, voltage, current, ambient light.
 Also there are Bricklets for control purposes such as
 switching relays, digital input/output and drawing on LCDs. 
 
-Unlike :ref:`Bricks <product_overview_bricks>`,
-Bricklets have no fixed size. Each Bricklet has the minimum size it needs.
-Each :ref:`Brick <product_overview_bricks>` has up to four connectors for 
-Bricklets.
+Unlike Bricks, Bricklets have no fixed size. Each Bricklet has the minimum 
+size it needs. Each Brick has up to four connectors for Bricklets.
 You can easily connect the Bricklet with the supplied cable. The Brick than
 detects the new features and new software methods are available. See 
 :ref:`High Level Programming Interface <pi_hlpi>` for more information.
 
 .. csv-table::
-   :header: "Name", "Description", "Datasheet", "C/C++", "Python"
-   :widths: 20, 70, 5, 5, 5
+   :header: "Name", "Description", "C/C++", "C#", "Java", "Python"
+   :widths: 20, 70, 5, 5, 5, 5
 
-   "Ambient Light", "Ambient Light Sensor", ":ref:`Datasheet <ambient_light_bricklet>`", ":ref:`C/C++ <ambient_light_bricklet_c>`", ":ref:`Python <ambient_light_bricklet_python>`"
-   "Current12", "Bidirectional Current Sensor max. 12.5 A", ":ref:`Datasheet <current12_bricklet>`", ":ref:`C/C++ <current12_bricklet_c>`", ":ref:`Python <current12_bricklet_python>`"
-   "Current25", "Bidirectional Current Sensor max. 25 A", ":ref:`Datasheet <current25_bricklet>`", ":ref:`C/C++ <current25_bricklet_c>`", ":ref:`Python <current25_bricklet_python>`"
-   "Distance IR", "Measure Distances with IR Light", ":ref:`Datasheet <distance_ir_bricklet>`", ":ref:`C/C++ <distance_ir_bricklet_c>`", ":ref:`Python <distance_ir_bricklet_python>`"
-   "Dual Relay", "Equipped with two relays", ":ref:`Datasheet <dual_relay_bricklet>`", ":ref:`C/C++ <dual_relay_bricklet_c>`", ":ref:`Python <dual_relay_bricklet_python>`"
-   "Humidity", "Humidity Sensor", ":ref:`Datasheet <humidity_bricklet>`", ":ref:`C/C++ <humidity_bricklet_c>`", ":ref:`Python <humidity_bricklet_python>`"
-   "IO4", "Input/Output 4-Channel", ":ref:`Datasheet <io4_bricklet>`", ":ref:`C/C++ <io4_bricklet_c>`", ":ref:`Python <io4_bricklet_python>`"
-   "IO16", "Input/Output 16-Channel", ":ref:`Datasheet <io16_bricklet>`", ":ref:`C/C++ <io16_bricklet_c>`", ":ref:`Python <io16_bricklet_python>`"
-   "Joystick", "Two directional Joystick with Button", ":ref:`Datasheet <joystick_bricklet>`", ":ref:`C/C++ <joystick_bricklet_c>`", ":ref:`Python <joystick_bricklet_python>`"
-   "LCD 16x2", "16x2 alphanummeric chars display with backlight", ":ref:`Datasheet <lcd_16x2_bricklet>`", ":ref:`C/C++ <lcd_16x2_bricklet_c>`", ":ref:`Python <lcd_16x2_bricklet_python>`"
-   "LCD 20x4", "20x4 alphanummeric chars display with backlight", ":ref:`Datasheet <lcd_20x4_bricklet>`", ":ref:`C/C++ <lcd_20x4_bricklet_c>`", ":ref:`Python <lcd_20x4_bricklet_python>`"
-   "Piezo Buzzer", "Buzzer for signaling", ":ref:`Datasheet <piezo_buzzer_bricklet>`", ":ref:`C/C++ <piezo_buzzer_bricklet_c>`", ":ref:`Python <piezo_buzzer_bricklet_python>`"
-   "Rotary Poti", "Rotary Potentiometer", ":ref:`Datasheet <rotary_poti_bricklet>`", ":ref:`C/C++ <rotary_poti_bricklet_c>`", ":ref:`Python <rotary_poti_bricklet_python>`"
-   "Linear Poti", "Linear Potentiometer", ":ref:`Datasheet <linear_poti_bricklet>`", ":ref:`C/C++ <linear_poti_bricklet_c>`", ":ref:`Python <linear_poti_bricklet_python>`"
-   "Temperature", "High Precision Thermometer", ":ref:`Datasheet <temperature_bricklet>`", ":ref:`C/C++ <temperature_bricklet_c>`", ":ref:`Python <temperature_bricklet_python>`"
-   "Temperature IR", "Infrared Thermometer", ":ref:`Datasheet <temperature_ir_bricklet>`", ":ref:`C/C++ <temperature_ir_bricklet_c>`", ":ref:`Python <temperature_ir_bricklet_python>`"
-   "Voltage", "Sensor to measure voltages", ":ref:`Datasheet <voltage_bricklet>`", ":ref:`C/C++ <voltage_bricklet_c>`", ":ref:`Python <voltage_bricklet_python>`"
+   ":ref:`ambient_light_bricklet`", "Ambient Light Sensor", ":ref:`C/C++ <ambient_light_bricklet_c>`", ":ref:`C# <ambient_light_bricklet_csharp>`", ":ref:`Java <ambient_light_bricklet_java>`", ":ref:`Python <ambient_light_bricklet_python>`"
+   ":ref:`current12_bricklet`", "Bidirectional Current Sensor max. 12.5 A", ":ref:`C/C++ <current12_bricklet_c>`", ":ref:`C# <current12_bricklet_csharp>`", ":ref:`Java <current12_bricklet_java>`", ":ref:`Python <current12_bricklet_python>`"
+   ":ref:`current25_bricklet`", "Bidirectional Current Sensor max. 25 A", ":ref:`C/C++ <current25_bricklet_c>`", ":ref:`C# <current25_bricklet_csharp>`", ":ref:`Java <current25_bricklet_java>`", ":ref:`Python <current25_bricklet_python>`"
+   ":ref:`distance_ir_bricklet`", "Measure Distances with IR Light", ":ref:`C/C++ <distance_ir_bricklet_c>`", ":ref:`C# <distance_ir_bricklet_csharp>`", ":ref:`Java <distance_ir_bricklet_java>`", ":ref:`Python <distance_ir_bricklet_python>`"
+   ":ref:`dual_relay_bricklet`", "Equipped with two relays", ":ref:`C/C++ <dual_relay_bricklet_c>`", ":ref:`C# <dual_relay_bricklet_csharp>`", ":ref:`Java <dual_relay_bricklet_java>`", ":ref:`Python <dual_relay_bricklet_python>`"
+   ":ref:`humidity_bricklet`", "Humidity Sensor", ":ref:`C/C++ <humidity_bricklet_c>`", ":ref:`C# <humidity_bricklet_csharp>`", ":ref:`Java <humidity_bricklet_java>`", ":ref:`Python <humidity_bricklet_python>`"
+   ":ref:`io4_bricklet`", "Input/Output 4-Channel", ":ref:`C/C++ <io4_bricklet_c>`", ":ref:`C# <io4_bricklet_csharp>`", ":ref:`Java <io4_bricklet_java>`", ":ref:`Python <io4_bricklet_python>`"
+   ":ref:`io16_bricklet`", "Input/Output 16-Channel", ":ref:`C/C++ <io16_bricklet_c>`", ":ref:`C# <io16_bricklet_csharp>`", ":ref:`Java <io16_bricklet_java>`", ":ref:`Python <io16_bricklet_python>`"
+   ":ref:`joystick_bricklet`", "Two directional Joystick with Button", ":ref:`C/C++ <joystick_bricklet_c>`", ":ref:`C# <joystick_bricklet_csharp>`", ":ref:`Java <joystick_bricklet_java>`", ":ref:`Python <joystick_bricklet_python>`"
+   ":ref:`lcd_16x2_bricklet`", "16x2 alphanummeric chars display with backlight", ":ref:`C/C++ <lcd_16x2_bricklet_c>`", ":ref:`C# <lcd_16x2_bricklet_csharp>`", ":ref:`Java <lcd_16x2_bricklet_java>`", ":ref:`Python <lcd_16x2_bricklet_python>`"
+   ":ref:`lcd_20x4_bricklet`", "20x4 alphanummeric chars display with backlight", ":ref:`C/C++ <lcd_20x4_bricklet_c>`", ":ref:`C# <lcd_20x4_bricklet_csharp>`", ":ref:`Java <lcd_20x4_bricklet_java>`", ":ref:`Python <lcd_20x4_bricklet_python>`"
+   ":ref:`piezo_buzzer_bricklet`", "Buzzer for signaling", ":ref:`C/C++ <piezo_buzzer_bricklet_c>`", ":ref:`C# <piezo_buzzer_bricklet_csharp>`", ":ref:`Java <piezo_buzzer_bricklet_java>`", ":ref:`Python <piezo_buzzer_bricklet_python>`"
+   ":ref:`rotary_poti_bricklet`", "Rotary Potentiometer", ":ref:`C/C++ <rotary_poti_bricklet_c>`", ":ref:`C# <rotary_poti_bricklet_csharp>`", ":ref:`Java <rotary_poti_bricklet_java>`", ":ref:`Python <rotary_poti_bricklet_python>`"
+   ":ref:`linear_poti_bricklet`", "Linear Potentiometer", ":ref:`C/C++ <linear_poti_bricklet_c>`", ":ref:`C# <linear_poti_bricklet_csharp>`", ":ref:`Java <linear_poti_bricklet_java>`", ":ref:`Python <linear_poti_bricklet_python>`"
+   ":ref:`temperature_bricklet`", "High Precision Thermometer", ":ref:`C/C++ <temperature_bricklet_c>`", ":ref:`C# <temperature_bricklet_csharp>`", ":ref:`Java <temperature_bricklet_java>`", ":ref:`Python <temperature_bricklet_python>`"
+   ":ref:`temperature_ir_bricklet`", "Infrared Thermometer", ":ref:`C/C++ <temperature_ir_bricklet_c>`", ":ref:`C# <temperature_ir_bricklet_csharp>`", ":ref:`Java <temperature_ir_bricklet_java>`", ":ref:`Python <temperature_ir_bricklet_python>`"
+   ":ref:`voltage_bricklet`", "Sensor to measure voltages", ":ref:`C/C++ <voltage_bricklet_c>`", ":ref:`C# <voltage_bricklet_csharp>`", ":ref:`Java <voltage_bricklet_java>`", ":ref:`Python <voltage_bricklet_python>`"
    
 
 .. _product_overview_powersupplies:
@@ -255,8 +251,8 @@ Boards have the same size as :ref:`Bricks <product_overview_bricks>` and are
 plugged in at the bottom of the stack.
 
 .. csv-table::
-   :header: "Name", "Description", "Datasheet", "C/C++", "Python"
-   :widths: 20, 70, 5, 5, 5
+   :header: "Name", "Description"
+   :widths: 30, 60
 
-   "Step-Down", "Powers a Stack with 6-27V input", ":ref:`Datasheet <step-down>`", "", ""
+   ":ref:`step-down`", "Powers a Stack with 6-27V input"
 
