@@ -100,9 +100,21 @@ or the :ref:`On Device Programming Interface <pi_hlpi>`.
 Master Extensions
 ^^^^^^^^^^^^^^^^^
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick2.jpg
-   :scale: 100 %
-   :alt: Chibi Extension
+.. container:: tfdocimages
+
+ .. list-table::
+
+  * - .. image:: /Images/Extensions/extension_chibi_tilted_100.jpg
+       :scale: 100 %
+       :alt: Chibi Extension
+       :align: center
+       :target: _images/Extensions/extension_chibi_tilted_800.jpg
+
+    - .. image:: /Images/Extensions/extension_rs485_tilted_100.jpg
+       :scale: 100 %
+       :alt: RS485 Extension
+       :align: center
+       :target: _images/Extensions/extension_rs485_tilted_800.jpg
 
 When using the :ref:`High Level Programming Interface <pi_hlpi>` concept,
 :ref:`Master Bricks <master_brick>` can route messages between 
@@ -193,11 +205,6 @@ You can easily connect the Bricklet with the supplied cable. The Brick than
 detects the new features and new software methods are available. See 
 :ref:`High Level Programming Interface <pi_hlpi>` for more information.
 
-.. image:: /Images/Bricks/Servo_Brick/servo_brick2.jpg
-   :scale: 100 %
-   :alt: Brick and Bricklet
-
-
 .. csv-table::
    :header: "Name", "Description", "Datasheet", "C/C++", "Python"
    :widths: 20, 70, 5, 5, 5
@@ -225,9 +232,16 @@ detects the new features and new software methods are available. See
 
 Power Supplies
 ^^^^^^^^^^^^^^
-.. image:: /Images/Bricks/Servo_Brick/servo_brick2.jpg
-   :scale: 100 %
-   :alt: Step Down Power Supply
+
+.. container:: tfdocimages
+
+ .. list-table::
+
+  * - .. image:: /Images/Power_Supplies/powersupply_tilted_front_100.jpg
+       :scale: 100 %
+       :alt: Step-Down Power Supply
+       :align: center
+       :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
 
 A stack can be powered by the
 master of the stack over its USB connection. 
