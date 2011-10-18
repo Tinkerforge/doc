@@ -69,11 +69,11 @@ sensor tasks (e.g. :ref:`IMU Brick <imu_brick>`),
 communicate (e.g. :ref:`Master Brick <master_brick>`) 
 and drive motors (e.g. :ref:`DC Brick <dc_brick>`).
 
-Bricks can be plugged together to a Stack. A Master Brick
+Bricks can be stacked together to a Stack. A Master Brick
 at the bottom of this Stack can control all boards within the Stack. 
 This master routes the messages between the boards in the Stack and the PC 
 (:ref:`High Level Programming Interface <pi_hlpi>`).
-For the user, the stack behaves as if all Bricks are connected separately 
+For the user, the stack behaves as if all Bricks were connected separately 
 over USB with the PC. 
 See :ref:`Tutorial Stacking <tutorial_build_stacks>` for more information
 about Stacks.
@@ -120,15 +120,15 @@ When using the :ref:`High Level Programming Interface <pi_hlpi>` concept,
 :ref:`Bricks <product_overview_bricks>` and the PC. To establish a connection 
 between a PC and the Master Brick, typically the USB port is used.
 Master Extensions can be utilized to change the interface of a Master Brick.
-There are cable based and wireless Master Extensions available. The usage 
-of the different interfaces is transparent. 
-It behaves as if every board of the Stack is directly connected to the 
-PC with its USB connection. This means:
+There are cable based and wireless Master Extensions available. From a
+programming perspective the different interfaces are transparent. 
+A stack with Master Extension behaves as if every board in the Stack
+would be directly connected to the PC over an USB connection. This means:
 
 You can develop an application with all
-boards independently connected to the PC over USB. Later you can plug these 
+boards independently connected to the PC over USB. Later you can stack these 
 boards together to Stacks, add Master Bricks and cable based or wireless
-Extensions and can run the previously written code without any changes.
+Extensions and you can run the previously written code without any changes.
 
 .. csv-table::
    :header: "Name", "Description"
@@ -189,17 +189,20 @@ Bricklets
        :align: center
        :target: _images/Bricklets/bricklet_voltage_tilted_800.jpg
 
-Bricklets can be used to extend the features of a 
-:ref:`Brick <product_overview_bricks>`. There are Bricklets to measure
-physical values such as rotation, voltage, current, ambient light.
-Also there are Bricklets for control purposes such as
+Bricklets can be used to extend the features of 
+:ref:`Bricks <product_overview_bricks>`. There are Bricklets to measure
+physical values such as rotation, voltage, current and ambient light
+as well as Bricklets for control purposes such as
 switching relays, digital input/output and drawing on LCDs. 
 
 Unlike Bricks, Bricklets have no fixed size. Each Bricklet has the minimum 
-size it needs. Each Brick has up to four connectors for Bricklets.
-You can easily connect the Bricklet with the supplied cable. The Brick than
-detects the new features and new software methods are available. See 
-:ref:`High Level Programming Interface <pi_hlpi>` for more information.
+size possible. Each Brick has up to four connectors for Bricklets.
+
+On startup a Brick detects connected Bricklets. The Bricklet plugins,
+stored in the EEPROM of the Bricklet, are copied into the flash of the
+Brick. This adds methods to the Brick, that can then be called from the PC.
+
+See :ref:`High Level Programming Interface <pi_hlpi>` for more information.
 
 .. csv-table::
    :header: "Name", "Description", "C/C++", "C#", "Java", "Python"
@@ -242,13 +245,13 @@ Power Supplies
 A stack can be powered by the
 master of the stack over its USB connection. 
 This option is limited by the USB specification (500mA). 
-A large stack may need more than these 500mA.
+A large stack may need more power than 500mA.
 
-To provide greater currents Power Supply Boards are available.
+To provide greater currents, Power Supply Boards are available.
 These boards power the stack and can additionally be used to supply the power
 for driver bricks (e.g. :ref:`DC Brick <dc_brick>`). Power Supply
 Boards have the same size as :ref:`Bricks <product_overview_bricks>` and are
-plugged in at the bottom of the stack.
+stacked in at the bottom of the stack.
 
 .. csv-table::
    :header: "Name", "Description"

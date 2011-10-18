@@ -19,7 +19,7 @@ communicate over wireless or cable based interfaces.
 Use a single Brick
 ------------------
 
-We choose the :ref:`DC Brick <dc_brick>` as a representative throughout
+We choose the DC Brick as a representative throughout
 this tutorial. It is however easily possible to transfer the concepts
 shown to other Bricks. Click :ref:`here <product_overview_bricks>` for 
 an overview of all available Bricks.
@@ -31,11 +31,11 @@ Phase 1: Testing
 Before the DC Brick can be used, the :ref:`brickd` and the :ref:`brickv` 
 have to be installed, installation instructions can be found 
 :ref:`here <brickv_installation>` and :ref:`here <brickd_installation>`. 
-The Brick Deamon is a bridge 
+The Brick Daemon is a bridge 
 between the Bricks/Bricklets and the programming language API bindings. 
 The Brick Viewer is a GUI for testing purposes.
 
-Now you are ready to tinker! Take the DC Brick and 
+After the installation you are ready to tinker! Take the DC Brick and 
 connect a motor and a battery as shown the picture below (You can of
 course also use a power supply instead of the battery or e.g. a Servo Brick
 and a servo instead of the DC Brick and a motor):
@@ -49,7 +49,7 @@ and a servo instead of the DC Brick and a motor):
 Start the Brick Viewer and connect the
 DC Brick over a USB cable with your PC. After pressing the "connect"
 button in the viewer you should get a tab called "DC Brick". Select it.
-Your Brick Viewer now looks as below:
+Your Brick Viewer now looks as depicted below:
 
 .. image:: /Images/Bricks/dc_brickv.jpg
    :scale: 100 %
@@ -63,33 +63,33 @@ a representation of the current velocity on the right side.
 Different sliders allow you to modify velocity and acceleration
 of the motor as well as the 
 `PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency 
-of the driver. To play around you have to click "Enable", after this
-you are in control. 
+of the driver. After clicking "Enable" you are in control of the motor. 
 
 Phase 2: Write your own Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After we verified that the DC Brick is working, we can write our
-first application. You can choose one of the 
-:ref:`available <api_bindings>` programming 
+The DC Brick and motor are verified to work properly, there is now
+nothing in the way to write a first program that controls the DC Brick.
+
+You can choose one of the :ref:`available <api_bindings>` programming 
 languages, in this tutorial we use `Python <http://www.python.org>`__,
 since it is easy to understand. 
 
 The necessary steps to get everything working are essentially
 the same in all programming language. This tutorial together with the 
 examples in the "Programming Interfaces" section of every product should 
-allow you to get any Brick working with any programming
-language.
+allow you to get any Brick working with any programming language.
 
 In the following we assume that you now the basics of the programming
 language you picked and that the necessary compilers/interpreters are
 already installed.
 
-Create a folder for your DC Brick test project.
-Download the API bindings for the DC Brick and the corresponding IP Connection
-API from the Downloads :ref:`page <downloads>` and place them in the
-folder.
+Download the API bindings for your programming language from the Downloads 
+:ref:`page <downloads>` and install them. Installation instructions can
+be found :ref:`here <api_bindings>` and in the readme.txt supplied with
+the API bindings.
 
+Create a folder for your DC Brick test project.
 Download one of the examples for the DC Brick as a starting point 
 from :ref:`here <dc_brick_python_examples>` and place it in the folder.
 
@@ -100,12 +100,12 @@ In this tutorial we take a look at **example_configuration.py**:
  :linenos:
  :tab-width: 4
 
-**Line 12** creates an IP Connection to the Brick Deamon running on the host 
+**Line 12** creates an IP Connection to the Brick Daemon running on the host 
 defined in **Lines 4-5**. It is possible to run your program on 
-another PC than the one which has the Brick Deamon running (e.g. you can
+another PC than the one which has the Brick Daemon running (e.g. you can
 write a program on you phone that controls a Brick connected to your PC).
 
-**Line 14** creates an object which lets you control the DC Brick. 
+**Line 14** creates an object that allows to control the DC Brick. 
 It is necessary to assign the Unique Identifier (UID) of the Brick
 (in this example defined in **Line 6**). Change it corresponding to 
 your device!
@@ -144,13 +144,6 @@ Bricklets.
 To use a Bricklet, connect it to your Brick over the supplied cable
 when the Brick is not powered.
 
-.. warning::
-
-   If you replace a Bricklet without removing power of the Brick
-   you can connect two hardware modules that both actively drive a signal
-   and create a short circuit.
-
-
 We use a :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>` and the
 :ref:`DC Brick <dc_brick>` from the previous part of this tutorial,
 but it is easy to transfer the shown concepts to any Bricklet
@@ -183,13 +176,9 @@ You should see a corresponding movement in the viewer.
 Phase 2: Write your own Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To incorporate the Rotary Poti Bricklet in our small project we have to 
-download the Python bindings for the Rotary Poti Bricklet from 
-:ref:`here <downloads_firmwares_plugins>` and place them in the project 
-folder.
-
-We change our small program to allow the controlling of the motor
-velocity with the rotary poti. It now look as follows (`Download <https://raw.github.com/Tinkerforge/doc/master/source/Tutorials/tutorial_brick_bricklet_test.py>`__), :
+To incorporate the Rotary Poti Bricklet in our small project 
+we change the program to allow controlling of the motor
+velocity with the rotary poti. It now look as follows (`Download <https://raw.github.com/Tinkerforge/doc/master/source/Tutorials/tutorial_brick_bricklet_test.py>`__):
 
 .. literalinclude:: tutorial_brick_bricklet_test.py
  :language: python
@@ -199,8 +188,8 @@ velocity with the rotary poti. It now look as follows (`Download <https://raw.gi
 **Lines 4-7** are the typical configurations, the UID has to be changed
 according to the Bricks/Bricklets you use.
 
-In **Lines 23-28** an IP Connection to the Brick Deamon is established
-the Brick and Bricklet devices are created and added to the IP Connection.
+In **Lines 23-28** an IP Connection to the Brick Daemon is established.
+The Brick and Bricklet devices are created and added to the IP Connection.
 
 We configure the Rotary Poti Bricklet, such that it calls the method 
 **cb_position** every time the position of the potentiometer changes.
@@ -212,8 +201,8 @@ The callback method is registered in **Line 32**.
 **cb_position** is defined in **Line 16-19**, 
 it sets a new velocity based on the current position of the potentiometer.
 
-In **Lines 35-36** we enable the motor and set a maximum acceleration, such
-that the motor will follow the potentiometer movements immediately.
+In **Lines 35-36** we enable the motor and set a maximum acceleration. This
+allows the motor to follow the potentiometer movements immediately.
 
 In **Lines 36-38** we wait for user input to prevent program termination.
 After this the motor is stopped and the IP Connection destroyed.
@@ -229,7 +218,7 @@ You need a :ref:`Master Brick <master_brick>` at the bottom with a PC
 connection to route the data between the PC and the Bricks in the Stack.
 
 The stacking is transparent, that means there is **no code change necessary**
-between a version which uses Bricks separately connected over USB to a PC
+between a version that uses Bricks separately connected over USB to a PC
 or a version with an additional Master and stacked Bricks.
 
 It is possible to use more than one Master Brick in a Stack.
@@ -272,9 +261,11 @@ below the DC Brick with the connected rotary poti.
 Phase 1: Testing
 ^^^^^^^^^^^^^^^^
 
-Take the Stack consisting of a DC Brick with connected Rotary Poti Bricklet
-and a Master Brick and connect the Master Brick
-over USB with your PC as depicted in the image below.
+Build a Stack consisting of a Power-Supply with connected batterie, 
+a Master Brick with connected Rotary Poti Bricklet and a DC Brick with
+connected motor (from bottom to top).
+
+This setup is depicted in the image below.
 
 .. image:: /Images/Tutorial/tutorial_2_600.jpg
    :scale: 100 %
@@ -282,12 +273,9 @@ over USB with your PC as depicted in the image below.
    :align: center
    :target: ../../_images/Tutorial_2_1200.jpg
 
-The Brick Viewer should now show the DC Brick and Rotary Poti 
-Bricklet tabs as in the previous part and an additional "Master Brick" tab.
-
-You should be able to control the DC Brick and test the Rotary Poti Bricklet
-as you have done before.
-
+If you connect the Master Brick to the PC over USB, 
+the Brick Viewer should show the Master Brick (measuring current and voltage
+flowing through the Stack), the DC Brick and the Rotary Poti Bricklet.
 
 Phase 2: Write your own Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -304,6 +292,10 @@ they only reduce wiring and save space. But, as you might have already
 guessed, there is more to it. It is possible to attach **Extensions** to the
 Stack, which extend the Stack with interfaces other than USB 
 (e.g. ZigBee, RS485, Ethernet).
+
+This means we will be able to control the velocity of the Motor with 
+the Rotary Poti wirelessly without changing the code from part two of
+the tutorial!
 
 .. 2x Stacks (USB) -> Chibi
 

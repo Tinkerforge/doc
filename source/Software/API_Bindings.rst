@@ -4,8 +4,8 @@ API Bindings
 ============
 
 API bindings establish a TCP connection to the 
-:ref:`Brick Deamon <brickd>`. Each method call creates a TCP package which
-is send over the Brick Deamon to the Brick. Incoming TCP packages
+:ref:`Brick Daemon <brickd>`. Each method call creates a TCP package which
+is send over the Brick Daemon to the Brick. Incoming TCP packages
 are routed back to the calling method.
 
 See also our :ref:`tutorial` for more information how everything works 
