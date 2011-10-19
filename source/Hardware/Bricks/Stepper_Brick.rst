@@ -247,10 +247,10 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "C/C++", ":ref:`API <stepper_brick_c_api>`", ":ref:`Examples <stepper_brick_c_examples>`", "Installation"
-   "C#", ":ref:`API <stepper_brick_csharp_api>`", ":ref:`Examples <stepper_brick_csharp_examples>`", "Installation"
-   "Java", ":ref:`API <stepper_brick_java_api>`", ":ref:`Examples <stepper_brick_java_examples>`", "Installation"
-   "Python", ":ref:`API <stepper_brick_python_api>`", ":ref:`Examples <stepper_brick_python_examples>`", "Installation"
+   "C/C++", ":ref:`API <stepper_brick_c_api>`", ":ref:`Examples <stepper_brick_c_examples>`", ":ref:`Installation <api_bindings_c>`"
+   "C#", ":ref:`API <stepper_brick_csharp_api>`", ":ref:`Examples <stepper_brick_csharp_examples>`", ":ref:`Installation <api_bindings_csharp>`"
+   "Java", ":ref:`API <stepper_brick_java_api>`", ":ref:`Examples <stepper_brick_java_examples>`", ":ref:`Installation <api_bindings_java>`"
+   "Python", ":ref:`API <stepper_brick_python_api>`", ":ref:`Examples <stepper_brick_python_examples>`", ":ref:`Installation <api_bindings_python>`"
 
 
 

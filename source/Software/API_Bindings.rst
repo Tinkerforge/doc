@@ -29,6 +29,8 @@ It is used by the bindings and implemented for each programming language:
 Using the Bindings
 ------------------
 
+
+.. _api_bindings_c:
 C/C++
 ^^^^^
 
@@ -41,12 +43,17 @@ Visual Studio (Windows)
 GCC/G++ (Linux/ MacOS)
 """"""""""""""""""""""
 
+.. _api_bindings_csharp:
 C#
 ^^
 
+
+.. _api_bindings_java:
 Java
 ^^^^
 
+
+.. _api_bindings_python:
 Python
 ^^^^^^
 
