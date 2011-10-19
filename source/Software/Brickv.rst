@@ -30,24 +30,27 @@ To install the Brick Viewer on a Debian based distribution
 :ref:`here <downloads_tools>`. Right-click on the file and choose 
 "Open with GDebi Package Installer":
 
-.. image:: /Images/Screenshots/brickv_1.jpg
-   :scale: 40 %
+.. image:: /Images/Screenshots/brickv_1_small.jpg
+   :scale: 100 %
    :alt: Brickv installation step 1
    :align: center
+   :target: ../_images/Screenshots/brickv_1.jpg
 
 Then click "Install Package":
 
-.. image:: /Images/Screenshots/brickv_2.jpg
-   :scale: 40 %
+.. image:: /Images/Screenshots/brickv_2_small.jpg
+   :scale: 100 %
    :alt: Brickv installation step 2
    :align: center
+   :target: ../_images/Screenshots/brickv_2.jpg
 
 Ready:
 
-.. image:: /Images/Screenshots/brickv_3.jpg
-   :scale: 40 %
+.. image:: /Images/Screenshots/brickv_3_small.jpg
+   :scale: 100 %
    :alt: Brickv installation step 3
    :align: center
+   :target: ../_images/Screenshots/brickv_3.jpg
 
 In Ubuntu you can also use the Ubuntu Software Center, other Desktop
 environments have very similar tools that practically work the same way.
