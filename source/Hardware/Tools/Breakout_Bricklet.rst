@@ -39,6 +39,8 @@ and solder cables on the big pads of the Breakout Bricklet.
 You can also use a standard pin header to make an easy connect and
 disconnect of the sensor possible.
 
+.. note:: Hint: The Breakout Bricklet is an adapter, it can not be recognized by Bricks.
+
 Technical Specifications
 ------------------------
 
