@@ -9,8 +9,9 @@ Programming Interfaces
 High Level Programming Interface (HLPI)
 ---------------------------------------
 
-The High Level Programming Interface uses preprogrammed devices that
-are controlled by an PC. Each device has its own unique identifier (UID).
+The High Level Programming Interface uses preprogrammed devices
+(Bricks/Bricklets) that are controlled by a PC. Each device has its 
+own unique identifier (UID).
 
 The user calls a method implemented in the :ref:`API Bindings <api_bindings>` 
 on a device specified by a UID. 
@@ -42,14 +43,14 @@ as mobile operating systems, such as Android, iOS and Windows Mobile.
 Low Level Programming Interface (LLPI)
 --------------------------------------
 
-If you have a microcontroller board and want to use Bricks/Bricklets, 
-the Low Level Programming Interface may hit the spot. You can
+If you have a microcontroller board (such as Arduino) and you want to use 
+Bricks/Bricklets, the Low Level Programming Interface can be used. You can
 access every :ref:`Brick <product_overview_bricks>` over a 
 **SPI**, **I2C** or **serial** connection. 
 :ref:`Bricklets <product_overview_bricklets>` can be accesses by these
 interfaces over the connected Brick. 
 
-Additionally it is possible to use our Bricklets as breakout boards
+Additionally it is possible to use Bricklets as breakout boards
 and read the equipped sensor directly (e.g. the analog voltage of a light
 sensor).
 
