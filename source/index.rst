@@ -42,6 +42,7 @@ Bricks
   :delim: |
 			
   * :ref:`DC_Brick`      | :ref:`C/C++ <dc_brick_c>`,      :ref:`C# <dc_brick_csharp>`,      :ref:`Java <dc_brick_java>`,      :ref:`Python <dc_brick_python>`
+  * :ref:`Debug_Brick`   | 
   * :ref:`IMU_Brick`     | :ref:`C/C++ <imu_brick_c>`,     :ref:`C# <imu_brick_csharp>`,     :ref:`Java <imu_brick_java>`,     :ref:`Python <imu_brick_python>`
   * :ref:`Master_Brick`  | :ref:`C/C++ <master_brick_c>`,  :ref:`C# <master_brick_csharp>`,  :ref:`Java <master_brick_java>`,  :ref:`Python <master_brick_python>`
   * :ref:`Servo_Brick`   | :ref:`C/C++ <servo_brick_c>`,   :ref:`C# <servo_brick_csharp>`,   :ref:`Java <servo_brick_java>`,   :ref:`Python <servo_brick_python>`
@@ -67,6 +68,7 @@ Bricklets
   :delim: |
 
   * :ref:`ambient_light_bricklet`  | :ref:`C/C++ <ambient_light_bricklet_c>`,  :ref:`C# <ambient_light_bricklet_csharp>`,  :ref:`Java <ambient_light_bricklet_java>`,  :ref:`Python <ambient_light_bricklet_python>`
+  * :ref:`breakout_bricklet`  |
   * :ref:`current12_bricklet`      | :ref:`C/C++ <current12_bricklet_c>`,      :ref:`C# <current12_bricklet_csharp>`,      :ref:`Java <current12_bricklet_java>`,      :ref:`Python <current12_bricklet_python>`
   * :ref:`current25_bricklet`      | :ref:`C/C++ <current25_bricklet_c>`,      :ref:`C# <current25_bricklet_csharp>`,      :ref:`Java <current25_bricklet_java>`,      :ref:`Python <current25_bricklet_python>`
   * :ref:`distance_ir_bricklet`    | :ref:`C/C++ <distance_ir_bricklet_c>`,    :ref:`C# <distance_ir_bricklet_csharp>`,    :ref:`Java <distance_ir_bricklet_java>`,    :ref:`Python <distance_ir_bricklet_python>`
@@ -113,8 +115,6 @@ Tools
    :maxdepth: 1
    :glob:
 
-   Hardware/Tools/Breakout_Bricklet
-   Hardware/Tools/Debug_Brick
    Hardware/Tools/DC_Jack_Adapter
 
 

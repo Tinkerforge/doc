@@ -1,7 +1,7 @@
 .. _debug_brick:
 
-Debug Brick
-===========
+Debug
+=====
 
 .. raw:: html
 

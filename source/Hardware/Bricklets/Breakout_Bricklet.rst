@@ -1,24 +1,24 @@
 .. _breakout_bricklet:
 
-Breakout Bricklet
-=================
+Breakout
+========
 
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ 
-	    tfdocstart("Tools/breakout_bricklet_tilted_350.jpg", 
-	             "Tools/breakout_bricklet_tilted_600.jpg", 
+	    tfdocstart("Bricklets/breakout_bricklet_tilted_350.jpg", 
+	             "Bricklets/breakout_bricklet_tilted_600.jpg", 
 	             "Breakout Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Tools/breakout_bricklet_horizontal_pinheader_100.jpg", 
-	             "Tools/breakout_bricklet_horizontal_pinheader_600.jpg", 
+	    tfdocimg("Bricklets/breakout_bricklet_horizontal_pinheader_100.jpg", 
+	             "Bricklets/breakout_bricklet_horizontal_pinheader_600.jpg", 
 	             "Breakout Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Tools/breakout_bricklet_connected_100.jpg", 
-	             "Tools/breakout_bricklet_connected_600.jpg", 
+	    tfdocimg("Bricklets/breakout_bricklet_connected_100.jpg", 
+	             "Bricklets/breakout_bricklet_connected_600.jpg", 
 	             "Breakout Bricklet with Rotary Poti") 
 	}}
 	{{ tfdocend() }}
@@ -38,6 +38,8 @@ and solder cables on the big pads of the Breakout Bricklet.
 
 You can also use a standard pin header to make an easy connect and
 disconnect of the sensor possible.
+
+.. note:: Hint: The Breakout Bricklet is an adapter, it can not be recognized by Bricks.
 
 Technical Specifications
 ------------------------
