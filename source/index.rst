@@ -23,6 +23,8 @@ Documentation
    Source_Code
 
 
+.. _index_bricks:
+
 ******
 Bricks
 ******
@@ -44,6 +46,9 @@ Bricks
   * :ref:`Master_Brick`  | :ref:`C/C++ <master_brick_c>`,  :ref:`C# <master_brick_csharp>`,  :ref:`Java <master_brick_java>`,  :ref:`Python <master_brick_python>`
   * :ref:`Servo_Brick`   | :ref:`C/C++ <servo_brick_c>`,   :ref:`C# <servo_brick_csharp>`,   :ref:`Java <servo_brick_java>`,   :ref:`Python <servo_brick_python>`
   * :ref:`Stepper_Brick` | :ref:`C/C++ <stepper_brick_c>`, :ref:`C# <stepper_brick_csharp>`, :ref:`Java <stepper_brick_java>`, :ref:`Python <stepper_brick_python>`
+
+
+.. _index_bricklets:
 
 *********
 Bricklets
