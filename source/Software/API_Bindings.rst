@@ -116,7 +116,7 @@ Documentation for the API can be found :ref:`here <index_bricks>`.
 Java
 ^^^^
 
-The java bindings consist of library (.jar) for all Tinkerforge Bricks and 
+The java bindings consist of a library (.jar) for all Tinkerforge Bricks and 
 Bricklets (Tinkerforge.jar), the source of the jar (in source/) and all 
 available Java examples (in examples/).
 
