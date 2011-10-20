@@ -44,7 +44,7 @@ Description
 
 The Voltage :ref:`Bricklet <product_overview_bricklets>` can be used to 
 extend the features of :ref:`Bricks <product_overview_bricks>` by the 
-capability to measure the voltages.
+capability to measure voltages. The measurement range is 0-50V.
 The voltage can be read out directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`_ without conversion. 
 With configurable events it is possible to react on changing
