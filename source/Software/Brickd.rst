@@ -29,6 +29,50 @@ Installation
 Windows
 ^^^^^^^
 
+To install the Brick Deamon (Service) on a Windows version, download the
+brick Deamon .exe form :ref:`here downloads_tools>`. 
+Click on the downloaded file, this should open the installer:
+
+.. image:: /Images/Screenshots/brickd_windows_1.jpg
+   :scale: 100 %
+   :alt: Brickd installation step 1
+   :align: center
+   :target: ../_images/Screenshots/brickd_windows_1.jpg
+
+You can choose the actions of the installer:
+ 
+ * **Install Brickd Programm** will copy the program files
+ * **Install Brickd Service** will install it as a Windows service
+
+Typically you want the installer to perform both tasks.
+Click on "Next" to start the installation process.
+
+.. image:: /Images/Screenshots/brickd_windows_2.jpg
+   :scale: 100 %
+   :alt: Brickd installation step 2
+   :align: center
+   :target: ../_images/Screenshots/brickd_windows_2.jpg
+
+Next you will be the installation path will be questioned.
+Change it if necessary and click "Install".
+
+At the end of the installation process a window will come
+up which informs you, that you may have to install the
+Bricks drivers manually (see section below). Press "OK"
+and reboot your PC.
+
+
+
+
+Windows Driver Installation
+***************************
+
+
+
+
+
+
+
 TBD
 
 Linux
@@ -39,27 +83,27 @@ To install the Brick Daemon on a Debian based distribution
 :ref:`here <downloads_tools>`. Right-click on the file and choose 
 "Open with GDebi Package Installer":
 
-.. image:: /Images/Screenshots/brickd_1_small.jpg
+.. image:: /Images/Screenshots/brickd_linux_1_small.jpg
    :scale: 100 %
    :alt: Brickd installation step 1
    :align: center
-   :target: ../_images/Screenshots/brickd_1.jpg
+   :target: ../_images/Screenshots/brickd_linux__1.jpg
 
 Then click "Install Package":
 
-.. image:: /Images/Screenshots/brickd_2_small.jpg
+.. image:: /Images/Screenshots/brickd_linux_2_small.jpg
    :scale: 100 %
    :alt: Brickd installation step 2
    :align: center
-   :target: ../_images/Screenshots/brickd_2.jpg
+   :target: ../_images/Screenshots/brickd_linux_2.jpg
 
 Ready:
 
-.. image:: /Images/Screenshots/brickd_3_small.jpg
+.. image:: /Images/Screenshots/brickd_linux_3_small.jpg
    :scale: 100 %
    :alt: Brickd installation step 3
    :align: center
-   :target: ../_images/Screenshots/brickd_3.jpg
+   :target: ../_images/Screenshots/brickd_linux_3.jpg
 
 In Ubuntu you can also use the Ubuntu Software Center, other Desktop
 environments have very similar tools that practically work the same way.
@@ -93,5 +137,5 @@ installation and at startup automatically.
 Mac OS
 ^^^^^^
 
-TBD
+.. note:: Mac OS will come soon.
 

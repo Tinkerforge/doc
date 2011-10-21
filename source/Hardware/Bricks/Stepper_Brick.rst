@@ -49,7 +49,7 @@ Description
 -----------
 
 The Stepper :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit ARM
-microcontroller and is able to control one 
+microcontroller and is able to control one bipolar
 `Stepper motor <http://en.wikipedia.org/wiki/Stepper_motor>`_
 with a maximum current of **2.5A** and a maximum voltage of **38V** per winding.
 The maximum driving current and the 
