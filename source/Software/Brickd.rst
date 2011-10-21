@@ -30,7 +30,7 @@ Windows
 ^^^^^^^
 
 To install the Brick Deamon (Service) on a Windows version, download the
-brick Deamon .exe form :ref:`here downloads_tools>`. 
+brick Deamon .exe form :ref:`here <downloads_tools>`. 
 Click on the downloaded file, this should open the installer:
 
 .. image:: /Images/Screenshots/brickd_windows_1.jpg

@@ -25,11 +25,6 @@ div.document {
     background-color: transparent;
 }
 
-div.documentwrapper {
-/*    float: left;*/
-    width: 100%;
-}
-
 div.bodywrapper {
 /*    margin: 0 0 0 230px;*/
 }
@@ -340,6 +335,7 @@ div.indextable table.docutils td {
 }
 
 div.indextable table.docutils {
+		border-collapse: separate;
     border: none;
     margin-left: 0px;
     width: auto;
