@@ -41,7 +41,6 @@ bug tracker.
  | | 
  **Bricks**: | | 
  DC | `git://github.com/Tinkerforge/dc-brick.git <https://github.com/Tinkerforge/dc-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/dc-brick/issues>`__
- IMU | `git://github.com/Tinkerforge/imu-brick.git <https://github.com/Tinkerforge/imu-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/imu-brick/issues>`__
  Master | `git://github.com/Tinkerforge/master-brick.git <https://github.com/Tinkerforge/master-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/master-brick/issues>`__
  Servo | `git://github.com/Tinkerforge/servo-brick.git <https://github.com/Tinkerforge/servo-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/servo-brick/issues>`__
  Stepper | `git://github.com/Tinkerforge/stepper-brick.git <https://github.com/Tinkerforge/stepper-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/stepper-brick/issues>`__ 
