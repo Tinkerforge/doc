@@ -67,13 +67,47 @@ and reboot your PC.
 Windows Driver Installation
 """""""""""""""""""""""""""
 
+Dependend on your Windows version it may be necessary
+to install a Brick driver for each Brick you like to connect
+independently.
 
+Connect your Brick over USB to your PC. If a driver installation
+is necessary you should see an window like below:
 
+.. image:: /Images/Screenshots/brickd_windows_driver_1.jpg
+   :scale: 100 %
+   :alt: Brickd driver installation step 1
+   :align: center
+   :target: ../_images/Screenshots/brickd_windows_driver_1.jpg
 
+Since Windows does not know our drivers we have to specify the 
+drivers which are automatically be installed during the Brick Deamon
+installation.
 
+.. image:: /Images/Screenshots/brickd_windows_driver_2.jpg
+   :scale: 100 %
+   :alt: Brickd driver installation step 2
+   :align: center
+   :target: ../_images/Screenshots/brickd_windows_driver_2.jpg
 
+Choose the driver location manually.
 
-TBD
+.. image:: /Images/Screenshots/brickd_windows_driver_3.jpg
+   :scale: 100 %
+   :alt: Brickd driver installation step 3
+   :align: center
+   :target: ../_images/Screenshots/brickd_windows_driver_3.jpg
+
+You will find them in your Brickd programm directory in the "drivers" folder.
+
+.. image:: /Images/Screenshots/brickd_windows_driver_4.jpg
+   :scale: 100 %
+   :alt: Brickd driver installation step 4
+   :align: center
+   :target: ../_images/Screenshots/brickd_windows_driver_4.jpg
+
+After a sucessful installation the Brick should use a driver called "Brick_Driver".
+You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
 
 Linux
 ^^^^^
