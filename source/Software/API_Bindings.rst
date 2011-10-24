@@ -72,10 +72,11 @@ compilation of the project with gcc on linux looks like::
 
  gcc -lpthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
 
-On Windows WinThreads???? (TODO) are used for threading, we can compile
-the example as following::
+On Windows Winsock2 is used for threading. Under MinGW we can compile the example as 
+following (hint: the library linking must come after the source)::
 
- gcc.exe ?????? -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c
+ gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
+
 
 .. _api_bindings_csharp:
 
