@@ -194,3 +194,12 @@ we use::
  from brick_stepper
  
 After that, the example can be executed again.
+
+.. note:: Windows Installation hint
+
+ * Download and install python http://www.python.org/download (e.g. python 2.7)
+ * http://pypi.python.org/pypi/setuptools#windows (install setuptools)
+ * Open windows command shell
+ * cd C:\Python*\Scripts
+ * easy_install.exe PATH-TO-OUR-EGG
+   * e.g. easy_install.exe C:\Documents and Settings\user\My Documents\bindings\python\tinkerforge.egg

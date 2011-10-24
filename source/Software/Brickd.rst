@@ -33,7 +33,7 @@ To install the Brick Deamon (Service) on a Windows version, download the
 brick Deamon .exe form :ref:`here <downloads_tools>`. 
 Click on the downloaded file, this should open the installer:
 
-.. image:: /Images/Screenshots/brickd_windows_1.jpg
+.. image:: /Images/Screenshots/brickd_windows_1_small.jpg
    :scale: 100 %
    :alt: Brickd installation step 1
    :align: center
@@ -47,7 +47,7 @@ You can choose the actions of the installer:
 Typically you want the installer to perform both tasks.
 Click on "Next" to start the installation process.
 
-.. image:: /Images/Screenshots/brickd_windows_2.jpg
+.. image:: /Images/Screenshots/brickd_windows_2_small.jpg
    :scale: 100 %
    :alt: Brickd installation step 2
    :align: center
@@ -67,24 +67,27 @@ and reboot your PC.
 Windows Driver Installation
 """""""""""""""""""""""""""
 
-Dependend on your Windows version it may be necessary
-to install a Brick driver for each Brick you like to connect
-independently.
+Dependend on your Windows version it is necessary
+to install a Brick driver. This driver needs to be installed for each of your
+Bricks independently. 
 
 Connect your Brick over USB to your PC. If a driver installation
 is necessary you should see an window like below:
 
-.. image:: /Images/Screenshots/brickd_windows_driver_1.jpg
+.. image:: /Images/Screenshots/brickd_windows_driver_1_small.jpg
    :scale: 100 %
    :alt: Brickd driver installation step 1
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_1.jpg
 
-Since Windows does not know our drivers we have to specify the 
-drivers which are automatically be installed during the Brick Deamon
-installation.
+If you have not installed the driver before,
+Windows does not know our drivers and you have to specify the 
+driver location. You can find the drivers in your Brick Deamon installation
+directory. If you have installed the drivers before, you can choose the
+"Install the software automatically" option since Windows already knows
+the driver location.
 
-.. image:: /Images/Screenshots/brickd_windows_driver_2.jpg
+.. image:: /Images/Screenshots/brickd_windows_driver_2_small.jpg
    :scale: 100 %
    :alt: Brickd driver installation step 2
    :align: center
@@ -92,7 +95,7 @@ installation.
 
 Choose the driver location manually.
 
-.. image:: /Images/Screenshots/brickd_windows_driver_3.jpg
+.. image:: /Images/Screenshots/brickd_windows_driver_3_small.jpg
    :scale: 100 %
    :alt: Brickd driver installation step 3
    :align: center
@@ -100,7 +103,7 @@ Choose the driver location manually.
 
 You will find them in your Brickd programm directory in the "drivers" folder.
 
-.. image:: /Images/Screenshots/brickd_windows_driver_4.jpg
+.. image:: /Images/Screenshots/brickd_windows_driver_4_small.jpg
    :scale: 100 %
    :alt: Brickd driver installation step 4
    :align: center
