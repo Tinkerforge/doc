@@ -195,11 +195,8 @@ we use::
  
 After that, the example can be executed again.
 
-.. note:: Windows Installation hint
+.. note:: Windows installation hint
 
- * Download and install python http://www.python.org/download (e.g. python 2.7)
- * http://pypi.python.org/pypi/setuptools#windows (install setuptools)
+ * Install easy_install: http://pypi.python.org/pypi/setuptools#windows (setuptools)
  * Open windows command shell
- * cd C:\Python*\Scripts
- * easy_install.exe PATH-TO-OUR-EGG
-   * e.g. easy_install.exe C:\Documents and Settings\user\My Documents\bindings\python\tinkerforge.egg
+ * C:\\YourPythonDir\\Scripts\\easy_install.exe C:\\PathToEgg\\tinkerforge.egg
