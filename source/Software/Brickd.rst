@@ -29,8 +29,8 @@ Installation
 Windows
 ^^^^^^^
 
-To install the Brick Deamon (Service) on a Windows version, download the
-brick Deamon .exe form :ref:`here <downloads_tools>`. 
+To install the Brick Deamon (Service) on a Windows, download the
+Brick Deamon .exe form :ref:`here <downloads_tools>`. 
 Click on the downloaded file, this should open the installer:
 
 .. image:: /Images/Screenshots/brickd_windows_1_small.jpg
@@ -53,12 +53,12 @@ Click on "Next" to start the installation process.
    :align: center
    :target: ../_images/Screenshots/brickd_windows_2.jpg
 
-Next you will be the installation path will be questioned.
+Next the installation path will be questioned.
 Change it if necessary and click "Install".
 
 At the end of the installation process a window will come
 up which informs you, that you may have to install the
-Bricks drivers manually (see section below). Press "OK"
+Brick drivers manually (see section below). Press "OK"
 and reboot your PC.
 
 
