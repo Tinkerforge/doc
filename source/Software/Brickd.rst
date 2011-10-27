@@ -124,7 +124,7 @@ To install the Brick Daemon on a Debian based distribution
    :scale: 100 %
    :alt: Brickd installation step 1
    :align: center
-   :target: ../_images/Screenshots/brickd_linux__1.jpg
+   :target: ../_images/Screenshots/brickd_linux_1.jpg
 
 Then click "Install Package":
 
