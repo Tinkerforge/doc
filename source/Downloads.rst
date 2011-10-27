@@ -14,6 +14,9 @@ Downloads
      INTERRUPTION OR LOSS OF DATA, REGARDLESS OF THE FORM OF ACTION OR LEGAL 
      THEORY UNDER WHICH THE LIABILITY MAY BE ASSERTED, EVEN IF ADVISED OF THE 
      POSSIBILITY OR LIKELIHOOD OF SUCH DAMAGES.
+
+   This page only contains compiled programs and firmwares. The source code
+   for all of these programs and firmwares can be found :ref:`here <source_code>`.
    
 .. terms from arduino.cc, and berkely-based copyrights
 
