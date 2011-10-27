@@ -159,7 +159,7 @@ below.
    :scale: 100 %
    :alt: DC Brick with connected Motor and Rotary Poti Bricklet
    :align: center
-   :target: ../_images/Tutorial/Tutorial_1_1200.jpg
+   :target: ../_images/Tutorial/tutorial_1_1200.jpg
 
 If you now connect the DC Brick to the PC, not only a "DC Brick" tab but
 also a "Rotary Poti Bricklet" tab will be shown in the Brick Viewer.
@@ -271,7 +271,7 @@ This setup is depicted in the image below.
    :scale: 100 %
    :alt: DC Brick in Stack with Master and Power Supply with connected Motor and Rotary Poti Bricklet
    :align: center
-   :target: ../_images/Tutorial/Tutorial_2_1200.jpg
+   :target: ../_images/Tutorial/tutorial_2_1200.jpg
 
 If you connect the Master Brick to the PC over USB, 
 the Brick Viewer should show the Master Brick (measuring current and voltage
@@ -311,4 +311,4 @@ the tutorial!
    :scale: 100 %
    :alt: DC Brick with connected Motor in Stack with Master, Chibi Extension and Power Supply as well as Stack with Master, Chibi Extension and Rotary Poti Bricklet
    :align: center
-   :target: ../_images/Tutorial/Tutorial_4_1200.jpg
+   :target: ../_images/Tutorial/tutorial_4_1200.jpg
