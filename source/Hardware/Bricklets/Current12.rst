@@ -6,7 +6,6 @@ Current12
 .. raw:: html
 
     {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-    {{ tfdocstart() }}
     {{ 
 		tfdocstart("Bricklets/bricklet_current_tilted_350.jpg", 
 		         "Bricklets/bricklet_current_tilted_600.jpg", 
