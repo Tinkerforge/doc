@@ -24,6 +24,13 @@ Breakout
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Makes all Bricklet signals available
+ * Not detected by Bricks
+
+
 Description
 -----------
 

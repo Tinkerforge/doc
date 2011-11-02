@@ -45,6 +45,14 @@ IO16
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * 16 inputs and outputs
+ * Switchable logic voltage 3.3V or 5V
+ * Configurable pullups and interrupts
+
+
 Description
 -----------
 

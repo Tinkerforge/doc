@@ -40,6 +40,13 @@ Piezo Buzzer
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Beeps with 1kHz frequency
+ * Configurable beep duration
+
+
 Description
 -----------
 

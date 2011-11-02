@@ -40,6 +40,13 @@ Ambient Light
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Measures ambient Light
+ * Outputs ambient light in lux, unit 0.1 lux
+ * 12bit resolution
+
 
 Description
 -----------

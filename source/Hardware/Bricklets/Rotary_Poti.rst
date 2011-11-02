@@ -50,6 +50,14 @@ Rotary Poti
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Outputs position 
+ * Configurable events
+ * 300 degree rotation
+
+
 Description
 -----------
 

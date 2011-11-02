@@ -50,6 +50,15 @@ Linear Poti
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Outputs position of the slider
+ * Configurable events
+ * 59mm slide length
+
+
+
 Description
 -----------
 

@@ -44,6 +44,14 @@ Dual Relay
 	}}
 	{{ tfdocend() }}
 
+
+Features
+--------
+
+ * 2 relays to switch AC/DC devices
+ * Switches up to 250V/10A
+
+
 Description
 -----------
 

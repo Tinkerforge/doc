@@ -45,6 +45,15 @@ Distance IR
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Measures distances up to 150cm
+ * Sensor can be changed
+ * Outputs distance in cm
+ * 12bit resolution
+
+
 Description
 -----------
 

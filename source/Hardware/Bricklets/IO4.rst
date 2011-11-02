@@ -40,6 +40,14 @@ IO4
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * 4 inputs and outputs
+ * Fixed 3.3V logic voltage
+ * Configurable pullups and interrupts
+
+
 Description
 -----------
 

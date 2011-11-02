@@ -40,6 +40,14 @@ Humidity
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Measures relative humidity
+ * Outputs 0-100% RH, unit 0.1% RH
+ * Resolution 12bit
+
+
 Description
 -----------
 

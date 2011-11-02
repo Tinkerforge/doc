@@ -40,6 +40,13 @@ LCD 20x4
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Alphanumeric character display with 20x4 characters
+ * Switchable blue backlight
+ * 3 push buttons
+
 Description
 -----------
 
