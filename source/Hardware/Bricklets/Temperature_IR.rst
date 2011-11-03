@@ -42,7 +42,7 @@ Temperature IR
 Features
 --------
 
- * Measures object temperatures from -70°C to 380°C
+ * Measures contactless object temperatures from -70°C to 380°C
  * Configurable emissivity
  * Measures ambient temperature (-40°C to +85°C)
  * Outputs temperatures in °C, unit 0.1°C

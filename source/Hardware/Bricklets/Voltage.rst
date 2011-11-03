@@ -45,7 +45,6 @@ Features
  * Measures voltages up to 50V
  * Outputs voltage in mV, resolution 12bit
  * Configurable events
- * 12bit resolution
 
 
 Description
