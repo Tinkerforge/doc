@@ -44,6 +44,15 @@ Stepper
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Drives one stepper motor with max 38V and 2.5A per phase
+ * Position, velocity and acceleration controllable
+ * Full, half, quarter and eighth step modes
+ * Configurable decay mode
+ * One USB port and two Bricklet ports
+
 
 Description
 -----------

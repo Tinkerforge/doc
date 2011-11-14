@@ -39,6 +39,15 @@ Current25
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Measures currents up to 25 Ampere
+ * Measures direction of current
+ * Outputs current in Ampere
+ * 12bit resolution
+
+
 Description
 -----------
 
@@ -64,6 +73,7 @@ Weight                            3.9g
 --------------------------------  ------------------------------------------------------------
 Sensor                            ACS711 25A Version
 Output: Current                   -25A to 25A, unit 1mA, resolution 12bit
+Max Input Voltage                 100VAC/100VDC (peak)
 ================================  ============================================================
 
 Resources

@@ -40,6 +40,14 @@ LCD 16x2
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Alphanumeric character display with 16x2 characters
+ * Switchable blue backlight
+ * 3 push buttons
+
+
 Description
 -----------
 

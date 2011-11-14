@@ -39,6 +39,14 @@ Step-Down Power Supply
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Powers a Stack of Bricks with 5V
+ * Can power motors of driver Bricks, e.g. DC Brick
+ * Input voltage 6V to 27V
+
+
 Description
 -----------
 

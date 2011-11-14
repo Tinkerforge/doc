@@ -48,6 +48,13 @@ Master
 	}}
 	{{ tfdocend() }}
 
+Features
+--------
+
+ * Can be used to to build Stacks
+ * Usable with cable based and wireless extensions
+ * One USB port and four Bricklet ports
+
 
 Description
 -----------

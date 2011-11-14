@@ -43,6 +43,16 @@ DC
 	}}
 	{{ tfdocend() }}
 
+Features
+--------
+
+ * Drives one brushed DC motor with max 28V and 5A
+ * Direction, velocity and acceleration controllable
+ * Over-temperature and over-current events
+ * Drive/Brake and Drive/Coast mode configurable
+ * One USB port and two Bricklet ports
+
+
 Description
 -----------
 

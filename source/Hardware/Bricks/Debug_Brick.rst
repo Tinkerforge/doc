@@ -33,6 +33,12 @@ Debug
 	}}
 	{{ tfdocend() }}
 
+Features
+--------
+
+ * For Firmware Developers
+ * JTAG and serial interface
+
 
 Description
 -----------

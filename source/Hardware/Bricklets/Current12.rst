@@ -39,6 +39,15 @@ Current12
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * Measures currents up to 12 Ampere
+ * Measures direction of current
+ * Outputs current in Ampere
+ * 12bit resolution
+
+
 Description
 -----------
 
@@ -64,6 +73,7 @@ Weight                            3.9g
 --------------------------------  ------------------------------------------------------------
 Sensor                            ACS711 12.5A Version
 Output: Current                   -12.5A to 12.5A, unit 1mA, resolution 12bit
+Max Input Voltage                 100VAC/100VDC (peak)
 ================================  ============================================================
 
 Resources
