@@ -149,6 +149,112 @@ Or, alternatively add the jar and the Example in an Java IDE of your choice
 
 Documentation for the API can be found :ref:`here <index_bricks>`.
 
+.. _api_bindings_java_android:
+
+Java (Android)
+^^^^^^^^^^^^^^
+For Android the normal Java bindings can be used 
+(see :ref:`above <api_bindings_java>`).
+
+In the following we assume that you already have the android development
+environment installed. If you are just starting with android development,
+you should first complete the 
+`hello world tutorial <http://developer.android.com/resources/tutorials/hello-world.html>`__ from google.
+
+Start a new project by clicking on:
+
+* File
+* New
+* Project...
+* Android Project
+* Choose name (e.g. relay)
+* Choose target
+* Choose package name (e.g. org.example)
+* Finish
+
+Copy complete com/tinkerforge/ folder from source/ into PROJECTFOLDER/src/
+
+Edit the source. Don't forget to set the host IP to the IP address of the
+PC running brickd. You can use your local IP or the IP you are connected
+to the internet with. If you use the latter, you also have to make sure that
+the brickd port is opened to the outside. 
+
+Below is a small example program that turns a relay on and off with a
+toggle button.
+
+.. code-block:: java
+
+ package org.example;
+
+ import android.app.Activity;
+ import android.os.Bundle;
+ import android.view.View;
+ import android.view.View.OnClickListener;
+ import android.widget.ToggleButton;
+
+ import com.tinkerforge.BrickletDualRelay;
+ import com.tinkerforge.IPConnection;
+
+ public class RelayActivity extends Activity {
+	// Change to the IP address of your host
+	private static final String host = new String("192.168.178.35");
+	private static final int port = 4223;
+	private static final String UID = new String("Axb");
+	private BrickletDualRelay dr;
+	private ToggleButton tb;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		IPConnection ipcon;
+	   
+		try {
+			ipcon = new IPConnection(host, port);
+			dr = new BrickletDualRelay(UID);
+			ipcon.addDevice(dr);
+		} catch(Exception e) {
+			// Here you might want to give the user a retry button.
+			return;
+		}
+
+		tb = new ToggleButton(this);
+		tb.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				if(tb.isChecked()) {
+					dr.setState(true, false);
+				} else {
+					dr.setState(false, false);
+				}
+			}
+		});
+
+		setContentView(tb);
+	}
+ }
+
+
+After that you have to add the internet permssion (to be able
+to use the network)::
+
+ <uses-permission android:name="android.permission.INTERNET" /> 
+ 
+to AndroidManifest.xml on the same level as the <application> tag.
+
+Your application should now look as depicted below:
+
+.. image:: /Images/Screenshots/android_eclipse_small.jpg
+   :scale: 100 %
+   :alt: Eclipse configuration for Java bindings in Android
+   :align: center
+   :target: ../_images/Screenshots/android_eclipse.jpg
+
+
+Test in simulator by clicking:
+
+* Run 
+* Run 
+* Android Application
+
 .. _api_bindings_python:
 
 Python
