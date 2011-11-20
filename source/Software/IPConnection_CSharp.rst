@@ -75,7 +75,10 @@ API
  This makes sense if you relies solely on callbacks or if
  the ip connection was created in a thread.
 
+ On Windows Phone this function will do nothing (since all sockets are 
+ asynchronous and there are no threads used).
+
 .. csharp:function:: public void IPConnection::Destroy()
 
  Destroys the ip connection. The socket to the Brick Daemon will be closed
- and the thread of the ip connection terminated. 
+ and the thread of the ip connection terminated.
