@@ -112,6 +112,117 @@ Or, alternatively add the dll and the Example in an C# IDE of your choice
 
 Documentation for the API can be found :ref:`here <index_bricks>`.
 
+.. _api_bindings_csharp_windows_phone:
+
+C# (Windows Phone)
+^^^^^^^^^^^^^^^^^^
+
+For Windows Phone the normal C# bindings can be used 
+(see :ref:`above <api_bindings_csharp>`). The asynchronous sockets that 
+are needed for Windows Phone are currently not supported in mono. Since
+the DLL is build to be compatible with C# 2.0 and mono, the DLL is not
+compatible with Windows Phone. To overcome this we have added asynchronous
+sockets for Windows Phone with *#if WINDOWS_PHONE* directives in the socket 
+code. This means you can add the Tinkerforge folder (from the source/ folder 
+in the csharp bindings) as an external resource. The complete C# api bindings
+work with Windows Phone SDK >= 7.1 (SDK 7.0 does not support sockets
+and can thus not be used to interface with brickd).
+
+In the following we assume that you already have visual studio for Windows
+Phone installed. As an example we will create a small project that can toggle 
+a relay. It should be easy to adjust this example for your needs.
+
+Start a new project by clicking on:
+
+* File
+* New Project...
+* Choose Visual C#
+* Choose Windows Phone Application 
+* Choose Name (e.g. Relay) 
+* Press OK
+* Choose Target Windows Phone OS 7.1 
+* Press OK
+
+* Right click on project in Solution Explorer 
+* Add 
+* New Folder, choose name Tinkerforge
+* Right click on Tinkerforge 
+* Add
+* Existing Item, choose all files from source/Tinkerforge/ folder of csharp bindings
+
+Edit the MainPage.xaml to add a toggle button:
+
+.. code-block:: xml
+
+ <phone:PhoneApplicationPage 
+    x:Class="Relay.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <ToggleButton Name="RelaySwitch" Content="Change relay state" Checked="RelaySwitch_Checked" Unchecked="RelaySwitch_Unchecked"/>
+    </Grid>
+ </phone:PhoneApplicationPage>
+
+Double click on the toggle button to edit the MainPage.xaml.cs:
+
+.. code-block:: csharp
+
+ using System.Windows.Media;
+ using System.Windows.Media.Animation;
+ using System.Windows.Shapes;
+ using Microsoft.Phone.Controls;
+
+ using Tinkerforge;
+
+ namespace Relay
+ {
+    public partial class MainPage : PhoneApplicationPage
+    {  
+        // Change host ip address to ip from brickd
+        private static string HOST = "192.168.178.35";
+        private static int PORT = 4223;
+        private static string UID = "batti"; // Change to your UID
+        private BrickletDualRelay relay;
+
+        public MainPage()
+        {
+            IPConnection ipcon = new IPConnection(HOST, PORT);
+            relay = new BrickletDualRelay(UID);
+            ipcon.AddDevice(relay);
+
+
+            InitializeComponent();
+
+        }
+
+        private void RelaySwitch_Checked(object sender, RoutedEventArgs e)
+        {
+            relay.SetState(true, false);
+        }
+
+        private void RelaySwitch_Unchecked(object sender, RoutedEventArgs e)
+        {
+            relay.SetState(false, false);
+        }
+    }
+ }
+
+Start the emulator with F5. You should be able to toggle a relay with
+the toggle button on your windows phone. Don't forget to change the
+UID and the host IP address to the correct values for your brickd host and
+your Relay Bricklet.
+
 .. _api_bindings_java:
 
 Java
@@ -122,7 +233,7 @@ Bricklets (Tinkerforge.jar), the source of the jar (in source/) and all
 available Java examples (in examples/).
 
 The library can be used without any further extensions. As an example lets 
-compile the configuration example of the stepper brick.
+compile the configuration example of the stepper brick. 
 
 For this we create a folder and copy the Tinkerforge.jar and the 
 examples/Brick/Stepper/ExampleConfiguration.java into this folder::
@@ -160,6 +271,9 @@ In the following we assume that you already have the android development
 environment installed. If you are just starting with android development,
 you should first complete the 
 `hello world tutorial <http://developer.android.com/resources/tutorials/hello-world.html>`__ from google.
+
+As an example we will create a small project that can toggle 
+a relay. It should be easy to adjust this example for your needs.
 
 Start a new project by clicking on:
 
