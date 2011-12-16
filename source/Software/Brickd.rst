@@ -112,6 +112,17 @@ You will find them in your Brickd programm directory in the "drivers" folder.
 After a sucessful installation the Brick should use a driver called "Brick_Driver".
 You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
 
+.. note:: Under Windows 7 it is possible that Windows tries to install the 
+   drivers automatically and you don't have the choice to choose them manually.
+   This automatic driver installation can fail without 
+   your notice. If you don't see Bricks in the Brick Viewer, please check in 
+   the Windows "Device Manager" that the drivers for the connected Bricks are
+   installed correctly. If not, please choose the "driver" folder in Brick 
+   Deamon Installation and install the drivers manually.
+
+
+
+
 Linux
 ^^^^^
 
@@ -150,7 +161,7 @@ To install Brick Daemon from the console use the following::
  sudo apt-get install python-twisted python-gudev libusb-1.0-0
  sudo dpkg -i brickd_latest.deb
 
-To install Brick Daemon from source, download the source from `here <https://github.com/Tinkerforge/brickb>`__ and install the dependencies:
+To install Brick Daemon from source, download the source from `here <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
 * python-twisted 
 * python-gudev 
