@@ -69,7 +69,7 @@ Consider the maximum voltage and current.
 
    Terminals and contacts are not insulated. If you want
    to switch higher voltages, consider to put the Dual Relay Bricklet
-   in a casing. Touching the contacts is potentially life-threatening.
+   in a casing. Touching the contacts is potentially life-threatening!!!
 
 Technical Specifications
 ------------------------
@@ -92,6 +92,24 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/hardware/dual-relay-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dual_relay_bricklet_dimensions.png>`__)
 * Project source code and design files (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/zipball/master>`__)
+
+
+Connectivity
+------------
+
+Each relay has three connectors A, SW and B. SW can be connected to A or B 
+depending on the state of the relay. 
+
+* If the relay is switched off, then SW is connected to B
+* If the relay is switched on, then SW is connected to A
+
+
+.. image:: /Images/Bricklets/bricklet_dual_relay_connection_350.jpg
+   :scale: 100 %
+   :alt: Dual Relay Bricklet, visualisation of the switch
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_dual_relay_connection_700.jpg
+
 
 
 
