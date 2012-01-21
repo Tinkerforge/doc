@@ -118,7 +118,7 @@ Resources
 ---------
 
 * MC33926 Datasheet (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/datasheets/MC33926.pdf>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/dc-brick/blob/master/hardware/dc-brick-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/dc-brick/blob/master/hardware/dc-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dc_brick_dimensions.png>`__)
 * Project source code and design files (`Download <https://github.com/Tinkerforge/dc-brick/zipball/master>`__)
 
