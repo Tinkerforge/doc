@@ -250,6 +250,23 @@ to be 1V higher than the configured output voltage to assure stable operation.
 
    A too high output voltage can damage your servo.
 
+
+Usage of RC ESC to drive brushless motors
+-----------------------------------------
+
+With this Brick you can control up to 7 brushless motors by using external
+RC Electronic Speed Controllers (ESC). Simply connect the brushless
+motor to the ESC and the ESC to the Servo Brick. With this construction
+the maximum brushless motor current only depends on your selected ESC.
+
+.. warning::
+   
+   Many ESC's have a build-in BEC which can be used to power RC receivers.
+   If you use a ESC with BEC you have to disable it! Otherwise your ESC or
+   the Brick can be destroyed. To disable BEC you have to remove the red
+   wire from the connector you plug in the Servo Brick 
+   (`external video tutorial <http://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
+
 Error LED Sources
 -----------------
 
