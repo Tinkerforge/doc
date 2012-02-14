@@ -162,15 +162,15 @@ The IMU Brick comes factory calibrated and should work out of the box. It is
 however easy to recalibrate, if necessary.
 
 The factory calibration has taken place in a room without any significant
-magnetic fields. If you want to operate the IMU Brick something that
-has a magnetic field (i.e. near a motor), you will have to recalibrate
+magnetic fields. If you want to operate the IMU Brick near something that
+has a magnetic field (e.g. near a motor), you will have to recalibrate
 the magnetometer in the exact position where it will be used later on!
 
 To calibrate the magnetometer press on "Calibrate" in the Brick Viewer and
 choose "Magnetometer" in the tab of the new window. Press "Start Calibration"
 and now change the orientation of the IMU Brick until the bias and gain values
-shown in the GUI do not change. Press "Ready" when this is the case and you
-are done.
+shown in the GUI do not change anymore. Press "Ready" when this is the case 
+and you are done.
 
 Accelerometer and gyroscope can be calibrated similarly, follow the
 instructions as given by the calibration tool. We recommend that you
@@ -180,7 +180,8 @@ and the gyroscope, so you are able to go back to the old calibration.
 We recommend that you don't try to recalibrate the gyroscope gain, it is not
 possible without suitable external machinery. 
 
-The factory calibration for your IMU Brick can be found here TODO
+The factory calibration for your IMU Brick can be found 
+`here <http://download.tinkerforge.com/imu_calibration>`__
 (ordered by UID). If you accidentially miscalibrated a sensor or you
 flashed a new firmware version, you can reimport the factory calibration.
 
