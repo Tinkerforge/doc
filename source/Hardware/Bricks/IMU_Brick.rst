@@ -199,8 +199,8 @@ API documentation.
 
 What is this sourcery, how does it work?
 ----------------------------------------
-With the sensor data gathered by the IMU Brick (angular velocty, acceleration 
-magnetic), it is possible to apply sensor fusion to acquire an absolute
+With the sensor data gathered by the IMU Brick (angular velocity, acceleration, 
+magnetic), it is possible to apply sensor fusion to accquire an absolute
 orientation. 
 
 For this process often a
