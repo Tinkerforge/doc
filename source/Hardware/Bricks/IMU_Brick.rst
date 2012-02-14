@@ -196,8 +196,8 @@ exhibits a `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__.
 A formula to transform quaternions to rotation matrices can be found in the
 API documentation.
 
-What is this sourcery, how does it work, why is there no accumulative error?
-----------------------------------------------------------------------------
+What is this sourcery, how does it work?
+----------------------------------------
 With the sensor data gathered by the IMU Brick (angular velocty, acceleration 
 magnetic), it is possible to apply sensor fusion to acquire an absolute
 orientation. 
