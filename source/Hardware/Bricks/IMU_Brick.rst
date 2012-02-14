@@ -51,7 +51,7 @@ Features
 Description
 -----------
 
-The IMU :ref:`Brick <product_overview_bricks>` is a equipped with a 32-bit ARM
+The IMU :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit ARM
 microcontroller and an `inertial measurement unit
 <http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
 It has 9 degrees of freedom and consists of a 3-axis accelerometer, 
@@ -121,7 +121,7 @@ Resources
 Test your IMU Brick
 -------------------
 
-To test the DC Brick you have to start by installing the
+To test the IMU Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
 (For installation guides click :ref:`here <brickd_installation>` 
 and :ref:`here <brickv_installation>`).
