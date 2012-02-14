@@ -39,40 +39,45 @@ IMU
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * 9 DOF: Full fledged attitude heading reference system
+ * No accumulating errors, no gimbal lock!
+ * Factory calibrated, easy to recalibrate
+ * Calculates quaternions as well as roll, pitch and yaw.
+ * One USB port and two Bricklet ports
+
 Description
 -----------
 
- .. note::  Coming soon! The IMU Brick is not yet ready to buy.
-
 The IMU :ref:`Brick <product_overview_bricks>` is a equipped with a 32-bit ARM
 microcontroller and an `inertial measurement unit
-<http://en.wikipedia.org/wiki/Inertial_measurement_unit>`_.
-It consists of a 3-axis accelerometer, magnetometer and gyroscope.
-The board computes `roll, pitch and yaw
-<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`_ information, 
+<http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
+It has 9 degrees of freedom and consists of a 3-axis accelerometer, 
+magnetometer and gyroscope. The board computes 
+`quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__ 
+as well as `roll, pitch and yaw
+<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ information, 
 it is a complete `Attitude and heading reference system
-<http://en.wikipedia.org/wiki/AHRS>`_. 
-The API allows access to the roll, pitch and yaw data,
-but also acceleration, magnetic field and angular velocity for the 
-three axes. Besides the `euler angles 
-<http://en.wikipedia.org/wiki/Euler_angles>`_ (roll, pitch, yaw) it is 
-also possible to get an 
-`quaternion <http://en.wikipedia.org/wiki/Quaternion>`_
-representation which removes the `gimbal lock 
-<http://en.wikipedia.org/wiki/Gimbal_lock>`_ problem of euler angels.
+<http://en.wikipedia.org/wiki/AHRS>`__. 
+The API allows access to the calculated data and
+also the acceleration, magnetic field and angular velocity for the 
+three axes. If the quaternion representation is used, the IMU Brick does
+not have a `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__,
+as known from euler angles.
 
 It is compatible to other Tinkerforge 
 :ref:`Bricks <product_overview_bricks>`
 and can be used within a stack. 
 Two :ref:`Bricklet <product_overview_bricklets>` ports 
-can be used to extend the features of this device by 
-interfacing up to two Bricklets. 
+can be used to extend the features of this device. 
 
 Controlling the device is possible in several ways. You can control it via 
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless 
-(**Zigbee**, **WLAN**) connections via a Master Brick with corresponding
-Master-Extension (:ref:`High Level Concept <pi_hlpi>`). 
+(**Zigbee**, **WLAN**) connections via an additional Master Brick with 
+corresponding Master-Extension (:ref:`High Level Concept <pi_hlpi>`). 
 
 In the future it will be possible to control the device low level via a 
 **I2C**, **SPI** or **UART (serial)** interface from other microcontroller 
@@ -91,7 +96,7 @@ Microcontroller                                      ATSAM3S2B (128kB Flash, 32k
 Current Consumption                                  53mA
 ---------------------------------------------------  ------------------------------------------------------------
 Acceleration, Magnetic, Angular Velocity Resolution  16-bit
-Roll, Pitch, Yaw Resolution                          16-bit
+Roll, Pitch, Yaw Resolution                          16-bit, output in 0.01 degree steps
 Quaternion Resolution                                32-bit
 ---------------------------------------------------  ------------------------------------------------------------
 ---------------------------------------------------  ------------------------------------------------------------
@@ -116,6 +121,28 @@ Resources
 Test your IMU Brick
 -------------------
 
+To test the DC Brick you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(For installation guides click :ref:`here <brickd_installation>` 
+and :ref:`here <brickv_installation>`).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings, the latter is for testing purposes. 
+
+Connector your IMU Brick to the PC over USB, you should see a tab named
+"IMU Brick" in the Brick Viewer after you pressed "connect". Select it.
+
+.. image:: /Images/Bricks/imu_brickv.jpg
+   :scale: 60 %
+   :alt: Brickv view of the IMU Brick
+   :align: center
+   :target: ../../_images/Bricks/imu_brickv.jpg
+
+You can see all of the available data form the IMU Brick. If you hold the
+IMU Brick in the orientation as shown in the image and press
+"Save Orientation", the movements that you make with the IMU Brick should be
+mirrored in the Brick Viewer.
+
+
 Connectivity
 ------------
 
@@ -131,7 +158,72 @@ IMU Brick.
 IMU Calibration
 ---------------
 
-TBD
+The IMU Brick comes factory calibrated and should work out of the box. It is 
+however easy to recalibrate, if necessary.
+
+The factory calibration has taken place in a room without any significant
+magnetic fields. If you want to operate the IMU Brick something that
+has a magnetic field (i.e. near a motor), you will have to recalibrate
+the magnetometer in the exact position where it will be used later on!
+
+To calibrate the magnetometer press on "Calibrate" in the Brick Viewer and
+choose "Magnetometer" in the tab of the new window. Press "Start Calibration"
+and now change the orientation of the IMU Brick until the bias and gain values
+shown in the GUI do not change. Press "Ready" when this is the case and you
+are done.
+
+Accelerometer and gyroscope can be calibrated similarly, follow the
+instructions as given by the calibration tool. We recommend that you
+export the calibration before you start recalibrating the accelerometer
+and the gyroscope, so you are able to go back to the old calibration.
+
+We recommend that you don't try to recalibrate the gyroscope gain, it is not
+possible without suitable external machinery. 
+
+The factory calibration for your IMU Brick can be found here TODO
+(ordered by UID). If you accidentially miscalibrated a sensor or you
+flashed a new firmware version, you can reimport the factory calibration.
+
+Quaternions vs Euler Angles
+---------------------------
+
+We highly recommend that you use  
+`quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
+in your project rather then euler angles (`roll, pitch and yaw
+<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__), since the latter
+exhibits a `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__.
+
+A formula to transform quaternions to rotation matrices can be found in the
+API documentation.
+
+What is this sourcery, how does it work, why is there no accumulative error?
+----------------------------------------------------------------------------
+With the sensor data gathered by the IMU Brick (angular velocty, acceleration 
+magnetic), it is possible to apply sensor fusion to acquire an absolute
+orientation. 
+
+For this process often a
+`Kalman Filter <http://en.wikipedia.org/wiki/Kalman_filter>`__ is used.
+The filter that is used in the IMU Brick is based on
+`this paper <http://imumargalgorithm30042010sohm.googlecode.com/files/An%20efficient%20orientation%20filter%20for%20inertial%20and%20inertialmagnetic%20sensor%20arrays.pdf>`__ 
+by S. O. Madgwick. In our tests this new state of the art filter 
+could achieve significantly better results then a Kalman Filter.
+
+Madgwick's filter calculates the orientation by numerically integrating the 
+estimated orientation rate. It is computed as the rate of change of 
+orientation measured by the gyroscopes. The magnitude of the gyroscope 
+measurement error is removed in the direction of the estimated error,
+which is computed from accelerometer and magnetometer measurements. 
+
+.. image:: /Images/Bricks/imu_math_magic.png
+   :scale: 100 %
+   :alt: Block diagram of orientation filter from S. O. Madgwick: "An efficient orientation filter for inertial and inertial/magnetic sensor arrays", University of Bristol, April 2010.
+   :align: center
+   :target: ../../_images/Bricks/imu_math_magic.png
+
+Image and explanation from S. O. Madgwick: "An efficient orientation filter 
+for inertial and inertial/magnetic sensor arrays", University of Bristol, 
+April 2010.
 
 Programming Interfaces
 ----------------------
@@ -139,19 +231,16 @@ Programming Interfaces
 High Level Programming Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. note::  Coming soon! 
-
 See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-   "C/C++", "API", "Examples", "Installation"
-   "C#", "API", "Examples", "Installation"
-   "Java", "API", "Examples", "Installation"
-   "Python", "API", "Examples", "Installation"
-
+   "C/C++", ":ref:`API <imu_brick_c_api>`", ":ref:`Examples <imu_brick_c_examples>`", ":ref:`Installation <api_bindings_c>`"
+   "C#", ":ref:`API <imu_brick_csharp_api>`", ":ref:`Examples <imu_brick_csharp_examples>`", ":ref:`Installation <api_bindings_csharp>`"
+   "Java", ":ref:`API <imu_brick_java_api>`", ":ref:`Examples <imu_brick_java_examples>`", ":ref:`Installation <api_bindings_java>`"
+   "Python", ":ref:`API <imu_brick_python_api>`", ":ref:`Examples <imu_brick_python_examples>`", ":ref:`Installation <api_bindings_python>`"
 
 Low Level Programming Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
