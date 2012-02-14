@@ -75,14 +75,14 @@ For testing purposes we have connected a battery
 (see picture below).
 
 If you connect the Brick to the PC over USB,
-you should see a tab named "Voltage Bricklet" in the Brick Viewer after you
+you should see a tab named "Analog In Bricklet" in the Brick Viewer after you
 pressed "connect". Select this tab.
 If everything went as expected you can now see the voltage in Volt
 and a graph that shows the voltage over time. 
 
 After this you can go on with writing your own application.
 See the :ref:`Programming Interface <analog_in_programming_interfaces>` section 
-for the API of the Voltage Bricklet and examples in different
+for the API of the Analog In Bricklet and examples in different
 programming languages.
 
 
