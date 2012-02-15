@@ -29,6 +29,13 @@ Chibi Extension
 	{{ tfdocend() }}
 
 
+Features
+--------
+
+ * 900Mhz radio transceiver
+ * Enable wireless interconnection of Master Bricks
+ * Easy usage
+
 Description
 -----------
 
@@ -56,50 +63,39 @@ only one is connected via USB (many-to-one routing).
 .. note:: Coming soon! 
    The Chibi Extension is not yet available to buy.
 
-..
-	Technical Specifications
-	------------------------
 
-	================================  ============================================================
-	Property                          Value
-	================================  ============================================================
-	Device Current Consumption        TBD
-	Range (Outdoor/Indoor)            TBD/TBD
-	Maximum Baud Rate                 TBD
-	--------------------------------  ------------------------------------------------------------
-	--------------------------------  ------------------------------------------------------------
-	Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
-	Weight                            13g
-	================================  ============================================================
+Technical Specifications
+------------------------
+
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Device Current Consumption        TBD
+Range (Outdoor/Indoor)            TBD/TBD
+Maximum Baud Rate                 TBD
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
+Weight                            13g
+================================  ============================================================
 
 
 
-	Resources
-	---------
+Resources
+---------
 	 
-	* AT86RF212 datasheet (Download)
-	* Schematic (Download)
-	* Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extensions_dimensions.png>`__)
-	* Project source code and design files (Download)
+* AT86RF212 datasheet (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/datasheets/at86rf212.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/hardware/chibi-extension-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extensions_dimensions.png>`__)
+* Project source code and design files (Download)
 
 
-.. Chibi Network Assembly
-  ----------------------
-  * Picture Network
-  * explain creation and configuration
-  * explain usage
+Chibi Network Assembly
+----------------------
+
+* Picture Network
+* explain creation and configuration
+* explain usage
 
 
-
-.. Connectivity
-   ------------
-  The following picture depicts the different connection possibilities of the 
-  Chibi-Extension.
-  .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
-   :scale: 100 %
-   :alt: alternate text
-   :align: center
-
-.. Troubleshoot
-   ------------
 
