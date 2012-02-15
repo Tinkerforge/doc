@@ -111,9 +111,9 @@ Resources
 
 * 3-axis Accelerometer/Magnetometer LSM303 Datasheet (`Download <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00260288.pdf>`__)
 * 3-axis Gyroscope ITG-3200 Datasheet (`Download <http://invensense.com/mems/gyro/documents/PS-ITG-3200A.pdf>`__)
-* Schematic (Download)
-* Outline and drilling plan (Download)
-* Project source code and design files (Download)
+* Schematic (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/hardware/imu-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
+* Project source code and design files (`Download <https://github.com/Tinkerforge/imu-brick/zipball/master>`__)
 
 
 .. _imu_brick_test:
