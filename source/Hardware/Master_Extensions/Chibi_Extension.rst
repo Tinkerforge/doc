@@ -86,8 +86,8 @@ Resources
 	 
 * AT86RF212 datasheet (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/datasheets/at86rf212.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/hardware/chibi-extension-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extensions_dimensions.png>`__)
-* Project source code and design files (Download)
+* Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extension_dimensions.png>`__)
+* Project source code and design files (`Download <https://github.com/Tinkerforge/chibi-extension/zipball/master>`__)
 
 
 Chibi Network Assembly
