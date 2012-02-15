@@ -10,8 +10,8 @@ Features
 --------
 
  * Measures voltages up to 45V
- * API outputs measured voltage in mV
- * High resolution also for smaller voltages
+ * Read out measured voltage in mV (over API)
+ * High resolution also for small voltages
  * Configurable events
 
 
@@ -23,9 +23,9 @@ extend the features of :ref:`Bricks <product_overview_bricks>` by the
 capability to measure voltages.
 The voltage can be read out in `Volt
 <http://en.wikipedia.org/wiki/Volt>`_ directly without conversions necessary. 
-The device has three different measurement ranges: 0-5.5V, 0-10V and 0-45V. 
+The device has 5 different measurement ranges.
 Each range is measured with 12bit resolution such that lower voltages can be 
-measured more accurate than larger voltages. 
+measured more accurate than larger voltages (see technical specifications below). 
 The device switches between these ranges automatically.
 With configurable events it is possible to react on changing
 voltages without polling.
@@ -44,9 +44,11 @@ Sensor                            Switchable Voltage Divider
 Output: Voltage                   0V - 45V, unit: mV
 Measurement Range:                Switched Automatically
 
-                                  * 0V - 5.5V, Resolution 12bit
-                                  * 0V -  10V, Resolution 12bit
-                                  * 0V -  45V, Resolution 12bit
+                                  * 0V -  3.30V, Resolution ~0.81mV
+                                  * 0V -  6.05V, Resolution ~1.48mV
+                                  * 0V - 10.32V, Resolution ~2.52mV
+                                  * 0V - 36.30V, Resolution ~8.86mV
+                                  * 0V - 46.07V, Resolution ~11.25mV
 ================================  ============================================================
 
 Resources
@@ -55,6 +57,19 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/analog-in-bricklet/raw/master/hardware/analog-in-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/analog-in_bricklet_dimensions.png>`__)
 * Project source code and design files (`Download <https://github.com/Tinkerforge/analog-in-bricklet/zipball/master>`__)
+
+
+
+Connectivity
+------------
+
+The Analog In Bricklet has 4 terminals. With these terminals you can access
+Ground, 3.3V and 5V (only output). And you can apply the voltage you like to measure.
+See picture below.
+
+.. warning::
+
+  Image missing
 
 
 .. _analog_in_bricklet_test:

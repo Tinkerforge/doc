@@ -9,8 +9,9 @@ Analog Out
 Features
 --------
 
- * Outputs voltages up to 5V
- * 12bit resolution 
+ * Supplies configurable voltages up to 5V\*
+ * 12bit resolution
+ * Configurable load in power down mode
 
 
 Description
@@ -32,11 +33,19 @@ Property                          Value
 ================================  ============================================================
 Dimensions                        25mm x 30mm (0.98" x 1.18")
 Weight                            TBD
-DAC                               12bit MCP4725
+DAC                               12bit DAC, MCP4725
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Output: Voltage                   0V - 5V, unit: mV
+Output: Voltage                   0V - 5V*, unit: mV
 ================================  ============================================================
+
+.. note::
+  \* Max output voltage depends on supply voltage. If the connected Brick is supplied 
+  over USB, 5V may not be reached. The reason for this is a voltage drop of up to 0.7V 
+  on our products caused by protection diodes. If your supply voltage has for example 4.7V
+  then you can output voltages up to 4.5V in practical. If you need higher output voltages
+  you have to change your powersupply: Use another USB supply or an Stack supply 
+  for example the :ref:`Step Down Powersupply <step-down>`.
 
 Resources
 ---------
@@ -46,6 +55,16 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/analog-out_bricklet_dimensions.png>`__)
 * Project source code and design files (`Download <https://github.com/Tinkerforge/analog-out-bricklet/zipball/master>`__)
 
+
+Connectivity
+------------
+
+The Analog Out Bricklet has four screw terminals. All terminals are only outputs.
+Applying an external voltage on them will destroy the connected devices.
+
+.. warning::
+
+  Todo Image
 
 .. _analog_out_bricklet_test:
 
