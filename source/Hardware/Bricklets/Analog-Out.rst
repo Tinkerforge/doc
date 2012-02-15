@@ -42,7 +42,7 @@ Resources
 ---------
 
 * Schematic (`Download <https://github.com/Tinkerforge/analog-out-bricklet/raw/master/hardware/analog-out-schematic.pdf>`__)
-* MCP4725 Datasheet (`Download <https://github.com/Tinkerforge/analog-out-bricklet/raw/master/datasheets/MCP4725.pdf`__)
+* MCP4725 Datasheet (`Download <https://github.com/Tinkerforge/analog-out-bricklet/raw/master/datasheets/MCP4725.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/analog-out_bricklet_dimensions.png>`__)
 * Project source code and design files (`Download <https://github.com/Tinkerforge/analog-out-bricklet/zipball/master>`__)
 
@@ -67,7 +67,7 @@ If you connect the Brick to the PC over USB,
 you should see a tab named "Analog Out Bricklet" in the Brick Viewer after you
 pressed "connect". Select this tab.
 In this tab you can configure the voltage on the output pin.
-You can measure this voltage with a voltmeter.
+For test purposes, you can measure this voltage with a voltmeter.
 If everything went as expected the voltage on the voltmeter and the voltage
 you have configured should be identical.
 

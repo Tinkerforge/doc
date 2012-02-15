@@ -68,6 +68,8 @@ Bricklets
   :delim: |
 
   * :ref:`ambient_light_bricklet`  | :ref:`C/C++ <ambient_light_bricklet_c>`,  :ref:`C# <ambient_light_bricklet_csharp>`,  :ref:`Java <ambient_light_bricklet_java>`,  :ref:`Python <ambient_light_bricklet_python>`
+  * :ref:`analog_in_bricklet`  | :ref:`C/C++ <analog_in_bricklet_c>`,  :ref:`C# <analog_in_bricklet_csharp>`,  :ref:`Java <analog_in_bricklet_java>`,  :ref:`Python <analog_in_bricklet_python>`
+  * :ref:`analog_out_bricklet`  | :ref:`C/C++ <analog_out_bricklet_c>`,  :ref:`C# <analog_out_bricklet_csharp>`,  :ref:`Java <analog_out_bricklet_java>`,  :ref:`Python <analog_out_bricklet_python>`
   * :ref:`breakout_bricklet`  |
   * :ref:`current12_bricklet`      | :ref:`C/C++ <current12_bricklet_c>`,      :ref:`C# <current12_bricklet_csharp>`,      :ref:`Java <current12_bricklet_java>`,      :ref:`Python <current12_bricklet_python>`
   * :ref:`current25_bricklet`      | :ref:`C/C++ <current25_bricklet_c>`,      :ref:`C# <current25_bricklet_csharp>`,      :ref:`Java <current25_bricklet_java>`,      :ref:`Python <current25_bricklet_python>`

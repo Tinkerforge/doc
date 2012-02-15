@@ -10,7 +10,7 @@ Features
 --------
 
  * Measures voltages up to 45V
- * Outputs voltages in mV
+ * API outputs measured voltage in mV
  * High resolution also for smaller voltages
  * Configurable events
 
@@ -21,11 +21,12 @@ Description
 The Analog In :ref:`Bricklet <product_overview_bricklets>` can be used to 
 extend the features of :ref:`Bricks <product_overview_bricks>` by the 
 capability to measure voltages.
-The voltage can be read out directly in `Volt
-<http://en.wikipedia.org/wiki/Volt>`_ without conversion. 
-The device has three different measurement ranges: 0-5.5V, 0-10V and 0-45V. Each range is 
-measured with 12bit resolution such that lower voltages can be measured more
-accurate than larger voltages. It switches between these ranges automatically.
+The voltage can be read out in `Volt
+<http://en.wikipedia.org/wiki/Volt>`_ directly without conversions necessary. 
+The device has three different measurement ranges: 0-5.5V, 0-10V and 0-45V. 
+Each range is measured with 12bit resolution such that lower voltages can be 
+measured more accurate than larger voltages. 
+The device switches between these ranges automatically.
 With configurable events it is possible to react on changing
 voltages without polling.
 
