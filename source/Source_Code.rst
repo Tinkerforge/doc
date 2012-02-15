@@ -41,12 +41,15 @@ bug tracker.
  | | 
  **Bricks**: | | 
  DC | `git://github.com/Tinkerforge/dc-brick.git <https://github.com/Tinkerforge/dc-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/dc-brick/issues>`__
+ IMU | `git://github.com/Tinkerforge/imu-brick.git <https://github.com/Tinkerforge/imu-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/imu-brick/issues>`__
  Master | `git://github.com/Tinkerforge/master-brick.git <https://github.com/Tinkerforge/master-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/master-brick/issues>`__
  Servo | `git://github.com/Tinkerforge/servo-brick.git <https://github.com/Tinkerforge/servo-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/servo-brick/issues>`__
  Stepper | `git://github.com/Tinkerforge/stepper-brick.git <https://github.com/Tinkerforge/stepper-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/stepper-brick/issues>`__ 
  | | 
  **Bricklets**: | | 
  Ambient Light | `git://github.com/Tinkerforge/ambient-light-bricklet.git <https://github.com/Tinkerforge/ambient-light-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/ambient-light-bricklet/issues>`__
+ Analog In | `git://github.com/Tinkerforge/analog-in-bricklet.git <https://github.com/Tinkerforge/analog-in-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/analog-in-bricklet/issues>`__
+ Analog Out | `git://github.com/Tinkerforge/analog-out-bricklet.git <https://github.com/Tinkerforge/analog-out-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/analog-out-bricklet/issues>`__
  Current12 | `git://github.com/Tinkerforge/current12-bricklet.git <https://github.com/Tinkerforge/current12-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/current12-bricklet/issues>`__
  Current25 | `git://github.com/Tinkerforge/current25-bricklet.git <https://github.com/Tinkerforge/current25-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/current25-bricklet/issues>`__
  Distance IR | `git://github.com/Tinkerforge/distance-ir-bricklet.git <https://github.com/Tinkerforge/distance-ir-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/distance-ir-bricklet/issues>`__
