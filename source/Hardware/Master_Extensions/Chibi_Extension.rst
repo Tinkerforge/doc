@@ -93,9 +93,48 @@ Resources
 Chibi Network Assembly
 ----------------------
 
-* Picture Network
-* explain creation and configuration
-* explain usage
+A chibi network constists of one master and multiple slaves. 
+Chibi master is the Master Brick which has a USB connection to the PC
+running brickd. All the other Master Bricks with Chibi Extension must not have
+a USB connection, only one is allowed. Each Chibi Extension is identified with
+its own address, which have to be unique in the transmission range. 
 
+.. note::
+	If you use multiple networks in parallel assure that every address is unique
+	and not used in different networks.
+
+To create a Chibi Network, stack the Chibi Extension on top of an Master Brick.
+Connect the Master Brick via USB with your PC and start the Brick Viewer 
+software. After you have done this you should see the Master Brick View
+with the identified Chibi Extension (see picture below). Now you have 
+to configure the Extension. 
+
+
+Chibi Master Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To configure a chibi extension as master you have to tell, it its address
+and which slaves (identified by their addresses) should participate to the
+network.
+
+
+Chibi Slave Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Picture
+
+First of all you have to set an unique address for this chibi extension.
+Enter a number (1-255) and press "Save".
+
+* Picture
+
+After this you have to enter a "Master Address". This is the address of the chibi 
+extension which should act as chibi master. If you are currently configuring the
+chibi master, you don't have to configure it (address "0").
+
+* Picture
+
+At the end you have to tell the chibi master which addresses should be part of
+the network. You have 32 slots (0-31). Each slot can contain an address
 
 
