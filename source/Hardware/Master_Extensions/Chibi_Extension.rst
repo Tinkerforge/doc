@@ -105,23 +105,23 @@ its own address, which have to be unique in the transmission range.
 
 To create a Chibi Network, stack the Chibi Extension on top of an Master Brick.
 Connect the Master Brick via USB with your PC and start the Brick Viewer 
-software. After you have done this you should see the Master Brick View
-with the identified Chibi Extension (see picture below). Now you have 
-to configure the Extension. 
+software. After you have done this you should see the Master Brick view
+with the identified Chibi Extension (see picture below). Configure the extension
+as slave or master (see followin descriptions).
 
+If you have configured all extensions you can build you system. Connect Bricks
+and Bricklets as you like. The master of each stack has to be the lowermost board
+(except if you are using a powersupply). The Chibi Extension can be positioned in 
+the stack as you wish.
 
-Chibi Master Configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To configure a chibi extension as master you have to tell, it its address
-and which slaves (identified by their addresses) should participate to the
-network.
+After you have plugged together your system you have to power up it.
+Power up the slaves first after some seconds connect the master with the PC.
+You should now see all the connected boards in the Brick Viewer.
 
 
 Chibi Slave Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Picture
+To configure a Chibi Extension as slave you have to do the following steps:
 
 First of all you have to set an unique address for this chibi extension.
 Enter a number (1-255) and press "Save".
@@ -129,12 +129,35 @@ Enter a number (1-255) and press "Save".
 * Picture
 
 After this you have to enter a "Master Address". This is the address of the chibi 
-extension which should act as chibi master. If you are currently configuring the
-chibi master, you don't have to configure it (address "0").
+extension which should act as chibi master. 
+
+
+Chibi Master Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To configure a chibi extension as master you have to tell it, its address
+and which slaves (identified by their addresses) should participate at the
+network.
+
+First you have to set a unique address for the extension.
+
+* Picture
+
+You don't have to set the "Master Address", this address is not used
+if there exist a USB connection to a PC (chibi master).
 
 * Picture
 
 At the end you have to tell the chibi master which addresses should be part of
-the network. You have 32 slots (0-31). Each slot can contain an address
+the network. You have 32 slots (0-31). Each slot can contain an address.
+Address "0" means this slot is not used. Please arrange the slots such that
+you have no unused slots between used ones.
 
+Modify your Chibi Network
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
+If you like to change something in your network, e.g. add new Bricks or 
+Bricklets, you have to powerdown the node you like to change. Change it 
+and repower it. If the node was a chibi slave, you have to reset the
+chibi master, too. This can be achieved by a powercycle or pressing the reset 
+button on the Master Brick.
