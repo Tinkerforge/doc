@@ -41,7 +41,7 @@ Features
 Description
 -----------
 
-The Chibi Extension is equipped with a 900Mhz radio transceiver. Typically
+The Chibi Extension is equipped with a 700/800/900Mhz radio transceiver. Typically
 this transceiver is used for long range 
 `Zigbee <http://en.wikipedia.org/wiki/Zigbee>`_ networks. Unfortunately
 the Zigbee terms of use do forbid a GPL implementation of the
@@ -62,8 +62,10 @@ be used exactly the same way as if they were both connected via USB.
 It is also possible to create a network with several Chibi Extension where
 only one is connected via USB (many-to-one routing).
 
-.. note:: Coming soon! 
-   The Chibi Extension is not yet available to buy.
+.. note:: After configuring a chibi network all modules will behave as 
+   connected via USB to your PC. Therefore you need no code changes if you change 
+   you system from cable based to chibi. But be aware that you will loose some
+   speed since the transmission range is slower than USB speed.
 
 
 Technical Specifications
