@@ -23,7 +23,8 @@ capability to output voltages.
 The voltage can be configured directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`_ without any conversion. 
 The device is equipped with a 12bit `Digital to Analog Converter (DAC)
-<http://en.wikipedia.org/wiki/Digital-to-analog_converter>`_.
+<http://en.wikipedia.org/wiki/Digital-to-analog_converter>`_. 
+In power down mode a load of 1k, 100k or 500k Ohm to ground can be applied.
 
 Technical Specifications
 ------------------------

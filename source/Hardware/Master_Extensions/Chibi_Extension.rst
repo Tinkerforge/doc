@@ -32,9 +32,11 @@ Chibi Extension
 Features
 --------
 
- * 900Mhz radio transceiver
+ * 700/800/900Mhz radio transceiver
  * Enable wireless interconnection of Master Bricks
  * Easy usage
+ * Configurable frequency and channel
+ * Measureable signal strength
 
 Description
 -----------
@@ -100,8 +102,9 @@ a USB connection, only one is allowed. Each Chibi Extension is identified with
 its own address, which have to be unique in the transmission range. 
 
 .. note::
-	If you use multiple networks in parallel assure that every address is unique
-	and not used in different networks.
+	If you use multiple networks in parallel with identical channel and frequency
+        assure that every address is unique and not used in different networks in
+        transmission range.
 
 To create a Chibi Network, stack the Chibi Extension on top of an Master Brick.
 Connect the Master Brick via USB with your PC and start the Brick Viewer 
@@ -161,3 +164,16 @@ Bricklets, you have to powerdown the node you like to change. Change it
 and repower it. If the node was a chibi slave, you have to reset the
 chibi master, too. This can be achieved by a powercycle or pressing the reset 
 button on the Master Brick.
+
+Chibi Frequency and Channel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You have to configure the transmission frequency and channel depending on your
+location. 
+
+.. warning:: A wrong configured frequency and channel can bring you trouble 
+
+To configure the frequency and channel open the Brick Viewer software
+and select the appropriate settings
+
+* Picture
