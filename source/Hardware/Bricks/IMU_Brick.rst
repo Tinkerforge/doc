@@ -140,7 +140,9 @@ Connector your IMU Brick to the PC over USB, you should see a tab named
 You can see all of the available data form the IMU Brick. If you hold the
 IMU Brick in the orientation as shown in the image and press
 "Save Orientation", the movements that you make with the IMU Brick should be
-mirrored in the Brick Viewer.
+mirrored in the Brick Viewer. Before you press "Save Orientation" you should
+hold the IMU Brick still for about 15 seconds, so it can converge to the
+correct position.
 
 
 Connectivity
