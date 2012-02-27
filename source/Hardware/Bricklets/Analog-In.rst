@@ -8,7 +8,7 @@ Features
 
  * Measures voltages of up to 45V
  * Read out measured voltage in mV
- * High resolution also for small voltages
+ * High resolution up to 0.81mV
  * Configurable events
 
 
