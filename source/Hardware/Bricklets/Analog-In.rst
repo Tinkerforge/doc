@@ -45,7 +45,7 @@ Measurement Range:                Switched Automatically
                                   * 0V -  6.05V, Resolution ~1.48mV
                                   * 0V - 10.32V, Resolution ~2.52mV
                                   * 0V - 36.30V, Resolution ~8.86mV
-                                  * 0V - 46.07V, Resolution ~11.25mV
+                                  * 0V - 45.00V, Resolution ~11.25mV
 ================================  ============================================================
 
 Resources
