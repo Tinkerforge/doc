@@ -161,7 +161,7 @@ the extension
    :target: ../../_images/Extensions/extension_chibi_address.jpg
 
 and you have to give the Chibi master a list of Chibi slaves that it can
-talkt to:
+talk to:
 
 .. image:: /Images/Extensions/extension_chibi_slave_address.jpg
    :scale: 100 %
