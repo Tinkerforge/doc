@@ -19,12 +19,15 @@ Description
 
 The Analog Out :ref:`Bricklet <product_overview_bricklets>` can be used to 
 extend the features of :ref:`Bricks <product_overview_bricks>` by the 
-capability to output voltages.
+capability to generate voltages between 0V and 5V.
 The voltage can be configured directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`_ without any conversion. 
 The device is equipped with a 12bit `Digital to Analog Converter (DAC)
 <http://en.wikipedia.org/wiki/Digital-to-analog_converter>`_. 
-In power down mode a load of 1k, 100k or 500k Ohm to ground can be applied.
+Instead of generating a voltage it is also possible to choose between a 1k, 
+100k or 500k Ohm load resistor to ground (pull down).
+
+
 
 Technical Specifications
 ------------------------
@@ -37,7 +40,7 @@ Weight                            TBD
 DAC                               12bit DAC, MCP4725
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Output: Voltage                   0V - 5V*, unit: mV
+Output: Voltage                   0V - 5V*, unit: mV, max 24mA
 ================================  ============================================================
 
 .. note::
