@@ -3,13 +3,10 @@
 Analog In
 =========
 
-.. note::
-   Working in progress. Product will be available soon.
-
 Features
 --------
 
- * Measures voltages up to 45V
+ * Measures voltages of up to 45V
  * Read out measured voltage in mV (over API)
  * High resolution also for small voltages
  * Configurable events
@@ -64,13 +61,10 @@ Connectivity
 ------------
 
 The Analog In Bricklet has 4 terminals. With these terminals you can access
-Ground, 3.3V and 5V (only output). And you can apply the voltage you like to measure.
-See picture below.
+ground, 3.3V, 5V (only output) and you can apply the voltage you want to 
+measure. See picture below.
 
-.. warning::
-
-  Image missing
-
+ * TODO: Image
 
 .. _analog_in_bricklet_test:
 
@@ -87,8 +81,9 @@ language API bindings, the latter is for testing purposes.
 Connect the Analog In Bricklet to a 
 :ref:`Brick <product_overview_bricks>` with the supplied cable.
 Additionally connect a voltage source to the Bricklet. 
-For testing purposes we have connected a battery
-(see picture below).
+For testing purposes we have connected a battery.
+
+* TODO: Image
 
 If you connect the Brick to the PC over USB,
 you should see a tab named "Analog In Bricklet" in the Brick Viewer after you

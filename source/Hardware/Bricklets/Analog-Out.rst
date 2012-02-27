@@ -3,15 +3,12 @@
 Analog Out
 ==========
 
-.. note::
-   Working in progress. Product will be available soon.
-
 Features
 --------
 
- * Supplies configurable voltages up to 5V\*
- * 12bit resolution
- * Configurable load in power down mode
+ * Generates configurable voltages of up to 5V\*
+ * 12bit resolution (1mV steps)
+ * Configurable with load resistor to ground
 
 
 Description
@@ -44,12 +41,12 @@ Output: Voltage                   0V - 5V*, unit: mV, max 24mA
 ================================  ============================================================
 
 .. note::
-  \* Max output voltage depends on supply voltage. If the connected Brick is supplied 
-  over USB, 5V may not be reached. The reason for this is a voltage drop of up to 0.7V 
-  on our products caused by protection diodes. If your supply voltage has for example 4.7V
-  then you can output voltages up to 4.5V in practical. If you need higher output voltages
-  you have to change your powersupply: Use another USB supply or an Stack supply 
-  for example the :ref:`Step Down Powersupply <step-down>`.
+  \* Max output voltage depends on supply voltage. If the connected Brick is 
+  powered over USB, 5V may not be reached. The reason for this is a voltage 
+  drop on our products caused by protection diodes. If your supply voltage 
+  has for example 4.7V, then you can generate voltages of up to 4.5V. 
+  If you need to reach 5V, you have to use a Stack supply,
+  e.g. the :ref:`Step Down Powersupply <step-down>`.
 
 Resources
 ---------
@@ -63,12 +60,9 @@ Resources
 Connectivity
 ------------
 
-The Analog Out Bricklet has four screw terminals. All terminals are only outputs.
-Applying an external voltage on them will destroy the connected devices.
+The Analog Out Bricklet has four screw terminals. All terminals are outputs. 
 
-.. warning::
-
-  Todo Image
+ * TODO: Image
 
 .. _analog_out_bricklet_test:
 
@@ -86,6 +80,8 @@ Connect the Analog Out Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable.
 (see picture below).
 
+ * TODO: Image
+
 If you connect the Brick to the PC over USB,
 you should see a tab named "Analog Out Bricklet" in the Brick Viewer after you
 pressed "connect". Select this tab.
@@ -93,6 +89,8 @@ In this tab you can configure the voltage on the output pin.
 For test purposes, you can measure this voltage with a voltmeter.
 If everything went as expected the voltage on the voltmeter and the voltage
 you have configured should be identical.
+
+ * TODO: Image
 
 After this you can go on with writing your own application.
 See the :ref:`Programming Interface <analog_out_programming_interfaces>` section 
