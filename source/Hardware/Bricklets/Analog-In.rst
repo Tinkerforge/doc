@@ -97,7 +97,7 @@ Connectivity
 
 The Analog In Bricklet has 4 terminals. With these terminals you can access
 ground, 3.3V, 5V (only output) and you can apply the voltage you want to 
-measure. See picture below.
+measure (VIN). See picture below.
 
 .. image:: /Images/Bricklets/bricklet_analog_in_vertical_350.jpg
    :scale: 100 %

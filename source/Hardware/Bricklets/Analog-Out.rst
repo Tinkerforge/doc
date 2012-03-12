@@ -98,6 +98,8 @@ Connectivity
 ------------
 
 The Analog Out Bricklet has four screw terminals. All terminals are outputs. 
+Connect VOUT and GND to output voltages. 3.3V and 5V are additional outputs
+with fixed voltages you can use to power things.
 
 .. image:: /Images/Bricklets/bricklet_analog_out_vertical_350.jpg
     :scale: 100 %
