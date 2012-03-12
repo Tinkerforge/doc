@@ -101,9 +101,9 @@ The Analog Out Bricklet has four screw terminals. All terminals are outputs.
 
 .. image:: /Images/Bricklets/bricklet_analog_out_vertical_600.jpg
     :scale: 100 %
-	:alt: Analog Out Bricklet Terminals
-	:align: center
-	:target: ../../_images/Bricklets/bricklet_analog_out_vertical_1200.jpg
+    :alt: Analog Out Bricklet Terminals
+    :align: center
+    :target: ../../_images/Bricklets/bricklet_analog_out_vertical_1200.jpg
 
 
 .. _analog_out_bricklet_test:
