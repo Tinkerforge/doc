@@ -216,12 +216,12 @@ Chibi Example Configuration
 
 In this example we will build a small chibi network consisting of two stacks.
 
-First configure the master of these two stacks (the stack which is directly 
-connected to the PC). Set an address of "1" which will identify this board and
+First we configure the master of these two stacks (the stack which is directly 
+connected to the PC). Set "Address" to "1", which will identify this Extension and
 set "Master Address" to "0". Next we need to tell the master about the slaves
-which shall be connected. We will only connect one slave with address "2", so 
-take the first configuration slot "Slave Num 0" and set the address to "2". 
-Configure frequency and channel dependend of your location.
+which can be connected. In this example we only have one slave with address "2".
+Take the first configuration slot "Slave Num 0" and set the address to "2". 
+Configure frequency and channel depending on your location.
 
 
 .. image:: /Images/Extensions/extension_chibi_example_conf_master.jpg
@@ -230,8 +230,8 @@ Configure frequency and channel dependend of your location.
    :align: center
    :target: ../../_images/Extensions/extension_chibi_example_conf_master.jpg
 
-To configure the slave we have only to set its "Address" to "2" and the 
-"Master Address" to "1". Keep also an eye on a correct frequency and channel 
+For the slave we have to set "Address" to "2" and "Master Address" to 
+"1". Keep also an eye on a correct frequency and channel 
 configuration.
 
 .. image:: /Images/Extensions/extension_chibi_example_conf_slave.jpg
