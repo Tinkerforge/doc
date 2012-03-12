@@ -44,7 +44,7 @@ Features
 
  * Measures voltages of up to 45V
  * Read out measured voltage in mV
- * High resolution up to 0.81mV
+ * High resolution up to 1.48mV
  * Configurable events
 
 
@@ -56,7 +56,7 @@ extend the features of :ref:`Bricks <product_overview_bricks>` by the
 capability to measure voltages.
 The voltage can be read out in `Volt
 <http://en.wikipedia.org/wiki/Volt>`_ directly without conversions necessary. 
-The device has 5 different measurement ranges.
+The device has 4 different measurement ranges.
 Each range is measured with 12bit resolution such that lower voltages can be 
 measured more accurate than larger voltages (see technical specifications below). 
 The device switches between these ranges automatically.
@@ -77,7 +77,6 @@ Sensor                            Switchable Voltage Divider
 Output: Voltage                   0V - 45V, unit: mV
 Measurement Range:                Switched Automatically
 
-                                  * 0V -  3.30V, Resolution ~0.81mV
                                   * 0V -  6.05V, Resolution ~1.48mV
                                   * 0V - 10.32V, Resolution ~2.52mV
                                   * 0V - 36.30V, Resolution ~8.86mV
@@ -100,7 +99,12 @@ The Analog In Bricklet has 4 terminals. With these terminals you can access
 ground, 3.3V, 5V (only output) and you can apply the voltage you want to 
 measure. See picture below.
 
- * TODO: Image
+.. image:: /Images/Bricklets/bricklet_analog_in_vertical_600.jpg
+   :scale: 100 %
+   :alt: Analog In Bricklet Terminals
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_in_vertical_1200.jpg
+
 
 .. _analog_in_bricklet_test:
 
