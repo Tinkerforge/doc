@@ -3,6 +3,42 @@
 Analog In
 =========
 
+.. raw:: html
+
+    {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+    {{ 
+        tfdocstart("Bricklets/bricklet_analog_in_tilted_350.jpg", 
+                 "Bricklets/bricklet_analog_in_tilted_600.jpg", 
+                 "Ambient Light Bricklet") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_in_vertical_100.jpg", 
+                 "Bricklets/bricklet_analog_in_vertical_600.jpg", 
+                 "Ambient Light Bricklet") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_in_horizontal_100.jpg", 
+                 "Bricklets/bricklet_analog_in_horizontal_600.jpg", 
+                 "Ambient Light Bricklet") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_in_master_100.jpg", 
+                 "Bricklets/bricklet_analog_in_master_600.jpg", 
+                 "Ambient Light Bricklet with Master Brick") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_in_brickv_100.jpg", 
+                 "Bricklets/bricklet_analog_in_brickv.jpg", 
+                 "Brick Viewer screenshot") 
+    }}
+    {{ 
+        tfdocimg("Dimensions/analog_in_bricklet_dimensions_100.png", 
+                 "Dimensions/analog_in_bricklet_dimensions_600.png", 
+                 "Outline and drilling plan") 
+    }}
+    {{ tfdocend() }}
+
+
 Features
 --------
 
@@ -83,13 +119,24 @@ Connect the Analog In Bricklet to a
 Additionally connect a voltage source to the Bricklet. 
 For testing purposes we have connected a battery.
 
-* TODO: Image
+.. image:: /Images/Bricklets/bricklet_analog_in_master_600.jpg
+   :scale: 100 %
+   :alt: Analog In Bricklet connected to Master Brick
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_in_master_1200.jpg
+
 
 If you connect the Brick to the PC over USB,
 you should see a tab named "Analog In Bricklet" in the Brick Viewer after you
 pressed "connect". Select this tab.
 If everything went as expected you can now see the voltage in Volt
 and a graph that shows the voltage over time. 
+
+.. image:: /Images/Bricklets/bricklet_analog_in_brickv.jpg
+   :scale: 100 %
+   :alt: Analog In Bricklet view in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_in_brickv.jpg
 
 After this you can go on with writing your own application.
 See the :ref:`Programming Interface <analog_in_programming_interfaces>` section 
