@@ -7,28 +7,23 @@ Step-Down Power Supply
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ 
-	    tfdocstart("Power_Supplies/powersupply_tilted_front_350.jpg", 
-	             "Power_Supplies/powersupply_tilted_front_600.jpg", 
+	    tfdocstart("Power_Supplies/powersupply11_tilted_350.jpg", 
+	             "Power_Supplies/powersupply11_tilted_600.jpg", 
 	             "Power Supply") 
 	}}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_tilted_back_100.jpg", 
-	             "Power_Supplies/powersupply_tilted_back_600.jpg", 
-	             "Power Supply") 
-	}}
-	{{ 
-	    tfdocimg("Power_Supplies/powersupply_caption_100.jpg", 
-	             "Power_Supplies/powersupply_caption_600.jpg", 
+	    tfdocimg("Power_Supplies/powersupply11_caption_100.jpg", 
+	             "Power_Supplies/powersupply11_caption_600.jpg", 
 	             "Power Supply with caption") 
 	}}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_top_100.jpg", 
-	             "Power_Supplies/powersupply_top_600.jpg", 
+	    tfdocimg("Power_Supplies/powersupply11_horizontal_100.jpg", 
+	             "Power_Supplies/powersupply11_horizontal_600.jpg", 
 	             "Power Supply") 
 	}}
 	{{ 
-	    tfdocimg("Power_Supplies/powersupply_bottom_100.jpg", 
-	             "Power_Supplies/powersupply_bottom_600.jpg", 
+	    tfdocimg("Power_Supplies/powersupply11_connector_100.jpg", 
+	             "Power_Supplies/powersupply11_connector_600.jpg", 
 	             "Power Supply") 
 	}}
 	{{ 
@@ -45,7 +40,7 @@ Features
  * Powers a Stack of Bricks with 5V
  * Can power motors of driver Bricks, e.g. DC Brick
  * Input voltage 6V to 27V
-
+ * Additional output voltage 5V (since version 1.1)
 
 Description
 -----------
@@ -100,8 +95,8 @@ Connectivity
 The following picture depicts the different connection possibilities of the 
 Step-Down Power Supply.
 
-.. image:: /Images/Power_Supplies/powersupply_caption_600.jpg
+.. image:: /Images/Power_Supplies/powersupply11_caption_600.jpg
    :scale: 100 %
-   :alt: alternate text
+   :alt: Power Supply with caption
    :align: center
-   :target: ../../_images/Power_Supplies/powersupply_caption_800.jpg
+   :target: ../../_images/Power_Supplies/powersupply11_caption_800.jpg
