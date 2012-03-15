@@ -3,12 +3,48 @@
 Analog In
 =========
 
+.. raw:: html
+
+    {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+    {{ 
+        tfdocstart("Bricklets/bricklet_analog_in_tilted_350.jpg", 
+                 "Bricklets/bricklet_analog_in_tilted_600.jpg", 
+                 "Ambient Light Bricklet") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_in_vertical_100.jpg", 
+                 "Bricklets/bricklet_analog_in_vertical_600.jpg", 
+                 "Ambient Light Bricklet") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_in_horizontal_100.jpg", 
+                 "Bricklets/bricklet_analog_in_horizontal_600.jpg", 
+                 "Ambient Light Bricklet") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_in_master_100.jpg", 
+                 "Bricklets/bricklet_analog_in_master_600.jpg", 
+                 "Ambient Light Bricklet with Master Brick") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_in_brickv_100.jpg", 
+                 "Bricklets/bricklet_analog_in_brickv.jpg", 
+                 "Brick Viewer screenshot") 
+    }}
+    {{ 
+        tfdocimg("Dimensions/analog_in_bricklet_dimensions_100.png", 
+                 "Dimensions/analog_in_bricklet_dimensions_600.png", 
+                 "Outline and drilling plan") 
+    }}
+    {{ tfdocend() }}
+
+
 Features
 --------
 
  * Measures voltages of up to 45V
  * Read out measured voltage in mV
- * High resolution up to 0.81mV
+ * High resolution up to 1.48mV
  * Configurable events
 
 
@@ -20,7 +56,7 @@ extend the features of :ref:`Bricks <product_overview_bricks>` by the
 capability to measure voltages.
 The voltage can be read out in `Volt
 <http://en.wikipedia.org/wiki/Volt>`_ directly without conversions necessary. 
-The device has 5 different measurement ranges.
+The device has 4 different measurement ranges.
 Each range is measured with 12bit resolution such that lower voltages can be 
 measured more accurate than larger voltages (see technical specifications below). 
 The device switches between these ranges automatically.
@@ -41,7 +77,6 @@ Sensor                            Switchable Voltage Divider
 Output: Voltage                   0V - 45V, unit: mV
 Measurement Range:                Switched Automatically
 
-                                  * 0V -  3.30V, Resolution ~0.81mV
                                   * 0V -  6.05V, Resolution ~1.48mV
                                   * 0V - 10.32V, Resolution ~2.52mV
                                   * 0V - 36.30V, Resolution ~8.86mV
@@ -62,9 +97,14 @@ Connectivity
 
 The Analog In Bricklet has 4 terminals. With these terminals you can access
 ground, 3.3V, 5V (only output) and you can apply the voltage you want to 
-measure. See picture below.
+measure (VIN). See picture below.
 
- * TODO: Image
+.. image:: /Images/Bricklets/bricklet_analog_in_vertical_350.jpg
+   :scale: 100 %
+   :alt: Analog In Bricklet Terminals
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_in_vertical_1200.jpg
+
 
 .. _analog_in_bricklet_test:
 
@@ -83,13 +123,24 @@ Connect the Analog In Bricklet to a
 Additionally connect a voltage source to the Bricklet. 
 For testing purposes we have connected a battery.
 
-* TODO: Image
+.. image:: /Images/Bricklets/bricklet_analog_in_master_600.jpg
+   :scale: 100 %
+   :alt: Analog In Bricklet connected to Master Brick
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_in_master_1200.jpg
+
 
 If you connect the Brick to the PC over USB,
 you should see a tab named "Analog In Bricklet" in the Brick Viewer after you
 pressed "connect". Select this tab.
 If everything went as expected you can now see the voltage in Volt
 and a graph that shows the voltage over time. 
+
+.. image:: /Images/Bricklets/bricklet_analog_in_brickv.jpg
+   :scale: 100 %
+   :alt: Analog In Bricklet view in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_in_brickv.jpg
 
 After this you can go on with writing your own application.
 See the :ref:`Programming Interface <analog_in_programming_interfaces>` section 

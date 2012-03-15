@@ -3,6 +3,43 @@
 Analog Out
 ==========
 
+.. raw:: html
+
+    {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+    {{ 
+        tfdocstart("Bricklets/bricklet_analog_out_tilted_350.jpg", 
+                 "Bricklets/bricklet_analog_out_tilted_600.jpg", 
+                 "Ambient Light Bricklet") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_out_vertical_100.jpg", 
+                 "Bricklets/bricklet_analog_out_vertical_600.jpg", 
+                 "Ambient Light Bricklet") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_out_horizontal_100.jpg", 
+                 "Bricklets/bricklet_analog_out_horizontal_600.jpg", 
+                 "Ambient Light Bricklet") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_out_master_100.jpg", 
+                 "Bricklets/bricklet_analog_out_master_600.jpg", 
+                 "Ambient Light Bricklet with Master Brick") 
+    }}
+    {{ 
+        tfdocimg("Bricklets/bricklet_analog_out_brickv_100.jpg", 
+                 "Bricklets/bricklet_analog_out_brickv.jpg", 
+                 "Brick Viewer screenshot") 
+    }}
+    {{ 
+        tfdocimg("Dimensions/analog_out_bricklet_dimensions_100.png", 
+                 "Dimensions/analog_out_bricklet_dimensions_600.png", 
+                 "Outline and drilling plan") 
+    }}
+    {{ tfdocend() }}
+
+
+
 Features
 --------
 
@@ -61,8 +98,15 @@ Connectivity
 ------------
 
 The Analog Out Bricklet has four screw terminals. All terminals are outputs. 
+Connect VOUT and GND to output voltages. 3.3V and 5V are additional outputs
+with fixed voltages you can use to power things.
 
- * TODO: Image
+.. image:: /Images/Bricklets/bricklet_analog_out_vertical_350.jpg
+    :scale: 100 %
+    :alt: Analog Out Bricklet Terminals
+    :align: center
+    :target: ../../_images/Bricklets/bricklet_analog_out_vertical_1200.jpg
+
 
 .. _analog_out_bricklet_test:
 
@@ -80,7 +124,11 @@ Connect the Analog Out Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable.
 (see picture below).
 
- * TODO: Image
+.. image:: /Images/Bricklets/bricklet_analog_out_master_600.jpg
+   :scale: 100 %
+   :alt: Analog Out Bricklet connected to Master Brick
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_out_master_1200.jpg
 
 If you connect the Brick to the PC over USB,
 you should see a tab named "Analog Out Bricklet" in the Brick Viewer after you
@@ -90,7 +138,12 @@ For test purposes, you can measure this voltage with a voltmeter.
 If everything went as expected the voltage on the voltmeter and the voltage
 you have configured should be identical.
 
- * TODO: Image
+.. image:: /Images/Bricklets/bricklet_analog_out_brickv.jpg
+   :scale: 100 %
+   :alt: Analog Out Bricklet view in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_out_brickv.jpg
+
 
 After this you can go on with writing your own application.
 See the :ref:`Programming Interface <analog_out_programming_interfaces>` section 
