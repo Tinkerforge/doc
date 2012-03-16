@@ -129,6 +129,16 @@ You should now be able to see all connected stacks in the Brick Viewer.
 
 Chibi Configuration
 ^^^^^^^^^^^^^^^^^^^
+
+.. note::
+	The chibi configuration changed starting from Brick Viewer version 1.0.6, 
+	before this version it was not necessary to specify if the extension 
+	should be used as master or slave (it was infered by other means).
+
+	It turns out that this was highly confusing to most, so we recommend that
+	you update to the newest Brick Viewer version before you configure your
+	Chibi network.
+
 To configure a Chibi Extension you first have to choose a unique
 address and a frequency and channel 
 
