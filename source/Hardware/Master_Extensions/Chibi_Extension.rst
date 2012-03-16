@@ -51,7 +51,7 @@ simple and small protocol stack that is perfectly suited for our use cases.
 
 In good conditions a **range of up to 2km** can be achieved outdoors.
 
-To establish a Chibi network with Bricks, two Chibi Extensions and two
+To establish a Chibi network with Bricks, at least two Chibi Extensions and two
 Master Bricks are needed. Both Master Bricks can be connected to a
 full stack of Bricks and Bricklets, whereas one Master Brick is Battery
 powered and one is connected with USB. From a programming perspective
@@ -100,7 +100,8 @@ Chibi Network Assembly
 A chibi network constists of one master and multiple slaves. 
 Chibi master is the Master Brick which has a USB connection to the PC
 running brickd. All the other Master Bricks with Chibi Extension must not have
-a USB connection. Each Chibi Extension is identified with
+a USB connection (they can use a USB power supply since Master Brick firmware
+1.1.3). Each Chibi Extension is identified with
 its own address. The addresses have to be unique in the transmission range. 
 
 .. note::
@@ -108,12 +109,11 @@ its own address. The addresses have to be unique in the transmission range.
 	frequency make sure that every address is unique and not used in different 
 	networks in transmission range.
 
-To create a Chibi network, stack the Chibi Extension on top of an Master Brick.
+To create a Chibi network, stack the Chibi Extension on top of a Master Brick.
 Connect the Master Brick via USB with your PC and start the Brick Viewer 
-software. After you have done this you should see the Master Brick view
+software. You should see the Master Brick view
 with the identified Chibi Extension (see image below). Configure the extension
-as slave or master (as described :ref:`here <chibi_slave>` and 
-:ref:`here <chibi_master>`).
+as slave or master (as described :ref:`here <chibi_configuration>`).
 
 If you have configured all extensions you can build your system. Connect 
 Bricks and Bricklets as you like. The master of each stack has to be the 
@@ -123,54 +123,39 @@ can be positioned in the stack as you wish.
 After you have plugged together your system you have to power ip up.
 You have to power up the slaves before the master, since the Chibi master 
 searches for slaves only at startup.
-You should now be able to see all connected boards in the Brick Viewer.
+You should now be able to see all connected stacks in the Brick Viewer.
 
-.. _chibi_slave:
+.. _chibi_configuration:
 
-Chibi Slave Configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^
-To configure a Chibi Extension as slave you have to set an unique address for
-the extension
+Chibi Configuration
+^^^^^^^^^^^^^^^^^^^
+To configure a Chibi Extension you first have to choose a unique
+address and a frequency and channel 
 
-.. image:: /Images/Extensions/extension_chibi_address.jpg
+.. image:: /Images/Extensions/extension_chibi.jpg
    :scale: 100 %
-   :alt: Configuration of Chibi address 
+   :alt: Configuration of Chibi address, frequency and channel
    :align: center
-   :target: ../../_images/Extensions/extension_chibi_address.jpg
+   :target: ../../_images/Extensions/extension_chibi.jpg
 
-and you have to define a Master Address. This is the address of the
-Chibi master this Chibi slave will talk too.
+If you want to configure the extension as slave, you have to choose
+"Slave" as type and specify the address of the chibi master.
 
-.. image:: /Images/Extensions/extension_chibi_master_address.jpg
+.. image:: /Images/Extensions/extension_chibi_slave.jpg
    :scale: 100 %
-   :alt: Configuration of Chibi master address 
+   :alt: Configuration of Chibi in slave mode 
    :align: center
-   :target: ../../_images/Extensions/extension_chibi_master_address.jpg
+   :target: ../../_images/Extensions/extension_chibi_slave.jpg
 
-.. _chibi_master:
+If you want to configure the extension as master, you have to choose
+"Master" as type and specify a list of the slave adresses the master should
+be able to talk to (as a comma sperated list).
 
-Chibi Master Configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-To configure a Chibi Extension as master you have to set an unique address for
-the extension
-
-.. image:: /Images/Extensions/extension_chibi_address.jpg
+.. image:: /Images/Extensions/extension_chibi_master.jpg
    :scale: 100 %
-   :alt: Configuration of Chibi address 
+   :alt: Configuration of Chibi in master mode 
    :align: center
-   :target: ../../_images/Extensions/extension_chibi_address.jpg
-
-and you have to give the Chibi master a list of Chibi slaves that it can
-talk to:
-
-.. image:: /Images/Extensions/extension_chibi_slave_address.jpg
-   :scale: 100 %
-   :alt: Configuration of Chibi slave addresses
-   :align: center
-   :target: ../../_images/Extensions/extension_chibi_slave_address.jpg
-
-There are 32 slots (0-31) available, address 0 means that this slot is not 
-used. There should not be any unused slots between used ones.
+   :target: ../../_images/Extensions/extension_chibi_master.jpg
 
 Modify your Chibi Network
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -188,12 +173,6 @@ Chibi Frequency and Channel
 The Chibi Extension supports several frequencies with different channels
 and different frequencies are allowed in different countries.
 
-.. image:: /Images/Extensions/extension_chibi_frequency.jpg
-   :scale: 100 %
-   :alt: Configuration of Chibi frequency and channel
-   :align: center
-   :target: ../../_images/Extensions/extension_chibi_frequency.jpg
-
 Here is a small list of frequencies with corresponding possible channels:
 
 .. csv-table::
@@ -210,33 +189,3 @@ Here is a small list of frequencies with corresponding possible channels:
 	a system with this component and it is your responsibility that the
 	system you are building abides by your local law. Make sure that you
 	are allowed to use the frequency you are configuring!
-
-Chibi Example Configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In this example we will build a small chibi network consisting of two stacks.
-
-First we configure the master of these two stacks (the stack which is directly 
-connected to the PC). Set "Address" to "1", which will identify this Extension and
-set "Master Address" to "0". Next we need to tell the master about the slaves
-which can be connected. In this example we only have one slave with address "2".
-Take the first configuration slot "Slave Num 0" and set the address to "2". 
-Configure frequency and channel depending on your location.
-
-
-.. image:: /Images/Extensions/extension_chibi_example_conf_master.jpg
-   :scale: 100 %
-   :alt: Example Configuration for Chibi Master
-   :align: center
-   :target: ../../_images/Extensions/extension_chibi_example_conf_master.jpg
-
-For the slave we have to set "Address" to "2" and "Master Address" to 
-"1". Keep also an eye on a correct frequency and channel 
-configuration.
-
-.. image:: /Images/Extensions/extension_chibi_example_conf_slave.jpg
-   :scale: 100 %
-   :alt: Example Configuration for Chibi Slave
-   :align: center
-   :target: ../../_images/Extensions/extension_chibi_example_conf_slave.jpg
-
