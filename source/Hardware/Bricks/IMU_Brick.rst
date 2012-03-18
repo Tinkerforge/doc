@@ -183,7 +183,7 @@ We recommend that you don't try to recalibrate the gyroscope gain, it is not
 possible without suitable external machinery. 
 
 The factory calibration for your IMU Brick can be found at:
-http://download.tf.com/imu_calibration/YOUR_IMU_UID.txt
+http://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
 (replace YOUR_IMU_UID by the UID of your IMU Brick).
 If you accidentially miscalibrated a sensor or you
 flashed a new firmware version, you can reimport the factory calibration.
