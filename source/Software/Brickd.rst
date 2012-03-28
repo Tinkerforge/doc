@@ -185,5 +185,35 @@ installation and at startup automatically.
 Mac OS
 ^^^^^^
 
-.. note:: Mac OS will come soon.
+To install the Brick Daemon on Mac OS download the Brick Daemon .dmg
+from :ref:`here <downloads_tools>`. Click on the downloaded file, this 
+should open the package:
+
+.. image:: /Images/Screenshots/brickd_macos_1_small.jpg
+   :scale: 100 %
+   :alt: Brickd installation step 1
+   :align: center
+   :target: ../_images/Screenshots/brickd_macos_1.jpg
+
+Then click "INSTALL", this should open a password prompt.
+You have to type in your password to add the Brick Daemon
+to your Launchd Daemons.
+
+.. image:: /Images/Screenshots/brickd_macos_2_small.jpg
+   :scale: 100 %
+   :alt: Brickd installation step 2
+   :align: center
+   :target: ../_images/Screenshots/brickd_macos_2.jpg
+
+After this an "Installation Finished" window should come up.
+Click "OK".
+
+.. image:: /Images/Screenshots/brickd_macos_3_small.jpg
+   :scale: 100 %
+   :alt: Brickd installation step 3
+   :align: center
+   :target: ../_images/Screenshots/brickd_macos_3.jpg
+
+You have finished the installation. Please restart your machine
+to start the Brick Daemon on the next startup.
 

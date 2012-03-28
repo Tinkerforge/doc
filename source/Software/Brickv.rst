@@ -124,7 +124,26 @@ brickv/src/brickv/ and start with::
 Mac OS
 ^^^^^^
 
-TBD
+To install the Brick Viewer on Mac OS, download the
+brick viewer .dmg form :ref:`here <downloads_tools>`. 
+Click on the downloaded file, this should open the package:
+
+.. image:: /Images/Screenshots/brickv_macos_1_small.jpg
+   :scale: 100 %
+   :alt: Brickv installation step 1
+   :align: center
+   :target: ../_images/Screenshots/brickv_macos_1.jpg
+
+To install the Brick Viewer pull the file to your applications folder
+
+.. image:: /Images/Screenshots/brickv_macos_2_small.jpg
+   :scale: 100 %
+   :alt: Brickv installation step 2
+   :align: center
+   :target: ../_images/Screenshots/brickv_macos_2.jpg
+
+After this you have finished the installation process.
+Please restart your machine after this.
 
 Usage
 -----
