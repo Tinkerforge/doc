@@ -182,10 +182,10 @@ Error logs can be found in::
 If you install the Debian package, brickd will be started after the
 installation and at startup automatically.
 
-Mac OS
-^^^^^^
+Mac OS X
+^^^^^^^^
 
-To install the Brick Daemon on Mac OS download the Brick Daemon .dmg
+To install the Brick Daemon on Mac OS X download the .dmg
 from :ref:`here <downloads_tools>`. Click on the downloaded file, this 
 should open the package:
 
@@ -196,7 +196,7 @@ should open the package:
    :target: ../_images/Screenshots/brickd_macos_1.jpg
 
 Then click "INSTALL", this should open a password prompt.
-You have to type in your password to add the Brick Daemon
+Root access is needed to add the Brick Daemon
 to your Launchd Daemons.
 
 .. image:: /Images/Screenshots/brickd_macos_2_small.jpg
@@ -214,6 +214,10 @@ Click "OK".
    :align: center
    :target: ../_images/Screenshots/brickd_macos_3.jpg
 
-You have finished the installation. Please restart your machine
-to start the Brick Daemon on the next startup.
+You have finished the installation. The Brick Daemon should be started upon
+installation and it should be started automatically after restarts.
 
+If for some reason brickd doesn't run or it has crashed, you can start it
+from the terminal with::
+
+ sudo launchctl start com.tinkerforge.brickd

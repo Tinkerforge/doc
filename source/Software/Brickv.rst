@@ -121,11 +121,11 @@ brickv/src/brickv/ and start with::
   apt-get -t sid install python-qwt5-qt4
 
 
-Mac OS
-^^^^^^
+Mac OS X
+^^^^^^^^
 
-To install the Brick Viewer on Mac OS, download the
-brick viewer .dmg form :ref:`here <downloads_tools>`. 
+To install the Brick Viewer on Mac OS X, download the
+.dmg form :ref:`here <downloads_tools>`. 
 Click on the downloaded file, this should open the package:
 
 .. image:: /Images/Screenshots/brickv_macos_1_small.jpg
@@ -134,7 +134,7 @@ Click on the downloaded file, this should open the package:
    :align: center
    :target: ../_images/Screenshots/brickv_macos_1.jpg
 
-To install the Brick Viewer pull the file to your applications folder
+To install the Brick Viewer drag and drop the file to your applications folder
 
 .. image:: /Images/Screenshots/brickv_macos_2_small.jpg
    :scale: 100 %
@@ -143,7 +143,8 @@ To install the Brick Viewer pull the file to your applications folder
    :target: ../_images/Screenshots/brickv_macos_2.jpg
 
 After this you have finished the installation process.
-Please restart your machine after this.
+Please restart your machine after this (otherwise the icons don't show up for
+some unexplained reason).
 
 Usage
 -----
