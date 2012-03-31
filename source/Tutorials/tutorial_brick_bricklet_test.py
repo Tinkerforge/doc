@@ -6,9 +6,9 @@ PORT = 4223
 UID_DC = "9yEBJP3Jnf3" # Change to the UID of your DC Brick
 UID_POTI = "2wx" # Change to the UID of your Rotary Poti Bricklet
 
-from ip_connection import IPConnection
-from brick_dc import DC
-from bricklet_rotary_poti import RotaryPoti
+from tinkerforge.ip_connection import IPConnection
+from tinkerforge.brick_dc import DC
+from tinkerforge.bricklet_rotary_poti import RotaryPoti
 
 dc = None
 
