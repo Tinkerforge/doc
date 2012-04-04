@@ -290,21 +290,14 @@ Cross-Link Stacks
 The stacks as shown so far in the tutorial are not super exciting,
 they only reduce wiring and save space. But, as you might have already 
 guessed, there is more to it. It is possible to attach **Extensions** to the
-Stack, which extend the Stack with interfaces other than USB 
-(e.g. ZigBee, RS485, Ethernet).
+Stack, which extend the Stack with interfaces other than USB,
+e.g. Chibi (wireless), RS485, and in the future WLAN and Ethernet.
+ 
+You need one Master Brick and two Chibi Master Extensions additionally to the 
+previous part. Attach one Chibi Extension on top of your Stack and build a new 
+stack from the other Chibi Extension and the Master Brick. Connect the Rotary 
+Poti Bricklet to this new stack (see image below).
 
-This means we will be able to control the velocity of the Motor with 
-the Rotary Poti wirelessly without changing the code from part two of
-the tutorial!
-
-.. 2x Stacks (USB) -> Chibi
-
-.. note::
-
-   This part of the tutorial is currently missing. It will show how
-   to connect two stacks with Chibi (ZigBee) to allow wireless control
-   of the DC Brick with the Rotary Poti Bricklet without any code
-   modifications!
 
 
 .. image:: /Images/Tutorial/tutorial_4_600.jpg
@@ -312,3 +305,17 @@ the tutorial!
    :alt: DC Brick with connected Motor in Stack with Master, Chibi Extension and Power Supply as well as Stack with Master, Chibi Extension and Rotary Poti Bricklet
    :align: center
    :target: ../_images/Tutorial/tutorial_4_1200.jpg
+
+Now connect each stack separately to your PC and configure it with
+the Brick Viewer as described in the 
+:ref:`Chibi documentation <chibi_configuration>`.
+It is necessary that you power up the slave stacks prior to the master stack,
+so please connect power first to the larger stack with the DC Brick and shortly
+after the small master stack (by connecting it over USB to your PC).
+
+If you have done all correctly you should see two Master Bricks, the Rotary 
+Poti Bricklet and the DC Brick in the Brick Viewer. If this is the case
+you can run your previous written code without any change.
+
+Now you are able to control the DC motor wirelessly with the Rotary Poti 
+Bricklet. Take this as a starting point and have fun ;)
