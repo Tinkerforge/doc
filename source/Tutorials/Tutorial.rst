@@ -309,13 +309,11 @@ Poti Bricklet to this new stack (see image below).
 Now connect each stack separately to your PC and configure it with
 the Brick Viewer as described in the 
 :ref:`Chibi documentation <chibi_configuration>`.
-It is necessary that you power up the slave stacks prior to the master stack,
-so please connect power first to the larger stack with the DC Brick and shortly
-after the small master stack (by connecting it over USB to your PC).
+It is necessary that you power up the slave stacks prior to the master stack.
 
-If you have done all correctly you should see two Master Bricks, the Rotary 
+You should see two Master Bricks, the Rotary 
 Poti Bricklet and the DC Brick in the Brick Viewer. If this is the case
-you can run your previous written code without any change.
+you can run your previously written code without any change.
 
 Now you are able to control the DC motor wirelessly with the Rotary Poti 
-Bricklet. Take this as a starting point and have fun ;)
+Bricklet. Take this as a starting point and have fun!
