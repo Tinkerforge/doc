@@ -8,23 +8,23 @@ IO4
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ 
-	    tfdocstart("Bricklets/bricklet_io4_tilted_350.jpg", 
-	             "Bricklets/bricklet_io4_tilted_100.jpg", 
+	    tfdocstart("Bricklets/bricklet_io4_11_tilted_350.jpg", 
+	             "Bricklets/bricklet_io4_11_tilted_100.jpg", 
 	             "IO-4 Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_io4_vertical_100.jpg", 
-	             "Bricklets/bricklet_io4_vertical_600.jpg", 
+	    tfdocimg("Bricklets/bricklet_io4_11_vertical_100.jpg", 
+	             "Bricklets/bricklet_io4_11_vertical_600.jpg", 
 	             "IO-4 Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_io4_horizontal_100.jpg", 
-	             "Bricklets/bricklet_io4_horizontal_600.jpg", 
+	    tfdocimg("Bricklets/bricklet_io4_11_horizontal_100.jpg", 
+	             "Bricklets/bricklet_io4_11_horizontal_600.jpg", 
 	             "IO-4 Bricklet") 
 	}}
 	{{ 
-	    tfdocimg("Bricklets/bricklet_io4_master_100.jpg", 
-	             "Bricklets/bricklet_io4_master_600.jpg", 
+	    tfdocimg("Bricklets/bricklet_io4_11_master_100.jpg", 
+	             "Bricklets/bricklet_io4_11_master_600.jpg", 
 	             "IO-4 Bricklet with Master Brick") 
 	}}
 	{{ 
@@ -64,6 +64,9 @@ Two additional terminal blocks deliver the output voltage and GND.
 
 Human interfaces, such as switches, push-buttons and LEDs are typical 
 applications of this Bricklet.
+
+Hardware version 1.1 adds GND pins nearby the 4 signal pins to allow easier
+access between signal pins and GND.
 
 Technical Specifications
 ------------------------
@@ -106,7 +109,8 @@ Connect the IO4 Bricklet to a
 In our test we connected an LED with series resistor to the board
 by attaching the anode to pin 3 and the cathode to a GND pin.
 Additionally we connected a button that can short pin 0 to GND
-(see picture below).
+(see picture below). Starting from hardware version 1.1 you can also
+use the GND pins directly beside the data pins.
 
 .. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
    :scale: 100 %
