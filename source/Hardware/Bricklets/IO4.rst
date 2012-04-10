@@ -9,7 +9,7 @@ IO4
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{ 
 	    tfdocstart("Bricklets/bricklet_io4_11_tilted_350.jpg", 
-	             "Bricklets/bricklet_io4_11_tilted_100.jpg", 
+	             "Bricklets/bricklet_io4_11_tilted_600.jpg", 
 	             "IO-4 Bricklet") 
 	}}
 	{{ 
