@@ -50,7 +50,7 @@ Features
 
  * Measures distances up to 150cm
  * Sensor can be changed
- * Outputs distance in cm
+ * Outputs distance in mm
  * 12bit resolution
 
 
@@ -82,7 +82,7 @@ Current Consumption               See IR Sensor Datasheet
 --------------------------------  ------------------------------------------------------------------
 Sensor Range                      Depends on attached `Sharp <http://www.sharpsma.com>`_ IR Sensor:
 
-                                  * GP2D120XJ00F:   4- 30cm (1.57" - 11.81")
+                                  * GP2Y0A41SK0F:   4- 30cm (1.57" - 11.81")
                                   * GP2Y0A21YK0F:  10- 80cm (3.94" - 31.50")
                                   * GP2Y0A02YK0F:  20-150cm (7.87" - 59.06")
 
@@ -187,7 +187,7 @@ We provide the voltage/distance mappings for the following sensors:
    :header: "Type", "Range", "Mapping File"
    :widths: 15, 25, 10
 
-	"GP2D120XJ00F", "4- 30cm (1.57" - 11.81")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
+	"GP2Y0A41SK0F and GP2D120XJ00F", "4- 30cm (1.57" - 11.81")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
 	"GP2Y0A21YK0F", "10- 80cm (3.94" - 31.50")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
 	"GP2Y0A02YK0F", "20-150cm (7.87" - 59.06")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A02.txt>`__"
 
