@@ -54,7 +54,7 @@ OS, etc.).
 
 As an example we will compile the Stepper Brick configuration example 
 with gcc on Windows and linux.
-For that we have to copy the IP Connection and the Stepper Brick
+For that we have to copy the IP connection and the Stepper Brick
 bindings (ip_connection.h, ip_connection.c, brick_stepper.c and 
 brick_stepper.h) from the bindings/ folder as well as the
 example_configuration.c from the examples/brick/stepper/ folder into our
