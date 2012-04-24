@@ -3,8 +3,6 @@
 Java - IP Connection
 ======================
 
-.. _ipcon_java_examples:
-
 This is the API site for the Java bindings of the IP connection.
 The IP connection is established between the Brick Daemon
 and the corresponding programming language API bindings. You need to
@@ -13,6 +11,8 @@ use them.
 
 An overview of products that are controllable over an IP connection
 can be found :ref:`here <product_overview>`.
+
+.. _ipcon_java_examples:
 
 Example
 --------
