@@ -19,12 +19,12 @@ Master
 	{{ 
 	    tfdocimg("Bricks/brick_master_stack_front_big_100.jpg", 
 	             "Bricks/brick_master_stack_front_big_600.jpg", 
-	             "Master Brick in Stack") 
+                     "Master Brick in stack")
 	}}
 	{{ 
 	    tfdocimg("Bricks/brick_master_stack_back_big_100.jpg", 
 	             "Bricks/brick_master_stack_back_big_600.jpg", 
-	             "Master Brick in Stack") 
+                     "Master Brick in stack")
 	}}
 	{{ 
 	    tfdocimg("Bricks/brick_master_caption_100.jpg", 
@@ -51,7 +51,7 @@ Master
 Features
 --------
 
- * Can be used to to build Stacks
+ * Can be used to to build stacks
  * Usable with cable based and wireless extensions
  * One USB port and four Bricklet ports
 
@@ -145,10 +145,10 @@ Connect the Brick to the PC over USB. You should see a tab named
    :align: center
    :target: ../../_images/Bricks/master_brickv.jpg
 
-You should see that the Master Brick isn't measuring any Stack voltages or 
+You should see that the Master Brick isn't measuring any stack voltages or
 currents. This is because you have not attached a
 :ref:`Power Supply Board <product_overview_powersupplies>`. When attaching
-such a board you should see the voltage applied to your Stack and the current
+such a board you should see the voltage applied to your stack and the current
 flowing in.
 
 After this small test you can go on with writing your own application.

@@ -18,18 +18,16 @@ def cb_position(position):
     print('Set Position/Velocity: ' + str(position) + '/' + str(velocity))
     dc.set_velocity(velocity)
 
-
 if __name__ == "__main__":
-    ipcon = IPConnection(HOST, PORT) # Create ip connection to brick
+    ipcon = IPConnection(HOST, PORT) # Create IP connection to brick
 
     dc = DC(UID_DC) # Create dc brick device object
     poti = RotaryPoti(UID_POTI) # Create rotary poti device object
-    ipcon.add_device(dc) # Add device to ip connection
-    ipcon.add_device(poti) # Add device to ip connection
+    ipcon.add_device(dc) # Add device to IP connection
+    ipcon.add_device(poti) # Add device to IP connection
 
     poti.set_position_callback_period(50) # set callback period to 50ms
     poti.register_callback(poti.CALLBACK_POSITION, cb_position)
-
 
     dc.enable()
     dc.set_acceleration(0xFFFF) # Full acceleration

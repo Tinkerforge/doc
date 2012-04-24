@@ -105,7 +105,7 @@ The library has been compiled with::
  gmcs /optimize /target:library /out:Tinkerforge.dll source/Tinkerforge/*.cs
 
 The library can be used without any further extensions. As an example 
-lets compile the configuration example of the stepper brick.
+lets compile the configuration example of the Stepper Brick.
 
 For this we create a folder and copy the Tinkerforge.dll and the 
 examples/Brick/Stepper/ExampleConfiguration.cs into this folder::
@@ -246,7 +246,7 @@ Bricklets (Tinkerforge.jar), the source of the jar (in source/) and all
 available Java examples (in examples/).
 
 The library can be used without any further extensions. As an example lets 
-compile the configuration example of the stepper brick. 
+compile the configuration example of the Stepper Brick.
 
 For this we create a folder and copy the Tinkerforge.jar and the 
 examples/Brick/Stepper/ExampleConfiguration.java into this folder::

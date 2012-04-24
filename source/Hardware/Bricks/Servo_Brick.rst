@@ -160,12 +160,12 @@ and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
 language API bindings, the latter is for testing purposes. 
 
-Connect a RC Servo to a port of the Brick and a suitable power supply. 
+Connect a RC servo to a port of the Brick and a suitable power supply.
 Your setup should look as shown below.
 
 .. image:: /Images/Bricks/brick_servo_setup_600.jpg
    :scale: 100 %
-   :alt: Servo Brick with connected Servo
+   :alt: Servo Brick with connected servo
    :align: center
    :target: ../../_images/Bricks/brick_servo_setup_1200.jpg
 
@@ -236,7 +236,7 @@ produce rattling.
 Servo Power Supply
 ------------------
 
-The Servo Brick is equipped with an internal power-supply.
+The Servo Brick is equipped with an internal power supply.
 It offers the possibility to adjust the output voltages for the connected 
 servos.
 The internal power supply can be powered through the onboard power-connector

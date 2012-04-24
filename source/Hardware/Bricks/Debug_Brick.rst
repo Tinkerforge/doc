@@ -45,7 +45,7 @@ Description
 
 The Debug Brick can be used to add JTAG and serial console debug capabilities
 to :ref:`Bricks <product_overview_bricks>`, 
-:ref:`Bricklets <product_overview_bricklets>` and Stacks.
+:ref:`Bricklets <product_overview_bricklets>` and stacks.
 
 .. note:: You only need the Debug Brick if you want to debug the low level
  C firmware of Bricks or Bricklets. It does not add any features for PC

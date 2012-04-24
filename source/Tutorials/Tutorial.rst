@@ -42,7 +42,7 @@ and a servo instead of the DC Brick and a motor):
 
 .. image:: /Images/Bricks/brick_dc_motor_setup_600.jpg
    :scale: 100 %
-   :alt: DC Brick with connected Motor 
+   :alt: DC Brick with connected motor
    :align: center
    :target: ../_images/Bricks/brick_dc_motor_setup_1200.jpg
 
@@ -119,10 +119,10 @@ In **Line 15** the DC Brick object is attached to the IP Connection.
 This makes it possible to control multiple devices on different 
 hosts from within one program.
 
-The **Lines 19-24** configure the DC Brick and let the motor run full 
+The **Lines 18-23** configure the DC Brick and let the motor run full
 speed forward.
 
-**Line 26** is used to prevent program termination until you
+**Line 25** is used to prevent program termination until you
 press enter.
 
 Run this python script and use it or other examples as a starting point
@@ -157,7 +157,7 @@ below.
 
 .. image:: /Images/Tutorial/tutorial_1_600.jpg
    :scale: 100 %
-   :alt: DC Brick with connected Motor and Rotary Poti Bricklet
+   :alt: DC Brick with connected motor and Rotary Poti Bricklet
    :align: center
    :target: ../_images/Tutorial/tutorial_1_1200.jpg
 
@@ -188,23 +188,23 @@ velocity with the rotary poti. It now look as follows (`Download <https://raw.gi
 **Lines 4-7** are the typical configurations, the UID has to be changed
 according to the Bricks/Bricklets you use.
 
-In **Lines 23-28** an IP Connection to the Brick Daemon is established.
+In **Lines 22-27** an IP Connection to the Brick Daemon is established.
 The Brick and Bricklet devices are created and added to the IP Connection.
 
 We configure the Rotary Poti Bricklet, such that it calls the method 
 **cb_position** every time the position of the potentiometer changes.
-**Line 31** configures this callback to be called with a period of
+**Line 29** configures this callback to be triggered with a period of
 50ms if the position changes. If the position is unchanged there won't
 be any callbacks. This is an efficient implementation, only the bare minimum
 of USB bandwidth is used.
-The callback method is registered in **Line 32**.
+The callback method is registered in **Line 30**.
 **cb_position** is defined in **Line 16-19**, 
 it sets a new velocity based on the current position of the potentiometer.
 
-In **Lines 35-36** we enable the motor and set a maximum acceleration. This
+In **Lines 32-33** we enable the motor and set a maximum acceleration. This
 allows the motor to follow the potentiometer movements immediately.
 
-In **Lines 36-38** we wait for user input to prevent program termination.
+In **Lines 35-37** we wait for user input to prevent program termination.
 After this the motor is stopped and the IP Connection destroyed.
 
 
@@ -215,39 +215,39 @@ Build Stacks
 
 To reduce wiring and save space it is possible to stack Bricks.
 You need a :ref:`Master Brick <master_brick>` at the bottom with a PC 
-connection to route the data between the PC and the Bricks in the Stack.
+connection to route the data between the PC and the Bricks in the stack.
 
 The stacking is transparent, that means there is **no code change necessary**
 between a version that uses Bricks separately connected over USB to a PC
 or a version with an additional Master and stacked Bricks.
 
-It is possible to use more than one Master Brick in a Stack.
-But only the Master Brick at the bottom of the Stack acts as the master of
-the Stack. The other Master Bricks can however be used to connect more 
+It is possible to use more than one Master Brick in a stack.
+But only the Master Brick at the bottom of the stack acts as the master of
+the stack. The other Master Bricks can however be used to connect more
 Bricklets.
 
-The master of a Stack powers each device of the Stack over its USB 
-connection with a maximum of 500mA. Every driver Brick in the Stack needs 
+The master of a stack powers each device of the stack over its USB
+connection with a maximum of 500mA. Every driver Brick in the stack needs
 to be powered by its own onboard power-connector. To again reduce wiring and
 save space it is possible to use a 
-:ref:`Power-Supply Board <product_overview_powersupplies>`, which
-is attached at the bottom of the Stack (below the master).
-These boards power the Stacks internal power signal.
+:ref:`Power Supply Board <product_overview_powersupplies>`, which
+is attached at the bottom of the stack (below the master).
+These boards power the stacks internal power signal.
 That means, that each driver Brick which is not powered by its onboard
-power-connector is powered through the Stack by the Power-Supply Board.
+power-connector is powered through the stack by the power supply board.
 
-Additionally the Power-Supply Board creates a 5V signal to power the devices of 
-the Stack. No power is drawn from the PC if a Power-Supply
-Board is used. This is especially useful if a small embedded device is
+Additionally the power supply board creates a 5V signal to power the devices of
+the stack. No power is drawn from the PC if a power supply
+board is used. This is especially useful if a small embedded device is
 utilized to control the Bricks and Bricklets, since it might not be able
 to deliver the needed power.
 
-The master of the Stack can measure the voltage and the current flow
-of the power supply connected to the Power-Supply Board.
+The master of the stack can measure the voltage and the current flow
+of the power supply connected to the power supply board.
 
 .. note::
 
-   Each driver Brick switches automatically to the Stack internal
+   Each driver Brick switches automatically to the stack internal
    power signal if no external supply is attached over the onboard 
    power-connector. Keep this in mind!
 
@@ -261,7 +261,7 @@ below the DC Brick with the connected rotary poti.
 Phase 1: Testing
 ^^^^^^^^^^^^^^^^
 
-Build a Stack consisting of a Power-Supply with connected batterie, 
+Build a stack consisting of a Step-Down Power Supply with connected battery,
 a Master Brick with connected Rotary Poti Bricklet and a DC Brick with
 connected motor (from bottom to top).
 
@@ -269,13 +269,13 @@ This setup is depicted in the image below.
 
 .. image:: /Images/Tutorial/tutorial_2_600.jpg
    :scale: 100 %
-   :alt: DC Brick in Stack with Master and Power Supply with connected Motor and Rotary Poti Bricklet
+   :alt: DC Brick in stack with Master Brick and Step-Down Power Supply with connected motor and Rotary Poti Bricklet
    :align: center
    :target: ../_images/Tutorial/tutorial_2_1200.jpg
 
 If you connect the Master Brick to the PC over USB, 
 the Brick Viewer should show the Master Brick (measuring current and voltage
-flowing through the Stack), the DC Brick and the Rotary Poti Bricklet.
+flowing through the stack), the DC Brick and the Rotary Poti Bricklet.
 
 Phase 2: Write your own Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -290,11 +290,11 @@ Cross-Link Stacks
 The stacks as shown so far in the tutorial are not super exciting,
 they only reduce wiring and save space. But, as you might have already 
 guessed, there is more to it. It is possible to attach **Extensions** to the
-Stack, which extend the Stack with interfaces other than USB,
+stack, which extend the stack with interfaces other than USB,
 e.g. Chibi (wireless), RS485, and in the future WLAN and Ethernet.
  
 You need one Master Brick and two Chibi Master Extensions additionally to the 
-previous part. Attach one Chibi Extension on top of your Stack and build a new 
+previous part. Attach one Chibi Extension on top of your stack and build a new
 stack from the other Chibi Extension and the Master Brick. Connect the Rotary 
 Poti Bricklet to this new stack (see image below).
 
@@ -302,7 +302,7 @@ Poti Bricklet to this new stack (see image below).
 
 .. image:: /Images/Tutorial/tutorial_4_600.jpg
    :scale: 100 %
-   :alt: DC Brick with connected Motor in Stack with Master, Chibi Extension and Power Supply as well as Stack with Master, Chibi Extension and Rotary Poti Bricklet
+   :alt: DC Brick with connected motor in stack with Master, Chibi Extension and Step-Down Power Supply as well as stack with Master, Chibi Extension and Rotary Poti Bricklet
    :align: center
    :target: ../_images/Tutorial/tutorial_4_1200.jpg
 

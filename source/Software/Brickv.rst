@@ -20,7 +20,7 @@ Installation
 Windows
 ^^^^^^^
 To install the Brick Viewer on Windows, download the
-brick viewer .exe form :ref:`here <downloads_tools>`. 
+Brick Viewer .exe form :ref:`here <downloads_tools>`.
 Click on the downloaded file, this should open the installer:
 
 .. image:: /Images/Screenshots/brickv_windows_1_small.jpg

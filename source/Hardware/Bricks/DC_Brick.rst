@@ -73,7 +73,7 @@ and can be used within a stack.
 Two :ref:`Bricklet <product_overview_bricklets>` ports 
 can be used to extend the features of this device. 
 
-The dc motor can be powered by an external power supply connected
+The DC motor can be powered by an external power supply connected
 directly to the Brick or by the stack internal powe rsupply.
 If an external power supply is connected the Brick switches
 automatically to this power supply.

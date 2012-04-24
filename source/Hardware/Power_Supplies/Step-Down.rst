@@ -37,7 +37,7 @@ Step-Down Power Supply
 Features
 --------
 
- * Powers a Stack of Bricks with 5V
+ * Powers a stack of Bricks with 5V
  * Can power motors of driver Bricks, e.g. DC Brick
  * Input voltage 6V to 27V
  * Additional output voltage 5V (since version 1.1)
@@ -50,20 +50,20 @@ The Step-Down Power Supply can be used to power a stack of
 :ref:`Bricklets <product_overview_bricklets>`. 
 It is plugged in at the bottom of the stack and creates the
 5V needed for Bricks/Bricklets. In addition the applied voltage is feed
-into the power signals of the Stack.
+into the power signals of the stack.
 
-There are several possible applications. The Power Supply allows
-to create Stacks powered by batteries. These Stacks can then communicate
+There are several possible applications. The Step-Down Power Supply allows
+to create stacks powered by batteries. These stacks can then communicate
 cable based or wireless with the help of Master Extensions.
-Also, the Power Supply can be used to power Motors, Stepper Motors
-or Servos without the need to connect external power sources to the
-corresponding Bricks. It is also possible to use the power supply in cases
-where huge Stacks of Bricks with many Bricklets are needed and the maximum
+Also, the Step-Down Power Supply can be used to power motors, stepper motors
+or servos without the need to connect external power sources to the
+corresponding Bricks. It is also possible to use the Step-Down Power Supply in cases
+where huge stacks of Bricks with many Bricklets are needed and the maximum
 current of 500mA given over the USB port is not sufficient. 
 
 The possible voltage input range is 6V to 27V. A 
 :ref:`Master Brick <master_brick>` can measure the voltage and current that
-is drawn from the Power Supply.
+is drawn from the Step-Down Power Supply.
 
 Technical Specifications
 ------------------------
@@ -97,6 +97,6 @@ Step-Down Power Supply.
 
 .. image:: /Images/Power_Supplies/powersupply11_caption_600.jpg
    :scale: 100 %
-   :alt: Power Supply with caption
+   :alt: Step-Down Power Supply with caption
    :align: center
    :target: ../../_images/Power_Supplies/powersupply11_caption_800.jpg

@@ -13,7 +13,7 @@ There are four different types of hardware components:
 * :ref:`Bricklets <product_overview_bricklets>`:
   Non-stackable sensor/actor boards that extend the features of a Brick.
 * :ref:`Power Supplies <product_overview_powersupplies>`:
-  Boards to power a Stack of Bricks, plugged below the Stack.
+  Boards to power a stack of Bricks, plugged below the stack.
 
 
 See the :ref:`tutorial <tutorial>` for an explanation of how everything works
@@ -69,14 +69,14 @@ sensor tasks (e.g. :ref:`IMU Brick <imu_brick>`),
 communicate (e.g. :ref:`Master Brick <master_brick>`) 
 and drive motors (e.g. :ref:`DC Brick <dc_brick>`).
 
-Bricks can be stacked together to a Stack. A Master Brick
-at the bottom of this Stack can control all boards within the Stack. 
-This master routes the messages between the boards in the Stack and the PC 
+Bricks can be stacked together to a stack. A Master Brick
+at the bottom of this stack can control all boards within the stack.
+This master routes the messages between the boards in the stack and the PC
 (:ref:`High Level Programming Interface <pi_hlpi>`).
 For the user, the stack behaves as if all Bricks were connected separately 
 over USB with the PC. 
 See :ref:`Tutorial Stacking <tutorial_build_stacks>` for more information
-about Stacks.
+about stacks.
 
 Besides the :ref:`High Level Programming Interface <pi_hlpi>` it is also
 possible to use Bricks with the
@@ -89,7 +89,7 @@ or the :ref:`On Device Programming Interface <pi_hlpi>`.
 
    ":ref:`dc_brick`", "3A DC Motor Driver", ":ref:`C/C++ <dc_brick_c>`", ":ref:`C# <dc_brick_csharp>`", ":ref:`Java <dc_brick_java>`", ":ref:`Python <dc_brick_python>`"
    ":ref:`imu_brick`", "IMU with 9 degrees of freedom", ":ref:`C/C++ <imu_brick_c>`", ":ref:`C# <imu_brick_csharp>`", ":ref:`Java <imu_brick_java>`", ":ref:`Python <imu_brick_python>`"
-   ":ref:`master_brick`", "Allow building of Stacks, 4 Bricklet Ports", ":ref:`C/C++ <master_brick_c>`", ":ref:`C# <master_brick_csharp>`", ":ref:`Java <master_brick_java>`", ":ref:`Python <master_brick_python>`"
+   ":ref:`master_brick`", "Allow building of stacks, 4 Bricklet Ports", ":ref:`C/C++ <master_brick_c>`", ":ref:`C# <master_brick_csharp>`", ":ref:`Java <master_brick_java>`", ":ref:`Python <master_brick_python>`"
    ":ref:`servo_brick`", "Control up to 7 Servos", ":ref:`C/C++ <servo_brick_c>`", ":ref:`C# <servo_brick_csharp>`", ":ref:`Java <servo_brick_java>`", ":ref:`Python <servo_brick_python>`"
    ":ref:`stepper_brick`", "2.5A Stepper Motor Driver", ":ref:`C/C++ <stepper_brick_c>`", ":ref:`C# <stepper_brick_csharp>`", ":ref:`Java <stepper_brick_java>`", ":ref:`Python <stepper_brick_python>`"
 
@@ -122,12 +122,12 @@ between a PC and the Master Brick, typically the USB port is used.
 Master Extensions can be utilized to change the interface of a Master Brick.
 There are cable based and wireless Master Extensions available. From a
 programming perspective the different interfaces are transparent. 
-A stack with Master Extension behaves as if every board in the Stack
+A stack with Master Extension behaves as if every board in the stack
 would be directly connected to the PC over an USB connection. This means:
 
 You can develop an application with all
 boards independently connected to the PC over USB. Later you can stack these 
-boards together to Stacks, add Master Bricks and cable based or wireless
+boards together to stacks, add Master Bricks and cable based or wireless
 Extensions and you can run the previously written code without any changes.
 
 .. csv-table::
@@ -249,15 +249,15 @@ master of the stack over its USB connection.
 This option is limited by the USB specification (500mA). 
 A large stack may need more power than 500mA.
 
-To provide greater currents, Power Supply Boards are available.
+To provide greater currents, power supply boards are available.
 These boards power the stack and can additionally be used to supply the power
-for driver bricks (e.g. :ref:`DC Brick <dc_brick>`). Power Supply
-Boards have the same size as :ref:`Bricks <product_overview_bricks>` and are
+for driver Bricks (e.g. :ref:`DC Brick <dc_brick>`). Power supply
+boards have the same size as :ref:`Bricks <product_overview_bricks>` and are
 stacked in at the bottom of the stack.
 
 .. csv-table::
    :header: "Name", "Description"
    :widths: 30, 60
 
-   ":ref:`step-down`", "Powers a Stack with 6-27V input"
+   ":ref:`step-down`", "Powers a stack with 6-27V input"
 

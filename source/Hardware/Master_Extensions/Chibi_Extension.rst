@@ -61,7 +61,7 @@ be used exactly the same way as if they were both connected via USB.
 It is also possible to create a network with several Chibi Extension where
 only one is connected via USB (many-to-one routing).
 
-.. note:: After configuring a chibi network all modules will behave as 
+.. note:: After configuring a Chibi network all devices will behave as
    connected via USB to your PC. Therefore you need no code changes if you 
    change you system from cable based to Chibi. But be aware that you will 
    loose through put since the Chibi transmission speed is slower than USB 
@@ -97,7 +97,7 @@ Resources
 Chibi Network Assembly
 ----------------------
 
-A chibi network constists of one master and multiple slaves. 
+A Chibi network constists of one master and multiple slaves.
 Chibi master is the Master Brick which has a USB connection to the PC
 running brickd. All the other Master Bricks with Chibi Extension must not have
 a USB connection (they can use a USB power supply since Master Brick firmware
@@ -131,7 +131,7 @@ Chibi Configuration
 ^^^^^^^^^^^^^^^^^^^
 
 .. note::
-	The chibi configuration changed starting from Brick Viewer version 1.0.6, 
+	The Chibi configuration changed starting from Brick Viewer version 1.0.6,
 	before this version it was not necessary to specify if the extension 
 	should be used as master or slave (it was infered by other means).
 
@@ -149,7 +149,7 @@ address and a frequency and channel
    :target: ../../_images/Extensions/extension_chibi.jpg
 
 If you want to configure the extension as slave, you have to choose
-"Slave" as type and specify the address of the chibi master.
+"Slave" as type and specify the address of the Chibi master.
 
 .. image:: /Images/Extensions/extension_chibi_slave.jpg
    :scale: 100 %

@@ -19,7 +19,7 @@ void cb_enumerate(char *uid, char *name, uint8_t stack_id, bool is_new) {
 }
 
 int main() {
-	// Create ip connection to brickd
+	// Create IP connection to brickd
 	IPConnection ipcon;
 	if(ipcon_create(&ipcon, HOST, PORT) < 0) {
 		fprintf(stderr, "Could not create connection\n");
@@ -29,5 +29,5 @@ int main() {
 	ipcon_enumerate(&ipcon, cb_enumerate);
 
 	printf("Press ctrl+c to close\n");
-	ipcon_join_thread(&ipcon); // Join mainloop of ip connection
+	ipcon_join_thread(&ipcon); // Join mainloop of IP connection
 }

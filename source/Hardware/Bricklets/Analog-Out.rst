@@ -82,7 +82,7 @@ Output: Voltage                   0V - 5V*, unit: mV, max 24mA
   powered over USB, 5V may not be reached. The reason for this is a voltage 
   drop on our products caused by protection diodes. If your supply voltage 
   has for example 4.7V, then you can generate voltages of up to 4.5V. 
-  If you need to reach 5V, you have to use a Stack supply,
+  If you need to reach 5V, you have to use a stack supply,
   e.g. the :ref:`Step Down Powersupply <step-down>`.
 
 Resources
