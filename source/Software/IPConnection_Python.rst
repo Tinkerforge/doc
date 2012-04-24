@@ -1,9 +1,9 @@
-.. _ipcon_brick_python:
+.. _ipcon_python:
 
 Python - IP Connection
 ======================
 
-.. _ipcon_brick_python_examples:
+.. _ipcon_python_examples:
 
 This is the API site for the Python bindings of the IP connection.
 The IP connection is established between the Brick Daemon
@@ -24,7 +24,7 @@ Example
  :linenos:
  :tab-width: 4
 
-.. _ipcon_brick_python_api:
+.. _ipcon_python_api:
 
 API
 ---

@@ -22,10 +22,10 @@ The IPConnection creates a connection between the
 It is used by the bindings and implemented for each programming language.
 The corresponding documentation can be found here:
 
-* :ref:`Python <ipcon_brick_python>`
-* :ref:`C/C++ <ipcon_brick_c>`
-* :ref:`C# <ipcon_brick_csharp>`
-* :ref:`Java <ipcon_brick_java>`
+* :ref:`Python <ipcon_python>`
+* :ref:`C/C++ <ipcon_c>`
+* :ref:`C# <ipcon_csharp>`
+* :ref:`Java <ipcon_java>`
 
 Using the Bindings
 ------------------

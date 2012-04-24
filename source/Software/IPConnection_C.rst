@@ -1,9 +1,9 @@
-.. _ipcon_brick_c:
+.. _ipcon_c:
 
 C - IP Connection
 ======================
 
-.. _ipcon_brick_c_examples:
+.. _ipcon_c_examples:
 
 This is the API site for the C bindings of the IP connection.
 The IP connection is established between the Brick Daemon
@@ -24,7 +24,7 @@ Example
  :linenos:
  :tab-width: 4
 
-.. _ipcon_brick_c_api:
+.. _ipcon_c_api:
 
 API
 ---

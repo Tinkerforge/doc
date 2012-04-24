@@ -1,9 +1,9 @@
-.. _ipcon_brick_java:
+.. _ipcon_java:
 
 Java - IP Connection
 ======================
 
-.. _ipcon_brick_java_examples:
+.. _ipcon_java_examples:
 
 This is the API site for the Java bindings of the IP connection.
 The IP connection is established between the Brick Daemon
@@ -24,7 +24,7 @@ Example
  :linenos:
  :tab-width: 4
 
-.. _ipcon_brick_java_api:
+.. _ipcon_java_api:
 
 API
 ---

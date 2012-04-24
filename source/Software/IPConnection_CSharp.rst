@@ -1,9 +1,9 @@
-.. _ipcon_brick_csharp:
+.. _ipcon_csharp:
 
 C# - IP Connection
 ======================
 
-.. _ipcon_brick_csharp_examples:
+.. _ipcon_csharp_examples:
 
 This is the API site for the C# bindings of the IP connection.
 The IP connection is established between the Brick Daemon
@@ -24,7 +24,7 @@ Example
  :linenos:
  :tab-width: 4
 
-.. _ipcon_brick_csharp_api:
+.. _ipcon_csharp_api:
 
 API
 ---
