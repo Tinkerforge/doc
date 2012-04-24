@@ -29,6 +29,9 @@ Example
 API
 ---
 
+Basic Methods
+^^^^^^^^^^^^^
+
 .. py:function:: IPConnection(host, port)
 
  :param host: str
@@ -38,27 +41,6 @@ API
  and *port*. With the IP connection itself it is possible to enumerate the
  available devices. Other then that it is only used to add Bricks and
  Bricklets to the connection.
-
-.. py:function:: IPConnection.enumerate(callback)
-
- :param callback: func(uid, name, stack_id, is_new)
- :rtype: None
-
- This method registers a callback that receives four parameters:
-
- * *uid* - str: The UID of the device.
- * *name* - str: The name of the device (includes "Brick" or "Bricklet" and a version number).
- * *stack_id* - int: The Stack ID of the device (you can find out the position in a stack with this).
- * *is_new* - bool: True if the device is added, false if it is removed.
-
- There are three different possibilities for the callback to be called.
- Firstly, the callback is called with all currently available devices in the
- IP connection (with *is_new* true). Secondly, the callback is called if
- a new Brick is plugged in via USB (with *is_new* true) and lastely it is
- called if a brick is unplugged (with *is_new* false).
-
- It should be possible to implement "plug 'n play" functionality with this
- (as is done in Brick Viewer).
 
 .. py:function:: IPConnection.add_device(device)
 
@@ -85,3 +67,27 @@ API
 
  Destroys the IP connection. The socket to the Brick Daemon will be closed
  and the thread of the IP connection terminated.
+
+Callback Configuration Methods
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. py:function:: IPConnection.enumerate(callback)
+
+ :param callback: func(uid, name, stack_id, is_new)
+ :rtype: None
+
+ This method registers a callback that receives four parameters:
+
+ * *uid* - str: The UID of the device.
+ * *name* - str: The name of the device (includes "Brick" or "Bricklet" and a version number).
+ * *stack_id* - int: The Stack ID of the device (you can find out the position in a stack with this).
+ * *is_new* - bool: True if the device is added, false if it is removed.
+
+ There are three different possibilities for the callback to be called.
+ Firstly, the callback is called with all currently available devices in the
+ IP connection (with *is_new* true). Secondly, the callback is called if
+ a new Brick is plugged in via USB (with *is_new* true) and lastely it is
+ called if a brick is unplugged (with *is_new* false).
+
+ It should be possible to implement "plug 'n play" functionality with this
+ (as is done in Brick Viewer).

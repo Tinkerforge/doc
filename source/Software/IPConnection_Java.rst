@@ -29,6 +29,9 @@ Example
 API
 ---
 
+Basic Methods
+^^^^^^^^^^^^^
+
 .. java:function:: class IPConnection(String host, int port)
 
  Creates an IP connection to the Brick Daemon with the given *host*
@@ -38,6 +41,28 @@ API
 
  The constructor throws an IOException if there is no Brick Daemon 
  listening at the given host and port.
+
+.. java:function:: public void IPConnection::addDevice(Device device)
+
+ Adds a device (Brick or Bricklet) to the IP connection. Every device
+ has to be added to an IP connection before it can be used. Examples for
+ this can be found in the API documentation for every Brick and Bricklet.
+
+.. java:function:: public void IPConnection::joinThread()
+
+ Joins the thread of the IP connection. The call will block until the
+ IP connection is :java:func:`destroyed <IPConnection::destroy>`.
+
+ This makes sense if you relies solely on callbacks from listeners or if
+ the IP connection was created in a thread.
+
+.. java:function:: public void IPConnection::destroy()
+
+ Destroys the IP connection. The socket to the Brick Daemon will be closed
+ and the thread of the IP connection terminated.
+
+Callback Configuration Methods
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. java:function:: public void IPConnection::enumerate(EnumerateListener enumerateListener)
 
@@ -63,22 +88,3 @@ API
 
    It should be possible to implement "plug 'n play" functionality with this
    (as is done in Brick Viewer).
-
-.. java:function:: public void IPConnection::addDevice(Device device)
-
- Adds a device (Brick or Bricklet) to the IP connection. Every device
- has to be added to an IP connection before it can be used. Examples for
- this can be found in the API documentation for every Brick and Bricklet.
-
-.. java:function:: public void IPConnection::joinThread()
-
- Joins the thread of the IP connection. The call will block until the
- IP connection is :java:func:`destroyed <IPConnection::destroy>`.
-
- This makes sense if you relies solely on callbacks from listeners or if
- the IP connection was created in a thread.
-
-.. java:function:: public void IPConnection::destroy()
-
- Destroys the IP connection. The socket to the Brick Daemon will be closed
- and the thread of the IP connection terminated.

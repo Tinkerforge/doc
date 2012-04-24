@@ -29,6 +29,9 @@ Example
 API
 ---
 
+Basic Methods
+^^^^^^^^^^^^^
+
 .. csharp:function:: class IPConnection(string host, int port)
 
  Creates an IP connection to the Brick Daemon with the given *host*
@@ -38,28 +41,6 @@ API
 
  The constructor throws an ``System.Net.Sockets.SocketException`` if there 
  is no Brick Daemon listening at the given host and port.
-
-.. csharp:function:: public void IPConnection::Enumerate(EnumerateCallback enumerateCallback)
-
- This method registers the following delegate:
-
- .. csharp:function:: public delegate void EnumerateCallback(string uid, string name, byte stackID, bool isNew)
-
-  The callback receives four parameters:
-
-  * *uid*: The UID of the device.
-  * *name*: The name of the device (includes "Brick" or "Bricklet" and a version number).
-  * *stackID*: The Stack ID of the device (you can find out the position in a stack with this).
-  * *isNew*: True if the device is added, false if it is removed.
- 
-  There are three different possibilities for the callback to be called.
-  Firstly, the callback is called with all currently available devices in the
-  IP connection (with *isNew* true). Secondly, the callback is called if
-  a new Brick is plugged in via USB (with *isNew* true) and lastely it is
-  called if a brick is unplugged (with *isNew* false).
-
-  It should be possible to implement "plug 'n play" functionality with this
-  (as is done in Brick Viewer).
 
 .. csharp:function:: public void IPConnection::AddDevice(Device device)
 
@@ -82,3 +63,28 @@ API
 
  Destroys the IP connection. The socket to the Brick Daemon will be closed
  and the thread of the IP connection terminated.
+
+Callback Configuration Methods
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. csharp:function:: public void IPConnection::Enumerate(EnumerateCallback enumerateCallback)
+
+ This method registers the following delegate:
+
+ .. csharp:function:: public delegate void EnumerateCallback(string uid, string name, byte stackID, bool isNew)
+
+  The callback receives four parameters:
+
+  * *uid*: The UID of the device.
+  * *name*: The name of the device (includes "Brick" or "Bricklet" and a version number).
+  * *stackID*: The Stack ID of the device (you can find out the position in a stack with this).
+  * *isNew*: True if the device is added, false if it is removed.
+
+  There are three different possibilities for the callback to be called.
+  Firstly, the callback is called with all currently available devices in the
+  IP connection (with *isNew* true). Secondly, the callback is called if
+  a new Brick is plugged in via USB (with *isNew* true) and lastely it is
+  called if a brick is unplugged (with *isNew* false).
+
+  It should be possible to implement "plug 'n play" functionality with this
+  (as is done in Brick Viewer).

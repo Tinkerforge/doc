@@ -1,11 +1,11 @@
 .. _ipcon_c:
 
-C - IP Connection
+C/C++ - IP Connection
 ======================
 
 .. _ipcon_c_examples:
 
-This is the API site for the C bindings of the IP connection.
+This is the API site for the C/C++ bindings of the IP connection.
 The IP connection is established between the Brick Daemon
 and the corresponding programming language API bindings. You need to
 create an IP connection to brickd and add devices, before you can
@@ -44,12 +44,37 @@ Possible error codes are
 
 as defined in :file:`ip_connection.h`.
 
+Basic Methods
+^^^^^^^^^^^^^
+
 .. c:function:: int ipcon_create(IPConnection *ipcon, const char* host, const int port)
 
  Creates an IP connection to the Brick Daemon with the given *host*
  and *port*. With the IP connection itself it is possible to enumerate the
  available devices. Other then that it is only used to add Bricks and
  Bricklets to the connection.
+
+.. c:function:: int ipcon_add_device(IPConnection *ipcon, Device *device)
+
+ Adds a device (Brick or Bricklet) to the IP connection. Every device
+ has to be added to an IP connection before it can be used. Examples for
+ this can be found in the API documentation for every Brick and Bricklet.
+
+.. c:function:: void ipcon_join_thread(IPConnection *ipcon)
+
+ Joins the thread of the IP connection. The call will block until the
+ IP connection is :c:func:`destroyed <ipcon_destroy>`.
+
+ This makes sense if you relies solely on callbacks from listeners or if
+ the IP connection was created in a thread.
+
+.. c:function:: void ipcon_destroy(IPConnection *ipcon)
+
+ Destroys the IP connection. The socket to the Brick Daemon will be closed
+ and the thread of the IP connection terminated.
+
+Callback Configuration Methods
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. c:function:: void ipcon_enumerate(IPConnection *ipcon, enumerate_callback_func_t cb)
 
@@ -74,22 +99,3 @@ as defined in :file:`ip_connection.h`.
 
  It should be possible to implement "plug 'n play" functionality with this
  (as is done in Brick Viewer).
-
-.. c:function:: int ipcon_add_device(IPConnection *ipcon, Device *device)
-
- Adds a device (Brick or Bricklet) to the IP connection. Every device
- has to be added to an IP connection before it can be used. Examples for
- this can be found in the API documentation for every Brick and Bricklet.
-
-.. c:function:: void ipcon_join_thread(IPConnection *ipcon)
-
- Joins the thread of the IP connection. The call will block until the
- IP connection is :c:func:`destroyed <ipcon_destroy>`.
-
- This makes sense if you relies solely on callbacks from listeners or if
- the IP connection was created in a thread.
-
-.. c:function:: void ipcon_destroy(IPConnection *ipcon)
-
- Destroys the IP connection. The socket to the Brick Daemon will be closed
- and the thread of the IP connection terminated.
