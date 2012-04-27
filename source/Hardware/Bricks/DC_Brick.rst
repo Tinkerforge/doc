@@ -1,7 +1,7 @@
 .. _dc_brick:
 
-DC
-==
+DC Brick
+========
 
 .. raw:: html
 

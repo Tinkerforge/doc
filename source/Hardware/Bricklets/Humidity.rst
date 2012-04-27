@@ -1,7 +1,7 @@
 .. _humidity_bricklet:
 
-Humidity
-========
+Humidity Bricklet
+=================
 
 
 .. raw:: html

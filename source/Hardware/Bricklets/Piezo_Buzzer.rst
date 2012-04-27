@@ -1,7 +1,7 @@
 .. _piezo_buzzer_bricklet:
 
-Piezo Buzzer
-============
+Piezo Buzzer Bricklet
+=====================
 
 
 .. raw:: html

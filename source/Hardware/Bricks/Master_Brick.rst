@@ -1,7 +1,7 @@
 .. _master_brick:
 
-Master
-======
+Master Brick
+============
 
 .. raw:: html
 

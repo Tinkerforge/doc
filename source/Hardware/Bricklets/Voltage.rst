@@ -1,7 +1,7 @@
 .. _voltage_bricklet:
 
-Voltage
-=======
+Voltage Bricklet
+================
 
 .. raw:: html
 

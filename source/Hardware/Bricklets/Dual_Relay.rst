@@ -1,7 +1,7 @@
 .. _dual_relay_bricklet:
 
-Dual Relay
-===========
+Dual Relay Bricklet
+===================
 
 
 .. raw:: html

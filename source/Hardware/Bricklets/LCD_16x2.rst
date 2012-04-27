@@ -1,7 +1,7 @@
 .. _lcd_16x2_bricklet:
 
-LCD 16x2
-========
+LCD 16x2 Bricklet
+=================
 
 
 .. raw:: html

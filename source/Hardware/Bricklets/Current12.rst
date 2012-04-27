@@ -1,7 +1,7 @@
 .. _current12_bricklet:
 
-Current12
-=========
+Current12 Bricklet
+==================
 
 .. raw:: html
 

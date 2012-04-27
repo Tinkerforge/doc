@@ -1,7 +1,7 @@
 .. _distance_ir_bricklet:
 
-Distance IR
-===========
+Distance IR Bricklet
+====================
 
 
 .. raw:: html

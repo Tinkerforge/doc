@@ -1,7 +1,7 @@
 .. _linear_poti_bricklet:
 
-Linear Poti
-===========
+Linear Poti Bricklet
+====================
 
 
 .. raw:: html

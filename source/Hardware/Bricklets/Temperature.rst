@@ -1,7 +1,7 @@
 .. _temperature_bricklet:
 
-Temperature
-===========
+Temperature Bricklet
+====================
 
 
 .. raw:: html

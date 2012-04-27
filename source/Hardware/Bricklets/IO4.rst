@@ -1,7 +1,7 @@
 .. _io4_bricklet:
 
-IO4
-===
+IO4 Bricklet
+============
 
 
 .. raw:: html

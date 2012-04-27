@@ -1,7 +1,7 @@
 .. _analog_out_bricklet:
 
-Analog Out
-==========
+Analog Out Bricklet
+===================
 
 .. raw:: html
 

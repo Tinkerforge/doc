@@ -1,7 +1,7 @@
 .. _stepper_brick:
 
-Stepper
-=======
+Stepper Brick
+=============
 
 .. raw:: html
 

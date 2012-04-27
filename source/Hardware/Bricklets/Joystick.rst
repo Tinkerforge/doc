@@ -1,7 +1,7 @@
 .. _joystick_bricklet:
 
-Joystick
-========
+Joystick Bricklet
+=================
 
 
 .. raw:: html

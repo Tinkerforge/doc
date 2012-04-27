@@ -1,7 +1,7 @@
 .. _analog_in_bricklet:
 
-Analog In
-=========
+Analog In Bricklet
+==================
 
 .. raw:: html
 

@@ -1,7 +1,7 @@
 .. _io16_bricklet:
 
-IO16
-====
+IO16 Bricklet
+=============
 
 
 .. raw:: html

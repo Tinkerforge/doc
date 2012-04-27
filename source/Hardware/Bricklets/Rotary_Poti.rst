@@ -1,7 +1,7 @@
 .. _rotary_poti_bricklet:
 
-Rotary Poti
-===========
+Rotary Poti Bricklet
+====================
 
 
 .. raw:: html

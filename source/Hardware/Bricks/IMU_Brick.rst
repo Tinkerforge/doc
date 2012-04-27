@@ -1,7 +1,7 @@
 .. _imu_brick:
 
-IMU
-===
+IMU Brick
+=========
 
 .. raw:: html
 
