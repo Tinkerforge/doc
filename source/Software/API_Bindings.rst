@@ -45,15 +45,14 @@ examples/).
 To keep the C/C++ bindings stupid and simple, they only have
 dependencies that are available nearly everywhere, thus making it
 possible to compile into any project hassle-free. 
-We do not offer a pre compiled lib, since it would be a
+We do not offer a pre-compiled library, since it would be a
 pain in the ass to provide them for all combinations of architectures and
 operating systems. This means, the
-bindings should work on most architectures (arm, x86, etc.) and on most
-operating systems (Windows and posix systems such as linux and Mac
-OS, etc.).
+bindings should work on most architectures (ARM, x86, etc.) and on most
+operating systems (Windows and POSIX systems, such as Linux and Mac OS, etc.).
 
 As an example we will compile the Stepper Brick configuration example 
-with gcc on Windows and linux.
+with gcc on Windows and Linux.
 For that we have to copy the IP connection and the Stepper Brick
 bindings (ip_connection.h, ip_connection.c, brick_stepper.c and 
 brick_stepper.h) from the bindings/ folder as well as the
@@ -68,7 +67,7 @@ project::
   -> example_configuration.c
  
 The only dependency on Unix-like systems is pthread, therefore a
-compilation of the project with gcc on linux looks like::
+compilation of the project with gcc on Linux looks like::
 
  gcc -lpthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
 
@@ -97,7 +96,7 @@ C#
 ^^
 
 The C# bindings consist of a library for all Tinkerforge Bricks and Bricklets 
-(Tinkerforge.dll), the source of the dll (in source/) and all available 
+(Tinkerforge.dll), the source of the DLL (in source/) and all available
 C# examples (in examples/).
 
 The library has been compiled with::
@@ -115,12 +114,12 @@ examples/Brick/Stepper/ExampleConfiguration.cs into this folder::
   -> ExampleConfiguration.cs
 
 In this folder we can now call the c# compiler with the following parameters 
-(1. Windows and 2. linux/Mac OS (mono))::
+(1. Windows and 2. Linux/Mac OS (Mono))::
 
  1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
  2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs 
 
-Or, alternatively add the dll and the Example in an C# IDE of your choice 
+Or, alternatively add the DLL and the Example in an C# IDE of your choice
 (such as Visual Studio or Mono Develop).
 
 Documentation for the API can be found :ref:`here <index_bricks>`.
@@ -132,16 +131,16 @@ C# (Windows Phone)
 
 For Windows Phone the normal C# bindings can be used 
 (see :ref:`above <api_bindings_csharp>`). The asynchronous sockets that 
-are needed for Windows Phone are currently not supported in mono. Since
-the DLL is build to be compatible with C# 2.0 and mono, the DLL is not
+are needed for Windows Phone are currently not supported in Mono. Since
+the DLL is build to be compatible with C# 2.0 and Mono, the DLL is not
 compatible with Windows Phone. To overcome this we have added asynchronous
 sockets for Windows Phone with *#if WINDOWS_PHONE* directives in the socket 
 code. This means you can add the Tinkerforge folder (from the source/ folder 
-in the csharp bindings) as an external resource. The complete C# api bindings
+in the C# bindings) as an external resource. The complete C# API bindings
 work with Windows Phone SDK >= 7.1 (SDK 7.0 does not support sockets
 and can thus not be used to interface with brickd).
 
-In the following we assume that you already have visual studio for Windows
+In the following we assume that you already have Visual Studio for Windows
 Phone installed. As an example we will create a small project that can toggle 
 a relay. It should be easy to adjust this example for your needs.
 
@@ -161,7 +160,7 @@ Start a new project by clicking on:
 * New Folder, choose name Tinkerforge
 * Right click on Tinkerforge 
 * Add
-* Existing Item, choose all files from source/Tinkerforge/ folder of csharp bindings
+* Existing Item, choose all files from source/Tinkerforge/ folder of C# bindings
 
 Edit the MainPage.xaml to add a toggle button:
 
@@ -214,9 +213,7 @@ Double click on the toggle button to edit the MainPage.xaml.cs:
             relay = new BrickletDualRelay(UID);
             ipcon.AddDevice(relay);
 
-
             InitializeComponent();
-
         }
 
         private void RelaySwitch_Checked(object sender, RoutedEventArgs e)
@@ -232,7 +229,7 @@ Double click on the toggle button to edit the MainPage.xaml.cs:
  }
 
 Start the emulator with F5. You should be able to toggle a relay with
-the toggle button on your windows phone. Don't forget to change the
+the toggle button on your Windows Phone. Don't forget to change the
 UID and the host IP address to the correct values for your brickd host and
 your Relay Bricklet.
 
@@ -241,7 +238,7 @@ your Relay Bricklet.
 Java
 ^^^^
 
-The java bindings consist of a library (.jar) for all Tinkerforge Bricks and 
+The Java bindings consist of a library (.jar) for all Tinkerforge Bricks and
 Bricklets (Tinkerforge.jar), the source of the jar (in source/) and all 
 available Java examples (in examples/).
 
@@ -256,15 +253,15 @@ examples/Brick/Stepper/ExampleConfiguration.java into this folder::
   -> ExampleConfiguration.java
 
 In this folder we can now call the Java compiler with the following
-parameters (1. Windows and 2. linux/Mac OS)::
+parameters (1. Windows and 2. Linux/Mac OS)::
 
  1.) javac -cp Tinkerforge.jar;. ExampleConfiguration.java 
  2.) javac -cp Tinkerforge.jar:. ExampleConfiguration.java
 
-and run it with the following parameters (1. Windows and 2. linux/Mac OS)::
+and run it with the following parameters (1. Windows and 2. Linux/Mac OS)::
 
- 1.) java -cp Tinkerforge.jar;. ExampleConfiguration (windows)
- 2.) java -cp Tinkerforge.jar:. ExampleConfiguration (linux)
+ 1.) java -cp Tinkerforge.jar;. ExampleConfiguration
+ 2.) java -cp Tinkerforge.jar:. ExampleConfiguration
 
 (Note: The difference is colon vs semicolon)
 
@@ -280,8 +277,8 @@ Java (Android)
 For Android the normal Java bindings can be used 
 (see :ref:`above <api_bindings_java>`).
 
-In the following we assume that you already have the android development
-environment installed. If you are just starting with android development,
+In the following we assume that you already have the Android development
+environment installed. If you are just starting with Android development,
 you should first complete the 
 `hello world tutorial <http://developer.android.com/resources/tutorials/hello-world.html>`__ from google.
 
@@ -334,7 +331,7 @@ toggle button.
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		IPConnection ipcon;
-	   
+
 		try {
 			ipcon = new IPConnection(host, port);
 			dr = new BrickletDualRelay(UID);
@@ -432,5 +429,5 @@ After that, the example can be executed again.
 .. note:: Windows installation hint
 
  * Install easy_install: http://pypi.python.org/pypi/setuptools#windows (setuptools)
- * Open windows command shell
+ * Open Windows command shell
  * C:\\YourPythonDir\\Scripts\\easy_install.exe C:\\PathToEgg\\tinkerforge.egg

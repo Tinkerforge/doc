@@ -77,12 +77,12 @@ script and execute it. Power cycle the Brick and it should start with the
 new firmware.
 
 .. note::
- If you have problems using SAM-BA on linux, you should take a look at
+ If you have problems using SAM-BA on Linux, you should take a look at
  `this site <http://www.at91.com/linux4sam/bin/view/Linux4SAM/SoftwareTools>`__.
- It contains tips for older linux versions and help for various
+ It contains tips for older Linux versions and help for various
  distributions.
 
- Also, if you have an old linux kernel you may need to install the kernel
+ Also, if you have an old Linux kernel you may need to install the kernel
  driver from 
  `here <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
  (at the bottom: "SAM-BA Linux USB driver ")
