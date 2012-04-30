@@ -94,7 +94,7 @@ Callback Configuration Methods
  There are three different possibilities for the callback to be called.
  Firstly, the callback is called with all currently available devices in the
  IP connection (with *is_new* true). Secondly, the callback is called if
- a new Brick is plugged in via USB (with *is_new* true) and lastely it is
+ a new Brick is plugged in via USB (with *is_new* true) and lastly it is
  called if a Brick is unplugged (with *is_new* false).
 
  It should be possible to implement "plug 'n play" functionality with this
