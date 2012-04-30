@@ -78,7 +78,7 @@ following (hint: the library linking must come after the source)::
 
 With Visual Studio we can use our project_folder/ as follows::
 
- File -> New -> Project From Existing Code -> Type: Visual C++ -> choose test_project, choose project name -> Next ->  choose Console Application -> Finish
+ File -> New -> Project From Existing Code -> Type: Visual C++ -> choose test_project, choose project name -> Next -> choose Console Application -> Finish
 
 Now we have to tell Visual Studio to use the C++ compiler, since we
 would need C99 but Visual Studio can only compile C89... Also we have to
@@ -166,24 +166,24 @@ Edit the MainPage.xaml to add a toggle button:
 
 .. code-block:: xml
 
- <phone:PhoneApplicationPage 
-    x:Class="Relay.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
-    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
-    FontFamily="{StaticResource PhoneFontFamilyNormal}"
-    FontSize="{StaticResource PhoneFontSizeNormal}"
-    Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+ <phone:PhoneApplicationPage x:Class="Relay.MainPage"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+     FontFamily="{StaticResource PhoneFontFamilyNormal}"
+     FontSize="{StaticResource PhoneFontSizeNormal}"
+     Foreground="{StaticResource PhoneForegroundBrush}"
+     SupportedOrientations="Portrait" Orientation="Portrait"
+     shell:SystemTray.IsVisible="True">
     
-    <Grid x:Name="LayoutRoot" Background="Transparent">
-        <ToggleButton Name="RelaySwitch" Content="Change relay state" Checked="RelaySwitch_Checked" Unchecked="RelaySwitch_Unchecked"/>
-    </Grid>
+     <Grid x:Name="LayoutRoot" Background="Transparent">
+         <ToggleButton Name="RelaySwitch" Content="Change relay state"
+             Checked="RelaySwitch_Checked" Unchecked="RelaySwitch_Unchecked" />
+     </Grid>
  </phone:PhoneApplicationPage>
 
 Double click on the toggle button to edit the MainPage.xaml.cs:
@@ -199,33 +199,33 @@ Double click on the toggle button to edit the MainPage.xaml.cs:
 
  namespace Relay
  {
-    public partial class MainPage : PhoneApplicationPage
-    {  
-        // Change host ip address to ip from brickd
-        private static string HOST = "192.168.178.35";
-        private static int PORT = 4223;
-        private static string UID = "batti"; // Change to your UID
-        private BrickletDualRelay relay;
+     public partial class MainPage : PhoneApplicationPage
+     {
+         // Change host ip address to ip from brickd
+         private static string HOST = "192.168.178.35";
+         private static int PORT = 4223;
+         private static string UID = "batti"; // Change to your UID
+         private BrickletDualRelay relay;
 
-        public MainPage()
-        {
-            IPConnection ipcon = new IPConnection(HOST, PORT);
-            relay = new BrickletDualRelay(UID);
-            ipcon.AddDevice(relay);
+         public MainPage()
+         {
+             IPConnection ipcon = new IPConnection(HOST, PORT);
+             relay = new BrickletDualRelay(UID);
+             ipcon.AddDevice(relay);
 
-            InitializeComponent();
-        }
+             InitializeComponent();
+         }
 
-        private void RelaySwitch_Checked(object sender, RoutedEventArgs e)
-        {
-            relay.SetState(true, false);
-        }
+         private void RelaySwitch_Checked(object sender, RoutedEventArgs e)
+         {
+             relay.SetState(true, false);
+         }
 
-        private void RelaySwitch_Unchecked(object sender, RoutedEventArgs e)
-        {
-            relay.SetState(false, false);
-        }
-    }
+         private void RelaySwitch_Unchecked(object sender, RoutedEventArgs e)
+         {
+             relay.SetState(false, false);
+         }
+     }
  }
 
 Start the emulator with F5. You should be able to toggle a relay with
@@ -320,49 +320,51 @@ toggle button.
  import com.tinkerforge.IPConnection;
 
  public class RelayActivity extends Activity {
-	// Change to the IP address of your host
-	private static final String host = new String("192.168.178.35");
-	private static final int port = 4223;
-	private static final String UID = new String("Axb");
-	private BrickletDualRelay dr;
-	private ToggleButton tb;
+     // Change to the IP address of your host
+     private static final String host = new String("192.168.178.35");
+     private static final int port = 4223;
+     private static final String UID = new String("Axb");
+     private BrickletDualRelay dr;
+     private ToggleButton tb;
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		IPConnection ipcon;
+     @Override
+     public void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         IPConnection ipcon;
 
-		try {
-			ipcon = new IPConnection(host, port);
-			dr = new BrickletDualRelay(UID);
-			ipcon.addDevice(dr);
-		} catch(Exception e) {
-			// Here you might want to give the user a retry button.
-			return;
-		}
+         try {
+             ipcon = new IPConnection(host, port);
+             dr = new BrickletDualRelay(UID);
+             ipcon.addDevice(dr);
+         } catch(Exception e) {
+             // Here you might want to give the user a retry button.
+             return;
+         }
 
-		tb = new ToggleButton(this);
-		tb.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				if(tb.isChecked()) {
-					dr.setState(true, false);
-				} else {
-					dr.setState(false, false);
-				}
-			}
-		});
+         tb = new ToggleButton(this);
+         tb.setOnClickListener(new OnClickListener() {
+             public void onClick(View v) {
+                 if(tb.isChecked()) {
+                     dr.setState(true, false);
+                 } else {
+                     dr.setState(false, false);
+                 }
+             }
+         });
 
-		setContentView(tb);
-	}
+         setContentView(tb);
+     }
  }
 
 
 After that you have to add the internet permssion (to be able
-to use the network)::
+to use the network):
+
+.. code-block:: xml
 
  <uses-permission android:name="android.permission.INTERNET" /> 
  
-to AndroidManifest.xml on the same level as the <application> tag.
+to AndroidManifest.xml on the same level as the ``<application>`` tag.
 
 Your application should now look as depicted below:
 
