@@ -22,6 +22,7 @@ The IPConnection creates a connection between the
 It is used by the bindings and implemented for each programming language.
 The corresponding documentation can be found here:
 
+* :ref:`TCP/IP <ipcon_tcpip>`
 * :ref:`Python <ipcon_python>`
 * :ref:`C/C++ <ipcon_c>`
 * :ref:`C# <ipcon_csharp>`

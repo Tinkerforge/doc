@@ -139,9 +139,8 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    :header: "Language", "API", "Examples", "Installation"
    :widths: 25, 8, 15, 12
 
-
-   "C/C++", ":ref:`API <ambient_light_bricklet_c_api>`", ":ref:`Examples <ambient_light_bricklet_c_examples>`", ":ref:`Installation <api_bindings_c>`"
-   "C#", ":ref:`API <ambient_light_bricklet_csharp_api>`", ":ref:`Examples <ambient_light_bricklet_csharp_examples>`", ":ref:`Installation <api_bindings_csharp>`"
-   "Java", ":ref:`API <ambient_light_bricklet_java_api>`", ":ref:`Examples <ambient_light_bricklet_java_examples>`", ":ref:`Installation <api_bindings_java>`"
+   "TCP/IP", ":ref:`API <ambient_light_bricklet_tcpip_api>`"
+   "C/C++",  ":ref:`API <ambient_light_bricklet_c_api>`",      ":ref:`Examples <ambient_light_bricklet_c_examples>`",      ":ref:`Installation <api_bindings_c>`"
+   "C#",     ":ref:`API <ambient_light_bricklet_csharp_api>`", ":ref:`Examples <ambient_light_bricklet_csharp_examples>`", ":ref:`Installation <api_bindings_csharp>`"
+   "Java",   ":ref:`API <ambient_light_bricklet_java_api>`",   ":ref:`Examples <ambient_light_bricklet_java_examples>`",   ":ref:`Installation <api_bindings_java>`"
    "Python", ":ref:`API <ambient_light_bricklet_python_api>`", ":ref:`Examples <ambient_light_bricklet_python_examples>`", ":ref:`Installation <api_bindings_python>`"
-
