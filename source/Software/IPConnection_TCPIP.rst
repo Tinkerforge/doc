@@ -84,9 +84,10 @@ The payload contains the
  * UID 3904673860505581361 (0x31 0x37 0x30 0x33 0x30 0x30 0x30 0x36).
 
 This is an example UID and needs to be replaced with the actual UID of your
-device. The TCP/IP protocol uses the UID in Base10 encoding. The Brick Viewer
-and the other API bindings use UIDs in Base58 encoding. The example UID
-3904673860505581361 in Base10 is represented as a4GeP9ZpQFT in Base58.
+device. The UID is shown as integer here to emphasis that the TCP/IP protocol
+represents UIDs as uint64 values. The Brick Viewer
+and the other API bindings represent UIDs in Base58 encoding instead.
+The example UID 3904673860505581361 is represented as a4GeP9ZpQFT in Base58.
 
 The hexdump of the :tcpip:func:`IPConnection.get_stack_id` request packet looks
 like this::
