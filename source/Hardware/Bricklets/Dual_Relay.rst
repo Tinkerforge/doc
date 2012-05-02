@@ -65,6 +65,9 @@ The state is visualized by a LED.
 You can use this Bricklet to switch power supplies, motors, lamps, etc.
 Consider the maximum voltage and current.
 
+If you want to switch inductive loads, please see: 
+:ref:`Inductive Load Switching <dual_relay_inductive_load_switching>`.
+
 .. warning::
 
    Terminals and contacts are not insulated. If you want
@@ -110,6 +113,23 @@ depending on the state of the relay.
    :align: center
    :target: ../../_images/Bricklets/bricklet_dual_relay_connection_700.jpg
 
+
+.. _dual_relay_inductive_load_switching:
+
+Inductive Load Switching
+------------------------
+
+Without external components the switching of inductive loads can
+cause noise in the system and can lead to malfunctions or destroyed 
+components. Typical examples for inductive loads are motors and solenoids,
+but these problems can also occur when switching e.g. fluorescent lamps.
+
+If you want to switch an inductive load you need external components,
+e.g. a `Varistor <http://en.wikipedia.org/wiki/Varistor>`_
+or a combination of a resistor and a capacitor parallel to the load.
+
+More information about protection circuitries can be found
+`here <http://www.jkmicro.com/inductive_loads.pdf>`_.
 
 
 
