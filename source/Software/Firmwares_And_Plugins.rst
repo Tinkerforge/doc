@@ -64,14 +64,18 @@ bootloaders::
  at91sam3s4-brick
 
 Then bring the Brick into the bootloader modus. Press the "Erase" button of 
-the Brick and release it after a short press on the "Reset" button
-(i.e. press erase, press reset, release reset, release erase).
-The blue LED should be off.
+the Brick and connect it afterwards via USB to your PC.
+The blue LED should be off. Now the Brick should be in the bootloader
+(based on your operating system some sort of Atmel device could be detected).
 
 Start SAM-BA, choose your connection and choose "at91sam3s4-brick" for the 
 Master Brick and "at91sam3s2-brick" for all other Bricks.
 Click connect, after this the blue LED should be on. 
-Select your firmware (bin) file as "Send File Name" and click send. 
+
+Select your firmware file (e.g.: "brick_servo_firmware_latest.bin")
+as "Send File Name" and click send.
+The newest version can be downloaded from :ref:`here <downloads_firmwares_plugins>`.
+
 Answer "Yes" to lock regions. At the end select "Boot from Flash (GPNVM1)"
 script and execute it. Power cycle the Brick and it should start with the 
 new firmware.
