@@ -80,7 +80,9 @@ Weight                            6.7g
 --------------------------------  ------------------------------------------------------------
 Number of I/Os                    4
 I/O voltages                      Fixed 3.3V
+Maximum API Calls*                set_value (1khz), get_value(0.5khz), callback (1khz)
 ================================  ============================================================
+* depends on your system(OS, CPU etc.)
 
 Resources
 ---------
