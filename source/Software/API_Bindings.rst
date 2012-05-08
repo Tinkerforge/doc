@@ -70,7 +70,7 @@ project::
 The only dependency on Unix-like systems is pthread, therefore a
 compilation of the project with gcc on Linux looks like::
 
- gcc -lpthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
+ gcc -pthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
 
 On Windows Winsock2 is used for threading. Under MinGW we can compile the example as 
 following (hint: the library linking must come after the source)::
