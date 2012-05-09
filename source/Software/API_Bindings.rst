@@ -402,11 +402,11 @@ If you can't or don't want to use the PEAR package, you can also use the source
 directly, just create a folder for your project and copy the Tinkerforge
 folder from source/ and the example you want to try in there
 (e.g. the Stepper configuration example from
-examples/brick/stepper/ExampleConfiguration.py)::
+examples/brick/stepper/ExampleConfiguration.php)::
 
  example_folder/
   -> Tinkerforge/
-  -> ExampleConfiguration.py
+  -> ExampleConfiguration.php
 
 If you just want to use a few Bricks or Bricklets and you don't want to
 have this many files in you project, you can also copy the files as they are
