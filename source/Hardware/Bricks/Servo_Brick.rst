@@ -294,6 +294,7 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    "C/C++",  ":ref:`API <servo_brick_c_api>`",      ":ref:`Examples <servo_brick_c_examples>`",      ":ref:`Installation <api_bindings_c>`"
    "C#",     ":ref:`API <servo_brick_csharp_api>`", ":ref:`Examples <servo_brick_csharp_examples>`", ":ref:`Installation <api_bindings_csharp>`"
    "Java",   ":ref:`API <servo_brick_java_api>`",   ":ref:`Examples <servo_brick_java_examples>`",   ":ref:`Installation <api_bindings_java>`"
+   "PHP",    ":ref:`API <servo_brick_php_api>`",    ":ref:`Examples <servo_brick_php_examples>`",    ":ref:`Installation <api_bindings_php>`"
    "Python", ":ref:`API <servo_brick_python_api>`", ":ref:`Examples <servo_brick_python_examples>`", ":ref:`Installation <api_bindings_python>`"
 
 

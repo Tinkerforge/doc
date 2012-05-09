@@ -3,12 +3,12 @@
 API Bindings
 ============
 
-API bindings establish a TCP connection to the 
+API bindings establish a TCP connection to the
 :ref:`Brick Daemon <brickd>`. Each method call creates a TCP package that
 is send over the Brick Daemon to the Brick. Incoming TCP packages
 are routed back to the calling method.
 
-See also our :ref:`tutorial` for more information on how everything works 
+See also our :ref:`tutorial` for more information on how everything works
 together.
 
 
@@ -16,22 +16,23 @@ IP Connection
 -------------
 
 The IPConnection creates a connection between the
-:ref:`Brick Daemon <brickd>` and the corresponding programming language 
-:ref:`API bindings<api_bindings>`. 
+:ref:`Brick Daemon <brickd>` and the corresponding programming language
+:ref:`API bindings<api_bindings>`.
 
 It is used by the bindings and implemented for each programming language.
 The corresponding documentation can be found here:
 
 * :ref:`TCP/IP <ipcon_tcpip>`
-* :ref:`Python <ipcon_python>`
 * :ref:`C/C++ <ipcon_c>`
 * :ref:`C# <ipcon_csharp>`
 * :ref:`Java <ipcon_java>`
+* :ref:`PHP <ipcon_php>`
+* :ref:`Python <ipcon_python>`
 
 Using the Bindings
 ------------------
 
-The latest versions of the bindings can be found on the 
+The latest versions of the bindings can be found on the
 :ref:`download page <downloads_bindings_examples>`.
 
 .. _api_bindings_c:
@@ -45,17 +46,17 @@ examples/).
 
 To keep the C/C++ bindings stupid and simple, they only have
 dependencies that are available nearly everywhere, thus making it
-possible to compile into any project hassle-free. 
+possible to compile into any project hassle-free.
 We do not offer a pre-compiled library, since it would be a
 pain in the ass to provide them for all combinations of architectures and
 operating systems. This means, the
 bindings should work on most architectures (ARM, x86, etc.) and on most
 operating systems (Windows and POSIX systems, such as Linux and Mac OS, etc.).
 
-As an example we will compile the Stepper Brick configuration example 
+As an example we will compile the Stepper Brick configuration example
 with gcc on Windows and Linux.
 For that we have to copy the IP connection and the Stepper Brick
-bindings (ip_connection.h, ip_connection.c, brick_stepper.c and 
+bindings (ip_connection.h, ip_connection.c, brick_stepper.c and
 brick_stepper.h) from the bindings/ folder as well as the
 example_configuration.c from the examples/brick/stepper/ folder into our
 project::
@@ -66,13 +67,13 @@ project::
   -> brick_stepper.c
   -> brick_stepper.h
   -> example_configuration.c
- 
+
 The only dependency on Unix-like systems is pthread, therefore a
 compilation of the project with gcc on Linux looks like::
 
  gcc -pthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
 
-On Windows Winsock2 is used for threading. Under MinGW we can compile the example as 
+On Windows Winsock2 is used for threading. Under MinGW we can compile the example as
 following (hint: the library linking must come after the source)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
@@ -96,7 +97,7 @@ Thats it, we are ready to go!
 C#
 ^^
 
-The C# bindings consist of a library for all Tinkerforge Bricks and Bricklets 
+The C# bindings consist of a library for all Tinkerforge Bricks and Bricklets
 (Tinkerforge.dll), the source of the DLL (in source/) and all available
 C# examples (in examples/).
 
@@ -104,21 +105,21 @@ The library has been compiled with::
 
  gmcs /optimize /target:library /out:Tinkerforge.dll source/Tinkerforge/*.cs
 
-The library can be used without any further extensions. As an example 
+The library can be used without any further extensions. As an example
 lets compile the configuration example of the Stepper Brick.
 
-For this we create a folder and copy the Tinkerforge.dll and the 
+For this we create a folder and copy the Tinkerforge.dll and the
 examples/Brick/Stepper/ExampleConfiguration.cs into this folder::
 
  example_folder/
   -> Tinkerforge.dll
   -> ExampleConfiguration.cs
 
-In this folder we can now call the c# compiler with the following parameters 
+In this folder we can now call the c# compiler with the following parameters
 (1. Windows and 2. Linux/Mac OS (Mono))::
 
  1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
- 2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs 
+ 2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
 
 Or, alternatively add the DLL and the Example in an C# IDE of your choice
 (such as Visual Studio or Mono Develop).
@@ -130,19 +131,19 @@ Documentation for the API can be found :ref:`here <index_bricks>`.
 C# (Windows Phone)
 ^^^^^^^^^^^^^^^^^^
 
-For Windows Phone the normal C# bindings can be used 
-(see :ref:`above <api_bindings_csharp>`). The asynchronous sockets that 
+For Windows Phone the normal C# bindings can be used
+(see :ref:`above <api_bindings_csharp>`). The asynchronous sockets that
 are needed for Windows Phone are currently not supported in Mono. Since
 the DLL is build to be compatible with C# 2.0 and Mono, the DLL is not
 compatible with Windows Phone. To overcome this we have added asynchronous
-sockets for Windows Phone with *#if WINDOWS_PHONE* directives in the socket 
-code. This means you can add the Tinkerforge folder (from the source/ folder 
+sockets for Windows Phone with *#if WINDOWS_PHONE* directives in the socket
+code. This means you can add the Tinkerforge folder (from the source/ folder
 in the C# bindings) as an external resource. The complete C# API bindings
 work with Windows Phone SDK >= 7.1 (SDK 7.0 does not support sockets
 and can thus not be used to interface with brickd).
 
 In the following we assume that you already have Visual Studio for Windows
-Phone installed. As an example we will create a small project that can toggle 
+Phone installed. As an example we will create a small project that can toggle
 a relay. It should be easy to adjust this example for your needs.
 
 Start a new project by clicking on:
@@ -150,16 +151,16 @@ Start a new project by clicking on:
 * File
 * New Project...
 * Choose Visual C#
-* Choose Windows Phone Application 
-* Choose Name (e.g. Relay) 
+* Choose Windows Phone Application
+* Choose Name (e.g. Relay)
 * Press OK
-* Choose Target Windows Phone OS 7.1 
+* Choose Target Windows Phone OS 7.1
 * Press OK
 
-* Right click on project in Solution Explorer 
-* Add 
+* Right click on project in Solution Explorer
+* Add
 * New Folder, choose name Tinkerforge
-* Right click on Tinkerforge 
+* Right click on Tinkerforge
 * Add
 * Existing Item, choose all files from source/Tinkerforge/ folder of C# bindings
 
@@ -180,7 +181,7 @@ Edit the MainPage.xaml to add a toggle button:
      Foreground="{StaticResource PhoneForegroundBrush}"
      SupportedOrientations="Portrait" Orientation="Portrait"
      shell:SystemTray.IsVisible="True">
-    
+
      <Grid x:Name="LayoutRoot" Background="Transparent">
          <ToggleButton Name="RelaySwitch" Content="Change relay state"
              Checked="RelaySwitch_Checked" Unchecked="RelaySwitch_Unchecked" />
@@ -240,13 +241,13 @@ Java
 ^^^^
 
 The Java bindings consist of a library (.jar) for all Tinkerforge Bricks and
-Bricklets (Tinkerforge.jar), the source of the jar (in source/) and all 
+Bricklets (Tinkerforge.jar), the source of the jar (in source/) and all
 available Java examples (in examples/).
 
-The library can be used without any further extensions. As an example lets 
+The library can be used without any further extensions. As an example lets
 compile the configuration example of the Stepper Brick.
 
-For this we create a folder and copy the Tinkerforge.jar and the 
+For this we create a folder and copy the Tinkerforge.jar and the
 examples/Brick/Stepper/ExampleConfiguration.java into this folder::
 
  example_folder/
@@ -256,7 +257,7 @@ examples/Brick/Stepper/ExampleConfiguration.java into this folder::
 In this folder we can now call the Java compiler with the following
 parameters (1. Windows and 2. Linux/Mac OS)::
 
- 1.) javac -cp Tinkerforge.jar;. ExampleConfiguration.java 
+ 1.) javac -cp Tinkerforge.jar;. ExampleConfiguration.java
  2.) javac -cp Tinkerforge.jar:. ExampleConfiguration.java
 
 and run it with the following parameters (1. Windows and 2. Linux/Mac OS)::
@@ -266,7 +267,7 @@ and run it with the following parameters (1. Windows and 2. Linux/Mac OS)::
 
 (Note: The difference is colon vs semicolon)
 
-Or, alternatively add the jar and the Example in an Java IDE of your choice 
+Or, alternatively add the jar and the Example in an Java IDE of your choice
 (such as Eclipse or NetBeans).
 
 Documentation for the API can be found :ref:`here <index_bricks>`.
@@ -275,15 +276,15 @@ Documentation for the API can be found :ref:`here <index_bricks>`.
 
 Java (Android)
 ^^^^^^^^^^^^^^
-For Android the normal Java bindings can be used 
+For Android the normal Java bindings can be used
 (see :ref:`above <api_bindings_java>`).
 
 In the following we assume that you already have the Android development
 environment installed. If you are just starting with Android development,
-you should first complete the 
+you should first complete the
 `hello world tutorial <http://developer.android.com/resources/tutorials/hello-world.html>`__ from google.
 
-As an example we will create a small project that can toggle 
+As an example we will create a small project that can toggle
 a relay. It should be easy to adjust this example for your needs.
 
 Start a new project by clicking on:
@@ -302,7 +303,7 @@ Copy complete com/tinkerforge/ folder from source/ into PROJECTFOLDER/src/
 Edit the source. Don't forget to set the host IP to the IP address of the
 PC running brickd. You can use your local IP or the IP you are connected
 to the internet with. If you use the latter, you also have to make sure that
-the brickd port is opened to the outside. 
+the brickd port is opened to the outside.
 
 Below is a small example program that turns a relay on and off with a
 toggle button.
@@ -363,8 +364,8 @@ to use the network):
 
 .. code-block:: xml
 
- <uses-permission android:name="android.permission.INTERNET" /> 
- 
+ <uses-permission android:name="android.permission.INTERNET" />
+
 to AndroidManifest.xml on the same level as the ``<application>`` tag.
 
 Your application should now look as depicted below:
@@ -378,17 +379,66 @@ Your application should now look as depicted below:
 
 Test in simulator by clicking:
 
-* Run 
-* Run 
+* Run
+* Run
 * Android Application
+
+.. _api_bindings_php:
+
+PHP
+^^^
+
+The PHP bindings consist of a PEAR package with the bindings for all
+Tinkerforge Bricks and Bricklets (Tinkerforge.tgz), the source of the
+PEAR package (in source/) and all available PHP examples (in examples/).
+
+You can install the PEAR package with the pear tool::
+
+ pear install Tinkerforge.tgz
+
+After that you can use the examples as they are.
+
+If you can't or don't want to use the PEAR package, you can also use the source
+directly, just create a folder for your project and copy the Tinkerforge
+folder from source/ and the example you want to try in there
+(e.g. the Stepper configuration example from
+examples/brick/stepper/ExampleConfiguration.py)::
+
+ example_folder/
+  -> Tinkerforge/
+  -> ExampleConfiguration.py
+
+If you just want to use a few Bricks or Bricklets and you don't want to
+have this many files in you project, you can also copy the files as they are
+needed. For the Stepper Brick examples we need IPConnection.php and
+BrickStepper.php. After copying these in the project folder::
+
+ example_folder/
+  -> IPConnection.php
+  -> BrickStepper.php
+  -> ExampleConfiguration.php
+
+we have to remove the Tinkerforge directory from the examples, i.e. instead of::
+
+ require_once('Tinkerforge/IPConnection.php');
+ require_once('Tinkerforge/BrickStepper.php');
+
+we use::
+
+ require_once('IPConnection.php');
+ require_once('BrickStepper.php');
+
+After that, the example can be executed again.
+
+
 
 .. _api_bindings_python:
 
 Python
 ^^^^^^
 
-The Python bindings consist of a Python egg with the bindings for all 
-Tinkerforge Bricks and Bricklets (tinkerforge.egg), the source of the 
+The Python bindings consist of a Python egg with the bindings for all
+Tinkerforge Bricks and Bricklets (tinkerforge.egg), the source of the
 egg (in source/) and all available Python examples (in examples/).
 
 You can install the egg with easy_install::
@@ -397,19 +447,19 @@ You can install the egg with easy_install::
 
 After that you can use the examples as they are.
 
-If you can't or don't want to use the egg, you can also use the source 
-directly, just create a folder for your project and copy the tinkerforge 
-folder from source/ and the example you want to try in there 
-(e.g. the stepper configuration example from 
+If you can't or don't want to use the egg, you can also use the source
+directly, just create a folder for your project and copy the tinkerforge
+folder from source/ and the example you want to try in there
+(e.g. the Stepper configuration example from
 examples/brick/stepper/example_configuration.py)::
 
  example_folder/
   -> tinkerforge/
   -> example_configuration.py
 
-If you just want to use a few Bricks or Bricklets and you don't want to 
+If you just want to use a few Bricks or Bricklets and you don't want to
 have this many files in you project, you can also copy the files as they are
-needed. For the stepper examples we need ip_connection.py and 
+needed. For the Stepper Brick examples we need ip_connection.py and
 stepper_brick.py. After copying these in the project folder::
 
  example_folder/
@@ -419,14 +469,14 @@ stepper_brick.py. After copying these in the project folder::
 
 we have to remove the tinkerforge package from the examples, i.e. instead of::
 
- from tinkerforge.ip_connection 
+ from tinkerforge.ip_connection
  from tinkerforge.brick_stepper
- 
+
 we use::
 
- from ip_connection 
+ from ip_connection
  from brick_stepper
- 
+
 After that, the example can be executed again.
 
 .. note:: Windows installation hint

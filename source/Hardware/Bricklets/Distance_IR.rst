@@ -217,6 +217,7 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description
    "C/C++",  ":ref:`API <distance_ir_bricklet_c_api>`",      ":ref:`Examples <distance_ir_bricklet_c_examples>`",      ":ref:`Installation <api_bindings_c>`"
    "C#",     ":ref:`API <distance_ir_bricklet_csharp_api>`", ":ref:`Examples <distance_ir_bricklet_csharp_examples>`", ":ref:`Installation <api_bindings_csharp>`"
    "Java",   ":ref:`API <distance_ir_bricklet_java_api>`",   ":ref:`Examples <distance_ir_bricklet_java_examples>`",   ":ref:`Installation <api_bindings_java>`"
+   "PHP",    ":ref:`API <distance_ir_bricklet_php_api>`",    ":ref:`Examples <distance_ir_bricklet_php_examples>`",    ":ref:`Installation <api_bindings_php>`"
    "Python", ":ref:`API <distance_ir_bricklet_python_api>`", ":ref:`Examples <distance_ir_bricklet_python_examples>`", ":ref:`Installation <api_bindings_python>`"
 
 
