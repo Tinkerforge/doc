@@ -91,7 +91,7 @@ represents UIDs as uint64 (8 bytes). The Brick Viewer
 and the other API bindings represent UIDs in Base58 encoding instead.
 The example UID 3904673860505581361 is represented as a4GeP9ZpQFT in Base58.
 
-The hexdump of the :tcpip:func:`get_stack_id <IPConnection.get_stack_id>` request
+The hex dump of the :tcpip:func:`get_stack_id <IPConnection.get_stack_id>` request
 packet looks like this::
 
   0000   00 ff 0c 00 31 37 30 33 30 30 30 36              ....17030006
@@ -135,7 +135,9 @@ The payload contains the
 
  * UID 21238 as uint64 (0xf6 0x52 0x00 0x00 0x00 0x00 0x00 0x00).
 
-The example UID 21238 is represented as 7jb in Base58.
+The hex dump of this request packet looks like this::
+
+  0000   00 ff 0c 00 f6 52 00 00 00 00 00 00              .....R......
 
 Enumeration
 """""""""""
