@@ -1,7 +1,7 @@
 import com.tinkerforge.IPConnection;
 
 public class Example {
-	private static final String host = new String("localhost");
+	private static final String host = "localhost";
 	private static final int port = 4223;
 	
 	// Note: To make the example code cleaner we do not handle exceptions. Exceptions you
