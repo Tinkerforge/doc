@@ -162,13 +162,14 @@ Start a new project by clicking on:
 * New Folder, choose name Tinkerforge
 * Right click on Tinkerforge
 * Add
-* Existing Item, choose all files from source/Tinkerforge/ folder of C# bindings
+* Existing Item, choose all files from source/Tinkerforge/ folder of C# bindings (excluding AssemblyInfo.cs)
 
 Edit the MainPage.xaml to add a toggle button:
 
 .. code-block:: xml
 
- <phone:PhoneApplicationPage x:Class="Relay.MainPage"
+ <phone:PhoneApplicationPage
+     x:Class="Relay.MainPage"
      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
      xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
