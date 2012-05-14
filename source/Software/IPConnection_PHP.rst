@@ -52,6 +52,9 @@ Basic Methods
  method periodically to ensure that incoming callbacks are handled. If you
  don't use callbacks you don't need to call this method.
 
+ The recommended dispatch time is 0s. This will just dispatch all pending
+ callbacks without waiting for further callbacks.
+
 .. php:function:: void IPConnection::destroy()
 
  Destroys the IP connection. The socket to the Brick Daemon will be closed.
