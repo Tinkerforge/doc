@@ -9,32 +9,32 @@ Analog Out Bricklet
     {{ 
         tfdocstart("Bricklets/bricklet_analog_out_tilted_350.jpg", 
                  "Bricklets/bricklet_analog_out_tilted_600.jpg", 
-                 "Ambient Light Bricklet") 
+                 "Analog Out Bricklet")
     }}
     {{ 
         tfdocimg("Bricklets/bricklet_analog_out_vertical_100.jpg", 
                  "Bricklets/bricklet_analog_out_vertical_600.jpg", 
-                 "Ambient Light Bricklet") 
+                 "Analog Out Bricklet")
     }}
     {{ 
         tfdocimg("Bricklets/bricklet_analog_out_horizontal_100.jpg", 
                  "Bricklets/bricklet_analog_out_horizontal_600.jpg", 
-                 "Ambient Light Bricklet") 
+                 "Analog Out Bricklet")
     }}
     {{ 
         tfdocimg("Bricklets/bricklet_analog_out_master_100.jpg", 
                  "Bricklets/bricklet_analog_out_master_600.jpg", 
-                 "Ambient Light Bricklet with Master Brick") 
+                 "Analog Out Bricklet with Master Brick")
     }}
     {{ 
         tfdocimg("Bricklets/bricklet_analog_out_brickv_100.jpg", 
                  "Bricklets/bricklet_analog_out_brickv.jpg", 
-                 "Brick Viewer screenshot") 
+                 "Brick Viewer screenshot")
     }}
     {{ 
         tfdocimg("Dimensions/analog_out_bricklet_dimensions_100.png", 
                  "Dimensions/analog_out_bricklet_dimensions_600.png", 
-                 "Outline and drilling plan") 
+                 "Outline and drilling plan")
     }}
     {{ tfdocend() }}
 
@@ -161,13 +161,4 @@ High Level Programming Interface
 
 See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
-.. csv-table::
-   :header: "Language", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
-
-   "TCP/IP", ":ref:`API <analog_out_bricklet_tcpip_api>`"
-   "C/C++",  ":ref:`API <analog_out_bricklet_c_api>`",      ":ref:`Examples <analog_out_bricklet_c_examples>`",      ":ref:`Installation <api_bindings_c>`"
-   "C#",     ":ref:`API <analog_out_bricklet_csharp_api>`", ":ref:`Examples <analog_out_bricklet_csharp_examples>`", ":ref:`Installation <api_bindings_csharp>`"
-   "Java",   ":ref:`API <analog_out_bricklet_java_api>`",   ":ref:`Examples <analog_out_bricklet_java_examples>`",   ":ref:`Installation <api_bindings_java>`"
-   "PHP",    ":ref:`API <analog_out_bricklet_php_api>`",    ":ref:`Examples <analog_out_bricklet_php_examples>`",    ":ref:`Installation <api_bindings_php>`"
-   "Python", ":ref:`API <analog_out_bricklet_python_api>`", ":ref:`Examples <analog_out_bricklet_python_examples>`", ":ref:`Installation <api_bindings_python>`"
+.. include:: Analog_Out_hlpi.table

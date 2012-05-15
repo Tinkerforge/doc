@@ -49,14 +49,10 @@ For older Versions click `here <http://download.tinkerforge.com/tools/>`__.
 Bindings and Examples
 ---------------------
 
-.. csv-table::
- :header: "", "Bindings and Examples"
- :delim: |
- :widths: 10, 60
+.. include:: Downloads_bindings.table
 
- **Language** | `C/C++ <http://download.tinkerforge.com/bindings/c/tinkerforge_c_bindings_latest.zip>`__, `C# <http://download.tinkerforge.com/bindings/csharp/tinkerforge_csharp_bindings_latest.zip>`__, `Java <http://download.tinkerforge.com/bindings/java/tinkerforge_java_bindings_latest.zip>`__, `PHP <http://download.tinkerforge.com/bindings/php/tinkerforge_php_bindings_latest.zip>`__, `Python <http://download.tinkerforge.com/bindings/python/tinkerforge_python_bindings_latest.zip>`__
-
-The zip for each language contains all bindings and all available examples for the language. A tutorial on how to use the bindings can be found :ref:`here <api_bindings>`.
+The zip for each language contains all bindings and all available examples for
+the language. A tutorial on how to use the bindings can be found :ref:`here <api_bindings>`.
 
 For older Versions click `here <http://download.tinkerforge.com/bindings/>`__.
 

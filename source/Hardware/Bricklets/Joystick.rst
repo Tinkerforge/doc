@@ -145,13 +145,4 @@ High Level Programming Interface
 
 See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
-.. csv-table::
-   :header: "Language", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
-
-   "TCP/IP", ":ref:`API <joystick_bricklet_tcpip_api>`"
-   "C/C++",  ":ref:`API <joystick_bricklet_c_api>`",      ":ref:`Examples <joystick_bricklet_c_examples>`",      ":ref:`Installation <api_bindings_c>`"
-   "C#",     ":ref:`API <joystick_bricklet_csharp_api>`", ":ref:`Examples <joystick_bricklet_csharp_examples>`", ":ref:`Installation <api_bindings_csharp>`"
-   "Java",   ":ref:`API <joystick_bricklet_java_api>`",   ":ref:`Examples <joystick_bricklet_java_examples>`",   ":ref:`Installation <api_bindings_java>`"
-   "PHP",    ":ref:`API <joystick_bricklet_php_api>`",    ":ref:`Examples <joystick_bricklet_php_examples>`",    ":ref:`Installation <api_bindings_php>`"
-   "Python", ":ref:`API <joystick_bricklet_python_api>`", ":ref:`Examples <joystick_bricklet_python_examples>`", ":ref:`Installation <api_bindings_python>`"
+.. include:: Joystick_hlpi.table

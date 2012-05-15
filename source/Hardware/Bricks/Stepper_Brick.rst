@@ -252,17 +252,7 @@ High Level Programming Interface
 
 See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
-.. csv-table::
-   :header: "Language", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
-
-   "TCP/IP", ":ref:`API <stepper_brick_tcpip_api>`"
-   "C/C++",  ":ref:`API <stepper_brick_c_api>`",      ":ref:`Examples <stepper_brick_c_examples>`",      ":ref:`Installation <api_bindings_c>`"
-   "C#",     ":ref:`API <stepper_brick_csharp_api>`", ":ref:`Examples <stepper_brick_csharp_examples>`", ":ref:`Installation <api_bindings_csharp>`"
-   "Java",   ":ref:`API <stepper_brick_java_api>`",   ":ref:`Examples <stepper_brick_java_examples>`",   ":ref:`Installation <api_bindings_java>`"
-   "PHP",    ":ref:`API <stepper_brick_php_api>`",    ":ref:`Examples <stepper_brick_php_examples>`",    ":ref:`Installation <api_bindings_php>`"
-   "Python", ":ref:`API <stepper_brick_python_api>`", ":ref:`Examples <stepper_brick_python_examples>`", ":ref:`Installation <api_bindings_python>`"
-
+.. include:: Stepper_Brick_hlpi.table
 
 Low Level Programming Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

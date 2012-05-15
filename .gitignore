@@ -1,3 +1,4 @@
 build
 source/Software/Bricks
 source/Software/Bricklets
+*.table
