@@ -252,9 +252,17 @@ Callbacks
 """""""""
 
 Devices can send response packets spontaneously back to the host to notify
-about an event or specific condition. Most callbacks are disabled by default
-and have to enabled first.
+about an event or specific condition.
 
+The Brick Daemon does not forward callback packets by default, because it does
+not know which IP connection is interested in receiving them. Therefore, you need
+to tell brickd that you want to receive callback packets for a specific device.
+This is a side effect of calling the
+:tcpip:func:`get_stack_id <IPConnection.get_stack_id>` for that device.
+In summary: you need to call :tcpip:func:`get_stack_id <IPConnection.get_stack_id>`
+for each device from which you want to receive callbacks.
+
+Most callbacks are disabled by default and have to enabled first.
 For example, the :tcpip:func:`CALLBACK_MAGNETIC_FIELD <IMU.CALLBACK_MAGNETIC_FIELD>`
 callback of the IMU Brick (with stack ID 5) can be enabled with a call to
 :tcpip:func:`IMU.set_acceleration_period` with a period larger 0. Afterwards
