@@ -157,7 +157,7 @@ def generate(path):
 
         name = bricklet[0].replace(' ', '_').replace('-', '')
 
-        print 'Generating {0}_Brick_hlpi.table'.format(name)
+        print 'Generating {0}_hlpi.table'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), 'wb').write(make_hlpi_table(bricklet, 'bricklet'))
 
 
