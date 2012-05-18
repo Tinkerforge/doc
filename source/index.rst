@@ -75,9 +75,9 @@ Power Supplies
 
    Hardware/Power_Supplies/*
 
-*****
-Tools
-*****
+***********
+Accessories
+***********
 
 .. toctree::
    :maxdepth: 1
