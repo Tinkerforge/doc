@@ -55,8 +55,8 @@ bug tracker.
  Distance IR | `git://github.com/Tinkerforge/distance-ir-bricklet.git <https://github.com/Tinkerforge/distance-ir-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/distance-ir-bricklet/issues>`__
  Dual Relay | `git://github.com/Tinkerforge/dual-relay-bricklet.git <https://github.com/Tinkerforge/dual-relay-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/dual-relay-bricklet/issues>`__
  Humidity | `git://github.com/Tinkerforge/humidity-bricklet.git <https://github.com/Tinkerforge/humidity-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/humidity-bricklet/issues>`__
- IO 16 | `git://github.com/Tinkerforge/io16-bricklet.git <https://github.com/Tinkerforge/io16-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/io16-bricklet/issues>`__
- IO 4 | `git://github.com/Tinkerforge/io4-bricklet.git <https://github.com/Tinkerforge/io4-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/io4-bricklet/issues>`__
+ IO-16 | `git://github.com/Tinkerforge/io16-bricklet.git <https://github.com/Tinkerforge/io16-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/io16-bricklet/issues>`__
+ IO-4 | `git://github.com/Tinkerforge/io4-bricklet.git <https://github.com/Tinkerforge/io4-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/io4-bricklet/issues>`__
  Joystick | `git://github.com/Tinkerforge/joystick-bricklet.git <https://github.com/Tinkerforge/joystick-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/joystick-bricklet/issues>`__
  LCD 16x2 | `git://github.com/Tinkerforge/lcd-16x2-bricklet.git <https://github.com/Tinkerforge/lcd-16x2-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/lcd-16x2-bricklet/issues>`__
  LCD 20x4 | `git://github.com/Tinkerforge/lcd-20x4-bricklet.git <https://github.com/Tinkerforge/lcd-20x4-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/lcd-20x4-bricklet/issues>`__

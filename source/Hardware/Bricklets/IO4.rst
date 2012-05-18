@@ -1,7 +1,7 @@
 .. _io4_bricklet:
 
-IO4 Bricklet
-============
+IO-4 Bricklet
+=============
 
 
 .. raw:: html
@@ -51,7 +51,7 @@ Features
 Description
 -----------
 
-The IO4 :ref:`Bricklet <product_overview_bricklets>` can be used to extend the 
+The IO-4 :ref:`Bricklet <product_overview_bricklets>` can be used to extend the
 features of :ref:`Bricks <product_overview_bricks>` by external digital inputs 
 and outputs.
 
@@ -74,16 +74,16 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Dimensions                        25mm x 25mm (0.98" x 0.98")
-Weight                            6.7g
+Dimensions                        35mm x 35mm (1.38" x 1.38")
+Weight                            13.9g
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Number of I/Os                    4
 I/O voltages                      Fixed 3.3V
-Maximum API Calls*                set_value (1khz), get_value(0.5khz), callback (1khz)
+Maximum API Calls*                set_value (1khz), get_value (0.5khz), callback (1khz)
 ================================  ============================================================
 
-\* depends on your system(OS, CPU etc.)
+\* depends on your system (OS, CPU etc.)
 
 Resources
 ---------
@@ -97,17 +97,17 @@ Resources
 
 .. _io4_bricklet_test:
 
-Test your IO4 Bricklet
-----------------------
+Test your IO-4 Bricklet
+-----------------------
 
-To test the IO4 Bricklet you have to start by installing the
+To test the IO-4 Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
 (For installation guides click :ref:`here <brickd_installation>`
 and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
 language API bindings, the latter is for testing purposes.
 
-Connect the IO4 Bricklet to a 
+Connect the IO-4 Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable.
 In our test we connected an LED with series resistor to the board
 by attaching the anode to pin 3 and the cathode to a GND pin.
@@ -117,16 +117,16 @@ use the GND pins directly beside the data pins.
 
 .. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected IO4 Bricklet
+   :alt: Master Brick with connected IO-4 Bricklet
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
-"IO4 Bricklet" in the Brick Viewer after you pressed “connect”. Select it.
+"IO-4 Bricklet" in the Brick Viewer after you pressed “connect”. Select it.
 
 .. image:: /Images/Bricklets/bricklet_io4_brickv.jpg
    :scale: 100 %
-   :alt: Brickv view of the IO4 Bricklet
+   :alt: Brickv view of the IO-4 Bricklet
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_brickv.jpg
 
@@ -135,7 +135,7 @@ In this tab you can change the "Debounce Period",
 it is the debounce time for interrupt callbacks. 
 For example: If you set this value to 100, you will get interrupts
 maximal every 100ms. This is necessary if something that bounces is
-connected to the IO4 Bricklet, such as a button. You can test the optimal
+connected to the IO-4 Bricklet, such as a button. You can test the optimal
 value in the Brick Viewer and use it later in your own program.
   
 Below the debounce period configuration you can configure the pins.
@@ -154,7 +154,7 @@ Brick Viewer.
 
 After this you can go on with writing your own application.
 See the :ref:`Programming Interface <io4_programming_interfaces>` section for 
-the API of the IO4 Bricklet and examples in different programming languages.
+the API of the IO-4 Bricklet and examples in different programming languages.
 
 .. _io4_programming_interfaces:
 

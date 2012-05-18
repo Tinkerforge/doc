@@ -207,7 +207,7 @@ of the function ID. This is because the same function ID has different meanings
 for different Bricks and Bricklets. For example, function ID 1 maps to the
 :tcpip:func:`get_stack_voltage <Master.get_stack_voltage>` function on the
 Master Brick and to the :tcpip:func:`set_port <IO16.set_port>` function on the
-IO16 Bricklet.
+IO-16 Bricklet.
 
 The following example shows how to call the
 :tcpip:func:`get_humidity <Humidity.get_humidity>` function of a Humidity

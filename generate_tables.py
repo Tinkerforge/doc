@@ -29,14 +29,14 @@ bricklets = [('Ambient Light',  'ambient_light',  bindings, 'Ambient Light Senso
              ('Distance IR',    'distance_ir',    bindings, 'Measure Distances with IR Light'),
              ('Dual Relay',     'dual_relay',     bindings, 'Equipped with two relays'),
              ('Humidity',       'humidity',       bindings, 'Humidity Sensor'),
-             ('IO4',            'io4',            bindings, 'Input/Output 4-Channel'),
-             ('IO16',           'io16',           bindings, 'Input/Output 16-Channel'),
+             ('IO-4',           'io4',            bindings, 'Input/Output 4-Channel'),
+             ('IO-16',          'io16',           bindings, 'Input/Output 16-Channel'),
              ('Joystick',       'joystick',       bindings, 'Two directional Joystick with Button'),
              ('LCD 16x2',       'lcd_16x2',       bindings, '16x2 alphanummeric chars display with backlight'),
              ('LCD 20x4',       'lcd_20x4',       bindings, '20x4 alphanummeric chars display with backlight'),
+             ('Linear Poti',    'linear_poti',    bindings, 'Linear Potentiometer'),
              ('Piezo Buzzer',   'piezo_buzzer',   bindings, 'Buzzer for signaling'),
              ('Rotary Poti',    'rotary_poti',    bindings, 'Rotary Potentiometer'),
-             ('Linear Poti',    'linear_poti',    bindings, 'Linear Potentiometer'),
              ('Temperature',    'temperature',    bindings, 'High Precision Thermometer'),
              ('Temperature IR', 'temperature_ir', bindings, 'Infrared Thermometer'),
              ('Voltage',        'voltage',        bindings, 'Sensor to measure voltages')]
@@ -146,7 +146,7 @@ def generate(path):
         if len(brick[2]) == 0:
             continue
 
-        name = brick[0].replace(' ', '_')
+        name = brick[0].replace(' ', '_').replace('-', '')
 
         print 'Generating {0}_Brick_hlpi.table'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick_hlpi.table'), 'wb').write(make_hlpi_table(brick, 'brick'))
@@ -155,7 +155,7 @@ def generate(path):
         if len(bricklet[2]) == 0:
             continue
 
-        name = bricklet[0].replace(' ', '_')
+        name = bricklet[0].replace(' ', '_').replace('-', '')
 
         print 'Generating {0}_Brick_hlpi.table'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), 'wb').write(make_hlpi_table(bricklet, 'bricklet'))
