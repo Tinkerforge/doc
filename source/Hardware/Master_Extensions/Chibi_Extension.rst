@@ -35,7 +35,7 @@ Features
  * 700/800/900Mhz radio transceiver
  * Allows wireless interconnection between stacks
  * Configurable frequency and channel
- * Measureable signal strength
+ * Measurable signal strength
 
 Description
 -----------
@@ -75,7 +75,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Device Current Consumption        ca. 10mA
-Range (Outdoor)            		  up to 2km
+Range (Outdoor)                   up to 2km
 Maximum Baud Rate                 up to 250kbit/s
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -97,7 +97,7 @@ Resources
 Chibi Network Assembly
 ----------------------
 
-A Chibi network constists of one master and multiple slaves.
+A Chibi network consists of one master and multiple slaves.
 Chibi master is the Master Brick which has a USB connection to the PC
 running brickd. All the other Master Bricks with Chibi Extension must not have
 a USB connection (they can use a USB power supply since Master Brick firmware
@@ -105,9 +105,9 @@ a USB connection (they can use a USB power supply since Master Brick firmware
 its own address. The addresses have to be unique in the transmission range. 
 
 .. note::
-	If you use multiple networks in parallel with identical channel and 
-	frequency make sure that every address is unique and not used in different 
-	networks in transmission range.
+ If you use multiple networks in parallel with identical channel and
+ frequency make sure that every address is unique and not used in different
+ networks in transmission range.
 
 To create a Chibi network, stack the Chibi Extension on top of a Master Brick.
 Connect the Master Brick via USB with your PC and start the Brick Viewer 
@@ -117,10 +117,10 @@ as slave or master (as described :ref:`here <chibi_configuration>`).
 
 If you have configured all extensions you can build your system. Connect 
 Bricks and Bricklets as you like. The master of each stack has to be the 
-lowermost board (except if you are using a powersupply). The Chibi Extension 
+lowermost board (except if you are using a Power Supply). The Chibi Extension
 can be positioned in the stack as you wish.
 
-After you have plugged together your system you have to power ip up.
+After you have plugged together your system you have to power it up.
 You have to power up the slaves before the master, since the Chibi master 
 searches for slaves only at startup.
 You should now be able to see all connected stacks in the Brick Viewer.
@@ -131,13 +131,13 @@ Chibi Configuration
 ^^^^^^^^^^^^^^^^^^^
 
 .. note::
-	The Chibi configuration changed starting from Brick Viewer version 1.0.6,
-	before this version it was not necessary to specify if the extension 
-	should be used as master or slave (it was infered by other means).
+ The Chibi configuration changed starting from Brick Viewer version 1.0.6,
+ before this version it was not necessary to specify if the extension
+ should be used as master or slave (it was inferred by other means).
 
-	It turns out that this was highly confusing to most, so we recommend that
-	you update to the newest Brick Viewer version before you configure your
-	Chibi network.
+ It turns out that this was highly confusing to most, so we recommend that
+ you update to the newest Brick Viewer version before you configure your
+ Chibi network.
 
 To configure a Chibi Extension you first have to choose a unique
 address and a frequency and channel 
@@ -158,8 +158,8 @@ If you want to configure the extension as slave, you have to choose
    :target: ../../_images/Extensions/extension_chibi_slave.jpg
 
 If you want to configure the extension as master, you have to choose
-"Master" as type and specify a list of the slave adresses the master should
-be able to talk to (as a comma sperated list).
+"Master" as type and specify a list of the slave addresses the master should
+be able to talk to (as a comma separated list).
 
 .. image:: /Images/Extensions/extension_chibi_master.jpg
    :scale: 100 %
@@ -174,7 +174,7 @@ If you want to change something in your network, e.g. add new Bricks or
 Bricklets, you have to power down the stack you like to change. Change it 
 and repower it. If the node was a Chibi slave, you also have to reset the
 Chibi master (it only searches for new Bricks/Bricklets on startup). 
-This can be achieved by a powercycle or pressing the reset 
+This can be achieved by a power cycle or pressing the reset
 button on the Master Brick.
 
 Chibi Frequency and Channel
@@ -195,7 +195,7 @@ Here is a small list of frequencies with corresponding possible channels:
  "BPSK40 915Mhz", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
 
 .. warning::
-	The Chibi Extension is sold as an electronic component. You are building
-	a system with this component and it is your responsibility that the
-	system you are building abides by your local law. Make sure that you
-	are allowed to use the frequency you are configuring!
+ The Chibi Extension is sold as an electronic component. You are building
+ a system with this component and it is your responsibility that the
+ system you are building abides by your local law. Make sure that you
+ are allowed to use the frequency you are configuring!

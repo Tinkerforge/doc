@@ -19,9 +19,9 @@ def cb_position(position):
     dc.set_velocity(velocity)
 
 if __name__ == "__main__":
-    ipcon = IPConnection(HOST, PORT) # Create IP connection to brick
+    ipcon = IPConnection(HOST, PORT) # Create IP connection to brickd
 
-    dc = DC(UID_DC) # Create dc brick device object
+    dc = DC(UID_DC) # Create DC brick device object
     poti = RotaryPoti(UID_POTI) # Create rotary poti device object
     ipcon.add_device(dc) # Add device to IP connection
     ipcon.add_device(poti) # Add device to IP connection

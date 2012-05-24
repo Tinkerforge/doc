@@ -18,7 +18,7 @@ such as smart phones.
 
 Additionally it is possible to separate the machine running the Brick Daemon
 from the machine running the user code. This allows e.g. a Brick connected
-to a PC to be controlled from a smart phone or over the internet from
+to a PC to be controlled from a smart phone or over the Internet from
 another PC.
 
 .. _brickd_installation:
@@ -67,7 +67,7 @@ and reboot your PC.
 Windows Driver Installation
 """""""""""""""""""""""""""
 
-Dependend on your Windows version it is necessary
+Depending on your Windows version it is necessary
 to install a Brick driver. This driver needs to be installed for each of your
 Bricks independently. 
 
@@ -82,7 +82,7 @@ is necessary you should see an window like below:
 
 If you have not installed the driver before,
 Windows does not know our drivers and you have to specify the 
-driver location. You can find the drivers in your Brick Deamon installation
+driver location. You can find the drivers in your Brick Daemon installation
 directory. If you have installed the drivers before, you can choose the
 "Install the software automatically" option since Windows already knows
 the driver location.
@@ -109,7 +109,7 @@ You will find them in your Brickd programm directory in the "drivers" folder.
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_4.jpg
 
-After a sucessful installation the Brick should use a driver called "Brick_Driver".
+After a successful installation the Brick should use a driver called "Brick_Driver".
 You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
 
 .. note:: Under Windows 7 it is possible that Windows tries to install the 
@@ -118,7 +118,7 @@ You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
    your notice. If you don't see Bricks in the Brick Viewer, please check in 
    the Windows "Device Manager" that the drivers for the connected Bricks are
    installed correctly. If not, please choose the "driver" folder in Brick 
-   Deamon Installation and install the drivers manually.
+   Daemon Installation and install the drivers manually.
 
 
 

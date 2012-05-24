@@ -45,7 +45,7 @@ Features
 
  * 4 inputs and outputs
  * Fixed 3.3V logic voltage
- * Configurable pullups and interrupts
+ * Configurable pull-ups and interrupts
 
 
 Description
@@ -57,7 +57,7 @@ and outputs.
 
 The Bricklet features 4 pins that can be independently configured as
 digital inputs or outputs. Each input pin can additionally be configured with
-pullups or as interrupt source.
+pull-ups or as interrupt source.
 
 Via terminal blocks all signals can be accessed.
 Two additional terminal blocks deliver the output voltage and GND. 
@@ -122,7 +122,7 @@ use the GND pins directly beside the data pins.
    :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
-"IO-4 Bricklet" in the Brick Viewer after you pressed “connect”. Select it.
+"IO-4 Bricklet" in the Brick Viewer after you pressed "connect". Select it.
 
 .. image:: /Images/Bricklets/bricklet_io4_brickv.jpg
    :scale: 100 %
@@ -140,11 +140,11 @@ value in the Brick Viewer and use it later in your own program.
   
 Below the debounce period configuration you can configure the pins.
 Each pin can be configured as input/output and in case of an input pin 
-as pullup. The current state is depicted in the tabular below.
+as pull-up. The current state is depicted in the tabular below.
 
 To test the LED we configure pin 3 as output and change 
 the value. When the pin is high the LED should light up. To test the button 
-configure pin 0 as input pullup. We need the pullup to define a stable
+configure pin 0 as input pull-up. We need the pull-up to define a stable
 state when the button is not pressed. Now look in the tabular, you should
 see that you can change the value of the pin by toggling the button.
 

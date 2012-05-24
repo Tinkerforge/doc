@@ -303,7 +303,7 @@ Copy complete com/tinkerforge/ folder from source/ into PROJECTFOLDER/src/
 
 Edit the source. Don't forget to set the host IP to the IP address of the
 PC running brickd. You can use your local IP or the IP you are connected
-to the internet with. If you use the latter, you also have to make sure that
+to the Internet with. If you use the latter, you also have to make sure that
 the brickd port is opened to the outside.
 
 Below is a small example program that turns a relay on and off with a
@@ -360,7 +360,7 @@ toggle button.
  }
 
 
-After that you have to add the internet permssion (to be able
+After that you have to add the Internet permission (to be able
 to use the network):
 
 .. code-block:: xml

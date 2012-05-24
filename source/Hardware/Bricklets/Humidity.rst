@@ -109,7 +109,7 @@ Connect the Humidity Bricklet to a
    :target: ../../_images/Bricklets/bricklet_humidity_master_1200.jpg
 
 If you then connect the Brick to the PC over USB, you should see a tab named 
-"Humidity Bricklet" in the Brick Viewer after you pressed “connect”.
+"Humidity Bricklet" in the Brick Viewer after you pressed "connect".
 Select it.
 If everything went as expected you can now see the measured relative humidity
 and a graph that shows the humidity over time.

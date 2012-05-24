@@ -64,8 +64,8 @@ current of 500mA given over the USB port is not sufficient.
 The possible voltage input range is 6V to 27V. A 
 :ref:`Master Brick <master_brick>` can measure the voltage and current that
 is drawn from the Step-Down Power Supply. The current measurement can be used to
-measure the current consumption of a stack in case of driver bricks (stepper, dc etc.)
-are used. Currents below 200mA are not adequate measureable.
+measure the current consumption of a stack in case of Driver Bricks (Stepper, DC etc.)
+are used. Currents below 200mA are not adequate measurable.
 
 Technical Specifications
 ------------------------

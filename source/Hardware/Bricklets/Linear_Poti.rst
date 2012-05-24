@@ -106,7 +106,7 @@ and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
 language API bindings, the latter is for testing purposes.
 
-Connect the Linear Poti Brickler to a 
+Connect the Linear Poti Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable 
 (see picture below).
 

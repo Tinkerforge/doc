@@ -53,7 +53,7 @@ Description
 
 The Current12 :ref:`Bricklet <product_overview_bricklets>` can be used to 
 extend the features of :ref:`Bricks <product_overview_bricks>` by 
-bidirectional current flow measurments of up to 12.5 Ampere. 
+bidirectional current flow measurements of up to 12.5 Ampere.
 Additionally events can be configured to receive signals when a specified 
 current is exceeded.
 

@@ -53,7 +53,8 @@ Description
 -----------
 
 The Temperature IR :ref:`Bricklet <product_overview_bricklets>` is equipped 
-with a `infrared thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`_. It can extend the features of a Brick with the capability to contactlessly 
+with a `infrared thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`_.
+It can extend the features of a Brick with the capability to contactlessly
 measure temperature.
 
 You can read out object temperature and ambient temperature in 
@@ -78,7 +79,7 @@ Sensor                               MLX90614ESF-BAA
 Temperature range                    * -40 to +85°C ambient temperature
 
                                      * -70 to 380°C object temperature
-Accurracy                            0.5°C over wide temperature range
+Accuracy                             0.5°C over wide temperature range
 -----------------------------------  ---------------------------------------------------------------------
 -----------------------------------  ---------------------------------------------------------------------
 Output: Object/Ambient Temperature   Output in °C, unit 0.1°C, resolution 12bit
@@ -133,7 +134,7 @@ temperature of the room) and the object temperature you point at.
 It is possible to configure the emissivity of the material you
 point at.
 Enter 0xFFFF = 65535 for an emissivity of 1.0.
-The default is an emisivity of 0.98 (0.98 * 0xFFFF = 64224).
+The default is an emissivity of 0.98 (0.98 * 0xFFFF = 64224).
 
 After this you can go on with writing your own application.
 See the :ref:`Programming Interface <temperatureir_programming_interfaces>` 

@@ -109,7 +109,7 @@ depending on the state of the relay.
 
 .. image:: /Images/Bricklets/bricklet_dual_relay_connection_350.jpg
    :scale: 100 %
-   :alt: Dual Relay Bricklet, visualisation of the switch
+   :alt: Dual Relay Bricklet, visualization of the switch
    :align: center
    :target: ../../_images/Bricklets/bricklet_dual_relay_connection_700.jpg
 

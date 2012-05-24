@@ -52,13 +52,13 @@ Description
 -----------
 
 This LCD :ref:`Bricklet <product_overview_bricklets>` is equipped with a
-16x2 alphanummeric character display with blue backlight and three push buttons. 
+16x2 alphanumeric character display with blue backlight and three push buttons.
 It can be controlled with :ref:`Bricks <product_overview_bricks>`.
 The API allows to write characters to the LCD, get the state of the buttons,
 switch the backlight on or off and configure events for the buttons.
 
-You can use this bricklet to display text, for example a name of
-a song that is played on your PC or measurements from other bricklets.
+You can use this Bricklet to display text, for example a name of
+a song that is played on your PC or measurements from other Bricklets.
 
 Technical Specifications
 ------------------------
@@ -69,7 +69,7 @@ Property                             Value
 Dimensions                           80mm x 31mm (3.15" x 1.22")
 Weight                               51.4g (w/o screws)
 Current Consumption with Backlight   28mA
-LCD                                  Alphanummeric, 16 chars per line, 2 lines
+LCD                                  Alphanumeric, 16 chars per line, 2 lines
 Backlight                            Blue, software switchable on/off
 Contrast                             Contrast voltage adjustable with potentiometer
 ===================================  ============================================================
@@ -77,7 +77,7 @@ Contrast                             Contrast voltage adjustable with potentiome
 Resources
 ---------
 
-* LCD charset (`Download <https://github.com/Tinkerforge/lcd-16x2-bricklet/raw/master/datasheets/standard_charset.pdf>`__)
+* LCD Charset (`Download <https://github.com/Tinkerforge/lcd-16x2-bricklet/raw/master/datasheets/standard_charset.pdf>`__)
 * LCD Datasheet (`Download <https://github.com/Tinkerforge/lcd-16x2-bricklet/raw/master/datasheets/el1602a.pdf>`__)
 * LCD Controller KS0066U Datasheet (`Download <https://github.com/Tinkerforge/lcd-16x2-bricklet/raw/master/datasheets/KS0066u.pdf>`__)
 * MCP23017 Datasheet (`Download <https://github.com/Tinkerforge/lcd-16x2-bricklet/raw/master/datasheets/MCP23017.pdf>`__)
@@ -132,7 +132,7 @@ depicted below.
 Input a string into the text field.
 You can choose the line and the start position at which the text is displayed.
 Press "Send Text" to display it. Press "Backlight On" to turn the backlight on.
-Play around with the three onboard buttons and look how their values change.
+Play around with the three on-board buttons and look how their values change.
 
 After this test you can go on with writing your own application.
 See the :ref:`Programming Interface <lcd_16x2_programming_interfaces>` section 

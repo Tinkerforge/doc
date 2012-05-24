@@ -39,7 +39,7 @@ of the :ref:`Bricklet connector <connector_bricklet>` available.
 
 This allows the use of Bricklets as breakout boards for the sensor on the
 Bricklet. For example: If you want to use an ambient light sensor in
-your embedded project but you don't want to solder the tiny smd IC,
+your embedded project but you don't want to solder the tiny SMD IC,
 you can buy the Ambient Light Bricklet together with the Breakout Bricklet
 and solder cables on the big pads of the Breakout Bricklet.
 
