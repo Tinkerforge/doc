@@ -131,6 +131,8 @@ Documentation for the API can be found :ref:`here <index_bricks>`.
 C# (Windows Phone)
 ^^^^^^^^^^^^^^^^^^
 
+**Requirements**: Windows Phone SDK 7.1 or newer
+
 For Windows Phone the normal C# bindings can be used
 (see :ref:`above <api_bindings_csharp>`). The asynchronous sockets that
 are needed for Windows Phone are currently not supported in Mono. Since
@@ -277,6 +279,7 @@ Documentation for the API can be found :ref:`here <index_bricks>`.
 
 Java (Android)
 ^^^^^^^^^^^^^^
+
 For Android the normal Java bindings can be used
 (see :ref:`above <api_bindings_java>`).
 
@@ -389,6 +392,8 @@ Test in simulator by clicking:
 PHP
 ^^^
 
+**Requirements**: PHP 5.3 or newer with bcmath extension
+
 The PHP bindings consist of a PEAR package with the bindings for all
 Tinkerforge Bricks and Bricklets (Tinkerforge.tgz), the source of the
 PEAR package (in source/) and all available PHP examples (in examples/).
@@ -437,6 +442,8 @@ After that, the example can be executed again.
 
 Python
 ^^^^^^
+
+**Requirements**: Python 2.6 or newer, Python 3 is also supported
 
 The Python bindings consist of a Python egg with the bindings for all
 Tinkerforge Bricks and Bricklets (tinkerforge.egg), the source of the
