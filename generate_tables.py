@@ -9,7 +9,8 @@ bindings = [('TCP/IP', 'tcpip',  False),
             ('C#',     'csharp', True),
             ('Java',   'java',   True),
             ('PHP',    'php',    True),
-            ('Python', 'python', True)]
+            ('Python', 'python', True),
+            ('Ruby',   'ruby',   True)]
 
           # display,   uri,      bindings,  description
 bricks = [('DC',      'dc',      bindings, '3A DC Motor Driver'),

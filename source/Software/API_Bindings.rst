@@ -28,6 +28,7 @@ The corresponding documentation can be found here:
 * :ref:`Java <ipcon_java>`
 * :ref:`PHP <ipcon_php>`
 * :ref:`Python <ipcon_python>`
+* :ref:`Ruby <ipcon_ruby>`
 
 Using the Bindings
 ------------------
@@ -492,3 +493,54 @@ After that, the example can be executed again.
  * Install easy_install: http://pypi.python.org/pypi/setuptools#windows (setuptools)
  * Open Windows command shell
  * C:\\YourPythonDir\\Scripts\\easy_install.exe C:\\PathToEgg\\tinkerforge.egg
+
+
+
+.. _api_bindings_ruby:
+
+Ruby
+^^^^
+
+**Requirements**: Ruby 1.9 or newer
+
+The Ruby bindings consist of a Ruby GEM with the bindings for all
+Tinkerforge Bricks and Bricklets (tinkerforge.gem), the source of the
+GEM (in source/) and all available Ruby examples (in examples/).
+
+You can install the GEM with the gem tool::
+
+ gem install tinkerforge.gem
+
+After that you can use the examples as they are.
+
+If you can't or don't want to use the GEM, you can also use the source
+directly, just create a folder for your project and copy the tinkerforge
+folder from source/ and the example you want to try in there
+(e.g. the Stepper configuration example from
+examples/brick/stepper/example_configuration.rb)::
+
+ example_folder/
+  -> tinkerforge/
+  -> example_configuration.rb
+
+If you just want to use a few Bricks or Bricklets and you don't want to
+have this many files in you project, you can also copy the files as they are
+needed. For the Stepper Brick examples we need ip_connection.rb and
+stepper_brick.rb. After copying these in the project folder::
+
+ example_folder/
+  -> ip_connection.rb
+  -> brick_stepper.rb
+  -> example_configuration.rb
+
+we have to remove the tinkerforge package from the examples, i.e. instead of::
+
+ require 'tinkerforge/ip_connection'
+ require 'tinkerforge/brick_stepper'
+
+we use::
+
+ require 'ip_connection'
+ require 'brick_stepper'
+
+After that, the example can be executed again.
