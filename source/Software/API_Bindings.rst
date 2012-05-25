@@ -93,6 +93,133 @@ include ws2_32.lib::
 Thats it, we are ready to go!
 
 
+.. _api_bindings_c_ios:
+
+C/C++ (iOS)
+^^^^^^^^^^^
+
+Objectiv-C is compatible to C. This allows to use the C/C++ bindings
+(see :ref:`above <api_bindings_c>`) in an iOS App.
+
+In the following we assume that you already have the iOS development environment
+installed.
+
+As an example we will create a small project that can toggle a relay. It
+should be easy to adjust this example for your needs.
+
+Start a new Xcode project by clicking on:
+
+ * File
+ * New
+ * Project...
+ * Choose iOS Application
+ * Choose Single View Application
+ * Click Next
+ * Choose Product Name (e.g. Relay)
+ * Click Next
+ * Choose a Folder for the project
+ * Click Create
+
+Add the C/C++ bindings code:
+
+ * Right click on the Relay folder in the Project navigator
+ * New Group, choose name Tinkerforge
+ * Right click on new Tinkerforge group
+ * Add Files to "Relay"...
+ * Choose all files from the bindings folder of the C/C++ bindings
+
+Below is a small example program that turns a relay on and off with a toggle button.
+
+Edit AppDelegate.h as shown below and add the two variables for the IPConnection
+and DualRelay objects and the toggleRelays Interface Builder action.
+
+.. code-block:: objc
+
+ #import <UIKit/UIKit.h>
+ #include "ip_connection.h"
+ #include "bricklet_dual_relay.h"
+
+ @interface AppDelegate : UIResponder <UIApplicationDelegate>
+ {
+     IPConnection ipcon;
+     DualRelay dr;
+ }
+
+ @property (strong, nonatomic) UIWindow *window;
+
+ - (IBAction)toggleRelays;
+
+ @end
+
+
+Edit AppDelegate.m as shown below to create the IPConnection and DualRelay
+objects after the App is launched. For simplicity no error handling is done here.
+In the toggleRelays action the state of both relays is switched.
+
+.. code-block:: objc
+
+ #import "AppDelegate.h"
+
+ @implementation AppDelegate
+
+ @synthesize window = _window;
+
+ - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+ {
+     // Change to the IP address of your host
+     ipcon_create(&ipcon, "192.168.178.46", 4223);
+     dual_relay_create(&dr, "927");
+     ipcon_add_device(&ipcon, &dr);
+     dual_relay_set_state(&dr, true, true);
+
+     return YES;
+ }
+
+ - (IBAction) toggleRelays
+ {
+     // Get state of both relays and toogle it
+     bool state1, state2;
+     dual_relay_get_state(&dr, &state1, &state2);
+     dual_relay_set_state(&dr, !state1, !state2);
+ }
+
+ @end
+
+Now open MainStoryboard.storyboard in the Interface Builder and add a Label and
+a on/off Switch object as shown in the screenshot. The last step is to connect the
+Switch *Value Changed* event with the *toggleRelays* action:
+
+ * Right click on the Switch
+ * Click on the circle right of the Value Changed event
+ * Drag a line to the First Responder
+ * Choose toogleRelays from the action menu
+
+
+.. image:: /Images/Screenshots/ios_xcode_small.jpg
+   :scale: 100 %
+   :alt: Xcode example for C/C++ bindings in iOS
+   :align: center
+   :target: ../_images/Screenshots/ios_xcode.jpg
+
+.. container:: tfdocimages
+
+ .. list-table::
+
+  * - .. image:: /Images/Screenshots/ios_xcode_event1_small.jpg
+       :scale: 100 %
+       :alt: Xcode example for C/C++ bindings in iOS, connect event, step 1
+       :align: center
+       :target: ../_images/Screenshots/ios_xcode_event1.jpg
+
+    - .. image:: /Images/Screenshots/ios_xcode_event2_small.jpg
+       :scale: 100 %
+       :alt: Xcode example for C/C++ bindings in iOS, connect event, step 2
+       :align: center
+       :target: ../_images/Screenshots/ios_xcode_event2.jpg
+
+Test the App in the simulator by clicking the Run button.
+
+
 .. _api_bindings_csharp:
 
 C#
@@ -129,6 +256,7 @@ Documentation for the API can be found :ref:`here <index_bricks>`.
 
 .. _api_bindings_csharp_windows_phone:
 
+
 C# (Windows Phone)
 ^^^^^^^^^^^^^^^^^^
 
@@ -156,9 +284,9 @@ Start a new project by clicking on:
 * Choose Visual C#
 * Choose Windows Phone Application
 * Choose Name (e.g. Relay)
-* Press OK
+* Click OK
 * Choose Target Windows Phone OS 7.1
-* Press OK
+* Click OK
 
 * Right click on project in Solution Explorer
 * Add
@@ -207,7 +335,7 @@ Double click on the toggle button to edit the MainPage.xaml.cs:
  {
      public partial class MainPage : PhoneApplicationPage
      {
-         // Change host ip address to ip from brickd
+         // Change to the IP address of your host
          private static string HOST = "192.168.178.35";
          private static int PORT = 4223;
          private static string UID = "batti"; // Change to your UID
@@ -287,7 +415,7 @@ For Android the normal Java bindings can be used
 In the following we assume that you already have the Android development
 environment installed. If you are just starting with Android development,
 you should first complete the
-`hello world tutorial <http://developer.android.com/resources/tutorials/hello-world.html>`__ from google.
+`hello world tutorial <http://developer.android.com/resources/tutorials/hello-world.html>`__ from Google.
 
 As an example we will create a small project that can toggle
 a relay. It should be easy to adjust this example for your needs.
@@ -328,9 +456,9 @@ toggle button.
 
  public class RelayActivity extends Activity {
      // Change to the IP address of your host
-     private static final String host = new String("192.168.178.35");
+     private static final String host = "192.168.178.35";
      private static final int port = 4223;
-     private static final String UID = new String("Axb");
+     private static final String UID = "Axb";
      private BrickletDualRelay dr;
      private ToggleButton tb;
 
