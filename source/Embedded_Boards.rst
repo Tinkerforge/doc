@@ -33,13 +33,13 @@ Set up Brickd/Brickv
 ^^^^^^^^^^^^^^^^^^^^
 
 To install the :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer<brickv>` Software 
-install it with the following commands:
+install it with the following commands::
 
-sudo apt-get install python-twisted python-gudev libusb-1.0-0
-sudo dpkg -i brickd_latest.deb
+ sudo apt-get install python-twisted python-gudev libusb-1.0-0
+ sudo dpkg -i brickd_latest.deb
 
-sudo apt-get install python python-qt4 python-qwt5-qt4 python-matplotlib python-scipy python-opengl python-numpy python-qt4-gl
-sudo dpkg -i brickv_latest.deb
+ sudo apt-get install python python-qt4 python-qwt5-qt4 python-matplotlib python-scipy python-opengl python-numpy python-qt4-gl
+ sudo dpkg -i brickv_latest.deb
 
 Access from outside
 ^^^^^^^^^^^^^^^^^^^
@@ -59,7 +59,6 @@ a system with many Bricks and Bricklets. The reason is that the Raspberry Pi
 itself is powered by USB. So this powersupply has to power the Raspberry Pi
 and your connected stuff. If you facing any problems with the powersupply,
 please reduce the amount of connected Bricks and Bricklets or power them
-indepentently with a `Powersupply <product_overview_powersupplies>`.
-Raspberry Pi
+indepentently with a :ref:`Powersupply <product_overview_powersupplies>`.
 
 
