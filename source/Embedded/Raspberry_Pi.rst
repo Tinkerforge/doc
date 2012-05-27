@@ -3,7 +3,7 @@
 Raspberry Pi
 ============
 
-This section describes how to use Bricks/Bricklets with an 
+This section describes how to use Bricks/Bricklets with a 
 `Raspberry Pi <http://www.raspberrypi.org/>`__ together
 with Debian "squeeze".
 
@@ -23,7 +23,7 @@ Start Raspberry Pi
 Connect a keyboard, a monitor and a powersupply to your Raspberry Pi.
 After connecting the powersupply the Raspberry Pi should start booting.
 
-At the end of the boot process you should the a login prompt. Enter
+At the end of the boot process you should see the a login prompt. Enter
 as username "pi" and as password "raspberry". You should be logged in.
 
 Set up Brickd/Brickv
@@ -45,7 +45,7 @@ install it with the following commands::
 Access from outside
 -------------------
 
-You can use the Raspberry Pi to run the Brick Deamon but control the attached 
+You can use the Raspberry Pi to run the Brick Deamon and control the attached 
 devices from the outside. For example you can use this to control stuff from 
 your mobile phone.
 
@@ -55,11 +55,6 @@ your code from "localhost" to the IP of the Raspberry Pi.
 Reported Problems
 -----------------
 
-There is problem with the powersupply of the Raspberry Pi when you use 
-a system with many Bricks and Bricklets. The reason is that the Raspberry Pi 
-itself is powered by USB. So this powersupply has to power the Raspberry Pi
-and your connected stuff. If you facing any problems with the powersupply,
-please reduce the amount of connected Bricks and Bricklets or power them
-indepentently with a :ref:`Powersupply <product_overview_powersupplies>`.
-
-
+The USB port of the Raspberry PI may not be able to handle the power
+that is needed by a big stack of Bricks/Bricklets. In this case you
+should use a :ref:`Step-Down Powersupply <product_overview_powersupplies>`.
