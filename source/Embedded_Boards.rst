@@ -3,12 +3,13 @@
 Bricks/Bricklets with Embedded Boards
 =====================================
 
+.. _embedded_raspberry_pi:
 
 Raspberry Pi
 ------------
 
 This section describes how to use Bricks/Bricklets with an 
-`Raspberr Pi <http://www.raspberrypi.org/>`__ together
+`Raspberry Pi <http://www.raspberrypi.org/>`__ together
 with Debian "squeeze".
 
 Prepare SD Card
@@ -24,14 +25,15 @@ Download necessary Files
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Download Brickd and Brickv .deb's from :ref:`here <downloads_tools>`.
-Mount SD Card and move to /home/pi
+Mount SD Card and move to "/home/pi" of course you can also download these files
+later when running your Raspberry Pi.
 
 
 Set up Brickd/Brickv
 ^^^^^^^^^^^^^^^^^^^^
 
 To install the :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer<brickv>` Software 
-your Raspberry Pi has to be connected to a network.
+install it with the following commands:
 
 sudo apt-get install python-twisted python-gudev libusb-1.0-0
 sudo dpkg -i brickd_latest.deb
@@ -39,14 +41,25 @@ sudo dpkg -i brickd_latest.deb
 sudo apt-get install python python-qt4 python-qwt5-qt4 python-matplotlib python-scipy python-opengl python-numpy python-qt4-gl
 sudo dpkg -i brickv_latest.deb
 
-Download Brickd and Brickv from :ref:`here <downloads_tools>`.
+Access from outside
+^^^^^^^^^^^^^^^^^^^
 
+You can use the Raspberry Pi to run the Brick Deamon but control the attached 
+devices from the outside. For example you can use this to control stuff from 
+your mobile phone.
 
-First of all install the necessary tools:
+To do this you have to change the host the IPConnection is connecting to in 
+your code from "localhost" to the IP of the Raspberry Pi.
 
-Example Python
-^^^^^^^^^^^^^^
+Reported Problems
+^^^^^^^^^^^^^^^^^
 
+There is problem with the powersupply of the Raspberry Pi when you use 
+a system with many Bricks and Bricklets. The reason is that the Raspberry Pi 
+itself is powered by USB. So this powersupply has to power the Raspberry Pi
+and your connected stuff. If you facing any problems with the powersupply,
+please reduce the amount of connected Bricks and Bricklets or power them
+indepentently with a `Powersupply <product_overview_powersupplies>`.
+Raspberry Pi
 
-Download  :ref:`here <downloads_tools>`.
 
