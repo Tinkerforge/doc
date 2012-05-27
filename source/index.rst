@@ -23,6 +23,20 @@ Documentation
    Source_Code
 
 
+.. _index_embedded_boards:
+
+**************************
+Usage with Embedded Boards
+**************************
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   Embedded/*
+
+
+
 .. _index_bricks:
 
 ******
