@@ -14,7 +14,8 @@ In the first step you have to set up squeeze on a SD Card.
 Download the latest Debian image from 
 `here <http://www.raspberrypi.org/downloads>`__
 and follow the necessary steps of this description:  
-`http://www.raspberrypi.org/downloads <http://elinux.org/RPi_Easy_SD_Card_Setup>`__.
+
+`http://elinux.org/RPi_Easy_SD_Card_Setup <http://elinux.org/RPi_Easy_SD_Card_Setup>`__
 
 Start Raspberry Pi
 ------------------
