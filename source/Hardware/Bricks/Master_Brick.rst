@@ -147,7 +147,7 @@ Connect the Brick to the PC over USB. You should see a tab named
 
 You should see that the Master Brick isn't measuring any stack voltages or
 currents. This is because you have not attached a
-:ref:`Power Supply Board <product_overview_powersupplies>`. When attaching
+:ref:`Power Supply <product_overview_powersupplies>`. When attaching
 such a board you should see the voltage applied to your stack and the current
 flowing in.
 

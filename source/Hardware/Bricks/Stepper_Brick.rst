@@ -211,9 +211,9 @@ for the API of the Stepper Brick and examples in different programming languages
 Power Supply
 ^^^^^^^^^^^^
 
-The connected stepper can be powered through the onboard power-connector
-or through a :ref:`Power Supply Board <product_overview_powersupplies>` in a 
-stack. The Brick switches autonomously to the onboard power-connector when
+The connected stepper can be powered through the on-board power-connector
+or through a :ref:`Power Supply <product_overview_powersupplies>` in a
+stack. The Brick switches autonomously to the on-board power-connector when
 a voltage is measured there.
 
 

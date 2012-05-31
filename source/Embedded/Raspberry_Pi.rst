@@ -5,7 +5,7 @@ Raspberry Pi
 
 This section describes how to use Bricks/Bricklets with a 
 `Raspberry Pi <http://www.raspberrypi.org/>`__ together
-with Debian "squeeze".
+with Debian Squeeze.
 
 Prepare SD Card
 ---------------
@@ -20,8 +20,8 @@ and follow the necessary steps of this description:
 Start Raspberry Pi
 ------------------
 
-Connect a keyboard, a monitor and a powersupply to your Raspberry Pi.
-After connecting the powersupply the Raspberry Pi should start booting.
+Connect a keyboard, a monitor and a power supply to your Raspberry Pi.
+After connecting the power supply the Raspberry Pi should start booting.
 
 At the end of the boot process you should see the a login prompt. Enter
 as username "pi" and as password "raspberry". You should be logged in.
@@ -57,4 +57,4 @@ Reported Problems
 
 The USB port of the Raspberry PI may not be able to handle the power
 that is needed by a big stack of Bricks/Bricklets. In this case you
-should use a :ref:`Step-Down Powersupply <product_overview_powersupplies>`.
+should use a :ref:`Step-Down Power Supply <product_overview_powersupplies>`.

@@ -36,7 +36,7 @@ between the Bricks/Bricklets and the programming language API bindings.
 The Brick Viewer is a GUI for testing purposes.
 
 After the installation you are ready to tinker! Take the DC Brick and 
-connect a motor and a battery as shown the picture below (You can of
+connect a motor and a battery as shown the picture below (you can of
 course also use a power supply instead of the battery or e.g. a Servo Brick
 and a servo instead of the DC Brick and a motor):
 
@@ -228,27 +228,27 @@ Bricklets.
 
 The master of a stack powers each device of the stack over its USB
 connection with a maximum of 500mA. Every driver Brick in the stack needs
-to be powered by its own onboard power-connector. To again reduce wiring and
+to be powered by its own on-board power-connector. To again reduce wiring and
 save space it is possible to use a 
-:ref:`Power Supply Board <product_overview_powersupplies>`, which
-is attached at the bottom of the stack (below the master).
+:ref:`Power Supply <product_overview_powersupplies>`, which
+is attached at the bottom of the stack (below the Master Brick).
 These boards power the stacks internal power signal.
-That means, that each driver Brick which is not powered by its onboard
-power-connector is powered through the stack by the power supply board.
+That means, that each driver Brick which is not powered by its on-board
+power-connector is powered through the stack by the Power Supply.
 
-Additionally the power supply board creates a 5V signal to power the devices of
-the stack. No power is drawn from the PC if a power supply
-board is used. This is especially useful if a small embedded device is
+Additionally the Power Supply creates a 5V signal to power the devices of
+the stack. No power is drawn from the PC if a Power Supply
+is used. This is especially useful if a small embedded device is
 utilized to control the Bricks and Bricklets, since it might not be able
 to deliver the needed power.
 
 The master of the stack can measure the voltage and the current flow
-of the power supply connected to the power supply board.
+of the connected power supply.
 
 .. note::
 
    Each driver Brick switches automatically to the stack internal
-   power signal if no external supply is attached over the onboard 
+   power signal if no external supply is attached over the on-board
    power-connector. Keep this in mind!
 
 In the following we extend the previous part by attaching a Master Brick

@@ -116,8 +116,8 @@ with the identified Chibi Extension (see image below). Configure the extension
 as slave or master (as described :ref:`here <chibi_configuration>`).
 
 If you have configured all extensions you can build your system. Connect 
-Bricks and Bricklets as you like. The master of each stack has to be the 
-lowermost board (except if you are using a Power Supply). The Chibi Extension
+Bricks and Bricklets as you like. The Master of each stack has to be the
+lowermost Brick (except if you are using a Power Supply). The Chibi Extension
 can be positioned in the stack as you wish.
 
 After you have plugged together your system you have to power it up.

@@ -187,11 +187,11 @@ the API of the DC Brick and examples in different programming languages.
 Motor Power Supply
 ------------------
 
-The connected motor can be powered through the onboard power-connector 
+The connected motor can be powered through the on-board power-connector
 (black connector) 
-or through a :ref:`Power Supply Board <product_overview_powersupplies>` in a 
+or through a :ref:`Power Supply <product_overview_powersupplies>` in a
 stack.
-The Brick switches autonomously to the onboard power-connector when there
+The Brick switches autonomously to the on-board power-connector when there
 is a voltage measured. 
 
 .. _dc_brick_drive_mode:
