@@ -14,6 +14,7 @@ Documentation
    Tutorials/Tutorial
    Software
    Downloads
+   Timeline
 
 .. toctree::
    :maxdepth: 1
