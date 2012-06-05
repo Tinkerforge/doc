@@ -14,11 +14,11 @@ Documentation
    Tutorials/Tutorial
    Software
    Downloads
-   Timeline
 
 .. toctree::
    :maxdepth: 1
 
+   Timeline
    Programming_Interfaces
    Technical_Data
    Source_Code
