@@ -88,7 +88,7 @@ or in the console with::
 
 To install Brick Viewer from the console use the following::
 
- sudo apt-get install python python-qt4 python-qwt5-qt4 python-matplotlib python-scipy python-opengl python-numpy python-qt4-gl
+ sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
  sudo dpkg -i brickv_latest.deb
 
 To install Brick Viewer from source, download the source from `here <https://github.com/Tinkerforge/brickv>`__ and install the dependencies:
@@ -96,10 +96,7 @@ To install Brick Viewer from source, download the source from `here <https://git
 * python-qt4 
 * python-qt4-gl
 * python-qwt5-qt4
-* python-matplotlib
-* python-scipy
 * python-opengl
-* python-numpy
 
 On Debian based distributions you can do that as shown above, on other
 distribution you have to search for and install the equivalent packages.
@@ -112,7 +109,7 @@ brickv/src/brickv/ and start with::
 .. note::
  
  Unfortunately Debian has at the time of writing this tutorial problems with
- the python-qwt5-qt4 in wheezy. If you use Debian wheezy and you can't
+ the python-qwt5-qt4 in Wheezy. If you use Debian Wheezy and you can't
  find python-qwt5-qt4 in the repository, you have to install it from sid::
 
   echo 'APT::Default-Release "testing";' >> /etc/apt/apt.conf
@@ -155,13 +152,16 @@ network. Enter the IP (localhost if you started the Brick Daemon on the
 same PC). Press "connect". Now you can go through the tabs at the top
 and test your Bricks and Bricklets.
 
-.. image:: /Images/Screenshots/brickv_setup_tab.jpg
+.. image:: /Images/Screenshots/brickv_setup_tab_small.jpg
    :scale: 100 %
-   :alt: Brickv (ADC Calibration)
+   :alt: Brickv (Setup Tab)
    :align: center
+   :target: ../_images/Screenshots/brickv_setup_tab.jpg
 
-If you click on advanced functions, you can calibrate the ADCs and
-flash plugins to Bricks (see below).
+If you click on "Flashing" you can flash firmwares and plugins onto Bricks and
+Bricklets. If you click on "Advanced Functions" you can calibrate the ADCs of
+Bricks (see below).
+
 
 .. _brickv_adc_calibration:
 
@@ -181,12 +181,13 @@ For the calibration you need one of the potentiometer Bricklets (Rotary Poti
 or Linear Poti). Connect it to a Brick and click on "Advanced Functions" in
 the Setup tab of Brick Viewer:
 
-.. image:: /Images/Screenshots/brickv_advanced_functions_calibrate.jpg
+.. image:: /Images/Screenshots/brickv_advanced_functions_calibrate_small.jpg
    :scale: 100 %
    :alt: Brickv (ADC Calibration)
    :align: center
+   :target: ../_images/Screenshots/brickv_advanced_functions_calibrate.jpg
 
-Choose the port your poti is connected to (A-D). 
+Choose the port your poti is connected to (A-D).
 Turn your poti completely to the left and press "Calibrate", then turn
 your poti completely to right and press "Calibrate" again. If your ADC
 wasn't calibrated well the gain and offset values should be different then
@@ -196,30 +197,83 @@ then one of the values has to change (after that you have to recalibrate,
 of course).
 
 
+.. _brickv_flash_firmware:
+
+Brick Firmware Flashing
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Flashing of Brick firmwares can be done with Brick Viewer sind version 1.1.0.
+The latest firmwares will be downloaded automatically and can be found
+:ref:`here <downloads_firmwares_plugins>` too.
+
+First bring the Brick into the bootloader modus. Press and hold the "Erase"
+button of the Brick and connect it via USB to your PC.
+The blue LED should be off. Now the Brick should be in the bootloader
+(based on your operating system some sort of Atmel device could be detected).
+
+Start the Brick Viewer and click "Flashing":
+
+.. image:: /Images/Screenshots/brickv_flashing_firmware_small.jpg
+   :scale: 100 %
+   :alt: Brickv (Brick Firmware)
+   :align: center
+   :target: ../_images/Screenshots/brickv_flashing_firmware.jpg
+
+A Brick in bootloader mode should show up as serial port.
+The "Serial Port" dropdown box shows all detected serial ports. If no port is
+listed try clicking "Refresh". If still no serial port shows up ensure that
+your Brick is in bootloader mode and that it is correctly recognized by your
+operating system.
+
+Select the correct serial port, select the firmware for your Brick and click
+"Save". Now the latest firmware will be downloaded and written to the Brick,
+then read back again and verified to be correctly written.
+A message box will pop up to inform you about the result.
+If the flash process failed, check if you have selected the correct serial port.
+
+Instead of letting the Brick Viewer download the latest firmware you can also
+select "Custom..." from the dropdown box and specify a local file via the
+"Browse..." button.
+
+.. note::
+ On Windows you might need to install Atmel driver "atm6124_cdc.inf" from the
+ drivers subdirectory in the Brick Viewer installation directory.
+
+ If you have an old Linux kernel you might need to install the kernel driver
+ from `here <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
+ (at the bottom: "SAM-BA Linux USB driver")
+
+
 .. _brickv_flash_plugin:
 
 Bricklet Plugin Flashing
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Flashing of Bricklet plugins into the EEPROM of the Bricklet is also
-possible in the advanced functions window. The latest plugins can
-be found :ref:`here <downloads_firmwares_plugins>`.
+Flashing of Bricklet plugins into the EEPROM of the Bricklet is
+possible in the flashing window. The latest plugins will be downloaded
+automatically and can be found :ref:`here <downloads_firmwares_plugins>` too.
 
 Connect a Brick (any Brick will do) via USB, start the Brick Viewer
-and, click "Connect" and then click "Advanced Functions":
+and, click "Connect" and then click "Flashing":
 
-.. image:: /Images/Screenshots/brickv_advanced_functions_plugin.jpg
+.. image:: /Images/Screenshots/brickv_flashing_plugin_small.jpg
    :scale: 100 %
-   :alt: Brickv (Bricklet Plugin)
+   :alt: Brickv (Brick Plugin)
    :align: center
+   :target: ../_images/Screenshots/brickv_flashing_plugin.jpg
 
-Now connect the Bricklet that is to be flashed to the Brick. Select
-the corresponding Brick and Port, click "Browse.." and select the firmware
-you want to flash. If you now press "Save", the plugin will be written
+Now connect the Bricklet that is to be flashed to the Brick and select
+the corresponding Brick and Port.
+Select the type of you Bricklet from the dropdown box. If you press "Save" now,
+the latest plugin will be downloaded and written
 to the EEPROM, then read again from the EEPROM and verified to be
-correctly written. A "Check OK" or "Check Failed" window will pop up.
-If the check failed, check if you selected the correct port and if the
-Bricklet is connected properly. 
+correctly written. A message box will pop up to inform you about the result.
+If the flash process failed, check if you selected the correct port and if the
+Bricklet is connected properly.
+
+Instead of letting the Brick Viewer download the latest plugin you can also
+select "Custom..." from the dropdown box and specify a local file via the
+"Browse..." button.
 
 You can also read the UID currently written on the Bricklet and set a
 new one. Note that the UID has to be in Base58 encoding

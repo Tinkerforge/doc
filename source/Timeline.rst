@@ -17,7 +17,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "21", "PHP bindings", "`done <http://www.tinkerforge.com/doc/index.html#bricks>`__"
    "22", "Ruby bindings", "`done <http://www.tinkerforge.com/doc/index.html#bricks>`__"
    "22", "iOS support", "`done <http://www.tinkerforge.com/doc/Software/API_Bindings.html#c-c-ios>`__"
-   "23", "Brick flashing support for Brick Viewer (No SAM-BA needed anymore)", "development"
+   "23", "Brick flashing support for Brick Viewer (No SAM-BA needed anymore)", "`done <http://www.tinkerforge.com/doc/Software/Brickv.html#brick-firmware-flashing>`__"
    "25", "RS485 Extension", "unstable"
    "27", "New programming language binding (probably Delphi)"
    "29", "New programming language binding"

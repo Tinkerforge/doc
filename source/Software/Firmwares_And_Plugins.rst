@@ -49,47 +49,14 @@ Build the firmware::
 
 Thats it. The build/ folder now contains the newly compiled firmware.
 
+
 .. _flash_firmware_on_brick:
 
 Flash firmware on a Brick
 -------------------------
 
-To flash a Brick firmware onto a Brick, you need to install SAM-BA
-and the SAM-BA Files from :ref:`here <downloads>`.
-
-Extract the SAM-BA Files into the SAM-BA directory, it adds two new
-bootloaders::
-
- at91sam3s2-brick
- at91sam3s4-brick
-
-Then bring the Brick into the bootloader modus. Press the "Erase" button of 
-the Brick and connect it afterwards via USB to your PC.
-The blue LED should be off. Now the Brick should be in the bootloader
-(based on your operating system some sort of Atmel device could be detected).
-
-Start SAM-BA, choose your connection and choose "at91sam3s4-brick" for the 
-Master Brick and "at91sam3s2-brick" for all other Bricks.
-Click connect, after this the blue LED should be on. 
-
-Select your firmware file (e.g.: "brick_servo_firmware_latest.bin")
-as "Send File Name" and click send.
-The newest version can be downloaded from :ref:`here <downloads_firmwares_plugins>`.
-
-Answer "Yes" to lock regions. At the end select "Boot from Flash (GPNVM1)"
-script and execute it. Power cycle the Brick and it should start with the 
-new firmware.
-
-.. note::
- If you have problems using SAM-BA on Linux, you should take a look at
- `this site <http://www.at91.com/linux4sam/bin/view/Linux4SAM/SoftwareTools>`__.
- It contains tips for older Linux versions and help for various
- distributions.
-
- Also, if you have an old Linux kernel you may need to install the kernel
- driver from 
- `here <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
- (at the bottom: "SAM-BA Linux USB driver ")
+See :ref:`brickv_flash_firmware` in :ref:`brickv` documentation for more
+information.
 
 
 Building a Bricklet plugin
@@ -142,5 +109,5 @@ Thats it. The build/ folder now contains the newly compiled plugin.
 Flash plugin on a Bricklet
 --------------------------
 
-See :ref:`brickv_flash_plugin` in :ref:`brickv` documentation for more 
+See :ref:`brickv_flash_plugin` in :ref:`brickv` documentation for more
 information.
