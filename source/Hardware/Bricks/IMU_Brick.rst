@@ -200,6 +200,51 @@ exhibits a `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__.
 A formula to transform quaternions to rotation matrices can be found in the
 API documentation.
 
+Note that Euler Angles always have an order in which they are applied. For
+example: You can't just use the yaw value of the Euler Angles and use it 
+as a compass. The same is true for the other angles.
+
+If you want this kind of data (i.e. an angle that is detached from the other
+angles) you can use quaternions to calculate it.
+
+For example, to get a compass without gimbal lock that is independent of the
+other angles you can do the following: Multiply the quaternions with a vector 
+facing in the y axis, take the x and y component from the result and calculate 
+the angle for the vector.
+
+To multiply a quaternion (q) with a 3d vector (v) you have to represent the
+vector as a quaternion with w=0 (v') and calculate: 
+
+.. math::
+ q\cdot v'\cdot q^{-1},
+
+where q^-1 is the conjugate of the quaternion. After that you can calculate the 
+angle with atan2.
+
+Pseudo code for this for all angles::
+
+	q = getQuaternion()
+	v1 = Vector3d(0, 0, 1)
+	v2 = q*v1
+	x_angle = atan2(v2.y, v2.z)
+
+	q = getQuaternion()
+	v1 = Vector3d(0, 0, 1)
+	v2 = q*v1
+	y_angle = atan2(v2.x, v2.z)
+
+	q = getQuaternion()
+	v1 = Vector3d(0, 1, 0)
+	v2 = q*v1
+	z_angle = atan2(v2.x, v2.y)
+
+All angles calculated and completely simplified::
+
+	x_angle = atan2(2*y*z - 2*x*w, w*w + z*z - x*x - y*y)*180/PI
+	y_angle = atan2(2*w*y + 2*x*z, w*w + z*z  -x*x - y*y)*180/PI
+	z_angle = atan2(-w*y + x*y + y*x - w*w, w*w + y*y - z*y - x*x)*180/PI
+
+
 What is this sourcery, how does it work?
 ----------------------------------------
 With the sensor data gathered by the IMU Brick (angular velocity, acceleration, 
