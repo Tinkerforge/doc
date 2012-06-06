@@ -198,52 +198,90 @@ in your project rather than euler angles (`roll, pitch and yaw
 exhibits a `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__.
 
 A formula to transform quaternions to rotation matrices can be found in the
-API documentation.
+API documentation. Note that Euler Angles always have an order in which they 
+are applied. The order is: roll, yaw, pitch.
 
-Note that Euler Angles always have an order in which they are applied. For
-example: You can't just use the yaw value of the Euler Angles and use it 
-as a compass. The same is true for the other angles.
+How to get angles that are independent?
+---------------------------------------
+Is is not possible to get angles for all 3 axis that are completely independent.
+At least at the gimbal lock positions there will be jumps of 180 degree for
+some of the angles. This is simply not possible otherwise.
 
-If you want this kind of data (i.e. an angle that is detached from the other
-angles) you can use quaternions to calculate it.
+If you want rotation angles for the x, y and z axis for a given base
+position, you have to rotate the quaternion according to your base
+position and calculate the angles after that. The followin Python example should
+do exactly that and it should be easy to understand and translate in other
+languages. Note that there are gimbal locks at +90 and -90 degree from each of the
+angles. The base position will be 0, 0, 0::
 
-For example, to get a compass without gimbal lock that is independent of the
-other angles you can do the following: Multiply the quaternions with a vector 
-facing in the y axis, take the x and y component from the result and calculate 
-the angle for the vector.
+	#!/usr/bin/env python
+	# -*- coding: utf-8 -*-  
 
-To multiply a quaternion (q) with a 3d vector (v) you have to represent the
-vector as a quaternion with w=0 (v') and calculate: 
+	from tinkerforge.ip_connection import IPConnection
+	from tinkerforge.brick_imu import IMU
 
-.. math::
- q\cdot v'\cdot q^{-1},
+	import math
+	import time
 
-where q^-1 is the conjugate of the quaternion. After that you can calculate the 
-angle with atan2.
+	class Q:
+		HOST = "localhost"
+		PORT = 4223
+		UID = "9yEBJVEHaem" # Change to your UID
 
-Pseudo code for this for all angles::
+		def __init__(self):
+			self.base_x = 0.0
+			self.base_y = 0.0
+			self.base_z = 0.0
+			self.base_w = 0.0
 
-	q = getQuaternion()
-	v1 = Vector3d(0, 0, 1)
-	v2 = q*v1
-	x_angle = atan2(v2.y, v2.z)
+			self.imu = IMU(self.UID) # Create device object
+			self.ipcon = IPConnection(self.HOST, self.PORT) # Create IPconnection to brickd
+			self.ipcon.add_device(self.imu) # Add device to IP connection
+			# Don't use device before it is added to a connection
 
-	q = getQuaternion()
-	v1 = Vector3d(0, 0, 1)
-	v2 = q*v1
-	y_angle = atan2(v2.x, v2.z)
+			# Wait for IMU to settle
+			print 'Set IMU to base position and wait for 10 seconds'
+			print 'Base position will be 0 for all angles'
+			time.sleep(10)
+			q = self.imu.get_quaternion()
+			self.set_base_coordinates(q.x, q.y, q.z, q.w)
 
-	q = getQuaternion()
-	v1 = Vector3d(0, 1, 0)
-	v2 = q*v1
-	z_angle = atan2(v2.x, v2.y)
+			# Set period for quaternion callback to 10ms
+			self.imu.set_quaternion_period(10)
 
-All angles calculated and completely simplified::
+			# Register quaternion callback
+			self.imu.register_callback(self.imu.CALLBACK_QUATERNION, self.quaternion_cb)
+		
+		def quaternion_cb(self, x, y, z, w):
+			# Use conjugate of quaternion to rotate coordinates according to base system
+			x, y, z, w = self.make_relative_coordinates(-x, -y, -z, w)
+			
+			x_angle = int(math.atan2(2.0*(y*z - w*x), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
+			y_angle = int(math.atan2(2.0*(x*z + w*y), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
+			z_angle = int(math.atan2(2.0*(x*y + w*z), 1.0 - 2.0*(x*x + z*z))*180/math.pi)
 
-	x_angle = atan2(2*y*z - 2*x*w, w*w + z*z - x*x - y*y)*180/PI
-	y_angle = atan2(2*w*y + 2*x*z, w*w + z*z  -x*x - y*y)*180/PI
-	z_angle = atan2(-w*y + x*y + y*x - w*w, w*w + y*y - z*y - x*x)*180/PI
+			print 'x: {0}, y: {1}, z: {2}'.format(x_angle, y_angle, z_angle)
 
+		def set_base_coordinates(self, x, y, z, w):
+			self.base_x = x
+			self.base_y = y
+			self.base_z = z
+			self.base_w = w
+
+		def make_relative_coordinates(self, x, y, z, w):
+			# Multiply base quaternion with current quaternion
+			return (
+				w * self.base_x + x * self.base_w + y * self.base_z - z * self.base_y,
+				w * self.base_y - x * self.base_z + y * self.base_w + z * self.base_x,
+				w * self.base_z + x * self.base_y - y * self.base_x + z * self.base_w,
+				w * self.base_w - x * self.base_x - y * self.base_y - z * self.base_z
+			)
+		
+	if __name__ == "__main__":
+		q = Q()
+
+		raw_input('Press key to exit\n') # Use input() in Python 3
+		q.ipcon.destroy()
 
 What is this sourcery, how does it work?
 ----------------------------------------
