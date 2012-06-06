@@ -203,7 +203,7 @@ are applied. The order is: roll, yaw, pitch.
 
 How to get angles that are independent?
 ---------------------------------------
-Is is not possible to get angles for all 3 axis that are completely independent.
+It is not possible to get angles for all 3 axis that are completely independent.
 At least at the gimbal lock positions there will be jumps of 180 degree for
 some of the angles. This is simply not possible otherwise.
 
