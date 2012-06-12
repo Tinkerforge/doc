@@ -16,9 +16,9 @@ class Example
 			System.Console.WriteLine("Device Removed:");
 		}
 
-		System.Console.WriteLine(" name:    " + name);
-		System.Console.WriteLine(" uid:     " + uid);
-		System.Console.WriteLine(" stackID: " + stackID);
+		System.Console.WriteLine(" Name:     " + name);
+		System.Console.WriteLine(" UID:      " + uid);
+		System.Console.WriteLine(" Stack ID: " + stackID);
 	}
 
 	static void Main() 
@@ -26,7 +26,8 @@ class Example
 		IPConnection ipcon = new IPConnection(host, port);
 		ipcon.Enumerate(new IPConnection.EnumerateCallback(EnumerateCB));
 
-		System.Console.WriteLine("Press ctrl+c to exit");
-		ipcon.JoinThread();
+		System.Console.WriteLine("Press key to exit");
+		System.Console.ReadKey();
+		ipcon.Destroy();
     }
 }
