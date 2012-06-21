@@ -83,6 +83,7 @@ Weight                            30.0g
 Number of I/Os                    2x8
 I/O voltages                      Switchable between 3.3V and 5V
 Maximum API Calls*                set_port (1khz), get_port (> 0.25khz), callback (1khz)
+Maximum Output Current            20mA
 ================================  ============================================================
 
 \* depends on your system (OS, CPU etc.)
