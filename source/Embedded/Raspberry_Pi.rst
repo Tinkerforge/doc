@@ -35,17 +35,17 @@ install it with the following commands::
  cd /home/pi
  sudo apt-get install python-twisted python-gudev libusb-1.0-0
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest.deb
- sudo dpkg -i brickd_latest.deb
+ sudo dpkg -i brickd_linux_latest.deb
 
  cd /home/pi
- sudo apt-get install python python-qt4 python-qwt5-qt4 python-matplotlib python-scipy python-opengl python-numpy python-qt4-gl
+ sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
- sudo dpkg -i brickv_latest.deb
+ sudo dpkg -i brickv_linux_latest.deb
 
 Access from outside
 -------------------
 
-You can use the Raspberry Pi to run the Brick Deamon and control the attached 
+You can use the Raspberry Pi to run the Brick Daemon and control the attached
 devices from the outside. For example you can use this to control stuff from 
 your mobile phone.
 
