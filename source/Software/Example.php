@@ -7,7 +7,7 @@ use Tinkerforge\IPConnection;
 $host = 'localhost';
 $port = 4223;
 
-function cb_enumerate($uid, $name, $stackID, $isNew)
+function enumerateCB($uid, $name, $stackID, $isNew)
 {
     if ($isNew) {
         echo "New device:\n";
@@ -22,7 +22,7 @@ function cb_enumerate($uid, $name, $stackID, $isNew)
 
 $ipcon = new IPConnection($host, $port); // Create IP connection to brickd
 
-$ipcon->enumerate('cb_enumerate'); // Enumerate Bricks and Bricklets
+$ipcon->enumerate('enumerateCB'); // Enumerate Bricks and Bricklets
 
 echo "Press ctrl+c to exit\n";
 $ipcon->dispatchCallbacks(-1); // Dispatch callbacks forever
