@@ -53,9 +53,9 @@ Linear Poti Bricklet
 Features
 --------
 
- * Outputs position of the slider
- * Configurable events
- * 59mm slide length
+* Outputs position of the slider
+* Configurable events
+* 59mm slide length
 
 
 

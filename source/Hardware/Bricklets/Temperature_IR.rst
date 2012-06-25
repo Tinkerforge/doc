@@ -42,11 +42,11 @@ Temperature IR Bricklet
 Features
 --------
 
- * Measures contactless object temperatures from -70°C to 380°C
- * Configurable emissivity
- * Measures ambient temperature (-40°C to +85°C)
- * Outputs temperatures in °C, unit 0.1°C
- * 17bit resolution
+* Measures contactless object temperatures from -70°C to 380°C
+* Configurable emissivity
+* Measures ambient temperature (-40°C to +85°C)
+* Outputs temperatures in °C, unit 0.1°C
+* 17bit resolution
 
 
 Description

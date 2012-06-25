@@ -43,9 +43,9 @@ LCD 16x2 Bricklet
 Features
 --------
 
- * Alphanumeric character display with 16x2 characters
- * Switchable blue backlight
- * 3 push buttons
+* Alphanumeric character display with 16x2 characters
+* Switchable blue backlight
+* 3 push buttons
 
 
 Description

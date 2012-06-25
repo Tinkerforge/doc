@@ -36,13 +36,13 @@ error code.
 
 Possible error codes are
 
- * E_OK = 0
- * E_TIMEOUT = -1
- * E_NO_STREAM_SOCKET = -2
- * E_HOSTNAME_INVALID = -3
- * E_NO_CONNECT = -4
- * E_NO_THREAD = -5
- * E_NOT_ADDED = -6
+* E_OK = 0
+* E_TIMEOUT = -1
+* E_NO_STREAM_SOCKET = -2
+* E_HOSTNAME_INVALID = -3
+* E_NO_CONNECT = -4
+* E_NO_THREAD = -5
+* E_NOT_ADDED = -6
 
 as defined in :file:`ip_connection.h`.
 

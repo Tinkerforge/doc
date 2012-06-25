@@ -43,9 +43,9 @@ LCD 20x4 Bricklet
 Features
 --------
 
- * Alphanumeric character display with 20x4 characters
- * Switchable blue backlight
- * 3 push buttons
+* Alphanumeric character display with 20x4 characters
+* Switchable blue backlight
+* 3 push buttons
 
 Description
 -----------

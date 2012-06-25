@@ -46,11 +46,11 @@ DC Brick
 Features
 --------
 
- * Drives one brushed DC motor with max 28V and 5A
- * Direction, velocity and acceleration controllable
- * Over-temperature and over-current events
- * Drive/Brake and Drive/Coast mode configurable
- * One USB port and two Bricklet ports
+* Drives one brushed DC motor with max 28V and 5A
+* Direction, velocity and acceleration controllable
+* Over-temperature and over-current events
+* Drive/Brake and Drive/Coast mode configurable
+* One USB port and two Bricklet ports
 
 
 Description
@@ -200,22 +200,22 @@ Drive Modes
 -----------
 
 There are two possible modes of motor controls:
- * Drive/Brake
+* Drive/Brake
 
-   In this mode the motor is always either driving or braking, there is no 
-   freewheeling possible. A more linear correlation between PWM and velocity 
-   is an advantage of this mode. 
-   Therefore it is possible to accelerate more precise. 
-   Typically motors can be driven with slower velocities in this mode.
-   Disadvantageous is a higher current consumption and a resulting faster
-   heat-up of the driver.
+  In this mode the motor is always either driving or braking, there is no 
+  freewheeling possible. A more linear correlation between PWM and velocity 
+  is an advantage of this mode. 
+  Therefore it is possible to accelerate more precise. 
+  Typically motors can be driven with slower velocities in this mode.
+  Disadvantageous is a higher current consumption and a resulting faster
+  heat-up of the driver.
 
- * Drive/Coast
+* Drive/Coast
 
-   In this mode the motor is either driving or freewheeling.
-   Advantageous is a lower current consumption and a resulting slower heat-up.
-   The control of the velocity and acceleration is less precise, it can
-   "lag behind".
+  In this mode the motor is either driving or freewheeling.
+  Advantageous is a lower current consumption and a resulting slower heat-up.
+  The control of the velocity and acceleration is less precise, it can
+  "lag behind".
 
 Error LED Sources
 -----------------

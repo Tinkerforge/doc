@@ -43,8 +43,8 @@ Piezo Buzzer Bricklet
 Features
 --------
 
- * Beeps with 1kHz frequency
- * Configurable beep duration
+* Beeps with 1kHz frequency
+* Configurable beep duration
 
 
 Description

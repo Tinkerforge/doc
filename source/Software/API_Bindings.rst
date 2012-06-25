@@ -109,24 +109,24 @@ should be easy to adjust this example for your needs.
 
 Start a new Xcode project by clicking on:
 
- * File
- * New
- * Project...
- * Choose iOS Application
- * Choose Single View Application
- * Click Next
- * Choose Product Name (e.g. Relay)
- * Click Next
- * Choose a Folder for the project
- * Click Create
+* File
+* New
+* Project...
+* Choose iOS Application
+* Choose Single View Application
+* Click Next
+* Choose Product Name (e.g. Relay)
+* Click Next
+* Choose a Folder for the project
+* Click Create
 
 Add the C/C++ bindings code:
 
- * Right click on the Relay folder in the Project navigator
- * New Group, choose name Tinkerforge
- * Right click on new Tinkerforge group
- * Add Files to "Relay"...
- * Choose all files from the bindings folder of the C/C++ bindings
+* Right click on the Relay folder in the Project navigator
+* New Group, choose name Tinkerforge
+* Right click on new Tinkerforge group
+* Add Files to "Relay"...
+* Choose all files from the bindings folder of the C/C++ bindings
 
 Below is a small example program that turns a relay on and off with a toggle button.
 
@@ -189,11 +189,10 @@ Now open MainStoryboard.storyboard in the Interface Builder and add a Label and
 a on/off Switch object as shown in the screenshot. The last step is to connect the
 Switch *Value Changed* event with the *toggleRelays* action:
 
- * Right click on the Switch
- * Click on the circle right of the Value Changed event
- * Drag a line to the First Responder
- * Choose toogleRelays from the action menu
-
+* Right click on the Switch
+* Click on the circle right of the Value Changed event
+* Drag a line to the First Responder
+* Choose toogleRelays from the action menu
 
 .. image:: /Images/Screenshots/ios_xcode_small.jpg
    :scale: 100 %

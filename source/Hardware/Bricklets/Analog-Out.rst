@@ -43,9 +43,9 @@ Analog Out Bricklet
 Features
 --------
 
- * Generates configurable voltages of up to 5V\*
- * 12bit resolution (1mV steps)
- * Configurable with load resistor to ground
+* Generates configurable voltages of up to 5V\*
+* 12bit resolution (1mV steps)
+* Configurable with load resistor to ground
 
 
 Description

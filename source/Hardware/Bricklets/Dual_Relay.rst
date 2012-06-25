@@ -48,8 +48,8 @@ Dual Relay Bricklet
 Features
 --------
 
- * 2 relays to switch AC/DC devices
- * Switches up to 250V/10A
+* 2 relays to switch AC/DC devices
+* Switches up to 250V/10A
 
 
 Description

@@ -51,9 +51,9 @@ Master Brick
 Features
 --------
 
- * Can be used to to build stacks
- * Usable with cable based and wireless extensions
- * One USB port and four Bricklet ports
+* Can be used to to build stacks
+* Usable with cable based and wireless extensions
+* One USB port and four Bricklet ports
 
 
 Description

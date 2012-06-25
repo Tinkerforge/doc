@@ -43,9 +43,9 @@ IO-4 Bricklet
 Features
 --------
 
- * 4 inputs and outputs
- * Fixed 3.3V logic voltage
- * Configurable pull-ups and interrupts
+* 4 inputs and outputs
+* Fixed 3.3V logic voltage
+* Configurable pull-ups and interrupts
 
 
 Description

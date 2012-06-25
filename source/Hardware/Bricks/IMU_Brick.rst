@@ -42,11 +42,11 @@ IMU Brick
 Features
 --------
 
- * 9 DOF: Full fledged attitude heading reference system
- * No accumulating errors, no gimbal lock!
- * Factory calibrated, easy to recalibrate
- * Calculates quaternions as well as roll, pitch and yaw.
- * One USB port and two Bricklet ports
+* 9 DOF: Full fledged attitude heading reference system
+* No accumulating errors, no gimbal lock!
+* Factory calibrated, easy to recalibrate
+* Calculates quaternions as well as roll, pitch and yaw.
+* One USB port and two Bricklet ports
 
 Description
 -----------

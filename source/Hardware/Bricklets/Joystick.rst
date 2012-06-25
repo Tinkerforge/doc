@@ -48,9 +48,9 @@ Joystick Bricklet
 Features
 --------
 
- * 2 axes joystick with push button
- * Outputs position
- * Configurable events
+* 2 axes joystick with push button
+* Outputs position
+* Configurable events
 
 
 Description

@@ -42,10 +42,10 @@ Current12 Bricklet
 Features
 --------
 
- * Measures currents up to 12 Ampere
- * Measures direction of current
- * Outputs current in Ampere
- * 12bit resolution
+* Measures currents up to 12 Ampere
+* Measures direction of current
+* Outputs current in Ampere
+* 12bit resolution
 
 
 Description

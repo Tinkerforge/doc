@@ -52,11 +52,11 @@ Servo Brick
 Features
 --------
 
- * Drives up to 7 RC Servos with max 3A
- * Drive brushless motors by additional external ESC
- * Software adjustable servo voltage, period and pulse width
- * Position, velocity and acceleration controllable
- * One USB port and two Bricklet ports
+* Drives up to 7 RC Servos with max 3A
+* Drive brushless motors by additional external ESC
+* Software adjustable servo voltage, period and pulse width
+* Position, velocity and acceleration controllable
+* One USB port and two Bricklet ports
 
 
 Description

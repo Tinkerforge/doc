@@ -27,8 +27,8 @@ Breakout Bricklet
 Features
 --------
 
- * Makes all Bricklet signals available
- * Not detected by Bricks
+* Makes all Bricklet signals available
+* Not detected by Bricks
 
 
 Description

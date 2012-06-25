@@ -48,10 +48,10 @@ Distance IR Bricklet
 Features
 --------
 
- * Measures distances up to 150cm
- * Sensor can be changed
- * Outputs distance in mm
- * 12bit resolution
+* Measures distances up to 150cm
+* Sensor can be changed
+* Outputs distance in mm
+* 12bit resolution
 
 
 Description

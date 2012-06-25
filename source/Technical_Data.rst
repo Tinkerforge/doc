@@ -13,8 +13,8 @@ Stack Connectors
 
 Each :ref:`Brick <product_overview_bricks>` has two connector types:
 
- * **Stack Data Connector:** Used for data exchange between Bricks.
- * **Stack Power Connector:** Powers the Bricks and attached Bricklets, motors, servos etc.
+* **Stack Data Connector:** Used for data exchange between Bricks.
+* **Stack Power Connector:** Powers the Bricks and attached Bricklets, motors, servos etc.
 
 .. _connector_stack_data:
 
@@ -46,52 +46,52 @@ All signals are 3.3V based.
 Description
 """""""""""
 
- * **Stack SPI** (HLPI/LLPI): SPI Bus for 
-   :ref:`Brick <product_overview_bricks>` <-> 
-   Master communication (:ref:`HLPI <pi_hlpi>`) 
-   or interfacing Bricks via SPI (:ref:`LLPI <pi_llpi>`).
- * **JTAG**: Debug Interface, shared with other signals. JTAG must
-   not be used when a Brick is stacked together with others.
- * **Reset**: Signal to reset a Brick, routed through a
-   stack such that all Bricks are reseted at the same time.
- * **Stack Detect** (HLPI): Signal to detect the presence of a 
-   :ref:`Master Brick <master_brick>`.
-   All Bricks except the Master Brick have the signals on top and bottom 
-   internally connected and check for a high signal (input pull down) to detect
-   stack operation. Master Bricks have two independent
-   signals for top and bottom side. Each Master Brick sets the top signal 
-   output high and the bottom to input pull down. If a low signal is detected on
-   the bottom, the Master Brick will act as a master for the stack. If a high
-   signal is detected, another Master Brick is below and will work as the
-   master of the stack.
- * **Stack Synchronization** (HLPI): This signal is used by a Master Brick to
-   synchronize the actions of other Bricks in a stack.
- * **Extension SPI** (HLPI) The SPI bus for Master <-> Master-Extensions 
-   communication.
- * **Extension General Purpose 0,1** (HLPI): Three general purpose signals can
-   be used by a Master Brick to control a Master-Extension. The usage depends on 
-   the connected Master-Extension.
- * **Interrupt 0,1,2** (LLPI): Interrupt outputs, usage depends on 
-   configuration.
- * **Stack-I2C** (HLPI/LLPI): I2C bus used by a Master to communicate with 
-   Extensions (HLPI) or to interface Bricks over I2C (LLPI).
- * **Select 0-7** (HLPI): Up to eight select lines can be used by a master of a
-   stack to select up to eight Bricks in the stack. A Brick is only permitted
-   to answer messages if it is selected (Select=low). Every Brick takes the 
-   first select signal of the bottom connector as its select. The other select 
-   lines are shifted, such that the second select signal of the bottom is the 
-   first select signal at the top, and so on. This method guarantees that the 
-   next eight Bricks on the top of a master have their own select lines. If 
-   more than eight Bricks would be connected to the master, only the lower 
-   eight Bricks can be selected and are able to communicate with the master.
- * **Extension Select 0,1** (HLPI): Used by a master to select up to two
-   Master-Extensions. These lines are shifted by Master-Extensions
-   (working like select lines of Bricks). Hence the two lowermost
-   Master-Extensions stacked on top of a master can be used.
- * **Extension Serial Interface** (HLPI/LLPI): Used by a master to communicate
-   with Master-Extensions via a serial interface (HLPI). Since every Brick
-   connects the RXD and TXD signals, a Brick can be controlled via this serial
-   interface when using LLPI.
+* **Stack SPI** (HLPI/LLPI): SPI Bus for
+  :ref:`Brick <product_overview_bricks>` <->
+  Master communication (:ref:`HLPI <pi_hlpi>`)
+  or interfacing Bricks via SPI (:ref:`LLPI <pi_llpi>`).
+* **JTAG**: Debug Interface, shared with other signals. JTAG must
+  not be used when a Brick is stacked together with others.
+* **Reset**: Signal to reset a Brick, routed through a
+  stack such that all Bricks are reseted at the same time.
+* **Stack Detect** (HLPI): Signal to detect the presence of a
+  :ref:`Master Brick <master_brick>`.
+  All Bricks except the Master Brick have the signals on top and bottom
+  internally connected and check for a high signal (input pull down) to detect
+  stack operation. Master Bricks have two independent
+  signals for top and bottom side. Each Master Brick sets the top signal
+  output high and the bottom to input pull down. If a low signal is detected on
+  the bottom, the Master Brick will act as a master for the stack. If a high
+  signal is detected, another Master Brick is below and will work as the
+  master of the stack.
+* **Stack Synchronization** (HLPI): This signal is used by a Master Brick to
+  synchronize the actions of other Bricks in a stack.
+* **Extension SPI** (HLPI) The SPI bus for Master <-> Master-Extensions
+  communication.
+* **Extension General Purpose 0,1** (HLPI): Three general purpose signals can
+  be used by a Master Brick to control a Master-Extension. The usage depends on
+  the connected Master-Extension.
+* **Interrupt 0,1,2** (LLPI): Interrupt outputs, usage depends on
+  configuration.
+* **Stack-I2C** (HLPI/LLPI): I2C bus used by a Master to communicate with
+  Extensions (HLPI) or to interface Bricks over I2C (LLPI).
+* **Select 0-7** (HLPI): Up to eight select lines can be used by a master of a
+  stack to select up to eight Bricks in the stack. A Brick is only permitted
+  to answer messages if it is selected (Select=low). Every Brick takes the
+  first select signal of the bottom connector as its select. The other select
+  lines are shifted, such that the second select signal of the bottom is the
+  first select signal at the top, and so on. This method guarantees that the
+  next eight Bricks on the top of a master have their own select lines. If
+  more than eight Bricks would be connected to the master, only the lower
+  eight Bricks can be selected and are able to communicate with the master.
+* **Extension Select 0,1** (HLPI): Used by a master to select up to two
+  Master-Extensions. These lines are shifted by Master-Extensions
+  (working like select lines of Bricks). Hence the two lowermost
+  Master-Extensions stacked on top of a master can be used.
+* **Extension Serial Interface** (HLPI/LLPI): Used by a master to communicate
+  with Master-Extensions via a serial interface (HLPI). Since every Brick
+  connects the RXD and TXD signals, a Brick can be controlled via this serial
+  interface when using LLPI.
 
 
 .. _connector_stack_power:
@@ -125,21 +125,21 @@ Stack Power Connector
 Description
 """""""""""
 
- * **PGND**: Stack power ground signal.
- * **PVCC**: Stack power signal (max. 27V), powered by 
-   :ref:`Power Supplies <product_overview_powersupplies>`.
- * **GND**: Common ground signal.
- * **5V**: 5V power supply, powered by every Brick (per USB) or power supply
-   boards. Since the USB voltage depends on your PC/USB hub, the 5V
-   on this rail can not be guaranteed.
- * **3V3**: Powered by every Brick. Created with on board DC/DC power supplies 
-   (5V -> 3V3).
- * **Current**: Signal to measure the current flow created by
-   :ref:`Power Supply <product_overview_powersupplies>` (max. 3.3V). Can be
-   measured by Master Bricks.
- * **Voltage**: Signal to measure the voltage of an external power supply
-   connected to a :ref:`Power Supply <product_overview_powersupplies>`
-   (max. 3.3V). Can be measured by Master Bricks.
+* **PGND**: Stack power ground signal.
+* **PVCC**: Stack power signal (max. 27V), powered by
+  :ref:`Power Supplies <product_overview_powersupplies>`.
+* **GND**: Common ground signal.
+* **5V**: 5V power supply, powered by every Brick (per USB) or power supply
+  boards. Since the USB voltage depends on your PC/USB hub, the 5V
+  on this rail can not be guaranteed.
+* **3V3**: Powered by every Brick. Created with on board DC/DC power supplies
+  (5V -> 3V3).
+* **Current**: Signal to measure the current flow created by
+  :ref:`Power Supply <product_overview_powersupplies>` (max. 3.3V). Can be
+  measured by Master Bricks.
+* **Voltage**: Signal to measure the voltage of an external power supply
+  connected to a :ref:`Power Supply <product_overview_powersupplies>`
+  (max. 3.3V). Can be measured by Master Bricks.
 
 
 .. _connector_bricklet:

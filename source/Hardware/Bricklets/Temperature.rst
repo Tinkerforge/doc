@@ -43,10 +43,10 @@ Temperature Bricklet
 Features
 --------
 
- * Measures ambient temperature with 0.5°C accuracy
- * Temperature range -40°C to 125°C
- * Output temperature in °C, unit 0.1°C
- * 12bit resolution
+* Measures ambient temperature with 0.5°C accuracy
+* Temperature range -40°C to 125°C
+* Output temperature in °C, unit 0.1°C
+* 12bit resolution
 
 
 Description

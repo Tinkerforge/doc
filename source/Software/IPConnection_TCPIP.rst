@@ -30,9 +30,9 @@ The TCP/IP protocol is based on packets transfered between host and stack. Each
 packet starts with a 4 byte header followed by a payload of variable length. The
 header consists of 3 unsigned integers:
 
- * stack ID as uint8 (1 byte),
- * function ID as uint8 (1 byte) and
- * packet length as uint16 (2 bytes).
+* stack ID as uint8 (1 byte),
+* function ID as uint8 (1 byte) and
+* packet length as uint16 (2 bytes).
 
 The meaning of the *stack ID* depends on the transfer direction of the packet.
 If the packet is send from host to stack (request packet) then the stack ID
@@ -77,13 +77,13 @@ To resolve a known UID to the corresponding stack ID the
 :tcpip:func:`get_stack_id <IPConnection.get_stack_id>` function can be used.
 The corresponding request packet that you need to send has
 
- * stack ID 0 as uint8 (0x00),
- * function ID 255 as uint8 (0xff) and
- * packet length 12 as uint16 (0x0c 0x00).
+* stack ID 0 as uint8 (0x00),
+* function ID 255 as uint8 (0xff) and
+* packet length 12 as uint16 (0x0c 0x00).
 
 The payload contains the
 
- * UID 3904673860505581361 as uint64 (0x31 0x37 0x30 0x33 0x30 0x30 0x30 0x36).
+* UID 3904673860505581361 as uint64 (0x31 0x37 0x30 0x33 0x30 0x30 0x30 0x36).
 
 This is an example UID of a Brick and needs to be replaced with the actual UID of your
 device. The UID is shown as integer here to emphasis that the TCP/IP protocol
@@ -105,16 +105,16 @@ this amount of time you can assume that there is no device with the given UID.
 The :tcpip:func:`get_stack_id <IPConnection.get_stack_id>` response packet from
 the Master Brick has
 
- * stack ID 0 as uint8 (0x00),
- * function ID 255 as uint8 (0xff) and
- * packet length 56 as uint16 (0x38 0x00).
+* stack ID 0 as uint8 (0x00),
+* function ID 255 as uint8 (0xff) and
+* packet length 56 as uint16 (0x38 0x00).
 
 The payload contains
 
- * device UID 3904673860505581361 as uint64 (0x31 0x37 0x30 0x33 0x30 0x30 0x30 0x36),
- * device firmware version 1.1.7 as uint8[3] (0x01 0x01 0x07)
- * device name "Master Brick 1.0" as char[40] (0x4d 0x61 ... 0x30 0x00 ... 0x00) and
- * device stack ID 1 as uint8 (0x01).
+* device UID 3904673860505581361 as uint64 (0x31 0x37 0x30 0x33 0x30 0x30 0x30 0x36),
+* device firmware version 1.1.7 as uint8[3] (0x01 0x01 0x07)
+* device name "Master Brick 1.0" as char[40] (0x4d 0x61 ... 0x30 0x00 ... 0x00) and
+* device stack ID 1 as uint8 (0x01).
 
 The hex dump of the packet looks like this::
 
@@ -127,13 +127,13 @@ Bricklets typically have UIDs with much smaller values compared to the UIDs of
 Bricks. A request packet for the :tcpip:func:`get_stack_id <IPConnection.get_stack_id>`
 function for a Bricklet with UID 21238 has
 
- * stack ID 0 as uint8 (0x00),
- * function ID 255 as uint8 (0xff) and
- * packet length 12 as uint16 (0x0c 0x00).
+* stack ID 0 as uint8 (0x00),
+* function ID 255 as uint8 (0xff) and
+* packet length 12 as uint16 (0x0c 0x00).
 
 The payload contains the
 
- * UID 21238 as uint64 (0xf6 0x52 0x00 0x00 0x00 0x00 0x00 0x00).
+* UID 21238 as uint64 (0xf6 0x52 0x00 0x00 0x00 0x00 0x00 0x00).
 
 The hex dump of this request packet looks like this::
 
@@ -146,9 +146,9 @@ The :tcpip:func:`enumerate <IPConnection.enumerate>` function can be used to rec
 information about all connected devices. The corresponding request packet
 has
 
- * stack ID 0 as uint8 (0x00),
- * function ID 254 as uint8 (0xfe),
- * packet length 4 as uint16 (0x04 0x00)
+* stack ID 0 as uint8 (0x00),
+* function ID 254 as uint8 (0xfe),
+* packet length 4 as uint16 (0x04 0x00)
 
 and an empty payload. Its hex dump looks like this::
 
@@ -159,16 +159,16 @@ There is no response packet for this function, but as a reaction the
 triggered for each connected device, in this example, a Master Brick and a
 Linear Poti Bricklet. The callback response packet for the Master Brick has
 
- * stack ID 0 as uint8 (0x00),
- * function ID 253 as uint8 (0xfd) and
- * packet length 54 as uint16 (0x36 0x00).
+* stack ID 0 as uint8 (0x00),
+* function ID 253 as uint8 (0xfd) and
+* packet length 54 as uint16 (0x36 0x00).
 
 The payload contains
 
- * device UID 3904673860505581361 as uint64 (0x31 0x37 0x30 0x33 0x30 0x30 0x30 0x36),
- * device name "Master Brick 1.0" as char[40] (0x4d 0x61 ... 0x30 0x00 ... 0x00),
- * device stack ID 1 as uint8 (0x01) and
- * is-new set to true as uint8 (0x01).
+* device UID 3904673860505581361 as uint64 (0x31 0x37 0x30 0x33 0x30 0x30 0x30 0x36),
+* device name "Master Brick 1.0" as char[40] (0x4d 0x61 ... 0x30 0x00 ... 0x00),
+* device stack ID 1 as uint8 (0x01) and
+* is-new set to true as uint8 (0x01).
 
 The hex dump of the packet looks like this::
 
@@ -179,16 +179,16 @@ The hex dump of the packet looks like this::
 
 The callback response packet for the Linear Poti Bricklet has
 
- * stack ID 0 as uint8 (0x00),
- * function ID 253 as uint8 (0xfd) and
- * packet length 54 as uint16 (0x36 0x00).
+* stack ID 0 as uint8 (0x00),
+* function ID 253 as uint8 (0xfd) and
+* packet length 54 as uint16 (0x36 0x00).
 
 The payload contains
 
- * device UID 21238 as uint64 (0xf6 0x52 0x00 0x00 0x00 0x00 0x00 0x00),
- * device name "Linear Poti Bricklet 1.0" as char[40] (0x4c 0x69 ... 0x30 0x00 ... 0x00),
- * device stack ID 2 as uint8 (0x02) and
- * is-new set to true as uint8 (0x01).
+* device UID 21238 as uint64 (0xf6 0x52 0x00 0x00 0x00 0x00 0x00 0x00),
+* device name "Linear Poti Bricklet 1.0" as char[40] (0x4c 0x69 ... 0x30 0x00 ... 0x00),
+* device stack ID 2 as uint8 (0x02) and
+* is-new set to true as uint8 (0x01).
 
 The hex dump of the packet looks like this::
 
@@ -213,9 +213,9 @@ The following example shows how to call the
 :tcpip:func:`get_humidity <Humidity.get_humidity>` function of a Humidity
 Bricklet with stack ID 3. The corresponding request packet has
 
- * stack ID 3 as uint8 (0x03),
- * function ID 1 as uint8 (0x01),
- * packet length 4 as uint16 (0x04 0x00)
+* stack ID 3 as uint8 (0x03),
+* function ID 1 as uint8 (0x01),
+* packet length 4 as uint16 (0x04 0x00)
 
 and an empty payload. Its hex dump looks like this::
 
@@ -225,13 +225,13 @@ The corresponding response packet can be identified by the stack ID and
 function ID field as they will have the same values as the request packet.
 The response packet has
 
- * stack ID 3 as uint8 (0x03),
- * function ID 1 as uint8 (0x01),
- * packet length 6 as uint16 (0x06 0x00)
+* stack ID 3 as uint8 (0x03),
+* function ID 1 as uint8 (0x01),
+* packet length 6 as uint16 (0x06 0x00)
 
 The payload contains the
 
- * humidity 421 as uint16 (0xa5 0x01).
+* humidity 421 as uint16 (0xa5 0x01).
 
 A humidity value of 421 means 42.1 %RH and is just an example. The hex dump of
 the packet looks like this::
@@ -268,15 +268,15 @@ callback of the IMU Brick (with stack ID 5) can be enabled with a call to
 :tcpip:func:`IMU.set_acceleration_period` with a period larger 0. Afterwards
 you will periodically receive response packets with
 
- * stack ID 5 as uint8 (0x05),
- * function ID 31 as uint8 (0x1f) and
- * packet length 10 as uint16 (0x0a 0x00).
+* stack ID 5 as uint8 (0x05),
+* function ID 31 as uint8 (0x1f) and
+* packet length 10 as uint16 (0x0a 0x00).
 
 The payload contains
 
- * x 269 as int16 (0x0d 0x01),
- * y 184 as int16 (0xb8 0x00) and
- * z 357 as int16 (0x65 0x01)
+* x 269 as int16 (0x0d 0x01),
+* y 184 as int16 (0xb8 0x00) and
+* z 357 as int16 (0x65 0x01)
 
 representing the magnetic field and is just an example.
 The hex dump of the packet looks like this::

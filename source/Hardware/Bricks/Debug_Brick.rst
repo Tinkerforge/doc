@@ -36,8 +36,8 @@ Debug Brick
 Features
 --------
 
- * For Firmware Developers
- * JTAG and serial interface
+* For Firmware Developers
+* JTAG and serial interface
 
 
 Description

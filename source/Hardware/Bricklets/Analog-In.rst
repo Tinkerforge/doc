@@ -42,10 +42,10 @@ Analog In Bricklet
 Features
 --------
 
- * Measures voltages of up to 45V
- * Read out measured voltage in mV
- * High resolution up to 1.48mV
- * Configurable events
+* Measures voltages of up to 45V
+* Read out measured voltage in mV
+* High resolution up to 1.48mV
+* Configurable events
 
 
 Description

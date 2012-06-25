@@ -42,9 +42,9 @@ Voltage Bricklet
 Features
 --------
 
- * Measures voltages up to 50V
- * Outputs voltage in mV, resolution 12bit
- * Configurable events
+* Measures voltages up to 50V
+* Outputs voltage in mV, resolution 12bit
+* Configurable events
 
 
 Description

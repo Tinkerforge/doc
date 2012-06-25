@@ -41,8 +41,8 @@ Click on the downloaded file, this should open the installer:
 
 You can choose the actions of the installer:
 
- * **Install Brickd Program** will copy the program files
- * **Register Brickd Service** will install it as a Windows service
+* **Install Brickd Program** will copy the program files
+* **Register Brickd Service** will install it as a Windows service
 
 Typically you want the installer to perform both tasks.
 Click on "Next" to start the installation process.
@@ -229,16 +229,16 @@ Checking installed version
 Since Brick Daemon version 1.0.8 you can check which Brick Daemon is currently
 installed with the `--version` commandline argument:
 
- * Windows:
+* Windows:
 
-   .. code-block:: none
+  .. code-block:: none
 
-     "C:\Program Files\Tinkerforge\Brickd\brickd_windows.exe" --version
+    "C:\Program Files\Tinkerforge\Brickd\brickd_windows.exe" --version
 
- * Linux::
+* Linux::
 
-    brickd --version
+   brickd --version
 
- * Mac OS X::
+* Mac OS X::
 
-    /usr/libexec/brickd.app/Contents/MacOS/brickd_macosx --version
+   /usr/libexec/brickd.app/Contents/MacOS/brickd_macosx --version

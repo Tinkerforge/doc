@@ -32,10 +32,10 @@ Chibi Extension
 Features
 --------
 
- * 700/800/900Mhz radio transceiver
- * Allows wireless interconnection between stacks
- * Configurable frequency and channel
- * Measurable signal strength
+* 700/800/900Mhz radio transceiver
+* Allows wireless interconnection between stacks
+* Configurable frequency and channel
+* Measurable signal strength
 
 Description
 -----------
