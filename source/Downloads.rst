@@ -31,8 +31,8 @@ Tools
  :delim: |
  :widths: 20, 30, 60
 
- **Brick Daemon** | `deb <http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest.deb>`__, rpm*, `dmg <http://download.tinkerforge.com/tools/brickd/macos/brickd_latest.dmg>`__, `exe <http://download.tinkerforge.com/tools/brickd/windows/brickd_windows_latest.exe>`__, `src <https://github.com/Tinkerforge/brickd>`__ | For Linux (.deb based, .rpm based), Mac OS, Windows and Source Code. [:ref:`Installation Instructions <brickd>`]
- **Brick Viewer** | `deb <http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb>`__, rpm*, `dmg <http://download.tinkerforge.com/tools/brickv/macos/brickv_latest.dmg>`__, `exe <http://download.tinkerforge.com/tools/brickv/windows/brickv_windows_latest.exe>`__, `src <https://github.com/Tinkerforge/brickv>`__ | For Linux (.deb based, .rpm based), Mac OS, Windows and Source Code. [:ref:`Installation Instructions <brickv>`]
+ **Brick Daemon** | `deb <http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest.deb>`__, rpm*, `dmg <http://download.tinkerforge.com/tools/brickd/macos/brickd_macos_latest.dmg>`__, `exe <http://download.tinkerforge.com/tools/brickd/windows/brickd_windows_latest.exe>`__, `src <https://github.com/Tinkerforge/brickd>`__ | For Linux (.deb based, .rpm based), Mac OS, Windows and Source Code. [:ref:`Installation Instructions <brickd>`]
+ **Brick Viewer** | `deb <http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb>`__, rpm*, `dmg <http://download.tinkerforge.com/tools/brickv/macos/brickv_macos_latest.dmg>`__, `exe <http://download.tinkerforge.com/tools/brickv/windows/brickv_windows_latest.exe>`__, `src <https://github.com/Tinkerforge/brickv>`__ | For Linux (.deb based, .rpm based), Mac OS, Windows and Source Code. [:ref:`Installation Instructions <brickv>`]
 
 You will need the Brick Daemon if you want to use any Bricks and Bricklets.
 The Brick Viewer is for testing purposes and flashing new firmwares and plugins
