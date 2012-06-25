@@ -19,7 +19,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "22", "iOS support", "`done <http://www.tinkerforge.com/doc/Software/API_Bindings.html#c-c-ios>`__"
    "23", "Brick flashing support for Brick Viewer (No SAM-BA needed anymore)", "`done <http://www.tinkerforge.com/doc/Software/Brickv.html#brick-firmware-flashing>`__"
    "26", "RS485 Extension", "Communication stable, needs testing and documentation"
-   "27", "New programming language binding (probably Delphi)"
+   "27", "New programming language binding (probably Delphi)", "prototype"
    "29", "New programming language binding"
    "31", "WIFI Extension", "prototype"
    "33", "New Bricklet (probably Current Bricklet)", "prototype"
