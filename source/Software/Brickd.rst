@@ -40,9 +40,9 @@ Click on the downloaded file, this should open the installer:
    :target: ../_images/Screenshots/brickd_windows_1.jpg
 
 You can choose the actions of the installer:
- 
- * **Install Brickd Programm** will copy the program files
- * **Install Brickd Service** will install it as a Windows service
+
+ * **Install Brickd Program** will copy the program files
+ * **Register Brickd Service** will install it as a Windows service
 
 Typically you want the installer to perform both tasks.
 Click on "Next" to start the installation process.
@@ -101,7 +101,7 @@ Choose the driver location manually.
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_3.jpg
 
-You will find them in your Brickd programm directory in the "drivers" folder.
+You will find them in your Brickd program directory in the "drivers" folder.
 
 .. image:: /Images/Screenshots/brickd_windows_driver_4_small.jpg
    :scale: 100 %
@@ -221,3 +221,24 @@ If for some reason brickd doesn't run or it has crashed, you can start it
 from the terminal with::
 
  sudo launchctl start com.tinkerforge.brickd
+
+
+Checking installed version
+--------------------------
+
+Since Brick Daemon version 1.0.8 you can check which Brick Daemon is currently
+installed with the `--version` commandline argument:
+
+ * Windows:
+
+   .. code-block:: none
+
+     "C:\Program Files\Tinkerforge\Brickd\brickd_windows.exe" --version
+
+ * Linux::
+
+    brickd --version
+
+ * Mac OS X::
+
+    /usr/libexec/brickd.app/Contents/MacOS/brickd_macosx --version
