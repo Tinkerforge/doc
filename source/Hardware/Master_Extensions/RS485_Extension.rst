@@ -23,6 +23,15 @@ RS485 Extension
 	}}
 	{{ tfdocend() }}
 
+
+Features
+--------
+
+ * Long distance connections (up to 1200m)
+ * Allows wired interconnection between stacks
+ * Configurable baud rate, parity and stop bits
+ * Can be used in existing RS485 networks (Modbus RTU)
+
 Description
 -----------
 
@@ -40,49 +49,45 @@ be used exactly the same way as if they were both connected via USB.
 It is also possible to create a bus with several RS485 Extension where
 only one is connected via USB (many-to-one routing).
 
-
-.. note:: Coming soon! 
-   The RS485 Extension is not yet available to buy.
-
-..
-	Technical Specifications
-	------------------------
-
-	================================  ============================================================
-	Property                          Value
-	================================  ============================================================
-	Device Current Consumption        TBD
-	Maximum Baud Rate                 TBD
-	--------------------------------  ------------------------------------------------------------
-	--------------------------------  ------------------------------------------------------------
-	Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
-	Weight                            13g
-	================================  ============================================================
+`Modbus RTU <http://en.wikipedia.org/wiki/Modbus>`__ is used as the
+protocol on the RS485 interface. This allows to use a stack of Bricks
+and Bricklets with an RS485 Extension to be integrated in existing
+Modbus networks. It is also possible to communicate with a stack
+directly via Modbus from an embedded device or over a Modbus gateway.
 
 
-	Resources
-	---------
+Technical Specifications
+------------------------
 
-	* Schematic (Download)
-	* Outline and drilling plan (`Download <../../_images/Dimensions/rs485_extension_dimensions.png>`__)
-	* Project source code and design files (Download)
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Device Current Consumption        TBD
+Maximum Baud Rate                 2Mbit
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
+Weight                            13g
+================================  ============================================================
 
 
-.. RS485 Bus Assembly
-  ------------------
-  * Picture Bus
-  * explain termination
+Resources
+---------
+
+* Schematic (Download)
+* Outline and drilling plan (`Download <../../_images/Dimensions/rs485_extension_dimensions.png>`__)
+* Project source code and design files (Download)
 
 
-.. Connectivity
-  ------------
-  The following picture depicts the different connection possibilities of the 
-  485-Extension.
-  .. image:: /Images/Bricks/Servo_Brick/servo_brick_anschluesse.jpg
-   :scale: 100 %
-   :alt: alternate text
-   :align: center
+RS485 Bus Assembly
+------------------
 
-.. Troubleshoot
-   ------------
+* Coming Soon
 
+
+Connectivity
+------------
+The following picture depicts the different connection possibilities of the 
+485-Extension.
+
+* Coming Soon
