@@ -22,6 +22,7 @@ public class Example {
 				System.out.println(" Name:     " + name);
 				System.out.println(" UID:      " + uid);
 				System.out.println(" Stack ID: " + stackID);
+				System.out.println("");
 			}
 		});
 

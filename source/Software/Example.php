@@ -18,6 +18,7 @@ function enumerateCB($uid, $name, $stackID, $isNew)
     echo " Name:     $name\n";
     echo " UID:      $uid\n";
     echo " Stack ID: $stackID\n";
+    echo "\n";
 }
 
 $ipcon = new IPConnection($host, $port); // Create IP connection to brickd
