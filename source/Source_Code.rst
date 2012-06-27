@@ -71,6 +71,7 @@ bug tracker.
  | |
  **Master Extensions** | |
  Chibi Extension | `git://github.com/Tinkerforge/chibi-extension.git <https://github.com/Tinkerforge/chibi-extension/>`__ | `Report Bug <https://github.com/Tinkerforge/chibi-extension/issues>`__
+ RS485 Extension | `git://github.com/Tinkerforge/rs485-extension.git <https://github.com/Tinkerforge/rs485-extension/>`__ | `Report Bug <https://github.com/Tinkerforge/rs485-extension/issues>`__
  | |
  **Power Supplies** | |
  Step-Down Power Supply | `git://github.com/Tinkerforge/step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Report Bug <https://github.com/Tinkerforge/step-down-powersupply/issues>`__

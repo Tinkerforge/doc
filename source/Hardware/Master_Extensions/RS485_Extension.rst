@@ -9,17 +9,17 @@ RS485 Extension
 	{{ 
 	    tfdocstart("Extensions/extension_rs485_tilted_350.jpg", 
 	             "Extensions/extension_rs485_tilted_600.jpg", 
-	             "Chibi Extension") 
+	             "RS485 Extension") 
 	}}
 	{{ 
 	    tfdocimg("Extensions/extension_rs485_top_100.jpg", 
 	             "Extensions/extension_rs485_top_600.jpg", 
-	             "Chibi Extension") 
+	             "RS485 Extension") 
 	}}
 	{{ 
 	    tfdocimg("Extensions/extension_rs485_bottom_100.jpg", 
 	             "Extensions/extension_rs485_bottom_600.jpg", 
-	             "Chibi Extension") 
+	             "RS485 Extension") 
 	}}
 	{{ tfdocend() }}
 
@@ -74,9 +74,10 @@ Weight                            13g
 Resources
 ---------
 
-* Schematic (Download)
+* Schematic (`Download <https://github.com/Tinkerforge/rs485-extension/raw/master/hardware/rs485-extension-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/rs485_extension_dimensions.png>`__)
-* Project source code and design files (Download)
+* Project source code and design files (`Download <https://github.com/Tinkerforge/rs485-extension>`__)
+* RS485 IC Datasheet (`Download <https://github.com/Tinkerforge/rs485-extension/blob/master/datasheets/ADM3485.pdf>`__)
 
 
 RS485 Bus Assembly
