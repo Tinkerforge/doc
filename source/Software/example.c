@@ -26,8 +26,10 @@ int main() {
 		exit(1);
 	}
 
+	// Enumerate Bricks and Bricklets
 	ipcon_enumerate(&ipcon, cb_enumerate);
 
-	printf("Press ctrl+c to close\n");
-	ipcon_join_thread(&ipcon); // Join mainloop of IP connection
+	printf("Press key to exit\n");
+	getchar();
+	ipcon_destroy(&ipcon);
 }
