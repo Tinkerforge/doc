@@ -157,8 +157,8 @@ the slave (1-255).
    :align: center
    :target: ../../_images/Extensions/extension_rs485_slave.jpg
 
-For master configuration choose "Master" and as type and input the addresses
-of the slaves in the network as a comma separated list.
+For master configuration choose "Master" as type and input the addresses
+of the slaves in the RS485 bus as a comma separated list.
 
 .. image:: /Images/Extensions/extension_rs485_master.jpg
    :scale: 100 %
