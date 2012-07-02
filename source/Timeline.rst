@@ -21,7 +21,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "26", "RS485 Extension", "`done <https://shop.tinkerforge.com/master-extensions/rs485-master-extension.html>`__"
    "27", "New programming language binding (probably Delphi)", "prototype"
    "29", "New programming language binding"
-   "31", "WIFI Extension", "prototype"
+   "32", "WIFI Extension", "prototype"
    "33", "New Bricklet (probably Current Bricklet)", "prototype"
    "34", "Introduction of Tinkerforge Industrial Bricklets"
    "35", "New Bricklet (probably GPS)", "prototype"
