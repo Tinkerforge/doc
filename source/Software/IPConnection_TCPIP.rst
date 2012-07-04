@@ -70,6 +70,8 @@ function on the connected devices you need to know their stack IDs.
 Discovering those stack IDs is the second phase. In the third phase you can
 call specific functions on the connected devices.
 
+.. _ipcon_tcpip_resolve_uid:
+
 Resolve UID to Stack ID
 """""""""""""""""""""""
 
