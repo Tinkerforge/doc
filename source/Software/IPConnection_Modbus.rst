@@ -90,7 +90,7 @@ Communication
 ^^^^^^^^^^^^^
 
 Before you can call any functions on the connected devices, you need to
-trigger the enumeration of the stacks, after that you can to discover 
+trigger the enumeration of the stacks, after that you can discover 
 which UID belongs to which stack ID. The Modbus addresses of the stacks 
 have to be known in beforehand, they can not be discovered.
 
