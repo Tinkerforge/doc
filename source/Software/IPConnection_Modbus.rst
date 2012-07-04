@@ -21,18 +21,18 @@ be done with the Brick Viewer and are stored on the EEPROM of the
 RS485 extension.
 
 The protocol used on the RS485 Extension is modeled after the concept of 
-a function call. A request packet is send by the RS485 Master to the stack 
+a function call. A request packet is send by the RS485 master to the stack
 with RS485 Extension to trigger the  execution of a function on a selected
 Brick or Bricklet. 
 The stack answers with either a response (which can be the response of
 an older function call, a response to this function call or a callback) or
 a packet with an empty payload. If the answer by the RS485 slave was not
-empty, the RS485 Master has to send an empty packet back (ack).
+empty, the RS485 master has to send an empty packet back (ACK).
 
 Packet Layout
 ^^^^^^^^^^^^^
 
-The Modbus protocol is based on packets transfered between a RS485 Master and
+The Modbus protocol is based on packets transfered between a RS485 master and
 potentially many RS485 Slaves. Each packet consists of:
 
 * Modbus address as uint8 (1 byte),
@@ -50,9 +50,9 @@ between 1 and 255. A message to a stack and responses from this stack will
 use this Modbus address.
 
 As the *Modbus function* we use the public function code 100 in all packets
-(see Modbus Application Protocol V1.1b chapter 5 "Function Code Categories).
+(see Modbus Application Protocol V1.1b chapter 5 "Function Code Categories").
 
-The *Sequence number* is incremented by the RS485 Master and it is used to
+The *Sequence number* is incremented by the RS485 master and it is used to
 make sure that every request gets a response.
 
 The meaning of the *stack ID* depends on the transfer direction of the packet.
@@ -66,8 +66,8 @@ device specified by the stack ID.
 In a response packet the function ID specifies from which function or callback
 the packet was send.
 
-The *packet length* specifies the length of the inner packet (stack id,
-function id, packet lenght and payload) in bytes. A packet without a payload 
+The *packet length* specifies the length of the inner packet (stack ID,
+function ID, packet length and payload) in bytes. A packet without a payload
 has a packet length of 4. 
 The function ID combined with the transfer direction defines the content of the
 payload and this determines the packet length.
@@ -98,7 +98,7 @@ have to be known in beforehand, they can not be discovered.
 Triggering Stack Enumeration
 """"""""""""""""""""""""""""
 
-To start the enumeration inside of the RS485 Slave stacks and to make it 
+To start the enumeration inside of the RS485 slave stacks and to make it
 aware that it should send out callbacks via RS485, the communication 
 has to start with a :modbus:func:`stack_enumerate <IPConnection.stack_enumerate>` 
 message.
@@ -120,7 +120,7 @@ start the enumeration with. For example: If you send a package with a
 start stack ID of 5, all of the devices in the RS485 stack will get a
 stack ID of 5 or above.
 
-Since the RS485 Slave can't do the enumeration fast enough, the answer
+Since the RS485 slave can't do the enumeration fast enough, the answer
 will likely be an empty message:
 
 * Modbus address *MA* as uint8,
@@ -131,11 +131,11 @@ will likely be an empty message:
 * Packet length 0 as uint16,
 * Modbus CRC16 as uint16.
 
-This message has to be seen as an ack for the request. If anything in this
+This message has to be seen as an ACK for the request. If anything in this
 answer is wrong (wrong function code, wrong Modbus address, wrong CRC, etc)
 or there is no answer, you have to resend the request.
 
-If everything checks out the Master can ask again for data. Since the Master 
+If everything is correct the master can ask again for data. Since the master
 doesn't have anything else to send, it just sends an empty message:
 
 * Modbus address *MA* as uint8,
@@ -147,10 +147,11 @@ doesn't have anything else to send, it just sends an empty message:
 * Modbus CRC16 as uint16.
 
 Note that you have to increase the sequence number now, otherwise the slave
-will think that you didn't receive the ack and resend it!
+will think that you didn't receive the ACK and resend it!
 
-If the RS485 Slave had enough time to generate an answer for the 
-stack_enumerate request, the answer should now look like this:
+If the RS485 slave had enough time to generate an answer for the
+:modbus:func:`stack_enumerate <IPConnection.stack_enumerate>` request, the
+answer should now look like this:
 
 * Modbus address *MA* as uint8,
 * Modbus function code 100 as uint8,
@@ -162,7 +163,7 @@ stack_enumerate request, the answer should now look like this:
 * Modbus CRC16 as uint16.
 
 Where the end stack ID is the last stack ID of the RS485 slave address.
-For example: If a Master sends a 5 as a start stack ID to the slave and
+For example: If a master sends a 5 as a start stack ID to the slave and
 the slave answers with 7 as the end stack ID, it means that the 
 RS485 slave stack consists of 3 Bricks or Bricklets with stack ID 5, 6
 and 7.
@@ -195,10 +196,10 @@ forward to implement the protocol.
 Requests and Responses
 """"""""""""""""""""""
 
-In general, every time the RS485 Master sends something to a slave (either with
+In general, every time the RS485 master sends something to a slave (either with
 or without payload), the slave will answer (again either with or without
 payload) and the master has to answer again if the answer of the slave
-had a payload. After this whole process, the RS485 Master increments the
+had a payload. After this whole process, the RS485 master increments the
 sequence number.
 
 .. image:: /Images/modbus.png
@@ -213,14 +214,14 @@ packet length doesn't fit etc): The slave will stop responding and induce
 a timeout. In this case the RS485 master has to resend the request with
 the same sequence number.
 
-If the RS485 Master receives a response with wrong CRC or similar, he also has
+If the RS485 master receives a response with wrong CRC or similar, he also has
 to resend the request with the same sequence number again.
 
-Otherwise (everything went OK), the sequence number is incremented by the
+Otherwise (everything went okay), the sequence number is incremented by the
 RS485 master. This approach ensures that there is never a request or response 
 lost in the whole process.
 
-Pleas note: If the RS485 master calls a function of a Brick or Bricklet
+Please note: If the RS485 master calls a function of a Brick or Bricklet
 in a RS485 slave stack, the response by the slave will likely not be the 
 response to the function call. It will either be an empty message (ACK)
 or it will be a response to another function call from before or it will
@@ -250,7 +251,7 @@ Basic Methods
 
  This function will trigger the enumeration of an RS485 slave stack.
  The response is the last stack ID in the stack. For example: If a 
- Master sends a 5 as a start stack ID to the slave and the slave
+ master sends a 5 as a start stack ID to the slave and the slave
  answers with 7 as the end stack ID, it means that the RS485 slave 
  stack consists of 3 Bricks or Bricklets with stack ID 5, 6 and 7.
 
