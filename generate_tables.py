@@ -4,7 +4,8 @@
 import os
 
             # display,  uri
-bindings = [('TCP/IP', 'tcpip',  False),
+bindings = [('Modbus', 'modbus', False),
+            ('TCP/IP', 'tcpip',  False),
             ('C/C++',  'c',      True),
             ('C#',     'csharp', True),
             ('Java',   'java',   True),

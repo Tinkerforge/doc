@@ -27,6 +27,7 @@ extensions = ['sphinx.ext.pngmath',
               'sphinxextra.javadomain',
               'sphinxextra.phpdomain',
               'sphinxextra.rubydomain',
+              'sphinxextra.modbusdomain',
               'sphinxextra.tcpipdomain']
 
 # Add any paths that contain templates here, relative to this directory.
@@ -43,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Tinkerforge'
-copyright = u'2011, Olaf Lüke (olaf@tinkerforge.com)'
+copyright = u'2011-2012, Olaf Lüke (olaf@tinkerforge.com)'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
