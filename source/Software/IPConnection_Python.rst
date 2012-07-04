@@ -75,7 +75,7 @@ Callback Configuration Methods
 
 .. py:function:: IPConnection.enumerate(callback)
 
- :param callback: func(uid, name, stack_id, is_new)
+ :param callback: callable(uid, name, stack_id, is_new)
  :rtype: None
 
  This method registers a callback that receives four parameters:

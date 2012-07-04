@@ -66,9 +66,13 @@ Callback Configuration Methods
 
 .. php:function:: void IPConnection::enumerate(callable $callback)
 
- .. php:function:: void callback(string $uid, string $name, int $stackID, bool $isNew)
+ This method registers a callback with the signature:
 
- This method registers a callback that receives four parameters:
+ .. code-block:: php
+
+  void callback(string $uid, string $name, int $stackID, bool $isNew)
+
+ that receives four parameters:
 
  * *$uid* - The UID of the device.
  * *$name* - The name of the device (includes "Brick" or "Bricklet" and a version number).

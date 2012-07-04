@@ -80,7 +80,7 @@ Callback Configuration Methods
 
 .. c:function:: void ipcon_enumerate(IPConnection *ipcon, enumerate_callback_func_t cb)
 
- This method registers a callback with the signature: 
+ This function registers a callback with the signature:
  
  .. code-block:: c
 
