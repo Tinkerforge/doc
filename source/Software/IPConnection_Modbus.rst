@@ -180,7 +180,7 @@ Resolve UID to Stack ID
 
 Now you still don't which stack ID corresponds to which UID, so you
 have to resolve the UID. Please refer to the 
-`TCP/IP documentation <ipcon_tcpip_resolve_uid>`
+:ref:`TCP/IP documentation <ipcon_tcpip_resolve_uid>`
 for this.
 
 All of the documentation for the TCP/IP protocol is also true for
