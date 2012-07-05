@@ -77,7 +77,6 @@ Dimensions                           20mm x 25mm (0.79" x 0.98")
 Weight                               2.6g
 Sensor                               MLX90614ESF-BAA
 Temperature range                    * -40 to +85°C ambient temperature
-
                                      * -70 to 380°C object temperature
 Accuracy                             0.5°C over wide temperature range
 -----------------------------------  ---------------------------------------------------------------------

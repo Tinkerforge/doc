@@ -200,6 +200,7 @@ Drive Modes
 -----------
 
 There are two possible modes of motor controls:
+
 * Drive/Brake
 
   In this mode the motor is always either driving or braking, there is no 

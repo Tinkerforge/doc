@@ -87,7 +87,7 @@ Weight                            13g
 
 Resources
 ---------
-	 
+
 * AT86RF212 datasheet (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/datasheets/at86rf212.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/hardware/chibi-extension-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extension_dimensions.png>`__)

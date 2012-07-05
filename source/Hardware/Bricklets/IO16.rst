@@ -48,9 +48,9 @@ IO-16 Bricklet
 Features
 --------
 
- * 16 inputs and outputs
- * Switchable logic voltage 3.3V or 5V
- * Configurable pull-ups and interrupts
+* 16 inputs and outputs
+* Switchable logic voltage 3.3V or 5V
+* Configurable pull-ups and interrupts
 
 
 Description

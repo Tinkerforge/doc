@@ -62,7 +62,7 @@ Dimensions (WxLxH)                40mm x 40mm x 8mm (1.57" x 1.57" x 0.31")*
 Weight                            18.4g
 ================================  ============================================================
 
-* without connectors
+\* without connectors
 
 Resources
 ---------
