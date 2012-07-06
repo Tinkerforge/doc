@@ -291,24 +291,17 @@ The stacks as shown so far in the tutorial are not super exciting,
 they only reduce wiring and save space. But, as you might have already 
 guessed, there is more to it. It is possible to attach **Extensions** to the
 stack, which extend the stack with interfaces other than USB,
-e.g. Chibi (wireless), RS485, and in the future WLAN and Ethernet.
- 
-You need one Master Brick and two Chibi Master Extensions additionally to the 
-previous part. Attach one Chibi Extension on top of your stack and build a new
-stack from the other Chibi Extension and the Master Brick. Connect the Rotary 
+e.g. RS485, and in the future WLAN and Ethernet.
+
+To e.g. make a RS485 bus out of stacks, you need two need one Master Brick and 
+two RS485 Master Extensions additionally to the 
+previous part. Attach one RS485 Extension on top of your stack and build a new
+stack from the other RS485 Extension and the Master Brick. Connect the Rotary 
 Poti Bricklet to this new stack (see image below).
-
-
-
-.. image:: /Images/Tutorial/tutorial_4_600.jpg
-   :scale: 100 %
-   :alt: DC Brick with connected motor in stack with Master, Chibi Extension and Step-Down Power Supply as well as stack with Master, Chibi Extension and Rotary Poti Bricklet
-   :align: center
-   :target: ../_images/Tutorial/tutorial_4_1200.jpg
 
 Now connect each stack separately to your PC and configure it with
 the Brick Viewer as described in the 
-:ref:`Chibi documentation <chibi_configuration>`.
+:ref:`RS485 documentation <rs485_configuration>`.
 It is necessary that you power up the slave stacks prior to the master stack.
 
 You should see two Master Bricks, the Rotary 
