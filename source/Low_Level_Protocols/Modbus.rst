@@ -1,14 +1,14 @@
-.. _ipcon_modbus:
+.. _llproto_modbus:
 
-Modbus - IP Connection
-======================
+Modbus
+======
 
 This is the API site for the Modbus RTU protocol of the RS485 Extension.
 
 An overview of products that are controllable over Modbus 
 can be found :ref:`here <product_overview>`.
 
-.. _ipcon_modbus_protocol:
+.. _llproto_modbus_protocol:
 
 Protocol
 --------
@@ -100,8 +100,7 @@ Triggering Stack Enumeration
 
 To start the enumeration inside of the RS485 slave stacks and to make it
 aware that it should send out callbacks via RS485, the communication 
-has to start with a :modbus:func:`stack_enumerate <IPConnection.stack_enumerate>` 
-message.
+has to start with a :modbus:func:`stack_enumerate` message.
 
 The request looks as follows:
 
@@ -150,8 +149,7 @@ Note that you have to increase the sequence number now, otherwise the slave
 will think that you didn't receive the ACK and resend it!
 
 If the RS485 slave had enough time to generate an answer for the
-:modbus:func:`stack_enumerate <IPConnection.stack_enumerate>` request, the
-answer should now look like this:
+:modbus:func:`stack_enumerate` request, the answer should now look like this:
 
 * Modbus address *MA* as uint8,
 * Modbus function code 100 as uint8,
@@ -181,7 +179,7 @@ Resolve UID to Stack ID
 
 Now you still don't which stack ID corresponds to which UID, so you
 have to resolve the UID. Please refer to the 
-:ref:`TCP/IP documentation <ipcon_tcpip_resolve_uid>`
+:ref:`TCP/IP documentation <llproto_tcpip_resolve_uid>`
 for this.
 
 All of the documentation for the TCP/IP protocol is also true for
@@ -233,7 +231,7 @@ a request with payload if you have data to transfer. This will ensure that
 no messages pile up in the RS485 slave stack and you will get the responses
 to function calls and callbacks with a reasonable latency.
 
-.. _ipcon_modbus_api:
+.. _llproto_modbus_api:
 
 API
 ---
@@ -243,7 +241,7 @@ The following functions and callbacks are supported by all devices.
 Basic Methods
 ^^^^^^^^^^^^^
 
-.. modbus:function:: IPConnection.stack_enumerate
+.. modbus:function:: stack_enumerate
 
  :functionid: 252
  :request start_stack_id: uint8
@@ -263,7 +261,7 @@ Basic Methods
  callbacks have to be sent out via RS485.
 
 
-.. modbus:function:: IPConnection.get_stack_id
+.. modbus:function:: get_stack_id
 
  :functionid: 255
  :request uid: uint64
@@ -285,14 +283,14 @@ Basic Methods
 Callback Configuration Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. modbus:function:: IPConnection.enumerate
+.. modbus:function:: enumerate
 
  :functionid: 254
  :emptyrequest: empty payload
  :noresponse: no response
 
- Triggers the :modbus:func:`CALLBACK_ENUMERATE <IPConnection.CALLBACK_ENUMERATE>`
- callback for all  devices currently connected to the Brick Daemon.
+ Triggers the :modbus:func:`CALLBACK_ENUMERATE`
+ callback for all devices currently connected to the Brick Daemon.
 
  This is a broadcast function and the stack ID in the packet header has to be
  set to 0 (broadcast stack ID).
@@ -303,7 +301,7 @@ Callback Configuration Methods
 Callbacks
 ^^^^^^^^^
 
-.. modbus:function:: IPConnection.CALLBACK_ENUMERATE
+.. modbus:function:: CALLBACK_ENUMERATE
 
  :functionid: 253
  :response device_uid: uint64
@@ -313,8 +311,8 @@ Callbacks
 
  There are three different possibilities for the callback to be called.
  Firstly, the callback is triggered for all currently connected devices
- (with *is_new* true) when the :modbus:func:`enumerate <IPConnection.enumerate>`
- function is called. Secondly, the callback is triggered if a new Brick is plugged
+ (with *is_new* true) when the :modbus:func:`enumerate` function is called.
+ Secondly, the callback is triggered if a new Brick is plugged
  in via USB (with *is_new* true) and lastly it is triggered if a Brick is
  unplugged (with *is_new* false).
 

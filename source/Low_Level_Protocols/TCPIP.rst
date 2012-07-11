@@ -1,15 +1,14 @@
-.. _ipcon_tcpip:
+.. _llproto_tcpip:
 
-TCP/IP - IP Connection
-======================
+TCP/IP
+======
 
-This is the API site for the TCP/IP protocol of the IP connection.
-You need to create an IP connection to brickd before you can use devices.
+This is the API site for the TCP/IP protocol of the Brick Daemon.
 
-An overview of products that are controllable over an IP connection
+An overview of products that are controllable over TCP/IP
 can be found :ref:`here <product_overview>`.
 
-.. _ipcon_tcpip_protocol:
+.. _llproto_tcpip_protocol:
 
 Protocol
 --------
@@ -70,13 +69,13 @@ function on the connected devices you need to know their stack IDs.
 Discovering those stack IDs is the second phase. In the third phase you can
 call specific functions on the connected devices.
 
-.. _ipcon_tcpip_resolve_uid:
+.. _llproto_tcpip_resolve_uid:
 
 Resolve UID to Stack ID
 """""""""""""""""""""""
 
 To resolve a known UID to the corresponding stack ID the
-:tcpip:func:`get_stack_id <IPConnection.get_stack_id>` function can be used.
+:tcpip:func:`get_stack_id` function can be used.
 The corresponding request packet that you need to send has
 
 * stack ID 0 as uint8 (0x00),
@@ -93,7 +92,7 @@ represents UIDs as uint64 (8 bytes). The Brick Viewer
 and the other API bindings represent UIDs in Base58 encoding instead.
 The example UID 3904673860505581361 is represented as a4GeP9ZpQFT in Base58.
 
-The hex dump of the :tcpip:func:`get_stack_id <IPConnection.get_stack_id>` request
+The hex dump of the :tcpip:func:`get_stack_id` request
 packet looks like this::
 
   0000   00 ff 0c 00 31 37 30 33 30 30 30 36              ....17030006
@@ -104,8 +103,7 @@ response is send at all. This means that you should wait for a response packet
 only for a certain amount of time. The recommended timeout is 2500ms. After
 this amount of time you can assume that there is no device with the given UID.
 
-The :tcpip:func:`get_stack_id <IPConnection.get_stack_id>` response packet from
-the Master Brick has
+The :tcpip:func:`get_stack_id` response packet from the Master Brick has
 
 * stack ID 0 as uint8 (0x00),
 * function ID 255 as uint8 (0xff) and
@@ -126,7 +124,7 @@ The hex dump of the packet looks like this::
   0030   00 00 00 00 00 00 00 01                          ........
 
 Bricklets typically have UIDs with much smaller values compared to the UIDs of
-Bricks. A request packet for the :tcpip:func:`get_stack_id <IPConnection.get_stack_id>`
+Bricks. A request packet for the :tcpip:func:`get_stack_id`
 function for a Bricklet with UID 21238 has
 
 * stack ID 0 as uint8 (0x00),
@@ -144,7 +142,7 @@ The hex dump of this request packet looks like this::
 Enumeration
 """""""""""
 
-The :tcpip:func:`enumerate <IPConnection.enumerate>` function can be used to receive
+The :tcpip:func:`enumerate` function can be used to receive
 information about all connected devices. The corresponding request packet
 has
 
@@ -157,7 +155,7 @@ and an empty payload. Its hex dump looks like this::
   0000   00 fe 04 00                                      ....
 
 There is no response packet for this function, but as a reaction the
-:tcpip:func:`CALLBACK_ENUMERATE <IPConnection.CALLBACK_ENUMERATE>` callback is
+:tcpip:func:`CALLBACK_ENUMERATE` callback is
 triggered for each connected device, in this example, a Master Brick and a
 Linear Poti Bricklet. The callback response packet for the Master Brick has
 
@@ -259,9 +257,8 @@ about an event or specific condition.
 The Brick Daemon does not forward callback packets by default, because it does
 not know which IP connection is interested in receiving them. Therefore, you need
 to tell brickd that you want to receive callback packets for a specific device.
-This is a side effect of calling the
-:tcpip:func:`get_stack_id <IPConnection.get_stack_id>` for that device.
-In summary: you need to call :tcpip:func:`get_stack_id <IPConnection.get_stack_id>`
+This is a side effect of calling the :tcpip:func:`get_stack_id` for that device.
+In summary: you need to call :tcpip:func:`get_stack_id`
 for each device from which you want to receive callbacks.
 
 Most callbacks are disabled by default and have to enabled first.
@@ -294,7 +291,7 @@ corrsponding response packet.
   compared to using getters. It will use less USB bandwidth and the latency
   will be a lot better, since there is no roundtrip time.
 
-.. _ipcon_tcpip_api:
+.. _llproto_tcpip_api:
 
 API
 ---
@@ -304,7 +301,7 @@ The following functions and callbacks are supported by all devices.
 Basic Methods
 ^^^^^^^^^^^^^
 
-.. tcpip:function:: IPConnection.get_stack_id
+.. tcpip:function:: get_stack_id
 
  :functionid: 255
  :request uid: uint64
@@ -326,14 +323,14 @@ Basic Methods
 Callback Configuration Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. tcpip:function:: IPConnection.enumerate
+.. tcpip:function:: enumerate
 
  :functionid: 254
  :emptyrequest: empty payload
  :noresponse: no response
 
- Triggers the :tcpip:func:`CALLBACK_ENUMERATE <IPConnection.CALLBACK_ENUMERATE>`
- callback for all  devices currently connected to the Brick Daemon.
+ Triggers the :tcpip:func:`CALLBACK_ENUMERATE` callback for all devices
+ currently connected to the Brick Daemon.
 
  This is a broadcast function and the stack ID in the packet header has to be
  set to 0 (broadcast stack ID).
@@ -344,7 +341,7 @@ Callback Configuration Methods
 Callbacks
 ^^^^^^^^^
 
-.. tcpip:function:: IPConnection.CALLBACK_ENUMERATE
+.. tcpip:function:: CALLBACK_ENUMERATE
 
  :functionid: 253
  :response device_uid: uint64
@@ -354,8 +351,8 @@ Callbacks
 
  There are three different possibilities for the callback to be called.
  Firstly, the callback is triggered for all currently connected devices
- (with *is_new* true) when the :tcpip:func:`enumerate <IPConnection.enumerate>`
- function is called. Secondly, the callback is triggered if a new Brick is plugged
+ (with *is_new* true) when the :tcpip:func:`enumerate` function is
+ called. Secondly, the callback is triggered if a new Brick is plugged
  in via USB (with *is_new* true) and lastly it is triggered if a Brick is
  unplugged (with *is_new* false).
 

@@ -30,7 +30,7 @@ Features
  * Long distance connections (up to 1200m)
  * Allows wired interconnection between stacks
  * Configurable baud rate, parity and stop bits
- * Can be used in existing RS485 networks (Modbus RTU)
+ * Can be used in existing RS485 networks (:ref:`Modbus RTU <llproto_modbus>`)
 
 Description
 -----------
@@ -49,7 +49,7 @@ be used exactly the same way as if they were both connected via USB.
 It is also possible to create a bus with several RS485 Extension where
 only one is connected via USB (many-to-one routing).
 
-`Modbus RTU <http://en.wikipedia.org/wiki/Modbus>`__ is used as the
+:ref:`Modbus RTU <llproto_modbus>` is used as the
 protocol on the RS485 interface. This allows to use a stack of Bricks
 and Bricklets with an RS485 Extension to be integrated in existing
 Modbus networks. It is also possible to communicate with a stack
