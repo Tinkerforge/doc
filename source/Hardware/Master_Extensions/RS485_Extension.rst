@@ -83,7 +83,7 @@ Resources
 RS485 Bus Assembly
 ------------------
 
-A RS485 Bus consists of one master and multiple slaves.
+A RS485 bus consists of one master and multiple slaves.
 RS485 master is the Master Brick which has a USB connection to the PC
 running brickd. All the other Master Bricks with RS485 Extension must not have
 a USB connection (they can use a USB power supply). 
@@ -97,7 +97,7 @@ with the identified RS485 Extension (see images below). Configure the extension
 as slave or master (as described :ref:`here <rs485_configuration>`).
 
 If you have configured all extensions you can build your system. Connect 
-Bricks and Bricklets as you like. The Master of each stack has to be the
+Bricks and Bricklets as you like. The Master Brick of each stack has to be the
 lowermost Brick (except if you are using a Power Supply). The RS485 Extension
 can be positioned in the stack as you wish. Wire up the RS485 stacks and set 
 the termination switch on the first and last RS485 Extension in the bus to 
