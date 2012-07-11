@@ -3,9 +3,9 @@
 API Bindings
 ============
 
-API bindings establish a TCP connection to the
-:ref:`Brick Daemon <brickd>`. Each method call creates a TCP package that
-is send over the Brick Daemon to the Brick. Incoming TCP packages
+API bindings establish a TCP/IP connection to the
+:ref:`Brick Daemon <brickd>`. Each function call creates a TCP/IP package that
+is send over the Brick Daemon to the Brick. Incoming TCP/IP packages
 are routed back to the calling method.
 
 See also our :ref:`tutorial` for more information on how everything works
@@ -15,19 +15,15 @@ together.
 IP Connection
 -------------
 
-The IPConnection creates a connection between the
+The IP Connection creates a TCP/IP connection between the
 :ref:`Brick Daemon <brickd>` and the corresponding programming language
-:ref:`API bindings<api_bindings>`.
+API bindings.
 
 It is used by the bindings and implemented for each programming language.
 The corresponding documentation can be found here:
 
-* :ref:`C/C++ <ipcon_c>`
-* :ref:`C# <ipcon_csharp>`
-* :ref:`Java <ipcon_java>`
-* :ref:`PHP <ipcon_php>`
-* :ref:`Python <ipcon_python>`
-* :ref:`Ruby <ipcon_ruby>`
+.. include:: API_Bindings_bindings.table
+
 
 Using the Bindings
 ------------------

@@ -107,6 +107,15 @@ def make_downloads_table():
 
     return table_head + ', '.join(rows)
 
+def make_api_bindings_table():
+    row = '* :ref:`{0} <ipcon_{1}>`'
+    rows = []
+
+    for binding in bindings:
+        if binding[2]:
+            rows.append(row.format(binding[0], binding[1]))
+
+    return '\n'.join(rows)
 
 def make_hlpi_table(device, category):
     table_head = """
@@ -127,7 +136,6 @@ def make_hlpi_table(device, category):
 
     return table_head + '\n'.join(rows)
 
-
 def generate(path):
     print 'Generating index_bricks.table'
     file(os.path.join(path, 'source', 'index_bricks.table'), 'wb').write(make_index_table(bricks, 'brick'))
@@ -143,6 +151,9 @@ def generate(path):
 
     print 'Generating Downloads_bindings.table'
     file(os.path.join(path, 'source', 'Downloads_bindings.table'), 'wb').write(make_downloads_table())
+
+    print 'Generating API_Bindings_bindings.table'
+    file(os.path.join(path, 'source', 'Software', 'API_Bindings_bindings.table'), 'wb').write(make_api_bindings_table())
 
     for brick in bricks:
         if len(brick[2]) == 0:
