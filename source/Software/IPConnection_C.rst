@@ -64,16 +64,16 @@ Basic Methods
 
 .. c:function:: void ipcon_join_thread(IPConnection *ipcon)
 
- Joins the thread of the IP connection. The call will block until the
+ Joins the threads of the IP connection. The call will block until the
  IP connection is :c:func:`destroyed <ipcon_destroy>`.
 
- This makes sense if you relies solely on callbacks from listeners or if
- the IP connection was created in a thread.
+ This makes sense if you relies solely on callbacks for events or if
+ the IP connection was created in a threads.
 
 .. c:function:: void ipcon_destroy(IPConnection *ipcon)
 
  Destroys the IP connection. The socket to the Brick Daemon will be closed
- and the thread of the IP connection terminated.
+ and the threads of the IP connection terminated.
 
 Callback Configuration Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

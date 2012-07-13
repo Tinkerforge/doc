@@ -52,11 +52,11 @@ Basic Methods
 
 .. csharp:function:: public void IPConnection::JoinThread()
 
- Joins the thread of the IP connection. The call will block until the
+ Joins the threads of the IP connection. The call will block until the
  IP connection is :csharp:func:`destroyed <IPConnection::Destroy>`.
 
- This makes sense if you relies solely on callbacks or if
- the IP connection was created in a thread.
+ This makes sense if you relies solely on callbacks for events or if
+ the IP connection was created in a threads.
 
  On Windows Phone this function will do nothing (since all sockets are 
  asynchronous and there are no threads used).
@@ -64,7 +64,7 @@ Basic Methods
 .. csharp:function:: public void IPConnection::Destroy()
 
  Destroys the IP connection. The socket to the Brick Daemon will be closed
- and the thread of the IP connection terminated.
+ and the threads of the IP connection terminated.
 
 Callback Configuration Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

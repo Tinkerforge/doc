@@ -52,16 +52,16 @@ Basic Methods
 
 .. java:function:: public void IPConnection::joinThread()
 
- Joins the thread of the IP connection. The call will block until the
+ Joins the threads of the IP connection. The call will block until the
  IP connection is :java:func:`destroyed <IPConnection::destroy>`.
 
- This makes sense if you relies solely on callbacks from listeners or if
- the IP connection was created in a thread.
+ This makes sense if you relies solely on callbacks for events or if
+ the IP connection was created in a threads.
 
 .. java:function:: public void IPConnection::destroy()
 
  Destroys the IP connection. The socket to the Brick Daemon will be closed
- and the thread of the IP connection terminated.
+ and the threads of the IP connection terminated.
 
 Callback Configuration Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

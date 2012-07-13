@@ -54,16 +54,16 @@ Basic Methods
 
 .. rb:function:: IPConnection#join_thread() -> nil
 
- Joins the thread of the IP connection. The call will block until the
+ Joins the threads of the IP connection. The call will block until the
  IP connection is :rb:func:`destroyed <IPConnection.destroy>`.
 
- This makes sense if you relies solely on callbacks from listeners or if
- the IP connection was created in a thread.
+ This makes sense if you relies solely on callbacks for events or if
+ the IP connection was created in a threads.
 
 .. rb:function:: IPConnection#destroy() -> nil
 
  Destroys the IP connection. The socket to the Brick Daemon will be closed
- and the thread of the IP connection terminated.
+ and the threads of the IP connection terminated.
 
 Callback Configuration Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
