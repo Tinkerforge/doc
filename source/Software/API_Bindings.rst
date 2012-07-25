@@ -104,6 +104,10 @@ include ws2_32.lib by clicking on:
 
 Thats it, we are ready to go!
 
+The Visual Studio compiler can also be used from the command line::
+
+ cl /TP /I. brick_stepper.c ip_connection.c example_configuration.c /link /out:example_configuration.exe ws2_32.lib
+
 
 .. _api_bindings_c_ios:
 
