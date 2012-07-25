@@ -19,7 +19,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "22", "iOS support", "`done <http://www.tinkerforge.com/doc/Software/API_Bindings.html#c-c-ios>`__"
    "23", "Brick flashing support for Brick Viewer (No SAM-BA needed anymore)", "`done <http://www.tinkerforge.com/doc/Software/Brickv.html#brick-firmware-flashing>`__"
    "26", "RS485 Extension", "`done <https://shop.tinkerforge.com/master-extensions/rs485-master-extension.html>`__"
-   "30", "Delphi bindings", "`RC <http://www.tinkerunity.org/forum/index.php?action=dlattach;topic=621.0;attach=615>`__"
+   "30", "Delphi bindings", "`done <http://www.tinkerforge.com/doc/index.html#bricks>`__"
    "32", "WIFI Extension", "prototype"
    "33", "New Bricklet (probably Current Bricklet)", "prototype"
    "34", "Introduction of Tinkerforge Industrial Bricklets"
