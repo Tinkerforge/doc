@@ -24,6 +24,7 @@ import sys, os
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.pngmath',
               'sphinxextra.csharpdomain',
+              'sphinxextra.delphidomain',
               'sphinxextra.javadomain',
               'sphinxextra.phpdomain',
               'sphinxextra.rubydomain',

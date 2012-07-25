@@ -74,16 +74,33 @@ following (hint: the library linking must come after the source)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
 
-With Visual Studio we can use our project_folder/ as follows::
+With Visual Studio we can use our project_folder/ as follows:
 
- File -> New -> Project From Existing Code -> Type: Visual C++ -> choose project_folder/, choose project name -> Next -> choose Console Application -> Finish
+* File
+* New
+* Project From Existing Code
+* Type: Visual C++
+* Choose project_folder/
+* Choose project name
+* Next
+* Choose Console Application
+* Finish
 
 Now we have to tell Visual Studio to use the C++ compiler, since we
 would need C99 but Visual Studio can only compile C89... Also we have to
-include ws2_32.lib::
+include ws2_32.lib by clicking on:
 
- Project -> properties -> C/C++ -> Advanced and option "Compile as" -> choose "Compile as C++ Code (/TP)"
- Project -> properties -> Linker -> Input and option "Additional Dependencies" -> add "ws2_32.lib;"
+* Project
+* Properties
+* C/C++
+* Advanced, option "Compile as"
+* Choose "Compile as C++ Code (/TP)"
+
+* Project
+* Properties
+* Linker
+* Input, option "Additional Dependencies"
+* Add "ws2_32.lib;"
 
 Thats it, we are ready to go!
 
@@ -360,6 +377,67 @@ Start the emulator with F5. You should be able to toggle a relay with
 the toggle button on your Windows Phone. Don't forget to change the
 UID and the host IP address to the correct values for your brickd host and
 your Relay Bricklet.
+
+.. _api_bindings_delphi:
+
+Delphi
+^^^^^^
+
+The Delphi bindings consist of the bindings for all Tinkerforge Bricks and
+Bricklets (in bindings/) and all available Delphi examples (in
+examples/).
+
+To keep the Delphi bindings stupid and simple, they only have dependencies that
+are available nearly everywhere, thus making it possible to compile into any
+project hassle-free. We do not offer a pre-compiled library, since it would be
+a pain in the ass to provide them for all combinations of architectures and
+operating systems. This means, the bindings should work on most architectures
+(ARM, x86, etc.) and on most operating systems (Windows and POSIX systems such
+as Linux and Mac OS, etc.).
+
+As an example we will compile the Stepper Brick configuration example with
+the Free Pascal Compiler (FPC) that comes with the Lazarus. For that we
+have to copy the IP Connection (Base58.pas, BlockingQueue.pas, Device.pas,
+IPConnection.pas, LEConverter.pas and TimedSemaphore.pas) and the Stepper
+Brick bindings (BrickStepper.pas) from the bindings/ folder as well as the
+ExampleConfiguration.pas from the examples/Brick/Stepper/ folder into our
+project::
+
+ project_folder/
+  -> Base58.pas
+  -> BlockingQueue.pas
+  -> Device.pas
+  -> IPConnection.pas
+  -> LEConverter.pas
+  -> TimedSemaphore.pas
+  -> BrickStepper.pas
+  -> ExampleConfiguration.pas
+
+FPC automatically finds the used units, therefore a compilation of the project
+with FPC like::
+
+ fpc ExampleConfiguration.pas
+
+With Lazarus we can use our project_folder/ by clicking:
+
+* Project
+* New Project from file ...
+* Choose project_folder/ExampleConfiguration.pas
+* Open
+* Choose Console Application
+* OK
+* Choose Application class name and Title
+* OK
+
+With Delphi XE2 (older Delphi version should work similar) we can use our
+project_folder/ as follows. First rename ExampleConfiguration.pas to
+ExampleConfiguration.dpr then click:
+
+* Project
+* Add Existing Project...
+* Choose project_folder/ExampleConfiguration.dpr
+* Open
+
 
 .. _api_bindings_java:
 
