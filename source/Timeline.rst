@@ -22,7 +22,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "30", "Delphi bindings", "`done <http://www.tinkerforge.com/doc/index.html#bricks>`__"
    "34", "New Bricklet (probably Current Bricklet)", "prototype"
    "35", "Introduction of Tinkerforge Industrial Bricklets"
-   "35", "WIFI Extension", "prototype"
+   "35", "WIFI Extension", "`prototype <http://en.blog.tinkerforge.com/2012/8/1/wifi-extension-news>`__"
    "36", "New Bricklet"
    "37", "Ethernet Extension or Chibi Extension replacement"
    "?", "PTC Bricklet, Sonic Range Bricklet, Barometer/Altimeter Bricklet"
