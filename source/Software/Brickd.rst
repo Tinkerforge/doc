@@ -4,10 +4,8 @@ Brick Daemon (brickd)
 =====================
 
 The Brick Daemon is a daemon (or service on Windows) that acts as a bridge 
-between the :ref:`Bricks <product_overview_bricks>`/
-:ref:`Bricklets <product_overview_bricklets>`
-and the programming language 
-:ref:`API bindings <api_bindings>`.
+between the :ref:`Bricks <product_overview_bricks>`/:ref:`Bricklets <product_overview_bricklets>`
+and the programming language :ref:`API bindings <api_bindings>`.
 
 The daemon routes data between the USB connections and TCP sockets.
 When using the API bindings a TCP connection to the daemon is established.
@@ -221,6 +219,17 @@ If for some reason brickd doesn't run or it has crashed, you can start it
 from the terminal with::
 
  sudo launchctl start com.tinkerforge.brickd
+
+.. note::
+ Since Mac OS X Mountain Lion only signed software can be installed by default.
+ Currently the Brick Daemon and its installer is not signed. This makes Mac OS X
+ show you an error message saying that the installer is broken when you try to
+ install it. For now you need to lower your system security settings to allow
+ installing unsigned software by clicking:
+
+ * System Settings
+ * Security & Privacy
+ * Allow applications downloaded from: Anywhere
 
 
 Checking installed version
