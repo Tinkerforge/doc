@@ -80,13 +80,13 @@ Callback Configuration Methods
    * *uid*: The UID of the device.
    * *name*: The name of the device (includes "Brick" or "Bricklet" and a version number).
    * *stackID*: The stack ID of the device (you can find out the position in a stack with this).
-   * *isNew*: True if the device is added, false if it is removed.
+   * *isNew*: Is *true* if the device is added, *false* if it is removed.
  
    There are three different possibilities for the listener to be called.
    Firstly, the listener is called with all currently available devices in the
-   IP connection (with *isNew* true). Secondly, the listener is called if
-   a new Brick is plugged in via USB (with *isNew* true) and lastly it is
-   called if a Brick is unplugged (with *isNew* false).
+   IP connection (with *isNew* set to *true*). Secondly, the listener is called if
+   a new Brick is plugged in via USB (with *isNew* set to *true*) and lastly it is
+   called if a Brick is unplugged (with *isNew* set to *false*).
 
    It should be possible to implement "plug 'n play" functionality with this
    (as is done in Brick Viewer).

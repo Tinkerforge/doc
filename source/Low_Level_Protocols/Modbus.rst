@@ -311,10 +311,10 @@ Callbacks
 
  There are three different possibilities for the callback to be called.
  Firstly, the callback is triggered for all currently connected devices
- (with *is_new* true) when the :modbus:func:`enumerate` function is called.
+ (with *is_new* set to *true*) when the :modbus:func:`enumerate` function is called.
  Secondly, the callback is triggered if a new Brick is plugged
- in via USB (with *is_new* true) and lastly it is triggered if a Brick is
- unplugged (with *is_new* false).
+ in via USB (with *is_new* set to *true*) and lastly it is triggered if a Brick is
+ unplugged (with *is_new* set to *false*).
 
  It should be possible to implement "plug 'n play" functionality with this
  (as is done in Brick Viewer).
