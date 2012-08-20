@@ -114,7 +114,7 @@ The Visual Studio compiler can also be used from the command line::
 C/C++ (iOS)
 ^^^^^^^^^^^
 
-Objectiv-C is compatible to C. This allows to use the C/C++ bindings
+Objective-C is compatible to C. This allows to use the C/C++ bindings
 (see :ref:`above <api_bindings_c>`) in an iOS App.
 
 In the following we assume that you already have the iOS development environment
