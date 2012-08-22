@@ -1,7 +1,7 @@
 Doc
 ===
 
-This repository contains the sphinx documentation for all Bricks and
+This repository contains the Sphinx documentation for all Bricks and
 Bricklets.
 
 Usage
@@ -10,4 +10,5 @@ The documentation is partly auto generated, so you need to clone the
 generators (https://github.com/Tinkerforge/generators) first and execute
 the generator and copy scripts.
 
-You can compile the html with "make html".
+You can compile the HTML for the different languanges with "make html" in the
+languange subdirectories.
