@@ -1,4 +1,7 @@
-build
-source/Software/Bricks
-source/Software/Bricklets
+en/build
+en/source/Software/Bricks
+en/source/Software/Bricklets
+de/build
+de/source/Software/Bricks
+de/source/Software/Bricklets
 *.table
