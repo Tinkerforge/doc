@@ -1,0 +1,66 @@
+{% raw %}
+{% from "macros.html" import tfheader %}
+{% from "macros.html" import tffooter %}
+{% endraw %}
+
+{% extends '!layout.html' %}
+
+{% block doctype %}
+<!DOCTYPE html>
+{% endblock %}
+
+{% block htmltitle %}
+<title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+{% raw %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='base_tf.css', _external=True) }}" />
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='jquery.lightbox-0.5.css', _external=True) }}" />
+<meta name="keywords" content="Tinkerforge, Open Source Hardware, Bricks, Bricklets, USB Controllable, USB Sensing, USB Controlling" />
+<meta name="description" content="Easy-to-use open source hardware. Control motors and sense the environment over USB with C, C++, C#, java, python and more." />
+<meta name="copyright" content="Tinkerforge GmbH" />
+
+
+
+
+<!--<script type="text/javascript">
+	document.write('<style>.noscript { display: none; }</style>');
+</script>-->
+{% endraw %}
+{% endblock %}
+
+
+{% block extrahead %}
+{% raw %}
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.lightbox-0.5.js', _external=True) }}"></script>
+
+    <script type="text/javascript">
+	    $(function() {
+				        $('#gallery a').lightBox();
+						    });
+    </script>
+
+
+{% endraw %}
+{% endblock %}
+
+
+
+{% block sidebar1 %}{{ sidebar() }}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+
+{% block relbar1 %}<div id="tfcontent"><div class="boxContent3">{% endblock %}
+{% block relbar2 %}</div></div>{% endblock %}
+
+{% block sidebarsourcelink %}{% endblock %}
+{% block sidebarsearch %}{% endblock %}
+
+{% block header %}
+{% raw %}
+{{ tfheader(g.stagingprefix, g.langs, g.username, g.current_lang, request.url, 'doc') }}
+{% endraw %}
+{% endblock %}
+
+{% block footer %}
+{% raw %}
+{{ tffooter(g.stagingprefix, g.langs, g.current_lang) }}
+{% endraw %}
+{% endblock %}

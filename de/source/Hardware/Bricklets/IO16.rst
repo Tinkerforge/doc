@@ -1,0 +1,173 @@
+.. _io16_bricklet:
+
+IO-16 Bricklet
+==============
+
+
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ 
+	    tfdocstart("Bricklets/bricklet_io16_tilted_350.jpg", 
+	             "Bricklets/bricklet_io16_tilted_600.jpg", 
+	             "IO-16 Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_io16_front_100.jpg", 
+	             "Bricklets/bricklet_io16_front_600.jpg", 
+	             "IO-16 Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_io16_vertical_100.jpg", 
+	             "Bricklets/bricklet_io16_vertical_600.jpg", 
+	             "IO-16 Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_io16_horizontal_100.jpg", 
+	             "Bricklets/bricklet_io16_horizontal_600.jpg", 
+	             "IO-16 Bricklet") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_io16_master_100.jpg", 
+	             "Bricklets/bricklet_io16_master_600.jpg", 
+	             "IO-16 Bricklet with Master Brick") 
+	}}
+	{{ 
+	    tfdocimg("Bricklets/bricklet_io16_brickv_100.jpg", 
+	             "Bricklets/bricklet_io16_brickv.jpg", 
+	             "Brick Viewer screenshot") 
+	}}
+	{{ 
+	    tfdocimg("Dimensions/io16_bricklet_dimensions_100.png", 
+	             "Dimensions/io16_bricklet_dimensions_600.png", 
+	             "Outline and drilling plan") 
+	}}
+	{{ tfdocend() }}
+
+
+Features
+--------
+
+* 16 inputs and outputs
+* Switchable logic voltage 3.3V or 5V
+* Configurable pull-ups and interrupts
+
+
+Description
+-----------
+
+The IO-16 :ref:`Bricklet <product_overview_bricklets>` can be used to extend
+the features of :ref:`Bricks <product_overview_bricks>` by external digital 
+inputs and outputs.
+
+The Bricklet features 2x8 pins that can be independently configured as
+digital inputs or outputs. Each input pin can additionally be configured with
+pull-ups or as interrupt source. The input/output voltages can be switched
+manually between 3.3V and 5V. Via terminal blocks all signals  
+and GND can be accessed. An additional terminal block 
+delivers the switched output voltage. 
+
+Human interfaces, such as switches, push-buttons and LEDs are typical 
+applications of this Bricklet.
+
+Technical Specifications
+------------------------
+
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Dimensions                        75mm x 35mm (2.95" x 1.38")
+Weight                            30.0g
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Number of I/Os                    2x8
+I/O voltages                      Switchable between 3.3V and 5V
+Maximum API Calls*                set_port (1khz), get_port (> 0.25khz), callback (1khz)
+Maximum Output Current            20mA
+================================  ============================================================
+
+\* depends on your system (OS, CPU etc.)
+
+Resources
+---------
+
+* MCP23017 Datasheet (`Download <https://github.com/Tinkerforge/io16-bricklet/raw/master/datasheets/MCP23017.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/io16-bricklet/raw/master/hardware/io-16-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/io16_bricklet_dimensions.png>`__)
+* Project source code and design files (`Download <https://github.com/Tinkerforge/io16-bricklet/zipball/master>`__)
+
+
+
+.. _io16_bricklet_test:
+
+Test your IO-16 Bricklet
+------------------------
+
+To test the IO-16 Bricklet you have to start by installing the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
+(For installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`).
+The former is a bridge between the Bricks/Bricklets and the programming
+language API bindings, the latter is for testing purposes.
+
+Connect the IO-16 Bricklet to a
+:ref:`Brick <product_overview_bricks>` with the supplied cable.
+In our test we connected an LED with series resistor to the board
+by attaching the anode to port B pin 0 and the cathode to a GND pin.
+Additionally we connected a button that can short port A pin 7 to GND
+(see picture below).
+
+.. image:: /Images/Bricklets/bricklet_io16_master_600.jpg
+   :scale: 100 %
+   :alt: Master Brick with connected IO-16 Bricklet
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_io16_master_1200.jpg
+
+If you then connect the Brick to the PC over USB, you should see a tab named 
+"IO-16 Bricklet" in the Brick Viewer after you pressed "connect". Select it.
+
+.. image:: /Images/Bricklets/bricklet_io16_brickv.jpg
+   :scale: 100 %
+   :alt: Brickv view of the IO-16 Bricklet
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_io16_brickv.jpg
+
+
+In this tab you can change the "Debounce Period", 
+it is the debounce time for interrupt callbacks. 
+For example: If you set this value to 100, you will get interrupts
+maximal every 100ms. This is necessary if something that bounces is
+connected to the IO-16 Bricklet, such as a button. You can test the optimal
+value in the Brick Viewer and use it later in your own program.
+
+Below the debounce period configuration you can configure the pins.
+Each pin can be configured as input/output and in case of an input pin 
+as pull-up. The current state is depicted in the tabular below.
+
+To test the LED we configure port B pin 0 as output and change 
+the value. When the pin is high the LED should light up. To test the button 
+configure port A pin 7 as input pull-up. We need the pull-up to define a stable
+state when the button is not pressed. Now look in the tabular, you should
+see that you can change the value of the pin by toggling the button.
+
+If you don't have a button or a LED you can try to measure voltages with
+a voltage meter or connect a pin with GND or VCC to see changes in the
+Brick Viewer.
+
+After this you can go on with writing your own application.
+See the :ref:`Programming Interface <io16_programming_interfaces>` section 
+for the API of the IO-16 Bricklet and examples in different programming
+languages.
+
+
+.. _io16_programming_interfaces:
+
+Programming Interfaces
+----------------------
+
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+
+.. include:: IO16_hlpi.table
