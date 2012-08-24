@@ -31,35 +31,9 @@ This method performs the task and sends back the requested data.
 This interface is available for Windows, Linux and Mac OS as well
 as mobile operating systems, such as Android, iOS and Windows Mobile.
 
-
 .. note::
-
-   See the :ref:`tutorial` for more information on how to use it
-   and an idea of the Brick/Bricklet concept.
-
-
-.. _pi_llpi:
-
-Low Level Programming Interface (LLPI)
---------------------------------------
-
-If you have a microcontroller board (such as Arduino) and you want to use 
-Bricks/Bricklets, the Low Level Programming Interface can be used. You can
-access every :ref:`Brick <product_overview_bricks>` over a 
-**SPI**, **I2C** or **serial** connection. 
-:ref:`Bricklets <product_overview_bricklets>` can be accesses by these
-interfaces over the connected Brick. 
-
-Additionally it is possible to use Bricklets as breakout boards
-and read the equipped sensor directly (e.g. the analog voltage of a light
-sensor).
-
-.. warning::
-
-   Currently only the direct access to Bricklets is supported.
-   See the particular Bricklet documentation for more information.
-
-   The LLPI support for Bricks is not yet implemented.
+ See the :ref:`tutorial` for more information on how to use it
+ and an idea of the Brick/Bricklet concept.
 
 
 .. _pi_odpi:
@@ -71,11 +45,10 @@ The On Device Programming Interface (ODPI) is an API to write your own
 firmware for Bricks.
 
 .. warning::
+ Currently only the source code of the Bricks is
+ `online <https://github.com/organizations/Tinkerforge>`__.
+ If you have the skills to set up the compiler environment and can
+ program c, you can adapt the code for your own purposes.
 
-   Currently only the source code of the Bricks is
-   `online <https://github.com/organizations/Tinkerforge>`__. 
-   If you have the skills to set up the compiler environment and can
-   program c, you can adapt the code for your own purposes. 
-   
-   We are working on a simple API to allow easy firmware development
-   (comparable to the Arduino API). 
+ We are working on a simple API to allow easy firmware development
+ (comparable to the Arduino API).
