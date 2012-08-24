@@ -8,8 +8,8 @@ Master Brick
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_master_tilted_front_350.jpg",
-	             "Bricks/brick_master_tilted_front_600.jpg",
-	             "Master Brick")
+	               "Bricks/brick_master_tilted_front_600.jpg",
+	               "Master Brick")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_master_tilted_back_100.jpg",
@@ -19,7 +19,7 @@ Master Brick
 	{{
 	    tfdocimg("Bricks/brick_master_stack_front_big_100.jpg",
 	             "Bricks/brick_master_stack_front_big_600.jpg",
-                 "Master Brick in stack")
+	             "Master Brick in stack")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_master_stack_back_big_100.jpg",

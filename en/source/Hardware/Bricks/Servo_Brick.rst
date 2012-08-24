@@ -8,8 +8,8 @@ Servo Brick
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_servo_tilted_front_350.jpg",
-	             "Bricks/brick_servo_tilted_front_600.jpg",
-	             "Servo Brick")
+	               "Bricks/brick_servo_tilted_front_600.jpg",
+	               "Servo Brick")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_servo_tilted_back_100.jpg",
@@ -128,7 +128,7 @@ Weight                                18g
 Resources
 ---------
 
-* MCP3008 Datasheet (`Download <https://github.com/Tinkerforge/servo-brick/raw/master/datasheets/MCP3008.pdf>`__)
+* MCP3008 datasheet (`Download <https://github.com/Tinkerforge/servo-brick/raw/master/datasheets/MCP3008.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/servo-brick/raw/master/hardware/servo-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/servo_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/servo-brick/zipball/master>`__)

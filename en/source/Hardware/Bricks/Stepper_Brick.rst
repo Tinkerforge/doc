@@ -8,8 +8,8 @@ Stepper Brick
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_stepper_tilted_front_350.jpg",
-	             "Bricks/brick_stepper_tilted_front_600.jpg",
-	             "Stepper Brick")
+	               "Bricks/brick_stepper_tilted_front_600.jpg",
+	               "Stepper Brick")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_stepper_tilted_back_100.jpg",
@@ -98,7 +98,7 @@ Microcontroller                   ATSAM3S2B (128kB Flash, 32kB RAM)
 Current Consumption               60mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Maximum Motor Current Per Phase   2.5A
+Maximum Motor Current per Phase   2.5A
 Minimum/Maximum Input Voltage     8V/38V
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -117,7 +117,7 @@ Weight                            20g
 Resources
 ---------
 
-* DRV8811 Datasheet (`Download <https://github.com/Tinkerforge/stepper-brick/raw/master/datasheets/drv8811.pdf>`__)
+* DRV8811 datasheet (`Download <https://github.com/Tinkerforge/stepper-brick/raw/master/datasheets/drv8811.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/stepper-brick/raw/master/hardware/stepper-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/stepper_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/stepper-brick/zipball/master>`__)

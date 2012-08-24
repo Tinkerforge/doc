@@ -8,8 +8,8 @@ DC Brick
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_dc_tilted_front_350.jpg",
-	             "Bricks/brick_dc_tilted_front_600.jpg",
-	             "DC Brick")
+	               "Bricks/brick_dc_tilted_front_600.jpg",
+	               "DC Brick")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_dc_tilted_back_100.jpg",
@@ -119,7 +119,7 @@ Weight                            18g
 Resources
 ---------
 
-* MC33926 Datasheet (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/datasheets/MC33926.pdf>`__)
+* MC33926 datasheet (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/datasheets/MC33926.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/hardware/dc-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dc_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/dc-brick/zipball/master>`__)
