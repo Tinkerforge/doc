@@ -5,10 +5,10 @@ LCD Extension
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocend() }}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #0") }}
+	{{ tfdocimg("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #1") }}
+	{{ tfdocend() }}
 
 
 Description
@@ -18,8 +18,10 @@ The LCD Extension is a :ref:`Master Extension <product_overview_master_extension
 which can be used to provide a :ref:`Master Brick <master_brick>` with a
 LC Display. This device has to be attached to the top of a Stack.
 
-.. note:: Coming soon! 
-   Currently not available. Please be patient.
+.. note::
+ Coming soon!
+ Currently not available. Please be patient.
+
 
 Technical Specifications
 ------------------------
@@ -27,11 +29,10 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Device Current Consumption        TBD
+Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
-
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
+Dimensions (W x D x H)            40 x 40 x 16mm (1.57 x 1.57 x 0.63")
 Weight                            TBD
 ================================  ============================================================
 
@@ -41,8 +42,7 @@ Resources
 
 * Schematic (Download)
 * Outline and drilling plan (`Download <../../_images/Dimensions/lcd_extension_dimensions.png>`__)
-* Project source code and design files (Download)
-
+* Source code and design files (Download)
 
 
 .. Usage
@@ -51,4 +51,3 @@ Resources
 
 .. Troubleshoot
    ------------
-
