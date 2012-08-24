@@ -48,8 +48,7 @@ Description
 
 * **Stack SPI** (HLPI/LLPI): SPI Bus for
   :ref:`Brick <product_overview_bricks>` <->
-  Master communication (:ref:`HLPI <pi_hlpi>`)
-  or interfacing Bricks via SPI (:ref:`LLPI <pi_llpi>`).
+  Master communication (:ref:`HLPI <pi_hlpi>`).
 * **JTAG**: Debug Interface, shared with other signals. JTAG must
   not be used when a Brick is stacked together with others.
 * **Reset**: Signal to reset a Brick, routed through a

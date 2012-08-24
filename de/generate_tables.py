@@ -15,12 +15,12 @@ bindings = [('Modbus', 'modbus', False),
             ('Ruby',   'ruby',   True)]
 
           # display,   uri,      bindings,  description
-bricks = [('DC',      'dc',      bindings, '3A DC Motor Driver'),
-          ('Debug',   'debug',   [],       'JTAG and serial console debug capabilities'),
-          ('IMU',     'imu',     bindings, 'IMU with 9 degrees of freedom'),
-          ('Master',  'master',  bindings, 'Allow building of stacks, 4 Bricklet Ports'),
-          ('Servo',   'servo',   bindings, 'Control up to 7 Servos'),
-          ('Stepper', 'stepper', bindings, '2.5A Stepper Motor Driver')]
+bricks = [('DC',      'dc',      bindings, 'Steuert einen DC Motor mit max. 28V und 5A'),
+          ('Debug',   'debug',   [],       'Für Firmware Entwickler: JTAG und serielle Konsole'),
+          ('IMU',     'imu',     bindings, 'Voll ausgestattetes AHRS mit 9 Freiheitsgraden'),
+          ('Master',  'master',  bindings, 'Ist Grundlage um Stapel zu bauen und bietet 4 Bricklet Ports'),
+          ('Servo',   'servo',   bindings, 'Steuert bis zu 7 RC Servos mit max. 3A'),
+          ('Stepper', 'stepper', bindings, 'Steuert einen bipolaren Schrittmotor mit max. 38V und 2,5A pro Phase')]
 
              # display,          uri,             bindings,  description
 bricklets = [('Ambient Light',  'ambient_light',  bindings, 'Ambient Light Sensor'),

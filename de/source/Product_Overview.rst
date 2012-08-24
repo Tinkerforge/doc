@@ -79,9 +79,7 @@ See :ref:`Tutorial Stacking <tutorial_build_stacks>` for more information
 about stacks.
 
 Besides the :ref:`High Level Programming Interface <pi_hlpi>` it is also
-possible to use Bricks with the
-:ref:`Low Level Programming Interface <pi_llpi>`
-or the :ref:`On Device Programming Interface <pi_hlpi>`.
+possible to use Bricks with the :ref:`On Device Programming Interface <pi_hlpi>`.
 
 .. include:: Product_Overview_bricks.table
 
