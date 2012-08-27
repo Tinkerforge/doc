@@ -1,0 +1,9 @@
+#!/bin/bash
+pushd en
+echo "=== Generate 'en' documentation ================="
+make html
+popd
+pushd de
+echo "=== Generate 'de' documentation ================="
+make html
+popd
