@@ -225,7 +225,7 @@ The distances are wrong
 
 This is likely some kind of calibration problem. First of all you should
 check if the calibration for the correct infrared sensor is installed
-(see :ref:`here <_distance_ir_sensor_configuration>`) and calibrate the ADC of your
+(see :ref:`here <distance_ir_sensor_configuration>`) and calibrate the ADC of your
 Brick (see :ref:`here <brickv_adc_calibration>`).
 
 If the distance measurements are still not precise enough, you have to write

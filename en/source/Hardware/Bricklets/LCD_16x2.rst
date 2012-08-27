@@ -77,6 +77,7 @@ Contrast                             Adjustable with potentiometer
 Dimensions                           31 x 80 x 22mm (1.22 x 3.15 x 0.86")*
 Weight                               51g*
 ===================================  ============================================================
+
 \* without screws
 
 

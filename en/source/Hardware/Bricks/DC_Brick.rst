@@ -100,8 +100,8 @@ Microcontroller                   ATSAM3S2B (128kB Flash, 32kB RAM)
 Current Consumption               53mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Maximum Motor Current             Peak: 5A
-                                  Continous: > 3A (depends on cooling)
+Maximum Motor Current             | Peak: 5A
+                                  | Continous: > 3A (depends on cooling)
 Minimum/Maximum Input Voltage     6V/28V
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
