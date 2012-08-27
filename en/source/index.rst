@@ -38,7 +38,6 @@ Usage with Embedded Boards
    Embedded/*
 
 
-
 .. _index_bricks:
 
 ******
@@ -53,6 +52,7 @@ Bricks
    Hardware/Bricks/*
 
 .. include:: index_bricks.table
+
 
 .. _index_bricklets:
 
@@ -81,6 +81,7 @@ Master Extensions
    Hardware/Master_Extensions/Chibi_Extension
    Hardware/Master_Extensions/RS485_Extension
 
+
 **************
 Power Supplies
 **************
@@ -91,6 +92,7 @@ Power Supplies
 
    Hardware/Power_Supplies/*
 
+
 ***********
 Accessories
 ***********
@@ -99,7 +101,7 @@ Accessories
    :maxdepth: 1
    :glob:
 
-   Hardware/Tools/DC_Jack_Adapter
+   Hardware/Accessories/DC_Jack_Adapter
 
 
 .. toctree::

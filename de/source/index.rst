@@ -38,7 +38,6 @@ Usage with Embedded Boards
    Embedded/*
 
 
-
 .. _index_bricks:
 
 ******
@@ -53,6 +52,7 @@ Bricks
    Hardware/Bricks/*
 
 .. include:: index_bricks.table
+
 
 .. _index_bricklets:
 
@@ -99,7 +99,7 @@ Accessories
    :maxdepth: 1
    :glob:
 
-   Hardware/Tools/DC_Jack_Adapter
+   Hardware/Accessories/DC_Jack_Adapter
 
 
 .. toctree::
