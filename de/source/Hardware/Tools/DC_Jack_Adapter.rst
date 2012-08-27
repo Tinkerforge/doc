@@ -6,43 +6,45 @@ DC Jack Adapter
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ 
-	    tfdocstart("Tools/dc_jack_adapter_tilted_350.jpg", 
-	             "Tools/dc_jack_adapter_tilted_600.jpg", 
-	             "DC Jack Adapter") 
+	{{
+	    tfdocstart("Tools/dc_jack_adapter_tilted_350.jpg",
+	               "Tools/dc_jack_adapter_tilted_600.jpg",
+	               "DC Jack Adapter")
 	}}
-	{{ 
-	    tfdocimg("Tools/dc_jack_adapter_horizontal_100.jpg", 
-	             "Tools/dc_jack_adapter_horizontal_600.jpg", 
-	             "DC Jack Adapter") 
+	{{
+	    tfdocimg("Tools/dc_jack_adapter_horizontal_100.jpg",
+	             "Tools/dc_jack_adapter_horizontal_600.jpg",
+	             "DC Jack Adapter")
 	}}
 	{{ tfdocend() }}
 
-Description
------------
 
-The DC Jack Adapter is an adapter between a 5mm DC jack and
-a 2 pole black connector. It can be used to power 
-:ref:`Bricks <product_overview_bricks>` and 
-stacks via external power supplies with 5mm DC jacks.
+Beschreibung
+------------
 
-Technical Specifications
+Dies ist ein Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz.
+Er kann genutzt werden um :ref:`Bricks <product_overview_bricks>` oder
+Stromversorgungen über eine externe Stromversorgung mit einem 5mm DC Stecker
+zu versorgen.
+
+
+Technische Spezifikation
 ------------------------
 
-================================  ============================================================
-Property                          Value
-================================  ============================================================
-Maximum Current                   3A
-Dimensions (WxLxH)                15mm x 25mm x 15mm (0.59" x 0.98" x 0.59")
-Weight                            3.6g
-================================  ============================================================
-
-Resources
----------
-
-* Schematic (`Download <https://github.com/Tinkerforge/dc-adapter/raw/master/hardware/dc-adapter-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/dc_adapter_bricklet_dimensions.png>`__)
-* Project design files (`Download <https://github.com/Tinkerforge/dc-adapter/zipball/master>`__)
+================================  ========================================
+Eigenschaft                       Wert
+================================  ========================================
+Maximaler Strom                   3A
+--------------------------------  ----------------------------------------
+--------------------------------  ----------------------------------------
+Abmessungen (B x T x H)           15 x 29 x 15mm (0.59 x 1.14 x 0.59")
+Gewicht                           4g
+================================  ========================================
 
 
+Ressourcen
+----------
 
+* Schaltplan (`Download <https://github.com/Tinkerforge/dc-adapter/raw/master/hardware/dc-adapter-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/dc_adapter_bricklet_dimensions.png>`__)
+* Platinenlayout (`Download <https://github.com/Tinkerforge/dc-adapter/zipball/master>`__)
