@@ -3,39 +3,38 @@
 IO-4 Bricklet
 =============
 
-
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ 
-	    tfdocstart("Bricklets/bricklet_io4_11_tilted_350.jpg", 
-	             "Bricklets/bricklet_io4_11_tilted_600.jpg", 
-	             "IO-4 Bricklet") 
+	{{
+	    tfdocstart("Bricklets/bricklet_io4_11_tilted_350.jpg",
+	               "Bricklets/bricklet_io4_11_tilted_600.jpg",
+	               "IO-4 Bricklet")
 	}}
-	{{ 
-	    tfdocimg("Bricklets/bricklet_io4_11_vertical_100.jpg", 
-	             "Bricklets/bricklet_io4_11_vertical_600.jpg", 
-	             "IO-4 Bricklet") 
+	{{
+	    tfdocimg("Bricklets/bricklet_io4_11_vertical_100.jpg",
+	             "Bricklets/bricklet_io4_11_vertical_600.jpg",
+	             "IO-4 Bricklet")
 	}}
-	{{ 
-	    tfdocimg("Bricklets/bricklet_io4_11_horizontal_100.jpg", 
-	             "Bricklets/bricklet_io4_11_horizontal_600.jpg", 
-	             "IO-4 Bricklet") 
+	{{
+	    tfdocimg("Bricklets/bricklet_io4_11_horizontal_100.jpg",
+	             "Bricklets/bricklet_io4_11_horizontal_600.jpg",
+	             "IO-4 Bricklet")
 	}}
-	{{ 
-	    tfdocimg("Bricklets/bricklet_io4_11_master_100.jpg", 
-	             "Bricklets/bricklet_io4_11_master_600.jpg", 
-	             "IO-4 Bricklet with Master Brick") 
+	{{
+	    tfdocimg("Bricklets/bricklet_io4_11_master_100.jpg",
+	             "Bricklets/bricklet_io4_11_master_600.jpg",
+	             "IO-4 Bricklet with Master Brick")
 	}}
-	{{ 
-	    tfdocimg("Bricklets/bricklet_io4_brickv_100.jpg", 
-	             "Bricklets/bricklet_io4_brickv.jpg", 
-	             "Brick Viewer screenshot") 
+	{{
+	    tfdocimg("Bricklets/bricklet_io4_brickv_100.jpg",
+	             "Bricklets/bricklet_io4_brickv.jpg",
+	             "IO-4 Bricklet in Brick Viewer")
 	}}
-	{{ 
-	    tfdocimg("Dimensions/io4_bricklet_dimensions_100.png", 
-	             "Dimensions/io4_bricklet_dimensions_600.png", 
-	             "Outline and drilling plan") 
+	{{
+	    tfdocimg("Dimensions/io4_bricklet_dimensions_100.png",
+	             "Dimensions/io4_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
 	}}
 	{{ tfdocend() }}
 
@@ -43,7 +42,7 @@ IO-4 Bricklet
 Features
 --------
 
-* 4 inputs and outputs
+* 4-channel digital input/output
 * Fixed 3.3V logic voltage
 * Configurable pull-ups and interrupts
 
@@ -52,7 +51,7 @@ Description
 -----------
 
 The IO-4 :ref:`Bricklet <product_overview_bricklets>` can be used to extend the
-features of :ref:`Bricks <product_overview_bricks>` by external digital inputs 
+features of :ref:`Bricks <product_overview_bricks>` by external digital inputs
 and outputs.
 
 The Bricklet features 4 pins that can be independently configured as
@@ -60,40 +59,40 @@ digital inputs or outputs. Each input pin can additionally be configured with
 pull-ups or as interrupt source.
 
 Via terminal blocks all signals can be accessed.
-Two additional terminal blocks deliver the output voltage and GND. 
+Two additional terminal blocks deliver the output voltage and GND.
 
-Human interfaces, such as switches, push-buttons and LEDs are typical 
+Human interfaces, such as switches, push-buttons and LEDs are typical
 applications of this Bricklet.
 
 Hardware version 1.1 adds GND pins nearby the 4 signal pins to allow easier
 access between signal pins and GND.
 
+
 Technical Specifications
 ------------------------
 
-================================  ============================================================
+================================  =================================================================
 Property                          Value
-================================  ============================================================
-Dimensions                        35mm x 35mm (1.38" x 1.38")
-Weight                            13.9g
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
+================================  =================================================================
 Number of I/Os                    4
-I/O voltages                      Fixed 3.3V
-Maximum API Calls*                set_value (1khz), get_value (0.5khz), callback (1khz)
+I/O Voltages                      Fixed 3.3V
+Maximum API Calls*                ``set_value`` (1kHz), ``get_value`` (0.5kHz), callbacks (1kHz)
 Maximum Output Current            6mA
-================================  ============================================================
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
+Dimensions (W x D x H)            35 x 35 x 14mm (1.38 x 1.38 x 0.55")
+Weight                            14g
+================================  =================================================================
 
 \* depends on your system (OS, CPU etc.)
+
 
 Resources
 ---------
 
 * Schematic (`Download <https://github.com/Tinkerforge/io4-bricklet/raw/master/hardware/io-4-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/io4_bricklet_dimensions.png>`__)
-* Project source code and design files (`Download <https://github.com/Tinkerforge/io4-bricklet/zipball/master>`__)
-
-
+* Source code and design files (`Download <https://github.com/Tinkerforge/io4-bricklet/zipball/master>`__)
 
 
 .. _io4_bricklet_test:
@@ -122,29 +121,29 @@ use the GND pins directly beside the data pins.
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named 
+If you then connect the Brick to the PC over USB, you should see a tab named
 "IO-4 Bricklet" in the Brick Viewer after you pressed "connect". Select it.
 
 .. image:: /Images/Bricklets/bricklet_io4_brickv.jpg
    :scale: 100 %
-   :alt: Brickv view of the IO-4 Bricklet
+   :alt: IO-4 Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_brickv.jpg
 
 
-In this tab you can change the "Debounce Period", 
-it is the debounce time for interrupt callbacks. 
+In this tab you can change the "Debounce Period",
+it is the debounce time for interrupt callbacks.
 For example: If you set this value to 100, you will get interrupts
 maximal every 100ms. This is necessary if something that bounces is
 connected to the IO-4 Bricklet, such as a button. You can test the optimal
 value in the Brick Viewer and use it later in your own program.
-  
+
 Below the debounce period configuration you can configure the pins.
-Each pin can be configured as input/output and in case of an input pin 
+Each pin can be configured as input/output and in case of an input pin
 as pull-up. The current state is depicted in the tabular below.
 
-To test the LED we configure pin 3 as output and change 
-the value. When the pin is high the LED should light up. To test the button 
+To test the LED we configure pin 3 as output and change
+the value. When the pin is high the LED should light up. To test the button
 configure pin 0 as input pull-up. We need the pull-up to define a stable
 state when the button is not pressed. Now look in the tabular, you should
 see that you can change the value of the pin by toggling the button.
@@ -154,7 +153,7 @@ a voltage meter or connect a pin with GND or VCC to see changes in the
 Brick Viewer.
 
 After this you can go on with writing your own application.
-See the :ref:`Programming Interface <io4_programming_interfaces>` section for 
+See the :ref:`Programming Interface <io4_programming_interfaces>` section for
 the API of the IO-4 Bricklet and examples in different programming languages.
 
 .. _io4_programming_interfaces:

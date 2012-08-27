@@ -23,26 +23,26 @@ bricks = [('DC',      'dc',      bindings, 'Drives one brushed DC motor with max
           ('Stepper', 'stepper', bindings, 'Drives one bipolar stepper motor with max. 38V and 2.5A per phase')]
 
              # display,          uri,             bindings,  description
-bricklets = [('Ambient Light',  'ambient_light',  bindings, 'Ambient Light Sensor'),
-             ('Analog In',      'analog_in',      bindings, 'Measures voltages from 0 to 45V'),
-             ('Analog Out',     'analog_out',     bindings, 'Generates voltages from 0 to 5V'),
+bricklets = [('Ambient Light',  'ambient_light',  bindings, 'Measures ambient light up to 900Lux'),
+             ('Analog In',      'analog_in',      bindings, 'Measures voltages up to 45V'),
+             ('Analog Out',     'analog_out',     bindings, 'Generates configurable voltages up to 5V'),
              ('Breakout',       'breakout',       [],       'Makes all Bricklet signals available'),
-             ('Current12',      'current12',      bindings, 'Bidirectional Current Sensor max. 12.5 A'),
-             ('Current25',      'current25',      bindings, 'Bidirectional Current Sensor max. 25 A'),
-             ('Distance IR',    'distance_ir',    bindings, 'Measure Distances with IR Light'),
-             ('Dual Relay',     'dual_relay',     bindings, 'Equipped with two relays'),
-             ('Humidity',       'humidity',       bindings, 'Humidity Sensor'),
-             ('IO-16',          'io16',           bindings, 'Input/Output 16-Channel'),
-             ('IO-4',           'io4',            bindings, 'Input/Output 4-Channel'),
-             ('Joystick',       'joystick',       bindings, 'Two directional Joystick with Button'),
-             ('LCD 16x2',       'lcd_16x2',       bindings, '16x2 alphanummeric chars display with backlight'),
-             ('LCD 20x4',       'lcd_20x4',       bindings, '20x4 alphanummeric chars display with backlight'),
-             ('Linear Poti',    'linear_poti',    bindings, 'Linear Potentiometer'),
-             ('Piezo Buzzer',   'piezo_buzzer',   bindings, 'Buzzer for signaling'),
-             ('Rotary Poti',    'rotary_poti',    bindings, 'Rotary Potentiometer'),
-             ('Temperature',    'temperature',    bindings, 'High Precision Thermometer'),
-             ('Temperature IR', 'temperature_ir', bindings, 'Infrared Thermometer'),
-             ('Voltage',        'voltage',        bindings, 'Sensor to measure voltages')]
+             ('Current12',      'current12',      bindings, 'Bidirectional current sensor max. 12.5A'),
+             ('Current25',      'current25',      bindings, 'Bidirectional current sensor max. 25A'),
+             ('Distance IR',    'distance_ir',    bindings, 'Measures distances up to 150cm with IR light'),
+             ('Dual Relay',     'dual_relay',     bindings, 'Two relays to switch AC/DC devices'),
+             ('Humidity',       'humidity',       bindings, 'Measures relative humidity'),
+             ('IO-16',          'io16',           bindings, '16-channel digital input/output'),
+             ('IO-4',           'io4',            bindings, '4-channel digital input/output'),
+             ('Joystick',       'joystick',       bindings, '2-axis joystick with push-button'),
+             ('LCD 16x2',       'lcd_16x2',       bindings, '16x2 alphanumeric display with blue backlight'),
+             ('LCD 20x4',       'lcd_20x4',       bindings, '20x4 alphanumeric display with blue backlight'),
+             ('Linear Poti',    'linear_poti',    bindings, '59mm linear potentiometer'),
+             ('Piezo Buzzer',   'piezo_buzzer',   bindings, 'Beeps with 1kHz frequency'),
+             ('Rotary Poti',    'rotary_poti',    bindings, '300° rotary potentiometer'),
+             ('Temperature',    'temperature',    bindings, 'Measures ambient temperature with 0.5°C accuracy'),
+             ('Temperature IR', 'temperature_ir', bindings, 'Measures contactless object temperature from -70°C to 380°C'),
+             ('Voltage',        'voltage',        bindings, 'Measures voltages up to 50V')]
 
 def make_index_table(devices, category):
     table_head = """
