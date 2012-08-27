@@ -5,7 +5,7 @@ Product Overview
 
 There are four different types of hardware components:
 
-* :ref:`Bricks <product_overview_bricks>`: 
+* :ref:`Bricks <product_overview_bricks>`:
   Stackable microcontroller boards for sensing and controlling.
 * :ref:`Master Extensions <product_overview_master_extensions>`:
   Boards that extend the communication interfaces of a
@@ -34,13 +34,13 @@ Bricks
        :alt: Master Brick
        :align: center
        :target: _images/Bricks/brick_master_tilted_front_800.jpg
-	   
+
     - .. image:: /Images/Bricks/brick_dc_tilted_front_100.jpg
        :scale: 100 %
        :alt: DC Brick
        :align: center
        :target: _images/Bricks/brick_dc_tilted_front_800.jpg
-	   
+
     - .. image:: /Images/Bricks/brick_stepper_tilted_front_100.jpg
        :scale: 100 %
        :alt: Stepper Brick
@@ -59,22 +59,21 @@ Bricks
        :align: center
        :target: _images/Bricks/brick_imu_tilted_front_800.jpg
 
-
-Bricks are 4 x 4cm (1.57" x 1.57") boards equipped with a 32bit
-microcontroller, an USB port, two status LEDs, connectors for 
-stacking and up to four connectors for 
-:ref:`Bricklets <product_overview_bricklets>`. 
-There are Bricks that perform complex 
-sensor tasks (e.g. :ref:`IMU Brick <imu_brick>`), 
-communicate (e.g. :ref:`Master Brick <master_brick>`) 
+Bricks are 4 x 4cm (1.57 x 1.57") boards equipped with a 32-bit ARM
+microcontroller, an USB port, two status LEDs, connectors for
+stacking and up to four connectors for
+:ref:`Bricklets <product_overview_bricklets>`.
+There are Bricks that perform complex
+sensor tasks (e.g. :ref:`IMU Brick <imu_brick>`),
+communicate (e.g. :ref:`Master Brick <master_brick>`)
 and drive motors (e.g. :ref:`DC Brick <dc_brick>`).
 
 Bricks can be stacked together to a stack. A Master Brick
 at the bottom of this stack can control all boards within the stack.
 This master routes the messages between the boards in the stack and the PC
 (:ref:`High Level Programming Interface <pi_hlpi>`).
-For the user, the stack behaves as if all Bricks were connected separately 
-over USB with the PC. 
+For the user, the stack behaves as if all Bricks were connected separately
+over USB with the PC.
 See :ref:`Tutorial Stacking <tutorial_build_stacks>` for more information
 about stacks.
 
@@ -82,6 +81,7 @@ Besides the :ref:`High Level Programming Interface <pi_hlpi>` it is also
 possible to use Bricks with the :ref:`On Device Programming Interface <pi_hlpi>`.
 
 .. include:: Product_Overview_bricks.table
+
 
 .. _product_overview_master_extensions:
 
@@ -105,23 +105,23 @@ Master Extensions
        :target: _images/Extensions/extension_rs485_tilted_800.jpg
 
 When using the :ref:`High Level Programming Interface <pi_hlpi>` concept,
-:ref:`Master Bricks <master_brick>` can route messages between 
-:ref:`Bricks <product_overview_bricks>` and the PC. To establish a connection 
+:ref:`Master Bricks <master_brick>` can route messages between
+:ref:`Bricks <product_overview_bricks>` and the PC. To establish a connection
 between a PC and the Master Brick, typically the USB port is used.
 Master Extensions can be utilized to change the interface of a Master Brick.
 There are cable based and wireless Master Extensions available. From a
-programming perspective the different interfaces are transparent. 
+programming perspective the different interfaces are transparent.
 A stack with Master Extension behaves as if every board in the stack
 would be directly connected to the PC over an USB connection. This means:
 
 You can develop an application with all
-boards independently connected to the PC over USB. Later you can stack these 
+boards independently connected to the PC over USB. Later you can stack these
 boards together to stacks, add Master Bricks and cable based or wireless
 Extensions and you can run the previously written code without any changes.
 
 .. csv-table::
    :header: "Name", "Description"
-   :widths: 20, 70 
+   :widths: 20, 70
 
    ":ref:`chibi_extension`", "Wireless Chibi Master Extension"
    ":ref:`rs485_extension`", "Cable based RS485 Master Extension"
@@ -178,13 +178,13 @@ Bricklets
        :align: center
        :target: _images/Bricklets/bricklet_voltage_tilted_800.jpg
 
-Bricklets can be used to extend the features of 
+Bricklets can be used to extend the features of
 :ref:`Bricks <product_overview_bricks>`. There are Bricklets to measure
 physical values such as rotation, voltage, current and ambient light
 as well as Bricklets for control purposes such as
-switching relays, digital input/output and drawing on LCDs. 
+switching relays, digital input/output and drawing on LCDs.
 
-Unlike Bricks, Bricklets have no fixed size. Each Bricklet has the minimum 
+Unlike Bricks, Bricklets have no fixed size. Each Bricklet has the minimum
 size possible. Each Brick has up to four connectors for Bricklets.
 
 On startup a Brick detects connected Bricklets. The Bricklet plugins,
@@ -194,6 +194,7 @@ Brick. This adds methods to the Brick, that can then be called from the PC.
 See :ref:`High Level Programming Interface <pi_hlpi>` for more information.
 
 .. include:: Product_Overview_bricklets.table
+
 
 .. _product_overview_powersupplies:
 
@@ -211,8 +212,8 @@ Power Supplies
        :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
 
 A stack can be powered by the
-master of the stack over its USB connection. 
-This option is limited by the USB specification (500mA). 
+master of the stack over its USB connection.
+This option is limited by the USB specification (500mA).
 A large stack may need more power than 500mA.
 
 To provide greater currents, Power Supplies are available.
@@ -226,4 +227,3 @@ stacked in at the bottom of the stack.
    :widths: 30, 60
 
    ":ref:`step-down`", "Powers a stack with 6-27V input"
-

@@ -95,9 +95,9 @@ Microcontroller                                      ATSAM3S2B (128kB Flash, 32k
 Current Consumption                                  53mA
 ---------------------------------------------------  ------------------------------------------------------------
 ---------------------------------------------------  ------------------------------------------------------------
-Acceleration, Magnetic, Angular Velocity Resolution  16-bit
-Roll, Pitch, Yaw Resolution                          16-bit, output in 0.01 degree steps
-Quaternion Resolution                                32-bit
+Acceleration, Magnetic, Angular Velocity Resolution  16bit
+Roll, Pitch, Yaw Resolution                          16bit, in 0.01° steps
+Quaternion Resolution                                32bit
 ---------------------------------------------------  ------------------------------------------------------------
 ---------------------------------------------------  ------------------------------------------------------------
 Bricklet Ports                                       2
