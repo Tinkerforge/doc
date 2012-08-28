@@ -69,11 +69,12 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Sensor                            Switchable voltage divider
+Sensor                            Automatically switched voltage divider
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Voltage                           0V - 45V in 1mV steps, 12bit resolution
-Measurement Range                 Switched Automatically
+Measurement Range                 Automatically switched
+
                                   * 0V -  6.05V, ~1.48mV resolution
                                   * 0V - 10.32V, ~2.52mV resolution
                                   * 0V - 36.30V, ~8.86mV resolution
@@ -96,9 +97,10 @@ Resources
 Connectivity
 ------------
 
-The Analog In Bricklet has 4 terminals. With these terminals you can access
-ground, 3.3V, 5V (only output) and you can apply the voltage you want to
-measure (VIN). See picture below.
+The Analog In Bricklet has four terminals. With these terminals you can access
+the following output signals: 5V, 3.3V as well as GND. The voltage you want
+to measure can be applied between the VIN and the GND terminal.
+See picture below.
 
 .. image:: /Images/Bricklets/bricklet_analog_in_vertical_350.jpg
    :scale: 100 %

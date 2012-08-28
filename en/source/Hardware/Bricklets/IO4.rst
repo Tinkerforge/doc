@@ -57,9 +57,8 @@ and outputs.
 The Bricklet features 4 pins that can be independently configured as
 digital inputs or outputs. Each input pin can additionally be configured with
 pull-ups or as interrupt source.
-
 Via terminal blocks all signals can be accessed.
-Two additional terminal blocks deliver the output voltage and GND.
+Two additional terminal blocks deliver 3.3V and GND.
 
 Human interfaces, such as switches, push-buttons and LEDs are typical
 applications of this Bricklet.
@@ -75,9 +74,11 @@ Technical Specifications
 Property                          Value
 ================================  =================================================================
 Number of I/Os                    4
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
 I/O Voltages                      Fixed 3.3V
-Maximum API Calls*                ``set_value`` (1kHz), ``get_value`` (0.5kHz), callbacks (1kHz)
 Maximum Output Current            6mA
+Maximum API Calls*                ``set_value`` (1kHz), ``get_value`` (0.5kHz), callbacks (1kHz)
 --------------------------------  -----------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------
 Dimensions (W x D x H)            35 x 35 x 14mm (1.38 x 1.38 x 0.55")

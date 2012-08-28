@@ -124,7 +124,7 @@ Extensions and you can run the previously written code without any changes.
    :widths: 20, 70
 
    ":ref:`chibi_extension`", "Wireless Chibi Master Extension"
-   ":ref:`rs485_extension`", "Cable based RS485 Master Extension"
+   ":ref:`rs485_extension`", "Cablebased RS485 Master Extension"
 
 
 .. _product_overview_bricklets:

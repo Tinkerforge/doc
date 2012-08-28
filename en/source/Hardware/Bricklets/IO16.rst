@@ -48,7 +48,7 @@ Features
 --------
 
 * 16-channel digital input/output
-* Switchable logic voltage 3.3V or 5V**
+* Switchable logic voltage 3.3V or 5V*
 * Configurable pull-ups and interrupts
 
 
@@ -59,10 +59,10 @@ The IO-16 :ref:`Bricklet <product_overview_bricklets>` can be used to extend
 the features of :ref:`Bricks <product_overview_bricks>` by external digital
 inputs and outputs.
 
-The Bricklet features 2x8 pins that can be independently configured as
+The Bricklet features 2x 8 pins that can be independently configured as
 digital inputs or outputs. Each input pin can additionally be configured with
 pull-ups or as interrupt source. The input/output voltages can be switched
-manually between 3.3V and 5V**. Via terminal blocks all signals
+manually between 3.3V and 5V*. Via terminal blocks all signals
 and GND can be accessed. An additional terminal block
 delivers the switched output voltage.
 
@@ -76,24 +76,25 @@ Technical Specifications
 ================================  =================================================================
 Property                          Value
 ================================  =================================================================
-Number of I/Os                    2x8
-I/O Voltages                      Switchable between 3.3V and 5V**
+Number of I/Os                    16
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
+I/O Voltages                      Switchable between 3.3V and 5V*
 Maximum Output Current            20mA
-Maximum API Calls*                ``set_port`` (1kHz), ``get_port`` (> 0.25kHz), callbacks (1kHz)
+Maximum API Calls**               ``set_port`` (1kHz), ``get_port`` (> 0.25kHz), callbacks (1kHz)
 --------------------------------  -----------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------
 Dimensions (W x D x H)            35 x 75 x 14mm (1.38 x 2.95 x 0.55")
 Weight                            30g
 ================================  =================================================================
 
-\* depends on your system (OS, CPU etc.)
-
-\** The maximum output voltage depends on supply voltage. If the connected Brick is
+\* The maximum output voltage depends on supply voltage. If the connected Brick is
 powered over USB, 5V may not be reached. The reason for this is a voltage
-drop on our products caused by protection diodes. If your supply voltage
-has for example 4.7V, then you can generate voltages of up to 4.5V.
+drop about 0.5V caused by protection diodes on our products.
 If you need to reach 5V, you have to use a stack supply,
 e.g. the :ref:`Step-Down Power Supply <step-down>`.
+
+\** depends on your system (OS, CPU etc.)
 
 
 Resources

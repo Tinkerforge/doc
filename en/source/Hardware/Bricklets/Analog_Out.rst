@@ -43,7 +43,7 @@ Features
 --------
 
 * Generates configurable voltages up to 5V*
-* Output in 1mV steps (12bit resolution)
+* Specification in 1mV steps (12bit resolution)
 * Configurable with load resistor to ground
 
 
@@ -55,7 +55,7 @@ extend the features of :ref:`Bricks <product_overview_bricks>` by the
 capability to generate voltages between 0V and 5V*.
 The voltage can be configured directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`_ without any conversion.
-The device is equipped with a 12-bit `Digital to Analog Converter (DAC)
+The device is equipped with a 12-bit `Digital-to-Analog Converter (DAC)
 <http://en.wikipedia.org/wiki/Digital-to-analog_converter>`_.
 Instead of generating a voltage it is also possible to choose between a 1k,
 100k or 500k Ohm load resistor to ground (pull-down).
@@ -78,10 +78,9 @@ Dimensions (W x D x H)            30 x 25 x 14mm (1.18 x 0.98 x 0.55")
 Weight                            6g
 ================================  ============================================================
 
-\* The maximum output voltage depends on supply voltage. If the connected Brick is
-powered over USB, 5V may not be reached. The reason for this is a voltage
-drop on our products caused by protection diodes. If your supply voltage
-has for example 4.7V, then you can generate voltages of up to 4.5V.
+\* The maximum output voltage depends on the supply voltage. If the connected
+Brick is powered over USB, 5V may not be reached. The reason for this is a
+voltage drop about 0.5V caused by protection diodes on our products.
 If you need to reach 5V, you have to use a stack supply,
 e.g. the :ref:`Step-Down Power Supply <step-down>`.
 
@@ -98,9 +97,9 @@ Resources
 Connectivity
 ------------
 
-The Analog Out Bricklet has four screw terminals. All terminals are outputs.
-Connect VOUT and GND to output voltages. 3.3V and 5V are additional outputs
-with fixed voltages you can use to power things.
+The Analog Out Bricklet has four terminals. All terminals are outputs.
+Between VOUT and GND the output voltage is applied. 3.3V and 5V are
+additional outputs with fixed voltages you can use to power things.
 
 .. image:: /Images/Bricklets/bricklet_analog_out_vertical_350.jpg
     :scale: 100 %

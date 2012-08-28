@@ -104,12 +104,11 @@ Resources
 Connectivity
 ------------
 
-Each relay has three connectors A, SW and B. SW can be connected to A or B
-depending on the state of the relay.
+Each relay has three connectors: A, SW and B. SW is connected to A or B
+depending on the switching state of the relay.
 
 * If the relay is switched off, then SW is connected to B
 * If the relay is switched on, then SW is connected to A
-
 
 .. image:: /Images/Bricklets/bricklet_dual_relay_connection_350.jpg
    :scale: 100 %
