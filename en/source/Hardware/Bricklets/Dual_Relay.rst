@@ -117,24 +117,6 @@ depending on the switching state of the relay.
    :target: ../../_images/Bricklets/bricklet_dual_relay_connection_700.jpg
 
 
-.. _dual_relay_inductive_load_switching:
-
-Inductive Load Switching
-------------------------
-
-Without external components the switching of inductive loads can
-cause noise in the system and can lead to malfunctions or destroyed
-components. Typical examples for inductive loads are motors and solenoids,
-but these problems can also occur when switching e.g. fluorescent lamps.
-
-If you want to switch an inductive load you need external components,
-e.g. a `Varistor <http://en.wikipedia.org/wiki/Varistor>`_
-or a combination of a resistor and a capacitor parallel to the load.
-
-More information about protection circuitries can be found
-`here <http://www.jkmicro.com/inductive_loads.pdf>`_.
-
-
 .. _dual_relay_bricklet_test:
 
 Test your Dual Relay Bricklet
@@ -175,6 +157,24 @@ After this you can go on with writing your own application.
 See the :ref:`Programming Interface <dual_relay_programming_interfaces>` section
 for the API of the Dual Relay Bricklet and examples in different programming
 languages.
+
+
+.. _dual_relay_inductive_load_switching:
+
+Inductive Load Switching
+------------------------
+
+Without external components the switching of inductive loads can
+cause noise in the system and can lead to malfunctions or destroyed
+components. Typical examples for inductive loads are motors and solenoids,
+but these problems can also occur when switching e.g. fluorescent lamps.
+
+If you want to switch an inductive load you need external components,
+e.g. a `Varistor <http://en.wikipedia.org/wiki/Varistor>`__
+or a combination of a resistor and a capacitor parallel to the load.
+
+More information about protection circuitries can be found
+`here <http://www.jkmicro.com/inductive_loads.pdf>`__.
 
 
 .. _dual_relay_programming_interfaces:

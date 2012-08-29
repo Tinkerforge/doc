@@ -93,14 +93,6 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/lcd-16x2-bricklet/zipball/master>`__)
 
 
-Change LCD's contrast
----------------------
-
-To modify the contrast you have to
-turn the potentiometer on the Bricklet with a screwdriver.
-The potentiometer is attached next to the Bricklet connector.
-
-
 .. _lcd_16x2_bricklet_test:
 
 Test your LCD 16x2 Bricklet
@@ -144,6 +136,13 @@ See the :ref:`Programming Interface <lcd_16x2_programming_interfaces>` section
 for the API of the LCD 16x2 Bricklet and examples in different
 programming languages.
 
+
+Change LCD's contrast
+---------------------
+
+To modify the contrast you have to
+turn the potentiometer on the Bricklet with a screwdriver.
+The potentiometer is attached next to the Bricklet connector.
 
 
 .. _lcd_16x2_programming_interfaces:
