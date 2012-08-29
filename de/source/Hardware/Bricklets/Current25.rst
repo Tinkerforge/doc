@@ -93,12 +93,11 @@ Ressourcen
 Teste dein Current25 Bricklet
 -----------------------------
 
-To test the Current25 Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das Current25 Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Now you can connect the Current25 Bricklet to any
 :ref:`Brick <product_overview_bricks>`. You should have received a suitable
@@ -109,13 +108,14 @@ produces a current).
 
 .. image:: /Images/Bricklets/bricklet_current_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected Current25 Bricklet, Battery and Motor
+   :alt: Current25 Bricklet mit Batterie und Motor verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_current_master_1200.jpg
 
-If you connect the Brick to the PC over USB,
-you should see a tab named "Current25 Bricklet" in the Brick Viewer after you
-pressed "connect". Select this tab.
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "Current25 Bricklet" auftauchen.
+Wähle diesen Tab aus.
+
 If everything went as expected you can now see the current used by the
 motor and a graph that shows the current over time.
 
@@ -128,9 +128,10 @@ motor and a graph that shows the current over time.
 In the screenshot you can see a high current peak. This is caused by the
 starting of the motor when the battery is connected.
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <current25_programming_interfaces>` section for
-the API of the Current25 Bricklet and examples in different programming languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <current25_programming_interfaces>` über das
+API des Current25 Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 .. _current25_programming_interfaces:

@@ -92,12 +92,11 @@ Ressourcen
 Teste dein Joystick Bricklet
 ----------------------------
 
-To test the Joystick Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das Joystick Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Connect the Joystick Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable
@@ -105,12 +104,13 @@ Connect the Joystick Bricklet to a
 
 .. image:: /Images/Bricklets/bricklet_joystick_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected Joystick Bricklet
+   :alt: Joystick Bricklet verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_joystick_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named
-"Joystick Bricklet" in the Brick Viewer after you pressed "connect". Select it.
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "Joystick Bricklet" auftauchen.
+Wähle diesen Tab aus.
 
 .. image:: /Images/Bricklets/bricklet_joystick_brickv.jpg
    :scale: 100 %
@@ -128,10 +128,10 @@ joystick first up, then down, then right and then end left.
 If the Brick Viewer does not show Position (0,0) when the joystick is
 in resting position, press the "Calibrate (0,0)" button.
 
-After this you can go on with writing your own application.
-See the :ref:`Programming Interface <joystick_programming_interfaces>` section
-for the API of the Joystick Bricklet and examples in different programming
-languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <joystick_programming_interfaces>` über das
+API des Joystick Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 .. _joystick_programming_interfaces:

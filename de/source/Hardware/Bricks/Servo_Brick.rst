@@ -156,12 +156,11 @@ Servo Bricks.
 Teste deinen Servo Brick
 ------------------------
 
-To test the Servo Brick you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um den Servo Brick testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Connect a RC servo to a port of the Brick and a suitable power supply.
 Your setup should look as shown below.
@@ -203,9 +202,9 @@ a test sequence that performs random movements for each servo.
 To start testing enable servo 0 and play around with the controls
 or let the Brick Viewer perform a test.
 
-After this you can go on with writing your own application.
-See the :ref:`Programming Interface <servo_brick_programming_interfaces>` section for
-the API of the Servo Brick and examples in different programming languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <servo_brick_programming_interfaces>` über das
+API des Servo Bricks und Beispiele in verschiedenen Programmiersprachen.
 
 
 .. _servo_brick_configure_servo_pwm:
@@ -265,7 +264,6 @@ motor to the ESC and the ESC to the Servo Brick. With this construction
 the maximum brushless motor current only depends on your selected ESC.
 
 .. warning::
-
    Many ESC's have a build-in BEC which can be used to power RC receivers.
    If you use a ESC with BEC you have to disable it! Otherwise your ESC or
    the Brick can be destroyed. To disable BEC you have to remove the red

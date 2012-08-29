@@ -111,12 +111,11 @@ zeigt die vier Anschlussklemmen.
 Teste dein Analog In Bricklet
 -----------------------------
 
-To test the Analog In Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das Analog In Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Connect the Analog In Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable.
@@ -125,14 +124,14 @@ For testing purposes we have connected a battery.
 
 .. image:: /Images/Bricklets/bricklet_analog_in_master_600.jpg
    :scale: 100 %
-   :alt: Analog In Bricklet connected to Master Brick
+   :alt: Analog In Bricklet verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_in_master_1200.jpg
 
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "Analog In Bricklet" auftauchen.
+Wähle diesen Tab aus.
 
-If you connect the Brick to the PC over USB,
-you should see a tab named "Analog In Bricklet" in the Brick Viewer after you
-pressed "connect". Select this tab.
 If everything went as expected you can now see the voltage in Volt
 and a graph that shows the voltage over time.
 
@@ -142,10 +141,10 @@ and a graph that shows the voltage over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_in_brickv.jpg
 
-After this you can go on with writing your own application.
-See the :ref:`Programming Interface <analog_in_programming_interfaces>` section
-for the API of the Analog In Bricklet and examples in different
-programming languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <analog_in_programming_interfaces>` über das
+API des Analog In Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 .. _analog_in_programming_interfaces:

@@ -90,12 +90,11 @@ Ressourcen
 Teste dein Piezo Buzzer Bricklet
 --------------------------------
 
-To test the Piezo Buzzer Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das Piezo Buzzer Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 For a simple test connect the Piezo Buzzer Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable
@@ -103,13 +102,14 @@ For a simple test connect the Piezo Buzzer Bricklet to a
 
 .. image:: /Images/Bricklets/bricklet_piezo_buzzer_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected Piezo Buzzer Bricklet
+   :alt: Piezo Buzzer Bricklet verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_piezo_buzzer_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named
-"Piezo Buzzer Bricklet" in the Brick Viewer after you pressed "connect".
-Select it.
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "Piezo Buzzer Bricklet" auftauchen.
+Wähle diesen Tab aus.
+
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
@@ -122,10 +122,10 @@ depicted below.
 Generate a beep by pressing "Send Beep". You should hear a beep with the
 specified duration.
 
-You can now go on with writing your own application.
-See the :ref:`Programming Interface <piezo_buzzer_programming_interfaces>`
-section for the API of the Piezo Buzzer Bricklet and examples in your
-programming language.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <piezo_buzzer_programming_interfaces>` über das
+API des Piezo Buzzer Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 .. _piezo_buzzer_programming_interfaces:

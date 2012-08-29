@@ -3,8 +3,9 @@
 Brick Viewer (brickv)
 =====================
 
-The Brick Viewer can be used to test :ref:`Bricks <product_overview_bricks>` 
-and :ref:`Bricklets <product_overview_bricklets>`. Each device has its own 
+Der Brick Viewer bietet eine graphische Oberfläche um
+:ref:`Bricks <product_overview_bricks>` und
+:ref:`Bricklets <product_overview_bricklets>` zu testen. Each device has its own
 view that shows the main features and allows to control them.
 
 Additionally brickv can be used to calibrate the analog to digital converter

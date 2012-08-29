@@ -99,12 +99,11 @@ Ressourcen
 Teste dein IO-4 Bricklet
 ------------------------
 
-To test the IO-4 Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das IO-4 Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Connect the IO-4 Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable.
@@ -116,12 +115,13 @@ use the GND pins directly beside the data pins.
 
 .. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected IO-4 Bricklet
+   :alt: IO-4 Bricklet verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named
-"IO-4 Bricklet" in the Brick Viewer after you pressed "connect". Select it.
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "IO-4 Bricklet" auftauchen.
+Wähle diesen Tab aus.
 
 .. image:: /Images/Bricklets/bricklet_io4_brickv.jpg
    :scale: 100 %
@@ -150,9 +150,10 @@ If you don't have a button or a LED you can try to measure voltages with
 a voltage meter or connect a pin with GND or VCC to see changes in the
 Brick Viewer.
 
-After this you can go on with writing your own application.
-See the :ref:`Programming Interface <io4_programming_interfaces>` section for
-the API of the IO-4 Bricklet and examples in different programming languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <io4_programming_interfaces>` über das
+API des IO-4 Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 .. _io4_programming_interfaces:

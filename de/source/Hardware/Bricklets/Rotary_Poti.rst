@@ -100,12 +100,11 @@ Ressourcen
 Teste dein Rotary Poti Bricklet
 -------------------------------
 
-To test the Rotary Poti Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das Rotary Poti Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Connect the Rotary Potentiometer Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable
@@ -113,13 +112,14 @@ Connect the Rotary Potentiometer Bricklet to a
 
 .. image:: /Images/Bricklets/bricklet_rotary_poti_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected Rotary Poti Bricklet
+   :alt: Rotary Poti Bricklet verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_rotary_poti_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named
-"Rotary Poti Bricklet" in the Brick Viewer after you pressed "connect".
-Select it.
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "Rotary Poti Bricklet" auftauchen.
+Wähle diesen Tab aus.
+
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
@@ -133,10 +133,10 @@ Turn the potentiometer.
 You should be able to create a similar graph by turning the potentiometer
 from left left to right and back to left.
 
-After this you can go on with writing your own application.
-See the :ref:`Programming Interface <rotary_poti_programming_interfaces>`
-section for the API of the Rotary Poti Bricklet and examples in different
-programming languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <rotary_poti_programming_interfaces>` über das
+API des Rotary Poti Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 .. _rotary_poti_programming_interfaces:

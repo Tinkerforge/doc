@@ -113,12 +113,11 @@ Ressourcen
 Teste dein Distance IR Bricklet
 -------------------------------
 
-To test the Distance IR Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das Distance IR Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Connect an infrared distance sensor to the Bricklet and connect it
 to a :ref:`Brick <product_overview_bricks>`.
@@ -126,13 +125,14 @@ You should have received a suitable cable with the Bricklet.
 
 .. image:: /Images/Bricklets/bricklet_distance_ir_master_600.jpg
    :scale: 100 %
-   :alt: Distance IR Bricklet with infrared distance sensor connected to Master Brick
+   :alt: Distance IR Bricklet mit IR Sensor verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_ir_master_1200.jpg
 
-If you then connect the Brick to the PC over USB,
-you should see a tab named "Distance IR Bricklet" in the Brick Viewer after you
-pressed "connect". Select it.
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "Distance IR Bricklet" auftauchen.
+Wähle diesen Tab aus.
+
 If everything went as expected you can now see the measured distance
 of the sensor, the output voltage of the IR distance sensor
 and a graph that shows the distance over time.
@@ -147,10 +147,10 @@ away from the sensor and to the sensor again.
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_ir_brickv.jpg
 
-You can now go on with writing your own application.
-See the :ref:`Programming Interface <distance_ir_programming_interfaces>` section
-for the API of the Distance IR Bricklet and examples in different programming
-languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <distance_ir_programming_interfaces>` über das
+API des Distance IR Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 .. _distance_ir_sensor_configuration:

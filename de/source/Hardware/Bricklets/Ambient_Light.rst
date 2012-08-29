@@ -91,12 +91,11 @@ Ressourcen
 Teste dein Ambient Light Bricklet
 ---------------------------------
 
-To test the Ambient Light Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das Ambient Light Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Now you can connect the Ambient Light Bricklet to any
 :ref:`Brick <product_overview_bricks>`. You should have received a suitable
@@ -104,13 +103,13 @@ cable with the Bricklet.
 
 .. image:: /Images/Bricklets/bricklet_ambient_light_master_600.jpg
    :scale: 100 %
-   :alt: Ambient Light Bricklet connected to Master Brick
+   :alt: Ambient Light Bricklet verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_ambient_light_master_1200.jpg
 
-If you then connect the Brick to the PC over USB,
-you should see a tab named "Ambient Light Bricklet" in the Brick Viewer after
-you pressed "connect". Select it.
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "Ambient Light Bricklet" auftauchen.
+Wähle diesen Tab aus.
 
 If everything went as expected you can now see the illuminance in lux,
 a graphical representation of the illuminance and a graph that shows the
@@ -124,9 +123,10 @@ approximately as in the screenshot shown below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_ambient_light_brickv.jpg
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <ambient_light_programming_interfaces>` section for
-the API of the Ambient Light Bricklet and examples in different programming languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <ambient_light_programming_interfaces>` über das
+API des Ambient Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 .. _ambient_light_programming_interfaces:

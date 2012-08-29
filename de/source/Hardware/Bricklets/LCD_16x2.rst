@@ -100,12 +100,11 @@ Ressourcen
 Teste dein LCD 16x2 Bricklet
 ----------------------------
 
-To test the LCD 16x2 Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das LCD 16x2 Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Connect the LCD 16x2 Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable
@@ -113,12 +112,14 @@ Connect the LCD 16x2 Bricklet to a
 
 .. image:: /Images/Bricklets/bricklet_lcd_16x2_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected LCD 16x2 Bricklet
+   :alt: LCD 16x2 Bricklet verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_lcd_16x2_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named
-"LCD 16x2 Bricklet" in the Brick Viewer after you pressed "connect". Select it.
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "LCD 16x2 Bricklet" auftauchen.
+Wähle diesen Tab aus.
+
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
@@ -133,10 +134,10 @@ You can choose the line and the start position at which the text is displayed.
 Press "Send Text" to display it. Press "Backlight On" to turn the backlight on.
 Play around with the three on-board buttons and look how their values change.
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <lcd_16x2_programming_interfaces>` section
-for the API of the LCD 16x2 Bricklet and examples in different
-programming languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <lcd_16x2_programming_interfaces>` über das
+API des LCD 16x2 Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 Change LCD's contrast

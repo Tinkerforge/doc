@@ -88,12 +88,11 @@ Ressourcen
 Teste dein Voltage Bricklet
 ---------------------------
 
-To test the Voltage Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um das Voltage Bricklet testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Connect the Voltage Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable.
@@ -103,13 +102,14 @@ For testing purposes we have connected a battery
 
 .. image:: /Images/Bricklets/bricklet_voltage_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected Voltage Bricklet and Battery
+   :alt: Voltage Bricklet mit Batterie verbunden mit Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_master_1200.jpg
 
-If you connect the Brick to the PC over USB,
-you should see a tab named "Voltage Bricklet" in the Brick Viewer after you
-pressed "connect". Select this tab.
+Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+im Brick Viewer ein neuer Tab namens "Voltage Bricklet" auftauchen.
+Wähle diesen Tab aus.
+
 If everything went as expected you can now see the voltage in volt
 and a graph that shows the voltage over time.
 
@@ -119,10 +119,10 @@ and a graph that shows the voltage over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_brickv.jpg
 
-After this you can go on with writing your own application.
-See the :ref:`Programming Interface <voltage_programming_interfaces>` section
-for the API of the Voltage Bricklet and examples in different
-programming languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <voltage_programming_interfaces>` über das
+API des Voltage Bricklets und Beispiele in verschiedenen
+Programmiersprachen.
 
 
 .. _voltage_programming_interfaces:

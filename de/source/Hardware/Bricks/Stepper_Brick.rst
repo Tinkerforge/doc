@@ -144,12 +144,11 @@ Stepper Bricks.
 Teste deinen Stepper Brick
 --------------------------
 
-To test the Stepper Brick you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+Um den Stepper Brick testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
+dem Brick Daemon verbunden sein.
 
 Connect a stepper motor to the Brick and a suitable power supply
 (see :ref:`here <stepper_brick_connectivity>`). Your setup should look
@@ -198,9 +197,9 @@ motor current can be configured according to the connected motor.
 To start testing set a motor current suitable for your stepper motor, enable
 the driver and play around with the controls.
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <stepper_brick_programming_interfaces>` section
-for the API of the Stepper Brick and examples in different programming languages.
+Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
+:ref:`Programmierschnittstellen <stepper_brick_programming_interfaces>` über das
+API des Stepper Bricks und Beispiele in verschiedenen Programmiersprachen.
 
 
 Power Supply
