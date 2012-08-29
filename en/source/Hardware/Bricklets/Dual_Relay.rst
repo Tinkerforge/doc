@@ -56,7 +56,7 @@ Description
 
 The Dual Relay :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend the features of :ref:`Bricks <product_overview_bricks>` by two
-`relays <http://en.wikipedia.org/wiki/Relay>`_. Each relay has three
+`relays <http://en.wikipedia.org/wiki/Relay>`__. Each relay has three
 terminals such that the terminal in the middle is electrically connected to
 the terminal left or right depending on the state.
 The state is visualized by a LED.

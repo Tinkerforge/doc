@@ -54,7 +54,7 @@ The Temperature :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend the features of :ref:`Bricks <product_overview_bricks>` by the
 capability to measure temperature.
 The measured temperature can be read out in `°C
-<http://en.wikipedia.org/wiki/Degree_Celsius>`_.
+<http://en.wikipedia.org/wiki/Degree_Celsius>`__.
 With configurable events it is possible to react on changing
 temperatures without polling.
 

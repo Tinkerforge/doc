@@ -57,7 +57,7 @@ Description
 
 The Distance IR :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend the features of :ref:`Bricks <product_overview_bricks>` by the
-capability to measure distances. `Sharp <http://www.sharpsma.com>`_ analog
+capability to measure distances. `Sharp <http://www.sharpsma.com>`__ analog
 infrared proximity sensors can be attached to the Bricklet.
 After configuring the attached sensor you can read out the measured distance
 in millimeters. With configurable events it is possible to react on changing
@@ -78,7 +78,7 @@ Sensor                            GP2Y0A41 or GP2Y0A21 or GP2Y0A02
 Current Consumption               See sensor datasheet
 --------------------------------  ------------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------------
-Distance                          Depends on attached `Sharp <http://www.sharpsma.com>`_ IR Sensor:
+Distance                          Depends on attached `Sharp <http://www.sharpsma.com>`__ IR Sensor:
 
                                   * GP2Y0A41:   4cm -  30cm (1.57" - 11.81")
                                   * GP2Y0A21:  10cm -  80cm (3.94" - 31.50")

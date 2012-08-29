@@ -23,7 +23,7 @@ bricks = [('DC',      'dc',      bindings, 'Drives one brushed DC motor with max
           ('Stepper', 'stepper', bindings, 'Drives one bipolar stepper motor with max. 38V and 2.5A per phase')]
 
              # display,          uri,             bindings,  description
-bricklets = [('Ambient Light',  'ambient_light',  bindings, 'Measures ambient light up to 900Lux'),
+bricklets = [('Ambient Light',  'ambient_light',  bindings, 'Measures ambient light up to 900lux'),
              ('Analog In',      'analog_in',      bindings, 'Measures voltages up to 45V'),
              ('Analog Out',     'analog_out',     bindings, 'Generates configurable voltages up to 5V'),
              ('Breakout',       'breakout',       [],       'Makes all Bricklet signals available'),

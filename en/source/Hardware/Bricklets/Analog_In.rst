@@ -54,7 +54,7 @@ The Analog In :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend the features of :ref:`Bricks <product_overview_bricks>` by the
 capability to measure voltages.
 The voltage can be read out in `Volt
-<http://en.wikipedia.org/wiki/Volt>`_ directly without conversions necessary.
+<http://en.wikipedia.org/wiki/Volt>`__ directly without conversions necessary.
 The device has 4 different measurement ranges.
 Each range is measured with 12bit resolution such that lower voltages can be
 measured more accurate than larger voltages (see technical specifications below).

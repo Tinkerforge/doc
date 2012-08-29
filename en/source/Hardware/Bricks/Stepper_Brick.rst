@@ -218,7 +218,7 @@ Decay Modes
 -----------
 
 A good explanation of decay modes can be found
-`here <http://robot.avayanex.com/?p=86/>`_.
+`here <http://robot.avayanex.com/?p=86/>`__.
 
 A good decay mode is unfortunately different for every motor. The best
 way to work out a good decay mode for your stepper motor, if you can't

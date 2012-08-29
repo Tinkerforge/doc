@@ -494,7 +494,8 @@ For Android the normal Java bindings can be used
 In the following we assume that you already have the Android development
 environment installed. If you are just starting with Android development,
 you should first complete the
-`hello world tutorial <http://developer.android.com/resources/tutorials/hello-world.html>`__ from Google.
+`hello world tutorial
+<http://developer.android.com/resources/tutorials/hello-world.html>`__ from Google.
 
 As an example we will create a small project that can toggle
 a relay. It should be easy to adjust this example for your needs.

@@ -250,8 +250,7 @@ internal power supply please consider that the input voltage of the Brick has
 to be 1V higher than the configured output voltage to assure stable operation.
 
 .. warning::
-
-   A too high output voltage can damage your servo.
+ A too high output voltage can damage your servo.
 
 
 Usage of RC ESC to drive brushless motors

@@ -91,7 +91,8 @@ To install Brick Viewer from the console use the following::
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
  sudo dpkg -i brickv_linux_latest.deb
 
-To install Brick Viewer from source, download the source from `here <https://github.com/Tinkerforge/brickv>`__ and install the dependencies:
+To install Brick Viewer from source, download the source from
+`here <https://github.com/Tinkerforge/brickv>`__ and install the dependencies:
 
 * python-qt4 
 * python-qt4-gl

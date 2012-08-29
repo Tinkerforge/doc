@@ -159,7 +159,8 @@ To install Brick Daemon from the console use the following::
  sudo apt-get install python-twisted python-gudev libusb-1.0-0
  sudo dpkg -i brickd_linux_latest.deb
 
-To install Brick Daemon from source, download the source from `here <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
+To install Brick Daemon from source, download the source from
+`here <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
 * python-twisted 
 * python-gudev 
