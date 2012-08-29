@@ -8,8 +8,8 @@ DC Brick
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_dc_tilted_front_350.jpg",
-	             "Bricks/brick_dc_tilted_front_600.jpg",
-	             "DC Brick")
+	               "Bricks/brick_dc_tilted_front_600.jpg",
+	               "DC Brick")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_dc_tilted_back_100.jpg",
@@ -65,7 +65,7 @@ die Geschwindigkeit und Beschleunigung des Motors können gesteuert werden.
 Im Falle einer Überhitzung oder Überspannung werden Callbacks ausgelöst.
 Ein "Undervoltage" Callback kann genutzt werden um Batterien oder Akkus
 vor Tiefenentladung zu schützen.
-Zusätzlich kann der Fahrmodus zwischen Drive/Brake und Drive/Coast umgeschalten
+Zusätzlich kann der Fahrmodus zwischen Drive/Brake und Drive/Coast umgeschaltet
 werden (siehe :ref:`Fahrmodus <dc_brick_drive_mode>`).
 
 Der Brick ist kompatibel zu anderen Tinkerforge
@@ -81,7 +81,7 @@ Stromversorgung um, sobald eine angeschlossen wird.
 Über eine **USB** Verbindung kann der Brick von einem PC gesteuert werden.
 Über einen zusätzlichen Master Brick mit Master Extension ist es möglich diese
 USB Verbindung durch kabelgebundene Schnittstellen (**RS485**, **Ethernet**)
-oder kabellose Schnittstellen (**WLAN**) zu ersetzen
+oder drahtlose Schnittstellen (**WLAN**) zu ersetzen
 (:ref:`High Level Konzept <pi_hlpi>`).
 
 Da die Firmware Open Source ist, ist es natürlich auch möglich den Brick direkt
@@ -99,8 +99,8 @@ Mikrocontroller                      ATSAM3S2B (128kB Flash, 32kB RAM)
 Stromverbrauch                       53mA
 -----------------------------------  --------------------------------------------------------------------
 -----------------------------------  --------------------------------------------------------------------
-Maximaler Motorstrom                 Kurzzeitig: 5A (Peak)
-                                     Dauerhaft: > 3A (Abhängig von der Kühlung)
+Maximaler Motorstrom                 | Kurzzeitig: 5A (Peak)
+                                     | Dauerhaft: > 3A (Abhängig von der Kühlung)
 Minimale/Maximale Eingangsspannung   6V/28V
 -----------------------------------  --------------------------------------------------------------------
 -----------------------------------  --------------------------------------------------------------------
@@ -141,8 +141,8 @@ DC Bricks.
 
 .. _dc_brick_test:
 
-Test your DC Brick
-------------------
+Teste deinen DC Brick
+---------------------
 
 To test the DC Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`

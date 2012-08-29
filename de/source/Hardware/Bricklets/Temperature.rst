@@ -3,39 +3,38 @@
 Temperature Bricklet
 ====================
 
-
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{ 
-	    tfdocstart("Bricklets/bricklet_temperature_tilted_350.jpg", 
-	             "Bricklets/bricklet_temperature_tilted_600.jpg", 
-	             "Temperature Bricklet") 
+	{{
+	    tfdocstart("Bricklets/bricklet_temperature_tilted_350.jpg",
+	               "Bricklets/bricklet_temperature_tilted_600.jpg",
+	               "Temperature Bricklet")
 	}}
-	{{ 
-	    tfdocimg("Bricklets/bricklet_temperature_vertical_100.jpg", 
-	             "Bricklets/bricklet_temperature_vertical_600.jpg", 
-	             "Temperature Bricklet") 
+	{{
+	    tfdocimg("Bricklets/bricklet_temperature_vertical_100.jpg",
+	             "Bricklets/bricklet_temperature_vertical_600.jpg",
+	             "Temperature Bricklet")
 	}}
-	{{ 
-	    tfdocimg("Bricklets/bricklet_temperature_horizontal_100.jpg", 
-	             "Bricklets/bricklet_temperature_horizontal_600.jpg", 
-	             "Temperature Bricklet") 
+	{{
+	    tfdocimg("Bricklets/bricklet_temperature_horizontal_100.jpg",
+	             "Bricklets/bricklet_temperature_horizontal_600.jpg",
+	             "Temperature Bricklet")
 	}}
-	{{ 
-	    tfdocimg("Bricklets/bricklet_temperature_master_100.jpg", 
-	             "Bricklets/bricklet_temperature_master_600.jpg", 
-	             "Temperature Bricklet with Master Brick") 
+	{{
+	    tfdocimg("Bricklets/bricklet_temperature_master_100.jpg",
+	             "Bricklets/bricklet_temperature_master_600.jpg",
+	             "Temperature Bricklet mit Master Brick")
 	}}
-	{{ 
-	    tfdocimg("Bricklets/bricklet_temperature_brickv_100.jpg", 
-	             "Bricklets/bricklet_temperature_brickv.jpg", 
-	             "Brick Viewer screenshot") 
+	{{
+	    tfdocimg("Bricklets/bricklet_temperature_brickv_100.jpg",
+	             "Bricklets/bricklet_temperature_brickv.jpg",
+	             "Temperature Bricklet im Brick Viewer")
 	}}
-	{{ 
-	    tfdocimg("Dimensions/temperature_bricklet_dimensions_100.png", 
-	             "Dimensions/temperature_bricklet_dimensions_600.png", 
-	             "Outline and drilling plan") 
+	{{
+	    tfdocimg("Dimensions/temperature_bricklet_dimensions_100.png",
+	             "Dimensions/temperature_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
 	}}
 	{{ tfdocend() }}
 
@@ -43,53 +42,53 @@ Temperature Bricklet
 Features
 --------
 
-* Measures ambient temperature with 0.5°C accuracy
-* Temperature range -40°C to 125°C
-* Output temperature in °C, unit 0.1°C
-* 12bit resolution
+* Misst Umgebungstemperatur mit **0,5°C** Genauigkeit
+* Temperaturbereich von -40°C bis 125°C
+* Ausgabe in 0,1°C Schritten (12Bit Auflösung)
 
 
-Description
------------
-The Temperature :ref:`Bricklet <product_overview_bricklets>` can be used to 
-extend the features of :ref:`Bricks <product_overview_bricks>` by the
-capability to measure temperature. 
-The measured temperature can be read out in `°C
-<http://en.wikipedia.org/wiki/Degree_Celsius>`_.
-With configurable events it is possible to react on changing 
-temperatures without polling.
+Beschreibung
+------------
 
-Technical Specifications
+Mit dem Temperature :ref:`Bricklet <product_overview_bricklets>` können
+:ref:`Bricks <product_overview_bricks>` Temperaturen messen. Die gemessene
+Temperatur kann in `°C
+<http://de.wikipedia.org/wiki/Grad_Celsius>`__ ausgelesen werden. Zusätzlich
+können Events konfiguriert werden die ausgelöst werden wenn eine bestimmte
+Temperatur über- oder unterschritten wird.
+
+
+Technische Spezifikation
 ------------------------
 
 ================================  ============================================================
-Property                          Value
+Eigenschaft                       Wert
 ================================  ============================================================
-Dimensions                        15mm x 25mm (0.59" x 0.98")
-Weight                            1.4g
 Sensor                            TMP102
-Temperature range                 -40°C to 125°C
-Accuracy                          0.5°C
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Output: Ambient temperature       -40°C to 125°C, unit 0.1°C, resolution 12bit 
+Umgebungstemperatur               -40°C bis 125°C in 0,1°C Schritten (12Bit Auflösung)
+Genauigkeit                       0,5°C
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           25 x 15 x 5 mm (0,98 x 0,59 x 0,19")
+Gewicht                           2g
 ================================  ============================================================
 
-Resources
----------
 
-* TMP102 Datasheet (`Download <https://github.com/Tinkerforge/temperature-bricklet/raw/master/datasheets/tmp102.pdf>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/temperature-bricklet/raw/master/hardware/temperature-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/temperature_bricklet_dimensions.png>`__)
-* Project source code and design files (`Download <https://github.com/Tinkerforge/temperature-bricklet/zipball/master>`__)
+Ressourcen
+----------
 
-
+* TMP102 Datenblatt (`Download <https://github.com/Tinkerforge/temperature-bricklet/raw/master/datasheets/tmp102.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/temperature-bricklet/raw/master/hardware/temperature-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/temperature_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/temperature-bricklet/zipball/master>`__)
 
 
 .. _temperature_bricklet_test:
 
-Test your Temperature Bricklet
-------------------------------
+Teste dein Temperature Bricklet
+-------------------------------
 
 To test the Temperature Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
@@ -98,8 +97,8 @@ and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
 language API bindings, the latter is for testing purposes.
 
-Connect the Temperature Bricklet to a 
-:ref:`Brick <product_overview_bricks>` with the supplied cable 
+Connect the Temperature Bricklet to a
+:ref:`Brick <product_overview_bricks>` with the supplied cable
 (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_temperature_master_600.jpg
@@ -108,35 +107,36 @@ Connect the Temperature Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named 
-"Temperature Bricklet" in the Brick Viewer after you pressed "connect". 
+If you then connect the Brick to the PC over USB, you should see a tab named
+"Temperature Bricklet" in the Brick Viewer after you pressed "connect".
 Select it.
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
 .. image:: /Images/Bricklets/bricklet_temperature_brickv.jpg
    :scale: 100 %
-   :alt: Brickv view of Temperature Bricklet
+   :alt: Temperature Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_brickv.jpg
 
-Put your finger on the sensor to see the 
+Put your finger on the sensor to see the
 temperature rising (or falling if it is extremely warm in your room).
 
 You can now go on with writing your own application.
 See the :ref:`Programming Interface <temperature_programming_interfaces>`
-section for the API of the Temperature Bricklet and examples in different 
+section for the API of the Temperature Bricklet and examples in different
 programming languages.
 
 
 .. _temperature_programming_interfaces:
 
-Programming Interfaces
-----------------------
+Programmierschnittstellen
+-------------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+High Level Programmierschnittstelle
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Beschreibung.
 
 .. include:: Temperature_hlpi.table

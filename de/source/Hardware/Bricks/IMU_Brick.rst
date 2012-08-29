@@ -8,8 +8,8 @@ IMU Brick
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_imu_tilted_front_350.jpg",
-	             "Bricks/brick_imu_tilted_front_600.jpg",
-	             "IMU Brick")
+	               "Bricks/brick_imu_tilted_front_600.jpg",
+	               "IMU Brick")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_imu_tilted_back_100.jpg",
@@ -55,7 +55,7 @@ Beschreibung
 Der IMU :ref:`Brick <product_overview_bricks>` ist mit einem 32-Bit ARM
 Mikrocontroller und einem `Inertialsensor
 <http://de.wikipedia.org/wiki/Inertialsensor>`__ ausgestattet.
-Dieser kann 9 Freiheitsgrade messen und besteht aus einem 3-Achs
+Dieser kann 9 Freiheitsgrade messen und besteht aus einem 3-Achsen
 Beschleunigungssensor, Kompass und Gyroskop. Die Platine berechnet
 `Quaternionen <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
 sowie auch `Roll-, Nick- und Gier-Winkel
@@ -74,7 +74,7 @@ angeschlossen werden.
 Über eine **USB** Verbindung kann der Brick von einem PC gesteuert werden.
 Über einen zusätzlichen Master Brick mit Master Extension ist es möglich diese
 USB Verbindung durch kabelgebundene Schnittstellen (**RS485**, **Ethernet**)
-oder kabellose Schnittstellen (**WLAN**) zu ersetzen
+oder drahtlose Schnittstellen (**WLAN**) zu ersetzen
 (:ref:`High Level Konzept <pi_hlpi>`).
 
 Da die Firmware Open Source ist, ist es natürlich auch möglich den Brick direkt
@@ -92,9 +92,9 @@ Mikrocontroller                                                 ATSAM3S2B (128kB
 Stromverbrauch                                                  53mA
 --------------------------------------------------------------  ------------------------------------------------------------
 --------------------------------------------------------------  ------------------------------------------------------------
-Beschleunigungs-, Magnetfeld-, Winkelgeschwindigkeitsauflösung  16-Bit
-Auflösung der Roll-, Nick- (Pitch), Gier- (Yaw) Winkel          16-Bit, Ausgabe in 0,01 Grad Schritten
-Quaternionenauflösung                                           32-Bit
+Beschleunigungs-, Magnetfeld-, Winkelgeschwindigkeitsauflösung  16Bit
+Auflösung der Roll-, Nick- (Pitch), Gier- (Yaw) Winkel          16Bit, in 0,01° Schritten
+Quaternionenauflösung                                           32Bit
 --------------------------------------------------------------  ------------------------------------------------------------
 --------------------------------------------------------------  ------------------------------------------------------------
 Bricklet Anschlüsse                                             2
@@ -106,8 +106,8 @@ Gewicht                                                         12g
 Ressourcen
 ----------
 
-* 3-Achs Beschleunigungssensor/Kompass LSM303 Datenblatt (`Download <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00260288.pdf>`__)
-* 3-Achs Gyroskop ITG-3200 Datenblatt (`Download <http://invensense.com/mems/gyro/documents/PS-ITG-3200A.pdf>`__)
+* 3-Achsen Beschleunigungssensor/Kompass LSM303 Datenblatt (`Download <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00260288.pdf>`__)
+* 3-Achsen Gyroskop ITG-3200 Datenblatt (`Download <http://invensense.com/mems/gyro/documents/PS-ITG-3200A.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/hardware/imu-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/imu-brick/zipball/master>`__)
@@ -128,8 +128,8 @@ IMU Bricks.
 
 .. _imu_brick_test:
 
-Test your IMU Brick
--------------------
+Teste deinen IMU Brick
+----------------------
 
 To test the IMU Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`

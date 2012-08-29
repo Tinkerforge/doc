@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 #############
-Documentation
+Dokumentation
 #############
 
 .. toctree::
@@ -27,9 +27,9 @@ Documentation
 
 .. _index_embedded_boards:
 
-**************************
-Usage with Embedded Boards
-**************************
+******************************
+Verwendung mit Embedded Boards
+******************************
 
 .. toctree::
    :maxdepth: 1
@@ -81,9 +81,10 @@ Master Extensions
    Hardware/Master_Extensions/Chibi_Extension
    Hardware/Master_Extensions/RS485_Extension
 
-**************
-Power Supplies
-**************
+
+*****************
+Stromversorgungen
+*****************
 
 .. toctree::
    :maxdepth: 1
@@ -91,9 +92,10 @@ Power Supplies
 
    Hardware/Power_Supplies/*
 
-***********
-Accessories
-***********
+
+*******
+Zubehör
+*******
 
 .. toctree::
    :maxdepth: 1

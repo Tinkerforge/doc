@@ -1,5 +1,5 @@
-Low Level Protocols
-===================
+Low Level Protokolle
+====================
 
 .. toctree::
    :maxdepth: 1

@@ -1,7 +1,7 @@
 .. _pi:
 
-Programming Interfaces
-======================
+Programmierschnittstellen
+=========================
 
 
 .. _pi_hlpi:
@@ -30,7 +30,6 @@ This method performs the task and sends back the requested data.
 
 This interface is available for Windows, Linux and Mac OS as well
 as mobile operating systems, such as Android, iOS and Windows Mobile.
-
 
 .. note::
  See the :ref:`tutorial` for more information on how to use it

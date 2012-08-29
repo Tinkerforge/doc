@@ -8,8 +8,8 @@ Master Brick
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_master_tilted_front_350.jpg",
-	             "Bricks/brick_master_tilted_front_600.jpg",
-	             "Master Brick")
+	               "Bricks/brick_master_tilted_front_600.jpg",
+	               "Master Brick")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_master_tilted_back_100.jpg",
@@ -75,7 +75,7 @@ sind und stellen nur ihre angeschlossenen Bricklets zur Verfügung.
 Im einfachsten Fall werden Daten von einem PC über die **USB** Verbindung
 des Master Bricks geleitet. Diese Schnittstelle kann mit Master Extensions
 geändert werde. Es gibt Master Extensions für kabelgebundene Schnittstellen
-(**RS485**, **Ethernet**) und kabellose Schnittstellen (**WLAN**).
+(**RS485**, **Ethernet**) und drahtlose Schnittstellen (**WLAN**).
 Diese können auf einen Master Brick gesteckt werden und werden von diesem
 als weitere Schnittstelle erkannt.
 
@@ -125,8 +125,8 @@ Master Bricks.
 
 .. _master_brick_test:
 
-Test your Master Brick
-----------------------
+Teste deinen Master Brick
+-------------------------
 
 To test the Master Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`

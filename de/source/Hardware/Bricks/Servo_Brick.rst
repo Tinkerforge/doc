@@ -8,8 +8,8 @@ Servo Brick
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_servo_tilted_front_350.jpg",
-	             "Bricks/brick_servo_tilted_front_600.jpg",
-	             "Servo Brick")
+	               "Bricks/brick_servo_tilted_front_600.jpg",
+	               "Servo Brick")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_servo_tilted_back_100.jpg",
@@ -73,7 +73,7 @@ Zusätzlich kann die PWM jedes Servos einzeln konfiguriert werden.
 Über einen zusätzlichen Modellbau Fahrtenregler (Electronic Speed
 Controller - ESC) ist es möglich Brushless Motoren zu steuern.
 Es muss nur der richtige ESC abhängig vom Motor gewählt werden, so dass auch
-Motore mit einem Stromverbrauch von 150A und mehr steuerbar sind.
+Motoren mit einem Stromverbrauch von 150A und mehr steuerbar sind.
 
 Der Brick ist kompatibel zu anderen Tinkerforge
 :ref:`Bricks <product_overview_bricks>`
@@ -90,7 +90,7 @@ angeschlossen wird.
 Über eine **USB** Verbindung kann der Brick von einem PC gesteuert werden.
 Über einen zusätzlichen Master Brick mit Master Extension ist es möglich diese
 USB Verbindung durch kabelgebundene Schnittstellen (**RS485**, **Ethernet**)
-oder kabellose Schnittstellen (**WLAN**) zu ersetzen
+oder drahtlose Schnittstellen (**WLAN**) zu ersetzen
 (:ref:`High Level Konzept <pi_hlpi>`).
 
 Da die Firmware Open Source ist, ist es natürlich auch möglich den Brick direkt
@@ -153,8 +153,8 @@ Servo Bricks.
 
 .. _servo_brick_test:
 
-Test your Servo Brick
----------------------
+Teste deinen Servo Brick
+------------------------
 
 To test the Servo Brick you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`

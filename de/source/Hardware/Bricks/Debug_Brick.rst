@@ -8,8 +8,8 @@ Debug Brick
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_debug_tilted_front_350.jpg",
-	             "Bricks/brick_debug_tilted_front_600.jpg",
-	             "Debug Brick")
+	               "Bricks/brick_debug_tilted_front_600.jpg",
+	               "Debug Brick")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_debug_tilted_back_100.jpg",

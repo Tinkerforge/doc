@@ -18,31 +18,31 @@ bindings = [('Modbus', 'modbus', False),
 bricks = [('DC',      'dc',      bindings, 'Steuert einen DC Motor mit max. 28V und 5A'),
           ('Debug',   'debug',   [],       'Für Firmware Entwickler: JTAG und serielle Konsole'),
           ('IMU',     'imu',     bindings, 'Voll ausgestattetes AHRS mit 9 Freiheitsgraden'),
-          ('Master',  'master',  bindings, 'Ist Grundlage um Stapel zu bauen und bietet 4 Bricklet Ports'),
+          ('Master',  'master',  bindings, 'Ist Grundlage um Stapel zu bauen und bietet 4 Bricklet Anschlüsse'),
           ('Servo',   'servo',   bindings, 'Steuert bis zu 7 RC Servos mit max. 3A'),
           ('Stepper', 'stepper', bindings, 'Steuert einen bipolaren Schrittmotor mit max. 38V und 2,5A pro Phase')]
 
              # display,          uri,             bindings,  description
-bricklets = [('Ambient Light',  'ambient_light',  bindings, 'Ambient Light Sensor'),
-             ('Analog In',      'analog_in',      bindings, 'Measures voltages from 0 to 45V'),
-             ('Analog Out',     'analog_out',     bindings, 'Generates voltages from 0 to 5V'),
-             ('Breakout',       'breakout',       [],       'Makes all Bricklet signals available'),
-             ('Current12',      'current12',      bindings, 'Bidirectional Current Sensor max. 12.5 A'),
-             ('Current25',      'current25',      bindings, 'Bidirectional Current Sensor max. 25 A'),
-             ('Distance IR',    'distance_ir',    bindings, 'Measure Distances with IR Light'),
-             ('Dual Relay',     'dual_relay',     bindings, 'Equipped with two relays'),
-             ('Humidity',       'humidity',       bindings, 'Humidity Sensor'),
-             ('IO-16',          'io16',           bindings, 'Input/Output 16-Channel'),
-             ('IO-4',           'io4',            bindings, 'Input/Output 4-Channel'),
-             ('Joystick',       'joystick',       bindings, 'Two directional Joystick with Button'),
-             ('LCD 16x2',       'lcd_16x2',       bindings, '16x2 alphanummeric chars display with backlight'),
-             ('LCD 20x4',       'lcd_20x4',       bindings, '20x4 alphanummeric chars display with backlight'),
-             ('Linear Poti',    'linear_poti',    bindings, 'Linear Potentiometer'),
-             ('Piezo Buzzer',   'piezo_buzzer',   bindings, 'Buzzer for signaling'),
-             ('Rotary Poti',    'rotary_poti',    bindings, 'Rotary Potentiometer'),
-             ('Temperature',    'temperature',    bindings, 'High Precision Thermometer'),
-             ('Temperature IR', 'temperature_ir', bindings, 'Infrared Thermometer'),
-             ('Voltage',        'voltage',        bindings, 'Sensor to measure voltages')]
+bricklets = [('Ambient Light',  'ambient_light',  bindings, 'Misst Umgebungslicht bis zu 900Lux'),
+             ('Analog In',      'analog_in',      bindings, 'Misst elektrische Spannungen bis zu 45V'),
+             ('Analog Out',     'analog_out',     bindings, 'Erzeugt konfigurierbare elektrische Spannungen bis zu 5V'),
+             ('Breakout',       'breakout',       [],       'Macht alle Bricklet Signale zugänglich'),
+             ('Current12',      'current12',      bindings, 'Bidirektionaler Stromsensor für bis zu 12,5A'),
+             ('Current25',      'current25',      bindings, 'Bidirektionaler Stromsensor für bis zu 25A'),
+             ('Distance IR',    'distance_ir',    bindings, 'Misst Entfernungen bis zu 150cm mit IR Licht'),
+             ('Dual Relay',     'dual_relay',     bindings, 'Zwei Relais um AC/DC Geräte zu schalten'),
+             ('Humidity',       'humidity',       bindings, 'Misst relative Luftfeuchtigkeit'),
+             ('IO-16',          'io16',           bindings, '16 digitale Ein- und Ausgänge'),
+             ('IO-4',           'io4',            bindings, '4 digitale Ein- und Ausgänge'),
+             ('Joystick',       'joystick',       bindings, '2-Achsen Joystick mit Taster'),
+             ('LCD 16x2',       'lcd_16x2',       bindings, '16x2 Zeichen alphanumerisches Display'),
+             ('LCD 20x4',       'lcd_20x4',       bindings, '20x4 Zeichen alphanumerisches Display'),
+             ('Linear Poti',    'linear_poti',    bindings, '59mm Linear-Potentiometer'),
+             ('Piezo Buzzer',   'piezo_buzzer',   bindings, 'Erzeugt 1kHz Piepton'),
+             ('Rotary Poti',    'rotary_poti',    bindings, '300° Dreh-Potentiometer'),
+             ('Temperature',    'temperature',    bindings, 'Misst Umgebungstemperatur mit 0,5°C Genauigkeit'),
+             ('Temperature IR', 'temperature_ir', bindings, 'Kontaktlose Objekttemperaturmessung von -70°C bis 380°C'),
+             ('Voltage',        'voltage',        bindings, 'Misst Spannungen bis zu 50V')]
 
 def make_index_table(devices, category):
     table_head = """
@@ -70,7 +70,7 @@ def make_index_table(devices, category):
 def make_product_overview_table(devices, category, name_width, description_width):
     table_head = """
 .. csv-table::
-   :header: "Name", "Description", {0}
+   :header: "Name", "Beschreibung", {0}
    :widths: {1}, {2}, {3}
 
 """.format(', '.join(['"{0}"'.format(binding[0]) for binding in bindings]),
@@ -94,11 +94,11 @@ def make_product_overview_table(devices, category, name_width, description_width
 
 def make_downloads_table():
     table_head = """.. csv-table::
- :header: "", "Bindings and Examples"
+ :header: "", "Bindings und Beispiele"
  :delim: |
  :widths: 10, 60
 
- **Language** | """
+ **Sprache** | """
     row_cell = '`{0} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_latest.zip>`__'
     rows = []
 
@@ -121,11 +121,11 @@ def make_api_bindings_table():
 def make_hlpi_table(device, category):
     table_head = """
 .. csv-table::
-   :header: "Language", "API", "Examples", "Installation"
+   :header: "Sprache", "API", "Beispiele", "Installation"
    :widths: 25, 8, 15, 12
 
 """
-    row_source = '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`", ":ref:`Examples <{1}_{2}_{3}_examples>`", ":ref:`Installation <api_bindings_{3}>`"'
+    row_source = '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`", ":ref:`Beispiele <{1}_{2}_{3}_examples>`", ":ref:`Installation <api_bindings_{3}>`"'
     row = '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`"'
     rows = []
 

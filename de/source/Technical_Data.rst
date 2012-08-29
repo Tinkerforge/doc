@@ -1,11 +1,9 @@
-Technical Data
-==============
+Technische Daten
+================
 
 In the following you can find a brief description of all connectors.
 If you need more information you can take a look in the schematics or in the 
 kicad development files of each product.
-
-
 
 
 Stack Connectors

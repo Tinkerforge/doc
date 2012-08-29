@@ -35,7 +35,7 @@ Clone the bricklib into the src/ directory of the firmware (a symlink will also 
  git clone https://github.com/Tinkerforge/bricklib.git
 
 Download and install the gcc none-eabi compiler from 
-`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`_
+`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
 
 Generate the Makefile in the software/ folder (you will need cmake)::
 
@@ -91,7 +91,7 @@ Clone the bricklib and the brickletlib (you need both) into the src/ directory o
  git clone https://github.com/Tinkerforge/brickletlib.git
 
 Download and install the gcc none-eabi compiler from 
-`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`_
+`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
 
 Generate the Makefile in the software/ folder (you will need cmake)::
 

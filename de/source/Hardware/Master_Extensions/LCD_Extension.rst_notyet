@@ -5,44 +5,44 @@ LCD Extension
 
 .. raw:: html
 
-        {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-        {{ tfdocstart("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #0") }}
-        {{ tfdocimg("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #1") }}
-        {{ tfdocend() }}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{ tfdocstart("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #0") }}
+	{{ tfdocimg("Bricklets/test.jpg", "Bricklets/test.jpg", "Title #1") }}
+	{{ tfdocend() }}
 
 
-Description
------------
+Beschreibung
+------------
 
 The LCD Extension is a :ref:`Master Extension <product_overview_master_extensions>`
 which can be used to provide a :ref:`Master Brick <master_brick>` with a
 LC Display. This device has to be attached to the top of a Stack.
 
-.. note:: Coming soon! 
-   Currently not available. Please be patient.
+.. note::
+ Coming soon!
+ Currently not available. Please be patient.
 
-Technical Specifications
+
+Technische Spezifikation
 ------------------------
 
 ================================  ============================================================
-Property                          Value
+Eigenschaft                       Wert
 ================================  ============================================================
-Device Current Consumption        TBD
+Stromverbrauch                    TBD
 --------------------------------  ------------------------------------------------------------
-
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
-Weight                            TBD
+Abmessungen (B x T x H)           40 x 40 x 16mm (1.57 x 1.57 x 0.63")
+Gewicht                           TBD
 ================================  ============================================================
 
 
-Resources
----------
+Ressourcen
+----------
 
-* Schematic (Download)
-* Outline and drilling plan (`Download <../../_images/Dimensions/lcd_extension_dimensions.png>`__)
-* Project source code and design files (Download)
-
+* Schaltplan (Download)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/lcd_extension_dimensions.png>`_)
+* Quelltexte und Platinenlayout (Download)
 
 
 .. Usage
@@ -51,4 +51,3 @@ Resources
 
 .. Troubleshoot
    ------------
-

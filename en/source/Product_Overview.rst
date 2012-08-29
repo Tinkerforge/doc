@@ -15,7 +15,6 @@ There are four different types of hardware components:
 * :ref:`Power Supplies <product_overview_powersupplies>`:
   Boards to power a stack of Bricks, plugged below the stack.
 
-
 See the :ref:`tutorial <tutorial>` for an explanation of how everything works
 together.
 

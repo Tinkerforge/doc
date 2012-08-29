@@ -6,35 +6,35 @@ Analog In Bricklet
 .. raw:: html
 
     {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-    {{ 
-        tfdocstart("Bricklets/bricklet_analog_in_tilted_350.jpg", 
-                 "Bricklets/bricklet_analog_in_tilted_600.jpg", 
+    {{
+        tfdocstart("Bricklets/bricklet_analog_in_tilted_350.jpg",
+                   "Bricklets/bricklet_analog_in_tilted_600.jpg",
+                   "Analog In Bricklet")
+    }}
+    {{
+        tfdocimg("Bricklets/bricklet_analog_in_vertical_100.jpg",
+                 "Bricklets/bricklet_analog_in_vertical_600.jpg",
                  "Analog In Bricklet")
     }}
-    {{ 
-        tfdocimg("Bricklets/bricklet_analog_in_vertical_100.jpg", 
-                 "Bricklets/bricklet_analog_in_vertical_600.jpg", 
+    {{
+        tfdocimg("Bricklets/bricklet_analog_in_horizontal_100.jpg",
+                 "Bricklets/bricklet_analog_in_horizontal_600.jpg",
                  "Analog In Bricklet")
     }}
-    {{ 
-        tfdocimg("Bricklets/bricklet_analog_in_horizontal_100.jpg", 
-                 "Bricklets/bricklet_analog_in_horizontal_600.jpg", 
-                 "Analog In Bricklet")
+    {{
+        tfdocimg("Bricklets/bricklet_analog_in_master_100.jpg",
+                 "Bricklets/bricklet_analog_in_master_600.jpg",
+                 "Analog In Bricklet mit Master Brick")
     }}
-    {{ 
-        tfdocimg("Bricklets/bricklet_analog_in_master_100.jpg", 
-                 "Bricklets/bricklet_analog_in_master_600.jpg", 
-                 "Analog In Bricklet with Master Brick")
+    {{
+        tfdocimg("Bricklets/bricklet_analog_in_brickv_100.jpg",
+                 "Bricklets/bricklet_analog_in_brickv.jpg",
+                 "Analog In Bricklet im Brick Viewer")
     }}
-    {{ 
-        tfdocimg("Bricklets/bricklet_analog_in_brickv_100.jpg", 
-                 "Bricklets/bricklet_analog_in_brickv.jpg", 
-                 "Brick Viewer screenshot")
-    }}
-    {{ 
-        tfdocimg("Dimensions/analog_in_bricklet_dimensions_100.png", 
-                 "Dimensions/analog_in_bricklet_dimensions_600.png", 
-                 "Outline and drilling plan") 
+    {{
+        tfdocimg("Dimensions/analog_in_bricklet_dimensions_100.png",
+                 "Dimensions/analog_in_bricklet_dimensions_600.png",
+                 "Umriss und Bohrplan")
     }}
     {{ tfdocend() }}
 
@@ -42,74 +42,74 @@ Analog In Bricklet
 Features
 --------
 
-* Measures voltages of up to 45V
-* Read out measured voltage in mV
-* High resolution up to 1.48mV
-* Configurable events
+* Misst elektrische Spannungen bis zu 45V
+* Ausgabe in 1mV Schritten (12Bit Auflösung)
+* Hohe Auflösung bis zu 1,48mV
 
 
-Description
------------
+Beschreibung
+------------
 
-The Analog In :ref:`Bricklet <product_overview_bricklets>` can be used to 
-extend the features of :ref:`Bricks <product_overview_bricks>` by the 
-capability to measure voltages.
-The voltage can be read out in `Volt
-<http://en.wikipedia.org/wiki/Volt>`_ directly without conversions necessary. 
-The device has 4 different measurement ranges.
-Each range is measured with 12bit resolution such that lower voltages can be 
-measured more accurate than larger voltages (see technical specifications below). 
-The device switches between these ranges automatically.
-With configurable events it is possible to react on changing
-voltages without polling.
+Das Analog In :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
+um :ref:`Bricks <product_overview_bricks>` die Möglichkeit zu geben elektrische
+Spannungen zu messen.
+Der Messbereich beträgt 0V bis 45V mit hoher Auflösung für kleine Spannungen.
+Die gemessene Spannung kann direkt in `Volt
+<http://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.
+Mit konfigurierbaren Events ist es möglich auf Spannungsänderungen zu
+reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 
-Technical Specifications
+
+Technische Spezifikation
 ------------------------
 
 ================================  ============================================================
-Property                          Value
+Eigenschaft                       Wert
 ================================  ============================================================
-Dimensions                        25mm x 30mm (0.98" x 1.18")
-Weight                            TBD
-Sensor                            Switchable Voltage Divider
+Sensor                            Automatisch geschalteter Spannungsteiler
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Output: Voltage                   0V - 45V, unit: mV
-Measurement Range:                Switched Automatically
+Elektrische Spannung              0V - 45V in 1mV Schritten, 12Bit Auflösung
+Messbereich                       Automatisch geschaltet
 
-                                  * 0V -  6.05V, Resolution ~1.48mV
-                                  * 0V - 10.32V, Resolution ~2.52mV
-                                  * 0V - 36.30V, Resolution ~8.86mV
-                                  * 0V - 45.00V, Resolution ~11.25mV
+                                  * 0V - 6,05V, ~1,48mV Auflösung
+                                  * 0V - 10,32V, ~2,52mV Auflösung
+                                  * 0V - 36,30V, ~8,86mV Auflösung
+                                  * 0V - 45,00V, ~11,25mV Auflösung
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           30 x 25 x 14mm (1,18 x 0,98 x 0,55")
+Gewicht                           6g
 ================================  ============================================================
 
-Resources
----------
 
-* Schematic (`Download <https://github.com/Tinkerforge/analog-in-bricklet/raw/master/hardware/analog-in-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/analog-in_bricklet_dimensions.png>`__)
-* Project source code and design files (`Download <https://github.com/Tinkerforge/analog-in-bricklet/zipball/master>`__)
+Ressourcen
+----------
+
+* Schaltplan (`Download <https://github.com/Tinkerforge/analog-in-bricklet/raw/master/hardware/analog-in-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/analog-in_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/analog-in-bricklet/zipball/master>`__)
 
 
+Anschlussmöglichkeit
+--------------------
 
-Connectivity
-------------
-
-The Analog In Bricklet has 4 terminals. With these terminals you can access
-ground, 3.3V, 5V (only output) and you can apply the voltage you want to 
-measure (VIN). See picture below.
+Das Analog In Bricklet hat vier Anschlussklemmen. Über diese sind folgende
+Ausgangssignale verfügbar: 5V, 3,3V sowie GND. Zwischen der VIN Anschlussklemme
+und GND kann die zu messende Spannung angelegt werden. Das folgende Bild
+zeigt die vier Anschlussklemmen.
 
 .. image:: /Images/Bricklets/bricklet_analog_in_vertical_350.jpg
    :scale: 100 %
-   :alt: Analog In Bricklet Terminals
+   :alt: Analog In Bricklet Anschlussklemmen
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_in_vertical_1200.jpg
 
 
 .. _analog_in_bricklet_test:
 
-Test your Analog In Bricklet
-----------------------------
+Teste dein Analog In Bricklet
+-----------------------------
 
 To test the Analog In Bricklet you have to start by installing the
 :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
@@ -118,9 +118,9 @@ and :ref:`here <brickv_installation>`).
 The former is a bridge between the Bricks/Bricklets and the programming
 language API bindings, the latter is for testing purposes.
 
-Connect the Analog In Bricklet to a 
+Connect the Analog In Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable.
-Additionally connect a voltage source to the Bricklet. 
+Additionally connect a voltage source to the Bricklet.
 For testing purposes we have connected a battery.
 
 .. image:: /Images/Bricklets/bricklet_analog_in_master_600.jpg
@@ -134,28 +134,29 @@ If you connect the Brick to the PC over USB,
 you should see a tab named "Analog In Bricklet" in the Brick Viewer after you
 pressed "connect". Select this tab.
 If everything went as expected you can now see the voltage in Volt
-and a graph that shows the voltage over time. 
+and a graph that shows the voltage over time.
 
 .. image:: /Images/Bricklets/bricklet_analog_in_brickv.jpg
    :scale: 100 %
-   :alt: Analog In Bricklet view in Brick Viewer
+   :alt: Analog In Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_in_brickv.jpg
 
 After this you can go on with writing your own application.
-See the :ref:`Programming Interface <analog_in_programming_interfaces>` section 
+See the :ref:`Programming Interface <analog_in_programming_interfaces>` section
 for the API of the Analog In Bricklet and examples in different
 programming languages.
 
 
 .. _analog_in_programming_interfaces:
 
-Programming Interfaces
-----------------------
+Programmierschnittstellen
+-------------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+High Level Programmierschnittstelle
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Beschreibung.
 
 .. include:: Analog_In_hlpi.table
