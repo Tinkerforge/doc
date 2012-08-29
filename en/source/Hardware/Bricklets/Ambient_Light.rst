@@ -42,8 +42,8 @@ Ambient Light Bricklet
 Features
 --------
 
-* Measures ambient light up to 900Lux
-* Output in 0.1Lux steps (12bit resolution)
+* Measures ambient light up to 900lux
+* Output in 0.1lux steps (12bit resolution)
 
 
 Description
@@ -52,7 +52,7 @@ Description
 The Ambient Light :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend the features of :ref:`Bricks <product_overview_bricks>` with the
 capability to measure ambient light. The measured illuminance can be read
-out in `Lux <http://en.wikipedia.org/wiki/Lux>`_. With configurable events
+out in `lux <http://en.wikipedia.org/wiki/Lux>`__. With configurable events
 it is possible to react on changing illuminance without polling.
 
 Typical applications are illuminance dependent switching of
@@ -68,7 +68,7 @@ Property                          Value
 Sensor                            TEMT6000
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Illumination                      0Lux - 900Lux in 0.1Lux steps, 12bit resolution
+Illumination                      0lux - 900lux in 0.1lux steps, 12bit resolution
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 15 x 5mm (0.98 x 0.59 x 0.19")
