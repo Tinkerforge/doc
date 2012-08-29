@@ -3,7 +3,7 @@
 Brick Viewer (brickv)
 =====================
 
-The Brick Viewer can be used to test :ref:`Bricks <product_overview_bricks>` 
+The Brick Viewer provides a graphical interface for testing :ref:`Bricks <product_overview_bricks>`
 and :ref:`Bricklets <product_overview_bricklets>`. Each device has its own 
 view that shows the main features and allows to control them.
 

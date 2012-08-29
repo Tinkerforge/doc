@@ -101,12 +101,11 @@ Resources
 Test your Rotary Poti Bricklet
 ------------------------------
 
-To test the Rotary Poti Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the Rotary Poti Bricklet you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
 Connect the Rotary Poti Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable
@@ -114,13 +113,13 @@ Connect the Rotary Poti Bricklet to a
 
 .. image:: /Images/Bricklets/bricklet_rotary_poti_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected Rotary Poti Bricklet
+   :alt: Rotary Poti Bricklet connected to Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_rotary_poti_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named
-"Rotary Poti Bricklet" in the Brick Viewer after you pressed "connect".
-Select it.
+If you connect the Brick to the PC over USB, you should see a new tab named
+"Rotary Poti Bricklet" in the Brick Viewer after a moment. Select this tab.
+
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
@@ -134,7 +133,7 @@ Turn the potentiometer.
 You should be able to create a similar graph by turning the potentiometer
 from left left to right and back to left.
 
-After this you can go on with writing your own application.
+After this test you can go on with writing your own application.
 See the :ref:`Programming Interface <rotary_poti_programming_interfaces>`
 section for the API of the Rotary Poti Bricklet and examples in different
 programming languages.

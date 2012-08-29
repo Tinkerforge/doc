@@ -154,12 +154,11 @@ Servo Brick.
 Test your Servo Brick
 ---------------------
 
-To test the Servo Brick you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the Servo Brick you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
 Connect a RC servo to a port of the Brick and a suitable power supply.
 Your setup should look as shown below.
@@ -170,8 +169,8 @@ Your setup should look as shown below.
    :align: center
    :target: ../../_images/Bricks/brick_servo_setup_1200.jpg
 
-Now connect the Brick to the PC over USB, you should see a tab named
-"Servo Brick" in the Brick Viewer after you pressed "Connect". Select it.
+Now connect the Brick to the PC over USB, you should see a new tab named
+"Servo Brick" in the Brick Viewer after a moment. Select this tab.
 
 .. image:: /Images/Bricks/servo_brickv.jpg
    :scale: 100 %
@@ -201,7 +200,7 @@ a test sequence that performs random movements for each servo.
 To start testing enable servo 0 and play around with the controls
 or let the Brick Viewer perform a test.
 
-After this you can go on with writing your own application.
+After this test you can go on with writing your own application.
 See the :ref:`Programming Interface <servo_brick_programming_interfaces>` section for
 the API of the Servo Brick and examples in different programming languages.
 
@@ -230,9 +229,8 @@ until the servo starts to rattle. Use the biggest pulse width that does not
 produce rattling.
 
 .. warning::
-
-   A wrong PWM configuration for an extended period of time can damage
-   your servo.
+ A wrong PWM configuration for an extended period of time can damage
+ your servo.
 
 
 Servo Power Supply

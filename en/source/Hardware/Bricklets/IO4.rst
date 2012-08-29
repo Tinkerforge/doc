@@ -101,12 +101,11 @@ Resources
 Test your IO-4 Bricklet
 -----------------------
 
-To test the IO-4 Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the IO-4 Bricklet you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
 Connect the IO-4 Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable.
@@ -118,12 +117,15 @@ use the GND pins directly beside the data pins.
 
 .. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected IO-4 Bricklet
+   :alt: IO-4 Bricklet connected to Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named
-"IO-4 Bricklet" in the Brick Viewer after you pressed "connect". Select it.
+If you connect the Brick to the PC over USB, you should see a new tab named
+"IO-4 Bricklet" in the Brick Viewer after a moment. Select this tab.
+
+If everything went as expected the Brick Viewer should look as
+depicted below.
 
 .. image:: /Images/Bricklets/bricklet_io4_brickv.jpg
    :scale: 100 %
@@ -153,7 +155,7 @@ If you don't have a button or a LED you can try to measure voltages with
 a voltage meter or connect a pin with GND or VCC to see changes in the
 Brick Viewer.
 
-After this you can go on with writing your own application.
+After this test you can go on with writing your own application.
 See the :ref:`Programming Interface <io4_programming_interfaces>` section for
 the API of the IO-4 Bricklet and examples in different programming languages.
 

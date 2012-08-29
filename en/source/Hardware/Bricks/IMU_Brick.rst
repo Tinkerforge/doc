@@ -134,15 +134,14 @@ IMU Brick.
 Test your IMU Brick
 -------------------
 
-To test the IMU Brick you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the IMU Brick you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
-Connector your IMU Brick to the PC over USB, you should see a tab named
-"IMU Brick" in the Brick Viewer after you pressed "Connect". Select it.
+Now connect the Brick to the PC over USB, you should see a new tab named
+"IMU Brick" in the Brick Viewer after a moment. Select this tab.
 
 .. image:: /Images/Bricks/imu_brickv.jpg
    :scale: 60 %
@@ -156,6 +155,10 @@ IMU Brick in the orientation as shown in the image and press
 mirrored in the Brick Viewer. Before you press "Save Orientation" you should
 hold the IMU Brick still for about 15 seconds, so it can converge to the
 correct position.
+
+After this test you can go on with writing your own application.
+See the :ref:`Programming Interface <imu_brick_programming_interfaces>` section for
+the API of the IMU Brick and examples in different programming languages.
 
 
 IMU Calibration
@@ -316,6 +319,8 @@ Image and explanation from S. O. Madgwick: "An efficient orientation filter
 for inertial and inertial/magnetic sensor arrays", University of Bristol,
 April 2010.
 
+
+.. _imu_brick_programming_interfaces:
 
 Programming Interfaces
 ----------------------

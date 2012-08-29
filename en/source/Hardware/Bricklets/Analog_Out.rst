@@ -113,15 +113,14 @@ additional outputs with fixed voltages you can use to power things.
 Test your Analog Out Bricklet
 -----------------------------
 
-To test the Analog Out Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the Analog Out Bricklet you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
 Connect the Analog Out Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable.
+:ref:`Brick <product_overview_bricks>` with the supplied cable
 (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_analog_out_master_600.jpg
@@ -130,9 +129,9 @@ Connect the Analog Out Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_out_master_1200.jpg
 
-If you connect the Brick to the PC over USB,
-you should see a tab named "Analog Out Bricklet" in the Brick Viewer after you
-pressed "connect". Select this tab.
+If you connect the Brick to the PC over USB, you should see a new tab named
+"Analog Out Bricklet" in the Brick Viewer after a moment. Select this tab.
+
 In this tab you can configure the voltage on the output pin.
 For test purposes, you can measure this voltage with a voltmeter.
 If everything went as expected the voltage on the voltmeter and the voltage
@@ -144,8 +143,7 @@ you have configured should be identical.
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_out_brickv.jpg
 
-
-After this you can go on with writing your own application.
+After this test you can go on with writing your own application.
 See the :ref:`Programming Interface <analog_out_programming_interfaces>` section
 for the API of the Analog Out Bricklet and examples in different
 programming languages.

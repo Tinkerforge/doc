@@ -90,16 +90,15 @@ Resources
 Test your Ambient Light Bricklet
 --------------------------------
 
-To test the Ambient Light Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the Ambient Light Bricklet you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
-Now you can connect the Ambient Light Bricklet to any
-:ref:`Brick <product_overview_bricks>`. You should have received a suitable
-cable with the Bricklet.
+Connect the Ambient Light Bricklet to a
+:ref:`Brick <product_overview_bricks>` with the supplied cable
+(see picture below).
 
 .. image:: /Images/Bricklets/bricklet_ambient_light_master_600.jpg
    :scale: 100 %
@@ -107,9 +106,8 @@ cable with the Bricklet.
    :align: center
    :target: ../../_images/Bricklets/bricklet_ambient_light_master_1200.jpg
 
-If you then connect the Brick to the PC over USB,
-you should see a tab named "Ambient Light Bricklet" in the Brick Viewer after
-you pressed "connect". Select it.
+If you connect the Brick to the PC over USB, you should see a new tab named
+"Ambient Light Bricklet" in the Brick Viewer after a moment. Select this tab.
 
 If everything went as expected you can now see the illuminance in lux,
 a graphical representation of the illuminance and a graph that shows the

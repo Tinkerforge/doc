@@ -91,26 +91,25 @@ Resources
 Test your Piezo Buzzer Bricklet
 -------------------------------
 
-To test the Piezo Buzzer Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the Piezo Buzzer Bricklet you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
-For a simple test connect the Piezo Buzzer Bricklet to a
+Connect the Piezo Buzzer Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable
 (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_piezo_buzzer_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected Piezo Buzzer Bricklet
+   :alt: Piezo Buzzer Bricklet connected to Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_piezo_buzzer_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named
-"Piezo Buzzer Bricklet" in the Brick Viewer after you pressed "connect".
-Select it.
+If you connect the Brick to the PC over USB, you should see a new tab named
+"Piezo Buzzer Bricklet" in the Brick Viewer after a moment. Select this tab.
+
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
@@ -123,9 +122,9 @@ depicted below.
 Generate a beep by pressing "Send Beep". You should hear a beep with the
 specified duration.
 
-You can now go on with writing your own application.
+After this test you can go on with writing your own application.
 See the :ref:`Programming Interface <piezo_buzzer_programming_interfaces>`
-section for the API of the Piezo Buzzer Bricklet and examples in your
+section for the API of the Piezo Buzzer Bricklet and examples in different
 programming language.
 
 

@@ -93,32 +93,29 @@ Resources
 Test your Current12 Bricklet
 ----------------------------
 
-To test the Current12 Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the Current12 Bricklet you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
-Now you can connect the Current12 Bricklet to any
-:ref:`Brick <product_overview_bricks>`. You should have received a suitable
-cable with the Bricklet. Connect a Motor
-and a Battery to the Bricklet as displayed in the following image
+Connect the Current12 Bricklet to a
+:ref:`Brick <product_overview_bricks>` with the supplied cable. Connect a motor
+and a battery to the Bricklet as displayed in the following image
 (or anything else connected in series to the Current12 Bricklet that
 produces a current).
 
 .. image:: /Images/Bricklets/bricklet_current_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected Current12 Bricklet, Battery and Motor
+   :alt: Current12 Bricklet with Battery and Motor connected to Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_current_master_1200.jpg
 
-If you connect the Brick to the PC over USB,
-you should see a tab named "Current12 Bricklet" in the Brick Viewer after you
-pressed "connect". Select this tab.
+If you connect the Brick to the PC over USB, you should see a new tab named
+"Current12 Bricklet" in the Brick Viewer after a moment. Select this tab.
+
 If everything went as expected you can now see the current used by the
 motor and a graph that shows the current over time.
-
 
 .. image:: /Images/Bricklets/bricklet_current12_brickv.jpg
    :scale: 100 %

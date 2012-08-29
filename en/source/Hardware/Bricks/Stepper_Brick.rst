@@ -144,12 +144,11 @@ Stepper Brick.
 Test your Stepper Brick
 -----------------------
 
-To test the Stepper Brick you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the Stepper Brick you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
 Connect a stepper motor to the Brick and a suitable power supply
 (see :ref:`here <stepper_brick_connectivity>`). Your setup should look
@@ -161,8 +160,8 @@ like below.
    :align: center
    :target: ../../_images/Bricks/brick_stepper_motor_setup_1200.jpg
 
-Now connect the Brick to the PC over USB, you should see a tab named
-"Stepper Brick" in the Brick Viewer after you pressed "Connect". Select it.
+Now connect the Brick to the PC over USB, you should see a new tab named
+"Stepper Brick" in the Brick Viewer after a moment. Select this tab.
 
 .. image:: /Images/Bricks/stepper_brickv.jpg
    :scale: 100 %

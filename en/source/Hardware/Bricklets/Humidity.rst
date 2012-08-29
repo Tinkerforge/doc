@@ -92,12 +92,11 @@ Resources
 Test your Humidity Bricklet
 ---------------------------
 
-To test the Humidity Bricklet you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the Humidity Bricklet you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
 Connect the Humidity Bricklet to a
 :ref:`Brick <product_overview_bricks>` with the supplied cable
@@ -105,13 +104,13 @@ Connect the Humidity Bricklet to a
 
 .. image:: /Images/Bricklets/bricklet_humidity_master_600.jpg
    :scale: 100 %
-   :alt: Master Brick with connected Humidity Bricklet
+   :alt: Humidity Bricklet connected to Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_humidity_master_1200.jpg
 
-If you then connect the Brick to the PC over USB, you should see a tab named
-"Humidity Bricklet" in the Brick Viewer after you pressed "connect".
-Select it.
+If you connect the Brick to the PC over USB, you should see a new tab named
+"Humidity Bricklet" in the Brick Viewer after a moment. Select this tab.
+
 If everything went as expected you can now see the measured relative humidity
 and a graph that shows the humidity over time.
 

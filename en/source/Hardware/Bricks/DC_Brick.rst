@@ -145,12 +145,11 @@ DC Brick.
 Test your DC Brick
 ------------------
 
-To test the DC Brick you have to start by installing the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>`
-(For installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`).
-The former is a bridge between the Bricks/Bricklets and the programming
-language API bindings, the latter is for testing purposes.
+To test the DC Brick you need to have the
+:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+(for installation guides click :ref:`here <brickd_installation>`
+and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+to the Brick Daemon.
 
 Connect a DC brushed motor to the Brick and a suitable power supply.
 Your setup should look as shown below.
@@ -161,8 +160,8 @@ Your setup should look as shown below.
    :align: center
    :target: ../../_images/Bricks/brick_dc_motor_setup_1200.jpg
 
-Now connect the Brick to the PC over USB, you should see a tab named
-"DC Brick" in the Brick Viewer after you pressed "Connect". Select it.
+Now connect the Brick to the PC over USB, you should see a new tab named
+"DC Brick" in the Brick Viewer after a moment. Select this tab.
 
 .. image:: /Images/Bricks/dc_brickv.jpg
    :scale: 100 %
