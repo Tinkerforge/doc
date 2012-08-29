@@ -1,23 +1,24 @@
 .. _ipcon_c:
 
 C/C++ - IP Connection
-======================
+=====================
 
-This is the API site for the C/C++ bindings of the IP connection.
-The IP connection is established between the Brick Daemon
-and the corresponding programming language API bindings. You need to
-create an IP connection to brickd and add devices, before you can
-use them.
+Dies ist die API Beschreibung für die C/C++ Bindings der IP Connection.
+Die IP Connection wird zwischen dem Brick Daemon und den API Bindings der
+entsprechenden Programmiersprache hergestellt. Bevor Geräte über deren API
+angesprochen werden können muss eine IP Connection zu brickd erzeugt und die
+Geräte dieser hinzugefügt werden.
 
-An overview of products that are controllable over an IP connection
-can be found :ref:`here <product_overview>`.
+Eine Übersicht über die Produkte die über eine IP Connection kontrolliert
+werden können ist :ref:`hier <product_overview>` zu finden.
+
 
 .. _ipcon_c_examples:
 
-Example
+Beispiel
 --------
 
-The example code below is public domain.
+Der folgende Beispielcode ist Public Domain.
 
 `Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/example.c>`__
 
@@ -25,6 +26,7 @@ The example code below is public domain.
  :language: c
  :linenos:
  :tab-width: 4
+
 
 .. _ipcon_c_api:
 
@@ -46,8 +48,8 @@ Possible error codes are
 
 as defined in :file:`ip_connection.h`.
 
-Basic Methods
-^^^^^^^^^^^^^
+Grundfunktionen
+^^^^^^^^^^^^^^^
 
 .. c:function:: int ipcon_create(IPConnection *ipcon, const char* host, const int port)
 
@@ -75,8 +77,9 @@ Basic Methods
  Destroys the IP connection. The socket to the Brick Daemon will be closed
  and the threads of the IP connection terminated.
 
-Callback Configuration Methods
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Konfigurationsfunktionen für Callbacks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. c:function:: void ipcon_enumerate(IPConnection *ipcon, enumerate_callback_func_t cb)
 

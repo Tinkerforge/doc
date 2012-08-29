@@ -3,7 +3,7 @@
 Ruby - IP Connection
 ====================
 
-This is the API site for the Ruby bindings of the IP connection.
+This is the API description for the Ruby bindings of the IP connection.
 The IP connection is established between the Brick Daemon
 and the corresponding programming language API bindings. You need to
 create an IP connection to brickd and add devices, before you can
@@ -11,6 +11,7 @@ use them.
 
 An overview of products that are controllable over an IP connection
 can be found :ref:`here <product_overview>`.
+
 
 .. _ipcon_ruby_examples:
 
@@ -26,13 +27,14 @@ The example code below is public domain.
  :linenos:
  :tab-width: 4
 
+
 .. _ipcon_ruby_api:
 
 API
 ---
 
-Basic Methods
-^^^^^^^^^^^^^
+Basic Functions
+^^^^^^^^^^^^^^^
 
 .. rb:function:: IPConnection::new(host, port) -> ipcon
 
@@ -65,8 +67,9 @@ Basic Methods
  Destroys the IP connection. The socket to the Brick Daemon will be closed
  and the threads of the IP connection terminated.
 
-Callback Configuration Methods
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Callback Configuration Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. rb:function:: IPConnection#enumerate { |uid, name, stack_id, is_new| block } -> nil
 

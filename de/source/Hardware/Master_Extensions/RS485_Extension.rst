@@ -85,6 +85,20 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rs485-extension>`__)
 
 
+.. _rs485_connectivity:
+
+Anschlussmöglichkeit
+--------------------
+
+Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit der RS485 Extension.
+
+.. image:: /Images/Extensions/extension_rs485_caption_600.jpg
+   :scale: 100 %
+   :alt: RS485 Extension mit Beschriftung
+   :align: center
+   :target: ../../_images/Extensions/extension_rs485_caption_800.jpg
+
+
 RS485 Bus Assembly
 ------------------
 
@@ -117,20 +131,6 @@ the termination switch on the first and last RS485 Extension in the bus to
 You have to power up the slaves before the master, since the RS485 master
 searches for slaves only at startup. You should now be able to see all
 connected stacks in the Brick Viewer.
-
-
-.. _rs485_connectivity:
-
-Anschlussmöglichkeit
-^^^^^^^^^^^^^^^^^^^^
-
-Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit der RS485 Extension.
-
-.. image:: /Images/Extensions/extension_rs485_caption_600.jpg
-   :scale: 100 %
-   :alt: RS485 Extension mit Beschriftung
-   :align: center
-   :target: ../../_images/Extensions/extension_rs485_caption_800.jpg
 
 
 .. _rs485_configuration:

@@ -1,9 +1,9 @@
 .. _ipcon_php:
 
 PHP - IP Connection
-======================
+===================
 
-This is the API site for the PHP bindings of the IP connection.
+This is the API description for the PHP bindings of the IP connection.
 The IP connection is established between the Brick Daemon
 and the corresponding programming language API bindings. You need to
 create an IP connection to brickd and add devices, before you can
@@ -11,6 +11,7 @@ use them.
 
 An overview of products that are controllable over an IP connection
 can be found :ref:`here <product_overview>`.
+
 
 .. _ipcon_php_examples:
 
@@ -26,13 +27,14 @@ The example code below is public domain.
  :linenos:
  :tab-width: 4
 
+
 .. _ipcon_php_api:
 
 API
 ---
 
-Basic Methods
-^^^^^^^^^^^^^
+Basic Functions
+^^^^^^^^^^^^^^^
 
 .. php:function:: class IPConnection(string $host, int $port)
 
@@ -61,8 +63,9 @@ Basic Methods
 
  Destroys the IP connection. The socket to the Brick Daemon will be closed.
 
-Callback Configuration Methods
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Callback Configuration Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. php:function:: void IPConnection::enumerate(callable $callback)
 

@@ -1,23 +1,24 @@
 .. _ipcon_php:
 
 PHP - IP Connection
-======================
+===================
 
-This is the API site for the PHP bindings of the IP connection.
-The IP connection is established between the Brick Daemon
-and the corresponding programming language API bindings. You need to
-create an IP connection to brickd and add devices, before you can
-use them.
+Dies ist die API Beschreibung für die PHP Bindings der IP Connection.
+Die IP Connection wird zwischen dem Brick Daemon und den API Bindings der
+entsprechenden Programmiersprache hergestellt. Bevor Geräte über deren API
+angesprochen werden können muss eine IP Connection zu brickd erzeugt und die
+Geräte dieser hinzugefügt werden.
 
-An overview of products that are controllable over an IP connection
-can be found :ref:`here <product_overview>`.
+Eine Übersicht über die Produkte die über eine IP Connection kontrolliert
+werden können ist :ref:`hier <product_overview>` zu finden.
+
 
 .. _ipcon_php_examples:
 
-Example
+Beispiel
 --------
 
-The example code below is public domain.
+Der folgende Beispielcode ist Public Domain.
 
 `Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/Example.php>`__
 
@@ -26,13 +27,14 @@ The example code below is public domain.
  :linenos:
  :tab-width: 4
 
+
 .. _ipcon_php_api:
 
 API
 ---
 
-Basic Methods
-^^^^^^^^^^^^^
+Grundfunktionen
+^^^^^^^^^^^^^^^
 
 .. php:function:: class IPConnection(string $host, int $port)
 
@@ -61,8 +63,9 @@ Basic Methods
 
  Destroys the IP connection. The socket to the Brick Daemon will be closed.
 
-Callback Configuration Methods
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Konfigurationsfunktionen für Callbacks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. php:function:: void IPConnection::enumerate(callable $callback)
 

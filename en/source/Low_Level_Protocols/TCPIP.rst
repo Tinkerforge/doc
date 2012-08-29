@@ -3,10 +3,11 @@
 TCP/IP
 ======
 
-This is the API site for the TCP/IP protocol of the Brick Daemon.
+This is the API description for the TCP/IP protocol of the Brick Daemon.
 
 An overview of products that are controllable over TCP/IP
 can be found :ref:`here <product_overview>`.
+
 
 .. _llproto_tcpip_protocol:
 
@@ -21,6 +22,7 @@ Functions that return nothing don't send a response packet back to the host.
 Beside normal functions there are also callbacks. Bricks and Bricklets can send
 response packets spontaneously back to the host to notify about an event or
 specific condition.
+
 
 Packet Layout
 ^^^^^^^^^^^^^
@@ -60,6 +62,7 @@ the contained string is null-terminated. In case that the string fills the
 whole array no null-terminator can be appended and the string is *not*
 null-terminated. Therefore, you cannot rely on strings being null-terminated.
 
+
 Communication
 ^^^^^^^^^^^^^
 
@@ -68,6 +71,7 @@ establishing a TCP/IP connection to the Brick Daemon. Before you can call any
 function on the connected devices you need to know their stack IDs.
 Discovering those stack IDs is the second phase. In the third phase you can
 call specific functions on the connected devices.
+
 
 .. _llproto_tcpip_resolve_uid:
 
@@ -139,6 +143,7 @@ The hex dump of this request packet looks like this::
 
   0000   00 ff 0c 00 f6 52 00 00 00 00 00 00              .....R......
 
+
 Enumeration
 """""""""""
 
@@ -197,6 +202,7 @@ The hex dump of the packet looks like this::
   0020   20 31 2e 30 00 00 00 00 00 00 00 00 00 00 00 00   1.0............
   0030   00 00 00 00 02 01                                ......
 
+
 Function Calls
 """"""""""""""
 
@@ -248,6 +254,7 @@ There are also specific functions that do not send a response packet under
 normal conditions, for example the :tcpip:func:`set_state <DualRelay.set_state>`
 function of the Dual Relay Bricklet.
 
+
 Callbacks
 """""""""
 
@@ -287,9 +294,10 @@ any time. For example between sending a request packet and reveicing the
 corrsponding response packet.
 
 .. note::
-  Using callbacks for recurring events is *always* preferred
-  compared to using getters. It will use less USB bandwidth and the latency
-  will be a lot better, since there is no roundtrip time.
+ Using callbacks for recurring events is *always* preferred
+ compared to using getters. It will use less USB bandwidth and the latency
+ will be a lot better, since there is no roundtrip time.
+
 
 .. _llproto_tcpip_api:
 
@@ -298,8 +306,8 @@ API
 
 The following functions and callbacks are supported by all devices.
 
-Basic Methods
-^^^^^^^^^^^^^
+Basic Functions
+^^^^^^^^^^^^^^^
 
 .. tcpip:function:: get_stack_id
 
@@ -320,8 +328,9 @@ Basic Methods
  Use this function to resolve a UID to the corresponding stack ID that is
  required for calling other functions of the device.
 
-Callback Configuration Methods
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Callback Configuration Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tcpip:function:: enumerate
 
@@ -337,6 +346,7 @@ Callback Configuration Methods
 
  Use this function to enumerate all connected devices without the need to know
  their UIDs beforehand.
+
 
 Callbacks
 ^^^^^^^^^

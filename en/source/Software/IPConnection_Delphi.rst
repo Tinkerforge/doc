@@ -3,7 +3,7 @@
 Delphi - IP Connection
 ======================
 
-This is the API site for the Delphi bindings of the IP connection.
+This is the API description for the Delphi bindings of the IP connection.
 The IP connection is established between the Brick Daemon
 and the corresponding programming language API bindings. You need to
 create an IP connection to brickd and add devices, before you can
@@ -11,6 +11,7 @@ use them.
 
 An overview of products that are controllable over an IP connection
 can be found :ref:`here <product_overview>`.
+
 
 .. _ipcon_delphi_examples:
 
@@ -26,13 +27,14 @@ The example code below is public domain.
  :linenos:
  :tab-width: 4
 
+
 .. _ipcon_delphi_api:
 
 API
 ---
 
-Basic Methods
-^^^^^^^^^^^^^
+Basic Functions
+^^^^^^^^^^^^^^^
 
 .. delphi:function:: constructor TIPConnection.Create(const host: string; const port: word)
 
@@ -60,8 +62,9 @@ Basic Methods
  Destroys the IP connection. The socket to the Brick Daemon will be closed
  and the threads of the IP connection terminated.
 
-Callback Configuration Methods
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Callback Configuration Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. delphi:function:: procedure TIPConnection.Enumerate(const enumerateCallback: TIPConnectionNotifyEnumerate)
 

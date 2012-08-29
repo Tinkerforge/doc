@@ -3,10 +3,11 @@
 Modbus
 ======
 
-This is the API site for the Modbus RTU protocol of the RS485 Extension.
+This is the API description for the Modbus RTU protocol of the RS485 Extension.
 
 An overview of products that are controllable over Modbus 
 can be found :ref:`here <product_overview>`.
+
 
 .. _llproto_modbus_protocol:
 
@@ -28,6 +29,7 @@ The stack answers with either a response (which can be the response of
 an older function call, a response to this function call or a callback) or
 a packet with an empty payload. If the answer by the RS485 slave was not
 empty, the RS485 master has to send an empty packet back (ACK).
+
 
 Packet Layout
 ^^^^^^^^^^^^^
@@ -85,6 +87,7 @@ capacity of the array then the remaining space is filled with 0. In this case
 the contained string is null-terminated. In case that the string fills the
 whole array no null-terminator can be appended and the string is *not*
 null-terminated. Therefore, you cannot rely on strings being null-terminated.
+
 
 Communication
 ^^^^^^^^^^^^^
@@ -191,6 +194,7 @@ and how to handle them. If you get the general idea about the
 sequence number and when and when not to send an answer, it is straight
 forward to implement the protocol. 
 
+
 Requests and Responses
 """"""""""""""""""""""
 
@@ -205,7 +209,6 @@ sequence number.
    :alt: Modbus protocol overview
    :align: center
    :target: ../../_images/modbus.png
-
 
 If something goes wrong in the whole process (e.g. CRC wrong, buffer full, 
 packet length doesn't fit etc): The slave will stop responding and induce
@@ -231,6 +234,7 @@ a request with payload if you have data to transfer. This will ensure that
 no messages pile up in the RS485 slave stack and you will get the responses
 to function calls and callbacks with a reasonable latency.
 
+
 .. _llproto_modbus_api:
 
 API
@@ -238,8 +242,8 @@ API
 
 The following functions and callbacks are supported by all devices.
 
-Basic Methods
-^^^^^^^^^^^^^
+Basic Functions
+^^^^^^^^^^^^^^^
 
 .. modbus:function:: stack_enumerate
 
@@ -280,8 +284,9 @@ Basic Methods
  Use this function to resolve a UID to the corresponding stack ID that is
  required for calling other functions of the device.
 
-Callback Configuration Methods
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Callback Configuration Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. modbus:function:: enumerate
 
@@ -297,6 +302,7 @@ Callback Configuration Methods
 
  Use this function to enumerate all connected devices without the need to know
  their UIDs beforehand.
+
 
 Callbacks
 ^^^^^^^^^
