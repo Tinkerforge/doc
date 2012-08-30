@@ -5,3 +5,4 @@ de/build
 de/source/Software/Bricks
 de/source/Software/Bricklets
 *.table
+*.substitutions

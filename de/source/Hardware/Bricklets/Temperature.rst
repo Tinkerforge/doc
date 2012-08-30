@@ -1,3 +1,6 @@
+.. include:: Temperature.substitutions
+
+
 .. _temperature_bricklet:
 
 Temperature Bricklet
@@ -90,15 +93,9 @@ Ressourcen
 Teste dein Temperature Bricklet
 -------------------------------
 
-Um das Temperature Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect the Temperature Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable
-(see picture below).
+|test_connect| (siehe folgendes Bild).
 
 .. image:: /Images/Bricklets/bricklet_temperature_master_600.jpg
    :scale: 100 %
@@ -106,9 +103,7 @@ Connect the Temperature Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "Temperature Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 If everything went as expected the Brick Viewer should look as
 depicted below.
@@ -122,13 +117,10 @@ depicted below.
 Put your finger on the sensor to see the
 temperature rising (or falling if it is extremely warm in your room).
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <temperature_programming_interfaces>` über das
-API des Temperature Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
-.. _temperature_programming_interfaces:
+.. _temperature_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------

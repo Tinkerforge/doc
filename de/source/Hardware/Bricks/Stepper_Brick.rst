@@ -1,3 +1,6 @@
+.. include:: Stepper_Brick.substitutions
+
+
 .. _stepper_brick:
 
 Stepper Brick
@@ -144,11 +147,7 @@ Stepper Bricks.
 Teste deinen Stepper Brick
 --------------------------
 
-Um den Stepper Brick testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
 Connect a stepper motor to the Brick and a suitable power supply
 (see :ref:`here <stepper_brick_connectivity>`). Your setup should look
@@ -160,8 +159,7 @@ like below.
    :align: center
    :target: ../../_images/Bricks/brick_stepper_motor_setup_1200.jpg
 
-Now connect the Brick to the PC over USB, you should see a tab named
-"Stepper Brick" in the Brick Viewer after you pressed "connect". Select it.
+|test_tab|
 
 .. image:: /Images/Bricks/stepper_brickv.jpg
    :scale: 100 %
@@ -197,9 +195,7 @@ motor current can be configured according to the connected motor.
 To start testing set a motor current suitable for your stepper motor, enable
 the driver and play around with the controls.
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <stepper_brick_programming_interfaces>` über das
-API des Stepper Bricks und Beispiele in verschiedenen Programmiersprachen.
+|test_pi_ref|
 
 
 Power Supply

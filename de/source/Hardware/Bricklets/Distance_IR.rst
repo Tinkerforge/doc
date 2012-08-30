@@ -1,3 +1,6 @@
+.. include:: Distance_IR.substitutions
+
+
 .. _distance_ir_bricklet:
 
 Distance IR Bricklet
@@ -113,15 +116,9 @@ Ressourcen
 Teste dein Distance IR Bricklet
 -------------------------------
 
-Um das Distance IR Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect an infrared distance sensor to the Bricklet and connect it
-to a :ref:`Brick <product_overview_bricks>`.
-You should have received a suitable cable with the Bricklet.
+|test_connect| (siehe folgendes Bild).
 
 .. image:: /Images/Bricklets/bricklet_distance_ir_master_600.jpg
    :scale: 100 %
@@ -129,9 +126,7 @@ You should have received a suitable cable with the Bricklet.
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_ir_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "Distance IR Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 If everything went as expected you can now see the measured distance
 of the sensor, the output voltage of the IR distance sensor
@@ -147,10 +142,7 @@ away from the sensor and to the sensor again.
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_ir_brickv.jpg
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <distance_ir_programming_interfaces>` über das
-API des Distance IR Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
 .. _distance_ir_sensor_configuration:
@@ -186,13 +178,13 @@ After this press the reset button on the Brick or power cycle to
 load the newly stored voltage/distance mapping.
 
 
-Voltage/Distance Mappings
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Spannung/Distanz Abbildung
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We provide the voltage/distance mappings for the following sensors:
 
 .. csv-table::
-   :header: "Type", "Range", "Mapping File"
+   :header: "Typ", "Bereich", "Abbildungsdatei"
    :widths: 15, 25, 10
 
    "GP2Y0A41 und GP2D120", "4cm - 30cm (1,57"" - 11,81"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
@@ -208,7 +200,7 @@ and lines containing one "cm: analog value" tuple each. Look in the provided
 files above to get an idea.
 
 
-.. _distance_ir_programming_interfaces:
+.. _distance_ir_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------
@@ -230,7 +222,7 @@ The distances are wrong
 
 This is likely some kind of calibration problem. First of all you should
 check if the calibration for the correct infrared sensor is installed
-(see :ref:`here <distance_ir_programming_interfaces>`) and calibrate the ADC of your
+(see :ref:`here <distance_ir_bricklet_programming_interfaces>`) and calibrate the ADC of your
 Brick (see :ref:`here <brickv_adc_calibration>`).
 
 If the distance measurements are still not precise enough, you have to write

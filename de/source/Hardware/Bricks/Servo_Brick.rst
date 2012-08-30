@@ -1,3 +1,6 @@
+.. include:: Servo_Brick.substitutions
+
+
 .. _servo_brick:
 
 Servo Brick
@@ -156,11 +159,7 @@ Servo Bricks.
 Teste deinen Servo Brick
 ------------------------
 
-Um den Servo Brick testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
 Connect a RC servo to a port of the Brick and a suitable power supply.
 Your setup should look as shown below.
@@ -171,8 +170,7 @@ Your setup should look as shown below.
    :align: center
    :target: ../../_images/Bricks/brick_servo_setup_1200.jpg
 
-Now connect the Brick to the PC over USB, you should see a tab named
-"Servo Brick" in the Brick Viewer after you pressed "connect". Select it.
+|test_tab|
 
 .. image:: /Images/Bricks/servo_brickv.jpg
    :scale: 100 %
@@ -202,9 +200,7 @@ a test sequence that performs random movements for each servo.
 To start testing enable servo 0 and play around with the controls
 or let the Brick Viewer perform a test.
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <servo_brick_programming_interfaces>` über das
-API des Servo Bricks und Beispiele in verschiedenen Programmiersprachen.
+|test_pi_ref|
 
 
 .. _servo_brick_configure_servo_pwm:

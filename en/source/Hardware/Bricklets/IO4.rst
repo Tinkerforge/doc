@@ -1,3 +1,6 @@
+.. include:: IO4.substitutions
+
+
 .. _io4_bricklet:
 
 IO-4 Bricklet
@@ -101,14 +104,9 @@ Resources
 Test your IO-4 Bricklet
 -----------------------
 
-To test the IO-4 Bricklet you need to have the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
-(for installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
-to the Brick Daemon.
+|test_intro|
 
-Connect the IO-4 Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable.
+|test_connect|.
 In our test we connected an LED with series resistor to the board
 by attaching the anode to pin 3 and the cathode to a GND pin.
 Additionally we connected a button that can short pin 0 to GND
@@ -121,8 +119,7 @@ use the GND pins directly beside the data pins.
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
-If you connect the Brick to the PC over USB, you should see a new tab named
-"IO-4 Bricklet" in the Brick Viewer after a moment. Select this tab.
+|test_tab|
 
 If everything went as expected the Brick Viewer should look as
 depicted below.
@@ -132,7 +129,6 @@ depicted below.
    :alt: IO-4 Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_brickv.jpg
-
 
 In this tab you can change the "Debounce Period",
 it is the debounce time for interrupt callbacks.
@@ -155,11 +151,10 @@ If you don't have a button or a LED you can try to measure voltages with
 a voltage meter or connect a pin with GND or VCC to see changes in the
 Brick Viewer.
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <io4_programming_interfaces>` section for
-the API of the IO-4 Bricklet and examples in different programming languages.
+|test_pi_ref|
 
-.. _io4_programming_interfaces:
+
+.. _io4_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

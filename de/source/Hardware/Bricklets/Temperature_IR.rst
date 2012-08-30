@@ -1,3 +1,6 @@
+.. include:: Temperature_IR.substitutions
+
+
 .. _temperature_ir_bricklet:
 
 Temperature IR Bricklet
@@ -97,14 +100,9 @@ Ressourcen
 Teste dein Temperature IR Bricklet
 ----------------------------------
 
-Um das Temperature IR Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect the Temperature IR Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable (see picture below).
+|test_connect| (siehe folgendes Bild).
 
 .. image:: /Images/Bricklets/bricklet_temperature_ir_master_600.jpg
    :scale: 100 %
@@ -112,9 +110,7 @@ Connect the Temperature IR Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_ir_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "Temperature IR Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 If everything went as expected the Brick Viewer should look as
 depicted below.
@@ -133,13 +129,10 @@ It is possible to configure the emissivity of the material you
 point at. Enter 0xFFFF = 65535 for an emissivity of 1.0.
 The default is an emissivity of 0.98 (0.98 * 0xFFFF = 64224).
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <temperature_ir_programming_interfaces>` über das
-API des Temperature IR Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
-.. _temperature_ir_programming_interfaces:
+.. _temperature_ir_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------

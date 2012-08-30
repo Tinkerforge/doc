@@ -1,3 +1,6 @@
+.. include:: Joystick.substitutions
+
+
 .. _joystick_bricklet:
 
 Joystick Bricklet
@@ -92,15 +95,9 @@ Resources
 Test your Joystick Bricklet
 ---------------------------
 
-To test the Joystick Bricklet you need to have the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
-(for installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
-to the Brick Daemon.
+|test_intro|
 
-Connect the Joystick Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable
-(see picture below).
+|test_connect| (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_joystick_master_600.jpg
    :scale: 100 %
@@ -108,8 +105,7 @@ Connect the Joystick Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_joystick_master_1200.jpg
 
-If you connect the Brick to the PC over USB, you should see a new tab named
-"Joystick Bricklet" in the Brick Viewer after a moment. Select this tab.
+|test_tab|
 
 If everything went as expected the Brick Viewer should look as
 depicted below.
@@ -130,13 +126,10 @@ joystick first up, then down, then right and then end left.
 If the Brick Viewer does not show Position (0,0) when the joystick is
 in resting position, press the "Calibrate (0,0)" button.
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <joystick_programming_interfaces>` section
-for the API of the Joystick Bricklet and examples in different programming
-languages.
+|test_pi_ref|
 
 
-.. _joystick_programming_interfaces:
+.. _joystick_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

@@ -1,3 +1,6 @@
+.. include:: IMU_Brick.substitutions
+
+
 .. _imu_brick:
 
 IMU Brick
@@ -131,14 +134,9 @@ IMU Bricks.
 Teste deinen IMU Brick
 ----------------------
 
-Um den IMU Brick testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connector your IMU Brick to the PC over USB, you should see a tab named
-"IMU Brick" in the Brick Viewer after you pressed "connect". Select it.
+|test_tab|
 
 .. image:: /Images/Bricks/imu_brickv.jpg
    :scale: 60 %
@@ -153,9 +151,7 @@ mirrored in the Brick Viewer. Before you press "Save Orientation" you should
 hold the IMU Brick still for about 15 seconds, so it can converge to the
 correct position.
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <imu_brick_programming_interfaces>` über das
-API des IMU Bricks und Beispiele in verschiedenen Programmiersprachen.
+|test_pi_ref|
 
 
 IMU Calibration

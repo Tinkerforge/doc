@@ -1,3 +1,6 @@
+.. include:: Joystick.substitutions
+
+
 .. _joystick_bricklet:
 
 Joystick Bricklet
@@ -92,15 +95,9 @@ Ressourcen
 Teste dein Joystick Bricklet
 ----------------------------
 
-Um das Joystick Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect the Joystick Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable
-(see picture below).
+|test_connect| (siehe folgendes Bild).
 
 .. image:: /Images/Bricklets/bricklet_joystick_master_600.jpg
    :scale: 100 %
@@ -108,9 +105,7 @@ Connect the Joystick Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_joystick_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "Joystick Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 .. image:: /Images/Bricklets/bricklet_joystick_brickv.jpg
    :scale: 100 %
@@ -128,13 +123,10 @@ joystick first up, then down, then right and then end left.
 If the Brick Viewer does not show Position (0,0) when the joystick is
 in resting position, press the "Calibrate (0,0)" button.
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <joystick_programming_interfaces>` über das
-API des Joystick Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
-.. _joystick_programming_interfaces:
+.. _joystick_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------

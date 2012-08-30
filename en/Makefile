@@ -32,6 +32,7 @@ clean:
 
 html:
 	python generate_tables.py
+	python generate_substitutions.py
 	mkdir -p $(BUILDDIR)/html/_images
 	cp -r source/Images/* $(BUILDDIR)/html/_images/
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html

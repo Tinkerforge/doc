@@ -1,3 +1,6 @@
+.. include:: Analog_Out.substitutions
+
+
 .. _analog_out_bricklet:
 
 Analog Out Bricklet
@@ -112,15 +115,9 @@ sind zusätzliche Ausgangssignale mit festen Spannungen.
 Teste dein Analog Out Bricklet
 ------------------------------
 
-Um das Analog Out Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect the Analog Out Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable.
-(see picture below).
+|test_connect| (siehe folgendes Bild).
 
 .. image:: /Images/Bricklets/bricklet_analog_out_master_600.jpg
    :scale: 100 %
@@ -128,9 +125,7 @@ Connect the Analog Out Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_out_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "Analog Out Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 In this tab you can configure the voltage on the output pin.
 For test purposes, you can measure this voltage with a voltmeter.
@@ -143,13 +138,10 @@ you have configured should be identical.
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_out_brickv.jpg
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <analog_out_programming_interfaces>` über das
-API des Analog Out Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
-.. _analog_out_programming_interfaces:
+.. _analog_out_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------

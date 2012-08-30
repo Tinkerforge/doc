@@ -1,3 +1,6 @@
+.. include:: Ambient_Light.substitutions
+
+
 .. _ambient_light_bricklet:
 
 Ambient Light Bricklet
@@ -91,15 +94,9 @@ Ressourcen
 Teste dein Ambient Light Bricklet
 ---------------------------------
 
-Um das Ambient Light Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Now you can connect the Ambient Light Bricklet to any
-:ref:`Brick <product_overview_bricks>`. You should have received a suitable
-cable with the Bricklet.
+|test_connect| (siehe folgendes Bild).
 
 .. image:: /Images/Bricklets/bricklet_ambient_light_master_600.jpg
    :scale: 100 %
@@ -107,15 +104,13 @@ cable with the Bricklet.
    :align: center
    :target: ../../_images/Bricklets/bricklet_ambient_light_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "Ambient Light Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
-If everything went as expected you can now see the illuminance in lux,
-a graphical representation of the illuminance and a graph that shows the
-illuminance over time. A good test for the sensor is to darken the room and
-slowly move a flashlight over the sensor, the graph should then look
-approximately as in the screenshot shown below.
+Wenn alles wie erwartet funktioniert wird die Beleuchtungsstärke in Lux
+angezeigt und ein Graph der den zeitlichen der Beleuchtungsstärke wiedergibt.
+Ein guter Test für den Sensor ist es den Raum abzudunkeln und eine Taschenlampe
+langsam über den Sensor hinweg zu bewegen. Der resultierende Graph sollte
+ungefähr so aussehen wie auf dem folgenden Screenshot.
 
 .. image:: /Images/Bricklets/bricklet_ambient_light_brickv.jpg
    :scale: 100 %
@@ -123,13 +118,10 @@ approximately as in the screenshot shown below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_ambient_light_brickv.jpg
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <ambient_light_programming_interfaces>` über das
-API des Ambient Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
-.. _ambient_light_programming_interfaces:
+.. _ambient_light_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------

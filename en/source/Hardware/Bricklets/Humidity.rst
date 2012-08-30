@@ -1,3 +1,6 @@
+.. include:: Humidity.substitutions
+
+
 .. _humidity_bricklet:
 
 Humidity Bricklet
@@ -92,15 +95,9 @@ Resources
 Test your Humidity Bricklet
 ---------------------------
 
-To test the Humidity Bricklet you need to have the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
-(for installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
-to the Brick Daemon.
+|test_intro|
 
-Connect the Humidity Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable
-(see picture below).
+|test_connect| (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_humidity_master_600.jpg
    :scale: 100 %
@@ -108,8 +105,7 @@ Connect the Humidity Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_humidity_master_1200.jpg
 
-If you connect the Brick to the PC over USB, you should see a new tab named
-"Humidity Bricklet" in the Brick Viewer after a moment. Select this tab.
+|test_tab|
 
 If everything went as expected you can now see the measured relative humidity
 and a graph that shows the humidity over time.
@@ -123,13 +119,10 @@ as long as you breath and fall again afterwards.
    :align: center
    :target: ../../_images/Bricklets/bricklet_humidity_brickv.jpg
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <humidity_programming_interfaces>`
-section for the API of the Humidity Bricklet and examples in different
-programming languages.
+|test_pi_ref|
 
 
-.. _humidity_programming_interfaces:
+.. _humidity_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

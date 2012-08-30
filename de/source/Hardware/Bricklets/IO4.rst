@@ -1,3 +1,6 @@
+.. include:: IO4.substitutions
+
+
 .. _io4_bricklet:
 
 IO-4 Bricklet
@@ -99,18 +102,15 @@ Ressourcen
 Teste dein IO-4 Bricklet
 ------------------------
 
-Um das IO-4 Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect the IO-4 Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable.
+|test_connect|.
 In our test we connected an LED with series resistor to the board
 by attaching the anode to pin 3 and the cathode to a GND pin.
 Additionally we connected a button that can short pin 0 to GND
-(see picture below). Starting from hardware version 1.1 you can also
+(siehe folgendes Bild).
+
+Starting from hardware version 1.1 you can also
 use the GND pins directly beside the data pins.
 
 .. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
@@ -119,9 +119,7 @@ use the GND pins directly beside the data pins.
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "IO-4 Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 .. image:: /Images/Bricklets/bricklet_io4_brickv.jpg
    :scale: 100 %
@@ -150,13 +148,10 @@ If you don't have a button or a LED you can try to measure voltages with
 a voltage meter or connect a pin with GND or VCC to see changes in the
 Brick Viewer.
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <io4_programming_interfaces>` über das
-API des IO-4 Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
-.. _io4_programming_interfaces:
+.. _io4_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------

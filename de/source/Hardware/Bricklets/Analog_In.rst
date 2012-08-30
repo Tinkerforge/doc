@@ -1,3 +1,6 @@
+.. include:: Analog_In.substitutions
+
+
 .. _analog_in_bricklet:
 
 Analog In Bricklet
@@ -111,16 +114,11 @@ zeigt die vier Anschlussklemmen.
 Teste dein Analog In Bricklet
 -----------------------------
 
-Um das Analog In Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect the Analog In Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable.
+|test_connect|.
 Additionally connect a voltage source to the Bricklet.
-For testing purposes we have connected a battery.
+For testing purposes we have connected a battery (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_analog_in_master_600.jpg
    :scale: 100 %
@@ -128,9 +126,7 @@ For testing purposes we have connected a battery.
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_in_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "Analog In Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 If everything went as expected you can now see the voltage in Volt
 and a graph that shows the voltage over time.
@@ -141,13 +137,10 @@ and a graph that shows the voltage over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_analog_in_brickv.jpg
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <analog_in_programming_interfaces>` über das
-API des Analog In Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
-.. _analog_in_programming_interfaces:
+.. _analog_in_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------

@@ -1,3 +1,6 @@
+.. include:: LCD_20x4.substitutions
+
+
 .. _lcd_20x4_bricklet:
 
 LCD 20x4 Bricklet
@@ -99,15 +102,9 @@ Ressourcen
 Teste dein LCD 20x4 Bricklet
 ----------------------------
 
-Um das LCD 20x4 Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect the LCD 20x4 Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable
-(see picture below).
+|test_connect| (siehe folgendes Bild).
 
 .. image:: /Images/Bricklets/bricklet_lcd_20x4_master_600.jpg
    :scale: 100 %
@@ -115,9 +112,7 @@ Connect the LCD 20x4 Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_lcd_20x4_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "LCD 20x4 Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 If everything went as expected the Brick Viewer should look as
 depicted below.
@@ -133,10 +128,7 @@ You can choose the line and the start position at which the text is displayed.
 Press "Send Text" to display it. Press "Backlight On" to turn the backlight on.
 Play around with the three on-board buttons and look how their values change.
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <lcd_20x4_programming_interfaces>` über das
-API des LCD 20x4 Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
 Change LCD's contrast
@@ -147,7 +139,7 @@ turn the potentiometer on the Bricklet with a screwdriver.
 The potentiometer is attached next to the Bricklet connector.
 
 
-.. _lcd_20x4_programming_interfaces:
+.. _lcd_20x4_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------

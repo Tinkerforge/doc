@@ -1,3 +1,6 @@
+.. include:: Dual_Relay.substitutions
+
+
 .. _dual_relay_bricklet:
 
 Dual Relay Bricklet
@@ -120,14 +123,9 @@ abhängig vom Schaltzustand des Relais.
 Teste dein Dual Relay Bricklet
 ------------------------------
 
-Um das Dual Relay Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect the Dual Relay Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable (see picture below).
+|test_connect| (siehe folgendes Bild).
 
 .. image:: /Images/Bricklets/bricklet_dual_relay_master_600.jpg
    :scale: 100 %
@@ -135,9 +133,7 @@ Connect the Dual Relay Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_dual_relay_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "Dual Relay Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 If everything went as expected the Brick Viewer should look as
 depicted below.
@@ -151,10 +147,7 @@ depicted below.
 Play around with the two relay buttons,
 you should hear the relay switching when toggling the buttons.
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <dual_relay_programming_interfaces>` über das
-API des Dual Relay Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
 .. _dual_relay_inductive_load_switching:
@@ -175,7 +168,7 @@ More information about protection circuitries can be found
 `here <http://www.jkmicro.com/inductive_loads.pdf>`__.
 
 
-.. _dual_relay_programming_interfaces:
+.. _dual_relay_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------

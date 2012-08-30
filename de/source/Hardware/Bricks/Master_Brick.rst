@@ -1,3 +1,6 @@
+.. include:: Master_Brick.substitutions
+
+
 .. _master_brick:
 
 Master Brick
@@ -128,14 +131,9 @@ Master Bricks.
 Teste deinen Master Brick
 -------------------------
 
-Um den Master Brick testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Connect the Brick to the PC over USB. You should see a tab named
-"Master Brick" in the Brick Viewer after you pressed "connect". Select it.
+|test_tab|
 
 .. image:: /Images/Bricks/master_brickv.jpg
    :scale: 100 %
@@ -149,9 +147,7 @@ currents. This is because you have not attached a
 such a board you should see the voltage applied to your stack and the current
 flowing in.
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <master_brick_programming_interfaces>` über das
-API des Master Bricks und Beispiele in verschiedenen Programmiersprachen.
+|test_pi_ref|
 
 
 .. _master_brick_programming_interfaces:

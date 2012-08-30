@@ -1,3 +1,6 @@
+.. include:: Temperature_IR.substitutions
+
+
 .. _temperature_ir_bricklet:
 
 Temperature IR Bricklet
@@ -98,15 +101,9 @@ Resources
 Test your Temperature IR Bricklet
 ---------------------------------
 
-To test the Temperature IR Bricklet you need to have the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
-(for installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
-to the Brick Daemon.
+|test_intro|
 
-Connect the Temperature IR Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable
-(see picture below).
+|test_connect| (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_temperature_ir_master_600.jpg
    :scale: 100 %
@@ -114,8 +111,7 @@ Connect the Temperature IR Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_ir_master_1200.jpg
 
-If you connect the Brick to the PC over USB, you should see a new tab named
-"Temperature IR Bricklet" in the Brick Viewer after a moment. Select this tab.
+|test_tab|
 
 If everything went as expected the Brick Viewer should look as
 depicted below.
@@ -130,18 +126,14 @@ Point the Bricklet in different
 directions. The Brick Viewer will show the ambient temperature (the
 temperature of the room) and the object temperature you point at.
 
-It is possible to configure the emissivity of the material you
-point at.
+It is possible to configure the emissivity of the material you point at.
 Enter 0xFFFF = 65535 for an emissivity of 1.0.
 The default is an emissivity of 0.98 (0.98 * 0xFFFF = 64224).
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <temperatureir_programming_interfaces>`
-section for the API of the Temperature IR Bricklet and examples in different
-programming language.
+|test_pi_ref|
 
 
-.. _temperatureir_programming_interfaces:
+.. _temperature_ir_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

@@ -1,3 +1,6 @@
+.. include:: Distance_IR.substitutions
+
+
 .. _distance_ir_bricklet:
 
 Distance IR Bricklet
@@ -109,15 +112,9 @@ Resources
 Test your Distance IR Bricklet
 ------------------------------
 
-To test the Distance IR Bricklet you need to have the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
-(for installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
-to the Brick Daemon.
+|test_intro|
 
-Connect an infrared distance sensor to the Bricklet and connect it
-to a :ref:`Brick <product_overview_bricks>` with the supplied cable
-(see picture below).
+|test_connect| (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_distance_ir_master_600.jpg
    :scale: 100 %
@@ -125,8 +122,7 @@ to a :ref:`Brick <product_overview_bricks>` with the supplied cable
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_ir_master_1200.jpg
 
-If you connect the Brick to the PC over USB, you should see a new tab named
-"Distance IR Bricklet" in the Brick Viewer after a moment. Select this tab.
+|test_tab|
 
 If everything went as expected you can now see the measured distance
 of the sensor, the output voltage of the IR distance sensor
@@ -142,10 +138,7 @@ away from the sensor and to the sensor again.
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_ir_brickv.jpg
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <distance_ir_programming_interfaces>` section
-for the API of the Distance IR Bricklet and examples in different programming
-languages.
+|test_pi_ref|
 
 
 .. _distance_ir_sensor_configuration:
@@ -203,7 +196,7 @@ and lines containing one "cm: analog value" tuple each. Look in the provided
 files above to get an idea.
 
 
-.. _distance_ir_programming_interfaces:
+.. _distance_ir_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

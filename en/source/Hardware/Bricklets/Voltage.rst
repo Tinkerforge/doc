@@ -1,3 +1,6 @@
+.. include:: Voltage.substitutions
+
+
 .. _voltage_bricklet:
 
 Voltage Bricklet
@@ -88,14 +91,9 @@ Resources
 Test your Voltage Bricklet
 --------------------------
 
-To test the Voltage Bricklet you need to have the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
-(for installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
-to the Brick Daemon.
+|test_intro|
 
-Connect the Voltage Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable.
+|test_connect|.
 Additionally connect a voltage source to the Bricklet.
 For testing purposes we have connected a battery
 (see picture below).
@@ -106,8 +104,7 @@ For testing purposes we have connected a battery
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_master_1200.jpg
 
-If you connect the Brick to the PC over USB, you should see a new tab named
-"Voltage Bricklet" in the Brick Viewer after a moment. Select this tab.
+|test_tab|
 
 If everything went as expected you can now see the voltage in volt
 and a graph that shows the voltage over time.
@@ -118,13 +115,10 @@ and a graph that shows the voltage over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_brickv.jpg
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <voltage_programming_interfaces>` section
-for the API of the Voltage Bricklet and examples in different
-programming languages.
+|test_pi_ref|
 
 
-.. _voltage_programming_interfaces:
+.. _voltage_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

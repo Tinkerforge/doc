@@ -1,3 +1,6 @@
+.. include:: Linear_Poti.substitutions
+
+
 .. _linear_poti_bricklet:
 
 Linear Poti Bricklet
@@ -102,15 +105,9 @@ Resources
 Test your Linear Poti Bricklet
 ------------------------------
 
-To test the Linear Poti Bricklet you need to have the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
-(for installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
-to the Brick Daemon.
+|test_intro|
 
-Connect the Linear Poti Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable
-(see picture below).
+|test_connect| (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_linear_poti_master_600.jpg
    :scale: 100 %
@@ -118,8 +115,7 @@ Connect the Linear Poti Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_linear_poti_master_1200.jpg
 
-If you connect the Brick to the PC over USB, you should see a new tab named
-"Linear Poti Bricklet" in the Brick Viewer after a moment. Select this tab.
+|test_tab|
 
 If everything went as expected the Brick Viewer should look as
 depicted below.
@@ -134,13 +130,10 @@ Move the potentiometer.
 You should be able to create a similar graph
 by moving the potentiometer from bottom to top and back to bottom.
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <linear_poti_programming_interfaces>`
-section for the API of the Linear Poti Bricklet and examples in different
-programming language.
+|test_pi_ref|
 
 
-.. _linear_poti_programming_interfaces:
+.. _linear_poti_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

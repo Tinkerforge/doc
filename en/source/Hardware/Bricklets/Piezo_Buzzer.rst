@@ -1,3 +1,6 @@
+.. include:: Piezo_Buzzer.substitutions
+
+
 .. _piezo_buzzer_bricklet:
 
 Piezo Buzzer Bricklet
@@ -91,15 +94,9 @@ Resources
 Test your Piezo Buzzer Bricklet
 -------------------------------
 
-To test the Piezo Buzzer Bricklet you need to have the
-:ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
-(for installation guides click :ref:`here <brickd_installation>`
-and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
-to the Brick Daemon.
+|test_intro|
 
-Connect the Piezo Buzzer Bricklet to a
-:ref:`Brick <product_overview_bricks>` with the supplied cable
-(see picture below).
+|test_connect| (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_piezo_buzzer_master_600.jpg
    :scale: 100 %
@@ -107,8 +104,7 @@ Connect the Piezo Buzzer Bricklet to a
    :align: center
    :target: ../../_images/Bricklets/bricklet_piezo_buzzer_master_1200.jpg
 
-If you connect the Brick to the PC over USB, you should see a new tab named
-"Piezo Buzzer Bricklet" in the Brick Viewer after a moment. Select this tab.
+|test_tab|
 
 If everything went as expected the Brick Viewer should look as
 depicted below.
@@ -122,13 +118,10 @@ depicted below.
 Generate a beep by pressing "Send Beep". You should hear a beep with the
 specified duration.
 
-After this test you can go on with writing your own application.
-See the :ref:`Programming Interface <piezo_buzzer_programming_interfaces>`
-section for the API of the Piezo Buzzer Bricklet and examples in different
-programming language.
+|test_pi_ref|
 
 
-.. _piezo_buzzer_programming_interfaces:
+.. _piezo_buzzer_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

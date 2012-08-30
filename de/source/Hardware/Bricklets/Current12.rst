@@ -1,3 +1,6 @@
+.. include:: Current12.substitutions
+
+
 .. _current12_bricklet:
 
 Current12 Bricklet
@@ -93,16 +96,10 @@ Ressourcen
 Teste dein Current12 Bricklet
 -----------------------------
 
-Um das Current12 Bricklet testen zu können müssen der
-:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
-sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
-und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
-dem Brick Daemon verbunden sein.
+|test_intro|
 
-Now you can connect the Current12 Bricklet to any
-:ref:`Brick <product_overview_bricks>`. You should have received a suitable
-cable with the Bricklet. Connect a Motor
-and a Battery to the Bricklet as displayed in the following image
+|test_connect|.
+Connect a Motor and a Battery to the Bricklet as displayed in the following image
 (or anything else connected in series to the Current12 Bricklet that
 produces a current).
 
@@ -112,9 +109,7 @@ produces a current).
    :align: center
    :target: ../../_images/Bricklets/bricklet_current_master_1200.jpg
 
-Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
-im Brick Viewer ein neuer Tab namens "Current12 Bricklet" auftauchen.
-Wähle diesen Tab aus.
+|test_tab|
 
 If everything went as expected you can now see the current used by the
 motor and a graph that shows the current over time.
@@ -128,13 +123,10 @@ motor and a graph that shows the current over time.
 In the screenshot you can see a high current peak. This is caused by the
 starting of the motor when the battery is connected.
 
-Nun kannst du dein eigenes Programm schreiben. Siehe den Abschnitt
-:ref:`Programmierschnittstellen <current12_programming_interfaces>` über das
-API des Current12 Bricklets und Beispiele in verschiedenen
-Programmiersprachen.
+|test_pi_ref|
 
 
-.. _current12_programming_interfaces:
+.. _current12_bricklet_programming_interfaces:
 
 Programmierschnittstellen
 -------------------------
