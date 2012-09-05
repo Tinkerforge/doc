@@ -99,9 +99,9 @@ Teste dein Current12 Bricklet
 |test_intro|
 
 |test_connect|.
-Connect a Motor and a Battery to the Bricklet as displayed in the following image
-(or anything else connected in series to the Current12 Bricklet that
-produces a current).
+Als nächstes muss noch ein Verbraucher und eine Stromquelle in Reihe mit der
+Bricklet in Reihe verbunden werden. Zum Beispiel einen Motor und eine Batterie
+wie im folgenden Bild.
 
 .. image:: /Images/Bricklets/bricklet_current_master_600.jpg
    :scale: 100 %
@@ -110,9 +110,8 @@ produces a current).
    :target: ../../_images/Bricklets/bricklet_current_master_1200.jpg
 
 |test_tab|
-
-If everything went as expected you can now see the current used by the
-motor and a graph that shows the current over time.
+Wenn alles wie erwartet funktioniert wird die Stromaufnahme des Motors angezeigt.
+Der Graph gibt den zeitlichen Verlauf der Stromaufnahme wieder.
 
 .. image:: /Images/Bricklets/bricklet_current12_brickv.jpg
    :scale: 100 %
@@ -120,8 +119,8 @@ motor and a graph that shows the current over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_current12_brickv.jpg
 
-In the screenshot you can see a high current peak. This is caused by the
-starting of the motor when the battery is connected.
+Der Screenshot zeigt eine hohe Spitze. Diese wird durch das Anfahren des Motors
+beim Anschließen der Batterie verursacht.
 
 |test_pi_ref|
 

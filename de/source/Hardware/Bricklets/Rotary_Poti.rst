@@ -114,9 +114,8 @@ Teste dein Rotary Poti Bricklet
    :target: ../../_images/Bricklets/bricklet_rotary_poti_master_1200.jpg
 
 |test_tab|
-
-If everything went as expected the Brick Viewer should look as
-depicted below.
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
 
 .. image:: /Images/Bricklets/bricklet_rotary_poti_brickv.jpg
    :scale: 100 %
@@ -124,9 +123,8 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_rotary_poti_brickv.jpg
 
-Turn the potentiometer.
-You should be able to create a similar graph by turning the potentiometer
-from left left to right and back to left.
+Der Graph ist durch Drehen des Knopfes von links nach rechts und zurück
+entstanden.
 
 |test_pi_ref|
 

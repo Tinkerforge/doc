@@ -134,18 +134,17 @@ Teste dein Dual Relay Bricklet
    :target: ../../_images/Bricklets/bricklet_dual_relay_master_1200.jpg
 
 |test_tab|
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
 
-If everything went as expected the Brick Viewer should look as
-depicted below.
+Durch klicken der beiden Knöpfe werden die Relais umgeschaltet die
+ist durch ein Klickgeräusch hörbar und durch LEDs neben den Relais auch sichtbar.
 
 .. image:: /Images/Bricklets/bricklet_dual_relay_brickv.jpg
    :scale: 100 %
    :alt: Dual Relay Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_dual_relay_brickv.jpg
-
-Play around with the two relay buttons,
-you should hear the relay switching when toggling the buttons.
 
 |test_pi_ref|
 
@@ -155,17 +154,18 @@ you should hear the relay switching when toggling the buttons.
 Schalten Induktiver Lasten
 --------------------------
 
-Without external components the switching of inductive loads can
-cause noise in the system and can lead to malfunctions or destroyed
-components. Typical examples for inductive loads are motors and solenoids,
-but these problems can also occur when switching e.g. fluorescent lamps.
+Ohne externe Beschaltung kann das Schalten induktiver Lasten Störungen im
+System verursachen die zu Fehlfunktionen oder Schäden an Komponenten führen
+können. Typische Beispiele für induktive Lasten sind Motoren und Spulen im
+allgemeinen. Dieses Problem kann z.B. aber auch beim Schalten von
+Leuchtstofflampe auftreten.
 
-If you want to switch an inductive load you need external components,
-e.g. a `Varistor <http://en.wikipedia.org/wiki/Varistor>`__
-or a combination of a resistor and a capacitor parallel to the load.
+Um induktive Lasten sicher schalten zu können wird externe Beschaltung z.B. in
+Form eines `Varistors <http://de.wikipedia.org/wiki/Varistor>`__ oder der
+Kombination eines Widerstandes und eines Kondesators parallel zu Last empfohlen.
 
-More information about protection circuitries can be found
-`here <http://www.jkmicro.com/inductive_loads.pdf>`__.
+Weitere Informationen über Schutzbeschaltung ist
+`hier <http://www.jkmicro.com/inductive_loads.pdf>`__ zu finden.
 
 
 .. _dual_relay_bricklet_programming_interfaces:

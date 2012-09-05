@@ -105,9 +105,9 @@ Teste dein Ambient Light Bricklet
    :target: ../../_images/Bricklets/bricklet_ambient_light_master_1200.jpg
 
 |test_tab|
-
 Wenn alles wie erwartet funktioniert wird die Beleuchtungsstärke in Lux
-angezeigt und ein Graph der den zeitlichen der Beleuchtungsstärke wiedergibt.
+angezeigt. Der Graph gibt den zeitlichen Verlauf der Beleuchtungsstärke wieder.
+
 Ein guter Test für den Sensor ist es den Raum abzudunkeln und eine Taschenlampe
 langsam über den Sensor hinweg zu bewegen. Der resultierende Graph sollte
 ungefähr so aussehen wie auf dem folgenden Screenshot.

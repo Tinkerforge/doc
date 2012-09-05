@@ -57,15 +57,15 @@ Mit dem IO-4 :ref:`Bricklet <product_overview_bricklets>` können
 :ref:`Bricks <product_overview_bricks>` um externe digitale Ein- und Ausgänge
 (I/Os) erweitert werden.
 
-Das Bricklet besitzt 4 I/Os die unabhängig voneinander als Ein- oder Ausgänge
-konfiguriert werden können. Jeder I/O kann zusätzlich mit Pull-Ups oder als
-Interrupt konfiguriert werden. Die I/Os sind über Schraubklemmen nach außen
+Das Bricklet besitzt 4 I/O Pins die unabhängig voneinander als Ein- oder Ausgänge
+konfiguriert werden können. Jeder Eingang kann zusätzlich mit einem Pull-Up oder als
+Interruptquelle konfiguriert werden. Die I/O Pins sind über Schraubklemmen nach außen
 geführt. Zwei zusätzliche Schraubklemmen führen 3,3V und GND nach außen.
 
 In typischen Anwendungen können Schalter, Taster und LEDs angeschlossen werden
 
-Seit Hardwareversion 1.1 führt eine zusätzliche Schraubklemme 3,3V und GND
-nach außen.
+Seit Hardwareversion 1.1 sitzt ein GND Pin neben jedem der 4 I/O Pins um den
+Zugriff auf GND zu vereinfachen.
 
 
 Technische Spezifikation
@@ -74,7 +74,7 @@ Technische Spezifikation
 ================================  =================================================================
 Eigenschaft                       Wert
 ================================  =================================================================
-Anzahl I/Os                       4
+I/O Pins                          4
 --------------------------------  -----------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------
 I/O Spannung                      3,3V
@@ -105,13 +105,13 @@ Teste dein IO-4 Bricklet
 |test_intro|
 
 |test_connect|.
-In our test we connected an LED with series resistor to the board
-by attaching the anode to pin 3 and the cathode to a GND pin.
-Additionally we connected a button that can short pin 0 to GND
-(siehe folgendes Bild).
+In unserem Testaufbau ist eine LED über einen Vorwiderstand angeschlossen,
+mit Anode an Pin 3 und Kathode an einen GND Pin.
+Zusätzlich ist noch ein Schiebeschalter angeschlossen der Pin 0 mit GND
+verbinden kann (siehe folgendes Bild).
 
-Starting from hardware version 1.1 you can also
-use the GND pins directly beside the data pins.
+Ab Hardwareversion 1.1 können auch die GND Pins direkt neben den I/O Pins
+benutzt werden.
 
 .. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
    :scale: 100 %
@@ -127,26 +127,29 @@ use the GND pins directly beside the data pins.
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_brickv.jpg
 
-In this tab you can change the "Debounce Period",
-it is the debounce time for interrupt callbacks.
-For example: If you set this value to 100, you will get interrupts
-maximal every 100ms. This is necessary if something that bounces is
-connected to the IO-4 Bricklet, such as a button. You can test the optimal
-value in the Brick Viewer and use it later in your own program.
+Hier kann die "Debounce Period" eingestellt werden, dies ist die Entprellperiode
+die Interrupt Callbacks. Ein Beispiel: Wenn die Debounce Period auf 100 gestellt
+wird, werden Interrupts maximal alle 100ms ausgelöst. Dies ist notwendig wenn
+etwas prellendes (z.B. ein Taster) an das IO-4 Bricklet angeschlossen wird.
+Der optimale Wert kann im Brick Viewer ermittelt und dann später im eigenen
+Programm verwendet werden.
 
-Below the debounce period configuration you can configure the pins.
-Each pin can be configured as input/output and in case of an input pin
-as pull-up. The current state is depicted in the tabular below.
+Unter der Einstellung für die Debounce Period können die einzelnen Pins
+konfiguriert werden. Jeder Pin kann als Eingang oder Ausgang betrieben werden.
+Für Eingangspins kann zusätzlich ein Pull-Up geschaltet werden. Die aktuelle
+Konfiguration und der Zustand der Pins ist dann in der Tabelle weiter unten
+aufgelistet.
 
-To test the LED we configure pin 3 as output and change
-the value. When the pin is high the LED should light up. To test the button
-configure pin 0 as input pull-up. We need the pull-up to define a stable
-state when the button is not pressed. Now look in the tabular, you should
-see that you can change the value of the pin by toggling the button.
+Um die LED leuchten zu lassen muss Pin 3 als Ausgang konfiguriert und auf
+logisch 1 (High) gestellt werden. Um den Schiebeschalter zu testen muss Pin 0
+als Eingang mit Pull-Up konfiguriert werden. Der Pull-Up ist nötig um einen
+stabilen Zustand zu erreichen wenn der Schiebeschalter Pin 0 nicht mit GND
+verbindet. In der Tabelle sollte sich jetzt der Zustand des Pins ändern wenn
+der Schiebeschalter umgeschaltet wird.
 
-If you don't have a button or a LED you can try to measure voltages with
-a voltage meter or connect a pin with GND or VCC to see changes in the
-Brick Viewer.
+Wenn kein Schalter oder eine LED zu Hand ist kann auch ein Voltmeter verwendet
+werden um Änderungen an Ausgangspins zu messen. Interrupts an Eingangspins können
+auch mit Hilfe einer Büroklammer erzeugt werden.
 
 |test_pi_ref|
 

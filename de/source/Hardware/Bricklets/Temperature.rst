@@ -104,9 +104,8 @@ Teste dein Temperature Bricklet
    :target: ../../_images/Bricklets/bricklet_temperature_master_1200.jpg
 
 |test_tab|
-
-If everything went as expected the Brick Viewer should look as
-depicted below.
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
 
 .. image:: /Images/Bricklets/bricklet_temperature_brickv.jpg
    :scale: 100 %
@@ -114,8 +113,8 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_brickv.jpg
 
-Put your finger on the sensor to see the
-temperature rising (or falling if it is extremely warm in your room).
+Als einfacher Test kannst du einen Finger auf den Sensor legen, die angezeigte
+Temperatur sollte steigen (oder fallen wenn es sehr warm im Raum ist).
 
 |test_pi_ref|
 

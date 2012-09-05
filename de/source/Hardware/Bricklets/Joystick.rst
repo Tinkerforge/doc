@@ -54,7 +54,7 @@ Beschreibung
 Das Joystick :ref:`Bricklet <product_overview_bricklets>` kann an jedes
 :ref:`Bricks <product_overview_bricks>` angeschlossen werden.
 
-Der Joystick is in zwei Richtungen beweglich und mit einem Taster ausgestattet.
+Der Joystick ist 2-achsig und mit einem Taster ausgestattet.
 Die Position des Joysticks (X/Y Koordinaten) und der Status des Tasters kann
 ausgelesen werden. Zusätzlich können Events konfiguriert werden die ausgelöst
 werden wenn der Stick eine bestimmte Position erreicht oder der Taster gedrückt
@@ -69,7 +69,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Joystick                          2-Achsen mit Taster
+Joystick                          2-achsig mit Taster
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 X/Y Position                      -100/100, 0=Mittelposition
@@ -113,15 +113,16 @@ Teste dein Joystick Bricklet
    :align: center
    :target: ../../_images/Bricklets/bricklet_joystick_brickv.jpg
 
-The tab consists of a coordinate system that shows the current position of
-the joystick and if the button is pressed.
-Below this coordinate system you can find a graph that visualizes the
-movements over time.
-You should be able to  reproduce the depicted graph when you move the
-joystick first up, then down, then right and then end left.
+Auf dem Tab wird in einem Koordinatenkreuz die aktuelle Position des Sticks
+angezeigt. Der Zustand des Tasters wird über die Füllung des Kreises angezeigt.
+Wenn der Taster gedrückt ist dann wird der Kreis gefüllt dargestellt.
+Der Graph darunter gibt den zeitlichen Verlauf der Position wieder.
+Der Verlauf im abgebildeten Graph ist durch folgenden Bewegungsablauf des
+Joysticks entstanden: hoch, runter, rechts, links.
 
-If the Brick Viewer does not show Position (0,0) when the joystick is
-in resting position, press the "Calibrate (0,0)" button.
+Falls die Position nicht als (0,0) angezeigt wird obwohl sich der Stick in
+Mittelstellung befindet, dann kann der "Calibrate (0,0)" Knopf geklickt werden
+um die Null-Position zu kalibrieren.
 
 |test_pi_ref|
 

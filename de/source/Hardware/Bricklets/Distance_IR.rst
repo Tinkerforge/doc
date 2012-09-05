@@ -61,7 +61,7 @@ Beschreibung
 Mit dem Distance IR :ref:`Bricklet <product_overview_bricklets>` können
 :ref:`Bricks <product_overview_bricks>` Entfernungen messen.
 Dieses Bricklet wird auf der Rückseite von analogen
-`Sharp <http://www.sharpsma.com>`__ Infrarot Entfernungs-Sensoren befestigt.
+`Sharp <http://www.sharpsma.com>`__ Infrarot Entfernungssensoren befestigt.
 Nachdem der verbundene Sensor konfiguriert wurde, können die gemessenen
 Entfernungen direkt in Millimeter ausgelesen werden.
 Mit konfigurierbaren Events ist es möglich auf veränderte Distanzmessung zu
@@ -127,14 +127,11 @@ Teste dein Distance IR Bricklet
    :target: ../../_images/Bricklets/bricklet_distance_ir_master_1200.jpg
 
 |test_tab|
-
-If everything went as expected you can now see the measured distance
-of the sensor, the output voltage of the IR distance sensor
-and a graph that shows the distance over time.
-
-Click on the Distance IR tab and see if the measured values change
-corresponding to the real distance. In the image below we slowly moved a hand
-away from the sensor and to the sensor again.
+Wenn alles wie erwartet funktioniert wird die gemessen Distanz und die
+Ausgangsspannung des Sensors angezeigt.
+Der Graph gibt den zeitlichen Verlauf der Distanz wieder.
+Das folgende Bild entstand durch langsames auf den Sensor zu und wieder
+wegbewegen einer Hand.
 
 .. image:: /Images/Bricklets/bricklet_distance_ir_brickv.jpg
    :scale: 100 %
@@ -147,41 +144,40 @@ away from the sensor and to the sensor again.
 
 .. _distance_ir_sensor_configuration:
 
-Configure Infrared Sensor
--------------------------
+Infrarot Sensor konfigurieren
+-----------------------------
 
-The supported infrared sensors simply produce an output voltage
-based on the measured distance. This voltage is measured by the ADC
-of the connected Brick. To compute the corresponding distance to this voltage
-a voltage/distance mapping is needed. This mapping is stored on the
-Distance IR Bricklet. If you want to use an IR distance sensor not directly
-supported by us, you have to calibrate this voltage/distance mapping
-yourself.
+Die unterstützten Infrarot Sensors geben eine Spannung entsprechend der
+gemessenen distanz aus. Diese Spannung wird vom ADC des angeschlossenen Bricks
+gemessen. Um aus der Spannung die Distanz zu errechnen wird eine Abbildung von
+Spannung auf Distanz benötigt. Diese Abbildung is spezifisch für den jeweiligen
+Sensortyp und wird auf dem Bricklet gepspeichert. Um Sensor verwenden zu können,
+die nicht direkt von uns unterstüzt werden musst du selbst eine passenden
+Abbildung von Spannung auf Distanz definieren.
 
 
-Store Voltage/Distance Mapping
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Spannung/Distanz Abbildung speichern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To write the voltage/distance mapping you have to connect the Bricklet
-with a Brick to your PC. Start the :ref:`Brick Daemon <brickd>` and the
-:ref:`Brick Viewer <brickv>`.
+Um die Spannung/Distanz Abbildung auf dem Bricklet zu speichern muss es über
+einen Brick an einen PC angeschlossen werden auf dem der :ref:`Brick Daemon
+<brickd>` und der :ref:`Brick Viewer <brickv>` laufen.
 
-Press "connect" in the Brick Viewer and you should see the Distance IR tab.
-Click on it.
+Wähle den "Distance IR Bricklet" Tab aus, klicke auf den "File.." Knopf und
+wähle die passende Spannung/Distanz Abbildungdatei aus. Dann klicke auf den
+"Save" Knopf um die Abbildung auf dem Bricklet zu speichern. Dabei wird aus
+den Stützwerten der Abbildungsdatei eine Spline interpoliert um äquidistante
+Stützwert für den gesamten Messbereich des Infrarot Sensors zu erhalten.
 
-Press the "File.." Button and choose an voltage/distance mapping file.
-After this press the "Save" Button to write the data onto the Bricklet,
-you will get an graphical representation spline interpolation
-that is written.
-
-After this press the reset button on the Brick or power cycle to
-load the newly stored voltage/distance mapping.
+Damit die neue Abbildung verwendet wird muss der Brick per Reset Knopf oder
+USB ab- und anstecken neu gestartet werden.
 
 
 Spannung/Distanz Abbildung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We provide the voltage/distance mappings for the following sensors:
+Wir haben vorgefertigte Spannung/Distanz Abbildungsdateien für die folgenden
+Sensoren:
 
 .. csv-table::
    :header: "Typ", "Bereich", "Abbildungsdatei"
@@ -191,13 +187,14 @@ We provide the voltage/distance mappings for the following sensors:
    "GP2Y0A21", "10cm - 80cm (3,94"" - 31,50"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
    "GP2Y0A02", "20cm - 150cm (7,87"" - 59,06"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A02.txt>`__"
 
-You can write your own voltage/distance mapping for a sensor we
-currently do not offer. Or you can modify an existing mapping file to achieve
-a better quality of your sensor.
+Du kannst deine eigenen Spannung/Distanz Abbildungen erstellen für Sensoren die
+wir im Moment noch nicht unterstützen. Oder du kannst auch die bestehenden
+Abbildungen überarbeiten um deren Qualität für deinen Sensor zu verbessern.
 
-A voltage/distance mapping file consists of comments (lines beginning with '#')
-and lines containing one "cm: analog value" tuple each. Look in the provided
-files above to get an idea.
+Eine Spannung/Distanz Abbildungsdatei kann Kommentare beinhalten (Zeilen die mit
+'#' beginnen) und beinhaltet Zeilen die jeweils ein
+"<Distanz in cm>: <Analogwert in mV>" Paar enthalten. Schau dir die bestehenden
+Abbildungsdateien für ein besseres Verständnis an.
 
 
 .. _distance_ir_bricklet_programming_interfaces:
@@ -217,15 +214,17 @@ Beschreibung.
 FAQ
 ---
 
-The distances are wrong
-^^^^^^^^^^^^^^^^^^^^^^^
+Die Distanzen passen nicht
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is likely some kind of calibration problem. First of all you should
-check if the calibration for the correct infrared sensor is installed
-(see :ref:`here <distance_ir_bricklet_programming_interfaces>`) and calibrate the ADC of your
-Brick (see :ref:`here <brickv_adc_calibration>`).
+Es ist höchstwahrscheinlich ein Kalibrierungsproblem. Als erstes solltest du
+sicherstellen, dass die richtige Spannung/Distanz Abbildungsdatei für den
+angeschlossenen Sensor auf dem Bricklet gespeichert ist (siehe
+:ref:`hier <distance_ir_sensor_configuration>`). Als nächstes solltest du
+noch die Kalibrierung des ADC deines Bricks überprüfen
+(siehe :ref:`hier <brickv_adc_calibration>`).
 
-If the distance measurements are still not precise enough, you have to write
-a voltage/distance mapping that is specific for your device. The
-voltage/distance mapping files provided by us are averaged over several
-sensors.
+Falls die Distanzmessung immer noch nicht genau genug ist, bleibt nur noch
+eine speziell auf deinen Sensor angepasste Spannung/Distanz Abbildungsdatei zu
+erstellen. Die von uns vorgefertigte Spannung/Distanz Abbildungsdateien
+enthalten über mehrere Sensoren gemittelte Werte.

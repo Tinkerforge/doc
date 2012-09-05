@@ -111,9 +111,8 @@ Teste dein Temperature IR Bricklet
    :target: ../../_images/Bricklets/bricklet_temperature_ir_master_1200.jpg
 
 |test_tab|
-
-If everything went as expected the Brick Viewer should look as
-depicted below.
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
 
 .. image:: /Images/Bricklets/bricklet_temperature_ir_brickv.jpg
    :scale: 100 %
@@ -121,13 +120,13 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_ir_brickv.jpg
 
-Point the Bricklet in different
-directions. The Brick Viewer will show the ambient temperature (the
-temperature of the room) and the object temperature you point at.
+Wenn du den Sensor in verschiedene Richtungen zeigen lässt dann sollte sich die
+Objekttemperatur abhängig vom angepeilten Objekt ändern. Die Umgebungstemperatur
+sollte stabil bleiben, außer du berührst den Sensor und erwärmst ihn dadurch.
 
-It is possible to configure the emissivity of the material you
-point at. Enter 0xFFFF = 65535 for an emissivity of 1.0.
-The default is an emissivity of 0.98 (0.98 * 0xFFFF = 64224).
+Für akkurate Messungen der Objekttemperatur ist es möglich die Emissivität
+des zu messenden Materials einzustellen: 0xFFFF = 65535 entspricht einer
+Emissivität von 1,0. Die Standard Emissivität ist 0,98 (0,98 * 0xFFFF = 64224).
 
 |test_pi_ref|
 

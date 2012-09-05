@@ -126,11 +126,11 @@ Teste dein Analog Out Bricklet
    :target: ../../_images/Bricklets/bricklet_analog_out_master_1200.jpg
 
 |test_tab|
+Auf diesem Tab kann die Ausgangsspannung am VOUT Pin eingestellt werden.
 
-In this tab you can configure the voltage on the output pin.
-For test purposes, you can measure this voltage with a voltmeter.
-If everything went as expected the voltage on the voltmeter and the voltage
-you have configured should be identical.
+Zu Testzwecken kann die Ausgangsspannung mit einem Voltmeter gemessen
+werden. Wenn alles wie erwartet funktioniert sollte die eingestellte Spannung
+mit der Messung des Voltmeters übereinstimmen.
 
 .. image:: /Images/Bricklets/bricklet_analog_out_brickv.jpg
    :scale: 100 %

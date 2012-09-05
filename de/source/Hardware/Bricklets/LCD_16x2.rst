@@ -114,9 +114,8 @@ Teste dein LCD 16x2 Bricklet
    :target: ../../_images/Bricklets/bricklet_lcd_16x2_master_1200.jpg
 
 |test_tab|
-
-If everything went as expected the Brick Viewer should look as
-depicted below.
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
 
 .. image:: /Images/Bricklets/bricklet_lcd_16x2_brickv.jpg
    :scale: 100 %
@@ -124,20 +123,20 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_lcd_16x2_brickv.jpg
 
-Input a string into the text field.
-You can choose the line and the start position at which the text is displayed.
-Press "Send Text" to display it. Press "Backlight On" to turn the backlight on.
-Play around with the three on-board buttons and look how their values change.
+Um Text anzuzeigen muss dieser in das Textfeld eingegeben werden. Die Zeile und
+die Spalte in der der Text angezeigt werden soll kann verändert werden. Ein Klick
+auf den "Send Text" Knopf zeigt den Text auf dem LCD an. Ein weitere Klick auf
+den "Backlight On" Knopf schaltet die Hintergrundbeleuchtung ein.
+Werden die 3 Knöpfe am Bricklet gedrückt so wird dies angezeigt.
 
 |test_pi_ref|
 
 
-Change LCD's contrast
----------------------
+LCD Kontrast einstellen
+-----------------------
 
-To modify the contrast you have to
-turn the potentiometer on the Bricklet with a screwdriver.
-The potentiometer is attached next to the Bricklet connector.
+Auf dem Bricklet befindet sich neben dem Bricklet Stecker ein Potentiometer.
+Mit diesem kann der Kontrast des LCDs eingestellt werden.
 
 
 .. _lcd_16x2_bricklet_programming_interfaces:

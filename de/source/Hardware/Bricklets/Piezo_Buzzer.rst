@@ -104,9 +104,8 @@ Teste dein Piezo Buzzer Bricklet
    :target: ../../_images/Bricklets/bricklet_piezo_buzzer_master_1200.jpg
 
 |test_tab|
-
-If everything went as expected the Brick Viewer should look as
-depicted below.
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
 
 .. image:: /Images/Bricklets/bricklet_piezo_buzzer_brickv.jpg
    :scale: 100 %
@@ -114,8 +113,8 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_piezo_buzzer_brickv.jpg
 
-Generate a beep by pressing "Send Beep". You should hear a beep with the
-specified duration.
+Ein Klick auf den "Send Beep" Knopf erzeugt einen Piepton mit der eingestellten
+Dauer.
 
 |test_pi_ref|
 

@@ -116,9 +116,8 @@ Teste dein Linear Poti Bricklet
    :target: ../../_images/Bricklets/bricklet_linear_poti_master_1200.jpg
 
 |test_tab|
-
-If everything went as expected the Brick Viewer should look as
-depicted below.
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
 
 .. image:: /Images/Bricklets/bricklet_linear_poti_brickv.jpg
    :scale: 100 %
@@ -126,9 +125,7 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_current12_brickv.jpg
 
-Move the potentiometer.
-You should be able to create a similar graph
-by moving the potentiometer from bottom to top and back to bottom.
+Der Graph ist durch hoch und runter bewegen des Sliders entstanden.
 
 |test_pi_ref|
 

@@ -94,9 +94,8 @@ Teste dein Voltage Bricklet
 |test_intro|
 
 |test_connect|.
-Additionally connect a voltage source to the Bricklet.
-For testing purposes we have connected a battery
-(siehe folgendes Bild).
+Als nächstes muss noch eine Spannungsquelle mit dem Bricklet Verbunden werden.
+Zum Beispiel eine Batterie wie im folgenden Bild.
 
 .. image:: /Images/Bricklets/bricklet_voltage_master_600.jpg
    :scale: 100 %
@@ -105,9 +104,8 @@ For testing purposes we have connected a battery
    :target: ../../_images/Bricklets/bricklet_voltage_master_1200.jpg
 
 |test_tab|
-
-If everything went as expected you can now see the voltage in volt
-and a graph that shows the voltage over time.
+Wenn alles wie erwartet funktioniert wird die gemessene Spannung angezeigt.
+Der Graph gibt den zeitlichen Verlauf der Spannung wieder.
 
 .. image:: /Images/Bricklets/bricklet_voltage_brickv.jpg
    :scale: 100 %
