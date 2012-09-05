@@ -105,7 +105,6 @@ Test your Piezo Buzzer Bricklet
    :target: ../../_images/Bricklets/bricklet_piezo_buzzer_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected the Brick Viewer should look as
 depicted below.
 

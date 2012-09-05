@@ -62,9 +62,9 @@ The IO-16 :ref:`Bricklet <product_overview_bricklets>` can be used to extend
 the features of :ref:`Bricks <product_overview_bricks>` by external digital
 inputs and outputs.
 
-The Bricklet features 2x 8 pins that can be independently configured as
+The Bricklet features 2x 8 I/O pins that can be independently configured as
 digital inputs or outputs. Each input pin can additionally be configured with
-pull-ups or as interrupt source. The input/output voltages can be switched
+a pull-up or as interrupt source. The input/output voltages can be switched
 manually between 3.3V and 5V*. Via terminal blocks all signals
 and GND can be accessed. An additional terminal block
 delivers the switched output voltage.
@@ -79,7 +79,7 @@ Technical Specifications
 ================================  =================================================================
 Property                          Value
 ================================  =================================================================
-Number of I/Os                    16
+I/O Pins                          16
 --------------------------------  -----------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------
 I/O Voltages                      Switchable between 3.3V and 5V*
@@ -119,7 +119,7 @@ Test your IO-16 Bricklet
 |test_connect|.
 In our test we connected an LED with series resistor to the board
 by attaching the anode to port B pin 0 and the cathode to a GND pin.
-Additionally we connected a button that can short port A pin 7 to GND
+Additionally we connected a slide switch that can short port A pin 7 to GND
 (see picture below).
 
 .. image:: /Images/Bricklets/bricklet_io16_master_600.jpg
@@ -148,16 +148,17 @@ value in the Brick Viewer and use it later in your own program.
 
 Below the debounce period configuration you can configure the pins.
 Each pin can be configured as input/output and in case of an input pin
-as pull-up. The current state is depicted in the tabular below.
+as pull-up. The current state is depicted in the table below.
 
 To test the LED we configure port B pin 0 as output and change
 the value. When the pin is high the LED should light up. To test the button
 configure port A pin 7 as input pull-up. We need the pull-up to define a stable
-state when the button is not pressed. Now look in the tabular, you should
-see that you can change the value of the pin by toggling the button.
+state when the slide switch does not short port A pin 7 to GND. Now look in the
+table, you should see that you can change the value of the pin by toggling the
+slide switch.
 
 If you don't have a button or a LED you can try to measure voltages with
-a voltage meter or connect a pin with GND or VCC to see changes in the
+a voltage meter or connect an input pin with GND or VCC to see changes in the
 Brick Viewer.
 
 |test_pi_ref|

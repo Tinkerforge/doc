@@ -112,7 +112,6 @@ Test your Temperature IR Bricklet
    :target: ../../_images/Bricklets/bricklet_temperature_ir_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
@@ -124,9 +123,10 @@ depicted below.
 
 Point the Bricklet in different
 directions. The Brick Viewer will show the ambient temperature (the
-temperature of the room) and the object temperature you point at.
+temperature of the room) and the object temperature of the object you point at.
 
-It is possible to configure the emissivity of the material you point at.
+For accurate object temperature meassurements it is possible to configure the
+emissivity of the material you point at.
 Enter 0xFFFF = 65535 for an emissivity of 1.0.
 The default is an emissivity of 0.98 (0.98 * 0xFFFF = 64224).
 

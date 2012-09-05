@@ -116,7 +116,6 @@ Test your Linear Poti Bricklet
    :target: ../../_images/Bricklets/bricklet_linear_poti_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected the Brick Viewer should look as
 depicted below.
 

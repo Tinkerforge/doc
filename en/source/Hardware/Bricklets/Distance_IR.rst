@@ -123,14 +123,10 @@ Test your Distance IR Bricklet
    :target: ../../_images/Bricklets/bricklet_distance_ir_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected you can now see the measured distance
-of the sensor, the output voltage of the IR distance sensor
-and a graph that shows the distance over time.
-
-Click on the Distance IR tab and see if the measured values change
-corresponding to the real distance. In the image below we slowly moved a hand
-away from the sensor and to the sensor again.
+of the sensor, the output voltage of the IR distance sensor and a graph that
+shows the distance over time. In the image below we slowly moved a hand away
+from the sensor and to the sensor again.
 
 .. image:: /Images/Bricklets/bricklet_distance_ir_brickv.jpg
    :scale: 100 %
@@ -149,26 +145,27 @@ Configure Infrared Sensor
 The supported infrared sensors simply produce an output voltage
 based on the measured distance. This voltage is measured by the ADC
 of the connected Brick. To compute the corresponding distance to this voltage
-a voltage/distance mapping is needed. This mapping is stored on the
-Distance IR Bricklet. If you want to use an IR distance sensor not directly
-supported by us, you have to calibrate this voltage/distance mapping
-yourself.
+a voltage/distance mapping is needed. This mapping specific to the selected
+sensor type is stored on the Distance IR Bricklet. If you want to use an IR
+distance sensor not directly supported by us, you have to calibrate this
+voltage/distance mapping yourself.
 
 
 Store Voltage/Distance Mapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To write the voltage/distance mapping you have to connect the Bricklet
-with a Brick to your PC. Start the :ref:`Brick Daemon <brickd>` and the
-:ref:`Brick Viewer <brickv>`.
+with a Brick to your PC with has :ref:`Brick Daemon <brickd>` and the
+:ref:`Brick Viewer <brickv>` installed and running.
 
 Press "connect" in the Brick Viewer and you should see the Distance IR tab.
 Click on it.
 
-Press the "File.." Button and choose an voltage/distance mapping file.
-After this press the "Save" Button to write the data onto the Bricklet,
-you will get an graphical representation spline interpolation
-that is written.
+Select the "Distance IR Bricklet" tab, press the "File.." button and choose a
+voltage/distance mapping file. After this press the "Save" button to write the
+data onto the Bricklet. The sampling points from the mapping file are
+interpolated by a spline to get equidistant sampling points for the whole
+measurement range of the sensor..
 
 After this press the reset button on the Brick or power cycle to
 load the newly stored voltage/distance mapping.
@@ -192,8 +189,8 @@ currently do not offer. Or you can modify an existing mapping file to achieve
 a better quality of your sensor.
 
 A voltage/distance mapping file consists of comments (lines beginning with '#')
-and lines containing one "cm: analog value" tuple each. Look in the provided
-files above to get an idea.
+and lines containing one "<distance in cm>: <analog value in mV>" tuple each.
+Look in the provided files above to get an idea.
 
 
 .. _distance_ir_bricklet_programming_interfaces:

@@ -106,7 +106,6 @@ Test your Joystick Bricklet
    :target: ../../_images/Bricklets/bricklet_joystick_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
@@ -117,14 +116,14 @@ depicted below.
    :target: ../../_images/Bricklets/bricklet_joystick_brickv.jpg
 
 The tab consists of a coordinate system that shows the current position of
-the joystick and if the button is pressed.
+the stick and if the button is pressed.
 Below this coordinate system you can find a graph that visualizes the
 movements over time.
-You should be able to  reproduce the depicted graph when you move the
-joystick first up, then down, then right and then end left.
+You should be able to reproduce the depicted graph when you move the
+stick first up, then down, then right and then end left.
 
-If the Brick Viewer does not show Position (0,0) when the joystick is
-in resting position, press the "Calibrate (0,0)" button.
+If the Brick Viewer does not show "Position (0,0)" when the stick is
+in center position, press the "Calibrate (0,0)" button.
 
 |test_pi_ref|
 

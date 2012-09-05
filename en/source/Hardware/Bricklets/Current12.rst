@@ -110,7 +110,6 @@ produces a current).
    :target: ../../_images/Bricklets/bricklet_current_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected you can now see the current used by the
 motor and a graph that shows the current over time.
 

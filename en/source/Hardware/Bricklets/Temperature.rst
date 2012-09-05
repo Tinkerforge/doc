@@ -105,7 +105,6 @@ Test your Temperature Bricklet
    :target: ../../_images/Bricklets/bricklet_temperature_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected the Brick Viewer should look as
 depicted below.
 

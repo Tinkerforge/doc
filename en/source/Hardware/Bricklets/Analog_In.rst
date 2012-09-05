@@ -131,7 +131,6 @@ For testing purposes we have connected a battery
    :target: ../../_images/Bricklets/bricklet_analog_in_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected you can now see the voltage in Volt
 and a graph that shows the voltage over time.
 

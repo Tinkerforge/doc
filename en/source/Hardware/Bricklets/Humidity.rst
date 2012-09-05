@@ -106,10 +106,8 @@ Test your Humidity Bricklet
    :target: ../../_images/Bricklets/bricklet_humidity_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected you can now see the measured relative humidity
 and a graph that shows the humidity over time.
-
 To test the sensor breath over the sensor. The relative humidity should rise
 as long as you breath and fall again afterwards.
 

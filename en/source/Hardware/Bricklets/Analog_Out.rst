@@ -127,7 +127,6 @@ Test your Analog Out Bricklet
    :target: ../../_images/Bricklets/bricklet_analog_out_master_1200.jpg
 
 |test_tab|
-
 In this tab you can configure the voltage on the output pin.
 For test purposes, you can measure this voltage with a voltmeter.
 If everything went as expected the voltage on the voltmeter and the voltage

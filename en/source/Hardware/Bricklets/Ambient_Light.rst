@@ -104,10 +104,11 @@ Test your Ambient Light Bricklet
    :target: ../../_images/Bricklets/bricklet_ambient_light_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected you can now see the illuminance in lux,
 a graphical representation of the illuminance and a graph that shows the
-illuminance over time. A good test for the sensor is to darken the room and
+illuminance over time.
+
+A good test for the sensor is to darken the room and
 slowly move a flashlight over the sensor, the graph should then look
 approximately as in the screenshot shown below.
 

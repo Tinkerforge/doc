@@ -57,17 +57,16 @@ The IO-4 :ref:`Bricklet <product_overview_bricklets>` can be used to extend the
 features of :ref:`Bricks <product_overview_bricks>` by external digital inputs
 and outputs.
 
-The Bricklet features 4 pins that can be independently configured as
+The Bricklet features 4 I/O pins that can be independently configured as
 digital inputs or outputs. Each input pin can additionally be configured with
-pull-ups or as interrupt source.
-Via terminal blocks all signals can be accessed.
+a pull-up or as interrupt source. Via terminal blocks all signals can be accessed.
 Two additional terminal blocks deliver 3.3V and GND.
 
 Human interfaces, such as switches, push-buttons and LEDs are typical
 applications of this Bricklet.
 
-Hardware version 1.1 adds GND pins nearby the 4 signal pins to allow easier
-access between signal pins and GND.
+Hardware version 1.1 adds GND pins nearby the 4 I/O pins to allow easier
+access between I/O pins and GND.
 
 
 Technical Specifications
@@ -76,7 +75,7 @@ Technical Specifications
 ================================  =================================================================
 Property                          Value
 ================================  =================================================================
-Number of I/Os                    4
+I/O Pins                          4
 --------------------------------  -----------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------
 I/O Voltages                      Fixed 3.3V
@@ -109,9 +108,11 @@ Test your IO-4 Bricklet
 |test_connect|.
 In our test we connected an LED with series resistor to the board
 by attaching the anode to pin 3 and the cathode to a GND pin.
-Additionally we connected a button that can short pin 0 to GND
-(see picture below). Starting from hardware version 1.1 you can also
-use the GND pins directly beside the data pins.
+Additionally we connected a slide switch that can short pin 0 to GND
+(see picture below).
+
+Starting from hardware version 1.1 you can also use the GND pins directly
+beside the I/O pins.
 
 .. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
    :scale: 100 %
@@ -139,16 +140,17 @@ value in the Brick Viewer and use it later in your own program.
 
 Below the debounce period configuration you can configure the pins.
 Each pin can be configured as input/output and in case of an input pin
-as pull-up. The current state is depicted in the tabular below.
+as pull-up. The current state is depicted in the table below.
 
-To test the LED we configure pin 3 as output and change
-the value. When the pin is high the LED should light up. To test the button
+To test the LED we configure pin 3 as output and change the value.
+When the pin is high the LED should light up. To test the button
 configure pin 0 as input pull-up. We need the pull-up to define a stable
-state when the button is not pressed. Now look in the tabular, you should
-see that you can change the value of the pin by toggling the button.
+state when the slide switch does not short pin 0 to GND. Now look in the
+table, you should see that you can change the value of the pin by toggling
+the slide switch.
 
 If you don't have a button or a LED you can try to measure voltages with
-a voltage meter or connect a pin with GND or VCC to see changes in the
+a voltage meter or connect an input pin with GND or VCC to see changes in the
 Brick Viewer.
 
 |test_pi_ref|

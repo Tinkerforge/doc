@@ -111,7 +111,6 @@ Test your LCD 20x4 Bricklet
    :target: ../../_images/Bricklets/bricklet_lcd_20x4_master_1200.jpg
 
 |test_tab|
-
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
