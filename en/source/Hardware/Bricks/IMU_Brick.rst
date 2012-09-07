@@ -80,7 +80,7 @@ can be used to extend the features of this device.
 Controlling the device is possible in several ways. You can control it via
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless
-(**WLAN**) connections via an additional Master Brick with
+(**WIFI**) connections via an additional Master Brick with
 corresponding Master Extension (:ref:`High Level Concept <pi_hlpi>`).
 
 Since the firmware is open source it is possible to program the device

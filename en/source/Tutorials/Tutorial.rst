@@ -291,7 +291,7 @@ The stacks as shown so far in the tutorial are not super exciting,
 they only reduce wiring and save space. But, as you might have already 
 guessed, there is more to it. It is possible to attach **Extensions** to the
 stack, which extend the stack with interfaces other than USB,
-e.g. RS485, and in the future WLAN and Ethernet.
+e.g. RS485, and in the future WIFI and Ethernet.
 
 To e.g. make a RS485 bus out of stacks, you need two need one Master Brick and 
 two RS485 Master Extensions additionally to the 

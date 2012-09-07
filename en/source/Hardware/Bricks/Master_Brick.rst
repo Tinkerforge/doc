@@ -78,7 +78,7 @@ Normally the communication with a stack is routed
 over the **USB** connection of the master. This can be changed with
 :ref:`Master Extensions <product_overview_master_extensions>`. There are
 Master Extensions for cable based interfaces (**RS485**, **Ethernet**) and wireless
-interfaces (**WLAN**). Extensions are plugged on the topside of the master.
+interfaces (**WIFI**). Extensions are plugged on the topside of the master.
 
 Since the firmware is open source it is possible to program the device
 directly (:ref:`On Device Programming <pi_odpi>`).
