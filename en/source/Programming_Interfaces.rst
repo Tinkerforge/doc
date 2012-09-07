@@ -48,7 +48,7 @@ firmware for Bricks.
  Currently only the source code of the Bricks is
  `online <https://github.com/organizations/Tinkerforge>`__.
  If you have the skills to set up the compiler environment and can
- program c, you can adapt the code for your own purposes.
+ program C, you can adapt the code for your own purposes.
 
  We are working on a simple API to allow easy firmware development
  (comparable to the Arduino API).

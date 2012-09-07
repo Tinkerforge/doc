@@ -33,10 +33,10 @@ Der folgende Beispielcode ist Public Domain.
 API
 ---
 
-Every function of the C/C++ bindings returns an integer which describes an
-error code.
+Jede Funktion der C/C++ Bindings gibt einen Integer zurück, welcher einen
+Fehlercode beschreibt.
 
-Possible error codes are
+Mögliche Fehlercodes sind:
 
 * E_OK = 0
 * E_TIMEOUT = -1
@@ -46,7 +46,8 @@ Possible error codes are
 * E_NO_THREAD = -5
 * E_NOT_ADDED = -6
 
-as defined in :file:`ip_connection.h`.
+wie in :file:`ip_connection.h` definiert.
+
 
 Grundfunktionen
 ^^^^^^^^^^^^^^^

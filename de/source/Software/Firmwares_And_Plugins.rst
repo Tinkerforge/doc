@@ -4,13 +4,12 @@ Firmwares and Plugins
 =====================
 
 .. note::
+ If you accidentally erased the firmware of a Brick or Bricklet, you can
+ download the latest firmware and plugin versions
+ :ref:`here <downloads_firmwares_plugins>`.
 
-   If you accidentally erased the firmware of a Brick or Bricklet, you can 
-   download the latest firmware and plugin versions 
-   :ref:`here <downloads_firmwares_plugins>`.
-
-   Only if you want to change something in a firmware of a Brick or a
-   plugin of a Bricklet you will need to compile them yourself. 
+ Only if you want to change something in a firmware of a Brick or a
+ plugin of a Bricklet you will need to compile them yourself.
 
 
 Build a Brick firmware

@@ -12,6 +12,7 @@ Additionally brickv can be used to calibrate the analog to digital converter
 (see :ref:`here <brickv_adc_calibration>`)
 and to flash bricklet plugins (see :ref:`here <brickv_flash_plugin>`).
 
+
 .. _brickv_installation:
 
 Installation
@@ -109,7 +110,6 @@ brickv/src/brickv/ and start with::
  python main.py
 
 .. note::
- 
  Unfortunately Debian has at the time of writing this tutorial problems with
  the python-qwt5-qt4 in Wheezy. If you use Debian Wheezy and you can't
  find python-qwt5-qt4 in the repository, you have to install it from Sid::
@@ -144,6 +144,7 @@ To install the Brick Viewer drag and drop the file to your applications folder
 After this you have finished the installation process.
 Please restart your machine after this (otherwise the icons don't show up for
 some unexplained reason).
+
 
 Usage
 -----

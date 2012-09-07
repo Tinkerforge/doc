@@ -36,7 +36,7 @@ API
 Every function of the C/C++ bindings returns an integer which describes an
 error code.
 
-Possible error codes are
+Possible error codes are:
 
 * E_OK = 0
 * E_TIMEOUT = -1
@@ -47,6 +47,7 @@ Possible error codes are
 * E_NOT_ADDED = -6
 
 as defined in :file:`ip_connection.h`.
+
 
 Basic Functions
 ^^^^^^^^^^^^^^^

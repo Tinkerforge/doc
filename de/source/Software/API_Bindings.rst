@@ -3,21 +3,23 @@
 API Bindings
 ============
 
-API bindings establish a TCP/IP connection to the
-:ref:`Brick Daemon <brickd>`. Each function call creates a TCP/IP packet that
-is send over the Brick Daemon to the Brick. Incoming TCP/IP packets
-are routed back to the caller.
+Die API Bindings stellen eine TCP/IP Verbindung zum
+:ref:`Brick Daemon <brickd>` here. Jeder Funktionsaufruf erzeugt ein TCP/IP Paket,
+das über den Brick Daemon zum Brick geschickt wird. Beim Brick Daemon vom Brick
+eingehende Pakete werden an den Aufrufer zurückgeroutet.
 
-See also our :ref:`tutorial` for more information on how everything works
-together.
+Unser :ref:`tutorial` beschreibt wie alles zusammengehört und funktioniert.
 
 
 IP Connection
 -------------
 
-The IP Connection creates a TCP/IP connection between the
-:ref:`Brick Daemon <brickd>` and the corresponding programming language
-API bindings.
+Die IP Connection erstellt eine TCP/IP Verbindung zwischen dem
+:ref:`Brick Daemon <brickd>` und den entsprechenden API Bindings für die
+verschiedenen Programmiersprachen.
+
+Diese wird in den Bindings benutzt und is für jede untersützte
+Programmiersprache
 
 It is used by the bindings and implemented for each programming language.
 The corresponding documentation can be found here:

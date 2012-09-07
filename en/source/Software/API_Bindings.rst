@@ -3,9 +3,9 @@
 API Bindings
 ============
 
-API bindings establish a TCP/IP connection to the
+The API bindings establish a TCP/IP connection to the
 :ref:`Brick Daemon <brickd>`. Each function call creates a TCP/IP packet that
-is send over the Brick Daemon to the Brick. Incoming TCP/IP packets
+is send over the Brick Daemon to the Brick. Incoming packets from the Brick
 are routed back to the caller.
 
 See also our :ref:`tutorial` for more information on how everything works
