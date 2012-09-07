@@ -198,11 +198,11 @@ the driver and play around with the controls.
 
 
 Power Supply
-^^^^^^^^^^^^
+------------
 
-The connected stepper can be powered through the on-board power-connector
-or through a :ref:`Power Supply <product_overview_powersupplies>` in a
-stack. The Brick switches autonomously to the on-board power-connector when
+The connected stepper can be powered through the black on-board power-connector
+or through a :ref:`Power Supply <product_overview_power_supplies>` in a
+stack. The Brick switches automatically to the on-board power-connector when
 a voltage is measured there.
 
 

@@ -105,7 +105,7 @@ Chibi Network Assembly
 A Chibi network consists of one master and multiple slaves.
 Chibi master is the Master Brick which has a USB connection to the PC
 running brickd. All the other Master Bricks with Chibi Extension must not have
-a USB connection (they can use a USB power supply since Master Brick firmware
+a USB connection (they can use a USB Power Supply since Master Brick firmware
 1.1.3). Each Chibi Extension is identified with
 its own address. The addresses have to be unique in the transmission range.
 

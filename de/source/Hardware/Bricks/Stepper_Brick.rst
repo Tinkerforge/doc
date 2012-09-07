@@ -198,13 +198,14 @@ the driver and play around with the controls.
 |test_pi_ref|
 
 
-Power Supply
-^^^^^^^^^^^^
+Stromversorgung
+---------------
 
-The connected stepper can be powered through the on-board power-connector
-or through a :ref:`Power Supply <product_overview_powersupplies>` in a
-stack. The Brick switches autonomously to the on-board power-connector when
-a voltage is measured there.
+Der angeschlossene Motor kann über den schwarzen Stromversorgungsstecker auf
+der Platine extern versorgt werden. Alternativ kann eine :ref:`Stromversorgung
+<product_overview_power_supplies>` unter den Brick gesteckt werden.
+Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
+Stecker eine Spannung anliegt.
 
 
 .. _stepper_brick_decay_mode:

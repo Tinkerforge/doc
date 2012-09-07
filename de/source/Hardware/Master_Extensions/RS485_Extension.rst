@@ -105,7 +105,7 @@ RS485 Bus Assembly
 A RS485 bus consists of one master and multiple slaves.
 RS485 master is the Master Brick which has a USB connection to the PC
 running brickd. All the other Master Bricks with RS485 Extension must not have
-a USB connection (they can use a USB power supply).
+a USB connection (they can use a USB Power Supply).
 Each RS485 slave is identified with its own ID. The IDs have
 to be unique on the bus.
 

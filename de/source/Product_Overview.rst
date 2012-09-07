@@ -12,7 +12,7 @@ There are four different types of hardware components:
   :ref:`Master Brick <master_brick>`.
 * :ref:`Bricklets <product_overview_bricklets>`:
   Non-stackable sensor/actor boards that extend the features of a Brick.
-* :ref:`Power Supplies <product_overview_powersupplies>`:
+* :ref:`Stromversorgungen <product_overview_power_supplies>`:
   Boards to power a stack of Bricks, plugged below the stack.
 
 See the :ref:`tutorial <tutorial>` for an explanation of how everything works
@@ -196,10 +196,10 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for more information.
 .. include:: Product_Overview_bricklets.table
 
 
-.. _product_overview_powersupplies:
+.. _product_overview_power_supplies:
 
 Stromversorgungen
-^^^^^°°°^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 .. container:: tfdocimages
 
@@ -226,4 +226,4 @@ stacked in at the bottom of the stack.
    :header: "Name", "Description"
    :widths: 30, 60
 
-   ":ref:`step-down`", "Powers a stack with 6-27V input"
+   ":ref:`step_down_power_supply`", "Powers a stack with 6-27V input"

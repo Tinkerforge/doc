@@ -57,4 +57,4 @@ Reported Problems
 
 The USB port of the Raspberry PI may not be able to handle the power
 that is needed by a big stack of Bricks/Bricklets. In this case you
-should use a :ref:`Step-Down Power Supply <product_overview_powersupplies>`.
+should use a :ref:`Step-Down Power Supply <step_down_power_supply>`.

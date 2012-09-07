@@ -94,8 +94,8 @@ Gewicht                           30g
 Wird dieses über USB versorgt, so kann es sein, dass 5V nicht erreicht werden
 können. Der Grund für diesen Spannungsabfall um 0,5V sind Schutzdioden auf den
 Bricks. Wenn 5V Ausgangsspannung benötigt werden kann der Stapel mit einer
-zusätzlichen Stromversorgung, wie der :ref:`Step-Down Power Supply <step-down>`,
-erweitert werden.
+zusätzlichen Stromversorgung, wie der :ref:`Step-Down Power Supply
+<step_down_power_supply>`, erweitert werden.
 
 \** abhängig vom jeweiligen System (Betriebssystem, CPU etc.)
 

@@ -184,15 +184,14 @@ To start testing enable the driver and play around with the controls.
 |test_pi_ref|
 
 
-Motor Power Supply
-------------------
+Power Supply
+------------
 
-The connected motor can be powered through the on-board power-connector
-(black connector)
-or through a :ref:`Power Supply <product_overview_powersupplies>` in a
+The connected motor can be powered through the black on-board power-connector
+or through a :ref:`Power Supply <product_overview_power_supplies>` in a
 stack.
-The Brick switches autonomously to the on-board power-connector when there
-is a voltage measured.
+The Brick switches automatically to the on-board power-connector when a is
+voltage measured there.
 
 .. _dc_brick_drive_mode:
 

@@ -232,23 +232,22 @@ produce rattling.
    your servo.
 
 
-Servo Power Supply
-------------------
+Stromversorgung
+---------------
 
-The Servo Brick is equipped with an internal power supply.
-It offers the possibility to adjust the output voltages for the connected
-servos.
-The internal power supply can be powered through the on-board power-connector
-(black connector) or through a
-:ref:`Power Supply <product_overview_powersupplies>` in a stack.
-The Servo Brick switches autonomously to the on-board power-connector when
-there is a voltage measured. Since we use a step-down switcher for the
-internal power supply please consider that the input voltage of the Brick has
-to be 1V higher than the configured output voltage to assure stable operation.
+Der Servo Brick hat eine interne Stromversorgung, die es ermögliche die
+Ausgangsspannung für die Servors einzustellen. Die interne Stromversorgung
+kann entweder über den schwarzen Stromversorgungsstecker auf der Platine
+versorgt werden oder über eine :ref:`Stromversorgung
+<product_overview_power_supplies>` die unter den Brick gesteckt wird.
+Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
+Stecker eine Spannung anliegt. Da die interne Stromversorgung einen Step-Down
+Regler verwendet muss die Eingangsspannung am schwarzen Stromversorgungsstecker
+1V höher sein als die eingestellt Ausgangsspannung für die Servors. Andernfalls
+ist ein stabiler Betrieb nicht gewährleistet.
 
 .. warning::
-
-   A too high output voltage can damage your servo.
+ Eine zu hohe Ausgangsspannung kann den Servo beschädigen!
 
 
 Usage of RC ESC to drive brushless motors

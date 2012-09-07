@@ -95,7 +95,7 @@ Weight                            30g
 powered over USB, 5V may not be reached. The reason for this is a voltage
 drop about 0.5V caused by protection diodes on our products.
 If you need to reach 5V, you have to use a stack supply,
-e.g. the :ref:`Step-Down Power Supply <step-down>`.
+e.g. the :ref:`Step-Down Power Supply <step_down_power_supply>`.
 
 \** depends on your system (OS, CPU etc.)
 

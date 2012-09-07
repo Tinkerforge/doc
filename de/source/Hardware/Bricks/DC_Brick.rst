@@ -183,15 +183,14 @@ To start testing enable the driver and play around with the controls.
 |test_pi_ref|
 
 
-Motor Power Supply
-------------------
+Stromversorgung
+---------------
 
-The connected motor can be powered through the on-board power-connector
-(black connector)
-or through a :ref:`Power Supply <product_overview_powersupplies>` in a
-stack.
-The Brick switches autonomously to the on-board power-connector when there
-is a voltage measured.
+Der angeschlossene Motor kann über den schwarzen Stromversorgungsstecker auf
+der Platine extern versorgt werden. Alternativ kann eine :ref:`Stromversorgung
+<product_overview_power_supplies>` unter den Brick gesteckt werden.
+Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
+Stecker eine Spannung anliegt.
 
 
 .. _dc_brick_drive_mode:

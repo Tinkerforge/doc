@@ -230,7 +230,7 @@ The master of a stack powers each device of the stack over its USB
 connection with a maximum of 500mA. Every driver Brick in the stack needs
 to be powered by its own on-board power-connector. To again reduce wiring and
 save space it is possible to use a 
-:ref:`Power Supply <product_overview_powersupplies>`, which
+:ref:`Power Supply <product_overview_power_supplies>`, which
 is attached at the bottom of the stack (below the Master Brick).
 These boards power the stacks internal power signal.
 That means, that each driver Brick which is not powered by its on-board

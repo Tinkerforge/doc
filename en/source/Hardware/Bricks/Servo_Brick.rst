@@ -229,17 +229,16 @@ produce rattling.
  your servo.
 
 
-Servo Power Supply
-------------------
+Power Supply
+------------
 
 The Servo Brick is equipped with an internal power supply.
 It offers the possibility to adjust the output voltages for the connected
 servos.
-The internal power supply can be powered through the on-board power-connector
-(black connector) or through a
-:ref:`Power Supply <product_overview_powersupplies>` in a stack.
-The Servo Brick switches autonomously to the on-board power-connector when
-there is a voltage measured. Since we use a step-down switcher for the
+The internal power supply can be powered through the black on-board power-connector
+or through a :ref:`Power Supply <product_overview_power_supplies>` in a stack.
+The Servo Brick switches automatically to the on-board power-connector when
+there is a voltage measured. Since we use a step-down controller for the
 internal power supply please consider that the input voltage of the Brick has
 to be 1V higher than the configured output voltage to assure stable operation.
 

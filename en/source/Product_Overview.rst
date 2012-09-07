@@ -12,7 +12,7 @@ There are four different types of hardware components:
   :ref:`Master Brick <master_brick>`.
 * :ref:`Bricklets <product_overview_bricklets>`:
   Non-stackable sensor/actor boards that extend the features of a Brick.
-* :ref:`Power Supplies <product_overview_powersupplies>`:
+* :ref:`Power Supplies <product_overview_power_supplies>`:
   Boards to power a stack of Bricks, plugged below the stack.
 
 See the :ref:`tutorial <tutorial>` for an explanation of how everything works
@@ -123,7 +123,7 @@ Extensions and you can run the previously written code without any changes.
    :widths: 20, 70
 
    ":ref:`chibi_extension`", "Wireless Chibi Master Extension"
-   ":ref:`rs485_extension`", "Cablebased RS485 Master Extension"
+   ":ref:`rs485_extension`", "Cable based RS485 Master Extension"
 
 
 .. _product_overview_bricklets:
@@ -195,7 +195,7 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for more information.
 .. include:: Product_Overview_bricklets.table
 
 
-.. _product_overview_powersupplies:
+.. _product_overview_power_supplies:
 
 Power Supplies
 ^^^^^^^^^^^^^^
@@ -225,4 +225,4 @@ stacked in at the bottom of the stack.
    :header: "Name", "Description"
    :widths: 30, 60
 
-   ":ref:`step-down`", "Powers a stack with 6-27V input"
+   ":ref:`step_down_power_supply`", "Powers a stack with 6-27V input"

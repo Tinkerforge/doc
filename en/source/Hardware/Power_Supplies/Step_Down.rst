@@ -1,4 +1,4 @@
-.. _step-down:
+.. _step_down_power_supply:
 
 Step-Down Power Supply
 ======================
@@ -38,9 +38,9 @@ Features
 --------
 
 * Powers a stack of Bricks with 5V
-* Can power motors of driver Bricks, e.g. DC Brick
+* Can power motors of driver Bricks (e.g. DC Brick)
 * Input voltage 6V to 27V
-* Additional output voltage 5V (since version 1.1)
+* Additional output voltage 5V (since hardware version 1.1)
 
 
 Description
@@ -49,24 +49,24 @@ Description
 The Step-Down Power Supply can be used to power a stack of
 :ref:`Bricks <product_overview_bricks>` and
 :ref:`Bricklets <product_overview_bricklets>`.
-It is plugged in at the bottom of the stack and creates the
-5V needed for Bricks/Bricklets. In addition the applied voltage is feed
-into the power signals of the stack.
+It is equipped with an efficient step-down controller and can be plugged in
+at the bottom of the stack where it provides the 5V needed for Bricks and
+Bricklets. It is not absolutely necessary if you only want to use a single Brick.
+But is intended to be used with stacks.
 
 There are several possible applications. The Step-Down Power Supply allows
 to create stacks powered by batteries. These stacks can then communicate
 cable based or wireless with the help of Master Extensions.
-Also, the Step-Down Power Supply can be used to power motors, stepper motors
-or servos without the need to connect external power sources to the
-corresponding Bricks. It is also possible to use the Step-Down Power Supply in cases
-where huge stacks of Bricks with many Bricklets are needed and the maximum
+Also, the Step-Down Power Supply can be used to power DC motors, servos or
+stepper motors without the need to connect external power sources to the
+corresponding Bricks. It is also possible to use the Step-Down Power Supply in
+cases where huge stacks of Bricks with many Bricklets are needed and the maximum
 current of 500mA given over the USB port is not sufficient.
 
-The possible voltage input range is 6V to 27V. A
-:ref:`Master Brick <master_brick>` can measure the voltage and current that
-is drawn from the Step-Down Power Supply. The current measurement can be used to
-measure the current consumption of a stack in case of Driver Bricks (Stepper, DC etc.)
-are used. Currents below 200mA are not adequate measurable.
+The possible input voltage range is 6V to 27V. A
+:ref:`Master Brick <master_brick>` can measure the current consumption of the
+stack and the voltage of the external power source. Currents below 200mA can
+not be measured satisfactorily.
 
 
 Technical Specifications

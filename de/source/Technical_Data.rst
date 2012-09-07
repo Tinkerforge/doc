@@ -124,7 +124,7 @@ Description
 
 * **PGND**: Stack power ground signal.
 * **PVCC**: Stack power signal (max. 27V), powered by
-  :ref:`Power Supplies <product_overview_powersupplies>`.
+  :ref:`Power Supplies <product_overview_power_supplies>`.
 * **GND**: Common ground signal.
 * **5V**: 5V power supply, powered by every Brick (per USB) or power supply
   boards. Since the USB voltage depends on your PC/USB hub, the 5V
@@ -132,10 +132,10 @@ Description
 * **3V3**: Powered by every Brick. Created with on board DC/DC power supplies
   (5V -> 3V3).
 * **Current**: Signal to measure the current flow created by
-  :ref:`Power Supply <product_overview_powersupplies>` (max. 3.3V). Can be
+  :ref:`Power Supply <product_overview_power_supplies>` (max. 3.3V). Can be
   measured by Master Bricks.
 * **Voltage**: Signal to measure the voltage of an external power supply
-  connected to a :ref:`Power Supply <product_overview_powersupplies>`
+  connected to a :ref:`Power Supply <product_overview_power_supplies>`
   (max. 3.3V). Can be measured by Master Bricks.
 
 
