@@ -57,6 +57,7 @@ Features
 
 * Steuert bis zu **7** RC Servos mit max. **3A**
 * Steuert Brushless Motoren (benötigt externe ESC)
+* Unterstützt `TurboPWM <http://wiki.openpilot.org/display/Doc/TurboPWM>`__
 * Software einstellbare Servospannung, Periode und Pulsweite
 * Position, Geschwindigkeit und Beschleunigung steuerbar
 * Eine USB und zwei Bricklet Schnittstellen
@@ -116,10 +117,10 @@ Minimale/Maximale Eingangsspannung    5V/25V
 Ausgangsspannung                      Über Software einstellbar 2V - 9V
 ------------------------------------- ------------------------------------------------------------
 ------------------------------------- ------------------------------------------------------------
-Ausgangsperiode\*                     1µs - 65535µs
-Pulsweite\*                           1µs - 65535µs
-Geschwindigkeit\*                     0 - 65535 °/100s
-Beschleunigung\*                      1 - 65535 °/100s²
+Ausgangsperiode*                      1µs - 65535µs
+Pulsweite*                            1µs - 65535µs
+Geschwindigkeit*                      0 - 65535 °/100s
+Beschleunigung*                       1 - 65535 °/100s²
 ------------------------------------- ------------------------------------------------------------
 ------------------------------------- ------------------------------------------------------------
 Bricklet Anschlüsse                   2
@@ -161,8 +162,8 @@ Teste deinen Servo Brick
 
 |test_intro|
 
-Connect a RC servo to a port of the Brick and a suitable power supply.
-Your setup should look as shown below.
+Schließe einen RC Servo und eine passende Stromversorgung an den Brick an.
+Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 
 .. image:: /Images/Bricks/brick_servo_setup_600.jpg
    :scale: 100 %
@@ -178,58 +179,59 @@ Your setup should look as shown below.
    :align: center
    :target: ../../_images/Bricks/servo_brickv.jpg
 
-In the left part of the GUI you can select the servo
-to control. You can enable it, configure the
-`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ and configure
-the corresponding position. Additionally you can see the current consumption of
-the servo. Below there are four sliders to control
-the position, velocity and acceleration of the servo. The fourth slider
-can be used to change the period of the PWM
-(see :ref:`Configure Servo PWM <servo_brick_configure_servo_pwm>` for more
-information).
+Auf der linke Seite des Tabs kann der einzustellende Servo ausgewählt werden.
+Dieser kann ein- und ausgeschaltet, die zulässige
+`PWM <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Pulsweite
+eingestellt und der Winkelbereich definiert werden. Zusätzlich wird der
+Stromverbrauch des Servos angezeigt. Weiter unten finden sich vier Regler mit
+denen Position, Geschwindigkeit und Beschleunigung des Servors kontrolliert
+werden können. Der vierte Regler dient zur Einstellung der PWM Periode
+(siehe :ref:`Servo PWM einstellen <servo_brick_configure_servo_pwm>` für
+weiterführenden Information).
 
-On the right side you can see the external and stack voltage.
-Below are graphical representations for the state of each servo.
-Beneath you can configure the minimum input voltage, which allows for
-undervoltage signals if the voltage is too low.
-Also you can configure the output voltage
-(Caution: A too high output voltage may damage your servo!).
-At the bottom right there is a "Start Test" button, which starts
-a test sequence that performs random movements for each servo.
+Auf der rechten Seite wird die externe und die Versorgungsspannung des Staples
+angezeigt. Darunter findet sich eine graphische Darstellung des Zustandes jedes
+Servos. Ganz unten können die Mindesteingangsspannung und die Ausgangsspannung
+eingestellt werden. Wird die Mindesteingangsspannung unterschritten wird der
+Undervoltage Callback ausgelöst.
 
-To start testing enable servo 0 and play around with the controls
-or let the Brick Viewer perform a test.
+.. warning::
+ Eine zu hohe Ausgangsspannung kann den Servo beschädigen!
+
+Unten rechts ist der "Start Test" Knopf, dieser startet eine Testsequenz bei der
+alle Servos zufällige Bewegungen ausführen.
 
 |test_pi_ref|
 
 
 .. _servo_brick_configure_servo_pwm:
 
-Configure Servo PWM
--------------------
+Servo PWM einstellen
+--------------------
 
-Typically you control a RC servo by a PWM signal with a
-period of 20ms and an on-time of 1ms - 2ms depending on the position you want
-to achieve. However, some servos do not work properly with these standard
-settings. Therefore we provide a fully configurable PWM.
+Typischerweise wird ein RC Servo über ein PWM Signal mit 20ms Periode und
+1ms bis 2ms Pulsweite gesteuert. Dabei definiert die Pulsweite die gewünschte
+Position. Es gibt aber auch Servos die nicht diesem Standard entsprechen, daher
+erlaubt der Servo Brick alle Parameter des PWM Signals zu konfigurieren.
 
-The default value for the period is 19.5ms. This period worked on all servos
-we could get our fingers on (20ms did not work with some of the cheaper
-chinese servos). If the datasheet of your servo does specify a preferred
-period, use it. But it is likely that you don't have to change this value.
+Der Standardwert für die Periode ist 19,5ms. Diese Periode funktioniert mit
+allen Servors die wir getestet haben (20ms funktionierte mit einigen chinesischen
+Servos nicht zuverlässig). Falls im Datenblatt deines Servos eine Periode angeben
+ist solltest du diesen Wert auch einstellen. Es ist allerdings eher
+unwahrscheinlich, dass du diesen Wert ändern musst.
 
-More interesting is the minimum and maximum pulse width. The default pulse
-width is 1ms - 2ms. Most servos can however rotate further when
-minimum/maximum pulse width is decreased/increased. If your servo comes
-with a datasheet we recommend to use the values described in there. If you
-don't have a datasheet you can try to incrementally extend the pulse width
-until the servo starts to rattle. Use the biggest pulse width that does not
-produce rattling.
+Eher interessant ist die minimale und maximale Pulsweite. Der Standardbereich
+ist 1ms bis 2ms. Die meisten Servos können aber auch einen größeren Winkelbereich
+fahren wenn der Bereich der Pulsweite vergrößert wird. Falls im Datenblatt deines
+Servos eine Angabe über die zulässige Pulsweite gemacht ist solltest du diese
+entsprechend einstellen. Falls der zulässige Bereich der Pulsweite unbekannt ist
+kannst du dich durch Ausprobieren an die richtigen Werte heran tasten. Vergrößere
+den Bereich solange bis der Servo anfängt zu stottern. Die zulässigen Werte sind
+dann die bei denen der Servo noch nicht stottert.
 
 .. warning::
-
-   A wrong PWM configuration for an extended period of time can damage
-   your servo.
+ Einen Servo über längere Zeit mit einer falsch eingestellten PWM zu betreiben
+ kann den Servo beschädigen.
 
 
 Stromversorgung
@@ -250,34 +252,37 @@ ist ein stabiler Betrieb nicht gewährleistet.
  Eine zu hohe Ausgangsspannung kann den Servo beschädigen!
 
 
-Usage of RC ESC to drive brushless motors
------------------------------------------
+Brushless Motoren mit ESCs verwenden
+------------------------------------
 
-With this Brick you can control up to 7 brushless motors by using external
-RC Electronic Speed Controllers (ESC). Simply connect the brushless
-motor to the ESC and the ESC to the Servo Brick. With this construction
-the maximum brushless motor current only depends on your selected ESC.
+Mit dem Servo Brick können bis zu 7 Brushless Motoren mittels externen
+Electronic Speed Controllern (ESC) gesteuert werden. Dazu muss einfach der
+Brushless Motor an den ESC und der ESC an den Servo Brick angeschlossen werden.
+Mit diesem Aufbau ist der maximale Motorstrom nur durch den verwendeten ESC
+beschränkt.
 
 .. warning::
-   Many ESC's have a build-in BEC which can be used to power RC receivers.
-   If you use a ESC with BEC you have to disable it! Otherwise your ESC or
-   the Brick can be destroyed. To disable BEC you have to remove the red
-   wire from the connector you plug in the Servo Brick
-   (`external video tutorial <http://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
+ Viele ESCs haben eingebaute Battery Eliminator Circuits (BEC) die verwendet
+ werde können um RC Empfänger zu versorgen. Falls du einen ESC mit BEC verwendest
+ dann muss diese unbedingt abgeschaltet werden. Andernfalls kann dein ESC oder
+ der Servo Brick zerstört werden. Um die BEC abzuschalten darf das rote Kakel
+ des ESC nicht an den Servo Brick angeschlossen werden
+ (`externes Videotutorial <http://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
 
-   If you use the same power supply for your ESC and the Servo Brick, additionally
-   you have to remove the black (GND) wire too. It seems that the most
-   ESC's will draw their current not over the power supply cable of the ESC
-   but over the GND pin of the Servo Brick. This can lead to a destroyed Servo
-   Brick. At the first tests have an eye on the current measurement in
-   Brick Viewer.
+.. warning::
+ Falls du die gleiche Stromversorgungen für den ESC und den Servo Brick
+ verwendest, dann darf zusätzliche noch das schwarze Kabel (GND) nicht an den
+ Servo Brick angeschlossen werden. Es scheint so, dass die meisten ESCs ihren
+ Strom nicht über deren eigene Stromversorgungen, sondern über den GND Pin des
+ Servo Bricks beziehen. Dies kann zur Zerstörung des Servo Bricks führen. Daher
+ solltest du beim ersten Test die Strommessung im Brick Viewer im Auge behalten.
 
 
-Error LED Sources
------------------
+Fehler LED
+----------
 
-The red LED is enabled so long as the input voltage is below the user
-configurable minimum voltage.
+Die rote LED leuchtet wenn die Versorgungsspannung unter das einstellbaren
+Minimum fällt.
 
 
 .. _servo_brick_programming_interfaces:
@@ -316,22 +321,25 @@ On Device Programmierschnittstelle
 FAQ
 ---
 
-My servos are shaking, help!
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Meine Servos stottern, Hilfe!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The reason for this is typically a voltage drop, caused by repeated high
-current peaks produced by the connected servos. First you should check
-the input voltage, it should be at least 1V higher then the configured
-output voltage.
+Die häufigste Ursache ist ein Spannungsabfall, verursacht durch wiederholte
+Spitzen im Stromverbrauch der angeschlossenen Servos. Als erstes solltest du
+sicherstellen, dass die Eingangspannung des des Servo Bricks um mindestens 1V
+höher liegt als die eingestellte Ausgangsspannung.
 
-Typically this problem occurs when the power supply can't handle the
-high current peaks. To test if your power supply is the problem, you can
-try batteries. Batteries normally don't have problems with current peaks.
+Üblicherweise tritt diese Problem auf, wenn die Stromversorgung Spitzen im
+Stromverbrauch nicht verträgt. Um deine Stromversorgung als Ursache
+auszuschließen kannst du testweise Batterien als Stromversorgung verwenden.
+Diese haben normalerweise kein Problem mit Spitzen im Stromverbrauch.
 
-If you are using batteries and the problem is still occurring, check
-the voltage of the batteries when the servos are in use. If your batteries
-are too weak, the voltage is dropping (in this case use full batteries).
+Falls du schon Batterien verwenden und das Problem tritt weiterhin auf, dann
+stelle sicher, dass deine Batterien voll geladen sind. Falls die Batterien zu
+schwach sind fällt deren Spannung ab.
 
-If your servos only start shaking when you reach the maximum/minimum angle,
-you have configured a too high/low pulse width. In this case you have to
-reduce the pulse width, otherwise your servos might get damaged over time.
+Wenn deine Servos nur anfangen zu stottern wenn sie den minimalen oder maximalen
+Winkel erreichen, dann ist der Bereich der zulässigen Pulsweite zu groß
+eingestellt. In diesem Fall musst du den Bereich der Pulsweite verringern.
+Anderenfalls können deine Servos beschädigt werden, wenn dieser Zustand längere
+Zeit anhält.

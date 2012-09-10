@@ -172,8 +172,8 @@ of the slaves in the RS485 bus as a comma separated list.
    :target: ../../_images/Extensions/extension_rs485_master.jpg
 
 
-Modify your RS485 Bus
-^^^^^^^^^^^^^^^^^^^^^
+RS485 Bus Modification
+^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to change something in your bus, e.g. add new Bricks or
 Bricklets, you have to power down the stack you would like to change.

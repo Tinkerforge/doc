@@ -172,8 +172,8 @@ be able to talk to (as a comma separated list).
    :align: center
    :target: ../../_images/Extensions/extension_chibi_master.jpg
 
-Modify your Chibi Network
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Chibi Network Modification
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to change something in your network, e.g. add new Bricks or
 Bricklets, you have to power down the stack you like to change. Change it

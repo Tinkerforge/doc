@@ -22,7 +22,7 @@ Stepper Brick
 	{{
 	    tfdocimg("Bricks/brick_stepper_motor_setup_100.jpg",
 	             "Bricks/brick_stepper_motor_setup_600.jpg",
-	             "Stepper Brick mit Motor")
+	             "Stepper Brick mit Schrittmotor")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_stepper_caption_100.jpg",
@@ -149,13 +149,12 @@ Teste deinen Stepper Brick
 
 |test_intro|
 
-Connect a stepper motor to the Brick and a suitable power supply
-(see :ref:`here <stepper_brick_connectivity>`). Your setup should look
-like below.
+Schließe einen Schrittmotor und eine passende Stromversorgung an den Brick an.
+Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 
 .. image:: /Images/Bricks/brick_stepper_motor_setup_600.jpg
    :scale: 100 %
-   :alt: Stepper Brick mit Motor
+   :alt: Stepper Brick mit Schrittmotor
    :align: center
    :target: ../../_images/Bricks/brick_stepper_motor_setup_1200.jpg
 
@@ -171,33 +170,31 @@ like below.
   FIXME: update image, to remove decay slider also put the warning about
          sync rect from the api docs here
 
-In the left part of the GUI you can enable the driver and control
-the velocity, acceleration, deceleration and the decay mode
-(see :ref:`stepper_brick_decay_mode`) of the stepper. Below
-there are three buttons that control the direction of
-the stepper and stop it. For example if you press "Forward",
-the stepper will increase its speed to "Max Velocity" with the given
-acceleration. If you press "Stop" it will decrease its speed to "0" with
-the given deceleration.
+Auf der linken Seite des Tabs kann die Treiberstufe ein- und ausgeschaltet,
+sowie die maximale Geschwindigkeit, Beschleunigung und Verzögerung eingestellt werden.
+Darunter sind drei Knöpfe um die Drehrichtung des Schrittmotors zu kontrollieren
+sowie diesen zu stoppen. Wenn der "Forward" Kopf geklickt wird, dann wird die
+Geschwindigkeit des Schrittmotors bis zur "Max Velocity" mit der eingestellten
+Beschleunigung erhöht. Ein Klick auf den "Stop" Knopf verringert die
+Geschwindigkeit auf "0" mit der eingestellten Verzögerung.
 
-Below you can set the stepping mode (full, half, quarter, eighth) stepping mode
-and trigger a "Full Brake", which stops the motor immediately.
+Weiter unten kann die Schrittmodus (Voll-, Halb-, Viertel- und Achtelschritt)
+eingestellt sowie eine Vollbremsung ausgelöst werden, die den Motor sofort
+anhält.
 
-You can drive to a specific position (measured in steps)
-by entering it at "DrivingTo" an press "Go". Also you can drive a
-specific number of steps. By using these controls the motor will accelerate
-until reaching the maximum velocity and decelerate before reaching the
-specified position.
+Alternative kann der Schrittmotor auch zu einer bestimmten Position (gemessen
+in Schritten) gefahren werden. Dazu einfach bei "Drive To" die Position eingeben
+und "Go" klicken. Der Schrittmotor kann ebenfalls eine bestimmte Anzahl Schritte
+gefahren werden. Bei diesen beiden Fahrweisen werden auch die Einstellungen für
+die maximale Geschwindigkeit, Beschleunigung und Verzögerung berücksichtigt.
 
-On the right side the current position and remaining steps are shown
-as well as the stack and external voltages.
-Below is a graphical representation of the velocity of the stepper.
-Beneath you can configure the minimum input voltage, which allows for
-undervoltage signals if the voltage is too low. In the bottom right the
-motor current can be configured according to the connected motor.
-
-To start testing set a motor current suitable for your stepper motor, enable
-the driver and play around with the controls.
+Auf der rechten Seite werden die aktuelle Position, die noch zu fahrenden
+Schritte sowie die Versorgungsspannung des Stapels und die externe
+Versorgungsspannung angezeigt. Darunter befindet sich eine Tachometer zur
+Darstellung der Motorgeschwindigkeit. Ganz unten kann die Mindestspannung des
+Motors eingestellt werden. Wird diese unterschritten wird der Undervoltage
+Callback ausgelöst. Zusätzlich kann auch noch der Motorstrom entsprechend des
+angeschlossenen Motors eingestellt werden.
 
 |test_pi_ref|
 
@@ -214,27 +211,30 @@ Stecker eine Spannung anliegt.
 
 .. _stepper_brick_decay_mode:
 
-Decay Modes
+Decay Modi
 -----------
 
-A good explanation of decay modes can be found
-`here <http://robot.avayanex.com/?p=86/>`__.
+Für eine gute Erläuterung der verschiedenen Decay Modi siehe
+`diesen <http://ebldc.com/?p=86/>`__ Blogeintrag (Englisch) von Avayan oder
+`diesen <http://www.schrittmotor-blog.de/?p=51>`__ Blogeintrag (Deutsch) von
+T. Ostermann.
 
-A good decay mode is unfortunately different for every motor. The best
-way to work out a good decay mode for your stepper motor, if you can't
-measure the current with an oscilloscope, is to listen at the sound of
-the motor. If the value is too low, you often hear a high pitched
-sound and if it is too high you can often hear a humming sound.
+Der richtige Decay Modus ist unglücklicherweise für jeden Schrittmotor anders.
+Der beste Weg einen guten Decay Modus für deinen Schrittmotor zu ermitteln ist
+die Stromaufnahme des Motors mit einem Oszilloskop zu messen. Der zweitbeste
+Weg ist es auf die Geräusche des Motors zu hören. Wenn der Wert zu klein
+ist dann ist häufig ein hoher Ton zu hören. Ist dagegen der Wert zu groß dann
+ist häufig ein ein Brummgeräusch zu hören.
 
-Generally, fast decay mode (small value) will be noisier but also
-allow higher motor speeds.
+Im Allgemeinen ist der Fast Decay Modus (kleine Werte) geräuschvoller, erlaubt
+aber höhere Motorgeschwindigkeiten.
 
 
-Error LED Sources
------------------
+Fehler LED
+----------
 
-The red LED is enabled if the input voltage is below the user
-configurable minimum voltage.
+Die rote LED leuchtet wenn die Versorgungsspannung unter das einstellbaren
+Minimum fällt.
 
 
 .. _stepper_brick_programming_interfaces:
@@ -272,12 +272,11 @@ On Device Programmierschnittstelle
 FAQ
 ---
 
-Stepper makes funny noises
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Schrittmotor macht komische Geräusche
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Stepper motors can produce high pitch or humming noises, even if
-they are standing still, if the decay mode is not configured correctly
-for the connected motor.
+Schrittmotoren können hohe oder Brummtöne erzeugen, selbst im Stillstand,
+wenn der Decay Modus nicht passen für den angeschlossenen Motor eingestellt ist.
 
-Try to play around with the decay mode as described
-:ref:`here <stepper_brick_decay_mode>`.
+Du kannst versuchen den Decay Modus, wie :ref:`hier <stepper_brick_decay_mode>`
+beschrieben, besser einzustellen.

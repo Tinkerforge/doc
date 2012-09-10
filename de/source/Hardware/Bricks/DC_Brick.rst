@@ -149,8 +149,8 @@ Teste deinen DC Brick
 
 |test_intro|
 
-Connect a DC brushed Motor to the Brick and a suitable power supply.
-Your setup should look as shown below.
+Schließe einen DC Motor und eine passende Stromversorgung an den Brick an.
+Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 
 .. image:: /Images/Bricks/brick_dc_motor_setup_600.jpg
    :scale: 100 %
@@ -166,19 +166,21 @@ Your setup should look as shown below.
    :align: center
    :target: ../../_images/Bricks/dc_brickv.jpg
 
-In this tab you can test your driver if you enable it.
-You have three sliders to control
-the velocity (forward and backward), the acceleration and the
-`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency which
-is used by the driver to control the connected motor. On the right you see
-the voltages of the two power sources and the current consumption.
-Below you find a graphical representation of the velocity of the motor.
-At the bottom you can configure the minimum motor voltage, which allows for
-undervoltage signals if the voltage is too low.
+Als erstes muss das Häkchen für "Enable" gesetzt werden um die Treiberstufe
+zu aktivieren. Es stehen 3 Regler zur Kontrolle der Geschwindigkeit
+(vorwärts und rückwärts), der Beschleunigung und der
+`PWM <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Frequenz zur
+Verfügung. Letztere wird von der Treiberstufe benutzt um den angeschlossenen
+Motor anzusteuern.
 
-Below the sliders you can test the "Full Brake" and change the driving modes
-(see :ref:`here <dc_brick_drive_mode>` for more information).
-To start testing enable the driver and play around with the controls.
+Auf der rechten Seite befinden sich Anzeigen für die Spannungen der zwei
+möglichen Stromversorgung sowie den Stromverbrauch des Motors.
+Darunter befindet sich eine Tachometer zur Darstellung der
+Motorgeschwindigkeit. Ganz unten kann die Mindestspannung des Motors eingestellt
+werden. Wird diese unterschritten wird der Undervoltage Callback ausgelöst.
+
+Unterhalb der Regler befinden sich Knöpfe für "Full Break" und die verschiedenen
+Fahrmodi (siehe :ref:`here <dc_brick_drive_mode>` für weiterführende Information).
 
 |test_pi_ref|
 
@@ -198,34 +200,40 @@ Stecker eine Spannung anliegt.
 Fahrmodi
 --------
 
-There are two possible modes of motor controls:
+Es gibt zwei Arten den Motor anzusteuern:
 
-* Drive/Brake
+* Fahren/Bremsen
 
-  In this mode the motor is always either driving or braking, there is no
-  freewheeling possible. A more linear correlation between PWM and velocity
-  is an advantage of this mode.
-  Therefore it is possible to accelerate more precise.
-  Typically motors can be driven with slower velocities in this mode.
-  Disadvantageous is a higher current consumption and a resulting faster
-  heat-up of the driver.
+  In diesem Modus wird der Motor durchgehend angesteuert, entweder wird er
+  gefahren oder gebremst. Es ist kein Freilauf möglich. Dies führt zu einer
+  besseren Korrelation zwischen PWM und Geschwindigkeit, als Vorteil diese
+  Modus. Dadurch kann eine genauere Beschleunigung erzielt werden. Gewöhnliche
+  Motoren können in diesem Modus mit geringeren Geschwindigkeit gefahren
+  werden. Ein Nachteil diese Modus ist der höhere Stromverbrauch wodurch sich
+  die Treiberstufe schneller aufheizt.
 
-* Drive/Coast
+* Fahren/Leerlauf
 
-  In this mode the motor is either driving or freewheeling.
-  Advantageous is a lower current consumption and a resulting slower heat-up.
-  The control of the velocity and acceleration is less precise, it can
-  "lag behind".
+  In diesem Modus wird der Motor nicht durchgehend angesteuert, entweder wird er
+  gefahren oder ist im Leerlauf. Dies verringert den Stromverbrauch und die
+  Treiberstufe heizt sich nicht so schnell auf.
+  Die Kontrolle über Geschwindigkeit und Beschleunigung ist weniger genau und
+  kann "hinterher hinken".
 
 
-Error LED Sources
------------------
+Fehler LED
+----------
 
-The red LED is enabled if the voltage is below the minimum voltage
-(configurable) or the driver is in emergency shutdown state
-caused by over temperature or over current. To get the Brick operational
-again you have to increase the voltage or in the latter case you have to
-let the driver cool down and enable it again.
+Die rote LED leuchtet wenn die Versorgungsspannung unter das einstellbaren
+Minimum fällt oder die Treiberstufe eine Notfallabschaltung ausgelöst hat.
+
+Eine Notfallabschaltung wird ausgelöst wenn entweder der Stromverbrauch (über 5A)
+oder die Temperatur der Treiberstufe zu hoch ist (über 175°C). Beide
+Möglichkeiten sind letztendlich gleichbedeutend, da die Temperatur
+ihren Schwellwert überschreitet sobald der Motor zu viel Strom verbraucht.
+
+Um die Funktion des Bricks wiederherzustellen muss die Versorgungsspannung erhöht
+werden, oder im Falle einer Notfallabschaltung muss die Treiberstufe abkühlen.
 
 
 .. _dc_brick_programming_interfaces:

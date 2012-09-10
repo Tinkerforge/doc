@@ -8,38 +8,38 @@ IMU Brick
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricks/brick_imu_tilted_front_350.jpg",
-	               "Bricks/brick_imu_tilted_front_600.jpg",
-	               "IMU Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_imu_tilted_back_100.jpg",
-	             "Bricks/brick_imu_tilted_back_600.jpg",
-	             "IMU Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_imu_caption_100.jpg",
-	             "Bricks/brick_imu_caption_600.jpg",
-	             "IMU Brick with caption")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_imu_top_100.jpg",
-	             "Bricks/brick_imu_top_600.jpg",
-	             "IMU Brick top")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_imu_bottom_100.jpg",
-	             "Bricks/brick_imu_bottom_600.jpg",
-	             "IMU Brick bottom")
-	}}
-	{{
-	    tfdocimg("Dimensions/imu_brick_dimensions_100.png",
-	             "Dimensions/imu_brick_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+    {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+    {{
+        tfdocstart("Bricks/brick_imu_tilted_front_350.jpg",
+                   "Bricks/brick_imu_tilted_front_600.jpg",
+                   "IMU Brick")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_tilted_back_100.jpg",
+                 "Bricks/brick_imu_tilted_back_600.jpg",
+                 "IMU Brick")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_caption_100.jpg",
+                 "Bricks/brick_imu_caption_600.jpg",
+                 "IMU Brick with caption")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_top_100.jpg",
+                 "Bricks/brick_imu_top_600.jpg",
+                 "IMU Brick top")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_bottom_100.jpg",
+                 "Bricks/brick_imu_bottom_600.jpg",
+                 "IMU Brick bottom")
+    }}
+    {{
+        tfdocimg("Dimensions/imu_brick_dimensions_100.png",
+                 "Dimensions/imu_brick_dimensions_600.png",
+                 "Outline and drilling plan")
+    }}
+    {{ tfdocend() }}
 
 
 Features
@@ -164,12 +164,12 @@ The IMU Brick comes factory calibrated and should work out of the box. It is
 however easy to recalibrate, if necessary.
 
 The factory calibration has taken place in a room without any significant
-magnetic fields. If you want to operate the IMU Brick near something that
-has a magnetic field (e.g. near a motor), you will have to recalibrate
+interfering magnetic fields. If you want to operate the IMU Brick near something
+that has a magnetic field (e.g. near a motor), you will have to recalibrate
 the magnetometer in the exact position where it will be used later on!
 
 To calibrate the magnetometer press on "Calibrate" in the Brick Viewer and
-choose "Magnetometer" in the tab of the new window. Press "Start Calibration"
+choose the "Magnetometer" tab of the new window. Press "Start Calibration"
 and now change the orientation of the IMU Brick until the bias and gain values
 shown in the GUI do not change anymore. Press "Ready" when this is the case
 and you are done.
@@ -182,11 +182,16 @@ and the gyroscope, so you are able to go back to the old calibration.
 We recommend that you don't try to recalibrate the gyroscope gain, it is not
 possible without suitable external machinery.
 
-The factory calibration for your IMU Brick can be found at:
-http://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
-(replace YOUR_IMU_UID by the UID of your IMU Brick).
+The factory calibration for your IMU Brick can be found at::
+
+ http://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
+
+Replace ``YOUR_IMU_UID`` by the UID of your IMU Brick.
 If you accidentally miscalibrated a sensor or you
 flashed a new firmware version, you can reimport the factory calibration.
+To do so go to the "IMU Brick" in the Brick Viewer, click the "Calibrate"
+button and select the "Im/Export" tab. Finally copy and paste the content of
+``YOUR_IMU_UID.txt`` to the textbox and click "Import".
 
 
 Quaternions vs Euler Angles
@@ -194,101 +199,105 @@ Quaternions vs Euler Angles
 
 We highly recommend that you use
 `quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
-in your project rather than Euler angles (`roll, pitch and yaw
-<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__), since the latter
+in your project rather than Euler angles (`yaw, pitch and roll
+<http://en.wikipedia.org/wiki/Yaw,_pitch,_and_roll>`__), since the latter
 exhibits a `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__.
 
 A formula to transform quaternions to rotation matrices can be found in the
 API documentation. Note that Euler angles always have an order in which they
-are applied. The order is: roll, yaw, pitch.
+are applied. The order for the IMU Brick is: roll, yaw, pitch.
 
 
 How to get angles that are independent?
 ---------------------------------------
+
 It is not possible to get angles for all 3 axis that are completely independent.
-At least at the gimbal lock positions there will be jumps of 180 degree for
+At least at the gimbal lock positions there will be jumps of 180° for
 some of the angles. This is simply not possible otherwise.
 
 If you want rotation angles for the x, y and z axis for a given base
 position, you have to rotate the quaternion according to your base
-position and calculate the angles after that. The following Python example should
-do exactly that and it should be easy to understand and translate in other
-languages. Note that there are gimbal locks at +90 and -90 degree from each of the
-angles. The base position will be 0, 0, 0::
+position and calculate the angles after that. The following Python example
+does exactly that and it should be easy to understand and translate in other
+languages. Note that there are gimbal locks at +90° and -90° from each of the
+angles. The base position will be (0,0,0):
 
-	#!/usr/bin/env python
-	# -*- coding: utf-8 -*-
+.. code-block:: python
 
-	from tinkerforge.ip_connection import IPConnection
-	from tinkerforge.brick_imu import IMU
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
 
-	import math
-	import time
+    from tinkerforge.ip_connection import IPConnection
+    from tinkerforge.brick_imu import IMU
 
-	class Q:
-		HOST = "localhost"
-		PORT = 4223
-		UID = "9yEBJVEHaem" # Change to your UID
+    import math
+    import time
 
-		def __init__(self):
-			self.base_x = 0.0
-			self.base_y = 0.0
-			self.base_z = 0.0
-			self.base_w = 0.0
+    class Q:
+        HOST = "localhost"
+        PORT = 4223
+        UID = "9yEBJVEHaem" # Change to your UID
 
-			self.imu = IMU(self.UID) # Create device object
-			self.ipcon = IPConnection(self.HOST, self.PORT) # Create IPconnection to brickd
-			self.ipcon.add_device(self.imu) # Add device to IP connection
-			# Don't use device before it is added to a connection
+        def __init__(self):
+            self.base_x = 0.0
+            self.base_y = 0.0
+            self.base_z = 0.0
+            self.base_w = 0.0
 
-			# Wait for IMU to settle
-			print 'Set IMU to base position and wait for 10 seconds'
-			print 'Base position will be 0 for all angles'
-			time.sleep(10)
-			q = self.imu.get_quaternion()
-			self.set_base_coordinates(q.x, q.y, q.z, q.w)
+            self.imu = IMU(self.UID) # Create device object
+            self.ipcon = IPConnection(self.HOST, self.PORT) # Create IPconnection to brickd
+            self.ipcon.add_device(self.imu) # Add device to IP connection
+            # Don't use device before it is added to a connection
 
-			# Set period for quaternion callback to 10ms
-			self.imu.set_quaternion_period(10)
+            # Wait for IMU to settle
+            print 'Set IMU to base position and wait for 10 seconds'
+            print 'Base position will be 0 for all angles'
+            time.sleep(10)
+            q = self.imu.get_quaternion()
+            self.set_base_coordinates(q.x, q.y, q.z, q.w)
 
-			# Register quaternion callback
-			self.imu.register_callback(self.imu.CALLBACK_QUATERNION, self.quaternion_cb)
+            # Set period for quaternion callback to 10ms
+            self.imu.set_quaternion_period(10)
 
-		def quaternion_cb(self, x, y, z, w):
-			# Use conjugate of quaternion to rotate coordinates according to base system
-			x, y, z, w = self.make_relative_coordinates(-x, -y, -z, w)
+            # Register quaternion callback
+            self.imu.register_callback(self.imu.CALLBACK_QUATERNION, self.quaternion_cb)
 
-			x_angle = int(math.atan2(2.0*(y*z - w*x), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
-			y_angle = int(math.atan2(2.0*(x*z + w*y), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
-			z_angle = int(math.atan2(2.0*(x*y + w*z), 1.0 - 2.0*(x*x + z*z))*180/math.pi)
+        def quaternion_cb(self, x, y, z, w):
+            # Use conjugate of quaternion to rotate coordinates according to base system
+            x, y, z, w = self.make_relative_coordinates(-x, -y, -z, w)
 
-			print 'x: {0}, y: {1}, z: {2}'.format(x_angle, y_angle, z_angle)
+            x_angle = int(math.atan2(2.0*(y*z - w*x), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
+            y_angle = int(math.atan2(2.0*(x*z + w*y), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
+            z_angle = int(math.atan2(2.0*(x*y + w*z), 1.0 - 2.0*(x*x + z*z))*180/math.pi)
 
-		def set_base_coordinates(self, x, y, z, w):
-			self.base_x = x
-			self.base_y = y
-			self.base_z = z
-			self.base_w = w
+            print 'x: {0}, y: {1}, z: {2}'.format(x_angle, y_angle, z_angle)
 
-		def make_relative_coordinates(self, x, y, z, w):
-			# Multiply base quaternion with current quaternion
-			return (
-				w * self.base_x + x * self.base_w + y * self.base_z - z * self.base_y,
-				w * self.base_y - x * self.base_z + y * self.base_w + z * self.base_x,
-				w * self.base_z + x * self.base_y - y * self.base_x + z * self.base_w,
-				w * self.base_w - x * self.base_x - y * self.base_y - z * self.base_z
-			)
+        def set_base_coordinates(self, x, y, z, w):
+            self.base_x = x
+            self.base_y = y
+            self.base_z = z
+            self.base_w = w
 
-	if __name__ == "__main__":
-		q = Q()
+        def make_relative_coordinates(self, x, y, z, w):
+            # Multiply base quaternion with current quaternion
+            return (
+                w * self.base_x + x * self.base_w + y * self.base_z - z * self.base_y,
+                w * self.base_y - x * self.base_z + y * self.base_w + z * self.base_x,
+                w * self.base_z + x * self.base_y - y * self.base_x + z * self.base_w,
+                w * self.base_w - x * self.base_x - y * self.base_y - z * self.base_z
+            )
 
-		raw_input('Press key to exit\n') # Use input() in Python 3
-		q.ipcon.destroy()
+    if __name__ == "__main__":
+        q = Q()
+
+        raw_input('Press key to exit\n') # Use input() in Python 3
+        q.ipcon.destroy()
 
 
 What is this sorcery, how does it work?
-----------------------------------------
-With the sensor data gathered by the IMU Brick (angular velocity, acceleration,
+---------------------------------------
+
+With the sensor data gathered by the IMU Brick (angular velocity, acceleration and
 magnetic field), it is possible to apply sensor fusion to acquire an absolute
 orientation.
 
@@ -297,13 +306,16 @@ For this process often a
 The filter that is used in the IMU Brick is based on
 `this paper <http://imumargalgorithm30042010sohm.googlecode.com/files/An%20efficient%20orientation%20filter%20for%20inertial%20and%20inertialmagnetic%20sensor%20arrays.pdf>`__
 by S. O. Madgwick. In our tests this new state of the art filter
-could achieve significantly better results than a Kalman Filter.
+could achieve significantly better results than a Kalman Filter. Madgwick
+describes the approach of his filter as follows:
 
-Madgwick's filter calculates the orientation by numerically integrating the
-estimated orientation rate. It is computed as the rate of change of
-orientation measured by the gyroscopes. The magnitude of the gyroscope
-measurement error is removed in the direction of the estimated error,
-which is computed from accelerometer and magnetometer measurements.
+ [...] the filter calculates the orientation by numerically integrating the
+ estimated orientation rate. It is computed as the rate of change of
+ orientation measured by the gyroscopes. The magnitude of the gyroscope
+ measurement error is removed in the direction of the estimated error,
+ which is computed from accelerometer and magnetometer measurements.
+
+The following image shows the different steps of the filter:
 
 .. image:: /Images/Bricks/imu_math_magic.png
    :scale: 100 %

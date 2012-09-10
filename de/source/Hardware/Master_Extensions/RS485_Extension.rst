@@ -99,8 +99,8 @@ Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit der RS485 Extens
    :target: ../../_images/Extensions/extension_rs485_caption_800.jpg
 
 
-RS485 Bus Assembly
-------------------
+RS485 Busaufbau
+---------------
 
 A RS485 bus consists of one master and multiple slaves.
 RS485 master is the Master Brick which has a USB connection to the PC
@@ -124,7 +124,7 @@ the termination switch on the first and last RS485 Extension in the bus to
 
 .. image:: /Images/Extensions/extension_rs485_assembly.jpg
    :scale: 90 %
-   :alt: Assembly of RS485 Extension
+   :alt: RS485 Extension Busaufbau
    :align: center
    :target: ../../_images/Extensions/extension_rs485_assembly.jpg
 
@@ -135,7 +135,7 @@ connected stacks in the Brick Viewer.
 
 .. _rs485_configuration:
 
-RS485 Configuration
+RS485 Konfiguration
 ^^^^^^^^^^^^^^^^^^^
 
 To configure a RS485 Extension you first have to choose the baud rate,
@@ -143,7 +143,7 @@ parity and stop bits.
 
 .. image:: /Images/Extensions/extension_rs485_config.jpg
    :scale: 100 %
-   :alt: Configuration of RS485 Extension
+   :alt: RS485 Extension Konfiguration
    :align: center
    :target: ../../_images/Extensions/extension_rs485_config.jpg
 
@@ -159,7 +159,7 @@ the slave (1-255).
 
 .. image:: /Images/Extensions/extension_rs485_slave.jpg
    :scale: 100 %
-   :alt: Configuration of RS485 in slave mode
+   :alt: RS485 Konfiguration für Slave Modus
    :align: center
    :target: ../../_images/Extensions/extension_rs485_slave.jpg
 
@@ -168,12 +168,12 @@ of the slaves in the RS485 bus as a comma separated list.
 
 .. image:: /Images/Extensions/extension_rs485_master.jpg
    :scale: 100 %
-   :alt: Configuration of RS485 in master mode
+   :alt: RS485 Konfiguration für Master Modus
    :align: center
    :target: ../../_images/Extensions/extension_rs485_master.jpg
 
 
-Modify your RS485 Bus
+RS485 Busmodifikation
 ^^^^^^^^^^^^^^^^^^^^^
 
 If you want to change something in your bus, e.g. add new Bricks or

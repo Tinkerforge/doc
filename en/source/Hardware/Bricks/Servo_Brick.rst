@@ -57,6 +57,7 @@ Features
 
 * Drives up to **7** RC Servos with max. **3A**
 * Drives brushless motors (requires external ESC)
+* Supports `TurboPWM <http://wiki.openpilot.org/display/Doc/TurboPWM>`__
 * Software adjustable servo voltage, period and pulse width
 * Position, velocity and acceleration controllable
 * One USB port and two Bricklet ports
@@ -114,10 +115,10 @@ Minimum/Maximum Input Voltage         5V/25V
 Output Voltage                        Software adjustable 2V - 9V
 ------------------------------------- ------------------------------------------------------------
 ------------------------------------- ------------------------------------------------------------
-Output Period\*                       1µs - 65535µs
-Pulsewidth\*                          1µs - 65535µs
-Velocity\*                            0 - 65535 °/100s
-Acceleration\*                        1 - 65535 °/100s²
+Output Period*                        1µs - 65535µs
+Pulsewidth*                           1µs - 65535µs
+Velocity*                             0 - 65535 °/100s
+Acceleration*                         1 - 65535 °/100s²
 ------------------------------------- ------------------------------------------------------------
 ------------------------------------- ------------------------------------------------------------
 Bricklet Ports                        2
@@ -176,10 +177,10 @@ Your setup should look as shown below.
    :align: center
    :target: ../../_images/Bricks/servo_brickv.jpg
 
-In the left part of the GUI you can select the servo
-to control. You can enable it, configure the
-`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ and configure
-the corresponding position. Additionally you can see the current consumption of
+In the left part of the tab you can select the servo
+to control. You can enable and disable it, configure the
+`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ pulse width and
+define the degree range. Additionally you can see the current consumption of
 the servo. Below there are four sliders to control
 the position, velocity and acceleration of the servo. The fourth slider
 can be used to change the period of the PWM
@@ -190,13 +191,13 @@ On the right side you can see the external and stack voltage.
 Below are graphical representations for the state of each servo.
 Beneath you can configure the minimum input voltage, which allows for
 undervoltage signals if the voltage is too low.
-Also you can configure the output voltage
-(Caution: A too high output voltage may damage your servo!).
+Also you can configure the output voltage.
+
+..warning::
+ A too high output voltage might damage your servo!
+
 At the bottom right there is a "Start Test" button, which starts
 a test sequence that performs random movements for each servo.
-
-To start testing enable servo 0 and play around with the controls
-or let the Brick Viewer perform a test.
 
 |test_pi_ref|
 
@@ -207,7 +208,7 @@ Configure Servo PWM
 -------------------
 
 Typically you control a RC servo by a PWM signal with a
-period of 20ms and an on-time of 1ms - 2ms depending on the position you want
+period of 20ms and an on-time of 1ms to 2ms depending on the position you want
 to achieve. However, some servos do not work properly with these standard
 settings. Therefore we provide a fully configurable PWM.
 
@@ -217,7 +218,7 @@ Chinese servos). If the datasheet of your servo does specify a preferred
 period, use it. But it is likely that you don't have to change this value.
 
 More interesting is the minimum and maximum pulse width. The default pulse
-width is 1ms - 2ms. Most servos can however rotate further when
+width is 1ms to 2ms. Most servos can however rotate further when
 minimum/maximum pulse width is decreased/increased. If your servo comes
 with a datasheet we recommend to use the values described in there. If you
 don't have a datasheet you can try to incrementally extend the pulse width
@@ -246,32 +247,33 @@ to be 1V higher than the configured output voltage to assure stable operation.
  A too high output voltage can damage your servo.
 
 
-Usage of RC ESC to drive brushless motors
------------------------------------------
+Usage of ESCs to drive brushless motors
+---------------------------------------
 
 With this Brick you can control up to 7 brushless motors by using external
-RC Electronic Speed Controllers (ESC). Simply connect the brushless
+Electronic Speed Controllers (ESC). Simply connect the brushless
 motor to the ESC and the ESC to the Servo Brick. With this construction
 the maximum brushless motor current only depends on your selected ESC.
 
 .. warning::
+ Many ESCs have a build-in Battery Eliminator Circuits (BEC) which can be used
+ to power RC receivers.
+ If you use a ESC with BEC you have to disable it! Otherwise your ESC or
+ the Brick can be destroyed. To disable BEC you have to remove the red
+ wire from the connector you plug in the Servo Brick
+ (`external video tutorial <http://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
 
-   Many ESC's have a build-in BEC which can be used to power RC receivers.
-   If you use a ESC with BEC you have to disable it! Otherwise your ESC or
-   the Brick can be destroyed. To disable BEC you have to remove the red
-   wire from the connector you plug in the Servo Brick
-   (`external video tutorial <http://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
-
-   If you use the same power supply for your ESC and the Servo Brick, additionally
-   you have to remove the black (GND) wire too. It seems that the most
-   ESC's will draw their current not over the power supply cable of the ESC
-   but over the GND pin of the Servo Brick. This can lead to a destroyed Servo
-   Brick. At the first tests have an eye on the current measurement in
-   Brick Viewer.
+.. warning::
+ If you use the same power supply for your ESC and the Servo Brick, additionally
+ you have to remove the black (GND) wire too. It seems that the most
+ ESCs will draw their current not over the power supply cable of the ESC
+ but over the GND pin of the Servo Brick. This can lead to a destroyed Servo
+ Brick. At the first tests have an eye on the current measurement in
+ Brick Viewer.
 
 
-Error LED Sources
------------------
+Error LED
+---------
 
 The red LED is enabled so long as the input voltage is below the user
 configurable minimum voltage.

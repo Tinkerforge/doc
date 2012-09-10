@@ -11,8 +11,8 @@ werden können ist :ref:`hier <product_overview>` zu finden.
 
 .. _llproto_tcpip_protocol:
 
-Protocol
---------
+Protokoll
+---------
 
 The TCP/IP protocol is modeled after the concept of a function call.
 A request packet is send to the stack to trigger the execution of a function
@@ -24,8 +24,8 @@ response packets spontaneously back to the host to notify about an event or
 specific condition.
 
 
-Packet Layout
-^^^^^^^^^^^^^
+Paketaufbau
+^^^^^^^^^^^
 
 The TCP/IP protocol is based on packets transfered between host and stack. Each
 packet starts with a 4 byte header followed by a payload of variable length. The
@@ -63,7 +63,7 @@ whole array no null-terminator can be appended and the string is *not*
 null-terminated. Therefore, you cannot rely on strings being null-terminated.
 
 
-Communication
+Kommunikation
 ^^^^^^^^^^^^^
 
 A typical TCP/IP communication has three phases. The first phase consists of
@@ -203,8 +203,8 @@ The hex dump of the packet looks like this::
   0030   00 00 00 00 02 01                                ......
 
 
-Function Calls
-""""""""""""""
+Funktionen aufrufen
+"""""""""""""""""""
 
 When the stack ID of a device is known its specific functions can be called.
 To do this you need to send a corresponding request packet. The stack ID
@@ -328,6 +328,7 @@ Grundfunktionen
  Use this function to resolve a UID to the corresponding stack ID that is
  required for calling other functions of the device.
 
+
 Konfigurationsfunktionen für Callbacks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -345,6 +346,7 @@ Konfigurationsfunktionen für Callbacks
 
  Use this function to enumerate all connected devices without the need to know
  their UIDs beforehand.
+
 
 Callbacks
 ^^^^^^^^^

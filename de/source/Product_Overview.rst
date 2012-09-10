@@ -216,9 +216,9 @@ master of the stack over its USB connection.
 This option is limited by the USB specification (500mA).
 A large stack may need more power than 500mA.
 
-To provide greater currents, Power Supplies are available.
+To provide greater currents, Stromversorgungen are available.
 These boards power the stack and can additionally be used to supply the power
-for driver Bricks (e.g. :ref:`DC Brick <dc_brick>`). Power Supplies
+for driver Bricks (e.g. :ref:`DC Brick <dc_brick>`). Stromversorgungen
 have the same size as :ref:`Bricks <product_overview_bricks>` and are
 stacked in at the bottom of the stack.
 

@@ -101,8 +101,8 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/chibi-extension/zipball/master>`__)
 
 
-Chibi Network Assembly
-----------------------
+Chibi Netzwerkaufbau
+--------------------
 
 A Chibi network consists of one master and multiple slaves.
 Chibi master is the Master Brick which has a USB connection to the PC
@@ -135,7 +135,7 @@ You should now be able to see all connected stacks in the Brick Viewer.
 
 .. _chibi_configuration:
 
-Chibi Configuration
+Chibi Konfiguration
 ^^^^^^^^^^^^^^^^^^^
 
 .. note::
@@ -176,8 +176,8 @@ be able to talk to (as a comma separated list).
    :target: ../../_images/Extensions/extension_chibi_master.jpg
 
 
-Modify your Chibi Network
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Chibi Netzwerkmodifikation
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to change something in your network, e.g. add new Bricks or
 Bricklets, you have to power down the stack you like to change. Change it
@@ -187,8 +187,8 @@ This can be achieved by a power cycle or pressing the reset
 button on the Master Brick.
 
 
-Chibi Frequency and Channel
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Chibi Frequenz und Kanal
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Chibi Extension supports several frequencies with different channels
 and different frequencies are allowed in different countries.

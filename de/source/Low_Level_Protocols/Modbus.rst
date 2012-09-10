@@ -11,8 +11,8 @@ werden können ist :ref:`hier <product_overview>` zu finden.
 
 .. _llproto_modbus_protocol:
 
-Protocol
---------
+Protokoll
+---------
 
 The RS485 Extension uses `Modbus RTU <http://en.wikipedia.org/wiki/Modbus>`__
 as the protocol on the RS485 interface.
@@ -31,8 +31,8 @@ a packet with an empty payload. If the answer by the RS485 slave was not
 empty, the RS485 master has to send an empty packet back (ACK).
 
 
-Packet Layout
-^^^^^^^^^^^^^
+Paketaufbau
+^^^^^^^^^^^
 
 The Modbus protocol is based on packets transfered between a RS485 master and
 potentially many RS485 Slaves. Each packet consists of:
@@ -89,7 +89,7 @@ whole array no null-terminator can be appended and the string is *not*
 null-terminated. Therefore, you cannot rely on strings being null-terminated.
 
 
-Communication
+Kommunikation
 ^^^^^^^^^^^^^
 
 Before you can call any functions on the connected devices, you need to
@@ -302,6 +302,7 @@ Konfigurationsfunktionen für Callbacks
 
  Use this function to enumerate all connected devices without the need to know
  their UIDs beforehand.
+
 
 Callbacks
 ^^^^^^^^^

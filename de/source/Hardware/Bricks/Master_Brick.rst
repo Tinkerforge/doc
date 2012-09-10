@@ -141,11 +141,11 @@ Teste deinen Master Brick
    :align: center
    :target: ../../_images/Bricks/master_brickv.jpg
 
-You should see that the Master Brick isn't measuring any stack voltages or
-currents. This is because you have not attached a
-:ref:`Power Supply <product_overview_powersupplies>`. When attaching
-such a board you should see the voltage applied to your stack and the current
-flowing in.
+Die Messung Versorgungsspannung des Stapels und des Stromverbrauchs sollte
+jeweils Null anzeigen. Dies liegt daran, dass keine :ref:`Stromversorgung
+<product_overview_power_supplies>` angeschlossen ist. Wenn eine unter den
+Stapel gesteckt wurde, dann wird hier die angelegte Spannung und der
+Stromverbrauch des Stapels angezeigt.
 
 |test_pi_ref|
 

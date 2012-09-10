@@ -167,19 +167,20 @@ Your setup should look as shown below.
    :align: center
    :target: ../../_images/Bricks/dc_brickv.jpg
 
-In this tab you can test your driver if you enable it.
-You have three sliders to control
+Before you can test your Brick you need to enable the driver chip by ticking the
+"Enable" checkbox. You have three sliders to control
 the velocity (forward and backward), the acceleration and the
 `PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency which
-is used by the driver to control the connected motor. On the right you see
+is used by the driver chip to control the connected motor.
+
+On the right you see
 the voltages of the two power sources and the current consumption.
 Below you find a graphical representation of the velocity of the motor.
 At the bottom you can configure the minimum motor voltage, which allows for
-undervoltage signals if the voltage is too low.
+undervoltage callbacks if the voltage is too low.
 
 Below the sliders you can test the "Full Brake" and change the driving modes
 (see :ref:`here <dc_brick_drive_mode>` for more information).
-To start testing enable the driver and play around with the controls.
 
 |test_pi_ref|
 
@@ -209,7 +210,7 @@ There are two possible modes of motor controls:
   Therefore it is possible to accelerate more precise.
   Typically motors can be driven with slower velocities in this mode.
   Disadvantageous is a higher current consumption and a resulting faster
-  heat-up of the driver.
+  heat-up of the driver chip.
 
 * Drive/Coast
 
@@ -219,14 +220,20 @@ There are two possible modes of motor controls:
   "lag behind".
 
 
-Error LED Sources
------------------
+Error LED
+---------
 
-The red LED is enabled if the voltage is below the minimum voltage
-(configurable) or the driver is in emergency shutdown state
-caused by overtemperature or overcurrent. To get the Brick operational
-again you have to increase the voltage or in the latter case you have to
-let the driver cool down and enable it again.
+The red LED is enabled if the supply voltage is below the minimum voltage
+(configurable) or the driver chip is in emergency shutdown state.
+
+An emergency shutdown is triggered if either the current consumption
+is too high (above 5A) or the temperature of the driver chip is too high
+(above 175°C). These two possibilities are essentially the same, since the
+temperature will reach this threshold immediately if the motor consumes too
+much current.
+
+To get the Brick operational again you have to increase the voltage or in the
+latter case you have to let the driver chip cool down and enable it again.
 
 .. _dc_brick_programming_interfaces:
 

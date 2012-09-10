@@ -8,38 +8,38 @@ IMU Brick
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricks/brick_imu_tilted_front_350.jpg",
-	               "Bricks/brick_imu_tilted_front_600.jpg",
-	               "IMU Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_imu_tilted_back_100.jpg",
-	             "Bricks/brick_imu_tilted_back_600.jpg",
-	             "IMU Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_imu_caption_100.jpg",
-	             "Bricks/brick_imu_caption_600.jpg",
-	             "IMU Brick mit Beschriftung")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_imu_top_100.jpg",
-	             "Bricks/brick_imu_top_600.jpg",
-	             "IMU Brick Oberseite")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_imu_bottom_100.jpg",
-	             "Bricks/brick_imu_bottom_600.jpg",
-	             "IMU Brick Unterseite")
-	}}
-	{{
-	    tfdocimg("Dimensions/imu_brick_dimensions_100.png",
-	             "Dimensions/imu_brick_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+    {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+    {{
+        tfdocstart("Bricks/brick_imu_tilted_front_350.jpg",
+                   "Bricks/brick_imu_tilted_front_600.jpg",
+                   "IMU Brick")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_tilted_back_100.jpg",
+                 "Bricks/brick_imu_tilted_back_600.jpg",
+                 "IMU Brick")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_caption_100.jpg",
+                 "Bricks/brick_imu_caption_600.jpg",
+                 "IMU Brick mit Beschriftung")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_top_100.jpg",
+                 "Bricks/brick_imu_top_600.jpg",
+                 "IMU Brick Oberseite")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_bottom_100.jpg",
+                 "Bricks/brick_imu_bottom_600.jpg",
+                 "IMU Brick Unterseite")
+    }}
+    {{
+        tfdocimg("Dimensions/imu_brick_dimensions_100.png",
+                 "Dimensions/imu_brick_dimensions_600.png",
+                 "Umriss und Bohrplan")
+    }}
+    {{ tfdocend() }}
 
 
 Features
@@ -144,171 +144,191 @@ Teste deinen IMU Brick
    :align: center
    :target: ../../_images/Bricks/imu_brickv.jpg
 
-You can see all of the available data form the IMU Brick. If you hold the
-IMU Brick in the orientation as shown in the image and press
-"Save Orientation", the movements that you make with the IMU Brick should be
-mirrored in the Brick Viewer. Before you press "Save Orientation" you should
-hold the IMU Brick still for about 15 seconds, so it can converge to the
-correct position.
+Alle verfügbaren Daten des IMU Bricks werden angezeigt. Wenn du den IMU Brick
+wie dargestellt hältst und dann den "Save Orientation" Knopf klickst sollten
+die Bewegungen des IMU Bricks entsprechend im Brick Viewer widergespiegelt
+werden. Bevor du allerdings den "Save Orientation" Knopf klickst solltest du
+den Brick 15 Sekunden ruhig halten damit die Lageberechnung zur richtigen
+Position konvergieren kann.
 
 |test_pi_ref|
 
 
-IMU Calibration
----------------
+IMU Kalibrierung
+----------------
 
-The IMU Brick comes factory calibrated and should work out of the box. It is
-however easy to recalibrate, if necessary.
+Der IMU Brick wird fertig kalibriert ausgeliefert und sollte daher direkt nach
+dem Auspacken funktionieren. Falls es nötig sein sollte ist eine Neukalibrierung
+leicht zu bewerkstelligen.
 
-The factory calibration has taken place in a room without any significant
-magnetic fields. If you want to operate the IMU Brick near something that
-has a magnetic field (e.g. near a motor), you will have to recalibrate
-the magnetometer in the exact position where it will be used later on!
+Die Werkskalibrierung wurde in einem Raum ohne signifikante magnetische
+Störfelder durchgeführt. Wenn der IMU Brick in der nähe eines magnetische Feldes
+(z.B. das eines Motors) betrieben werden soll, dann sollte das Magnetometer in
+der Position, in der der IMU Brick später verwendet werden soll, neu kalibriert
+werden!
 
-To calibrate the magnetometer press on "Calibrate" in the Brick Viewer and
-choose "Magnetometer" in the tab of the new window. Press "Start Calibration"
-and now change the orientation of the IMU Brick until the bias and gain values
-shown in the GUI do not change anymore. Press "Ready" when this is the case
-and you are done.
+Um das Magnetometer neu zu kalibrieren musst du das Kalibrierungsfenster über den
+"Calibrate" Knopf auf dem "IMU Brick" Tab im Brick Viewer aufrufen. Wähle dann
+denn "Magnetometer" Tab aus und klicke "Start Calibration". Bewege nun den IMU
+Brick bis sich die angezeigten Gain und Bias Werte nicht mehr ändern. Sobald dies
+der Fall ist kannst du den "Ready" klicken und die Kalibrierung des Magnetometers
+ist abgeschlossen.
 
-Accelerometer and gyroscope can be calibrated similarly, follow the
-instructions as given by the calibration tool. We recommend that you
-export the calibration before you start recalibrating the accelerometer
-and the gyroscope, so you are able to go back to the old calibration.
+Beschleunigungssensor und Gyroskop werden ähnlich kalibriert, folge dazu den
+Anweisungen im Kalibrierungsfenster. Wir empfehlen zuerst die bestehende
+Kalibrierung zu exportieren, bevor du den Beschleunigungssensor und das Gyroskop
+neu kalibrierst, sodass du im Notfall zu alten Kalibrierung zurückkehren kannst.
 
-We recommend that you don't try to recalibrate the gyroscope gain, it is not
-possible without suitable external machinery.
+Wir empfehlen den Gyroskop Gain nicht neu zu kalibrieren, da dies ohne
+geeignete externe Maschinen nicht möglich ist.
 
-The factory calibration for your IMU Brick can be found at:
-http://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
-(replace YOUR_IMU_UID by the UID of your IMU Brick).
-If you accidentially miscalibrated a sensor or you
-flashed a new firmware version, you can reimport the factory calibration.
+Die Werkskalibrierung für deinen IMU Brick kann hier abgerufen werden::
+
+ http://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
+
+Ersetze dazu ``YOUR_IMU_UID`` durch die UID deines IMU Bricks.
+Falls du einen Sensor verkalibriert hast oder eine neue Firmwareversion geflasht
+hast, dann kannst du die Werkskalibrierung wieder importieren. Dazu rufst du
+das Kalibrierungsfenster über den "Calibrate" Knopf auf dem "IMU Brick" Tab
+im Brick Viewer auf und wählst den "Im/Export" Tab aus. Zum Abschluss kopierst
+du den Inhalt der ``YOUR_IMU_UID.txt`` Datei in das Textfeld und klickst den
+"Import" Knopf.
 
 
-Quaternions vs Euler Angles
+Quaternionen vs Eulerwinkel
 ---------------------------
 
-We highly recommend that you use
-`quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
-in your project rather than euler angles (`roll, pitch and yaw
-<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__), since the latter
-exhibits a `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__.
+Wir empfehlen
+`Quaternion <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
+anstatt Eulerwinkel (`Roll-, Nick- und Gier-Winkel
+<http://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__) zu verwenden, da die
+letzteren einen `Gimbal Lock <http://de.wikipedia.org/wiki/Gimbal_Lock>`__
+erleiden können.
 
-A formula to transform quaternions to rotation matrices can be found in the
-API documentation. Note that Euler Angles always have an order in which they
-are applied. The order is: roll, yaw, pitch.
-
-
-How to get angles that are independent?
----------------------------------------
-It is not possible to get angles for all 3 axis that are completely independent.
-At least at the gimbal lock positions there will be jumps of 180 degree for
-some of the angles. This is simply not possible otherwise.
-
-If you want rotation angles for the x, y and z axis for a given base
-position, you have to rotate the quaternion according to your base
-position and calculate the angles after that. The followin Python example should
-do exactly that and it should be easy to understand and translate in other
-languages. Note that there are gimbal locks at +90 and -90 degree from each of the
-angles. The base position will be 0, 0, 0::
-
-	#!/usr/bin/env python
-	# -*- coding: utf-8 -*-
-
-	from tinkerforge.ip_connection import IPConnection
-	from tinkerforge.brick_imu import IMU
-
-	import math
-	import time
-
-	class Q:
-		HOST = "localhost"
-		PORT = 4223
-		UID = "9yEBJVEHaem" # Change to your UID
-
-		def __init__(self):
-			self.base_x = 0.0
-			self.base_y = 0.0
-			self.base_z = 0.0
-			self.base_w = 0.0
-
-			self.imu = IMU(self.UID) # Create device object
-			self.ipcon = IPConnection(self.HOST, self.PORT) # Create IPconnection to brickd
-			self.ipcon.add_device(self.imu) # Add device to IP connection
-			# Don't use device before it is added to a connection
-
-			# Wait for IMU to settle
-			print 'Set IMU to base position and wait for 10 seconds'
-			print 'Base position will be 0 for all angles'
-			time.sleep(10)
-			q = self.imu.get_quaternion()
-			self.set_base_coordinates(q.x, q.y, q.z, q.w)
-
-			# Set period for quaternion callback to 10ms
-			self.imu.set_quaternion_period(10)
-
-			# Register quaternion callback
-			self.imu.register_callback(self.imu.CALLBACK_QUATERNION, self.quaternion_cb)
-
-		def quaternion_cb(self, x, y, z, w):
-			# Use conjugate of quaternion to rotate coordinates according to base system
-			x, y, z, w = self.make_relative_coordinates(-x, -y, -z, w)
-
-			x_angle = int(math.atan2(2.0*(y*z - w*x), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
-			y_angle = int(math.atan2(2.0*(x*z + w*y), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
-			z_angle = int(math.atan2(2.0*(x*y + w*z), 1.0 - 2.0*(x*x + z*z))*180/math.pi)
-
-			print 'x: {0}, y: {1}, z: {2}'.format(x_angle, y_angle, z_angle)
-
-		def set_base_coordinates(self, x, y, z, w):
-			self.base_x = x
-			self.base_y = y
-			self.base_z = z
-			self.base_w = w
-
-		def make_relative_coordinates(self, x, y, z, w):
-			# Multiply base quaternion with current quaternion
-			return (
-				w * self.base_x + x * self.base_w + y * self.base_z - z * self.base_y,
-				w * self.base_y - x * self.base_z + y * self.base_w + z * self.base_x,
-				w * self.base_z + x * self.base_y - y * self.base_x + z * self.base_w,
-				w * self.base_w - x * self.base_x - y * self.base_y - z * self.base_z
-			)
-
-	if __name__ == "__main__":
-		q = Q()
-
-		raw_input('Press key to exit\n') # Use input() in Python 3
-		q.ipcon.destroy()
+Eine Formel um eine Quaternion in eine Rotationsmatrix umzurechnen findet sich
+in der API Dokumentation. Beachte, dass Eulerwinkel immer eine definierte
+Reihenfolge haben in der sie angewendet werden müssen. Im Falle des IMU Bricks
+gilt folgenden Reihenfolge: erst Roll-Winkel, dann Gier-Winkel, zuletzt
+Nick-Winkel.
 
 
-What is this sourcery, how does it work?
-----------------------------------------
-With the sensor data gathered by the IMU Brick (angular velocity, acceleration,
-magnetic field), it is possible to apply sensor fusion to accquire an absolute
-orientation.
+Wie können unabhängige Winkel berechnet werden?
+-----------------------------------------------
 
-For this process often a
-`Kalman Filter <http://en.wikipedia.org/wiki/Kalman_filter>`__ is used.
-The filter that is used in the IMU Brick is based on
-`this paper <http://imumargalgorithm30042010sohm.googlecode.com/files/An%20efficient%20orientation%20filter%20for%20inertial%20and%20inertialmagnetic%20sensor%20arrays.pdf>`__
-by S. O. Madgwick. In our tests this new state of the art filter
-could achieve significantly better results than a Kalman Filter.
+Es ist nicht möglich Winkel für alle 3 Achsen zu berechnen die vollständig
+unabhängig sind. Zumindest an den Gimbal Lock Positionen werden Sprünge von
+180° auftreten für gewisse Winkel. Die ist grundsätzlich nicht anders möglich.
 
-Madgwick's filter calculates the orientation by numerically integrating the
-estimated orientation rate. It is computed as the rate of change of
-orientation measured by the gyroscopes. The magnitude of the gyroscope
-measurement error is removed in the direction of the estimated error,
-which is computed from accelerometer and magnetometer measurements.
+Wenn Rotationswinkel für die X, Y und Z Achse in Abhängigkeit zu einer
+definierten Grundposition benötigt werden, dann muss das Quaternion zuerst im
+Bezug auf diese Grundposition rotiert werden bevor die Winkel berechnet werden.
+
+Das folgende Python Beispiel tut exakt dies und es sollte einfach zu verstehen
+und auf andere Programmiersprachen übertragbar sein. Beachte, dass Gimbal Locks
+bei +90° und -90° für jede der Achsen auftreten. Die Grundposition ist (0,0,0):
+
+.. code-block:: python
+
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
+
+    from tinkerforge.ip_connection import IPConnection
+    from tinkerforge.brick_imu import IMU
+
+    import math
+    import time
+
+    class Q:
+        HOST = "localhost"
+        PORT = 4223
+        UID = "9yEBJVEHaem" # Change to your UID
+
+        def __init__(self):
+            self.base_x = 0.0
+            self.base_y = 0.0
+            self.base_z = 0.0
+            self.base_w = 0.0
+
+            self.imu = IMU(self.UID) # Create device object
+            self.ipcon = IPConnection(self.HOST, self.PORT) # Create IPconnection to brickd
+            self.ipcon.add_device(self.imu) # Add device to IP connection
+            # Don't use device before it is added to a connection
+
+            # Wait for IMU to settle
+            print 'Set IMU to base position and wait for 10 seconds'
+            print 'Base position will be 0 for all angles'
+            time.sleep(10)
+            q = self.imu.get_quaternion()
+            self.set_base_coordinates(q.x, q.y, q.z, q.w)
+
+            # Set period for quaternion callback to 10ms
+            self.imu.set_quaternion_period(10)
+
+            # Register quaternion callback
+            self.imu.register_callback(self.imu.CALLBACK_QUATERNION, self.quaternion_cb)
+
+        def quaternion_cb(self, x, y, z, w):
+            # Use conjugate of quaternion to rotate coordinates according to base system
+            x, y, z, w = self.make_relative_coordinates(-x, -y, -z, w)
+
+            x_angle = int(math.atan2(2.0*(y*z - w*x), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
+            y_angle = int(math.atan2(2.0*(x*z + w*y), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
+            z_angle = int(math.atan2(2.0*(x*y + w*z), 1.0 - 2.0*(x*x + z*z))*180/math.pi)
+
+            print 'x: {0}, y: {1}, z: {2}'.format(x_angle, y_angle, z_angle)
+
+        def set_base_coordinates(self, x, y, z, w):
+            self.base_x = x
+            self.base_y = y
+            self.base_z = z
+            self.base_w = w
+
+        def make_relative_coordinates(self, x, y, z, w):
+            # Multiply base quaternion with current quaternion
+            return (
+                w * self.base_x + x * self.base_w + y * self.base_z - z * self.base_y,
+                w * self.base_y - x * self.base_z + y * self.base_w + z * self.base_x,
+                w * self.base_z + x * self.base_y - y * self.base_x + z * self.base_w,
+                w * self.base_w - x * self.base_x - y * self.base_y - z * self.base_z
+            )
+
+    if __name__ == "__main__":
+        q = Q()
+
+        raw_input('Press key to exit\n') # Use input() in Python 3
+        q.ipcon.destroy()
+
+
+Was ist das für Zauberei, wie funktioniert es?
+----------------------------------------------
+
+Auf Basis der Sensordaten die der IMU Brick sammelt (Winkelgeschwindigkeit,
+Beschleunigung und Magnetfeld) ist es möglich Sensorfusion zu betreiben, um eine
+absolute Orientierung im Raum zu ermitteln.
+
+Häufig wird für diesen Berechnungsprozess ein
+`Kalman Filter <http://de.wikipedia.org/wiki/Kalman-Filter>`__ verwendet.
+Der IMU Brick verwendet allerdings einen Filter der auf
+`diesem Paper <http://imumargalgorithm30042010sohm.googlecode.com/files/An%20efficient%20orientation%20filter%20for%20inertial%20and%20inertialmagnetic%20sensor%20arrays.pdf>`__
+von S. O. Madgwick basiert. Unsere Tests haben gezeigt, dass dieser neuartige
+Filter signifikant bessere Ergebnisse als ein Kalman Filter erzielt. Madgwick
+beschreibt die Arbeitsweise seines Filter so:
+
+ [...] the filter calculates the orientation by numerically integrating the
+ estimated orientation rate. It is computed as the rate of change of
+ orientation measured by the gyroscopes. The magnitude of the gyroscope
+ measurement error is removed in the direction of the estimated error,
+ which is computed from accelerometer and magnetometer measurements.
+
+Das folgende Bild zeigt die verschiedenen Schritte des Filters:
 
 .. image:: /Images/Bricks/imu_math_magic.png
    :scale: 100 %
-   :alt: Block diagram of orientation filter from S. O. Madgwick: "An efficient orientation filter for inertial and inertial/magnetic sensor arrays", University of Bristol, April 2010.
+   :alt: Blockdiagramm des Orientierungsfilters von S. O. Madgwick: "An efficient orientation filter for inertial and inertial/magnetic sensor arrays", University of Bristol, April 2010.
    :align: center
    :target: ../../_images/Bricks/imu_math_magic.png
 
-Image and explanation from S. O. Madgwick: "An efficient orientation filter
+Bild und Erklärung stammen aus S. O. Madgwick: "An efficient orientation filter
 for inertial and inertial/magnetic sensor arrays", University of Bristol,
 April 2010.
 
