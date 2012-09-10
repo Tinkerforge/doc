@@ -28,7 +28,7 @@ Features
 --------
 
 * Long distance connections (up to 1200m)
-* Allows wired interconnection between stacks
+* Allows cable based interconnection between stacks
 * Configurable baud rate, parity and stop bits
 * Can be used in existing RS485 networks (:ref:`Modbus RTU <llproto_modbus>`)
 

@@ -33,7 +33,7 @@ Features
 --------
 
 * 700/800/900MHz Funk Transceiver
-* Erlaubt eine drahtlose Verbindung von Stapeln
+* Erlaubt drahtlose Verbindungen zwischen Stapeln
 * Konfigurierbare Frequenz und Kanal
 * Messbare Signalstärke
 
@@ -104,33 +104,36 @@ Ressourcen
 Chibi Netzwerkaufbau
 --------------------
 
-A Chibi network consists of one master and multiple slaves.
-Chibi master is the Master Brick which has a USB connection to the PC
-running brickd. All the other Master Bricks with Chibi Extension must not have
-a USB connection (they can use a USB Power Supply since Master Brick firmware
-1.1.3). Each Chibi Extension is identified with
-its own address. The addresses have to be unique in the transmission range.
+Ein Chibi Netzwerk besteht aus einem Master und mehreren Slaves. Der Chibi
+Master ist der Master Brick der per USB an den PC angeschlossen ist auf dem
+der Brick Daemon läuft. Alle anderen Master Bricks mit Chibi Extension dürfen
+keine USB Verbindung haben (sie können allerdings seit Master Brick Firmware
+1.1.3 eine USB Power Supply verwenden). Jede Chibi Extension hat eine eigene
+Adresse. Diese Adressen müssen innerhalb der Sendereichweite eindeutig sein.
 
 .. note::
- If you use multiple networks in parallel with identical channel and
- frequency make sure that every address is unique and not used in different
- networks in transmission range.
+ Falls mehrere Netzwerke mit gleichen Kanal und Frequenzeinstellungen
+ nebeneinander betrieben werden sollen, dann muss sichergestellt sein, dass
+ die einzelnen Adressen innerhalb der Sendereichweite eindeutig sein und nicht
+ in mehreren Netzwerken gleichzeitig benutzt werden.
 
-To create a Chibi network, stack the Chibi Extension on top of a Master Brick.
-Connect the Master Brick via USB with your PC and start the Brick Viewer
-software. You should see the Master Brick view
-with the identified Chibi Extension (see image below). Configure the extension
-as slave or master (as described :ref:`here <chibi_configuration>`).
+Um ein Chibi Netzwerk aufzubauen muss zuerst die Chibi Extension auf einen
+Master Brick gesteck werden und der Master Brick über USB mit dem PC verbunden
+werden. Im Brick Viewer sollte jetzt ein Master Brick mit erkannter Chibi
+Extension angezeigt werden. Die Chibi Extension muss jetzt als Master oder
+Slave konfiguriert werden wie :ref:`hier <chibi_configuration>` beschrieben.
 
-If you have configured all extensions you can build your system. Connect
-Bricks and Bricklets as you like. The Master of each stack has to be the
-lowermost Brick (except if you are using a Power Supply). The Chibi Extension
-can be positioned in the stack as you wish.
+Wenn alle Chibi Extensions konfiguriert sind kann das Gesamtsystem
+zusammengebaut werden. Verbinde die benötigten Bricks und Bricklets zu Stapeln.
+Der Master jedes Stapels muss der unterste Brick sein (außer ganz
+unten steckt eine Stromversorgung). Die Chibi Extension kann an einem beliebigen
+Platz oberhalb des Masters gesteckt werden.
 
-After you have plugged together your system you have to power it up.
-You have to power up the slaves before the master, since the Chibi master
-searches for slaves only at startup.
-You should now be able to see all connected stacks in the Brick Viewer.
+Nachdem alles zusammen gesteckt ist kann das System gestartet werden. Dabei
+müssen zuerst alle Chibi Slaves gestartet werden bevor der Chibi Master
+gestartet wird, da der Chibi Master nur direkt nach dem Start nach den Slaves
+sucht. Jetzt sollten alle Bricks und Bricklets des Chibi Netzwerkes im Brick
+Viewer angezeigt werden.
 
 
 .. _chibi_configuration:
@@ -139,39 +142,40 @@ Chibi Konfiguration
 ^^^^^^^^^^^^^^^^^^^
 
 .. note::
- The Chibi configuration changed starting from Brick Viewer version 1.0.6,
- before this version it was not necessary to specify if the extension
- should be used as master or slave (it was inferred by other means).
+ Die Chibi Konfiguration wurde in Brick Viewer 1.0.6 geändert. In vorherigen
+ Versionen war es nicht notwendig anzugeben ob einen Chibi Extension als
+ Master oder Slave arbeiten soll (dies wurde auf anderem Wege ermittelt).
 
- It turns out that this was highly confusing to most, so we recommend that
- you update to the newest Brick Viewer version before you configure your
- Chibi network.
+ Es stellte sich aber heraus, dass dies für die meisten Benutzer sehr verwirrend
+ war. Daher empfehlen wird auf die neuste Brick Viewer Version zu aktualisieren
+ bevor du dein Chibi Netzwerk konfigurierst.
 
-To configure a Chibi Extension you first have to choose a unique
-address and a frequency and channel
+Um eine Chibi Extension zu konfigurieren musst du zuerst eine eindeutige Adresse
+für jede Chibi Extension festlegen sowie eine Frequenz und einen Kanal für das
+gesamte Chibi Netzwerk bestimmen.
 
 .. image:: /Images/Extensions/extension_chibi.jpg
    :scale: 100 %
-   :alt: Configuration of Chibi address, frequency and channel
+   :alt: Konfiguration der Chibi Adresse, Frequenz und Kanal
    :align: center
    :target: ../../_images/Extensions/extension_chibi.jpg
 
-If you want to configure the extension as slave, you have to choose
-"Slave" as type and specify the address of the Chibi master.
+Um eine Chibi Extension als Slave zu konfigurieren musst du zuerst "Slave" als
+Typ auswählen und dann die Adresse des Chibi Masters angeben.
 
 .. image:: /Images/Extensions/extension_chibi_slave.jpg
    :scale: 100 %
-   :alt: Configuration of Chibi in slave mode
+   :alt: Konfiguration einer Chibi Extension für Slave Modus
    :align: center
    :target: ../../_images/Extensions/extension_chibi_slave.jpg
 
-If you want to configure the extension as master, you have to choose
-"Master" as type and specify a list of the slave addresses the master should
-be able to talk to (as a comma separated list).
+Um eine Chibi Extension als Master zu konfigurieren musst du zuerst "Master" als
+Typ auswählen und dann eine Liste (getrennt mit Komma) an Adresse von Chibi
+Slaves angeben, mit denen der Chibi Master kommunizieren soll.
 
 .. image:: /Images/Extensions/extension_chibi_master.jpg
    :scale: 100 %
-   :alt: Configuration of Chibi in master mode
+   :alt: Konfiguration einer Chibi Extension für Master Modus
    :align: center
    :target: ../../_images/Extensions/extension_chibi_master.jpg
 
@@ -179,33 +183,38 @@ be able to talk to (as a comma separated list).
 Chibi Netzwerkmodifikation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you want to change something in your network, e.g. add new Bricks or
-Bricklets, you have to power down the stack you like to change. Change it
-and repower it. If the node was a Chibi slave, you also have to reset the
-Chibi master (it only searches for new Bricks/Bricklets on startup).
-This can be achieved by a power cycle or pressing the reset
-button on the Master Brick.
+Wenn du etwas am Netzwerk verändern willst, z.B. neue Bricks oder Bricklets
+hinzufügen, dann musst du den betreffenden Stapel zuerst von seiner
+Stromversorgung trennen. Nachdem du die Änderungen vorgenommen hast kannst du
+ihn wieder an seine Stromversorgung anschließen. Falls der Stapel ein Chibi
+Slave ist, dann muss auch der dazugehörige Chibi Master neugestartet werden,
+da dieser nur beim Start seine zugehörigen Chibi Slaves sucht und die
+Kommunikation mit ihnen aufnimmt. Den Neustart des Chibi Masters kannst du
+durch drücken seines Reset Knopfes erreichen, bzw. durch ein kurzes Trennen
+seiner USB Verbindung.
 
 
 Chibi Frequenz und Kanal
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Chibi Extension supports several frequencies with different channels
-and different frequencies are allowed in different countries.
+Die Chibi Extension unterstützt verschiedene Frequenzen mit mehrere Kanälen. In
+verschiedenen Teilen der Welt sind jeweils verschiedene Frequenzen und Kanäle
+zur Nutzung freigeben.
 
-Here is a small list of frequencies with corresponding possible channels:
+Hier ist eine Liste von Frequenzen und zugehörigen Kanälen:
 
 .. csv-table::
- :header: "Frequency", "Possible Channels"
+ :header: "Frequenz", "Mögliche Kanäle"
  :widths: 40, 60
 
- "OQPSK 868Mhz (Europe)", "0"
+ "OQPSK 868Mhz (Europa)", "0"
  "OQPSK 915Mhz (US)", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
  "OQPSK 780Mhz (China)", "0, 1, 2, 3"
  "BPSK40 915Mhz", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
 
 .. warning::
- The Chibi Extension is sold as an electronic component. You are building
- a system with this component and it is your responsibility that the
- system you are building abides by your local law. Make sure that you
- are allowed to use the frequency you are configuring!
+ Die Chibi Extension wird als elektronisches Bauteil verkauft. **Du** baust
+ ein System mit diesem Bauteil und es liegt in deiner Verantwortung, dass das
+ gebaute System den gesetzlichen Bestimmungen entspricht. Du musst auch
+ sicherstellen, dass die konfigurierte Frequenz in deinem Land für die
+ Nutzung freigegeben ist!

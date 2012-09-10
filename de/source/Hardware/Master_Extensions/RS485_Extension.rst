@@ -102,25 +102,26 @@ Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit der RS485 Extens
 RS485 Busaufbau
 ---------------
 
-A RS485 bus consists of one master and multiple slaves.
-RS485 master is the Master Brick which has a USB connection to the PC
-running brickd. All the other Master Bricks with RS485 Extension must not have
-a USB connection (they can use a USB Power Supply).
-Each RS485 slave is identified with its own ID. The IDs have
-to be unique on the bus.
+Ein RS485 Bus besteht aus einem Master und mehreren Slaves. Der RS485
+Master ist der Master Brick der per USB an den PC angeschlossen ist auf dem
+der Brick Daemon läuft. Alle anderen Master Bricks mit RS485 Extension dürfen
+keine USB Verbindung haben (sie können allerdings seit Master Brick Firmware
+1.1.3 eine USB Power Supply verwenden). Jede RS485 Extension hat eine eigene
+Adresse. Diese Adressen müssen innerhalb des Buses eindeutig sein.
 
-To create a RS485 bus, stack the RS485 Extension on top of a Master Brick.
-Connect the Master Brick via USB with your PC and start the Brick Viewer
-software. You should see the Master Brick view
-with the identified RS485 Extension (see images below). Configure the extension
-as slave or master (as described :ref:`here <rs485_configuration>`).
+Um einen RS485 Bus aufzubauen muss zuerst die RS485 Extension auf einen
+Master Brick gesteck werden und der Master Brick über USB mit dem PC verbunden
+werden. Im Brick Viewer sollte jetzt ein Master Brick mit erkannter RS485
+Extension angezeigt werden. Die RS485 Extension muss jetzt als Master oder
+Slave konfiguriert werden wie :ref:`hier <rs485_configuration>` beschrieben.
 
-If you have configured all extensions you can build your system. Connect
-Bricks and Bricklets as you like. The Master Brick of each stack has to be the
-lowermost Brick (except if you are using a Power Supply). The RS485 Extension
-can be positioned in the stack as you wish. Wire up the RS485 stacks and set
-the termination switch on the first and last RS485 Extension in the bus to
-"on", as shown below.
+Wenn alle RS485 Extensions konfiguriert sind kann das Gesamtsystem
+zusammengebaut werden. Verbinde die benötigten Bricks und Bricklets zu Stapeln.
+Der Master jedes Stapels muss der unterste Brick sein (außer ganz
+unten steckt eine Stromversorgung). Die RS485 Extension kann an einem beliebigen
+Platz oberhalb des Masters gesteckt werden. Verbinde nun die RS485 Extensions
+und setzen den Termination Schalter der ersten und letzten RS485 Extension am
+Bus auf "on".
 
 .. image:: /Images/Extensions/extension_rs485_assembly.jpg
    :scale: 90 %
@@ -128,9 +129,11 @@ the termination switch on the first and last RS485 Extension in the bus to
    :align: center
    :target: ../../_images/Extensions/extension_rs485_assembly.jpg
 
-You have to power up the slaves before the master, since the RS485 master
-searches for slaves only at startup. You should now be able to see all
-connected stacks in the Brick Viewer.
+Nachdem alles zusammen gesteckt ist kann das System gestartet werden. Dabei
+müssen zuerst alle RS485 Slaves gestartet werden bevor der RS485 Master
+gestartet wird, da der RS485 Master nur direkt nach dem Start nach den Slaves
+sucht. Jetzt sollten alle Bricks und Bricklets des RS485 Buses im Brick Viewer
+angezeigt werden.
 
 
 .. _rs485_configuration:
@@ -154,8 +157,8 @@ to lower the baud rate. If you want to use a stack with RS485 extension in
 your existing Modbus network, you have to match the values with the
 other bus participants.
 
-For slave configuration choose "Slave" as type and set an address for
-the slave (1-255).
+Um eine RS485 Extension als Slave zu konfigurieren musst du zuerst "Slave" als
+Typ auswählen und dann eine Adresse (1-255) ausgewählt werden.
 
 .. image:: /Images/Extensions/extension_rs485_slave.jpg
    :scale: 100 %
@@ -163,8 +166,9 @@ the slave (1-255).
    :align: center
    :target: ../../_images/Extensions/extension_rs485_slave.jpg
 
-For master configuration choose "Master" as type and input the addresses
-of the slaves in the RS485 bus as a comma separated list.
+Um eine RS485 Extension als Master zu konfigurieren musst du zuerst "Master" als
+Typ auswählen und dann eine Liste (getrennt mit Komma) an Adresse von RS485
+Slaves angeben, mit denen der RS485 Master kommunizieren soll.
 
 .. image:: /Images/Extensions/extension_rs485_master.jpg
    :scale: 100 %
@@ -176,10 +180,12 @@ of the slaves in the RS485 bus as a comma separated list.
 RS485 Busmodifikation
 ^^^^^^^^^^^^^^^^^^^^^
 
-If you want to change something in your bus, e.g. add new Bricks or
-Bricklets, you have to power down the stack you would like to change.
-Change it and repower it. If the stack was slave in the RS485 bus, you
-also have to reset the RS485 master (it only searches for new
-Bricks/Bricklets on startup).
-This can be achieved by a power cycle or pressing the reset
-button on the Master Brick.
+Wenn du etwas am Bus verändern willst, z.B. neue Bricks oder Bricklets
+hinzufügen, dann musst du den betreffenden Stapel zuerst von seiner
+Stromversorgung trennen. Nachdem du die Änderungen vorgenommen hast kannst du
+ihn wieder an seine Stromversorgung anschließen. Falls der Stapel ein RS485
+Slave ist, dann muss auch der dazugehörige RS485 Master neugestartet werden,
+da dieser nur beim Start seine zugehörigen RS485 Slaves sucht und die
+Kommunikation mit ihnen aufnimmt. Den Neustart des RS485 Masters kannst du
+durch drücken seines Reset Knopfes erreichen, bzw. durch ein kurzes Trennen
+seiner USB Verbindung.

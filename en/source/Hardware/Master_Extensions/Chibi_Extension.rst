@@ -104,10 +104,10 @@ Chibi Network Assembly
 
 A Chibi network consists of one master and multiple slaves.
 Chibi master is the Master Brick which has a USB connection to the PC
-running brickd. All the other Master Bricks with Chibi Extension must not have
-a USB connection (they can use a USB Power Supply since Master Brick firmware
-1.1.3). Each Chibi Extension is identified with
-its own address. The addresses have to be unique in the transmission range.
+running the Brick Daemon. All the other Master Bricks with Chibi Extension must
+not have a USB connection (they can use a USB Power Supply since Master Brick
+firmware 1.1.3). Each Chibi Extension is identified with its own address.
+The addresses have to be unique in the transmission range.
 
 .. note::
  If you use multiple networks in parallel with identical channel and
@@ -130,6 +130,7 @@ You have to power up the slaves before the master, since the Chibi master
 searches for slaves only at startup.
 You should now be able to see all connected stacks in the Brick Viewer.
 
+
 .. _chibi_configuration:
 
 Chibi Configuration
@@ -144,8 +145,8 @@ Chibi Configuration
  you update to the newest Brick Viewer version before you configure your
  Chibi network.
 
-To configure a Chibi Extension you first have to choose a unique
-address and a frequency and channel
+To configure a Chibi Extension you have to choose a unique
+address and a frequency and channel first.
 
 .. image:: /Images/Extensions/extension_chibi.jpg
    :scale: 100 %
@@ -172,6 +173,7 @@ be able to talk to (as a comma separated list).
    :align: center
    :target: ../../_images/Extensions/extension_chibi_master.jpg
 
+
 Chibi Network Modification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -181,6 +183,7 @@ and repower it. If the node was a Chibi slave, you also have to reset the
 Chibi master (it only searches for new Bricks/Bricklets on startup).
 This can be achieved by a power cycle or pressing the reset
 button on the Master Brick.
+
 
 Chibi Frequency and Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -200,7 +203,7 @@ Here is a small list of frequencies with corresponding possible channels:
  "BPSK40 915Mhz", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
 
 .. warning::
- The Chibi Extension is sold as an electronic component. You are building
+ The Chibi Extension is sold as an electronic component. **You** are building
  a system with this component and it is your responsibility that the
- system you are building abides by your local law. Make sure that you
- are allowed to use the frequency you are configuring!
+ system you are building meets your local statutory regulations. Make sure that
+ you are allowed to use the frequency you are configuring!

@@ -56,7 +56,7 @@ Features
 --------
 
 * Ist Grundlage um Stapel zu bauen
-* Benutzbar mit kabelgebundenen und kabellosen Master Extensions
+* Benutzbar mit kabelgebundenen und drahtlosen Master Extensions
 * Eine USB und **vier** Bricklet Schnittstellen
 
 
