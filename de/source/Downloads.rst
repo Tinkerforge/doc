@@ -3,77 +3,79 @@
 Downloads
 =========
 
-   By downloading any of our software you agree to the following terms::
+Durch das Herunterladen unserer Software stimmst du den folgenden Bedingungen
+zu::
 
-     OUR SOFTWARE IS PROVIDED TO YOU "AS IS". WITHOUT WARRENTY OF ANY KIND, 
-     EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
-     MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
-     WE EXPRESSLY DISCLAIM ANY LIABILITY WHATSOEVER FOR ANY DIRECT, INDIRECT, 
-     CONSEQUENTIAL, INCIDENTAL OR SPECIAL DAMAGES, INCLUDING, WITHOUT 
-     LIMITATION, LOST REVENUES, LOST PROFITS, LOSSES RESULTING FROM BUSINESS 
-     INTERRUPTION OR LOSS OF DATA, REGARDLESS OF THE FORM OF ACTION OR LEGAL 
-     THEORY UNDER WHICH THE LIABILITY MAY BE ASSERTED, EVEN IF ADVISED OF THE 
-     POSSIBILITY OR LIKELIHOOD OF SUCH DAMAGES.
+ OUR SOFTWARE IS PROVIDED TO YOU "AS IS". WITHOUT WARRENTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ WE EXPRESSLY DISCLAIM ANY LIABILITY WHATSOEVER FOR ANY DIRECT, INDIRECT,
+ CONSEQUENTIAL, INCIDENTAL OR SPECIAL DAMAGES, INCLUDING, WITHOUT
+ LIMITATION, LOST REVENUES, LOST PROFITS, LOSSES RESULTING FROM BUSINESS
+ INTERRUPTION OR LOSS OF DATA, REGARDLESS OF THE FORM OF ACTION OR LEGAL
+ THEORY UNDER WHICH THE LIABILITY MAY BE ASSERTED, EVEN IF ADVISED OF THE
+ POSSIBILITY OR LIKELIHOOD OF SUCH DAMAGES.
 
-   This page only contains compiled programs and firmwares. The source code
-   for all of these programs and firmwares can be found :ref:`here <source_code>`.
-   
-.. terms from arduino.cc, and berkely-based copyrights
+..
+  terms from arduino.cc, and berkely-based copyrights
 
-   
+Auf dieser Seite werden kompilierte Programme und Firmwares bereitgestellt.
+Die Quelltexte für all diesen Programme und Firmwares stehen
+:ref:`hier <source_code>` zum Download bereit.
+
+
 .. _downloads_tools:
 
 Tools
 -----
 
 .. csv-table::
- :header: "Tool", "Download", "Description"
+ :header: "Tool", "Download", "Beschreibung"
  :delim: |
  :widths: 20, 30, 60
 
- **Brick Daemon** | `deb <http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest.deb>`__, rpm*, `dmg <http://download.tinkerforge.com/tools/brickd/macos/brickd_macos_latest.dmg>`__, `exe <http://download.tinkerforge.com/tools/brickd/windows/brickd_windows_latest.exe>`__, `src <https://github.com/Tinkerforge/brickd>`__ | For Linux (.deb based, .rpm based), Mac OS, Windows and Source Code. [:ref:`Installation Instructions <brickd>`]
- **Brick Viewer** | `deb <http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb>`__, rpm*, `dmg <http://download.tinkerforge.com/tools/brickv/macos/brickv_macos_latest.dmg>`__, `exe <http://download.tinkerforge.com/tools/brickv/windows/brickv_windows_latest.exe>`__, `src <https://github.com/Tinkerforge/brickv>`__ | For Linux (.deb based, .rpm based), Mac OS, Windows and Source Code. [:ref:`Installation Instructions <brickv>`]
+ **Brick Daemon** | `deb <http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest.deb>`__, rpm*, `dmg <http://download.tinkerforge.com/tools/brickd/macos/brickd_macos_latest.dmg>`__, `exe <http://download.tinkerforge.com/tools/brickd/windows/brickd_windows_latest.exe>`__, `src <https://github.com/Tinkerforge/brickd>`__ | Für Linux (.deb basiert, .rpm basiert), Mac OS, Windows und Quelltext. [:ref:`Installationsanleitung <brickd>`]
+ **Brick Viewer** | `deb <http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb>`__, rpm*, `dmg <http://download.tinkerforge.com/tools/brickv/macos/brickv_macos_latest.dmg>`__, `exe <http://download.tinkerforge.com/tools/brickv/windows/brickv_windows_latest.exe>`__, `src <https://github.com/Tinkerforge/brickv>`__ | Für Linux (.deb basiert, .rpm basiert), Mac OS, Windows und Quelltext. [:ref:`Installationsanleitung <brickv>`]
 
-You will need the Brick Daemon if you want to use any Bricks and Bricklets.
-The Brick Viewer is for testing purposes and flashing new firmwares and plugins
-onto Bricks and Bricklets.
+\* demnächst verfügbar
 
-If you use a Linux distribution that does not use .debs or .rpms, you can
-install the Brick Viewer and the Brick Daemon from source.
+Der Brick Daemon wird benötigt für jegliche USB-gebundene Verwendung von Bricks
+und Bricklets. Der Brick Viewer dient dem Testen und Flashen neuer Firmwares
+und Plugins auf Bricks und Bricklets.
 
-\*: Coming soon
+Für Linux Distributionen die weder ``.deb`` noch ``.rpm`` verwenden, können der
+Brick Daemon und Brick Viewer auch basierend auf dem Quelltext installiert
+werden.
 
-For older Versions click `here <http://download.tinkerforge.com/tools/>`__.
+Ältere Versionen sind `hier <http://download.tinkerforge.com/tools/>`__
+verfügbar.
+
 
 .. _downloads_bindings_examples:
 
-Bindings and Examples
----------------------
+Bindings und Beispiele
+----------------------
 
 .. include:: Downloads_bindings.table
 
-The zip for each language contains all bindings and all available examples for
-the language. A tutorial on how to use the bindings can be found :ref:`here <api_bindings>`.
+Das ZIP für die jeweilige Programmiersprache beinhaltet Bindings für alle Bricks
+und Bricklets sowie alle verfügbaren Beispiele. Ein Tutorial wie die Bindings zu
+benutzen sind ist :ref:`hier <api_bindings>` zu finden.
 
-For older Versions click `here <http://download.tinkerforge.com/bindings/>`__.
-
+Ältere Versionen sind `hier <http://download.tinkerforge.com/bindings/>`__
+verfügbar.
 
 
 .. _downloads_firmwares_plugins:
 
-Brick Firmwares and Bricklet Plugins
+Brick Firmwares und Bricklet Plugins
 ------------------------------------
 
-.. csv-table::
- :header: "", "Firmwares and Plugins"
- :delim: |
- :widths: 10, 60
+.. include:: Downloads_firmwares.table
 
- **Bricks** | `DC <http://download.tinkerforge.com/firmwares/bricks/dc/brick_dc_firmware_latest.bin>`__, `IMU <http://download.tinkerforge.com/firmwares/bricks/imu/brick_imu_firmware_latest.bin>`__, `Master <http://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin>`__, `Servo <http://download.tinkerforge.com/firmwares/bricks/servo/brick_servo_firmware_latest.bin>`__, `Stepper <http://download.tinkerforge.com/firmwares/bricks/stepper/brick_stepper_firmware_latest.bin>`__
- **Bricklets** | `Ambient Light <http://download.tinkerforge.com/firmwares/bricklets/ambient_light/bricklet_ambient_light_firmware_latest.bin>`__, `Analog In <http://download.tinkerforge.com/firmwares/bricklets/analog_in/bricklet_analog_in_firmware_latest.bin>`__, `Analog Out <http://download.tinkerforge.com/firmwares/bricklets/analog_out/bricklet_analog_out_firmware_latest.bin>`__, `Current12 <http://download.tinkerforge.com/firmwares/bricklets/current12/bricklet_current12_firmware_latest.bin>`__, `Current25 <http://download.tinkerforge.com/firmwares/bricklets/current25/bricklet_current25_firmware_latest.bin>`__, `Distance IR <http://download.tinkerforge.com/firmwares/bricklets/distance_ir/bricklet_distance_ir_firmware_latest.bin>`__, `Dual Relay <http://download.tinkerforge.com/firmwares/bricklets/dual_relay/bricklet_dual_relay_firmware_latest.bin>`__, `Humidity <http://download.tinkerforge.com/firmwares/bricklets/humidity/bricklet_humidity_firmware_latest.bin>`__, `IO-16 <http://download.tinkerforge.com/firmwares/bricklets/io16/bricklet_io16_firmware_latest.bin>`__, `IO-4 <http://download.tinkerforge.com/firmwares/bricklets/io4/bricklet_io4_firmware_latest.bin>`__, `Joystick <http://download.tinkerforge.com/firmwares/bricklets/joystick/bricklet_joystick_firmware_latest.bin>`__, `LCD 16x2 <http://download.tinkerforge.com/firmwares/bricklets/lcd_16x2/bricklet_lcd_16x2_firmware_latest.bin>`__, `LCD 20x4 <http://download.tinkerforge.com/firmwares/bricklets/lcd_20x4/bricklet_lcd_20x4_firmware_latest.bin>`__, `Linear Poti <http://download.tinkerforge.com/firmwares/bricklets/linear_poti/bricklet_linear_poti_firmware_latest.bin>`__, `Piezo Buzzer <http://download.tinkerforge.com/firmwares/bricklets/piezo_buzzer/bricklet_piezo_buzzer_firmware_latest.bin>`__, `Rotary Poti <http://download.tinkerforge.com/firmwares/bricklets/rotary_poti/bricklet_rotary_poti_firmware_latest.bin>`__, `Temperature <http://download.tinkerforge.com/firmwares/bricklets/temperature/bricklet_temperature_firmware_latest.bin>`__, `Temperature IR <http://download.tinkerforge.com/firmwares/bricklets/temperature_ir/bricklet_temperature_ir_firmware_latest.bin>`__, `Voltage <http://download.tinkerforge.com/firmwares/bricklets/voltage/bricklet_voltage_firmware_latest.bin>`__
+Brick Firmwares und Bricklet Plugins können mit dem Brick Viewer aktualisiert
+werden (siehe :ref:`Tutorial für Bricks <flash_firmware_on_brick>` und
+:ref:`Tutorial für Bricklets <brickv_flash_plugin>`).
 
-Brick firmwares and Bricklet plugins can be flashed onto Bricks and 
-Bricklets with the Brick Viewer (see :ref:`tutorial bricks <flash_firmware_on_brick>`, 
-:ref:`tutorial bricklets <brickv_flash_plugin>`). 
-
-For older Versions click `here <http://download.tinkerforge.com/firmwares/>`__.
+Ältere Versionen sind `hier <http://download.tinkerforge.com/firmwares/>`__
+verfügbar.

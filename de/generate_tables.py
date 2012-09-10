@@ -92,7 +92,7 @@ def make_product_overview_table(devices, category, name_width, description_width
 
     return table_head + '\n'.join(rows)
 
-def make_downloads_table():
+def make_download_bindings_table():
     table_head = """.. csv-table::
  :header: "", "Bindings und Beispiele"
  :delim: |
@@ -107,6 +107,29 @@ def make_downloads_table():
             rows.append(row_cell.format(binding[0], binding[1]))
 
     return table_head + ', '.join(rows)
+
+def make_download_firmwares_table():
+    table_head = """.. csv-table::
+ :header: "", "Firmwares und Plugins"
+ :delim: |
+ :widths: 10, 60
+
+ **Bricks** | {0}
+ **Bricklets** | {1}"""
+    brick_row_cell = '`{0} <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_latest.bin>`__'
+    bricklet_row_cell = '`{0} <http://download.tinkerforge.com/firmwares/bricklets/{1}/bricklet_{1}_firmware_latest.bin>`__'
+    brick_rows = []
+    bricklet_rows = []
+
+    for brick in bricks:
+        if len(brick[2]) > 0:
+            brick_rows.append(brick_row_cell.format(brick[0], brick[1]))
+
+    for bricklet in bricklets:
+        if len(bricklet[2]) > 0:
+            bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1]))
+
+    return table_head.format(', '.join(brick_rows), ', '.join(bricklet_rows))
 
 def make_api_bindings_table():
     row = '* :ref:`{0} <ipcon_{1}>`'
@@ -151,7 +174,10 @@ def generate(path):
     file(os.path.join(path, 'source', 'Product_Overview_bricklets.table'), 'wb').write(make_product_overview_table(bricklets, 'bricklet', 20, 70))
 
     print 'Generating Downloads_bindings.table'
-    file(os.path.join(path, 'source', 'Downloads_bindings.table'), 'wb').write(make_downloads_table())
+    file(os.path.join(path, 'source', 'Downloads_bindings.table'), 'wb').write(make_download_bindings_table())
+
+    print 'Generating Downloads_firmwares.table'
+    file(os.path.join(path, 'source', 'Downloads_firmwares.table'), 'wb').write(make_download_firmwares_table())
 
     print 'Generating API_Bindings_bindings.table'
     file(os.path.join(path, 'source', 'Software', 'API_Bindings_bindings.table'), 'wb').write(make_api_bindings_table())
