@@ -155,6 +155,54 @@ def make_api_bindings_table():
 
     return '\n'.join(rows)
 
+def make_source_code_gits_table():
+    table_head = """.. csv-table::
+ :header: "", "Repository", "Bug Tracking"
+ :delim: |
+ :widths: 10, 30, 10
+
+ **Tools** | |
+ Brick Daemon | `git://github.com/Tinkerforge/brickd.git <https://github.com/Tinkerforge/brickd/>`__ | `Problem melden <https://github.com/Tinkerforge/brickd/issues>`__
+ Brick Viewer | `git://github.com/Tinkerforge/brickv.git <https://github.com/Tinkerforge/brickv/>`__ | `Problem melden <https://github.com/Tinkerforge/brickv/issues>`__
+ Brick Bootloader | `git://github.com/Tinkerforge/brickboot.git <https://github.com/Tinkerforge/brickboot/>`__ | `Problem melden <https://github.com/Tinkerforge/brickboot/issues>`__
+ Brick Library | `git://github.com/Tinkerforge/bricklib.git <https://github.com/Tinkerforge/bricklib/>`__ | `Problem melden <https://github.com/Tinkerforge/bricklib/issues>`__
+ Bricklet Library | `git://github.com/Tinkerforge/brickletlib.git <https://github.com/Tinkerforge/brickletlib/>`__ | `Problem melden <https://github.com/Tinkerforge/brickletlib/issues>`__
+ API Generator | `git://github.com/Tinkerforge/generators.git <https://github.com/Tinkerforge/generators/>`__ | `Problem melden <https://github.com/Tinkerforge/generators/issues>`__
+ Kicad Libraries | `git://github.com/Tinkerforge/kicad-libraries.git <https://github.com/Tinkerforge/kicad-libraries/>`__ | `Problem melden <https://github.com/Tinkerforge/kicad-libraries/issues>`__
+ | |
+ **Bricks** | |
+{0}
+ | |
+ **Bricklets** | |
+{1}
+ | |
+ **Master Extensions** | |
+{2}
+ | |
+ **Stromversorgungen** | |
+ Step-Down Power Supply | `git://github.com/Tinkerforge/step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Problem melden <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
+ | |
+ **Zubehör** | |
+ DC Jack Adapter | `git://github.com/Tinkerforge/dc-adapter.git <https://github.com/Tinkerforge/dc-adapter/>`__ | `Problem melden <https://github.com/Tinkerforge/dc-adapter/issues>`__
+ """
+    brick_row_cell = ' {0} | `git://github.com/Tinkerforge/{1}-brick.git <https://github.com/Tinkerforge/{1}-brick/>`__ | `Problem melden <https://github.com/Tinkerforge/{1}-brick/issues>`__'
+    bricklet_row_cell = ' {0} | `git://github.com/Tinkerforge/{1}-bricklet.git <https://github.com/Tinkerforge/{1}-bricklet/>`__ | `Problem melden <https://github.com/Tinkerforge/{1}-bricklet/issues>`__'
+    extension_row_cell = ' {0} | `git://github.com/Tinkerforge/{1}-extension.git <https://github.com/Tinkerforge/{1}-extension/>`__ | `Problem melden <https://github.com/Tinkerforge/{1}-extension/issues>`__'
+    brick_rows = []
+    bricklet_rows = []
+    extension_rows = []
+
+    for brick in bricks:
+        brick_rows.append(brick_row_cell.format(brick[0], brick[1].replace('_', '-')))
+
+    for bricklet in bricklets:
+        bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1].replace('_', '-')))
+
+    for extension in extensions:
+        extension_rows.append(extension_row_cell.format(extension[0], extension[1].replace('_', '-')))
+
+    return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows))
+
 def make_hlpi_table(device, category):
     table_head = """
 .. csv-table::
@@ -201,6 +249,9 @@ def generate(path):
 
     print 'Generating API_Bindings_bindings.table'
     file(os.path.join(path, 'source', 'Software', 'API_Bindings_bindings.table'), 'wb').write(make_api_bindings_table())
+
+    print 'Generating Source_Code_gits.table'
+    file(os.path.join(path, 'source', 'Source_Code_gits.table'), 'wb').write(make_source_code_gits_table())
 
     for brick in bricks:
         if len(brick[2]) == 0:

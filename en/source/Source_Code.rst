@@ -20,64 +20,13 @@ on Github.
 If you don't know git, you can find information `here <http://git-scm.com/>`__.
 Our projects can be cloned with::
  
- $ git clone git://github.com/Tinkerforge/PROJECT.git
+ git clone git://github.com/Tinkerforge/PROJECT.git
 
 Below is a list of the Tinkerforge project repositories and corresponding 
 bug tracker.
 
-.. csv-table::
- :header: "", "Repository", "Bug Tracking"
- :delim: |
- :widths: 10, 30, 10
+.. include:: Source_Code_gits.table
 
- **Tools** | |
- Brick Daemon | `git://github.com/Tinkerforge/brickd.git <https://github.com/Tinkerforge/brickd/>`__ | `Report Bug <https://github.com/Tinkerforge/brickd/issues>`__ 
- Brick Viewer | `git://github.com/Tinkerforge/brickv.git <https://github.com/Tinkerforge/brickv/>`__ | `Report Bug <https://github.com/Tinkerforge/brickv/issues>`__
- Brick Bootloader | `git://github.com/Tinkerforge/brickboot.git <https://github.com/Tinkerforge/brickboot/>`__ | `Report Bug <https://github.com/Tinkerforge/brickboot/issues>`__
- Brick Library | `git://github.com/Tinkerforge/bricklib.git <https://github.com/Tinkerforge/bricklib/>`__ | `Report Bug <https://github.com/Tinkerforge/bricklib/issues>`__
- Bricklet Library | `git://github.com/Tinkerforge/brickletlib.git <https://github.com/Tinkerforge/brickletlib/>`__ | `Report Bug <https://github.com/Tinkerforge/brickletlib/issues>`__
- API Generator | `git://github.com/Tinkerforge/generators.git <https://github.com/Tinkerforge/generators/>`__ | `Report Bug <https://github.com/Tinkerforge/generators/issues>`__
- Kicad Libraries | `git://github.com/Tinkerforge/kicad-libraries.git <https://github.com/Tinkerforge/kicad-libraries/>`__ | `Report Bug <https://github.com/Tinkerforge/kicad-libraries/issues>`__
- | |
- **Bricks** | |
- DC | `git://github.com/Tinkerforge/dc-brick.git <https://github.com/Tinkerforge/dc-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/dc-brick/issues>`__
- Debug | `git://github.com/Tinkerforge/debug-brick.git <https://github.com/Tinkerforge/debug-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/debug-brick/issues>`__
- IMU | `git://github.com/Tinkerforge/imu-brick.git <https://github.com/Tinkerforge/imu-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/imu-brick/issues>`__
- Master | `git://github.com/Tinkerforge/master-brick.git <https://github.com/Tinkerforge/master-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/master-brick/issues>`__
- Servo | `git://github.com/Tinkerforge/servo-brick.git <https://github.com/Tinkerforge/servo-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/servo-brick/issues>`__
- Stepper | `git://github.com/Tinkerforge/stepper-brick.git <https://github.com/Tinkerforge/stepper-brick/>`__ | `Report Bug <https://github.com/Tinkerforge/stepper-brick/issues>`__ 
- | |
- **Bricklets** | |
- Ambient Light | `git://github.com/Tinkerforge/ambient-light-bricklet.git <https://github.com/Tinkerforge/ambient-light-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/ambient-light-bricklet/issues>`__
- Analog In | `git://github.com/Tinkerforge/analog-in-bricklet.git <https://github.com/Tinkerforge/analog-in-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/analog-in-bricklet/issues>`__
- Analog Out | `git://github.com/Tinkerforge/analog-out-bricklet.git <https://github.com/Tinkerforge/analog-out-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/analog-out-bricklet/issues>`__
- Breakout | `git://github.com/Tinkerforge/breakout-bricklet.git <https://github.com/Tinkerforge/breakout-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/breakout-bricklet/issues>`__
- Current12 | `git://github.com/Tinkerforge/current12-bricklet.git <https://github.com/Tinkerforge/current12-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/current12-bricklet/issues>`__
- Current25 | `git://github.com/Tinkerforge/current25-bricklet.git <https://github.com/Tinkerforge/current25-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/current25-bricklet/issues>`__
- Distance IR | `git://github.com/Tinkerforge/distance-ir-bricklet.git <https://github.com/Tinkerforge/distance-ir-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/distance-ir-bricklet/issues>`__
- Dual Relay | `git://github.com/Tinkerforge/dual-relay-bricklet.git <https://github.com/Tinkerforge/dual-relay-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/dual-relay-bricklet/issues>`__
- Humidity | `git://github.com/Tinkerforge/humidity-bricklet.git <https://github.com/Tinkerforge/humidity-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/humidity-bricklet/issues>`__
- IO-16 | `git://github.com/Tinkerforge/io16-bricklet.git <https://github.com/Tinkerforge/io16-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/io16-bricklet/issues>`__
- IO-4 | `git://github.com/Tinkerforge/io4-bricklet.git <https://github.com/Tinkerforge/io4-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/io4-bricklet/issues>`__
- Joystick | `git://github.com/Tinkerforge/joystick-bricklet.git <https://github.com/Tinkerforge/joystick-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/joystick-bricklet/issues>`__
- LCD 16x2 | `git://github.com/Tinkerforge/lcd-16x2-bricklet.git <https://github.com/Tinkerforge/lcd-16x2-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/lcd-16x2-bricklet/issues>`__
- LCD 20x4 | `git://github.com/Tinkerforge/lcd-20x4-bricklet.git <https://github.com/Tinkerforge/lcd-20x4-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/lcd-20x4-bricklet/issues>`__
- Linear Poti | `git://github.com/Tinkerforge/linear-poti-bricklet.git <https://github.com/Tinkerforge/linear-poti-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/linear-poti-bricklet/issues>`__
- Piezo Buzzer | `git://github.com/Tinkerforge/piezo-buzzer-bricklet.git <https://github.com/Tinkerforge/piezo-buzzer-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/piezo-buzzer-bricklet/issues>`__
- Rotary Poti | `git://github.com/Tinkerforge/rotary-poti-bricklet.git <https://github.com/Tinkerforge/rotary-poti-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/rotary-poti-bricklet/issues>`__
- Temperature | `git://github.com/Tinkerforge/temperature-bricklet.git <https://github.com/Tinkerforge/temperature-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/temperature-bricklet/issues>`__
- Temperature IR | `git://github.com/Tinkerforge/temperature-ir-bricklet.git <https://github.com/Tinkerforge/temperature-ir-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/temperature-ir-bricklet/issues>`__
- Voltage | `git://github.com/Tinkerforge/voltage-bricklet.git <https://github.com/Tinkerforge/voltage-bricklet/>`__ | `Report Bug <https://github.com/Tinkerforge/voltage-bricklet/issues>`__
- | |
- **Master Extensions** | |
- Chibi Extension | `git://github.com/Tinkerforge/chibi-extension.git <https://github.com/Tinkerforge/chibi-extension/>`__ | `Report Bug <https://github.com/Tinkerforge/chibi-extension/issues>`__
- RS485 Extension | `git://github.com/Tinkerforge/rs485-extension.git <https://github.com/Tinkerforge/rs485-extension/>`__ | `Report Bug <https://github.com/Tinkerforge/rs485-extension/issues>`__
- | |
- **Power Supplies** | |
- Step-Down Power Supply | `git://github.com/Tinkerforge/step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Report Bug <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
- | |
- **Accessories** | |
- DC Jack Adapter | `git://github.com/Tinkerforge/dc-adapter.git <https://github.com/Tinkerforge/dc-adapter/>`__ | `Report Bug <https://github.com/Tinkerforge/dc-adapter/issues>`__
 
 Where and How do I report Bugs?
 -------------------------------
