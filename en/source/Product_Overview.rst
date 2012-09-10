@@ -118,12 +118,7 @@ boards independently connected to the PC over USB. Later you can stack these
 boards together to stacks, add Master Bricks and cable based or wireless
 Extensions and you can run the previously written code without any changes.
 
-.. csv-table::
-   :header: "Name", "Description"
-   :widths: 20, 70
-
-   ":ref:`chibi_extension`", "Wireless Chibi Master Extension"
-   ":ref:`rs485_extension`", "Cable based RS485 Master Extension"
+.. include:: Product_Overview_extensions.table
 
 
 .. _product_overview_bricklets:

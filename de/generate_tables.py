@@ -44,6 +44,10 @@ bricklets = [('Ambient Light',  'ambient_light',  bindings, 'Misst Umgebungslich
              ('Temperature IR', 'temperature_ir', bindings, 'Kontaktlose Objekttemperaturmessung von -70°C bis 380°C'),
              ('Voltage',        'voltage',        bindings, 'Misst Spannungen bis zu 50V')]
 
+              # display,            uri,      bindings,  description
+extensions = [('Chibi Extension',   'chibi',  [],        'Drahtlose Chibi Master Extension'),
+              ('RS485 Extension',   'rs485',  [],        'Kabelgebundene RS485 Master Extension')]
+
 def make_index_table(devices, category):
     table_head = """
 .. container:: indextable
@@ -67,8 +71,9 @@ def make_index_table(devices, category):
 
     return table_head + '\n'.join(rows)
 
-def make_product_overview_table(devices, category, name_width, description_width):
-    table_head = """
+def make_product_overview_table(devices, category, name_width, description_width, has_bindings):
+    if has_bindings:
+        table_head = """
 .. csv-table::
    :header: "Name", "Beschreibung", {0}
    :widths: {1}, {2}, {3}
@@ -77,7 +82,16 @@ def make_product_overview_table(devices, category, name_width, description_width
            name_width,
            description_width,
            ', '.join(['5'] * len(bindings)))
-    row_head = '   ":ref:`{0} <{1}_' + category + '>`", "{2}", '
+        row_head = '   ":ref:`{0} <{1}_' + category + '>`", "{2}", '
+    else:
+        table_head = """
+.. csv-table::
+   :header: "Name", "Beschreibung"
+   :widths: {0}, {1}
+
+""".format(name_width, description_width)
+        row_head = '   ":ref:`{0} <{1}_' + category + '>`", "{2}"'
+
     row_cell = '":ref:`{0} <{1}_' + category + '_{2}>`"'
     rows = []
 
@@ -167,11 +181,17 @@ def generate(path):
     print 'Generating index_bricklets.table'
     file(os.path.join(path, 'source', 'index_bricklets.table'), 'wb').write(make_index_table(bricklets, 'bricklet'))
 
+    print 'Generating index_extensions.table'
+    file(os.path.join(path, 'source', 'index_extensions.table'), 'wb').write(make_index_table(extensions, 'extension'))
+
     print 'Generating Product_Overview_bricks.table'
-    file(os.path.join(path, 'source', 'Product_Overview_bricks.table'), 'wb').write(make_product_overview_table(bricks, 'brick', 15, 40))
+    file(os.path.join(path, 'source', 'Product_Overview_bricks.table'), 'wb').write(make_product_overview_table(bricks, 'brick', 15, 40, True))
 
     print 'Generating Product_Overview_bricklets.table'
-    file(os.path.join(path, 'source', 'Product_Overview_bricklets.table'), 'wb').write(make_product_overview_table(bricklets, 'bricklet', 20, 70))
+    file(os.path.join(path, 'source', 'Product_Overview_bricklets.table'), 'wb').write(make_product_overview_table(bricklets, 'bricklet', 20, 70, True))
+
+    print 'Generating Product_Overview_extensions.table'
+    file(os.path.join(path, 'source', 'Product_Overview_extensions.table'), 'wb').write(make_product_overview_table(extensions, 'extension', 20, 70, False))
 
     print 'Generating Downloads_bindings.table'
     file(os.path.join(path, 'source', 'Downloads_bindings.table'), 'wb').write(make_download_bindings_table())

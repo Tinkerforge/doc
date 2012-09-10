@@ -76,10 +76,12 @@ Master Extensions
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :glob:
 
-   Hardware/Master_Extensions/Chibi_Extension
-   Hardware/Master_Extensions/RS485_Extension
+   Hardware/Master_Extensions/*
+
+.. include:: index_extensions.table
 
 
 *****************
