@@ -137,14 +137,17 @@ Teste dein Dual Relay Bricklet
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
 aussehen.
 
-Durch klicken der beiden Knöpfe werden die Relais umgeschaltet die
-ist durch ein Klickgeräusch hörbar und durch LEDs neben den Relais auch sichtbar.
-
 .. image:: /Images/Bricklets/bricklet_dual_relay_brickv.jpg
    :scale: 100 %
    :alt: Dual Relay Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_dual_relay_brickv.jpg
+
+..
+  FIXME: update screenshot and description for monoflop
+
+Durch klicken der beiden Knöpfe werden die Relais umgeschaltet die
+ist durch ein Klickgeräusch hörbar und durch LEDs neben den Relais auch sichtbar.
 
 |test_pi_ref|
 

@@ -131,6 +131,9 @@ depicted below.
    :align: center
    :target: ../../_images/Bricklets/bricklet_io4_brickv.jpg
 
+..
+  FIXME: update screenshot and description for monoflop
+
 In this tab you can change the "Debounce Period",
 it is the debounce time for interrupt callbacks.
 For example: If you set this value to 100, you will get interrupts

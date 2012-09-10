@@ -139,15 +139,18 @@ Test your Dual Relay Bricklet
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
-Play around with the two relay buttons,
-you should hear the relay switching when toggling the buttons. An LED indicates
-the current state of each relay.
-
 .. image:: /Images/Bricklets/bricklet_dual_relay_brickv.jpg
    :scale: 100 %
    :alt: Dual Relay Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_dual_relay_brickv.jpg
+
+..
+  FIXME: update screenshot and description for monoflop
+
+Play around with the two relay buttons,
+you should hear the relay switching when toggling the buttons. An LED indicates
+the current state of each relay.
 
 |test_pi_ref|
 

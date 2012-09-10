@@ -167,6 +167,10 @@ like below.
    :align: center
    :target: ../../_images/Bricks/stepper_brickv.jpg
 
+..
+  FIXME: update image, to remove decay slider also put the warning about
+         sync rect from the api docs here
+
 In the left part of the GUI you can enable the driver and control
 the velocity, acceleration, deceleration and the decay mode
 (see :ref:`stepper_brick_decay_mode`) of the stepper. Below

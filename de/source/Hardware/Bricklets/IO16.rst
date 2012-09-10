@@ -136,6 +136,9 @@ mit GND verbinden kann (siehe folgendes Bild).
    :align: center
    :target: ../../_images/Bricklets/bricklet_io16_brickv.jpg
 
+..
+  FIXME: update screenshot and description for monoflop
+
 Hier kann die "Debounce Period" eingestellt werden, dies ist die Entprellperiode
 die Interrupt Callbacks. Ein Beispiel: Wenn die Debounce Period auf 100 gestellt
 wird, werden Interrupts maximal alle 100ms ausgelöst. Dies ist notwendig wenn
