@@ -90,9 +90,12 @@ Stromversorgungen
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :glob:
 
    Hardware/Power_Supplies/*
+
+.. include:: index_power_supplies.table
 
 
 *******

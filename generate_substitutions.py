@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
+
+lang = 'en'
 
           # display,   uri
 bricks = [('DC',      'dc'),
@@ -33,70 +36,146 @@ bricklets = [('Ambient Light',  'ambient_light'),
              ('Temperature IR', 'temperature_ir'),
              ('Voltage',        'voltage')]
 
-def make_brick_substitutions(brick):
-    test_intro = """.. |test_intro| replace::
+brick_test_intro = {
+'en':
+""".. |test_intro| replace::
+ To test the {0} Brick you need to have the
+ :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+ (for installation guides click :ref:`here <brickd_installation>`
+ and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+ to the Brick Daemon.
+""",
+'de':
+""".. |test_intro| replace::
  Um den {0} Brick testen zu können müssen der
  :ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
  sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
  und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
  dem Brick Daemon verbunden sein.
-"""
 
-    test_tab = """.. |test_tab| replace::
+"""
+}
+
+brick_test_tab = {
+'en':
+""".. |test_tab| replace::
+ Now connect the Brick to the PC over USB, you should see a new tab named
+ "{0} Brick" in the Brick Viewer after a moment. Select this tab.
+""",
+'de':
+""".. |test_tab| replace::
  Schließe jetzt den Brick per USB an den PC an. Einen Moment später im Brick
  Viewer ein neuer Tab namens "{0} Brick" auftauchen. Wähle diesen Tab aus.
 """
+}
 
-    test_pi_ref = """.. |test_pi_ref| replace::
+brick_test_pi_ref = {
+'en':
+""".. |test_pi_ref| replace::
+ After this test you can go on with writing your own application.
+ See the :ref:`Programming Interface <{0}_brick_programming_interfaces>`
+ section for the API of the {1} Brick and examples in different programming
+ languages.
+""",
+'de':
+""".. |test_pi_ref| replace::
  Nun kannst du dein eigenes Programm schreiben. Der Abschnitt
  :ref:`Programmierschnittstellen <{0}_brick_programming_interfaces>` listet die
  API des {1} Bricks und Beispiele in verschiedenen Programmiersprachen auf.
 """
+}
 
-    substitutions = ''
-    substitutions += test_intro.format(brick[0]) + '\n'
-    substitutions += test_tab.format(brick[0]) + '\n'
-    substitutions += test_pi_ref.format(brick[1], brick[0])
-
-    return substitutions
-
-def make_bricklet_substitutions(bricklet):
-    test_intro = """.. |test_intro| replace::
+bricklet_test_intro = {
+'en':
+""".. |test_intro| replace::
+ To test the {0} Bricklet you need to have the
+ :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
+ (for installation guides click :ref:`here <brickd_installation>`
+ and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
+ to the Brick Daemon.
+""",
+'de':
+""".. |test_intro| replace::
  Um das {0} Bricklet testen zu können müssen der
  :ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
  sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
  und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
  dem Brick Daemon verbunden sein.
 """
+}
 
-    test_connect = """.. |test_connect| replace::
+bricklet_test_connect = {
+'en':
+""".. |test_connect| replace::
+ Connect the {0} Bricklet to a :ref:`Brick <product_overview_bricks>`
+ with the supplied cable
+""",
+'de':
+""".. |test_connect| replace::
  Als nächstes muss das {0} Bricklet über das mitgelieferte Kabel mit
  einem :ref:`Brick <product_overview_bricks>` verbunden werden
 """
+}
 
-    test_tab = """.. |test_tab| replace::
+bricklet_test_tab = {
+'en':
+""".. |test_tab| replace::
+ If you connect the Brick to the PC over USB, you should see a new tab named
+ "{0} Bricklet" in the Brick Viewer after a moment. Select this tab.
+""",
+'de':
+""".. |test_tab| replace::
  Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
  im Brick Viewer ein neuer Tab namens "{0} Bricklet" auftauchen.
  Wähle diesen Tab aus.
 """
+}
 
-    test_pi_ref = """.. |test_pi_ref| replace::
+bricklet_test_pi_ref = {
+'en':
+""".. |test_pi_ref| replace::
+ After this test you can go on with writing your own application.
+ See the :ref:`Programming Interface <{0}_bricklet_programming_interfaces>`
+ section for the API of the {1} Bricklet and examples in different programming
+ languages.
+""",
+'de':
+""".. |test_pi_ref| replace::
  Nun kannst du dein eigenes Programm schreiben. Der Abschnitt
- :ref:`Programmierschnittstellen <{0}_bricklet_programming_interfaces>` listet die
- API des {1} Bricklets und Beispiele in verschiedenen
+ :ref:`Programmierschnittstellen <{0}_bricklet_programming_interfaces>` listet
+ die API des {1} Bricklets und Beispiele in verschiedenen
  Programmiersprachen auf.
 """
+}
 
+def make_brick_substitutions(brick):
     substitutions = ''
+    substitutions += brick_test_intro[lang].format(brick[0]) + '\n'
+    substitutions += brick_test_tab[lang].format(brick[0]) + '\n'
+    substitutions += brick_test_pi_ref[lang].format(brick[1], brick[0])
 
-    substitutions += test_intro.format(bricklet[0]) + '\n'
-    substitutions += test_connect.format(bricklet[0]) + '\n'
-    substitutions += test_tab.format(bricklet[0]) + '\n'
-    substitutions += test_pi_ref.format(bricklet[1], bricklet[0])
+    return substitutions
+
+def make_bricklet_substitutions(bricklet):
+    substitutions = ''
+    substitutions += bricklet_test_intro[lang].format(bricklet[0]) + '\n'
+    substitutions += bricklet_test_connect[lang].format(bricklet[0]) + '\n'
+    substitutions += bricklet_test_tab[lang].format(bricklet[0]) + '\n'
+    substitutions += bricklet_test_pi_ref[lang].format(bricklet[1], bricklet[0])
 
     return substitutions
 
 def generate(path):
+    global lang
+
+    if path.endswith('/en'):
+        lang = 'en'
+    elif path.endswith('/de'):
+        lang = 'de'
+    else:
+        print 'Wrong working directory'
+        sys.exit(1)
+
     for brick in bricks:
         name = brick[0].replace(' ', '_').replace('-', '')
 

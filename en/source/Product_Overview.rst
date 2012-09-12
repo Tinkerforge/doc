@@ -216,8 +216,4 @@ for driver Bricks (e.g. :ref:`DC Brick <dc_brick>`). Power Supplies
 have the same size as :ref:`Bricks <product_overview_bricks>` and are
 stacked in at the bottom of the stack.
 
-.. csv-table::
-   :header: "Name", "Description"
-   :widths: 30, 60
-
-   ":ref:`step_down_power_supply`", "Powers a stack with 6-27V input"
+.. include:: Product_Overview_power_supplies.table
