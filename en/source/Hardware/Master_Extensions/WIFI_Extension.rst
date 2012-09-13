@@ -41,9 +41,10 @@ Features
 Description
 -----------
 
-With this WIFI Extension you can control :ref:`Bricks <brick>` and :ref:`Bricklets <bricklet>` wirelessly over your
+With this WIFI Extension you can control :ref:`Bricks <product_overview_bricks>` and
+:ref:`Bricklets <product_overview_bricklets>` wirelessly over your
 mobile phone, tablet or your PC. For the Master Extension concept please take a look at the general
-:ref:`description`<master-extensions>`. The Extension is equipped with a `Gainspan <http://www.gainspan.com>`__
+:ref:`description <product_overview_master_extensions>`. The Extension is equipped with a `GainSpan <http://www.gainspan.com>`__
 `GS1011MEES <http://www.gainspan.com/gs1011mees>`__ WIFI module with an internal power amplifier
 which allows for superior range compared to other WIFI modules.
 
@@ -53,7 +54,7 @@ the transceiver enters sleep mode after each message. This leads to a significan
 consumption and data throughput.
 
 Since the device itself handles TCP/IP packages it is possible to connect directly from your controling
-device (mobile phone, tablet, (embedded) pc). A :ref:`brick daemon <brickd>` is not necessary.
+device (mobile phone, tablet, (embedded) PC). A :ref:`brick daemon <brickd>` is not necessary.
 
 To use this WIFI Extension a :ref:`Master Brick <master_brick>` is mandatory.
 If you want to use other Bricks, you can build a stack and plug them also on top
@@ -115,7 +116,7 @@ To create a Chibi network, stack the Chibi Extension on top of a Master Brick.
 Connect the Master Brick via USB with your PC and start the Brick Viewer
 software. You should see the Master Brick view
 with the identified Chibi Extension (see image below). Configure the extension
-as slave or master (as described :ref:`here <chibi_configuration>`).
+as slave or master (as described :ref:`here <wifi_configuration>`).
 
 If you have configured all extensions you can build your system. Connect
 Bricks and Bricklets as you like. The Master of each stack has to be the
