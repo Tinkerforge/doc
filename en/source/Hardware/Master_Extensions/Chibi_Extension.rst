@@ -180,7 +180,7 @@ Chibi Network Modification
 If you want to change something in your network, e.g. add new Bricks or
 Bricklets, you have to power down the stack you like to change. Change it
 and repower it. If the node was a Chibi slave, you also have to reset the
-Chibi master (it only searches for new Bricks/Bricklets on startup).
+Chibi master (it only searches for new Bricks and Bricklets on startup).
 This can be achieved by a power cycle or pressing the reset
 button on the Master Brick.
 

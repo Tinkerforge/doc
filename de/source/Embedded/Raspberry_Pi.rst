@@ -3,34 +3,35 @@
 Raspberry Pi
 ============
 
-This section describes how to use Bricks/Bricklets with a 
-`Raspberry Pi <http://www.raspberrypi.org/>`__ together
-with Debian Squeeze.
+Hier wird beschrieben wie Bricks und Bricklets zusammen mit einem
+`Raspberry Pi <http://www.raspberrypi.org/>`__ und Debian genutzt werden können.
 
-Prepare SD Card
----------------
 
-In the first step you have to set up squeeze on a SD Card. 
-Download the latest Debian image from 
-`here <http://www.raspberrypi.org/downloads>`__
-and follow the necessary steps of this description:  
-
-`http://elinux.org/RPi_Easy_SD_Card_Setup <http://elinux.org/RPi_Easy_SD_Card_Setup>`__
-
-Start Raspberry Pi
-------------------
-
-Connect a keyboard, a monitor and a power supply to your Raspberry Pi.
-After connecting the power supply the Raspberry Pi should start booting.
-
-At the end of the boot process you should see the a login prompt. Enter
-as username "pi" and as password "raspberry". You should be logged in.
-
-Set up Brickd/Brickv
+SD Karte vorbereiten
 --------------------
 
-To install the :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer<brickv>` Software 
-install it with the following commands::
+Als erstes musst du Debian auf eine SD Karte bringen. Dazu lädst du das neuste
+Debian Image von `hier <http://www.raspberrypi.org/downloads>`__ herunter und
+folgst den Schritten `dieser <http://elinux.org/RPi_Easy_SD_Card_Setup>`__
+Anleitung.
+
+
+Raspberry Pi starten
+--------------------
+
+Schließe eine Tastertur, einen Bildschirm und eine Stromversorgung an dein
+Raspberry Pi an. Sobald das Raspberry Pi mit Strom versorgt wird bootet es.
+
+Am Ende des Bootvorgangs solltest du ein Anmeldeaufforderung sehen. Gib als
+Benutzername "pi" und als Password "raspberry" ein. Jetzt solltest du angemeldet
+sein.
+
+
+Brick Daemon und Brick Viewer installieren
+------------------------------------------
+
+Um den :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer <brickv>` zu
+installieren msst du folgende Befehle ausführen::
 
  cd /home/pi
  sudo apt-get install python-twisted python-gudev libusb-1.0-0
@@ -42,19 +43,21 @@ install it with the following commands::
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
-Access from outside
--------------------
 
-You can use the Raspberry Pi to run the Brick Daemon and control the attached
-devices from the outside. For example you can use this to control stuff from 
-your mobile phone.
-
-To do this you have to change the host the IPConnection is connecting to in 
-your code from "localhost" to the IP of the Raspberry Pi.
-
-Reported Problems
+Zugriff von Außen
 -----------------
 
-The USB port of the Raspberry PI may not be able to handle the power
-that is needed by a big stack of Bricks/Bricklets. In this case you
-should use a :ref:`Step-Down Power Supply <step_down_power_supply>`.
+Du kannst ein Raspberry Pi dazu verwenden dort den Brick Daemon laufen zu lassen
+und angeschlossene Bricks dann von Außen zu steuern, z.B. über dein Smartphone.
+
+Um dies zu tun musst du den Host zu dem du die IP Connection herstellt von
+"localhost" auf die IP Adresse des Raspberry Pis ändern.
+
+
+Bekannte Probleme
+-----------------
+
+Der USB Anschluss des Raspberry Pis ist möglicherweise nicht in der Lage einen
+großen Stapel von Bricks und Bricklets mit Strom zu versorgen. In diesem Fall
+solltest du deine :ref:`Step-Down Power Supply <step_down_power_supply>`
+verwenden um den Stapel zu versorgen.

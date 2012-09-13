@@ -186,7 +186,7 @@ velocity with the rotary poti. It now look as follows (`Download <https://raw.gi
  :tab-width: 4
 
 **Lines 4-7** are the typical configurations, the UID has to be changed
-according to the Bricks/Bricklets you use.
+according to the Bricks and Bricklets you use.
 
 In **Lines 22-27** an IP Connection to the Brick Daemon is established.
 The Brick and Bricklet devices are created and added to the IP Connection.

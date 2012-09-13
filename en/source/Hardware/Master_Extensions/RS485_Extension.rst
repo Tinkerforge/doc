@@ -179,6 +179,6 @@ If you want to change something in your bus, e.g. add new Bricks or
 Bricklets, you have to power down the stack you would like to change.
 Change it and repower it. If the stack was slave in the RS485 bus, you
 also have to reset the RS485 master (it only searches for new
-Bricks/Bricklets on startup).
+Bricks and Bricklets on startup).
 This can be achieved by a power cycle or pressing the reset
 button on the Master Brick.

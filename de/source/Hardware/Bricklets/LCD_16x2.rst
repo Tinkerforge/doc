@@ -62,7 +62,7 @@ abzufragen und die Hintergrundbeleuchtung zu schalten. Zusätzlich können Event
 definiert werden die durch die Taster ausgelöst werden.
 
 Es kann genutzt werden um z.B. Song Informationen vom PC oder Messwerte anderer
-Bricks/Bricklets anzuzeigen.
+Bricks und Bricklets anzuzeigen.
 
 
 Technische Spezifikation
