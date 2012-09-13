@@ -18,45 +18,43 @@ Die IP Connection erstellt eine TCP/IP Verbindung zwischen dem
 :ref:`Brick Daemon <brickd>` und den entsprechenden API Bindings für die
 verschiedenen Programmiersprachen.
 
-Diese wird in den Bindings benutzt und is für jede untersützte
-Programmiersprache
-
-It is used by the bindings and implemented for each programming language.
-The corresponding documentation can be found here:
+Diese wird in den Bindings benutzt und ist für jede unterstütze
+Programmiersprache implementiert. Die dazugehörige Dokumentation ist hier zu
+finden:
 
 .. include:: API_Bindings_bindings.table
 
 
-Using the Bindings
-------------------
+Verwendung der Bindings
+-----------------------
 
-The latest versions of the bindings can be found on the
-:ref:`download page <downloads_bindings_examples>`.
+Die neusten Versionen der Bindings sind im :ref:`Downloadbereich
+<downloads_bindings_examples>` zu finden.
+
 
 .. _api_bindings_c:
 
 C/C++
 ^^^^^
 
-The C/C++ bindings consist of the bindings for all Tinkerforge Bricks and
-Bricklets (in bindings/) and all available C/C++ examples (in
-examples/).
+Die C/C++ Bindings bestehen aus den Bindings für alle Tinkerforge Bricks und
+Bricklets (in ``bindings/``) und allen verfügbaren C/C++ Beispielen (in
+``examples/``).
 
-To keep the C/C++ bindings stupid and simple, they only have
-dependencies that are available nearly everywhere, thus making it
-possible to compile into any project hassle-free.
-We do not offer a pre-compiled library, since it would be a
-pain in the ass to provide them for all combinations of architectures and
-operating systems. This means, the
-bindings should work on most architectures (ARM, x86, etc.) and on most
-operating systems (Windows and POSIX systems, such as Linux and Mac OS, etc.).
+Um die C/C++ Bindings einfach zu halten haben sie nur externe Abhängigkeiten,
+die möglichst überall verfügbar sind, wodurch sie leicht in jegliches Projekt
+eingebunden werden können. Wir bieten keine vorkompilierte Bibliothek an, da
+dies zu viel Aufwand wäre alle möglichen Kombinationen von Architekturen und
+Betriebssystem zu versorgen. Die Bindings sollten aber auf den meisten
+Architekturen (ARM, x86, etc.) und den meisten Betriebssystem (Windows und
+POSIX System, wie Linux und Mac OS, usw.) lauffähig sein.
 
 As an example we will compile the Stepper Brick configuration example
 with gcc on Windows and Linux.
 For that we have to copy the IP connection and the Stepper Brick
-bindings (ip_connection.h, ip_connection.c, brick_stepper.c and
-brick_stepper.h) from the bindings/ folder as well as the
-example_configuration.c from the examples/brick/stepper/ folder into our
+bindings (``ip_connection.h``, ``ip_connection.c``, ``brick_stepper.c`` and
+``brick_stepper.h``) from the ``bindings/`` folder as well as the
+``example_configuration.c`` from the ``examples/brick/stepper/`` folder into our
 project::
 
  project_folder/
@@ -66,17 +64,18 @@ project::
   -> brick_stepper.h
   -> example_configuration.c
 
-The only dependency on Unix-like systems is pthread, therefore a
-compilation of the project with gcc on Linux looks like::
+Die einzige Abhängigkeit auf unixartigen Systemen ist pthreads. Somit sieht der
+Befehl um das Beispiel mit GCC unter Linux zu kompilieren wie folgt aus::
 
  gcc -pthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
 
-On Windows Winsock2 is used for threading. Under MinGW we can compile the example as
-following (hint: the library linking must come after the source)::
+Unter Windows wird Win32 für Threads und WinSock2 für die Netzwerkverbindung
+verwendet. Mit MinGW lässt sich das Beispiel wie folgt kompilieren
+(Linkerparameter müssen nach den Quelldateien angegeben werden)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
 
-With Visual Studio we can use our project_folder/ as follows:
+Mit Visual Studio kann der ``project_folder/`` wie folgt verwendet werden:
 
 * File
 * New
@@ -102,7 +101,7 @@ include ws2_32.lib by clicking on:
 * Properties
 * Linker
 * Input, option "Additional Dependencies"
-* Add "ws2_32.lib;"
+* Add ``ws2_32.lib;``
 
 Thats it, we are ready to go!
 
@@ -144,11 +143,11 @@ Add the C/C++ bindings code:
 * New Group, choose name Tinkerforge
 * Right click on new Tinkerforge group
 * Add Files to "Relay"...
-* Choose all files from the bindings folder of the C/C++ bindings
+* Choose all files from the ``bindings`` folder of the C/C++ bindings
 
 Below is a small example program that turns a relay on and off with a toggle button.
 
-Edit AppDelegate.h as shown below and add the two variables for the IPConnection
+Edit ``AppDelegate.h`` as shown below and add the two variables for the IPConnection
 and DualRelay objects and the toggleRelays Interface Builder action.
 
 .. code-block:: objc
@@ -170,7 +169,7 @@ and DualRelay objects and the toggleRelays Interface Builder action.
  @end
 
 
-Edit AppDelegate.m as shown below to create the IPConnection and DualRelay
+Edit ``AppDelegate.m`` as shown below to create the IPConnection and DualRelay
 objects after the App is launched. For simplicity no error handling is done here.
 In the toggleRelays action the state of both relays is switched.
 
@@ -186,7 +185,7 @@ In the toggleRelays action the state of both relays is switched.
  {
      // Change to the IP address of your host
      ipcon_create(&ipcon, "192.168.178.46", 4223);
-     dual_relay_create(&dr, "927");
+     dual_relay_create(&dr, "927"); // Change to your UID
      ipcon_add_device(&ipcon, &dr);
      dual_relay_set_state(&dr, true, true);
 
@@ -203,7 +202,7 @@ In the toggleRelays action the state of both relays is switched.
 
  @end
 
-Now open MainStoryboard.storyboard in the Interface Builder and add a Label and
+Now open ``MainStoryboard.storyboard`` in the Interface Builder and add a Label and
 a on/off Switch object as shown in the screenshot. The last step is to connect the
 Switch *Value Changed* event with the *toggleRelays* action:
 
@@ -243,8 +242,8 @@ C#
 ^^
 
 The C# bindings consist of a library for all Tinkerforge Bricks and Bricklets
-(Tinkerforge.dll), the source of the DLL (in source/) and all available
-C# examples (in examples/).
+(``Tinkerforge.dll``), the source of the DLL (in ``source/``) and all available
+C# examples (in ``examples/``).
 
 The library has been compiled with::
 
@@ -253,14 +252,14 @@ The library has been compiled with::
 The library can be used without any further extensions. As an example
 lets compile the configuration example of the Stepper Brick.
 
-For this we create a folder and copy the Tinkerforge.dll and the
-examples/Brick/Stepper/ExampleConfiguration.cs into this folder::
+For this we create a folder and copy the ``Tinkerforge.dll`` and the
+``examples/Brick/Stepper/ExampleConfiguration.cs`` into this folder::
 
  example_folder/
   -> Tinkerforge.dll
   -> ExampleConfiguration.cs
 
-In this folder we can now call the c# compiler with the following parameters
+In this folder we can now call the C# compiler with the following parameters
 (1. Windows and 2. Linux/Mac OS (Mono))::
 
  1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
@@ -284,11 +283,11 @@ For Windows Phone the normal C# bindings can be used
 are needed for Windows Phone are currently not supported in Mono. Since
 the DLL is build to be compatible with C# 2.0 and Mono, the DLL is not
 compatible with Windows Phone. To overcome this we have added asynchronous
-sockets for Windows Phone with *#if WINDOWS_PHONE* directives in the socket
-code. This means you can add the Tinkerforge folder (from the source/ folder
+sockets for Windows Phone with ``#if WINDOWS_PHONE`` directives in the socket
+code. This means you can add the ``Tinkerforge`` folder (from the ``source/`` folder
 in the C# bindings) as an external resource. The complete C# API bindings
 work with Windows Phone SDK >= 7.1 (SDK 7.0 does not support sockets
-and can thus not be used to interface with brickd).
+and can thus not be used to interface with the Brick Daemon).
 
 In the following we assume that you already have Visual Studio for Windows
 Phone installed. As an example we will create a small project that can toggle
@@ -310,9 +309,10 @@ Start a new project by clicking on:
 * New Folder, choose name Tinkerforge
 * Right click on Tinkerforge
 * Add
-* Existing Item, choose all files from source/Tinkerforge/ folder of C# bindings (excluding AssemblyInfo.cs)
+* Existing Item, choose all files from ``source/Tinkerforge/`` folder of C#
+  bindings (excluding ``AssemblyInfo.cs``)
 
-Edit the MainPage.xaml to add a toggle button:
+Edit the ``MainPage.xaml`` to add a toggle button:
 
 .. code-block:: xml
 
@@ -337,7 +337,7 @@ Edit the MainPage.xaml to add a toggle button:
      </Grid>
  </phone:PhoneApplicationPage>
 
-Double click on the toggle button to edit the MainPage.xaml.cs:
+Double click on the toggle button to edit the ``MainPage.xaml.cs``:
 
 .. code-block:: csharp
 
@@ -393,8 +393,8 @@ Delphi
 or newer), other Delphi or Object Pascal compilers might work as well
 
 The Delphi bindings consist of the bindings for all Tinkerforge Bricks and
-Bricklets (in bindings/) and all available Delphi examples (in
-examples/).
+Bricklets (in ``bindings/``) and all available Delphi examples (in
+``examples/``).
 
 To keep the Delphi bindings stupid and simple, they only have dependencies that
 are available nearly everywhere, thus making it possible to compile into any
@@ -406,10 +406,10 @@ as Linux and Mac OS, etc.).
 
 As an example we will compile the Stepper Brick configuration example with
 the Free Pascal Compiler (FPC) that comes with the Lazarus. For that we
-have to copy the IP Connection (Base58.pas, BlockingQueue.pas, Device.pas,
-IPConnection.pas, LEConverter.pas and TimedSemaphore.pas) and the Stepper
-Brick bindings (BrickStepper.pas) from the bindings/ folder as well as the
-ExampleConfiguration.pas from the examples/Brick/Stepper/ folder into our
+have to copy the IP Connection (``Base58.pas``, ``BlockingQueue.pas``, ``Device.pas``,
+``IPConnection.pas``, ``LEConverter.pas`` and T``imedSemaphore.pas``) and the Stepper
+Brick bindings (``BrickStepper.pas``) from the ``bindings/`` folder as well as the
+ExampleConfiguration.pas from the ``examples/Brick/Stepper/`` folder into our
 project::
 
  project_folder/
@@ -427,7 +427,7 @@ with FPC like::
 
  fpc ExampleConfiguration.pas
 
-With Lazarus we can use our project_folder/ by clicking:
+With Lazarus we can use our ``project_folder/`` by clicking:
 
 * Project
 * New Project from file ...
@@ -439,8 +439,8 @@ With Lazarus we can use our project_folder/ by clicking:
 * OK
 
 With Delphi XE2 (older Delphi version should work similar) we can use our
-project_folder/ as follows. First rename ExampleConfiguration.pas to
-ExampleConfiguration.dpr then click:
+``project_folder/`` as follows. First rename ``ExampleConfiguration.pas`` to
+``ExampleConfiguration.dpr`` then click:
 
 * Project
 * Add Existing Project...
@@ -454,14 +454,14 @@ Java
 ^^^^
 
 The Java bindings consist of a library (.jar) for all Tinkerforge Bricks and
-Bricklets (Tinkerforge.jar), the source of the jar (in source/) and all
-available Java examples (in examples/).
+Bricklets (``Tinkerforge.jar``), the source of the jar (in ``source/``) and all
+available Java examples (in ``examples/``).
 
 The library can be used without any further extensions. As an example lets
 compile the configuration example of the Stepper Brick.
 
 For this we create a folder and copy the Tinkerforge.jar and the
-examples/Brick/Stepper/ExampleConfiguration.java into this folder::
+``examples/Brick/Stepper/ExampleConfiguration.java`` into this folder::
 
  example_folder/
   -> Tinkerforge.jar
@@ -485,6 +485,7 @@ Or, alternatively add the jar and the Example in an Java IDE of your choice
 
 Documentation for the API can be found :ref:`here <index_bricks>`.
 
+
 .. _api_bindings_java_android:
 
 Java (Android)
@@ -495,8 +496,8 @@ For Android the normal Java bindings can be used
 
 In the following we assume that you already have the Android development
 environment installed. If you are just starting with Android development,
-you should first complete the
-`hello world tutorial <http://developer.android.com/resources/tutorials/hello-world.html>`__ from Google.
+you should first complete the `hello world tutorial
+<http://developer.android.com/resources/tutorials/hello-world.html>`__ from Google.
 
 As an example we will create a small project that can toggle
 a relay. It should be easy to adjust this example for your needs.
@@ -507,17 +508,17 @@ Start a new project by clicking on:
 * New
 * Project...
 * Android Project
-* Choose name (e.g. relay)
+* Choose name (e.g. ``relay``)
 * Choose target
-* Choose package name (e.g. org.example)
+* Choose package name (e.g. ``org.example``)
 * Finish
 
-Copy complete com/tinkerforge/ folder from source/ into PROJECTFOLDER/src/
+Copy complete ``com/tinkerforge/`` folder from ``source/`` into ``PROJECTFOLDER/src/``
 
-Edit the source. Don't forget to set the host IP to the IP address of the
-PC running brickd. You can use your local IP or the IP you are connected
-to the Internet with. If you use the latter, you also have to make sure that
-the brickd port is opened to the outside.
+Edit the source. Don't forget to set the host IP address to the IP address of the
+PC running brickd. You can use your local IP address or the IP address you are
+connected to the Internet with. If you use the latter, you also have to make
+sure that the brickd port is opened to the outside.
 
 Below is a small example program that turns a relay on and off with a
 toggle button.
@@ -605,8 +606,8 @@ PHP
 **Requirements**: PHP 5.3 or newer with bcmath extension
 
 The PHP bindings consist of a PEAR package with the bindings for all
-Tinkerforge Bricks and Bricklets (Tinkerforge.tgz), the source of the
-PEAR package (in source/) and all available PHP examples (in examples/).
+Tinkerforge Bricks and Bricklets (``Tinkerforge.tgz``), the source of the
+PEAR package (in ``source/``) and all available PHP examples (in ``examples/``).
 
 You can install the PEAR package with the pear tool::
 
@@ -615,10 +616,10 @@ You can install the PEAR package with the pear tool::
 After that you can use the examples as they are.
 
 If you can't or don't want to use the PEAR package, you can also use the source
-directly, just create a folder for your project and copy the Tinkerforge
-folder from source/ and the example you want to try in there
+directly, just create a folder for your project and copy the ``Tinkerforge``
+folder from ``source/`` and the example you want to try in there
 (e.g. the Stepper configuration example from
-examples/brick/stepper/ExampleConfiguration.php)::
+``examples/brick/stepper/ExampleConfiguration.php``)::
 
  example_folder/
   -> Tinkerforge/
@@ -626,8 +627,8 @@ examples/brick/stepper/ExampleConfiguration.php)::
 
 If you just want to use a few Bricks or Bricklets and you don't want to
 have this many files in you project, you can also copy the files as they are
-needed. For the Stepper Brick examples we need IPConnection.php and
-BrickStepper.php. After copying these in the project folder::
+needed. For the Stepper Brick examples we need ``IPConnection.php`` and
+``BrickStepper.php``. After copying these in the project folder::
 
  example_folder/
   -> IPConnection.php
@@ -656,8 +657,8 @@ Python
 **Requirements**: Python 2.6 or newer, Python 3 is also supported
 
 The Python bindings consist of a Python egg with the bindings for all
-Tinkerforge Bricks and Bricklets (tinkerforge.egg), the source of the
-egg (in source/) and all available Python examples (in examples/).
+Tinkerforge Bricks and Bricklets (``tinkerforge.egg``, the source of the
+egg (in ``source/``) and all available Python examples (in ``examples/``).
 
 You can install the egg with easy_install::
 
@@ -666,10 +667,10 @@ You can install the egg with easy_install::
 After that you can use the examples as they are.
 
 If you can't or don't want to use the egg, you can also use the source
-directly, just create a folder for your project and copy the tinkerforge
-folder from source/ and the example you want to try in there
+directly, just create a folder for your project and copy the ``tinkerforge``
+folder from ``source/`` and the example you want to try in there
 (e.g. the Stepper configuration example from
-examples/brick/stepper/example_configuration.py)::
+``examples/brick/stepper/example_configuration.py``)::
 
  example_folder/
   -> tinkerforge/
@@ -677,8 +678,8 @@ examples/brick/stepper/example_configuration.py)::
 
 If you just want to use a few Bricks or Bricklets and you don't want to
 have this many files in you project, you can also copy the files as they are
-needed. For the Stepper Brick examples we need ip_connection.py and
-stepper_brick.py. After copying these in the project folder::
+needed. For the Stepper Brick examples we need ``ip_connection.py`` and
+``brick_stepper.py``. After copying these in the project folder::
 
  example_folder/
   -> ip_connection.py
@@ -701,7 +702,7 @@ After that, the example can be executed again.
 
  * Install easy_install: http://pypi.python.org/pypi/setuptools#windows (setuptools)
  * Open Windows command shell
- * C:\\YourPythonDir\\Scripts\\easy_install.exe C:\\PathToEgg\\tinkerforge.egg
+ * Execute ``C:\\YourPythonDir\\Scripts\\easy_install.exe C:\\PathToEgg\\tinkerforge.egg``
 
 
 
@@ -713,8 +714,8 @@ Ruby
 **Requirements**: Ruby 1.9 or newer
 
 The Ruby bindings consist of a Ruby GEM with the bindings for all
-Tinkerforge Bricks and Bricklets (tinkerforge.gem), the source of the
-GEM (in source/) and all available Ruby examples (in examples/).
+Tinkerforge Bricks and Bricklets (``tinkerforge.gem``), the source of the
+GEM (in ``source/``) and all available Ruby examples (in ``examples/``).
 
 You can install the GEM with the gem tool::
 
@@ -723,10 +724,10 @@ You can install the GEM with the gem tool::
 After that you can use the examples as they are.
 
 If you can't or don't want to use the GEM, you can also use the source
-directly, just create a folder for your project and copy the tinkerforge
-folder from source/ and the example you want to try in there
+directly, just create a folder for your project and copy the ``tinkerforge``
+folder from ``source/`` and the example you want to try in there
 (e.g. the Stepper configuration example from
-examples/brick/stepper/example_configuration.rb)::
+``examples/brick/stepper/example_configuration.rb``)::
 
  example_folder/
   -> tinkerforge/
@@ -734,8 +735,8 @@ examples/brick/stepper/example_configuration.rb)::
 
 If you just want to use a few Bricks or Bricklets and you don't want to
 have this many files in you project, you can also copy the files as they are
-needed. For the Stepper Brick examples we need ip_connection.rb and
-stepper_brick.rb. After copying these in the project folder::
+needed. For the Stepper Brick examples we need ``ip_connection.rb`` and
+``stepper_brick.rb``. After copying these in the project folder::
 
  example_folder/
   -> ip_connection.rb

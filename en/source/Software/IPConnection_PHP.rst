@@ -3,13 +3,13 @@
 PHP - IP Connection
 ===================
 
-This is the API description for the PHP bindings of the IP connection.
-The IP connection is established between the Brick Daemon
+This is the API description for the PHP bindings of the IP Connection.
+The IP Connection is established between the Brick Daemon
 and the corresponding programming language API bindings. You need to
-create an IP connection to brickd and add devices, before you can
+create an IP Connection to brickd and add devices, before you can
 use them.
 
-An overview of products that are controllable over an IP connection
+An overview of products that are controllable over an IP Connection
 can be found :ref:`here <product_overview>`.
 
 
@@ -38,15 +38,15 @@ Basic Functions
 
 .. php:function:: class IPConnection(string $host, int $port)
 
- Creates an IP connection to the Brick Daemon with the given *$host*
- and *$port*. With the IP connection itself it is possible to enumerate the
+ Creates an IP Connection to the Brick Daemon with the given *$host*
+ and *$port*. With the IP Connection itself it is possible to enumerate the
  available devices. Other then that it is only used to add Bricks and
  Bricklets to the connection.
 
 .. php:function:: void IPConnection::addDevice(Device $device)
 
- Adds a device (Brick or Bricklet) to the IP connection. Every device
- has to be added to an IP connection before it can be used. Examples for
+ Adds a device (Brick or Bricklet) to the IP Connection. Every device
+ has to be added to an IP Connection before it can be used. Examples for
  this can be found in the API documentation for every Brick and Bricklet.
 
 .. php:function:: void IPConnection::dispatchCallbacks(float $seconds)
@@ -56,12 +56,12 @@ Basic Functions
  method periodically to ensure that incoming callbacks are handled. If you
  don't use callbacks you don't need to call this method.
 
- The recommended dispatch time is 0s. This will just dispatch all pending
+ The recommended value for *$seconds* 0. This will just dispatch all pending
  callbacks without waiting for further callbacks.
 
 .. php:function:: void IPConnection::destroy()
 
- Destroys the IP connection. The socket to the Brick Daemon will be closed.
+ Destroys the IP Connection. The socket to the Brick Daemon will be closed.
 
 
 Callback Configuration Functions
@@ -83,8 +83,9 @@ Callback Configuration Functions
  * *$isNew* - Is *true* if the device is added, *false* if it is removed.
 
  There are three different possibilities for the callback to be called.
- Firstly, the callback is called with all currently available devices in the
- IP connection (with *$isNew* set to *true*). Secondly, the callback is called if
+ Firstly, the callback is called with all currently connected devices
+ (with *$isNew* set to *true*). This is triggered by the call to
+ :php:func:`enumerate <IPConnection::enumerate>`. Secondly, the callback is called if
  a new Brick is plugged in via USB (with *$isNew* set to *true*) and lastly it is
  called if a Brick is unplugged (with *$isNew* set to *false*).
 

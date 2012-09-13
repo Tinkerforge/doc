@@ -41,31 +41,32 @@ Grundfunktionen
  :param host: str
  :param port: int
 
- Creates an IP connection to the Brick Daemon with the given *host*
- and *port*. With the IP connection itself it is possible to enumerate the
- available devices. Other then that it is only used to add Bricks and
- Bricklets to the connection.
+ Erzeugt eine IP Connection zum Brick Daemon mit dem übergebenen *host*
+ und *port*. Die IP Connection erlaubt es die bekannten Bricks und Bricklets
+ aufzuzählen. Abgesehen davon wird sie benutzt um Bricks und Bricklets zur
+ Kommunikation über diese Verbindung hinzuzufügen.
 
 .. rb:function:: IPConnection#add_device(device) -> nil
 
  :param device: Device
 
- Adds a device (Brick or Bricklet) to the IP connection. Every device
- has to be added to an IP connection before it can be used. Examples for
- this can be found in the API documentation for every Brick and Bricklet.
+ Fügt ein Gerät (Brick or Bricklet) der IP Connection hinzu. Jegliches Gerät
+ muss zuerst einer IP Connection hinzugefügt werden bevor es benutzt werden
+ kann. Beispiele dafür finden sich in der API Dokumentation jedes Bricks und
+ Bricklets.
 
 .. rb:function:: IPConnection#join_thread() -> nil
 
- Joins the threads of the IP connection. The call will block until the
- IP connection is :rb:func:`destroyed <IPConnection.destroy>`.
+ Wartet auf die Beendigung der Threads der IP Connection. Der Aufruf blockiert
+ bis die IP Connection :rb:func:`destroyed <IPConnection#destroy>` wird.
 
- This makes sense if you relies solely on callbacks for events or if
- the IP connection was created in a threads.
+ Dies ist dann sinnvoll, wenn dein Programm vollständig auf Callbacks basiert
+ oder du die IP Connection in einem anderem Thread erzeugt hast.
 
 .. rb:function:: IPConnection#destroy() -> nil
 
- Destroys the IP connection. The socket to the Brick Daemon will be closed
- and the threads of the IP connection terminated.
+ Zerstört die IP Connection. Die Verbindung zum Brick Daemon wird geschlossen
+ und die Threads der IP Connection werden beendet.
 
 
 Konfigurationsfunktionen für Callbacks
@@ -73,18 +74,20 @@ Konfigurationsfunktionen für Callbacks
 
 .. rb:function:: IPConnection#enumerate { |uid, name, stack_id, is_new| block } -> nil
 
- This method registers a callback that receives four parameters:
+ Diese Methode registriert einen Callback der vier Parameter übergeben bekommt:
 
- * *uid* - str: The UID of the device.
- * *name* - str: The name of the device (includes "Brick" or "Bricklet" and a version number).
- * *stack_id* - int: The stack ID of the device (you can find out the position in a stack with this).
- * *is_new* - bool: Is *true* if the device is added, *false* if it is removed.
+ * *uid*: Die UID des Gerätes.
+ * *name*: Der Name des Gerätes (beinhaltet "Brick" oder "Bricklet" und eine Versionsnummer).
+ * *stack_id*: Die Stapel ID des Gerätes (damit kann die Position innerhalb des Stapels ermittelt werden).
+ * *is_new*: Ist *true* wenn das Gerät hinzugefügt wurde, *false* wenn es entfernt wurde.
 
- There are three different possibilities for the callback to be called.
- Firstly, the callback is called with all currently available devices in the
- IP connection (with *is_new* set to *true*). Secondly, the callback is called if
- a new Brick is plugged in via USB (with *is_new* set to *true*) and lastly it is
- called if a Brick is unplugged (with *is_new* set to *false*).
+ Es gibt drei verschiedenen Situationen in denen der Callback aufgerufen wird.
+ Erstens, der Callback wird für alle im Moment angeschlossenen Geräte aufgerufen
+ (mit *is_new* gleich *true*). Dies wird durch den Aufruf von
+ :rb:func:`enumerate <IPConnection#enumerate>` ausgelöst. Zweitens, der Callback wird auch aufgerufen
+ wenn ein Brick an USB angesteckt wird (mit *is_new* gleich *true*).
+ Schlussendlich wird der Callback aufgerufen wenn ein Brick von USB angesteckt
+ wurde (mit *is_new* gleich *false*).
 
- It should be possible to implement "plug 'n play" functionality with this
- (as is done in Brick Viewer).
+ Dieser Callback erlaubt es "Plug'n'Play" Funktionalität zu implementieren (wie
+ es im Brick Viewer getan wurde).
