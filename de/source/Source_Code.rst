@@ -3,52 +3,54 @@
 Quelltexte und Bug Tracking
 ===========================
 
-Every product that is released by Tinkerforge is Open Source. The firmware 
-source as well as the hardware design files for all Bricks and Bricklets are
-available. Additionally the source code for all tools, such as the Brick
-Daemon, the Brick Viewer and the generators for the language bindings is
-available.
+Jedes von Tinkerforge veröffentlichte Produkt ist Open Source. Die Quelltexte
+der Firmwares sowie die Platinenlayouts aller Bricks und Bricklets sind frei
+verfügbar. Zusätzlich sind auch die Quelltexte aller Tools, wie des Brick
+Daemon, des Brick Viewer und der Generatoren für API Bindings, verfügbar.
 
-This means you can use all of the Tinkerforge hardware and software as a
-starting point for your own project, extend or modify it. Furthermore
-you can help us in the development effort and most importantly report bugs.
+Das bedeute, dass du alles an Tinkerforge Hardware und Software als
+Ausgangspunkt für dein eigenes Projekt verwenden kannst, sie erweitern und
+modifizieren kannst. Darüber hinaus kannst du uns bei der Entwicklungsarbeit
+helfen und, am wichtigsten, Probleme melden.
 
-To make it easy for the community to commit patches and report bugs, all
-of the `Tinkerforge projects <https://github.com/Tinkerforge>`__ are hosted
-on Github.
+Um es der Community einfach zu machen Patches einzusenden und Probleme zu melden,
+sind alle `Tinkerforge Projects <https://github.com/Tinkerforge>`__ auf Github
+gehostet.
 
-If you don't know git, you can find information `here <http://git-scm.com/>`__.
-Our projects can be cloned with::
- 
+Falls du mit git nicht vertraut bist, kannst du `hier <http://git-scm.com/>`__
+weiterführenden Informationen finden. Unsere Projekte können wie folgt geclonet
+werden::
+
  git clone git://github.com/Tinkerforge/PROJECT.git
 
-Below is a list of the Tinkerforge project repositories and corresponding 
-bug tracker.
+Im Folgenden ist eine Liste aller Tinkerforge Projekt Repositories und
+dazugehörigen Bug Trackern.
 
 .. include:: Source_Code_gits.table
 
 
-Where and How do I report Bugs?
--------------------------------
-If you found a bug in one of the Tinkerforge projects, we would love if you
-could report it! First of all, you have to identify the correct repository for
-your problem:
+Wo und wie kann ich Problem melden?
+-----------------------------------
 
-Bugs that are specific to a Brick/Bricklet (e.g. a specific parameter of a 
-function in a Brick/Bricklet does not work or there is a hardware bug on a 
-Brick/Bricklet) and bugs in the Brick Daemon and Brick Viewer can be reported 
-to the obviously belonging repository.
+Wenn du deinen Bug in einem der Tinkerforge Projekte findest, würden wir uns
+freuen wenn du uns das Problem meldest. Als erstes musst du dazu das passende
+Repository ermitteln:
 
-However, if the bug is in every Brick (For example: Stack communication is
-erroneous or a bug in the USB communication) report to the Brick Library 
-repository. If it is in every Bricklet (For example: The timing of recurring
-events is wrong) report to the Bricklet Library repository. If it is in the API 
-or the API Documentation (For example: Typo in the API of a Brick/Bricklet or 
-wrong statement in the documentation of a Brick/Bricklet) report to the API 
-Generator repository.
+Probleme die sich auf ein speziellen Brick oder Bricklet beziehen (z.B. ein
+Parameter einer Funktion eines Bricks oder Bricklets funktioniert nicht wie
+dokumentiert, oder ein Hardwareproblem) oder Probleme im Brick Daemon oder
+Brick Viewer können in den offensichtlich dazugehörigen Repositories gemeldet
+werden.
 
-For us it is important that we can reproduce the bug you found. You should
-try to write anything in the bug report that is needed to reproduce your
-scenario. This includes code snippets that crash something, the setup
-of your hardware project or instructions how you connected Bricks and
-Bricklets.
+Falls das Problem aber alle Bricks gleichermaßen betrifft (z.B. die
+Stapelkommunikation oder die USB Kommunikation ist fehlerhaft) dann solltest du
+dies im Brick Library Repository melden. Falls das Problem bei jedem Bricklet
+auftritt (z.B. das Timing wiederkehrender Callbacks passt nicht) dann solltest
+du dies im Bricklet Library Repository melden. Probleme in der API oder deren
+Dokumentation (z.B. Tippfehler oder falsche Aussagen) sollten im API
+Generator Repository gemeldet werden.
+
+Es ist wichtig, dass wir das Problem reproduzieren können. Daher ist es notwendig,
+dass du beschreibst wie du das Problem erzeugt hast. Das kann z.B. ein kleines
+Beispielprogramm sein, das das Problem erzeugt, oder eine Beschreibung deines
+Hardwareaufbaus mit dem das Problem auftritt.

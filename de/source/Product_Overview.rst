@@ -3,20 +3,21 @@
 Produkt Übersicht
 -----------------
 
-There are four different types of hardware components:
+Unsere Produkte gliedern sich in vier verschiedene Kategorien:
 
 * :ref:`Bricks <product_overview_bricks>`:
-  Stackable microcontroller boards for sensing and controlling.
+  Stapelbare Mikrocontrollerplatinen zum Messen und Steuern.
 * :ref:`Master Extensions <product_overview_master_extensions>`:
-  Boards that extend the communication interfaces of a
-  :ref:`Master Brick <master_brick>`.
+  Platinen um die Kommunikationsmöglichkeiten des
+  :ref:`Master Bricks <master_brick>` zu erweitern.
 * :ref:`Bricklets <product_overview_bricklets>`:
-  Non-stackable sensor/actor boards that extend the features of a Brick.
+  Nicht stapelbare Sensor-/Aktorplatinen um die Fähigkeiten eines Bricks zu
+  erweitern.
 * :ref:`Stromversorgungen <product_overview_power_supplies>`:
-  Boards to power a stack of Bricks, plugged below the stack.
+  Platinen die einen Stapel von Bricks mit Strom versorgen; werden unter einen
+  Stapel gesteckt.
 
-See the :ref:`tutorial <tutorial>` for an explanation of how everything works
-together.
+Das :ref:`Tutorial <tutorial>` erklärt wie alles zusammen funktioniert.
 
 
 .. _product_overview_bricks:
@@ -59,26 +60,23 @@ Bricks
        :target: _images/Bricks/brick_imu_tilted_front_800.jpg
 
 
-Bricks are 4 x 4cm (1.57 x 1.57") boards equipped with a 32-bit ARM
-microcontroller, an USB port, two status LEDs, connectors for
-stacking and up to four connectors for
-:ref:`Bricklets <product_overview_bricklets>`.
-There are Bricks that perform complex
-sensor tasks (e.g. :ref:`IMU Brick <imu_brick>`),
-communicate (e.g. :ref:`Master Brick <master_brick>`)
-and drive motors (e.g. :ref:`DC Brick <dc_brick>`).
+Bricks sind 4 x 4cm (1,57 x 1,57") große Platinen die mit einem 32-Bit ARM
+Mikrocontroller, einem USB Abschluss, zwei Status LEDs, vier Steckern zur
+Stapelbildung und bis zu vier Anschlüssen für :ref:`Bricklets
+<product_overview_bricklets>` ausgestattet sind. Es gibt Bricks für Messaufgaben
+(z.B. :ref:`IMU Brick <imu_brick>`), für Kommunikation (z.B. :ref:`Master Brick
+<master_brick>`) und um Motoren zu steuern (z.B. :ref:`DC Brick <dc_brick>`).
 
-Bricks can be stacked together to a stack. A Master Brick
-at the bottom of this stack can control all boards within the stack.
-This master routes the messages between the boards in the stack and the PC
-(:ref:`High Level Programming Interface <pi_hlpi>`).
-For the user, the stack behaves as if all Bricks were connected separately
-over USB with the PC.
-See :ref:`Tutorial Stacking <tutorial_build_stacks>` for more information
-about stacks.
+Bricks können zu Stapeln zusammengesteckt werden. Ein Master kümmert sich um die
+Kommunikation aller anderen Teilnehmer im Stapel. Er routet Nachrichten zwischen
+den Teilnehmern und dem PC (:ref:`High Level Programmierschnittstelle <pi_hlpi>`).
+Aus Benutzersicht verhält sich solch ein Stapel so als wären alle Bricks einzeln
+per USB am PC angeschlossen. Das :ref:`Stapel Tutorial <tutorial_build_stacks>`
+beinhaltet weitere Informationen für Stapel.
 
-Besides the :ref:`High Level Programming Interface <pi_hlpi>` it is also
-possible to use Bricks with the :ref:`On Device Programming Interface <pi_hlpi>`.
+Neben der :ref:`High Level Programmierschnittstelle <pi_hlpi>` wird es in
+Zukunft auch möglich sein über eine :ref:`On Device Programmierschnittstelle
+<pi_odpi>` Bricks zu verwenden.
 
 .. include:: Product_Overview_bricks.table
 
@@ -104,20 +102,20 @@ Master Extensions
        :align: center
        :target: _images/Extensions/extension_rs485_tilted_800.jpg
 
-When using the :ref:`High Level Programming Interface <pi_hlpi>` concept,
-:ref:`Master Bricks <master_brick>` can route messages between
-:ref:`Bricks <product_overview_bricks>` and the PC. To establish a connection
-between a PC and the Master Brick, typically the USB port is used.
-Master Extensions can be utilized to change the interface of a Master Brick.
-There are cable based and wireless Master Extensions available. From a
-programming perspective the different interfaces are transparent.
-A stack with Master Extension behaves as if every board in the stack
-would be directly connected to the PC over an USB connection. This means:
+Bei der Verwendung der :ref:`High Level Programmierschnittstelle <pi_hlpi>`
+routet der :ref:`Master Brick <master_brick>` Nachrichten zwischen den anderen
+:ref:`Bricks <product_overview_bricks>` im Stapel und dem PC. Typischerweise
+wird die Verbindung zwischen Master Brick und PC über den USB Anschluss des
+Master Bricks hergestellt. Master Extensions erweitern die
+Kommunikationsmöglichkeiten eines Master Bricks. Es gibt kabelgebundene und
+drahtlose Master Extensions. Aus Programmierersicht sind die verschiedenen
+Kommunikationsmöglichkeiten transparent. Ein Stapel mit Master Extension
+verhält sich so als wären alle Bricks einzeln per USB am PC angeschlossen.
 
-You can develop an application with all
-boards independently connected to the PC over USB. Later you can stack these
-boards together to stacks, add Master Bricks and cable based or wireless
-Extensions and you can run the previously written code without any changes.
+Dies bedeutet: Programme können mit allen Bricks einzeln per USB am PC
+angeschlossen entwickelt werden. Wenn später die Bricks gestapelt und über
+eine Master Extension angebunden werden dann funktioniert das zuvor geschrieben
+Programm ohne Änderungen weiter.
 
 .. include:: Product_Overview_extensions.table
 
@@ -173,20 +171,24 @@ Bricklets
        :align: center
        :target: _images/Bricklets/bricklet_voltage_tilted_800.jpg
 
-Bricklets can be used to extend the features of
-:ref:`Bricks <product_overview_bricks>`. There are Bricklets to measure
-physical values such as rotation, voltage, current and ambient light
-as well as Bricklets for control purposes such as
-switching relays, digital input/output and drawing on LCDs.
+Bricklets erweitern die Fähigkeiten von :ref:`Bricks <product_overview_bricks>`.
+Es gibt Bricklets um physikalische Größen wie Rotation, elektrische Spannung,
+elektrischen Strom, Umgebungshelligkeit oder Umgebungstemperatur zu messen.
+Es gibt auch Bricklets für Steuerungsaufgaben wie Relais, digitale Ein- und
+Ausgänge sowie alphanumerische Ausgaben auf LCDs.
 
-Unlike Bricks, Bricklets have no fixed size. Each Bricklet has the minimum
-size possible. Each Brick has up to four connectors for Bricklets.
+Im Gegensatz zu Bricks haben Bricklets keine feste Größe. Jedes Bricklet hat
+die kleinste mögliche Größe. Jeder Brick hat bis zu vier Anschlüsse für
+Bricklets.
 
-On startup a Brick detects connected Bricklets. The Bricklet plugins,
-stored in the EEPROM of the Bricklet, are copied into the flash of the
-Brick. This adds methods to the Brick, that can then be called from the PC.
+Beim Start erkennt ein Brick die angeschlossenen Bricklets. Die Bricklet Plugins
+sind auf einem `EEPROM <http://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
+auf dem Bricklet gespeichert und werden zur Ausführung in den Flash des Bricks
+geladen. Dies fügt dem Brick neue Funktionen hinzu die vom PC aus genutzt
+werden können.
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for more information.
+Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für weitere
+Information.
 
 .. include:: Product_Overview_bricklets.table
 
@@ -206,15 +208,13 @@ Stromversorgungen
        :align: center
        :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
 
-A stack can be powered by the
-master of the stack over its USB connection.
-This option is limited by the USB specification (500mA).
-A large stack may need more power than 500mA.
+Ein Stapel kann über den USB Anschluss des Masters mit Strom versorgt werden.
+Diese Möglichkeit ist durch die USB Spezifikation auf 500mA beschränkt. Ein
+großer Stapel kann mehr als 500mA Stromverbrauch aufweisen.
 
-To provide greater currents, Stromversorgungen are available.
-These boards power the stack and can additionally be used to supply the power
-for driver Bricks (e.g. :ref:`DC Brick <dc_brick>`). Stromversorgungen
-have the same size as :ref:`Bricks <product_overview_bricks>` and are
-stacked in at the bottom of the stack.
+Eine Stromversorgung kann einen Stapel mit mehr als 500mA versorgen. Sie kann
+auch an Bricks angeschlossen Motoren versorgen (z.B. :ref:`DC Brick <dc_brick>`).
+Stromversorgungen haben die Größe von :ref:`Bricks <product_overview_bricks>`
+und werden unter einen Stapel gesteckt.
 
 .. include:: Product_Overview_power_supplies.table

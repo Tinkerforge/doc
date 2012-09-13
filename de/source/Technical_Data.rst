@@ -1,105 +1,105 @@
 Technische Daten
 ================
 
-In the following you can find a brief description of all connectors.
-If you need more information you can take a look in the schematics or in the 
-kicad development files of each product.
+Diese Seite gibt eine kurze Beschreibung aller Stecker. Weitere Informationen
+sind in den Schaltplänen für jedes Produkt und den KiCad Bibliotheken zu finden.
 
 
-Stack Connectors
-----------------
+Stapelstecker
+-------------
 
 Each :ref:`Brick <product_overview_bricks>` has two connector types:
 
-* **Stack Data Connector:** Used for data exchange between Bricks.
-* **Stack Power Connector:** Powers the Bricks and attached Bricklets, motors, servos etc.
+* **Stapeldatenstecker:** Verwendet für den Datenaustausch zwischen Bricks.
+* **Stapelstromversorgungsstecker:** Versorgt Bricks und angeschlossene Bricklets, Motoren, Servos usw.
+
 
 .. _connector_stack_data:
 
-Stack Data Connector
-^^^^^^^^^^^^^^^^^^^^
+Stapeldatenstecker
+^^^^^^^^^^^^^^^^^^
 
 .. csv-table:: 
-   :header: "Comment", "Signal", "Pin", "Pin", "Signal", "Comment"
+   :header: "Beschreibung", "Signal", "Pin", "Pin", "Signal", "Beschreibung"
    :widths: 200, 150, 25, 25, 150, 200
 
-   "Stack SPI: MasterIn SlaveOut", 			"SPI-MISO",		"**01**", 	"**02**", "I2C-SDA/TDI",	"Stack I2C: Serial Data/ JTAG-TDI"
-   "Stack SPI: MasterOut SlaveIn", 			"SPI-MOSI",		"**03**",	"**04**", "I2C-SCL/TDO", 	"Stack I2C: Serial Clock/ JTAG-TDO"
-   "Stack SPI: Clock", 					"SPI-SCLK",		"**05**",	"**06**", "SEL-0",		"Stack Select 0"
-   "Reset Signal", 					"RESET",		"**07**",	"**08**", "SEL-1",		"Stack Select 1"
-   "Stack Detect/ JTAG-TMS", 				"DETECT/TMS",		"**09**",	"**10**", "SEL-2",		"Stack Select 2"
-   "Stack Synchronization/ JTAG-TCK", 			"SYNC/GP/TCK",		"**11**",	"**12**", "SEL-3", 		"Stack Select 3"
-   "Extension SPI: MasterIn SlaveOut", 			"EX-SPI-MISO",		"**13**",	"**14**", "SEL-4",		"Stack Select 4"
-   "Extension SPI: MasterOut SlaveIn", 			"EX-SPI-MOSI",		"**15**",	"**16**", "SEL-5",		"Stack Select 5"
-   "Extension SPI: Clock", 				"EX-SPI-SCLK",		"**17**",	"**18**", "SEL-6",		"Stack Select 6"
-   "Extension 0: General Purpose 0/ Interrupt 0", 	"EX-0-GP-0/nINT0",	"**19**",	"**20**", "SEL-7",		"Stack Select 7"
-   "Extension 0: General Purpose 1/ Interrupt 1", 	"EX-0-GP-1/nINT1",	"**21**",	"**22**", "EX-SEL-0",		"Extension Select 0"
-   "Extension 0: General Purpose 2/ Interrupt 2", 	"EX-0-GP-2/nINT2",	"**23**",	"**24**", "EX-SEL-1",		"Extension Select 1"
-   "Extension 1: General Purpose 0", 			"EX-1-GP-0",		"**25**",	"**26**", "EX-SER-RXD",	"Extension Serial Interface: RXD"
-   "Extension 1: General Purpose 1", 			"EX-1-GP-1",		"**27**",	"**28**", "EX-SER-TXD",	"Extension Serial Interface: TXD"
-   "Extension 1: General Purpose 2", 			"EX-1-GP-2",		"**29**",	"**30**", "EX-SER-RTS", 	"Extension Serial Interface: RTS"
+   "Stack SPI: MasterIn SlaveOut",                "SPI-MISO",        "**01**", "**02**", "I2C-SDA/TDI", "Stack I2C: Serial Data/ JTAG-TDI"
+   "Stack SPI: MasterOut SlaveIn",                "SPI-MOSI",        "**03**", "**04**", "I2C-SCL/TDO", "Stack I2C: Serial Clock/ JTAG-TDO"
+   "Stack SPI: Clock",                            "SPI-SCLK",        "**05**", "**06**", "SEL-0",       "Stack Select 0"
+   "Reset Signal",                                "RESET",           "**07**", "**08**", "SEL-1",       "Stack Select 1"
+   "Stack Detect/JTAG-TMS",                       "DETECT/TMS",      "**09**", "**10**", "SEL-2",       "Stack Select 2"
+   "Stack Synchronization/ JTAG-TCK",             "SYNC/GP/TCK",     "**11**", "**12**", "SEL-3",       "Stack Select 3"
+   "Extension SPI: MasterIn SlaveOut",            "EX-SPI-MISO",     "**13**", "**14**", "SEL-4",       "Stack Select 4"
+   "Extension SPI: MasterOut SlaveIn",            "EX-SPI-MOSI",     "**15**", "**16**", "SEL-5",       "Stack Select 5"
+   "Extension SPI: Clock",                        "EX-SPI-SCLK",     "**17**", "**18**", "SEL-6",       "Stack Select 6"
+   "Extension 0: General Purpose 0/ Interrupt 0", "EX-0-GP-0/nINT0", "**19**", "**20**", "SEL-7",       "Stack Select 7"
+   "Extension 0: General Purpose 1/ Interrupt 1", "EX-0-GP-1/nINT1", "**21**", "**22**", "EX-SEL-0",    "Extension Select 0"
+   "Extension 0: General Purpose 2/ Interrupt 2", "EX-0-GP-2/nINT2", "**23**", "**24**", "EX-SEL-1",    "Extension Select 1"
+   "Extension 1: General Purpose 0",              "EX-1-GP-0",       "**25**", "**26**", "EX-SER-RXD",  "Extension Serial Interface: RXD"
+   "Extension 1: General Purpose 1",              "EX-1-GP-1",       "**27**", "**28**", "EX-SER-TXD",  "Extension Serial Interface: TXD"
+   "Extension 1: General Purpose 2",              "EX-1-GP-2",       "**29**", "**30**", "EX-SER-RTS",  "Extension Serial Interface: RTS"
 
-All signals are 3.3V based.
+Alle Signale sind 3,3V basiert.
 
-Description
-"""""""""""
 
-* **Stack SPI** (HLPI/LLPI): SPI Bus for
-  :ref:`Brick <product_overview_bricks>` <->
-  Master communication (:ref:`HLPI <pi_hlpi>`).
-* **JTAG**: Debug Interface, shared with other signals. JTAG must
-  not be used when a Brick is stacked together with others.
-* **Reset**: Signal to reset a Brick, routed through a
-  stack such that all Bricks are reseted at the same time.
-* **Stack Detect** (HLPI): Signal to detect the presence of a
-  :ref:`Master Brick <master_brick>`.
-  All Bricks except the Master Brick have the signals on top and bottom
-  internally connected and check for a high signal (input pull down) to detect
-  stack operation. Master Bricks have two independent
-  signals for top and bottom side. Each Master Brick sets the top signal
-  output high and the bottom to input pull down. If a low signal is detected on
-  the bottom, the Master Brick will act as a master for the stack. If a high
-  signal is detected, another Master Brick is below and will work as the
-  master of the stack.
-* **Stack Synchronization** (HLPI): This signal is used by a Master Brick to
-  synchronize the actions of other Bricks in a stack.
-* **Extension SPI** (HLPI) The SPI bus for Master <-> Master-Extensions
-  communication.
-* **Extension General Purpose 0,1** (HLPI): Three general purpose signals can
-  be used by a Master Brick to control a Master-Extension. The usage depends on
-  the connected Master-Extension.
-* **Interrupt 0,1,2** (LLPI): Interrupt outputs, usage depends on
-  configuration.
-* **Stack-I2C** (HLPI/LLPI): I2C bus used by a Master to communicate with
-  Extensions (HLPI) or to interface Bricks over I2C (LLPI).
-* **Select 0-7** (HLPI): Up to eight select lines can be used by a master of a
-  stack to select up to eight Bricks in the stack. A Brick is only permitted
-  to answer messages if it is selected (Select=low). Every Brick takes the
-  first select signal of the bottom connector as its select. The other select
-  lines are shifted, such that the second select signal of the bottom is the
-  first select signal at the top, and so on. This method guarantees that the
-  next eight Bricks on the top of a master have their own select lines. If
-  more than eight Bricks would be connected to the master, only the lower
-  eight Bricks can be selected and are able to communicate with the master.
-* **Extension Select 0,1** (HLPI): Used by a master to select up to two
-  Master-Extensions. These lines are shifted by Master-Extensions
-  (working like select lines of Bricks). Hence the two lowermost
-  Master-Extensions stacked on top of a master can be used.
-* **Extension Serial Interface** (HLPI/LLPI): Used by a master to communicate
-  with Master-Extensions via a serial interface (HLPI). Since every Brick
-  connects the RXD and TXD signals, a Brick can be controlled via this serial
-  interface when using LLPI.
+Beschreibung
+""""""""""""
+
+* **Stack SPI**: Der SPI Bus für Kommunikation zwischen
+  :ref:`Brick <product_overview_bricks>` und Master Brick.
+* **JTAG**: Debug-Schnittstelle, überschneidet sich mit anderen Signals. JTAG
+  darf nicht verwendet werden, wenn der Brick Teil eines Stapels ist.
+* **Reset**: Signal um eine Brick zurückzusetzen, durch den Stapel
+  durchgeschleift so dass alle Bricks gleichzeitig zurückgesetzt werden.
+* **Stack Detect**: Signal um die Anwesenheit eines
+  :ref:`Master Bricks <master_brick>` zu erkennen.
+  Alle Bricks außer dem Master Brick haben dieses Signal durchverbunden und
+  prüfen es auf logisch 1 um Stapelteilnahme zu erkennen. Der Master Brick
+  hat dieses Signal nicht durchverbunden, sondern setzt es im oberen
+  Stapeldatenstecker auf Ausgang mit logisch 1 und im unteren Stapeldatenstecker
+  auf Eingang mit Pull-Down. Dadurch kann der Master an einem logisch 0 Signal
+  im unteren Stapeldatenstecker erkennen ob er der unterste Teilnehmer im Stapel
+  und somit Master des Stapels ist.
+* **Stack Synchronization**: Dieses Signal wird vom Master Brick verendet um
+  Aktionen andere Bricks im Stapel zu synchronisieren.
+* **Extension SPI** Der SPI Bus für Kommunikation zwischen Master Brick und
+  Master Extensions.
+* **Extension General Purpose 0,1 mit 0,1,2**: Drei General Purpose Signal pro
+  Master Extension können vom Master Brick verwendet werden um die Master
+  Extensions zu steuern. Die Verwendung hängt von der aufgesteckten Master
+  Extension ab.
+* **Interrupt 0,1,2**: Interrupt Ausgänge, die Verwendung hängt von der
+  Konfiguration ab.
+* **Stack I2C**: Der I2C Bus für Kommunikation zwischen Master Brick und Master
+  Extensions sowie anderer Bricks im Stapel.
+* **Select 0-7**: Bis zu acht Adressleitungen über die der Master des Stapels
+  bis zu acht Teilnehmer im Stapel auswählen kann. Ein Brick darf nur dann auf
+  Nachrichten antworten, wenn seine Adressleitungen gewählt ist
+  (Select = logisch 0). Jeder Brick verwendet das erste Select Signal in seinem
+  unteren Stapeldatenstecker als seine Adressleitung. Die anderen
+  Adressleitungen sind im Stecker versetzt durchverbunden, so dass die zweite
+  Adressleitung im unteren Stapeldatenstecker mit der ersten Adressleitung im
+  oberen Stapeldatenstecker verbunden ist. Dadurch haben die ersten acht Bricks
+  über dem Master des Stapels ihre eigenen Adressleitungen. Alle Bricks darüber
+  können nicht mehr adressiert werden und somit nicht mit dem Master des Stapels
+  kommunizieren.
+* **Extension Select 0,1**: Wird vom Master des Stapels verwendet um Master
+  im Stapel auszuwählen. Die Funktion und Aufbau ist gleich den Adressleitungen
+  für Bricks. Dadurch können die ersten zwei Master Extensions im Stapel mit dem
+  Master des Stapels kommunizieren.
+* **Extension Serial Interface**: Serielle Schnittstelle zwischen Master Brick
+  und Master Extension.
 
 
 .. _connector_stack_power:
 
-Stack Power Connector
-^^^^^^^^^^^^^^^^^^^^^
+Stapelstromversorgungsstecker
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tabularcolumns: |C|C|C|C|
 
 .. csv-table:: 
-   :header: "Func", "Pin", "Pin", "Func"
+   :header: "Funktion", "Pin", "Pin", "Funktion"
    :widths: 60, 25, 25, 60
 
    "PGND",		"01",		"02", "PVCC"
@@ -116,48 +116,47 @@ Stack Power Connector
    "GND",		"23",		"24", "5V"
    "GND",		"25",		"26", "5V"
    "GND",		"27",		"28", "3V3"
-   "CURRENT",	"29",		"28", "VOLTAGE"
+   "Current",	"29",		"28", "Voltage"
 
 
-Description
-"""""""""""
+Beschreibung
+""""""""""""
 
-* **PGND**: Stack power ground signal.
-* **PVCC**: Stack power signal (max. 27V), powered by
-  :ref:`Power Supplies <product_overview_power_supplies>`.
-* **GND**: Common ground signal.
-* **5V**: 5V power supply, powered by every Brick (per USB) or power supply
-  boards. Since the USB voltage depends on your PC/USB hub, the 5V
-  on this rail can not be guaranteed.
-* **3V3**: Powered by every Brick. Created with on board DC/DC power supplies
-  (5V -> 3V3).
-* **Current**: Signal to measure the current flow created by
-  :ref:`Power Supply <product_overview_power_supplies>` (max. 3.3V). Can be
-  measured by Master Bricks.
-* **Voltage**: Signal to measure the voltage of an external power supply
-  connected to a :ref:`Power Supply <product_overview_power_supplies>`
-  (max. 3.3V). Can be measured by Master Bricks.
+* **PGND**: Stapelmassesignal.
+* **PVCC**: Stapelstromversorgung (max. 27V), durch
+  :ref:`Stromversorgung <product_overview_power_supplies>` bereitgestellt.
+* **GND**: Gemeinsames Massesignal.
+* **5V**: 5V Stromversorgung, bereitgestellt durch jeden Brick (per USB) oder
+  Stromversorgungen. Da die USB Spannung vom verwendeten PC/USB Hub abhängt
+  können die 5V an diesem Pin nicht garantiert werden.
+* **3V3**: Bereitgestellt durch jeden Brick. Wird durch einen DC/DC Wandler
+  (5V -> 3V3) auf der Platine erzeugt.
+* **Current**: Signal zur Messung des Stromverbrauchs über die
+  :ref:`Stromversorgung <product_overview_power_supplies>` (max. 3,3V). Kann
+  von Master Bricks verwendet wird.
+* **Voltage**: Signal zur Messung der externen Versorgungspannung der
+  :ref:`Stromversorgung <product_overview_power_supplies>` (max. 3,3V). Kann
+  von Master Bricks verwendet wird.
 
 
 .. _connector_bricklet:
 
-Bricklet Connector
-------------------
+Brickletstecker
+---------------
 
 .. csv-table:: 
-   :header: "Pin", "Func", "Description"
+   :header: "Pin", "Funktion", "Beschreibung"
    :widths: 25, 100, 200
 
-   "01", "5V",			"5V signal, same as 5V in stack"
-   "02", "GND",			"Ground"
-   "03", "3V3",			"3.3V generated by Brick"
-   "04", "SCL",			"I2C serial clock"
-   "05", "SDA",			"I2C serial data"
-   "06", "ADDR",		"Address line (low/high) used to select Bricklets"
-   "07", "IO_1/AD",		"Input/Output 1 with analog to digital capability"
-   "08", "IO_2/DA",		"Input/Output 2 with digital to analog capability (some
-   boards)"
-   "09", "IO_3/PWM",	"Input/Output 3 with pulse with modulation capability"
-   "10", "IO_4",		"Input/Output 4"
+   "01", "5V",			"5V Signal, verbunden mit 5V des Stapels"
+   "02", "GND",			"Masse"
+   "03", "3V3",			"3,3V bereitgestellt vom Brick"
+   "04", "SCL",			"I2C Serial Clock"
+   "05", "SDA",			"I2C Serial Data"
+   "06", "ADDR",		"Adressleitung (logisch 0 oder 1) um Bricklets für I2C Kommunikation auszuwählen"
+   "07", "IO_1/AD",		"I/O 1 mit Analog-Digital-Wandler Fähigkeit"
+   "08", "IO_2/DA",		"I/O 2 mit Digital-Analog-Wandler Fähigkeit"
+   "09", "IO_3/PWM",	"I/O 3 mit Pulsweitenmodulationsfähigkeit"
+   "10", "IO_4",		"I/O 4"
 
-When not otherwise stated, all signals are 3.3V based.
+Falls nicht anders angegeben, sind alle Signale 3,3V basiert.

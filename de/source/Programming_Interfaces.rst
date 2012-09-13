@@ -6,34 +6,37 @@ Programmierschnittstellen
 
 .. _pi_hlpi:
 
-High Level Programming Interface (HLPI)
----------------------------------------
+High Level Programmierschnittstelle (HLPI)
+------------------------------------------
 
-The High Level Programming Interface uses preprogrammed devices
-(Bricks/Bricklets) that are controlled by a PC. Each device has its 
-own unique identifier (UID).
+Die High Level Programmierschnittstelle verwendet vorprogrammiert Geräte
+(Bricks und Bricklets) die von einem PC aus gesteuert werden. Jedes Geräte
+hat seine eigene eindeutige Identifikationsnummer (UID).
 
-The user calls a method implemented in the :ref:`API Bindings <api_bindings>` 
-on a device specified by a UID. 
-This method creates a data package which will be delivered to the
-:ref:`Brick <product_overview_bricks>` with the corresponding UID.
-The Brick performs the task specified in the delivered data. 
-For example in case of a "getTemperature()" call the Brick will read the
-temperature and send it back. The method call blocks until the data package 
-is received and returns the temperature.
+Der Benutzer ruft Funktionen auf den Geräten auf. Die Anbindung dieser
+Funktionen ist in den :ref:`API Bindings <api_bindings>` implementiert und das
+Gerät wird über seine UID spezifiziert.
 
-In case of calling a :ref:`Bricklet <product_overview_bricklets>` method,
-data is send to the Brick where the Bricklet is attached. The Brick 
-calls the corresponding method stored in the 
-`EEPROM <http://en.wikipedia.org/wiki/EEPROM>`__ on the Bricklet.
-This method performs the task and sends back the requested data.
+Beim Aufruf einer Funktion wird durch die API Bindings ein Datenpaket erzeugt,
+das dann zum :ref:`Brick <product_overview_bricks>` mit der entsprechenden UID
+geschickt wird. Der Brick führt die im Datenpaket definierte Funktion aus.
+Zum Beispiel, beim Aufrufe von "getTemperature()" liest der Brick die Temperatur
+des Temperatursensors aus und schickt diese in einem Datenpaket zurück. Der
+Funktionsaufruf des Benutzers blockiert bis die Antwort vom Brick eingetroffen
+ist und gibt dann die gemessene Temperatur zurück.
 
-This interface is available for Windows, Linux and Mac OS as well
-as mobile operating systems, such as Android, iOS and Windows Mobile.
+Falls eine :ref:`Bricklet <product_overview_bricklets>` Funktion aufgerufen
+wird, Dann wird das Datenpaket an den Brick geschickt an dem das Bricklet
+angeschlossen ist. Dieser Brick führt dann die entsprechende Funktion aus, die
+im `EEPROM <http://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
+des Bricklets gespeichert ist.
+
+Diese Programmierschnittstelle ist für Windows, Linux und Mac OS sowie mobile
+Betriebssystem wie Android, iOS und Windows Mobile verfügbar.
 
 .. note::
- See the :ref:`tutorial` for more information on how to use it
- and an idea of the Brick/Bricklet concept.
+ Das :ref:`tutorial` vermittelt weitere Informationen wie diese Konzept
+ verwendet werden kann.
 
 
 .. _pi_odpi:
@@ -41,14 +44,14 @@ as mobile operating systems, such as Android, iOS and Windows Mobile.
 On Device Programmierschnittstelle (ODPI)
 -----------------------------------------
 
-The On Device Programming Interface (ODPI) is an API to write your own 
-firmware for Bricks.
+Die On Device Programmierschnittstelle (ODPI) ist eine API, die es erlaubt
+eigene Firmwares für Bricks zu entwickeln.
 
 .. warning::
- Currently only the source code of the Bricks is
- `online <https://github.com/organizations/Tinkerforge>`__.
- If you have the skills to set up the compiler environment and can
- program C, you can adapt the code for your own purposes.
-   
- We are working on a simple API to allow easy firmware development
- (comparable to the Arduino API).
+ Im Moment sind nur die Quelltexte der Bricks `online
+ <https://github.com/organizations/Tinkerforge>`__ verfügbar. Falls du in der
+ Lage bist die passende Entwicklungsumgebung aufzusetzen und C programmieren
+ kannst, dann kannst du jetzt schon den Quelltext für deine Zwecke abändern.
+
+ Eine einfache API (vergleichbar der Arduino API) für einfache
+ Firmwareentwicklung ist in Arbeit.

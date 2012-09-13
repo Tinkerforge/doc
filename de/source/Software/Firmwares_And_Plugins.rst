@@ -1,6 +1,6 @@
 .. _firmwares_and_plugins:
 
-Firmwares and Plugins
+Firmwares und Plugins
 =====================
 
 .. note::
@@ -12,8 +12,8 @@ Firmwares and Plugins
  plugin of a Bricklet you will need to compile them yourself.
 
 
-Build a Brick firmware
-----------------------
+Brick Firmware kompilieren
+--------------------------
 
 You can modify and build the Brick firmwares. At the moment there is no
 official Brick API or documentation of the Brick firmware code. So you
@@ -51,15 +51,15 @@ Thats it. The build/ folder now contains the newly compiled firmware.
 
 .. _flash_firmware_on_brick:
 
-Flash firmware on a Brick
--------------------------
+Firmware auf Brick flashen
+--------------------------
 
 See :ref:`brickv_flash_firmware` in :ref:`brickv` documentation for more
 information.
 
 
-Building a Bricklet plugin
---------------------------
+Bricklet Plugin kompilieren
+---------------------------
 
 You can modify and build the Bricklet plugins. 
 You will need knowledge in C programming to do this. The plugins are
@@ -105,8 +105,8 @@ Build the plugin::
 Thats it. The build/ folder now contains the newly compiled plugin.
 
 
-Flash plugin on a Bricklet
---------------------------
+Plugin auf Bricklet flashen
+---------------------------
 
 See :ref:`brickv_flash_plugin` in :ref:`brickv` documentation for more
 information.
