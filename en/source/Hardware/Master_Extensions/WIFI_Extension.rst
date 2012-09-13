@@ -128,7 +128,7 @@ searches for slaves only at startup.
 You should now be able to see all connected stacks in the Brick Viewer.
 
 
-.. _chibi_configuration:
+.. _wifi_configuration:
 
 Chibi Configuration
 ^^^^^^^^^^^^^^^^^^^

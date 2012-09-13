@@ -142,7 +142,7 @@ sucht. Jetzt sollten alle Bricks und Bricklets des Chibi Netzwerkes im Brick
 Viewer angezeigt werden.
 
 
-.. _chibi_configuration:
+.. _wifi_configuration:
 
 Chibi Konfiguration
 ^^^^^^^^^^^^^^^^^^^
