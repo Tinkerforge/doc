@@ -3,7 +3,7 @@
 Product Overview
 ----------------
 
-There are four different types of hardware components:
+Our products are divided into four different categories:
 
 * :ref:`Bricks <product_overview_bricks>`:
   Stackable microcontroller boards for sensing and controlling.
@@ -67,8 +67,8 @@ sensor tasks (e.g. :ref:`IMU Brick <imu_brick>`),
 communicate (e.g. :ref:`Master Brick <master_brick>`)
 and drive motors (e.g. :ref:`DC Brick <dc_brick>`).
 
-Bricks can be stacked together to a stack. A Master Brick
-at the bottom of this stack can control all boards within the stack.
+Bricks can be assembled into a stack. A Master Brick at the bottom of a
+stack is responsible for the communication all boards within the stack.
 This master routes the messages between the boards in the stack and the PC
 (:ref:`High Level Programming Interface <pi_hlpi>`).
 For the user, the stack behaves as if all Bricks were connected separately
@@ -76,8 +76,8 @@ over USB with the PC.
 See :ref:`Tutorial Stacking <tutorial_build_stacks>` for more information
 about stacks.
 
-Besides the :ref:`High Level Programming Interface <pi_hlpi>` it is also
-possible to use Bricks with the :ref:`On Device Programming Interface <pi_hlpi>`.
+Besides the :ref:`High Level Programming Interface <pi_hlpi>` it will also
+possible to use Bricks with an :ref:`On Device Programming Interface <pi_odpi>`.
 
 .. include:: Product_Overview_bricks.table
 
@@ -111,9 +111,9 @@ Master Extensions can be utilized to change the interface of a Master Brick.
 There are cable based and wireless Master Extensions available. From a
 programming perspective the different interfaces are transparent.
 A stack with Master Extension behaves as if every board in the stack
-would be directly connected to the PC over an USB connection. This means:
+would be directly connected to the PC over an USB connection.
 
-You can develop an application with all
+This means: You can develop an application with all
 boards independently connected to the PC over USB. Later you can stack these
 boards together to stacks, add Master Bricks and cable based or wireless
 Extensions and you can run the previously written code without any changes.
@@ -174,16 +174,17 @@ Bricklets
 
 Bricklets can be used to extend the features of
 :ref:`Bricks <product_overview_bricks>`. There are Bricklets to measure
-physical values such as rotation, voltage, current and ambient light
-as well as Bricklets for control purposes such as
-switching relays, digital input/output and drawing on LCDs.
+physical quantity such as rotation, voltage, current and ambient light
+as well as Bricklets for control purposes such as switching relays, digital
+input/output and alphanumeric output on LCDs.
 
 Unlike Bricks, Bricklets have no fixed size. Each Bricklet has the minimum
 size possible. Each Brick has up to four connectors for Bricklets.
 
 On startup a Brick detects connected Bricklets. The Bricklet plugins,
-stored in the EEPROM of the Bricklet, are copied into the flash of the
-Brick. This adds methods to the Brick, that can then be called from the PC.
+stored in the `EEPROM <http://en.wikipedia.org/wiki/EEPROM>`__ of the Bricklet,
+are loaded into the flash of the Brick. This adds new functions to the Brick,
+that can then be used from the PC.
 
 See :ref:`High Level Programming Interface <pi_hlpi>` for more information.
 
@@ -205,9 +206,8 @@ Power Supplies
        :align: center
        :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
 
-A stack can be powered by the
-master of the stack over its USB connection.
-This option is limited by the USB specification (500mA).
+A stack can be powered by the master of the stack over its USB connection.
+This option is limited by the USB specification to 500mA.
 A large stack may need more power than 500mA.
 
 To provide greater currents, Power Supplies are available.

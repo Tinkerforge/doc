@@ -12,8 +12,8 @@ Firmwares and Plugins
  plugin of a Bricklet you will need to compile them yourself.
 
 
-Build a Brick firmware
-----------------------
+Building a Brick firmware
+-------------------------
 
 You can modify and build the Brick firmwares. At the moment there is no
 official Brick API or documentation of the Brick firmware code. So you
