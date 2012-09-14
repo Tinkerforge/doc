@@ -192,7 +192,7 @@ WIFI Extension.
    :scale: 100 %
    :alt: WIFI Extension with caption
    :align: center
-   :target: ../../_images/Bricks/extension_wifi_caption_800.jpg
+   :target: ../../_images/Extensions/extension_wifi_caption_800.jpg
 
 TODO: blue = power, green = status (off=error, blink=associating, on=associated)
 TODO: U.FL and RP-SMA connector usable, U.FL good in a casing (RP-SMA can be 
