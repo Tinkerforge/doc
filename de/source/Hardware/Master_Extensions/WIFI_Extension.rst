@@ -7,24 +7,39 @@ WIFI Extension
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Extensions/extension_chibi_tilted_350.jpg",
-	               "Extensions/extension_chibi_tilted_600.jpg",
+	    tfdocstart("Extensions/extension_wifi_tilted_350.jpg",
+	               "Extensions/extension_wifi_tilted_600.jpg",
 	               "WIFI Extension")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_chibi_tilted_complete_100.jpg",
-	             "Extensions/extension_chibi_tilted_complete_600.jpg",
-	             "WIFI Extension")
+	    tfdocimg("Extensions/extension_wifi_stack_100.jpg",
+	             "Extensions/extension_wifi_stack_600.jpg",
+	             "WIFI Extension with Master Brick in a stack")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_chibi_top_100.jpg",
-	             "Extensions/extension_chibi_top_600.jpg",
-	             "WIFI Extension Oberseite")
+	    tfdocimg("Extensions/extension_wifi_horizontal_100.jpg",
+	             "Extensions/extension_wifi_horizontal_600.jpg",
+	             "WIFI Extension from top")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_chibi_bottom_100.jpg",
-	             "Extensions/extension_chibi_bottom_600.jpg",
-	             "WIFI Extension Unterseite")
+	    tfdocimg("Extensions/extension_wifi_bottom_100.jpg",
+	             "Extensions/extension_wifi_bottom_600.jpg",
+	             "WIFI Extension from bottom")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_wifi_caption_100.jpg",
+	             "Extensions/extension_wifi_caption_600.jpg",
+	             "WIFI Extension with caption")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_wifi_ufl_100.jpg",
+	             "Extensions/extension_wifi_ufl_600.jpg",
+	             "U.FL connector of WIFI Extension")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_wifi_front_100.jpg",
+	             "Extensions/extension_wifi_front_600.jpg",
+	             "WIFI Extension from front")
 	}}
 	{{ tfdocend() }}
 
@@ -32,59 +47,49 @@ WIFI Extension
 Features
 --------
 
-* 700/800/900MHz Funk Transceiver
-* Erlaubt drahtlose Verbindungen zwischen Stapeln
-* Konfigurierbare Frequenz und Kanal
-* Messbare Signalstärke
+* Control Bricks/Bricklets wirelessly over your mobile phone or tablet
+* Operates with 802.11b/g/n access points, WEP, WPA, WPA2 Personal and Enterprise
+* Equipped with 18dBm power amplifier for extended range
+* External RP-SMA antenna connector
 
 
-Beschreibung
-------------
+Description
+-----------
 
-Die Chibi Extension ist mit einem 700/800/900MHz Funk Transceiver ausgestattet.
-Typischerweise wird dieser für weitreichende `Zigbee
-<http://de.wikipedia.org/wiki/ZigBee>`__ Netzwerke eingesetzt.
-Leider verbieten es die Zigbee Bedingungen eine GPL Implementierung des Zigbee
-Protokoll Stacks (klicke `hier
-<http://freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`__
-für weitere Informationen).
+With this WIFI Extension you can control :ref:`Bricks <product_overview_bricks>` and
+:ref:`Bricklets <product_overview_bricklets>` wirelessly over your
+mobile phone, tablet or your PC. For the Master Extension concept please take a look at the general
+:ref:`description <product_overview_master_extensions>`. The Extension is equipped with a `GainSpan <http://www.gainspan.com>`__
+`GS1011MEES <http://www.gainspan.com/gs1011mees>`__ WIFI module with an internal power amplifier
+which allows for superior range compared to other WIFI modules.
 
-Daher haben wir uns dazu entschlossenden den Open Source `Chibi Wireless Stack
-<http://freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`__
-für diese Extension zu portieren. Es ist ein einfacher und kleiner Protokoll
-Stack der perfekt geeignet ist für unsere Anwendungen.
+The devices supports two modes. In Full Speed Mode the device WIFI transceiver is always on.
+New incoming data will be immediately handled. In Low Power Mode the devices is not always on,
+the transceiver enters sleep mode after each message. This leads to a significantly lower power
+consumption and data throughput.
 
-Bei guten Bedingungen können Reichweiten **bis zu 2km** draußen erreicht werden.
+Since the device itself handles TCP/IP packages it is possible to connect directly from your controling
+device (mobile phone, tablet, (embedded) PC). A :ref:`brick daemon <brickd>` is not necessary.
 
-Um ein Chibi Netzwerk aufzubauen sind mindestens zwei Chibi Extensions and zwei
-Master Bricks notwendig. Jeder dieser Master Bricks kann in einem Stapel aus
-Bricks und Bricklets stecken, wobei einer der Master Bricks per USB und der
-andere über eine externe Stromversorgung versorgt wird. Aus Programmierersicht
-ist das Chibi Netzwerk vollkommen transparent, d.h. alle Bricks und Bricklets
-können genauso benutzt werden als wenn sie einzelnd per USB angeschlossen wären.
-
-Es ist auch möglich ein Netzwerk mit mehr als zwei Chibi Extensions aufzubauen,
-wobei immer nur ein Stapel per USB verbunden sein darf (Many-to-One Routing).
-
-.. note::
- Nach der Konfiguration verhalten sich alle Module des Netzwerks als wenn sie
- einzeln per USB mit dem PC verbunden wären. Daher sind keine
- Programmcodeänderungen notwendig. Allerdings ist die
- Übertragungsgeschwindigkeit von USB höher als die von Chibi, so dass mit
- einem geringeren Durchsatz gerechnet werden muss.
+To use this WIFI Extension a :ref:`Master Brick <master_brick>` is mandatory.
+If you want to use other Bricks, you can build a stack and plug them also on top
+of the Master Brick. If you want to use Bricklets you can attach them at the Master Brick or
+at other Bricks in the stack. From the programming perspective
+this is completely transparent, i.e. all Bricks and Bricklets can
+be used exactly the same way as if they were connected to your controlling device via USB.
 
 
-Technische Spezifikation
+Technical Specifications
 ------------------------
 
 ================================  =============================================================================
-Eigenschaft                       Wert
+Property                          Value
 ================================  =============================================================================
-Stromverbrauch                    110mA (transmit), 23mA (during sleep)
+Current Consumption               110mA (transmit), 23mA (during sleep)
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
-Maximale Reichweite (Outdoor)     TBD
-Maximale Transferrate             TBD
+Maximum Range (Outdoor)           TBD
+Maximum Transfer Rate             TBD
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
 RF Output Power (Typical)         18dBm
@@ -93,134 +98,125 @@ Security Protocols                WEP, WPA, WPA2 (Personal and Enterprise), EAP-
 Operating Temperature             -40°C to +85°C
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
-Abmessungen (B x T x H)           40 x 40 x 16mm (1.57 x 1.57 x 0.63")
-Gewicht                           18g
+Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
+Weight                            18g
 ================================  =============================================================================
 
 
-Ressourcen
-----------
+Resources
+---------
 
-* AT86RF212 Datenblatt (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/datasheets/at86rf212.pdf>`__)
-* Schaltplan (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/hardware/chibi-extension-schematic.pdf>`__)
-* Umriss und Bohrplan (`Download <../../_images/Dimensions/chibi_extension_dimensions.png>`__)
-* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/chibi-extension/zipball/master>`__)
+* AT86RF212 datasheet (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/datasheets/at86rf212.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/chibi-extension/raw/master/hardware/chibi-extension-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/chibi_extension_dimensions.png>`__)
+* Source code and design files (`Download <https://github.com/Tinkerforge/chibi-extension/zipball/master>`__)
 
 
-Chibi Netzwerkaufbau
---------------------
+Chibi Network Assembly
+----------------------
 
-Ein Chibi Netzwerk besteht aus einem Master und mehreren Slaves. Der Chibi
-Master ist der Master Brick der per USB an den PC angeschlossen ist auf dem
-der Brick Daemon läuft. Alle anderen Master Bricks mit Chibi Extension dürfen
-keine USB Verbindung haben (sie können allerdings seit Master Brick Firmware
-1.1.3 eine USB Power Supply verwenden). Jede Chibi Extension hat eine eigene
-Adresse. Diese Adressen müssen innerhalb der Sendereichweite eindeutig sein.
+A Chibi network consists of one master and multiple slaves.
+Chibi master is the Master Brick which has a USB connection to the PC
+running the Brick Daemon. All the other Master Bricks with Chibi Extension must
+not have a USB connection (they can use a USB Power Supply since Master Brick
+firmware 1.1.3). Each Chibi Extension is identified with its own address.
+The addresses have to be unique in the transmission range.
 
 .. note::
- Falls mehrere Netzwerke mit gleichen Kanal und Frequenzeinstellungen
- nebeneinander betrieben werden sollen, dann muss sichergestellt sein, dass
- die einzelnen Adressen innerhalb der Sendereichweite eindeutig sein und nicht
- in mehreren Netzwerken gleichzeitig benutzt werden.
+ If you use multiple networks in parallel with identical channel and
+ frequency make sure that every address is unique and not used in different
+ networks in transmission range.
 
-Um ein Chibi Netzwerk aufzubauen muss zuerst die Chibi Extension auf einen
-Master Brick gesteck werden und der Master Brick über USB mit dem PC verbunden
-werden. Im Brick Viewer sollte jetzt ein Master Brick mit erkannter Chibi
-Extension angezeigt werden. Die Chibi Extension muss jetzt als Master oder
-Slave konfiguriert werden wie :ref:`hier <chibi_configuration>` beschrieben.
+To create a Chibi network, stack the Chibi Extension on top of a Master Brick.
+Connect the Master Brick via USB with your PC and start the Brick Viewer
+software. You should see the Master Brick view
+with the identified Chibi Extension (see image below). Configure the extension
+as slave or master (as described :ref:`here <wifi_configuration>`).
 
-Wenn alle Chibi Extensions konfiguriert sind kann das Gesamtsystem
-zusammengebaut werden. Verbinde die benötigten Bricks und Bricklets zu Stapeln.
-Der Master jedes Stapels muss der unterste Brick sein (außer ganz
-unten steckt eine Stromversorgung). Die Chibi Extension kann an einem beliebigen
-Platz oberhalb des Masters gesteckt werden.
+If you have configured all extensions you can build your system. Connect
+Bricks and Bricklets as you like. The Master of each stack has to be the
+lowermost Brick (except if you are using a Power Supply). The Chibi Extension
+can be positioned in the stack as you wish.
 
-Nachdem alles zusammen gesteckt ist kann das System gestartet werden. Dabei
-müssen zuerst alle Chibi Slaves gestartet werden bevor der Chibi Master
-gestartet wird, da der Chibi Master nur direkt nach dem Start nach den Slaves
-sucht. Jetzt sollten alle Bricks und Bricklets des Chibi Netzwerkes im Brick
-Viewer angezeigt werden.
+After you have plugged together your system you have to power it up.
+You have to power up the slaves before the master, since the Chibi master
+searches for slaves only at startup.
+You should now be able to see all connected stacks in the Brick Viewer.
 
 
 .. _wifi_configuration:
 
-Chibi Konfiguration
+Chibi Configuration
 ^^^^^^^^^^^^^^^^^^^
 
 .. note::
- Die Chibi Konfiguration wurde in Brick Viewer 1.0.6 geändert. In vorherigen
- Versionen war es nicht notwendig anzugeben ob einen Chibi Extension als
- Master oder Slave arbeiten soll (dies wurde auf anderem Wege ermittelt).
+ The Chibi configuration changed starting from Brick Viewer version 1.0.6,
+ before this version it was not necessary to specify if the extension
+ should be used as master or slave (it was inferred by other means).
 
- Es stellte sich aber heraus, dass dies für die meisten Benutzer sehr verwirrend
- war. Daher empfehlen wird auf die neuste Brick Viewer Version zu aktualisieren
- bevor du dein Chibi Netzwerk konfigurierst.
+ It turns out that this was highly confusing to most, so we recommend that
+ you update to the newest Brick Viewer version before you configure your
+ Chibi network.
 
-Um eine Chibi Extension zu konfigurieren musst du zuerst eine eindeutige Adresse
-für jede Chibi Extension festlegen sowie eine Frequenz und einen Kanal für das
-gesamte Chibi Netzwerk bestimmen.
+To configure a Chibi Extension you have to choose a unique
+address and a frequency and channel first.
 
 .. image:: /Images/Extensions/extension_chibi.jpg
    :scale: 100 %
-   :alt: Konfiguration der Chibi Adresse, Frequenz und Kanal
+   :alt: Configuration of Chibi address, frequency and channel
    :align: center
    :target: ../../_images/Extensions/extension_chibi.jpg
 
-Um eine Chibi Extension als Slave zu konfigurieren musst du zuerst "Slave" als
-Typ auswählen und dann die Adresse des Chibi Masters angeben.
+If you want to configure the extension as slave, you have to choose
+"Slave" as type and specify the address of the Chibi master.
 
 .. image:: /Images/Extensions/extension_chibi_slave.jpg
    :scale: 100 %
-   :alt: Konfiguration einer Chibi Extension für Slave Modus
+   :alt: Configuration of Chibi in slave mode
    :align: center
    :target: ../../_images/Extensions/extension_chibi_slave.jpg
 
-Um eine Chibi Extension als Master zu konfigurieren musst du zuerst "Master" als
-Typ auswählen und dann eine Liste (getrennt mit Komma) an Adresse von Chibi
-Slaves angeben, mit denen der Chibi Master kommunizieren soll.
+If you want to configure the extension as master, you have to choose
+"Master" as type and specify a list of the slave addresses the master should
+be able to talk to (as a comma separated list).
 
 .. image:: /Images/Extensions/extension_chibi_master.jpg
    :scale: 100 %
-   :alt: Konfiguration einer Chibi Extension für Master Modus
+   :alt: Configuration of Chibi in master mode
    :align: center
    :target: ../../_images/Extensions/extension_chibi_master.jpg
 
 
-Chibi Netzwerkmodifikation
+Chibi Network Modification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn du etwas am Netzwerk verändern willst, z.B. neue Bricks oder Bricklets
-hinzufügen, dann musst du den betreffenden Stapel zuerst von seiner
-Stromversorgung trennen. Nachdem du die Änderungen vorgenommen hast kannst du
-ihn wieder an seine Stromversorgung anschließen. Falls der Stapel ein Chibi
-Slave ist, dann muss auch der dazugehörige Chibi Master neugestartet werden,
-da dieser nur beim Start seine zugehörigen Chibi Slaves sucht und die
-Kommunikation mit ihnen aufnimmt. Den Neustart des Chibi Masters kannst du
-durch drücken seines Reset Knopfes erreichen, bzw. durch ein kurzes Trennen
-seiner USB Verbindung.
+If you want to change something in your network, e.g. add new Bricks or
+Bricklets, you have to power down the stack you like to change. Change it
+and repower it. If the node was a Chibi slave, you also have to reset the
+Chibi master (it only searches for new Bricks/Bricklets on startup).
+This can be achieved by a power cycle or pressing the reset
+button on the Master Brick.
 
 
-Chibi Frequenz und Kanal
-^^^^^^^^^^^^^^^^^^^^^^^^
+Chibi Frequency and Channel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Chibi Extension unterstützt verschiedene Frequenzen mit mehrere Kanälen. In
-verschiedenen Teilen der Welt sind jeweils verschiedene Frequenzen und Kanäle
-zur Nutzung freigeben.
+The Chibi Extension supports several frequencies with different channels
+and different frequencies are allowed in different countries.
 
-Hier ist eine Liste von Frequenzen und zugehörigen Kanälen:
+Here is a small list of frequencies with corresponding possible channels:
 
 .. csv-table::
- :header: "Frequenz", "Mögliche Kanäle"
+ :header: "Frequency", "Possible Channels"
  :widths: 40, 60
 
- "OQPSK 868Mhz (Europa)", "0"
+ "OQPSK 868Mhz (Europe)", "0"
  "OQPSK 915Mhz (US)", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
  "OQPSK 780Mhz (China)", "0, 1, 2, 3"
  "BPSK40 915Mhz", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
 
 .. warning::
- Die Chibi Extension wird als elektronisches Bauteil verkauft. **Du** baust
- ein System mit diesem Bauteil und es liegt in deiner Verantwortung, dass das
- gebaute System den gesetzlichen Bestimmungen entspricht. Du musst auch
- sicherstellen, dass die konfigurierte Frequenz in deinem Land für die
- Nutzung freigegeben ist!
+ The Chibi Extension is sold as an electronic component. **You** are building
+ a system with this component and it is your responsibility that the
+ system you are building meets your local statutory regulations. Make sure that
+ you are allowed to use the frequency you are configuring!

@@ -7,24 +7,39 @@ WIFI Extension
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Extensions/extension_chibi_tilted_350.jpg",
-	               "Extensions/extension_chibi_tilted_600.jpg",
+	    tfdocstart("Extensions/extension_wifi_tilted_350.jpg",
+	               "Extensions/extension_wifi_tilted_600.jpg",
 	               "WIFI Extension")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_chibi_tilted_complete_100.jpg",
-	             "Extensions/extension_chibi_tilted_complete_600.jpg",
-	             "WIFI Extension")
+	    tfdocimg("Extensions/extension_wifi_stack_100.jpg",
+	             "Extensions/extension_wifi_stack_600.jpg",
+	             "WIFI Extension with Master Brick in a stack")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_chibi_top_100.jpg",
-	             "Extensions/extension_chibi_top_600.jpg",
-	             "WIFI Extension top")
+	    tfdocimg("Extensions/extension_wifi_horizontal_100.jpg",
+	             "Extensions/extension_wifi_horizontal_600.jpg",
+	             "WIFI Extension from top")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_chibi_bottom_100.jpg",
-	             "Extensions/extension_chibi_bottom_600.jpg",
-	             "WIFI Extension bottom")
+	    tfdocimg("Extensions/extension_wifi_bottom_100.jpg",
+	             "Extensions/extension_wifi_bottom_600.jpg",
+	             "WIFI Extension from bottom")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_wifi_caption_100.jpg",
+	             "Extensions/extension_wifi_caption_600.jpg",
+	             "WIFI Extension with caption")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_wifi_ufl_100.jpg",
+	             "Extensions/extension_wifi_ufl_600.jpg",
+	             "U.FL connector of WIFI Extension")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_wifi_front_100.jpg",
+	             "Extensions/extension_wifi_front_600.jpg",
+	             "WIFI Extension from front")
 	}}
 	{{ tfdocend() }}
 
@@ -35,7 +50,7 @@ Features
 * Control Bricks/Bricklets wirelessly over your mobile phone or tablet
 * Operates with 802.11b/g/n access points, WEP, WPA, WPA2 Personal and Enterprise
 * Equipped with 18dBm power amplifier for extended range
-* External RP-SMA antenna connector
+* External RP-SMA and U.FL antenna connector
 
 
 Description
