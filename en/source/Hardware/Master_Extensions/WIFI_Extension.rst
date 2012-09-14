@@ -93,7 +93,7 @@ Maximum Transfer Rate             TBD
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
 RF Output Power (Typical)         18dBm
-External Antenna Connector        RP-SMA Female (with pin inside)
+External Antenna Connector        RP-SMA Female (with pin inside) and U.FL
 Security Protocols                WEP, WPA, WPA2 (Personal and Enterprise), EAP-FAST, EAP-TLS, EAP-TTLS, PEAP
 Operating Temperature             -40°C to +85°C
 --------------------------------  -----------------------------------------------------------------------------
@@ -113,17 +113,21 @@ Resources
 
 .. _wifi_network_assembly:
 
-WIFI Network Assembly
----------------------
+WIFI Network
+------------
 
-TODO
+TODO: Icon of Tablet/Smart phone controlling wireless stack
+TODO: USB power supply test (how big is stack possible?)
+TODO: Connect to port/ip of WIFI Extension in program (instead of localhost),
+small example program?
+TODO: No brickd!!!
 
 .. _wifi_configuration:
 
 WIFI Configuration
 ------------------
 
-Connection TODO
+Connection TODO: DHCP or static ip
 
 .. image:: /Images/Extensions/extension_wifi_connection_dhcp.jpg
    :scale: 100 %
@@ -131,7 +135,7 @@ Connection TODO
    :align: center
    :target: ../../_images/Extensions/extension_wifi_connection_dhcp.jpg
 
-TODO
+TODO: For static ip: ip, gw, subnet mask needed
 
 .. image:: /Images/Extensions/extension_wifi_connection_static.jpg
    :scale: 100 %
@@ -139,7 +143,8 @@ TODO
    :align: center
    :target: ../../_images/Extensions/extension_wifi_connection_static.jpg
 
-Encryption TODO
+Encryption TODO: WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) and WEP possible
+TODO: For WPA ssid and key (in hex notation)
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa.jpg
    :scale: 100 %
@@ -147,7 +152,9 @@ Encryption TODO
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wpa.jpg
 
-TODO
+TODO: For WPA Enterprise configure outer auth (FAST, TLS, TTLS, PEAP), 
+inner auth (MSCHAP, GTC), type (ca cert, client cert, private key),
+user, pass and certificate.
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa_enterprise.jpg
    :scale: 100 %
@@ -155,7 +162,7 @@ TODO
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wpa_enterprise.jpg
 
-TODO
+TODO: For WEP: ssid, key and key index, if key index unknown it is likely 1.
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wep.jpg
    :scale: 100 %
@@ -163,7 +170,8 @@ TODO
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wep.jpg
 
-Power Mode TODO
+Power Mode TODO: Full Speed vs Low Power. Lower Power only if very
+few messages needed
 
 .. image:: /Images/Extensions/extension_wifi_power_mode.jpg
    :scale: 100 %
@@ -185,3 +193,7 @@ WIFI Extension.
    :alt: WIFI Extension with caption
    :align: center
    :target: ../../_images/Bricks/extension_wifi_caption_800.jpg
+
+TODO: blue = power, green = status (off=error, blink=associating, on=associated)
+TODO: U.FL and RP-SMA connector usable, U.FL good in a casing (RP-SMA can be 
+desoldered in that case).
