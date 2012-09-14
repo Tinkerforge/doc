@@ -116,9 +116,9 @@ It is necessary to assign the Unique Identifier (UID) of the Brick
 your device!
 
 .. note::
-   The easiest way to get the UID of your device is to use the Brick Viewer.
-   If you connect a device to the PC, the Viewer will display the UID in 
-   the "Setup" tab. 
+ The easiest way to get the UID of your device is to use the Brick Viewer.
+ If you connect a device to the PC, the Viewer will display the UID in 
+ the "Setup" tab. 
 
 In **Line 15** the DC Brick object is attached to the IP Connection.
 This makes it possible to control multiple devices on different 
@@ -135,8 +135,8 @@ for your own project.
 
 .. note::
  A full description of the API and further examples can be found in the
- description page of the product. In case of the DC Brick 
- :ref:`here <dc_brick_programming_interfaces>`.
+ description page of the product. In case of the
+ DC Brick :ref:`here <dc_brick_programming_interfaces>`.
 
 
 Add Bricklets to extend features
