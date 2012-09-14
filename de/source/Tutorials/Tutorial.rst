@@ -3,6 +3,9 @@
 Tutorial
 ========
 
+.. note::
+ Diese Seite wird in kürze auch vollständig in Deutsch verfügbar sein.
+
 The following tutorial will demonstrate how to use 
 :ref:`Bricks <product_overview_bricks>` and 
 :ref:`Bricklets <product_overview_bricklets>` 
@@ -15,6 +18,7 @@ controllable by a rotary
 a :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`. At the end
 we show how to stack Bricks together to reduce wiring and
 communicate over wireless or cable based interfaces.
+
 
 Use a single Brick
 ------------------
@@ -64,6 +68,7 @@ Different sliders allow you to modify velocity and acceleration
 of the motor as well as the 
 `PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency 
 of the driver. After clicking "Enable" you are in control of the motor. 
+
 
 Phase 2: Write your own Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -129,10 +134,10 @@ Run this python script and use it or other examples as a starting point
 for your own project.
 
 .. note::
+ A full description of the API and further examples can be found in the
+ description page of the product. In case of the DC Brick 
+ :ref:`here <dc_brick_programming_interfaces>`.
 
-   A full description of the API and further examples can be found in the
-   description page of the product. In case of the DC Brick 
-   :ref:`here <dc_brick_programming_interfaces>`.
 
 Add Bricklets to extend features
 --------------------------------
@@ -148,6 +153,7 @@ We use a :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>` and the
 :ref:`DC Brick <dc_brick>` from the previous part of this tutorial,
 but it is easy to transfer the shown concepts to any Bricklet
 connected to any Brick.
+
 
 Phase 1: Testing
 ^^^^^^^^^^^^^^^^
@@ -212,7 +218,7 @@ After this the motor is stopped and the IP Connection destroyed.
 .. _tutorial_build_stacks:
 
 Build Stacks
----------------
+------------
 
 To reduce wiring and save space it is possible to stack Bricks.
 You need a :ref:`Master Brick <master_brick>` at the bottom with a PC 
@@ -247,17 +253,16 @@ The master of the stack can measure the voltage and the current flow
 of the connected power supply.
 
 .. note::
-
-   Each driver Brick switches automatically to the stack internal
-   power signal if no external supply is attached over the on-board
-   power-connector. Keep this in mind!
+ Each driver Brick switches automatically to the stack internal
+ power signal if no external supply is attached over the on-board
+ power-connector. Keep this in mind!
 
 In the following we extend the previous part by attaching a Master Brick
 below the DC Brick with the connected rotary poti.
 
 .. note::
+ The white corners show how to plug the Bricks together.
 
-   The white corners show how to plug the Bricks together.
 
 Phase 1: Testing
 ^^^^^^^^^^^^^^^^
@@ -277,6 +282,7 @@ This setup is depicted in the image below.
 If you connect the Master Brick to the PC over USB, 
 the Brick Viewer should show the Master Brick (measuring current and voltage
 flowing through the stack), the DC Brick and the Rotary Poti Bricklet.
+
 
 Phase 2: Write your own Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

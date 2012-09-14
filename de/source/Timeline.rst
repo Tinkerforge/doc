@@ -1,3 +1,5 @@
+.. _timeline:
+
 Timeline
 ========
 
@@ -23,7 +25,7 @@ Termine haben.
    "23", "Brick Flashing Support für Brick Viewer (Kein SAM-BA mehr nötig)", "`fertig <http://www.tinkerforge.com/doc/Software/Brickv.html#brick-firmware-flashing>`__"
    "26", "RS485 Extension", "`fertig <https://shop.tinkerforge.com/master-extensions/rs485-master-extension.html>`__"
    "30", "Delphi Bindings", "`fertig <http://www.tinkerforge.com/doc/index.html#bricks>`__"
-   "37", "Vollständige Deutsche Dokumentation", "Fertig Ende der Woche"
+   "37", "Vollständige Deutsche Dokumentation", "fast fertig"
    "38", "WIFI Extension", "`Prototyp <http://de.blog.tinkerforge.com/2012/9/10/wifi-extension-update>`__"
    "40", "Barometer Bricklet", "Leiterpatten bestellt"
    "41", "Vorstellung von Tinkerforge Industrial Bricklets", "Prototyp"

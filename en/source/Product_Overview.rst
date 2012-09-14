@@ -1,7 +1,7 @@
 .. _product_overview:
 
 Product Overview
-----------------
+================
 
 Our products are divided into four different categories:
 
@@ -22,7 +22,7 @@ together.
 .. _product_overview_bricks:
 
 Bricks
-^^^^^^
+------
 
 .. container:: tfdocimages
 
@@ -85,7 +85,7 @@ possible to use Bricks with an :ref:`On Device Programming Interface <pi_odpi>`.
 .. _product_overview_master_extensions:
 
 Master Extensions
-^^^^^^^^^^^^^^^^^
+-----------------
 
 .. container:: tfdocimages
 
@@ -124,7 +124,7 @@ Extensions and you can run the previously written code without any changes.
 .. _product_overview_bricklets:
 
 Bricklets
-^^^^^^^^^
+---------
 
 .. container:: tfdocimages
 
@@ -194,7 +194,7 @@ See :ref:`High Level Programming Interface <pi_hlpi>` for more information.
 .. _product_overview_power_supplies:
 
 Power Supplies
-^^^^^^^^^^^^^^
+--------------
 
 .. container:: tfdocimages
 

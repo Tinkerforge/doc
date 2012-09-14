@@ -3,6 +3,9 @@
 Modbus
 ======
 
+.. note::
+ Diese Seite wird in kürze auch vollständig in Deutsch verfügbar sein.
+
 Dies ist die API Beschreibung für das Modbus RTU Protokoll der RS485 Extension.
 
 Eine Übersicht über die Produkte die über Modbus kontrolliert

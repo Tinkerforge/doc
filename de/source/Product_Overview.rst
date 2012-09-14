@@ -1,7 +1,7 @@
 .. _product_overview:
 
 Produkt Übersicht
------------------
+=================
 
 Unsere Produkte gliedern sich in vier verschiedene Kategorien:
 
@@ -23,7 +23,7 @@ Das :ref:`Tutorial <tutorial>` erklärt wie alles zusammen funktioniert.
 .. _product_overview_bricks:
 
 Bricks
-^^^^^^
+------
 
 .. container:: tfdocimages
 
@@ -84,7 +84,7 @@ Zukunft auch möglich sein über eine :ref:`On Device Programmierschnittstelle
 .. _product_overview_master_extensions:
 
 Master Extensions
-^^^^^^^^^^^^^^^^^
+-----------------
 
 .. container:: tfdocimages
 
@@ -123,7 +123,7 @@ Programm ohne Änderungen weiter.
 .. _product_overview_bricklets:
 
 Bricklets
-^^^^^^^^^
+---------
 
 .. container:: tfdocimages
 
@@ -196,7 +196,7 @@ Information.
 .. _product_overview_power_supplies:
 
 Stromversorgungen
-^^^^^^^^^^^^^^^^^
+-----------------
 
 .. container:: tfdocimages
 

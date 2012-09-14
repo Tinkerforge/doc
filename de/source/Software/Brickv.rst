@@ -3,6 +3,9 @@
 Brick Viewer (brickv)
 =====================
 
+.. note::
+ Diese Seite wird in kürze auch vollständig in Deutsch verfügbar sein.
+
 Der Brick Viewer bietet eine graphische Oberfläche um
 :ref:`Bricks <product_overview_bricks>` und
 :ref:`Bricklets <product_overview_bricklets>` zu testen. Each device has its own

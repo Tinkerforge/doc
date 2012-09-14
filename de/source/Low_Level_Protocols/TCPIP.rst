@@ -3,6 +3,9 @@
 TCP/IP
 ======
 
+.. note::
+ Diese Seite wird in kürze auch vollständig in Deutsch verfügbar sein.
+
 Dies ist die API Beschreibung für das TCP/IP Protokoll des Brick Daemons.
 
 Eine Übersicht über die Produkte die über TCP/IP kontrolliert
