@@ -7,12 +7,12 @@ help:
 
 html:
 	@echo "=== Generate 'en' documentation ================="
-	@pushd en; $(MAKE) $(MFLAGS) html; popd
+	@cd en; $(MAKE) $(MFLAGS) html; cd ..
 	@echo "=== Generate 'de' documentation ================="
-	@pushd de; $(MAKE) $(MFLAGS) html; popd
+	@cd de; $(MAKE) $(MFLAGS) html; cd ..
 
 clean:
 	@echo "=== Clean 'en' documentation ================="
-	@pushd en; $(MAKE) $(MFLAGS) clean; popd
+	@cd en; $(MAKE) $(MFLAGS) clean; cd ..
 	@echo "=== Clean 'de' documentation ================="
-	@pushd de; $(MAKE) $(MFLAGS) clean; popd
+	@cd de; $(MAKE) $(MFLAGS) clean; cd ..
