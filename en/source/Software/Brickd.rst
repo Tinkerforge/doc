@@ -3,7 +3,7 @@
 Brick Daemon (brickd)
 =====================
 
-The Brick Daemon is a daemon (or service on Windows) that acts as a bridge 
+The Brick Daemon is a daemon (or service on Windows) that acts as a bridge
 between the :ref:`Bricks <product_overview_bricks>`/:ref:`Bricklets
 <product_overview_bricklets>` and the :ref:`API bindings <api_bindings>` for
 the different programming languages.
@@ -29,7 +29,7 @@ Windows
 ^^^^^^^
 
 To install the Brick Deamon (Service) on a Windows, download the
-Brick Deamon .exe form :ref:`here <downloads_tools>`. 
+Brick Deamon .exe form :ref:`here <downloads_tools>`.
 Click on the downloaded file, this should open the installer:
 
 .. image:: /Images/Screenshots/brickd_windows_1_small.jpg
@@ -68,7 +68,7 @@ Windows Driver Installation
 
 Depending on your Windows version it is necessary
 to install a Brick driver. This driver needs to be installed for each of your
-Bricks independently. 
+Bricks independently.
 
 Connect your Brick over USB to your PC. If a driver installation
 is necessary you should see an window like below:
@@ -80,9 +80,9 @@ is necessary you should see an window like below:
    :target: ../_images/Screenshots/brickd_windows_driver_1.jpg
 
 If you have not installed the driver before,
-Windows does not know our drivers and you have to specify the 
+Windows does not know our drivers and you have to specify the
 driver location. You can find the drivers in your Brick Daemon installation
-directory. If you have installed the drivers before, you can choose the
+folder. If you have installed the drivers before, you can choose the
 "Install the software automatically" option since Windows already knows
 the driver location.
 
@@ -100,7 +100,7 @@ Choose the driver location manually.
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_3.jpg
 
-You will find them in your Brickd program directory in the "drivers" folder.
+You will find them in your Brickd program folder in the "drivers" folder.
 
 .. image:: /Images/Screenshots/brickd_windows_driver_4_small.jpg
    :scale: 100 %
@@ -111,23 +111,22 @@ You will find them in your Brickd program directory in the "drivers" folder.
 After a successful installation the Brick should use a driver called "Brick_Driver".
 You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
 
-.. note:: Under Windows 7 it is possible that Windows tries to install the 
-   drivers automatically and you don't have the choice to choose them manually.
-   This automatic driver installation can fail without 
-   your notice. If you don't see Bricks in the Brick Viewer, please check in 
-   the Windows "Device Manager" that the drivers for the connected Bricks are
-   installed correctly. If not, please choose the "driver" folder in Brick 
-   Daemon Installation and install the drivers manually.
-
-
+.. note::
+ Under Windows 7 it is possible that Windows tries to install the
+ drivers automatically and you don't have the choice to choose them manually.
+ This automatic driver installation can fail without
+ your notice. If you don't see Bricks in the Brick Viewer, please check in
+ the Windows "Device Manager" that the drivers for the connected Bricks are
+ installed correctly. If not, please choose the ``drivers`` folder in Brick
+ Daemon installation and install the drivers manually.
 
 
 Linux
 ^^^^^
 
-To install the Brick Daemon on a Debian based distribution 
-(Ubuntu, Mint, etc.), download the Brick Daemon .deb from 
-:ref:`here <downloads_tools>`. Right-click on the file and choose 
+To install the Brick Daemon on a Debian based distribution
+(Ubuntu, Mint, etc.), download the Brick Daemon .deb from
+:ref:`here <downloads_tools>`. Right-click on the file and choose
 "Open with GDebi Package Installer":
 
 .. image:: /Images/Screenshots/brickd_linux_1_small.jpg
@@ -163,14 +162,14 @@ To install Brick Daemon from the console use the following::
 To install Brick Daemon from source, download the source from
 `here <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
-* python-twisted 
-* python-gudev 
+* python-twisted
+* python-gudev
 * libusb-1.0-0
 
 On Debian based distributions you can do that as shown above, on other
 distribution you have to search for and install the equivalent packages.
 
-To start brickd from source, change to the directory 
+To start brickd from source, change to the folder
 brickd/src/brickd/ and start with::
 
  sudo python brickd_linux.py
@@ -186,7 +185,7 @@ Mac OS X
 ^^^^^^^^
 
 To install the Brick Daemon on Mac OS X download the .dmg
-from :ref:`here <downloads_tools>`. Click on the downloaded file, this 
+from :ref:`here <downloads_tools>`. Click on the downloaded file, this
 should open the package:
 
 .. image:: /Images/Screenshots/brickd_macos_1_small.jpg

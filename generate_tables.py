@@ -182,7 +182,7 @@ download_bindings_table_head = {
  :delim: |
  :widths: 10, 60
 
- **Language** | """
+ **Sprache** | """
 }
 
 download_firmwares_table_head = {

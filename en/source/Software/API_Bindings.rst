@@ -51,8 +51,8 @@ bindings should work on most architectures (ARM, x86, etc.) and on most
 operating systems (Windows and POSIX systems, such as Linux and Mac OS, etc.).
 
 As an example we will compile the Stepper Brick configuration example
-with gcc on Windows and Linux.
-For that we have to copy the IP connection and the Stepper Brick
+with GCC on Windows and Linux.
+For that we have to copy the IP Connection and the Stepper Brick
 bindings (``ip_connection.h``, ``ip_connection.c``, ``brick_stepper.c`` and
 ``brick_stepper.h``) from the ``bindings/`` folder as well as the
 ``example_configuration.c`` from the ``examples/brick/stepper/`` folder into our
@@ -70,9 +70,9 @@ compilation of the example with GCC on Linux looks like::
 
  gcc -pthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
 
-On Windows Win32 is used for threading and WinSock2 for the network connection.
-Under MinGW we can compile the example as following (the library linking must
-come after the source)::
+On Windows Win32 is used for threading and WinSock2 (``ws2_32``) for the network
+connection. Under MinGW we can compile the example as following (the library
+linking must come after the source)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
 
@@ -81,22 +81,24 @@ With Visual Studio we can use our ``project_folder/`` as follows:
 * File
 * New
 * Project From Existing Code
-* Type: Visual C++
+* Choose Type "Visual C++"
 * Choose ``project_folder/``
-* Choose project name
-* Next
-* Choose Console Application
-* Finish
+* Choose a project name
+* Click Next
+* Choose "Console Application"
+* Click Finish
 
-Now we have to tell Visual Studio to use the C++ compiler, since we
-would need C99 but Visual Studio can only compile C89... Also we have to
-include ``ws2_32.lib`` by clicking on:
+Now we have to tell Visual Studio to use the C++ compiler, since we would need
+C99 but Visual Studio can only compile C89. This problem can be avoided by
+using the C++ compiler instead:
 
 * Project
 * Properties
 * C/C++
 * Advanced, option "Compile as"
 * Choose "Compile as C++ Code (/TP)"
+
+Also we have to include ``ws2_32.lib`` (WinSock2) by clicking on:
 
 * Project
 * Properties
@@ -108,7 +110,7 @@ Thats it, we are ready to go!
 
 The Visual Studio compiler can also be used from the command line::
 
- cl /TP /I. brick_stepper.c ip_connection.c example_configuration.c /link /out:example_configuration.exe ws2_32.lib
+ cl.exe /TP /I. brick_stepper.c ip_connection.c example_configuration.c /link /out:example_configuration.exe ws2_32.lib
 
 
 .. _api_bindings_c_ios:
@@ -116,32 +118,32 @@ The Visual Studio compiler can also be used from the command line::
 C/C++ (iOS)
 ^^^^^^^^^^^
 
-Objective-C is compatible to C. This allows to use the C/C++ bindings
-(see :ref:`above <api_bindings_c>`) in an iOS App.
+Objective-C is compatible to C. This allows to use the :ref:`C/C++ bindings
+<api_bindings_c>` in an iOS App.
 
 In the following we assume that you already have the iOS development environment
 installed.
 
-As an example we will create a small project that can toggle a relay. It
-should be easy to adjust this example for your needs.
+As an example we will create a small project that can toggle a Dual Relay
+Bricklet. It should be easy to adjust this example for your needs.
 
 Start a new Xcode project by clicking on:
 
 * File
 * New
 * Project...
-* Choose iOS Application
-* Choose Single View Application
+* Choose "iOS Application"
+* Choose "Single View Application"
 * Click Next
-* Choose Product Name (e.g. Relay)
+* Choose a "Product Name" (e.g. Relay)
 * Click Next
-* Choose a Folder for the project
+* Choose a "Folder" for the project
 * Click Create
 
 Add the C/C++ bindings code:
 
 * Right click on the Relay folder in the Project navigator
-* New Group, choose name Tinkerforge
+* New Group, choose name "Tinkerforge"
 * Right click on new Tinkerforge group
 * Add Files to "Relay"...
 * Choose all files from the ``bindings`` folder of the C/C++ bindings
@@ -149,7 +151,7 @@ Add the C/C++ bindings code:
 Below is a small example program that turns a relay on and off with a toggle button.
 
 Edit ``AppDelegate.h`` as shown below and add the two variables for the IPConnection
-and DualRelay objects and the toggleRelays Interface Builder action.
+and DualRelay objects and the ``toggleRelays`` Interface Builder action.
 
 .. code-block:: objc
 
@@ -169,10 +171,9 @@ and DualRelay objects and the toggleRelays Interface Builder action.
 
  @end
 
-
 Edit ``AppDelegate.m`` as shown below to create the IPConnection and DualRelay
 objects after the App is launched. For simplicity no error handling is done here.
-In the toggleRelays action the state of both relays is switched.
+In the ``toggleRelays`` action the state of both relays is switched.
 
 .. code-block:: objc
 
@@ -210,7 +211,7 @@ Switch *Value Changed* event with the *toggleRelays* action:
 * Right click on the Switch
 * Click on the circle right of the Value Changed event
 * Drag a line to the First Responder
-* Choose toogleRelays from the action menu
+* Choose "toogleRelays" from the action menu
 
 .. image:: /Images/Screenshots/ios_xcode_small.jpg
    :scale: 100 %
@@ -224,17 +225,19 @@ Switch *Value Changed* event with the *toggleRelays* action:
 
   * - .. image:: /Images/Screenshots/ios_xcode_event1_small.jpg
        :scale: 100 %
-       :alt: Xcode example for C/C++ bindings in iOS, connect event, step 1
+       :alt: Xcode example for C/C++ bindings in iOS, connect event (step 1)
        :align: center
        :target: ../_images/Screenshots/ios_xcode_event1.jpg
 
     - .. image:: /Images/Screenshots/ios_xcode_event2_small.jpg
        :scale: 100 %
-       :alt: Xcode example for C/C++ bindings in iOS, connect event, step 2
+       :alt: Xcode example for C/C++ bindings in iOS, connect event (step 2)
        :align: center
        :target: ../_images/Screenshots/ios_xcode_event2.jpg
 
-Test the App in the simulator by clicking the Run button.
+Test the App in the simulator by clicking the Run button. Don't forget to change
+the UID and the host IP address to the correct values for your brickd host and
+your Dual Relay Bricklet.
 
 
 .. _api_bindings_csharp:
@@ -242,7 +245,7 @@ Test the App in the simulator by clicking the Run button.
 C#
 ^^
 
-The C# bindings consist of a library for all Tinkerforge Bricks and Bricklets
+The C# bindings consist of a library (.dll) for all Tinkerforge Bricks and Bricklets
 (``Tinkerforge.dll``), the source of the DLL (in ``source/``) and all available
 C# examples (in ``examples/``).
 
@@ -266,48 +269,47 @@ In this folder we can now call the C# compiler with the following parameters
  1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
  2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
 
-Or, alternatively add the DLL and the Example in an C# IDE of your choice
-(such as Visual Studio or Mono Develop).
+Or, alternatively add the DLL and the Example in an C# development environment
+of your choice (such as Visual Studio or Mono Develop).
 
-Documentation for the API can be found :ref:`here <index_bricks>`.
 
 .. _api_bindings_csharp_windows_phone:
-
 
 C# (Windows Phone)
 ^^^^^^^^^^^^^^^^^^
 
 **Requirements**: Windows Phone SDK 7.1 or newer
 
-For Windows Phone the normal C# bindings can be used
-(see :ref:`above <api_bindings_csharp>`). The asynchronous sockets that
-are needed for Windows Phone are currently not supported in Mono. Since
-the DLL is build to be compatible with C# 2.0 and Mono, the DLL is not
+For Windows Phone the normal :ref:`C# bindings <api_bindings_csharp>` can be
+used. The asynchronous sockets that are needed for Windows Phone are currently
+not supported in Mono. Since the ``Tinkerforge.dll`` is build to be compatible
+with C# 2.0 and Mono, the DLL is not
 compatible with Windows Phone. To overcome this we have added asynchronous
 sockets for Windows Phone with ``#if WINDOWS_PHONE`` directives in the socket
-code. This means you can add the ``Tinkerforge`` folder (from the ``source/`` folder
-in the C# bindings) as an external resource. The complete C# API bindings
+code. This means you can add the ``Tinkerforge`` folder (from the ``source/``
+folder in the C# bindings) as an external resource. This makes Visual Studio
+compile the bindings for Windows Phone. The complete C# bindings
 work with Windows Phone SDK >= 7.1 (SDK 7.0 does not support sockets
 and can thus not be used to interface with the Brick Daemon).
 
 In the following we assume that you already have Visual Studio for Windows
 Phone installed. As an example we will create a small project that can toggle
-a relay. It should be easy to adjust this example for your needs.
+a Dual Relay Bricklet. It should be easy to adjust this example for your needs.
 
 Start a new project by clicking on:
 
 * File
 * New Project...
-* Choose Visual C#
-* Choose Windows Phone Application
-* Choose Name (e.g. Relay)
+* Choose "Visual C#"
+* Choose "Windows Phone Application"
+* Choose a name (e.g. Relay)
 * Click OK
-* Choose Target Windows Phone OS 7.1
+* Choose Target as "Windows Phone OS 7.1"
 * Click OK
 
 * Right click on project in Solution Explorer
 * Add
-* New Folder, choose name Tinkerforge
+* New Folder, choose name "Tinkerforge"
 * Right click on Tinkerforge
 * Add
 * Existing Item, choose all files from ``source/Tinkerforge/`` folder of C#
@@ -383,7 +385,8 @@ Double click on the toggle button to edit the ``MainPage.xaml.cs``:
 Start the emulator with F5. You should be able to toggle a relay with
 the toggle button on your Windows Phone. Don't forget to change the
 UID and the host IP address to the correct values for your brickd host and
-your Relay Bricklet.
+your Dual Relay Bricklet.
+
 
 .. _api_bindings_delphi:
 
@@ -408,9 +411,9 @@ as Linux and Mac OS, etc.).
 As an example we will compile the Stepper Brick configuration example with
 the Free Pascal Compiler (FPC) that comes with the Lazarus. For that we
 have to copy the IP Connection (``Base58.pas``, ``BlockingQueue.pas``, ``Device.pas``,
-``IPConnection.pas``, ``LEConverter.pas`` and T``imedSemaphore.pas``) and the Stepper
+``IPConnection.pas``, ``LEConverter.pas`` and ``TimedSemaphore.pas``) and the Stepper
 Brick bindings (``BrickStepper.pas``) from the ``bindings/`` folder as well as the
-ExampleConfiguration.pas from the ``examples/Brick/Stepper/`` folder into our
+``ExampleConfiguration.pas`` from the ``examples/Brick/Stepper/`` folder into our
 project::
 
  project_folder/
@@ -432,12 +435,12 @@ With Lazarus we can use our ``project_folder/`` by clicking:
 
 * Project
 * New Project from file ...
-* Choose project_folder/ExampleConfiguration.pas
-* Open
-* Choose Console Application
-* OK
-* Choose Application class name and Title
-* OK
+* Choose ``project_folder/ExampleConfiguration.pas``
+* Click Open
+* Choose "Console Application"
+* Click OK
+* Choose "Application Class Name" and "Title"
+* Click OK
 
 With Delphi XE2 (older Delphi version should work similar) we can use our
 ``project_folder/`` as follows. First rename ``ExampleConfiguration.pas`` to
@@ -445,8 +448,8 @@ With Delphi XE2 (older Delphi version should work similar) we can use our
 
 * Project
 * Add Existing Project...
-* Choose project_folder/ExampleConfiguration.dpr
-* Open
+* Choose ``project_folder/ExampleConfiguration.dpr``
+* Click Open
 
 
 .. _api_bindings_java:
@@ -455,13 +458,13 @@ Java
 ^^^^
 
 The Java bindings consist of a library (.jar) for all Tinkerforge Bricks and
-Bricklets (``Tinkerforge.jar``), the source of the jar (in ``source/``) and all
+Bricklets (``Tinkerforge.jar``), the source of the JAR (in ``source/``) and all
 available Java examples (in ``examples/``).
 
 The library can be used without any further extensions. As an example lets
 compile the configuration example of the Stepper Brick.
 
-For this we create a folder and copy the Tinkerforge.jar and the
+For this we create a folder and copy the ``Tinkerforge.jar`` and the
 ``examples/Brick/Stepper/ExampleConfiguration.java`` into this folder::
 
  example_folder/
@@ -479,12 +482,11 @@ and run it with the following parameters (1. Windows and 2. Linux/Mac OS)::
  1.) java -cp Tinkerforge.jar;. ExampleConfiguration
  2.) java -cp Tinkerforge.jar:. ExampleConfiguration
 
-(Note: The difference is colon vs semicolon)
+.. note::
+ The difference between 1. and 2. is semicolon vs colon
 
-Or, alternatively add the jar and the Example in an Java IDE of your choice
-(such as Eclipse or NetBeans).
-
-Documentation for the API can be found :ref:`here <index_bricks>`.
+Or, alternatively add the JAR and the Example in an Java development environment
+of your choice (such as Eclipse or NetBeans).
 
 
 .. _api_bindings_java_android:
@@ -492,16 +494,16 @@ Documentation for the API can be found :ref:`here <index_bricks>`.
 Java (Android)
 ^^^^^^^^^^^^^^
 
-For Android the normal Java bindings can be used
-(see :ref:`above <api_bindings_java>`).
+For Android the normal :ref:`Java bindings <api_bindings_java>` can be used.
 
 In the following we assume that you already have the Android development
 environment installed. If you are just starting with Android development,
 you should first complete the `hello world tutorial
-<http://developer.android.com/resources/tutorials/hello-world.html>`__ from Google.
+<http://developer.android.com/resources/tutorials/hello-world.html>`__ from
+Google.
 
-As an example we will create a small project that can toggle
-a relay. It should be easy to adjust this example for your needs.
+As an example we will create a small project that can toggle a Dual Relay
+Bricklet. It should be easy to adjust this example for your needs.
 
 Start a new project by clicking on:
 
@@ -509,12 +511,13 @@ Start a new project by clicking on:
 * New
 * Project...
 * Android Project
-* Choose name (e.g. ``relay``)
-* Choose target
-* Choose package name (e.g. ``org.example``)
-* Finish
+* Choose "Name" (e.g. ``relay``)
+* Choose "Target"
+* Choose "Package name" (e.g. ``org.example``)
+* Click Finish
 
-Copy complete ``com/tinkerforge/`` folder from ``source/`` into ``PROJECTFOLDER/src/``
+Copy the complete ``com/tinkerforge/`` folder from ``source/`` into your
+``PROJECTFOLDER/src/`` folder.
 
 Edit the source. Don't forget to set the host IP address to the IP address of the
 PC running brickd. You can use your local IP address or the IP address you are
@@ -542,13 +545,13 @@ toggle button.
      private static final String host = "192.168.178.35";
      private static final int port = 4223;
      private static final String UID = "Axb";
+     private IPConnection ipcon;
      private BrickletDualRelay dr;
      private ToggleButton tb;
 
      @Override
      public void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
-         IPConnection ipcon;
 
          try {
              ipcon = new IPConnection(host, port);
@@ -574,7 +577,6 @@ toggle button.
      }
  }
 
-
 After that you have to add the Internet permission (to be able
 to use the network):
 
@@ -582,7 +584,7 @@ to use the network):
 
  <uses-permission android:name="android.permission.INTERNET" />
 
-to AndroidManifest.xml on the same level as the ``<application>`` tag.
+to ``AndroidManifest.xml`` on the same level as the ``<application>`` tag.
 
 Your application should now look as depicted below:
 
@@ -592,12 +594,12 @@ Your application should now look as depicted below:
    :align: center
    :target: ../_images/Screenshots/android_eclipse.jpg
 
-
 Test in simulator by clicking:
 
 * Run
 * Run
 * Android Application
+
 
 .. _api_bindings_php:
 
@@ -614,7 +616,7 @@ You can install the PEAR package with the pear tool::
 
  pear install Tinkerforge.tgz
 
-After that you can use the examples as they are.
+After that you can use all examples as they are.
 
 If you can't or don't want to use the PEAR package, you can also use the source
 directly, just create a folder for your project and copy the ``Tinkerforge``
@@ -636,18 +638,27 @@ needed. For the Stepper Brick examples we need ``IPConnection.php`` and
   -> BrickStepper.php
   -> ExampleConfiguration.php
 
-we have to remove the Tinkerforge directory from the examples, i.e. instead of::
+we have to remove the ``Tinkerforge`` folder from the examples, i.e. instead of:
 
+.. code-block:: php
+
+ <?php
  require_once('Tinkerforge/IPConnection.php');
  require_once('Tinkerforge/BrickStepper.php');
+ ...
+ ?>
 
-we use::
+we use:
 
+.. code-block:: php
+
+ <?php
  require_once('IPConnection.php');
  require_once('BrickStepper.php');
+ ...
+ ?>
 
 After that, the example can be executed again.
-
 
 
 .. _api_bindings_python:
@@ -687,24 +698,28 @@ needed. For the Stepper Brick examples we need ``ip_connection.py`` and
   -> brick_stepper.py
   -> example_configuration.py
 
-we have to remove the tinkerforge package from the examples, i.e. instead of::
+we have to remove the ``tinkerforge`` package from the examples, i.e. instead of:
 
- from tinkerforge.ip_connection
- from tinkerforge.brick_stepper
+.. code-block:: python
 
-we use::
+ from tinkerforge.ip_connection import IPConnection
+ from tinkerforge.brick_stepper import Stepper
 
- from ip_connection
- from brick_stepper
+we use:
+
+.. code-block:: python
+
+ from ip_connection import IPConnection
+ from brick_stepper import Stepper
 
 After that, the example can be executed again.
 
-.. note:: Windows installation hint
+.. note::
+ Windows installation hint:
 
  * Install easy_install: http://pypi.python.org/pypi/setuptools#windows (setuptools)
  * Open Windows command shell
  * Execute ``C:\\YourPythonDir\\Scripts\\easy_install.exe C:\\PathToEgg\\tinkerforge.egg``
-
 
 
 .. _api_bindings_ruby:
@@ -744,12 +759,16 @@ needed. For the Stepper Brick examples we need ``ip_connection.rb`` and
   -> brick_stepper.rb
   -> example_configuration.rb
 
-we have to remove the tinkerforge package from the examples, i.e. instead of::
+we have to remove the ``tinkerforge`` package from the examples, i.e. instead of:
+
+.. code-block:: ruby
 
  require 'tinkerforge/ip_connection'
  require 'tinkerforge/brick_stepper'
 
-we use::
+we use:
+
+.. code-block:: ruby
 
  require 'ip_connection'
  require 'brick_stepper'

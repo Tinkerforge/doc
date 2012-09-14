@@ -4,49 +4,52 @@ Firmwares und Plugins
 =====================
 
 .. note::
- If you accidentally erased the firmware of a Brick or Bricklet, you can
- download the latest firmware and plugin versions
- :ref:`here <downloads_firmwares_plugins>`.
+ Falls du aus versehen die Firmware deines Bricks or Bricklets gelöscht hast,
+ dann kannst du die neusten Firmwares und Plugins :ref:`hier
+ <downloads_firmwares_plugins>` herunterladen.
 
- Only if you want to change something in a firmware of a Brick or a
- plugin of a Bricklet you will need to compile them yourself.
+ Nur wenn du die Firmware eines Bricks oder das Plugin eines Bricklets nach
+ deinen Vorstellungen ändern willst musst du sie selbst kompilieren.
 
 
 Brick Firmware kompilieren
 --------------------------
 
-You can modify and build the Brick firmwares. At the moment there is no
-official Brick API or documentation of the Brick firmware code. So you
-will need some prior knowledge in C programming to do this.
+Du kannst selbst die Firmware eines Bricks verändern und kompilieren. Im Moment
+gibt es keine offizielle Brick API oder Dokumentation über den Quelltext der
+Firmware. Also musst du dich schon etwas in C Programmierung auskennen und den
+bestehenden Quelltext lesen.
 
-The source code for all Bricks and Bricklets can be found in the Tinkerforge
-`github account <https://github.com/Tinkerforge/>`__. In the following
-a small overview on what you have to do to compile the Servo Brick firmware,
-as an example.
+Die Quelltexte für alle Bricks und Bricklets sind auf unserem `Github Account
+<https://github.com/Tinkerforge/>`__ verfügbar. Im Folgenden wird anhand der
+Servo Brick Firmware kurz erklärt wie man den Quelltext kompiliert.
 
-Clone the firmware git repository::
+Zuerst muss das Servo Brick Repository geclont werden::
 
  git clone https://github.com/Tinkerforge/servo-brick.git
 
-Clone the bricklib into the src/ directory of the firmware (a symlink will also work)::
+Dann wird noch die bricklib benötigt, diese muss in den ``software/src/`` Ordner
+der Firmware geclont werden (ein Symlink funktioniert auch)::
 
- cd servo-brick/software/src
+ cd servo-brick/software/src/
  git clone https://github.com/Tinkerforge/bricklib.git
 
-Download and install the gcc none-eabi compiler from 
+Als Compiler wird GCC in der none-eabi Version für ARM benötigt. Lade diesen von
 `CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
+herunter und installiere ihn.
 
-Generate the Makefile in the software/ folder (you will need cmake)::
+Erzeugt das Makefile im ``software/`` Ordner (dafür wir CMake benötigt)::
 
- cd servo-brick/software 
+ cd servo-brick/software/
  ./generate_makefile
 
-Build the firmware::
+Kompiliere die Firmware::
 
  cd servo-brick/software/build/
  make
 
-Thats it. The build/ folder now contains the newly compiled firmware.
+Das war's. Im ``software/build/`` Ordner liegt jetzt die frisch kompilierte
+Firmware: ``servo-brick.bin``.
 
 
 .. _flash_firmware_on_brick:
@@ -54,59 +57,61 @@ Thats it. The build/ folder now contains the newly compiled firmware.
 Firmware auf Brick flashen
 --------------------------
 
-See :ref:`brickv_flash_firmware` in :ref:`brickv` documentation for more
-information.
+Siehe :ref:`brickv_flash_firmware` in der :ref:`Brick Viewer <brickv>`
+Dokumentation für weitere Informationen.
 
 
 Bricklet Plugin kompilieren
 ---------------------------
 
-You can modify and build the Bricklet plugins. 
-You will need knowledge in C programming to do this. The plugins are
-compiled as position independent code (so it is easy for the Bricks to
-use them). This means that there are lots of C features you might take
-for granted that will not work in Bricklet plugins. For example you
-can not just call any library functions, the functions have to be provided
-by the Brick through the Bricklet API (BA). Global variables have to be
-written into the Bricklet Context (BC) and configurations for the Bricklet 
-can be read from the Bricklet Settings (BS). All of these are provided
-by the Bricks to be used by Bricklet plugins. If you think you are up
-to that, you should take a look at the source code to see how it exactly
-works.
+Du kannst selbst das Plugin eines Bricklets verändern und kompilieren.
+Du wirst etwas tiefere Kenntnisse in C Programmierung brauchen. Die
+Plugins werden als Position Independent Code übersetzt, so ist es für die
+Bricks leichter diese zu verwenden. Das bedeutet aber auch, dass viele der
+C Features die man als gegeben ansieht nicht funktionieren. Zum Beispiel können
+nicht einfach Funktionen aus der Standardbibliothek aufgerufen werden. Solche
+Funktionen müssen vom Brick durch die Bricklet API (BA) bereitgestellt werden.
+Globale Variablen können nur im Bricklet Context (BC) gespeichert werden.
+Die Konfiguration des Bricklets ist über die Bricklet Settings (BS) abrufbar.
+All dies wird vom Brick bereit gestellt. Falls du dich dem gewachsen fühlst,
+dann schau dir den Quelltext an um zu verstehen wie es im Detail funktioniert.
 
-The source code for all Bricks and Bricklets can be found in the Tinkerforge
-`github account <https://github.com/Tinkerforge/>`__. In the following
-a small overview on what you have to do to compile the Joystick Bricklet 
-plugin, as an example.
+Die Quelltexte für alle Bricks und Bricklets sind auf unserem `Github Account
+<https://github.com/Tinkerforge/>`__ verfügbar. Im Folgenden wird anhand des
+Joystick Bricklet Plugins kurz erklärt wie man den Quelltext kompiliert.
 
-Clone the plugin git repository::
+Zuerst muss das Joystick Bricklet Repository geclont werden::
 
  git clone https://github.com/Tinkerforge/joystick-bricklet.git
 
-Clone the bricklib and the brickletlib (you need both) into the src/ directory of the plugin (a symlink will also work)::
+Dann wird noch die bricklib und die brickletlib benötigt, diese müssen in den
+``software/src/`` Ordner des Plugins geclont werden (ein Symlink funktioniert
+auch)::
 
  cd joystick-bricklet/software/src
  git clone https://github.com/Tinkerforge/bricklib.git
  git clone https://github.com/Tinkerforge/brickletlib.git
 
-Download and install the gcc none-eabi compiler from 
+Als Compiler wird GCC in der none-eabi Version für ARM benötigt. Lade diesen von
 `CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
+herunter und installiere ihn.
 
-Generate the Makefile in the software/ folder (you will need cmake)::
+Erzeugt das Makefile im ``software/`` Ordner (dafür wir CMake benötigt)::
 
- cd joystick-bricklet/software 
+ cd joystick-bricklet/software
  ./generate_makefile
 
-Build the plugin::
+Kompiliere das Plugin::
 
- cd servo-brick/software/build/
+ cd joystick-bricklet/software/build/
  make
 
-Thats it. The build/ folder now contains the newly compiled plugin.
+Das war's. Im ``software/build/`` Ordner liegt jetzt das frisch kompilierte
+Plugin: ``joystick-bricklet.bin``.
 
 
 Plugin auf Bricklet flashen
 ---------------------------
 
-See :ref:`brickv_flash_plugin` in :ref:`brickv` documentation for more
-information.
+Siehe :ref:`brickv_flash_plugin` in der :ref:`Brick Viewer <brickv>`
+Dokumentation für weitere Informationen.

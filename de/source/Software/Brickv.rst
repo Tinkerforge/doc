@@ -8,8 +8,8 @@ Der Brick Viewer bietet eine graphische Oberfläche um
 :ref:`Bricklets <product_overview_bricklets>` zu testen. Each device has its own
 view that shows the main features and allows to control them.
 
-Additionally brickv can be used to calibrate the analog to digital converter
-(ADC) of the Bricks to improve measurement quality 
+Additionally brickv can be used to calibrate the analog-to-digital converter
+(ADC) of the Bricks to improve measurement quality
 (see :ref:`here <brickv_adc_calibration>`)
 and to flash bricklet plugins (see :ref:`here <brickv_flash_plugin>`).
 
@@ -54,9 +54,9 @@ After this you have finished the installation process.
 Linux
 ^^^^^
 
-To install the Brick Viewer on a Debian based distribution 
-(Ubuntu, Mint, etc.), download the Brick Viewer .deb from 
-:ref:`here <downloads_tools>`. Right-click on the file and choose 
+To install the Brick Viewer on a Debian based distribution
+(Ubuntu, Mint, etc.), download the Brick Viewer .deb from
+:ref:`here <downloads_tools>`. Right-click on the file and choose
 "Open with GDebi Package Installer":
 
 .. image:: /Images/Screenshots/brickv_linux_1_small.jpg
@@ -96,7 +96,7 @@ To install Brick Viewer from the console use the following::
 To install Brick Viewer from source, download the source from
 `here <https://github.com/Tinkerforge/brickv>`__ and install the dependencies:
 
-* python-qt4 
+* python-qt4
 * python-qt4-gl
 * python-qwt5-qt4
 * python-opengl
@@ -105,7 +105,7 @@ To install Brick Viewer from source, download the source from
 On Debian based distributions you can do that as shown above, on other
 distribution you have to search for and install the equivalent packages.
 
-To start brickv from source, change to the directory 
+To start brickv from source, change to the folder
 brickv/src/brickv/ and start with::
 
  python main.py
@@ -125,7 +125,7 @@ Mac OS X
 ^^^^^^^^
 
 To install the Brick Viewer on Mac OS X, download the
-.dmg form :ref:`here <downloads_tools>`. 
+.dmg form :ref:`here <downloads_tools>`.
 Click on the downloaded file, this should open the package:
 
 .. image:: /Images/Screenshots/brickv_macos_1_small.jpg
@@ -150,9 +150,9 @@ some unexplained reason).
 Usage
 -----
 
-To use the Brick Viewer you have to first start the 
+To use the Brick Viewer you have to first start the
 :ref:`Brick Daemon <brickd>` either on the same PC or on a PC in the same
-network. Enter the IP (localhost if you started the Brick Daemon on the 
+network. Enter the IP (localhost if you started the Brick Daemon on the
 same PC). Press "connect". Now you can go through the tabs at the top
 and test your Bricks and Bricklets.
 
@@ -177,8 +177,8 @@ reach the maximum or the voltage measurements in a stack are slightly off)
 it is possible that the calibration of the ADC is to blame.
 
 To measure analog values, the microcontrollers
-on the Bricks have analog to digital converter (ADC). It is never guaranteed 
-that an ADC on a microcontroller is perfectly calibrated. To overcome 
+on the Bricks have analog-to-digital converter (ADC). It is never guaranteed
+that an ADC on a microcontroller is perfectly calibrated. To overcome
 this problem, we make it possible to calibrate the ADC in your Bricks.
 
 For the calibration you need one of the potentiometer Bricklets (Rotary Poti
@@ -240,8 +240,8 @@ select "Custom..." from the dropdown box and specify a local file via the
 "Browse..." button.
 
 .. note::
- On Windows you might need to install Atmel driver "atm6124_cdc.inf" from the
- drivers subdirectory in the Brick Viewer installation directory.
+ On Windows you might need to install Atmel driver ``atm6124_cdc.inf`` from the
+ drivers subfolder in the Brick Viewer installation folder.
 
  If you have an old Linux kernel you might need to install the kernel driver
  from `here <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
@@ -282,5 +282,5 @@ select "Custom..." from the dropdown box and specify a local file via the
 You can also read the UID currently written on the Bricklet and set a
 new one. Note that the UID has to be in Base58 encoding
 (i.e. 0-9a-zA-Z without 0 (zero), I (big i), O (big o) and l (small L)).
-The only other restriction is that all Bricklet UIDs you use at the same 
+The only other restriction is that all Bricklet UIDs you use at the same
 time need to be unique, you can use recognizable names or patterns.
