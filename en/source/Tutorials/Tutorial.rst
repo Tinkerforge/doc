@@ -132,8 +132,8 @@ for your own project.
 
 .. note::
  A full description of the API and further examples can be found in the
- description page of the product. In case of the DC Brick 
- :ref:`here <dc_brick_programming_interfaces>`.
+ description page of the product. In case of the
+ DC Brick :ref:`here <dc_brick_programming_interfaces>`.
 
 
 Add Bricklets to extend features
