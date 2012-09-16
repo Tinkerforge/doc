@@ -106,7 +106,7 @@ Weight                            18g
 Resources
 ---------
 
-* GS1011MEES datasheet (`Download <https://github.com/Tinkerforge/wifi-extension/raw/master/datasheets/GS1011M_Datasheet.pdf>`__)
+* GS1011MEES Homepage (`here <http://www.gainspan.com/gs1011mees>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/wifi-extension/raw/master/hardware/wifi-extension-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/wifi-extension/zipball/master>`__)
@@ -116,18 +116,49 @@ Resources
 WIFI Network
 ------------
 
+With this Master Extension you will be able to create a connection to
+a Master Brick and all of its connected Bricks and Bricklets.
+No Brick Deamon is necessary if you use this Extension.
+
+If you want to connect the Brick Viewer with your WIFI setup,
+you have to enter the IP of the WIFI Extension and the configured port
+in the Setup Tab. After pressing "Connect" you will not connect to your local
+running Brick Daemon but to your WIFI Extension.
+
+.. note::
+ TODO Screenshot
+
+For your own code modify the passed host and port
+at your IPConnection call, e.g. change:
+
+.. code-block:: python
+
+ ipcon = IPConnection("localhost", 4223)
+
+to
+
+.. code-block:: python
+
+ ipcon = IPConnection("192.168.0.25", 4223)
+
+
+
 TODO: Icon of Tablet/Smart phone controlling wireless stack
 TODO: USB power supply test (how big is stack possible?)
-TODO: Connect to port/ip of WIFI Extension in program (instead of localhost),
-small example program?
-TODO: No brickd!!!
 
 .. _wifi_configuration:
 
 WIFI Configuration
 ------------------
 
-Connection TODO: DHCP or static ip
+.. note::
+
+ Currently Adhoc Mode is not supported.
+
+First of all you have to enter the SSID of your wireless network
+and if the device should use DHCP or a static IP.
+
+In case of you want to use DHCP simply select DHCP and configure the port.
 
 .. image:: /Images/Extensions/extension_wifi_connection_dhcp.jpg
    :scale: 100 %
@@ -135,7 +166,8 @@ Connection TODO: DHCP or static ip
    :align: center
    :target: ../../_images/Extensions/extension_wifi_connection_dhcp.jpg
 
-TODO: For static ip: ip, gw, subnet mask needed
+If you want to use a static IP you have to configure that IP and the port.
+Additionally configure the subnet mask and gateway address.
 
 .. image:: /Images/Extensions/extension_wifi_connection_static.jpg
    :scale: 100 %
@@ -143,8 +175,11 @@ TODO: For static ip: ip, gw, subnet mask needed
    :align: center
    :target: ../../_images/Extensions/extension_wifi_connection_static.jpg
 
-Encryption TODO: WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) and WEP possible
-TODO: For WPA ssid and key (in hex notation)
+
+We suggest that you use an encrypted network. You can choose between
+WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) and WEP.
+
+For WPA enter the key in hex notation.
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa.jpg
    :scale: 100 %
@@ -152,7 +187,7 @@ TODO: For WPA ssid and key (in hex notation)
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wpa.jpg
 
-TODO: For WPA Enterprise configure outer auth (FAST, TLS, TTLS, PEAP), 
+For WPA Enterprise configure outer auth (FAST, TLS, TTLS, PEAP), 
 inner auth (MSCHAP, GTC), type (ca cert, client cert, private key),
 user, pass and certificate.
 
@@ -162,7 +197,7 @@ user, pass and certificate.
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wpa_enterprise.jpg
 
-TODO: For WEP: ssid, key and key index, if key index unknown it is likely 1.
+For WEP enter the key and the key index. If the key index is unknown it is likely 1.
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wep.jpg
    :scale: 100 %
@@ -170,14 +205,26 @@ TODO: For WEP: ssid, key and key index, if key index unknown it is likely 1.
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wep.jpg
 
-Power Mode TODO: Full Speed vs Low Power. Lower Power only if very
-few messages needed
+If you don't want encryption select "No Encryption". 
+
+
+Finally you have to configure the Power Mode. There are two Power Modes:
+Full Speed and Low Power. In Full Speed mode the device consumes more power,
+but you will be able to transmit much more messages. This will be the typical
+configuration. If you only need to transmit only a few messages (e.g. if you want to 
+measure temperatures wirelessly, than you might to use the Low Power Mode
+and save energy.
 
 .. image:: /Images/Extensions/extension_wifi_power_mode.jpg
    :scale: 100 %
-   :alt: Configure encryption as WEP
+   :alt: Configure Power Mode
    :align: center
    :target: ../../_images/Extensions/extension_wifi_power_mode.jpg
+
+At the end, press "Save WIFI Configuration" to save the configuration and
+restart the Master Brick to load it. After restart you should be able to
+reach the Master Brick by entering the IP and port of the Brick in the
+Brick Viewer.
 
 
 .. _extension_wifi_connectivity:
@@ -194,6 +241,10 @@ WIFI Extension.
    :align: center
    :target: ../../_images/Extensions/extension_wifi_caption_800.jpg
 
-TODO: blue = power, green = status (off=error, blink=associating, on=associated)
-TODO: U.FL and RP-SMA connector usable, U.FL good in a casing (RP-SMA can be 
-desoldered in that case).
+The blue power LED will be on permanently if the device is powered.
+The green LED is the status LED (permanently off=error, blink=associating, on=associated).
+
+The WIFI module is equipped with an U.FL connector and an 75 Ohm RP-SMA pigtail cable.
+Dependend on your application it is possible to disconnect the pigtail cable
+and connect your own cable. 
+
