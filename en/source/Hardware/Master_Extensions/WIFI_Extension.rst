@@ -224,7 +224,7 @@ and save energy.
 
 At the end, press "Save WIFI Configuration" to save the configuration and
 restart the Master Brick to load it. After restart you should be able to
-reach the Master Brick by entering the IP and port of the Brick in the
+reach the Master Brick by entering the IP address and port of the Brick in the
 Brick Viewer.
 
 
@@ -240,8 +240,8 @@ LEDs and connectivity
    :target: ../../_images/Extensions/extension_wifi_caption_800.jpg
 
 The blue power LED will be on permanently if the device is powered.
-The green LED is the status LED (permanently off=error, blink=associating, on=associated).
+The green LED is the status LED (permanently off = error, blink = associating, on = associated).
 
-The WIFI module is equipped with an U.FL connector and an 75 Ohm U.FL <-> RP-SMA pigtail cable.
+The WIFI module is equipped with an U.FL connector and an 75 Ohm U.FL to RP-SMA pigtail cable.
 Depending on your application it is possible to disconnect the pigtail cable
 and connect your own cable. 

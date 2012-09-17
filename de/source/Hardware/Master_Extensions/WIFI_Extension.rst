@@ -232,7 +232,7 @@ und Energie gespart werden.
 
 Zum Schluss muss auf "Save WIFI Configuration" geklickt werden um die Konfiguration zu speichern
 und das Master Brick neu gestartet werden um die Konfiguration zu laden. Nach dem Neustart
-sollte das Master Brick bei Eingabe der konfigurierten IP und Port im Brick Viewer erreichbar sein.
+sollte das Master Brick bei Eingabe der konfigurierten IP Adresse und Port im Brick Viewer erreichbar sein.
 
 
 .. _extension_wifi_leds:
@@ -249,6 +249,6 @@ LEDs und Anschlussmöglichkeiten
 Die blaue LED leuchtet permanent wenn die Extension mit Strom versorgt wird.
 Als Status LED ist eine grüne LED vorhanden (permanent aus = Fehler, blinkend = Verbindungsaufbau, permanent an = Verbunden).
 
-Das WIFI Modul ist mit einem U.FL Anschluss und einem 75 Ohm U.FL <-> RP-SMA Kabel ausgestattet.
+Das WIFI Modul ist mit einem U.FL Anschluss und einem 75 Ohm U.FL nach RP-SMA Kabel ausgestattet.
 Abhängig von der Anwendung kann dieses Kabel auch vom WIFI Modul getrennt und ein eigenes
 angeschlossen werden.
