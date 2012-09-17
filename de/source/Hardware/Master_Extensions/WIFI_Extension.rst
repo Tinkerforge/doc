@@ -14,32 +14,32 @@ WIFI Extension
 	{{
 	    tfdocimg("Extensions/extension_wifi_stack_100.jpg",
 	             "Extensions/extension_wifi_stack_600.jpg",
-	             "WIFI Extension with Master Brick in a stack")
+	             "WIFI Extension mit Master Brick im Stapel")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_wifi_horizontal_100.jpg",
 	             "Extensions/extension_wifi_horizontal_600.jpg",
-	             "WIFI Extension from top")
+	             "WIFI Extension Unterseite")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_wifi_bottom_100.jpg",
 	             "Extensions/extension_wifi_bottom_600.jpg",
-	             "WIFI Extension from bottom")
+	             "WIFI Extension Oberseite")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_wifi_caption_100.jpg",
 	             "Extensions/extension_wifi_caption_600.jpg",
-	             "WIFI Extension with caption")
+	             "WIFI Extension mit Beschriftung")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_wifi_ufl_100.jpg",
 	             "Extensions/extension_wifi_ufl_600.jpg",
-	             "U.FL connector of WIFI Extension")
+	             "U.FL Connector der WIFI Extension")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_wifi_front_100.jpg",
 	             "Extensions/extension_wifi_front_600.jpg",
-	             "WIFI Extension from front")
+	             "WIFI Extension Vorderseite")
 	}}
 	{{ tfdocend() }}
 
@@ -48,7 +48,7 @@ Features
 --------
 
 * Steuere Bricks/Bricklets drahtlos über dein Smartphone oder Tablet
-* Arbeitet mit 802.11b/g/n Accesspoints, WEP, WPA, WPA2 Personal und Enterprise Verschlüsselung
+* Arbeitet mit 802.11b/g/n Access Points, WEP, WPA, WPA2 Personal und Enterprise Verschlüsselung
 * Ausgestattet mit einem 18dBm Verstärker für große Reichweite
 * Externer RP-SMA und U.FL Antennenanschluss
 
@@ -64,7 +64,7 @@ Weitere Informationen zum Master Extension Konzept gibt es in der allgemeinen
 `GS1011MEES <http://www.gainspan.com/gs1011mees>`__ WIFI Modul mit integriertem Leistungsverstärker ausgestattet
 der eine erweiterte Reichweite im Vergleich zu ähnlichen Modulen erlaubt.
 
-Die Extension unterstützt zwei Modi. Im Full Speed Modus ist der WIFI Transceiver permanent eingeschalten.
+Die Extension unterstützt zwei Modi. Im Full Speed Modus ist der WIFI Transceiver permanent eingeschaltet.
 Eingehende Daten werden unverzüglich verarbeitet. Im Low Power Mode ist das Modul nicht permanent an,
 der Transceiver geht nach jeder Nachricht in den Schlafmodus.
 Dies führt zu einer drastisch reduzierten Leistungsaufnahme aber auch zu einem deutlich geringeren Datendurchsatz.
@@ -72,12 +72,12 @@ Dies führt zu einer drastisch reduzierten Leistungsaufnahme aber auch zu einem 
 Da die Extension selbst die von der API generierten TCP/IP Pakete behandeln kann, ist es möglich direkt vom
 Smartphone, Tablet oder (Embedded) PC zu steuern. Der :ref:`Brick Daemon <brickd>` ist nicht mehr notwendig.
 
-Um die WIFI Extension ist ein :ref:`Master Brick <master_brick>` notwendig.
+Um die WIFI Extension zu nutzen ist ein :ref:`Master Brick <master_brick>` notwendig.
 Wenn andere Bricks gesteuert werden sollen, so kann ein Stapel aus diesen gebaut werden
 und auf das Master Brick gesteckt werden. Wenn Bricklets verwendet werden sollen,
 so können diese einfach an das Master Brick oder andere Bricks im Stapel angeschlossen werden.
-Aus der Programmierer-Sicht ist dies absolut Transparent, d.h. alle Bricks und Bricklets können
-so genutzt werden als ob sie direkt per USB mit dem steuernden Gerät verbunden wären
+Aus der Programmierersicht ist dies absolut transparent, d.h. alle Bricks und Bricklets können
+so genutzt werden als ob sie direkt per USB mit dem steuernden Gerät verbunden wären.
 
 Das benutzte Master Brick sollte eine Firmware Version von 1.3.0 oder neuer besitzen um diese Extension nutzen zu können.
 
@@ -88,17 +88,16 @@ Technische Spezifikation
 ================================  =============================================================================
 Eigenschaft                       Wert
 ================================  =============================================================================
-Stromverbrauch                    110mA (senden), 23mA (während Schlafmodus)
+Stromverbrauch                    110mA (Senden), 23mA (im Schlafmodus)
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
-Maximale Reichweite (Freifeld     TBD
+Maximale Reichweite (Freifeld)    TBD
 Maximaler Datendurchsatz          TBD
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
 RF Ausgangsstärke (Typisch)       18dBm
 Externer Antennenanschluss        RP-SMA Female (mit Pin) und U.FL
-Sicherheit                        WEP, WPA, WPA2 (Personal and Enterprise), EAP-FAST, EAP-TLS, EAP-TTLS, PEAP
-Betriebstemperaturbereich         -40°C to +85°C
+Sicherheit                        WEP, WPA, WPA2 (Personal und Enterprise), EAP-FAST, EAP-TLS, EAP-TTLS, PEAP
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
@@ -130,12 +129,12 @@ und nicht zu dem lokal laufenden Brick Daemon hergestellt.
 
 .. image:: /Images/Extensions/extension_wifi_brickv.jpg
    :scale: 100 %
-   :alt: Brick Viewer configration for WIFI Extension
+   :alt: Brick Viewer Konfigration für WIFI Extension
    :align: center
    :target: ../../_images/Extensions/extension_wifi_brickv.jpg
 
 Für die eigene Anwendung muss im Quelltext der übergebene Host und Port
-im IPConnection aufruf modifiziert werden, z.B.:
+im IPConnection Aufruf modifiziert werden, z.B.:
 
 .. code-block:: python
 
@@ -227,7 +226,7 @@ und Energie gespart werden.
 
 .. image:: /Images/Extensions/extension_wifi_power_mode.jpg
    :scale: 100 %
-   :alt: Kofiguriere Power Mode
+   :alt: Konfiguriere Power Mode
    :align: center
    :target: ../../_images/Extensions/extension_wifi_power_mode.jpg
 
@@ -243,7 +242,7 @@ LEDs und Anschlussmöglichkeiten
 
 .. image:: /Images/Extensions/extension_wifi_caption_600.jpg
    :scale: 100 %
-   :alt: WIFI Extension with caption
+   :alt: WIFI Extension mit Beschriftung
    :align: center
    :target: ../../_images/Extensions/extension_wifi_caption_800.jpg
 
@@ -253,4 +252,3 @@ Als Status LED ist eine grüne LED vorhanden (permanent aus = Fehler, blinkend =
 Das WIFI Modul ist mit einem U.FL Anschluss und einem 75 Ohm U.FL <-> RP-SMA Kabel ausgestattet.
 Abhängig von der Anwendung kann dieses Kabel auch vom WIFI Modul getrennt und ein eigenes
 angeschlossen werden.
-
