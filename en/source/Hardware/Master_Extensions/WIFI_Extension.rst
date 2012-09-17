@@ -92,12 +92,12 @@ Current Consumption               110mA (transmit), 23mA (during sleep)
 --------------------------------  -----------------------------------------------------------------------------
 Maximum Range (Outdoor)           TBD
 Maximum Transfer Rate             TBD
+Maximum Concurrent Connections    15
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
 RF Output Power (Typical)         18dBm
 External Antenna Connector        RP-SMA Female (with pin inside) and U.FL
 Security Protocols                WEP, WPA, WPA2 (Personal and Enterprise), EAP-FAST, EAP-TLS, EAP-TTLS, PEAP
-Maximum Concurrent Connections    15
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
