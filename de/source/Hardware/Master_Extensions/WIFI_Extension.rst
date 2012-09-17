@@ -187,7 +187,7 @@ Wir empfehlen ein verschlüsseltes Netzwerk zu nutzen.
 WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) und WEP
 sind verfügbar.
 
-Um WPA zu nutzen muss nur der Schlüssel in Hex-Notation eingegeben werden.
+Um WPA zu nutzen muss nur der Schlüssel eingegeben werden.
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa.jpg
    :scale: 100 %
@@ -208,7 +208,7 @@ hinzugefügt werden.
 
 Um WEP zu benutzen muss ein Schlüssel und ein Schlüssel Index eingegeben werden.
 Ist kein Index bekannt so ist dieser vermutlich 1.
-Der Schlüssel ist in Hex-Notation einzutragen mit voller Schlüssellänge (abhängig von 64bit und 128bit Schlüssel).
+Der Schlüssel ist hierbei in Hex-Notation einzutragen mit voller Schlüssellänge (abhängig von 64bit und 128bit Schlüssel).
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wep.jpg
    :scale: 100 %

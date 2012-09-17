@@ -181,7 +181,7 @@ Additionally configure the subnet mask and gateway address.
 We suggest that you use an encrypted network. You can choose between
 WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) and WEP.
 
-For WPA enter the key in hex notation.
+For WPA only have to enter the key.
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa.jpg
    :scale: 100 %
