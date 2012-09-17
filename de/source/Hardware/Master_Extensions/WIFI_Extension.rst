@@ -195,9 +195,10 @@ Um WPA zu nutzen muss nur der Schlüssel in Hex-Notation eingegeben werden.
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wpa.jpg
 
-Für WPA Enterprise muss die äußere Authentifizierung configuriert werden 
-(FAST, TLS, TTLS, PEAP), die innere (MSCHAP, GTC), der Typ (ca cert, client cert, private key),
-Benutzer, Password und das Zertifikat.
+Für WPA Enterprise muss die äußere Authentifizierung 
+(FAST, TLS, TTLS, PEAP), die innere (MSCHAP, GTC), Benutzer und Passwort
+konfiguriert werden sowie die notwendigen Zertifikate (ca cert, client cert, private key)
+hinzugefügt werden.
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa_enterprise.jpg
    :scale: 100 %

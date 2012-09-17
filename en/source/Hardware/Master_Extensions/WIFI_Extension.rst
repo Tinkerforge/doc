@@ -191,8 +191,7 @@ For WPA enter the key in hex notation.
    :target: ../../_images/Extensions/extension_wifi_encryption_wpa.jpg
 
 For WPA Enterprise configure outer auth (FAST, TLS, TTLS, PEAP), 
-inner auth (MSCHAP, GTC), type (ca cert, client cert, private key),
-user, password and certificate.
+inner auth (MSCHAP, GTC), user, password and add the necessary certificates (ca cert, client cert, private key).
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa_enterprise.jpg
    :scale: 100 %
