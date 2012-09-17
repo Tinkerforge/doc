@@ -149,7 +149,7 @@ parity and stop bits.
 If your bus isn't absolutely huge you should probably
 choose "speed: 2000000 (2Mbit/s), parity: None, Stop bits: 1". If you start to
 get timeouts and the CRC error counter is rising rapidly, you might want
-to lower the baud rate. If you want to use a stack with RS485 extension in
+to lower the baud rate. If you want to use a stack with RS485 Extension in
 your existing Modbus network, you have to match the values with the
 other bus participants.
 

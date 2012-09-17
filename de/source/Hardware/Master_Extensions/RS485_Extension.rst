@@ -29,7 +29,7 @@ Features
 
 * Lange Verbindungen möglich (bis zu 1200m)
 * Erlaubt kabelgebundene Verbindungen zwischen Stapeln
-* Konfigurierbare Baudrate, Parität und Stop Bits
+* Konfigurierbare Baudrate, Parität und Stoppbits
 * Kann in existierendem RS485 Netzwerk genutzt
   werden (:ref:`Modbus RTU <llproto_modbus>`)
 
@@ -53,7 +53,7 @@ muss einer per USB verbunden sein (Many-to-One Routing).
 
 :ref:`Modbus RTU <llproto_modbus>` wird als Protokoll auf der RS485
 Schnittstelle genutzt. Dadurch ist es möglich Stapel aus Bricks und Bricklets
-mit RS485 Extension in ein vorhandenes Modbus Netwerk zu integrieren. Es ist
+mit RS485 Extension in ein vorhandenes Modbus Netzwerk zu integrieren. Es ist
 auch möglich direkt mit einem Stapel über Modbus zu kommunizieren, z.B. über
 ein eingebettetes Gerät oder über einen Modbus Gateway.
 
@@ -141,8 +141,9 @@ angezeigt werden.
 RS485 Konfiguration
 ^^^^^^^^^^^^^^^^^^^
 
-To configure a RS485 Extension you first have to choose the baud rate,
-parity and stop bits.
+Um eine RS485 Extension zu konfigurieren musst du zuerst eine eindeutige Adresse
+für jeden RS485 Slave festlegen sowie die Baudrate, Parität und Anzahl
+Stoppbits für das gesamte RS485 Netzwerk bestimmen.
 
 .. image:: /Images/Extensions/extension_rs485_config.jpg
    :scale: 100 %
@@ -150,12 +151,12 @@ parity and stop bits.
    :align: center
    :target: ../../_images/Extensions/extension_rs485_config.jpg
 
-If your bus isn't absolutely huge you should probably
-choose "speed: 2000000 (2Mbit/s), parity: None, Stop bits: 1". If you start to
-get timeouts and the CRC error counter is rising rapidly, you might want
-to lower the baud rate. If you want to use a stack with RS485 extension in
-your existing Modbus network, you have to match the values with the
-other bus participants.
+Wenn dein Bus nicht wirklich riesig ist solltest für "Speed" 2000000 (2Mbit/s),
+für "Parity" None und für "Stop bits" 1 wählen. Falls allerdings Timeouts
+auftreten und der CRC Fehlerzähler rapide steigt dann solltest du niedrigere
+Baudraten testen. Für die Verwendung der RS485 Extension in einem bestehenden
+Modbus Netzwerk müssen diese Einstellungen mit denen der anderen
+Netzwerkteilnehmer übereinstimmen.
 
 Um eine RS485 Extension als Slave zu konfigurieren musst du zuerst "Slave" als
 Typ auswählen und dann eine Adresse (1-255) ausgewählt werden.
