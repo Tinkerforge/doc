@@ -113,6 +113,7 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/wifi-extension/zipball/master>`__)
 
+
 .. _wifi_network_assembly:
 
 WIFI Network
@@ -154,8 +155,7 @@ WIFI Configuration
 ------------------
 
 .. note::
-
- Currently Adhoc Mode is not supported.
+ Adhoc Mode is not supported yet.
 
 To configure the WIFI Extension open the Master Brick Tab in the Brick Viewer.
 First of all you have to enter the SSID of your wireless network
@@ -181,7 +181,7 @@ Additionally configure the subnet mask and gateway address.
 We suggest that you use an encrypted network. You can choose between
 WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) and WEP.
 
-For WPA only have to enter the key.
+For WPA you only have to enter the key.
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa.jpg
    :scale: 100 %

@@ -106,8 +106,8 @@ Gewicht                                       18g
 ============================================  =============================================================================
 
 
-Resourcen
----------
+Ressourcen
+----------
 
 * GS1011MEES Homepage (`here <http://www.gainspan.com/gs1011mees>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/wifi-extension/raw/master/hardware/wifi-extension-schematic.pdf>`__)
@@ -156,7 +156,6 @@ WIFI Konfiguration
 ------------------
 
 .. note::
-
  Adhoc Modus wird noch nicht unterstützt.
 
 
