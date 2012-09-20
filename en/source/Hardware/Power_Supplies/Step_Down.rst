@@ -51,17 +51,19 @@ The Step-Down Power Supply can be used to power a stack of
 :ref:`Bricklets <product_overview_bricklets>`.
 It is equipped with an efficient step-down controller and can be plugged in
 at the bottom of the stack where it provides the 5V needed for Bricks and
-Bricklets. It is not absolutely necessary if you only want to use a single Brick.
+Bricklets. In addition it feeds the external voltage into the stack power signals.
+It is not absolutely necessary if you only want to use a single Brick.
 But is intended to be used with stacks.
 
 There are several possible applications. The Step-Down Power Supply allows
 to create stacks powered by batteries. These stacks can then communicate
 cable based or wireless with the help of Master Extensions.
 Also, the Step-Down Power Supply can be used to power DC motors, servos or
-stepper motors without the need to connect external power sources to the
-corresponding Bricks. It is also possible to use the Step-Down Power Supply in
-cases where huge stacks of Bricks with many Bricklets are needed and the maximum
-current of 500mA given over the USB port is not sufficient.
+stepper motors (over the stack power signals with up to 27V) without the need
+to connect external power sources to the corresponding Bricks. It is also
+possible to use the Step-Down Power Supply in cases where huge stacks of Bricks
+with many Bricklets are needed and the maximum current of 500mA given over the
+USB port is not sufficient.
 
 The possible input voltage range is 6V to 27V. A
 :ref:`Master Brick <master_brick>` can measure the current consumption of the

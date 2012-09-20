@@ -52,15 +52,17 @@ Die Step-Down Power Supply kann verwendet werden um einen Stapel von
 :ref:`Bricklets <product_overview_bricklets>` mit Strom zu versorgen.
 Sie ist mit einem effizienten Step-Down Regler ausgestattet und wird unter
 einen Stapel gesteckt. Von dort stellt sie die 5V bereit die von Bricks und
-Bricklets benötigt werden. Sie ist nicht zwingend notwendig um einzelne Bricks
-zu betreiben, sondern ist für die Verwendung in Stapeln vorgesehen.
+Bricklets benötigt werden. Zusätzlich speist sie die externe Versorgungsspannung
+in die Stapelstromversorgung ein. Sie ist nicht zwingend notwendig um einzelne
+Bricks zu betreiben, sondern ist für die Verwendung in Stapeln vorgesehen.
 
 Es gibt verschiedene Anwendungsfälle. Die Step-Down Power Supply ermöglicht
 Stapel über Batterien zu versorgen. Solche Stapel können dann über
 kabelgebundene oder drahtlose Master Extensions kommunizieren. Die Step-Down
 Power Supply ermöglicht kann auch genutzt werden um über den Stapel DC Motoren,
-Servos oder Schrittmotoren zu versorgen ohne eine weitere externe
-Spannungsquelle an den entsprechenden Motortreiber Brick anschließen zu müssen.
+Servos oder Schrittmotoren zu versorgen (über die Stapelstromversorgung mit bis
+zu 27V) ohne eine weitere externe Spannungsquelle an den entsprechenden
+Motortreiber Brick anschließen zu müssen.
 Falls der Stromverbrauch großer Stapel die 500mA überschreitet die ein normaler
 USB Anschluss liefern kann, so kann hier die Step-Down Power Supply einspringen
 und die Stromversorgung des Stapels übernehmen.
