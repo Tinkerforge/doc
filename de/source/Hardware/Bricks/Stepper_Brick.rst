@@ -278,5 +278,6 @@ Schrittmotor macht komische Geräusche
 Schrittmotoren können hohe oder Brummtöne erzeugen, selbst im Stillstand,
 wenn der Decay Modus nicht passen für den angeschlossenen Motor eingestellt ist.
 
-Du kannst versuchen den Decay Modus, wie :ref:`hier <stepper_brick_decay_mode>`
-beschrieben, besser einzustellen.
+Der Decay Modus kann, wie :ref:`hier <stepper_brick_decay_mode>`
+beschrieben, möglicherweise besser für den verwendeten Schrittmotor eingestellt
+werden.

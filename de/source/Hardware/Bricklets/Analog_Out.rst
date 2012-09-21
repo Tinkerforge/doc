@@ -112,8 +112,8 @@ sind zusätzliche Ausgangssignale mit festen Spannungen.
 
 .. _analog_out_bricklet_test:
 
-Teste dein Analog Out Bricklet
-------------------------------
+Erster Test
+-----------
 
 |test_intro|
 

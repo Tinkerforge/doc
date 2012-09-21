@@ -141,9 +141,9 @@ angezeigt werden.
 RS485 Konfiguration
 ^^^^^^^^^^^^^^^^^^^
 
-Um eine RS485 Extension zu konfigurieren musst du zuerst eine eindeutige Adresse
-für jeden RS485 Slave festlegen sowie die Baudrate, Parität und Anzahl
-Stoppbits für das gesamte RS485 Netzwerk bestimmen.
+Um eine RS485 Extension zu konfigurieren muss zuerst eine eindeutige Adresse
+für jeden RS485 Slave festgelegt sowie die Baudrate, Parität und Anzahl
+Stoppbits für das gesamte RS485 Netzwerk bestimmt werden.
 
 .. image:: /Images/Extensions/extension_rs485_config.jpg
    :scale: 100 %
@@ -151,15 +151,15 @@ Stoppbits für das gesamte RS485 Netzwerk bestimmen.
    :align: center
    :target: ../../_images/Extensions/extension_rs485_config.jpg
 
-Wenn dein Bus nicht wirklich riesig ist solltest für "Speed" 2000000 (2Mbit/s),
-für "Parity" None und für "Stop bits" 1 wählen. Falls allerdings Timeouts
-auftreten und der CRC Fehlerzähler rapide steigt dann solltest du niedrigere
-Baudraten testen. Für die Verwendung der RS485 Extension in einem bestehenden
-Modbus Netzwerk müssen diese Einstellungen mit denen der anderen
+Wenn der Bus nicht wirklich riesig ist sollte für "Speed" 2000000 (2Mbit/s),
+für "Parity" None und für "Stop bits" 1 gewählt werden. Falls allerdings Timeouts
+auftreten und der CRC Fehlerzähler rapide steigt dann sollte eine niedrigere
+Baudrate getestet werden. Für die Verwendung der RS485 Extension in einem
+bestehenden Modbus Netzwerk müssen diese Einstellungen mit denen der anderen
 Netzwerkteilnehmer übereinstimmen.
 
-Um eine RS485 Extension als Slave zu konfigurieren musst du zuerst "Slave" als
-Typ auswählen und dann eine Adresse (1-255) ausgewählt werden.
+Um eine RS485 Extension als Slave zu konfigurieren muss zuerst "Slave" als
+Typ ausgewählt und dann eine Adresse (1-255) festgelegt werden.
 
 .. image:: /Images/Extensions/extension_rs485_slave.jpg
    :scale: 100 %
@@ -167,9 +167,9 @@ Typ auswählen und dann eine Adresse (1-255) ausgewählt werden.
    :align: center
    :target: ../../_images/Extensions/extension_rs485_slave.jpg
 
-Um eine RS485 Extension als Master zu konfigurieren musst du zuerst "Master" als
-Typ auswählen und dann eine Liste (getrennt mit Komma) an Adresse von RS485
-Slaves angeben, mit denen der RS485 Master kommunizieren soll.
+Um eine RS485 Extension als Master zu konfigurieren muss zuerst "Master" als
+Typ ausgewählt und dann eine Liste (getrennt mit Komma) an Adressen von RS485
+Slaves angegeben werden, mit denen der RS485 Master kommunizieren soll.
 
 .. image:: /Images/Extensions/extension_rs485_master.jpg
    :scale: 100 %
@@ -181,12 +181,12 @@ Slaves angeben, mit denen der RS485 Master kommunizieren soll.
 RS485 Busmodifikation
 ^^^^^^^^^^^^^^^^^^^^^
 
-Wenn du etwas am Bus verändern willst, z.B. neue Bricks oder Bricklets
-hinzufügen, dann musst du den betreffenden Stapel zuerst von seiner
-Stromversorgung trennen. Nachdem du die Änderungen vorgenommen hast kannst du
-ihn wieder an seine Stromversorgung anschließen. Falls der Stapel ein RS485
+Wenn etwas am Bus verändert werden soll, z.B. neue Bricks oder Bricklets
+hinzufügen, dann muss der betroffene Stapel zuerst von seiner
+Stromversorgung trennen. Nachdem die Änderungen vorgenommen wurden kann der Stapel
+wieder an seine Stromversorgung angeschlossen. Falls der Stapel ein RS485
 Slave ist, dann muss auch der dazugehörige RS485 Master neugestartet werden,
 da dieser nur beim Start seine zugehörigen RS485 Slaves sucht und die
-Kommunikation mit ihnen aufnimmt. Den Neustart des RS485 Masters kannst du
-durch drücken seines Reset Knopfes erreichen, bzw. durch ein kurzes Trennen
+Kommunikation mit ihnen aufnimmt. Den Neustart des RS485 Masters kann
+durch Drücken seines Reset Knopfes erreicht werden, bzw. durch ein kurzes Trennen
 seiner USB Verbindung.

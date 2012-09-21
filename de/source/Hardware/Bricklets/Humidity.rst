@@ -91,9 +91,8 @@ Ressourcen
 
 .. _humidity_bricklet_test:
 
-
-Teste dein Humidity Bricklet
-----------------------------
+Erster Test
+-----------
 
 |test_intro|
 

@@ -79,7 +79,7 @@ brick_test_pi_ref = {
 """,
 'de':
 """.. |test_pi_ref| replace::
- Nun kannst du dein eigenes Programm schreiben. Der Abschnitt
+ Nun kann ein eigenes Programm geschreiben werden. Der Abschnitt
  :ref:`Programmierschnittstellen <{0}_brick_programming_interfaces>` listet die
  API des {1} Bricks und Beispiele in verschiedenen Programmiersprachen auf.
 """
@@ -125,7 +125,7 @@ bricklet_test_tab = {
 """,
 'de':
 """.. |test_tab| replace::
- Wenn du den Brick per USB an den PC anschließt sollte einen Moment später
+ Wenn der Brick per USB an den PC angeschlossen wird sollte einen Moment später
  im Brick Viewer ein neuer Tab namens "{0} Bricklet" auftauchen.
  Wähle diesen Tab aus.
 """
@@ -141,7 +141,7 @@ bricklet_test_pi_ref = {
 """,
 'de':
 """.. |test_pi_ref| replace::
- Nun kannst du dein eigenes Programm schreiben. Der Abschnitt
+ Nun kann ein eigenes Programm geschreiben werden. Der Abschnitt
  :ref:`Programmierschnittstellen <{0}_bricklet_programming_interfaces>` listet
  die API des {1} Bricklets und Beispiele in verschiedenen
  Programmiersprachen auf.

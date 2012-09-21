@@ -119,8 +119,8 @@ C/C++ (iOS)
 Objective-C ist kompatible zu C. Dies erlaubt es uns die :ref:`C/C++ Bindings
 <api_bindings_c>` in einer iOS App zu verwenden.
 
-Im Folgenden wird angenommen, dass du schon die iOS Entwicklungsumgebung
-installiert hast. Als Beispiel soll ein kleines Projekt zum Schalten eines
+Im Folgenden wird angenommen, dass die iOS Entwicklungsumgebung schon
+installiert ist. Als Beispiel soll ein kleines Projekt zum Schalten eines
 Dual Relay Bricklets erstellt werden. Es sollte leicht sein dieses Beispiel
 für deine Zwecke weiterzuentwickeln.
 
@@ -236,9 +236,9 @@ letzte Schritt is das Verbinden des *Value Changed* Events des Switches mit der
        :align: center
        :target: ../_images/Screenshots/ios_xcode_event2.jpg
 
-Teste die App im Simulator indem du auf den Run Knopf klickst. Denk daran die
-UID und die IP Adresse entsprechend deines Dual Relay Bricklets und deines PCs
-abzuändern.
+Die App kann mittles des Run Knopfes im Simulator getestet werden. Dabei ist
+darauf zu achten UID und IP Adresse entsprechend des verwendeten Dual Relay
+Bricklets und PCs abzuändern.
 
 
 .. _api_bindings_csharp:
@@ -288,15 +288,15 @@ Mono im Moment nicht unterstützt. Da die ``Tinkerforge.dll`` für Kompatibilit�
 mit C# 2.0 und Mono kompiliert wird ist sie nicht kompatible mit Windows Phone.
 Um dieses Problem zu umgehen haben wir eine asynchronen Socket Implementierung
 hinzugefügt, die nur verwendet wird wenn der Quelltext für Windows Phone
-kompiliert wird (``#if WINDOWS_PHONE``). Dies bedeutet, dass du den
+kompiliert wird (``#if WINDOWS_PHONE``). Dies bedeutet, dass der
 ``Tinkerforge`` Ordner (im ``source/`` Ordner der C# Bindings) als externe
-Ressource einbinden musst, damit die Bindings für Windows Phone mit kompiliert
+Ressource eingebunden werden musst, damit die Bindings für Windows Phone mit kompiliert
 werden. Die gesamten C# Bindings funktionieren mit Windows Phone SDK >= 7.1
 (SDK 7.0 unterstützt keine Sockets und kann daher nicht verwendet werden um zum
 Brick Daemon eine Netzwerkverbindung aufzubauen).
 
-Im Folgenden wird angenommen, dass du bereits Visual Studio für Windows Phone
-installiert hast. Als Beispiel soll ein kleines Projekt zum Schalten eines
+Im Folgenden wird angenommen, dass  Visual Studio für Windows Phone bereits
+installiert ist. Als Beispiel soll ein kleines Projekt zum Schalten eines
 Dual Relay Bricklets erstellt werden. Es sollte leicht sein dieses Beispiel
 für deine Zwecke weiterzuentwickeln.
 
@@ -386,9 +386,10 @@ Doppelklick auf den Umschaltknopf um die ``MainPage.xaml.cs`` zu bearbeiten:
      }
  }
 
-Starte den Emulator über F5. Du solltest das Relais mit dem Umschaltknopf auf
-deinem Windows Phone schalten können. Denk daran die UID und die IP Adresse
-entsprechend deines Dual Relay Bricklets und deines PCs abzuändern.
+Der Emulator kann über F5 gestartet werden. Das Relais sollte jetzt mit dem
+Umschaltknopf auf dem Windows Phone Bildschirm umgeschaltet werden können.
+Dabei ist darauf zu achten UID und IP Adresse entsprechend des verwendeten Dual
+Relay Bricklets und PCs abzuändern.
 
 
 .. _api_bindings_delphi:
@@ -503,10 +504,10 @@ Java (Android)
 Für Android können die normalen :ref:`Java Bindings <api_bindings_java>`
 verwendet werden.
 
-Im Folgenden wird angenommen, dass du schon die Android Entwicklungsumgebung
-installiert hast. Falls du gerade erst mit der Entwicklung für Android beginnst
-empfehlen wird dir zuerst mit dem `Hello World Tutorial
-<http://developer.android.com/resources/tutorials/hello-world.html>`__ from
+Im Folgenden wird angenommen, dass die Android Entwicklungsumgebung schon
+installiert ist. Für Androidanfänger empfehlen wir zuerst mit dem
+`Hello World Tutorial
+<http://developer.android.com/resources/tutorials/hello-world.html>`__ von
 Google zu beginnen.
 
 Als Beispiel soll ein kleines Projekt zum Schalten eines Dual Relay Bricklets
@@ -524,16 +525,16 @@ Starte eine neues Android Projekt:
 * Wähle "Package Name" (e.g. ``org.example``)
 * Klicke Finish
 
-Als nächstes muss du den gesamten ``com/tinkerforge/`` Ordner von ``source/`` in
-deinen ``PROJECTFOLDER/src/`` Ordner kopieren.
+Als nächstes muss der gesamte ``com/tinkerforge/`` Ordner von ``source/`` in
+den ``PROJECTFOLDER/src/`` Ordner kopiert werden.
 
 Bearbeite den Quelltext wie unten dargestellt. Vergiss nicht die Host IP
 Adresse zu der des PCs auf dem der Brick Daemon äuft zu ändern. Dies kann die
-lokale oder die IP adresse für die Verbinding zum Internet ein. Für letzere
-musst duc auch noch sicherstellen, dass der Port des Brick Daemons von außen
+lokale oder die IP Adresse für die Verbindung zum Internet sein. Für letztere
+musst auch noch sichergestellt werden, dass der Port des Brick Daemons von außen
 erreichbar ist.
 
-Es folgt der Quelltext eines Beispielprogramms, dass dein Dual Relay Bricklet
+Es folgt der Quelltext eines Beispielprogramms, dass ein Dual Relay Bricklet
 mit einem Umschaltknopf steuern kann.
 
 .. code-block:: java
@@ -627,20 +628,21 @@ Das PEAR Paket kann mit Hilfe des pear Tools installiert werden::
 
 Danach können alle Beispiel unverändert verwendet werden.
 
-Wenn du das PEAR Paket nicht verwenden willst oder kannst, dann kannst du den
-Quelltext auch direkt verwenden. Dafür kopierst du den ``Tinkerforge`` Ordner
-vom ``source/`` Ordner und das Beispiel das du ausprobieren möchtest (z.B. das
-Stepper Konfigurationsbeispiel vom
-``examples/brick/stepper/ExampleConfiguration.php``) in einen Ordner::
+Wenn das PEAR Paket nicht verwendet werden soll oder kann, dann kann der
+Quelltext auch direkt verwendet werden. Dafür muss der ``Tinkerforge`` Ordner vom
+``source/`` Ordner und das Beispiel, das ausprobiert werden soll (z.B. das
+Stepper Konfigurationsbeispiel
+``examples/brick/stepper/ExampleConfiguration.php``), in einen Ordner kopiert
+werden::
 
  example_folder/
   -> Tinkerforge/
   -> ExampleConfiguration.php
 
-Falls du nur einige ausgewählte Bricks oder Bricklets verwenden und du keine
-unnötigen Dateien in deinem Projekt haben möchtest, dann kannst du auch nur die
-wirklich benötigten Dateien in einen Ordner kopieren. Das Stepper Brick Beispiel
-benötigt ``IPConnection.php`` und ``BrickStepper.php``::
+Falls nur einige ausgewählte Bricks oder Bricklets verwendet werden sollen und
+keine unnötigen Dateien im Projekt auftauchen sollen, dann können auch nur die
+wirklich benötigten Dateien in einen Ordner kopieren werden. Das Stepper Brick
+Beispiel benötigt ``IPConnection.php`` und ``BrickStepper.php``::
 
  example_folder/
   -> IPConnection.php
@@ -688,20 +690,21 @@ Das egg kann mit Hilfe von easy_install installiert werden::
 
 Danach können alle Beispiel unverändert verwendet werden.
 
-Wenn du das egg nicht verwenden willst oder kannst, dann kannst du den
-Quelltext auch direkt verwenden. Dafür kopierst du den ``tinkerforge`` Ordner
-vom ``source/`` Ordner und das Beispiel das du ausprobieren möchtest (z.B. das
-Stepper Konfigurationsbeispiel vom
-``examples/brick/stepper/example_configuration.py``) in einen Ordner::
+Wenn das egg nicht verwenden werden soll oder kann, dann kann der Quelltext
+auch direkt verwendet werden. Dafür muss der ``tinkerforge`` Ordner
+vom ``source/`` Ordner und das Beispiel, das ausprobiert werden soll (z.B. das
+Stepper Konfigurationsbeispiel
+``examples/brick/stepper/example_configuration.py``), in einen Ordner kopiert
+werden::
 
  example_folder/
   -> tinkerforge/
   -> example_configuration.py
 
-Falls du nur einige ausgewählte Bricks oder Bricklets verwenden und du keine
-unnötigen Dateien in deinem Projekt haben möchtest, dann kannst du auch nur die
-wirklich benötigten Dateien in einen Ordner kopieren. Das Stepper Brick Beispiel
-benötigt ``ip_connection.py`` und ``brick_stepper.py``::
+Falls nur einige ausgewählte Bricks oder Bricklets verwendet werden sollen und
+keine unnötigen Dateien im Projekt auftauchen sollen, dann können auch nur die
+wirklich benötigten Dateien in einen Ordner kopiert werden. Das Stepper Brick
+Beispiel benötigt ``ip_connection.py`` und ``brick_stepper.py``::
 
  example_folder/
   -> ip_connection.py
@@ -751,20 +754,20 @@ Der GEM kann mit Hilfe des gem Tools installiert werden::
 
 Danach können alle Beispiel unverändert verwendet werden.
 
-Wenn du den GEM nicht verwenden willst oder kannst, dann kannst du den
-Quelltext auch direkt verwenden. Dafür kopierst du den ``tinkerforge`` Ordner
-vom ``source/`` Ordner und das Beispiel das du ausprobieren möchtest (z.B. das
-Stepper Konfigurationsbeispiel vom
-``examples/brick/stepper/example_configuration.rb``) in einen Ordner::
+Wenn der GEM nicht verwendet werden soll oder kann, dann kann der Quelltext auch
+direkt verwendet werden. Dafür muss der ``tinkerforge`` Ordner vom ``source/``
+Ordner und das Beispiel, das ausprobiert werden soll (z.B. das Stepper
+Konfigurationsbeispiel ``examples/brick/stepper/example_configuration.rb``),
+in einen Ordner kopiert werden::
 
  example_folder/
   -> tinkerforge/
   -> example_configuration.rb
 
-Falls du nur einige ausgewählte Bricks oder Bricklets verwenden und du keine
-unnötigen Dateien in deinem Projekt haben möchtest, dann kannst du auch nur die
-wirklich benötigten Dateien in einen Ordner kopieren. Das Stepper Brick Beispiel
-benötigt ``ip_connection.rb`` und ``brick_stepper.rb``::
+Falls nur einige ausgewählte Bricks oder Bricklets verwendet werden sollen und
+keine unnötigen Dateien im Projekt auftauchen sollen, dann können auch nur die
+wirklich benötigten Dateien in einen Ordner kopiert werden. Das Stepper Brick
+Beispiel benötigt ``ip_connection.rb`` und ``brick_stepper.rb``::
 
  example_folder/
   -> ip_connection.rb

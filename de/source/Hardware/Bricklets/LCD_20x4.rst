@@ -99,8 +99,8 @@ Ressourcen
 
 .. _lcd_20x4_bricklet_test:
 
-Teste dein LCD 20x4 Bricklet
-----------------------------
+Erster Test
+-----------
 
 |test_intro|
 

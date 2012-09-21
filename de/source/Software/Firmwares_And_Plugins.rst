@@ -4,9 +4,9 @@ Firmwares und Plugins
 =====================
 
 .. note::
- Falls du aus versehen die Firmware deines Bricks or Bricklets gelöscht hast,
- dann kannst du die neusten Firmwares und Plugins :ref:`hier
- <downloads_firmwares_plugins>` herunterladen.
+ Falls die Firmware eines Bricks or Bricklets aus versehen gelöscht wurde,
+ dann können die neusten Firmwares und Plugins :ref:`hier
+ <downloads_firmwares_plugins>` heruntergeladen werden.
 
  Nur wenn du die Firmware eines Bricks oder das Plugin eines Bricklets nach
  deinen Vorstellungen ändern willst musst du sie selbst kompilieren.

@@ -113,8 +113,8 @@ Ressourcen
 
 .. _distance_ir_bricklet_test:
 
-Teste dein Distance IR Bricklet
--------------------------------
+Erster Test
+-----------
 
 |test_intro|
 
@@ -151,9 +151,9 @@ Die unterstützten Infrarot Sensors geben eine Spannung entsprechend der
 gemessenen distanz aus. Diese Spannung wird vom ADC des angeschlossenen Bricks
 gemessen. Um aus der Spannung die Distanz zu errechnen wird eine Abbildung von
 Spannung auf Distanz benötigt. Diese Abbildung is spezifisch für den jeweiligen
-Sensortyp und wird auf dem Bricklet gepspeichert. Um Sensor verwenden zu können,
-die nicht direkt von uns unterstüzt werden musst du selbst eine passenden
-Abbildung von Spannung auf Distanz definieren.
+Sensortyp und wird auf dem Bricklet gespeichert. Um Sensoren verwenden zu können,
+die nicht direkt von uns unterstüzt werden muss zuerst eine passenden Abbildung
+von Spannung auf Distanz definiert werden.
 
 
 Spannung/Distanz Abbildung speichern

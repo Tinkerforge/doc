@@ -111,8 +111,8 @@ zeigt die vier Anschlussklemmen.
 
 .. _analog_in_bricklet_test:
 
-Teste dein Analog In Bricklet
------------------------------
+Erster Test
+-----------
 
 |test_intro|
 

@@ -88,8 +88,8 @@ Ressourcen
 
 .. _voltage_bricklet_test:
 
-Teste dein Voltage Bricklet
----------------------------
+Erster Test
+-----------
 
 |test_intro|
 

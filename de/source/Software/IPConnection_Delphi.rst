@@ -55,8 +55,8 @@ Grundfunktionen
  Wartet auf die Beendigung der Threads der IP Connection. Der Aufruf blockiert
  bis die IP Connection :delphi:func:`zerstört <TIPConnection.Destroy>` wird.
 
- Dies ist dann sinnvoll, wenn dein Programm vollständig auf Callbacks basiert
- oder du die IP Connection in einem anderem Thread erzeugt hast.
+ Dies ist dann sinnvoll, wenn ein Programm vollständig auf Callbacks basiert
+ oder die IP Connection in einem anderem Thread erzeugt wurde.
 
 .. delphi:function:: destructor TIPConnection.Destroy
 

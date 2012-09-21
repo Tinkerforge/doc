@@ -100,8 +100,8 @@ Ressourcen
 
 .. _rotary_poti_bricklet_test:
 
-Teste dein Rotary Poti Bricklet
--------------------------------
+Erster Test
+-----------
 
 |test_intro|
 

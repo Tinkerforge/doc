@@ -47,7 +47,7 @@ WIFI Extension
 Features
 --------
 
-* Steuere Bricks/Bricklets drahtlos über dein Smartphone oder Tablet
+* Steuere Bricks/Bricklets drahtlos über Smartphone oder Tablet
 * Arbeitet mit 802.11b/g/n Access Points, WEP, WPA, WPA2 Personal und Enterprise Verschlüsselung
 * Ausgestattet mit einem 18dBm Verstärker für große Reichweite
 * Externer RP-SMA und U.FL Antennenanschluss

@@ -91,8 +91,8 @@ Ressourcen
 
 .. _ambient_light_bricklet_test:
 
-Teste dein Ambient Light Bricklet
----------------------------------
+Erster Test
+-----------
 
 |test_intro|
 

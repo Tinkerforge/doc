@@ -111,8 +111,8 @@ Ressourcen
 
 .. _io16_bricklet_test:
 
-Teste dein IO-16 Bricklet
--------------------------
+Erster Test
+-----------
 
 |test_intro|
 

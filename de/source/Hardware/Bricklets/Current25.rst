@@ -93,8 +93,8 @@ Ressourcen
 
 .. _current25_bricklet_test:
 
-Teste dein Current25 Bricklet
------------------------------
+Erster Test
+-----------
 
 |test_intro|
 

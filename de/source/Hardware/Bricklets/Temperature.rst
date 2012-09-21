@@ -90,8 +90,8 @@ Ressourcen
 
 .. _temperature_bricklet_test:
 
-Teste dein Temperature Bricklet
--------------------------------
+Erster Test
+-----------
 
 |test_intro|
 
@@ -113,8 +113,9 @@ aussehen.
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_brickv.jpg
 
-Als einfacher Test kannst du einen Finger auf den Sensor legen, die angezeigte
-Temperatur sollte steigen (oder fallen wenn es sehr warm im Raum ist).
+Als einfacher Test kann eine Wärmequelle wie z.B. ein Finger auf den Sensor
+gelegt werden, die angezeigte Temperatur sollte steigen (oder fallen wenn es
+im Raum sehr warm ist).
 
 |test_pi_ref|
 

@@ -97,8 +97,8 @@ Ressourcen
 
 .. _temperature_ir_bricklet_test:
 
-Teste dein Temperature IR Bricklet
-----------------------------------
+Erster Test
+-----------
 
 |test_intro|
 
@@ -120,9 +120,9 @@ aussehen.
    :align: center
    :target: ../../_images/Bricklets/bricklet_temperature_ir_brickv.jpg
 
-Wenn du den Sensor in verschiedene Richtungen zeigen lässt dann sollte sich die
+Wenn der Sensor in verschiedene Richtungen gerichtet wird dann sollte sich die
 Objekttemperatur abhängig vom angepeilten Objekt ändern. Die Umgebungstemperatur
-sollte stabil bleiben, außer du berührst den Sensor und erwärmst ihn dadurch.
+sollte stabil bleiben, außer der Sensor wird z.B. durch Berührung erwärmt.
 
 Für akkurate Messungen der Objekttemperatur ist es möglich die Emissivität
 des zu messenden Materials einzustellen: 0xFFFF = 65535 entspricht einer

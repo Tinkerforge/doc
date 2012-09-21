@@ -148,11 +148,11 @@ Chibi Konfiguration
 
  Es stellte sich aber heraus, dass dies für die meisten Benutzer sehr verwirrend
  war. Daher empfehlen wird auf die neuste Brick Viewer Version zu aktualisieren
- bevor du dein Chibi Netzwerk konfigurierst.
+ bevor das Chibi Netzwerk konfiguriert wird.
 
-Um eine Chibi Extension zu konfigurieren musst du zuerst eine eindeutige Adresse
-für jede Chibi Extension festlegen sowie eine Frequenz und einen Kanal für das
-gesamte Chibi Netzwerk bestimmen.
+Um eine Chibi Extension zu konfigurieren muss zuerst eine eindeutige Adresse
+für jede Chibi Extension festgelegt werden sowie eine Frequenz und einen Kanal
+für das gesamte Chibi Netzwerk bestimmt werden.
 
 .. image:: /Images/Extensions/extension_chibi.jpg
    :scale: 100 %
@@ -160,8 +160,8 @@ gesamte Chibi Netzwerk bestimmen.
    :align: center
    :target: ../../_images/Extensions/extension_chibi.jpg
 
-Um eine Chibi Extension als Slave zu konfigurieren musst du zuerst "Slave" als
-Typ auswählen und dann die Adresse des Chibi Masters angeben.
+Um eine Chibi Extension als Slave zu konfigurieren muss zuerst "Slave" als
+Typ ausgewählt und dann die Adresse des Chibi Masters angegeben werden.
 
 .. image:: /Images/Extensions/extension_chibi_slave.jpg
    :scale: 100 %
@@ -169,9 +169,9 @@ Typ auswählen und dann die Adresse des Chibi Masters angeben.
    :align: center
    :target: ../../_images/Extensions/extension_chibi_slave.jpg
 
-Um eine Chibi Extension als Master zu konfigurieren musst du zuerst "Master" als
-Typ auswählen und dann eine Liste (getrennt mit Komma) an Adresse von Chibi
-Slaves angeben, mit denen der Chibi Master kommunizieren soll.
+Um eine Chibi Extension als Master zu konfigurieren muss zuerst "Master" als
+Typ ausgewählt und dann eine Liste (getrennt mit Komma) an Adresse von Chibi
+Slaves angegeben werden, mit denen der Chibi Master kommunizieren soll.
 
 .. image:: /Images/Extensions/extension_chibi_master.jpg
    :scale: 100 %
@@ -183,14 +183,14 @@ Slaves angeben, mit denen der Chibi Master kommunizieren soll.
 Chibi Netzwerkmodifikation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn du etwas am Netzwerk verändern willst, z.B. neue Bricks oder Bricklets
-hinzufügen, dann musst du den betreffenden Stapel zuerst von seiner
-Stromversorgung trennen. Nachdem du die Änderungen vorgenommen hast kannst du
-ihn wieder an seine Stromversorgung anschließen. Falls der Stapel ein Chibi
+Wenn etwas am Netzwerk verändert werden soll, z.B. neue Bricks oder Bricklets
+hinzufügen, dann muss der betroffene Stapel zuerst von seiner
+Stromversorgung getrennt werden. Nachdem die Änderungen vorgenommen wurde kann
+der Stapel wieder an seine Stromversorgung angeschlossen werden. Falls der Stapel ein Chibi
 Slave ist, dann muss auch der dazugehörige Chibi Master neugestartet werden,
 da dieser nur beim Start seine zugehörigen Chibi Slaves sucht und die
-Kommunikation mit ihnen aufnimmt. Den Neustart des Chibi Masters kannst du
-durch drücken seines Reset Knopfes erreichen, bzw. durch ein kurzes Trennen
+Kommunikation mit ihnen aufnimmt. Den Neustart des Chibi Masters kann
+durch Drücken seines Reset Knopfes erreicht werden, bzw. durch ein kurzes Trennen
 seiner USB Verbindung.
 
 

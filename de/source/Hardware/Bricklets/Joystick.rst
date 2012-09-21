@@ -92,8 +92,8 @@ Ressourcen
 
 .. _joystick_bricklet_test:
 
-Teste dein Joystick Bricklet
-----------------------------
+Erster Test
+-----------
 
 |test_intro|
 

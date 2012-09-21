@@ -120,8 +120,8 @@ abhängig vom Schaltzustand des Relais.
 
 .. _dual_relay_bricklet_test:
 
-Teste dein Dual Relay Bricklet
-------------------------------
+Erster Test
+-----------
 
 |test_intro|
 

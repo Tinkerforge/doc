@@ -53,10 +53,10 @@ Grundfunktionen
 .. php:function:: void IPConnection::dispatchCallbacks(float $seconds)
 
  Liefert eingehende Callbacks für die gegebene Dauer in Sekunden aus (negative
- Werte bedeuten unendlich). Da PHP keine Threads unterstützt musst du diese
- Methode periodisch aufrufen, um sicherzustellen, dass eingehende Callbacks
- behandelt werden. Falls du keine Callbacks benutzt brauchst du diese Methode
- nicht aufzurufen.
+ Werte bedeuten unendlich). Da PHP keine Threads unterstützt muss diese Methode
+ periodisch aufgerufen werden, um sicherzustellen, dass eingehende Callbacks
+ behandelt werden. Falls keine Callbacks benutzt werden braucht diese Methode
+ nicht aufgerufen zu werden.
 
  Die empfohlene Wert für *$seconds* ist 0. Dadurch werden nur die Callbacks
  ausgeliefert die noch auf Auslieferung warten. Es wird jedoch nicht auf den
@@ -96,5 +96,5 @@ Konfigurationsfunktionen für Callbacks
  Dieser Callback erlaubt es "Plug'n'Play" Funktionalität zu implementieren (wie
  es im Brick Viewer getan wurde).
 
- Du musst :php:func:`dispatchCallbacks <IPConnection::dispatchCallbacks>` aufrufen
- um Callbackaufrufe zu erhalten. Die empfohlene Wert für *$seconds* ist 2.5;
+ :php:func:`dispatchCallbacks <IPConnection::dispatchCallbacks>` muss aufgerufen
+ werden um Callbackaufrufe zu erhalten. Der empfohlene Wert für *$seconds* ist 2.5;

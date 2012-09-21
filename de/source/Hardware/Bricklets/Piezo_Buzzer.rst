@@ -90,8 +90,8 @@ Ressourcen
 
 .. _piezo_buzzer_bricklet_test:
 
-Teste dein Piezo Buzzer Bricklet
---------------------------------
+Erster Test
+-----------
 
 |test_intro|
 

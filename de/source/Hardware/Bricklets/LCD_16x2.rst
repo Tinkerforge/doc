@@ -100,8 +100,8 @@ Ressourcen
 
 .. _lcd_16x2_bricklet_test:
 
-Teste dein LCD 16x2 Bricklet
-----------------------------
+Erster Test
+-----------
 
 |test_intro|
 

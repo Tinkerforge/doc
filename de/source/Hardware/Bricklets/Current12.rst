@@ -93,8 +93,8 @@ Ressourcen
 
 .. _current12_bricklet_test:
 
-Teste dein Current12 Bricklet
------------------------------
+Erster Test
+-----------
 
 |test_intro|
 

@@ -49,9 +49,9 @@ eigene Firmwares für Bricks zu entwickeln.
 
 .. warning::
  Im Moment sind nur die Quelltexte der Bricks `online
- <https://github.com/organizations/Tinkerforge>`__ verfügbar. Falls du in der
- Lage bist die passende Entwicklungsumgebung aufzusetzen und C programmieren
- kannst, dann kannst du jetzt schon den Quelltext für deine Zwecke abändern.
+ <https://github.com/organizations/Tinkerforge>`__ verfügbar. Der jenige der in
+ der Lage ist die passende Entwicklungsumgebung aufzusetzen und C programmieren
+ kann, kann jetzt schon den Quelltext für seine Zwecke abändern.
 
  Eine einfache API (vergleichbar der Arduino API) für einfache
  Firmwareentwicklung ist in Arbeit.

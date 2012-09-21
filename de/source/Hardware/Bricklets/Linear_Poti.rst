@@ -102,8 +102,8 @@ Ressourcen
 
 .. _linear_poti_bricklet_test:
 
-Teste dein Linear Poti Bricklet
--------------------------------
+Erster Test
+-----------
 
 |test_intro|
 

@@ -10,28 +10,27 @@ Hier wird beschrieben wie Bricks und Bricklets zusammen mit einem
 SD Karte vorbereiten
 --------------------
 
-Als erstes musst du Debian auf eine SD Karte bringen. Dazu lädst du das neuste
-Debian Image von `hier <http://www.raspberrypi.org/downloads>`__ herunter und
-folgst den Schritten `dieser <http://elinux.org/RPi_Easy_SD_Card_Setup>`__
-Anleitung.
+Als erstes musst Debian auf einer SD Karte eingerichtet werden. Dazu muss zuerst
+das neuste Debian Image von `hier <http://www.raspberrypi.org/downloads>`__
+heruntergeladen werden. Diese `Anleitung <http://elinux.org/RPi_Easy_SD_Card_Setup>`__
+erklärt dann alles weitere.
 
 
 Raspberry Pi starten
 --------------------
 
-Schließe eine Tastertur, einen Bildschirm und eine Stromversorgung an dein
+Schließe eine Tastertur, einen Bildschirm und eine Stromversorgung an das
 Raspberry Pi an. Sobald das Raspberry Pi mit Strom versorgt wird bootet es.
 
-Am Ende des Bootvorgangs solltest du ein Anmeldeaufforderung sehen. Gib als
-Benutzername "pi" und als Password "raspberry" ein. Jetzt solltest du angemeldet
-sein.
+Am Ende des Bootvorgangs sollte ein Anmeldeaufforderung zu sehen sein. Der
+Benutzername ist "pi" und das Password ist "raspberry".
 
 
 Brick Daemon und Brick Viewer installieren
 ------------------------------------------
 
-Um den :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer <brickv>` zu
-installieren msst du folgende Befehle ausführen::
+:ref:`Brick Daemon <brickd>` und :ref:`Brick Viewer <brickv>` können mit
+folgenden Befehlen installiert werden::
 
  cd /home/pi
  sudo apt-get install python-twisted python-gudev libusb-1.0-0
@@ -47,11 +46,12 @@ installieren msst du folgende Befehle ausführen::
 Zugriff von Außen
 -----------------
 
-Du kannst ein Raspberry Pi dazu verwenden dort den Brick Daemon laufen zu lassen
-und angeschlossene Bricks dann von Außen zu steuern, z.B. über dein Smartphone.
+Das Raspberry Pi kann dazu verwendet werden dort den Brick Daemon laufen zu
+lassen und angeschlossene Bricks dann von Außen zu steuern, z.B. über ein
+Smartphone.
 
-Um dies zu tun musst du den Host zu dem du die IP Connection herstellt von
-"localhost" auf die IP Adresse des Raspberry Pis ändern.
+Um dies zu tun musst der Host zu dem die IP Connection hergestellt wird von
+"localhost" auf die IP Adresse des Raspberry Pis geändert werden.
 
 
 Bekannte Probleme
@@ -59,5 +59,5 @@ Bekannte Probleme
 
 Der USB Anschluss des Raspberry Pis ist möglicherweise nicht in der Lage einen
 großen Stapel von Bricks und Bricklets mit Strom zu versorgen. In diesem Fall
-solltest du deine :ref:`Step-Down Power Supply <step_down_power_supply>`
-verwenden um den Stapel zu versorgen.
+sollte eine :ref:`Step-Down Power Supply <step_down_power_supply>`
+verwendet werden um den Stapel zu versorgen.

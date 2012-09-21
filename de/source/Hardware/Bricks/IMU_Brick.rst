@@ -144,11 +144,11 @@ Teste deinen IMU Brick
    :align: center
    :target: ../../_images/Bricks/imu_brickv.jpg
 
-Alle verfügbaren Daten des IMU Bricks werden angezeigt. Wenn du den IMU Brick
-wie dargestellt hältst und dann den "Save Orientation" Knopf klickst sollten
+Alle verfügbaren Daten des IMU Bricks werden angezeigt. Wenn der IMU Brick
+wie dargestellt gehalten und dann der "Save Orientation" Knopf geklickt wird sollten
 die Bewegungen des IMU Bricks entsprechend im Brick Viewer widergespiegelt
-werden. Bevor du allerdings den "Save Orientation" Knopf klickst solltest du
-den Brick 15 Sekunden ruhig halten damit die Lageberechnung zur richtigen
+werden. Bevor allerdings der "Save Orientation" Knopf geklickt sollte der
+Brick 15 Sekunden ruhig gehalten werden, damit die Lageberechnung zur richtigen
 Position konvergieren kann.
 
 |test_pi_ref|
@@ -167,11 +167,11 @@ Störfelder durchgeführt. Wenn der IMU Brick in der nähe eines magnetische Fel
 der Position, in der der IMU Brick später verwendet werden soll, neu kalibriert
 werden!
 
-Um das Magnetometer neu zu kalibrieren musst du das Kalibrierungsfenster über den
-"Calibrate" Knopf auf dem "IMU Brick" Tab im Brick Viewer aufrufen. Wähle dann
+Um das Magnetometer neu zu kalibrieren muss das Kalibrierungsfenster über den
+"Calibrate" Knopf auf dem "IMU Brick" Tab im Brick Viewer aufgerufen werden. Wähle dann
 denn "Magnetometer" Tab aus und klicke "Start Calibration". Bewege nun den IMU
 Brick bis sich die angezeigten Gain und Bias Werte nicht mehr ändern. Sobald dies
-der Fall ist kannst du den "Ready" klicken und die Kalibrierung des Magnetometers
+der Fall ist kannst der "Ready" Knopf geklickt werden und die Kalibrierung des Magnetometers
 ist abgeschlossen.
 
 Beschleunigungssensor und Gyroskop werden ähnlich kalibriert, folge dazu den
@@ -182,17 +182,17 @@ neu kalibrierst, sodass du im Notfall zu alten Kalibrierung zurückkehren kannst
 Wir empfehlen den Gyroskop Gain nicht neu zu kalibrieren, da dies ohne
 geeignete externe Maschinen nicht möglich ist.
 
-Die Werkskalibrierung für deinen IMU Brick kann hier abgerufen werden::
+Die Werkskalibrierung für jeden IMU Brick kann hier abgerufen werden::
 
  http://download.tinkerforge.com/imu_calibration/YOUR_IMU_UID.txt
 
-Ersetze dazu ``YOUR_IMU_UID`` durch die UID deines IMU Bricks.
-Falls du einen Sensor verkalibriert hast oder eine neue Firmwareversion geflasht
-hast, dann kannst du die Werkskalibrierung wieder importieren. Dazu rufst du
+Dazu muss ``YOUR_IMU_UID`` durch die UID des IMU Bricks ersetzt werden.
+Falls ein Sensor verkalibriert ist oder eine neue Firmwareversion geflasht
+wurde, dann kann die Werkskalibrierung wieder importiert werden. Dazu muss
 das Kalibrierungsfenster über den "Calibrate" Knopf auf dem "IMU Brick" Tab
-im Brick Viewer auf und wählst den "Im/Export" Tab aus. Zum Abschluss kopierst
-du den Inhalt der ``YOUR_IMU_UID.txt`` Datei in das Textfeld und klickst den
-"Import" Knopf.
+im Brick Viewer aufgerufen und der "Im/Export" Tab ausgewählt werden. Zum
+Abschluss muss der Inhalt der ``YOUR_IMU_UID.txt`` Datei in das Textfeld kopiert
+und auf den "Import" Knopf geklickt werden.
 
 
 Quaternionen vs Eulerwinkel

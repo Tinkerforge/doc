@@ -99,8 +99,8 @@ Ressourcen
 
 .. _io4_bricklet_test:
 
-Teste dein IO-4 Bricklet
-------------------------
+Erster Test
+-----------
 
 |test_intro|
 
