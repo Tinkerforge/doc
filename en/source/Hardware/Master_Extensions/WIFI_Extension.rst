@@ -233,8 +233,7 @@ WIFI Extension as Access Point or in Ad Hoc Mode
 
 .. note::
  Access Point and Ad Hoc mode are available in Master Brick firmware
- version >= 1.3.3 and Brick Viewer version >= 1.1.8.
-
+ version 1.3.3 and Brick Viewer version 1.1.8 and newer.
 
 It is possible to communicate with the WIFI Extension without an external
 Access Point. To allow that, the WIFI Extension implements an
