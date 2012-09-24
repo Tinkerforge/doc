@@ -154,9 +154,6 @@ has to be changed to
 WIFI Configuration
 ------------------
 
-.. note::
- Adhoc Mode is not supported yet.
-
 To configure the WIFI Extension open the Master Brick Tab in the Brick Viewer.
 First of all you have to enter the SSID of your wireless network
 and if the device should use DHCP or a static IP.
@@ -227,6 +224,40 @@ At the end, press "Save WIFI Configuration" to save the configuration and
 restart the Master Brick to load it. After restart you should be able to
 reach the Master Brick by entering the IP address and port of the Brick in the
 Brick Viewer.
+
+
+.. _extension_wifi_adhoc_ap:
+
+WIFI Extension as Access Point or in Ad Hoc Mode
+------------------------------------------------
+
+.. note::
+ Access Point and Ad Hoc mode are available in Master Brick firmware
+ version >= 1.3.3 and Brick Viewer version >= 1.1.8.
+
+
+It is possible to communicate with the WIFI Extension without an external
+Access Point. To allow that, the WIFI Extension implements an
+Access Point and an Ad Hoc mode. Since Ad Hoc mode needs to be specifically
+supported by the device you want to connect with, we recommend the
+use of Access Point mode. In AP mode the WIFI Extension simulates an
+access point and should show up as a normal access point on your PC.
+
+.. image:: /Images/Extensions/extension_wifi_connection_adhoc_ap.jpg
+   :scale: 100 %
+   :alt: Configure Ad Hoc or Access Point mode
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi_connection_adhoc_ap.jpg
+
+You can choose Ad Hoc and Access Point mode with DHCP and static IP.
+If you choose DHCP you have to provide the DHCP server! There is no DHCP
+server implementation in the WIFI module. Since that can be quite
+cumbersome to get running, we recommend that you use static IP.
+
+As encryption you can use WEP. WPA is unfortunately not supported in
+Ad Hoc and Access Point mode. The WEP key should be 64 or 128 bit and
+in hexadecimal notation. You can generate valid WEP keys 
+`here <http://www.andrewscompanies.com/tools/wep.asp>`__.
 
 
 .. _extension_wifi_leds:

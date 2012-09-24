@@ -155,10 +155,6 @@ geändert werden.
 WIFI Konfiguration
 ------------------
 
-.. note::
- Adhoc Modus wird noch nicht unterstützt.
-
-
 Die WIFI Extension wird über das Tab des Master Bricks im Brick Viewer konfiguriert.
 Als erstes muss die SSID des drahtlosen Netzes eingegeben werden und ob
 DHCP oder eine statische IP genutzt werden soll.
@@ -234,6 +230,42 @@ Zum Schluss muss auf "Save WIFI Configuration" geklickt werden um die Konfigurat
 und das Master Brick neu gestartet werden um die Konfiguration zu laden. Nach dem Neustart
 sollte das Master Brick bei Eingabe der konfigurierten IP Adresse und Port im Brick Viewer erreichbar sein.
 
+.. _extension_wifi_adhoc_ap:
+
+WIFI Extension als Access Point oder im Ad Hoc Modus
+----------------------------------------------------
+
+.. note::
+ Access Point und Ad Hoc Modus stehen ab Master Brick Firmware
+ Version 1.3.3 und Brick Viewer Version 1.1.8 zur Verfügung.
+
+
+Es ist möglich direkt mit der WIFI Extension zu kommunizieren, ohne einen
+zusätzlichen externen Access Point. Um dies zu ermöglichen wurde ein
+Access Point und ein Ad Hoc Modus implmentiert. Da der Ad Hoc Modus
+vom sich verbindenden Gerät spezifisch unterstützt werden muss,
+empfehlen wir die verwendung des Access Point Modus. Im AP Modus
+simuliert die WIFI Extension einen Access Point und sie sollte
+als ganz normaler Access Point auf dem PC angezeigt werden.
+
+
+.. image:: /Images/Extensions/extension_wifi_connection_adhoc_ap.jpg
+   :scale: 100 %
+   :alt: Konfiguration von Ad Hoc und Access Point Modus
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi_connection_adhoc_ap.jpg
+
+Es ist möglich bei beiden Modi zwischen DHCP und statischer IP auszuwählen.
+Falls DHCP ausgewählt wird, muss der DHCP server von außen bereitgestellt werden!
+Es gibt keine DHCP Server Implementierung auf dem WIFI Modul. Da das aufsetzen
+eines DHCP Servers mühselig sein kann, empfehlen wir die Benutzung einer
+statischen IP.
+
+Als Verschlüsselung steht WEP zur Verfügung. WPA wird 
+im Ad Hoc und Access Point Modus leider nicht unterstützt. Der WEP Schlüssel
+sollte 64 oder 128 Bit groß sein und in Hexadezimaler Schreibeweise angegeben 
+sein. Gültige WEP Schlüssel können 
+`hier <http://www.andrewscompanies.com/tools/wep.asp>`__ generiert werden.
 
 .. _extension_wifi_leds:
 
