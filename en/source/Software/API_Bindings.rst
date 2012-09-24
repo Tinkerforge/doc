@@ -464,7 +464,7 @@ available Java examples (in ``examples/``).
 The library can be used without any further extensions. As an example lets
 compile the configuration example of the Stepper Brick.
 
-For this we create a folder and copy the ``Tinkerforge.jar`` and the
+Create a new folder and copy the ``Tinkerforge.jar`` and the
 ``examples/Brick/Stepper/ExampleConfiguration.java`` into this folder::
 
  example_folder/

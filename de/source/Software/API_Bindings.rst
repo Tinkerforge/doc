@@ -397,7 +397,7 @@ Relay Bricklets und PCs abzuändern.
 Delphi
 ^^^^^^
 
-**Voraussetzungen**: Delphi 2007 oder neuer, der Lazarus (Free Pascal Compiler
+**Voraussetzungen**: Delphi 2007 oder neuer, oder Lazarus (Free Pascal Compiler
 2.4 oder neuer), andere Delphi oder Object Pascal Compiler sollten auch
 funktionieren
 
