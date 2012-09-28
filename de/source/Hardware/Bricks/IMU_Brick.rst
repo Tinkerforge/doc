@@ -212,8 +212,8 @@ gilt folgenden Reihenfolge: erst Roll-Winkel, dann Gier-Winkel, zuletzt
 Nick-Winkel.
 
 
-Wie können unabhängige Winkel berechnet werden?
------------------------------------------------
+Berechnung unabhängiger Winkel
+------------------------------
 
 Es ist nicht möglich Winkel für alle 3 Achsen zu berechnen die vollständig
 unabhängig sind. Zumindest an den Gimbal Lock Positionen werden Sprünge von
@@ -299,8 +299,8 @@ bei +90° und -90° für jede der Achsen auftreten. Die Grundposition ist (0,0,0
         q.ipcon.destroy()
 
 
-Was ist das für Zauberei, wie funktioniert es?
-----------------------------------------------
+Funktionsweise
+--------------
 
 Auf Basis der Sensordaten die der IMU Brick sammelt (Winkelgeschwindigkeit,
 Beschleunigung und Magnetfeld) ist es möglich Sensorfusion zu betreiben, um eine

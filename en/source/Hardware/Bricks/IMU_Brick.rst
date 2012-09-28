@@ -208,8 +208,8 @@ API documentation. Note that Euler angles always have an order in which they
 are applied. The order for the IMU Brick is: roll, yaw, pitch.
 
 
-How to get angles that are independent?
----------------------------------------
+Computation of independent Angles
+---------------------------------
 
 It is not possible to get angles for all 3 axis that are completely independent.
 At least at the gimbal lock positions there will be jumps of 180° for
@@ -294,8 +294,8 @@ angles. The base position will be (0,0,0):
         q.ipcon.destroy()
 
 
-What is this sorcery, how does it work?
----------------------------------------
+How it works
+------------
 
 With the sensor data gathered by the IMU Brick (angular velocity, acceleration and
 magnetic field), it is possible to apply sensor fusion to acquire an absolute
