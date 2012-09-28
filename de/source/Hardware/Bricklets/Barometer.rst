@@ -6,6 +6,35 @@
 Barometer Bricklet
 ==================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_barometer_tilted_350.jpg",
+	               "Bricklets/bricklet_barometer_tilted_600.jpg",
+	               "Barometer Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_barometer_vertical_100.jpg",
+	             "Bricklets/bricklet_barometer_vertical_600.jpg",
+	             "Barometer Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_barometer_horizontal_100.jpg",
+	             "Bricklets/bricklet_barometer_horizontal_600.jpg",
+	             "Barometer Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_barometer_brickv_100.jpg",
+	             "Bricklets/bricklet_barometer_brickv.jpg",
+	             "Barometer Bricklet im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/barometer_bricklet_dimensions_100.png",
+	             "Dimensions/barometer_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
 
 Features
 --------
@@ -63,20 +92,14 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. image:: /Images/Bricklets/bricklet_barometer_master_600.jpg
-   :scale: 100 %
-   :alt: Barometer Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_barometer_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird der Luftdruck in mbar angezeigt.
 Der Graph gibt den zeitlichen Verlauf des Luftdrucks wieder.
 
 .. image:: /Images/Bricklets/bricklet_barometer_brickv.jpg
-   :scale: 100 %
+   :scale: 70 %
    :alt: Barometer Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_barometer_brickv.jpg

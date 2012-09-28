@@ -6,6 +6,36 @@
 Barometer Bricklet
 ==================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_barometer_tilted_350.jpg",
+	               "Bricklets/bricklet_barometer_tilted_600.jpg",
+	               "Barometer Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_barometer_vertical_100.jpg",
+	             "Bricklets/bricklet_barometer_vertical_600.jpg",
+	             "Barometer Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_barometer_horizontal_100.jpg",
+	             "Bricklets/bricklet_barometer_horizontal_600.jpg",
+	             "Barometer Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_barometer_brickv_100.jpg",
+	             "Bricklets/bricklet_barometer_brickv.jpg",
+	             "Barometer Bricklet in Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/barometer_bricklet_dimensions_100.png",
+	             "Dimensions/barometer_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
+	}}
+	{{ tfdocend() }}
+
 
 Features
 --------
@@ -63,20 +93,14 @@ Test your Barometer Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. image:: /Images/Bricklets/bricklet_barometer_master_600.jpg
-   :scale: 100 %
-   :alt: Barometer Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_barometer_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now see the air pressure in mbar
 and a graph that shows the air pressure over time.
 
 .. image:: /Images/Bricklets/bricklet_barometer_brickv.jpg
-   :scale: 100 %
+   :scale: 70 %
    :alt: Barometer Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_barometer_brickv.jpg

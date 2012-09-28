@@ -338,7 +338,7 @@ def fill_dicts():
     bricklets = [('Ambient Light',  'ambient_light',  bindings, bricklet_descriptions['ambient_light'][lang]),
                  ('Analog In',      'analog_in',      bindings, bricklet_descriptions['analog_in'][lang]),
                  ('Analog Out',     'analog_out',     bindings, bricklet_descriptions['analog_out'][lang]),
-                 #('Barometer',      'barometer',      bindings, bricklet_descriptions['barometer'][lang]),
+                 ('Barometer',      'barometer',      bindings, bricklet_descriptions['barometer'][lang]),
                  ('Breakout',       'breakout',       [],       bricklet_descriptions['breakout'][lang]),
                  ('Current12',      'current12',      bindings, bricklet_descriptions['current12'][lang]),
                  ('Current25',      'current25',      bindings, bricklet_descriptions['current25'][lang]),
