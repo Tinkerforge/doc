@@ -24,7 +24,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "30", "Delphi bindings", "`done <http://www.tinkerforge.com/doc/index.html#bricks>`__"
    "37", "Complete German translation of documentation", "almost done"
    "38", "WIFI Extension", "`done <https://shop.tinkerforge.com/master-extensions/wifi-master-extension.html>`__"
-   "40", "Barometer Bricklet", "circuit boards ordered"
+   "39", "Barometer Bricklet", "`done <http://en.blog.tinkerforge.com/2012/9/28/barometer-bricklet-available-and-more-made-in-germany>`__"
    "41", "Introduction of Tinkerforge Industrial Bricklets", "prototype"
    "42", "New Current Bricklet", "problems with precision, redesign necessary"
    "43", "GPS Bricklet", "prototype"

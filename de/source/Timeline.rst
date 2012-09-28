@@ -27,7 +27,7 @@ Termine haben.
    "30", "Delphi Bindings", "`fertig <http://www.tinkerforge.com/doc/index.html#bricks>`__"
    "37", "Vollständige Deutsche Dokumentation", "fast fertig"
    "38", "WIFI Extension", "`fertig <https://shop.tinkerforge.com/master-extensions/wifi-master-extension.html>`__"
-   "40", "Barometer Bricklet", "Leiterpatten bestellt"
+   "39", "Barometer Bricklet", "`fertig <http://de.blog.tinkerforge.com/2012/9/28/barometer-bricklet-verfuegbar-und-mehr-made-in-germany>`__"
    "41", "Vorstellung von Tinkerforge Industrial Bricklets", "Prototyp"
    "42", "Neues Current Bricklet", "Probleme mit der Genauigkeit, Redesign notwenig"
    "43", "GPS Bricklet", "Prototyp"
