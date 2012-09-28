@@ -10,7 +10,7 @@ Barometer Bricklet
 Features
 --------
 
-* Misst Luftdruck and Höhenänderungen
+* Misst Luftdruck und Höhenänderungen
 * Auflösung 0,012mbar / 0,1m
 * Bereich 10 bis 1200mbar
 
@@ -37,7 +37,7 @@ Eigenschaft                       Wert
 Sensor                            MS5611-01BA01
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Luftdruck Bereic                  10 - 1200mbar
+Luftdruck Bereich                 10 - 1200mbar
 Auflösung                         0,012mbar / 0.1m
 Genauigkeit (25°C, 750mbar)       +- 1,5mbar
 --------------------------------  ------------------------------------------------------------
