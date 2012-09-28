@@ -46,6 +46,10 @@ bricklet_descriptions = {
     'en': 'Generates configurable voltages up to 5V',
     'de': 'Erzeugt konfigurierbare elektrische Spannungen bis zu 5V'
     },
+'barometer': {
+    'en': 'Measures air pressure and altitude changes',
+    'de': 'Misst Luftdruck und Höhenänderungen'
+    },
 'breakout': {
     'en': 'Makes all Bricklet signals available',
     'de': 'Macht alle Bricklet Signale zugänglich'
@@ -334,6 +338,7 @@ def fill_dicts():
     bricklets = [('Ambient Light',  'ambient_light',  bindings, bricklet_descriptions['ambient_light'][lang]),
                  ('Analog In',      'analog_in',      bindings, bricklet_descriptions['analog_in'][lang]),
                  ('Analog Out',     'analog_out',     bindings, bricklet_descriptions['analog_out'][lang]),
+                 #('Barometer',      'barometer',      bindings, bricklet_descriptions['barometer'][lang]),
                  ('Breakout',       'breakout',       [],       bricklet_descriptions['breakout'][lang]),
                  ('Current12',      'current12',      bindings, bricklet_descriptions['current12'][lang]),
                  ('Current25',      'current25',      bindings, bricklet_descriptions['current25'][lang]),
@@ -355,8 +360,7 @@ def fill_dicts():
                   # display,             uri,     bindings, description
     extensions = [('Chibi Extension',   'chibi',  [],       extension_descriptions['chibi'][lang]),
                   ('RS485 Extension',   'rs485',  [],       extension_descriptions['rs485'][lang]),
-                  ('WIFI Extension',    'wifi',   [],       extension_descriptions['wifi'][lang])
-                  ]
+                  ('WIFI Extension',    'wifi',   [],       extension_descriptions['wifi'][lang])]
 
                       # display,                  uri,         bindings, description
     power_supplies = [('Step-Down Power Supply', 'step_down',  [],       power_supply_descriptions['step_down'][lang])]
