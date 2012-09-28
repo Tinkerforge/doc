@@ -19,11 +19,12 @@ Description
 
 The Barometer Bricklet can be used to extend the features of Bricks by the capability to
 measure barometric pressure in range of 10 to 1200mbar with a resolution of 0.012mbar. 
-An internal temperature sensor corrects the measured values. 
-The device is equipped with a MS5611-01BA01 sensor which is designed to be used as
-altimeter. Since the barometric pressure is changing significantly during the day 
+An internal temperature sensor compensates for measuring errors. 
+The Bricklet is equipped with a MS5611-01BA01 sensor which is designed to be used as
+altimeter, too. Since the barometric pressure is changing significantly during the day 
 this have to be compensated in case of usage as altimeter. One possibility
-is to make sensor fusion with `IMU Brick <brick_imu>` data.
+is to make sensor fusion with `IMU Brick <brick_imu>` data to compensate
+these effects.
 
 
 Technical Specifications

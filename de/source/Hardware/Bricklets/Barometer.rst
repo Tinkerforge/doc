@@ -10,9 +10,20 @@ Barometer Bricklet
 Features
 --------
 
+* Misst Luftdruck and Höhenänderungen
+* Auflösung 0.012mbar / 0.1m
+* Bereich 10 bis 1200mbar
 
 Beschreibung
 ------------
+
+Mit dem Barometer Bricklet können Bricks den Luftdruck im Bereich von 10 bis 1200mbar mit einer
+Auflösung von 0.012mbar messen. Eine interne Temperaturmessung kompensiert Messfehler.
+Das Bricklet ist mit einem MS5611-01BA01 sensor ausgestattet der auch als Altimeter
+(Höhenmesser) genutzt werden kann. Da der Luftdruck sich signifikant über den Tag ändert,
+müssen diese Änderungen kompensiert werden um als Altimeter benutzt zu werden. Eine mögliche
+Lösung ist die Sensordaten mit denen von einem `IMU Brick <brick_imu>` zu kombinieren
+und so dieses zu Kompensieren.
 
 
 Technische Spezifikation
@@ -21,12 +32,21 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
+Sensor                            MS5611-01BA01
+Luftdruck Bereic                  10 - 1200mbar
+Auflösung                         0.012mbar / 0.1m
+Genauigkeit (25°C, 750mbar)       +- 1.5mbar
+
+Abmessungen (B x T x H)           25 x 15 x 5mm (0.98 x 0.59 x 0.19")
+Gewicht                           2g
 ================================  ============================================================
 
 
 Ressourcen
 ----------
 
+
+* MS5611 Datenblatt (`Download <https://github.com/Tinkerforge/barometer-bricklet/raw/master/datasheets/ms5611-01ba01.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/barometer-bricklet/raw/master/hardware/barometer-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/barometer_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/barometer-bricklet/zipball/master>`__)
