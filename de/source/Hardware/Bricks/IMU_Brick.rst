@@ -95,8 +95,8 @@ Mikrocontroller                                                 ATSAM3S2B (128kB
 Stromverbrauch                                                  53mA
 --------------------------------------------------------------  ------------------------------------------------------------
 --------------------------------------------------------------  ------------------------------------------------------------
-Beschleunigungs-, Magnetfeld-, Winkelgeschwindigkeitsauflösung  16Bit
-Auflösung der Roll-, Nick- (Pitch), Gier- (Yaw) Winkel          16Bit, in 0,01° Schritten
+Beschleunigungs-, Magnetfeld-, Winkelgeschwindigkeitsauflösung  12Bit, 16Bit, 16Bit
+Auflösung der Roll-, Nick- (Pitch), Gier- (Yaw) Winkel          0,01° Schritte
 Quaternionenauflösung                                           32Bit
 --------------------------------------------------------------  ------------------------------------------------------------
 --------------------------------------------------------------  ------------------------------------------------------------
