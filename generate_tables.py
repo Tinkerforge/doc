@@ -70,9 +70,25 @@ bricklet_descriptions = {
     'en': 'Two relays to switch AC/DC devices',
     'de': 'Zwei Relais um AC/DC Geräte zu schalten'
     },
+'gps': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'humidity': {
     'en': 'Measures relative humidity',
     'de': 'Misst relative Luftfeuchtigkeit'
+    },
+'industrial_digital_in_4': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'industrial_digital_out_4': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'industrial_quad_relay': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 'io16': {
     'en': '16-channel digital input/output',
@@ -335,27 +351,31 @@ def fill_dicts():
               ('Stepper', 'stepper', bindings, brick_descriptions['stepper'][lang])]
 
                  # display,          uri,             bindings, description
-    bricklets = [('Ambient Light',  'ambient_light',  bindings, bricklet_descriptions['ambient_light'][lang]),
-                 ('Analog In',      'analog_in',      bindings, bricklet_descriptions['analog_in'][lang]),
-                 ('Analog Out',     'analog_out',     bindings, bricklet_descriptions['analog_out'][lang]),
-                 ('Barometer',      'barometer',      bindings, bricklet_descriptions['barometer'][lang]),
-                 ('Breakout',       'breakout',       [],       bricklet_descriptions['breakout'][lang]),
-                 ('Current12',      'current12',      bindings, bricklet_descriptions['current12'][lang]),
-                 ('Current25',      'current25',      bindings, bricklet_descriptions['current25'][lang]),
-                 ('Distance IR',    'distance_ir',    bindings, bricklet_descriptions['distance_ir'][lang]),
-                 ('Dual Relay',     'dual_relay',     bindings, bricklet_descriptions['dual_relay'][lang]),
-                 ('Humidity',       'humidity',       bindings, bricklet_descriptions['humidity'][lang]),
-                 ('IO-16',          'io16',           bindings, bricklet_descriptions['io16'][lang]),
-                 ('IO-4',           'io4',            bindings, bricklet_descriptions['io4'][lang]),
-                 ('Joystick',       'joystick',       bindings, bricklet_descriptions['joystick'][lang]),
-                 ('LCD 16x2',       'lcd_16x2',       bindings, bricklet_descriptions['lcd_16x2'][lang]),
-                 ('LCD 20x4',       'lcd_20x4',       bindings, bricklet_descriptions['lcd_20x4'][lang]),
-                 ('Linear Poti',    'linear_poti',    bindings, bricklet_descriptions['linear_poti'][lang]),
-                 ('Piezo Buzzer',   'piezo_buzzer',   bindings, bricklet_descriptions['piezo_buzzer'][lang]),
-                 ('Rotary Poti',    'rotary_poti',    bindings, bricklet_descriptions['rotary_poti'][lang]),
-                 ('Temperature',    'temperature',    bindings, bricklet_descriptions['temperature'][lang]),
-                 ('Temperature IR', 'temperature_ir', bindings, bricklet_descriptions['temperature_ir'][lang]),
-                 ('Voltage',        'voltage',        bindings, bricklet_descriptions['voltage'][lang])]
+    bricklets = [('Ambient Light',              'ambient_light',              bindings, bricklet_descriptions['ambient_light'][lang]),
+                 ('Analog In',                  'analog_in',                  bindings, bricklet_descriptions['analog_in'][lang]),
+                 ('Analog Out',                 'analog_out',                 bindings, bricklet_descriptions['analog_out'][lang]),
+                 ('Barometer',                  'barometer',                  bindings, bricklet_descriptions['barometer'][lang]),
+                 ('Breakout',                   'breakout',                   [],       bricklet_descriptions['breakout'][lang]),
+                 ('Current12',                  'current12',                  bindings, bricklet_descriptions['current12'][lang]),
+                 ('Current25',                  'current25',                  bindings, bricklet_descriptions['current25'][lang]),
+                 ('Distance IR',                'distance_ir',                bindings, bricklet_descriptions['distance_ir'][lang]),
+                 ('Dual Relay',                 'dual_relay',                 bindings, bricklet_descriptions['dual_relay'][lang]),
+                 #('GPS',                        'gps',                        bindings, bricklet_descriptions['gps'][lang]),
+                 ('Humidity',                   'humidity',                   bindings, bricklet_descriptions['humidity'][lang]),
+                 #('Industrial Digital In 4',    'industrial_digital_in_4',    bindings, bricklet_descriptions['industrial_digital_in_4'][lang]),
+                 #('Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, bricklet_descriptions['industrial_digital_out_4'][lang]),
+                 #('Industrial Quad Relay',      'industrial_quad_relay',      bindings, bricklet_descriptions['industrial_quad_relay'][lang]),
+                 ('IO-16',                      'io16',                       bindings, bricklet_descriptions['io16'][lang]),
+                 ('IO-4',                       'io4',                        bindings, bricklet_descriptions['io4'][lang]),
+                 ('Joystick',                   'joystick',                   bindings, bricklet_descriptions['joystick'][lang]),
+                 ('LCD 16x2',                   'lcd_16x2',                   bindings, bricklet_descriptions['lcd_16x2'][lang]),
+                 ('LCD 20x4',                   'lcd_20x4',                   bindings, bricklet_descriptions['lcd_20x4'][lang]),
+                 ('Linear Poti',                'linear_poti',                bindings, bricklet_descriptions['linear_poti'][lang]),
+                 ('Piezo Buzzer',               'piezo_buzzer',               bindings, bricklet_descriptions['piezo_buzzer'][lang]),
+                 ('Rotary Poti',                'rotary_poti',                bindings, bricklet_descriptions['rotary_poti'][lang]),
+                 ('Temperature',                'temperature',                bindings, bricklet_descriptions['temperature'][lang]),
+                 ('Temperature IR',             'temperature_ir',             bindings, bricklet_descriptions['temperature_ir'][lang]),
+                 ('Voltage',                    'voltage',                    bindings, bricklet_descriptions['voltage'][lang])]
 
                   # display,             uri,     bindings, description
     extensions = [('Chibi Extension',   'chibi',  [],       extension_descriptions['chibi'][lang]),
