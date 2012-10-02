@@ -9,12 +9,12 @@ verfügbar. Zusätzlich sind auch die Quelltexte aller Tools, wie des Brick
 Daemon, des Brick Viewer und der Generatoren für API Bindings, verfügbar.
 
 Das bedeute, dass alles an Tinkerforge Hardware und Software als
-Ausgangspunkt für ein eigenes Projekt verwenden werden kann, sie können
+Ausgangspunkt für eigene Projekte verwenden werden kann, diese können
 erweitert und modifiziert werden. Darüber hinaus kannst du uns bei der
 Entwicklungsarbeit helfen und, am wichtigsten, Probleme melden.
 
 Um es der Community einfach zu machen Patches einzusenden und Probleme zu melden,
-sind alle `Tinkerforge Projects <https://github.com/Tinkerforge>`__ auf Github
+sind alle `Tinkerforge Projekte <https://github.com/Tinkerforge>`__ auf Github
 gehostet.
 
 Weiterführenden Informationen über git sind `hier <http://git-scm.com/>`__ zu

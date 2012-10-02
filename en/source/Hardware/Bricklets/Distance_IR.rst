@@ -188,8 +188,8 @@ You can write your own voltage/distance mapping for a sensor we
 currently do not offer. Or you can modify an existing mapping file to achieve
 a better quality of your sensor.
 
-A voltage/distance mapping file consists of comments (lines beginning with '#')
-and lines containing one "<distance in cm>: <analog value in mV>" tuple each.
+A voltage/distance mapping file consists of comments (lines beginning with ``#``)
+and lines containing one ``<distance in cm>: <analog value in mV>`` tuple each.
 Look in the provided files above to get an idea.
 
 

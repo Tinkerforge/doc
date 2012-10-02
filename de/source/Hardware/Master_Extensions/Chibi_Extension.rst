@@ -213,8 +213,8 @@ Hier ist eine Liste von Frequenzen und zugehörigen Kanälen:
  "BPSK40 915Mhz", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
 
 .. warning::
- Die Chibi Extension wird als elektronisches Bauteil verkauft. **Du** baust
- ein System mit diesem Bauteil und es liegt in deiner Verantwortung, dass das
- gebaute System den gesetzlichen Bestimmungen entspricht. Du musst auch
- sicherstellen, dass die konfigurierte Frequenz in deinem Land für die
+ Die Chibi Extension wird als elektronisches Bauteil verkauft. Es liegt in der
+ Verantwortung des Nutzers sicherzustellen, dass das aufgebaute System den
+ jeweiligen lokalen gesetzlichen Bestimmungen entspricht. Dazu gehört auch
+ sicherzustellen, dass die konfigurierte Frequenz am jeweiligen Standort für die
  Nutzung freigegeben ist!

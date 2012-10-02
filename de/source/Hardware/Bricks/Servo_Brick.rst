@@ -157,8 +157,8 @@ Servo Bricks.
 
 .. _servo_brick_test:
 
-Teste deinen Servo Brick
-------------------------
+Erster Test
+-----------
 
 |test_intro|
 
@@ -215,19 +215,20 @@ Position. Es gibt aber auch Servos die nicht diesem Standard entsprechen, daher
 erlaubt der Servo Brick alle Parameter des PWM Signals zu konfigurieren.
 
 Der Standardwert für die Periode ist 19,5ms. Diese Periode funktioniert mit
-allen Servors die wir getestet haben (20ms funktionierte mit einigen chinesischen
-Servos nicht zuverlässig). Falls im Datenblatt deines Servos eine Periode angeben
-ist solltest du diesen Wert auch einstellen. Es ist allerdings eher
-unwahrscheinlich, dass du diesen Wert ändern musst.
+allen bisher getesteten Servors (20ms funktioniert mit einigen chinesischen
+Servos nicht zuverlässig). Falls im Datenblatt des Servos eine Periode angeben
+ist sollte dieser Wert auch eingestellt werden. Es ist allerdings eher
+unwahrscheinlich, dass dieser Wert verändert werden muss.
 
 Eher interessant ist die minimale und maximale Pulsweite. Der Standardbereich
 ist 1ms bis 2ms. Die meisten Servos können aber auch einen größeren Winkelbereich
-fahren wenn der Bereich der Pulsweite vergrößert wird. Falls im Datenblatt deines
-Servos eine Angabe über die zulässige Pulsweite gemacht ist solltest du diese
-entsprechend einstellen. Falls der zulässige Bereich der Pulsweite unbekannt ist
-kannst du dich durch Ausprobieren an die richtigen Werte heran tasten. Vergrößere
-den Bereich solange bis der Servo anfängt zu stottern. Die zulässigen Werte sind
-dann die bei denen der Servo noch nicht stottert.
+fahren wenn der Bereich der Pulsweite vergrößert wird. Falls im Datenblatt des
+Servos eine Angabe über die zulässige Pulsweite gemacht ist sollte diese
+entsprechend eingestellt werden. Falls der zulässige Bereich der Pulsweite unbekannt
+ist können die richtigen Werte durch Ausprobieren angenähert werden. Dazu muss
+der Bereich solange vergrößert werden bis der Servo anfängt zu stottern. Der
+zulässige Bereich sind dann der nächste kleiner, bei dem der Servo noch nicht
+stottert.
 
 .. warning::
  Einen Servo über längere Zeit mit einer falsch eingestellten PWM zu betreiben
@@ -271,7 +272,7 @@ beschränkt.
 
 .. warning::
  Falls die gleiche Stromversorgungen für den ESC und den Servo Brick
- verwendet wird, dann darf zusätzliche noch das schwarze Kabel (GND) nicht an den
+ verwendet wird, dann darf auch das schwarze Kabel (GND) nicht an den
  Servo Brick angeschlossen werden. Es scheint so, dass die meisten ESCs ihren
  Strom nicht über deren eigene Stromversorgungen, sondern über den GND Pin des
  Servo Bricks beziehen. Dies kann zur Zerstörung des Servo Bricks führen. Daher
@@ -321,25 +322,25 @@ On Device Programmierschnittstelle
 FAQ
 ---
 
-Meine Servos stottern, Hilfe!
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Die Servos stottern
+^^^^^^^^^^^^^^^^^^^
 
 Die häufigste Ursache ist ein Spannungsabfall, verursacht durch wiederholte
-Spitzen im Stromverbrauch der angeschlossenen Servos. Als erstes solltest du
-sicherstellen, dass die Eingangspannung des des Servo Bricks um mindestens 1V
-höher liegt als die eingestellte Ausgangsspannung.
+Spitzen im Stromverbrauch der angeschlossenen Servos. Als erstes sollte
+sichergestellt werden, dass die Eingangspannung des Servo Bricks um mindestens
+1V höher liegt als die eingestellte Ausgangsspannung.
 
 Üblicherweise tritt diese Problem auf, wenn die Stromversorgung Spitzen im
-Stromverbrauch nicht verträgt. Um deine Stromversorgung als Ursache
-auszuschließen kannst du testweise Batterien als Stromversorgung verwenden.
+Stromverbrauch nicht verträgt. Um die Stromversorgung als Ursache
+auszuschließen können testweise Batterien als Stromversorgung verwendet werden.
 Diese haben normalerweise kein Problem mit Spitzen im Stromverbrauch.
 
-Falls du schon Batterien verwenden und das Problem tritt weiterhin auf, dann
-stelle sicher, dass deine Batterien voll geladen sind. Falls die Batterien zu
-schwach sind fällt deren Spannung ab.
+Falls schon Batterien verwendet werden und das Problem weiterhin auftritt, dann
+sollte als nächstes sichergestellt werden, dass die Batterien voll geladen sind.
+Falls die Batterien zu schwach sind fällt deren Spannung ab.
 
-Wenn deine Servos nur anfangen zu stottern wenn sie den minimalen oder maximalen
+Wenn die Servos nur anfangen zu stottern wenn sie den minimalen oder maximalen
 Winkel erreichen, dann ist der Bereich der zulässigen Pulsweite zu groß
-eingestellt. In diesem Fall musst du den Bereich der Pulsweite verringern.
+eingestellt. In diesem Fall musst der Bereich der Pulsweite verringert werden.
 Anderenfalls können deine Servos beschädigt werden, wenn dieser Zustand längere
 Zeit anhält.

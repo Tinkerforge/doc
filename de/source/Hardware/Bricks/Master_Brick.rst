@@ -128,8 +128,8 @@ Master Bricks.
 
 .. _master_brick_test:
 
-Teste deinen Master Brick
--------------------------
+Erster Test
+-----------
 
 |test_intro|
 

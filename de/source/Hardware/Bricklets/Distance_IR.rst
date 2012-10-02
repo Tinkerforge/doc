@@ -187,14 +187,17 @@ Sensoren:
    "GP2Y0A21", "10cm - 80cm (3,94"" - 31,50"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
    "GP2Y0A02", "20cm - 150cm (7,87"" - 59,06"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A02.txt>`__"
 
-Du kannst deine eigenen Spannung/Distanz Abbildungen erstellen für Sensoren die
-wir im Moment noch nicht unterstützen. Oder du kannst auch die bestehenden
-Abbildungen überarbeiten um deren Qualität für deinen Sensor zu verbessern.
+Es können eigenen Spannung/Distanz Abbildungen erstellen werden um Sensoren zu
+verwenden die im Moment noch nicht offiziell unterstützt werden. Es können auch
+die bestehenden Abbildungen auf einen einzelnen Sensor genauer angepasst werden,
+um die Genauigkeit der Distanzmessung für diesen einen Sensor zu verbessern. Die
+vorgefertigte Spannung/Distanz Abbildungsdateien enthalten über mehrere Sensoren
+gemittelte Werte.
 
-Eine Spannung/Distanz Abbildungsdatei kann Kommentare beinhalten (Zeilen die mit
-'#' beginnen) und beinhaltet Zeilen die jeweils ein
-"<Distanz in cm>: <Analogwert in mV>" Paar enthalten. Schau dir die bestehenden
-Abbildungsdateien für ein besseres Verständnis an.
+Eine Spannung/Distanz Abbildungsdatei kann Kommentare beinhalten (Zeilen die
+mit ``#`` beginnen) und beinhaltet Zeilen die jeweils ein
+``<Distanz in cm>: <Analogwert in mV>`` Paar enthalten. Die bestehenden
+Abbildungsdateien diesen als Beispiel für ein besseres Verständnis.
 
 
 .. _distance_ir_bricklet_programming_interfaces:
@@ -217,14 +220,15 @@ FAQ
 Die Distanzen passen nicht
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Es ist höchstwahrscheinlich ein Kalibrierungsproblem. Als erstes solltest du
-sicherstellen, dass die richtige Spannung/Distanz Abbildungsdatei für den
-angeschlossenen Sensor auf dem Bricklet gespeichert ist (siehe
-:ref:`hier <distance_ir_sensor_configuration>`). Als nächstes solltest du
-noch die Kalibrierung des ADC deines Bricks überprüfen
+Dies ist höchstwahrscheinlich ein Kalibrierungsproblem. Als erstes sollte
+sichergestellt werden, dass die richtige Spannung/Distanz Abbildungsdatei für
+den angeschlossenen Sensor auf dem Bricklet gespeichert ist (siehe
+:ref:`hier <distance_ir_sensor_configuration>`). Dann sollte noch die
+Kalibrierung des Analog-Digital-Wanderls des verwendeten Bricks überprüft werden
 (siehe :ref:`hier <brickv_adc_calibration>`).
 
 Falls die Distanzmessung immer noch nicht genau genug ist, bleibt nur noch
-eine speziell auf deinen Sensor angepasste Spannung/Distanz Abbildungsdatei zu
-erstellen. Die von uns vorgefertigte Spannung/Distanz Abbildungsdateien
-enthalten über mehrere Sensoren gemittelte Werte.
+eine speziell auf den einzelnen Sensor angepasste Spannung/Distanz
+Abbildungsdatei zu erstellen. Die vorgefertigte Spannung/Distanz
+Abbildungsdateien enthalten über mehrere Sensoren gemittelte Werte, damit sie
+für alle Sensoren einer Serie funktionieren.

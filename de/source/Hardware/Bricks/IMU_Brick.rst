@@ -131,8 +131,8 @@ IMU Bricks.
 
 .. _imu_brick_test:
 
-Teste deinen IMU Brick
-----------------------
+Erster Test
+-----------
 
 |test_intro|
 
@@ -171,13 +171,14 @@ Um das Magnetometer neu zu kalibrieren muss das Kalibrierungsfenster über den
 "Calibrate" Knopf auf dem "IMU Brick" Tab im Brick Viewer aufgerufen werden. Wähle dann
 denn "Magnetometer" Tab aus und klicke "Start Calibration". Bewege nun den IMU
 Brick bis sich die angezeigten Gain und Bias Werte nicht mehr ändern. Sobald dies
-der Fall ist kannst der "Ready" Knopf geklickt werden und die Kalibrierung des Magnetometers
-ist abgeschlossen.
+der Fall ist kann der "Ready" Knopf geklickt werden und die Kalibrierung des
+Magnetometers ist abgeschlossen.
 
 Beschleunigungssensor und Gyroskop werden ähnlich kalibriert, folge dazu den
 Anweisungen im Kalibrierungsfenster. Wir empfehlen zuerst die bestehende
-Kalibrierung zu exportieren, bevor du den Beschleunigungssensor und das Gyroskop
-neu kalibrierst, sodass du im Notfall zu alten Kalibrierung zurückkehren kannst.
+Kalibrierung zu exportieren, bevor der Beschleunigungssensor und das Gyroskop
+neu kalibriert werden, sodass im Notfall die alten Kalibrierung wieder
+eingespielt werden kann.
 
 Wir empfehlen den Gyroskop Gain nicht neu zu kalibrieren, da dies ohne
 geeignete externe Maschinen nicht möglich ist.

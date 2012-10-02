@@ -144,8 +144,8 @@ Stepper Bricks.
 
 .. _stepper_brick_test:
 
-Teste deinen Stepper Brick
---------------------------
+Erster Test
+-----------
 
 |test_intro|
 

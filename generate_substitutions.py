@@ -50,7 +50,7 @@ brick_test_intro = {
 """.. |test_intro| replace::
  Um den {0} Brick testen zu können müssen der
  :ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
- sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+ (für Installationsanleitungen :ref:`hier <brickd_installation>`
  und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
  dem Brick Daemon verbunden sein.
 
@@ -65,8 +65,8 @@ brick_test_tab = {
 """,
 'de':
 """.. |test_tab| replace::
- Schließe jetzt den Brick per USB an den PC an. Einen Moment später im Brick
- Viewer ein neuer Tab namens "{0} Brick" auftauchen. Wähle diesen Tab aus.
+ Schließe jetzt den Brick per USB an den PC an. Einen Moment später sollte im
+ Brick Viewer ein neuer Tab namens "{0} Brick" auftauchen. Wähle diesen Tab aus.
 """
 }
 
@@ -99,7 +99,7 @@ bricklet_test_intro = {
 """.. |test_intro| replace::
  Um das {0} Bricklet testen zu können müssen der
  :ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
- sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+ (für Installationsanleitungen :ref:`hier <brickd_installation>`
  und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
  dem Brick Daemon verbunden sein.
 """
@@ -188,7 +188,6 @@ def generate(path):
 
         print 'Generating {0}.substitutions'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '.substitutions'), 'wb').write(make_bricklet_substitutions(bricklet))
-
 
 if __name__ == "__main__":
     generate(os.getcwd())

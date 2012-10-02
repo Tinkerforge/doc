@@ -3,8 +3,8 @@
 Downloads
 =========
 
-Durch das Herunterladen unserer Software stimmst du den folgenden Bedingungen
-zu::
+Durch das Herunterladen unserer Software werden die folgenden Bedingungen
+akzeptiert::
 
  OUR SOFTWARE IS PROVIDED TO YOU "AS IS". WITHOUT WARRENTY OF ANY KIND,
  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF

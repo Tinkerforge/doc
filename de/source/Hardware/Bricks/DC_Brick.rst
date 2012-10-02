@@ -144,8 +144,8 @@ DC Bricks.
 
 .. _dc_brick_test:
 
-Teste deinen DC Brick
----------------------
+Erster Test
+-----------
 
 |test_intro|
 
