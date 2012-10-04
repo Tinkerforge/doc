@@ -678,7 +678,7 @@ Jetzt kann das Beispiel wieder ausgeführt werden.
 Python
 ^^^^^^
 
-**Voraussetzungen**: Python 2.6 oder neuer, Python 3 wird auch unterstützt
+**Voraussetzungen**: Python 2.5 oder neuer, Python 3 wird auch unterstützt
 
 Die Python Bindings bestehen aus einem Python egg mit den Bindings für alle
 Tinkerforge Bricks und Bricklets (``tinkerforge.egg``), dem Quelltext des eggs
