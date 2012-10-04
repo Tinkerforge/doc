@@ -156,8 +156,9 @@ WIFI Konfiguration
 ------------------
 
 Die WIFI Extension wird über das Tab des Master Bricks im Brick Viewer konfiguriert.
-Als erstes muss die SSID des drahtlosen Netzes eingegeben werden und ob
-DHCP oder eine statische IP genutzt werden soll.
+Als erstes muss die SSID (eingeschränkt auf ASCII Zeichen, ohne das
+Anführungszeichen) des drahtlosen Netzes
+eingegeben werden und ob DHCP oder eine statische IP genutzt werden soll.
 
 Für den Fall, dass DHCP genutzt werden soll muss einfach DHCP ausgewählt werden
 und der Port definiert werden.
@@ -182,7 +183,8 @@ Wir empfehlen ein verschlüsseltes Netzwerk zu nutzen.
 WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) und WEP
 sind verfügbar.
 
-Um WPA zu nutzen muss nur der Schlüssel eingegeben werden.
+Um WPA zu nutzen muss nur der Schlüssel (eingeschränkt auf ASCII Zeichen, ohne
+das Anführungszeichen) eingegeben werden.
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa.jpg
    :scale: 100 %

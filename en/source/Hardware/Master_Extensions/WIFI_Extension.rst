@@ -155,8 +155,9 @@ WIFI Configuration
 ------------------
 
 To configure the WIFI Extension open the Master Brick Tab in the Brick Viewer.
-First of all you have to enter the SSID of your wireless network
-and if the device should use DHCP or a static IP.
+First of all you have to enter the SSID (limited to ASCII characters, without
+the quotation mark) of your wireless network and if the device should use DHCP
+or a static IP.
 
 In case of you want to use DHCP simply select DHCP and configure the port.
 
@@ -178,7 +179,8 @@ Additionally configure the subnet mask and gateway address.
 We suggest that you use an encrypted network. You can choose between
 WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) and WEP.
 
-For WPA you only have to enter the key.
+For WPA you only have to enter the key (limited to ASCII characters, without
+the quotation mark).
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa.jpg
    :scale: 100 %
