@@ -35,7 +35,7 @@ Features
 * 700/800/900MHz radio transceiver
 * Allows wireless interconnection between stacks
 * Configurable frequency and channel
-* Measurable signal strength
+* Integrated signal strength measurement
 
 
 Description

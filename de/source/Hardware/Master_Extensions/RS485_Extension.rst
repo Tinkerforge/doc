@@ -30,7 +30,7 @@ Features
 * Lange Verbindungen möglich (bis zu 1200m)
 * Erlaubt kabelgebundene Verbindungen zwischen Stapeln
 * Konfigurierbare Baudrate, Parität und Stoppbits
-* Kann in existierendem RS485 Netzwerk genutzt
+* Kann in existierenden RS485 Netzwerken genutzt
   werden (:ref:`Modbus RTU <llproto_modbus>`)
 
 

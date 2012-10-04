@@ -35,7 +35,7 @@ Features
 * 700/800/900MHz Funk Transceiver
 * Erlaubt drahtlose Verbindungen zwischen Stapeln
 * Konfigurierbare Frequenz und Kanal
-* Messbare Signalstärke
+* Integrierte Signalstärkemessung
 
 
 Beschreibung

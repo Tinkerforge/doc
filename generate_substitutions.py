@@ -69,8 +69,9 @@ brick_test_tab = {
 """,
 'de':
 """.. |test_tab| replace::
- Schließe jetzt den Brick per USB an den PC an. Einen Moment später sollte im
- Brick Viewer ein neuer Tab namens "{0} Brick" auftauchen. Wähle diesen Tab aus.
+ Wenn der Brick per USB an den PC angeschlossen wird sollte einen Moment später
+ im Brick Viewer ein neuer Tab namens "{0} Brick" auftauchen. Wähle diesen Tab
+ aus.
 """
 }
 
