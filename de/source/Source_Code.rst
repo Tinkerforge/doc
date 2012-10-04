@@ -10,8 +10,8 @@ Daemon, des Brick Viewer und der Generatoren für API Bindings, verfügbar.
 
 Das bedeute, dass alles an Tinkerforge Hardware und Software als
 Ausgangspunkt für eigene Projekte verwenden werden kann, diese können
-erweitert und modifiziert werden. Darüber hinaus kannst du uns bei der
-Entwicklungsarbeit helfen und, am wichtigsten, Probleme melden.
+erweitert und modifiziert werden. Darüber hinaus kann unsere Entwicklungsarbeit
+unterstützt und Probleme leichter gemeldet werden.
 
 Um es der Community einfach zu machen Patches einzusenden und Probleme zu melden,
 sind alle `Tinkerforge Projekte <https://github.com/Tinkerforge>`__ auf Github

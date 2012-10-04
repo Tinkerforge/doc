@@ -3,188 +3,187 @@
 Tutorial
 ========
 
-.. note::
- Diese Seite wird in kürze auch vollständig in Deutsch verfügbar sein.
+Das folgende Tutorial demonstriert wie :ref:`Bricks <product_overview_bricks>`
+und :ref:`Bricklets <product_overview_bricklets>` mit der
+:ref:`High Level Programmierschnittstelle <pi_hlpi>` verwendet werden können.
 
-The following tutorial will demonstrate how to use 
-:ref:`Bricks <product_overview_bricks>` and 
-:ref:`Bricklets <product_overview_bricklets>` 
-with the :ref:`High Level Programming Interface <pi_hlpi>`.
-
-In the first part we use the :ref:`DC Brick <dc_brick>` 
-to drive a motor. After this we make the velocity of this motor 
-controllable by a rotary 
-`potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`__ by attaching
-a :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`. At the end
-we show how to stack Bricks together to reduce wiring and
-communicate over wireless or cable based interfaces.
+Im ersten Teil wird ein :ref:`DC Brick <dc_brick>` verwendet, um einen Motor
+zu steuern. Danach wird der Aufbau erweitert um die Geschwindigkeit des Motors
+über ein Dreh-`Potentiometer <http://de.wikipedia.org/wiki/Potentiometer>`__
+regeln zu können indem wir ein :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`
+anschließen. Am Ende geht es um das Stapeln von Bricks um Verkabelung zu sparen
+und um die Kommunikation über drahtlose oder kabelgebundene Schnittstellen.
 
 
-Use a single Brick
-------------------
+Ein einzelner Brick
+-------------------
 
-We choose the DC Brick as a representative throughout
-this tutorial. It is however easily possible to transfer the concepts
-shown to other Bricks. Click :ref:`here <product_overview_bricks>` for 
-an overview of all available Bricks.
+Der DC Brick dient hier als Beispiel. Die beschriebenen Konzept gelten aber für
+alle Bricks. :ref:`Hier <product_overview_bricks>` ist eine Übersicht über alle
+verfügbaren Bricks.
 
 
-Phase 1: Testing
-^^^^^^^^^^^^^^^^
+Phase 1: Testen
+^^^^^^^^^^^^^^^
 
-Before the DC Brick can be used, the :ref:`brickd` and the :ref:`brickv` 
-have to be installed, installation instructions can be found 
-:ref:`here <brickv_installation>` and :ref:`here <brickd_installation>`. 
-The Brick Daemon is a bridge 
-between the Bricks/Bricklets and the programming language API bindings. 
-The Brick Viewer is a GUI for testing purposes.
+Um den DC Brick testen zu können müssen der
+:ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
+sein (für Installationsanleitungen :ref:`hier <brickd_installation>`
+und :ref:`hier <brickv_installation>` klicken). Der Brick Viewer muss mit
+dem Brick Daemon verbunden sein, klicke dazu auf den "Connect" Knopf des Brick
+Viewers.
 
-After the installation you are ready to tinker! Take the DC Brick and 
-connect a motor and a battery as shown the picture below (you can of
-course also use a power supply instead of the battery or e.g. a Servo Brick
-and a servo instead of the DC Brick and a motor):
+Der Brick Daemon bildete eine Brücke zwischen Bricks/Bricklets und den
+programmiersprachspezifischen API Bindings. Der Brick Viewer bietet eine
+graphische Oberfläche für Testzwecke.
+
+Nach der Installation kann das Basteln losgehen! Schließe als erstes eine
+Motor und eine Stromversorgung (z.B. eine Batterie) an, wie auf dem folgenden
+Bild zu sehen. Es kann z.B. auch einen Servo Brick und einen Servo anstatt eines
+DC Bricks verwendet werden.
 
 .. image:: /Images/Bricks/brick_dc_motor_setup_600.jpg
    :scale: 100 %
-   :alt: DC Brick with connected motor
+   :alt: DC Brick mit angeschlossenem Motor
    :align: center
    :target: ../_images/Bricks/brick_dc_motor_setup_1200.jpg
 
-Start the Brick Viewer and connect the
-DC Brick over a USB cable with your PC. After pressing the "connect"
-button in the viewer you should get a tab called "DC Brick". Select it.
-Your Brick Viewer now looks as depicted below:
+Schließe jetzt den Brick per USB an den PC an. Einen Moment später im Brick
+Viewer ein neuer Tab namens "DC Brick" auftauchen. Wähle diesen Tab aus.
+Der Brick Viewer sollte nun so aussehen:
 
 .. image:: /Images/Bricks/dc_brickv.jpg
    :scale: 100 %
-   :alt: DC Brick view in Brick Viewer
+   :alt: DC Brick Tab im Brick Viewer
    :align: center
    :target: ../_images/Bricks/dc_brickv.jpg
 
-You can see the voltage of the connected battery as "External Voltage"
-and the current used by the motor as "Current Consumption" as well as 
-a representation of the current velocity on the right side.
-Different sliders allow you to modify velocity and acceleration
-of the motor as well as the 
-`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency 
-of the driver. After clicking "Enable" you are in control of the motor. 
+Auf der rechten Seite wird die externe Eingangsspannung unter "External Voltage",
+der Stromverbrauch des angeschlossenen Motors unter "Current Consumption" und
+die aktuelle Geschwindigkeit als Tachometer angezeigt. Verschiedene Regler auf
+der linken Seite ermöglichen es die Geschwindigkeit, Beschleunigung und
+`PWM <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Frequenz für den
+Motor einzustellen. Um die Treiberstufe und damit die Ansteuerung des Motors
+zu aktivieren muss das "Enable" Häkchen gesetzt werden.
 
 
-Phase 2: Write your own Program
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Phase 2: Ein eigenes Programm schreiben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The DC Brick and motor are verified to work properly, there is now
-nothing in the way to write a first program that controls the DC Brick.
+Der DC Brick mit Motor und Stromquelle sind nun getestet, es spricht nun nichts
+mehr dagegen das erstes eigenes Programm zu schreiben, dass den DC Brick
+steuert.
 
-You can choose one of the :ref:`available <api_bindings>` programming 
-languages, in this tutorial we use `Python <http://www.python.org>`__,
-since it is easy to understand. 
+Dies kann mit jeder der :ref:`unterstützten <api_bindings>` Programmiersprachen
+geschrieben werden. In diesem Tutorial wird `Python <http://www.python.org>`__
+verwendet, das Python einfach zu lesen und zu verstehen ist.
 
-The necessary steps to get everything working are essentially
-the same in all programming language. This tutorial together with the 
-examples in the "Programming Interfaces" section of every product should 
-allow you to get any Brick working with any programming language.
+Die notwendigen Schritte sind ähnlich für alle Programmiersprachen.
+Diese Tutorial zusammen mit den Beispielen in der
+API Dokumentation der verschiedenen Produkte sollte es dir ermöglichen jeden
+Brick mit allen unterstützten Programmiersprachen zu verwenden.
 
-In the following we assume that you now the basics of the programming
-language you picked and that the necessary compilers/interpreters are
-already installed.
+Im Folgenden wird angenommen, dass die Grundlagen der gewählten
+Programmiersprache bekannt und die notwendigen Entwicklungswerkzeuge
+bereits installiert sind.
 
-Download the API bindings for your programming language from the Downloads 
-:ref:`page <downloads>` and install them. Installation instructions can
-be found :ref:`here <api_bindings>` and in the readme.txt supplied with
-the API bindings.
+Als erstes müssen API Bindings für die entsprechenden Programmiersprache im
+:ref:`Downloadbereich <downloads>` heruntergeladen und installiert werden.
+Passende Installationsanweisungen finden sich in der allgemeinen Beschreibung
+der :ref:`API Bindings <api_bindings>` und in den ``readme.txt`` Dateien die
+den einzelnen API Bindings beiliegen.
 
-Create a folder for your DC Brick test project.
-Download one of the examples for the DC Brick as a starting point 
-from :ref:`here <dc_brick_python_examples>` and place it in the folder.
+Erstelle dann einen neuen Ordner für das DC Brick Testprojekt und lade eines
+der :ref:`Beispiele <dc_brick_python_examples>` für den DC Brick als
+Ausgangspunkt in diesen Ordner herunter.
 
-In this tutorial we take a look at **example_configuration.py**:
+Nun folgt ein Blick auf ``example_configuration.py``:
 
 .. literalinclude:: /Software/Bricks/DC_Brick_Python_example_configuration.py
  :language: python
  :linenos:
  :tab-width: 4
 
-**Line 12** creates an IP Connection to the Brick Daemon running on the host 
-defined in **Lines 4-5**. It is possible to run your program on 
-another PC than the one which has the Brick Daemon running (e.g. you can
-write a program on you phone that controls a Brick connected to your PC).
+**Zeile 12** erstellt eine IP Connection zum Brick Daemon der auf dem Host
+definiert in den **Zeilen 4-5** läuft. Es ist möglich das Programm auf einem
+anderen PC, als dem auf dem der Brick Daemon läuft, auszuführen (z.B. kann das
+Programm für ein Smartphone schreiben, das dann den Brick steuert, der am
+PC angeschlossen ist).
 
-**Line 14** creates an object that allows to control the DC Brick. 
-It is necessary to assign the Unique Identifier (UID) of the Brick
-(in this example defined in **Line 6**). Change it corresponding to 
-your device!
-
-.. note::
- The easiest way to get the UID of your device is to use the Brick Viewer.
- If you connect a device to the PC, the Viewer will display the UID in 
- the "Setup" tab. 
-
-In **Line 15** the DC Brick object is attached to the IP Connection.
-This makes it possible to control multiple devices on different 
-hosts from within one program.
-
-The **Lines 18-23** configure the DC Brick and let the motor run full
-speed forward.
-
-**Line 25** is used to prevent program termination until you
-press enter.
-
-Run this python script and use it or other examples as a starting point
-for your own project.
+**Zeile 14** erzeugt ein DC Brick Objekt über welches der eigentliche DC Brick
+gesteuert werden kann. Dabei muss die eindeutige Identifikationsnummer (UID) des
+DC Bricks übergeben werden (in diesem Falle steht sie in **Zeile 6**). Hier muss
+die entsprechende UID des verwendeten Bricks eingetragen werden.
 
 .. note::
- A full description of the API and further examples can be found in the
- description page of the product. In case of the
- DC Brick :ref:`here <dc_brick_programming_interfaces>`.
+ Die einfachste Möglichkeit die UID eines Bricks zu ermitteln ist über der
+ Brick Viewer. Wenn der Brick über USB an den PC angeschlossen ist zeigt der
+ Brick Viewer dessen UID im "Setup" Tab an.
+
+In **Zeile 15** wird das DC Brick Objekt der IP Connection hinzugefügt. Diese
+ist für die Kommunikation mit dem Brick Daemon zuständig.
+
+Die **Zeilen 18-23** konfigurieren DC Brick und lassen den Motor mit voller
+Geschwindigkeit vorwärts laufen.
+
+**Zeile 25** sorgt dafür, dass das Programm weiter läuft bis die Enter Taste
+gedrückt wird.
+
+Führe diese Python Script aus und verwende es oder eines der anderen Beispiele
+als Ausgangspunkt für ein eigenes Projekt.
+
+.. note::
+ Eine vollständige Beschreibung der API und weitere Beispiele finden sich auch
+ der Beschreibungsseite jedes Produkts. Im Falle des DC Bricks :ref:`hier
+ <dc_brick_programming_interfaces>`.
 
 
-Add Bricklets to extend features
---------------------------------
+Bricklets anschließen für weitere Features
+------------------------------------------
 
-You can add Bricklets to extend the features of Bricks.
-Click :ref:`here <product_overview_bricklets>` for an overview of available 
-Bricklets.
+Bricklets können genutzt werden um die Fähigkeiten von Bricks zu erweitern.
+:ref:`Hier <product_overview_bricklets>` findet sich eine Übersicht über alle
+verfügbaren Bricklets.
 
-To use a Bricklet, connect it to your Brick over the supplied cable
-when the Brick is not powered.
+Um ein Bricklet nutzen zu können muss es an einen Brick über das mitgelieferte
+Kabel angeschlossen werden, wobei der Brick dabei nicht mit Strom versorgt sein
+darf.
 
-We use a :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>` and the
-:ref:`DC Brick <dc_brick>` from the previous part of this tutorial,
-but it is easy to transfer the shown concepts to any Bricklet
-connected to any Brick.
+Als Beispiel dient ein :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>` und
+der :ref:`DC Brick <dc_brick>` aus dem ersten Teil des Tutorials. Die Konzepte
+gelten aber für alle Bricks und Bricklets.
 
 
-Phase 1: Testing
-^^^^^^^^^^^^^^^^
+Phase 1: Testen
+^^^^^^^^^^^^^^^
 
-Connect the Rotary Poti Bricklet to your DC Brick as depicted in the image 
-below.
+Schließe das Rotary Poti Bricklet an den DC Brick an wie im folgenden Bild
+gezeigt.
 
 .. image:: /Images/Tutorial/tutorial_1_600.jpg
    :scale: 100 %
-   :alt: DC Brick with connected motor and Rotary Poti Bricklet
+   :alt: DC Brick mit angeschlossenen Motor und Rotary Poti Bricklet
    :align: center
    :target: ../_images/Tutorial/tutorial_1_1200.jpg
 
-If you now connect the DC Brick to the PC, not only a "DC Brick" tab but
-also a "Rotary Poti Bricklet" tab will be shown in the Brick Viewer.
-Select the "Rotary Poti Bricklet" tab and rotate the potentiometer.
-You should see a corresponding movement in the viewer.
+Wenn der DC Brick über USB angeschloßen wird, dann taucht neben dem "DC Brick"
+Tab noch ein "Rotary Poti Bricklet" Tab im Brick Viewer auf. Wähle den "Rotary
+Poti Bricklet" Tab und drehe am Knopf des Potentiometers. Im Brick Viewer wird
+die Drehung entsprechend dargestellt.
 
 .. image:: /Images/Bricklets/bricklet_rotary_poti_brickv.jpg
    :scale: 100 %
-   :alt: Brickv view of the Rotary Poti Bricklet
+   :alt: Rotary Poti Bricklet Tab im Brick Viewer
    :align: center
    :target: ../_images/Bricklets/bricklet_rotary_poti_brickv.jpg
 
 
-Phase 2: Write your own Program
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Phase 2: Ein eigenes Programm schreiben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To incorporate the Rotary Poti Bricklet in our small project 
-we change the program to allow controlling of the motor
-velocity with the rotary poti. It now look as follows (`Download
+Um das Rotary Poti Bricklet in das Projekt aufzunehmen wird nun das Programm so
+abgeändert, dass die Position des Potentiometers die Geschwindigkeit des
+Motors bestimmt. Das abgeänderte Programm sieht wie folgt aus (`Download
 <https://raw.github.com/Tinkerforge/doc/master/source/Tutorials/tutorial_brick_bricklet_test.py>`__):
 
 .. literalinclude:: tutorial_brick_bricklet_test.py
@@ -192,128 +191,131 @@ velocity with the rotary poti. It now look as follows (`Download
  :linenos:
  :tab-width: 4
 
-**Lines 4-7** are the typical configurations, the UID has to be changed
-according to the Bricks and Bricklets you use.
+Die **Zeilen 4-7** sind die typische Konfiguration, die UIDs müssen die der
+verwendeten Bricks und Bricklets sein.
 
-In **Lines 22-27** an IP Connection to the Brick Daemon is established.
-The Brick and Bricklet devices are created and added to the IP Connection.
+Die **Zeilen 22-27** erstellen die IP Connection zum Brick Daemon. Die Brick und
+Bricklet Objekte werden erzeugt und der IP Connection hinzugefügt.
 
-We configure the Rotary Poti Bricklet, such that it calls the method 
-**cb_position** every time the position of the potentiometer changes.
-**Line 29** configures this callback to be triggered with a period of
-50ms if the position changes. If the position is unchanged there won't
-be any callbacks. This is an efficient implementation, only the bare minimum
-of USB bandwidth is used.
-The callback method is registered in **Line 30**.
-**cb_position** is defined in **Line 16-19**, 
-it sets a new velocity based on the current position of the potentiometer.
+Das Rotary Poti Bricklet wird so konfiguriert, das die Funktion ``cb_position``
+jedes Mal aufgerufen wird wenn sich die Position des Portentiometers ändert.
+**Zeile 29** stellt diesen Callback so ein, dass er mit einer Periode von
+50ms ausgelöst wird wenn sich die Position ändert. Wenn sich die Position nicht
+ändert werden keine Callbacks ausgelöst. Dieses Vorgehen ist effizient, es wird
+nur die unbedingt notwendige USB Bandbreite verwendet.
+Die Callback Funktion wird in **Zeile 30** registriert. ``cb_position`` ist in
+den **Zeilen 16-19** definiert, es setzt eine neue Geschwindigkeit für den
+Motor abhängig von der aktuelle Position des Potentiometers.
 
-In **Lines 32-33** we enable the motor and set a maximum acceleration. This
-allows the motor to follow the potentiometer movements immediately.
+Die **Zeilen 32-33** schalten die Motorsteuerung ein und setzen die
+Beschleunigung auf Maximum. Dadurch kann die Motorgeschwindigkeit den Änderungen
+der Potentiometerposition direkt folgen.
 
-In **Lines 35-37** we wait for user input to prevent program termination.
-After this the motor is stopped and the IP Connection destroyed.
+Die **Zeile 35-36** sorgt dafür, dass das Programm weiter läuft bis die Enter
+Taste gedrückt wird. Der Motor wird danach abgeschaltet.
 
 
 .. _tutorial_build_stacks:
 
-Build Stacks
+Stapel bauen
 ------------
 
-To reduce wiring and save space it is possible to stack Bricks.
-You need a :ref:`Master Brick <master_brick>` at the bottom with a PC 
-connection to route the data between the PC and the Bricks in the stack.
+Um Verkabelung und Raum zu sparen können Bricks gestapelt werden.
+Ein :ref:`Master Brick <master_brick>` mit USB Verbindung am unteren Ende des
+Stapels kümmert sich um das Routen von Nachrichten zwischen PC und allen
+Stapelteilnehmern.
 
-The stacking is transparent, that means there is **no code change necessary**
-between a version that uses Bricks separately connected over USB to a PC
-or a version with an additional Master and stacked Bricks.
+Das Stapeln ist transparent, das bedeutet, dass **keine Änderungen am Programm**
+notwendig sind zwischen der Verwendung mehrerer Bricks mit jeweils einer eigenen
+USB Verbindung und einem Stapel aus den selben Bricks mit nur einer USB
+Verbindung zum Master Brick.
 
-It is possible to use more than one Master Brick in a stack.
-But only the Master Brick at the bottom of the stack acts as the master of
-the stack. The other Master Bricks can however be used to connect more
-Bricklets.
+Ein Stapel kann auch mehrere Master Bricks enthalten. Dabei agiert aber nur der
+unterste Master Brick als Master des Stapels und kümmert sich um das Routen von
+Nachrichten. Die anderen Master Bricks im Stapel können z.B. genutzt werden, um
+mehr Bricklets an den Stapel anzuschließen.
 
-The master of a stack powers each device of the stack over its USB
-connection with a maximum of 500mA. Every driver Brick in the stack needs
-to be powered by its own on-board power-connector. To again reduce wiring and
-save space it is possible to use a 
-:ref:`Power Supply <product_overview_power_supplies>`, which
-is attached at the bottom of the stack (below the Master Brick).
-These boards power the stacks internal power signal.
-That means, that each driver Brick which is not powered by its on-board
-power-connector is powered through the stack by the Power Supply.
+Der Master des Stapels versorgt alle Teilnehmer des Stapels über seine USB
+Verbindung mit maximal 500mA in Summe. Jeder Motortreiber Brick kann über
+seinen schwarzen Stromversorgungsstecker auf der Platine extern versorgt werden.
+Um nochmal Verkabelung zu sparen und auch den Stapel mit mehr Strom versorgen
+zu können kann eine :ref:`Stromversorgung <product_overview_power_supplies>`
+unter den Stapel gesteckt werden (unter den Master des Stapels). Von dort stellt
+sie die 5V bereit die von Bricks und Bricklets benötigt werden. Motortreiber
+Bricks die nicht über ihren schwarzen Stromversorgungsstecker extern versorgt
+werden beziehen den Strom für die Motoren über die 5V Versorgung des Stapels.
 
-Additionally the Power Supply creates a 5V signal to power the devices of
-the stack. No power is drawn from the PC if a Power Supply
-is used. This is especially useful if a small embedded device is
-utilized to control the Bricks and Bricklets, since it might not be able
-to deliver the needed power.
+Da bei Verwendung einer Stromversorgung im Stapel die USB Verbindung nicht mehr
+für die Stromversorgung verwendet wird erlaubt dieser Aufbau die Verwendung von
+Bricks mit Embedded Boards die ansonsten nicht in der Lage wären den Stapel mit
+ausreichend Strom zu versorgen.
 
-The master of the stack can measure the voltage and the current flow
-of the connected power supply.
-
-.. note::
- Each driver Brick switches automatically to the stack internal
- power signal if no external supply is attached over the on-board
- power-connector. Keep this in mind!
-
-In the following we extend the previous part by attaching a Master Brick
-below the DC Brick with the connected rotary poti.
+Der Master des Stapels kann die externe Versorgungsspannung der Stromversorgung
+messen, sowie den Stromverbrauch des gesamten Stapels.
 
 .. note::
- The white corners show how to plug the Bricks together.
+ Jeder Motortreiber Brick schaltet automatisch zwischen externer Versorgung über
+ seinen eigenen schwarzen Stromversorgungsstecker und der Versorgung über den
+ Stapel um. Das bedeutet, wenn ein Motor zuvor extern versorgt wurde führt ein
+ Abstecken oder Abschalten der externen Versorgung dazu, dass der Motor dann
+ direkt über den Stapel versorgt wird. Dies sollte unbedingt bedacht werden!
+
+Im Folgenden wird der bisherigen Aufbau aus DC Brick und Rotary Poti
+Bricklet um einen Master Brick erweitert.
+
+.. note::
+ Die weise Ecke jedes Bricks zeigt an, in welcher Ausrichtung zwei Bricks
+ zusammengesteckt werden können.
 
 
-Phase 1: Testing
-^^^^^^^^^^^^^^^^
+Phase 1: Testen
+^^^^^^^^^^^^^^^
 
-Build a stack consisting of a Step-Down Power Supply with connected battery,
-a Master Brick with connected Rotary Poti Bricklet and a DC Brick with
-connected motor (from bottom to top).
-
-This setup is depicted in the image below.
+Nun wird ein Stapel (von unten nach oben) aus Step-Down Power Supply mit
+angeschlossener Batterie, einem Master Brick mit angeschlossenem Rotary Poti
+Bricklet und einem DC Brick mit angeschlossenem Motor benötigt, wie in folgendem
+Bild dargestellt.
 
 .. image:: /Images/Tutorial/tutorial_2_600.jpg
    :scale: 100 %
-   :alt: DC Brick in stack with Master Brick and Step-Down Power Supply with connected motor and Rotary Poti Bricklet
+   :alt: DC Brick im Stapel mit Master Brick und Step-Down Power Supply, mit angeschlossenem Motor und Rotary Poti Bricklet
    :align: center
    :target: ../_images/Tutorial/tutorial_2_1200.jpg
 
-If you connect the Master Brick to the PC over USB, 
-the Brick Viewer should show the Master Brick (measuring current and voltage
-flowing through the stack), the DC Brick and the Rotary Poti Bricklet.
+Einen Moment nachdem der Master Brick über USB an den PC angeschlossen wurde
+sollte der Brick Viewer Tabs für alle drei Teilnehmer des Stapels anzeigen
+und auf dem Master Brick sollte eine von Null verschiedenen Strom- und
+Spannungsmessung zu sehen sein.
 
 
-Phase 2: Write your own Program
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Phase 2: Ein eigenes Programm schreiben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Since the stacking is transparent you are able to run
-the program of the previous part without any changes!
+Das Stapeln von Bricks ist für die API transparent, daher kann das Programm
+aus dem vorherigen Abschnitt ohne Änderungen weiterverwendet werden!
 
 
-Cross-Link Stacks
------------------
+Stapel querverbinden
+--------------------
 
-The stacks as shown so far in the tutorial are not super exciting,
-they only reduce wiring and save space. But, as you might have already 
-guessed, there is more to it. It is possible to attach **Extensions** to the
-stack, which extend the stack with interfaces other than USB,
-e.g. RS485, and in the future WLAN and Ethernet.
+Die bisher gezeigten Stapel in diesem Tutorial sind nicht besonders spannend,
+sie sparen vornehmlich Verkabelung und Platz ein. Aber das Stapelkonzept kann
+mehr. Es erlaubt **Master Extensions** auf den Stapel zu stecken um die
+Kommunikationsmöglichkeiten des Stapels über USB hinaus zu erweitern. Dazu
+gehören :ref:`RS485 <rs485_extension>` und :ref:`WIFI <wifi_extension>`, sowie
+in Zukunft Ethernet.
 
-To e.g. make a RS485 bus out of stacks, you need two need one Master Brick and 
-two RS485 Master Extensions additionally to the 
-previous part. Attach one RS485 Extension on top of your stack and build a new
-stack from the other RS485 Extension and the Master Brick. Connect the Rotary 
-Poti Bricklet to this new stack (see image below).
+Um einen RS485 Bus zwischen zwei Stapeln zu bauen werden noch ein Master Brick
+und zwei RS485 Extensions zusätzlich zu den bisher verwendeten Teilen
+benötigt. Auf jeden Master Brick wird jeweils eine RS485 Extension gesteckt
+und die beiden Extensions passend miteinander verkabelt. Jetzt noch das
+Rotary Poti Bricklet an den neu zusammengesteckten Stapel anschließen.
 
-Now connect each stack separately to your PC and configure it with
-the Brick Viewer as described in the 
-:ref:`RS485 documentation <rs485_configuration>`.
-It is necessary that you power up the slave stacks prior to the master stack.
+Als nächster Schritt muss jetzt jeder Stapel einzel über USB am PC angeschlossen
+und konfiguriert werden. Die Details dazu sind in der :ref:`RS485 Dokumentation
+<rs485_configuration>` beschrieben. Wichtig ist dann noch, dass nach der
+Konfiguration der RS485 Slave vor dem RS485 Master gestartet wird.
 
-You should see two Master Bricks, the Rotary 
-Poti Bricklet and the DC Brick in the Brick Viewer. If this is the case
-you can run your previously written code without any change.
-
-Now you are able to control the DC motor wirelessly with the Rotary Poti 
-Bricklet. Take this as a starting point and have fun!
+Jetzt sollten im Brick Viewer die zwei Master Bricks, das Rotary Poti Bricklet
+und der DC Brick auftauchen. Wenn das der Falls ist kann jetzt das vorherige
+Programm ohne Änderung weiterverwendet werden.
