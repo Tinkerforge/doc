@@ -74,8 +74,8 @@ Smartphone, Tablet oder (Embedded) PC zu steuern. Der :ref:`Brick Daemon <brickd
 
 Um die WIFI Extension zu nutzen ist ein :ref:`Master Brick <master_brick>` notwendig.
 Wenn andere Bricks gesteuert werden sollen, so kann ein Stapel aus diesen gebaut werden
-und auf das Master Brick gesteckt werden. Wenn Bricklets verwendet werden sollen,
-so können diese einfach an das Master Brick oder andere Bricks im Stapel angeschlossen werden.
+und auf der Master Brick gesteckt werden. Wenn Bricklets verwendet werden sollen,
+so können diese einfach an der Master Brick oder andere Bricks im Stapel angeschlossen werden.
 Aus der Programmierersicht ist dies absolut transparent, d.h. alle Bricks und Bricklets können
 so genutzt werden als ob sie direkt per USB mit dem steuernden Gerät verbunden wären.
 
@@ -229,14 +229,14 @@ und Energie gespart werden.
    :target: ../../_images/Extensions/extension_wifi_power_mode.jpg
 
 Zum Schluss muss auf "Save WIFI Configuration" geklickt werden um die Konfiguration zu speichern
-und das Master Brick neu gestartet werden um die Konfiguration zu laden. Nach dem Neustart
-sollte das Master Brick bei Eingabe der konfigurierten IP Adresse und Port im Brick Viewer erreichbar sein.
+und der Master Brick neu gestartet werden um die Konfiguration zu laden. Nach dem Neustart
+sollte der Master Brick bei Eingabe der konfigurierten IP Adresse und Port im Brick Viewer erreichbar sein.
 
 
 .. _extension_wifi_adhoc_ap:
 
-WIFI Extension als Access Point oder im Ad Hoc Modus
-----------------------------------------------------
+Access Point Modus und Ad Hoc Modus
+-----------------------------------
 
 .. note::
  Access Point und Ad Hoc Modus stehen ab Master Brick Firmware

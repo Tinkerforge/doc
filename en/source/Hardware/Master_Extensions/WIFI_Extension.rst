@@ -230,8 +230,8 @@ Brick Viewer.
 
 .. _extension_wifi_adhoc_ap:
 
-WIFI Extension as Access Point or in Ad Hoc Mode
-------------------------------------------------
+Access Point Mode and Ad Hoc Mode
+---------------------------------
 
 .. note::
  Access Point and Ad Hoc mode are available in Master Brick firmware
@@ -263,7 +263,7 @@ in hexadecimal notation. You can generate valid WEP keys
 
 .. _extension_wifi_leds:
 
-LEDs and connectivity
+LEDs and Connectivity
 ---------------------
 
 .. image:: /Images/Extensions/extension_wifi_caption_600.jpg
