@@ -3,6 +3,10 @@
 
 import os
 import sys
+import re
+import urllib2
+from xml.etree.ElementTree import ElementTree
+from xml.etree.ElementTree import fromstring as etreefromstring
 
 lang = 'en'
 
@@ -192,40 +196,68 @@ product_overview_table_head_without_bindings = {
 """
 }
 
+download_tools_source_code = {
+'en': 'Source Code',
+'de': 'Quelltext'
+}
+
+download_tools_table_head = {
+'en':
+""".. csv-table::
+ :header: "Tool", "Current Version", "Changelog"
+ :delim: |
+ :widths: 20, 50, 20
+
+""",
+'de':
+""".. csv-table::
+ :header: "Tool", "Aktuelle Version", "Changelog"
+ :delim: |
+ :widths: 20, 50, 20
+
+"""
+}
+
 download_bindings_table_head = {
 'en':
 """.. csv-table::
- :header: "", "Bindings and Examples"
+ :header: "Language", "Current Version", "Changelog"
  :delim: |
- :widths: 10, 60
+ :widths: 20, 50, 20
 
- **Language** | """,
+""",
 'de':
 """.. csv-table::
- :header: "", "Bindings und Beispiele"
+ :header: "Sprache", "Aktuelle Version", "Changelog"
  :delim: |
- :widths: 10, 60
+ :widths: 20, 50, 20
 
- **Sprache** | """
+"""
 }
 
 download_firmwares_table_head = {
 'en':
 """.. csv-table::
- :header: "", "Firmwares and Plugins"
+ :header: "", "Current Version", "Changelog"
  :delim: |
- :widths: 10, 60
+ :widths: 20, 50, 20
 
- **Bricks** | {0}
- **Bricklets** | {1}""",
+ **Bricks** | |
+{0}
+ | |
+ **Bricklets** | |
+ {1}""",
 'de':
 """.. csv-table::
- :header: "", "Firmwares und Plugins"
+ :header: "", "Aktuelle Version", "Changelog"
  :delim: |
- :widths: 10, 60
+ :widths: 20, 50, 20
 
- **Bricks** | {0}
- **Bricklets** | {1}"""
+ **Bricks** | |
+{0}
+ | |
+ **Bricklets** | |
+{1}"""
 }
 
 source_code_gits_table_head = {
@@ -329,7 +361,11 @@ hlpi_row_source = {
 }
 
 def fill_dicts():
-    global bindings, bricks, bricklets, extensions, power_supplies
+    global tools, bindings, bricks, bricklets, extensions, power_supplies
+
+             # display,        uri
+    tools = [('Brick Daemon', 'brickd'),
+             ('Brick Viewer', 'brickv')]
 
                 # display,  uri
     bindings = [('Modbus', 'modbus', False),
@@ -350,7 +386,7 @@ def fill_dicts():
               ('Servo',   'servo',   bindings, brick_descriptions['servo'][lang]),
               ('Stepper', 'stepper', bindings, brick_descriptions['stepper'][lang])]
 
-                 # display,          uri,             bindings, description
+                 # display,                      uri,                         bindings, description
     bricklets = [('Ambient Light',              'ambient_light',              bindings, bricklet_descriptions['ambient_light'][lang]),
                  ('Analog In',                  'analog_in',                  bindings, bricklet_descriptions['analog_in'][lang]),
                  ('Analog Out',                 'analog_out',                 bindings, bricklet_descriptions['analog_out'][lang]),
@@ -384,6 +420,73 @@ def fill_dicts():
 
                       # display,                  uri,         bindings, description
     power_supplies = [('Step-Down Power Supply', 'step_down',  [],       power_supply_descriptions['step_down'][lang])]
+
+def get_body(url):
+    response = urllib2.urlopen(url)
+    data = response.read().replace('<hr>', '').replace('<br>', '')
+    response.close()
+    tree = etreefromstring(data)
+    return tree.find('body')
+
+def get_tool_versions(url, regex):
+    print 'Discovering ' + url
+    body = get_body(url)
+    versions = []
+
+    for a in body.getiterator('a'):
+        url_part = a.text.replace('/', '')
+
+        if url_part == '..':
+            continue
+
+        m = re.match(regex, url_part)
+
+        if m is None:
+            continue
+
+        versions.append((int(m.group(1)), int(m.group(2)), int(m.group(3))))
+
+    return sorted(versions)
+
+def get_bindings_versions(url, name):
+    print 'Discovering ' + url
+    body = get_body(url)
+    versions = []
+
+    for a in body.getiterator('a'):
+        url_part = a.text.replace('/', '')
+
+        if url_part == '..':
+            continue
+
+        m = re.match('tinkerforge_{0}_bindings_(\d+)_(\d+)_(\d+)\.zip'.format(name), url_part)
+
+        if m is None:
+            continue
+
+        versions.append((int(m.group(1)), int(m.group(2)), int(m.group(3))))
+
+    return sorted(versions)
+
+def get_firmware_versions(url, prefix):
+    print 'Discovering ' + url
+    body = get_body(url)
+    versions = []
+
+    for a in body.getiterator('a'):
+        url_part = a.text.replace('/', '')
+
+        if url_part == '..':
+            continue
+
+        m = re.match(prefix + '_firmware_(\d+)_(\d+)_(\d+)\.bin', url_part)
+
+        if m is None:
+            continue
+
+        versions.append((int(m.group(1)), int(m.group(2)), int(m.group(3))))
+
+    return sorted(versions)
 
 def make_index_table(devices, category):
     table_head = """
@@ -436,33 +539,75 @@ def make_product_overview_table(devices, category, name_width,
 
     return table_head + '\n'.join(rows)
 
+def make_download_tools_table():
+    source_code = download_tools_source_code[lang]
+    table_head = download_tools_table_head[lang]
+    row_cell = ' {0} | {3}.{4}.{5} - `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/zipball/v{3}.{4}.{5}>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
+    rows = []
+
+    for tool in tools:
+        linux_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/linux/'.format(tool[1]), '{0}-(\d+).(\d+).(\d+)_all.deb'.format(tool[1]))
+        macos_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/macos/'.format(tool[1]), '{0}_macos_(\d+)_(\d+)_(\d+).dmg'.format(tool[1]))
+        windows_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/windows/'.format(tool[1]), '{0}_windows_(\d+)_(\d+)_(\d+).exe'.format(tool[1]))
+
+        if len(linux_versions) == 0:
+            raise 'Could not find Linux versions of {0}'.format(tool[0])
+
+        if len(macos_versions) == 0:
+            raise 'Could not find Mac OS X versions of {0}'.format(tool[0])
+
+        if len(windows_versions) == 0:
+            raise 'Could not find Windows versions of {0}'.format(tool[0])
+
+        if len(set([linux_versions[-1], macos_versions[-1], windows_versions[-1]])) != 1:
+            raise 'Cross-platform version mismatch for {0}'.format(tool[0])
+
+        rows.append(row_cell.format(tool[0], tool[1], source_code, *linux_versions[-1]))
+
+    return table_head + '\n'.join(rows)
+
 def make_download_bindings_table():
     table_head = download_bindings_table_head[lang]
-    row_cell = '`{0} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_latest.zip>`__'
+    row_cell = ' {0} | `{2}.{3}.{4} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{2}_{3}_{4}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
     rows = []
 
     for binding in bindings:
         if binding[2]:
-            rows.append(row_cell.format(binding[0], binding[1]))
+            versions = get_bindings_versions('http://download.tinkerforge.com/bindings/{0}/'.format(binding[1]), binding[1])
 
-    return table_head + ', '.join(rows)
+            if len(versions) == 0:
+                raise 'Could not find versions of the {0} bindings'.format(binding[0])
+
+            rows.append(row_cell.format(binding[0], binding[1], *versions[-1]))
+
+    return table_head + '\n'.join(rows)
 
 def make_download_firmwares_table():
     table_head = download_firmwares_table_head[lang]
-    brick_row_cell = '`{0} <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_latest.bin>`__'
-    bricklet_row_cell = '`{0} <http://download.tinkerforge.com/firmwares/bricklets/{1}/bricklet_{1}_firmware_latest.bin>`__'
+    brick_row_cell = ' {0} | `{3}.{4}.{5} <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_{3}_{4}_{5}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-brick/master/software/changelog>`__'
+    bricklet_row_cell = ' {0} | `{3}.{4}.{5} <http://download.tinkerforge.com/firmwares/bricklets/{1}/bricklet_{1}_firmware_{3}_{4}_{5}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
     brick_rows = []
     bricklet_rows = []
 
     for brick in bricks:
         if len(brick[2]) > 0:
-            brick_rows.append(brick_row_cell.format(brick[0], brick[1]))
+            versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricks/{0}/'.format(brick[1]), 'brick_' + brick[1])
+
+            if len(versions) < 1:
+                raise 'Could not find versions of the {0} Brick firmware'.format(brick[0])
+
+            brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-'), *versions[-1]))
 
     for bricklet in bricklets:
         if len(bricklet[2]) > 0:
-            bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1]))
+            versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricklets/{0}/'.format(bricklet[1]), 'bricklet_' + bricklet[1])
 
-    return table_head.format(', '.join(brick_rows), ', '.join(bricklet_rows))
+            if len(versions) < 1:
+                raise 'Could not find versions of the {0} Bricklet firmware'.format(bricklet[0])
+
+            bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1], bricklet[1].replace('_', '-'), *versions[-1]))
+
+    return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows))
 
 def make_api_bindings_table():
     row = '* :ref:`{0} <ipcon_{1}>`'
@@ -544,6 +689,9 @@ def generate(path):
 
     print 'Generating Product_Overview_power_supplies.table'
     file(os.path.join(path, 'source', 'Product_Overview_power_supplies.table'), 'wb').write(make_product_overview_table(power_supplies, 'power_supply', 30, 60, False))
+
+    print 'Generating Downloads_tools.table'
+    file(os.path.join(path, 'source', 'Downloads_tools.table'), 'wb').write(make_download_tools_table())
 
     print 'Generating Downloads_bindings.table'
     file(os.path.join(path, 'source', 'Downloads_bindings.table'), 'wb').write(make_download_bindings_table())
