@@ -193,6 +193,10 @@ To do so go to the "IMU Brick" in the Brick Viewer, click the "Calibrate"
 button and select the "Im/Export" tab. Finally copy and paste the content of
 ``YOUR_IMU_UID.txt`` to the textbox and click "Import".
 
+Since Brick Viewer version 1.1.13 you can also click the "Restore Factory
+Calibration" button, that automatically downloads and imports the factory
+calibration for you.
+
 
 Quaternions vs Euler Angles
 ---------------------------
