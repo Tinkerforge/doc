@@ -57,6 +57,14 @@ mit RS485 Extension in ein vorhandenes Modbus Netzwerk zu integrieren. Es ist
 auch möglich direkt mit einem Stapel über Modbus zu kommunizieren, z.B. über
 ein eingebettetes Gerät oder über einen Modbus Gateway.
 
+Die folgenden Kombinationen von Extensions in einem Stapel sind möglich:
+
+* RS485 Master oben / WIFI unten
+* RS485 Master oben / Chibi Slave unten
+* RS485 Master unten / WIFI oben
+* RS485 Master unten / Chibi Slave oben
+* RS485 Slave oben / Chibi Master unten
+* RS485 Slave unten / Chibi Master oben
 
 Technische Spezifikation
 ------------------------

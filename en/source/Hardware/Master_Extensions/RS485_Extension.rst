@@ -56,6 +56,15 @@ and Bricklets with an RS485 Extension to be integrated in existing
 Modbus networks. It is also possible to communicate with a stack
 directly via Modbus from an embedded device or over a Modbus gateway.
 
+The following combinations with other Extensions in a stack are possible:
+
+* RS485 Master top / WIFI bottom
+* RS485 Master top / Chibi Slave bottom
+* RS485 Master bottom / WIFI top
+* RS485 Master bottom / Chibi Slave top
+* RS485 Slave top / Chibi Master bottom
+* RS485 Slave bottom / Chibi Master top
+
 
 Technical Specifications
 ------------------------

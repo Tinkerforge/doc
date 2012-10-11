@@ -79,8 +79,12 @@ so können diese einfach an der Master Brick oder andere Bricks im Stapel angesc
 Aus der Programmierersicht ist dies absolut transparent, d.h. alle Bricks und Bricklets können
 so genutzt werden als ob sie direkt per USB mit dem steuernden Gerät verbunden wären.
 
-Das benutzte Master Brick sollte eine Firmware Version von 1.3.0 oder neuer besitzen um diese Extension nutzen zu können.
+Der benutzte Master Brick sollte eine Firmware Version von 1.3.0 oder neuer besitzen um diese Extension nutzen zu können.
 
+Die folgenden Kombinationen von Extensions in einem Stapel sind möglich:
+
+* WIFI oben / RS485 Master unten
+* WIFI unten / RS485 Master oben
 
 Technische Spezifikation
 ------------------------

@@ -80,6 +80,12 @@ be used exactly the same way as if they were connected to your controlling devic
 
 You need a Master Brick with firmware version 1.3.0 or newer to use this extension.
 
+The following combinations with other Extensions in a stack are possible:
+
+* WIFI top / RS485 Master bottom
+* WIFI bottom / RS485 Master top
+
+
 
 Technical Specifications
 ------------------------

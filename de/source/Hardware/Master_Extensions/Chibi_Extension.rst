@@ -66,6 +66,13 @@ können genauso benutzt werden als wenn sie einzelnd per USB angeschlossen wäre
 Es ist auch möglich ein Netzwerk mit mehr als zwei Chibi Extensions aufzubauen,
 wobei immer nur ein Stapel per USB verbunden sein darf (Many-to-One Routing).
 
+Die folgenden Kombinationen von Extensions in einem Stapel sind möglich:
+
+* Chibi Slave unten / RS485 Master obem
+* Chibi Slave oben / RS485 Master unten
+* Chibi Master unten / RS485 Slave oben
+* Chibi Master oben / RS485 Slave unten
+
 .. note::
  Nach der Konfiguration verhalten sich alle Module des Netzwerks als wenn sie
  einzeln per USB mit dem PC verbunden wären. Daher sind keine

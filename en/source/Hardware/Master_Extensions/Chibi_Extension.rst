@@ -64,10 +64,17 @@ be used exactly the same way as if they were both connected via USB.
 It is also possible to create a network with several Chibi Extension where
 only one is connected via USB (many-to-one routing).
 
+The following combinations with other Extensions in a stack are possible:
+
+* Chibi Slave bottom / RS485 Master top
+* Chibi Slave top / RS485 Master bottom
+* Chibi Master bottom / RS485 Slave top
+* Chibi Master top / RS485 Slave bottom
+
 .. note::
  After configuring a Chibi network all devices will behave as
  connected via USB to your PC. Therefore you need no code changes if you
- change you system from cable based to Chibi. But be aware that you will
+ change your system from cable based to Chibi. But be aware that you will
  loose through put since the Chibi transmission speed is slower than USB
  transmission speed.
 
