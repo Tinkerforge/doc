@@ -209,6 +209,9 @@ Flashing of Brick firmwares can be done with Brick Viewer sind version 1.1.0.
 The latest firmwares will be downloaded automatically and can be found
 :ref:`here <downloads_firmwares_plugins>` too.
 
+Flashing a Brick requires that it is connected via USB to the PC that runs the
+Brick Viewer.
+
 First bring the Brick into the bootloader modus. Press and hold the "Erase"
 button of the Brick and connect it via USB to your PC.
 The blue LED should be off. Now the Brick should be in the bootloader
@@ -242,6 +245,10 @@ select "Custom..." from the dropdown box and specify a local file via the
  On Windows you might need to install Atmel driver ``atm6124_cdc.inf`` from the
  drivers subfolder in the Brick Viewer installation folder.
 
+ Windows 7 might autodetect a Brick as "GPS Camera Detect" serial device
+ but flashing should still work. If it doesn't you need to install the Atmel
+ driver ``atm6124_cdc.inf`` for it.
+
  If you have an old Linux kernel you might need to install the kernel driver
  from `here <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
  (at the bottom: "SAM-BA Linux USB driver")
@@ -255,6 +262,9 @@ Bricklet Plugin Flashing
 Flashing of Bricklet plugins into the EEPROM of the Bricklet is
 possible in the flashing window. The latest plugins will be downloaded
 automatically and can be found :ref:`here <downloads_firmwares_plugins>` too.
+
+Flashing a Bricklet requires that it is connected to a Brick which is listed in
+your Brick Viewer.
 
 Connect a Brick (any Brick will do) via USB, start the Brick Viewer
 and, click "Connect" and then click "Flashing":
