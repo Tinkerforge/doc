@@ -212,7 +212,14 @@ FAQ
 The distances are wrong
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-This is likely some kind of calibration problem. First of all you should
+This can have different causes. The Sharp IR sensors require 5V power supply. If the
+connected Brick is powered over USB, 5V may not be reached. The reason for this
+is a voltage drop about 0.5V caused by protection diodes on our products. You
+can use a stack supply, e.g. the :ref:`Step-Down Power Supply
+<step_down_power_supply>` to provide the sensor with 5V and get a better
+distance reading.
+
+Another cause can be a calibration problem. First of all you should
 check if the calibration for the correct infrared sensor is installed
 (see :ref:`here <distance_ir_sensor_configuration>`) and calibrate the ADC of your
 Brick (see :ref:`here <brickv_adc_calibration>`).

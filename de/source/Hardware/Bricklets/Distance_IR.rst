@@ -220,7 +220,15 @@ FAQ
 Die Distanzen passen nicht
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dies ist höchstwahrscheinlich ein Kalibrierungsproblem. Als erstes sollte
+Dies kann verschiedenen Ursachen haben. Die Sharp IR Sensoren benötigen 5V
+Versorgungsspannung. Wird der verbundene Brick über USB versorgt, so kann es
+sein, dass 5V nicht erreicht werden können. Der Grund für diesen Spannungsabfall
+um 0,5V sind Schutzdioden auf den Bricks. Der Stapel kann mit einer
+zusätzlichen Stromversorgung, wie der :ref:`Step-Down Power Supply
+<step_down_power_supply>`, erweitert werden um den Sensor besser mit 5V
+zu versorgen und so eine bessere Distanzmessung zu erhalten.
+
+Eine andere mögliche Ursache kann ein Kalibrierungsproblem sein. Als erstes sollte
 sichergestellt werden, dass die richtige Spannung/Distanz Abbildungsdatei für
 den angeschlossenen Sensor auf dem Bricklet gespeichert ist (siehe
 :ref:`hier <distance_ir_sensor_configuration>`). Dann sollte noch die
