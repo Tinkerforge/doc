@@ -167,9 +167,9 @@ Wähle den "Distance IR Bricklet" Tab aus, klicke auf den "File.." Knopf und
 wähle die passende Spannung/Distanz Abbildungdatei aus. Dann klicke auf den
 "Save" Knopf um die Abbildung auf dem Bricklet zu speichern. Dabei wird aus
 den Stützwerten der Abbildungsdatei eine Spline interpoliert um äquidistante
-Stützwert für den gesamten Messbereich des Infrarot Sensors zu erhalten.
+Stützwerte für den gesamten Messbereich des Infrarot Sensors zu erhalten.
 
-Damit die neue Abbildung verwendet wird muss der Brick per Reset Knopf oder
+Damit die neue Abbildung verwendet wird muss der Brick per Reset Knopf oder per
 USB ab- und anstecken neu gestartet werden.
 
 
