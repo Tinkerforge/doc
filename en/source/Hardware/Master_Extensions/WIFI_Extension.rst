@@ -230,7 +230,7 @@ the Low Power Mode and save energy.
 
 .. note::
  The Power Mode is not saved permanently, it will automatically switch back
- to Full Speed on reset. Because Low Power Mode is not fast enough for the
+ to Full Speed on reset of the Master Brick. Because Low Power Mode is not fast enough for the
  initial enumeration after a reset. Therefore, you need to enable Low Power
  Mode after each reset.
 

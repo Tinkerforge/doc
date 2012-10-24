@@ -233,14 +233,14 @@ und Energie gespart werden.
    :target: ../../_images/Extensions/extension_wifi_power_mode.jpg
 
 .. note::
- Der Power Mode wird nicht permanent gespeichert, er wird beim Neustart automatisch
+ Der Power Mode wird nicht permanent gespeichert, er wird beim Neustart des Master Bricks automatisch
  auf Full Speed zurückgestellt. Dies ist notwendig, da der Low Power Mode nicht
- schnell genug ist für die initiale Enumerierung nach einem Neustart. Daher, muss
+ schnell genug ist für die initiale Enumerierung nach einem Neustart. Daher muss
  der Low Power Mode nach jedem Neustart neu eingestellt werden.
 
 Zum Schluss muss auf "Save WIFI Configuration" geklickt werden um die Konfiguration zu speichern.
 Falls andere Einstellungen als der Power Mode geändert wurden muss der Master Brick
-neu gestartet werden um dien neue Konfiguration zu übernehmen. Nach dem Neustart
+neu gestartet werden um die neue Konfiguration zu übernehmen. Nach dem Neustart
 sollte der Master Brick bei Eingabe der konfigurierten IP Adresse und Port im Brick Viewer erreichbar sein.
 
 
