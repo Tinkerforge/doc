@@ -218,9 +218,9 @@ If you don't want encryption select "No Encryption".
 Finally you have to configure the Power Mode. There are two Power Modes:
 Full Speed and Low Power. In Full Speed mode the device consumes more power,
 but you will be able to transmit much more messages. This will be the typical
-configuration. If you only need to transmit only a few messages per second (e.g. if you want to 
-measure temperatures wirelessly, than you might to use the Low Power Mode
-and save energy.
+configuration. If you only need to transmit only a few messages per second
+(e.g. if you want to measure temperatures wirelessly, than you might to use
+the Low Power Mode and save energy.
 
 .. image:: /Images/Extensions/extension_wifi_power_mode.jpg
    :scale: 100 %
@@ -228,10 +228,16 @@ and save energy.
    :align: center
    :target: ../../_images/Extensions/extension_wifi_power_mode.jpg
 
-At the end, press "Save WIFI Configuration" to save the configuration and
-restart the Master Brick to load it. After restart you should be able to
-reach the Master Brick by entering the IP address and port of the Brick in the
-Brick Viewer.
+.. note::
+ The Power Mode is not saved permanently, it will automatically switch back
+ to Full Speed on reset. Because Low Power Mode is not fast enough for the
+ initial enumeration after a reset. Therefore, you need to enable Low Power
+ Mode after each reset.
+
+At the end, press "Save WIFI Configuration" to save the configuration. If another
+option then the Master Brick has to be restarted to apply the new configuration.
+After restart you should be able to reach the Master Brick by entering the IP
+address and port of the Brick in the Brick Viewer.
 
 
 .. _extension_wifi_adhoc_ap:

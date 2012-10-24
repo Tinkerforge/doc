@@ -219,7 +219,7 @@ Der Schlüssel ist hierbei in Hex-Notation einzutragen mit voller Schlüssellän
 
 Soll keine Verschlüsselung genutzt werden muss "No Encryption" gewählt werden. 
 
-Zum Schluss muss der Power Mode konfiguriert werden. Es gibt zwei Modis:
+Nun kann noch der Power Mode konfiguriert werden. Es gibt zwei Modi:
 Full Speed und Low Power. Im Full Speed Modus verbraucht die Extension mehr Leistung
 besitzt aber einen deutlich höheren Datendurchsatz. Dies ist für die meisten Anwendungen
 die typische Konfiguration. Müssen nur ein paar Nachrichten pro Sekunden transferiert werden,
@@ -232,8 +232,15 @@ und Energie gespart werden.
    :align: center
    :target: ../../_images/Extensions/extension_wifi_power_mode.jpg
 
-Zum Schluss muss auf "Save WIFI Configuration" geklickt werden um die Konfiguration zu speichern
-und der Master Brick neu gestartet werden um die Konfiguration zu laden. Nach dem Neustart
+.. note::
+ Der Power Mode wird nicht permanent gespeichert, er wird beim Neustart automatisch
+ auf Full Speed zurückgestellt. Dies ist notwendig, da der Low Power Mode nicht
+ schnell genug ist für die initiale Enumerierung nach einem Neustart. Daher, muss
+ der Low Power Mode nach jedem Neustart neu eingestellt werden.
+
+Zum Schluss muss auf "Save WIFI Configuration" geklickt werden um die Konfiguration zu speichern.
+Falls andere Einstellungen als der Power Mode geändert wurden muss der Master Brick
+neu gestartet werden um dien neue Konfiguration zu übernehmen. Nach dem Neustart
 sollte der Master Brick bei Eingabe der konfigurierten IP Adresse und Port im Brick Viewer erreichbar sein.
 
 
