@@ -266,18 +266,16 @@ beschränkt.
  Viele ESCs haben eingebaute Battery Eliminator Circuits (BEC) die verwendet
  werde können um RC Empfänger zu versorgen. Falls ein ESC mit BEC verwendet wird
  dann muss diese unbedingt abgeschaltet werden. Andernfalls kann der ESC oder
- der Servo Brick zerstört werden. Um die BEC abzuschalten darf das rote Kakel
+ der Servo Brick zerstört werden. Um die BEC abzuschalten darf das rote Kabel
  des ESC nicht an den Servo Brick angeschlossen werden
  (`externes Videotutorial <http://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
 
 .. warning::
- Falls die gleiche Stromversorgungen für den ESC und den Servo Brick
+ Falls die gleiche Stromversorgung für den ESC und den Servo Brick
  verwendet wird, dann darf auch das schwarze Kabel (GND) nicht an den
- Servo Brick angeschlossen werden. Es scheint so, dass die meisten ESCs ihren
- Strom nicht über deren eigene Stromversorgungen, sondern über den GND Pin des
- Servo Bricks beziehen. Dies kann zur Zerstörung des Servo Bricks führen. Daher
- sollte beim ersten Test die Strommessung im Brick Viewer im Auge behalten werden.
-
+ Servo Brick angeschlossen werden. Wird dies nicht getan, so können
+ Motorströme über das GND Kabel fließen, die die Strommess-Schaltung
+ auf dem Servo Brick zerstören.
 
 Fehler LED
 ----------

@@ -265,11 +265,9 @@ the maximum brushless motor current only depends on your selected ESC.
 
 .. warning::
  If you use the same power supply for your ESC and the Servo Brick, additionally
- you have to remove the black (GND) wire too. It seems that the most
- ESCs will draw their current not over the power supply cable of the ESC
- but over the GND pin of the Servo Brick. This can lead to a destroyed Servo
- Brick. At the first tests have an eye on the current measurement in
- Brick Viewer.
+ you have to remove the black (GND) wire too. If you don't remove it, motor
+ current can flow through the servo brick and can destroy current measurement
+ circuit.
 
 
 Error LED
