@@ -273,9 +273,9 @@ beschränkt.
 .. warning::
  Falls die gleiche Stromversorgung für den ESC und den Servo Brick
  verwendet wird, dann darf auch das schwarze Kabel (GND) nicht an den
- Servo Brick angeschlossen werden. Wird dies nicht getan, so können
- Motorströme über das GND Kabel fließen, die die Strommess-Schaltung
- auf dem Servo Brick zerstören.
+ Servo Brick angeschlossen werden. Andernfalls kann der Motorstrom über das
+ GND Kabel fließen und die Strommessschaltung auf dem Servo Brick zerstört
+ werden.
 
 Fehler LED
 ----------
