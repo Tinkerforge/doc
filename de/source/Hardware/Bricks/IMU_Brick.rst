@@ -195,6 +195,10 @@ im Brick Viewer aufgerufen und der "Im/Export" Tab ausgewählt werden. Zum
 Abschluss muss der Inhalt der ``YOUR_IMU_UID.txt`` Datei in das Textfeld kopiert
 und auf den "Import" Knopf geklickt werden.
 
+Seit Brick Viewer Version 1.1.13 kann auch der "Restore Factory Calibration"
+Knopf verwendet werden. Dadurch wird die entsprechende Werkskalibrierung
+automatisch heruntergeladen und importiert.
+
 
 Quaternionen vs Eulerwinkel
 ---------------------------

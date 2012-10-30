@@ -3,18 +3,16 @@
 Brick Viewer (brickv)
 =====================
 
-.. note::
- Diese Seite wird in kürze auch vollständig in Deutsch verfügbar sein.
-
 Der Brick Viewer bietet eine graphische Oberfläche um
 :ref:`Bricks <product_overview_bricks>` und
-:ref:`Bricklets <product_overview_bricklets>` zu testen. Each device has its own
-view that shows the main features and allows to control them.
+:ref:`Bricklets <product_overview_bricklets>` zu testen. Jedes Gerät hat seine
+eigenen Tab der die Hauptfunktionen abbildet und erlaubt diese zu steuern.
 
-Additionally brickv can be used to calibrate the analog-to-digital converter
-(ADC) of the Bricks to improve measurement quality
-(see :ref:`here <brickv_adc_calibration>`)
-and to flash bricklet plugins (see :ref:`here <brickv_flash_plugin>`).
+Darüber hinaus kann der Brick Viewer verwendet werden, um den
+Analog-Digital-Wandler der Bricks zu :ref:`kalibrieren <brickv_adc_calibration>`
+und so deren Messqualität zu verbessern, und um
+:ref:`Brick Firmwares <brickv_flash_firmware>` und
+:ref:`Bricklet Plugins <brickv_flash_plugin>` zu flashen.
 
 
 .. _brickv_installation:
@@ -24,140 +22,154 @@ Installation
 
 Windows
 ^^^^^^^
-To install the Brick Viewer on Windows, download the
-Brick Viewer .exe form :ref:`here <downloads_tools>`.
-Click on the downloaded file, this should open the installer:
+
+Das Brick Viewer Installationsprogramm kann im
+:ref:`Downloadbereich <downloads_tools>` heruntergeladen werden. Nach dem Start
+zeigt das Programm folgende Ansicht:
 
 .. image:: /Images/Screenshots/brickv_windows_1_small.jpg
    :scale: 100 %
-   :alt: Brickv installation step 1
+   :alt: Brickv Installation Schritt 1
    :align: center
    :target: ../_images/Screenshots/brickv_windows_1.jpg
 
-Click on "Next" to start the installation process.
+Ein Klick auf den "Next" Knopf startet den Installationsprozess.
 
 .. image:: /Images/Screenshots/brickv_windows_2_small.jpg
    :scale: 100 %
-   :alt: Brickv installation step 2
+   :alt: Brickv Installation Schritt 2
    :align: center
    :target: ../_images/Screenshots/brickv_windows_2.jpg
 
-Next you will be the installation path will be questioned.
-Change it if necessary and click "Install".
+Als nächstes kann der Zielordner angegeben werden. Ändere diesen falls nötig
+und klicke "Install".
 
 .. image:: /Images/Screenshots/brickv_windows_3_small.jpg
    :scale: 100 %
-   :alt: Brickv installation step 3
+   :alt: Brickv Installation Schritt 3
    :align: center
    :target: ../_images/Screenshots/brickv_windows_3.jpg
 
-After this you have finished the installation process.
+Der Installationsprozess ist jetzt abgeschlossen.
 
 
 Linux
 ^^^^^
 
-To install the Brick Viewer on a Debian based distribution
-(Ubuntu, Mint, etc.), download the Brick Viewer .deb from
-:ref:`here <downloads_tools>`. Right-click on the file and choose
-"Open with GDebi Package Installer":
+Für die Installation unter Linux steht im :ref:`Downloadbereich
+<downloads_tools>` ein Debian Paket zur Verfügung. Durch einen Rechtsklick auf
+die Datei und auswählen von "Mit GDebi-Paket-Installationsprogramm öffnen" wird
+das Installationsprogramm gestartet:
 
 .. image:: /Images/Screenshots/brickv_linux_1_small.jpg
    :scale: 100 %
-   :alt: Brickv installation step 1
+   :alt: Brickv Installation Schritt 1
    :align: center
    :target: ../_images/Screenshots/brickv_linux_1.jpg
 
-Then click "Install Package":
+Ein Klick auf "Paket Installieren" startet dann die eigentliche Installation:
 
 .. image:: /Images/Screenshots/brickv_linux_2_small.jpg
    :scale: 100 %
-   :alt: Brickv installation step 2
+   :alt: Brickv Installation Schritt 2
    :align: center
    :target: ../_images/Screenshots/brickv_linux_2.jpg
 
-Ready:
+Der Installationsprozess ist nun abgeschlossen:
 
 .. image:: /Images/Screenshots/brickv_linux_3_small.jpg
    :scale: 100 %
-   :alt: Brickv installation step 3
+   :alt: Brickv Installation Schritt 3
    :align: center
    :target: ../_images/Screenshots/brickv_linux_3.jpg
 
-In Ubuntu you can also use the Ubuntu Software Center, other Desktop
-environments have very similar tools that practically work the same way.
-You can start the Brick Viewer in the application menu under electronic
-or in the console with::
+Auf Ubuntu kann auch das Ubuntu Software Center verwendet werden, andere Debian
+basierte Distributionen bieten ähnliche Werkzeuge zur Paketverwaltung.
+Der Brick Viewer kann jetzt über das Anwendungsmenü aus der Unterkategorie
+Sonstiges gestartet werden, oder aus einem Terminal heraus mit::
 
  brickv
 
-To install Brick Viewer from the console use the following::
+Statt mittels eines graphischen Installationsprogramms kann der Brick Viewer
+auch über einen Terminal mittels folgender Befehle installiert werden::
 
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
  sudo dpkg -i brickv_linux_latest.deb
 
-To install Brick Viewer from source, download the source from
-`here <https://github.com/Tinkerforge/brickv>`__ and install the dependencies:
+Um den Brick Viewer aus dem Quelltext heraus zu verwenden kann der Quelltext
+ebenfalls im :ref:`Downloadbereich <downloads_tools>` heruntergeladen werden.
+Auch hier müssen die benötigten Abhängigkeiten installiert werden:
 
+* python
 * python-qt4
 * python-qt4-gl
 * python-qwt5-qt4
 * python-opengl
 * python-serial
 
-On Debian based distributions you can do that as shown above, on other
-distribution you have to search for and install the equivalent packages.
+Auf Debian basierte Distributionen können diese Pakete wie zuvor per ``apt-get``
+installiert werden. Für andere Distributionen sollte es äquivalente Pakete geben.
 
-To start brickv from source, change to the folder
-brickv/src/brickv/ and start with::
+Um den Brick Viewer zu starten muss zuerst in den ``src/brickv/`` Ordner
+innerhalb des entpackten Quelltext gewechselt und dort folgender Befehl
+ausgeführt werden::
 
  python main.py
 
 .. note::
- Unfortunately Debian has at the time of writing this tutorial problems with
- the python-qwt5-qt4 in Wheezy. If you use Debian Wheezy and you can't
- find python-qwt5-qt4 in the repository, you have to install it from Sid::
+ Unglücklicherweise gibt es bei Debian zum Zeitpunkt des Schreibens dieser
+ Anleitung ein Problem mit dem ``python-qwt5-qt4`` Paket in Wheezy.
+ Falls Debian Wheezy verwendet wird und ``python-qwt5-qt4`` ist nicht im
+ Paket-Repository zu finden, dann kann es aus dem Sid Paket-Repository installiert
+ werden::
 
-  echo 'APT::Default-Release "testing";' >> /etc/apt/apt.conf
-  edit /etc/apt/sources.list, copy your non-security testing lines and change one set to sid
-  apt-get update
-  apt-get -t sid install python-qwt5-qt4
+  sudo echo 'APT::Default-Release "testing";' >> /etc/apt/apt.conf
+
+ Dann muss ``/etc/apt/sources.list`` bearbeitet und die
+ nicht-``security testing`` Zeilen kopiert und von ``wheezy`` auf ``sid``
+ verändert werden. Jetzt kann das Paket wie folgt installiert werden::
+
+  sudo apt-get update
+  sudo apt-get -t sid install python-qwt5-qt4
 
 
 Mac OS X
 ^^^^^^^^
 
-To install the Brick Viewer on Mac OS X, download the
-.dmg form :ref:`here <downloads_tools>`.
-Click on the downloaded file, this should open the package:
+Für die Installation unter Mac OS X steht im :ref:`Downloadbereich
+<downloads_tools>` ein Apple Disk Image zur Verfügung. Ein Doppelklick öffnet
+das Disk Image:
 
 .. image:: /Images/Screenshots/brickv_macos_1_small.jpg
    :scale: 100 %
-   :alt: Brickv installation step 1
+   :alt: Brickv Installation Schritt 1
    :align: center
    :target: ../_images/Screenshots/brickv_macos_1.jpg
 
-To install the Brick Viewer drag and drop the file to your applications folder
+Drag und Drop der Brick Viewer App in den Anwendungsordner schließt die
+Installation ab.
 
 .. image:: /Images/Screenshots/brickv_macos_2_small.jpg
    :scale: 100 %
-   :alt: Brickv installation step 2
+   :alt: Brickv Installation Schritt 2
    :align: center
    :target: ../_images/Screenshots/brickv_macos_2.jpg
 
-After this you have finished the installation process.
-Please restart your machine after this (otherwise the icons don't show up for
-some unexplained reason).
+Möglicherweise muss jetzt noch der Rechner neugestartet werden, andernfalls
+könnte es sein, dass die Icons nicht richtig dargestellt werden.
 
 
-Usage
------
+Verwendung
+----------
 
-To use the Brick Viewer you have to first start the
-:ref:`Brick Daemon <brickd>` either on the same PC or on a PC in the same
-network. Enter the IP (localhost if you started the Brick Daemon on the
-same PC). Press "connect". Now you can go through the tabs at the top
-and test your Bricks and Bricklets.
+Zuerst muss der Brick Viewer mit dem :ref:`Brick Daemon <brickd>` oder z.B. einer
+:ref:`WIFI Extension <wifi_extension>` verbunden werden. Dabei kann der Brick
+Daemon auf dem gleichen oder einem anderen PC als der Brick Viewer laufen.
+Dazu zuerst die IP Adresse des PCs auf dem der Brick Daemons läuft oder die IP
+Adresse einer WIFI Extension als Host angeben. Falls Brick Daemon und Viewer
+auf dem gleichen PC laufen kann der Standardwert ``localhost`` beibehalten werden.
+Nach einem Klick auf den "Connect" Knopf werden die verbunden Bricks und
+Bricklets auf je einem eigenen Tab angezeigt und können getestet werden.
 
 .. image:: /Images/Screenshots/brickv_setup_tab_small.jpg
    :scale: 100 %
@@ -165,43 +177,46 @@ and test your Bricks and Bricklets.
    :align: center
    :target: ../_images/Screenshots/brickv_setup_tab.jpg
 
-If you click on "Flashing" you can flash firmwares and plugins onto Bricks and
-Bricklets. If you click on "Advanced Functions" you can calibrate the ADCs of
-Bricks (see below).
+Ein Klick auf den "Check for Updates Knopf" öffnen einen Dialog mit Informationen
+über verfügbare Updates. Mittels des "Flashing" Knopfes kann ein Dialog zum
+Flashen neuer Firmwares und Plugins auf Bricks und Bricklets aufgerufen werden.
+Ein Klick auf den "Advanced Functions" Knopf öffnet einen Dialog zur Kalibrierung
+des Analog-Digital-Wandler eines Bricks.
 
 
 .. _brickv_adc_calibration:
 
-Brick ADC Calibration
-^^^^^^^^^^^^^^^^^^^^^
+Brick AD-Wandler Kalibrierung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have problems with inaccurate measurements (e.g. Linear Poti does not
-reach the maximum or the voltage measurements in a stack are slightly off)
-it is possible that the calibration of the ADC is to blame.
+Bei Problemen mit ungenauen Messungen (z.B. erreicht das Linear Poti Bricklet
+nicht den Maximalwert oder die Spannungsmessung im Stapel ist ungenau) kann
+die Kalibrierung des AD-Wandlers Schuld sein.
 
-To measure analog values, the microcontrollers
-on the Bricks have analog-to-digital converter (ADC). It is never guaranteed
-that an ADC on a microcontroller is perfectly calibrated. To overcome
-this problem, we make it possible to calibrate the ADC in your Bricks.
+Der Mikrocontroller auf den Bricks verwendet einen Analog-Digital-Wandler um
+analoge Spannungen zu messen. Da der AD-Wandler nicht perfekt kalibriert ist
+kann dieser über den Brick Viewer nachkalibriert werden.
 
-For the calibration you need one of the potentiometer Bricklets (Rotary Poti
-or Linear Poti). Connect it to a Brick and click on "Advanced Functions" in
-the Setup tab of Brick Viewer:
+Für die Kalibrierung wird eines der Potentiometer Bricklets (Rotary Poti
+oder Linear Poti) benötigt. Verbinde es mit dem Brick und rufe den
+"Advanced Functions" Dialog im Brick Viewer auf:
 
 .. image:: /Images/Screenshots/brickv_advanced_functions_calibrate_small.jpg
    :scale: 100 %
-   :alt: Brickv (ADC Calibration)
+   :alt: Brickv (AD-Wandler Kalibrierung)
    :align: center
    :target: ../_images/Screenshots/brickv_advanced_functions_calibrate.jpg
 
-Choose the port your poti is connected to (A-D).
-Turn your poti completely to the left and press "Calibrate", then turn
-your poti completely to right and press "Calibrate" again. If your ADC
-wasn't calibrated well the gain and offset values should be different then
-the default values (4095 and 0). You can test if the calibration works in
-principle by pressing "Calibrate" when the poti is in the middle position,
-then one of the values has to change (after that you have to recalibrate,
-of course).
+Wähle den Port aus an dem das Poti Bricklet angeschlossen ist (A-D).
+Stelle dann das Poti Bricklet ganz nach links und klicke den "Calibrate" Knopf.
+Stelle das Poti Bricklet ganz nach rechts und klicke wieder den "Calibrate"
+Knopf. Falls der AD-Wandler nicht passend kalibriert war, dann weichen jetzt der
+Gain und Offset Wert von den Standardwerten ab (4095 und 0).
+
+Ob die Kalibrierung grundsätzlich funktioniert kann dadurch getestet werden,
+dass das Poti Bricklet in Mittelstellung gebracht und dann "Calibrate" geklickt
+wird. Dabei muss sich Gain oder Offset ändern (danach muss der AD-Wandler
+natürlich wieder korrekt kalibriert werden).
 
 
 .. _brickv_flash_firmware:
@@ -209,16 +224,31 @@ of course).
 Brick Firmware Flashing
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Flashing of Brick firmwares can be done with Brick Viewer sind version 1.1.0.
-The latest firmwares will be downloaded automatically and can be found
-:ref:`here <downloads_firmwares_plugins>` too.
+Seit Version 1.1.0 kann der Brick Viewer Firmwares auf Bricks flashen. Die
+jeweils neuste Firmwareversion wird dabei automatisch vom Brick Viewer
+ermittelt und heruntergeladen. Diese können aber auch manuell im
+:ref:`Downloadbereich <downloads_firmwares_plugins>` heruntergeladen werden.
 
-First bring the Brick into the bootloader modus. Press and hold the "Erase"
-button of the Brick and connect it via USB to your PC.
-The blue LED should be off. Now the Brick should be in the bootloader
-(based on your operating system some sort of Atmel device could be detected).
+Um einen Brick flashen zu können, muss dieser per USB zu einem PC mit
+Brick Viewer verbunden sein.
 
-Start the Brick Viewer and click "Flashing":
+Bevor ein IMU Brick neu geflashed wird sollte dessen Kalibrierung exportiert
+werden, da diese beim Flashen verloren geht. Dies ist allerdings nur dann
+notwendig falls eine eigenen Kalibrierung vorgenommen wurde, da die
+Werkskalibrierung seit Brick Viewer Version 1.1.13 automatisch wiederhergestellt
+werden kann.
+
+Zum Flashen muss der Brick in den Bootloader Modus versetzt werden. Dazu muss
+der Erase Knopf am Brick gedrückt gehalten werden während der Brick startet.
+Dazu kann entweder das USB Kabel angesteckt werden während der Erase Knopf
+gedrückt gehalten wird, oder es kann der Reset Knopf am Brick gedrückt werden
+wobei der Erase Knopf gedrückt gehalten wird. Ist der Brick dann im Bootloader
+Modus leuchtet die blaue LED neben der USB Buchse des Bricks nicht. Abhängig vom
+Betriebssystems des PC sollte jetzt Atmel Gerät in Form einer seriellen
+Schnittstelle auftauchen.
+
+Als nächstes muss der Brick Viewer gestartet und "Flashing" Dialog geöffnet
+werden:
 
 .. image:: /Images/Screenshots/brickv_flashing_firmware_small.jpg
    :scale: 100 %
@@ -226,29 +256,40 @@ Start the Brick Viewer and click "Flashing":
    :align: center
    :target: ../_images/Screenshots/brickv_flashing_firmware.jpg
 
-A Brick in bootloader mode should show up as serial port.
-The "Serial Port" dropdown box shows all detected serial ports. If no port is
-listed try clicking "Refresh". If still no serial port shows up ensure that
-your Brick is in bootloader mode and that it is correctly recognized by your
-operating system.
-
-Select the correct serial port, select the firmware for your Brick and click
-"Save". Now the latest firmware will be downloaded and written to the Brick,
-then read back again and verified to be correctly written.
-A message box will pop up to inform you about the result.
-If the flash process failed, check if you have selected the correct serial port.
-
-Instead of letting the Brick Viewer download the latest firmware you can also
-select "Custom..." from the dropdown box and specify a local file via the
-"Browse..." button.
+Die "Serial Port" Dropdown-Box zeigt alle verfügbaren seriellen Schnittstellen
+des PCs an. Diese kann mittels des "Refresh" Knopfes aktualisiert werden, falls
+keine oder nicht die richtige serielle Schnittstelle aufgelistet wird. Falls
+der Brick nicht als serielle Schnittstelle auftaucht, befindet sich der Brick
+entweder nicht im Bootloader Modus, oder das Betriebssystem hat ihn nicht
+richtig als serielle Schnittstelle erkannt.
 
 .. note::
- On Windows you might need to install Atmel driver ``atm6124_cdc.inf`` from the
- drivers subfolder in the Brick Viewer installation folder.
+ Auf Windows kann es nötig sein den Atmel Treiber ``atm6124_cdc.inf`` aus dem
+ drivers Unterordner der Brick Viewer Installation zu installieren, damit ein
+ Brick im Bootloader Modus richtig als serielle Schnittstelle erkannt wird.
 
- If you have an old Linux kernel you might need to install the kernel driver
- from `here <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
- (at the bottom: "SAM-BA Linux USB driver")
+ Windows 7 erkennt einen Brick im Bootloader Modus von sich aus als "GPS Camera
+ Detect" Gerät. Dies ist auch eine serielle Schnittstelle so dass Flashen
+ dennoch möglich ist. Falls hier dennoch Probleme auftreten kann es helfen
+ den Atmel Treiber ``atm6124_cdc.inf`` zu installieren.
+
+.. note::
+ Für alte Linux Kernel kann es notwenig sein diesen
+ `SAM-BA Linux USB Kernel Treiber <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
+ zu installieren, damit ein Brick im Bootloader Modus richtig funktioniert.
+
+Wird die serielle Schnittstelle des Bricks richtig erkannt muss diese nun im
+Brick Viewer ausgewählt werden, sowie die passende Firmware für den Brick.
+Passend die Einstellungen kann das Flashen per Klick auf den "Save" Knopf
+gestartet werden. Jetzt wird die aktuelle Firmware für den Brick heruntergeladen,
+auf den Brick geschrieben und dann wieder zurück gelesen, um sicherzustellen,
+dass das Schreiben der Firmware richtig funktioniert hat. Falls das Flashen
+scheitert, sollte zunächst überprüft werden, ob die richtige serielle
+Schnittstelle ausgewählt wurde.
+
+Anstatt den Brick Viewer die jeweils neuste Firmware herunterladen zu lassen,
+kann auch "Custom..." als Firmware gewählt werden und dann die zu flashende
+Firmware als lokale Datei über den "Browse..." Knopf ausgewählt werden.
 
 
 .. _brickv_flash_plugin:
@@ -256,34 +297,36 @@ select "Custom..." from the dropdown box and specify a local file via the
 Bricklet Plugin Flashing
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Flashing of Bricklet plugins into the EEPROM of the Bricklet is
-possible in the flashing window. The latest plugins will be downloaded
-automatically and can be found :ref:`here <downloads_firmwares_plugins>` too.
+Dr Brick Viewer kann auch Plugins auf Bricklets flashen. Die
+jeweils neuste Pluginversion wird dabei automatisch vom Brick Viewer
+ermittelt und heruntergeladen. Diese können aber auch manuell im
+:ref:`Downloadbereich <downloads_firmwares_plugins>` heruntergeladen werden.
 
-Connect a Brick (any Brick will do) via USB, start the Brick Viewer
-and, click "Connect" and then click "Flashing":
+Um ein Bricklet flashen zu können, muss es an einem Brick angeschlossen sein,
+der im Brick Viewer aufgelistet ist. Ein Klick auf "Flashing" Knopf den
+passenden Dialog:
 
 .. image:: /Images/Screenshots/brickv_flashing_plugin_small.jpg
    :scale: 100 %
-   :alt: Brickv (Brick Plugin)
+   :alt: Brickv (Bricklet Plugin)
    :align: center
    :target: ../_images/Screenshots/brickv_flashing_plugin.jpg
 
-Now connect the Bricklet that is to be flashed to the Brick and select
-the corresponding Brick and Port.
-Select the type of you Bricklet from the dropdown box. If you press "Save" now,
-the latest plugin will be downloaded and written
-to the EEPROM, then read again from the EEPROM and verified to be
-correctly written. A message box will pop up to inform you about the result.
-If the flash process failed, check if you selected the correct port and if the
-Bricklet is connected properly.
+Als nächstes muss der Brick und dessen Port ausgewählt werden, an dem das zu
+flashende Bricklet angeschlossen ist, sowie das passenden Plugin für das
+Bricklet. Passend die Einstellungen kann das Flashen per Klick auf den "Save" Knopf
+gestartet werden. Jetzt wird das aktuelle Plugin für das Bricklet heruntergeladen,
+auf das Bricklet geschrieben und dann wieder zurück gelesen, um sicherzustellen,
+dass das Schreiben des Plugin richtig funktioniert hat. Falls das Flashen
+scheitert, sollte zunächst überprüft werden, ob der richtige Brick und der
+richtige Port ausgewählt wurde und ob das Bricklet auch richtig angeschlossen ist.
 
-Instead of letting the Brick Viewer download the latest plugin you can also
-select "Custom..." from the dropdown box and specify a local file via the
-"Browse..." button.
+Anstatt den Brick Viewer das jeweils neuste Plugin herunterladen zu lassen,
+kann auch "Custom..." als Plugin gewählt werden und dann die zu flashende
+Plugin als lokale Datei über den "Browse..." Knopf ausgewählt werden.
 
-You can also read the UID currently written on the Bricklet and set a
-new one. Note that the UID has to be in Base58 encoding
-(i.e. 0-9a-zA-Z without 0 (zero), I (big i), O (big o) and l (small L)).
-The only other restriction is that all Bricklet UIDs you use at the same
-time need to be unique, you can use recognizable names or patterns.
+Darüber hinaus kann die UID des Bricklets ausgelesen und auch neu geschrieben
+werden. Die UID ist Base58 kodiert, die erlaubten Zeichen umfassen
+0-9, a-z und A-Z ohne 0 (Null), I (groß i), O (groß o) und l (klein L).
+Die einzige weitere Einschränkung ist, dass die UIDs aller Bricklets eindeutig
+sind.
