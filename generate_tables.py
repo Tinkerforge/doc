@@ -542,7 +542,7 @@ def make_product_overview_table(devices, category, name_width,
 def make_download_tools_table():
     source_code = download_tools_source_code[lang]
     table_head = download_tools_table_head[lang]
-    row_cell = ' {0} | {3}.{4}.{5} - `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/zipball/v{3}.{4}.{5}>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
+    row_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/zipball/v{3}.{4}.{5}>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
     rows = []
 
     for tool in tools:
@@ -584,8 +584,8 @@ def make_download_bindings_table():
 
 def make_download_firmwares_table():
     table_head = download_firmwares_table_head[lang]
-    brick_row_cell = ' {0} | `{3}.{4}.{5} <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_{3}_{4}_{5}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-brick/master/software/changelog>`__'
-    bricklet_row_cell = ' {0} | `{3}.{4}.{5} <http://download.tinkerforge.com/firmwares/bricklets/{1}/bricklet_{1}_firmware_{3}_{4}_{5}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
+    brick_row_cell = ' :ref:`{0} <{1}_brick>` | `{3}.{4}.{5} <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_{3}_{4}_{5}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-brick/master/software/changelog>`__'
+    bricklet_row_cell = ' :ref:`{0} <{1}_bricklet>` | `{3}.{4}.{5} <http://download.tinkerforge.com/firmwares/bricklets/{1}/bricklet_{1}_firmware_{3}_{4}_{5}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
     brick_rows = []
     bricklet_rows = []
 
