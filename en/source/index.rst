@@ -23,6 +23,7 @@ Documentation
    Programming_Interfaces
    Technical_Data
    Source_Code
+   Protocol_20
 
 
 .. _index_embedded_boards:
