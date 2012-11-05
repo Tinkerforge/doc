@@ -29,7 +29,7 @@ Termine haben.
    "",     "38", "WIFI Extension", "`fertig <https://shop.tinkerforge.com/master-extensions/wifi-master-extension.html>`__"
    "",     "39", "Barometer Bricklet", "`fertig <http://de.blog.tinkerforge.com/2012/9/28/barometer-bricklet-verfuegbar-und-mehr-made-in-germany>`__"
    "",     "41", "Support für Benutzung von zwei Master Extensions zur gleichen Zeit", "`fertig <http://www.tinkerunity.org/forum/index.php/topic,673.msg6313.html#msg6313>`__"
-   "",     "44", "Vorstellung von Tinkerforge Industrial Bricklets", "Prototyp getestet, in Produktion"
+   "",     "45", "Vorstellung von Tinkerforge Industrial Bricklets", "`fertig <http://de.blog.tinkerforge.com/2012/11/5/einfuehrung-von-industrial-bricklets>`__, im Shop: KW 47"
    "",     "46", "Neues Current/Voltage Bricklet", "Prototyp getestet, Leiterplatten bestellt"
    "",     "47", "GPS Bricklet", "Prototyp getestet, Leiterplatten bestellt"
    "",     "50", "PTC Bricklet"

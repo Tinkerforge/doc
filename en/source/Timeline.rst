@@ -26,7 +26,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "",     "38", "WIFI Extension", "`done <https://shop.tinkerforge.com/master-extensions/wifi-master-extension.html>`__"
    "",     "39", "Barometer Bricklet", "`done <http://en.blog.tinkerforge.com/2012/9/28/barometer-bricklet-available-and-more-made-in-germany>`__"
    "",     "41", "Add support for usage of two Master Extensions at the same time", "`done <http://www.tinkerunity.org/forum/index.php/topic,674.msg6312.html#msg6312>`__"
-   "",     "44", "Introduction of Tinkerforge Industrial Bricklets", "Prototype tested, now in production"
+   "",     "45", "Introduction of Tinkerforge Industrial Bricklets", "`done <http://en.blog.tinkerforge.com/2012/11/5/introduction-of-industrial-bricklets>`__, in shop: Week 47"
    "",     "46", "New Current/Voltage Bricklet", "Prototype tested, PCBs ordered"
    "",     "47", "GPS Bricklet", "Prototype tested, PCBs ordered"
    "",     "50", "PTC Bricklet" 

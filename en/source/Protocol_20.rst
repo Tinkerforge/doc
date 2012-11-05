@@ -52,8 +52,8 @@ it is highly desirable to be robust towards:
 
 * Parts of the system being not available for a time,
 * parts of the system restarting,
-* loosing a connections for a time
-* and loosing a connections completely, with the need to reconnect.
+* losing a connections for a time
+* and losing a connections completely, with the need to reconnect.
 
 In a small system that is connected via USB, none of the above problems
 happen. So in the early days of the Bricks and Bricklets the
