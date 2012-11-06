@@ -52,8 +52,8 @@ it is highly desirable to be robust towards:
 
 * Parts of the system being not available for a time,
 * parts of the system restarting,
-* loosing a connections for a time
-* and loosing a connections completely, with the need to reconnect.
+* losing a connections for a time
+* and losing a connections completely, with the need to reconnect.
 
 In a small system that is connected via USB, none of the above problems
 happen. So in the early days of the Bricks and Bricklets the
@@ -88,7 +88,7 @@ to a system of Bricks/Bricklets and you know the UID for one of them, you
 will be able to communicate with it.
 
 Routing in the new protocol is done similar to the way Ethernet switches
-operate. The routing tables are dynamic and are extended everytime a
+operate. The routing tables are dynamic and are extended every time a
 new packet from a currently unknown device is received. Packets that
 have a currently unknown receiver are simply broadcasted.
 
@@ -142,7 +142,7 @@ TF Protocol 2.0 packages are constructed as follows:
 * **Flags (8 bit)**:
 
  * **E [Error] (1 bit)**: This flag can be set by a Brick or Bricklet in an
-   answer message to a function call. It means that an error occured.
+   answer message to a function call. It means that an error occurred.
    Example: With the current protocol, if you call the "setPosition" function
    for a Servo Brick and you address a servo that is greater then 7 (does
    not exist), the message is discarded and there is no response from the Brick.
@@ -165,9 +165,9 @@ TF Protocol 2.0
 * is more resilient to accidental restarts, ESD/EMI problems etc,
 * allows simpler brickd implementations, therefore
 
- * the standard brickd from will be implemented in c and be more efficient,
+ * the standard brickd will be implemented in C and be more efficient,
    especially on small embedded boards like the Raspberry PI,
- * it is possible to easily reimplement brickd, e.g. for android in java.
+ * it is possible to easily reimplement brickd, e.g. for Android in Java.
 
 A robust program written for the new protocol can look as follows
 (pseudo code)::
@@ -205,7 +205,7 @@ Problems are:
   triggered by user.
 
 * enumeration has not enough data to determine the complete network 
-  topology (which bricklet is connected to which brick, etc).
+  topology (which Bricklet is connected to which Brick, etc).
 
 * Type of Brick/Bricklet has to be parsed from a string.
 
@@ -213,33 +213,37 @@ In new protocol, the enumerate callback will have the following parameters:
 
 * **String UID**: UID of device.
 
-* **String connctedUID**: UID where the device is connected to. For a Bricklet
+* **String connectedUID**: UID where the device is connected to. For a Bricklet
   this will be a UID of the Brick where it is connected to. For a Brick it
   will be the UID of the bottom Master Brick in the stack. For the
   bottom Master Brick in a Stack this will be "1". With this information
   it is possible to reconstruct the complete network topology.
 
 * **char position**: Position in stack. For Bricks: '0' - '8' 
-  (position in stack). For Bricklets: 'A' - 'D' (position on Brick).
+  (position in stack). For Bricklets: 'a' - 'd' (position on Brick).
 
 * **int[3][3] version**: Major, minor and release number for Hardware, 
   Software and API Version.
 
-* **int type**: Type of enumeration:
+* **int enumerationType**: Type of enumeration:
+ 
+ * *AVAILABLE* (0): If device is available (enumeration triggered by user).
 
- * *ADDED*: If device is newly added.
+ * *ADDED* (1): If device is newly added.
  
- * *REMOVED*: If device is removed (only possible for USB connection).
+ * *REMOVED* (2): If device is removed (only possible for USB connection).
  
- * *AVAILABLE*: If device is available (enumeration triggered by user).
+* **int authenticationResult**: Result of authentication:
+
+ * *MATCH* (0): If authentication is disabled in IP Connection and on Brick, or
+   authentication is enabled on both and the hash matches.
  
- * *NO_AUTHENTICATION*: If authentication is enabled in ipcon but not on Brick.
+ * *MISMATCH* (1): If authentication in enabled for both, but the
+   hash does not match.
+
+ * *DISABLED* (2): If authentication is enabled in IP Connection, but not on Brick.
  
- * *WRONG_AUTHENICATION*: If authentication in enabled for both, but the
-   hash is wrong.
- 
- * *AUTHENTICATION_NEEDED*: If authentication is enabled on Brick,
-   but not in ipcon.
+ * *REQUIRED* (3): If authentication is enabled on Brick, but not in IP Connection.
 
 * **int deviceIdentifier**: A number that represents the Brick, instead of the 
   name of the Brick (easier to parse).
@@ -249,12 +253,14 @@ Bricklets
 ---------
 
 Problems:
- * Bricklets without or with faulty Plugin crash Bricks.
+
+* Bricklets without or with faulty Plugin crash Bricks.
 
 In the new protocol:
- * Magic numbers to make sure plugin is really there.
- * Updated Bricklet API to make Bricklet programming more efficient (only 
-   internal).
+
+* Magic numbers to make sure plugin is really there.
+* Updated Bricklet API to make Bricklet programming more efficient (only
+  internal).
 
 .. _protocol_20_authentication:
 
