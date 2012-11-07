@@ -43,6 +43,7 @@ This is efficient, since the Stack ID is only 1 byte in size, as can
 be seen in the old protocol structure below:
 
 .. image:: /Images/protocol_old.png
+   :scale: 100 %
    :alt: Old TF Protocol
    :align: center
    :target: ../../_images/protocol_old.png
@@ -93,6 +94,7 @@ new packet from a currently unknown device is received. Packets that
 have a currently unknown receiver are simply broadcasted.
 
 .. image:: /Images/protocol_new.png
+   :scale: 100 %
    :alt: TF Protocol 2.0
    :align: center
    :target: ../../_images/protocol_new.png
@@ -141,13 +143,21 @@ TF Protocol 2.0 packages are constructed as follows:
 
 * **Flags (8 bit)**:
 
- * **E [Error] (1 bit)**: This flag can be set by a Brick or Bricklet in an
-   answer message to a function call. It means that an error occurred.
+ * **Error Code (2 bit)**: This number can be set by a Brick or Bricklet in an
+   answer message to a function call. If it is different from zero it means that
+   an error occurred.
    Example: With the current protocol, if you call the ``setPosition`` function
    for a Servo Brick and you address a servo that is greater then 7 (does
    not exist), the message is discarded and there is no response from the Brick.
-   With the E flag, a Brick/Bricklet can clarify that something went wrong.
+   With the error code, a Brick/Bricklet can clarify that something went wrong.
    For a setter this is of course only possible if the R option is set.
+   Possible error codes are:
+
+  * 0 = OK
+  * 1 = BAD_PARAMETERS (index out of range or similar)
+  * 2 = FUNCTION_NOT_SUPPORTED
+  * Value 3 is not used yet.
+
  * **Future use (7 bit)**: Seven possible flags for future use.
 
 * **Payload (0-512 bit)**: The data of the function call (as in the old
