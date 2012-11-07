@@ -241,11 +241,14 @@ In new protocol, the enumerate callback will have the following parameters:
 
 * **uint8 enumeration_type**: Type of enumeration:
 
- * *AVAILABLE* (0): If device is available (enumeration triggered by user).
+ * *AVAILABLE* (0): Device is available (enumeration triggered by user).
 
- * *ADDED* (1): If device is newly added (automatically send by Brick after startup).
+ * *CONNECTED* (1): Device is newly connected (automatically send by Brick
+   after establishing a communication connection). This indicates that the
+   device has potentially lost its previous configuration and needs to be
+   reconfigured.
 
- * *REMOVED* (2): If device is removed (only possible for USB connection).
+ * *DISCONNECTED* (2): Device is disconnected (only possible for USB connection).
 
 
 Bricklets
@@ -345,16 +348,26 @@ device objects is obsolete and will be removed.
 Connection Handling
 ^^^^^^^^^^^^^^^^^^^
 
-Bricks now send the enumeration-added callback on their own after startup.
-This means there is a race condition were the enumeration-added callback
-can be received by the IP Connection before the enumeration callback function was
-registered. To resolve this the IP Connection constructor won't open the socket
+Bricks now send an enumerate callback (with enumeration_type set to *CONNECTED*)
+spontaneously after they establish a communication connection, such as:
+
+* a USB connection to the Brick Daemon
+* a TCP/IP connection over a WIFI or Ethernet Extension to an IP Connection
+* a RS485 connection to the RS485 master
+* a Chibi connection to the Chibi master
+
+This means there is a race condition were the enumerate callback can be received
+by the IP Connection before the enumerate callback function got registered.
+This is especially the case with the WIFI and Ethernet Extension.
+To resolve this the IP Connection constructor won't open the socket
 anymore but there will be a new ``connect`` function to create the connection.
 In correspondence there will also be a ``disconnect`` and an ``is_connected``
 function::
 
-  func enumerate_callback(...) {
-      ...
+  func enumerate_callback(..., enumeration_type) {
+      if(enumeration_type == CONNECTED) {
+          configure_device();
+      }
   }
 
   func main() {
@@ -364,6 +377,12 @@ function::
       ...
       ipcon.disconnect()
   }
+
+This allows to rely on the enumerate callback (with enumeration_type set to
+*CONNECTED*) to detect devices that are newly connected and need to be configured.
+For example, configuring the PWM setup of a Servo Brick. Because the *CONNECTED*
+enumerate callback is sent when a communication connection is establish it can
+be used to detect when a Brick got restarted and needs to be reconfigured.
 
 Since the WIFI Extension the the IP Connection tried to automatically restore
 the connection when it was lost. This behavior was internal to the IP Connection,
