@@ -172,7 +172,7 @@ TF Protocol 2.0
 A robust program written for the new protocol can look as follows
 (pseudo code)::
 
- func enumerate_callback {
+ func enumerate_callback(...) {
      configure_brick();
      configure_bricklet();
  }
@@ -330,6 +330,42 @@ done via ``addDevice`` before.
 
 With the existence of ``getIdentity`` the old ``getVersion`` function of the
 device objects is obsolete and will be removed.
+
+
+Connection Handling
+^^^^^^^^^^^^^^^^^^^
+
+Bricks now send the enumeration-added callback on their own after startup.
+This means there is a race condition were the enumeration-added callback
+can be received by the IP Connection before the enumeration callback function was
+registered. To resolve this the IP Connection constructor won't open the socket
+anymore but there will be a new ``connect`` function to create the connection.
+In correspondence there will also be a ``disconnect`` and an ``is_connected``
+function::
+
+  func enumerate_callback(...) {
+      ...
+  }
+
+  func main() {
+      ipcon = IPConnection("localhost", 4223)
+      ipcon.register_callback(CALLBACK_ENUMERATE, enumerate_callback)
+      ipcon.connect()
+      ...
+      ipcon.disconnect()
+  }
+
+Since the WIFI Extension the the IP Connection tried to automatically restore
+the connection when it was lost. This behavior was internal to the IP Connection,
+the user had no influence on it.
+
+The new IP Connection will get connected and disconnected callbacks, to
+allow the user to react on this events. There will also be an auto-reconnect
+option that tells the IP Connection to behave as before and try to reconnect
+automatically when the connection is lost. This option doesn't affect the
+connected and disconnected callbacks and will be enabled by default. If it is
+disabled then it is up to the user to try to reconnect by calling ``connect``
+from the disconnected callback function, for example.
 
 
 Internal Communication
