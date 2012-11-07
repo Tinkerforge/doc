@@ -180,9 +180,12 @@ We provide the voltage/distance mappings for the following sensors:
    :header: "Type", "Range", "Mapping File"
    :widths: 15, 25, 10
 
-   "GP2Y0A41 and GP2D120", "4cm - 30cm (1.57"" - 11.81"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
-   "GP2Y0A21", "10cm - 80cm (3.94"" - 31.50"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
+   "GP2D120*", "4cm - 30cm (1.57"" - 11.81"")",   "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
+   "GP2Y0A41", "4cm - 30cm (1.57"" - 11.81"")",   "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A41.txt>`__"
+   "GP2Y0A21", "10cm - 80cm (3.94"" - 31.50"")",  "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
    "GP2Y0A02", "20cm - 150cm (7.87"" - 59.06"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A02.txt>`__"
+
+\* is no longer sold, replaced by GP2Y0A41
 
 You can write your own voltage/distance mapping for a sensor we
 currently do not offer. Or you can modify an existing mapping file to achieve

@@ -183,9 +183,12 @@ Sensoren:
    :header: "Typ", "Bereich", "Abbildungsdatei"
    :widths: 15, 25, 10
 
-   "GP2Y0A41 und GP2D120", "4cm - 30cm (1,57"" - 11,81"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
-   "GP2Y0A21", "10cm - 80cm (3,94"" - 31,50"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
+   "GP2D120*", "4cm - 30cm (1,57"" - 11,81"")",   "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
+   "GP2Y0A41", "4cm - 30cm (1,57"" - 11,81"")",   "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A41.txt>`__"
+   "GP2Y0A21", "10cm - 80cm (3,94"" - 31,50"")",  "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
    "GP2Y0A02", "20cm - 150cm (7,87"" - 59,06"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A02.txt>`__"
+
+\* wird nicht mehr verkauft, durch GP2Y0A41 ersetzt
 
 Es können eigenen Spannung/Distanz Abbildungen erstellen werden um Sensoren zu
 verwenden die im Moment noch nicht offiziell unterstützt werden. Es können auch
