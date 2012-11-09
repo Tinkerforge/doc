@@ -121,9 +121,14 @@ TF Protocol 2.0 packages are constructed as follows:
   out the possibility that there will be a Brick in the future that has
   a processor that is capable of real multitasking.
 
+  The sequence number for callback packets is always 0 and this value is not
+  allowed for other packets. Non-callback packets can only use 1 - 15 as
+  sequence number. This allows to distinguish callback packets from other
+  packets.
+
 * **Options (4 bit)**:
 
- * **R [Return Expected] (1 bit)**: This bit is set to 1, if the packet should
+ * **R [Response Expected] (1 bit)**: This bit is set to 1, if the packet should
    be answered. This has two advantages: First, the routing table can be
    constructed more efficiently, since it is known if there is an answer to a
    packet or not.
@@ -158,7 +163,7 @@ TF Protocol 2.0 packages are constructed as follows:
   * 2 = FUNCTION_NOT_SUPPORTED
   * Value 3 is not used yet.
 
- * **Future use (7 bit)**: Seven possible flags for future use.
+ * **Future use (6 bit)**: Seven possible flags for future use.
 
 * **Payload (0-512 bit)**: The data of the function call (as in the old
   protocol).
