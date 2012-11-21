@@ -61,10 +61,8 @@ Brick drivers manually (see section below). Press "OK"
 and reboot your PC.
 
 
-
-
-Windows Driver Installation
-"""""""""""""""""""""""""""
+Driver Installation (Windows XP, Vista, 7)
+""""""""""""""""""""""""""""""""""""""""""
 
 Depending on your Windows version it is necessary
 to install a Brick driver. This driver needs to be installed for each of your
@@ -119,6 +117,32 @@ You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
  the Windows "Device Manager" that the drivers for the connected Bricks are
  installed correctly. If not, please choose the ``drivers`` folder in Brick
  Daemon installation and install the drivers manually.
+
+
+Driver Installation (Windows 8)
+"""""""""""""""""""""""""""""""
+
+Windows 8 requires signed drivers. The driver that is currently shipped with
+the Brick Daemon installer is not signed.
+
+The libusb developers provide a tool that can install a signed driver on
+Windows 8: Zadig.
+
+Download `Zadig <http://download.tinkerforge.com/_stuff/zadig_v2.0.1.159.exe>`__
+and start it.
+
+.. image:: /Images/Screenshots/zadig_small.jpg
+   :scale: 100 %
+   :alt: Zadig driver installer
+   :align: center
+   :target: ../_images/Screenshots/zadig.jpg
+
+When you connect a Brick it should show up in Zadig. Choose the WinUSB driver
+and click the "Install Driver" button. Now the driver is installed and should
+work for all Bricks.
+
+More details on Zadig can be found on the `Zadig homepage
+<https://github.com/pbatard/libwdi/wiki/Zadig>`__.
 
 
 Linux
