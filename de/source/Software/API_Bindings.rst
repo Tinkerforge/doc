@@ -764,6 +764,11 @@ in einen Ordner kopiert werden::
   -> tinkerforge/
   -> example_configuration.rb
 
+Damit Ruby das ``tinkerforge`` findet muss es per ``-I.`` Option angewiesen
+werden im aktuelle Ordner danach zu schauen::
+
+ ruby -I. example_configuration.rb
+
 Falls nur einige ausgewählte Bricks oder Bricklets verwendet werden sollen und
 keine unnötigen Dateien im Projekt auftauchen sollen, dann können auch nur die
 wirklich benötigten Dateien in einen Ordner kopiert werden. Das Stepper Brick
