@@ -10,13 +10,13 @@ Master Brick
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricks/brick_master_tilted_front_350.jpg",
-	               "Bricks/brick_master_tilted_front_600.jpg",
+	    tfdocstart("Bricks/brick_master20_tilted_front_350.jpg",
+	               "Bricks/brick_master20_tilted_front_600.jpg",
 	               "Master Brick")
 	}}
 	{{
-	    tfdocimg("Bricks/brick_master_tilted_back_100.jpg",
-	             "Bricks/brick_master_tilted_back_600.jpg",
+	    tfdocimg("Bricks/brick_master20_tilted_back_100.jpg",
+	             "Bricks/brick_master20_tilted_back_600.jpg",
 	             "Master Brick")
 	}}
 	{{
@@ -35,13 +35,13 @@ Master Brick
 	             "Master Brick mit Beschriftung")
 	}}
 	{{
-	    tfdocimg("Bricks/brick_master_top_100.jpg",
-	             "Bricks/brick_master_top_600.jpg",
+	    tfdocimg("Bricks/brick_master20_top_100.jpg",
+	             "Bricks/brick_master20_top_600.jpg",
 	             "Master Brick Oberseite")
 	}}
 	{{
-	    tfdocimg("Bricks/brick_master_bottom_100.jpg",
-	             "Bricks/brick_master_bottom_600.jpg",
+	    tfdocimg("Bricks/brick_master20_bottom_100.jpg",
+	             "Bricks/brick_master20_bottom_600.jpg",
 	             "Master Brick Unterseite")
 	}}
 	{{
