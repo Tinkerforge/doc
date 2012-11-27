@@ -30,6 +30,7 @@ Termine haben.
    "",     "39", "Barometer Bricklet", "`fertig <http://de.blog.tinkerforge.com/2012/9/28/barometer-bricklet-verfuegbar-und-mehr-made-in-germany>`__"
    "",     "41", "Support für Benutzung von zwei Master Extensions zur gleichen Zeit", "`fertig <http://www.tinkerunity.org/forum/index.php/topic,673.msg6313.html#msg6313>`__"
    "",     "45", "Vorstellung von Tinkerforge Industrial Bricklets", "`fertig <http://de.blog.tinkerforge.com/2012/11/5/einfuehrung-von-industrial-bricklets>`__, im Shop: KW 48"
+   "",     "48", "Master Brick 2.0 und geschirmte Bricklet Kabel", "`fertig <http://de.blog.tinkerforge.com/2012/11/27/master-brick-2-0-und-geschirmte-bricklet-kabel>`__"
    "",     "49", "Neues Current/Voltage Bricklet", "Prototyp getestet, Leiterplatten bestellt"
    "",     "49", "GPS Bricklet", "Prototyp getestet, Leiterplatten bestellt"
    "2013", "03", "PTC Bricklet", "Prototyp existiert"
