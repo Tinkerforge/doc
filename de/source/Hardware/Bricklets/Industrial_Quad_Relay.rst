@@ -25,9 +25,9 @@ Industrial Quad Relay Bricklet
 	             "Industrial Quad Relay Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_quad_relay_master_100.jpg",
-	             "Bricklets/bricklet_industrial_quad_relay_master_600.jpg",
-	             "Industrial Quad Relay Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_industrial_quad_relay_setup_100.jpg",
+	             "Bricklets/bricklet_industrial_quad_relay_setup_600.jpg",
+	             "Industrial Quad Relay Bricklet Setup")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_industrial_quad_relay_brickv_100.jpg",
@@ -114,11 +114,11 @@ Erster Test
 Für einen einfachen Test werden wir eine Batterie und eine LED anschließen (siehe nachfolgendes Bild).
 
 
-.. image:: /Images/Bricklets/bricklet_industrial_quad_relay_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_quad_relay_setup_600.jpg
    :scale: 100 %
-   :alt: Industrial Quad Relay Bricklet verbunden mit Master Brick
+   :alt: Industrial Quad Relay Bricklet Setup
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_setup_1200.jpg
 
 |test_tab|
 
