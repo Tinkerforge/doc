@@ -48,6 +48,7 @@ Features
 * 4 digitale Ausgänge
 * Ausgangsspannung bis zu 36V
 * Galvanisch getrennt
+* Gruppierbar
 
 
 Beschreibung
@@ -64,6 +65,12 @@ gewährleistet wird.
 Typische Anwendungen lassen sich in der Steuerung von industriellen Produkten,
 wie z.B. SPS oder Frequenzumrichter, finden. Darüberhinaus ist eine Nutzung in Bereichen, 
 bei denen verschiedene Massepotentiale nicht verbunden werden dürfen sinnvoll.
+
+Wenn mehr als vier Ausgänge benötigt werden kann ein weiteres Industrial Digital Out 4
+Bricklet mit angeschlossen und gruppiert werden. Anschließend ist es möglich
+8 Ausgänge simultan zu schreiben anstatt zwei mal 4 Ausgänge hintereinander zu schreiben.
+Die Gruppierung kann nur pro Brick erfolgen, so dass an einem Master Brick
+maximal 4, an anderen Bricks 2 Industrial Bricklets gruppiert werden können.
 
 
 Technical Spezifikation

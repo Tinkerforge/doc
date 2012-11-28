@@ -48,6 +48,7 @@ Features
 * 4 Channel Solid State Relay
 * Switch up to 30V with 1.2A
 * Galvanically isolated
+* Groupable
 
 
 Description
@@ -62,6 +63,13 @@ such that ground loops can be prevented and an additional degree of safety is ad
 
 Typical applications are the interfacing of industrial control, such as PLC's or frequency converters,
 or the usage in environments were electrical ground levels can not be connected.
+
+If you need more then four relays, you can add another Industrial Quad Relay
+Bricklet and group these together. If you do this, you have eight relays which can
+set simultaneously in contrast to set both bricklets successively.
+Grouping is only possible for Bricklets connected to one Brick.
+Thus you can group up to four Industrial Bricklets on a Master Brick or
+two on other Bricks.
 
 Technical Specifications
 ------------------------

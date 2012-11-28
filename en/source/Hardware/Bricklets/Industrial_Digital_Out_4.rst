@@ -48,6 +48,7 @@ Features
 * 4 channel digital output
 * Output voltages up to 36V
 * Galvanically isolated
+* Groupable
 
 
 Description
@@ -62,6 +63,13 @@ such that ground loops can be prevented and an additional degree of safety is ad
 
 Typical applications are the interfacing of industrial controllers, such as PLC's or frequency converters,
 or the usage in environments were electrical ground levels can not be connected.
+
+If you need more then four outputs, you can add another Industrial Digital Out 4
+Bricklet and group these together. If you do this, you have eight outputs which can
+set simultaneously in contrast to set both bricklets successively.
+Grouping is only possible for Bricklets connected to one Brick.
+Thus you can group up to four Industrial Bricklets on a Master Brick or
+two on other Bricks.
 
 Technical Specifications
 ------------------------

@@ -48,6 +48,7 @@ Features
 * 4 digitale Eingänge 
 * Eingangsspannung bis zu 36V
 * Galvanisch getrennt
+* Gruppierbar
 
 
 Beschreibung
@@ -63,6 +64,12 @@ gewährleistet wird.
 Typische Anwendungen lassen sich in der Steuerung von industriellen Produkten,
 wie z.B. SPS oder Frequenzumrichter, finden. Darüberhinaus ist eine Nutzung in Bereichen, 
 bei denen verschiedene Massepotentiale nicht verbunden werden dürfen sinnvoll.
+
+Wenn mehr als vier Eingänge benötigt werden kann ein weiteres Industrial Digital In 4
+Bricklet mit angeschlossen und gruppiert werden. Anschließend ist es möglich
+8 Eingänge simultan zu lesen anstatt zwei mal 4 Eingänge hintereinander zu lesen.
+Die Gruppierung kann nur pro Brick erfolgen, so dass an einem Master Brick
+maximal 4, an anderen Bricks 2 Industrial Bricklets gruppiert werden können.
 
 
 Technische Spezifikation
