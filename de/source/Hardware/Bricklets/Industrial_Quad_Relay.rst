@@ -103,11 +103,11 @@ Anschlussmöglichkeit
 Das Industrial Quad Relay Bricklet besitzt eine 8 Pol Anschlussklemme.
 Das nachfolgende Bild erklärt die Pinbelegung:
 
-.. image:: /Images/Bricklets/bricklet_industrial_quad_relay_vertical_350.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_quad_relay_caption_600.jpg
    :scale: 100 %
    :alt: Industrial Quad Relay 4 Pinbelegung
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_vertical_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_caption_1200.jpg
 
 
 .. _industrial_quad_relay_bricklet_test:

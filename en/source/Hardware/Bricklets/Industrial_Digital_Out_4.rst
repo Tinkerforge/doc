@@ -103,11 +103,11 @@ The Industrial Digital Out 4 Bricklet has an 8 pole terminal.
 Please see the picture below for the pinout.
 
 
-.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_vertical_350.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
    :scale: 100 %
    :alt: Industrial Digital Out 4 Pinout
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_vertical_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_caption_1200.jpg
 
 
 .. _industrial_digital_out_4_bricklet_test:

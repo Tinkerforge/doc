@@ -52,7 +52,7 @@ Features
 
 
 Beschreibung
------------
+------------
 
 
 Das Industrial Digital Out 4 :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
@@ -105,11 +105,11 @@ Das Industrial Digital Out 4 Bricklet besitzt eine 8 Pol Anschlussklemme.
 Das folgende Bild stellt die Anschlussmöglichkeiten dar:
 
 
-.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_vertical_350.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
    :scale: 100 %
    :alt: Industrial Digital Out 4 Steckerbelegung
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_vertical_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_caption_1200.jpg
 
 
 .. _industrial_digital_out_4_bricklet_test:

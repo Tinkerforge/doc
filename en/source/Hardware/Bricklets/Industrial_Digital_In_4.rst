@@ -111,11 +111,11 @@ optocoupler.
 
 To use one input connect it as depicted below:
 
-.. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_vertical_350.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_caption_600.jpg
    :scale: 100 %
    :alt: Industrial Digital In 4 Terminals
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_vertical_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_caption_1200.jpg
 
 
 .. _industrial_digital_in_4_bricklet_test:
