@@ -55,7 +55,7 @@ Description
 
 The Industrial Quad Relay :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend :ref:`Bricks <product_overview_bricks>` by four galvanically isolated solid state relays.
-Each channel can switch up to currents up to 1.2 `Ampere <http://en.wikipedia.org/wiki/Ampere>`__
+Each channel can switch currents of up to 1.2 `Ampere <http://en.wikipedia.org/wiki/Ampere>`__
 with 30 `Volt <http://en.wikipedia.org/wiki/Volt>`__. 
 Output isolation permits the usage without a direct electric connection, 
 such that ground loops can be prevented and an additional degree of safety is added.
@@ -92,7 +92,7 @@ Resources
 Connectivity
 ------------
 
-The Industrial Quad Relay Bricklet has an 8pole terminal.
+The Industrial Quad Relay Bricklet has an 8 pole terminal.
 Please see the picture below for the pinout.
 
 

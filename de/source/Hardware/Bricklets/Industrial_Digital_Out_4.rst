@@ -25,9 +25,9 @@ Industrial Digital Out 4 Bricklet
 	             "Industrial Digital Out 4 Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_digital_out_4_master_100.jpg",
-	             "Bricklets/bricklet_industrial_digital_out_4_master_600.jpg",
-	             "Industrial Digital Out 4 Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_industrial_digital_out_4_setup_100.jpg",
+	             "Bricklets/bricklet_industrial_digital_out_4_setup_600.jpg",
+	             "Industrial Digital Out 4 Bricklet Setup")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_industrial_digital_out_4_brickv_100.jpg",
@@ -55,8 +55,8 @@ Beschreibung
 
 
 Das Industrial Digital Out 4 :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
-um :ref:`Bricks <product_overview_bricks>` um vier digitale Ausgänge zu erweitern.
-Die Ausgangsspannung kann bis zu 36 `Volt <http://de.wikipedia.org/wiki/Volt>`__ hoch sein. 
+um :ref:`Bricks <product_overview_bricks>` mit vier digitalen Ausgänge zu erweitern.
+Die Ausgangsspannung kann bis zu 36 `Volt <http://de.wikipedia.org/wiki/Volt>`__ betragen. 
 Die galvanische Trennung der Ausgänge erlaubt eine Benutzung ohne direkte elektrische
 Verbindung, so dass Masseschleifen vermieden werden können und eine zusätzliche Sicherheit
 gewährleistet wird.
@@ -117,11 +117,11 @@ Verbinde zusätzlich eine Spannungsquelle mit dem Bricklet um es zu Versorgen
 und eine Last. Für diesen Test schließen wir eine Batterie und eine LED an
 (siehe nachfolgendes Bild).
 
-.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_setup_600.jpg
    :scale: 100 %
-   :alt: Industrial Digital Out 4 Bricklet verbunden mit Master Brick
+   :alt: Industrial Digital Out 4 Bricklet Setup
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_setup_1200.jpg
 
 |test_tab|
 

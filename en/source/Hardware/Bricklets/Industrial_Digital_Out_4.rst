@@ -25,9 +25,9 @@ Industrial Digital Out 4 Bricklet
 	             "Industrial Digital Out 4 Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_digital_out_4_master_100.jpg",
-	             "Bricklets/bricklet_industrial_digital_out_4_master_600.jpg",
-	             "Industrial Digital Out 4 Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_industrial_digital_out_4_setup_100.jpg",
+	             "Bricklets/bricklet_industrial_digital_out_4_setup_600.jpg",
+	             "Industrial Digital Out 4 Bricklet setup")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_industrial_digital_out_4_brickv_100.jpg",
@@ -55,12 +55,12 @@ Description
 
 The Industrial Digital Out 4 :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend :ref:`Bricks <product_overview_bricks>` by four galvanically isolated digital outputs.
-The outputs have to be supplied externally with a voltage up to
+The outputs have to be supplied externally with a voltage of up to
 36 `Volt <http://en.wikipedia.org/wiki/Volt>`__. 
 Output isolation permits the usage without a direct electric connection, 
 such that ground loops can be prevented and an additional degree of safety is added.
 
-Typical applications are the interfacing of industrial control, such as PLC's or frequency converters,
+Typical applications are the interfacing of industrial controllers, such as PLC's or frequency converters,
 or the usage in environments were electrical ground levels can not be connected.
 
 Technical Specifications
@@ -72,7 +72,7 @@ Property                          Value
 External Voltage Supply           Up to 36V
 Output Type                       Four operational amplifier outputs
 Output Current                    max. 25mA
-Isolation                         5000Vrms (optocoppler value)
+Isolation                         5000Vrms (optocoupler value)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 14mm (1,57 x 1,57 x 0,55")
@@ -91,7 +91,7 @@ Resources
 Connectivity
 ------------
 
-The Industrial Digital Out 4 Bricklet has an 8pole terminal.
+The Industrial Digital Out 4 Bricklet has an 8 pole terminal.
 Please see the picture below for the pinout.
 
 
@@ -115,11 +115,11 @@ you want to switch. For testing purposes we have connected a battery
 and a LED (see picture below).
 
 
-.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_setup_600.jpg
    :scale: 100 %
-   :alt: Industrial Digital Out 4 Bricklet connected to Master Brick
+   :alt: Industrial Digital Out 4 Bricklet setup
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_setup_1200.jpg
 
 |test_tab|
 

@@ -25,9 +25,9 @@ Industrial Digital In 4 Bricklet
 	             "Industrial Digital In 4 Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_master_100.jpg",
-	             "Bricklets/bricklet_industrial_digital_in_4_master_600.jpg",
-	             "Industrial Digital In 4 Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_setup_100.jpg",
+	             "Bricklets/bricklet_industrial_digital_in_4_setup_600.jpg",
+	             "Industrial Digital In 4 Bricklet Setup")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_brickv_100.jpg",
@@ -54,8 +54,8 @@ Beschreibung
 ------------
 
 Das Industrial Digital In 4 :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
-um :ref:`Bricks <product_overview_bricks>` um vier digitale Eingänge zu erweitern.
-Die Eingangsspannung kann bis zu 36 `Volt <http://de.wikipedia.org/wiki/Volt>`__ hoch sein. 
+um :ref:`Bricks <product_overview_bricks>` mit vier digitale Eingängen zu erweitern.
+Die Eingangsspannung kann bis zu 36 `Volt <http://de.wikipedia.org/wiki/Volt>`__ betragen. 
 Die galvanische Trennung der Eingänge erlaubt eine Benutzung ohne direkte elektrische
 Verbindung, so dass Masseschleifen vermieden werden können und eine zusätzliche Sicherheit
 gewährleistet wird.
@@ -71,8 +71,8 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Eingangstyp                       Vier Optokoppler Eingänge (4.7k Ohm Vorwiderstand enthalten)
-Eingangsstrom                     Hängt von der Eingangsspannugn ab: ca. 1mA/5V, ca. 5m/24V
+Eingangstyp                       Vier optogekoppelte Eingänge (4.7k Ohm Vorwiderstand enthalten)
+Eingangsstrom                     Hängt von der Eingangsspannung ab: ca. 1mA/5V, ca. 5m/24V
 Max. Eingangsspannung             36V
 Low Level Spannung                0-2V
 High Level Spannung               3-36V
@@ -118,11 +118,11 @@ Erster Test
 Verbinde zusätzlich eine Spannungsquelle mit einem der Bricklet Eingänge
 Wir haben eine Batterie für diesen Test genommen (siehe Bild unten).
 
-.. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_setup_600.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Bricklet verbunden mit Master Brick
+   :alt: Industrial Digital In 4 Bricklet Setup
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_setup_1200.jpg
 
 |test_tab|
 

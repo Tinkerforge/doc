@@ -25,9 +25,9 @@ Industrial Digital In 4 Bricklet
 	             "Industrial Digital In 4 Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_master_100.jpg",
-	             "Bricklets/bricklet_industrial_digital_in_4_master_600.jpg",
-	             "Industrial Digital In 4 Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_setup_100.jpg",
+	             "Bricklets/bricklet_industrial_digital_in_4_setup_600.jpg",
+	             "Industrial Digital In 4 Bricklet setup")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_brickv_100.jpg",
@@ -53,14 +53,18 @@ Features
 Description
 -----------
 
-The Industrial Digital In 4 :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend :ref:`Bricks <product_overview_bricks>` by four galvanically isolated digital inputs.
-The input voltage can be up to 36 `volts <http://en.wikipedia.org/wiki/Volt>`__ high. 
-Input isolation permits the usage without a direct electric connection, 
-such that ground loops can be prevented and an additional degree of safety is added.
+The Industrial Digital In 4 :ref:`Bricklet <product_overview_bricklets>` can 
+be used to extend :ref:`Bricks <product_overview_bricks>` by four galvanically 
+isolated digital inputs. The input voltage can be up to 36 
+`volts <http://en.wikipedia.org/wiki/Volt>`__. 
 
-Typical applications are the interfacing of industrial control, such as PLC's or frequency converters,
-or the usage in environments were electrical ground levels can not be connected.
+Input isolation permits the usage without a direct electrical connection, 
+such that ground loops can be prevented and an additional degree of safety is 
+added.
+
+Typical applications are the interfacing of industrial controllers, such as 
+PLC's or frequency converters, or the usage in environments were electrical 
+ground levels can not be connected.
 
 Technical Specifications
 ------------------------
@@ -68,12 +72,12 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Input Type                        Four optocoppler inputs (including 4.7k Ohm series resistor)
+Input Type                        Four optocoupled inputs (including 4.7k Ohm series resistor)
 Input Current                     Depends on input voltage, ca. 1mA/5V, ca. 5m/24V
 Max. Input Voltage                36V
 Low Level Voltage                 0-2V
 High Level Voltage                3-36V
-Isolation                         5000Vrms (optocoppler value)
+Isolation                         5000Vrms (optocoupler value)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 11mm (1,57 x 1,57 x 0,43")
@@ -92,8 +96,10 @@ Resources
 Connectivity
 ------------
 
-The Industrial Digital In 4 Bricklet has an 8pole terminal. With it you can access
-the four inputs. Each input is connected to one LED inside the optocoppler.
+The Industrial Digital In 4 Bricklet has an 8 pole terminal. With it you can 
+access the four inputs. Each input is connected to one LED inside the 
+optocoupler.
+
 To use one input connect it as depicted below:
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_vertical_350.jpg
@@ -111,15 +117,15 @@ Test your Industrial Digital In 4 Bricklet
 |test_intro|
 
 |test_connect|.
-Additionally connect a voltage source to one of the Bricklets inputs.
+Additionally connect a voltage source to one of the Bricklet inputs.
 For testing purposes we have connected a battery
 (see picture below).
 
-.. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_setup_600.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Bricklet connected to Master Brick
+   :alt: Industrial Digital In 4 Bricklet setup
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_setup_1200.jpg
 
 |test_tab|
 
