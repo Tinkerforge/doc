@@ -83,16 +83,16 @@ bricklet_descriptions = {
     'de': 'Misst relative Luftfeuchtigkeit'
     },
 'industrial_digital_in_4': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': '4 galvanically isolated digital inputs',
+    'de': '4 galvanisch getrennte digitale Eingänge'
     },
 'industrial_digital_out_4': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': '4 galvanically isolated digital outputs',
+    'de': '4 galvanisch getrennte digitale Ausgänge'
     },
 'industrial_quad_relay': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': '4 galvanically isolated solid state relays',
+    'de': '4 galvanisch getrennte Solid State Relais'
     },
 'io16': {
     'en': '16-channel digital input/output',
@@ -398,9 +398,9 @@ def fill_dicts():
                  ('Dual Relay',                 'dual_relay',                 bindings, bricklet_descriptions['dual_relay'][lang]),
                  #('GPS',                        'gps',                        bindings, bricklet_descriptions['gps'][lang]),
                  ('Humidity',                   'humidity',                   bindings, bricklet_descriptions['humidity'][lang]),
-                 #('Industrial Digital In 4',    'industrial_digital_in_4',    bindings, bricklet_descriptions['industrial_digital_in_4'][lang]),
-                 #('Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, bricklet_descriptions['industrial_digital_out_4'][lang]),
-                 #('Industrial Quad Relay',      'industrial_quad_relay',      bindings, bricklet_descriptions['industrial_quad_relay'][lang]),
+                 ('Industrial Digital In 4',    'industrial_digital_in_4',    bindings, bricklet_descriptions['industrial_digital_in_4'][lang]),
+                 ('Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, bricklet_descriptions['industrial_digital_out_4'][lang]),
+                 ('Industrial Quad Relay',      'industrial_quad_relay',      bindings, bricklet_descriptions['industrial_quad_relay'][lang]),
                  ('IO-16',                      'io16',                       bindings, bricklet_descriptions['io16'][lang]),
                  ('IO-4',                       'io4',                        bindings, bricklet_descriptions['io4'][lang]),
                  ('Joystick',                   'joystick',                   bindings, bricklet_descriptions['joystick'][lang]),
@@ -594,18 +594,18 @@ def make_download_firmwares_table():
             versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricks/{0}/'.format(brick[1]), 'brick_' + brick[1])
 
             if len(versions) < 1:
-                raise 'Could not find versions of the {0} Brick firmware'.format(brick[0])
-
-            brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-'), *versions[-1]))
+                print 'Could not find versions of the {0} Brick firmware'.format(brick[0])
+            else:
+                brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-'), *versions[-1]))
 
     for bricklet in bricklets:
         if len(bricklet[2]) > 0:
             versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricklets/{0}/'.format(bricklet[1]), 'bricklet_' + bricklet[1])
 
             if len(versions) < 1:
-                raise 'Could not find versions of the {0} Bricklet firmware'.format(bricklet[0])
-
-            bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1], bricklet[1].replace('_', '-'), *versions[-1]))
+                print 'Could not find versions of the {0} Bricklet firmware'.format(bricklet[0])
+            else:
+                bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1], bricklet[1].replace('_', '-'), *versions[-1]))
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows))
 
