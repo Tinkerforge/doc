@@ -46,7 +46,7 @@ Features
 --------
 
 * 4 Solid State Relais
-* Schaltet bis zu 30V mit 1.2A
+* Schaltet bis zu 30V mit 1,2A
 * Galvanisch getrennt
 * Gruppierbar
 
@@ -56,7 +56,7 @@ Beschreibung
 
 Das Industrial Quad Relay :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
 um :ref:`Bricks <product_overview_bricks>` mit vier galvanisch getrennten Solid State Relais
-zu erweitern. Jedes Relais kann bis zu 1.2 `Ampere <http://en.wikipedia.org/wiki/Ampere>`__
+zu erweitern. Jedes Relais kann bis zu 1,2 `Ampere <http://en.wikipedia.org/wiki/Ampere>`__
 mit 30 `Volt <http://en.wikipedia.org/wiki/Volt>`__ schalten. 
 Die Isolierung des Ausgangs erlaubt eine Nutzung one eine direkte elektrische Verbindung, 
 so dass Masseschleifen vermieden werden können und eine zusätzliche Sicherheit gewährleistet wird.
