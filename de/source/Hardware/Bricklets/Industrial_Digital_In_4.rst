@@ -87,7 +87,7 @@ Gewicht                           8g
 Resources
 ---------
 
-* Schaltplan (`Download <https://github.com/Tinkerforge/industrial-digital-in-4-bricklet/raw/master/hardware/analog-in-schematic.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/industrial-digital-in-4-bricklet/raw/master/hardware/industrial-digital-in-4-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial-digital-in-4_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-digital-in-4-bricklet/zipball/master>`__)
 
