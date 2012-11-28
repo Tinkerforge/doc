@@ -84,7 +84,7 @@ Isolation                         1500Vrms (datasheet value)
 Relay Type                        CPC1020N
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            40 x 40 x 11mm (1,57 x 1,57 x 0,43")
+Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
 Weight                            8g
 ================================  ============================================================
 
@@ -143,7 +143,7 @@ state with the Brick Viewer.
 |test_pi_ref|
 
 
-.. _industrial_digital_quad_relay_programming_interfaces:
+.. _industrial_quad_relay_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

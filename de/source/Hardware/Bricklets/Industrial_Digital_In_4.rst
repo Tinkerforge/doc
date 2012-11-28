@@ -91,8 +91,8 @@ Gewicht                           8g
 ================================  ============================================================
 
 
-Resources
----------
+Ressourcen
+----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-digital-in-4-bricklet/raw/master/hardware/industrial-digital-in-4-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial-digital-in-4_bricklet_dimensions.png>`__)

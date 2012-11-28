@@ -4,7 +4,7 @@
 .. _industrial_digital_out_4_bricklet:
 
 Industrial Digital Out 4 Bricklet
-================================
+=================================
 
 .. raw:: html
 
@@ -90,8 +90,8 @@ Gewicht                           10g
 ================================  ============================================================
 
 
-Resources
----------
+Ressourcen
+----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-digital-out-4-bricklet/raw/master/hardware/industrial-digital-out-4-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial-digital-out-4_bricklet_dimensions.png>`__)

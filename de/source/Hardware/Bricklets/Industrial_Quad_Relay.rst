@@ -89,8 +89,8 @@ Gewicht                           8g
 ================================  ============================================================
 
 
-Resources
----------
+Ressourcen
+----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-quad-relay-bricklet/raw/master/hardware/industrial-quad-relay-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial-quad-relay_bricklet_dimensions.png>`__)
@@ -140,7 +140,7 @@ Anschließend sollte die LED über den Brick Viewer geschalten werden können.
 |test_pi_ref|
 
 
-.. _industrial_digital_quad_relay_programming_interfaces:
+.. _industrial_quad_relay_bricklet_programming_interfaces:
 
 Programmierschnittstelle
 ------------------------
