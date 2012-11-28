@@ -434,7 +434,10 @@ def get_tool_versions(url, regex):
     versions = []
 
     for a in body.getiterator('a'):
-        url_part = a.text.replace('/', '')
+        if 'href' not in a.attrib:
+            continue
+
+        url_part = a.attrib['href'].replace('/', '')
 
         if url_part == '..':
             continue
@@ -454,7 +457,10 @@ def get_bindings_versions(url, name):
     versions = []
 
     for a in body.getiterator('a'):
-        url_part = a.text.replace('/', '')
+        if 'href' not in a.attrib:
+            continue
+
+        url_part = a.attrib['href'].replace('/', '')
 
         if url_part == '..':
             continue
@@ -474,7 +480,10 @@ def get_firmware_versions(url, prefix):
     versions = []
 
     for a in body.getiterator('a'):
-        url_part = a.text.replace('/', '')
+        if 'href' not in a.attrib:
+            continue
+
+        url_part = a.attrib['href'].replace('/', '')
 
         if url_part == '..':
             continue
