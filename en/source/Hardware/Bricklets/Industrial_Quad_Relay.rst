@@ -93,7 +93,7 @@ Resources
 ---------
 
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-quad-relay-bricklet/raw/master/hardware/industrial-quad-relay-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/industrial-quad-relay_bricklet_dimensions.png>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/industrial_quad_relay_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-quad-relay-bricklet/zipball/master>`__)
 
 
