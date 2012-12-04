@@ -94,7 +94,21 @@ auch)::
 
 Als Compiler wird GCC in der none-eabi Version für ARM benötigt. Lade diesen von
 `CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
-herunter und installiere ihn.
+herunter und installiere diese. Dabei gibt es Versionen diese Compilers, die
+keine funktionsfähige Firmware erzeugen. Daher wird empfohlen nur Versionen zu
+verwenden von denen bekannt ist, dass sie richtig funktionieren:
+
+.. csv-table::
+   :header: "Version", "Funktioniert"
+   :widths: 25, 5
+
+   "Sourcery CodeBench Lite 2011.09-69, GCC 4.6.1", "Ja"
+   "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Ja"
+   "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "Nein"
+
+Stelle sicher, dass der ``bin`` Order der CodeSourcery Installation zur PATH
+Umgebungsvariable hinzugefügt wird, ansonsten kann CMake die nötigen
+Compiler Tools nicht finden.
 
 Erzeugt das Makefile im ``software/`` Ordner (dafür wir CMake benötigt)::
 
