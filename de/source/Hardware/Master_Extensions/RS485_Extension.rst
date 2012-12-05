@@ -87,7 +87,7 @@ Gewicht                           13g
 Ressourcen
 ----------
 
-* ADM3485 Datenblatt (`Download <https://github.com/Tinkerforge/rs485-extension/blob/master/datasheets/ADM3485.pdf>`__)
+* ADM3485 Datenblatt (`Download <https://github.com/Tinkerforge/rs485-extension/raw/master/datasheets/ADM3485.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/rs485-extension/raw/master/hardware/rs485-extension-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rs485_extension_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rs485-extension>`__)
