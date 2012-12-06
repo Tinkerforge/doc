@@ -47,14 +47,14 @@ Features
 
 * 20x4 Zeichen alphanumerisches Display
 * Schaltbare blaue Hintergrundbeleuchtung
-* 3 Taster
+* 4 Taster
 
 
 Beschreibung
 ------------
 
 Das LCD 20x4 :ref:`Bricklet <product_overview_bricklets>` ist mit einem 20x4
-Zeichen Punktmatrix LCD Display, blauer Hintergrundbeleuchtung und drei Tastern
+Zeichen Punktmatrix LCD Display, blauer Hintergrundbeleuchtung und vier Tastern
 ausgestattet. Über einen :ref:`Bricks <product_overview_bricks>` der mit diesem
 Bricklet verbunden ist kann es gesteuert werden. Die API ermöglicht es Zeichen
 oder ganze Zeilen auf das LCD zu schreiben, den Status von jedem Taster
@@ -126,7 +126,7 @@ Um Text anzuzeigen muss dieser in das Textfeld eingegeben werden. Die Zeile und
 die Spalte in der der Text angezeigt werden soll kann verändert werden. Ein Klick
 auf den "Send Text" Knopf zeigt den Text auf dem LCD an. Ein weitere Klick auf
 den "Backlight On" Knopf schaltet die Hintergrundbeleuchtung ein.
-Werden die 3 Knöpfe am Bricklet gedrückt so wird dies angezeigt.
+Werden die 4 Knöpfe am Bricklet gedrückt so wird dies angezeigt.
 
 |test_pi_ref|
 

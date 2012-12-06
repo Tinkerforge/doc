@@ -47,14 +47,14 @@ Features
 
 * 20x4 character alphanumeric display
 * Switchable blue backlight
-* 3 push-buttons
+* 4 push-buttons
 
 
 Description
 -----------
 
 This LCD :ref:`Bricklet <product_overview_bricklets>` is equipped with a
-20x4 character alphanumeric display with blue backlight and three push-buttons.
+20x4 character alphanumeric display with blue backlight and four push-buttons.
 It can be controlled with :ref:`Bricks <product_overview_bricks>`.
 The API allows to write characters to the LCD, get the state of the buttons,
 switch the backlight on or off and configure events for the buttons.
@@ -123,7 +123,7 @@ depicted below.
 Input a string into the text field.
 You can choose the line and the start position at which the text is displayed.
 Press "Send Text" to display it. Press "Backlight On" to turn the backlight on.
-Play around with the three on-board buttons and look how their values change.
+Play around with the four on-board buttons and look how their values change.
 
 |test_pi_ref|
 
