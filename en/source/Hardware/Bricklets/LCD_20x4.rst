@@ -10,13 +10,13 @@ LCD 20x4 Bricklet
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_lcd_20x4_tilted_350.jpg",
-	               "Bricklets/bricklet_lcd_20x4_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_lcd12_20x4_tilted_350.jpg",
+	               "Bricklets/bricklet_lcd12_20x4_tilted_600.jpg",
 	               "LCD 20x4 Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_lcd_20x4_apart_100.jpg",
-	             "Bricklets/bricklet_lcd_20x4_apart_600.jpg",
+	    tfdocimg("Bricklets/bricklet_lcd12_20x4_top_100.jpg",
+	             "Bricklets/bricklet_lcd12_20x4_top_600.jpg",
 	             "LCD 20x4 Bricklet")
 	}}
 	{{
