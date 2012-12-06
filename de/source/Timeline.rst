@@ -32,7 +32,7 @@ Termine haben.
    "",     "45", "Vorstellung von Industrial Bricklets", "`fertig <http://de.blog.tinkerforge.com/2012/11/5/einfuehrung-von-industrial-bricklets>`__"
    "",     "48", "Master Brick 2.0 und geschirmte Bricklet Kabel", "`fertig <http://de.blog.tinkerforge.com/2012/11/27/master-brick-2-0-und-geschirmte-bricklet-kabel>`__"
    "",     "48", "Industrial Bricklets: Digital In 4, Digital Out 4, Quad Relay", "`fertig <http://de.blog.tinkerforge.com/2012/11/28/industrial-bricklets-verfuegbar>`__"
-   "",     "49", "LCD 20x4 Bricklet 1.2", "` fertig <http://de.blog.tinkerforge.com/2012/12/6/lcd-20x4-bricklet-1-2>`__"
+   "",     "49", "LCD 20x4 Bricklet 1.2", "`fertig <http://de.blog.tinkerforge.com/2012/12/6/lcd-20x4-bricklet-1-2>`__"
    "",     "50", "Neues Current/Voltage Bricklet", "Prototyp getestet, Leiterplatten bestellt"
    "",     "50", "GPS Bricklet", "Prototyp getestet, Leiterplatten bestellt"
    "2013", "03", "PTC Bricklet", "Prototyp existiert"
