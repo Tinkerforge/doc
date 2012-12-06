@@ -15,7 +15,7 @@ LCD 20x4 Bricklet
 	               "LCD 20x4 Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_lcd12_20x4_tpo_100.jpg",
+	    tfdocimg("Bricklets/bricklet_lcd12_20x4_top_100.jpg",
 	             "Bricklets/bricklet_lcd12_20x4_top_600.jpg",
 	             "LCD 20x4 Bricklet")
 	}}
