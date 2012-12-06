@@ -35,7 +35,22 @@ will also work)::
  git clone https://github.com/Tinkerforge/bricklib.git
 
 Download and install the GCC none-eabi compiler for ARM from
-`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
+`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__.
+There are versions of this compiler that do not produce working firmwares.
+It's recommended to only use compiler versions that are known to work correctly,
+see the following list:
+
+.. csv-table::
+   :header: "Version", "Works"
+   :widths: 25, 5
+
+   "Sourcery CodeBench Lite 2011.09-69, GCC 4.6.1", "Yes"
+   "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Yes"
+   "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "No"
+
+Ensure that the ``bin`` folder of the CodeSourcery installation is added to the
+``PATH`` environment variable, otherwise CMake will not be able to find the
+compiler tools.
 
 Generate the Makefile in the ``software/`` folder (you will need CMake)::
 

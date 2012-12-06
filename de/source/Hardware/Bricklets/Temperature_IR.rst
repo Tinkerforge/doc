@@ -89,7 +89,7 @@ Gewicht                              3g
 Ressourcen
 ----------
 
-* MLX90614 Datenblatt (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/blob/master/datasheets/MLX90614.pdf>`__)
+* MLX90614 Datenblatt (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/raw/master/datasheets/MLX90614.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/raw/master/hardware/temperature-ir-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/temperature_ir_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/zipball/master>`__)
