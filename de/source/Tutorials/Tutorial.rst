@@ -78,10 +78,9 @@ Dies kann mit jeder der :ref:`unterstützten <api_bindings>` Programmiersprachen
 geschrieben werden. In diesem Tutorial wird `Python <http://www.python.org>`__
 verwendet, das Python einfach zu lesen und zu verstehen ist.
 
-Die notwendigen Schritte sind ähnlich für alle Programmiersprachen.
-Diese Tutorial zusammen mit den Beispielen in der
-API Dokumentation der verschiedenen Produkte sollte es dir ermöglichen jeden
-Brick mit allen unterstützten Programmiersprachen zu verwenden.
+Dieses Tutorial sollte es dir ermöglichen, zusammen mit den Beispielen in den 
+API Dokumentationen der verschiedenen Produkte, jeden Brick mit allen 
+unterstützen Programmiersprachen zu verwenden.
 
 Im Folgenden wird angenommen, dass die Grundlagen der gewählten
 Programmiersprache bekannt und die notwendigen Entwicklungswerkzeuge
