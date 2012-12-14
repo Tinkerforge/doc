@@ -85,7 +85,7 @@ brick_test_pi_ref = {
 """,
 'de':
 """.. |test_pi_ref| replace::
- Nun kann ein eigenes Programm geschreiben werden. Der Abschnitt
+ Nun kann ein eigenes Programm geschrieben werden. Der Abschnitt
  :ref:`Programmierschnittstellen <{0}_brick_programming_interfaces>` listet die
  API des {1} Bricks und Beispiele in verschiedenen Programmiersprachen auf.
 """
