@@ -136,6 +136,14 @@ turn the potentiometer on the Bricklet with a screwdriver.
 The potentiometer is attached next to the Bricklet connector.
 
 
+Attach external Buttons
+-----------------------
+
+The LCD Bricklet is equipped with a pin header on the left side.
+To attach a switch or a button you have to connect on pin
+with one input (BTN0-BTN3) and the other with GND.
+
+
 .. _lcd_20x4_bricklet_programming_interfaces:
 
 Programming Interfaces

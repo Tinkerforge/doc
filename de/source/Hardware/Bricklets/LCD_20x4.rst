@@ -138,6 +138,16 @@ Auf dem Bricklet befindet sich neben dem Bricklet Stecker ein Potentiometer.
 Mit diesem kann der Kontrast des LCDs eingestellt werden.
 
 
+
+Externe Taster anschließen
+--------------------------
+
+Über den Pinheader auf der linken Seite können externe Schalter oder Taster
+angeschlossen werden. Normalerweise verbindet man jeweils die Eingänge
+(BTN0-BTN3) über jeweils einen Taster oder Schalter mit GND.
+
+
+
 .. _lcd_20x4_bricklet_programming_interfaces:
 
 Programmierschnittstellen
