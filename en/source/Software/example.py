@@ -6,20 +6,25 @@ PORT = 4223
 
 from tinkerforge.ip_connection import IPConnection
 
-def cb_enumerate(uid, name, stack_id, is_new):
-    if is_new:
-        print("New device:")
-    else:
-        print("Removed device:")
+# Print incoming enumeration
+def cb_enumerate(uid, connected_uid, position, hardware_version, firmware_version, device_identifier, enumeration_type):
+    print("uid:               " + uid)
+    print("enumeration_type:  " + str(enumeration_type))
+    if enumeration_type == IPConnection.ENUMERATION_TYPE_DISCONNECTED:
+        return
 
-    print(" Name:     " + name)
-    print(" UID:      " + uid)
-    print(" Stack ID: " + str(stack_id))
-    print("")
+    print("connected_uid:     " + connected_uid)
+    print("position:          " + position)
+    print("hardware_version:  " + str(hardware_version))
+    print("firmware_version:  " + str(firmware_version))
+    print("device_identifier: " + str(device_identifier))
 
 if __name__ == "__main__":
-    ipcon = IPConnection(HOST, PORT) # Create IP connection to brickd
-    ipcon.enumerate(cb_enumerate) # Enumerate Bricks and Bricklets
+    # Create connection and connect to brickd
+    ipcon = IPConnection()
+    ipcon.connect(HOST, PORT)
+
+    # Register Enumerate Callback
+    ipcon.register_callback(IPConnection.CALLBACK_ENUMERATE, cb_enumerate)
 
     raw_input('Press key to exit\n') # Use input() in Python 3
-    ipcon.destroy()

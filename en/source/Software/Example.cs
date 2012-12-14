@@ -2,36 +2,37 @@ using Tinkerforge;
 
 class Example
 {
-	private static string host = "localhost";
-	private static int port = 4223;
+	private static string HOST = "localhost";
+	private static int PORT = 4223;
 
-	static void EnumerateCB(string uid, string name, byte stackID, bool isNew)
+	// Print incoming enumeration
+	static void EnumerateCB(object sender, string UID, string connectedUID, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
 	{
-		if(isNew)
+		System.Console.WriteLine("Sender:           " + sender);
+		System.Console.WriteLine("UID:              " + UID);
+		System.Console.WriteLine("enumerationType:  " + enumerationType);
+		if(enumerationType == IPConnection.ENUMERATION_TYPE_DISCONNECTED)
 		{
-			System.Console.WriteLine("New Device:");
-		}
-		else
-		{
-			System.Console.WriteLine("Device Removed:");
+			return;
 		}
 
-		System.Console.WriteLine(" Name:     " + name);
-		System.Console.WriteLine(" UID:      " + uid);
-		System.Console.WriteLine(" Stack ID: " + stackID);
-		System.Console.WriteLine("");
+		System.Console.WriteLine("connectedUID:     " + connectedUID);
+		System.Console.WriteLine("position:         " + position);
+		System.Console.WriteLine("hardwareVersion:  " + hardwareVersion[0] + "." + hardwareVersion[1] + "." + hardwareVersion[2]);
+		System.Console.WriteLine("firmwareVersion:  " + firmwareVersion[0] + "." + firmwareVersion[1] + "." + firmwareVersion[2]);
+		System.Console.WriteLine("deviceIdentifier: " + deviceIdentifier);
 	}
 
 	static void Main() 
 	{
-		// Create IP connection to brickd
-		IPConnection ipcon = new IPConnection(host, port);
+		// Create connection and connect to brickd
+		IPConnection ipcon = new IPConnection();
+		ipcon.Connect(HOST, PORT);
 
-		// Enumerate Bricks and Bricklets
-		ipcon.Enumerate(new IPConnection.EnumerateCallback(EnumerateCB));
+		// Register Enumerate Callback
+		ipcon.EnumerateCallback += EnumerateCB;
 
 		System.Console.WriteLine("Press key to exit");
 		System.Console.ReadKey();
-		ipcon.Destroy();
-    }
+	}
 }
