@@ -36,59 +36,132 @@ API
 Grundfunktionen
 ^^^^^^^^^^^^^^^
 
-.. delphi:function:: constructor TIPConnection.Create(const host: string; const port: word)
+.. delphi:function:: constructor TIPConnection.Create()
 
- Erzeugt eine IP Connection zum Brick Daemon mit dem übergebenen *host*
- und *port*. Die IP Connection erlaubt es die bekannten Bricks und Bricklets
- aufzuzählen. Abgesehen davon wird sie benutzt um Bricks und Bricklets zur
- Kommunikation über diese Verbindung hinzuzufügen.
+ Erzeugt ein IP Connection Objekt. Das konstruierte Objekt wird für
+ den Konstruktor von Bricks und Bricklets benötigt.
 
-.. delphi:function:: procedure TIPConnection.AddDevice(const device: TDevice)
+.. delphi:function:: procedure TIPConnection.Connect(const host: string; const port: word)
 
- Fügt ein Gerät (Brick or Bricklet) der IP Connection hinzu. Jegliches Gerät
- muss zuerst einer IP Connection hinzugefügt werden bevor es benutzt werden
- kann. Beispiele dafür finden sich in der API Dokumentation jedes Bricks und
- Bricklets.
+ Erstellt eine TCP/IP Verbindung zum gegebenen Host und Port.
+ Host und Port können zu eine Brick Daemon oder der WIFI/Ethernet Extension 
+ zeigen.
 
-.. delphi:function:: procedure TIPConnection.JoinThread
+ Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
+ erfolgreich aufgebaut wurde.
 
- Wartet auf die Beendigung der Threads der IP Connection. Der Aufruf blockiert
- bis die IP Connection :delphi:func:`zerstört <TIPConnection.Destroy>` wird.
+ Blockiert bis die Verbindung aufgebaut wurde und wirf eine IOException
+ falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
+ Host und Port horchene.
 
- Dies ist dann sinnvoll, wenn ein Programm vollständig auf Callbacks basiert
- oder die IP Connection in einem anderem Thread erzeugt wurde.
+.. delphi:function:: procedure TIPConnection.Disconnect()
 
-.. delphi:function:: destructor TIPConnection.Destroy
+ Trennt die TCP/IP verbindung zum Brick Daemon oder einer WIFI/Ethernet
+ Extension.
 
- Zerstört die IP Connection. Die Verbindung zum Brick Daemon wird geschlossen
- und die Threads der IP Connection werden beendet.
+.. delphi:function:: procedure TIPConnection.GetConnectionState()
 
+ Kann die folgenden Zustände zurückgeben:
 
-Konfigurationsfunktionen für Callbacks
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ * IPCON_CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
+ * IPCON_CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
+ * IPCON_CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine Verbindung aufzubauen.
 
-.. delphi:function:: procedure TIPConnection.Enumerate(const enumerateCallback: TIPConnectionNotifyEnumerate)
+.. delphi:function:: procedure TIPConnection.SetAutoReconnect(const auto_reconnect: boolean)
 
- Diese Prozedur registriert eine Callback mit folgender Signatur:
+ Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
+ Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
+ zum vorher angegebenen Host und Port wieder herzustellen.
+
+ Standardwert ist *True*.
+
+.. delphi:function:: function TIPConnection.GetAutoReconnect(): boolean
+
+ Gibt *True* zurück wenn die Wiederverbindung aktiviert ist und *False* sonst.
+
+.. delphi:function:: procedure TIPConnection.SetTimeout(const timeout_: longword)
+
+ Setzt den Timeout (in ms) für Getter und für Setter die "response expected"
+ aktiviert haben.
+
+ Standardwert ist 2500ms.
+
+.. delphi:function:: function TIPConnection.GetTimeout(): longword
+
+ Gibt den Timeout zurück, wie er von :delphi:func:`TIPConnection.SetTimeout`
+ gesetzt wurde.
+
+.. delphi:function:: procedure TIPConnection.Enumerate()
+
+ Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ einem Enumerate Callback antworten.
+
+Callbacks
+^^^^^^^^^
+
+*Callbacks* können registriert werden um zeitkritische oder 
+wiederkehrende Daten vom Gerät zu erhalten. Die Registrierung erfolgt indem
+eine Prozedur einer Callback Property des ipcon Objektes zugewiesen wird:
 
  .. code-block:: delphi
 
-  procedure(const uid: string; const name: string; const stackID: byte; const isNew: boolean) of object;
+  procedure TExample.MyCallback(const param: word);
+  begin
+    WriteLn(param);
+  end;
 
- der die folgenden vier Parameter übergeben bekommt:
+  ipcon.OnExample := {$ifdef FPC}@{$endif}example.MyCallback;
 
- * *uid*: Die UID des Gerätes.
- * *name*: Der Name des Gerätes (beinhaltet "Brick" oder "Bricklet" und eine Versionsnummer).
- * *stackID*: Die Stapel ID des Gerätes (damit kann die Position innerhalb des Stapels ermittelt werden).
- * *isNew*: Ist *true* wenn das Gerät hinzugefügt wurde, *false* wenn es entfernt wurde.
+Die verfügbaren Callback Properties und ihre Parametertypen werden weiter
+unten beschrieben.
 
- Es gibt drei verschiedenen Situationen in denen der Callback aufgerufen wird.
- Erstens, der Callback wird für alle im Moment angeschlossenen Geräte aufgerufen
- (mit *isNew* gleich *true*). Dies wird durch den Aufruf von
- :delphi:func:`Enumerate <TIPConnection.Enumerate>` ausgelöst. Zweitens, der Callback wird auch aufgerufen
- wenn ein Brick an USB angesteckt wird (mit *isNew* gleich *true*).
- Schlussendlich wird der Callback aufgerufen wenn ein Brick von USB angesteckt
- wurde (mit *isNew* gleich *false*).
 
- Dieser Callback erlaubt es "Plug'n'Play" Funktionalität zu implementieren (wie
- es im Brick Viewer getan wurde).
+.. delphi:function:: property TIPConnection.OnEnumerate
+
+ .. code-block:: delphi
+
+  procedure(sender: TObject; const uid: string; const connectedUid: string; const position: char; const hardwareVersion: TVersionNumber; const firmwareVersion: TVersionNumber; const deviceIdentifier: word; const enumerationType: byte) of object; 
+
+ Der Callback empfängt sieben Parameter:
+
+ * *uid*: Die UID des Bricks/Bricklets.
+ * *connectedUID*: Die UID wo das Brick/Bricklet mit verbunden ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen Brick ist es die UID des untsten Master Brickss in einem Stapel. Der unterste Master Brick hat die connectedUID "1". Mit diesen Informationen sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
+ * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets: 'a' - 'd' (Position an Brick).
+ * *hardwareVersion*: Major, Minor and Release Nummer der Hardwareversion.
+ * *firmwareVersion*: Major, Minor and Release number der Firmwareversion.
+ * *deviceIdentifier*: Eine Zahl, welche den Brick/Bricklet repräsentiert.
+ * *enumerationType*: Art der Enumerierung
+
+ Mögliche Enumerierungsarten sind:
+
+ * ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom benutzer ausgelöst).
+ * ENUMERATION_TYPE_CONNECTED (1): Gerät ist neu verfügbar (automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu Konfiguriert werden muss.
+ * ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei USB-Verbindungen möglich).
+
+ Es sollte möglich sein eine "plug 'n play"-Funktionalität mit dem Enumerate Listener
+ zu implementieren (wie es im Brick Viewer geschieht)
+
+.. delphi:function:: property TIPConnection.OnEnumerate
+
+ .. code-block:: delphi
+
+  procedure(sender: TObject; const connectReason: byte) of object;
+
+ Dieser Callback wird aufgerufen wenn die IP Connection eine Verbindung aufgebaut hat,
+ mögliche Gründe sind:
+
+ * CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach anfrage vom Benutzer.
+ * CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer automatischen Wiederverbindung.
+
+.. delphi:function:: property TIPConnection.OnEnumerate
+
+ .. code-block:: delphi
+
+  procedure(sender: TObject; const disconnectReason: byte) of object;
+
+ Dieser Callback wird aufgerufen wenn die Verbindung der IP Connection getrennt wird,
+ mögliche Gründe sind:
+
+ * DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
+ * DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.
+ * DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon oder WIFI/Ethernet Extension eingeleitet.

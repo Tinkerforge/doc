@@ -36,57 +36,128 @@ API
 Basic Functions
 ^^^^^^^^^^^^^^^
 
-.. delphi:function:: constructor TIPConnection.Create(const host: string; const port: word)
+.. delphi:function:: constructor TIPConnection.Create()
 
- Creates an IP Connection to the Brick Daemon with the given *host*
- and *port*. With the IP Connection itself it is possible to enumerate the
- available devices. Other then that it is only used to add Bricks and
- Bricklets to the connection.
+ Creates an IP Connection object. The constructed object is needed for the
+ constructor of Bricks and Bricklets.
 
-.. delphi:function:: procedure TIPConnection.AddDevice(const device: TDevice)
+.. delphi:function:: procedure TIPConnection.Connect(const host: string; const port: word)
 
- Adds a device (Brick or Bricklet) to the IP Connection. Every device
- has to be added to an IP Connection before it can be used. Examples for
- this can be found in the API documentation for every Brick and Bricklet.
+ Creates a TCP/IP connection to the given host and port.
+ The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
-.. delphi:function:: procedure TIPConnection.JoinThread
+ Devices can only be controlled when the connection was established
+ succesfully.
 
- Joins the threads of the IP Connection. The call will block until the
- IP Connection is :delphi:func:`destroyed <TIPConnection.Destroy>`.
+ Blocks until the connection is established and throws an IOException 
+ if there is no Brick Daemon or WIFI/Ethernet Extension
+ listening at the given host and port.
 
- This is useful if you relies solely on callbacks for events or if
- the IP Connection was created in a threads.
+.. delphi:function:: procedure TIPConnection.Disconnect()
 
-.. delphi:function:: destructor TIPConnection.Destroy
+ Disconnects the TCP/IP connection to the Brick Daemon or to
+ the WIFI/Ethernet Extension.
 
- Destroys the IP Connection. The socket to the Brick Daemon will be closed
- and the threads of the IP Connection terminated.
+.. delphi:function:: procedure TIPConnection.GetConnectionState()
+
+ Can return the following states:
+
+ * CONNECTION_DISCONNECTED (0): No connection is established.
+ * CONNECTION_CONNETED (1): A connection to the Brickd Daemon or the WIFI/Ethernet Extension  is established.
+ * CONNECTION_PENDING (2): IP Connection is currently trying to connect.
+
+.. delphi:function:: procedure TIPConnection.SetAutoReconnect(const auto_reconnect: boolean)
+
+ Enables or disables auto reconnect. If auto reconnect is enabled,
+ the IP Connection will try to reconnect to the previously given
+ host and port.
+
+ Default value is *true*.
+
+.. delphi:function:: function TIPConnection.GetAutoReconnect(): boolean
+
+ Returns *true* if auto reconnect is enabled, *false* otherwise.
+
+.. delphi:function:: procedure TIPConnection.SetTimeout(const timeout_: longword)
+
+ Sets the timeout (in ms) for getters and for setters for which 
+ "response expected" is activated.
+
+ Default timeout is 2500ms.
+
+.. delphi:function:: function TIPConnection.GetTimeout(): longword
+
+ Returns the timeout as set by :delphi:func:`TIPConnection.SetTimeout`.
+
+.. delphi:function:: procedure TIPConnection.Enumerate()
+
+ Broadcasts an enumerate request. All devices will respond with an enumerate
+ callback.
 
 
-Callback Configuration Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Callbacks
+^^^^^^^^^
 
-.. delphi:function:: procedure TIPConnection.Enumerate(const enumerateCallback: TIPConnectionNotifyEnumerate)
+*Callbacks* can be registered to receive time critical or recurring data from
+the device. The registration is done by assigning a procedure to an callback
+property of the ipcon object:
 
- This procedure registers a callback with the signature:
- 
  .. code-block:: delphi
 
-  procedure(const uid: string; const name: string; const stackID: byte; const isNew: boolean) of object; 
+  procedure TExample.MyCallback(const param: word);
+  begin
+    WriteLn(param);
+  end;
 
- that receives four parameters:
+  ipcon.OnExample := {$ifdef FPC}@{$endif}example.MyCallback;
+
+The available callback property and their type of parameters are described below.
+
+
+.. delphi:function:: property TIPConnection.OnEnumerate
+
+ .. code-block:: delphi
+
+  procedure(sender: TObject; const uid: string; const connectedUid: string; const position: char; const hardwareVersion: TVersionNumber; const firmwareVersion: TVersionNumber; const deviceIdentifier: word; const enumerationType: byte) of object; 
+
+ The callback has seven parameters:
 
  * *uid*: The UID of the device.
- * *name*: The name of the device (includes "Brick" or "Bricklet" and a version number).
- * *stackID*: The stack ID of the device (you can find out the position in a stack with this).
- * *isNew*: Is *true* if the device is added, *false* if it is removed.
+ * *connectedUID*: UID where the device is connected to. For a Bricklet this will be a UID of the Brick where it is connected to. For a Brick it will be the UID of the bottom Master Brick in the stack. For the bottom Master Brick in a Stack this will be "1". With this information it is possible to reconstruct the complete network topology. 
+ * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets: 'a' - 'd' (position on Brick).
+ * *hardwareVersion*: Major, minor and release number for hardware version.
+ * *firmwareVersion*: Major, minor and release number for firmware version.
+ * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
+ * *enumerationType*: Type of enumeration
 
- There are three different possibilities for the callback to be called.
- Firstly, the callback is called with all currently connected devices
- (with *isNew* set to *true*). This is triggered by the call to
- :delphi:func:`Enumerate <TIPConnection.Enumerate>`. Secondly, the callback is called if
- a new Brick is plugged in via USB (with *isNew* set to *true*) and lastly it is
- called if a Brick is unplugged (with *isNew* set to *false*).
+ Possible enumerate types are:
+
+ * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
+ * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
+ * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
 
  It should be possible to implement "plug 'n play" functionality with this
  (as is done in Brick Viewer).
+
+.. delphi:function:: property TIPConnection.OnEnumerate
+
+ .. code-block:: delphi
+
+  procedure(sender: TObject; const connectReason: byte) of object;
+
+ This callback is called whenever the IP connection is connected, possible reasons are:
+
+ * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request from user.
+ * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto reconnect.
+
+.. delphi:function:: property TIPConnection.OnEnumerate
+
+ .. code-block:: delphi
+
+  procedure(sender: TObject; const disconnectReason: byte) of object;
+
+ This callback is called whenever the IP connection is disconnected, possible reasons are:
+
+ * IPCON_DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
+ * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
+ * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or WIFI/Ethernet Extension.
