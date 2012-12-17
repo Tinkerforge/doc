@@ -36,65 +36,114 @@ API
 Grundfunktionen
 ^^^^^^^^^^^^^^^
 
-.. php:function:: class IPConnection(string $host, int $port)
+.. php:function:: class IPConnection()
 
- Erzeugt eine IP Connection zum Brick Daemon mit dem übergebenen *$host*
- und *$port*. Die IP Connection erlaubt es die bekannten Bricks und Bricklets
- aufzuzählen. Abgesehen davon wird sie benutzt um Bricks und Bricklets zur
- Kommunikation über diese Verbindung hinzuzufügen.
+ Erzeugt ein IP Connection Objekt. Das konstruierte Objekt wird für
+ den Konstruktor von Bricks und Bricklets benötigt.
 
-.. php:function:: void IPConnection::addDevice(Device $device)
+.. php:function:: void IPConnection::connect(string $host, int $port)
 
- Fügt ein Gerät (Brick or Bricklet) der IP Connection hinzu. Jegliches Gerät
- muss zuerst einer IP Connection hinzugefügt werden bevor es benutzt werden
- kann. Beispiele dafür finden sich in der API Dokumentation jedes Bricks und
- Bricklets.
+ Erstellt eine TCP/IP Verbindung zum gegebenen Host und Port.
+ Host und Port können zu eine Brick Daemon oder der WIFI/Ethernet Extension 
+ zeigen.
 
-.. php:function:: void IPConnection::dispatchCallbacks(float $seconds)
+ Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
+ erfolgreich aufgebaut wurde.
 
- Liefert eingehende Callbacks für die gegebene Dauer in Sekunden aus (negative
- Werte bedeuten unendlich). Da PHP keine Threads unterstützt muss diese Methode
- periodisch aufgerufen werden, um sicherzustellen, dass eingehende Callbacks
- behandelt werden. Falls keine Callbacks benutzt werden braucht diese Methode
- nicht aufgerufen zu werden.
+ Blockiert bis die Verbindung aufgebaut wurde und wirf eine IOException
+ falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
+ Host und Port horchene.
 
- Die empfohlene Wert für *$seconds* ist 0. Dadurch werden nur die Callbacks
- ausgeliefert die noch auf Auslieferung warten. Es wird jedoch nicht auf den
- Eingang weitere Callbacks gewartet.
+.. php:function:: void IPConnection::disconnect()
 
-.. php:function:: void IPConnection::destroy()
+ Trennt die TCP/IP verbindung zum Brick Daemon oder einer WIFI/Ethernet
+ Extension.
 
- Zerstört die IP Connection. Die Verbindung zum Brick Daemon wird geschlossen.
+.. php:function:: int IPConnection::getConnectionState()
+
+ Kann die folgenden Zustände zurückgeben:
+
+ * IPCON_CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
+ * IPCON_CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
+ * IPCON_CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine Verbindung aufzubauen.
+
+.. php:function:: void IPConnection::setTimeout(int $seconds)
+
+ Setzt den Timeout (in ms) für Getter und für Setter die "response expected"
+ aktiviert haben.
+
+ Standardwert ist 2500ms.
+
+.. php:function:: int IPConnection::getTimeout()
+
+ Gibt den Timeout zurück, wie er von :php:func:`setTimeout <IPConnection::setTimeout>` gesetzt wurde.
+
+.. php:function:: void IPConnection::enumerate()
+
+ Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ einem Enumerate Callback antworten.
 
 
 Konfigurationsfunktionen für Callbacks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. php:function:: void IPConnection::enumerate(callable $callback)
+.. php:function:: void IPConnection::registerCallback(int $id, callable $callback, $userData = NULL)
 
- Diese Methode registriert eine Callback mit folgender Signatur:
+ Registriert einen Callback für eine gegebene ID.
+
+ Die verfügbaren IDs mit zugehörenden Callback-Funktionssignaturen
+ sind unten beschrieben.
+
+
+Callbacks
+^^^^^^^^^
+
+.. php:member:: int IPConnection::CALLBACK_ENUMERATE
 
  .. code-block:: php
 
-  void callback(string $uid, string $name, int $stackID, bool $isNew)
+  void callback(string $uid, string $connectedUid, char $position, array $hardwareVersion, array $firmwareVersion, int $deviceIdentifier, int $enumerationType)
 
- der die folgenden vier Parameter übergeben bekommt:
+ Der Callback empfängt sieben Parameter:
 
- * *$uid*: Die UID des Gerätes.
- * *$name*: Der Name des Gerätes (beinhaltet "Brick" oder "Bricklet" und eine Versionsnummer).
- * *$stackID*: Die Stapel ID des Gerätes (damit kann die Position innerhalb des Stapels ermittelt werden).
- * *$isNew*: Ist *true* wenn das Gerät hinzugefügt wurde, *false* wenn es entfernt wurde.
+ * *uid*: Die UID des Bricks/Bricklets.
+ * *connectedUID*: Die UID wo das Brick/Bricklet mit verbunden ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen Brick ist es die UID des untsten Master Brickss in einem Stapel. Der unterste Master Brick hat die connectedUID "1". Mit diesen Informationen sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
+ * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets: 'a' - 'd' (Position an Brick).
+ * *hardwareVersion*: Major, Minor and Release Nummer der Hardwareversion.
+ * *firmwareVersion*: Major, Minor and Release number der Firmwareversion.
+ * *deviceIdentifier*: Eine Zahl, welche den Brick/Bricklet repräsentiert.
+ * *enumerationType*: Art der Enumerierung
 
- Es gibt drei verschiedenen Situationen in denen der Callback aufgerufen wird.
- Erstens, der Callback wird für alle im Moment angeschlossenen Geräte aufgerufen
- (mit *$isNew* gleich *true*). Dies wird durch den Aufruf von
- :php:func:`enumerate <IPConnection::enumerate>` ausgelöst. Zweitens, der Callback wird auch aufgerufen
- wenn ein Brick an USB angesteckt wird (mit *$isNew* gleich *true*).
- Schlussendlich wird der Callback aufgerufen wenn ein Brick von USB angesteckt
- wurde (mit *$isNew* gleich *false*).
+ Mögliche Enumerierungsarten sind:
 
- Dieser Callback erlaubt es "Plug'n'Play" Funktionalität zu implementieren (wie
- es im Brick Viewer getan wurde).
+ * ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom benutzer ausgelöst).
+ * ENUMERATION_TYPE_CONNECTED (1): Gerät ist neu verfügbar (automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu Konfiguriert werden muss.
+ * ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei USB-Verbindungen möglich).
 
- :php:func:`dispatchCallbacks <IPConnection::dispatchCallbacks>` muss aufgerufen
- werden um Callbackaufrufe zu erhalten. Der empfohlene Wert für *$seconds* ist 2.5;
+ Es sollte möglich sein eine "plug 'n play"-Funktionalität mit dem Enumerate Listener
+ zu implementieren (wie es im Brick Viewer geschieht)
+
+.. php:member:: int IPConnection::CALLBACK_CONNECTED
+ 
+ .. code-block:: php
+
+  void callback(int $reason)
+
+ Dieser Callback wird aufgerufen wenn die IP Connection eine Verbindung aufgebaut hat,
+ mögliche Gründe sind:
+
+ * CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach anfrage vom Benutzer.
+ * CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer automatischen Wiederverbindung.
+
+.. php:member:: int IPConnection::CALLBACK_DISCONNECTED
+
+ .. code-block:: php
+
+  void callback(int $reason)
+
+ Dieser Callback wird aufgerufen wenn die Verbindung der IP Connection getrennt wird,
+ mögliche Gründe sind:
+
+ * DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
+ * DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.
+ * DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon oder WIFI/Ethernet Extension eingeleitet.

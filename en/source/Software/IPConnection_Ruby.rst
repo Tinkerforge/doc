@@ -36,56 +36,165 @@ API
 Basic Functions
 ^^^^^^^^^^^^^^^
 
-.. rb:function:: IPConnection::new(host, port) -> ipcon
+.. rb:function:: IPConnection::new() -> ipcon
+
+ Creates an IP Connection object. The constructed object is needed for the
+ constructor of Bricks and Bricklets.
+
+
+.. rb:function:: IPConnection#connect(host, port) -> nil
 
  :param host: str
  :param port: int
 
- Creates an IP Connection to the Brick Daemon with the given *host*
- and *port*. With the IP Connection itself it is possible to enumerate the
- available devices. Other then that it is only used to add Bricks and
- Bricklets to the connection.
+ Creates a TCP/IP connection to the given host and port.
+ The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
-.. rb:function:: IPConnection#add_device(device) -> nil
+ Devices can only be controlled when the connection was established
+ succesfully.
 
- :param device: Device
-
- Adds a device (Brick or Bricklet) to the IP Connection. Every device
- has to be added to an IP Connection before it can be used. Examples for
- this can be found in the API documentation for every Brick and Bricklet.
-
-.. rb:function:: IPConnection#join_thread() -> nil
-
- Joins the threads of the IP Connection. The call will block until the
- IP Connection is :rb:func:`destroyed <IPConnection#destroy>`.
-
- This is useful if you relies solely on callbacks for events or if
- the IP Connection was created in a threads.
-
-.. rb:function:: IPConnection#destroy() -> nil
-
- Destroys the IP Connection. The socket to the Brick Daemon will be closed
- and the threads of the IP Connection terminated.
+ Blocks until the connection is established and throws an IOException 
+ if there is no Brick Daemon or WIFI/Ethernet Extension
+ listening at the given host and port.
 
 
-Callback Configuration Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rb:function:: IPConnection#disconnect() -> nil
 
-.. rb:function:: IPConnection#enumerate { |uid, name, stack_id, is_new| block } -> nil
+ Disconnects the TCP/IP connection to the Brick Daemon or to
+ the WIFI/Ethernet Extension.
 
- This method registers a callback that receives four parameters:
 
- * *uid* - str: The UID of the device.
- * *name* - str: The name of the device (includes "Brick" or "Bricklet" and a version number).
- * *stack_id* - int: The stack ID of the device (you can find out the position in a stack with this).
- * *is_new* - bool: Is *true* if the device is added, *false* if it is removed.
+.. rb:function:: IPConnection#get_connection_state() -> nil
 
- There are three different possibilities for the callback to be called.
- Firstly, the callback is called with all currently connected devices
- (with *is_new* set to *true*). This is triggered by the call to
- :rb:func:`enumerate <IPConnection#enumerate>`. Secondly, the callback is called if
- a new Brick is plugged in via USB (with *is_new* set to *true*) and lastly it is
- called if a Brick is unplugged (with *is_new* set to *false*).
+ Can return the following states:
+
+ * CONNECTION_DISCONNECTED (0): No connection is established.
+ * CONNECTION_CONNETED (1): A connection to the Brickd Daemon or the WIFI/Ethernet Extension  is established.
+ * CONNECTION_PENDING (2): IP Connection is currently trying to connect.
+
+
+.. rb:function:: IPConnection#set_auto_reconnect(auto_reconnect) -> nil
+
+ :param auto_reconnect: bool
+
+ Enables or disables auto reconnect. If auto reconnect is enabled,
+ the IP Connection will try to reconnect to the previously given
+ host and port.
+
+ Default value is *True*.
+
+
+.. rb:function:: IPConnection#get_auto_reconnect() -> bool 
+
+ :rtype: bool
+
+ Returns *True* if auto reconnect is enabled, *False* otherwise.
+
+
+.. rb:function:: IPConnection#set_timeout(timeout) -> nil
+
+ :param timeout: int
+
+ Sets the timeout (in ms) for getters and for setters for which 
+ "response expected" is activated.
+
+ Default timeout is 2500ms.
+
+
+.. rb:function:: IPConnection#get_timeout() -> int
+
+ :rtype: int
+
+ Returns the timeout as set by :rb:func:`#set_timeout <IPConnection#set_timeout>`.
+
+
+.. rb:function:: IPConnection#wait() -> nil
+
+ holds the current thread until :rb:func:`#unwait <IPConnection#unwait>`
+ is called.
+
+ This is useful if you rely solely on callbacks for events, if you want to
+ wait for a specific callback or if the IP Connection was created in a threads.
+
+ Wait and unwait act in the same way as require and release of a semaphore.
+
+
+.. rb:function:: IPConnection#unwait() -> nil
+
+ Unwaits the thread previously set to hold by :rb:func:`#wait <IPConnection#wait>`
+
+ Wait and unwait act in the same way as require and release of a semaphore.
+
+
+.. rb:function:: IPConnection#enumerate() -> nil
+
+ Broadcasts an enumerate request. All devices will respond with an enumerate
+ callback.
+
+
+Callbacks
+^^^^^^^^^
+
+*Callbacks* can be registered with *callback IDs* to receive
+time critical or recurring data from the device. The registration is done
+with the *register_callback* function of
+the ipcon object. The first parameter is the callback ID and the second
+parameter is a block:
+
+.. code-block:: ruby
+
+    ipcon.register_callback IPConnection::CALLBACK_EXAMPLE, do |param|
+      puts "#{param}"
+    end
+
+The available constants with inherent number and type of parameters are
+described below.
+
+
+.. rb:attribute:: IPConnection::CALLBACK_ENUMERATE
+
+ :param uid: str
+ :param connected_uid: str
+ :param position: chr
+ :param hardware_version: [int, int, int]
+ :param firmware_version: [int, int, int]
+ :param device_identifier: int
+ :param enumeration_type: int
+
+ The callback has seven parameters:
+
+ * *uid*: The UID of the device.
+ * *connectedUID*: UID where the device is connected to. For a Bricklet this will be a UID of the Brick where it is connected to. For a Brick it will be the UID of the bottom Master Brick in the stack. For the bottom Master Brick in a Stack this will be "1". With this information it is possible to reconstruct the complete network topology. 
+ * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets: 'a' - 'd' (position on Brick).
+ * *hardwareVersion*: Major, minor and release number for hardware version.
+ * *firmwareVersion*: Major, minor and release number for firmware version.
+ * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
+ * *enumerationType*: Type of enumeration
+
+ Possible enumerate types are:
+
+ * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
+ * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
+ * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
 
  It should be possible to implement "plug 'n play" functionality with this
  (as is done in Brick Viewer).
+
+.. rb:attribute:: IPConnection::CALLBACK_CONNECTED
+
+ :param reason: int
+
+ This callback is called whenever the IP connection is connected, possible reasons are:
+
+ * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request from user.
+ * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto reconnect.
+
+.. rb:attribute:: IPConnection::CALLBACK_DISCONNECTED
+
+ :param reason: int
+
+ This callback is called whenever the IP connection is disconnected, possible reasons are:
+
+ * IPCON_DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
+ * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
+ * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or WIFI/Ethernet Extension.

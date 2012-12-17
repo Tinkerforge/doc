@@ -108,9 +108,13 @@ Grundfunktionen
  Startet einen Thread der vorher mit :java:func:`wait <IPConnection::wait>`
  angehalten wurde wieder.
 
-
  Wait und unwait agieren auf die gleiche Weise wie "require" und "release" einer 
  Semaphore.
+
+.. java:function:: public void IPConnection::enumerate()
+
+ Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ einem Enumerate Callback antworten.
 
 
 Konfiguration von Listener

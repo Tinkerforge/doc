@@ -7,23 +7,31 @@ use Tinkerforge\IPConnection;
 $host = 'localhost';
 $port = 4223;
 
-function enumerateCB($uid, $name, $stackID, $isNew)
+function enumerateCB($uid, $connectedUid, $position, $hardwareVersion, $firmwareVersion, $deviceIdentifier, $enumerationType)
 {
-    if ($isNew) {
-        echo "New device:\n";
-    } else {
-        echo "Removed device:\n";
+	echo "UID:               $uid\n";
+	echo "Enumeration Type:  $enumerationType\n";
+
+    if($enumerationType == IPConnection::ENUMERATION_TYPE_DISCONNECTED) {
+		return;
     }
 
-    echo " Name:     $name\n";
-    echo " UID:      $uid\n";
-    echo " Stack ID: $stackID\n";
+	echo "Connected UID:     $connectedUid\n";
+	echo "Position:          $position\n";
+	echo "Hardware Version:  $hardwareVersion[0].$hardwareVersion[1].$hardwareVersion[2]\n";
+	echo "Firmware Version:  $firmwareVersion[0].$firmwareVersion[1].$firmwareVersion[2]\n";
+	echo "Device Identifier: $deviceIdentifier\n";
     echo "\n";
 }
 
-$ipcon = new IPConnection($host, $port); // Create IP connection to brickd
+// Create IP connection and connect to brickd
+$ipcon = new IPConnection();
+$ipcon->connect($host, $port);
 
-$ipcon->enumerate('enumerateCB'); // Enumerate Bricks and Bricklets
+// Register enumeration callback to "enumerateCB"
+$ipcon->registerCallback(IPConnection::CALLBACK_ENUMERATE, 'enumerateCB');
+
+$ipcon->enumerate();
 
 echo "Press ctrl+c to exit\n";
 $ipcon->dispatchCallbacks(-1); // Dispatch callbacks forever

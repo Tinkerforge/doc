@@ -105,6 +105,11 @@ Basic Functions
 
  Wait and unwait act in the same way as require and release of a semaphore.
 
+.. java:function:: public void IPConnection::enumerate()
+
+ Broadcasts an enumerate request. All devices will respond with an enumerate
+ callback.
+
 
 Listener Configuration
 ^^^^^^^^^^^^^^^^^^^^^^
