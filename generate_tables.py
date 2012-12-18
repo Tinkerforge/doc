@@ -5,6 +5,7 @@ import os
 import sys
 import re
 import urllib2
+import traceback
 from xml.etree.ElementTree import ElementTree
 from xml.etree.ElementTree import fromstring as etreefromstring
 
@@ -137,7 +138,11 @@ bricklet_descriptions = {
 'voltage': {
     'en': 'Measures voltages up to 50V',
     'de': 'Misst Spannungen bis zu 50V'
-    }
+    },
+'voltage_current': {
+    'en': 'XXX TODO',
+    'de': 'XXX TODO'
+    },
 }
 
 extension_descriptions = {
@@ -396,7 +401,7 @@ def fill_dicts():
                  ('Current25',                  'current25',                  bindings, bricklet_descriptions['current25'][lang]),
                  ('Distance IR',                'distance_ir',                bindings, bricklet_descriptions['distance_ir'][lang]),
                  ('Dual Relay',                 'dual_relay',                 bindings, bricklet_descriptions['dual_relay'][lang]),
-                 #('GPS',                        'gps',                        bindings, bricklet_descriptions['gps'][lang]),
+                 ('GPS',                        'gps',                        bindings, bricklet_descriptions['gps'][lang]),
                  ('Humidity',                   'humidity',                   bindings, bricklet_descriptions['humidity'][lang]),
                  ('Industrial Digital In 4',    'industrial_digital_in_4',    bindings, bricklet_descriptions['industrial_digital_in_4'][lang]),
                  ('Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, bricklet_descriptions['industrial_digital_out_4'][lang]),
@@ -411,7 +416,9 @@ def fill_dicts():
                  ('Rotary Poti',                'rotary_poti',                bindings, bricklet_descriptions['rotary_poti'][lang]),
                  ('Temperature',                'temperature',                bindings, bricklet_descriptions['temperature'][lang]),
                  ('Temperature IR',             'temperature_ir',             bindings, bricklet_descriptions['temperature_ir'][lang]),
-                 ('Voltage',                    'voltage',                    bindings, bricklet_descriptions['voltage'][lang])]
+                 ('Voltage',                    'voltage',                    bindings, bricklet_descriptions['voltage'][lang]),
+                 ('Voltage/Current',            'voltage_current',            bindings, bricklet_descriptions['voltage_current'][lang]),
+                ]
 
                   # display,             uri,     bindings, description
     extensions = [('Chibi Extension',   'chibi',  [],       extension_descriptions['chibi'][lang]),
@@ -422,11 +429,16 @@ def fill_dicts():
     power_supplies = [('Step-Down Power Supply', 'step_down',  [],       power_supply_descriptions['step_down'][lang])]
 
 def get_body(url):
-    response = urllib2.urlopen(url)
-    data = response.read().replace('<hr>', '').replace('<br>', '')
-    response.close()
-    tree = etreefromstring(data)
-    return tree.find('body')
+    try: 
+        response = urllib2.urlopen(url)
+        data = response.read().replace('<hr>', '').replace('<br>', '')
+        response.close()
+        tree = etreefromstring(data)
+        return tree.find('body')
+    except:
+        traceback.print_exc()
+        return None
+
 
 def get_tool_versions(url, regex):
     print 'Discovering ' + url
@@ -479,23 +491,26 @@ def get_firmware_versions(url, prefix):
     body = get_body(url)
     versions = []
 
-    for a in body.getiterator('a'):
-        if 'href' not in a.attrib:
-            continue
+    if body != None:
+        for a in body.getiterator('a'):
+            if 'href' not in a.attrib:
+                continue
 
-        url_part = a.attrib['href'].replace('/', '')
+            url_part = a.attrib['href'].replace('/', '')
 
-        if url_part == '..':
-            continue
+            if url_part == '..':
+                continue
 
-        m = re.match(prefix + '_firmware_(\d+)_(\d+)_(\d+)\.bin', url_part)
+            m = re.match(prefix + '_firmware_(\d+)_(\d+)_(\d+)\.bin', url_part)
 
-        if m is None:
-            continue
+            if m is None:
+                continue
 
-        versions.append((int(m.group(1)), int(m.group(2)), int(m.group(3))))
+            versions.append((int(m.group(1)), int(m.group(2)), int(m.group(3))))
 
-    return sorted(versions)
+        return sorted(versions)
+
+    return []
 
 def make_index_table(devices, category):
     table_head = """
@@ -718,7 +733,7 @@ def generate(path):
         if len(brick[2]) == 0:
             continue
 
-        name = brick[0].replace(' ', '_').replace('-', '')
+        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '')
 
         print 'Generating {0}_Brick_hlpi.table'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick_hlpi.table'), 'wb').write(make_hlpi_table(brick, 'brick'))
@@ -727,7 +742,7 @@ def generate(path):
         if len(bricklet[2]) == 0:
             continue
 
-        name = bricklet[0].replace(' ', '_').replace('-', '')
+        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '')
 
         print 'Generating {0}_hlpi.table'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), 'wb').write(make_hlpi_table(bricklet, 'bricklet'))
