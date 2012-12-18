@@ -39,7 +39,9 @@ bricklets = [('Ambient Light',             'ambient_light'),
              ('Rotary Poti',               'rotary_poti'),
              ('Temperature',               'temperature'),
              ('Temperature IR',            'temperature_ir'),
-             ('Voltage',                   'voltage')]
+             ('Voltage',                   'voltage'),
+             ('Voltage/Current',           'voltage_current'),
+            ]
 
 brick_test_intro = {
 'en':
@@ -183,13 +185,13 @@ def generate(path):
         sys.exit(1)
 
     for brick in bricks:
-        name = brick[0].replace(' ', '_').replace('-', '')
+        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '')
 
         print 'Generating {0}_Brick.substitutions'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick.substitutions'), 'wb').write(make_brick_substitutions(brick))
 
     for bricklet in bricklets:
-        name = bricklet[0].replace(' ', '_').replace('-', '')
+        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '')
 
         print 'Generating {0}.substitutions'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '.substitutions'), 'wb').write(make_bricklet_substitutions(bricklet))
