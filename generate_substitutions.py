@@ -185,13 +185,13 @@ def generate(path):
         sys.exit(1)
 
     for brick in bricks:
-        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '')
+        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
         print 'Generating {0}_Brick.substitutions'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick.substitutions'), 'wb').write(make_brick_substitutions(brick))
 
     for bricklet in bricklets:
-        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '')
+        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
         print 'Generating {0}.substitutions'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '.substitutions'), 'wb').write(make_bricklet_substitutions(bricklet))

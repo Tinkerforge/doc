@@ -620,7 +620,7 @@ def make_download_firmwares_table():
             if len(versions) < 1:
                 print 'Could not find versions of the {0} Brick firmware'.format(brick[0])
             else:
-                brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-'), *versions[-1]))
+                brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), *versions[-1]))
 
     for bricklet in bricklets:
         if len(bricklet[2]) > 0:
@@ -629,7 +629,7 @@ def make_download_firmwares_table():
             if len(versions) < 1:
                 print 'Could not find versions of the {0} Bricklet firmware'.format(bricklet[0])
             else:
-                bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1], bricklet[1].replace('_', '-'), *versions[-1]))
+                bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1], bricklet[1].replace('_', '-').replace('/', '-'), *versions[-1]))
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows))
 
@@ -653,13 +653,13 @@ def make_source_code_gits_table():
     extension_rows = []
 
     for brick in bricks:
-        brick_rows.append(brick_row_cell.format(brick[0], brick[1].replace('_', '-')))
+        brick_rows.append(brick_row_cell.format(brick[0], brick[1].replace('_', '-').replace('/', '-')))
 
     for bricklet in bricklets:
-        bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1].replace('_', '-')))
+        bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1].replace('_', '-').replace('/', '-')))
 
     for extension in extensions:
-        extension_rows.append(extension_row_cell.format(extension[0], extension[1].replace('_', '-')))
+        extension_rows.append(extension_row_cell.format(extension[0], extension[1].replace('_', '-').replace('/', '-')))
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows))
 
@@ -733,7 +733,7 @@ def generate(path):
         if len(brick[2]) == 0:
             continue
 
-        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '')
+        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
         print 'Generating {0}_Brick_hlpi.table'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick_hlpi.table'), 'wb').write(make_hlpi_table(brick, 'brick'))
@@ -742,7 +742,7 @@ def generate(path):
         if len(bricklet[2]) == 0:
             continue
 
-        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '')
+        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
         print 'Generating {0}_hlpi.table'.format(name)
         file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), 'wb').write(make_hlpi_table(bricklet, 'bricklet'))
