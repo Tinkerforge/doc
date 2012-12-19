@@ -97,9 +97,11 @@ Grundfunktionen
 
  Standardwert ist *true*.
 
+
 .. c:function:: bool ipcon_get_auto_reconnect(IPConnection *ipcon)
 
  Gibt *true* zurück wenn die Wiederverbindung aktiviert ist und *false* sonst.
+
 
 .. c:function:: void ipcon_set_timeout(IPConnection *ipcon, uint32_t timeout)
 
@@ -108,9 +110,33 @@ Grundfunktionen
 
  Standardwert ist 2500ms.
 
+
 .. c:function:: uint32_t ipcon_get_timeout(IPConnection *ipcon)
 
- Gibt den Timeout zurück, wie er von :c:func:`set_timeout` gesetzt wurde.
+ Gibt den Timeout zurück, wie er von :c:func:`ipcon_set_timeout` gesetzt wurde.
+
+
+.. c:function:: void ipcon_wait(IPConnection *ipcon)
+
+ Hält den aktuellen Thread an bis :c:func:`ipcon_unwait`
+ aufgerufen wird.
+
+ Dies ist nützlich falls ausschließlich auf Callbacks reagiert werden soll oder
+ wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
+ IP Connection in einem Thread gestartet wird.
+
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
+ Semaphore.
+ 
+ 
+.. c:function:: void ipcon_unwait(IPConnection *ipcon)
+
+ Startet einen Thread der vorher mit :c:func:`ipcon_wait`
+ angehalten wurde wieder.
+
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
+ Semaphore.
+
 
 .. c:function:: int ipcon_enumerate(IPConnection *ipcon)
 

@@ -92,26 +92,6 @@ Grundfunktionen
  Gibt den Timeout zurück, wie er von :java:func:`setTimeout <IPConnection::setTimeout>`
  gesetzt wurde.
 
-.. java:function:: public void IPConnection::wait()
-
- Hält den aktuellen Thread an bis :java:func:`unwait <IPConnection::unwait>`
- aufgerufen wird.
-
- Dies ist nützlich falls ausschließlich auf Callbacks reagiert werden soll oder
- wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
- IP Connection in einem Thread gestartet wird.
-
- Wait und unwait agieren auf die gleiche Weise wie "require" und "release" einer 
- Semaphore.
- 
-.. java:function:: public void IPConnection::unwait()
-
- Startet einen Thread der vorher mit :java:func:`wait <IPConnection::wait>`
- angehalten wurde wieder.
-
- Wait und unwait agieren auf die gleiche Weise wie "require" und "release" einer 
- Semaphore.
-
 .. java:function:: public void IPConnection::enumerate()
 
  Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit

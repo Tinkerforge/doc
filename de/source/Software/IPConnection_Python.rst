@@ -118,6 +118,9 @@ Grundfunktionen
  wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
  IP Connection in einem Thread gestartet wird.
 
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
+ Semaphore.
+
 .. py:function:: IPConnection.unwait()
 
  :rtype: None
@@ -125,7 +128,7 @@ Grundfunktionen
  Startet einen Thread der vorher mit :py:func:`IPConnection.wait`
  angehalten wurde wieder.
 
- Wait und unwait agieren auf die gleiche Weise wie "require" und "release" einer 
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
  Semaphore.
 
 .. py:function:: IPConnection.enumerate()

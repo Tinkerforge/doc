@@ -74,9 +74,11 @@ Basic Functions
 
  Default value is *true*.
 
+
 .. delphi:function:: function TIPConnection.GetAutoReconnect(): boolean
 
  Returns *true* if auto-reconnect is enabled, *false* otherwise.
+
 
 .. delphi:function:: procedure TIPConnection.SetTimeout(const timeout_: longword)
 
@@ -85,9 +87,29 @@ Basic Functions
 
  Default timeout is 2500ms.
 
+
 .. delphi:function:: function TIPConnection.GetTimeout(): longword
 
  Returns the timeout as set by :delphi:func:`TIPConnection.SetTimeout`.
+
+
+.. delphi:function:: procedure IPConnection.Wait()
+
+ Stops the current thread until :delphi:func:`TIPConnection.Unwait`
+ is called.
+
+ This is useful if you rely solely on callbacks for events, if you want to
+ wait for a specific callback or if the IP Connection was created in a threads.
+
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+ 
+ 
+.. delphi:function:: procedure IPConnection.Unwait()
+
+ Unwaits the thread previously stopped by :delphi:func:`TIPConnection.Wait`
+
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+
 
 .. delphi:function:: procedure TIPConnection.Enumerate()
 

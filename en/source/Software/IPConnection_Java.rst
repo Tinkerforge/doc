@@ -89,21 +89,6 @@ Basic Functions
 
  Returns the timeout as set by :java:func:`setTimeout <IPConnection::setTimeout>`.
 
-.. java:function:: public void IPConnection::wait()
-
- holds the current thread until :java:func:`unwait <IPConnection::unwait>`
- is called.
-
- This is useful if you rely solely on callbacks for events, if you want to
- wait for a specific callback or if the IP Connection was created in a threads.
-
- Wait and unwait act in the same way as require and release of a semaphore.
- 
-.. java:function:: public void IPConnection::unwait()
-
- Unwaits the thread previously set to hold by :java:func:`wait <IPConnection::wait>`
-
- Wait and unwait act in the same way as require and release of a semaphore.
 
 .. java:function:: public void IPConnection::enumerate()
 

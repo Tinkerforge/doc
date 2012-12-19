@@ -107,25 +107,27 @@ Basic Functions
 
  Returns the timeout as set by :py:func:`IPConnection.set_timeout`.
 
+
 .. py:function:: IPConnection.wait()
 
  :rtype: None
 
- holds the current thread until :py:func:`IPConnection.unwait`
+ Stops the current thread until :py:func:`IPConnection.unwait`
  is called.
 
  This is useful if you rely solely on callbacks for events, if you want to
  wait for a specific callback or if the IP Connection was created in a threads.
 
- Wait and unwait act in the same way as require and release of a semaphore.
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+
 
 .. py:function:: IPConnection.unwait()
 
  :rtype: None
 
- Unwaits the thread previously set to hold by :py:func:`IPConnection.wait`
+ Unwaits the thread previously stopped by :py:func:`IPConnection.wait`
 
- Wait and unwait act in the same way as require and release of a semaphore.
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
 
 
 .. py:function:: IPConnection.enumerate()

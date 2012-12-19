@@ -89,9 +89,10 @@ Basic Functions
 
  Returns the timeout as set by :csharp:func:`SetTimeout <IPConnection::SetTimeout>`.
 
+
 .. csharp:function:: public void IPConnection::Wait()
 
- holds the current thread until :csharp:func:`Unwait <IPConnection::Unwait>`
+ Stops the current thread until :csharp:func:`Unwait <IPConnection::Unwait>`
  is called.
 
  This is useful if you rely solely on callbacks for events, if you want to
@@ -99,11 +100,13 @@ Basic Functions
 
  Wait and unwait act in the same way as require and release of a semaphore.
  
+ 
 .. csharp:function:: public void IPConnection::Unwait()
 
- Unwaits the thread previously set to hold by :csharp:func:`Wait <IPConnection::Wait>`
+ Unwaits the thread previously stopped by :csharp:func:`Wait <IPConnection::Wait>`
 
  Wait and unwait act in the same way as require and release of a semaphore.
+
 
 .. csharp:function:: public void IPConnection::Enumerate()
 
