@@ -131,7 +131,7 @@ and a graph that shows the current over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.jpg
 
-In the screenshot you can see a high curren peak. This is caused by the 
+In the screenshot you can see a high current peak. This is caused by the 
 starting of the motor when the battery is connected.
 
 |test_pi_ref|
