@@ -47,7 +47,7 @@ Basic Functions
  The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
- succesfully.
+ successfully.
 
  Blocks until the connection is established and throws an IOException 
  if there is no Brick Daemon or WIFI/Ethernet Extension
@@ -68,15 +68,15 @@ Basic Functions
 
 .. delphi:function:: procedure TIPConnection.SetAutoReconnect(const auto_reconnect: boolean)
 
- Enables or disables auto reconnect. If auto reconnect is enabled,
+ Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
- host and port.
+ host and port, if the connection is lost.
 
  Default value is *true*.
 
 .. delphi:function:: function TIPConnection.GetAutoReconnect(): boolean
 
- Returns *true* if auto reconnect is enabled, *false* otherwise.
+ Returns *true* if auto-reconnect is enabled, *false* otherwise.
 
 .. delphi:function:: procedure TIPConnection.SetTimeout(const timeout_: longword)
 
@@ -128,13 +128,13 @@ The available callback property and their type of parameters are described below
  * *hardwareVersion*: Major, minor and release number for hardware version.
  * *firmwareVersion*: Major, minor and release number for firmware version.
  * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
- * *enumerationType*: Type of enumeration
+ * *enumerationType*: Type of enumeration.
 
- Possible enumerate types are:
+ Possible enumeration types are:
 
- * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
- * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
+ * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
+ * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
+ * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
 
  It should be possible to implement "plug 'n play" functionality with this
  (as is done in Brick Viewer).
@@ -147,8 +147,8 @@ The available callback property and their type of parameters are described below
 
  This callback is called whenever the IP connection is connected, possible reasons are:
 
- * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request from user.
- * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto reconnect.
+ * CONNECT_REASON_REQUEST (0): Connection established after request from user.
+ * CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
 
 .. delphi:function:: property TIPConnection.OnEnumerate
 
@@ -158,6 +158,6 @@ The available callback property and their type of parameters are described below
 
  This callback is called whenever the IP connection is disconnected, possible reasons are:
 
- * IPCON_DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
- * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
- * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or WIFI/Ethernet Extension.
+ * DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
+ * DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
+ * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or WIFI/Ethernet Extension.

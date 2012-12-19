@@ -71,9 +71,9 @@ Grundfunktionen
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
  erfolgreich aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine IOException
+ Blockiert bis die Verbindung aufgebaut wurde und gibt einen Fehlercode zurück
  falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchene.
+ Host und Port horchen.
 
 .. c:function:: int ipcon_disconnect(IPConnection *ipcon)
 
@@ -92,7 +92,8 @@ Grundfunktionen
 
  Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
  Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
- zum vorher angegebenen Host und Port wieder herzustellen.
+ zum vorher angegebenen Host und Port wieder herzustellen, falls die Verbindung
+ verloren geht.
 
  Standardwert ist *true*.
 

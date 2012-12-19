@@ -50,9 +50,9 @@ Grundfunktionen
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
  erfolgreich aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine IOException
+ Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception
  falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchene.
+ Host und Port horchen.
 
 .. php:function:: void IPConnection::disconnect()
 
@@ -63,9 +63,9 @@ Grundfunktionen
 
  Kann die folgenden Zustände zurückgeben:
 
- * IPCON_CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
- * IPCON_CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
- * IPCON_CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine Verbindung aufzubauen.
+ * CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
+ * CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
+ * CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine Verbindung aufzubauen.
 
 .. php:function:: void IPConnection::setTimeout(int $seconds)
 
