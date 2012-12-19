@@ -47,7 +47,7 @@ Basic Functions
  The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
- succesfully.
+ successfully.
 
  Blocks until the connection is established and throws an IOException 
  if there is no Brick Daemon or WIFI/Ethernet Extension
@@ -68,15 +68,15 @@ Basic Functions
 
 .. java:function:: public void IPConnection::setAutoReconnect(boolean autoReconnect)
 
- Enables or disables auto reconnect. If auto reconnect is enabled,
+ Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
- host and port.
+ host and port, if the connection is lost.
 
  Default value is *true*.
 
 .. java:function:: public boolean IPConnection::getAutoReconnect()
 
- Returns *true* if auto reconnect is enabled, *false* otherwise.
+ Returns *true* if auto-reconnect is enabled, *false* otherwise.
 
 .. java:function:: public void IPConnection::setTimeout(int timeout)
 
@@ -89,21 +89,6 @@ Basic Functions
 
  Returns the timeout as set by :java:func:`setTimeout <IPConnection::setTimeout>`.
 
-.. java:function:: public void IPConnection::wait()
-
- holds the current thread until :java:func:`unwait <IPConnection::unwait>`
- is called.
-
- This is useful if you rely solely on callbacks for events, if you want to
- wait for a specific callback or if the IP Connection was created in a threads.
-
- Wait and unwait act in the same way as require and release of a semaphore.
- 
-.. java:function:: public void IPConnection::unwait()
-
- Unwaits the thread previously set to hold by :java:func:`wait <IPConnection::wait>`
-
- Wait and unwait act in the same way as require and release of a semaphore.
 
 .. java:function:: public void IPConnection::enumerate()
 
@@ -131,9 +116,9 @@ Listener Configuration
    * *hardwareVersion*: Major, minor and release number for hardware version.
    * *firmwareVersion*: Major, minor and release number for firmware version.
    * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
-   * *enumerationType*: Type of enumeration
+   * *enumerationType*: Type of enumeration.
 
-   Possible enumerate types are:
+   Possible enumeration types are:
 
    * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
    * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
@@ -150,7 +135,7 @@ Listener Configuration
    This listener is called whenever the IP connection is connected, possible reasons are:
 
    * CONNECT_REASON_REQUEST (0): Connection established after request from user.
-   * CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto reconnect.
+   * CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
 
  .. java:function:: public class IPConnection.DisconnectedListener()
 

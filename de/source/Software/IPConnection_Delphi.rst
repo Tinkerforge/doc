@@ -50,9 +50,9 @@ Grundfunktionen
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
  erfolgreich aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine IOException
+ Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception
  falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchene.
+ Host und Port horchen.
 
 .. delphi:function:: procedure TIPConnection.Disconnect()
 
@@ -63,15 +63,16 @@ Grundfunktionen
 
  Kann die folgenden Zustände zurückgeben:
 
- * IPCON_CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
- * IPCON_CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
- * IPCON_CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine Verbindung aufzubauen.
+ * CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
+ * CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
+ * CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine Verbindung aufzubauen.
 
 .. delphi:function:: procedure TIPConnection.SetAutoReconnect(const auto_reconnect: boolean)
 
  Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
  Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
- zum vorher angegebenen Host und Port wieder herzustellen.
+ zum vorher angegebenen Host und Port wieder herzustellen, falls die Verbindung
+ verloren geht.
 
  Standardwert ist *True*.
 
@@ -90,6 +91,26 @@ Grundfunktionen
 
  Gibt den Timeout zurück, wie er von :delphi:func:`TIPConnection.SetTimeout`
  gesetzt wurde.
+
+.. delphi:function:: function TIPConnection.Wait()
+
+ Hält den aktuellen Thread an bis :delphi:func:`TIPConnection.Unwait`
+ aufgerufen wird.
+
+ Dies ist nützlich falls ausschließlich auf Callbacks reagiert werden soll oder
+ wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
+ IP Connection in einem Thread gestartet wird.
+
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
+ Semaphore.
+ 
+.. delphi:function:: function TIPConnection.Unwait()
+
+ Startet einen Thread der vorher mit :delphi:func:`TIPConnection.Wait`
+ angehalten wurde wieder.
+
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
+ Semaphore.
 
 .. delphi:function:: procedure TIPConnection.Enumerate()
 

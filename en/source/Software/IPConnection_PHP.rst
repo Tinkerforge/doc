@@ -47,9 +47,9 @@ Basic Functions
  The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
- succesfully.
+ successfully.
 
- Blocks until the connection is established and throws an IOException 
+ Blocks until the connection is established and throws an Exception 
  if there is no Brick Daemon or WIFI/Ethernet Extension
  listening at the given host and port.
 
@@ -109,9 +109,9 @@ Callbacks
  * *hardwareVersion*: Major, minor and release number for hardware version.
  * *firmwareVersion*: Major, minor and release number for firmware version.
  * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
- * *enumerationType*: Type of enumeration
+ * *enumerationType*: Type of enumeration.
 
- Possible enumerate types are:
+ Possible enumeration types are:
 
  * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
  * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
@@ -129,7 +129,6 @@ Callbacks
  This callback is called whenever the IP connection is connected, possible reasons are:
 
  * CONNECT_REASON_REQUEST (0): Connection established after request from user.
- * CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto reconnect.
 
 .. php:member:: int IPConnection::CALLBACK_DISCONNECTED
 

@@ -51,7 +51,7 @@ Basic Functions
  The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
- succesfully.
+ successfully.
 
  Blocks until the connection is established and throws an IOException 
  if there is no Brick Daemon or WIFI/Ethernet Extension
@@ -79,9 +79,9 @@ Basic Functions
  :param auto_reconnect: bool
  :rtype: None
 
- Enables or disables auto reconnect. If auto reconnect is enabled,
+ Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
- host and port.
+ host and port, if the connection is lost.
 
  Default value is *True*.
 
@@ -89,7 +89,7 @@ Basic Functions
 
  :rtype: bool
 
- Returns *True* if auto reconnect is enabled, *False* otherwise.
+ Returns *True* if auto-reconnect is enabled, *False* otherwise.
 
 .. py:function:: IPConnection.set_timeout(timeout)
 
@@ -107,25 +107,27 @@ Basic Functions
 
  Returns the timeout as set by :py:func:`IPConnection.set_timeout`.
 
+
 .. py:function:: IPConnection.wait()
 
  :rtype: None
 
- holds the current thread until :py:func:`IPConnection.unwait`
+ Stops the current thread until :py:func:`IPConnection.unwait`
  is called.
 
  This is useful if you rely solely on callbacks for events, if you want to
  wait for a specific callback or if the IP Connection was created in a threads.
 
- Wait and unwait act in the same way as require and release of a semaphore.
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+
 
 .. py:function:: IPConnection.unwait()
 
  :rtype: None
 
- Unwaits the thread previously set to hold by :py:func:`IPConnection.wait`
+ Unwaits the thread previously stopped by :py:func:`IPConnection.wait`
 
- Wait and unwait act in the same way as require and release of a semaphore.
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
 
 
 .. py:function:: IPConnection.enumerate()
@@ -168,13 +170,13 @@ Callbacks
  * *hardwareVersion*: Major, minor and release number for hardware version.
  * *firmwareVersion*: Major, minor and release number for firmware version.
  * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
- * *enumerationType*: Type of enumeration
+ * *enumerationType*: Type of enumeration.
 
- Possible enumerate types are:
+ Possible enumeration types are:
 
- * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
- * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
+ * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
+ * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
+ * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
 
  It should be possible to implement "plug 'n play" functionality with this
  (as is done in Brick Viewer).
@@ -185,8 +187,8 @@ Callbacks
 
  This callback is called whenever the IP connection is connected, possible reasons are:
 
- * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request from user.
- * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto reconnect.
+ * CONNECT_REASON_REQUEST (0): Connection established after request from user.
+ * CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
 
 .. py:attribute:: IPConnection.CALLBACK_DISCONNECTED
 
@@ -194,6 +196,6 @@ Callbacks
 
  This callback is called whenever the IP connection is disconnected, possible reasons are:
 
- * IPCON_DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
- * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
- * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or WIFI/Ethernet Extension.
+ * DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
+ * DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
+ * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or WIFI/Ethernet Extension.

@@ -54,9 +54,9 @@ Grundfunktionen
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
  erfolgreich aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine IOException
+ Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception
  falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchene.
+ Host und Port horchen.
 
 
 .. rb:function:: IPConnection#disconnect() -> nil
@@ -69,9 +69,9 @@ Grundfunktionen
 
  Kann die folgenden Zustände zurückgeben:
 
- * IPCON_CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
- * IPCON_CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
- * IPCON_CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine Verbindung aufzubauen.
+ * CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
+ * CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder der WIFI/Ethernet Extension ist aufgebaut.
+ * CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine Verbindung aufzubauen.
 
 
 .. rb:function:: IPConnection#set_auto_reconnect(auto_reconnect) -> nil
@@ -80,7 +80,8 @@ Grundfunktionen
 
  Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
  Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
- zum vorher angegebenen Host und Port wieder herzustellen.
+ zum vorher angegebenen Host und Port wieder herzustellen, falls die Verbindung
+ verloren geht.
 
  Standardwert ist *true*.
 
@@ -120,13 +121,16 @@ Grundfunktionen
  wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
  IP Connection in einem Thread gestartet wird.
 
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
+ Semaphore.
+
 
 .. rb:function:: IPConnection#unwait() -> nil
 
  Startet einen Thread der vorher mit :rb:func:`#wait <IPConnection#wait>`
  angehalten wurde wieder.
 
- Wait und unwait agieren auf die gleiche Weise wie "require" und "release" einer 
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
  Semaphore.
 
 

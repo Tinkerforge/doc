@@ -71,9 +71,9 @@ Grundfunktionen
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
  erfolgreich aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine IOException
+ Blockiert bis die Verbindung aufgebaut wurde und gibt einen Fehlercode zurück
  falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchene.
+ Host und Port horchen.
 
 .. c:function:: int ipcon_disconnect(IPConnection *ipcon)
 
@@ -92,13 +92,16 @@ Grundfunktionen
 
  Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
  Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
- zum vorher angegebenen Host und Port wieder herzustellen.
+ zum vorher angegebenen Host und Port wieder herzustellen, falls die Verbindung
+ verloren geht.
 
  Standardwert ist *true*.
+
 
 .. c:function:: bool ipcon_get_auto_reconnect(IPConnection *ipcon)
 
  Gibt *true* zurück wenn die Wiederverbindung aktiviert ist und *false* sonst.
+
 
 .. c:function:: void ipcon_set_timeout(IPConnection *ipcon, uint32_t timeout)
 
@@ -107,9 +110,33 @@ Grundfunktionen
 
  Standardwert ist 2500ms.
 
+
 .. c:function:: uint32_t ipcon_get_timeout(IPConnection *ipcon)
 
- Gibt den Timeout zurück, wie er von :c:func:`set_timeout` gesetzt wurde.
+ Gibt den Timeout zurück, wie er von :c:func:`ipcon_set_timeout` gesetzt wurde.
+
+
+.. c:function:: void ipcon_wait(IPConnection *ipcon)
+
+ Hält den aktuellen Thread an bis :c:func:`ipcon_unwait`
+ aufgerufen wird.
+
+ Dies ist nützlich falls ausschließlich auf Callbacks reagiert werden soll oder
+ wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
+ IP Connection in einem Thread gestartet wird.
+
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
+ Semaphore.
+ 
+ 
+.. c:function:: void ipcon_unwait(IPConnection *ipcon)
+
+ Startet einen Thread der vorher mit :c:func:`ipcon_wait`
+ angehalten wurde wieder.
+
+ Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer 
+ Semaphore.
+
 
 .. c:function:: int ipcon_enumerate(IPConnection *ipcon)
 
