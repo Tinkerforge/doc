@@ -45,41 +45,61 @@ Voltage/Current Bricklet
 Features
 --------
 
-* TODO
-* TODO
-* TODO
+* Misst Leistung, Spannung und Strom bis zu 720W/36V/20A
+* Bidirektionale Strommessung (z.B. Laden/Entladen)
+* Konfigurierbare Mittelwertbildung, ADC-Wandlungszeit
+* Auflösung 1mW, 1mV, 1mA
 
-Description
------------
+Beschreibung
+------------
 
-TODO
+Mit dem Voltage/Current :ref:`Bricklet <product_overview_bricklets>` können
+:ref:`Bricks <product_overview_bricks>` um die Fähigkeit Leistung/Spannung/Strom
+zu messen erweitert werden. Das Bricklet wird einfach
+zwischen Spannungsversorgung (z.B. Batterie) und Last (z.B. Motor) eingebaut.
+
+In akkubetriebenen Systemen können über die bidirektionale Strommessung
+Aussagen über den Ladezustand des Akkus getroffen werden.
 
 
-Technical Specifications
+Technische Spezifikation
 ------------------------
 
 ================================  ============================================================
-Property                          Value
+Eigenschaft                       Wert
 ================================  ============================================================
-Sensor                            TODO
+Sensor                            INA226 + 4m Ohm Shunt Widerstand
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Current                           TODO
-Maximum Input Voltage             TODO
+Maximaler Strom                   +-20A
+Maximale Spannung                 36V
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TODO
-Weight                            TODO
+Abmessung (L x B x H)             30 x 30 x 18mm (1.18 x 1.18 x 0.67")
+Gewicht                           10g
 ================================  ============================================================
 
 
-Resources
+Resourcen
 ---------
 
-* INA226 Datenblatt (TODO)
-* Schaltplan (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/raw/master/hardware/current-12-schematic.pdf>`__)
+* INA226 Datenblatt (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/raw/master/datasheets/INA226.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/raw/master/hardware/voltage-current-bricklet-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/voltage_current_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/zipball/master>`__)
+
+
+Anschlussmöglichkeit
+--------------------
+
+Das Voltage/Current Bricklet wird einfach zwischen Stromversorgung und der Last eingebaut.
+Schließe an die Klemme beschriftet mit "IN" die Stromversorgung an.
+An die Klemme "OUT" deine Last. Die Polung ist mit "+" und "-" vor der Klemme gekennzeichnet.
+
+.. warning:
+Wichtig beachte die Polung beim anschließen! Das Bricklet ist nicht kurzschlussfest!
+
+
 
 
 .. _voltage_current_bricklet_test:
@@ -89,9 +109,10 @@ Erster Test
 
 |test_intro|
 
-|test_connect|. 
+|test_connect|.
 
-TODO
+Als nächstes muss noch eine Last und eine Stromquelle mit dem Bricklet verbunden werden. 
+Zum Beispiel einen Motor und eine Batterie wie im folgenden Bild.
 
 .. image:: /Images/Bricklets/bricklet_voltage_current_master_600.jpg
    :scale: 100 %
@@ -101,7 +122,8 @@ TODO
 
 |test_tab|
 
-TODO
+Wenn alles wie erwartet funktioniert wird die Stromaufnahme des Motors angezeigt.
+Der Graph gibt den zeitlichen Verlauf der Stromaufnahme wieder.
 
 .. image:: /Images/Bricklets/bricklet_voltage_current_brickv.jpg
    :scale: 100 %
@@ -109,7 +131,8 @@ TODO
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.jpg
 
-TODO
+Der Screenshot zeigt eine hohe Spitze. Diese wird durch das Anfahren des Motors
+beim Anschließen der Batterie verursacht.
 
 |test_pi_ref|
 

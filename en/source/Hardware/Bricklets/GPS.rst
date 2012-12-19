@@ -43,6 +43,10 @@ Sensitivity                       -148dBm (Acquisition), -165dBm (Tracking)*
 Position Accuracy                 3.0m (50% CEP)*
 Time to first Fix                 <35s (without battery), <1s (with battery)*
 Update Rate                       10Hz
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)            40 x 35 x 12mm (1.57 x 1.38 x 0.47")
+Weight                            12g (without battery)
 ================================  ============================================================
 \* Datasheet values
 
