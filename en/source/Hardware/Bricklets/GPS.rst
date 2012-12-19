@@ -10,10 +10,27 @@ GPS Bricklet
 Features
 --------
 
+* Receives movement-, position-, altitude and time data
+* Internal antenna, external antenne optional
+* 66 channels, 10Hz update rate
+* High sensitivity and accuracy, interference canceller
+
 
 Description
 -----------
 
+The GPS :ref:`Bricklet <product_overview_bricklets>` can be used to extend
+:ref:`Bricks <product_overview_bricks>` by the possibility to
+determine their position via 
+`GPS <http://de.wikipedia.org/wiki/GPS>`__.
+Additionally it is possible to receive movement (direction and velocity),
+altitude (altitude and `geodial separation <http://de.wikipedia.org/wiki/World_Geodetic_System_1984>`__),
+as well as high precise time and date information.
+
+The used GPS module is optimized to get a fast fix, has a high input
+sensitivity (-165dBm) and a update rate of 10Hz suitable for drones or the like.
+Internal interference canceller rejects RF interference from other devices
+like Bluetooth or Wifi.
 
 Technical Specifications
 ------------------------
@@ -21,8 +38,13 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+GPS Module Chipset                MTK MT3339 (PA6H Module)
+Sensitivity                       -148dBm (Acquisition), -165dBm (Tracking)*
+Position Accuracy                 3.0m (50% CEP)*
+Time to first Fix                 <35s (without battery), <1s (with battery)*
+Update Rate                       10Hz
 ================================  ============================================================
-
+\* Datasheet values
 
 Resources
 ---------
@@ -30,6 +52,30 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/hardware/gps-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/gps_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/gps-bricklet/zipball/master>`__)
+
+External Antenne
+----------------
+
+With an `U.FL <http://en.wikipedia.org/wiki/Hirose_U.FL>`__ connector
+external antennas can be attached. This is makes sense if it should be
+mounted at another position than the Bricklet or if the reception should
+be improved. The module detecs automatically an external antenna
+and switches over.
+
+The connector is short-circuit protected and supplies the antenna with 
+3.3V/28mA. The external antenna should fullfill the following requirements:
+
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Polarization                      Right-hand circular polarized
+Frequency Received                1.57542GHz +/- 1.023MHz
+Powersupply                       3.0V - 3.6V, 4mA - 20mA
+Gain                              >+15dBi
+Impedance                         50 Ohm
+Noise Figure                      < 1.5dB
+================================  ============================================================
+
 
 
 .. _gps_bricklet_test:
