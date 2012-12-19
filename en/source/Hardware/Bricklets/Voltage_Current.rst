@@ -25,19 +25,19 @@ Voltage/Current Bricklet
 	             "Voltage/Current Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_voltage_current_master_100.jpg",
-	             "Bricklets/bricklet_voltage_current_master_600.jpg",
-	             "Voltage/Current Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_voltage_current_setup_100.jpg",
+	             "Bricklets/bricklet_voltage_current_setup_600.jpg",
+	             "Voltage/Current Bricklet with Master Brick")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_voltage_current_brickv_100.jpg",
 	             "Bricklets/bricklet_voltage_current_brickv.jpg",
-	             "Voltage/Current Bricklet im Brick Viewer")
+	             "Voltage/Current Bricklet in Brick Viewer")
 	}}
 	{{
 	    tfdocimg("Dimensions/voltage_current_bricklet_dimensions_100.png",
 	             "Dimensions/voltage_current_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
+	             "Outline and drilling plan")
 	}}
 	{{ tfdocend() }}
 
@@ -45,10 +45,10 @@ Voltage/Current Bricklet
 Features
 --------
 
+* 1mW, 1mV, 1mA resolution over the whole range
 * Measure power, voltage and current up to 720W/36V/20A
 * Bidirectional current measurement (e.g. charge/discharge)
 * Configurable averaging and ADC conversion time
-* 1mW, 1mV, 1mA resolution
 
 Description
 -----------
@@ -94,10 +94,10 @@ Connectivity
 
 You have to connect the Voltage/Current Bricklet between your power supply and 
 your load. Connect the power supply with the terminal marked with "IN" and the
-load with the terminal "OUT". The polarity is marked with "+" and "-".
+load with the terminal marked "OUT". The polarity is marked with "+" and "-".
 
 .. warning:
-Keep in mind the polarity! This Bricklet is not short circuit protected!
+Keep the polarity in mind! This Bricklet is protected against polarity reversal!
 
 
 
@@ -114,11 +114,11 @@ First Test
 Connect a motor and a battery to the Bricklet as displayed in the following
 picture.
 
-.. image:: /Images/Bricklets/bricklet_voltage_current_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_voltage_current_setup_600.jpg
    :scale: 100 %
-   :alt: Voltage/Current Bricklet with Battery and Motor connected to Master Brick
+   :alt: Voltage/Current Bricklet with Battery and Motor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_voltage_current_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_voltage_current_setup_1200.jpg
 
 |test_tab|
 
@@ -131,20 +131,21 @@ and a graph that shows the current over time.
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.jpg
 
-In the screenshot you can see a high curren peak. This is caused by the starting
-of the motor when the battery is connected.
+In the screenshot you can see a high curren peak. This is caused by the 
+starting of the motor when the battery is connected.
 
 |test_pi_ref|
 
 
 .. _voltage_current_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+Programming Interfaces
+----------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Programmierschnittstelle <pi_hlpi>` for a detailed description.
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed 
+description.
 
 .. include:: Voltage_Current_hlpi.table
