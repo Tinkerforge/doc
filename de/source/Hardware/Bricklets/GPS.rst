@@ -12,7 +12,7 @@ Features
 
 * Empfängt Bewegungs-, Positions-, Höhen- und Zeitdaten
 * Interne Antenne, externe Antenne optional
-* 66 Kanäle, 10Hz Updaterate
+* 66 Kanäle, 10Hz Update-Rate
 * Hohe Empfindlichkeit und Genauigkeit, Störunterdrückung
 
 
@@ -29,6 +29,8 @@ sowie hochgenaue Zeit- bzw. Datumsinformationen zu bekommen.
 Das verwendete GPS Modul ist optimiert auf eine sehr kurze Zeit bis
 zum ersten Fix, verfügt über eine hohe Empfindlichkeit (-165dBm) und 
 liefert mit 10Hz Updatefrequenz auch schnell genug Daten für Drohnen o.ä. 
+Eine interne Störunterdrückung verbessert den Empfang wenn Bluetooth- 
+oder Wifi-Geräte in der Nähe sind.
 
 Technische Spezifikation
 ------------------------
@@ -51,7 +53,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/hardware/gps-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/gps_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/gps-bricklet/zipball/master>`__)
-* PA6H Datasheet (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/datasheets/FGPMMOPA6H.pdf>`__)
+* PA6H Datenblatt (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/datasheets/FGPMMOPA6H.pdf>`__)
 
 Externe Antenne
 ---------------

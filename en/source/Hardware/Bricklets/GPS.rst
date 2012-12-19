@@ -52,6 +52,8 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/hardware/gps-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/gps_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/gps-bricklet/zipball/master>`__)
+* PA6H Datasheet (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/datasheets/FGPMMOPA6H.pdf>`__)
+
 
 External Antenne
 ----------------
