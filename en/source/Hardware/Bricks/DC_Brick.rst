@@ -190,9 +190,16 @@ Power Supply
 
 The connected motor can be powered through the black on-board power-connector
 or through a :ref:`Power Supply <product_overview_power_supplies>` in a
-stack.
-The Brick switches automatically to the on-board power-connector when a is
-voltage measured there.
+stack. The Brick switches automatically to the on-board power-connector when a 
+voltage above 1V is measured there.
+
+
+.. warning::
+  Keep in mind that the Brick switches automatically. So e.g. if you have a stack
+  and remove your external battery connected to the Brick it will use the 
+  stack powersupply. If you then enable the motor it is driver with the voltage
+  supplied by the stack which might be higher then your battery voltage
+  
 
 .. _dc_brick_drive_mode:
 

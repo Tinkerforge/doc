@@ -195,6 +195,15 @@ Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
 Stecker eine Spannung anliegt.
 
 
+.. warning::
+  Der Brick schaltet automatisch auf Stackversorgung um wenn am externen
+  Stecker weniger wie 1V anliegen. Wenn z.B. ein Stack genutzt wird
+  und eine zuvor angeschlossene externe Batterie vom Brick abgezogen wird,
+  nutzt der Brick den Stack Stromversorgung. Wenn der Motor danach aktiviert 
+  wird kann es sein, dass dieser mit der höheren Stackstromversorgung
+  betrieben wird.
+  
+
 .. _dc_brick_drive_mode:
 
 Fahrmodi
