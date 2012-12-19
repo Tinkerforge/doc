@@ -25,8 +25,8 @@ Voltage/Current Bricklet
 	             "Voltage/Current Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_voltage_current_master_100.jpg",
-	             "Bricklets/bricklet_voltage_current_master_600.jpg",
+	    tfdocimg("Bricklets/bricklet_voltage_current_setup_100.jpg",
+	             "Bricklets/bricklet_voltage_current_setup_600.jpg",
 	             "Voltage/Current Bricklet mit Master Brick")
 	}}
 	{{
@@ -45,10 +45,10 @@ Voltage/Current Bricklet
 Features
 --------
 
+* Auflösung 1mW, 1mV, 1mA über kompletten Messbereich
 * Misst Leistung, Spannung und Strom bis zu 720W/36V/20A
 * Bidirektionale Strommessung (z.B. Laden/Entladen)
 * Konfigurierbare Mittelwertbildung, ADC-Wandlungszeit
-* Auflösung 1mW, 1mV, 1mA
 
 Beschreibung
 ------------
@@ -92,12 +92,14 @@ Resourcen
 Anschlussmöglichkeit
 --------------------
 
-Das Voltage/Current Bricklet wird einfach zwischen Stromversorgung und der Last eingebaut.
-Schließe an die Klemme beschriftet mit "IN" die Stromversorgung an.
-An die Klemme "OUT" deine Last. Die Polung ist mit "+" und "-" vor der Klemme gekennzeichnet.
+Das Voltage/Current Bricklet wird einfach zwischen Stromversorgung und der 
+Last eingebaut. Schließe an die Klemme beschriftet mit "IN" die 
+Stromversorgung an. An die Klemme "OUT" die Last. Die Polung ist mit "+" 
+und "-" vor der Klemme gekennzeichnet.
 
 .. warning:
-Wichtig beachte die Polung beim anschließen! Das Bricklet ist nicht kurzschlussfest!
+Wichtig beachte die Polung beim anschließen! Das Bricklet ist nicht 
+verpolungssicher!
 
 
 
@@ -111,18 +113,20 @@ Erster Test
 
 |test_connect|.
 
-Als nächstes muss noch eine Last und eine Stromquelle mit dem Bricklet verbunden werden. 
+Als nächstes muss noch eine Last und eine Stromquelle mit dem Bricklet 
+verbunden werden.  
 Zum Beispiel einen Motor und eine Batterie wie im folgenden Bild.
 
-.. image:: /Images/Bricklets/bricklet_voltage_current_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_voltage_current_setup_600.jpg
    :scale: 100 %
    :alt: Voltage/Current Bricklet with Battery and Motor connected to Master Brick
    :align: center
-   :target: ../../_images/Bricklets/bricklet_voltage_current_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_voltage_current_setup_1200.jpg
 
 |test_tab|
 
-Wenn alles wie erwartet funktioniert wird die Stromaufnahme des Motors angezeigt.
+Wenn alles wie erwartet funktioniert wird die Stromaufnahme des Motors 
+angezeigt.
 Der Graph gibt den zeitlichen Verlauf der Stromaufnahme wieder.
 
 .. image:: /Images/Bricklets/bricklet_voltage_current_brickv.jpg
@@ -145,6 +149,7 @@ Programmierschnittstellen
 High Level Programmierschnittstelle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`High Level Programmierschnittstelle <pi_hlpi>` for a detailed description.
+Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine
+detaillierte Beschreibung.
 
 .. include:: Voltage_Current_hlpi.table
