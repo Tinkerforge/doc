@@ -138,7 +138,7 @@ verbunden werden.
 Zum Beispiel einen Motor und eine Batterie wie im folgenden Bild.
 
 .. image:: /Images/Bricklets/bricklet_voltage_current_setup_600.jpg
-   :scale: 70 %
+   :scale: 100 %
    :alt: Voltage/Current Bricklet with Battery and Motor connected to Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_current_setup_1200.jpg
@@ -152,7 +152,7 @@ zu erkennen, dass die Spannung Aufgrund der hohen Last ein wenig einbricht
 und der Motor ungefähr 40W Leistung verbraucht.
 
 .. image:: /Images/Bricklets/bricklet_voltage_current_brickv.png
-   :scale: 100 %
+   :scale: 70 %
    :alt: Voltage/Current Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.png
