@@ -97,7 +97,8 @@ your load. Connect the power supply with the terminal marked with "IN" and the
 load with the terminal marked "OUT". The polarity is marked with "+" and "-".
 
 .. warning:
-Keep the polarity in mind! This Bricklet is protected against polarity reversal!
+ 
+ Keep the polarity in mind! This Bricklet is protected against polarity reversal!
 
 
 Calibration
@@ -143,7 +144,7 @@ drops a bit because of the high load. In this example the motor
 utilizes about 40W power.
 
 .. image:: /Images/Bricklets/bricklet_voltage_current_brickv.png
-   :scale: 100 %
+   :scale: 70 %
    :alt: Voltage/Current Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.png

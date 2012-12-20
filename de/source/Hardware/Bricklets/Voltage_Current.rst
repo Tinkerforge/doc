@@ -98,8 +98,9 @@ Stromversorgung an. An die Klemme "OUT" die Last. Die Polung ist mit "+"
 und "-" vor der Klemme gekennzeichnet.
 
 .. warning:
-Wichtig beachte die Polung beim anschließen! Das Bricklet ist nicht 
-verpolungssicher!
+
+ Wichtig beachte die Polung beim anschließen! Das Bricklet ist nicht 
+ verpolungssicher!
 
 
 Kalibrierung
@@ -137,7 +138,7 @@ verbunden werden.
 Zum Beispiel einen Motor und eine Batterie wie im folgenden Bild.
 
 .. image:: /Images/Bricklets/bricklet_voltage_current_setup_600.jpg
-   :scale: 100 %
+   :scale: 70 %
    :alt: Voltage/Current Bricklet with Battery and Motor connected to Master Brick
    :align: center
    :target: ../../_images/Bricklets/bricklet_voltage_current_setup_1200.jpg
