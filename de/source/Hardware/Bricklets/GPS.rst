@@ -25,8 +25,8 @@ GPS Bricklet
 	             "GPS Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_gps_brickv_100.png",
-	             "Bricklets/bricklet_gps_brickv.png",
+	    tfdocimg("Bricklets/bricklet_gps_brickv_100.jpg",
+	             "Bricklets/bricklet_gps_brickv.jpg",
 	             "GPS Bricklet im Brick Viewer")
 	}}
 	{{
@@ -125,12 +125,11 @@ Erster Test
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
 aussehen.
 
-..
-  .. image:: /Images/Bricklets/bricklet_gps_brickv.jpg
-     :scale: 100 %
-     :alt: GPS Bricklet im Brick Viewer
-     :align: center
-     :target: ../../_images/Bricklets/bricklet_gps_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_gps_brickv.jpg
+ :scale: 100 %
+ :alt: GPS Bricklet im Brick Viewer
+ :align: center
+ :target: ../../_images/Bricklets/bricklet_gps_brickv.jpg
 
 |test_pi_ref|
 

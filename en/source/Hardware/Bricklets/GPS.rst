@@ -25,8 +25,8 @@ GPS Bricklet
 	             "GPS Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_gps_brickv_100.png",
-	             "Bricklets/bricklet_gps_brickv.png",
+	    tfdocimg("Bricklets/bricklet_gps_brickv_100.jpg",
+	             "Bricklets/bricklet_gps_brickv.jpg",
 	             "GPS Bricklet in Brick Viewer")
 	}}
 	{{
@@ -127,12 +127,11 @@ Test your GPS Bricklet
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
-..
-  .. image:: /Images/Bricklets/bricklet_gps_brickv.jpg
-     :scale: 100 %
-     :alt: GPS Bricklet in Brick Viewer
-     :align: center
-     :target: ../../_images/Bricklets/bricklet_gps_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_gps_brickv.jpg
+ :scale: 100 %
+ :alt: GPS Bricklet in Brick Viewer
+ :align: center
+ :target: ../../_images/Bricklets/bricklet_gps_brickv.jpg
 
 |test_pi_ref|
 
