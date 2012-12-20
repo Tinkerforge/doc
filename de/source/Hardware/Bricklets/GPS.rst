@@ -6,6 +6,35 @@
 GPS Bricklet
 ============
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_gps_tilted_350.jpg",
+	               "Bricklets/bricklet_gps_tilted_600.jpg",
+	               "GPS Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_gps_horizontal_100.jpg",
+	             "Bricklets/bricklet_gps_horizontal_600.jpg",
+	             "GPS Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_gps_battery_100.jpg",
+	             "Bricklets/bricklet_gps_battery_600.jpg",
+	             "GPS Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_gps_brickv_100.png",
+	             "Bricklets/bricklet_gps_brickv.png",
+	             "GPS Bricklet im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/gps_bricklet_dimensions_100.png",
+	             "Dimensions/gps_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
 
 Features
 --------
@@ -90,14 +119,7 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-..
-  .. image:: /Images/Bricklets/bricklet_gps_master_600.jpg
-     :scale: 100 %
-     :alt: GPS Bricklet verbunden mit Master Brick
-     :align: center
-     :target: ../../_images/Bricklets/bricklet_gps_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
