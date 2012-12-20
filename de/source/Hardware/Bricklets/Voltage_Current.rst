@@ -45,10 +45,11 @@ Voltage/Current Bricklet
 Features
 --------
 
-* Auflösung 1mW, 1mV, 1mA über kompletten Messbereich
 * Misst Leistung, Spannung und Strom bis zu 720W/36V/20A
+* Auflösung 1mW, 1mV, 1mA über kompletten Messbereich
 * Bidirektionale Strommessung (z.B. Laden/Entladen)
-* Konfigurierbare Mittelwertbildung, ADC-Wandlungszeit
+* Konfigurierbare Mittelwertbildung und ADC-Wandlungszeit
+
 
 Beschreibung
 ------------
@@ -68,14 +69,14 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Sensor                            INA226 + 4m Ohm Shunt Widerstand
+Sensor                            INA226 mit 4m Ohm Shunt Widerstand
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Maximaler Strom                   +-20A
 Maximale Spannung                 36V
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessung (L x B x H)             30 x 30 x 18mm (1.18 x 1.18 x 0.67")
+Abmessung (L x B x H)             30 x 30 x 18mm (1,18 x 1,18 x 0,67")
 Gewicht                           10g
 ================================  ============================================================
 
@@ -99,7 +100,7 @@ und "-" vor der Klemme gekennzeichnet.
 
 .. warning:
 
- Wichtig beachte die Polung beim anschließen! Das Bricklet ist nicht 
+ Die Polung beim Anschließen unbedingt beachten! Das Bricklet ist nicht
  verpolungssicher!
 
 
@@ -107,21 +108,20 @@ Kalibrierung
 ------------
 
 Die Strommessung des Voltage/Current Bricklet ist bei Raumtemperatur
-Werkskalibriert worden. The Messwerte können sich um wenige mA
+Werkskalibriert worden. Die Messwerte können um wenige mA
 verschieben falls in einer sehr kalten oder sehr warmen Umgebung
 gemessen wird. Mit einem präzisen Multimeter kann dies allerdings
 leicht behoben werden:
 
-Dazu muss zuerst im Brick Viewer für den "gain multiplier" und
-"gain divisor" 1 eingetragen werden. Dann muss "save calibration"
-gedrückt werden und danach kann dann der reale Strom
-vom Multimeter abgelesen werden und im Feld "gain multiplier"
-eingetragen werden. Im Feld "gain divisor" wird der aktuelle
+Dazu muss zuerst im Brick Viewer für den "Gain Multiplier" und
+"Gain Divisor" 1 eingetragen werden. Dann muss "Save Calibration"
+geklickt werden und danach kann dann der reale Strom
+vom Multimeter abgelesen werden und im Feld "Gain Multiplier"
+eingetragen werden. Im Feld "Gain Divisor" wird der aktuelle
 Messwert des Voltage/Current Bricklet eingetragen. Danach
-nochmal auf "save calibration" klicken.
+noch einmal "Save Calibration" klicken.
 
-Das Voltage/Current Bricklet ist nun für die neue Umgebung
-kalibriert.
+Das Voltage/Current Bricklet ist nun für die neue Umgebung kalibriert.
 
 
 .. _voltage_current_bricklet_test:

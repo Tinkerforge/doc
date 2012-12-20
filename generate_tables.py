@@ -140,8 +140,8 @@ bricklet_descriptions = {
     'de': 'Misst Spannungen bis zu 50V'
     },
 'voltage_current': {
-    'en': 'XXX TODO',
-    'de': 'XXX TODO'
+    'en': 'Measure power, voltage and current up to 720W/36V/20A',
+    'de': 'Misst Leistung, Spannung und Strom bis zu 720W/36V/20A'
     },
 }
 
