@@ -11,7 +11,7 @@ Features
 --------
 
 * Receives movement-, position-, altitude and time data
-* Internal antenna, external antenne optional
+* Internal antenna, external antenna optional
 * 66 channels, 10Hz update rate
 * High sensitivity and accuracy, interference canceller
 
@@ -30,7 +30,7 @@ as well as high precise time and date information.
 The used GPS module is optimized to get a fast fix, has a high input
 sensitivity (-165dBm) and a update rate of 10Hz suitable for drones or the like.
 Internal interference canceller rejects RF interference from other devices
-like Bluetooth or Wifi.
+like Bluetooth or WIFI.
 
 Technical Specifications
 ------------------------
@@ -38,10 +38,10 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-GPS Module Chipset                MTK MT3339 (PA6H Module)
-Sensitivity                       -148dBm (Acquisition), -165dBm (Tracking)*
+GPS Module Chipset                MTK MT3339 (PA6H module)
+Sensitivity                       -148dBm (acquisition), -165dBm (tracking)*
 Position Accuracy                 3.0m (50% CEP)*
-Time to first Fix                 <35s (without battery), <1s (with battery)*
+Time to first Fix                 < 35s (without battery), < 1s (with battery)*
 Update Rate                       10Hz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -54,31 +54,31 @@ Weight                            12g (without battery)
 Resources
 ---------
 
+* PA6H Datasheet (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/datasheets/FGPMMOPA6H.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/hardware/gps-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/gps_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/gps-bricklet/zipball/master>`__)
-* PA6H Datasheet (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/datasheets/FGPMMOPA6H.pdf>`__)
 
 
-External Antenne
+External Antenna
 ----------------
 
 With an `U.FL <http://en.wikipedia.org/wiki/Hirose_U.FL>`__ connector
 external antennas can be attached. This is makes sense if it should be
 mounted at another position than the Bricklet or if the reception should
-be improved. The module detecs automatically an external antenna
+be improved. The module detects automatically an external antenna
 and switches over.
 
 The connector is short-circuit protected and supplies the antenna with 
-3.3V/28mA. The external antenna should fullfill the following requirements:
+3.3V/28mA. The external antenna should fulfill the following requirements:
 
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
 Polarization                      Right-hand circular polarized
 Frequency Received                1.57542GHz +/- 1.023MHz
-Powersupply                       3.0V - 3.6V, 4mA - 20mA
-Gain                              >+15dBi
+Power Supply                      3.0V - 3.6V, 4mA - 20mA
+Gain                              > +15dBi
 Impedance                         50 Ohm
 Noise Figure                      < 1.5dB
 ================================  ============================================================
