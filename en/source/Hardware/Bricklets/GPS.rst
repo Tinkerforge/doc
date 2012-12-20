@@ -48,6 +48,7 @@ Update Rate                       10Hz
 Dimensions (W x D x H)            40 x 35 x 12mm (1.57 x 1.38 x 0.47")
 Weight                            12g (without battery)
 ================================  ============================================================
+
 \* Datasheet values
 
 Resources
