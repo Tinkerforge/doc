@@ -30,8 +30,8 @@ Voltage/Current Bricklet
 	             "Voltage/Current Bricklet mit Master Brick")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_voltage_current_brickv_100.jpg",
-	             "Bricklets/bricklet_voltage_current_brickv.jpg",
+	    tfdocimg("Bricklets/bricklet_voltage_current_brickv_100.png",
+	             "Bricklets/bricklet_voltage_current_brickv.png",
 	             "Voltage/Current Bricklet im Brick Viewer")
 	}}
 	{{
@@ -102,6 +102,25 @@ Wichtig beachte die Polung beim anschließen! Das Bricklet ist nicht
 verpolungssicher!
 
 
+Kalibrierung
+------------
+
+Die Strommessung des Voltage/Current Bricklet ist bei Raumtemperatur
+Werkskalibriert worden. The Messwerte können sich um wenige mA
+verschieben falls in einer sehr kalten oder sehr warmen Umgebung
+gemessen wird. Mit einem präzisen Multimeter kann dies allerdings
+leicht behoben werden:
+
+Dazu muss zuerst im Brick Viewer für den "gain multiplier" und
+"gain divisor" 1 eingetragen werden. Dann muss "save calibration"
+gedrückt werden und danach kann dann der reale Strom
+vom Multimeter abgelesen werden und im Feld "gain multiplier"
+eingetragen werden. Im Feld "gain divisor" wird der aktuelle
+Messwert des Voltage/Current Bricklet eingetragen. Danach
+nochmal auf "save calibration" klicken.
+
+Das Voltage/Current Bricklet ist nun für die neue Umgebung
+kalibriert.
 
 
 .. _voltage_current_bricklet_test:
@@ -127,16 +146,15 @@ Zum Beispiel einen Motor und eine Batterie wie im folgenden Bild.
 
 Wenn alles wie erwartet funktioniert wird die Stromaufnahme des Motors 
 angezeigt.
-Der Graph gibt den zeitlichen Verlauf der Stromaufnahme wieder.
+Der Graph gibt den zeitlichen Verlauf der Stromaufnahme wieder. Es ist
+zu erkennen, dass die Spannung Aufgrund der hohen Last ein wenig einbricht
+und der Motor ungefähr 40W Leistung verbraucht.
 
-.. image:: /Images/Bricklets/bricklet_voltage_current_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_voltage_current_brickv.png
    :scale: 100 %
    :alt: Voltage/Current Bricklet in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.jpg
-
-Der Screenshot zeigt eine hohe Spitze. Diese wird durch das Anfahren des Motors
-beim Anschließen der Batterie verursacht.
+   :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.png
 
 |test_pi_ref|
 
