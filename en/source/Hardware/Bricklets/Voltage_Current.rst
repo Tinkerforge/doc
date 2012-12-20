@@ -45,8 +45,8 @@ Voltage/Current Bricklet
 Features
 --------
 
-* 1mW, 1mV, 1mA resolution over the whole range
 * Measure power, voltage and current up to 720W/36V/20A
+* 1mW, 1mV, 1mA resolution over the whole range
 * Bidirectional current measurement (e.g. charge/discharge)
 * Configurable averaging and ADC conversion time
 
@@ -68,10 +68,10 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Sensor                            INA226 + 4m Ohm Shunt Resistor
+Sensor                            INA226 with 4m Ohm Shunt Resistor
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Current                           max +-20A
+Maximum Current                   +-20A
 Maximum Input Voltage             36V
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -98,7 +98,7 @@ load with the terminal marked "OUT". The polarity is marked with "+" and "-".
 
 .. warning:
  
- Keep the polarity in mind! This Bricklet is protected against polarity reversal!
+ Keep the polarity in mind! This Bricklet is not protected against polarity reversal!
 
 
 Calibration
@@ -109,11 +109,11 @@ at room temperature. The readings can shift by a few mA if the environment
 is very cold or very hot. In this case you can recalibrate the Bricklet
 with a precise multimeter:
 
-Start the Brick Viewer and set gain multiplier and divisor to 1, press
-"save calibration". Now read the real current measurement from your multimeter
-and put it in the gain multiplier field. Put the current current measurement
-from the Voltage/Current Bricklet in the gain divisor field and press
-"save calibration" again.
+Start the Brick Viewer and set "Gain Multiplier" and "Gain Divisor" to 1, press
+"Save Calibration". Now read the real current measurement from your multimeter
+and put it in the "Gain Multiplier" field. Put the current current measurement
+from the Voltage/Current Bricklet in the "Gain Divisor" field and press
+"Save Calibration" again.
 
 Now the Voltage/Current Bricklet is calibrated for the new environment.
 
