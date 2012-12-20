@@ -100,6 +100,21 @@ load with the terminal marked "OUT". The polarity is marked with "+" and "-".
 Keep the polarity in mind! This Bricklet is protected against polarity reversal!
 
 
+Calibration
+-----------
+
+The current measurement of the Voltage/Current Bricklet is factory calibrated
+at room temperature. The readings can shift by a few mA if the environment
+is very cold or very hot. In this case you can recalibrate the Bricklet
+with a precise multimeter:
+
+Start the Brick Viewer and set gain multiplier and divisor to 1, press
+"save calibration". Now read the real current measurement from your multimeter
+and put it in the gain multiplier field. Put the current current measurement
+from the Voltage/Current Bricklet in the gain divisor field and press
+"save calibration" again.
+
+Now the Voltage/Current Bricklet is calibrated for the new environment.
 
 
 .. _voltage_current_bricklet_test:
