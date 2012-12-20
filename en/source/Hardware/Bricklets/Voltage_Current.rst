@@ -30,8 +30,8 @@ Voltage/Current Bricklet
 	             "Voltage/Current Bricklet with Master Brick")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_voltage_current_brickv_100.jpg",
-	             "Bricklets/bricklet_voltage_current_brickv.jpg",
+	    tfdocimg("Bricklets/bricklet_voltage_current_brickv_100.png",
+	             "Bricklets/bricklet_voltage_current_brickv.png",
 	             "Voltage/Current Bricklet in Brick Viewer")
 	}}
 	{{
@@ -123,16 +123,15 @@ picture.
 |test_tab|
 
 If everything went as expected you can now see the current used by the motor 
-and a graph that shows the current over time.
+and a graph that shows the current over time. You can see that the voltage
+drops a bit because of the high load. In this example the motor
+utilizes about 40W power.
 
-.. image:: /Images/Bricklets/bricklet_voltage_current_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_voltage_current_brickv.png
    :scale: 100 %
    :alt: Voltage/Current Bricklet in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.jpg
-
-In the screenshot you can see a high current peak. This is caused by the 
-starting of the motor when the battery is connected.
+   :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.png
 
 |test_pi_ref|
 
