@@ -117,3 +117,5 @@ Accessories
    Software/*
    Software/Bricks/*
    Software/Bricklets/*
+
+Click `here <http://www.tinkerforge.com/doc_v2/index.html>`__ for Protocol 2.0 beta documentation.
