@@ -76,8 +76,8 @@ bricklet_descriptions = {
     'de': 'Zwei Relais um AC/DC Geräte zu schalten'
     },
 'gps': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Determine position, velocity and altitude',
+    'de': 'Bestimmt Position, Geschwindigkeit und Höhe'
     },
 'humidity': {
     'en': 'Measures relative humidity',
