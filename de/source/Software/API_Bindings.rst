@@ -63,7 +63,10 @@ Projektordner kopiert werden::
   -> brick_stepper.h
   -> example_configuration.c
 
-Die einzige Abhängigkeit auf unix-artigen Systemen ist pthreads. Somit sieht der
+GCC
+"""
+
+Die einzige Abhängigkeit auf Unix-artigen Systemen ist pthreads. Somit sieht der
 Befehl um das Beispiel mit GCC unter Linux zu kompilieren wie folgt aus::
 
  gcc -pthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
@@ -73,6 +76,9 @@ Netzwerkverbindung verwendet. Mit MinGW lässt sich das Beispiel wie folgt
 kompilieren (Linkerparameter müssen nach den Quelldateien angegeben werden)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
+
+Visual Studio
+"""""""""""""
 
 Mit Visual Studio kann der ``project_folder/`` wie folgt verwendet werden:
 
@@ -103,6 +109,10 @@ Zusätzlich muss noch ``ws2_32.lib`` (WinSock2) dem Projekt hinzugefügt werden:
 * Linker
 * Input, Option "Additional Dependencies"
 * Füge ``ws2_32.lib;`` hinzu
+
+Ältere Versionen von Visual Studio bringen keine ``stdint.h``. Eine kompatible
+Version gibt es `hiere <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
+Falls nötig diese herunterladen und im ``project_folder/`` speichern.
 
 Das waren alle nötigen Änderungen, jetzt kann es los gehen!
 

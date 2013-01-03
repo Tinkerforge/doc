@@ -65,6 +65,9 @@ project::
   -> brick_stepper.h
   -> example_configuration.c
 
+GCC
+"""
+
 The only dependency on Unix-like systems is pthreads, therefore a
 compilation of the example with GCC on Linux looks like::
 
@@ -75,6 +78,9 @@ connection. Under MinGW we can compile the example as following (the library
 linking must come after the source)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
+
+Visual Studio
+"""""""""""""
 
 With Visual Studio we can use our ``project_folder/`` as follows:
 
@@ -105,6 +111,10 @@ Also we have to include ``ws2_32.lib`` (WinSock2) by clicking on:
 * Linker
 * Input, option "Additional Dependencies"
 * Add ``ws2_32.lib;``
+
+Older version of Visual Studio don't come with ``stdint.h``. A compatible
+version can be found `here <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
+If necessary download it to the ``project_folder/``.
 
 Thats it, we are ready to go!
 
