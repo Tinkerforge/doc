@@ -600,6 +600,16 @@ Test in simulator by clicking:
 * Run
 * Android Application
 
+.. note::
+  This example calls potentially blocking methods on the UI thread, such as
+  ``new IPConnection`` and ``setState``. This is not recommended because it can
+  make the UI hang. To avoid this the communication via the IPConnection should
+  be done using an extra thread, for example by using an ``AsyncTask``.
+
+  Since Android 4.2 calling ``new IPConnection`` on the UI thread will cause an
+  ``andriod.os.NetworkOnMainThreadException`` to be thrown. See this
+  `StackOverflow question <http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
+  for more details.
 
 .. _api_bindings_php:
 

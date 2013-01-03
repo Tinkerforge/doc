@@ -610,6 +610,18 @@ Die App kann nun im Simulator getestet werden:
 * Run
 * Android Application
 
+.. note::
+  Diese Beispiel ruft potentiell blockierende Methoden auf dem UI Thread auf,
+  zum Beispiel ``new IPConnection`` und ``setState``. Davon wird im Allgemeinen
+  abgeraten, da es zum Hängen des UIs führen kann. Um dies zu vermeiden sollte
+  die Kommunikation über die IPConnection in einen extra Thread ausgelagert
+  werden, zum Beispiel mit Hilfe eines ``AsyncTask``.
+
+  Seit Android 4.2 führt der Aufruf von ``new IPConnection`` auf dem UI Thread
+  zu einer ``andriod.os.NetworkOnMainThreadException``. Siehe diese
+  `StackOverflow Frage <http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
+  für weitere Informationen.
+
 
 .. _api_bindings_php:
 
