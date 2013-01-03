@@ -47,7 +47,7 @@ eingebunden werden können. Wir bieten keine vorkompilierte Bibliothek an, da
 dies zu viel Aufwand wäre alle möglichen Kombinationen von Architekturen und
 Betriebssystem zu versorgen. Die Bindings sollten aber auf den meisten
 Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
-POSIX Systeme, wie Linux und Mac OS, usw.) lauffähig sein.
+POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit GCC unter
 Linux kompilieren. Dafür müssen die IP Connection und die Stepper Brick
@@ -276,7 +276,7 @@ werden::
   -> ExampleConfiguration.cs
 
 In diesem Ordner kann jetzt ein C# Compiler mit den folgenden Parametern
-aufgerufen werden (1. Windows und 2. Linux/Mac OS (Mono))::
+aufgerufen werden (1. Windows und 2. Linux/Mac OS X (Mono))::
 
  1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
  2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
@@ -421,7 +421,10 @@ eingebunden werden können. Wir bieten keine vorkompilierte Bibliothek an, da
 dies zu viel Aufwand wäre alle möglichen Kombinationen von Architekturen und
 Betriebssystem zu versorgen. Die Bindings sollten aber auf den meisten
 Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
-POSIX Systeme, wie Linux und Mac OS, usw.) lauffähig sein.
+POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
+
+Lazarus
+"""""""
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit dem Free
 Pascal Compiler (FPC) den Lazarus verwendet unter Linux kompilieren. Dafür
@@ -457,6 +460,9 @@ Mit Lazarus kann der ``project_folder/`` so verwendet werden:
 * Wähle einen "Application Class Name" und "Title"
 * Klicke OK
 
+Delphi
+""""""
+
 Mit Delphi XE2 (ältere Delphiversion sollten ähnlich funktionieren) kann der
 ``project_folder/`` wie folgt verwendet werden. Zuerst muss
 ``ExampleConfiguration.pas`` in ``ExampleConfiguration.dpr`` umbenannt werden
@@ -489,12 +495,12 @@ kopiert werden::
   -> ExampleConfiguration.java
 
 In diesem Ordner kann jetzt der Java Compiler mit den folgenden Parametern
-aufgerufen werden (1. Windows und 2. Linux/Mac OS)::
+aufgerufen werden (1. Windows und 2. Linux/Mac OS X)::
 
  1.) javac -cp Tinkerforge.jar;. ExampleConfiguration.java
  2.) javac -cp Tinkerforge.jar:. ExampleConfiguration.java
 
-Und ausgeführt wird es mit dem folgenden Befehl (1. Windows and 2. Linux/Mac OS)::
+Und ausgeführt wird es mit dem folgenden Befehl (1. Windows and 2. Linux/Mac OS X)::
 
  1.) java -cp Tinkerforge.jar;. ExampleConfiguration
  2.) java -cp Tinkerforge.jar:. ExampleConfiguration

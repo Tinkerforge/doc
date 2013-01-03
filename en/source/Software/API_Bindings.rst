@@ -48,7 +48,7 @@ We do not offer a pre-compiled library, since it would be a
 pain in the ass to provide them for all combinations of architectures and
 operating systems. This means, the
 bindings should work on most architectures (ARM, x86, etc.) and on most
-operating systems (Windows and POSIX systems, such as Linux and Mac OS, etc.).
+operating systems (Windows and POSIX systems, such as Linux and Mac OS X, etc.).
 
 As an example we will compile the Stepper Brick configuration example
 with GCC on Windows and Linux.
@@ -274,7 +274,7 @@ For this we create a folder and copy the ``Tinkerforge.dll`` and the
   -> ExampleConfiguration.cs
 
 In this folder we can now call the C# compiler with the following parameters
-(1. Windows and 2. Linux/Mac OS (Mono))::
+(1. Windows and 2. Linux/Mac OS X (Mono))::
 
  1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
  2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
@@ -416,7 +416,10 @@ project hassle-free. We do not offer a pre-compiled library, since it would be
 a pain in the ass to provide them for all combinations of architectures and
 operating systems. This means, the bindings should work on most architectures
 (ARM, x86, etc.) and on most operating systems (Windows and POSIX systems such
-as Linux and Mac OS, etc.).
+as Linux and Mac OS X, etc.).
+
+Lazarus
+"""""""
 
 As an example we will compile the Stepper Brick configuration example with
 the Free Pascal Compiler (FPC) that comes with the Lazarus. For that we
@@ -452,6 +455,9 @@ With Lazarus we can use our ``project_folder/`` by clicking:
 * Choose "Application Class Name" and "Title"
 * Click OK
 
+Delphi
+""""""
+
 With Delphi XE2 (older Delphi version should work similar) we can use our
 ``project_folder/`` as follows. First rename ``ExampleConfiguration.pas`` to
 ``ExampleConfiguration.dpr`` then click:
@@ -482,12 +488,12 @@ Create a new folder and copy the ``Tinkerforge.jar`` and the
   -> ExampleConfiguration.java
 
 In this folder we can now call the Java compiler with the following
-parameters (1. Windows and 2. Linux/Mac OS)::
+parameters (1. Windows and 2. Linux/Mac OS X)::
 
  1.) javac -cp Tinkerforge.jar;. ExampleConfiguration.java
  2.) javac -cp Tinkerforge.jar:. ExampleConfiguration.java
 
-and run it with the following parameters (1. Windows and 2. Linux/Mac OS)::
+and run it with the following parameters (1. Windows and 2. Linux/Mac OS X)::
 
  1.) java -cp Tinkerforge.jar;. ExampleConfiguration
  2.) java -cp Tinkerforge.jar:. ExampleConfiguration
