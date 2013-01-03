@@ -110,8 +110,8 @@ Zusätzlich muss noch ``ws2_32.lib`` (WinSock2) dem Projekt hinzugefügt werden:
 * Input, Option "Additional Dependencies"
 * Füge ``ws2_32.lib;`` hinzu
 
-Ältere Versionen von Visual Studio bringen keine ``stdint.h``. Eine kompatible
-Version gibt es `hiere <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
+Ältere Versionen von Visual Studio bringen kein ``stdint.h`` mit. Eine kompatible
+Version gibt es `hier <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
 Falls nötig diese herunterladen und im ``project_folder/`` speichern.
 
 Das waren alle nötigen Änderungen, jetzt kann es los gehen!
