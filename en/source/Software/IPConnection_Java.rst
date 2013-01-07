@@ -49,22 +49,26 @@ Basic Functions
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and throws an IOException 
+ Blocks until the connection is established and throws an IOException
  if there is no Brick Daemon or WIFI/Ethernet Extension
  listening at the given host and port.
+
 
 .. java:function:: public void IPConnection::disconnect()
 
  Disconnects the TCP/IP connection to the Brick Daemon or to
  the WIFI/Ethernet Extension.
 
+
 .. java:function:: public byte IPConnection::getConnectionState()
 
  Can return the following states:
 
- * CONNECTION_DISCONNECTED (0): No connection is established.
- * CONNECTION_CONNETED (1): A connection to the Brickd Daemon or the WIFI/Ethernet Extension  is established.
- * CONNECTION_PENDING (2): IP Connection is currently trying to connect.
+ * CONNECTION_STATE_DISCONNECTED (0): No connection is established.
+ * CONNECTION_STATE_CONNETED (1): A connection to the Brickd Daemon or the
+   WIFI/Ethernet Extension  is established.
+ * CONNECTION_STATE_PENDING (2): IP Connection is currently trying to connect.
+
 
 .. java:function:: public void IPConnection::setAutoReconnect(boolean autoReconnect)
 
@@ -74,16 +78,19 @@ Basic Functions
 
  Default value is *true*.
 
+
 .. java:function:: public boolean IPConnection::getAutoReconnect()
 
  Returns *true* if auto-reconnect is enabled, *false* otherwise.
 
+
 .. java:function:: public void IPConnection::setTimeout(int timeout)
 
- Sets the timeout (in ms) for getters and for setters for which 
+ Sets the timeout (in ms) for getters and for setters for which
  "response expected" is activated.
 
  Default timeout is 2500ms.
+
 
 .. java:function:: public int IPConnection::getTimeout()
 
@@ -99,39 +106,51 @@ Basic Functions
 Listener Configuration
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. java:function:: public void IPConnection::addListener(Object o)
+.. java:function:: public void IPConnection::addListener(Object object)
 
  This method registers the following listener:
 
  .. java:function:: public class IPConnection.EnumerateListener()
 
-  .. java:function:: public void enumerate(String UID, String connectedUID, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
+  .. java:function:: public void enumerate(String uid, String connectedUid, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
    :noindex:
 
    The listener receives seven parameters:
 
    * *uid*: The UID of the device.
-   * *connectedUID*: UID where the device is connected to. For a Bricklet this will be a UID of the Brick where it is connected to. For a Brick it will be the UID of the bottom Master Brick in the stack. For the bottom Master Brick in a Stack this will be "1". With this information it is possible to reconstruct the complete network topology. 
-   * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets: 'a' - 'd' (position on Brick).
+   * *connectedUID*: UID where the device is connected to. For a Bricklet
+     this will be a UID of the Brick where it is connected to. For a Brick it
+     will be the UID of the bottom Master Brick in the stack. For the bottom
+     Master Brick in a stack this will be "1". With this information it is
+     possible to reconstruct the complete network topology.
+   * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+     'a' - 'd' (position on Brick).
    * *hardwareVersion*: Major, minor and release number for hardware version.
    * *firmwareVersion*: Major, minor and release number for firmware version.
-   * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
+   * *deviceIdentifier*: A number that represents the device, instead of the
+     name of the device (easier to parse).
    * *enumerationType*: Type of enumeration.
 
    Possible enumeration types are:
 
-   * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
-   * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
-   * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
+   * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
+     triggered by user).
+   * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically
+     send by Brick after establishing a communication connection). This
+     indicates that the device has potentially lost its previous configuration
+     and needs to be reconfigured.
+   * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible
+     for USB connection). In this case only *uid* and *enumerationType*
+     are vaild.
 
-   It should be possible to implement "plug 'n play" functionality with this
+   It should be possible to implement plug-and-play functionality with this
    (as is done in Brick Viewer).
 
  .. java:function:: public class IPConnection.ConnectedListener()
 
-  .. java:function:: public void connected(int reason)
+  .. java:function:: public void connected(short connectReason)
    :noindex:
-	
+
    This listener is called whenever the IP connection is connected, possible reasons are:
 
    * CONNECT_REASON_REQUEST (0): Connection established after request from user.
@@ -139,7 +158,7 @@ Listener Configuration
 
  .. java:function:: public class IPConnection.DisconnectedListener()
 
-  .. java:function:: public void disconnected(int reason)
+  .. java:function:: public void disconnected(short disconnectReason)
    :noindex:
 
    This listener is called whenever the IP connection is disconnected, possible reasons are:

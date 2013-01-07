@@ -49,7 +49,7 @@ Basic Functions
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and throws an IOException 
+ Blocks until the connection is established and throws an IOException
  if there is no Brick Daemon or WIFI/Ethernet Extension
  listening at the given host and port.
 
@@ -82,7 +82,7 @@ Basic Functions
 
 .. delphi:function:: procedure TIPConnection.SetTimeout(const timeout_: longword)
 
- Sets the timeout (in ms) for getters and for setters for which 
+ Sets the timeout (in ms) for getters and for setters for which
  "response expected" is activated.
 
  Default timeout is 2500ms.
@@ -102,9 +102,9 @@ Basic Functions
  wait for a specific callback or if the IP Connection was created in a threads.
 
  Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
- 
- 
-.. delphi:function:: procedure IPConnection.Unwait()
+
+
+.. delphi:function:: procedure TIPConnection.Unwait()
 
  Unwaits the thread previously stopped by :delphi:func:`TIPConnection.Wait`
 
@@ -126,7 +126,7 @@ property of the ipcon object:
 
  .. code-block:: delphi
 
-  procedure TExample.MyCallback(const param: word);
+  procedure TExample.MyCallback(sender: TIPConnection; const param: word);
   begin
     WriteLn(param);
   end;
@@ -140,34 +140,47 @@ The available callback property and their type of parameters are described below
 
  .. code-block:: delphi
 
-  procedure(sender: TObject; const uid: string; const connectedUid: string; const position: char; const hardwareVersion: TVersionNumber; const firmwareVersion: TVersionNumber; const deviceIdentifier: word; const enumerationType: byte) of object; 
+  procedure(sender: TIPConnection; const uid: string; const connectedUid: string; const position: char; const hardwareVersion: TVersionNumber; const firmwareVersion: TVersionNumber; const deviceIdentifier: word; const enumerationType: byte) of object;
 
  The callback has seven parameters:
 
  * *uid*: The UID of the device.
- * *connectedUID*: UID where the device is connected to. For a Bricklet this will be a UID of the Brick where it is connected to. For a Brick it will be the UID of the bottom Master Brick in the stack. For the bottom Master Brick in a Stack this will be "1". With this information it is possible to reconstruct the complete network topology. 
- * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets: 'a' - 'd' (position on Brick).
+ * *connectedUID*: UID where the device is connected to. For a Bricklet this
+   will be a UID of the Brick where it is connected to. For a Brick it will be
+   the UID of the bottom Master Brick in the stack. For the bottom Master Brick
+   in a stack this will be "1". With this information it is possible to
+   reconstruct the complete network topology.
+ * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+   'a' - 'd' (position on Brick).
  * *hardwareVersion*: Major, minor and release number for hardware version.
  * *firmwareVersion*: Major, minor and release number for firmware version.
- * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
+ * *deviceIdentifier*: A number that represents the device, instead of the
+   name of the device (easier to parse).
  * *enumerationType*: Type of enumeration.
 
  Possible enumeration types are:
 
- * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
- * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
- * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
+ * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered
+   by user).
+ * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically
+   send by Brick after establishing a communication connection). This indicates
+   that the device has potentially lost its previous configuration and needs
+   to be reconfigured.
+ * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible
+   for USB connection). In this case only *uid* and *enumerationType*
+   are vaild.
 
- It should be possible to implement "plug 'n play" functionality with this
+ It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
 
 .. delphi:function:: property TIPConnection.OnEnumerate
 
  .. code-block:: delphi
 
-  procedure(sender: TObject; const connectReason: byte) of object;
+  procedure(sender: TIPConnection; const connectReason: byte) of object;
 
- This callback is called whenever the IP connection is connected, possible reasons are:
+ This callback is called whenever the IP connection is connected,
+ possible reasons are:
 
  * CONNECT_REASON_REQUEST (0): Connection established after request from user.
  * CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
@@ -176,10 +189,12 @@ The available callback property and their type of parameters are described below
 
  .. code-block:: delphi
 
-  procedure(sender: TObject; const disconnectReason: byte) of object;
+  procedure(sender: TIPConnection; const disconnectReason: byte) of object;
 
- This callback is called whenever the IP connection is disconnected, possible reasons are:
+ This callback is called whenever the IP connection is disconnected,
+ possible reasons are:
 
  * DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
  * DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
- * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or WIFI/Ethernet Extension.
+ * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick Daemon or
+   WIFI/Ethernet Extension.
