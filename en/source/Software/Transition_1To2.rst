@@ -3,16 +3,70 @@
 Transitioning from Protocol V1 to Protocol V2
 =============================================
 
+Update Tools and Firmwares
+--------------------------
+
+Updating to Protocol V2 is quite easy. Start by installing the :ref:`newest
+version <downloads_tools>` of the Brick Daemon and the Brick Viewer.
+
+After that you should start by updating all of your Bricks, you can update
+them one by one as described :ref:`here <brickv_flash_firmware>`.
+
+To update the Bricklets, there is an automated process. You can fill up one
+of your updates Bricks with Bricklets, click on "Updates" in the Brick
+Viewer and use the first tab. There you should see all of your connected
+Bricks with the corresponding connected Bricklets. Bricklets that are out
+of date are marked red. You can update all Bricklets at once by clicking
+on "Auto-Update All Bricklets".
+
+.. image:: /Images/Screenshots/bricklet_auto_update.jpg
+   :scale: 100 %
+   :alt: Bricklet auto update feature of the Brick Viewer
+   :align: center
+   :target: ../_images/Screenshots/bricklet_auto_update.jpg
+
+If the auto update does not work, you can of course still update the
+Bricklets individually by using the normal
+:ref:`Bricklet updating process <brickv_flash_plugin>`.
+
 General
 -------
 
 As a first step you need to update all of your Bricklet firmwares and
-Brick plugins. See here (TODO) for information about the updating procedure.
+Brick plugins. See above for information about the updating procedure.
 
-TODO: General stuff about the transitioning.
+The IPConnection has several new functions that are implemented for all 
+languages, they include:
+
+* get_connection_state
+* set_auto_reconnect
+* get_auto_reconnect
+* set_timeout
+* get_timeout
+* wait (replacement for join)
+* unwait
+* connect
+
+Additionally, the enumeration callback has now a different signature. With
+the returned data it should now be possible to reconstruct the complete
+topology of the network of Bricks and Bricklets.
+
+Documentation for these functions can be found in the IPConnection
+documentation for each language, see :ref:`here <api_bindings_ip_connection>`.
+
+Every Brick and Bricklet has the following new functions:
+
+* set_response_expected
+* get_response_expected
+* set_response_expected_all
+
+Documentation for these functions can be found in the normal programming
+language documentation for each Brick and Bricklet.
 
 In the following we will compare relevant code snippets from Protocol V1
-to equivalents from Protocol V2.
+to equivalents from Protocol V2. Keep in mind that you also need to use
+the newest version Bindings for your specific programming languages to
+be able to utilize the new Protocol V2 features.
 
 
 C/C++

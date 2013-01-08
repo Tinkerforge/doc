@@ -11,6 +11,7 @@ are routed back to the caller.
 See also our :ref:`tutorial` for more information on how everything works
 together.
 
+.. _api_bindings_ip_connection:
 
 IP Connection
 -------------
