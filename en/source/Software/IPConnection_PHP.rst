@@ -107,7 +107,7 @@ Callbacks
 
  .. code-block:: php
 
-  void callback(string $uid, string $connectedUid, char $position, array $hardwareVersion, array $firmwareVersion, int $deviceIdentifier, int $enumerationType, mixed $userData = NULL)
+  void callback(string $uid, string $connectedUid, char $position, array $hardwareVersion, array $firmwareVersion, int $deviceIdentifier, int $enumerationType, mixed $userData)
 
  The callback receives seven parameters:
 
@@ -145,7 +145,7 @@ Callbacks
 
  .. code-block:: php
 
-  void callback(int $connectReason)
+  void callback(int $connectReason, mixed $userData)
 
  This callback is called whenever the IP connection is connected, possible
  reasons are:
@@ -157,7 +157,7 @@ Callbacks
 
  .. code-block:: php
 
-  void callback(int $connectReason)
+  void callback(int $connectReason, mixed $userData)
 
  This callback is called whenever the IP connection is disconnected, possible
  reasons are:

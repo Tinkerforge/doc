@@ -94,7 +94,7 @@ Grundfunktionen
 Konfigurationsfunktionen für Callbacks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. php:function:: void IPConnection::registerCallback(int $id, callable $callback [, mixed $userData])
+.. php:function:: void IPConnection::registerCallback(int $id, callable $callback, mixed $userData = NULL)
 
  Registriert einen Callback für eine gegebene ID.
 
@@ -109,7 +109,7 @@ Callbacks
 
  .. code-block:: php
 
-  void callback(string $uid, string $connectedUid, char $position, array $hardwareVersion, array $firmwareVersion, int $deviceIdentifier, int $enumerationType [, mixed $userData])
+  void callback(string $uid, string $connectedUid, char $position, array $hardwareVersion, array $firmwareVersion, int $deviceIdentifier, int $enumerationType, mixed $userData)
 
  Der Callback empfängt sieben Parameter:
 
@@ -145,7 +145,7 @@ Callbacks
 
  .. code-block:: php
 
-  void callback(int $connectReason)
+  void callback(int $connectReason, mixed $userData)
 
  Dieser Callback wird aufgerufen wenn die IP Connection eine Verbindung
  aufgebaut hat, mögliche Gründe sind:
@@ -158,7 +158,7 @@ Callbacks
 
  .. code-block:: php
 
-  void callback(int $disconnectReason)
+  void callback(int $disconnectReason, mixed $userData)
 
  Dieser Callback wird aufgerufen wenn die Verbindung der IP Connection
  getrennt wird, mögliche Gründe sind:
