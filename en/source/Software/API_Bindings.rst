@@ -48,7 +48,7 @@ We do not offer a pre-compiled library, since it would be a
 pain in the ass to provide them for all combinations of architectures and
 operating systems. This means, the
 bindings should work on most architectures (ARM, x86, etc.) and on most
-operating systems (Windows and POSIX systems, such as Linux and Mac OS, etc.).
+operating systems (Windows and POSIX systems, such as Linux and Mac OS X, etc.).
 
 As an example we will compile the Stepper Brick configuration example
 with GCC on Windows and Linux.
@@ -65,6 +65,9 @@ project::
   -> brick_stepper.h
   -> example_configuration.c
 
+GCC
+"""
+
 The only dependency on Unix-like systems is pthreads, therefore a
 compilation of the example with GCC on Linux looks like::
 
@@ -75,6 +78,9 @@ connection. Under MinGW we can compile the example as following (the library
 linking must come after the source)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
+
+Visual Studio
+"""""""""""""
 
 With Visual Studio we can use our ``project_folder/`` as follows:
 
@@ -105,6 +111,10 @@ Also we have to include ``ws2_32.lib`` (WinSock2) by clicking on:
 * Linker
 * Input, option "Additional Dependencies"
 * Add ``ws2_32.lib;``
+
+Older version of Visual Studio don't come with ``stdint.h``. A compatible
+version can be found `here <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
+If necessary download it to the ``project_folder/``.
 
 Thats it, we are ready to go!
 
@@ -264,7 +274,7 @@ For this we create a folder and copy the ``Tinkerforge.dll`` and the
   -> ExampleConfiguration.cs
 
 In this folder we can now call the C# compiler with the following parameters
-(1. Windows and 2. Linux/Mac OS (Mono))::
+(1. Windows and 2. Linux/Mac OS X (Mono))::
 
  1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
  2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
@@ -406,7 +416,10 @@ project hassle-free. We do not offer a pre-compiled library, since it would be
 a pain in the ass to provide them for all combinations of architectures and
 operating systems. This means, the bindings should work on most architectures
 (ARM, x86, etc.) and on most operating systems (Windows and POSIX systems such
-as Linux and Mac OS, etc.).
+as Linux and Mac OS X, etc.).
+
+Lazarus
+"""""""
 
 As an example we will compile the Stepper Brick configuration example with
 the Free Pascal Compiler (FPC) that comes with the Lazarus. For that we
@@ -442,6 +455,9 @@ With Lazarus we can use our ``project_folder/`` by clicking:
 * Choose "Application Class Name" and "Title"
 * Click OK
 
+Delphi
+""""""
+
 With Delphi XE2 (older Delphi version should work similar) we can use our
 ``project_folder/`` as follows. First rename ``ExampleConfiguration.pas`` to
 ``ExampleConfiguration.dpr`` then click:
@@ -472,12 +488,12 @@ Create a new folder and copy the ``Tinkerforge.jar`` and the
   -> ExampleConfiguration.java
 
 In this folder we can now call the Java compiler with the following
-parameters (1. Windows and 2. Linux/Mac OS)::
+parameters (1. Windows and 2. Linux/Mac OS X)::
 
  1.) javac -cp Tinkerforge.jar;. ExampleConfiguration.java
  2.) javac -cp Tinkerforge.jar:. ExampleConfiguration.java
 
-and run it with the following parameters (1. Windows and 2. Linux/Mac OS)::
+and run it with the following parameters (1. Windows and 2. Linux/Mac OS X)::
 
  1.) java -cp Tinkerforge.jar;. ExampleConfiguration
  2.) java -cp Tinkerforge.jar:. ExampleConfiguration
@@ -600,6 +616,16 @@ Test in simulator by clicking:
 * Run
 * Android Application
 
+.. note::
+  This example calls potentially blocking methods on the UI thread, such as
+  ``new IPConnection`` and ``setState``. This is not recommended because it can
+  make the UI hang. To avoid this the communication via the IPConnection should
+  be done using an extra thread, for example by using an ``AsyncTask``.
+
+  Since Android 4.2 calling ``new IPConnection`` on the UI thread will cause an
+  ``andriod.os.NetworkOnMainThreadException`` to be thrown. See this
+  `StackOverflow question <http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
+  for more details.
 
 .. _api_bindings_php:
 

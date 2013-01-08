@@ -11,10 +11,10 @@ type
   private
     ipcon: TIPConnection;
   public
-    procedure EnumerateCB(sender: TObject; const uid: string; const connectedUid: string;
-                          const position: char; const hardwareVersion: TVersionNumber;
-                          const firmwareVersion: TVersionNumber; const deviceIdentifier: word;
-                          const enumerationType: byte);
+    procedure EnumerateCB(TIPConnection: TObject;
+                          const uid: string; const connectedUid: string; const position: char;
+                          const hardwareVersion: TVersionNumber; const firmwareVersion: TVersionNumber;
+                          const deviceIdentifier: word; const enumerationType: byte);
     procedure Execute;
   end;
 
@@ -26,10 +26,10 @@ var
   e: TExample;
 
 { Print incoming enumeration }
-procedure TExample.EnumerateCB(sender: TObject; const uid: string; const connectedUid: string;
-                               const position: char; const hardwareVersion: TVersionNumber;
-                               const firmwareVersion: TVersionNumber; const deviceIdentifier: word;
-                               const enumerationType: byte);
+procedure TExample.EnumerateCB(TIPConnection: TObject;
+                               const uid: string; const connectedUid: string; const position: char;
+                               const hardwareVersion: TVersionNumber; const firmwareVersion: TVersionNumber;
+                               const deviceIdentifier: word; const enumerationType: byte);
 begin
   WriteLn('UID:               ' + uid);
   WriteLn('Enumerate Type:    ' + IntToStr(enumerationType));

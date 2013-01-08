@@ -47,7 +47,7 @@ eingebunden werden können. Wir bieten keine vorkompilierte Bibliothek an, da
 dies zu viel Aufwand wäre alle möglichen Kombinationen von Architekturen und
 Betriebssystem zu versorgen. Die Bindings sollten aber auf den meisten
 Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
-POSIX Systeme, wie Linux und Mac OS, usw.) lauffähig sein.
+POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit GCC unter
 Linux kompilieren. Dafür müssen die IP Connection und die Stepper Brick
@@ -63,7 +63,10 @@ Projektordner kopiert werden::
   -> brick_stepper.h
   -> example_configuration.c
 
-Die einzige Abhängigkeit auf unix-artigen Systemen ist pthreads. Somit sieht der
+GCC
+"""
+
+Die einzige Abhängigkeit auf Unix-artigen Systemen ist pthreads. Somit sieht der
 Befehl um das Beispiel mit GCC unter Linux zu kompilieren wie folgt aus::
 
  gcc -pthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
@@ -73,6 +76,9 @@ Netzwerkverbindung verwendet. Mit MinGW lässt sich das Beispiel wie folgt
 kompilieren (Linkerparameter müssen nach den Quelldateien angegeben werden)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
+
+Visual Studio
+"""""""""""""
 
 Mit Visual Studio kann der ``project_folder/`` wie folgt verwendet werden:
 
@@ -103,6 +109,10 @@ Zusätzlich muss noch ``ws2_32.lib`` (WinSock2) dem Projekt hinzugefügt werden:
 * Linker
 * Input, Option "Additional Dependencies"
 * Füge ``ws2_32.lib;`` hinzu
+
+Ältere Versionen von Visual Studio bringen kein ``stdint.h`` mit. Eine kompatible
+Version gibt es `hier <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
+Falls nötig diese herunterladen und im ``project_folder/`` speichern.
 
 Das waren alle nötigen Änderungen, jetzt kann es los gehen!
 
@@ -266,7 +276,7 @@ werden::
   -> ExampleConfiguration.cs
 
 In diesem Ordner kann jetzt ein C# Compiler mit den folgenden Parametern
-aufgerufen werden (1. Windows und 2. Linux/Mac OS (Mono))::
+aufgerufen werden (1. Windows und 2. Linux/Mac OS X (Mono))::
 
  1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
  2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
@@ -411,7 +421,10 @@ eingebunden werden können. Wir bieten keine vorkompilierte Bibliothek an, da
 dies zu viel Aufwand wäre alle möglichen Kombinationen von Architekturen und
 Betriebssystem zu versorgen. Die Bindings sollten aber auf den meisten
 Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
-POSIX Systeme, wie Linux und Mac OS, usw.) lauffähig sein.
+POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
+
+Lazarus
+"""""""
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit dem Free
 Pascal Compiler (FPC) den Lazarus verwendet unter Linux kompilieren. Dafür
@@ -447,6 +460,9 @@ Mit Lazarus kann der ``project_folder/`` so verwendet werden:
 * Wähle einen "Application Class Name" und "Title"
 * Klicke OK
 
+Delphi
+""""""
+
 Mit Delphi XE2 (ältere Delphiversion sollten ähnlich funktionieren) kann der
 ``project_folder/`` wie folgt verwendet werden. Zuerst muss
 ``ExampleConfiguration.pas`` in ``ExampleConfiguration.dpr`` umbenannt werden
@@ -479,12 +495,12 @@ kopiert werden::
   -> ExampleConfiguration.java
 
 In diesem Ordner kann jetzt der Java Compiler mit den folgenden Parametern
-aufgerufen werden (1. Windows und 2. Linux/Mac OS)::
+aufgerufen werden (1. Windows und 2. Linux/Mac OS X)::
 
  1.) javac -cp Tinkerforge.jar;. ExampleConfiguration.java
  2.) javac -cp Tinkerforge.jar:. ExampleConfiguration.java
 
-Und ausgeführt wird es mit dem folgenden Befehl (1. Windows and 2. Linux/Mac OS)::
+Und ausgeführt wird es mit dem folgenden Befehl (1. Windows and 2. Linux/Mac OS X)::
 
  1.) java -cp Tinkerforge.jar;. ExampleConfiguration
  2.) java -cp Tinkerforge.jar:. ExampleConfiguration
@@ -609,6 +625,18 @@ Die App kann nun im Simulator getestet werden:
 * Run
 * Run
 * Android Application
+
+.. note::
+  Diese Beispiel ruft potentiell blockierende Methoden auf dem UI Thread auf,
+  zum Beispiel ``new IPConnection`` und ``setState``. Davon wird im Allgemeinen
+  abgeraten, da es zum Hängen des UIs führen kann. Um dies zu vermeiden sollte
+  die Kommunikation über die IPConnection in einen extra Thread ausgelagert
+  werden, zum Beispiel mit Hilfe eines ``AsyncTask``.
+
+  Seit Android 4.2 führt der Aufruf von ``new IPConnection`` auf dem UI Thread
+  zu einer ``andriod.os.NetworkOnMainThreadException``. Siehe diese
+  `StackOverflow Frage <http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
+  für weitere Informationen.
 
 
 .. _api_bindings_php:

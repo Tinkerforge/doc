@@ -41,6 +41,7 @@ Basic Functions
  Creates an IP Connection object. The constructed object is needed for the
  constructor of Bricks and Bricklets.
 
+
 .. py:function:: IPConnection.connect(host, port)
 
  :param host: str
@@ -53,7 +54,7 @@ Basic Functions
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and throws an IOException 
+ Blocks until the connection is established and throws an IOException
  if there is no Brick Daemon or WIFI/Ethernet Extension
  listening at the given host and port.
 
@@ -64,15 +65,18 @@ Basic Functions
  Disconnects the TCP/IP connection to the Brick Daemon or to
  the WIFI/Ethernet Extension.
 
+
 .. py:function:: IPConnection.get_connection_state()
 
  :rtype: None
 
  Can return the following states:
 
- * CONNECTION_DISCONNECTED (0): No connection is established.
- * CONNECTION_CONNETED (1): A connection to the Brickd Daemon or the WIFI/Ethernet Extension  is established.
- * CONNECTION_PENDING (2): IP Connection is currently trying to connect.
+ * CONNECTION_STATE_DISCONNECTED (0): No connection is established.
+ * CONNECTION_STATE_CONNETED (1): A connection to the Brickd Daemon or the
+   WIFI/Ethernet Extension  is established.
+ * CONNECTION_STATE_PENDING (2): IP Connection is currently trying to connect.
+
 
 .. py:function:: IPConnection.set_auto_reconnect(auto_reconnect)
 
@@ -85,21 +89,24 @@ Basic Functions
 
  Default value is *True*.
 
+
 .. py:function:: IPConnection.get_auto_reconnect()
 
  :rtype: bool
 
  Returns *True* if auto-reconnect is enabled, *False* otherwise.
 
+
 .. py:function:: IPConnection.set_timeout(timeout)
 
  :param timeout: float
  :rtype: None
 
- Sets the timeout (in seconds) for getters and for setters for which 
+ Sets the timeout (in seconds) for getters and for setters for which
  "response expected" is activated.
 
  Default timeout is 2.5s.
+
 
 .. py:function:: IPConnection.get_timeout()
 
@@ -146,7 +153,7 @@ Callback Configuration Functions
 
  Registers a callback for a given id.
 
- The available ids with corresponding callback function signatures 
+ The available ids with corresponding callback function signatures
  are described below.
 
 Callbacks
@@ -165,37 +172,53 @@ Callbacks
  The callback has seven parameters:
 
  * *uid*: The UID of the device.
- * *connectedUID*: UID where the device is connected to. For a Bricklet this will be a UID of the Brick where it is connected to. For a Brick it will be the UID of the bottom Master Brick in the stack. For the bottom Master Brick in a Stack this will be "1". With this information it is possible to reconstruct the complete network topology. 
- * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets: 'a' - 'd' (position on Brick).
+ * *connected_uid*: UID where the device is connected to. For a Bricklet this
+   will be a UID of the Brick where it is connected to. For a Brick it will be
+   the UID of the bottom Master Brick in the stack. For the bottom Master Brick
+   in a stack this will be "1". With this information it is possible to
+   reconstruct the complete network topology.
+ * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+   'a' - 'd' (position on Brick).
  * *hardwareVersion*: Major, minor and release number for hardware version.
  * *firmwareVersion*: Major, minor and release number for firmware version.
- * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
+ * *deviceIdentifier*: A number that represents the device, instead of the name
+   of the device (easier to parse).
  * *enumerationType*: Type of enumeration.
 
  Possible enumeration types are:
 
- * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
- * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
- * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
+ * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
+   triggered by user).
+ * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically
+   send by Brick after establishing a communication connection). This indicates
+   that the device has potentially lost its previous configuration and needs to
+   be reconfigured.
+ * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible
+   for USB connection). In this case only *uid* and *enumeration_type*
+   are vaild.
 
- It should be possible to implement "plug 'n play" functionality with this
+ It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
 
 .. py:attribute:: IPConnection.CALLBACK_CONNECTED
 
  :param reason: int
 
- This callback is called whenever the IP connection is connected, possible reasons are:
+ This callback is called whenever the IP connection is connected, possible
+ reasons are:
 
  * CONNECT_REASON_REQUEST (0): Connection established after request from user.
  * CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
+
 
 .. py:attribute:: IPConnection.CALLBACK_DISCONNECTED
 
  :param reason: int
 
- This callback is called whenever the IP connection is disconnected, possible reasons are:
+ This callback is called whenever the IP connection is disconnected, possible
+ reasons are:
 
  * DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
  * DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
- * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or WIFI/Ethernet Extension.
+ * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or
+   WIFI/Ethernet Extension.

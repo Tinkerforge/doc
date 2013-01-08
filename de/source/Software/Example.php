@@ -7,14 +7,16 @@ use Tinkerforge\IPConnection;
 $host = 'localhost';
 $port = 4223;
 
-function enumerateCB($uid, $connectedUid, $position, $hardwareVersion, $firmwareVersion, $deviceIdentifier, $enumerationType)
+function enumerateCB($uid, $connectedUid, $position,
+                     $hardwareVersion, $firmwareVersion,
+                     $deviceIdentifier, $enumerationType)
 {
 	echo "UID:               $uid\n";
 	echo "Enumeration Type:  $enumerationType\n";
 
-    if($enumerationType == IPConnection::ENUMERATION_TYPE_DISCONNECTED) {
+	if($enumerationType == IPConnection::ENUMERATION_TYPE_DISCONNECTED) {
 		return;
-    }
+	}
 
 	echo "Connected UID:     $connectedUid\n";
 	echo "Position:          $position\n";
