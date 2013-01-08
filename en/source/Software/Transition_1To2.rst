@@ -144,7 +144,7 @@ higher signed data type.
 Data type V1  Data type V2
 ============  ============
 uint8         int16
-uin16         int32
+uint16        int32
 uint32        int64
 uint64        int64
 ============  ============
