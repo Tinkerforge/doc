@@ -13,7 +13,7 @@ After that you should start by updating all of your Bricks, you can update
 them one by one as described :ref:`here <brickv_flash_firmware>`.
 
 To update the Bricklets, there is an automated process. You can fill up one
-of your updates Bricks with Bricklets, click on "Updates" in the Brick
+of your updated Bricks with Bricklets. Click on "Updates" in the Brick
 Viewer and use the first tab. There you should see all of your connected
 Bricks with the corresponding connected Bricklets. Bricklets that are out
 of date are marked red. You can update all Bricklets at once by clicking
