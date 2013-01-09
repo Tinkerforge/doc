@@ -60,33 +60,32 @@ Basic Functions
 .. c:function:: void ipcon_create(IPConnection *ipcon)
 
  Creates an IP Connection object that can be used to enumerate the available
- devices. The constructed object is required for the constructor of Bricks and
- Bricklets.
+ devices. It is also required for the constructor of Bricks and Bricklets.
 
 
 .. c:function:: void ipcon_destroy(IPConnection *ipcon)
 
- Destroys the IP Connection. The socket to the Brick Daemon will be closed
- and the threads of the IP Connection are terminated.
+ Destroys the IP Connection object. The connection to the Brick Daemon gets
+ closed and the threads of the IP Connection are terminated.
 
 
 .. c:function:: int ipcon_connect(IPConnection *ipcon, const char *host, uint16_t port)
 
- Creates a TCP/IP connection to the given host and port.
- The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ Creates a TCP/IP connection to the given *host* and *port*. The host and port
+ can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and returns an error code
- if there is no Brick Daemon or WIFI/Ethernet Extension
- listening at the given host and port.
+ Blocks until the connection is established and returns an error code if there
+ is no Brick Daemon or WIFI/Ethernet Extension listening at the given host
+ and port.
 
 
 .. c:function:: int ipcon_disconnect(IPConnection *ipcon)
 
- Disconnects the TCP/IP connection to the Brick Daemon or to
- the WIFI/Ethernet Extension.
+ Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
+ Extension.
 
 
 .. c:function:: int ipcon_get_connection_state(IPConnection *ipcon)
@@ -94,7 +93,7 @@ Basic Functions
  Can return the following states:
 
  * IPCON_CONNECTION_STATE_DISCONNECTED (0): No connection is established.
- * IPCON_CONNECTION_STATE_CONNECTED (1): A connection to the Brickd Daemon or
+ * IPCON_CONNECTION_STATE_CONNECTED (1): A connection to the Brick Daemon or
    the WIFI/Ethernet Extension is established.
  * IPCON_CONNECTION_STATE_PENDING (2): IP Connection is currently trying to
    connect.
@@ -115,15 +114,21 @@ Basic Functions
 
 .. c:function:: void ipcon_set_timeout(IPConnection *ipcon, uint32_t timeout)
 
- Sets the timeout (in ms) for getters and for setters for which
- "response expected" is activated.
+ Sets the timeout in milliseconds for getters and for setters for which the
+ response expected flag is activated.
 
- Default timeout is 2500ms.
+ Default timeout is 2500.
 
 
 .. c:function:: uint32_t ipcon_get_timeout(IPConnection *ipcon)
 
  Returns the timeout as set by :c:func:`ipcon_set_timeout`.
+
+
+.. c:function:: int ipcon_enumerate(IPConnection *ipcon)
+
+ Broadcasts an enumerate request. All devices will respond with an enumerate
+ callback.
 
 
 .. c:function:: void ipcon_wait(IPConnection *ipcon)
@@ -132,7 +137,7 @@ Basic Functions
  is called.
 
  This is useful if you rely solely on callbacks for events, if you want to
- wait for a specific callback or if the IP Connection was created in a threads.
+ wait for a specific callback or if the IP Connection was created in a thread.
 
  Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
 
@@ -144,25 +149,36 @@ Basic Functions
  Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
 
 
-.. c:function:: int ipcon_enumerate(IPConnection *ipcon)
-
- Broadcasts an enumerate request. All devices will respond with an enumerate
- callback.
-
-
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. c:function:: void ipcon_register_callback(IPConnection *ipcon, uint8_t id, void *callback, void *user_data)
 
- Registers a callback for a given id.
+ Registers a callback with ID *id* to the function *callback*.
 
- The available ids with corresponding callback function signatures
+ The available IDs with corresponding callback function signatures
  are described below.
 
 
 Callbacks
 ^^^^^^^^^
+
+Callbacks can be registered to be notified about events. The registration is
+done with the :c:func:`ipcon_register_callback` function. The parameters
+consist of the IP Connection object, the callback ID, the callback function and
+optional user data:
+
+.. code-block:: c
+
+    void my_callback(int p, void *user_data) {
+        printf("parameter: %d\n", p);
+    }
+
+    ipcon_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void*)my_callback, NULL);
+
+The available constants with corresponding callback function signatures are
+described below.
+
 
 .. c:var:: IPCON_CALLBACK_ENUMERATE
 
@@ -208,7 +224,7 @@ Callbacks
 
   void callback(uint8_t connect_reason, void *user_data)
 
- This callback is called whenever the IP connection is connected, possible
+ This callback is called whenever the IP Connection is connected, possible
  reasons are:
 
  * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request
@@ -222,11 +238,11 @@ Callbacks
 
   void callback(uint8_t disconnect_reason, void *user_data)
 
- This callback is called whenever the IP connection is disconnected, possible
+ This callback is called whenever the IP Connection is disconnected, possible
  reasons are:
 
  * IPCON_DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
  * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable
    error.
- * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick Daemon or
-   WIFI/Ethernet Extension.
+ * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick Daemon
+   or WIFI/Ethernet Extension.

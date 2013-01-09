@@ -38,8 +38,9 @@ Grundfunktionen
 
 .. rb:function:: IPConnection::new() -> ipcon
 
- Erzeugt ein IP Connection Objekt. Das konstruierte Objekt wird für
- den Konstruktor von Bricks und Bricklets benötigt.
+ Erzeugt ein IP Connection Objekt das verwendet werden kann um die verfügbar
+ Geräte zu enumerieren. Es wird auch für den Konstruktor von Bricks und
+ Bricklets benötigt.
 
 
 .. rb:function:: IPConnection#connect(host, port) -> nil
@@ -47,16 +48,15 @@ Grundfunktionen
  :param host: str
  :param port: int
 
- Erstellt eine TCP/IP Verbindung zum gegebenen Host und Port.
- Host und Port können zu eine Brick Daemon oder der WIFI/Ethernet Extension
- zeigen.
+ Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
+ können zu eine Brick Daemon oder der WIFI/Ethernet Extension zeigen.
 
- Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
- erfolgreich aufgebaut wurde.
+ Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
+ aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception
- falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchen.
+ Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception falls
+ kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen Host und Port
+ horcht.
 
 
 .. rb:function:: IPConnection#disconnect() -> nil
@@ -99,10 +99,10 @@ Grundfunktionen
 
  :param timeout: int
 
- Setzt den Timeout (in ms) für Getter und für Setter die "response expected"
- aktiviert haben.
+ Setzt den Timeout in Millisekunden für Getter und für Setter die das
+ Response-Expected-Flag aktiviert haben.
 
- Standardwert ist 2500ms.
+ Standardwert ist 2500.
 
 
 .. rb:function:: IPConnection#get_timeout() -> int
@@ -111,6 +111,12 @@ Grundfunktionen
 
  Gibt den Timeout zurück, wie er von
  :rb:func:`#set_timeout <IPConnection#set_timeout>` gesetzt wurde.
+
+
+.. rb:function:: IPConnection#enumerate() -> nil
+
+ Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ einem Enumerate Callback antworten.
 
 
 .. rb:function:: IPConnection#wait() -> nil
@@ -133,23 +139,29 @@ Grundfunktionen
  angehalten wurde wieder.
 
  Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer
- Semaphore.
 
 
-.. rb:function:: IPConnection#enumerate() -> nil
+Callback Configuration Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
- einem Enumerate Callback antworten.
+.. rb:function:: IPConnection#register_callback(id, callback) -> nil
+
+ :param id: int
+ :param callback: block
+
+ Registriert einen Callback für eine gegebene ID.
+
+ Die verfügbaren IDs mit zugehörenden Callback-Funktionssignaturen
+ sind unten beschrieben.
 
 
 Callbacks
 ^^^^^^^^^
 
-*Callbacks* können mit *callback IDs* registriert werden um zeitkritische
-oder wiederkehrende Daten vom Gerät zu erhalten. Die Registrierung kann
-mit der Funktion *register_callbacks* des
-ipcon Objektes durchgeführt werden. Der erste Parameter ist der Callback ID
-und der zweite Parameter der Block:
+Callbacks können registriert werden um über Ereignisse informiert zu werden.
+Die Registrierung kann mit der Funktion :rb:func:`#register_callback
+<IPConnection#register_callback>` durchgeführt werden. Der erste Parameter ist
+der Callback ID und der zweite Parameter der Block:
 
 .. code-block:: ruby
 
@@ -176,7 +188,7 @@ werden weiter unten beschrieben.
  * *uid*: Die UID des Bricks/Bricklets.
  * *connected_uid*: Die UID wo das Brick/Bricklet mit verbunden ist. Für ein
    Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen
-   Brick ist es die UID des untsten Master Brickss in einem Stapel. Der
+   Brick ist es die UID des untersten Master Bricks in einem Stapel. Der
    unterste Master Brick hat die connected UID "1". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
  * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:

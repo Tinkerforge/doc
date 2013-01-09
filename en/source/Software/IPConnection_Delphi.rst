@@ -38,35 +38,46 @@ Basic Functions
 
 .. delphi:function:: constructor TIPConnection.Create()
 
- Creates an IP Connection object. The constructed object is needed for the
- constructor of Bricks and Bricklets.
+ Creates an IP Connection object that can be used to enumerate the available
+ devices. It is also required for the constructor of Bricks and Bricklets.
+
+
+.. delphi:function:: destructor TIPConnection.Destroy()
+
+ Destroys the IP Connection object. The connection to the Brick Daemon gets
+ closed and the threads of the IP Connection are terminated.
+
 
 .. delphi:function:: procedure TIPConnection.Connect(const host: string; const port: word)
 
- Creates a TCP/IP connection to the given host and port.
- The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ Creates a TCP/IP connection to the given *host* and *port*. The host and port
+ can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and throws an IOException
- if there is no Brick Daemon or WIFI/Ethernet Extension
- listening at the given host and port.
+ Blocks until the connection is established and throws an exception if there
+ is no Brick Daemon or WIFI/Ethernet Extension listening at the given
+ host and port.
+
 
 .. delphi:function:: procedure TIPConnection.Disconnect()
 
- Disconnects the TCP/IP connection to the Brick Daemon or to
- the WIFI/Ethernet Extension.
+ Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
+ Extension.
+
 
 .. delphi:function:: procedure TIPConnection.GetConnectionState()
 
  Can return the following states:
 
  * CONNECTION_DISCONNECTED (0): No connection is established.
- * CONNECTION_CONNETED (1): A connection to the Brickd Daemon or the WIFI/Ethernet Extension  is established.
+ * CONNECTION_CONNETED (1): A connection to the Brick Daemon or the
+   WIFI/Ethernet Extension  is established.
  * CONNECTION_PENDING (2): IP Connection is currently trying to connect.
 
-.. delphi:function:: procedure TIPConnection.SetAutoReconnect(const auto_reconnect: boolean)
+
+.. delphi:function:: procedure TIPConnection.SetAutoReconnect(const autoReconnect: boolean)
 
  Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
@@ -80,35 +91,17 @@ Basic Functions
  Returns *true* if auto-reconnect is enabled, *false* otherwise.
 
 
-.. delphi:function:: procedure TIPConnection.SetTimeout(const timeout_: longword)
+.. delphi:function:: procedure TIPConnection.SetTimeout(const timeout: longword)
 
- Sets the timeout (in ms) for getters and for setters for which
- "response expected" is activated.
+ Sets the timeout in milliseconds for getters and for setters for which the
+ response expected flag is activated.
 
- Default timeout is 2500ms.
+ Default timeout is 2500.
 
 
 .. delphi:function:: function TIPConnection.GetTimeout(): longword
 
- Returns the timeout as set by :delphi:func:`TIPConnection.SetTimeout`.
-
-
-.. delphi:function:: procedure IPConnection.Wait()
-
- Stops the current thread until :delphi:func:`TIPConnection.Unwait`
- is called.
-
- This is useful if you rely solely on callbacks for events, if you want to
- wait for a specific callback or if the IP Connection was created in a threads.
-
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
-
-
-.. delphi:function:: procedure TIPConnection.Unwait()
-
- Unwaits the thread previously stopped by :delphi:func:`TIPConnection.Wait`
-
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+ Returns the timeout as set by :delphi:func:`SetTimeout <TIPConnection.SetTimeout>`.
 
 
 .. delphi:function:: procedure TIPConnection.Enumerate()
@@ -117,21 +110,39 @@ Basic Functions
  callback.
 
 
+.. delphi:function:: procedure IPConnection.Wait()
+
+ Stops the current thread until :delphi:func:`Unwait <TIPConnection.Unwait>`
+ is called.
+
+ This is useful if you rely solely on callbacks for events, if you want to
+ wait for a specific callback or if the IP Connection was created in a thread.
+
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+
+
+.. delphi:function:: procedure TIPConnection.Unwait()
+
+ Unwaits the thread previously stopped by :delphi:func:`Wait <TIPConnection.Wait>`
+
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+
+
 Callbacks
 ^^^^^^^^^
 
-*Callbacks* can be registered to receive time critical or recurring data from
-the device. The registration is done by assigning a procedure to an callback
-property of the ipcon object:
+Callbacks can be registered to be notified about events. The registration is
+done by assigning a procedure to an callback property of the TIPConnection
+object:
 
- .. code-block:: delphi
+.. code-block:: delphi
 
-  procedure TExample.MyCallback(sender: TIPConnection; const param: word);
-  begin
-    WriteLn(param);
-  end;
+    procedure TExample.MyCallback(sender: TIPConnection; const param: word);
+    begin
+      WriteLn(param);
+    end;
 
-  ipcon.OnExample := {$ifdef FPC}@{$endif}example.MyCallback;
+    ipcon.OnExample := {$ifdef FPC}@{$endif}example.MyCallback;
 
 The available callback property and their type of parameters are described below.
 
@@ -179,7 +190,7 @@ The available callback property and their type of parameters are described below
 
   procedure(sender: TIPConnection; const connectReason: byte) of object;
 
- This callback is called whenever the IP connection is connected,
+ This callback is called whenever the IP Connection is connected,
  possible reasons are:
 
  * CONNECT_REASON_REQUEST (0): Connection established after request from user.
@@ -191,7 +202,7 @@ The available callback property and their type of parameters are described below
 
   procedure(sender: TIPConnection; const disconnectReason: byte) of object;
 
- This callback is called whenever the IP connection is disconnected,
+ This callback is called whenever the IP Connection is disconnected,
  possible reasons are:
 
  * DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.

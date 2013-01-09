@@ -38,22 +38,28 @@ Grundfunktionen
 
 .. delphi:function:: constructor TIPConnection.Create()
 
- Erzeugt ein IP Connection Objekt. Das konstruierte Objekt wird für
- den Konstruktor von Bricks und Bricklets benötigt.
+ Erzeugt ein IP Connection Objekt das verwendet werden kann um die verfügbar
+ Geräte zu enumerieren. Es wird auch für den Konstruktor von Bricks und
+ Bricklets benötigt.
+
+
+.. delphi:function:: destructor TIPConnection.Destroy()
+
+ Zerstört die IP Connection. Der Socket zum Brick Daemon wird geschlossen und
+ alle Threads der IP Connection werden beendet.
 
 
 .. delphi:function:: procedure TIPConnection.Connect(const host: string; const port: word)
 
- Erstellt eine TCP/IP Verbindung zum gegebenen Host und Port.
- Host und Port können zu eine Brick Daemon oder der WIFI/Ethernet Extension
- zeigen.
+ Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
+ können zu eine Brick Daemon oder der WIFI/Ethernet Extension zeigen.
 
- Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
- erfolgreich aufgebaut wurde.
+ Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
+ aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception
- falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchen.
+ Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception falls
+ kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen Host und Port
+ horcht.
 
 
 .. delphi:function:: procedure TIPConnection.Disconnect()
@@ -90,16 +96,22 @@ Grundfunktionen
 
 .. delphi:function:: procedure TIPConnection.SetTimeout(const timeout: longword)
 
- Setzt den Timeout (in ms) für Getter und für Setter die "response expected"
- aktiviert haben.
+ Setzt den Timeout in Millisekunden für Getter und für Setter die das
+ Response-Expected-Flag aktiviert haben.
 
- Standardwert ist 2500ms.
+ Standardwert ist 2500.
 
 
 .. delphi:function:: function TIPConnection.GetTimeout(): longword
 
  Gibt den Timeout zurück, wie er von :delphi:func:`TIPConnection.SetTimeout`
  gesetzt wurde.
+
+
+.. delphi:function:: procedure TIPConnection.Enumerate()
+
+ Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ einem Enumerate Callback antworten.
 
 
 .. delphi:function:: function TIPConnection.Wait()
@@ -124,30 +136,24 @@ Grundfunktionen
  Semaphore.
 
 
-.. delphi:function:: procedure TIPConnection.Enumerate()
-
- Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
- einem Enumerate Callback antworten.
-
-
 Callbacks
 ^^^^^^^^^
 
-*Callbacks* können registriert werden um zeitkritische oder
-wiederkehrende Daten vom Gerät zu erhalten. Die Registrierung erfolgt indem
-eine Prozedur einer Callback Property des ipcon Objektes zugewiesen wird:
+Callbacks können registriert werden um über Ereignisse informiert zu werden.
+Die Registrierung erfolgt indem eine Prozedur einem Callback Property des
+TIPConnection Objektes zugewiesen wird:
 
- .. code-block:: delphi
+.. code-block:: delphi
 
-  procedure TExample.MyCallback(sender: TIPConnection; const param: word);
-  begin
-    WriteLn(param);
-  end;
+    procedure TExample.MyCallback(sender: TIPConnection; const param: word);
+    begin
+      WriteLn(param);
+    end;
 
-  ipcon.OnExample := {$ifdef FPC}@{$endif}example.MyCallback;
+    ipcon.OnExample := {$ifdef FPC}@{$endif}example.MyCallback;
 
-Die verfügbaren Callback Properties und ihre Parametertypen werden weiter
-unten beschrieben.
+Die verfügbaren Callback Properties und ihre Parametertypen werden im Folgenden
+beschrieben.
 
 
 .. delphi:function:: property TIPConnection.OnEnumerate
@@ -161,7 +167,7 @@ unten beschrieben.
  * *uid*: Die UID des Bricks/Bricklets.
  * *connectedUid*: Die UID wo das Brick/Bricklet mit verbunden ist. Für ein
    Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen
-   Brick ist es die UID des untsten Master Brickss in einem Stapel. Der
+   Brick ist es die UID des untersten Master Bricks in einem Stapel. Der
    unterste Master Brick hat die connected UID "1". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
  * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
@@ -196,7 +202,7 @@ unten beschrieben.
  Dieser Callback wird aufgerufen wenn die IP Connection eine Verbindung
  aufgebaut hat, mögliche Gründe sind:
 
- * CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach anfrage vom Benutzer.
+ * CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
  * CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer
    automatischen Wiederverbindung.
 

@@ -38,27 +38,27 @@ Basic Functions
 
 .. csharp:function:: class IPConnection()
 
- Creates an IP Connection object. The constructed object is needed for the
- constructor of Bricks and Bricklets.
+ Creates an IP Connection object that can be used to enumerate the available
+ devices. It is also required for the constructor of Bricks and Bricklets.
 
 
 .. csharp:function:: public void IPConnection::Connect(String host, int port)
 
- Creates a TCP/IP connection to the given host and port.
- The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ Creates a TCP/IP connection to the given *host* and *port*. The host and port
+ can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and throws an IOException
- if there is no Brick Daemon or WIFI/Ethernet Extension
- listening at the given host and port.
+ Blocks until the connection is established and throws an exception if there
+ is no Brick Daemon or WIFI/Ethernet Extension listening at the given host
+ and port.
 
 
 .. csharp:function:: public void IPConnection::Disconnect()
 
- Disconnects the TCP/IP connection to the Brick Daemon or to
- the WIFI/Ethernet Extension.
+ Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
+ Extension.
 
 
 .. csharp:function:: public byte IPConnection::GetConnectionState()
@@ -66,7 +66,7 @@ Basic Functions
  Can return the following states:
 
  * CONNECTION_STATE_DISCONNECTED (0): No connection is established.
- * CONNECTION_STATE_CONNECTED (1): A connection to the Brickd Daemon or the
+ * CONNECTION_STATE_CONNECTED (1): A connection to the Brick Daemon or the
    WIFI/Ethernet Extension  is established.
  * CONNECTION_STATE_PENDING (2): IP Connection is currently trying to connect.
 
@@ -87,15 +87,21 @@ Basic Functions
 
 .. csharp:function:: public void IPConnection::SetTimeout(int timeout)
 
- Sets the timeout (in ms) for getters and for setters for which
- "response expected" is activated.
+ Sets the timeout in milliseconds for getters and for setters for which the
+ response expected flag is activated.
 
- Default timeout is 2500ms.
+ Default timeout is 2500.
 
 
 .. csharp:function:: public int IPConnection::GetTimeout()
 
  Returns the timeout as set by :csharp:func:`SetTimeout <IPConnection::SetTimeout>`.
+
+
+.. csharp:function:: public void IPConnection::Enumerate()
+
+ Broadcasts an enumerate request. All devices will respond with an enumerate
+ callback.
 
 
 .. csharp:function:: public void IPConnection::Wait()
@@ -104,7 +110,7 @@ Basic Functions
  is called.
 
  This is useful if you rely solely on callbacks for events, if you want to
- wait for a specific callback or if the IP Connection was created in a threads.
+ wait for a specific callback or if the IP Connection was created in a thread.
 
  Wait and unwait act in the same way as require and release of a semaphore.
 
@@ -116,18 +122,11 @@ Basic Functions
  Wait and unwait act in the same way as require and release of a semaphore.
 
 
-.. csharp:function:: public void IPConnection::Enumerate()
-
- Broadcasts an enumerate request. All devices will respond with an enumerate
- callback.
-
-
 Callbacks
 ^^^^^^^^^
 
-*Callbacks* can be registered to receive
-time critical or recurring data from the device. The registration is done
-by appending your Callback-Handler to the corresponding event:
+Callbacks can be registered to be notified about events. The registration is
+done by appending your callback handler to the corresponding event:
 
 .. code-block:: csharp
 
@@ -136,7 +135,7 @@ by appending your Callback-Handler to the corresponding event:
         System.Console.WriteLine("Value: " + value);
     }
 
-    device.ExampleCallback += Callback;
+    ipcon.ExampleCallback += Callback;
 
 The available events are described below.
 
@@ -177,7 +176,7 @@ The available events are described below.
 
 .. csharp:function:: public event IPConnection::Connected(IPConnection sender, short connectReason)
 
- This event is called whenever the IP connection is connected, possible
+ This event is called whenever the IP Connection is connected, possible
  reasons are:
 
  * CONNECT_REASON_REQUEST (0): Connection established after request from user.
@@ -186,7 +185,7 @@ The available events are described below.
 
 .. csharp:function:: public event IPConnection::Disconnected(IPConnection sender, short disconnectReason)
 
- This event is called whenever the IP connection is disconnected, possible
+ This event is called whenever the IP Connection is disconnected, possible
  reasons are:
 
  * DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.

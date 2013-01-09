@@ -38,8 +38,10 @@ Grundfunktionen
 
 .. py:function:: IPConnection()
 
- Erzeugt ein IP Connection Objekt. Das konstruierte Objekt wird für
- den Konstruktor von Bricks und Bricklets benötigt.
+ Erzeugt ein IP Connection Objekt das verwendet werden kann um die verfügbar
+ Geräte zu enumerieren. Es wird auch für den Konstruktor von Bricks und
+ Bricklets benötigt.
+
 
 .. py:function:: IPConnection.connect(host, port)
 
@@ -47,16 +49,15 @@ Grundfunktionen
  :param port: int
  :rtype: None
 
- Erstellt eine TCP/IP Verbindung zum gegebenen Host und Port.
- Host und Port können zu eine Brick Daemon oder der WIFI/Ethernet Extension
- zeigen.
+ Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
+ können zu eine Brick Daemon oder der WIFI/Ethernet Extension zeigen.
 
- Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
- erfolgreich aufgebaut wurde.
+ Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
+ aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception
- falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchen.
+ Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception falls
+ kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen Host und Port
+ horcht.
 
 
 .. py:function:: IPConnection.disconnect()
@@ -100,28 +101,36 @@ Grundfunktionen
 
 .. py:function:: IPConnection.set_timeout(timeout)
 
- :param auto_reconnect: float
+ :param timeout: float
  :rtype: None
 
- Setzt den Timeout (in ms) für Getter und für Setter die "response expected"
- aktiviert haben.
+ Setzt den Timeout in Sekunden für Getter und für Setter die das
+ Response-Expected-Flag aktiviert haben.
 
- Standardwert ist 2500ms.
+ Standardwert ist 2,5.
 
 
 .. py:function:: IPConnection.get_timeout()
 
  :rtype: float
 
- Gibt den Timeout zurück, wie er von :py:func:`IPConnection.set_timeout`
- gesetzt wurde.
+ Gibt den Timeout zurück, wie er von :py:func:`set_timeout
+ <IPConnection.set_timeout>` gesetzt wurde.
+
+
+.. py:function:: IPConnection.enumerate()
+
+ :rtype: None
+
+ Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ einem Enumerate Callback antworten.
 
 
 .. py:function:: IPConnection.wait()
 
  :rtype: None
 
- Hält den aktuellen Thread an bis :py:func:`IPConnection.unwait`
+ Hält den aktuellen Thread an bis :py:func:`unwait <IPConnection.unwait>`
  aufgerufen wird.
 
  Dies ist nützlich falls ausschließlich auf Callbacks reagiert werden soll oder
@@ -136,25 +145,21 @@ Grundfunktionen
 
  :rtype: None
 
- Startet einen Thread der vorher mit :py:func:`IPConnection.wait`
+ Startet einen Thread der vorher mit :py:func:`wait <IPConnection.wait>`
  angehalten wurde wieder.
 
  Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer
  Semaphore.
 
 
-.. py:function:: IPConnection.enumerate()
-
- :rtype: None
-
- Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
- einem Enumerate Callback antworten.
-
-
 Konfigurationsfunktionen für Callbacks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. py:function:: IPConnection.register_callback(id, callback)
+
+ :param id: int
+ :param callback: callable
+ :rtype: None
 
  Registriert einen Callback für eine gegebene ID.
 
@@ -164,6 +169,21 @@ Konfigurationsfunktionen für Callbacks
 
 Callbacks
 ^^^^^^^^^
+
+Callbacks können registriert werden um über Ereignisse informiert zu werden.
+Die Registrierung kann mit der Funktion :py:func:`register_callback
+<IPConnection.register_callback>` durchgeführt werden. Der erste Parameter
+ist der Callback ID und der zweite die Callback Funktion:
+
+.. code-block:: python
+
+    def my_callback(param):
+        print(param)
+
+    ipcon.register_callback(IPConnection.CALLBACK_EXAMPLE, my_callback)
+
+Die verfügbaren Konstanten mit der dazugehörigen Parameteranzahl und -typen
+werden weiter unten beschrieben.
 
 .. py:attribute:: IPConnection.CALLBACK_ENUMERATE
 
@@ -180,7 +200,7 @@ Callbacks
  * *uid*: Die UID des Bricks/Bricklets.
  * *connected_uid*: Die UID wo das Brick/Bricklet mit verbunden ist. Für ein
    Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen
-   Brick ist es die UID des untsten Master Brickss in einem Stapel. Der
+   Brick ist es die UID des untersten Master Bricks in einem Stapel. Der
    unterste Master Brick hat die connected UID "1". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
  * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:

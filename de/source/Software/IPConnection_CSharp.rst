@@ -38,22 +38,22 @@ Grundfunktionen
 
 .. csharp:function:: class IPConnection()
 
- Erzeugt ein IP Connection Objekt. Das konstruierte Objekt wird für
- den Konstruktor von Bricks und Bricklets benötigt.
+ Erzeugt ein IP Connection Objekt das verwendet werden kann um die verfügbar
+ Geräte zu enumerieren. Es wird auch für den Konstruktor von Bricks und
+ Bricklets benötigt.
 
 
 .. csharp:function:: public void IPConnection::Connect(String host, int port)
 
- Erstellt eine TCP/IP Verbindung zum gegebenen Host und Port.
- Host und Port können zu eine Brick Daemon oder der WIFI/Ethernet Extension
- zeigen.
+ Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
+ können zu eine Brick Daemon oder der WIFI/Ethernet Extension zeigen.
 
- Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
- erfolgreich aufgebaut wurde.
+ Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
+ aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception
- falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchen.
+ Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception falls
+ kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen Host und Port
+ horcht.
 
 
 .. csharp:function:: public void IPConnection::Disconnect()
@@ -90,16 +90,22 @@ Grundfunktionen
 
 .. csharp:function:: public void IPConnection::SetTimeout(int timeout)
 
- Setzt den Timeout (in ms) für Getter und für Setter die "response expected"
- aktiviert haben.
+ Setzt den Timeout in Millisekunden für Getter und für Setter die das
+ Response-Expected-Flag aktiviert haben.
 
- Standardwert ist 2500ms.
+ Standardwert ist 2500.
 
 
 .. csharp:function:: public int IPConnection::GetTimeout()
 
  Gibt den Timeout zurück, wie er von :csharp:func:`SetTimeout <IPConnection::SetTimeout>`
  gesetzt wurde.
+
+
+.. csharp:function:: public void IPConnection::Enumerate()
+
+ Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ einem Enumerate Callback antworten.
 
 
 .. csharp:function:: public void IPConnection::Wait()
@@ -124,18 +130,12 @@ Grundfunktionen
  Semaphore.
 
 
-.. csharp:function:: public void IPConnection::Enumerate()
-
- Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
- einem Enumerate Callback antworten.
-
-
 Callbacks
 ^^^^^^^^^
 
-*Callbacks* können registriert werden um zeitkritische
-oder wiederkehrende Daten vom Gerät zu erhalten. Die Registrierung kann
-durch die anhängen des Callback-Handlers zum passenden Event geschehen:
+Callbacks können registriert werden um über Ereignisse informiert zu werden.
+Die Registrierung geschieht durch Anhängen des Callback Handlers an den
+passenden Event:
 
 .. code-block:: csharp
 
@@ -144,9 +144,9 @@ durch die anhängen des Callback-Handlers zum passenden Event geschehen:
         System.Console.WriteLine("Value: " + value);
     }
 
-    device.ExampleCallback += Callback;
+    ipcon.ExampleCallback += Callback;
 
-Die verfügbaren Events werden weiter unten beschrieben.
+Die verfügbaren Events werden im Folgenden beschrieben.
 
 
 .. csharp:function:: public event IPConnection::EnumerateCallback(IPConnection sender, string uid, string connectedUid, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
@@ -156,7 +156,7 @@ Die verfügbaren Events werden weiter unten beschrieben.
  * *uid*: Die UID des Bricks/Bricklets.
  * *connectedUid*: Die UID wo das Brick/Bricklet mit verbunden ist. Für ein
    Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen
-   Brick ist es die UID des untsten Master Brickss in einem Stapel. Der
+   Brick ist es die UID des untersten Master Bricks in einem Stapel. Der
    unterste Master Brick hat die connected UID "1". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
  * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:

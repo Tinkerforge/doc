@@ -38,8 +38,8 @@ Basic Functions
 
 .. py:function:: IPConnection()
 
- Creates an IP Connection object. The constructed object is needed for the
- constructor of Bricks and Bricklets.
+ Creates an IP Connection object that can be used to enumerate the available
+ devices. It is also required for the constructor of Bricks and Bricklets.
 
 
 .. py:function:: IPConnection.connect(host, port)
@@ -48,22 +48,23 @@ Basic Functions
  :param port: int
  :rtype: None
 
- Creates a TCP/IP connection to the given host and port.
- The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ Creates a TCP/IP connection to the given *host* and *port*. The host and port
+ can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and throws an IOException
- if there is no Brick Daemon or WIFI/Ethernet Extension
- listening at the given host and port.
+ Blocks until the connection is established and throws an exception if there
+ is no Brick Daemon or WIFI/Ethernet Extension listening at the given
+ host and port.
+
 
 .. py:function:: IPConnection.disconnect()
 
  :rtype: None
 
- Disconnects the TCP/IP connection to the Brick Daemon or to
- the WIFI/Ethernet Extension.
+ Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
+ Extension.
 
 
 .. py:function:: IPConnection.get_connection_state()
@@ -73,7 +74,7 @@ Basic Functions
  Can return the following states:
 
  * CONNECTION_STATE_DISCONNECTED (0): No connection is established.
- * CONNECTION_STATE_CONNETED (1): A connection to the Brickd Daemon or the
+ * CONNECTION_STATE_CONNETED (1): A connection to the Brick Daemon or the
    WIFI/Ethernet Extension  is established.
  * CONNECTION_STATE_PENDING (2): IP Connection is currently trying to connect.
 
@@ -102,39 +103,17 @@ Basic Functions
  :param timeout: float
  :rtype: None
 
- Sets the timeout (in seconds) for getters and for setters for which
- "response expected" is activated.
+ Sets the timeout in seconds for getters and for setters for which the
+ response expected flag is activated.
 
- Default timeout is 2.5s.
+ Default timeout is 2.5.
 
 
 .. py:function:: IPConnection.get_timeout()
 
  :rtype: float
 
- Returns the timeout as set by :py:func:`IPConnection.set_timeout`.
-
-
-.. py:function:: IPConnection.wait()
-
- :rtype: None
-
- Stops the current thread until :py:func:`IPConnection.unwait`
- is called.
-
- This is useful if you rely solely on callbacks for events, if you want to
- wait for a specific callback or if the IP Connection was created in a threads.
-
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
-
-
-.. py:function:: IPConnection.unwait()
-
- :rtype: None
-
- Unwaits the thread previously stopped by :py:func:`IPConnection.wait`
-
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+ Returns the timeout as set by :py:func:`set_timeout <IPConnection.set_timeout>`.
 
 
 .. py:function:: IPConnection.enumerate()
@@ -145,19 +124,61 @@ Basic Functions
  callback.
 
 
+.. py:function:: IPConnection.wait()
+
+ :rtype: None
+
+ Stops the current thread until :py:func:`unwait <IPConnection.unwait>`
+ is called.
+
+ This is useful if you rely solely on callbacks for events, if you want to
+ wait for a specific callback or if the IP Connection was created in a thread.
+
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+
+
+.. py:function:: IPConnection.unwait()
+
+ :rtype: None
+
+ Unwaits the thread previously stopped by :py:func:`wait <IPConnection.wait>`
+
+ Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+
 
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. py:function:: IPConnection.register_callback(id, callback)
 
- Registers a callback for a given id.
+ :param id: int
+ :param callback: callable
+ :rtype: None
+
+ Registers a callback with ID *id* to the function *callback*.
 
  The available ids with corresponding callback function signatures
  are described below.
 
+
 Callbacks
 ^^^^^^^^^
+
+Callbacks can be registered to be notified about events. The registration is
+done with the :py:func:`register_callback <IPConnection.register_callback>`
+function. The first parameter is the callback ID and the second
+parameter the callback function:
+
+.. code-block:: python
+
+    def my_callback(param):
+        print(param)
+
+    ipcon.register_callback(IPConnection.CALLBACK_EXAMPLE, my_callback)
+
+The available constants with inherent number and type of parameters are
+described below.
+
 
 .. py:attribute:: IPConnection.CALLBACK_ENUMERATE
 
@@ -204,7 +225,7 @@ Callbacks
 
  :param reason: int
 
- This callback is called whenever the IP connection is connected, possible
+ This callback is called whenever the IP Connection is connected, possible
  reasons are:
 
  * CONNECT_REASON_REQUEST (0): Connection established after request from user.
@@ -215,10 +236,10 @@ Callbacks
 
  :param reason: int
 
- This callback is called whenever the IP connection is disconnected, possible
+ This callback is called whenever the IP Connection is disconnected, possible
  reasons are:
 
  * DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
  * DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
- * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or
+ * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick Daemon or
    WIFI/Ethernet Extension.

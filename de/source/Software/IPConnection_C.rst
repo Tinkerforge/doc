@@ -59,28 +59,28 @@ Grundfunktionen
 
 .. c:function:: void ipcon_create(IPConnection *ipcon)
 
- Erzeugt ein IP Connection Objekt. Das konstruierte Objekt wird für
- den Konstruktor von Bricks und Bricklets benötigt.
+ Erzeugt ein IP Connection Objekt das verwendet werden kann um die verfügbar
+ Geräte zu enumerieren. Es wird auch für den Konstruktor von Bricks und
+ Bricklets benötigt.
 
 
 .. c:function:: void ipcon_destroy(IPConnection *ipcon)
 
- Zerstört die IP Connection. Der Socket zum Brick Daemon wird geschlossen
- und alle Threads der IP Connection werden beendet.
+ Zerstört die IP Connection. Der Socket zum Brick Daemon wird geschlossen und
+ alle Threads der IP Connection werden beendet.
 
 
 .. c:function:: int ipcon_connect(IPConnection *ipcon, const char *host, uint16_t port)
 
- Erstellt eine TCP/IP Verbindung zum gegebenen Host und Port.
- Host und Port können zu eine Brick Daemon oder der WIFI/Ethernet Extension
- zeigen.
+ Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
+ können zu eine Brick Daemon oder der WIFI/Ethernet Extension zeigen.
 
- Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung
- erfolgreich aufgebaut wurde.
+ Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
+ aufgebaut wurde.
 
  Blockiert bis die Verbindung aufgebaut wurde und gibt einen Fehlercode zurück
  falls kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen
- Host und Port horchen.
+ Host und Port horcht.
 
 
 .. c:function:: int ipcon_disconnect(IPConnection *ipcon)
@@ -117,15 +117,21 @@ Grundfunktionen
 
 .. c:function:: void ipcon_set_timeout(IPConnection *ipcon, uint32_t timeout)
 
- Setzt den Timeout (in ms) für Getter und für Setter die "response expected"
- aktiviert haben.
+ Setzt den Timeout in Millisekunden für Getter und für Setter die das
+ Response-Expected-Flag aktiviert haben.
 
- Standardwert ist 2500ms.
+ Standardwert ist 2500.
 
 
 .. c:function:: uint32_t ipcon_get_timeout(IPConnection *ipcon)
 
  Gibt den Timeout zurück, wie er von :c:func:`ipcon_set_timeout` gesetzt wurde.
+
+
+.. c:function:: int ipcon_enumerate(IPConnection *ipcon)
+
+ Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ einem Enumerate Callback antworten.
 
 
 .. c:function:: void ipcon_wait(IPConnection *ipcon)
@@ -150,12 +156,6 @@ Grundfunktionen
  Semaphore.
 
 
-.. c:function:: int ipcon_enumerate(IPConnection *ipcon)
-
- Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
- einem Enumerate Callback antworten.
-
-
 Konfigurationsfunktionen für Callbacks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -163,12 +163,29 @@ Konfigurationsfunktionen für Callbacks
 
  Registriert einen Callback für eine gegebene ID.
 
- Die verfügbaren IDs mit zugehörenden Callback-Funktionssignaturen
+ Die verfügbaren IDs mit zugehörenden Callback Funktionssignaturen
  sind unten beschrieben.
 
 
 Callbacks
 ^^^^^^^^^
+
+Callbacks können registriert werden um über Ereignisse informiert zu werden.
+Die Registrierung wird mit der Funktion :c:func:`ipcon_register_callback`
+durchgeführt. Die Parameter bestehen aus dem IP Connection Objekt, der
+Callback ID, der Callback Funktion und optionalen Benutzer Daten:
+
+.. code-block:: c
+
+    void my_callback(int p, void *user_data) {
+        printf("parameter: %d\n", p);
+    }
+
+    ipcon_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void*)my_callback, NULL);
+
+Die verfügbaren Konstanten mit den zugehörigen Callback Funktionssignaturen
+werden im Folgenden beschrieben.
+
 
 .. c:var:: IPCON_CALLBACK_ENUMERATE
 
@@ -181,7 +198,7 @@ Callbacks
  * *uid*: Die UID des Bricks/Bricklets.
  * *connected_uid*: Die UID wo das Brick/Bricklet mit verbunden ist. Für ein
    Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen
-   Brick ist es die UID des untsten Master Brickss in einem Stapel. Der
+   Brick ist es die UID des untersten Master Bricks in einem Stapel. Der
    unterste Master Brick hat die connected UID "1". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
  * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:

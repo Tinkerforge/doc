@@ -38,27 +38,27 @@ Basic Functions
 
 .. php:function:: class IPConnection()
 
- Creates an IP Connection object. The constructed object is needed for the
- constructor of Bricks and Bricklets.
+ Creates an IP Connection object that can be used to enumerate the available
+ devices. It is also required for the constructor of Bricks and Bricklets.
 
 
 .. php:function:: void IPConnection::connect(string $host, int $port)
 
- Creates a TCP/IP connection to the given host and port.
- The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ Creates a TCP/IP connection to the given *$host* and *$port*. The host and
+ port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and throws an Exception
- if there is no Brick Daemon or WIFI/Ethernet Extension
- listening at the given host and port.
+ Blocks until the connection is established and throws an exception if there
+ is no Brick Daemon or WIFI/Ethernet Extension listening at the given
+ host and port.
 
 
 .. php:function:: void IPConnection::disconnect()
 
- Disconnects the TCP/IP connection to the Brick Daemon or to
- the WIFI/Ethernet Extension.
+ Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
+ Extension.
 
 
 .. php:function:: int IPConnection::getConnectionState()
@@ -66,16 +66,16 @@ Basic Functions
  Can return the following states:
 
  * CONNECTION_STATE_DISCONNECTED (0): No connection is established.
- * CONNECTION_STATE_CONNECTED (1): A connection to the Brickd Daemon or the
+ * CONNECTION_STATE_CONNECTED (1): A connection to the Brick Daemon or the
    WIFI/Ethernet Extension  is established.
 
 
-.. php:function:: void IPConnection::setTimeout(int $seconds)
+.. php:function:: void IPConnection::setTimeout(float $seconds)
 
- Sets the timeout (in ms) for getters and for setters for which
- "response expected" is activated.
+ Sets the timeout in seconds for getters and for setters for which the
+ response expected flag is activated.
 
- Default timeout is 2500ms.
+ Default timeout is 2.5.
 
 
 .. php:function:: int IPConnection::getTimeout()
@@ -89,12 +89,23 @@ Basic Functions
  callback.
 
 
+.. php:function:: void IPConnection::dispatchCallbacks(float $seconds)
+
+ Dispatches incoming callbacks for the given amount of time in seconds (negative
+ value means infinity). Because PHP doesn't support threads you need to call
+ this method periodically to ensure that incoming callbacks are handled. If you
+ don't use callbacks you don't need to call this method.
+
+ The recommended dispatch time 0. This will just dispatch all pending
+ callbacks without waiting for further callbacks.
+
+
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. php:function:: void IPConnection::registerCallback(int $id, callable $callback, mixed $userData = NULL)
 
- Registers a callback for a given ID.
+ Registers a callback with ID *$id* to the function *$callback*.
 
  The available IDs with corresponding callback function signatures
  are described below.
@@ -103,27 +114,45 @@ Callback Configuration Functions
 Callbacks
 ^^^^^^^^^
 
+Callbacks can be registered to be notified about events. The registration is
+done with the :php:func:`registerCallback <IPConnection::registerCallback>`
+function. The parameters consist of the callback ID, the callback function and
+optional user data:
+
+.. code-block:: php
+
+    function my_callback($param)
+    {
+        echo $param . "\n";
+    }
+
+    $ipcon->registerCallback(IPConnection::CALLBACK_EXAMPLE, 'my_callback');
+
+The available constants with corresponding callback function signatures are
+described below.
+
+
 .. php:member:: int IPConnection::CALLBACK_ENUMERATE
 
  .. code-block:: php
 
-  void callback(string $uid, string $connectedUid, char $position, array $hardwareVersion, array $firmwareVersion, int $deviceIdentifier, int $enumerationType, mixed $userData)
+  void callback(string $uid, string $connectedUid, char $position, array $hardwareVersion, array $firmwareVersion, int $deviceIdentifier, int $enumerationType [, mixed $userData])
 
  The callback receives seven parameters:
 
- * *uid*: The UID of the device.
- * *connectedUid*: UID where the device is connected to. For a Bricklet this
+ * *$uid*: The UID of the device.
+ * *$connectedUid*: UID where the device is connected to. For a Bricklet this
    will be a UID of the Brick where it is connected to. For a Brick it will be
    the UID of the bottom Master Brick in the stack. For the bottom Master Brick
    in a stack this will be "1". With this information it is possible to
    reconstruct the complete network topology.
- * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+ * *$position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
    'a' - 'd' (position on Brick).
- * *hardwareVersion*: Major, minor and release number for hardware version.
- * *firmwareVersion*: Major, minor and release number for firmware version.
- * *deviceIdentifier*: A number that represents the device, instead of the
+ * *$hardwareVersion*: Major, minor and release number for hardware version.
+ * *$firmwareVersion*: Major, minor and release number for firmware version.
+ * *$deviceIdentifier*: A number that represents the device, instead of the
    name of the device (easier to parse).
- * *enumerationType*: Type of enumeration.
+ * *$enumerationType*: Type of enumeration.
 
  Possible enumeration types are:
 
@@ -134,7 +163,7 @@ Callbacks
    that the device has potentially lost its previous configuration and needs
    to be reconfigured.
  * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
-   possible for USB connection). In this case only *uid* and *enumerationType*
+   possible for USB connection). In this case only *$uid* and *$enumerationType*
    are vaild.
 
  It should be possible to implement plug-and-play functionality with this
@@ -145,9 +174,9 @@ Callbacks
 
  .. code-block:: php
 
-  void callback(int $connectReason, mixed $userData)
+  void callback(int $connectReason [, mixed $userData])
 
- This callback is called whenever the IP connection is connected, possible
+ This callback is called whenever the IP Connection is connected, possible
  reasons are:
 
  * CONNECT_REASON_REQUEST (0): Connection established after request from user.
@@ -157,12 +186,12 @@ Callbacks
 
  .. code-block:: php
 
-  void callback(int $connectReason, mixed $userData)
+  void callback(int $connectReason [, mixed $userData])
 
- This callback is called whenever the IP connection is disconnected, possible
+ This callback is called whenever the IP Connection is disconnected, possible
  reasons are:
 
  * DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
  * DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
- * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or
+ * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick Daemon or
    WIFI/Ethernet Extension.
