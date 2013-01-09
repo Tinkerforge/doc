@@ -38,6 +38,18 @@ Verwendung mit Embedded Boards
 
    Embedded/*
 
+.. _index_ip_connection:
+
+*************
+IP Connection
+*************
+
+.. container:: indextable
+
+ .. csv-table::
+  :delim: |
+
+  * :ref:`IP Connection <api_bindings_ip_connection>` | :ref:`Modbus <llproto_modbus_api>`, :ref:`TCP/IP <llproto_tcpip_api>`, :ref:`C/C++ <ipcon_c>`, :ref:`C# <ipcon_csharp>`, :ref:`Delphi <ipcon_delphi>`, :ref:`Java <ipcon_java>`, :ref:`PHP <ipcon_php>`, :ref:`Python <ipcon_python>`, :ref:`Ruby <ipcon_ruby>`
 
 .. _index_bricks:
 
