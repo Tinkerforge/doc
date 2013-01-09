@@ -38,6 +38,9 @@ Brick plugins. See above for information about the updating procedure.
 The IPConnection has several new functions that are implemented for all 
 languages, they include:
 
+* connect
+* disconnect
+* register_callback (for enumeration)
 * get_connection_state
 * set_auto_reconnect
 * get_auto_reconnect
@@ -45,7 +48,6 @@ languages, they include:
 * get_timeout
 * wait (replacement for join)
 * unwait
-* connect
 
 Additionally, the enumeration callback has now a different signature. With
 the returned data it should now be possible to reconstruct the complete
@@ -56,17 +58,17 @@ documentation for each language, see :ref:`here <api_bindings_ip_connection>`.
 
 Every Brick and Bricklet has the following new functions:
 
-* set_response_expected
 * get_response_expected
+* set_response_expected
 * set_response_expected_all
 
 Documentation for these functions can be found in the normal programming
 language documentation for each Brick and Bricklet.
 
 In the following we will compare relevant code snippets from Protocol V1
-to equivalents from Protocol V2. Keep in mind that you also need to use
-the newest version Bindings for your specific programming languages to
-be able to utilize the new Protocol V2 features.
+to equivalents from Protocol V2. Keep in mind that you need to use
+the :ref:`newest version of the Bindings <bindings_examples>` for your 
+programming languages to be able to utilize the new Protocol V2 features.
 
 
 C/C++
@@ -82,10 +84,6 @@ Initialization:
         fprintf(stderr, "Could not create connection\n");
         exit(1);
     }
-
-    IPConnection ipcon;
-    ipcon_create(&ipcon);
-
 
     AmbientLight al;
     ambient_light_create(&al, UID); 
@@ -118,7 +116,7 @@ Callbacks:
 
     ambient_light_register_callback(&al,
                                     AMBIENT_LIGHT_CALLBACK_ILLUMINANCE, 
-                                    cb_illuminance);
+                                    (void *)cb_illuminance);
 
     // V2 (now with user data)
     void cb_illuminance(uint16_t illuminance, void *user_data) {
@@ -129,6 +127,26 @@ Callbacks:
                                     AMBIENT_LIGHT_CALLBACK_ILLUMINANCE,
                                     (void *)cb_illuminance,
                                     NULL);
+
+New Enumeration signature:
+
+.. code-block:: c
+
+    // V1
+    void cb_enumerate(char *uid, 
+                      char *name, 
+                      uint8_t stack_id, 
+                      bool is_new)
+
+    // V2
+    void cb_enumerate(const char *uid,
+                      const char *connected_uid,
+                      char position,
+                      uint8_t hardware_version[3],
+                      uint8_t firmware_version[3],
+                      uint16_t device_identifier,
+                      uint8_t enumeration_type,
+                      void *user_data) {
 
 C#
 --
@@ -176,12 +194,31 @@ Callbacks:
     al.RegisterCallback(new BrickletAmbientLight.Illuminance(IlluminanceCB));
 
     // V2: Now with sender object in callback and "+=" syntax to add callback
-    static void IlluminanceCB(object sender, int illuminance)
+    static void IlluminanceCB(BrickletAmbientLight sender, int illuminance)
     {
         System.Console.WriteLine("Illuminance: " + illuminance/10.0 + " Lux");
     }
     al.Illuminance += IlluminanceCB;
 
+New Enumeration signature:
+
+.. code-block:: csharp
+
+    // V1
+    static void EnumerateCB(string uid, 
+                            string name, 
+                            byte stackID, 
+                            bool isNew)
+
+    // V2
+    static void EnumerateCB(IPConnection sender,
+                            string uid, 
+                            string connectedUid, 
+                            char position,
+                            short[] hardwareVersion, 
+                            short[] firmwareVersion,
+                            int deviceIdentifier, 
+                            short enumerationType)
 
 Delphi
 ------
@@ -214,12 +251,32 @@ Callback:
   al.OnIlluminance := {$ifdef FPC}@{$endif}IlluminanceCB;
 
   { V2: Now with sender object in callback }
-  procedure TExample.IlluminanceCB(sender: TObject; const illuminance: word);
+  procedure TExample.IlluminanceCB(sender: TBrickletAmbientLight; const illuminance: word);
   begin
     WriteLn(Format('Illuminance: %f Lux', [illuminance/10.0]));
   end;
 
   al.OnIlluminance := {$ifdef FPC}@{$endif}IlluminanceCB;
+
+New Enumeration signature:
+
+.. code-block:: delphi
+
+    // V1
+    procedure TExample.EnumerateCB(const uid: string; 
+                                   const name: string; 
+                                   const stackID: byte; 
+                                   const isNew: boolean);
+
+    // V2
+    procedure TExample.EnumerateCB(TIPConnection: TObject;
+                                   const uid: string; 
+                                   const connectedUid: string; 
+                                   const position: char;
+                                   const hardwareVersion: TVersionNumber;
+                                   const firmwareVersion: TVersionNumber;
+                                   const deviceIdentifier: word; 
+                                   const enumerationType: byte);
 
 
 Java
@@ -231,13 +288,36 @@ Initialization:
 
     // V1
     IPConnection ipcon = new IPConnection(host, port);
-	BrickletAmbientLight al = new BrickletAmbientLight(UID);
+    BrickletAmbientLight al = new BrickletAmbientLight(UID);
     ipcon.addDevice(al);
 
     // V2
     IPConnection ipcon = new IPConnection();
     BrickletAmbientLight al = new BrickletAmbientLight(UID, ipcon);
     ipcon.connect(host, port);
+
+New Enumeration signature:
+
+.. code-block:: java
+
+    // V1
+    new IPConnection.EnumerateListener() {
+        public void enumerate(String uid, 
+                              String name, 
+                              short stackID, 
+                              boolean isNew);
+    }
+
+    // V2
+    new IPConnection.EnumerateListener() {
+        public void enumerate(String uid, 
+                              String connectedUid, 
+                              char position,
+                              short[] hardwareVersion, 
+                              short[] firmwareVersion,
+                              int deviceIdentifier, 
+                              short enumerationType);
+    }
 
 PHP
 ---
@@ -256,6 +336,24 @@ Initialization:
     $al = new BrickletAmbientLight($uid, $ipcon);
     $ipcon->connect($host, $port);
 
+New Enumeration signature:
+
+.. code-block:: php
+
+    // V1
+    function enumerateCB($uid, 
+                         $name, 
+                         $stackID, 
+                         $isNew)
+
+    // V2
+    function enumerateCB($uid, 
+                         $connectedUid, 
+                         $position,
+                         $hardwareVersion,
+                         $firmwareVersion,
+                         $deviceIdentifier,
+                         $enumerationType)
 
 Python
 ------
@@ -274,6 +372,24 @@ Initialization:
     al = AmbientLight(UID, ipcon)
     ipcon.connect(HOST, PORT)
 
+New Enumeration signature:
+
+.. code-block:: python
+
+    // V1
+    def cb_enumerate(uid, 
+                     name, 
+                     stack_id, 
+                     is_new):
+
+    // V2
+    def cb_enumerate(uid, 
+                     connected_uid, 
+                     position, 
+                     hardware_version, 
+                     firmware_version,
+                     device_identifier, 
+                     enumeration_type):
 
 Ruby
 ----
@@ -291,3 +407,22 @@ Initialization:
     ipcon = IPConnection.new
     al = BrickletAmbientLight.new UID, ipcon
     ipcon.connect HOST, PORT
+
+New Enumeration signature:
+
+.. code-block:: ruby
+
+    // V1
+    ipcon.enumerate do |uid, 
+                        name, 
+                        stack_id, 
+                        is_new|
+
+    // V2
+    ipcon.register_callback(IPConnection::CALLBACK_ENUMERATE) do |uid, 
+                                                                  connected_uid,
+                                                                  position,
+                                                                  hardware_version, 
+                                                                  firmware_version,
+                                                                  device_identifier, 
+                                                                  enumeration_type|
