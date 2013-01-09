@@ -67,8 +67,8 @@ language documentation for each Brick and Bricklet.
 
 In the following we will compare relevant code snippets from Protocol V1
 to equivalents from Protocol V2. Keep in mind that you need to use
-the :ref:`newest version of the Bindings <bindings_examples>` for your 
-programming languages to be able to utilize the new Protocol V2 features.
+the :ref:`newest version of the Bindings <downloads_bindings_examples>` for 
+your programming languages to be able to utilize the new Protocol V2 features.
 
 
 C/C++
