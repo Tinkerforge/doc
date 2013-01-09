@@ -269,7 +269,7 @@ New Enumeration signature:
                                    const isNew: boolean);
 
     { V2 }
-    procedure TExample.EnumerateCB(TIPConnection: TObject;
+    procedure TExample.EnumerateCB(sender: TIPConnection;
                                    const uid: string; 
                                    const connectedUid: string; 
                                    const position: char;
@@ -353,7 +353,8 @@ New Enumeration signature:
                          $hardwareVersion,
                          $firmwareVersion,
                          $deviceIdentifier,
-                         $enumerationType)
+                         $enumerationType,
+                         $userData)
 
 Python
 ------
