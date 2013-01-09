@@ -146,7 +146,7 @@ New Enumeration signature:
                       uint8_t firmware_version[3],
                       uint16_t device_identifier,
                       uint8_t enumeration_type,
-                      void *user_data) {
+                      void *user_data)
 
 C#
 --
@@ -262,13 +262,13 @@ New Enumeration signature:
 
 .. code-block:: delphi
 
-    // V1
+    { V1 }
     procedure TExample.EnumerateCB(const uid: string; 
                                    const name: string; 
                                    const stackID: byte; 
                                    const isNew: boolean);
 
-    // V2
+    { V2 }
     procedure TExample.EnumerateCB(TIPConnection: TObject;
                                    const uid: string; 
                                    const connectedUid: string; 
@@ -376,20 +376,20 @@ New Enumeration signature:
 
 .. code-block:: python
 
-    // V1
+    # V1
     def cb_enumerate(uid, 
                      name, 
                      stack_id, 
-                     is_new):
+                     is_new)
 
-    // V2
+    # V2
     def cb_enumerate(uid, 
                      connected_uid, 
                      position, 
                      hardware_version, 
                      firmware_version,
                      device_identifier, 
-                     enumeration_type):
+                     enumeration_type)
 
 Ruby
 ----
@@ -412,13 +412,13 @@ New Enumeration signature:
 
 .. code-block:: ruby
 
-    // V1
+    # V1
     ipcon.enumerate do |uid, 
                         name, 
                         stack_id, 
                         is_new|
 
-    // V2
+    # V2
     ipcon.register_callback(IPConnection::CALLBACK_ENUMERATE) do |uid, 
                                                                   connected_uid,
                                                                   position,
