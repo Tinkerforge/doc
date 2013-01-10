@@ -118,7 +118,7 @@ DC Bricks (in diesem Falle steht sie in **Zeile 6**), sowie das ipcon Objekt
 In **Zeile 15** Die IP Connection wird verbunden. Es ist möglich das Programm 
 auf einem anderen PC, als dem auf dem der Brick Daemon läuft, auszuführen 
 (z.B. kann das Programm für ein Smartphone schreiben, das dann den Brick 
- steuert, der am PC angeschlossen ist).
+steuert, der am PC angeschlossen ist).
 
 Die **Zeilen 18-23** konfigurieren DC Brick und lassen den Motor mit voller
 Geschwindigkeit vorwärts laufen.
