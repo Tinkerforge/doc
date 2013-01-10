@@ -34,7 +34,7 @@ header consists of:
 
 * UID as uint32 (4 byte),
 * Packet length as uint8 (1 byte),
-* Function id as uint8 (1 bytes),
+* Function ID as uint8 (1 bytes),
 * Sequence number and Options as uint8 (1 byte) and
 * Flags as uint8 (1 byte)
 
@@ -92,7 +92,7 @@ Flags:
  * 2 = FUNCTION_NOT_SUPPORTED
  * Value 3 is not used yet.
 
-* Future use (6 bit): Seven possible flags for future use.
+* Future use (6 bit): Six possible flags for future use.
 
 All data is represented in little endian. A *bool* value is represented by 1
 byte; 0 is false, all other values are true. A *float* value is represented by
