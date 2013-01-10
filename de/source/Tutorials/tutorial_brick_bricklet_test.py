@@ -19,12 +19,12 @@ def cb_position(position):
     dc.set_velocity(velocity)
 
 if __name__ == "__main__":
-    ipcon = IPConnection(HOST, PORT) # Create IP connection to brickd
+    ipcon = IPConnection() # Create IP connection
 
-    dc = DC(UID_DC) # Create DC brick device object
-    poti = RotaryPoti(UID_POTI) # Create rotary poti device object
-    ipcon.add_device(dc) # Add device to IP connection
-    ipcon.add_device(poti) # Add device to IP connection
+    dc = DC(UID_DC, ipcon) # Create DC brick device object
+    poti = RotaryPoti(UID_POTI, ipcon) # Create rotary poti device object
+
+    ipcon.connect(HOST, PORT) # Connect to brickd
 
     poti.set_position_callback_period(50) # set callback period to 50ms
     poti.register_callback(poti.CALLBACK_POSITION, cb_position)
@@ -34,4 +34,3 @@ if __name__ == "__main__":
 
     raw_input('Press Enter to exit\n') # Use input() in Python 3
     dc.disable()
-    ipcon.destroy()
