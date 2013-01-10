@@ -197,9 +197,9 @@ In the ``toggleRelays`` action the state of both relays is switched.
  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
  {
      // Change to the IP address of your host
-     ipcon_create(&ipcon, "192.168.178.46", 4223);
-     dual_relay_create(&dr, "927"); // Change to your UID
-     ipcon_add_device(&ipcon, &dr);
+     ipcon_create(&ipcon);
+     dual_relay_create(&dr, "a27", &ipcon); // Change to your UID
+     ipcon_connect(&ipcon, "192.168.178.46", 4223);
      dual_relay_set_state(&dr, true, true);
 
      return YES;
@@ -374,9 +374,9 @@ Double click on the toggle button to edit the ``MainPage.xaml.cs``:
 
          public MainPage()
          {
-             IPConnection ipcon = new IPConnection(HOST, PORT);
-             relay = new BrickletDualRelay(UID);
-             ipcon.AddDevice(relay);
+             IPConnection ipcon = new IPConnection();
+             relay = new BrickletDualRelay(UID, ipcon);
+             ipcon.Connect(HOST, PORT);
 
              InitializeComponent();
          }
@@ -571,9 +571,9 @@ toggle button.
          super.onCreate(savedInstanceState);
 
          try {
-             ipcon = new IPConnection(host, port);
-             dr = new BrickletDualRelay(UID);
-             ipcon.addDevice(dr);
+             ipcon = new IPConnection();
+             dr = new BrickletDualRelay(UID, ipcon);
+             ipcon.connect(host, port);
          } catch(Exception e) {
              // Here you might want to give the user a retry button.
              return;
