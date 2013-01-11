@@ -40,10 +40,7 @@ potentially many RS485 Slaves. Each packet consists of:
 * Modbus address as uint8 (1 byte),
 * Modbus function code as uint8 (1 byte),
 * Sequence number as uint8 (1 byte),
-* Stack ID as uint8 (1 byte),
-* Function ID as uint8 (1 byte),
-* Packet length as uint16 (2 bytes),
-* Payload and
+* Payload (including UID, function ID, etc) and
 * Modbus CRC16 as uint16 (2 bytes)
 
 The *Modbus address* is the address, that is stored in the EEPROM of the
@@ -57,22 +54,8 @@ As the *Modbus function* we use the public function code 100 in all packets
 The *Sequence number* is incremented by the RS485 master and it is used to
 make sure that every request gets a response.
 
-The meaning of the *stack ID* depends on the transfer direction of the packet.
-If the packet is send from host to stack (request packet) then the stack ID
-specifies its destination. If the packet is send from stack to host (response
-packet) then the stack ID specifies its source. Stack ID 0 is the broadcast
-address for request packets.
-
-In a request packet the *function ID* specifies which function to execute on the
-device specified by the stack ID.
-In a response packet the function ID specifies from which function or callback
-the packet was send.
-
-The *packet length* specifies the length of the inner packet (stack ID,
-function ID, packet length and payload) in bytes. A packet without a payload
-has a packet length of 4. 
-The function ID combined with the transfer direction defines the content of the
-payload and this determines the packet length.
+The *Payload* is the same as specified in the 
+:ref:`TCP/IP protocol specification <llproto_tcpip>`.
 
 Last but not least, the Modbus CRC16 is calculated for every packet, as
 specified in the Modbus RTU specification. 
@@ -89,114 +72,8 @@ whole array no null-terminator can be appended and the string is *not*
 null-terminated. Therefore, you cannot rely on strings being null-terminated.
 
 
-Communication
-^^^^^^^^^^^^^
-
-Before you can call any functions on the connected devices, you need to
-trigger the enumeration of the stacks, after that you can discover 
-which UID belongs to which stack ID. The Modbus addresses of the stacks 
-have to be known in beforehand, they can not be discovered.
-
-
-Triggering Stack Enumeration
-""""""""""""""""""""""""""""
-
-To start the enumeration inside of the RS485 slave stacks and to make it
-aware that it should send out callbacks via RS485, the communication 
-has to start with a :modbus:func:`stack_enumerate` message.
-
-The request looks as follows:
-
-* Modbus address *MA* as uint8,
-* Modbus function code 100 as uint8,
-* Sequence number *SN* as uint8,
-* Stack ID 0 as uint8,
-* Function ID 252 as uint8,
-* Packet length 5 as uint16,
-* Start stack ID *SS* as uint8,
-* Modbus CRC16 as uint16.
-
-Whereby *MA* is the Modbus address of the RS485 stack you want to talk with,
-*SN* is anything between 0 and 255, *SS* is the number that should be used to
-start the enumeration with. For example: If you send a package with a
-start stack ID of 5, all of the devices in the RS485 stack will get a
-stack ID of 5 or above.
-
-Since the RS485 slave can't do the enumeration fast enough, the answer
-will likely be an empty message:
-
-* Modbus address *MA* as uint8,
-* Modbus function code 100 as uint8,
-* Sequence number *SN* as uint8,
-* Stack ID 0 as uint8,
-* Function ID 0 as uint8,
-* Packet length 0 as uint16,
-* Modbus CRC16 as uint16.
-
-This message has to be seen as an ACK for the request. If anything in this
-answer is wrong (wrong function code, wrong Modbus address, wrong CRC, etc)
-or there is no answer, you have to resend the request.
-
-If everything is correct the master can ask again for data. Since the master
-doesn't have anything else to send, it just sends an empty message:
-
-* Modbus address *MA* as uint8,
-* Modbus function code 100 as uint8,
-* Sequence number *SN* +1 as uint8,
-* Stack ID 0 as uint8,
-* Function ID 0 as uint8,
-* Packet length 0 as uint16,
-* Modbus CRC16 as uint16.
-
-Note that you have to increase the sequence number now, otherwise the slave
-will think that you didn't receive the ACK and resend it!
-
-If the RS485 slave had enough time to generate an answer for the
-:modbus:func:`stack_enumerate` request, the answer should now look like this:
-
-* Modbus address *MA* as uint8,
-* Modbus function code 100 as uint8,
-* Sequence number *SN* +1 as uint8,
-* Stack ID 0 as uint8,
-* Function ID 252 as uint8,
-* Packet length 5 as uint16,
-* End stack ID *ES* as uint8,
-* Modbus CRC16 as uint16.
-
-Where the end stack ID is the last stack ID of the RS485 slave address.
-For example: If a master sends a 5 as a start stack ID to the slave and
-the slave answers with 7 as the end stack ID, it means that the 
-RS485 slave stack consists of 3 Bricks or Bricklets with stack ID 5, 6
-and 7.
-
-This process has to be repeated for every RS485 slave. With this process
-it is possible to distribute unique stack IDs in the whole RS485 bus.
-However, this is not necessary. You can use start stack ID 1 for every
-RS485 slave and link the stack IDs to the Modbus address. This depends
-on how you want to do the routing to and from Bricks and Bricklets
-internally.
-
-
-Resolve UID to Stack ID
-"""""""""""""""""""""""
-
-Now you still don't which stack ID corresponds to which UID, so you
-have to resolve the UID. Please refer to the 
-:ref:`TCP/IP documentation <llproto_tcpip_resolve_uid>`
-for this.
-
-All of the documentation for the TCP/IP protocol is also true for
-Modbus. Modbus just has the additional Modbus address, Modbus
-function code, sequence number and Modbus CRC16.
-
-Below we will discuss some more examples of requests and responses
-and how to handle them. If you get the general idea about the
-sequence number and when and when not to send an answer, it is straight
-forward to implement the protocol. 
-
-
 Requests and Responses
-""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^
 
 In general, every time the RS485 master sends something to a slave (either with
 or without payload), the slave will answer (again either with or without
@@ -242,85 +119,60 @@ API
 
 The following functions and callbacks are supported by all devices.
 
-Basic Functions
-^^^^^^^^^^^^^^^
-
-.. modbus:function:: stack_enumerate
-
- :functionid: 252
- :request start_stack_id: uint8
- :response end_stack_id: uint8
-
- This function will trigger the enumeration of an RS485 slave stack.
- The response is the last stack ID in the stack. For example: If a 
- master sends a 5 as a start stack ID to the slave and the slave
- answers with 7 as the end stack ID, it means that the RS485 slave 
- stack consists of 3 Bricks or Bricklets with stack ID 5, 6 and 7.
-
- This is a broadcast function and the stack ID in the packet header has to be
- set to 0 (broadcast stack ID).
-
- You have to call this function once before the communication
- can begin. Otherwise the RS485 slave stack does not now that
- callbacks have to be sent out via RS485.
-
-
-.. modbus:function:: get_stack_id
-
- :functionid: 255
- :request uid: uint64
- :response device_uid: uint64
- :response device_firmware_version: uint8[3]
- :response device_name: char[40]
- :response device_stack_id: uint8
-
- Returns the metadata (UID, firmware version, name and stack ID) of the device
- with the UID given in the request. No response is send if there is no Brick or
- Bricklet with the given UID.
-
- This is a broadcast function and the stack ID in the packet header has to be
- set to 0 (broadcast stack ID).
-
- Use this function to resolve a UID to the corresponding stack ID that is
- required for calling other functions of the device.
-
-
-Callback Configuration Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. modbus:function:: enumerate
 
  :functionid: 254
  :emptyrequest: empty payload
  :noresponse: no response
 
- Triggers the :modbus:func:`CALLBACK_ENUMERATE`
- callback for all devices currently connected to the Brick Daemon.
+ Triggers the :tcpip:func:`CALLBACK_ENUMERATE` callback for all devices
+ currently connected to the Brick Daemon.
 
- This is a broadcast function and the stack ID in the packet header has to be
- set to 0 (broadcast stack ID).
+ This is a broadcast function and the UID in the packet header has to be
+ set to 0 (broadcast).
 
  Use this function to enumerate all connected devices without the need to know
  their UIDs beforehand.
 
 
-Callbacks
-^^^^^^^^^
-
 .. modbus:function:: CALLBACK_ENUMERATE
 
  :functionid: 253
- :response device_uid: uint64
- :response device_name: char[40]
- :response device_stack_id: uint8
- :response is_new: bool
+ :response uid: uint32
+ :response connected_uid: uint32
+ :response position: char (as ascii)
+ :response hardware_version: uint8[3]
+ :response firmware_version: uint8[3]
+ :response device_identifier: uint8
+ :response enumeration_type: uint8
 
- There are three different possibilities for the callback to be called.
- Firstly, the callback is triggered for all currently connected devices
- (with *is_new* set to *true*) when the :modbus:func:`enumerate` function is called.
- Secondly, the callback is triggered if a new Brick is plugged
- in via USB (with *is_new* set to *true*) and lastly it is triggered if a Brick is
- unplugged (with *is_new* set to *false*).
+ The callback has seven parameters:
 
- It should be possible to implement "plug 'n play" functionality with this
+ * *uid*: The UID of the device.
+ * *connected_uid*: UID where the device is connected to. For a Bricklet this
+   will be a UID of the Brick where it is connected to. For a Brick it will be
+   the UID of the bottom Master Brick in the stack. For the bottom Master Brick
+   in a stack this will be "1". With this information it is possible to
+   reconstruct the complete network topology.
+ * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+   'a' - 'd' (position on Brick).
+ * *hardware_version*: Major, minor and release number for hardware version.
+ * *firmware_version*: Major, minor and release number for firmware version.
+ * *device_identifier*: A number that represents the device, instead of the
+   name of the device (easier to parse).
+ * *enumeration_type*: Type of enumeration.
+
+ Possible enumeration types are:
+
+ * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
+   triggered by user).
+ * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
+   (automatically send by Brick after establishing a communication connection).
+   This indicates that the device has potentially lost its previous
+   configuration and needs to be reconfigured.
+ * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
+   possible for USB connection). In this case only *uid* and *enumeration_type*
+   are vaild.
+
+ It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).

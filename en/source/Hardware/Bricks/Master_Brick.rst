@@ -80,6 +80,10 @@ over the **USB** connection of the master. This can be changed with
 Master Extensions for cable based interfaces (**RS485**, **Ethernet**) and wireless
 interfaces (**WIFI**). Extensions are plugged on the topside of the master.
 
+The maximum stack consists of (bottom to top) 1x Step-Down Power Supply,
+1x Master Brick, 8x Bricks, 2x Master Extensions. With all Bricks being Master
+Bricks in a stack up to 36 Bricklets can be connected to a single stack.
+
 Since the firmware is open source it is possible to program the device
 directly (:ref:`On Device Programming <pi_odpi>`).
 Currently we are not offering an On Device API.

@@ -76,7 +76,7 @@ steuert.
 
 Dies kann mit jeder der :ref:`unterstützten <api_bindings>` Programmiersprachen
 geschrieben werden. In diesem Tutorial wird `Python <http://www.python.org>`__
-verwendet, das Python einfach zu lesen und zu verstehen ist.
+verwendet.
 
 Dieses Tutorial sollte es dir ermöglichen, zusammen mit den Beispielen in den 
 API Dokumentationen der verschiedenen Produkte, jeden Brick mit allen 
@@ -103,24 +103,22 @@ Nun folgt ein Blick auf ``example_configuration.py``:
  :linenos:
  :tab-width: 4
 
-**Zeile 12** erstellt eine IP Connection zum Brick Daemon der auf dem Host
-definiert in den **Zeilen 4-5** läuft. Es ist möglich das Programm auf einem
-anderen PC, als dem auf dem der Brick Daemon läuft, auszuführen (z.B. kann das
-Programm für ein Smartphone schreiben, das dann den Brick steuert, der am
-PC angeschlossen ist).
+**Zeile 12** erstellt ein IP Connection Objekt.
 
 **Zeile 14** erzeugt ein DC Brick Objekt über welches der eigentliche DC Brick
-gesteuert werden kann. Dabei muss die eindeutige Identifikationsnummer (UID) des
-DC Bricks übergeben werden (in diesem Falle steht sie in **Zeile 6**). Hier muss
-die entsprechende UID des verwendeten Bricks eingetragen werden.
+gesteuert werden kann. Dabei müssen die eindeutige Identifikationsnummer (UID) des
+DC Bricks (in diesem Falle steht sie in **Zeile 6**), sowie das ipcon Objekt
+übergeben werden.
 
 .. note::
  Die einfachste Möglichkeit die UID eines Bricks zu ermitteln ist über der
  Brick Viewer. Wenn der Brick über USB an den PC angeschlossen ist zeigt der
  Brick Viewer dessen UID im "Setup" Tab an.
 
-In **Zeile 15** wird das DC Brick Objekt der IP Connection hinzugefügt. Diese
-ist für die Kommunikation mit dem Brick Daemon zuständig.
+In **Zeile 15** Die IP Connection wird verbunden. Es ist möglich das Programm 
+auf einem anderen PC, als dem auf dem der Brick Daemon läuft, auszuführen 
+(z.B. kann das Programm für ein Smartphone schreiben, das dann den Brick 
+steuert, der am PC angeschlossen ist).
 
 Die **Zeilen 18-23** konfigurieren DC Brick und lassen den Motor mit voller
 Geschwindigkeit vorwärts laufen.
@@ -194,7 +192,7 @@ Die **Zeilen 4-7** sind die typische Konfiguration, die UIDs müssen die der
 verwendeten Bricks und Bricklets sein.
 
 Die **Zeilen 22-27** erstellen die IP Connection zum Brick Daemon. Die Brick und
-Bricklet Objekte werden erzeugt und der IP Connection hinzugefügt.
+Bricklet Objekte werden erzeugt.
 
 Das Rotary Poti Bricklet wird so konfiguriert, das die Funktion ``cb_position``
 jedes Mal aufgerufen wird wenn sich die Position des Portentiometers ändert.

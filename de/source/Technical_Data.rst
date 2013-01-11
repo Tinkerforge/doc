@@ -123,12 +123,13 @@ Beschreibung
 """"""""""""
 
 * **PGND**: Stapelmassesignal.
-* **PVCC**: Stapelstromversorgung (max. 27V), durch
+* **PVCC**: Stapelstromversorgung (max. 27V, 0,5A per Pin, 5A gesamt), durch
   :ref:`Stromversorgung <product_overview_power_supplies>` bereitgestellt.
 * **GND**: Gemeinsames Massesignal.
-* **5V**: 5V Stromversorgung, bereitgestellt durch jeden Brick (per USB) oder
-  Stromversorgungen. Da die USB Spannung vom verwendeten PC/USB Hub abhängt
-  können die 5V an diesem Pin nicht garantiert werden.
+* **5V**: 5V Stromversorgung (max. 0,5A per Pin, 1,5A gesamt),
+  bereitgestellt durch jeden Brick (per USB) oder Stromversorgungen.
+  Da die USB Spannung vom verwendeten PC/USB Hub abhängt
+  können die 5V an diesem Pin nicht garantiert werden bei Versorgung über USB.
 * **3V3**: Bereitgestellt durch jeden Brick. Wird durch einen DC/DC Wandler
   (5V -> 3V3) auf der Platine erzeugt.
 * **Current**: Signal zur Messung des Stromverbrauchs über die
@@ -160,3 +161,20 @@ Brickletstecker
    "10", "IO_4",		"I/O 4"
 
 Falls nicht anders angegeben, sind alle Signale 3,3V basiert.
+
+
+.. _connector_usb:
+
+USB Stecker
+-----------
+
+.. csv-table::
+   :header: "Pin", "Funktion", "Beschreibung"
+   :widths: 25, 100, 200
+
+   "1", "VCC",        "5V"
+   "2", "D-",         "Data -"
+   "3", "D+",         "Data +"
+   "4", "GND",        "Masse"
+
+Die 5V Versorung über USB muss zwischen 4,8V und 5,7V liegen.

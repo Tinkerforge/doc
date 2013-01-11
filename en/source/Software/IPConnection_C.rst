@@ -44,13 +44,12 @@ Possible error codes are:
 * E_HOSTNAME_INVALID = -3
 * E_NO_CONNECT = -4
 * E_NO_THREAD = -5
-* E_NOT_ADDED = -6
+* E_NOT_ADDED = -6 (unused since bindings version 2.0.0)
 * E_ALREADY_CONNECTED = -7
 * E_NOT_CONNECTED = -8
 * E_INVALID_PARAMETER = -9
 * E_NOT_SUPPORTED = -10
 * E_UNKNOWN_ERROR_CODE = -11
-
 
 as defined in :file:`ip_connection.h`.
 
@@ -60,38 +59,44 @@ Basic Functions
 
 .. c:function:: void ipcon_create(IPConnection *ipcon)
 
- Creates an IP Connection object. The constructed object is needed for the
- constructor of Bricks and Bricklets.
+ Creates an IP Connection object that can be used to enumerate the available
+ devices. It is also required for the constructor of Bricks and Bricklets.
+
 
 .. c:function:: void ipcon_destroy(IPConnection *ipcon)
 
- Destroys the IP Connection. The socket to the Brick Daemon will be closed
- and the threads of the IP Connection are terminated.
+ Destroys the IP Connection object. The connection to the Brick Daemon gets
+ closed and the threads of the IP Connection are terminated.
+
 
 .. c:function:: int ipcon_connect(IPConnection *ipcon, const char *host, uint16_t port)
 
- Creates a TCP/IP connection to the given host and port.
- The host and port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ Creates a TCP/IP connection to the given *host* and *port*. The host and port
+ can point to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and returns an error code
- if there is no Brick Daemon or WIFI/Ethernet Extension
- listening at the given host and port.
+ Blocks until the connection is established and returns an error code if there
+ is no Brick Daemon or WIFI/Ethernet Extension listening at the given host
+ and port.
+
 
 .. c:function:: int ipcon_disconnect(IPConnection *ipcon)
 
- Disconnects the TCP/IP connection to the Brick Daemon or to
- the WIFI/Ethernet Extension.
+ Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
+ Extension.
+
 
 .. c:function:: int ipcon_get_connection_state(IPConnection *ipcon)
 
  Can return the following states:
 
  * IPCON_CONNECTION_STATE_DISCONNECTED (0): No connection is established.
- * IPCON_CONNECTION_STATE_CONNECTED (1): A connection to the Brickd Daemon or the WIFI/Ethernet Extension is established.
- * IPCON_CONNECTION_STATE_PENDING (2): IP Connection is currently trying to connect.
+ * IPCON_CONNECTION_STATE_CONNECTED (1): A connection to the Brick Daemon or
+   the WIFI/Ethernet Extension is established.
+ * IPCON_CONNECTION_STATE_PENDING (2): IP Connection is currently trying to
+   connect.
 
 .. c:function:: void ipcon_set_auto_reconnect(IPConnection *ipcon, bool auto_reconnect)
 
@@ -109,15 +114,21 @@ Basic Functions
 
 .. c:function:: void ipcon_set_timeout(IPConnection *ipcon, uint32_t timeout)
 
- Sets the timeout (in ms) for getters and for setters for which 
- "response expected" is activated.
+ Sets the timeout in milliseconds for getters and for setters for which the
+ response expected flag is activated.
 
- Default timeout is 2500ms.
+ Default timeout is 2500.
 
 
 .. c:function:: uint32_t ipcon_get_timeout(IPConnection *ipcon)
 
  Returns the timeout as set by :c:func:`ipcon_set_timeout`.
+
+
+.. c:function:: int ipcon_enumerate(IPConnection *ipcon)
+
+ Broadcasts an enumerate request. All devices will respond with an enumerate
+ callback.
 
 
 .. c:function:: void ipcon_wait(IPConnection *ipcon)
@@ -126,7 +137,7 @@ Basic Functions
  is called.
 
  This is useful if you rely solely on callbacks for events, if you want to
- wait for a specific callback or if the IP Connection was created in a threads.
+ wait for a specific callback or if the IP Connection was created in a thread.
 
  Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
 
@@ -138,26 +149,36 @@ Basic Functions
  Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
 
 
-.. c:function:: int ipcon_enumerate(IPConnection *ipcon)
-
- Broadcasts an enumerate request. All devices will respond with an enumerate
- callback.
-
-
-
-
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. c:function:: void ipcon_register_callback(IPConnection *ipcon, uint8_t id, void *callback, void *user_data)
 
- Registers a callback for a given id.
+ Registers a callback with ID *id* to the function *callback*.
 
- The available ids with corresponding callback function signatures 
+ The available IDs with corresponding callback function signatures
  are described below.
+
 
 Callbacks
 ^^^^^^^^^
+
+Callbacks can be registered to be notified about events. The registration is
+done with the :c:func:`ipcon_register_callback` function. The parameters
+consist of the IP Connection object, the callback ID, the callback function and
+optional user data:
+
+.. code-block:: c
+
+    void my_callback(int p, void *user_data) {
+        printf("parameter: %d\n", p);
+    }
+
+    ipcon_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void*)my_callback, NULL);
+
+The available constants with corresponding callback function signatures are
+described below.
+
 
 .. c:var:: IPCON_CALLBACK_ENUMERATE
 
@@ -168,21 +189,34 @@ Callbacks
  The callback has seven parameters:
 
  * *uid*: The UID of the device.
- * *connectedUID*: UID where the device is connected to. For a Bricklet this will be a UID of the Brick where it is connected to. For a Brick it will be the UID of the bottom Master Brick in the stack. For the bottom Master Brick in a Stack this will be "1". With this information it is possible to reconstruct the complete network topology. 
- * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets: 'a' - 'd' (position on Brick).
- * *hardwareVersion*: Major, minor and release number for hardware version.
- * *firmwareVersion*: Major, minor and release number for firmware version.
- * *deviceIdentifier*: A number that represents the Brick, instead of the name of the Brick (easier to parse).
- * *enumerationType*: Type of enumeration
+ * *connected_uid*: UID where the device is connected to. For a Bricklet this
+   will be a UID of the Brick where it is connected to. For a Brick it will be
+   the UID of the bottom Master Brick in the stack. For the bottom Master Brick
+   in a stack this will be "1". With this information it is possible to
+   reconstruct the complete network topology.
+ * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+   'a' - 'd' (position on Brick).
+ * *hardware_version*: Major, minor and release number for hardware version.
+ * *firmware_version*: Major, minor and release number for firmware version.
+ * *device_identifier*: A number that represents the device, instead of the
+   name of the device (easier to parse).
+ * *enumeration_type*: Type of enumeration.
 
  Possible enumeration types are:
 
- * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration triggered by user).
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically send by Brick after establishing a communication connection). This indicates that the device has potentially lost its previous configuration and needs to be reconfigured.
- * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible for USB connection).
+ * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
+   triggered by user).
+ * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
+   (automatically send by Brick after establishing a communication connection).
+   This indicates that the device has potentially lost its previous
+   configuration and needs to be reconfigured.
+ * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
+   possible for USB connection). In this case only *uid* and *enumeration_type*
+   are vaild.
 
- It should be possible to implement "plug 'n play" functionality with this
+ It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
+
 
 .. c:var:: IPCON_CALLBACK_CONNECTED
 
@@ -190,10 +224,13 @@ Callbacks
 
   void callback(uint8_t connect_reason, void *user_data)
 
- This callback is called whenever the IP connection is connected, possible reasons are:
+ This callback is called whenever the IP Connection is connected, possible
+ reasons are:
 
- * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request from user.
+ * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request
+   from user.
  * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
+
 
 .. c:var:: IPCON_CALLBACK_DISCONNECTED
 
@@ -201,8 +238,11 @@ Callbacks
 
   void callback(uint8_t disconnect_reason, void *user_data)
 
- This callback is called whenever the IP connection is disconnected, possible reasons are:
+ This callback is called whenever the IP Connection is disconnected, possible
+ reasons are:
 
  * IPCON_DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
- * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
- * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by brickd or WIFI/Ethernet Extension.
+ * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable
+   error.
+ * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick Daemon
+   or WIFI/Ethernet Extension.

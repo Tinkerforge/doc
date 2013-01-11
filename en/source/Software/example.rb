@@ -13,7 +13,9 @@ ipcon = IPConnection.new
 ipcon.connect HOST, PORT
 
 # Enumerate Bricks and Bricklets
-ipcon.register_callback(IPConnection::CALLBACK_ENUMERATE) do |uid, connected_uid, position, hardware_version, firmware_version, device_identifier, enumeration_type|
+ipcon.register_callback(IPConnection::CALLBACK_ENUMERATE) do |uid, connected_uid, position,
+                                                              hardware_version, firmware_version,
+                                                              device_identifier, enumeration_type|
   puts "UID:               #{uid}"
   puts "Enumeration Type:  #{enumeration_type}"
 

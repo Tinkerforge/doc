@@ -121,12 +121,13 @@ Description
 """""""""""
 
 * **PGND**: Stack power ground signal.
-* **PVCC**: Stack power signal (max. 27V), powered by
+* **PVCC**: Stack power signal (max. 27V, 0.5A per pin, 5A in total), powered by
   :ref:`Power Supplies <product_overview_power_supplies>`.
 * **GND**: Common ground signal.
-* **5V**: 5V power signal, powered by every Brick (per USB) or Power Supplies.
+* **5V**: 5V power signal (max. 0.5A per pin, 1.5A in total),
+  powered by every Brick (per USB) or Power Supplies.
   Since the USB voltage depends on your PC/USB hub, the 5V
-  on this rail can not be guaranteed.
+  on this rail can not be guaranteed when powered over USB.
 * **3V3**: Powered by every Brick. Created with on-board DC/DC converter
   (5V -> 3V3).
 * **Current**: Signal to measure the current flow created by
@@ -158,3 +159,20 @@ Bricklet Connector
    "10", "IO_4",		"I/O 4"
 
 When not otherwise stated, all signals are 3.3V based.
+
+
+.. _connector_usb:
+
+USB Connector
+-------------
+
+.. csv-table::
+   :header: "Pin", "Function", "Description"
+   :widths: 25, 100, 200
+
+   "1", "VCC",        "5V"
+   "2", "D-",         "Data -"
+   "3", "D+",         "Data +"
+   "4", "GND",        "Ground"
+
+The 5V power supply over USB has to be between 4.8V and 5.7V.

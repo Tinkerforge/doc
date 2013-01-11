@@ -94,7 +94,7 @@ auch)::
 
 Als Compiler wird GCC in der none-eabi Version für ARM benötigt. Lade diesen von
 `CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
-herunter und installiere diese. Dabei gibt es Versionen diese Compilers, die
+herunter und installiere diese. Dabei gibt es Versionen dieses Compilers, die
 keine funktionsfähige Firmware erzeugen. Daher wird empfohlen nur Versionen zu
 verwenden von denen bekannt ist, dass sie richtig funktionieren:
 

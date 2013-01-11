@@ -76,8 +76,7 @@ The DC Brick and motor are verified to work properly, there is now
 nothing in the way to write a first program that controls the DC Brick.
 
 You can choose one of the :ref:`available <api_bindings>` programming
-languages, in this tutorial we use `Python <http://www.python.org>`__,
-since it is easy to understand.
+languages, in this tutorial we use `Python <http://www.python.org>`__.
 
 The necessary steps to get everything working are essentially
 the same in all programming language. This tutorial together with the
@@ -104,23 +103,22 @@ In this tutorial we take a look at ``example_configuration.py``:
  :linenos:
  :tab-width: 4
 
-**Line 12** creates an IP Connection to the Brick Daemon running on the host
-defined in **Lines 4-5**. It is possible to run your program on
-another PC than the one which has the Brick Daemon running (e.g. you can
-write a program for your smartphone that controls a Brick connected to your PC).
+**Line 12** creates an IP Connection object.
 
-**Line 14** creates an object that allows to control the DC Brick.
-It is necessary to assign the Unique Identifier (UID) of the Brick
-(in this example defined in **Line 6**). Change it corresponding to
-your device!
+**Line 13** creates an object that allows to control the DC Brick.
+It is necessary to pass the Unique Identifier (UID) of the Brick
+(in this example defined in **Line 6**) and the ipcon object. 
+Change the UID corresponding to your device! 
 
 .. note::
  The easiest way to get the UID of your device is to use the Brick Viewer.
  If you connect a device to the PC, the Viewer will display the UID in
  the "Setup" tab.
 
-In **Line 15** the DC Brick object is attached to the IP Connection which is
-responsible for the communication with the Brick Daemon.
+In **Line 15** the IP Connection is connected. It is possible to run 
+your program on another PC than the one which has the Brick Daemon 
+running (e.g. you can write a program for your smartphone that 
+controls a Brick connected to your PC).
 
 The **Lines 18-23** configure the DC Brick and let the motor run full
 speed forward.
@@ -193,8 +191,8 @@ velocity with the rotary poti. It now look as follows
 **Lines 4-7** are the typical configurations, the UID has to be changed
 according to the Bricks and Bricklets you use.
 
-In **Lines 22-27** an IP Connection to the Brick Daemon is established.
-The Brick and Bricklet devices are created and added to the IP Connection.
+In **Lines 22-27** an IP Connection to the Brick Daemon is established and
+the Brick and Bricklet device objects are created.
 
 We configure the Rotary Poti Bricklet, such that it calls the function
 ``cb_position`` every time the position of the potentiometer changes.
@@ -209,7 +207,7 @@ In **Lines 32-33** we enable the motor and set a maximum acceleration. This
 allows the motor to follow the potentiometer movements immediately.
 
 In **Lines 35-37** we wait for user input to prevent program termination.
-After this the motor is stopped and the IP Connection destroyed.
+After this the motor is stopped before the program ends.
 
 
 .. _tutorial_build_stacks:
