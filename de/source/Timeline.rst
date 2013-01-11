@@ -35,6 +35,6 @@ Termine haben.
    "",     "49", "LCD 20x4 Bricklet 1.2", "`fertig <http://de.blog.tinkerforge.com/2012/12/6/lcd-20x4-bricklet-1-2>`__"
    "",     "51", "Neues Voltage/Current Bricklet", "`fertig <http://de.blog.tinkerforge.com/2012/12/20/voltage-current-bricklet-jetzt-verfuegbar>`__"
    "",     "51", "GPS Bricklet", "`fertig <http://de.blog.tinkerforge.com/2012/12/20/gps-bricklet-jetzt-verfuegbar>`__"
-   "2013", "03", "PTC Bricklet", "Prototyp existiert"
-   "",     "06", "Ethernet Extension mit PoE", "Prototyp im Test"
+   "2013", "07", "PTC Bricklet", "Prototyp getestet"
+   "",     "07", "Ethernet Extension mit PoE", "Prototyp im Test"
    "",     "?", "Sonic Range Bricklet"
