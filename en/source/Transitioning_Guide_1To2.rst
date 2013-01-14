@@ -1,12 +1,12 @@
 .. _transition_1to2:
 
-Transitioning from Protocol V1 to Protocol V2
-=============================================
+Transitioning from Protocol 1.0 to Protocol 2.0
+===============================================
 
 Update Tools and Firmwares
 --------------------------
 
-Updating to Protocol V2 is quite easy. Start by installing the :ref:`newest
+Updating to Protocol 2.0 is quite easy. Start by installing the :ref:`newest
 version <downloads_tools>` of the Brick Daemon and the Brick Viewer.
 
 After that you should start by updating all of your Bricks, you can update
@@ -28,6 +28,8 @@ on "Auto-Update All Bricklets".
 If the auto update does not work, you can of course still update the
 Bricklets individually by using the normal
 :ref:`Bricklet updating process <brickv_flash_plugin>`.
+
+In the end, everything should have a version that starts with "2". 
 
 General
 -------
@@ -65,10 +67,10 @@ Every Brick and Bricklet has the following new functions:
 Documentation for these functions can be found in the normal programming
 language documentation for each Brick and Bricklet.
 
-In the following we will compare relevant code snippets from Protocol V1
-to equivalents from Protocol V2. Keep in mind that you need to use
+In the following we will compare relevant code snippets from Protocol 1.0
+to equivalents from Protocol 2.0. Keep in mind that you need to use
 the :ref:`newest version of the Bindings <downloads_bindings_examples>` for 
-your programming languages to be able to utilize the new Protocol V2 features.
+your programming languages to be able to utilize the new Protocol 2.0 features.
 
 
 C/C++
@@ -78,7 +80,7 @@ Initialization:
 
 .. code-block:: c
 
-    // V1
+    // 1.0
     IPConnection ipcon;
     if(ipcon_create(&ipcon, HOST, PORT) < 0) {
         fprintf(stderr, "Could not create connection\n");
@@ -93,7 +95,7 @@ Initialization:
         exit(1);
     }
 
-    // V2
+    // 2.0
     IPConnection ipcon;
     ipcon_create(&ipcon);
 
@@ -109,7 +111,7 @@ Callbacks:
 
 .. code-block:: c
 
-    // V1
+    // 1.0
     void cb_illuminance(uint16_t illuminance) {
         printf("Illuminance: %f Lux.\n", illuminance/10.0);
     }
@@ -118,7 +120,7 @@ Callbacks:
                                     AMBIENT_LIGHT_CALLBACK_ILLUMINANCE, 
                                     (void *)cb_illuminance);
 
-    // V2 (now with user data)
+    // 2.0 (now with user data)
     void cb_illuminance(uint16_t illuminance, void *user_data) {
         printf("Illuminance: %f Lux.\n", illuminance/10.0);
     }
@@ -132,13 +134,13 @@ New Enumeration signature:
 
 .. code-block:: c
 
-    // V1
+    // 1.0
     void cb_enumerate(char *uid, 
                       char *name, 
                       uint8_t stack_id, 
                       bool is_new)
 
-    // V2
+    // 2.0
     void cb_enumerate(const char *uid,
                       const char *connected_uid,
                       char position,
@@ -158,25 +160,25 @@ the C# bindings CLS complient (i.e. they can be easily used from other
 .net languages). All unsigned data types have been replaced by the next
 higher signed data type.
 
-============  ============
-Data type V1  Data type V2
-============  ============
-uint8         int16
-uint16        int32
-uint32        int64
-uint64        int64
-============  ============
+=============  =============
+Data type 1.0  Data type 2.0
+=============  =============
+uint8          int16
+uint16         int32
+uint32         int64
+uint64         int64
+=============  =============
 
 Initialization:
 
 .. code-block:: csharp
 
-    // V1
+    // 1.0
     IPConnection ipcon = new IPConnection(HOST, PORT);    
     BrickletAmbientLight al = new BrickletAmbientLight(UID);    
     ipcon.AddDevice(al);
 
-    // V2
+    // 2.0
     IPConnection ipcon = new IPConnection();
     BrickletAmbientLight al = new BrickletAmbientLight(UID, ipcon);
     ipcon.Connect(HOST, PORT);
@@ -186,14 +188,14 @@ Callbacks:
 
 .. code-block:: csharp
 
-    // V1
+    // 1.0
     static void IlluminanceCB(ushort illuminance)
     {
         System.Console.WriteLine("Illuminance: " + illuminance/10.0 + " Lux");
     }
     al.RegisterCallback(new BrickletAmbientLight.Illuminance(IlluminanceCB));
 
-    // V2: Now with sender object in callback and "+=" syntax to add callback
+    // 2.0: Now with sender object in callback and "+=" syntax to add callback
     static void IlluminanceCB(BrickletAmbientLight sender, int illuminance)
     {
         System.Console.WriteLine("Illuminance: " + illuminance/10.0 + " Lux");
@@ -204,13 +206,13 @@ New Enumeration signature:
 
 .. code-block:: csharp
 
-    // V1
+    // 1.0
     static void EnumerateCB(string uid, 
                             string name, 
                             byte stackID, 
                             bool isNew)
 
-    // V2
+    // 2.0
     static void EnumerateCB(IPConnection sender,
                             string uid, 
                             string connectedUid, 
@@ -227,12 +229,12 @@ Initialization:
 
 .. code-block:: delphi
 
-  { V1 }
+  { 1.0 }
   ipcon := TIPConnection.Create(HOST, PORT);
   al := TBrickletAmbientLight.Create(UID);
   ipcon.AddDevice(al);
 
-  { V2 }
+  { 2.0 }
   ipcon := TIPConnection.Create;
   al := TBrickletAmbientLight.Create(UID, ipcon);
   ipcon.Connect(HOST, PORT);
@@ -242,7 +244,7 @@ Callback:
 
 .. code-block:: delphi
 
-  { V1 }
+  { 1.0 }
   procedure TExample.IlluminanceCB(const illuminance: word);
   begin
     WriteLn(Format('Illuminance: %f Lux', [illuminance/10.0]));
@@ -250,7 +252,7 @@ Callback:
 
   al.OnIlluminance := {$ifdef FPC}@{$endif}IlluminanceCB;
 
-  { V2: Now with sender object in callback }
+  { 2.0: Now with sender object in callback }
   procedure TExample.IlluminanceCB(sender: TBrickletAmbientLight; const illuminance: word);
   begin
     WriteLn(Format('Illuminance: %f Lux', [illuminance/10.0]));
@@ -262,13 +264,13 @@ New Enumeration signature:
 
 .. code-block:: delphi
 
-    { V1 }
+    { 1.0 }
     procedure TExample.EnumerateCB(const uid: string; 
                                    const name: string; 
                                    const stackID: byte; 
                                    const isNew: boolean);
 
-    { V2 }
+    { 2.0 }
     procedure TExample.EnumerateCB(sender: TIPConnection;
                                    const uid: string; 
                                    const connectedUid: string; 
@@ -286,12 +288,12 @@ Initialization:
 
 .. code-block:: java
 
-    // V1
+    // 1.0
     IPConnection ipcon = new IPConnection(host, port);
     BrickletAmbientLight al = new BrickletAmbientLight(UID);
     ipcon.addDevice(al);
 
-    // V2
+    // 2.0
     IPConnection ipcon = new IPConnection();
     BrickletAmbientLight al = new BrickletAmbientLight(UID, ipcon);
     ipcon.connect(host, port);
@@ -300,7 +302,7 @@ New Enumeration signature:
 
 .. code-block:: java
 
-    // V1
+    // 1.0
     new IPConnection.EnumerateListener() {
         public void enumerate(String uid, 
                               String name, 
@@ -308,7 +310,7 @@ New Enumeration signature:
                               boolean isNew);
     }
 
-    // V2
+    // 2.0
     new IPConnection.EnumerateListener() {
         public void enumerate(String uid, 
                               String connectedUid, 
@@ -326,12 +328,12 @@ Initialization:
 
 .. code-block:: php
 
-    // V1
+    // 1.0
     $ipcon = new IPConnection($host, $port);
     $al = new BrickletAmbientLight($uid);
     $ipcon->addDevice($al);
 
-    // V2
+    // 2.0
     $ipcon = new IPConnection();
     $al = new BrickletAmbientLight($uid, $ipcon);
     $ipcon->connect($host, $port);
@@ -340,13 +342,13 @@ New Enumeration signature:
 
 .. code-block:: php
 
-    // V1
+    // 1.0
     function enumerateCB($uid, 
                          $name, 
                          $stackID, 
                          $isNew)
 
-    // V2
+    // 2.0
     function enumerateCB($uid, 
                          $connectedUid, 
                          $position,
@@ -363,12 +365,12 @@ Initialization:
 
 .. code-block:: python
 
-    # V1
+    # 1.0
     ipcon = IPConnection(HOST, PORT)
     al = AmbientLight(UID)
     ipcon.add_device(al)
 
-    # V2
+    # 2.0
     ipcon = IPConnection()
     al = AmbientLight(UID, ipcon)
     ipcon.connect(HOST, PORT)
@@ -377,13 +379,13 @@ New Enumeration signature:
 
 .. code-block:: python
 
-    # V1
+    # 1.0
     def cb_enumerate(uid, 
                      name, 
                      stack_id, 
                      is_new)
 
-    # V2
+    # 2.0
     def cb_enumerate(uid, 
                      connected_uid, 
                      position, 
@@ -399,12 +401,12 @@ Initialization:
 
 .. code-block:: ruby
 
-    # V1
+    # 1.0
     ipcon = IPConnection.new HOST, PORT
     al = BrickletAmbientLight.new UID
     ipcon.add_device al
 
-    # V2
+    # 2.0
     ipcon = IPConnection.new
     al = BrickletAmbientLight.new UID, ipcon
     ipcon.connect HOST, PORT
@@ -413,13 +415,13 @@ New Enumeration signature:
 
 .. code-block:: ruby
 
-    # V1
+    # 1.0
     ipcon.enumerate do |uid, 
                         name, 
                         stack_id, 
                         is_new|
 
-    # V2
+    # 2.0
     ipcon.register_callback(IPConnection::CALLBACK_ENUMERATE) do |uid, 
                                                                   connected_uid,
                                                                   position,

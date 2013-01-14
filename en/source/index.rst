@@ -23,7 +23,7 @@ Documentation
    Programming_Interfaces
    Technical_Data
    Source_Code
-   Protocol_20
+   Transitioning_Guide_1To2
 
 
 .. _index_embedded_boards:

@@ -122,36 +122,17 @@ You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
 Driver Installation (Windows 8)
 """""""""""""""""""""""""""""""
 
-Windows 8 requires signed drivers. The driver that is currently shipped with
-the Brick Daemon installer is not signed.
-
-The libusb developers provide a tool that can install a signed driver on
-Windows 8: Zadig.
-
-Download `Zadig <http://download.tinkerforge.com/_stuff/zadig_v2.0.1.159.exe>`__
-and start it.
-
-.. image:: /Images/Screenshots/zadig_small.jpg
-   :scale: 100 %
-   :alt: Zadig driver installer
-   :align: center
-   :target: ../_images/Screenshots/zadig.jpg
-
-When you connect a Brick it should show up in Zadig. Choose the WinUSB driver
-and click the "Install Driver" button. Now the driver is installed and should
-work for all Bricks.
-
-More details on Zadig can be found on the `Zadig homepage
-<https://github.com/pbatard/libwdi/wiki/Zadig>`__.
-
+On Windows 8 no driver is needed anymore. Windows 8 recognizes
+the hardware automatically and correctly.
 
 Linux
 ^^^^^
 
-To install the Brick Daemon on a Debian based distribution
-(Ubuntu, Mint, etc.), download the Brick Daemon .deb from
-:ref:`here <downloads_tools>`. Right-click on the file and choose
-"Open with GDebi Package Installer":
+Um den Brick Daemon auf einer Debian basierten Distribution 
+(Ubuntu, Mint, etc.) zu installieren, muss das Brick Daemon .deb von
+der :ref:`Download-Seite <downloads_tools>` heruntergeladen werden.
+Nach einem Rechtsklick auf die Datei kann "Open with GDebi Package Installer"
+ausgewählt werden:
 
 .. image:: /Images/Screenshots/brickd_linux_1_small.jpg
    :scale: 100 %
@@ -159,7 +140,7 @@ To install the Brick Daemon on a Debian based distribution
    :align: center
    :target: ../_images/Screenshots/brickd_linux_1.jpg
 
-Then click "Install Package":
+Klick auf "Install Package":
 
 .. image:: /Images/Screenshots/brickd_linux_2_small.jpg
    :scale: 100 %
@@ -167,7 +148,7 @@ Then click "Install Package":
    :align: center
    :target: ../_images/Screenshots/brickd_linux_2.jpg
 
-Ready:
+Fertig:
 
 .. image:: /Images/Screenshots/brickd_linux_3_small.jpg
    :scale: 100 %
@@ -175,93 +156,101 @@ Ready:
    :align: center
    :target: ../_images/Screenshots/brickd_linux_3.jpg
 
-In Ubuntu you can also use the Ubuntu Software Center, other Desktop
-environments have very similar tools that practically work the same way.
+In Ubuntu kann auch das Ubuntu Software Center benutzt werden. Andere
+Desktopumgebungen haben ähnliche Werkzeuge die praktisch genauso
+funktionieren.
 
-To install Brick Daemon from the console use the following::
+Der Brick Daemon kann von der Console mit folgemdem Befehl installiert
+werden::
 
  sudo apt-get install python-twisted python-gudev libusb-1.0-0
  sudo dpkg -i brickd_linux_latest.deb
 
-To install Brick Daemon from source, download the source from
-`here <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
+Um den Brick Daemon aus den Sourcen zu installieren, kann der
+`Quellcode von github <https://github.com/Tinkerforge/brickd>`__ heruntergeladen werden.
+Es gibt folgende Abhängigkeiten:
 
-* python-twisted
-* python-gudev
-* libusb-1.0-0
+* libusb-1.0-0-dev >= 1.0.8
+* libudev-dev >= 173 (Optional für Hotplug)
 
-On Debian based distributions you can do that as shown above, on other
-distribution you have to search for and install the equivalent packages.
+Auf Debian basierten Distributionen können die Abhängigkeiten mit apt-get
+installiert werden::
 
-To start brickd from source, change to the folder
-brickd/src/brickd/ and start with::
+ sudo apt-get install libusb-1.0-0-dev libudev-dev
 
- sudo python brickd_linux.py
+Auf anderen Distributionen muss nach den äquivakten Paketen gesucht werden.
 
-Error logs can be found in::
+Der Brick Daemon kann mit den folgenden Befehlen aus brickd/src/brickd/ 
+compiliert und gestartet werden::
+
+ make
+ sudo ./brickd
+
+Error Logs gibt es unter::
 
  /var/log/brickd.log
 
-If you install the Debian package, brickd will be started after the
-installation and at startup automatically.
+Wenn der Brick Daemon aus dem Paket installiert wird, wird er automatisch
+bei jedem neustart beim Hochfahren gestartet.
 
 Mac OS X
 ^^^^^^^^
 
-To install the Brick Daemon on Mac OS X download the .dmg
-from :ref:`here <downloads_tools>`. Click on the downloaded file, this
-should open the package:
+Um den Brick Daemon auf Mac OS X zu installieren, muss die .dmg
+von der :ref:`Download-Seite <downloads_tools>` heruntergeladen werden.
+Ein Klick auf die Datei sollte das Paket öffnen:
 
 .. image:: /Images/Screenshots/brickd_macos_1_small.jpg
    :scale: 100 %
-   :alt: Brickd installation step 1
+   :alt: Brickd Installation Schritt 1
    :align: center
    :target: ../_images/Screenshots/brickd_macos_1.jpg
 
-Then click "INSTALL", this should open a password prompt.
-Root access is needed to add the Brick Daemon
-to your Launchd Daemons.
+Danach muss auf "INSTALL" geklickt werden, es sollte ein
+Passwort-Abfrage geöffnet werden. Es werden Root-Rechte
+benötigt um den Brick Daemon als Launchd Daemon zu
+installieren.
 
 .. image:: /Images/Screenshots/brickd_macos_2_small.jpg
    :scale: 100 %
-   :alt: Brickd installation step 2
+   :alt: Brickd Installation Schritt 2
    :align: center
    :target: ../_images/Screenshots/brickd_macos_2.jpg
 
-After this an "Installation Finished" window should come up.
-Click "OK".
+Danach sollte ein "Installation Finished" Fenster erscheinen.
 
 .. image:: /Images/Screenshots/brickd_macos_3_small.jpg
    :scale: 100 %
-   :alt: Brickd installation step 3
+   :alt: Brickd Installation Schritt 3
    :align: center
    :target: ../_images/Screenshots/brickd_macos_3.jpg
 
-You have finished the installation. The Brick Daemon should be started upon
-installation and it should be started automatically after restarts.
+Nach einem Klick auf "OK" ist die Installation beended. Der Brick Daemon
+sollte nun bei jedem Neustart beim Hochfahren gestartet werden.
 
-If for some reason brickd doesn't run or it has crashed, you can start it
-from the terminal with::
+Falls der Brick Daemon nicht laufen sollte oder er abgestürzt ist, kann er
+aus der Console mit folgendem Befehl gestartet werden::
 
  sudo launchctl start com.tinkerforge.brickd
 
 .. note::
- Since Mac OS X Mountain Lion only signed software can be installed by default.
- Currently the Brick Daemon and its installer is not signed. This makes Mac OS X
- show you an error message saying that the installer is broken when you try to
- install it. For now you need to lower your system security settings to allow
- installing unsigned software by clicking:
+ Seit Mac OS X Mountain Lion kann ausschließlich signierte Sofware installiert
+ werden. Der Brick Daemon Installer ist im Moment nicht signiert. Daher kann
+ es passieren, dass Mac OS X eine Fehlermeldung gibt beim versuch den Installer
+ zu starten. Als Ausweg können die Sicherheitseinstellungen abgeschwächt 
+ werden, unter:
 
  * System Settings
  * Security & Privacy
  * Allow applications downloaded from: Anywhere
 
 
-Checking installed version
---------------------------
+Installierte Version herausfinden
+---------------------------------
 
-Since Brick Daemon version 1.0.8 you can check which Brick Daemon is currently
-installed with the `--version` commandline argument:
+Seit Brick Daemon Version 1.0.8 ist es möglich die aktuell installierte
+Brick Daemon Version zu erfragen. Dafür unterstützt der Brick Daemon
+den Kommandozeilenparameter `--version`:
 
 * Windows:
 

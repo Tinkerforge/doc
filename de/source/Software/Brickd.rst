@@ -3,25 +3,21 @@
 Brick Daemon (brickd)
 =====================
 
-.. note::
- Diese Seite wird in kürze auch vollständig in Deutsch verfügbar sein.
-
 Der Brick Daemon ist ein Daemon (bzw. Service für Windows) der als eine Brücke
 zwischen :ref:`Bricks <product_overview_bricks>`/:ref:`Bricklets
 <product_overview_bricklets>` und den :ref:`API Bindings <api_bindings>` für die
-verschiedenen Programmiersprachen fungiert..
+verschiedenen Programmiersprachen fungiert.
 
-The daemon routes data between the USB connections and TCP/IP sockets.
-When using the API bindings a TCP/IP connection to the daemon is established.
-This concepts allows the creation of bindings for almost every language
-without any dependencies. Therefore it is possible to program Bricks and
-Bricklets from embedded devices that only support specific languages,
-such as smart phones.
+Der Daemon leitet Daten zwischen der USB Verbindung und den TCP/IP Sockets
+hin und her. Bei der Benutzung der API Bindings wird eine TCP/IP Verbindung
+zum Brick Daemon hergestellt. Dieses Konzept erlaubt es Bindings für
+nahezu jede Programmiersprache ohne Abhängigkeiten zu erstellen. Dadurch ist
+es möglich Bricks und Bricklets über eingebettete Geräte wie Smartphones
+zu programmieren, die nur spezifische Programmiersprachen unterstützten.
 
-Additionally it is possible to separate the machine running the Brick Daemon
-from the machine running the user code. This allows e.g. a Brick connected
-to a PC to be controlled from a smart phone or over the Internet from
-another PC.
+Zusätzlich ist es möglich den PC auf dem der Brick Daemon läuft von dem
+PC auf dem der Benutzercode läuft zu trennen. Dadurch ist das Steuern über ein
+Smartphone oder auch über das Internet möglich.
 
 
 .. _brickd_installation:
@@ -32,121 +28,107 @@ Installation
 Windows
 ^^^^^^^
 
-To install the Brick Deamon (Service) on a Windows, download the
-Brick Deamon .exe form :ref:`here <downloads_tools>`.
-Click on the downloaded file, this should open the installer:
+Um den Brick Daemon (Service) auf Windows zu installieren, muss
+die Brick Daemon .exe  ref:`heruntergeladen <downloads_tools>`
+werden. Ein Doppelklick auf die Heruntergeladene Datei
+sollte einen Installer starten:
 
 .. image:: /Images/Screenshots/brickd_windows_1_small.jpg
    :scale: 100 %
-   :alt: Brickd installation step 1
+   :alt: Brickd Installation Schritt 1
    :align: center
    :target: ../_images/Screenshots/brickd_windows_1.jpg
 
-You can choose the actions of the installer:
+Zwei Aktionen können ausgewählt werden:
 
-* **Install Brickd Program** will copy the program files
-* **Register Brickd Service** will install it as a Windows service
+* **Install Brickd Program** kopiert die Programm-Dateien
+* **Register Brickd Service** installiert den Daemon als Windows Service
 
-Typically you want the installer to perform both tasks.
-Click on "Next" to start the installation process.
+Typischerweise soll beides ausgeführt werden. Ein Klick auf
+"Next" startet den Installationsprozess.
 
 .. image:: /Images/Screenshots/brickd_windows_2_small.jpg
    :scale: 100 %
-   :alt: Brickd installation step 2
+   :alt: Brickd Installation Schritt 2
    :align: center
    :target: ../_images/Screenshots/brickd_windows_2.jpg
 
-Next the installation path will be questioned.
-Change it if necessary and click "Install".
+Als nächstes wird der Installationspfad abgefragt. Dieser kann
+abgeändert werden wenn gewünscht. Die Installtion wird mit
+einem Klick auf "Install" gestartet.
 
-At the end of the installation process a window will come
-up which informs you, that you may have to install the
-Brick drivers manually (see section below). Press "OK"
-and reboot your PC.
+Am Ende des Installationsprozess erscheint ein Fenster,
+welches darüber informiert dass der Brick Treiber
+noch installiert werden muss (siehe unten). Nach der
+Installation muss der PC neugestartet werden.
 
 
-Driver Installation (Windows XP, Vista, 7)
-""""""""""""""""""""""""""""""""""""""""""
+Treiber Installation (Windows XP, Vista, 7)
+"""""""""""""""""""""""""""""""""""""""""""
 
-Depending on your Windows version it is necessary
-to install a Brick driver. This driver needs to be installed for each of your
-Bricks independently.
+Abhängig von der Windows Version ist es nötig einen Brick Treiber zu 
+installieren. Dieser Treiber muss für jedes Brick einmal installiert
+werden.
 
-Connect your Brick over USB to your PC. If a driver installation
-is necessary you should see an window like below:
+Wenn eine Treiberinstallation notwendig ist, sollte folgendes
+Fenster erscheinen nachdem der Brick über USB mit dem PC verbunden
+wird:
 
 .. image:: /Images/Screenshots/brickd_windows_driver_1_small.jpg
    :scale: 100 %
-   :alt: Brickd driver installation step 1
+   :alt: Brickd Treiber Installation Schritt 1
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_1.jpg
 
-If you have not installed the driver before,
-Windows does not know our drivers and you have to specify the
-driver location. You can find the drivers in your Brick Daemon installation
-folder. If you have installed the drivers before, you can choose the
-"Install the software automatically" option since Windows already knows
-the driver location.
+
+Falls der Treiber zuvor noch nie installiert wurde kennt Windows
+diesen noch nicht. In diesem Fall muss die Treiberadresse
+angegeben werden. Der Treiber befindet sich im Installationsverzeichnis
+des Brick Daemon. Wenn der Treiber zuvor schon einmal installiert
+wurde, kann "Install the software automatically" ausgewählt werden.
 
 .. image:: /Images/Screenshots/brickd_windows_driver_2_small.jpg
    :scale: 100 %
-   :alt: Brickd driver installation step 2
+   :alt: Brickd Treiber Installation Schritt 2
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_2.jpg
 
-Choose the driver location manually.
+Treiberadresse Manuell auswählen.
 
 .. image:: /Images/Screenshots/brickd_windows_driver_3_small.jpg
    :scale: 100 %
-   :alt: Brickd driver installation step 3
+   :alt: Brickd Treiber Installation Schritt 3
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_3.jpg
 
-You will find them in your Brickd program folder in the "drivers" folder.
+Sie befinden sich beim Brickd im Verzeichnis "drivers".
 
 .. image:: /Images/Screenshots/brickd_windows_driver_4_small.jpg
    :scale: 100 %
-   :alt: Brickd driver installation step 4
+   :alt: Brickd Treiber Installation Schritt 4
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_4.jpg
 
-After a successful installation the Brick should use a driver called "Brick_Driver".
-You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
+Nach einer erfolgreichen Installation sollte der Brick en Treiber
+"Brick_Driver" nutzen. Dies kann mit dem :ref:`Brick Viewer<brickv>` getestet
+werden.
 
 .. note::
- Under Windows 7 it is possible that Windows tries to install the
- drivers automatically and you don't have the choice to choose them manually.
- This automatic driver installation can fail without
- your notice. If you don't see Bricks in the Brick Viewer, please check in
- the Windows "Device Manager" that the drivers for the connected Bricks are
- installed correctly. If not, please choose the ``drivers`` folder in Brick
- Daemon installation and install the drivers manually.
+ Unter Windows 7 ist es möglich, dass Windows versucht den Treiber automatisch
+ zu installieren und eine Auswahl zur manuellen Installation gar nicht
+ erscheint. Das automatische Installieren des Treibers kann ohne Meldung
+ fehlschlagen. Falls im Brick Viewer kein Brick angezeigt wird, kann im
+ Gerätemanager nachgeschaut werden ob der korrekte Treiber installiert ist.
+ Falls dies nicht der Fall ist, kann dort der falsche Treiber mit dem
+ richtigen aus dem ``drivers`` Verzeichnis vom Brickd manuell überschrieben
+ werden.
 
 
-Driver Installation (Windows 8)
-"""""""""""""""""""""""""""""""
+Treiber Installation (Windows 8)
+""""""""""""""""""""""""""""""""
 
-Windows 8 requires signed drivers. The driver that is currently shipped with
-the Brick Daemon installer is not signed.
-
-The libusb developers provide a tool that can install a signed driver on
-Windows 8: Zadig.
-
-Download `Zadig <http://download.tinkerforge.com/_stuff/zadig_v2.0.1.159.exe>`__
-and start it.
-
-.. image:: /Images/Screenshots/zadig_small.jpg
-   :scale: 100 %
-   :alt: Zadig driver installer
-   :align: center
-   :target: ../_images/Screenshots/zadig.jpg
-
-When you connect a Brick it should show up in Zadig. Choose the WinUSB driver
-and click the "Install Driver" button. Now the driver is installed and should
-work for all Bricks.
-
-More details on Zadig can be found on the `Zadig homepage
-<https://github.com/pbatard/libwdi/wiki/Zadig>`__.
+Unter Windows 8 wird kein Treiber mehr benötigt, Windows 8 erkennt die
+Hardware automatisch und korrekt.
 
 
 Linux
@@ -190,17 +172,20 @@ To install Brick Daemon from the console use the following::
 To install Brick Daemon from source, download the source from `here
 <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
-* python-twisted
-* python-gudev
-* libusb-1.0-0
+* libusb-1.0-0-dev >= 1.0.8
+* libudev-dev >= 173 (Optional für Hotplug)
 
-On Debian based distributions you can do that as shown above, on other
-distribution you have to search for and install the equivalent packages.
+On Debian based distributions you can install the dependencies with apt-get::
 
-To start brickd from source, change to the folder
-brickd/src/brickd/ and start with::
+ sudo apt-get install libusb-1.0-0-dev libudev-dev
+ 
+On other distribution you have to search for and install the equivalent packages.
 
- sudo python brickd_linux.py
+To compile and brickd from source, change to the folder
+brickd/src/brickd/ and do::
+
+ make
+ sudo ./brickd
 
 Error logs can be found in::
 
