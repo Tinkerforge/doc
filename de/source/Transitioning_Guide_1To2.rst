@@ -15,9 +15,9 @@ ist :ref:`hier <brickv_flash_firmware>` beschrieben.
 
 Das Aktualisieren der Bricklets kann automatisiert passieren. Dazu kann
 ein Brick mit nicht-aktualisierten Bricklets bestückt werden. Im Brick Viewer
-im "Updates" Fenster gibt es im ersten Tab ein die Möglichkeit alle Bricklets
-auf einmal zu aktualiseren. Dazu muss der "Auto-Update All Bricklets"
-Button angeklickt werden.
+im "Updates" Fenster gibt es im ersten Tab die Möglichkeit alle Bricklets
+auf einmal zu aktualisieren. Dazu muss der "Auto-Update All Bricklets"
+Knopf angeklickt werden.
 
 .. image:: /Images/Screenshots/bricklet_auto_update.jpg
    :scale: 100 %
