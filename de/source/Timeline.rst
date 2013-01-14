@@ -36,5 +36,5 @@ Termine haben.
    "",     "51", "Neues Voltage/Current Bricklet", "`fertig <http://de.blog.tinkerforge.com/2012/12/20/voltage-current-bricklet-jetzt-verfuegbar>`__"
    "",     "51", "GPS Bricklet", "`fertig <http://de.blog.tinkerforge.com/2012/12/20/gps-bricklet-jetzt-verfuegbar>`__"
    "2013", "07", "PTC Bricklet", "Prototyp getested"
-   "",     "07", "Ethernet Extension mit PoE", "Prototyp im Test"
+   "",     "10", "Ethernet Extension mit PoE", "Prototyp im Test"
    "",     "?", "Sonic Range Bricklet"
