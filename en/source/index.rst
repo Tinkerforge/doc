@@ -8,6 +8,11 @@ Documentation
 #############
 
 .. toctree::
+   :maxdepth: 1
+
+   FAQ
+
+.. toctree::
    :maxdepth: 2
 
    Product_Overview

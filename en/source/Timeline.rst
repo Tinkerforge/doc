@@ -22,7 +22,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "",     "23", "Brick flashing support for Brick Viewer (No SAM-BA needed anymore)", "`done <http://www.tinkerforge.com/doc/Software/Brickv.html#brick-firmware-flashing>`__"
    "",     "26", "RS485 Extension", "`done <https://shop.tinkerforge.com/master-extensions/rs485-master-extension.html>`__"
    "",     "30", "Delphi bindings", "`done <http://www.tinkerforge.com/doc/index.html#bricks>`__"
-   "",     "37", "Complete German translation of documentation", "almost done"
+   "",     "37", "Complete German translation of documentation", "done"
    "",     "38", "WIFI Extension", "`done <https://shop.tinkerforge.com/master-extensions/wifi-master-extension.html>`__"
    "",     "39", "Barometer Bricklet", "`done <http://en.blog.tinkerforge.com/2012/9/28/barometer-bricklet-available-and-more-made-in-germany>`__"
    "",     "41", "Add support for usage of two Master Extensions at the same time", "`done <http://www.tinkerunity.org/forum/index.php/topic,674.msg6312.html#msg6312>`__"

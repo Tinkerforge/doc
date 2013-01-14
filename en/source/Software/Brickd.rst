@@ -128,11 +128,10 @@ the hardware automatically and correctly.
 Linux
 ^^^^^
 
-Um den Brick Daemon auf einer Debian basierten Distribution 
-(Ubuntu, Mint, etc.) zu installieren, muss das Brick Daemon .deb von
-der :ref:`Download-Seite <downloads_tools>` heruntergeladen werden.
-Nach einem Rechtsklick auf die Datei kann "Open with GDebi Package Installer"
-ausgewählt werden:
+To install the Brick Daemon on a Debian based distribution
+(Ubuntu, Mint, etc.), download the Brick Daemon .deb from
+:ref:`here <downloads_tools>`. Right-click on the file and choose
+"Open with GDebi Package Installer":
 
 .. image:: /Images/Screenshots/brickd_linux_1_small.jpg
    :scale: 100 %
@@ -140,7 +139,7 @@ ausgewählt werden:
    :align: center
    :target: ../_images/Screenshots/brickd_linux_1.jpg
 
-Klick auf "Install Package":
+Then click "Install Package":
 
 .. image:: /Images/Screenshots/brickd_linux_2_small.jpg
    :scale: 100 %
@@ -148,7 +147,7 @@ Klick auf "Install Package":
    :align: center
    :target: ../_images/Screenshots/brickd_linux_2.jpg
 
-Fertig:
+Ready:
 
 .. image:: /Images/Screenshots/brickd_linux_3_small.jpg
    :scale: 100 %
@@ -156,101 +155,97 @@ Fertig:
    :align: center
    :target: ../_images/Screenshots/brickd_linux_3.jpg
 
-In Ubuntu kann auch das Ubuntu Software Center benutzt werden. Andere
-Desktopumgebungen haben ähnliche Werkzeuge die praktisch genauso
-funktionieren.
+In Ubuntu you can also use the Ubuntu Software Center, other Desktop
+environments have very similar tools that practically work the same way.
 
-Der Brick Daemon kann von der Console mit folgemdem Befehl installiert
-werden::
+To install Brick Daemon from the console use the following::
 
  sudo apt-get install python-twisted python-gudev libusb-1.0-0
  sudo dpkg -i brickd_linux_latest.deb
 
-Um den Brick Daemon aus den Sourcen zu installieren, kann der
-`Quellcode von github <https://github.com/Tinkerforge/brickd>`__ heruntergeladen werden.
-Es gibt folgende Abhängigkeiten:
+To install Brick Daemon from source, download the source from `here
+<https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
 * libusb-1.0-0-dev >= 1.0.8
 * libudev-dev >= 173 (Optional für Hotplug)
 
-Auf Debian basierten Distributionen können die Abhängigkeiten mit apt-get
-installiert werden::
+On Debian based distributions you can install the dependencies with apt-get::
 
  sudo apt-get install libusb-1.0-0-dev libudev-dev
+ 
+On other distribution you have to search for and install the equivalent packages.
 
-Auf anderen Distributionen muss nach den äquivakten Paketen gesucht werden.
-
-Der Brick Daemon kann mit den folgenden Befehlen aus brickd/src/brickd/ 
-compiliert und gestartet werden::
+To compile and brickd from source, change to the folder
+brickd/src/brickd/ and do::
 
  make
  sudo ./brickd
 
-Error Logs gibt es unter::
+Error logs can be found in::
 
  /var/log/brickd.log
 
-Wenn der Brick Daemon aus dem Paket installiert wird, wird er automatisch
-bei jedem neustart beim Hochfahren gestartet.
+If you install the Debian package, brickd will be started after the
+installation and at startup automatically.
+
 
 Mac OS X
 ^^^^^^^^
 
-Um den Brick Daemon auf Mac OS X zu installieren, muss die .dmg
-von der :ref:`Download-Seite <downloads_tools>` heruntergeladen werden.
-Ein Klick auf die Datei sollte das Paket öffnen:
+To install the Brick Daemon on Mac OS X download the .dmg
+from :ref:`here <downloads_tools>`. Click on the downloaded file, this
+should open the package:
 
 .. image:: /Images/Screenshots/brickd_macos_1_small.jpg
    :scale: 100 %
-   :alt: Brickd Installation Schritt 1
+   :alt: Brickd installation step 1
    :align: center
    :target: ../_images/Screenshots/brickd_macos_1.jpg
 
-Danach muss auf "INSTALL" geklickt werden, es sollte ein
-Passwort-Abfrage geöffnet werden. Es werden Root-Rechte
-benötigt um den Brick Daemon als Launchd Daemon zu
-installieren.
+Then click "INSTALL", this should open a password prompt.
+Root access is needed to add the Brick Daemon
+to your Launchd Daemons.
 
 .. image:: /Images/Screenshots/brickd_macos_2_small.jpg
    :scale: 100 %
-   :alt: Brickd Installation Schritt 2
+   :alt: Brickd installation step 2
    :align: center
    :target: ../_images/Screenshots/brickd_macos_2.jpg
 
-Danach sollte ein "Installation Finished" Fenster erscheinen.
+After this an "Installation Finished" window should come up.
+Click "OK".
 
 .. image:: /Images/Screenshots/brickd_macos_3_small.jpg
    :scale: 100 %
-   :alt: Brickd Installation Schritt 3
+   :alt: Brickd installation step 3
    :align: center
    :target: ../_images/Screenshots/brickd_macos_3.jpg
 
-Nach einem Klick auf "OK" ist die Installation beended. Der Brick Daemon
-sollte nun bei jedem Neustart beim Hochfahren gestartet werden.
+You have finished the installation. The Brick Daemon should be started upon
+installation and it should be started automatically after restarts.
 
-Falls der Brick Daemon nicht laufen sollte oder er abgestürzt ist, kann er
-aus der Console mit folgendem Befehl gestartet werden::
+If for some reason brickd doesn't run or it has crashed, you can start it
+from the terminal with::
 
  sudo launchctl start com.tinkerforge.brickd
 
 .. note::
- Seit Mac OS X Mountain Lion kann ausschließlich signierte Sofware installiert
- werden. Der Brick Daemon Installer ist im Moment nicht signiert. Daher kann
- es passieren, dass Mac OS X eine Fehlermeldung gibt beim versuch den Installer
- zu starten. Als Ausweg können die Sicherheitseinstellungen abgeschwächt 
- werden, unter:
+ Since Mac OS X Mountain Lion only signed software can be installed by default.
+ Currently the Brick Daemon and its installer is not signed. This makes Mac OS X
+ show you an error message saying that the installer is broken when you try to
+ install it. For now you need to lower your system security settings to allow
+ installing unsigned software by clicking:
 
  * System Settings
  * Security & Privacy
  * Allow applications downloaded from: Anywhere
 
 
-Installierte Version herausfinden
----------------------------------
+Checking installed version
+--------------------------
 
-Seit Brick Daemon Version 1.0.8 ist es möglich die aktuell installierte
-Brick Daemon Version zu erfragen. Dafür unterstützt der Brick Daemon
-den Kommandozeilenparameter `--version`:
+Since Brick Daemon version 1.0.8 you can check which Brick Daemon is currently
+installed with the `--version` commandline argument:
 
 * Windows:
 

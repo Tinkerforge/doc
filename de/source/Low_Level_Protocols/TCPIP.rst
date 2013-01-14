@@ -38,6 +38,12 @@ header consists of:
 * Sequence number and Options as uint8 (1 byte) and
 * Flags as uint8 (1 byte)
 
+.. image:: /Images/protocol_new.png
+   :scale: 100 %
+   :alt: TF Protocol
+   :align: center
+   :target: ../../_images/protocol_new.png
+
 The UID is the unique identifier that is given to every Brick and Bricklet.
 
 The *packet length* specifies the length of the complete packet (header and

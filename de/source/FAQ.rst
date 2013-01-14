@@ -1,0 +1,126 @@
+.. _faq:
+
+FAQ
+===
+
+I updated something and now it doesn't work anymore
+---------------------------------------------------
+
+You probably have a version mismatch. On January 15th we released a new 
+protocol version, Protocol 2.0. This means that the way Bricks and Bricklets
+communicate with each other and with the Brick Daemon has changed. Also
+there are small changes in the API. You need to update your
+language Bindings, the Brick Daemon, the Brick Viewer and the 
+Firmwares/Plugins of your Bricks/Bricklets to a version starting with "2".
+
+To do this you can use the :ref:`transitioning guide <transition_1to2>`. 
+It also describes how to port already existing code to the new protocol. 
+
+
+.. _faq_brick_hot:
+
+My Brick gets hot
+-----------------
+
+Usually this means that there is some kind of short circuit. More often
+then not this happens because of slightly bent pins in the Bricklet
+connector:
+
+.. image:: /Images/FAQ/bricklet_connector_short_circuit.jpg
+   :scale: 100 %
+   :alt: DON'T PANIC 
+   :align: center
+
+You can just bend them back again.
+
+
+One of my Bricklets doesn't show up in the Brick Viewer
+-------------------------------------------------------
+
+**Broken Plugin**:
+
+It is possible that there is a corrupted plugin or no plugin saved
+on the EEPROM of the Bricklet.
+
+In this case, you should reflash the Bricklet plugin. If a Brick doesn't
+show up when the Bricklet is connected, you can connect the Bricklet
+after the Brick has started. Then update the Brick as described 
+:ref:`here <brickv_flash_plugin>`. 
+
+If the flashing doesn't work: Have you tried a different Bricklet cable?
+
+**Invalid UID**:
+
+If the EEPROM on the Bricklet gets corrupted, it is also possible
+that the UID is invalidated. A UID of "1" is invalid. If you can read
+a UID of "1" with the Brick Viewer, you should set a new UID that
+is unique in your System and in Base58.
+
+**Short circuit in Bricklet connector**:
+
+A short circuit can be caused by a slightly bent pin in the Bricklet
+connector. See :ref:`above <faq_brick_hot>`.
+
+
+One of my Bricks doesn't show up in the Brick Viewer
+----------------------------------------------------
+
+**Brick in bootloader**:
+
+It is possible that you accidentially brought your Brick in the
+bootloader mode. You can recognize this by the fact, that the
+LEDs aren't working anymore. In this case you need to 
+:ref:`reflash the Brick firmware <brickv_flash_firmware>`.
+
+**Short circuit in Bricklet connector**:
+
+A short circuit can be caused by a slightly bent pin in the Bricklet
+connector. See :ref:`above <faq_brick_hot>`.
+
+
+I get timeouts when i call a function
+-------------------------------------
+
+**UID**:
+
+Check the UID. You have to create the device object with the correct
+UID of the device, otherwise it can't answer because it didn't
+receive your request.
+
+**Brick Daemon**:
+
+Is the Brick Daemon running? You can check in the list of processes
+if the Daemon is running (e.g. in the task manager on Windows).
+
+If it isn't running but it is installed correctly, you can 
+try to restart the service (windows) or daemon (Mac OS X
+and Linux). The service/daemon should also be started automatically 
+on startup.
+
+**WIFI Extension**:
+
+Did you use the IP address of the WIFI Extension? If you want to
+connect directly to the WIFI Extension, you have to use its
+IP address instead of "localhost".
+
+
+I don't get timeouts when i call a function
+-------------------------------------------
+
+If you expect to get a timeout (e.g. because a Brick or Bricklet is not
+connected) but you don't get one, you are probably calling a 
+"setter". Normally a function that doesn't return anything will not
+wait for a response form a Brick or Bricklet.
+
+It is however possible to configure it this way. See the 
+"SetResponseExpected" function in the API documentation of each
+device.
+
+
+The current measurement of my Step-Down Power Supply does not work
+------------------------------------------------------------------
+
+The measurement is designed for high currents. If only a single
+Master Brick is connected to the Step-Down Power Supply it is
+possible that the little current that is drawn by the Master Brick
+doesn't get recognized at all (i.e. "GetStackCurrent" returns 0).

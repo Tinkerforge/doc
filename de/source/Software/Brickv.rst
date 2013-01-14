@@ -303,8 +303,8 @@ ermittelt und heruntergeladen. Diese können aber auch manuell im
 :ref:`Downloadbereich <downloads_firmwares_plugins>` heruntergeladen werden.
 
 Um ein Bricklet flashen zu können, muss es an einem Brick angeschlossen sein,
-der im Brick Viewer aufgelistet ist. Ein Klick auf "Flashing" Knopf den
-passenden Dialog:
+der im Brick Viewer aufgelistet ist. Ein Klick auf den "Flashing" Knopf im
+lässt den passenden Dialog erscheinen:
 
 .. image:: /Images/Screenshots/brickv_flashing_plugin_small.jpg
    :scale: 100 %
