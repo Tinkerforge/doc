@@ -104,7 +104,7 @@ Grundfunktionen
 
 .. csharp:function:: public void IPConnection::Enumerate()
 
- Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ Broadcast einer Enumerierungsanfrage. Alle Bricks und Bricklets werden mit
  einem Enumerate Callback antworten.
 
 
