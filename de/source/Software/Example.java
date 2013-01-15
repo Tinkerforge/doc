@@ -24,7 +24,7 @@ public class Example {
 					return;
 				}
 
-				System.out.println("Connected UID:     " + connectedUID);
+				System.out.println("Connected UID:     " + connectedUid);
 				System.out.println("Position:          " + position);
 				System.out.println("Hardware Version:  " + hardwareVersion[0] + "." +
 				                                           hardwareVersion[1] + "." +
