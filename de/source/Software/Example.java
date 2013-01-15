@@ -20,6 +20,7 @@ public class Example {
 				System.out.println("Enumeration Type:  " + enumerationType);
 
 				if(enumerationType == IPConnection.ENUMERATION_TYPE_DISCONNECTED) {
+					System.out.println("");
 					return;
 				}
 
@@ -32,6 +33,7 @@ public class Example {
 				                                           firmwareVersion[1] + "." +
 				                                           firmwareVersion[2]);
 				System.out.println("Device Identifier: " + deviceIdentifier);
+				System.out.println("");
 			}
 		});
 

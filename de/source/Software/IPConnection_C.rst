@@ -130,7 +130,7 @@ Grundfunktionen
 
 .. c:function:: int ipcon_enumerate(IPConnection *ipcon)
 
- Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit
+ Broadcast einer Enumerierungsanfrage. Alle Bricks und Bricklets werden mit
  einem Enumerate Callback antworten.
 
 

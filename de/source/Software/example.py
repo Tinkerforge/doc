@@ -13,6 +13,7 @@ def cb_enumerate(uid, connected_uid, position, hardware_version, firmware_versio
     print("Enumeration Type:  " + str(enumeration_type))
 
     if enumeration_type == IPConnection.ENUMERATION_TYPE_DISCONNECTED:
+        print("")
         return
 
     print("Connected UID:     " + connected_uid)
@@ -20,6 +21,7 @@ def cb_enumerate(uid, connected_uid, position, hardware_version, firmware_versio
     print("Hardware Version:  " + str(hardware_version))
     print("Firmware Version:  " + str(firmware_version))
     print("Device Identifier: " + str(device_identifier))
+    print("")
 
 if __name__ == "__main__":
     # Create connection and connect to brickd
@@ -32,4 +34,4 @@ if __name__ == "__main__":
     # Trigger Enumerate
     ipcon.enumerate()
 
-    raw_input('Press key to exit\n') # Use input() in Python 3
+    raw_input("Press key to exit\n") # Use input() in Python 3

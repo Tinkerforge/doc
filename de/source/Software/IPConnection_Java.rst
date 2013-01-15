@@ -104,7 +104,7 @@ Grundfunktionen
 
 .. java:function:: public void IPConnection::enumerate()
 
- Broadcast einer Enumerierungsanfrage. Alle Bricks/Bricks werden mit einem
+ Broadcast einer Enumerierungsanfrage. Alle Bricks und Bricklets werden mit einem
  Enumerate Callback antworten.
 
 

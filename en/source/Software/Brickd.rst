@@ -251,7 +251,7 @@ installed with the `--version` commandline argument:
 
   .. code-block:: none
 
-    "C:\Program Files\Tinkerforge\Brickd\brickd_windows.exe" --version
+    "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
 
 * Linux::
 
@@ -259,4 +259,4 @@ installed with the `--version` commandline argument:
 
 * Mac OS X::
 
-   /usr/libexec/brickd.app/Contents/MacOS/brickd_macosx --version
+   /usr/libexec/brickd.app/Contents/MacOS/brickd --version
