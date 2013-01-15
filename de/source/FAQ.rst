@@ -68,8 +68,8 @@ Ein Kurzschluss kann durch leicht verbogene Beinchen im Bricklet-Stecker
 auftreten, siehe :ref:`oben <faq_brick_hot>`.
 
 
-Eines meiner Bricks taucht nicht im Brick Viewer auf
-----------------------------------------------------
+Eines meiner Bricks wird im Brick Viewer nicht angezeigt
+--------------------------------------------------------
 
 **Brick im Bootloader**:
 
