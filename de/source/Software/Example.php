@@ -15,6 +15,7 @@ function enumerateCB($uid, $connectedUid, $position,
 	echo "Enumeration Type:  $enumerationType\n";
 
 	if($enumerationType == IPConnection::ENUMERATION_TYPE_DISCONNECTED) {
+		echo "\n";
 		return;
 	}
 
@@ -23,7 +24,7 @@ function enumerateCB($uid, $connectedUid, $position,
 	echo "Hardware Version:  $hardwareVersion[0].$hardwareVersion[1].$hardwareVersion[2]\n";
 	echo "Firmware Version:  $firmwareVersion[0].$firmwareVersion[1].$firmwareVersion[2]\n";
 	echo "Device Identifier: $deviceIdentifier\n";
-    echo "\n";
+	echo "\n";
 }
 
 // Create IP connection and connect to brickd

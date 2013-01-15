@@ -11,23 +11,25 @@ class Example
 	                        short[] hardwareVersion, short[] firmwareVersion,
 	                        int deviceIdentifier, short enumerationType)
 	{
-		System.Console.WriteLine("UID:              " + uid);
-		System.Console.WriteLine("enumerationType:  " + enumerationType);
+		System.Console.WriteLine("UID:               " + uid);
+		System.Console.WriteLine("Enumeration Type:  " + enumerationType);
 
 		if(enumerationType == IPConnection.ENUMERATION_TYPE_DISCONNECTED)
 		{
+			System.Console.WriteLine("");
 			return;
 		}
 
-		System.Console.WriteLine("connectedUID:     " + connectedUid);
-		System.Console.WriteLine("position:         " + position);
-		System.Console.WriteLine("hardwareVersion:  " + hardwareVersion[0] + "." +
-		                                                hardwareVersion[1] + "." +
-		                                                hardwareVersion[2]);
-		System.Console.WriteLine("firmwareVersion:  " + firmwareVersion[0] + "." +
-		                                                firmwareVersion[1] + "." +
-		                                                firmwareVersion[2]);
-		System.Console.WriteLine("deviceIdentifier: " + deviceIdentifier);
+		System.Console.WriteLine("Connected UID:     " + connectedUid);
+		System.Console.WriteLine("Position:          " + position);
+		System.Console.WriteLine("Hardware Version:  " + hardwareVersion[0] + "." +
+		                                                 hardwareVersion[1] + "." +
+		                                                 hardwareVersion[2]);
+		System.Console.WriteLine("Firmware Version:  " + firmwareVersion[0] + "." +
+		                                                 firmwareVersion[1] + "." +
+		                                                 firmwareVersion[2]);
+		System.Console.WriteLine("Device Identifier: " + deviceIdentifier);
+		System.Console.WriteLine("");
 	}
 
 	static void Main()

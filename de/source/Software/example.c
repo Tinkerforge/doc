@@ -20,6 +20,7 @@ void cb_enumerate(const char *uid,
 	printf("Enumeration Type:  %d\n", enumeration_type);
 
 	if(enumeration_type == IPCON_ENUMERATION_TYPE_DISCONNECTED) {
+		printf("\n");
 		return;
 	}
 
