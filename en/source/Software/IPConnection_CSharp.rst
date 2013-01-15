@@ -173,6 +173,7 @@ The available events are described below.
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
 
+ The device identifiers can be found :ref:`here <device_identifier>`.
 
 .. csharp:function:: public event IPConnection::Connected(IPConnection sender, short connectReason)
 

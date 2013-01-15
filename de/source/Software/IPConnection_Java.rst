@@ -174,6 +174,7 @@ werden können werden im Folgenden beschrieben.
   Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Listener
   zu implementieren (wie es im Brick Viewer geschieht).
 
+  Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
 
 .. java:function:: public class IPConnection.ConnectedListener()
 

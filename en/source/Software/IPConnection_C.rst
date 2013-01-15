@@ -217,6 +217,7 @@ described below.
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
 
+ The device identifiers can be found :ref:`here <device_identifier>`.
 
 .. c:var:: IPCON_CALLBACK_CONNECTED
 

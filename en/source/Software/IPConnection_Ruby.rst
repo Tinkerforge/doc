@@ -206,6 +206,7 @@ described below.
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
 
+ The device identifiers can be found :ref:`here <device_identifier>`.
 
 .. rb:attribute:: IPConnection::CALLBACK_CONNECTED
 

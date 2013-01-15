@@ -184,6 +184,8 @@ The available callback property and their type of parameters are described below
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
 
+ The device identifiers can be found :ref:`here <device_identifier>`.
+
 .. delphi:function:: property TIPConnection.OnEnumerate
 
  .. code-block:: delphi

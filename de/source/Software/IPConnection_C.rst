@@ -223,6 +223,7 @@ werden im Folgenden beschrieben.
  Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Callback
  zu implementieren (wie es im Brick Viewer geschieht).
 
+ Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
 
 .. c:var:: IPCON_CALLBACK_CONNECTED
 
