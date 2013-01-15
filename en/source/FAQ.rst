@@ -23,7 +23,7 @@ My Brick gets hot
 -----------------
 
 Usually this means that there is some kind of short circuit. More often
-then not this happens because of slightly bent pins in the Bricklet
+than not this happens because of slightly bent pins in the Bricklet
 connector:
 
 .. image:: /Images/FAQ/bricklet_connector_short_circuit.jpg

@@ -3,124 +3,130 @@
 FAQ
 ===
 
-I updated something and now it doesn't work anymore
----------------------------------------------------
+Ich habe etwas aktualisierung und jetzt funktionierts nicht mehr
+----------------------------------------------------------------
 
-You probably have a version mismatch. On January 15th we released a new 
-protocol version, Protocol 2.0. This means that the way Bricks and Bricklets
-communicate with each other and with the Brick Daemon has changed. Also
-there are small changes in the API. You need to update your
-language Bindings, the Brick Daemon, the Brick Viewer and the 
-Firmwares/Plugins of your Bricks/Bricklets to a version starting with "2".
+Es handelt sich vermutlich um ein Problem mit inkompatiblen Versionen.
+Am 15. Januar haben wir eine neue Protokollversoin veröffentlicht:
+Protokoll 2.0. Die Art und Weise wie Bricks und Bricklets
+untereinander und mit dem Brick Daemon kommunizieren hat sich
+dadurch geändert. Es gibt auch kleine Änderungen in der API. Es ist
+daher notwendig, dass die Programmiersprachen Bindings, der Brick
+Daemon, der Brick Viewer und die Firmwares/Plugins der Bricks/Bricklets
+auf den neuesten Stand gebraucht werden. Alle Versionen müssen mit
+einer "2" beginnen um miteinern kompatibel zu sein.
 
-To do this you can use the :ref:`transitioning guide <transition_1to2>`. 
-It also describes how to port already existing code to the new protocol. 
+Eine einfache Anleitung zum massenhaften Aktualisieren gibt es
+:ref:`hier <transition_1to2>`.
 
 
 .. _faq_brick_hot:
 
-My Brick gets hot
------------------
+Mein Brick wird heiss
+---------------------
 
-Usually this means that there is some kind of short circuit. More often
-then not this happens because of slightly bent pins in the Bricklet
-connector:
+Für gewöhnlich bedeutet dies, dass es irgendeine Art von Kurzschluss
+gibt. In den meisten Fällen handelt es sich dabei um leicht verbogene
+Beinchen in einem der Bricklet Stecker:
 
 .. image:: /Images/FAQ/bricklet_connector_short_circuit.jpg
    :scale: 100 %
    :alt: DON'T PANIC 
    :align: center
 
-You can just bend them back again.
+In diesem Fall können die Beinchen einfach zurückgebogen werden.
 
 
-One of my Bricklets doesn't show up in the Brick Viewer
--------------------------------------------------------
+Eines meiner Bricklets wird im Brick Viewer nicht angezeigt
+-----------------------------------------------------------
 
-**Broken Plugin**:
+**Defektes Plugin**:
 
-It is possible that there is a corrupted plugin or no plugin saved
-on the EEPROM of the Bricklet.
+Es ist möglich, dass das Plugin auf dem EEPROM des Bricklets
+defekt oder gar nicht vorhanden ist.
 
-In this case, you should reflash the Bricklet plugin. If a Brick doesn't
-show up when the Bricklet is connected, you can connect the Bricklet
-after the Brick has started. Then update the Brick as described 
-:ref:`here <brickv_flash_plugin>`. 
+In diesem Fall sollte es neu neu geflasht werden. Falls ein Brick nicht
+im Brick Viewer auftaucht wenn das Bricklet angesteckt ist, ist es möglich
+das Bricklet anzustecken nachdem das Brick bereits gestartet hat. Danach
+kann das Bricklet wie :ref:`hier <brickv_flash_plugin>` beschrieben
+aktualisiert werden.
 
-If the flashing doesn't work: Have you tried a different Bricklet cable?
+Falls das flashen nicht funktioniert: Schon ein anderes Bricklet Kabel
+ausprobiert?
 
-**Invalid UID**:
+**Ungültige UID**:
 
-If the EEPROM on the Bricklet gets corrupted, it is also possible
-that the UID is invalidated. A UID of "1" is invalid. If you can read
-a UID of "1" with the Brick Viewer, you should set a new UID that
-is unique in your System and in Base58.
+Falls das EEPROM eines Bricklets korrupt ist, kann auch die UID
+ungültig sein. Eine UID von "1" ist ungültig. Falls mit dem Brick
+Viewer eine "1" als UID von einem Bricklet gelesen weden kann, muss eine
+neue UID gesetzt werden. Diese sollte im ganzen System eindeutig sein
+und muss als `Base58 <http://de.wikipedia.org/wiki/Base58>`__ kodiert sein.
 
-**Short circuit in Bricklet connector**:
+**Kurzschluss im Bricklet-Stecker**:
 
-A short circuit can be caused by a slightly bent pin in the Bricklet
-connector. See :ref:`above <faq_brick_hot>`.
-
-
-One of my Bricks doesn't show up in the Brick Viewer
-----------------------------------------------------
-
-**Brick in bootloader**:
-
-It is possible that you accidentially brought your Brick in the
-bootloader mode. You can recognize this by the fact, that the
-LEDs aren't working anymore. In this case you need to 
-:ref:`reflash the Brick firmware <brickv_flash_firmware>`.
-
-**Short circuit in Bricklet connector**:
-
-A short circuit can be caused by a slightly bent pin in the Bricklet
-connector. See :ref:`above <faq_brick_hot>`.
+Ein Kurzschluss kann durch leicht verbogene Beinchen im Bricklet-Stecker
+auftreten, siehe :ref:`oben <faq_brick_hot>`.
 
 
-I get timeouts when i call a function
--------------------------------------
+Eines meiner Bricks wird im Brick Viewer nicht angezeigt
+--------------------------------------------------------
+
+**Brick im Bootloader**:
+
+Es ist möglich, dass der Brick unbeabsichtigt in den Bootloader
+gebracht wurde. Dies kann man daran erkennen, dass keine der LEDs mehr
+leuchtet. In diesem Fall muss die 
+:ref:`Brick Firmware neu geflasht <brickv_flash_firmware>`
+werden.
+
+**Kurzschluss im Bricklet-Stecker**:
+
+Ein Kurzschluss kann durch leicht verbogene Beinchen im Bricklet-Stecker
+auftreten, siehe :ref:`oben <faq_brick_hot>`.
+
+
+Ich bekomme Timeouts wenn ich eine Funktion aufrufe
+---------------------------------------------------
 
 **UID**:
 
-Check the UID. You have to create the device object with the correct
-UID of the device, otherwise it can't answer because it didn't
-receive your request.
+Überprüfe die UID. Die Brick/Bricklet Objekte müssen mit der korrekten
+UID angelegt werden. Wenn die UID nicht korrekt ist, kann auf eine
+Anfrage nicht geantwortet werden da die Anfrage nicht korrekt
+geroutet wird im System.
 
 **Brick Daemon**:
 
-Is the Brick Daemon running? You can check in the list of processes
-if the Daemon is running (e.g. in the task manager on Windows).
+Läuft der Brick Daemon? Dies kann man in der Liste der laufenden
+Prozesse nachsehen (zum Beispiel im Task Manager unter Windows).
 
-If it isn't running but it is installed correctly, you can 
-try to restart the service (windows) or daemon (Mac OS X
-and Linux). The service/daemon should also be started automatically 
-on startup.
+Falls er nicht läuft aber korrekt installiert ist, ist es möglich
+den Service (windows) oder den Daemon (Mac OS X und Linux) neuzustarten.
+Der Brick Daemon wird auch automatisch beim Rechnerneustart gestartet.
 
 **WIFI Extension**:
 
-Did you use the IP address of the WIFI Extension? If you want to
-connect directly to the WIFI Extension, you have to use its
-IP address instead of "localhost".
+Wurde die IP Adresse der WIFI Extension genutzt? Wenn eine direkt
+Verbindung aufgebaut werden soll, muss die IP Adresse der WIFI Extension
+anstatt "localhost" zum Verbinden genutzt werden.
+
+Ich bekomme keine Timeouts wenn ich eine Funktion aufrufe
+---------------------------------------------------------
+
+Falls ein Timeout erwartet wird (zum Beispiel weil ein Brick oder Bricklet
+nicht angeschlossen ist) aber keiner ausgelöst wird liegt das vermutlich
+daran, dass ein "Setter" aufgerufen wurde. Normalerweise warten Funktionen
+die nichts zurückgeben nicht auf einem Antwort von Bricks oder Bricklets.
+
+Es ist allerdings möglich dies umzukonfigurieren. 
+Dazu dient die "SetResponseExpected" Funktion, diese ist in der API
+Dokumentation der Bricks/Bricklets beschrieben.
 
 
-I don't get timeouts when i call a function
--------------------------------------------
+Die Strommessung meiner Step-Down Power Supply funktioniert nicht
+-----------------------------------------------------------------
 
-If you expect to get a timeout (e.g. because a Brick or Bricklet is not
-connected) but you don't get one, you are probably calling a 
-"setter". Normally a function that doesn't return anything will not
-wait for a response form a Brick or Bricklet.
-
-It is however possible to configure it this way. See the 
-"SetResponseExpected" function in the API documentation of each
-device.
-
-
-The current measurement of my Step-Down Power Supply does not work
-------------------------------------------------------------------
-
-The measurement is designed for high currents. If only a single
-Master Brick is connected to the Step-Down Power Supply it is
-possible that the little current that is drawn by the Master Brick
-doesn't get recognized at all (i.e. "GetStackCurrent" returns 0).
+Die Messung ist auf hohe Ströme ausgelegt. Falls nur ein einziger
+Master Brick an der Step-Down Power Supply angeschlossen ist
+kann es passieren, dass der Master zu wenig Strom zieht um überhaupt
+erkannt zu werden (d.h. "GetStackCurrent" gibt 0 zurück).

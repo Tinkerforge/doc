@@ -11,6 +11,7 @@ Dokumentation
    :maxdepth: 1
 
    FAQ
+   Transitioning_Guide_1To2
 
 .. toctree::
    :maxdepth: 2
@@ -28,7 +29,6 @@ Dokumentation
    Programming_Interfaces
    Technical_Data
    Source_Code
-   Transitioning_Guide_1To2
 
 
 .. _index_embedded_boards:
