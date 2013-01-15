@@ -261,7 +261,7 @@ den Kommandozeilenparameter `--version`:
 
   .. code-block:: none
 
-    "C:\Program Files\Tinkerforge\Brickd\brickd_windows.exe" --version
+    "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
 
 * Linux::
 
@@ -269,6 +269,6 @@ den Kommandozeilenparameter `--version`:
 
 * Mac OS X::
 
-   /usr/libexec/brickd.app/Contents/MacOS/brickd_macosx --version
+   /usr/libexec/brickd.app/Contents/MacOS/brickd --version
 
 
