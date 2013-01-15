@@ -8,5 +8,4 @@ Software
    Software/Brickv
    Software/API_Bindings
    Software/Firmwares_And_Plugins
-   Software/Device_Identifier
 
