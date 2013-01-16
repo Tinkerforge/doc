@@ -55,6 +55,9 @@ Additionally, the enumeration callback has now a different signature. With
 the returned data it should now be possible to reconstruct the complete
 topology of the network of Bricks and Bricklets.
 
+The registration and triggering of the enumeration callback is now split into
+two steps.
+
 Documentation for these functions can be found in the IPConnection
 documentation for each language, see :ref:`here <api_bindings_ip_connection>`.
 
@@ -130,7 +133,7 @@ Callbacks:
                                     (void *)cb_illuminance,
                                     NULL);
 
-New Enumeration signature:
+New enumeration signature and registration:
 
 .. code-block:: c
 
@@ -138,7 +141,9 @@ New Enumeration signature:
     void cb_enumerate(char *uid, 
                       char *name, 
                       uint8_t stack_id, 
-                      bool is_new)
+                      bool is_new);
+
+    ipcon_enumerate(&ipcon, cb_enumerate);
 
     // 2.0
     void cb_enumerate(const char *uid,
@@ -148,7 +153,14 @@ New Enumeration signature:
                       uint8_t firmware_version[3],
                       uint16_t device_identifier,
                       uint8_t enumeration_type,
-                      void *user_data)
+                      void *user_data);
+
+    ipcon_register_callback(&ipcon,
+                            IPCON_CALLBACK_ENUMERATE,
+                            (void *)cb_enumerate,
+                            NULL);
+
+    ipcon_enumerate(&ipcon);
 
 C#
 --
@@ -202,7 +214,7 @@ Callbacks:
     }
     al.Illuminance += IlluminanceCB;
 
-New Enumeration signature:
+New enumeration signature and registration:
 
 .. code-block:: csharp
 
@@ -210,7 +222,9 @@ New Enumeration signature:
     static void EnumerateCB(string uid, 
                             string name, 
                             byte stackID, 
-                            bool isNew)
+                            bool isNew);
+
+    ipcon.Enumerate(new IPConnection.EnumerateCallback(EnumerateCB));
 
     // 2.0
     static void EnumerateCB(IPConnection sender,
@@ -220,7 +234,11 @@ New Enumeration signature:
                             short[] hardwareVersion, 
                             short[] firmwareVersion,
                             int deviceIdentifier, 
-                            short enumerationType)
+                            short enumerationType);
+
+    ipcon.EnumerateCallback += EnumerateCB;
+
+    ipcon.Enumerate();
 
 Delphi
 ------
@@ -260,7 +278,7 @@ Callback:
 
   al.OnIlluminance := {$ifdef FPC}@{$endif}IlluminanceCB;
 
-New Enumeration signature:
+New enumeration signature and registration:
 
 .. code-block:: delphi
 
@@ -269,6 +287,8 @@ New Enumeration signature:
                                    const name: string; 
                                    const stackID: byte; 
                                    const isNew: boolean);
+
+    ipcon.Enumerate({$ifdef FPC}@{$endif}EnumerateCB);
 
     { 2.0 }
     procedure TExample.EnumerateCB(sender: TIPConnection;
@@ -280,6 +300,9 @@ New Enumeration signature:
                                    const deviceIdentifier: word; 
                                    const enumerationType: byte);
 
+    ipcon.OnEnumerate := {$ifdef FPC}@{$endif}EnumerateCB;
+
+    ipcon.Enumerate();
 
 Java
 ----
@@ -298,20 +321,20 @@ Initialization:
     BrickletAmbientLight al = new BrickletAmbientLight(UID, ipcon);
     ipcon.connect(host, port);
 
-New Enumeration signature:
+New enumeration signature and registration:
 
 .. code-block:: java
 
     // 1.0
-    new IPConnection.EnumerateListener() {
+    ipcon.enumerate(new IPConnection.EnumerateListener() {
         public void enumerate(String uid, 
                               String name, 
                               short stackID, 
                               boolean isNew);
-    }
+    });
 
     // 2.0
-    new IPConnection.EnumerateListener() {
+    ipcon.addListener(new IPConnection.EnumerateListener() {
         public void enumerate(String uid, 
                               String connectedUid, 
                               char position,
@@ -319,7 +342,13 @@ New Enumeration signature:
                               short[] firmwareVersion,
                               int deviceIdentifier, 
                               short enumerationType);
-    }
+    });
+
+    ipcon.enumerate();
+
+The TimeoutException was moved from
+``com.tinkerforge.IPConnection.TimeoutException`` to
+``com.tinkerforge.TimeoutException``.
 
 PHP
 ---
@@ -338,7 +367,7 @@ Initialization:
     $al = new BrickletAmbientLight($uid, $ipcon);
     $ipcon->connect($host, $port);
 
-New Enumeration signature:
+New enumeration signature and registration:
 
 .. code-block:: php
 
@@ -346,7 +375,9 @@ New Enumeration signature:
     function enumerateCB($uid, 
                          $name, 
                          $stackID, 
-                         $isNew)
+                         $isNew);
+
+    $ipcon->enumerate('enumerateCB');
 
     // 2.0
     function enumerateCB($uid, 
@@ -356,7 +387,11 @@ New Enumeration signature:
                          $firmwareVersion,
                          $deviceIdentifier,
                          $enumerationType,
-                         $userData)
+                         $userData);
+
+    $ipcon->registerCallback(IPConnection::CALLBACK_ENUMERATE, 'enumerateCB');
+
+    $ipcon->enumerate();
 
 Python
 ------
@@ -375,7 +410,7 @@ Initialization:
     al = AmbientLight(UID, ipcon)
     ipcon.connect(HOST, PORT)
 
-New Enumeration signature:
+New enumeration signature and registration:
 
 .. code-block:: python
 
@@ -385,6 +420,8 @@ New Enumeration signature:
                      stack_id, 
                      is_new)
 
+    ipcon.enumerate(cb_enumerate)
+
     # 2.0
     def cb_enumerate(uid, 
                      connected_uid, 
@@ -393,6 +430,10 @@ New Enumeration signature:
                      firmware_version,
                      device_identifier, 
                      enumeration_type)
+
+    ipcon.register_callback(IPConnection.CALLBACK_ENUMERATE, cb_enumerate)
+
+    ipcon.enumerate()
 
 Ruby
 ----
@@ -411,7 +452,7 @@ Initialization:
     al = BrickletAmbientLight.new UID, ipcon
     ipcon.connect HOST, PORT
 
-New Enumeration signature:
+New enumeration signature and registration:
 
 .. code-block:: ruby
 
@@ -429,3 +470,5 @@ New Enumeration signature:
                                                                   firmware_version,
                                                                   device_identifier, 
                                                                   enumeration_type|
+
+    ipcon.enumerate
