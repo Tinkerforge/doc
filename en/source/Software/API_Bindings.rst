@@ -474,6 +474,8 @@ With Delphi XE2 (older Delphi version should work similar) we can use our
 Java
 ^^^^
 
+**Requirements**: Java 1.5 or newer
+
 The Java bindings consist of a library (.jar) for all Tinkerforge Bricks and
 Bricklets (``Tinkerforge.jar``), the source of the JAR (in ``source/``) and all
 available Java examples (in ``examples/``).

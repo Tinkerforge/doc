@@ -480,6 +480,8 @@ dann bleiben noch diese Schritte:
 Java
 ^^^^
 
+**Voraussetzungen**: Java 1.5 oder neuer
+
 Die Java Bindings bestehen aus einer Bibliothek (.jar) für alle Tinkerforge
 Bricks und Bricklets (``Tinkerforge.jar``), dem Quelltext des JAR (in
 ``source/``) und allen verfügbaren Java Beispielen (in ``examples/``).
