@@ -57,4 +57,5 @@ int main() {
 
 	printf("Press key to exit\n");
 	getchar();
+	ipcon_destroy(&ipcon);
 }
