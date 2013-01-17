@@ -225,3 +225,11 @@ Hier ist eine Liste von Frequenzen und zugehörigen Kanälen:
  jeweiligen lokalen gesetzlichen Bestimmungen entspricht. Dazu gehört auch
  sicherzustellen, dass die konfigurierte Frequenz am jeweiligen Standort für die
  Nutzung freigegeben ist!
+
+Programmierschnittstellen
+-------------------------
+
+High Level Programmierschnittstelle
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interfaces>`.
