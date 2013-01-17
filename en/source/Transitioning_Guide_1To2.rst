@@ -321,6 +321,28 @@ New Enumeration signature:
                               short enumerationType);
     }
 
+New Listener Approach:
+
+.. code-block:: java
+
+    // 1.0
+    brickletTemperature.addListener(new BrickletTemperature.TemperatureListener() {
+        public void temperature(short temperature) {
+            System.out.println("Temperature: " + temperature/100.0 + " °C");
+        }
+    });
+    // No removeListener in 1.0
+
+    // 2.0
+    brickletTemperature.addTemperatureListener(new BrickletTemperature.TemperatureListener() {
+        public void temperature(short temperature) {
+            System.out.println("Temperature: " + temperature/100.0 + " °C");
+        }
+    });
+
+    // Removing listener possible in 2.0
+    brickletTemperature.removeTemperatureListener(temperatureListener);
+
 PHP
 ---
 
