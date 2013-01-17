@@ -289,4 +289,13 @@ The green LED is the status LED (permanently off = error, blink = associating, o
 
 The WIFI module is equipped with an U.FL connector and an 75 Ohm U.FL to RP-SMA pigtail cable.
 Depending on your application it is possible to disconnect the pigtail cable
-and connect your own cable. 
+and connect your own cable.
+
+
+Programming Interfaces
+----------------------
+
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`Master Brick documentation <master_brick_programming_interfaces>`.

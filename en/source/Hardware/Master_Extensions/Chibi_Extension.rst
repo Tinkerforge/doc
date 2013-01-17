@@ -214,3 +214,12 @@ Here is a small list of frequencies with corresponding possible channels:
  a system with this component and it is your responsibility that the
  system you are building meets your local statutory regulations. Make sure that
  you are allowed to use the frequency you are configuring!
+
+
+Programming Interfaces
+----------------------
+
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`Master Brick documentation <master_brick_programming_interfaces>`.

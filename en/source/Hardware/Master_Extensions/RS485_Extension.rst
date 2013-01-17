@@ -191,3 +191,11 @@ also have to reset the RS485 master (it only searches for new
 Bricks and Bricklets on startup).
 This can be achieved by a power cycle or pressing the reset
 button on the Master Brick.
+
+Programming Interfaces
+----------------------
+
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`Master Brick documentation <master_brick_programming_interfaces>`.
