@@ -30,7 +30,7 @@ ipcon.register_callback(IPConnection::CALLBACK_ENUMERATE) do |uid, connected_uid
   puts ''
 end
 
-ipcon.enumerate()
+ipcon.enumerate
 
 puts 'Press key to exit'
 $stdin.gets
