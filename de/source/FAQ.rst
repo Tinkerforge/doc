@@ -7,7 +7,7 @@ Ich habe etwas aktualisierung und jetzt funktionierts nicht mehr
 ----------------------------------------------------------------
 
 Es handelt sich vermutlich um ein Problem mit inkompatiblen Versionen.
-Am 15. Januar haben wir eine neue Protokollversoin veröffentlicht:
+Am 15. Januar haben wir eine neue Protokollversion veröffentlicht:
 Protokoll 2.0. Die Art und Weise wie Bricks und Bricklets
 untereinander und mit dem Brick Daemon kommunizieren hat sich
 dadurch geändert. Es gibt auch kleine Änderungen in der API. Es ist
