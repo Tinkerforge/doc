@@ -181,7 +181,7 @@ Phase 2: Write your own Program
 To incorporate the Rotary Poti Bricklet in our small project
 we change the program to allow controlling of the motor
 velocity with the rotary poti. It now look as follows
-(`Download <https://raw.github.com/Tinkerforge/doc/master/source/Tutorials/tutorial_brick_bricklet_test.py>`__):
+(`Download <https://raw.github.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_Extending/tutorial_brick_bricklet_test.py>`__):
 
 .. literalinclude:: tutorial_brick_bricklet_test.py
  :language: python
