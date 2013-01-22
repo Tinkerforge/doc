@@ -211,14 +211,14 @@ download_tools_table_head = {
 """.. csv-table::
  :header: "Tool", "Current Version", "Changelog"
  :delim: |
- :widths: 20, 50, 20
+ :widths: 20, 40, 20
 
 """,
 'de':
 """.. csv-table::
  :header: "Tool", "Aktuelle Version", "Changelog"
  :delim: |
- :widths: 20, 50, 20
+ :widths: 20, 40, 20
 
 """
 }
@@ -228,14 +228,14 @@ download_bindings_table_head = {
 """.. csv-table::
  :header: "Language", "Current Version", "Changelog"
  :delim: |
- :widths: 20, 50, 20
+ :widths: 20, 40, 20
 
 """,
 'de':
 """.. csv-table::
  :header: "Sprache", "Aktuelle Version", "Changelog"
  :delim: |
- :widths: 20, 50, 20
+ :widths: 20, 40, 20
 
 """
 }
@@ -245,7 +245,7 @@ download_firmwares_table_head = {
 """.. csv-table::
  :header: "", "Current Version", "Changelog"
  :delim: |
- :widths: 20, 50, 20
+ :widths: 20, 40, 20
 
  **Bricks** | |
 {0}
@@ -256,7 +256,7 @@ download_firmwares_table_head = {
 """.. csv-table::
  :header: "", "Aktuelle Version", "Changelog"
  :delim: |
- :widths: 20, 50, 20
+ :widths: 20, 40, 20
 
  **Bricks** | |
 {0}
