@@ -72,10 +72,10 @@ Grundfunktionen
 
  Kann die folgenden Zustände zurückgeben:
 
- * CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
- * CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder der
-   WIFI/Ethernet Extension ist aufgebaut.
- * CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine
+ * IPCON_CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
+ * IPCON_CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon oder
+   der WIFI/Ethernet Extension ist aufgebaut.
+ * IPCON_CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment eine
    Verbindung aufzubauen.
 
 
@@ -179,13 +179,13 @@ beschrieben.
 
  Mögliche Enumerierungsarten sind:
 
- * ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom
+ * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom
    Benutzer ausgelöst).
- * ENUMERATION_TYPE_CONNECTED (1): Gerät ist neu verfügbar (automatisch vom
+ * IPCON_ENUMERATION_TYPE_CONNECTED (1): Gerät ist neu verfügbar (automatisch vom
    Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann
    bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat
    und neu konfiguriert werden muss.
- * ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei
+ * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei
    USB-Verbindungen möglich). In diesem Fall haben nur *uid* und
    *enumerationType* einen gültigen Wert.
 
@@ -203,8 +203,8 @@ beschrieben.
  Dieser Callback wird aufgerufen wenn die IP Connection eine Verbindung
  aufgebaut hat, mögliche Gründe sind:
 
- * CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
- * CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer
+ * IPCON_CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
+ * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer
    automatischen Wiederverbindung.
 
 
@@ -217,7 +217,7 @@ beschrieben.
  Dieser Callback wird aufgerufen wenn die Verbindung der IP Connection
  getrennt wird, mögliche Gründe sind:
 
- * DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
- * DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.
- * DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon oder
+ * IPCON_DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
+ * IPCON_DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.
+ * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon oder
    WIFI/Ethernet Extension eingeleitet.

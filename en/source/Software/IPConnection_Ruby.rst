@@ -94,12 +94,12 @@ Basic Functions
 
 .. rb:function:: IPConnection#set_timeout(timeout) -> nil
 
- :param timeout: int
+ :param timeout: float
 
- Sets the timeout in milliseconds for getters and for setters for which the
+ Sets the timeout in seconds for getters and for setters for which the
  response expected flag is activated.
 
- Default timeout is 2500.
+ Default timeout is 2.5.
 
 
 .. rb:function:: IPConnection#get_timeout() -> int

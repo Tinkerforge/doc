@@ -97,12 +97,12 @@ Grundfunktionen
 
 .. rb:function:: IPConnection#set_timeout(timeout) -> nil
 
- :param timeout: int
+ :param timeout: float
 
- Setzt den Timeout in Millisekunden für Getter und für Setter die das
+ Setzt den Timeout in Sekunden für Getter und für Setter die das
  Response-Expected-Flag aktiviert haben.
 
- Standardwert ist 2500.
+ Standardwert ist 2.5.
 
 
 .. rb:function:: IPConnection#get_timeout() -> int

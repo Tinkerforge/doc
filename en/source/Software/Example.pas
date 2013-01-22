@@ -11,7 +11,7 @@ type
   private
     ipcon: TIPConnection;
   public
-    procedure EnumerateCB(TIPConnection: TObject;
+    procedure EnumerateCB(sender: TIPConnection;
                           const uid: string; const connectedUid: string; const position: char;
                           const hardwareVersion: TVersionNumber; const firmwareVersion: TVersionNumber;
                           const deviceIdentifier: word; const enumerationType: byte);
@@ -26,7 +26,7 @@ var
   e: TExample;
 
 { Print incoming enumeration }
-procedure TExample.EnumerateCB(TIPConnection: TObject;
+procedure TExample.EnumerateCB(sender: TIPConnection;
                                const uid: string; const connectedUid: string; const position: char;
                                const hardwareVersion: TVersionNumber; const firmwareVersion: TVersionNumber;
                                const deviceIdentifier: word; const enumerationType: byte);
@@ -34,7 +34,7 @@ begin
   WriteLn('UID:               ' + uid);
   WriteLn('Enumerate Type:    ' + IntToStr(enumerationType));
 
-  if(enumerationType <> ENUMERATION_TYPE_DISCONNECTED) then begin
+  if(enumerationType <> IPCON_ENUMERATION_TYPE_DISCONNECTED) then begin
     WriteLn('Connected UID:     ' + connectedUid);
     WriteLn('Position:          ' + position);
     WriteLn('Hardware Version:  ' + IntToStr(hardwareVersion[0]) + '.' + 
