@@ -4,7 +4,7 @@ Rugged Approach
 ===============
 
 With the new Protocol 2.0, it is possible to write programs that are
-resilient to outages, brief electricity cuts and similar.
+resilient to outages, brief electricity cuts and similar things.
 
 The general approach for such a program looks as follows (pseudo code)::
 
@@ -30,7 +30,7 @@ The general approach for such a program looks as follows (pseudo code)::
  }
 
 Generally, you have to make sure that configuration is done while
-the Bricks/Bricklets are enumerated. This ensures that the configurations
+the Bricks and Bricklets are enumerated. This ensures that the configurations
 (e.g. callback periods) are always there, even if a Brick or Bricklet
 was restarted and lost its configuration.
 
@@ -40,7 +40,7 @@ TCP/IP connection was lost and is reconnected. If the connection was lost,
 a Brick or Bricklet might have been restarted in the meantime, so it
 needs to be reconfigured.
 
-In the following you can find source code for a program that shows the
+In the following you can find source codes for a program that shows the
 temperature on a LCD 20x4 Bricklet. This program should keep working if
 you reconnect/restart the Master Brick or if a WiFi connection is lost.
 It is even possible to exchange the Temperature or LCD 20x4 Bricklet, since
