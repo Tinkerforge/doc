@@ -566,11 +566,17 @@ def make_product_overview_table(devices, category, name_width,
 def make_download_tools_table():
     source_code = download_tools_source_code[lang]
     table_head = download_tools_table_head[lang]
-    row_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/zipball/v{3}.{4}.{5}>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
+    row_multi_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - Linux (`amd64 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_amd64.deb>`__, `i386 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_i386.deb>`__, `armhf <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_armhf.deb>`__), `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/zipball/v{3}.{4}.{5}>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
+    row_all_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/zipball/v{3}.{4}.{5}>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
     rows = []
 
     for tool in tools:
-        linux_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/linux/'.format(tool[1]), '{0}-(\d+).(\d+).(\d+)_all.deb'.format(tool[1]))
+        if tool[1] == 'brickd':
+            row_cell = row_multi_cell
+            linux_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/linux/'.format(tool[1]), '{0}-(\d+).(\d+).(\d+)_amd64.deb'.format(tool[1]))
+        else:
+            row_cell = row_all_cell
+            linux_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/linux/'.format(tool[1]), '{0}-(\d+).(\d+).(\d+)_all.deb'.format(tool[1]))
         macos_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/macos/'.format(tool[1]), '{0}_macos_(\d+)_(\d+)_(\d+).dmg'.format(tool[1]))
         windows_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/windows/'.format(tool[1]), '{0}_windows_(\d+)_(\d+)_(\d+).exe'.format(tool[1]))
 
