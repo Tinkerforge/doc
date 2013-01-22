@@ -134,3 +134,5 @@ Accessories
    Software/*
    Software/Bricks/*
    Software/Bricklets/*
+
+Click `here <http://www.tinkerforge.com/doc_v1/index.html>`__ for the old protocol documentation.

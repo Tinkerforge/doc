@@ -134,3 +134,5 @@ Zubehör
    Software/*
    Software/Bricks/*
    Software/Bricklets/*
+
+Klick `hier <http://www.tinkerforge.com/doc_v2/index.html>`__ um zur Dokumentation des alten Protokolls zu gelangen.
