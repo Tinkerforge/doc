@@ -23,7 +23,7 @@ on "Auto-Update All Bricklets".
    :scale: 100 %
    :alt: Bricklet auto update feature of the Brick Viewer
    :align: center
-   :target: ../_images/Screenshots/bricklet_auto_update.jpg
+   :target: _images/Screenshots/bricklet_auto_update.jpg
 
 If the auto update does not work, you can of course still update the
 Bricklets individually by using the normal
