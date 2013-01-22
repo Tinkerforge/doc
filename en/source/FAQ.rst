@@ -6,7 +6,7 @@ FAQ
 I updated something and now it doesn't work anymore
 ---------------------------------------------------
 
-You probably have a version mismatch. On January 15th we released a new 
+You probably have a version mismatch. On January 22nd we released a new 
 protocol version, Protocol 2.0. This means that the way Bricks and Bricklets
 communicate with each other and with the Brick Daemon has changed. Also
 there are small changes in the API. You need to update your
