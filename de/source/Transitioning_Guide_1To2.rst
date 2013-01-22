@@ -23,7 +23,7 @@ Knopf angeklickt werden.
    :scale: 100 %
    :alt: Bricklet auto update feature of the Brick Viewer
    :align: center
-   :target: ../_images/Screenshots/bricklet_auto_update.jpg
+   :target: _images/Screenshots/bricklet_auto_update.jpg
 
 Falls das automatische aktualisieren nicht funktioniert, können die
 Bricklets natürlich auch noch auf die 

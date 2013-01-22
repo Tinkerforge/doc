@@ -46,7 +46,7 @@ DC Bricks verwendet werden.
    :scale: 100 %
    :alt: DC Brick mit angeschlossenem Motor
    :align: center
-   :target: ../_images/Bricks/brick_dc_motor_setup_1200.jpg
+   :target: ../../_images/Bricks/brick_dc_motor_setup_1200.jpg
 
 Schließe jetzt den Brick per USB an den PC an. Einen Moment später im Brick
 Viewer ein neuer Tab namens "DC Brick" auftauchen. Wähle diesen Tab aus.
@@ -56,7 +56,7 @@ Der Brick Viewer sollte nun so aussehen:
    :scale: 100 %
    :alt: DC Brick Tab im Brick Viewer
    :align: center
-   :target: ../_images/Bricks/dc_brickv.jpg
+   :target: ../../_images/Bricks/dc_brickv.jpg
 
 Auf der rechten Seite wird die externe Eingangsspannung unter "External Voltage",
 der Stromverbrauch des angeschlossenen Motors unter "Current Consumption" und
@@ -161,7 +161,7 @@ gezeigt.
    :scale: 100 %
    :alt: DC Brick mit angeschlossenen Motor und Rotary Poti Bricklet
    :align: center
-   :target: ../_images/Tutorial/tutorial_1_1200.jpg
+   :target: ../../_images/Tutorial/tutorial_1_1200.jpg
 
 Wenn der DC Brick über USB angeschloßen wird, dann taucht neben dem "DC Brick"
 Tab noch ein "Rotary Poti Bricklet" Tab im Brick Viewer auf. Wähle den "Rotary
@@ -172,7 +172,7 @@ die Drehung entsprechend dargestellt.
    :scale: 100 %
    :alt: Rotary Poti Bricklet Tab im Brick Viewer
    :align: center
-   :target: ../_images/Bricklets/bricklet_rotary_poti_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_rotary_poti_brickv.jpg
 
 
 Phase 2: Ein eigenes Programm schreiben
