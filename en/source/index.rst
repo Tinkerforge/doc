@@ -17,7 +17,7 @@ Documentation
    :maxdepth: 2
 
    Product_Overview
-   Tutorials/Tutorial
+   Tutorials
    Software
    Low_Level_Protocols
    Downloads

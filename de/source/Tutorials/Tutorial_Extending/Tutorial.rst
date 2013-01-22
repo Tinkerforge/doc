@@ -1,7 +1,7 @@
 .. _tutorial:
 
-Tutorial
-========
+Erste Schritte
+==============
 
 Das folgende Tutorial demonstriert wie :ref:`Bricks <product_overview_bricks>`
 und :ref:`Bricklets <product_overview_bricklets>` mit der

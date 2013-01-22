@@ -1,7 +1,7 @@
 .. _tutorial:
 
-Tutorial
-========
+First steps
+===========
 
 The following tutorial will demonstrate how to use
 :ref:`Bricks <product_overview_bricks>` and
