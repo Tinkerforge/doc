@@ -34,8 +34,8 @@ folgenden Befehlen installiert werden::
 
  cd /home/pi
  sudo apt-get install python-twisted python-gudev libusb-1.0-0
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest.deb
- sudo dpkg -i brickd_linux_latest.deb
+ wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ sudo dpkg -i brickd_linux_latest_armhf.deb
 
  cd /home/pi
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
