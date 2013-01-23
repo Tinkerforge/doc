@@ -38,7 +38,7 @@ verloren hat.
 
 Eine Möglichkeit um dies zu realisieren ist den Konfigurationscode in
 den Enumeration-Callback zu schreiben. Es sollte zusätzlich sichergestellt sein,
-das eine neue Enumerierung ausgelöst wird wenn eine TCP/IP Verbindung neu
+dass eine neue Enumerierung ausgelöst wird wenn eine TCP/IP Verbindung neu
 aufgebaut wird, nachdem sie getrennt wurde. Wenn eine Verbindung getrennt wird,
 ist nicht ausgeschlossen dass ein Brick oder Bricklet in der Zwischenzeit
 neugestartet wird und deshalb neu konfiguriert werden muss.

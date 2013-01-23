@@ -31,6 +31,11 @@ Bricklets individually by using the normal
 
 In the end, everything should have a version that starts with "2". 
 
+There should also have been a guide on how to update Bricks and Bricklets
+with your shipment. If you didn't receive one or only have the old version
+for the old protocol, you can download it 
+`here <http://download.tinkerforge.com/_stuff/beipackzettel.pdf>`__.
+
 General
 -------
 
