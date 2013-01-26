@@ -160,8 +160,19 @@ environments have very similar tools that practically work the same way.
 
 To install Brick Daemon from the console use the following::
 
- sudo apt-get install python-twisted python-gudev libusb-1.0-0
- sudo dpkg -i brickd_linux_latest.deb
+ sudo apt-get install libusb-1.0-0 libudev0
+
+ # On arm (e.g. Raspberry PI)
+ wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ sudo dpkg -i brickd_linux_latest_armhf.deb
+
+ # On 64bit x86
+ wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_amd64.deb
+ sudo dpkg -i brickd_linux_latest_amd64.deb
+
+ # On 32bit x86
+ wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_i386.deb
+ sudo dpkg -i brickd_linux_latest_i386.deb
 
 To install Brick Daemon from source, download the source from `here
 <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
