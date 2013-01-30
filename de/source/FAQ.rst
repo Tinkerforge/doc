@@ -3,7 +3,7 @@
 FAQ
 ===
 
-Ich habe etwas aktualisierung und jetzt funktionierts nicht mehr
+Ich habe etwas aktualisiert und jetzt funktionierts nicht mehr
 ----------------------------------------------------------------
 
 Es handelt sich vermutlich um ein Problem mit inkompatiblen Versionen.
