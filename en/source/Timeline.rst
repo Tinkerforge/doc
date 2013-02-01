@@ -32,6 +32,6 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "",     "49", "LCD 20x4 Bricklet 1.2", "`done <http://en.blog.tinkerforge.com/2012/12/6/lcd-20x4-bricklet-1-2>`__"
    "",     "51", "New Voltage/Current Bricklet", "`done <http://en.blog.tinkerforge.com/2012/12/20/voltage-current-bricklet-now-available>`__"
    "",     "51", "GPS Bricklet", "`done <http://en.blog.tinkerforge.com/2012/12/20/gps-bricklet-now-available>`__"
-   "2013", "07", "PTC Bricklet", "Prototype tested"
-   "",     "10", "Ethernet Extension with PoE", "Testing of prototype"
+   "2013", "10", "PTC Bricklet", "Awaiting Quotation for PCBs"
+   "",     "?", "Ethernet Extension with PoE", "Problems with prototype"
    "",     "?", "Sonic Range Bricklet"
