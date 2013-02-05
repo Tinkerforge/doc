@@ -29,7 +29,7 @@ Windows
 ^^^^^^^
 
 Um den Brick Daemon (Service) auf Windows zu installieren, muss
-die Brick Daemon .exe ref:`heruntergeladen <downloads_tools>`
+die Brick Daemon .exe :ref:`heruntergeladen <downloads_tools>`
 werden. Ein Doppelklick auf die Heruntergeladene Datei
 sollte einen Installer starten:
 
