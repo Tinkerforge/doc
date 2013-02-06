@@ -73,10 +73,11 @@ Basic Functions
 
  Can return the following states:
 
- * CONNECTION_STATE_DISCONNECTED (0): No connection is established.
- * CONNECTION_STATE_CONNETED (1): A connection to the Brick Daemon or the
-   WIFI/Ethernet Extension  is established.
- * CONNECTION_STATE_PENDING (2): IP Connection is currently trying to connect.
+ * IPConnection.CONNECTION_STATE_DISCONNECTED (0): No connection is established.
+ * IPConnection.CONNECTION_STATE_CONNETED (1): A connection to the Brick Daemon
+   or the WIFI/Ethernet Extension  is established.
+ * IPConnection.CONNECTION_STATE_PENDING (2): IP Connection is currently trying
+   to connect.
 
 
 .. py:function:: IPConnection.set_auto_reconnect(auto_reconnect)
@@ -208,14 +209,14 @@ described below.
 
  Possible enumeration types are:
 
- * ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
+ * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
    triggered by user).
- * ENUMERATION_TYPE_CONNECTED (1): Device is newly connected (automatically
-   send by Brick after establishing a communication connection). This indicates
-   that the device has potentially lost its previous configuration and needs to
-   be reconfigured.
- * ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible
-   for USB connection). In this case only *uid* and *enumeration_type*
+ * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
+   (automatically send by Brick after establishing a communication connection).
+   This indicates that the device has potentially lost its previous
+   configuration and needs to be reconfigured.
+ * IPConnection.ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
+   possible for USB connection). In this case only *uid* and *enumeration_type*
    are vaild.
 
  It should be possible to implement plug-and-play functionality with this
@@ -230,8 +231,10 @@ described below.
  This callback is called whenever the IP Connection is connected, possible
  reasons are:
 
- * CONNECT_REASON_REQUEST (0): Connection established after request from user.
- * CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
+ * IPConnection.CONNECT_REASON_REQUEST (0): Connection established after
+   request from user.
+ * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Connection after
+   auto-reconnect.
 
 
 .. py:attribute:: IPConnection.CALLBACK_DISCONNECTED
@@ -241,7 +244,8 @@ described below.
  This callback is called whenever the IP Connection is disconnected, possible
  reasons are:
 
- * DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
- * DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable error.
- * DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick Daemon or
-   WIFI/Ethernet Extension.
+ * IPConnection.DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
+ * IPConnection.DISCONNECT_REASON_ERROR (1): Disconnect because of an
+   unresolvable error.
+ * IPConnection.DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick
+   Daemon or WIFI/Ethernet Extension.
