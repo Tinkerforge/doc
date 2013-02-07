@@ -120,7 +120,7 @@ Initialisierung:
 
     ...
 
-    ipcon_destroy(&ipcon); // Ruft intern ipcon_disconnect auf
+    ipcon_destroy(&ipcon); // Calls ipcon_disconnect internally
 
 Callbacks:
 
@@ -274,7 +274,7 @@ Initialisierung:
   al := TBrickletAmbientLight.Create(UID, ipcon);
   ipcon.Connect(HOST, PORT);
   ...
-  ipcon.Destroy; { Ruft intern ipcon.Disconnect auf }
+  ipcon.Destroy; { Calls ipcon.Disconnect internally }
 
 
 Callback:
