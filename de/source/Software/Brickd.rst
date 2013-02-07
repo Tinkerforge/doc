@@ -54,7 +54,7 @@ Typischerweise soll beides ausgeführt werden. Ein Klick auf
    :target: ../_images/Screenshots/brickd_windows_2.jpg
 
 Als nächstes wird der Installationspfad abgefragt. Dieser kann
-abgeändert werden wenn gewünscht. Die Installtion wird mit
+abgeändert werden wenn gewünscht. Die Installation wird mit
 einem Klick auf "Install" gestartet.
 
 Am Ende des Installationsprozess erscheint ein Fenster,
@@ -165,12 +165,12 @@ In Ubuntu kann auch das Ubuntu Software Center benutzt werden. Andere
 Desktopumgebungen haben ähnliche Werkzeuge die praktisch genauso
 funktionieren.
 
-Der Brick Daemon kann von der Console mit folgemdem Befehl installiert
+Der Brick Daemon kann von der Console mit folgendem Befehl installiert
 werden:: 
 
  sudo apt-get install libusb-1.0-0 libudev0
 
- # On arm (e.g. Raspberry PI)
+ # On ARM (e.g. Raspberry PI)
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
@@ -194,7 +194,7 @@ installiert werden::
 
  sudo apt-get install libusb-1.0-0-dev libudev-dev
 
-Auf anderen Distributionen muss nach den äquivakten Paketen gesucht werden.
+Auf anderen Distributionen muss nach den äquivalenten Paketen gesucht werden.
 
 Der Brick Daemon kann mit den folgenden Befehlen aus brickd/src/brickd/ 
 compiliert und gestartet werden::
@@ -207,7 +207,7 @@ Error Logs gibt es unter::
  /var/log/brickd.log
 
 Wenn der Brick Daemon aus dem Paket installiert wird, wird er automatisch
-bei jedem neustart beim Hochfahren gestartet.
+bei beim Hochfahren des Systems mitgestartet.
 
 Mac OS X
 ^^^^^^^^
@@ -241,7 +241,7 @@ Danach sollte ein "Installation Finished" Fenster erscheinen.
    :align: center
    :target: ../_images/Screenshots/brickd_macos_3.jpg
 
-Nach einem Klick auf "OK" ist die Installation beended. Der Brick Daemon
+Nach einem Klick auf "OK" ist die Installation beendet. Der Brick Daemon
 sollte nun bei jedem Neustart beim Hochfahren gestartet werden.
 
 Falls der Brick Daemon nicht laufen sollte oder er abgestürzt ist, kann er
@@ -250,7 +250,7 @@ aus der Console mit folgendem Befehl gestartet werden::
  sudo launchctl start com.tinkerforge.brickd
 
 .. note::
- Seit Mac OS X Mountain Lion kann ausschließlich signierte Sofware installiert
+ Seit Mac OS X Mountain Lion kann ausschließlich signierte Software installiert
  werden. Der Brick Daemon Installer ist im Moment nicht signiert. Daher kann
  es passieren, dass Mac OS X eine Fehlermeldung gibt beim versuch den Installer
  zu starten. Als Ausweg können die Sicherheitseinstellungen abgeschwächt 
@@ -283,3 +283,19 @@ den Kommandozeilenparameter `--version`:
    /usr/libexec/brickd.app/Contents/MacOS/brickd --version
 
 
+Kommandozeilenparameter
+-----------------------
+
+Allgemein:
+
+* **--help**: Hilfe anzeigen
+* **--version**: Versionsnummer anzeigen
+* **--check-config**: Konfigurationsdatei auf Fehler überprüfen
+* **--debug**: Alle Log Level auf Debug setzen
+
+Spezifisch für Windows:
+
+* **--install**: Als Service registrieren und starten
+* **--uninstall**: Service stoppen und deregistrieren
+* **--console**: Start als Konsolenanwendung erzwingen
+* **--log-to-file**: Log Nachrichten in Datei schreiben

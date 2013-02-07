@@ -162,7 +162,7 @@ To install Brick Daemon from the console use the following::
 
  sudo apt-get install libusb-1.0-0 libudev0
 
- # On arm (e.g. Raspberry PI)
+ # On ARM (e.g. Raspberry PI)
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
@@ -271,3 +271,21 @@ installed with the `--version` commandline argument:
 * Mac OS X::
 
    /usr/libexec/brickd.app/Contents/MacOS/brickd --version
+
+
+Commandline Options
+-------------------
+
+Common:
+
+* **--help**: Show help
+* **--version**: Show version number
+* **--check-config**: Check config file for errors
+* **--debug**: Set all log levels to debug
+
+Windows only:
+
+* **--install**: Register as service and start it
+* **--uninstall**: Stop service and unregister it
+* **--console**: Force start as console application
+* **--log-to-file**: Write log messages to file
