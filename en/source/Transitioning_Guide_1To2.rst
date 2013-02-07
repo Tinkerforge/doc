@@ -53,7 +53,7 @@ languages, they include:
 * get_auto_reconnect
 * set_timeout
 * get_timeout
-* wait (replacement for join)
+* wait (replacement for join_thread)
 * unwait
 
 Additionally, the enumeration callback has now a different signature. With
@@ -103,6 +103,10 @@ Initialization:
         exit(1);
     }
 
+    ...
+
+    ipcon_destroy(&ipcon);
+
     // 2.0
     IPConnection ipcon;
     ipcon_create(&ipcon);
@@ -114,6 +118,10 @@ Initialization:
         fprintf(stderr, "Could not connect\n");
         exit(1);
     }
+
+    ...
+
+    ipcon_destroy(&ipcon); // Calls ipcon_disconnect internally
 
 Callbacks:
 
@@ -194,12 +202,15 @@ Initialization:
     IPConnection ipcon = new IPConnection(HOST, PORT);    
     BrickletAmbientLight al = new BrickletAmbientLight(UID);    
     ipcon.AddDevice(al);
+    ...
+    ipcon.Destroy();
 
     // 2.0
     IPConnection ipcon = new IPConnection();
     BrickletAmbientLight al = new BrickletAmbientLight(UID, ipcon);
     ipcon.Connect(HOST, PORT);
-
+    ...
+    ipcon.Disconnect();
 
 Callbacks:
 
@@ -256,11 +267,15 @@ Initialization:
   ipcon := TIPConnection.Create(HOST, PORT);
   al := TBrickletAmbientLight.Create(UID);
   ipcon.AddDevice(al);
+  ...
+  ipcon.Destroy;
 
   { 2.0 }
   ipcon := TIPConnection.Create;
   al := TBrickletAmbientLight.Create(UID, ipcon);
   ipcon.Connect(HOST, PORT);
+  ...
+  ipcon.Destroy; { Calls ipcon.Disconnect internally }
 
 
 Callback:
@@ -320,11 +335,15 @@ Initialization:
     IPConnection ipcon = new IPConnection(host, port);
     BrickletAmbientLight al = new BrickletAmbientLight(UID);
     ipcon.addDevice(al);
+    ...
+    ipcon.destroy();
 
     // 2.0
     IPConnection ipcon = new IPConnection();
     BrickletAmbientLight al = new BrickletAmbientLight(UID, ipcon);
     ipcon.connect(host, port);
+    ...
+    ipcon.disconnect();
 
 New enumeration signature and registration:
 
@@ -388,11 +407,15 @@ Initialization:
     $ipcon = new IPConnection($host, $port);
     $al = new BrickletAmbientLight($uid);
     $ipcon->addDevice($al);
+    ...
+    $ipcon->destroy();
 
     // 2.0
     $ipcon = new IPConnection();
     $al = new BrickletAmbientLight($uid, $ipcon);
     $ipcon->connect($host, $port);
+    ...
+    $ipcon->disconnect();
 
 New enumeration signature and registration:
 
@@ -431,11 +454,15 @@ Initialization:
     ipcon = IPConnection(HOST, PORT)
     al = AmbientLight(UID)
     ipcon.add_device(al)
+    ...
+    ipcon.destroy()
 
     # 2.0
     ipcon = IPConnection()
     al = AmbientLight(UID, ipcon)
     ipcon.connect(HOST, PORT)
+    ...
+    ipcon.disconnect()
 
 New enumeration signature and registration:
 
@@ -473,11 +500,15 @@ Initialization:
     ipcon = IPConnection.new HOST, PORT
     al = BrickletAmbientLight.new UID
     ipcon.add_device al
+    ...
+    ipcon.destroy
 
     # 2.0
     ipcon = IPConnection.new
     al = BrickletAmbientLight.new UID, ipcon
     ipcon.connect HOST, PORT
+    ...
+    ipcon.disconnect
 
 New enumeration signature and registration:
 

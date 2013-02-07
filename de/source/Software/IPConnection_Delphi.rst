@@ -45,8 +45,9 @@ Grundfunktionen
 
 .. delphi:function:: destructor TIPConnection.Destroy()
 
- Zerstört die IP Connection. Der Socket zum Brick Daemon wird geschlossen und
- alle Threads der IP Connection werden beendet.
+ Zerstört die IP Connection. Ruft intern :delphi:func:`Disconnect
+ <TIPConnection.Disconnect>` auf. Der Socket zum Brick Daemon wird geschlossen
+ und alle Threads der IP Connection werden beendet.
 
 
 .. delphi:function:: procedure TIPConnection.Connect(const host: string; const port: word)

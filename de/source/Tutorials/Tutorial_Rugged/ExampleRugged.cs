@@ -35,6 +35,7 @@ class ExampleRugged
 
 		System.Console.WriteLine("Press key to exit");
 		System.Console.ReadKey();
+		ipcon.Disconnect();
 	}
 
 	// Callback updates temperature displayed on lcd
@@ -67,8 +68,8 @@ class ExampleRugged
 		}
 	}
 
-    // Callback handles device connections and configures possibly lost 
-    // configuration of lcd and temperature callbacks, backlight etc.
+	// Callback handles device connections and configures possibly lost
+	// configuration of lcd and temperature callbacks, backlight etc.
 	static void EnumerateCB(IPConnection sender, string UID, string connectedUID, 
 	                        char position, short[] hardwareVersion, 
 	                        short[] firmwareVersion, int deviceIdentifier, 
@@ -103,8 +104,8 @@ class ExampleRugged
 	static void ConnectedCB(IPConnection sender, short connectReason)
 	{
 		// Enumerate devices again. If we reconnected, the Bricks/Bricklets
-        // may have been offline and the configuration may be lost.
-        // In this case we don't care for the reason of the connection
+		// may have been offline and the configuration may be lost.
+		// In this case we don't care for the reason of the connection
 		ipcon.Enumerate();
 	}
 }

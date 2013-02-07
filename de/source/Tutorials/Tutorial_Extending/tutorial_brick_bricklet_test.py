@@ -34,3 +34,4 @@ if __name__ == "__main__":
 
     raw_input('Press Enter to exit\n') # Use input() in Python 3
     dc.disable()
+    ipcon.disconnect()

@@ -34,3 +34,4 @@ ipcon.enumerate
 
 puts 'Press key to exit'
 $stdin.gets
+ipcon.disconnect

@@ -65,8 +65,9 @@ Basic Functions
 
 .. c:function:: void ipcon_destroy(IPConnection *ipcon)
 
- Destroys the IP Connection object. The connection to the Brick Daemon gets
- closed and the threads of the IP Connection are terminated.
+ Destroys the IP Connection object. Calls :c:func:`ipcon_disconnect` internally.
+ The connection to the Brick Daemon gets closed and the threads of the
+ IP Connection are terminated.
 
 
 .. c:function:: int ipcon_connect(IPConnection *ipcon, const char *host, uint16_t port)

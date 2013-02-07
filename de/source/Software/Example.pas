@@ -62,7 +62,7 @@ begin
 
   WriteLn('Press key to exit');
   ReadLn;
-  ipcon.Destroy;
+  ipcon.Destroy; { Calls ipcon.Disconnect internally }
 end;
 
 begin

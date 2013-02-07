@@ -40,5 +40,6 @@ public class Example {
 		ipcon.enumerate();
 
 		System.console().readLine("Press key to exit\n");
+		ipcon.disconnect();
 	}
 }

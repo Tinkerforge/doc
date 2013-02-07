@@ -66,8 +66,9 @@ Grundfunktionen
 
 .. c:function:: void ipcon_destroy(IPConnection *ipcon)
 
- Zerstört die IP Connection. Der Socket zum Brick Daemon wird geschlossen und
- alle Threads der IP Connection werden beendet.
+ Zerstört die IP Connection. Ruft intern :c:func:`ipcon_disconnect` auf. Der
+ Socket zum Brick Daemon wird geschlossen und alle Threads der IP Connection
+ werden beendet.
 
 
 .. c:function:: int ipcon_connect(IPConnection *ipcon, const char *host, uint16_t port)
