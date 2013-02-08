@@ -181,13 +181,12 @@ General:
 
 There are no unsigned data types used anymore. This was necessary to make
 the C# bindings CLS complient (i.e. they can be easily used from other 
-.net languages). All unsigned data types have been replaced by the next
+.NET languages). All unsigned data types have been replaced by the next
 higher signed data type.
 
 =============  =============
 Data type 1.0  Data type 2.0
 =============  =============
-uint8          int16
 uint16         int32
 uint32         int64
 uint64         int64
