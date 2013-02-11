@@ -439,7 +439,6 @@ def get_body(url):
         traceback.print_exc()
         return None
 
-
 def get_tool_versions(url, regex):
     print 'Discovering ' + url
     body = get_body(url)
@@ -581,16 +580,16 @@ def make_download_tools_table():
         windows_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/windows/'.format(tool[1]), '{0}_windows_(\d+)_(\d+)_(\d+).exe'.format(tool[1]))
 
         if len(linux_versions) == 0:
-            raise 'Could not find Linux versions of {0}'.format(tool[0])
+            raise RuntimeError('Could not find Linux versions of {0}'.format(tool[0]))
 
         if len(macos_versions) == 0:
-            raise 'Could not find Mac OS X versions of {0}'.format(tool[0])
+            raise RuntimeError('Could not find Mac OS X versions of {0}'.format(tool[0]))
 
         if len(windows_versions) == 0:
-            raise 'Could not find Windows versions of {0}'.format(tool[0])
+            raise RuntimeError('Could not find Windows versions of {0}'.format(tool[0]))
 
         if len(set([linux_versions[-1], macos_versions[-1], windows_versions[-1]])) != 1:
-            raise 'Cross-platform version mismatch for {0}'.format(tool[0])
+            raise RuntimeError('Cross-platform version mismatch for {0}'.format(tool[0]))
 
         rows.append(row_cell.format(tool[0], tool[1], source_code, *linux_versions[-1]))
 
@@ -606,9 +605,9 @@ def make_download_bindings_table():
             versions = get_bindings_versions('http://download.tinkerforge.com/bindings/{0}/'.format(binding[1]), binding[1])
 
             if len(versions) == 0:
-                raise 'Could not find versions of the {0} bindings'.format(binding[0])
-
-            rows.append(row_cell.format(binding[0], binding[1], *versions[-1]))
+                print('Could not find versions of the {0} bindings'.format(binding[0]))
+            else:
+                rows.append(row_cell.format(binding[0], binding[1], *versions[-1]))
 
     return table_head + '\n'.join(rows)
 
@@ -624,7 +623,7 @@ def make_download_firmwares_table():
             versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricks/{0}/'.format(brick[1]), 'brick_' + brick[1])
 
             if len(versions) < 1:
-                print 'Could not find versions of the {0} Brick firmware'.format(brick[0])
+                print('Could not find versions of the {0} Brick firmware'.format(brick[0]))
             else:
                 brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), *versions[-1]))
 
@@ -633,7 +632,7 @@ def make_download_firmwares_table():
             versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricklets/{0}/'.format(bricklet[1]), 'bricklet_' + bricklet[1])
 
             if len(versions) < 1:
-                print 'Could not find versions of the {0} Bricklet firmware'.format(bricklet[0])
+                print('Could not find versions of the {0} Bricklet firmware'.format(bricklet[0]))
             else:
                 bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1], bricklet[1].replace('_', '-').replace('/', '-'), *versions[-1]))
 
@@ -691,48 +690,48 @@ def generate(path):
     elif path.endswith('/de'):
         lang = 'de'
     else:
-        print 'Wrong working directory'
+        print('Wrong working directory')
         sys.exit(1)
 
     fill_dicts()
 
-    print 'Generating index_bricks.table'
+    print('Generating index_bricks.table')
     file(os.path.join(path, 'source', 'index_bricks.table'), 'wb').write(make_index_table(bricks, 'brick'))
 
-    print 'Generating index_bricklets.table'
+    print('Generating index_bricklets.table')
     file(os.path.join(path, 'source', 'index_bricklets.table'), 'wb').write(make_index_table(bricklets, 'bricklet'))
 
-    print 'Generating index_extensions.table'
+    print('Generating index_extensions.table')
     file(os.path.join(path, 'source', 'index_extensions.table'), 'wb').write(make_index_table(extensions, 'extension'))
 
-    print 'Generating index_power_supplies.table'
+    print('Generating index_power_supplies.table')
     file(os.path.join(path, 'source', 'index_power_supplies.table'), 'wb').write(make_index_table(power_supplies, 'power_supply'))
 
-    print 'Generating Product_Overview_bricks.table'
+    print('Generating Product_Overview_bricks.table')
     file(os.path.join(path, 'source', 'Product_Overview_bricks.table'), 'wb').write(make_product_overview_table(bricks, 'brick', 15, 40, True))
 
-    print 'Generating Product_Overview_bricklets.table'
+    print('Generating Product_Overview_bricklets.table')
     file(os.path.join(path, 'source', 'Product_Overview_bricklets.table'), 'wb').write(make_product_overview_table(bricklets, 'bricklet', 20, 70, True))
 
-    print 'Generating Product_Overview_extensions.table'
+    print('Generating Product_Overview_extensions.table')
     file(os.path.join(path, 'source', 'Product_Overview_extensions.table'), 'wb').write(make_product_overview_table(extensions, 'extension', 20, 70, False))
 
-    print 'Generating Product_Overview_power_supplies.table'
+    print('Generating Product_Overview_power_supplies.table')
     file(os.path.join(path, 'source', 'Product_Overview_power_supplies.table'), 'wb').write(make_product_overview_table(power_supplies, 'power_supply', 30, 60, False))
 
-    print 'Generating Downloads_tools.table'
+    print('Generating Downloads_tools.table')
     file(os.path.join(path, 'source', 'Downloads_tools.table'), 'wb').write(make_download_tools_table())
 
-    print 'Generating Downloads_bindings.table'
+    print('Generating Downloads_bindings.table')
     file(os.path.join(path, 'source', 'Downloads_bindings.table'), 'wb').write(make_download_bindings_table())
 
-    print 'Generating Downloads_firmwares.table'
+    print('Generating Downloads_firmwares.table')
     file(os.path.join(path, 'source', 'Downloads_firmwares.table'), 'wb').write(make_download_firmwares_table())
 
-    print 'Generating API_Bindings_bindings.table'
+    print('Generating API_Bindings_bindings.table')
     file(os.path.join(path, 'source', 'Software', 'API_Bindings_bindings.table'), 'wb').write(make_api_bindings_table())
 
-    print 'Generating Source_Code_gits.table'
+    print('Generating Source_Code_gits.table')
     file(os.path.join(path, 'source', 'Source_Code_gits.table'), 'wb').write(make_source_code_gits_table())
 
     for brick in bricks:
@@ -741,7 +740,7 @@ def generate(path):
 
         name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
-        print 'Generating {0}_Brick_hlpi.table'.format(name)
+        print('Generating {0}_Brick_hlpi.table'.format(name))
         file(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick_hlpi.table'), 'wb').write(make_hlpi_table(brick, 'brick'))
 
     for bricklet in bricklets:
@@ -750,7 +749,7 @@ def generate(path):
 
         name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
-        print 'Generating {0}_hlpi.table'.format(name)
+        print('Generating {0}_hlpi.table'.format(name))
         file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), 'wb').write(make_hlpi_table(bricklet, 'bricklet'))
 
 
