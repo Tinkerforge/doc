@@ -123,23 +123,30 @@ Listener
 ^^^^^^^^
 
 Listeners können registriert werden um über Ereignisse informiert zu werden.
-Die Registrierung wird mit der Funktion :java:func:`addListener
-<IPConnection::addListener>` durchgeführt. Als Parameter wird ein
-Listenerobjekt übergeben:
+Die Registrierung kann mit "addListener" Funktionen des IPConnection Objekts
+durchgeführt werden.
+
+Der Parameter ist ein Listener Klassen Objekt, z.B.:
 
 .. code-block:: java
 
-    ipcon.addListener(new IPConnection.ExampleListener() {
+    ipcon.addExampleListener(new IPConnection.ExampleListener() {
         public void property(int value) {
             System.out.println("Value: " + value);
         }
     });
 
 Die verfügbaren Listener Klassen mit den Methoden welche überschrieben
-werden können werden im Folgenden beschrieben.
+werden können werden unterhalb beschrieben. Es ist möglich mehrere Listener
+hinzuzufügen und auch mit einem korrespondierenden "removeExampleListener"
+wieder zu entfernen.
 
 
 .. java:function:: public class IPConnection.EnumerateListener()
+
+ Dieser Listener kann mit der Funktion ``addEnumerateListener()`` hinzugefügt werde.
+ Ein hinzugefügter Listener kann mit der Funktion ``removeEnumerateListener()`` wieder
+ entfernt werden.
 
  .. java:function:: public void enumerate(String uid, String connectedUid, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
   :noindex:
@@ -176,7 +183,12 @@ werden können werden im Folgenden beschrieben.
 
   Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
 
+
 .. java:function:: public class IPConnection.ConnectedListener()
+
+ Dieser Listener kann mit der Funktion ``addConnectedListener()`` hinzugefügt werde.
+ Ein hinzugefügter Listener kann mit der Funktion ``removeConnectedListener()`` wieder
+ entfernt werden.
 
  .. java:function:: public void connected(short connectReason)
   :noindex:
@@ -191,6 +203,10 @@ werden können werden im Folgenden beschrieben.
 
 
 .. java:function:: public class IPConnection.DisconnectedListener()
+
+ Dieser Listener kann mit der Funktion ``addDisconnectedListener()`` hinzugefügt werde.
+ Ein hinzugefügter Listener kann mit der Funktion ``removeDisconnectedListener()`` wieder
+ entfernt werden.
 
  .. java:function:: public void disconnected(short disconnectReason)
   :noindex:

@@ -12,7 +12,7 @@ public class Example {
 		ipcon.connect(host, port);
 
 		// Register enumerate listener and print incoming information
-		ipcon.addListener(new IPConnection.EnumerateListener() {
+		ipcon.addEnumerateListener(new IPConnection.EnumerateListener() {
 			public void enumerate(String uid, String connectedUid, char position,
 			                      short[] hardwareVersion, short[] firmwareVersion,
 			                      int deviceIdentifier, short enumerationType) {

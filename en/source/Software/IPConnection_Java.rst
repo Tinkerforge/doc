@@ -120,22 +120,27 @@ Listeners
 ^^^^^^^^^
 
 Listeners can be registered to be notified about events. The registration is
-done with the :java:func:`addListener <IPConnection::addListener>` function of
-the IPConnection object. The parameter is a listener class object, for example:
+done with "addListener" functions of the IPConnection object.
+
+The parameter is a listener class object, for example:
 
 .. code-block:: java
 
-    ipcon.addListener(new IPConnection.ExampleListener() {
+    ipcon.addExampleListener(new IPConnection.ExampleListener() {
         public void property(int value) {
             System.out.println("Value: " + value);
         }
     });
 
 The available listener classes with inherent methods to be overwritten
-are described below.
+are described below. It is possible to add several listeners and
+to remove them with the corresponding "removeExampleListener" function.
 
 
 .. java:function:: public class IPConnection.EnumerateListener()
+
+ This listener can be added with the ``addEnumerateListener()`` function.
+ An added listener can be removed with the ``removeEnumerateListener()`` function.
 
  .. java:function:: public void enumerate(String uid, String connectedUid, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
   :noindex:
@@ -173,7 +178,11 @@ are described below.
 
   The device identifiers can be found :ref:`here <device_identifier>`.
 
+
 .. java:function:: public class IPConnection.ConnectedListener()
+
+ This listener can be added with the ``addConnectedListener()`` function.
+ An added listener can be removed with the ``removeConnectedListener()`` function.
 
  .. java:function:: public void connected(short connectReason)
   :noindex:
@@ -188,6 +197,9 @@ are described below.
 
 
 .. java:function:: public class IPConnection.DisconnectedListener()
+
+ This listener can be added with the ``addDisconnectedListener()`` function.
+ An added listener can be removed with the ``removeDisconnectedListener()`` function.
 
  .. java:function:: public void disconnected(short disconnectReason)
   :noindex:
