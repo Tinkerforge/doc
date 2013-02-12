@@ -372,7 +372,7 @@ def fill_dicts():
     tools = [('Brick Daemon', 'brickd'),
              ('Brick Viewer', 'brickv')]
 
-                # display,  uri
+                # display,  uri      is_language
     bindings = [('Modbus', 'modbus', False),
                 ('TCP/IP', 'tcpip',  False),
                 ('C/C++',  'c',      True),
@@ -511,6 +511,28 @@ def get_firmware_versions(url, prefix):
 
     return []
 
+def make_index_table_ipcon():
+    table_head = """
+.. container:: indextable
+
+ .. csv-table::
+  :delim: |
+
+"""
+    row_head = '  * :ref:`IP Connection <api_bindings_ip_connection>` | '
+    row_cell_ipcon = ':ref:`{0} <ipcon_{1}>`'
+    row_cell_llproto = ':ref:`{0} <llproto_{1}_api>`'
+    #* :ref:`IP Connection <api_bindings_ip_connection>` | :ref:`Modbus <llproto_modbus_api>`, :ref:`TCP/IP <llproto_tcpip_api>`, :ref:`C/C++ <ipcon_c>`, :ref:`C# <ipcon_csharp>`, :ref:`Delphi <ipcon_delphi>`, :ref:`Java <ipcon_java>`, :ref:`PHP <ipcon_php>`, :ref:`Python <ipcon_python>`, :ref:`Ruby <ipcon_ruby>`
+    cells = []
+
+    for binding in bindings:
+        if binding[2]:
+            cells.append(row_cell_ipcon.format(binding[0], binding[1]))
+        else:
+            cells.append(row_cell_llproto.format(binding[0], binding[1]))
+
+    return table_head + row_head + ', '.join(cells) + '\n'
+
 def make_index_table(devices, category):
     table_head = """
 .. container:: indextable
@@ -532,7 +554,7 @@ def make_index_table(devices, category):
         row = row_head.format(device[0], device[1]) + ', '.join(cells)
         rows.append(row)
 
-    return table_head + '\n'.join(rows)
+    return table_head + '\n'.join(rows) + '\n'
 
 def make_product_overview_table(devices, category, name_width,
                                 description_width, has_bindings):
@@ -560,7 +582,7 @@ def make_product_overview_table(devices, category, name_width,
         row = row_head.format(device[0], device[1], device[3]) + ', '.join(cells)
         rows.append(row)
 
-    return table_head + '\n'.join(rows)
+    return table_head + '\n'.join(rows) + '\n'
 
 def make_download_tools_table():
     source_code = download_tools_source_code[lang]
@@ -593,7 +615,7 @@ def make_download_tools_table():
 
         rows.append(row_cell.format(tool[0], tool[1], source_code, *linux_versions[-1]))
 
-    return table_head + '\n'.join(rows)
+    return table_head + '\n'.join(rows) + '\n'
 
 def make_download_bindings_table():
     table_head = download_bindings_table_head[lang]
@@ -609,7 +631,7 @@ def make_download_bindings_table():
             else:
                 rows.append(row_cell.format(binding[0], binding[1], *versions[-1]))
 
-    return table_head + '\n'.join(rows)
+    return table_head + '\n'.join(rows) + '\n'
 
 def make_download_firmwares_table():
     table_head = download_firmwares_table_head[lang]
@@ -636,7 +658,7 @@ def make_download_firmwares_table():
             else:
                 bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1], bricklet[1].replace('_', '-').replace('/', '-'), *versions[-1]))
 
-    return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows))
+    return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows)) + '\n'
 
 def make_api_bindings_table():
     row = '* :ref:`{0} <ipcon_{1}>`'
@@ -646,7 +668,7 @@ def make_api_bindings_table():
         if binding[2]:
             rows.append(row.format(binding[0], binding[1]))
 
-    return '\n'.join(rows)
+    return '\n'.join(rows) + '\n'
 
 def make_source_code_gits_table():
     table_head = source_code_gits_table_head[lang]
@@ -666,7 +688,7 @@ def make_source_code_gits_table():
     for extension in extensions:
         extension_rows.append(extension_row_cell.format(extension[0], extension[1].replace('_', '-').replace('/', '-')))
 
-    return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows))
+    return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows)) + '\n'
 
 def make_hlpi_table(device, category):
     table_head = hlpi_table_head[lang]
@@ -680,7 +702,7 @@ def make_hlpi_table(device, category):
         else:
             rows.append(row.format(binding[0], device[1], category, binding[1]))
 
-    return table_head + '\n'.join(rows)
+    return table_head + '\n'.join(rows) + '\n'
 
 def generate(path):
     global lang
@@ -694,6 +716,9 @@ def generate(path):
         sys.exit(1)
 
     fill_dicts()
+
+    print('Generating index_ipcon.table')
+    file(os.path.join(path, 'source', 'index_ipcon.table'), 'wb').write(make_index_table_ipcon())
 
     print('Generating index_bricks.table')
     file(os.path.join(path, 'source', 'index_bricks.table'), 'wb').write(make_index_table(bricks, 'brick'))
