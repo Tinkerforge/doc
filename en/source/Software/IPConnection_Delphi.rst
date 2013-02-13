@@ -68,7 +68,7 @@ Basic Functions
  Extension.
 
 
-.. delphi:function:: procedure TIPConnection.GetConnectionState()
+.. delphi:function:: function TIPConnection.GetConnectionState(): byte
 
  Can return the following states:
 

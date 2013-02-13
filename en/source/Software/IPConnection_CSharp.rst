@@ -96,7 +96,7 @@ Basic Functions
 
 .. csharp:function:: public int IPConnection::GetTimeout()
 
- Returns the timeout as set by :csharp:func:`SetTimeout <IPConnection::SetTimeout>`.
+ Returns the timeout as set by :csharp:func:`SetTimeout() <IPConnection::SetTimeout>`.
 
 
 .. csharp:function:: public void IPConnection::Enumerate()
@@ -107,7 +107,7 @@ Basic Functions
 
 .. csharp:function:: public void IPConnection::Wait()
 
- Stops the current thread until :csharp:func:`Unwait <IPConnection::Unwait>`
+ Stops the current thread until :csharp:func:`Unwait() <IPConnection::Unwait>`
  is called.
 
  This is useful if you rely solely on callbacks for events, if you want to
@@ -118,7 +118,7 @@ Basic Functions
 
 .. csharp:function:: public void IPConnection::Unwait()
 
- Unwaits the thread previously stopped by :csharp:func:`Wait <IPConnection::Wait>`
+ Unwaits the thread previously stopped by :csharp:func:`Wait() <IPConnection::Wait>`
 
  Wait and unwait act in the same way as require and release of a semaphore.
 
@@ -175,6 +175,7 @@ The available events are described below.
  (as is done in Brick Viewer).
 
  The device identifiers can be found :ref:`here <device_identifier>`.
+
 
 .. csharp:function:: public event IPConnection::Connected(IPConnection sender, short connectReason)
 

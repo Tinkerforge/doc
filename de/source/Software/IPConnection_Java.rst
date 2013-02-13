@@ -98,7 +98,7 @@ Grundfunktionen
 
 .. java:function:: public int IPConnection::getTimeout()
 
- Gibt den Timeout zurück, wie er von :java:func:`setTimeout <IPConnection::setTimeout>`
+ Gibt den Timeout zurück, wie er von :java:func:`setTimeout() <IPConnection::setTimeout>`
  gesetzt wurde.
 
 

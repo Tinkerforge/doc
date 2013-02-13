@@ -69,7 +69,7 @@ Basic Functions
 
 .. py:function:: IPConnection.get_connection_state()
 
- :rtype: None
+ :rtype: int
 
  Can return the following states:
 
@@ -114,7 +114,7 @@ Basic Functions
 
  :rtype: float
 
- Returns the timeout as set by :py:func:`set_timeout <IPConnection.set_timeout>`.
+ Returns the timeout as set by :py:func:`set_timeout() <IPConnection.set_timeout>`.
 
 
 .. py:function:: IPConnection.enumerate()
@@ -129,7 +129,7 @@ Basic Functions
 
  :rtype: None
 
- Stops the current thread until :py:func:`unwait <IPConnection.unwait>`
+ Stops the current thread until :py:func:`unwait() <IPConnection.unwait>`
  is called.
 
  This is useful if you rely solely on callbacks for events, if you want to
@@ -142,7 +142,7 @@ Basic Functions
 
  :rtype: None
 
- Unwaits the thread previously stopped by :py:func:`wait <IPConnection.wait>`
+ Unwaits the thread previously stopped by :py:func:`wait() <IPConnection.wait>`
 
  Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
 
@@ -166,7 +166,7 @@ Callbacks
 ^^^^^^^^^
 
 Callbacks can be registered to be notified about events. The registration is
-done with the :py:func:`register_callback <IPConnection.register_callback>`
+done with the :py:func:`register_callback() <IPConnection.register_callback>`
 function. The first parameter is the callback ID and the second
 parameter the callback function:
 
@@ -224,9 +224,10 @@ described below.
 
  The device identifiers can be found :ref:`here <device_identifier>`.
 
+
 .. py:attribute:: IPConnection.CALLBACK_CONNECTED
 
- :param reason: int
+ :param connect_reason: int
 
  This callback is called whenever the IP Connection is connected, possible
  reasons are:
@@ -239,7 +240,7 @@ described below.
 
 .. py:attribute:: IPConnection.CALLBACK_DISCONNECTED
 
- :param reason: int
+ :param disconnect_reason: int
 
  This callback is called whenever the IP Connection is disconnected, possible
  reasons are:

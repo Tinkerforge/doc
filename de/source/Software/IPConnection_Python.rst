@@ -70,7 +70,7 @@ Grundfunktionen
 
 .. py:function:: IPConnection.get_connection_state()
 
- :rtype: None
+ :rtype: int
 
  Kann die folgenden Zustände zurückgeben:
 
@@ -96,6 +96,8 @@ Grundfunktionen
 
 .. py:function:: IPConnection.get_auto_reconnect()
 
+ :rtype: bool
+
  Gibt *True* zurück wenn die Wiederverbindung aktiviert ist und *False* sonst.
 
 
@@ -114,7 +116,7 @@ Grundfunktionen
 
  :rtype: float
 
- Gibt den Timeout zurück, wie er von :py:func:`set_timeout
+ Gibt den Timeout zurück, wie er von :py:func:`set_timeout()
  <IPConnection.set_timeout>` gesetzt wurde.
 
 
@@ -130,7 +132,7 @@ Grundfunktionen
 
  :rtype: None
 
- Hält den aktuellen Thread an bis :py:func:`unwait <IPConnection.unwait>`
+ Hält den aktuellen Thread an bis :py:func:`unwait() <IPConnection.unwait>`
  aufgerufen wird.
 
  Dies ist nützlich falls ausschließlich auf Callbacks reagiert werden soll oder
@@ -145,7 +147,7 @@ Grundfunktionen
 
  :rtype: None
 
- Startet einen Thread der vorher mit :py:func:`wait <IPConnection.wait>`
+ Startet einen Thread der vorher mit :py:func:`wait() <IPConnection.wait>`
  angehalten wurde wieder.
 
  Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer
@@ -171,7 +173,7 @@ Callbacks
 ^^^^^^^^^
 
 Callbacks können registriert werden um über Ereignisse informiert zu werden.
-Die Registrierung kann mit der Funktion :py:func:`register_callback
+Die Registrierung kann mit der Funktion :py:func:`register_callback()
 <IPConnection.register_callback>` durchgeführt werden. Der erste Parameter
 ist der Callback ID und der zweite die Callback Funktion:
 
@@ -184,6 +186,7 @@ ist der Callback ID und der zweite die Callback Funktion:
 
 Die verfügbaren Konstanten mit der dazugehörigen Parameteranzahl und -typen
 werden weiter unten beschrieben.
+
 
 .. py:attribute:: IPConnection.CALLBACK_ENUMERATE
 
@@ -226,6 +229,7 @@ werden weiter unten beschrieben.
  zu implementieren (wie es im Brick Viewer geschieht)
 
  Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
+
 
 .. py:attribute:: IPConnection.CALLBACK_CONNECTED
 

@@ -80,7 +80,7 @@ Basic Functions
 
 .. php:function:: int IPConnection::getTimeout()
 
- Returns the timeout as set by :php:func:`setTimeout <IPConnection::setTimeout>`.
+ Returns the timeout as set by :php:func:`setTimeout() <IPConnection::setTimeout>`.
 
 
 .. php:function:: void IPConnection::enumerate()
@@ -115,7 +115,7 @@ Callbacks
 ^^^^^^^^^
 
 Callbacks can be registered to be notified about events. The registration is
-done with the :php:func:`registerCallback <IPConnection::registerCallback>`
+done with the :php:func:`registerCallback() <IPConnection::registerCallback>`
 function. The parameters consist of the callback ID, the callback function and
 optional user data:
 

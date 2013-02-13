@@ -69,7 +69,7 @@ Grundfunktionen
  Extension.
 
 
-.. delphi:function:: procedure TIPConnection.GetConnectionState()
+.. delphi:function:: function TIPConnection.GetConnectionState(): byte
 
  Kann die folgenden Zustände zurückgeben:
 
@@ -115,7 +115,7 @@ Grundfunktionen
  einem Enumerate Callback antworten.
 
 
-.. delphi:function:: function TIPConnection.Wait()
+.. delphi:function:: procedure TIPConnection.Wait()
 
  Hält den aktuellen Thread an bis :delphi:func:`TIPConnection.Unwait`
  aufgerufen wird.
@@ -128,7 +128,7 @@ Grundfunktionen
  Semaphore.
 
 
-.. delphi:function:: function TIPConnection.Unwait()
+.. delphi:function:: procedure TIPConnection.Unwait()
 
  Startet einen Thread der vorher mit :delphi:func:`TIPConnection.Wait`
  angehalten wurde wieder.
