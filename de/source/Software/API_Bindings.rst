@@ -285,15 +285,15 @@ aufgerufen werden (1. Windows und 2. Linux/Mac OS X (Mono))::
 Alternativ können die Beispiele auch in einer C# Entwicklungsumgebung deiner
 Wahl verwendet werden (wie Visual Studio oder Mono Develop).
 
-CLI Konformität
+CLS Konformität
 """""""""""""""
 
-Seit Version 2.0.0 sind die C# Bindings `Common Language Infrastructure
-<http://de.wikipedia.org/wiki/Common_Language_Infrastructure>`__ konform.
-Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
+Seit Version 2.0.0 sind die C# Bindings konform zur `Common Language Specification
+<http://de.wikipedia.org/wiki/Common_Language_Specification>`__.
+Dies erlaubt es diese Bindings mit allen `CLI/.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden.
 Für :ref:`Visual Basic .NET <api_bindings_vbnet>` stehen gesondert
-Beispielcode und Dokumentation zur Verfügung.
+Beispielcode und Dokumentation zur Verfügung um dies zu demonstrieren.
 
 
 .. _api_bindings_csharp_windows_phone:
@@ -845,8 +845,8 @@ Visual Basic .NET
 **Voraussetzungen**: Visual Basic 2005 (VB 8.0) oder neuer, oder Mono 1.2.3 oder neuer
 
 Die Visual Basic .NET Bindings und die :ref:`C# Bindings <api_bindings_csharp>`
-sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLI
-<http://de.wikipedia.org/wiki/Common_Language_Infrastructure>`__-konform.
+sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLS
+<http://de.wikipedia.org/wiki/Common_Language_Specification>`__-konform.
 Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. Visual Basic .NET.

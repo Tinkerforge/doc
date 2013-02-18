@@ -283,15 +283,15 @@ In this folder we can now call the C# compiler with the following parameters
 Or, alternatively add the DLL and the Example in an C# development environment
 of your choice (such as Visual Studio or Mono Develop).
 
-CLI Compliance
+CLS Compliance
 """"""""""""""
 
-Since version 2.0.0 the C# bindings are `Common Language Infrastructure
-<http://en.wikipedia.org/wiki/Common_Language_Infrastructure>`__
+Since version 2.0.0 the C# bindings are `Common Language Specification
+<http://en.wikipedia.org/wiki/Common_Language_Specification>`__
 compliant. This allows to use them with all `CLI/.NET compatible languages
 <http://en.wikipedia.org/wiki/List_of_CLI_languages>`__.
 For :ref:`Visual Basic .NET <api_bindings_vbnet>` we provide dedicated
-example code and documentation.
+example code and documentation to demonstrate this.
 
 
 .. _api_bindings_csharp_windows_phone:
@@ -828,8 +828,8 @@ Visual Basic .NET
 
 The Visual Basic .NET bindings are the same as the :ref:`C# bindings
 <api_bindings_csharp>`. Since version 2.0.0 the C# bindings are
-`CLI <http://en.wikipedia.org/wiki/Common_Language_Infrastructure>`__
-compliant. This allows to use them with all `CLI compatible languages
+`CLS <http://en.wikipedia.org/wiki/Common_Language_Specification>`__
+compliant. This allows to use them with all `CLI/.NET compatible languages
 <http://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
 Visual Basic .NET.
 
