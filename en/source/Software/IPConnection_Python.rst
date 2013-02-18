@@ -20,7 +20,7 @@ Example
 
 The example code below is public domain.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/example.py>`__
+`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.py>`__
 
 .. literalinclude:: example.py
  :language: python

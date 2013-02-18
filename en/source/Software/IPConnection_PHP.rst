@@ -20,7 +20,7 @@ Example
 
 The example code below is public domain.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/Example.php>`__
+`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.php>`__
 
 .. literalinclude:: Example.php
  :language: php

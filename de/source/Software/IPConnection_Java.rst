@@ -20,7 +20,7 @@ Beispiel
 
 Der folgende Beispielcode ist Public Domain.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/Example.java>`__
+`Download <https://github.com/Tinkerforge/doc/raw/master/de/source/Software/Example.java>`__
 
 .. literalinclude:: Example.java
  :language: java

@@ -20,7 +20,7 @@ Example
 
 The example code below is public domain.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/source/Software/example.rb>`__
+`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.pas>`__
 
 .. literalinclude:: Example.pas
  :language: delphi
