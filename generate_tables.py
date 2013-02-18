@@ -381,7 +381,8 @@ def fill_dicts():
                 ('Java',   'java',   True),
                 ('PHP',    'php',    True),
                 ('Python', 'python', True),
-                ('Ruby',   'ruby',   True)]
+                ('Ruby',   'ruby',   True),
+                ('VB.NET', 'vbnet',  True)]
 
               # display,   uri,      bindings, description
     bricks = [('DC',      'dc',      bindings, brick_descriptions['dc'][lang]),

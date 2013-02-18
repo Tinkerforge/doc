@@ -30,7 +30,8 @@ extensions = ['sphinx.ext.pngmath',
               'sphinxextra.phpdomain',
               'sphinxextra.rubydomain',
               'sphinxextra.modbusdomain',
-              'sphinxextra.tcpipdomain']
+              'sphinxextra.tcpipdomain',
+              'sphinxextra.vbnetdomain']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

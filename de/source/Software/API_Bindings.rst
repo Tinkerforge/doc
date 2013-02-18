@@ -285,6 +285,16 @@ aufgerufen werden (1. Windows und 2. Linux/Mac OS X (Mono))::
 Alternativ können die Beispiele auch in einer C# Entwicklungsumgebung deiner
 Wahl verwendet werden (wie Visual Studio oder Mono Develop).
 
+CLI Konformität
+"""""""""""""""
+
+Seit Version 2.0.0 sind die C# Bindings `Common Language Infrastructure
+<http://de.wikipedia.org/wiki/Common_Language_Infrastructure>`__ konform.
+Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
+<http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden.
+Für :ref:`Visual Basic .NET <api_bindings_vbnet>` stehen gesondert
+Beispielcode und Dokumentation zur Verfügung.
+
 
 .. _api_bindings_csharp_windows_phone:
 
@@ -428,7 +438,7 @@ Lazarus
 """""""
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit dem Free
-Pascal Compiler (FPC) den Lazarus verwendet unter Linux kompilieren. Dafür
+Pascal Compiler (FPC) kompilieren. FPC ist Teil der Lazarus IDE. Dafür
 müssen die IP Connection (``Base58.pas``, ``BlockingQueue.pas``, ``Device.pas``,
 ``IPConnection.pas``, ``LEConverter.pas`` und ``TimedSemaphore.pas``) und die
 Stepper Brick Bindings (``BrickStepper.pas``) vom ``bindings/`` Ordner sowie
@@ -774,8 +784,7 @@ Ruby
 
 **Voraussetzungen**: Ruby 1.9 oder neuer
 
-
-Die Python Bindings bestehen aus einem Ruby GEM mit den Bindings für alle
+Die Ruby Bindings bestehen aus einem Ruby GEM mit den Bindings für alle
 Tinkerforge Bricks und Bricklets (``tinkerforge.gem``), dem Quelltext des GEMs
 (in ``source/``) und allen verfügbaren Ruby Beispielen (in ``examples/``).
 
@@ -826,3 +835,96 @@ muss dort nun dies stehen:
  require 'brick_stepper'
 
 Jetzt kann das Beispiel wieder ausgeführt werden.
+
+
+.. _api_bindings_vbnet:
+
+Visual Basic .NET
+^^^^^^^^^^^^^^^^^
+
+**Voraussetzungen**: Visual Basic 2005 (VB 8.0) oder neuer, oder Mono 1.2.3 oder neuer
+
+Die Visual Basic .NET Bindings und die :ref:`C# Bindings <api_bindings_csharp>`
+sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLI
+<http://de.wikipedia.org/wiki/Common_Language_Infrastructure>`__-konform.
+Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
+<http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
+z.B. Visual Basic .NET.
+
+Die Bindings bestehen aus einer Bibliothek (.dll) für alle Tinkerforge Bricks
+und Bricklets (``Tinkerforge.dll``), dem C# Quelltext der DLL (in ``source/``)
+und allen verfügbaren Visual Basic .NET Beispielen (in ``examples/``).
+
+MonoDevelop
+"""""""""""
+
+Am Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit dem
+Visual Basic .NET Compiler (VBNC) kompilieren, der Teil von Mono ist. Dazu muss
+als erstes ein neues Visual Basic .NET Projekt in MonoDevelop erstellt werden,
+klicke:
+
+* Datei
+* Neu
+* Projektmappe...
+* Wähle "VBNet"
+* Wähle "Konsolenprojekt"
+* Wähle einen Name (e.g. ExampleConfiguration)
+* Klicke Vor
+* Klicke OK
+
+MonoDevelop sollte jetzt einen ``Application.vb`` Datei in seinem Editor
+anzeigen. Ersetze deren Inhalt durch dem Inhalt von
+``examples/Brick/Stepper/ExampleConfiguration.vb``.
+
+Jetzt muss noch ``Tinkerforge.dll`` dem Projekt als Verweis hinzugefügt werden:
+
+* Rechtsklick auf Verweise im Projektmappen Explorer
+* Verweise bearbeiten...
+* Klicke den .NET Assembly Tab an
+* Wähle ``Tinkerforge.dll`` aus
+* Klicke Hinzufügen
+
+Das Projekt ist jetzt bereit für einen Test, klicke:
+
+* Ausführen
+* Ausführen
+
+Visual Studio
+"""""""""""""
+
+Am Beispiel werden wir das Stepper Brick Konfigurationsbeispiel in Microsoft
+Visual Basic 2010 kompilieren. Dazu muss als erstes ein neues Visual Basic
+erstellt werden, klicke:
+
+* Datei
+* Neues Projekt...
+* Wähle "Visual Basic"
+* Wähle "Console Application"
+* Wähle einen Name (e.g. ExampleConfiguration)
+* Klicke OK
+
+Visual Studio sollte jetzt einen ``Module1.vb`` Datei in seinem Editor
+anzeigen. Ersetze deren Inhalt durch dem Inhalt von
+``examples\Brick\Stepper\ExampleConfiguration.vb``.
+
+Jetzt muss noch ``Tinkerforge.dll`` dem Projekt als Verweis hinzugefügt werden:
+
+* Rechtsklick auf das Projekt im Projektmappen-Explorer
+* Verweis hinzufügen...
+* Klicke den Durchsuchen Tab an
+* Wähle ``Tinkerforge.dll`` aus
+* Klicke OK
+
+Bevor das Projekt getestet werden kann muss Visual Studio wissen was das
+richtige Startobjekt ist:
+
+* Rechtsklick auf das Projekt im Projektmappen-Explorer
+* Eigenschaften
+* Klicke den Anwendung Tab an
+* Wähle "Sub Main" als Startobjekt
+* Klicke Save
+
+Das Projekt ist jetzt bereit für einen Test, klicke:
+
+* Debuggen
+* Debugging starten

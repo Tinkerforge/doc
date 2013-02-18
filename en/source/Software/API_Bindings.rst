@@ -283,6 +283,16 @@ In this folder we can now call the C# compiler with the following parameters
 Or, alternatively add the DLL and the Example in an C# development environment
 of your choice (such as Visual Studio or Mono Develop).
 
+CLI Compliance
+""""""""""""""
+
+Since version 2.0.0 the C# bindings are `Common Language Infrastructure
+<http://en.wikipedia.org/wiki/Common_Language_Infrastructure>`__
+compliant. This allows to use them with all `CLI/.NET compatible languages
+<http://en.wikipedia.org/wiki/List_of_CLI_languages>`__.
+For :ref:`Visual Basic .NET <api_bindings_vbnet>` we provide dedicated
+example code and documentation.
+
 
 .. _api_bindings_csharp_windows_phone:
 
@@ -318,7 +328,7 @@ Start a new project by clicking on:
 * Choose Target as "Windows Phone OS 7.1"
 * Click OK
 
-* Right click on project in Solution Explorer
+* Right click on the project in Solution Explorer
 * Add
 * New Folder, choose name "Tinkerforge"
 * Right click on Tinkerforge
@@ -423,7 +433,7 @@ Lazarus
 """""""
 
 As an example we will compile the Stepper Brick configuration example with
-the Free Pascal Compiler (FPC) that comes with the Lazarus. For that we
+the Free Pascal Compiler (FPC) that comes with the Lazarus IDE. For that we
 have to copy the IP Connection (``Base58.pas``, ``BlockingQueue.pas``, ``Device.pas``,
 ``IPConnection.pas``, ``LEConverter.pas`` and ``TimedSemaphore.pas``) and the Stepper
 Brick bindings (``BrickStepper.pas``) from the ``bindings/`` folder as well as the
@@ -807,3 +817,92 @@ we use:
  require 'brick_stepper'
 
 After that, the example can be executed again.
+
+
+.. _api_bindings_vbnet:
+
+Visual Basic .NET
+^^^^^^^^^^^^^^^^^
+
+**Requirements**: Visual Basic 2005 (VB 8.0) or newer, or Mono 1.2.3 or newer
+
+The Visual Basic .NET bindings are the same as the :ref:`C# bindings
+<api_bindings_csharp>`. Since version 2.0.0 the C# bindings are
+`CLI <http://en.wikipedia.org/wiki/Common_Language_Infrastructure>`__
+compliant. This allows to use them with all `CLI compatible languages
+<http://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
+Visual Basic .NET.
+
+The bindings consist of a library (.dll) for all Tinkerforge
+Bricks and Bricklets (``Tinkerforge.dll``), the C# source of the DLL
+(in ``source/``) and all available Visual Basic .NET examples (in ``examples/``).
+
+MonoDevelop
+"""""""""""
+
+As an example we will compile the Stepper Brick configuration example with
+the Visual Basic .NET Compiler (VBNC) that comes with Mono. Create a new
+Visual Basic .NET project in MonoDevelop by clicking:
+
+* File
+* New
+* Solution...
+* Choose "VBNet"
+* Choose "Console Project"
+* Choose a name (e.g. ExampleConfiguration)
+* Click Forward
+* Click OK
+
+MonoDevelop should show an ``Application.vb`` file in its editor. Replace its
+content with the content from ``examples/Brick/Stepper/ExampleConfiguration.vb``.
+
+Now add ``Tinkerforge.dll`` as a reference to the project:
+
+* Right click on References in Solution Explorer
+* Edit References...
+* Click on .Net Assembly tab
+* Select ``Tinkerforge.dll``
+* Click Add
+
+The project is now ready for a test, click:
+
+* Run
+* Run
+
+Visual Studio
+"""""""""""""
+
+As an example we will compile the Stepper Brick configuration example with
+Microsoft Visual Basic 2010. Create a new Visual Basic project by clicking:
+
+* File
+* New Project...
+* Choose "Visual Basic"
+* Choose "Console Application"
+* Choose a name (e.g. ExampleConfiguration)
+* Click OK
+
+Visual Studio should show an ``Module1.vb`` file in its editor. Replace its
+content with the content from ``examples\Brick\Stepper\ExampleConfiguration.vb``.
+
+Now add ``Tinkerforge.dll`` as a reference to the project:
+
+* Right click on the project in Solution Explorer
+* Add References...
+* Click on Browse tab
+* Select ``Tinkerforge.dll``
+* Click OK
+
+Before the project can be tested Visual Studio needs to know the correct start
+object:
+
+* Right click on the project in Solution Explorer
+* Properties
+* Click on Application tab
+* Select "Sub Main" as start object
+* Click Save
+
+The project is now ready for a test, click:
+
+* Debug
+* Start Debugging
