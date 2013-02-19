@@ -517,6 +517,7 @@ def make_index_table_ipcon():
 .. container:: indextable
 
  .. csv-table::
+  :widths: 30, 60
   :delim: |
 
 """
@@ -539,6 +540,7 @@ def make_index_table(devices, category):
 .. container:: indextable
 
  .. csv-table::
+  :widths: 30, 60
   :delim: |
 
 """
