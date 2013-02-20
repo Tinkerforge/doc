@@ -36,17 +36,7 @@ will also work)::
 
 Download and install the GCC none-eabi compiler for ARM from
 `CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__.
-There are versions of this compiler that do not produce working firmwares.
-It's recommended to only use compiler versions that are known to work correctly,
-see the following list:
-
-.. csv-table::
-   :header: "Version", "Works"
-   :widths: 25, 5
-
-   "Sourcery CodeBench Lite 2011.09-69, GCC 4.6.1", "Yes"
-   "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Yes"
-   "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "No"
+Ensure to use a :ref:`compatible compiler <compiler_compatibility>` version.
 
 Ensure that the ``bin`` folder of the CodeSourcery installation is added to the
 ``PATH`` environment variable, otherwise CMake will not be able to find the
@@ -92,7 +82,7 @@ to that, you should take a look at the source code to see how it exactly
 works.
 
 The source code for all Bricks and Bricklets can be found in the Tinkerforge
-`github account <https://github.com/Tinkerforge/>`__. In the following
+`Github account <https://github.com/Tinkerforge/>`__. In the following
 a small overview on what you have to do to compile the Joystick Bricklet
 plugin, as an example.
 
@@ -108,7 +98,8 @@ folder of the plugin (a symlink will also work)::
  git clone https://github.com/Tinkerforge/brickletlib.git
 
 Download and install the GCC none-eabi compiler for ARM from
-`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
+`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__.
+Ensure to use a :ref:`compatible compiler <compiler_compatibility>` version.
 
 Generate the Makefile in the ``software/`` folder (you will need CMake)::
 
@@ -129,3 +120,24 @@ Flash plugin on a Bricklet
 
 See :ref:`brickv_flash_plugin` in :ref:`Brick Viewer <brickv>` documentation for
 more information.
+
+
+.. _compiler_compatibility:
+
+Compiler Compatibility
+----------------------
+
+The GCC none-eabi compiler for ARM from
+`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__.
+is required.
+There are versions of this compiler that do not produce working firmwares.
+It's recommended to only use compiler versions that are known to work correctly,
+see the following list:
+
+.. csv-table::
+   :header: "Version", "Works"
+   :widths: 25, 5
+
+   "Sourcery CodeBench Lite 2011.09-69, GCC 4.6.1", "Yes"
+   "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Yes"
+   "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "No"

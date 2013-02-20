@@ -34,9 +34,11 @@ der Firmware geclont werden (ein Symlink funktioniert auch)::
  cd servo-brick/software/src/
  git clone https://github.com/Tinkerforge/bricklib.git
 
-Als Compiler wird GCC in der none-eabi Version für ARM benötigt. Lade diesen von
+Als Compiler wird GCC in der none-eabi Version für ARM benötigt. Lade eine
+passende Version von
 `CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
-herunter und installiere ihn.
+herunter und installiere diese. Dabei ist auf die :ref:`Kompatiblität
+des Compilers <compiler_compatibility>` zu achten.
 
 Erzeugt das Makefile im ``software/`` Ordner (dafür wir CMake benötigt)::
 
@@ -92,19 +94,11 @@ auch)::
  git clone https://github.com/Tinkerforge/bricklib.git
  git clone https://github.com/Tinkerforge/brickletlib.git
 
-Als Compiler wird GCC in der none-eabi Version für ARM benötigt. Lade diesen von
+Als Compiler wird GCC in der none-eabi Version für ARM benötigt. Lade eine
+passende Version von
 `CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
-herunter und installiere diese. Dabei gibt es Versionen dieses Compilers, die
-keine funktionsfähige Firmware erzeugen. Daher wird empfohlen nur Versionen zu
-verwenden von denen bekannt ist, dass sie richtig funktionieren:
-
-.. csv-table::
-   :header: "Version", "Funktioniert"
-   :widths: 25, 5
-
-   "Sourcery CodeBench Lite 2011.09-69, GCC 4.6.1", "Ja"
-   "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Ja"
-   "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "Nein"
+herunter und installiere diese. Dabei ist auf die :ref:`Kompatibilität
+des Compilers <compiler_compatibility>` zu achten.
 
 Stelle sicher, dass der ``bin`` Order der CodeSourcery Installation zur PATH
 Umgebungsvariable hinzugefügt wird, ansonsten kann CMake die nötigen
@@ -129,3 +123,23 @@ Plugin auf Bricklet flashen
 
 Siehe :ref:`brickv_flash_plugin` in der :ref:`Brick Viewer <brickv>`
 Dokumentation für weitere Informationen.
+
+
+.. _compiler_compatibility:
+
+Compilerkompatibilität
+----------------------
+
+Als Compiler wird GCC in der none-eabi Version für ARM von
+`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
+benötigt. Dabei gibt es Versionen dieses Compilers, die
+keine funktionsfähige Firmware erzeugen. Daher wird empfohlen nur Versionen zu
+verwenden von denen bekannt ist, dass sie richtig funktionieren:
+
+.. csv-table::
+   :header: "Version", "Funktioniert"
+   :widths: 25, 5
+
+   "Sourcery CodeBench Lite 2011.09-69, GCC 4.6.1", "Ja"
+   "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Ja"
+   "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "Nein"
