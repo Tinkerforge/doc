@@ -338,7 +338,7 @@ div.indextable table.docutils {
 		border-collapse: separate;
     border: none;
     margin-left: 0px;
-    width: auto;
+    width: 100%;
 }
 
 div.indextable ul {
