@@ -63,6 +63,8 @@ noch installiert werden muss (siehe unten). Nach der
 Installation muss der PC neugestartet werden.
 
 
+.. _brickd_windows_driver_installation:
+
 Treiber Installation (Windows XP, Vista, 7)
 """""""""""""""""""""""""""""""""""""""""""
 

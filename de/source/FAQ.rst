@@ -14,9 +14,9 @@ dadurch geändert. Es gibt auch kleine Änderungen in der API. Es ist
 daher notwendig, dass die Programmiersprachen Bindings, der Brick
 Daemon, der Brick Viewer und die Firmwares/Plugins der Bricks/Bricklets
 auf den neuesten Stand gebraucht werden. Alle Versionen müssen mit
-einer "2" beginnen um miteinern kompatibel zu sein.
+einer "2" beginnen um miteinander kompatibel zu sein.
 
-Eine einfache Anleitung zum massenhaften Aktualisieren gibt es
+Eine Anleitung zum Aktualisieren gibt es
 :ref:`hier <transition_1to2>`.
 
 
@@ -65,7 +65,13 @@ und muss als `Base58 <http://de.wikipedia.org/wiki/Base58>`__ kodiert sein.
 **Kurzschluss im Bricklet-Stecker**:
 
 Ein Kurzschluss kann durch leicht verbogene Beinchen im Bricklet-Stecker
-auftreten, siehe :ref:`oben <faq_brick_hot>`.
+auftreten, siehe :ref:`oben <faq_brick_hot>`. Dies gilt sowohl
+für den benutzten Brick als auch das benutzte Bricklet.
+
+**Defektes Bricklet Kabel**:
+
+Um auszuschließen, dass das Problem durch ein defektes Bricklet Kabel
+erzeugt wird, teste mit einem anderen Bricklet Kabel, sofern dies möglich ist.
 
 
 Eines meiner Bricks wird im Brick Viewer nicht angezeigt
@@ -83,6 +89,11 @@ werden.
 
 Ein Kurzschluss kann durch leicht verbogene Beinchen im Bricklet-Stecker
 auftreten, siehe :ref:`oben <faq_brick_hot>`.
+
+**Brick Treiber Installation notwendig**:
+
+Unter älteren Windows Versionen ist eine Treiberinstallation notwendig.
+Siehe :ref:`hier <brickd_windows_driver_installation>`.
 
 
 Ich bekomme Timeouts wenn ich eine Funktion aufrufe

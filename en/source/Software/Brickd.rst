@@ -61,8 +61,11 @@ Brick drivers manually (see section below). Press "OK"
 and reboot your PC.
 
 
+.. _brickd_windows_driver_installation:
+
 Driver Installation (Windows XP, Vista, 7)
 """"""""""""""""""""""""""""""""""""""""""
+
 
 Depending on your Windows version it is necessary
 to install a Brick driver. This driver needs to be installed for each of your

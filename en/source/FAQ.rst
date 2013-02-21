@@ -59,7 +59,12 @@ is unique in your System and in Base58.
 **Short circuit in Bricklet connector**:
 
 A short circuit can be caused by a slightly bent pin in the Bricklet
-connector. See :ref:`above <faq_brick_hot>`.
+connector. See :ref:`above <faq_brick_hot>`. Please take a look
+at the connector of the Brick and Bricklet.
+
+**Defect Bricklet Cable**:
+
+If possible please test with another Bricklet cable.
 
 
 One of my Bricks doesn't show up in the Brick Viewer
@@ -76,6 +81,11 @@ LEDs aren't working anymore. In this case you need to
 
 A short circuit can be caused by a slightly bent pin in the Bricklet
 connector. See :ref:`above <faq_brick_hot>`.
+
+**Brick Driver installation necessary**:
+
+Bricks need a driver installation at older Windows versions 
+to work properly. Please see `:ref:here <brickd_windows_driver_installation>`.
 
 
 I get timeouts when i call a function
