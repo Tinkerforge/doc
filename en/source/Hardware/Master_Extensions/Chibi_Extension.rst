@@ -204,10 +204,10 @@ Here is a small list of frequencies with corresponding possible channels:
  :header: "Frequency", "Possible Channels"
  :widths: 40, 60
 
- "OQPSK 868Mhz (Europe)", "0"
- "OQPSK 915Mhz (US)", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
- "OQPSK 780Mhz (China)", "0, 1, 2, 3"
- "BPSK40 915Mhz", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+ "OQPSK 868MHz (Europe)", "0"
+ "OQPSK 915MHz (US)", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+ "OQPSK 780MHz (China)", "0, 1, 2, 3"
+ "BPSK40 915MHz", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
 
 .. warning::
  The Chibi Extension is sold as an electronic component. **You** are building

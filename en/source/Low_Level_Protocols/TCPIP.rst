@@ -200,8 +200,8 @@ The hex dump of the packet looks like this::
   0000   32 13 78 d8 0e 20 08 00 11 ff 3c 00 21 ff        2.x.. ....<.!.
 
 As callbacks are spontaneously triggered you can receive their response packet at
-any time. For example between sending a request packet and reveicing the
-corrsponding response packet.
+any time. For example between sending a request packet and receiving the
+corresponding response packet.
 
 .. note::
  Using callbacks for recurring events is *always* preferred
@@ -269,7 +269,7 @@ The following functions and callbacks are supported by all devices.
    configuration and needs to be reconfigured.
  * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
    possible for USB connection). In this case only *uid* and *enumeration_type*
-   are vaild.
+   are valid.
 
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).

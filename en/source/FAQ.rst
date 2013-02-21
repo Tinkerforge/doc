@@ -72,7 +72,7 @@ One of my Bricks doesn't show up in the Brick Viewer
 
 **Brick in bootloader**:
 
-It is possible that you accidentially brought your Brick in the
+It is possible that you accidentally brought your Brick in the
 bootloader mode. You can recognize this by the fact, that the
 LEDs aren't working anymore. In this case you need to 
 :ref:`reflash the Brick firmware <brickv_flash_firmware>`.

@@ -180,7 +180,7 @@ The available callback property and their type of parameters are described below
    to be reconfigured.
  * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only possible
    for USB connection). In this case only *uid* and *enumerationType*
-   are vaild.
+   are valid.
 
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).

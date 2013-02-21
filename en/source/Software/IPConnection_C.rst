@@ -213,7 +213,7 @@ described below.
    configuration and needs to be reconfigured.
  * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
    possible for USB connection). In this case only *uid* and *enumeration_type*
-   are vaild.
+   are valid.
 
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).

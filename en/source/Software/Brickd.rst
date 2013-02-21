@@ -28,8 +28,8 @@ Installation
 Windows
 ^^^^^^^
 
-To install the Brick Deamon (Service) on a Windows, download the
-Brick Deamon .exe form :ref:`here <downloads_tools>`.
+To install the Brick Daemon (Service) on a Windows, download the
+Brick Daemon .exe form :ref:`here <downloads_tools>`.
 Click on the downloaded file, this should open the installer:
 
 .. image:: /Images/Screenshots/brickd_windows_1_small.jpg
@@ -181,7 +181,7 @@ To install Brick Daemon from source, download the source from `here
 <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
 * libusb-1.0-0-dev >= 1.0.8
-* libudev-dev >= 173 (Optional für Hotplug)
+* libudev-dev >= 173 (Optional for Hotplug)
 
 On Debian based distributions you can install the dependencies with apt-get::
 

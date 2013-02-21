@@ -127,7 +127,7 @@ WIFI Network
 
 With this Master Extension you will be able to create a wireless connection to
 a Master Brick and all of its connected Bricks and Bricklets.
-No Brick Deamon is necessary if you use this Extension.
+No Brick Daemon is necessary if you use this Extension.
 
 If you want to connect the Brick Viewer with your WIFI setup,
 you have to enter the IP of the WIFI Extension and the configured port

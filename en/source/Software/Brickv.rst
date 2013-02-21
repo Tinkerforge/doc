@@ -222,7 +222,7 @@ Flashing a Brick requires that it is connected via USB to the PC that runs the
 Brick Viewer.
 
 Before you flash a new firmware on a IMU Brick you might want to backup its
-calibarition data, because it is lost during the flashing process. This is
+calibration data, because it is lost during the flashing process. This is
 only important if you did your own calibration, because the factory calibration
 can be restored automatically during the flashing process sind Brick Viewer
 version 1.1.13.

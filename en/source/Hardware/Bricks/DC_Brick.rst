@@ -197,7 +197,7 @@ voltage above 1V is measured there.
 .. warning::
   Keep in mind that the Brick switches automatically. So e.g. if you have a stack
   and remove your external battery connected to the Brick it will use the 
-  stack powersupply. If you then enable the motor it is driver with the voltage
+  stack power supply. If you then enable the motor it is driver with the voltage
   supplied by the stack which might be higher then your battery voltage
   
 

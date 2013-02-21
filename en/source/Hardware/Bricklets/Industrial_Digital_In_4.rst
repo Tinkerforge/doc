@@ -69,7 +69,7 @@ ground levels can not be connected.
 
 If you need more then four inputs, you can add another Industrial Digital In 4
 Bricklet and group these together. If you do this, you have eight inputs which can
-read simultaneously in contrast to read both bricklets successively.
+read simultaneously in contrast to read both Bricklets successively.
 Grouping is only possible for Bricklets connected to one Brick.
 Thus you can group up to four Industrial Bricklets on a Master Brick or
 two on other Bricks.
