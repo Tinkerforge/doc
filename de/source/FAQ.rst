@@ -71,7 +71,7 @@ für den benutzten Brick als auch das benutzte Bricklet.
 **Defektes Bricklet Kabel**:
 
 Um auszuschließen, dass das Problem durch ein defektes Bricklet Kabel
-erzeugt wird, teste mit einem anderen Bricklet Kabel, sofern dies möglich ist.
+erzeugt wird, teste mit einem anderen Bricklet Kabel. Sofern dies möglich ist.
 
 
 Eines meiner Bricks wird im Brick Viewer nicht angezeigt

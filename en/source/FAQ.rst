@@ -85,7 +85,7 @@ connector. See :ref:`above <faq_brick_hot>`.
 **Brick Driver installation necessary**:
 
 Bricks need a driver installation at older Windows versions 
-to work properly. Please see `:ref:here <brickd_windows_driver_installation>`.
+to work properly. Please see :ref:`here <brickd_windows_driver_installation>`.
 
 
 I get timeouts when i call a function
