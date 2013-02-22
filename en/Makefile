@@ -43,6 +43,16 @@ html:
 	sed -e "s|'doc'|'downloads'|" build/html/Downloads.html > build/html/Downloads.htmltmp
 	mv build/html/Downloads.htmltmp build/html/Downloads.html
 
+
+fasthtml:
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	@echo
+	@echo "Changing Source_Code.html from doc to downloads"
+	sed -e "s|'doc'|'downloads'|" build/html/Downloads.html > build/html/Downloads.htmltmp
+	mv build/html/Downloads.htmltmp build/html/Downloads.html
+
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
 	@echo
