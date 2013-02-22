@@ -181,7 +181,7 @@ C#
 General:
 
 There are no unsigned data types used anymore. This was necessary to make
-the C# bindings CLS complient (i.e. they can be easily used from other 
+the C# bindings CLS compliant (i.e. they can be easily used from other 
 .NET languages). All unsigned data types have been replaced by the next
 higher signed data type.
 

@@ -224,7 +224,7 @@ Brick Viewer.
 Before you flash a new firmware on a IMU Brick you might want to backup its
 calibration data, because it is lost during the flashing process. This is
 only important if you did your own calibration, because the factory calibration
-can be restored automatically during the flashing process sind Brick Viewer
+can be restored automatically during the flashing process since Brick Viewer
 version 1.1.13.
 
 First bring the Brick into the bootloader modus. Press and hold the "Erase"
