@@ -297,7 +297,7 @@ Firmware als lokale Datei über den "Browse..." Knopf ausgewählt werden.
 Bricklet Plugin Flashing
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dr Brick Viewer kann auch Plugins auf Bricklets flashen. Die
+Der Brick Viewer kann auch Plugins auf Bricklets flashen. Die
 jeweils neuste Pluginversion wird dabei automatisch vom Brick Viewer
 ermittelt und heruntergeladen. Diese können aber auch manuell im
 :ref:`Downloadbereich <downloads_firmwares_plugins>` heruntergeladen werden.

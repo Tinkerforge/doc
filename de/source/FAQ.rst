@@ -3,7 +3,7 @@
 FAQ
 ===
 
-Ich habe etwas aktualisiert und jetzt funktionierts nicht mehr
+Ich habe etwas aktualisiert und jetzt funktioniert es nicht mehr
 ----------------------------------------------------------------
 
 Es handelt sich vermutlich um ein Problem mit inkompatiblen Versionen.
@@ -22,8 +22,8 @@ Eine Anleitung zum Aktualisieren gibt es
 
 .. _faq_brick_hot:
 
-Mein Brick wird heiss
----------------------
+Mein Brick wird heiß
+--------------------
 
 Für gewöhnlich bedeutet dies, dass es irgendeine Art von Kurzschluss
 gibt. In den meisten Fällen handelt es sich dabei um leicht verbogene
@@ -58,7 +58,7 @@ ausprobiert?
 
 Falls das EEPROM eines Bricklets korrupt ist, kann auch die UID
 ungültig sein. Eine UID von "1" ist ungültig. Falls mit dem Brick
-Viewer eine "1" als UID von einem Bricklet gelesen weden kann, muss eine
+Viewer eine "1" als UID von einem Bricklet gelesen werden kann, muss eine
 neue UID gesetzt werden. Diese sollte im ganzen System eindeutig sein
 und muss als `Base58 <http://de.wikipedia.org/wiki/Base58>`__ kodiert sein.
 
@@ -112,7 +112,7 @@ Läuft der Brick Daemon? Dies kann man in der Liste der laufenden
 Prozesse nachsehen (zum Beispiel im Task Manager unter Windows).
 
 Falls er nicht läuft aber korrekt installiert ist, ist es möglich
-den Service (windows) oder den Daemon (Mac OS X und Linux) neuzustarten.
+den Service (Windows) oder den Daemon (Mac OS X und Linux) neuzustarten.
 Der Brick Daemon wird auch automatisch beim Rechnerneustart gestartet.
 
 **WIFI Extension**:

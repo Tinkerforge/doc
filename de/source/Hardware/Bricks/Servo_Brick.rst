@@ -184,12 +184,12 @@ Dieser kann ein- und ausgeschaltet, die zulässige
 `PWM <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Pulsweite
 eingestellt und der Winkelbereich definiert werden. Zusätzlich wird der
 Stromverbrauch des Servos angezeigt. Weiter unten finden sich vier Regler mit
-denen Position, Geschwindigkeit und Beschleunigung des Servors kontrolliert
+denen Position, Geschwindigkeit und Beschleunigung des Servos kontrolliert
 werden können. Der vierte Regler dient zur Einstellung der PWM Periode
 (siehe :ref:`Servo PWM einstellen <servo_brick_configure_servo_pwm>` für
 weiterführenden Information).
 
-Auf der rechten Seite wird die externe und die Versorgungsspannung des Staples
+Auf der rechten Seite wird die externe und die Versorgungsspannung des Stapels
 angezeigt. Darunter findet sich eine graphische Darstellung des Zustandes jedes
 Servos. Ganz unten können die Mindesteingangsspannung und die Ausgangsspannung
 eingestellt werden. Wird die Mindesteingangsspannung unterschritten wird der
@@ -215,7 +215,7 @@ Position. Es gibt aber auch Servos die nicht diesem Standard entsprechen, daher
 erlaubt der Servo Brick alle Parameter des PWM Signals zu konfigurieren.
 
 Der Standardwert für die Periode ist 19,5ms. Diese Periode funktioniert mit
-allen bisher getesteten Servors (20ms funktioniert mit einigen chinesischen
+allen bisher getesteten Servos (20ms funktioniert mit einigen chinesischen
 Servos nicht zuverlässig). Falls im Datenblatt des Servos eine Periode angeben
 ist sollte dieser Wert auch eingestellt werden. Es ist allerdings eher
 unwahrscheinlich, dass dieser Wert verändert werden muss.
@@ -239,14 +239,14 @@ Stromversorgung
 ---------------
 
 Der Servo Brick hat eine interne Stromversorgung, die es ermögliche die
-Ausgangsspannung für die Servors einzustellen. Die interne Stromversorgung
+Ausgangsspannung für die Servos einzustellen. Die interne Stromversorgung
 kann entweder über den schwarzen Stromversorgungsstecker auf der Platine
 versorgt werden oder über eine :ref:`Stromversorgung
 <product_overview_power_supplies>` die unter den Brick gesteckt wird.
 Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
 Stecker eine Spannung anliegt. Da die interne Stromversorgung einen Step-Down
 Regler verwendet muss die Eingangsspannung am schwarzen Stromversorgungsstecker
-1V höher sein als die eingestellt Ausgangsspannung für die Servors. Andernfalls
+1V höher sein als die eingestellt Ausgangsspannung für die Servos. Andernfalls
 ist ein stabiler Betrieb nicht gewährleistet.
 
 .. warning::

@@ -19,7 +19,7 @@ erklärt dann alles weitere.
 Raspberry Pi starten
 --------------------
 
-Schließe eine Tastertur, einen Bildschirm und eine Stromversorgung an das
+Schließe eine Tastatur, einen Bildschirm und eine Stromversorgung an das
 Raspberry Pi an. Sobald das Raspberry Pi mit Strom versorgt wird bootet es.
 
 Am Ende des Bootvorgangs sollte ein Anmeldeaufforderung zu sehen sein. Der

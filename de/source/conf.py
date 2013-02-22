@@ -31,7 +31,13 @@ extensions = ['sphinx.ext.pngmath',
               'sphinxextra.rubydomain',
               'sphinxextra.modbusdomain',
               'sphinxextra.tcpipdomain',
-              'sphinxextra.vbnetdomain']
+              'sphinxextra.vbnetdomain',
+              'sphinxcontrib.spelling']
+
+# Spell Check Stuff
+spelling_lang='de_DE'
+spelling_word_list_filename='good_wordlist.txt'
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

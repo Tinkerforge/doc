@@ -49,7 +49,7 @@ Protokoll Stacks (klicke `hier
 <http://freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`__
 für weitere Informationen).
 
-Daher haben wir uns dazu entschlossenden den Open Source `Chibi Wireless Stack
+Daher haben wir uns dazu entschlossen den Open Source `Chibi Wireless Stack
 <http://freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`__
 für diese Extension zu portieren. Es ist ein einfacher und kleiner Protokoll
 Stack der perfekt geeignet ist für unsere Anwendungen.
@@ -125,7 +125,7 @@ Adresse. Diese Adressen müssen innerhalb der Sendereichweite eindeutig sein.
  in mehreren Netzwerken gleichzeitig benutzt werden.
 
 Um ein Chibi Netzwerk aufzubauen muss zuerst die Chibi Extension auf einen
-Master Brick gesteck werden und der Master Brick über USB mit dem PC verbunden
+Master Brick gesteckt werden und der Master Brick über USB mit dem PC verbunden
 werden. Im Brick Viewer sollte jetzt ein Master Brick mit erkannter Chibi
 Extension angezeigt werden. Die Chibi Extension muss jetzt als Master oder
 Slave konfiguriert werden wie :ref:`hier <chibi_configuration>` beschrieben.
@@ -214,10 +214,10 @@ Hier ist eine Liste von Frequenzen und zugehörigen Kanälen:
  :header: "Frequenz", "Mögliche Kanäle"
  :widths: 40, 60
 
- "OQPSK 868Mhz (Europa)", "0"
- "OQPSK 915Mhz (US)", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
- "OQPSK 780Mhz (China)", "0, 1, 2, 3"
- "BPSK40 915Mhz", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+ "OQPSK 868MHz (Europa)", "0"
+ "OQPSK 915MHz (US)", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+ "OQPSK 780MHz (China)", "0, 1, 2, 3"
+ "BPSK40 915MHz", "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
 
 .. warning::
  Die Chibi Extension wird als elektronisches Bauteil verkauft. Es liegt in der

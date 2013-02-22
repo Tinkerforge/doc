@@ -34,7 +34,7 @@ dem Brick Daemon verbunden sein, klicke dazu auf den "Connect" Knopf des Brick
 Viewers.
 
 Der Brick Daemon bildete eine Brücke zwischen Bricks/Bricklets und den
-programmiersprachspezifischen API Bindings. Der Brick Viewer bietet eine
+programmiersprachen-spezifischen API Bindings. Der Brick Viewer bietet eine
 graphische Oberfläche für Testzwecke.
 
 Nach der Installation kann das Basteln losgehen! Schließe als erstes eine
@@ -163,7 +163,7 @@ gezeigt.
    :align: center
    :target: ../../_images/Tutorial/tutorial_1_1200.jpg
 
-Wenn der DC Brick über USB angeschloßen wird, dann taucht neben dem "DC Brick"
+Wenn der DC Brick über USB angeschlossen wird, dann taucht neben dem "DC Brick"
 Tab noch ein "Rotary Poti Bricklet" Tab im Brick Viewer auf. Wähle den "Rotary
 Poti Bricklet" Tab und drehe am Knopf des Potentiometers. Im Brick Viewer wird
 die Drehung entsprechend dargestellt.
@@ -195,7 +195,7 @@ Die **Zeilen 22-27** erstellen die IP Connection zum Brick Daemon. Die Brick und
 Bricklet Objekte werden erzeugt.
 
 Das Rotary Poti Bricklet wird so konfiguriert, das die Funktion ``cb_position``
-jedes Mal aufgerufen wird wenn sich die Position des Portentiometers ändert.
+jedes Mal aufgerufen wird wenn sich die Position des Potentiometers ändert.
 **Zeile 29** stellt diesen Callback so ein, dass er mit einer Periode von
 50ms ausgelöst wird wenn sich die Position ändert. Wenn sich die Position nicht
 ändert werden keine Callbacks ausgelöst. Dieses Vorgehen ist effizient, es wird
@@ -308,7 +308,7 @@ benötigt. Auf jeden Master Brick wird jeweils eine RS485 Extension gesteckt
 und die beiden Extensions passend miteinander verkabelt. Jetzt noch das
 Rotary Poti Bricklet an den neu zusammengesteckten Stapel anschließen.
 
-Als nächster Schritt muss jetzt jeder Stapel einzel über USB am PC angeschlossen
+Als nächster Schritt muss jetzt jeder Stapel einzelnd über USB am PC angeschlossen
 und konfiguriert werden. Die Details dazu sind in der :ref:`RS485 Dokumentation
 <rs485_configuration>` beschrieben. Wichtig ist dann noch, dass nach der
 Konfiguration der RS485 Slave vor dem RS485 Master gestartet wird.
