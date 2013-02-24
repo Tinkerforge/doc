@@ -60,7 +60,7 @@ ermöglichen die komplette Topologie des Netzwerks aus Bricks und Bricklets
 aufzustellen.
 
 Die Registrierung und das Auslösen des Enumeration Callbacks ist jetzt in zwei
-Schitte unterteilt.
+Schritte unterteilt.
 
 Dokumentation für diese Funktionen kann in der IPConnection Dokumentation
 für jede Programmiersprache gefunden werden, siehe 
