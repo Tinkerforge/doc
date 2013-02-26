@@ -88,6 +88,30 @@ Bricks need a driver installation at older Windows versions
 to work properly. Please see :ref:`here <brickd_windows_driver_installation>`.
 
 
+An Extension does not show up in the Brick Viewer
+-------------------------------------------------
+
+**Extension is below Master Brick**:
+
+Extensions have to be on top of the Master Brick. You can put other Bricks between
+the Master Brick and the Extension, but the Master Brick have to be the lowermost Brick
+(except of power supplies like Step-Down Powersupply).
+
+
+**Extension is not configured**:
+
+Connect a single Master Brick to your PC and open the Brick Viewer. 
+After the Master Brick shows up in the Brick Viewer stick the Extension on it. 
+Click on "Configure" and select Extension 0. Select the appropriate 
+Extension Type and press "Save". Now restart the Master Brick, after restart
+the Master Brick Tab should show the Extension now.
+
+.. image:: /Images/Screenshots/brickv_configure_extension_type.jpg
+   :scale: 60 %
+   :alt: Screenshot of Brickv configure extension type dialogue 
+   :align: center
+
+
 I get timeouts when i call a function
 -------------------------------------
 

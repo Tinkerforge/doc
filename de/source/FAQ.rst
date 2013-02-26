@@ -96,6 +96,32 @@ Unter älteren Windows Versionen ist eine Treiberinstallation notwendig.
 Siehe :ref:`hier <brickd_windows_driver_installation>`.
 
 
+Eine Extension wird im Brick Viewer nicht angezeigt
+---------------------------------------------------
+
+**Die Extension ist unter dem Master Brick**:
+
+Extensions müssen über Master Bricks gesteckt werden. Wird ein Stapel gebaut, so
+können andere Bricks dazwischen gesteckt werden. Das Master Brick sollte aber die 
+unterste Platine des Stapels sein. Einzige Ausnahme ist die Nutzung einer 
+Stromversorgungsplatine wie die Step-Down Powersupply.
+
+
+**Die Extension ist nicht konfiguriert**:
+
+Schließe ein einzelnes Master Brick an den PC an und öffne den Brick Viewer.
+Nachdem das Master Brick Tab angezeigt wird klicke "Configure",
+wähle Extension 0 und den Typ der Extension. Klicke "Save". Danach starte den
+Master Brick neu. Im Master Brick Tab sollte nun die gewählte Extension angezeigt 
+werden.
+
+.. image:: /Images/Screenshots/brickv_configure_extension_type.jpg
+   :scale: 60 %
+   :alt: Screenshot vom Brickv Configure Extension Type Dialog 
+   :align: center
+
+
+
 Ich bekomme Timeouts wenn ich eine Funktion aufrufe
 ---------------------------------------------------
 
