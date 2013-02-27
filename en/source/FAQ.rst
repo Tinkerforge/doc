@@ -95,7 +95,7 @@ An Extension does not show up in the Brick Viewer
 
 Extensions have to be on top of the Master Brick. You can put other Bricks between
 the Master Brick and the Extension, but the Master Brick have to be the lowermost Brick
-(except of power supplies like Step-Down Powersupply).
+(except of power supplies like Step-Down Power Supply).
 
 
 **Extension is not configured**:

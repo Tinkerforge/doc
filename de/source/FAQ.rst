@@ -104,7 +104,7 @@ Eine Extension wird im Brick Viewer nicht angezeigt
 Extensions müssen über Master Bricks gesteckt werden. Wird ein Stapel gebaut, so
 können andere Bricks dazwischen gesteckt werden. Das Master Brick sollte aber die 
 unterste Platine des Stapels sein. Einzige Ausnahme ist die Nutzung einer 
-Stromversorgungsplatine wie die Step-Down Powersupply.
+Stromversorgungen wie die Step-Down Power Supply.
 
 
 **Die Extension ist nicht konfiguriert**:
