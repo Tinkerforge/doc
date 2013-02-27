@@ -254,7 +254,7 @@ aus der Console mit folgendem Befehl gestartet werden::
 .. note::
  Seit Mac OS X Mountain Lion kann ausschließlich signierte Software installiert
  werden. Der Brick Daemon Installer ist im Moment nicht signiert. Daher kann
- es passieren, dass Mac OS X eine Fehlermeldung gibt beim versuch den Installer
+ es passieren, dass Mac OS X eine Fehlermeldung anzeigt beim Versuch den Installer
  zu starten. Als Ausweg können die Sicherheitseinstellungen abgeschwächt 
  werden, unter:
 
