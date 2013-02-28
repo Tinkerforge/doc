@@ -228,11 +228,11 @@ Danach muss auf ``INSTALL`` geklickt werden, es sollte ein
 Passwort-Abfrage geöffnet werden. Es kann aber auch folgende Fehlermeldung
 angezeigt werden:
 
-.. image:: /Images/Screenshots/brickd_macos_not_signed_small.jpg
+.. image:: /Images/Screenshots/brickd_macos_not_signed_1_small.jpg
    :scale: 100 %
    :alt: Brickd Installation: Fehlermeldung unter Mac OS X Mountain Lion
    :align: center
-   :target: ../_images/Screenshots/brickd_macos_not_signed.jpg
+   :target: ../_images/Screenshots/brickd_macos_not_signed_1.jpg
 
 Seit Mac OS X Mountain Lion kann ausschließlich signierte Software installiert
 werden. Der Brick Daemon Installer ist im Moment nicht signiert. Daher kann
@@ -244,7 +244,16 @@ kurzzeitig abgeschwächt werden, unter:
 * Sicherheit
 * Programme aus folgenden Quellen erlauben: Keine Einschränkungen
 
-Jetzt noch einmal auf ``INSTALL`` klicken, es sollte nun die Passwort-Abfrage
+Jetzt noch einmal auf ``INSTALL`` klicken. Möglicherweise zeigt Mac OS X
+Mountain Lion might folgende Warnung an:
+
+.. image:: /Images/Screenshots/brickd_macos_not_signed_2_small.jpg
+   :scale: 100 %
+   :alt: Brickd installation: Warnung auf Mac OS X Mountain Lion
+   :align: center
+   :target: ../_images/Screenshots/brickd_macos_not_signed_2.jpg
+
+Ein Klick auf "Open", es sollte nun die Passwort-Abfrage
 geöffnet werden. Es werden Root-Rechte benötigt um den Brick Daemon als
 Launchd Daemon zu installieren.
 

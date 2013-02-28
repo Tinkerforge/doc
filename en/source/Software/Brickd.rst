@@ -216,14 +216,14 @@ should open the disk image:
    :align: center
    :target: ../_images/Screenshots/brickd_macos_1.jpg
 
-Then click "INSTALL", this should open a password prompt. But it might show the
+Then click ``INSTALL``, this should open a password prompt. But it might show the
 following error message instead:
 
-.. image:: /Images/Screenshots/brickd_macos_not_signed_small.jpg
+.. image:: /Images/Screenshots/brickd_macos_not_signed_1_small.jpg
    :scale: 100 %
    :alt: Brickd installation: Error message on Mac OS X Mountain Lion
    :align: center
-   :target: ../_images/Screenshots/brickd_macos_not_signed.jpg
+   :target: ../_images/Screenshots/brickd_macos_not_signed_1.jpg
 
 Since Mac OS X Mountain Lion only signed software can be installed by default.
 Currently the Brick Daemon and its installer is not signed. This makes Mac OS X
@@ -235,7 +235,15 @@ installing unsigned software by clicking:
 * Security & Privacy
 * Allow applications downloaded from: Anywhere
 
-Now click "INSTALL" again, this should open a password prompt now. Root access
+Now click ``INSTALL`` again. Mac OS X Mountain Lion might show this warning:
+
+.. image:: /Images/Screenshots/brickd_macos_not_signed_2_small.jpg
+   :scale: 100 %
+   :alt: Brickd installation: Warning message on Mac OS X Mountain Lion
+   :align: center
+   :target: ../_images/Screenshots/brickd_macos_not_signed_2.jpg
+
+Click "Open", this should open a password prompt now. Root access
 is needed to add the Brick Daemon to your Launchd Daemons.
 
 .. image:: /Images/Screenshots/brickd_macos_2_small.jpg
