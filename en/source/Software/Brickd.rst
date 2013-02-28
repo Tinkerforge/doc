@@ -208,7 +208,7 @@ Mac OS X
 
 To install the Brick Daemon on Mac OS X download the .dmg
 from :ref:`here <downloads_tools>`. Click on the downloaded file, this
-should open the package:
+should open the disk image:
 
 .. image:: /Images/Screenshots/brickd_macos_1_small.jpg
    :scale: 100 %
@@ -216,9 +216,27 @@ should open the package:
    :align: center
    :target: ../_images/Screenshots/brickd_macos_1.jpg
 
-Then click "INSTALL", this should open a password prompt.
-Root access is needed to add the Brick Daemon
-to your Launchd Daemons.
+Then click "INSTALL", this should open a password prompt. But it might show the
+following error message instead:
+
+.. image:: /Images/Screenshots/brickd_macos_not_signed_small.jpg
+   :scale: 100 %
+   :alt: Brickd installation: Error message on Mac OS X Mountain Lion
+   :align: center
+   :target: ../_images/Screenshots/brickd_macos_not_signed.jpg
+
+Since Mac OS X Mountain Lion only signed software can be installed by default.
+Currently the Brick Daemon and its installer is not signed. This makes Mac OS X
+show you the error message saying that the installer is broken when you try to
+install it. For now you need to lower your system security settings to allow
+installing unsigned software by clicking:
+
+* System Preferences
+* Security & Privacy
+* Allow applications downloaded from: Anywhere
+
+Now click "INSTALL" again, this should open a password prompt now. Root access
+is needed to add the Brick Daemon to your Launchd Daemons.
 
 .. image:: /Images/Screenshots/brickd_macos_2_small.jpg
    :scale: 100 %
@@ -242,17 +260,6 @@ If for some reason brickd doesn't run or it has crashed, you can start it
 from the terminal with::
 
  sudo launchctl start com.tinkerforge.brickd
-
-.. note::
- Since Mac OS X Mountain Lion only signed software can be installed by default.
- Currently the Brick Daemon and its installer is not signed. This makes Mac OS X
- show you an error message saying that the installer is broken when you try to
- install it. For now you need to lower your system security settings to allow
- installing unsigned software by clicking:
-
- * System Settings
- * Security & Privacy
- * Allow applications downloaded from: Anywhere
 
 
 Checking installed version
