@@ -227,8 +227,8 @@ only important if you did your own calibration, because the factory calibration
 can be restored automatically during the flashing process since Brick Viewer
 version 1.1.13.
 
-First bring the Brick into the bootloader modus. Press and hold the "Erase"
-button of the Brick and connect it via USB to your PC.
+First bring the Brick into the bootloader modus.
+Hold the Erase button, then press the Reset button 1x.
 The blue LED should be off. Now the Brick should be in the bootloader
 (based on your operating system some sort of Atmel device could be detected).
 

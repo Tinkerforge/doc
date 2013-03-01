@@ -112,7 +112,7 @@ the Master Brick Tab should show the Extension now.
    :align: center
 
 
-I get timeouts when i call a function
+I get timeouts when I call a function
 -------------------------------------
 
 **UID**:
@@ -127,7 +127,7 @@ Is the Brick Daemon running? You can check in the list of processes
 if the Daemon is running (e.g. in the task manager on Windows).
 
 If it isn't running but it is installed correctly, you can 
-try to restart the service (windows) or daemon (Mac OS X
+try to restart the service (Windows) or daemon (Mac OS X
 and Linux). The service/daemon should also be started automatically 
 on startup.
 
@@ -138,7 +138,7 @@ connect directly to the WIFI Extension, you have to use its
 IP address instead of "localhost".
 
 
-I don't get timeouts when i call a function
+I don't get timeouts when I call a function
 -------------------------------------------
 
 If you expect to get a timeout (e.g. because a Brick or Bricklet is not
@@ -147,7 +147,7 @@ connected) but you don't get one, you are probably calling a
 wait for a response form a Brick or Bricklet.
 
 It is however possible to configure it this way. See the 
-"SetResponseExpected" function in the API documentation of each
+``SetResponseExpected`` function in the API documentation of each
 device.
 
 
@@ -157,4 +157,36 @@ The current measurement of my Step-Down Power Supply does not work
 The measurement is designed for high currents. If only a single
 Master Brick is connected to the Step-Down Power Supply it is
 possible that the little current that is drawn by the Master Brick
-doesn't get recognized at all (i.e. "GetStackCurrent" returns 0).
+doesn't get recognized at all (i.e. ``GetStackCurrent`` returns 0).
+
+
+My Brick doesn't show up as serial port for flashing
+----------------------------------------------------
+
+**Brick not in bootloader**:
+
+A Brick can only be flashed if it's in bootloader mode. To enter the bootloader
+hold the Erase button, then press the Reset button 1x. The blue LED should be
+off now.
+
+**Driver not installed (on Windows)**:
+
+On Windows you might need to install the Atmel driver ``atm6124_cdc.inf`` from
+the drivers subfolder in the Brick Viewer installation folder to make Windows
+detect a Brick in bootloader mode correctly.
+
+Windows 7 autodetects a Brick as "GPS Camera Detect" serial device, this
+works as well, just select "GPS Camera Detect" as serial port in Brick Viewer.
+
+**Master Brick 2.0 in stack with Master Extension**:
+
+Master Brick hardware version 2.0 has a change in its PCB layout that interfers
+with bootloader mode if a Master Extension such as WIFI or RS485 is present in
+the stack. In this case the Master Extension needs to be disconnected from the
+stack to make the bootloader mode work correctly.
+
+**/dev/ttyACM0 is not user-accessible (on Linux)**:
+
+Serial devices might not be user-accessible on Linux. The device is listed in
+Brick Viewer, but an error is reported if you try to flash the Brick. As
+workaround start Brick Viewer as root.

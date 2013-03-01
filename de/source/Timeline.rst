@@ -35,7 +35,7 @@ Termine haben.
    "",     "49", "LCD 20x4 Bricklet 1.2",                                               "`fertig <http://de.blog.tinkerforge.com/2012/12/6/lcd-20x4-bricklet-1-2>`__"
    "",     "51", "Neues Voltage/Current Bricklet",                                      "`fertig <http://de.blog.tinkerforge.com/2012/12/20/voltage-current-bricklet-jetzt-verfuegbar>`__"
    "",     "51", "GPS Bricklet",                                                        "`fertig <http://de.blog.tinkerforge.com/2012/12/20/gps-bricklet-jetzt-verfuegbar>`__"
-   "2013", "08", "Visual Basic .NET Bindings"                                           "`fertig <http://www.tinkerforge.com/doc/index.html#bricks>`__"
+   "2013", "08", "Visual Basic .NET Bindings",                                          "`fertig <http://www.tinkerforge.com/doc/index.html#bricks>`__"
    "",     "12", "PTC Bricklet",                                                        "Leiterplatten angefragt"
    "",     "?",  "Ethernet Extension mit PoE",                                          "Probleme mit Prototyp"
    "",     "?",  "Sonic Range Bricklet"

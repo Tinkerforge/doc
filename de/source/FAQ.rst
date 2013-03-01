@@ -51,7 +51,7 @@ das Bricklet anzustecken nachdem das Brick bereits gestartet hat. Danach
 kann das Bricklet wie :ref:`hier <brickv_flash_plugin>` beschrieben
 aktualisiert werden.
 
-Falls das flashen nicht funktioniert: Schon ein anderes Bricklet Kabel
+Falls das Flashen nicht funktioniert: Schon ein anderes Bricklet Kabel
 ausprobiert?
 
 **Ungültige UID**:
@@ -121,7 +121,6 @@ werden.
    :align: center
 
 
-
 Ich bekomme Timeouts wenn ich eine Funktion aufrufe
 ---------------------------------------------------
 
@@ -147,6 +146,7 @@ Wurde die IP Adresse der WIFI Extension genutzt? Wenn eine direkt
 Verbindung aufgebaut werden soll, muss die IP Adresse der WIFI Extension
 anstatt "localhost" zum Verbinden genutzt werden.
 
+
 Ich bekomme keine Timeouts wenn ich eine Funktion aufrufe
 ---------------------------------------------------------
 
@@ -156,7 +156,7 @@ daran, dass ein "Setter" aufgerufen wurde. Normalerweise warten Funktionen
 die nichts zurückgeben nicht auf einem Antwort von Bricks oder Bricklets.
 
 Es ist allerdings möglich dies umzukonfigurieren. 
-Dazu dient die "SetResponseExpected" Funktion, diese ist in der API
+Dazu dient die ``SetResponseExpected`` Funktion, diese ist in der API
 Dokumentation der Bricks/Bricklets beschrieben.
 
 
@@ -166,4 +166,38 @@ Die Strommessung meiner Step-Down Power Supply funktioniert nicht
 Die Messung ist auf hohe Ströme ausgelegt. Falls nur ein einziger
 Master Brick an der Step-Down Power Supply angeschlossen ist
 kann es passieren, dass der Master zu wenig Strom zieht um überhaupt
-erkannt zu werden (d.h. "GetStackCurrent" gibt 0 zurück).
+erkannt zu werden (d.h. ``GetStackCurrent`` gibt 0 zurück).
+
+
+Mein Brick taucht nicht als serielle Schnittstelle für's Flashing aus
+---------------------------------------------------------------------
+
+**Brick nicht im Bootloader**:
+
+Ein Brick kann nur geflashed werden wenn er im Bootloader Modus ist. Um in den
+Bootloader zu wechseln muss der Erase Knopf gedrückt gehalten und dabei der
+Reset Knopf einmal gedrückt werden. Die blaue LED sollte jetzt aus sein.
+
+**Treiber nicht installiert (auf Windows)**:
+
+Auf Windows kann es nötig sein den Atmel Treiber ``atm6124_cdc.inf`` aus dem
+drivers Unterordner der Brick Viewer Installation zu installieren, damit ein
+Brick im Bootloader Modus richtig als serielle Schnittstelle erkannt wird.
+
+Windows 7 erkennt einen Brick im Bootloader Modus von sich aus als "GPS Camera
+Detect" Gerät. Dann einfach "GPS Camera Detect" als serielle Schnittstelle im
+Brick Viewer auswählen.
+
+**Master Brick 2.0 im Stack mit Master Extension**:
+
+Master Brick Hardware Version 2.0 hat eine Änderung im Leiterplattenlayout die
+den Bootloader Modus stört wenn eine Master Extension wie WIFI oder RS485 im
+Stack vorhanden ist. In diesem Fall muss die Master Extension aus dem Stack
+entfernt werden, damit der Bootloader Modus richtig funktioniert.
+
+**/dev/ttyACM0 ist nicht zugreifbar für User (on Linux)**:
+
+Es kann sein, dass serielle Schnittstellen auf Linux nicht für User zugreifbar
+konfiguriert sind. Sie tauchen in Brick Viewer auf, beim Versuch zu Flashen
+wird aber eine Fehlermeldung ausgegeben. Dieses Problem kann umgangen werden,
+indem zum Flashen Brick Viewer als root gestartet wird.

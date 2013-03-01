@@ -240,9 +240,8 @@ werden kann.
 
 Zum Flashen muss der Brick in den Bootloader Modus versetzt werden. Dazu muss
 der Erase Knopf am Brick gedrückt gehalten werden während der Brick startet.
-Dazu kann entweder das USB Kabel angesteckt werden während der Erase Knopf
-gedrückt gehalten wird, oder es kann der Reset Knopf am Brick gedrückt werden
-wobei der Erase Knopf gedrückt gehalten wird. Ist der Brick dann im Bootloader
+Dazu denn Erase Knopf gedrückt halten und dabei den Reset Knopf 1x
+drücken. Ist der Brick dann im Bootloader
 Modus leuchtet die blaue LED neben der USB Buchse des Bricks nicht. Abhängig vom
 Betriebssystems des PC sollte jetzt Atmel Gerät in Form einer seriellen
 Schnittstelle auftauchen.
