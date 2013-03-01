@@ -36,6 +36,8 @@ Termine haben.
    "",     "51", "Neues Voltage/Current Bricklet",                                      "`fertig <http://de.blog.tinkerforge.com/2012/12/20/voltage-current-bricklet-jetzt-verfuegbar>`__"
    "",     "51", "GPS Bricklet",                                                        "`fertig <http://de.blog.tinkerforge.com/2012/12/20/gps-bricklet-jetzt-verfuegbar>`__"
    "2013", "08", "Visual Basic .NET Bindings",                                          "`fertig <http://www.tinkerforge.com/doc/index.html#bricks>`__"
+   "",     "10", "Neue Website",                                                        "In Arbeit"
    "",     "12", "PTC Bricklet",                                                        "Leiterplatten angefragt"
+   "",     "13", "Starterkit: Wetterstation",                                           "In Arbeit"
    "",     "?",  "Ethernet Extension mit PoE",                                          "Probleme mit Prototyp"
    "",     "?",  "Sonic Range Bricklet"

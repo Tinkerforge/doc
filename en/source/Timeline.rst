@@ -33,6 +33,8 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "",     "51", "New Voltage/Current Bricklet",                                         "`done <http://en.blog.tinkerforge.com/2012/12/20/voltage-current-bricklet-now-available>`__"
    "",     "51", "GPS Bricklet",                                                         "`done <http://en.blog.tinkerforge.com/2012/12/20/gps-bricklet-now-available>`__"
    "2013", "08", "Visual Basic .NET bindings",                                           "`done <http://www.tinkerforge.com/doc/index.html#bricks>`__"
+   "",     "10", "New Website",                                                          "Work in Progress"
    "",     "12", "PTC Bricklet",                                                         "Awaiting Quotation for PCBs"
+   "",     "13", "Starterkit: Weather Station",                                          "Work in Progress"
    "",     "?",  "Ethernet Extension with PoE",                                          "Problems with Prototype"
    "",     "?",  "Sonic Range Bricklet"
