@@ -40,4 +40,5 @@ Termine haben.
    "",     "12", "PTC Bricklet",                                                        "Leiterplatten angefragt"
    "",     "13", "Starterkit: Wetterstation",                                           "In Arbeit"
    "",     "?",  "Ethernet Extension mit PoE",                                          "Probleme mit Prototyp"
+   "",     "?",  "0-20mA Bricklet",                                                     "Prototyp existiert"
    "",     "?",  "Sonic Range Bricklet"
