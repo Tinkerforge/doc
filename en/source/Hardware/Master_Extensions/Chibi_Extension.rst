@@ -180,6 +180,10 @@ be able to talk to (as a comma separated list).
    :align: center
    :target: ../../_images/Extensions/extension_chibi_master.jpg
 
+At the end, press "Save Chibi Configuration" to save the configuration permanently
+on the Chibi Extension.
+The Master Brick has to be restarted to apply the new configuration.
+
 
 Chibi Network Modification
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

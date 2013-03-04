@@ -238,7 +238,8 @@ und Energie gespart werden.
  schnell genug ist für die initiale Enumerierung nach einem Neustart. Daher muss
  der Low Power Mode nach jedem Neustart neu eingestellt werden.
 
-Zum Schluss muss auf "Save WIFI Configuration" geklickt werden um die Konfiguration zu speichern.
+Zum Schluss muss auf "Save WIFI Configuration" geklickt werden um die Konfiguration
+dauerhaft auf der WIFI Extension zu speichern.
 Falls andere Einstellungen als der Power Mode geändert wurden muss der Master Brick
 neu gestartet werden um die neue Konfiguration zu übernehmen. Nach dem Neustart
 sollte der Master Brick bei Eingabe der konfigurierten IP Adresse und Port im Brick Viewer erreichbar sein.

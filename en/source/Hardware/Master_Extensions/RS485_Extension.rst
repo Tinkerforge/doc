@@ -180,6 +180,10 @@ of the slaves in the RS485 bus as a comma separated list.
    :align: center
    :target: ../../_images/Extensions/extension_rs485_master.jpg
 
+At the end, press "Save RS485 Configuration" to save the configuration permanently
+on the RS485 Extension.
+The Master Brick has to be restarted to apply the new configuration.
+
 
 RS485 Bus Modification
 ^^^^^^^^^^^^^^^^^^^^^^
