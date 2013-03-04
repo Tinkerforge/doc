@@ -235,8 +235,8 @@ the Low Power Mode and save energy.
  Mode after each reset.
 
 At the end, press "Save WIFI Configuration" to save the configuration permanently
-on the WIFI Extension. If another
-option then the Master Brick has to be restarted to apply the new configuration.
+on the WIFI Extension. If another option besides the Power Mode has be changed
+then the Master Brick has to be restarted to apply the new configuration.
 After restart you should be able to reach the Master Brick by entering the IP
 address and port of the Brick in the Brick Viewer.
 
