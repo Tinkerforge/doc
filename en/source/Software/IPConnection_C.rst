@@ -73,7 +73,7 @@ Basic Functions
 .. c:function:: int ipcon_connect(IPConnection *ipcon, const char *host, uint16_t port)
 
  Creates a TCP/IP connection to the given *host* and *port*. The host and port
- can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
@@ -98,6 +98,7 @@ Basic Functions
    the WIFI/Ethernet Extension is established.
  * IPCON_CONNECTION_STATE_PENDING (2): IP Connection is currently trying to
    connect.
+
 
 .. c:function:: void ipcon_set_auto_reconnect(IPConnection *ipcon, bool auto_reconnect)
 
@@ -220,14 +221,15 @@ described below.
 
  The device identifiers can be found :ref:`here <device_identifier>`.
 
+
 .. c:var:: IPCON_CALLBACK_CONNECTED
 
  .. code-block:: c
 
   void callback(uint8_t connect_reason, void *user_data)
 
- This callback is called whenever the IP Connection is connected, possible
- reasons are:
+ This callback is called whenever the IP Connection got connected to a
+ Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
  * IPCON_CONNECT_REASON_REQUEST (0): Connection established after request
    from user.
@@ -240,8 +242,8 @@ described below.
 
   void callback(uint8_t disconnect_reason, void *user_data)
 
- This callback is called whenever the IP Connection is disconnected, possible
- reasons are:
+ This callback is called whenever the IP Connection got disconnected from a
+ Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:
 
  * IPCON_DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
  * IPCON_DISCONNECT_REASON_ERROR (1): Disconnect because of an unresolvable

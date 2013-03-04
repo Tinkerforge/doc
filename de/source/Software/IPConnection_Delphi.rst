@@ -53,7 +53,7 @@ Grundfunktionen
 .. delphi:function:: procedure TIPConnection.Connect(const host: string; const port: word)
 
  Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
- können zu eine Brick Daemon oder der WIFI/Ethernet Extension zeigen.
+ können auf einen Brick Daemon oder eine WIFI/Ethernet Extension verweisen.
 
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
  aufgebaut wurde.
@@ -195,6 +195,7 @@ beschrieben.
 
  Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
 
+
 .. delphi:function:: property TIPConnection.OnConnected
 
  .. code-block:: delphi
@@ -202,7 +203,8 @@ beschrieben.
   procedure(sender: TIPConnection; const connectReason: byte) of object;
 
  Dieser Callback wird aufgerufen wenn die IP Connection eine Verbindung
- aufgebaut hat, mögliche Gründe sind:
+ zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
+ mögliche Gründe sind:
 
  * IPCON_CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
  * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer
@@ -216,7 +218,8 @@ beschrieben.
   procedure(sender: TIPConnection; const disconnectReason: byte) of object;
 
  Dieser Callback wird aufgerufen wenn die Verbindung der IP Connection
- getrennt wird, mögliche Gründe sind:
+ zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
+ mögliche Gründe sind:
 
  * IPCON_DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
  * IPCON_DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.

@@ -45,7 +45,7 @@ Basic Functions
 .. csharp:function:: public void IPConnection::Connect(String host, int port)
 
  Creates a TCP/IP connection to the given *host* and *port*. The host and port
- can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
@@ -179,8 +179,8 @@ The available events are described below.
 
 .. csharp:function:: public event IPConnection::Connected(IPConnection sender, short connectReason)
 
- This event is called whenever the IP Connection is connected, possible
- reasons are:
+ This event is triggered whenever the IP Connection got connected to a
+ Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
  * IPConnection.CONNECT_REASON_REQUEST (0): Connection established after
    request from user.
@@ -190,8 +190,8 @@ The available events are described below.
 
 .. csharp:function:: public event IPConnection::Disconnected(IPConnection sender, short disconnectReason)
 
- This event is called whenever the IP Connection is disconnected, possible
- reasons are:
+ This event is triggered whenever the IP Connection got disconnected from a
+ Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
  * IPConnection.DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
  * IPConnection.DISCONNECT_REASON_ERROR (1): Disconnect because of an

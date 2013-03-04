@@ -74,7 +74,7 @@ Grundfunktionen
 .. c:function:: int ipcon_connect(IPConnection *ipcon, const char *host, uint16_t port)
 
  Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
- können zu eine Brick Daemon oder der WIFI/Ethernet Extension zeigen.
+ können auf einen Brick Daemon oder eine WIFI/Ethernet Extension verweisen.
 
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
  aufgebaut wurde.
@@ -226,6 +226,7 @@ werden im Folgenden beschrieben.
 
  Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
 
+
 .. c:var:: IPCON_CALLBACK_CONNECTED
 
  .. code-block:: c
@@ -233,7 +234,8 @@ werden im Folgenden beschrieben.
   void callback(uint8_t connect_reason, void *user_data)
 
  Dieser Callback wird aufgerufen wenn die IP Connection eine Verbindung
- aufgebaut hat, mögliche Gründe sind:
+ zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
+ mögliche Gründe sind:
 
  * CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
  * CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer
@@ -247,7 +249,8 @@ werden im Folgenden beschrieben.
   void callback(uint8_t disconnect_reason, void *user_data)
 
  Dieser Callback wird aufgerufen wenn die Verbindung der IP Connection
- getrennt wird, mögliche Gründe sind:
+ zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
+ mögliche Gründe sind:
 
  * DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
  * DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.
