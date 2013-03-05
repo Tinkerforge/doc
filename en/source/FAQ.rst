@@ -175,12 +175,12 @@ On Windows you might need to install the Atmel driver ``atm6124_cdc.inf`` from
 the drivers subfolder in the Brick Viewer installation folder to make Windows
 detect a Brick in bootloader mode correctly.
 
-Windows 7 autodetects a Brick as "GPS Camera Detect" serial device, this
+Windows 7 auto detects a Brick as "GPS Camera Detect" serial device, this
 works as well, just select "GPS Camera Detect" as serial port in Brick Viewer.
 
 **Master Brick 2.0 in stack with Master Extension**:
 
-Master Brick hardware version 2.0 has a change in its PCB layout that interfers
+Master Brick hardware version 2.0 has a change in its PCB layout that interferes
 with bootloader mode if a Master Extension such as WIFI or RS485 is present in
 the stack. In this case the Master Extension needs to be disconnected from the
 stack to make the bootloader mode work correctly.

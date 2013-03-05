@@ -206,7 +206,7 @@ corresponding response packet.
 .. note::
  Using callbacks for recurring events is *always* preferred
  compared to using getters. It will use less USB bandwidth and the latency
- will be a lot better, since there is no roundtrip time.
+ will be a lot better, since there is no round-trip time.
 
 
 .. _llproto_tcpip_api:
