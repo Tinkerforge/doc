@@ -3,10 +3,14 @@
 Device Identifier
 =================
 
-Jedes Brick und Bruckekt hat einen "Device Identifier". Dieser Bezeichner
-wird in der "GetIdentity" und in den Enumerationsfunktionen benutzt. Dadurch
+Jeder Brick und jedes Bricklet hat einen "Device Identifier". Dieser Bezeichner
+wird in der ``GetIdentity`` und in den Enumerationsfunktionen benutzt. Dadurch
 wird es ermöglicht Bricks und Bricklets dynamisch zu benutzen, ohne vorherige
-Kentnisse über UIDs.
+Kenntnisse über UIDs.
+
+In den API Bindings gibts es für jeden Brick und jedes Bricklet eine
+"Device Identifier" Konstante mit dem entsprechenden Wert. Genaueres dazu findet
+sich im Abschnitt über Konstanten in der jeweiligen API Dokumentation.
 
  .. csv-table::
   :header: "Device Identifier", "Device Name"
