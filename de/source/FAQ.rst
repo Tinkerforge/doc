@@ -93,7 +93,7 @@ auftreten, siehe :ref:`oben <faq_brick_hot>`.
 **Brick Treiber Installation notwendig**:
 
 Unter älteren Windows Versionen ist eine Treiberinstallation notwendig.
-Siehe :ref:`hier <brickd_windows_driver_installation>`.
+Siehe :ref:`hier <brickd_install_windows_driver>`.
 
 
 Eine Extension wird im Brick Viewer nicht angezeigt

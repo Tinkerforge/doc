@@ -3,7 +3,8 @@
 Brick Viewer (brickv)
 =====================
 
-The Brick Viewer provides a graphical interface for testing :ref:`Bricks <product_overview_bricks>`
+The Brick Viewer provides a graphical interface for
+testing :ref:`Bricks <product_overview_bricks>`
 and :ref:`Bricklets <product_overview_bricklets>`. Each device has its own
 view that shows the main features and allows to control them.
 
@@ -18,136 +19,9 @@ quality and to flash :ref:`Brick firmwares <brickv_flash_firmware>` and
 Installation
 ------------
 
-Windows
-^^^^^^^
-
-To install the Brick Viewer on Windows, download the
-Brick Viewer .exe form :ref:`here <downloads_tools>`.
-Click on the downloaded file, this should open the installer:
-
-.. image:: /Images/Screenshots/brickv_windows_1_small.jpg
-   :scale: 100 %
-   :alt: Brickv installation step 1
-   :align: center
-   :target: ../_images/Screenshots/brickv_windows_1.jpg
-
-Click on "Next" to start the installation process.
-
-.. image:: /Images/Screenshots/brickv_windows_2_small.jpg
-   :scale: 100 %
-   :alt: Brickv installation step 2
-   :align: center
-   :target: ../_images/Screenshots/brickv_windows_2.jpg
-
-Next you will be asked to specify the installation path.
-Change it if necessary and click "Install".
-
-.. image:: /Images/Screenshots/brickv_windows_3_small.jpg
-   :scale: 100 %
-   :alt: Brickv installation step 3
-   :align: center
-   :target: ../_images/Screenshots/brickv_windows_3.jpg
-
-After this you have finished the installation process.
-
-
-Linux
-^^^^^
-
-To install the Brick Viewer on a Debian based distribution
-(Ubuntu, Mint, etc.), download the Brick Viewer .deb from
-:ref:`here <downloads_tools>`. Right-click on the file and choose
-"Open with GDebi Package Installer":
-
-.. image:: /Images/Screenshots/brickv_linux_1_small.jpg
-   :scale: 100 %
-   :alt: Brickv installation step 1
-   :align: center
-   :target: ../_images/Screenshots/brickv_linux_1.jpg
-
-Then click "Install Package":
-
-.. image:: /Images/Screenshots/brickv_linux_2_small.jpg
-   :scale: 100 %
-   :alt: Brickv installation step 2
-   :align: center
-   :target: ../_images/Screenshots/brickv_linux_2.jpg
-
-Ready:
-
-.. image:: /Images/Screenshots/brickv_linux_3_small.jpg
-   :scale: 100 %
-   :alt: Brickv installation step 3
-   :align: center
-   :target: ../_images/Screenshots/brickv_linux_3.jpg
-
-In Ubuntu you can also use the Ubuntu Software Center, other Desktop
-environments have very similar tools that practically work the same way.
-You can start the Brick Viewer in the application menu under electronic
-or in a terminal with::
-
- brickv
-
-To install Brick Viewer from the terminal use the following::
-
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
- sudo dpkg -i brickv_linux_latest.deb
-
-To install Brick Viewer from source, download the source from
-:ref:`here <downloads_tools>` and install the dependencies:
-
-* python-qt4
-* python-qt4-gl
-* python-qwt5-qt4
-* python-opengl
-* python-serial
-
-On Debian based distributions you can do that as shown above, on other
-distribution you have to search for and install the equivalent packages.
-
-To start brickv from source, change to the folder ``src/brickv/`` and
-start with::
-
- python main.py
-
-.. note::
- Unfortunately Debian has at the time of writing this tutorial problems with
- the ``python-qwt5-qt4`` in Wheezy. If you use Debian Wheezy and you can not
- find ``python-qwt5-qt4`` in the repository, you have to install it from Sid::
-
-  sudo echo 'APT::Default-Release "testing";' >> /etc/apt/apt.conf
-
- Then edit ``/etc/apt/sources.list`` and copy your non-``security testing`` lines
- and change the copy from ``wheezy`` to ``sid``. Now you can install the package::
-
-  sudo apt-get update
-  sudo apt-get -t sid install python-qwt5-qt4
-
-
-Mac OS X
-^^^^^^^^
-
-To install the Brick Viewer on Mac OS X, download the
-.dmg form :ref:`here <downloads_tools>`.
-Click on the downloaded file, this should open the image:
-
-.. image:: /Images/Screenshots/brickv_macos_1_small.jpg
-   :scale: 100 %
-   :alt: Brickv installation step 1
-   :align: center
-   :target: ../_images/Screenshots/brickv_macos_1.jpg
-
-To install the Brick Viewer drag and drop the file to your applications folder
-
-.. image:: /Images/Screenshots/brickv_macos_2_small.jpg
-   :scale: 100 %
-   :alt: Brickv installation step 2
-   :align: center
-   :target: ../_images/Screenshots/brickv_macos_2.jpg
-
-After this you have finished the installation process. You might need to restart
-your machine after this, otherwise the icons don't show up for some unknown
-reason.
+* :ref:`Windows <brickv_install_windows>`
+* :ref:`Linux <brickv_install_linux>`
+* :ref:`Mac OS X <brickv_install_macosx>`
 
 
 Usage

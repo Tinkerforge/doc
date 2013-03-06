@@ -84,8 +84,8 @@ connector. See :ref:`above <faq_brick_hot>`.
 
 **Brick Driver installation necessary**:
 
-Bricks need a driver installation at older Windows versions 
-to work properly. Please see :ref:`here <brickd_windows_driver_installation>`.
+Bricks need a driver installation on older Windows versions
+to work properly. Please see :ref:`here <brickd_install_windows_driver>`.
 
 
 An Extension does not show up in the Brick Viewer
