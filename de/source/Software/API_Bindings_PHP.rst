@@ -1,0 +1,60 @@
+.. _api_bindings_php:
+
+PHP - API Bindings
+==================
+
+**Voraussetzungen**: PHP 5.3 oder neuer mit bcmath Erweiterung
+
+Die PHP Bindings bestehen aus einem PEAR Paket mit den Bindings für alle
+Tinkerforge Bricks und Bricklets (``Tinkerforge.tgz``), dem Quelltext des PEAR
+Pakets (in ``source/``) und allen verfügbaren PHP Beispielen (in ``examples/``).
+
+Das PEAR Paket kann mit Hilfe des pear Tools installiert werden::
+
+ pear install Tinkerforge.tgz
+
+Danach können alle Beispiel unverändert verwendet werden.
+
+Wenn das PEAR Paket nicht verwendet werden soll oder kann, dann kann der
+Quelltext auch direkt verwendet werden. Dafür muss der ``Tinkerforge`` Ordner vom
+``source/`` Ordner und das Beispiel, das ausprobiert werden soll (z.B. das
+Stepper Konfigurationsbeispiel
+``examples/brick/stepper/ExampleConfiguration.php``), in einen Ordner kopiert
+werden::
+
+ example_folder/
+  -> Tinkerforge/
+  -> ExampleConfiguration.php
+
+Falls nur einige ausgewählte Bricks oder Bricklets verwendet werden sollen und
+keine unnötigen Dateien im Projekt auftauchen sollen, dann können auch nur die
+wirklich benötigten Dateien in einen Ordner kopieren werden. Das Stepper Brick
+Beispiel benötigt ``IPConnection.php`` und ``BrickStepper.php``::
+
+ example_folder/
+  -> IPConnection.php
+  -> BrickStepper.php
+  -> ExampleConfiguration.php
+
+Nachdem diese Dateien in einen Ordner kopiert sind muss noch das ``Tinkerforge``
+Ordner aus dem Quelltext des Beispiels entfernt werden. Statt:
+
+.. code-block:: php
+
+ <?php
+ require_once('Tinkerforge/IPConnection.php');
+ require_once('Tinkerforge/BrickStepper.php');
+ ...
+ ?>
+
+muss dort nun dies stehen:
+
+.. code-block:: php
+
+ <?php
+ require_once('IPConnection.php');
+ require_once('BrickStepper.php');
+ ...
+ ?>
+
+Jetzt kann das Beispiel wieder ausgeführt werden.
