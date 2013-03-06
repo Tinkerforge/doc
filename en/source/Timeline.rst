@@ -36,6 +36,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "",     "10", "New Website",                                                          "Work in Progress"
    "",     "12", "PTC Bricklet",                                                         "Awaiting Quotation for PCBs"
    "",     "13", "Starterkit: Weather Station",                                          "Work in Progress"
+   "",     "15", "Encoder Bricklet for DC Brick",                                        "Hardware exists"
    "",     "?",  "Ethernet Extension with PoE",                                          "Problems with Prototype"
    "",     "?",  "0-20mA Bricklet",                                                      "Prototype exists"
    "",     "?",  "Sonic Range Bricklet"

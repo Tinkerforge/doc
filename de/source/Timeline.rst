@@ -39,6 +39,7 @@ Termine haben.
    "",     "10", "Neue Website",                                                        "In Arbeit"
    "",     "12", "PTC Bricklet",                                                        "Leiterplatten angefragt"
    "",     "13", "Starterkit: Wetterstation",                                           "In Arbeit"
+   "",     "15", "Encoder Bricklet für DC Brick",                                       "Hardware existiert"
    "",     "?",  "Ethernet Extension mit PoE",                                          "Probleme mit Prototyp"
    "",     "?",  "0-20mA Bricklet",                                                     "Prototyp existiert"
    "",     "?",  "Sonic Range Bricklet"
