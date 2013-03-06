@@ -45,7 +45,7 @@ Basic Functions
 .. java:function:: public void IPConnection::connect(String host, int port)
 
  Creates a TCP/IP connection to the given *host* and *port*. The host and port
- can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
@@ -187,8 +187,8 @@ to remove them with the corresponding "removeExampleListener" function.
  .. java:function:: public void connected(short connectReason)
   :noindex:
 
-  This listener is called whenever the IP connection is connected,
-  possible reasons are:
+  This listener is called whenever the IP Connection got connected to a
+  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
   * IPConnection.CONNECT_REASON_REQUEST (0): Connection established after
     request from user.
@@ -204,8 +204,8 @@ to remove them with the corresponding "removeExampleListener" function.
  .. java:function:: public void disconnected(short disconnectReason)
   :noindex:
 
-  This listener is called whenever the IP Connection is disconnected,
-  possible reasons are:
+  This listener is called whenever the IP Connection got disconnected from a
+  Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:
 
   * IPConnection.DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
   * IPConnection.DISCONNECT_REASON_ERROR (1): Disconnect because of an

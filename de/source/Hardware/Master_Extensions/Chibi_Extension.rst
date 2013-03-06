@@ -186,6 +186,11 @@ Slaves angegeben werden, mit denen der Chibi Master kommunizieren soll.
    :align: center
    :target: ../../_images/Extensions/extension_chibi_master.jpg
 
+Zum Schluss muss auf "Save Chibi Configuration" geklickt werden um die
+Konfiguration dauerhaft auf der Chibi Extension zu speichern.
+Dann muss der Master Brick neu gestartet werden um die neue Konfiguration zu
+übernehmen.
+
 
 Chibi Netzwerkmodifikation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

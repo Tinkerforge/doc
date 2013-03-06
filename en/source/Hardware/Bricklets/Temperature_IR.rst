@@ -56,8 +56,8 @@ Description
 
 The Temperature IR :ref:`Bricklet <product_overview_bricklets>` is equipped
 with a `infrared thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`__.
-It can extend the features of a Brick with the capability to contactlessly
-measure temperature.
+It can extend the features of a Brick with the capability of contactless
+temperature measurement.
 
 You can read out object temperature and ambient temperature in
 `°C <http://en.wikipedia.org/wiki/Degree_Celsius>`__.

@@ -185,6 +185,11 @@ Slaves angegeben werden, mit denen der RS485 Master kommunizieren soll.
    :align: center
    :target: ../../_images/Extensions/extension_rs485_master.jpg
 
+Zum Schluss muss auf "Save RS485 Configuration" geklickt werden um die
+Konfiguration dauerhaft auf der RS485 Extension zu speichern.
+Dann muss der Master Brick neu gestartet werden um die neue Konfiguration zu
+übernehmen.
+
 
 RS485 Busmodifikation
 ^^^^^^^^^^^^^^^^^^^^^

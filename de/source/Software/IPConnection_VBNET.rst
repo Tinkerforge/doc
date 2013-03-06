@@ -46,7 +46,7 @@ Grundfunktionen
 .. vbnet:function:: Sub IPConnection.Connect(ByVal host As String, ByVal port As Integer)
 
  Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
- können zu eine Brick Daemon oder der WIFI/Ethernet Extension zeigen.
+ können auf einen Brick Daemon oder einer WIFI/Ethernet Extension verweisen.
 
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
  aufgebaut wurde.
@@ -185,8 +185,9 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 
 .. vbnet:function:: Event IPConnection.Connected(ByVal sender As IPConnection, ByVal connectReason As Short)
 
- Dieser Event wird aufgerufen wenn die IP Connection eine Verbindung
- aufgebaut hat, mögliche Gründe sind:
+ Dieser Event wird ausgelöst wenn die IP Connection eine Verbindung
+ zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
+ mögliche Gründe sind:
 
  * IPConnection.CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage
    vom Benutzer.
@@ -197,7 +198,8 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 .. vbnet:function:: Event IPConnection.Disconnected(ByVal sender As IPConnection, ByVal disconnectReason As Short)
 
  Dieser Event wird aufgerufen wenn die Verbindung der IP Connection
- getrennt wird, mögliche Gründe sind:
+ zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
+ mögliche Gründe sind:
 
  * IPConnection.DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer
    angefragt.

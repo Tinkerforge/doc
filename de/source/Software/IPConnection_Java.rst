@@ -46,7 +46,7 @@ Grundfunktionen
 .. java:function:: public void IPConnection::connect(String host, int port)
 
  Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
- können zu eine Brick Daemon oder der WIFI/Ethernet Extension zeigen.
+ können auf einen Brick Daemon oder eine WIFI/Ethernet Extension verweisen.
 
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
  aufgebaut wurde.
@@ -194,7 +194,8 @@ wieder zu entfernen.
   :noindex:
 
   Dieser Listener wird aufgerufen wenn die IP Connection eine Verbindung
-  aufgebaut hat, mögliche Gründe sind:
+  zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
+  mögliche Gründe sind:
 
   * IPConnection.CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage
     vom Benutzer.
@@ -212,7 +213,8 @@ wieder zu entfernen.
   :noindex:
 
   Dieser Listener wird aufgerufen wenn die Verbindung der IP Connection
-  getrennt wird, mögliche Gründe sind:
+  zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
+  mögliche Gründe sind:
 
   * IPConnection.DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer
     angefragt.

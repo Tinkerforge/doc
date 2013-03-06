@@ -45,7 +45,7 @@ Basic Functions
 .. php:function:: void IPConnection::connect(string $host, int $port)
 
  Creates a TCP/IP connection to the given *$host* and *$port*. The host and
- port can point to a Brick Daemon or to a WIFI/Ethernet Extension.
+ port can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
  successfully.
@@ -171,14 +171,15 @@ described below.
 
  The device identifiers can be found :ref:`here <device_identifier>`.
 
+
 .. php:member:: int IPConnection::CALLBACK_CONNECTED
 
  .. code-block:: php
 
   void callback(int $connectReason [, mixed $userData])
 
- This callback is called whenever the IP Connection is connected, possible
- reasons are:
+ This callback is called whenever the IP Connection got connected to a
+ Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
  * IPConnection::CONNECT_REASON_REQUEST (0): Connection established after
    request from user.
@@ -190,8 +191,8 @@ described below.
 
   void callback(int $connectReason [, mixed $userData])
 
- This callback is called whenever the IP Connection is disconnected, possible
- reasons are:
+ This callback is called whenever the IP Connection got disconnected from a
+ Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:
 
  * IPConnection::DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
  * IPConnection::DISCONNECT_REASON_ERROR (1): Disconnect because of an

@@ -4,8 +4,12 @@ Device Identifier
 =================
 
 Every Brick and Bricklet has a device identifier. This identifier is used
-in the "GetIdentity" and enumeration functions. It allows a dynamical usage
+in the ``GetIdentity`` and enumeration functions. It allows a dynamical usage
 of devices without the knowledge of UIDs.
+
+The API bindings contain a device identifier constant for each Brick and
+Bricklet. Details about this can be found in the section about constants in the
+specific API documentation.
 
  .. csv-table::
   :header: "Device Identifier", "Device Name"
