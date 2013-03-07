@@ -248,10 +248,9 @@ angles. The base position will be (0,0,0):
             self.base_z = 0.0
             self.base_w = 0.0
 
-            self.imu = IMU(self.UID) # Create device object
-            self.ipcon = IPConnection(self.HOST, self.PORT) # Create IPconnection to brickd
-            self.ipcon.add_device(self.imu) # Add device to IP connection
-            # Don't use device before it is added to a connection
+            self.ipcon = IPConnection() # Create IPconnection
+            self.imu = IMU(self.UID, self.ipcon) # Create device object
+            self.ipcon.connect(self.HOST, self.PORT) # Connect to brickd
 
             # Wait for IMU to settle
             print 'Set IMU to base position and wait for 10 seconds'
@@ -295,7 +294,7 @@ angles. The base position will be (0,0,0):
         q = Q()
 
         raw_input('Press key to exit\n') # Use input() in Python 3
-        q.ipcon.destroy()
+        q.ipcon.disconnect()
 
 
 How it works
