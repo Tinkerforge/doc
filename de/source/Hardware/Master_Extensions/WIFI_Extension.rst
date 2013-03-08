@@ -124,7 +124,7 @@ WIFI Netzwerk
 -------------
 
 Die Master Extension erlaubt es eine drahtlose Verbindung zu
-einem Master Brick uns allen angeschlossenen Bricks und Bricklets herzustellen.
+einem Master Brick und allen angeschlossenen Bricks und Bricklets herzustellen.
 Es ist kein Brick Deamon notwendig um diese Extension zu nutzen.
 
 Um den Brick Viewer mit einem drahtlosen Aufbau zu verbinden muss
