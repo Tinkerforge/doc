@@ -360,7 +360,6 @@ dl.member dt,
 dl.attribute dt {
 		font-weight:normal;
     color: #444444;
-		margin-bottom: 5px;
 }
 
 dl.function dt big,
