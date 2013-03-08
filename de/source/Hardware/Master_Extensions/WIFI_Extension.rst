@@ -143,13 +143,13 @@ im IPConnection Aufruf modifiziert werden, z.B.:
 
 .. code-block:: python
 
- ipcon = IPConnection("localhost", 4223)
+ ipcon.connect("localhost", 4223)
 
 muss nach
 
 .. code-block:: python
 
- ipcon = IPConnection("192.168.0.25", 4223)
+ ipcon.connect("192.168.0.25", 4223)
 
 geändert werden.
 
