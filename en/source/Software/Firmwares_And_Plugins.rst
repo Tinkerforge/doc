@@ -11,6 +11,7 @@ Firmwares and Plugins
  Only if you want to change something in a firmware of a Brick or a
  plugin of a Bricklet you will need to compile them yourself.
 
+.. _building_brick_firmware:
 
 Building a Brick firmware
 -------------------------
@@ -64,6 +65,7 @@ Flash firmware on a Brick
 See :ref:`brickv_flash_firmware` in :ref:`Brick Viewer <brickv>` documentation
 for more information.
 
+.. _building_bricklet_plugin:
 
 Building a Bricklet plugin
 --------------------------

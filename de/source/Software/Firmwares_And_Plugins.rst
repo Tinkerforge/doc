@@ -12,6 +12,8 @@ Firmwares und Plugins
  deinen Vorstellungen ändern willst musst du sie selbst kompilieren.
 
 
+.. _building_brick_firmware:
+
 Brick Firmware kompilieren
 --------------------------
 
@@ -62,6 +64,7 @@ Firmware auf Brick flashen
 Siehe :ref:`brickv_flash_firmware` in der :ref:`Brick Viewer <brickv>`
 Dokumentation für weitere Informationen.
 
+.. _building_bricklet_plugin:
 
 Bricklet Plugin kompilieren
 ---------------------------
