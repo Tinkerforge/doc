@@ -14,7 +14,7 @@ Starter Kit: Weather Station
 	{{
 	    tfdocimg("Kits/weather_station_website_350.jpg",
 	             "Kits/weather_station_website_orig.jpg",
-	             "Weather Station: Embedded in website)
+	             "Weather Station: Embedded in website")
 	}}
 	{{ tfdocend() }}
 
