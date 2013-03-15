@@ -30,11 +30,11 @@ Choose "push data to Cosm", a title and tags and create the feed.
 
 In the feed we have to add datastreams for our weather measurements:
 
-.. image:: /Images/Kits/weather_station_cosm_datastreams.jpg
-   :scale: 50 %
+.. image:: /Images/Kits/weather_station_cosm_datastreams_600.jpg
+   :scale: 100 %
    :alt: Cosm datastream configuration
    :align: center
-   :target: ../../_images/Kits/weather_station_cosm_datastreams.jpg
+   :target: ../../_images/Kits/weather_station_cosm_datastreams_orig.jpg
 
 The streams got the IDs AirPressure, AmbientLight, Humidity and Temperature.
 Later we will need these IDs to upload measurements.
