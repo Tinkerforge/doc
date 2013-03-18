@@ -64,7 +64,7 @@ After this you have to execute the following steps::
  sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
  cd /home/pi
  unzip Tinkerforge-brickd-vX.X.X-X-***.zip (modify filename)
- cd Tinkerforge-brickd-vX.X.X-X-*** (modify filename)
+ cd Tinkerforge-brickd-vX.X.X-X-*** (modify folder name)
  cd src/brickd
  make
  sudo make install
