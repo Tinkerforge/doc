@@ -11,9 +11,9 @@ SD Karte vorbereiten
 --------------------
 
 Als erstes musst Debian auf einer SD Karte eingerichtet werden. Hier gibt es 
-zwei verschiedene Versionen für das Raspberry Pi: Einmal "Raspbian" (armhf)
+zwei verschiedene Varianten für das Raspberry Pi: Einmal "Raspbian" (armhf)
 und "Soft-Float Debian" (armel). Raspbian nutzt die Hardware Floating Point
-Unit von dem Board und wird empfohlen zu benutzen.
+Unit (FPU) des Boards und ist die empfohlene Variante.
 
 Dazu muss zuerst
 das neuste Raspbian Image von `hier <http://www.raspberrypi.org/downloads>`__
@@ -31,27 +31,28 @@ Am Ende des Bootvorgangs sollte ein Anmeldeaufforderung zu sehen sein. Der
 Benutzername ist "pi" und das Password ist "raspberry".
 
 
-Brick Daemon und Brick Viewer installieren
-------------------------------------------
+Brick Daemon installieren
+-------------------------
 
-Der :ref:`Brick Viewer <brickv>` kann mit
-folgenden Befehlen installiert werden::
+Wie der Brick Daemon installiert werden kann hängt von der verwendeten Debian
+Variante ab.
 
- cd /home/pi
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
- wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
- sudo dpkg -i brickv_linux_latest.deb
+Raspbian (armhf)
+^^^^^^^^^^^^^^^^
 
-
-Option 1: Wurde Debian **mit** Hardware Floating Point Unit Unterstützung (Raspbian) installiert,
+Wurde Debian **mit** Hardware Floating Point Unit Unterstützung (Raspbian) installiert,
 so kann der :ref:`Brick Daemon <brickd>` einfach mit folgenden Befehlen installiert werden::
 
  cd /home/pi
- sudo apt-get install python-twisted python-gudev libusb-1.0-0
+ sudo apt-get install libusb-1.0-0 libudev
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
-Option 2: Wurde Debian **ohne** Hardware Floating Point Unit Unterstützung installiert,
+
+Soft-Float Debian (armel)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wurde Debian **ohne** Hardware Floating Point Unit Unterstützung installiert,
 so muss der :ref:`Brick Daemon <brickd>` selbst kompiliert werden.
 
 Als erstes muss der Quelltext von der 
@@ -62,11 +63,25 @@ Danach müssen folgende Schritte ausgeführt werden::
 
  sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
  cd /home/pi
- unzip Tinkerforge-brickd-vX.X.X-X-***.zip (Dateiname anpassen)
- cd Tinkerforge-brickd-vX.X.X-X-*** (Ordnername anpassen)
+ unzip Tinkerforge-brickd-vX.Y.Z-W-***.zip (Dateiname anpassen)
+ cd Tinkerforge-brickd-vX.Y.Z-W-*** (Ordnername anpassen)
  cd src/brickd
  make
  sudo make install
+ update-rc.d brickd defaults
+ /etc/init.d/brickd start
+
+
+Brick Viewer installieren
+-------------------------
+
+Der :ref:`Brick Viewer <brickv>` kann mit folgenden Befehlen installiert werden::
+
+ cd /home/pi
+ sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
+ wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ sudo dpkg -i brickv_linux_latest.deb
+
 
 Zugriff von Außen
 -----------------
