@@ -10,8 +10,13 @@ Hier wird beschrieben wie Bricks und Bricklets zusammen mit einem
 SD Karte vorbereiten
 --------------------
 
-Als erstes musst Debian auf einer SD Karte eingerichtet werden. Dazu muss zuerst
-das neuste Debian Image von `hier <http://www.raspberrypi.org/downloads>`__
+Als erstes musst Debian auf einer SD Karte eingerichtet werden. Hier gibt es 
+zwei verschiedene Versionen für das Raspberry Pi: Einmal "Raspbian" (armhf)
+und "Soft-Float Debian" (armel). Raspbian nutzt die Hardware Floating Point
+Unit von dem Board und wird empfohlen zu benutzen.
+
+Dazu muss zuerst
+das neuste Raspbian Image von `hier <http://www.raspberrypi.org/downloads>`__
 heruntergeladen werden. Diese `Anleitung <http://elinux.org/RPi_Easy_SD_Card_Setup>`__
 erklärt dann alles weitere.
 
@@ -29,19 +34,39 @@ Benutzername ist "pi" und das Password ist "raspberry".
 Brick Daemon und Brick Viewer installieren
 ------------------------------------------
 
-:ref:`Brick Daemon <brickd>` und :ref:`Brick Viewer <brickv>` können mit
+Der :ref:`Brick Viewer <brickv>` kann mit
 folgenden Befehlen installiert werden::
-
- cd /home/pi
- sudo apt-get install python-twisted python-gudev libusb-1.0-0
- wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
- sudo dpkg -i brickd_linux_latest_armhf.deb
 
  cd /home/pi
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
+
+Option 1: Wurde Debian **mit** Hardware Floating Point Unit Unterstützung (Raspbian) installiert,
+so kann der :ref:`Brick Daemon <brickd>` einfach mit folgenden Befehlen installiert werden::
+
+ cd /home/pi
+ sudo apt-get install python-twisted python-gudev libusb-1.0-0
+ wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ sudo dpkg -i brickd_linux_latest_armhf.deb
+
+Option 2: Wurde Debian **ohne** Hardware Floating Point Unit Unterstützung installiert,
+so muss der :ref:`Brick Daemon <brickd>` selbst kompiliert werden.
+
+Als erstes muss der Quelltext von der 
+`Download Seite <http://www.tinkerforge.com/en/doc/Downloads.html#tools>`__
+heruntergeladen werden und im home Verzeichnis platziert werden.
+
+Danach müssen folgende Schritte ausgeführt werden::
+
+ sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
+ cd /home/pi
+ unzip Tinkerforge-brickd-vX.X.X-X-***.zip (Dateiname anpassen)
+ cd Tinkerforge-brickd-vX.X.X-X-*** (Dateiname anpassen)
+ cd src/brickd
+ make
+ sudo make install
 
 Zugriff von Außen
 -----------------

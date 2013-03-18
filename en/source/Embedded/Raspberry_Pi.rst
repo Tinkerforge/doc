@@ -11,10 +11,16 @@ Prepare SD Card
 ---------------
 
 In the first step you have to set up Debian on a SD Card.
-Download the latest Debian image from
+There exist two different Debian images, one called "Raspbian" (armhf)
+and the other "Soft-Float Debian" (armel). Raspbian uses the hardware floating 
+point unit of the board and is recommended. 
+
+Download the latest "Raspbian" image from
 `here <http://www.raspberrypi.org/downloads>`__
 and follow the necessary steps of
 `this <http://elinux.org/RPi_Easy_SD_Card_Setup>`__ tutorial.
+
+
 
 
 Start Raspberry Pi
@@ -30,18 +36,38 @@ as username "pi" and as password "raspberry". You should be logged in.
 Set up Brick Daemon and Brick Viewer
 ------------------------------------
 
-To install the :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer <brickv>`
-software execute the following commands::
+To install the :ref:`Brick Viewer <brickv>` software execute the following 
+commands::
+
+ cd /home/pi
+ sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
+ wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ sudo dpkg -i brickv_linux_latest.deb
+
+Option 1: If you have installed an Debian **with** hardware floating point unit support
+(Raspbian) you can simply install the :ref:`Brick Daemon <brickd>` package by::
 
  cd /home/pi
  sudo apt-get install python-twisted python-gudev libusb-1.0-0
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
+Option 2: If you have installed an Debian **without** hardware floating point unit support,
+you have to compile :ref:`Brick Daemon <brickd>` from source.
+
+First you have to download the source code from the 
+`download page <http://www.tinkerforge.com/en/doc/Downloads.html#tools>`__
+and put it under the home directory.
+
+After this you have to execute the following steps::
+
+ sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
  cd /home/pi
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
- wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
- sudo dpkg -i brickv_linux_latest.deb
+ unzip Tinkerforge-brickd-vX.X.X-X-***.zip (modify filename)
+ cd Tinkerforge-brickd-vX.X.X-X-*** (modify filename)
+ cd src/brickd
+ make
+ sudo make install
 
 
 Access from outside
@@ -61,3 +87,4 @@ Reported Problems
 The USB port of the Raspberry Pi may not be able to handle the power
 that is needed by a big stack of Bricks and Bricklets. In this case you
 should use a :ref:`Step-Down Power Supply <step_down_power_supply>`.
+
