@@ -12,13 +12,18 @@ Starter Kit: Weather Station
 	               "Weather Station: Cosm graphs")
 	}}
 	{{
-	    tfdocimg("Kits/weather_station_website_350.jpg",
+	    tfdocimg("Kits/weather_station_lcd_all_100.jpg",
+	             "Kits/weather_station_lcd_all_orig.jpg",
+	             "Weather Station: Different Modes")
+	}}
+	{{
+	    tfdocimg("Kits/weather_station_website_100.jpg",
 	             "Kits/weather_station_website_orig.jpg",
 	             "Weather Station: Embedded in website")
 	}}
 	{{ tfdocend() }}
 
-The Starter Kit: Weather Station is... TODO
+The Starter Kit: Weather Station is 
 
 Firmware updating and first tests
 ---------------------------------
