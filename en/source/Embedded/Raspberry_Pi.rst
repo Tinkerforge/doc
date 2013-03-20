@@ -11,7 +11,11 @@ Prepare SD Card
 ---------------
 
 In the first step you have to set up Debian on a SD Card.
-Download the latest Debian image from
+There exist different Debian images, one called "Raspbian" (armhf)
+and the other "Soft-Float Debian" (armel). Raspbian uses the hardware floating 
+point unit (FPU) of the board and is the recommended image.
+
+Download the latest "Raspbian" image from
 `here <http://www.raspberrypi.org/downloads>`__
 and follow the necessary steps of
 `this <http://elinux.org/RPi_Easy_SD_Card_Setup>`__ tutorial.
@@ -27,16 +31,51 @@ At the end of the boot process you should see the a login prompt. Enter
 as username "pi" and as password "raspberry". You should be logged in.
 
 
-Set up Brick Daemon and Brick Viewer
-------------------------------------
+Install Brick Daemon
+--------------------
 
-To install the :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer <brickv>`
-software execute the following commands::
+How to set up Brick Daemon depends on the Debian image you're using.
+
+Raspbian (armhf)
+^^^^^^^^^^^^^^^^
+
+If you have installed an Debian **with** hardware floating point unit support
+(Raspbian) you can simply install the :ref:`Brick Daemon <brickd>` package by::
 
  cd /home/pi
- sudo apt-get install python-twisted python-gudev libusb-1.0-0
+ sudo apt-get install libusb-1.0-0 libudev
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
+
+
+Soft-Float Debian (armel)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have installed an Debian **without** hardware floating point unit support,
+you have to compile :ref:`Brick Daemon <brickd>` from source.
+
+First you have to download the source code from the 
+`download page <http://www.tinkerforge.com/en/doc/Downloads.html#tools>`__
+and put it under the home directory.
+
+After this you have to execute the following steps::
+
+ sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
+ cd /home/pi
+ unzip Tinkerforge-brickd-vX.Y.Z-W-***.zip (modify filename)
+ cd Tinkerforge-brickd-vX.Y.Z-W-*** (modify folder name)
+ cd src/brickd
+ make
+ sudo make install
+ update-rc.d brickd defaults
+ /etc/init.d/brickd start
+
+
+Install Brick Viewer
+--------------------
+
+To install the :ref:`Brick Viewer <brickv>` software execute the following
+commands::
 
  cd /home/pi
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
@@ -61,3 +100,4 @@ Reported Problems
 The USB port of the Raspberry Pi may not be able to handle the power
 that is needed by a big stack of Bricks and Bricklets. In this case you
 should use a :ref:`Step-Down Power Supply <step_down_power_supply>`.
+

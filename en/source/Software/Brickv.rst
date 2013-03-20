@@ -41,46 +41,40 @@ and test your Bricks and Bricklets.
    :align: center
    :target: ../_images/Screenshots/brickv_setup_tab.jpg
 
-The "Check for Updates" button opens a list with available updates.
-If you click on "Flashing" you can flash firmwares and plugins onto Bricks and
+The "Updates / Flashing" button opens a dialogue which shows available updates
+and let you flash firmwares and pluginsonto Bricks and
 Bricklets. If you click on "Advanced Functions" you can calibrate the
 analog-to-digital converts (ADC) of Bricks (see below).
 
 
-.. _brickv_adc_calibration:
+.. _brickv_auto_update:
 
-Brick ADC Calibration
-^^^^^^^^^^^^^^^^^^^^^
+Determine Software Versions / Search for Updates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have problems with inaccurate measurements (e.g. Linear Poti Bricklet
-does not reach the maximum or the voltage measurements in a stack is slightly off)
-it is possible that the calibration of the ADC is to blame.
+If you have started the Brick Viewer and connected it to
+a Brick Daemon or a Master Extension you can determine the
+current software versions and search for updates for
+all the connected hardware.
 
-To measure analog values, the microcontrollers
-on the Bricks have analog-to-digital converter (ADC). It is never guaranteed
-that an ADC on a microcontroller is perfectly calibrated. To overcome
-this problem, we make it possible to calibrate the ADC in your Bricks.
+To do this you have to press the "Updates / Flashing" button.
+A dialogue should open which shows you the current software versions.
+An orange entry tells you that a new version for this entry exist.
+A red entry tells you that the software for this entry has to be updated
+to work properly.
 
-For the calibration you need one of the potentiometer Bricklets (Rotary Poti
-or Linear Poti). Connect it to a Brick and click on "Advanced Functions" in
-the Setup tab of Brick Viewer:
-
-.. image:: /Images/Screenshots/brickv_advanced_functions_calibrate_small.jpg
+.. image:: /Images/Screenshots/brickv_auto_update_small.jpg
    :scale: 100 %
-   :alt: Brickv (ADC Calibration)
+   :alt: Brickv (Updates)
    :align: center
-   :target: ../_images/Screenshots/brickv_advanced_functions_calibrate.jpg
+   :target: ../_images/Screenshots/brickv_auto_update.jpg
 
-Choose the port your Poti Bricklet is connected to (A-D).
-Turn your Poti Bricklet completely to the left and press "Calibrate", then turn
-your Poti Bricklet completely to right and press "Calibrate" again. If your ADC
-wasn't calibrated well the gain and offset values should be different then
-the default values (4095 and 0).
+If you want, you can update all Bricklets with the click
+on "Auto-Update All Bricklets". Bricks can't be updated automatically,
+you have to update them one by one 
+(see :ref:`Brick Firmware Flashing <brickv_flash_firmware>`).
 
-You can test if the calibration works in
-principle by pressing "Calibrate" when the Poti Bricklet is in the middle position,
-then one of the values has to change (after that you have to recalibrate,
-of course).
+
 
 
 .. _brickv_flash_firmware:
@@ -150,7 +144,12 @@ Bricklet Plugin Flashing
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flashing of Bricklet plugins into the EEPROM of the Bricklet is
-possible in the flashing window. The latest plugins will be downloaded
+possible in two different ways. One possibility is to use the 
+"Auto-Update All Bricklets" feature 
+(see :ref:`Determine Software Versions <brickv_auto_update>`).
+
+If you want to flash one distinct Bricklet you can use the flashing window. 
+The latest plugins will be downloaded
 automatically and can be found :ref:`here <downloads_firmwares_plugins>` too.
 
 Flashing a Bricklet requires that it is connected to a Brick which is listed in
@@ -179,3 +178,40 @@ new one. Note that the UID has to be in Base58 encoding, valid characters are
 0-9, a-z and A-Z without 0 (zero), I (big i), O (big o) and l (small L).
 The only other restriction is that all Bricklet UIDs you use at the same
 time need to be unique, you can use recognizable names or patterns.
+
+
+.. _brickv_adc_calibration:
+
+Brick ADC Calibration
+^^^^^^^^^^^^^^^^^^^^^
+
+If you have problems with inaccurate measurements (e.g. Linear Poti Bricklet
+does not reach the maximum or the voltage measurements in a stack is slightly off)
+it is possible that the calibration of the ADC is to blame.
+
+To measure analog values, the microcontrollers
+on the Bricks have analog-to-digital converter (ADC). It is never guaranteed
+that an ADC on a microcontroller is perfectly calibrated. To overcome
+this problem, we make it possible to calibrate the ADC in your Bricks.
+
+For the calibration you need one of the potentiometer Bricklets (Rotary Poti
+or Linear Poti). Connect it to a Brick and click on "Advanced Functions" in
+the Setup tab of Brick Viewer:
+
+.. image:: /Images/Screenshots/brickv_advanced_functions_calibrate_small.jpg
+   :scale: 100 %
+   :alt: Brickv (ADC Calibration)
+   :align: center
+   :target: ../_images/Screenshots/brickv_advanced_functions_calibrate.jpg
+
+Choose the port your Poti Bricklet is connected to (A-D).
+Turn your Poti Bricklet completely to the left and press "Calibrate", then turn
+your Poti Bricklet completely to right and press "Calibrate" again. If your ADC
+wasn't calibrated well the gain and offset values should be different then
+the default values (4095 and 0).
+
+You can test if the calibration works in
+principle by pressing "Calibrate" when the Poti Bricklet is in the middle position,
+then one of the values has to change (after that you have to recalibrate,
+of course).
+

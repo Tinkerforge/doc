@@ -43,7 +43,7 @@ To install Brick Daemon from the console use the following::
 
  sudo apt-get install libusb-1.0-0 libudev0
 
- # On ARM (e.g. Raspberry PI)
+ # On ARM (e.g. Raspberry Pi)
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
@@ -66,15 +66,22 @@ To install Brick Daemon from source, download the source from `here
 <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
 * libusb-1.0-0-dev >= 1.0.8
-* libudev-dev >= 173 (Optional for Hotplug)
+* libudev-dev >= 173 (Optional for USB Hotplug)
 
 On Debian based distributions you can install the dependencies with apt-get::
 
- sudo apt-get install libusb-1.0-0-dev libudev-dev
+ sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
 
 On other distribution you have to search for and install the equivalent packages.
 
-To compile from source, change to the folder ``brickd/src/brickd/`` and run::
+To compile and install from source run::
 
+ cd src/brickd/
  make
- sudo ./brickd
+ sudo make install
+
+Run the following commands to register brickd for autostart on Debian based
+Linux distribution and start it::
+
+ update-rc.d brickd defaults
+ /etc/init.d/brickd start

@@ -333,7 +333,7 @@ For example, if we connect to the Weather Station via WIFI and we have
 regular auto reconnects, it likely means that the WIFI connection is not
 very stable.
 
-.. _starter_kit_weather_station_python_to_lcd_step_5
+.. _starter_kit_weather_station_python_to_lcd_step_5:
 
 Step 5: Everything put together
 -------------------------------

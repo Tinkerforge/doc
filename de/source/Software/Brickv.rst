@@ -43,46 +43,36 @@ Bricklets auf je einem eigenen Tab angezeigt und können getestet werden.
    :align: center
    :target: ../_images/Screenshots/brickv_setup_tab.jpg
 
-Ein Klick auf den "Check for Updates Knopf" öffnen einen Dialog mit Informationen
-über verfügbare Updates. Mittels des "Flashing" Knopfes kann ein Dialog zum
-Flashen neuer Firmwares und Plugins auf Bricks und Bricklets aufgerufen werden.
-Ein Klick auf den "Advanced Functions" Knopf öffnet einen Dialog zur Kalibrierung
-des Analog-Digital-Wandler eines Bricks.
+Ein Klick auf den "Updates / Flashing" öffnen einen Dialog mit Informationen
+über verfügbare Updates und der Möglichkeit Bricks und Bricklets
+neu zu flashen. Der "Advanced Functions" Knopf öffnet einen Dialog zur 
+Kalibrierung des Analog-Digital-Wandler eines Bricks.
 
 
-.. _brickv_adc_calibration:
+.. _brickv_auto_update:
 
-Brick AD-Wandler Kalibrierung
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aktuellen Stand bestimmen / Nach Updates suchen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Bei Problemen mit ungenauen Messungen (z.B. erreicht das Linear Poti Bricklet
-nicht den Maximalwert oder die Spannungsmessung im Stapel ist ungenau) kann
-die Kalibrierung des AD-Wandlers Schuld sein.
+Nach dem Start des Brick Viewers und dem Verbinden zu einem
+Brick Daemon oder einer Master Extension kann überprüft werden ob
+eine neuere Software für die angeschlossenen Geräte verfügbar ist.
 
-Der Mikrocontroller auf den Bricks verwendet einen Analog-Digital-Wandler um
-analoge Spannungen zu messen. Da der AD-Wandler nicht perfekt kalibriert ist
-kann dieser über den Brick Viewer nachkalibriert werden.
+Hierzu muss auf "Updates / Flashing" geklickt werden. Der Dialog
+zeigt die angeschlossenen Geräte und deren Software stand. Orange
+unterlegte Einträge können geupdated werden. Rot unterlegte Einträge
+müssen geupdated werden damit sie korrekt funktionieren.
 
-Für die Kalibrierung wird eines der Potentiometer Bricklets (Rotary Poti
-oder Linear Poti) benötigt. Verbinde es mit dem Brick und rufe den
-"Advanced Functions" Dialog im Brick Viewer auf:
-
-.. image:: /Images/Screenshots/brickv_advanced_functions_calibrate_small.jpg
+.. image:: /Images/Screenshots/brickv_auto_update_small.jpg
    :scale: 100 %
-   :alt: Brickv (AD-Wandler Kalibrierung)
+   :alt: Brickv (Updates)
    :align: center
-   :target: ../_images/Screenshots/brickv_advanced_functions_calibrate.jpg
+   :target: ../_images/Screenshots/brickv_auto_update.jpg
 
-Wähle den Port aus an dem das Poti Bricklet angeschlossen ist (A-D).
-Stelle dann das Poti Bricklet ganz nach links und klicke den "Calibrate" Knopf.
-Stelle das Poti Bricklet ganz nach rechts und klicke wieder den "Calibrate"
-Knopf. Falls der AD-Wandler nicht passend kalibriert war, dann weichen jetzt der
-Gain und Offset Wert von den Standardwerten ab (4095 und 0).
-
-Ob die Kalibrierung grundsätzlich funktioniert kann dadurch getestet werden,
-dass das Poti Bricklet in Mittelstellung gebracht und dann "Calibrate" geklickt
-wird. Dabei muss sich Gain oder Offset ändern (danach muss der AD-Wandler
-natürlich wieder korrekt kalibriert werden).
+Der Dialog ermöglicht es alle Bricklets gleichzeitig über den Knopf 
+"Auto-Update All Bricklets" auf die neuste Softwareversion zu bringen.
+Bricks können nicht automatisch auf den neusten Stand gebracht werden
+(siehe :ref:`Brick Firmware Flashing <brickv_flash_firmware>`). 
 
 
 .. _brickv_flash_firmware:
@@ -162,7 +152,11 @@ Firmware als lokale Datei über den "Browse..." Knopf ausgewählt werden.
 Bricklet Plugin Flashing
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Der Brick Viewer kann auch Plugins auf Bricklets flashen. Die
+Der Brick Viewer kann auch Plugins auf Bricklets flashen.
+Hierfür gibt es die Möglichkeit alle Bricklets auf die neuste Version zu 
+bringen (siehe "Auto-Update All Bricklets" unter 
+:ref:`Aktuellen Stand bestimmen <brickv_auto_update>`). Alternativ können
+Bricklets auch einzelnd geflasht werden. Die
 jeweils neuste Pluginversion wird dabei automatisch vom Brick Viewer
 ermittelt und heruntergeladen. Diese können aber auch manuell im
 :ref:`Downloadbereich <downloads_firmwares_plugins>` heruntergeladen werden.
@@ -195,3 +189,39 @@ werden. Die UID ist Base58 kodiert, die erlaubten Zeichen umfassen
 0-9, a-z und A-Z ohne 0 (Null), I (groß i), O (groß o) und l (klein L).
 Die einzige weitere Einschränkung ist, dass die UIDs aller Bricklets eindeutig
 sind.
+
+
+.. _brickv_adc_calibration:
+
+Brick AD-Wandler Kalibrierung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Bei Problemen mit ungenauen Messungen (z.B. erreicht das Linear Poti Bricklet
+nicht den Maximalwert oder die Spannungsmessung im Stapel ist ungenau) kann
+die Kalibrierung des AD-Wandlers Schuld sein.
+
+Der Mikrocontroller auf den Bricks verwendet einen Analog-Digital-Wandler um
+analoge Spannungen zu messen. Da der AD-Wandler nicht perfekt kalibriert ist
+kann dieser über den Brick Viewer nachkalibriert werden.
+
+Für die Kalibrierung wird eines der Potentiometer Bricklets (Rotary Poti
+oder Linear Poti) benötigt. Verbinde es mit dem Brick und rufe den
+"Advanced Functions" Dialog im Brick Viewer auf:
+
+.. image:: /Images/Screenshots/brickv_advanced_functions_calibrate_small.jpg
+   :scale: 100 %
+   :alt: Brickv (AD-Wandler Kalibrierung)
+   :align: center
+   :target: ../_images/Screenshots/brickv_advanced_functions_calibrate.jpg
+
+Wähle den Port aus an dem das Poti Bricklet angeschlossen ist (A-D).
+Stelle dann das Poti Bricklet ganz nach links und klicke den "Calibrate" Knopf.
+Stelle das Poti Bricklet ganz nach rechts und klicke wieder den "Calibrate"
+Knopf. Falls der AD-Wandler nicht passend kalibriert war, dann weichen jetzt der
+Gain und Offset Wert von den Standardwerten ab (4095 und 0).
+
+Ob die Kalibrierung grundsätzlich funktioniert kann dadurch getestet werden,
+dass das Poti Bricklet in Mittelstellung gebracht und dann "Calibrate" geklickt
+wird. Dabei muss sich Gain oder Offset ändern (danach muss der AD-Wandler
+natürlich wieder korrekt kalibriert werden).
+

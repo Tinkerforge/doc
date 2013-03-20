@@ -47,7 +47,7 @@ werden::
 
  sudo apt-get install libusb-1.0-0 libudev0
 
- # On ARM (e.g. Raspberry PI)
+ # On ARM (e.g. Raspberry Pi)
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
@@ -71,17 +71,24 @@ der `Quellcode von github <https://github.com/Tinkerforge/brickd>`__
 heruntergeladen werden. Es gibt folgende Abhängigkeiten:
 
 * libusb-1.0-0-dev >= 1.0.8
-* libudev-dev >= 173 (Optional für Hotplug)
+* libudev-dev >= 173 (Optional für USB Hotplug)
 
 Auf Debian basierten Distributionen können die Abhängigkeiten mit apt-get
 installiert werden::
 
- sudo apt-get install libusb-1.0-0-dev libudev-dev
+ sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
 
 Auf anderen Distributionen muss nach den äquivalenten Paketen gesucht werden.
 
-Der Brick Daemon kann mit den folgenden Befehlen aus brickd/src/brickd/
-compiliert und gestartet werden::
+Der Brick Daemon kann mit den folgenden Befehlen compiliert und installiert
+werden::
 
+ cd src/brickd/
  make
- sudo ./brickd
+ sudo make install
+
+Die folgenden Befehle registrieren brickd für Autostart auf Debian basierten
+Distribution und starten brickd::
+
+ update-rc.d brickd defaults
+ /etc/init.d/brickd start
