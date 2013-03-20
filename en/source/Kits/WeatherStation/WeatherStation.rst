@@ -110,7 +110,11 @@ Show Statistics with Button Control
 Since the LCD20x4 Bricklet features four buttons, we can enhance the first
 application by more data that can be switched with the buttons.
 
-TODO: Images of LCD20x4 with Graph etc
+.. image:: /Images/Kits/weather_station_lcd_all_orig.jpg
+   :scale: 100 %
+   :alt: Different modes of button control project 
+   :align: center
+   :target: ../../_images/Kits/weather_station_lcd_all_orig.jpg
 
 The four buttons in this project will be used to switch through
 
