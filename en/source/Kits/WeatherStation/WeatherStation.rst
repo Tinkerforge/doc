@@ -104,6 +104,22 @@ every 5 seconds, without the need to relaod the webpage.
 
 An example implementation is available in :ref:`PHP <starter_kit_weather_station_website>`.
 
+Show Statistics with Button Control
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Since the LCD20x4 Bricklet features four buttons, we can enhance the first
+application by more data that can be switched with the buttons.
+
+TODO: Images of LCD20x4 with Graph etc
+
+The four buttons in this project will be used to switch through
+
+* standard weather measurement,
+* 24h min/max/average,
+* 24h graph and
+* time and date.
+
+An example implementation is available in :ref:`C# <starter_kit_weather_station_button_control>`.
 
 Further Enhancements
 --------------------
