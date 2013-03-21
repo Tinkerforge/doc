@@ -25,6 +25,8 @@ Starter Kit: Weather Station
 
 The Starter Kit: Weather Station is 
 
+.. batti: introduction text of next parts
+
 Firmware updating and first tests
 ---------------------------------
 
@@ -49,6 +51,7 @@ Bricks and Bricklets have versions that work together and that
 everything will work if it is screwed together in the weather station
 enclosure.
 
+.. batti: screenshot brickv with all tabs?
 
 Construction
 ------------
@@ -58,20 +61,22 @@ TODO: Images of construction and instructions
 Projects
 --------
 
-Write Environment Measurements to LCD
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Display Environment Measurements on LCD
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The most obvious application of the Weather Station Starter Kit is to write
-the measurements of the environment to the LCD20x4 Bricklet. This can be 
+The most obvious application of the Weather Station Starter Kit is to display
+the measurements of the environment on the LCD20x4 Bricklet. This can be 
 done through three different paths:
 
 * USB connection to PC: Install brickd and application on PC, connect Master Brick of Weather Station to PC via USB.
 * WIFI connection to PC: Install application on PC, connect Weather Station directly over WiFi or through AP.
 * Raspberry PI or other embedded board integrated in Weather Station: Install brickd and application on embedded board, connect Master Brick of Weather Station to embedded board via USB.
 
+.. batti: link to further enhancement section? how to use rasp with weather station etc.
+
 All three possible solutions can use the same source code.
 
-Example implementations with step-by-step instructions are available for
+Example implementations with step-by-step instructions are available for:
 
 :ref:`C/C++ <starter_kit_weather_station_c_to_lcd>`, :ref:`C# <starter_kit_weather_station_csharp_to_lcd>`, :ref:`Delphi <starter_kit_weather_station_delphi_to_lcd>`, :ref:`Java <starter_kit_weather_station_java_to_lcd>`, :ref:`PHP <starter_kit_weather_station_php_to_lcd>`, :ref:`Python <starter_kit_weather_station_python_to_lcd>`, :ref:`Ruby <starter_kit_weather_station_ruby_to_lcd>`, :ref:`VB.NET <starter_kit_weather_station_vbnet_to_lcd>`.
 
@@ -82,6 +87,7 @@ Connect to Cosm
 Cosm is a service that provides the possibility to analyze and visualize
 the "Internet of Things". They can store a history of our Weather Station
 data and we get a neat graphs:
+.. batti: correct english "a neat graphs"?
 
 .. image:: /Images/Kits/weather_station_cosm_graphs_600.jpg
    :scale: 100 %

@@ -25,6 +25,8 @@ In the following we will show step-by-step how this can be achieved.
 Step 1: HTML and JavaScript
 ---------------------------
 
+.. batti: todo hint setup will follow later?
+
 Since this project is not about designing an actual website, we will
 leave the HTML as plain as possible:
 
@@ -143,7 +145,7 @@ that is served by a webserver, such as apache.
 If you haven't done anything like this, you should take a look at the
 `PHP installation guide <http://php.net/manual/en/install.php>`__.
 
-On the Ubuntu machine that this was tested on, we simple installed PHP
+This was tested on a Ubuntu machine, so we have simply installed PHP
 and apache via apt-get::
 
 	apt-get install apache2 php5
