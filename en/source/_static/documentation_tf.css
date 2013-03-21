@@ -486,10 +486,11 @@ div.rightside {
 }
 
 a.image-reference {
-	 display: block;
-	 margin-bottom: 20px; /* get some space below image */
-	 text-align: center;
-	 vertical-align: middle;
+	display: block;
+	margin-top: 15px; /* get some space above image */
+	margin-bottom: 15px; /* get some space below image */
+	text-align: center;
+	vertical-align: middle;
 }
 
 img.align-center {
@@ -545,6 +546,7 @@ div.center_table table tbody tr td{
 
 div.tfdocimages a {
 	display: block;
+	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
