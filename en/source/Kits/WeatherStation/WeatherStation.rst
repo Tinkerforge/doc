@@ -68,9 +68,13 @@ The most obvious application of the Weather Station Starter Kit is to display
 the measurements of the environment on the LCD20x4 Bricklet. This can be 
 done through three different paths:
 
-* USB connection to PC: Install brickd and application on PC, connect Master Brick of Weather Station to PC via USB.
-* WIFI connection to PC: Install application on PC, connect Weather Station directly over WiFi or through AP.
-* Raspberry PI or other embedded board integrated in Weather Station: Install brickd and application on embedded board, connect Master Brick of Weather Station to embedded board via USB.
+* USB connection to PC: Install brickd and application on PC, connect
+  Master Brick of Weather Station to PC via USB.
+* WIFI connection to PC: Install application on PC, connect
+  Weather Station directly over WiFi or through AP.
+* Raspberry PI or other embedded board integrated in Weather Station:
+  Install brickd and application on embedded board, connect Master Brick of
+  Weather Station to embedded board via USB.
 
 .. batti: link to further enhancement section? how to use rasp with weather station etc.
 
@@ -78,8 +82,14 @@ All three possible solutions can use the same source code.
 
 Example implementations with step-by-step instructions are available for:
 
-:ref:`C/C++ <starter_kit_weather_station_c_to_lcd>`, :ref:`C# <starter_kit_weather_station_csharp_to_lcd>`, :ref:`Delphi <starter_kit_weather_station_delphi_to_lcd>`, :ref:`Java <starter_kit_weather_station_java_to_lcd>`, :ref:`PHP <starter_kit_weather_station_php_to_lcd>`, :ref:`Python <starter_kit_weather_station_python_to_lcd>`, :ref:`Ruby <starter_kit_weather_station_ruby_to_lcd>`, :ref:`VB.NET <starter_kit_weather_station_vbnet_to_lcd>`.
-
+:ref:`C/C++ <starter_kit_weather_station_c_to_lcd>`,
+:ref:`C# <starter_kit_weather_station_csharp_to_lcd>`,
+:ref:`Delphi <starter_kit_weather_station_delphi_to_lcd>`,
+:ref:`Java <starter_kit_weather_station_java_to_lcd>`,
+:ref:`PHP <starter_kit_weather_station_php_to_lcd>`,
+:ref:`Python <starter_kit_weather_station_python_to_lcd>`,
+:ref:`Ruby <starter_kit_weather_station_ruby_to_lcd>`,
+:ref:`VB.NET <starter_kit_weather_station_vbnet_to_lcd>`.
 
 Connect to Cosm
 ^^^^^^^^^^^^^^^
@@ -96,7 +106,8 @@ data and we get a neat graphs:
    :target: ../../_images/Kits/weather_station_cosm_graphs_orig.jpg
 
 An example implementation with step-by-step instructions that shares the 
-weather data with cosm is available in :ref:`Python <starter_kit_weather_station_cosm>`.
+weather data with cosm is available
+in :ref:`Python <starter_kit_weather_station_cosm>`.
 
 Embed Live Measurements on Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -113,7 +124,8 @@ on a website:
 In this project we will use JavaScript/AJAX to update the measurements
 every 5 seconds, without the need to relaod the webpage.
 
-An example implementation is available in :ref:`PHP <starter_kit_weather_station_website>`.
+An example implementation is available
+in :ref:`PHP <starter_kit_weather_station_website>`.
 
 Show Statistics with Button Control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -134,7 +146,8 @@ The four buttons in this project will be used to switch through
 * 24h graph and
 * time and date.
 
-An example implementation is available in :ref:`C# <starter_kit_weather_station_button_control>`.
+An example implementation is available
+in :ref:`C# <starter_kit_weather_station_button_control>`.
 
 Further Enhancements
 --------------------

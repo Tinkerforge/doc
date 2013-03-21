@@ -32,19 +32,19 @@ leave the HTML as plain as possible:
 
 .. code-block:: html
 
-	<!DOCTYPE html>
-	<html>
-	  <head>
-		<meta charset="utf-8" />
-		<title>Tinkerforge Weather Station</title>
-	  </head>
-	  <body>
-		<p id="illuminance">TBD</p>
-		<p id="humidity">TBD</p>
-		<p id="air_pressure">TBD</p>
-		<p id="temperature">TBD</p>
-	  </body>
-	</html>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <title>Tinkerforge Weather Station</title>
+      </head>
+      <body>
+        <p id="illuminance">TBD</p>
+        <p id="humidity">TBD</p>
+        <p id="air_pressure">TBD</p>
+        <p id="temperature">TBD</p>
+      </body>
+    </html>
 
 The inner text of the four paragraphs will be replaced by javascript with
 data that is provided by a PHP script over AJAX:
@@ -89,42 +89,42 @@ Bricklets:
 
 .. code-block:: php
 
-	<?php
-	require_once('Tinkerforge/IPConnection.php');
-	require_once('Tinkerforge/BrickletAmbientLight.php');
-	require_once('Tinkerforge/BrickletHumidity.php');
-	require_once('Tinkerforge/BrickletBarometer.php');
+    <?php
+    require_once('Tinkerforge/IPConnection.php');
+    require_once('Tinkerforge/BrickletAmbientLight.php');
+    require_once('Tinkerforge/BrickletHumidity.php');
+    require_once('Tinkerforge/BrickletBarometer.php');
 
-	use Tinkerforge\IPConnection;
-	use Tinkerforge\BrickletAmbientLight;
-	use Tinkerforge\BrickletHumidity;
-	use Tinkerforge\BrickletBarometer;
+    use Tinkerforge\IPConnection;
+    use Tinkerforge\BrickletAmbientLight;
+    use Tinkerforge\BrickletHumidity;
+    use Tinkerforge\BrickletBarometer;
 
-	$ipcon = new IPConnection();
-	$brickletAmbientLight = new BrickletAmbientLight("apy", $ipcon);
-	$brickletHumidity = new BrickletHumidity("7bA", $ipcon);
-	$brickletBarometer = new BrickletBarometer("d99", $ipcon);
+    $ipcon = new IPConnection();
+    $brickletAmbientLight = new BrickletAmbientLight("apy", $ipcon);
+    $brickletHumidity = new BrickletHumidity("7bA", $ipcon);
+    $brickletBarometer = new BrickletBarometer("d99", $ipcon);
 
-	$ipcon->connect("localhost", 4223);
-	?>
+    $ipcon->connect("localhost", 4223);
+    ?>
 
 Then get the values and package them in a response array:
 
 .. code-block:: php
 
-	<?php
-	$illuminance = $brickletAmbientLight->getIlluminance()/10.0;
-	$humidity = $brickletHumidity->getHumidity()/10.0;
-	$air_pressure = $brickletBarometer->getAirPressure()/1000.0;
-	$temperature = $brickletBarometer->getChipTemperature()/100.0;
+    <?php
+    $illuminance = $brickletAmbientLight->getIlluminance()/10.0;
+    $humidity = $brickletHumidity->getHumidity()/10.0;
+    $air_pressure = $brickletBarometer->getAirPressure()/1000.0;
+    $temperature = $brickletBarometer->getChipTemperature()/100.0;
 
-	$response = array (
-		"illuminance"  => "Illuminance: $illuminance Lux",
-		"humidity"     => "Humidity: $humidity %RH",
-		"air_pressure" => "Air Pressure: $air_pressure mbar",
-		"temperature"  => "Temperature: $temperature °C",
-	);
-	?>
+    $response = array (
+        "illuminance"  => "Illuminance: $illuminance Lux",
+        "humidity"     => "Humidity: $humidity %RH",
+        "air_pressure" => "Air Pressure: $air_pressure mbar",
+        "temperature"  => "Temperature: $temperature °C",
+    );
+    ?>
 
 Here you have to change the UIDs ("apy", "7bA" and "d99") by the UIDs
 of your own Bricklets.
@@ -133,7 +133,9 @@ Lastely, we print the response in JSON format:
 
 .. code-block:: php
 
-	print_r(json_encode($response));
+    <?php
+    print_r(json_encode($response));
+    ?>
 
 
 Step 3: Everything put together
@@ -148,80 +150,20 @@ If you haven't done anything like this, you should take a look at the
 This was tested on a Ubuntu machine, so we have simply installed PHP
 and apache via apt-get::
 
-	apt-get install apache2 php5
+    apt-get install apache2 php5
 
-and put both of the files in /var/www/
+and put both of the files in ``/var/www/``
 
-weather.html (`download <todo>`__):
+weather.html (`download <https://raw.github.com/Tinkerforge/weather-station/master/website/php/weather.html>`__):
 
-.. code-block:: html
+.. literalinclude:: ../../../../../weather-station/website/php/weather.html
+ :language: html
+ :linenos:
+ :tab-width: 4
 
-	<!DOCTYPE html>
-	<html>
-	  <head>
-		<meta charset="utf-8" />
-		<title>Tinkerforge Weather Station</title>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-		<script type="text/javascript">
-		  function updateMeasurements(){
-			$.ajax({
-			  url: "WeatherStationWebsite.php",
-			  type: "POST",
-			  success: function(data) {
-				var response = $.parseJSON(data);
-				document.getElementById('illuminance').innerHTML = response.illuminance;
-				document.getElementById('humidity').innerHTML = response.humidity;
-				document.getElementById('air_pressure').innerHTML = response.air_pressure;
-				document.getElementById('temperature').innerHTML = response.temperature;
-			  }
-			});
-		  }
+WeatherStationWebsite.php (`download <https://raw.github.com/Tinkerforge/weather-station/master/website/php/WeatherStationWebsite.php>`__):
 
-		  updateMeasurements();
-		  setInterval(updateMeasurements, 5000);
-		</script>
-	  </head>
-	  <body>
-		<p id="illuminance">TBD</p>
-		<p id="humidity">TBD</p>
-		<p id="air_pressure">TBD</p>
-		<p id="temperature">TBD</p>
-	  </body>
-	</html>
-
-WeatherStationWebsite.php (`download <todo>`__):
-
-.. code-block:: php
-
-	<?php
-	require_once('Tinkerforge/IPConnection.php');
-	require_once('Tinkerforge/BrickletAmbientLight.php');
-	require_once('Tinkerforge/BrickletHumidity.php');
-	require_once('Tinkerforge/BrickletBarometer.php');
-
-	use Tinkerforge\IPConnection;
-	use Tinkerforge\BrickletAmbientLight;
-	use Tinkerforge\BrickletHumidity;
-	use Tinkerforge\BrickletBarometer;
-
-	$ipcon = new IPConnection();
-	$brickletAmbientLight = new BrickletAmbientLight("apy", $ipcon);
-	$brickletHumidity = new BrickletHumidity("7bA", $ipcon);
-	$brickletBarometer = new BrickletBarometer("d99", $ipcon);
-
-	$ipcon->connect("localhost", 4223);
-
-	$illuminance = $brickletAmbientLight->getIlluminance()/10.0;
-	$humidity = $brickletHumidity->getHumidity()/10.0;
-	$air_pressure = $brickletBarometer->getAirPressure()/1000.0;
-	$temperature = $brickletBarometer->getChipTemperature()/100.0;
-
-	$response = array (
-		"illuminance"  => "Illuminance: $illuminance Lux",
-		"humidity"     => "Humidity: $humidity %RH",
-		"air_pressure" => "Air Pressure: $air_pressure mbar",
-		"temperature"  => "Temperature: $temperature °C",
-	);
-
-	print_r(json_encode($response));
-	?>
+.. literalinclude:: ../../../../../weather-station/website/php/WeatherStationWebsite.php
+ :language: php
+ :linenos:
+ :tab-width: 4
