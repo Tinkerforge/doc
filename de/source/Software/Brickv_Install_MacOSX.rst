@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../Software.html">Software</a> / <a href="Brickv.html">Brick Viewer (brickv)</a> / Brick Viewer Installation auf Mac OS X
+
 .. _brickv_install_macosx:
 
 Brick Viewer Installation auf Mac OS X

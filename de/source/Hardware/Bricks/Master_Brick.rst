@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricks">Bricks</a> / Master Brick
+
 .. include:: Master_Brick.substitutions
 
 

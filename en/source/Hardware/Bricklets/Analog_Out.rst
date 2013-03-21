@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Analog Out Bricklet
+
 .. include:: Analog_Out.substitutions
 
 

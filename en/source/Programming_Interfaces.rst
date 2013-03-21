@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="index.html">Home</a> / Programming Interfaces
+
 .. _pi:
 
 Programming Interfaces

@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../Software.html">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Java - API Bindings
+
 .. _api_bindings_java:
 
 Java - API Bindings

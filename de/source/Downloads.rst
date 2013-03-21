@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="index.html">Startseite</a> / Downloads
+
 .. _downloads:
 
 Downloads

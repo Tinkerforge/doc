@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricklets">Bricklets</a> / GPS Bricklet
+
 .. include:: GPS.substitutions
 
 

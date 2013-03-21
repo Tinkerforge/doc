@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricks">Bricks</a> / Servo Brick
+
 .. include:: Servo_Brick.substitutions
 
 

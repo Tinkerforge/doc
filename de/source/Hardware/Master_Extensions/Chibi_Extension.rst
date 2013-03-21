@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#master-extensions">Master Extensions</a> / Chibi Extension
+
 .. _chibi_extension:
 
 Chibi Extension

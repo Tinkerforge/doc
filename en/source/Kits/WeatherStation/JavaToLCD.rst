@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using Java to write to LCD 20x4 Bricklet
+
 .. _starter_kit_weather_station_java_to_lcd:
 
 Using Java to write to LCD 20x4 Bricklet

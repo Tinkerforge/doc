@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../Software.html">Software</a> / Brick Daemon (brickd)
+
 .. _brickd:
 
 Brick Daemon (brickd)

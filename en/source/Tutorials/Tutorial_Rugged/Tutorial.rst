@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Tutorials.html">Tutorials</a> / Rugged Approach
+
 .. _tutorial_rugged_approach:
 
 Rugged Approach

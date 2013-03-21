@@ -15,10 +15,25 @@
 body {
 }
 
+div.breadcrumbs-container {
+	width: 998px;
+	margin: 0px auto;
+}
+
+div.breadcrumbs {
+	font-size: 11px;
+	padding: 11px 5px 2px 5px;
+	color: #000;
+}
+
+div.breadcrumbs a {
+	color: #000;
+}
+
 div.boxContent3{
 	width: 998px;
 	margin: 10px auto;
-	background: #fff;	
+	background: #fff;
 }
 
 #tfcontent{

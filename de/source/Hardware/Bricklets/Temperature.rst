@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricklets">Bricklets</a> / Temperature Bricklet
+
 .. include:: Temperature.substitutions
 
 

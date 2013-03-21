@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Startseite</a> / Firmwares und Plugins
+
 .. _firmwares_and_plugins:
 
 Firmwares und Plugins

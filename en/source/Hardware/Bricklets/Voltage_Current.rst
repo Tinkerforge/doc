@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Voltage/Current Bricklet
+
 .. include:: Voltage_Current.substitutions
 
 

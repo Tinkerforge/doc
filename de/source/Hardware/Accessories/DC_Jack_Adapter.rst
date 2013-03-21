@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#zubehor">Zubehör</a> / DC Jack Adapter
+
 .. _dc_jack_adapter:
 
 DC Jack Adapter

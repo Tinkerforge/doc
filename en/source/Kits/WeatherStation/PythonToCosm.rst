@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using Python to upload weather data to Cosm
+
 .. _starter_kit_weather_station_cosm:
 
 Using Python to upload weather data to Cosm

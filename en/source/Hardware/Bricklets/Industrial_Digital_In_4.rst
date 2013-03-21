@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Industrial Digital In 4 Bricklet
+
 .. include:: Industrial_Digital_In_4.substitutions
 
 

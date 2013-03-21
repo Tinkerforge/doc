@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#power-supplies">Power Supplies</a> / Step-Down Power Supply
+
 .. _step_down_power_supply:
 
 Step-Down Power Supply

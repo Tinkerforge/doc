@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../Software.html">Software</a> / Firmwares and Plugins
+
 .. _firmwares_and_plugins:
 
 Firmwares and Plugins

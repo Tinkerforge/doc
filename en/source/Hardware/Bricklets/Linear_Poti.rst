@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Linear Poti Bricklet
+
 .. include:: Linear_Poti.substitutions
 
 

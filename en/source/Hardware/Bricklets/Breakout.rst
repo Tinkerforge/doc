@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Breakout Bricklet
+
 .. _breakout_bricklet:
 
 Breakout Bricklet

@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../Software.html">Software</a> / <a href="Brickd.html">Brick Daemon (brickd)</a> / Brick Daemon Installation on Mac OS X
+
 .. _brickd_install_macosx:
 
 Brick Daemon Installation on Mac OS X

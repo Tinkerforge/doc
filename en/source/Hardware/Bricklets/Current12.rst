@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Current12 Bricklet
+
 .. include:: Current12.substitutions
 
 

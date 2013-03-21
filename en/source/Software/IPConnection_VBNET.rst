@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#ip-connection">IP Connection</a> / Visual Basic .NET - IP Connection
+
 .. _ipcon_vbnet:
 
 Visual Basic .NET - IP Connection

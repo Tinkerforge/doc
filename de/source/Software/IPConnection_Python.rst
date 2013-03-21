@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#ip-connection">IP Connection</a> / Python - IP Connection
+
 .. _ipcon_python:
 
 Python - IP Connection

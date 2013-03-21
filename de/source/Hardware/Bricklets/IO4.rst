@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricklets">Bricklets</a> / IO-4 Bricklet
+
 .. include:: IO4.substitutions
 
 

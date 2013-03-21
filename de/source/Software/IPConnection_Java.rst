@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#ip-connection">IP Connection</a> / Java - IP Connection
+
 .. _ipcon_java:
 
 Java - IP Connection

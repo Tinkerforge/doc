@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / LCD 20x4 Bricklet
+
 .. include:: LCD_20x4.substitutions
 
 

@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../Software.html">Software</a> / <a href="API_Bindings.html">API Bindings</a> / C# (Windows Phone) - API Bindings
+
 .. _api_bindings_csharp_windows_phone:
 
 C# (Windows Phone) - API Bindings

@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../Software.html">Software</a> / API Bindings
+
 .. _api_bindings:
 
 API Bindings

@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / Starter Kit: Weather Station
+
 .. _starter_kit_weather_station:
 
 Starter Kit: Weather Station

@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="index.html">Home</a> / Source Code and Bug Tracking
+
 .. _source_code:
 
 Source Code and Bug Tracking

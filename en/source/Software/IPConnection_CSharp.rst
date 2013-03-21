@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#ip-connection">IP Connection</a> / C# - IP Connection
+
 .. _ipcon_csharp:
 
 C# - IP Connection

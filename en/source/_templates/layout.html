@@ -48,7 +48,7 @@
 {% block sidebar1 %}{{ sidebar() }}{% endblock %}
 {% block sidebar2 %}{% endblock %}
 
-{% block relbar1 %}<div id="tfcontent"><div class="boxContent3">{% endblock %}
+{% block relbar1 %}<div id="tfcontent">{% if meta %}<div class="breadcrumbs-container"><div class="breadcrumbs">{{ meta['breadcrumbs'] }}</div></div>{% endif %}<div class="boxContent3">{% endblock %}
 {% block relbar2 %}</div></div>{% endblock %}
 
 {% block sidebarsourcelink %}{% endblock %}

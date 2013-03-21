@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#master-extensions">Master Extensions</a> / WIFI Extension
+
 .. _wifi_extension:
 
 WIFI Extension

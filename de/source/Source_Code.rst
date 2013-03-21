@@ -1,3 +1,6 @@
+
+:breadcrumbs: <a href="index.html">Startseite</a> / Quelltexte und Bug Tracking
+
 .. _source_code:
 
 Quelltexte und Bug Tracking
