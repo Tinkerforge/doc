@@ -26,7 +26,7 @@ Starter Kit: Weather Station
 The Starter Kit: Weather Station is a fully-fledged open source weather
 station. It can measure temperature, humidity, air pressure and illuminance.
 
-It can be controlled by a PC or a Raspberry PI over USB or (if the WIFI
+It can be controlled by a PC or a Raspberry Pi over USB or (if the WIFI
 Extension is added) over Wi-Fi. The measurements can be displayed on the
 20x4 LCD, they can be shown on a website or uploaded to cosm. With the
 4 Buttons of the LCD20x4 Bricklet it is possible to control different
@@ -85,9 +85,9 @@ done through three different paths:
 
 * USB connection to PC: Install brickd and application on PC, connect
   Master Brick of Weather Station to PC via USB.
-* WiFi connection to PC: Install application on PC, connect
-  Weather Station directly over WiFi or through AP.
-* Raspberry PI or other embedded board integrated in Weather Station:
+* Wi-Fi connection to PC: Install application on PC, connect to
+  Weather Station directly over Wi-Fi or through an access point.
+* Raspberry Pi or other embedded board integrated in Weather Station:
   Install brickd and application on embedded board, connect Master Brick of
   Weather Station to embedded board via USB.
 

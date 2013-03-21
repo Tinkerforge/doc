@@ -119,8 +119,8 @@ There are two reasons why the utilized approach makes sense:
    can use the data for statistics.
 2. By using callbacks with a 1s interval and a separate timer with a 1s
    interval, we can easily overcome short connection losses or similar.
-   For example: If the Weather Station is controlled over WiFi and the
-   WiFi connection is lost for 30s, we will just use the latest value that
+   For example: If the Weather Station is controlled over Wi-Fi and the
+   Wi-Fi connection is lost for 30s, we will just use the latest value that
    was retrieved for these 30s. If we would be using Getters for this, we would
    have to handle a timeout for each of the measurements. Since the standard
    timeout time of 2.5s is longer then our 1s interval, a timeout would

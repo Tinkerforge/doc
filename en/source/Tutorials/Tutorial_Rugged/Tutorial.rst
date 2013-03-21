@@ -42,7 +42,7 @@ needs to be reconfigured.
 
 In the following you can find source codes for a program that shows the
 temperature on a LCD 20x4 Bricklet. This program should keep working if
-you reconnect/restart the Master Brick or if a WiFi connection is lost.
+you reconnect/restart the Master Brick or if a Wi-Fi connection is lost.
 It is even possible to exchange the Temperature or LCD 20x4 Bricklet, since
 the program uses the UID from the enumeration.
 

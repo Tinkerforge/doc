@@ -45,7 +45,7 @@ neugestartet wird und deshalb neu konfiguriert werden muss.
 
 Im Folgenden befinden sich Quelltexte für ein Programm, dass eine Temperatur
 auf einem LCD 20x4 Bricklet anzeigt. Dieses Programm sollte auch bei einem
-Neustart des Master Bricks oder eine verlorenen WiFi Verbindung weiter
+Neustart des Master Bricks oder eine verlorenen Wi-Fi Verbindung weiter
 funktionieren. Es ist sogar möglich das Temperature oder LCD 20x4 Bricklet
 auszutauschen, da das Programm die UID aus der Enumerierung benutzt.
 

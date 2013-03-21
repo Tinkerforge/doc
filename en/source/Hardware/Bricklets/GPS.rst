@@ -59,7 +59,7 @@ as well as high precise time and date information.
 The used GPS module is optimized to get a fast fix, has a high input
 sensitivity (-165dBm) and a update rate of 10Hz suitable for drones or the like.
 Internal interference canceller rejects RF interference from other devices
-like Bluetooth or WIFI.
+like Bluetooth or Wi-Fi.
 
 Technical Specifications
 ------------------------

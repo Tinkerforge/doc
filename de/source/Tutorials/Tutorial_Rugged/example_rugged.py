@@ -9,7 +9,7 @@ from tinkerforge.bricklet_temperature import Temperature
 # are connected to the PC and display the temperature on the LCD.
 #
 # The program should stay stable if Bricks are connected/disconnected,
-# if the Brick Daemon is restarted or if a WiFi/RS485 connection is lost.
+# if the Brick Daemon is restarted or if a Wi-Fi/RS485 connection is lost.
 # It will also keep working if you exchange the Master or one of the
 # Bricklets by a new one of the same type.
 #
