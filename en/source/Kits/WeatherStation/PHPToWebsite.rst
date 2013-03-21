@@ -141,7 +141,7 @@ Lastely, we print the response in JSON format:
 Step 3: Everything put together
 -------------------------------
 
-Thats it! Now we have to put the HTML and the PHP file in a directory
+That's it! Now we have to put the HTML and the PHP file in a directory
 that is served by a webserver, such as apache.
 
 If you haven't done anything like this, you should take a look at the
@@ -152,16 +152,22 @@ and apache via apt-get::
 
     apt-get install apache2 php5
 
-and put both of the files in ``/var/www/``
+and put both of the files in ``/var/www/``.
 
-weather.html (`download <https://raw.github.com/Tinkerforge/weather-station/master/website/php/weather.html>`__):
+.. image:: /Images/Kits/weather_station_website_orig.jpg
+   :scale: 100 %
+   :alt: Live Measurements on Website
+   :align: center
+   :target: ../../_images/Kits/weather_station_website_orig.jpg
+
+``weather.html`` (`download <https://raw.github.com/Tinkerforge/weather-station/master/website/php/weather.html>`__):
 
 .. literalinclude:: ../../../../../weather-station/website/php/weather.html
  :language: html
  :linenos:
  :tab-width: 4
 
-WeatherStationWebsite.php (`download <https://raw.github.com/Tinkerforge/weather-station/master/website/php/WeatherStationWebsite.php>`__):
+``WeatherStationWebsite.php`` (`download <https://raw.github.com/Tinkerforge/weather-station/master/website/php/WeatherStationWebsite.php>`__):
 
 .. literalinclude:: ../../../../../weather-station/website/php/WeatherStationWebsite.php
  :language: php

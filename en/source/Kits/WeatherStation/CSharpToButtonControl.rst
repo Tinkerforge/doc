@@ -195,6 +195,8 @@ The four modes are:
 Step 3: Show four modes on display
 ----------------------------------
 
+The implementation of the four modes.
+
 Standard Mode
 ^^^^^^^^^^^^^
 
@@ -381,7 +383,7 @@ language.
 Step 4: Everything put together
 -------------------------------
 
-Thats it! Now we have a Weather Station with four different modes
+That's it! Now we have a Weather Station with four different modes
 that can be controlled with the LCD20x4 Bricklet buttons.
 
 This is of course still very elementary. There is lots of room

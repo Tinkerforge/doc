@@ -1,7 +1,7 @@
 .. _starter_kit_weather_station_cosm:
 
-Using Python to upload weather measurements to Cosm
-===================================================
+Using Python to upload weather data to Cosm
+===========================================
 
 For this project we are assuming, that you have a Python environment set up 
 and that you have a rudimentary understanding of the Python language.
@@ -116,7 +116,7 @@ We just have to use the put function whenever a new measurement arrives:
                 text = 'Illuminanc %s lx' % self.fmt(illuminance/10.0, 3)
                 self.lcd.write_line(0, 0, text)
 
-                # Here we add illuminance to cosm with ID "AmbientLight"
+                # Here we add illuminance to Cosm with ID "AmbientLight"
                 self.cosm.put('AmbientLight', illuminance/10.0) 
                 log.info('Write to line 0: ' + text)
         # [...]
@@ -197,9 +197,9 @@ uploading and adding of data could be protected by a mutex to ensure that we
 don't add data while it is uploaded and thus remove the newly added data
 after the uploading finished.
 
-But if you put everything of the above together, you have a working 
-Weather Station that uploads the weather measurements to Cosm
-(`download <https://raw.github.com/Tinkerforge/weather-station/master/cosm/python/weather_cosm.py>`__):
+But if you put everything of the above together
+(`download <https://raw.github.com/Tinkerforge/weather-station/master/cosm/python/weather_cosm.py>`__),
+you have a working Weather Station that uploads the weather measurements to Cosm:
 
 .. literalinclude:: ../../../../../weather-station/cosm/python/weather_cosm.py
  :language: python

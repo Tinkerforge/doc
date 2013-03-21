@@ -33,17 +33,19 @@ In the following we will show step-by-step how this can be achieved.
 Step 1: Discover Bricks and Bricklets
 -------------------------------------
 
-To start off, we need to define where our program should connect to::
+To start off, we need to define where our program should connect to:
+
+.. code-block:: python
 
     HOST = "localhost"
     PORT = 4223
 
 If the WIFI Extension is used or if the Brick Daemon is
 running on a different PC, you have to exchange "localhost" with the
-IP or hostname of the WIFI Extension or PC.
+IP address or hostname of the WIFI Extension or PC.
 
 When the program is first initialized, we need to register the enumerate
-and connected calllbacks and trigger a first enumerate:
+and connected callbacks and trigger a first enumerate:
 
 .. code-block:: python
 
@@ -58,8 +60,13 @@ and connected calllbacks and trigger a first enumerate:
 
         self.ipcon.enumerate()
 
-In the connected callback we need to trigger the enumerate again, if
-the reason is an auto reconnect:
+The enumerate callback is triggered if a Brick gets connected over USB or if
+the enumerate function is called. This allows to discover the Bricks and
+Bricklets in a stack without knowing their types or UIDs beforehand.
+
+The connected callback is triggered if the connection to the WIFI Extension or
+to the Brick Daemon got established. In this callback we need to trigger the
+enumerate again, if the reason is an auto reconnect:
 
 .. code-block:: python
 
@@ -105,8 +112,8 @@ Bricklets. Doing this during the enumeration ensures that Bricklets get
 reconfigured if they were disconnected or there was a power loss.
 
 The configurations should be performed on first startup 
-(ENUMERATION_TYPE_CONNECTED) as well as whenever the enumeration is triggered
-externaly by us (ENUMERATION_TYPE_AVAILABLE):
+(``ENUMERATION_TYPE_CONNECTED``) as well as whenever the enumeration is triggered
+externaly by us (``ENUMERATION_TYPE_AVAILABLE``):
 
 .. code-block:: python
 
@@ -126,7 +133,7 @@ we want the backlight on:
                 self.lcd.backlight_on()
 
 We configure the Ambient Light, Humidity and Barometer Bricklet to
-return their respective measurments continuously with a period of
+return their respective measurements continuously with a period of
 1000ms (1s):
 
 .. code-block:: python
@@ -179,7 +186,6 @@ Step 2 put together:
                 self.baro.register_callback(self.baro.CALLBACK_AIR_PRESSURE,
                                             self.cb_air_pressure)
 
-
 Step 3: Show measurements on display
 ------------------------------------
 
@@ -192,7 +198,8 @@ We want a neat arrangement of the measurements on the display, such as::
 
 The decimal marks and the units should be below each other. To achieve this
 we use two characters for the unit, two decimal places and crop the name
-to use the maximum characters that are left:
+to use the maximum characters that are left. That's why "Illuminanc" is missing
+its final "e".
 
 .. code-block:: python
 
@@ -276,14 +283,14 @@ Step 3 put together:
         text = 'Temperature %s \xDFC' % fmt_text
         self.lcd.write_line(3, 0, text)
 
-Thats it. If we would copy these three steps together in one file and
+That's it. If we would copy these three steps together in one file and
 execute it, we would have a working Weather Station!
 
 There are some obvious ways to make the output better.
 The name could be cropped according to the exact space that is available
-(dependent on the number of digits of the measured value). Also, to
-read the temperature in the humidity callback is suboptimal. If the
-humidity doesn't change, we won't update the temperature. It would be better
+(depending on the number of digits of the measured value). Also,
+reading the temperature in the air pressure callback is suboptimal. If the
+air pressure doesn't change, we won't update the temperature. It would be better
 to read the temperature in a different thread in an endless loop with a
 one second sleep after each read. But we want to keep this code as simple
 as possible.
@@ -356,8 +363,8 @@ Additionally we added some logging. With the logging we can later find out
 what exactly caused a problem, when the Weather Station failed for some
 time period.
 
-For example, if we connect to the Weather Station via WiFi and we have
-regular auto reconnects, it likely means that the WiFi connection is not
+For example, if we connect to the Weather Station via Wi-Fi and we have
+regular auto reconnects, it likely means that the Wi-Fi connection is not
 very stable.
 
 .. _starter_kit_weather_station_python_to_lcd_step_5:
@@ -365,7 +372,7 @@ very stable.
 Step 5: Everything put together
 -------------------------------
 
-Thats it! We are already done with our Weather Station and all of the
+That's it! We are already done with our Weather Station and all of the
 goals should be met.
 
 Now all of the above put together (`download <https://raw.github.com/Tinkerforge/weather-station/master/write_to_lcd/python/weather.py>`__):

@@ -84,7 +84,7 @@ Older version of Visual Studio don't come with ``stdint.h``. A compatible
 version can be found `here <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
 If necessary download it to the ``project_folder/``.
 
-Thats it, we are ready to go!
+That's it, we are ready to go!
 
 The Visual Studio compiler can also be used from the command line::
 

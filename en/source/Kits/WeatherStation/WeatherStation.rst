@@ -23,13 +23,13 @@ Starter Kit: Weather Station
 	}}
 	{{ tfdocend() }}
 
-The Starter Kit: Weather Station is a fully-fledged open source weather
-station. It can measure temperature, humidity, air pressure and illuminance.
+The *Starter Kit: Weather Station* is a fully-fledged open source weather
+station. It measures temperature, humidity, air pressure and illuminance.
 
 It can be controlled by a PC or a Raspberry Pi over USB or (if the WIFI
 Extension is added) over Wi-Fi. The measurements can be displayed on the
-20x4 LCD, they can be shown on a website or uploaded to cosm. With the
-4 Buttons of the LCD20x4 Bricklet it is possible to control different
+20x4 LCD, they can be shown on a website or uploaded to Cosm. With the
+4 buttons of the LCD 20x4 Bricklet it is possible to control different
 modes.
 
 Mounting holes for Analog In and IO-4 Bricklets are provided, this gives the
@@ -76,11 +76,13 @@ TODO: Images of construction and instructions
 Projects
 --------
 
+There are several applications for the Weather Station Starter Kit.
+
 Display Environment Measurements on LCD
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The most obvious application of the Weather Station Starter Kit is to display
-the measurements of the environment on the LCD20x4 Bricklet. This can be 
+The most obvious application for the Weather Station Starter Kit is to display
+the measurements of the environment on the LCD 20x4 Bricklet. This can be
 done through three different paths:
 
 * USB connection to PC: Install brickd and application on PC, connect
@@ -111,9 +113,7 @@ Connect to Cosm
 
 Cosm is a service that provides the possibility to analyze and visualize
 the "Internet of Things". They can store a history of our Weather Station
-data and we get a neat graphs:
-
-.. batti: correct english "a neat graphs"?
+data and we get pretty graphs:
 
 .. image:: /Images/Kits/weather_station_cosm_graphs_600.jpg
    :scale: 100 %
@@ -133,7 +133,7 @@ on a website:
 
 .. image:: /Images/Kits/weather_station_website_orig.jpg
    :scale: 100 %
-   :alt: Cosm datastreams shown as graph
+   :alt: Live Measurements on Website
    :align: center
    :target: ../../_images/Kits/weather_station_website_orig.jpg
 
@@ -146,7 +146,7 @@ in :ref:`PHP <starter_kit_weather_station_website>`.
 Show Statistics with Button Control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Since the LCD20x4 Bricklet features four buttons, we can enhance the first
+Since the LCD 20x4 Bricklet features four buttons, we can enhance the first
 application by more data that can be switched with the buttons.
 
 .. image:: /Images/Kits/weather_station_lcd_all_orig.jpg
