@@ -211,7 +211,14 @@ div.body ul li ul li{
 
 }
 
+div.body ol.arabic {
+	padding: 5px 0px 5px 22px;
+	list-style-type: decimal;
+}
 
+div.body ol.arabic li {
+	list-style-type: decimal;
+}
 
 dd p a em,
 a em {
@@ -294,6 +301,7 @@ pre {
     line-height: 120%;
     border: 1px solid;
 		border-color: #eee;
+	margin: 10px 0px;
 }
 
 tt {
@@ -486,10 +494,11 @@ div.rightside {
 }
 
 a.image-reference {
-	 display: block;
-	 margin-bottom: 20px; /* get some space below image */
-	 text-align: center;
-	 vertical-align: middle;
+	display: block;
+	margin-top: 15px; /* get some space above image */
+	margin-bottom: 15px; /* get some space below image */
+	text-align: center;
+	vertical-align: middle;
 }
 
 img.align-center {
@@ -545,6 +554,7 @@ div.center_table table tbody tr td{
 
 div.tfdocimages a {
 	display: block;
+	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
