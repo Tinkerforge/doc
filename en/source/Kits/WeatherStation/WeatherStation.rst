@@ -23,9 +23,24 @@ Starter Kit: Weather Station
 	}}
 	{{ tfdocend() }}
 
-The Starter Kit: Weather Station is 
+The Starter Kit: Weather Station is a fully-fledged open source weather
+station. It can measure temperature, humidity, air pressure and illuminance.
 
-.. batti: introduction text of next parts
+It can be controlled by a PC or a Raspberry PI over USB or (if the WIFI
+Extension is added) over Wi-Fi. The measurements can be displayed on the
+20x4 LCD, they can be shown on a website or uploaded to cosm. With the
+4 Buttons of the LCD20x4 Bricklet it is possible to control different
+modes.
+
+Mounting holes for Analog In and IO-4 Bricklets are provided, this gives the
+possibility to add more sensors (anemometer, pluviometer etc). The plastic
+is tinker-friendly PMMA, new drill holes and similar can be added with a
+simple wood drill.
+
+Programming of the weather station can be done with all of the available
+bindings (C/C++, C#, Delphi, Java, PHP, Python, Ruby, VB.NET) and example
+implementations with step-by-step instructions are available for all
+of the langauges.
 
 Firmware updating and first tests
 ---------------------------------
