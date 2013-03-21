@@ -211,7 +211,14 @@ div.body ul li ul li{
 
 }
 
+div.body ol.arabic {
+	padding: 5px 0px 5px 22px;
+	list-style-type: decimal;
+}
 
+div.body ol.arabic li {
+	list-style-type: decimal;
+}
 
 dd p a em,
 a em {
