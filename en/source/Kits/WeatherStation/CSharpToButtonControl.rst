@@ -22,7 +22,7 @@ The buttons should switch between
 * Time and date.
 
 Additionally we will fulfil all of the goals that were present in the
-:ref:`Write environment measurements to LCD project <starter_kit_weather_station_csharp_to_lcd>`. 
+:ref:`Display environment measurements on LCD project <starter_kit_weather_station_csharp_to_lcd>`. 
 
 In the following we will show step-by-step how this can be achieved. This time
 we will not go through each line of the code, since this would take too long.
@@ -33,7 +33,7 @@ Step 1: Retrieving data
 -----------------------
 
 The structure of the program is exactly the same as in the 
-:ref:`Write environment measurements to LCD project <starter_kit_weather_station_csharp_to_lcd>`.
+:ref:`Display environment measurements on LCD project <starter_kit_weather_station_csharp_to_lcd>`.
 
 We get the data over callbacks with a 1s interval. But this time we just
 save the measurements:
