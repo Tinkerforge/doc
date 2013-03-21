@@ -64,7 +64,7 @@ To use the latest measurements we start a 1s Timer
 
 	Timer timer = new Timer(Update, null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
 
-and put the measurements in a queue so we can later analyze it:
+and put the measurements in a queue so we can later analyze them:
 
 .. code-block:: csharp
 
@@ -140,7 +140,7 @@ during the initialization:
 
 In the callback we save the actual button that was pressed and
 we also increase a counter for the specific button, if the
-same button was pressed before. This allows us to circle between
+same button was pressed before. This allows us to cycle between
 different views in a specific mode.
 
 .. code-block:: csharp

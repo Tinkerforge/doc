@@ -137,8 +137,8 @@ Lastely, we print the response in JSON format:
 Step 3: Everything put together
 -------------------------------
 
-Thats it! Now we have to put the HTML and the PHP file in a directy
-that is served by a webserver, like apache.
+Thats it! Now we have to put the HTML and the PHP file in a directory
+that is served by a webserver, such as apache.
 
 If you haven't done anything like this, you should take a look at the
 `PHP installation guide <http://php.net/manual/en/install.php>`__.
