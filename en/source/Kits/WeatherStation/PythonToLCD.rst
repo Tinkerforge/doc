@@ -147,8 +147,8 @@ return their respective measurments continuously with a period of
                 self.baro.register_callback(self.baro.CALLBACK_AIR_PRESSURE,
                                             self.cb_air_pressure)
 
-This means that the Bricklets will call the cb_illuminance, cb_humidity
-and cb_air_pressure functions whenever the value has changed, but
+This means that the Bricklets will call the ``cb_illuminance``, ``cb_humidity``
+and ``cb_air_pressure`` functions whenever the value has changed, but
 with a maximum period of 1000ms.
 
 Step 2 put together:
@@ -212,7 +212,7 @@ and post spaces. For the pre spaces we use the digits before the
 decimal point and fill the rest with space. For the post spaces we fill
 with zeros.
 
-Now we can simply format the values of the callbacks with the fmt function
+Now we can simply format the values of the callbacks with the ``fmt`` function
 and write them to the display, one value per line:
 
 .. code-block:: python
@@ -231,7 +231,7 @@ and write them to the display, one value per line:
 
 We are still missing the temperature. The Barometer Bricklet can
 measure temperature, but it doesn't have a callback for it. As a
-simple workaround we can retrieve the temperature in the cb_air_pressure
+simple workaround we can retrieve the temperature in the ``cb_air_pressure``
 callback:
 
 .. code-block:: python
@@ -356,8 +356,8 @@ Additionally we added some logging. With the logging we can later find out
 what exactly caused a problem, when the Weather Station failed for some
 time period.
 
-For example, if we connect to the Weather Station via WIFI and we have
-regular auto reconnects, it likely means that the WIFI connection is not
+For example, if we connect to the Weather Station via WiFi and we have
+regular auto reconnects, it likely means that the WiFi connection is not
 very stable.
 
 .. _starter_kit_weather_station_python_to_lcd_step_5:

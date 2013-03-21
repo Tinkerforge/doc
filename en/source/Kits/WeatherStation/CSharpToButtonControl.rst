@@ -21,7 +21,7 @@ The buttons should switch between
 * 24h graph and
 * Time and date.
 
-Additionally we will fulfil all of the goals that were present in the
+Additionally we will fulfill all of the goals that were present in the
 :ref:`Display environment measurements on LCD project <starter_kit_weather_station_csharp_to_lcd>`. 
 
 In the following we will show step-by-step how this can be achieved. This time
@@ -58,7 +58,7 @@ save the measurements:
         latestTemperature = temperature/100.0;
     }
 
-To use the latest measurements we start a 1s Timer
+To use the latest measurements we start a 1s timer
 
 .. code-block:: csharp
 
@@ -113,19 +113,18 @@ in the queue during the callbacks?
 There are two reasons why the utilized approach makes sense:
 
 1. The callbacks only get called in 1s intervals if the actual callback
-value changed. That means, if a measurement doesn't change for 10s, the
-callback will only be triggered after this 10s. This is good since it
-saves bandwidth, but we want to have a measurement every second, so we
-can use the data for statistics.
-
+   value changed. That means, if a measurement doesn't change for 10s, the
+   callback will only be triggered after this 10s. This is good since it
+   saves bandwidth, but we want to have a measurement every second, so we
+   can use the data for statistics.
 2. By using callbacks with a 1s interval and a separate timer with a 1s
-interval, we can easily overcome short connection losses or similar.
-For example: If the Weather Station is controlled over Wi-Fi and the
-Wi-Fi connection is lost for 30s, we will just use the latest value that
-was retrieved for these 30s. If we would be using Getters for this, we would
-have to handle a timeout for each of the measurements. Since the standard
-timeout time of 2.5s is longer then our 1s interval, a timeout would
-actually distort the measurements.
+   interval, we can easily overcome short connection losses or similar.
+   For example: If the Weather Station is controlled over WiFi and the
+   WiFi connection is lost for 30s, we will just use the latest value that
+   was retrieved for these 30s. If we would be using Getters for this, we would
+   have to handle a timeout for each of the measurements. Since the standard
+   timeout time of 2.5s is longer then our 1s interval, a timeout would
+   actually distort the measurements.
 
 
 Step 2: Button Control
@@ -183,7 +182,7 @@ The UpdateSwitch method switches between the four different modes:
         }
     }
 
-The four modes are
+The four modes are:
 
 * Standard: Displays all 4 measurements.
 * Graph: Displays a 24h graph of one measurement. It is possible to cycle
@@ -296,7 +295,7 @@ one to eight.
 MinMaxAvg Mode
 ^^^^^^^^^^^^^^
 
-In MinMaxAvg mode we show minum maximum and average values of the last 24 hours:
+In MinMaxAvg mode we show minimum, maximum and average values of the last 24 hours:
 
 .. code-block:: csharp
 

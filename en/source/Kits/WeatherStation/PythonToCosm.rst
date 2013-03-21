@@ -31,7 +31,7 @@ Go to `www.cosm.com <http://www.cosm.com>`__ and sign up.
 Click on "+ Device/Feed" and as type choose "Something Else". 
 Choose "push data to Cosm", a title and tags and create the feed.
 
-In the feed we have to add datastreams for our weather measurements:
+In the feed we have to add data streams for our weather measurements:
 
 .. image:: /Images/Kits/weather_station_cosm_datastreams_600.jpg
    :scale: 100 %
@@ -93,7 +93,7 @@ the Datastream ID:
 
 We retrieve the old value, min_value and max_value, calculate the new
 min/max and update it. If there aren't any values stored for a given
-identifier, we catch the occuring exception and add the identifier
+identifier, we catch the occurring exception and add the identifier
 as a new key to the dict.
 
 The Weather Station code itself we can base on the code from the
@@ -121,12 +121,12 @@ We just have to use the put function whenever a new measurement arrives:
                 log.info('Write to line 0: ' + text)
         # [...]
 
-This has to be added for the other measurments accordingly.
+This has to be added for the other measurements accordingly.
 
 Step 4: Uploading measurements
 ------------------------------
 
-To upload our measurements we first have to define all of the names, urls, 
+To upload our measurements we first have to define all of the names, URLs,
 keys and so on:
 
 .. code-block:: python

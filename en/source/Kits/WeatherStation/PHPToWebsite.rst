@@ -46,7 +46,7 @@ leave the HTML as plain as possible:
       </body>
     </html>
 
-The inner text of the four paragraphs will be replaced by javascript with
+The inner text of the four paragraphs will be replaced by JavaScript with
 data that is provided by a PHP script over AJAX:
 
 .. code-block:: html
@@ -71,12 +71,12 @@ data that is provided by a PHP script over AJAX:
       setInterval(updateMeasurements, 5000);
     </script>
 
-We use jquery to keep it as simple and readable as possible.
+We use jQuery to keep it as simple and readable as possible.
 The function ``updateMeasurements`` calls ``WeatherStationWebsite.php`` and
 expects to get ``illuminance``, ``humidity``, ``air_pressure`` and 
 ``temperature`` as a return in the JSON format.
 
-To show the measurments directly upon opening the website, 
+To show the measurements directly upon opening the website,
 ``updateMeasurements`` is called once directly. After that it is called with 
 an interval of 5000ms (5s), configured with 
 ``setInterval(updateMeasurements, 5000)``.

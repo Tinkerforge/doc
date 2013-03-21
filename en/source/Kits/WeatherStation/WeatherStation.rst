@@ -70,7 +70,7 @@ done through three different paths:
 
 * USB connection to PC: Install brickd and application on PC, connect
   Master Brick of Weather Station to PC via USB.
-* WIFI connection to PC: Install application on PC, connect
+* WiFi connection to PC: Install application on PC, connect
   Weather Station directly over WiFi or through AP.
 * Raspberry PI or other embedded board integrated in Weather Station:
   Install brickd and application on embedded board, connect Master Brick of
@@ -97,6 +97,7 @@ Connect to Cosm
 Cosm is a service that provides the possibility to analyze and visualize
 the "Internet of Things". They can store a history of our Weather Station
 data and we get a neat graphs:
+
 .. batti: correct english "a neat graphs"?
 
 .. image:: /Images/Kits/weather_station_cosm_graphs_600.jpg
@@ -106,7 +107,7 @@ data and we get a neat graphs:
    :target: ../../_images/Kits/weather_station_cosm_graphs_orig.jpg
 
 An example implementation with step-by-step instructions that shares the 
-weather data with cosm is available
+weather data with Cosm is available
 in :ref:`Python <starter_kit_weather_station_cosm>`.
 
 Embed Live Measurements on Website
@@ -122,7 +123,7 @@ on a website:
    :target: ../../_images/Kits/weather_station_website_orig.jpg
 
 In this project we will use JavaScript/AJAX to update the measurements
-every 5 seconds, without the need to relaod the webpage.
+every 5 seconds, without the need to reload the webpage.
 
 An example implementation is available
 in :ref:`PHP <starter_kit_weather_station_website>`.
@@ -154,7 +155,8 @@ Further Enhancements
 
 .. note::
  If you modded, extended or improved your Weather Station in any way and you
- have published your results on our wiki, on your blog or similar: Please give
- us a notice. We would love to add a link to your project here!
+ have published your results on our `Wiki <http://www.tinkerunity.org/wiki/>`__,
+ on your blog or similar: Please give us a notice. We would love to add a link
+ to your project here!
 
 Regenmesser, windgeschwindigkeit etc
