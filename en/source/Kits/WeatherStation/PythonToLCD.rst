@@ -116,7 +116,7 @@ reconfigured if they were disconnected or there was a power loss.
 
 The configurations should be performed on first startup 
 (``ENUMERATION_TYPE_CONNECTED``) as well as whenever the enumeration is triggered
-externaly by us (``ENUMERATION_TYPE_AVAILABLE``):
+externally by us (``ENUMERATION_TYPE_AVAILABLE``):
 
 .. code-block:: python
 

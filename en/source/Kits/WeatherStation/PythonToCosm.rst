@@ -20,7 +20,7 @@ We are setting the following goals for this project:
 * The weather measurements should be calculated and shown on the LCD20x4
   Bricklet, as in the :ref:`Display environment measurements on LCD project
   <starter_kit_weather_station_python_to_lcd>`.
-* The measurments should additionally be stored and uploaded to Cosm in
+* The measurements should additionally be stored and uploaded to Cosm in
   5 minute intervals.
 
 In the following we will show step-by-step how this can be achieved.

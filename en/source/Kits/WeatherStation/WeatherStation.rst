@@ -43,7 +43,7 @@ simple wood drill.
 Programming of the weather station can be done with all of the available
 bindings (C/C++, C#, Delphi, Java, PHP, Python, Ruby, VB.NET) and example
 implementations with step-by-step instructions are available for all
-of the langauges.
+of the languages.
 
 Firmware updating and first tests
 ---------------------------------

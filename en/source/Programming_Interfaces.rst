@@ -31,7 +31,7 @@ to create a direct TCP/IP connection without the need of another
 computer in between. One example for it is the :ref:`WIFI Extension <wifi_extension>`.
 
 After receiving a package, the Brick performs the task specified in the delivered 
-data. For example in case of a "getTemperature()" call the Brick will read the
+data. For example in case of a ``getTemperature()`` call the Brick will read the
 temperature and send it back. The initial function call blocks until the 
 data package is received and returns the temperature.
 

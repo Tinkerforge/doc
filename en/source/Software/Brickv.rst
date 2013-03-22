@@ -45,8 +45,8 @@ and test your Bricks and Bricklets.
    :target: ../_images/Screenshots/brickv_setup_tab.jpg
 
 The "Updates / Flashing" button opens a dialogue which shows available updates
-and let you flash firmwares and pluginsonto Bricks and
-Bricklets. If you click on "Advanced Functions" you can calibrate the
+and let you flash firmwares and plugins onto Bricks and Bricklets.
+If you click on "Advanced Functions" you can calibrate the
 analog-to-digital converts (ADC) of Bricks (see below).
 
 

@@ -99,7 +99,7 @@ Switch *Value Changed* event with the *toggleRelays* action:
 * Right click on the Switch
 * Click on the circle right of the Value Changed event
 * Drag a line to the First Responder
-* Choose "toogleRelays" from the action menu
+* Choose *toogleRelays* from the action menu
 
 .. image:: /Images/Screenshots/ios_xcode_small.jpg
    :scale: 100 %
