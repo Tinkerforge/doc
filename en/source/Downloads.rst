@@ -1,6 +1,3 @@
-
-:breadcrumbs: <a href="index.html">Home</a> / Downloads
-
 .. _downloads:
 
 Downloads
