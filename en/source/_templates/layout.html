@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block htmltitle %}
-<title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+<title>{{ title|striptags|e }} – Tinkerforge</title>
 {% raw %}
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='base_tf.css', _external=True) }}" />
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='jquery.lightbox-0.5.css', _external=True) }}" />
@@ -49,7 +49,25 @@
 {% block sidebar2 %}{% endblock %}
 
 {% block relbar1 %}<div id="tfcontent">{% if meta %}<div class="breadcrumbs-container"><div class="breadcrumbs">{{ meta['breadcrumbs'] }}</div></div>{% endif %}<div class="boxContent3">{% endblock %}
-{% block relbar2 %}</div></div>{% endblock %}
+{% block relbar2 %}    
+	<div id="tf_license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">
+		    <img alt="Creative Commons Licence" width="88" height="31" style="border-width:0" src="/static/images/cc_license_logo.png" />
+		</a>
+		{% raw %}
+		{% if g.current_lang == "de" %}
+			Der Inhalt dieser Seite ist lizensiert unter der
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution 3.0 Unported Lizenz</a>.
+		    {% from "news_de.html" import news %}
+		{% else %}
+			The content of this page is licensed under
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution 3.0 Unported License</a>.
+		{% endif %}
+		{% endraw %}
+	</div>
+
+	</div></div>
+{% endblock %}
 
 {% block sidebarsourcelink %}{% endblock %}
 {% block sidebarsearch %}{% endblock %}
