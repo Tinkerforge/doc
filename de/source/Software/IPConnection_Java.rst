@@ -61,7 +61,7 @@ Grundfunktionen
 
 .. java:function:: public void IPConnection::disconnect()
 
- Trennt die TCP/IP verbindung zum Brick Daemon oder einer WIFI/Ethernet
+ Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
  Extension.
 
 
@@ -141,7 +141,7 @@ Der Parameter ist ein Listener Klassen Objekt, z.B.:
 
 Die verfügbaren Listener Klassen mit den Methoden welche überschrieben
 werden können werden unterhalb beschrieben. Es ist möglich mehrere Listener
-hinzuzufügen und auch mit einem korrespondierenden "removeExampleListener"
+hinzuzufügen und auch mit einem korrespondierenden "removeListener"
 wieder zu entfernen.
 
 

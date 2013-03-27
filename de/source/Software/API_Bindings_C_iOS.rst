@@ -125,6 +125,6 @@ letzte Schritt is das Verbinden des *Value Changed* Events des Switches mit der
        :align: center
        :target: ../_images/Screenshots/ios_xcode_event2.jpg
 
-Die App kann mittles des Run Knopfes im Simulator getestet werden. Dabei ist
+Die App kann mittels des Run Knopfes im Simulator getestet werden. Dabei ist
 darauf zu achten UID und IP Adresse entsprechend des verwendeten Dual Relay
 Bricklets und PCs abzuändern.

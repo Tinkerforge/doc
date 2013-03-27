@@ -38,7 +38,7 @@ Beschreibung
 ------------
 
 Das Breakout Bricklet ist ein Breakout-Board für Bricklets, es legt alle
-Signale des B:ref:`Bricklet connector <connector_bricklet>` nach außen.
+Signale des :ref:`Bricklet Connectors <connector_bricklet>` nach außen.
 
 Somit ist es möglich Bricklets über eigene Schaltungen anzusteuern.
 Eine Anwendung könnte es z.B. sein unser Ambient Light Bricklet in einem

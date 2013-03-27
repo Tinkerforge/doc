@@ -65,7 +65,7 @@ Verbindung, so dass Masseschleifen vermieden werden können und eine zusätzlich
 gewährleistet wird.
 
 Typische Anwendungen lassen sich in der Steuerung von industriellen Produkten,
-wie z.B. SPS oder Frequenzumrichter, finden. Darüberhinaus ist eine Nutzung in Bereichen, 
+wie z.B. SPS oder Frequenzumrichter, finden. Darüber hinaus ist eine Nutzung in Bereichen,
 bei denen verschiedene Massepotentiale nicht verbunden werden dürfen sinnvoll.
 
 Wenn mehr als vier Eingänge benötigt werden kann ein weiteres Industrial Digital In 4
@@ -78,20 +78,20 @@ maximal 4, an anderen Bricks 2 Industrial Bricklets gruppiert werden können.
 Technische Spezifikation
 ------------------------
 
-================================  ============================================================
+================================  =================================================================
 Eigenschaft                       Wert
-================================  ============================================================
-Eingangstyp                       Vier optogekoppelte Eingänge (4.7k Ohm Vorwiderstand enthalten)
+================================  =================================================================
+Eingangstyp                       Vier opto-gekoppelte Eingänge (4.7k Ohm Vorwiderstand enthalten)
 Eingangsstrom                     Hängt von der Eingangsspannung ab: ca. 1mA/5V, ca. 5m/24V
 Max. Eingangsspannung             36V
 Low Level Spannung                0-2V
 High Level Spannung               3-36V
 Isolation                         5000Vrms (Optokoppler Datenblattangabe)
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
 Abmessungen (L x B x H)           40 x 40 x 11mm (1,57 x 1,57 x 0,43")
 Gewicht                           8g
-================================  ============================================================
+================================  =================================================================
 
 
 Ressourcen

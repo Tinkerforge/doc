@@ -110,7 +110,7 @@ In this tutorial we take a look at ``example_configuration.py``:
 
 **Line 13** creates an object that allows to control the DC Brick.
 It is necessary to pass the Unique Identifier (UID) of the Brick
-(in this example defined in **Line 6**) and the ipcon object. 
+(in this example defined in **Line 6**) and the IPConnection object.
 Change the UID corresponding to your device! 
 
 .. note::

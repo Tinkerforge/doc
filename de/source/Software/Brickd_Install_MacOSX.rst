@@ -44,7 +44,7 @@ kurzzeitig abgeschwächt werden, unter:
 * Programme aus folgenden Quellen erlauben: Keine Einschränkungen
 
 Jetzt noch einmal auf ``INSTALL`` klicken. Möglicherweise zeigt Mac OS X
-Mountain Lion might folgende Warnung an:
+Mountain Lion die folgende Warnung an:
 
 .. image:: /Images/Screenshots/brickd_macos_not_signed_2_small.jpg
    :scale: 100 %

@@ -137,7 +137,7 @@ The parameter is a listener class object, for example:
 
 The available listener classes with inherent methods to be overwritten
 are described below. It is possible to add several listeners and
-to remove them with the corresponding "removeExampleListener" function.
+to remove them with the corresponding "removeListener" function.
 
 
 .. java:function:: public class IPConnection.EnumerateListener()

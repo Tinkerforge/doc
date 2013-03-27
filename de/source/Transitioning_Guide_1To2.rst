@@ -79,7 +79,7 @@ Dokumentation für diese Funktionen kann in der normalen Programmiersprachen
 Dokumentation der Bricks und Bricklets gefunden werden.
 
 Im folgenden werden wir relevante Codeschnippsel vom alten Protokoll mit
-äquivalten aus Protokoll 2.0 vergleichen. Dabei sollte beachtet werden,
+Äquivalenten aus Protokoll 2.0 vergleichen. Dabei sollte beachtet werden,
 dass die :ref:`neueste Version der Bindings <downloads_bindings_examples>`
 benötigt wird um die neuen Funktionen nutzen zu können.
 

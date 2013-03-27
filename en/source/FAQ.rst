@@ -175,11 +175,12 @@ off now.
 **Driver not installed (on Windows)**:
 
 On Windows you might need to install the Atmel driver ``atm6124_cdc.inf`` from
-the drivers subfolder in the Brick Viewer installation folder to make Windows
+the ``drivers`` subfolder in the Brick Viewer installation folder to make Windows
 detect a Brick in bootloader mode correctly.
 
-Windows 7 auto detects a Brick as "GPS Camera Detect" serial device, this
-works as well, just select "GPS Camera Detect" as serial port in Brick Viewer.
+Windows 7 and 8 typically auto detect a Brick as "GPS Camera Detect" serial
+device. This works as well, just select "GPS Camera Detect" as serial port in
+Brick Viewer.
 
 **Master Brick 2.0 in stack with Master Extension**:
 

@@ -67,7 +67,7 @@ Mit dem IO-16 :ref:`Bricklet <product_overview_bricklets>` können
 
 Das Bricklet besitzt 2x 8 I/O Pins die unabhängig voneinander als Ein- oder Ausgänge
 konfiguriert werden können. Jeder Eingang kann zusätzlich einem Pull-Up oder als
-Interruptquelle konfiguriert werden. Die I/O Spannung kann manuell zwischen 3,3V und
+Interrupt-Quelle konfiguriert werden. Die I/O Spannung kann manuell zwischen 3,3V und
 5V* umgeschaltet werden. Die I/O Pins sind über Schraubklemmen mit zusätzlichen GND
 Verbindungen nach außen geführt. Eine zusätzliche Schraubklemme führt die
 gewählte Spannung nach außen.

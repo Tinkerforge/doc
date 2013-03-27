@@ -151,11 +151,11 @@ Infrarot Sensor konfigurieren
 -----------------------------
 
 Die unterstützten Infrarot Sensors geben eine Spannung entsprechend der
-gemessenen distanz aus. Diese Spannung wird vom ADC des angeschlossenen Bricks
+gemessenen Distanz aus. Diese Spannung wird vom ADC des angeschlossenen Bricks
 gemessen. Um aus der Spannung die Distanz zu errechnen wird eine Abbildung von
-Spannung auf Distanz benötigt. Diese Abbildung is spezifisch für den jeweiligen
+Spannung auf Distanz benötigt. Diese Abbildung ist spezifisch für den jeweiligen
 Sensortyp und wird auf dem Bricklet gespeichert. Um Sensoren verwenden zu können,
-die nicht direkt von uns unterstüzt werden muss zuerst eine passenden Abbildung
+die nicht direkt von uns unterstützt werden muss zuerst eine passenden Abbildung
 von Spannung auf Distanz definiert werden.
 
 
@@ -167,7 +167,7 @@ einen Brick an einen PC angeschlossen werden auf dem der :ref:`Brick Daemon
 <brickd>` und der :ref:`Brick Viewer <brickv>` laufen.
 
 Wähle den "Distance IR Bricklet" Tab aus, klicke auf den "File.." Knopf und
-wähle die passende Spannung/Distanz Abbildungdatei aus. Dann klicke auf den
+wähle die passende Spannung/Distanz Abbildungsdatei aus. Dann klicke auf den
 "Save" Knopf um die Abbildung auf dem Bricklet zu speichern. Dabei wird aus
 den Stützwerten der Abbildungsdatei eine Spline interpoliert um äquidistante
 Stützwerte für den gesamten Messbereich des Infrarot Sensors zu erhalten.
@@ -238,7 +238,7 @@ Eine andere mögliche Ursache kann ein Kalibrierungsproblem sein. Als erstes sol
 sichergestellt werden, dass die richtige Spannung/Distanz Abbildungsdatei für
 den angeschlossenen Sensor auf dem Bricklet gespeichert ist (siehe
 :ref:`hier <distance_ir_sensor_configuration>`). Dann sollte noch die
-Kalibrierung des Analog-Digital-Wanderls des verwendeten Bricks überprüft werden
+Kalibrierung des Analog-Digital-Wandlers des verwendeten Bricks überprüft werden
 (siehe :ref:`hier <brickv_adc_calibration>`).
 
 Falls die Distanzmessung immer noch nicht genau genug ist, bleibt nur noch

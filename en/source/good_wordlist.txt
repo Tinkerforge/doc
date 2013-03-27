@@ -155,6 +155,9 @@ subfolder
 contactless
 miscalibrated
 addListener
-removeExampleListener
+removeListener
 Raspbian
 Starterkit
+armhf
+armel
+Cosm

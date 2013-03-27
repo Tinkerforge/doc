@@ -311,7 +311,7 @@ benötigt. Auf jeden Master Brick wird jeweils eine RS485 Extension gesteckt
 und die beiden Extensions passend miteinander verkabelt. Jetzt noch das
 Rotary Poti Bricklet an den neu zusammengesteckten Stapel anschließen.
 
-Als nächster Schritt muss jetzt jeder Stapel einzelnd über USB am PC angeschlossen
+Als nächster Schritt muss jetzt jeder Stapel einzeln über USB am PC angeschlossen
 und konfiguriert werden. Die Details dazu sind in der :ref:`RS485 Dokumentation
 <rs485_configuration>` beschrieben. Wichtig ist dann noch, dass nach der
 Konfiguration der RS485 Slave vor dem RS485 Master gestartet wird.

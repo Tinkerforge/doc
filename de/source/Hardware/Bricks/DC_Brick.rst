@@ -54,7 +54,7 @@ Features
 
 * Steuert einen DC Motor mit max. **28V** und **5A**
 * Richtung, Geschwindigkeit und Beschleunigung können kontrolliert werden
-* Übertemperatur- und Überstromevents
+* Übertemperatur- und Überstrom-Events
 * Drive/Brake und Drive/Coast Modus konfigurierbar
 * Ein USB und zwei Bricklet Anschlüsse
 
@@ -70,7 +70,7 @@ die Versorgungsspannung kann gemessen,
 die Geschwindigkeit und Beschleunigung des Motors können gesteuert werden.
 Im Falle einer Überhitzung oder Überspannung werden Callbacks ausgelöst.
 Ein "Undervoltage" Callback kann genutzt werden um Batterien oder Akkus
-vor Tiefenentladung zu schützen.
+vor Tiefentladung zu schützen.
 Zusätzlich kann der Fahrmodus zwischen Drive/Brake und Drive/Coast umgeschaltet
 werden (siehe :ref:`Fahrmodus <dc_brick_drive_mode>`).
 
@@ -197,14 +197,13 @@ der Platine extern versorgt werden. Alternativ kann eine :ref:`Stromversorgung
 Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
 Stecker eine Spannung anliegt.
 
-
 .. warning::
-  Der Brick schaltet automatisch auf Stackversorgung um wenn am externen
-  Stecker weniger wie 1V anliegen. Wenn z.B. ein Stack genutzt wird
-  und eine zuvor angeschlossene externe Batterie vom Brick abgezogen wird,
-  nutzt der Brick den Stack Stromversorgung. Wenn der Motor danach aktiviert 
-  wird kann es sein, dass dieser mit der höheren Stackstromversorgung
-  betrieben wird.
+  Der Brick schaltet automatisch auf Stapelversorgung um wenn am externen
+  Stecker weniger wie 1V anliegen. Wird z.B. ein Stapel genutzt
+  und eine zuvor angeschlossene externe Batterie vom Brick abgezogen,
+  dann nutzt der Brick automatisch die Stapelversorgung. Wenn der Motor danach
+  wieder aktiviert wird kann es sein, dass dieser mit der höheren
+  Stapelversorgungsspannung betrieben wird.
   
 
 .. _dc_brick_drive_mode:

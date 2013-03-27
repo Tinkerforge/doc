@@ -84,8 +84,8 @@ Gewicht                           10g
 ================================  ============================================================
 
 
-Resourcen
----------
+Ressourcen
+----------
 
 * INA226 Datenblatt (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/raw/master/datasheets/ina226.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/raw/master/hardware/voltage-current-schematic.pdf>`__)

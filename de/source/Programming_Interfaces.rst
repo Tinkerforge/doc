@@ -20,7 +20,7 @@ hat seine eigene eindeutige Identifikationsnummer (UID).
 
 Der Benutzer ruft eine Funktion, implementiert in den
 :ref:`API Bindings <api_bindings>`, für ein Gerät das mit seiner UID 
-spezifiziert wird, auf. Diese Funktion erzeugt dann wiederrum ein TCP/IP 
+spezifiziert wird, auf. Diese Funktion erzeugt dann wiederum ein TCP/IP
 Datenpaket, welches dann zu dem :ref:`Brick <product_overview_bricks>` mit 
 der entsprechenden UID geschickt wird.
 
@@ -34,7 +34,7 @@ Pakete annehmen. Ein Beispiel hierfür ist die
 
 Nachdem von einem Brick ein Paket empfangen wurde, führt dieser die im 
 Datenpaket definierte Funktion aus. Zum Beispiel beim Aufruf von 
-"getTemperature()" liest der Brick die Temperatur des Temperatursensors aus und
+``getTemperature()`` liest der Brick die Temperatur des Temperatursensors aus und
 schickt diese in einem Datenpaket zurück. Der Funktionsaufruf des Benutzers 
 blockiert bis die Antwort vom Brick eingetroffen ist und gibt dann die 
 gemessene Temperatur zurück.
@@ -71,7 +71,7 @@ eigene Firmwares für Bricks und Bricklets zu entwickeln.
 
 .. warning::
  Im Moment sind nur die Quelltexte der Bricks und Bricklets `online
- <https://github.com/organizations/Tinkerforge>`__ verfügbar. Der jenige der in
+ <https://github.com/organizations/Tinkerforge>`__ verfügbar. Derjenige der in
  der Lage ist die passende Entwicklungsumgebung aufzusetzen und C programmieren
  kann, kann jetzt schon den Quelltext für seine Zwecke abändern.
 

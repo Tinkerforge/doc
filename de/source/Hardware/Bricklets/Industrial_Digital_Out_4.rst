@@ -57,7 +57,6 @@ Features
 Beschreibung
 ------------
 
-
 Das Industrial Digital Out 4 :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
 um :ref:`Bricks <product_overview_bricks>` mit vier digitalen Ausgänge zu erweitern.
 Die Ausgangsspannung kann bis zu 36 `Volt <http://de.wikipedia.org/wiki/Volt>`__ betragen. 
@@ -66,7 +65,7 @@ Verbindung, so dass Masseschleifen vermieden werden können und eine zusätzlich
 gewährleistet wird.
 
 Typische Anwendungen lassen sich in der Steuerung von industriellen Produkten,
-wie z.B. SPS oder Frequenzumrichter, finden. Darüberhinaus ist eine Nutzung in Bereichen, 
+wie z.B. SPS oder Frequenzumrichter, finden. Darüber hinaus ist eine Nutzung in Bereichen,
 bei denen verschiedene Massepotentiale nicht verbunden werden dürfen sinnvoll.
 
 Wenn mehr als vier Ausgänge benötigt werden kann ein weiteres Industrial Digital Out 4
@@ -76,8 +75,8 @@ Die Gruppierung kann nur pro Brick erfolgen, so dass an einem Master Brick
 maximal 4, an anderen Bricks 2 Industrial Bricklets gruppiert werden können.
 
 
-Technical Spezifikation
------------------------
+Technische Spezifikation
+------------------------
 
 ================================  ============================================================
 Eigenschaft                       Wert
@@ -135,7 +134,7 @@ und eine Last. Für diesen Test schließen wir eine Batterie und eine LED an
 
 |test_tab|
 
-Anschließend sollte die LED über den Brick Viewer geschalten werden können.
+Anschließend sollte die LED über den Brick Viewer geschaltet werden können.
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_brickv.jpg
    :scale: 100 %
@@ -154,7 +153,7 @@ Programmierschnittstelle
 High Level Programmierschnittstelle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` füe eine detaillierte
+Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
 Beschreibung.
 
 .. include:: Industrial_Digital_Out_4_hlpi.table

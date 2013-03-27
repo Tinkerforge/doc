@@ -132,7 +132,7 @@ richtig als serielle Schnittstelle erkannt.
  den Atmel Treiber ``atm6124_cdc.inf`` zu installieren.
 
 .. note::
- Für alte Linux Kernel kann es notwenig sein diesen
+ Für alte Linux Kernel kann es notwendig sein diesen
  `SAM-BA Linux USB Kernel Treiber <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
  zu installieren, damit ein Brick im Bootloader Modus richtig funktioniert.
 
@@ -159,7 +159,7 @@ Der Brick Viewer kann auch Plugins auf Bricklets flashen.
 Hierfür gibt es die Möglichkeit alle Bricklets auf die neuste Version zu 
 bringen (siehe "Auto-Update All Bricklets" unter 
 :ref:`Aktuellen Stand bestimmen <brickv_auto_update>`). Alternativ können
-Bricklets auch einzelnd geflasht werden. Die
+Bricklets auch einzeln geflasht werden. Die
 jeweils neuste Pluginversion wird dabei automatisch vom Brick Viewer
 ermittelt und heruntergeladen. Diese können aber auch manuell im
 :ref:`Downloadbereich <downloads_firmwares_plugins>` heruntergeladen werden.

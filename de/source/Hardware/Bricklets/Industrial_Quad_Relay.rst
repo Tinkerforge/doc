@@ -61,11 +61,11 @@ Das Industrial Quad Relay :ref:`Bricklet <product_overview_bricklets>` kann benu
 um :ref:`Bricks <product_overview_bricks>` mit vier galvanisch getrennten Solid State Relais
 zu erweitern. Jedes Relais kann bis zu 1,2 `Ampere <http://en.wikipedia.org/wiki/Ampere>`__
 mit 30 `Volt <http://en.wikipedia.org/wiki/Volt>`__ schalten. 
-Die Isolierung des Ausgangs erlaubt eine Nutzung one eine direkte elektrische Verbindung, 
+Die Isolierung des Ausgangs erlaubt eine Nutzung ohne eine direkte elektrische Verbindung,
 so dass Masseschleifen vermieden werden können und eine zusätzliche Sicherheit gewährleistet wird.
 
 Typische Anwendungen lassen sich in der Steuerung von industriellen Produkten,
-wie z.B. SPS oder Frequenzumrichter, finden. Darüberhinaus ist eine Nutzung in Bereichen, 
+wie z.B. SPS oder Frequenzumrichter, finden. Darüber hinaus ist eine Nutzung in Bereichen,
 bei denen verschiedene Massepotentiale nicht verbunden werden dürfen sinnvoll.
 
 Wenn mehr als vier Relais benötigt werden kann ein weiteres Industrial Quad Relay
@@ -132,7 +132,7 @@ Für einen einfachen Test werden wir eine Batterie und eine LED anschließen (si
 
 |test_tab|
 
-Anschließend sollte die LED über den Brick Viewer geschalten werden können.
+Anschließend sollte die LED über den Brick Viewer geschaltet werden können.
 
 .. image:: /Images/Bricklets/bricklet_industrial_quad_relay_brickv.jpg
    :scale: 100 %

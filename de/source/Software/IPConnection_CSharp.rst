@@ -61,7 +61,7 @@ Grundfunktionen
 
 .. csharp:function:: public void IPConnection::Disconnect()
 
- Trennt die TCP/IP verbindung zum Brick Daemon oder einer WIFI/Ethernet
+ Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
  Extension.
 
 

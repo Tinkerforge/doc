@@ -89,7 +89,7 @@ Grundfunktionen
 
 .. c:function:: int ipcon_disconnect(IPConnection *ipcon)
 
- Trennt die TCP/IP verbindung zum Brick Daemon oder einer WIFI/Ethernet
+ Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
  Extension.
 
 

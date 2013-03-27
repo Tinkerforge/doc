@@ -64,7 +64,7 @@ Grundfunktionen
 
 .. rb:function:: IPConnection#disconnect() -> nil
 
- Trennt die TCP/IP verbindung zum Brick Daemon oder einer WIFI/Ethernet
+ Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
  Extension.
 
 

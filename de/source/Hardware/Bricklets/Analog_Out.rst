@@ -62,7 +62,7 @@ um Bricks mit einem `Digital-Analog-Wandler
 Mit diesem können elektrische Spannungen von 0V bis 5V* generiert werden.
 Die Spannung kann direkt in `Volt <http://en.wikipedia.org/wiki/Volt>`__
 angegeben werden. Anstatt eine Spannung zu erzeugen kann auch zwischen einem
-1k, 100k oder 500k Ohm Lastwiderstand nach Masse (pull-down) gewählt werden.
+1k, 100k oder 500k Ohm Lastwiderstand nach Masse (Pull-Down) gewählt werden.
 
 
 Technische Spezifikation

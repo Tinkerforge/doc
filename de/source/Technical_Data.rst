@@ -11,7 +11,7 @@ sind in den Schaltplänen für jedes Produkt und den KiCad Bibliotheken zu finde
 Stapelstecker
 -------------
 
-Each :ref:`Brick <product_overview_bricks>` has two connector types:
+Jeder :ref:`Brick <product_overview_bricks>` hat zwei Arten von Stapelsteckern:
 
 * **Stapeldatenstecker:** Verwendet für den Datenaustausch zwischen Bricks.
 * **Stapelstromversorgungsstecker:** Versorgt Bricks und angeschlossene Bricklets, Motoren, Servos usw.
@@ -138,15 +138,15 @@ Beschreibung
 * **Current**: Signal zur Messung des Stromverbrauchs über die
   :ref:`Stromversorgung <product_overview_power_supplies>` (max. 3,3V). Kann
   von Master Bricks verwendet wird.
-* **Voltage**: Signal zur Messung der externen Versorgungspannung der
+* **Voltage**: Signal zur Messung der externen Versorgungsspannung der
   :ref:`Stromversorgung <product_overview_power_supplies>` (max. 3,3V). Kann
   von Master Bricks verwendet wird.
 
 
 .. _connector_bricklet:
 
-Brickletstecker
----------------
+Bricklet Stecker
+----------------
 
 .. csv-table:: 
    :header: "Pin", "Funktion", "Beschreibung"
@@ -180,4 +180,4 @@ USB Stecker
    "3", "D+",         "Data +"
    "4", "GND",        "Masse"
 
-Die 5V Versorung über USB muss zwischen 4,8V und 5,7V liegen.
+Die 5V Versorgung über USB muss zwischen 4,8V und 5,7V liegen.

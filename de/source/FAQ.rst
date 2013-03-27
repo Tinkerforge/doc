@@ -158,7 +158,7 @@ nicht angeschlossen ist) aber keiner ausgelöst wird liegt das vermutlich
 daran, dass ein "Setter" aufgerufen wurde. Normalerweise warten Funktionen
 die nichts zurückgeben nicht auf einem Antwort von Bricks oder Bricklets.
 
-Es ist allerdings möglich dies umzukonfigurieren. 
+Es ist allerdings möglich dies umzustellen.
 Dazu dient die ``SetResponseExpected`` Funktion, diese ist in der API
 Dokumentation der Bricks/Bricklets beschrieben.
 
@@ -184,12 +184,12 @@ Reset Knopf einmal gedrückt werden. Die blaue LED sollte jetzt aus sein.
 **Treiber nicht installiert (auf Windows)**:
 
 Auf Windows kann es nötig sein den Atmel Treiber ``atm6124_cdc.inf`` aus dem
-drivers Unterordner der Brick Viewer Installation zu installieren, damit ein
+``drivers`` Unterordner der Brick Viewer Installation zu installieren, damit ein
 Brick im Bootloader Modus richtig als serielle Schnittstelle erkannt wird.
 
-Windows 7 erkennt einen Brick im Bootloader Modus von sich aus als "GPS Camera
-Detect" Gerät. Dann einfach "GPS Camera Detect" als serielle Schnittstelle im
-Brick Viewer auswählen.
+Windows 7 und 8 erkennen einen Brick im Bootloader Modus normalerweise von sich
+aus als "GPS Camera Detect" Gerät. Dann einfach "GPS Camera Detect" als serielle
+Schnittstelle im Brick Viewer auswählen.
 
 **Master Brick 2.0 im Stack mit Master Extension**:
 

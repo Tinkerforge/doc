@@ -34,7 +34,7 @@ Als nächstes muss der gesamte ``com/tinkerforge/`` Ordner von ``source/`` in
 den ``PROJECTFOLDER/src/`` Ordner kopiert werden.
 
 Bearbeite den Quelltext wie unten dargestellt. Vergiss nicht die Host IP
-Adresse zu der des PCs auf dem der Brick Daemon äuft zu ändern. Dies kann die
+Adresse zu der des PCs auf dem der Brick Daemon läuft zu ändern. Dies kann die
 lokale oder die IP Adresse für die Verbindung zum Internet sein. Für letztere
 musst auch noch sichergestellt werden, dass der Port des Brick Daemons von außen
 erreichbar ist.

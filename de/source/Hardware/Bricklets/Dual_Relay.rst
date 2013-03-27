@@ -169,7 +169,7 @@ Leuchtstofflampe auftreten.
 
 Um induktive Lasten sicher schalten zu können wird externe Beschaltung z.B. in
 Form eines `Varistors <http://de.wikipedia.org/wiki/Varistor>`__ oder der
-Kombination eines Widerstandes und eines Kondesators parallel zu Last empfohlen.
+Kombination eines Widerstandes und eines Kondensators parallel zur Last empfohlen.
 
 Weitere Informationen über Schutzbeschaltung ist
 `hier <http://www.jkmicro.com/inductive_loads.pdf>`__ zu finden.

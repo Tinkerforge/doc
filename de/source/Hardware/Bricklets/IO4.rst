@@ -62,7 +62,7 @@ Mit dem IO-4 :ref:`Bricklet <product_overview_bricklets>` können
 
 Das Bricklet besitzt 4 I/O Pins die unabhängig voneinander als Ein- oder Ausgänge
 konfiguriert werden können. Jeder Eingang kann zusätzlich mit einem Pull-Up oder als
-Interruptquelle konfiguriert werden. Die I/O Pins sind über Schraubklemmen nach außen
+Interrupt-Quelle konfiguriert werden. Die I/O Pins sind über Schraubklemmen nach außen
 geführt. Zwei zusätzliche Schraubklemmen führen 3,3V und GND nach außen.
 
 In typischen Anwendungen können Schalter, Taster und LEDs angeschlossen werden

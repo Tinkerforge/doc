@@ -29,7 +29,7 @@ aufgerufen werden (1. Windows und 2. Linux/Mac OS X)::
  1.) javac -cp Tinkerforge.jar;. ExampleConfiguration.java
  2.) javac -cp Tinkerforge.jar:. ExampleConfiguration.java
 
-Und ausgeführt wird es mit dem folgenden Befehl (1. Windows and 2. Linux/Mac OS X)::
+Und ausgeführt wird es mit dem folgenden Befehl (1. Windows und 2. Linux/Mac OS X)::
 
  1.) java -cp Tinkerforge.jar;. ExampleConfiguration
  2.) java -cp Tinkerforge.jar:. ExampleConfiguration

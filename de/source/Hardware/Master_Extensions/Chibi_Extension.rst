@@ -59,19 +59,19 @@ Stack der perfekt geeignet ist für unsere Anwendungen.
 
 Bei guten Bedingungen können Reichweiten **bis zu 2km** draußen erreicht werden.
 
-Um ein Chibi Netzwerk aufzubauen sind mindestens zwei Chibi Extensions and zwei
+Um ein Chibi Netzwerk aufzubauen sind mindestens zwei Chibi Extensions und zwei
 Master Bricks notwendig. Jeder dieser Master Bricks kann in einem Stapel aus
 Bricks und Bricklets stecken, wobei einer der Master Bricks per USB und der
 andere über eine externe Stromversorgung versorgt wird. Aus Programmierersicht
 ist das Chibi Netzwerk vollkommen transparent, d.h. alle Bricks und Bricklets
-können genauso benutzt werden als wenn sie einzelnd per USB angeschlossen wären.
+können genauso benutzt werden als wenn sie einzeln per USB angeschlossen wären.
 
 Es ist auch möglich ein Netzwerk mit mehr als zwei Chibi Extensions aufzubauen,
 wobei immer nur ein Stapel per USB verbunden sein darf (Many-to-One Routing).
 
 Die folgenden Kombinationen von Extensions in einem Stapel sind möglich:
 
-* Chibi Slave unten / RS485 Master obem
+* Chibi Slave unten / RS485 Master oben
 * Chibi Slave oben / RS485 Master unten
 * Chibi Master unten / RS485 Slave oben
 * Chibi Master oben / RS485 Slave unten
@@ -94,7 +94,7 @@ Stromverbrauch                    10mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Maximale Reichweite (Freifeld)    2km
-Maximule Baudrate                 250kbit/s
+Maximale Baudrate                 250kbit/s
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 16mm (1.57 x 1.57 x 0.63")

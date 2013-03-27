@@ -121,7 +121,7 @@ keine USB Verbindung haben (sie können allerdings seit Master Brick Firmware
 Adresse. Diese Adressen müssen innerhalb des Buses eindeutig sein.
 
 Um einen RS485 Bus aufzubauen muss zuerst die RS485 Extension auf einen
-Master Brick gesteck werden und der Master Brick über USB mit dem PC verbunden
+Master Brick gesteckt werden und der Master Brick über USB mit dem PC verbunden
 werden. Im Brick Viewer sollte jetzt ein Master Brick mit erkannter RS485
 Extension angezeigt werden. Die RS485 Extension muss jetzt als Master oder
 Slave konfiguriert werden wie :ref:`hier <rs485_configuration>` beschrieben.

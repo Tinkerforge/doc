@@ -7,7 +7,7 @@ Firmwares und Plugins
 =====================
 
 .. note::
- Falls die Firmware eines Bricks or Bricklets aus versehen gelöscht wurde,
+ Falls die Firmware eines Bricks oder Bricklets aus versehen gelöscht wurde,
  dann können die neusten Firmwares und Plugins :ref:`hier
  <downloads_firmwares_plugins>` heruntergeladen werden.
 
