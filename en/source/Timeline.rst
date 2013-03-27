@@ -37,7 +37,7 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "",     "51", "GPS Bricklet",                                                         "`done <http://www.tinkerforge.com/en/blog/2012/12/20/gps-bricklet-now-available>`__"
    "2013", "08", "Visual Basic .NET bindings",                                           "`done <http://www.tinkerforge.com/en/blog/2013/2/18/visual-basic-net-bindings-ready>`__"
    "",     "10", "New Website",                                                          "`done <http://www.tinkerforge.com/en/blog/2013/3/8/new-website>`__"
-   "",     "13", "Starterkit: Weather Station",                                          "Work in Progress"
+   "",     "14", "Starterkit: Weather Station",                                          "Work in Progress"
    "",     "15", "Encoder Bricklet for DC Brick",                                        "Hardware exists"
    "",     "?",  "Ethernet Extension with PoE",                                          "Problems with Prototype"
    "",     "?",  "PTC Bricklet",                                                         "Awaiting Quotation for PCBs"
