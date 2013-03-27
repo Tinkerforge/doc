@@ -124,8 +124,8 @@ Test your Analog In Bricklet
 
 |test_connect|.
 Additionally connect a voltage source to the Bricklet.
-For testing purposes we have connected a battery
-(see picture below).
+For testing purposes the positive pole of a battery can be connected to the VIN
+terminal and the negative pole to the GND terminal.
 
 .. image:: /Images/Bricklets/bricklet_analog_in_master_600.jpg
    :scale: 100 %

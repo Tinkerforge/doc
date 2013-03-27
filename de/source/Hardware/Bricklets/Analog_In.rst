@@ -120,8 +120,9 @@ Erster Test
 |test_intro|
 
 |test_connect|.
-Als nächstes muss noch eine Spannungsquelle mit dem Bricklet Verbunden werden.
-Zum Beispiel eine Batterie wie im folgenden Bild.
+Als nächstes muss noch eine Spannungsquelle mit dem Bricklet verbunden werden.
+Zum Beispiel kann der Pluspol einer Batterie mit der VIN Anschlussklemme und
+der Minuspol mit der GND Anschlussklemme verbunden werden.
 
 .. image:: /Images/Bricklets/bricklet_analog_in_master_600.jpg
    :scale: 100 %
