@@ -34,7 +34,7 @@ begin
   WriteLn('UID:               ' + uid);
   WriteLn('Enumerate Type:    ' + IntToStr(enumerationType));
 
-  if(enumerationType <> IPCON_ENUMERATION_TYPE_DISCONNECTED) then begin
+  if (enumerationType <> IPCON_ENUMERATION_TYPE_DISCONNECTED) then begin
     WriteLn('Connected UID:     ' + connectedUid);
     WriteLn('Position:          ' + position);
     WriteLn('Hardware Version:  ' + IntToStr(hardwareVersion[0]) + '.' + 
