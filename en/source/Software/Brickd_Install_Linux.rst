@@ -84,7 +84,7 @@ To compile and install from source run::
  sudo make install
 
 Run the following commands to register brickd for autostart on Debian based
-Linux distribution and start it::
+Linux distributions and start it::
 
  update-rc.d brickd defaults
  /etc/init.d/brickd start

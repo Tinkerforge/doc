@@ -91,7 +91,7 @@ werden::
  sudo make install
 
 Die folgenden Befehle registrieren brickd für Autostart auf Debian basierten
-Distribution und starten brickd::
+Distributionen und starten brickd::
 
  update-rc.d brickd defaults
  /etc/init.d/brickd start
