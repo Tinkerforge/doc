@@ -6,14 +6,10 @@
 #define PORT 4223
 
 // Print incoming enumeration information
-void cb_enumerate(const char *uid,
-                  const char *connected_uid,
-                  char position,
-                  uint8_t hardware_version[3],
-                  uint8_t firmware_version[3],
-                  uint16_t device_identifier,
-                  uint8_t enumeration_type,
-                  void *user_data) {
+void cb_enumerate(const char *uid, const char *connected_uid,
+                  char position, uint8_t hardware_version[3],
+                  uint8_t firmware_version[3], uint16_t device_identifier,
+                  uint8_t enumeration_type, void *user_data) {
 	(void)user_data;
 
 	printf("UID:               %s\n", uid);

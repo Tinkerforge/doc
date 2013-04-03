@@ -7,9 +7,9 @@ use Tinkerforge\IPConnection;
 $host = 'localhost';
 $port = 4223;
 
-function enumerateCB($uid, $connectedUid, $position,
-                     $hardwareVersion, $firmwareVersion,
-                     $deviceIdentifier, $enumerationType)
+function cb_enumerate($uid, $connectedUid, $position,
+                      $hardwareVersion, $firmwareVersion,
+                      $deviceIdentifier, $enumerationType)
 {
 	echo "UID:               $uid\n";
 	echo "Enumeration Type:  $enumerationType\n";
@@ -31,8 +31,8 @@ function enumerateCB($uid, $connectedUid, $position,
 $ipcon = new IPConnection();
 $ipcon->connect($host, $port);
 
-// Register enumeration callback to "enumerateCB"
-$ipcon->registerCallback(IPConnection::CALLBACK_ENUMERATE, 'enumerateCB');
+// Register enumeration callback to "cb_enumerate"
+$ipcon->registerCallback(IPConnection::CALLBACK_ENUMERATE, 'cb_enumerate');
 
 $ipcon->enumerate();
 
