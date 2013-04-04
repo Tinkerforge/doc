@@ -388,7 +388,6 @@ table.highlighttable td {
 tt.descname {
     background-color: transparent;
     font-weight: bold;
-    font-size: 1.2em;
 }
 
 tt.descclassname {
