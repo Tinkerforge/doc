@@ -29,13 +29,15 @@ Starter Kit: Weather Station
 The *Starter Kit: Weather Station* is a fully-fledged open source weather
 station. It measures temperature, humidity, air pressure and illuminance.
 
-It can be controlled by a PC or a Raspberry Pi over USB or (if the WIFI
-Extension is added) over Wi-Fi. The measurements can be displayed on the
-20x4 LCD, they can be shown on a website or uploaded to Cosm. With the
-4 buttons of the LCD 20x4 Bricklet it is possible to control different
-modes.
+It can be controlled by a PC or a :ref:`Raspberry Pi <embedded_raspberry_pi>`
+over USB or (if the :ref:`WIFI Extension <wifi_extension>` is added) over Wi-Fi.
+The measurements can be displayed on the 20x4 LCD, they can be shown on a
+website or uploaded to `Cosm <https://cosm.com/>`__. With the four buttons of
+the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` it is possible to control
+different modes.
 
-Mounting holes for Analog In and IO-4 Bricklets are provided, this gives the
+Mounting holes for :ref:`Analog In <analog_in_bricklet>`
+and :ref:`IO-4 <io4_bricklet>` Bricklets are provided, this gives the
 possibility to add more sensors (anemometer, pluviometer etc). The plastic
 is tinker-friendly PMMA, new drill holes and similar can be added with a
 simple wood drill.
@@ -49,11 +51,11 @@ Firmware updating and first tests
 ---------------------------------
 
 As a very first step you should try out and update your Bricks and Bricklets.
-For that you need to install the :ref:`Brick Daemon <brickd_installation>` and 
+For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
 the :ref:`Brick Viewer <brickv_installation>`. Use Brick Viewer to find out
-if all of the firmwares up to date (Flashing button). If not, you can
-:ref:`update the Bricks <brickv_flash_firmware>` and 
-:ref:`update the Bricklets <brickv_flash_plugin>` with the Brick 
+if all of the firmwares up to date (Updates / Flashing button). If not, you can
+:ref:`update the Bricks <brickv_flash_firmware>` and
+:ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
 Viewer too:
 
 .. image:: /Images/Kits/weather_station_update_350.jpg
@@ -61,7 +63,6 @@ Viewer too:
    :alt: Weather Station update in Brick Viewer
    :align: center
    :target: ../../_images/Kits/weather_station_update_orig.jpg
-
 
 After that you can click through the tabs of the Brick Viewer to see if
 all of the sensors are working correctly. Now you can be sure that the
@@ -114,6 +115,9 @@ Example implementations with step-by-step instructions are available for:
 Connect to Cosm
 ^^^^^^^^^^^^^^^
 
+`Cosm <https://cosm.com/>`__ is a service that provides the possibility to
+analyze and visualize the "Internet of Things". They can store a history of our
+Weather Station data and we get pretty graphs:
 Cosm is a service that provides the possibility to analyze and visualize
 the "Internet of Things". They can store a history of our Weather Station
 data and we get pretty graphs:
@@ -124,7 +128,7 @@ data and we get pretty graphs:
    :align: center
    :target: ../../_images/Kits/weather_station_cosm_graphs_orig.jpg
 
-An example implementation with step-by-step instructions that shares the 
+An example implementation with step-by-step instructions that shares the
 weather data with Cosm is available
 in :ref:`Python <starter_kit_weather_station_cosm>`.
 
@@ -149,12 +153,13 @@ in :ref:`PHP <starter_kit_weather_station_website>`.
 Show Statistics with Button Control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Since the LCD 20x4 Bricklet features four buttons, we can enhance the first
-application by more data that can be switched with the buttons.
+Since the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` features four buttons,
+we can enhance the first application by more data that can be switched with
+the buttons.
 
 .. image:: /Images/Kits/weather_station_lcd_all_orig.jpg
    :scale: 100 %
-   :alt: Different modes of button control project 
+   :alt: Different modes of button control project
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_all_orig.jpg
 
