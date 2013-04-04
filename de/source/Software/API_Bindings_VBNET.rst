@@ -53,6 +53,12 @@ Das Projekt ist jetzt bereit für einen Test, klicke:
 * Ausführen
 * Ausführen
 
+Der Visual Basic .NET Compiler kann auch von der Kommandozeile aus verwendet
+werden::
+
+ /usr/bin/vbnc /target:exe /out:ExampleConfiguration.exe /reference:Tinkerforge.dll ExampleConfiguration.vb
+
+
 Visual Studio
 -------------
 
