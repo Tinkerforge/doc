@@ -587,3 +587,6 @@ div.tfdocimages table td {
 #tf_license a img { float: left; padding: 5px; }
 #tf_license { font-size: 10px; height:41px; line-height: 41px; text-align: middle;}
 
+td.field-body p { padding: 0; }
+td.field-body ul { padding-left: 0; }
+td.field-body ul li { list-style: none; }
