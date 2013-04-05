@@ -29,7 +29,7 @@ Step 1: Create and configure Cosm account
 -----------------------------------------
 
 To use Cosm, we first have to create a Cosm account. 
-Go to `www.cosm.com <http://www.cosm.com>`__ and sign up.
+Go to `cosm.com <https://cosm.com>`__ and sign up.
 
 Click on "+ Device/Feed" and as type choose "Something Else". 
 Choose "push data to Cosm", a title and tags and create the feed.

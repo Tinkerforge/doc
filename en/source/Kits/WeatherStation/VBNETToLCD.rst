@@ -1,22 +1,22 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using Delphi to write to LCD 20x4 Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using VB.NET to write to LCD 20x4 Bricklet
 
-.. |ENUMERATION_TYPE_CONNECTED| replace:: ``IPCON_ENUMERATION_TYPE_CONNECTED``
-.. |ENUMERATION_TYPE_AVAILABLE| replace:: ``IPCON_ENUMERATION_TYPE_AVAILABLE``
+.. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
+.. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
 .. |cb_illuminance| replace:: ``IlluminanceCB``
 .. |cb_humidity| replace:: ``HumidityCB``
 .. |cb_air_pressure| replace:: ``AirPressureCB``
 
-.. include:: DelphiToLCD.substitutions
+.. include:: VBNETToLCD.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-.. _starter_kit_weather_station_delphi_to_lcd:
+.. _starter_kit_weather_station_vbnet_to_lcd:
 
-Using Delphi to write to LCD 20x4 Bricklet
-==========================================
+Using Visual Basic .NET to write to LCD 20x4 Bricklet
+=====================================================
 
-.. include:: DelphiToLCD.substitutions
+.. include:: VBNETToLCD.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
@@ -24,7 +24,7 @@ Using Delphi to write to LCD 20x4 Bricklet
 Goals
 -----
 
-.. include:: DelphiToLCD.substitutions
+.. include:: VBNETToLCD.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 
@@ -178,9 +178,9 @@ Step 3: Show measurements on display
 
 |step3_format|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    text = '%6.2f' % value
+    Dim text As String = String.Format("{0,6:###.00}", value)
 
 |step3_printf|
 
@@ -301,7 +301,7 @@ Step 4: Error handling and Logging
         try:
             self.al = AmbientLight(uid, self.ipcon)
             self.al.set_illuminance_callback_period(1000)
-            self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
+            self.al.register_callback(self.al.CALLBACK_ILLUMINANCE, 
                                       self.cb_illuminance)
             log.info('AmbientLight initialized')
         except Error as e:
@@ -318,9 +318,9 @@ Step 5: Everything put together
 
 |step5_intro|
 
-|step5_put_together| (`download <https://raw.github.com/Tinkerforge/weather-station/master/write_to_lcd/delphi/WeatherStation.pas>`__):
+|step5_put_together| (`download <https://raw.github.com/Tinkerforge/weather-station/master/write_to_lcd/vbnet/WeatherStation.vb>`__):
 
-.. literalinclude:: ../../../../../weather-station/write_to_lcd/delphi/WeatherStation.pas
- :language: delphi
+.. literalinclude:: ../../../../../weather-station/write_to_lcd/vbnet/WeatherStation.vb
+ :language: vbnet
  :linenos:
  :tab-width: 4

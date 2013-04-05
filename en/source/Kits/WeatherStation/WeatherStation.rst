@@ -1,6 +1,8 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / Starter Kit: Weather Station
 
+.. include:: WeatherStation.substitutions
+
 .. _starter_kit_weather_station:
 
 Starter Kit: Weather Station
@@ -43,7 +45,7 @@ is tinker-friendly PMMA, new drill holes and similar can be added with a
 simple wood drill.
 
 Programming of the weather station can be done with all of the available
-bindings (C/C++, C#, Delphi, Java, PHP, Python, Ruby, VB.NET) and example
+bindings (|bindings|) and example
 implementations with step-by-step instructions are available for all
 of the languages.
 
@@ -103,14 +105,7 @@ All three possible solutions can use the same source code.
 
 Example implementations with step-by-step instructions are available for:
 
-:ref:`C/C++ <starter_kit_weather_station_c_to_lcd>`,
-:ref:`C# <starter_kit_weather_station_csharp_to_lcd>`,
-:ref:`Delphi <starter_kit_weather_station_delphi_to_lcd>`,
-:ref:`Java <starter_kit_weather_station_java_to_lcd>`,
-:ref:`PHP <starter_kit_weather_station_php_to_lcd>`,
-:ref:`Python <starter_kit_weather_station_python_to_lcd>`,
-:ref:`Ruby <starter_kit_weather_station_ruby_to_lcd>`,
-:ref:`VB.NET <starter_kit_weather_station_vbnet_to_lcd>`.
+|write_to_lcd_examples|.
 
 Connect to Cosm
 ^^^^^^^^^^^^^^^
@@ -118,9 +113,6 @@ Connect to Cosm
 `Cosm <https://cosm.com/>`__ is a service that provides the possibility to
 analyze and visualize the "Internet of Things". They can store a history of our
 Weather Station data and we get pretty graphs:
-Cosm is a service that provides the possibility to analyze and visualize
-the "Internet of Things". They can store a history of our Weather Station
-data and we get pretty graphs:
 
 .. image:: /Images/Kits/weather_station_cosm_graphs_600.jpg
    :scale: 100 %

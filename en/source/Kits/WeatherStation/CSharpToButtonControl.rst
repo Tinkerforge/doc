@@ -6,10 +6,10 @@
 Using C# to Control the Buttons for Statistics
 ==============================================
 
-For this project we are assuming, that you have a C# environment set up 
+For this project we are assuming, that you have a C# environment set up
 and that you have a rudimentary understanding of the C# language.
 
-If you are totally new to either C# itself or to C# in the context of 
+If you are totally new to either C# itself or to C# in the context of
 Tinkerforge, you should start :ref:`here <TODO>`.
 
 Goals
@@ -25,7 +25,7 @@ The buttons should switch between
 * Time and date.
 
 Additionally we will fulfill all of the goals that were present in the
-:ref:`Display environment measurements on LCD project <starter_kit_weather_station_csharp_to_lcd>`. 
+:ref:`Display environment measurements on LCD project <starter_kit_weather_station_csharp_to_lcd>`.
 
 In the following we will show step-by-step how this can be achieved. This time
 we will not go through each line of the code, since this would take too long.
@@ -35,7 +35,7 @@ understood.
 Step 1: Retrieving data
 -----------------------
 
-The structure of the program is exactly the same as in the 
+The structure of the program is exactly the same as in the
 :ref:`Display environment measurements on LCD project <starter_kit_weather_station_csharp_to_lcd>`.
 
 We get the data over callbacks with a 1s interval. But this time we just
@@ -218,7 +218,7 @@ In standard mode we just show the measurements:
         text = string.Format("Air Press {0,7:####.00} mb", latestAirPressure);
         brickletLCD.WriteLine(2, 0, text);
 
-        text = string.Format("Temperature {0,2:##.00} {1}C", latestTemperature, (char)0xDF);
+        text = string.Format("Temperature {0,5:##.00} {1}C", latestTemperature, (char)0xDF);
         brickletLCD.WriteLine(3, 0, text);
     }
 
