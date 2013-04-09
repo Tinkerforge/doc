@@ -34,62 +34,65 @@ Step 1: Discover Bricks and Bricklets
 
 |step1_start_off|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    HOST = "localhost"
-    PORT = 4223
+    Const HOST As String = "localhost"
+    Const PORT As Integer = 4223
 
 |step1_ip_address|
 
 |step1_register_callbacks|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    def __init__(self):
-        self.ipcon = IPConnection()
-        self.ipcon.connect(WeatherStation.HOST, WeatherStation.PORT)
+    Sub Main()
+        ipcon = New IPConnection()
+        ipcon.Connect(HOST, PORT)
 
-        self.ipcon.register_callback(IPConnection.CALLBACK_ENUMERATE,
-                                     self.cb_enumerate)
-        self.ipcon.register_callback(IPConnection.CALLBACK_CONNECTED,
-                                     self.cb_connected)
+        AddHandler ipcon.EnumerateCallback, AddressOf EnumerateCB
+        AddHandler ipcon.Connected, AddressOf ConnectedCB
 
-        self.ipcon.enumerate()
+        ipcon.Enumerate()
+    End Sub
 
 |step1_enumerate_callback|
 
 |step1_connected_callback|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    def cb_connected(self, connected_reason):
-        if connected_reason == IPConnection.CONNECT_REASON_AUTO_RECONNECT:
-            self.ipcon.enumerate()
+    Sub ConnectedCB(ByVal sender As IPConnection, ByVal connectedReason as Short)
+        If connectedReason = IPConnection.CONNECT_REASON_AUTO_RECONNECT Then
+            ipcon.Enumerate()
+        End If
+    End Sub
 
 |step1_auto_reconnect_callback|
 
 |step1_put_together|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    class WeatherStation:
-        HOST = "localhost"
-        PORT = 4223
+    Module WeatherStation
+        Const HOST As String = "localhost"
+        Const PORT As Integer = 4223
 
-        def __init__(self):
-            self.ipcon = IPConnection()
-            self.ipcon.connect(WeatherStation.HOST, WeatherStation.PORT)
+        Sub ConnectedCB(ByVal sender As IPConnection, ByVal connectedReason as Short)
+            If connectedReason = IPConnection.CONNECT_REASON_AUTO_RECONNECT Then
+                ipcon.Enumerate()
+            End If
+        End Sub
 
-            self.ipcon.register_callback(IPConnection.CALLBACK_ENUMERATE,
-                                         self.cb_enumerate)
-            self.ipcon.register_callback(IPConnection.CALLBACK_CONNECTED,
-                                         self.cb_connected)
+        Sub Main()
+            ipcon = New IPConnection()
+            ipcon.Connect(HOST, PORT)
 
-            self.ipcon.enumerate()
+            AddHandler ipcon.EnumerateCallback, AddressOf EnumerateCB
+            AddHandler ipcon.Connected, AddressOf ConnectedCB
 
-        def cb_connected(self, connected_reason):
-            if connected_reason == IPConnection.CONNECT_REASON_AUTO_RECONNECT:
-                self.ipcon.enumerate()
+            ipcon.Enumerate()
+        End Sub
+    End Module
 
 
 Step 2: Initialize Bricklets on Enumeration
@@ -99,71 +102,73 @@ Step 2: Initialize Bricklets on Enumeration
 
 |step2_enumerate|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    def cb_enumerate(self, uid, connected_uid, position, hardware_version,
-                     firmware_version, device_identifier, enumeration_type):
-        if enumeration_type == IPConnection.ENUMERATION_TYPE_CONNECTED or \
-           enumeration_type == IPConnection.ENUMERATION_TYPE_AVAILABLE:
+    Sub EnumerateCB(ByVal sender As IPConnection, ByVal uid As String, _
+                    ByVal connectedUid As String, ByVal position As Char, _
+                    ByVal hardwareVersion() As Short, ByVal firmwareVersion() As Short, _
+                    ByVal deviceIdentifier As Integer, ByVal enumerationType As Short)
+        If enumerationType = IPConnection.ENUMERATION_TYPE_CONNECTED Or _
+           enumerationType = IPConnection.ENUMERATION_TYPE_AVAILABLE Then
 
 |step2_lcd_config|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-            if device_identifier == LCD20x4.DEVICE_IDENTIFIER:
-                self.lcd = LCD20x4(uid, self.ipcon)
-                self.lcd.clear_display()
-                self.lcd.backlight_on()
+    If deviceIdentifier = BrickletLCD20x4.DEVICE_IDENTIFIER Then
+        brickletLCD = New BrickletLCD20x4(UID, ipcon)
+        brickletLCD.ClearDisplay()
+        brickletLCD.BacklightOn()
 
 |step2_other_config1|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-            elif device_identifier == AmbientLight.DEVICE_IDENTIFIER:
-                self.al = AmbientLight(uid, self.ipcon)
-                self.al.set_illuminance_callback_period(1000)
-                self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
-                                          self.cb_illuminance)
-            elif device_identifier == Humidity.DEVICE_IDENTIFIER:
-                self.hum = Humidity(uid, self.ipcon)
-                self.hum.set_humidity_callback_period(1000)
-                self.hum.register_callback(self.hum.CALLBACK_HUMIDITY,
-                                           self.cb_humidity)
-            elif device_identifier == Barometer.DEVICE_IDENTIFIER:
-                self.baro = Barometer(uid, self.ipcon)
-                self.baro.set_air_pressure_callback_period(1000)
-                self.baro.register_callback(self.baro.CALLBACK_AIR_PRESSURE,
-                                            self.cb_air_pressure)
+    Else If deviceIdentifier = BrickletAmbientLight.DEVICE_IDENTIFIER Then
+        brickletAmbientLight = New BrickletAmbientLight(UID, ipcon)
+        brickletAmbientLight.SetIlluminanceCallbackPeriod(1000)
+        AddHandler brickletAmbientLight.Illuminance, AddressOf IlluminanceCB
+    Else If deviceIdentifier = BrickletHumidity.DEVICE_IDENTIFIER Then
+        brickletHumidity = New BrickletHumidity(UID, ipcon)
+        brickletHumidity.SetHumidityCallbackPeriod(1000)
+        AddHandler brickletHumidity.Humidity, AddressOf HumidityCB
+    Else If deviceIdentifier = BrickletBarometer.DEVICE_IDENTIFIER Then
+        brickletBarometer = New BrickletBarometer(UID, ipcon)
+        brickletBarometer.SetAirPressureCallbackPeriod(1000)
+        AddHandler brickletBarometer.AirPressure, AddressOf AirPressureCB
+    End If
 
 |step2_other_config2|
 
 |step2_put_together|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    def cb_enumerate(self, uid, connected_uid, position, hardware_version,
-                     firmware_version, device_identifier, enumeration_type):
-        if enumeration_type == IPConnection.ENUMERATION_TYPE_CONNECTED or \
-           enumeration_type == IPConnection.ENUMERATION_TYPE_AVAILABLE:
-            if device_identifier == LCD20x4.DEVICE_IDENTIFIER:
-                self.lcd = LCD20x4(uid, self.ipcon)
-                self.lcd.clear_display()
-                self.lcd.backlight_on()
-            elif device_identifier == AmbientLight.DEVICE_IDENTIFIER:
-                self.al = AmbientLight(uid, self.ipcon)
-                self.al.set_illuminance_callback_period(1000)
-                self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
-                                          self.cb_illuminance)
-            elif device_identifier == Humidity.DEVICE_IDENTIFIER:
-                self.hum = Humidity(uid, self.ipcon)
-                self.hum.set_humidity_callback_period(1000)
-                self.hum.register_callback(self.hum.CALLBACK_HUMIDITY,
-                                           self.cb_humidity)
-            elif device_identifier == Barometer.DEVICE_IDENTIFIER:
-                self.baro = Barometer(uid, self.ipcon)
-                self.baro.set_air_pressure_callback_period(1000)
-                self.baro.register_callback(self.baro.CALLBACK_AIR_PRESSURE,
-                                            self.cb_air_pressure)
+    Sub EnumerateCB(ByVal sender As IPConnection, ByVal uid As String, _
+                    ByVal connectedUid As String, ByVal position As Char, _
+                    ByVal hardwareVersion() As Short, ByVal firmwareVersion() As Short, _
+                    ByVal deviceIdentifier As Integer, ByVal enumerationType As Short)
+        If enumerationType = IPConnection.ENUMERATION_TYPE_CONNECTED Or _
+           enumerationType = IPConnection.ENUMERATION_TYPE_AVAILABLE Then
+            If deviceIdentifier = BrickletLCD20x4.DEVICE_IDENTIFIER Then
+                brickletLCD = New BrickletLCD20x4(UID, ipcon)
+                brickletLCD.ClearDisplay()
+                brickletLCD.BacklightOn()
+            Else If deviceIdentifier = BrickletAmbientLight.DEVICE_IDENTIFIER Then
+                brickletAmbientLight = New BrickletAmbientLight(UID, ipcon)
+                brickletAmbientLight.SetIlluminanceCallbackPeriod(1000)
+                AddHandler brickletAmbientLight.Illuminance, AddressOf IlluminanceCB
+            Else If deviceIdentifier = BrickletHumidity.DEVICE_IDENTIFIER Then
+                brickletHumidity = New BrickletHumidity(UID, ipcon)
+                brickletHumidity.SetHumidityCallbackPeriod(1000)
+                AddHandler brickletHumidity.Humidity, AddressOf HumidityCB
+            Else If deviceIdentifier = BrickletBarometer.DEVICE_IDENTIFIER Then
+                brickletBarometer = New BrickletBarometer(UID, ipcon)
+                brickletBarometer.SetAirPressureCallbackPeriod(1000)
+                AddHandler brickletBarometer.AirPressure, AddressOf AirPressureCB
+            End If
+        End If
+    End Sub
 
 
 Step 3: Show measurements on display
@@ -184,63 +189,58 @@ Step 3: Show measurements on display
 
 |step3_printf|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    def cb_illuminance(self, illuminance):
-        text = 'Illuminanc %s lx' % self.fmt(illuminance/10.0, 3)
-        self.lcd.write_line(0, 0, text)
+    Sub IlluminanceCB(ByVal sender As BrickletAmbientLight, ByVal illuminance As Integer)
+        Dim text As String = String.Format("Illuminanc {0,6:###.00} lx", illuminance/10.0)
+        brickletLCD.WriteLine(0, 0, text)
+    End Sub
 
-    def cb_humidity(self, humidity):
-        text = 'Humidity %s %%' % self.fmt(humidity/10.0, 5)
-        self.lcd.write_line(1, 0, text)
+    Sub HumidityCB(ByVal sender As BrickletHumidity, ByVal humidity As Integer)
+        Dim text As String = String.Format("Humidity   {0,6:###.00} %", humidity/10.0)
+        brickletLCD.WriteLine(1, 0, text)
+    End Sub
 
-    def cb_air_pressure(self, air_pressure):
-        text = 'Air Press %s mb' % self.fmt(air_pressure/1000.0, 4)
-        self.lcd.write_line(2, 0, text)
+    Sub AirPressureCB(ByVal sender As BrickletBarometer, ByVal airPressure As Integer)
+        Dim text As String = String.Format("Air Press {0,7:####.00} mb", airPressure/1000.0)
+        brickletLCD.WriteLine(2, 0, text)
+    End Sub
 
 |step3_temperature|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    def cb_air_pressure(self, air_pressure):
-        text = 'Air Press %s mb' % self.fmt(air_pressure/1000.0, 4)
-        self.lcd.write_line(2, 0, text)
+    Sub AirPressureCB(ByVal sender As BrickletBarometer, ByVal airPressure As Integer)
+        Dim text As String = String.Format("Air Press {0,7:####.00} mb", airPressure/1000.0)
+        brickletLCD.WriteLine(2, 0, text)
 
-        fmt_text = self.fmt(self.baro.get_chip_temperature()/100.0, 2)
-        # \xDF == ° on LCD20x4 charset
-        text = 'Temperature %s \xDFC' % fmt_text
-        self.lcd.write_line(3, 0, text)
+        Dim temperature As Integer = sender.GetChipTemperature()
+        text = String.Format("Temperature {0,5:##.00} {1}C", temperature/100.0, Chr(&HDF))
+        brickletLCD.WriteLine(3, 0, text)
+    End Sub
 
 |step3_put_together|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    def fmt(self, value, pre, post=2):
-        v2, v1 = math.modf(value)
-        v1 = str(int(v1))
-        v2 = str(int(v2 * 10**post))
+    Sub IlluminanceCB(ByVal sender As BrickletAmbientLight, ByVal illuminance As Integer)
+        Dim text As String = String.Format("Illuminanc {0,6:###.00} lx", illuminance/10.0)
+        brickletLCD.WriteLine(0, 0, text)
+    End Sub
 
-        num_space = (pre - len(v1))
-        num_zero = (post - len(v2))
+    Sub HumidityCB(ByVal sender As BrickletHumidity, ByVal humidity As Integer)
+        Dim text As String = String.Format("Humidity   {0,6:###.00} %", humidity/10.0)
+        brickletLCD.WriteLine(1, 0, text)
+    End Sub
 
-        return ' '*num_space + v1 + '.' + v2 + '0'*num_zero
+    Sub AirPressureCB(ByVal sender As BrickletBarometer, ByVal airPressure As Integer)
+        Dim text As String = String.Format("Air Press {0,7:####.00} mb", airPressure/1000.0)
+        brickletLCD.WriteLine(2, 0, text)
 
-    def cb_illuminance(self, illuminance):
-        text = 'Illuminanc %s lx' % self.fmt(illuminance/10.0, 3)
-        self.lcd.write_line(0, 0, text)
-
-    def cb_humidity(self, humidity):
-        text = 'Humidity %s %%' % self.fmt(humidity/10.0, 5)
-        self.lcd.write_line(1, 0, text)
-
-    def cb_air_pressure(self, air_pressure):
-        text = 'Air Press %s mb' % self.fmt(air_pressure/1000.0, 4)
-        self.lcd.write_line(2, 0, text)
-
-        fmt_text = self.fmt(self.baro.get_chip_temperature()/100.0, 2)
-        # \xDF == ° on LCD20x4 charset
-        text = 'Temperature %s \xDFC' % fmt_text
-        self.lcd.write_line(3, 0, text)
+        Dim temperature As Integer = sender.GetChipTemperature()
+        text = String.Format("Temperature {0,5:##.00} {1}C", temperature/100.0, Chr(&HDF))
+        brickletLCD.WriteLine(3, 0, text)
+    End Sub
 
 |step3_complete|
 
@@ -256,57 +256,61 @@ Step 4: Error handling and Logging
 
 |step4_intro1|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    while True:
-        try:
-            self.ipcon.connect(WeatherStation.HOST, WeatherStation.PORT)
-            break
-        except Error as e:
-            log.error('Connection Error: ' + str(e.description))
-            time.sleep(1)
-        except socket.error as e:
-            log.error('Socket error: ' + str(e))
-            time.sleep(1)
+    while True
+        Try
+            ipcon.Connect(HOST, PORT)
+            Exit While
+        Catch e As System.Net.Sockets.SocketException
+            System.Console.WriteLine("Connection Error: " + e.Message)
+            System.Threading.Thread.Sleep(1000)
+        End Try
+    End While
 
 |step4_intro2|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    while True:
-        try:
-            self.ipcon.enumerate()
-            break
-        except Error as e:
-            log.error('Enumerate Error: ' + str(e.description))
-            time.sleep(1)
+    while True
+        try
+            ipcon.Enumerate()
+            Exit While
+        Catch e As NotConnectedException
+            System.Console.WriteLine("Enumeration Error: " + e.Message)
+            System.Threading.Thread.Sleep(1000)
+        End Try
+    End While
 
 |step4_connect_afterwards|
 
 |step4_lcd_initialized1|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    def cb_illuminance(self, illuminance):
-        if self.lcd is not None:
-            text = 'Helligkeit %s  lx' % self.fmt(illuminance/10.0, 3, 1)
-            self.lcd.write_line(0, 0, text)
-            log.info('Write to line 0: ' + text)
+    Sub IlluminanceCB(ByVal sender As BrickletAmbientLight, ByVal illuminance As Integer)
+        If brickletLCD IsNot Nothing Then
+            Dim text As String = String.Format("Illuminanc {0,6:###.00} lx", illuminance/10.0)
+            brickletLCD.WriteLine(0, 0, text)
+            System.Console.WriteLine("Write to line 0: " + text)
+        End If
+    End Sub
 
 |step4_lcd_initialized2|
 
-.. code-block:: python
+.. code-block:: vbnet
 
-    if device_identifier == AmbientLight.DEVICE_IDENTIFIER:
-        try:
-            self.al = AmbientLight(uid, self.ipcon)
-            self.al.set_illuminance_callback_period(1000)
-            self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
-                                      self.cb_illuminance)
-            log.info('AmbientLight initialized')
-        except Error as e:
-            log.error('AmbientLight init failed: ' + str(e.description))
-            self.al = None
+    If deviceIdentifier = BrickletAmbientLight.DEVICE_IDENTIFIER Then
+        Try
+            brickletAmbientLight = New BrickletAmbientLight(UID, ipcon)
+            brickletAmbientLight.SetIlluminanceCallbackPeriod(1000)
+            AddHandler brickletAmbientLight.Illuminance, AddressOf IlluminanceCB
+            System.Console.WriteLine("AmbientLight initialized")
+        Catch e As TinkerforgeException
+            System.Console.WriteLine("AmbientLight init failed: " + e.Message)
+            brickletAmbientLight = Nothing
+        End Try
+    End If
 
 |step4_logging1|
 
