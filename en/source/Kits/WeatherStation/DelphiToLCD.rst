@@ -34,62 +34,74 @@ Step 1: Discover Bricks and Bricklets
 
 |step1_start_off|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    HOST = "localhost"
-    PORT = 4223
+    const
+      HOST = 'localhost';
+      PORT = 4223;
 
 |step1_ip_address|
 
 |step1_register_callbacks|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    def __init__(self):
-        self.ipcon = IPConnection()
-        self.ipcon.connect(WeatherStation.HOST, WeatherStation.PORT)
-
-        self.ipcon.register_callback(IPConnection.CALLBACK_ENUMERATE,
-                                     self.cb_enumerate)
-        self.ipcon.register_callback(IPConnection.CALLBACK_CONNECTED,
-                                     self.cb_connected)
-
-        self.ipcon.enumerate()
+    procedure TWeatherStation.Execute;
+    begin
+      ipcon := TIPConnection.Create;
+      ipcon.Connect(HOST, PORT);
+      ipcon.OnEnumerate := {$ifdef FPC}@{$endif}EnumerateCB;
+      ipcon.OnConnected := {$ifdef FPC}@{$endif}ConnectedCB;
+      ipcon.Enumerate;
+    end;
 
 |step1_enumerate_callback|
 
 |step1_connected_callback|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    def cb_connected(self, connected_reason):
-        if connected_reason == IPConnection.CONNECT_REASON_AUTO_RECONNECT:
-            self.ipcon.enumerate()
+    procedure TWeatherStation.ConnectedCB(sender: TIPConnection; const connectedReason: byte);
+    begin
+      if (connectedReason = IPCON_CONNECT_REASON_AUTO_RECONNECT) then begin
+        ipcon.Enumerate;
+      end;
+    end;
 
 |step1_auto_reconnect_callback|
 
 |step1_put_together|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    class WeatherStation:
-        HOST = "localhost"
-        PORT = 4223
+    const
+      HOST = 'localhost';
+      PORT = 4223;
 
-        def __init__(self):
-            self.ipcon = IPConnection()
-            self.ipcon.connect(WeatherStation.HOST, WeatherStation.PORT)
+    type
+      TWeatherStation = class
+      private
+        ipcon: TIPConnection;
+      public
+        procedure ConnectedCB(sender: TIPConnection; const connectedReason: byte);
+        procedure Execute;
+      end;
 
-            self.ipcon.register_callback(IPConnection.CALLBACK_ENUMERATE,
-                                         self.cb_enumerate)
-            self.ipcon.register_callback(IPConnection.CALLBACK_CONNECTED,
-                                         self.cb_connected)
+    procedure TWeatherStation.ConnectedCB(sender: TIPConnection; const connectedReason: byte);
+    begin
+      if (connectedReason = IPCON_CONNECT_REASON_AUTO_RECONNECT) then begin
+        ipcon.Enumerate;
+      end;
+    end;
 
-            self.ipcon.enumerate()
-
-        def cb_connected(self, connected_reason):
-            if connected_reason == IPConnection.CONNECT_REASON_AUTO_RECONNECT:
-                self.ipcon.enumerate()
+    procedure TWeatherStation.Execute;
+    begin
+      ipcon := TIPConnection.Create;
+      ipcon.Connect(HOST, PORT);
+      ipcon.OnEnumerate := {$ifdef FPC}@{$endif}EnumerateCB;
+      ipcon.OnConnected := {$ifdef FPC}@{$endif}ConnectedCB;
+      ipcon.Enumerate;
+    end;
 
 
 Step 2: Initialize Bricklets on Enumeration
@@ -99,71 +111,83 @@ Step 2: Initialize Bricklets on Enumeration
 
 |step2_enumerate|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    def cb_enumerate(self, uid, connected_uid, position, hardware_version,
-                     firmware_version, device_identifier, enumeration_type):
-        if enumeration_type == IPConnection.ENUMERATION_TYPE_CONNECTED or \
-           enumeration_type == IPConnection.ENUMERATION_TYPE_AVAILABLE:
+    procedure TWeatherStation.EnumerateCB(sender: TIPConnection; const uid: string;
+                                          const connectedUid: string; const position: char;
+                                          const hardwareVersion: TVersionNumber;
+                                          const firmwareVersion: TVersionNumber;
+                                          const deviceIdentifier: word; const enumerationType: byte);
+    begin
+      if ((enumerationType = IPCON_ENUMERATION_TYPE_CONNECTED) or
+          (enumerationType = IPCON_ENUMERATION_TYPE_AVAILABLE)) then begin
 
 |step2_lcd_config|
 
-.. code-block:: python
+.. code-block:: delphi
 
-            if device_identifier == LCD20x4.DEVICE_IDENTIFIER:
-                self.lcd = LCD20x4(uid, self.ipcon)
-                self.lcd.clear_display()
-                self.lcd.backlight_on()
+    if (deviceIdentifier = BRICKLET_LCD_20X4_DEVICE_IDENTIFIER) then begin
+      brickletLCD := TBrickletLCD20x4.Create(UID, ipcon);
+      brickletLCD.ClearDisplay();
+      brickletLCD.BacklightOn();
+    end;
 
 |step2_other_config1|
 
-.. code-block:: python
+.. code-block:: delphi
 
-            elif device_identifier == AmbientLight.DEVICE_IDENTIFIER:
-                self.al = AmbientLight(uid, self.ipcon)
-                self.al.set_illuminance_callback_period(1000)
-                self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
-                                          self.cb_illuminance)
-            elif device_identifier == Humidity.DEVICE_IDENTIFIER:
-                self.hum = Humidity(uid, self.ipcon)
-                self.hum.set_humidity_callback_period(1000)
-                self.hum.register_callback(self.hum.CALLBACK_HUMIDITY,
-                                           self.cb_humidity)
-            elif device_identifier == Barometer.DEVICE_IDENTIFIER:
-                self.baro = Barometer(uid, self.ipcon)
-                self.baro.set_air_pressure_callback_period(1000)
-                self.baro.register_callback(self.baro.CALLBACK_AIR_PRESSURE,
-                                            self.cb_air_pressure)
+    else if (deviceIdentifier = BRICKLET_AMBIENT_LIGHT_DEVICE_IDENTIFIER) then begin
+      brickletAmbientLight := TBrickletAmbientLight.Create(uid, ipcon);
+      brickletAmbientLight.SetIlluminanceCallbackPeriod(1000);
+      brickletAmbientLight.OnIlluminance := {$ifdef FPC}@{$endif}IlluminanceCB;
+    end
+    else if (deviceIdentifier = BRICKLET_HUMIDITY_DEVICE_IDENTIFIER) then begin
+      brickletHumidity := TBrickletHumidity.Create(uid, ipcon);
+      brickletHumidity.SetHumidityCallbackPeriod(1000);
+      brickletHumidity.OnHumidity := {$ifdef FPC}@{$endif}HumidityCB;
+    end
+    else if (deviceIdentifier = BRICKLET_BAROMETER_DEVICE_IDENTIFIER) then begin
+      brickletBarometer := TBrickletBarometer.Create(uid, ipcon);
+      brickletBarometer.SetAirPressureCallbackPeriod(1000);
+      brickletBarometer.OnAirPressure := {$ifdef FPC}@{$endif}AirPressureCB;
+    end;
 
 |step2_other_config2|
 
 |step2_put_together|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    def cb_enumerate(self, uid, connected_uid, position, hardware_version,
-                     firmware_version, device_identifier, enumeration_type):
-        if enumeration_type == IPConnection.ENUMERATION_TYPE_CONNECTED or \
-           enumeration_type == IPConnection.ENUMERATION_TYPE_AVAILABLE:
-            if device_identifier == LCD20x4.DEVICE_IDENTIFIER:
-                self.lcd = LCD20x4(uid, self.ipcon)
-                self.lcd.clear_display()
-                self.lcd.backlight_on()
-            elif device_identifier == AmbientLight.DEVICE_IDENTIFIER:
-                self.al = AmbientLight(uid, self.ipcon)
-                self.al.set_illuminance_callback_period(1000)
-                self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
-                                          self.cb_illuminance)
-            elif device_identifier == Humidity.DEVICE_IDENTIFIER:
-                self.hum = Humidity(uid, self.ipcon)
-                self.hum.set_humidity_callback_period(1000)
-                self.hum.register_callback(self.hum.CALLBACK_HUMIDITY,
-                                           self.cb_humidity)
-            elif device_identifier == Barometer.DEVICE_IDENTIFIER:
-                self.baro = Barometer(uid, self.ipcon)
-                self.baro.set_air_pressure_callback_period(1000)
-                self.baro.register_callback(self.baro.CALLBACK_AIR_PRESSURE,
-                                            self.cb_air_pressure)
+    procedure TWeatherStation.EnumerateCB(sender: TIPConnection; const uid: string;
+                                          const connectedUid: string; const position: char;
+                                          const hardwareVersion: TVersionNumber;
+                                          const firmwareVersion: TVersionNumber;
+                                          const deviceIdentifier: word; const enumerationType: byte);
+    begin
+      if ((enumerationType = IPCON_ENUMERATION_TYPE_CONNECTED) or
+          (enumerationType = IPCON_ENUMERATION_TYPE_AVAILABLE)) then begin
+        if (deviceIdentifier = BRICKLET_LCD_20X4_DEVICE_IDENTIFIER) then begin
+          brickletLCD := TBrickletLCD20x4.Create(UID, ipcon);
+          brickletLCD.ClearDisplay();
+          brickletLCD.BacklightOn();
+        end
+        else if (deviceIdentifier = BRICKLET_AMBIENT_LIGHT_DEVICE_IDENTIFIER) then begin
+          brickletAmbientLight := TBrickletAmbientLight.Create(uid, ipcon);
+          brickletAmbientLight.SetIlluminanceCallbackPeriod(1000);
+          brickletAmbientLight.OnIlluminance := {$ifdef FPC}@{$endif}IlluminanceCB;
+        end
+        else if (deviceIdentifier = BRICKLET_HUMIDITY_DEVICE_IDENTIFIER) then begin
+          brickletHumidity := TBrickletHumidity.Create(uid, ipcon);
+          brickletHumidity.SetHumidityCallbackPeriod(1000);
+          brickletHumidity.OnHumidity := {$ifdef FPC}@{$endif}HumidityCB;
+        end
+        else if (deviceIdentifier = BRICKLET_BAROMETER_DEVICE_IDENTIFIER) then begin
+          brickletBarometer := TBrickletBarometer.Create(uid, ipcon);
+          brickletBarometer.SetAirPressureCallbackPeriod(1000);
+          brickletBarometer.OnAirPressure := {$ifdef FPC}@{$endif}AirPressureCB;
+        end;
+      end;
+    end;
 
 
 Step 3: Show measurements on display
@@ -178,69 +202,78 @@ Step 3: Show measurements on display
 
 |step3_format|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    text = '%6.2f' % value
+    text := Format('%6.2f', [value])
 
 |step3_printf|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    def cb_illuminance(self, illuminance):
-        text = 'Illuminanc %s lx' % self.fmt(illuminance/10.0, 3)
-        self.lcd.write_line(0, 0, text)
+    procedure TWeatherStation.IlluminanceCB(sender: TBrickletAmbientLight; const illuminance: word);
+    var text: string;
+    begin
+      text := Format('Illuminanc %6.2f lx', [illuminance/10.0]);
+      brickletLCD.WriteLine(0, 0, text);
+    end;
 
-    def cb_humidity(self, humidity):
-        text = 'Humidity %s %%' % self.fmt(humidity/10.0, 5)
-        self.lcd.write_line(1, 0, text)
+    procedure TWeatherStation.HumidityCB(sender: TBrickletHumidity; const humidity: word);
+    var text: string;
+    begin
+      text := Format('Humidity   %6.2f %%', [humidity/10.0]);
+      brickletLCD.WriteLine(1, 0, text);
+    end;
 
-    def cb_air_pressure(self, air_pressure):
-        text = 'Air Press %s mb' % self.fmt(air_pressure/1000.0, 4)
-        self.lcd.write_line(2, 0, text)
+    procedure TWeatherStation.AirPressureCB(sender: TBrickletBarometer; const airPressure: longint);
+    var text: string;
+    begin
+      text := Format('Air Press %7.2f mb', [airPressure/1000.0]);
+      brickletLCD.WriteLine(2, 0, text);
+    end;
 
 |step3_temperature|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    def cb_air_pressure(self, air_pressure):
-        text = 'Air Press %s mb' % self.fmt(air_pressure/1000.0, 4)
-        self.lcd.write_line(2, 0, text)
+    procedure TWeatherStation.AirPressureCB(sender: TBrickletBarometer; const airPressure: longint);
+    var text: string; temperature: smallint;
+    begin
+      text := Format('Air Press %7.2f mb', [airPressure/1000.0]);
+      brickletLCD.WriteLine(2, 0, text);
 
-        fmt_text = self.fmt(self.baro.get_chip_temperature()/100.0, 2)
-        # \xDF == ° on LCD20x4 charset
-        text = 'Temperature %s \xDFC' % fmt_text
-        self.lcd.write_line(3, 0, text)
+      temperature := brickletBarometer.GetChipTemperature;
+      text := Format('Temperature %5.2f %sC', [temperature/100.0, '' + char($DF)]);
+      brickletLCD.WriteLine(3, 0, text);
+    end;
 
 |step3_put_together|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    def fmt(self, value, pre, post=2):
-        v2, v1 = math.modf(value)
-        v1 = str(int(v1))
-        v2 = str(int(v2 * 10**post))
+    procedure TWeatherStation.IlluminanceCB(sender: TBrickletAmbientLight; const illuminance: word);
+    var text: string;
+    begin
+      text := Format('Illuminanc %6.2f lx', [illuminance/10.0]);
+      brickletLCD.WriteLine(0, 0, text);
+    end;
 
-        num_space = (pre - len(v1))
-        num_zero = (post - len(v2))
+    procedure TWeatherStation.HumidityCB(sender: TBrickletHumidity; const humidity: word);
+    var text: string;
+    begin
+      text := Format('Humidity   %6.2f %%', [humidity/10.0]);
+      brickletLCD.WriteLine(1, 0, text);
+    end;
 
-        return ' '*num_space + v1 + '.' + v2 + '0'*num_zero
+    procedure TWeatherStation.AirPressureCB(sender: TBrickletBarometer; const airPressure: longint);
+    var text: string; temperature: smallint;
+    begin
+      text := Format('Air Press %7.2f mb', [airPressure/1000.0]);
+      brickletLCD.WriteLine(2, 0, text);
 
-    def cb_illuminance(self, illuminance):
-        text = 'Illuminanc %s lx' % self.fmt(illuminance/10.0, 3)
-        self.lcd.write_line(0, 0, text)
-
-    def cb_humidity(self, humidity):
-        text = 'Humidity %s %%' % self.fmt(humidity/10.0, 5)
-        self.lcd.write_line(1, 0, text)
-
-    def cb_air_pressure(self, air_pressure):
-        text = 'Air Press %s mb' % self.fmt(air_pressure/1000.0, 4)
-        self.lcd.write_line(2, 0, text)
-
-        fmt_text = self.fmt(self.baro.get_chip_temperature()/100.0, 2)
-        # \xDF == ° on LCD20x4 charset
-        text = 'Temperature %s \xDFC' % fmt_text
-        self.lcd.write_line(3, 0, text)
+      temperature := brickletBarometer.GetChipTemperature;
+      text := Format('Temperature %5.2f %sC', [temperature/100.0, '' + char($DF)]);
+      brickletLCD.WriteLine(3, 0, text);
+    end;
 
 |step3_complete|
 
@@ -256,57 +289,69 @@ Step 4: Error handling and Logging
 
 |step4_intro1|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    while True:
-        try:
-            self.ipcon.connect(WeatherStation.HOST, WeatherStation.PORT)
-            break
-        except Error as e:
-            log.error('Connection Error: ' + str(e.description))
-            time.sleep(1)
-        except socket.error as e:
-            log.error('Socket error: ' + str(e))
-            time.sleep(1)
+    while (true) do begin
+      try
+        ipcon.Connect(HOST, PORT);
+        break;
+      except
+        on e: Exception do begin
+          WriteLn('Connection Error: ' + e.Message);
+          Sleep(1000);
+        end;
+      end;
+    end;
 
 |step4_intro2|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    while True:
-        try:
-            self.ipcon.enumerate()
-            break
-        except Error as e:
-            log.error('Enumerate Error: ' + str(e.description))
-            time.sleep(1)
+    while (true) do begin
+      try
+        ipcon.Enumerate;
+        break;
+      except
+        on e: Exception do begin
+          WriteLn('Enumeration Error: ' + e.Message);
+          Sleep(1000);
+        end;
+      end;
+    end;
 
 |step4_connect_afterwards|
 
 |step4_lcd_initialized1|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    def cb_illuminance(self, illuminance):
-        if self.lcd is not None:
-            text = 'Helligkeit %s  lx' % self.fmt(illuminance/10.0, 3, 1)
-            self.lcd.write_line(0, 0, text)
-            log.info('Write to line 0: ' + text)
+    procedure TWeatherStation.IlluminanceCB(sender: TBrickletAmbientLight; const illuminance: word);
+    var text: string;
+    begin
+      if (brickletLCD <> nil) then begin
+        text := Format('Illuminanc %6.2f lx', [illuminance/10.0]);
+        brickletLCD.WriteLine(0, 0, text);
+        WriteLn('Write to line 0: ' + text);
+      end;
+    end;
 
 |step4_lcd_initialized2|
 
-.. code-block:: python
+.. code-block:: delphi
 
-    if device_identifier == AmbientLight.DEVICE_IDENTIFIER:
-        try:
-            self.al = AmbientLight(uid, self.ipcon)
-            self.al.set_illuminance_callback_period(1000)
-            self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
-                                      self.cb_illuminance)
-            log.info('AmbientLight initialized')
-        except Error as e:
-            log.error('AmbientLight init failed: ' + str(e.description))
-            self.al = None
+    if (deviceIdentifier = BRICKLET_AMBIENT_LIGHT_DEVICE_IDENTIFIER) then begin
+      try
+        brickletAmbientLight := TBrickletAmbientLight.Create(uid, ipcon);
+        brickletAmbientLight.SetIlluminanceCallbackPeriod(1000);
+        brickletAmbientLight.OnIlluminance := {$ifdef FPC}@{$endif}IlluminanceCB;
+        WriteLn('AmbientLight initialized');
+      except
+        on e: Exception do begin
+          WriteLn('AmbientLight init failed: ' + e.Message);
+          brickletAmbientLight := nil;
+        end;
+      end;
+    end;
 
 |step4_logging1|
 

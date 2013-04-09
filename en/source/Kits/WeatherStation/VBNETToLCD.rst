@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using VB.NET to write to LCD 20x4 Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using Visual Basic .NET to write to LCD 20x4 Bricklet
 
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
@@ -301,7 +301,7 @@ Step 4: Error handling and Logging
         try:
             self.al = AmbientLight(uid, self.ipcon)
             self.al.set_illuminance_callback_period(1000)
-            self.al.register_callback(self.al.CALLBACK_ILLUMINANCE, 
+            self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
                                       self.cb_illuminance)
             log.info('AmbientLight initialized')
         except Error as e:
