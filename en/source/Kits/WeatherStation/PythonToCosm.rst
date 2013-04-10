@@ -6,11 +6,10 @@
 Using Python to upload weather data to Cosm
 ===========================================
 
-For this project we are assuming, that you have a Python environment set up
-and that you have a rudimentary understanding of the Python language.
+.. include:: PythonCommon.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
-If you are totally new to either Python itself or to Python in the context of
-Tinkerforge, you should start :ref:`here <TODO>`.
 
 Goals
 -----

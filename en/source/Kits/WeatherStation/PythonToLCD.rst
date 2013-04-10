@@ -16,7 +16,7 @@
 Using Python to write to LCD 20x4 Bricklet
 ==========================================
 
-.. include:: PythonToLCD.substitutions
+.. include:: PythonCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 

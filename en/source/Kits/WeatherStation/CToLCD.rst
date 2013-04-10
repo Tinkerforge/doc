@@ -16,7 +16,7 @@
 Using C to write to LCD 20x4 Bricklet
 =====================================
 
-.. include:: CToLCD.substitutions
+.. include:: CCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 

@@ -16,7 +16,7 @@
 Using Java to write to LCD 20x4 Bricklet
 ========================================
 
-.. include:: JavaToLCD.substitutions
+.. include:: JavaCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 

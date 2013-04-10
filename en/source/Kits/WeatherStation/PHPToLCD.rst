@@ -16,7 +16,7 @@
 Using PHP to write to LCD 20x4 Bricklet
 =======================================
 
-.. include:: PHPToLCD.substitutions
+.. include:: PHPCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 

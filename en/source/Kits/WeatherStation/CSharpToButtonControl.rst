@@ -6,11 +6,10 @@
 Using C# to Control the Buttons for Statistics
 ==============================================
 
-For this project we are assuming, that you have a C# environment set up
-and that you have a rudimentary understanding of the C# language.
+.. include:: CSharpCommon.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
-If you are totally new to either C# itself or to C# in the context of
-Tinkerforge, you should start :ref:`here <TODO>`.
 
 Goals
 -----

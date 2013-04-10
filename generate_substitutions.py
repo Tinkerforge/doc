@@ -173,15 +173,23 @@ def make_bricklet_substitutions(bricklet):
 
     return substitutions
 
-                            # display,            example,              uri,      filename
-weather_station_bindings = [('C/C++',             'C',                  'c',      'C'),
-                            ('C#',                'C#',                 'csharp', 'CSharp'),
-                            ('Delphi',            'Delphi',             'delphi', 'Delphi'),
-                            ('Java',              'Java',               'java',   'Java'),
-                            ('PHP',               'PHP',                'php',    'PHP'),
-                            ('Python',            'Python',             'python', 'Python'),
-                            ('Ruby',              'Ruby',               'ruby',   'Ruby'),
-                            ('Visual Basic .NET', 'Visual Basic .NET',  'vbnet',  'VBNET')]
+                            # display,            example,              uri,      filename, getting started
+weather_station_bindings = [('C/C++',             'C',                  'c',      'C',      {'en': 'http://www.cprogramming.com/',
+                                                                                             'de': 'http://www.cprogramming.com/'}),
+                            ('C#',                'C#',                 'csharp', 'CSharp', {'en': 'http://csharp.net-tutorials.com/',
+                                                                                             'de': 'http://csharp.net-tutorials.com/'}),
+                            ('Delphi',            'Delphi',             'delphi', 'Delphi', {'en': 'http://www.delphibasics.co.uk/',
+                                                                                             'de': 'http://www.delphi-treff.de/tutorials/grundlagen/'}),
+                            ('Java',              'Java',               'java',   'Java',   {'en': 'http://docs.oracle.com/javase/tutorial/',
+                                                                                             'de': 'http://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
+                            ('PHP',               'PHP',                'php',    'PHP',    {'en': 'http://www.php.net/manual/en/getting-started.php',
+                                                                                             'de': 'http://www.php.net/manual/de/getting-started.php'}),
+                            ('Python',            'Python',             'python', 'Python', {'en': 'http://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
+                                                                                             'de': 'http://www.python.org/about/gettingstarted/'}),
+                            ('Ruby',              'Ruby',               'ruby',   'Ruby',   {'en': 'http://www.ruby-lang.org/en/documentation/quickstart/',
+                                                                                             'de': 'http://www.ruby-lang.org/de/documentation/quickstart/'}),
+                            ('Visual Basic .NET', 'Visual Basic .NET',  'vbnet',  'VBNET',  {'en': 'http://howtostartprogramming.com/vb-net/',
+                                                                                             'de': 'http://howtostartprogramming.com/vb-net/'})] # http://openbook.galileocomputing.de/vb_net/index.htm
 
 weather_station_binding_name = {
 'en':
@@ -201,6 +209,29 @@ weather_station_binding_names = {
 """
 }
 
+weather_station_common_intro = {
+'en':
+"""
+>>>intro
+For this project we are assuming, that you have a {0} environment set up
+and that you have a rudimentary understanding of the {0} language.
+
+If you are totally new to {0} itself you should start `here <{2}>`__. If you are
+new to the Tinkerforge API, you should start :ref:`here <api_bindings_{1}>`.
+<<<intro
+""",
+'de':
+"""
+>>>intro
+For this project we are assuming, that you have a {0} environment set up
+and that you have a rudimentary understanding of the {0} language.
+
+If you are totally new to {0} itself you should start `here <{2}>`. If you are
+new to the Tinkerforge API, you should start :ref:`here <api_bindings_{1}>`.
+<<<intro
+"""
+}
+
 weather_station_write_to_lcd_examples = {
 'en':
 """
@@ -217,29 +248,6 @@ weather_station_write_to_lcd_example_line = {
 """:ref:`{0} <starter_kit_weather_station_{1}_to_lcd>`""",
 'de':
 """:ref:`{0} <starter_kit_weather_station_{1}_to_lcd>`"""
-}
-
-weather_station_write_to_lcd_intro = {
-'en':
-"""
->>>intro
-For this project we are assuming, that you have a {0} environment set up
-and that you have a rudimentary understanding of the {0} language.
-
-If you are totally new to either {0} itself or to {0} in the context of
-Tinkerforge, you should start :ref:`here <TODO>`.
-<<<intro
-""",
-'de':
-"""
->>>intro
-For this project we are assuming, that you have a {0} environment set up
-and that you have a rudimentary understanding of the {0} language.
-
-If you are totally new to either {0} itself or to {0} in the context of
-Tinkerforge, you should start :ref:`here <TODO>`.
-<<<intro
-"""
 }
 
 weather_station_write_to_lcd_goals = {
@@ -589,9 +597,14 @@ def make_weather_station_substitutions():
 
     return substitutions
 
+def make_weather_station_common_substitutions(binding):
+    substitutions = ''
+    substitutions += weather_station_common_intro[lang].format(binding[1], binding[2], binding[4][lang])
+
+    return substitutions
+
 def make_weather_station_write_to_lcd_substitutions(binding):
     substitutions = ''
-    substitutions += weather_station_write_to_lcd_intro[lang].format(binding[1]) + '\n'
     substitutions += weather_station_write_to_lcd_goals[lang] + '\n'
     substitutions += '>>>substitutions\n'
     substitutions += weather_station_write_to_lcd_steps[lang] + '\n'
@@ -624,6 +637,10 @@ def generate(path):
 
     print 'Generating WeatherStation.substitutions'
     file(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WeatherStation.substitutions'), 'wb').write(make_weather_station_substitutions())
+
+    for binding in weather_station_bindings:
+        print 'Generating {0}Common.substitutions (WeatherStation)'.format(binding[3])
+        file(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'Common.substitutions'), 'wb').write(make_weather_station_common_substitutions(binding))
 
     for binding in weather_station_bindings:
         print 'Generating {0}ToLCD.substitutions (WeatherStation)'.format(binding[3])

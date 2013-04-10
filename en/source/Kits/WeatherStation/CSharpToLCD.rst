@@ -16,7 +16,7 @@
 Using C# to write to LCD 20x4 Bricklet
 ======================================
 
-.. include:: CSharpToLCD.substitutions
+.. include:: CSharpCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 

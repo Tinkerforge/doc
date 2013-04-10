@@ -16,7 +16,7 @@
 Using Ruby to write to LCD 20x4 Bricklet
 ========================================
 
-.. include:: RubyToLCD.substitutions
+.. include:: RubyCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 

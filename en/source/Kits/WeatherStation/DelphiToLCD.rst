@@ -16,7 +16,7 @@
 Using Delphi to write to LCD 20x4 Bricklet
 ==========================================
 
-.. include:: DelphiToLCD.substitutions
+.. include:: DelphiCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 

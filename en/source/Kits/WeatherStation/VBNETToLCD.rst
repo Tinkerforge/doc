@@ -16,7 +16,7 @@
 Using Visual Basic .NET to write to LCD 20x4 Bricklet
 =====================================================
 
-.. include:: VBNETToLCD.substitutions
+.. include:: VBNETCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 

@@ -6,11 +6,10 @@
 Using PHP to Embed Live Measurements on Website
 ===============================================
 
-For this project we are assuming, that you have a PHP environment set up 
-and that you have a rudimentary understanding of the PHP language.
+.. include:: PHPCommon.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
-If you are totally new to either PHP itself or to PHP in the context of 
-Tinkerforge, you should start :ref:`here <TODO>`.
 
 Goals
 -----
@@ -24,6 +23,7 @@ The weather measurements should be
 * provided by a small PHP script.
 
 In the following we will show step-by-step how this can be achieved.
+
 
 Step 1: HTML and JavaScript
 ---------------------------
