@@ -232,7 +232,9 @@ Step 3: Show measurements on display
 .. code-block:: php
 
     <?php
+
     $text = sprintf("%6.2f", $value);
+
     ?>
 
 |step3_printf|
@@ -409,5 +411,4 @@ Step 5: Everything put together
 
 .. literalinclude:: ../../../../../weather-station/write_to_lcd/php/WeatherStation.php
  :language: php
- :linenos:
  :tab-width: 4

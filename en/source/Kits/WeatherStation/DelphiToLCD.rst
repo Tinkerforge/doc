@@ -367,5 +367,4 @@ Step 5: Everything put together
 
 .. literalinclude:: ../../../../../weather-station/write_to_lcd/delphi/WeatherStation.pas
  :language: delphi
- :linenos:
  :tab-width: 4

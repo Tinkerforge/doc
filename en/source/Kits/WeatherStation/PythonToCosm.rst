@@ -6,10 +6,10 @@
 Using Python to upload weather data to Cosm
 ===========================================
 
-For this project we are assuming, that you have a Python environment set up 
+For this project we are assuming, that you have a Python environment set up
 and that you have a rudimentary understanding of the Python language.
 
-If you are totally new to either Python itself or to Python in the context of 
+If you are totally new to either Python itself or to Python in the context of
 Tinkerforge, you should start :ref:`here <TODO>`.
 
 Goals
@@ -28,10 +28,10 @@ In the following we will show step-by-step how this can be achieved.
 Step 1: Create and configure Cosm account
 -----------------------------------------
 
-To use Cosm, we first have to create a Cosm account. 
+To use Cosm, we first have to create a Cosm account.
 Go to `cosm.com <https://cosm.com>`__ and sign up.
 
-Click on "+ Device/Feed" and as type choose "Something Else". 
+Click on "+ Device/Feed" and as type choose "Something Else".
 Choose "push data to Cosm", a title and tags and create the feed.
 
 In the feed we have to add data streams for our weather measurements:
@@ -120,7 +120,7 @@ We just have to use the put function whenever a new measurement arrives:
                 self.lcd.write_line(0, 0, text)
 
                 # Here we add illuminance to Cosm with ID "AmbientLight"
-                self.cosm.put('AmbientLight', illuminance/10.0) 
+                self.cosm.put('AmbientLight', illuminance/10.0)
                 log.info('Write to line 0: ' + text)
         # [...]
 
@@ -139,7 +139,7 @@ keys and so on:
         AGENT = "Tinkerforge cosm 1.0"
         FEED = '105813.json'
         API_KEY = 'WtXx2m6ItNZyFYoQyr5qnoN1GsOSAKxPMGdIaXRLYzY5ND0g'
-     
+
         def __init__(self):
             self.items = {}
             self.headers = {
@@ -167,11 +167,11 @@ upload function in a thread:
 
             stream_items = []
             for identifier, value in self.items.items():
-                stream_items.append({'id': identifier, 
-                                     'current_value': value[0], 
-                                     'min_value': value[1], 
+                stream_items.append({'id': identifier,
+                                     'current_value': value[0],
+                                     'min_value': value[1],
                                      'max_value': value[2]})
-     
+
             data = {
               'version' : '1.0.0',
               'datastreams': stream_items,
@@ -185,7 +185,7 @@ upload function in a thread:
             http.close()
 
             if response.status != 200:
-                log.error('Could not upload to cosm -> ' + 
+                log.error('Could not upload to cosm -> ' +
                           str(response.status) + ': ' + response.reason)
 
 Here we take the data that was gathered, package it in the JSON format and
@@ -206,5 +206,4 @@ you have a working Weather Station that uploads the weather measurements to Cosm
 
 .. literalinclude:: ../../../../../weather-station/cosm/python/weather_cosm.py
  :language: python
- :linenos:
  :tab-width: 4

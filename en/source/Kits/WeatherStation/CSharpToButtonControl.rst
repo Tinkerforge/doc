@@ -399,5 +399,4 @@ All of the above put together (`download <https://raw.github.com/Tinkerforge/wea
 
 .. literalinclude:: ../../../../../weather-station/button_control/csharp/WeatherStationButton.cs
  :language: csharp
- :linenos:
  :tab-width: 4

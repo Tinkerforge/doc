@@ -312,5 +312,4 @@ Step 5: Everything put together
 
 .. literalinclude:: ../../../../../weather-station/write_to_lcd/python/weather_station.py
  :language: python
- :linenos:
  :tab-width: 4

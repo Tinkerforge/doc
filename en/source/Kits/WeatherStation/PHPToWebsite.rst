@@ -174,5 +174,4 @@ and put both of the files in ``/var/www/``.
 
 .. literalinclude:: ../../../../../weather-station/website/php/WeatherStationWebsite.php
  :language: php
- :linenos:
  :tab-width: 4

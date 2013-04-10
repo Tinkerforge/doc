@@ -283,7 +283,7 @@ Step 4: Error handling and Logging
 
         try {
             Thread.sleep(1000);
-        } catch(java.lang.InterruptedException ei) {
+        } catch(InterruptedException ei) {
         }
     }
 
@@ -300,7 +300,7 @@ Step 4: Error handling and Logging
 
         try {
             Thread.sleep(1000);
-        } catch(java.lang.InterruptedException ei) {
+        } catch(InterruptedException ei) {
         }
     }
 
@@ -352,5 +352,4 @@ Step 5: Everything put together
 
 .. literalinclude:: ../../../../../weather-station/write_to_lcd/java/WeatherStation.java
  :language: java
- :linenos:
  :tab-width: 4

@@ -394,5 +394,4 @@ Step 5: Everything put together
 
 .. literalinclude:: ../../../../../weather-station/write_to_lcd/c/weather_station.c
  :language: c
- :linenos:
  :tab-width: 4
