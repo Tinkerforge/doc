@@ -73,13 +73,18 @@ Um den Brick Daemon aus dem Quelltext zu installieren, muss
 der `Quellcode von github <https://github.com/Tinkerforge/brickd>`__
 heruntergeladen werden. Es gibt folgende Abhängigkeiten:
 
-* libusb-1.0-0-dev >= 1.0.8
-* libudev-dev >= 173 (Optional für USB Hotplug)
+* libusb-1.0
+* libudev (Optional für USB Hotplug)
 
 Auf Debian basierten Distributionen können die Abhängigkeiten mit apt-get
 installiert werden::
 
  sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
+
+Auf Fedora können die Abhängigkeiten mit yum installiert werden::
+
+ sudo yum groupinstall "Development Tools"
+ sudo yum install libusb1-devel libudev-devel
 
 Auf anderen Distributionen muss nach den äquivalenten Paketen gesucht werden.
 

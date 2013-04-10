@@ -68,12 +68,17 @@ From Source
 To install Brick Daemon from source, download the source from `here
 <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
-* libusb-1.0-0-dev >= 1.0.8
-* libudev-dev >= 173 (Optional for USB Hotplug)
+* libusb-1.0
+* libudev (Optional for USB Hotplug)
 
 On Debian based distributions you can install the dependencies with apt-get::
 
  sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
+
+On Fedora you can install the dependencies with yum::
+
+ sudo yum groupinstall "Development Tools"
+ sudo yum install libusb1-devel libudev-devel
 
 On other distribution you have to search for and install the equivalent packages.
 
