@@ -16,7 +16,18 @@ Das egg kann mit Hilfe von easy_install installiert werden::
 
  easy_install tinkerforge.egg
 
+
+Auf Windows ist easy_install möglicherweise noch nicht installiert:
+
+* Installiere easy_install: http://pypi.python.org/pypi/setuptools#windows (setuptools)
+* Öffne eine Eingabeaufforderung
+* Führe ``C:\\YourPythonDir\\Scripts\\easy_install.exe C:\\PathToEgg\\tinkerforge.egg`` aus
+
 Danach können alle Beispiel unverändert verwendet werden.
+
+
+Test eines Beispiels
+--------------------
 
 Wenn das egg nicht verwenden werden soll oder kann, dann kann der Quelltext
 auch direkt verwendet werden. Dafür muss der ``tinkerforge`` Ordner
@@ -55,10 +66,3 @@ muss dort nun dies stehen:
  from brick_stepper import Stepper
 
 Jetzt kann das Beispiel wieder ausgeführt werden.
-
-.. note::
- Windows Installationshinweis:
-
- * Installiere easy_install: http://pypi.python.org/pypi/setuptools#windows (setuptools)
- * Öffne eine Eingabeaufforderung
- * Führe ``C:\\YourPythonDir\\Scripts\\easy_install.exe C:\\PathToEgg\\tinkerforge.egg`` aus

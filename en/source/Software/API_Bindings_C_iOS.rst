@@ -12,6 +12,10 @@ Objective-C is compatible to C. This allows to use the :ref:`C/C++ bindings
 In the following we assume that you already have the iOS development environment
 installed.
 
+
+Testing an Example
+------------------
+
 As an example we will create a small project that can toggle a Dual Relay
 Bricklet. It should be easy to adjust this example for your needs.
 

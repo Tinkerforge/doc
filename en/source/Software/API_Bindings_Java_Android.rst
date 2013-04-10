@@ -14,6 +14,10 @@ you should first complete the `hello world tutorial
 <http://developer.android.com/resources/tutorials/hello-world.html>`__ from
 Google.
 
+
+Testing an Example
+------------------
+
 As an example we will create a small project that can toggle a Dual Relay
 Bricklet. It should be easy to adjust this example for your needs.
 

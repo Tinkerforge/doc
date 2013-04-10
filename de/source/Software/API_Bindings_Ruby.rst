@@ -18,6 +18,10 @@ Der GEM kann mit Hilfe des gem Tools installiert werden::
 
 Danach können alle Beispiel unverändert verwendet werden.
 
+
+Test eines Beispiels
+--------------------
+
 Wenn der GEM nicht verwendet werden soll oder kann, dann kann der Quelltext auch
 direkt verwendet werden. Dafür muss der ``tinkerforge`` Ordner vom ``source/``
 Ordner und das Beispiel, das ausprobiert werden soll (z.B. das Stepper

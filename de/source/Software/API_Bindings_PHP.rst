@@ -18,6 +18,10 @@ Das PEAR Paket kann mit Hilfe des pear Tools installiert werden::
 
 Danach können alle Beispiel unverändert verwendet werden.
 
+
+Test eines Beispiels
+--------------------
+
 Wenn das PEAR Paket nicht verwendet werden soll oder kann, dann kann der
 Quelltext auch direkt verwendet werden. Dafür muss der ``Tinkerforge`` Ordner vom
 ``source/`` Ordner und das Beispiel, das ausprobiert werden soll (z.B. das
@@ -44,20 +48,24 @@ Ordner aus dem Quelltext des Beispiels entfernt werden. Statt:
 
 .. code-block:: php
 
- <?php
- require_once('Tinkerforge/IPConnection.php');
- require_once('Tinkerforge/BrickStepper.php');
- ...
- ?>
+    <?php
+
+    require_once('Tinkerforge/IPConnection.php');
+    require_once('Tinkerforge/BrickStepper.php');
+    ...
+
+    ?>
 
 muss dort nun dies stehen:
 
 .. code-block:: php
 
- <?php
- require_once('IPConnection.php');
- require_once('BrickStepper.php');
- ...
- ?>
+    <?php
+
+    require_once('IPConnection.php');
+    require_once('BrickStepper.php');
+    ...
+
+    ?>
 
 Jetzt kann das Beispiel wieder ausgeführt werden.

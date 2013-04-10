@@ -14,8 +14,14 @@ Die Bibliothek wurde mit dem folgenden Befehl erzeugt::
 
  gmcs /optimize /target:library /out:Tinkerforge.dll source/Tinkerforge/*.cs
 
-Die Bibliothek hat keine weiteren Abhängigkeiten. Als Beispiel wird im Folgenden
-das Konfigurationsbeispiel des Stepper Bricks kompiliert.
+Diese hat keine weiteren Abhängigkeiten.
+
+
+Test eines Beispiels
+--------------------
+
+Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
+kompiliert.
 
 Dafür müssen zuerst die ``Tinkerforge.dll`` und die
 ``examples/Brick/Stepper/ExampleConfiguration.cs`` Datei in einen Ordern kopiert

@@ -18,6 +18,10 @@ You can install the PEAR package with the pear tool::
 
 After that you can use all examples as they are.
 
+
+Testing an Example
+------------------
+
 If you can't or don't want to use the PEAR package, you can also use the source
 directly, just create a folder for your project and copy the ``Tinkerforge``
 folder from ``source/`` and the example you want to try in there
@@ -42,20 +46,24 @@ we have to remove the ``Tinkerforge`` folder from the examples, i.e. instead of:
 
 .. code-block:: php
 
- <?php
- require_once('Tinkerforge/IPConnection.php');
- require_once('Tinkerforge/BrickStepper.php');
- ...
- ?>
+    <?php
+
+    require_once('Tinkerforge/IPConnection.php');
+    require_once('Tinkerforge/BrickStepper.php');
+    ...
+
+    ?>
 
 we use:
 
 .. code-block:: php
 
- <?php
- require_once('IPConnection.php');
- require_once('BrickStepper.php');
- ...
- ?>
+    <?php
+
+    require_once('IPConnection.php');
+    require_once('BrickStepper.php');
+    ...
+
+    ?>
 
 After that, the example can be executed again.

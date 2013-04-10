@@ -19,6 +19,10 @@ operating systems. This means, the
 bindings should work on most architectures (ARM, x86, etc.) and on most
 operating systems (Windows and POSIX systems, such as Linux and Mac OS X, etc.).
 
+
+Testing an Example
+------------------
+
 As an example we will compile the Stepper Brick configuration example
 with GCC on Windows and Linux.
 For that we have to copy the IP Connection and the Stepper Brick
@@ -36,7 +40,7 @@ project::
 
 
 GCC
----
+^^^
 
 The only dependency on Unix-like systems is pthreads, therefore a
 compilation of the example with GCC on Linux looks like::
@@ -51,7 +55,7 @@ linking must come after the source)::
 
 
 Visual Studio
--------------
+^^^^^^^^^^^^^
 
 With Visual Studio we can use our ``project_folder/`` as follows:
 

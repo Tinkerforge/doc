@@ -12,8 +12,13 @@ The Java bindings consist of a library (.jar) for all Tinkerforge Bricks and
 Bricklets (``Tinkerforge.jar``), the source of the JAR (in ``source/``) and all
 available Java examples (in ``examples/``).
 
-The library can be used without any further extensions. As an example lets
-compile the configuration example of the Stepper Brick.
+The library can be used without any further extensions.
+
+
+Testing an Example
+------------------
+
+As an example lets compile the configuration example of the Stepper Brick.
 
 Create a new folder and copy the ``Tinkerforge.jar`` and the
 ``examples/Brick/Stepper/ExampleConfiguration.java`` into this folder::

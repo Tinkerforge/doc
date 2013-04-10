@@ -21,6 +21,10 @@ werden. Die gesamten C# Bindings funktionieren mit Windows Phone SDK >= 7.1
 (SDK 7.0 unterstützt keine Sockets und kann daher nicht verwendet werden um zum
 Brick Daemon eine Netzwerkverbindung aufzubauen).
 
+
+Test eines Beispiels
+--------------------
+
 Im Folgenden wird angenommen, dass  Visual Studio für Windows Phone bereits
 installiert ist. Als Beispiel soll ein kleines Projekt zum Schalten eines
 Dual Relay Bricklets erstellt werden. Es sollte leicht sein dieses Beispiel

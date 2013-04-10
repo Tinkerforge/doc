@@ -23,8 +23,15 @@ Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
 POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
 
 
+Test eines Beispiels
+--------------------
+
+Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit Lazarus
+und Delphi XE2 kompilieren.
+
+
 Lazarus
--------
+^^^^^^^
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit dem Free
 Pascal Compiler (FPC) kompilieren. FPC ist Teil der Lazarus IDE. Dafür
@@ -61,8 +68,8 @@ Mit Lazarus kann der ``project_folder/`` so verwendet werden:
 * Klicke OK
 
 
-Delphi
-------
+Delphi IDE
+^^^^^^^^^^
 
 Mit Delphi XE2 (ältere Delphiversion sollten ähnlich funktionieren) kann der
 ``project_folder/`` wie folgt verwendet werden. Zuerst muss

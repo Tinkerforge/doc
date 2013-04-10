@@ -18,6 +18,10 @@ Betriebssystem zu versorgen. Die Bindings sollten aber auf den meisten
 Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
 POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
 
+
+Test eines Beispiels
+--------------------
+
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit GCC unter
 Linux kompilieren. Dafür müssen die IP Connection und die Stepper Brick
 Bindings (``ip_connection.h``, ``ip_connection.c``, ``brick_stepper.c`` und
@@ -34,7 +38,7 @@ Projektordner kopiert werden::
 
 
 GCC
----
+^^^
 
 Die einzige Abhängigkeit auf Unix-artigen Systemen ist pthreads. Somit sieht der
 Befehl um das Beispiel mit GCC unter Linux zu kompilieren wie folgt aus::
@@ -49,7 +53,7 @@ kompilieren (Linkerparameter müssen nach den Quelldateien angegeben werden)::
 
 
 Visual Studio
--------------
+^^^^^^^^^^^^^
 
 Mit Visual Studio kann der ``project_folder/`` wie folgt verwendet werden:
 

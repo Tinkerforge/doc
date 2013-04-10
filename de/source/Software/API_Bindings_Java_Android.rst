@@ -15,6 +15,10 @@ installiert ist. Für Androidanfänger empfehlen wir zuerst mit dem
 <http://developer.android.com/resources/tutorials/hello-world.html>`__ von
 Google zu beginnen.
 
+
+Test eines Beispiels
+--------------------
+
 Als Beispiel soll ein kleines Projekt zum Schalten eines Dual Relay Bricklets
 erstellt werden. Es sollte leicht sein dieses Beispiel für deine Zwecke
 weiterzuentwickeln.

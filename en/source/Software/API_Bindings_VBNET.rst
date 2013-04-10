@@ -20,8 +20,15 @@ Bricks and Bricklets (``Tinkerforge.dll``), the C# source of the DLL
 (in ``source/``) and all available Visual Basic .NET examples (in ``examples/``).
 
 
+Testing an Example
+------------------
+
+As an example we will compile the Stepper Brick configuration example with
+MonoDevelop and Visual Studio.
+
+
 MonoDevelop
------------
+^^^^^^^^^^^
 
 As an example we will compile the Stepper Brick configuration example with
 the Visual Basic .NET Compiler (VBNC) that comes with Mono. Create a new
@@ -58,7 +65,7 @@ The Visual Basic .NET Compiler can also be used from the command line::
 
 
 Visual Studio
--------------
+^^^^^^^^^^^^^
 
 As an example we will compile the Stepper Brick configuration example with
 Microsoft Visual Basic 2010. Create a new Visual Basic project by clicking:

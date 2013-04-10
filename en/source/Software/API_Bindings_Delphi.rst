@@ -22,8 +22,15 @@ operating systems. This means, the bindings should work on most architectures
 as Linux and Mac OS X, etc.).
 
 
+Testing an Example
+------------------
+
+As an example we will compile the Stepper Brick configuration example with
+Lazarus and Delphi XE2.
+
+
 Lazarus
--------
+^^^^^^^
 
 As an example we will compile the Stepper Brick configuration example with
 the Free Pascal Compiler (FPC) that comes with the Lazarus IDE. For that we
@@ -60,8 +67,8 @@ With Lazarus we can use our ``project_folder/`` by clicking:
 * Click OK
 
 
-Delphi
-------
+Delphi IDE
+^^^^^^^^^^
 
 With Delphi XE2 (older Delphi version should work similar) we can use our
 ``project_folder/`` as follows. First rename ``ExampleConfiguration.pas`` to

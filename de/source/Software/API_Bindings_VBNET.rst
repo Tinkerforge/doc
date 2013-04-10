@@ -19,8 +19,15 @@ Die Bindings bestehen aus einer Bibliothek (.dll) für alle Tinkerforge Bricks
 und Bricklets (``Tinkerforge.dll``), dem C# Quelltext der DLL (in ``source/``)
 und allen verfügbaren Visual Basic .NET Beispielen (in ``examples/``).
 
+
+Test eines Beispiels
+--------------------
+
+Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit MonoDevelop
+und Visual Studio kompilieren.
+
 MonoDevelop
------------
+^^^^^^^^^^^
 
 Am Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit dem
 Visual Basic .NET Compiler (VBNC) kompilieren, der Teil von Mono ist. Dazu muss
@@ -60,7 +67,7 @@ werden::
 
 
 Visual Studio
--------------
+^^^^^^^^^^^^^
 
 Am Beispiel werden wir das Stepper Brick Konfigurationsbeispiel in Microsoft
 Visual Basic 2010 kompilieren. Dazu muss als erstes ein neues Visual Basic

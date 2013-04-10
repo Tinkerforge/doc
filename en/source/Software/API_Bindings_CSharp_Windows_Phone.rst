@@ -20,6 +20,9 @@ compile the bindings for Windows Phone. The complete C# bindings
 work with Windows Phone SDK >= 7.1 (SDK 7.0 does not support sockets
 and can thus not be used to interface with the Brick Daemon).
 
+Testing an Example
+------------------
+
 In the following we assume that you already have Visual Studio for Windows
 Phone installed. As an example we will create a small project that can toggle
 a Dual Relay Bricklet. It should be easy to adjust this example for your needs.

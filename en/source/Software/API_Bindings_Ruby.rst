@@ -18,6 +18,10 @@ You can install the GEM with the gem tool::
 
 After that you can use the examples as they are.
 
+
+Testing an Example
+------------------
+
 If you can't or don't want to use the GEM, you can also use the source
 directly, just create a folder for your project and copy the ``tinkerforge``
 folder from ``source/`` and the example you want to try in there

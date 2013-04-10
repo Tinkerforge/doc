@@ -12,8 +12,14 @@ Die Java Bindings bestehen aus einer Bibliothek (.jar) für alle Tinkerforge
 Bricks und Bricklets (``Tinkerforge.jar``), dem Quelltext des JAR (in
 ``source/``) und allen verfügbaren Java Beispielen (in ``examples/``).
 
-Die Bibliothek hat keine weiteren Abhängigkeiten. Als Beispiel wird im Folgenden
-das Konfigurationsbeispiel des Stepper Bricks kompiliert.
+Die Bibliothek hat keine weiteren Abhängigkeiten.
+
+
+Test eines Beispiels
+--------------------
+
+Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
+kompiliert.
 
 Dafür müssen zuerst die ``Tinkerforge.jar`` und die
 ``examples/Brick/Stepper/ExampleConfiguration.java`` Datei in einen Ordern

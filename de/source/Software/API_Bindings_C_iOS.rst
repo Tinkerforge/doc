@@ -10,7 +10,13 @@ Objective-C ist kompatible zu C. Dies erlaubt es uns die :ref:`C/C++ Bindings
 <api_bindings_c>` in einer iOS App zu verwenden.
 
 Im Folgenden wird angenommen, dass die iOS Entwicklungsumgebung schon
-installiert ist. Als Beispiel soll ein kleines Projekt zum Schalten eines
+installiert ist.
+
+
+Test eines Beispiels
+--------------------
+
+Als Beispiel soll ein kleines Projekt zum Schalten eines
 Dual Relay Bricklets erstellt werden. Es sollte leicht sein dieses Beispiel
 für deine Zwecke weiterzuentwickeln.
 

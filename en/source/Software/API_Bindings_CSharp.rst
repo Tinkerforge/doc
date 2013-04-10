@@ -14,8 +14,13 @@ The library has been compiled with::
 
  gmcs /optimize /target:library /out:Tinkerforge.dll source/Tinkerforge/*.cs
 
-The library can be used without any further extensions. As an example
-lets compile the configuration example of the Stepper Brick.
+It can be used without any further extensions.
+
+
+Testing an Example
+------------------
+
+As an example lets compile the configuration example of the Stepper Brick.
 
 For this we create a folder and copy the ``Tinkerforge.dll`` and the
 ``examples/Brick/Stepper/ExampleConfiguration.cs`` into this folder::
