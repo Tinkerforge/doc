@@ -6,7 +6,8 @@
 C# - API Bindings
 =================
 
-Die C# Bindings bestehen aus einer Bibliothek (.dll) für alle Tinkerforge Bricks
+Die C# Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen aus
+einer Bibliothek (.dll) für alle Tinkerforge Bricks
 und Bricklets (``Tinkerforge.dll``), dem Quelltext der DLL (in ``source/``) und
 allen verfügbaren C# Beispielen (in ``examples/``).
 

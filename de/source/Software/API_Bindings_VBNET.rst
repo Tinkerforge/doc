@@ -8,7 +8,8 @@ Visual Basic .NET - API Bindings
 
 **Voraussetzungen**: Visual Basic 2005 (VB 8.0) oder neuer, oder Mono 1.2.3 oder neuer
 
-Die Visual Basic .NET Bindings und die :ref:`C# Bindings <api_bindings_csharp>`
+Die Visual Basic .NET Bindings (:ref:`Download <downloads_bindings_examples>`)
+und die :ref:`C# Bindings <api_bindings_csharp>`
 sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLS
 <http://de.wikipedia.org/wiki/Common_Language_Specification>`__-konform.
 Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen

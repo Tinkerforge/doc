@@ -8,7 +8,8 @@ Ruby - API Bindings
 
 **Voraussetzungen**: Ruby 1.9 oder neuer
 
-Die Ruby Bindings bestehen aus einem Ruby GEM mit den Bindings für alle
+Die Ruby Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen aus
+einem Ruby GEM mit den Bindings für alle
 Tinkerforge Bricks und Bricklets (``tinkerforge.gem``), dem Quelltext des GEMs
 (in ``source/``) und allen verfügbaren Ruby Beispielen (in ``examples/``).
 

@@ -10,7 +10,8 @@ Delphi - API Bindings
 2.4 oder neuer), andere Delphi oder Object Pascal Compiler sollten auch
 funktionieren
 
-Die Delphi Bindings bestehen aus den Bindings für alle Tinkerforge Bricks und
+Die Delphi Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen
+aus den Bindings für alle Tinkerforge Bricks und
 Bricklets (in ``bindings/``) und allen verfügbaren Delphi Beispielen (in
 ``examples/``).
 

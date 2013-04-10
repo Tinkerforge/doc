@@ -8,7 +8,8 @@ Java - API Bindings
 
 **Voraussetzungen**: Java 1.5 oder neuer
 
-Die Java Bindings bestehen aus einer Bibliothek (.jar) für alle Tinkerforge
+Die Java Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen aus
+einer Bibliothek (.jar) für alle Tinkerforge
 Bricks und Bricklets (``Tinkerforge.jar``), dem Quelltext des JAR (in
 ``source/``) und allen verfügbaren Java Beispielen (in ``examples/``).
 

@@ -8,7 +8,8 @@ PHP - API Bindings
 
 **Voraussetzungen**: PHP 5.3 oder neuer mit bcmath Erweiterung
 
-Die PHP Bindings bestehen aus einem PEAR Paket mit den Bindings für alle
+Die PHP Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen aus
+einem PEAR Paket mit den Bindings für alle
 Tinkerforge Bricks und Bricklets (``Tinkerforge.tgz``), dem Quelltext des PEAR
 Pakets (in ``source/``) und allen verfügbaren PHP Beispielen (in ``examples/``).
 

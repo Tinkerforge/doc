@@ -9,7 +9,8 @@ Delphi - API Bindings
 **Requirements**: Delphi 2007 or newer, or Lazarus (Free Pascal Compiler 2.4
 or newer), other Delphi or Object Pascal compilers might work as well
 
-The Delphi bindings consist of the bindings for all Tinkerforge Bricks and
+The Delphi bindings (:ref:`download <downloads_bindings_examples>`) consist of
+the bindings for all Tinkerforge Bricks and
 Bricklets (in ``bindings/``) and all available Delphi examples (in
 ``examples/``).
 

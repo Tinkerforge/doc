@@ -8,7 +8,8 @@ Python - API Bindings
 
 **Requirements**: Python 2.5 or newer, Python 3 is also supported
 
-The Python bindings consist of a Python egg with the bindings for all
+The Python bindings (:ref:`download <downloads_bindings_examples>`) consist of
+a Python egg with the bindings for all
 Tinkerforge Bricks and Bricklets (``tinkerforge.egg``, the source of the
 egg (in ``source/``) and all available Python examples (in ``examples/``).
 

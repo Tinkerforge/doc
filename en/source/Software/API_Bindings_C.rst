@@ -6,7 +6,8 @@
 C/C++ - API Bindings
 ====================
 
-The C/C++ bindings consist of the bindings for all Tinkerforge Bricks and
+The C/C++ bindings (:ref:`download <downloads_bindings_examples>`) consist of
+the bindings for all Tinkerforge Bricks and
 Bricklets (in ``bindings/``) and all available C/C++ examples (in
 ``examples/``).
 
