@@ -28,8 +28,6 @@ In the following we will show step-by-step how this can be achieved.
 Step 1: HTML and JavaScript
 ---------------------------
 
-.. batti: todo hint setup will follow later?
-
 Since this project is not about designing an actual website, we will
 leave the HTML as plain as possible:
 
@@ -76,13 +74,14 @@ data that is provided by a PHP script over AJAX:
 
 We use jQuery to keep it as simple and readable as possible.
 The function ``updateMeasurements`` calls ``WeatherStationWebsite.php`` and
-expects to get ``illuminance``, ``humidity``, ``air_pressure`` and 
+expects to get ``illuminance``, ``humidity``, ``air_pressure`` and
 ``temperature`` as a return in the JSON format.
 
 To show the measurements directly upon opening the website,
-``updateMeasurements`` is called once directly. After that it is called with 
-an interval of 5000ms (5s), configured with 
+``updateMeasurements`` is called once directly. After that it is called with
+an interval of 5000ms (5s), configured with
 ``setInterval(updateMeasurements, 5000)``.
+
 
 Step 2: PHP
 -----------
@@ -93,6 +92,7 @@ Bricklets:
 .. code-block:: php
 
     <?php
+
     require_once('Tinkerforge/IPConnection.php');
     require_once('Tinkerforge/BrickletAmbientLight.php');
     require_once('Tinkerforge/BrickletHumidity.php');
@@ -109,6 +109,7 @@ Bricklets:
     $brickletBarometer = new BrickletBarometer("d99", $ipcon);
 
     $ipcon->connect("localhost", 4223);
+
     ?>
 
 Then get the values and package them in a response array:
@@ -116,6 +117,7 @@ Then get the values and package them in a response array:
 .. code-block:: php
 
     <?php
+
     $illuminance = $brickletAmbientLight->getIlluminance()/10.0;
     $humidity = $brickletHumidity->getHumidity()/10.0;
     $air_pressure = $brickletBarometer->getAirPressure()/1000.0;
@@ -127,6 +129,7 @@ Then get the values and package them in a response array:
         "air_pressure" => "Air Pressure: $air_pressure mbar",
         "temperature"  => "Temperature: $temperature °C",
     );
+
     ?>
 
 Here you have to change the UIDs ("apy", "7bA" and "d99") by the UIDs
@@ -137,7 +140,9 @@ Lastly, we print the response in JSON format:
 .. code-block:: php
 
     <?php
+
     print_r(json_encode($response));
+
     ?>
 
 
@@ -145,7 +150,7 @@ Step 3: Everything put together
 -------------------------------
 
 That's it! Now we have to put the HTML and the PHP file in a directory
-that is served by a webserver, such as apache.
+that is served by a webserver, such as Apache.
 
 If you haven't done anything like this, you should take a look at the
 `PHP installation guide <http://php.net/manual/en/install.php>`__.
@@ -167,7 +172,6 @@ and put both of the files in ``/var/www/``.
 
 .. literalinclude:: ../../../../../weather-station/website/php/weather.html
  :language: html
- :linenos:
  :tab-width: 4
 
 ``WeatherStationWebsite.php`` (`download <https://raw.github.com/Tinkerforge/weather-station/master/website/php/WeatherStationWebsite.php>`__):

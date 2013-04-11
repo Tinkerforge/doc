@@ -168,10 +168,9 @@ in :ref:`C# <starter_kit_weather_station_button_control>`.
 Further Enhancements
 --------------------
 
-.. note::
- If you modded, extended or improved your Weather Station in any way and you
- have published your results on our `Wiki <http://www.tinkerunity.org/wiki/>`__,
- on your blog or similar: Please give us a notice. We would love to add a link
- to your project here!
+If you modded, extended or improved your Weather Station in any way and you
+have published your results on our `Wiki <http://www.tinkerunity.org/wiki/>`__,
+on your blog or similar: Please give us a notice. We would love to add a link
+to your project here!
 
-Regenmesser, windgeschwindigkeit etc
+.. FIXME: Regenmesser, windgeschwindigkeit etc
