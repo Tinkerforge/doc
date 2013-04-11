@@ -244,7 +244,7 @@ Step 3: Show measurements on display
 
 |step3_complete|
 
-|step3_suggestions|
+|step3_suggestions1| |step3_suggestions2_common|
 
 |step3_robust1|
 

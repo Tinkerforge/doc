@@ -385,15 +385,21 @@ weather_station_write_to_lcd_steps = {
  That's it. If we would copy these three steps together in one file and
  execute it, we would have a working Weather Station!
 
-.. |step3_suggestions| replace::
+.. |step3_suggestions1| replace::
  There are some obvious ways to make the output better.
  The name could be cropped according to the exact space that is available
  (depending on the number of digits of the measured value). Also,
  reading the temperature in the air pressure callback is suboptimal. If the
- air pressure doesn't change, we won't update the temperature. It would be better
- to read the temperature in a different thread in an endless loop with a
- one second sleep after each read. But we want to keep this code as simple
- as possible.
+ air pressure doesn't change, we won't update the temperature.
+
+.. |step3_suggestions2_common| replace::
+ It would be better to read the temperature in a different thread in an endless
+ loop with a one second sleep after each read. But we want to keep this code as
+ simple as possible.
+
+.. |step3_suggestions2_no_thread| replace::
+ It would be better to read the temperature every second triggered by an
+ additional timer. But we want to keep this code as simple as possible.
 
 .. |step3_robust1| replace::
  However, we do not meet all of our goals yet. The program is not yet
@@ -526,15 +532,21 @@ weather_station_write_to_lcd_steps = {
  That's it. If we would copy these three steps together in one file and
  execute it, we would have a working Weather Station!
 
-.. |step3_suggestions| replace::
+.. |step3_suggestions1| replace::
  There are some obvious ways to make the output better.
  The name could be cropped according to the exact space that is available
  (depending on the number of digits of the measured value). Also,
  reading the temperature in the air pressure callback is suboptimal. If the
- air pressure doesn't change, we won't update the temperature. It would be better
- to read the temperature in a different thread in an endless loop with a
- one second sleep after each read. But we want to keep this code as simple
- as possible.
+ air pressure doesn't change, we won't update the temperature.
+
+.. |step3_suggestions2_common| replace::
+ It would be better to read the temperature in a different thread in an endless
+ loop with a one second sleep after each read. But we want to keep this code as
+ simple as possible.
+
+.. |step3_suggestions2_no_thread| replace::
+ It would be better to read the temperature every second triggered by an
+ additional timer. But we want to keep this code as simple as possible.
 
 .. |step3_robust1| replace::
  However, we do not meet all of our goals yet. The program is not yet

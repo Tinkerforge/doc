@@ -310,7 +310,7 @@ Step 3: Show measurements on display
 
 |step3_complete|
 
-|step3_suggestions|
+|step3_suggestions1| |step3_suggestions2_common|
 
 |step3_robust1|
 
@@ -365,20 +365,24 @@ Step 4: Error handling and Logging
         }
     }
 
-.. FIXME |step4_lcd_initialized2|
+|step4_lcd_initialized2|
 
-.. FIXME code-block:: python
+.. code-block:: c
 
-    if device_identifier == AmbientLight.DEVICE_IDENTIFIER:
-        try:
-            self.al = AmbientLight(uid, self.ipcon)
-            self.al.set_illuminance_callback_period(1000)
-            self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
-                                      self.cb_illuminance)
-            log.info('AmbientLight initialized')
-        except Error as e:
-            log.error('AmbientLight init failed: ' + str(e.description))
-            self.al = None
+    if(device_identifier == AMBIENT_LIGHT_DEVICE_IDENTIFIER) {
+        ambient_light_create(&ws->ambient_light, uid, &ws->ipcon);
+        ambient_light_register_callback(&ws->ambient_light,
+                                        AMBIENT_LIGHT_CALLBACK_ILLUMINANCE,
+                                        (void *)cb_illuminance,
+                                        (void *)ws);
+
+        int rc = ambient_light_set_illuminance_callback_period(&ws->ambient_light, 1000);
+        if(rc < 0) {
+            fprintf(stderr, "AmbientLight init failed: %d\n", rc);
+        } else {
+            printf("AmbientLight initialized\n");
+        }
+    }
 
 |step4_logging1|
 
