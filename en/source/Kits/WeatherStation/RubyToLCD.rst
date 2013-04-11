@@ -194,63 +194,58 @@ Step 3: Show measurements on display
 
 |step3_printf|
 
-.. code-block:: python
+.. code-block:: ruby
 
-    def cb_illuminance(self, illuminance):
-        text = 'Illuminanc %s lx' % self.fmt(illuminance/10.0, 3)
-        self.lcd.write_line(0, 0, text)
+    ambient_light.register_callback(BrickletAmbientLight::CALLBACK_ILLUMINANCE) do |illuminance|
+      text = 'Illuminanc %6.2f lx' % (illuminance/10.0)
+      lcd.write_line 0, 0, text
+    end
 
-    def cb_humidity(self, humidity):
-        text = 'Humidity %s %%' % self.fmt(humidity/10.0, 5)
-        self.lcd.write_line(1, 0, text)
+    humidity.register_callback(BrickletHumidity::CALLBACK_HUMIDITY) do |humidity|
+      text = 'Humidity   %6.2f %%' % (humidity/10.0)
+      lcd.write_line 1, 0, text
+    end
 
-    def cb_air_pressure(self, air_pressure):
-        text = 'Air Press %s mb' % self.fmt(air_pressure/1000.0, 4)
-        self.lcd.write_line(2, 0, text)
+    barometer.register_callback(BrickletBarometer::CALLBACK_AIR_PRESSURE) do |air_pressure|
+      text = 'Air Press %7.2f mb' % (air_pressure/1000.0)
+      lcd.write_line 2, 0, text
+    end
 
 |step3_temperature|
 
-.. code-block:: python
+.. code-block:: ruby
 
-    def cb_air_pressure(self, air_pressure):
-        text = 'Air Press %s mb' % self.fmt(air_pressure/1000.0, 4)
-        self.lcd.write_line(2, 0, text)
+    barometer.register_callback(BrickletBarometer::CALLBACK_AIR_PRESSURE) do |air_pressure|
+      text = 'Air Press %7.2f mb' % (air_pressure/1000.0)
+      lcd.write_line 2, 0, text
 
-        fmt_text = self.fmt(self.baro.get_chip_temperature()/100.0, 2)
-        # \xDF == ° on LCD20x4 charset
-        text = 'Temperature %s \xDFC' % fmt_text
-        self.lcd.write_line(3, 0, text)
+      temperature = barometer.get_chip_temperature
+      text = 'Temperature %5.2f %sC' % [(temperature/100.0), 0xDF.chr]
+      lcd.write_line 3, 0, text
+    end
 
 |step3_put_together|
 
-.. code-block:: python
+.. code-block:: ruby
 
-    def fmt(self, value, pre, post=2):
-        v2, v1 = math.modf(value)
-        v1 = str(int(v1))
-        v2 = str(int(v2 * 10**post))
+    ambient_light.register_callback(BrickletAmbientLight::CALLBACK_ILLUMINANCE) do |illuminance|
+      text = 'Illuminanc %6.2f lx' % (illuminance/10.0)
+      lcd.write_line 0, 0, text
+    end
 
-        num_space = (pre - len(v1))
-        num_zero = (post - len(v2))
+    humidity.register_callback(BrickletHumidity::CALLBACK_HUMIDITY) do |humidity|
+      text = 'Humidity   %6.2f %%' % (humidity/10.0)
+      lcd.write_line 1, 0, text
+    end
 
-        return ' '*num_space + v1 + '.' + v2 + '0'*num_zero
+    barometer.register_callback(BrickletBarometer::CALLBACK_AIR_PRESSURE) do |air_pressure|
+      text = 'Air Press %7.2f mb' % (air_pressure/1000.0)
+      lcd.write_line 2, 0, text
 
-    def cb_illuminance(self, illuminance):
-        text = 'Illuminanc %s lx' % self.fmt(illuminance/10.0, 3)
-        self.lcd.write_line(0, 0, text)
-
-    def cb_humidity(self, humidity):
-        text = 'Humidity %s %%' % self.fmt(humidity/10.0, 5)
-        self.lcd.write_line(1, 0, text)
-
-    def cb_air_pressure(self, air_pressure):
-        text = 'Air Press %s mb' % self.fmt(air_pressure/1000.0, 4)
-        self.lcd.write_line(2, 0, text)
-
-        fmt_text = self.fmt(self.baro.get_chip_temperature()/100.0, 2)
-        # \xDF == ° on LCD20x4 charset
-        text = 'Temperature %s \xDFC' % fmt_text
-        self.lcd.write_line(3, 0, text)
+      temperature = barometer.get_chip_temperature
+      text = 'Temperature %5.2f %sC' % [(temperature/100.0), 0xDF.chr]
+      lcd.write_line 3, 0, text
+    end
 
 |step3_complete|
 
@@ -266,57 +261,61 @@ Step 4: Error handling and Logging
 
 |step4_intro1|
 
-.. code-block:: python
+.. code-block:: ruby
 
-    while True:
-        try:
-            self.ipcon.connect(WeatherStation.HOST, WeatherStation.PORT)
-            break
-        except Error as e:
-            log.error('Connection Error: ' + str(e.description))
-            time.sleep(1)
-        except socket.error as e:
-            log.error('Socket error: ' + str(e))
-            time.sleep(1)
+    while true
+      begin
+        ipcon.connect HOST, PORT
+        break
+      rescue Exception => e
+        puts 'Connection Error: ' + e
+        sleep 1
+      end
+    end
 
 |step4_intro2|
 
-.. code-block:: python
+.. code-block:: ruby
 
-    while True:
-        try:
-            self.ipcon.enumerate()
-            break
-        except Error as e:
-            log.error('Enumerate Error: ' + str(e.description))
-            time.sleep(1)
+    while true
+      begin
+        ipcon.enumerate
+        break
+      rescue Exception => e
+        puts 'Enumerate Error: ' + e
+        sleep 1
+      end
+    end
 
 |step4_connect_afterwards|
 
 |step4_lcd_initialized1|
 
-.. code-block:: python
+.. code-block:: ruby
 
-    def cb_illuminance(self, illuminance):
-        if self.lcd is not None:
-            text = 'Helligkeit %s  lx' % self.fmt(illuminance/10.0, 3, 1)
-            self.lcd.write_line(0, 0, text)
-            log.info('Write to line 0: ' + text)
+    ambient_light.register_callback(BrickletAmbientLight::CALLBACK_ILLUMINANCE) do |illuminance|
+      if lcd != nil
+        text = 'Illuminanc %6.2f lx' % (illuminance/10.0)
+        lcd.write_line 0, 0, text
+        puts "Write to line 0: #{text}"
+      end
+    end
 
 |step4_lcd_initialized2|
 
-.. code-block:: python
+.. code-block:: ruby
 
-    if device_identifier == AmbientLight.DEVICE_IDENTIFIER:
-        try:
-            self.al = AmbientLight(uid, self.ipcon)
-            self.al.set_illuminance_callback_period(1000)
-            self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
-                                      self.cb_illuminance)
-            log.info('AmbientLight initialized')
-        except Error as e:
-            log.error('AmbientLight init failed: ' + str(e.description))
-            self.al = None
+  if device_identifier == BrickletAmbientLight::DEVICE_IDENTIFIER
+    begin
+      ambient_light = BrickletAmbientLight.new uid, ipcon
+      ambient_light.set_illuminance_callback_period 1000
+      ambient_light.register_callback(BrickletAmbientLight::CALLBACK_ILLUMINANCE) do |illuminance|
+      end
+      puts 'AmbientLight initialized'
+    rescue Exception => e
+      ambient_light = nil
+      puts 'AmbientLight init failed: ' + e
+    end
 
 |step4_logging1|
 
