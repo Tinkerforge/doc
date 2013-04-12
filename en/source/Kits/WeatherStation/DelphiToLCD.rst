@@ -271,6 +271,7 @@ Step 3: Show measurements on display
       brickletLCD.WriteLine(2, 0, text);
 
       temperature := brickletBarometer.GetChipTemperature;
+      { 0xDF == ° on LCD 20x4 charset }
       text := Format('Temperature %5.2f %sC', [temperature/100.0, '' + char($DF)]);
       brickletLCD.WriteLine(3, 0, text);
     end;

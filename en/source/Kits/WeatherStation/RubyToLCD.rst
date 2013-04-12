@@ -243,6 +243,7 @@ Step 3: Show measurements on display
       lcd.write_line 2, 0, text
 
       temperature = barometer.get_chip_temperature
+      # 0xDF == ° on LCD 20x4 charset
       text = 'Temperature %5.2f %sC' % [(temperature/100.0), 0xDF.chr]
       lcd.write_line 3, 0, text
     end

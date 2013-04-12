@@ -305,6 +305,7 @@ Step 3: Show measurements on display
         $this->brickletLCD->writeLine(2, 0, $text);
 
         $temperature = $this->brickletBarometer->getChipTemperature();
+        // 0xDF == ° on LCD 20x4 charset
         $text = sprintf("Temperature %5.2f %cC", $temperature/100.0, 0xDF);
         $this->brickletLCD->writeLine(3, 0, $text);
     }

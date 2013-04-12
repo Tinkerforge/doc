@@ -303,7 +303,8 @@ Step 3: Show measurements on display
         int16_t temperature;
         barometer_get_chip_temperature(&ws->barometer, &temperature);
 
-        memset(text, '\0', 30);
+        memset(text, '\0', sizeof(text));
+        // 0xDF == ° on LCD 20x4 charset
         sprintf(text, "Temperature %5.2f %cC", temperature/100.0, 0xDF);
         lcd_20x4_write_line(&ws->lcd, 3, 0, text);
     }

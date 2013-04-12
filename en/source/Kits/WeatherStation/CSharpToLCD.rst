@@ -267,6 +267,7 @@ Step 3: Show measurements on display
         brickletLCD.WriteLine(2, 0, text);
 
         int temperature = sender.GetChipTemperature();
+        // 0xDF == ° on LCD 20x4 charset
         text = string.Format("Temperature {0,5:##.00} {1}C", temperature/100.0, (char)0xDF);
         brickletLCD.WriteLine(3, 0, text);
     }

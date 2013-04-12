@@ -252,6 +252,7 @@ Step 3: Show measurements on display
         brickletLCD.writeLine((short)2, (short)0, text);
 
         int temperature = brickletBarometer.getChipTemperature();
+        // 0xDF == ° on LCD 20x4 charset
         text = String.format("Temperature %5.2f %cC", temperature/100.0, 0xDF);
         brickletLCD.writeLine((short)3, (short)0, text);
     }

@@ -238,6 +238,7 @@ Step 3: Show measurements on display
         brickletLCD.WriteLine(2, 0, text)
 
         Dim temperature As Integer = sender.GetChipTemperature()
+        ' &HDF == ° on LCD 20x4 charset
         text = String.Format("Temperature {0,5:##.00} {1}C", temperature/100.0, Chr(&HDF))
         brickletLCD.WriteLine(3, 0, text)
     End Sub
