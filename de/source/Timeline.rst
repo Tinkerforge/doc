@@ -40,7 +40,7 @@ Termine haben.
    "",     "51", "GPS Bricklet",                                                        "`fertig <http://www.tinkerforge.com/de/blog/2012/12/20/gps-bricklet-jetzt-verfuegbar>`__"
    "2013", "08", "Visual Basic .NET Bindings",                                          "`fertig <http://www.tinkerforge.com/de/blog/2013/2/18/visual-basic-net-bindings-fertig>`__"
    "",     "10", "Neue Website",                                                        "`fertig <http://www.tinkerforge.com/de/blog/2013/3/8/neue-homepage>`__"
-   "",     "16", "Starterkit: Wetterstation",                                           "In Arbeit"
+   "",     "16", "Starter Kit: Wetterstation",                                          "In Arbeit"
    "",     "?",  "Ethernet Extension mit PoE",                                          "Probleme mit Prototyp"
    "",     "?",  "PTC Bricklet",                                                        "Leiterplatten angefragt"
    "",     "?",  "0-20mA Bricklet",                                                     "Prototyp existiert"

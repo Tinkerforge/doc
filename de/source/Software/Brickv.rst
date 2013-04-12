@@ -160,7 +160,7 @@ Hierfür gibt es die Möglichkeit alle Bricklets auf die neuste Version zu
 bringen (siehe "Auto-Update All Bricklets" unter 
 :ref:`Aktuellen Stand bestimmen <brickv_auto_update>`). Alternativ können
 Bricklets auch einzeln geflasht werden. Die
-jeweils neuste Pluginversion wird dabei automatisch vom Brick Viewer
+jeweils neuste Plugin-Version wird dabei automatisch vom Brick Viewer
 ermittelt und heruntergeladen. Diese können aber auch manuell im
 :ref:`Downloadbereich <downloads_firmwares_plugins>` heruntergeladen werden.
 
