@@ -9,6 +9,9 @@ import traceback
 from xml.etree.ElementTree import ElementTree
 from xml.etree.ElementTree import fromstring as etreefromstring
 
+sys.path.append(os.path.join(os.getcwd(), '..', '..', 'generators'))
+from device_identifiers import device_identifiers
+
 lang = 'en'
 
 brick_descriptions = {
@@ -343,28 +346,6 @@ source_code_gits_extension_row_cell = {
 'de': ' {0} | `git://github.com/Tinkerforge/{1}-extension.git <https://github.com/Tinkerforge/{1}-extension/>`__ | `Problem melden <https://github.com/Tinkerforge/{1}-extension/issues>`__',
 }
 
-hlpi_table_head = {
-'en':
-"""
-.. csv-table::
-   :header: "Language", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
-
-""",
-'de':
-"""
-.. csv-table::
-   :header: "Sprache", "API", "Beispiele", "Installation"
-   :widths: 25, 8, 15, 12
-
-"""
-}
-
-hlpi_row_source = {
-'en': '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`", ":ref:`Examples <{1}_{2}_{3}_examples>`", ":ref:`Installation <api_bindings_{3}>`"',
-'de': '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`", ":ref:`Beispiele <{1}_{2}_{3}_examples>`", ":ref:`Installation <api_bindings_{3}>`"'
-}
-
 def fill_dicts():
     global tools, bindings, bricks, bricklets, extensions, power_supplies
 
@@ -430,7 +411,7 @@ def fill_dicts():
     power_supplies = [('Step-Down Power Supply', 'step_down',  [],       power_supply_descriptions['step_down'][lang])]
 
 def get_body(url):
-    try: 
+    try:
         response = urllib2.urlopen(url)
         data = response.read().replace('<hr>', '').replace('<br>', '')
         response.close()
@@ -693,10 +674,37 @@ def make_source_code_gits_table():
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows)) + '\n'
 
+hlpi_table_head = {
+'en':
+"""
+.. csv-table::
+   :header: "Language", "API", "Examples", "Installation"
+   :widths: 25, 8, 15, 12
+
+""",
+'de':
+"""
+.. csv-table::
+   :header: "Sprache", "API", "Beispiele", "Installation"
+   :widths: 25, 8, 15, 12
+
+"""
+}
+
+hlpi_row_source = {
+'en': '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`", ":ref:`Examples <{1}_{2}_{3}_examples>`", ":ref:`Installation <api_bindings_{3}>`"',
+'de': '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`", ":ref:`Beispiele <{1}_{2}_{3}_examples>`", ":ref:`Installation <api_bindings_{3}>`"'
+}
+
+hlpi_row = {
+'en': '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`"',
+'de': '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`"'
+}
+
 def make_hlpi_table(device, category):
     table_head = hlpi_table_head[lang]
     row_source = hlpi_row_source[lang]
-    row = '   "{0}", ":ref:`API <{1}_{2}_{3}_api>`"'
+    row = hlpi_row[lang]
     rows = []
 
     for binding in device[2]:
@@ -704,6 +712,38 @@ def make_hlpi_table(device, category):
             rows.append(row_source.format(binding[0], device[1], category, binding[1]))
         else:
             rows.append(row.format(binding[0], device[1], category, binding[1]))
+
+    return table_head + '\n'.join(rows) + '\n'
+
+device_identifier_table_head = {
+'en':
+"""
+.. csv-table::
+   :header: "Device Identifier", "Device Name"
+   :widths: 30, 100
+
+""",
+'de':
+"""
+.. csv-table::
+   :header: "Device Identifier", "Device Name"
+   :widths: 30, 100
+
+"""
+}
+
+device_identifier_row = {
+'en': '   "{0}", "{1}"',
+'de': '   "{0}", "{1}"'
+}
+
+def make_device_identifier_table():
+    table_head = device_identifier_table_head[lang]
+    row = device_identifier_row[lang]
+    rows = []
+
+    for device_identifier in device_identifiers:
+        rows.append(row.format(device_identifier[0], device_identifier[1]))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -780,6 +820,8 @@ def generate(path):
         print('Generating {0}_hlpi.table'.format(name))
         file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), 'wb').write(make_hlpi_table(bricklet, 'bricklet'))
 
+    print('Generating Device_Identifier.table')
+    file(os.path.join(path, 'source', 'Software', 'Device_Identifier.table'), 'wb').write(make_device_identifier_table())
 
 if __name__ == "__main__":
     generate(os.getcwd())
