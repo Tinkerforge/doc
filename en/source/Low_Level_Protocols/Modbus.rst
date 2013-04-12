@@ -146,7 +146,7 @@ The following functions and callbacks are supported by all devices.
  :response position: char
  :response hardware_version: uint8[3]
  :response firmware_version: uint8[3]
- :response device_identifier: uint8
+ :response device_identifier: uint16
  :response enumeration_type: uint8
 
  The callback has seven parameters:
