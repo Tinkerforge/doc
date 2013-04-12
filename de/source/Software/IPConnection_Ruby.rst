@@ -144,8 +144,8 @@ Grundfunktionen
  Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer
 
 
-Callback Configuration Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Konfigurationsfunktionen für Callbacks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. rb:function:: IPConnection#register_callback(id) { |param [, ...]| block } -> nil
 
@@ -195,8 +195,8 @@ werden weiter unten beschrieben.
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
  * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
    'a' - 'd' (Position an Brick).
- * *hardware_version*: Major, Minor and Release Nummer der Hardwareversion.
- * *firmware_version*: Major, Minor and Release number der Firmwareversion.
+ * *hardware_version*: Major, Minor und Release Nummer der Hardwareversion.
+ * *firmware_version*: Major, Minor und Release number der Firmwareversion.
  * *device_identifier*: Eine Zahl, welche den Brick/Bricklet repräsentiert.
  * *enumeration_type*: Art der Enumerierung.
 

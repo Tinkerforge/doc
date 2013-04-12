@@ -37,7 +37,7 @@ dem Brick Daemon verbunden sein, klicke dazu auf den "Connect" Knopf des Brick
 Viewers.
 
 Der Brick Daemon bildete eine Brücke zwischen Bricks/Bricklets und den
-programmiersprachen-spezifischen API Bindings. Der Brick Viewer bietet eine
+programmiersprachenspezifischen API Bindings. Der Brick Viewer bietet eine
 graphische Oberfläche für Testzwecke.
 
 Nach der Installation kann das Basteln losgehen! Schließe als erstes eine

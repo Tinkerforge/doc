@@ -44,7 +44,7 @@ einem Klick auf "Install" gestartet.
 Am Ende des Installationsprozess erscheint ein Fenster,
 welches darüber informiert dass der Brick Treiber
 noch installiert werden muss (siehe unten). Nach der
-Installation muss der PC neugestartet werden.
+Installation muss der PC neu gestartet werden.
 
 
 .. _brickd_install_windows_driver:

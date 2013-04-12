@@ -11,7 +11,7 @@ wird in der ``GetIdentity`` und in den Enumerationsfunktionen benutzt. Dadurch
 wird es ermöglicht Bricks und Bricklets dynamisch zu benutzen, ohne vorherige
 Kenntnisse über UIDs.
 
-In den API Bindings gibts es für jeden Brick und jedes Bricklet eine
+In den API Bindings gibt es für jeden Brick und jedes Bricklet eine
 "Device Identifier" Konstante mit dem entsprechenden Wert. Genaueres dazu findet
 sich im Abschnitt über Konstanten in der jeweiligen API Dokumentation.
 

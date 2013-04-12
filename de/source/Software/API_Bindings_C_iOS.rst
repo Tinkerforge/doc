@@ -104,7 +104,7 @@ Label und ein an/aus Switch Objekt hinzu wie es im Screenshot zu sehen ist. Der
 letzte Schritt is das Verbinden des *Value Changed* Events des Switches mit der
 *toggleRelays* Action:
 
-* Rechtsklicke auf den Switch
+* Rechtsklick auf den Switch
 * Klicke auf den Kreis rechts vom Value Changed Event
 * Ziehe eine Linie zum First Responder
 * Wähle "toogleRelays" vom Action Menu

@@ -7,7 +7,7 @@ API Bindings
 ============
 
 Die API Bindings stellen eine TCP/IP Verbindung zum
-:ref:`Brick Daemon <brickd>` here. Jeder Funktionsaufruf erzeugt ein TCP/IP Paket,
+:ref:`Brick Daemon <brickd>` her. Jeder Funktionsaufruf erzeugt ein TCP/IP Paket,
 das über den Brick Daemon zum Brick geschickt wird. Beim Brick Daemon vom Brick
 eingehende Pakete werden an den Aufrufer zurückgeroutet.
 
@@ -35,7 +35,7 @@ Verwendung der Bindings
 Die neusten Versionen der Bindings sind im :ref:`Downloadbereich
 <downloads_bindings_examples>` zu finden.
 
-Anleitungen zur Installation and Verwendung der Bindings für jede unterstütze
+Anleitungen zur Installation und Verwendung der Bindings für jede unterstütze
 Programmiersprache:
 
 * :ref:`C/C++ <api_bindings_c>`

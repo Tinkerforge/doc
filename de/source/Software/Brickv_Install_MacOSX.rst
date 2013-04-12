@@ -32,5 +32,5 @@ Installation ab.
    :align: center
    :target: ../_images/Screenshots/brickv_macos_2.jpg
 
-Möglicherweise muss jetzt noch der Rechner neugestartet werden, andernfalls
+Möglicherweise muss jetzt noch der Rechner neu gestartet werden, andernfalls
 könnte es sein, dass die Icons nicht richtig dargestellt werden.

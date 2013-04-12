@@ -10,7 +10,7 @@ Für Android können die normalen :ref:`Java Bindings <api_bindings_java>`
 verwendet werden.
 
 Im Folgenden wird angenommen, dass die Android Entwicklungsumgebung schon
-installiert ist. Für Androidanfänger empfehlen wir zuerst mit dem
+installiert ist. Für Android-Anfänger empfehlen wir zuerst mit dem
 `Hello World Tutorial
 <http://developer.android.com/resources/tutorials/hello-world.html>`__ von
 Google zu beginnen.

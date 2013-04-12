@@ -257,6 +257,7 @@ Neue Enumeration-Signatur und Registrierung:
 
     ipcon.Enumerate();
 
+
 Delphi
 ------
 
@@ -277,7 +278,6 @@ Initialisierung:
   ipcon.Connect(HOST, PORT);
   ...
   ipcon.Destroy; { Calls ipcon.Disconnect internally }
-
 
 Callback:
 
@@ -324,6 +324,7 @@ Neue Enumeration-Signatur und Registrierung:
     ipcon.OnEnumerate := {$ifdef FPC}@{$endif}EnumerateCB;
 
     ipcon.Enumerate();
+
 
 Java
 ----
@@ -397,6 +398,7 @@ Neuer Ansatz für Listener:
     // Entfernen von Listener in 2.0 möglich
     brickletTemperature.removeTemperatureListener(temperatureListener);
 
+
 PHP
 ---
 
@@ -444,6 +446,7 @@ Neue Enumeration-Signatur und Registrierung:
 
     $ipcon->enumerate();
 
+
 Python
 ------
 
@@ -489,6 +492,7 @@ Neue Enumeration-Signatur und Registrierung:
     ipcon.register_callback(IPConnection.CALLBACK_ENUMERATE, cb_enumerate)
 
     ipcon.enumerate()
+
 
 Ruby
 ----

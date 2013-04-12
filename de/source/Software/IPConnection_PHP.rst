@@ -102,7 +102,7 @@ Grundfunktionen
  behandelt werden. Falls keine Callbacks benutzt werden braucht diese Methode
  nicht aufgerufen zu werden.
 
- Die empfohlene Auslieferungsdauert ist 0. Dadurch werden nur die Callbacks
+ Die empfohlene Auslieferungsdauer ist 0. Dadurch werden nur die Callbacks
  ausgeliefert die noch auf Auslieferung warten. Es wird jedoch nicht auf den
  Eingang weitere Callbacks gewartet.
 

@@ -36,7 +36,7 @@ Der generelle Ansatz für ein solches Programm sieht wie folgt aus
 Es muss sichergestellt werden, dass die Konfiguration von Bricks und Bricklets
 während der Enumerierung stattfindet. Dies führt dazu, dass die
 Konfiguration (z.B. Callback-Periode) immer vorhanden ist, auch wenn
-ein Brick oder Bricklet neugestartet wurde und dadurch seine Konfiguration
+ein Brick oder Bricklet neu gestartet wurde und dadurch seine Konfiguration
 verloren hat.
 
 Eine Möglichkeit um dies zu realisieren ist den Konfigurationscode in
@@ -44,7 +44,7 @@ den Enumeration-Callback zu schreiben. Es sollte zusätzlich sichergestellt sein
 dass eine neue Enumerierung ausgelöst wird wenn eine TCP/IP Verbindung neu
 aufgebaut wird, nachdem sie getrennt wurde. Wenn eine Verbindung getrennt wird,
 ist nicht ausgeschlossen dass ein Brick oder Bricklet in der Zwischenzeit
-neugestartet wird und deshalb neu konfiguriert werden muss.
+neu gestartet wird und deshalb neu konfiguriert werden muss.
 
 Im Folgenden befinden sich Quelltexte für ein Programm, dass eine Temperatur
 auf einem LCD 20x4 Bricklet anzeigt. Dieses Programm sollte auch bei einem

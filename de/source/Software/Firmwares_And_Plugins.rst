@@ -133,8 +133,8 @@ Dokumentation für weitere Informationen.
 
 .. _compiler_compatibility:
 
-Compilerkompatibilität
-----------------------
+Compiler-Kompatibilität
+-----------------------
 
 Als Compiler wird GCC in der none-eabi Version für ARM von
 `CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__

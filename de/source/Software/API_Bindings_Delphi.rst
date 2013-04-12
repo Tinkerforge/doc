@@ -72,7 +72,7 @@ Mit Lazarus kann der ``project_folder/`` so verwendet werden:
 Delphi IDE
 ^^^^^^^^^^
 
-Mit Delphi XE2 (ältere Delphiversion sollten ähnlich funktionieren) kann der
+Mit Delphi XE2 (ältere Delphi-Versionen sollten ähnlich funktionieren) kann der
 ``project_folder/`` wie folgt verwendet werden. Zuerst muss
 ``ExampleConfiguration.pas`` in ``ExampleConfiguration.dpr`` umbenannt werden
 dann bleiben noch diese Schritte:

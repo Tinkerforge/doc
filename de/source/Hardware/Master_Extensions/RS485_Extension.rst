@@ -201,7 +201,7 @@ Wenn etwas am Bus verändert werden soll, z.B. neue Bricks oder Bricklets
 hinzufügen, dann muss der betroffene Stapel zuerst von seiner
 Stromversorgung trennen. Nachdem die Änderungen vorgenommen wurden kann der Stapel
 wieder an seine Stromversorgung angeschlossen. Falls der Stapel ein RS485
-Slave ist, dann muss auch der dazugehörige RS485 Master neugestartet werden,
+Slave ist, dann muss auch der dazugehörige RS485 Master neu gestartet werden,
 da dieser nur beim Start seine zugehörigen RS485 Slaves sucht und die
 Kommunikation mit ihnen aufnimmt. Den Neustart des RS485 Masters kann
 durch Drücken seines Reset Knopfes erreicht werden, bzw. durch ein kurzes Trennen

@@ -202,7 +202,7 @@ Wenn etwas am Netzwerk verändert werden soll, z.B. neue Bricks oder Bricklets
 hinzufügen, dann muss der betroffene Stapel zuerst von seiner
 Stromversorgung getrennt werden. Nachdem die Änderungen vorgenommen wurde kann
 der Stapel wieder an seine Stromversorgung angeschlossen werden. Falls der Stapel ein Chibi
-Slave ist, dann muss auch der dazugehörige Chibi Master neugestartet werden,
+Slave ist, dann muss auch der dazugehörige Chibi Master neu gestartet werden,
 da dieser nur beim Start seine zugehörigen Chibi Slaves sucht und die
 Kommunikation mit ihnen aufnimmt. Den Neustart des Chibi Masters kann
 durch Drücken seines Reset Knopfes erreicht werden, bzw. durch ein kurzes Trennen
