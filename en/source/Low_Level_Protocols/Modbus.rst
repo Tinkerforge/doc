@@ -141,9 +141,9 @@ The following functions and callbacks are supported by all devices.
 .. modbus:function:: CALLBACK_ENUMERATE
 
  :functionid: 253
- :response uid: uint32
- :response connected_uid: uint32
- :response position: char (as ascii)
+ :response uid: char[8]
+ :response connected_uid: char[8]
+ :response position: char
  :response hardware_version: uint8[3]
  :response firmware_version: uint8[3]
  :response device_identifier: uint8
@@ -179,3 +179,5 @@ The following functions and callbacks are supported by all devices.
 
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
+
+ The device identifiers can be found :ref:`here <device_identifier>`.
