@@ -40,6 +40,8 @@ Or, alternatively add the DLL and the Example in an C# development environment
 of your choice (such as Visual Studio or Mono Develop).
 
 
+.. _api_bindings_csharp_cls_complience:
+
 CLS Compliance
 --------------
 

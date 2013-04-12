@@ -180,15 +180,16 @@ Neue Enumeration-Signatur und Registrierung:
 C#
 --
 
-General:
+Allgemein:
 
-There are no unsigned data types used anymore. This was necessary to make
-the C# bindings CLS complient (i.e. they can be easily used from other 
-.NET languages). All unsigned data types have been replaced by the next
-higher signed data type.
+Es werden keine vorzeichenlosen Datentypen mehr verwendet. Dies war notwendig,
+um die C# Bindings :ref:`CLS konform <api_bindings_csharp_cls_complience>` zu
+machen, wodurch sie direkt in allen .NET kompatiblen Sprachen verwendet werden
+können. Alle vorzeichenlosen Datentypen wurden durch den nächst größeren
+vorzeichenbehafteten Datentypen ersetzt.
 
 =============  =============
-Data type 1.0  Data type 2.0
+Datentyp 1.0   Datentyp 2.0
 =============  =============
 uint16         int32
 uint32         int64

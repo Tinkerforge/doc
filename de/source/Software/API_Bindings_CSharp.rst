@@ -41,6 +41,7 @@ aufgerufen werden (1. Windows und 2. Linux/Mac OS X (Mono))::
 Alternativ können die Beispiele auch in einer C# Entwicklungsumgebung deiner
 Wahl verwendet werden (wie Visual Studio oder Mono Develop).
 
+.. _api_bindings_csharp_cls_complience:
 
 CLS Konformität
 ---------------
