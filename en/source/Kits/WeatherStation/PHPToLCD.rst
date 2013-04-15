@@ -1,11 +1,14 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using PHP to write to LCD 20x4 Bricklet
 
-.. |ENUMERATION_TYPE_CONNECTED| replace:: ``IPCON_ENUMERATION_TYPE_CONNECTED``
-.. |ENUMERATION_TYPE_AVAILABLE| replace:: ``IPCON_ENUMERATION_TYPE_AVAILABLE``
-.. |cb_illuminance| replace:: ``cb_illuminance``
-.. |cb_humidity| replace:: ``cb_humidity``
-.. |cb_air_pressure| replace:: ``cb_airPressure``
+.. |ref_CALLBACK_ENUMERATE| replace:: :php:member:`CALLBACK_ENUMERATE <IPConnection::CALLBACK_ENUMERATE>`
+.. |ref_CALLBACK_CONNECTED| replace:: :php:member:`CALLBACK_CONNECTED <IPConnection::CALLBACK_CONNECTED>`
+.. |callback| replace:: callback
+.. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
+.. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
+.. |cb_illuminance| replace:: ``illuminanceCB``
+.. |cb_humidity| replace:: ``humidityCB``
+.. |cb_air_pressure| replace:: ``airPressureCB``
 
 .. include:: PHPToLCD.substitutions
    :start-after: >>>substitutions
