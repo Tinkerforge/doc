@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Using PHP to Embed Live Measurements on Website
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit PHP Messwerte live auf einer Webseite anzeigen
 
 .. _starter_kit_weather_station_website:
 
-Using PHP to Embed Live Measurements on Website
-===============================================
+Mit PHP Messwerte live auf einer Webseite anzeigen
+==================================================
 
 .. include:: PHPCommon.substitutions
    :start-after: >>>intro

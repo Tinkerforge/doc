@@ -19,12 +19,12 @@ Starterkit: Wetterstation
 	{{
 	    tfdocimg("Kits/weather_station_lcd_all_100.jpg",
 	             "Kits/weather_station_lcd_all_orig.jpg",
-	             "Wetterstation: Different Modes")
+	             "Wetterstation: Verschiedene Modi")
 	}}
 	{{
 	    tfdocimg("Kits/weather_station_website_100.jpg",
 	             "Kits/weather_station_website_orig.jpg",
-	             "Wetterstation: Embedded in website")
+	             "Wetterstation: Eingebettet in einer Webseite")
 	}}
 	{{ tfdocend() }}
 
@@ -107,8 +107,8 @@ Example implementations with step-by-step instructions are available for:
 
 |write_to_lcd_examples|.
 
-Connect to Cosm
-^^^^^^^^^^^^^^^
+Cosm Anbindung
+^^^^^^^^^^^^^^
 
 `Cosm <https://cosm.com/>`__ is a service that provides the possibility to
 analyze and visualize the "Internet of Things". They can store a history of our
@@ -124,8 +124,8 @@ An example implementation with step-by-step instructions that shares the
 weather data with Cosm is available
 in :ref:`Python <starter_kit_weather_station_cosm>`.
 
-Embed Live Measurements on Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Live-Anzeige von Messdaten auf einer Webseite
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Another application for the Weather Station, is to embed the weather data
 on a website:
