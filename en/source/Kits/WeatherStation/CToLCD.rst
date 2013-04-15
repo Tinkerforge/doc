@@ -349,6 +349,8 @@ Step 4: Error handling and Logging
         break;
     }
 
+|step4_sleep_in_c|
+
 |step4_connect_afterwards|
 
 |step4_lcd_initialized1|

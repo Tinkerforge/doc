@@ -415,6 +415,12 @@ weather_station_write_to_lcd_steps = {
 .. |step4_intro2| replace::
  and we need to try enumerating until the message goes through:
 
+.. |step4_sleep_in_c| replace::
+ There is no portable sleep function in C. On Windows ``windows.h`` declares
+ a ``Sleep`` function that takes the duration in milliseconds. On POSIX
+ systems such as Linux and Mac OS X there is a ``sleep`` function declared
+ in ``unistd.h`` that takes the duration in seconds.
+
 .. |step4_connect_afterwards| replace::
  With these changes it is now possible to first start the program and
  connect the Weather Station afterwards.
@@ -561,6 +567,12 @@ weather_station_write_to_lcd_steps = {
 
 .. |step4_intro2| replace::
  and we need to try enumerating until the message goes through:
+
+.. |step4_sleep_in_c| replace::
+ There is no portable sleep function in C. On Windows ``windows.h`` declares
+ a ``Sleep`` function that takes the duration in milliseconds. On POSIX
+ systems such as Linux and Mac OS X there is a ``sleep`` function declared
+ in ``unistd.h`` that takes the duration in seconds.
 
 .. |step4_connect_afterwards| replace::
  With these changes it is now possible to first start the program and
