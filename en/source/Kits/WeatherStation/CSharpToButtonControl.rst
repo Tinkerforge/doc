@@ -14,22 +14,19 @@ Using C# to Control the Buttons for Statistics
 Goals
 -----
 
-We are setting the following goals for this project:
-
-The buttons should switch between
+The LCD Bricklet is equipped with four buttons which should be used in this 
+project to switch between different weather statistics:
 
 * standard weather measurement,
 * 24h min/max/average,
 * 24h graph and
-* Time and date.
+* time and date.
 
-Additionally we will fulfill all of the goals that were present in the
-:ref:`Display environment measurements on LCD project <starter_kit_weather_station_csharp_to_lcd>`.
-
-In the following we will show step-by-step how this can be achieved. This time
-we will not go through each line of the code, since this would take too long.
-But we will describe the general concept, so the program can be easily
-understood.
+This project is based on the  
+:ref:`Using C# to write to LCD 20x4 Bricklet <starter_kit_weather_station_csharp_to_lcd>`
+project. In the following we will show step-by-step how the above mentionded 
+functions can be implemented. We will describe the general concept, 
+so the program can be easily understood.
 
 Step 1: Retrieving data
 -----------------------
@@ -108,7 +105,7 @@ and put the measurements in a queue so we can later analyze them:
         UpdateSwitch();
     }
 
-At a first glance this approach seems convoluted, why can't we
+At a first glance this approach seems convoluted. Why can't we
 just call the Getter methods in the Update function or put the measurements
 in the queue during the callbacks?
 

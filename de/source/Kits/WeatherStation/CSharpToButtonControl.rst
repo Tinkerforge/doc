@@ -1,44 +1,45 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Using C# to Control the Buttons for Statistics
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit C# verschiedene Wetter-Statistiken anzeigen
 
 .. _starter_kit_weather_station_button_control:
 
-Using C# to Control the Buttons for Statistics
-==============================================
+Mit C# verschiedene Wetter-Statistiken anzeigen
+===============================================
 
 .. include:: CSharpCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 
-Goals
+Ziele
 -----
 
-We are setting the following goals for this project:
+Das LCD Bricklet ist mit vier Tastern ausgestattet, die dazu genutzt werden 
+sollen um zwischen der Anzeige von verschiedenen Wetterstatistiken 
+umzuschalten.
+Dazu gehören:
 
-The buttons should switch between
+* Standard Wetteranzeige,
+* 24h Min/Max/Duchschnitt,
+* 24h Graph und
+* Zeit und Datum.
 
-* standard weather measurement,
-* 24h min/max/average,
-* 24h graph and
-* Time and date.
+Dieses Projekt baut auf dem 
+:ref:`Mit C# auf das LCD 20x4 Bricklet schreiben <starter_kit_weather_station_csharp_to_lcd>`
+Projekt auf. Im folgenden werden wir Schritt-für-Schritt erklären wie die 
+oben genannten Funktionen implementiert werden können. Wir werden diesmal nur
+das generelle Konzept erläutern, so dass das Programm einfach zu verstehen 
+sein sollte. 
 
-Additionally we will fulfill all of the goals that were present in the
-:ref:`Display environment measurements on LCD project <starter_kit_weather_station_csharp_to_lcd>`.
+Schritt 1: Daten auslesen
+-------------------------
 
-In the following we will show step-by-step how this can be achieved. This time
-we will not go through each line of the code, since this would take too long.
-But we will describe the general concept, so the program can be easily
-understood.
+Die Struktur des Programms ist identisch zu der aus dem
+:ref:`Mit C# auf das LCD 20x4 Bricklet schreiben <starter_kit_weather_station_csharp_to_lcd>`
+Projekt.
 
-Step 1: Retrieving data
------------------------
-
-The structure of the program is exactly the same as in the
-:ref:`Display environment measurements on LCD project <starter_kit_weather_station_csharp_to_lcd>`.
-
-We get the data over callbacks with a 1s interval. But this time we just
-save the measurements:
+Die Wetterdaten erhalten wir über Callback mit 1s Intervall. Dieses mal
+speichern wir allerdings die Messungen:
 
 .. code-block:: csharp
 
@@ -60,13 +61,14 @@ save the measurements:
         latestTemperature = temperature/100.0;
     }
 
-To use the latest measurements we start a 1s timer
+Um die letzten Messungen zu nutzen starten wir einen 1s Timer
 
 .. code-block:: csharp
 
     Timer timer = new Timer(Update, null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
 
-and put the measurements in a queue so we can later analyze them:
+und speichern die Messungen in einer Queue, so dass wir diese später analysieren 
+können:
 
 .. code-block:: csharp
 
@@ -108,11 +110,11 @@ and put the measurements in a queue so we can later analyze them:
         UpdateSwitch();
     }
 
-At a first glance this approach seems convoluted, why can't we
-just call the Getter methods in the Update function or put the measurements
-in the queue during the callbacks?
+Auf den ersten Blick mag dieser Ansatz etwas verwirrend wirken. Warum können 
+wir nicht einfach Getter-Methoden in der Update Funktion aufrufen oder die 
+Messungen währen eines Callbacks speichern?
 
-There are two reasons why the utilized approach makes sense:
+Es gibt zwei Gründe warum die Nutzung dieses Ansatzes Sinn macht:
 
 1. The callbacks only get called in 1s intervals if the actual callback
    value changed. That means, if a measurement doesn't change for 10s, the
