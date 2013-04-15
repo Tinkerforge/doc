@@ -135,7 +135,7 @@ request packet has
 * UID 33688 as uint32 (0x98 0x83 0x00 0x00),
 * Packet length 8 as uint8 (0x08),
 * Function ID 1 as uint8 (0x01),
-* Sequence number 1 and return expected 1 as uint8 (0x18) and
+* Sequence number 1 and response expected 1 as uint8 (0x18) and
 * Flags 0 as uint8 (0x00).
 
 and an empty payload. Its hex dump looks like this::
@@ -147,9 +147,9 @@ the function ID and the sequence number as they will have the same values
 as the request packet. The response packet has
 
 * UID 33688 as uint32 (0x98 0x83 0x00 0x00),
-* Packet length 8 as uint8 (0x08),
+* Packet length 10 as uint8 (0x0a),
 * Function ID 1 as uint8 (0x01),
-* Sequence number 1 and return expected 1 as uint8 (0x18) and
+* Sequence number 1 and response expected 1 as uint8 (0x18) and
 * Flags 0 as uint8 (0x00).
 
 The payload contains the
@@ -188,7 +188,7 @@ Afterwards you will periodically receive response packets with
 * UID 3631747890 as uint32 (0x32 0x13 0x78 0xd8),
 * Packet length 14 as uint8 (0x0e),
 * function ID 32 as uint8 (0x20),
-* Sequence number 0 and return expected 1 as uint8 (0x08)
+* Sequence number 0 and response expected 1 as uint8 (0x08)
 * Flags 0 as uint8 (0x00)
 
 The payload contains
