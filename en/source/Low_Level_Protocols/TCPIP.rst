@@ -45,7 +45,7 @@ header consists of:
    :scale: 100 %
    :alt: TF Protocol
    :align: center
-   :target: ../../_images/protocol_new.png
+   :target: ../_images/protocol_new.png
 
 The UID is the unique identifier that is given to every Brick and Bricklet.
 

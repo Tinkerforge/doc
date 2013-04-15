@@ -88,7 +88,7 @@ sequence number.
    :scale: 50 %
    :alt: Modbus protocol overview
    :align: center
-   :target: ../../_images/modbus.png
+   :target: ../_images/modbus.png
 
 If something goes wrong in the whole process (e.g. CRC wrong, buffer full, 
 packet length doesn't fit etc): The slave will stop responding and induce
