@@ -29,36 +29,39 @@ Starter Kit: Weather Station
 	{{ tfdocend() }}
 
 The *Starter Kit: Weather Station* is a fully-fledged open source weather
-station. It measures temperature, humidity, air pressure and illuminance.
+station. It measures temperature, humidity, air pressure and illuminance
+with high precision.
 
 It can be controlled by a PC or a :ref:`Raspberry Pi <embedded_raspberry_pi>`
 over USB or (if the :ref:`WIFI Extension <wifi_extension>` is added) over Wi-Fi.
-The measurements can be displayed on the 20x4 LCD, they can be shown on a
+The measurements can be displayed on the 20x4 character LCD, they can be shown on a
 website or uploaded to `Cosm <https://cosm.com/>`__. With the four buttons of
 the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` it is possible to control
 different modes.
 
-Mounting holes for :ref:`Analog In <analog_in_bricklet>`
-and :ref:`IO-4 <io4_bricklet>` Bricklets are provided, this gives the
-possibility to add more sensors (anemometer, pluviometer etc). The plastic
-is tinker-friendly PMMA, new drill holes and similar can be added with a
-simple wood drill.
+The kit allows it to modify soft- and hardware. The casing consists of
+tinker-friendly PMMA which can be easily modified (e.g. drill new holes with 
+simple wood drill). Additionally mounting holes for 
+:ref:`Analog In <analog_in_bricklet>` and :ref:`IO-4 <io4_bricklet>` Bricklets
+are provided, this gives the possibility to add more sensors (anemometer, 
+pluviometer etc). 
 
 Programming of the weather station can be done with all of the available
-bindings (|bindings|) and example
-implementations with step-by-step instructions are available for all
-of the languages.
+bindings (|bindings|). Examples implementations for each language will
+let you easily introduce in the programming.
 
 Firmware updating and first tests
 ---------------------------------
 
 As a very first step you should try out and update your Bricks and Bricklets.
+
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
-the :ref:`Brick Viewer <brickv_installation>`. Use Brick Viewer to find out
+the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets to the Master 
+Brick and connect it via USB to your PC. Afterwards use Brick Viewer to find out
 if all of the firmwares up to date (Updates / Flashing button). If not, you can
 :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
-Viewer too:
+Viewer, too:
 
 .. image:: /Images/Kits/weather_station_update_350.jpg
    :scale: 100 %
@@ -66,9 +69,9 @@ Viewer too:
    :align: center
    :target: ../../_images/Kits/weather_station_update_orig.jpg
 
-After that you can click through the tabs of the Brick Viewer to see if
-all of the sensors are working correctly. Now you can be sure that the
-Bricks and Bricklets have versions that work together and that
+As next step click through the tabs of the Brick Viewer
+to see if all of the sensors are working correctly. Now you can be sure that 
+the Bricks and Bricklets have versions that work together and that
 everything will work if it is screwed together in the weather station
 enclosure.
 
@@ -82,7 +85,7 @@ TODO: Images of construction and instructions
 Projects
 --------
 
-There are several applications for the Weather Station Starter Kit.
+There are several applications for the Weather Station Starter Kit:
 
 Display Environment Measurements on LCD
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -91,12 +94,12 @@ The most obvious application for the Weather Station Starter Kit is to display
 the measurements of the environment on the LCD 20x4 Bricklet. This can be
 done through three different paths:
 
-* USB connection to PC: Install brickd and application on PC, connect
+* USB connection to PC: Install Brickd and application on PC, connect
   Master Brick of Weather Station to PC via USB.
 * Wi-Fi connection to PC: Install application on PC, connect to
   Weather Station directly over Wi-Fi or through an access point.
 * Raspberry Pi or other embedded board integrated in Weather Station:
-  Install brickd and application on embedded board, connect Master Brick of
+  Install Brickd and application on embedded board, connect Master Brick of
   Weather Station to embedded board via USB.
 
 .. batti: link to further enhancement section? how to use rasp with weather station etc.
