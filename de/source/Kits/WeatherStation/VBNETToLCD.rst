@@ -1,6 +1,9 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit Visual Basic .NET auf das LCD 20x4 Bricklet schreiben
 
+.. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
+.. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection::Connected>`
+.. |callback| replace:: Callback
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
 .. |cb_illuminance| replace:: ``IlluminanceCB``
@@ -21,7 +24,7 @@ Mit Visual Basic .NET auf das LCD 20x4 Bricklet schreiben
    :end-before: <<<intro
 
 
-Goals
+Ziele
 -----
 
 .. include:: VBNETToLCD.substitutions
@@ -29,8 +32,8 @@ Goals
    :end-before: <<<goals
 
 
-Step 1: Discover Bricks and Bricklets
--------------------------------------
+Schritt 1: Bricks und Bricklets dynamisch erkennen
+--------------------------------------------------
 
 |step1_start_off|
 
@@ -95,8 +98,8 @@ Step 1: Discover Bricks and Bricklets
     End Module
 
 
-Step 2: Initialize Bricklets on Enumeration
--------------------------------------------
+Schritt 2: Bricklets beim Enumerate initialisieren
+--------------------------------------------------
 
 |step2_intro|
 
@@ -171,8 +174,8 @@ Step 2: Initialize Bricklets on Enumeration
     End Sub
 
 
-Step 3: Show measurements on display
-------------------------------------
+Schritt 3: Messwerte auf dem Display anzeigen
+---------------------------------------------
 
 |step3_intro|::
 
@@ -252,8 +255,8 @@ Step 3: Show measurements on display
 |step3_robust2|
 
 
-Step 4: Error handling and Logging
-----------------------------------
+Schritt 4: Fehlerbehandlung und Logging
+---------------------------------------
 
 |step4_intro1|
 
@@ -318,8 +321,8 @@ Step 4: Error handling and Logging
 |step4_logging2|
 
 
-Step 5: Everything put together
--------------------------------
+Schritt 5: Alles zusammen
+-------------------------
 
 |step5_intro|
 

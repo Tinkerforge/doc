@@ -110,41 +110,40 @@ können:
         UpdateSwitch();
     }
 
-Auf den ersten Blick mag dieser Ansatz etwas verwirrend wirken. Warum können 
-wir nicht einfach Getter-Methoden in der Update Funktion aufrufen oder die 
-Messungen währen eines Callbacks speichern?
+Auf den ersten Blick mag diese Programmiermethode etwas verwirrend wirken. 
+Warum können wir nicht einfach Getter-Methoden in der Update Funktion aufrufen
+oder die Messungen währen eines Callbacks speichern?
 
 Es gibt zwei Gründe warum die Nutzung dieses Ansatzes Sinn macht:
 
-1. The callbacks only get called in 1s intervals if the actual callback
-   value changed. That means, if a measurement doesn't change for 10s, the
-   callback will only be triggered after this 10s. This is good since it
-   saves bandwidth, but we want to have a measurement every second, so we
-   can use the data for statistics.
-2. By using callbacks with a 1s interval and a separate timer with a 1s
-   interval, we can easily overcome short connection losses or similar.
-   For example: If the Weather Station is controlled over Wi-Fi and the
-   Wi-Fi connection is lost for 30s, we will just use the latest value that
-   was retrieved for these 30s. If we would be using Getters for this, we would
-   have to handle a timeout for each of the measurements. Since the standard
-   timeout time of 2.5s is longer then our 1s interval, a timeout would
-   actually distort the measurements.
+1. Die Callbacks werden in 1s Intervallen aufgerufen aber auch nur, wenn sich 
+   der aktuelle Callback-Wert ändert. Das heißt, wenn sich der Messwert für 
+   10s nicht ändert wird auch der Callback erst nach diesen 10s aufgerufen.
+   Das ist vorteilhaft, da so Bandbreite gespart werden kann. Die Messwerte
+   werden gespeichert und können so für Statistiken genutzt werden.
+2. Durch das Arbeiten mit Callbacks und einen seperaten Timer mit einem 1s 
+   Intervall können auch kurze Verbindungsabrüche oder ähnliches überbrückt 
+   werden. Zum Beispiel: Wenn die Wetterstation über Wi-Fi gesteuert wird und
+   diese Verbindung für 30s unterbrochen ist, wird einfach der letzte Wert 
+   benutzt der vor diesen 30s empfangen wurde. Hätten wir Getters hierfür 
+   verwendet, so hätten wir Timeouts für jede Messung behandeln müssen. Da 
+   die Standard Timeout Zeit bei 2.5s liegt und somit länger ist wie unser 1s 
+   Intervall, hätte dies unsere Messungen verzerren können.
 
+Schritt 2: Kontrolle über Taster
+--------------------------------
 
-Step 2: Button Control
-----------------------
-
-For the button control, we have to add the ButtonPressed callback
-during the initialization:
+Um über die LCD-Taster steuern zu können muss der ButtonPressed callback zur
+Initialisierung hinzugeügt werden:
 
 .. code-block:: csharp
 
     brickletLCD.ButtonPressed += PressedCB;
 
-In the callback we save the actual button that was pressed and
-we also increase a counter for the specific button, if the
-same button was pressed before. This allows us to cycle between
-different views in a specific mode.
+In diesem Callback wird gespeichert welcher Taster zuletzt gedrückt wurde
+und ein Zähler für den jeweiligen Taster inkrementiert, falls dieser
+auch als letztes zuvor gedrückt wurde. Somit können wir zwischen 
+verschiedenen Ansichten in einem Modus (z.B. Anzeige von 24h Graph) wechseln.
 
 .. code-block:: csharp
 
@@ -168,10 +167,10 @@ different views in a specific mode.
         UpdateSwitch();
     }
 
-To give instant feedback, we directly clear the display and call
-UpdateSwitch.
+Um sofort auf den Tastendruck zu reagieren, löschen wir das Display und rufen
+UpdateSwitch auf.
 
-The UpdateSwitch method switches between the four different modes:
+Die UpdateSwitch Methode wechselt zwischen den vier verschiedenen Modi.
 
 .. code-block:: csharp
 
@@ -186,25 +185,27 @@ The UpdateSwitch method switches between the four different modes:
         }
     }
 
-The four modes are:
+Die vier Modis sind::
 
-* Standard: Displays all 4 measurements.
-* Graph: Displays a 24h graph of one measurement. It is possible to cycle
-  through the different measurements with repeated presses of the button.
-* MinMaxAvg: Displays the minimum, maximum and average values of a measurement.
-  It is also possible to cycle through the different measurements with repeated
-  presses of the button.
-* Time: Displays current time and date.
+* Standard: Zeige alle 4 Messungen an.
+* Graph: Zeige einen 24h Graphen von jeder Messung an. Durch mehrmaliges 
+  drücken des Tasters kann zwischen den Messungen gewechselt werden.
+* MinMaxAvg: Zeigt Minimums-, Maximums- und den Durchschnittswert jeder Messung
+  an. Auch hierbei ist es möglich über einen erneuten Tasterdruck zwischen den
+  Messwerten zu wechseln.
+* Time: Zeigt die aktuelle Uhrzeit und das Datum an.
 
-Step 3: Show four modes on display
-----------------------------------
 
-The implementation of the four modes.
 
-Standard Mode
-^^^^^^^^^^^^^
+Schritt 3: Anzeige der vier Modi im Display
+-------------------------------------------
 
-In standard mode we just show the measurements:
+Die Implementierung der vier Modi:
+
+Standard-Modus
+^^^^^^^^^^^^^^
+
+Im Standard-Modus zeigen wir nur die Messwerte an:
 
 .. code-block:: csharp
 
@@ -229,10 +230,10 @@ In standard mode we just show the measurements:
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_standard_1000.jpg
 
-Graph Mode
-^^^^^^^^^^
+Graph-Modus
+^^^^^^^^^^^
 
-In graph mode we show a bar graph of the last 24 hours:
+Im Graph-Modus zeigen wir einen Balkengraphen der letzten 24 Stunden an:
 
 .. code-block:: csharp
 
@@ -265,9 +266,10 @@ In graph mode we show a bar graph of the last 24 hours:
         }
     }
 
-We don't go into detail here. The exact method how the bars are calculated
-can be seen in the final program. For the bar graph we have to configure
-some custom characters during the initialization:
+Wir gehen hier nicht weiter ins Detail. Die Methoden wie die Graphen 
+berechnet werden können zum Schluss im vollständigen Programm betrachtet 
+werden. Für die Balkengraphen müssen allerdings ein paar Custom-Characters
+bei der Initialisierung konfiguriert werden:
 
 .. code-block:: csharp
 
@@ -289,8 +291,8 @@ some custom characters during the initialization:
         }
     }
 
-This configures the eight available custom characters to bars with height
-one to eight.
+Dies konfiguriert die acht verfügbaren Custom-Characters als Balken mit Höhe
+eins bis acht.
 
 .. image:: /Images/Kits/weather_station_lcd_graph_350.jpg
    :scale: 100 %
@@ -298,10 +300,11 @@ one to eight.
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_graph_1000.jpg
 
-MinMaxAvg Mode
-^^^^^^^^^^^^^^
+MinMaxAvg-Modus
+^^^^^^^^^^^^^^^
 
-In MinMaxAvg mode we show minimum, maximum and average values of the last 24 hours:
+Im MinMaxAvg-Modus zeigen wir das Minimum, Maximum und den Durchschnittswert
+der letzten 24h an:
 
 .. code-block:: csharp
 
@@ -335,8 +338,8 @@ In MinMaxAvg mode we show minimum, maximum and average values of the last 24 hou
         }
     }
 
-The values are written in 4 lines, whereby the first line is a title that
-shows the names of the measurements:
+Diese Werte werden in 4 Zeilen geschrieben, wobei die erste Zeile den Titel 
+der jeweiligen Messungen anzeigt:
 
 .. code-block:: csharp
 
@@ -357,10 +360,10 @@ shows the names of the measurements:
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_minmaxavg_1000.jpg
 
-Time Mode
-^^^^^^^^^
+Time-Modus
+^^^^^^^^^^
 
-In time mode we show the current time and date:
+Im Time-Modus zeigt das Display die momentan Uhrzeit und das aktuelle Datum an:
 
 .. code-block:: csharp
 
@@ -374,9 +377,8 @@ In time mode we show the current time and date:
         brickletLCD.WriteLine((byte)2, (byte)((LINE_LENGTH-line2.Length)/2), UTF16ToKS0066U(line2));
     }
 
-The UTF16ToKS0066U method encodes umlauts to the LCD charset (ä, ö, ü, etc).
-This is needed, since C# gives the dates in the current operating system
-language.
+Die UTF16ToKS0066U Methode encodiert Umlaute für den LCD Schritsatz (ä, ö, ü, etc).
+Dies wird benötigt, da C# die Daten in der momentanen Betriebssystem-Sprache übergibt.
 
 .. image:: /Images/Kits/weather_station_lcd_time_350.jpg
    :scale: 100 %
@@ -384,19 +386,20 @@ language.
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_time_1000.jpg
 
-Step 4: Everything put together
--------------------------------
+Schritt 4: Alles zusammenfügen
+------------------------------
 
-That's it! Now we have a Weather Station with four different modes
-that can be controlled with the LCD20x4 Bricklet buttons.
+Das war es! Nun haben wir eine Wetterstation mit vier Modi,
+die über die LCD20x4 Taster gesteuert werden kann.
 
-This is of course still very elementary. There is lots of room
-for improvement. For example it would be possible to show the unit in
-graph mode whenever the shown values are not too big. Or perhaps it would
-be better to show the top and bottom values of the graph on the left
-side of the graph instead of the top.
+Zugegeben ist dies alles noch ein wenig elementar. Es gibt
+genügend Möglichkeiten Dinge zu verbessern. Zum Beispiel wäre
+es Möglich die Einheit der Messwerte mitanzuzeigen sofern der Messwert
+nicht zu groß ist. Oder es wäre besser die Graphenbeschriftungen
+anstatt oben auf der linken Seite darzustellen.
 
-All of the above put together (`download <https://raw.github.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
+
+Hier der komplette Sourcecode (`download <https://raw.github.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
 
 .. literalinclude:: ../../../../../weather-station/button_control/csharp/WeatherStationButton.cs
  :language: csharp

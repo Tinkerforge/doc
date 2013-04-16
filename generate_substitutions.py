@@ -213,8 +213,8 @@ weather_station_common_intro = {
 'en':
 """
 >>>intro
-For this project we are assuming, that you have a {0} environment set up
-and that you have a rudimentary understanding of the {0} language.
+For this project we are assuming, that you have a {0} development environment
+set up and that you have a rudimentary understanding of the {0} language.
 
 If you are totally new to {0} itself you should start `here <{2}>`__. If you are
 new to the Tinkerforge API, you should start :ref:`here <api_bindings_{1}>`.
@@ -223,11 +223,12 @@ new to the Tinkerforge API, you should start :ref:`here <api_bindings_{1}>`.
 'de':
 """
 >>>intro
-For this project we are assuming, that you have a {0} environment set up
-and that you have a rudimentary understanding of the {0} language.
+Für diese Projekt setzen wir voraus, dass eine {0} Entwicklungsumgebung
+eingerichtet ist und ein grundsätzliches Verständnis der {0} Programmiersprache
+vorhanden ist.
 
-If you are totally new to {0} itself you should start `here <{2}>`. If you are
-new to the Tinkerforge API, you should start :ref:`here <api_bindings_{1}>`.
+Falls dem nicht der Fall ist sollte `hier <{2}>`__ begonnen werden. Informationen
+über die Tinkerforge API sind dann :ref:`hier <api_bindings_{1}>` zu finden.
 <<<intro
 """
 }
@@ -256,7 +257,8 @@ weather_station_write_to_lcd_goals = {
 >>>goals
 We are setting the following goals for this project:
 
-* Temperature, ambient light, humidity and air pressure should be shown on the LCD 20x4 Bricklet,
+* Temperature, ambient light, humidity and air pressure should be shown on
+  the LCD 20x4 Bricklet,
 * the measured values should be updated automatically when they change and
 * the measured values should be formated to be easily readable.
 
@@ -275,22 +277,25 @@ In the following we will show step-by-step how this can be achieved.
 'de':
 """
 >>>goals
-We are setting the following goals for this project:
+Wir setzen uns folgende Ziele für dieses Projekt:
 
-* Temperature, ambient light, humidity and air pressure should be shown on the LCD 20x4 Bricklet,
-* the measured values should be updated automatically when they change and
-* the measured values should be formated to be easily readable.
+* Temperatur, Helligkeit, Luftfeuchte und Luftdruck sollen auf dem LCD 20x4
+  Bricklet angezeigt werden,
+* die gemessenen Werte sollen automatisch aktualisiert werden sobald sie sich
+  verändern und
+* die gemessenen Werte sollen in einem verständlichen Format angezeigt werden.
 
-Since this project will likely run 24/7, we will also make sure
-that the application is as robust towards external influences as possible.
-The application should still work when
+Da dieses Projekt wahrscheinlich 24/7 laufen wird, wollen wir sicherstellen,
+dass das Programm möglichst robust gegen externe Einflüsse ist. Das Programm
+sollte weiterhin funktionieren falls
 
-* Bricklets are exchanged (i.e. we don't rely on UIDs),
-* Brick Daemon isn't running or is restarted,
-* WIFI Extension is out of range or
-* Weather Station is restarted (power loss or accidental USB removal).
+* Bricklets ausgetauscht werden (z.B. verwenden wir keine fixen UIDs),
+* Brick Daemon läuft nicht oder wird neu gestartet,
+* WIFI Extension ist außer Reichweite oder
+* Wetterstation wurde neu gestartet (Stromausfall oder USB getrennt).
 
-In the following we will show step-by-step how this can be achieved.
+Im Folgenden werden wir Schritt für Schritt zeigen wie diese Ziele erreicht
+werden können.
 <<<goals
 """
 }
@@ -307,8 +312,9 @@ weather_station_write_to_lcd_steps = {
  IP address or hostname of the WIFI Extension or PC.
 
 .. |step1_register_callbacks| replace::
- When the program is started, we need to register the enumerate
- and connected callbacks and trigger a first enumerate:
+ When the program is started, we need to register the |ref_CALLBACK_ENUMERATE|
+ |callback| and the |ref_CALLBACK_CONNECTED| |callback| and trigger a first
+ enumerate:
 
 .. |step1_enumerate_callback| replace::
  The enumerate callback is triggered if a Brick gets connected over USB or if
@@ -452,16 +458,17 @@ weather_station_write_to_lcd_steps = {
 'de':
 """
 .. |step1_start_off| replace::
- To start off, we need to define where our program should connect to:
+ Als Erstes legen wir fest wohin unser Programm sich verbinden soll:
 
 .. |step1_ip_address| replace::
- If the WIFI Extension is used or if the Brick Daemon is
- running on a different PC, you have to exchange "localhost" with the
- IP address or hostname of the WIFI Extension or PC.
+ Falls eine WIFI Extension verwendet wird, oder der Brick Daemon auf einem
+ anderen PC läuft, dann muss "localhost" durch die IP Adresse oder den Hostnamen
+ der WIFI Extension oder des anderen PCs ersetzt werden.
 
 .. |step1_register_callbacks| replace::
- When the program is started, we need to register the enumerate
- and connected callbacks and trigger a first enumerate:
+ Nach dem Start des Programms müssen der |ref_CALLBACK_ENUMERATE| |callback|
+ und der |ref_CALLBACK_CONNECTED| |callback| registriert und ein erstes
+ Enumerate ausgelöst werden:
 
 .. |step1_enumerate_callback| replace::
  The enumerate callback is triggered if a Brick gets connected over USB or if
