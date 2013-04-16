@@ -139,7 +139,7 @@ during the initialization:
 In the callback we save the actual button that was pressed and
 we also increase a counter for the specific button, if the
 same button was pressed before. This allows us to cycle between
-different views in a specific mode.
+different views in a specific mode (e.g. 24h graph).
 
 .. code-block:: csharp
 
@@ -191,10 +191,12 @@ The four modes are:
   presses of the button.
 * Time: Displays current time and date.
 
+
+
 Step 3: Show four modes on display
 ----------------------------------
 
-The implementation of the four modes.
+The implementation of the four modes:
 
 Standard Mode
 ^^^^^^^^^^^^^
