@@ -31,6 +31,8 @@ Tools
 
 .. include:: Downloads_tools.table
 
+**Bitte zum Download auf das jeweils genutzte Betriebssystem klicken (z.B. Windows).**
+
 Der Brick Daemon wird benötigt für jegliche USB-gebundene Verwendung von Bricks
 und Bricklets. Der Brick Viewer dient dem Testen und Flashen neuer Firmwares
 und Plugins auf Bricks und Bricklets.

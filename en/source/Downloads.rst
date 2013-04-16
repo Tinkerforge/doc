@@ -29,6 +29,8 @@ Tools
 
 .. include:: Downloads_tools.table
 
+**To download please click on your used operating system (e.g. Windows).**
+
 You will need the Brick Daemon if you want to use any Bricks and Bricklets.
 The Brick Viewer is for testing purposes and flashing new firmwares and plugins
 onto Bricks and Bricklets.
