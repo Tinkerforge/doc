@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit C# verschiedene Wetter-Statistiken anzeigen
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit C# verschiedene Wetterstatistiken anzeigen
 
 .. _starter_kit_weather_station_button_control:
 
-Mit C# verschiedene Wetter-Statistiken anzeigen
+Mit C# verschiedene Wetterstatistiken anzeigen
 ===============================================
 
 .. include:: CSharpCommon.substitutions
@@ -20,7 +20,7 @@ umzuschalten.
 Dazu gehören:
 
 * Standard Wetteranzeige,
-* 24h Min/Max/Duchschnitt,
+* 24h Min/Max/Durchschnitt,
 * 24h Graph und
 * Zeit und Datum.
 
@@ -121,8 +121,8 @@ Es gibt zwei Gründe warum die Nutzung dieses Ansatzes Sinn macht:
    10s nicht ändert wird auch der Callback erst nach diesen 10s aufgerufen.
    Das ist vorteilhaft, da so Bandbreite gespart werden kann. Die Messwerte
    werden gespeichert und können so für Statistiken genutzt werden.
-2. Durch das Arbeiten mit Callbacks und einen seperaten Timer mit einem 1s 
-   Intervall können auch kurze Verbindungsabrüche oder ähnliches überbrückt 
+2. Durch das Arbeiten mit Callbacks und einen separaten Timer mit einem 1s
+   Intervall können auch kurze Verbindungsabbrüche oder ähnliches überbrückt
    werden. Zum Beispiel: Wenn die Wetterstation über Wi-Fi gesteuert wird und
    diese Verbindung für 30s unterbrochen ist, wird einfach der letzte Wert 
    benutzt der vor diesen 30s empfangen wurde. Hätten wir Getters hierfür 
@@ -133,8 +133,8 @@ Es gibt zwei Gründe warum die Nutzung dieses Ansatzes Sinn macht:
 Schritt 2: Kontrolle über Taster
 --------------------------------
 
-Um über die LCD-Taster steuern zu können muss der ButtonPressed callback zur
-Initialisierung hinzugeügt werden:
+Um über die LCD-Taster steuern zu können muss der ButtonPressed Callback zur
+Initialisierung hinzugefügt werden:
 
 .. code-block:: csharp
 
@@ -185,7 +185,7 @@ Die UpdateSwitch Methode wechselt zwischen den vier verschiedenen Modi.
         }
     }
 
-Die vier Modis sind::
+Die vier Modi sind:
 
 * Standard: Zeige alle 4 Messungen an.
 * Graph: Zeige einen 24h Graphen von jeder Messung an. Durch mehrmaliges 
@@ -202,8 +202,8 @@ Schritt 3: Anzeige der vier Modi im Display
 
 Die Implementierung der vier Modi:
 
-Standard-Modus
-^^^^^^^^^^^^^^
+Standardmodus
+^^^^^^^^^^^^^
 
 Im Standard-Modus zeigen wir nur die Messwerte an:
 
@@ -230,8 +230,8 @@ Im Standard-Modus zeigen wir nur die Messwerte an:
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_standard_1000.jpg
 
-Graph-Modus
-^^^^^^^^^^^
+Graphmodus
+^^^^^^^^^^
 
 Im Graph-Modus zeigen wir einen Balkengraphen der letzten 24 Stunden an:
 
@@ -296,7 +296,7 @@ eins bis acht.
 
 .. image:: /Images/Kits/weather_station_lcd_graph_350.jpg
    :scale: 100 %
-   :alt: Graph Mode
+   :alt: Graphmodus
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_graph_1000.jpg
 
@@ -356,7 +356,7 @@ der jeweiligen Messungen anzeigt:
 
 .. image:: /Images/Kits/weather_station_lcd_minmaxavg_350.jpg
    :scale: 100 %
-   :alt: MinMaxAvg Mode
+   :alt: MinMaxAvg-Modus
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_minmaxavg_1000.jpg
 
@@ -377,12 +377,12 @@ Im Time-Modus zeigt das Display die momentan Uhrzeit und das aktuelle Datum an:
         brickletLCD.WriteLine((byte)2, (byte)((LINE_LENGTH-line2.Length)/2), UTF16ToKS0066U(line2));
     }
 
-Die UTF16ToKS0066U Methode encodiert Umlaute für den LCD Schritsatz (ä, ö, ü, etc).
+Die UTF16ToKS0066U Methode encodiert Umlaute für den LCD Zeichensatz (ä, ö, ü, etc).
 Dies wird benötigt, da C# die Daten in der momentanen Betriebssystem-Sprache übergibt.
 
 .. image:: /Images/Kits/weather_station_lcd_time_350.jpg
    :scale: 100 %
-   :alt: Time Mode
+   :alt: Time-Modus
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_time_1000.jpg
 
@@ -390,16 +390,15 @@ Schritt 4: Alles zusammenfügen
 ------------------------------
 
 Das war es! Nun haben wir eine Wetterstation mit vier Modi,
-die über die LCD20x4 Taster gesteuert werden kann.
+die über die LCD 20x4 Taster gesteuert werden kann.
 
 Zugegeben ist dies alles noch ein wenig elementar. Es gibt
 genügend Möglichkeiten Dinge zu verbessern. Zum Beispiel wäre
-es Möglich die Einheit der Messwerte mitanzuzeigen sofern der Messwert
+es Möglich die Einheit der Messwerte mit anzuzeigen sofern der Messwert
 nicht zu groß ist. Oder es wäre besser die Graphenbeschriftungen
 anstatt oben auf der linken Seite darzustellen.
 
-
-Hier der komplette Sourcecode (`download <https://raw.github.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
+Hier der komplette Quelltext (`download <https://raw.github.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
 
 .. literalinclude:: ../../../../../weather-station/button_control/csharp/WeatherStationButton.cs
  :language: csharp

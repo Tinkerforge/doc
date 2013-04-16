@@ -4,6 +4,7 @@
 .. |ref_CALLBACK_ENUMERATE| replace:: :c:data:`IPCON_CALLBACK_ENUMERATE`
 .. |ref_CALLBACK_CONNECTED| replace:: :c:data:`IPCON_CALLBACK_CONNECTED`
 .. |callback| replace:: Callback
+.. |ref_enumerate| replace:: :c:func:`ipcon_enumerate <ipcon_enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``IPCON_ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``IPCON_ENUMERATION_TYPE_AVAILABLE``
 .. |cb_illuminance| replace:: ``cb_illuminance``

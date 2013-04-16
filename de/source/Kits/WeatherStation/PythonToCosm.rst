@@ -54,7 +54,7 @@ ein Datastream über `JSON Pakete
 <https://cosm.com/docs/v2/datastream/update.html>`__
 aktualisiert werden können.
 
-Das angegebene Beispiel:
+Das angegebene Beispiel::
 
  {
   "current_value":"294",
@@ -98,11 +98,11 @@ Wir nutzen den letzten Wert, das alte Minimum und Maximum und berechnen
 daraus die neuen Werte. Wenn noch keine Werte zu der ID gespeichert sind,
 fangen wir die Exception und legen einen neuen Key an.
 
-Als Basis für den Programmcode der Wetterstation kann das
-:ref:`Mit Python auf das LCD 20x4 Bricklet schreiben Projekt
- <starter_kit_weather_station_python_to_lcd_step_5>` dienen.
+Als Basis für den Programmcode der Wetterstation kann das :ref:`Mit Python auf
+das LCD 20x4 Bricklet schreiben Projekt <starter_kit_weather_station_python_to_lcd_step_5>`
+dienen.
 
-Wir müssen nurnoch die put Funktion aufrufen wenn neue Messwerte ankommen:
+Wir müssen nur noch die put Funktion aufrufen wenn neue Messwerte ankommen:
 
 .. code-block:: python
 

@@ -28,37 +28,42 @@ Starterkit: Wetterstation
 	}}
 	{{ tfdocend() }}
 
-The *Starter Kit: Weather Station* is a fully-fledged open source weather
-station. It measures temperature, humidity, air pressure and illuminance.
+Das *Starter Kit: Wetterstation* ist eine vollwertige Open Source Wetterstation.
+Es misst Temperature, Luftfeuchtigkeit, Luftdruck und Helligkeit mit hoher 
+Präzision.
 
-It can be controlled by a PC or a :ref:`Raspberry Pi <embedded_raspberry_pi>`
-over USB or (if the :ref:`WIFI Extension <wifi_extension>` is added) over Wi-Fi.
-The measurements can be displayed on the 20x4 LCD, they can be shown on a
-website or uploaded to `Cosm <https://cosm.com/>`__. With the four buttons of
-the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` it is possible to control
-different modes.
+Sie kann Über einen PC oder :ref:`Raspberry Pi <embedded_raspberry_pi>` 
+über USB oder, falls eine :ref:`WIFI Extension <wifi_extension>` hinzugefügt 
+wird über Wi-Fi gesteuert werden. Die Messwerte können auf einem 20x4 Zeichen 
+LCD angezeigt, auf einer Webseite oder z.B. auf `Cosm <https://cosm.com/>`__ 
+hochgeladen werden. Über vier Taster auf dem 
+:ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` ist es möglich zwischen 
+verschiedenen Modi umzuschalten.
 
-Mounting holes for :ref:`Analog In <analog_in_bricklet>`
-and :ref:`IO-4 <io4_bricklet>` Bricklets are provided, this gives the
-possibility to add more sensors (anemometer, pluviometer etc). The plastic
-is tinker-friendly PMMA, new drill holes and similar can be added with a
-simple wood drill.
+Das Kit ermöglicht es nach eigenen Wünschen sowohl Soft- als auch Hardware
+zu gestalten. Das Gehäuse besteht aus bastelfreundlichen PMMA und ist einfach
+zu bearbeiten. Zusätzlich sind bereits Bohrlöcher für 
+:ref:`Analog In <analog_in_bricklet>` und :ref:`IO-4 <io4_bricklet>` Bricklets 
+vorhanden. So können auch noch weitere Sensoren (Anemometer, Pluviometer etc) 
+angeschlossen werden.
 
-Programming of the weather station can be done with all of the available
-bindings (|bindings|) and example
-implementations with step-by-step instructions are available for all
-of the languages.
+Die Wetterstation kann über alle verfügbaren Bindings (|bindings|) 
+programmiert werden. Beispiele Implementierungen für alle Programmiersprachen 
+erleichtern den Einstieg in die Programmierung.
 
-Firmware updating and first tests
----------------------------------
+Firmware aktualisieren und erste Tests
+--------------------------------------
 
-As a very first step you should try out and update your Bricks and Bricklets.
-For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
-the :ref:`Brick Viewer <brickv_installation>`. Use Brick Viewer to find out
-if all of the firmwares up to date (Updates / Flashing button). If not, you can
-:ref:`update the Bricks <brickv_flash_firmware>` and
-:ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
-Viewer too:
+Im ersten Schritt sollten die Bricks und Bricklets ausprobiert werden
+und die Firmwares ggf. aktualisiert werden.
+
+Dazu sollte der :ref:`Brick Daemon <brickd_installation>` und der
+:ref:`Brick Viewer <brickv_installation>` installiert werden. 
+Schließe alle Bricklets an das Master Brick an und verbinde es per USB mit
+dem PC. Anschließend kann über den Brick Viewer bestimmt werden, ob alle 
+Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
+(:ref:`Bricks aktualisieren<brickv_flash_firmware>`, 
+:ref:`Bricklets <brickv_flash_plugin>`):
 
 .. image:: /Images/Kits/weather_station_update_350.jpg
    :scale: 100 %
@@ -66,111 +71,108 @@ Viewer too:
    :align: center
    :target: ../../_images/Kits/weather_station_update_orig.jpg
 
-After that you can click through the tabs of the Brick Viewer to see if
-all of the sensors are working correctly. Now you can be sure that the
-Bricks and Bricklets have versions that work together and that
-everything will work if it is screwed together in the weather station
-enclosure.
+Danach sollten mit dem Brick Viewer alle Sensoren überprüft werden. Dazu klickt
+man am besten durch die verschiedenen Tabs und überprüft die Sensorwerte.
+Anschließend ist sichergestellt, dass das Master Brick und alle Bricklets
+korrekt funktionieren auch nachdem alles in das Gehäuse geschraubt wurde.
 
 .. batti: screenshot brickv with all tabs?
 
-Construction
+Konstruktion
 ------------
 
 TODO: Images of construction and instructions
 
-Projects
+Projekte
 --------
 
-There are several applications for the Weather Station Starter Kit.
+Es gibt verschiedene Anwendungen für das Wetterstations-Starterkit:
 
-Display Environment Measurements on LCD
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Messwerte auf dem LCD anzeigen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The most obvious application for the Weather Station Starter Kit is to display
-the measurements of the environment on the LCD 20x4 Bricklet. This can be
-done through three different paths:
+Die offensichtlichste Anwendung für das Starterkit Wetterstation ist die 
+Anzeige der Umgebungsmesswerte auf dem LCD 20x4 Bricklet. Hierfür gibt es drei 
+Möglichkeiten:
 
-* USB connection to PC: Install brickd and application on PC, connect
-  Master Brick of Weather Station to PC via USB.
-* Wi-Fi connection to PC: Install application on PC, connect to
-  Weather Station directly over Wi-Fi or through an access point.
-* Raspberry Pi or other embedded board integrated in Weather Station:
-  Install brickd and application on embedded board, connect Master Brick of
-  Weather Station to embedded board via USB.
+* USB Verbindung zu einem PC: Installiere Brickd und die Anwendung auf dem PC
+  und verbinde das Master Brick per USB
+* Wi-Fi Verbindung zu einem PC: Installiere die Anwendung auf dem PC und
+  Verbinde die Wetterstation direct per Wi-Fi oder über einen Accesspoint.
+* Raspberry Pi oder ein anderes Embedded Board integriert in die Wetterstation:
+  Installiere Brickd  und die Anwendung auf dem Embedded Board und verbinde das
+  Master Brick der Wetterstation per USB.
 
 .. batti: link to further enhancement section? how to use rasp with weather station etc.
 
-All three possible solutions can use the same source code.
+Die drei Möglichkeiten können den selben Source Code benutzen.
 
-Example implementations with step-by-step instructions are available for:
+Beispielanwendungen mit Schritt-für-Schritt Anleitungen existieren für:
 
 |write_to_lcd_examples|.
 
 Cosm Anbindung
 ^^^^^^^^^^^^^^
 
-`Cosm <https://cosm.com/>`__ is a service that provides the possibility to
-analyze and visualize the "Internet of Things". They can store a history of our
-Weather Station data and we get pretty graphs:
+`Cosm <https://cosm.com/>`__ ist ein Service der die Möglichkeit bietet
+das "Internet der Dinge" zu analysieren und zu visualisieren. Dieser kann eine
+Historie der Wetterstationsdaten speichern, sowie nette Graphen zeichnen:
 
 .. image:: /Images/Kits/weather_station_cosm_graphs_600.jpg
    :scale: 100 %
-   :alt: Cosm datastreams shown as graph
+   :alt: Cosm Datastreams als Graph
    :align: center
    :target: ../../_images/Kits/weather_station_cosm_graphs_orig.jpg
 
-An example implementation with step-by-step instructions that shares the
-weather data with Cosm is available
+Eine Beispiel-Implementierung mit Schritt-für-Schritt Instruktionen
+die die Wetterdaten mit Cosm austauscht is verfügbar
 in :ref:`Python <starter_kit_weather_station_cosm>`.
 
 Live-Anzeige von Messdaten auf einer Webseite
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Another application for the Weather Station, is to embed the weather data
-on a website:
+Eine weitere Anwendung für die Wetterstation ist die Anzeige von Wetterdaten
+auf eine Webseite:
 
 .. image:: /Images/Kits/weather_station_website_orig.jpg
    :scale: 100 %
-   :alt: Live Measurements on Website
+   :alt: Messwerte live auf einer Webseite
    :align: center
    :target: ../../_images/Kits/weather_station_website_orig.jpg
 
-In this project we will use JavaScript/AJAX to update the measurements
-every 5 seconds, without the need to reload the webpage.
+In diesem Projekt werden wir JavaScript/AJAX nutzen um die Messwerte
+alle 5 Sekunden auf einer Webseite neu zu laden.
 
-An example implementation is available
-in :ref:`PHP <starter_kit_weather_station_website>`.
+Eine Beispiel-Implementierung ist 
+in :ref:`PHP <starter_kit_weather_station_website>` verfügbar.
 
-Show Statistics with Button Control
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Anzeige von Statistiken mit Umschaltung per Taster
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Since the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` features four buttons,
-we can enhance the first application by more data that can be switched with
-the buttons.
+Da das :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` über vier Taster verfügt
+können wir die erste Anwendung um die Anzeige weiterer Daten erweitern
+indem diese mit den Tastern durchgeschalten werden.
 
 .. image:: /Images/Kits/weather_station_lcd_all_orig.jpg
    :scale: 100 %
-   :alt: Different modes of button control project
+   :alt: Verschiedene Modi
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_all_orig.jpg
 
-The four buttons in this project will be used to switch through
+Die vier Taster werden in diesem Projekt genutzt um zwischen
 
-* standard weather measurement,
-* 24h min/max/average,
-* 24h graph and
-* time and date.
+* Standard Wetter Messung,
+* 24h Min/Max/Durchschnitt,
+* 24h Graph und
+* Zeit und Datum.
 
-An example implementation is available
-in :ref:`C# <starter_kit_weather_station_button_control>`.
+Eine Beispielimplementierung ist
+in :ref:`C# <starter_kit_weather_station_button_control>` verfügbar.
 
-Further Enhancements
---------------------
+Spätere Erweiterungen
+---------------------
 
-If you modded, extended or improved your Weather Station in any way and you
-have published your results on our `Wiki <http://www.tinkerunity.org/wiki/>`__,
-on your blog or similar: Please give us a notice. We would love to add a link
-to your project here!
+Gerne führen wir hier Mods, Erweiterungen oder Verbesserungen der Wetterstation 
+auf. Bitte gebt uns bescheid, wir verlinken hier gerne eure Projekte.
 
 .. FIXME: Regenmesser, windgeschwindigkeit etc

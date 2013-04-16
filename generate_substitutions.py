@@ -318,7 +318,7 @@ weather_station_write_to_lcd_steps = {
 
 .. |step1_enumerate_callback| replace::
  The enumerate callback is triggered if a Brick gets connected over USB or if
- the enumerate function is called. This allows to discover the Bricks and
+ the |ref_enumerate| function is called. This allows to discover the Bricks and
  Bricklets in a stack without knowing their types or UIDs beforehand.
 
 .. |step1_connected_callback| replace::
@@ -339,7 +339,7 @@ weather_station_write_to_lcd_steps = {
 .. |step2_intro| replace::
  During the enumeration we want to configure all of the weather measuring
  Bricklets. Doing this during the enumeration ensures that Bricklets get
- reconfigured if they were disconnected or there was a power loss.
+ reconfigured if the stack was disconnected or there was a power loss.
 
 .. |step2_enumerate| replace::
  The configurations should be performed on first startup
@@ -394,8 +394,8 @@ weather_station_write_to_lcd_steps = {
 .. |step3_suggestions1| replace::
  There are some obvious ways to make the output better.
  The name could be cropped according to the exact space that is available
- (depending on the number of digits of the measured value). Also,
- reading the temperature in the air pressure callback is suboptimal. If the
+ (depending on the number of digits of the measured value). Also, reading the
+ temperature in the |cb_air_pressure| callback function is suboptimal. If the
  air pressure doesn't change, we won't update the temperature.
 
 .. |step3_suggestions2_common| replace::
@@ -440,7 +440,7 @@ weather_station_write_to_lcd_steps = {
 
 .. |step4_logging1| replace::
  Additionally we added some logging. With the logging we can later find out
- what exactly caused a problem, when the Weather Station failed for some
+ what exactly caused a problem, if the Weather Station failed for some
  time period.
 
 .. |step4_logging2| replace::
@@ -471,143 +471,150 @@ weather_station_write_to_lcd_steps = {
  Enumerate ausgelöst werden:
 
 .. |step1_enumerate_callback| replace::
- The enumerate callback is triggered if a Brick gets connected over USB or if
- the enumerate function is called. This allows to discover the Bricks and
- Bricklets in a stack without knowing their types or UIDs beforehand.
+ Der Enumerate Callback wird ausgelöst wenn ein Brick per USB angeschlossen wird
+ oder wenn die |ref_enumerate| Funktion aufgerufen wird. Dies ermöglicht es die
+ Bricks und Bricklets im Stapel zu erkennen ohne im Voraus ihre UIDs kennen zu
+ müssen.
 
 .. |step1_connected_callback| replace::
- The connected callback is triggered if the connection to the WIFI Extension or
- to the Brick Daemon got established. In this callback we need to trigger the
- enumerate again, if the reason is an auto reconnect:
+ Der Connected Callback wird ausgelöst wenn die Verbindung zur WIFI Extension
+ oder zum Brick Daemon hergestellt wurde. In diesem Callback muss wiederum ein
+ Enumerate angestoßen werden, wenn es sich um ein Auto-Reconnect handelt:
 
 .. |step1_auto_reconnect_callback| replace::
- An auto reconnect means, that the connection to the WIFI Extension or to the
- Brick Daemon was lost and could subsequently be established again. In this
- case the Bricklets may have lost their configurations and we have to
- reconfigure them. Since the configuration is done during the
- enumeration process (see below), we have to trigger another enumeration.
+ Ein Auto-Reconnect bedeutet, dass die Verbindung zur WIFI Extension oder zum
+ Brick Daemon verloren gegangen ist und automatisch wiederhergestellt werden
+ konnte. In diesem Fall kann es sein, dass die Bricklets ihre Konfiguration
+ verloren haben und wir sie neu konfigurieren müssen. Da die Konfiguration
+ beim Enumerate (siehe unten) durchgeführt wird, lösen wir einfach noch ein
+ Enumerate aus.
 
 .. |step1_put_together| replace::
- Step 1 put together:
+ Schritt 1 zusammengefügt:
 
 .. |step2_intro| replace::
- During the enumeration we want to configure all of the weather measuring
- Bricklets. Doing this during the enumeration ensures that Bricklets get
- reconfigured if they were disconnected or there was a power loss.
+ Während des Enumerierungsprozesse sollen alle messenden Bricklets konfiguriert
+ werden. Dadurch ist sichergestellt, dass sie neu konfiguriert werden nach
+ einem Verbindungsabbrüche oder einer Unterbrechung der Stromversorgung.
 
 .. |step2_enumerate| replace::
- The configurations should be performed on first startup
- (|ENUMERATION_TYPE_CONNECTED|) as well as whenever the enumeration is
- triggered externally by us (|ENUMERATION_TYPE_AVAILABLE|):
+ Die Konfiguration soll beim ersten Start (|ENUMERATION_TYPE_CONNECTED|)
+ durchgeführt werden und auch bei jedem extern ausgelösen Enumerate
+ (|ENUMERATION_TYPE_AVAILABLE|):
 
 .. |step2_lcd_config| replace::
- The LCD 20x4 configuration is simple, we want the current text cleared and
- we want the backlight on:
+ Die Konfiguration des LCD 20x4 ist einfach, wir löschen den aktuellen Inhalt
+ des Displays und schalten das Backlight ein:
 
 .. |step2_other_config1| replace::
- We configure the Ambient Light, Humidity and Barometer Bricklet to
- return their respective measurements continuously with a period of
- 1000ms (1s):
+ Das Ambient Light, Humidity und Barometer Bricklet werden so eingestellt, dass
+ sie uns ihre jeweiligen Messwerte höchsten mit einer Periode von 1000ms (1s)
+ mitteilen:
 
 .. |step2_other_config2| replace::
- This means that the Bricklets will call the |cb_illuminance|, |cb_humidity|
- and |cb_air_pressure| callback functions whenever the value has changed, but
- with a maximum period of 1000ms.
+ Dies bedeuted, dass die Bricklets die |cb_illuminance|, |cb_humidity|
+ und |cb_air_pressure| Callback-Funktionen immer dann aufrufen wenn sich der
+ Messwert verändert hat, aber höchsten alle 1000ms.
 
 .. |step2_put_together| replace::
- Step 2 put together:
+ Schritt 2 zusammengefügt:
 
 .. |step3_intro| replace::
- We want a neat arrangement of the measurements on the display, such as
+ Wir wollen eine hübsche Darstellung der Messwerte auf dem Display. Zum Beispiel
 
 .. |step3_format| replace::
- The decimal marks and the units should be below each other. To achieve this
- we use two characters for the unit, two decimal places and crop the name
- to use the maximum characters that are left. That's why "Illuminanc" is missing
- its final "e".
+ Die Dezimaltrennzeichen und die Einheiten sollen in jeweils einer Spalte
+ übereinander stehen. Daher verwenden wird zwei Zeichen für jede Einheit, zwei
+ Nachkommastellen und kürzen die Namen so, dass sie in den restlichen Platz der
+ jeweiligen Zeile passen. Das ist auch der Grund, warum dem "Illuminanc" das
+ letzte "e" fehlt.
 
 .. |step3_printf| replace::
- The code above converts a floating point value to a string according to the given
- `format specification <http://en.wikipedia.org/wiki/Printf_format_string>`__.
- The result will be at least 6 characters long with 2 decimal places, filled up
- with spaces from the left if it would be shorter than 6 characters otherwise.
+ Der obige Ausdruck wandelt eine Fließkommazahl in eine Zeichenkette um,
+ gemäß der gegebenen `Formatspezifikation
+ <http://en.wikipedia.org/wiki/Printf_format_string>`__. Das Ergebnis ist dann
+ mindestens 6 Zeichen lang mit 2 Nachkommastellen. Fall es weniger als 6 Zeichen
+ sind wird von Links mit Leerzeichen aufgefüllt.
 
 .. |step3_temperature| replace::
- We are still missing the temperature. The Barometer Bricklet can
- measure temperature, but it doesn't have a callback for it. As a
- simple workaround we can retrieve the temperature in the |cb_air_pressure|
- callback function:
+ Es fehlt noch die Temperatur. Das Barometer Bricklet kann auch die Temperatur
+ messen, aber es hat dafür keinen Callback. Als einfacher Workaround können wir
+ die Temperatur in der |cb_air_pressure| Callback-Funktion abfragen:
 
 .. |step3_put_together| replace::
- Step 3 put together:
+ Schritt 3 zusammengefügt:
 
 .. |step3_complete| replace::
- That's it. If we would copy these three steps together in one file and
- execute it, we would have a working Weather Station!
+ Das ist es. Wenn wir diese drei Schritte zusammen in eine Datei kopieren und
+ ausführen, dann hätten wir jetzt eine funktionierenden Wetterstation.
 
 .. |step3_suggestions1| replace::
- There are some obvious ways to make the output better.
- The name could be cropped according to the exact space that is available
- (depending on the number of digits of the measured value). Also,
- reading the temperature in the air pressure callback is suboptimal. If the
- air pressure doesn't change, we won't update the temperature.
+ Es gibt einige offensichtliche Möglichkeiten die Ausgabe der Messdaten noch zu
+ verbessern. Die Namen könnten dynamisch exakt gekürzt werden, abhängig vom
+ aktuell freien Raum der jeweiligen Zeile. Auch könnten die Namen können noch
+ ins  Deutsche übersetzt werden. Ein anderes Problem ist die Abfrage der
+ Temperatur in der |cb_air_pressure| Callback-Funktion. Wenn sich der Luftdruck
+ nicht ändert dann wird auch die Anzeige der Temperatur nicht aktualisiert, auch
+ wenn sich diese eigentlich geändert hat.
 
 .. |step3_suggestions2_common| replace::
- It would be better to read the temperature in a different thread in an endless
- loop with a one second sleep after each read. But we want to keep this code as
- simple as possible.
+ Es wäre besser die Temperatur jede Sekunde in einem eigenen Thread anzufragen.
+ Aber wir wollen das Programm für den Anfang einfach halten.
 
 .. |step3_suggestions2_no_thread| replace::
- It would be better to read the temperature every second triggered by an
- additional timer. But we want to keep this code as simple as possible.
+ Es wäre besser die Temperatur jede Sekunde über einen eigenen Timmer anzufragen.
+ Aber wir wollen das Programm für den Anfang einfach halten.
 
 .. |step3_robust1| replace::
- However, we do not meet all of our goals yet. The program is not yet
- robust enough. What happens if can't connect on startup? What happens if
- the enumerate after an auto reconnect doesn't work?
+ Wie dem auch sei, wir haben noch nicht alle Ziele erreicht. Das Programm ist
+ noch nicht robust genug. Was passiert wenn die Verbindung beim Start des
+ Programms nicht hergestellt werden kann, oder wenn das Enumerate nach einem
+ Auto-Reconnect nicht funktioniert?
 
 .. |step3_robust2| replace::
- What we need is error handling!
+ Wir brauchen noch Fehlerbehandlung!
 
 .. |step4_intro1| replace::
- On startup, we need to try to connect until the connection works:
+ Beim Start des Programms versuchen wir solange die Verbindung herzustellen,
+ bis es klappt:
 
 .. |step4_intro2| replace::
- and we need to try enumerating until the message goes through:
+ und es wird solange versucht ein Enumerate zu starten bis auch dis geklappt
+ hat:
 
 .. |step4_sleep_in_c| replace::
- There is no portable sleep function in C. On Windows ``windows.h`` declares
- a ``Sleep`` function that takes the duration in milliseconds. On POSIX
- systems such as Linux and Mac OS X there is a ``sleep`` function declared
- in ``unistd.h`` that takes the duration in seconds.
+ Es gibt keine portable Sleep Funktion in C. Auf Windows deklariert `windows.h``
+ eine ``Sleep`` Funktion die die Wartedauer in Millisekunden übergeben bekommt.
+ Auf POSIX Systemen wie Linux und Mac OS X gibt es eine ``sleep`` Funktion
+ deklariert in ``unistd.h`` die die Wartedauer in Sekunden übergeben bekommt.
 
 .. |step4_connect_afterwards| replace::
- With these changes it is now possible to first start the program and
- connect the Weather Station afterwards.
+ Mit diesen Änderungen kann das Programm schon gestartet werden bevor die
+ Wetterstation angeschlossen ist.
 
 .. |step4_lcd_initialized1| replace::
- We also need to make sure, that we only write to the LCD if it is
- already initialized:
+ Es muss auch sichergestellt werden, dass wir nur auf das LCD schreiben nachdem
+ es initialisiert wurde:
 
 .. |step4_lcd_initialized2| replace::
- and that we have to deal with errors during the initialization:
+ und es müssen mögliche Fehler während des Enumerierungsprozesses behandelt
+ werden:
 
 .. |step4_logging1| replace::
- Additionally we added some logging. With the logging we can later find out
- what exactly caused a problem, when the Weather Station failed for some
- time period.
+ Zusätzlich wollen wir noch ein paar Logausgaben einfügen. Diese ermöglichen es
+ später herauszufinden was ein Problem ausgelöst hat, wenn die Wetterstation
+ nach einer Weile möglicherweise nicht mehr funktioniert wie erwartet.
 
 .. |step4_logging2| replace::
- For example, if we connect to the Weather Station via Wi-Fi and we have
- regular auto reconnects, it likely means that the Wi-Fi connection is not
- very stable.
+ Zum Beispiel, wenn die Wetterstation über WLAN angebunden ist und häufig
+ Auto-Reconnects auftreten, dann ist wahrscheinlich die WLAN Verbindung nicht
+ sehr stabil.
 
 .. |step5_intro| replace::
- That's it! We are already done with our Weather Station and all of the
- goals should be met.
+ Jetzt sind alle für diese Projekt gesteckten Ziele erreicht.
 
 .. |step5_put_together| replace::
- Now all of the above put together
+ Das gesamte Programm für die Wetterstation
 """
 }
 
