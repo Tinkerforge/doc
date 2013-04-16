@@ -102,7 +102,7 @@ Als Basis für den Programmcode der Wetterstation kann das :ref:`Mit Python auf
 das LCD 20x4 Bricklet schreiben Projekt <starter_kit_weather_station_python_to_lcd_step_5>`
 dienen.
 
-Wir müssen nurnoch die put Funktion aufrufen wenn neue Messwerte ankommen:
+Wir müssen nur noch die put Funktion aufrufen wenn neue Messwerte ankommen:
 
 .. code-block:: python
 

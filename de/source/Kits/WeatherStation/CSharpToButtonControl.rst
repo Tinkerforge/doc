@@ -185,7 +185,7 @@ Die UpdateSwitch Methode wechselt zwischen den vier verschiedenen Modi.
         }
     }
 
-Die vier Modis sind:
+Die vier Modi sind:
 
 * Standard: Zeige alle 4 Messungen an.
 * Graph: Zeige einen 24h Graphen von jeder Messung an. Durch mehrmaliges 
@@ -394,12 +394,11 @@ die über die LCD 20x4 Taster gesteuert werden kann.
 
 Zugegeben ist dies alles noch ein wenig elementar. Es gibt
 genügend Möglichkeiten Dinge zu verbessern. Zum Beispiel wäre
-es Möglich die Einheit der Messwerte mitanzuzeigen sofern der Messwert
+es Möglich die Einheit der Messwerte mit anzuzeigen sofern der Messwert
 nicht zu groß ist. Oder es wäre besser die Graphenbeschriftungen
 anstatt oben auf der linken Seite darzustellen.
 
-
-Hier der komplette Sourcecode (`download <https://raw.github.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
+Hier der komplette Quelltext (`download <https://raw.github.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
 
 .. literalinclude:: ../../../../../weather-station/button_control/csharp/WeatherStationButton.cs
  :language: csharp
