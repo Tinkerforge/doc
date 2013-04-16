@@ -11,47 +11,50 @@ Mit Python Wetterdaten auf Cosm hochladen
    :end-before: <<<intro
 
 
-Goals
+Ziele
 -----
 
-We are setting the following goals for this project:
+Folgende Ziele sind für dieses Projekt gesetzt:
 
-* The weather measurements should be calculated and shown on the LCD 20x4
-  Bricklet, as in the :ref:`Display environment measurements on LCD project
+* Die Wetterdaten-Messungen sollen berechnet und auf dem LCD 20x4 Bricklet 
+  angezeigt werden (siehe :ref:`Mit Python auf das LCD 20x4 Bricklet schreiben Projekt
   <starter_kit_weather_station_python_to_lcd>`.
-* The measurements should additionally be stored and uploaded to Cosm in
-  5 minute intervals.
+* Zusätzlich sollen die Messungen gespeichert und in 5 Minuten Intervallen 
+  nach Cosm hochgeladen werden.
 
-In the following we will show step-by-step how this can be achieved.
+Nachfolgend erklären wir Schritt für Schritt wie diese Ziele erreicht werden können.
 
-Step 1: Create and configure Cosm account
------------------------------------------
+Schritt 1: Erstelle und Konfiguriere einen Cosm Account
+-------------------------------------------------------
 
-To use Cosm, we first have to create a Cosm account.
-Go to `cosm.com <https://cosm.com>`__ and sign up.
+Um Cosm benutzen zu können muss zuerst ein Cosm Account angelegt werden.
+Dazu muss `cosm.com <https://cosm.com>`__ besucht werden und sich
+eingeloggt werden.
 
-Click on "+ Device/Feed" and as type choose "Something Else".
-Choose "push data to Cosm", a title and tags and create the feed.
+Klicke auf "+ Device/Feed" und wähle "Something Else" als Typ.
+Wähle "push data to Cosm", einen Titel und Tags und erzeuge einen Feed.
 
-In the feed we have to add data streams for our weather measurements:
+In diesem Feed müssen Data Streams für unsere Wetterdaten hinzugefügt werden:
 
 .. image:: /Images/Kits/weather_station_cosm_datastreams_600.jpg
    :scale: 100 %
-   :alt: Cosm datastream configuration
+   :alt: Cosm Datastream Konfiguration
    :align: center
    :target: ../../_images/Kits/weather_station_cosm_datastreams_orig.jpg
 
-The streams got the IDs AirPressure, AmbientLight, Humidity and Temperature.
-Later we will need these IDs to upload measurements.
+Die Streams bekommen die IDs AirPressure, AmbientLight, Humidity und 
+Temperature. Diese IDs werden wir später nutzen um die Messwerte hochzuladen.
 
-Step 2: Understanding Cosm protocol
------------------------------------
 
-A quick search in the Cosm API documentation reveals that we can update
-a datastream by `just sending a small JSON package
-<https://cosm.com/docs/v2/datastream/update.html>`__.
+Schritt 2: Das Cosm Protokoll verstehen
+---------------------------------------
 
-The given example is::
+Eine kurze Recherche in der Cosm API Dokumentation zeigt, dass
+ein Datastream über `JSON Pakete
+<https://cosm.com/docs/v2/datastream/update.html>`__
+aktualisiert werden können.
+
+Das angegebene Beispiel:
 
  {
   "current_value":"294",
@@ -60,21 +63,19 @@ The given example is::
   "id":"1"
  }
 
-which can be send via HTTP PUT to ``http://api.cosm.com/v2/feeds/<ID>``. The
-API key is put in the header of the HTTP request and the return consists of
-an HTTP header only.
+wird über HTTP PUT zu ``http://api.cosm.com/v2/feeds/<ID>`` gesendet. 
+Der API Key ist im Header des HTTP Requests definiert und die Rückgabe besteht 
+aus dem HTTP Header.
 
-This seems quite straight forward. To not spam Cosm, we should limit the uploading
-interval to once every 5 minutes. This means, that we need to store the
-measurements and determine the corresponding
-min and max values for each interval.
+Um Cosm nicht zu spammen sollten wir nur alle 5 Minuten einmal die Werte 
+aktualisieren. Daher müssen wir die Messwerte speichern und die dazugehörigen
+Werte (min/max) bestimmen.
 
-Step 3: Storing measurements
-----------------------------
+Schritte 3: Messwerte speichern
+-------------------------------
 
-To start off, we create a simple value storage. To identify the
-values, we use the ID that was configured in the Cosm account as
-the Datastream ID:
+Als Anfang erzeugen wir eine einfache Datenhaltung, wobei wir die Werte mit
+den IDs identifizieren, die wir bei Cosm als Datastream ID hinterlegt haben:
 
 .. code-block:: python
 
@@ -93,15 +94,15 @@ the Datastream ID:
             except:
                 self.items[identifier] = (value, value, value)
 
-We retrieve the old value, min_value and max_value, calculate the new
-min/max and update it. If there aren't any values stored for a given
-identifier, we catch the occurring exception and add the identifier
-as a new key to the dict.
+Wir nutzen den letzten Wert, das alte Minimum und Maximum und berechnen
+daraus die neuen Werte. Wenn noch keine Werte zu der ID gespeichert sind,
+fangen wir die Exception und legen einen neuen Key an.
 
-The Weather Station code itself we can base on the code from the
-:ref:`Display environment measurements on LCD project <starter_kit_weather_station_python_to_lcd_step_5>`
+Als Basis für den Programmcode der Wetterstation kann das
+:ref:`Mit Python auf das LCD 20x4 Bricklet schreiben Projekt
+ <starter_kit_weather_station_python_to_lcd_step_5>` dienen.
 
-We just have to use the put function whenever a new measurement arrives:
+Wir müssen nurnoch die put Funktion aufrufen wenn neue Messwerte ankommen:
 
 .. code-block:: python
 
@@ -123,13 +124,13 @@ We just have to use the put function whenever a new measurement arrives:
                 log.info('Write to line 0: ' + text)
         # [...]
 
-This has to be added for the other measurements accordingly.
+Dies muss für die anderen Messwerte ebenfalls entsprechend hinzugefügt werden.
 
-Step 4: Uploading measurements
+Schritt 4: Messwerte hochladen
 ------------------------------
 
-To upload our measurements we first have to define all of the names, URLs,
-keys and so on:
+Um die Messwerte hochzuladen müssen wir zuerst alle Namen, URLs, Keys und so 
+weiter definieren:
 
 .. code-block:: python
 
@@ -149,12 +150,12 @@ keys and so on:
             self.params = "/v2/feeds/" + str(Cosm.FEED)
             threading.Thread(target=self.upload).start()
 
-You have to exchange the ``FEED`` and ``API_KEY`` values by your own Cosm
-feed and key. Everything else is practically copied from the
-Cosm documentation.
+``FEED`` und ``API_KEY`` Werte müssen durch die im eigenen Cosm
+account erstellten Werte ersetzt werden. Der Rest ist praktisch aus
+der Cosm API Dokumentation kopiert worden.
 
-To make uploads in equidistant 5 minute intervals, we are starting the
-upload function in a thread:
+Um alle 5 Minuten die Werte zu Aktualisieren wird die update Funktion
+in einem Thread gestartet:
 
 .. code-block:: python
 
@@ -187,21 +188,23 @@ upload function in a thread:
                 log.error('Could not upload to cosm -> ' +
                           str(response.status) + ': ' + response.reason)
 
-Here we take the data that was gathered, package it in the JSON format and
-send a HTTP PUT request with the data and the header that was defined in
-``__init__``. We also parse the response code and log it if something went wrong.
+Diese nimmt die gesammelten Daten, verpackt sie im JSON Format und sendet 
+diese per HTTP PUT Request mit Daten und Header die im 
+``__init__`` definiert wurden. Zusätzlich parsen wir die Antwort
+und loggen wenn etwas schief gegangen ist.
 
-Step 5: Everything put together
--------------------------------
 
-We are done! There is of course still room for improvement. For example the
-uploading and adding of data could be protected by a mutex to ensure that we
-don't add data while it is uploaded and thus remove the newly added data
-after the uploading finished.
+Schritt 5: Alles zusammenfügen
+------------------------------
 
-But if you put everything of the above together
-(`download <https://raw.github.com/Tinkerforge/weather-station/master/cosm/python/weather_cosm.py>`__),
-you have a working Weather Station that uploads the weather measurements to Cosm:
+Das war es! Natürlich gibt es auch hierbei wieder einige Möglichkeiten der 
+Verbesserung. So kann z.B. das Aktualisieren und Hinzufügen der Daten mit 
+einem Mutex geschützt werden, so dass sichergestellt wird, dass keine Daten 
+hinzugefügt werden während andere hochgeladen werden.
+
+Wenn wir alles zusammenfügen erhalten wir eine Wetterstation die alle
+Messwerte nach Cosm hochlädt
+(`download <https://raw.github.com/Tinkerforge/weather-station/master/cosm/python/weather_cosm.py>`__):
 
 .. literalinclude:: ../../../../../weather-station/cosm/python/weather_cosm.py
  :language: python
