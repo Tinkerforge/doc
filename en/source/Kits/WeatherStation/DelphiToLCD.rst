@@ -4,6 +4,7 @@
 .. |ref_CALLBACK_ENUMERATE| replace:: :delphi:func:`OnEnumerate <TIPConnection.OnEnumerate>`
 .. |ref_CALLBACK_CONNECTED| replace:: :delphi:func:`OnConnected <TIPConnection.OnConnected>`
 .. |callback| replace:: callback
+.. |ref_enumerate| replace:: :delphi:func:`Enumerate <TIPConnection.Enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``IPCON_ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``IPCON_ENUMERATION_TYPE_AVAILABLE``
 .. |cb_illuminance| replace:: ``IlluminanceCB``

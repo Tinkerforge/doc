@@ -4,6 +4,7 @@
 .. |ref_CALLBACK_ENUMERATE| replace:: :csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
 .. |ref_CALLBACK_CONNECTED| replace:: :csharp:func:`Connected <IPConnection::Connected>`
 .. |callback| replace:: Callback
+.. |ref_enumerate| replace:: :csharp:func:`Enumerate <IPConnection::Enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
 .. |cb_illuminance| replace:: ``IlluminanceCB``

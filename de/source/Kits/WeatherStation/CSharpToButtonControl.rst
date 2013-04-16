@@ -202,8 +202,8 @@ Schritt 3: Anzeige der vier Modi im Display
 
 Die Implementierung der vier Modi:
 
-Standard-Modus
-^^^^^^^^^^^^^^
+Standardmodus
+^^^^^^^^^^^^^
 
 Im Standard-Modus zeigen wir nur die Messwerte an:
 
@@ -230,8 +230,8 @@ Im Standard-Modus zeigen wir nur die Messwerte an:
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_standard_1000.jpg
 
-Graph-Modus
-^^^^^^^^^^^
+Graphmodus
+^^^^^^^^^^
 
 Im Graph-Modus zeigen wir einen Balkengraphen der letzten 24 Stunden an:
 
@@ -296,7 +296,7 @@ eins bis acht.
 
 .. image:: /Images/Kits/weather_station_lcd_graph_350.jpg
    :scale: 100 %
-   :alt: Graph Mode
+   :alt: Graphmodus
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_graph_1000.jpg
 
@@ -356,7 +356,7 @@ der jeweiligen Messungen anzeigt:
 
 .. image:: /Images/Kits/weather_station_lcd_minmaxavg_350.jpg
    :scale: 100 %
-   :alt: MinMaxAvg Mode
+   :alt: MinMaxAvg-Modus
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_minmaxavg_1000.jpg
 
@@ -382,7 +382,7 @@ Dies wird benötigt, da C# die Daten in der momentanen Betriebssystem-Sprache ü
 
 .. image:: /Images/Kits/weather_station_lcd_time_350.jpg
    :scale: 100 %
-   :alt: Time Mode
+   :alt: Time-Modus
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_time_1000.jpg
 

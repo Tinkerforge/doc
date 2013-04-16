@@ -1,9 +1,10 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit Delphi auf das LCD 20x4 Bricklet schreiben
 
-.. |ref_CALLBACK_ENUMERATE| replace:: :delphi:func:`enumerate <TIPConnection.OnEnumerate>`
-.. |ref_CALLBACK_CONNECTED| replace:: :delphi:func:`connected <TIPConnection.OnConnected>`
+.. |ref_CALLBACK_ENUMERATE| replace:: :delphi:func:`OnEnumerate <TIPConnection.OnEnumerate>`
+.. |ref_CALLBACK_CONNECTED| replace:: :delphi:func:`OnConnected <TIPConnection.OnConnected>`
 .. |callback| replace:: Callback
+.. |ref_enumerate| replace:: :delphi:func:`Enumerate <TIPConnection.Enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``IPCON_ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``IPCON_ENUMERATION_TYPE_AVAILABLE``
 .. |cb_illuminance| replace:: ``IlluminanceCB``
