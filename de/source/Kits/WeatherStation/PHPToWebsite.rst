@@ -10,26 +10,26 @@ Mit PHP Messwerte live auf einer Webseite anzeigen
    :start-after: >>>intro
    :end-before: <<<intro
 
-
-Goals
+Ziele
 -----
 
-We are setting the following goals for this project:
+Wir setzen die folgenden Ziele für dieses Projekt:
 
-The weather measurements should be
+Die Wetterdaten sollen
 
-* shown on a website,
-* updated every 5 seconds over AJAX and
-* provided by a small PHP script.
+* auf einer Webseite angezeigt werden,
+* alle 5 Sekunden über AJAX aktualisiert werden und
+* per kleinem PHP Skript verfügbar gemacht werden.
 
-In the following we will show step-by-step how this can be achieved.
+Nachfolgend werden wir Schritt-für-Schritt zeigen wie dieses Ziel erreicht 
+werden kann.
 
 
-Step 1: HTML and JavaScript
----------------------------
+Schritt 1: HTML und JavaScript
+------------------------------
 
-Since this project is not about designing an actual website, we will
-leave the HTML as plain as possible:
+Da diese Projekt sich nicht darum dreht eine Webseite zu designen werden wir 
+eine einfache HTML Seite verwenden:
 
 .. code-block:: html
 
@@ -47,8 +47,8 @@ leave the HTML as plain as possible:
       </body>
     </html>
 
-The inner text of the four paragraphs will be replaced by JavaScript with
-data that is provided by a PHP script over AJAX:
+Der innere Text der vier Zeilen wird vom JavaScript durch die Daten vom PHP 
+Script mittels AJAX ersetzt:
 
 .. code-block:: html
 
@@ -72,22 +72,22 @@ data that is provided by a PHP script over AJAX:
       setInterval(updateMeasurements, 5000);
     </script>
 
-We use jQuery to keep it as simple and readable as possible.
-The function ``updateMeasurements`` calls ``WeatherStationWebsite.php`` and
-expects to get ``illuminance``, ``humidity``, ``air_pressure`` and
-``temperature`` as a return in the JSON format.
+Wir nutzen jQuery um dies so einfach und lesbar wie möglich zu halten.
+Die Funktion ``updateMeasurements`` ruft ``WeatherStationWebsite.php`` auf und
+erwartet es ``illuminance``, ``humidity``, ``air_pressure`` und
+``temperature`` im JSON Format zu erhalten.
 
-To show the measurements directly upon opening the website,
-``updateMeasurements`` is called once directly. After that it is called with
-an interval of 5000ms (5s), configured with
+Um die Messwerte direct nach Öffnen der Webseite angezeigt zu bekommen
+wird ``updateMeasurements`` einmal direkt aufgerufen. Anschließend wird es
+mit einem 5000ms (5s) Intervall aufgerufen, zuvor konfiguriert per
 ``setInterval(updateMeasurements, 5000)``.
 
 
-Step 2: PHP
------------
+Schritt 2: PHP
+--------------
 
-The PHP script itself is quite simple, we just need to initialize the
-Bricklets:
+Das PHP Skript selbst ist sehr einfach, es müssen nur die Bricklets 
+initialisiert werden:
 
 .. code-block:: php
 
@@ -112,7 +112,12 @@ Bricklets:
 
     ?>
 
-Then get the values and package them in a response array:
+
+Hier müssen die UIDs ("apy", "7bA" und "d99") durch die UIDs von den eigenen
+Bricklets ersetzt werden.
+
+
+Danach müssen die Werte abgerufen werden und in einem Array gespeichert werden.
 
 .. code-block:: php
 
@@ -132,10 +137,8 @@ Then get the values and package them in a response array:
 
     ?>
 
-Here you have to change the UIDs ("apy", "7bA" and "d99") by the UIDs
-of your own Bricklets.
 
-Lastly, we print the response in JSON format:
+Zum Schluss muss nurnoch die Antwort im JSON format ausgegeben werden:
 
 .. code-block:: php
 
@@ -146,21 +149,21 @@ Lastly, we print the response in JSON format:
     ?>
 
 
-Step 3: Everything put together
--------------------------------
+Schritt 3: Alles zusammenfügen
+------------------------------
 
-That's it! Now we have to put the HTML and the PHP file in a directory
-that is served by a webserver, such as Apache.
+Das war es! Zum Schluss muss nurnoch das HTML und die PHP Datei ein Verzeichnis 
+gelegt werden das von einem Webserver wie Apache bedient wird.
 
-If you haven't done anything like this, you should take a look at the
+Wenn es hierbei Probleme gibt lohnt sich ein Blick in den
 `PHP installation guide <http://php.net/manual/en/install.php>`__.
 
-This was tested on a Ubuntu machine, so we have simply installed PHP
-and apache via apt-get::
+Wir haben dies auf einem Ubuntu Rechner getestet. Hier konnten wir
+PHP und Apache einfach per apt-get installieren::
 
     apt-get install apache2 php5
 
-and put both of the files in ``/var/www/``.
+und beide Datein unter ``/var/www/`` speichern.
 
 .. image:: /Images/Kits/weather_station_website_orig.jpg
    :scale: 100 %

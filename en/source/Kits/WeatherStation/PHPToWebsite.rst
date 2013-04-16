@@ -112,7 +112,10 @@ Bricklets:
 
     ?>
 
-Then get the values and package them in a response array:
+Here you have to change the UIDs ("apy", "7bA" and "d99") by the UIDs
+of your own Bricklets.
+
+After that get the values and package them in a response array:
 
 .. code-block:: php
 
@@ -132,8 +135,6 @@ Then get the values and package them in a response array:
 
     ?>
 
-Here you have to change the UIDs ("apy", "7bA" and "d99") by the UIDs
-of your own Bricklets.
 
 Lastly, we print the response in JSON format:
 
