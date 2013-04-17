@@ -151,7 +151,7 @@ Anzeige von Statistiken mit Umschaltung per Taster
 
 Da das :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` über vier Taster verfügt
 können wir die erste Anwendung um die Anzeige weiterer Daten erweitern
-indem diese mit den Tastern durchgeschalten werden.
+indem diese mit den Tastern durchgeschaltet werden.
 
 .. image:: /Images/Kits/weather_station_lcd_all_orig.jpg
    :scale: 100 %

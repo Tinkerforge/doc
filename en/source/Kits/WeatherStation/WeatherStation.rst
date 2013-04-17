@@ -97,11 +97,13 @@ to add new holes or slots or similar if needed.
 Basic Weather Station
 ^^^^^^^^^^^^^^^^^^^^^
 
-The basic Weather Station Kit comes with Ambient Light, Barometer, 
-Humidity and LCD 20x4 Bricklet, Master Brick, the Weather Station
-case including a replacement side element for a DC Jack adapter,
-Bricklet cables and USB cable as well as lots of screws, spacers,
-nuts and washers.
+The basic Weather Station Kit comes with :ref:`Ambient Light
+<ambient_light_bricklet>`, :ref:`Barometer <barometer_bricklet>`,
+:ref:`Humidity <humidity_bricklet>` and :ref:`LCD 20x4 Bricklet
+<lcd_20x4_bricklet>`, :ref:`Master Brick <master_brick>`, the Weather Station
+case including a replacement side element for a :ref:`DC Jack Adapter
+<dc_jack_adapter>`, Bricklet cables and USB cable as well as lots of screws,
+spacers, nuts and washers.
 
 .. image:: /Images/Kits/weather_station_content_350.jpg
    :scale: 100 %
