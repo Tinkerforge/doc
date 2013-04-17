@@ -43,6 +43,17 @@ Starter Kit: Weather Station
 	}}
 	{{ tfdocend() }}
 
+Features
+--------
+
+* Fully-fledged open source weather station.
+* Measure Temperature, Humidity, Air Pressure and Illuminance.
+* Control over USB, Wi-Fi or with Raspberry Pi.
+* Modifiable with more buttons, more sensors and better software.
+
+Description
+-----------
+
 The *Starter Kit: Weather Station* is a fully-fledged open source weather
 station. It measures temperature, humidity, air pressure and illuminance
 with high precision.
@@ -65,6 +76,32 @@ Programming of the weather station can be done with all of the available
 bindings (|bindings|). Example implementations for each of the languages are
 available, this will give you a starting point into the programming with 
 Tinkerforge.
+
+Technical Specifications
+------------------------
+
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Air Pressure                      10mbar - 1200mbar in 0.012mbar steps
+Illumination                      0lux - 900lux in 0.1lux steps, 12bit resolution
+Relative Humidity                 0% RH - 10% RH in 0.1% RH steps
+Temperature                       -40°C - 85°C in 0.01°C steps
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)            240 x 46 x 100mm (9.45 x 1.81 x 3.94")
+Weight                            376g
+================================  ============================================================
+
+
+Resources
+---------
+
+* Weather Station case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
+* Example source code *Write to LCD* (Download: `C <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/c>`__, `C# <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/csharp>`__, `Delphi <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/delphi>`__, `Java <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/java>`__, `PHP <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/php>`__, `Python <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/python>`__, `Ruby <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/ruby>`__, `Visual Basic .NET <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/vbnet>`__)
+* Example source code *Cosm* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/cosm/python>`__)
+* Example source code *Website* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
+* Example source code *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
 
 Firmware updating and first tests
 ---------------------------------
