@@ -28,36 +28,37 @@ Starterkit: Wetterstation
 	}}
 	{{ tfdocend() }}
 
-Das *Starter Kit: Wetterstation* ist eine vollwertige Open Source Wetterstation.
-Es misst Temperature, Luftfeuchtigkeit, Luftdruck und Helligkeit mit hoher 
+Das *Starterkit: Wetterstation* ist eine vollwertige Open Source Wetterstation.
+Sie misst Temperatur, Luftfeuchtigkeit, Luftdruck und Helligkeit mit hoher
 Präzision.
 
 Sie kann Über einen PC oder :ref:`Raspberry Pi <embedded_raspberry_pi>` 
-über USB oder, falls eine :ref:`WIFI Extension <wifi_extension>` hinzugefügt 
-wird über Wi-Fi gesteuert werden. Die Messwerte können auf einem 20x4 Zeichen 
+über USB oder, falls eine :ref:`WIFI Extension <wifi_extension>` eingebaut
+wird, auch über Wi-Fi gesteuert werden. Die Messwerte können auf einem 20x4 Zeichen
 LCD angezeigt, auf einer Webseite oder z.B. auf `Cosm <https://cosm.com/>`__ 
 hochgeladen werden. Über vier Taster auf dem 
 :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` ist es möglich zwischen 
 verschiedenen Modi umzuschalten.
 
 Das Kit ermöglicht es nach eigenen Wünschen sowohl Soft- als auch Hardware
-zu gestalten. Das Gehäuse besteht aus bastelfreundlichen PMMA und ist einfach
+zu gestalten. Das Gehäuse besteht aus bastelfreundlichem PMMA und ist einfach
 zu bearbeiten. Zusätzlich sind bereits Bohrlöcher für 
 :ref:`Analog In <analog_in_bricklet>` und :ref:`IO-4 <io4_bricklet>` Bricklets 
-vorhanden. So können auch noch weitere Sensoren (Anemometer, Pluviometer etc) 
+vorhanden. So können auch noch weitere Sensoren (Anemometer, Pluviometer etc.)
 angeschlossen werden.
 
 Die Wetterstation kann über alle verfügbaren Bindings (|bindings|) 
 programmiert werden. Beispiele Implementierungen für alle Programmiersprachen 
 erleichtern den Einstieg in die Programmierung.
 
+
 Firmware aktualisieren und erste Tests
 --------------------------------------
 
-Im ersten Schritt sollten die Bricks und Bricklets ausprobiert werden
+Im ersten Schritt sollten die Bricks und Bricklets ausprobiert
 und die Firmwares ggf. aktualisiert werden.
 
-Dazu sollte der :ref:`Brick Daemon <brickd_installation>` und der
+Dazu müssen der :ref:`Brick Daemon <brickd_installation>` und der
 :ref:`Brick Viewer <brickv_installation>` installiert werden. 
 Schließe alle Bricklets an das Master Brick an und verbinde es per USB mit
 dem PC. Anschließend kann über den Brick Viewer bestimmt werden, ob alle 
@@ -67,7 +68,7 @@ Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
 
 .. image:: /Images/Kits/weather_station_update_350.jpg
    :scale: 100 %
-   :alt: Weather Station update in Brick Viewer
+   :alt: Wetterstation mittels Brick Viewer aktualisieren
    :align: center
    :target: ../../_images/Kits/weather_station_update_orig.jpg
 
@@ -312,7 +313,7 @@ Anzeige von Statistiken mit Umschaltung per Taster
 
 Da das :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` über vier Taster verfügt
 können wir die erste Anwendung um die Anzeige weiterer Daten erweitern
-indem diese mit den Tastern durchgeschalten werden.
+indem diese mit den Tastern durchgeschaltet werden.
 
 .. image:: /Images/Kits/weather_station_lcd_all_orig.jpg
    :scale: 100 %
