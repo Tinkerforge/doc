@@ -395,6 +395,10 @@ Eine Beispiel-Implementierung mit Schritt-für-Schritt Instruktionen
 die die Wetterdaten auf Cosm veröffentlicht is verfügbar
 in :ref:`Python <starter_kit_weather_station_cosm>`.
 
+Die Wetterstation in unserem Labor hat den Cosm Feed
+`125881 <https://cosm.com/feeds/125881>`__. Viel Spass beim
+überprüfen unserer Arbeitsbedingungen ;-)!
+
 Live-Anzeige von Messdaten auf einer Webseite
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

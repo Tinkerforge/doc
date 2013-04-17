@@ -393,6 +393,9 @@ An example implementation with step-by-step instructions that shares the
 weather data with Cosm is available
 in :ref:`Python <starter_kit_weather_station_cosm>`.
 
+The Weather Station in our laboratory has the Cosm feed 
+`125881 <https://cosm.com/feeds/125881>`__.
+
 Embed Live Measurements on Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
