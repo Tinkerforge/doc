@@ -129,7 +129,7 @@ IO-16 Bricklet.
 
 The following example shows how to call the
 :tcpip:func:`get_humidity <Humidity.get_humidity>` function of a Humidity
-Bricklet with UID "b1Q" (Base58) or 33688 (integer). The corresponding 
+Bricklet with UID "b1Q" (Base58) or 33688 (integer). The corresponding
 request packet has
 
 * UID 33688 as uint32 (0x98 0x83 0x00 0x00),
@@ -143,7 +143,7 @@ and an empty payload. Its hex dump looks like this::
   0000   98 83 00 00 08 01 18 00                          .. ......
 
 The corresponding response packet can be identified by the UID,
-the function ID and the sequence number as they will have the same values 
+the function ID and the sequence number as they will have the same values
 as the request packet. The response packet has
 
 * UID 33688 as uint32 (0x98 0x83 0x00 0x00),
@@ -158,7 +158,7 @@ The payload contains the
 
 A humidity value of 421 means 42.1 %RH and is just an example. The hex dump of
 the packet looks like this::
-  
+
   0000   98 83 00 00 0a 01 18 00 a5 01                    ..........
 
 If there is no device with the given UID then the request is ignored and
@@ -169,7 +169,7 @@ UID.
 
 There are also specific functions that do not send a response packet under
 normal conditions, for example the :tcpip:func:`set_state <DualRelay.set_state>`
-function of the Dual Relay Bricklet 
+function of the Dual Relay Bricklet
 (assuming the response expected flag is not set).
 
 
@@ -181,8 +181,8 @@ about an event or specific condition.
 
 Most callbacks are disabled by default and have to enabled first.
 For example, the :tcpip:func:`CALLBACK_MAGNETIC_FIELD <IMU.CALLBACK_MAGNETIC_FIELD>`
-callback of the IMU Brick with UID 6wVE7W (3631747890 as integer) can be enabled 
-with a call to :tcpip:func:`IMU.set_magnetic_field_period` with a period larger 0. 
+callback of the IMU Brick with UID 6wVE7W (3631747890 as integer) can be enabled
+with a call to :tcpip:func:`IMU.set_magnetic_field_period` with a period larger 0.
 Afterwards you will periodically receive response packets with
 
 * UID 3631747890 as uint32 (0x32 0x13 0x78 0xd8),
@@ -219,6 +219,28 @@ API
 
 The following functions and callbacks are supported by all devices.
 
+
+.. tcpip:function:: disconnect_probe
+
+ :functionid: 128
+ :emptyrequest: empty payload
+ :noresponse: no response
+
+ Should be send periodically to the :ref:`WIFI Extenstion <wifi_extension>` to
+ improve the detection of Wi-Fi disconnects. Without this a disconnect of the
+ WIFI Extension might no be detected at all due to the way TCP/IP works.
+
+ The :ref:`API bindings <api_bindings>` send a disconnect probe if there was
+ no other packet send or received for at least 5s. Bricks and Bricklets just
+ ignore this function ID.
+
+ As this feature is only useful for the WIFI Extenstion the Brick Daemon just
+ drops incoming packets with this function ID and does not forward them over USB.
+
+ This is a broadcast function and the UID in the packet header has to be
+ set to 0 (broadcast).
+
+
 .. tcpip:function:: enumerate
 
  :functionid: 254
@@ -233,6 +255,19 @@ The following functions and callbacks are supported by all devices.
 
  Use this function to enumerate all connected devices without the need to know
  their UIDs beforehand.
+
+
+.. tcpip:function:: CALLBACK_FORCED_ACK
+
+ :functionid: 0
+ :emptyresponse: empty payload
+
+ The :ref:`WIFI Extenstion <wifi_extension>` can send this callback to affect
+ the TCP/IP buffer handling of clients. This can improve the handling of
+ request packets on the client side.
+
+ This feature is internal and bindings should just drop incoming packets with
+ this function ID.
 
 
 .. tcpip:function:: CALLBACK_ENUMERATE

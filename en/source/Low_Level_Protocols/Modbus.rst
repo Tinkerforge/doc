@@ -57,8 +57,8 @@ As the *Modbus function* we use the public function code 100 in all packets
 The *Sequence number* is incremented by the RS485 master and it is used to
 make sure that every request gets a response.
 
-The *Payload* is the same as specified in the 
-:ref:`TCP/IP protocol specification <llproto_tcpip>`.
+The *Payload* is a request or response packet as specified in
+the :ref:`TCP/IP protocol <llproto_tcpip>`.
 
 Last but not least, the Modbus CRC16 is calculated for every packet, as
 specified in the Modbus RTU specification. 
@@ -113,71 +113,3 @@ with either an empty request if you have no data to transfer or with
 a request with payload if you have data to transfer. This will ensure that
 no messages pile up in the RS485 slave stack and you will get the responses
 to function calls and callbacks with a reasonable latency.
-
-
-.. _llproto_modbus_api:
-
-API
----
-
-The following functions and callbacks are supported by all devices.
-
-.. modbus:function:: enumerate
-
- :functionid: 254
- :emptyrequest: empty payload
- :noresponse: no response
-
- Triggers the :tcpip:func:`CALLBACK_ENUMERATE` callback for all devices
- currently connected to the Brick Daemon.
-
- This is a broadcast function and the UID in the packet header has to be
- set to 0 (broadcast).
-
- Use this function to enumerate all connected devices without the need to know
- their UIDs beforehand.
-
-
-.. modbus:function:: CALLBACK_ENUMERATE
-
- :functionid: 253
- :response uid: char[8]
- :response connected_uid: char[8]
- :response position: char
- :response hardware_version: uint8[3]
- :response firmware_version: uint8[3]
- :response device_identifier: uint16
- :response enumeration_type: uint8
-
- The callback has seven parameters:
-
- * *uid*: The UID of the device.
- * *connected_uid*: UID where the device is connected to. For a Bricklet this
-   will be a UID of the Brick where it is connected to. For a Brick it will be
-   the UID of the bottom Master Brick in the stack. For the bottom Master Brick
-   in a stack this will be "1". With this information it is possible to
-   reconstruct the complete network topology.
- * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
-   'a' - 'd' (position on Brick).
- * *hardware_version*: Major, minor and release number for hardware version.
- * *firmware_version*: Major, minor and release number for firmware version.
- * *device_identifier*: A number that represents the device, instead of the
-   name of the device (easier to parse).
- * *enumeration_type*: Type of enumeration.
-
- Possible enumeration types are:
-
- * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
-   triggered by user).
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
-   (automatically send by Brick after establishing a communication connection).
-   This indicates that the device has potentially lost its previous
-   configuration and needs to be reconfigured.
- * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
-   possible for USB connection). In this case only *uid* and *enumeration_type*
-   are valid.
-
- It should be possible to implement plug-and-play functionality with this
- (as is done in Brick Viewer).
-
- The device identifiers can be found :ref:`here <device_identifier>`.
