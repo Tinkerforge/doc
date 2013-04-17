@@ -98,7 +98,7 @@ Resources
 ---------
 
 * Weather Station case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
-* Example source code *Write to LCD* (Download: `C <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/c>`__, `C# <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/csharp>`__, `Delphi <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/delphi>`__, `Java <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/java>`__, `PHP <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/php>`__, `Python <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/python>`__, `Ruby <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/ruby>`__, `Visual Basic .NET <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/vbnet>`__)
+* Example source code *Write to LCD* (Download: |write_to_lcd_examples_download|)
 * Example source code *Cosm* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/cosm/python>`__)
 * Example source code *Website* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Example source code *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)

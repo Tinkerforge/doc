@@ -14,7 +14,7 @@ Starterkit: Wetterstation
 	{{
 	    tfdocstart("Kits/weather_station_table_350.jpg",
 	               "Kits/weather_station_table_800.jpg",
-	               "Wetterstation: Basikit auf Tisch")
+	               "Wetterstation: Basiskit auf Tisch")
 	}}
 	{{
 	    tfdocimg("Kits/weather_station_wall_far_100.jpg",
@@ -29,7 +29,7 @@ Starterkit: Wetterstation
 	{{
 	    tfdocimg("Kits/weather_station_cosm_graphs_100.jpg",
 	             "Kits/weather_station_cosm_graphs_800.jpg",
-	             "Wetterstation: Cosm graphen")
+	             "Wetterstation: Cosm-Graphen")
 	}}
 	{{
 	    tfdocimg("Kits/weather_station_lcd_all_100.jpg",
@@ -83,13 +83,13 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert 
 ================================  ============================================================
-Luftdruck                         10mbar - 1200mbar in 0.012mbar Schritten
-Beleuchtungsstärke                0lux - 900lux in 0.1lux Schritten
-Relative Luftfeuchtigkeit         0% RH - 10% RH in 0.1% RH Schritten
-Temperatur                        -40°C - 85°C in 0.01°C Schritten
+Luftdruck                         10mbar - 1200mbar in 0,012mbar Schritten
+Beleuchtungsstärke                0Lux - 900Lux in 0,1Lux Schritten
+Relative Luftfeuchtigkeit         0% RH - 10% RH in 0,1% RH Schritten
+Temperatur                        -40°C - 85°C in 0,01°C Schritten
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           240 x 46 x 100mm (9.45 x 1.81 x 3.94")
+Abmessungen (B x T x H)           240 x 46 x 100mm (9,45 x 1,81 x 3,94")
 Gewicht                           376g
 ================================  ============================================================
 
@@ -97,11 +97,12 @@ Gewicht                           376g
 Ressourcen
 ----------
 
-* Wetterstation-Gehäuse FreeCAD CAD files (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
-* Beispiel Source Code *Write to LCD* (Download: `C <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/c>`__, `C# <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/csharp>`__, `Delphi <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/delphi>`__, `Java <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/java>`__, `PHP <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/php>`__, `Python <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/python>`__, `Ruby <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/ruby>`__, `Visual Basic .NET <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/vbnet>`__)
-* Beispiel Source Code *Cosm* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/cosm/python>`__)
-* Beispiel Source Code *Website* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
-* Beispiel Source Code *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
+* Wetterstationsgehäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
+* Beispielquelltexte *Write to LCD* (Download: |write_to_lcd_examples_download|)
+* Beispielquelltext *Cosm* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/cosm/python>`__)
+* Beispielquelltext *Webseite* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
+* Beispielquelltext *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
+
 
 Firmware aktualisieren und erste Tests
 --------------------------------------

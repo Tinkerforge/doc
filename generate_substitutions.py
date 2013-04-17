@@ -251,6 +251,24 @@ weather_station_write_to_lcd_example_line = {
 """:ref:`{0} <starter_kit_weather_station_{1}_to_lcd>`"""
 }
 
+weather_station_write_to_lcd_example_download_line = {
+'en':
+"""`{0} <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/{1}>`__""",
+'de':
+"""`{0} <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/{1}>`__"""
+}
+
+weather_station_write_to_lcd_example_downloads = {
+'en':
+"""
+.. |write_to_lcd_examples_download| replace:: {0}
+""",
+'de':
+"""
+.. |write_to_lcd_examples_download| replace:: {0}
+"""
+}
+
 weather_station_write_to_lcd_goals = {
 'en':
 """
@@ -632,6 +650,12 @@ def make_weather_station_substitutions():
         example_lines.append(weather_station_write_to_lcd_example_line[lang].format(binding[1], binding[2]))
 
     substitutions += weather_station_write_to_lcd_examples[lang].format(', '.join(example_lines))
+
+    example_download_lines = []
+    for binding in weather_station_bindings:
+        example_download_lines.append(weather_station_write_to_lcd_example_download_line[lang].format(binding[1], binding[2]))
+
+    substitutions += weather_station_write_to_lcd_example_downloads[lang].format(', '.join(example_download_lines))
 
     return substitutions
 
