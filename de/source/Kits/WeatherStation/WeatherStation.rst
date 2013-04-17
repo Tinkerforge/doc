@@ -141,7 +141,6 @@ Position zu haben um gute Messungen zu erhalten.
 .. image:: /Images/Kits/weather_station_construction_top_350.jpg
    :scale: 100 %
    :alt: Wetterstationsaufbau Schritt 2 (Basis Version)
-   :alt: Basic Weather Station construction step 2
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_1200.jpg
 
