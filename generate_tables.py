@@ -504,8 +504,7 @@ def make_index_table_ipcon():
 """
     row_head = '  * :ref:`IP Connection <api_bindings_ip_connection>` | '
     row_cell_ipcon = ':ref:`{0} <ipcon_{1}>`'
-    row_cell_llproto = ':ref:`{0} <llproto_{1}_api>`'
-    #* :ref:`IP Connection <api_bindings_ip_connection>` | :ref:`Modbus <llproto_modbus_api>`, :ref:`TCP/IP <llproto_tcpip_api>`, :ref:`C/C++ <ipcon_c>`, :ref:`C# <ipcon_csharp>`, :ref:`Delphi <ipcon_delphi>`, :ref:`Java <ipcon_java>`, :ref:`PHP <ipcon_php>`, :ref:`Python <ipcon_python>`, :ref:`Ruby <ipcon_ruby>`
+    row_cell_llproto = ':ref:`{0} <llproto_{1}>`'
     cells = []
 
     for binding in bindings:
