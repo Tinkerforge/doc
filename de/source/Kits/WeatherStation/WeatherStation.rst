@@ -247,7 +247,7 @@ eine :ref:`Step-Down Power Supply <step_down_power_supply>` zusammen mit
 einem :ref:`DC Jack Adapter <dc_jack_adapter>` nutzen um die Station mit Strom
 zu versorgen. Als Alternative wäre es auch möglich die Station über eine
 USB Power Supply zu versorgen, dann wären DC Jack Adapter und Step-Down
-Power Supply nicht notwenig.
+Power Supply nicht notwendig.
 
 Wir starten damit den Stapel, bestehend aus Step-Down Power Supply,
 Master Brick und WIFI Extension auf die Rückseite des Gehäuses zu schrauben.
@@ -262,7 +262,7 @@ auch ohne Abstandsbolzen direkt auf die Rückseite geschraubt werden kann.
 
 Der DC Jack Adapter kann auf die Rückseite mit einem 21mm Abstandshalter 
 aufgeschraubt werden. Dieser wird aus einem 9mm und einem 12mm Abstandshalter 
-aufgebaut. Dieser Abstandshalter wird wiederrum über eine Schraube an der 
+aufgebaut. Dieser Abstandshalter wird wiederum über eine Schraube an der
 Rückseite des Gehäuses geschraubt. Der DC Jack Adapter wird mit einer Mutter
 befestigt.
 
@@ -293,10 +293,18 @@ Die Wetterstation kann über ein Embedded Board wie z.B. das Raspberry Pi
 gesteuert werden. Das Raspberry Pi kann direkt in das Gehäuse eingebaut werden
 auch wenn es nicht einfach ist alles zu integrieren.
 
-Wir installieren ein Master Brick, eine Step-Down Power Supply, ein DC Jack
-Adapter und das Raspberry Pi in dem Gehäuse. Das Raspberry Pi (und das Master 
-Brick) werden über den DC Jack Adapter durch die Step-Down Power Supply 
-versorgt.
+We will put a :ref:`Master Brick <master_brick>`, 
+a ref:`Step-Down Power Supply <step-down>` , a :ref:`DC Jack
+Adapter <dc_jack_adapter>` and 
+the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will 
+be powered over the DC Jack Adapter by the Step-Down Power Supply.
+
+
+Wir installieren ein :ref:`Master Brick <master_brick>`, 
+eine ref:`Step-Down Power Supply <step-down>`, ein  :ref:`DC Jack
+Adapter <dc_jack_adapter>`  und das Raspberry Pi in dem Gehäuse. 
+Das Raspberry Pi (und das Master Brick) werden über den DC Jack Adapter durch 
+die Step-Down Power Supply versorgt.
 
 Wie der DC Jack Adapter befestigt werden kann ist oben beschrieben
 (WLAN Wetterstation).
@@ -437,6 +445,6 @@ Zusätzlich Erweiterungen
 ------------------------
 
 Gerne führen wir hier Mods, Erweiterungen oder Verbesserungen der Wetterstation 
-auf. Bitte gebt uns bescheid, wir verlinken hier gerne eure Projekte.
+auf. Bitte gebt uns Bescheid, wir verlinken hier gerne eure Projekte.
 
 .. FIXME: Regenmesser, windgeschwindigkeit etc

@@ -291,7 +291,9 @@ It is possible to control the Weather Station with an embedded board like
 the Raspberry Pi. You can put the Raspberry Pi in the case, despite
 it is a bit tricky to get everything in the case.
 
-We will put a Master Brick, a Step-Down Power Supply, a DC Jack Adapter and 
+We will put a :ref:`Master Brick <master_brick>`, 
+a ref:`Step-Down Power Supply <step-down>` , a :ref:`DC Jack
+Adapter <dc_jack_adapter>` and 
 the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will 
 be powered over the DC Jack Adapter by the Step-Down Power Supply.
 
