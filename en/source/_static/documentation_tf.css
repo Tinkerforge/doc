@@ -562,9 +562,14 @@ div.center_table table tbody tr td{
 	float: left;
 }
 
+#gallery {
+	padding-top: 5px;
+}
+
 #gallery ul {
 	display: block;
 	width: 210px;
+	padding-left: 0;
 }
 
 div.tfdocimages a {
