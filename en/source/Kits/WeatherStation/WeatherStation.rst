@@ -134,7 +134,7 @@ Humidity and Barometer Bricklet are attached to the front side of the case.
 We screw them to the inside with the sensors facing to the outside. For that
 we use the 10mm spacers and screws from the inside as well as the outside.
 
-This way Weather Station case is open enough and there is enough space 
+This way the Weather Station case is open enough and there is enough space 
 between the sensors and the case to again allow good measurements. If you intend
 to attach something big on the bottom side, you can attach the Humidity and
 Barometer Bricklets the same way as the Ambient Light Bricklet to save space.
@@ -210,17 +210,41 @@ missing screws. Thats it, we are done!
 Wi-Fi Weather Station
 ^^^^^^^^^^^^^^^^^^^^^
 
+The Weather Station case is big enough to add a WIFI Extension for wireless
+controlling. In this tutorial we will use the Step-Down Power Supply together
+with a DC Jack Adapter to power the stack. It would also be possible to
+power the stack with a USB Power Supply, in this case Step-Down Power Supply
+and DC Jack Adapter are not needed.
+
+We will start by mounting a stack consisting of Step-Down Power Supply,
+Msater Brick and WIFI Extension to the back side of the case. There is a 
+slot in the case where solder bumps of the Step-Down Power Supply are,
+so it is possible to mount the Step-Down Power Supply directly flush
+to the case.
+
 .. image:: /Images/Kits/weather_station_construction_wifi_stack_350.jpg
    :scale: 100 %
    :alt: Wi-Fi Weather Station construction step 1
    :align: center
    :target: ../../_images/Kits/weather_station_construction_wifi_stack_1200.jpg
 
+The DC Jack Adapter can be mounted to the back side of the case with a single
+21mm long spacer. The 21mm long spacer can be constructed out of one 9mm spacer
+and one 12mm spacer. It is screwed to the case on the bottom with a screw and
+to the DC Jack Adapter with a nut.
+
+If it is mounted correctly, the DC Jack Adapter should fit in the side part
+of the case.
+
 .. image:: /Images/Kits/weather_station_construction_wifi_dc_jack_350.jpg
    :scale: 100 %
    :alt: Wi-Fi Weather Station construction step 2
    :align: center
    :target: ../../_images/Kits/weather_station_construction_wifi_dc_jack_1200.jpg
+
+Thats it! We can now again mount the front of the case to the back. If you
+use an antenna from the Tinkerforge shop, you need to either use the large
+or the external antenna. The small antenna does not fit.
 
 .. image:: /Images/Kits/weather_station_construction_wifi_ready_350.jpg
    :scale: 100 %
@@ -232,7 +256,50 @@ Wi-Fi Weather Station
 Raspberry Pi Weather Station
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO
+It is possible to control the Weather Station with a Raspberry Pi and put the
+Raspberry Pi in the case. It is a bit tricky to get everything in the case.
+
+We will put a Master Brick, a Step-Down Power Supply, a DC Jack Adapter and 
+the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will 
+be powered over the DC Jack Adapter by the Step-Down Power Supply.
+
+How to mount the DC Jack Adapter in the case can be seen above 
+(Wi-Fi Weather Station).
+
+The Step-Down Power Supply (with Master Brick on top) is mounted on 10mm 
+spacers. We can put the SD card below the Step-Down Power Supply,
+the Micrco USB connector goes left from the Step-Down Power Supply
+spacers. There are slots in the back side of the case that can be used
+to hold the Raspberry Pi with cable ties.
+
+The green 5V output of the Step-Down Power Supply is connected to the Micro
+USB input of the Raspberry Pi to power it. The black connector of the
+Step-Down Power Supply is connected to the DC Jack Adapter and
+the Mini USB connector of the Master Brick is connected to the USB connector
+of the Raspberry Pi by a small Mini USB cable.
+
+.. image:: /Images/Kits/weather_station_construction_rpi_front_350.jpg
+   :scale: 100 %
+   :alt: Raspberry Pi Weather Station construction step 1
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_rpi_front_1200.jpg
+
+From the back side we can see how the Raspberry Pi fits in. 
+
+.. image:: /Images/Kits/weather_station_construction_rpi_back_350.jpg
+   :scale: 100 %
+   :alt: Raspberry Pi Weather Station construction step 2
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_rpi_back_1200.jpg
+
+The way the
+Raspberry Pi is mounted in the images allows to easily connect an Ethernet
+cable to the Raspberry Pi. You can also mount the Raspberry Pi the other
+way around (turned 180°). Then you can use a smaller Mini USB cable, but
+the Ethernet port is obstructed. 
+
+Another possible mounting option is to put the Raspberry Pi on the outside of 
+the back side of the case.
 
 RS485, Ethernet, etc.
 ^^^^^^^^^^^^^^^^^^^^^
