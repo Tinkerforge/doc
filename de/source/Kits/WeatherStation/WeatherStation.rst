@@ -278,10 +278,18 @@ Die Wetterstation kann über ein Embedded Board wie z.B. das Raspberry Pi
 gesteuert werden. Das Raspberry Pi kann direkt in das Gehäuse eingebaut werden
 auch wenn es nicht einfach ist alles zu integrieren.
 
-Wir installieren ein Master Brick, eine Step-Down Power Supply, ein DC Jack
-Adapter und das Raspberry Pi in dem Gehäuse. Das Raspberry Pi (und das Master 
-Brick) werden über den DC Jack Adapter durch die Step-Down Power Supply 
-versorgt.
+We will put a :ref:`Master Brick <master_brick>`, 
+a ref:`Step-Down Power Supply <step-down>` , a :ref:`DC Jack
+Adapter <dc_jack_adapter>` and 
+the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will 
+be powered over the DC Jack Adapter by the Step-Down Power Supply.
+
+
+Wir installieren ein :ref:`Master Brick <master_brick>`, 
+eine ref:`Step-Down Power Supply <step-down>`, ein  :ref:`DC Jack
+Adapter <dc_jack_adapter>`  und das Raspberry Pi in dem Gehäuse. 
+Das Raspberry Pi (und das Master Brick) werden über den DC Jack Adapter durch 
+die Step-Down Power Supply versorgt.
 
 Wie der DC Jack Adapter befestigt werden kann ist oben beschrieben
 (WLAN Wetterstation).
