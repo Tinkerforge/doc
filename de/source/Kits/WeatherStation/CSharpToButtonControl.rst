@@ -123,7 +123,7 @@ Es gibt zwei Gründe warum die Nutzung dieses Ansatzes Sinn macht:
    werden gespeichert und können so für Statistiken genutzt werden.
 2. Durch das Arbeiten mit Callbacks und einen separaten Timer mit einem 1s
    Intervall können auch kurze Verbindungsabbrüche oder ähnliches überbrückt
-   werden. Zum Beispiel: Wenn die Wetterstation über Wi-Fi gesteuert wird und
+   werden. Zum Beispiel: Wenn die Wetterstation über WLAN gesteuert wird und
    diese Verbindung für 30s unterbrochen ist, wird einfach der letzte Wert 
    benutzt der vor diesen 30s empfangen wurde. Hätten wir Getters hierfür 
    verwendet, so hätten wir Timeouts für jede Messung behandeln müssen. Da 
@@ -133,7 +133,7 @@ Es gibt zwei Gründe warum die Nutzung dieses Ansatzes Sinn macht:
 Schritt 2: Kontrolle über Taster
 --------------------------------
 
-Um über die LCD-Taster steuern zu können muss der ButtonPressed Callback zur
+Um über die LCD-Taster steuern zu können muss der ``ButtonPressed`` Callback zur
 Initialisierung hinzugefügt werden:
 
 .. code-block:: csharp
@@ -191,7 +191,7 @@ Die vier Modi sind:
 * Graph: Zeige einen 24h Graphen von jeder Messung an. Durch mehrmaliges 
   drücken des Tasters kann zwischen den Messungen gewechselt werden.
 * MinMaxAvg: Zeigt Minimums-, Maximums- und den Durchschnittswert jeder Messung
-  an. Auch hierbei ist es möglich über einen erneuten Tasterdruck zwischen den
+  an. Auch hierbei ist es möglich über einen erneuten Tastendruck zwischen den
   Messwerten zu wechseln.
 * Time: Zeigt die aktuelle Uhrzeit und das Datum an.
 
@@ -205,7 +205,7 @@ Die Implementierung der vier Modi:
 Standardmodus
 ^^^^^^^^^^^^^
 
-Im Standard-Modus zeigen wir nur die Messwerte an:
+Im Standardmodus zeigen wir nur die Messwerte an:
 
 .. code-block:: csharp
 
@@ -226,7 +226,7 @@ Im Standard-Modus zeigen wir nur die Messwerte an:
 
 .. image:: /Images/Kits/weather_station_lcd_standard_350.jpg
    :scale: 100 %
-   :alt: Standard Mode
+   :alt: Standardmodus
    :align: center
    :target: ../../_images/Kits/weather_station_lcd_standard_1000.jpg
 

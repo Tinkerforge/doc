@@ -34,7 +34,7 @@ Präzision.
 
 Sie kann Über einen PC oder :ref:`Raspberry Pi <embedded_raspberry_pi>` 
 über USB oder, falls eine :ref:`WIFI Extension <wifi_extension>` eingebaut
-wird, auch über Wi-Fi gesteuert werden. Die Messwerte können auf einem 20x4 Zeichen
+wird, auch über WLAN gesteuert werden. Die Messwerte können auf einem 20x4 Zeichen
 LCD angezeigt, auf einer Webseite oder z.B. auf `Cosm <https://cosm.com/>`__ 
 hochgeladen werden. Über vier Taster auf dem 
 :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` ist es möglich zwischen 
@@ -344,8 +344,8 @@ Möglichkeiten:
 
 * USB Verbindung zu einem PC: Installiere Brickd und die Anwendung auf dem PC
   und verbinde das Master Brick per USB
-* Wi-Fi Verbindung zu einem PC: Installiere die Anwendung auf dem PC und
-  Verbinde die Wetterstation direct per Wi-Fi oder über einen Accesspoint.
+* WLAN Verbindung zu einem PC: Installiere die Anwendung auf dem PC und
+  Verbinde die Wetterstation direct per WLAN oder über einen Accesspoint.
 * Raspberry Pi oder ein anderes Embedded Board integriert in die Wetterstation:
   Installiere Brickd  und die Anwendung auf dem Embedded Board und verbinde das
   Master Brick der Wetterstation per USB.

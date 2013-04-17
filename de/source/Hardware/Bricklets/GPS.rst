@@ -62,7 +62,7 @@ Das verwendete GPS Modul ist optimiert auf eine sehr kurze Zeit bis
 zum ersten Fix, verfügt über eine hohe Empfindlichkeit (-165dBm) und 
 liefert mit 10Hz Updatefrequenz auch schnell genug Daten für Drohnen o.ä. 
 Eine interne Störunterdrückung verbessert den Empfang wenn Bluetooth- 
-oder Wi-Fi-Geräte in der Nähe sind.
+oder WLAN-Geräte in der Nähe sind.
 
 Technische Spezifikation
 ------------------------

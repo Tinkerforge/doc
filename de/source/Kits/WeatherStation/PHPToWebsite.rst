@@ -138,7 +138,7 @@ Danach müssen die Werte abgerufen werden und in einem Array gespeichert werden.
     ?>
 
 
-Zum Schluss muss nurnoch die Antwort im JSON format ausgegeben werden:
+Zum Schluss muss nur noch die Antwort im JSON Format ausgegeben werden:
 
 .. code-block:: php
 
@@ -152,22 +152,22 @@ Zum Schluss muss nurnoch die Antwort im JSON format ausgegeben werden:
 Schritt 3: Alles zusammenfügen
 ------------------------------
 
-Das war es! Zum Schluss muss nurnoch das HTML und die PHP Datei ein Verzeichnis 
+Das war's! Zum Schluss muss nur noch das HTML und die PHP Datei ein Verzeichnis
 gelegt werden das von einem Webserver wie Apache bedient wird.
 
 Wenn es hierbei Probleme gibt lohnt sich ein Blick in den
-`PHP installation guide <http://php.net/manual/en/install.php>`__.
+`PHP Installationsanleitung <http://php.net/manual/de/install.php>`__.
 
 Wir haben dies auf einem Ubuntu Rechner getestet. Hier konnten wir
 PHP und Apache einfach per apt-get installieren::
 
     apt-get install apache2 php5
 
-und beide Datein unter ``/var/www/`` speichern.
+und beide Dateien unter ``/var/www/`` speichern.
 
 .. image:: /Images/Kits/weather_station_website_orig.jpg
    :scale: 100 %
-   :alt: Live Measurements on Website
+   :alt: Messwerte live auf einer Webseite anzeigen
    :align: center
    :target: ../../_images/Kits/weather_station_website_orig.jpg
 

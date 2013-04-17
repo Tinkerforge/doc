@@ -16,7 +16,7 @@ Ziele
 
 Folgende Ziele sind für dieses Projekt gesetzt:
 
-* Die Wetterdaten-Messungen sollen berechnet und auf dem LCD 20x4 Bricklet 
+* Die Wetterdaten sollen gesammelt und auf dem LCD 20x4 Bricklet
   angezeigt werden (siehe :ref:`Mit Python auf das LCD 20x4 Bricklet schreiben Projekt
   <starter_kit_weather_station_python_to_lcd>`.
 * Zusätzlich sollen die Messungen gespeichert und in 5 Minuten Intervallen 
@@ -74,7 +74,7 @@ Werte (min/max) bestimmen.
 Schritte 3: Messwerte speichern
 -------------------------------
 
-Als Anfang erzeugen wir eine einfache Datenhaltung, wobei wir die Werte mit
+Als erstes erstellen wir eine einfache Datenhaltung, wobei wir die Werte mit
 den IDs identifizieren, die wir bei Cosm als Datastream ID hinterlegt haben:
 
 .. code-block:: python
@@ -116,7 +116,7 @@ Wir müssen nur noch die put Funktion aufrufen wenn neue Messwerte ankommen:
         # [...]
         def cb_illuminance(self, illuminance):
             if self.lcd is not None:
-                text = 'Illuminanc %s lx' % self.fmt(illuminance/10.0, 3)
+                text = 'Illuminanc %6.2f lx' % (illuminance/10.0)
                 self.lcd.write_line(0, 0, text)
 
                 # Here we add illuminance to Cosm with ID "AmbientLight"
@@ -151,10 +151,10 @@ weiter definieren:
             threading.Thread(target=self.upload).start()
 
 ``FEED`` und ``API_KEY`` Werte müssen durch die im eigenen Cosm
-account erstellten Werte ersetzt werden. Der Rest ist praktisch aus
-der Cosm API Dokumentation kopiert worden.
+Account erstellten Werte ersetzt werden. Der Rest ist praktisch aus
+der Cosm API Dokumentation kopiert.
 
-Um alle 5 Minuten die Werte zu Aktualisieren wird die update Funktion
+Um alle 5 Minuten die Werte zu Aktualisieren wird die ``update`` Funktion
 in einem Thread gestartet:
 
 .. code-block:: python
@@ -197,7 +197,7 @@ und loggen wenn etwas schief gegangen ist.
 Schritt 5: Alles zusammenfügen
 ------------------------------
 
-Das war es! Natürlich gibt es auch hierbei wieder einige Möglichkeiten der 
+Das war's! Natürlich gibt es auch hierbei wieder einige Möglichkeiten der
 Verbesserung. So kann z.B. das Aktualisieren und Hinzufügen der Daten mit 
 einem Mutex geschützt werden, so dass sichergestellt wird, dass keine Daten 
 hinzugefügt werden während andere hochgeladen werden.
