@@ -12,9 +12,24 @@ Starterkit: Wetterstation
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Kits/weather_station_cosm_graphs_350.jpg",
-	               "Kits/weather_station_cosm_graphs_600.jpg",
-	               "Wetterstation: Cosm Graphen")
+	    tfdocstart("Kits/weather_station_table_350.jpg",
+	               "Kits/weather_station_table_800.jpg",
+	               "Wetterstation: Basikit auf Tisch")
+	}}
+	{{
+	    tfdocimg("Kits/weather_station_wall_far_100.jpg",
+	             "Kits/weather_station_wall_far_800.jpg",
+	             "Wetterstation: Mit WLAN an Wand")
+	}}
+	{{
+	    tfdocimg("Kits/weather_station_wall_near_100.jpg",
+	             "Kits/weather_station_wall_near_800.jpg",
+	             "Wetterstation: Mit WLAN an Wand")
+	}}
+	{{
+	    tfdocimg("Kits/weather_station_cosm_graphs_100.jpg",
+	             "Kits/weather_station_cosm_graphs_800.jpg",
+	             "Wetterstation: Cosm graphen")
 	}}
 	{{
 	    tfdocimg("Kits/weather_station_lcd_all_100.jpg",
@@ -48,8 +63,8 @@ vorhanden. So können auch noch weitere Sensoren (Anemometer, Pluviometer etc.)
 angeschlossen werden.
 
 Die Wetterstation kann über alle verfügbaren Bindings (|bindings|) 
-programmiert werden. Beispiele Implementierungen für alle Programmiersprachen 
-erleichtern den Einstieg in die Programmierung.
+programmiert werden. Beispielimplementierungen für alle Programmiersprachen 
+erleichtern den Einstieg in die Programmierung mit Tinkerforge.
 
 
 Firmware aktualisieren und erste Tests

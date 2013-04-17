@@ -62,8 +62,9 @@ are provided, this gives the possibility to add more sensors (anemometer,
 pluviometer etc). 
 
 Programming of the weather station can be done with all of the available
-bindings (|bindings|). Examples implementations for each language will
-let you easily introduce in the programming.
+bindings (|bindings|). Example implementations for each of the languages are
+available, this will give you a starting point into the programming with 
+Tinkerforge.
 
 Firmware updating and first tests
 ---------------------------------
