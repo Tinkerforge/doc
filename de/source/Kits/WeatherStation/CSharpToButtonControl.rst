@@ -233,7 +233,7 @@ Im Standardmodus zeigen wir nur die Messwerte an:
 Graphmodus
 ^^^^^^^^^^
 
-Im Graph-Modus zeigen wir einen Balkengraphen der letzten 24 Stunden an:
+Im Graphmodus zeigen wir einen Balkengrafik der letzten 24 Stunden an:
 
 .. code-block:: csharp
 
@@ -266,8 +266,8 @@ Im Graph-Modus zeigen wir einen Balkengraphen der letzten 24 Stunden an:
         }
     }
 
-Wir gehen hier nicht weiter ins Detail. Die Methoden wie die Graphen 
-berechnet werden können zum Schluss im vollständigen Programm betrachtet 
+Wir gehen hier nicht weiter ins Detail. Die Methoden, wie die Graphen 
+berechnet werden, können zum Schluss im vollständigen Programm betrachtet 
 werden. Für die Balkengraphen müssen allerdings ein paar Custom-Characters
 bei der Initialisierung konfiguriert werden:
 

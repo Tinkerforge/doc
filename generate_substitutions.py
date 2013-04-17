@@ -227,7 +227,7 @@ Für diese Projekt setzen wir voraus, dass eine {0} Entwicklungsumgebung
 eingerichtet ist und ein grundsätzliches Verständnis der {0} Programmiersprache
 vorhanden ist.
 
-Falls dem nicht der Fall ist sollte `hier <{2}>`__ begonnen werden. Informationen
+Falls dies nicht der Fall ist sollte `hier <{2}>`__ begonnen werden. Informationen
 über die Tinkerforge API sind dann :ref:`hier <api_bindings_{1}>` zu finden.
 <<<intro
 """

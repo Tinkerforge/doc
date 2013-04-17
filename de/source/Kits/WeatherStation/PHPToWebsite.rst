@@ -28,7 +28,7 @@ werden kann.
 Schritt 1: HTML und JavaScript
 ------------------------------
 
-Da diese Projekt sich nicht darum dreht eine Webseite zu designen werden wir 
+Da diese Projekt sich nicht darum dreht eine Webseite zu designen, werden wir 
 eine einfache HTML Seite verwenden:
 
 .. code-block:: html
@@ -77,10 +77,10 @@ Die Funktion ``updateMeasurements`` ruft ``WeatherStationWebsite.php`` auf und
 erwartet es ``illuminance``, ``humidity``, ``air_pressure`` und
 ``temperature`` im JSON Format zu erhalten.
 
-Um die Messwerte direct nach Öffnen der Webseite angezeigt zu bekommen
+Um die Messwerte direct nach dem Öffnen der Webseite angezeigt zu bekommen
 wird ``updateMeasurements`` einmal direkt aufgerufen. Anschließend wird es
-mit einem 5000ms (5s) Intervall aufgerufen, zuvor konfiguriert per
-``setInterval(updateMeasurements, 5000)``.
+mit einem 5000ms (5s) Intervall aufgerufen, das zuvor per
+``setInterval(updateMeasurements, 5000)`` konfiguriert wurde.
 
 
 Schritt 2: PHP
@@ -152,10 +152,10 @@ Zum Schluss muss nur noch die Antwort im JSON Format ausgegeben werden:
 Schritt 3: Alles zusammenfügen
 ------------------------------
 
-Das war's! Zum Schluss muss nur noch das HTML und die PHP Datei ein Verzeichnis
-gelegt werden das von einem Webserver wie Apache bedient wird.
+Das war's! Zum Schluss muss nur noch die HTML und PHP Datei in ein 
+Verzeichnis gelegt werden, das von einem Webserver wie Apache bedient wird.
 
-Wenn es hierbei Probleme gibt lohnt sich ein Blick in den
+Wenn es hierbei Probleme gibt lohnt sich ein Blick in die
 `PHP Installationsanleitung <http://php.net/manual/de/install.php>`__.
 
 Wir haben dies auf einem Ubuntu Rechner getestet. Hier konnten wir

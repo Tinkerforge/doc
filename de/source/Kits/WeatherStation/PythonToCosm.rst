@@ -17,7 +17,7 @@ Ziele
 Folgende Ziele sind für dieses Projekt gesetzt:
 
 * Die Wetterdaten sollen gesammelt und auf dem LCD 20x4 Bricklet
-  angezeigt werden (siehe :ref:`Mit Python auf das LCD 20x4 Bricklet schreiben Projekt
+  angezeigt werden (siehe Projekt: :ref:`Mit Python auf das LCD 20x4 Bricklet schreiben
   <starter_kit_weather_station_python_to_lcd>`.
 * Zusätzlich sollen die Messungen gespeichert und in 5 Minuten Intervallen 
   nach Cosm hochgeladen werden.
@@ -27,7 +27,7 @@ Nachfolgend erklären wir Schritt für Schritt wie diese Ziele erreicht werden k
 Schritt 1: Erstelle und Konfiguriere einen Cosm Account
 -------------------------------------------------------
 
-Um Cosm benutzen zu können muss zuerst ein Cosm Account angelegt werden.
+Um Cosm benutzen zu können, muss zuerst ein Cosm Account angelegt werden.
 Dazu muss `cosm.com <https://cosm.com>`__ besucht werden und sich
 eingeloggt werden.
 
@@ -54,7 +54,7 @@ ein Datastream über `JSON Pakete
 <https://cosm.com/docs/v2/datastream/update.html>`__
 aktualisiert werden können.
 
-Das angegebene Beispiel::
+Das dort angegebene Beispiel::
 
  {
   "current_value":"294",
@@ -67,14 +67,14 @@ wird über HTTP PUT zu ``http://api.cosm.com/v2/feeds/<ID>`` gesendet.
 Der API Key ist im Header des HTTP Requests definiert und die Rückgabe besteht 
 aus dem HTTP Header.
 
-Um Cosm nicht zu spammen sollten wir nur alle 5 Minuten einmal die Werte 
+Um Cosm nicht zu spammen sollten wir nur einmal alle 5 Minuten die Werte 
 aktualisieren. Daher müssen wir die Messwerte speichern und die dazugehörigen
 Werte (min/max) bestimmen.
 
 Schritte 3: Messwerte speichern
 -------------------------------
 
-Als erstes erstellen wir eine einfache Datenhaltung, wobei wir die Werte mit
+Als erstes erstellen wir eine einfache Datenhaltung. Die Werte werden wir mit
 den IDs identifizieren, die wir bei Cosm als Datastream ID hinterlegt haben:
 
 .. code-block:: python
@@ -94,15 +94,15 @@ den IDs identifizieren, die wir bei Cosm als Datastream ID hinterlegt haben:
             except:
                 self.items[identifier] = (value, value, value)
 
-Wir nutzen den letzten Wert, das alte Minimum und Maximum und berechnen
+Wir nutzen den letzten Wert, sowie das alte Minimum und Maximum und berechnen
 daraus die neuen Werte. Wenn noch keine Werte zu der ID gespeichert sind,
 fangen wir die Exception und legen einen neuen Key an.
 
-Als Basis für den Programmcode der Wetterstation kann das :ref:`Mit Python auf
-das LCD 20x4 Bricklet schreiben Projekt <starter_kit_weather_station_python_to_lcd_step_5>`
+Als Basis für den Programmcode der Wetterstation kann das Projekt :ref:`Mit Python auf
+das LCD 20x4 Bricklet schreiben <starter_kit_weather_station_python_to_lcd_step_5>`
 dienen.
 
-Wir müssen nur noch die put Funktion aufrufen wenn neue Messwerte ankommen:
+Wir müssen nun noch die put Funktion aufrufen wenn neue Messwerte ankommen:
 
 .. code-block:: python
 
@@ -124,13 +124,13 @@ Wir müssen nur noch die put Funktion aufrufen wenn neue Messwerte ankommen:
                 log.info('Write to line 0: ' + text)
         # [...]
 
-Dies muss für die anderen Messwerte ebenfalls entsprechend hinzugefügt werden.
+Für alle anderen Messwerte muss dies ebenfalls entsprechend hinzugefügt werden.
 
 Schritt 4: Messwerte hochladen
 ------------------------------
 
-Um die Messwerte hochzuladen müssen wir zuerst alle Namen, URLs, Keys und so 
-weiter definieren:
+Um die Messwerte hochzuladen müssen wir zuerst alle Namen, URLs, Keys etc. 
+definieren:
 
 .. code-block:: python
 
@@ -150,11 +150,11 @@ weiter definieren:
             self.params = "/v2/feeds/" + str(Cosm.FEED)
             threading.Thread(target=self.upload).start()
 
-``FEED`` und ``API_KEY`` Werte müssen durch die im eigenen Cosm
+Die Werte von ``FEED`` und ``API_KEY`` müssen durch die im eigenen Cosm
 Account erstellten Werte ersetzt werden. Der Rest ist praktisch aus
 der Cosm API Dokumentation kopiert.
 
-Um alle 5 Minuten die Werte zu Aktualisieren wird die ``update`` Funktion
+Um alle 5 Minuten die Werte zu Aktualisieren, wird die ``update`` Funktion
 in einem Thread gestartet:
 
 .. code-block:: python
