@@ -238,6 +238,8 @@ die Wetterstation aufgebaut.
    :target: ../../_images/Kits/weather_station_construction_1200.jpg
 
 
+.. _starter_kit_weather_station_construction_wifi:
+
 WLAN Wetterstation
 ^^^^^^^^^^^^^^^^^^
 
@@ -294,13 +296,13 @@ gesteuert werden. Das Raspberry Pi kann direkt in das Gehäuse eingebaut werden
 auch wenn es nicht einfach ist alles zu integrieren.
 
 Wir installieren einen :ref:`Master Brick <master_brick>`, 
-eine :ref:`Step-Down Power Supply <step-down>`, ein :ref:`DC Jack
+eine :ref:`Step-Down Power Supply <step_down_power_supply>`, ein :ref:`DC Jack
 Adapter <dc_jack_adapter>` und das Raspberry Pi im Gehäuse. 
 Das Raspberry Pi (und der Master Brick) werden über den DC Jack Adapter durch 
 die Step-Down Power Supply versorgt.
 
 Wie der DC Jack Adapter befestigt werden kann ist oben beschrieben
-(WLAN Wetterstation).
+(:ref:`starter_kit_weather_station_construction_wifi`).
 
 Die Step-Down Power Supply (mit dem Master Brick obenauf) ist über
 10mm Abstandsbolzen befestigt. Die SD Karte kann dabei unter die Step-Down

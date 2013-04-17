@@ -228,7 +228,7 @@ We can do this while the back and the front part are lying side by side.
    :target: ../../_images/Kits/weather_station_construction_cabling_1200.jpg
 
 After that we just have to put the front side on the back side and add the four
-missing screws. Thats it, we are done!
+missing screws. That's it, we are done!
 
 .. image:: /Images/Kits/weather_station_construction_350.jpg
    :scale: 100 %
@@ -236,6 +236,7 @@ missing screws. Thats it, we are done!
    :align: center
    :target: ../../_images/Kits/weather_station_construction_1200.jpg
 
+.. _starter_kit_weather_station_construction_wifi:
 
 Wi-Fi Weather Station
 ^^^^^^^^^^^^^^^^^^^^^
@@ -273,7 +274,7 @@ of the case.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_wifi_dc_jack_1200.jpg
 
-Thats it! We can now again mount the front of the case to the back. If you
+That's it! We can now again mount the front of the case to the back. If you
 use an antenna from the Tinkerforge shop, you need to either use the large
 or the external antenna. The small antenna does not fit.
 
@@ -292,13 +293,13 @@ the Raspberry Pi. You can put the Raspberry Pi in the case, despite
 it is a bit tricky to get everything in the case.
 
 We will put a :ref:`Master Brick <master_brick>`, 
-a :ref:`Step-Down Power Supply <step-down>` , a :ref:`DC Jack
+a :ref:`Step-Down Power Supply <step_down_power_supply>`, a :ref:`DC Jack
 Adapter <dc_jack_adapter>` and 
 the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will 
 be powered over the DC Jack Adapter by the Step-Down Power Supply.
 
 How to mount the DC Jack Adapter in the case can be seen above 
-(Wi-Fi Weather Station).
+(:ref:`starter_kit_weather_station_construction_wifi`).
 
 The Step-Down Power Supply (with Master Brick on top) is mounted on 10mm 
 spacers. We can put the SD card below the Step-Down Power Supply,
