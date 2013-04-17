@@ -80,7 +80,19 @@ enclosure.
 Construction
 ------------
 
-TODO: Construction introduction: Different extension stages etc blabla
+There is no singular way to build the Weather Station. In the
+following we will show one way to build different extension
+stages. The idea of the Weather Station Starter Kit is, that
+it is easily extensible and modifiable. 
+
+For example: You can put the Bricks and Bricklets on spacers
+(as is mostly shown below), but you can also screw them directly
+to the case to save space. There are several holes that allow
+to mount addition Analog In, Temperature or IO-4 Bricklets to
+read out more sensors. 
+
+The utilzed PMMA plastic is easy to work with, so you will be able
+to add new holes or slots or similar if needed.
 
 Basic Weather Station
 ^^^^^^^^^^^^^^^^^^^^^
@@ -304,7 +316,14 @@ the back side of the case.
 RS485, Ethernet, etc.
 ^^^^^^^^^^^^^^^^^^^^^
 
-Same as Wi-Fi
+We could also control the Weather Station with the RS485 or
+Ethernet Extension. The setup in this case is the same as with the Wi-Fi
+Weather Station, we just have to exchange the WIFI Extension with the
+RS485 or Ethernet Extension.
+
+If the Ethernet Extension is used, the stack can also be powered by PoE.
+in this case the Step-Down Power Supply and the DC Jack Adapter are
+not needed.
 
 Projects
 --------
