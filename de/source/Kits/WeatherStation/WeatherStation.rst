@@ -82,7 +82,17 @@ korrekt funktionieren auch nachdem alles in das Gehäuse geschraubt wurde.
 Konstruktion
 ------------
 
-TODO: Construction introduction: Different extension stages etc blabla
+Es gibt nicht nur eine Art die Wetterstation aufzubauen. Nachfolgend zeigen wir
+den Aufbau verschiedener Varianten. Das Starterkit Wetterstation ist einfach
+zu erweitern oder zu modifizieren. 
+
+Zum Beispiel können Bricks und Bricklets mittels Abstandsbolzen befestigt 
+werden oder auch direkt angeschraubt werden um Platz zu sparen. Es sind
+weitere Bohrlöcher vorgesehen um Analog In, Temperature oder IO-4 Bricklets
+zu befestigen um weitere Sensoren auszulesen.
+
+Das benutzte PMMA Plastik ist einfach zu bearbeiten, so dass falls benötigt
+eigene Bohrlöcher oder Öffnungen geschaffen werden können.
 
 Wetterstation (Basisversion)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -99,8 +109,9 @@ Muttern und Unterlegscheiben.
    :align: center
    :target: ../../_images/Kits/weather_station_content_1200.jpg
 
-Es gibt verschiedene Möglichkeiten das Kit zusammenzuschrauben.
-In dieser Aufbauanleitung stellen wir eine Möglichkeit vor.
+Es gibt verschiedene Möglichkeiten die Bricks und Bricklets
+in dem Gehäuse zu befestigen. In dieser Aufbauanleitung stellen wir eine 
+Möglichkeit vor.
 
 Wir beginnen damit den Master Brick auf die Rückseite zu schrauben.
 Dazu nutzen wir 10mm Abstandsbolzen und Schrauben und schrauben den 
@@ -211,39 +222,113 @@ die Wetterstation aufgebaut.
    :target: ../../_images/Kits/weather_station_construction_1200.jpg
 
 
-Wi-Fi Weather Station
-^^^^^^^^^^^^^^^^^^^^^
+WLAN Wetterstation
+^^^^^^^^^^^^^^^^^^
+
+Die Wetterstation ist groß genug um eine WIFI Extension einzubauen um 
+die Station drahtlos zu steuern. In dieser Anleitung werden wir eine Step-Down 
+Power Supply zusammen mit einem DC Jack Adapter nutzen um die Station mit Strom
+zu versorgen. Als Alternative wäre es auch möglich die Station über eine
+USB Power Supply zu versorgen, dann wären DC Jack Adapter und Step-Down
+Power Supply nicht notwenig.
+
+Wir starter damit den Stapel, bestehend aus Step-Down Power Supply,
+Master Brick und WIFI Extension auf die Rückseite des Gehäuses zu schrauben.
+Es ist eine Aussparung vorhanden damit die Step-Down Power Supply
+auch ohne Abstandsbolzen direkt auf die Rückseite geschraubt werden kann.
 
 .. image:: /Images/Kits/weather_station_construction_wifi_stack_350.jpg
    :scale: 100 %
-   :alt: Wi-Fi Weather Station construction step 1
+   :alt: WLAN Wetterstation Aufbau Schritt 1
    :align: center
    :target: ../../_images/Kits/weather_station_construction_wifi_stack_1200.jpg
 
+Der DC Jack Adapter kann auf die Rückseite mit einem 21mm Abstandshalter 
+aufgeschraubt werden. Dieser wird aus einem 9mm und einem 12mm Abstandshalter 
+aufgebaut. Dieser Abstandshalter wird wiederrum über eine Schraube an der 
+Rückseite des Gehäuses geschraubt. Der DC Jack Adapter wird mit einer Mutter
+befestigt.
+
+Wenn alles korrekt verschraubt ist, sollte der DC Jack Adapter in die 
+Aussparung in dem Seitenteil passen.
+
 .. image:: /Images/Kits/weather_station_construction_wifi_dc_jack_350.jpg
    :scale: 100 %
-   :alt: Wi-Fi Weather Station construction step 2
+   :alt: WLAN Wetterstation Aufbau Schritt 2
    :align: center
    :target: ../../_images/Kits/weather_station_construction_wifi_dc_jack_1200.jpg
 
+Das war es! Wir müssen nun nur wieder die Vorderseite auf die Rückseite 
+schrauben. Falls eine Tinkerforge Antenne genutzt werden soll, so muss dies die 
+große RP-SMA oder die Externe sein. Die kleine Antenne passt nicht.
+
 .. image:: /Images/Kits/weather_station_construction_wifi_ready_350.jpg
    :scale: 100 %
-   :alt: Wi-Fi Weather Station construction step 3
+   :alt: WLAN Wetterstation Aufbau Schritt 3
    :align: center
    :target: ../../_images/Kits/weather_station_construction_wifi_ready_1200.jpg
 
 
-Raspberry Pi Weather Station
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Raspberry Pi Wetterstation
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO
+Die Wetterstation kann über ein Embedded Board wie z.B. das Raspberry Pi
+gesteuert werden. Das Raspberry Pi kann direkt in das Gehäuse eingebaut werden
+auch wenn es nicht einfach ist alles zu integrieren.
+
+Wir installieren ein Master Brick, eine Step-Down Power Supply, ein DC Jack
+Adapter und das Raspberry Pi in dem Gehäuse. Das Raspberry Pi (und das Master 
+Brick) werden über den DC Jack Adapter durch die Step-Down Power Supply 
+versorgt.
+
+Wie der DC Jack Adapter befestigt werden kann ist oben beschrieben
+(WLAN Wetterstation).
+
+Die Step-Down Power Supply (mit dem Master Brick obenauf) ist über
+10mm Abstandsbolzen befestigt. Die SD Karte kann dabei unter die Step-Down
+Power Supply geschoben werden. Der Micro USB Stecker führt dabei links
+an dem Step-Down Power Supply Abstandsbolzen vorbei. Über die Ausschnitte
+im Gehäuse kann das Raspberry Pi mittels Kabelbindern befestigt werden.
+
+Der grüne 5V Ausgang auf der Step-Down Power Supply wird dazu genutzt
+um das Raspberry Pi über einen Micro USB Stecker mit Strom zu versorgen.
+Der schwarze Stecker ist hingegen mit dem DC Jack Adapter verbunden.
+Der Master Brick wird einfach mit einem kurzen Mini USB Kabel an das Raspberry
+Pi angeschlossen.
+
+.. image:: /Images/Kits/weather_station_construction_rpi_front_350.jpg
+   :scale: 100 %
+   :alt: Raspberry Pi Weather Station construction step 1
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_rpi_front_1200.jpg
+
+Auf der Rückansicht sehen wir wie das Raspberry Pi eingebaut wurde.
+
+.. image:: /Images/Kits/weather_station_construction_rpi_back_350.jpg
+   :scale: 100 %
+   :alt: Raspberry Pi Weather Station construction step 2
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_rpi_back_1200.jpg
+
+So wie das Raspberry Pi verbaut wurde kann auch ein Netzwerkkabel angeschlossen 
+werden. Natürlich ist es auch möglich das Raspberry Pi 180° gedreht einzubauen.
+Hierdurch kann ein kürzeres Mini USB Kabel verwendet werden, aber die Ethernet
+Buchse ist nicht mehr so gut zugänglich.
+
+Die Befestigung des Raspberry Pis an der Außenseite der Rückseite stellt eine 
+weitere Möglichkeit dar.
 
 RS485, Ethernet, etc.
 ^^^^^^^^^^^^^^^^^^^^^
 
-Same as Wi-Fi
+Die Wetterstation kann auch über RS485 oder Ethernet Extension
+gesteuert werden. Der Aufbau ist hierbei der selbe wie bei WLAN Wetterstation
+beschrieben, es muss nur die WIFI Extension durch RS485 oder Ethernet Extension
+ausgetauscht werden.
 
-
+Wird die Ethernet Extension benutzt, so kann der Stapel auch gleich
+über das integrierte PoE versorgt werden, so dass Step-Down Power Supply
+und der DC Jack Adapter nicht mehr notwendig sind.
 
 Projekte
 --------

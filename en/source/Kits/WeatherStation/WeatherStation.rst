@@ -231,7 +231,7 @@ power the stack with a USB Power Supply, in this case Step-Down Power Supply
 and DC Jack Adapter are not needed.
 
 We will start by mounting a stack consisting of Step-Down Power Supply,
-Msater Brick and WIFI Extension to the back side of the case. There is a 
+Master Brick and WIFI Extension to the back side of the case. There is a 
 slot in the case where solder bumps of the Step-Down Power Supply are,
 so it is possible to mount the Step-Down Power Supply directly flush
 to the case.
@@ -270,8 +270,9 @@ or the external antenna. The small antenna does not fit.
 Raspberry Pi Weather Station
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-It is possible to control the Weather Station with a Raspberry Pi and put the
-Raspberry Pi in the case. It is a bit tricky to get everything in the case.
+It is possible to control the Weather Station with an embedded board like
+the Raspberry Pi. You can put the Raspberry Pi in the case, despite
+it is a bit tricky to get everything in the case.
 
 We will put a Master Brick, a Step-Down Power Supply, a DC Jack Adapter and 
 the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will 
@@ -282,7 +283,7 @@ How to mount the DC Jack Adapter in the case can be seen above
 
 The Step-Down Power Supply (with Master Brick on top) is mounted on 10mm 
 spacers. We can put the SD card below the Step-Down Power Supply,
-the Micrco USB connector goes left from the Step-Down Power Supply
+the Micro USB connector goes left from the Step-Down Power Supply
 spacers. There are slots in the back side of the case that can be used
 to hold the Raspberry Pi with cable ties.
 
