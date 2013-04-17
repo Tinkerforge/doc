@@ -12,9 +12,24 @@ Starter Kit: Weather Station
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Kits/weather_station_cosm_graphs_350.jpg",
-	               "Kits/weather_station_cosm_graphs_600.jpg",
-	               "Weather Station: Cosm graphs")
+	    tfdocstart("Kits/weather_station_table_350.jpg",
+	               "Kits/weather_station_table_800.jpg",
+	               "Weather Station: Basic Kit on table")
+	}}
+	{{
+	    tfdocimg("Kits/weather_station_wall_far_100.jpg",
+	             "Kits/weather_station_wall_far_800.jpg",
+	             "Weather Station: With Wi-Fi on wall")
+	}}
+	{{
+	    tfdocimg("Kits/weather_station_wall_near_100.jpg",
+	             "Kits/weather_station_wall_near_800.jpg",
+	             "Weather Station: With Wi-Fi on wall")
+	}}
+	{{
+	    tfdocimg("Kits/weather_station_cosm_graphs_100.jpg",
+	             "Kits/weather_station_cosm_graphs_800.jpg",
+	             "Weather Station: Cosm graphs")
 	}}
 	{{
 	    tfdocimg("Kits/weather_station_lcd_all_100.jpg",
@@ -226,10 +241,10 @@ Wi-Fi Weather Station
 
 The Weather Station case is big enough to add a :ref:`WIFI Extension
 <wifi_extension>` for wireless controlling. In this tutorial we will use
-the :ref:`Step-Down Power Supply <step-down>` together with a :ref:`DC Jack
-Adapter <dc_jack_adapter>` to power the stack. It would also be possible to
-power the stack with a USB Power Supply, in this case Step-Down Power Supply
-and DC Jack Adapter are not needed.
+the :ref:`Step-Down Power Supply <step_down_power_supply>` together with
+a :ref:`DC Jack Adapter <dc_jack_adapter>` to power the stack. It would also
+be possible to power the stack with a USB Power Supply, in this case
+Step-Down Power Supply and DC Jack Adapter are not needed.
 
 We will start by mounting a stack consisting of Step-Down Power Supply,
 Master Brick and WIFI Extension to the back side of the case. There is a 
