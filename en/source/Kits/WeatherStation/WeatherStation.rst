@@ -292,7 +292,7 @@ the Raspberry Pi. You can put the Raspberry Pi in the case, despite
 it is a bit tricky to get everything in the case.
 
 We will put a :ref:`Master Brick <master_brick>`, 
-a ref:`Step-Down Power Supply <step-down>` , a :ref:`DC Jack
+a :ref:`Step-Down Power Supply <step-down>` , a :ref:`DC Jack
 Adapter <dc_jack_adapter>` and 
 the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will 
 be powered over the DC Jack Adapter by the Step-Down Power Supply.
@@ -359,12 +359,12 @@ The most obvious application for the Weather Station Starter Kit is to display
 the measurements of the environment on the LCD 20x4 Bricklet. This can be
 done through three different paths:
 
-* USB connection to PC: Install Brickd and application on PC, connect
+* USB connection to PC: Install Brick Daemon and application on PC, connect
   Master Brick of Weather Station to PC via USB.
 * Wi-Fi connection to PC: Install application on PC, connect to
   Weather Station directly over Wi-Fi or through an access point.
 * Raspberry Pi or other embedded board integrated in Weather Station:
-  Install the Brick Daemon and application on embedded board, connect
+  Install Brick Daemon and application on embedded board, connect
   Master Brick of Weather Station to embedded board via USB.
 
 .. batti: link to further enhancement section? how to use rasp with weather station etc.

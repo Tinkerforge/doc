@@ -75,7 +75,7 @@ und die Firmwares ggf. aktualisiert werden.
 
 Dazu müssen der :ref:`Brick Daemon <brickd_installation>` und der
 :ref:`Brick Viewer <brickv_installation>` installiert werden. 
-Schließe alle Bricklets an das Master Brick an und verbinde es per USB mit
+Schließe alle Bricklets an den Master Brick an und verbinde es per USB mit
 dem PC. Anschließend kann über den Brick Viewer bestimmt werden, ob alle 
 Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
 (:ref:`Bricks aktualisieren <brickv_flash_firmware>`,
@@ -89,7 +89,7 @@ Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
 
 Danach sollten mit dem Brick Viewer alle Sensoren überprüft werden. Dazu klickt
 man am besten durch die verschiedenen Tabs und überprüft die Sensorwerte.
-Anschließend ist sichergestellt, dass das Master Brick und alle Bricklets
+Anschließend ist sichergestellt, dass der Master Brick und alle Bricklets
 korrekt funktionieren auch nachdem alles in das Gehäuse geschraubt wurde.
 
 .. batti: screenshot brickv with all tabs?
@@ -293,17 +293,10 @@ Die Wetterstation kann über ein Embedded Board wie z.B. das Raspberry Pi
 gesteuert werden. Das Raspberry Pi kann direkt in das Gehäuse eingebaut werden
 auch wenn es nicht einfach ist alles zu integrieren.
 
-We will put a :ref:`Master Brick <master_brick>`, 
-a ref:`Step-Down Power Supply <step-down>` , a :ref:`DC Jack
-Adapter <dc_jack_adapter>` and 
-the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will 
-be powered over the DC Jack Adapter by the Step-Down Power Supply.
-
-
-Wir installieren ein :ref:`Master Brick <master_brick>`, 
-eine ref:`Step-Down Power Supply <step-down>`, ein  :ref:`DC Jack
-Adapter <dc_jack_adapter>`  und das Raspberry Pi in dem Gehäuse. 
-Das Raspberry Pi (und das Master Brick) werden über den DC Jack Adapter durch 
+Wir installieren einen :ref:`Master Brick <master_brick>`, 
+eine :ref:`Step-Down Power Supply <step-down>`, ein :ref:`DC Jack
+Adapter <dc_jack_adapter>` und das Raspberry Pi im Gehäuse. 
+Das Raspberry Pi (und der Master Brick) werden über den DC Jack Adapter durch 
 die Step-Down Power Supply versorgt.
 
 Wie der DC Jack Adapter befestigt werden kann ist oben beschrieben
@@ -363,12 +356,12 @@ Es gibt verschiedene Anwendungen für die Wetterstation:
 Messwerte auf dem LCD anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die offensichtlichste Anwendung für das Starterkit Wetterstation ist die 
+Die offensichtlichste Anwendung für das Starterkit: Wetterstation ist die
 Anzeige der Umgebungsmesswerte auf dem LCD 20x4 Bricklet. Hierfür gibt es drei 
 Möglichkeiten:
 
-* USB Verbindung zu einem PC: Installiere Brickd und die Anwendung auf dem PC
-  und verbinde das Master Brick per USB
+* USB Verbindung zu einem PC: Installiere den Brick Daemon und die Anwendung
+  auf dem PC und verbinde den Master Brick per USB.
 * WLAN Verbindung zu einem PC: Installiere die Anwendung auf dem PC und
   Verbinde die Wetterstation direct per WLAN oder über einen Accesspoint.
 * Raspberry Pi oder ein anderes Embedded Board integriert in die Wetterstation:
