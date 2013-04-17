@@ -148,13 +148,8 @@ Humidity and Barometer Bricklet will be attached to the front side of the case.
 We screw them to the inside with the sensors facing to the outside. For that
 we use the 10mm spacers and screws from the inside as well as the outside.
 
-<<<<<<< HEAD
 This way there is enough space between the sensors and the case 
 to again allow good measurements. If you intend
-=======
-This way the Weather Station case is open enough and there is enough space 
-between the sensors and the case to again allow good measurements. If you intend
->>>>>>> aa0b15a80dd975dd5e8ced3d6bfcf5a496dda444
 to attach something big on the bottom side, you can attach the Humidity and
 Barometer Bricklets the same way as the Ambient Light Bricklet to save space.
 
