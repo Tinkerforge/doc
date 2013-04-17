@@ -81,7 +81,168 @@ korrekt funktionieren auch nachdem alles in das Gehäuse geschraubt wurde.
 Konstruktion
 ------------
 
-TODO: Images of construction and instructions
+TODO: Construction introduction: Different extension stages etc blabla
+
+Wetterstation (Basisversion)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Die Basisversion des Starterkits Wetterstation ist mit einem Ambient Light,
+Barometer, Humidity und LCD 20x4 Bricklet, Master Brick, das 
+Wetterstationsgehäuse inkl. Austauschseitenteil für einen DC Jack Adapter,
+Bricklet und USB Kabeln sowie jede Menge Schrauben, Abstandsbolzen,
+Muttern und Unterlegscheiben.
+
+.. image:: /Images/Kits/weather_station_content_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationskit Inhalt
+   :align: center
+   :target: ../../_images/Kits/weather_station_content_1200.jpg
+
+Es gibt verschiedene Möglichkeiten das Kit zusammenzuschrauben.
+In dieser Aufbauanleitung stellen wir eine Möglichkeit vor.
+
+Wir beginnen damit den Master Brick auf die Rückseite zu schrauben.
+Dazu nutzen wir 10mm Abstandsbolzen und Schrauben und schrauben den 
+Brick auf die Innenseite der Rückseitenplatte. Dabei sollte die USB Buchse 
+nach außen zeigen.
+
+.. image:: /Images/Kits/weather_station_construction_back_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 1 (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_back_1200.jpg
+
+Im nächsten Schritt befestigen wir das Ambient Light Bricklet an der Oberseite
+des Gehäuses. Um sicherzustellen, dass auch das geringste Licht von dem Sensor
+eingefangen werden kann schrauben wir es direkt an die Oberseite des Gehäuses.
+Dazu nutzen wir die langen 12mm Schrauben, stecken diese von Außen durch das 
+Gehäuseteil und Schrauben von Innen jeweils eine Unterlegscheibe mit einer 
+Mutter dagegen. Diese nutzen wir um den korrekten Abstand einzustellen. 
+Anschließend schrauben wir das Ambient Light Bricklet mit jeweils einer
+Mutter ein.
+
+Anschließend sollten die Schrauben an der Unterseite bündig sein und die
+Bricklet Buchse sollte 1mm Luft nach oben haben. So sollte es möglich sein
+einfach das Brickletkabel einzustecken und dennoch den Sensor an einer guten
+Position zu haben um gute Messungen zu erhalten.
+
+.. image:: /Images/Kits/weather_station_construction_top_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 2 (Basis Version)
+   :alt: Basic Weather Station construction step 2
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_top_1200.jpg
+
+Humidity und Barometer Bricklet werden an der Frontseite befestigt.
+Wir schrauben sie mittels 10mm Abstandsbolzen und Schrauben an der Innenseite
+fest.
+
+Auf diese Art ist genügend Platz zwischen den Sensoren um gute Messergebnisse
+zu  erlauben. Falls auf der Unterseite irgendwann größere Komponenten befestigt 
+werden sollen, so können die Bricklets auch genauso wie das Ambient Light Bricklet
+angeschraubt werden um Platz zu sparen.
+
+Hiernach sollten die Brickletkabel angeschlossen werden um im nächsten Schritt
+das LCD Bricklet einfacher installieren zu können.
+
+.. image:: /Images/Kits/weather_station_construction_front1_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 3 (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_front1_1200.jpg
+
+Nun befestigen wir das LCD 20x4 Bricklet an dem Gehäuse. Die einfachste 
+Möglichkeit ist vermutlich damit zu beginnen die 10mm Abstandsbolzen an
+die schwarze LCD Bricklet-Platine zu schrauben. Anschließend steckt man
+das LCD oben drauf und nutzt jeweils eine Mutter und eine Unterlegscheibe
+um das komplette LCD Bricklet mit den langen 12mm Schrauben auf die Frontseite
+des Gehäuses zu schrauben.
+
+In dieser Anleitung verlegen wir die Bricklet Kabel unter dem LCD 20x4 Bricklet.
+Es ist auch möglich diese zwischen den beiden Leiterplatten zu verlegen,
+somit wären die Kabel etwas mehr verdeckt.
+
+.. image:: /Images/Kits/weather_station_construction_front2_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 4 (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_front2_1200.jpg
+
+Um das Gehäuse nun zusammenzusetzen beginnen wir damit
+die Oberseite in die Rückseite einzusetzen. Anschließend
+schließen wir das Ambient Light Bricklet an den Master Brick an.
+
+.. image:: /Images/Kits/weather_station_construction_top_to_back_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 5 (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_top_to_back_1200.jpg
+
+Als nächstes setzen wir die Seitenteile ein und bauen uns Abstandshalter.
+Diese sollen eine Höhe von 40mm haben und werden jeweils aus zwei 9mm, einem
+12mm und einem 10mm Abstandsbolzen zusammengesetzt. Die Abstandsbolzen 
+werden anschließend auf die Rückseite des Gehäuses jeweils durch eine Schraube 
+von Außen geschraubt.
+
+.. image:: /Images/Kits/weather_station_construction_top_back_spacer_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 6 (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_top_back_spacer_1200.jpg
+
+Nun müssen nurnoch die drei anderen Bricklets angeschlossen werden.
+Dies funktioniert am besten, wenn Front- und Rückseite nebeneinander liegen.
+
+.. image:: /Images/Kits/weather_station_construction_cabling_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 7 (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_cabling_1200.jpg
+
+Zum Schluss müssen wir nurnoch die Frontseite auf die Rückseite stecken
+und beides über die vier fehlenden Schrauben verbinden. Das war es! Nun ist
+die Wetterstation aufgebaut.
+
+.. image:: /Images/Kits/weather_station_construction_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 8 (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_1200.jpg
+
+
+Wi-Fi Weather Station
+^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: /Images/Kits/weather_station_construction_wifi_stack_350.jpg
+   :scale: 100 %
+   :alt: Wi-Fi Weather Station construction step 1
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_wifi_stack_1200.jpg
+
+.. image:: /Images/Kits/weather_station_construction_wifi_dc_jack_350.jpg
+   :scale: 100 %
+   :alt: Wi-Fi Weather Station construction step 2
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_wifi_dc_jack_1200.jpg
+
+.. image:: /Images/Kits/weather_station_construction_wifi_ready_350.jpg
+   :scale: 100 %
+   :alt: Wi-Fi Weather Station construction step 3
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_wifi_ready_1200.jpg
+
+
+Raspberry Pi Weather Station
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TODO
+
+RS485, Ethernet, etc.
+^^^^^^^^^^^^^^^^^^^^^
+
+Same as Wi-Fi
+
+
 
 Projekte
 --------

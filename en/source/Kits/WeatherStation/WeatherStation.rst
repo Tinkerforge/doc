@@ -93,7 +93,7 @@ nuts and washers.
 
 .. image:: /Images/Kits/weather_station_content_350.jpg
    :scale: 100 %
-   :alt: Weather Station content
+   :alt: Weather Station kit content
    :align: center
    :target: ../../_images/Kits/weather_station_content_1200.jpg
 
@@ -119,7 +119,7 @@ through the case. We use a nut at the bottom and a nut as well as washer at
 the top to get the correct height. The long 12mm screws are screwed in from
 the top. 
 
-If everything went as expected, the screws should be flsuh at the
+If everything went as expected, the screws should be flush at the
 bottom and the Bricklet connector should have about 1mm space to the top.
 This way it is still easy to connect the Bricklet cable, and the sensor is
 at a good position to give usefull measurements.
@@ -130,12 +130,12 @@ at a good position to give usefull measurements.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_1200.jpg
 
-Humidity and Barometer Bricklet are attached to the front side of the case.
+Humidity and Barometer Bricklet will be attached to the front side of the case.
 We screw them to the inside with the sensors facing to the outside. For that
 we use the 10mm spacers and screws from the inside as well as the outside.
 
-This way Weather Station case is open enough and there is enough space 
-between the sensors and the case to again allow good measurements. If you intend
+This way there is enough space between the sensors and the case 
+to again allow good measurements. If you intend
 to attach something big on the bottom side, you can attach the Humidity and
 Barometer Bricklets the same way as the Ambient Light Bricklet to save space.
 
@@ -149,8 +149,9 @@ become fiddly after the LCD Bricklet is inserted.
    :target: ../../_images/Kits/weather_station_construction_front1_1200.jpg
 
 Now we mount the LCD 20x4 Bricklet to the case. It is probably easiest to
-start by screwing the 10mm spacer to the Bricklet from the bottom. After that
-we add a nut and washer between the case and the LCD circout board, to get a
+start by screwing the 10mm spacer to the black Bricklet board from the bottom. 
+After that we put the LCD on it and add a nut and washer between 
+the case and the LCD circout board, to get a
 nice distance between the board and the case. The whole thing is then screwed
 together from the top with the long 12mm screws.
 
@@ -176,8 +177,7 @@ between the Master Brick and the Ambient Light Bricklet.
 
 After that we attach all of the other side parts as well as the big spacers
 that hold everything together. The big spacers should have a height of 40mm
-and threads on both sides.
-
+and threads on both sides trough front- and backside.
 We achieve this by screwing two 9mm, one 12mm and one 10mm spacer together.
 This long spacer is then attached to the inside of the back side by a screw
 from the outside of the back side.
