@@ -63,8 +63,8 @@ Dazu müssen der :ref:`Brick Daemon <brickd_installation>` und der
 Schließe alle Bricklets an das Master Brick an und verbinde es per USB mit
 dem PC. Anschließend kann über den Brick Viewer bestimmt werden, ob alle 
 Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
-(:ref:`Bricks aktualisieren<brickv_flash_firmware>`, 
-:ref:`Bricklets <brickv_flash_plugin>`):
+(:ref:`Bricks aktualisieren <brickv_flash_firmware>`,
+:ref:`Bricklets aktualisieren <brickv_flash_plugin>`):
 
 .. image:: /Images/Kits/weather_station_update_350.jpg
    :scale: 100 %
@@ -83,8 +83,8 @@ Konstruktion
 ------------
 
 Es gibt nicht nur eine Art die Wetterstation aufzubauen. Nachfolgend zeigen wir
-den Aufbau verschiedener Varianten. Das Starterkit Wetterstation ist einfach
-zu erweitern oder zu modifizieren. 
+den Aufbau verschiedener Varianten. Das Starterkit: Wetterstation ist einfach
+zu erweitern und zu modifizieren.
 
 Zum Beispiel können Bricks und Bricklets mittels Abstandsbolzen befestigt 
 werden oder auch direkt angeschraubt werden um Platz zu sparen. Es sind
@@ -97,11 +97,13 @@ eigene Bohrlöcher oder Öffnungen geschaffen werden können.
 Wetterstation (Basisversion)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Basisversion des Starterkits Wetterstation ist mit einem Ambient Light,
-Barometer, Humidity und LCD 20x4 Bricklet, Master Brick, das 
-Wetterstationsgehäuse inkl. Austauschseitenteil für einen DC Jack Adapter,
-Bricklet und USB Kabeln sowie jede Menge Schrauben, Abstandsbolzen,
-Muttern und Unterlegscheiben.
+Die Basisversion des Starterkits Wetterstation besteht aus :ref:`Ambient
+Light <ambient_light_bricklet>`, :ref:`Barometer <barometer_bricklet>`,
+:ref:`Humidity <humidity_bricklet>` und :ref:`LCD 20x4 Bricklet
+<lcd_20x4_bricklet>`, :ref:`Master Brick <master_brick>`, dem
+Wetterstationsgehäuse inklusive Austauschseitenteil für einen :ref:`DC Jack
+Adapter <dc_jack_adapter>`, Bricklet und USB Kabeln sowie jede Menge Schrauben,
+Abstandsbolzen, Muttern und Unterlegscheiben.
 
 .. image:: /Images/Kits/weather_station_content_350.jpg
    :scale: 100 %
@@ -131,7 +133,7 @@ Dazu nutzen wir die langen 12mm Schrauben, stecken diese von Außen durch das
 Gehäuseteil und Schrauben von Innen jeweils eine Unterlegscheibe mit einer 
 Mutter dagegen. Diese nutzen wir um den korrekten Abstand einzustellen. 
 Anschließend schrauben wir das Ambient Light Bricklet mit jeweils einer
-Mutter ein.
+Mutter an.
 
 Anschließend sollten die Schrauben an der Unterseite bündig sein und die
 Bricklet Buchse sollte 1mm Luft nach oben haben. So sollte es möglich sein
@@ -211,7 +213,7 @@ Dies funktioniert am besten, wenn Front- und Rückseite nebeneinander liegen.
    :target: ../../_images/Kits/weather_station_construction_cabling_1200.jpg
 
 Zum Schluss müssen wir nurnoch die Frontseite auf die Rückseite stecken
-und beides über die vier fehlenden Schrauben verbinden. Das war es! Nun ist
+und beides über die vier fehlenden Schrauben verbinden. Das war's! Nun ist
 die Wetterstation aufgebaut.
 
 .. image:: /Images/Kits/weather_station_construction_350.jpg
@@ -224,14 +226,15 @@ die Wetterstation aufgebaut.
 WLAN Wetterstation
 ^^^^^^^^^^^^^^^^^^
 
-Die Wetterstation ist groß genug um eine WIFI Extension einzubauen um 
-die Station drahtlos zu steuern. In dieser Anleitung werden wir eine Step-Down 
-Power Supply zusammen mit einem DC Jack Adapter nutzen um die Station mit Strom
+Die Wetterstation ist groß genug um eine :ref:`WIFI Extension <wifi_extension>`
+einzubauen um die Station drahtlos zu steuern. In dieser Anleitung werden wir
+eine ref:`Step-Down Power Supply <step-down>` zusammen mit einem :ref:`DC Jack
+Adapter <dc_jack_adapter>` nutzen um die Station mit Strom
 zu versorgen. Als Alternative wäre es auch möglich die Station über eine
 USB Power Supply zu versorgen, dann wären DC Jack Adapter und Step-Down
 Power Supply nicht notwenig.
 
-Wir starter damit den Stapel, bestehend aus Step-Down Power Supply,
+Wir starten damit den Stapel, bestehend aus Step-Down Power Supply,
 Master Brick und WIFI Extension auf die Rückseite des Gehäuses zu schrauben.
 Es ist eine Aussparung vorhanden damit die Step-Down Power Supply
 auch ohne Abstandsbolzen direkt auf die Rückseite geschraubt werden kann.
@@ -257,7 +260,7 @@ Aussparung in dem Seitenteil passen.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_wifi_dc_jack_1200.jpg
 
-Das war es! Wir müssen nun nur wieder die Vorderseite auf die Rückseite 
+Das war's! Wir müssen nun nur wieder die Vorderseite auf die Rückseite
 schrauben. Falls eine Tinkerforge Antenne genutzt werden soll, so muss dies die 
 große RP-SMA oder die Externe sein. Die kleine Antenne passt nicht.
 
@@ -297,7 +300,7 @@ Pi angeschlossen.
 
 .. image:: /Images/Kits/weather_station_construction_rpi_front_350.jpg
    :scale: 100 %
-   :alt: Raspberry Pi Weather Station construction step 1
+   :alt: Raspberry Pi Wetterstation Aufbau Schritt 1
    :align: center
    :target: ../../_images/Kits/weather_station_construction_rpi_front_1200.jpg
 
@@ -305,7 +308,7 @@ Auf der Rückansicht sehen wir wie das Raspberry Pi eingebaut wurde.
 
 .. image:: /Images/Kits/weather_station_construction_rpi_back_350.jpg
    :scale: 100 %
-   :alt: Raspberry Pi Weather Station construction step 2
+   :alt: Raspberry Pi Wetterstation Aufbau Schritt 2
    :align: center
    :target: ../../_images/Kits/weather_station_construction_rpi_back_1200.jpg
 
@@ -332,7 +335,7 @@ und der DC Jack Adapter nicht mehr notwendig sind.
 Projekte
 --------
 
-Es gibt verschiedene Anwendungen für das Wetterstations-Starterkit:
+Es gibt verschiedene Anwendungen für die Wetterstation:
 
 Messwerte auf dem LCD anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -346,12 +349,12 @@ Möglichkeiten:
 * WLAN Verbindung zu einem PC: Installiere die Anwendung auf dem PC und
   Verbinde die Wetterstation direct per WLAN oder über einen Accesspoint.
 * Raspberry Pi oder ein anderes Embedded Board integriert in die Wetterstation:
-  Installiere Brickd  und die Anwendung auf dem Embedded Board und verbinde das
-  Master Brick der Wetterstation per USB.
+  Installiere den Brick Daemon und die Anwendung auf dem Embedded Board und
+  verbinde den Master Brick der Wetterstation per USB.
 
 .. batti: link to further enhancement section? how to use rasp with weather station etc.
 
-Die drei Möglichkeiten können den selben Source Code benutzen.
+Die drei Möglichkeiten können das gleiche Programm benutzen.
 
 Beispielanwendungen mit Schritt-für-Schritt Anleitungen existieren für:
 
@@ -371,7 +374,7 @@ Historie der Wetterstationsdaten speichern, sowie nette Graphen zeichnen:
    :target: ../../_images/Kits/weather_station_cosm_graphs_orig.jpg
 
 Eine Beispiel-Implementierung mit Schritt-für-Schritt Instruktionen
-die die Wetterdaten mit Cosm austauscht is verfügbar
+die die Wetterdaten auf Cosm veröffentlicht is verfügbar
 in :ref:`Python <starter_kit_weather_station_cosm>`.
 
 Live-Anzeige von Messdaten auf einer Webseite
@@ -415,8 +418,8 @@ Die vier Taster werden in diesem Projekt genutzt um zwischen
 Eine Beispielimplementierung ist
 in :ref:`C# <starter_kit_weather_station_button_control>` verfügbar.
 
-Spätere Erweiterungen
----------------------
+Zusätzlich Erweiterungen
+------------------------
 
 Gerne führen wir hier Mods, Erweiterungen oder Verbesserungen der Wetterstation 
 auf. Bitte gebt uns bescheid, wir verlinken hier gerne eure Projekte.

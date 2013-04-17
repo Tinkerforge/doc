@@ -91,7 +91,7 @@ to the case to save space. There are several holes that allow
 to mount addition Analog In, Temperature or IO-4 Bricklets to
 read out more sensors. 
 
-The utilzed PMMA plastic is easy to work with, so you will be able
+The utilized PMMA plastic is easy to work with, so you will be able
 to add new holes or slots or similar if needed.
 
 Basic Weather Station
@@ -136,7 +136,7 @@ the top.
 If everything went as expected, the screws should be flush at the
 bottom and the Bricklet connector should have about 1mm space to the top.
 This way it is still easy to connect the Bricklet cable, and the sensor is
-at a good position to give usefull measurements.
+at a good position to give useful measurements.
 
 .. image:: /Images/Kits/weather_station_construction_top_350.jpg
    :scale: 100 %
@@ -165,7 +165,7 @@ become fiddly after the LCD Bricklet is inserted.
 Now we mount the LCD 20x4 Bricklet to the case. It is probably easiest to
 start by screwing the 10mm spacer to the black Bricklet board from the bottom. 
 After that we put the LCD on it and add a nut and washer between 
-the case and the LCD circout board, to get a
+the case and the LCD circuit board, to get a
 nice distance between the board and the case. The whole thing is then screwed
 together from the top with the long 12mm screws.
 
@@ -224,9 +224,10 @@ missing screws. Thats it, we are done!
 Wi-Fi Weather Station
 ^^^^^^^^^^^^^^^^^^^^^
 
-The Weather Station case is big enough to add a WIFI Extension for wireless
-controlling. In this tutorial we will use the Step-Down Power Supply together
-with a DC Jack Adapter to power the stack. It would also be possible to
+The Weather Station case is big enough to add a :ref:`WIFI Extension
+<wifi_extension>` for wireless controlling. In this tutorial we will use
+the :ref:`Step-Down Power Supply <step-down>` together with a :ref:`DC Jack
+Adapter <dc_jack_adapter>` to power the stack. It would also be possible to
 power the stack with a USB Power Supply, in this case Step-Down Power Supply
 and DC Jack Adapter are not needed.
 
@@ -331,7 +332,7 @@ not needed.
 Projects
 --------
 
-There are several applications for the Weather Station Starter Kit:
+There are several applications for the Weather Station:
 
 Display Environment Measurements on LCD
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -345,8 +346,8 @@ done through three different paths:
 * Wi-Fi connection to PC: Install application on PC, connect to
   Weather Station directly over Wi-Fi or through an access point.
 * Raspberry Pi or other embedded board integrated in Weather Station:
-  Install Brickd and application on embedded board, connect Master Brick of
-  Weather Station to embedded board via USB.
+  Install the Brick Daemon and application on embedded board, connect
+  Master Brick of Weather Station to embedded board via USB.
 
 .. batti: link to further enhancement section? how to use rasp with weather station etc.
 
