@@ -1,5 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricklets">Bricklets</a> / Breakout Bricklet
+:shoplink: ../../../shop/bricklets/breakout-bricklet.html
 
 .. _breakout_bricklet:
 

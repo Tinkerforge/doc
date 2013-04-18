@@ -1,5 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricks">Bricks</a> / IMU Brick
+:shoplink: ../../../shop/bricks/imu-brick.html
 
 .. include:: IMU_Brick.substitutions
 

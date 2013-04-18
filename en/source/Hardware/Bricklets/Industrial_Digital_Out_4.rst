@@ -1,5 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Industrial Digital Out 4 Bricklet
+:shoplink: ../../../shop/bricklets/industrial-digital-out-4-bricklet.html
 
 .. include:: Industrial_Digital_Out_4.substitutions
 

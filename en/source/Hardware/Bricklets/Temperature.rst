@@ -1,5 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Temperature Bricklet
+:shoplink: ../../../shop/bricklets/temperature-bricklet.html
 
 .. include:: Temperature.substitutions
 

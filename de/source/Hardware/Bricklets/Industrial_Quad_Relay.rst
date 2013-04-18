@@ -1,5 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricklets">Bricklets</a> / Industrial Quad Relay Bricklet
+:shoplink: ../../../shop/bricklets/industrial-quad-relay-bricklet.html
 
 .. include:: Industrial_Quad_Relay.substitutions
 

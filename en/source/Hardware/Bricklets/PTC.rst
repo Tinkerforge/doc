@@ -1,5 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / PTC Bricklet
+:shoplink: ../../../shop/bricklets/ptc-bricklet.html
 
 .. FIXME include:: Ambient_Light.substitutions
 

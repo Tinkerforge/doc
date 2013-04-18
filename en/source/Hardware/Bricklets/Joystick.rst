@@ -1,5 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Joystick Bricklet
+:shoplink: ../../../shop/bricklets/joystick-bricklet.html
 
 .. include:: Joystick.substitutions
 
