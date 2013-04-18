@@ -600,12 +600,16 @@ table.field-list tr:nth-child(even) { background-color:transparent; }
 
 #shoplink_img {
   float: right;
+  height: 40px;
   margin-right: -12px;
-  margin-left: 5px;
+  padding-left: 5px;
+  background-color:#00AAEA;
 }
 
 #shoplink_a {
   float: right;
+	height: 40px;
+  background-color:#00AAEA;
 }
 
 #shoplink_a a {
