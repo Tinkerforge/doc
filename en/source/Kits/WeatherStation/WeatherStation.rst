@@ -48,6 +48,7 @@ Features
 
 * Fully-fledged open source weather station.
 * Measure Temperature, Humidity, Air Pressure and Illuminance.
+* High Precision and Resolution: Airpressure 0.012mbar, Temperature 0.01°C
 * Control over USB, Wi-Fi or with Raspberry Pi.
 * Modifiable with more buttons, more sensors and better software.
 

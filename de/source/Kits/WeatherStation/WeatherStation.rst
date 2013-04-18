@@ -48,6 +48,7 @@ Features
 
 * Vollwertige Open Source Wetterstation.
 * Misst Temperatur, Luftfeuchtigkeit, Luftdruck und Helligkeit.
+* Hohe Präzision und Auflösung: Luftdruck 0,012mbar, Temperature 0,01°C. 
 * Steuerung über USB, WLAN oder mit Raspberry Pi.
 * Modifizierbar mit mehr Tastern, mehr Sensoren und besserer Software.
 
