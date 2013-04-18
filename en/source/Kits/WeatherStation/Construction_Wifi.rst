@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Construction: Wi-Fi Weather Station
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction: Wi-Fi Weather Station
 
 .. include:: WeatherStation.substitutions
 
@@ -15,6 +15,13 @@ a :ref:`DC Jack Adapter <dc_jack_adapter>` to power the stack. It would also
 be possible to power the stack with a USB Power Supply, in this case
 Step-Down Power Supply and DC Jack Adapter are not needed.
 
+This is an extension of the :ref:`basic version
+<starter_kit_weather_station_construction_basic>`. You should build the basic
+version first and then modify it as described down below.
+
+Stack on Backside
+-----------------
+
 We will start by mounting a stack consisting of Step-Down Power Supply,
 Master Brick and WIFI Extension to the back side of the case. There is a
 slot in the case where solder bumps of the Step-Down Power Supply are,
@@ -26,6 +33,9 @@ to the case.
    :alt: Wi-Fi Weather Station construction step 1
    :align: center
    :target: ../../_images/Kits/weather_station_construction_wifi_stack_1200.jpg
+
+DC Jack Adapter on Backside
+---------------------------
 
 The DC Jack Adapter can be mounted to the back side of the case with a single
 21mm long spacer. The 21mm long spacer can be constructed out of one 9mm spacer

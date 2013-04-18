@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Konstruktion: WLAN Wetterstation
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#konstruktion">Starterkit: Wetterstation</a> / Konstruktion: WLAN Wetterstation
 
 .. include:: WeatherStation.substitutions
 
@@ -16,6 +16,14 @@ zu versorgen. Als Alternative wäre es auch möglich die Station über eine
 USB Power Supply zu versorgen, dann wären DC Jack Adapter und Step-Down
 Power Supply nicht notwendig.
 
+Dieser Aufbau ist eine Erweiterung der :ref:`Basisversion
+<starter_kit_weather_station_construction_basic>`. Daher sollte zuerst die
+Basisversion aufgebaut und dann, wie im Folgenden beschrieben, abgewandelt
+werden.
+
+Stapel an Rückseite
+-------------------
+
 Wir starten damit den Stapel, bestehend aus Step-Down Power Supply,
 Master Brick und WIFI Extension auf die Rückseite des Gehäuses zu schrauben.
 Es ist eine Aussparung vorhanden damit die Step-Down Power Supply
@@ -26,6 +34,9 @@ auch ohne Abstandsbolzen direkt auf die Rückseite geschraubt werden kann.
    :alt: WLAN Wetterstation Aufbau Schritt 1
    :align: center
    :target: ../../_images/Kits/weather_station_construction_wifi_stack_1200.jpg
+
+DC Jack Adapter an Rückseite
+----------------------------
 
 Der DC Jack Adapter kann auf die Rückseite mit einem 21mm Abstandshalter
 aufgeschraubt werden. Dieser wird aus einem 9mm und einem 12mm Abstandshalter

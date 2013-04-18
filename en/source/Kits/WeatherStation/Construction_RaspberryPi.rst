@@ -1,14 +1,14 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Construction: Raspberry Pi Weather Station
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction: Raspberry Pi Weather Station
 
 .. _starter_kit_weather_station_construction_rpi:
 
 Construction: Raspberry Pi Weather Station
 ==========================================
 
-It is possible to control the Weather Station with an embedded board like
-the Raspberry Pi. You can put the Raspberry Pi in the case, despite
-it is a bit tricky to get everything in the case.
+It is possible to control the Weather Station with an embedded board such as
+the :ref:`Raspberry Pi <embedded_raspberry_pi>`. You can put the Raspberry Pi
+in the case, despite it is a bit tricky to get everything in the case.
 
 We will put a :ref:`Master Brick <master_brick>`,
 a :ref:`Step-Down Power Supply <step_down_power_supply>`, a :ref:`DC Jack
@@ -16,8 +16,12 @@ Adapter <dc_jack_adapter>` and
 the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will
 be powered over the DC Jack Adapter by the Step-Down Power Supply.
 
-How to mount the DC Jack Adapter in the case can be seen above
-(:ref:`starter_kit_weather_station_construction_wifi`).
+This is an extension of the :ref:`basic version
+<starter_kit_weather_station_construction_basic>`. You should build the basic
+version first and then modify it as described down below.
+
+Stack and Raspberry Pi on Backside
+----------------------------------
 
 The Step-Down Power Supply (with Master Brick on top) is mounted on 10mm
 spacers. We can put the SD card below the Step-Down Power Supply,
@@ -30,6 +34,10 @@ USB input of the Raspberry Pi to power it. The black connector of the
 Step-Down Power Supply is connected to the DC Jack Adapter and
 the Mini USB connector of the Master Brick is connected to the USB connector
 of the Raspberry Pi by a small Mini USB cable.
+
+How to mount the DC Jack Adapter in the case is describred in
+the :ref:`Wi-Fi Weather Station <starter_kit_weather_station_construction_wifi>`
+construction section.
 
 .. image:: /Images/Kits/weather_station_construction_rpi_front_350.jpg
    :scale: 100 %

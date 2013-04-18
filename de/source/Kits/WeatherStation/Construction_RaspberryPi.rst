@@ -1,12 +1,13 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Konstruktion: Raspberry Pi Wetterstation
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#konstruktion">Starterkit: Wetterstation</a> / Konstruktion: Raspberry Pi Wetterstation
 
 .. _starter_kit_weather_station_construction_rpi:
 
 Konstruktion: Raspberry Pi Wetterstation
 ========================================
 
-Die Wetterstation kann über ein Embedded Board wie z.B. das Raspberry Pi
+Die Wetterstation kann über ein Embedded Board wie z.B.
+dem :ref:`Raspberry Pi <embedded_raspberry_pi>`
 gesteuert werden. Das Raspberry Pi kann direkt in das Gehäuse eingebaut werden
 auch wenn es nicht einfach ist alles zu integrieren.
 
@@ -16,8 +17,13 @@ Adapter <dc_jack_adapter>` und das Raspberry Pi im Gehäuse.
 Das Raspberry Pi (und der Master Brick) werden über den DC Jack Adapter durch
 die Step-Down Power Supply versorgt.
 
-Wie der DC Jack Adapter befestigt werden kann ist oben beschrieben
-(:ref:`starter_kit_weather_station_construction_wifi`).
+Dieser Aufbau ist eine Erweiterung der :ref:`Basisversion
+<starter_kit_weather_station_construction_basic>`. Daher sollte zuerst die
+Basisversion aufgebaut und dann, wie im Folgenden beschrieben, abgewandelt
+werden.
+
+Stapel und Raspberry Pi an Rückseite
+------------------------------------
 
 Die Step-Down Power Supply (mit dem Master Brick obenauf) ist über
 10mm Abstandsbolzen befestigt. Die SD Karte kann dabei unter die Step-Down
@@ -30,6 +36,10 @@ um das Raspberry Pi über einen Micro USB Stecker mit Strom zu versorgen.
 Der schwarze Stecker ist hingegen mit dem DC Jack Adapter verbunden.
 Der Master Brick wird einfach mit einem kurzen Mini USB Kabel an das Raspberry
 Pi angeschlossen.
+
+Wie der DC Jack Adapter befestigt werden kann ist in
+der :ref:`WLAN Wetterstations <starter_kit_weather_station_construction_wifi>`
+Aufbauanleitung beschrieben.
 
 .. image:: /Images/Kits/weather_station_construction_rpi_front_350.jpg
    :scale: 100 %
