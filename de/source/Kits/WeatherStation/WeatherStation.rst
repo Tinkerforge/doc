@@ -58,9 +58,12 @@ Das *Starterkit: Wetterstation* ist eine vollwertige Open Source Wetterstation.
 Sie misst Temperatur, Luftfeuchtigkeit, Luftdruck und Helligkeit mit hoher
 Präzision.
 
-Sie kann Über einen PC oder :ref:`Raspberry Pi <embedded_raspberry_pi>` 
-über USB oder, falls eine :ref:`WIFI Extension <wifi_extension>` eingebaut
-wird, auch über WLAN gesteuert werden. Die Messwerte können auf einem 20x4 Zeichen
+Sie kann per USB mit dem (Embedded-) PC gesteuert werden. 
+Auch eine Steuerung per WLAN ist über die :ref:`WIFI Extension <wifi_extension>`
+möglich. Fuer einen Standalone-Betrieb kann ein Embbeded Board wie z.B. das
+:ref:`Raspberry Pi <embedded_raspberry_pi>` direkt ins Gehaeuse eingebaut 
+werden.
+Die Messwerte können auf einem 20x4 Zeichen
 LCD angezeigt, auf einer Webseite oder z.B. auf `Cosm <https://cosm.com/>`__ 
 hochgeladen werden. Über vier Taster auf dem 
 :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` ist es möglich zwischen 

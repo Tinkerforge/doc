@@ -58,8 +58,10 @@ The *Starter Kit: Weather Station* is a fully-fledged open source weather
 station. It measures temperature, humidity, air pressure and illuminance
 with high precision.
 
-It can be controlled by a PC or a :ref:`Raspberry Pi <embedded_raspberry_pi>`
-over USB or (if the :ref:`WIFI Extension <wifi_extension>` is added) over Wi-Fi.
+It can be controlled by an (Embedded-) PC.
+Control via Wi-Fi is possible if a :ref:`WIFI Extension <wifi_extension>` is 
+added. To use it standalone you can use an embbeded board like the
+:ref:`Raspberry Pi <embedded_raspberry_pi>` which can be mounted in the casing.
 The measurements can be displayed on the 20x4 character LCD, they can be shown on a
 website or uploaded to `Cosm <https://cosm.com/>`__. With the four buttons of
 the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` it is possible to control
