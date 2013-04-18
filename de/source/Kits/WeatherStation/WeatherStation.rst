@@ -46,10 +46,14 @@ Starterkit: Wetterstation
 Features
 --------
 
+.. Einrueckung so beibehalten, da sonst kaputt
+
 * Vollwertige Open Source Wetterstation.
 * Misst Temperatur, Luftfeuchtigkeit, Luftdruck und Helligkeit.
 * Hohe Präzision und Auflösung
- * z.B. Luftdruck 0,012mbar und Temperatur 0,01°C. 
+
+  * z.B. Luftdruck 0,012mbar und Temperatur 0,01°C. 
+
 * Steuerung über USB, WLAN oder mit Raspberry Pi.
 * Modifizierbar mit mehr Tastern, mehr Sensoren und besserer Software.
 
@@ -174,7 +178,10 @@ Es gibt verschiedene Möglichkeiten die Bricks und Bricklets
 in dem Gehäuse zu befestigen. In dieser Aufbauanleitung stellen wir eine 
 Möglichkeit vor.
 
-Wir beginnen damit den Master Brick auf die Rückseite zu schrauben.
+Als erstes sollten die Schutzfolien von allen Gehäuseteilen entfernt werden.
+Es ist jeweils eine auf Vorder- und Rückseite vorhanden.
+
+Danach beginnen wir damit den Master Brick auf die Rückseite zu schrauben.
 Dazu nutzen wir 10mm Abstandsbolzen und Schrauben und schrauben den 
 Brick auf die Innenseite der Rückseitenplatte. Dabei sollte die USB Buchse 
 nach außen zeigen.

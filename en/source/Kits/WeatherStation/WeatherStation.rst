@@ -46,10 +46,14 @@ Starter Kit: Weather Station
 Features
 --------
 
+.. Einrueckung so beibehalten, da sonst kaputt
+
 * Fully-fledged open source weather station.
 * Measures Temperature, Humidity, Air Pressure and Illuminance.
 * High Precision and Resolution
- * e.g. Air Pressure 0.012mbar and Temperature 0.01°C
+
+  * e.g. Air Pressure 0.012mbar and Temperature 0.01°C
+
 * Control over USB, Wi-Fi or with Raspberry Pi.
 * Modifiable with more buttons, more sensors and better software.
 
@@ -173,7 +177,10 @@ There are several ways to mount the Bricks and Bricklets in the
 case. In this construction tutorial we will show one way to
 put everything together.
 
-We will start by screwing the Master Brick on the back side. We use
+At first we will remove the protective foil on all casing parts.
+There is one foil on the front- and backside each.
+
+After that we will start by screwing the Master Brick on the back side. We use
 screws from the top and bottom with 10mm spacers at the bottom inside
 of the case. The USB connector of the Master Brick faces to the outside.
 
