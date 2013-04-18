@@ -55,7 +55,7 @@ Features
   * e.g. Air Pressure 0.012mbar and Temperature 0.01°C
 
 * Control over USB, Wi-Fi or with Raspberry Pi.
-* Modifiable with more buttons, more sensors and better software.
+* Modifiable with more buttons, more sensors and changed software.
 
 Description
 -----------

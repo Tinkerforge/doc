@@ -55,7 +55,7 @@ Features
   * z.B. Luftdruck 0,012mbar und Temperatur 0,01°C. 
 
 * Steuerung über USB, WLAN oder mit Raspberry Pi.
-* Modifizierbar mit mehr Tastern, mehr Sensoren und besserer Software.
+* Modifizierbar mit mehr Tastern, mehr Sensoren und veränderter Software.
 
 Beschreibung
 ------------
