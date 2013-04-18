@@ -597,3 +597,20 @@ td.field-body ul { padding-left: 0; }
 td.field-body ul li { list-style: none; }
 
 table.field-list tr:nth-child(even) { background-color:transparent; }
+
+#shoplink_img {
+  float: right;
+  margin-right: -12px;
+  margin-left: 5px;
+}
+
+#shoplink_a {
+  float: right;
+}
+
+#shoplink_a a {
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #fff;
+}

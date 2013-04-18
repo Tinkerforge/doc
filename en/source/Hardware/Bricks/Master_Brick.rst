@@ -1,5 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricks">Bricks</a> / Master Brick
+:shoplink: ../../../shop/bricks/master-brick.html
 
 .. include:: Master_Brick.substitutions
 
