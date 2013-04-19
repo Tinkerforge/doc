@@ -83,8 +83,8 @@ The kit allows it to modify soft- and hardware. The casing consists of
 tinker-friendly PMMA which can be easily modified (e.g. drill new holes with 
 simple wood drill). Additionally mounting holes for 
 :ref:`Analog In <analog_in_bricklet>` and :ref:`IO-4 <io4_bricklet>` Bricklets
-are provided, this gives the possibility to add more sensors (
-`anemometer <https://en.wikipedia.org/wiki/Anemometer>`__, 
+are provided, this gives the possibility to add more sensors 
+(`anemometer <https://en.wikipedia.org/wiki/Anemometer>`__, 
 `pluviometer <https://en.wikipedia.org/wiki/Rain_gauge>`__ etc). 
 
 Programming of the weather station can be done with all of the available
