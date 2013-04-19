@@ -18,6 +18,7 @@ Dokumentation
 
    Product_Overview
    Tutorials
+   Kits
    Software
    Low_Level_Protocols
    Downloads
