@@ -18,9 +18,9 @@ Starter Kit: Weather Station
 	               "Weather Station: Basic Kit on table")
 	}}
 	{{
-	    tfdocstart("Kits/weather_station_black_table_350.jpg",
-	               "Kits/weather_station_black_table_800.jpg",
-	               "Weather Station (black): Basic Kit on table")
+	    tfdocimg("Kits/weather_station_black_table_100.jpg",
+	             "Kits/weather_station_black_table_800.jpg",
+	             "Weather Station (black): Basic Kit on table")
 	}}
 	{{
 	    tfdocimg("Kits/weather_station_wall_far_100.jpg",
