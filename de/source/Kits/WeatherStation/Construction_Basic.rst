@@ -53,7 +53,7 @@ Mutter dagegen. Diese nutzen wir um den korrekten Abstand einzustellen.
 Anschließend schrauben wir das Ambient Light Bricklet mit jeweils einer
 Mutter an.
 
-Anschließend sollten die Schrauben an der Unterseite bündig sein und die
+Anschließend sollte die
 Bricklet Buchse sollte 1mm Luft nach oben haben. So sollte es möglich sein
 einfach das Brickletkabel einzustecken und dennoch den Sensor an einer guten
 Position zu haben um gute Messungen zu erhalten.
@@ -63,6 +63,15 @@ Position zu haben um gute Messungen zu erhalten.
    :alt: Wetterstationsaufbau Schritt 2 (Basis Version)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_1200.jpg
+
+Im Falle der schwarzen Wetterstation wird das Ambient Light Bricklet
+auf der Außenseite der Oberseite des Gehäuses befestigt.
+
+.. image:: /Images/Kits/weather_station_black_construction_top_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 2 (Basis Version, schwarz)
+   :align: center
+   :target: ../../_images/Kits/weather_station_black_construction_top_1200.jpg
 
 Humidity und Barometer Bricklet an Frontseite
 ---------------------------------------------

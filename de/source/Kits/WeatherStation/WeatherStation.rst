@@ -18,6 +18,11 @@ Starterkit: Wetterstation
 	               "Wetterstation: Basiskit auf Tisch")
 	}}
 	{{
+	    tfdocstart("Kits/weather_station_black_table_350.jpg",
+	               "Kits/weather_station_black_table_800.jpg",
+	               "Wetterstation (schwarz): Basiskit auf Tisch")
+	}}
+	{{
 	    tfdocimg("Kits/weather_station_wall_far_100.jpg",
 	             "Kits/weather_station_wall_far_800.jpg",
 	             "Wetterstation: Mit WLAN an Wand")

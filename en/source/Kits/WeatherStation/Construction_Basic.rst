@@ -51,8 +51,8 @@ through the case. We use a nut at the bottom and a nut as well as washer at
 the top to get the correct height. The long 12mm screws are screwed in from
 the top.
 
-If everything went as expected, the screws should be flush at the
-bottom and the Bricklet connector should have about 1mm space to the top.
+If everything went as expected the Bricklet connector should have about 
+1mm space to the top.
 This way it is still easy to connect the Bricklet cable, and the sensor is
 at a good position to give useful measurements.
 
@@ -61,6 +61,15 @@ at a good position to give useful measurements.
    :alt: Basic Weather Station construction step 2
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_1200.jpg
+
+In case of the black weather station, the Ambient Light Bricklet is mounted
+on top of the outside of the topside.
+
+.. image:: /Images/Kits/weather_station_black_construction_top_350.jpg
+   :scale: 100 %
+   :alt: Basic Weather Station construction step 2 (black)
+   :align: center
+   :target: ../../_images/Kits/weather_station_black_construction_top_1200.jpg
 
 Humidity and Barometer Bricklet on Frontside
 --------------------------------------------
