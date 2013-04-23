@@ -52,6 +52,11 @@ Starterkit: Wetterstation
 	             "Kits/weather_station_website_orig.jpg",
 	             "Wetterstation: Eingebettet in einer Webseite")
 	}}
+	{{
+	    tfdocimg("Kits/weather_station_buttons_assembled_100.jpg",
+	             "Kits/weather_station_buttons_assembled_800.jpg",
+	             "Wetterstation: Mit großen Drucktastern auf der linken Seite")
+	}}
 	{{ tfdocend() }}
 
 Features
@@ -282,5 +287,41 @@ Zusätzlich Erweiterungen
 
 Gerne führen wir hier Mods, Erweiterungen oder Verbesserungen der Wetterstation 
 auf. Bitte gebt uns Bescheid, wir verlinken hier gerne eure Projekte.
+
+
+Größerer Drucktaster
+^^^^^^^^^^^^^^^^^^^^
+
+Die Drucktaster des LCD 20x4 Bricklet sind ein wenig fummelig. Als
+Erweiterung für die Wetterstation bieten wir große Drucktaster
+mit der `Wetterstation Drucktaster-Erweiterung <https://www.tinkerforge.com/de/shop/kits/weather-station-push-button-extension.html>`__ an.
+
+
+.. image:: /Images/Kits/weather_station_buttons_assembled_600.jpg
+   :scale: 100 %
+   :alt: Wetterstation mit großen Drucktastern
+   :align: center
+   :target: ../../_images/Kits/weather_station_buttons_assembled_1200.jpg
+
+Die Erweiterung besteht aus vier großen Drucktastern, einem Ersatzseitenteil
+für die linke Seite des Gehäuses der Wetterstation und einer rechtwinkligen
+2x3 Stiftleiste.
+
+Ein Lötkolben und ein paar Käbelchen werden benötigt um die Drucktaster
+mit dem LCD 20x4 Bricklet zu verbinden.
+
+.. image:: /Images/Kits/weather_station_buttons_soldered_350.jpg
+   :scale: 100 %
+   :alt: Push buttons wired up
+   :align: center
+   :target: ../../_images/Kits/weather_station_buttons_soldered_1200.jpg
+
+.. image:: /Images/Kits/weather_station_buttons_and_lcd_350.jpg
+   :scale: 100 %
+   :alt: Push buttons connected to LCD20x4
+   :align: center
+   :target: ../../_images/Kits/weather_station_buttons_and_lcd_1200.jpg
+
+Änderungen in der Software werden nicht benötigt.
 
 .. FIXME: Regenmesser, windgeschwindigkeit etc

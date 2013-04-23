@@ -52,6 +52,11 @@ Starter Kit: Weather Station
 	             "Kits/weather_station_website_orig.jpg",
 	             "Weather Station: Embedded in website")
 	}}
+	{{
+	    tfdocimg("Kits/weather_station_buttons_assembled_100.jpg",
+	             "Kits/weather_station_buttons_assembled_800.jpg",
+	             "Weather Station: With big buttons on the left side")
+	}}
 	{{ tfdocend() }}
 
 Features
@@ -282,5 +287,40 @@ If you modded, extended or improved your Weather Station in any way and you
 have published your results on our `Wiki <http://www.tinkerunity.org/wiki/>`__,
 on your blog or similar: Please give us a notice. We would love to add a link
 to your project here!
+
+
+Bigger Push Buttons
+^^^^^^^^^^^^^^^^^^^
+
+The push buttons on the LCD 20x4 Bricklet are a bit fiddly. To extend
+the Weather Station with bigger buttons we provide the
+`Weather Station Push Button Extension <https://www.tinkerforge.com/en/shop/kits/weather-station-push-button-extension.html>`__.
+
+.. image:: /Images/Kits/weather_station_buttons_assembled_600.jpg
+   :scale: 100 %
+   :alt: Weather Station with big push buttons
+   :align: center
+   :target: ../../_images/Kits/weather_station_buttons_assembled_1200.jpg
+
+The extension consists of four big push buttons, a replacement wall for the left
+side of the Weather station case and a right angle 2x3 pin header.
+
+We can connect the push buttons to the LCD 20x4 Bricklet with a little bit
+of soldering and some wires.
+
+.. image:: /Images/Kits/weather_station_buttons_soldered_350.jpg
+   :scale: 100 %
+   :alt: Push buttons wired up
+   :align: center
+   :target: ../../_images/Kits/weather_station_buttons_soldered_1200.jpg
+
+.. image:: /Images/Kits/weather_station_buttons_and_lcd_350.jpg
+   :scale: 100 %
+   :alt: Push buttons connected to LCD20x4
+   :align: center
+   :target: ../../_images/Kits/weather_station_buttons_and_lcd_1200.jpg
+
+Changes in software are not needed.
+
 
 .. FIXME: Regenmesser, windgeschwindigkeit etc
