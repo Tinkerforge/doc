@@ -289,8 +289,8 @@ Gerne führen wir hier Mods, Erweiterungen oder Verbesserungen der Wetterstation
 auf. Bitte gebt uns Bescheid, wir verlinken hier gerne eure Projekte.
 
 
-Größerer Drucktaster
-^^^^^^^^^^^^^^^^^^^^
+Größere Drucktaster
+^^^^^^^^^^^^^^^^^^^
 
 Die Drucktaster des LCD 20x4 Bricklet sind ein wenig fummelig. Als
 Erweiterung für die Wetterstation bieten wir große Drucktaster
