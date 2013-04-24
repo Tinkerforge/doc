@@ -341,6 +341,6 @@ Wetterstationsanwendungen möglich sind.
    :align: center
    :target: ../../_images/Kits/weather_station_guitar_1200.jpg
 
-Der Code kann hier herunter geladen werden:`Download <https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
+Der Code kann hier herunter geladen werden: `Download <https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
 
 .. FIXME: Regenmesser, windgeschwindigkeit etc

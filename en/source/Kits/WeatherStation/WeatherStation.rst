@@ -340,7 +340,7 @@ weather station applications.
    :align: center
    :target: ../../_images/Kits/weather_station_guitar_1200.jpg
 
-The code can be downloaded here:`Download <https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
+The code can be downloaded here: `Download <https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
 
 
 
