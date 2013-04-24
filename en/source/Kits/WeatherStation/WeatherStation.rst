@@ -323,4 +323,25 @@ of soldering and some wires.
 Changes in software are not needed.
 
 
+As a fun example we have implemented a demonstrator for a game like Guitar Hero. 
+It does not have much functions. The application basically shows bars which will 
+be randomly rendered and moved to one side of the LCD.
+With the four big push buttons you can make different sounds and you can choose
+the used instrument from the 
+`General MIDI <http://en.wikipedia.org/wiki/General_MIDI>`__ definition, 
+but the game logic is completely missing.
+
+This demonstrator should show that it is possible to implement not only
+weather station applications. 
+
+.. image:: /Images/Kits/weather_station_guitar_350.jpg
+   :scale: 100 %
+   :alt: Game Application on Weather Station
+   :align: center
+   :target: ../../_images/Kits/weather_station_guitar_1200.jpg
+
+The code can be downloaded here:`Download <https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
+
+
+
 .. FIXME: Regenmesser, windgeschwindigkeit etc

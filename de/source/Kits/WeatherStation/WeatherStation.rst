@@ -324,4 +324,23 @@ mit dem LCD 20x4 Bricklet zu verbinden.
 
 Änderungen in der Software werden nicht benötigt.
 
+Als Spaß-Anwendung haben wir einen Demonstrator für ein Spiel wie
+Guitar Hero in Java geschrieben. Die Anwendung zeigt zufällig erzeugte Balken 
+auf dem LCD an, die sich zu einer Seite bewegen. Über die vier großen 
+Durcktaster lassen sich verschiedene Töne erzeugen und das dafür benutzte 
+Instrument lässt sich aus der 
+`General MIDI <http://en.wikipedia.org/wiki/General_MIDI>`__ Definition 
+wählen. Die Logik des Spiels fehlt allerdings komplett.
+
+Dieser Demonstrator soll zeigen, dass auch andere Anwendungen als die typischen
+Wetterstationsanwendungen möglich sind.
+
+.. image:: /Images/Kits/weather_station_guitar_350.jpg
+   :scale: 100 %
+   :alt: Game Application on Weather Station
+   :align: center
+   :target: ../../_images/Kits/weather_station_guitar_1200.jpg
+
+Der Code kann hier herunter geladen werden:`Download <https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
+
 .. FIXME: Regenmesser, windgeschwindigkeit etc

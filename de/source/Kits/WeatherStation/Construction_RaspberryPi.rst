@@ -15,9 +15,20 @@ Wir installieren einen :ref:`Master Brick <master_brick>`,
 eine :ref:`Step-Down Power Supply <step_down_power_supply>`, ein :ref:`DC Jack
 Adapter <dc_jack_adapter>` und das Raspberry Pi im Gehäuse.
 Das Raspberry Pi (und der Master Brick) werden über den DC Jack Adapter durch
-die Step-Down Power Supply versorgt.
+die Step-Down Power Supply versorgt. Zur Stromversorgung des Raspberry Pi haben
+wir den Stecker eines Micro USB Kabel abgeschnitten und die 
+Stromversorgungsadern (5V, GND) mit dem 2 Pol Stecker verbunden, der bei der 
+Step-Down Power Supply dabei ist (siehe Foto). 
+Ist unklar welches die 5V und GND Ader ist, so kann die Belegung im Internet 
+gefunden werden.
 
-Dieser Aufbau ist eine Erweiterung der :ref:`Basisversion
+.. image:: /Images/Kits/weather_station_construction_rpi_micro_usb_cable_350.jpg
+   :scale: 100 %
+   :alt: Micro USB Kabel zur Stromversorgung des Raspberry Pi
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_rpi_micro_usb_cable_1200.jpg
+
+Die Raspberry Pi Wetterstation ist eine Erweiterung der :ref:`Basisversion
 <starter_kit_weather_station_construction_basic>`. Daher sollte zuerst die
 Basisversion aufgebaut und dann, wie im Folgenden beschrieben, abgewandelt
 werden.

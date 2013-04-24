@@ -13,10 +13,21 @@ in the case, despite it is a bit tricky to get everything in the case.
 We will put a :ref:`Master Brick <master_brick>`,
 a :ref:`Step-Down Power Supply <step_down_power_supply>`, a :ref:`DC Jack
 Adapter <dc_jack_adapter>` and
-the Rapsberry Pi in the case. The Raspberry Pi (and the Master Brick) will
+the Raspberry Pi in the case. The Raspberry Pi (and the Master Brick) will
 be powered over the DC Jack Adapter by the Step-Down Power Supply.
+To power the Raspberry Pi we have used an Micro USB cable, removed the jack
+and connected the 5V and GND conductors with the 2 Pole Green Connector 
+supplied with the Step-Down Power Supply (see the following image).
+Which are the 5V and GND conductors is well documented in the internet.
 
-This is an extension of the :ref:`basic version
+.. image:: /Images/Kits/weather_station_construction_rpi_micro_usb_cable_350.jpg
+   :scale: 100 %
+   :alt: Micro USB Power Supply Cable for Raspberry Pi
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_rpi_micro_usb_cable_1200.jpg
+
+
+The Raspberry Pi Weather Station is an extension of the :ref:`basic version
 <starter_kit_weather_station_construction_basic>`. You should build the basic
 version first and then modify it as described down below.
 
