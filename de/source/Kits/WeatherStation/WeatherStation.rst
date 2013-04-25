@@ -294,7 +294,8 @@ Größere Drucktaster
 
 Die Drucktaster des LCD 20x4 Bricklet sind ein wenig fummelig. Als
 Erweiterung für die Wetterstation bieten wir große Drucktaster
-mit der `Wetterstation Drucktaster-Erweiterung <https://www.tinkerforge.com/de/shop/kits/weather-station-push-button-extension.html>`__ an.
+mit der `Wetterstation Drucktaster-Erweiterung
+<https://www.tinkerforge.com/de/shop/kits/weather-station-push-button-extension.html>`__ an.
 
 
 .. image:: /Images/Kits/weather_station_buttons_assembled_600.jpg
@@ -312,13 +313,13 @@ mit dem LCD 20x4 Bricklet zu verbinden.
 
 .. image:: /Images/Kits/weather_station_buttons_soldered_350.jpg
    :scale: 100 %
-   :alt: Push buttons wired up
+   :alt: Verkabelung der Drucktaster
    :align: center
    :target: ../../_images/Kits/weather_station_buttons_soldered_1200.jpg
 
 .. image:: /Images/Kits/weather_station_buttons_and_lcd_350.jpg
    :scale: 100 %
-   :alt: Push buttons connected to LCD20x4
+   :alt: Drucktaster verbunden mit dem LCD 20x4
    :align: center
    :target: ../../_images/Kits/weather_station_buttons_and_lcd_1200.jpg
 
@@ -327,7 +328,7 @@ mit dem LCD 20x4 Bricklet zu verbinden.
 Als Spaß-Anwendung haben wir einen Demonstrator für ein Spiel wie
 Guitar Hero in Java geschrieben. Die Anwendung zeigt zufällig erzeugte Balken 
 auf dem LCD an, die sich zu einer Seite bewegen. Über die vier großen 
-Durcktaster lassen sich verschiedene Töne erzeugen und das dafür benutzte 
+Drucktaster lassen sich verschiedene Töne erzeugen und das dafür benutzte
 Instrument lässt sich aus der 
 `General MIDI <http://en.wikipedia.org/wiki/General_MIDI>`__ Definition 
 wählen. Die Logik des Spiels fehlt allerdings komplett.
@@ -337,10 +338,11 @@ Wetterstationsanwendungen möglich sind.
 
 .. image:: /Images/Kits/weather_station_guitar_350.jpg
    :scale: 100 %
-   :alt: Game Application on Weather Station
+   :alt: Spieleanwedung auf der Wetterstation
    :align: center
    :target: ../../_images/Kits/weather_station_guitar_1200.jpg
 
-Der Code kann hier herunter geladen werden: `Download <https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
+Der Quelltext kann hier herunter geladen werden: `Download
+<https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
 
 .. FIXME: Regenmesser, windgeschwindigkeit etc

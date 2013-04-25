@@ -82,14 +82,14 @@ with high precision.
 
 It can be controlled by an (Embedded-) PC.
 Control via Wi-Fi is possible if a :ref:`WIFI Extension <wifi_extension>` is 
-added. To use it standalone you can use an embbeded board like the
+added. To use it standalone you can add an embedded board such as the
 :ref:`Raspberry Pi <embedded_raspberry_pi>` which can be mounted in the casing.
 The measurements can be displayed on the 20x4 character LCD, they can be shown on a
 website or uploaded to `Cosm <https://cosm.com/>`__. With the four buttons of
 the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` it is possible to control
 different modes.
 
-The kit allows it to modify soft- and hardware. The casing consists of
+The kit allows to modify soft- and hardware. The casing consists of
 tinker-friendly PMMA which can be easily modified (e.g. drill new holes with 
 simple wood drill). Additionally mounting holes for 
 :ref:`Analog In <analog_in_bricklet>` and :ref:`IO-4 <io4_bricklet>` Bricklets
@@ -152,8 +152,6 @@ to see if all of the sensors are working correctly. Now you can be sure that
 the Bricks and Bricklets have versions that work together and that
 everything will work if it is screwed together in the weather station
 enclosure.
-
-.. batti: screenshot brickv with all tabs?
 
 Construction
 ------------
@@ -294,7 +292,8 @@ Bigger Push Buttons
 
 The push buttons on the LCD 20x4 Bricklet are a bit fiddly. To extend
 the Weather Station with bigger buttons we provide the
-`Weather Station Push Button Extension <https://www.tinkerforge.com/en/shop/kits/weather-station-push-button-extension.html>`__.
+`Weather Station Push Button Extension
+<https://www.tinkerforge.com/en/shop/kits/weather-station-push-button-extension.html>`__.
 
 .. image:: /Images/Kits/weather_station_buttons_assembled_600.jpg
    :scale: 100 %
@@ -316,12 +315,11 @@ of soldering and some wires.
 
 .. image:: /Images/Kits/weather_station_buttons_and_lcd_350.jpg
    :scale: 100 %
-   :alt: Push buttons connected to LCD20x4
+   :alt: Push buttons connected to LCD 20x4
    :align: center
    :target: ../../_images/Kits/weather_station_buttons_and_lcd_1200.jpg
 
 Changes in software are not needed.
-
 
 As a fun example we have implemented a demonstrator for a game like Guitar Hero. 
 It does not have much functions. The application basically shows bars which will 
@@ -340,8 +338,8 @@ weather station applications.
    :align: center
    :target: ../../_images/Kits/weather_station_guitar_1200.jpg
 
-The code can be downloaded here: `Download <https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
-
+The source code can be downloaded here: `Download
+<https://raw.github.com/Tinkerforge/weather-station/master/examples/GuitarStation.java>`__
 
 
 .. FIXME: Regenmesser, windgeschwindigkeit etc
