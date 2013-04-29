@@ -54,11 +54,24 @@ linking must come after the source)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
 
+The simplest way to use the bindings in a C++ project is to rename the required
+source files from ``*.c`` to ``*.cpp``. Then the compiler will treat the source
+code as C++ and does the right thing automatically.
+
 
 Visual Studio
 ^^^^^^^^^^^^^
 
-With Visual Studio we can use our ``project_folder/`` as follows:
+With Visual Studio we can use the ``project_folder/`` too. The simplest way to
+use the bindings in a Visual C++ project is to rename the required source files
+from ``*.c`` to ``*.cpp``. Then the compiler will treat the source code as C++
+and does the right thing automatically.
+
+As a side note: this will also avoid the problem that the Visual Studio
+compiler supports the C89 standard only, but the bindings uses the newer C99
+standard.
+
+Now a new project can be created in Visual Studio by clicking:
 
 * File
 * New
@@ -70,17 +83,7 @@ With Visual Studio we can use our ``project_folder/`` as follows:
 * Choose "Console Application"
 * Click Finish
 
-Now we have to tell Visual Studio to use the C++ compiler, since we would need
-C99 but Visual Studio can only compile C89. This problem can be avoided by
-using the C++ compiler instead:
-
-* Project
-* Properties
-* C/C++
-* Advanced, option "Compile as"
-* Choose "Compile as C++ Code (/TP)"
-
-Also we have to include ``ws2_32.lib`` (WinSock2) by clicking on:
+Then ``ws2_32.lib`` (WinSock2) has to included by clicking:
 
 * Project
 * Properties
@@ -96,4 +99,4 @@ That's it, we are ready to go!
 
 The Visual Studio compiler can also be used from the command line::
 
- cl.exe /TP /I. brick_stepper.c ip_connection.c example_configuration.c /link /out:example_configuration.exe ws2_32.lib
+ cl.exe /I. brick_stepper.cpp ip_connection.cpp example_configuration.cpp /link /out:example_configuration.exe ws2_32.lib

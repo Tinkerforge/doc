@@ -52,11 +52,24 @@ kompilieren (Linkerparameter müssen nach den Quelldateien angegeben werden)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
 
+Der einfachste Weg die Bindings in einem C++ Projekt zu verwenden, ist es alle
+benötigten Dateien von ``*.c`` nach ``*.cpp`` umzubenennen. Dann behandelt der
+Compiler den Quelltext als C++ und tut automatisch das Richtige.
+
 
 Visual Studio
 ^^^^^^^^^^^^^
 
-Mit Visual Studio kann der ``project_folder/`` wie folgt verwendet werden:
+Mit Visual Studio kann der ``project_folder/`` auch verwendet werden. Der
+einfachste Weg die Bindings in einem Visual C++ Projekt zu verwenden, ist es
+alle benötigten Dateien von ``*.c`` nach ``*.cpp`` umzubenennen. Dann
+behandelt der Compiler den Quelltext als C++ und tut automatisch das Richtige.
+
+Als Randnotiz: Dadurch wird auch das Problem vermieden, dass der Visual Studio
+Compiler nur den C89 Standard unterstützt, die Bindings aber den neueren C99
+Standard verwenden.
+
+Jetzt kann ein neues Projekt in Visual Studio erzeugt werden:
 
 * File
 * New
@@ -67,16 +80,6 @@ Mit Visual Studio kann der ``project_folder/`` wie folgt verwendet werden:
 * Klicke Next
 * Wähle "Console Application"
 * Klicke Finish
-
-Als nächstes muss das Projekt auf den C++ Compiler umgestellt werden. Unser C
-Quelltext verwendet den C99 Standard, Visual Studio unterstützt aber nur C89.
-Diese Problem kann durch die Verwendung des C++ Compilers umgangen werden:
-
-* Project
-* Properties
-* C/C++
-* Advanced, Option "Compile as"
-* Wähle "Compile as C++ Code (/TP)"
 
 Zusätzlich muss noch ``ws2_32.lib`` (WinSock2) dem Projekt hinzugefügt werden:
 
@@ -94,4 +97,4 @@ Das waren alle nötigen Änderungen, jetzt kann es los gehen!
 
 Der Visual Studio Compiler kann auch von der Kommandozeile aus verwendet werden::
 
- cl.exe /TP /I. brick_stepper.c ip_connection.c example_configuration.c /link /out:example_configuration.exe ws2_32.lib
+ cl.exe /I. brick_stepper.cpp ip_connection.cpp example_configuration.cpp /link /out:example_configuration.exe ws2_32.lib
