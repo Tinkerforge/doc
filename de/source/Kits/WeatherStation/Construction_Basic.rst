@@ -47,7 +47,7 @@ geschraubt:
 
 * **4x:** Jeweils einen 10mm Abstandsbolzen mit einer 5mm Schraube 
   auf die Rückseitenplatte schrauben
-* **1x:** Den Master Brick mittels weiteren vier 5mm Schrauben
+* Den Master Brick mittels weiteren vier 5mm Schrauben
   anschrauben, dabei sollte die USB Buchse nach rechts zeigen
 
 .. image:: /Images/Kits/weather_station_construction_back_schematic_350.jpg
@@ -74,7 +74,7 @@ Gehäuses geschraubt:
 * **4x:** Eine 12mm Schraube von Außen durch die Gehäuseoberseite stecken,
   von der anderen Seite eine Unterlegscheibe hinterlegen und mit einer
   Mutter festschrauben 
-* **1x:** Das Ambient Light Bricklet, wie auf dem Foto abgebildet, 
+* Das Ambient Light Bricklet, wie auf dem Foto abgebildet, 
   mit 4 Muttern hinter das Oberseitenteil schrauben
 
 Anschließend sollte die Bricklet Buchse 1mm Luft zum Oberseitenteil haben. 
@@ -118,11 +118,11 @@ befestigt:
 
 * **8x:** Jeweils einen 10mm Abstandsbolzen mit einer 5mm Schraube auf der 
   **Innenseite** des Frontseitenteils befestigen
-* **1x:** Das Ambient Light Bricklet mit 5mm Schrauben an die
+* Das Ambient Light Bricklet mit 5mm Schrauben an die
   Abstandsbolzen schrauben
-* **1x:** Das Humidity Bricklet mit 5mm Schrauben an die
+* Das Humidity Bricklet mit 5mm Schrauben an die
   Abstandsbolzen schrauben
-* **1x:** Brickletkabel an die Bricklets anschließen
+* Brickletkabel an die Bricklets anschließen
 
 
 .. image:: /Images/Kits/weather_station_construction_front1_schematic_350.jpg
@@ -153,11 +153,11 @@ Nun wird das LCD 20x4 Bricklet an dem Frontseitenteil des Gehäuse befestigt:
 
 * **4x:** 12mm Schraube durch das Frontseitenteil stecken, auf dessen Rückseite
   eine Unterlegscheibe unterlegen und eine Mutter aufschrauben
-* **1x:** LCD Display dahinter stecken, so dass die Stiftleiste des LCDs nicht 
+* LCD Display dahinter stecken, so dass die Stiftleiste des LCDs nicht 
   auf der Seite des Ausschnitts der Frontseite liegt
 * **4x:** Das Display mit 10mm Abstandsbolzen festschrauben
-* **1x:** LCD 20x4 Bricklet auf das Display stecken
-* **1x:** Mit 5mm Schrauben das Bricklet an das Display schrauben
+* LCD 20x4 Bricklet auf das Display stecken
+* Mit 5mm Schrauben das Bricklet an das Display schrauben
 
 Am Ende sollten die Taster des LCD Bricklets über den Ausschnitt in der 
 Frontseite erreichbar sein.
