@@ -22,18 +22,39 @@ Abstandsbolzen, Muttern und Unterlegscheiben.
 
 Es gibt verschiedene Möglichkeiten die Bricks und Bricklets
 in dem Gehäuse zu befestigen. In dieser Aufbauanleitung stellen wir eine
-Möglichkeit vor.
+Möglichkeit vor. 
 
-Als erstes sollten die Schutzfolien von allen Gehäuseteilen entfernt werden.
-Es ist jeweils eine auf Vorder- und Rückseite vorhanden.
+Zum einfacheren Verständnis werden nachfolgend Skizzen dargestellt. 
+Bricks und Bricklets können an diese Teile auf zwei Arten 
+angeschraubt werden:
+
+* Wird ein Brick oder Bricklet **vor** ein Gehäuseteil geschraubt, so ist der 
+  Brick oder das Bricklet mit normalen Farben dargestellt
+* Wird ein Brick oder Bricklet **hinter** ein Gehäuseteil geschraubt, so ist 
+  der Brick oder das Bricklet in **Blau** dargestellt
+
+Folien entfernen
+----------------
+
+**Als erstes müssen die Schutzfolien von allen Gehäuseteilen entfernt werden.
+Es ist jeweils eine auf Vorder- und Rückseite jedes Gehäuseteils vorhanden.**
 
 Master Brick an Rückseite
 -------------------------
 
-Danach beginnen wir damit den Master Brick auf die Rückseite zu schrauben.
-Dazu nutzen wir 10mm Abstandsbolzen und Schrauben und schrauben den
-Brick auf die Innenseite der Rückseitenplatte. Dabei sollte die USB Buchse
-nach außen zeigen.
+Als nächstes wird der Master Brick an das Rückseitenteil des Gehäuses
+geschraubt:
+
+* **4x:** Jeweils einen 10mm Abstandsbolzen mit einer 5mm Schraube 
+  auf die Rückseitenplatte schrauben
+* **1x:** Den Master Brick mittels weiteren vier 5mm Schrauben
+  anschrauben. Dabei sollte die USB Buchse nach außen zeigen
+
+.. image:: /Images/Kits/weather_station_construction_back_schematic_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 1 schematisch (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_back_schematic_1200.jpg
 
 .. image:: /Images/Kits/weather_station_construction_back_350.jpg
    :scale: 100 %
@@ -41,22 +62,33 @@ nach außen zeigen.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_back_1200.jpg
 
+
 Ambient Light Bricklet an Oberseite
 -----------------------------------
 
-Im nächsten Schritt befestigen wir das Ambient Light Bricklet an der Oberseite
-des Gehäuses. Um sicherzustellen, dass auch das geringste Licht von dem Sensor
-eingefangen werden kann schrauben wir es direkt an die Oberseite des Gehäuses.
-Dazu nutzen wir die langen 12mm Schrauben, stecken diese von Außen durch das
-Gehäuseteil und Schrauben von Innen jeweils eine Unterlegscheibe mit einer
-Mutter dagegen. Diese nutzen wir um den korrekten Abstand einzustellen.
-Anschließend schrauben wir das Ambient Light Bricklet mit jeweils einer
-Mutter an.
+Im nächsten Schritt wird das Ambient Light Bricklet an das Oberseitenteil
+des Gehäuses befestigt. Um sicherzustellen, dass auch das geringste Licht von
+dem Sensor eingefangen werden kann, wird es direkt an die Oberseite des 
+Gehäuses geschraubt:
 
-Anschließend sollte die
-Bricklet Buchse sollte 1mm Luft nach oben haben. So sollte es möglich sein
-einfach das Brickletkabel einzustecken und dennoch den Sensor an einer guten
-Position zu haben um gute Messungen zu erhalten.
+* **4x:** Eine 12mm Schraube von Außen durch die Gehäuseoberseite stecken,
+  von der anderen Seite eine Unterlegscheibe hinterlegen und mit einer
+  Mutter festschrauben 
+* **1x:** Das Ambient Light Bricklet, wie auf dem Foto abgebildet, 
+  Ausrichtung nach Außen, mit jeweils 4 Muttern hinter das Oberseitenteil 
+  schrauben
+
+Anschließend sollte die Bricklet Buchse 1mm Luft nach oben haben. So sollte es 
+möglich sein einfach das Brickletkabel einzustecken und dennoch den Sensor an 
+einer guten Position zu haben um gute Messungen zu erhalten.
+
+
+.. image:: /Images/Kits/weather_station_construction_top_schematic_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 2 schematisch (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_top_schematic_1200.jpg
+
 
 .. image:: /Images/Kits/weather_station_construction_top_350.jpg
    :scale: 100 %
@@ -64,8 +96,14 @@ Position zu haben um gute Messungen zu erhalten.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_1200.jpg
 
-Im Falle der schwarzen Wetterstation wird das Ambient Light Bricklet
-auf der Außenseite der Oberseite des Gehäuses befestigt.
+Alternative: Bei der **schwarzen** Wetterstation wird das Ambient Light 
+Bricklet auf der Außenseite des Oberseitenteils befestigt:
+
+.. image:: /Images/Kits/weather_station_black_construction_top_schematic_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 2 schematisch (Basis Version, schwarz)
+   :align: center
+   :target: ../../_images/Kits/weather_station_black_construction_top_schematic_1200.jpg
 
 .. image:: /Images/Kits/weather_station_black_construction_top_350.jpg
    :scale: 100 %
@@ -76,17 +114,23 @@ auf der Außenseite der Oberseite des Gehäuses befestigt.
 Humidity und Barometer Bricklet an Frontseite
 ---------------------------------------------
 
-Humidity und Barometer Bricklet werden an der Frontseite befestigt.
-Wir schrauben sie mittels 10mm Abstandsbolzen und Schrauben an der Innenseite
-fest.
+Humidity und Barometer Bricklet werden von hinten an dem Frontseitenteil
+befestigt:
 
-Auf diese Art ist genügend Platz zwischen den Sensoren um gute Messergebnisse
-zu  erlauben. Falls auf der Unterseite irgendwann größere Komponenten befestigt
-werden sollen, so können die Bricklets auch genauso wie das Ambient Light Bricklet
-angeschraubt werden um Platz zu sparen.
+* **8x:** Jeweils einen 10mm Abstandsbolzen auf die **Innenseite** des 
+  Frontseitenteils mit einer 5mm Schraube befestigen
+* **1x:** Das Ambient Light Bricklet mit 5mm Schrauben an die
+  Abstandsbolzen schrauben
+* **1x:** Das Humidity Bricklet mit 5mm Schrauben an die
+  Abstandsbolzen schrauben.
+* **1x:** Brickletkabel an die Bricklets anschließen
 
-Hiernach sollten die Brickletkabel angeschlossen werden um im nächsten Schritt
-das LCD Bricklet einfacher installieren zu können.
+
+.. image:: /Images/Kits/weather_station_construction_front1_schematic_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 3 schematisch (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_front1_schematic_1200.jpg
 
 .. image:: /Images/Kits/weather_station_construction_front1_350.jpg
    :scale: 100 %
@@ -94,19 +138,33 @@ das LCD Bricklet einfacher installieren zu können.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_front1_1200.jpg
 
+Auf diese Art ist genügend Platz zwischen den Sensoren um gute Messergebnisse
+zu  erlauben. Falls auf der Unterseite irgendwann größere Komponenten befestigt
+werden sollen, so können die Bricklets auch genauso wie das Ambient Light Bricklet
+ohne Abstandsbolzen angeschraubt werden um Platz zu sparen. Der Anschluss
+der Brickletkabel vereinfacht die Installation des LCD Bricklets im nächsten 
+Schritt.
+
+
+
 LCD 20x4 Bricklet an Frontseite
 -------------------------------
 
-Nun befestigen wir das LCD 20x4 Bricklet am Gehäuse. Die einfachste
-Möglichkeit ist vermutlich damit zu beginnen die 10mm Abstandsbolzen an
-die schwarze LCD Bricklet-Platine zu schrauben. Anschließend steckt man
-das LCD oben drauf und nutzt jeweils eine Mutter und eine Unterlegscheibe
-um das komplette LCD Bricklet mit den langen 12mm Schrauben auf die Frontseite
-des Gehäuses zu schrauben.
+Nun wird das LCD 20x4 Bricklet an dem Frontseitenteil des Gehäuse befestigt:
 
-In dieser Anleitung verlegen wir die Bricklet Kabel unter dem LCD 20x4 Bricklet.
-Es ist auch möglich diese zwischen den beiden Leiterplatten zu verlegen,
-somit wären die Kabel etwas mehr verdeckt.
+* **4x:** 10mm Abstandsbolzen mit einer 5mm Schraube an der schwarzen LCD 
+  Platine befestigen
+* **1x:** LCD aufstecken
+* **4x:** 12mm Schraube durch das Frontseitenteil stecken, auf dessen Rückseite
+  eine Unterlegscheibe unterlegen und eine Mutter aufschrauben
+* **1x:** LCD 20x4 Bricklet mittels der zuvor durchgesteckten 12mm Schrauben 
+  an dem Frontseitenteil befestigen
+
+.. image:: /Images/Kits/weather_station_construction_front2_schematic_350.jpg
+   :scale: 100 %
+   :alt: Wetterstationsaufbau Schritt 4 schematisch (Basis Version)
+   :align: center
+   :target: ../../_images/Kits/weather_station_construction_front2_schematic_1200.jpg
 
 .. image:: /Images/Kits/weather_station_construction_front2_350.jpg
    :scale: 100 %
@@ -114,9 +172,17 @@ somit wären die Kabel etwas mehr verdeckt.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_front2_1200.jpg
 
-Um das Gehäuse nun zusammenzusetzen beginnen wir damit
-die Oberseite in die Rückseite einzusetzen. Anschließend
-schließen wir das Ambient Light Bricklet an den Master Brick an.
+In dieser Anleitung werden die Bricklet Kabel unter dem LCD 20x4 Bricklet 
+verlegt. Es ist auch möglich diese zwischen den beiden Leiterplatten zu 
+verlegen, somit wären die Kabel etwas mehr verdeckt.
+
+Gehäuse zusammensetzen
+----------------------
+
+Im letzten Schritt wird das Gehäuse zusammengesetzt:
+
+* Oberseitenteil (inkl. Ambient Light Bricklet) in das Rückseitenteil einsetzen
+* Ambient Light Bricklet an dem Master Brick anschließen
 
 .. image:: /Images/Kits/weather_station_construction_top_to_back_350.jpg
    :scale: 100 %
@@ -124,14 +190,11 @@ schließen wir das Ambient Light Bricklet an den Master Brick an.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_to_back_1200.jpg
 
-Seitenteile zusammenfügen
--------------------------
-
-Als nächstes setzen wir die Seitenteile ein und bauen uns Abstandshalter.
-Diese sollen eine Höhe von 40mm haben und werden jeweils aus zwei 9mm, einem
-12mm und einem 10mm Abstandsbolzen zusammengesetzt. Die Abstandsbolzen
-werden anschließend auf die Rückseite des Gehäuses jeweils durch eine Schraube
-von Außen geschraubt.
+* Seitenteile einsetzen (1x links, 2x rechts)
+* **4x:** Abstandshalter aus einem 12mm, zwei 9mm und einem 10mm 
+  Abstandsbolzen zusammensetzen
+* **4x:** Zusammengesetzten Abstandshalter auf das Rückseitenteil durch 5mm 
+  Schraube anschrauben (siehe nachfolgendes Foto)
 
 .. image:: /Images/Kits/weather_station_construction_top_back_spacer_350.jpg
    :scale: 100 %
@@ -139,8 +202,8 @@ von Außen geschraubt.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_back_spacer_1200.jpg
 
-Nun müssen nurnoch die drei anderen Bricklets angeschlossen werden.
-Dies funktioniert am besten, wenn Front- und Rückseite nebeneinander liegen.
+* Die anderen Bricklets an den Master Brick anschließen. Dazu Front- und 
+  Rückseitenteil nebeneinander legen (siehe Foto)
 
 .. image:: /Images/Kits/weather_station_construction_cabling_350.jpg
    :scale: 100 %
@@ -148,12 +211,14 @@ Dies funktioniert am besten, wenn Front- und Rückseite nebeneinander liegen.
    :align: center
    :target: ../../_images/Kits/weather_station_construction_cabling_1200.jpg
 
-Zum Schluss müssen wir nurnoch die Frontseite auf die Rückseite stecken
-und beides über die vier fehlenden Schrauben verbinden. Das war's! Nun ist
-die Wetterstation aufgebaut.
+* Front- auf das Rückseitenteil stecken und über vier 5mm Schrauben verbinden
+
 
 .. image:: /Images/Kits/weather_station_construction_350.jpg
    :scale: 100 %
    :alt: Wetterstationsaufbau Schritt 8 (Basis Version)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_1200.jpg
+
+**Das war's! Nun ist die Wetterstation aufgebaut.**
+

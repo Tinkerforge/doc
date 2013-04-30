@@ -24,8 +24,8 @@ There are several ways to mount the Bricks and Bricklets in the
 case. In this construction tutorial we will show one way to
 put everything together.
 
-At first we will remove the protective foil on all casing parts.
-There is one foil on the front- and backside each.
+**At first we will remove the protective foil on all casing parts.
+There is one foil on the front- and backside each.**
 
 Master Brick on Backside
 ------------------------
