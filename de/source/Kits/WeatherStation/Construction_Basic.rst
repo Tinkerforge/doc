@@ -155,7 +155,7 @@ Nun wird das LCD 20x4 Bricklet an dem Frontseitenteil des Gehäuse befestigt:
   eine Unterlegscheibe unterlegen und eine Mutter aufschrauben
 * LCD Display dahinter stecken, so dass die Stiftleiste des LCDs nicht 
   auf der Seite des Ausschnitts der Frontseite liegt
-* **4x:** Das Display mit 10mm Abstandsbolzen festschrauben
+* Das Display mit vier 10mm Abstandsbolzen festschrauben
 * LCD 20x4 Bricklet auf das Display stecken
 * Mit 5mm Schrauben das Bricklet an das Display schrauben
 
