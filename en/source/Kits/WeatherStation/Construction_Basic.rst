@@ -27,15 +27,15 @@ put everything together.
 For easy understanding there are some sketches in the following.
 Bricks and Bricklets could be mounted in two ways:
 
-* If a Brick or Bricklet is mounted **in front** of a case part, the
+* If a Brick or Bricklet is mounted on the **front** side of a case part, the
   Brick or Bricklet is shown in normal colors
-* If a Brick or Bricklet is mounted **on the rear** of a case part, the
+* If a Brick or Bricklet is mounted on the **back** side of a case part, the
   Brick or Bricklet is shown in **blue**
 
-Remove Protective foils
+Remove Protective Foils
 -----------------------
 
-At first the protective foils on all casing parts have to be removed.
+At first the protective foils on all case parts have to be removed.
 There is one foil on the front- and backside each.
 
 Master Brick on Backside
@@ -59,9 +59,6 @@ In the next step the Master Brick has to be screwed on the backside part:
    :align: center
    :target: ../../_images/Kits/weather_station_construction_back_1200.jpg
 
-
-
-
 Ambient Light Bricklet on Topside
 ---------------------------------
 
@@ -70,9 +67,9 @@ part of the case. To make sure that it picks up as little light as possible
 from the LCD backlight, it is screwed directly to the topside of the case:
 
 * **4x:** Put a 12mm screw from the outside through the case part and screw
-  a washer and a nut from the otherside against it.
+  a washer and a nut from the other side against it
 * Screw the Ambient Light Bricklet, as depicted on the following image,
-  with four nuts.
+  with four nuts
 
 If everything went as expected the Bricklet connector should have about 
 1mm space to the topside part. This way it is still easy to connect the 
@@ -109,11 +106,11 @@ on top of the outside of the topside.
 Humidity and Barometer Bricklet on Frontside
 --------------------------------------------
 
-Humidity and Barometer Bricklet will be attached directly to the frontside part 
+Humidity and Barometer Bricklet will be attached directly to the front side part
 of the case:
 
 * **8x:** Screw a 10mm spacer with a 5mm screw to the **inside** on the 
-  frontside part
+  front side part
 * Mount the Ambient Light Bricklet with 5mm screws to the spacers
 * Mount the Humidity Bricklet with 5mm screws to the spacers
 * Attach the Bricklet cable to the Bricklets
@@ -132,7 +129,7 @@ of the case:
 
 This way there is enough space between the sensors and the case
 to allow good measurements. If you intend
-to attach something big on the bottomside, you can attach the Humidity and
+to attach something big on the bottom side, you can attach the Humidity and
 Barometer Bricklets the same way as the Ambient Light Bricklet to save space.
 The already attached Bricklet cables will make the installation of the LCD 
 Bricklet in the next step more easy.
@@ -140,18 +137,18 @@ Bricklet in the next step more easy.
 LCD 20x4 Bricklet on Frontside
 ------------------------------
 
-Now we mount the LCD 20x4 Bricklet to the frontside of the case:
+Now we mount the LCD 20x4 Bricklet to the front side of the case:
 
 * **4x:** Put a 12mm screw from the outside through the case part and screw
-  a washer and a nut from the otherside against it.
-* Put the LCD Display on the four screws such that the pin strip is not next to the 
-  cut-out of the frontside part.
-* Fix the display with four 10mm spacer
+  a washer and a nut from the other side against it
+* Put the LCD Display on the four screws such that the pin header is not next
+  to the  cut-out of the front side part
+* Fix the display with four 10mm spacers
 * Attach the LCD 20x4 Bricklet to the display
 * Fix it with four 5mm screws
 
 At the end the buttons of the LCD Bricklet should be reachable through the
-cut-out of the frontside.
+cut-out of the front side.
 
 .. image:: /Images/Kits/weather_station_construction_front2_schematic_350.jpg
    :scale: 100 %
@@ -202,8 +199,7 @@ In the last step the parts of the case are put together:
    :align: center
    :target: ../../_images/Kits/weather_station_construction_cabling_1200.jpg
 
-* Assemble front- and backside part and fix them with four 5mm screws
-
+* Assemble front- and back side part and fix them with four 5mm screws
 
 .. image:: /Images/Kits/weather_station_construction_350.jpg
    :scale: 100 %

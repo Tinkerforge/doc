@@ -52,13 +52,13 @@ geschraubt:
 
 .. image:: /Images/Kits/weather_station_construction_back_schematic_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 1 schematisch (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 1 schematisch (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_back_schematic_1200.jpg
 
 .. image:: /Images/Kits/weather_station_construction_back_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 1 (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 1 (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_back_1200.jpg
 
@@ -78,20 +78,20 @@ Gehäuses geschraubt:
   mit 4 Muttern hinter das Oberseitenteil schrauben
 
 Anschließend sollte die Bricklet Buchse 1mm Luft zum Oberseitenteil haben. 
-So sollte es möglich sein einfach das Brickletkabel einzustecken und dennoch 
+So sollte es möglich sein einfach das Bricklet Kabel einzustecken und dennoch
 den Sensor an einer Position zu haben, um gute Messungen zu erhalten.
 
 
 .. image:: /Images/Kits/weather_station_construction_top_schematic_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 2 schematisch (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 2 schematisch (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_schematic_1200.jpg
 
 
 .. image:: /Images/Kits/weather_station_construction_top_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 2 (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 2 (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_1200.jpg
 
@@ -100,13 +100,13 @@ Bricklet auf der Außenseite des Oberseitenteils befestigt:
 
 .. image:: /Images/Kits/weather_station_black_construction_top_schematic_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 2 schematisch (Basis Version, schwarz)
+   :alt: Wetterstationsaufbau Schritt 2 schematisch (Basisversion, schwarz)
    :align: center
    :target: ../../_images/Kits/weather_station_black_construction_top_schematic_1200.jpg
 
 .. image:: /Images/Kits/weather_station_black_construction_top_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 2 (Basis Version, schwarz)
+   :alt: Wetterstationsaufbau Schritt 2 (Basisversion, schwarz)
    :align: center
    :target: ../../_images/Kits/weather_station_black_construction_top_1200.jpg
 
@@ -124,16 +124,15 @@ befestigt:
   Abstandsbolzen schrauben
 * Brickletkabel an die Bricklets anschließen
 
-
 .. image:: /Images/Kits/weather_station_construction_front1_schematic_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 3 schematisch (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 3 schematisch (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_front1_schematic_1200.jpg
 
 .. image:: /Images/Kits/weather_station_construction_front1_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 3 (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 3 (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_front1_1200.jpg
 
@@ -141,9 +140,8 @@ Auf diese Art ist genügend Platz zwischen den Sensoren um gute Messergebnisse
 zu  erlauben. Falls auf der Unterseite irgendwann größere Komponenten befestigt
 werden sollen, so können die Bricklets auch genauso wie das Ambient Light Bricklet
 ohne Abstandsbolzen angeschraubt werden um Platz zu sparen. Der Anschluss
-der Brickletkabel vereinfacht die Installation des LCD Bricklets im nächsten 
+der Bricklet Kabel vereinfacht die Installation des LCD Bricklets im nächsten
 Schritt.
-
 
 
 LCD 20x4 Bricklet an Frontseite
@@ -164,13 +162,13 @@ Frontseite erreichbar sein.
 
 .. image:: /Images/Kits/weather_station_construction_front2_schematic_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 4 schematisch (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 4 schematisch (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_front2_schematic_1200.jpg
 
 .. image:: /Images/Kits/weather_station_construction_front2_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 4 (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 4 (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_front2_1200.jpg
 
@@ -188,7 +186,7 @@ Im letzten Schritt wird das Gehäuse zusammengesetzt:
 
 .. image:: /Images/Kits/weather_station_construction_top_to_back_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 5 (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 5 (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_to_back_1200.jpg
 
@@ -200,7 +198,7 @@ Im letzten Schritt wird das Gehäuse zusammengesetzt:
 
 .. image:: /Images/Kits/weather_station_construction_top_back_spacer_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 6 (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 6 (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_back_spacer_1200.jpg
 
@@ -209,18 +207,16 @@ Im letzten Schritt wird das Gehäuse zusammengesetzt:
 
 .. image:: /Images/Kits/weather_station_construction_cabling_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 7 (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 7 (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_cabling_1200.jpg
 
 * Front- auf das Rückseitenteil stecken und über vier 5mm Schrauben verbinden
 
-
 .. image:: /Images/Kits/weather_station_construction_350.jpg
    :scale: 100 %
-   :alt: Wetterstationsaufbau Schritt 8 (Basis Version)
+   :alt: Wetterstationsaufbau Schritt 8 (Basisversion)
    :align: center
    :target: ../../_images/Kits/weather_station_construction_1200.jpg
 
 **Das war's! Nun ist die Wetterstation aufgebaut.**
-
