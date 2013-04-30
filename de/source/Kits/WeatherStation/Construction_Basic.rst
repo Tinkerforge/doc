@@ -33,11 +33,11 @@ angeschraubt werden:
 * Wird ein Brick oder Bricklet **hinter** ein Gehäuseteil geschraubt, so ist 
   der Brick oder das Bricklet in **Blau** dargestellt
 
-Folien entfernen
-----------------
+Schutzfolien entfernen
+----------------------
 
-**Als erstes müssen die Schutzfolien von allen Gehäuseteilen entfernt werden.
-Es ist jeweils eine auf Vorder- und Rückseite jedes Gehäuseteils vorhanden.**
+Als erstes müssen die Schutzfolien von allen Gehäuseteilen entfernt werden.
+Es ist jeweils eine auf Vorder- und Rückseite jedes Gehäuseteils vorhanden.
 
 Master Brick an Rückseite
 -------------------------
@@ -48,7 +48,7 @@ geschraubt:
 * **4x:** Jeweils einen 10mm Abstandsbolzen mit einer 5mm Schraube 
   auf die Rückseitenplatte schrauben
 * **1x:** Den Master Brick mittels weiteren vier 5mm Schrauben
-  anschrauben. Dabei sollte die USB Buchse nach außen zeigen
+  anschrauben, dabei sollte die USB Buchse nach rechts zeigen
 
 .. image:: /Images/Kits/weather_station_construction_back_schematic_350.jpg
    :scale: 100 %
@@ -75,12 +75,11 @@ Gehäuses geschraubt:
   von der anderen Seite eine Unterlegscheibe hinterlegen und mit einer
   Mutter festschrauben 
 * **1x:** Das Ambient Light Bricklet, wie auf dem Foto abgebildet, 
-  Ausrichtung nach Außen, mit jeweils 4 Muttern hinter das Oberseitenteil 
-  schrauben
+  mit 4 Muttern hinter das Oberseitenteil schrauben
 
-Anschließend sollte die Bricklet Buchse 1mm Luft nach oben haben. So sollte es 
-möglich sein einfach das Brickletkabel einzustecken und dennoch den Sensor an 
-einer guten Position zu haben um gute Messungen zu erhalten.
+Anschließend sollte die Bricklet Buchse 1mm Luft zum Oberseitenteil haben. 
+So sollte es möglich sein einfach das Brickletkabel einzustecken und dennoch 
+den Sensor an einer Position zu haben, um gute Messungen zu erhalten.
 
 
 .. image:: /Images/Kits/weather_station_construction_top_schematic_350.jpg
@@ -117,12 +116,12 @@ Humidity und Barometer Bricklet an Frontseite
 Humidity und Barometer Bricklet werden von hinten an dem Frontseitenteil
 befestigt:
 
-* **8x:** Jeweils einen 10mm Abstandsbolzen auf die **Innenseite** des 
-  Frontseitenteils mit einer 5mm Schraube befestigen
+* **8x:** Jeweils einen 10mm Abstandsbolzen mit einer 5mm Schraube auf der 
+  **Innenseite** des Frontseitenteils befestigen
 * **1x:** Das Ambient Light Bricklet mit 5mm Schrauben an die
   Abstandsbolzen schrauben
 * **1x:** Das Humidity Bricklet mit 5mm Schrauben an die
-  Abstandsbolzen schrauben.
+  Abstandsbolzen schrauben
 * **1x:** Brickletkabel an die Bricklets anschließen
 
 
@@ -152,13 +151,16 @@ LCD 20x4 Bricklet an Frontseite
 
 Nun wird das LCD 20x4 Bricklet an dem Frontseitenteil des Gehäuse befestigt:
 
-* **4x:** 10mm Abstandsbolzen mit einer 5mm Schraube an der schwarzen LCD 
-  Platine befestigen
-* **1x:** LCD aufstecken
 * **4x:** 12mm Schraube durch das Frontseitenteil stecken, auf dessen Rückseite
   eine Unterlegscheibe unterlegen und eine Mutter aufschrauben
-* **1x:** LCD 20x4 Bricklet mittels der zuvor durchgesteckten 12mm Schrauben 
-  an dem Frontseitenteil befestigen
+* **1x:** LCD Display dahinter stecken, so dass die Stiftleiste des LCDs nicht 
+  auf der Seite des Ausschnitts der Frontseite liegt
+* **4x:** Das Display mit 10mm Abstandsbolzen festschrauben
+* **1x:** LCD 20x4 Bricklet auf das Display stecken
+* **1x:** Mit 5mm Schrauben das Bricklet an das Display schrauben
+
+Am Ende sollten die Taster des LCD Bricklets über den Ausschnitt in der 
+Frontseite erreichbar sein.
 
 .. image:: /Images/Kits/weather_station_construction_front2_schematic_350.jpg
    :scale: 100 %
@@ -194,7 +196,7 @@ Im letzten Schritt wird das Gehäuse zusammengesetzt:
 * **4x:** Abstandshalter aus einem 12mm, zwei 9mm und einem 10mm 
   Abstandsbolzen zusammensetzen
 * **4x:** Zusammengesetzten Abstandshalter auf das Rückseitenteil durch 5mm 
-  Schraube anschrauben (siehe nachfolgendes Foto)
+  Schraube anschrauben 
 
 .. image:: /Images/Kits/weather_station_construction_top_back_spacer_350.jpg
    :scale: 100 %
@@ -203,7 +205,7 @@ Im letzten Schritt wird das Gehäuse zusammengesetzt:
    :target: ../../_images/Kits/weather_station_construction_top_back_spacer_1200.jpg
 
 * Die anderen Bricklets an den Master Brick anschließen. Dazu Front- und 
-  Rückseitenteil nebeneinander legen (siehe Foto)
+  Rückseitenteil nebeneinander legen 
 
 .. image:: /Images/Kits/weather_station_construction_cabling_350.jpg
    :scale: 100 %
