@@ -70,8 +70,8 @@ After this you have to execute the following steps::
  cd src/brickd
  make
  sudo make install
- update-rc.d brickd defaults
- /etc/init.d/brickd start
+ sudo update-rc.d brickd defaults
+ sudo /etc/init.d/brickd start
 
 
 Install Brick Viewer
