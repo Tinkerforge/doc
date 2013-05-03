@@ -393,10 +393,10 @@ Step 4: Error handling and Logging
             $this->brickletAmbientLight->setIlluminanceCallbackPeriod(1000);
             $this->brickletAmbientLight->registerCallback(BrickletAmbientLight::CALLBACK_ILLUMINANCE,
                                                           array($this, 'illuminanceCB'));
-            echo "AmbientLight initialized\n";
+            echo "Ambient Light initialized\n";
         } catch(Exception $e) {
             $this->brickletAmbientLight = null;
-            echo "AmbientLight init failed: $e\n";
+            echo "Ambient Light init failed: $e\n";
         }
     }
 

@@ -349,10 +349,10 @@ Schritt 4: Fehlerbehandlung und Logging
         brickletAmbientLight := TBrickletAmbientLight.Create(uid, ipcon);
         brickletAmbientLight.SetIlluminanceCallbackPeriod(1000);
         brickletAmbientLight.OnIlluminance := {$ifdef FPC}@{$endif}IlluminanceCB;
-        WriteLn('AmbientLight initialized');
+        WriteLn('Ambient Light initialized');
       except
         on e: Exception do begin
-          WriteLn('AmbientLight init failed: ' + e.Message);
+          WriteLn('Ambient Light init failed: ' + e.Message);
           brickletAmbientLight := nil;
         end;
       end;

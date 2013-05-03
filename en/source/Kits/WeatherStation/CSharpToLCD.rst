@@ -352,11 +352,11 @@ Step 4: Error handling and Logging
             brickletAmbientLight = new BrickletAmbientLight(UID, ipcon);
             brickletAmbientLight.SetIlluminanceCallbackPeriod(1000);
             brickletAmbientLight.Illuminance += IlluminanceCB;
-            System.Console.WriteLine("AmbientLight initialized");
+            System.Console.WriteLine("Ambient Light initialized");
         }
         catch(TinkerforgeException e)
         {
-            System.Console.WriteLine("AmbientLight init failed: " + e.Message);
+            System.Console.WriteLine("Ambient Light init failed: " + e.Message);
             brickletAmbientLight = null;
         }
     }

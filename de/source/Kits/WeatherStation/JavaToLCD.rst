@@ -337,10 +337,10 @@ Schritt 4: Fehlerbehandlung und Logging
             brickletAmbientLight = new BrickletAmbientLight(uid, ipcon);
             brickletAmbientLight.setIlluminanceCallbackPeriod(1000);
             brickletAmbientLight.addIlluminanceListener(this);
-            System.out.println("AmbientLight initialized");
+            System.out.println("Ambient Light initialized");
         } catch(com.tinkerforge.TinkerforgeException e) {
             brickletAmbientLight = null;
-            System.out.println("AmbientLight init failed: " + e);
+            System.out.println("Ambient Light init failed: " + e);
         }
     }
 

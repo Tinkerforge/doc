@@ -295,9 +295,9 @@ Schritt 4: Fehlerbehandlung und Logging
             self.al.set_illuminance_callback_period(1000)
             self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
                                       self.cb_illuminance)
-            log.info('AmbientLight initialized')
+            log.info('Ambient Light initialized')
         except Error as e:
-            log.error('AmbientLight init failed: ' + str(e.description))
+            log.error('Ambient Light init failed: ' + str(e.description))
             self.al = None
 
 |step4_logging1|

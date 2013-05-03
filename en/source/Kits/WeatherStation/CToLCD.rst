@@ -385,9 +385,9 @@ Step 4: Error handling and Logging
 
         int rc = ambient_light_set_illuminance_callback_period(&ws->ambient_light, 1000);
         if(rc < 0) {
-            fprintf(stderr, "AmbientLight init failed: %d\n", rc);
+            fprintf(stderr, "Ambient Light init failed: %d\n", rc);
         } else {
-            printf("AmbientLight initialized\n");
+            printf("Ambient Light initialized\n");
         }
     }
 

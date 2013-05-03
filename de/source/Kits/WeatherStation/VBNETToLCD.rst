@@ -310,9 +310,9 @@ Schritt 4: Fehlerbehandlung und Logging
             brickletAmbientLight = New BrickletAmbientLight(UID, ipcon)
             brickletAmbientLight.SetIlluminanceCallbackPeriod(1000)
             AddHandler brickletAmbientLight.Illuminance, AddressOf IlluminanceCB
-            System.Console.WriteLine("AmbientLight initialized")
+            System.Console.WriteLine("Ambient Light initialized")
         Catch e As TinkerforgeException
-            System.Console.WriteLine("AmbientLight init failed: " + e.Message)
+            System.Console.WriteLine("Ambient Light init failed: " + e.Message)
             brickletAmbientLight = Nothing
         End Try
     End If

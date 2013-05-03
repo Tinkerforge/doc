@@ -316,10 +316,10 @@ Schritt 4: Fehlerbehandlung und Logging
       ambient_light.set_illuminance_callback_period 1000
       ambient_light.register_callback(BrickletAmbientLight::CALLBACK_ILLUMINANCE) do |illuminance|
       end
-      puts 'AmbientLight initialized'
+      puts 'Ambient Light initialized'
     rescue Exception => e
       ambient_light = nil
-      puts 'AmbientLight init failed: ' + e
+      puts 'Ambient Light init failed: ' + e
     end
 
 |step4_logging1|
