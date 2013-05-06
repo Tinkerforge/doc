@@ -114,30 +114,30 @@ Step 2: Initialize Bricklets on Enumeration
 
 .. code-block:: python
 
-            if device_identifier == LCD20x4.DEVICE_IDENTIFIER:
-                self.lcd = LCD20x4(uid, self.ipcon)
-                self.lcd.clear_display()
-                self.lcd.backlight_on()
+    if device_identifier == LCD20x4.DEVICE_IDENTIFIER:
+        self.lcd = LCD20x4(uid, self.ipcon)
+        self.lcd.clear_display()
+        self.lcd.backlight_on()
 
 |step2_other_config1|
 
 .. code-block:: python
 
-            elif device_identifier == AmbientLight.DEVICE_IDENTIFIER:
-                self.al = AmbientLight(uid, self.ipcon)
-                self.al.set_illuminance_callback_period(1000)
-                self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
-                                          self.cb_illuminance)
-            elif device_identifier == Humidity.DEVICE_IDENTIFIER:
-                self.hum = Humidity(uid, self.ipcon)
-                self.hum.set_humidity_callback_period(1000)
-                self.hum.register_callback(self.hum.CALLBACK_HUMIDITY,
-                                           self.cb_humidity)
-            elif device_identifier == Barometer.DEVICE_IDENTIFIER:
-                self.baro = Barometer(uid, self.ipcon)
-                self.baro.set_air_pressure_callback_period(1000)
-                self.baro.register_callback(self.baro.CALLBACK_AIR_PRESSURE,
-                                            self.cb_air_pressure)
+    elif device_identifier == AmbientLight.DEVICE_IDENTIFIER:
+        self.al = AmbientLight(uid, self.ipcon)
+        self.al.set_illuminance_callback_period(1000)
+        self.al.register_callback(self.al.CALLBACK_ILLUMINANCE,
+                                  self.cb_illuminance)
+    elif device_identifier == Humidity.DEVICE_IDENTIFIER:
+        self.hum = Humidity(uid, self.ipcon)
+        self.hum.set_humidity_callback_period(1000)
+        self.hum.register_callback(self.hum.CALLBACK_HUMIDITY,
+                                   self.cb_humidity)
+    elif device_identifier == Barometer.DEVICE_IDENTIFIER:
+        self.baro = Barometer(uid, self.ipcon)
+        self.baro.set_air_pressure_callback_period(1000)
+        self.baro.register_callback(self.baro.CALLBACK_AIR_PRESSURE,
+                                    self.cb_air_pressure)
 
 |step2_other_config2|
 
