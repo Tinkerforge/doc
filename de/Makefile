@@ -5,7 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
-BUILDDIR      = build
+BUILDDIR      = build-in-progress
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -41,8 +41,10 @@ html:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 	@echo
 	@echo "Changing Source_Code.html from doc to downloads"
-	sed -e "s|'doc'|'downloads'|" build/html/Downloads.html > build/html/Downloads.htmltmp
-	mv build/html/Downloads.htmltmp build/html/Downloads.html
+	sed -e "s|'doc'|'downloads'|" $(BUILDDIR)/html/Downloads.html > $(BUILDDIR)/html/Downloads.htmltmp
+	mv $(BUILDDIR)/html/Downloads.htmltmp $(BUILDDIR)/html/Downloads.html
+	rm -rf build/*
+	mv -T $(BUILDDIR) build
 
 fasthtml:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
@@ -50,8 +52,10 @@ fasthtml:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 	@echo
 	@echo "Changing Source_Code.html from doc to downloads"
-	sed -e "s|'doc'|'downloads'|" build/html/Downloads.html > build/html/Downloads.htmltmp
-	mv build/html/Downloads.htmltmp build/html/Downloads.html
+	sed -e "s|'doc'|'downloads'|" $(BUILDDIR)/html/Downloads.html > $(BUILDDIR)/html/Downloads.htmltmp
+	mv $(BUILDDIR)/html/Downloads.htmltmp $(BUILDDIR)/html/Downloads.html
+	rm -rf build/*
+	mv -T $(BUILDDIR) build
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
