@@ -171,21 +171,22 @@ upload function in a thread:
                                      'min_value': value[1],
                                      'max_value': value[2]})
 
-            data = {
-              'version' : '1.0.0',
-              'datastreams': stream_items,
-            }
+            data = {'version' : '1.0.0',
+                    'datastreams': stream_items}
             self.items = {}
             body = json.dumps(data)
 
-            http = httplib.HTTPSConnection(Cosm.HOST)
-            http.request('PUT', self.params, body, self.headers)
-            response = http.getresponse()
-            http.close()
+            try:
+                http = httplib.HTTPSConnection(Cosm.HOST)
+                http.request('PUT', self.params, body, self.headers)
+                response = http.getresponse()
+                http.close()
 
-            if response.status != 200:
-                log.error('Could not upload to cosm -> ' +
-                          str(response.status) + ': ' + response.reason)
+                if response.status != 200:
+                    log.error('Could not upload to cosm -> ' +
+                              str(response.status) + ': ' + response.reason)
+            except Exception as e:
+                log.error('HTTP error: ' + str(e))
 
 Here we take the data that was gathered, package it in the JSON format and
 send a HTTP PUT request with the data and the header that was defined in
