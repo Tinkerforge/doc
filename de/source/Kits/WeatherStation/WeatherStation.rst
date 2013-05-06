@@ -180,6 +180,13 @@ Verschiedene Aufbauvarianten
 * :ref:`WLAN Wetterstation <starter_kit_weather_station_construction_wifi>`
 * :ref:`Raspberry Pi Wetterstation <starter_kit_weather_station_construction_rpi>`
 
+.. toctree::
+   :hidden:
+
+   Construction_Basic
+   Construction_RaspberryPi
+   Construction_Wifi
+
 RS485, Ethernet, etc.
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -220,6 +227,8 @@ Beispielanwendungen mit Schritt-für-Schritt Anleitungen existieren für:
 
 |write_to_lcd_examples|.
 
+.. include:: WriteToLCD.toctree
+
 Cosm Anbindung
 ^^^^^^^^^^^^^^
 
@@ -236,6 +245,11 @@ Historie der Wetterstationsdaten speichern, sowie nette Graphen zeichnen:
 Eine Beispiel-Implementierung mit Schritt-für-Schritt Instruktionen
 die die Wetterdaten auf Cosm veröffentlicht is verfügbar
 in :ref:`Python <starter_kit_weather_station_cosm>`.
+
+.. toctree::
+   :hidden:
+
+   PythonToCosm
 
 Die Wetterstation in unserem Labor hat den Cosm Feed
 `125881 <https://cosm.com/feeds/125881>`__. Viel Spass beim
@@ -256,8 +270,13 @@ auf eine Webseite:
 In diesem Projekt werden wir JavaScript/AJAX nutzen um die Messwerte
 alle 5 Sekunden auf einer Webseite neu zu laden.
 
-Eine Beispiel-Implementierung ist 
+Eine Beispielimplementierung ist 
 in :ref:`PHP <starter_kit_weather_station_website>` verfügbar.
+
+.. toctree::
+   :hidden:
+
+   PHPToWebsite
 
 Anzeige von Statistiken mit Umschaltung per Taster
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -281,6 +300,11 @@ Die vier Taster werden in diesem Projekt genutzt um zwischen
 
 Eine Beispielimplementierung ist
 in :ref:`C# <starter_kit_weather_station_button_control>` verfügbar.
+
+.. toctree::
+   :hidden:
+
+   CSharpToButtonControl
 
 Zusätzlich Erweiterungen
 ------------------------

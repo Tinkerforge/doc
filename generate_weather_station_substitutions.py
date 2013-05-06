@@ -6,199 +6,32 @@ import sys
 
 lang = 'en'
 
-          # display,   uri
-bricks = [('DC',      'dc'),
-          ('Debug',   'debug'),
-          ('IMU',     'imu'),
-          ('Master',  'master'),
-          ('Servo',   'servo'),
-          ('Stepper', 'stepper')]
+            # display,            example,              uri,      filename, getting started
+bindings = [('C/C++',             'C',                  'c',      'C',      {'en': 'http://www.cprogramming.com/',
+                                                                             'de': 'http://www.cprogramming.com/'}),
+            ('C#',                'C#',                 'csharp', 'CSharp', {'en': 'http://csharp.net-tutorials.com/',
+                                                                             'de': 'http://csharp.net-tutorials.com/'}),
+            ('Delphi',            'Delphi',             'delphi', 'Delphi', {'en': 'http://www.delphibasics.co.uk/',
+                                                                             'de': 'http://www.delphi-treff.de/tutorials/grundlagen/'}),
+            ('Java',              'Java',               'java',   'Java',   {'en': 'http://docs.oracle.com/javase/tutorial/',
+                                                                             'de': 'http://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
+            ('PHP',               'PHP',                'php',    'PHP',    {'en': 'http://www.php.net/manual/en/getting-started.php',
+                                                                             'de': 'http://www.php.net/manual/de/getting-started.php'}),
+            ('Python',            'Python',             'python', 'Python', {'en': 'http://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
+                                                                             'de': 'http://www.python.org/about/gettingstarted/'}),
+            ('Ruby',              'Ruby',               'ruby',   'Ruby',   {'en': 'http://www.ruby-lang.org/en/documentation/quickstart/',
+                                                                             'de': 'http://www.ruby-lang.org/de/documentation/quickstart/'}),
+            ('Visual Basic .NET', 'Visual Basic .NET',  'vbnet',  'VBNET',  {'en': 'http://howtostartprogramming.com/vb-net/',
+                                                                             'de': 'http://howtostartprogramming.com/vb-net/'})] # http://openbook.galileocomputing.de/vb_net/index.htm
 
-             # display,                    uri
-bricklets = [('Ambient Light',             'ambient_light'),
-             ('Analog In',                 'analog_in'),
-             ('Analog Out',                'analog_out'),
-             ('Barometer',                 'barometer'),
-             ('Breakout',                  'breakout'),
-             ('Current12',                 'current12'),
-             ('Current25',                 'current25'),
-             ('Distance IR',               'distance_ir'),
-             ('Dual Relay',                'dual_relay'),
-             ('GPS',                       'gps'),
-             ('Humidity',                  'humidity'),
-             ('Industrial Digital In 4',   'industrial_digital_in_4'),
-             ('Industrial Digital Out 4',  'industrial_digital_out_4'),
-             ('Industrial Quad Relay',     'industrial_quad_relay'),
-             ('IO-16',                     'io16'),
-             ('IO-4',                      'io4'),
-             ('Joystick',                  'joystick'),
-             ('LCD 16x2',                  'lcd_16x2'),
-             ('LCD 20x4',                  'lcd_20x4'),
-             ('Linear Poti',               'linear_poti'),
-             ('Piezo Buzzer',              'piezo_buzzer'),
-             ('Rotary Poti',               'rotary_poti'),
-             ('Temperature',               'temperature'),
-             ('Temperature IR',            'temperature_ir'),
-             ('Voltage',                   'voltage'),
-             ('Voltage/Current',           'voltage_current'),
-            ]
-
-brick_test_intro = {
-'en':
-""".. |test_intro| replace::
- To test the {0} Brick you need to have the
- :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
- (for installation guides click :ref:`here <brickd_installation>`
- and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
- to the Brick Daemon.
-""",
-'de':
-""".. |test_intro| replace::
- Um den {0} Brick testen zu können müssen der
- :ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
- (für Installationsanleitungen :ref:`hier <brickd_installation>`
- und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
- dem Brick Daemon verbunden sein.
-
-"""
-}
-
-brick_test_tab = {
-'en':
-""".. |test_tab| replace::
- Now connect the Brick to the PC over USB, you should see a new tab named
- "{0} Brick" in the Brick Viewer after a moment. Select this tab.
-""",
-'de':
-""".. |test_tab| replace::
- Wenn der Brick per USB an den PC angeschlossen wird sollte einen Moment später
- im Brick Viewer ein neuer Tab namens "{0} Brick" auftauchen. Wähle diesen Tab
- aus.
-"""
-}
-
-brick_test_pi_ref = {
-'en':
-""".. |test_pi_ref| replace::
- After this test you can go on with writing your own application.
- See the :ref:`Programming Interface <{0}_brick_programming_interfaces>`
- section for the API of the {1} Brick and examples in different programming
- languages.
-""",
-'de':
-""".. |test_pi_ref| replace::
- Nun kann ein eigenes Programm geschrieben werden. Der Abschnitt
- :ref:`Programmierschnittstellen <{0}_brick_programming_interfaces>` listet die
- API des {1} Bricks und Beispiele in verschiedenen Programmiersprachen auf.
-"""
-}
-
-bricklet_test_intro = {
-'en':
-""".. |test_intro| replace::
- To test the {0} Bricklet you need to have the
- :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
- (for installation guides click :ref:`here <brickd_installation>`
- and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
- to the Brick Daemon.
-""",
-'de':
-""".. |test_intro| replace::
- Um das {0} Bricklet testen zu können müssen der
- :ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
- (für Installationsanleitungen :ref:`hier <brickd_installation>`
- und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
- dem Brick Daemon verbunden sein.
-"""
-}
-
-bricklet_test_connect = {
-'en':
-""".. |test_connect| replace::
- Connect the {0} Bricklet to a :ref:`Brick <product_overview_bricks>`
- with the supplied cable
-""",
-'de':
-""".. |test_connect| replace::
- Als nächstes muss das {0} Bricklet über das mitgelieferte Kabel mit
- einem :ref:`Brick <product_overview_bricks>` verbunden werden
-"""
-}
-
-bricklet_test_tab = {
-'en':
-""".. |test_tab| replace::
- If you connect the Brick to the PC over USB, you should see a new tab named
- "{0} Bricklet" in the Brick Viewer after a moment. Select this tab.
-""",
-'de':
-""".. |test_tab| replace::
- Wenn der Brick per USB an den PC angeschlossen wird sollte einen Moment später
- im Brick Viewer ein neuer Tab namens "{0} Bricklet" auftauchen.
- Wähle diesen Tab aus.
-"""
-}
-
-bricklet_test_pi_ref = {
-'en':
-""".. |test_pi_ref| replace::
- After this test you can go on with writing your own application.
- See the :ref:`Programming Interface <{0}_bricklet_programming_interfaces>`
- section for the API of the {1} Bricklet and examples in different programming
- languages.
-""",
-'de':
-""".. |test_pi_ref| replace::
- Nun kann ein eigenes Programm geschrieben werden. Der Abschnitt
- :ref:`Programmierschnittstellen <{0}_bricklet_programming_interfaces>` listet
- die API des {1} Bricklets und Beispiele in verschiedenen
- Programmiersprachen auf.
-"""
-}
-
-def make_brick_substitutions(brick):
-    substitutions = ''
-    substitutions += brick_test_intro[lang].format(brick[0]) + '\n'
-    substitutions += brick_test_tab[lang].format(brick[0]) + '\n'
-    substitutions += brick_test_pi_ref[lang].format(brick[1], brick[0])
-
-    return substitutions
-
-def make_bricklet_substitutions(bricklet):
-    substitutions = ''
-    substitutions += bricklet_test_intro[lang].format(bricklet[0]) + '\n'
-    substitutions += bricklet_test_connect[lang].format(bricklet[0]) + '\n'
-    substitutions += bricklet_test_tab[lang].format(bricklet[0]) + '\n'
-    substitutions += bricklet_test_pi_ref[lang].format(bricklet[1], bricklet[0])
-
-    return substitutions
-
-                            # display,            example,              uri,      filename, getting started
-weather_station_bindings = [('C/C++',             'C',                  'c',      'C',      {'en': 'http://www.cprogramming.com/',
-                                                                                             'de': 'http://www.cprogramming.com/'}),
-                            ('C#',                'C#',                 'csharp', 'CSharp', {'en': 'http://csharp.net-tutorials.com/',
-                                                                                             'de': 'http://csharp.net-tutorials.com/'}),
-                            ('Delphi',            'Delphi',             'delphi', 'Delphi', {'en': 'http://www.delphibasics.co.uk/',
-                                                                                             'de': 'http://www.delphi-treff.de/tutorials/grundlagen/'}),
-                            ('Java',              'Java',               'java',   'Java',   {'en': 'http://docs.oracle.com/javase/tutorial/',
-                                                                                             'de': 'http://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
-                            ('PHP',               'PHP',                'php',    'PHP',    {'en': 'http://www.php.net/manual/en/getting-started.php',
-                                                                                             'de': 'http://www.php.net/manual/de/getting-started.php'}),
-                            ('Python',            'Python',             'python', 'Python', {'en': 'http://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
-                                                                                             'de': 'http://www.python.org/about/gettingstarted/'}),
-                            ('Ruby',              'Ruby',               'ruby',   'Ruby',   {'en': 'http://www.ruby-lang.org/en/documentation/quickstart/',
-                                                                                             'de': 'http://www.ruby-lang.org/de/documentation/quickstart/'}),
-                            ('Visual Basic .NET', 'Visual Basic .NET',  'vbnet',  'VBNET',  {'en': 'http://howtostartprogramming.com/vb-net/',
-                                                                                             'de': 'http://howtostartprogramming.com/vb-net/'})] # http://openbook.galileocomputing.de/vb_net/index.htm
-
-weather_station_binding_name = {
+binding_name = {
 'en':
 """:ref:`{0} <api_bindings_{1}>`""",
 'de':
 """:ref:`{0} <api_bindings_{1}>`"""
 }
 
-weather_station_binding_names = {
+binding_names = {
 'en':
 """
 .. |bindings| replace:: {0}
@@ -209,7 +42,7 @@ weather_station_binding_names = {
 """
 }
 
-weather_station_common_intro = {
+common_intro = {
 'en':
 """
 >>>intro
@@ -233,32 +66,47 @@ Falls dies nicht der Fall ist sollte `hier <{2}>`__ begonnen werden. Information
 """
 }
 
-weather_station_write_to_lcd_examples = {
-'en':
-"""
-.. |write_to_lcd_examples| replace:: {0}
-""",
-'de':
-"""
-.. |write_to_lcd_examples| replace:: {0}
-"""
-}
-
-weather_station_write_to_lcd_example_line = {
+write_to_lcd_example_line = {
 'en':
 """:ref:`{0} <starter_kit_weather_station_{1}_to_lcd>`""",
 'de':
 """:ref:`{0} <starter_kit_weather_station_{1}_to_lcd>`"""
 }
 
-weather_station_write_to_lcd_example_download_line = {
+write_to_lcd_examples = {
 'en':
-"""`{0} <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/{1}>`__""",
+"""
+.. |write_to_lcd_examples| replace:: {0}
+""",
 'de':
-"""`{0} <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/{1}>`__"""
+"""
+.. |write_to_lcd_examples| replace:: {0}
+"""
 }
 
-weather_station_write_to_lcd_example_downloads = {
+write_to_lcd_examples_toctree_line = {
+'en':
+"""   {0}ToLCD""",
+'de':
+"""   {0}ToLCD""",
+}
+
+write_to_lcd_examples_toctree = {
+'en':
+""".. toctree::
+   :hidden:
+
+{0}
+""",
+'de':
+""".. toctree::
+   :hidden:
+
+{0}
+"""
+}
+
+write_to_lcd_example_downloads = {
 'en':
 """
 .. |write_to_lcd_examples_download| replace:: {0}
@@ -269,7 +117,25 @@ weather_station_write_to_lcd_example_downloads = {
 """
 }
 
-weather_station_write_to_lcd_goals = {
+write_to_lcd_example_download_line = {
+'en':
+"""`{0} <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/{1}>`__""",
+'de':
+"""`{0} <https://github.com/Tinkerforge/weather-station/tree/master/write_to_lcd/{1}>`__"""
+}
+
+write_to_lcd_example_downloads = {
+'en':
+"""
+.. |write_to_lcd_examples_download| replace:: {0}
+""",
+'de':
+"""
+.. |write_to_lcd_examples_download| replace:: {0}
+"""
+}
+
+write_to_lcd_goals = {
 'en':
 """
 >>>goals
@@ -318,7 +184,7 @@ werden können.
 """
 }
 
-weather_station_write_to_lcd_steps = {
+write_to_lcd_steps = {
 'en':
 """
 .. |step1_start_off| replace::
@@ -513,7 +379,7 @@ weather_station_write_to_lcd_steps = {
 .. |step2_intro| replace::
  Während des Enumerierungsprozesse sollen alle messenden Bricklets konfiguriert
  werden. Dadurch ist sichergestellt, dass sie neu konfiguriert werden nach
- einem Verbindungsabbrüche oder einer Unterbrechung der Stromversorgung.
+ einem Verbindungsabbruch oder einer Unterbrechung der Stromversorgung.
 
 .. |step2_enumerate| replace::
  Die Konfiguration soll beim ersten Start (|ENUMERATION_TYPE_CONNECTED|)
@@ -636,43 +502,50 @@ weather_station_write_to_lcd_steps = {
 """
 }
 
-def make_weather_station_substitutions():
+def make_substitutions():
     substitutions = ''
 
-    binding_names = []
-    for binding in weather_station_bindings:
-        binding_names.append(weather_station_binding_name[lang].format(binding[0], binding[2]))
+    formated_binding_names = []
+    for binding in bindings:
+        formated_binding_names.append(binding_name[lang].format(binding[0], binding[2]))
 
-    substitutions += weather_station_binding_names[lang].format(', '.join(binding_names)) + '\n'
+    substitutions += binding_names[lang].format(', '.join(formated_binding_names)) + '\n'
 
     example_lines = []
-    for binding in weather_station_bindings:
-        example_lines.append(weather_station_write_to_lcd_example_line[lang].format(binding[1], binding[2]))
+    for binding in bindings:
+        example_lines.append(write_to_lcd_example_line[lang].format(binding[1], binding[2]))
 
-    substitutions += weather_station_write_to_lcd_examples[lang].format(', '.join(example_lines))
+    substitutions += write_to_lcd_examples[lang].format(', '.join(example_lines))
 
     example_download_lines = []
-    for binding in weather_station_bindings:
-        example_download_lines.append(weather_station_write_to_lcd_example_download_line[lang].format(binding[1], binding[2]))
+    for binding in bindings:
+        example_download_lines.append(write_to_lcd_example_download_line[lang].format(binding[1], binding[2]))
 
-    substitutions += weather_station_write_to_lcd_example_downloads[lang].format(', '.join(example_download_lines))
-
-    return substitutions
-
-def make_weather_station_common_substitutions(binding):
-    substitutions = ''
-    substitutions += weather_station_common_intro[lang].format(binding[1], binding[2], binding[4][lang])
+    substitutions += write_to_lcd_example_downloads[lang].format(', '.join(example_download_lines))
 
     return substitutions
 
-def make_weather_station_write_to_lcd_substitutions(binding):
+def make_common_substitutions(binding):
     substitutions = ''
-    substitutions += weather_station_write_to_lcd_goals[lang] + '\n'
+    substitutions += common_intro[lang].format(binding[1], binding[2], binding[4][lang])
+
+    return substitutions
+
+def make_write_to_lcd_substitutions(binding):
+    substitutions = ''
+    substitutions += write_to_lcd_goals[lang] + '\n'
     substitutions += '>>>substitutions\n'
-    substitutions += weather_station_write_to_lcd_steps[lang] + '\n'
+    substitutions += write_to_lcd_steps[lang] + '\n'
     substitutions += '<<<substitutions\n'
 
     return substitutions
+
+def make_write_to_lcd_toctree():
+    toctree_lines = []
+    for binding in bindings:
+        toctree_lines.append(write_to_lcd_examples_toctree_line[lang].format(binding[3]))
+
+    return write_to_lcd_examples_toctree[lang].format('\n'.join(toctree_lines))
 
 def generate(path):
     global lang
@@ -685,28 +558,19 @@ def generate(path):
         print 'Wrong working directory'
         sys.exit(1)
 
-    for brick in bricks:
-        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_')
-
-        print 'Generating {0}_Brick.substitutions (Hardware)'.format(name)
-        file(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick.substitutions'), 'wb').write(make_brick_substitutions(brick))
-
-    for bricklet in bricklets:
-        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_')
-
-        print 'Generating {0}.substitutions (Hardware)'.format(name)
-        file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '.substitutions'), 'wb').write(make_bricklet_substitutions(bricklet))
-
     print 'Generating WeatherStation.substitutions'
-    file(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WeatherStation.substitutions'), 'wb').write(make_weather_station_substitutions())
+    file(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WeatherStation.substitutions'), 'wb').write(make_substitutions())
 
-    for binding in weather_station_bindings:
+    for binding in bindings:
         print 'Generating {0}Common.substitutions (WeatherStation)'.format(binding[3])
-        file(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'Common.substitutions'), 'wb').write(make_weather_station_common_substitutions(binding))
+        file(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'Common.substitutions'), 'wb').write(make_common_substitutions(binding))
 
-    for binding in weather_station_bindings:
+    for binding in bindings:
         print 'Generating {0}ToLCD.substitutions (WeatherStation)'.format(binding[3])
-        file(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'ToLCD.substitutions'), 'wb').write(make_weather_station_write_to_lcd_substitutions(binding))
+        file(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'ToLCD.substitutions'), 'wb').write(make_write_to_lcd_substitutions(binding))
+
+    print 'Generating WriteToLCD.toctree (WeatherStation)'
+    file(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WriteToLCD.toctree'), 'wb').write(make_write_to_lcd_toctree())
 
 if __name__ == "__main__":
     generate(os.getcwd())
