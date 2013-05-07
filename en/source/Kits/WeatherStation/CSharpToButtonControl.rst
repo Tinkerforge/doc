@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using C# to Control the Buttons for Statistics
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using C# to show different Weather Statistics
 
 .. _starter_kit_weather_station_button_control:
 
-Using C# to Control the Buttons for Statistics
-==============================================
+Using C# to show different Weather Statistics
+=============================================
 
 .. include:: CSharpCommon.substitutions
    :start-after: >>>intro
