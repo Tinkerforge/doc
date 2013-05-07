@@ -321,6 +321,7 @@ Step 4: Error handling and Logging
       ambient_light = nil
       puts 'Ambient Light init failed: ' + e
     end
+  end
 
 |step4_logging1|
 
