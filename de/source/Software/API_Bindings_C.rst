@@ -129,7 +129,7 @@ werden::
   win32:LIBS += -lws2_32
   unix:QMAKE_CXXFLAGS += -pthread
   SOURCES += ip_connection.c brick_stepper.c example_configuration.c
-  HEADERS += ip_connection.h
+  HEADERS += ip_connection.h brick_stepper.h
 
 Dies weist Qt Creator an, dass dies eine Konsolenanwendung namens
 "example_configuration" ist. Sie ist gegen die ``ws2_32`` Bibliothek auf Windows
@@ -139,8 +139,18 @@ Bevor das Programm jetzt gestartet werden kann muss noch der Haken bei
 "Run in terminal" auf dem Tab für die Run Konfiguration des Projekts gesetzt
 werden, ansonsten wird die Ausgabe des Programms nicht angezeigt.
 
+Jetzt kann das Programm kompiliert und gestartet werden!
+
 Dies ist ein Beispiel ein Projekt in C. Der einfachste Weg die Bindings in
 einem C++ Projekt zu verwenden, ist es alle benötigten Dateien von ``*.c`` nach
 ``*.cpp`` umzubenennen und die ``SOURCES`` Zeile in ``project_folder.pro``
 entsprechend anzupassen. Dann behandelt der Compiler den Quelltext als C++ und
 tut automatisch das Richtige.
+
+Um die C/C++ Bindings zu einem bestehenden Qt Creator Projekt hinzuzufügen
+müssen nur die benötigten Dateien zu den ``SOURCES`` und ``HEADERS`` Variablen
+hinzugefügt und folgende zwei Zeilen in die ``.pro`` Datei des Projekts
+eingefügt werden::
+
+  win32:LIBS += -lws2_32
+  unix:QMAKE_CXXFLAGS += -pthread

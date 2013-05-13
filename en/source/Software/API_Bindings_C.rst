@@ -129,7 +129,7 @@ and paste the following lines into it and save the result::
   win32:LIBS += -lws2_32
   unix:QMAKE_CXXFLAGS += -pthread
   SOURCES += ip_connection.c brick_stepper.c example_configuration.c
-  HEADERS += ip_connection.h
+  HEADERS += ip_connection.h brick_stepper.h
 
 This tells Qt Creator that this is an console application named
 "example_configuration". It is linked to the ``ws2_32`` library on Windows and
@@ -138,8 +138,17 @@ uses pthreads on Unix (Linux, Mac OS X, etc).
 Before stating the program you need to tick the "Run in terminal" check box on
 the project's run configuration tab, otherwise its output will not be visible.
 
+Now the program can be compiled and started!
+
 This is an example for a project in C. If you want to use the bindings in a C++
 project then the simplest way to do this is to rename the required source files
 from ``*.c`` to ``*.cpp`` and to change the ``SOURCES`` line in
 ``project_folder.pro`` accordingly. Then the compiler will treat the source
 code as C++ and does the right thing automatically.
+
+If you want to add the C/C++ bindings to an existing Qt Creator project then
+you just need to add the required source files to the ``SOURCES`` and
+``HEADERS`` variables and add these two lines to your ``.pro`` file::
+
+  win32:LIBS += -lws2_32
+  unix:QMAKE_CXXFLAGS += -pthread
