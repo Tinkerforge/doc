@@ -349,6 +349,15 @@ mit dem LCD 20x4 Bricklet zu verbinden.
 
 Änderungen in der Software werden nicht benötigt.
 
+Um einen Taster an das LCD 20x4 Bricklet anzuschließen muss der eine Pin des Tasters mit 
+GND und der andere mit einem Eingang (BTN0-BTN3) verbunden werden.
+
+.. image:: /Images/Kits/weather_station_button_wiring_350.jpg
+   :scale: 100 %
+   :alt: Taster Verdrahtung mit dem LCD 20x4 Bricklet
+   :align: center
+   :target: ../../_images/Kits/weather_station_button_wiring.jpg
+
 Als Spaß-Anwendung haben wir einen Demonstrator für ein Spiel wie
 Guitar Hero in Java geschrieben. Die Anwendung zeigt zufällig erzeugte Balken 
 auf dem LCD an, die sich zu einer Seite bewegen. Über die vier großen 

@@ -345,6 +345,16 @@ of soldering and some wires.
 
 Changes in software are not needed.
 
+To connect a button to the LCD 20x4 Bricklet you have to connect one pin of the button with
+GND and the other with one input of the LCD 20x4 Bricklet (BTN0-BTN3).
+
+.. image:: /Images/Kits/weather_station_button_wiring_350.jpg
+   :scale: 100 %
+   :alt: Button Connect Howto
+   :align: center
+   :target: ../../_images/Kits/weather_station_button_wiring.jpg
+
+
 As a fun example we have implemented a demonstrator for a game like Guitar Hero. 
 It does not have much functions. The application basically shows bars which will 
 be randomly rendered and moved to one side of the LCD.
