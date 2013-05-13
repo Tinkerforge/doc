@@ -98,3 +98,49 @@ Das waren alle nötigen Änderungen, jetzt kann es los gehen!
 Der Visual Studio Compiler kann auch von der Kommandozeile aus verwendet werden::
 
  cl.exe /I. brick_stepper.cpp ip_connection.cpp example_configuration.cpp /link /out:example_configuration.exe ws2_32.lib
+
+
+Qt Creator
+^^^^^^^^^^
+
+Mit Qt Creator kann der ``project_folder/`` auch verwendet werden.
+
+Jetzt kann ein neues Projekt für den ``project_folder/`` in Qt Creator erzeugt
+werden:
+
+* File
+* New File or Project...
+* Wähle Other Project
+* Wähle Empty Qt Project
+* Klicke Choose...
+* Wähle "project_folder" als Name
+* Wähle den Ordner der den ``project_folder/`` beinhaltet für "Create in"
+* Klicke Next
+* Klicke Next
+* Klicke Finish
+
+Qt Creator sollte jetzt eine leere Datei namens ``project_folder.pro`` anzeige.
+In diesem müssen jetzt folgende Zeilen kopiert und das Ergebnis gespeichert
+werden::
+
+  TEMPLATE = app
+  CONFIG += console
+  TARGET = example_configuration
+  win32:LIBS += -lws2_32
+  unix:QMAKE_CXXFLAGS += -pthread
+  SOURCES += ip_connection.c brick_stepper.c example_configuration.c
+  HEADERS += ip_connection.h
+
+Dies weist Qt Creator an, dass dies eine Konsolenanwendung namens
+"example_configuration" ist. Sie ist gegen die ``ws2_32`` Bibliothek auf Windows
+zu linken und verwendet pthreads auf Unix (Linux, Mac OS X, etc).
+
+Bevor das Programm jetzt gestartet werden kann muss noch der Haken bei
+"Run in terminal" auf dem Tab für die Run Konfiguration des Projekts gesetzt
+werden, ansonsten wird die Ausgabe des Programms nicht angezeigt.
+
+Dies ist ein Beispiel ein Projekt in C. Der einfachste Weg die Bindings in
+einem C++ Projekt zu verwenden, ist es alle benötigten Dateien von ``*.c`` nach
+``*.cpp`` umzubenennen und die ``SOURCES`` Zeile in ``project_folder.pro``
+entsprechend anzupassen. Dann behandelt der Compiler den Quelltext als C++ und
+tut automatisch das Richtige.
