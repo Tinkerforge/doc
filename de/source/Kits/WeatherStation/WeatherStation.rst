@@ -350,7 +350,9 @@ mit dem LCD 20x4 Bricklet zu verbinden.
 Änderungen in der Software werden nicht benötigt.
 
 Um einen Taster an das LCD 20x4 Bricklet anzuschließen muss der eine Pin des Tasters mit 
-GND und der andere mit einem Eingang (BTN0-BTN3) verbunden werden.
+GND und der andere mit einem Eingang (BTN0-BTN3) verbunden werden. In den vorhergehenden 
+Fotos haben wir eine schwarze Leitung genommen und GND durchzuschleifen und rote Leitungen
+um jeden Taster mit einem Eingang zu verbinden.
 
 .. image:: /Images/Kits/weather_station_button_wiring_350.jpg
    :scale: 100 %

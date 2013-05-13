@@ -346,7 +346,9 @@ of soldering and some wires.
 Changes in software are not needed.
 
 To connect a button to the LCD 20x4 Bricklet you have to connect one pin of the button with
-GND and the other with one input of the LCD 20x4 Bricklet (BTN0-BTN3).
+GND and the other with one input of the LCD 20x4 Bricklet (BTN0-BTN3). In the pictures 
+above we have used a black wire to connect GND through and red wires to connect each button
+with one input.
 
 .. image:: /Images/Kits/weather_station_button_wiring_350.jpg
    :scale: 100 %
