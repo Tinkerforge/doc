@@ -95,8 +95,8 @@ Das Kit ermöglicht es nach eigenen Wünschen sowohl Soft- als auch Hardware
 zu gestalten. Das Gehäuse besteht aus bastelfreundlichem PMMA und ist einfach
 zu bearbeiten. Zusätzlich sind bereits Bohrlöcher für 
 :ref:`Analog In <analog_in_bricklet>` und :ref:`IO-4 <io4_bricklet>` Bricklets 
-vorhanden. So können auch noch weitere Sensoren (
-`Anemometer <https://de.wikipedia.org/wiki/Anemometer>`__, 
+vorhanden. So können auch noch weitere Sensoren
+(`Anemometer <https://de.wikipedia.org/wiki/Anemometer>`__,
 `Pluviometer <https://de.wikipedia.org/wiki/Pluviometer>`__ etc.)
 angeschlossen werden.
 
