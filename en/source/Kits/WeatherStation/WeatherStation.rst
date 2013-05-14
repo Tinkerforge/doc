@@ -64,14 +64,14 @@ Features
 
 .. Einrueckung so beibehalten, da sonst kaputt
 
-* Fully-fledged open source weather station.
-* Measures Temperature, Humidity, Air Pressure and Illuminance.
+* Fully-fledged open source weather station
+* Measures Temperature, Humidity, Air Pressure and Illuminance
 * High Precision and Resolution
 
   * e.g. Air Pressure 0.012mbar and Temperature 0.01°C
 
-* Control over USB, Wi-Fi or with Raspberry Pi.
-* Modifiable with more buttons, more sensors and changed software.
+* Control over USB, Wi-Fi or with Raspberry Pi
+* Modifiable: more buttons, more sensors and customized software
 
 Description
 -----------

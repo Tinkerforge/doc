@@ -64,14 +64,14 @@ Features
 
 .. Einrueckung so beibehalten, da sonst kaputt
 
-* Vollwertige Open Source Wetterstation.
-* Misst Temperatur, Luftfeuchtigkeit, Luftdruck und Helligkeit.
+* Vollwertige Open Source Wetterstation
+* Misst Temperatur, Luftfeuchtigkeit, Luftdruck und Helligkeit
 * Hohe Präzision und Auflösung
 
-  * z.B. Luftdruck 0,012mbar und Temperatur 0,01°C. 
+  * z.B. Luftdruck 0,012mbar und Temperatur 0,01°C
 
-* Steuerung über USB, WLAN oder mit Raspberry Pi.
-* Modifizierbar mit mehr Tastern, mehr Sensoren und veränderter Software.
+* Steuerung über USB, WLAN oder mit Raspberry Pi
+* Modifizierbar: Mehr Taster, mehr Sensoren und eigene Software
 
 Beschreibung
 ------------
@@ -83,7 +83,7 @@ Präzision.
 Sie kann per USB von einem (Embedded-) PC gesteuert werden. 
 Auch eine Steuerung per WLAN ist über die :ref:`WIFI Extension <wifi_extension>`
 möglich. Für einen Standalone-Betrieb kann ein Embbeded Board, wie z.B. das
-:ref:`Raspberry Pi <embedded_raspberry_pi>`, direkt ins Gehaeuse eingebaut 
+:ref:`Raspberry Pi <embedded_raspberry_pi>`, direkt ins Gehäuse eingebaut
 werden.
 Die Messwerte können auf einem 20x4 Zeichen
 LCD angezeigt, auf einer Webseite oder z.B. auf `Cosm <https://cosm.com/>`__ 
