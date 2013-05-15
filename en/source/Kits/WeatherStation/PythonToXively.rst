@@ -30,10 +30,9 @@ Step 1: Create and configure Xively account
 To use Xively, we first have to create a Xively account.
 Go to `xively.com <https://xively.com>`__ and sign up.
 
-Click on "+ Device/Feed" and as type choose "Something Else".
-Choose "push data to Xively", a title and tags and create the feed.
-
-In the feed we have to add data streams for our weather measurements:
+Click on "+ Device" and add a description of your device.
+Next add a new channel ("+ Add Channel").
+For every sensor value we have to add a new channel:
 
 .. image:: /Images/Kits/weather_station_xively_datastreams_600.jpg
    :scale: 100 %
@@ -41,7 +40,7 @@ In the feed we have to add data streams for our weather measurements:
    :align: center
    :target: ../../_images/Kits/weather_station_xively_datastreams_orig.jpg
 
-The streams got the IDs AirPressure, AmbientLight, Humidity and Temperature.
+The channels got the IDs AirPressure, AmbientLight, Humidity and Temperature.
 Later we will need these IDs to upload measurements.
 
 Step 2: Understanding Xively protocol
