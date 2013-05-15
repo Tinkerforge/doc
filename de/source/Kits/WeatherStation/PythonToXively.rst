@@ -4,7 +4,7 @@
 .. _starter_kit_weather_station_xively:
 
 Mit Python Wetterdaten auf Xively hochladen
-=========================================
+===========================================
 
 .. include:: PythonCommon.substitutions
    :start-after: >>>intro
@@ -25,7 +25,7 @@ Folgende Ziele sind für dieses Projekt gesetzt:
 Nachfolgend erklären wir Schritt für Schritt wie diese Ziele erreicht werden können.
 
 Schritt 1: Erstelle und Konfiguriere einen Xively Account
--------------------------------------------------------
+---------------------------------------------------------
 
 Um Xively benutzen zu können, muss zuerst ein Xively Account angelegt werden.
 Dazu muss `xively.com <https://xively.com>`__ besucht werden und sich
@@ -47,7 +47,7 @@ Temperature. Diese IDs werden wir später nutzen um die Messwerte hochzuladen.
 
 
 Schritt 2: Das Xively Protokoll verstehen
----------------------------------------
+-----------------------------------------
 
 Eine kurze Recherche in der Xively API Dokumentation zeigt, dass
 ein Datastream über `JSON Pakete

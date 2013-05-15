@@ -4,7 +4,7 @@
 .. _starter_kit_weather_station_xively:
 
 Using Python to upload weather data to Xively
-===========================================
+=============================================
 
 .. include:: PythonCommon.substitutions
    :start-after: >>>intro
@@ -25,7 +25,7 @@ We are setting the following goals for this project:
 In the following we will show step-by-step how this can be achieved.
 
 Step 1: Create and configure Xively account
------------------------------------------
+-------------------------------------------
 
 To use Xively, we first have to create a Xively account.
 Go to `xively.com <https://xively.com>`__ and sign up.
@@ -45,7 +45,7 @@ The streams got the IDs AirPressure, AmbientLight, Humidity and Temperature.
 Later we will need these IDs to upload measurements.
 
 Step 2: Understanding Xively protocol
------------------------------------
+-------------------------------------
 
 A quick search in the Xively API documentation reveals that we can update
 a datastream by `just sending a small JSON package
