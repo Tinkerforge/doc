@@ -31,10 +31,9 @@ Um Xively benutzen zu können, muss zuerst ein Xively Account angelegt werden.
 Dazu muss `xively.com <https://xively.com>`__ besucht werden und sich
 eingeloggt werden.
 
-Klicke auf "+ Device/Feed" und wähle "Something Else" als Typ.
-Wähle "push data to Xively", einen Titel und Tags und erzeuge einen Feed.
-
-In diesem Feed müssen Data Streams für unsere Wetterdaten hinzugefügt werden:
+Klicke auf "+ Device" und gebe eine Beschreibung des Devices ein.
+Anschließend lege einen neuen Channel an ("+ Add Channel").
+Für jeden Sensorwert muss nun ein neuer Channel angelegt werden:
 
 .. image:: /Images/Kits/weather_station_xively_datastreams_600.jpg
    :scale: 100 %
@@ -42,7 +41,7 @@ In diesem Feed müssen Data Streams für unsere Wetterdaten hinzugefügt werden:
    :align: center
    :target: ../../_images/Kits/weather_station_xively_datastreams_orig.jpg
 
-Die Streams bekommen die IDs AirPressure, AmbientLight, Humidity und 
+Die Channels bekommen die IDs AirPressure, AmbientLight, Humidity und 
 Temperature. Diese IDs werden wir später nutzen um die Messwerte hochzuladen.
 
 

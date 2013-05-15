@@ -38,8 +38,8 @@ Starterkit: Wetterstation
 	             "Wetterstation: Mit Raspberry Pi")
 	}}
 	{{
-	    tfdocimg("Kits/weather_station_cosm_graphs_100.jpg",
-	             "Kits/weather_station_cosm_graphs_800.jpg",
+	    tfdocimg("Kits/weather_station_xively_graphs_100.jpg",
+	             "Kits/weather_station_xively_graphs_800.jpg",
 	             "Wetterstation: Xively-Graphen")
 	}}
 	{{
@@ -236,15 +236,15 @@ Xively Anbindung
 das "Internet der Dinge" zu analysieren und zu visualisieren. Dieser kann eine
 Historie der Wetterstationsdaten speichern, sowie nette Graphen zeichnen:
 
-.. image:: /Images/Kits/weather_station_cosm_graphs_600.jpg
+.. image:: /Images/Kits/weather_station_xively_graphs_600.jpg
    :scale: 100 %
    :alt: Xively Datastreams als Graph
    :align: center
-   :target: ../../_images/Kits/weather_station_cosm_graphs_orig.jpg
+   :target: ../../_images/Kits/weather_station_xively_graphs_orig.jpg
 
 Eine Beispiel-Implementierung mit Schritt-für-Schritt Instruktionen
 die die Wetterdaten auf Xively veröffentlicht is verfügbar
-in :ref:`Python <starter_kit_weather_station_cosm>`.
+in :ref:`Python <starter_kit_weather_station_xively>`.
 
 .. toctree::
    :hidden:

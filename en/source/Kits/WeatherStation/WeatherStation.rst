@@ -38,8 +38,8 @@ Starter Kit: Weather Station
 	             "Weather Station: With Raspberry Pi")
 	}}
 	{{
-	    tfdocimg("Kits/weather_station_cosm_graphs_100.jpg",
-	             "Kits/weather_station_cosm_graphs_800.jpg",
+	    tfdocimg("Kits/weather_station_xively_graphs_100.jpg",
+	             "Kits/weather_station_xively_graphs_800.jpg",
 	             "Weather Station: Xively graphs")
 	}}
 	{{
@@ -233,11 +233,11 @@ Connect to Xively
 analyze and visualize the "Internet of Things". They can store a history of our
 Weather Station data and we get pretty graphs:
 
-.. image:: /Images/Kits/weather_station_cosm_graphs_600.jpg
+.. image:: /Images/Kits/weather_station_xively_graphs_600.jpg
    :scale: 100 %
    :alt: Xively datastreams shown as graph
    :align: center
-   :target: ../../_images/Kits/weather_station_cosm_graphs_orig.jpg
+   :target: ../../_images/Kits/weather_station_xively_graphs_orig.jpg
 
 An example implementation with step-by-step instructions that shares the
 weather data with Xively is available
