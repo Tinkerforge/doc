@@ -40,7 +40,7 @@ Starter Kit: Weather Station
 	{{
 	    tfdocimg("Kits/weather_station_cosm_graphs_100.jpg",
 	             "Kits/weather_station_cosm_graphs_800.jpg",
-	             "Weather Station: Cosm graphs")
+	             "Weather Station: Xively graphs")
 	}}
 	{{
 	    tfdocimg("Kits/weather_station_lcd_all_100.jpg",
@@ -85,7 +85,7 @@ Control via Wi-Fi is possible if a :ref:`WIFI Extension <wifi_extension>` is
 added. To use it standalone you can add an embedded board such as the
 :ref:`Raspberry Pi <embedded_raspberry_pi>` which can be mounted in the casing.
 The measurements can be displayed on the 20x4 character LCD, they can be shown on a
-website or uploaded to `Cosm <https://cosm.com/>`__. With the four buttons of
+website or uploaded to `Xively (Cosm) <https://xively.com/>`__. With the four buttons of
 the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` it is possible to control
 different modes.
 
@@ -124,7 +124,7 @@ Resources
 
 * Weather Station case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
 * Example source code *Write to LCD* (Download: |write_to_lcd_examples_download|)
-* Example source code *Cosm* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/cosm/python>`__)
+* Example source code *Xively* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Example source code *Website* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Example source code *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
 
@@ -226,30 +226,30 @@ Example implementations with step-by-step instructions are available for:
 
 .. include:: WriteToLCD.toctree
 
-Connect to Cosm
-^^^^^^^^^^^^^^^
+Connect to Xively
+^^^^^^^^^^^^^^^^^
 
-`Cosm <https://cosm.com/>`__ is a service that provides the possibility to
+`Xively <https://xively.com/>`__ is a service that provides the possibility to
 analyze and visualize the "Internet of Things". They can store a history of our
 Weather Station data and we get pretty graphs:
 
 .. image:: /Images/Kits/weather_station_cosm_graphs_600.jpg
    :scale: 100 %
-   :alt: Cosm datastreams shown as graph
+   :alt: Xively datastreams shown as graph
    :align: center
    :target: ../../_images/Kits/weather_station_cosm_graphs_orig.jpg
 
 An example implementation with step-by-step instructions that shares the
-weather data with Cosm is available
-in :ref:`Python <starter_kit_weather_station_cosm>`.
+weather data with Xively is available
+in :ref:`Python <starter_kit_weather_station_xively>`.
 
 .. toctree::
    :hidden:
 
-   PythonToCosm
+   PythonToXively
 
-The Weather Station in our laboratory has the Cosm feed 
-`125881 <https://cosm.com/feeds/125881>`__.
+The Weather Station in our laboratory has the Xively feed 
+`125881 <https://xively.com/feeds/125881>`__.
 
 Embed Live Measurements on Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

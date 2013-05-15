@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit Python Wetterdaten auf Cosm hochladen
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit Python Wetterdaten auf Xively hochladen
 
-.. _starter_kit_weather_station_cosm:
+.. _starter_kit_weather_station_xively:
 
-Mit Python Wetterdaten auf Cosm hochladen
+Mit Python Wetterdaten auf Xively hochladen
 =========================================
 
 .. include:: PythonCommon.substitutions
@@ -20,38 +20,38 @@ Folgende Ziele sind für dieses Projekt gesetzt:
   angezeigt werden (siehe Projekt: :ref:`Mit Python auf das LCD 20x4 Bricklet schreiben
   <starter_kit_weather_station_python_to_lcd>`.
 * Zusätzlich sollen die Messungen gespeichert und in 5 Minuten Intervallen 
-  nach Cosm hochgeladen werden.
+  nach Xively hochgeladen werden.
 
 Nachfolgend erklären wir Schritt für Schritt wie diese Ziele erreicht werden können.
 
-Schritt 1: Erstelle und Konfiguriere einen Cosm Account
+Schritt 1: Erstelle und Konfiguriere einen Xively Account
 -------------------------------------------------------
 
-Um Cosm benutzen zu können, muss zuerst ein Cosm Account angelegt werden.
-Dazu muss `cosm.com <https://cosm.com>`__ besucht werden und sich
+Um Xively benutzen zu können, muss zuerst ein Xively Account angelegt werden.
+Dazu muss `xively.com <https://xively.com>`__ besucht werden und sich
 eingeloggt werden.
 
 Klicke auf "+ Device/Feed" und wähle "Something Else" als Typ.
-Wähle "push data to Cosm", einen Titel und Tags und erzeuge einen Feed.
+Wähle "push data to Xively", einen Titel und Tags und erzeuge einen Feed.
 
 In diesem Feed müssen Data Streams für unsere Wetterdaten hinzugefügt werden:
 
-.. image:: /Images/Kits/weather_station_cosm_datastreams_600.jpg
+.. image:: /Images/Kits/weather_station_xively_datastreams_600.jpg
    :scale: 100 %
-   :alt: Cosm Datastream Konfiguration
+   :alt: Xively Datastream Konfiguration
    :align: center
-   :target: ../../_images/Kits/weather_station_cosm_datastreams_orig.jpg
+   :target: ../../_images/Kits/weather_station_xively_datastreams_orig.jpg
 
 Die Streams bekommen die IDs AirPressure, AmbientLight, Humidity und 
 Temperature. Diese IDs werden wir später nutzen um die Messwerte hochzuladen.
 
 
-Schritt 2: Das Cosm Protokoll verstehen
+Schritt 2: Das Xively Protokoll verstehen
 ---------------------------------------
 
-Eine kurze Recherche in der Cosm API Dokumentation zeigt, dass
+Eine kurze Recherche in der Xively API Dokumentation zeigt, dass
 ein Datastream über `JSON Pakete
-<https://cosm.com/docs/v2/datastream/update.html>`__
+<https://xively.com/docs/v2/datastream/update.html>`__
 aktualisiert werden können.
 
 Das dort angegebene Beispiel::
@@ -63,11 +63,11 @@ Das dort angegebene Beispiel::
   "id":"1"
  }
 
-wird über HTTP PUT zu ``http://api.cosm.com/v2/feeds/<ID>`` gesendet. 
+wird über HTTP PUT zu ``http://api.xively.com/v2/feeds/<ID>`` gesendet. 
 Der API Key ist im Header des HTTP Requests definiert und die Rückgabe besteht 
 aus dem HTTP Header.
 
-Um Cosm nicht zu spammen sollten wir nur einmal alle 5 Minuten die Werte 
+Um Xively nicht zu spammen sollten wir nur einmal alle 5 Minuten die Werte 
 aktualisieren. Daher müssen wir die Messwerte speichern und die dazugehörigen
 Werte (min/max) bestimmen.
 
@@ -75,11 +75,11 @@ Schritte 3: Messwerte speichern
 -------------------------------
 
 Als erstes erstellen wir eine einfache Datenhaltung. Die Werte werden wir mit
-den IDs identifizieren, die wir bei Cosm als Datastream ID hinterlegt haben:
+den IDs identifizieren, die wir bei Xively als Datastream ID hinterlegt haben:
 
 .. code-block:: python
 
-    class Cosm:
+    class Xively:
         def __init__(self):
             self.items = {}
 
@@ -110,7 +110,7 @@ Wir müssen nun noch die put Funktion aufrufen wenn neue Messwerte ankommen:
         # [...]
         def __init__(self):
             # [...]
-            self.cosm = Cosm()
+            self.xively = Xively()
             # [...]
 
         # [...]
@@ -119,8 +119,8 @@ Wir müssen nun noch die put Funktion aufrufen wenn neue Messwerte ankommen:
                 text = 'Illuminanc %6.2f lx' % (illuminance/10.0)
                 self.lcd.write_line(0, 0, text)
 
-                # Here we add illuminance to Cosm with ID "AmbientLight"
-                self.cosm.put('AmbientLight', illuminance/10.0)
+                # Here we add illuminance to Xively with ID "AmbientLight"
+                self.xively.put('AmbientLight', illuminance/10.0)
                 log.info('Write to line 0: ' + text)
         # [...]
 
@@ -134,9 +134,9 @@ definieren:
 
 .. code-block:: python
 
-    class Cosm:
-        HOST = 'api.cosm.com'
-        AGENT = "Tinkerforge cosm 1.0"
+    class Xively:
+        HOST = 'api.xively.com'
+        AGENT = "Tinkerforge xively 1.0"
         FEED = '105813.json'
         API_KEY = 'WtXx2m6ItNZyFYoQyr5qnoN1GsOSAKxPMGdIaXRLYzY5ND0g'
 
@@ -144,15 +144,15 @@ definieren:
             self.items = {}
             self.headers = {
                 "Content-Type"  : "application/x-www-form-urlencoded",
-                "X-ApiKey"      : Cosm.API_KEY,
-                "User-Agent"    : Cosm.AGENT,
+                "X-ApiKey"      : Xively.API_KEY,
+                "User-Agent"    : Xively.AGENT,
             }
-            self.params = "/v2/feeds/" + str(Cosm.FEED)
+            self.params = "/v2/feeds/" + str(Xively.FEED)
             threading.Thread(target=self.upload).start()
 
-Die Werte von ``FEED`` und ``API_KEY`` müssen durch die im eigenen Cosm
+Die Werte von ``FEED`` und ``API_KEY`` müssen durch die im eigenen Xively
 Account erstellten Werte ersetzt werden. Der Rest ist praktisch aus
-der Cosm API Dokumentation kopiert.
+der Xively API Dokumentation kopiert.
 
 Um alle 5 Minuten die Werte zu Aktualisieren, wird die ``update`` Funktion
 in einem Thread gestartet:
@@ -178,13 +178,13 @@ in einem Thread gestartet:
             body = json.dumps(data)
 
             try:
-                http = httplib.HTTPSConnection(Cosm.HOST)
+                http = httplib.HTTPSConnection(Xively.HOST)
                 http.request('PUT', self.params, body, self.headers)
                 response = http.getresponse()
                 http.close()
 
                 if response.status != 200:
-                    log.error('Could not upload to cosm -> ' +
+                    log.error('Could not upload to xively -> ' +
                               str(response.status) + ': ' + response.reason)
             except Exception as e:
                 log.error('HTTP error: ' + str(e))
@@ -204,9 +204,9 @@ einem Mutex geschützt werden, so dass sichergestellt wird, dass keine Daten
 hinzugefügt werden während andere hochgeladen werden.
 
 Wenn wir alles zusammenfügen erhalten wir eine Wetterstation die alle
-Messwerte nach Cosm hochlädt
-(`download <https://raw.github.com/Tinkerforge/weather-station/master/cosm/python/weather_cosm.py>`__):
+Messwerte nach Xively hochlädt
+(`download <https://raw.github.com/Tinkerforge/weather-station/master/xively/python/weather_xively.py>`__):
 
-.. literalinclude:: ../../../../../weather-station/cosm/python/weather_cosm.py
+.. literalinclude:: ../../../../../weather-station/xively/python/weather_xively.py
  :language: python
  :tab-width: 4
