@@ -38,6 +38,11 @@ Starterkit: Wetterstation
 	             "Wetterstation: Mit Raspberry Pi")
 	}}
 	{{
+	    tfdocimg("Kits/weather_station_demo_100.jpg",
+	             "Kits/weather_station_demo.jpg",
+	             "Weather Station: Demo Application")
+	}}
+	{{
 	    tfdocimg("Kits/weather_station_xively_graphs_100.jpg",
 	             "Kits/weather_station_xively_graphs_800.jpg",
 	             "Wetterstation: Xively-Graphen")
@@ -72,6 +77,7 @@ Features
 
 * Steuerung über USB, WLAN oder mit Raspberry Pi
 * Modifizierbar: Mehr Taster, mehr Sensoren und eigene Software
+* Demo-Anwendung verfügbar
 
 Beschreibung
 ------------
@@ -85,11 +91,17 @@ Auch eine Steuerung per WLAN ist über die :ref:`WIFI Extension <wifi_extension>
 möglich. Für einen Standalone-Betrieb kann ein Embbeded Board, wie z.B. das
 :ref:`Raspberry Pi <embedded_raspberry_pi>`, direkt ins Gehäuse eingebaut
 werden.
-Die Messwerte können auf einem 20x4 Zeichen
-LCD angezeigt, auf einer Webseite oder z.B. auf `Xively (Cosm) <https://xively.com/>`__ 
+
+Für die Wetterstation sind verschiedene Beispielprojekte verfügbar, so können 
+die Messwerte auf einem 20x4 Zeichen LCD angezeigt, 
+auf einer Webseite oder z.B. auf `Xively (Cosm) <https://xively.com/>`__ 
 hochgeladen werden. Über vier Taster auf dem 
-:ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` ist es möglich zwischen 
-verschiedenen Modi umzuschalten.
+:ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` kann zwischen 
+verschiedenen Modi umgeschalten werden.
+
+Ein Teil dieser Beispielprojekte ist in einer Demo-Anwendung implementiert 
+worden. Diese ist für Windows, Linux und Mac OS X verfügbar und kann benutzt
+werden um die Station zu testen.
 
 Das Kit ermöglicht es nach eigenen Wünschen sowohl Soft- als auch Hardware
 zu gestalten. Das Gehäuse besteht aus bastelfreundlichem PMMA und ist einfach
@@ -102,7 +114,8 @@ angeschlossen werden.
 
 Die Wetterstation kann über alle verfügbaren Bindings (|bindings|) 
 programmiert werden. Beispielimplementierungen für alle Programmiersprachen 
-erleichtern den Einstieg in die Programmierung mit Tinkerforge.
+und eine Demo-Anwendung erleichtern den Einstieg in die Programmierung mit 
+Tinkerforge.
 
 Technische Spezifikation
 ------------------------
@@ -120,6 +133,7 @@ Abmessungen (B x T x H)           240 x 46 x 100mm (9,45 x 1,81 x 3,94")
 Gewicht                           376g
 ================================  ============================================================
 
+.. _starter_kit_weather_station_resources:
 
 Ressourcen
 ----------
@@ -129,6 +143,7 @@ Ressourcen
 * Beispielquelltext *Xively* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Beispielquelltext *Webseite* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Beispielquelltext *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
+* Demo Anwendung (Download für: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__)
 
 
 Firmware aktualisieren und erste Tests
@@ -156,7 +171,43 @@ man am besten durch die verschiedenen Tabs und überprüft die Sensorwerte.
 Anschließend ist sichergestellt, dass der Master Brick und alle Bricklets
 korrekt funktionieren auch nachdem alles in das Gehäuse geschraubt wurde.
 
-.. batti: screenshot brickv with all tabs?
+Demo-Anwendung
+^^^^^^^^^^^^^^
+
+Wenn die Hardware korrekt funktioniert kann die Demo-Anwendung zum 
+Starterkit: Wetterstation getestet werden. Diese implementiert drei 
+verschiedene 
+:ref:`Wetterstationsprojekte <starter_kit_weather_station_projects>`:
+
+ 1. Messwerte auf dem LCD anzeigen
+ 2. Anzeige von Statistiken mit Umschaltung per Taster
+ 3. Xively Anbindung
+
+Jedes Projekt besitzt sein eigenes Tab in der Anwendung. Das erste Projekt
+zeigt nur die gemessenen Werte an. Das zweite Projekt ist komplexer und
+zeigt Min-, Max- und Durchschnittswerte sowie Graphen der Messungen an.
+Die Anzeige kann hierbei über die vier Taster des LCD 20x4 Bricklets oder
+über die Taster in der Anwendung geändert werden. In manchen Modi kann über 
+ein mehrfaches Drücken des Tasters der Sensor geändert werden.
+
+Zum Schluss bietet das Xively Projekt die Möglichkeit die Messwerte 
+hochzuladen. Dazu muss sich auf `xively.com <https://xively.com>`__
+registriert werden. Anschließend können dort Feed ID und API Key 
+sowie für jeden Sensor ein Channel angelegt werden 
+(AirPressure, AmbientLight, Humidity and Temperature).
+Feed ID, API Key und das Upload-Intervall müssen anschließend
+in der Demo Anwendung konfiguriert werden. Für weitere Informationen
+siehe die Projektbeschreibung.
+
+Die Demo-Anwendung kann in der :ref:`Resources Sektion <starter_kit_weather_station_resources>`
+heruntergeladen werden.
+
+.. image:: /Images/Kits/weather_station_demo_350.jpg
+   :scale: 100 %
+   :alt: Screenshot Wetterstation Demo Anwendung
+   :align: center
+   :target: ../../_images/Kits/weather_station_demo.jpg
+
 
 Konstruktion
 ------------
@@ -198,6 +249,9 @@ ausgetauscht werden.
 Wird die Ethernet Extension benutzt, so kann der Stapel auch gleich
 über das integrierte PoE versorgt werden, so dass Step-Down Power Supply
 und der DC Jack Adapter nicht mehr notwendig sind.
+
+
+.. _starter_kit_weather_station_projects:
 
 Projekte
 --------

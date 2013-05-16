@@ -38,6 +38,11 @@ Starter Kit: Weather Station
 	             "Weather Station: With Raspberry Pi")
 	}}
 	{{
+	    tfdocimg("Kits/weather_station_demo_100.jpg",
+	             "Kits/weather_station_demo.jpg",
+	             "Weather Station: Demo Application")
+	}}
+	{{
 	    tfdocimg("Kits/weather_station_xively_graphs_100.jpg",
 	             "Kits/weather_station_xively_graphs_800.jpg",
 	             "Weather Station: Xively graphs")
@@ -72,6 +77,7 @@ Features
 
 * Control over USB, Wi-Fi or with Raspberry Pi
 * Modifiable: more buttons, more sensors and customized software
+* Demo Application available
 
 Description
 -----------
@@ -84,10 +90,15 @@ It can be controlled by an (Embedded-) PC.
 Control via Wi-Fi is possible if a :ref:`WIFI Extension <wifi_extension>` is 
 added. To use it standalone you can add an embedded board such as the
 :ref:`Raspberry Pi <embedded_raspberry_pi>` which can be mounted in the casing.
-The measurements can be displayed on the 20x4 character LCD, they can be shown on a
-website or uploaded to `Xively (Cosm) <https://xively.com/>`__. With the four buttons of
-the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` it is possible to control
-different modes.
+
+There are several example projects available, e.g. the measurements can be 
+displayed on the 20x4 character LCD, they can be shown on a
+website or uploaded to `Xively (Cosm) <https://xively.com/>`__. 
+With the four buttons of the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` 
+it is possible to control different modes.
+
+A demo application, available for Windows, Linux and Mac OS X, implements
+some of these example projects and can be used to test the station.
 
 The kit allows to modify soft- and hardware. The casing consists of
 tinker-friendly PMMA which can be easily modified (e.g. drill new holes with 
@@ -98,9 +109,9 @@ are provided, this gives the possibility to add more sensors
 `pluviometer <https://en.wikipedia.org/wiki/Rain_gauge>`__ etc). 
 
 Programming of the weather station can be done with all of the available
-bindings (|bindings|). Example implementations for each of the languages are
-available. This will give you a starting point into the programming with 
-Tinkerforge.
+bindings (|bindings|). Example implementations for all supported programming languages 
+and a demo application are available. This will give you a starting point into the 
+programming with Tinkerforge.
 
 Technical Specifications
 ------------------------
@@ -118,6 +129,7 @@ Dimensions (W x D x H)            240 x 46 x 100mm (9.45 x 1.81 x 3.94")
 Weight                            376g
 ================================  ============================================================
 
+.. _starter_kit_weather_station_resources:
 
 Resources
 ---------
@@ -127,6 +139,8 @@ Resources
 * Example source code *Xively* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Example source code *Website* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Example source code *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
+* Demo Application (Download for: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__)
+ 
 
 Firmware updating and first tests
 ---------------------------------
@@ -152,6 +166,40 @@ to see if all of the sensors are working correctly. Now you can be sure that
 the Bricks and Bricklets have versions that work together and that
 everything will work if it is screwed together in the weather station
 enclosure.
+
+Demo Application
+^^^^^^^^^^^^^^^^
+
+If the hardware is running correctly you can also try the demo application for 
+starter kit: weather station. It implements three different 
+:ref:`weather station projects <starter_kit_weather_station_projects>`:
+
+ 1. Display Environment Measurements on LCD
+ 2. Show Statistics with Button Control
+ 3. Connect to Xively
+
+Each Project can be selected with its own tab. The first project only displays
+the measured values. The second project is more complex and displays 
+min, max and average values as well as graphs for these measurements.
+The display mode can be changed by pressing the buttons at the LCD 20x4 
+Bricklet or in the application. In some modi the buttons can be pressed 
+multiple times, such that other measurements will be shows. 
+
+Finally the Xively projects lets you upload your measurements.
+At first you have to register on `xively.com <https://xively.com>`__.
+Next you have to create a Feed ID, API key and four
+channels to Upload the values (AirPressure, AmbientLight, Humidity and 
+Temperature). Feed ID, API Key and the upload interval have to be configured in 
+the demo application. Please take a look at the project description for further
+information
+
+You can find the download link in the :ref:`Resources section <starter_kit_weather_station_resources>`
+
+.. image:: /Images/Kits/weather_station_demo_350.jpg
+   :scale: 100 %
+   :alt: Weather Station Demo Application Screenshot
+   :align: center
+   :target: ../../_images/Kits/weather_station_demo.jpg
 
 Construction
 ------------
@@ -195,6 +243,9 @@ RS485 or Ethernet Extension.
 If the Ethernet Extension is used, the stack can also be powered by PoE.
 in this case the Step-Down Power Supply and the DC Jack Adapter are
 not needed.
+
+
+.. _starter_kit_weather_station_projects:
 
 Projects
 --------
