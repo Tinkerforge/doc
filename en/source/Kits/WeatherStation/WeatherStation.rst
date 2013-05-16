@@ -139,7 +139,7 @@ Resources
 * Example source code *Xively* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Example source code *Website* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Example source code *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
-* Demo Application (Download for: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__)
+* Demo Application (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__)
  
 
 Firmware updating and first tests
@@ -171,14 +171,15 @@ Demo Application
 ^^^^^^^^^^^^^^^^
 
 If the hardware is running correctly you can also try the demo application for 
-starter kit: weather station. It implements three different 
-:ref:`weather station projects <starter_kit_weather_station_projects>`:
+this Starter Kit: Weather Station. It implements three of the presented
+:ref:`projects <starter_kit_weather_station_projects>` for demonstration
+purposes:
 
- 1. Display Environment Measurements on LCD
- 2. Show Statistics with Button Control
- 3. Connect to Xively
+1. :ref:`Display Environment Measurements on LCD <starter_kit_weather_station_write_to_lcd>`
+2. :ref:`Show Statistics with Button Control <starter_kit_weather_station_button_control>`
+3. :ref:`Connect to Xively <starter_kit_weather_station_xively>`
 
-Each Project can be selected with its own tab. The first project only displays
+Each project can be selected with its own tab. The first project only displays
 the measured values. The second project is more complex and displays 
 min, max and average values as well as graphs for these measurements.
 The display mode can be changed by pressing the buttons at the LCD 20x4 
@@ -193,7 +194,7 @@ Temperature). Feed ID, API Key and the upload interval have to be configured in
 the demo application. Please take a look at the project description for further
 information
 
-You can find the download link in the :ref:`Resources section <starter_kit_weather_station_resources>`
+The download link is in the :ref:`resources <starter_kit_weather_station_resources>`.
 
 .. image:: /Images/Kits/weather_station_demo_350.jpg
    :scale: 100 %
@@ -252,6 +253,9 @@ Projects
 
 There are several applications for the Weather Station:
 
+
+.. _starter_kit_weather_station_write_to_lcd:
+
 Display Environment Measurements on LCD
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -277,6 +281,9 @@ Example implementations with step-by-step instructions are available for:
 
 .. include:: WriteToLCD.toctree
 
+
+.. _starter_kit_weather_station_xively:
+
 Connect to Xively
 ^^^^^^^^^^^^^^^^^
 
@@ -292,7 +299,7 @@ Weather Station data and we get pretty graphs:
 
 An example implementation with step-by-step instructions that shares the
 weather data with Xively is available
-in :ref:`Python <starter_kit_weather_station_xively>`.
+in :ref:`Python <starter_kit_weather_station_python_to_xively>`.
 
 .. toctree::
    :hidden:
@@ -325,6 +332,9 @@ in :ref:`PHP <starter_kit_weather_station_website>`.
 
    PHPToWebsite
 
+
+.. _starter_kit_weather_station_button_control:
+
 Show Statistics with Button Control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -346,7 +356,7 @@ The four buttons in this project will be used to switch through
 * time and date.
 
 An example implementation is available
-in :ref:`C# <starter_kit_weather_station_button_control>`.
+in :ref:`C# <starter_kit_weather_station_csharp_button_control>`.
 
 .. toctree::
    :hidden:

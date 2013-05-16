@@ -1,7 +1,7 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit C# verschiedene Wetterstatistiken anzeigen
 
-.. _starter_kit_weather_station_button_control:
+.. _starter_kit_weather_station_csharp_button_control:
 
 Mit C# verschiedene Wetterstatistiken anzeigen
 ===============================================

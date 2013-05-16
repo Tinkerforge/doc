@@ -40,7 +40,7 @@ Starterkit: Wetterstation
 	{{
 	    tfdocimg("Kits/weather_station_demo_100.jpg",
 	             "Kits/weather_station_demo.jpg",
-	             "Weather Station: Demo Application")
+	             "Wetterstation: Demo Anwendung")
 	}}
 	{{
 	    tfdocimg("Kits/weather_station_xively_graphs_100.jpg",
@@ -143,7 +143,7 @@ Ressourcen
 * Beispielquelltext *Xively* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Beispielquelltext *Webseite* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Beispielquelltext *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
-* Demo Anwendung (Download für: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__)
+* Demo Anwendung (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__)
 
 
 Firmware aktualisieren und erste Tests
@@ -171,17 +171,17 @@ man am besten durch die verschiedenen Tabs und überprüft die Sensorwerte.
 Anschließend ist sichergestellt, dass der Master Brick und alle Bricklets
 korrekt funktionieren auch nachdem alles in das Gehäuse geschraubt wurde.
 
-Demo-Anwendung
+Demo Anwendung
 ^^^^^^^^^^^^^^
 
-Wenn die Hardware korrekt funktioniert kann die Demo-Anwendung zum 
-Starterkit: Wetterstation getestet werden. Diese implementiert drei 
-verschiedene 
-:ref:`Wetterstationsprojekte <starter_kit_weather_station_projects>`:
+Wenn die Hardware korrekt funktioniert kann die Demo Anwendung zum
+Starterkit: Wetterstation getestet werden. Diese implementiert für
+Demonstationszwecke drei der vorgestellten :ref:`Projekte
+<starter_kit_weather_station_projects>`:
 
- 1. Messwerte auf dem LCD anzeigen
- 2. Anzeige von Statistiken mit Umschaltung per Taster
- 3. Xively Anbindung
+1. :ref:`Messwerte auf dem LCD anzeigen <starter_kit_weather_station_write_to_lcd>`
+2. :ref:`Anzeige von Statistiken mit Umschaltung per Taster <starter_kit_weather_station_button_control>`
+3. :ref:`Xively Anbindung <starter_kit_weather_station_xively>`
 
 Jedes Projekt besitzt sein eigenes Tab in der Anwendung. Das erste Projekt
 zeigt nur die gemessenen Werte an. Das zweite Projekt ist komplexer und
@@ -194,12 +194,12 @@ Zum Schluss bietet das Xively Projekt die Möglichkeit die Messwerte
 hochzuladen. Dazu muss sich auf `xively.com <https://xively.com>`__
 registriert werden. Anschließend können dort Feed ID und API Key 
 sowie für jeden Sensor ein Channel angelegt werden 
-(AirPressure, AmbientLight, Humidity and Temperature).
+(AirPressure, AmbientLight, Humidity und Temperature).
 Feed ID, API Key und das Upload-Intervall müssen anschließend
 in der Demo Anwendung konfiguriert werden. Für weitere Informationen
 siehe die Projektbeschreibung.
 
-Die Demo-Anwendung kann in der :ref:`Resources Sektion <starter_kit_weather_station_resources>`
+Die Demo Anwendung kann aus den :ref:`Ressourcen <starter_kit_weather_station_resources>`
 heruntergeladen werden.
 
 .. image:: /Images/Kits/weather_station_demo_350.jpg
@@ -256,7 +256,10 @@ und der DC Jack Adapter nicht mehr notwendig sind.
 Projekte
 --------
 
-Es gibt verschiedene Anwendungen für die Wetterstation:
+Im Folgenden werden verschiedene Anwendungen für die Wetterstation
+vorgestellt:
+
+.. _starter_kit_weather_station_write_to_lcd:
 
 Messwerte auf dem LCD anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -283,6 +286,9 @@ Beispielanwendungen mit Schritt-für-Schritt Anleitungen existieren für:
 
 .. include:: WriteToLCD.toctree
 
+
+.. _starter_kit_weather_station_xively:
+
 Xively Anbindung
 ^^^^^^^^^^^^^^^^
 
@@ -298,7 +304,7 @@ Historie der Wetterstationsdaten speichern, sowie nette Graphen zeichnen:
 
 Eine Beispiel-Implementierung mit Schritt-für-Schritt Instruktionen
 die die Wetterdaten auf Xively veröffentlicht is verfügbar
-in :ref:`Python <starter_kit_weather_station_xively>`.
+in :ref:`Python <starter_kit_weather_station_python_to_xively>`.
 
 .. toctree::
    :hidden:
@@ -332,6 +338,9 @@ in :ref:`PHP <starter_kit_weather_station_website>` verfügbar.
 
    PHPToWebsite
 
+
+.. _starter_kit_weather_station_button_control:
+
 Anzeige von Statistiken mit Umschaltung per Taster
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -353,7 +362,7 @@ Die vier Taster werden in diesem Projekt genutzt um zwischen
 * Zeit und Datum.
 
 Eine Beispielimplementierung ist
-in :ref:`C# <starter_kit_weather_station_button_control>` verfügbar.
+in :ref:`C# <starter_kit_weather_station_csharp_button_control>` verfügbar.
 
 .. toctree::
    :hidden:
