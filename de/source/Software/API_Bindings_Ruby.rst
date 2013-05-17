@@ -17,6 +17,11 @@ Der GEM kann mit Hilfe des gem Tools installiert werden::
 
  gem install tinkerforge.gem
 
+Der GEM wird auch auf `rubygems.org <https://rubygems.org/gems/tinkerforge>`__
+gehostet und kann alternativ auch von dort installiert werden::
+
+ gem install tinkerforge
+
 Danach können alle Beispiel unverändert verwendet werden.
 
 

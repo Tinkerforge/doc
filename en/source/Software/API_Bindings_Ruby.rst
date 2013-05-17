@@ -17,6 +17,11 @@ You can install the GEM with the gem tool::
 
  gem install tinkerforge.gem
 
+The GEM is also hosted on `rubygems.org <https://rubygems.org/gems/tinkerforge>`__.
+So you can alternatively install it from there::
+
+ gem install tinkerforge
+
 After that you can use the examples as they are.
 
 
