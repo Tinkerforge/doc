@@ -32,8 +32,8 @@ Start a new project by clicking on:
 * Choose "Package name" (e.g. ``org.example``)
 * Click Finish
 
-Copy the complete ``com/tinkerforge/`` folder from ``source/`` into your
-``PROJECTFOLDER/src/`` folder.
+Copy the ``Tinkerforge.jar`` from the Java bindings into your
+``PROJECTFOLDER/libs/`` folder.
 
 Edit the source. Don't forget to set the host IP address to the IP address of the
 PC running brickd. You can use your local IP address or the IP address you are

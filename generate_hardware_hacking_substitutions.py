@@ -8,7 +8,7 @@ lang = 'en'
 
                             # display,            example,              uri,      filename, getting started
 bindings = [('C/C++',             'C',                  'c',      'C',      {'en': 'http://www.cprogramming.com/',
-                                                                             'de': 'http://www.cprogramming.com/'}),
+                                                                             'de': 'http://www.cprogramming.com/'}), # http://www.c-howto.de/
             ('C#',                'C#',                 'csharp', 'CSharp', {'en': 'http://csharp.net-tutorials.com/',
                                                                              'de': 'http://csharp.net-tutorials.com/'}),
             ('Delphi',            'Delphi',             'delphi', 'Delphi', {'en': 'http://www.delphibasics.co.uk/',
