@@ -96,7 +96,7 @@ Ressourcen
 
 * MCP4725 Datenblatt (`Download <https://github.com/Tinkerforge/analog-out-bricklet/raw/master/datasheets/MCP4725.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/analog-out-bricklet/raw/master/hardware/analog-out-schematic.pdf>`__)
-* Umriss und Bohrplan (`Download <../../_images/Dimensions/analog-out_bricklet_dimensions.png>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/analog_out_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/analog-out-bricklet/zipball/master>`__)
 
 

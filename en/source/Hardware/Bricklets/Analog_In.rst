@@ -97,7 +97,7 @@ Resources
 ---------
 
 * Schematic (`Download <https://github.com/Tinkerforge/analog-in-bricklet/raw/master/hardware/analog-in-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/analog-in_bricklet_dimensions.png>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/analog_in_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/analog-in-bricklet/zipball/master>`__)
 
 

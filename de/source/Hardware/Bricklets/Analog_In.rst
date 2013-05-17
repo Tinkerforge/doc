@@ -94,7 +94,7 @@ Ressourcen
 ----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/analog-in-bricklet/raw/master/hardware/analog-in-schematic.pdf>`__)
-* Umriss und Bohrplan (`Download <../../_images/Dimensions/analog-in_bricklet_dimensions.png>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/analog_in_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/analog-in-bricklet/zipball/master>`__)
 
 
