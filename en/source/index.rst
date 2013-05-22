@@ -95,7 +95,9 @@ Master Extensions
    :hidden:
    :glob:
 
-   Hardware/Master_Extensions/*
+   Hardware/Master_Extensions/Chibi_Extension
+   Hardware/Master_Extensions/RS485_Extension
+   Hardware/Master_Extensions/WIFI_Extension
 
 .. include:: index_extensions.table
 
