@@ -19,9 +19,10 @@ Goals
 -----
 
 In this project we will create a robust GUI program that resembles the
-functionality of the actual remote control. The program will reuse some common
-parts of the :ref:`Readout Smoke Detectors using C#
-<starter_kit_hardware_hacking_smoke_detector_csharp>` project.
+functionality of the actual remote control.
+
+The program will reuse some common parts of the :ref:`Readout Smoke Detectors
+using C# <starter_kit_hardware_hacking_smoke_detector_csharp>` project.
 
 
 Step 1: Create the GUI
@@ -117,7 +118,7 @@ using C# <starter_kit_hardware_hacking_smoke_detector_csharp_step1>` project,
 but with some changes to make it work in a GUI program.
 
 We don't want to call the :csharp:func:`Connect() <IPConnection::Connect>`
-method directly, because it might take a moment and blocks the GUI during that
+method directly, because it might take a moment and block the GUI during that
 period of time. Instead ``Connect()`` will be called from a thread, so it will
 run in the background and the GUI stays responsive:
 
@@ -216,12 +217,12 @@ selected switches to simulate a button press on the remote control:
         brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 255, 1500);
     }
 
-That’s it. If we would copy these three steps together in one file and execute
+That's it. If we would copy these three steps together in one file and execute
 it, we would have a working program that can control remote switches using
-their remote control!
+their hacked remote control!
 
-But the program is not yet robust enough. What happens if can’t connect on
-startup? What happens if the enumerate after an auto reconnect doesn’t work?
+But the program is not yet robust enough. What happens if it can't connect on
+startup? What happens if the enumerate after an auto reconnect doesn't work?
 
 What we need is error handling!
 
@@ -239,7 +240,7 @@ display the log messages.
 
 But there is still a problem with that approach. The connection is established
 on an extra thread, but only the main thread can safely interact with the
-GUI. Luckly C# provides the ``Invoke()`` method that allows all threads to run
+GUI. Luckily C# provides the ``Invoke()`` method that allows all threads to run
 code on the main thread and safely interact with the GUI. With this method we
 can create a ``Log()`` method that allows all threads to write to the list box
 in a safe way:

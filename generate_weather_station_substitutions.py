@@ -293,7 +293,7 @@ write_to_lcd_steps = {
 
 .. |step3_robust1| replace::
  However, we do not meet all of our goals yet. The program is not yet
- robust enough. What happens if can't connect on startup? What happens if
+ robust enough. What happens if it can't connect on startup? What happens if
  the enumerate after an auto reconnect doesn't work?
 
 .. |step3_robust2| replace::

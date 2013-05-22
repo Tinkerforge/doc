@@ -257,7 +257,7 @@ smoke_detector_steps = {
 .. |step3_complete| replace::
  That's it. If we would copy these three steps together in one file and
  execute it, we would have a working program that reads the alarm status of a
- smoke detector and reacts on its alarm signal!
+ hacked smoke detector and reacts on its alarm signal!
 
 .. |step3_suggestions| replace::
  Currently the program just outputs a warning. There are several ways to extend
@@ -266,7 +266,7 @@ smoke_detector_steps = {
 
 .. |step3_robust1| replace::
  However, we do not meet all of our goals yet. The program is not yet
- robust enough. What happens if can't connect on startup? What happens if
+ robust enough. What happens if it can't connect on startup? What happens if
  the enumerate after an auto reconnect doesn't work?
 
 .. |step3_robust2| replace::

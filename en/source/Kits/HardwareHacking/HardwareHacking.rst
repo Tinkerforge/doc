@@ -72,11 +72,11 @@ if all of the firmwares up to date (Updates / Flashing button). If not, you can
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
 Viewer, too:
 
-.. image:: /Images/Kits/weather_station_update_350.jpg
+.. image:: /Images/Kits/hardware_hacking_update_350.jpg
    :scale: 100 %
-   :alt: Weather Station update in Brick Viewer
+   :alt: Firmware update in Brick Viewer
    :align: center
-   :target: ../../_images/Kits/weather_station_update_orig.jpg
+   :target: ../../_images/Kits/hardware_hacking_update.jpg
 
 As next step click through the tabs of the Brick Viewer
 to see if the Bricklets are working correctly. Now you can be sure that 
@@ -109,6 +109,7 @@ Example implementations with step-by-step instructions are available for:
 
 .. include:: SmokeDetector.toctree
 
+
 .. _starter_kit_hardware_hacking_remote_switch:
 
 Control Remote Switches
@@ -121,7 +122,10 @@ to create software controlled remote switches.
 For this project we use the remote switch set `ELRO AB440WD/2
 <http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
 and connect an :ref:`Industrial Quad Relay Bricklet
-<industrial_quad_relay_bricklet>` to the buttons of the remote control.
+<industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
+<http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
+remote control. So this instructions apply to all ELRO remote switches that
+come with this specific remote control.
 
 An example implementation is available
 in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
