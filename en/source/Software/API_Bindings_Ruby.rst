@@ -67,3 +67,15 @@ we use:
  require 'brick_stepper'
 
 After that, the example can be executed again.
+
+
+More Examples and Projects
+--------------------------
+
+All the small examples contained in the ZIP file of the bindings can also be
+found in the API documentation of the :ref:`Bricks <index_bricks>` and
+:ref:`Bricklets <index_bricklets>`.
+
+Further project descriptions can be found in the :ref:`kits <kits>` section.
+
+.. FIXME: add a list with direct links here

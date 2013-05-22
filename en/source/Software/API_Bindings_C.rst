@@ -152,3 +152,15 @@ you just need to add the required source files to the ``SOURCES`` and
 
   win32:LIBS += -lws2_32
   unix:QMAKE_CXXFLAGS += -pthread
+
+
+More Examples and Projects
+--------------------------
+
+All the small examples contained in the ZIP file of the bindings can also be
+found in the API documentation of the :ref:`Bricks <index_bricks>` and
+:ref:`Bricklets <index_bricklets>`.
+
+Further project descriptions can be found in the :ref:`kits <kits>` section.
+
+.. FIXME: add a list with direct links here

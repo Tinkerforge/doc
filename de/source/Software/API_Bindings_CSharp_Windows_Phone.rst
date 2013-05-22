@@ -120,3 +120,16 @@ Der Emulator kann über F5 gestartet werden. Das Relais sollte jetzt mit dem
 Umschaltknopf auf dem Windows Phone Bildschirm umgeschaltet werden können.
 Dabei ist darauf zu achten UID und IP Adresse entsprechend des verwendeten Dual
 Relay Bricklets und PCs abzuändern.
+
+
+Weitere Beispiele und Projekte
+------------------------------
+
+Die kleinen Beispiele aus der ZIP Datei der Bindings sind auch in der API
+Dokumentation der :ref:`Bricks <index_bricks>` und
+:ref:`Bricklets <index_bricklets>` zu finden
+
+Anleitungen für weiterführende Projekte finden sich im Abschnitt
+über :ref:`Kits <kits>`.
+
+.. FIXME: add a list with direct links here

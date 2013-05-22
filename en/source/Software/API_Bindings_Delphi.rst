@@ -79,3 +79,15 @@ With Delphi XE2 (older Delphi version should work similar) we can use our
 * Add Existing Project...
 * Choose ``project_folder/ExampleConfiguration.dpr``
 * Click Open
+
+
+More Examples and Projects
+--------------------------
+
+All the small examples contained in the ZIP file of the bindings can also be
+found in the API documentation of the :ref:`Bricks <index_bricks>` and
+:ref:`Bricklets <index_bricklets>`.
+
+Further project descriptions can be found in the :ref:`kits <kits>` section.
+
+.. FIXME: add a list with direct links here

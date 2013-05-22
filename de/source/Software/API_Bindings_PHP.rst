@@ -70,3 +70,16 @@ muss dort nun dies stehen:
     ?>
 
 Jetzt kann das Beispiel wieder ausgeführt werden.
+
+
+Weitere Beispiele und Projekte
+------------------------------
+
+Die kleinen Beispiele aus der ZIP Datei der Bindings sind auch in der API
+Dokumentation der :ref:`Bricks <index_bricks>` und
+:ref:`Bricklets <index_bricklets>` zu finden
+
+Anleitungen für weiterführende Projekte finden sich im Abschnitt
+über :ref:`Kits <kits>`.
+
+.. FIXME: add a list with direct links here

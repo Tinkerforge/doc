@@ -46,3 +46,16 @@ Und ausgeführt wird es mit dem folgenden Befehl (1. Windows und 2. Linux/Mac OS
 
 Alternativ können die Beispiele auch in einer Java Entwicklungsumgebung deiner
 Wahl verwendet werden (wie Eclipse oder NetBeans).
+
+
+Weitere Beispiele und Projekte
+------------------------------
+
+Die kleinen Beispiele aus der ZIP Datei der Bindings sind auch in der API
+Dokumentation der :ref:`Bricks <index_bricks>` und
+:ref:`Bricklets <index_bricklets>` zu finden
+
+Anleitungen für weiterführende Projekte finden sich im Abschnitt
+über :ref:`Kits <kits>`.
+
+.. FIXME: add a list with direct links here

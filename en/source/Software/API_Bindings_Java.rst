@@ -44,3 +44,15 @@ and run it with the following parameters (1. Windows and 2. Linux/Mac OS X)::
 
 Or, alternatively add the JAR and the Example in an Java development environment
 of your choice (such as Eclipse or NetBeans).
+
+
+More Examples and Projects
+--------------------------
+
+All the small examples contained in the ZIP file of the bindings can also be
+found in the API documentation of the :ref:`Bricks <index_bricks>` and
+:ref:`Bricklets <index_bricklets>`.
+
+Further project descriptions can be found in the :ref:`kits <kits>` section.
+
+.. FIXME: add a list with direct links here

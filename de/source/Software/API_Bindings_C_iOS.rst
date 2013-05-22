@@ -134,3 +134,16 @@ letzte Schritt is das Verbinden des *Value Changed* Events des Switches mit der
 Die App kann mittels des Run Knopfes im Simulator getestet werden. Dabei ist
 darauf zu achten UID und IP Adresse entsprechend des verwendeten Dual Relay
 Bricklets und PCs abzuändern.
+
+
+Weitere Beispiele und Projekte
+------------------------------
+
+Die kleinen Beispiele aus der ZIP Datei der Bindings sind auch in der API
+Dokumentation der :ref:`Bricks <index_bricks>` und
+:ref:`Bricklets <index_bricklets>` zu finden
+
+Anleitungen für weiterführende Projekte finden sich im Abschnitt
+über :ref:`Kits <kits>`.
+
+.. FIXME: add a list with direct links here
