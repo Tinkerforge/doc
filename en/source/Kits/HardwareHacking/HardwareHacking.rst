@@ -135,6 +135,27 @@ in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
 
    RemoteSwitch_CSharp
 
+
+.. _starter_kit_hardware_hacking_garage_control:
+
 Control Garage Door Openers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Garage door openers are quite useful. Typically the come with a remote control
+and we are going to hack one. Then your smart phone can control the garage
+door opener and you don't need to carry around the original remote control
+anymore.
+
+.. image:: /Images/Kits/hardware_hacking_garage_control_350.jpg
+   :scale: 100 %
+   :alt: Garage Door Opener with Android Control
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_garage_control.jpg
+
+An example app for Android is available
+in :ref:`Java <starter_kit_hardware_hacking_garage_control_android>`.
+
+.. toctree::
+   :hidden:
+
+   GarageControl_Android
