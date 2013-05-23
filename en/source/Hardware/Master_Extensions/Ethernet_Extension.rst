@@ -86,13 +86,6 @@ Connectivity
 
 The following picture depicts the different connection possibilities.
 
-..
-.. image:: /Images/Extensions/extension_ethernet_caption_600.jpg
-   :scale: 100 %
-   :alt: Ethernet Extension with Caption
-   :align: center
-   :target: ../../_images/Extensions/extension_ethernet_caption_800.jpg
-
 
 .. _ethernet_configuration:
 

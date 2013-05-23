@@ -86,13 +86,6 @@ Anschlussmöglichkeit
 
 Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit der Ethernet Extension.
 
-..
-.. image:: /Images/Extensions/extension_ethernet_caption_600.jpg
-   :scale: 100 %
-   :alt: Ethernet Extension mit Beschriftung
-   :align: center
-   :target: ../../_images/Extensions/extension_ethernet_caption_800.jpg
-
 
 .. _ethernet_configuration:
 
