@@ -304,12 +304,19 @@ disable and enable the GUI elements according to the current connection state:
         // [...]
 
         @Override
-        protected void onPostExecute(Boolean result) {
+        protected void onPreExecute() {
+            connect.setEnabled(false);
+            trigger.setEnabled(false);
+        }
+
+        // [...]
+
+        @Override
+        protected void onPostExecute(Void result) {
             host.setEnabled(true);
             port.setEnabled(true);
             uid.setEnabled(true);
             connect.setEnabled(true);
-            trigger.setEnabled(false);
 
             // [...]
         }
@@ -563,7 +570,7 @@ And is restored when ``onCreate`` is called:
         }
     }
 
-Now the configuration and state is persistent across a restart of the app.
+Now the configuration and state is stored persistent across a restart of the app.
 
 
 Step 7: Everything put together
