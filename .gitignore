@@ -1,7 +1,9 @@
 en/build
+en/build-in-progress
 en/source/Software/Bricks
 en/source/Software/Bricklets
 de/build
+de/build-in-progress
 de/source/Software/Bricks
 de/source/Software/Bricklets
 *.table
