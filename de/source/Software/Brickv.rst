@@ -99,10 +99,10 @@ werden kann.
 
 Zum Flashen muss der Brick in den Bootloader Modus versetzt werden. Dazu muss
 der Erase Knopf am Brick gedrückt gehalten werden während der Brick startet.
-Dazu denn Erase Knopf gedrückt halten und dabei den Reset Knopf 1x
+Dazu denn Erase Knopf gedrückt halten und dabei den Reset Knopf einmal
 drücken. Ist der Brick dann im Bootloader
 Modus leuchtet die blaue LED neben der USB Buchse des Bricks nicht. Abhängig vom
-Betriebssystems des PC sollte jetzt Atmel Gerät in Form einer seriellen
+Betriebssystems des PC kann jetzt Atmel Gerät in Form einer seriellen
 Schnittstelle auftauchen.
 
 Als nächstes muss der Brick Viewer gestartet und "Flashing" Dialog geöffnet
@@ -126,20 +126,30 @@ richtig als serielle Schnittstelle erkannt.
  drivers Unterordner der Brick Viewer Installation zu installieren, damit ein
  Brick im Bootloader Modus richtig als serielle Schnittstelle erkannt wird.
 
- Windows 7 erkennt einen Brick im Bootloader Modus von sich aus als "GPS Camera
- Detect" Gerät. Dies ist auch eine serielle Schnittstelle so dass Flashen
- dennoch möglich ist. Falls hier dennoch Probleme auftreten kann es helfen
- den Atmel Treiber ``atm6124_cdc.inf`` zu installieren.
+ Windows 7 und 8 erkennt einen Brick im Bootloader Modus von sich aus als "GPS
+ Camera  Detect" Gerät. Dies ist auch eine serielle Schnittstelle so dass Flashen
+ dennoch möglich ist.
 
 .. note::
  Für alte Linux Kernel kann es notwendig sein diesen
  `SAM-BA Linux USB Kernel Treiber <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
  zu installieren, damit ein Brick im Bootloader Modus richtig funktioniert.
 
+.. note::
+ Mac OS X kann einen Brick im Bootloader Modus as DVB-T Stick erkennen und
+ automatisch EyeTV oder ein ähnliches Programm starten. Einfach EyeTV schließen
+ und mit dem Flash-Vorgang fortfahren.
+
 Wird die serielle Schnittstelle des Bricks richtig erkannt muss diese nun im
-Brick Viewer ausgewählt werden, sowie die passende Firmware für den Brick.
+Brick Viewer ausgewählt werden, typische Namen sind:
+
+* Windows: "AT91 USB to Serial Converter" oder "GPS Camera Detect"
+* Linux: ``/dev/ttyACM0`` oder ``/dev/ttyUSB0``
+* Mac OS X: ``/dev/tty.usbmodemfd131
+
+Jetzt noch die richtige Firmware für den Brick auswählen.
 Passend die Einstellungen kann das Flashen per Klick auf den "Save" Knopf
-gestartet werden. Jetzt wird die aktuelle Firmware für den Brick heruntergeladen,
+gestartet werden. Die aktuelle Firmware für den Brick wird heruntergeladen,
 auf den Brick geschrieben und dann wieder zurück gelesen, um sicherzustellen,
 dass das Schreiben der Firmware richtig funktioniert hat. Falls das Flashen
 scheitert, sollte zunächst überprüft werden, ob die richtige serielle

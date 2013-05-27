@@ -98,10 +98,10 @@ only important if you did your own calibration, because the factory calibration
 can be restored automatically during the flashing process since Brick Viewer
 version 1.1.13.
 
-First bring the Brick into the bootloader modus.
-Hold the Erase button, then press the Reset button 1x.
-The blue LED should be off. Now the Brick should be in the bootloader
-(based on your operating system some sort of Atmel device could be detected).
+First bring the Brick into the bootloader mode.
+Hold the Erase button, then press the Reset button one time.
+No the blue LED should be off and the Brick should be in the bootloader mode
+(depending on your operating system some sort of Atmel device could be detected).
 
 Start the Brick Viewer and click "Flashing":
 
@@ -122,18 +122,27 @@ operating system.
  drivers subfolder in the Brick Viewer installation folder to make Windows
  detect a Brick in bootloader mode correctly.
 
- Windows 7 might autodetect a Brick as "GPS Camera Detect" serial device
- but flashing should still work. If it doesn't you need to install the Atmel
- driver ``atm6124_cdc.inf`` for it.
+ Windows 7 and 8 typically auto detect a Brick as "GPS Camera Detect" serial
+ device. This works as well, just select "GPS Camera Detect" as serial port in
+ Brick Viewer.
 
 .. note::
  If you have an old Linux kernel you might need to install this
  `SAM-BA Linux USB kernel driver <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__.
 
-Select the correct serial port, select the firmware for your Brick and click
-"Save". Now the latest firmware will be downloaded and written to the Brick,
-then read back again and verified to be correctly written.
-A message box will pop up to inform you about the result.
+.. note::
+ Mac OS X might auto detect a Brick as DVB-T device and auto start EyeTV or
+ a similar program. Just close EyeTV and proceed with the flash procedure.
+
+Select the correct serial port, typically named as follows:
+
+* Windows: "AT91 USB to Serial Converter" or "GPS Camera Detect"
+* Linux: ``/dev/ttyACM0`` or ``/dev/ttyUSB0``
+* Mac OS X: ``/dev/tty.usbmodemfd131``
+
+Select the firmware for your Brick and click "Save". Now the latest firmware
+will be downloaded and written to the Brick, then read back again and verified
+to be correctly written. A message box will pop up to inform you about the result.
 If the flash process failed, check if you have selected the correct serial port.
 
 Instead of letting the Brick Viewer download the latest firmware you can also
