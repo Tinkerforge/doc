@@ -145,7 +145,7 @@ Brick Viewer ausgewählt werden, typische Namen sind:
 
 * Windows: "AT91 USB to Serial Converter" oder "GPS Camera Detect"
 * Linux: ``/dev/ttyACM0`` oder ``/dev/ttyUSB0``
-* Mac OS X: ``/dev/tty.usbmodemfd131
+* Mac OS X: ``/dev/tty.usbmodemfd131``
 
 Jetzt noch die richtige Firmware für den Brick auswählen.
 Passend die Einstellungen kann das Flashen per Klick auf den "Save" Knopf
