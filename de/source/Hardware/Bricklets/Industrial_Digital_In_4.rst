@@ -83,7 +83,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  =================================================================
 Eingangstyp                       Vier opto-gekoppelte Eingänge (4.7k Ohm Vorwiderstand enthalten)
-Eingangsstrom                     Hängt von der Eingangsspannung ab: ca. 1mA/5V, ca. 5m/24V
+Eingangsstrom                     Abhängig von der Eingangsspannung: ca. 1mA/5V, ca. 5mA/24V
 Max. Eingangsspannung             36V
 Low Level Spannung                0-2V
 High Level Spannung               3-36V
