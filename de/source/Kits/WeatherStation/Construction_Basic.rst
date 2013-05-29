@@ -38,6 +38,8 @@ Schutzfolien entfernen
 
 Als erstes müssen die Schutzfolien von allen Gehäuseteilen entfernt werden.
 Es ist jeweils eine auf Vorder- und Rückseite jedes Gehäuseteils vorhanden.
+Es kann vorkommen, dass die Folien am Rand so festsitzen, dass es denn Anschein
+macht als sei keine Folie vorhanden.
 
 Master Brick an Rückseite
 -------------------------

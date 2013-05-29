@@ -36,7 +36,8 @@ Remove Protective Foils
 -----------------------
 
 At first the protective foils on all case parts have to be removed.
-There is one foil on the front- and backside each.
+There is one foil on the front- and backside each. In some cases the protective
+foils can be hard to remove and it seems that there is no foil at all.
 
 Master Brick on Backside
 ------------------------
