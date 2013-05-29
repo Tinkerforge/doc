@@ -524,9 +524,9 @@ configuration is restored:
         // [...]
 
         SharedPreferences settings = getPreferences(0);
-        host.setText(settings.getString("host", "192.168.178.46"));
-        port.setText(settings.getString("port", "4223"));
-        uid.setText(settings.getString("uid", "ctG"));
+        host.setText(settings.getString("host", host.getText().toString()));
+        port.setText(settings.getString("port", port.getText().toString()));
+        uid.setText(settings.getString("uid", uid.getText().toString()));
     }
 
 In ``onStop`` the configuration is then stored again:
