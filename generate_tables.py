@@ -619,7 +619,7 @@ def make_download_bindings_table():
 def make_download_firmwares_table():
     table_head = download_firmwares_table_head[lang]
     brick_row_cell = ' :ref:`{0} <{1}_brick>` | `{3}.{4}.{5} <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_{3}_{4}_{5}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-brick/master/software/changelog>`__'
-    bricklet_row_cell = ' :ref:`{0} <{1}_bricklet>` | `{3}.{4}.{5} <http://download.tinkerforge.com/firmwares/bricklets/{1}/bricklet_{1}_firmware_{3}_{4}_{5}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
+    bricklet_row_cell = ' :ref:`{0} <{1}_bricklet>` | `{4}.{5}.{6} <http://download.tinkerforge.com/firmwares/bricklets/{3}/bricklet_{3}_firmware_{4}_{5}_{6}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
     brick_rows = []
     bricklet_rows = []
 
@@ -632,14 +632,21 @@ def make_download_firmwares_table():
             else:
                 brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), *versions[-1]))
 
+    def handle_bricklet(name, common_url_part, plugin_url_part):
+        versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricklets/{0}/'.format(plugin_url_part), 'bricklet_' + plugin_url_part)
+
+        if len(versions) < 1:
+            print('Could not find versions of the {0} Bricklet firmware'.format(name))
+        else:
+            bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, *versions[-1]))
+
     for bricklet in bricklets:
         if len(bricklet[2]) > 0:
-            versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricklets/{0}/'.format(bricklet[1]), 'bricklet_' + bricklet[1])
-
-            if len(versions) < 1:
-                print('Could not find versions of the {0} Bricklet firmware'.format(bricklet[0]))
+            if bricklet[1] == 'lcd_20x4':
+                handle_bricklet(bricklet[0] + ' 1.1', bricklet[1], bricklet[1] + '_v11')
+                handle_bricklet(bricklet[0] + ' 1.2', bricklet[1], bricklet[1] + '_v12')
             else:
-                bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1], bricklet[1].replace('_', '-').replace('/', '-'), *versions[-1]))
+                handle_bricklet(bricklet[0], bricklet[1], bricklet[1])
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows)) + '\n'
 
