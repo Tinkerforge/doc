@@ -32,6 +32,15 @@ Bricks and Bricklets could be mounted in two ways:
 * If a Brick or Bricklet is mounted on the **back** side of a case part, the
   Brick or Bricklet is shown in **blue**
 
+In the following you can find an exploded view drawing of the weather station.
+It should give you a rough overview of the weather station assembly.
+
+.. image:: /Images/Kits/weather_station_exploded_guided_small.png
+   :scale: 100 %
+   :alt: Exploded view drawing
+   :align: center
+   :target: ../../_images/Kits/weather_station_exploded_guided.png
+
 Remove Protective Foils
 -----------------------
 

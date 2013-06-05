@@ -33,6 +33,16 @@ angeschraubt werden:
 * Wird ein Brick oder Bricklet **hinter** ein Gehäuseteil geschraubt, so ist 
   der Brick oder das Bricklet in **Blau** dargestellt
 
+Im folgenden findet sich eine Explosionszeichnung der Wetterstation, diese
+sollte eine grobe Übersicht zum Zusammenbau geben.
+
+.. image:: /Images/Kits/weather_station_exploded_guided_small.png
+   :scale: 100 %
+   :alt: Explosionszeichnung
+   :align: center
+   :target: ../../_images/Kits/weather_station_exploded_guided.png
+
+
 Schutzfolien entfernen
 ----------------------
 
