@@ -33,14 +33,16 @@ using Java <starter_kit_hardware_hacking_smoke_detector_java>` project.
 Step 1: Createing the GUI
 -------------------------
 
-After creating a new "Android Application Project" named "GarageControl" in
+After creating a new "Android Application Project" named "Garage Control" in
 Eclipse we start with the GUI:
 
-.. image:: /Images/Kits/hardware_hacking_garage_control_gui_350.jpg
+.. FIXME: update image
+
+.. image:: /Images/Kits/hardware_hacking_garage_control_android_gui_350.jpg
    :scale: 100 %
    :alt: GUI in editor
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_garage_control_gui.jpg
+   :target: ../../_images/Kits/hardware_hacking_garage_control_android_gui.jpg
 
 The basis is a "Linear Layout (Vertical)". Three text fields allow to enter
 the host, port and UID of the Industrial Quad Relay Bricklet. For the port a
