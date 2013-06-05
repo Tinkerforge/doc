@@ -50,6 +50,9 @@ If you have installed an Debian **with** hardware floating point unit support
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
+The Brick Daemon will be started after the installation and at startup
+automatically.
+
 
 Soft-Float Debian (armel)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -81,7 +84,7 @@ To install the :ref:`Brick Viewer <brickv>` software execute the following
 commands::
 
  cd /home/pi
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
+ sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 

@@ -51,6 +51,9 @@ so kann der :ref:`Brick Daemon <brickd>` einfach mit folgenden Befehlen installi
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
+Der Brick Daemon wird nach der Installation und beim Hochfahren des Systems
+automatisch gestartet.
+
 
 Soft-Float Debian (armel)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -81,7 +84,7 @@ Brick Viewer installieren
 Der :ref:`Brick Viewer <brickv>` kann mit folgenden Befehlen installiert werden::
 
  cd /home/pi
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl
+ sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
