@@ -22,7 +22,7 @@ Auf Windows ist easy_install möglicherweise noch nicht installiert:
 
 * Installiere easy_install: http://pypi.python.org/pypi/setuptools#windows (setuptools)
 * Öffne eine Eingabeaufforderung
-* Führe ``C:\\YourPythonDir\\Scripts\\easy_install.exe C:\\PathToEgg\\tinkerforge.egg`` aus
+* Führe ``C:\YourPythonDir\Scripts\easy_install.exe C:\PathToEgg\tinkerforge.egg`` aus
 
 Danach können alle Beispiel unverändert verwendet werden.
 
