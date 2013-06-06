@@ -74,7 +74,6 @@ to other Bricks in the stack. From the programming perspective
 this is completely transparent, i.e. all Bricks and Bricklets can
 be used exactly the same way as if they were connected to your controlling device via USB.
 
-
 You need a Master Brick with firmware version 2.1.0 or newer to use this 
 extension.
 
@@ -82,7 +81,7 @@ The following combinations with other Extensions in a stack are possible
 (regardless of order):
 
 * Ethernet / RS485 Master
-* Ethernet / Chibi
+* Ethernet / Chibi Master
 
 Technical Specifications
 ------------------------
@@ -90,7 +89,7 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               100mA
+Current Consumption               100mA (average), 175mA (maximum)
 PoE 5V Power Supply               > 1A
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -115,13 +114,13 @@ Ressourcen
 Ethernet Configuration
 ^^^^^^^^^^^^^^^^^^^^^^
 
-The Ethernet Extension can be configured in two different modi: 
+The Ethernet Extension can be configured in two different modes:
 DHCP or static IP. If you use a static IP you have to enter 
 **IP**, **Subnet Mask** and **Gateway**.
 
-The MAC address of the Ethernet is not fixed in hardware, it will be allocated
-by Tinkerforge. If it is lost in the EEPROM it can be found on the sticker of
-the Ethernet Extension.
+The MAC address of the Ethernet Extension is not fixed in hardware, it will be
+allocated by Tinkerforge. If it is lost in the EEPROM it can be found on the
+sticker of the Ethernet Extension.
 
 After configuring the Ethernet Extension you have to press the button
 "Save Ethernet Configuration" and restart the Master Brick.
@@ -135,9 +134,9 @@ After configuring the Ethernet Extension you have to press the button
 PoE Power Supply
 ^^^^^^^^^^^^^^^^
 
-PoE injectors can be used to supply Bricks and Bricklets over Ethernet. 
-The Ethernet Extension will power the complete stack
-Activeted PoE will be signeld by a green LED on the Ethernet Extension.
+PoE injectors can be used to power Bricks and Bricklets over Ethernet.
+The Ethernet Extension will power the complete stack.
+Activated PoE will be signaled by a green LED on the Ethernet Extension.
 
 Servos and (stepper-) motors connected to DC-, Servo- or Stepper Bricks can not
 be powered by PoE since the PoE voltage typically is too high.
@@ -150,5 +149,4 @@ Programming Interfaces
 High Level Programming Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See :ref:`Master Brick Dokumentation <master_brick_programming_interfaces>`.
-
+See :ref:`Master Brick Documentation <master_brick_programming_interfaces>`.

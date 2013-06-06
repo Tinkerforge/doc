@@ -56,7 +56,7 @@ Mit dieser Ethernet Extension können :ref:`Bricks <product_overview_bricks>` un
 `LAN <https://de.wikipedia.org/wiki/Local_Area_Network>`__ integriert 
 werden. Das Modul unterstützt 10BaseT/100BaseTX Ethernet und ist 1000BaseTX 
 kompatibel. Die integrierte `PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__
-Stromversorgung ermöglicht eine Stromversorgung der angeschlossenen Module
+Stromversorgung ermöglicht eine Versorgung der angeschlossenen Module
 nach Industriestandard IEEE 802.3af, so dass sowohl über PoE 
 Injektoren als auch über PoE fähige Switche versorgt werden kann.
 
@@ -76,10 +76,10 @@ Der benutzte Master Brick muss eine Firmware Version von 2.1.0 oder neuer
 besitzen um diese Extension nutzen zu können.
 
 Die folgenden Kombinationen von Extensions in einem Stapel sind möglich. 
-Die Reihenfolge im Stack ist dabei nicht relevant:
+Die Reihenfolge im Stapel ist dabei nicht relevant:
 
 * Ethernet / RS485 Master
-* Ethernet / Chibi
+* Ethernet / Chibi Master
 
 
 Technische Spezifikation
@@ -88,14 +88,14 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    100mA
-PoE 5V Stackversorgung            > 1A
+Stromverbrauch                    100mA (Durchschnitt), 175mA (Maximum)
+PoE 5V Stapelversorgung            > 1A
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Ethernet Unterstützung            10BaseT/100BaseTX, 1000BaseTX compatible
+Ethernet Unterstützung            10BaseT/100BaseTX, 1000BaseTX kompatible
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           40 x 40 x 16mm (1.57 x 1.57 x 0.63")
+Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
 Gewicht                           22g 
 ================================  ============================================================
 
@@ -142,8 +142,8 @@ Servos und (Schritt-) Motoren angeschlossen an DC-, Servo- oder Stepper Bricks
 können nicht über PoE versorgt werden, da die PoE Spannung hierfür zu 
 hoch wäre. 
 
-Die Ethernet Extension kann zusammen mit einer Step-Down 
-Powersupply betrieben werden.
+Die Ethernet Extension kann zusammen mit einer Step-Down Power Supply betrieben
+werden.
 
 Programmierschnittstellen
 -------------------------

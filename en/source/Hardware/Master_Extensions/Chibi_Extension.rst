@@ -67,12 +67,12 @@ be used exactly the same way as if they were both connected via USB.
 It is also possible to create a network with several Chibi Extension where
 only one is connected via USB (many-to-one routing).
 
-The following combinations with other Extensions in a stack are possible:
+The following combinations with other Extensions in a stack are possible
+(regardless of order):
 
-* Chibi Slave bottom / RS485 Master top
-* Chibi Slave top / RS485 Master bottom
-* Chibi Master bottom / RS485 Slave top
-* Chibi Master top / RS485 Slave bottom
+* Chibi Master / Ethernet
+* Chibi Master / RS485 Slave
+* Chibi Slave / RS485 Master
 
 .. note::
  After configuring a Chibi network all devices will behave as

@@ -85,10 +85,10 @@ so genutzt werden als ob sie direkt per USB mit dem steuernden Gerät verbunden 
 
 Der benutzte Master Brick sollte eine Firmware Version von 1.3.0 oder neuer besitzen um diese Extension nutzen zu können.
 
-Die folgenden Kombinationen von Extensions in einem Stapel sind möglich:
+Die folgenden Kombinationen von Extensions in einem Stapel sind möglich.
+Die Reihenfolge im Stapel ist dabei nicht relevant:
 
-* WIFI oben / RS485 Master unten
-* WIFI unten / RS485 Master oben
+* WIFI / RS485 Master
 
 Technische Spezifikation
 ------------------------
