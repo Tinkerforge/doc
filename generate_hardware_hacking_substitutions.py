@@ -6,7 +6,7 @@ import sys
 
 lang = 'en'
 
-                            # display,            example,              uri,      filename, getting started
+            # display,            example,              uri,      filename, getting started
 bindings = [('C/C++',             'C',                  'c',      'C',      {'en': 'http://www.cprogramming.com/',
                                                                              'de': 'http://www.cprogramming.com/'}), # http://www.c-howto.de/
             ('C#',                'C#',                 'csharp', 'CSharp', {'en': 'http://csharp.net-tutorials.com/',
@@ -399,7 +399,7 @@ smoke_detector_steps = {
  bis es klappt:
 
 .. |step4_intro2| replace::
- und es wird solange versucht ein Enumerate zu starten bis auch dis geklappt
+ und es wird solange versucht ein Enumerate zu starten bis auch dies geklappt
  hat:
 
 .. |step4_sleep_in_c| replace::

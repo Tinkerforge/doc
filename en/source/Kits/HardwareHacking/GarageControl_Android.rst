@@ -30,8 +30,8 @@ The program will reuse some common parts of the :ref:`Readout Smoke Detectors
 using Java <starter_kit_hardware_hacking_smoke_detector_java>` project.
 
 
-Step 1: Createing the GUI
--------------------------
+Step 1: Creating the GUI
+------------------------
 
 After creating a new "Android Application Project" named "Garage Control" in
 Eclipse we start with the GUI:
@@ -52,7 +52,7 @@ disconnect and another one to trigger the remote control.
 
 Now the GUI layout is finished. To access the GUI components in the Java code
 we use the ``findViewById()`` method and store the references to member
-varaibles of the ``MainActivity`` class:
+variables of the ``MainActivity`` class:
 
 .. code-block:: java
 
@@ -206,7 +206,7 @@ before the connection is established. We need some more GUI logic!
 Step 4: More GUI logic
 ----------------------
 
-There is no button to close the connectino again after it got established. The
+There is no button to close the connection again after it got established. The
 connect button could do this. When the connection is established it should
 allow to disconnect it again:
 
@@ -325,7 +325,7 @@ disable and enable the GUI elements according to the current connection state:
     }
 
 But the program is not yet robust enough. What happens if can't connect? What
-happens if there is no Industial Quad Relay Bricklet with the given UID?
+happens if there is no Industrial Quad Relay Bricklet with the given UID?
 
 What we need is error handling!
 
@@ -340,7 +340,7 @@ project, but with some changes to make it work in a GUI program.
 We can't just use ``System.out.println()`` for error reporting because there
 is no console window in an app. Instead dialog boxes are used.
 
-The ``ConnectAsyncTask`` has to vaildate the user input before using it. An
+The ``ConnectAsyncTask`` has to validate the user input before using it. An
 ``AlertDialog`` is used to report possible problems:
 
 .. code-block:: java
@@ -475,8 +475,8 @@ to the connection result:
 
             builder.setCancelable(false);
 
-Then retry and cancel buttons are addeed with the respective logic to either
-retry to connect ot to cancel the connection attempt:
+Then retry and cancel buttons are added with the respective logic to either
+retry to connect or to cancel the connection attempt:
 
 .. code-block:: java
 
@@ -508,7 +508,7 @@ Finally, the dialog gets created and shown:
         }
     }
 
-Now the app can connect to an configureable host and port and trigger a button
+Now the app can connect to an configurable host and port and trigger a button
 on the remote control of your garage door opener using an Industrial Quad Relay
 Bricklet.
 
