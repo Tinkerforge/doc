@@ -47,7 +47,7 @@ Wurde Debian **mit** Hardware Floating Point Unit Unterstützung (Raspbian) inst
 so kann der :ref:`Brick Daemon <brickd>` einfach mit folgenden Befehlen installiert werden::
 
  cd /home/pi
- sudo apt-get install libusb-1.0-0 libudev
+ sudo apt-get install libusb-1.0-0 libudev0
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 

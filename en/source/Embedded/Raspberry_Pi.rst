@@ -46,7 +46,7 @@ If you have installed an Debian **with** hardware floating point unit support
 (Raspbian) you can simply install the :ref:`Brick Daemon <brickd>` package by::
 
  cd /home/pi
- sudo apt-get install libusb-1.0-0 libudev
+ sudo apt-get install libusb-1.0-0 libudev0
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
