@@ -34,19 +34,19 @@ Step 1: Creating the GUI
 ------------------------
 
 After creating a new "Android Application Project" named "Garage Control" in
-Eclipse we start with the GUI:
+Eclipse we start with creating the GUI:
 
 .. FIXME: update image
 
 .. image:: /Images/Kits/hardware_hacking_garage_control_android_gui_350.jpg
    :scale: 100 %
-   :alt: GUI in editor
+   :alt: App GUI
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_control_android_gui.jpg
 
 The basis is a "Linear Layout (Vertical)". Three text fields allow to enter
 the host, port and UID of the Industrial Quad Relay Bricklet. For the port a
-"Number" text field is used, so Android will restrict the content of the
+"Number" text field is used, so Android will restrict the content of this
 text field to numbers. The final two elements are one "Button" to connect and
 disconnect and another one to trigger the remote control.
 
@@ -131,17 +131,17 @@ The ``onPreExecute()`` method is called before ``doInBackground()`` and stores
 the host, port and UID configuration from the GUI elements. This is necessary,
 because the ``doInBackground()`` method needs this information, but is not
 allowed to access the GUI elements. Now the ``doInBackground()`` method can
-create an ``IPConnection`` and ``BrickletIndustrialQuadRelay`` object and calls
+create an ``IPConnection`` and ``BrickletIndustrialQuadRelay`` object and call
 the ``connect()`` method.
 
-Finally, a ``ConnectAsyncTask`` has to be created and executed when the connect
+Finally, a ``ConnectAsyncTask`` should be created and executed when the connect
 button is clicked. A ``OnClickListener`` added to the connect button does this:
 
 .. code-block:: java
 
     public class MainActivity extends Activity {
         // [...]
-        
+
         class ConnectClickListener implements OnClickListener {
             public void onClick(View v) {
                 new ConnectAsyncTask().execute();
@@ -199,7 +199,7 @@ That's it. If we would copy these three steps together in one file, we would
 have a working app that allows a smart phone to control a garage door opener
 using its hacked remote control!
 
-We didn't use the connect button yet and the trigger button can be clicked
+We don't have a disconnect button yet and the trigger button can be clicked
 before the connection is established. We need some more GUI logic!
 
 
@@ -357,7 +357,7 @@ The ``ConnectAsyncTask`` has to validate the user input before using it. An
 
             if (currentHost.length() == 0 || currentPort.length() == 0 || currentUID.length() == 0) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setMessage("Host/Port/UID cannot be empty"); 
+                builder.setMessage("Host/Port/UID cannot be empty");
                 builder.create().show();
                 cancel(true);
                 return;
@@ -516,7 +516,7 @@ Bricklet.
 Step 6: Persistent Configuration and State
 ------------------------------------------
 
-The app doesn't store its configuration yet. Android provides the 
+The app doesn't store its configuration yet. Android provides the
 ``SharedPreferences`` class to take care of this. In ``onCreate`` the
 configuration is restored:
 
@@ -566,7 +566,7 @@ And is restored when ``onCreate`` is called:
 
     protected void onCreate(Bundle savedInstanceState) {
         // [...]
-        
+
         if (savedInstanceState != null && savedInstanceState.getBoolean("connected", false)) {
             new ConnectAsyncTask().execute();
         }
