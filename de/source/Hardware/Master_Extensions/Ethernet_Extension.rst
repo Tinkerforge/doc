@@ -21,18 +21,18 @@ Ethernet Extension
 	             "Ethernet Extension mit Ethernetkabel")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_wifi_side_100.jpg",
-	             "Extensions/extension_wifi_sidel_600.jpg",
+	    tfdocimg("Extensions/extension_ethernet_side_100.jpg",
+	             "Extensions/extension_ethernet_side_600.jpg",
 	             "Ethernet Extension Seitenansicht")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_wifi_bottom_100.jpg",
-	             "Extensions/extension_wifi_bottom_600.jpg",
+	    tfdocimg("Extensions/extension_ethernet_bottom_100.jpg",
+	             "Extensions/extension_ethernet_bottom_600.jpg",
 	             "Ethernet Extension von unten")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_wifi_top_100.jpg",
-	             "Extensions/extension_wifi_top_600.jpg",
+	    tfdocimg("Extensions/extension_ethernet_top_100.jpg",
+	             "Extensions/extension_ethernet_top_600.jpg",
 	             "Ethernet Extension von oben")
 	}}
 	{{ tfdocend() }}
