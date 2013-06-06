@@ -153,6 +153,10 @@ extension_descriptions = {
     'en': 'Wireless Chibi Master Extension',
     'de': 'Drahtlose Chibi Master Extension'
     },
+'ethernet': {
+    'en': 'Cable based Ethernet Master Extension',
+    'de': 'Kabelgebundene Ethernet Master Extension'
+    },
 'rs485': {
     'en': 'Cable based RS485 Master Extension',
     'de': 'Kabelgebundene RS485 Master Extension'
@@ -404,6 +408,7 @@ def fill_dicts():
 
                   # display,             uri,     bindings, description
     extensions = [('Chibi Extension',   'chibi',  [],       extension_descriptions['chibi'][lang]),
+                  ('Ethernet Extension',   'ethernet',  [],       extension_descriptions['ethernet'][lang]),
                   ('RS485 Extension',   'rs485',  [],       extension_descriptions['rs485'][lang]),
                   ('WIFI Extension',    'wifi',   [],       extension_descriptions['wifi'][lang])]
 

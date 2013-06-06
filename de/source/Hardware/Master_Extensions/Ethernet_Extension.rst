@@ -2,10 +2,40 @@
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#master-extensions">Master Extensions</a> / Ethernet Extension
 :shoplink: ../../../shop/master-extensions/ethernet-master-extension.html
 
-.. _etherner_extension:
+.. _ethernet_extension:
 
 Ethernet Extension
 ==================
+
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Extensions/extension_ethernet_tilted_350.jpg",
+	               "Extensions/extension_ethernet_tilted_600.jpg",
+	               "Ethernet Extension")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_ethernet_cable_100.jpg",
+	             "Extensions/extension_ethernet_cable_600.jpg",
+	             "Ethernet Extension mit Ethernetkabel")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_wifi_side_100.jpg",
+	             "Extensions/extension_wifi_sidel_600.jpg",
+	             "Ethernet Extension Seitenansicht")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_wifi_bottom_100.jpg",
+	             "Extensions/extension_wifi_bottom_600.jpg",
+	             "Ethernet Extension von unten")
+	}}
+	{{
+	    tfdocimg("Extensions/extension_wifi_top_100.jpg",
+	             "Extensions/extension_wifi_top_600.jpg",
+	             "Ethernet Extension von oben")
+	}}
+	{{ tfdocend() }}
 
 Features
 --------
@@ -27,8 +57,8 @@ Mit dieser Ethernet Extension können :ref:`Bricks <product_overview_bricks>` un
 werden. Das Modul unterstützt 10BaseT/100BaseTX Ethernet und ist 1000BaseTX 
 kompatibel. Die integrierte `PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__
 Stromversorgung ermöglicht eine Stromversorgung der angeschlossenen Module
-nach Industriestandard IEEE 802.3af, so dass sowohl über kostengünstige PoE 
-Injektoren als auch über high End PoE fähige Switche versorgt werden kann.
+nach Industriestandard IEEE 802.3af, so dass sowohl über PoE 
+Injektoren als auch über PoE fähige Switche versorgt werden kann.
 
 Da die Extension selbst die von der API generierten TCP/IP Pakete behandeln kann, 
 ist es möglich direkt vom Smartphone, Tablet oder (Embedded) PC zu steuern. 
@@ -37,12 +67,12 @@ Der :ref:`Brick Daemon <brickd>` ist nicht mehr notwendig.
 Um die Ethernet Extension zu nutzen ist ein :ref:`Master Brick <master_brick>` 
 notwendig. Wenn andere Bricks gesteuert werden sollen, so kann ein Stapel aus 
 diesen gebaut werden und auf der Master Brick gesteckt werden. Wenn Bricklets 
-verwendet werden sollen, so können diese einfach an der Master Brick oder 
-andere Bricks im Stapel angeschlossen werden. Aus der Programmierersicht ist 
+verwendet werden sollen, so können diese einfach an den Master Brick oder 
+andere Bricks im Stapel angeschlossen werden. Aus Programmierersicht ist 
 dies absolut transparent, d.h. alle Bricks und Bricklets können so genutzt 
 werden als ob sie direkt per USB mit dem steuernden Gerät verbunden wären.
 
-Der benutzte Master Brick sollte eine Firmware Version von 2.1.0 oder neuer 
+Der benutzte Master Brick muss eine Firmware Version von 2.1.0 oder neuer 
 besitzen um diese Extension nutzen zu können.
 
 Die folgenden Kombinationen von Extensions in einem Stapel sind möglich. 
@@ -58,7 +88,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBD
+Stromverbrauch                    100mA
 PoE 5V Stackversorgung            > 1A
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -77,15 +107,6 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/ethernet-extension-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/ethernet_extension_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
-
-
-.. _ethernet_connectivity:
-
-Anschlussmöglichkeit
---------------------
-
-Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit der Ethernet Extension.
-
 
 .. _ethernet_configuration:
 
@@ -112,16 +133,16 @@ geklickt werden und der Master Brick neu gestartet werden.
 PoE Stromversorgung
 ^^^^^^^^^^^^^^^^^^^
 
-Um einen Stapel aus Bricks und Bricklets über die PoE zu versorgen
-kann zum Beispiel ein kostengünstiger PoE Injektor benutzt werden. Die Ethernet 
-Extension versorgt dann den Stapel, so dass alle Bricks und Bricklets benutzt 
-werden können. Aktives PoE wird über die grüne LED auf der Extension angezeigt.
+Um einen Stapel aus Bricks und Bricklets über PoE zu versorgen
+kann zum Beispiel ein PoE Injektor benutzt werden. Die Ethernet 
+Extension versorgt dann den kompletten Stapel.
+Aktives PoE wird über die grüne LED auf der Extension angezeigt.
 
 Servos und (Schritt-) Motoren angeschlossen an DC-, Servo- oder Stepper Bricks
 können nicht über PoE versorgt werden, da die PoE Spannung hierfür zu 
 hoch wäre. 
 
-Die Ethernet Extension kann ohne weiteres zusammen mit einer Step-Down 
+Die Ethernet Extension kann zusammen mit einer Step-Down 
 Powersupply betrieben werden.
 
 Programmierschnittstellen

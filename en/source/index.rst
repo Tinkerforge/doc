@@ -96,6 +96,7 @@ Master Extensions
    :glob:
 
    Hardware/Master_Extensions/Chibi_Extension
+   Hardware/Master_Extensions/Ethernet_Extension
    Hardware/Master_Extensions/RS485_Extension
    Hardware/Master_Extensions/WIFI_Extension
 
