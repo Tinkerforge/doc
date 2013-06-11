@@ -115,8 +115,6 @@ auth
 Atmel
 opengl
 CMake
-smartphone
-Smartphone
 Crosslink
 Github
 Kicad

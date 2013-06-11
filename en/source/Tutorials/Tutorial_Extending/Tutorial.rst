@@ -120,7 +120,7 @@ Change the UID corresponding to your device!
 
 In **Line 15** the IP Connection is connected. It is possible to run 
 your program on another PC than the one which has the Brick Daemon 
-running (e.g. you can write a program for your smartphone that 
+running (e.g. you can write a program for your smart phone that
 controls a Brick connected to your PC).
 
 The **Lines 18-23** configure the DC Brick and let the motor run full

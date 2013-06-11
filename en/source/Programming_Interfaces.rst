@@ -15,7 +15,7 @@ High Level Programming Interface (HLPI)
 The High Level Programming Interface uses preprogrammed devices
 (:ref:`Bricks <product_overview_bricks>` and 
 :ref:`Bricklets<product_overview_bricklets>`) that can be controlled by an 
-(embedded-) PC, tablet or smartphone. Each device has its own unique 
+(embedded-) PC, tablet or smart phone. Each device has its own unique
 identifier (UID).
 
 The user calls a function implemented in the :ref:`API Bindings <api_bindings>`

@@ -31,7 +31,7 @@ It can be extended by multiple other Bricklets probes, different other sensors, 
 to read case switches or doors or to switch warning devices on/off.
 There are different options to mount miscellaneous :ref:`Bricklets <bricklets>`.
 
-One or more external controlling devices, such as (Embedded-) PCs, smartphones or 
+One or more external controlling devices, such as (Embedded-) PCs, smart phones or
 tablets, can be used to control the kit from outside over the Ethernet 
 connection. Therefore monitoring over the internet is also possible.
 

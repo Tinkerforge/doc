@@ -23,7 +23,7 @@ Description
 
 The *Starter Kit: Hardware Hacking* is about hacking low voltage main stream
 devices to connect them with Tinkerforge modules. Then any (Embedded-) PC,
-Smartphone or Tablet can be used to interact with these hacked devices over USB.
+Smart Phone or Tablet can be used to interact with these hacked devices over USB.
 Interaction via Wi-Fi is possible if a :ref:`WIFI Extension <wifi_extension>`
 is added.
 
