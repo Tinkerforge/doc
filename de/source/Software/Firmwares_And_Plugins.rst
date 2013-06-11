@@ -149,3 +149,4 @@ verwenden von denen bekannt ist, dass sie richtig funktionieren:
    "Sourcery CodeBench Lite 2011.09-69, GCC 4.6.1", "Ja"
    "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Ja"
    "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "Nein"
+   "Sourcery CodeBench Lite 2013.05-23, GCC 4.7.3", "Ja"
