@@ -82,7 +82,24 @@ As next step click through the tabs of the Brick Viewer
 to see if the Bricklets are working correctly. Now you can be sure that 
 the Bricks and Bricklets have versions that work together.
 
-Projects
+
+How it works - How you can use it
+---------------------------------
+
+Basically there are two different options with this kit:
+
+ 1) You can measure voltages up to 45V
+	Todo description of voltage outputting devices
+
+ 2) You can short signals with a voltage up to 30V
+
+.. warning:: Do not try to switch 230V!
+
+
+
+
+
+Examples
 --------
 
 There are several low voltage devices that can be hacked. Here are some examples:
