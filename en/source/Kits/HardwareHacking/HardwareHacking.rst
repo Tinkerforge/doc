@@ -88,12 +88,23 @@ How it works - How you can use it
 
 Basically there are two different options with this kit:
 
- 1) You can measure voltages up to 45V
-	Todo description of voltage outputting devices
+.. warning:: Do not try measure or switch voltages below the maximum voltages!
 
- 2) You can short signals with a voltage up to 30V
+You can measure voltages up to 45V
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning:: Do not try to switch 230V!
+If you have an electronic device which state do you want to read out, maybe 
+there is somewhere a voltage which represents this state. If this voltage is 
+below 45V you can connect the Analog In Bricklet to it and measure it. One 
+good options are LEDs, if your device has an LED representing the state you 
+can make it readable.
+
+TODO Bild
+
+
+You can short signals with a voltage up to 30V
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 
 
