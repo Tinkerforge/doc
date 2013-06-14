@@ -93,20 +93,32 @@ Basically there are two different options with this kit:
 You can measure voltages up to 45V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have an electronic device which state do you want to read out, maybe 
-there is somewhere a voltage which represents this state. If this voltage is 
+If you want to read out the state of an electronic device, maybe 
+there is a voltage source somewhere which represents this state. If this voltage is 
 below 45V you can connect the Analog In Bricklet to it and measure it. One 
-good options are LEDs, if your device has an LED representing the state you 
-can make it readable.
+good option are LEDs. If your device has an LED representing the state you 
+can make it readable easily. But of course also other voltage sources are possible
+if these are below 45V.
 
-TODO Bild
+To measure a voltage source, connect it to the Analog In Bricklet to the VIN and GND
+inputs.
+
+.. warning:: Do not connect to 3.3V or 5V! These are outputs of the Bricklet.
+
+If you don't see feasibly measurements in Brick Viewer you likely have to reverse 
+polarity of your voltage source.
+
+Todo: Example Image how to connect it
 
 
 You can short signals with a voltage up to 30V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+With the Industrial Quad Relay Bricklet you can switch (short circuit) signals. 
+For example many devices have switches or push buttons which can be bypassed by 
+the Bricklet. Remote controls are good examples for it.
 
-
+Todo Example Image how to connect it
 
 
 
