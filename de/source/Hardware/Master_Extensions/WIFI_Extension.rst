@@ -107,6 +107,7 @@ Maximale Anzahl gleichzeitiger Verbindungen   15
 RF Ausgangsstärke (Typisch)                   18dBm
 Externer Antennenanschluss                    RP-SMA Female (mit Pin) und U.FL
 Sicherheitsprotokolle                         WEP, WPA, WPA2 (Personal und Enterprise), EAP-FAST, EAP-TLS, EAP-TTLS, PEAP
+Unterstützte Standards                        IEEE 802.11b/g/n, mit DSSS und CCK-Modulation
 --------------------------------------------  -----------------------------------------------------------------------------
 --------------------------------------------  -----------------------------------------------------------------------------
 Abmessungen (B x T x H)                       40 x 40 x 16mm (1,57 x 1,57 x 0,63")

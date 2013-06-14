@@ -106,6 +106,7 @@ Maximum Concurrent Connections    15
 RF Output Power (Typical)         18dBm
 External Antenna Connector        RP-SMA Female (with pin inside) and U.FL
 Security Protocols                WEP, WPA, WPA2 (Personal and Enterprise), EAP-FAST, EAP-TLS, EAP-TTLS, PEAP
+Supported Standards               IEEE 802.11b/g/n, with DSSS and CCK modulation
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 16mm  (1.57 x 1.57 x 0.63")
