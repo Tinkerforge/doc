@@ -108,7 +108,11 @@ inputs.
 If you don't see feasibly measurements in Brick Viewer you likely have to reverse 
 polarity of your voltage source.
 
-Todo: Example Image how to connect it
+.. image:: /Images/Kits/hardware_hacking_analog_in_diode_350.jpg
+   :scale: 100 %
+   :alt: Example schematic: Analog In Bricklet measuring LED state
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_analog_in_diode.jpg
 
 
 You can short signals with a voltage up to 30V
@@ -118,8 +122,11 @@ With the Industrial Quad Relay Bricklet you can switch (short circuit) signals.
 For example many devices have switches or push buttons which can be bypassed by 
 the Bricklet. Remote controls are good examples for it.
 
-Todo Example Image how to connect it
-
+.. image:: /Images/Kits/hardware_hacking_industrial_quad_switch_350.jpg
+   :scale: 100 %
+   :alt: Example schematic: Industrial Quad Relay Bricklet bypassing switch
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_industrial_quad_switch.jpg
 
 
 Examples
@@ -199,3 +206,14 @@ in :ref:`Java <starter_kit_hardware_hacking_garage_control_android>`.
    :hidden:
 
    GarageControl_Android
+
+
+Is someone at the Door? - Read out your Doorbell
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a very small Python project: The Analog In Bricklet is connected
+to a 12V Doorbell. The python script prints "Ring Ring Ring!" if someone 
+actuates the doorbell. Of course this project can be extended such that you 
+send an Email or SMS to your phone if someone is at your door.
+
+
