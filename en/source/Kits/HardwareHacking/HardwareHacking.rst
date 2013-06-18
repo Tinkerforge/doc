@@ -145,10 +145,19 @@ smoke detector and utilized this feature to trigger actions if smoke is
 detected. For example, notify someone with an email or a text message about the
 alarm.
 
+.. image:: /Images/Kits/hardware_hacking_remote_soldered_350.jpg
+   :scale: 100 %
+   :alt: Industrial Quad Relay with connected Remote Control
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_remote_soldered_1200.jpg
+
 For this project we use the wireless smoke detector set `ELRO FA20RF/2
 <http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
 and connect an :ref:`Analog In Bricklet <analog_in_bricklet>` to one of its
 LEDs that light up during an alarm.
+
+The full hardware description can be found 
+:ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware>`.
 
 Example implementations with step-by-step instructions are available for:
 
@@ -166,6 +175,12 @@ Simple remote switches can be used as a first step towards home automation.
 We are going to hack the remote control of such a switch and connect it to a PC
 to create software controlled remote switches.
 
+.. image:: /Images/Kits/hardware_hacking_remote_soldered_350.jpg
+   :scale: 100 %
+   :alt: Industrial Quad Relay with connected Remote Control
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_remote_soldered_1200.jpg
+
 For this project we use the remote switch set `ELRO AB440WD/2
 <http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
 and connect an :ref:`Industrial Quad Relay Bricklet
@@ -174,12 +189,16 @@ and connect an :ref:`Industrial Quad Relay Bricklet
 remote control. So this instructions apply to all ELRO remote switches that
 come with this specific remote control.
 
+The full hardware description can be found 
+:ref:`here <starter_kit_hardware_hacking_remote_switch_hardware>`.
+
 An example implementation is available
 in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
 
 .. toctree::
    :hidden:
 
+   RemoteSwitch_Hardware_Setup
    RemoteSwitch_CSharp
 
 
