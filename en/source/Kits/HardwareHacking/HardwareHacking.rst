@@ -208,12 +208,25 @@ in :ref:`Java <starter_kit_hardware_hacking_garage_control_android>`.
    GarageControl_Android
 
 
-Is someone at the Door? - Read out your Doorbell
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Is someone at the Door? - Doorbell Notifier
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is a very small Python project: The Analog In Bricklet is connected
+This is a project basically identical to
+the smoke detector project. The Analog In Bricklet is connected
 to a 12V Doorbell. The python script prints "Ring Ring Ring!" if someone 
-actuates the doorbell. Of course this project can be extended such that you 
+actuates the doorbell. Of course this project can be extended such that it will 
 send an Email or SMS to your phone if someone is at your door.
 
+.. image:: /Images/Kits/hardware_hacking_doorbell_350.jpg
+   :scale: 100 %
+   :alt: Doorbell notifier
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_doorbell.jpg
 
+An example application is available
+in :ref:`Python <starter_kit_hardware_hacking_doorbell_notifier_python>`.
+
+.. toctree::
+   :hidden:
+
+	Doorbell_Notifier_Python
