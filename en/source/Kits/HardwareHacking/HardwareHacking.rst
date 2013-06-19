@@ -12,11 +12,12 @@ Starter Kit: Hardware Hacking
 Features
 --------
 
+* Have fund and hack many devices
 * Readout and control low voltage main stream devices
 
   * e.g. smoke detectors, remote switches and garage door openers
 
-* Interaction over USB or Wi-Fi
+* Interaction over USB, Wi-Fi or Ethernet
 
 Description
 -----------
@@ -25,7 +26,8 @@ The *Starter Kit: Hardware Hacking* is about hacking low voltage main stream
 devices to connect them with Tinkerforge modules. Then any (Embedded-) PC,
 Smart Phone or Tablet can be used to interact with these hacked devices over USB.
 Interaction via Wi-Fi is possible if a :ref:`WIFI Extension <wifi_extension>`
-is added.
+is added. Also a direct Ethernet interface is possible with the
+:ref:`Ethernet Extension <ethernet_extension>`.
 
 There are two groups of applications of this kit: control and readout. For
 control applications an :ref:`Industrial Quad Relay Bricklet
@@ -58,6 +60,9 @@ Resources
 ---------
 
 * Example source code *Smoke Detector* (Download: |smoke_detector_examples_download|)
+* Example source code *Control Remote Switches* (Download: )
+* Example source code *Control Garage Door Openers* (Download: )
+* Example source code *Doorbell Notifier* (Download: )
 
 Firmware updating and first tests
 ---------------------------------
@@ -87,8 +92,6 @@ How it works - How you can use it
 ---------------------------------
 
 Basically there are two different options with this kit:
-
-.. warning:: Do not try measure or switch voltages below the maximum voltages!
 
 You can measure voltages up to 45V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -190,8 +193,9 @@ For this project we use the remote switch set `ELRO AB440WD/2
 and connect an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
 <http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
-remote control. So this instructions apply to all ELRO remote switches that
-come with this specific remote control.
+remote control. There are a vast number of control remote switches available. Typically
+all used remote controls used for them base on a IC HX2262 and the same hardware design, 
+so this guide can be taken for all of these remote switches.
 
 The full hardware description can be found 
 :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware>`.

@@ -14,18 +14,24 @@ Features
 
 .. Einrueckung so beibehalten, da sonst kaputt
 
-* Open Source Server Room Monitoring
-* 19" or 10" Rack Mountable
-* Accessible and Powered by Ethernet (PoE) 
-* Modular: Expandable to fullfill your Requirements
-* Demo Application available
+ * Allows Low Cost and Modular Server Room Monitoring 
+ * 19" or 10" Rack Mountable
+ * Accessible and Powered by Ethernet (PoE) 
+ * Expandable: Simply add Sensors if you need them
+ * API for many programming languages 
+
+   * (|bindings|)
+
+ * Open Source Soft- and Hardware
 
 Description
 -----------
 
 The *Starter Kit: Server Room Monitoring* is an open source kit to
 monitor server room installation. The basic kit is equipped with the following
-Sensors: One Ambient Light Bricklet, Temperature Bricklet and PTC Bricklet.
+Sensors: One :ref:`Ambient Light Bricklet<ambient_light_bricklet>`, 
+:ref:`Temperature Bricklet <temperature_bricklet>` and 
+:ref:`PTC Bricklet <ptc_bricklet>`.
 
 It can be extended by multiple other Bricklets probes, different other sensors, in/outputs e.g. 
 to read case switches or doors or to switch warning devices on/off.
@@ -40,9 +46,9 @@ tinker-friendly PMMA which can be easily modified (e.g. drill new holes with
 simple wood drill). Additionally mounting holes for 
 :ref:`Analog In <analog_in_bricklet>`,
 :ref:`Analog Out <analog_in_bricklet>`,
-:ref:`Industrial Digital In <industrial_digital_in_bricklet>`,
-:ref:`Industrial Digital Out <industrial_digital_out_bricklet>`,
-:ref:`Industrial Quad Relay <industrial_quar_relay_bricklet>`,
+:ref:`Industrial Digital In 4 <industrial_digital_in_4_bricklet>`,
+:ref:`Industrial Digital Out 4 <industrial_digital_out_4_bricklet>`,
+:ref:`Industrial Quad Relay <industrial_quad_relay_bricklet>`,
 and :ref:`IO-4 <io4_bricklet>` Bricklets are provided.
 
 Programming this kit can be done with all of the available
@@ -56,10 +62,8 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Air Pressure                      10mbar - 1200mbar in 0.012mbar steps
 Illumination                      0lux - 900lux in 0.1lux steps
-Relative Humidity                 0% RH - 10% RH in 0.1% RH steps
-Temperature                       -40°C - 85°C in 0.01°C steps
+Ambient Temperature               -40°C - 85°C in 0.01°C steps
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions 10" (W x D x H)        240 x 46 x 100mm (9.45 x 1.81 x 3.94")
@@ -74,11 +78,7 @@ Resources
 ---------
 
 * Server Room Monitoring Kit case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
-* Example source code *Write to LCD* (Download: |write_to_lcd_examples_download|)
-* Example source code *Xively* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Example source code *Website* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
-* Example source code *Button Monitoring* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_monitoring/csharp>`__)
-* Demo Application (Download: `Windows <http://download.tinkerforge.com/kits/server_room_monitoring/windows/starter_kit_server_room_monitoring_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/server_room_monitoring/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/server_room_monitoring/macos/starter_kit_server_room_monitoring_demo_macos_latest.dmg>`__)
  
 
 Firmware updating and first tests
@@ -106,40 +106,6 @@ the Bricks and Bricklets have versions that work together and that
 everything will work if it is screwed together in the weather station
 enclosure.
 
-Demo Application
-^^^^^^^^^^^^^^^^
-
-If the hardware is running correctly you can also try the demo application for 
-this Starter Kit: Weather Station. It implements three of the presented
-:ref:`projects <starter_kit_server_room_monitoring_projects>` for demonstration
-purposes:
-
-1. :ref:`Display Environment Measurements on LCD <starter_kit_server_room_monitoring_write_to_lcd>`
-2. :ref:`Show Statistics with Button Monitoring <starter_kit_server_room_monitoring_button_monitoring>`
-3. :ref:`Connect to Xively <starter_kit_server_room_monitoring_xively>`
-
-Each project can be selected with its own tab. The first project only displays
-the measured values. The second project is more complex and displays 
-min, max and average values as well as graphs for these measurements.
-The display mode can be changed by pressing the buttons at the LCD 20x4 
-Bricklet or in the application. In some modi the buttons can be pressed 
-multiple times, such that other measurements will be shows. 
-
-Finally the Xively projects lets you upload your measurements.
-At first you have to register on `xively.com <https://xively.com>`__.
-Next you have to create a Feed ID, API key and four
-channels to Upload the values (AirPressure, AmbientLight, Humidity and 
-Temperature). Feed ID, API Key and the upload interval have to be configured in 
-the demo application. Please take a look at the project description for further
-information
-
-The download link is in the :ref:`resources <starter_kit_server_room_monitoring_resources>`.
-
-.. image:: /Images/Kits/server_room_monitoring_demo_350.jpg
-   :scale: 100 %
-   :alt: Weather Station Demo Application Screenshot
-   :align: center
-   :target: ../../_images/Kits/server_room_monitoring_demo.jpg
 
 Construction
 ------------
@@ -160,14 +126,15 @@ Projects
 There are several applications for the Weather Station:
 
 
-.. _starter_kit_server_room_monitoring_write_to_lcd:
-
 Simple Monitoring
 ^^^^^^^^^^^^^^^^^
 
+Server Room Monitoring with Nagios
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Upload to Xively
-^^^^^^^^^^^^^^^^
+
+Upload Sensor Data to Xively
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 `Xively <https://xively.com/>`__ is a service that provides the possibility to
 analyze and visualize the "Internet of Things". They can store a history of our
