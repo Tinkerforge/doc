@@ -17,30 +17,6 @@ In this project we modify the smoke detector python script to notify us
 if the doorbell is engaged. Of course
 this script can be extended such that it will send an Email or SMS to your 
 
-Hardware Setup
---------------
-
-The hardware setup is pretty simple. Typically doorbells are driven by 12V AC 
-(Alternating Current). You only have to connect the Analog In Bricklet to the doorbell.
-
-.. image:: /Images/Kits/hardware_hacking_doorbell2_350.jpg
-   :scale: 100 %
-   :alt: Analog In Bricklet attached to Doorbell
-   :align: center
-   :target: ../../_images/Kits/hardware_hacking_doorbell2.jpg
-
-.. image:: /Images/Kits/hardware_hacking_doorbell_350.jpg
-   :scale: 100 %
-   :alt: Analog In Bricklet attached to Doorbell
-   :align: center
-   :target: ../../_images/Kits/hardware_hacking_doorbell.jpg
-
-.. image:: /Images/Kits/hardware_hacking_doorbell3_350.jpg
-   :scale: 100 %
-   :alt: Analog In Bricklet attached to Doorbell
-   :align: center
-   :target: ../../_images/Kits/hardware_hacking_doorbell3.jpg
-
 
 Python Script
 -------------

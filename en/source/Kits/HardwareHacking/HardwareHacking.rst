@@ -145,11 +145,11 @@ smoke detector and utilized this feature to trigger actions if smoke is
 detected. For example, notify someone with an email or a text message about the
 alarm.
 
-.. image:: /Images/Kits/hardware_hacking_remote_soldered_350.jpg
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_350.jpg
    :scale: 100 %
-   :alt: Industrial Quad Relay with connected Remote Control
+   :alt: Smoke Detector with connected Analog In Bricklet
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_remote_soldered_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_1200.jpg
 
 For this project we use the wireless smoke detector set `ELRO FA20RF/2
 <http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
@@ -242,6 +242,10 @@ send an Email or SMS to your phone if someone is at your door.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell.jpg
 
+
+Description of the hardware setup and more pictures can be found
+:ref:`here <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup>`.
+
 An example application is available
 in :ref:`Python <starter_kit_hardware_hacking_doorbell_notifier_python>`.
 
@@ -249,3 +253,4 @@ in :ref:`Python <starter_kit_hardware_hacking_doorbell_notifier_python>`.
    :hidden:
 
 	Doorbell_Notifier_Python
+	Doorbell_Notifier_Hardware_Setup

@@ -26,4 +26,38 @@ In our case it looks like the following:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_open_1200.jpg
 
+Next we will remove the screws and the other side of the casing.
 
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_inside_350.jpg
+   :scale: 100 %
+   :alt: Smoke Detector Bottom Opened
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_inside_1200.jpg
+
+Now we have access to the LED contacts so we can solder wires to it.
+
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_closeup_350.jpg
+   :scale: 100 %
+   :alt: Smoke Detector Openend with soldered LED
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_closeup_1200.jpg
+
+We connect these wires to the Analog In Bricklet. We will check for the right polarity later.
+
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_350.jpg
+   :scale: 100 %
+   :alt: Smoke Detector OPenend with soldered wires to LED
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_1200.jpg
+
+After that we can close the casing.
+
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_closed_350.jpg
+   :scale: 100 %
+   :alt: Smoke Detector Openend with soldered wires to LED Closed
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_closed_1200.jpg
+
+At the end we can thest the hardware setup. We trigger the test button and can use the 
+Brick Viewer to see the reaction of the LED. If we do not see anything our wires are
+most likely reversed. So change the polarity.
