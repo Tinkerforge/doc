@@ -2,7 +2,7 @@
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / PTC Bricklet
 :shoplink: ../../../shop/bricklets/ptc-bricklet.html
 
-.. FIXME include:: Ambient_Light.substitutions
+.. FIXME include:: PTC.substitutions
 
 
 .. _ptc_bricklet:
@@ -29,8 +29,8 @@ Resources
 
 .. _ptc_bricklet_test:
 
-Test your Ambient Light Bricklet
---------------------------------
+Test your PTC Bricklet
+----------------------
 
 
 .. _ptc_bricklet_programming_interfaces:
