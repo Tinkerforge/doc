@@ -5,7 +5,7 @@
 .. FIXME include:: Industrial_Dual_0_20_mA.substitutions
 
 
-.. _industrial_quad_relay_bricklet:
+.. _industrial_dual_0_20_ma_bricklet:
 
 Industrial Dual 0-20mA Bricklet
 ===============================
