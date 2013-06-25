@@ -33,35 +33,50 @@ Starter Kit: Hardware Hacking
 Features
 --------
 
-* Hack miscellaneous devices and make them controllable by:
+* Hack any low voltage electronic appliance and make it controllable by
 
-  * PC, Smartphone or over the Internet (Internet of Things)
+  * PC, smart phone/tablet or over the internet (Internet of Things).
+  * Demo applications for Android, Windows Phone and IPhone* are available.
 
-* Readout and control low voltage main stream devices
+* Read out and control low voltage mainstream devices,
 
-  * e.g. smoke detectors, remote switches and garage door openers
+  * e.g. smoke detectors, remote mains switches, garage door openers and doorbells.
 
-* Interaction over USB, Wi-Fi or Ethernet
+* Interaction over USB, Wi-Fi or Ethernet possible.
+
+\*: Demo for IPhone comming soon
 
 Description
 -----------
 
-The *Starter Kit: Hardware Hacking* is about hacking low voltage main stream
-devices to connect them with Tinkerforge modules. Then any (Embedded-) PC,
-Smart Phone or Tablet can be used to interact with these hacked devices over USB.
-Interaction via Wi-Fi is possible if a :ref:`WIFI Extension <wifi_extension>`
-is added. Also a direct Ethernet interface is possible with the
-:ref:`Ethernet Extension <ethernet_extension>`.
+The *Starter Kit: Hardware Hacking* is about hacking low voltage mainstream
+devices to connect them with Tinkerforge modules. Any (Embedded-) PC,
+Smart Phone or Tablet can be used to interact with devices hacked by this kit.
+Interaction is possible over USB or via Wi-Fi if a :ref:`WIFI Extension <wifi_extension>`
+is added. Also a direct Ethernet interface with the
+:ref:`Ethernet Extension <ethernet_extension>` can be achieved.
 
-There are two groups of applications of this kit: control and readout. For
-control applications an :ref:`Industrial Quad Relay Bricklet
-<industrial_quad_relay_bricklet>` is included, that contains four on/off
-switches. For readout applications an :ref:`Analog In Bricklet
-<analog_in_bricklet>` is included, that can measure a single voltage.
+There are two groups of applications of this kit: controlling and reading 
+out. For control applications an :ref:`Industrial Quad Relay Bricklet
+<industrial_quad_relay_bricklet>` is included. It contains four on/off
+switches. For read-out applications an :ref:`Analog In Bricklet
+<analog_in_bricklet>` is included. It can measure voltages from 0V-45V.
+
+Example applications include:
+
+* Forwarding smoke detector alarm to a PC.
+* Controlling remote mains switches with a PC.
+* Opening/Closing garage doors over a smart phone/tablet (Android, Windows Phone and IPhone).
+* Forwarding door bell ringing to a PC.
+
+Many more applications are possible, anything that is controlled by
+a remote control or outputs analog voltages is easily hackable by this Kit.
+The given examples applications should be enough to give you the power
+to hack any electronic appliance in this category.
 
 Programming can be done with all of the available bindings (|bindings|).
-Example implementations for each of the languages are available. This will
-give you a starting point into the programming with Tinkerforge.
+Example implementations for each of the languages are available. This Kit
+will also give you a good starting point into the programming with Tinkerforge.
 
 Technical Specifications
 ------------------------
@@ -70,15 +85,9 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Voltage Measurement               0V - 45V in 1mV steps, 12bit resolution
-Maximum Switching Current         1.2A*
-Maximum Switching Voltage         30V*
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            ? x ? x ?mm (? x ? x ?")
-Weight                            ?g
+Maximum Switching Current         1.2A per switch
+Maximum Switching Voltage         30V per switch
 ================================  ============================================================
-
-\* per switch
 
 Resources
 ---------
@@ -96,7 +105,7 @@ As a very first step you should try out and update your Bricks and Bricklets.
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
 the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets to the Master 
 Brick and connect it via USB to your PC. Afterwards use Brick Viewer to find out
-if all of the firmwares up to date (Updates / Flashing button). If not, you can
+if all of the firmwares are up to date (Updates / Flashing button). If not, you can
 :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
 Viewer, too:
@@ -120,20 +129,19 @@ Basically there are two different options with this kit:
 You can measure voltages up to 45V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you want to read out the state of an electronic device, maybe 
-there is a voltage source somewhere which represents this state. If this voltage is 
+If you want to read out the state of an electronic device, often 
+there is a voltage source somewhere that represents this state. If this voltage is 
 below 45V you can connect the Analog In Bricklet to it and measure it. One 
 good option are LEDs. If your device has an LED representing the state you 
-can make it readable easily. But of course also other voltage sources are possible
-if these are below 45V.
+can easily read the state. But of course also other voltage sources are possible.
 
 To measure a voltage source, connect it to the Analog In Bricklet to the VIN and GND
 inputs.
 
 .. warning:: Do not connect to 3.3V or 5V! These are outputs of the Bricklet.
 
-If you don't see feasibly measurements in Brick Viewer you likely have to reverse 
-polarity of your voltage source.
+If you don't see meaningful measurements in Brick Viewer you likely have to reverse 
+the polarity of the voltage source (switch VIN and GND).
 
 .. image:: /Images/Kits/hardware_hacking_analog_in_diode_350.jpg
    :scale: 100 %
@@ -146,7 +154,7 @@ You can short signals with a voltage up to 30V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 With the Industrial Quad Relay Bricklet you can switch (short circuit) signals. 
-For example many devices have switches or push buttons which can be bypassed by 
+Many devices have switches or push buttons that can be hacked by 
 the Bricklet. Remote controls are good examples for it.
 
 .. image:: /Images/Kits/hardware_hacking_industrial_quad_switch_350.jpg
@@ -159,14 +167,14 @@ the Bricklet. Remote controls are good examples for it.
 Examples
 --------
 
-There are several low voltage devices that can be hacked. Here are some examples:
+There are many low voltage appliances that can be hacked. Here are some examples:
 
 .. _starter_kit_hardware_hacking_smoke_detector:
 
 Readout Smoke Detectors
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Wireless interconnectable smoke detectors allow to readout the alarm signal of
+Wireless interconnectable smoke detectors allow to read out the alarm signal of
 a whole smoke detector network at a single point. We are going to hack such a
 smoke detector and utilized this feature to trigger actions if smoke is
 detected. For example, notify someone with an email or a text message about the
@@ -199,8 +207,8 @@ Example implementations with step-by-step instructions are available for:
 
 .. _starter_kit_hardware_hacking_remote_switch:
 
-Control Remote Switches
-^^^^^^^^^^^^^^^^^^^^^^^
+Control Remote Mains Switches
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Simple remote switches can be used as a first step towards home automation.
 We are going to hack the remote control of such a switch and connect it to a PC
@@ -217,9 +225,10 @@ For this project we use the remote switch set `ELRO AB440WD/2
 and connect an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
 <http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
-remote control. There are a vast number of control remote switches available. Typically
-all used remote controls used for them base on a IC HX2262 and the same hardware design, 
-so this guide can be taken for all of these remote switches.
+remote control. There are a vast number of control remote switches available. 
+Most of the commercially available remote controls use the HX2262 IC
+with the same hardware design, so this guide can be used for most 
+remote switches.
 
 The full hardware description can be found 
 :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware>`.
@@ -240,9 +249,9 @@ Control Garage Door Openers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Garage door openers are quite useful. Typically they come with a remote control
-and we are going to hack one. Then your smart phone can control the garage
-door opener and you don't need to carry around the original remote control
-anymore. Basically this project based this 
+and we are going to hack one. After the hack your smart phone can control the garage
+door and you don't need to carry around the original remote control
+anymore. This project is based on this
 `Wiki project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_finished_350.jpg
@@ -261,6 +270,8 @@ and :ref:`Windows Phone (C#)
 The Android app is an improved version of this `wiki project
 <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__
 
+A Demo app for IPhone is comming soon.
+
 .. toctree::
    :hidden:
 
@@ -272,11 +283,10 @@ The Android app is an improved version of this `wiki project
 Is someone at the Door? - Doorbell Notifier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is a project basically identical to
-the smoke detector project. The Analog In Bricklet is connected
+In this project the Analog In Bricklet is connected
 to a 12V Doorbell. The python script prints "Ring Ring Ring!" if someone 
-actuates the doorbell. Of course this project can be extended such that it will 
-send an Email or SMS to your phone if someone is at your door.
+actuates the doorbell. You can extend this project such that it will 
+send an SMS or let your phone ring if someone is at your door. Be creative! 
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_350.jpg
    :scale: 100 %
