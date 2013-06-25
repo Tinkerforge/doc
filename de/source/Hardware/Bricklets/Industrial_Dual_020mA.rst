@@ -50,7 +50,7 @@ Features
 
 * Präzisions-Stromsensor, misst Strom zwischen 0 und 22.5mA
 * Kann IEC 60381-1 Sensoren vom Typ 2 und Typ 3 auslesen (`Einheitssignal <http://de.wikipedia.org/wiki/Einheitssignal>`__)
-* Hoche Genauigkeit (0,15%), Auflösung (bis zu 0,172µA) und Abtastrate (bis zu 240 SPS)
+* Hohe Genauigkeit (0,15%), Auflösung (bis zu 0,172µA) und Abtastrate (bis zu 240 SPS)
 * Es ist möglich zu detektieren ob ein Sensor angeschlossen/defekt ist
 
 

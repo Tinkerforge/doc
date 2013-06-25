@@ -234,7 +234,7 @@ The following functions and callbacks are supported by all devices.
  no other packet send or received for at least 5s. Bricks and Bricklets just
  ignore this function ID.
 
- As this feature is only useful for the WIFI Extenstion the Brick Daemon just
+ As this feature is only useful for the WIFI Extension the Brick Daemon just
  drops incoming packets with this function ID and does not forward them over USB.
 
  This is a broadcast function and the UID in the packet header has to be

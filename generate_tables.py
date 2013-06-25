@@ -416,11 +416,11 @@ def fill_dicts():
                  ('Voltage/Current',            'voltage_current',            bindings, bricklet_descriptions['voltage_current'][lang]),
                 ]
 
-                  # display,             uri,     bindings, description
-    extensions = [('Chibi Extension',   'chibi',  [],       extension_descriptions['chibi'][lang]),
-                  ('Ethernet Extension',   'ethernet',  [],       extension_descriptions['ethernet'][lang]),
-                  ('RS485 Extension',   'rs485',  [],       extension_descriptions['rs485'][lang]),
-                  ('WIFI Extension',    'wifi',   [],       extension_descriptions['wifi'][lang])]
+                  # display,              uri,       bindings, description
+    extensions = [('Chibi Extension',    'chibi',    [],       extension_descriptions['chibi'][lang]),
+                  ('Ethernet Extension', 'ethernet', [],       extension_descriptions['ethernet'][lang]),
+                  ('RS485 Extension',    'rs485',    [],       extension_descriptions['rs485'][lang]),
+                  ('WIFI Extension',     'wifi',     [],       extension_descriptions['wifi'][lang])]
 
                       # display,                  uri,         bindings, description
     power_supplies = [('Step-Down Power Supply', 'step_down',  [],       power_supply_descriptions['step_down'][lang])]

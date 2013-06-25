@@ -159,3 +159,4 @@ Starterkit
 armhf
 armel
 Cosm
+Xively
