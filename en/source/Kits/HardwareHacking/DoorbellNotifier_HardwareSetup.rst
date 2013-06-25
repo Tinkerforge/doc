@@ -6,7 +6,7 @@
 Doorbell Notifier Hardware Setup
 ================================
 
-The hardware setup is pretty simple. Typically doorbells are driven by 12V AC 
+The hardware setup is pretty simple. Typically doorbells are driven by 12V AC
 (Alternating Current). You only have to connect the Analog In Bricklet to the doorbell.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell2_350.jpg
