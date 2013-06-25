@@ -13,7 +13,7 @@ Doorbell Notifier written in Python
 Goals
 -----
 
-In this project we modify the smoke detector python script to notify us
+In this project we modify the smoke detector Python script to notify us
 if the doorbell is engaged. Of course
 this script can be extended such that it will send an Email or SMS to you.
 
