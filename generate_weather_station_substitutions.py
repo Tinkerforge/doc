@@ -547,6 +547,18 @@ def make_write_to_lcd_toctree():
 
     return write_to_lcd_examples_toctree[lang].format('\n'.join(toctree_lines))
 
+def write_if_changed(path, content):
+    if os.path.exists(path):
+        f = open(path, 'rb')
+        existing = f.read()
+        f.close()
+        if existing == content:
+            return
+
+    f = open(path, 'wb')
+    f.write(content)
+    f.close()
+
 def generate(path):
     global lang
 
@@ -559,18 +571,18 @@ def generate(path):
         sys.exit(1)
 
     print 'Generating WeatherStation.substitutions'
-    file(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WeatherStation.substitutions'), 'wb').write(make_substitutions())
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WeatherStation.substitutions'), make_substitutions())
 
     for binding in bindings:
         print 'Generating {0}Common.substitutions (WeatherStation)'.format(binding[3])
-        file(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'Common.substitutions'), 'wb').write(make_common_substitutions(binding))
+        write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'Common.substitutions'), make_common_substitutions(binding))
 
     for binding in bindings:
         print 'Generating {0}ToLCD.substitutions (WeatherStation)'.format(binding[3])
-        file(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'ToLCD.substitutions'), 'wb').write(make_write_to_lcd_substitutions(binding))
+        write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'ToLCD.substitutions'), make_write_to_lcd_substitutions(binding))
 
     print 'Generating WriteToLCD.toctree (WeatherStation)'
-    file(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WriteToLCD.toctree'), 'wb').write(make_write_to_lcd_toctree())
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WriteToLCD.toctree'), make_write_to_lcd_toctree())
 
 if __name__ == "__main__":
     generate(os.getcwd())

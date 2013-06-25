@@ -485,6 +485,18 @@ def make_smoke_detector_toctree():
 
     return smoke_detector_examples_toctree[lang].format('\n'.join(toctree_lines))
 
+def write_if_changed(path, content):
+    if os.path.exists(path):
+        f = open(path, 'rb')
+        existing = f.read()
+        f.close()
+        if existing == content:
+            return
+
+    f = open(path, 'wb')
+    f.write(content)
+    f.close()
+
 def generate(path):
     global lang
 
@@ -497,18 +509,18 @@ def generate(path):
         sys.exit(1)
 
     print 'Generating HardwareHacking.substitutions'
-    file(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'HardwareHacking.substitutions'), 'wb').write(make_substitutions())
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'HardwareHacking.substitutions'), make_substitutions())
 
     for binding in bindings:
         print 'Generating {0}Common.substitutions (HardwareHacking)'.format(binding[3])
-        file(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding[3] + 'Common.substitutions'), 'wb').write(make_common_substitutions(binding))
+        write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding[3] + 'Common.substitutions'), make_common_substitutions(binding))
 
     for binding in bindings:
         print 'Generating SmokeDetector_{0}.substitutions (HardwareHacking)'.format(binding[3])
-        file(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector_' + binding[3] + '.substitutions'), 'wb').write(make_smoke_detector_substitutions(binding))
+        write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector_' + binding[3] + '.substitutions'), make_smoke_detector_substitutions(binding))
 
     print 'Generating SmokeDetector.toctree (HardwareHacking)'
-    file(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector.toctree'), 'wb').write(make_smoke_detector_toctree())
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector.toctree'), make_smoke_detector_toctree())
 
 if __name__ == "__main__":
     generate(os.getcwd())

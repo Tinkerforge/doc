@@ -768,6 +768,18 @@ def make_device_identifier_table():
 
     return table_head + '\n'.join(rows) + '\n'
 
+def write_if_changed(path, content):
+    if os.path.exists(path):
+        f = open(path, 'rb')
+        existing = f.read()
+        f.close()
+        if existing == content:
+            return
+
+    f = open(path, 'wb')
+    f.write(content)
+    f.close()
+
 def generate(path):
     global lang
 
@@ -782,46 +794,46 @@ def generate(path):
     fill_dicts()
 
     print('Generating index_ipcon.table')
-    file(os.path.join(path, 'source', 'index_ipcon.table'), 'wb').write(make_index_table_ipcon())
+    write_if_changed(os.path.join(path, 'source', 'index_ipcon.table'), make_index_table_ipcon())
 
     print('Generating index_bricks.table')
-    file(os.path.join(path, 'source', 'index_bricks.table'), 'wb').write(make_index_table(bricks, 'brick'))
+    write_if_changed(os.path.join(path, 'source', 'index_bricks.table'), make_index_table(bricks, 'brick'))
 
     print('Generating index_bricklets.table')
-    file(os.path.join(path, 'source', 'index_bricklets.table'), 'wb').write(make_index_table(bricklets, 'bricklet'))
+    write_if_changed(os.path.join(path, 'source', 'index_bricklets.table'), make_index_table(bricklets, 'bricklet'))
 
     print('Generating index_extensions.table')
-    file(os.path.join(path, 'source', 'index_extensions.table'), 'wb').write(make_index_table(extensions, 'extension'))
+    write_if_changed(os.path.join(path, 'source', 'index_extensions.table'), make_index_table(extensions, 'extension'))
 
     print('Generating index_power_supplies.table')
-    file(os.path.join(path, 'source', 'index_power_supplies.table'), 'wb').write(make_index_table(power_supplies, 'power_supply'))
+    write_if_changed(os.path.join(path, 'source', 'index_power_supplies.table'), make_index_table(power_supplies, 'power_supply'))
 
     print('Generating Product_Overview_bricks.table')
-    file(os.path.join(path, 'source', 'Product_Overview_bricks.table'), 'wb').write(make_product_overview_table(bricks, 'brick', 15, 40, True))
+    write_if_changed(os.path.join(path, 'source', 'Product_Overview_bricks.table'), make_product_overview_table(bricks, 'brick', 15, 40, True))
 
     print('Generating Product_Overview_bricklets.table')
-    file(os.path.join(path, 'source', 'Product_Overview_bricklets.table'), 'wb').write(make_product_overview_table(bricklets, 'bricklet', 20, 70, True))
+    write_if_changed(os.path.join(path, 'source', 'Product_Overview_bricklets.table'), make_product_overview_table(bricklets, 'bricklet', 20, 70, True))
 
     print('Generating Product_Overview_extensions.table')
-    file(os.path.join(path, 'source', 'Product_Overview_extensions.table'), 'wb').write(make_product_overview_table(extensions, 'extension', 20, 70, False))
+    write_if_changed(os.path.join(path, 'source', 'Product_Overview_extensions.table'), make_product_overview_table(extensions, 'extension', 20, 70, False))
 
     print('Generating Product_Overview_power_supplies.table')
-    file(os.path.join(path, 'source', 'Product_Overview_power_supplies.table'), 'wb').write(make_product_overview_table(power_supplies, 'power_supply', 30, 60, False))
+    write_if_changed(os.path.join(path, 'source', 'Product_Overview_power_supplies.table'), make_product_overview_table(power_supplies, 'power_supply', 30, 60, False))
 
     print('Generating Downloads_tools.table')
-    file(os.path.join(path, 'source', 'Downloads_tools.table'), 'wb').write(make_download_tools_table())
+    write_if_changed(os.path.join(path, 'source', 'Downloads_tools.table'), make_download_tools_table())
 
     print('Generating Downloads_bindings.table')
-    file(os.path.join(path, 'source', 'Downloads_bindings.table'), 'wb').write(make_download_bindings_table())
+    write_if_changed(os.path.join(path, 'source', 'Downloads_bindings.table'), make_download_bindings_table())
 
     print('Generating Downloads_firmwares.table')
-    file(os.path.join(path, 'source', 'Downloads_firmwares.table'), 'wb').write(make_download_firmwares_table())
+    write_if_changed(os.path.join(path, 'source', 'Downloads_firmwares.table'), make_download_firmwares_table())
 
     print('Generating API_Bindings_bindings.table')
-    file(os.path.join(path, 'source', 'Software', 'API_Bindings_bindings.table'), 'wb').write(make_api_bindings_table())
+    write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_bindings.table'), make_api_bindings_table())
 
     print('Generating Source_Code_gits.table')
-    file(os.path.join(path, 'source', 'Source_Code_gits.table'), 'wb').write(make_source_code_gits_table())
+    write_if_changed(os.path.join(path, 'source', 'Source_Code_gits.table'), make_source_code_gits_table())
 
     for brick in bricks:
         if len(brick[2]) == 0:
@@ -830,7 +842,7 @@ def generate(path):
         name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
         print('Generating {0}_Brick_hlpi.table'.format(name))
-        file(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick_hlpi.table'), 'wb').write(make_hlpi_table(brick, 'brick'))
+        write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick_hlpi.table'), make_hlpi_table(brick, 'brick'))
 
     for bricklet in bricklets:
         if len(bricklet[2]) == 0:
@@ -839,10 +851,10 @@ def generate(path):
         name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
         print('Generating {0}_hlpi.table'.format(name))
-        file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), 'wb').write(make_hlpi_table(bricklet, 'bricklet'))
+        write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), make_hlpi_table(bricklet, 'bricklet'))
 
     print('Generating Device_Identifier.table')
-    file(os.path.join(path, 'source', 'Software', 'Device_Identifier.table'), 'wb').write(make_device_identifier_table())
+    write_if_changed(os.path.join(path, 'source', 'Software', 'Device_Identifier.table'), make_device_identifier_table())
 
 if __name__ == "__main__":
     generate(os.getcwd())

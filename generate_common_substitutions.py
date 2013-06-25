@@ -175,6 +175,18 @@ def make_bricklet_substitutions(bricklet):
 
     return substitutions
 
+def write_if_changed(path, content):
+    if os.path.exists(path):
+        f = open(path, 'rb')
+        existing = f.read()
+        f.close()
+        if existing == content:
+            return
+
+    f = open(path, 'wb')
+    f.write(content)
+    f.close()
+
 def generate(path):
     global lang
 
@@ -190,13 +202,13 @@ def generate(path):
         name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
         print 'Generating {0}_Brick.substitutions (Hardware)'.format(name)
-        file(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick.substitutions'), 'wb').write(make_brick_substitutions(brick))
+        write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick.substitutions'), make_brick_substitutions(brick))
 
     for bricklet in bricklets:
         name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_')
 
         print 'Generating {0}.substitutions (Hardware)'.format(name)
-        file(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '.substitutions'), 'wb').write(make_bricklet_substitutions(bricklet))
+        write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '.substitutions'), make_bricklet_substitutions(bricklet))
 
 if __name__ == "__main__":
     generate(os.getcwd())
