@@ -6,16 +6,16 @@
 Remote Switch Hardware Setup
 ============================
 
-Most remote controls for remote switches are equipped with an IC called HX2262.
-Basically it has six different inputs: two to define if it is an ON or OFF
-switch command and four inputs to define whereis it is A, B, C or D to switch.
+Most remote controls for remote mains switches are equipped with an IC called HX2262.
+Basically it has six different inputs: Two to define if it is an ON or OFF
+switch command and four inputs to define what it switches (A, B, C or D).
 An input is activated if it is switched to GND. All inputs are interconnected
 in a matrix style order.
 
 In this example we will use the Industrial Quad Relay Bricklet with its four
 solid state relays to short the inputs ON, OFF, A and B to GND. This way
-we will be able to switch two remote switches. If also C and D should be
-switched an additional Industrial Quad Relay is necessary.
+we will be able to switch two remote switches. If you want to also switch 
+C and D, you can use an additional Industrial Quad Relay.
 
 Take a look at the Remote Control
 ---------------------------------
@@ -24,7 +24,7 @@ If you open your remote control you will most likely see a circuit board like th
 
 .. image:: /Images/Kits/hardware_hacking_remote_open_350.jpg
    :scale: 100 %
-   :alt: Remote Control Opened
+   :alt: Remote control opened
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_open_1200.jpg
 
@@ -33,7 +33,7 @@ completely and take a look at the bottom side it should look like this:
 
 .. image:: /Images/Kits/hardware_hacking_remote_bottom_350.jpg
    :scale: 100 %
-   :alt: Remote Control Close Lookup Bottomside
+   :alt: Remote control close lookup bottom side
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_bottom_1200.jpg
 
@@ -61,7 +61,7 @@ After that it will look like this:
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_closeup_remote_350.jpg
    :scale: 100 %
-   :alt: Remote Control Close Lookup with soldered wires
+   :alt: Remote control close lookup with soldered wires
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_soldered_closeup_remote_1200.jpg
 
@@ -72,7 +72,7 @@ Connect wires to the Industrial Quad Relay Bricklet
 ---------------------------------------------------
 
 Next we will connect these wires to the Industrial Quad Relay Bricklet.
-Each input will be connected to its own relay and each relay is also connected
+Each input is connected to its own relay and each relay is also connected
 to GND (black wires):
 
 ====== ========== =====
@@ -96,7 +96,7 @@ After that we are finished. The full hardware setup will look like this:
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_350.jpg
    :scale: 100 %
-   :alt: Industrial Quad Relay Bricklet with connected Remote Control
+   :alt: Industrial Quad Relay Bricklet with connected remote control
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_soldered_1200.jpg
 

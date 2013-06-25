@@ -14,15 +14,15 @@ The hardware setup is pretty simple. Typically doorbells are driven by 12V AC
 
 The Analog In Bricklet can't measure AC voltages since it can't measure negative 
 voltages, so it is only able to measure the positive part of the wave.
-But this does not present a problem since we don't want to measure here.
+But this does not present a problem since we don't want to measure a value.
 We only want to detect a trigger.
 
 Hardware Setup
 ^^^^^^^^^^^^^^
 
-The hardware setup is pretty simple. The Analog In Bricklet is connected in 
+The Analog In Bricklet is connected in 
 parallel to the doorbell. The Brick Viewer can be used to find out if the 
-Analog In Bricklet can detect if someone is triggering the doorbell.
+Analog In Bricklet can detect if someone is using the doorbell.
 
 TODO BrickV Screenshot
 
