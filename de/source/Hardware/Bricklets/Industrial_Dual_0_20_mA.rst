@@ -2,7 +2,7 @@
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricklets">Bricklets</a> / Industrial Dual 0-20mA Bricklet
 :shoplink: ../../../shop/bricklets/industrial-dual-0-20-ma-bricklet.html
 
-.. include:: Industrial_Dual_0_20_mA.substitutions
+.. FIXME include:: Industrial_Dual_0_20_mA.substitutions
 
 
 .. _industrial_dual_0_20_ma_bricklet:
@@ -62,4 +62,4 @@ High Level Programmierschnittstelle
 
 Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte Beschreibung.
 
-.. include:: Industrial_Dual_0_20_mA_hlpi.table
+.. FIXME include:: Industrial_Dual_0_20_mA_hlpi.table

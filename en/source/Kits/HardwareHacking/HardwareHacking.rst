@@ -254,14 +254,19 @@ anymore. Basically this project based this
 A small hardware description can be found 
 :ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
 
-Compared to the wiki project an improved example app for Android is available
-in Java :ref:`here <starter_kit_hardware_hacking_garage_control_android>`.
+Example apps for :ref:`Android (Java)
+<starter_kit_hardware_hacking_garage_control_android>`
+and :ref:`Windows Phone (C#)
+<starter_kit_hardware_hacking_garage_control_windows_phone>` are available.
+The Android app is an improved version of this `wiki project
+<http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__
 
 .. toctree::
    :hidden:
 
    GarageControl_Hardware_Setup
    GarageControl_Android
+   GarageControl_WindowsPhone
 
 
 Is someone at the Door? - Doorbell Notifier
@@ -291,4 +296,3 @@ in :ref:`Python <starter_kit_hardware_hacking_doorbell_notifier_python>`.
 
    Doorbell_Notifier_Hardware_Setup
    Doorbell_Notifier_Python
-
