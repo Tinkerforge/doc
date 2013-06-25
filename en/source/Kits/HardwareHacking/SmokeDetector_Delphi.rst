@@ -15,8 +15,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_delphi:
 
-Readout Smoke Detectors using Delphi
-====================================
+Read out Smoke Detectors using Delphi
+=====================================
 
 .. include:: DelphiCommon.substitutions
    :start-after: >>>intro

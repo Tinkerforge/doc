@@ -15,8 +15,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_python:
 
-Readout Smoke Detectors with Python
-===================================
+Read out Smoke Detectors with Python
+====================================
 
 .. include:: PythonCommon.substitutions
    :start-after: >>>intro

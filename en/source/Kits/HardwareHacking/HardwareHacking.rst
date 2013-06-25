@@ -36,7 +36,7 @@ Features
 * Hack any low voltage electronic appliance and make it controllable by
 
   * PC, smart phone/tablet or over the internet (Internet of Things).
-  * Demo applications for Android, Windows Phone and IPhone* are available.
+  * Demo applications for Android, Windows Phone and iPhone* are available.
 
 * Read out and control low voltage mainstream devices,
 
@@ -44,7 +44,7 @@ Features
 
 * Interaction over USB, Wi-Fi or Ethernet possible.
 
-\*: Demo for IPhone comming soon
+\*: Demo for iPhone comming soon
 
 Description
 -----------
@@ -66,7 +66,7 @@ Example applications include:
 
 * Forwarding smoke detector alarm to a PC.
 * Controlling remote mains switches with a PC.
-* Opening/Closing garage doors over a smart phone/tablet (Android, Windows Phone and IPhone).
+* Opening/Closing garage doors over a smart phone/tablet (Android, Windows Phone and iPhone).
 * Forwarding door bell ringing to a PC.
 
 Many more applications are possible, anything that is controlled by
@@ -272,7 +272,7 @@ The Android app is an improved version of this `project
 <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__
 in the wiki.
 
-A Demo app for IPhone is comming soon.
+A Demo app for iPhone is comming soon.
 
 .. toctree::
    :hidden:

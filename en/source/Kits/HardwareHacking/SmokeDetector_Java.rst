@@ -15,8 +15,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_java:
 
-Readout Smoke Detectors using Java
-==================================
+Read out Smoke Detectors using Java
+===================================
 
 .. include:: JavaCommon.substitutions
    :start-after: >>>intro

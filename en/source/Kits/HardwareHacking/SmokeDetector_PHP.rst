@@ -15,8 +15,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_php:
 
-Readout Smoke Detectors using PHP
-=================================
+Read out Smoke Detectors using PHP
+==================================
 
 .. include:: PHPCommon.substitutions
    :start-after: >>>intro

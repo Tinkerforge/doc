@@ -15,8 +15,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_ruby:
 
-Readout Smoke Detectors using Ruby
-==================================
+Read out Smoke Detectors using Ruby
+===================================
 
 .. include:: RubyCommon.substitutions
    :start-after: >>>intro

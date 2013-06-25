@@ -11,8 +11,8 @@ state. The number and behaviour of the LEDs will depend on the used model.
 
 In this example we use an `ELRO FA20RF/2
 <http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
-smoke detector. It is equipped with two different LEDs. One lights up during
-alarm red, it is a combined green/red LED.
+smoke detector. It is equipped with two different LEDs. One lights up red 
+during alarm, it is a combined green/red LED.
 
 Take a look at the Smoke Detector
 ---------------------------------
@@ -26,7 +26,7 @@ In our case it looks like the following:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_open_1200.jpg
 
-Next we will remove the screws and the other side of the casing.
+Next we will remove the screws of the other side of the casing.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_inside_350.jpg
    :scale: 100 %
@@ -46,7 +46,8 @@ Now we have access to the LED contacts so we can solder wires to it.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_closeup_1200.jpg
 
-We connect these wires to the Analog In Bricklet. We will check for the right polarity later.
+We connect these wires to the Analog In Bricklet. We will check for the right
+polarity later.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_350.jpg
    :scale: 100 %
@@ -62,6 +63,7 @@ After that we can close the casing.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_closed_1200.jpg
 
-At the end we can thest the hardware setup. We trigger the test button and can use the
-Brick Viewer to see the reaction of the LED. If we do not see anything our wires are
-most likely reversed. So change the polarity.
+At the end we can test the hardware setup. We trigger the test button and can
+use the Brick Viewer to see the reaction of the LED. If nothing shows up in
+the Brick Viewer the wires are most likely reversed. In this case you have to
+change the polarity (switch VIN and GND).

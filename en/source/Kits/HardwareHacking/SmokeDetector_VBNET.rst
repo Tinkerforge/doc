@@ -15,8 +15,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_vbnet:
 
-Readout Smoke Detectors using Visual Basic .NET
-===============================================
+Read out Smoke Detectors using Visual Basic .NET
+================================================
 
 .. include:: VBNETCommon.substitutions
    :start-after: >>>intro

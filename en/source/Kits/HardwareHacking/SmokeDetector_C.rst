@@ -15,8 +15,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_c:
 
-Readout Smoke Detectors using C
-===============================
+Read out Smoke Detectors using C
+================================
 
 .. include:: CCommon.substitutions
    :start-after: >>>intro
