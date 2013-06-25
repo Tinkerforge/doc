@@ -95,7 +95,7 @@ Resources
 
 * MAX31865 datasheet (`Download <https://github.com/Tinkerforge/ptc-bricklet/raw/master/datasheets/MAX31865.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/ptc-bricklet/raw/master/hardware/ptc-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/ptc_bricklet_dimensions.png>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/ptc_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/ptc-bricklet/zipball/master>`__)
 
 

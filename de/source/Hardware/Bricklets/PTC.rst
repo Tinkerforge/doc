@@ -95,7 +95,7 @@ Ressourcen
 
 * MAX31865 Datenblatt (`Download <https://github.com/Tinkerforge/ptc-bricklet/raw/master/datasheets/MAX31865.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/ptc-bricklet/raw/master/hardware/ptc-schematic.pdf>`__)
-* Umriss und Bohrplan (`Download <../../_images/Dimensions/ptc_bricklet_dimensions.png>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/ptc_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ptc-bricklet/zipball/master>`__)
 
 
