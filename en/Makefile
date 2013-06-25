@@ -43,6 +43,7 @@ html:
 	@echo
 	sed -e "s|'doc'|'downloads'|" $(BUILDDIR)/html/Downloads.html > $(BUILDDIR)/html/Downloads.htmltmp
 	mv $(BUILDDIR)/html/Downloads.htmltmp $(BUILDDIR)/html/Downloads.html
+	mkdir build/
 	cp -r $(BUILDDIR)/* build/
 
 fasthtml:
@@ -52,6 +53,7 @@ fasthtml:
 	@echo
 	sed -e "s|'doc'|'downloads'|" $(BUILDDIR)/html/Downloads.html > $(BUILDDIR)/html/Downloads.htmltmp
 	mv $(BUILDDIR)/html/Downloads.htmltmp $(BUILDDIR)/html/Downloads.html
+	mkdir build/
 	cp -r $(BUILDDIR)/* build/
 
 dirhtml:

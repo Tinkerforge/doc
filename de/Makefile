@@ -43,7 +43,8 @@ html:
 	@echo
 	sed -e "s|'doc'|'downloads'|" $(BUILDDIR)/html/Downloads.html > $(BUILDDIR)/html/Downloads.htmltmp
 	mv $(BUILDDIR)/html/Downloads.htmltmp $(BUILDDIR)/html/Downloads.html
-	cp -r $(BUILDDIR)/* build
+	mkdir build/
+	cp -r $(BUILDDIR)/* build/
 
 fasthtml:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
@@ -52,7 +53,8 @@ fasthtml:
 	@echo
 	sed -e "s|'doc'|'downloads'|" $(BUILDDIR)/html/Downloads.html > $(BUILDDIR)/html/Downloads.htmltmp
 	mv $(BUILDDIR)/html/Downloads.htmltmp $(BUILDDIR)/html/Downloads.html
-	cp -r $(BUILDDIR)/* build
+	mkdir build/
+	cp -r $(BUILDDIR)/* build/
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
