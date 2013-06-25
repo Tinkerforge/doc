@@ -50,8 +50,8 @@ Features
 
 * Unterstützt Pt100 und Pt1000 Sensoren
 * Unterstützt 2-Leiter, 3-Leiter und 4-Leiter Typ
-* Misst Temperaturen mit 0.5% Genauigkeit auf der vollen Skala von -246 bis 849°C
-* Auflösung von 0.03125°C (15 Bit), Ausgabe in 0.01°C Schritten
+* Misst Temperaturen mit 0,5% Genauigkeit auf der vollen Skala von -246 bis 849°C
+* Auflösung von 0,03125°C (15Bit), Ausgabe in 0,01°C Schritten
 
 Beschreibung
 ------------
@@ -77,15 +77,15 @@ Eigenschaft                       Wert
 Sensor                            MAX31865
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Untersützte Pt-Sensor Typen       Pt100 oder Pt1000 mit 2-Leiter, 3-Leiter oder 4-Leiter
-Genauigkeit                       Mindestens 0.5% auf voller Skala
+Untersützte Pt-Sensor Typen       Pt100 und Pt1000 mit 2-Leiter, 3-Leiter oder 4-Leiter
+Genauigkeit                       Mindestens 0,5% auf voller Skala
 Eingangsschutz                    +-50V
-Temperaturauflösung               0.03125°C (15 bit)
+Temperaturauflösung               0,03125°C (15Bit)
 Konvertierungszeit                21ms
 Fehlerdetektion                   Open RTD element, RTD value out-of-range, short across RTD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessunge (W x D x H)            35 x 30 x 15 mm (1.38 x 1.18 x 0.59")
+Abmessunge (W x D x H)            35 x 30 x 15mm (1.38 x 1.18 x 0.59")
 Gewicht                           TBDg
 ================================  ============================================================
 

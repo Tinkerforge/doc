@@ -190,6 +190,22 @@ specific button is clicked:
         return button;
     }
 
+According to the :ref:`hardware setup section
+<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>` the
+inputs of the remote control should be connected as follows:
+
+====== =====
+Signal Relay
+====== =====
+A      0
+B      1
+ON     2
+OFF    3
+====== =====
+
+To trigger the switch "A ON" of the remote control the relays 0 and 2 have to be
+closed. This is represented by the selection mask ``(1 << 0) | (1 << 2)``.
+
 The constructor is changed to call ``CreateButton()`` with the correct
 selection mask for each button:
 

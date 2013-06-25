@@ -48,9 +48,9 @@ Industrial Dual 0-20mA Bricklet
 Features
 --------
 
-* Präzisions-Stromsensor, misst Strom zwischen 0 und 22.5mA
+* Präzisions-Stromsensor, misst Strom zwischen 0 und 22,5mA
 * Kann IEC 60381-1 Sensoren vom Typ 2 und Typ 3 auslesen (`Einheitssignal <http://de.wikipedia.org/wiki/Einheitssignal>`__)
-* Hoche Genauigkeit (0,15%), Auflösung (bis zu 0,172µA) und Abtastrate (bis zu 240 SPS)
+* Hohe Genauigkeit (0,15%), Auflösung (bis zu 0,172µA) und Abtastrate (bis zu 240 SPS)
 * Es ist möglich zu detektieren ob ein Sensor angeschlossen/defekt ist
 
 
@@ -58,7 +58,7 @@ Beschreibung
 ------------
 
 Mit dem Industrial Dual 0-20mA :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` Ströme von 0 bis 22.5mA gemessen werden. 
+:ref:`Bricks <product_overview_bricks>` Ströme von 0 bis 22,5mA gemessen werden.
 
 Das Bricklet kann genutzt werden um bis zu zwei IEC 60381-1 Typ 2 und Typ 3 Sensoren
 auszulesen 
@@ -79,7 +79,7 @@ Sensor                            MCP3423
 Messbereich                       0mA - 22,5mA
 Unterstützte Sensoren             IEC 60381-1 Typ 2 und Typ 3
 Genauigkeit                       0,15% mit 40ppm/°C
-Auflösung                         bis zu 0,172µA (18 bit)
+Auflösung                         bis zu 0,172µA (18Bit)
 Abtastrate                        bis zu 240 Samples pro Sekunde
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------

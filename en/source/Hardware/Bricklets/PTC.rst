@@ -51,7 +51,7 @@ Features
 * Supports Pt100 and Pt1000 sensors
 * Supports 2-wire, 3-wire and 4-wire type
 * Measures temperature with 0.5% accuracy at the full scale of -246 to 849°C
-* Resolution of 0.03125°C (15 bit), output in 0.01°C steps
+* Resolution of 0.03125°C (15bit), output in 0.01°C steps
 
 
 Description
@@ -78,15 +78,15 @@ Property                          Value
 Sensor                            MAX31865
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Supported Pt-Sensor Types         Pt100 or Pt1000 with 2-wire, 3-wire or 4-wire
+Supported Pt-Sensor Types         Pt100 and Pt1000 with 2-wire, 3-wire or 4-wire
 Accuracy                          min 0.5% full scale
 Input Protection                  +-50V
-Temperature Resolution            0.03125°C (15 bit)
+Temperature Resolution            0.03125°C (15bit)
 Conversion Time                   21ms
 Fault Detection                   Open RTD element, RTD value out-of-range, short across RTD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            35 x 30 x 15 mm (1.38 x 1.18 x 0.59")
+Dimensions (W x D x H)            35 x 30 x 15mm (1.38 x 1.18 x 0.59")
 Weight                            TBDg
 ================================  ============================================================
 

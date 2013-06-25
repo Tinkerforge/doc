@@ -93,9 +93,9 @@ Resources
 ---------
 
 * Example source code *Smoke Detector* (Download: |smoke_detector_examples_download|)
-* Example source code *Control Remote Switches* (Download: )
-* Example source code *Control Garage Door Openers* (Download: )
-* Example source code *Doorbell Notifier* (Download: )
+* Example source code *Control Remote Switches* (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch/csharp>`__)
+* Example source code *Control Garage Door Openers* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/windows_phone>`__)
+* Example source code *Doorbell Notifier* (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
 
 Firmware updating and first tests
 ---------------------------------
@@ -121,13 +121,13 @@ to see if the Bricklets are working correctly. Now you can be sure that
 the Bricks and Bricklets have versions that work together.
 
 
-How it works - How you can use it
----------------------------------
+How it works
+------------
 
 Basically there are two different options with this kit:
 
-You can measure voltages up to 45V
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Measure voltages up to 45V
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to read out the state of an electronic device, often 
 there is a voltage source somewhere that represents this state. If this voltage is 
@@ -150,8 +150,8 @@ the polarity of the voltage source (switch VIN and GND).
    :target: ../../_images/Kits/hardware_hacking_analog_in_diode.jpg
 
 
-You can short signals with a voltage up to 30V
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Short signals with a voltage up to 30V
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 With the Industrial Quad Relay Bricklet you can switch (short circuit) signals. 
 Many devices have switches or push buttons that can be hacked by 
@@ -192,7 +192,7 @@ and connect an :ref:`Analog In Bricklet <analog_in_bricklet>` to one of its
 LEDs that light up during an alarm.
 
 The full hardware description can be found 
-:ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware>`.
+:ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`.
 
 Example implementations with step-by-step instructions are available for:
 
@@ -203,7 +203,8 @@ Example implementations with step-by-step instructions are available for:
 .. toctree::
    :hidden:
 
-   SmokeDetector_Hardware_Setup
+   SmokeDetector_HardwareSetup
+
 
 .. _starter_kit_hardware_hacking_remote_switch:
 
@@ -231,7 +232,7 @@ with the same hardware design, so this guide can be used for most
 remote switches.
 
 The full hardware description can be found 
-:ref:`here <starter_kit_hardware_hacking_remote_switch_hardware>`.
+:ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
 
 An example implementation is available
 in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
@@ -239,7 +240,7 @@ in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
 .. toctree::
    :hidden:
 
-   RemoteSwitch_Hardware_Setup
+   RemoteSwitch_HardwareSetup
    RemoteSwitch_CSharp
 
 
@@ -252,7 +253,7 @@ Garage door openers are quite useful. Typically they come with a remote control
 and we are going to hack one. After the hack your smart phone can control the garage
 door and you don't need to carry around the original remote control
 anymore. This project is based on this
-`Wiki project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__.
+`project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_finished_350.jpg
    :scale: 100 %
@@ -267,15 +268,16 @@ Example apps for :ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`
 and :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` are available.
-The Android app is an improved version of this `wiki project
+The Android app is an improved version of this `project
 <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__
+in the wiki.
 
 A Demo app for IPhone is comming soon.
 
 .. toctree::
    :hidden:
 
-   GarageControl_Hardware_Setup
+   GarageControl_HardwareSetup
    GarageControl_Android
    GarageControl_WindowsPhone
 
@@ -294,7 +296,6 @@ send an SMS or let your phone ring if someone is at your door. Be creative!
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell.jpg
 
-
 Description of the hardware setup and more pictures can be found
 :ref:`here <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup>`.
 
@@ -304,5 +305,5 @@ in :ref:`Python <starter_kit_hardware_hacking_doorbell_notifier_python>`.
 .. toctree::
    :hidden:
 
-   Doorbell_Notifier_Hardware_Setup
-   Doorbell_Notifier_Python
+   DoorbellNotifier_HardwareSetup
+   DoorbellNotifier_Python
