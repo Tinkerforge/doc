@@ -33,7 +33,10 @@ Starter Kit: Hardware Hacking
 Features
 --------
 
-* Have fund and hack many devices
+* Hack miscellaneous devices and make them controllable by:
+
+  * PC, Smartphone or over the Internet (Internet of Things)
+
 * Readout and control low voltage main stream devices
 
   * e.g. smoke detectors, remote switches and garage door openers
