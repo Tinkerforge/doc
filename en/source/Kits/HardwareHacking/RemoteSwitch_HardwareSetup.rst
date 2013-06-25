@@ -37,6 +37,10 @@ completely and take a look at the bottom side it should look like this:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_bottom_1200.jpg
 
+
+Connect wires to the IC
+-----------------------
+
 Next we have to solder the wires to connect to the inputs of the remote
 control. We will solder five wires to the HX2262 IC:
 
@@ -61,6 +65,12 @@ After that it will look like this:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_soldered_closeup_remote_1200.jpg
 
+
+.. _starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix:
+
+Connect wires to the Industrial Quad Relay Bricklet
+---------------------------------------------------
+
 Next we will connect these wires to the Industrial Quad Relay Bricklet.
 Each input will be connected to its own relay and each relay is also connected
 to GND (black wires):
@@ -70,8 +80,8 @@ Signal Wire Color Relay
 ====== ========== =====
 A      blue       0
 B      red        1
-ON     yellow     3
-OFF    purple     4
+ON     yellow     2
+OFF    purple     3
 ====== ========== =====
 
 Now each relay can connect one of the four signals to GND:

@@ -34,6 +34,10 @@ Next we will remove the screws and the other side of the casing.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_inside_1200.jpg
 
+
+Connect wires to the LED
+------------------------
+
 Now we have access to the LED contacts so we can solder wires to it.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_closeup_350.jpg
