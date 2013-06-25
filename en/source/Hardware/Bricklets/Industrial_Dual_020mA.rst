@@ -80,7 +80,7 @@ Sensor                            MCP3423
 Measurement Range                 0mA - 22.5mA
 Supported Sensors                 IEC 60381-1 Typ 2 and Typ 3
 Accuracy                          0.15% with 40ppm/°C
-Resolution                        up to 0.172µA (18 bit)
+Resolution                        up to 0.172µA (18bit)
 Sample Rate                       up to 240 samples per second
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
