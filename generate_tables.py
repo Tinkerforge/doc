@@ -94,6 +94,10 @@ bricklet_descriptions = {
     'en': '4 galvanically isolated digital outputs',
     'de': '4 galvanisch getrennte digitale Ausgänge'
     },
+'industrial_dual_0_20_ma': {
+    'en': 'Senses two currents between 0 and 20mA (IEC 60381-1)',
+    'de': 'Misst zwei Stromquellen zwischen 0 und 20mA (IEC 60381-1)'
+    },
 'industrial_quad_relay': {
     'en': '4 galvanically isolated solid state relays',
     'de': '4 galvanisch getrennte Solid State Relais'
@@ -125,6 +129,10 @@ bricklet_descriptions = {
 'piezo_buzzer': {
     'en': 'Creates 1kHz beep',
     'de': 'Erzeugt 1kHz Piepton'
+    },
+'ptc': {
+    'en': 'Reads temperatures from Pt100/1000 sensors',
+    'de': 'Liest Temperaturen von Pt100/1000-Sensoren'
     },
 'rotary_poti': {
     'en': '300° rotary potentiometer',
@@ -391,6 +399,7 @@ def fill_dicts():
                  ('Humidity',                   'humidity',                   bindings, bricklet_descriptions['humidity'][lang]),
                  ('Industrial Digital In 4',    'industrial_digital_in_4',    bindings, bricklet_descriptions['industrial_digital_in_4'][lang]),
                  ('Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, bricklet_descriptions['industrial_digital_out_4'][lang]),
+                 ('Industrial Dual 0-20mA',     'industrial_dual_0_20_ma',    bindings, bricklet_descriptions['industrial_dual_0_20_ma'][lang]),
                  ('Industrial Quad Relay',      'industrial_quad_relay',      bindings, bricklet_descriptions['industrial_quad_relay'][lang]),
                  ('IO-16',                      'io16',                       bindings, bricklet_descriptions['io16'][lang]),
                  ('IO-4',                       'io4',                        bindings, bricklet_descriptions['io4'][lang]),
@@ -399,6 +408,7 @@ def fill_dicts():
                  ('LCD 20x4',                   'lcd_20x4',                   bindings, bricklet_descriptions['lcd_20x4'][lang]),
                  ('Linear Poti',                'linear_poti',                bindings, bricklet_descriptions['linear_poti'][lang]),
                  ('Piezo Buzzer',               'piezo_buzzer',               bindings, bricklet_descriptions['piezo_buzzer'][lang]),
+                 ('PTC',                        'ptc',                        bindings, bricklet_descriptions['ptc'][lang]),
                  ('Rotary Poti',                'rotary_poti',                bindings, bricklet_descriptions['rotary_poti'][lang]),
                  ('Temperature',                'temperature',                bindings, bricklet_descriptions['temperature'][lang]),
                  ('Temperature IR',             'temperature_ir',             bindings, bricklet_descriptions['temperature_ir'][lang]),
