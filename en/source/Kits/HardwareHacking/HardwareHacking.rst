@@ -290,11 +290,11 @@ to a 12V Doorbell. The python script prints "Ring Ring Ring!" if someone
 actuates the doorbell. You can extend this project such that it will 
 send an SMS or let your phone ring if someone is at your door. Be creative! 
 
-.. image:: /Images/Kits/hardware_hacking_doorbell_350.jpg
+.. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
    :scale: 100 %
    :alt: Doorbell notifier
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_doorbell.jpg
+   :target: ../../_images/Kits/hardware_hacking_doorbell_closed.jpg
 
 Description of the hardware setup and more pictures can be found
 :ref:`here <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup>`.
