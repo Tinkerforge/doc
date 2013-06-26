@@ -164,6 +164,18 @@ the Bricklet. Remote controls are good examples for it.
    :target: ../../_images/Kits/hardware_hacking_industrial_quad_switch.jpg
 
 
+Hardware Hacking for beginners
+------------------------------
+
+To connect the Analog In Bricklet or the Industrial Quad Relay Bricklet
+you have to accomplish two things:
+
+* Find solder pads that can be used to measure or switch a voltage.
+* Solder cables to these pads.
+
+If you have never done this, click :ref:`here <starter_kit_hardware_hacking_for_beginners>`
+for an in-depth guide that explains both steps.
+
 Examples
 --------
 
