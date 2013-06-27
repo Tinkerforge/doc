@@ -54,7 +54,7 @@ you can increase the cable length such that you can install it less visible.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed.jpg
 
-Another option is to add a WiFi Master Extension or Ethernet Extension, 
+Another option is to add a WIFI Master Extension or Ethernet Master Extension, 
 such that no direct USB detection is necessary.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_wifi_350.jpg
