@@ -59,10 +59,9 @@ is added. Also a direct Ethernet interface with the
 There are two groups of applications of this kit: controlling and reading 
 out. For control applications an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` is included. It contains four on/off
-switches. For read-out applications an :ref:`Analog In Bricklet
-<analog_in_bricklet>` is included. It can measure voltages from 0V-45V.
-
-Example applications include:
+switches. For read-out applications an :ref:`Industrial Digital In 4 Bricklet
+<industrial_digital_in_4_bricklet>` is included. It can read out galvanically 
+isolated four digital signals with voltages up to 36V.
 
 * Forwarding smoke detector alarm to a PC.
 * Controlling remote mains switches with a PC.
@@ -70,7 +69,7 @@ Example applications include:
 * Forwarding door bell ringing to a PC.
 
 Many more applications are possible, anything that is controlled by
-a remote control or outputs analog voltages is easily hackable by this Kit.
+a remote control or output digital signals is easily hackable by this Kit.
 The given examples applications should be enough to give you the power
 to hack any electronic appliance in this category.
 
@@ -84,7 +83,10 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Voltage Measurement               0V - 45V in 1mV steps, 12bit resolution
+Digital Inputs                    Four
+Digital Input Low Level Voltage   0-2V
+Digital Input High Level Voltage  3-36V
+Digital Outputs                   Four
 Maximum Switching Current         1.2A per switch
 Maximum Switching Voltage         30V per switch
 ================================  ============================================================
@@ -126,28 +128,27 @@ How it works
 
 Basically there are two different options with this kit:
 
-Measure voltages up to 45V
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Readout Digital Signals up to 36V
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to read out the state of an electronic device, often 
-there is a voltage source somewhere that represents this state. If this voltage is 
-below 45V you can connect the Analog In Bricklet to it and measure it. One 
-good option are LEDs. If your device has an LED representing the state you 
+there is a voltage source somewhere that represents this state. If it is a digital signal
+and the voltage is below 36V, you can connect the Industrial Digital In 4 Bricklet to it and read 
+it out. One good option are LEDs. If your device has an LED representing the state you 
 can easily read the state. But of course also other voltage sources are possible.
+It is important to keep in mind that a high signal level is detected starting on 3V
+and a low signal level is detected below 2V.
 
-To measure a voltage source, connect it to the Analog In Bricklet to the VIN and GND
-inputs.
+To read out a signal, connect it to one of the input ports of the Industrial Digital In 4 Bricklet.
+If you don't see any reaction of the input port in Brick Viewer you likely have to reverse 
+the polarity of the input. You don't have to bother since the Bricklet can't be damaged
+with voltages below 36V.
 
-.. warning:: Do not connect to 3.3V or 5V! These are outputs of the Bricklet.
-
-If you don't see meaningful measurements in Brick Viewer you likely have to reverse 
-the polarity of the voltage source (switch VIN and GND).
-
-.. image:: /Images/Kits/hardware_hacking_analog_in_diode_350.jpg
+.. image:: /Images/Kits/hardware_hacking_industrial_digital_in_4_diode_350.jpg
    :scale: 100 %
-   :alt: Example schematic: Analog In Bricklet measuring LED state
+   :alt: Example schematic: Industrial Digital In 4 Bricklet measuring LED state
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_analog_in_diode.jpg
+   :target: ../../_images/Kits/hardware_hacking_industrial_digital_in_4_diode.jpg
 
 
 Short signals with a voltage up to 30V
@@ -167,7 +168,7 @@ the Bricklet. Remote controls are good examples for it.
 Hardware Hacking for beginners
 ------------------------------
 
-To connect the Analog In Bricklet or the Industrial Quad Relay Bricklet
+To connect the Industrial Digital In 4 or the Industrial Quad Relay Bricklet
 you have to accomplish two things:
 
 * Find solder pads that can be used to measure or switch a voltage.
@@ -194,7 +195,7 @@ alarm.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
    :scale: 100 %
-   :alt: Smoke Detector with connected Analog In Bricklet
+   :alt: Smoke Detector with connected Industrial Digital In 4 Bricklet
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
 
@@ -297,7 +298,7 @@ A Demo app for iPhone is comming soon.
 Is someone at the Door? - Doorbell Notifier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this project the Analog In Bricklet is connected
+In this project on port of the Industrial Digital In 4 Bricklet is connected
 to a 12V Doorbell. The python script prints "Ring Ring Ring!" if someone 
 actuates the doorbell. You can extend this project such that it will 
 send an SMS or let your phone ring if someone is at your door. Be creative! 
