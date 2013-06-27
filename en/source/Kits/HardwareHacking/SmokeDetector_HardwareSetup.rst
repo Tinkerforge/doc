@@ -33,7 +33,7 @@ The ELRO FA20RF/2 has two LEDs next to the "TEST" and "APPRENDRE" buttons.
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_open_600.jpg
 
 If we start a test alarm, we can see that the LED on the right side blinks
-red everytime an alarm is triggered.
+green everytime an alarm is triggered.
 
 Now that we have located an LED that represents the state we want to
 read out, we can open the casing of the detector.
@@ -47,7 +47,7 @@ In our case it looks like the following:
 
 The LED in question is the transparent LED on the top right. It is
 a two-color LED and it can blink green as well as red. Will will have
-to find the pins that control the red color of the LED.
+to find the pins that control the green color of the LED.
 
 Since the LED is of through-hole type, the contacts are only exposed at the
 bottom.
@@ -71,28 +71,30 @@ how you can find the correct pins for the job.
 
 In case of the ELRO FA20RF/2 the two pads at the left can be used.
 
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_closeup_350.jpg
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_new_350.jpg
    :scale: 100 %
    :alt: Smoke detector opened with soldered LED
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_closeup_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_new_1200.jpg
 
-We connect the wires to the GND and VIN inputs of the Analog In Bricklet. We
-can check if the polarity is correct later on with the Brick Viewer.
+For the left pad we trace the circuit board trace until we find the resistor.
+The cable is soldered on behind the resistor.
 
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_350.jpg
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_closeup_w_trace_350.jpg
+   :scale: 100 %
+   :alt: Smoke detector opened with soldered LED
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_closeup_w_trace_1200.jpg
+
+After that we can screw the circuit board back to the casing.
+We connect the wires to the + and - of port 0 of the Industrial Digital In 
+Bricklet. We can check if the polarity is correct later on with the Brick Viewer.
+
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_new_350.jpg
    :scale: 100 %
    :alt: Smoke detector opened with soldered wires to LED
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_1200.jpg
-
-After that we can screw the circuit board back to the casing.
-
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_closed_350.jpg
-   :scale: 100 %
-   :alt: Smoke detector opened with soldered wires to LED Closed
-   :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_closed_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_new_1200.jpg
 
 Now we can test the hacked smoke detector. To do that, we can press the test
 button. The reaction of the LED should be represented in the 

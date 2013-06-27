@@ -13,18 +13,18 @@ Starter Kit: Hardware Hacking
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Kits/hardware_hacking_remote_finished_350.jpg",
-	               "Kits/hardware_hacking_remote_finished_800.jpg",
+	    tfdocstart("Kits/hardware_hacking_remote_finished_new_350.jpg",
+	               "Kits/hardware_hacking_remote_finished_new_800.jpg",
 	               "Hardware Hacking: Kit with Remote Switches")
 	}}
 	{{
-	    tfdocimg("Kits/hardware_hacking_smoke_detector_finished_100.jpg",
-	             "Kits/hardware_hacking_smoke_detector_finished_800.jpg",
+	    tfdocimg("Kits/hardware_hacking_smoke_detector_finished_new_100.jpg",
+	             "Kits/hardware_hacking_smoke_detector_finished_new_800.jpg",
 	             "Hardware Hacking: Kit with Smoke Detector")
 	}}
 	{{
-	    tfdocimg("Kits/hardware_hacking_garage_remote_finished_100.jpg",
-	             "Kits/hardware_hacking_garage_remote_finished_800.jpg",
+	    tfdocimg("Kits/hardware_hacking_garage_remote_finished_new_100.jpg",
+	             "Kits/hardware_hacking_garage_remote_finished_new_800.jpg",
 	             "Hardware Hacking: Kit with Garage Door Remote")
 	}}
 	{{ tfdocend() }}
@@ -193,11 +193,11 @@ smoke detector and utilized this feature to trigger actions if smoke is
 detected. For example, notify someone with an email or a text message about the
 alarm.
 
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_new_350.jpg
    :scale: 100 %
    :alt: Smoke Detector with connected Industrial Digital In 4 Bricklet
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_new_1200.jpg
 
 For this project we use the wireless smoke detector set `ELRO FA20RF/2
 <http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
@@ -228,11 +228,11 @@ Simple remote switches can be used as a first step towards home automation.
 We are going to hack the remote control of such a switch and connect it to a PC
 to create software controlled remote switches.
 
-.. image:: /Images/Kits/hardware_hacking_remote_finished_350.jpg
+.. image:: /Images/Kits/hardware_hacking_remote_finished_new_350.jpg
    :scale: 100 %
    :alt: Industrial Quad Relay with connected Remote Control
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_remote_finished_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_remote_finished_new_1200.jpg
 
 For this project we use the remote switch set `ELRO AB440WD/2
 <http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
@@ -268,11 +268,11 @@ door and you don't need to carry around the original remote control
 anymore. This project is based on this
 `project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__.
 
-.. image:: /Images/Kits/hardware_hacking_garage_remote_finished_350.jpg
+.. image:: /Images/Kits/hardware_hacking_garage_remote_finished_new_350.jpg
    :scale: 100 %
    :alt: Garage Door Opener with Android Control
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_new_1200.jpg
 
 A small hardware description can be found 
 :ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
