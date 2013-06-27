@@ -128,8 +128,8 @@ How it works
 
 Basically there are two different options with this kit:
 
-Readout Digital Signals up to 36V
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Detect Digital Signals up to 36V
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to read out the state of an electronic device, often 
 there is a voltage source somewhere that represents this state. If it is a digital signal
@@ -144,25 +144,23 @@ If you don't see any reaction of the input port in Brick Viewer you likely have 
 the polarity of the input. You don't have to bother since the Bricklet can't be damaged
 with voltages below 36V.
 
-.. image:: /Images/Kits/hardware_hacking_industrial_digital_in_4_diode_350.jpg
+.. image:: /Images/Kits/hardware_hacking_idi4_resistor_diode.jpg
    :scale: 100 %
    :alt: Example schematic: Industrial Digital In 4 Bricklet measuring LED state
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_industrial_digital_in_4_diode.jpg
 
 
-Short signals with a voltage up to 30V
+Short Signals with a Voltage up to 30V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 With the Industrial Quad Relay Bricklet you can switch (short circuit) signals. 
 Many devices have switches or push buttons that can be hacked by 
 the Bricklet. Remote controls are good examples for it.
 
-.. image:: /Images/Kits/hardware_hacking_industrial_quad_switch_350.jpg
+.. image:: /Images/Kits/hardware_hacking_idq_switch.jpg
    :scale: 100 %
    :alt: Example schematic: Industrial Quad Relay Bricklet bypassing switch
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_industrial_quad_switch.jpg
 
 
 Hardware Hacking for beginners
