@@ -144,7 +144,7 @@ If you don't see any reaction of the input port in Brick Viewer you likely have 
 the polarity of the input. You don't have to bother since the Bricklet can't be damaged
 with voltages below 36V.
 
-.. image:: /Images/Kits/hardware_hacking_industrial_4_diode_350.jpg
+.. image:: /Images/Kits/hardware_hacking_industrial_digital_in_4_diode_350.jpg
    :scale: 100 %
    :alt: Example schematic: Industrial Digital In 4 Bricklet measuring LED state
    :align: center
