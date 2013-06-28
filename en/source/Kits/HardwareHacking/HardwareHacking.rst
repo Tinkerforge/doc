@@ -35,7 +35,7 @@ Features
 
 * Hack any low voltage electronic appliance and make it controllable by
 
-  * PC, smart phone/tablet or over the internet (Internet of Things).
+  * PC, smart phone/tablet, Raspberry Pi or over the internet (Internet of Things).
   * Demo applications for Android, Windows Phone and iPhone* are available.
 
 * Read out and control low voltage mainstream devices,
@@ -83,10 +83,10 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Digital Inputs                    Four
+Digital Inputs                    4
 Digital Input Low Level Voltage   0-2V
 Digital Input High Level Voltage  3-36V
-Digital Outputs                   Four
+Digital Outputs                   4
 Maximum Switching Current         1.2A per switch
 Maximum Switching Voltage         30V per switch
 ================================  ============================================================
@@ -94,9 +94,10 @@ Maximum Switching Voltage         30V per switch
 Resources
 ---------
 
+* Example source code *Control Remote Switches* (Download: TODO)
+* Example source code *Control Remote Switches with GUI* (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch/csharp>`__)
 * Example source code *Smoke Detector* (Download: |smoke_detector_examples_download|)
-* Example source code *Control Remote Switches* (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch/csharp>`__)
-* Example source code *Control Garage Door Openers* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/windows_phone>`__)
+* Example source code *Control Garage Door over smart phone* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/windows_phone>`__)
 * Example source code *Doorbell Notifier* (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
 
 Firmware updating and first tests
@@ -132,17 +133,24 @@ Detect Digital Signals up to 36V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to read out the state of an electronic device, often 
-there is a voltage source somewhere that represents this state. If it is a digital signal
-and the voltage is below 36V, you can connect the Industrial Digital In 4 Bricklet to it and read 
-it out. One good option are LEDs. If your device has an LED representing the state you 
-can easily read the state. But of course also other voltage sources are possible.
-It is important to keep in mind that a high signal level is detected starting on 3V
-and a low signal level is detected below 2V.
+there is a voltage source somewhere that represents this state. If it is 
+a digital signal and the voltage is below 36V, you can connect the 
+Industrial Digital In 4 Bricklet to it and read it out. One good 
+option are LEDs. If your device has an LED representing a state you 
+can easily read the state.
 
-To read out a signal, connect it to one of the input ports of the Industrial Digital In 4 Bricklet.
-If you don't see any reaction of the input port in Brick Viewer you likely have to reverse 
-the polarity of the input. You don't have to bother since the Bricklet can't be damaged
-with voltages below 36V.
+It is important to keep in mind that a high signal level is detected 
+starting at 3V and a low signal level is detected below 2V. Inbetween 
+the behavior is undefined.
+
+To read out a signal, connect it to one of the input ports of the 
+Industrial Digital In 4 Bricklet. If you don't see any reaction of the 
+input port in the Brick Viewer you likely have to reverse 
+the polarity of the input. You can find the correct polarity by trial and
+error, the Bricklet is protected against reversed polarity.
+
+Below you can find a connection diagram that shows a possible setup
+if you want to detect the state of an LED.
 
 .. image:: /Images/Kits/hardware_hacking_idi4_resistor_diode.jpg
    :scale: 100 %
@@ -157,6 +165,9 @@ With the Industrial Quad Relay Bricklet you can switch (short circuit) signals.
 Many devices have switches or push buttons that can be hacked by 
 the Bricklet. Remote controls are good examples for it.
 
+Below you can find a connection diagram that shows a possible setup
+if you want to operate a switch with the Industrial Quad Relay Bricklet.
+
 .. image:: /Images/Kits/hardware_hacking_idq_switch.jpg
    :scale: 100 %
    :alt: Example schematic: Industrial Quad Relay Bricklet bypassing switch
@@ -167,7 +178,7 @@ Hardware Hacking for beginners
 ------------------------------
 
 To connect the Industrial Digital In 4 or the Industrial Quad Relay Bricklet
-you have to accomplish two things:
+to a remote or similar you have to accomplish two things:
 
 * Find solder pads that can be used to measure or switch a voltage.
 * Solder cables to these pads.
@@ -186,7 +197,7 @@ There are many low voltage appliances that can be hacked. Here are some examples
 Control Mains Switches Remotely
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Simple remote switches can be used as a first step towards home automation.
+Simple remote control mains switches can be used as a first step towards home automation.
 We are going to hack the remote control of such a switch and connect it to a PC
 to create software controlled remote switches.
 
@@ -201,7 +212,9 @@ For this project we use the remote switch set `ELRO AB440WD/2
 and connect an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
 <http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
-remote control. There are a vast number of control remote switches available. 
+remote control (two of the switches and the remote control is already 
+included in the Starter Kit: Hardware Hacking). There are a vast number
+of remote switches available. 
 Most of the commercially available remote controls use the HX2262 IC
 with the same hardware design, so this guide can be used for most 
 remote switches.
@@ -209,8 +222,9 @@ remote switches.
 The full hardware description can be found 
 :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
 
-An example implementation is available
-in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
+An example implementation of a GUI (compatible to Windows (.NET), 
+Mac OS (mono) and Linux (mono)) is available in 
+:ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
 
 .. toctree::
    :hidden:
@@ -259,8 +273,8 @@ Example implementations with step-by-step instructions are available for:
 
 .. _starter_kit_hardware_hacking_garage_control:
 
-Control Garage Door Openers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Control Garage Doors Remotely
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Garage door openers are quite useful. Typically they come with a remote control
 and we are going to hack one. After the hack your smart phone can control the garage
@@ -298,8 +312,8 @@ A Demo app for iPhone is comming soon.
 Is someone at the Door? - Doorbell Notifier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this project on port of the Industrial Digital In 4 Bricklet is connected
-to a 12V Doorbell. The python script prints "Ring Ring Ring!" if someone 
+In this project one port of the Industrial Digital In 4 Bricklet is connected
+to a 12V Doorbell. The Python script prints "Ring Ring Ring!" if someone 
 actuates the doorbell. You can extend this project such that it will 
 send an SMS or let your phone ring if someone is at your door. Be creative! 
 
