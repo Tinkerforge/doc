@@ -66,6 +66,160 @@ Falls dies nicht der Fall ist sollte `hier <{2}>`__ begonnen werden. Information
 """
 }
 
+remote_switch_example_line = {
+'en':
+""":ref:`{0} <starter_kit_hardware_hacking_remote_switch_{1}>`""",
+'de':
+""":ref:`{0} <starter_kit_hardware_hacking_remote_switch_{1}>`"""
+}
+
+remote_switch_examples = {
+'en':
+"""
+.. |remote_switch_examples| replace:: {0}
+""",
+'de':
+"""
+.. |remote_switch_examples| replace:: {0}
+"""
+}
+
+remote_switch_examples_toctree_line = {
+'en':
+"""   RemoteSwitch_{0}""",
+'de':
+"""   RemoteSwitch_{0}""",
+}
+
+remote_switch_examples_toctree = {
+'en':
+""".. toctree::
+   :hidden:
+
+{0}
+""",
+'de':
+""".. toctree::
+   :hidden:
+
+{0}
+"""
+}
+
+remote_switch_example_download_line = {
+'en':
+"""`{0} <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch/{1}>`__""",
+'de':
+"""`{0} <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch/{1}>`__"""
+}
+
+remote_switch_example_downloads = {
+'en':
+"""
+.. |remote_switch_examples_download| replace:: {0}
+""",
+'de':
+"""
+.. |remote_switch_examples_download| replace:: {0}
+"""
+}
+
+remote_switch_intro = {
+'en':
+"""
+>>>intro
+We are also assuming that you have the remote control connected to an
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` 
+as described :ref:`here <starter_kit_hardware_hacking_remote_switch>`.
+<<<intro
+""",
+'de':
+"""
+>>>intro
+Wir setzen weiterhin voraus, dass die Fernbedienung mit einem
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` 
+verbunden wurde wie :ref:`hier <starter_kit_hardware_hacking_remote_switch>` 
+beschrieben.
+<<<intro
+"""
+}
+
+remote_switch_goals = {
+'en':
+"""
+>>>goals
+The goal of this "project" is to give an idea how the relays
+have to be switched to turn the mains switches on/off.
+
+The following code uses |ref_set_monoflop| to trigger a button
+press on the remote control. A monoflop will set a new state (relay open or clase)
+and hold it for a given time (1.5 seconds in the example code). After this time
+the previous state is set again.
+
+This approach simulates a button click that takes 1.5 seconds.
+
+According to the :ref:`hardware setup section
+<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>` the
+inputs of the remote control should be connected as follows:
+
+====== =====
+Signal Relay
+====== =====
+A      0
+B      1
+ON     2
+OFF    3
+====== =====
+
+To trigger the switch "A ON" of the remote control the relays 0 and 2 have to be
+closed. This is represented by the selection mask |bitmask_02|.
+
+So the monoflop function should be called with this selection mask and
+a time of 1500ms to simulate a button press of "A ON". See the following
+source code for a minimal example.
+<<<goals
+""",
+'de':
+"""
+>>>goals
+Das Ziel dieses "Projekts" ist es, eine Vorstellung darüber zu geben
+wie mit dem Relais die Steckdosen An- und Ausgeschaltet werden können.
+
+Der folgende Quelltext benutzt |ref_set_monoflop| um eine Knopdruck
+auf der Fernbedienung auszulösen. Ein Monoflop setzt einen neuen Zustand
+(Relais offen oder geschlossen) und hält diesen für eine bestimmte Zeit
+(1,5 Sekunden im Beispielquelltext). Nach dieser Zeit wird der
+vorheriger Zustand wieder angenmommen.
+
+Dieses Ansatz simuliert einen Knopfdruck der für 1,5 Sekunden anhält.
+
+Gemäße :ref:`hardware setup section
+<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>` 
+ist die Fernbedienung wie folgt mit den Relais verbunden:
+
+====== ======
+Signal Relais
+====== ======
+A      0
+B      1
+ON     2
+OFF    3
+====== ======
+
+Um "A ON" Auf der Fernbedienung auszulösen müssen also die Relais 0 und 2
+geschlossen werden. Dies wird mit der selection mask |bitmask_02|
+repräsentiert.
+
+Die Monoflop-Funktion kann also mit dieser selection mask und einer
+Zeit von 1500ms aufgerufen werden um einen Knopfdruck von "A ON"
+zu simulieren. Im folgenden wird dies in einem minimalen Beispeilquellcode
+dargestellt.
+<<<goals
+"""
+}
+
+
+
 smoke_detector_example_line = {
 'en':
 """:ref:`{0} <starter_kit_hardware_hacking_smoke_detector_{1}>`""",
@@ -460,6 +614,25 @@ def make_substitutions():
 
     substitutions += smoke_detector_example_downloads[lang].format(', '.join(example_download_lines))
 
+
+    example_lines = []
+    for binding in bindings:
+        example_lines.append(remote_switch_example_line[lang].format(binding[1], binding[2]))
+
+    substitutions += remote_switch_examples[lang].format(', '.join(example_lines))
+
+    examples_toctree_lines = []
+    for binding in bindings:
+        examples_toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding[3]))
+
+    substitutions += remote_switch_examples_toctree[lang].format('\n'.join(examples_toctree_lines))
+
+    example_download_lines = []
+    for binding in bindings:
+        example_download_lines.append(remote_switch_example_download_line[lang].format(binding[1], binding[2]))
+
+    substitutions += remote_switch_example_downloads[lang].format(', '.join(example_download_lines))
+
     return substitutions
 
 def make_common_substitutions(binding):
@@ -484,6 +657,22 @@ def make_smoke_detector_toctree():
         toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding[3]))
 
     return smoke_detector_examples_toctree[lang].format('\n'.join(toctree_lines))
+
+    
+def make_remote_switch_substitutions(binding):
+    substitutions = ''
+    substitutions += remote_switch_intro[lang] + '\n'
+    substitutions += remote_switch_goals[lang] + '\n'
+
+    return substitutions
+
+def make_remote_switch_toctree():
+    toctree_lines = []
+    for binding in bindings:
+        toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding[3]))
+
+    return remote_switch_examples_toctree[lang].format('\n'.join(toctree_lines))
+
 
 def write_if_changed(path, content):
     if os.path.exists(path):
@@ -518,9 +707,13 @@ def generate(path):
     for binding in bindings:
         print 'Generating SmokeDetector_{0}.substitutions (HardwareHacking)'.format(binding[3])
         write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector_' + binding[3] + '.substitutions'), make_smoke_detector_substitutions(binding))
+        print 'Generating RemoteSwitch_{0}.substitutions (HardwareHacking)'.format(binding[3])
+        write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'RemoteSwitch_' + binding[3] + '.substitutions'), make_remote_switch_substitutions(binding))
 
     print 'Generating SmokeDetector.toctree (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector.toctree'), make_smoke_detector_toctree())
+    print 'Generating RemoteSwitch.toctree (HardwareHacking)'
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'RemoteSwitch.toctree'), make_remote_switch_toctree())
 
 if __name__ == "__main__":
     generate(os.getcwd())

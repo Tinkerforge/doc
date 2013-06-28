@@ -94,14 +94,15 @@ Maximum Switching Voltage         30V per switch
 Resources
 ---------
 
-* Example source code *Control Remote Switches* (Download: TODO)
-* Example source code *Control Remote Switches with GUI* (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch/csharp>`__)
+* Example source code *Control Remote Switches* (Download: |remote_switch_examples_download|)
+* Example source code *Control Remote Switches with GUI* (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
 * Example source code *Smoke Detector* (Download: |smoke_detector_examples_download|)
-* Example source code *Control Garage Door over smart phone* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/windows_phone>`__)
+* Example source code *Control Garage Door over smart phone* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
 * Example source code *Doorbell Notifier* (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
 
+
 * Demo application *Control Remote Swithces with GUI* (Download: Windows, Mac OS, Linux) TODO
-* Demo app *Control Garage Door over smart phone* (Download: Android, iPhone, Windows Phone) TODO
+* Demo app *Control Garage Door over smart phone* (Download: Android, iOS, Windows Phone) TODO
 
 Firmware updating and first tests
 ---------------------------------
@@ -227,13 +228,20 @@ The full hardware description can be found
 
 An example implementation of a GUI (compatible to Windows (.NET), 
 Mac OS (mono) and Linux (mono)) is available in 
-:ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
+
+* :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
+
+Minmalistic examples are available in
+
+* |remote_switch_examples|.
+
+.. include:: SmokeDetector.toctree
 
 .. toctree::
    :hidden:
 
    RemoteSwitch_HardwareSetup
-   RemoteSwitch_CSharp
+   RemoteSwitchGUI_CSharp
 
 
 
