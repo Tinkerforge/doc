@@ -100,6 +100,9 @@ Resources
 * Example source code *Control Garage Door over smart phone* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/windows_phone>`__)
 * Example source code *Doorbell Notifier* (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
 
+* Demo application *Control Remote Swithces with GUI* (Download: Windows, Mac OS, Linux) TODO
+* Demo app *Control Garage Door over smart phone* (Download: Android, iPhone, Windows Phone) TODO
+
 Firmware updating and first tests
 ---------------------------------
 
