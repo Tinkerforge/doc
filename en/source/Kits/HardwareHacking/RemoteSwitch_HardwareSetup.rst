@@ -6,11 +6,16 @@
 Remote Switch Hardware Setup
 ============================
 
-Most remote controls for remote mains switches are equipped with an IC called HX2262.
-Basically it has six different inputs: Two to define if it is an ON or OFF
-switch command and four inputs to define what it switches (A, B, C or D).
-An input is activated if it is switched to GND. All inputs are interconnected
-in a matrix style order.
+In this kit remote control mains switches are included. So this example
+describes how to hack the included remote control. There are many other 
+remote control mains switches with similar or identical remote controls
+on the market, so you can most likely use this description for these, too.
+
+Most remote controls for remote control mains switches are equipped with an IC 
+called HX2262. Basically it has six different inputs: Two to define if it is an 
+ON or OFF switch command and four inputs to define what it switches (A, B, 
+C or D). An input is activated if it is switched to GND. All inputs are 
+interconnected in a matrix style order.
 
 In this example we will use the Industrial Quad Relay Bricklet with its four
 solid state relays to short the inputs ON, OFF, A and B to GND. This way
@@ -72,8 +77,8 @@ Connect wires to the Industrial Quad Relay Bricklet
 ---------------------------------------------------
 
 Next we will connect these wires to the Industrial Quad Relay Bricklet.
-Each input is connected to its own relay and each relay is also connected
-to GND (black wires):
+Each input is connected to its own relay. Simply put it into one
+of the two connectors of a relay.
 
 ====== ========== =====
 Signal Wire Color Relay
@@ -84,7 +89,11 @@ ON     yellow     2
 OFF    purple     3
 ====== ========== =====
 
-Now each relay can connect one of the four signals to GND:
+Now every Relay is connected to one wire, but each relay is missing the second 
+wire. The second connection has to be to GND. So we have to connect the black 
+GND wire to all of them. We do this by connecting the black wire to one relay 
+and the other relays will be connected to it by small wires we create of the 
+second black wire. The next picture depicts the finished work.
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_closeup_iqr_top_350.jpg
    :scale: 100 %
