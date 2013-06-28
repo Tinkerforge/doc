@@ -180,6 +180,46 @@ Examples
 
 There are many low voltage appliances that can be hacked. Here are some examples:
 
+.. _starter_kit_hardware_hacking_remote_switch:
+
+
+Control Mains Switches Remotely
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Simple remote switches can be used as a first step towards home automation.
+We are going to hack the remote control of such a switch and connect it to a PC
+to create software controlled remote switches.
+
+.. image:: /Images/Kits/hardware_hacking_remote_finished_new_350.jpg
+   :scale: 100 %
+   :alt: Industrial Quad Relay with connected Remote Control
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_remote_finished_new_1200.jpg
+
+For this project we use the remote switch set `ELRO AB440WD/2
+<http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
+and connect an :ref:`Industrial Quad Relay Bricklet
+<industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
+<http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
+remote control. There are a vast number of control remote switches available. 
+Most of the commercially available remote controls use the HX2262 IC
+with the same hardware design, so this guide can be used for most 
+remote switches.
+
+The full hardware description can be found 
+:ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
+
+An example implementation is available
+in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
+
+.. toctree::
+   :hidden:
+
+   RemoteSwitch_HardwareSetup
+   RemoteSwitch_CSharp
+
+
+
 .. _starter_kit_hardware_hacking_smoke_detector:
 
 Readout Smoke Detectors
@@ -215,44 +255,6 @@ Example implementations with step-by-step instructions are available for:
    :hidden:
 
    SmokeDetector_HardwareSetup
-
-
-.. _starter_kit_hardware_hacking_remote_switch:
-
-Control Remote Mains Switches
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Simple remote switches can be used as a first step towards home automation.
-We are going to hack the remote control of such a switch and connect it to a PC
-to create software controlled remote switches.
-
-.. image:: /Images/Kits/hardware_hacking_remote_finished_new_350.jpg
-   :scale: 100 %
-   :alt: Industrial Quad Relay with connected Remote Control
-   :align: center
-   :target: ../../_images/Kits/hardware_hacking_remote_finished_new_1200.jpg
-
-For this project we use the remote switch set `ELRO AB440WD/2
-<http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
-and connect an :ref:`Industrial Quad Relay Bricklet
-<industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
-<http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
-remote control. There are a vast number of control remote switches available. 
-Most of the commercially available remote controls use the HX2262 IC
-with the same hardware design, so this guide can be used for most 
-remote switches.
-
-The full hardware description can be found 
-:ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
-
-An example implementation is available
-in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
-
-.. toctree::
-   :hidden:
-
-   RemoteSwitch_HardwareSetup
-   RemoteSwitch_CSharp
 
 
 .. _starter_kit_hardware_hacking_garage_control:
