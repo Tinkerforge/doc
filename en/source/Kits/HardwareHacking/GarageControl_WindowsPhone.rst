@@ -613,8 +613,8 @@ That's it! We are done with the app for our hacked garage door opener remote
 control.
 
 Now all of the above put together (`download
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/garage_control/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java>`__):
+<https://raw.github.com/Tinkerforge/hardware-hacking/master/garage_control_smart_phone/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java>`__):
 
-.. literalinclude:: ../../../../../hardware-hacking/garage_control/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java
+.. literalinclude:: ../../../../../hardware-hacking/garage_control_smart_phone/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java
  :language: java
  :tab-width: 4
