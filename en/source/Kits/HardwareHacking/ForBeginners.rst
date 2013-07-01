@@ -14,6 +14,7 @@ Using the Industrial Quad Relay Bricklet
 
 * what does quad relay?
 * how to find pads for quad relay?
+
  * mechanical switch
  * relay
  * separable wire
@@ -62,6 +63,7 @@ Using the Analog in Bricklet
 
 * what does analog in?
 * how to find pads for analog in?
+
  * LED
  * Sensor
 

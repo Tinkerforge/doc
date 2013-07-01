@@ -14,7 +14,7 @@ The hardware setup is pretty simple. Typically doorbells are driven by 12V AC
 If you have such a doorbell you can connect an Industrial Digital In 4 Bricklet
 to it, by connecting one input port of the Bricklet to the doorbell.
 This way the input port will be triggered if someone triggers the doorbell.
-A more precise description how to connect it can be found in the following 
+A more detailed description how to connect it can be found in the following
 :ref:`hardware setup <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup_setup>`
 section.
 
@@ -85,5 +85,3 @@ such that no direct USB detection is necessary.
    :alt: Industrial Digital In 4 Bricklet attached to Doorbell with WiFi Extension
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed_wifi.jpg
-
-

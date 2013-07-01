@@ -4,10 +4,6 @@
 .. |ref_set_monoflop| replace:: :c:func:`industrial_quad_relay_set_monoflop <industrial_quad_relay_set_monoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 
-.. include:: RemoteSwitch_C.substitutions
-   :start-after: >>>substitutions
-   :end-before: <<<substitutions
-
 .. _starter_kit_hardware_hacking_remote_switch_c:
 
 Control Remote Switch using C

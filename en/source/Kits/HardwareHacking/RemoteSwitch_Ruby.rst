@@ -4,10 +4,6 @@
 .. |ref_set_monoflop| replace:: :rb:func:`#set_monoflop <BrickletIndustrialQuadRelay#set_monoflop>` 
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 
-.. include:: RemoteSwitch_Ruby.substitutions
-   :start-after: >>>substitutions
-   :end-before: <<<substitutions
-
 .. _starter_kit_hardware_hacking_remote_switch_ruby:
 
 Control Remote Switch using Ruby

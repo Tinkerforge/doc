@@ -4,10 +4,6 @@
 .. |ref_set_monoflop| replace:: :vbnet:func:`SetMonoflop() <BrickletIndustrialQuadRelay.SetMonoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 
-.. include:: RemoteSwitch_CSharp.substitutions
-   :start-after: >>>substitutions
-   :end-before: <<<substitutions
-
 .. _starter_kit_hardware_hacking_remote_switch_vbnet:
 
 Control Remote Switch using Visual Basic .NET

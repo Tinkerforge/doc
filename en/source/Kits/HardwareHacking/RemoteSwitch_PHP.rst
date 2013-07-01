@@ -4,10 +4,6 @@
 .. |ref_set_monoflop| replace:: :php:func:`setMonoflop() <BrickletIndustrialQuadRelay::setMonoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 
-.. include:: RemoteSwitch_PHP.substitutions
-   :start-after: >>>substitutions
-   :end-before: <<<substitutions
-
 .. _starter_kit_hardware_hacking_remote_switch_php:
 
 Control Remote Switch using PHP

@@ -4,10 +4,6 @@
 .. |ref_set_monoflop| replace:: :delphi:func:`SetMonoflop <TBrickletIndustrialQuadRelay.SetMonoflop>`
 .. |bitmask_02| replace:: ``(1 shl 0) or (1 shl 2)``
 
-.. include:: RemoteSwitch_Delphi.substitutions
-   :start-after: >>>substitutions
-   :end-before: <<<substitutions
-
 .. _starter_kit_hardware_hacking_remote_switch_delphi:
 
 Control Remote Switch using Delphi
