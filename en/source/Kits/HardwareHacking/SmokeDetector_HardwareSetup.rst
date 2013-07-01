@@ -24,7 +24,7 @@ by the other smoke detectors that are scattered throughout the house.
 Taking a look at the Smoke Detector
 -----------------------------------
 
-The ELRO FA20RF/2 has two LEDs next to the "TEST" and "APPRENDRE" buttons.
+The ELRO FA20RF/2 has two LEDs next to the "TEST" and "LEARN" buttons.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_leds_closeup_350.jpg
    :scale: 100 %

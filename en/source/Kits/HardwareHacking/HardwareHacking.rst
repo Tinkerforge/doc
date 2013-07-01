@@ -190,6 +190,12 @@ to a remote or similar you have to accomplish two things:
 If you have never done this, click :ref:`here <starter_kit_hardware_hacking_for_beginners>`
 for an in-depth guide that explains both steps.
 
+.. toctree::
+   :hidden:
+
+   ForBeginners
+
+
 Examples
 --------
 
@@ -227,7 +233,7 @@ The full hardware description can be found
 :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
 
 An example implementation of a GUI (compatible to Windows (.NET), 
-Mac OS (mono) and Linux (mono)) is available in 
+Mac OS X (Mono) and Linux (Mono)) is available in
 
 * :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
 
@@ -247,8 +253,8 @@ Minmalistic examples are available in
 
 .. _starter_kit_hardware_hacking_smoke_detector:
 
-Readout Smoke Detectors
-^^^^^^^^^^^^^^^^^^^^^^^
+Read out Smoke Detectors
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wireless interconnectable smoke detectors allow to read out the alarm signal of
 a whole smoke detector network at a single point. We are going to hack such a

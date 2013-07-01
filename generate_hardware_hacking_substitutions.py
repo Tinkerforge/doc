@@ -194,7 +194,7 @@ vorheriger Zustand wieder angenmommen.
 Dieses Ansatz simuliert einen Knopfdruck der für 1,5 Sekunden anhält.
 
 Gemäße :ref:`hardware setup section
-<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>` 
+<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>`
 ist die Fernbedienung wie folgt mit den Relais verbunden:
 
 ====== ======
@@ -303,7 +303,7 @@ smoke_detector_goals = {
 >>>goals
 We are setting the following goal for this project:
 
-* Readout the alarm status of a smoke detector
+* Read out the alarm status of a smoke detector
 * and react on its alarm signal.
 
 Since this project will likely run 24/7, we will also make sure
@@ -658,7 +658,7 @@ def make_smoke_detector_toctree():
 
     return smoke_detector_examples_toctree[lang].format('\n'.join(toctree_lines))
 
-    
+
 def make_remote_switch_substitutions(binding):
     substitutions = ''
     substitutions += remote_switch_intro[lang] + '\n'

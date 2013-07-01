@@ -26,7 +26,7 @@ Goals
 In this project we will create a simple Android app that resembles the
 functionality of the actual remote control.
 
-The program will reuse some common parts of the :ref:`Readout Smoke Detectors
+The program will reuse some common parts of the :ref:`Read out Smoke Detectors
 using Java <starter_kit_hardware_hacking_smoke_detector_java>` project.
 
 
@@ -80,7 +80,7 @@ variables of the ``MainActivity`` class:
 Step 2: Discover Bricks and Bricklets
 -------------------------------------
 
-This step is similar to step 1 in the :ref:`Readout Smoke Detectors using Java
+This step is similar to step 1 in the :ref:`Read out Smoke Detectors using Java
 <starter_kit_hardware_hacking_smoke_detector_java_step1>` project. We apply
 some changes to make it work in a GUI program and instead of using the
 :java:func:`EnumerateListener <IPConnection.EnumerateListener>` to discover
@@ -333,7 +333,7 @@ What we need is error handling!
 Step 5: Error handling and Reporting
 ------------------------------------
 
-We will use similar principals as in step 4 of the :ref:`Readout Smoke
+We will use similar principals as in step 4 of the :ref:`Read out Smoke
 Detectors using Java <starter_kit_hardware_hacking_smoke_detector_java_step4>`
 project, but with some changes to make it work in a GUI program.
 
