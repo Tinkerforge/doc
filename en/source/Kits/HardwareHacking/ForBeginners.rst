@@ -110,10 +110,9 @@ Industrial Digital In 4 Bricklet
 General Description
 ^^^^^^^^^^^^^^^^^^^
 
-The :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4>` is
-equipped with four
-`Optocoupler <http://en.wikipedia.org/wiki/Optocoupler>`__s. Technically
-speaking a optocoupler consists of a LED which triggers a phototransistor
+The :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` is
+equipped with four `Optocouplers <http://en.wikipedia.org/wiki/Optocoupler>`__.
+Technically speaking a optocoupler consists of a LED which triggers a phototransistor
 with light. This way there is no direct electrical connection between the
 triggering LED and the switching phototransistor, it is galvanically isolated.
 
