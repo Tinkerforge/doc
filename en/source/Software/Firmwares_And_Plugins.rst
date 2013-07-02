@@ -133,7 +133,7 @@ Compiler Compatibility
 ----------------------
 
 The GCC none-eabi compiler for ARM from
-`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__.
+`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
 is required.
 There are versions of this compiler that do not produce working firmwares.
 It's recommended to only use compiler versions that are known to work correctly,
