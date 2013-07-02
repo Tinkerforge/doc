@@ -152,9 +152,9 @@ The goal of this "project" is to give an idea how the relays
 have to be switched to turn the mains switches on/off.
 
 The following code uses |ref_set_monoflop| to trigger a button
-press on the remote control. A monoflop will set a new state (relay open or clase)
+press on the remote control. A monoflop will set a new state (relay open or close)
 and hold it for a given time (1.5 seconds in the example code). After this time
-the previous state is set again.
+the previous state is restored.
 
 This approach simulates a button click that takes 1.5 seconds.
 
@@ -185,11 +185,11 @@ source code for a minimal example.
 Das Ziel dieses "Projekts" ist es, eine Vorstellung darüber zu geben
 wie mit dem Relais die Steckdosen An- und Ausgeschaltet werden können.
 
-Der folgende Quelltext benutzt |ref_set_monoflop| um eine Knopdruck
+Der folgende Quelltext benutzt |ref_set_monoflop| um eine Knopfdruck
 auf der Fernbedienung auszulösen. Ein Monoflop setzt einen neuen Zustand
 (Relais offen oder geschlossen) und hält diesen für eine bestimmte Zeit
 (1,5 Sekunden im Beispielquelltext). Nach dieser Zeit wird der
-vorheriger Zustand wieder angenmommen.
+vorheriger Zustand wiederhergestellt.
 
 Dieses Ansatz simuliert einen Knopfdruck der für 1,5 Sekunden anhält.
 
@@ -207,12 +207,12 @@ OFF    3
 ====== ======
 
 Um "A ON" Auf der Fernbedienung auszulösen müssen also die Relais 0 und 2
-geschlossen werden. Dies wird mit der selection mask |bitmask_02|
+geschlossen werden. Dies wird mit der Selektionsbitmaske |bitmask_02|
 repräsentiert.
 
-Die Monoflop-Funktion kann also mit dieser selection mask und einer
+Die Monoflop-Funktion kann also mit dieser Selektionsbitmaske und einer
 Zeit von 1500ms aufgerufen werden um einen Knopfdruck von "A ON"
-zu simulieren. Im folgenden wird dies in einem minimalen Beispeilquellcode
+zu simulieren. Im folgenden wird dies in einem minimalen Beispielquelltext
 dargestellt.
 <<<goals
 """
