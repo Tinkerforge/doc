@@ -122,8 +122,8 @@ Voltages below 2V are interpreted as "low" (LED does not light). Voltage above
 3V are interpreted as "high" (LED does light). If you are between 2V and 3V
 it is not defined how the LED will react.
 
-Using the Analog in Bricklet
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using the Industrial Digital In 4 Bricklet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this example we want to read out the state of a very simple schematic:
 A LED is switched by some kind of circuitry, in this case a
@@ -155,7 +155,32 @@ the input port. The wiring will look as the following:
 Identify the Series Resistor of a LED
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO
+There are many different kinds of LED and Resistor packages. The most common 
+are wired packages.
+
+TODO FOTO WIRED RESISTOR AND LEDs Metallfilm, Kohleschicht etc.
+
+Nowadays many products use so called 
+`Surface-Mount Devices (SMD) <https://en.wikipedia.org/wiki/Surface-mount_device>`
+. These devices can differ in their size extremely. There are very tiny devices
+possible (e.g. casing 0201: 0.6mm x 0.3mm) or large devices (e.g. casing 2920: 
+7.4mm x 5.1mm). There are resistors, capacitors, inductances and other devices 
+which can be found directly mounted on the circuit board. 
+
+TODO FOTO SMD Bauteile
+
+But how to know what kind of device it is?
+There are different possibilities. Experts can tell you which device it may be
+by identifing its optical features. If the device has a marking it is possible
+to even identifing the value (e.g. 1k Ohm resistor or 22 Ohm resistor). If 
+there is no marking and it can't be recognized it has to be identified by
+measuring or by identifing its purpose in the circuit.
+
+That's the starting point for this kit. If you like to readout the status of a 
+LED follow the traces until you reach a wired or SMD device. It will most likely
+be the series resistor.
+
+TODO FOTO SMD LED + Leiterbahn + Vorwiderstand
 
 
 Soldering a wire to a solder pad
