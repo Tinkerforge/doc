@@ -69,7 +69,7 @@ switch to bypass it.
    :scale: 100 %
    :alt: Example Schematic with Battery, Switch and LED and Industrial Quad Relay Bricklet
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_qr_1500.jpg
+   :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_switch_qr_1500.jpg
 
 Of couse you can create your own circuits and integrate the Industrial Quad 
 Relay Bricklet as a switch, too.
@@ -150,7 +150,7 @@ the input port. The wiring will look as the following:
    :scale: 100 %
    :alt: Example Schematic with Battery, Switch and LED and Industrial Digital In 4 Bricklet
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_digital_in_1500.jpg
+   :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_switch_digital_in_1500.jpg
 
 Identify the Series Resistor of a LED
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
