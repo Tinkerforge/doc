@@ -161,7 +161,7 @@ are wired packages.
 TODO FOTO WIRED RESISTOR AND LEDs Metallfilm, Kohleschicht etc.
 
 Nowadays many products use so called 
-`Surface-Mount Devices (SMD) <https://en.wikipedia.org/wiki/Surface-mount_device>`
+`Surface-Mount Devices (SMD) <https://en.wikipedia.org/wiki/Surface-mount_device>`__
 . These devices can differ in their size extremely. There are very tiny devices
 possible (e.g. casing 0201: 0.6mm x 0.3mm) or large devices (e.g. casing 2920: 
 7.4mm x 5.1mm). There are resistors, capacitors, inductances and other devices 
