@@ -132,6 +132,10 @@ Simple Monitoring
 Server Room Monitoring with Nagios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Server Room Monitoring with Icinga
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 Upload Sensor Data to Xively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
