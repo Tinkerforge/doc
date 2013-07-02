@@ -253,6 +253,8 @@ allow to disconnect it again:
         }
     }
 
+TODO: adapt the rest to windows phone app
+
 The ``ConnectWorker_RunWorkerCompleted()`` method is called after ``ConnectWorker_DoWork()``. It changes
 the text on the button and sets a new ``OnClickListener`` that will closes the
 connection if the button is clicked:

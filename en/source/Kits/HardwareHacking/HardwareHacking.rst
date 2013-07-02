@@ -44,7 +44,7 @@ Features
 
 * Interaction over USB, Wi-Fi or Ethernet possible.
 
-\*: Demo for iPhone comming soon
+\* Demo for iPhone comming soon
 
 Description
 -----------
