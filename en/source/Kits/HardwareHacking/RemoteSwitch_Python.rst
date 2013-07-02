@@ -25,9 +25,9 @@ Goals
    :end-before: <<<goals
 
 Source Code
--------------------------------------
+-----------
 
-(`download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/python/remote_switch.py>`__):
+`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/python/remote_switch.py>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch/python/remote_switch.py
  :language: python

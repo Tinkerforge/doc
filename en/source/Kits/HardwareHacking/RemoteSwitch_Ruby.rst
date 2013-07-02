@@ -25,9 +25,9 @@ Goals
    :end-before: <<<goals
 
 Source Code
--------------------------------------
+-----------
 
-(`download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/ruby/remote_switch.rb>`__):
+`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/ruby/remote_switch.rb>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch/ruby/remote_switch.rb
  :language: ruby

@@ -9,25 +9,25 @@
 Control Remote Switch using Visual Basic .NET
 =============================================
 
-.. include:: CSharpCommon.substitutions
+.. include:: VBNETCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: RemoteSwitch_CSharp.substitutions
+.. include:: RemoteSwitch_VBNET.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 Goals
 -----
 
-.. include:: RemoteSwitch_CSharp.substitutions
+.. include:: RemoteSwitch_VBNET.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 
 Source Code
--------------------------------------
+-----------
 
-(`download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/vbnet/RemoteSwitch.vb>`__):
+`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/vbnet/RemoteSwitch.vb>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch/vbnet/RemoteSwitch.vb
  :language: vbnet
