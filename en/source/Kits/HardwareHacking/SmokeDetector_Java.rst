@@ -7,7 +7,8 @@
 .. |ref_enumerate| replace:: :java:func:`enumerate() <IPConnection::enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
-.. |cb_voltage_reached| replace:: ``voltageReached``
+.. |cb_interrupt| replace:: ``interrupt``
+.. |value_mask| replace:: ``valueMask``
 
 .. include:: SmokeDetector_Java.substitutions
    :start-after: >>>substitutions
@@ -133,21 +134,16 @@ Step 2: Initialize Bricklet on Enumeration
         if(enumerationType == IPConnection.ENUMERATION_TYPE_CONNECTED ||
            enumerationType == IPConnection.ENUMERATION_TYPE_AVAILABLE) {
 
-|step2_config1|
+|step2_config|
 
 .. code-block:: java
 
-    if(deviceIdentifier == BrickletAnalogIn.DEVICE_IDENTIFIER) {
-        brickletAnalogIn = new BrickletAnalogIn(uid, ipcon);
-        brickletAnalogIn.setRange((short)1);
-        brickletAnalogIn.setDebouncePeriod(10000);
-        brickletAnalogIn.setVoltageCallbackThreshold('>', (short)1200, (short)0);
-        brickletAnalogIn.addVoltageReachedListener(this);
+    if(deviceIdentifier == BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER) {
+        brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(uid, ipcon);
+        brickletIndustrialDigitalIn4.setDebouncePeriod(10000);
+        brickletIndustrialDigitalIn4.setInterrupt(255);
+        brickletIndustrialDigitalIn4.addInterruptListener(this);
     }
-
-|step2_config2|
-
-|step2_config3|
 
 |step2_put_together|
 
@@ -158,12 +154,11 @@ Step 2: Initialize Bricklet on Enumeration
                           int deviceIdentifier, short enumerationType) {
         if(enumerationType == IPConnection.ENUMERATION_TYPE_CONNECTED ||
            enumerationType == IPConnection.ENUMERATION_TYPE_AVAILABLE) {
-            if(deviceIdentifier == BrickletAnalogIn.DEVICE_IDENTIFIER) {
-                brickletAnalogIn = new BrickletAnalogIn(uid, ipcon);
-                brickletAnalogIn.setRange((short)1);
-                brickletAnalogIn.setDebouncePeriod(10000);
-                brickletAnalogIn.setVoltageCallbackThreshold('>', (short)1200, (short)0);
-                brickletAnalogIn.addVoltageReachedListener(this);
+            if(deviceIdentifier == BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER) {
+                brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(uid, ipcon);
+                brickletIndustrialDigitalIn4.setDebouncePeriod(10000);
+                brickletIndustrialDigitalIn4.setInterrupt(255);
+                brickletIndustrialDigitalIn4.addInterruptListener(this);
             }
         }
     }
@@ -236,17 +231,19 @@ Step 4: Error handling and Logging
 
 .. code-block:: java
 
-    if(deviceIdentifier == BrickletAnalogIn.DEVICE_IDENTIFIER) {
-        try {
-            brickletAnalogIn = new BrickletAnalogIn(uid, ipcon);
-            brickletAnalogIn.setRange((short)1);
-            brickletAnalogIn.setDebouncePeriod(10000);
-            brickletAnalogIn.setVoltageCallbackThreshold('>', (short)1200, (short)0);
-            brickletAnalogIn.addVoltageReachedListener(this);
-            System.out.println("Analog In initialized");
-        } catch(com.tinkerforge.TinkerforgeException e) {
-            brickletAnalogIn = null;
-            System.out.println("Analog In init failed: " + e);
+    if(enumerationType == IPConnection.ENUMERATION_TYPE_CONNECTED ||
+       enumerationType == IPConnection.ENUMERATION_TYPE_AVAILABLE) {
+        if(deviceIdentifier == BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER) {
+            try {
+                brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(uid, ipcon);
+                brickletIndustrialDigitalIn4.setDebouncePeriod(10000);
+                brickletIndustrialDigitalIn4.setInterrupt(15);
+                brickletIndustrialDigitalIn4.addInterruptListener(this);
+                System.out.println("Industrial Digital In 4 initialized");
+            } catch(com.tinkerforge.TinkerforgeException e) {
+                brickletIndustrialDigitalIn4 = null;
+                System.out.println("Industrial Digital In 4 init failed: " + e);
+            }
         }
     }
 

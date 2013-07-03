@@ -129,16 +129,16 @@ remote_switch_intro = {
 """
 >>>intro
 We are also assuming that you have the remote control connected to an
-:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` 
-as described :ref:`here <starter_kit_hardware_hacking_remote_switch>`.
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
+as described :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
 <<<intro
 """,
 'de':
 """
 >>>intro
 Wir setzen weiterhin voraus, dass die Fernbedienung mit einem
-:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` 
-verbunden wurde wie :ref:`hier <starter_kit_hardware_hacking_remote_switch>` 
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
+verbunden wurde wie :ref:`hier <starter_kit_hardware_hacking_remote_switch_hardware_setup>`
 beschrieben.
 <<<intro
 """
@@ -283,16 +283,17 @@ smoke_detector_intro = {
 """
 >>>intro
 We are also assuming that you have a smoke detector connected to an
-:ref:`Analog in Bricklet <analog_in_bricklet>` as described :ref:`here
-<starter_kit_hardware_hacking_smoke_detector>`.
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
+described :ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`.
 <<<intro
 """,
 'de':
 """
 >>>intro
 Wir setzen weiterhin voraus, dass ein passender Rauchmelder mit einem
-:ref:`Analog in Bricklet <analog_in_bricklet>` verbunden wurde wie :ref:`hier
-<starter_kit_hardware_hacking_smoke_detector>` beschrieben.
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet` verbunden
+wurde wie :ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`
+beschrieben.
 <<<intro
 """
 }
@@ -378,35 +379,29 @@ smoke_detector_steps = {
  Step 1 put together:
 
 .. |step2_intro| replace::
- During the enumeration we want to configure the Analog In Bricklet. Doing this
- during the enumeration ensures that the Bricklet gets reconfigured if the Brick
- was disconnected or there was a power loss.
+ During the enumeration we want to configure the Industrial Digital In 4 Bricklet.
+ Doing this during the enumeration ensures that the Bricklet gets reconfigured
+ if the Brick was disconnected or there was a power loss.
 
 .. |step2_enumerate| replace::
  The configurations should be performed on first startup
  (|ENUMERATION_TYPE_CONNECTED|) as well as whenever the enumeration is
  triggered externally by us (|ENUMERATION_TYPE_AVAILABLE|):
 
-.. |step2_config1| replace::
- We configure the Analog In Bricklet to call the |cb_voltage_reached| callback
- if the measured voltage reaches 1.2V:
-
-.. |step2_config2| replace::
- The measurement range is set to 0V - 6.05V because we only need to detect if
- the voltage reaches 1.2V. The debounce period is set to 10s (10000ms) to avoid
- being spammed with callbacks.
- 
-.. |step2_config3| replace::
- This values comes from our tests with the `ELRO FA20RF/2
- <http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
- wireless smoke detector set that we use as an example. You might need to use different
- values depending on your particular device.
+.. |step2_config| replace::
+ We configure the Industrial Digital In 4 Bricklet to call the |cb_interrupt|
+ callback if a change of the voltage level on any input pin is detected. The
+ debounce period is set to 10s (10000ms) to avoid being spammed with callbacks.
+ Interrupt detection is enabled for all inputs (15 = 0b1111).
 
 .. |step2_put_together| replace::
  Step 2 put together:
 
 .. |step3_intro| replace::
- Now we need to react on the alarm signal of the smoke detector:
+ Now we need to react on the alarm signal of the smoke detector. But we want to
+ react only if the LED is turned on, not if it is turn off. This is done by
+ checking |value_mask| for being ``> 0``. In that case there is a voltage
+ applied to at least one input, therefore, the LED is on.
 
 .. |step3_complete| replace::
  That's it. If we would copy these three steps together in one file and
@@ -508,26 +503,21 @@ smoke_detector_steps = {
  durchgeführt werden und auch bei jedem extern ausgelösen Enumerate
  (|ENUMERATION_TYPE_AVAILABLE|):
 
-.. |step2_config1| replace::
- Das Analog In Bricklet wird so eingestellt, dass es die |cb_voltage_reached|
- Callback-Funktion aufruft wenn die gemessene Spannung 1,2V erreicht:
-
-.. |step2_config2| replace::
- Der Messbereich wird auf 0V - 6,05V gestellt, dies ausreicht reicht aus um
- Erreichen der 1,2V zu erkennen. Die Entprellperiode wird auf 10s (10000ms)
- gestellt, um zu vermeiden zu viele Callback zu erhalten.
- 
-.. |step2_config3| replace::
- Diese Werte stammen aus unseren Tests mit dem `ELRO FA20RF/2
- <http://www.elro.eu/de/produkte/cat/flamingo/sicherheit1/rauchmelder/schnurlos-verknuepfbarer-rauchmelder>`__
- Funk-Rauchmelderset das hier als Beispiel verwendet wird. Abhängig vom jeweilig
- verwendeten Gerät können diese Werte abweichen.
+.. |step2_config| replace::
+ Das Industrial Digital In 4 Bricklet wird so eingestellt, dass es die
+ |cb_interrupt| Callback-Funktion aufruft wenn sich die Spannung an einem
+ der Eingänge verändert. Die Entprellperiode wird auf 10s (10000ms) gestellt,
+ um zu vermeiden zu viele Callback zu erhalten. Interrupterkennung wird für
+ alle Eingänge aktivert (15 = 0b1111).
 
 .. |step2_put_together| replace::
  Schritt 2 zusammengefügt:
 
 .. |step3_intro| replace::
- Jetzt müssen wir noch auf das Alarmsignal des Rauchmelders reagieren:
+ Jetzt müssen wir noch auf das Alarmsignal des Rauchmelders reagieren. Es soll
+ aber nur auf das Einschalten der LED reagiert werden, nicht auf das
+ Ausschalten. Dazu wird |value_mask| auf ``> 0`` geprüft, in diesem Fall liegt
+ an mindesten einem Eingang eine Spannung an, sprich die LED leuchtet.
 
 .. |step3_complete| replace::
  Das ist es. Wenn wir diese drei Schritte zusammen in eine Datei kopieren und

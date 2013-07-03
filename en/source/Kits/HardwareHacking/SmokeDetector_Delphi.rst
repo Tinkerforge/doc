@@ -7,7 +7,8 @@
 .. |ref_enumerate| replace:: :delphi:func:`Enumerate <TIPConnection.Enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``IPCON_ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``IPCON_ENUMERATION_TYPE_AVAILABLE``
-.. |cb_voltage_reached| replace:: ``VoltageReachedCB``
+.. |cb_interrupt| replace:: ``InterruptCB``
+.. |value_mask| replace:: ``valueMask``
 
 .. include:: SmokeDetector_Delphi.substitutions
    :start-after: >>>substitutions
@@ -128,21 +129,16 @@ Step 2: Initialize Bricklet on Enumeration
       if ((enumerationType = IPCON_ENUMERATION_TYPE_CONNECTED) or
           (enumerationType = IPCON_ENUMERATION_TYPE_AVAILABLE)) then begin
 
-|step2_config1|
+|step2_config|
 
 .. code-block:: delphi
 
-    if (deviceIdentifier = BRICKLET_ANALOG_IN_DEVICE_IDENTIFIER) then begin
-      brickletAnalogIn := TBrickletAnalogIn.Create(uid, ipcon);
-      brickletAnalogIn.SetRange(1);
-      brickletAnalogIn.SetDebouncePeriod(10000);
-      brickletAnalogIn.SetVoltageCallbackThreshold('>', 1200, 0);
-      brickletAnalogIn.OnVoltageReached := {$ifdef FPC}@{$endif}VoltageReachedCB;
+    if (deviceIdentifier = BRICKLET_INDUSTRIAL_DIGITAL_IN_4_DEVICE_IDENTIFIER) then begin
+      brickletIndustrialDigitalIn4 := TBrickletIndustrialDigitalIn4.Create(uid, ipcon);
+      brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
+      brickletIndustrialDigitalIn4.SetInterrupt(255);
+      brickletIndustrialDigitalIn4.OnInterrupt := {$ifdef FPC}@{$endif}InterruptCB;
     end;
-
-|step2_config2|
-
-|step2_config3|
 
 |step2_put_together|
 
@@ -156,12 +152,11 @@ Step 2: Initialize Bricklet on Enumeration
     begin
       if ((enumerationType = IPCON_ENUMERATION_TYPE_CONNECTED) or
           (enumerationType = IPCON_ENUMERATION_TYPE_AVAILABLE)) then begin
-        if (deviceIdentifier = BRICKLET_ANALOG_IN_DEVICE_IDENTIFIER) then begin
-          brickletAnalogIn := TBrickletAnalogIn.Create(uid, ipcon);
-          brickletAnalogIn.SetRange(1);
-          brickletAnalogIn.SetDebouncePeriod(10000);
-          brickletAnalogIn.SetVoltageCallbackThreshold('>', 1200, 0);
-          brickletAnalogIn.OnVoltageReached := {$ifdef FPC}@{$endif}VoltageReachedCB;
+        if (deviceIdentifier = BRICKLET_INDUSTRIAL_DIGITAL_IN_4_DEVICE_IDENTIFIER) then begin
+          brickletIndustrialDigitalIn4 := TBrickletIndustrialDigitalIn4.Create(uid, ipcon);
+          brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
+          brickletIndustrialDigitalIn4.SetInterrupt(255);
+          brickletIndustrialDigitalIn4.OnInterrupt := {$ifdef FPC}@{$endif}InterruptCB;
         end;
       end;
     end;
@@ -174,9 +169,11 @@ Step 3: Handle the alarm signal
 
 .. code-block:: delphi
 
-    procedure TSmokeDetector.VoltageReachedCB(sender: TBrickletAnalogIn; const voltage: word);
+    procedure TSmokeDetector.InterruptCB(sender: TBrickletIndustrialDigitalIn4; const interruptMask: word; const valueMask: word);
     begin
-      WriteLn('Fire! Fire!');
+      if (valueMask > 0) then begin
+        WriteLn('Fire! Fire!');
+      end;
     end;
 
 |step3_complete|
@@ -229,18 +226,17 @@ Step 4: Error handling and Logging
 
 .. code-block:: delphi
 
-    if (deviceIdentifier = BRICKLET_ANALOG_IN_DEVICE_IDENTIFIER) then begin
+    if (deviceIdentifier = BRICKLET_INDUSTRIAL_DIGITAL_IN_4_DEVICE_IDENTIFIER) then begin
       try
-        brickletAnalogIn := TBrickletAnalogIn.Create(uid, ipcon);
-        brickletAnalogIn.SetRange(1);
-        brickletAnalogIn.SetDebouncePeriod(10000);
-        brickletAnalogIn.SetVoltageCallbackThreshold('>', 1200, 0);
-        brickletAnalogIn.OnVoltageReached := {$ifdef FPC}@{$endif}VoltageReachedCB;
-        WriteLn('Analog In initialized');
+        brickletIndustrialDigitalIn4 := TBrickletIndustrialDigitalIn4.Create(uid, ipcon);
+        brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
+        brickletIndustrialDigitalIn4.SetInterrupt(15);
+        brickletIndustrialDigitalIn4.OnInterrupt := {$ifdef FPC}@{$endif}InterruptCB;
+        WriteLn('Industrial Digital In 4 initialized');
       except
         on e: Exception do begin
-          WriteLn('Analog In init failed: ' + e.Message);
-          brickletAnalogIn := nil;
+          WriteLn('Industrial Digital In 4 init failed: ' + e.Message);
+          brickletIndustrialDigitalIn4 := nil;
         end;
       end;
     end;

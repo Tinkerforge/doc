@@ -7,7 +7,8 @@
 .. |ref_enumerate| replace:: :php:func:`enumerate() <IPConnection::enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
-.. |cb_voltage_reached| replace:: ``voltageReachedCB``
+.. |cb_interrupt| replace:: ``cb_interrupt``
+.. |value_mask| replace:: ``$valueMask``
 
 .. include:: SmokeDetector_PHP.substitutions
    :start-after: >>>substitutions
@@ -63,9 +64,9 @@ Step 1: Discover Bricks and Bricklets
         $this->ipcon->connect(self::HOST, self::PORT);
 
         $this->ipcon->registerCallback(IPConnection::CALLBACK_ENUMERATE,
-                                       array($this, 'enumerateCB'));
+                                       array($this, 'cb_enumerate'));
         $this->ipcon->registerCallback(IPConnection::CALLBACK_CONNECTED,
-                                       array($this, 'connectedCB'));
+                                       array($this, 'cb_connected'));
 
         $this->ipcon->enumerate();
     }
@@ -80,7 +81,7 @@ Step 1: Discover Bricks and Bricklets
 
     <?php
 
-    function connectedCB($connectedReason)
+    function cb_connected($connectedReason)
     {
         if($connectedReason == IPConnection::CONNECT_REASON_AUTO_RECONNECT) {
             $this->ipcon->enumerate();
@@ -108,14 +109,14 @@ Step 1: Discover Bricks and Bricklets
             $this->ipcon->connect(self::HOST, self::PORT);
 
             $this->ipcon->registerCallback(IPConnection::CALLBACK_ENUMERATE,
-                                           array($this, 'enumerateCB'));
+                                           array($this, 'cb_enumerate'));
             $this->ipcon->registerCallback(IPConnection::CALLBACK_CONNECTED,
-                                           array($this, 'connectedCB'));
+                                           array($this, 'cb_connected'));
 
             $this->ipcon->enumerate();
         }
 
-        function connectedCB($connectedReason)
+        function cb_connected($connectedReason)
         {
             if($connectedReason == IPConnection::CONNECT_REASON_AUTO_RECONNECT) {
                 $this->ipcon->enumerate();
@@ -137,34 +138,29 @@ Step 2: Initialize Bricklet on Enumeration
 
     <?php
 
-    function enumerateCB($uid, $connectedUid, $position, $hardwareVersion,
-                         $firmwareVersion, $deviceIdentifier, $enumerationType)
+    function cb_enumerate($uid, $connectedUid, $position, $hardwareVersion,
+                          $firmwareVersion, $deviceIdentifier, $enumerationType)
     {
         if($enumerationType == IPConnection::ENUMERATION_TYPE_CONNECTED ||
            $enumerationType == IPConnection::ENUMERATION_TYPE_AVAILABLE) {
 
     ?>
 
-|step2_config1|
+|step2_config|
 
 .. code-block:: php
 
     <?php
 
-    if($deviceIdentifier == BrickletAnalogIn::DEVICE_IDENTIFIER) {
-        $this->brickletAnalogIn = new BrickletAnalogIn($uid, $this->ipcon);
-        $this->brickletAnalogIn->setRange(1);
-        $this->brickletAnalogIn->setDebouncePeriod(10000);
-        $this->brickletAnalogIn->setVoltageCallbackThreshold('>', 1200, 0);
-        $this->brickletAnalogIn->registerCallback(BrickletAnalogIn::CALLBACK_VOLTAGE_REACHED,
-                                                  array($this, 'voltageReachedCB'));
+    if($deviceIdentifier == BrickletIndustrialDigitalIn4::DEVICE_IDENTIFIER) {
+        $this->brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4($uid, $this->ipcon);
+        $this->brickletIndustrialDigitalIn4->setDebouncePeriod(10000);
+        $this->brickletIndustrialDigitalIn4->setInterrupt(15);
+        $this->brickletIndustrialDigitalIn4->registerCallback(BrickletIndustrialDigitalIn4::CALLBACK_INTERRUPT,
+                                                              array($this, 'cb_interrupt'));
     }
 
     ?>
-
-|step2_config2|
-
-|step2_config3|
 
 |step2_put_together|
 
@@ -172,16 +168,15 @@ Step 2: Initialize Bricklet on Enumeration
 
     <?php
 
-    function enumerateCB($uid, $connectedUid, $position, $hardwareVersion,
-                         $firmwareVersion, $deviceIdentifier, $enumerationType)
+    function cb_enumerate($uid, $connectedUid, $position, $hardwareVersion,
+                          $firmwareVersion, $deviceIdentifier, $enumerationType)
     {
-        if($deviceIdentifier == BrickletAnalogIn::DEVICE_IDENTIFIER) {
-            $this->brickletAnalogIn = new BrickletAnalogIn($uid, $this->ipcon);
-            $this->brickletAnalogIn->setRange(1);
-            $this->brickletAnalogIn->setDebouncePeriod(10000);
-            $this->brickletAnalogIn->setVoltageCallbackThreshold('>', 1200, 0);
-            $this->brickletAnalogIn->registerCallback(BrickletAnalogIn::CALLBACK_VOLTAGE_REACHED,
-                                                      array($this, 'voltageReachedCB'));
+        if($deviceIdentifier == BrickletIndustrialDigitalIn4::DEVICE_IDENTIFIER) {
+            $this->brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4($uid, $this->ipcon);
+            $this->brickletIndustrialDigitalIn4->setDebouncePeriod(10000);
+            $this->brickletIndustrialDigitalIn4->setInterrupt(15);
+            $this->brickletIndustrialDigitalIn4->registerCallback(BrickletIndustrialDigitalIn4::CALLBACK_INTERRUPT,
+                                                                  array($this, 'cb_interrupt'));
         }
     }
 
@@ -197,9 +192,11 @@ Step 3: Handle the alarm signal
 
     <?php
 
-    function voltageReachedCB($voltage)
+    function cb_interrupt($interruptMask, $valueMask)
     {
-        echo "Fire! Fire!\n";
+        if ($valueMask > 0) {
+            echo "Fire! Fire!\n";
+        }
     }
 
     ?>
@@ -258,18 +255,17 @@ Step 4: Error handling and Logging
 
     <?php
 
-    if($deviceIdentifier == BrickletAnalogIn::DEVICE_IDENTIFIER) {
+    if($deviceIdentifier == BrickletIndustrialDigitalIn4::DEVICE_IDENTIFIER) {
         try {
-            $this->brickletAnalogIn = new BrickletAnalogIn($uid, $this->ipcon);
-            $this->brickletAnalogIn->setRange(1);
-            $this->brickletAnalogIn->setDebouncePeriod(10000);
-            $this->brickletAnalogIn->setVoltageCallbackThreshold('>', 1200, 0);
-            $this->brickletAnalogIn->registerCallback(BrickletAnalogIn::CALLBACK_VOLTAGE_REACHED,
-                                                      array($this, 'voltageReachedCB'));
-            echo "Analog In initialized\n";
+            $this->brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4($uid, $this->ipcon);
+            $this->brickletIndustrialDigitalIn4->setDebouncePeriod(10000);
+            $this->brickletIndustrialDigitalIn4->setInterrupt(15);
+            $this->brickletIndustrialDigitalIn4->registerCallback(BrickletIndustrialDigitalIn4::CALLBACK_INTERRUPT,
+                                                                  array($this, 'cb_interrupt'));
+            echo "Industrial Digital In 4 initialized\n";
         } catch(Exception $e) {
-            $this->brickletAnalogIn = null;
-            echo "Analog In init failed: $e\n";
+            $this->brickletIndustrialDigitalIn4 = null;
+            echo "Industrial Digital In 4 init failed: $e\n";
         }
     }
 
