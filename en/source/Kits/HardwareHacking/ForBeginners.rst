@@ -6,9 +6,12 @@
 Hardware Hacking for Beginners
 ==============================
 
-Hardware hacking with Starter Kit: Hardware Hacking is easy, etc etc!
+This Hardware Hacking Kit should encourage you to hack device and learn some
+basic electronic knowledge. In the following there are some basic descriptions
+how to use the supplied hardware.
 
-There are two different modules in this kit for two different purposes:
+Basically there are two different purposes for the kit. Each is handeled
+by one specific Bricklet:
 
 Industrial Quad Relay Bricklet
 ------------------------------
@@ -54,9 +57,9 @@ be turned on or off depending on the switch.
 
 Of course we can add a second switch in parallel to the first one, such that
 the LED will light if one of the two is switched on. If both are switched on
-the LED will light, too.
-
-TODO: second switch can force on, but not off stat if first switch is on
+the LED will light, too. If one switch is switched on, the other switch can
+be switched either on or off it will not affect the sate of the LED. The LED 
+will light.
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_two_switches_350.jpg
    :scale: 100 %
@@ -88,21 +91,25 @@ with a button. If you have identified the connection you only have to solder
 two wires, each to one trace, on it and connect one relay of the Industrial
 Quad Relay Bricklet with it.
 
-.. image:: /Images/Kits/hardware_hacking_garage_remote_top_closeup.jpg
+.. image:: /Images/Kits/hardware_hacking_garage_remote_top_closeup2.jpg
    :scale: 100 %
    :alt: Button on circuit board closeup
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_garage_remote_top_closeup.jpg
-
-TODO: add arrows to the pads in the image
+   :target: ../../_images/Kits/hardware_hacking_garage_remote_top_closeup2.jpg
 
 The picture above depicts a button on a circuit board. You can see two traces,
 one on the upper right corner and one on the bottom right corner
 connected with the button. To make this button externally triggerable you have
 to solder one wire each to the upper right and bottom right pad of the button.
+At the end it will look at the following:
 
-TODO: before/after image of connected quad relay
+.. image:: /Images/Kits/hardware_hacking_garage_remote_soldered_350.jpg
+   :scale: 100 %
+   :alt: Button on circuit board closeup with soldered wires
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_garage_remote_soldered_1500.jpg
 
+Both wires have to connected to one port of the Quad Relay Bricklet.
 
 Industrial Digital In 4 Bricklet
 --------------------------------
@@ -167,7 +174,11 @@ Identify the Series Resistor of a LED
 There are many different kinds of resistor packages. The most common 
 are wired packages.
 
-TODO FOTO WIRED RESISTOR  Metallfilm, Kohleschicht etc.
+.. image:: /Images/Kits/hardware_hacking_for_beginner_tht_resistor_350.jpg
+   :scale: 100 %
+   :alt: Image of THT Resistors
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_for_beginner_tht_resistor_1500.jpg
 
 Nowadays many products use so called `Surface-Mount Devices (SMD)
 <http://en.wikipedia.org/wiki/Surface-mount_device>`__.
@@ -176,7 +187,11 @@ possible (e.g. casing 0201: 0.6mm x 0.3mm) or large devices (e.g. casing 2920:
 7.4mm x 5.1mm). There are resistors, capacitors, inductances and other devices 
 which can be found directly mounted on the circuit board. 
 
-TODO FOTO SMD Bauteile
+.. image:: /Images/Kits/hardware_hacking_for_beginner_smd_resistor_350.jpg
+   :scale: 100 %
+   :alt: Image of SMD Resistors
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_for_beginner_smd_resistor_1500.jpg
 
 But how to know what kind of device it is?
 There are different possibilities. Experts can tell you which device it may be
@@ -187,10 +202,29 @@ measuring or by identifing its purpose in the circuit.
 
 That's the starting point for this kit. If you like to readout the status of a 
 LED follow the traces until you reach a wired or SMD device. It will most likely
-be the series resistor.
+be the series resistor. 
 
-TODO FOTOS Beispiele für LED + Vorwiderstand auf Leiterplatte
+The next image depicts one example (based on the Garage Door Control example).
 
+.. image:: /Images/Kits/hardware_hacking_garage_remote_top_closeup3_350.jpg
+   :scale: 100 %
+   :alt: LED with Series Resistor Closeup
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_garage_remote_top_closeup3.jpg
+
+You can see a SMD LED marked with a red arrow. There are two traces
+connected to this LED. In one trace you can find a small SMD resistor (marked
+with blue arrow). 
+
+.. image:: /Images/Kits/hardware_hacking_garage_remote_top_closeup4_350.jpg
+   :scale: 100 %
+   :alt: LED with Series Resistor Closeup
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_garage_remote_top_closeup4.jpg
+
+So if you want to read our the state of this LED you have
+to solder one wire directly to the LED (red circle) and one after the 
+series resistor (one of the blue circles). That's it!
 
 Soldering a wire to a solder pad
 --------------------------------
@@ -203,10 +237,11 @@ Don't be afraid if you have never soldered something! You only
 need to solder a wires to a solder pad if you want to hack
 hardware with the Starter Kit: Hardware Hacking.
 
-You can solder a wire to a pad in five steps:
+Soldering wires to a pad is all about transfering heat to them.
+Basically you can do it in five steps:
 
 * Heat the solder pad with the soldering iron
-* Add solder to the pad while it is hot
+* Add solder to the pad while it is hot, the solder of the pad should get liquid.
 * Attach the wire to the pad
 * Remove the soldering iron (still hold the wire to the pad)
 * Wait until solder pad is cooled down
@@ -214,6 +249,6 @@ You can solder a wire to a pad in five steps:
 To make it easier, you can also apply some solder to the
 stripped part of the wire first.
 
-We also made a small video to show the process:
+If you not sure about how to do this you can search for howto videos.
+For example on `Youtube <www.youtube.com>`__ there are plenty of them.
 
-TODO: Video

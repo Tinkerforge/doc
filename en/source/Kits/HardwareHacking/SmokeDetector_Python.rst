@@ -7,7 +7,8 @@
 .. |ref_enumerate| replace:: :py:func:`enumerate() <IPConnection.enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
-.. |cb_voltage_reached| replace:: ``cb_voltage_reached``
+.. |cb_interrupt| replace:: ``cb_interrupt``
+.. |value_mask| replace:: ``value_mask``
 
 .. include:: SmokeDetector_Python.substitutions
    :start-after: >>>substitutions
@@ -112,21 +113,16 @@ Step 2: Initialize Bricklet on Enumeration
         if enumeration_type == IPConnection.ENUMERATION_TYPE_CONNECTED or \
            enumeration_type == IPConnection.ENUMERATION_TYPE_AVAILABLE:
 
-|step2_config1|
+|step2_config|
 
 .. code-block:: python
 
-    if device_identifier == Barometer.DEVICE_IDENTIFIER:
-        self.ai = AnalogIn(uid, self.ipcon)
-        self.ai.set_range(1)
-        self.ai.set_debounce_period(10000)
-        self.ai.register_callback(AnalogIn.CALLBACK_VOLTAGE_REACHED,
-                                  self.cb_voltage_reached)
-        self.ai.set_voltage_callback_threshold('>', 1200, 0)
-
-|step2_config2|
-
-|step2_config3|
+    if device_identifier == IndustrialDigitalIn4.DEVICE_IDENTIFIER:
+        self.idi4 = IndustrialDigitalIn4(uid, self.ipcon)
+        self.idi4.set_debounce_period(10000)
+        self.idi4.set_interrupt(15)
+        self.idi4.register_callback(IndustrialDigitalIn4.CALLBACK_INTERRUPT,
+                                    self.cb_interrupt)
 
 |step2_put_together|
 
@@ -136,13 +132,12 @@ Step 2: Initialize Bricklet on Enumeration
                      firmware_version, device_identifier, enumeration_type):
         if enumeration_type == IPConnection.ENUMERATION_TYPE_CONNECTED or \
            enumeration_type == IPConnection.ENUMERATION_TYPE_AVAILABLE:
-            if device_identifier == Barometer.DEVICE_IDENTIFIER:
-                self.ai = AnalogIn(uid, self.ipcon)
-                self.ai.set_range(1)
-                self.ai.set_debounce_period(10000)
-                self.ai.register_callback(AnalogIn.CALLBACK_VOLTAGE_REACHED,
-                                          self.cb_voltage_reached)
-                self.ai.set_voltage_callback_threshold('>', 1200, 0)
+            if device_identifier == IndustrialDigitalIn4.DEVICE_IDENTIFIER:
+                self.idi4 = IndustrialDigitalIn4(uid, self.ipcon)
+                self.idi4.set_debounce_period(10000)
+                self.idi4.set_interrupt(15)
+                self.idi4.register_callback(IndustrialDigitalIn4.CALLBACK_INTERRUPT,
+                                            self.cb_interrupt)
 
 
 Step 3: Handle the alarm signal
@@ -152,8 +147,9 @@ Step 3: Handle the alarm signal
 
 .. code-block:: python
 
-    def cb_voltage_reached(self, voltage):
-        log.warn('Fire! Fire!')
+    def cb_interrupt(self, interrupt_mask, value_mask):
+        if value_mask > 0:
+            log.warn('Fire! Fire!')
 
 |step3_complete|
 
@@ -200,18 +196,17 @@ Step 4: Error handling and Logging
 
 .. code-block:: python
 
-    if device_identifier == AnalogIn.DEVICE_IDENTIFIER:
+    if device_identifier == IndustrialDigitalIn4.DEVICE_IDENTIFIER:
         try:
-            self.ai = AnalogIn(uid, self.ipcon)
-            self.ai.set_range(1)
-            self.ai.set_debounce_period(10000)
-            self.ai.register_callback(AnalogIn.CALLBACK_VOLTAGE_REACHED,
-                                      self.cb_voltage_reached)
-            self.ai.set_voltage_callback_threshold('>', 1200, 0)
-            log.info('Analog In initialized')
+            self.idi4 = IndustrialDigitalIn4(uid, self.ipcon)
+            self.idi4.set_debounce_period(10000)
+            self.idi4.set_interrupt(15)
+            self.idi4.register_callback(IndustrialDigitalIn4.CALLBACK_INTERRUPT,
+                                        self.cb_interrupt)
+            log.info('Industrial Digital In 4 initialized')
         except Error as e:
-            log.error('Analog In init failed: ' + str(e.description))
-            self.ai = None
+            log.error('Industrial Digital In 4 init failed: ' + str(e.description))
+            self.idi4 = None
 
 |step4_logging1|
 

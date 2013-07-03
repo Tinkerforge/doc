@@ -7,7 +7,8 @@
 .. |ref_enumerate| replace:: :csharp:func:`Enumerate() <IPConnection::Enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
-.. |cb_voltage_reached| replace:: ``VoltageReachedCB``
+.. |cb_interrupt| replace:: ``InterruptCB``
+.. |value_mask| replace:: ``valueMask``
 
 .. include:: SmokeDetector_CSharp.substitutions
    :start-after: >>>substitutions
@@ -128,22 +129,17 @@ Step 2: Initialize Bricklet on Enumeration
         if(enumerationType == IPConnection.ENUMERATION_TYPE_CONNECTED ||
            enumerationType == IPConnection.ENUMERATION_TYPE_AVAILABLE)
 
-|step2_config1|
+|step2_config|
 
 .. code-block:: csharp
 
-    if(deviceIdentifier == BrickletAnalogIn.DEVICE_IDENTIFIER)
+    if(deviceIdentifier == BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER)
     {
-        brickletAnalogIn = new BrickletAnalogIn(UID, ipcon);
-        brickletAnalogIn.SetRange(1);
-        brickletAnalogIn.SetDebouncePeriod(10000);
-        brickletAnalogIn.SetVoltageCallbackThreshold('>', 1200, 0);
-        brickletAnalogIn.VoltageReached += VoltageReachedCB;
+        brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(UID, ipcon);
+        brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
+        brickletIndustrialDigitalIn4.SetInterrupt(15);
+        brickletIndustrialDigitalIn4.Interrupt += InterruptCB;
     }
-
-|step2_config2|
-
-|step2_config3|
 
 |step2_put_together|
 
@@ -156,13 +152,12 @@ Step 2: Initialize Bricklet on Enumeration
         if(enumerationType == IPConnection.ENUMERATION_TYPE_CONNECTED ||
            enumerationType == IPConnection.ENUMERATION_TYPE_AVAILABLE)
         {
-            if(deviceIdentifier == BrickletAnalogIn.DEVICE_IDENTIFIER)
+            if(deviceIdentifier == BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER)
             {
-                brickletAnalogIn = new BrickletAnalogIn(UID, ipcon);
-                brickletAnalogIn.SetRange(1);
-                brickletAnalogIn.SetDebouncePeriod(10000);
-                brickletAnalogIn.SetVoltageCallbackThreshold('>', 1200, 0);
-                brickletAnalogIn.VoltageReached += VoltageReachedCB;
+                brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(UID, ipcon);
+                brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
+                brickletIndustrialDigitalIn4.SetInterrupt(255);
+                brickletIndustrialDigitalIn4.Interrupt += InterruptCB;
             }
         }
     }
@@ -175,9 +170,11 @@ Step 3: Handle the alarm signal
 
 .. code-block:: csharp
 
-    static void VoltageReachedCB(BrickletAnalogIn sender, int voltage)
+    static void InterruptCB(BrickletIndustrialDigitalIn4 sender, int interruptMask, int valueMask)
     {
-        System.Console.WriteLine("Fire! Fire!");
+        if(valueMask > 0) {
+            System.Console.WriteLine("Fire! Fire!");
+        }
     }
 
 |step3_complete|
@@ -237,21 +234,20 @@ Step 4: Error handling and Logging
 
 .. code-block:: csharp
 
-    if(deviceIdentifier == BrickletAnalogIn.DEVICE_IDENTIFIER)
+    if(deviceIdentifier == BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER)
     {
         try
         {
-            brickletAnalogIn = new BrickletAnalogIn(UID, ipcon);
-            brickletAnalogIn.SetRange(1);
-            brickletAnalogIn.SetDebouncePeriod(10000);
-            brickletAnalogIn.SetVoltageCallbackThreshold('>', 1200, 0);
-            brickletAnalogIn.VoltageReached += VoltageReachedCB;
-            System.Console.WriteLine("Analog In initialized");
+            brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(UID, ipcon);
+            brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
+            brickletIndustrialDigitalIn4.SetInterrupt(255);
+            brickletIndustrialDigitalIn4.Interrupt += InterruptCB;
+            System.Console.WriteLine("Industrial Digital In 4 initialized");
         }
         catch(TinkerforgeException e)
         {
-            System.Console.WriteLine("Analog In init failed: " + e.Message);
-            brickletAnalogIn = null;
+            System.Console.WriteLine("Industrial Digital In 4 init failed: " + e.Message);
+            brickletIndustrialDigitalIn4 = null;
         }
     }
 
