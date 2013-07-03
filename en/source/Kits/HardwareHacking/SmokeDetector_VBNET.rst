@@ -1,10 +1,10 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Read out Smoke Detectors using Visual Basic .NET
 
-.. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
-.. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection::Connected>`
+.. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection.EnumerateCallback>`
+.. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection.Connected>`
 .. |callback| replace:: callback
-.. |ref_enumerate| replace:: :vbnet:func:`Enumerate <IPConnection::Enumerate>`
+.. |ref_enumerate| replace:: :vbnet:func:`Enumerate() <IPConnection.Enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
 .. |cb_voltage_reached| replace:: ``VoltageReachedCB``

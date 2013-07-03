@@ -46,7 +46,7 @@ In our case it looks like the following:
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_open_1200.jpg
 
 The LED in question is the transparent LED on the top right. It is
-a two-color LED and it can blink green as well as red. Will will have
+a two-color LED and it can blink green as well as red. We will have
 to find the pins that control the green color of the LED.
 
 Since the LED is of through-hole type, the contacts are only exposed at the
