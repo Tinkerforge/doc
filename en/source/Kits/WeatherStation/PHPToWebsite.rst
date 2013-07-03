@@ -130,7 +130,7 @@ After that get the values and package them in a response array:
         "illuminance"  => "Illuminance: $illuminance Lux",
         "humidity"     => "Humidity: $humidity %RH",
         "air_pressure" => "Air Pressure: $air_pressure mbar",
-        "temperature"  => "Temperature: $temperature °C",
+        "temperature"  => "Temperature: $temperature &deg;C",
     );
 
     ?>

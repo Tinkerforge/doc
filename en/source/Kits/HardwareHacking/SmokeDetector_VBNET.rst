@@ -1,13 +1,14 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Read out Smoke Detectors using Visual Basic .NET
 
-.. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
-.. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection::Connected>`
+.. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection.EnumerateCallback>`
+.. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection.Connected>`
 .. |callback| replace:: callback
-.. |ref_enumerate| replace:: :vbnet:func:`Enumerate <IPConnection::Enumerate>`
+.. |ref_enumerate| replace:: :vbnet:func:`Enumerate() <IPConnection.Enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
-.. |cb_voltage_reached| replace:: ``VoltageReachedCB``
+.. |cb_interrupt| replace:: ``InterruptCB``
+.. |value_mask| replace:: ``valueMask``
 
 .. include:: SmokeDetector_VBNET.substitutions
    :start-after: >>>substitutions
@@ -117,21 +118,16 @@ Step 2: Initialize Bricklet on Enumeration
         If enumerationType = IPConnection.ENUMERATION_TYPE_CONNECTED Or _
            enumerationType = IPConnection.ENUMERATION_TYPE_AVAILABLE Then
 
-|step2_config1|
+|step2_config|
 
 .. code-block:: vbnet
 
-    If deviceIdentifier = BrickletAnalogIn.DEVICE_IDENTIFIER Then
-        brickletAnalogIn = New BrickletAnalogIn(UID, ipcon)
-        brickletAnalogIn.SetRange(1)
-        brickletAnalogIn.SetDebouncePeriod(10000)
-        brickletAnalogIn.SetVoltageCallbackThreshold(">"C, 1200, 0)
-        AddHandler brickletAnalogIn.VoltageReached, AddressOf VoltageReachedCB
+    If deviceIdentifier = BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER Then
+        brickletIndustrialDigitalIn4 = New BrickletIndustrialDigitalIn4(UID, ipcon)
+        brickletIndustrialDigitalIn4.SetDebouncePeriod(10000)
+        brickletIndustrialDigitalIn4.SetInterrupt(15)
+        AddHandler brickletIndustrialDigitalIn4.Interrupt, AddressOf InterruptCB
     End If
-
-|step2_config2|
-
-|step2_config3|
 
 |step2_put_together|
 
@@ -143,12 +139,11 @@ Step 2: Initialize Bricklet on Enumeration
                     ByVal deviceIdentifier As Integer, ByVal enumerationType As Short)
         If enumerationType = IPConnection.ENUMERATION_TYPE_CONNECTED Or _
            enumerationType = IPConnection.ENUMERATION_TYPE_AVAILABLE Then
-            If deviceIdentifier = BrickletAnalogIn.DEVICE_IDENTIFIER Then
-                brickletAnalogIn = New BrickletAnalogIn(UID, ipcon)
-                brickletAnalogIn.SetRange(1)
-                brickletAnalogIn.SetDebouncePeriod(10000)
-                brickletAnalogIn.SetVoltageCallbackThreshold(">"C, 1200, 0)
-                AddHandler brickletAnalogIn.VoltageReached, AddressOf VoltageReachedCB
+            If deviceIdentifier = BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER Then
+                brickletIndustrialDigitalIn4 = New BrickletIndustrialDigitalIn4(UID, ipcon)
+                brickletIndustrialDigitalIn4.SetDebouncePeriod(10000)
+                brickletIndustrialDigitalIn4.SetInterrupt(15)
+                AddHandler brickletIndustrialDigitalIn4.Interrupt, AddressOf InterruptCB
             End If
         End If
     End Sub
@@ -161,8 +156,11 @@ Step 3: Handle the alarm signal
 
 .. code-block:: vbnet
 
-    Sub VoltageReachedCB(ByVal sender As BrickletAnalogIn, ByVal voltage As Integer)
-        System.Console.WriteLine("Fire! Fire!")
+    Sub InterruptCB(ByVal sender As BrickletIndustrialDigitalIn4, _
+                    ByVal interruptMask As Integer, ByVal valueMask As Integer)
+        If valueMask > 0 Then
+            System.Console.WriteLine("Fire! Fire!")
+        End If
     End Sub
 
 |step3_complete|
@@ -211,17 +209,16 @@ Step 4: Error handling and Logging
 
 .. code-block:: vbnet
 
-    If deviceIdentifier = BrickletAnalogIn.DEVICE_IDENTIFIER Then
+    If deviceIdentifier = BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER Then
         Try
-            brickletAnalogIn = New BrickletAnalogIn(UID, ipcon)
-            brickletAnalogIn.SetRange(1)
-            brickletAnalogIn.SetDebouncePeriod(10000)
-            brickletAnalogIn.SetVoltageCallbackThreshold(">"C, 1200, 0)
-            AddHandler brickletAnalogIn.VoltageReached, AddressOf VoltageReachedCB
-            System.Console.WriteLine("Analog In initialized")
+            brickletIndustrialDigitalIn4 = New BrickletIndustrialDigitalIn4(UID, ipcon)
+            brickletIndustrialDigitalIn4.SetDebouncePeriod(10000)
+            brickletIndustrialDigitalIn4.SetInterrupt(15)
+            AddHandler brickletIndustrialDigitalIn4.Interrupt, AddressOf InterruptCB
+            System.Console.WriteLine("Industrial Digital In 4 initialized")
         Catch e As TinkerforgeException
-            System.Console.WriteLine("Analog In init failed: " + e.Message)
-            brickletAnalogIn = Nothing
+            System.Console.WriteLine("Industrial Digital In 4 init failed: " + e.Message)
+            brickletIndustrialDigitalIn4 = Nothing
         End Try
     End If
 

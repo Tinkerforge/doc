@@ -7,7 +7,8 @@
 .. |ref_enumerate| replace:: :rb:func:`#enumerate <IPConnection#enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
-.. |cb_voltage_reached| replace:: ``CALLBACK_VOLTAGE_REACHED``
+.. |cb_interrupt| replace:: ``CALLBACK_INTERRUPT``
+.. |value_mask| replace:: ``value_mask``
 
 .. include:: SmokeDetector_Ruby.substitutions
    :start-after: >>>substitutions
@@ -117,22 +118,17 @@ Step 2: Initialize Bricklet on Enumeration
       if enumeration_type == IPConnection::ENUMERATION_TYPE_CONNECTED or
          enumeration_type == IPConnection::ENUMERATION_TYPE_AVAILABLE
 
-|step2_config1|
+|step2_config|
 
 .. code-block:: ruby
 
-    if device_identifier == BrickletAnalogIn::DEVICE_IDENTIFIER
-      analog_in = BrickletAnalogIn.new uid, ipcon
-      analog_in.set_range 1
-      analog_in.set_debounce_period 10000
-      analog_in.set_voltage_callback_threshold '>', 1200, 0
-      analog_in.register_callback(BrickletAnalogIn::CALLBACK_VOLTAGE_REACHED) do |voltage|
+    if device_identifier == BrickletIndustrialDigitalIn4::DEVICE_IDENTIFIER
+      idi4 = BrickletIndustrialDigitalIn4.new uid, ipcon
+      idi4.set_debounce_period 10000
+      idi4.set_interrupt 15
+      idi4.register_callback(BrickletIndustrialDigitalIn4::CALLBACK_INTERRUPT) do |interrupt_mask, value_mask|
       end
     end
-
-|step2_config2|
-
-|step2_config3|
 
 |step2_put_together|
 
@@ -143,12 +139,11 @@ Step 2: Initialize Bricklet on Enumeration
                                                                   device_identifier, enumeration_type|
       if enumeration_type == IPConnection::ENUMERATION_TYPE_CONNECTED or
          enumeration_type == IPConnection::ENUMERATION_TYPE_AVAILABLE
-        if device_identifier == BrickletAnalogIn::DEVICE_IDENTIFIER
-          analog_in = BrickletAnalogIn.new uid, ipcon
-          analog_in.set_range 1
-          analog_in.set_debounce_period 10000
-          analog_in.set_voltage_callback_threshold '>', 1200, 0
-          analog_in.register_callback(BrickletAnalogIn::CALLBACK_VOLTAGE_REACHED) do |voltage|
+        if device_identifier == BrickletIndustrialDigitalIn4::DEVICE_IDENTIFIER
+          idi4 = BrickletIndustrialDigitalIn4.new uid, ipcon
+          idi4.set_debounce_period 10000
+          idi4.set_interrupt 15
+          idi4.register_callback(BrickletIndustrialDigitalIn4::CALLBACK_INTERRUPT) do |interrupt_mask, value_mask|
           end
         end
       end
@@ -162,8 +157,10 @@ Step 3: Handle the alarm signal
 
 .. code-block:: ruby
 
-    analog_in.register_callback(BrickletAnalogIn::CALLBACK_VOLTAGE_REACHED) do |voltage|
-      puts 'Fire! Fire!'
+    idi4.register_callback(BrickletIndustrialDigitalIn4::CALLBACK_INTERRUPT) do |interrupt_mask, value_mask|
+      if value_mask > 0
+        puts 'Fire! Fire!'
+      end
     end
 
 |step3_complete|
@@ -212,19 +209,20 @@ Step 4: Error handling and Logging
 
 .. code-block:: ruby
 
-    if device_identifier == BrickletAnalogIn::DEVICE_IDENTIFIER
+    if device_identifier == BrickletIndustrialDigitalIn4::DEVICE_IDENTIFIER
       begin
-        analog_in = BrickletAnalogIn.new uid, ipcon
-        analog_in.set_range 1
-        analog_in.set_debounce_period 10000
-        analog_in.set_voltage_callback_threshold '>', 1200, 0
-        analog_in.register_callback(BrickletAnalogIn::CALLBACK_VOLTAGE_REACHED) do |voltage|
-          puts 'Fire! Fire!'
+        idi4 = BrickletIndustrialDigitalIn4.new uid, ipcon
+        idi4.set_debounce_period 10000
+        idi4.set_interrupt 15
+        idi4.register_callback(BrickletIndustrialDigitalIn4::CALLBACK_INTERRUPT) do |interrupt_mask, value_mask|
+          if value_mask > 0
+            puts 'Fire! Fire!'
+          end
         end
-        puts 'Analog In initialized'
+        puts 'Industrial Digital In 4 initialized'
       rescue Exception => e
         analog_in = nil
-        puts 'Analog In init failed: ' + e
+        puts 'Industrial Digital In 4 init failed: ' + e
       end
     end
 

@@ -1,10 +1,10 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit Visual Basic .NET auf das LCD 20x4 Bricklet schreiben
 
-.. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
-.. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection::Connected>`
+.. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection.EnumerateCallback>`
+.. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection.Connected>`
 .. |callback| replace:: Callback
-.. |ref_enumerate| replace:: :vbnet:func:`Enumerate <IPConnection::Enumerate>`
+.. |ref_enumerate| replace:: :vbnet:func:`Enumerate() <IPConnection.Enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
 .. |cb_illuminance| replace:: ``IlluminanceCB``
