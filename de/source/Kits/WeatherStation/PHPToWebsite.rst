@@ -132,7 +132,7 @@ Danach müssen die Werte abgerufen werden und in einem Array gespeichert werden.
         "illuminance"  => "Illuminance: $illuminance Lux",
         "humidity"     => "Humidity: $humidity %RH",
         "air_pressure" => "Air Pressure: $air_pressure mbar",
-        "temperature"  => "Temperature: $temperature °C",
+        "temperature"  => "Temperature: $temperature &deg;C",
     );
 
     ?>
