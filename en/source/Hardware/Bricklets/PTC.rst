@@ -29,9 +29,14 @@ PTC Bricklet
 	             "PTC Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_ptc_master_100.jpg",
-	             "Bricklets/bricklet_ptc_master_600.jpg",
-	             "PTC Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_ptc_sensor_100.jpg",
+	             "Bricklets/bricklet_ptc_sensor_600.jpg",
+	             "PTC Bricklet with 3-wire Pt100 RTD")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_ptc_jumper_100.jpg",
+	             "Bricklets/bricklet_ptc_jumper_600.jpg",
+	             "PTC Bricklet")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_ptc_brickv_100.jpg",
@@ -39,8 +44,8 @@ PTC Bricklet
 	             "PTC Bricklet in Brick Viewer")
 	}}
 	{{
-	    tfdocimg("Dimensions/ptc_bricklet_dimensions_100.png",
-	             "Dimensions/ptc_bricklet_dimensions_600.png",
+	    tfdocimg("Dimensions/ptc_bricklet_100.png",
+	             "Dimensions/ptc_bricklet_600.png",
 	             "Outline and drilling plan")
 	}}
 	{{ tfdocend() }}
@@ -107,16 +112,25 @@ Jumper Configuration
 Configure the jumper for Pt100/Pt1000 sensor and 2/3/4-wire type as
 shown below.
 
-.. Image of all 6 possible configuration with caption "2-wire Pt100", etc
+.. image:: /Images/Bricklets/bricklet_ptc_pt_wire_600.jpg
+   :scale: 100 %
+   :alt: PTC Bricklet jumper configurations
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_ptc_pt_wire_1000.jpg
 
 .. _ptc_bricklet_connectivity:
 
 Connectivity
 ------------
 
-See below for connection diagrams for 2/3/4-wire type.
+See below for connection diagrams for 2/3/4-wire type resistance temperature
+device.
 
-.. Image of 3 possible configurations (see ptc2.png in bricklet_ptc/)
+.. image:: /Images/Bricklets/bricklet_ptc_connectivity_600.jpg
+   :scale: 100 %
+   :alt: PTC Bricklet connection diagram
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_connectivity_1000.jpg
 
 Additonally the number of wires has to be set with the API.
 
@@ -128,12 +142,13 @@ Test your PTC Bricklet
 |test_intro|
 
 |test_connect| and attach a Pt100/1000 sensor (see picture below).
+In this example we use a 3-wire Pt100 sensor.
 
-.. image:: /Images/Bricklets/bricklet_ptc_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_ptc_sensor_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet connected to Master Brick
+   :alt: PTC Bricklet connected to 3-wire Pt100 sensor.
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_sensor_1200.jpg
 
 |test_tab|
 If everything went as expected the Brick Viewer should look as
