@@ -44,8 +44,8 @@ PTC Bricklet
 	             "PTC Bricklet in Brick Viewer")
 	}}
 	{{
-	    tfdocimg("Dimensions/ptc_bricklet_100.png",
-	             "Dimensions/ptc_bricklet_600.png",
+	    tfdocimg("Dimensions/ptc_dimensions_100.png",
+	             "Dimensions/ptc_dimensions_600.png",
 	             "Outline and drilling plan")
 	}}
 	{{ tfdocend() }}
@@ -92,7 +92,7 @@ Fault Detection                   Open RTD element, RTD value out-of-range, shor
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            35 x 30 x 15mm (1.38 x 1.18 x 0.59")
-Weight                            TBDg
+Weight                            8g
 ================================  ============================================================
 
 Resources
@@ -110,7 +110,8 @@ Jumper Configuration
 --------------------
 
 Configure the jumper for Pt100/Pt1000 sensor and 2/3/4-wire type as
-shown below.
+shown below. The pin headers that are marked red have to be closed
+by a jumper for the corresponding sensor type.
 
 .. image:: /Images/Bricklets/bricklet_ptc_pt_wire_600.jpg
    :scale: 100 %
@@ -130,7 +131,7 @@ device.
    :scale: 100 %
    :alt: PTC Bricklet connection diagram
    :align: center
-   :target: ../../_images/Bricklets/bricklet_connectivity_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_connectivity_1000.jpg
 
 Additonally the number of wires has to be set with the API.
 

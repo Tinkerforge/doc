@@ -29,9 +29,14 @@ PTC Bricklet
 	             "PTC Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_ptc_master_100.jpg",
-	             "Bricklets/bricklet_ptc_master_600.jpg",
-	             "PTC Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_ptc_sensor_100.jpg",
+	             "Bricklets/bricklet_ptc_sensor_600.jpg",
+	             "PTC Bricklet with 3-wire Pt100 RTD")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_ptc_jumper_100.jpg",
+	             "Bricklets/bricklet_ptc_jumper_600.jpg",
+	             "PTC Bricklet")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_ptc_brickv_100.jpg",
@@ -39,8 +44,8 @@ PTC Bricklet
 	             "PTC Bricklet im Brick Viewer")
 	}}
 	{{
-	    tfdocimg("Dimensions/ptc_bricklet_dimensions_100.png",
-	             "Dimensions/ptc_bricklet_dimensions_600.png",
+	    tfdocimg("Dimensions/ptc_dimensions_100.png",
+	             "Dimensions/ptc_dimensions_600.png",
 	             "Umriss und Bohrplan")
 	}}
 	{{ tfdocend() }}
@@ -86,7 +91,7 @@ Fehlerdetektion                   Open RTD element, RTD value out-of-range, shor
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessunge (W x D x H)            35 x 30 x 15mm (1.38 x 1.18 x 0.59")
-Gewicht                           TBDg
+Gewicht                           8g
 ================================  ============================================================
 
 
@@ -105,9 +110,14 @@ Jumper Konfiguration
 --------------------
 
 Konfiguriere die Jumper für Pt100/Pt1000 Sensor und für 2/3/4-Leiter Typ
-wie folgt:
+wie unten dargestellt. Die rot markierten Stiftleisten müssen für
+den korrespondendierenden Sensortyp mit einem Jumper gebrückt werden.
 
-.. Image of all 6 possible configuration with caption "2-wire Pt100", etc
+.. image:: /Images/Bricklets/bricklet_ptc_pt_wire_600.jpg
+   :scale: 100 %
+   :alt: PTC Bricklet Jumperkonfiguration 
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_ptc_pt_wire_1000.jpg
 
 .. _ptc_bricklet_connectivity:
 
@@ -115,9 +125,13 @@ Anschlussmöglichkeiten
 ----------------------
 
 Die folgenden Verbindungsdiagramme zeigen wie
-Sensoren vom Typ 2/3/4-Leiter angeschlossen werden können:
+Widerstandsthermometer vom Typ 2/3/4-Leiter angeschlossen werden können:
 
-.. Image of 3 possible configurations (see ptc2.png in bricklet_ptc/)
+.. image:: /Images/Bricklets/bricklet_ptc_connectivity_600.jpg
+   :scale: 100 %
+   :alt: PTC Bricklet connection diagram
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_ptc_connectivity_1000.jpg
 
 Zusätzlich muss die Leiteranzahl mit Hilfe der API gesetzt werden.
 
@@ -129,12 +143,13 @@ Erster Test
 |test_intro|
 
 |test_connect| sowie ein Pt100/1000 Sensor angeschlossen werden (siehe folgendes Bild).
+In diesem Beispiel wird ein 3-Leiter Pt100 Sensor verwendet.
 
-.. image:: /Images/Bricklets/bricklet_ptc_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_ptc_sensor_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet verbunden mit Master Brick
+   :alt: PTC Bricklet mit 3-Leiter Pt100 sensor.
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_sensor_1200.jpg
 
 |test_tab|
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
