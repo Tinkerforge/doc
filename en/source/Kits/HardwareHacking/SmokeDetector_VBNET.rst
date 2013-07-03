@@ -156,7 +156,7 @@ Step 3: Handle the alarm signal
 
 .. code-block:: vbnet
 
-    Sub InterruptCB(ByVal sender As BrickletIndustrialDigitalIn4,
+    Sub InterruptCB(ByVal sender As BrickletIndustrialDigitalIn4, _
                     ByVal interruptMask As Integer, ByVal valueMask As Integer)
         If valueMask > 0 Then
             System.Console.WriteLine("Fire! Fire!")
