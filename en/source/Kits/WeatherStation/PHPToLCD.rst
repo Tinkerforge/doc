@@ -4,12 +4,12 @@
 .. |ref_CALLBACK_ENUMERATE| replace:: :php:member:`CALLBACK_ENUMERATE <IPConnection::CALLBACK_ENUMERATE>`
 .. |ref_CALLBACK_CONNECTED| replace:: :php:member:`CALLBACK_CONNECTED <IPConnection::CALLBACK_CONNECTED>`
 .. |callback| replace:: callback
-.. |ref_enumerate| replace:: :php:func:`enumerate <IPConnection::enumerate>`
+.. |ref_enumerate| replace:: :php:func:`enumerate() <IPConnection::enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``
-.. |cb_illuminance| replace:: ``illuminanceCB``
-.. |cb_humidity| replace:: ``humidityCB``
-.. |cb_air_pressure| replace:: ``airPressureCB``
+.. |cb_illuminance| replace:: ``cb_illuminance``
+.. |cb_humidity| replace:: ``cb_humidity``
+.. |cb_air_pressure| replace:: ``cb_airPressure``
 
 .. include:: PHPToLCD.substitutions
    :start-after: >>>substitutions
@@ -61,9 +61,9 @@ Step 1: Discover Bricks and Bricklets
         $this->ipcon->connect(self::HOST, self::PORT);
 
         $this->ipcon->registerCallback(IPConnection::CALLBACK_ENUMERATE,
-                                       array($this, 'enumerateCB'));
+                                       array($this, 'cb_enumerate'));
         $this->ipcon->registerCallback(IPConnection::CALLBACK_CONNECTED,
-                                       array($this, 'connectedCB'));
+                                       array($this, 'cb_connected'));
 
         $this->ipcon->enumerate();
     }
@@ -78,7 +78,7 @@ Step 1: Discover Bricks and Bricklets
 
     <?php
 
-    function connectedCB($connectedReason)
+    function cb_connected($connectedReason)
     {
         if($connectedReason == IPConnection::CONNECT_REASON_AUTO_RECONNECT) {
             $this->ipcon->enumerate();
@@ -106,14 +106,14 @@ Step 1: Discover Bricks and Bricklets
             $this->ipcon->connect(self::HOST, self::PORT);
 
             $this->ipcon->registerCallback(IPConnection::CALLBACK_ENUMERATE,
-                                           array($this, 'enumerateCB'));
+                                           array($this, 'cb_enumerate'));
             $this->ipcon->registerCallback(IPConnection::CALLBACK_CONNECTED,
-                                           array($this, 'connectedCB'));
+                                           array($this, 'cb_connected'));
 
             $this->ipcon->enumerate();
         }
 
-        function connectedCB($connectedReason)
+        function cb_connected($connectedReason)
         {
             if($connectedReason == IPConnection::CONNECT_REASON_AUTO_RECONNECT) {
                 $this->ipcon->enumerate();
@@ -135,8 +135,8 @@ Step 2: Initialize Bricklets on Enumeration
 
     <?php
 
-    function enumerateCB($uid, $connectedUid, $position, $hardwareVersion,
-                         $firmwareVersion, $deviceIdentifier, $enumerationType)
+    function cb_enumerate($uid, $connectedUid, $position, $hardwareVersion,
+                          $firmwareVersion, $deviceIdentifier, $enumerationType)
     {
         if($enumerationType == IPConnection::ENUMERATION_TYPE_CONNECTED ||
            $enumerationType == IPConnection::ENUMERATION_TYPE_AVAILABLE) {
@@ -167,17 +167,17 @@ Step 2: Initialize Bricklets on Enumeration
         $this->brickletAmbientLight = new BrickletAmbientLight($uid, $this->ipcon);
         $this->brickletAmbientLight->setIlluminanceCallbackPeriod(1000);
         $this->brickletAmbientLight->registerCallback(BrickletAmbientLight::CALLBACK_ILLUMINANCE,
-                                                      array($this, 'illuminanceCB'));
+                                                      array($this, 'cb_illuminance'));
     } else if($deviceIdentifier == BrickletHumidity::DEVICE_IDENTIFIER) {
         $this->brickletHumidity = new BrickletHumidity($uid, $this->ipcon);
         $this->brickletHumidity->setHumidityCallbackPeriod(1000);
         $this->brickletHumidity->registerCallback(BrickletHumidity::CALLBACK_HUMIDITY,
-                                                  array($this, 'humidityCB'));
+                                                  array($this, 'cb_humidity'));
     } else if($deviceIdentifier == BrickletBarometer::DEVICE_IDENTIFIER) {
         $this->brickletBarometer = new BrickletBarometer($uid, $this->ipcon);
         $this->brickletBarometer->setAirPressureCallbackPeriod(1000);
         $this->brickletBarometer->registerCallback(BrickletBarometer::CALLBACK_AIR_PRESSURE,
-                                                   array($this, 'airPressureCB'));
+                                                   array($this, 'cb_airPressure'));
     }
 
     ?>
@@ -190,8 +190,8 @@ Step 2: Initialize Bricklets on Enumeration
 
     <?php
 
-    function enumerateCB($uid, $connectedUid, $position, $hardwareVersion,
-                         $firmwareVersion, $deviceIdentifier, $enumerationType)
+    function cb_enumerate($uid, $connectedUid, $position, $hardwareVersion,
+                          $firmwareVersion, $deviceIdentifier, $enumerationType)
     {
         if($enumerationType == IPConnection::ENUMERATION_TYPE_CONNECTED ||
            $enumerationType == IPConnection::ENUMERATION_TYPE_AVAILABLE) {
@@ -203,17 +203,17 @@ Step 2: Initialize Bricklets on Enumeration
                 $this->brickletAmbientLight = new BrickletAmbientLight($uid, $this->ipcon);
                 $this->brickletAmbientLight->setIlluminanceCallbackPeriod(1000);
                 $this->brickletAmbientLight->registerCallback(BrickletAmbientLight::CALLBACK_ILLUMINANCE,
-                                                              array($this, 'illuminanceCB'));
+                                                              array($this, 'cb_illuminance'));
             } else if($deviceIdentifier == BrickletHumidity::DEVICE_IDENTIFIER) {
                 $this->brickletHumidity = new BrickletHumidity($uid, $this->ipcon);
                 $this->brickletHumidity->setHumidityCallbackPeriod(1000);
                 $this->brickletHumidity->registerCallback(BrickletHumidity::CALLBACK_HUMIDITY,
-                                                          array($this, 'humidityCB'));
+                                                          array($this, 'cb_humidity'));
             } else if($deviceIdentifier == BrickletBarometer::DEVICE_IDENTIFIER) {
                 $this->brickletBarometer = new BrickletBarometer($uid, $this->ipcon);
                 $this->brickletBarometer->setAirPressureCallbackPeriod(1000);
                 $this->brickletBarometer->registerCallback(BrickletBarometer::CALLBACK_AIR_PRESSURE,
-                                                           array($this, 'airPressureCB'));
+                                                           array($this, 'cb_airPressure'));
             }
         }
     }
@@ -247,19 +247,19 @@ Step 3: Show measurements on display
 
     <?php
 
-    function illuminanceCB($illuminance)
+    function cb_illuminance($illuminance)
     {
         $text = sprintf("Illuminanc %6.2f lx", $illuminance/10.0);
         $this->brickletLCD->writeLine(0, 0, $text);
     }
 
-    function humidityCB($humidity)
+    function cb_humidity($humidity)
     {
         $text = sprintf("Humidity   %6.2f %%", $humidity/10.0);
         $this->brickletLCD->writeLine(1, 0, $text);
     }
 
-    function airPressureCB($airPressure)
+    function cb_airPressure($airPressure)
     {
         $text = sprintf("Air Press %7.2f mb", $airPressure/1000.0);
         $this->brickletLCD->writeLine(2, 0, $text);
@@ -273,7 +273,7 @@ Step 3: Show measurements on display
 
     <?php
 
-    function airPressureCB($airPressure)
+    function cb_airPressure($airPressure)
     {
         $text = sprintf("Air Press %7.2f mb", $airPressure/1000.0);
         $this->brickletLCD->writeLine(2, 0, $text);
@@ -291,19 +291,19 @@ Step 3: Show measurements on display
 
     <?php
 
-    function illuminanceCB($illuminance)
+    function cb_illuminance($illuminance)
     {
         $text = sprintf("Illuminanc %6.2f lx", $illuminance/10.0);
         $this->brickletLCD->writeLine(0, 0, $text);
     }
 
-    function humidityCB($humidity)
+    function cb_humidity($humidity)
     {
         $text = sprintf("Humidity   %6.2f %%", $humidity/10.0);
         $this->brickletLCD->writeLine(1, 0, $text);
     }
 
-    function airPressureCB($airPressure)
+    function cb_airPressure($airPressure)
     {
         $text = sprintf("Air Press %7.2f mb", $airPressure/1000.0);
         $this->brickletLCD->writeLine(2, 0, $text);
@@ -370,7 +370,7 @@ Step 4: Error handling and Logging
 
     <?php
 
-    function illuminanceCB($illuminance)
+    function cb_illuminance($illuminance)
     {
         if($this->brickletLCD != null) {
             $text = sprintf("Illuminanc %6.2f lx", $illuminance/10.0);
@@ -392,7 +392,7 @@ Step 4: Error handling and Logging
             $this->brickletAmbientLight = new BrickletAmbientLight($uid, $this->ipcon);
             $this->brickletAmbientLight->setIlluminanceCallbackPeriod(1000);
             $this->brickletAmbientLight->registerCallback(BrickletAmbientLight::CALLBACK_ILLUMINANCE,
-                                                          array($this, 'illuminanceCB'));
+                                                          array($this, 'cb_illuminance'));
             echo "Ambient Light initialized\n";
         } catch(Exception $e) {
             $this->brickletAmbientLight = null;
