@@ -40,5 +40,5 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "",     "16", "Starter Kit: Weather Station",                                         "`done <http://www.tinkerforge.com/en/blog/2013/4/19/starter-kit:-weather-station>`__"
    "",     "23", "Ethernet Extension with PoE",                                          "`done <http://www.tinkerforge.com/en/blog/2013/6/6/ethernet-extension-available>`__"
    "",     "?",  "PTC Bricklet",                                                         "In production"
-   "",     "?",  "0-20mA Bricklet",                                                      "PCBs availably"
+   "",     "?",  "Industrial Dual 0-20mA Bricklet",                                      "PCBs availably"
    "",     "?",  "Sonic Range Bricklet"

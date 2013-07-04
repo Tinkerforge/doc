@@ -43,5 +43,5 @@ Termine haben.
    "",     "16", "Starterkit: Wetterstation",                                           "`fertig <http://www.tinkerforge.com/de/blog/2013/4/19/starterkit:-wetterstation>`__"
    "",     "23", "Ethernet Extension mit PoE",                                          "`fertig <http://www.tinkerforge.com/de/blog/2013/6/6/ethernet-extension-verfuegbar>`__"
    "",     "?",  "PTC Bricklet",                                                        "In Produktion"
-   "",     "?",  "0-20mA Bricklet",                                                     "Leiterplatten vorhanden"
+   "",     "?",  "Industrial Dual 0-20mA Bricklet",                                     "Leiterplatten vorhanden"
    "",     "?",  "Sonic Range Bricklet"
