@@ -14,33 +14,33 @@ Industrial Dual 0-20mA Bricklet
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_industrial_dual_0_20_ma_tilted_350.jpg",
-	               "Bricklets/bricklet_industrial_dual_0_20_ma_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_industrial_dual_0_20ma_tilted_350.jpg",
+	               "Bricklets/bricklet_industrial_dual_0_20ma_tilted_600.jpg",
 	               "Industrial Dual 0-20mA Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20_ma_vertical_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20_ma_vertical_600.jpg",
+	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_vertical_100.jpg",
+	             "Bricklets/bricklet_industrial_dual_0_20ma_vertical_600.jpg",
 	             "Industrial Dual 0-20mA Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20_ma_horizontal_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20_ma_horizontal_600.jpg",
+	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_horizontal_100.jpg",
+	             "Bricklets/bricklet_industrial_dual_0_20ma_horizontal_600.jpg",
 	             "Industrial Dual 0-20mA Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20_ma_master_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20_ma_master_600.jpg",
-	             "Industrial Dual 0-20mA Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_sensor_100.jpg",
+	             "Bricklets/bricklet_industrial_dual_0_20ma_sensor_600.jpg",
+	             "Industrial Dual 0-20mA Bricklet with Ambient Light Sensor")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20_ma_brickv_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20_ma_brickv.jpg",
+	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_brickv_100.jpg",
+	             "Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg",
 	             "Industrial Dual 0-20mA Bricklet in Brick Viewer")
 	}}
 	{{
-	    tfdocimg("Dimensions/industrial_dual_0_20_ma_bricklet_dimensions_100.png",
-	             "Dimensions/industrial_dual_0_20_ma_bricklet_dimensions_600.png",
+	    tfdocimg("Dimensions/industrial_dual_0_20ma_dimensions_100.png",
+	             "Dimensions/industrial_dual_0_20ma_dimensions_600.png",
 	             "Outline and drilling plan")
 	}}
 	{{ tfdocend() }}
@@ -49,7 +49,7 @@ Features
 --------
 
 * Precision current sensor, measures `currents between 0 and 22.5mA <http://en.wikipedia.org/wiki/Current_loop>`__
-* Can read out any IEC 60381-1 Typ 2 and Typ 3 sensor 
+* Can read out any IEC 60381-1 type 2 and type 3 sensor 
 * High accuracy (0.15%), resolution (up to 0.172µA) and sample rate (up to 240 SPS)
 * It is possible to detect if a sensor is connected/faulty
 
@@ -61,8 +61,8 @@ The Industrial Dual 0-20mA :ref:`Bricklet <product_overview_bricklets>`
 can be used to extend the features of :ref:`Bricks <product_overview_bricks>` 
 by the capability to measure currents between 0 and 22.5mA.
 
-This Bricklet can be used to read out up to two IEC 60381-1 Typ 2 and 
-Typ 3 sensor. 
+This Bricklet can be used to read out up to two IEC 60381-1 type 2 and 
+type 3 sensor. 
 
 The measured current can be read out in nA. 
 With configurable events it is possible to react on changing
@@ -78,14 +78,14 @@ Sensor                            MCP3423
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Measurement Range                 0mA - 22.5mA
-Supported Sensors                 IEC 60381-1 Typ 2 and Typ 3
+Supported Sensors                 IEC 60381-1 type 2 and type 3
 Accuracy                          0.15% with 40ppm/°C
 Resolution                        up to 0.172µA (18bit)
 Sample Rate                       up to 240 samples per second
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
-Weight                            TBD
+Weight                            8g
 ================================  ============================================================
 
 
@@ -101,7 +101,7 @@ Resources
 Connectivity
 ------------
 
-See below for connection diagrams for Typ 2/3 sensor.
+See below for connection diagrams for type 2/3 sensor.
 
 .. Image of 2 possible configurations
 .. http://commons.wikimedia.org/wiki/File:Einheitssignal-type-2.svg
@@ -115,12 +115,13 @@ Test your Industrial Dual 0-20mA Bricklet
 |test_intro|
 
 |test_connect| and attach a current source (see picture below).
+In this example we use a 4-20mA ambient light sensor.
 
-.. image:: /Images/Bricklets/bricklet_ptc_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_ptc_sensor_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet connected to Master Brick
+   :alt: PTC Bricklet connected to ambient light sensor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_sensor_1200.jpg
 
 |test_tab|
 If everything went as expected the Brick Viewer should look as
