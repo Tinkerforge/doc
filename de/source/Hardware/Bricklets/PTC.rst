@@ -65,8 +65,8 @@ Mit dem PTC :ref:`Bricklet <product_overview_bricklets>` können
 :ref:`Bricks <product_overview_bricks>` Temperaturen über Pt100 und Pt1000
 Sensoren messen. 
 
-Die Pt100 und Pt1000 Sensoren können vom Typ 2-Leiter, 3-Leiter und 4-Leiter
-sein.
+Es können Pt100 und Pt1000 Sensoren vom Typ 2-Leiter, 3-Leiter und 4-Leiter
+verwendet werden.
 
 Die gemessene Temperatur kann in `°C
 <http://de.wikipedia.org/wiki/Grad_Celsius>`__ ausgelesen werden. Zusätzlich
@@ -79,10 +79,10 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Sensor                            MAX31865
+RTD-zu-Digital-Wandler            MAX31865
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Untersützte Pt-Sensor Typen       Pt100 und Pt1000 mit 2-Leiter, 3-Leiter oder 4-Leiter
+Unterstütze Pt-Sensor Typen       Pt100 und Pt1000 mit 2-Leiter, 3-Leiter oder 4-Leiter
 Genauigkeit                       Mindestens 0,5% auf voller Skala
 Eingangsschutz                    +-50V
 Temperaturauflösung               0,03125°C (15Bit)
@@ -90,7 +90,7 @@ Konvertierungszeit                21ms
 Fehlerdetektion                   Open RTD element, RTD value out-of-range, short across RTD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessunge (W x D x H)            35 x 30 x 15mm (1.38 x 1.18 x 0.59")
+Abmessung (W x D x H)             35 x 30 x 15mm (1,38 x 1,18 x 0,59")
 Gewicht                           8g
 ================================  ============================================================
 
@@ -106,16 +106,16 @@ Ressourcen
 
 .. _ptc_bricklet_jumper_configuration:
 
-Jumper Konfiguration
+Jumper-Konfiguration
 --------------------
 
 Konfiguriere die Jumper für Pt100/Pt1000 Sensor und für 2/3/4-Leiter Typ
-wie unten dargestellt. Die rot markierten Stiftleisten müssen für
-den korrespondendierenden Sensortyp mit einem Jumper gebrückt werden.
+wie unten dargestellt. Die rot markierten Stifte der Stiftleisten müssen für
+den korrespondierenden Sensortyp mit einem Jumper überbrückt werden.
 
 .. image:: /Images/Bricklets/bricklet_ptc_pt_wire_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet Jumperkonfiguration 
+   :alt: PTC Bricklet Jumper-Konfiguration
    :align: center
    :target: ../../_images/Bricklets/bricklet_ptc_pt_wire_1000.jpg
 
@@ -129,7 +129,7 @@ Widerstandsthermometer vom Typ 2/3/4-Leiter angeschlossen werden können:
 
 .. image:: /Images/Bricklets/bricklet_ptc_connectivity_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet connection diagram
+   :alt: PTC Bricklet Verbindungsdiagramme
    :align: center
    :target: ../../_images/Bricklets/bricklet_ptc_connectivity_1000.jpg
 
@@ -147,7 +147,7 @@ In diesem Beispiel wird ein 3-Leiter Pt100 Sensor verwendet.
 
 .. image:: /Images/Bricklets/bricklet_ptc_sensor_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet mit 3-Leiter Pt100 sensor.
+   :alt: PTC Bricklet mit 3-Leiter Pt100 Sensor
    :align: center
    :target: ../../_images/Bricklets/bricklet_ptc_sensor_1200.jpg
 
