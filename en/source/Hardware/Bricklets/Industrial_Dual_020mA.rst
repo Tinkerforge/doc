@@ -5,7 +5,7 @@
 .. include:: Industrial_Dual_020mA.substitutions
 
 
-.. _industrial_dual_0_20_ma_bricklet:
+.. _industrial_dual_0_20ma_bricklet:
 
 Industrial Dual 0-20mA Bricklet
 ===============================
@@ -111,7 +111,7 @@ See below for connection diagrams for type 2/3 sensor.
 
 Both sensor ports ("Sensor 0" and "Sensor 1") can be used independently.
 
-.. _industrial_dual_0_20_ma_bricklet_test:
+.. _industrial_dual_0_20ma_bricklet_test:
 
 Test your Industrial Dual 0-20mA Bricklet
 -----------------------------------------
@@ -141,7 +141,7 @@ Interact with the sensor to see the current changing in the Brick Viewer.
 
 |test_pi_ref|
 
-.. _industrial_dual_0_20_ma_bricklet_programming_interfaces:
+.. _industrial_dual_0_20ma_bricklet_programming_interfaces:
 
 Programming Interfaces
 ----------------------

@@ -94,7 +94,7 @@ bricklet_descriptions = {
     'en': '4 galvanically isolated digital outputs',
     'de': '4 galvanisch getrennte digitale Ausgänge'
     },
-'industrial_dual_0_20_ma': {
+'industrial_dual_0_20ma': {
     'en': 'Senses two currents between 0 and 20mA (IEC 60381-1)',
     'de': 'Misst zwei Stromquellen zwischen 0 und 20mA (IEC 60381-1)'
     },
@@ -399,7 +399,7 @@ def fill_dicts():
                  ('Humidity',                   'humidity',                   bindings, bricklet_descriptions['humidity'][lang]),
                  ('Industrial Digital In 4',    'industrial_digital_in_4',    bindings, bricklet_descriptions['industrial_digital_in_4'][lang]),
                  ('Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, bricklet_descriptions['industrial_digital_out_4'][lang]),
-                 ('Industrial Dual 0-20mA',     'industrial_dual_0_20_ma',    bindings, bricklet_descriptions['industrial_dual_0_20_ma'][lang]),
+                 ('Industrial Dual 0-20mA',     'industrial_dual_0_20ma',     bindings, bricklet_descriptions['industrial_dual_0_20ma'][lang]),
                  ('Industrial Quad Relay',      'industrial_quad_relay',      bindings, bricklet_descriptions['industrial_quad_relay'][lang]),
                  ('IO-16',                      'io16',                       bindings, bricklet_descriptions['io16'][lang]),
                  ('IO-4',                       'io4',                        bindings, bricklet_descriptions['io4'][lang]),
