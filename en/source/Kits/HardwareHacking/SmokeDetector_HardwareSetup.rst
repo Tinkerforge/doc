@@ -7,7 +7,7 @@ Smoke Detector Hardware Setup
 =============================
 
 Typically a smoke Detector is equipped with one or more LEDs that signal the
-state. The number and behaviour of the LEDs will depend on the used model.
+state. The number and behavior of the LEDs will depend on the used model.
 
 In this example we use an `ELRO FA20RF/2
 <http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
@@ -33,7 +33,7 @@ The ELRO FA20RF/2 has two LEDs next to the "TEST" and "LEARN" buttons.
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_open_600.jpg
 
 If we start a test alarm, we can see that the LED on the right side blinks
-green everytime an alarm is triggered.
+green every time an alarm is triggered.
 
 Now that we have located an LED that represents the state we want to
 read out, we can open the casing of the detector.
