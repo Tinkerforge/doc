@@ -198,9 +198,9 @@ den Bootloader Modus stört wenn eine Master Extension wie WIFI oder RS485 im
 Stack vorhanden ist. In diesem Fall muss die Master Extension aus dem Stack
 entfernt werden, damit der Bootloader Modus richtig funktioniert.
 
-**/dev/ttyACM0 ist nicht zugreifbar für User (on Linux)**:
+**/dev/ttyACM0 ist nicht zugreifbar für User (auf Linux)**:
 
 Es kann sein, dass serielle Schnittstellen auf Linux nicht für User zugreifbar
 konfiguriert sind. Sie tauchen in Brick Viewer auf, beim Versuch zu Flashen
 wird aber eine Fehlermeldung ausgegeben. Dieses Problem kann umgangen werden,
-indem zum Flashen Brick Viewer als root gestartet wird.
+indem zum Flashen Brick Viewer als ``root`` gestartet wird.

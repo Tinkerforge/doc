@@ -138,7 +138,8 @@ Basic Functions
  This is useful if you rely solely on callbacks for events, if you want to
  wait for a specific callback or if the IP Connection was created in a thread.
 
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+ ``wait`` and ``unwait`` act in the same way as "acquire" and "release" of a
+ semaphore.
 
 
 .. py:function:: IPConnection.unwait()
@@ -147,7 +148,8 @@ Basic Functions
 
  Unwaits the thread previously stopped by :py:func:`wait() <IPConnection.wait>`
 
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+ ``wait`` and ``unwait`` act in the same way as "acquire" and "release" of a
+ semaphore.
 
 
 Callback Configuration Functions

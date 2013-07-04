@@ -147,8 +147,8 @@ Grundfunktionen
  wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
  IP Connection in einem Thread gestartet wird.
 
- Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer
- Semaphore.
+ ``wait`` und ``unwait`` agieren auf die gleiche Weise wie "acquire" und
+ "release" einer Semaphore.
 
 
 .. c:function:: void ipcon_unwait(IPConnection *ipcon)
@@ -156,8 +156,8 @@ Grundfunktionen
  Startet einen Thread der vorher mit :c:func:`ipcon_wait`
  angehalten wurde wieder.
 
- Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer
- Semaphore.
+ ``wait`` und ``unwait`` agieren auf die gleiche Weise wie "acquire" und
+ "release" einer Semaphore.
 
 
 Konfigurationsfunktionen für Callbacks

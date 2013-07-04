@@ -30,11 +30,13 @@ help:
 clean:
 	-rm -rf $(BUILDDIR)/*
 
-html:
+generate:
 	python ../generate_tables.py
 	python ../generate_common_substitutions.py
 	python ../generate_weather_station_substitutions.py
 	python ../generate_hardware_hacking_substitutions.py
+
+html: generate
 	mkdir -p $(BUILDDIR)/html/_images
 	cp -r source/Images/* $(BUILDDIR)/html/_images/
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
@@ -111,5 +113,5 @@ doctest:
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
 
-spelling:
+spelling: generate
 	$(SPHINXBUILD) -b spelling -d $(BUILDDIR)/doctrees   source $(BUILDDIR)/spelling

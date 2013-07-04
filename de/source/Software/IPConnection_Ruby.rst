@@ -132,8 +132,8 @@ Grundfunktionen
  wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
  IP Connection in einem Thread gestartet wird.
 
- Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer
- Semaphore.
+ ``wait`` und ``unwait`` agieren auf die gleiche Weise wie "acquire" und
+ "release" einer Semaphore.
 
 
 .. rb:function:: IPConnection#unwait() -> nil
@@ -141,7 +141,8 @@ Grundfunktionen
  Startet einen Thread der vorher mit :rb:func:`#wait <IPConnection#wait>`
  angehalten wurde wieder.
 
- Wait und unwait agieren auf die gleiche Weise wie "acquire" und "release" einer
+ ``wait`` und ``unwait`` agieren auf die gleiche Weise wie "acquire" und
+ "release" einer Semaphore.
 
 
 Konfigurationsfunktionen für Callbacks

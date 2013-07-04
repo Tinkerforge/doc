@@ -31,7 +31,7 @@ Connect a keyboard, a monitor and a power supply to your Raspberry Pi.
 After connecting the power supply the Raspberry Pi should start booting.
 
 At the end of the boot process you should see the a login prompt. Enter
-as username "pi" and as password "raspberry". You should be logged in.
+as username ``pi`` and as password ``raspberry``. You should be logged in.
 
 
 Install Brick Daemon
@@ -62,7 +62,7 @@ you have to compile :ref:`Brick Daemon <brickd>` from source.
 
 First you have to download the source code from the 
 `download page <http://www.tinkerforge.com/en/doc/Downloads.html#tools>`__
-and put it under the home directory.
+and put it under the ``home`` directory.
 
 After this you have to execute the following steps::
 
