@@ -89,7 +89,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Stromverbrauch                    100mA (Durchschnitt), 175mA (Maximum)
-PoE 5V Stapelversorgung            > 1A
+PoE 5V Stapelversorgung           > 1A
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Ethernet Unterstützung            10BaseT/100BaseTX, 1000BaseTX kompatible

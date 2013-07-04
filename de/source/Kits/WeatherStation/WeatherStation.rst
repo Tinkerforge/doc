@@ -97,7 +97,7 @@ die Messwerte auf einem 20x4 Zeichen LCD angezeigt,
 auf einer Webseite oder z.B. auf `Xively (Cosm) <https://xively.com/>`__ 
 hochgeladen werden. Über vier Taster auf dem 
 :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` kann zwischen 
-verschiedenen Modi umgeschalten werden.
+verschiedenen Modi umgeschaltet werden.
 
 Ein Teil dieser Beispielprojekte ist in einer Demo-Anwendung implementiert 
 worden. Diese ist für Windows, Linux und Mac OS X verfügbar und kann benutzt

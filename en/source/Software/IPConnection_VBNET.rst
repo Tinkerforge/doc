@@ -115,14 +115,16 @@ Basic Functions
  This is useful if you rely solely on callbacks for events, if you want to
  wait for a specific callback or if the IP Connection was created in a thread.
 
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+ ``Wait`` and ``Unwait`` act in the same way as "acquire" and "release" of a
+ semaphore.
 
 
 .. vbnet:function:: Sub IPConnection.Unwait()
 
  Unwaits the thread previously stopped by :vbnet:func:`Wait() <IPConnection.Wait>`
 
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+ ``Wait`` and ``Unwait`` act in the same way as "acquire" and "release" of a
+ semaphore.
 
 
 Callbacks

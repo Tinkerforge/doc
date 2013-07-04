@@ -383,7 +383,7 @@ write_to_lcd_steps = {
 
 .. |step2_enumerate| replace::
  Die Konfiguration soll beim ersten Start (|ENUMERATION_TYPE_CONNECTED|)
- durchgeführt werden und auch bei jedem extern ausgelösen Enumerate
+ durchgeführt werden und auch bei jedem extern ausgelösten Enumerate
  (|ENUMERATION_TYPE_AVAILABLE|):
 
 .. |step2_lcd_config| replace::
@@ -396,7 +396,7 @@ write_to_lcd_steps = {
  mitteilen:
 
 .. |step2_other_config2| replace::
- Dies bedeuted, dass die Bricklets die |cb_illuminance|, |cb_humidity|
+ Dies bedeutet, dass die Bricklets die |cb_illuminance|, |cb_humidity|
  und |cb_air_pressure| Callback-Funktionen immer dann aufrufen wenn sich der
  Messwert verändert hat, aber höchsten alle 1000ms.
 

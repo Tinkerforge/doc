@@ -500,7 +500,7 @@ smoke_detector_steps = {
 
 .. |step2_enumerate| replace::
  Die Konfiguration soll beim ersten Start (|ENUMERATION_TYPE_CONNECTED|)
- durchgeführt werden und auch bei jedem extern ausgelösen Enumerate
+ durchgeführt werden und auch bei jedem extern ausgelösten Enumerate
  (|ENUMERATION_TYPE_AVAILABLE|):
 
 .. |step2_config| replace::

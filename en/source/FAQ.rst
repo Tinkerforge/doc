@@ -193,4 +193,4 @@ stack to make the bootloader mode work correctly.
 
 Serial devices might not be user-accessible on Linux. The device is listed in
 Brick Viewer, but an error is reported if you try to flash the Brick. As
-workaround start Brick Viewer as root.
+workaround start Brick Viewer as ``root``.

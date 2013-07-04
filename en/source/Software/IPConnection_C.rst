@@ -144,14 +144,16 @@ Basic Functions
  This is useful if you rely solely on callbacks for events, if you want to
  wait for a specific callback or if the IP Connection was created in a thread.
 
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+ ``wait`` and ``unwait`` act in the same way as "acquire" and "release" of a
+ semaphore.
 
 
 .. c:function:: void ipcon_unwait(IPConnection *ipcon)
 
  Unwaits the thread previously stopped by :c:func:`ipcon_wait`
 
- Wait and unwait act in the same way as "acquire" and "release" of a semaphore.
+ ``wait`` and ``unwait`` act in the same way as "acquire" and "release" of a
+ semaphore.
 
 
 Callback Configuration Functions
