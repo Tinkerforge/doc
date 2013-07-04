@@ -6,12 +6,12 @@
 Hardware Hacking for Beginners
 ==============================
 
-This Hardware Hacking Kit should encourage you to hack device and learn some
+This Hardware Hacking Kit should encourage you to hack device and gain some
 basic electronic knowledge. In the following there are some basic descriptions
 how to use the supplied hardware.
 
-Basically there are two different purposes for the kit. Each is handeled
-by one specific Bricklet:
+Basically there are two different purposes for the kit. Each is handled
+by one specific Bricklet.
 
 Industrial Quad Relay Bricklet
 ------------------------------
@@ -22,10 +22,10 @@ General Description
 The :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
 consists of four
 `Solid State Relays <http://en.wikipedia.org/wiki/Solid_state_relay>`__.
-Relays are electromechanical driven switches, which means that you can short 
-cut a signal controlled by another electrical signal. In case of solid state 
-relays the switches are not electromechanical, there are no mechanical parts 
-in there.
+Relays are electromechanical driven switches, which means that you can
+short-circuit a signal controlled by another electrical signal. In case of
+solid state relays the switches are not electromechanical, there are no
+mechanical parts in there.
 
 If you want to switch something with it, you have to consider the maximum 
 allowed voltage of 30V. So do not try to switch mains voltage directly!
@@ -56,10 +56,9 @@ be turned on or off depending on the switch.
    :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_on_1500.jpg
 
 Of course we can add a second switch in parallel to the first one, such that
-the LED will light if one of the two is switched on. If both are switched on
-the LED will light, too. If one switch is switched on, the other switch can
-be switched either on or off it will not affect the sate of the LED. The LED 
-will light.
+the LED will be on if one of the two switches is closed. If both are switches
+are closed the LED will be on, too. If one switch is close, the other one can
+not affect the state of the LED. The LED will be on.
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_two_switches_350.jpg
    :scale: 100 %
@@ -68,8 +67,8 @@ will light.
    :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_two_switches_1500.jpg
 
 That's the basic idea to make a circuit controllable with an Industrial Quad 
-Relay Bricklet. We simply install the Quad Relay in parallel to an existing
-switch to bypass it.
+Relay Bricklet. We simply install a relay of the Bricklet in parallel to an
+existing switch to bypass it.
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_switch_qr_350.jpg
    :scale: 100 %
@@ -77,11 +76,11 @@ switch to bypass it.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_switch_qr_1500.jpg
 
-Of couse you can create your own circuits and integrate the Industrial Quad 
+Of course you can create your own circuits and integrate the Industrial Quad
 Relay Bricklet as a switch, too.
 
-So how to use the the Industrial Quad Relay Bricklet?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+How to use the the Industrial Quad Relay Bricklet?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let's say you have a device which have buttons to trigger different actions
 and you want to make them externally triggerable. At next you have to take a 
@@ -195,10 +194,10 @@ which can be found directly mounted on the circuit board.
 
 But how to know what kind of device it is?
 There are different possibilities. Experts can tell you which device it may be
-by identifing its optical features. If the device has a marking it is possible
-to even identifing the value (e.g. 1k Ohm resistor or 22 Ohm resistor). If 
+by identifying its optical features. If the device has a marking it is possible
+to even identifying the value (e.g. 1k Ohm resistor or 22 Ohm resistor). If
 there is no marking and it can't be recognized it has to be identified by
-measuring or by identifing its purpose in the circuit.
+measuring or by identifying its purpose in the circuit.
 
 That's the starting point for this kit. If you like to readout the status of a 
 LED follow the traces until you reach a wired or SMD device. It will most likely
@@ -237,7 +236,7 @@ Don't be afraid if you have never soldered something! You only
 need to solder a wires to a solder pad if you want to hack
 hardware with the Starter Kit: Hardware Hacking.
 
-Soldering wires to a pad is all about transfering heat to them.
+Soldering wires to a pad is all about transferring heat to them.
 Basically you can do it in five steps:
 
 * Heat the solder pad with the soldering iron

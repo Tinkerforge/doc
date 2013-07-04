@@ -18,7 +18,7 @@ be powered over the DC Jack Adapter by the Step-Down Power Supply.
 To power the Raspberry Pi we have used an Micro USB cable, removed the jack
 and connected the 5V and GND conductors with the 2 Pole Green Connector 
 supplied with the Step-Down Power Supply (see the following image).
-Which are the 5V and GND conductors is well documented in the internet.
+Which are the 5V and GND conductors is well documented on the Internet.
 
 .. image:: /Images/Kits/weather_station_construction_rpi_micro_usb_cable_350.jpg
    :scale: 100 %

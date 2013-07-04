@@ -35,7 +35,7 @@ Features
 
 * Hack any low voltage electronic appliance and make it controllable by
 
-  * PC, smart phone/tablet, Raspberry Pi or over the internet (Internet of Things).
+  * PC, smart phone/tablet, Raspberry Pi or over the Internet (Internet of Things).
   * Demo applications for Android, Windows Phone and iPhone* are available.
 
 * Read out and control low voltage mainstream devices,
@@ -44,7 +44,7 @@ Features
 
 * Interaction over USB, Wi-Fi or Ethernet possible.
 
-\* Demo for iPhone comming soon
+\* Demo for iPhone coming soon
 
 Description
 -----------
@@ -144,7 +144,7 @@ option are LEDs. If your device has an LED representing a state you
 can easily read the state.
 
 It is important to keep in mind that a high signal level is detected 
-starting at 3V and a low signal level is detected below 2V. Inbetween 
+starting at 3V and a low signal level is detected below 2V. In between
 the behavior is undefined.
 
 To read out a signal, connect it to one of the input ports of the 

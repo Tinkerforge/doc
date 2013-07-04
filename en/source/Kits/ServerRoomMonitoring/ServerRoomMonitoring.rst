@@ -39,7 +39,7 @@ There are different options to mount miscellaneous :ref:`Bricklets <product_over
 
 One or more external controlling devices, such as (Embedded-) PCs, smart phones or
 tablets, can be used to control the kit from outside over the Ethernet 
-connection. Therefore monitoring over the internet is also possible.
+connection. Therefore monitoring over the Internet is also possible.
 
 The kit allows to modify soft- and hardware. The casing consists of
 tinker-friendly PMMA which can be easily modified (e.g. drill new holes with 

@@ -66,7 +66,7 @@ The PTC :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend the features of :ref:`Bricks <product_overview_bricks>` by the
 capability to measure temperature with Pt100 and Pt1000 sensors.
 
-The Pt100 and Pt1000 sensors can be of 2-wire, 3-wire or 4-wire type.
+Pt100 and Pt1000 sensors of 2-wire, 3-wire or 4-wire type can be used.
 
 The measured temperature can be read out in `°C
 <http://en.wikipedia.org/wiki/Degree_Celsius>`__.
@@ -80,7 +80,7 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Sensor                            MAX31865
+RTD-to-Digital Converter          MAX31865
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Supported Pt-Sensor Types         Pt100 and Pt1000 with 2-wire, 3-wire or 4-wire
@@ -110,12 +110,12 @@ Jumper Configuration
 --------------------
 
 Configure the jumper for Pt100/Pt1000 sensor and 2/3/4-wire type as
-shown below. The pin headers that are marked red have to be closed
+shown below. The pins of the pin headers that are marked red have to be closed
 by a jumper for the corresponding sensor type.
 
 .. image:: /Images/Bricklets/bricklet_ptc_pt_wire_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet jumper configurations
+   :alt: PTC Bricklet jumper configuration
    :align: center
    :target: ../../_images/Bricklets/bricklet_ptc_pt_wire_1000.jpg
 
@@ -133,7 +133,7 @@ device.
    :align: center
    :target: ../../_images/Bricklets/bricklet_ptc_connectivity_1000.jpg
 
-Additonally the number of wires has to be set with the API.
+Additionally the number of wires has to be set with the API.
 
 .. _ptc_bricklet_test:
 
@@ -147,7 +147,7 @@ In this example we use a 3-wire Pt100 sensor.
 
 .. image:: /Images/Bricklets/bricklet_ptc_sensor_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet connected to 3-wire Pt100 sensor.
+   :alt: PTC Bricklet connected to 3-wire Pt100 sensor
    :align: center
    :target: ../../_images/Bricklets/bricklet_ptc_sensor_1200.jpg
 

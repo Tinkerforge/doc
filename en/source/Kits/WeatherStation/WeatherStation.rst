@@ -183,7 +183,7 @@ Each project can be selected with its own tab. The first project only displays
 the measured values. The second project is more complex and displays 
 min, max and average values as well as graphs for these measurements.
 The display mode can be changed by pressing the buttons at the LCD 20x4 
-Bricklet or in the application. In some modi the buttons can be pressed 
+Bricklet or in the application. In some modes the buttons can be pressed
 multiple times, such that other measurements will be shows. 
 
 Finally the Xively projects lets you upload your measurements.

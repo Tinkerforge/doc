@@ -24,7 +24,7 @@ project to switch between different weather statistics:
 
 This project is based on the  
 :ref:`Using C# to write to LCD 20x4 Bricklet <starter_kit_weather_station_csharp_to_lcd>`
-project. In the following we will show step-by-step how the above mentionded 
+project. In the following we will show step-by-step how the above mentioned
 functions can be implemented. We will describe the general concept, 
 so the program can be easily understood.
 
