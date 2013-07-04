@@ -14,33 +14,33 @@ Industrial Dual 0-20mA Bricklet
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_industrial_dual_0_20_ma_tilted_350.jpg",
-	               "Bricklets/bricklet_industrial_dual_0_20_ma_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_industrial_dual_0_20ma_tilted_350.jpg",
+	               "Bricklets/bricklet_industrial_dual_0_20ma_tilted_600.jpg",
 	               "Industrial Dual 0-20mA Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20_ma_vertical_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20_ma_vertical_600.jpg",
+	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_vertical_100.jpg",
+	             "Bricklets/bricklet_industrial_dual_0_20ma_vertical_600.jpg",
 	             "Industrial Dual 0-20mA Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20_ma_horizontal_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20_ma_horizontal_600.jpg",
+	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_horizontal_100.jpg",
+	             "Bricklets/bricklet_industrial_dual_0_20ma_horizontal_600.jpg",
 	             "Industrial Dual 0-20mA Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20_ma_master_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20_ma_master_600.jpg",
-	             "Industrial Dual 0-20mA Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_sensor_100.jpg",
+	             "Bricklets/bricklet_industrial_dual_0_20ma_sensor_600.jpg",
+	             "Industrial Dual 0-20mA Bricklet mit Umgebungslichtsensor")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20_ma_brickv_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20_ma_brickv.jpg",
+	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_brickv_100.jpg",
+	             "Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg",
 	             "Industrial Dual 0-20mA Bricklet im Brick Viewer")
 	}}
 	{{
-	    tfdocimg("Dimensions/industrial_dual_0_20_ma_bricklet_dimensions_100.png",
-	             "Dimensions/industrial_dual_0_20_ma_bricklet_dimensions_600.png",
+	    tfdocimg("Dimensions/industrial_dual_0_20ma_dimensions_100.png",
+	             "Dimensions/industrial_dual_0_20ma_dimensions_600.png",
 	             "Umriss und Bohrplan")
 	}}
 	{{ tfdocend() }}
@@ -103,10 +103,16 @@ Anschlussmöglichkeit
 Die folgenden Verbindungsdiagramme zeigen wie Sensoren
 vom Typ 2/3 angeschlossen werden können:
 
-.. http://commons.wikimedia.org/wiki/File:Einheitssignal-type-2.svg
-.. http://commons.wikimedia.org/wiki/File:Einheitssignal-type-3.svg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_connectivity_600.jpg
+   :scale: 100 %
+   :alt: Verbindungsdiagramm für Typ 2/3 Sensoren
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_connectivity_1200.jpg
 
 .. _industrial_dual_0_20_ma_bricklet_test:
+
+Beide Sensorports ("Sensor 0" und "Sensor 1") können unabhängig
+voneinander genutzt werden.
 
 Erster Test
 -----------
@@ -114,22 +120,23 @@ Erster Test
 |test_intro|
 
 |test_connect| sowie eine Stromquelle (siehe folgendes Bild).
+In diesem Beispiel nutzen wir einen 4-20mA Umgebungslichtsensor.
 
-.. image:: /Images/Bricklets/bricklet_ptc_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_sensor_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet connected to Master Brick
+   :alt: Industrial Dual 0-20mA Bricklet mit Umgebungslichtsensor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_sensor_1200.jpg
 
 |test_tab|
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
 aussehen.
 
-.. image:: /Images/Bricklets/bricklet_ptc_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg
    :scale: 100 %
-   :alt: PTC Bricklet in Brick Viewer
+   :alt: Industrial Dual 0-20mA Bricklet im Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg
 
 Bei Interaktion mit dem Sensor sollte sich der Stromwert entsprechend
 im Brick Viewer ändern.

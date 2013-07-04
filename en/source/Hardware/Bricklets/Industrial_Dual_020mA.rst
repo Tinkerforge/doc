@@ -103,9 +103,13 @@ Connectivity
 
 See below for connection diagrams for type 2/3 sensor.
 
-.. Image of 2 possible configurations
-.. http://commons.wikimedia.org/wiki/File:Einheitssignal-type-2.svg
-.. http://commons.wikimedia.org/wiki/File:Einheitssignal-type-3.svg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_connectivity_600.jpg
+   :scale: 100 %
+   :alt: Connection diagram for type 2/3 sensor
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_connectivity_1200.jpg
+
+Both sensor ports ("Sensor 0" and "Sensor 1") can be used independently.
 
 .. _industrial_dual_0_20_ma_bricklet_test:
 
@@ -117,21 +121,21 @@ Test your Industrial Dual 0-20mA Bricklet
 |test_connect| and attach a current source (see picture below).
 In this example we use a 4-20mA ambient light sensor.
 
-.. image:: /Images/Bricklets/bricklet_ptc_sensor_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_sensor_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet connected to ambient light sensor
+   :alt: Industrial Dual 0-20mA Bricklet connected to ambient light sensor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_sensor_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_sensor_1200.jpg
 
 |test_tab|
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
-.. image:: /Images/Bricklets/bricklet_ptc_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg
    :scale: 100 %
-   :alt: PTC Bricklet in Brick Viewer
+   :alt: Industrial Dual 0-20mA Bricklet in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg
 
 Interact with the sensor to see the current changing in the Brick Viewer.
 
