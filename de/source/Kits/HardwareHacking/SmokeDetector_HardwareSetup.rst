@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Smoke Detector Hardware Setup
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Hardware-Aufbau: Rauchmelder
 
 .. _starter_kit_hardware_hacking_smoke_detector_hardware_setup:
 
-Smoke Detector Hardware Setup
-=============================
+Hardware-Aufbau: Rauchmelder
+============================
 
 Typically a smoke Detector is equipped with one or more LEDs that signal the
 state. The number and behavior of the LEDs will depend on the used model.

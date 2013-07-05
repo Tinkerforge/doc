@@ -1,13 +1,13 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Switch using Ruby
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit Ruby fernsteuern
 
 .. |ref_set_monoflop| replace:: :rb:func:`#set_monoflop <BrickletIndustrialQuadRelay#set_monoflop>` 
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 
 .. _starter_kit_hardware_hacking_remote_switch_ruby:
 
-Control Remote Switch using Ruby
-================================
+Funksteckdosen mit Ruby fernsteuern
+===================================
 
 .. include:: RubyCommon.substitutions
    :start-after: >>>intro

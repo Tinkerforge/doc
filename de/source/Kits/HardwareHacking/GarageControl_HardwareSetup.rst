@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Garage Door Openers Hardware Setup
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Hardware-Aufbau: Garagentor
 
 .. _starter_kit_hardware_hacking_garage_control_hardware_setup:
 
-Control Garage Door Openers Hardware Setup
-==========================================
+Hardware-Aufbau: Garagentor
+===========================
 
 The hardware of garage door openers can be really complex. Besides the radio 
 transmitter there are for example complex electronics for ciphering so we don't 

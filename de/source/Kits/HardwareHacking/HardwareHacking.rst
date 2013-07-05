@@ -219,8 +219,8 @@ Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar 
 
 .. _starter_kit_hardware_hacking_remote_switch:
 
-Steckdose fernsteuern
-^^^^^^^^^^^^^^^^^^^^^
+Funksteckdosen fernsteuern
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Einfache Funksteckdosen können als ersten Schritt in die Hausautomatisation
 genutzt werden. In diesem Beispiel werden wir eine Fernbedienung für 

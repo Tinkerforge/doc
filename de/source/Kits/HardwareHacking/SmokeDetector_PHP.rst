@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Read out Smoke Detectors using PHP
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Rauchmelder mit PHP auslesen
 
 .. |ref_CALLBACK_ENUMERATE| replace:: :php:member:`CALLBACK_ENUMERATE <IPConnection::CALLBACK_ENUMERATE>`
 .. |ref_CALLBACK_CONNECTED| replace:: :php:member:`CALLBACK_CONNECTED <IPConnection::CALLBACK_CONNECTED>`
@@ -16,8 +16,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_php:
 
-Read out Smoke Detectors using PHP
-==================================
+Rauchmelder mit PHP auslesen
+============================
 
 .. include:: PHPCommon.substitutions
    :start-after: >>>intro

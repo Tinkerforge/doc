@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Garage Door Openers using Android
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Garagentor mit Android fernsteuern
 
 .. _starter_kit_hardware_hacking_garage_control_android:
 
-Control Garage Door Openers using Android
-=========================================
+Garagentor mit Android fernsteuern
+==================================
 
 For this project we are assuming, that you have the `Android SDK
 <http://developer.android.com/sdk/index.html>`__ set up and that you have a
@@ -26,8 +26,8 @@ Goals
 In this project we will create a simple Android app that resembles the
 functionality of the actual remote control.
 
-The program will reuse some common parts of the :ref:`Read out Smoke Detectors
-using Java <starter_kit_hardware_hacking_smoke_detector_java>` project.
+The program will reuse some common parts of the
+:ref:`starter_kit_hardware_hacking_smoke_detector_java` project.
 
 
 Step 1: Creating the GUI
@@ -80,8 +80,8 @@ variables of the ``MainActivity`` class:
 Step 2: Discover Bricks and Bricklets
 -------------------------------------
 
-This step is similar to step 1 in the :ref:`Read out Smoke Detectors using Java
-<starter_kit_hardware_hacking_smoke_detector_java_step1>` project. We apply
+This step is similar to step 1 in the
+:ref:`starter_kit_hardware_hacking_smoke_detector_java_step1` project. We apply
 some changes to make it work in a GUI program and instead of using the
 :java:func:`EnumerateListener <IPConnection.EnumerateListener>` to discover
 the Industrial Quad Relay Bricklet its UID has to be specified. This approach
@@ -333,8 +333,8 @@ What we need is error handling!
 Step 5: Error Handling and Reporting
 ------------------------------------
 
-We will use similar principals as in step 4 of the :ref:`Read out Smoke
-Detectors using Java <starter_kit_hardware_hacking_smoke_detector_java_step4>`
+We will use similar principals as in step 4 of the
+:ref:`starter_kit_hardware_hacking_smoke_detector_java_step4`
 project, but with some changes to make it work in a GUI program.
 
 We can't just use ``System.out.println()`` for error reporting because there

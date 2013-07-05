@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Garage Door Openers using Windows Phone
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Garagentor mit Windows Phone fernsteuern
 
 .. _starter_kit_hardware_hacking_garage_control_windows_phone:
 
-Control Garage Door Openers using Windows Phone
-===============================================
+Garagentor mit Windows Phone fernsteuern
+========================================
 
 For this project we are assuming, that you have the `Windows Phone SDK
 <https://dev.windowsphone.com/en-us/downloadsdk>`__ set up and that you have a
@@ -26,8 +26,8 @@ Goals
 In this project we will create a simple Windows Phone app that resembles the
 functionality of the actual remote control.
 
-The program will reuse some common parts of the :ref:`Read out Smoke Detectors
-using C# <starter_kit_hardware_hacking_smoke_detector_csharp>` project.
+The program will reuse some common parts of the
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` project.
 
 
 Step 1: Creating the GUI
@@ -95,8 +95,8 @@ unknown:
 Step 2: Discover Bricks and Bricklets
 -------------------------------------
 
-This step is similar to step 1 in the :ref:`Read out Smoke Detectors using C#
-<starter_kit_hardware_hacking_smoke_detector_csharp_step1>` project. We apply
+This step is similar to step 1 in the
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` project. We apply
 some changes to make it work in a GUI program and instead of using the
 :csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>` to discover
 the Industrial Quad Relay Bricklet its UID has to be specified. This approach
@@ -348,8 +348,8 @@ What we need is error handling!
 Step 5: Error Handling and Reporting
 ------------------------------------
 
-We will use similar principals as in step 4 of the :ref:`Read out Smoke
-Detectors using C# <starter_kit_hardware_hacking_smoke_detector_csharp_step4>`
+We will use similar principals as in step 4 of the
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4`
 project, but with some changes to make it work in a GUI program.
 
 We can't just use ``System.Console.WriteLine()`` for error reporting because

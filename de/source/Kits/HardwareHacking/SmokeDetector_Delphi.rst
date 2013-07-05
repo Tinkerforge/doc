@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Read out Smoke Detectors using Delphi
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Rauchmelder mit Delphi auslesen
 
 .. |ref_CALLBACK_ENUMERATE| replace:: :delphi:func:`OnEnumerate <TIPConnection.OnEnumerate>`
 .. |ref_CALLBACK_CONNECTED| replace:: :delphi:func:`OnConnected <TIPConnection.OnConnected>`
@@ -16,8 +16,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_delphi:
 
-Read out Smoke Detectors using Delphi
-=====================================
+Rauchmelder mit Delphi auslesen
+===============================
 
 .. include:: DelphiCommon.substitutions
    :start-after: >>>intro
