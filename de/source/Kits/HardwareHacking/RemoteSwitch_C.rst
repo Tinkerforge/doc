@@ -1,13 +1,13 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Switch using C
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit C fernsteuern
 
 .. |ref_set_monoflop| replace:: :c:func:`industrial_quad_relay_set_monoflop <industrial_quad_relay_set_monoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 
 .. _starter_kit_hardware_hacking_remote_switch_c:
 
-Control Remote Switch using C
-=============================
+Funksteckdosen mit C fernsteuern
+================================
 
 .. include:: CCommon.substitutions
    :start-after: >>>intro

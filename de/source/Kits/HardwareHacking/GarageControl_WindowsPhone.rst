@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Garage Door Openers using Windows Phone
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Garagentor mit Windows Phone fernsteuern
 
 .. _starter_kit_hardware_hacking_garage_control_windows_phone:
 
-Control Garage Door Openers using Windows Phone
-===============================================
+Garagentor mit Windows Phone fernsteuern
+========================================
 
 For this project we are assuming, that you have the `Windows Phone SDK
 <https://dev.windowsphone.com/en-us/downloadsdk>`__ set up and that you have a

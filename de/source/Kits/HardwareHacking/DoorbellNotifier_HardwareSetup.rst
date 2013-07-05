@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Doorbell Notifier Hardware Setup
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Hardware-Aufbau: Türklingel
 
 .. _starter_kit_hardware_hacking_doorbell_notifier_hardware_setup:
 
-Doorbell Notifier Hardware Setup
-================================
+Hardware-Aufbau: Türklingel
+===========================
 
 General Idea
 ------------

@@ -1,13 +1,13 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Switch using Delphi
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit Delphi fernsteuern
 
 .. |ref_set_monoflop| replace:: :delphi:func:`SetMonoflop <TBrickletIndustrialQuadRelay.SetMonoflop>`
 .. |bitmask_02| replace:: ``(1 shl 0) or (1 shl 2)``
 
 .. _starter_kit_hardware_hacking_remote_switch_delphi:
 
-Control Remote Switch using Delphi
-==================================
+Funksteckdosen mit Delphi fernsteuern
+=====================================
 
 .. include:: DelphiCommon.substitutions
    :start-after: >>>intro

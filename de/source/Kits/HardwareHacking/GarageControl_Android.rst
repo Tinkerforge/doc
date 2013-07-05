@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Garage Door Openers using Android
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Garagentor mit Android fernsteuern
 
 .. _starter_kit_hardware_hacking_garage_control_android:
 
-Control Garage Door Openers using Android
-=========================================
+Garagentor mit Android fernsteuern
+==================================
 
 For this project we are assuming, that you have the `Android SDK
 <http://developer.android.com/sdk/index.html>`__ set up and that you have a

@@ -218,8 +218,8 @@ Example implementations with step-by-step instructions are available for:
 
 .. _starter_kit_hardware_hacking_remote_switch:
 
-Steckdose fernsteuern
-^^^^^^^^^^^^^^^^^^^^^
+Funksteckdosen fernsteuern
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Simple remote switches can be used as a first step towards home automation.
 We are going to hack the remote control of such a switch and connect it to a PC

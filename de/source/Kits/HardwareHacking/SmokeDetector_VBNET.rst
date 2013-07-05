@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Read out Smoke Detectors using Visual Basic .NET
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Rauchmelder mit Visual Basic .NET auslesen
 
 .. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection.EnumerateCallback>`
 .. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection.Connected>`
@@ -16,8 +16,8 @@
 
 .. _starter_kit_hardware_hacking_smoke_detector_vbnet:
 
-Read out Smoke Detectors using Visual Basic .NET
-================================================
+Rauchmelder mit Visual Basic .NET auslesen
+==========================================
 
 .. include:: VBNETCommon.substitutions
    :start-after: >>>intro

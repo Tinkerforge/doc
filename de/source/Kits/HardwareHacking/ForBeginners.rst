@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Hardware Hacking for Beginners 
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Hardware Hacking für Anfänger 
 
 .. _starter_kit_hardware_hacking_for_beginners:
 
-Hardware Hacking for Beginners
-==============================
+Hardware Hacking für Anfänger
+=============================
 
 This Hardware Hacking Kit should encourage you to hack devices and gain some
 basic electronic knowledge. In the following there are some basic descriptions
@@ -236,7 +236,7 @@ and `solder <http://en.wikipedia.org/wiki/Solder>`__.
 
 Don't be afraid if you have never soldered something! You only
 need to solder a wires to a solder pad if you want to hack
-hardware with the Starter Kit: Hardware Hacking.
+hardware with the Starterkit: Hardware Hacking.
 
 Soldering wires to a pad is all about transferring heat to them.
 Basically you can do it in five steps:
