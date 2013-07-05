@@ -21,8 +21,8 @@ Goals
 In this project we will create a robust GUI program that resembles the
 functionality of the actual remote control.
 
-The program will reuse some common parts of the :ref:`Read out Smoke Detectors
-using C# <starter_kit_hardware_hacking_smoke_detector_csharp>` project.
+The program will reuse some common parts of the
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` project.
 
 
 Step 1: Create the GUI
@@ -113,8 +113,8 @@ Now the GUI is finished.
 Step 2: Discover Bricks and Bricklets
 -------------------------------------
 
-This step is basically the same as step 1 in the :ref:`Read out Smoke Detectors
-using C# <starter_kit_hardware_hacking_smoke_detector_csharp_step1>` project,
+This step is basically the same as step 1 in the
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` project,
 but with some changes to make it work in a GUI program.
 
 We don't want to call the :csharp:func:`Connect() <IPConnection::Connect>`
@@ -246,8 +246,8 @@ What we need is error handling!
 Step 4: Error handling and Logging
 ----------------------------------
 
-We will use the same principals as in step 4 of the :ref:`Read out Smoke
-Detectors using C# <starter_kit_hardware_hacking_smoke_detector_csharp_step4>`
+We will use the same principals as in step 4 of the
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4`
 project, but with some changes to make it work in a GUI program.
 
 We can't just use ``System.Console.WriteLine()`` for logging because this is a
