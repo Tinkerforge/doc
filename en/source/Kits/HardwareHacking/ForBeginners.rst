@@ -6,7 +6,7 @@
 Hardware Hacking for Beginners
 ==============================
 
-This Hardware Hacking Kit should encourage you to hack device and gain some
+This Hardware Hacking Kit should encourage you to hack devices and gain some
 basic electronic knowledge. In the following there are some basic descriptions
 how to use the supplied hardware.
 
@@ -34,13 +34,13 @@ a product is given by the voltage of the supply. For example if you have a
 battery powered device it is very likely that the maximum voltage in all 
 circuits of this device will not exceed the voltage of the battery. If you 
 have a wall adapter powered device, the maximum voltage will most likely
-not exceed the output voltage of the wall adapter. Of course there are exception.
-If you are not sure, measure it.
+not exceed the output voltage of the wall adapter. Of course there are 
+exceptions. If you are not sure, measure it.
 
 In one sentence: Typical applications for this module can be found in
 switching other circuits on or off. To explain these applications
 let us start with a simple example. The following schematic
-depicts a LED with the typically necessary series resistor which can
+depicts a LED (with the typically necessary series resistor) which can
 be turned on or off depending on the switch.
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_off_350.jpg
@@ -57,7 +57,7 @@ be turned on or off depending on the switch.
 
 Of course we can add a second switch in parallel to the first one, such that
 the LED will be on if one of the two switches is closed. If both are switches
-are closed the LED will be on, too. If one switch is close, the other one can
+are closed the LED will be on, too. If one switch is closed, the other one can
 not affect the state of the LED. The LED will be on.
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_two_switches_350.jpg
@@ -76,8 +76,8 @@ existing switch to bypass it.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_switch_qr_1500.jpg
 
-Of course you can create your own circuits and integrate the Industrial Quad
-Relay Bricklet as a switch, too.
+Besides the hacking of devices, you can of course create your own circuits and 
+integrate the Industrial Quad Relay Bricklet as a switch.
 
 How to use the the Industrial Quad Relay Bricklet?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -108,7 +108,9 @@ At the end it will look at the following:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_remote_soldered_1500.jpg
 
-Both wires have to connected to one port of the Quad Relay Bricklet.
+Both wires have to connected to one port of the Quad Relay Bricklet. Now
+you are able to trigger the action with the Quad Relay Bricklet which
+was originally only triggered by the button.
 
 Industrial Digital In 4 Bricklet
 --------------------------------
@@ -118,18 +120,18 @@ General Description
 
 The :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` is
 equipped with four `Optocouplers <http://en.wikipedia.org/wiki/Optocoupler>`__.
-Technically speaking a optocoupler consists of a LED which triggers a phototransistor
+Technically speaking an optocoupler consists of a LED which triggers a phototransistor
 with light. This way there is no direct electrical connection between the
 triggering LED and the switching phototransistor, it is galvanically isolated.
 
 So less technical speaking the Industrial Digital In 4 Bricklet is equipped
-with four LEDs. If one of these LEDs is on, the respective input will be
+with four internal LEDs. If one of these LEDs is on, the respective input will be
 read out as logical high. If it is not on the input will be read out as
 logical low.
 
-If you want to use Industrial Digital In 4 Bricklet to read out a state of
+If you want to use the Industrial Digital In 4 Bricklet to read out a state of
 a device you have to connect it to one of the inputs. This has to be done such
-that the LED will be on if the state to read out is electrically high and will
+that the internal LED will be on if the state to read out is electrically high and will
 be off if the state is electrically low. Take a look at the electrical
 description of the Bricklet:
 Voltages below 2V are interpreted as "low" (LED is off). Voltage above
@@ -142,7 +144,7 @@ Using the Industrial Digital In 4 Bricklet
 
 In this example we want to read out the state of a very simple schematic:
 A LED is switched by some kind of circuitry, in this case a
-simple switch.
+simple manual switch.
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_off_350.jpg
    :scale: 100 %
@@ -158,7 +160,7 @@ high enough to trigger a high level on the input port of the Digital In.
 To solve this we connect the Industrial Digital In 4 Bricklet to the LED and the
 series resistor. The polarity or, to put it in another way, the way you have 
 connected the wires to the Digital In does not matter. If the Digital In does
-not show any reaction if the LED is triggered simply swap the wires on
+not show any reaction if the LED is triggered, simply swap the wires on
 the input. The wiring will look as following:
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_switch_digital_in_350.jpg
