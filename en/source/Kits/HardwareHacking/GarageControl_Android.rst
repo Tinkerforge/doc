@@ -330,7 +330,7 @@ happens if there is no Industrial Quad Relay Bricklet with the given UID?
 What we need is error handling!
 
 
-Step 5: Error handling and Reporting
+Step 5: Error Handling and Reporting
 ------------------------------------
 
 We will use similar principals as in step 4 of the :ref:`Read out Smoke
@@ -402,8 +402,8 @@ the three possible outcomes of a connection attempt:
 * NO_DEVICE: The connection got established but there was no Industrial Quad
   Relay Bricklet with the given UID.
 
-The :java:func:`getIdentity <BrickletIndustrialQuadRelay::getIdentity>` method
-is used to check the device for the given UID really is an Industrial Quad
+The :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>` method
+is used to check that the device for the given UID really is an Industrial Quad
 Relay Bricklet. If this is not the case then the connection gets closed:
 
 .. code-block:: java
@@ -517,7 +517,7 @@ Step 6: Persistent Configuration and State
 ------------------------------------------
 
 The app doesn't store its configuration yet. Android provides the
-``SharedPreferences`` class to take care of this. In ``onCreate`` the
+``SharedPreferences`` class to take care of this. In ``onCreate()`` the
 configuration is restored:
 
 .. code-block:: java
@@ -531,7 +531,7 @@ configuration is restored:
         uid.setText(settings.getString("uid", uid.getText().toString()));
     }
 
-In ``onStop`` the configuration is then stored again:
+In ``onStop()`` the configuration is then stored again:
 
 .. code-block:: java
 
@@ -549,7 +549,7 @@ In ``onStop`` the configuration is then stored again:
 
 If the orientation is changed Android basically restarts the app for the
 new orientation. This makes our app loss the connection. Therefore, the state
-of the connection is stored when ``onSaveInstanceState`` is called:
+of the connection is stored when ``onSaveInstanceState()`` is called:
 
 .. code-block:: java
 
@@ -560,7 +560,7 @@ of the connection is stored when ``onSaveInstanceState`` is called:
                                          ipcon.getConnectionState() == IPConnection.CONNECTION_STATE_CONNECTED);
     }
 
-And is restored when ``onCreate`` is called:
+And is restored when ``onCreate()`` is called:
 
 .. code-block:: java
 

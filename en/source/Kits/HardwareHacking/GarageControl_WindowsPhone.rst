@@ -116,7 +116,6 @@ so it will run in the background and the GUI stays responsive:
         private BrickletIndustrialQuadRelay relay = null;
         private BackgroundWorker connectWorker = null;
 
-
         public MainPage()
         {
             // [...]
@@ -156,19 +155,14 @@ can create an ``IPConnection`` and ``BrickletIndustrialQuadRelay`` object and
 call the ``Connect()`` method.
 
 Finally, the ``BackgroundWorker`` should be started when the connect button is
-clicked. To do this the ``Connect_Click`` method is bound to the click event of
+clicked. To do this the ``Connect_Click()`` method is bound to the click event of
 the connect button:
 
 .. code-block:: csharp
 
-    public partial class MainPage : PhoneApplicationPage
+    private void Connect_Click(object sender, RoutedEventArgs e)
     {
-        // [...]
-
-        private void Connect_Click(object sender, RoutedEventArgs e)
-        {
-            Connect();
-        }
+        Connect();
     }
 
 Host, port and UID can now be configured and a click on the connect button
@@ -182,9 +176,9 @@ The connection is established and the Industrial Quad Relay Bricklet is found
 but there is no logic yet to trigger the switch on the remote control if the
 trigger button is clicked.
 
-To do this the ``Trigger_Click`` method is bound to the click event of the
+To do this the ``Trigger_Click()`` method is bound to the click event of the
 trigger button. It starts another ``BackgroundWorker`` that in turn calls the
-``SetMonoflop`` method of the Industrial Quad Relay Bricklet to trigger the
+``SetMonoflop()`` method of the Industrial Quad Relay Bricklet to trigger the
 switch on the remote control:
 
 .. code-block:: csharp
@@ -192,6 +186,8 @@ switch on the remote control:
     public partial class MainPage : PhoneApplicationPage
     {
         // [...]
+
+        private BackgroundWorker triggerWorker = null;
 
         public MainPage()
         {
@@ -240,11 +236,7 @@ allow to disconnect it again:
         {
             // [...]
 
-            connectWorker = new BackgroundWorker();
-            connectWorker.DoWork += ConnectWorker_DoWork;
             connectWorker.RunWorkerCompleted += ConnectWorker_RunWorkerCompleted;
-
-            // [...]
         }
 
         private void ConnectWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -253,49 +245,55 @@ allow to disconnect it again:
         }
     }
 
-TODO: adapt the rest to windows phone app
+The ``ConnectWorker_RunWorkerCompleted()`` method is called after
+``ConnectWorker_DoWork()``. It changes the text on the button to "Disconnect".
+The ``Connect_Click()`` method now decides dynamically what to do. If there is
+no connection it calls ``Connect()``, if there is a connection is runs the
+disconnect background worker:
 
-The ``ConnectWorker_RunWorkerCompleted()`` method is called after ``ConnectWorker_DoWork()``. It changes
-the text on the button and sets a new ``OnClickListener`` that will closes the
-connection if the button is clicked:
+.. code-block:: csharp
 
-.. code-block:: java
-
-    class DisconnectClickListener implements OnClickListener {
-        public void onClick(View v) {
-            new DisconnectAsyncTask().execute();
+    private void Connect_Click(object sender, RoutedEventArgs e)
+    {
+        if (ipcon == null || ipcon.GetConnectionState() == IPConnection.CONNECTION_STATE_DISCONNECTED)
+        {
+            Connect();
+        }
+        else
+        {
+            disconnectWorker.RunWorkerAsync();
         }
     }
 
-We don't want to call the :java:func:`disconnect() <IPConnection::disconnect>`
-method directly, because it might take a moment and block the GUI during that
-period of time. Instead ``disconnect()`` will be called from an ``AsyncTask``,
-so it will run in the background and the GUI stays responsive:
+The disconnect background worker calls the :csharp:func:`Disconnect()
+<IPConnection::Disconnect>` method in the background, because it might take a
+moment and block the GUI during that period of time:
 
-.. code-block:: java
+.. code-block:: csharp
 
-    class DisconnectAsyncTask extends AsyncTask<Void, Void, Void> {
-        protected Void doInBackground(Void... params) {
-            ipcon.disconnect();
-            return null;
+    public partial class MainPage : PhoneApplicationPage
+    {
+        // [...]
+
+        private BackgroundWorker disconnectWorker = null;
+
+        public MainPage()
+        {
+            // [...]
+
+            disconnectWorker = new BackgroundWorker();
+            disconnectWorker.DoWork += DisconnectWorker_DoWork;
+            disconnectWorker.RunWorkerCompleted += DisconnectWorker_RunWorkerCompleted;
         }
 
-        @Override
-        protected void onPostExecute(Void result) {
-            connect.setText("Connect");
-            connect.setOnClickListener(new ConnectClickListener());
+        private void DisconnectWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            ipcon.Disconnect();
         }
-    }
 
-Once the connection is closed a new ``OnClickListener`` is set that will
-execute ``ConnectAsyncTask`` to establish the connection if the connect button
-is clicked:
-
-.. code-block:: java
-
-    class ConnectClickListener implements OnClickListener {
-        public void onClick(View v) {
-            new ConnectAsyncTask().execute();
+        private void DisconnectWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            connect.Content = "Connect";
         }
     }
 
@@ -303,58 +301,42 @@ Finally, the user should not be able to change the content of the text fields
 during the time the connection gets established and the trigger button should
 not be clickable if there is no connection.
 
-The ``ConnectAsyncTask`` and the ``DisconnectAsyncTask`` are extended to
+The ``connectWorker`` and the ``disconnectWorker`` are extended to
 disable and enable the GUI elements according to the current connection state:
 
-.. code-block:: java
+.. code-block:: csharp
 
-    class ConnectAsyncTask extends AsyncTask<Void, Void, Void> {
+    private void ConnectWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+    {
         // [...]
 
-        @Override
-        protected void onPreExecute() {
-            // [...]
-
-            host.setEnabled(false);
-            port.setEnabled(false);
-            uid.setEnabled(false);
-            connect.setEnabled(false);
-            trigger.setEnabled(false);
-        }
-
-        // [...]
-
-        @Override
-        protected void onPostExecute(Void result) {
-            // [...]
-
-            connect.setEnabled(true);
-            trigger.setEnabled(true);
-        }
+        connect.IsEnabled = true;
+        trigger.IsEnabled = true;
     }
 
-.. code-block:: java
+.. code-block:: csharp
 
-    class DisconnectAsyncTask extends AsyncTask<Void, Void, Void> {
+    private void DisconnectWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+    {
         // [...]
 
-        @Override
-        protected void onPreExecute() {
-            connect.setEnabled(false);
-            trigger.setEnabled(false);
-        }
+        host.IsEnabled = true;
+        port.IsEnabled = true;
+        uid.IsEnabled = true;
+        connect.IsEnabled = true;
+    }
+
+.. code-block:: csharp
+
+    private void Connect()
+    {
+        host.IsEnabled = false;
+        port.IsEnabled = false;
+        uid.IsEnabled = false;
+        connect.IsEnabled = false;
+        trigger.IsEnabled = false;
 
         // [...]
-
-        @Override
-        protected void onPostExecute(Void result) {
-            host.setEnabled(true);
-            port.setEnabled(true);
-            uid.setEnabled(true);
-            connect.setEnabled(true);
-
-            // [...]
-        }
     }
 
 But the program is not yet robust enough. What happens if can't connect? What
@@ -363,67 +345,52 @@ happens if there is no Industrial Quad Relay Bricklet with the given UID?
 What we need is error handling!
 
 
-Step 5: Error handling and Reporting
+Step 5: Error Handling and Reporting
 ------------------------------------
 
 We will use similar principals as in step 4 of the :ref:`Read out Smoke
-Detectors using Java <starter_kit_hardware_hacking_smoke_detector_java_step4>`
+Detectors using C# <starter_kit_hardware_hacking_smoke_detector_csharp_step4>`
 project, but with some changes to make it work in a GUI program.
 
-We can't just use ``System.out.println()`` for error reporting because there
-is no console window in an app. Instead dialog boxes are used.
+We can't just use ``System.Console.WriteLine()`` for error reporting because
+there is no console window in an app. Instead message boxes are used.
 
-The ``ConnectAsyncTask`` has to validate the user input before using it. An
-``AlertDialog`` is used to report possible problems:
+The ``Connect()`` method has to validate the user input before using it. An
+``MessageBox`` is used to report possible problems. Also the progress bar is
+made visible to indicate that a connection attempt is in progress:
 
-.. code-block:: java
+.. code-block:: csharp
 
-    class ConnectAsyncTask extends AsyncTask<Void, Void, ConnectResult> {
-        // [...]
-        private ProgressDialog progressDialog;
-
-        @Override
-        protected void onPreExecute() {
-            currentHost = host.getText().toString();
-            currentPort = port.getText().toString();
-            currentUID = uid.getText().toString();
-
-            if (currentHost.length() == 0 || currentPort.length() == 0 || currentUID.length() == 0) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setMessage("Host/Port/UID cannot be empty");
-                builder.create().show();
-                cancel(true);
-                return;
-            }
+    private void Connect()
+    {
+        if (host.Text.Length == 0 || port.Text.Length == 0 || uid.Text.Length == 0)
+        {
+            MessageBox.Show("Host/Port/UID cannot be empty", "Error", MessageBoxButton.OK);
+            return;
         }
 
-The ``ConnectAsyncTask`` also gains a ``ProgressDialog`` to show the connection
-process:
+        progress.Visibility = Visibility.Visible;
 
-.. code-block:: java
-
-    class ConnectAsyncTask extends AsyncTask<Void, Void, ConnectResult> {
         // [...]
-        private ProgressDialog progressDialog;
+    }
 
-        @Override
-        protected void onPreExecute() {
-            // [...]
+    private void ConnectWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+    {
+        progress.Visibility = Visibility.Collapsed;
 
-            progressDialog = new ProgressDialog(context);
-            progressDialog.setMessage("Connecting to " + currentHost + ":" + currentPort);
-            progressDialog.setCancelable(false);
-            progressDialog.show();
-        }
+        // [...]
+    }
 
-Then the ``doInBackground()`` method needs to be able to report its result. But
-it is not allowed to interact with the GUI, but it can return a value that is
-then passed to the ``onPostExecute()`` method. We use this enum that represents
-the three possible outcomes of a connection attempt:
+Then the ``ConnectWorker_DoWork()`` method needs to be able to report its result.
+But it is not allowed to interact with the GUI, but it can assign a value to the
+``Result`` member of the ``DoWorkEventArgs`` parameter that is then passed to
+the ``ConnectWorker_RunWorkerCompleted()`` method. We use this enum that
+represents the three possible outcomes of a connection attempt:
 
-.. code-block:: java
+.. code-block:: csharp
 
-    enum ConnectResult {
+    enum ConnectResult
+    {
         SUCCESS,
         NO_CONNECTION,
         NO_DEVICE
@@ -435,109 +402,119 @@ the three possible outcomes of a connection attempt:
 * NO_DEVICE: The connection got established but there was no Industrial Quad
   Relay Bricklet with the given UID.
 
-The :java:func:`getIdentity <BrickletIndustrialQuadRelay::getIdentity>` method
-is used to check the device for the given UID really is an Industrial Quad
+The :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>` method
+is used to check that the device for the given UID really is an Industrial Quad
 Relay Bricklet. If this is not the case then the connection gets closed:
 
-.. code-block:: java
+.. code-block:: csharp
 
-    protected ConnectResult doInBackground(Void... params) {
+    private void ConnectWorker_DoWork(object sender, DoWorkEventArgs e)
+    {
+        string[] argument = e.Argument as string[];
+
         ipcon = new IPConnection();
-        relay = new BrickletIndustrialQuadRelay(currentUID, ipcon);
+        relay = new BrickletIndustrialQuadRelay(argument[2], ipcon);
 
-        try {
-            ipcon.connect(currentHost, currentPort);
-        } catch(java.net.UnknownHostException e) {
-            return ConnectResult.NO_CONNECTION;
-        } catch(java.io.IOException e) {
-            return ConnectResult.NO_CONNECTION;
-        } catch(com.tinkerforge.AlreadyConnectedException e) {
-            return ConnectResult.NO_CONNECTION;
+        try
+        {
+            ipcon.Connect(argument[0], Convert.ToInt32(argument[1]));
+        }
+        catch (System.IO.IOException)
+        {
+            e.Result = ConnectResult.NO_CONNECTION;
+            return;
         }
 
-        try {
-            if (relay.getIdentity().deviceIdentifier != BrickletIndustrialQuadRelay.DEVICE_IDENTIFIER) {
-                ipcon.disconnect();
-                return ConnectResult.NO_DEVICE;
+        try
+        {
+            string uid;
+            string connectedUid;
+            char position;
+            byte[] hardwareVersion;
+            byte[] firmwareVersion;
+            int deviceIdentifier;
+
+            relay.GetIdentity(out uid, out connectedUid, out position,
+                              out hardwareVersion, out firmwareVersion, out deviceIdentifier);
+
+            if (deviceIdentifier != BrickletIndustrialQuadRelay.DEVICE_IDENTIFIER)
+            {
+                ipcon.Disconnect();
+                e.Result = ConnectResult.NO_DEVICE;
+                return;
             }
-        } catch (com.tinkerforge.TinkerforgeException e1) {
-            try {
-                ipcon.disconnect();
-            } catch (com.tinkerforge.NotConnectedException e2) {
+        }
+        catch (TinkerforgeException)
+        {
+            try
+            {
+                ipcon.Disconnect();
+            }
+            catch (NotConnectedException)
+            {
             }
 
-            return ConnectResult.NO_DEVICE;
+            e.Result = ConnectResult.NO_DEVICE;
+            return;
         }
 
-        return ConnectResult.SUCCESS;
+        e.Result = ConnectResult.SUCCESS;
     }
 
-Now the ``onPostExecute()`` method has to handle this three outcomes. First the
-progress dialog is dismissed:
+Now the ``ConnectWorker_RunWorkerCompleted()`` method has to handle this three
+outcomes. First the progress dialog is dismissed:
 
-.. code-block:: java
+.. code-block:: csharp
 
-    @Override
-    protected void onPostExecute(ConnectResult result) {
-        progressDialog.dismiss();
+    private void ConnectWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+    {
+        ConnectResult result = (ConnectResult)e.Result;
+
+        progress.Visibility = Visibility.Collapsed;
 
 In case the connection attempt was successful the original logic stays the same:
 
-.. code-block:: java
+.. code-block:: csharp
 
-        if (result == ConnectResult.SUCCESS) {
-            connect.setText("Disconnect");
-            connect.setOnClickListener(new DisconnectClickListener());
-            connect.setEnabled(true);
-            trigger.setEnabled(true);
+        if (result == ConnectResult.SUCCESS)
+        {
+            connect.Content = "Disconnect";
+            connect.IsEnabled = true;
+            trigger.IsEnabled = true;
         }
 
-In the error case we use an ``AlertDialog`` and set the error message according
+In the error case we use a ``MessageBox`` and set the error message according
 to the connection result:
 
-.. code-block:: java
+.. code-block:: csharp
 
-        else {
-            AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        else
+        {
+            string message;
+            MessageBoxResult retry;
 
             if (result == ConnectResult.NO_CONNECTION) {
-                builder.setMessage("Could not connect to " + currentHost + ":" + currentPort);
+                message = "Could not connect to " + host.Text + ":" + port.Text + ". Retry?";
             } else { // ConnectResult.NO_DEVICE
-                builder.setMessage("Could not find Industrial Quad Relay Bricklet [" + currentUID + "]");
+                message = "Could not find Industrial Quad Relay Bricklet [" + uid.Text + "]. Retry?";
             }
 
-            builder.setCancelable(false);
+            retry = MessageBox.Show(message, "Error", MessageBoxButton.OKCancel);
 
-Then retry and cancel buttons are added with the respective logic to either
-retry to connect or to cancel the connection attempt:
+Retry to connect or cancel the connection attempt, according to the result of
+the message box:
 
-.. code-block:: java
+.. code-block:: csharp
 
-            builder.setPositiveButton("Retry", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                    new ConnectAsyncTask().execute();
-                }
-            });
-            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    host.setEnabled(true);
-                    port.setEnabled(true);
-                    uid.setEnabled(true);
-                    connect.setText("Connect");
-                    connect.setOnClickListener(new ConnectClickListener());
-                    connect.setEnabled(true);
-                    dialog.dismiss();
-                }
-            });
-
-Finally, the dialog gets created and shown:
-
-.. code-block:: java
-
-            builder.create().show();
+            if (retry == MessageBoxResult.OK) {
+                Connect();
+            } else {
+                host.IsEnabled = true;
+                port.IsEnabled = true;
+                uid.IsEnabled = true;
+                connect.Content = "Connect";
+                connect.IsEnabled = true;
+            }
         }
     }
 
@@ -549,60 +526,61 @@ Bricklet.
 Step 6: Persistent Configuration and State
 ------------------------------------------
 
-The app doesn't store its configuration yet. Android provides the
-``SharedPreferences`` class to take care of this. In ``onCreate`` the
-configuration is restored:
+The app doesn't store its configuration yet. Windows Phone provides the
+``IsolatedStorageSettings`` class to take care of this. In ``OnNavigatedTo()``
+the configuration is restored and the connection is reestablished if it was
+active before:
 
-.. code-block:: java
+.. code-block:: csharp
 
-    protected void onCreate(Bundle savedInstanceState) {
-        // [...]
+    protected override void OnNavigatedTo(NavigationEventArgs e)
+    {
+        bool connected = false;
 
-        SharedPreferences settings = getPreferences(0);
-        host.setText(settings.getString("host", host.getText().toString()));
-        port.setText(settings.getString("port", port.getText().toString()));
-        uid.setText(settings.getString("uid", uid.getText().toString()));
-    }
-
-In ``onStop`` the configuration is then stored again:
-
-.. code-block:: java
-
-    protected void onStop() {
-        super.onStop();
-
-        SharedPreferences settings = getPreferences(0);
-        SharedPreferences.Editor editor = settings.edit();
-
-        editor.putString("host", host.getText().toString());
-        editor.putString("port", port.getText().toString());
-        editor.putString("uid", uid.getText().toString());
-        editor.commit();
-    }
-
-If the orientation is changed Android basically restarts the app for the
-new orientation. This makes our app loss the connection. Therefore, the state
-of the connection is stored when ``onSaveInstanceState`` is called:
-
-.. code-block:: java
-
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-        outState.putBoolean("connected", ipcon != null &&
-                                         ipcon.getConnectionState() == IPConnection.CONNECTION_STATE_CONNECTED);
-    }
-
-And is restored when ``onCreate`` is called:
-
-.. code-block:: java
-
-    protected void onCreate(Bundle savedInstanceState) {
-        // [...]
-
-        if (savedInstanceState != null && savedInstanceState.getBoolean("connected", false)) {
-            new ConnectAsyncTask().execute();
+        try
+        {
+            host.Text = settings["host"] as string;
+            port.Text = settings["port"] as string;
+            uid.Text = settings["uid"] as string;
+            connected = settings["connected"].Equals(true);
         }
+        catch (KeyNotFoundException)
+        {
+            settings["host"] = host.Text;
+            settings["port"] = port.Text;
+            settings["uid"] = uid.Text;
+            settings["connected"] = connected;
+            settings.Save();
+        }
+
+        if (connected &&
+            (ipcon == null ||
+             ipcon.GetConnectionState() == IPConnection.CONNECTION_STATE_DISCONNECTED))
+        {
+            Connect();
+        }
+    }
+
+In ``OnNavigatedFrom()`` the configuration is then stored again:
+
+.. code-block:: csharp
+
+    protected override void OnNavigatedFrom(NavigationEventArgs e)
+    {
+        settings["host"] = host.Text;
+        settings["port"] = port.Text;
+        settings["uid"] = uid.Text;
+
+        if (ipcon != null && ipcon.GetConnectionState() == IPConnection.CONNECTION_STATE_CONNECTED)
+        {
+            settings["connected"] = true;
+        }
+        else
+        {
+            settings["connected"] = false;
+        }
+
+        settings.Save();
     }
 
 Now the configuration and state is stored persistent across a restart of the app.
@@ -615,8 +593,8 @@ That's it! We are done with the app for our hacked garage door opener remote
 control.
 
 Now all of the above put together (`download
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/garage_control_smart_phone/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java>`__):
+<https://raw.github.com/Tinkerforge/hardware-hacking/master/garage_control_smart_phone/windows_phone/GarageControl/MainPage.xaml.cs>`__):
 
-.. literalinclude:: ../../../../../hardware-hacking/garage_control_smart_phone/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java
- :language: java
+.. literalinclude:: ../../../../../hardware-hacking/garage_control_smart_phone/windows_phone/GarageControl/MainPage.xaml.cs
+ :language: csharp
  :tab-width: 4

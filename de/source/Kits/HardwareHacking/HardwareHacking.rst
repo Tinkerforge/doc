@@ -1,13 +1,13 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / Starter Kit: Hardware Hacking
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / Starterkit: Hardware Hacking
 :shoplink: ../../../shop/kits/starter-kit-hardware-hacking.html
 
 .. include:: HardwareHacking.substitutions
 
 .. _starter_kit_hardware_hacking:
 
-Starter Kit: Hardware Hacking
-=============================
+Starterkit: Hardware Hacking
+============================
 
 .. raw:: html
 
@@ -49,7 +49,7 @@ Features
 Beschreibung
 ------------
 
-Das *Starter Kit: Hardware Hacking* ermöglicht es Elektrogeräte mit niedriger
+Das *Starterkit: Hardware Hacking* ermöglicht es Elektrogeräte mit niedriger
 Spannung zu hacken und so mit Tinkerforge Modulen zu verbinden. Jeder
 (Embedded-)PC und jedes Smartphone/Tablet kann genutzt werden um mit den
 gehackten Geräten zu interagieren. Interaktion ist über USB sowie über
