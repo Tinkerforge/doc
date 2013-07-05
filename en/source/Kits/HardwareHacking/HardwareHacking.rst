@@ -226,8 +226,8 @@ remote control (two of the switches and the remote control is already
 included in the Starter Kit: Hardware Hacking). There are a vast number
 of remote switches available. 
 Most of the commercially available remote controls use the HX2262 IC
-with the same hardware design, so this guide can be used for most 
-remote switches.
+with the same hardware design as of the here used ELRO remote control, 
+so this guide can be used for most remote switches.
 
 The full hardware description can be found 
 :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
@@ -312,9 +312,6 @@ Example apps for :ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`
 and :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` are available.
-The Android app is an improved version of this `project
-<http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__
-in the wiki.
 
 A Demo app for iPhone is comming soon.
 
@@ -330,7 +327,7 @@ Is someone at the Door? - Doorbell Notifier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this project one port of the Industrial Digital In 4 Bricklet is connected
-to a 12V Doorbell. The Python script prints "Ring Ring Ring!" if someone 
+to a typical 12V driven Doorbell. A Python script prints "Ring Ring Ring!" if someone 
 actuates the doorbell. You can extend this project such that it will 
 send an SMS or let your phone ring if someone is at your door. Be creative! 
 

@@ -163,9 +163,9 @@ wahrscheinlich die Spannung umgepolt werden (VIN und GND tauschen).
 Spannungen bis zu 30V schalten
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-With the Industrial Quad Relay Bricklet you can switch (short circuit) signals. 
-Many devices have switches or push buttons that can be hacked by 
-the Bricklet. Remote controls are good examples for it.
+Mit dem Industrial Quad Relay Bricklet können Signal geschalten (kurz geschlossen)
+werden. Viele Geräte verfügen über Taster oder Schalter die mit diesem Bricklet
+gehackt werden können. Ein gutes Beispiel hierfür sind Fernbedienungen.
 
 .. image:: /Images/Kits/hardware_hacking_industrial_quad_switch_350.jpg
    :scale: 100 %
@@ -177,18 +177,18 @@ the Bricklet. Remote controls are good examples for it.
 Beispiele
 ---------
 
-There are many low voltage appliances that can be hacked. Here are some examples:
+Es gibt viele Geräte die gehackt werden können. Hier sind ein paar Beispiele:
 
 .. _starter_kit_hardware_hacking_smoke_detector:
 
 Rauchmelder auslesen
 ^^^^^^^^^^^^^^^^^^^^
 
-Wireless interconnectable smoke detectors allow to read out the alarm signal of
-a whole smoke detector network at a single point. We are going to hack such a
-smoke detector and utilized this feature to trigger actions if smoke is
-detected. For example, notify someone with an email or a text message about the
-alarm.
+Über drahtlose Rauchmelder ist es möglich den Alarm eines ganzen 
+Rauchmelder-Netzwerks an einem Punkt auszulesen. Wir werden uns dies zu nutze 
+machen und eigene Aktionen ausführen wenn Rauch erkannt wird. Hierzu hacken
+wir einen drahtlosen Rauchmelder. Als Beispiel könnten wir im Alarmfall eine 
+Email oder Textnachricht verschicken.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
    :scale: 100 %
@@ -196,15 +196,16 @@ alarm.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
 
-For this project we use the wireless smoke detector set `ELRO FA20RF/2
-<http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
-and connect an :ref:`Analog In Bricklet <analog_in_bricklet>` to one of its
-LEDs that light up during an alarm.
+Für dieses Projekt nutzen wir das drahtlose Rauchmelderset `ELRO FA20RF/2
+<http://www.elro.eu/de/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
+und schließen ein :ref:`Analog In Bricklet <analog_in_bricklet>` an eine der 
+LED die im Alarmfall aufleuchtet.
 
-The full hardware description can be found 
-:ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`.
+Eine ausführliche Hardwarebeschreibung kann
+:ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` gefunden 
+werden.
 
-Example implementations with step-by-step instructions are available for:
+Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
 
 |smoke_detector_examples|.
 
@@ -221,9 +222,9 @@ Example implementations with step-by-step instructions are available for:
 Steckdose fernsteuern
 ^^^^^^^^^^^^^^^^^^^^^
 
-Simple remote switches can be used as a first step towards home automation.
-We are going to hack the remote control of such a switch and connect it to a PC
-to create software controlled remote switches.
+Einfache Funksteckdosen können als ersten Schritt in die Hausautomatisation
+genutzt werden. In diesem Beispiel werden wir eine Fernbedienung für 
+Funksteckdosen hacken, so dass wir die Steckdosen über den PC schalten können.
 
 .. image:: /Images/Kits/hardware_hacking_remote_finished_350.jpg
    :scale: 100 %
@@ -231,20 +232,22 @@ to create software controlled remote switches.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_finished_1200.jpg
 
-For this project we use the remote switch set `ELRO AB440WD/2
-<http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
-and connect an :ref:`Industrial Quad Relay Bricklet
-<industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
-<http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
-remote control. There are a vast number of control remote switches available. 
-Most of the commercially available remote controls use the HX2262 IC
-with the same hardware design, so this guide can be used for most 
-remote switches.
+Hierzu nutzen wir das Funksteckdosenset `ELRO AB440WD/2
+<http://www.elro.eu/de/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
+und schließen ein :ref:`Industrial Quad Relay Bricklet
+<industrial_quad_relay_bricklet>` an die Taster der `ELRO AB440RA
+<http://www.elro.eu/de/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
+Fernbedienung. Es gibt eine große Anzahl an Funksteckdosen und 
+Fernbedienungen. Die meisten kommerziell erhältlichen nutzen einen HX2262 IC
+mit identischem Hardwaredesign wie das der hier vorgestellten Fernbedienung.
+So kann diese Beschreibung auch für die meisten anderen Funksteckdosen-
+Fernbedienungen genutzt werden.
 
-The full hardware description can be found 
-:ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
+Die vollständige Hardwarebeschreibung kann 
+:ref:`hier <starter_kit_hardware_hacking_remote_switch_hardware_setup>`
+gefunden werden.
 
-An example implementation is available
+Eine Beispielimplementierung ist verfügbar
 in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
 
 .. toctree::
@@ -259,11 +262,13 @@ in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
 Garagentor fernsteuern
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Garage door openers are quite useful. Typically they come with a remote control
-and we are going to hack one. After the hack your smart phone can control the garage
-door and you don't need to carry around the original remote control
-anymore. This project is based on this
-`project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__.
+Garagentoröffner sind wirklich nützlich. Typischerweise besitzen diese eine 
+Fernbedienung die wir in diesem Beispiel hacken werden. Anschließend werden
+wir das Garagentor über eine kleine App mit dem Smartphone steuern können,
+so dass die Fernbedienung nicht mehr mitgenommen werden muss.
+
+Dieses Projekt basiert auf diesem
+`Wiki-Projekt <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_finished_350.jpg
    :scale: 100 %
@@ -271,18 +276,17 @@ anymore. This project is based on this
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_1200.jpg
 
-A small hardware description can be found 
-:ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
+Eine kurze  Hardwarebeschreibung kann 
+:ref:`hier <starter_kit_hardware_hacking_garage_control_hardware_setup>`
+gefunden werden.
 
-Example apps for :ref:`Android (Java)
+Beispiel Apps für
+:ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`
-and :ref:`Windows Phone (C#)
-<starter_kit_hardware_hacking_garage_control_windows_phone>` are available.
-The Android app is an improved version of this `project
-<http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__
-in the wiki.
+und :ref:`Windows Phone (C#)
+<starter_kit_hardware_hacking_garage_control_windows_phone>` sind verfügbar.
 
-A Demo app for iPhone is comming soon.
+Eine Beispielanwendung für das iPhone folgt bald.
 
 .. toctree::
    :hidden:
@@ -295,10 +299,11 @@ A Demo app for iPhone is comming soon.
 Benachrichtigung durch die Türklingel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this project the Analog In Bricklet is connected
-to a 12V Doorbell. The python script prints "Ring Ring Ring!" if someone 
-actuates the doorbell. You can extend this project such that it will 
-send an SMS or let your phone ring if someone is at your door. Be creative! 
+In diesem Projekt verbinden wir das Analog In Bricklet mit einer
+typischen, 12V betriebenen, Türklingel. Sobald jemand klingelt, wird unser
+Python-Script "Ring Ring Ring!" ausgeben. Dieses Projekt kann natürlich
+erweitert werden, so dass SMS versendet oder dein Telefon klingelt wenn jemand
+and der Tür steht. Sei kreativ!
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_350.jpg
    :scale: 100 %
@@ -306,11 +311,11 @@ send an SMS or let your phone ring if someone is at your door. Be creative!
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell.jpg
 
-Description of the hardware setup and more pictures can be found
-:ref:`here <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup>`.
+Eine Beschreibung des Hardwareaufbaus und mehr Fotos gibt es 
+:ref:`hier <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup>`.
 
-An example application is available
-in :ref:`Python <starter_kit_hardware_hacking_doorbell_notifier_python>`.
+Die Beispielanwendung in Python gibt es
+:ref:`hier <starter_kit_hardware_hacking_doorbell_notifier_python>`.
 
 .. toctree::
    :hidden:
