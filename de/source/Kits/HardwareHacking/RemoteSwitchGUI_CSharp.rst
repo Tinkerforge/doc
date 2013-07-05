@@ -15,7 +15,7 @@ an :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
 described :ref:`here <starter_kit_hardware_hacking_remote_switch>`.
 
 
-Goals
+Ziele
 -----
 
 In this project we will create a robust GUI program that resembles the
@@ -25,8 +25,8 @@ The program will reuse some common parts of the
 :ref:`starter_kit_hardware_hacking_smoke_detector_csharp` project.
 
 
-Step 1: Create the GUI
-----------------------
+Schritt 1: Die GUI erstellen
+----------------------------
 
 The program will have a simple `Windows Forms
 <http://en.wikipedia.org/wiki/Windows_Forms>`__ GUI that contains four buttons
@@ -110,8 +110,8 @@ that we want to be able to trigger:
 Now the GUI is finished.
 
 
-Step 2: Discover Bricks and Bricklets
--------------------------------------
+Schritt 2: Bricks und Bricklets dynamisch erkennen
+--------------------------------------------------
 
 This step is basically the same as step 1 in the
 :ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` project,
@@ -165,8 +165,8 @@ Industrial Quad Relay Bricklet does not need any configuration for this project:
     }
 
 
-Step 3: Triggering Switches
----------------------------
+Schritt 3: Taster auslösen
+--------------------------
 
 The connection is established and an Industrial Quad Relay Bricklet is found
 but there is no logic yet to trigger a switch if a button is clicked.
@@ -243,8 +243,8 @@ startup? What happens if the enumerate after an auto reconnect doesn't work?
 What we need is error handling!
 
 
-Step 4: Error handling and Logging
-----------------------------------
+Schritt 4: Fehlerbehandlung und Logging
+---------------------------------------
 
 We will use the same principals as in step 4 of the
 :ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4`
@@ -313,8 +313,8 @@ GUI is shown for the first time. The ``Load`` event can be used for this:
     }
 
 
-Step 5: Everything put together
--------------------------------
+Schritt 5: Alles zusammen
+-------------------------
 
 That's it! We are done with our hacked remote switch and all of the goals
 should be met.

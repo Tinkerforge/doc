@@ -20,7 +20,7 @@ an :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
 described :ref:`here <starter_kit_hardware_hacking_garage_control>`.
 
 
-Goals
+Ziele
 -----
 
 In this project we will create a simple Android app that resembles the
@@ -30,13 +30,11 @@ The program will reuse some common parts of the
 :ref:`starter_kit_hardware_hacking_smoke_detector_java` project.
 
 
-Step 1: Creating the GUI
-------------------------
+Schritt 1: Die GUI erstellen
+----------------------------
 
 After creating a new "Android Application Project" named "Garage Control" in
 Eclipse we start with creating the GUI:
-
-.. FIXME: update image
 
 .. image:: /Images/Kits/hardware_hacking_garage_control_android_gui_350.jpg
    :scale: 100 %
@@ -77,8 +75,8 @@ variables of the ``MainActivity`` class:
     }
 
 
-Step 2: Discover Bricks and Bricklets
--------------------------------------
+Schritt 2: Bricks und Bricklets erkennen
+----------------------------------------
 
 This step is similar to step 1 in the
 :ref:`starter_kit_hardware_hacking_smoke_detector_java_step1` project. We apply
@@ -160,8 +158,8 @@ Host, port and UID can now be configured and a click on the connect button
 establishes the connection.
 
 
-Step 3: Triggering Switches
----------------------------
+Schritt 3: Taster auslösen
+--------------------------
 
 The connection is established and the Industrial Quad Relay Bricklet is found
 but there is no logic yet to trigger the switch on the remote control if the
@@ -203,8 +201,8 @@ We don't have a disconnect button yet and the trigger button can be clicked
 before the connection is established. We need some more GUI logic!
 
 
-Step 4: More GUI logic
-----------------------
+Schritt 4: Weitere GUI-Logik
+----------------------------
 
 There is no button to close the connection again after it got established. The
 connect button could do this. When the connection is established it should
@@ -330,8 +328,8 @@ happens if there is no Industrial Quad Relay Bricklet with the given UID?
 What we need is error handling!
 
 
-Step 5: Error Handling and Reporting
-------------------------------------
+Schritt 5: Fehlerbehandlung und Reporting
+-----------------------------------------
 
 We will use similar principals as in step 4 of the
 :ref:`starter_kit_hardware_hacking_smoke_detector_java_step4`
@@ -513,8 +511,8 @@ on the remote control of your garage door opener using an Industrial Quad Relay
 Bricklet.
 
 
-Step 6: Persistent Configuration and State
-------------------------------------------
+Schritt 6: Konfiguration und Zustand speichern
+----------------------------------------------
 
 The app doesn't store its configuration yet. Android provides the
 ``SharedPreferences`` class to take care of this. In ``onCreate()`` the
@@ -575,8 +573,8 @@ And is restored when ``onCreate()`` is called:
 Now the configuration and state is stored persistent across a restart of the app.
 
 
-Step 7: Everything put together
--------------------------------
+Schritt 7: Alles zusammen
+-------------------------
 
 That's it! We are done with the app for our hacked garage door opener remote
 control.

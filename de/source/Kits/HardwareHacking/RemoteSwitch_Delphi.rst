@@ -17,15 +17,15 @@ Funksteckdosen mit Delphi fernsteuern
    :start-after: >>>intro
    :end-before: <<<intro
 
-Goals
+Ziele
 -----
 
 .. include:: RemoteSwitch_Delphi.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 
-Source Code
------------
+Quelltext
+---------
 
 `Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/delphi/RemoteSwitch.pas>`__
 

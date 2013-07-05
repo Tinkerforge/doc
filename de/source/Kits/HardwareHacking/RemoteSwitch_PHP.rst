@@ -17,15 +17,15 @@ Funksteckdosen mit PHP fernsteuern
    :start-after: >>>intro
    :end-before: <<<intro
 
-Goals
+Ziele
 -----
 
 .. include:: RemoteSwitch_PHP.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 
-Source Code
------------
+Quelltext
+---------
 
 `Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/php/RemoteSwitch.php>`__
 

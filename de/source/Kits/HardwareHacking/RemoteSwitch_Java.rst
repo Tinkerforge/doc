@@ -17,15 +17,15 @@ Funksteckdosen mit Java fernsteuern
    :start-after: >>>intro
    :end-before: <<<intro
 
-Goals
+Ziele
 -----
 
 .. include:: RemoteSwitch_Java.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 
-Source Code
------------
+Quelltext
+---------
 
 `Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/java/RemoteSwitch.java>`__
 

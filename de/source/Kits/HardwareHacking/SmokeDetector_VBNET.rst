@@ -28,7 +28,7 @@ Rauchmelder mit Visual Basic .NET auslesen
    :end-before: <<<intro
 
 
-Goals
+Ziele
 -----
 
 .. include:: SmokeDetector_VBNET.substitutions
@@ -36,8 +36,8 @@ Goals
    :end-before: <<<goals
 
 
-Step 1: Discover Bricks and Bricklets
--------------------------------------
+Schritt 1: Bricks und Bricklets dynamisch erkennen
+--------------------------------------------------
 
 |step1_start_off|
 
@@ -102,8 +102,8 @@ Step 1: Discover Bricks and Bricklets
     End Module
 
 
-Step 2: Initialize Bricklet on Enumeration
-------------------------------------------
+Schritt 2: Bricklets beim Enumerate initialisieren
+--------------------------------------------------
 
 |step2_intro|
 
@@ -149,8 +149,8 @@ Step 2: Initialize Bricklet on Enumeration
     End Sub
 
 
-Step 3: Handle the alarm signal
--------------------------------
+Schritt 3: Auf Alarmsignal reagieren
+------------------------------------
 
 |step3_intro|
 
@@ -172,8 +172,8 @@ Step 3: Handle the alarm signal
 |step3_robust2|
 
 
-Step 4: Error handling and Logging
-----------------------------------
+Schritt 4: Fehlerbehandlung und Logging
+---------------------------------------
 
 |step4_intro1|
 
@@ -227,8 +227,8 @@ Step 4: Error handling and Logging
 |step4_logging2|
 
 
-Step 5: Everything put together
--------------------------------
+Schritt 5: Alles zusammen
+-------------------------
 
 |step5_intro|
 

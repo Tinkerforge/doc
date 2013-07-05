@@ -14,12 +14,14 @@ Goals
 -----
 
 In this project we modify the smoke detector Python script to notify us
-if the doorbell is engaged. Of course
-this script can be extended such that it will send an Email or SMS to you.
+if the doorbell is engaged. Of course this script can be extended such that
+it will send an Email or SMS to you.
 
 
-Python Script
--------------
+Source Code
+-----------
+
+`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/doorbell_notifier/python/doorbell_notifier.py>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/doorbell_notifier/python/doorbell_notifier.py
  :language: python
