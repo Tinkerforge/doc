@@ -249,7 +249,7 @@ soldering a wire to a pad.
 Soldering a wire to a pad can be done basically in five steps:
 
 * Heat the solder pad with the soldering iron
-* Add solder to the pad while it is hot, the solder of the pad should get liquid.
+* Add solder to the pad if it is hot, the solder of the pad should get liquid
 * Attach the wire to the pad
 * Remove the soldering iron (still hold the wire to the pad)
 * Wait until solder pad is cooled down
