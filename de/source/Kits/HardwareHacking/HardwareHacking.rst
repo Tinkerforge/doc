@@ -64,7 +64,7 @@ schaltbaren Solid-State-Relais. Für Ausleseanwendungen wird ein
 :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`
 mitgeliefert. Dieses kann vier digitale Signale mit Spannungen bis zu
 36V galvanisch getrennt auslesen.
-	
+
 Beispielanwendungen sind:
 
 * Rauchmelderalarm zum PC weiterleiten.
@@ -86,21 +86,31 @@ Tinkerforge.
 Technische Spezifikation
 ------------------------
 
-================================  ============================================================
+================================  ======================================
 Eigenschaft                       Wert
-================================  ============================================================
-Spannungsmessung                  0V - 45V in 1mV-Schritten, 12Bit Auflösung
-Max. Schaltstrom                  1,2A pro Relais
-Max. Schaltspannung               30V pro Relais
-================================  ============================================================
+================================  ======================================
+Digitale Eingänge                 4
+Spannungsbereich Low Pegel        0-2V
+Spannungsbereich High Pegel       3-36V
+--------------------------------  --------------------------------------
+--------------------------------  --------------------------------------
+Digitale Ausgänge                 4
+Maximaler Schaltstrom             1,2A pro Relais
+Maximale Schaltspannung           30V pro Relais
+================================  ======================================
 
 Resourcen
 ---------
 
-* Beispielquelltexte *Rauchmelder* (Download: |smoke_detector_examples_download|)
-* Beispielquelltext *Steckdosen fernsteuern* (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch/csharp>`__)
-* Beispielquelltexte *Garagentor fernsteuern* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/windows_phone>`__)
-* Beispielquelltext *Benachrichtigung durch die Türklingel* (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
+* Beispielquelltexte für :ref:`Funksteckdosen fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: |remote_switch_examples_download|)
+* Beispielquelltext für :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
+* Beispielquelltexte für :ref:`Rauchmelder auslesen <starter_kit_hardware_hacking_smoke_detector>` (Download: |smoke_detector_examples_download|)
+* Beispielquelltexte für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
+* Beispielquelltext für :ref:`Benachrichtigung durch Türklingel <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
+* Demo-Anwendung :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
+* Demo-Apps :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iPhone*) TODO
+
+\*: Demo für iPhone folgt bald.
 
 
 Benötigte Werkzeuge
@@ -138,34 +148,34 @@ werden. Dazu klickt man am besten durch die verschiedenen Tabs und
 Wie es funktioniert
 -------------------
 
-Es gibt zwei grundlegende Möglichkeiten dieses Kit zu nutzen:
-(Eine detailierte Erklärung befindet sich im
-:ref:`Hardware Hacking für Anfänger Tutorial <starter_kit_hardware_hacking_for_beginners>`
-)
+Es gibt zwei grundlegende Möglichkeiten dieses Kit zu nutzen: Spannungen messen
+und Spannungen schalten. Eine detailierte Erklärung der Grundlagen befindet
+sich im :ref:`Hardware Hacking für Anfänger
+<starter_kit_hardware_hacking_for_beginners>` Tutorial.
 
 
 Spannungen bis zu 36V messen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Der aktuelle Status von Elektrogeräten wird oft irgendwo in Form
-einer elektrischen Spanung repräsentiert. Wenn es sich um ein digitales Signal
-handelt und dessen Spannung unter 36V liegt, dann kann das Industrial Digital
-In 4 Bricklet damit verbunden werden und der Status ausgelesen werden.
-Ein gutes Beispiel dafür sind LEDs. Eine LED die den Zustand eines
-Systems anzeigt, kann problemlos ausgelesen werden.
+Der aktuelle Zustand von Elektrogeräten wird oft irgendwo in Form
+einer elektrischen Spannung repräsentiert. Wenn es sich um ein digitales Signal
+handelt und dessen Spannung unter 36V liegt, dann kann ein :ref:`Industrial
+Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` damit verbunden und
+der Zustand ausgelesen werden. Ein gutes Beispiel dafür sind LEDs. Eine LED die
+den Zustand eines Systems anzeigt, kann problemlos ausgelesen werden.
 
 Hierbei ist es wichtig zu beachten, dass die minimale Spannung, die als High
-detektiert wird bei 3V liegt. Die maximale Spannung die als Low detektiert wird
-liegt bei 2V. Zwischen diesen Spannungen ist das Verhalten undefiniert.
+erkannt wird, bei 3V liegt. Die maximale Spannung die als Low erkannt wird liegt
+bei 2V. Zwischen diesen Spannungen ist das Verhalten undefiniert.
 
-Um ein Signal auszulesen muss dieses an eins der Eingänge des Industrial 
+Um ein Signal auszulesen muss dieses an einen der Eingänge des Industrial
 Digital In 4 angeschlossen werden. Falls keine Reaktion des Eingangs im
 Brick Viewer zu erkennen ist, kann es sein das die Belegung gedreht werden muss 
 (verpolt). Die Belegung kann per Trial and Error getestet werden. Das
 Industrial Digital In 4 ist verpolungsgeschützt.
 
 Die nachfolgende Abbildung zeigt exemplarisch die notwendige Schaltung
-zum auslesen einer LED. Hierbei wurde der Vorwiderstand mit einbezogen
+zum Auslesen einer LED. Hierbei wurde der Vorwiderstand mit einbezogen
 um ausreichende Pegel für die High/Low detektion zu erhalten.
 
 .. image:: /Images/Kits/hardware_hacking_idi4_resistor_diode.jpg
@@ -177,7 +187,8 @@ um ausreichende Pegel für die High/Low detektion zu erhalten.
 Spannungen bis zu 30V schalten
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Mit dem Industrial Quad Relay Bricklet können Signal geschalten (kurz geschlossen)
+Mit dem :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
+können Signal geschalten (kurz geschlossen)
 werden. Viele Geräte verfügen über Taster oder Schalter die mit diesem Bricklet
 gehackt werden können. Ein gutes Beispiel hierfür sind Fernbedienungen.
 
@@ -199,8 +210,9 @@ Gerät zu verbinden müssen zuvor folgendes erledigt werden:
 * Finde Löt-Pads die benutzt werden können um eine Spannung zu messen oder zu schalten
 * Löte Drähte an diese Pads
 
-In dem :ref:`Hardware Hacking für Anfänger Tutorial <starter_kit_hardware_hacking_for_beginners>`
-werden diese Schritte genauer erläutert.
+In dem :ref:`Hardware Hacking für Anfänger
+<starter_kit_hardware_hacking_for_beginners>` Tutorial werden diese Schritte
+genauer erläutert.
 
 .. toctree::
    :hidden:
@@ -212,43 +224,6 @@ Beispiele
 ---------
 
 Es gibt viele Geräte die gehackt werden können. Hier sind ein paar Beispiele:
-
-.. _starter_kit_hardware_hacking_smoke_detector:
-
-Rauchmelder auslesen
-^^^^^^^^^^^^^^^^^^^^
-
-Über drahtlose Rauchmelder ist es möglich den Alarm eines ganzen 
-Rauchmelder-Netzwerks an einem Punkt auszulesen. Wir werden uns dies zu nutze 
-machen und eigene Aktionen ausführen wenn Rauch erkannt wird. Hierzu hacken
-wir einen drahtlosen Rauchmelder. Als Beispiel könnten wir im Alarmfall eine 
-Email oder Textnachricht verschicken.
-
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
-   :scale: 100 %
-   :alt: Smoke Detector with connected Industrial Digital In 4 Bricklet
-   :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
-
-Für dieses Projekt nutzen wir das drahtlose Rauchmelderset `ELRO FA20RF/2
-<http://www.elro.eu/de/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
-und schließen ein :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` an eine der 
-LED die im Alarmfall aufleuchtet.
-
-Eine ausführliche Hardwarebeschreibung kann
-:ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` gefunden 
-werden.
-
-Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
-
-|smoke_detector_examples|.
-
-.. include:: SmokeDetector.toctree
-
-.. toctree::
-   :hidden:
-
-   SmokeDetector_HardwareSetup
 
 
 .. _starter_kit_hardware_hacking_remote_switch:
@@ -282,7 +257,7 @@ Die vollständige Hardwarebeschreibung kann
 gefunden werden.
 
 Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
-Mac OS X (Mono) und Linux (Mono)) ist verfügbar in
+Linux (Mono) und Mac OS X (Mono)) ist verfügbar in
 
 * :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
 
@@ -299,10 +274,48 @@ Minmalistische Beispiele sind verfügbar in
    RemoteSwitchGUI_CSharp
 
 
+.. _starter_kit_hardware_hacking_smoke_detector:
+
+Rauchmelder auslesen
+^^^^^^^^^^^^^^^^^^^^
+
+Über drahtlose Rauchmelder ist es möglich den Alarm eines ganzen 
+Rauchmelder-Netzwerks an einem Punkt auszulesen. Wir werden uns dies zu nutze 
+machen und eigene Aktionen ausführen wenn Rauch erkannt wird. Hierzu hacken
+wir einen drahtlosen Rauchmelder. Als Beispiel könnten wir im Alarmfall eine 
+Email oder Textnachricht verschicken.
+
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
+   :scale: 100 %
+   :alt: Smoke Detector with connected Industrial Digital In 4 Bricklet
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
+
+Für dieses Projekt nutzen wir das drahtlose Rauchmelderset `ELRO FA20RF/2
+<http://www.elro.eu/de/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
+und schließen ein :ref:`Industrial Digital In 4 Bricklet
+<industrial_digital_in_4_bricklet>` an eine der LED die im Alarmfall aufleuchtet.
+
+Eine ausführliche Hardwarebeschreibung kann
+:ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` gefunden 
+werden.
+
+Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
+
+|smoke_detector_examples|.
+
+.. include:: SmokeDetector.toctree
+
+.. toctree::
+   :hidden:
+
+   SmokeDetector_HardwareSetup
+
+
 .. _starter_kit_hardware_hacking_garage_control:
 
-Garagentor fernsteuern
-^^^^^^^^^^^^^^^^^^^^^^
+Garagentor mit Smartphone fernsteuern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Garagentoröffner sind wirklich nützlich. Typischerweise besitzen diese eine 
 Fernbedienung die wir in diesem Beispiel hacken werden. Anschließend werden
@@ -337,6 +350,8 @@ Eine Beispielanwendung für das iPhone folgt bald.
    GarageControl_Android
    GarageControl_WindowsPhone
 
+
+.. _starter_kit_hardware_hacking_doorbell_notifier:
 
 Benachrichtigung durch die Türklingel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
