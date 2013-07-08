@@ -13,14 +13,14 @@ Funksteckdosen mit Python fernsteuern
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: RemoteSwitch_Python.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 Ziele
 -----
 
-.. include:: RemoteSwitch_Python.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

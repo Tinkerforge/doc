@@ -10,7 +10,7 @@
 .. |cb_interrupt| replace:: ``cb_interrupt``
 .. |value_mask| replace:: ``value_mask``
 
-.. include:: SmokeDetector_Python.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -23,7 +23,7 @@ Rauchmelder mit Python auslesen
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: SmokeDetector_Python.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
@@ -31,7 +31,7 @@ Rauchmelder mit Python auslesen
 Ziele
 -----
 
-.. include:: SmokeDetector_Python.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

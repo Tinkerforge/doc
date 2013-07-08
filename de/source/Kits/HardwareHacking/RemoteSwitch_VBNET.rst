@@ -13,14 +13,14 @@ Funksteckdosen mit Visual Basic .NET fernsteuern
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: RemoteSwitch_VBNET.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 Ziele
 -----
 
-.. include:: RemoteSwitch_VBNET.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

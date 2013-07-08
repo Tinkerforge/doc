@@ -13,14 +13,14 @@ Funksteckdosen mit Delphi fernsteuern
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: RemoteSwitch_Delphi.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 Ziele
 -----
 
-.. include:: RemoteSwitch_Delphi.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

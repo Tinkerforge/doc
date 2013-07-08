@@ -13,14 +13,14 @@ Control Remote Switch using Ruby
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: RemoteSwitch_Ruby.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 Goals
 -----
 
-.. include:: RemoteSwitch_Ruby.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

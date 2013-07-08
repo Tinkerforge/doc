@@ -10,7 +10,7 @@
 .. |cb_interrupt| replace:: ``cb_interrupt``
 .. |value_mask| replace:: ``$valueMask``
 
-.. include:: SmokeDetector_PHP.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -23,7 +23,7 @@ Read out Smoke Detectors using PHP
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: SmokeDetector_PHP.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
@@ -31,7 +31,7 @@ Read out Smoke Detectors using PHP
 Goals
 -----
 
-.. include:: SmokeDetector_PHP.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

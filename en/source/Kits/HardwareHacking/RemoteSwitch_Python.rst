@@ -13,14 +13,14 @@ Control Remote Switch using Python
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: RemoteSwitch_Python.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 Goals
 -----
 
-.. include:: RemoteSwitch_Python.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

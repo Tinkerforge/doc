@@ -10,7 +10,7 @@
 .. |cb_interrupt| replace:: ``InterruptCB``
 .. |value_mask| replace:: ``valueMask``
 
-.. include:: SmokeDetector_VBNET.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -23,7 +23,7 @@ Rauchmelder mit Visual Basic .NET auslesen
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: SmokeDetector_VBNET.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
@@ -31,7 +31,7 @@ Rauchmelder mit Visual Basic .NET auslesen
 Ziele
 -----
 
-.. include:: SmokeDetector_VBNET.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

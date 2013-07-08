@@ -13,14 +13,14 @@ Control Remote Switch using Delphi
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: RemoteSwitch_Delphi.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 Goals
 -----
 
-.. include:: RemoteSwitch_Delphi.substitutions
+.. include:: RemoteSwitch.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

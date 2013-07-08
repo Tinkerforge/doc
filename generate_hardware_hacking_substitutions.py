@@ -633,7 +633,7 @@ def make_common_substitutions(binding):
 
     return substitutions
 
-def make_smoke_detector_substitutions(binding):
+def make_smoke_detector_substitutions():
     substitutions = ''
     substitutions += smoke_detector_intro[lang] + '\n'
     substitutions += smoke_detector_goals[lang] + '\n'
@@ -651,7 +651,7 @@ def make_smoke_detector_toctree():
     return smoke_detector_examples_toctree[lang].format('\n'.join(toctree_lines))
 
 
-def make_remote_switch_substitutions(binding):
+def make_remote_switch_substitutions():
     substitutions = ''
     substitutions += remote_switch_intro[lang] + '\n'
     substitutions += remote_switch_goals[lang] + '\n'
@@ -696,14 +696,13 @@ def generate(path):
         print 'Generating {0}Common.substitutions (HardwareHacking)'.format(binding[3])
         write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding[3] + 'Common.substitutions'), make_common_substitutions(binding))
 
-    for binding in bindings:
-        print 'Generating SmokeDetector_{0}.substitutions (HardwareHacking)'.format(binding[3])
-        write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector_' + binding[3] + '.substitutions'), make_smoke_detector_substitutions(binding))
-        print 'Generating RemoteSwitch_{0}.substitutions (HardwareHacking)'.format(binding[3])
-        write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'RemoteSwitch_' + binding[3] + '.substitutions'), make_remote_switch_substitutions(binding))
-
+    print 'Generating SmokeDetector.substitutions (HardwareHacking)'
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector.substitutions'), make_smoke_detector_substitutions())
     print 'Generating SmokeDetector.toctree (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector.toctree'), make_smoke_detector_toctree())
+
+    print 'Generating RemoteSwitch.substitutions (HardwareHacking)'
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'RemoteSwitch.substitutions'), make_remote_switch_substitutions())
     print 'Generating RemoteSwitch.toctree (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'RemoteSwitch.toctree'), make_remote_switch_toctree())
 

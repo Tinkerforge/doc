@@ -10,7 +10,7 @@
 .. |cb_interrupt| replace:: ``CALLBACK_INTERRUPT``
 .. |value_mask| replace:: ``value_mask``
 
-.. include:: SmokeDetector_Ruby.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -23,7 +23,7 @@ Rauchmelder mit Ruby auslesen
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: SmokeDetector_Ruby.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
@@ -31,7 +31,7 @@ Rauchmelder mit Ruby auslesen
 Ziele
 -----
 
-.. include:: SmokeDetector_Ruby.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

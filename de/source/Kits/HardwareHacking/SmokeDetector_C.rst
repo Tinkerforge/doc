@@ -10,7 +10,7 @@
 .. |cb_interrupt| replace:: ``cb_interrupt``
 .. |value_mask| replace:: ``value_mask``
 
-.. include:: SmokeDetector_C.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -23,7 +23,7 @@ Rauchmelder mit C auslesen
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: SmokeDetector_C.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
@@ -31,7 +31,7 @@ Rauchmelder mit C auslesen
 Ziele
 -----
 
-.. include:: SmokeDetector_C.substitutions
+.. include:: SmokeDetector.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 
