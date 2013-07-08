@@ -61,9 +61,10 @@ Es gibt zwei Gruppen von Anwendungen dieses Kits: Steuern und auslesen.
 Für Steuerungsanwendungen wird ein :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` mitgeliefert. Dieses besteht aus vier
 schaltbaren Solid-State-Relais. Für Ausleseanwendungen wird ein
-:ref:`Analog In Bricklet <analog_in_bricklet>`, welches Spannungen
-von 0V-45V messen kann.
-
+:ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`
+mitgeliefert. Dieses kann vier digitale Signale mit Spannungen bis zu
+36V galvanisch getrennt auslesen.
+	
 Beispielanwendungen sind:
 
 * Rauchmelderalarm zum PC weiterleiten.
@@ -72,15 +73,10 @@ Beispielanwendungen sind:
 * Türklingel zum PC weiterleiten.
 
 Eine Vielzahl weiterer Anwendungen sind möglich. Alles was über
-eine Fernbedienung gesteuert wird oder analoge Werte ausgibt kann
+eine Fernbedienung gesteuert wird oder digitale Signale ausgibt kann
 mit diesem Kit kinderleicht gehackt werden. Die dokumentierten
 Beispiele sollten ausreichen um auch ohne Vorkentnisse jedes Elektrogerät 
 in dieser Kategorie zu hacken.
-
-Many more applications are possible, anything that is controlled by
-a remote control or outputs analog voltages is easily hackable by this Kit.
-The given examples applications should be enough to give you the power
-to hack any electronic appliance in this category.
 
 Die Programmierung kann über alle verfügbaren Bindings (|bindings|) 
 stattfinden. Beispielimplementierungen für alle Programmiersprachen 
@@ -143,30 +139,39 @@ Wie es funktioniert
 -------------------
 
 Es gibt zwei grundlegende Möglichkeiten dieses Kit zu nutzen:
+(Eine detailierte Erklärung befindet sich im
+:ref:`Hardware Hacking für Anfänger Tutorial <starter_kit_hardware_hacking_for_beginners>`
+)
 
-Spannungen bis zu 45V messen
+
+Spannungen bis zu 36V messen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Der aktuelle Status von Elektrogeräten wird oft irgendwo in Form
-einer analogen Spanung repräsentiert. Wenn diese Spannung unter
-45V liegt kann sie mit dem Analog In Bricklet gemessen werden.
-
+einer elektrischen Spanung repräsentiert. Wenn es sich um ein digitales Signal
+handelt und dessen Spannung unter 36V liegt, dann kann das Industrial Digital
+In 4 Bricklet damit verbunden werden und der Status ausgelesen werden.
 Ein gutes Beispiel dafür sind LEDs. Eine LED die den Zustand eines
 Systems anzeigt, kann problemlos ausgelesen werden.
 
-Um eine Spannungsquelle zu messen, muss sie an die VIN und GND
-Eingänge des Analog In Bricklets angeschlossen werden.
+Hierbei ist es wichtig zu beachten, dass die minimale Spannung, die als High
+detektiert wird bei 3V liegt. Die maximale Spannung die als Low detektiert wird
+liegt bei 2V. Zwischen diesen Spannungen ist das Verhalten undefiniert.
 
-.. warning:: Nicht mit 3.3V oder 5V verbinden! Dies sind Ausgänge.
+Um ein Signal auszulesen muss dieses an eins der Eingänge des Industrial 
+Digital In 4 angeschlossen werden. Falls keine Reaktion des Eingangs im
+Brick Viewer zu erkennen ist, kann es sein das die Belegung gedreht werden muss 
+(verpolt). Die Belegung kann per Trial and Error getestet werden. Das
+Industrial Digital In 4 ist verpolungsgeschützt.
 
-Falls keine sinnvollen Messungen im Brick Viewer auftauchen muss
-wahrscheinlich die Spannung umgepolt werden (VIN und GND tauschen).
+Die nachfolgende Abbildung zeigt exemplarisch die notwendige Schaltung
+zum auslesen einer LED. Hierbei wurde der Vorwiderstand mit einbezogen
+um ausreichende Pegel für die High/Low detektion zu erhalten.
 
-.. image:: /Images/Kits/hardware_hacking_analog_in_diode_350.jpg
+.. image:: /Images/Kits/hardware_hacking_idi4_resistor_diode.jpg
    :scale: 100 %
-   :alt: Beispielschaltbild: Analog In Bricklet misst LED status.
+   :alt: Beispielschaltung: Industrial Digital In 4 Bricklet misst LED state
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_analog_in_diode.jpg
 
 
 Spannungen bis zu 30V schalten
@@ -176,24 +181,26 @@ Mit dem Industrial Quad Relay Bricklet können Signal geschalten (kurz geschloss
 werden. Viele Geräte verfügen über Taster oder Schalter die mit diesem Bricklet
 gehackt werden können. Ein gutes Beispiel hierfür sind Fernbedienungen.
 
-.. image:: /Images/Kits/hardware_hacking_industrial_quad_switch_350.jpg
+Die nachfolgende Abbildung zeigt exemplarisch einen möglichen Aufbau um einen
+Taster/Schalter mit dem Industrial Quad Relay Bricklet zu steuern.
+
+.. image:: /Images/Kits/hardware_hacking_idq_switch.jpg
    :scale: 100 %
-   :alt: Example schematic: Industrial Quad Relay Bricklet bypassing switch
+   :alt: Beispielschaltung: Industrial Quad Relay Bricklet überbrickt Schalter
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_industrial_quad_switch.jpg
 
 
 Hardware Hacking für Anfänger
 -----------------------------
 
-To connect the Industrial Digital In 4 or the Industrial Quad Relay Bricklet
-to a remote or similar you have to accomplish two things:
+Um ein Industrial Digital In 4 oder Industrial Quad Relay Bricklet mit einem
+Gerät zu verbinden müssen zuvor folgendes erledigt werden:
 
-* Find solder pads that can be used to measure or switch a voltage.
-* Solder cables to these pads.
+* Finde Löt-Pads die benutzt werden können um eine Spannung zu messen oder zu schalten
+* Löte Drähte an diese Pads
 
-If you have never done this, click :ref:`here <starter_kit_hardware_hacking_for_beginners>`
-for an in-depth guide that explains both steps.
+In dem :ref:`Hardware Hacking für Anfänger Tutorial <starter_kit_hardware_hacking_for_beginners>`
+werden diese Schritte genauer erläutert.
 
 .. toctree::
    :hidden:
@@ -219,13 +226,13 @@ Email oder Textnachricht verschicken.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
    :scale: 100 %
-   :alt: Smoke Detector with connected Analog In Bricklet
+   :alt: Smoke Detector with connected Industrial Digital In 4 Bricklet
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
 
 Für dieses Projekt nutzen wir das drahtlose Rauchmelderset `ELRO FA20RF/2
 <http://www.elro.eu/de/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
-und schließen ein :ref:`Analog In Bricklet <analog_in_bricklet>` an eine der 
+und schließen ein :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` an eine der 
 LED die im Alarmfall aufleuchtet.
 
 Eine ausführliche Hardwarebeschreibung kann
@@ -334,7 +341,7 @@ Eine Beispielanwendung für das iPhone folgt bald.
 Benachrichtigung durch die Türklingel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In diesem Projekt verbinden wir das Analog In Bricklet mit einer
+In diesem Projekt verbinden wir das Industrial Digital In 4 Bricklet mit einer
 typischen, 12V betriebenen, Türklingel. Sobald jemand klingelt, wird unser
 Python-Script "Ring Ring Ring!" ausgeben. Dieses Projekt kann natürlich
 erweitert werden, so dass SMS versendet oder dein Telefon klingelt wenn jemand
@@ -342,7 +349,7 @@ and der Tür steht. Sei kreativ!
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
    :scale: 100 %
-   :alt: Doorbell notifier
+   :alt: Türklingel Benachrichtigung mit Industrial Digital In 4
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed.jpg
 

@@ -141,6 +141,9 @@ How it works
 ------------
 
 Basically there are two different options with this kit:
+(A detailled description can be found at
+:ref:`Hardware Hacking for Beginners <starter_kit_hardware_hacking_for_beginners>`
+)
 
 Detect Digital Signals up to 36V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -163,7 +166,8 @@ the polarity of the input. You can find the correct polarity by trial and
 error, the Bricklet is protected against reversed polarity.
 
 Below you can find a connection diagram that shows a possible setup
-if you want to detect the state of an LED.
+if you want to detect the state of an LED. The series resistor is included
+to obtain suffice levels for high/low detection.
 
 .. image:: /Images/Kits/hardware_hacking_idi4_resistor_diode.jpg
    :scale: 100 %
@@ -191,13 +195,13 @@ Hardware Hacking for beginners
 ------------------------------
 
 To connect the Industrial Digital In 4 or the Industrial Quad Relay Bricklet
-to a remote or similar you have to accomplish two things:
+to a device you have to accomplish two things:
 
 * Find solder pads that can be used to measure or switch a voltage.
-* Solder cables to these pads.
+* Solder wires to these pads.
 
-If you have never done this, click :ref:`here <starter_kit_hardware_hacking_for_beginners>`
-for an in-depth guide that explains both steps.
+If you have never done this, take a look at :ref:`Hardware Hacking for Beginners <starter_kit_hardware_hacking_for_beginners>`
+tutorial for an in-depth guide that explains both steps.
 
 .. toctree::
    :hidden:
@@ -279,7 +283,7 @@ alarm.
 
 For this project we use the wireless smoke detector set `ELRO FA20RF/2
 <http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
-and connect an :ref:`Analog In Bricklet <analog_in_bricklet>` to one of its
+and connect an :ref:`Industrial Digital In 4 <industrial_digital_in_4_bricklet>` to one of its
 LEDs that light up during an alarm.
 
 The full hardware description can be found 
@@ -342,7 +346,7 @@ send an SMS or let your phone ring if someone is at your door. Be creative!
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
    :scale: 100 %
-   :alt: Doorbell notifier
+   :alt: Doorbell notifier with Industrial Digital In 4
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed.jpg
 
