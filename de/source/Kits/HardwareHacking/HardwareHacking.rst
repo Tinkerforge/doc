@@ -102,10 +102,15 @@ Maximale Schaltspannung           30V pro Relais
 Resourcen
 ---------
 
-* Beispielquelltexte *Rauchmelder* (Download: |smoke_detector_examples_download|)
-* Beispielquelltext *Steckdosen fernsteuern* (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch/csharp>`__)
-* Beispielquelltexte *Garagentor fernsteuern* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/windows_phone>`__)
-* Beispielquelltext *Benachrichtigung durch die Türklingel* (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
+* Beispielquelltexte für :ref:`Funksteckdosen fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: |remote_switch_examples_download|)
+* Beispielquelltext für :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
+* Beispielquelltexte für :ref:`Rauchmelder auslesen <starter_kit_hardware_hacking_smoke_detector>` (Download: |smoke_detector_examples_download|)
+* Beispielquelltexte für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
+* Beispielquelltext für :ref:`Benachrichtigung durch Türklingel <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
+* Demo-Anwendung :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
+* Demo-Apps :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iPhone*) TODO
+
+\*: Demo für iPhone folgt bald.
 
 
 Benötigte Werkzeuge
@@ -218,43 +223,6 @@ Beispiele
 
 Es gibt viele Geräte die gehackt werden können. Hier sind ein paar Beispiele:
 
-.. _starter_kit_hardware_hacking_smoke_detector:
-
-Rauchmelder auslesen
-^^^^^^^^^^^^^^^^^^^^
-
-Über drahtlose Rauchmelder ist es möglich den Alarm eines ganzen 
-Rauchmelder-Netzwerks an einem Punkt auszulesen. Wir werden uns dies zu nutze 
-machen und eigene Aktionen ausführen wenn Rauch erkannt wird. Hierzu hacken
-wir einen drahtlosen Rauchmelder. Als Beispiel könnten wir im Alarmfall eine 
-Email oder Textnachricht verschicken.
-
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
-   :scale: 100 %
-   :alt: Smoke Detector with connected Industrial Digital In 4 Bricklet
-   :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
-
-Für dieses Projekt nutzen wir das drahtlose Rauchmelderset `ELRO FA20RF/2
-<http://www.elro.eu/de/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
-und schließen ein :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` an eine der 
-LED die im Alarmfall aufleuchtet.
-
-Eine ausführliche Hardwarebeschreibung kann
-:ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` gefunden 
-werden.
-
-Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
-
-|smoke_detector_examples|.
-
-.. include:: SmokeDetector.toctree
-
-.. toctree::
-   :hidden:
-
-   SmokeDetector_HardwareSetup
-
 
 .. _starter_kit_hardware_hacking_remote_switch:
 
@@ -304,6 +272,44 @@ Minmalistische Beispiele sind verfügbar in
    RemoteSwitchGUI_CSharp
 
 
+.. _starter_kit_hardware_hacking_smoke_detector:
+
+Rauchmelder auslesen
+^^^^^^^^^^^^^^^^^^^^
+
+Über drahtlose Rauchmelder ist es möglich den Alarm eines ganzen 
+Rauchmelder-Netzwerks an einem Punkt auszulesen. Wir werden uns dies zu nutze 
+machen und eigene Aktionen ausführen wenn Rauch erkannt wird. Hierzu hacken
+wir einen drahtlosen Rauchmelder. Als Beispiel könnten wir im Alarmfall eine 
+Email oder Textnachricht verschicken.
+
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
+   :scale: 100 %
+   :alt: Smoke Detector with connected Industrial Digital In 4 Bricklet
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
+
+Für dieses Projekt nutzen wir das drahtlose Rauchmelderset `ELRO FA20RF/2
+<http://www.elro.eu/de/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
+und schließen ein :ref:`Industrial Digital In 4 Bricklet
+<industrial_digital_in_4_bricklet>` an eine der LED die im Alarmfall aufleuchtet.
+
+Eine ausführliche Hardwarebeschreibung kann
+:ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` gefunden 
+werden.
+
+Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
+
+|smoke_detector_examples|.
+
+.. include:: SmokeDetector.toctree
+
+.. toctree::
+   :hidden:
+
+   SmokeDetector_HardwareSetup
+
+
 .. _starter_kit_hardware_hacking_garage_control:
 
 Garagentor mit Smartphone fernsteuern
@@ -342,6 +348,8 @@ Eine Beispielanwendung für das iPhone folgt bald.
    GarageControl_Android
    GarageControl_WindowsPhone
 
+
+.. _starter_kit_hardware_hacking_doorbell_notifier:
 
 Benachrichtigung durch die Türklingel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

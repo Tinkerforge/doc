@@ -96,14 +96,15 @@ Maximum Switching Voltage         30V per switch
 Resources
 ---------
 
-* Example source code *Control Remote Switches* (Download: |remote_switch_examples_download|)
-* Example source code *Control Remote Switches with GUI* (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
-* Example source code *Read out Smoke Detectors* (Download: |smoke_detector_examples_download|)
-* Example source code *Control Garage Door over smart phone* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
-* Example source code *Doorbell Notifier* (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
+* Example source code :ref:`Control Remote Switches <starter_kit_hardware_hacking_remote_switch>` (Download: |remote_switch_examples_download|)
+* Example source code :ref:`Control Remote Switches with GUI <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
+* Example source code :ref:`Read out Smoke Detectors <starter_kit_hardware_hacking_smoke_detector>` (Download: |smoke_detector_examples_download|)
+* Example source code :ref:`Control Garage Door over smart phone <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
+* Example source code :ref:`Doorbell Notifier <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
+* Demo Application :ref:`Control Remote Switches with GUI <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
+* Demo Apps :ref:`Control Garage Door over smart phone <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iPhone*) TODO
 
-* Demo application *Control Remote Swithces with GUI* (Download: Windows, Mac OS, Linux) TODO
-* Demo app *Control Garage Door over smart phone* (Download: Android, iOS, Windows Phone) TODO
+\* Demo for iPhone coming soon
 
 
 Required Tools
@@ -333,6 +334,8 @@ A Demo app for iPhone is comming soon.
    GarageControl_Android
    GarageControl_WindowsPhone
 
+
+.. _starter_kit_hardware_hacking_doorbell_notifier:
 
 Is someone at the Door? - Doorbell Notifier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
