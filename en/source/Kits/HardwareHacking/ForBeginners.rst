@@ -202,18 +202,19 @@ which can be found directly mounted on the circuit board.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_for_beginner_smd_resistor_1500.jpg
 
-But how to know what kind of device it is?
-There are different possibilities. Experts can tell you which device it may be
-by identifying its optical features. If the device has a marking it is possible
+But how to figure out what kind of device it is?
+There are different options. Experts can tell you which device it may be
+by looking at its optical features. If the device has a marking it is possible
 to even identifying the value (e.g. 1k Ohm resistor or 22 Ohm resistor). If
 there is no marking and it can't be recognized it has to be identified by
-measuring or by identifying its purpose in the circuit.
+measuring or by determining its purpose in the circuit.
 
 That's the starting point for this kit. If you like to readout the state of a 
 LED follow the traces until you reach a wired or SMD device. It will most likely
 be the series resistor. 
 
-The next image depicts one example (based on the Garage Door Control example).
+The next image depicts one example (based on the
+:ref:`starter_kit_hardware_hacking_garage_control` example).
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_top_closeup3_350.jpg
    :scale: 100 %

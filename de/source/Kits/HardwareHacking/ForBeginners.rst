@@ -213,7 +213,7 @@ Experten können Bauteile anhand ihrer Optik unterscheiden. Wenn das Bauteil
 auch noch eine Markierung besitzt, so kann auch deren Wert (z.B. 1k Ohm 
 Widerstand order 22 Ohm Widerstand) bestimmt werden. Wenn das Bauteil keine
 Markierung trägt und das Bauteil nicht optisch identifiziert werden kann, 
-so kann es nur per Messung oder über Identifizierung der Funktion in der
+so kann es nur per Messung oder über Ermittlung der Funktion in der
 Schaltung identifiziert werden.
 
 Dies ist der Ansatzpunkt für dieses Kit. Wenn der Status einer LED ausgelesen
@@ -221,8 +221,8 @@ werden soll müssen nur deren Leiterbahnen verfolgt werden bis ein bedrahtetes
 oder SMD Bauteil erreicht wird. Hierbei handelt es sich höchstwahrscheinlich
 um den Vorwiderstand.
 
-Das nächste Bild zeigt ein Beispiel (basiert auf dem "Garagentor fernsteuern" 
-Beispiel).
+Das nächste Bild zeigt ein Beispiel (basiert auf dem
+:ref:`starter_kit_hardware_hacking_garage_control` Beispiel).
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_top_closeup3_350.jpg
    :scale: 100 %
