@@ -64,7 +64,7 @@ schaltbaren Solid-State-Relais. Für Ausleseanwendungen wird ein
 :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`
 mitgeliefert. Dieses kann vier digitale Signale mit Spannungen bis zu
 36V galvanisch getrennt auslesen.
-	
+
 Beispielanwendungen sind:
 
 * Rauchmelderalarm zum PC weiterleiten.
@@ -89,9 +89,14 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Spannungsmessung                  0V - 45V in 1mV-Schritten, 12Bit Auflösung
-Max. Schaltstrom                  1,2A pro Relais
-Max. Schaltspannung               30V pro Relais
+Digitale Eingänge                 4
+Spannungsbereich logisch 0        0-2V
+Spannungsbereich logisch 1        3-36V
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Digitale Ausgänge                 4
+Maximaler Schaltstrom             1,2A pro Relais
+Maximale Schaltspannung           30V pro Relais
 ================================  ============================================================
 
 Resourcen
@@ -282,7 +287,7 @@ Die vollständige Hardwarebeschreibung kann
 gefunden werden.
 
 Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
-Mac OS X (Mono) und Linux (Mono)) ist verfügbar in
+Linux (Mono) und Mac OS X (Mono)) ist verfügbar in
 
 * :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
 
@@ -301,8 +306,8 @@ Minmalistische Beispiele sind verfügbar in
 
 .. _starter_kit_hardware_hacking_garage_control:
 
-Garagentor fernsteuern
-^^^^^^^^^^^^^^^^^^^^^^
+Garagentor mit Smartphone fernsteuern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Garagentoröffner sind wirklich nützlich. Typischerweise besitzen diese eine 
 Fernbedienung die wir in diesem Beispiel hacken werden. Anschließend werden

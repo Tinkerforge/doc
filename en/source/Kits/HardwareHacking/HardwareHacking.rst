@@ -86,6 +86,8 @@ Property                          Value
 Digital Inputs                    4
 Digital Input Low Level Voltage   0-2V
 Digital Input High Level Voltage  3-36V
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Digital Outputs                   4
 Maximum Switching Current         1.2A per switch
 Maximum Switching Voltage         30V per switch
@@ -140,9 +142,8 @@ How it works
 ------------
 
 Basically there are two different options with this kit:
-(A detailled description can be found at
-:ref:`Hardware Hacking for Beginners <starter_kit_hardware_hacking_for_beginners>`
-)
+(A detailled description can be found at :ref:`Hardware Hacking for Beginners
+<starter_kit_hardware_hacking_for_beginners>`)
 
 Detect Digital Signals up to 36V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -215,7 +216,6 @@ There are many low voltage appliances that can be hacked. Here are some examples
 
 .. _starter_kit_hardware_hacking_remote_switch:
 
-
 Control Mains Switches Remotely
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -245,7 +245,7 @@ The full hardware description can be found
 :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
 
 An example implementation of a GUI (compatible to Windows (.NET), 
-Mac OS X (Mono) and Linux (Mono)) is available in
+Linux (Mono) and Mac OS X (Mono)) is available in
 
 * :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
 
@@ -260,7 +260,6 @@ Minmalistic examples are available in
 
    RemoteSwitch_HardwareSetup
    RemoteSwitchGUI_CSharp
-
 
 
 .. _starter_kit_hardware_hacking_smoke_detector:
