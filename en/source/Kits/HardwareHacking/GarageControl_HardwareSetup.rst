@@ -11,10 +11,8 @@ transmitter there are for example complex electronics for ciphering so we don't
 want to take a closer look to it. But we don't have to, since the only thing we 
 are interested in is to trigger the button we normally use to operate the door.
 
-How can the button be triggered?
-Of course it can be triggered by some mechanical construction, for 
-example some kind of arm, but it is also possible to bypass it with an
-electrical switch (see general description here).
+We will not trigger the button directly, but we will be able to bypass
+it as described here (TODO).
 
 At first we have to dismantle the casing of the remote switch. 
 With a small screwdriver this is an easy task.
@@ -36,7 +34,7 @@ the garage door on this model.
    :target: ../../_images/Kits/hardware_hacking_garage_remote_top_closeup.jpg
 
 If we take a closer look at the button we will find that only two of the four
-pads are connected with conductive paths. This way we have identified the
+pads are connected with traces. So we have identified the
 points were we have to solder our wires.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_soldered_350.jpg

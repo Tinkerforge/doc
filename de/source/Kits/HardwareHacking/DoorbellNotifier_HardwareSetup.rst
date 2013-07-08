@@ -6,79 +6,82 @@
 Hardware-Aufbau: Türklingel
 ===========================
 
-The hardware setup is pretty simple. Typically doorbells are driven by 12V AC 
-(Alternating Current), this current is applied on the doorbell by two wires.
-If you have such a doorbell you can connect an Industrial Digital In 4 Bricklet
-to it, by connecting one input port of the Bricklet to the doorbell.
-This way the input port will be triggered if someone triggers the doorbell.
-A more detailed description how to connect it can be found in the following
-:ref:`hardware setup <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup_setup>`
-section.
+Der Hardwareaufbau ist sehr einfach. Typische Türklingeln werden mit 12V AC
+(Wechselstrom) betrieben. Dieser wird über zwei Drähte an die Klingel angelegt.
+An eine Klingel dieser Art kann das :ref:`Industrial Digital In 4 Bricklet
+<industrial_digital_in_4_bricklet>` direkt parallel zur Klingel angeschlossen 
+werden. Auf diese Art wird der Eingang des Bricklets getriggert wenn jemand an
+der Tür klingelt. Eine genauere Beschreibung des Hardwareaufbaus findet man im
+:ref:`Hardware-Aufbau <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup_setup>`
+Abschnitt.
 
 Technische Beschreibung
 -----------------------
 
-This part is for those who are interested in a more technical description.
+Dieser Teil ist für die Leser gedacht, die in einer technischeren Beschreibung
+interessiert sind.
 
-If you take a closer look at alternating currents you will see positive and 
-negative half-waves. 
+Wenn wir einen genaueren Blick auf Graphen von Wechselspannungen werfen 
+werden wir positive und negative Halbwellen sehen.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_ac_current_plot_350.jpg
    :scale: 100 %
-   :alt: Plot of AC Current
+   :alt: Wechselstromgraph
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_ac_current_plot.jpg
 
-A connected input port of an Industrial Digital In 4 
-Bricklet basically consists of a light emitting diode (LED inside optocoupler).
-If you connect it to an AC source the LED will light up every positive 
-half-wave and will be off every negative half wave. So if the doorbell is 
-triggered the AC current will flow through the doorbell for some time.
-Since you have connected the input port of the Industrial Digital In 4
-in parallel to the doorbell the current flows also through the inside LED
-and thus your input port will be triggered.
+Ein, an eine Wechselspannungsquelle angeschlossenes, Industrial Digital In 4
+Bricklet besitzt im Eingang eine Leuchtdiode (LED im Optokoppler).
+Diese wird jeder positive Halbwelle aufleuchten und jede negative Halbwelle
+aus sein. Wenn also die Türklingel betätigt wird, fließt ein Strom durch die
+Türklingel und durch die LED des Optokopplers. Der Eingang wird also 
+getriggert.
 
 .. _starter_kit_hardware_hacking_doorbell_notifier_hardware_setup_setup:
 
 Hardware-Aufbau
 ---------------
 
-The Industrial Digital In 4 Bricklet is connected in parallel to the doorbell. You can see 
-the set-up in the next picture. The big blue and black wire are the original
-installed doorbell triggering wires. We have connected a smaller red and
-black wire in parallel to the doorbell which are connected to the first
-input port of the Industrial Digital In 4 Bricklet.
+Das Industrial Digital In 4 Bricklet ist parallel zu der Türklingel verbunden.
+Der Aufbau ist im nächsten Bild abgebildet. Der dicke blaue und schwarze Draht
+sind die original installierten Drähte die die Türklingel auslösen. Wir haben
+einen dünneren roten und schwarzen Draht parallel dazu installiert und diese
+mit dem ersten Eingang des Industrial Digital In 4 Bricklets verbunden.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_open_350.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Bricklet attached to Doorbell
+   :alt: Industrial Digital In 4 Bricklet mit Türklingel verbunden
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_open.jpg
 
-After connecting the Industrial Digital In 4 Bricklet to the doorbell
-test it with the Brick Viewer. Trigger the bell, you should
-see that the connected input port will change its state from Low to High.
+Nachdem das Industrial Digital In 4 Bricklet mit der Türklingel verbunden wurde
+können wir den Aufbau mit dem Brick Viewer Testen. Dazu klingeln wir einfach
+an der Tür und beobachten den Eingang des Bricklets. Dieser sollte zwischen
+High und Low wechseln.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_brickv_350.jpg
    :scale: 100 %
-   :alt: Doorbell Trigger Signal in Brick Viewer
+   :alt: Türklingel Signal im Brick Viewer
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_brickv.jpg
 
-After closing the casing the installation will look as the following. Of course
-you can increase the cable length such that you can install it less visible.
+Nachdem wir das Gehäuse der Türklingel wieder geschlossen haben sieht der
+Aufbau wie nachfolgend abgebildet aus. Um unsere Arbeit weniger auffällig zu
+gestalten könnten wir natürlich auch längere Drähte zwischen der Türklingel
+und dem Bricklet verwenden.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Bricklet attached to Doorbell with closed casing
+   :alt: Industrial Digital In 4 Bricklet mit Türklingel verbunden (geschlossen)
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed.jpg
 
-Another option is to add a WIFI Master Extension or Ethernet Master Extension, 
-such that no direct USB detection is necessary.
+Eine andere Option ist der Einsatz einer WIFI Master Extension oder Ethernet 
+Master Extension, so dass kein direkter USB Anschluss notwendig ist.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_wifi_350.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Bricklet attached to Doorbell with WiFi Extension
+   :alt: Industrial Digital In 4 Bricklet mit Türklingel verbunden und WiFi Extension
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed_wifi.jpg
+

@@ -8,7 +8,8 @@ Doorbell Notifier Hardware Setup
 
 The hardware setup is pretty simple. Typically doorbells are driven by 12V AC 
 (Alternating Current), this current is applied on the doorbell by two wires.
-If you have such a doorbell you can connect an Industrial Digital In 4 Bricklet
+If you have such a doorbell you can connect an 
+:ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`
 to it, by connecting one input port of the Bricklet to the doorbell.
 This way the input port will be triggered if someone triggers the doorbell.
 A more detailed description how to connect it can be found in the following
@@ -20,8 +21,8 @@ Technical Description
 
 This part is for those who are interested in a more technical description.
 
-If you take a closer look at alternating currents you will see positive and 
-negative half-waves. 
+If you take a closer look at the graphs of alternating currents you will see 
+positive and negative half-waves. 
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_ac_current_plot_350.jpg
    :scale: 100 %
@@ -65,8 +66,9 @@ see that the connected input port will change its state from Low to High.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_brickv.jpg
 
-After closing the casing the installation will look as the following. Of course
-you can increase the cable length such that you can install it less visible.
+After closing the casing of the doorbell the installation will look as in the 
+following image. To make our work less visible we could of course put
+more cable between doorbell and Bricklet.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
    :scale: 100 %
@@ -75,10 +77,11 @@ you can increase the cable length such that you can install it less visible.
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed.jpg
 
 Another option is to add a WIFI Master Extension or Ethernet Master Extension, 
-such that no direct USB detection is necessary.
+such that no direct USB connection is necessary.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_wifi_350.jpg
    :scale: 100 %
    :alt: Industrial Digital In 4 Bricklet attached to Doorbell with WiFi Extension
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed_wifi.jpg
+

@@ -6,56 +6,55 @@
 Hardware-Aufbau: Garagentor
 ===========================
 
-The hardware of garage door openers can be really complex. Besides the radio 
-transmitter there are for example complex electronics for ciphering so we don't 
-want to take a closer look to it. But we don't have to, since the only thing we 
-are interested in is to trigger the button we normally use to operate the door.
+Die Hardware von Garagentoröffnern kann wirklich komplex sein. Neben dem
+Funktransmitter gibt es zum Beispiel komplexe Elektronik für die 
+Verschlüsselung so dass wir diese nicht näher betrachten wollen. Dies müssen
+wir aber auch nicht, da wir nur die Aktionen auslösen wollen die normalerweise
+vom Taster der Fernbedienung ausgelöst werden.
 
-How can the button be triggered?
-Of course it can be triggered by some mechanical construction, for 
-example some kind of arm, but it is also possible to bypass it with an
-electrical switch (see general description here).
+Anstatt den Taster selber auszulösen werden wir diesen überbrücken
+wie zuvor schon hier beschrieben (TODO).
 
-At first we have to dismantle the casing of the remote switch. 
-With a small screwdriver this is an easy task.
+Im ersten Schritt öffnen wir dazu das Gehäuse der Fernbedienung
+mit einem Schraubendreher.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_top_350.jpg
    :scale: 100 %
-   :alt: Remote Control with dismantled Casing
+   :alt: Fernbedienung mit entfertem Gehäuse
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_remote_top_1200.jpg
 
-After removing the casing we can take a look at the five control buttons.
-We are only interested in the most left button since this one controls
-the garage door on this model. 
+Nachdem das Gehäuse entfernt ist können wir einen genaueren Blick auf die
+fünf Taster werfen. Wir sind nur an dem linken Taster interessiert, da dieser,
+bei diesem Modell, das Garagtor öffnet bzw. schließt.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_top_closeup.jpg
    :scale: 100 %
-   :alt: Closeup of Remote Control Button
+   :alt: Nahaufname: Fernbedienung Taster
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_remote_top_closeup.jpg
 
-If we take a closer look at the button we will find that only two of the four
-pads are connected with conductive paths. This way we have identified the
-points were we have to solder our wires.
+Wenn wir diesen Taster näher betrachten stellen wir fest, dass nur zwei der
+vier Pads mit Leiterbahnen verbunden sind. Wir haben also die Stellen 
+identifiziert an denen wir unsere Drähte anlöten müssen.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_soldered_350.jpg
    :scale: 100 %
-   :alt: Remote Control with soldered wires
+   :alt: Fernbedienung mit angelöteten Drähten
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_remote_soldered_1200.jpg
 
-Connect the other wire ends to one relay of the Industrial Quad Relay Bricklets 
-8 pole connector. After that we can test our work by using the Brick
-Viewer software. Open the Industrial Quad Relay Bricklet tab and switch the
-related relay. You should be able to trigger the remote control.
+Die Enden der Drähte verbinden wir mit einem Relais des Quad Relay Bricklets
+auf dem 8 Pol Stecker. Anschließend können wir unser Werk mit der Brick Viewer
+Software Testen. Dazu öffnen wir das Industrial Quad Relay Bricklet Tab
+und schalten das Relais. Die Fernbedienung sollte sich darüber steuern lassen.
 
-After this test we can close the casing of the remote control and have finished
-our task.
+Nach diesem Test können wir das Gehäuse der Fernbedienung schließen und
+sind mit unserer Arbeit fertig.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_finished_new_350.jpg
    :scale: 100 %
-   :alt: Garage Door Remote Control with attached Industrial Quad Relay Bricklet
+   :alt: Garagentorfernbedienung mit angeschlossenem Industrial Quad Relay Bricklet
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_new_1200.jpg
 
