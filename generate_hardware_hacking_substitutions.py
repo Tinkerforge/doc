@@ -291,7 +291,7 @@ described :ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware_setup
 """
 >>>intro
 Wir setzen weiterhin voraus, dass ein passender Rauchmelder mit einem
-:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet` verbunden
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` verbunden
 wurde wie :ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`
 beschrieben.
 <<<intro

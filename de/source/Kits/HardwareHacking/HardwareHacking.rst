@@ -274,14 +274,22 @@ Die vollständige Hardwarebeschreibung kann
 :ref:`hier <starter_kit_hardware_hacking_remote_switch_hardware_setup>`
 gefunden werden.
 
-Eine Beispielimplementierung ist verfügbar
-in :ref:`C# <starter_kit_hardware_hacking_remote_switch_csharp>`.
+Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
+Mac OS X (Mono) und Linux (Mono)) ist verfügbar in
+
+* :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
+
+Minmalistische Beispiele sind verfügbar in
+
+* |remote_switch_examples|.
+
+.. include:: SmokeDetector.toctree
 
 .. toctree::
    :hidden:
 
    RemoteSwitch_HardwareSetup
-   RemoteSwitch_CSharp
+   RemoteSwitchGUI_CSharp
 
 
 .. _starter_kit_hardware_hacking_garage_control:
