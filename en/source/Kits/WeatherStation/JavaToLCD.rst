@@ -11,7 +11,7 @@
 .. |cb_humidity| replace:: ``humidity``
 .. |cb_air_pressure| replace:: ``airPressure``
 
-.. include:: JavaToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -28,7 +28,7 @@ Using Java to write to LCD 20x4 Bricklet
 Goals
 -----
 
-.. include:: JavaToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

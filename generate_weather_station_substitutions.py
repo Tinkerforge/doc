@@ -531,7 +531,7 @@ def make_common_substitutions(binding):
 
     return substitutions
 
-def make_write_to_lcd_substitutions(binding):
+def make_write_to_lcd_substitutions():
     substitutions = ''
     substitutions += write_to_lcd_goals[lang] + '\n'
     substitutions += '>>>substitutions\n'
@@ -577,10 +577,8 @@ def generate(path):
         print 'Generating {0}Common.substitutions (WeatherStation)'.format(binding[3])
         write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'Common.substitutions'), make_common_substitutions(binding))
 
-    for binding in bindings:
-        print 'Generating {0}ToLCD.substitutions (WeatherStation)'.format(binding[3])
-        write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding[3] + 'ToLCD.substitutions'), make_write_to_lcd_substitutions(binding))
-
+    print 'Generating WriteToLCD.substitutions (WeatherStation)'
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WriteToLCD.substitutions'), make_write_to_lcd_substitutions())
     print 'Generating WriteToLCD.toctree (WeatherStation)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WriteToLCD.toctree'), make_write_to_lcd_toctree())
 

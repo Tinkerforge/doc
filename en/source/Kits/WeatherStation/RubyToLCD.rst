@@ -11,7 +11,7 @@
 .. |cb_humidity| replace:: ``CALLBACK_HUMIDITY``
 .. |cb_air_pressure| replace:: ``CALLBACK_AIR_PRESSURE``
 
-.. include:: RubyToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -28,7 +28,7 @@ Using Ruby to write to LCD 20x4 Bricklet
 Goals
 -----
 
-.. include:: RubyToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

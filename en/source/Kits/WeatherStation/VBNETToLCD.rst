@@ -11,7 +11,7 @@
 .. |cb_humidity| replace:: ``HumidityCB``
 .. |cb_air_pressure| replace:: ``AirPressureCB``
 
-.. include:: VBNETToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -28,7 +28,7 @@ Using Visual Basic .NET to write to LCD 20x4 Bricklet
 Goals
 -----
 
-.. include:: VBNETToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

@@ -11,7 +11,7 @@
 .. |cb_humidity| replace:: ``cb_humidity``
 .. |cb_air_pressure| replace:: ``cb_air_pressure``
 
-.. include:: CToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -28,7 +28,7 @@ Using C to write to LCD 20x4 Bricklet
 Goals
 -----
 
-.. include:: CToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 

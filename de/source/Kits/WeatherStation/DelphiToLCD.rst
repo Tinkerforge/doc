@@ -11,7 +11,7 @@
 .. |cb_humidity| replace:: ``HumidityCB``
 .. |cb_air_pressure| replace:: ``AirPressureCB``
 
-.. include:: DelphiToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -28,7 +28,7 @@ Mit Delphi auf das LCD 20x4 Bricklet schreiben
 Ziele
 -----
 
-.. include:: DelphiToLCD.substitutions
+.. include:: WriteToLCD.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 
