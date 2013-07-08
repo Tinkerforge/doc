@@ -21,8 +21,8 @@ smoke detectors and place it next to the PC. It will be triggered
 by the other smoke detectors that are scattered throughout the house.
 
 
-Taking a look at the Smoke Detector
------------------------------------
+Das Innenleben des Rauchmelders
+-------------------------------
 
 The ELRO FA20RF/2 has two LEDs next to the "TEST" and "LEARN" buttons.
 
@@ -63,8 +63,8 @@ We have to remove the screws to get to the other side of the circuit board.
 The three solder pads at the top, left to the red sticker belong to
 the LED. We will have to solder wires to them.
 
-Connecting wires to the LED
----------------------------
+Drähte an die LED anschließen
+-----------------------------
 
 See here (TODO) for a basic soldering tutorial and here (TODO) for instructions
 how you can find the correct pins for the job.

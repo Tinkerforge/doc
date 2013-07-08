@@ -22,8 +22,8 @@ solid state relays to short the inputs ON, OFF, A and B to GND. This way
 we will be able to switch two remote switches. If you want to also switch 
 C and D, you can use an additional Industrial Quad Relay.
 
-Take a look at the Remote Control
----------------------------------
+Das Innenleben der Fernbedienung
+--------------------------------
 
 If you open your remote control you will most likely see a circuit board like this:
 
@@ -43,8 +43,8 @@ completely and take a look at the bottom side it should look like this:
    :target: ../../_images/Kits/hardware_hacking_remote_bottom_1200.jpg
 
 
-Connect wires to the IC
------------------------
+Drähte am IC anschließen
+------------------------
 
 Next we have to solder the wires to connect to the inputs of the remote
 control. We will solder five wires to the HX2262 IC:
@@ -73,8 +73,8 @@ After that it will look like this:
 
 .. _starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix:
 
-Connect wires to the Industrial Quad Relay Bricklet
----------------------------------------------------
+Drähte am Industrial Quad Relay Bricklet anschließen
+----------------------------------------------------
 
 Next we will connect these wires to the Industrial Quad Relay Bricklet.
 Each input is connected to its own relay. Simply put it into one

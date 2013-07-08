@@ -6,9 +6,6 @@
 Hardware-Aufbau: Türklingel
 ===========================
 
-General Idea
-------------
-
 The hardware setup is pretty simple. Typically doorbells are driven by 12V AC 
 (Alternating Current), this current is applied on the doorbell by two wires.
 If you have such a doorbell you can connect an Industrial Digital In 4 Bricklet
@@ -18,8 +15,8 @@ A more detailed description how to connect it can be found in the following
 :ref:`hardware setup <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup_setup>`
 section.
 
-Technical Description
----------------------
+Technische Beschreibung
+-----------------------
 
 This part is for those who are interested in a more technical description.
 
@@ -43,8 +40,8 @@ and thus your input port will be triggered.
 
 .. _starter_kit_hardware_hacking_doorbell_notifier_hardware_setup_setup:
 
-Hardware Setup
---------------
+Hardware-Aufbau
+---------------
 
 The Industrial Digital In 4 Bricklet is connected in parallel to the doorbell. You can see 
 the set-up in the next picture. The big blue and black wire are the original
