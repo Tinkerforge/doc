@@ -112,7 +112,7 @@ Benötigte Werkzeuge
 
 * Schraubendreher (um Gehäuse zu öffnen etc.)
 * Lötkolben
-* Zinn
+* Lötzinn
 
 
 Firmware aktualisieren und erste Tests
