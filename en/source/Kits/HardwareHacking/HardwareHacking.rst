@@ -96,10 +96,9 @@ Resources
 
 * Example source code *Control Remote Switches* (Download: |remote_switch_examples_download|)
 * Example source code *Control Remote Switches with GUI* (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
-* Example source code *Smoke Detector* (Download: |smoke_detector_examples_download|)
+* Example source code *Read out Smoke Detectors* (Download: |smoke_detector_examples_download|)
 * Example source code *Control Garage Door over smart phone* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
 * Example source code *Doorbell Notifier* (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
-
 
 * Demo application *Control Remote Swithces with GUI* (Download: Windows, Mac OS, Linux) TODO
 * Demo app *Control Garage Door over smart phone* (Download: Android, iOS, Windows Phone) TODO

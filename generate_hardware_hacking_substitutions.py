@@ -494,9 +494,9 @@ smoke_detector_steps = {
  Schritt 1 zusammengefügt:
 
 .. |step2_intro| replace::
- Während des Enumerierungsprozesses soll das Analog In Bricklet konfiguriert
- werden. Dadurch ist sichergestellt, dass es neu konfiguriert wird nach
- einem Verbindungsabbruch oder einer Unterbrechung der Stromversorgung.
+ Während des Enumerierungsprozesses soll das Industrial Digital In 4 Bricklet
+ konfiguriert werden. Dadurch ist sichergestellt, dass es neu konfiguriert wird
+ nach einem Verbindungsabbruch oder einer Unterbrechung der Stromversorgung.
 
 .. |step2_enumerate| replace::
  Die Konfiguration soll beim ersten Start (|ENUMERATION_TYPE_CONNECTED|)
