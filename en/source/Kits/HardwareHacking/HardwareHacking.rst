@@ -104,6 +104,15 @@ Resources
 * Demo application *Control Remote Swithces with GUI* (Download: Windows, Mac OS, Linux) TODO
 * Demo app *Control Garage Door over smart phone* (Download: Android, iOS, Windows Phone) TODO
 
+
+Required Tools
+--------------
+
+* Screwdrivers (to open casings etc.)
+* Sordering Iron
+* Solder
+
+
 Firmware updating and first tests
 ---------------------------------
 

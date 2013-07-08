@@ -106,6 +106,15 @@ Resourcen
 * Beispielquelltexte *Garagentor fernsteuern* (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control/windows_phone>`__)
 * Beispielquelltext *Benachrichtigung durch die Türklingel* (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
 
+
+Benötigte Werkzeuge
+-------------------
+
+* Schraubendreher (um Gehäuse zu öffnen etc.)
+* Lötkolben
+* Zinn
+
+
 Firmware aktualisieren und erste Tests
 --------------------------------------
 
