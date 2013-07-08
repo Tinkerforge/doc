@@ -145,8 +145,9 @@ Danach sollten mit dem Brick Viewer alle Bricks und Bricklets überprüft
 werden. Dazu klickt man am besten durch die verschiedenen Tabs und 
 überprüft, dass der Master Brick und die Bricklets korrekt angezeigt werden.
 
-Wie es funktioniert
--------------------
+
+Funktionsweise
+--------------
 
 Es gibt zwei grundlegende Möglichkeiten dieses Kit zu nutzen: Spannungen messen
 und Spannungen schalten. Eine detailierte Erklärung der Grundlagen befindet

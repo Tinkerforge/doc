@@ -148,8 +148,9 @@ remote_switch_goals = {
 'en':
 """
 >>>goals
-The goal of this "project" is to give an idea how the relays
-have to be switched to turn the mains switches on/off.
+The goal of this little project is to give an idea how the relays of the
+Industrial Quad Relay Bricklets have to be switched to turn the mains
+switches on/off.
 
 The following code uses |ref_set_monoflop| to trigger a button
 press on the remote control. A monoflop will set a new state (relay open or close)
@@ -182,8 +183,9 @@ source code for a minimal example.
 'de':
 """
 >>>goals
-Das Ziel dieses "Projekts" ist es, eine Vorstellung darüber zu geben
-wie mit dem Relais die Steckdosen An- und Ausgeschaltet werden können.
+Das Ziel dieses kleinen Projekts ist es, eine Vorstellung darüber zu vermitteln
+wie die Relais des Industrial Quad Relay Bricklets geschaltet werden müssen,
+damit die Funksteckdosen an- und ausgeschaltet werden können.
 
 Der folgende Quelltext benutzt |ref_set_monoflop| um eine Knopfdruck
 auf der Fernbedienung auszulösen. Ein Monoflop setzt einen neuen Zustand
@@ -193,7 +195,7 @@ vorheriger Zustand wiederhergestellt.
 
 Dieses Ansatz simuliert einen Knopfdruck der für 1,5 Sekunden anhält.
 
-Gemäße :ref:`hardware setup section
+Gemäße der :ref:`Hardware-Aufbau Beschreibung
 <starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>`
 ist die Fernbedienung wie folgt mit den Relais verbunden:
 
@@ -206,13 +208,13 @@ ON     2
 OFF    3
 ====== ======
 
-Um "A ON" Auf der Fernbedienung auszulösen müssen also die Relais 0 und 2
-geschlossen werden. Dies wird mit der Selektionsbitmaske |bitmask_02|
+Um "A ON" auf der Fernbedienung auszulösen müssen also die Relais 0 und 2
+geschlossen werden. Dies wird durch die Selektionsbitmaske |bitmask_02|
 repräsentiert.
 
 Die Monoflop-Funktion kann also mit dieser Selektionsbitmaske und einer
 Zeit von 1500ms aufgerufen werden um einen Knopfdruck von "A ON"
-zu simulieren. Im folgenden wird dies in einem minimalen Beispielquelltext
+zu simulieren. Im Folgenden wird dies in einem minimalen Beispielquelltext
 dargestellt.
 <<<goals
 """
