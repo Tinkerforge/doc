@@ -22,7 +22,7 @@ solid state relays to short the inputs ON, OFF, A and B to GND. This way
 we will be able to switch two remote switches. If you want to also switch 
 C and D, you can use an additional Industrial Quad Relay.
 
-Take a look at the Remote Control
+The innards of the Remote Control
 ---------------------------------
 
 If you open your remote control you will most likely see a circuit board like this:

@@ -221,7 +221,7 @@ Step 4: Error handling and Logging
         end
         puts 'Industrial Digital In 4 initialized'
       rescue Exception => e
-        analog_in = nil
+        idi4 = nil
         puts 'Industrial Digital In 4 init failed: ' + e
       end
     end

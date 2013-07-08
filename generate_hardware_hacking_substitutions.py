@@ -494,9 +494,9 @@ smoke_detector_steps = {
  Schritt 1 zusammengefügt:
 
 .. |step2_intro| replace::
- Während des Enumerierungsprozesse soll das Analog In Bricklet konfiguriert
- werden. Dadurch ist sichergestellt, dass es neu konfiguriert wird nach
- einem Verbindungsabbruch oder einer Unterbrechung der Stromversorgung.
+ Während des Enumerierungsprozesses soll das Industrial Digital In 4 Bricklet
+ konfiguriert werden. Dadurch ist sichergestellt, dass es neu konfiguriert wird
+ nach einem Verbindungsabbruch oder einer Unterbrechung der Stromversorgung.
 
 .. |step2_enumerate| replace::
  Die Konfiguration soll beim ersten Start (|ENUMERATION_TYPE_CONNECTED|)
@@ -508,7 +508,7 @@ smoke_detector_steps = {
  |cb_interrupt| Callback-Funktion aufruft wenn sich die Spannung an einem
  der Eingänge verändert. Die Entprellperiode wird auf 10s (10000ms) gestellt,
  um zu vermeiden zu viele Callback zu erhalten. Interrupterkennung wird für
- alle Eingänge aktivert (15 = 0b1111).
+ alle Eingänge aktiviert (15 = 0b1111).
 
 .. |step2_put_together| replace::
  Schritt 2 zusammengefügt:

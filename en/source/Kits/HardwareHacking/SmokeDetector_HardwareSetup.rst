@@ -21,8 +21,8 @@ smoke detectors and place it next to the PC. It will be triggered
 by the other smoke detectors that are scattered throughout the house.
 
 
-Taking a look at the Smoke Detector
------------------------------------
+The innards of the Smoke Detector
+---------------------------------
 
 The ELRO FA20RF/2 has two LEDs next to the "TEST" and "LEARN" buttons.
 
