@@ -86,18 +86,18 @@ Tinkerforge.
 Technische Spezifikation
 ------------------------
 
-================================  ============================================================
+================================  ======================================
 Eigenschaft                       Wert
-================================  ============================================================
+================================  ======================================
 Digitale Eingänge                 4
-Spannungsbereich logisch 0        0-2V
-Spannungsbereich logisch 1        3-36V
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
+Spannungsbereich Low Pegel        0-2V
+Spannungsbereich High Pegel       3-36V
+--------------------------------  --------------------------------------
+--------------------------------  --------------------------------------
 Digitale Ausgänge                 4
 Maximaler Schaltstrom             1,2A pro Relais
 Maximale Schaltspannung           30V pro Relais
-================================  ============================================================
+================================  ======================================
 
 Resourcen
 ---------
@@ -148,34 +148,34 @@ werden. Dazu klickt man am besten durch die verschiedenen Tabs und
 Wie es funktioniert
 -------------------
 
-Es gibt zwei grundlegende Möglichkeiten dieses Kit zu nutzen:
-(Eine detailierte Erklärung befindet sich im
-:ref:`Hardware Hacking für Anfänger Tutorial <starter_kit_hardware_hacking_for_beginners>`
-)
+Es gibt zwei grundlegende Möglichkeiten dieses Kit zu nutzen: Spannungen messen
+und Spannungen schalten. Eine detailierte Erklärung der Grundlagen befindet
+sich im :ref:`Hardware Hacking für Anfänger
+<starter_kit_hardware_hacking_for_beginners>` Tutorial.
 
 
 Spannungen bis zu 36V messen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Der aktuelle Status von Elektrogeräten wird oft irgendwo in Form
-einer elektrischen Spanung repräsentiert. Wenn es sich um ein digitales Signal
-handelt und dessen Spannung unter 36V liegt, dann kann das Industrial Digital
-In 4 Bricklet damit verbunden werden und der Status ausgelesen werden.
-Ein gutes Beispiel dafür sind LEDs. Eine LED die den Zustand eines
-Systems anzeigt, kann problemlos ausgelesen werden.
+Der aktuelle Zustand von Elektrogeräten wird oft irgendwo in Form
+einer elektrischen Spannung repräsentiert. Wenn es sich um ein digitales Signal
+handelt und dessen Spannung unter 36V liegt, dann kann ein :ref:`Industrial
+Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` damit verbunden und
+der Zustand ausgelesen werden. Ein gutes Beispiel dafür sind LEDs. Eine LED die
+den Zustand eines Systems anzeigt, kann problemlos ausgelesen werden.
 
 Hierbei ist es wichtig zu beachten, dass die minimale Spannung, die als High
-detektiert wird bei 3V liegt. Die maximale Spannung die als Low detektiert wird
-liegt bei 2V. Zwischen diesen Spannungen ist das Verhalten undefiniert.
+erkannt wird, bei 3V liegt. Die maximale Spannung die als Low erkannt wird liegt
+bei 2V. Zwischen diesen Spannungen ist das Verhalten undefiniert.
 
-Um ein Signal auszulesen muss dieses an eins der Eingänge des Industrial 
+Um ein Signal auszulesen muss dieses an einen der Eingänge des Industrial
 Digital In 4 angeschlossen werden. Falls keine Reaktion des Eingangs im
 Brick Viewer zu erkennen ist, kann es sein das die Belegung gedreht werden muss 
 (verpolt). Die Belegung kann per Trial and Error getestet werden. Das
 Industrial Digital In 4 ist verpolungsgeschützt.
 
 Die nachfolgende Abbildung zeigt exemplarisch die notwendige Schaltung
-zum auslesen einer LED. Hierbei wurde der Vorwiderstand mit einbezogen
+zum Auslesen einer LED. Hierbei wurde der Vorwiderstand mit einbezogen
 um ausreichende Pegel für die High/Low detektion zu erhalten.
 
 .. image:: /Images/Kits/hardware_hacking_idi4_resistor_diode.jpg
@@ -187,7 +187,8 @@ um ausreichende Pegel für die High/Low detektion zu erhalten.
 Spannungen bis zu 30V schalten
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Mit dem Industrial Quad Relay Bricklet können Signal geschalten (kurz geschlossen)
+Mit dem :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
+können Signal geschalten (kurz geschlossen)
 werden. Viele Geräte verfügen über Taster oder Schalter die mit diesem Bricklet
 gehackt werden können. Ein gutes Beispiel hierfür sind Fernbedienungen.
 
@@ -209,8 +210,9 @@ Gerät zu verbinden müssen zuvor folgendes erledigt werden:
 * Finde Löt-Pads die benutzt werden können um eine Spannung zu messen oder zu schalten
 * Löte Drähte an diese Pads
 
-In dem :ref:`Hardware Hacking für Anfänger Tutorial <starter_kit_hardware_hacking_for_beginners>`
-werden diese Schritte genauer erläutert.
+In dem :ref:`Hardware Hacking für Anfänger
+<starter_kit_hardware_hacking_for_beginners>` Tutorial werden diese Schritte
+genauer erläutert.
 
 .. toctree::
    :hidden:

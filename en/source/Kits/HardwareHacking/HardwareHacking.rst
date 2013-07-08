@@ -142,9 +142,10 @@ the Bricks and Bricklets have versions that work together.
 How it works
 ------------
 
-Basically there are two different options with this kit:
-(A detailled description can be found at :ref:`Hardware Hacking for Beginners
-<starter_kit_hardware_hacking_for_beginners>`)
+Basically there are two different options with this kit: Detect digital signals
+and short-circuit signals. A detailled description of the basics can be found
+in the :ref:`Hardware Hacking for Beginners
+<starter_kit_hardware_hacking_for_beginners>` tutorial.
 
 Detect Digital Signals up to 36V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -152,9 +153,9 @@ Detect Digital Signals up to 36V
 If you want to read out the state of an electronic device, often 
 there is a voltage source somewhere that represents this state. If it is 
 a digital signal and the voltage is below 36V, you can connect the 
-Industrial Digital In 4 Bricklet to it and read it out. One good 
-option are LEDs. If your device has an LED representing a state you 
-can easily read the state.
+:ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` to
+it and read it out. A good option are LEDs. If your device has an LED
+representing a state you can easily read the state.
 
 It is important to keep in mind that a high signal level is detected 
 starting at 3V and a low signal level is detected below 2V. In between
@@ -179,9 +180,10 @@ to obtain suffice levels for high/low detection.
 Short Signals with a Voltage up to 30V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-With the Industrial Quad Relay Bricklet you can switch (short circuit) signals. 
-Many devices have switches or push buttons that can be hacked by 
-the Bricklet. Remote controls are good examples for it.
+With the :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
+you can switch (short circuit) signals.
+Many devices have switches or push buttons that can be hacked with this
+the Bricklet. Remote controls are good examples.
 
 Below you can find a connection diagram that shows a possible setup
 if you want to operate a switch with the Industrial Quad Relay Bricklet.
@@ -192,7 +194,7 @@ if you want to operate a switch with the Industrial Quad Relay Bricklet.
    :align: center
 
 
-Hardware Hacking for beginners
+Hardware Hacking for Beginners
 ------------------------------
 
 To connect the Industrial Digital In 4 or the Industrial Quad Relay Bricklet
@@ -201,8 +203,9 @@ to a device you have to accomplish two things:
 * Find solder pads that can be used to measure or switch a voltage.
 * Solder wires to these pads.
 
-If you have never done this, take a look at :ref:`Hardware Hacking for Beginners <starter_kit_hardware_hacking_for_beginners>`
-tutorial for an in-depth guide that explains both steps.
+If you have never done this, take a look at the :ref:`Hardware Hacking for
+Beginners <starter_kit_hardware_hacking_for_beginners>` tutorial for an
+in-depth guide that explains both steps.
 
 .. toctree::
    :hidden:
