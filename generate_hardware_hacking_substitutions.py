@@ -576,6 +576,81 @@ smoke_detector_steps = {
 """
 }
 
+
+garage_control_steps = {
+'en': """
+.. |step4_robust1| replace::
+ But the program is not yet robust enough. What happens if can't connect? What
+ happens if there is no Industrial Quad Relay Bricklet with the given UID?
+
+.. |step4_robust2| replace::
+ What we need is error handling!
+
+.. |step5_connect_result1| replace::
+ SUCCESS: The connection got established and an Industrial Quad Relay Bricklet
+ with the given UID was found.
+
+.. |step5_connect_result2| replace::
+ NO_CONNECTION: The connection could not be established.
+
+.. |step5_connect_result3| replace::
+ NO_DEVICE: The connection got established but there was no Industrial Quad
+ Relay Bricklet with the given UID.
+
+.. |step5_finish| replace::
+ Now the app can connect to an configurable host and port and trigger a button
+ on the remote control of your garage door opener using an Industrial Quad Relay
+ Bricklet.
+
+.. |step6_finish| replace::
+ Now the configuration and state is stored persistent across a restart of the app.
+
+.. |step7_intro| replace::
+ That's it! We are done with the app for our hacked garage door opener remote
+ control.
+
+.. |step7_together| replace::
+ Now all of the above put together
+""",
+'de': """
+.. |step4_robust1| replace::
+ Das Programm ist noch nicht robust genug. Was passiert wenn die Verbindung
+ nicht hergestellt werden kann? Was passiert wenn kein Industrial Quad Relay
+ Bricklet mit passender UID gefunden werden kann?
+
+.. |step4_robust2| replace::
+ Wir brauchen noch Fehlerbehandlung!
+
+.. |step5_connect_result1| replace::
+ SUCCESS: Die Verbindung wurde hergestellt und ein Industrial Quad Relay
+ Bricklet mit passender UID wurde gefunden.
+
+.. |step5_connect_result2| replace::
+ NO_CONNECTION: Die Verbindung konnte nicht hergestellt werden.
+
+.. |step5_connect_result3| replace::
+ NO_DEVICE: Die Verbindung wurde hergestellt, aber es wurde kein Industrial Quad
+ Relay Bricklet mit passender UID gefunden.
+
+.. |step5_finish| replace::
+ Die App kann sich zum eingestellten Host und Port verbinden und einen Taster
+ auf der Fernbedienung des Garagentoröffners betätigen mittels eines Industrial
+ Quad Relay Bricklets.
+
+.. |step6_finish| replace::
+ Jetzt wird die Konfiguration und der Zustand dauerhaft. auch über einen
+ Neustart der App hinweg, gespeichert.
+
+.. |step7_intro| replace::
+ Das ist es! Die App für die gehackte Fernbedienung des Garangentoröffners ist
+ fertig.
+
+.. |step7_together| replace::
+ Das Hauptprogramm in einem Stück
+"""
+}
+
+
 def make_substitutions():
     substitutions = ''
 
@@ -663,6 +738,15 @@ def make_remote_switch_toctree():
     return remote_switch_examples_toctree[lang].format('\n'.join(toctree_lines))
 
 
+def make_garage_control_substitutions():
+    substitutions = ''
+    substitutions += '>>>substitutions\n'
+    substitutions += garage_control_steps[lang] + '\n'
+    substitutions += '<<<substitutions\n'
+
+    return substitutions
+
+
 def write_if_changed(path, content):
     if os.path.exists(path):
         f = open(path, 'rb')
@@ -702,6 +786,9 @@ def generate(path):
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'RemoteSwitch.substitutions'), make_remote_switch_substitutions())
     print 'Generating RemoteSwitch.toctree (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'RemoteSwitch.toctree'), make_remote_switch_toctree())
+
+    print 'Generating GarageControl.substitutions (HardwareHacking)'
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'GarageControl.substitutions'), make_garage_control_substitutions())
 
 if __name__ == "__main__":
     generate(os.getcwd())

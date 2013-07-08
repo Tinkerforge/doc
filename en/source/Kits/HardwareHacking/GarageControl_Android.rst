@@ -1,6 +1,10 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Garage Door Openers using Android
 
+.. include:: GarageControl.substitutions
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
+
 .. _starter_kit_hardware_hacking_garage_control_android:
 
 Control Garage Door Openers using Android
@@ -17,7 +21,7 @@ If you are new to the Tinkerforge API, you should start
 
 We are also assuming that you have a remote control connected to
 an :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
-described :ref:`here <starter_kit_hardware_hacking_garage_control>`.
+described :ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
 
 
 Goals
@@ -324,10 +328,9 @@ disable and enable the GUI elements according to the current connection state:
         }
     }
 
-But the program is not yet robust enough. What happens if can't connect? What
-happens if there is no Industrial Quad Relay Bricklet with the given UID?
+|step4_robust1|
 
-What we need is error handling!
+|step4_robust2|
 
 
 Step 5: Error Handling and Reporting
@@ -396,11 +399,9 @@ the three possible outcomes of a connection attempt:
         NO_DEVICE
     }
 
-* SUCCESS: The connection got established and an Industrial Quad Relay Bricklet
-  with the given UID was found.
-* NO_CONNECTION: The connection could not be established.
-* NO_DEVICE: The connection got established but there was no Industrial Quad
-  Relay Bricklet with the given UID.
+* |step5_connect_result1|
+* |step5_connect_result2|
+* |step5_connect_result3|
 
 The :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>` method
 is used to check that the device for the given UID really is an Industrial Quad
@@ -508,9 +509,7 @@ Finally, the dialog gets created and shown:
         }
     }
 
-Now the app can connect to an configurable host and port and trigger a button
-on the remote control of your garage door opener using an Industrial Quad Relay
-Bricklet.
+|step5_finish|
 
 
 Step 6: Persistent Configuration and State
@@ -572,16 +571,15 @@ And is restored when ``onCreate()`` is called:
         }
     }
 
-Now the configuration and state is stored persistent across a restart of the app.
+|step6_finish|
 
 
 Step 7: Everything put together
 -------------------------------
 
-That's it! We are done with the app for our hacked garage door opener remote
-control.
+|step7_intro|
 
-Now all of the above put together (`download
+|step7_together| (`Download
 <https://raw.github.com/Tinkerforge/hardware-hacking/master/garage_control_smart_phone/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java>`__):
 
 .. literalinclude:: ../../../../../hardware-hacking/garage_control_smart_phone/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java
