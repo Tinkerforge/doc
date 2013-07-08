@@ -340,11 +340,11 @@ Python-Script "Ring Ring Ring!" ausgeben. Dieses Projekt kann natürlich
 erweitert werden, so dass SMS versendet oder dein Telefon klingelt wenn jemand
 and der Tür steht. Sei kreativ!
 
-.. image:: /Images/Kits/hardware_hacking_doorbell_350.jpg
+.. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
    :scale: 100 %
    :alt: Doorbell notifier
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_doorbell.jpg
+   :target: ../../_images/Kits/hardware_hacking_doorbell_closed.jpg
 
 Eine Beschreibung des Hardwareaufbaus und mehr Fotos gibt es 
 :ref:`hier <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup>`.
