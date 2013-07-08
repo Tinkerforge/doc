@@ -12,13 +12,14 @@ state. The number and behavior of the LEDs will depend on the used model.
 In this example we use an `ELRO FA20RF/2
 <http://www.elro.eu/en/products/cat/flamingo/security1/smoke-detectors/wireless-interconnectable-smoke-detectors>`__
 smoke detector. This smoke detector is wirelessly
-interconnectable. That means, you can put a smoke detector in every room
+interconnectable. That means, you can put a smoke detector in different rooms
 and if smoke is detected, all of the smoke detectors will start making
 noise.
 
 This is perfect for our hacking purposes. We can hack one of the
 smoke detectors and place it next to the PC. It will be triggered
-by the other smoke detectors that are scattered throughout the house.
+by the other smoke detectors that are scattered throughout the house
+and we can read out its state.
 
 
 The innards of the Smoke Detector
@@ -49,8 +50,8 @@ The LED in question is the transparent LED on the top right. It is
 a two-color LED and it can blink green as well as red. We will have
 to find the pins that control the green color of the LED.
 
-Since the LED is of through-hole type, the contacts are only exposed at the
-bottom.
+Since the LED is of through-hole type (not SMD), the contacts are only exposed 
+at the bottom.
 
 We have to remove the screws to get to the other side of the circuit board.
 
@@ -63,13 +64,17 @@ We have to remove the screws to get to the other side of the circuit board.
 The three solder pads at the top, left to the red sticker belong to
 the LED. We will have to solder wires to them.
 
-Connecting wires to the LED
----------------------------
+Soldering Wires to the LED and its Series Resistor
+--------------------------------------------------
 
 See here (TODO) for a basic soldering tutorial and here (TODO) for instructions
-how you can find the correct pins for the job.
+how you can find the correct pins of the LED and its series
+resistor.
 
-In case of the ELRO FA20RF/2 the two pads at the left can be used.
+In case of the ELRO FA20RF/2 the transparent LED consists in fact of two
+LEDs (one green and one red) in one common casing. Both have one common pin 
+(center) and one single pin each (pin left, right).
+To light the green LED the left pin is used.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_new_350.jpg
    :scale: 100 %
@@ -77,22 +82,23 @@ In case of the ELRO FA20RF/2 the two pads at the left can be used.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_new_1200.jpg
 
-For the left pad we trace the circuit board trace until we find the resistor.
-The cable is soldered on behind the resistor.
+We solder one wire to the center pin of the LED and trace the circuit from the
+left pin until we find the resistor
+(marked in red). The cable is soldered on behind this resistor.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_closeup_w_trace_350.jpg
    :scale: 100 %
-   :alt: Smoke detector opened with soldered LED
+   :alt: Smoke detector opened with soldered LED closeup
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_closeup_w_trace_1200.jpg
 
 After that we can screw the circuit board back to the casing.
-We connect the wires to the + and - of port 0 of the Industrial Digital In 
+We connect the wires to the + and - of port 0 of the Industrial Digital In 4
 Bricklet. We can check if the polarity is correct later on with the Brick Viewer.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_new_350.jpg
    :scale: 100 %
-   :alt: Smoke detector opened with soldered wires to LED
+   :alt: Smoke detector opened with soldered wires to LED connected to Industrial Digital In 4 Bricklet
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_new_1200.jpg
 
@@ -102,10 +108,9 @@ Brick Viewer.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_brickv_350.jpg
    :scale: 100 %
-   :alt: LED voltage signal in Brick Viewer
+   :alt: Brick Viewer: Industrial Digital In 4
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_brickv.jpg
 
-If nothing shows up in the Brick Viewer the wires are most 
-likely reversed. In this case you have to change the polarity 
-(switch VIN and GND).
+If the state of the input does not change in Brick Viewer the wires are most 
+likely reversed. In this case you have to swap them.

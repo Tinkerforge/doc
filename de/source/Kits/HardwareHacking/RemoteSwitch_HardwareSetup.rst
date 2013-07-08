@@ -6,67 +6,79 @@
 Hardware-Aufbau: Funksteckdosen
 ===============================
 
-In this kit remote control mains switches are included. So this example
-describes how to hack the included remote control. There are many other 
-remote control mains switches with similar or identical remote controls
-on the market, so you can most likely use this description for these, too.
+In diesem Kit sind Funksteckdosen enthalten. Dieses Beispiel beschreibt wie
+diese gehackt werden können. Es gibt viele verschiedene Funksteckdosen
+mit identischen oder ähnlichen Fernbedienungen auf dem Mark, so dass diese
+Beschreibung auch für diese gilt.
 
-Most remote controls for remote control mains switches are equipped with an IC 
-called HX2262. Basically it has six different inputs: Two to define if it is an 
-ON or OFF switch command and four inputs to define what it switches (A, B, 
-C or D). An input is activated if it is switched to GND. All inputs are 
-interconnected in a matrix style order.
+Die meisten Fernbedienungen für Funksteckdosen sind mit einem IC genannt
+HX2262 ausgestattet. Dieser besitzt im wesentlichen sechs verschiedene 
+Eingänge: Zwei um zu definieren ob es eine EIN oder AUS Kommando ist und vier
+Eingänge um zu definieren was geschalten werden soll (A, B, C oder D). Alle
+Eingänge sind in einer Matrix verschaltet.
 
-In this example we will use the Industrial Quad Relay Bricklet with its four
-solid state relays to short the inputs ON, OFF, A and B to GND. This way
-we will be able to switch two remote switches. If you want to also switch 
-C and D, you can use an additional Industrial Quad Relay.
+In diesem Beispiel werden wir das :ref:`Industrial Quad Relay Bricklet
+<industrial_quad_relay_bricklet>` mit seinen
+vier Solid State Relais nutzen um die Eingänge EIN, AUS, A und B nach GND
+zu schalten. Wenn zusätzlich auch C und D geschalten werden soll muss ein 
+weiteres Industrial Quad Relay Bricklet genutzt werden.
 
 Das Innenleben der Fernbedienung
 --------------------------------
 
-If you open your remote control you will most likely see a circuit board like this:
+Im Gehäuse der Fernbedienung befindet sich höchst wahrscheinlich 
+eine Leiterplatte wie diese:
 
 .. image:: /Images/Kits/hardware_hacking_remote_open_350.jpg
    :scale: 100 %
-   :alt: Remote control opened
+   :alt: Fernbedienung geöffnet
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_open_1200.jpg
 
-The big IC right of the red DIP switch is the HX2262. If you remove the casing
-completely and take a look at the bottom side it should look like this:
+Das große IC rechts neben dem roten DIP Schalter ist der HX2262. Wenn das 
+Gehäuse komplett entfernt wurde und man einen Blick auf die Unterseite der
+Leiterplatte wirft sollte diese wie folgt aussehen:
 
 .. image:: /Images/Kits/hardware_hacking_remote_bottom_350.jpg
    :scale: 100 %
-   :alt: Remote control close lookup bottom side
+   :alt: Nahaufname: Fernbedienung Unterseite
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_bottom_1200.jpg
 
 
-Drähte am IC anschließen
-------------------------
+Drähte am IC anlöten
+--------------------
 
-Next we have to solder the wires to connect to the inputs of the remote
-control. We will solder five wires to the HX2262 IC:
+Als nächstes müssen wir Drähte an den HX2262 anlöten um diese von außen 
+steuern zu können. Wir werden fünf Drähte an den HX2262 anlöten:
+TODO soldering tutorial
 
-========== ====== ==========
-Pin Number Signal Wire Color
-========== ====== ==========
-6          A      blue
-7          B      red
+========== ====== ===========
+Pin Nummer Signal Draht Farbe
+========== ====== ===========
+6          A      blau
+7          B      rot
 8          C      /
-9          GND    black
+9          GND    schwarz
 10         D      /
 11         /      /
-12         ON     yellow
-13         OFF    purple
-========== ====== ==========
+12         ON     gelb
+13         OFF    lila
+========== ====== ===========
 
-After that it will look like this:
+Das folgende Foto zeigt die Position des HX2262 und die Pinnummerierung:
+
+.. image:: /Images/Kits/hardware_hacking_remote_bottom_labeled_350.jpg
+   :scale: 100 %
+   :alt: Nahaufnahme: Fernbedienung Unterseite beschriftet
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_remote_bottom_labeled_1200.jpg
+
+Nachdem Löten sollte die Leiterplatte wie folgt aussehen:
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_closeup_remote_350.jpg
    :scale: 100 %
-   :alt: Remote control close lookup with soldered wires
+   :alt: Nahaufname: Fernbedienung mit angelöteten Drähten
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_soldered_closeup_remote_1200.jpg
 
@@ -76,36 +88,37 @@ After that it will look like this:
 Drähte am Industrial Quad Relay Bricklet anschließen
 ----------------------------------------------------
 
-Next we will connect these wires to the Industrial Quad Relay Bricklet.
-Each input is connected to its own relay. Simply put it into one
-of the two connectors of a relay.
+Als nächstes werden wir diese Drähte an das Industrial Quad Relay Bricklet
+anschließen. Jeder Eingang des HX2262 ist an ein Relais angeschlossen.
+Im ersten Schritt wird jeder Draht (außer schwarz) an einen der zwei
+Anschlüsse jedes Relais angeschlossen.
 
-====== ========== =====
-Signal Wire Color Relay
-====== ========== =====
-A      blue       0
-B      red        1
-ON     yellow     2
-OFF    purple     3
-====== ========== =====
+====== =========== ======
+Signal Draht Farbe Relais
+====== =========== ======
+A      blau        0
+B      rot         1
+ON     gelb        2
+OFF    lila        3
+====== =========== ======
 
-Now every Relay is connected to one wire, but each relay is missing the second 
-wire. The second connection has to be to GND. So we have to connect the black 
-GND wire to all of them. We do this by connecting the black wire to one relay 
-and the other relays will be connected to it by small wires we create of the 
-second black wire. The next picture depicts the finished work.
+Nun ist jedes Relais mit einem Draht verbunden, aber es fehlt der zweite Draht.
+Da wir gegen GND schalten wollen (mit GND kurzschließen) muss dieser zweite
+Draht GND sein. Dazu verbinden wir den schwarzen Draht mit einem Relais und 
+brücken ihn weiter mit kurzen schwarzen Drahtstücken zu den anderen. 
+Das nächste Bild zeigt das fertige Werk.
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_closeup_iqr_top_350.jpg
    :scale: 100 %
-   :alt: Industrial Quad Relay Bricklet connector closeup
+   :alt: Nahaufname: Industrial Quad Relay Bricklet Stecker
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_soldered_closeup_iqr_top_1200.jpg
 
-After that we are finished. The full hardware setup will look like this:
+Hiernach sind wir fertig. Der komplette Hardwareaufbau sieht wie folgt aus:
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_350.jpg
    :scale: 100 %
-   :alt: Industrial Quad Relay Bricklet with connected remote control
+   :alt: Industrial Quad Relay Bricklet mit verbundener Fernbedienung
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_soldered_1200.jpg
 

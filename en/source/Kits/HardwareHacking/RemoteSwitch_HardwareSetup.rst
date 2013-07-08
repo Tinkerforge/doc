@@ -17,10 +17,11 @@ ON or OFF switch command and four inputs to define what it switches (A, B,
 C or D). An input is activated if it is switched to GND. All inputs are 
 interconnected in a matrix style order.
 
-In this example we will use the Industrial Quad Relay Bricklet with its four
+In this example we will use the :ref:`Industrial Quad Relay Bricklet 
+<industrial_quad_relay_bricklet>` with its four
 solid state relays to short the inputs ON, OFF, A and B to GND. This way
 we will be able to switch two remote switches. If you want to also switch 
-C and D, you can use an additional Industrial Quad Relay.
+C and D, you can use an additional Industrial Quad Relay Bricklet.
 
 The innards of the Remote Control
 ---------------------------------
@@ -43,11 +44,12 @@ completely and take a look at the bottom side it should look like this:
    :target: ../../_images/Kits/hardware_hacking_remote_bottom_1200.jpg
 
 
-Connect wires to the IC
------------------------
+Solder wires to the IC
+----------------------
 
-Next we have to solder the wires to connect to the inputs of the remote
-control. We will solder five wires to the HX2262 IC:
+Next we have to solder the wires to the HC2262 to connect to the inputs 
+of the remote control. We will solder five wires to the HX2262 IC:
+TODO link to solder tutorial
 
 ========== ====== ==========
 Pin Number Signal Wire Color
@@ -62,7 +64,16 @@ Pin Number Signal Wire Color
 13         OFF    purple
 ========== ====== ==========
 
-After that it will look like this:
+The following image depicts the position of the HX2262 and the pin
+numbering:
+
+.. image:: /Images/Kits/hardware_hacking_remote_bottom_labeled_350.jpg
+   :scale: 100 %
+   :alt: Remote control close lookup bottom side labeled
+   :align: center
+   :target: ../../_images/Kits/hardware_hacking_remote_bottom_labeled_1200.jpg
+
+After soldering it will look like this:
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_closeup_remote_350.jpg
    :scale: 100 %
@@ -76,8 +87,9 @@ After that it will look like this:
 Connect wires to the Industrial Quad Relay Bricklet
 ---------------------------------------------------
 
-Next we will connect these wires to the Industrial Quad Relay Bricklet.
-Each input is connected to its own relay. Simply put it into one
+Next we will connect these wires (except black) to the Industrial Quad Relay 
+Bricklet.
+Each input of the HX2262 is connected to its own relay. Simply put it into one
 of the two connectors of a relay.
 
 ====== ========== =====
@@ -90,7 +102,8 @@ OFF    purple     3
 ====== ========== =====
 
 Now every Relay is connected to one wire, but each relay is missing the second 
-wire. The second connection has to be to GND. So we have to connect the black 
+wire. Since we want to switch to GND, the second connection has to be to GND. 
+So we have to connect the black 
 GND wire to all of them. We do this by connecting the black wire to one relay 
 and the other relays will be connected to it by small wires we create of the 
 second black wire. The next picture depicts the finished work.
