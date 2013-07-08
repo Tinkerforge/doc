@@ -138,12 +138,12 @@ Gewicht                           376g
 Ressourcen
 ----------
 
-* Wetterstationsgehäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
-* Beispielquelltexte *Write to LCD* (Download: |write_to_lcd_examples_download|)
-* Beispielquelltext *Xively* (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
-* Beispielquelltext *Webseite* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
-* Beispielquelltext *Button Control* (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
-* Demo Anwendung (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__)
+* Wetterstationsgehäuse als FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
+* Beispielquelltexte für :ref:`starter_kit_weather_station_write_to_lcd` (Download: |write_to_lcd_examples_download|)
+* Beispielquelltext für :ref:`starter_kit_weather_station_xively` (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
+* Beispielquelltext für :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
+* Beispielquelltext für :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
+* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__)
 
 
 Firmware aktualisieren und erste Tests
@@ -171,6 +171,8 @@ man am besten durch die verschiedenen Tabs und überprüft die Sensorwerte.
 Anschließend ist sichergestellt, dass der Master Brick und alle Bricklets
 korrekt funktionieren auch nachdem alles in das Gehäuse geschraubt wurde.
 
+.. _starter_kit_weather_station_demo:
+
 Demo Anwendung
 ^^^^^^^^^^^^^^
 
@@ -179,9 +181,9 @@ Starterkit: Wetterstation getestet werden. Diese implementiert für
 Demonstationszwecke drei der vorgestellten :ref:`Projekte
 <starter_kit_weather_station_projects>`:
 
-1. :ref:`Messwerte auf dem LCD anzeigen <starter_kit_weather_station_write_to_lcd>`
-2. :ref:`Anzeige von Statistiken mit Umschaltung per Taster <starter_kit_weather_station_button_control>`
-3. :ref:`Xively Anbindung <starter_kit_weather_station_xively>`
+1. :ref:`starter_kit_weather_station_write_to_lcd`
+2. :ref:`starter_kit_weather_station_button_control`
+3. :ref:`starter_kit_weather_station_xively`
 
 Jedes Projekt besitzt sein eigenes Tab in der Anwendung. Das erste Projekt
 zeigt nur die gemessenen Werte an. Das zweite Projekt ist komplexer und
@@ -315,6 +317,9 @@ Die Wetterstation in unserem Labor hat den Xively Feed
 `125881 <https://xively.com/feeds/125881>`__. Viel Spass beim
 überprüfen unserer Arbeitsbedingungen ;-)!
 
+
+.. _starter_kit_weather_station_website:
+
 Live-Anzeige von Messdaten auf einer Webseite
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -331,7 +336,7 @@ In diesem Projekt werden wir JavaScript/AJAX nutzen um die Messwerte
 alle 5 Sekunden auf einer Webseite neu zu laden.
 
 Eine Beispielimplementierung ist 
-in :ref:`PHP <starter_kit_weather_station_website>` verfügbar.
+in :ref:`PHP <starter_kit_weather_station_website_php>` verfügbar.
 
 .. toctree::
    :hidden:
@@ -362,7 +367,7 @@ Die vier Taster werden in diesem Projekt genutzt um zwischen
 * Zeit und Datum.
 
 Eine Beispielimplementierung ist
-in :ref:`C# <starter_kit_weather_station_csharp_button_control>` verfügbar.
+in :ref:`C# <starter_kit_weather_station_button_control_csharp>` verfügbar.
 
 .. toctree::
    :hidden:
