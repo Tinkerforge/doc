@@ -10,43 +10,46 @@ Funksteckdosen in C# mit GUI fernsteuern
    :start-after: >>>intro
    :end-before: <<<intro
 
-We are also assuming that you have a remote control connected to
-an :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
-described :ref:`here <starter_kit_hardware_hacking_remote_switch>`.
+Wir setzen weiterhin voraus, dass die Fernbedienung mit einem
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
+verbunden wurde wie :ref:`hier <starter_kit_hardware_hacking_remote_switch_hardware_setup>`
+beschrieben.
 
-A demo application based on this project is available
+Eine Demo-Anwendung basierend auf diesem Projekt ist verfügbar:
 (Download: `Windows, Linux, Mac OS X
 <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__):
 
-* On Windows it requires the `.NET Framework
-  <http://www.microsoft.com/de-de/download/details.aspx?id=30653>`__, but you
-  probably have this installed already.
-* On Linux it requires the `Mono Runtime for Linux
-  <http://www.mono-project.com/Mono:Linux>`__, but you probably have this
-  installed already, too.
-* On Mac OS X it requires the `Mono Runtime for Mac OS X
-  <http://www.mono-project.com/Mono:OSX>`__. Since Mac OS 10.8 you also have to
-  install `XQuartz <http://xquartz.macosforge.org/>`__ to make the Mono Runtime
-  work properly. Now you can start it with ``mono RemoteSwitchGUI.exe`` from a
-  terminal window.
+* Auf Windows wird das `.NET Framework
+  <http://www.microsoft.com/de-de/download/details.aspx?id=30653>`__ benötigt,
+  dies ist typsicherweise aber bereits installiert.
+* Auf Linux wird die `Mono Runtime for Linux
+  <http://www.mono-project.com/Mono:Linux>`__ benötigt, dies ist typsicherweise
+  aber bereits auch installiert.
+* Auf Mac OS X wird die `Mono Runtime for Mac OS X
+  <http://www.mono-project.com/Mono:OSX>`__ benötigt. Seit Mac OS 10.8 muss
+  außerdem noch `XQuartz <http://xquartz.macosforge.org/>`__ installiert werden
+  damit die Mono Runtime richtig funktioniert. Jetzt kann die Demo-Anwendung
+  mittels ``mono RemoteSwitchGUI.exe`` aus einem Terminal-Fenster heraus
+  gestartet werden.
 
 
 Ziele
 -----
 
-In this project we will create a robust GUI program that resembles the
-functionality of the actual remote control.
+In diesem Projekt wird ein robustes GUI Programm erstellt, das die
+Funktionalität der realen Fernbedienung nachbildet.
 
-The program will reuse some common parts of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` project.
+Ibn diesem Programm werden einige allgemeine Teile aus dem
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` Projekt
+wiederverwendet werden.
 
 
 Schritt 1: Die GUI erstellen
 ----------------------------
 
-The program will have a simple `Windows Forms
-<http://en.wikipedia.org/wiki/Windows_Forms>`__ GUI that contains four buttons
-and a list box for status messages:
+Das Programm wird ein einfaches `Windows Forms
+<http://en.wikipedia.org/wiki/Windows_Forms>`__ GUI erstellt mit vier Knöpfen
+und einer Liste für Statusmeldungen:
 
 .. image:: /Images/Kits/hardware_hacking_remote_switch_csharp_gui.jpg
    :scale: 100 %
@@ -54,13 +57,13 @@ and a list box for status messages:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_switch_csharp_gui.jpg
 
-We start with a simple ``Form`` that has title and size:
+Als erstes wird eine ``Form`` mit Titel und Größe erstellt:
 
 .. code-block:: csharp
 
-    class RemoteSwitch : Form
+    class RemoteSwitchGUI : Form
     {
-        public RemoteSwitch()
+        public RemoteSwitchGUI()
         {
             Text = "Remote Switch";
             Size = new Size(300, 500);
@@ -68,16 +71,16 @@ We start with a simple ``Form`` that has title and size:
 
         static public void Main()
         {
-            Application.Run(new RemoteSwitch());
+            Application.Run(new RemoteSwitchGUI());
         }
     }
 
-Then a 40 pixel height panel for the buttons is added on the top border and a
-list box for status messages fills the rest of the form:
+Dann wird ein 40 Pixel hohes Panel für die Knöpfe an der oberen Kante eingefügt,
+Die Liste für Statusmeldungen füllt den Rest der Form:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         Text = "Remote Switch";
         Size = new Size(300, 500);
@@ -92,8 +95,8 @@ list box for status messages fills the rest of the form:
         listBox.Dock = DockStyle.Fill;
         listBox.BringToFront();
 
-The ``CreateButton()`` method creates a new button with a given name and
-position:
+Die ``CreateButton()`` Methode erzeugt einen neuen Knopf mit vergebenem Namen
+und vorgegebener Position:
 
 .. code-block:: csharp
 
@@ -109,12 +112,12 @@ position:
         return button;
     }
 
-Finally four buttons are created, one for each button on the remote control
-that we want to be able to trigger:
+Zuletzt werden die vier Knöpfe erzeugt, einen für jeden zu steuernden Knopf auf
+der Fernbedienung:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         // [...]
 
@@ -123,24 +126,26 @@ that we want to be able to trigger:
         buttonBOn  = CreateButton("B On",  130);
         buttonBOff = CreateButton("B Off", 190);
 
-Now the GUI is finished.
+Das GUI ist jetzt fertig.
 
 
 Schritt 2: Bricks und Bricklets dynamisch erkennen
 --------------------------------------------------
 
-This step is basically the same as step 1 in the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` project,
-but with some changes to make it work in a GUI program.
+Dieser Schritt ist der gleiche wie Schritt 1 aus dem
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` Projekt,
+allerdings mit ein paar Änderungen, damit es in einem GUI Programm ordentlich
+funktioniert.
 
-We don't want to call the :csharp:func:`Connect() <IPConnection::Connect>`
-method directly, because it might take a moment and block the GUI during that
-period of time. Instead ``Connect()`` will be called from a thread, so it will
-run in the background and the GUI stays responsive:
+Die :csharp:func:`Connect() <IPConnection::Connect>` Methode soll nicht direkt
+aufgerufen werden, da dies einen Moment dauern kann und in dieser Zeit die GUI
+nicht auf den Benutzer reagieren könnte. Daher wird ``Connect()`` aus einem
+extra Thread aufgerufen werden, so dass es im Hintergrund ausgeführt wird und
+die GUI nicht blockiert wird:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         // [...]
 
@@ -160,9 +165,10 @@ run in the background and the GUI stays responsive:
         ipcon.Enumerate();
     }
 
-The ``ConnectedCB`` callback function is the same as in the smoke detector
-project. But the ``EnumerateCB`` callback function is simpler because the
-Industrial Quad Relay Bricklet does not need any configuration for this project:
+Die ``ConnectedCB`` Callback-Funktion ist die die gleiche wie im Rauchmelder
+Projekt. Aber die ``EnumerateCB`` Callback-Function ist einfacher, da das
+Industrial Quad Relay Bricklet nicht extra konfiguriert werden muss für diese
+Projekt:
 
 .. code-block:: csharp
 
@@ -184,13 +190,14 @@ Industrial Quad Relay Bricklet does not need any configuration for this project:
 Schritt 3: Taster auslösen
 --------------------------
 
-The connection is established and an Industrial Quad Relay Bricklet is found
-but there is no logic yet to trigger a switch if a button is clicked.
+Die Verbindung wurde hergestellt und ein Industrial Quad Relay Bricklet wurde
+gefunden, aber es fehlt noch die Logik um einen Klick auf einen Knopf des
+Programms in das Auslösen einen Tasters auf der Fernbedienung zu übersetzen.
 
-A delegate is added to the ``Click`` event of the button that calls a
-``TriggerSwitch()`` method with the given selection mask. This mask defines
-which switches of the Industrial Quad Relay Bricklet should be closed if the
-specific button is clicked:
+Dafür wird ein Delegate zum ``Click``-Event eines jeden Knopfes hinzugefügt.
+Der Delegate ruft dann eine ``TriggerSwitch()`` Methode mit einer gegebenen
+Bitmaske auf. Diese Bitmaske legt fest welche Relais des Industrial Quad Relay
+Bricklets geschlossen werden sollen, wenn ein bestimmter Knopf geklickt wird:
 
 .. code-block:: csharp
 
@@ -206,28 +213,29 @@ specific button is clicked:
         return button;
     }
 
-According to the :ref:`hardware setup section
-<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>` the
-inputs of the remote control should be connected as follows:
+Gemäße der :ref:`Hardware-Aufbau Beschreibung
+<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>`
+ist die Fernbedienung wie folgt mit den Relais verbunden:
 
-====== =====
-Signal Relay
-====== =====
+====== ======
+Signal Relais
+====== ======
 A      0
 B      1
 ON     2
 OFF    3
-====== =====
+====== ======
 
-To trigger the switch "A ON" of the remote control the relays 0 and 2 have to be
-closed. This is represented by the selection mask ``(1 << 0) | (1 << 2)``.
+Um "A ON" auf der Fernbedienung auszulösen müssen also die Relais 0 und 2
+geschlossen werden. Dies wird durch die Bitmaske ``(1 << 0) | (1 << 2)``
+repräsentiert.
 
-The constructor is changed to call ``CreateButton()`` with the correct
-selection mask for each button:
+Der Constructor wird so abgewandelt, dass er ``CreateButton()`` mit den
+passenden Bitmasken für jeden Knopf aufruft:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         // [...]
 
@@ -239,8 +247,13 @@ selection mask for each button:
 .. FIXME: Add a sentence about the matrix layout of the switch circuit and how
           this maps to the selection mask
 
-The ``TriggerSwitch()`` method then just starts a 1.5s (1500ms) monoflop on the
-selected switches to simulate a button press on the remote control:
+Die ``TriggerSwitch()`` Methode benutzt :csharp:func:`SetMonoflop()
+<BrickletIndustrialQuadRelay::SetMonoflop>` um eine Tasterdruck
+auf der Fernbedienung auszulösen. Ein Monoflop setzt einen neuen Zustand
+(Relais offen oder geschlossen) und hält diesen für eine bestimmte Zeit
+(1,5s in diesem Fall). Nach dieser Zeit wird der vorheriger Zustand
+wiederhergestellt. Dieses Ansatz simuliert einen Tasterdruck der für 1,5s
+anhält.
 
 .. code-block:: csharp
 
@@ -249,26 +262,28 @@ selected switches to simulate a button press on the remote control:
         brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 255, 1500);
     }
 
-That's it. If we would copy these three steps together in one file and execute
-it, we would have a working program that can control remote switches using
-their hacked remote control!
+Das ist es. Wenn wir diese drei Schritte zusammen in eine Datei kopieren und
+ausführen, dann hätten wir jetzt eine funktionierendes Programm, das
+Funksteckdosen über deren gehackte Fernbedienung fernsteuern kann!
 
-But the program is not yet robust enough. What happens if it can't connect on
-startup? What happens if the enumerate after an auto reconnect doesn't work?
+Das Programm ist noch nicht robust genug. Was passiert wenn die Verbindung beim
+Start des Programms nicht hergestellt werden kann, oder wenn das Enumerate nach
+einem Auto-Reconnect nicht funktioniert?
 
-What we need is error handling!
+Wir brauchen noch Fehlerbehandlung!
 
 
 Schritt 4: Fehlerbehandlung und Logging
 ---------------------------------------
 
-We will use the same principals as in step 4 of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4`
-project, but with some changes to make it work in a GUI program.
+Es werden die gleichen Konzepte wie in Schritt 4 des
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4` Projekt
+verwendet, aber mit einigen Anwandelungen, damit sie in einem GUI Programm
+richtig funktionieren.
 
-We can't just use ``System.Console.WriteLine()`` for logging because this is a
-GUI program and there is no console window. Instead the list box is going to
-display the log messages.
+Wir können nicht einfach ``System.Console.WriteLine()`` für Logausgaben
+verwenden, da dies ein GUI Programm ist und kein Konsolenfenster hat.
+Stattdessen werden die Logausgaben in einer Liste im GUI ausgegeben.
 
 But there is still a problem with that approach. The connection is established
 on an extra thread, but only the main thread can safely interact with the
@@ -316,7 +331,7 @@ GUI is shown for the first time. The ``Load`` event can be used for this:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         // [...]
 
@@ -332,10 +347,10 @@ GUI is shown for the first time. The ``Load`` event can be used for this:
 Schritt 5: Alles zusammen
 -------------------------
 
-That's it! We are done with our hacked remote switch and all of the goals
-should be met.
+Das is es! Das C# Programm zum fernsteuern der gehackten Funksteckdosen ist
+fertig und sollte nun alle gesteckten Ziele erfüllen.
 
-Now all of the above put together (`download
+Das gesamte Programm in einem Stück (`download
 <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch_gui/csharp/RemoteSwitchGUI.cs>`__):
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch_gui/csharp/RemoteSwitchGUI.cs

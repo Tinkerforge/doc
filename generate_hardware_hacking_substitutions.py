@@ -154,10 +154,9 @@ switches on/off.
 
 The following code uses |ref_set_monoflop| to trigger a button
 press on the remote control. A monoflop will set a new state (relay open or close)
-and hold it for a given time (1.5 seconds in the example code). After this time
-the previous state is restored.
-
-This approach simulates a button click that takes 1.5 seconds.
+and hold it for a given time (1.5s in the example code). After this time
+the previous state is restored. This approach simulates a button click that
+takes 1.5s (1500ms).
 
 According to the :ref:`hardware setup section
 <starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>` the
@@ -190,10 +189,9 @@ damit die Funksteckdosen an- und ausgeschaltet werden können.
 Der folgende Quelltext benutzt |ref_set_monoflop| um eine Knopfdruck
 auf der Fernbedienung auszulösen. Ein Monoflop setzt einen neuen Zustand
 (Relais offen oder geschlossen) und hält diesen für eine bestimmte Zeit
-(1,5 Sekunden im Beispielquelltext). Nach dieser Zeit wird der
-vorheriger Zustand wiederhergestellt.
-
-Dieses Ansatz simuliert einen Knopfdruck der für 1,5 Sekunden anhält.
+(1,5s im Beispielquelltext). Nach dieser Zeit wird der vorheriger Zustand
+wiederhergestellt. Dieses Ansatz simuliert einen Knopfdruck der für 1,5s
+(1500ms) anhält.
 
 Gemäße der :ref:`Hardware-Aufbau Beschreibung
 <starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>`
@@ -209,10 +207,9 @@ OFF    3
 ====== ======
 
 Um "A ON" auf der Fernbedienung auszulösen müssen also die Relais 0 und 2
-geschlossen werden. Dies wird durch die Selektionsbitmaske |bitmask_02|
-repräsentiert.
+geschlossen werden. Dies wird durch die Bitmaske |bitmask_02| repräsentiert.
 
-Die Monoflop-Funktion kann also mit dieser Selektionsbitmaske und einer
+Die Monoflop-Funktion kann also mit dieser Bitmaske und einer
 Zeit von 1500ms aufgerufen werden um einen Knopfdruck von "A ON"
 zu simulieren. Im Folgenden wird dies in einem minimalen Beispielquelltext
 dargestellt.

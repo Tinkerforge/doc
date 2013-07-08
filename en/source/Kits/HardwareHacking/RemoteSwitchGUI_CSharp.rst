@@ -58,9 +58,9 @@ We start with a simple ``Form`` that has title and size:
 
 .. code-block:: csharp
 
-    class RemoteSwitch : Form
+    class RemoteSwitchGUI : Form
     {
-        public RemoteSwitch()
+        public RemoteSwitchGUI()
         {
             Text = "Remote Switch";
             Size = new Size(300, 500);
@@ -68,7 +68,7 @@ We start with a simple ``Form`` that has title and size:
 
         static public void Main()
         {
-            Application.Run(new RemoteSwitch());
+            Application.Run(new RemoteSwitchGUI());
         }
     }
 
@@ -77,7 +77,7 @@ list box for status messages fills the rest of the form:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         Text = "Remote Switch";
         Size = new Size(300, 500);
@@ -114,7 +114,7 @@ that we want to be able to trigger:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         // [...]
 
@@ -140,7 +140,7 @@ run in the background and the GUI stays responsive:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         // [...]
 
@@ -227,7 +227,7 @@ selection mask for each button:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         // [...]
 
@@ -239,8 +239,12 @@ selection mask for each button:
 .. FIXME: Add a sentence about the matrix layout of the switch circuit and how
           this maps to the selection mask
 
-The ``TriggerSwitch()`` method then just starts a 1.5s (1500ms) monoflop on the
-selected switches to simulate a button press on the remote control:
+The ``TriggerSwitch()`` method uses :csharp:func:`SetMonoflop()
+<BrickletIndustrialQuadRelay::SetMonoflop>` to trigger a button
+press on the remote control. A monoflop will set a new state (relay open or close)
+and hold it for a given time (1.5s in this case). After this time
+the previous state is restored. This approach simulates a button click that
+takes 1.5s (1500ms).
 
 .. code-block:: csharp
 
@@ -316,7 +320,7 @@ GUI is shown for the first time. The ``Load`` event can be used for this:
 
 .. code-block:: csharp
 
-    public RemoteSwitch()
+    public RemoteSwitchGUI()
     {
         // [...]
 
