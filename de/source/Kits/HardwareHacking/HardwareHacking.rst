@@ -183,6 +183,24 @@ gehackt werden können. Ein gutes Beispiel hierfür sind Fernbedienungen.
    :target: ../../_images/Kits/hardware_hacking_industrial_quad_switch.jpg
 
 
+Hardware Hacking für Anfänger
+-----------------------------
+
+To connect the Industrial Digital In 4 or the Industrial Quad Relay Bricklet
+to a remote or similar you have to accomplish two things:
+
+* Find solder pads that can be used to measure or switch a voltage.
+* Solder cables to these pads.
+
+If you have never done this, click :ref:`here <starter_kit_hardware_hacking_for_beginners>`
+for an in-depth guide that explains both steps.
+
+.. toctree::
+   :hidden:
+
+   ForBeginners
+
+
 Beispiele
 ---------
 
