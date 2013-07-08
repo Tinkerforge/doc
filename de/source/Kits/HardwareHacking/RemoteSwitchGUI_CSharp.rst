@@ -347,7 +347,7 @@ GUI is shown for the first time. The ``Load`` event can be used for this:
 Schritt 5: Alles zusammen
 -------------------------
 
-Das is es! Das C# Programm zum fernsteuern der gehackten Funksteckdosen ist
+Das is es! Das C# Programm zum Fernsteuern der gehackten Funksteckdosen ist
 fertig und sollte nun alle gesteckten Ziele erfüllen.
 
 Das gesamte Programm in einem Stück (`download
