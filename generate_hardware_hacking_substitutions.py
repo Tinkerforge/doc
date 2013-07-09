@@ -666,8 +666,8 @@ functionality of the actual remote control.
 'de':
 """
 >>>goals
-In this project we will create a simple |name| app that resembles the
-functionality of the actual remote control.
+In diesem Projekt werden wir eine einfach |name| App entwickeln, die die
+Funktionalität der eigentlichen Fernbedienung nachbildet.
 <<<goals
 """
 }
@@ -740,6 +740,9 @@ garage_control_steps = {
  UID really is an Industrial Quad Relay Bricklet. If this is not the case then
  the connection gets closed:
 
+.. |step5_success| replace::
+ In case the connection attempt was successful the original logic stays the same:
+
 .. |step5_finish| replace::
  Now the app can connect to an configurable host and port and trigger a button
  on the remote control of your garage door opener using an Industrial Quad Relay
@@ -767,14 +770,14 @@ garage_control_steps = {
  Die |ref_connect| Methode soll nicht direkt aufgerufen werden, da dies einen
  Moment dauern kann und in dieser Zeit die GUI nicht auf den Benutzer reagieren
  könnte. Daher wird |connect| aus einem |async_helper| aufgerufen werden, so
- dass es im Hintergrund ausgeführt wird und die GUI nicht blockiert wird:
+ dass es im Hintergrund ausgeführt und die GUI nicht blockiert wird:
 
 .. |step2_finish| replace::
  Host, Port und UID können jetzt eingestellt werden und ein Klick auf den
  Connect Knopf stellt die Verbindung her.
 
 .. |step3_intro| replace::
- Die Verbindung ist hergestellt und the Industrial Quad Relay Bricklet wurde
+ Die Verbindung ist hergestellt und das Industrial Quad Relay Bricklet wurde
  gefunden, aber es fehlt noch die Logik um einen Taster auf der Fernbedienung
  auszulösen wenn der Knopf geklickt wurde.
 
@@ -825,6 +828,10 @@ garage_control_steps = {
  Mit der |ref_get_identity| Methode wird überprüft, ob die angegebene UID
  wirklich zu einem Industrial Quad Relay Bricklet gehört. Falls das nicht der
  Fall ist wird die Verbindung getrennt:
+
+.. |step5_success| replace::
+ Im Falle, dass die Verbindung erfolgreich war bleibt die ursprüngliche Logik
+ bestehen:
 
 .. |step5_finish| replace::
  Die App kann sich zum eingestellten Host und Port verbinden und einen Taster

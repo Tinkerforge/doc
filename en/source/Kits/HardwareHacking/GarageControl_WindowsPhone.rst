@@ -149,7 +149,7 @@ This step is similar to step 1 in the
     }
 
 The ``BackgroundWorker`` has an ``DoWork`` event that will be triggered from
-another thread after ``RunWorkerAsync`` was called. The host, port and UID
+another thread after ``RunWorkerAsync()`` was called. The host, port and UID
 configuration is passed to the ``DoWork`` event. This is necessary, because the
 ``ConnectWorker_DoWork()`` method needs this information, but is not
 allowed to access the GUI elements. Now the ``ConnectWorker_DoWork()`` method
@@ -157,8 +157,8 @@ can create an ``IPConnection`` and ``BrickletIndustrialQuadRelay`` object and
 call the ``Connect()`` method.
 
 Finally, the ``BackgroundWorker`` should be started when the connect button is
-clicked. To do this the ``Connect_Click()`` method is bound to the click event of
-the connect button:
+clicked. To do this the ``Connect_Click()`` method is bound to the ``Click``
+event of the connect button:
 
 .. code-block:: csharp
 
@@ -175,7 +175,7 @@ Step 3: Triggering Switches
 
 |step3_intro|
 
-To do this the ``Trigger_Click()`` method is bound to the click event of the
+To do this the ``Trigger_Click()`` method is bound to the ``Click`` event of the
 trigger button. It starts another ``BackgroundWorker`` that in turn calls the
 ``SetMonoflop()`` method of the Industrial Quad Relay Bricklet to trigger the
 switch on the remote control:
@@ -375,7 +375,7 @@ made visible to indicate that a connection attempt is in progress:
 Then the ``ConnectWorker_DoWork()`` method needs to be able to report its result.
 But it is not allowed to interact with the GUI, but it can assign a value to the
 ``Result`` member of the ``DoWorkEventArgs`` parameter that is then passed to
-the ``ConnectWorker_RunWorkerCompleted()`` method. We use this enum that
+the ``ConnectWorker_RunWorkerCompleted()`` method. We use this ``enum`` that
 represents the three possible outcomes of a connection attempt:
 
 .. code-block:: csharp
@@ -449,7 +449,7 @@ represents the three possible outcomes of a connection attempt:
     }
 
 Now the ``ConnectWorker_RunWorkerCompleted()`` method has to handle this three
-outcomes. First the progress dialog is dismissed:
+outcomes. First the progress bar is dismissed:
 
 .. code-block:: csharp
 
@@ -459,7 +459,7 @@ outcomes. First the progress dialog is dismissed:
 
         progress.Visibility = Visibility.Collapsed;
 
-In case the connection attempt was successful the original logic stays the same:
+|step5_success|
 
 .. code-block:: csharp
 

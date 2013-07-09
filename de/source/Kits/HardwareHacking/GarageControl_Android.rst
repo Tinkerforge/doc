@@ -42,8 +42,8 @@ wiederverwenden.
 Schritt 1: Die GUI erstellen
 ----------------------------
 
-After creating a new "Android Application Project" named "Garage Control" in
-Eclipse we start with creating the GUI:
+Nach dem Erstellen eines neuen "Android Application Project" namens
+"Garage Control" in Eclipse beginnen wir mit der Erstellung der GUI:
 
 .. image:: /Images/Kits/hardware_hacking_garage_control_android_gui_350.jpg
    :scale: 100 %
@@ -51,15 +51,17 @@ Eclipse we start with creating the GUI:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_control_android_gui.jpg
 
-The basis is a "Linear Layout (Vertical)". Three text fields allow to enter
-the host, port and UID of the Industrial Quad Relay Bricklet. For the port a
-"Number" text field is used, so Android will restrict the content of this
-text field to numbers. The final two elements are one "Button" to connect and
-disconnect and another one to trigger the remote control.
+Die Grundlage ist ein "Linear Layout (Vertical)". Drei Textfelder ermöglichen
+die Eingabe von Host, Port und UID des Industrial Quad Relay Bricklets. Für den
+Port wird ein "Number" Textfeld verwendet, so dass Android die möglichen
+Eingaben in diesem Textfeld auf Zahlen beschränken wird. Die letzten beiden
+Elemente sind Knöpfe für den Aufbau und das Trennen der Verbindung sowie das
+Auslösen eines Tastendrucks auf der gehackten Fernbedienung.
 
-Now the GUI layout is finished. To access the GUI components in the Java code
-we use the ``findViewById()`` method and store the references to member
-variables of the ``MainActivity`` class:
+Damit ist das Layout des GUIs fertig. Um auf die GUI Elemente von Java aus
+zugreifen zu können bietet Android die ``findViewById()`` Methode. Über diese
+erhält man Referenzen auf die GUI Elemente, welche dann in Member-Variablen
+der ``MainActivity`` Klasse zugewiesen werden:
 
 .. code-block:: java
 
@@ -125,18 +127,19 @@ Dieser Schritt ist ähnlich zu Schritt 1 des
         }
     }
 
-The ``ConnectAsyncTask`` is implemented as an inner class. This allows for
-direct access to the member variables of the ``MainActivity`` class.
+Der ``ConnectAsyncTask`` ist als Inner Class implementiert. Dadurch kann diese
+direkt auf Member-Variablen der äußeren ``MainActivity`` Klasse zugreifen.
 
-The ``onPreExecute()`` method is called before ``doInBackground()`` and stores
-the host, port and UID configuration from the GUI elements. This is necessary,
-because the ``doInBackground()`` method needs this information, but is not
-allowed to access the GUI elements. Now the ``doInBackground()`` method can
-create an ``IPConnection`` and ``BrickletIndustrialQuadRelay`` object and call
-the ``connect()`` method.
+Die ``onPreExecute()`` Methode wird vor ``doInBackground()`` aufgerufen und
+speichert die Host, Port und UID Konfiguration von den GUI Elementen zwischen.
+Dies ist notwendig, da die ``doInBackground()`` Methode diese Information
+benötigt, aber selbst nicht auf die GUI Elemente zugreifen darf. Jetzt kann
+die ``doInBackground()`` Methode die ``IPConnection`` und
+``BrickletIndustrialQuadRelay`` Objekte erzeugen und ``connect()`` aufrufen.
 
-Finally, a ``ConnectAsyncTask`` should be created and executed when the connect
-button is clicked. A ``OnClickListener`` added to the connect button does this:
+Schlussendlich soll ein ``ConnectAsyncTask`` erzeugt und gestartet werden, wenn
+der Connect-Knopf geklickt wird. Ein ``OnClickListener`` wird für diesen Zweck
+dem Connect-Knopf hinzugefügt:
 
 .. code-block:: java
 
@@ -165,9 +168,10 @@ Schritt 3: Taster auslösen
 
 |step3_intro|
 
-An ``OnClickListener`` is added to the trigger button that creates and executes
-an ``AsyncTask`` that in turn calls the ``setMonoflop`` method of the Industrial
-Quad Relay Bricklet to trigger the switch on the remote control:
+Ein ``OnClickListener`` wird dem Trigger-Knopf hinzugefügt. Dieser erzeugt und
+startet einen ``AsyncTask`` der wiederum die ``setMonoflop()`` Methode des
+Industrial Quad Relay Bricklet aufruft, um einen Taster auf der Fernbedienung
+zu drücken:
 
 .. code-block:: java
 
@@ -214,9 +218,9 @@ Schritt 4: Weitere GUI-Logik
         }
     }
 
-The ``onPostExecute()`` method is called after ``doInBackground()``. It changes
-the text on the button and sets a new ``OnClickListener`` that will closes the
-connection if the button is clicked:
+Die ``onPostExecute()`` Methode wird nach ``doInBackground()`` aufgerufen. Sie
+ändert den Text des Knopfes und setzt einen neuen ``OnClickListener``, der die
+Verbindung trennen wird wenn der Knopf geklickt wird:
 
 .. code-block:: java
 
@@ -226,10 +230,11 @@ connection if the button is clicked:
         }
     }
 
-We don't want to call the :java:func:`disconnect() <IPConnection::disconnect>`
-method directly, because it might take a moment and block the GUI during that
-period of time. Instead ``disconnect()`` will be called from an ``AsyncTask``,
-so it will run in the background and the GUI stays responsive:
+Die :java:func:`disconnect() <IPConnection::disconnect>` Methode soll nicht
+direkt aufgerufen werden, da diese einen Moment dauern kann und in dieser Zeit
+die GUI blockiert ist. Stattdessen wird ``disconnect()`` in einem ``AsyncTask``
+aufgerufen, wodurch es im Hintergrund ausgeführt und die GUI nicht blockiert
+wird:
 
 .. code-block:: java
 
@@ -246,9 +251,9 @@ so it will run in the background and the GUI stays responsive:
         }
     }
 
-Once the connection is closed a new ``OnClickListener`` is set that will
-execute ``ConnectAsyncTask`` to establish the connection if the connect button
-is clicked:
+Sobald die Verbindung getrennt ist wird ein neuer ``OnClickListener`` gesetzt
+der einen ``ConnectAsyncTask`` erzeugt und startet, um die Verbindung neu
+aufzubauen wenn der Connect-Knopf geklickt wird:
 
 .. code-block:: java
 
@@ -260,8 +265,9 @@ is clicked:
 
 |step4_disabled_gui|
 
-The ``ConnectAsyncTask`` and the ``DisconnectAsyncTask`` are extended to
-disable and enable the GUI elements according to the current connection state:
+Der ``ConnectAsyncTask`` und der ``DisconnectAsyncTask`` werden so erweitert,
+dass sie die GUI Elemente abhängig von dem aktuellen Zustand der Verbindung
+aktivieren oder deaktivieren:
 
 .. code-block:: java
 
@@ -327,11 +333,12 @@ Es werden die gleichen Konzepte wie in Schritt 4 des
 <starter_kit_hardware_hacking_smoke_detector_java_step4>` Projekts angewandt,
 allerdings mit Abwandlungen damit sie in einem GUI Programm funktionieren.
 
-We can't just use ``System.out.println()`` for error reporting because there
-is no console window in an app. Instead dialog boxes are used.
+Wir können nicht einfach ``System.out.println()`` für Fehlermeldungen
+verwenden, da dies ein GUI Programm ist und kein Konsolenfenster hat.
+Stattdessen werden Dialogboxen verwendet.
 
-The ``ConnectAsyncTask`` has to validate the user input before using it. An
-``AlertDialog`` is used to report possible problems:
+Der ``ConnectAsyncTask`` muss die Benutzereingaben validieren bevor sie
+verwendet werden. Mittels ``AlertDialog`` werden mögliche Probleme gemeldet:
 
 .. code-block:: java
 
@@ -354,8 +361,8 @@ The ``ConnectAsyncTask`` has to validate the user input before using it. An
             }
         }
 
-The ``ConnectAsyncTask`` also gains a ``ProgressDialog`` to show the connection
-process:
+Der ``ConnectAsyncTask`` bekommt auch einen ``ProgressDialog`` um auf den
+laufenden Verbindungsversuch hinzuweisen:
 
 .. code-block:: java
 
@@ -373,10 +380,11 @@ process:
             progressDialog.show();
         }
 
-Then the ``doInBackground()`` method needs to be able to report its result. But
-it is not allowed to interact with the GUI, but it can return a value that is
-then passed to the ``onPostExecute()`` method. We use this enum that represents
-the three possible outcomes of a connection attempt:
+Dann benötigt die ``doInBackground()`` Methode noch eine Möglichkeit das
+Ergebnis des Verbindungsversuchs mitzuteilen. Sie darf zwar nicht direkt mit
+dem GUI interagieren, kann aber einen Wert zurückgeben, der dann an den Aufruf
+der ``onPostExecute()`` Methode übergeben wird. Wir verwenden hier ein ``enum``,
+das die drei möglichen Ausgänge eines Verbindungsversuchs repräsentiert:
 
 .. code-block:: java
 
@@ -425,8 +433,8 @@ the three possible outcomes of a connection attempt:
         return ConnectResult.SUCCESS;
     }
 
-Now the ``onPostExecute()`` method has to handle this three outcomes. First the
-progress dialog is dismissed:
+Die ``onPostExecute()`` Methode muss jetzt entsprechend reagieren. Als erstes
+wird immer der ``ProgressDialog`` ausgeblendet:
 
 .. code-block:: java
 
@@ -434,7 +442,7 @@ progress dialog is dismissed:
     protected void onPostExecute(ConnectResult result) {
         progressDialog.dismiss();
 
-In case the connection attempt was successful the original logic stays the same:
+|step5_success|
 
 .. code-block:: java
 
@@ -445,8 +453,8 @@ In case the connection attempt was successful the original logic stays the same:
             trigger.setEnabled(true);
         }
 
-In the error case we use an ``AlertDialog`` and set the error message according
-to the connection result:
+Im Falle eines Fehler wird ein ``AlertDialog`` mit der entsprechenden
+Fehlermeldung angezeigt:
 
 .. code-block:: java
 
@@ -461,8 +469,8 @@ to the connection result:
 
             builder.setCancelable(false);
 
-Then retry and cancel buttons are added with the respective logic to either
-retry to connect or to cancel the connection attempt:
+Die Knöpfe für "Wiederholen" und "Abbrechen" und werden abhängig vom Ausgang
+des Verbindungsversuchs zum Dialog hinzugefügt:
 
 .. code-block:: java
 
@@ -486,7 +494,7 @@ retry to connect or to cancel the connection attempt:
                 }
             });
 
-Finally, the dialog gets created and shown:
+Schlussendlich wird der Dialog erzeugt und angezeigt:
 
 .. code-block:: java
 
@@ -500,9 +508,9 @@ Finally, the dialog gets created and shown:
 Schritt 6: Konfiguration und Zustand speichern
 ----------------------------------------------
 
-The app doesn't store its configuration yet. Android provides the
-``SharedPreferences`` class to take care of this. In ``onCreate()`` the
-configuration is restored:
+Die App speichert die Konfiguration noch nicht. Android bietet dafür die
+``SharedPreferences`` Klasse an. In ``onCreate()`` wird die Konfiguration
+geladen:
 
 .. code-block:: java
 
@@ -515,7 +523,7 @@ configuration is restored:
         uid.setText(settings.getString("uid", uid.getText().toString()));
     }
 
-In ``onStop()`` the configuration is then stored again:
+In ``onStop()`` wird die Konfiguration gespeichert:
 
 .. code-block:: java
 
@@ -531,9 +539,9 @@ In ``onStop()`` the configuration is then stored again:
         editor.commit();
     }
 
-If the orientation is changed Android basically restarts the app for the
-new orientation. This makes our app loss the connection. Therefore, the state
-of the connection is stored when ``onSaveInstanceState()`` is called:
+Wenn die Orientierung wechselt dann wird die App beendet und mit der neuen
+Orientierung neu gestartet. Dadurch verliert die App die aufgebaute Verbindung.
+Daher wird der Verbindungszustand in ``onSaveInstanceState()`` gespeichert:
 
 .. code-block:: java
 
@@ -544,7 +552,7 @@ of the connection is stored when ``onSaveInstanceState()`` is called:
                                          ipcon.getConnectionState() == IPConnection.CONNECTION_STATE_CONNECTED);
     }
 
-And is restored when ``onCreate()`` is called:
+Und in ``onCreate()`` wiederhergestellt:
 
 .. code-block:: java
 

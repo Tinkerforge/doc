@@ -165,8 +165,8 @@ Step 3: Triggering Switches
 |step3_intro|
 
 An ``OnClickListener`` is added to the trigger button that creates and executes
-an ``AsyncTask`` that in turn calls the ``setMonoflop`` method of the Industrial
-Quad Relay Bricklet to trigger the switch on the remote control:
+an ``AsyncTask`` that in turn calls the ``setMonoflop()`` method of the
+Industrial Quad Relay Bricklet to trigger the switch on the remote control:
 
 .. code-block:: java
 
@@ -374,8 +374,8 @@ process:
 
 Then the ``doInBackground()`` method needs to be able to report its result. But
 it is not allowed to interact with the GUI, but it can return a value that is
-then passed to the ``onPostExecute()`` method. We use this enum that represents
-the three possible outcomes of a connection attempt:
+then passed to the ``onPostExecute()`` method. We use this ``enum`` that
+represents the three possible outcomes of a connection attempt:
 
 .. code-block:: java
 
@@ -433,7 +433,7 @@ progress dialog is dismissed:
     protected void onPostExecute(ConnectResult result) {
         progressDialog.dismiss();
 
-In case the connection attempt was successful the original logic stays the same:
+|step5_success|
 
 .. code-block:: java
 
