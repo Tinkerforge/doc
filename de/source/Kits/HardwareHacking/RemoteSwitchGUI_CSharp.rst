@@ -133,7 +133,8 @@ Schritt 2: Bricks und Bricklets dynamisch erkennen
 --------------------------------------------------
 
 Dieser Schritt ist der gleiche wie Schritt 1 aus dem
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` Projekt,
+:ref:`Rauchmelder mit C# auslesen
+<starter_kit_hardware_hacking_smoke_detector_csharp_step1>` Projekts,
 allerdings mit ein paar Änderungen, damit es in einem GUI Programm ordentlich
 funktioniert.
 
@@ -277,9 +278,10 @@ Schritt 4: Fehlerbehandlung und Logging
 ---------------------------------------
 
 Es werden die gleichen Konzepte wie in Schritt 4 des
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4` Projekt
-verwendet, aber mit einigen Anwandelungen, damit sie in einem GUI Programm
-richtig funktionieren.
+:ref:`Rauchmelder mit C# auslesen
+<starter_kit_hardware_hacking_smoke_detector_csharp_step4>` Projekts verwendet,
+aber mit einigen Abwandelungen, damit sie in einem GUI Programm richtig
+funktionieren.
 
 Wir können nicht einfach ``System.Console.WriteLine()`` für Logausgaben
 verwenden, da dies ein GUI Programm ist und kein Konsolenfenster hat.

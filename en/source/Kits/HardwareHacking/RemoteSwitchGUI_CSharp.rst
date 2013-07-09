@@ -130,7 +130,8 @@ Step 2: Discover Bricks and Bricklets
 -------------------------------------
 
 This step is basically the same as step 1 in the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` project,
+:ref:`Read out Smoke Detectors using C#
+<starter_kit_hardware_hacking_smoke_detector_csharp_step1>` project,
 but with some changes to make it work in a GUI program.
 
 We don't want to call the :csharp:func:`Connect() <IPConnection::Connect>`
@@ -267,8 +268,9 @@ Step 4: Error handling and Logging
 ----------------------------------
 
 We will use the same principals as in step 4 of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4`
-project, but with some changes to make it work in a GUI program.
+:ref:`Read out Smoke Detectors using C#
+<starter_kit_hardware_hacking_smoke_detector_csharp_step4>` project,
+but with some changes to make it work in a GUI program.
 
 We can't just use ``System.Console.WriteLine()`` for logging because this is a
 GUI program and there is no console window. Instead the list box is going to
