@@ -6,7 +6,7 @@
 Remote Switch Hardware Setup
 ============================
 
-In this kit remote control mains switches are included. So this example
+This kit includes two remote control mains switches. So this example
 describes how to hack the included remote control. There are many other 
 remote control mains switches with similar or identical remote controls
 on the market, so you can most likely use this description for these, too.

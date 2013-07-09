@@ -16,6 +16,9 @@ Anstatt den Taster selber auszulösen werden wir diesen überbrücken
 wie zuvor schon :ref:`hier <starter_kit_hardware_hacking_for_beginners_quad_relay>` 
 beschrieben.
 
+Gehäuse öffnen
+--------------
+
 Im ersten Schritt öffnen wir dazu das Gehäuse der Fernbedienung
 mit einem Schraubendreher.
 
@@ -34,6 +37,9 @@ bei diesem Modell, das Garagtor öffnet bzw. schließt.
    :alt: Nahaufname: Fernbedienung Taster
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_remote_top_closeup.jpg
+
+Drähte anlöten
+--------------
 
 Wenn wir diesen Taster näher betrachten stellen wir fest, dass nur zwei der
 vier Pads mit Leiterbahnen verbunden sind. Wir haben also die Stellen 

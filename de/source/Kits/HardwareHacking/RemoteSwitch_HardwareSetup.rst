@@ -6,7 +6,7 @@
 Hardware-Aufbau: Funksteckdosen
 ===============================
 
-In diesem Kit sind Funksteckdosen enthalten. Dieses Beispiel beschreibt wie
+In diesem Kit sind zwei Funksteckdosen enthalten. Dieses Beispiel beschreibt wie
 diese gehackt werden können. Es gibt viele verschiedene Funksteckdosen
 mit identischen oder ähnlichen Fernbedienungen auf dem Mark, so dass diese
 Beschreibung auch für diese gilt.
