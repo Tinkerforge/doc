@@ -235,7 +235,7 @@ Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 * stecke zusammengebaute Seitenteile in Unterteil,
 * füge Verkabelung und WAGO Klemmen hinzu,
 * ziehe Kabel mit Kabelbinder für Zugentlastung fest und
-* schraube Oberteul auf obere Abstandshalter.
+* schraube Oberteil auf oberen Abstandshalter.
 
 Im folgenden befindet sich eine Explosionszeichnung des Dual Relay Bricklet-Gehäuse:
 
