@@ -21,9 +21,9 @@ Eine Demo-Anwendung basierend auf diesem Projekt ist verfügbar:
 
 * Auf Windows wird das `.NET Framework
   <http://www.microsoft.com/de-de/download/details.aspx?id=30653>`__ benötigt,
-  dies ist typsicherweise aber bereits installiert.
+  dies ist typischerweise aber bereits installiert.
 * Auf Linux wird die `Mono Runtime for Linux
-  <http://www.mono-project.com/Mono:Linux>`__ benötigt, dies ist typsicherweise
+  <http://www.mono-project.com/Mono:Linux>`__ benötigt, dies ist typischerweise
   aber bereits auch installiert.
 * Auf Mac OS X wird die `Mono Runtime for Mac OS X
   <http://www.mono-project.com/Mono:OSX>`__ benötigt. Seit Mac OS 10.8 muss

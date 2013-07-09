@@ -38,7 +38,7 @@ Features
   * PC, smart phone/tablet, Raspberry Pi or over the Internet (Internet of Things).
   * Demo applications for Android, Windows Phone and iPhone* are available.
 
-* Ready to Hack: Two Remote Controled Mains Switches included
+* Ready to Hack: Two Remote Controlled Mains Switches included
 
 * Read out and control low voltage mainstream devices,
 
@@ -61,7 +61,7 @@ Interaction is possible over USB or via Wi-Fi if a :ref:`WIFI Extension <wifi_ex
 is added. Also a direct Ethernet interface with the
 :ref:`Ethernet Extension <ethernet_extension>` can be achieved.
 
-Two remote controled mains switches are included in this kit, so you can directly
+Two remote controlled mains switches are included in this kit, so you can directly
 start to hack something. A :ref:`step-by-step guide
 <starter_kit_hardware_hacking_remote_switch>` will tell you how to do it
 (soldering iron, solder and a screwdriver are required).
@@ -122,7 +122,7 @@ Resources
 Required Tools
 --------------
 
-* Sordering Iron
+* Soldering Iron
 * Solder
 * Screwdriver (to open casings etc.)
 
@@ -155,7 +155,7 @@ How it works
 ------------
 
 Basically there are two different options with this kit: Detect digital signals
-and short-circuit signals. A detailled description of the basics can be found
+and short-circuit signals. A detailed description of the basics can be found
 in the :ref:`Hardware Hacking for Beginners
 <starter_kit_hardware_hacking_for_beginners>` tutorial.
 
@@ -268,7 +268,7 @@ Linux (Mono) and Mac OS X (Mono)) is available in
 
 * :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
 
-Minmalistic examples are available in
+Minimalistic examples are available in
 
 * |remote_switch_examples|.
 
@@ -343,7 +343,7 @@ Example apps for :ref:`Android (Java)
 and :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` are available.
 
-A demo app for iPhone is comming soon.
+A demo app for iPhone is coming soon.
 
 .. toctree::
    :hidden:

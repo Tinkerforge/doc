@@ -14,13 +14,13 @@ Beschreibung auch für diese gilt.
 Die meisten Fernbedienungen für Funksteckdosen sind mit einem IC genannt
 HX2262 ausgestattet. Dieser besitzt im wesentlichen sechs verschiedene 
 Eingänge: Zwei um zu definieren ob es eine EIN oder AUS Kommando ist und vier
-Eingänge um zu definieren was geschalten werden soll (A, B, C oder D). Alle
+Eingänge um zu definieren was geschaltet werden soll (A, B, C oder D). Alle
 Eingänge sind in einer Matrix verschaltet.
 
 In diesem Beispiel werden wir das :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` mit seinen
 vier Solid State Relais nutzen um die Eingänge EIN, AUS, A und B nach GND
-zu schalten. Wenn zusätzlich auch C und D geschalten werden soll muss ein 
+zu schalten. Wenn zusätzlich auch C und D geschaltet werden soll muss ein
 weiteres Industrial Quad Relay Bricklet genutzt werden.
 
 Das Innenleben der Fernbedienung
@@ -105,7 +105,7 @@ OFF    lila        3
 Nun ist jedes Relais mit einem Draht verbunden, aber es fehlt der zweite Draht.
 Da wir gegen GND schalten wollen (mit GND kurzschließen) muss dieser zweite
 Draht GND sein. Dazu verbinden wir den schwarzen Draht mit einem Relais und 
-brücken ihn weiter mit kurzen schwarzen Drahtstücken zu den anderen. 
+Brücken ihn weiter mit kurzen schwarzen Drahtstücken zu den anderen.
 Das nächste Bild zeigt das fertige Werk.
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_closeup_iqr_top_350.jpg

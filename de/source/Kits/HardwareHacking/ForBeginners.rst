@@ -31,31 +31,30 @@ andere Signale kurzgeschlossen werden können, ausgelöst durch ein anderes
 elektrisches Signal. Im Gegensatz zu normalen Relais sind Solid State Relais 
 nicht mechanisch, sie besitzen keine mechanischen Teile.
 
-Wenn mit den Relais etwas geschalten werden soll muss die maximal erlaubte
+Wenn mit den Relais etwas geschaltet werden soll muss die maximal erlaubte
 Spannung von 30V beachtet werden. Es darf also z.B. keine Netzspannung 
-geschalten werden! In den meisten Fällen ist die maximale Spannung in einer
+geschaltet werden! In den meisten Fällen ist die maximale Spannung in einer
 Schaltung durch die Versorgungsspannung gegeben. Als Beispiel werden alle
 Schaltkreise in einem batteriebetrieben Gerät höchstwahrscheinlich nicht
 die Batteriespannung überschreiten. Selbiges gilt für ein Gerät welches über
 ein Steckernetzteil versorgt wird. Aber natürlich gibt es Ausnahmen. Falls
 man sich nicht sicher ist sollte man nachmessen.
 
-
 Kurzfassung: Typische Anwendungen für dieses Bricklet ist das An- und
 Abschalten von anderen Schaltungen. Wir nutzen ein einfaches Beispiel um diese
 Anwendung zu erläutern. Die folgende Schaltung zeigt eine LED (mit dem 
-typischem Vorwiderstand), die über einen Schalter an- bzw. ausgeschalten
+typischem Vorwiderstand), die über einen Schalter an- bzw. ausgeschaltet
 werden kann.
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_off_350.jpg
    :scale: 100 %
-   :alt: Beispielschaltung mit Batterie, Schalter und LED, ausgeschalten
+   :alt: Beispielschaltung mit Batterie, Schalter und LED, ausgeschaltet
    :align: center
    :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_off_1500.jpg
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_on_350.jpg
    :scale: 100 %
-   :alt: Beispielschaltung mit Batterie, Schalter und LED, angeschalten
+   :alt: Beispielschaltung mit Batterie, Schalter und LED, angeschaltet
    :align: center
    :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_on_1500.jpg
 
@@ -132,13 +131,13 @@ Allgemeine Beschreibung
 Das :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` 
 ist mit vier `Optokopplern <http://de.wikipedia.org/wiki/Optokoppler>`__
 ausgestattet. Technisch gesehen besteht ein Optokoppler aus einer LED die
-wiederrum einen Fototransistor über ihr Licht steuert. Auf diese Art gibt es
+wiederum einen Fototransistor über ihr Licht steuert. Auf diese Art gibt es
 zwischen diesen beiden Bauteilen keine direkte elektrische Verbindung, sie sind
 galvanisch getrennt. 
 
 Weniger technisch formuliert ist das Industrial Digital In 4 Bricklet mit
 vier internen LEDs ausgestattet. Leuchtet eine dieser LEDs wird der 
-dazugehörende Ausgang auf High geschalten. Leuchet die LED nicht, so ist der
+dazugehörende Ausgang auf High geschaltet. Leuchtet die LED nicht, so ist der
 Ausgang logisch Low. Die Ausgänge sind mit dem Mikrocontroller des Bricks 
 verbunden, so dass der Status über diesen ausgelesen werden kann.
 
@@ -150,19 +149,19 @@ elektrisch Low ist darf die LED nicht leuchten. In der elektrischen
 Spezifikation des Industrial Digital In 4 Bricklet steht:
 Elektrische Spannungen unter 2V werden als "Low" (LED aus) interpretiert.
 Spannungen über 3V als "High" (LED an). Für Spannungen zwischen 2V und 3V
-ist das Verhalten undefiniert. Daher sollte dieser Berech vermieden werden.
+ist das Verhalten undefiniert. Daher sollte dieser Bereich vermieden werden.
 
 Wie benutzt man das Industrial Digital In 4 Bricklet?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In diesem Beispiel möchten wir den Zustand einer sehr einfachen Schaltung,
 repräsentiert durch eine LED, auslesen: 
-Die LED wird von etwas geschalten, in diesem Fall
+Die LED wird von etwas geschaltet, in diesem Fall
 von einem einfachen Schalter. Es könnte aber genauso gut ein IC o.ä. sein.
 
 .. image:: /Images/Kits/hardware_hacking_for_beginner_schematic_off_350.jpg
    :scale: 100 %
-   :alt: Beispielschaltung mit Batterie, Schalter und LED, ausgeschalten
+   :alt: Beispielschaltung mit Batterie, Schalter und LED, ausgeschaltet
    :align: center
    :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_off_1500.jpg
 
@@ -217,7 +216,7 @@ Induktivitäten und andere Bauteile die direkt auf die Platine gelötet werden.
 Aber wie weiß man um welche Art von Bauteil es sich handelt?
 Experten können Bauteile anhand ihrer Optik unterscheiden. Wenn das Bauteil
 auch noch eine Markierung besitzt, so kann auch deren Wert (z.B. 1k Ohm 
-Widerstand order 22 Ohm Widerstand) bestimmt werden. Wenn das Bauteil keine
+Widerstand oder 22 Ohm Widerstand) bestimmt werden. Wenn das Bauteil keine
 Markierung trägt und das Bauteil nicht optisch identifiziert werden kann, 
 so kann es nur per Messung oder über Ermittlung der Funktion in der
 Schaltung identifiziert werden.
@@ -273,5 +272,4 @@ Einen Draht an ein Pad anzulöten kann in fünf Schritten erfolgen:
 
 Eine Vereinfachung kann es sein wenn man den Draht vorher verzinnt.
 Bei `Youtube <www.youtube.com>`__ gibt es eine Menge an Howto Videos zum Thema
-löten.
-
+Löten.

@@ -46,7 +46,7 @@ Step-Down Power Supply is connected to the DC Jack Adapter and
 the Mini USB connector of the Master Brick is connected to the USB connector
 of the Raspberry Pi by a small Mini USB cable.
 
-How to mount the DC Jack Adapter in the case is describred in
+How to mount the DC Jack Adapter in the case is described in
 the :ref:`Wi-Fi Weather Station <starter_kit_weather_station_construction_wifi>`
 construction section.
 
