@@ -159,6 +159,11 @@ and short-circuit signals. A detailled description of the basics can be found
 in the :ref:`Hardware Hacking for Beginners
 <starter_kit_hardware_hacking_for_beginners>` tutorial.
 
+
+.. warning:: Keep voltages in mentioned limitations and don't hack devices 
+  which are supplied by probably dangerous high voltages (e.g. mains voltage)!
+
+
 Detect Digital Signals up to 36V
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

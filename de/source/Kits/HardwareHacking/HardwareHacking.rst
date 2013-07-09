@@ -165,6 +165,9 @@ und Spannungen schalten. Eine detailierte Erklärung der Grundlagen befindet
 sich im :ref:`Hardware Hacking für Anfänger
 <starter_kit_hardware_hacking_for_beginners>` Tutorial.
 
+.. warning:: Die genannten Spannungsobergrenzen sind einzuhalten!
+   Geräte die über eine potentiell gefährlich hohe Spannung
+   versorgt werden (z.B. Netzspannung) dürfen nicht gehackt werden!
 
 Spannungen bis zu 36V messen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
