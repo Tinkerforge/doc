@@ -19,7 +19,7 @@ You can install the egg with easy_install::
 
 On Windows easy_install might not be installed:
 
-* Install easy_install: http://pypi.python.org/pypi/setuptools#windows (setuptools)
+* Install easy_install: https://pypi.python.org/pypi/setuptools#windows (setuptools)
 * Open Windows command shell
 * Execute ``C:\YourPythonDir\Scripts\easy_install.exe C:\PathToEgg\tinkerforge.egg``
 

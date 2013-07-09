@@ -311,7 +311,7 @@ orientation.
 For this process often a
 `Kalman Filter <http://en.wikipedia.org/wiki/Kalman_filter>`__ is used.
 The filter that is used in the IMU Brick is based on
-`this paper <http://imumargalgorithm30042010sohm.googlecode.com/files/An%20efficient%20orientation%20filter%20for%20inertial%20and%20inertialmagnetic%20sensor%20arrays.pdf>`__
+`this paper <https://imumargalgorithm30042010sohm.googlecode.com/files/An%20efficient%20orientation%20filter%20for%20inertial%20and%20inertialmagnetic%20sensor%20arrays.pdf>`__
 by S. O. Madgwick. In our tests this new state of the art filter
 could achieve significantly better results than a Kalman Filter. Madgwick
 describes the approach of his filter as follows:

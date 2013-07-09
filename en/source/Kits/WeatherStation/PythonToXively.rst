@@ -48,7 +48,7 @@ Step 2: Understanding Xively protocol
 
 A quick search in the Xively API documentation reveals that we can update
 a datastream by `just sending a small JSON package
-<https://xively.com/docs/v2/datastream/update.html>`__.
+<https://xively.com/dev/docs/api/communicating/>`__.
 
 The given example is::
 

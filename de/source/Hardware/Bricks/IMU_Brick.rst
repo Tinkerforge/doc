@@ -317,7 +317,7 @@ absolute Orientierung im Raum zu ermitteln.
 Häufig wird für diesen Berechnungsprozess ein
 `Kalman Filter <http://de.wikipedia.org/wiki/Kalman-Filter>`__ verwendet.
 Der IMU Brick verwendet allerdings einen Filter der auf
-`diesem Paper <http://imumargalgorithm30042010sohm.googlecode.com/files/An%20efficient%20orientation%20filter%20for%20inertial%20and%20inertialmagnetic%20sensor%20arrays.pdf>`__
+`diesem Paper <https://imumargalgorithm30042010sohm.googlecode.com/files/An%20efficient%20orientation%20filter%20for%20inertial%20and%20inertialmagnetic%20sensor%20arrays.pdf>`__
 von S. O. Madgwick basiert. Unsere Tests haben gezeigt, dass dieser neuartige
 Filter signifikant bessere Ergebnisse als ein Kalman Filter erzielt. Madgwick
 beschreibt die Arbeitsweise seines Filter so:
