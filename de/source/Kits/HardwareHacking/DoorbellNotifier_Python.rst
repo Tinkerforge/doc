@@ -10,12 +10,20 @@ Benachrichtigung durch die Türklingel in Python
    :start-after: >>>intro
    :end-before: <<<intro
 
+Wir setzen weiterhin voraus, dass eine passender Türklingel mit einem
+:ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`
+verbunden wurde wie :ref:`hier
+<starter_kit_hardware_hacking_doorbell_notifier_hardware_setup>` beschrieben.
+
+
 Ziele
 -----
 
-In this project we modify the smoke detector Python script to notify us
-if the doorbell is engaged. Of course this script can be extended such that
-it will send an Email or SMS to you.
+In diesem Projekt wandeln wir den Quelltext des
+:ref:`starter_kit_hardware_hacking_smoke_detector_python` Projekts etwas ab,
+damit dieser uns benachrichtigt wenn jemand an der Tür klingelt. Natürlich
+kann diese Programm auch so erweitert werden, dass es eine Email oder SMS
+zur Benachrichtigung verschickt.
 
 
 Quelltext
