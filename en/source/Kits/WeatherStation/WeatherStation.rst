@@ -328,7 +328,7 @@ on a website:
    :target: ../../_images/Kits/weather_station_website_orig.jpg
 
 In this project we will use JavaScript/AJAX to update the measurements
-every 5 seconds, without the need to reload the webpage.
+every 5 seconds, without the need to reload the website.
 
 An example implementation is available
 in :ref:`PHP <starter_kit_weather_station_website_php>`.

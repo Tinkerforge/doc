@@ -101,8 +101,8 @@ Weight                            22g
 ================================  ============================================================
 
 
-Ressourcen
-----------
+Resources
+---------
 
 * W5200 Datasheet (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/datasheets/W5200.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/ethernet-extension-schematic.pdf>`__)

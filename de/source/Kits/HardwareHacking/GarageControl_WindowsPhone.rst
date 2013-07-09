@@ -1,6 +1,14 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Garagentor mit Windows Phone fernsteuern
 
+.. |name| replace:: Windows Phone
+.. |ref_CALLBACK_ENUMERATE| replace:: :csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
+.. |ref_connect| replace:: :csharp:func:`Connect() <IPConnection::Connect>`
+.. |connect| replace:: ``Connect()``
+.. |set_monoflop| replace:: ``SetMonoflop(1 << 0, 1 << 0, 1500)``
+.. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
+.. |async_helper| replace:: ``BackgroundWorker``
+
 .. include:: GarageControl.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -10,35 +18,32 @@
 Garagentor mit Windows Phone fernsteuern
 ========================================
 
-For this project we are assuming, that you have the `Windows Phone SDK
-<https://dev.windowsphone.com/en-us/downloadsdk>`__ set up and that you have a
-rudimentary understanding of the C# language.
+.. include:: WindowsPhoneCommon.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
-If you are totally new to C# itself you should start
-`here <http://csharp.net-tutorials.com/>`__.
-If you are new to the Tinkerforge API, you should start
-:ref:`here <api_bindings_csharp_windows_phone>`.
-
-We are also assuming that you have a remote control connected to
-an :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
-described :ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
+.. include:: GarageControl.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
 
 Ziele
 -----
 
-In this project we will create a simple Windows Phone app that resembles the
-functionality of the actual remote control.
+.. include:: GarageControl.substitutions
+   :start-after: >>>goals
+   :end-before: <<<goals
 
-The program will reuse some common parts of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` project.
+Die App wird einige allgemeine Teile es
+:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` Projekts
+wiederverwenden.
 
 
 Schritt 1: Die GUI erstellen
 ----------------------------
 
-After creating a new "Windows Phone App" named "Garage Control" in Visual Studio
-we start with creating the GUI:
+Nach dem Erstellen eines neuen "Windows Phone App" namens "Garage Control" in
+Visual Studio beginnen wir mit der Erstellung der GUI:
 
 .. image:: /Images/Kits/hardware_hacking_garage_control_windows_phone_gui_350.jpg
    :scale: 100 %
@@ -46,15 +51,15 @@ we start with creating the GUI:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_control_windows_phone_gui.jpg
 
-We extend the precreated layout by appending a "StackPanel" to the "LayoutRoot"
-grid, that will contain the other GUI elements. Three "TextBoxes" allow
-to enter the host, port and UID of the Industrial Quad Relay Bricklet. For the
-port a text box with ``InputScope="Number"`` is used, so Windows Phone will
-restrict the content of this text box to numbers. Below the text boxes goes a
-"ProgressBar" that will be used to indicate that a connection attempt is in
-progress. The final two elements are one "Button" to connect and
-disconnect and another one to trigger the remote control. Here is a snippet of
-the ``MainPage.xaml`` file:
+An das bereits bestehende "LayoutRoot" Element wird ein "StackPanel" angehängt,
+das dann alle weiteren GUI Elemente aufnehmen wird. Drei "TextBoxes" ermöglichen
+die Eingabe von Host, Port und UID des Industrial Quad Relay Bricklets. Für die
+Port Textbox wird das Attribut ``InputScope="Number"`` gesetzt, dadurch wird
+Windows Phone den Inhalt dieser Textbox auf Zahlen beschränken. Unterhalb der
+Textboxen folgt eine "ProgressBar" die einen laufenden Verbindungsversuch
+anzeigen wird. Die letzten beiden Elemente sind die "Button" für den Aufbau und
+das Trennen der Verbindung sowie das Auslösen eines Tastendrucks auf der
+gehackten Fernbedienung. Hier ein Auszug aus der ``MainPage.xaml`` Datei:
 
 .. code-block:: xml
 
@@ -77,10 +82,10 @@ the ``MainPage.xaml`` file:
         </Grid>
     </phone:PhoneApplicationPage>
 
-Now the GUI layout is finished. The initial GUI configuration is done in the
-constructor of the ``MainPage`` class. The progress bar is initially hidden and
-indeterminate mode is enabled, because the duration of a connection attempt is
-unknown:
+Damit ist das Layout des GUIs fertig. Die initiale Konfiguration des GUIs wird
+im Konstruktor der ``MainPage`` Klasse vorgenommen. Die "ProgressBar" ist am
+Anfang nicht sichtbar und Indeterminate Mode wird aktiviert, da die Dauer eines
+Verbindungsversuchs unbekannt ist:
 
 .. code-block:: csharp
 
@@ -99,18 +104,12 @@ unknown:
 Schritt 2: Bricks und Bricklets erkennen
 ----------------------------------------
 
-This step is similar to step 1 in the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` project. We apply
-some changes to make it work in a GUI program and instead of using the
-:csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>` to discover
-the Industrial Quad Relay Bricklet its UID has to be specified. This approach
-allows to pick the correct Industrial Quad Relay Bricklet even if multiple are
-connected to the same host at once.
+Dieser Schritt ist ähnlich zu Schritt 1 des
+:ref:`Rauchmelder mit C# auslesen
+<starter_kit_hardware_hacking_smoke_detector_csharp_step1>` Projekts.
+|step2_discover_by_uid|
 
-We don't want to call the :csharp:func:`Connect() <IPConnection::Connect>`
-method directly, because it might take a moment and block the GUI during that
-period of time. Instead ``Connect()`` will be called by a ``BackgroundWorker``,
-so it will run in the background and the GUI stays responsive:
+|step2_async|
 
 .. code-block:: csharp
 
@@ -150,17 +149,17 @@ so it will run in the background and the GUI stays responsive:
         }
     }
 
-The ``BackgroundWorker`` has an ``DoWork`` event that will be triggered from
-another thread after ``RunWorkerAsync`` was called. The host, port and UID
-configuration is passed to the ``DoWork`` event. This is necessary, because the
-``ConnectWorker_DoWork()`` method needs this information, but is not
-allowed to access the GUI elements. Now the ``ConnectWorker_DoWork()`` method
-can create an ``IPConnection`` and ``BrickletIndustrialQuadRelay`` object and
-call the ``Connect()`` method.
+Der ``BackgroundWorker`` hat eine ``DoWork``-Event das von einem anderen Thread
+ausgelöst wird sobald ``RunWorkerAsync()`` aufgerufen wurde. Die Host, Port und
+UID Konfiguration wird dann an das ``DoWork``-Event übergeben. Dies ist
+notwendig, da die ``ConnectWorker_DoWork()`` Methode diese Informationen
+benötigt, selbst aber nicht auf die GUI Elemente zugreifen darf. Jetzt kann die
+``ConnectWorker_DoWork()`` Methode die ``IPConnection`` und
+``BrickletIndustrialQuadRelay`` Objekte erzeugen und ``Connect()`` aufrufen.
 
-Finally, the ``BackgroundWorker`` should be started when the connect button is
-clicked. To do this the ``Connect_Click()`` method is bound to the click event of
-the connect button:
+Schlussendlich soll der ``BackgroundWorker`` gestartet werden, wenn der
+Connect-Knopf geklickt wird. Dafür wird die ``Connect_Click()`` Methode an das
+``Click``-Event des Connect-Knopfes gebunden:
 
 .. code-block:: csharp
 
@@ -169,21 +168,18 @@ the connect button:
         Connect();
     }
 
-Host, port and UID can now be configured and a click on the connect button
-establishes the connection.
+|step2_finish|
 
 
 Schritt 3: Taster auslösen
 --------------------------
 
-The connection is established and the Industrial Quad Relay Bricklet is found
-but there is no logic yet to trigger the switch on the remote control if the
-trigger button is clicked.
+|step3_intro|
 
-To do this the ``Trigger_Click()`` method is bound to the click event of the
-trigger button. It starts another ``BackgroundWorker`` that in turn calls the
-``SetMonoflop()`` method of the Industrial Quad Relay Bricklet to trigger the
-switch on the remote control:
+Dafür wird die ``Trigger_Click()`` Methode an das ``Click``-Event des
+Trigger-Knopfes gebunden. Diese startet einen anderen ``BackgroundWorker`` der
+dann wiederum die ``SetMonoflop()`` Methode des Industrial Quad Relay Bricklet
+aufruft um einen Taster auf der gehackten Fernbedienung zu drücken:
 
 .. code-block:: csharp
 
@@ -212,23 +208,17 @@ switch on the remote control:
         }
     }
 
-The call to ``SetMonoflop(1 << 0, 1 << 0, 1500)`` closes the first relay for
-1.5s then opens it again.
+|step3_monoflop|
 
-That's it. If we would copy these three steps together in one file, we would
-have a working app that allows a smart phone to control a garage door opener
-using its hacked remote control!
+|step3_finish1|
 
-We don't have a disconnect button yet and the trigger button can be clicked
-before the connection is established. We need some more GUI logic!
+|step3_finish2|
 
 
 Schritt 4: Weitere GUI-Logik
 ----------------------------
 
-There is no button to close the connection again after it got established. The
-connect button could do this. When the connection is established it should
-allow to disconnect it again:
+|step4_intro|
 
 .. code-block:: csharp
 
@@ -249,11 +239,12 @@ allow to disconnect it again:
         }
     }
 
-The ``ConnectWorker_RunWorkerCompleted()`` method is called after
-``ConnectWorker_DoWork()``. It changes the text on the button to "Disconnect".
-The ``Connect_Click()`` method now decides dynamically what to do. If there is
-no connection it calls ``Connect()``, if there is a connection is runs the
-disconnect background worker:
+Die ``ConnectWorker_RunWorkerCompleted()`` Methode wird nach
+``ConnectWorker_DoWork()`` aufgerufen. sie ändert den Text des Knopfes zu
+"Disconnect". Die ``Connect_Click()`` Methode entscheidet nun dynamisch was zu
+tun ist. Falls keine Verbindung besteht wird ``Connect()`` aufgerufen, 
+andernfalls wird der ``BackgroundWorker`` für das Trennen der Verbindung
+gestartet:
 
 .. code-block:: csharp
 
@@ -269,9 +260,10 @@ disconnect background worker:
         }
     }
 
-The disconnect background worker calls the :csharp:func:`Disconnect()
-<IPConnection::Disconnect>` method in the background, because it might take a
-moment and block the GUI during that period of time:
+Der ``BackgroundWorker`` für das Trennen der Verbindung ruft die
+:csharp:func:`Disconnect() <IPConnection::Disconnect>` Methode im Hintergrund
+auf, da dies einen Moment dauern kann und während dieser Zeit die GUI blockiert
+wäre:
 
 .. code-block:: csharp
 
@@ -301,12 +293,11 @@ moment and block the GUI during that period of time:
         }
     }
 
-Finally, the user should not be able to change the content of the text fields
-during the time the connection gets established and the trigger button should
-not be clickable if there is no connection.
+|step4_disabled_gui|
 
-The ``connectWorker`` and the ``disconnectWorker`` are extended to
-disable and enable the GUI elements according to the current connection state:
+Der ``connectWorker`` und der ``disconnectWorker`` werden so erweitert,
+dass sie die GUI Elemente abhängig von dem aktuellen Zustand der Verbindung
+aktivieren oder deaktivieren:
 
 .. code-block:: csharp
 
@@ -348,19 +339,22 @@ disable and enable the GUI elements according to the current connection state:
 |step4_robust2|
 
 
-Schritt 5: Konfiguration und Zustand speichern
-----------------------------------------------
+Schritt 5: Fehlerbehandlung und Reporting
+-----------------------------------------
 
-We will use similar principals as in step 4 of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4`
-project, but with some changes to make it work in a GUI program.
+Es werden die gleichen Konzepte wie in Schritt 4 des
+:ref:`Rauchmelder mit C# auslesen
+<starter_kit_hardware_hacking_smoke_detector_csharp_step4>` Projekts angewandt,
+allerdings mit Abwandlungen damit sie in einem GUI Programm funktionieren.
 
-We can't just use ``System.Console.WriteLine()`` for error reporting because
-there is no console window in an app. Instead message boxes are used.
+Wir können nicht einfach ``System.Console.WriteLine()`` für Fehlermeldungen
+verwenden, da dies ein GUI Programm ist und kein Konsolenfenster hat.
+Stattdessen werden Messageboxen verwendet.
 
-The ``Connect()`` method has to validate the user input before using it. An
-``MessageBox`` is used to report possible problems. Also the progress bar is
-made visible to indicate that a connection attempt is in progress:
+Die ``Connect()`` Methode muss die Benutzereingaben validieren bevor sie
+verwendet werden. Mittels ``MessageBox`` werden mögliche Probleme gemeldet.
+Die "ProgressBar" wird eingeblendet um auf den laufenden Verbindungsversuch
+hinzuweisen:
 
 .. code-block:: csharp
 
@@ -384,11 +378,13 @@ made visible to indicate that a connection attempt is in progress:
         // [...]
     }
 
-Then the ``ConnectWorker_DoWork()`` method needs to be able to report its result.
-But it is not allowed to interact with the GUI, but it can assign a value to the
-``Result`` member of the ``DoWorkEventArgs`` parameter that is then passed to
-the ``ConnectWorker_RunWorkerCompleted()`` method. We use this enum that
-represents the three possible outcomes of a connection attempt:
+Dann benötigt die ``ConnectWorker_DoWork()`` Methode noch eine Möglichkeit das
+Ergebnis des Verbindungsversuchs mitzuteilen. Sie darf zwar nicht direkt mit
+dem GUI interagieren, kann aber einen Wert an den ``Result`` Member des
+``DoWorkEventArgs`` Parameters zuweisen, der dann an den Aufruf der
+``ConnectWorker_RunWorkerCompleted()`` Methode übergeben wird. Wir verwenden
+hier ein ``enum``, das die drei möglichen Ausgänge eines Verbindungsversuchs
+repräsentiert:
 
 .. code-block:: csharp
 
@@ -403,9 +399,7 @@ represents the three possible outcomes of a connection attempt:
 * |step5_connect_result2|
 * |step5_connect_result3|
 
-The :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>` method
-is used to check that the device for the given UID really is an Industrial Quad
-Relay Bricklet. If this is not the case then the connection gets closed:
+|step5_check_identity|
 
 .. code-block:: csharp
 
@@ -462,8 +456,8 @@ Relay Bricklet. If this is not the case then the connection gets closed:
         e.Result = ConnectResult.SUCCESS;
     }
 
-Now the ``ConnectWorker_RunWorkerCompleted()`` method has to handle this three
-outcomes. First the progress dialog is dismissed:
+Die ``ConnectWorker_RunWorkerCompleted()`` Methode muss jetzt entsprechend
+reagieren. Als erstes wird immer die "ProgressBar`` ausgeblendet:
 
 .. code-block:: csharp
 
@@ -473,7 +467,7 @@ outcomes. First the progress dialog is dismissed:
 
         progress.Visibility = Visibility.Collapsed;
 
-In case the connection attempt was successful the original logic stays the same:
+|step5_success|
 
 .. code-block:: csharp
 
@@ -484,8 +478,8 @@ In case the connection attempt was successful the original logic stays the same:
             trigger.IsEnabled = true;
         }
 
-In the error case we use a ``MessageBox`` and set the error message according
-to the connection result:
+Im Fehlerfall wird eine ``MessageBox`` mit einer entsprechenden Meldung
+angezeigt:
 
 .. code-block:: csharp
 
@@ -502,8 +496,8 @@ to the connection result:
 
             retry = MessageBox.Show(message, "Error", MessageBoxButton.OKCancel);
 
-Retry to connect or cancel the connection attempt, according to the result of
-the message box:
+Abhängig vom Ergebnis der ``MessageBox`` wird dann der Verbindungsversuch
+abgebrochen oder wiederholt:
 
 .. code-block:: csharp
 
@@ -525,10 +519,10 @@ the message box:
 Schritt 6: Konfiguration und Zustand speichern
 ----------------------------------------------
 
-The app doesn't store its configuration yet. Windows Phone provides the
-``IsolatedStorageSettings`` class to take care of this. In ``OnNavigatedTo()``
-the configuration is restored and the connection is reestablished if it was
-active before:
+Die App speichert die Konfiguration noch nicht. Windows Phone bietet hierfür die
+``IsolatedStorageSettings`` Klasse. In ``OnNavigatedTo()`` wird die gespeicherte
+Konfiguration wieder geladen und die Verbindung wiederhergestellt wenn sie zuvor
+bestanden hat:
 
 .. code-block:: csharp
 
@@ -560,7 +554,7 @@ active before:
         }
     }
 
-In ``OnNavigatedFrom()`` the configuration is then stored again:
+In ``OnNavigatedFrom()`` wird die Konfiguration dann wieder gespeichert:
 
 .. code-block:: csharp
 

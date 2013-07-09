@@ -66,6 +66,65 @@ Falls dies nicht der Fall ist sollte `hier <{2}>`__ begonnen werden. Information
 """
 }
 
+android_common_intro = {
+'en':
+"""
+>>>intro
+For this project we are assuming, that you have the `Android SDK
+<http://developer.android.com/sdk/index.html>`__ set up and that you have a
+rudimentary understanding of the Java language.
+
+If you are totally new to Java itself you should start
+`here <http://docs.oracle.com/javase/tutorial/>`__.
+If you are new to the Tinkerforge API, you should start
+:ref:`here <api_bindings_java_android>`.
+<<<intro
+""",
+'de':
+"""
+>>>intro
+Für diese Projekt setzen wir voraus, dass das `Android SDK
+<http://developer.android.com/sdk/index.html>`__
+eingerichtet ist und ein grundsätzliches Verständnis der Java Programmiersprache
+vorhanden ist.
+
+Falls dies nicht der Fall ist sollte
+`hier <http://docs.oracle.com/javase/tutorial/>`__ begonnen werden. Informationen
+über die Tinkerforge API sind dann :ref:`hier <api_bindings_java>` zu finden.
+<<<intro
+"""
+}
+
+windows_phone_common_intro = {
+'en':
+"""
+>>>intro
+For this project we are assuming, that you have the `Windows Phone SDK
+<https://dev.windowsphone.com/en-us/downloadsdk>`__ set up and that you have a
+rudimentary understanding of the C# language.
+
+If you are totally new to C# itself you should start
+`here <http://csharp.net-tutorials.com/>`__.
+If you are new to the Tinkerforge API, you should start
+:ref:`here <api_bindings_csharp_windows_phone>`.
+<<<intro
+""",
+'de':
+"""
+>>>intro
+Für diese Projekt setzen wir voraus, dass das `Windows Phone SDK
+<https://dev.windowsphone.com/de-de/downloadsdk>`__
+eingerichtet ist und ein grundsätzliches Verständnis der C# Programmiersprache
+vorhanden ist.
+
+Falls dies nicht der Fall ist sollte
+`hier <http://csharp.net-tutorials.com/>`__ begonnen werden. Informationen
+über die Tinkerforge API sind dann :ref:`hier <api_bindings_csharp>` zu finden.
+<<<intro
+"""
+}
+
+
 remote_switch_example_line = {
 'en':
 """:ref:`{0} <starter_kit_hardware_hacking_remote_switch_{1}>`""",
@@ -216,7 +275,6 @@ dargestellt.
 <<<goals
 """
 }
-
 
 
 smoke_detector_example_line = {
@@ -577,8 +635,88 @@ smoke_detector_steps = {
 }
 
 
+garage_control_intro = {
+'en':
+"""
+>>>intro
+We are also assuming that you have a remote control connected to
+an :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
+described :ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
+<<<intro
+""",
+'de':
+"""
+>>>intro
+Wir setzen weiterhin voraus, dass die Fernbedienung mit einem
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` verbunden
+wurde wie :ref:`hier <starter_kit_hardware_hacking_garage_control_hardware_setup>`
+beschrieben.
+<<<intro
+"""
+}
+
+garage_control_goals = {
+'en':
+"""
+>>>goals
+In this project we will create a simple |name| app that resembles the
+functionality of the actual remote control.
+<<<goals
+""",
+'de':
+"""
+>>>goals
+In diesem Projekt werden wir eine einfach |name| App entwickeln, die die
+Funktionalität der eigentlichen Fernbedienung nachbildet.
+<<<goals
+"""
+}
+
 garage_control_steps = {
 'en': """
+.. |step2_discover_by_uid| replace::
+ We apply some changes to make it work in a GUI program and instead of using the
+ |ref_CALLBACK_ENUMERATE| to discover the Industrial Quad Relay Bricklet its UID
+ has to be specified. This approach allows to pick the correct Industrial Quad
+ Relay Bricklet even if multiple are connected to the same host at once.
+
+.. |step2_async| replace::
+ We don't want to call the |ref_connect| method directly, because it might take
+ a moment and block the GUI during that period of time. Instead |connect| will
+ be called by a |async_helper|, so it will run in the background and the GUI
+ stays responsive:
+
+.. |step2_finish| replace::
+ Host, port and UID can now be configured and a click on the connect button
+ establishes the connection.
+
+.. |step3_intro| replace::
+ The connection is established and the Industrial Quad Relay Bricklet is found
+ but there is no logic yet to trigger the switch on the remote control if the
+ trigger button is clicked.
+
+.. |step3_monoflop| replace::
+ The call to |set_monoflop| closes the first relay for 1.5s then opens it again.
+
+.. |step3_finish1| replace::
+ That's it. If we would copy these three steps together in one file, we would
+ have a working app that allows a smart phone to control a garage door opener
+ using its hacked remote control!
+
+.. |step3_finish2| replace::
+ We don't have a disconnect button yet and the trigger button can be clicked
+ before the connection is established. We need some more GUI logic!
+
+.. |step4_intro| replace::
+ There is no button to close the connection again after it got established. The
+ connect button could do this. When the connection is established it should
+ allow to disconnect it again:
+
+.. |step4_disabled_gui| replace::
+ Finally, the user should not be able to change the content of the text fields
+ during the time the connection gets established and the trigger button should
+ not be clickable if there is no connection.
+
 .. |step4_robust1| replace::
  But the program is not yet robust enough. What happens if can't connect? What
  happens if there is no Industrial Quad Relay Bricklet with the given UID?
@@ -597,6 +735,14 @@ garage_control_steps = {
  NO_DEVICE: The connection got established but there was no Industrial Quad
  Relay Bricklet with the given UID.
 
+.. |step5_check_identity| replace::
+ The |ref_get_identity| method is used to check that the device for the given
+ UID really is an Industrial Quad Relay Bricklet. If this is not the case then
+ the connection gets closed:
+
+.. |step5_success| replace::
+ In case the connection attempt was successful the original logic stays the same:
+
 .. |step5_finish| replace::
  Now the app can connect to an configurable host and port and trigger a button
  on the remote control of your garage door opener using an Industrial Quad Relay
@@ -613,6 +759,52 @@ garage_control_steps = {
  Now all of the above put together
 """,
 'de': """
+.. |step2_discover_by_uid| replace::
+ Einige Änderungen sind notwendig damit es in einem GUI Programm funktioniert.
+ Statt dem |ref_CALLBACK_ENUMERATE| zum Erkennen des Industrial Quad Relay
+ Bricklets verwenden muss dessen UID angegeben werden. Dieser Ansatz erlaubt es
+ gezielt ein Industrial Quad Relay Bricklet auszuwählen, selbst wenn mehrere am
+ gleichen Host angeschlossen sind.
+
+.. |step2_async| replace::
+ Die |ref_connect| Methode soll nicht direkt aufgerufen werden, da dies einen
+ Moment dauern kann und in dieser Zeit die GUI nicht auf den Benutzer reagieren
+ könnte. Daher wird |connect| aus einem |async_helper| aufgerufen werden, so
+ dass es im Hintergrund ausgeführt und die GUI nicht blockiert wird:
+
+.. |step2_finish| replace::
+ Host, Port und UID können jetzt eingestellt werden und ein Klick auf den
+ Connect Knopf stellt die Verbindung her.
+
+.. |step3_intro| replace::
+ Die Verbindung ist hergestellt und das Industrial Quad Relay Bricklet wurde
+ gefunden, aber es fehlt noch die Logik um einen Taster auf der Fernbedienung
+ auszulösen wenn der Knopf geklickt wurde.
+
+.. |step3_monoflop| replace::
+ Der Aufruf von |set_monoflop| schließt das erste Relais für 1,5s und öffnet
+ es dann wieder.
+
+.. |step3_finish1| replace::
+ Das ist es. Wenn wir diese drei Schritte zusammen in eine Datei kopieren, dann
+ hätten wir jetzt eine funktionierende App, die es ermöglicht vom Smartphone
+ aus den Garagentoröffner mittels dessen gehackter Fernbedienung zu steuern.
+
+.. |step3_finish2| replace::
+ Es fehlt noch ein Disconnect-Knopf und der Trigger-Knopf kann auch geklickt
+ werden obwohl keine Verbindung besteht. Es fehlt also noch etwas mehr
+ GUI-Logik!
+
+.. |step4_intro| replace::
+ Es gibt noch keinen Knopf um die Verbindung wieder zu trennen nachdem sie
+ aufgebaut wurde. Der Connect-Knopf könnte dies tun. Wenn die Verbindung
+ aufgebaut ist sollte er bei einem Klick die Verbindung wieder trennen:
+
+.. |step4_disabled_gui| replace::
+ Außerdem sollte der Benutzer nicht den Inhalt der Eingabefelder ändern können
+ solange die Verbindung aufgebaut wird oder besteht und der Trigger-Knopf sollte
+ nicht klickbar sein wenn keine Verbindung besteht.
+
 .. |step4_robust1| replace::
  Das Programm ist noch nicht robust genug. Was passiert wenn die Verbindung
  nicht hergestellt werden kann? Was passiert wenn kein Industrial Quad Relay
@@ -631,6 +823,15 @@ garage_control_steps = {
 .. |step5_connect_result3| replace::
  NO_DEVICE: Die Verbindung wurde hergestellt, aber es wurde kein Industrial Quad
  Relay Bricklet mit passender UID gefunden.
+
+.. |step5_check_identity| replace::
+ Mit der |ref_get_identity| Methode wird überprüft, ob die angegebene UID
+ wirklich zu einem Industrial Quad Relay Bricklet gehört. Falls das nicht der
+ Fall ist wird die Verbindung getrennt:
+
+.. |step5_success| replace::
+ Im Falle, dass die Verbindung erfolgreich war bleibt die ursprüngliche Logik
+ bestehen:
 
 .. |step5_finish| replace::
  Die App kann sich zum eingestellten Host und Port verbinden und einen Taster
@@ -705,6 +906,19 @@ def make_common_substitutions(binding):
 
     return substitutions
 
+def make_android_common_substitutions():
+    substitutions = ''
+    substitutions += android_common_intro[lang]
+
+    return substitutions
+
+def make_windows_phone_common_substitutions():
+    substitutions = ''
+    substitutions += windows_phone_common_intro[lang]
+
+    return substitutions
+
+
 def make_smoke_detector_substitutions():
     substitutions = ''
     substitutions += smoke_detector_intro[lang] + '\n'
@@ -740,6 +954,8 @@ def make_remote_switch_toctree():
 
 def make_garage_control_substitutions():
     substitutions = ''
+    substitutions += garage_control_intro[lang] + '\n'
+    substitutions += garage_control_goals[lang] + '\n'
     substitutions += '>>>substitutions\n'
     substitutions += garage_control_steps[lang] + '\n'
     substitutions += '<<<substitutions\n'
@@ -776,6 +992,12 @@ def generate(path):
     for binding in bindings:
         print 'Generating {0}Common.substitutions (HardwareHacking)'.format(binding[3])
         write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding[3] + 'Common.substitutions'), make_common_substitutions(binding))
+
+    print 'Generating AndroidCommon.substitutions (HardwareHacking)'
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'AndroidCommon.substitutions'), make_android_common_substitutions())
+
+    print 'Generating WindowsPhoneCommon.substitutions (HardwareHacking)'
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'WindowsPhoneCommon.substitutions'), make_windows_phone_common_substitutions())
 
     print 'Generating SmokeDetector.substitutions (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector.substitutions'), make_smoke_detector_substitutions())

@@ -1,6 +1,14 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Garage Door Openers using Windows Phone
 
+.. |name| replace:: Windows Phone
+.. |ref_CALLBACK_ENUMERATE| replace:: :csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
+.. |ref_connect| replace:: :csharp:func:`Connect() <IPConnection::Connect>`
+.. |connect| replace:: ``Connect()``
+.. |set_monoflop| replace:: ``SetMonoflop(1 << 0, 1 << 0, 1500)``
+.. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
+.. |async_helper| replace:: ``BackgroundWorker``
+
 .. include:: GarageControl.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -10,27 +18,23 @@
 Control Garage Door Openers using Windows Phone
 ===============================================
 
-For this project we are assuming, that you have the `Windows Phone SDK
-<https://dev.windowsphone.com/en-us/downloadsdk>`__ set up and that you have a
-rudimentary understanding of the C# language.
+.. include:: WindowsPhoneCommon.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
-If you are totally new to C# itself you should start
-`here <http://csharp.net-tutorials.com/>`__.
-If you are new to the Tinkerforge API, you should start
-:ref:`here <api_bindings_csharp_windows_phone>`.
-
-We are also assuming that you have a remote control connected to
-an :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
-described :ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
+.. include:: GarageControl.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
 
 Goals
 -----
 
-In this project we will create a simple Windows Phone app that resembles the
-functionality of the actual remote control.
+.. include:: GarageControl.substitutions
+   :start-after: >>>goals
+   :end-before: <<<goals
 
-The program will reuse some common parts of the
+The app will reuse some common parts of the
 :ref:`starter_kit_hardware_hacking_smoke_detector_csharp` project.
 
 
@@ -100,17 +104,11 @@ Step 2: Discover Bricks and Bricklets
 -------------------------------------
 
 This step is similar to step 1 in the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` project. We apply
-some changes to make it work in a GUI program and instead of using the
-:csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>` to discover
-the Industrial Quad Relay Bricklet its UID has to be specified. This approach
-allows to pick the correct Industrial Quad Relay Bricklet even if multiple are
-connected to the same host at once.
+:ref:`Read out Smoke Detectors using C#
+<starter_kit_hardware_hacking_smoke_detector_csharp_step1>` project.
+|step2_discover_by_uid|
 
-We don't want to call the :csharp:func:`Connect() <IPConnection::Connect>`
-method directly, because it might take a moment and block the GUI during that
-period of time. Instead ``Connect()`` will be called by a ``BackgroundWorker``,
-so it will run in the background and the GUI stays responsive:
+|step2_async|
 
 .. code-block:: csharp
 
@@ -151,7 +149,7 @@ so it will run in the background and the GUI stays responsive:
     }
 
 The ``BackgroundWorker`` has an ``DoWork`` event that will be triggered from
-another thread after ``RunWorkerAsync`` was called. The host, port and UID
+another thread after ``RunWorkerAsync()`` was called. The host, port and UID
 configuration is passed to the ``DoWork`` event. This is necessary, because the
 ``ConnectWorker_DoWork()`` method needs this information, but is not
 allowed to access the GUI elements. Now the ``ConnectWorker_DoWork()`` method
@@ -159,8 +157,8 @@ can create an ``IPConnection`` and ``BrickletIndustrialQuadRelay`` object and
 call the ``Connect()`` method.
 
 Finally, the ``BackgroundWorker`` should be started when the connect button is
-clicked. To do this the ``Connect_Click()`` method is bound to the click event of
-the connect button:
+clicked. To do this the ``Connect_Click()`` method is bound to the ``Click``
+event of the connect button:
 
 .. code-block:: csharp
 
@@ -169,18 +167,15 @@ the connect button:
         Connect();
     }
 
-Host, port and UID can now be configured and a click on the connect button
-establishes the connection.
+|step2_finish|
 
 
 Step 3: Triggering Switches
 ---------------------------
 
-The connection is established and the Industrial Quad Relay Bricklet is found
-but there is no logic yet to trigger the switch on the remote control if the
-trigger button is clicked.
+|step3_intro|
 
-To do this the ``Trigger_Click()`` method is bound to the click event of the
+To do this the ``Trigger_Click()`` method is bound to the ``Click`` event of the
 trigger button. It starts another ``BackgroundWorker`` that in turn calls the
 ``SetMonoflop()`` method of the Industrial Quad Relay Bricklet to trigger the
 switch on the remote control:
@@ -212,23 +207,17 @@ switch on the remote control:
         }
     }
 
-The call to ``SetMonoflop(1 << 0, 1 << 0, 1500)`` closes the first relay for
-1.5s then opens it again.
+|step3_monoflop|
 
-That's it. If we would copy these three steps together in one file, we would
-have a working app that allows a smart phone to control a garage door opener
-using its hacked remote control!
+|step3_finish1|
 
-We don't have a disconnect button yet and the trigger button can be clicked
-before the connection is established. We need some more GUI logic!
+|step3_finish2|
 
 
 Step 4: More GUI logic
 ----------------------
 
-There is no button to close the connection again after it got established. The
-connect button could do this. When the connection is established it should
-allow to disconnect it again:
+|step4_intro|
 
 .. code-block:: csharp
 
@@ -301,9 +290,7 @@ moment and block the GUI during that period of time:
         }
     }
 
-Finally, the user should not be able to change the content of the text fields
-during the time the connection gets established and the trigger button should
-not be clickable if there is no connection.
+|step4_disabled_gui|
 
 The ``connectWorker`` and the ``disconnectWorker`` are extended to
 disable and enable the GUI elements according to the current connection state:
@@ -352,8 +339,9 @@ Step 5: Error Handling and Reporting
 ------------------------------------
 
 We will use similar principals as in step 4 of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4`
-project, but with some changes to make it work in a GUI program.
+:ref:`Read out Smoke Detectors using C#
+<starter_kit_hardware_hacking_smoke_detector_csharp_step4>` project,
+but with some changes to make it work in a GUI program.
 
 We can't just use ``System.Console.WriteLine()`` for error reporting because
 there is no console window in an app. Instead message boxes are used.
@@ -387,7 +375,7 @@ made visible to indicate that a connection attempt is in progress:
 Then the ``ConnectWorker_DoWork()`` method needs to be able to report its result.
 But it is not allowed to interact with the GUI, but it can assign a value to the
 ``Result`` member of the ``DoWorkEventArgs`` parameter that is then passed to
-the ``ConnectWorker_RunWorkerCompleted()`` method. We use this enum that
+the ``ConnectWorker_RunWorkerCompleted()`` method. We use this ``enum`` that
 represents the three possible outcomes of a connection attempt:
 
 .. code-block:: csharp
@@ -403,9 +391,7 @@ represents the three possible outcomes of a connection attempt:
 * |step5_connect_result2|
 * |step5_connect_result3|
 
-The :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>` method
-is used to check that the device for the given UID really is an Industrial Quad
-Relay Bricklet. If this is not the case then the connection gets closed:
+|step5_check_identity|
 
 .. code-block:: csharp
 
@@ -463,7 +449,7 @@ Relay Bricklet. If this is not the case then the connection gets closed:
     }
 
 Now the ``ConnectWorker_RunWorkerCompleted()`` method has to handle this three
-outcomes. First the progress dialog is dismissed:
+outcomes. First the progress bar is dismissed:
 
 .. code-block:: csharp
 
@@ -473,7 +459,7 @@ outcomes. First the progress dialog is dismissed:
 
         progress.Visibility = Visibility.Collapsed;
 
-In case the connection attempt was successful the original logic stays the same:
+|step5_success|
 
 .. code-block:: csharp
 

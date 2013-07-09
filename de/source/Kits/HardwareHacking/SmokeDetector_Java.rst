@@ -3,7 +3,7 @@
 
 .. |ref_CALLBACK_ENUMERATE| replace:: :java:func:`EnumerateListener <IPConnection.EnumerateListener>`
 .. |ref_CALLBACK_CONNECTED| replace:: :java:func:`ConnectedListener <IPConnection.ConnectedListener>`
-.. |callback| replace:: listener
+.. |callback| replace:: Listener
 .. |ref_enumerate| replace:: :java:func:`enumerate() <IPConnection::enumerate>`
 .. |ENUMERATION_TYPE_CONNECTED| replace:: ``ENUMERATION_TYPE_CONNECTED``
 .. |ENUMERATION_TYPE_AVAILABLE| replace:: ``ENUMERATION_TYPE_AVAILABLE``

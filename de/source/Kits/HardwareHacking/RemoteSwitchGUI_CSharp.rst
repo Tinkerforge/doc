@@ -21,9 +21,9 @@ Eine Demo-Anwendung basierend auf diesem Projekt ist verfügbar:
 
 * Auf Windows wird das `.NET Framework
   <http://www.microsoft.com/de-de/download/details.aspx?id=30653>`__ benötigt,
-  dies ist typsicherweise aber bereits installiert.
+  dies ist typischerweise aber bereits installiert.
 * Auf Linux wird die `Mono Runtime for Linux
-  <http://www.mono-project.com/Mono:Linux>`__ benötigt, dies ist typsicherweise
+  <http://www.mono-project.com/Mono:Linux>`__ benötigt, dies ist typischerweise
   aber bereits auch installiert.
 * Auf Mac OS X wird die `Mono Runtime for Mac OS X
   <http://www.mono-project.com/Mono:OSX>`__ benötigt. Seit Mac OS 10.8 muss
@@ -133,7 +133,8 @@ Schritt 2: Bricks und Bricklets dynamisch erkennen
 --------------------------------------------------
 
 Dieser Schritt ist der gleiche wie Schritt 1 aus dem
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step1` Projekt,
+:ref:`Rauchmelder mit C# auslesen
+<starter_kit_hardware_hacking_smoke_detector_csharp_step1>` Projekts,
 allerdings mit ein paar Änderungen, damit es in einem GUI Programm ordentlich
 funktioniert.
 
@@ -277,9 +278,10 @@ Schritt 4: Fehlerbehandlung und Logging
 ---------------------------------------
 
 Es werden die gleichen Konzepte wie in Schritt 4 des
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp_step4` Projekt
-verwendet, aber mit einigen Anwandelungen, damit sie in einem GUI Programm
-richtig funktionieren.
+:ref:`Rauchmelder mit C# auslesen
+<starter_kit_hardware_hacking_smoke_detector_csharp_step4>` Projekts verwendet,
+aber mit einigen Abwandelungen, damit sie in einem GUI Programm richtig
+funktionieren.
 
 Wir können nicht einfach ``System.Console.WriteLine()`` für Logausgaben
 verwenden, da dies ein GUI Programm ist und kein Konsolenfenster hat.

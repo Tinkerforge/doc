@@ -86,7 +86,7 @@ Dokumentierte Beispielanwendungen sind:
 Eine Vielzahl weiterer Anwendungen sind möglich. Alles was über
 eine Fernbedienung gesteuert wird oder digitale Signale ausgibt kann
 mit diesem Kit kinderleicht gehackt werden. Die dokumentierten
-Beispiele sollten ausreichen um auch ohne Vorkentnisse jedes Elektrogerät 
+Beispiele sollten ausreichen um auch ohne Vorkenntnisse jedes Elektrogerät
 in dieser Kategorie zu hacken.
 
 Die Programmierung kann über alle verfügbaren Bindings (|bindings|) 
@@ -161,10 +161,13 @@ Funktionsweise
 --------------
 
 Es gibt zwei grundlegende Möglichkeiten dieses Kit zu nutzen: Spannungen messen
-und Spannungen schalten. Eine detailierte Erklärung der Grundlagen befindet
+und Spannungen schalten. Eine detaillierte Erklärung der Grundlagen befindet
 sich im :ref:`Hardware Hacking für Anfänger
 <starter_kit_hardware_hacking_for_beginners>` Tutorial.
 
+.. warning:: Die genannten Spannungsobergrenzen sind einzuhalten!
+   Geräte die über eine potentiell gefährlich hohe Spannung
+   versorgt werden (z.B. Netzspannung) dürfen nicht gehackt werden!
 
 Spannungen bis zu 36V messen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -188,11 +191,11 @@ Industrial Digital In 4 ist verpolungsgeschützt.
 
 Die nachfolgende Abbildung zeigt exemplarisch die notwendige Schaltung
 zum Auslesen einer LED. Hierbei wurde der Vorwiderstand mit einbezogen
-um ausreichende Pegel für die High/Low detektion zu erhalten.
+um ausreichende Pegel für die High/Low Detektion zu erhalten.
 
 .. image:: /Images/Kits/hardware_hacking_idi4_resistor_diode.jpg
    :scale: 100 %
-   :alt: Beispielschaltung: Industrial Digital In 4 Bricklet misst LED state
+   :alt: Beispielschaltung: Industrial Digital In 4 Bricklet misst LED Zustand
    :align: center
 
 
@@ -200,7 +203,7 @@ Spannungen bis zu 30V schalten
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Mit dem :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
-können Signal geschalten (kurz geschlossen)
+können Signal geschaltet (kurz geschlossen)
 werden. Viele Geräte verfügen über Taster oder Schalter die mit diesem Bricklet
 gehackt werden können. Ein gutes Beispiel hierfür sind Fernbedienungen.
 
@@ -246,7 +249,7 @@ Funksteckdosen fernsteuern
 In diesem Kit ist das Funksteckdosenset `ELRO AB440WD/2
 <http://www.elro.eu/de/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
 enthalten. Diese Funksteckdosen können als ersten Schritt in die 
-Hausautomatisation genutzt werden. Wir werden die Fernbedienung dieser 
+Hausautomatisierung genutzt werden. Wir werden die Fernbedienung dieser
 Funksteckdosen hacken, so dass wir die Steckdosen über den PC schalten können.
 
 .. image:: /Images/Kits/hardware_hacking_remote_finished_350.jpg
@@ -373,7 +376,7 @@ In diesem Projekt verbinden wir das Industrial Digital In 4 Bricklet mit einer
 typischen, 12V betriebenen, Türklingel. Sobald jemand klingelt, wird unser
 Python-Script "Ring Ring Ring!" ausgeben. Dieses Projekt kann natürlich
 erweitert werden, so dass SMS versendet oder dein Telefon klingelt wenn jemand
-and der Tür steht. Sei kreativ!
+an der Tür ist. Sei kreativ!
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
    :scale: 100 %
