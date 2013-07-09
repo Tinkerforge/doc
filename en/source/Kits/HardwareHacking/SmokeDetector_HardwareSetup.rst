@@ -67,8 +67,10 @@ the LED. We will have to solder wires to them.
 Soldering Wires to the LED and its Series Resistor
 --------------------------------------------------
 
-See here (TODO) for a basic soldering tutorial and here (TODO) for instructions
-how you can find the correct pins of the LED and its series
+See :ref:`here  <starter_kit_hardware_hacking_for_beginners_soldering>`
+for a basic soldering tutorial and 
+:ref:`here <starter_kit_hardware_hacking_for_identify_series_resistor>`
+for instructions how you can find the correct pins of the LED and its series
 resistor.
 
 In case of the ELRO FA20RF/2 the transparent LED consists in fact of two

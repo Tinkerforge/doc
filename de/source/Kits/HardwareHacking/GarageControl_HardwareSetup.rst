@@ -13,7 +13,8 @@ wir aber auch nicht, da wir nur die Aktionen auslösen wollen die normalerweise
 vom Taster der Fernbedienung ausgelöst werden.
 
 Anstatt den Taster selber auszulösen werden wir diesen überbrücken
-wie zuvor schon hier beschrieben (TODO).
+wie zuvor schon :ref:`hier <starter_kit_hardware_hacking_for_beginners_quad_relay>` 
+beschrieben.
 
 Im ersten Schritt öffnen wir dazu das Gehäuse der Fernbedienung
 mit einem Schraubendreher.

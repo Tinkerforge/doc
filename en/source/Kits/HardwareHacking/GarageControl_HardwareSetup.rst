@@ -12,7 +12,7 @@ want to take a closer look to it. But we don't have to, since the only thing we
 are interested in is to trigger the button we normally use to operate the door.
 
 We will not trigger the button directly, but we will be able to bypass
-it as described here (TODO).
+it as described :ref:`here <starter_kit_hardware_hacking_for_beginners_quad_relay>`.
 
 At first we have to dismantle the casing of the remote switch. 
 With a small screwdriver this is an easy task.

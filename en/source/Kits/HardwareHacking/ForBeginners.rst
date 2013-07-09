@@ -13,6 +13,8 @@ descriptions how to use the supplied hardware.
 Basically there are two different purposes for the kit. Each is handled
 by one specific Bricklet.
 
+.. _starter_kit_hardware_hacking_for_beginners_quad_relay:
+
 Industrial Quad Relay Bricklet
 ------------------------------
 
@@ -177,6 +179,9 @@ wires on the input. The wiring will look as following:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_switch_digital_in_1500.jpg
 
+
+.. _starter_kit_hardware_hacking_for_identify_series_resistor:
+
 Identify the Series Resistor of a LED
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -235,6 +240,9 @@ with blue arrow).
 So if you want to read our the state of this LED you have
 to solder one wire directly to the LED (red circle) and one after the 
 series resistor (one of the blue circles). That's it!
+
+
+.. _starter_kit_hardware_hacking_for_beginners_soldering:
 
 Soldering a wire to a solder pad
 --------------------------------

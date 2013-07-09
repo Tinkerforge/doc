@@ -66,8 +66,11 @@ An diese müssen wir Drähte anlöten.
 Drähte an die LED und dessen Vorwiderstand anlöten
 --------------------------------------------------
 
-Hier (TODO) gibt es ein kleines Löt-Tutorial und hier (TODO) Anweisungen wie
-die korrekten Pins einer LED und dessen Vorwiderstand gefunden werden können.
+:ref:`Hier <starter_kit_hardware_hacking_for_beginners_soldering>`
+gibt es ein kleines Löt-Tutorial und 
+:ref:`hier <starter_kit_hardware_hacking_for_identify_series_resistor>` 
+Anweisungen wie die korrekten Pins einer LED und dessen Vorwiderstand gefunden 
+werden können.
 
 Die transparente LED des ELRO FA20RF/2 besteht aus zwei LEDs (grün, rot) die
 in einem gemeinsamen Gehäuse untergebracht sind. Beide LEDs besitzen einen 

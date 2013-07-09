@@ -75,7 +75,7 @@ schaltbaren Solid-State-Relais. Für Ausleseanwendungen wird ein
 mitgeliefert. Dieses kann vier digitale Signale mit Spannungen bis zu
 36V galvanisch getrennt auslesen.
 
-Beispielanwendungen sind:
+Dokumentierte Beispielanwendungen sind:
 
 * Rauchmelderalarm zum PC weiterleiten.
 * Steckdosen über den PC fernsteuern.

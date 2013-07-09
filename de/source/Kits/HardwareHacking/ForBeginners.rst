@@ -13,6 +13,9 @@ wie die im Kit enthaltene Hardware genutzt werden kann.
 Grundsätzlich gibt es zwei verschiedene Anwendungen für dieses Kit. Jede 
 Anwendung wird von einem Bricklet unterstützt.
 
+
+.. _starter_kit_hardware_hacking_for_beginners_quad_relay:
+
 Industrial Quad Relay Bricklet
 ------------------------------
 
@@ -182,6 +185,9 @@ aussehen:
    :align: center
    :target: ../../_images/Kits/hardware_hacking_for_beginner_schematic_switch_digital_in_1500.jpg
 
+
+.. _starter_kit_hardware_hacking_for_identify_series_resistor:
+
 Den Vorwiderstand einer LED identifizieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -243,6 +249,8 @@ kleiner SMD Widerstand (markiert durch einen blauen Pfeil).
 Soll also der Zustand einer LED ausgelesen werden, so muss ein Draht an die
 LED (rote Kreis) und der andere nach dem Vorwiderstand angelötet werden (einer 
 der blauen Kreise). Das war es!
+
+.. _starter_kit_hardware_hacking_for_beginners_soldering:
 
 Einen Draht an ein Pad anlöten
 ------------------------------

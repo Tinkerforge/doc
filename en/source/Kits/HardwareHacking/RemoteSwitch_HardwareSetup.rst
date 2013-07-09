@@ -49,7 +49,7 @@ Solder wires to the IC
 
 Next we have to solder the wires to the HC2262 to connect to the inputs 
 of the remote control. We will solder five wires to the HX2262 IC:
-TODO link to solder tutorial
+(:ref:`Small soldering tutorial <starter_kit_hardware_hacking_for_beginners_soldering>`)
 
 ========== ====== ==========
 Pin Number Signal Wire Color

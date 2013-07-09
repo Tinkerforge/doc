@@ -51,7 +51,7 @@ Drähte am IC anlöten
 
 Als nächstes müssen wir Drähte an den HX2262 anlöten um diese von außen 
 steuern zu können. Wir werden fünf Drähte an den HX2262 anlöten:
-TODO soldering tutorial
+(:ref:`Kleines Löttutorial <starter_kit_hardware_hacking_for_beginners_soldering>`)
 
 ========== ====== ===========
 Pin Nummer Signal Draht Farbe

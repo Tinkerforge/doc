@@ -72,6 +72,8 @@ switches. For read-out applications an :ref:`Industrial Digital In 4 Bricklet
 <industrial_digital_in_4_bricklet>` is included. It can read out galvanically 
 isolated four digital signals with voltages up to 36V.
 
+Documented example applications are:
+
 * Forwarding smoke detector alarm to a PC.
 * Controlling remote mains switches with a PC.
 * Opening/Closing garage doors over a smart phone/tablet (Android, Windows Phone and iPhone).
