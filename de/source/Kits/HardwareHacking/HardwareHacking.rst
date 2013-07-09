@@ -38,11 +38,16 @@ Features
   * PC, Smartphone/Tablet oder über das Internet (Internet der Dinge).
   * Demoapplikation für Android, Windows Phone und iPhone* sind verfügbar.
 
+* Direkt mit dem Hacken beginnen: Zwei Funksteckdosen im Kit enthalten
+
 * Massenmarkt-Geräte auslesen und steuern,
 
   * z.B. Rauchmelder, Funkfernbedienungen, Garagentore und Türklingel.
 
 * Interaktion über USB, WLAN und Ethernet möglich.
+
+
+
 
 \*: Demo für iPhone folgt bald.
 
@@ -57,7 +62,12 @@ WLAN mit Hilfe der :ref:`WIFI Extension <wifi_extension>` möglich. Auch
 eine Ethernetschnittstelle kann mit der 
 :ref:`Ethernet Extension <ethernet_extension>` hinzugefügt werden.
 
-Es gibt zwei Gruppen von Anwendungen dieses Kits: Steuern und auslesen.
+Zwei Funksteckdosen sind in diesem Kit enthalten, so dass direkt mit dem Hacken
+begonnen werden kann. Eine Schritt für Schritt Anleitung erklärt wie diese 
+gehackt werden können (Lötkolben, Lötzinn und ein paar Schraubendreher 
+benötigt).
+
+Es gibt zwei Gruppen von Anwendungen für dieses Kit: Steuern und Auslesen.
 Für Steuerungsanwendungen wird ein :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` mitgeliefert. Dieses besteht aus vier
 schaltbaren Solid-State-Relais. Für Ausleseanwendungen wird ein
@@ -232,8 +242,10 @@ Es gibt viele Geräte die gehackt werden können. Hier sind ein paar Beispiele:
 Funksteckdosen fernsteuern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Einfache Funksteckdosen können als ersten Schritt in die Hausautomatisation
-genutzt werden. In diesem Beispiel werden wir eine Fernbedienung für 
+In diesem Kit ist das Funksteckdosenset `ELRO AB440WD/2
+<http://www.elro.eu/de/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
+enthalten. Diese Funksteckdosen können als ersten Schritt in die 
+Hausautomatisation genutzt werden. Wir werden die Fernbedienung dieser 
 Funksteckdosen hacken, so dass wir die Steckdosen über den PC schalten können.
 
 .. image:: /Images/Kits/hardware_hacking_remote_finished_350.jpg
@@ -242,13 +254,12 @@ Funksteckdosen hacken, so dass wir die Steckdosen über den PC schalten können.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_finished_1200.jpg
 
-Hierzu nutzen wir das Funksteckdosenset `ELRO AB440WD/2
-<http://www.elro.eu/de/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
-und schließen ein :ref:`Industrial Quad Relay Bricklet
+Dazu schließen wir ein :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` an die Taster der `ELRO AB440RA
 <http://www.elro.eu/de/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
 Fernbedienung. Es gibt eine große Anzahl an Funksteckdosen und 
-Fernbedienungen. Die meisten kommerziell erhältlichen nutzen einen HX2262 IC
+Fernbedienungen auf dem Markt. 
+Die meisten kommerziell erhältlichen nutzen einen HX2262 IC
 mit identischem Hardwaredesign wie das der hier vorgestellten Fernbedienung.
 So kann diese Beschreibung auch für die meisten anderen Funksteckdosen-
 Fernbedienungen genutzt werden.

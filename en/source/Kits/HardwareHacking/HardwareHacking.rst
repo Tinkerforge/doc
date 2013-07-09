@@ -38,11 +38,16 @@ Features
   * PC, smart phone/tablet, Raspberry Pi or over the Internet (Internet of Things).
   * Demo applications for Android, Windows Phone and iPhone* are available.
 
+* Ready to Hack:Two Remote Control Mains Switches included
+
 * Read out and control low voltage mainstream devices,
 
   * e.g. smoke detectors, remote mains switches, garage door openers and doorbells.
 
 * Interaction over USB, Wi-Fi or Ethernet possible.
+
+
+
 
 \* Demo for iPhone coming soon
 
@@ -55,6 +60,10 @@ Smart Phone or Tablet can be used to interact with devices hacked by this kit.
 Interaction is possible over USB or via Wi-Fi if a :ref:`WIFI Extension <wifi_extension>`
 is added. Also a direct Ethernet interface with the
 :ref:`Ethernet Extension <ethernet_extension>` can be achieved.
+
+Two remote control mains switches are included in this kit, so you can directly
+start to hack something. A step for step guide will tell you how to do it
+(soldering iron, solder and some screwdrivers are required).
 
 There are two groups of applications of this kit: controlling and reading 
 out. For control applications an :ref:`Industrial Quad Relay Bricklet
@@ -223,9 +232,11 @@ There are many low voltage appliances that can be hacked. Here are some examples
 Control Mains Switches Remotely
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Simple remote control mains switches can be used as a first step towards home automation.
-We are going to hack the remote control of such a switch and connect it to a PC
-to create software controlled remote switches.
+In this kit a remote switch set `ELRO AB440WD/2
+<http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
+is included. These remote control mains switches can be used as a first step 
+towards home automation. We are going to hack the remote control of these 
+switches and connect it to a PC to create software controlled remote switches.
 
 .. image:: /Images/Kits/hardware_hacking_remote_finished_new_350.jpg
    :scale: 100 %
@@ -233,15 +244,11 @@ to create software controlled remote switches.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_finished_new_1200.jpg
 
-For this project we use the remote switch set `ELRO AB440WD/2
-<http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
-and connect an :ref:`Industrial Quad Relay Bricklet
+Therefore we connect an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
 <http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
-remote control (two of the switches and the remote control is already 
-included in the Starter Kit: Hardware Hacking). There are a vast number
-of remote switches available. 
-Most of the commercially available remote controls use the HX2262 IC
+remote control. There are a vast number of remote switches available on the
+market. Most of the commercially available remote controls use the HX2262 IC
 with the same hardware design as of the here used ELRO remote control, 
 so this guide can be used for most remote switches.
 
