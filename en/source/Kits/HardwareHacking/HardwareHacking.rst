@@ -38,7 +38,7 @@ Features
   * PC, smart phone/tablet, Raspberry Pi or over the Internet (Internet of Things).
   * Demo applications for Android, Windows Phone and iPhone* are available.
 
-* Ready to Hack:Two Remote Control Mains Switches included
+* Ready to Hack: Two Remote Controled Mains Switches included
 
 * Read out and control low voltage mainstream devices,
 
@@ -61,9 +61,10 @@ Interaction is possible over USB or via Wi-Fi if a :ref:`WIFI Extension <wifi_ex
 is added. Also a direct Ethernet interface with the
 :ref:`Ethernet Extension <ethernet_extension>` can be achieved.
 
-Two remote control mains switches are included in this kit, so you can directly
-start to hack something. A step for step guide will tell you how to do it
-(soldering iron, solder and some screwdrivers are required).
+Two remote controled mains switches are included in this kit, so you can directly
+start to hack something. A :ref:`step-by-step guide
+<starter_kit_hardware_hacking_remote_switch>` will tell you how to do it
+(soldering iron, solder and a screwdriver are required).
 
 There are two groups of applications of this kit: controlling and reading 
 out. For control applications an :ref:`Industrial Quad Relay Bricklet
@@ -121,9 +122,9 @@ Resources
 Required Tools
 --------------
 
-* Screwdrivers (to open casings etc.)
 * Sordering Iron
 * Solder
+* Screwdriver (to open casings etc.)
 
 
 Firmware updating and first tests
@@ -234,9 +235,9 @@ There are many low voltage appliances that can be hacked. Here are some examples
 Control Mains Switches Remotely
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this kit a remote switch set `ELRO AB440WD/2
-<http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
-is included. These remote control mains switches can be used as a first step 
+This kit includes the remote switch set `ELRO AB440WD/2
+<http://www.elro.eu/en/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__.
+These remote control mains switches can be used as a first step
 towards home automation. We are going to hack the remote control of these 
 switches and connect it to a PC to create software controlled remote switches.
 
@@ -251,10 +252,10 @@ Therefore we connect an :ref:`Industrial Quad Relay Bricklet
 <http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
 remote control. There are a vast number of remote switches available on the
 market. Most of the commercially available remote controls use the HX2262 IC
-with the same hardware design as of the here used ELRO remote control, 
-so this guide can be used for most remote switches.
+with the same hardware design as the ELRO remote control used here,
+so this guide can be applied to most remote switches.
 
-The full hardware description can be found 
+The full description of the hardware setup can be found
 :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
 
 An example implementation of a GUI (compatible to Windows (.NET), 
@@ -297,7 +298,7 @@ For this project we use the wireless smoke detector set `ELRO FA20RF/2
 and connect an :ref:`Industrial Digital In 4 <industrial_digital_in_4_bricklet>` to one of its
 LEDs that light up during an alarm.
 
-The full hardware description can be found 
+The full description of the hardware setup can be found
 :ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`.
 
 Example implementations with step-by-step instructions are available for:
@@ -329,7 +330,7 @@ anymore. This project is based on this
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_new_1200.jpg
 
-A small hardware description can be found 
+A small description of the hardware setup can be found
 :ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
 
 Example apps for :ref:`Android (Java)
@@ -337,7 +338,7 @@ Example apps for :ref:`Android (Java)
 and :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` are available.
 
-A Demo app for iPhone is comming soon.
+A demo app for iPhone is comming soon.
 
 .. toctree::
    :hidden:

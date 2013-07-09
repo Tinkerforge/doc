@@ -36,7 +36,7 @@ Features
 * Elektrogeräte mit geringer Spannung hacken 
 
   * PC, Smartphone/Tablet oder über das Internet (Internet der Dinge).
-  * Demoapplikation für Android, Windows Phone und iPhone* sind verfügbar.
+  * Demo-Apps für Android, Windows Phone und iPhone* sind verfügbar.
 
 * Direkt mit dem Hacken beginnen: Zwei Funksteckdosen im Kit enthalten
 
@@ -63,9 +63,9 @@ eine Ethernetschnittstelle kann mit der
 :ref:`Ethernet Extension <ethernet_extension>` hinzugefügt werden.
 
 Zwei Funksteckdosen sind in diesem Kit enthalten, so dass direkt mit dem Hacken
-begonnen werden kann. Eine Schritt für Schritt Anleitung erklärt wie diese 
-gehackt werden können (Lötkolben, Lötzinn und ein paar Schraubendreher 
-benötigt).
+begonnen werden kann. Eine :ref:`Schritt-für-Schritt Anleitung
+<starter_kit_hardware_hacking_remote_switch>` erklärt wie diese
+gehackt werden können (Lötkolben, Lötzinn und Schraubendreher benötigt).
 
 Es gibt zwei Gruppen von Anwendungen für dieses Kit: Steuern und Auslesen.
 Für Steuerungsanwendungen wird ein :ref:`Industrial Quad Relay Bricklet
@@ -79,7 +79,8 @@ Dokumentierte Beispielanwendungen sind:
 
 * Rauchmelderalarm zum PC weiterleiten.
 * Steckdosen über den PC fernsteuern.
-* Garagentore über ein Smartphone/Tablet (Android, Windows Phone und iPhone) öffnen und schließen.
+* Garagentore über ein Smartphone/Tablet (Android, Windows Phone und iPhone)
+  öffnen und schließen.
 * Türklingel zum PC weiterleiten.
 
 Eine Vielzahl weiterer Anwendungen sind möglich. Alles was über
@@ -90,7 +91,7 @@ in dieser Kategorie zu hacken.
 
 Die Programmierung kann über alle verfügbaren Bindings (|bindings|) 
 stattfinden. Beispielimplementierungen für alle Programmiersprachen 
-und Demoanwendungen erleichtern den Einstieg in die Programmierung mit 
+und Demo-Anwendungen erleichtern den Einstieg in die Programmierung mit
 Tinkerforge.
 
 Technische Spezifikation
@@ -126,9 +127,9 @@ Resourcen
 Benötigte Werkzeuge
 -------------------
 
-* Schraubendreher (um Gehäuse zu öffnen etc.)
 * Lötkolben
 * Lötzinn
+* Schraubendreher (um Gehäuse zu öffnen etc.)
 
 
 Firmware aktualisieren und erste Tests
@@ -259,14 +260,14 @@ Dazu schließen wir ein :ref:`Industrial Quad Relay Bricklet
 <http://www.elro.eu/de/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
 Fernbedienung. Es gibt eine große Anzahl an Funksteckdosen und 
 Fernbedienungen auf dem Markt. 
-Die meisten kommerziell erhältlichen nutzen einen HX2262 IC
-mit identischem Hardwaredesign wie das der hier vorgestellten Fernbedienung.
+Die meisten kommerziell erhältlichen Fernbedienungen nutzen einen HX2262 IC
+mit identischem Hardwaredesign wie das der hier verwendeten ELRO Fernbedienung.
 So kann diese Beschreibung auch für die meisten anderen Funksteckdosen-
 Fernbedienungen genutzt werden.
 
-Die vollständige Hardwarebeschreibung kann 
+Die vollständige Beschreibung des Hardware-Aufbaus ist
 :ref:`hier <starter_kit_hardware_hacking_remote_switch_hardware_setup>`
-gefunden werden.
+zu finden.
 
 Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
 Linux (Mono) und Mac OS X (Mono)) ist verfügbar in
@@ -308,9 +309,9 @@ Für dieses Projekt nutzen wir das drahtlose Rauchmelderset `ELRO FA20RF/2
 und schließen ein :ref:`Industrial Digital In 4 Bricklet
 <industrial_digital_in_4_bricklet>` an eine der LED die im Alarmfall aufleuchtet.
 
-Eine ausführliche Hardwarebeschreibung kann
-:ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` gefunden 
-werden.
+Eine ausführliche Beschreibung des Hardware-Aufbaus ist
+:ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` zu
+finden.
 
 Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
 
@@ -343,7 +344,7 @@ Dieses Projekt basiert auf diesem
    :align: center
    :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_1200.jpg
 
-Eine kurze  Hardwarebeschreibung kann 
+Eine kurze Beschreibung des Hardware-Aufbaus kann
 :ref:`hier <starter_kit_hardware_hacking_garage_control_hardware_setup>`
 gefunden werden.
 
