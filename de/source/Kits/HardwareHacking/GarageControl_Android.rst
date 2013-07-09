@@ -1,6 +1,14 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Garagentor mit Android fernsteuern
 
+.. |name| replace:: Android
+.. |ref_CALLBACK_ENUMERATE| replace:: :java:func:`EnumerateListener <IPConnection.EnumerateListener>`
+.. |ref_connect| replace:: :java:func:`connect() <IPConnection::connect>`
+.. |connect| replace:: ``connect()``
+.. |set_monoflop| replace:: ``setMonoflop(1 << 0, 1 << 0, 1500)``
+.. |ref_get_identity| replace:: :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>`
+.. |async_helper| replace:: ``AsyncTask``
+
 .. include:: GarageControl.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -10,28 +18,25 @@
 Garagentor mit Android fernsteuern
 ==================================
 
-For this project we are assuming, that you have the `Android SDK
-<http://developer.android.com/sdk/index.html>`__ set up and that you have a
-rudimentary understanding of the Java language.
+.. include:: AndroidCommon.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
-If you are totally new to Java itself you should start
-`here <http://docs.oracle.com/javase/tutorial/>`__.
-If you are new to the Tinkerforge API, you should start
-:ref:`here <api_bindings_java_android>`.
-
-We are also assuming that you have a remote control connected to
-an :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
-described :ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
+.. include:: GarageControl.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
 
 Ziele
 -----
 
-In this project we will create a simple Android app that resembles the
-functionality of the actual remote control.
+.. include:: GarageControl.substitutions
+   :start-after: >>>goals
+   :end-before: <<<goals
 
-The program will reuse some common parts of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_java` project.
+Die App wird einige allgemeine Teile es
+:ref:`starter_kit_hardware_hacking_smoke_detector_java` Projekts
+wiederverwenden.
 
 
 Schritt 1: Die GUI erstellen
@@ -82,18 +87,12 @@ variables of the ``MainActivity`` class:
 Schritt 2: Bricks und Bricklets erkennen
 ----------------------------------------
 
-This step is similar to step 1 in the
-:ref:`starter_kit_hardware_hacking_smoke_detector_java_step1` project. We apply
-some changes to make it work in a GUI program and instead of using the
-:java:func:`EnumerateListener <IPConnection.EnumerateListener>` to discover
-the Industrial Quad Relay Bricklet its UID has to be specified. This approach
-allows to pick the correct Industrial Quad Relay Bricklet even if multiple are
-connected to the same host at once.
+Dieser Schritt ist ähnlich zu Schritt 1 des
+:ref:`Rauchmelder mit Java auslesen
+<starter_kit_hardware_hacking_smoke_detector_java_step1>` Projekts.
+|step2_discover_by_uid|
 
-We don't want to call the :java:func:`connect() <IPConnection::connect>`
-method directly, because it might take a moment and block the GUI during that
-period of time. Instead ``connect()`` will be called from an ``AsyncTask``, so
-it will run in the background and the GUI stays responsive:
+|step2_async|
 
 .. code-block:: java
 
@@ -158,16 +157,13 @@ button is clicked. A ``OnClickListener`` added to the connect button does this:
         }
     }
 
-Host, port and UID can now be configured and a click on the connect button
-establishes the connection.
+|step2_finish|
 
 
 Schritt 3: Taster auslösen
 --------------------------
 
-The connection is established and the Industrial Quad Relay Bricklet is found
-but there is no logic yet to trigger the switch on the remote control if the
-trigger button is clicked.
+|step3_intro|
 
 An ``OnClickListener`` is added to the trigger button that creates and executes
 an ``AsyncTask`` that in turn calls the ``setMonoflop`` method of the Industrial
@@ -194,23 +190,17 @@ Quad Relay Bricklet to trigger the switch on the remote control:
         }
     }
 
-The call to ``setMonoflop(1 << 0, 1 << 0, 1500)`` closes the first relay for
-1.5s then opens it again.
+|step3_monoflop|
 
-That's it. If we would copy these three steps together in one file, we would
-have a working app that allows a smart phone to control a garage door opener
-using its hacked remote control!
+|step3_finish1|
 
-We don't have a disconnect button yet and the trigger button can be clicked
-before the connection is established. We need some more GUI logic!
+|step3_finish2|
 
 
 Schritt 4: Weitere GUI-Logik
 ----------------------------
 
-There is no button to close the connection again after it got established. The
-connect button could do this. When the connection is established it should
-allow to disconnect it again:
+|step4_intro|
 
 .. code-block:: java
 
@@ -268,9 +258,7 @@ is clicked:
         }
     }
 
-Finally, the user should not be able to change the content of the text fields
-during the time the connection gets established and the trigger button should
-not be clickable if there is no connection.
+|step4_disabled_gui|
 
 The ``ConnectAsyncTask`` and the ``DisconnectAsyncTask`` are extended to
 disable and enable the GUI elements according to the current connection state:
@@ -334,9 +322,10 @@ disable and enable the GUI elements according to the current connection state:
 Schritt 5: Fehlerbehandlung und Reporting
 -----------------------------------------
 
-We will use similar principals as in step 4 of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_java_step4`
-project, but with some changes to make it work in a GUI program.
+Es werden die gleichen Konzepte wie in Schritt 4 des
+:ref:`Rauchmelder mit Java auslesen
+<starter_kit_hardware_hacking_smoke_detector_java_step4>` Projekts angewandt,
+allerdings mit Abwandlungen damit sie in einem GUI Programm funktionieren.
 
 We can't just use ``System.out.println()`` for error reporting because there
 is no console window in an app. Instead dialog boxes are used.
@@ -401,9 +390,7 @@ the three possible outcomes of a connection attempt:
 * |step5_connect_result2|
 * |step5_connect_result3|
 
-The :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>` method
-is used to check that the device for the given UID really is an Industrial Quad
-Relay Bricklet. If this is not the case then the connection gets closed:
+|step5_check_identity|
 
 .. code-block:: java
 
