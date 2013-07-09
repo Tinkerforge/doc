@@ -230,7 +230,7 @@ Um "A ON" auf der Fernbedienung auszulösen müssen also die Relais 0 und 2
 geschlossen werden. Dies wird durch die Bitmaske ``(1 << 0) | (1 << 2)``
 repräsentiert.
 
-Der Constructor wird so abgewandelt, dass er ``CreateButton()`` mit den
+Der Konstruktor wird so abgewandelt, dass er ``CreateButton()`` mit den
 passenden Bitmasken für jeden Knopf aufruft:
 
 .. code-block:: csharp
@@ -285,12 +285,13 @@ Wir können nicht einfach ``System.Console.WriteLine()`` für Logausgaben
 verwenden, da dies ein GUI Programm ist und kein Konsolenfenster hat.
 Stattdessen werden die Logausgaben in einer Liste im GUI ausgegeben.
 
-But there is still a problem with that approach. The connection is established
-on an extra thread, but only the main thread can safely interact with the
-GUI. Luckily C# provides the ``Invoke()`` method that allows all threads to run
-code on the main thread and safely interact with the GUI. With this method we
-can create a ``Log()`` method that allows all threads to write to the list box
-in a safe way:
+Dieser Ansatz hat aber noch ein Problem. Die Verbindung wird in einem extra
+Thread hergestellt, allerdings darf nur der Haupt-Thread mit der GUI
+interagieren. Glücklicherweise bietet C# die ``Invoke()`` Methode, die es
+erlaubt aus anderen Threads Code im Haupt-Thread auszuführen und so korrekt
+mit der GUI zu interagieren. Mit dieser Methode erstellen wir eine ``Log()``
+Methode, die es allen Threads erlaubt Logausgaben in die Liste für
+Statusmeldungen zu schreiben:
 
 .. code-block:: csharp
 
@@ -299,8 +300,9 @@ in a safe way:
         Invoke((MethodInvoker) delegate() { listBox.Items.Add(message); });
     }
 
-All the changes described in step 4 of the smoke detector project apply here as
-well. In addition we have to deal with errors in ``TriggerSwitch()`` too:
+Alle Änderungen die in Schritt 4 des Rauchmelder Projekts beschrieben werden
+sind hier auch notwendig. Zusätzlich müssen noch mögliche Fehler in der
+``TriggerSwitch()`` Methode behandelt werden:
 
 .. code-block:: csharp
 
@@ -322,12 +324,13 @@ well. In addition we have to deal with errors in ``TriggerSwitch()`` too:
         }
     }
 
-To get nicer log messages the button name is passed to ``TriggerSwitch()`` so
-it can be included in the log messages.
+Für bessere Logausgaben wird der Name des Knopfes an ``TriggerSwitch()``
+übergeben, so dass dieser in Logausgaben angezeigt werden kann.
 
-Finally, because the connect thread interacts with the GUI now it cannot be
-started directly from the constructor anymore. Instead it is started when the
-GUI is shown for the first time. The ``Load`` event can be used for this:
+Schlussendlich, da der Thread der die Verbindung aufbaut jetzt mit der GUI
+interagiert kann er nicht mehr direkt im Konstruktor gestartet werden.
+Stattdessen wird der Thread erst gestartet wenn die GUI das erst Mal angezeigt
+wird. Der ``Load``-Event kann dafür verwendet werden:
 
 .. code-block:: csharp
 
