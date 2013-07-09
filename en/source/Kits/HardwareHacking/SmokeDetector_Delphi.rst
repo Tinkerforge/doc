@@ -136,7 +136,7 @@ Step 2: Initialize Bricklet on Enumeration
     if (deviceIdentifier = BRICKLET_INDUSTRIAL_DIGITAL_IN_4_DEVICE_IDENTIFIER) then begin
       brickletIndustrialDigitalIn4 := TBrickletIndustrialDigitalIn4.Create(uid, ipcon);
       brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
-      brickletIndustrialDigitalIn4.SetInterrupt(255);
+      brickletIndustrialDigitalIn4.SetInterrupt(15);
       brickletIndustrialDigitalIn4.OnInterrupt := {$ifdef FPC}@{$endif}InterruptCB;
     end;
 
@@ -155,7 +155,7 @@ Step 2: Initialize Bricklet on Enumeration
         if (deviceIdentifier = BRICKLET_INDUSTRIAL_DIGITAL_IN_4_DEVICE_IDENTIFIER) then begin
           brickletIndustrialDigitalIn4 := TBrickletIndustrialDigitalIn4.Create(uid, ipcon);
           brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
-          brickletIndustrialDigitalIn4.SetInterrupt(255);
+          brickletIndustrialDigitalIn4.SetInterrupt(15);
           brickletIndustrialDigitalIn4.OnInterrupt := {$ifdef FPC}@{$endif}InterruptCB;
         end;
       end;

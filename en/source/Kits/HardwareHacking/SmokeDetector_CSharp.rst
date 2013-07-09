@@ -156,7 +156,7 @@ Step 2: Initialize Bricklet on Enumeration
             {
                 brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(UID, ipcon);
                 brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
-                brickletIndustrialDigitalIn4.SetInterrupt(255);
+                brickletIndustrialDigitalIn4.SetInterrupt(15);
                 brickletIndustrialDigitalIn4.Interrupt += InterruptCB;
             }
         }
@@ -240,7 +240,7 @@ Step 4: Error handling and Logging
         {
             brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(UID, ipcon);
             brickletIndustrialDigitalIn4.SetDebouncePeriod(10000);
-            brickletIndustrialDigitalIn4.SetInterrupt(255);
+            brickletIndustrialDigitalIn4.SetInterrupt(15);
             brickletIndustrialDigitalIn4.Interrupt += InterruptCB;
             System.Console.WriteLine("Industrial Digital In 4 initialized");
         }

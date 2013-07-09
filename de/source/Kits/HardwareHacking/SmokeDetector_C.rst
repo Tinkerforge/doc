@@ -58,19 +58,19 @@ Schritt 1: Bricks und Bricklets dynamisch erkennen
 
     int main() {
         SmokeDetector sd;
-        ipcon_create(&ws.ipcon);
-        ipcon_connect(&ws.ipcon, HOST, PORT);
+        ipcon_create(&sd.ipcon);
+        ipcon_connect(&sd.ipcon, HOST, PORT);
 
-        ipcon_register_callback(&ws.ipcon,
+        ipcon_register_callback(&sd.ipcon,
                                 IPCON_CALLBACK_ENUMERATE,
                                 (void *)cb_enumerate,
-                                (void *)&ws);
-        ipcon_register_callback(&ws.ipcon,
+                                (void *)&sd);
+        ipcon_register_callback(&sd.ipcon,
                                 IPCON_CALLBACK_CONNECTED,
                                 (void *)cb_connected,
-                                (void *)&ws);
+                                (void *)&sd);
 
-        ipcon_enumerate(&ws.ipcon);
+        ipcon_enumerate(&sd.ipcon);
         return 0;
     }
 
@@ -111,11 +111,11 @@ Schritt 1: Bricks und Bricklets dynamisch erkennen
         ipcon_create(&sd.ipcon);
         ipcon_connect(&sd.ipcon, HOST, PORT);
 
-        ipcon_register_callback(&ws.ipcon,
+        ipcon_register_callback(&sd.ipcon,
                                 IPCON_CALLBACK_ENUMERATE,
                                 (void *)cb_enumerate,
                                 (void *)&sd);
-        ipcon_register_callback(&ws.ipcon,
+        ipcon_register_callback(&sd.ipcon,
                                 IPCON_CALLBACK_CONNECTED,
                                 (void *)cb_connected,
                                 (void *)&sd);
@@ -176,7 +176,7 @@ Schritt 2: Bricklets beim Enumerate initialisieren
                                                           INDUSTRIAL_DIGITAL_IN_4_CALLBACK_INTERRUPT,
                                                           (void *)cb_interrupt,
                                                           (void *)sd);
-                industrial_digital_in_4_set_interrupt(&sd->idi4, 255);
+                industrial_digital_in_4_set_interrupt(&sd->idi4, 15);
             }
         }
     }
@@ -212,7 +212,7 @@ Schritt 4: Fehlerbehandlung und Logging
 .. code-block:: c
 
     while(true) {
-        int rc = ipcon_connect(&ws.ipcon, HOST, PORT);
+        int rc = ipcon_connect(&sd.ipcon, HOST, PORT);
         if(rc < 0) {
             fprintf(stderr, "Could not connect to brickd: %d\n", rc);
             // TODO: sleep 1s
@@ -226,7 +226,7 @@ Schritt 4: Fehlerbehandlung und Logging
 .. code-block:: c
 
     while(true) {
-        int rc = ipcon_enumerate(&ws.ipcon);
+        int rc = ipcon_enumerate(&sd.ipcon);
         if(rc < 0) {
             fprintf(stderr, "Could not enumerate: %d\n", rc);
             // TODO: sleep 1s
@@ -251,7 +251,7 @@ Schritt 4: Fehlerbehandlung und Logging
                                                   (void *)cb_interrupt,
                                                   (void *)sd);
 
-        int rc = industrial_digital_in_4_set_interrupt(&sd->idi4, 255);
+        int rc = industrial_digital_in_4_set_interrupt(&sd->idi4, 15);
         if(rc < 0) {
             fprintf(stderr, "Industrial Digital In 4 init failed: %d\n", rc);
         } else {

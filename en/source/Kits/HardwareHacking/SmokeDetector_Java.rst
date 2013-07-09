@@ -141,7 +141,7 @@ Step 2: Initialize Bricklet on Enumeration
     if(deviceIdentifier == BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER) {
         brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(uid, ipcon);
         brickletIndustrialDigitalIn4.setDebouncePeriod(10000);
-        brickletIndustrialDigitalIn4.setInterrupt(255);
+        brickletIndustrialDigitalIn4.setInterrupt(15);
         brickletIndustrialDigitalIn4.addInterruptListener(this);
     }
 
@@ -157,7 +157,7 @@ Step 2: Initialize Bricklet on Enumeration
             if(deviceIdentifier == BrickletIndustrialDigitalIn4.DEVICE_IDENTIFIER) {
                 brickletIndustrialDigitalIn4 = new BrickletIndustrialDigitalIn4(uid, ipcon);
                 brickletIndustrialDigitalIn4.setDebouncePeriod(10000);
-                brickletIndustrialDigitalIn4.setInterrupt(255);
+                brickletIndustrialDigitalIn4.setInterrupt(15);
                 brickletIndustrialDigitalIn4.addInterruptListener(this);
             }
         }
