@@ -81,7 +81,7 @@ such that no direct USB connection is necessary.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_wifi_350.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Bricklet attached to Doorbell with WiFi Extension
+   :alt: Industrial Digital In 4 Bricklet attached to Doorbell with WIFI Extension
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed_wifi.jpg
 

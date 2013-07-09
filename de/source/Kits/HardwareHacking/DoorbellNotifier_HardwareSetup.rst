@@ -81,7 +81,7 @@ Master Extension, so dass kein direkter USB Anschluss notwendig ist.
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_wifi_350.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Bricklet mit Türklingel verbunden und WiFi Extension
+   :alt: Industrial Digital In 4 Bricklet mit Türklingel verbunden und WIFI Extension
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed_wifi.jpg
 
