@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/temperature-ir-bricklet.html
 
 .. include:: Temperature_IR.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _temperature_ir_bricklet:
 
@@ -136,6 +137,36 @@ The default is an emissivity of 0.98 (0.98 * 0xFFFF = 64224).
 
 |test_pi_ref|
 
+
+.. _temperature_ir_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the Temperature IR Bricklet <https://www.tinkerforge.com/en/shop/cases/case-temperature-ir-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_temperature_ir_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Temperature IR Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_temperature_ir_case_1000.jpg
+
+The assembly is easiest if you follow the following steps:
+
+* Screw Bricklet to top plate with spacers at the bottom and long screws from the top,
+* build up side plates,
+* plug side plates into top plate and
+* screw bottom plate to bottom spacers.
+
+Below you can see an exploded assembly drawing of the Temperature IR Bricklet case:
+
+.. image:: /Images/Exploded/dual_relay_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Dual Relay Bricklet
+   :align: center
+   :target: ../../_images/Exploded/dual_relay_exploded.png
+
+|bricklet_case_hint|
 
 .. _temperature_ir_bricklet_programming_interfaces:
 

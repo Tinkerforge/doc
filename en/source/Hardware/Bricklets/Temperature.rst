@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/temperature-bricklet.html
 
 .. include:: Temperature.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _temperature_bricklet:
 
@@ -123,6 +124,31 @@ temperature rising (or falling if it is extremely warm in your room).
 
 |test_pi_ref|
 
+
+.. _temperature_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the Temperature Bricklet <https://www.tinkerforge.com/en/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for Temperature Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_ambient_light_case_built_up_1000.jpg
+
+.. include:: Temperature.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/ambient_light_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Temperature Bricklet
+   :align: center
+   :target: ../../_images/Exploded/ambient_light_exploded.png
+
+|bricklet_case_hint|
 
 .. _temperature_bricklet_programming_interfaces:
 

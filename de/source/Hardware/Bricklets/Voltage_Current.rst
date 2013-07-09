@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/voltage-current-bricklet.html
 
 .. include:: Voltage_Current.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _voltage_current_bricklet:
 
@@ -163,6 +164,30 @@ und der Motor ungefähr 40W Leistung verbraucht.
 
 |test_pi_ref|
 
+.. _voltage_current_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Voltage/Current Bricklet <https://www.tinkerforge.com/de/shop/cases/case-voltage-current-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_voltage_current_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Voltage/Current Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_voltage_current_case_1000.jpg
+
+.. include:: Voltage_Current.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/voltage_current_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Voltage/Current Bricklet
+   :align: center
+   :target: ../../_images/Exploded/voltage_current_exploded.png
+
+|bricklet_case_hint|
 
 .. _voltage_current_bricklet_programming_interfaces:
 

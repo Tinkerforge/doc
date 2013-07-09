@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/industrial-dual-0-20ma-bricklet.html
 
 .. include:: Industrial_Dual_020mA.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _industrial_dual_0_20ma_bricklet:
 
@@ -140,6 +141,31 @@ depicted below.
 Interact with the sensor to see the current changing in the Brick Viewer.
 
 |test_pi_ref|
+
+.. _industrial_dual_0_20ma_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the Industrial Dual 0-20mA Bricklet <https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Industrial Dual 0-20mA Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
+
+.. include:: Industrial_Dual_020mA.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Industrial Dual 0-20mA Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
+
+|bricklet_case_hint|
 
 .. _industrial_dual_0_20ma_bricklet_programming_interfaces:
 

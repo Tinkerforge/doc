@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/industrial-digital-out-4-bricklet.html
 
 .. include:: Industrial_Digital_Out_4.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _industrial_digital_out_4_bricklet:
 
@@ -137,14 +138,38 @@ und eine Last. Für diesen Test schließen wir eine Batterie und eine LED an
 
 Anschließend sollte die LED über den Brick Viewer geschaltet werden können.
 
-.. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_brickv.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Bricklet im Brick Viewer
+   :alt: Industrial Digital Out 4 Bricklet im Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_brickv.jpg
 
 |test_pi_ref|
 
+.. _industrial_digital_out_4_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Industrial Digital Out 4 Bricklet <https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Industrial Digital Out 4 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
+
+.. include:: Industrial_Digital_Out_4.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Industrial Digital Out 4 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
+
+|bricklet_case_hint|
 
 .. _industrial_digital_out_4_bricklet_programming_interfaces:
 

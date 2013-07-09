@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/ptc-bricklet.html
 
 .. include:: PTC.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _ptc_bricklet:
 
@@ -165,6 +166,31 @@ Wenn der Sensor in die Hand genommen wird sollte die angezeigte Temperatur
 steigen (oder fallen wenn es im Raum sehr warm ist).
 
 |test_pi_ref|
+
+.. _ptc_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das PTC Bricklet <https://www.tinkerforge.com/de/shop/cases/case-ptc-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_ptc_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für PTC Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_ptc_case_1000.jpg
+
+.. include:: PTC.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/ptc_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für PTC Bricklet
+   :align: center
+   :target: ../../_images/Exploded/ptc_exploded.png
+
+|bricklet_case_hint|
 
 .. _ptc_bricklet_programming_interfaces:
 

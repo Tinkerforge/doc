@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/linear-poti-bricklet.html
 
 .. include:: Linear_Poti.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _linear_poti_bricklet:
 
@@ -133,6 +134,30 @@ Der Graph ist durch hoch und runter bewegen des Sliders entstanden.
 
 |test_pi_ref|
 
+.. _linear_poti_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Linear Poti Bricklet <https://www.tinkerforge.com/de/shop/cases/case-linear-poti-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_linear_poti_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Linear Poti Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_linear_poti_case_1000.jpg
+
+.. include:: Linear_Poti.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/linear_poti_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Linear Poti Bricklet
+   :align: center
+   :target: ../../_images/Exploded/linear_poti_exploded.png
+
+|bricklet_case_hint|
 
 .. _linear_poti_bricklet_programming_interfaces:
 

@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/gps-bricklet.html
 
 .. include:: GPS.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _gps_bricklet:
 
@@ -139,6 +140,31 @@ depicted below.
 
 |test_pi_ref|
 
+
+.. _gps_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the GPS Bricklet <https://www.tinkerforge.com/en/shop/cases/case-gps-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_gps_case_350.jpg
+   :scale: 100 %
+   :alt: Case for GPS Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_gps_case_1000.jpg
+
+.. include:: GPS.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/gps_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for GPS Bricklet
+   :align: center
+   :target: ../../_images/Exploded/gps_exploded.png
+
+|bricklet_case_hint|
 
 .. _gps_bricklet_programming_interfaces:
 

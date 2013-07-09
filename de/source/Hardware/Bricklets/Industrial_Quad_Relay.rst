@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/industrial-quad-relay-bricklet.html
 
 .. include:: Industrial_Quad_Relay.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _industrial_quad_relay_bricklet:
 
@@ -143,6 +144,30 @@ Anschließend sollte die LED über den Brick Viewer geschaltet werden können.
 
 |test_pi_ref|
 
+.. _industrial_quad_relay_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Industrial Quad Relay Bricklet <https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Industrial Quad Relay Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
+
+.. include:: Industrial_Quad_Relay.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Industrial Quad Relay Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
+
+|bricklet_case_hint|
 
 .. _industrial_quad_relay_bricklet_programming_interfaces:
 

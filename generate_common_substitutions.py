@@ -95,6 +95,51 @@ brick_test_pi_ref = {
 """
 }
 
+bricklet_case_steps = {
+'en':
+"""
+>>>bricklet_case_steps
+The assembly is easiest if you follow the following steps:
+
+* Screw spacers to the Bricklet,
+* screw bottom plate to bottom spacers,
+* build up side plates,
+* plug side plates into bottom plate and
+* screw top plate to top spacers.
+
+Below you can see an exploded assembly drawing of the {0} Bricklet case:
+<<<bricklet_case_steps
+""",
+'de':
+"""
+>>>bricklet_case_steps
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
+
+* Schraube Abstandshalter an das Bricklet,
+* schraube Untereteil an untere Abstandshalter,
+* baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Unterteil und
+* schraube Oberteil auf obere Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des {0} Bricklet-Gehäuse:
+<<<bricklet_case_steps
+"""
+}
+
+bricklet_case_hint = {
+'en':
+""".. |bricklet_case_hint| replace::
+ Hint: There is a protective film on both sides of the plates,
+ you have to remove it before assembly.
+""",
+'de':
+""".. |bricklet_case_hint| replace::
+ Hinweis: Auf beiden Seiten der Platten ist eine Schutzfolie, 
+ diese muss vor dem Zusammenbau entfernt werden.
+"""
+}
+
+
 bricklet_test_intro = {
 'en':
 """.. |test_intro| replace::
@@ -167,11 +212,14 @@ def make_brick_substitutions(brick):
     return substitutions
 
 def make_bricklet_substitutions(bricklet):
-    substitutions = ''
+    substitutions = '>>>substitutions\n'
     substitutions += bricklet_test_intro[lang].format(bricklet[0]) + '\n'
     substitutions += bricklet_test_connect[lang].format(bricklet[0]) + '\n'
     substitutions += bricklet_test_tab[lang].format(bricklet[0]) + '\n'
-    substitutions += bricklet_test_pi_ref[lang].format(bricklet[1], bricklet[0])
+    substitutions += bricklet_test_pi_ref[lang].format(bricklet[1], bricklet[0]) + '\n'
+    substitutions += bricklet_case_hint[lang] + '\n'
+    substitutions += '<<<substitutions\n'
+    substitutions += bricklet_case_steps[lang].format(bricklet[0]) + '\n'
 
     return substitutions
 

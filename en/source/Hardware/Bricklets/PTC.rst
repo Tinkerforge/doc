@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/ptc-bricklet.html
 
 .. include:: PTC.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _ptc_bricklet:
 
@@ -165,6 +166,29 @@ Put the sensor in your hand to see the
 temperature rising (or falling if it is extremely warm in your room).
 
 |test_pi_ref|
+
+.. _ptc_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the PTC Bricklet <https://www.tinkerforge.com/en/shop/cases/case-ptc-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_ptc_case_350.jpg
+   :scale: 100 %
+   :alt: Case for PTC Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_ptc_case_1000.jpg
+
+.. include:: PTC.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/ptc_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for PTC Bricklet
+   :align: center
+   :target: ../../_images/Exploded/ptc_exploded.png
 
 .. _ptc_bricklet_programming_interfaces:
 

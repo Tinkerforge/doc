@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/temperature-ir-bricklet.html
 
 .. include:: Temperature_IR.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _temperature_ir_bricklet:
 
@@ -134,6 +135,35 @@ Emissivität von 1,0. Die Standard Emissivität ist 0,98 (0,98 * 0xFFFF = 64224)
 
 |test_pi_ref|
 
+.. _temperature_ir_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Temperature IR Bricklet <https://www.tinkerforge.com/de/shop/cases/case-temperature-ir-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_temperature_ir_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Temperature IR Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_temperature_ir_case_1000.jpg
+
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
+
+* Schraube Bricklet an Oberteil mit Abstandshalter von unten und den langen Schrauben von oben,
+* baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Oberteil und
+* schraube Unterteil auf unteren Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des Temperature IR Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/temperature_ir_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Temperature IR Bricklet
+   :align: center
+   :target: ../../_images/Exploded/temperature_ir_exploded.png
+
+|bricklet_case_hint|
 
 .. _temperature_ir_bricklet_programming_interfaces:
 

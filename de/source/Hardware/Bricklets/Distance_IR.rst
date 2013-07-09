@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/distance-ir-bricklet.html
 
 .. include:: Distance_IR.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _distance_ir_bricklet:
 
@@ -206,6 +207,31 @@ mit ``#`` beginnen) und beinhaltet Zeilen die jeweils ein
 ``<Distanz in cm>: <Analogwert in mV>`` Paar enthalten. Die bestehenden
 Abbildungsdateien diesen als Beispiel für ein besseres Verständnis.
 
+
+.. _distance_ir_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Distance IR Bricklet <https://www.tinkerforge.com/de/shop/cases/case-distance-ir-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_distance_ir_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Distance IR Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_distance_ir_case_1000.jpg
+
+.. include:: Distance_IR.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/distance_ir_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Distance IR Bricklet
+   :align: center
+   :target: ../../_images/Exploded/distance_ir_exploded.png
+
+|bricklet_case_hint|
 
 .. _distance_ir_bricklet_programming_interfaces:
 

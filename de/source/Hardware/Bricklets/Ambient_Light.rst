@@ -3,6 +3,8 @@
 :shoplink: ../../../shop/bricklets/ambient-light-bricklet.html
 
 .. include:: Ambient_Light.substitutions
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 
 .. _ambient_light_bricklet:
@@ -123,6 +125,31 @@ ungefähr so aussehen wie auf dem folgenden Screenshot.
    :target: ../../_images/Bricklets/bricklet_ambient_light_brickv.jpg
 
 |test_pi_ref|
+
+.. _ambient_light_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Ambient Light Bricklet <https://www.tinkerforge.com/de/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Ambient Light Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_ambient_light_case_built_up_1000.jpg
+
+.. include:: Ambient_Light.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/ambient_light_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Ambient Light Bricklet
+   :align: center
+   :target: ../../_images/Exploded/ambient_light_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _ambient_light_bricklet_programming_interfaces:

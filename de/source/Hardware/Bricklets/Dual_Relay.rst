@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/dual-relay-bricklet.html
 
 .. include:: Dual_Relay.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _dual_relay_bricklet:
 
@@ -157,6 +158,7 @@ ist durch ein Klickgeräusch hörbar und durch LEDs neben den Relais auch sichtb
 |test_pi_ref|
 
 
+
 .. _dual_relay_inductive_load_switching:
 
 Schalten Induktiver Lasten
@@ -174,6 +176,76 @@ Kombination eines Widerstandes und eines Kondensators parallel zur Last empfohle
 
 Weitere Informationen über Schutzbeschaltung ist
 `hier <http://www.jkmicro.com/inductive_loads.pdf>`__ zu finden.
+
+
+
+
+.. _dual_relay_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Dual Relay Bricklet <https://www.tinkerforge.com/de/shop/cases/case-dual-relay-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_dual_relay_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Dual Relay Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_dual_relay_case_1000.jpg
+
+Das Gehäuse des Dual Relay Bricklet wird inklusive Kabelbinder für eine
+Zugentlastung und WAGO Verbindungsklemmen zum überbrücken von Leitungen
+ausgeliefert. Das Gehäuse ist groß genug um sowohl die Zugentlastung als
+auch die WAGO Klemmen im Gehäuse unterzubringen. 
+
+Der interne Aufbau kann wie folgt aussehen (mit einem sowie beiden Relais
+angeschlossen)
+
+.. image:: /Images/Cases/bricklet_dual_relay_case_top_open_1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Dual Relay Bricklet mit einem Relais angeschlossen
+   :align: center
+   :target: ../../_images/Cases/bricklet_dual_relay_case_top_open_1_1000.jpg
+
+.. image:: /Images/Cases/bricklet_dual_relay_case_top_open_2_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Dual Relay Bricklet mit zwei Relais angeschlossen
+   :align: center
+   :target: ../../_images/Cases/bricklet_dual_relay_case_top_open_2_1000.jpg
+
+Der Aussenleiter (braun) wird mit dem Dual Relay Bricklet geschaltet 
+und der Schutzleiter (grün-gelb) sowie der Neutralleiter (blau) werden
+mit den WAGO Klemmen gebrückt.
+
+Dabei ist unbedingt zu beachte, dass der Schutzleiter länger als die anderen
+beiden Leitungen seien sollte. Wir empfehlen die folgenden Längen für die
+Leitungen und die Abisolierungen:
+
+.. image:: /Images/Cases/bricklet_dual_relay_case_cables_350.jpg
+   :scale: 100 %
+   :alt: Empfohlene Kabellängen
+   :align: center
+   :target: ../../_images/Cases/bricklet_dual_relay_case_cable_1000.jpg
+
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
+
+* Schraube Abstandshalter an Bricklet,
+* schraube Bricklet an Unterteil mit Abstandshalter,
+* baue Seitenteile (inklusive Zugentlastung) auf,
+* stecke zusammengebaute Seitenteile in Unterteil,
+* füge Verkabelung und WAGO Klemmen hinzu,
+* ziehe Kabel mit Kabelbinder für Zugentlastung fest und
+* schraube Oberteul auf obere Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des Dual Relay Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/dual_relay_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Dual Relay Bricklet
+   :align: center
+   :target: ../../_images/Exploded/dual_relay_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _dual_relay_bricklet_programming_interfaces:

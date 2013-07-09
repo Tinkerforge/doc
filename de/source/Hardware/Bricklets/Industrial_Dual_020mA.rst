@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/industrial-dual-0-20ma-bricklet.html
 
 .. include:: Industrial_Dual_020mA.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _industrial_dual_0_20ma_bricklet:
 
@@ -142,6 +143,31 @@ Bei Interaktion mit dem Sensor sollte sich der Stromwert entsprechend
 im Brick Viewer ändern.
 
 |test_pi_ref|
+
+.. _industrial_dual_0_20ma_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Industrial Dual 0-20mA Bricklet <https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Industrial Dual 0-20mA Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
+
+.. include:: Industrial_Dual_020mA.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Industrial Dual 0-20mA Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
+
+|bricklet_case_hint|
 
 .. _industrial_dual_0_20ma_bricklet_programming_interfaces:
 

@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/distance-ir-bricklet.html
 
 .. include:: Distance_IR.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _distance_ir_bricklet:
 
@@ -199,6 +200,30 @@ A voltage/distance mapping file consists of comments (lines beginning with ``#``
 and lines containing one ``<distance in cm>: <analog value in mV>`` tuple each.
 Look in the provided files above to get an idea.
 
+.. _distance_ir_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the Distance IR Bricklet <https://www.tinkerforge.com/en/shop/cases/case-distance-ir-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_distance_ir_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Distance IR Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_distance_ir_case_1000.jpg
+
+.. include:: Distance_IR.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/distance_ir_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Distance IR Bricklet
+   :align: center
+   :target: ../../_images/Exploded/distance_ir_exploded.png
+
+|bricklet_case_hint|
 
 .. _distance_ir_bricklet_programming_interfaces:
 

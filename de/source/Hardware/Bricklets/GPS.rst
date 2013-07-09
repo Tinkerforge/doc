@@ -138,6 +138,31 @@ aussehen.
 |test_pi_ref|
 
 
+.. _gps_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das GPS Bricklet <https://www.tinkerforge.com/de/shop/cases/case-gps-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_gps_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für GPS Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_gps_case_1000.jpg
+
+.. include:: GPS.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/gps_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für GPS Bricklet
+   :align: center
+   :target: ../../_images/Exploded/gps_exploded.png
+
+|bricklet_case_hint|
+
 .. _gps_bricklet_programming_interfaces:
 
 Programmierschnittstellen

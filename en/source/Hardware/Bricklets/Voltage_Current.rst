@@ -3,7 +3,7 @@
 :shoplink: ../../../shop/bricklets/voltage-current-bricklet.html
 
 .. include:: Voltage_Current.substitutions
-
+   :end-before: <<<substitutions
 
 .. _voltage_current_bricklet:
 
@@ -155,6 +155,30 @@ utilizes about 40W power.
 
 |test_pi_ref|
 
+.. _voltage_current_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the Voltage/Current Bricklet <https://www.tinkerforge.com/en/shop/cases/case-voltage-current-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_voltage_current_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Voltage/Current Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_voltage_current_case_1000.jpg
+
+.. include:: Voltage_Current.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/voltage_current_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Voltage/Current Bricklet
+   :align: center
+   :target: ../../_images/Exploded/voltage_current_exploded.png
+
+|bricklet_case_hint|
 
 .. _voltage_current_bricklet_programming_interfaces:
 

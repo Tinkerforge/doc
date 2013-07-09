@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/io4-bricklet.html
 
 .. include:: IO4.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _io4_bricklet:
 
@@ -160,6 +161,30 @@ auch mit Hilfe einer Büroklammer erzeugt werden.
 
 |test_pi_ref|
 
+.. _io4_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das IO-4 Bricklet <https://www.tinkerforge.com/de/shop/cases/case-io-4-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_io4_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für IO-4 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_io4_case_1000.jpg
+
+.. include:: IO4.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/io4_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für IO-4 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/io4_exploded.png
+
+|bricklet_case_hint|
 
 .. _io4_bricklet_programming_interfaces:
 

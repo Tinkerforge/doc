@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/humidity-bricklet.html
 
 .. include:: Humidity.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _humidity_bricklet:
 
@@ -123,6 +124,30 @@ steigt durch die feuchte Atemluft und fällt dann wieder ab.
 
 |test_pi_ref|
 
+.. _humidity_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Humidity Bricklet <https://www.tinkerforge.com/de/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Ambient Light Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_ambient_light_case_built_up_1000.jpg
+
+.. include:: Humidity.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/ambient_light_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Humidity Bricklet
+   :align: center
+   :target: ../../_images/Exploded/ambient_light_exploded.png
+
+|bricklet_case_hint|
 
 .. _humidity_bricklet_programming_interfaces:
 

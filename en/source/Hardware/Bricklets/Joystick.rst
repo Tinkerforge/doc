@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/joystick-bricklet.html
 
 .. include:: Joystick.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _joystick_bricklet:
 
@@ -131,6 +132,32 @@ in center position, press the "Calibrate (0,0)" button.
 
 |test_pi_ref|
 
+.. _joystick_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the Joystick Bricklet <https://www.tinkerforge.com/en/shop/cases/case-joystick-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_joystick_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Joystick Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_joystick_case_1000.jpg
+
+.. include:: Joystick.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/joystick_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Joystick Bricklet
+   :align: center
+   :target: ../../_images/Exploded/joystick_exploded.png
+
+|bricklet_case_hint|
+
+.. _joystick_bricklet_programming_interfaces:
 
 .. _joystick_bricklet_programming_interfaces:
 

@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/industrial-digital-in-4-bricklet.html
 
 .. include:: Industrial_Digital_In_4.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _industrial_digital_in_4_bricklet:
 
@@ -148,6 +149,30 @@ der Batterie geändert werden können.
 
 |test_pi_ref|
 
+.. _industrial_digital_in_4_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Industrial Digital In 4 Bricklet <https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Industrial Digital In 4 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
+
+.. include:: Industrial_Digital_In_4.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Industrial Digital In 4 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
+
+|bricklet_case_hint|
 
 .. _industrial_digital_in_4_bricklet_programming_interfaces:
 

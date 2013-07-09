@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/lcd20x4-bricklet.html
 
 .. include:: LCD_20x4.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _lcd_20x4_bricklet:
 
@@ -150,6 +151,37 @@ werden. Über diese können externe Schalter oder Taster
 angeschlossen werden. Normalerweise verbindet man jeweils einen Eingang
 (BTN0 bis BTN3) über einen Taster oder Schalter mit GND.
 
+.. _lcd_20x4_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das LCD 20x4 Bricklet <https://www.tinkerforge.com/de/shop/cases/case-lcd-20x4-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_lcd_20x4_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für LCD 20x4 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_lcd_20x4_case_1000.jpg
+
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
+
+* Schraube LCD an Oberteil mit Abstandshalter (10mm) von unten und den langen Schrauben von oben,
+* Schraube Bricklet an LCD mit Abstandshalter (12mm)
+* baue Seitenteile auf,
+* stecke Taster-Verlängerung in Seitenteil,
+* stecke zusammengebaute Seitenteile in Oberteil und
+* schraube Unterteil auf unteren Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des LCD 20x4 Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/lcd20x4_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für LCD 20x4 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/lcd20x4_exploded.png
+
+|bricklet_case_hint|
 
 .. _lcd_20x4_bricklet_programming_interfaces:
 

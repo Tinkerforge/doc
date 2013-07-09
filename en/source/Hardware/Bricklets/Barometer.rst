@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/barometer-bricklet.html
 
 .. include:: Barometer.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _barometer_bricklet:
 
@@ -111,6 +112,30 @@ and a graph that shows the air pressure over time.
 
 |test_pi_ref|
 
+.. _barometer_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the Barometer Bricklet <https://www.tinkerforge.com/en/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for Barometer Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_ambient_light_case_built_up_1000.jpg
+
+.. include:: Barometer.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/ambient_light_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Barometer Bricklet
+   :align: center
+   :target: ../../_images/Exploded/ambient_light_exploded.png
+
+|bricklet_case_hint|
 
 .. _barometer_bricklet_programming_interfaces:
 

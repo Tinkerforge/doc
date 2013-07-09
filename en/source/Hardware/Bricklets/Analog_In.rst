@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/analog-in-bricklet.html
 
 .. include:: Analog_In.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _analog_in_bricklet:
 
@@ -146,6 +147,30 @@ and a graph that shows the voltage over time.
 
 |test_pi_ref|
 
+.. _analog_in_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the Analog In Bricklet <https://www.tinkerforge.com/en/shop/cases/case-analog-in-out-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_analog_in_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for Analog In Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_analog_in_case_built_up_1000.jpg
+
+.. include:: Analog_In.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/analog_in_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Analog In Bricklet
+   :align: center
+   :target: ../../_images/Exploded/analog_in_exploded.png
+
+|bricklet_case_hint|
 
 .. _analog_in_bricklet_programming_interfaces:
 

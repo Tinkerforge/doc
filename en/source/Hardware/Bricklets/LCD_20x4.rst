@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/lcd20x4-bricklet.html
 
 .. include:: LCD_20x4.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _lcd_20x4_bricklet:
 
@@ -147,6 +148,38 @@ The LCD Bricklet can be equipped with a pin header on the right hand side.
 To attach a switch or a button you have to connect on pin
 with one input (BTN0 to BTN3) and the other with GND.
 
+
+.. _lcd_20x4_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the LCD 20x4 Bricklet <https://www.tinkerforge.com/en/shop/cases/case-lcd-20x4-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_lcd_20x4_case_350.jpg
+   :scale: 100 %
+   :alt: Case for LCD 20x4 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_lcd_20x4_case_1000.jpg
+
+The assembly is easiest if you follow the following steps:
+
+* Screw LCD to top plate with spacers (10mm) at the bottom and long screws from the top,
+* screw Bricklet to LCD with spacers (12mm),
+* build up side plates,
+* add button extensions to side plate,
+* plug side plates into top plate and
+* screw bottom plate to bottom spacers.
+
+Below you can see an exploded assembly drawing of the LCD 20x4 Bricklet case:
+
+.. image:: /Images/Exploded/lcd20x4_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für LCD 20x4 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/lcd20x4_exploded.png
+
+|bricklet_case_hint|
 
 .. _lcd_20x4_bricklet_programming_interfaces:
 

@@ -3,7 +3,8 @@
 :shoplink: ../../../shop/bricklets/joystick-bricklet.html
 
 .. include:: Joystick.substitutions
-
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
 
 .. _joystick_bricklet:
 
@@ -130,6 +131,30 @@ um die Null-Position zu kalibrieren.
 
 |test_pi_ref|
 
+.. _joystick_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das Joystick Bricklet <https://www.tinkerforge.com/de/shop/cases/case-joystick-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_joystick_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Joystick Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_joystick_case_1000.jpg
+
+.. include:: Joystick.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/joystick_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Joystick Bricklet
+   :align: center
+   :target: ../../_images/Exploded/joystick_exploded.png
+
+|bricklet_case_hint|
 
 .. _joystick_bricklet_programming_interfaces:
 
