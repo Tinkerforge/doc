@@ -184,7 +184,7 @@ Phase 2: Ein eigenes Programm schreiben
 Um das Rotary Poti Bricklet in das Projekt aufzunehmen wird nun das Programm so
 abgeändert, dass die Position des Potentiometers die Geschwindigkeit des
 Motors bestimmt. Das abgeänderte Programm sieht wie folgt aus (`Download
-<https://raw.github.com/Tinkerforge/doc/master/de/source/Tutorials/tutorial_brick_bricklet_test.py>`__):
+<https://raw.github.com/Tinkerforge/doc/master/de/source/Tutorials/Tutorial_Extending/tutorial_brick_bricklet_test.py>`__):
 
 .. literalinclude:: tutorial_brick_bricklet_test.py
  :language: python
