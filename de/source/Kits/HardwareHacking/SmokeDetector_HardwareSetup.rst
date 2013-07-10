@@ -78,11 +78,11 @@ gemeinsamen Pin (der mittlere) und jeweils einen eigenen (Pin rechts, links).
 Um die grüne LED leuchten zu lassen wird der linke Pin benutzt.
 
 
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_new_350.jpg
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_350.jpg
    :scale: 100 %
    :alt: Geöffneter Rauchmelder mit angelöteten Drähten
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_new_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_1200.jpg
 
 Wir löten einen Draht an den mittleren Pin an und verfolgen die Leiterbahn des 
 linken Pads bis zu einem Widerstand (in rot
@@ -99,11 +99,11 @@ Die beiden Drähte werden an + und - von Eingang 0 des Industrial Digital In 4
 Bricklets angeschlossen. Ob die Polarität stimmt können wir später mit dem
 Brick Viewer überprüfen.
 
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_new_350.jpg
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
    :scale: 100 %
    :alt: Geöffneter Rauchmelder mit angelöteten Drähten und verbundenem Industrial Digital In 4 Bricklet
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_new_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
 
 Als nächstes können wir den gehackten Rauchmelder testen. Um dies zu tun 
 drücken wir den Test-Knopf woraufhin die Reaktion der LED im Brick Viewer

@@ -57,8 +57,8 @@ related relay. You should be able to trigger the remote control.
 After this test we can close the casing of the remote control and have finished
 our task.
 
-.. image:: /Images/Kits/hardware_hacking_garage_remote_finished_new_350.jpg
+.. image:: /Images/Kits/hardware_hacking_garage_remote_finished_350.jpg
    :scale: 100 %
    :alt: Garage Door Remote Control with attached Industrial Quad Relay Bricklet
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_new_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_1200.jpg

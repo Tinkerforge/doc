@@ -59,10 +59,10 @@ und schalten das Relais. Die Fernbedienung sollte sich darüber steuern lassen.
 Nach diesem Test können wir das Gehäuse der Fernbedienung schließen und
 sind mit unserer Arbeit fertig.
 
-.. image:: /Images/Kits/hardware_hacking_garage_remote_finished_new_350.jpg
+.. image:: /Images/Kits/hardware_hacking_garage_remote_finished_350.jpg
    :scale: 100 %
    :alt: Garagentorfernbedienung mit angeschlossenem Industrial Quad Relay Bricklet
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_new_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_garage_remote_finished_1200.jpg
 
 

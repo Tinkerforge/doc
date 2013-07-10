@@ -78,11 +78,11 @@ LEDs (one green and one red) in one common casing. Both have one common pin
 (center) and one single pin each (pin left, right).
 To light the green LED the left pin is used.
 
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_new_350.jpg
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_350.jpg
    :scale: 100 %
    :alt: Smoke detector opened with soldered LED
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_new_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_soldered_1200.jpg
 
 We solder one wire to the center pin of the LED and trace the circuit from the
 left pin until we find the resistor
@@ -98,11 +98,11 @@ After that we can screw the circuit board back to the casing.
 We connect the wires to the + and - of port 0 of the Industrial Digital In 4
 Bricklet. We can check if the polarity is correct later on with the Brick Viewer.
 
-.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_new_350.jpg
+.. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
    :scale: 100 %
    :alt: Smoke detector opened with soldered wires to LED connected to Industrial Digital In 4 Bricklet
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_new_1200.jpg
+   :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
 
 Now we can test the hacked smoke detector. To do that, we can press the test
 button. The reaction of the LED should be represented in the 
