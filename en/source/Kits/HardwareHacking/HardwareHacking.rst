@@ -38,7 +38,7 @@ Features
   * PC, smart phone/tablet, Raspberry Pi or over the Internet (Internet of Things).
   * Demo applications for Android, Windows Phone and iOS* are available.
 
-* Ready to Hack: Two Remote Control Mains Switches included
+* Ready to Hack: Two Remote Control Mains Switches included.
 
 * Read out and control low voltage mainstream devices,
 
@@ -69,14 +69,16 @@ There are two groups of applications of this kit: controlling and reading
 out. For control applications an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` is included. It contains four on/off
 switches. For read-out applications an :ref:`Industrial Digital In 4 Bricklet
-<industrial_digital_in_4_bricklet>` is included. It can read out galvanically 
-isolated four digital signals with voltages up to 36V.
+<industrial_digital_in_4_bricklet>` is included. It can read out four digital
+galvanically isolated signals with voltages up to 36V.
 
 Documented example applications are:
 
 * Forwarding smoke detector alarm to a PC.
-* Controlling remote mains switches with a PC.
-* Opening/Closing garage doors over a smart phone/tablet (Android, Windows Phone and iOS).
+* Controlling remote mains switches with a PC and smart 
+  phone/tablet (Android, Windows Phone and iOS).
+* Opening/Closing garage doors over a smart phone/tablet (Android, 
+  Windows Phone and iOS).
 * Forwarding door bell ringing to a PC.
 
 Many more applications are possible, anything that is controlled by
@@ -161,7 +163,7 @@ in the :ref:`Hardware Hacking for Beginners
 
 
 .. warning:: Keep voltages in mentioned limitations and don't hack devices 
-  which are supplied by probably dangerous high voltages (e.g. mains voltage)!
+  which are supplied by dangerous high voltages (e.g. mains voltage)!
 
 
 Detect Digital Signals up to 36V
@@ -252,13 +254,13 @@ switches and connect it to a PC to create software controlled remote switches.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_finished_1200.jpg
 
-Therefore we connect an :ref:`Industrial Quad Relay Bricklet
+We connect an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
 <http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
 remote control. There are a vast number of remote switches available on the
 market. Most of the commercially available remote controls use the HX2262 IC
-with the same hardware design as the ELRO remote control used here,
-so this guide can be applied to most remote switches.
+with the same hardware design as the ELRO remote control.
+So this guide can be applied to most remote switches.
 
 The full description of the hardware setup can be found
 :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.

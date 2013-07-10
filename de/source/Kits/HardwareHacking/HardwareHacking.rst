@@ -77,7 +77,8 @@ mitgeliefert. Dieses kann vier digitale Signale mit Spannungen bis zu
 Dokumentierte Beispielanwendungen sind:
 
 * Rauchmelderalarm zum PC weiterleiten.
-* Steckdosen über den PC fernsteuern.
+* Steckdosen über den PC uns über Smartphone/Tablet fernsteuern (Android, 
+  Windows Phone und iOS).
 * Garagentore über ein Smartphone/Tablet (Android, Windows Phone und iOS)
   öffnen und schließen.
 * Türklingel zum PC weiterleiten.
