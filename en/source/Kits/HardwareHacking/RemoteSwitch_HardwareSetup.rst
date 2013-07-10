@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Remote Switches Hardware Setup
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Remote Mains Switches Hardware Setup
 
 .. _starter_kit_hardware_hacking_remote_switch_hardware_setup:
 
-Remote Switch Hardware Setup
-============================
+Remote Mains Switches Hardware Setup
+====================================
 
 This kit includes two remote control mains switches. So this example
 describes how to hack the included remote control. There are many other 
