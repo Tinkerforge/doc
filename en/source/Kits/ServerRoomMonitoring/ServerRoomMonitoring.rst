@@ -28,10 +28,10 @@ Description
 -----------
 
 The *Starter Kit: Server Room Monitoring* is an open source kit to
-monitor server room installation. The basic kit is equipped with the following
+monitor server room installations. The basic kit is equipped with the following
 Sensors: One :ref:`Ambient Light Bricklet <ambient_light_bricklet>`,
 :ref:`Temperature Bricklet <temperature_bricklet>` and 
-:ref:`PTC Bricklet <ptc_bricklet>`.
+:ref:`PTC Bricklet <ptc_bricklet>` with attachable sensor probe.
 
 It can be extended by multiple other Bricklets probes, different other sensors, in/outputs e.g. 
 to read case switches or doors or to switch warning devices on/off.
