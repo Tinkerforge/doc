@@ -32,7 +32,8 @@ werden wir positive und negative Halbwellen sehen.
 
 Ein, an eine Wechselspannungsquelle angeschlossenes, Industrial Digital In 4
 Bricklet besitzt im Eingang eine Leuchtdiode (LED im Optokoppler).
-Diese wird jeder positive Halbwelle aufleuchten und jede negative Halbwelle
+Diese wird bei jeder positive Halbwelle aufleuchten und bei jeder 
+negativen Halbwelle
 aus sein. Wenn also die Türklingel betätigt wird, fließt ein Strom durch die
 Türklingel und durch die LED des Optokopplers. Der Eingang wird also 
 getriggert.
@@ -55,7 +56,7 @@ mit dem ersten Eingang des Industrial Digital In 4 Bricklets verbunden.
    :target: ../../_images/Kits/hardware_hacking_doorbell_open.jpg
 
 Nachdem das Industrial Digital In 4 Bricklet mit der Türklingel verbunden wurde
-können wir den Aufbau mit dem Brick Viewer Testen. Dazu klingeln wir einfach
+können wir den Aufbau mit dem Brick Viewer testen. Dazu klingeln wir einfach
 an der Tür und beobachten den Eingang des Bricklets. Dieser sollte zwischen
 High und Low wechseln.
 

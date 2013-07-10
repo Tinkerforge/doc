@@ -46,7 +46,7 @@ wollen wir diese auslesen. Dazu öffnen wir das Gehäuse:
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_open_1200.jpg
 
 Die besagte LED ist die transparente LED oben rechts. Es ist eine zwei-farbige
-LED und kann grün sowie rot blinken. Wir müssen als nächstes die Pins ausfindig 
+LED, sie kann grün sowie rot blinken. Wir müssen als nächstes die Pins ausfindig 
 machen die die LED grün blinken lässt.
 
 Da die LED bedrahtet ist (nicht SMD) befinden sich die Kontakte an der 
