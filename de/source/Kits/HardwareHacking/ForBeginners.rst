@@ -26,7 +26,7 @@ Das :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
 besteht aus vier
 `Solid State Relais <https://de.wikipedia.org/wiki/Solid_State_Relais>`__
 (oder auch Halbleiterrelais).
-Relais sind durch einen elektromechanisch betriebene Schalter, das heißt das
+Relais sind elektromechanisch betriebene Schalter. Das heißt das
 andere Signale kurzgeschlossen werden können, ausgelöst durch ein anderes
 elektrisches Signal. Im Gegensatz zu normalen Relais sind Solid State Relais 
 nicht mechanisch, sie besitzen keine mechanischen Teile.
@@ -108,7 +108,7 @@ sind mit diesem Taster verbunden. Wir haben nun die beiden Leiterbahnen
 identifiziert die der Taster schaltet (vgl. Beispielschaltung oben).
 Um die Funktion des Tasters extern auslösbar
 zu machen, muss jeweils ein Draht an das obere rechte und ein Draht an das
-untere linke Pad angelötet werden. Anschließend sollte die Schaltung wie folgt
+untere rechte Pad angelötet werden. Anschließend sollte die Schaltung wie folgt
 aussehen:
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_soldered_350.jpg
@@ -271,5 +271,5 @@ Einen Draht an ein Pad anzulöten kann in fünf Schritten erfolgen:
 * Warte bis das Zinn abgekühlt ist
 
 Eine Vereinfachung kann es sein wenn man den Draht vorher verzinnt.
-Bei `Youtube <www.youtube.com>`__ gibt es eine Menge an Howto Videos zum Thema
+Bei `Youtube <http://www.youtube.com>`__ gibt es eine Menge an Howto Videos zum Thema
 Löten.

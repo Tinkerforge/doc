@@ -267,5 +267,5 @@ To make it easier, you can also apply some solder to the
 stripped part of the wire first.
 
 If you not sure about how to do this you can search for howto videos.
-For example on `Youtube <www.youtube.com>`__ there are plenty of them.
+For example on `Youtube <http://www.youtube.com>`__ there are plenty of them.
 
