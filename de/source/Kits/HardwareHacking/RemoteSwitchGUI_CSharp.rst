@@ -39,10 +39,6 @@ Ziele
 In diesem Projekt wird ein robustes GUI Programm erstellt, das die
 Funktionalität der realen Fernbedienung nachbildet.
 
-Ibn diesem Programm werden einige allgemeine Teile aus dem
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` Projekt
-wiederverwendet werden.
-
 
 Schritt 1: Die GUI erstellen
 ----------------------------

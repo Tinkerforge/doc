@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Mains Switches using C# with a GUI
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Mains Switches using C# with GUI
 
 .. _starter_kit_hardware_hacking_remote_switch_gui_csharp:
 
-Control Remote Mains Switches using C# with a GUI
-=================================================
+Control Remote Mains Switches using C# with GUI
+===============================================
 
 .. include:: CSharpCommon.substitutions
    :start-after: >>>intro
@@ -36,9 +36,6 @@ Goals
 
 In this project we will create a robust GUI program that resembles the
 functionality of the actual remote control.
-
-The program will reuse some common parts of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` project.
 
 
 Step 1: Create the GUI

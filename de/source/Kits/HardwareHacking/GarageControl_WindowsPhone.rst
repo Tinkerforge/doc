@@ -26,6 +26,12 @@ Garagentor mit Windows Phone fernsteuern
    :start-after: >>>intro
    :end-before: <<<intro
 
+Das vollständige Visual Studio Projekt kann `hier
+<https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__
+heruntergeladen werden. Eine Demo-App basierend auf diesem Projekt steht im
+`Windows Phone Store <http://www.windowsphone.com/en-us/store/app/garage-control/07028a03-fa41-4f24-8a99-f4b7ee48c5a9>`__
+zur Verfügung.
+
 
 Ziele
 -----
@@ -33,10 +39,6 @@ Ziele
 .. include:: GarageControl.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
-
-Die App wird einige allgemeine Teile es
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` Projekts
-wiederverwenden.
 
 
 Schritt 1: Die GUI erstellen

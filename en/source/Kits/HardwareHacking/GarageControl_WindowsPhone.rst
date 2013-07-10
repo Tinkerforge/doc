@@ -26,6 +26,11 @@ Control Garage Door Openers using Windows Phone
    :start-after: >>>intro
    :end-before: <<<intro
 
+The complete Visual Studio project can be downloaded `here
+<https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__.
+A demo app based on this project is available in the
+`Windows Phone Store <http://www.windowsphone.com/en-us/store/app/garage-control/07028a03-fa41-4f24-8a99-f4b7ee48c5a9>`__.
+
 
 Goals
 -----
@@ -33,9 +38,6 @@ Goals
 .. include:: GarageControl.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
-
-The app will reuse some common parts of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_csharp` project.
 
 
 Step 1: Creating the GUI

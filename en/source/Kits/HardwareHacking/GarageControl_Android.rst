@@ -26,6 +26,11 @@ Control Garage Door Openers using Android
    :start-after: >>>intro
    :end-before: <<<intro
 
+The complete Eclipse project can be downloaded `here
+<https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__.
+A demo app based on this project is available in the
+`Google Play Store <https://play.google.com/store/apps/details?id=com.tinkerforge.garagecontrol>`__.
+
 
 Goals
 -----
@@ -33,9 +38,6 @@ Goals
 .. include:: GarageControl.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
-
-The app will reuse some common parts of the
-:ref:`starter_kit_hardware_hacking_smoke_detector_java` project.
 
 
 Step 1: Creating the GUI

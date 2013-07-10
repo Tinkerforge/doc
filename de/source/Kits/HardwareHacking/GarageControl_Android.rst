@@ -26,6 +26,12 @@ Garagentor mit Android fernsteuern
    :start-after: >>>intro
    :end-before: <<<intro
 
+Das vollständige Eclipse Projekt kann `hier
+<https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__
+heruntergeladen werden. Eine Demo-App basierend auf diesem Projekt steht im
+`Google Play Store <https://play.google.com/store/apps/details?id=com.tinkerforge.garagecontrol>`__
+zur Verfügung.
+
 
 Ziele
 -----
@@ -33,10 +39,6 @@ Ziele
 .. include:: GarageControl.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
-
-Die App wird einige allgemeine Teile es
-:ref:`starter_kit_hardware_hacking_smoke_detector_java` Projekts
-wiederverwenden.
 
 
 Schritt 1: Die GUI erstellen
