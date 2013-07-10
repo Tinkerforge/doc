@@ -3,6 +3,7 @@
 :shoplink: ../../../shop/bricklets/voltage-current-bricklet.html
 
 .. include:: Voltage_Current.substitutions
+   :start-after: >>>substitutions
    :end-before: <<<substitutions
 
 .. _voltage_current_bricklet:
