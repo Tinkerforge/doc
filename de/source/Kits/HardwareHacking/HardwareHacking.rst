@@ -118,6 +118,7 @@ Resourcen
 * Beispielquelltexte für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__, iOS* (ObjC))
 * Beispielquelltext für :ref:`Benachrichtigung durch Türklingel <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
 * Demo-Anwendung :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
+* Demo-Apps :ref:`Funksteckdosen mit Smartphone fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: Android, Windows Phone, iOS*) TODO
 * Demo-Apps :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iOS*) TODO
 
 \*: Demo für iOS folgt bald.
@@ -271,10 +272,21 @@ Die vollständige Beschreibung des Hardware-Aufbaus ist
 :ref:`hier <starter_kit_hardware_hacking_remote_switch_hardware_setup>`
 zu finden.
 
-Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
-Linux (Mono) und Mac OS X (Mono)) ist verfügbar in
+Beispiel Apps für :ref:`Android (Java)
+<starter_kit_hardware_hacking_power_outlet_control_android>`
+und :ref:`Windows Phone (C#)
+<starter_kit_hardware_hacking_power_outlet_control_windows_phone>` sind verfügbar.
+Eine Beispielanwendung für das iOS folgt bald.
 
-* :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
+.. toctree::
+   :hidden:
+
+   PowerOutletControl_Android
+   PowerOutletControl_WindowsPhone
+
+Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
+Linux (Mono) und Mac OS X (Mono)) ist verfügbar in :ref:`C#
+<starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
 
 Minimalistische Beispiele sind verfügbar in:
 
