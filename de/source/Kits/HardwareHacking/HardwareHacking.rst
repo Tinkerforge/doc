@@ -36,7 +36,7 @@ Features
 * Elektrogeräte mit geringer Spannung hacken 
 
   * PC, Smartphone/Tablet oder über das Internet (Internet der Dinge).
-  * Demo-Apps für Android, Windows Phone und iPhone* sind verfügbar.
+  * Demo-Apps für Android, Windows Phone und iOS* sind verfügbar.
 
 * Direkt mit dem Hacken beginnen: Zwei Funksteckdosen im Kit enthalten
 
@@ -47,9 +47,8 @@ Features
 * Interaktion über USB, WLAN und Ethernet möglich.
 
 
+\*: Demo für iOS folgt bald.
 
-
-\*: Demo für iPhone folgt bald.
 
 Beschreibung
 ------------
@@ -79,7 +78,7 @@ Dokumentierte Beispielanwendungen sind:
 
 * Rauchmelderalarm zum PC weiterleiten.
 * Steckdosen über den PC fernsteuern.
-* Garagentore über ein Smartphone/Tablet (Android, Windows Phone und iPhone)
+* Garagentore über ein Smartphone/Tablet (Android, Windows Phone und iOS)
   öffnen und schließen.
 * Türklingel zum PC weiterleiten.
 
@@ -119,9 +118,9 @@ Resourcen
 * Beispielquelltexte für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
 * Beispielquelltext für :ref:`Benachrichtigung durch Türklingel <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
 * Demo-Anwendung :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
-* Demo-Apps :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iPhone*) TODO
+* Demo-Apps :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iOS*) TODO
 
-\*: Demo für iPhone folgt bald.
+\*: Demo für iOS folgt bald.
 
 
 Benötigte Werkzeuge
@@ -351,13 +350,11 @@ Eine kurze Beschreibung des Hardware-Aufbaus kann
 :ref:`hier <starter_kit_hardware_hacking_garage_control_hardware_setup>`
 gefunden werden.
 
-Beispiel Apps für
-:ref:`Android (Java)
+Beispiel Apps für :ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`
 und :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` sind verfügbar.
-
-Eine Beispielanwendung für das iPhone folgt bald.
+Eine Beispielanwendung für das iOS folgt bald.
 
 .. toctree::
    :hidden:

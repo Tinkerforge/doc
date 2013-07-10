@@ -36,9 +36,9 @@ Features
 * Hack any low voltage electronic appliance and make it controllable by
 
   * PC, smart phone/tablet, Raspberry Pi or over the Internet (Internet of Things).
-  * Demo applications for Android, Windows Phone and iPhone* are available.
+  * Demo applications for Android, Windows Phone and iOS* are available.
 
-* Ready to Hack: Two Remote Controlled Mains Switches included
+* Ready to Hack: Two Remote Control Mains Switches included
 
 * Read out and control low voltage mainstream devices,
 
@@ -47,9 +47,8 @@ Features
 * Interaction over USB, Wi-Fi or Ethernet possible.
 
 
+\* Coming soon
 
-
-\* Demo for iPhone coming soon
 
 Description
 -----------
@@ -61,7 +60,7 @@ Interaction is possible over USB or via Wi-Fi if a :ref:`WIFI Extension <wifi_ex
 is added. Also a direct Ethernet interface with the
 :ref:`Ethernet Extension <ethernet_extension>` can be achieved.
 
-Two remote controlled mains switches are included in this kit, so you can directly
+Two remote control mains switches are included in this kit, so you can directly
 start to hack something. A :ref:`step-by-step guide
 <starter_kit_hardware_hacking_remote_switch>` will tell you how to do it
 (soldering iron, solder and a screwdriver are required).
@@ -77,7 +76,7 @@ Documented example applications are:
 
 * Forwarding smoke detector alarm to a PC.
 * Controlling remote mains switches with a PC.
-* Opening/Closing garage doors over a smart phone/tablet (Android, Windows Phone and iPhone).
+* Opening/Closing garage doors over a smart phone/tablet (Android, Windows Phone and iOS).
 * Forwarding door bell ringing to a PC.
 
 Many more applications are possible, anything that is controlled by
@@ -113,10 +112,10 @@ Resources
 * Example source code :ref:`Read out Smoke Detectors <starter_kit_hardware_hacking_smoke_detector>` (Download: |smoke_detector_examples_download|)
 * Example source code :ref:`Control Garage Door over smart phone <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
 * Example source code :ref:`Doorbell Notifier <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
-* Demo Application :ref:`Control Remote Switches with GUI <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
-* Demo Apps :ref:`Control Garage Door over smart phone <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iPhone*) TODO
+* Demo application :ref:`Control Remote Mains Switches with GUI <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
+* Demo apps :ref:`Control Garage Door over smart phone <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iOS*) TODO
 
-\* Demo for iPhone coming soon
+\* Coming soon
 
 
 Required Tools
@@ -308,7 +307,7 @@ The full description of the hardware setup can be found
 
 Example implementations with step-by-step instructions are available for:
 
-|smoke_detector_examples|.
+|smoke_detector_examples|
 
 .. include:: SmokeDetector.toctree
 
@@ -342,8 +341,7 @@ Example apps for :ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`
 and :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` are available.
-
-A demo app for iPhone is coming soon.
+An example app for iOS is coming soon.
 
 .. toctree::
    :hidden:
