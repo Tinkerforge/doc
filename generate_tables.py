@@ -182,36 +182,19 @@ power_supply_descriptions = {
     }
 }
 
-product_overview_table_head_with_bindings = {
-'en':
-"""
-.. csv-table::
-   :header: "Name", "Description", {0}
-   :widths: {1}, {2}, {3}
-
-""",
-'de':
-"""
-.. csv-table::
-   :header: "Name", "Beschreibung", {0}
-   :widths: {1}, {2}, {3}
-
-"""
-}
-
-product_overview_table_head_without_bindings = {
+product_overview_table_head = {
 'en':
 """
 .. csv-table::
    :header: "Name", "Description"
-   :widths: {0}, {1}
+   :widths: 30, 70
 
 """,
 'de':
 """
 .. csv-table::
    :header: "Name", "Beschreibung"
-   :widths: {0}, {1}
+   :widths: 30, 70
 
 """
 }
@@ -554,31 +537,14 @@ def make_index_table(devices, category):
 
     return table_head + '\n'.join(rows) + '\n'
 
-def make_product_overview_table(devices, category, name_width,
-                                description_width, has_bindings):
-    if has_bindings:
-        table_head = product_overview_table_head_with_bindings[lang] \
-                     .format(', '.join(['"{0}"'.format(binding[0]) for binding in bindings]),
-                             name_width,
-                             description_width,
-                             ', '.join(['5'] * len(bindings)))
-        row_head = '   ":ref:`{0} <{1}_' + category + '>`", "{2}", '
-    else:
-        table_head = product_overview_table_head_without_bindings[lang] \
-                     .format(name_width, description_width)
-        row_head = '   ":ref:`{0} <{1}_' + category + '>`", "{2}"'
-
+def make_product_overview_table(devices, category):
+    table_head = product_overview_table_head[lang]
+    row_head = '   ":ref:`{0} <{1}_' + category + '>`", "{2}"'
     row_cell = '":ref:`{0} <{1}_' + category + '_{2}>`"'
     rows = []
 
     for device in devices:
-        cells = []
-
-        for binding in device[2]:
-            cells.append(row_cell.format(binding[0], device[1], binding[1]))
-
-        row = row_head.format(device[0], device[1], device[3]) + ', '.join(cells)
-        rows.append(row)
+        rows.append(row_head.format(device[0], device[1], device[3]))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -809,16 +775,16 @@ def generate(path):
     write_if_changed(os.path.join(path, 'source', 'index_power_supplies.table'), make_index_table(power_supplies, 'power_supply'))
 
     print('Generating Product_Overview_bricks.table')
-    write_if_changed(os.path.join(path, 'source', 'Product_Overview_bricks.table'), make_product_overview_table(bricks, 'brick', 15, 40, True))
+    write_if_changed(os.path.join(path, 'source', 'Product_Overview_bricks.table'), make_product_overview_table(bricks, 'brick'))
 
     print('Generating Product_Overview_bricklets.table')
-    write_if_changed(os.path.join(path, 'source', 'Product_Overview_bricklets.table'), make_product_overview_table(bricklets, 'bricklet', 20, 70, True))
+    write_if_changed(os.path.join(path, 'source', 'Product_Overview_bricklets.table'), make_product_overview_table(bricklets, 'bricklet'))
 
     print('Generating Product_Overview_extensions.table')
-    write_if_changed(os.path.join(path, 'source', 'Product_Overview_extensions.table'), make_product_overview_table(extensions, 'extension', 20, 70, False))
+    write_if_changed(os.path.join(path, 'source', 'Product_Overview_extensions.table'), make_product_overview_table(extensions, 'extension'))
 
     print('Generating Product_Overview_power_supplies.table')
-    write_if_changed(os.path.join(path, 'source', 'Product_Overview_power_supplies.table'), make_product_overview_table(power_supplies, 'power_supply', 30, 60, False))
+    write_if_changed(os.path.join(path, 'source', 'Product_Overview_power_supplies.table'), make_product_overview_table(power_supplies, 'power_supply'))
 
     print('Generating Downloads_tools.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_tools.table'), make_download_tools_table())
