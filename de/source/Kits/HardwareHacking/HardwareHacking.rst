@@ -140,9 +140,9 @@ und die Firmwares ggf. aktualisiert werden.
 
 Dazu müssen der :ref:`Brick Daemon <brickd_installation>` und der
 :ref:`Brick Viewer <brickv_installation>` installiert werden. 
-Schließe biede Bricklets an den Master Brick an und verbinde es per USB mit
+Schließe beide Bricklets an den Master Brick an und verbinde es per USB mit
 dem PC. Anschließend kann über den Brick Viewer bestimmt werden, ob alle 
-Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
+Firmwares aktuell sind. Falls nicht, so sollten diese aktualisiert werden
 (:ref:`Bricks aktualisieren <brickv_flash_firmware>`,
 :ref:`Bricklets aktualisieren <brickv_flash_plugin>`):
 

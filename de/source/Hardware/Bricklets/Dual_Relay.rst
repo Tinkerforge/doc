@@ -194,12 +194,12 @@ Ein `laser-geschnittenes Gehäuse für das Dual Relay Bricklet <https://www.tink
    :target: ../../_images/Cases/bricklet_dual_relay_case_1000.jpg
 
 Das Gehäuse des Dual Relay Bricklet wird inklusive Kabelbinder für eine
-Zugentlastung und WAGO Verbindungsklemmen zum überbrücken von Leitungen
+Zugentlastung und WAGO Verbindungsklemmen zum brücken von Leitungen
 ausgeliefert. Das Gehäuse ist groß genug um sowohl die Zugentlastung als
 auch die WAGO Klemmen im Gehäuse unterzubringen. 
 
-Der interne Aufbau kann wie folgt aussehen (mit einem sowie beiden Relais
-angeschlossen)
+Der interne Aufbau kann wie folgt aussehen (mit einem bzw. beiden Relais
+angeschlossen):
 
 .. image:: /Images/Cases/bricklet_dual_relay_case_top_open_1_350.jpg
    :scale: 100 %
@@ -213,13 +213,14 @@ angeschlossen)
    :align: center
    :target: ../../_images/Cases/bricklet_dual_relay_case_top_open_2_1000.jpg
 
-Der Aussenleiter (braun) wird mit dem Dual Relay Bricklet geschaltet 
-und der Schutzleiter (grün-gelb) sowie der Neutralleiter (blau) werden
+Der Aussenleiter (braun) wird über das Dual Relay Bricklet geschalten.
+Der Schutzleiter (grün-gelb), sowie der Neutralleiter (blau), werden
 mit den WAGO Klemmen gebrückt.
 
-Dabei ist unbedingt zu beachte, dass der Schutzleiter länger als die anderen
-beiden Leitungen seien sollte. Wir empfehlen die folgenden Längen für die
-Leitungen und die Abisolierungen:
+Dabei ist unbedingt zu beachten, dass der Schutzleiter länger als die anderen
+beiden Leitungen seien sollte. So ist sichergestellt, das dieser bei
+überbeanspruchter oder beschädigter Zugentlastung als letztes abreißt.
+Wir empfehlen die folgenden Leitungs- bzw. Abisolier-Längen:
 
 .. image:: /Images/Cases/bricklet_dual_relay_case_cables_350.jpg
    :scale: 100 %
@@ -229,15 +230,19 @@ Leitungen und die Abisolierungen:
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-* Schraube Abstandshalter an Bricklet,
-* schraube Bricklet an Unterteil mit Abstandshalter,
-* baue Seitenteile (inklusive Zugentlastung) auf,
-* stecke zusammengebaute Seitenteile in Unterteil,
-* füge Verkabelung und WAGO Klemmen hinzu,
-* ziehe Kabel mit Kabelbinder für Zugentlastung fest und
-* schraube Oberteil auf oberen Abstandshalter.
+* Abstandshalter an Bricklet schrauben
+* Bricklet an Unterteil mit Abstandshalter schrauben
+* Seitenteile (inklusive Zugentlastung) aufbauen
+* zusammengebaute Seitenteile in Unterteil stecken
+* erkabelung und WAGO Klemmen hinzufügen
+* Kabel mit Kabelbinder für Zugentlastung festziehen
+* Oberteil auf oberen Abstandshalter schrauben
 
-Im folgenden befindet sich eine Explosionszeichnung des Dual Relay Bricklet-Gehäuse:
+.. warning:: Niemals im geöffneten Gehäuse unter Spannung arbeiten!
+
+
+Die genaue Anordnung der Teile kann der folgenden Explosionszeichnung des Dual 
+Relay Bricklet-Gehäuses entnommen werden:
 
 .. image:: /Images/Exploded/dual_relay_exploded_350.png
    :scale: 100 %

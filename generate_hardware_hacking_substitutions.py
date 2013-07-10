@@ -630,7 +630,7 @@ smoke_detector_steps = {
  Jetzt sind alle für gesteckten Ziele für unseren gehackten Rauchmelder erreicht.
 
 .. |step5_put_together| replace::
- Das gesamte Programm für die Wetterstation
+ Das gesamte Programm für den gehackten Rauchmelder
 """
 }
 
@@ -835,8 +835,8 @@ garage_control_steps = {
 
 .. |step5_finish| replace::
  Die App kann sich zum eingestellten Host und Port verbinden und einen Taster
- auf der Fernbedienung des Garagentoröffners betätigen mittels eines Industrial
- Quad Relay Bricklets.
+ auf der Fernbedienung des Garagentoröffners mittels eines Industrial
+ Quad Relay Bricklets betätigen.
 
 .. |step6_finish| replace::
  Jetzt wird die Konfiguration und der Zustand dauerhaft. auch über einen

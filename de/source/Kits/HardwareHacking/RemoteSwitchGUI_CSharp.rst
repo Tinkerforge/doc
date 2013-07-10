@@ -75,7 +75,7 @@ Als erstes wird eine ``Form`` mit Titel und Größe erstellt:
         }
     }
 
-Dann wird ein 40 Pixel hohes Panel für die Knöpfe an der oberen Kante eingefügt,
+Dann wird ein 40 Pixel hohes Panel für die Knöpfe an der oberen Kante eingefügt.
 Die Liste für Statusmeldungen füllt den Rest der Form:
 
 .. code-block:: csharp

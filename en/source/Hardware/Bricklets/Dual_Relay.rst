@@ -217,7 +217,9 @@ The external conductor (green-yellow) and the neutral conductor (blue)
 are coupled with the WAGO connecting clamps.
 
 It is important that the external conductor is longer then the other cables.
-We recommend the following length for the cables and the stripping:
+This way it is assured that the external conductor will be pulled of at last
+if the cable relief is overstrained or defect. We recommend the following 
+length for the cables and the stripping:
 
 .. image:: /Images/Cases/bricklet_dual_relay_case_cables_350.jpg
    :scale: 100 %
@@ -227,15 +229,18 @@ We recommend the following length for the cables and the stripping:
 
 The assembly is easiest if you follow the following steps:
 
-* Screw spacers to Bricklet,
-* screw Bricklet to bottom plate with spacers,
-* build up side plates (including cable relief),
-* plug side plates into bottom plate,
-* add cabling and WAGO clamps,
+* screw spacers to Bricklet
+* screw Bricklet to bottom plate with spacers
+* build up side plates (including cable relief)
+* plug side plates into bottom plate
+* add cabling and WAGO clamps
 * tie cable ties to cables
-* screw top plate to top spacers.
+* screw top plate to top spacers
 
-Below you can see an exploded assembly drawing of the Dual Relay Bricklet case:
+.. warning:: Never work inside the case when components are carrying voltage!
+
+The exact position of each part can be seen in the following exploded assembly 
+drawing of the Dual Relay Bricklet case:
 
 .. image:: /Images/Exploded/dual_relay_exploded_350.png
    :scale: 100 %

@@ -18,7 +18,7 @@ Rauchmelder in verschiedenen Räumen installiert werden können und alle auslös
 wenn ein Melder Rauch detektiert.
 Wir können einen Rauchmelder hacken und diesen in der Nähe eines PCs 
 installieren, so dass dieser von anderen Rauchmeldern im Haus ausgelöst 
-werden kann. Wir können auf diesem Wege mitlesen ob die Rauchmelder ausgelöst 
+werden kann. Auf diesem Wege können wir mitlesen ob die Rauchmelder ausgelöst 
 wurden.
 
 Das Innenleben des Rauchmelders
