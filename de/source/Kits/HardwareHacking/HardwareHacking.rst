@@ -220,10 +220,10 @@ Hardware Hacking für Anfänger
 -----------------------------
 
 Um ein Industrial Digital In 4 oder Industrial Quad Relay Bricklet mit einem
-Gerät zu verbinden müssen zuvor folgendes erledigt werden:
+Gerät zu verbinden muss zuvor folgendes erledigt werden:
 
-* Finde Löt-Pads die benutzt werden können um eine Spannung zu messen oder zu schalten
-* Löte Drähte an diese Pads
+* Finde Löt-Pads die benutzt werden können um eine Spannung zu messen oder zu schalten.
+* Löte Drähte an diese Pads.
 
 In dem :ref:`Hardware Hacking für Anfänger
 <starter_kit_hardware_hacking_for_beginners>` Tutorial werden diese Schritte
@@ -248,7 +248,7 @@ Funksteckdosen fernsteuern
 
 In diesem Kit ist das Funksteckdosenset `ELRO AB440WD/2
 <http://www.elro.eu/de/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
-enthalten. Diese Funksteckdosen können als ersten Schritt in die 
+enthalten. Diese Funksteckdosen können als erster Schritt in die 
 Hausautomatisierung genutzt werden. Wir werden die Fernbedienung dieser
 Funksteckdosen hacken, so dass wir die Steckdosen über den PC schalten können.
 
@@ -264,7 +264,8 @@ Dazu schließen wir ein :ref:`Industrial Quad Relay Bricklet
 Fernbedienung. Es gibt eine große Anzahl an Funksteckdosen und 
 Fernbedienungen auf dem Markt. 
 Die meisten kommerziell erhältlichen Fernbedienungen nutzen einen HX2262 IC
-mit identischem Hardwaredesign wie das der hier verwendeten ELRO Fernbedienung.
+mit einem Hardwaredesign welches identisch zu der hier verwendeten ELRO 
+Fernbedienung ist.
 So kann diese Beschreibung auch für die meisten anderen Funksteckdosen-
 Fernbedienungen genutzt werden.
 
@@ -276,7 +277,7 @@ Beispiel Apps für :ref:`Android (Java)
 <starter_kit_hardware_hacking_power_outlet_control_android>`
 und :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_power_outlet_control_windows_phone>` sind verfügbar.
-Eine Beispielanwendung für das iOS folgt bald.
+Eine Beispielanwendung für iOS folgt bald.
 
 .. toctree::
    :hidden:
@@ -327,7 +328,7 @@ Eine ausführliche Beschreibung des Hardware-Aufbaus ist
 :ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` zu
 finden.
 
-Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
+Beispielimplementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
 
 |smoke_detector_examples|.
 
@@ -344,8 +345,8 @@ Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar 
 Garagentor mit Smartphone fernsteuern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Garagentoröffner sind wirklich nützlich. Typischerweise besitzen diese eine 
-Fernbedienung die wir in diesem Beispiel hacken werden. Anschließend werden
+Garagentoröffner besitzen typischerweise eine Fernbedienung. Eine solche 
+Fernbedienung wollen wir in diesem Beispiel hacken. Anschließend werden
 wir das Garagentor über eine kleine App mit dem Smartphone steuern können,
 so dass die Fernbedienung nicht mehr mitgenommen werden muss.
 
@@ -366,7 +367,7 @@ Beispiel Apps für :ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`
 und :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` sind verfügbar.
-Eine Beispielanwendung für das iOS folgt bald.
+Eine Beispielanwendung für iOS folgt bald.
 
 .. toctree::
    :hidden:
@@ -384,8 +385,8 @@ Benachrichtigung durch die Türklingel
 In diesem Projekt verbinden wir das Industrial Digital In 4 Bricklet mit einer
 typischen, 12V betriebenen, Türklingel. Sobald jemand klingelt, wird unser
 Python-Script "Ring Ring Ring!" ausgeben. Dieses Projekt kann natürlich
-erweitert werden, so dass SMS versendet oder dein Telefon klingelt wenn jemand
-an der Tür ist. Sei kreativ!
+erweitert werden, so dass eine SMS versendet wird oder dein Telefon klingelt 
+wenn jemand an der Tür ist. Sei kreativ!
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
    :scale: 100 %
