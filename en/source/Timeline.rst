@@ -13,6 +13,9 @@ for the next two weeks and we may especially interchange items. For example
 if we need more prototypes as planned for some new hardware, we may release a 
 software feature in this "release slot" that was planned for a later time.
 
+Timeline
+--------
+
 We will update the timeline as soon as we have better estimates or a firm date.
 
 .. csv-table:: 

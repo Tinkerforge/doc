@@ -53,8 +53,8 @@ Beim Aufruf kann diese Funktion nun, genauso wie jede andere Brick Funktion,
 aus dem Flash ausgeführt werden. Dieser Ansatz ermöglicht es eine 
 Kompatibilität zwischen allen Bricks und Bricklets herzustellen.
 
-Diese Programmierschnittstelle ist für Windows, Linux und Mac OS sowie mobile
-Betriebssystem wie Android, iOS und Windows Mobile verfügbar.
+Diese Programmierschnittstelle ist für Windows, Linux und Mac OS X sowie mobile
+Betriebssystem wie Android, iOS und Windows Phone verfügbar.
 
 .. note::
  Die Seite :ref:`tutorial` vermittelt weitere Informationen wie diese Konzept

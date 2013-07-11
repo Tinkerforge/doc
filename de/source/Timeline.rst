@@ -6,7 +6,7 @@
 Timeline
 ========
 
-Die folgende Tabelle zeigt die geplante zeitliche Abfolge neuer Hardware und
+Die Timeline zeigt die geplante zeitliche Abfolge neuer Hardware und
 Features. Wir beabsichtigen mindestens alle zwei Wochen etwas neues zu
 veröffentlichen. Die Liste ist nicht bindend, wir behalten uns vor auch mal
 zwei Dinge in zwei Wochen zu veröffentlichen und dann nichts für die nächsten
@@ -14,6 +14,9 @@ vier Wochen. Ins besondere kann sich auch die Reihenfolge ändern. Zum Beispiel
 wenn wir mehr Prototypen für eine neue Hardware benötigen als geplant, dann
 können wir auch ein neues Software Feature in diesem "Release Slot"
 veröffentlichen, das für einen späteren Zeitpunkt geplant war.
+
+Timeline
+--------
 
 Wir aktualisieren diese Tabelle sobald wir bessere Abschätzungen oder feste
 Termine haben.
