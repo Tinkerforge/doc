@@ -10,12 +10,12 @@ Unsere Produkte gliedern sich in vier verschiedene Kategorien:
 
 * :ref:`Bricks <product_overview_bricks>`:
   Stapelbare Mikrocontrollerplatinen zum Messen und Steuern.
-* :ref:`Master Extensions <product_overview_master_extensions>`:
-  Platinen um die Kommunikationsmöglichkeiten des
-  :ref:`Master Bricks <master_brick>` zu erweitern.
 * :ref:`Bricklets <product_overview_bricklets>`:
   Nicht stapelbare Sensor-/Aktorplatinen um die Fähigkeiten eines Bricks zu
   erweitern.
+* :ref:`Master Extensions <product_overview_master_extensions>`:
+  Platinen um die Kommunikationsmöglichkeiten des
+  :ref:`Master Bricks <master_brick>` zu erweitern.
 * :ref:`Stromversorgungen <product_overview_power_supplies>`:
   Platinen die einen Stapel von Bricks mit Strom versorgen; werden unter einen
   Stapel gesteckt.
@@ -82,45 +82,6 @@ Zukunft auch möglich sein über eine :ref:`On Device Programmierschnittstelle
 <pi_odpi>` Bricks zu verwenden.
 
 .. include:: Product_Overview_bricks.table
-
-
-.. _product_overview_master_extensions:
-
-Master Extensions
------------------
-
-.. container:: tfdocimages
-
- .. list-table::
-
-  * - .. image:: /Images/Extensions/extension_chibi_tilted_100.jpg
-       :scale: 100 %
-       :alt: Chibi Extension
-       :align: center
-       :target: _images/Extensions/extension_chibi_tilted_800.jpg
-
-    - .. image:: /Images/Extensions/extension_rs485_tilted_100.jpg
-       :scale: 100 %
-       :alt: RS485 Extension
-       :align: center
-       :target: _images/Extensions/extension_rs485_tilted_800.jpg
-
-Bei der Verwendung der :ref:`High Level Programmierschnittstelle <pi_hlpi>`
-routet der :ref:`Master Brick <master_brick>` Nachrichten zwischen den anderen
-:ref:`Bricks <product_overview_bricks>` im Stapel und dem PC. Typischerweise
-wird die Verbindung zwischen Master Brick und PC über den USB Anschluss des
-Master Bricks hergestellt. Master Extensions erweitern die
-Kommunikationsmöglichkeiten eines Master Bricks. Es gibt kabelgebundene und
-drahtlose Master Extensions. Aus Programmierersicht sind die verschiedenen
-Kommunikationsmöglichkeiten transparent. Ein Stapel mit Master Extension
-verhält sich so als wären alle Bricks einzeln per USB am PC angeschlossen.
-
-Dies bedeutet: Programme können mit allen Bricks einzeln per USB am PC
-angeschlossen entwickelt werden. Wenn später die Bricks gestapelt und über
-eine Master Extension angebunden werden dann funktioniert das zuvor geschrieben
-Programm ohne Änderungen weiter.
-
-.. include:: Product_Overview_extensions.table
 
 
 .. _product_overview_bricklets:
@@ -194,6 +155,45 @@ Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für weitere
 Information.
 
 .. include:: Product_Overview_bricklets.table
+
+
+.. _product_overview_master_extensions:
+
+Master Extensions
+-----------------
+
+.. container:: tfdocimages
+
+ .. list-table::
+
+  * - .. image:: /Images/Extensions/extension_chibi_tilted_100.jpg
+       :scale: 100 %
+       :alt: Chibi Extension
+       :align: center
+       :target: _images/Extensions/extension_chibi_tilted_800.jpg
+
+    - .. image:: /Images/Extensions/extension_rs485_tilted_100.jpg
+       :scale: 100 %
+       :alt: RS485 Extension
+       :align: center
+       :target: _images/Extensions/extension_rs485_tilted_800.jpg
+
+Bei der Verwendung der :ref:`High Level Programmierschnittstelle <pi_hlpi>`
+routet der :ref:`Master Brick <master_brick>` Nachrichten zwischen den anderen
+:ref:`Bricks <product_overview_bricks>` im Stapel und dem PC. Typischerweise
+wird die Verbindung zwischen Master Brick und PC über den USB Anschluss des
+Master Bricks hergestellt. Master Extensions erweitern die
+Kommunikationsmöglichkeiten eines Master Bricks. Es gibt kabelgebundene und
+drahtlose Master Extensions. Aus Programmierersicht sind die verschiedenen
+Kommunikationsmöglichkeiten transparent. Ein Stapel mit Master Extension
+verhält sich so als wären alle Bricks einzeln per USB am PC angeschlossen.
+
+Dies bedeutet: Programme können mit allen Bricks einzeln per USB am PC
+angeschlossen entwickelt werden. Wenn später die Bricks gestapelt und über
+eine Master Extension angebunden werden dann funktioniert das zuvor geschrieben
+Programm ohne Änderungen weiter.
+
+.. include:: Product_Overview_extensions.table
 
 
 .. _product_overview_power_supplies:

@@ -10,11 +10,11 @@ Our products are divided into four different categories:
 
 * :ref:`Bricks <product_overview_bricks>`:
   Stackable microcontroller boards for sensing and controlling.
+* :ref:`Bricklets <product_overview_bricklets>`:
+  Non-stackable sensor/actor boards that extend the features of a Brick.
 * :ref:`Master Extensions <product_overview_master_extensions>`:
   Boards that extend the communication interfaces of a
   :ref:`Master Brick <master_brick>`.
-* :ref:`Bricklets <product_overview_bricklets>`:
-  Non-stackable sensor/actor boards that extend the features of a Brick.
 * :ref:`Power Supplies <product_overview_power_supplies>`:
   Boards to power a stack of Bricks, plugged below the stack.
 
@@ -85,45 +85,6 @@ possible to use Bricks with an :ref:`On Device Programming Interface <pi_odpi>`.
 .. include:: Product_Overview_bricks.table
 
 
-.. _product_overview_master_extensions:
-
-Master Extensions
------------------
-
-.. container:: tfdocimages
-
- .. list-table::
-
-  * - .. image:: /Images/Extensions/extension_chibi_tilted_100.jpg
-       :scale: 100 %
-       :alt: Chibi Extension
-       :align: center
-       :target: _images/Extensions/extension_chibi_tilted_800.jpg
-
-    - .. image:: /Images/Extensions/extension_rs485_tilted_100.jpg
-       :scale: 100 %
-       :alt: RS485 Extension
-       :align: center
-       :target: _images/Extensions/extension_rs485_tilted_800.jpg
-
-When using the :ref:`High Level Programming Interface <pi_hlpi>` concept,
-:ref:`Master Bricks <master_brick>` can route messages between
-:ref:`Bricks <product_overview_bricks>` and the PC. To establish a connection
-between a PC and the Master Brick, typically the USB port is used.
-Master Extensions can be utilized to change the interface of a Master Brick.
-There are cable based and wireless Master Extensions available. From a
-programming perspective the different interfaces are transparent.
-A stack with Master Extension behaves as if every board in the stack
-would be directly connected to the PC over an USB connection.
-
-This means: You can develop an application with all
-boards independently connected to the PC over USB. Later you can stack these
-boards together to stacks, add Master Bricks and cable based or wireless
-Extensions and you can run the previously written code without any changes.
-
-.. include:: Product_Overview_extensions.table
-
-
 .. _product_overview_bricklets:
 
 Bricklets
@@ -192,6 +153,45 @@ that can then be used from the PC.
 See :ref:`High Level Programming Interface <pi_hlpi>` for more information.
 
 .. include:: Product_Overview_bricklets.table
+
+
+.. _product_overview_master_extensions:
+
+Master Extensions
+-----------------
+
+.. container:: tfdocimages
+
+ .. list-table::
+
+  * - .. image:: /Images/Extensions/extension_chibi_tilted_100.jpg
+       :scale: 100 %
+       :alt: Chibi Extension
+       :align: center
+       :target: _images/Extensions/extension_chibi_tilted_800.jpg
+
+    - .. image:: /Images/Extensions/extension_rs485_tilted_100.jpg
+       :scale: 100 %
+       :alt: RS485 Extension
+       :align: center
+       :target: _images/Extensions/extension_rs485_tilted_800.jpg
+
+When using the :ref:`High Level Programming Interface <pi_hlpi>` concept,
+:ref:`Master Bricks <master_brick>` can route messages between
+:ref:`Bricks <product_overview_bricks>` and the PC. To establish a connection
+between a PC and the Master Brick, typically the USB port is used.
+Master Extensions can be utilized to change the interface of a Master Brick.
+There are cable based and wireless Master Extensions available. From a
+programming perspective the different interfaces are transparent.
+A stack with Master Extension behaves as if every board in the stack
+would be directly connected to the PC over an USB connection.
+
+This means: You can develop an application with all
+boards independently connected to the PC over USB. Later you can stack these
+boards together to stacks, add Master Bricks and cable based or wireless
+Extensions and you can run the previously written code without any changes.
+
+.. include:: Product_Overview_extensions.table
 
 
 .. _product_overview_power_supplies:
