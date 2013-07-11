@@ -240,15 +240,15 @@ selection mask for each button:
 The ``TriggerSwitch()`` method uses :csharp:func:`SetMonoflop()
 <BrickletIndustrialQuadRelay::SetMonoflop>` to trigger a button
 press on the remote control. A monoflop will set a new state (relay open or close)
-and hold it for a given time (1.5s in this case). After this time
+and hold it for a given time (0.5s in this case). After this time
 the previous state is restored. This approach simulates a button click that
-takes 1.5s (1500ms).
+takes 0.5s (500ms).
 
 .. code-block:: csharp
 
     private void TriggerSwitch(int selectionMask)
     {
-        brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 255, 1500);
+        brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 15, 500);
     }
 
 That's it. If we would copy these three steps together in one file and execute
@@ -301,7 +301,7 @@ well. In addition we have to deal with errors in ``TriggerSwitch()`` too:
 
         try
         {
-            brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 255, 1500);
+            brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 15, 500);
             Log("Triggered '" + name + "'");
         }
         catch(TinkerforgeException e)

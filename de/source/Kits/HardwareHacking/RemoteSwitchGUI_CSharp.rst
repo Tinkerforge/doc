@@ -248,15 +248,15 @@ Die ``TriggerSwitch()`` Methode benutzt :csharp:func:`SetMonoflop()
 <BrickletIndustrialQuadRelay::SetMonoflop>` um eine Tasterdruck
 auf der Fernbedienung auszulösen. Ein Monoflop setzt einen neuen Zustand
 (Relais offen oder geschlossen) und hält diesen für eine bestimmte Zeit
-(1,5s in diesem Fall). Nach dieser Zeit wird der vorheriger Zustand
-wiederhergestellt. Dieses Ansatz simuliert einen Tasterdruck der für 1,5s
+(0,5s in diesem Fall). Nach dieser Zeit wird der vorheriger Zustand
+wiederhergestellt. Dieses Ansatz simuliert einen Tasterdruck der für 0,5s
 anhält.
 
 .. code-block:: csharp
 
     private void TriggerSwitch(int selectionMask)
     {
-        brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 255, 1500);
+        brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 15, 500);
     }
 
 Das ist es. Wenn wir diese drei Schritte zusammen in eine Datei kopieren und
@@ -313,7 +313,7 @@ sind hier auch notwendig. Zusätzlich müssen noch mögliche Fehler in der
 
         try
         {
-            brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 255, 1500);
+            brickletIndustrialQuadRelay.SetMonoflop(selectionMask, 15, 500);
             Log("Triggered '" + name + "'");
         }
         catch(TinkerforgeException e)
