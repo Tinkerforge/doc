@@ -75,7 +75,7 @@ Features
 
   * z.B. Luftdruck 0,012mbar und Temperatur 0,01°C
 
-* Steuerung über USB oder WLAN, Ethernet, Raspberry Pi (nicht enthalten)
+* Steuerung über USB, WLAN, Ethernet oder mit Raspberry Pi
 * Modifizierbar: Mehr Taster, mehr Sensoren und eigene Software
 * Demo-Anwendung verfügbar
 
