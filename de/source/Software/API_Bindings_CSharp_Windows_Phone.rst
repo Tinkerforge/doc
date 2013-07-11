@@ -126,8 +126,8 @@ Weitere Beispiele und Projekte
 ------------------------------
 
 Die kleinen Beispiele aus der ZIP Datei der Bindings sind auch in der API
-Dokumentation der :ref:`Bricks <index_bricks>` und
-:ref:`Bricklets <index_bricklets>` zu finden
+Dokumentation der :ref:`Bricks <product_overview_bricks>` und
+:ref:`Bricklets <product_overview_bricklets>` zu finden
 
 Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Kits <kits>`.

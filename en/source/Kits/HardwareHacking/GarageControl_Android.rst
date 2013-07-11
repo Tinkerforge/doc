@@ -177,6 +177,13 @@ Industrial Quad Relay Bricklet to trigger the switch on the remote control:
 
         private BrickletIndustrialQuadRelay relay;
 
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            // [...]
+
+            trigger.setOnClickListener(new TriggerClickListener());
+        }
+
         class TriggerAsyncTask extends AsyncTask<Void, Void, Void> {
             protected Void doInBackground(Void... params) {
                 relay.setMonoflop(1 << 0, 1 << 0, 1500);

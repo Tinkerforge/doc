@@ -268,7 +268,7 @@ source_code_gits_table_head = {
 """.. csv-table::
  :header: "", "Repository", "Bug Tracking"
  :delim: |
- :widths: 10, 30, 10
+ :widths: 15, 30, 10
 
  **Tools** | |
  Brick Daemon | `git://github.com/Tinkerforge/brickd.git <https://github.com/Tinkerforge/brickd/>`__ | `Report Bug <https://github.com/Tinkerforge/brickd/issues>`__
@@ -298,7 +298,7 @@ source_code_gits_table_head = {
  """.. csv-table::
  :header: "", "Repository", "Bug Tracking"
  :delim: |
- :widths: 10, 30, 10
+ :widths: 15, 30, 10
 
  **Tools** | |
  Brick Daemon | `git://github.com/Tinkerforge/brickd.git <https://github.com/Tinkerforge/brickd/>`__ | `Problem melden <https://github.com/Tinkerforge/brickd/issues>`__
