@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Garage Door Openers using Android
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Mains Switches using Android
 
 .. |name| replace:: Android
 .. |ref_CALLBACK_ENUMERATE| replace:: :java:func:`EnumerateListener <IPConnection.EnumerateListener>`
@@ -9,33 +9,33 @@
 .. |ref_get_identity| replace:: :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>`
 .. |async_helper| replace:: ``AsyncTask``
 
-.. include:: GarageControl.substitutions
+.. include:: PowerOutletControl.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-.. _starter_kit_hardware_hacking_garage_control_android:
+.. _starter_kit_hardware_hacking_power_outlet_control_android:
 
-Control Garage Door Openers using Android
-=========================================
+Control Remote Mains Switches using Android
+===========================================
 
 .. include:: AndroidCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: GarageControl.substitutions
+.. include:: PowerOutletControl.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 The complete Eclipse project can be downloaded `here
-<https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__.
+<https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/android>`__.
 A demo app based on this project is available in the
-`Google Play Store <https://play.google.com/store/apps/details?id=com.tinkerforge.garagecontrol>`__.
+`Google Play Store <https://play.google.com/store/apps/details?id=com.tinkerforge.poweroutletcontrol>`__.
 
 
 Goals
 -----
 
-.. include:: GarageControl.substitutions
+.. include:: PowerOutletControl.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 
@@ -566,8 +566,8 @@ Step 7: Everything put together
 |step7_intro|
 
 |step7_together| (`Download
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/garage_control_smart_phone/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java>`__):
+<https://raw.github.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/android/PowerOutletControl/src/com/tinkerforge/poweroutletcontrol/MainActivity.java>`__):
 
-.. literalinclude:: ../../../../../hardware-hacking/garage_control_smart_phone/android/GarageControl/src/com/tinkerforge/garagecontrol/MainActivity.java
+.. literalinclude:: ../../../../../hardware-hacking/power_outlet_control_smart_phone/android/PowerOutletControl/src/com/tinkerforge/poweroutletcontrol/MainActivity.java
  :language: java
  :tab-width: 4

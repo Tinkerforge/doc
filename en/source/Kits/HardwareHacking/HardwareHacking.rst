@@ -36,9 +36,9 @@ Features
 * Hack any low voltage electronic appliance and make it controllable by
 
   * PC, smart phone/tablet, Raspberry Pi or over the Internet (Internet of Things).
-  * Demo applications for Android, Windows Phone and iPhone* are available.
+  * Demo applications for Android, Windows Phone and iOS* are available.
 
-* Ready to Hack: Two Remote Controlled Mains Switches included
+* Ready to Hack: Two Remote Control Mains Switches included.
 
 * Read out and control low voltage mainstream devices,
 
@@ -47,9 +47,8 @@ Features
 * Interaction over USB, Wi-Fi or Ethernet possible.
 
 
+\* Coming soon
 
-
-\* Demo for iPhone coming soon
 
 Description
 -----------
@@ -61,23 +60,25 @@ Interaction is possible over USB or via Wi-Fi if a :ref:`WIFI Extension <wifi_ex
 is added. Also a direct Ethernet interface with the
 :ref:`Ethernet Extension <ethernet_extension>` can be achieved.
 
-Two remote controlled mains switches are included in this kit, so you can directly
+Two remote control mains switches are included in this kit, so you can directly
 start to hack something. A :ref:`step-by-step guide
-<starter_kit_hardware_hacking_remote_switch>` will tell you how to do it
+<starter_kit_hardware_hacking_remote_switch_hardware_setup>` will tell you how to do it
 (soldering iron, solder and a screwdriver are required).
 
 There are two groups of applications of this kit: controlling and reading 
 out. For control applications an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` is included. It contains four on/off
 switches. For read-out applications an :ref:`Industrial Digital In 4 Bricklet
-<industrial_digital_in_4_bricklet>` is included. It can read out galvanically 
-isolated four digital signals with voltages up to 36V.
+<industrial_digital_in_4_bricklet>` is included. It can read out four digital
+galvanically isolated signals with voltages up to 36V.
 
 Documented example applications are:
 
 * Forwarding smoke detector alarm to a PC.
-* Controlling remote mains switches with a PC.
-* Opening/Closing garage doors over a smart phone/tablet (Android, Windows Phone and iPhone).
+* Controlling remote mains switches with a PC and smart 
+  phone/tablet (Android, Windows Phone and iOS).
+* Opening/Closing garage doors over a smart phone/tablet (Android, 
+  Windows Phone and iOS).
 * Forwarding door bell ringing to a PC.
 
 Many more applications are possible, anything that is controlled by
@@ -108,15 +109,16 @@ Maximum Switching Voltage         30V per switch
 Resources
 ---------
 
-* Example source code :ref:`Control Remote Switches <starter_kit_hardware_hacking_remote_switch>` (Download: |remote_switch_examples_download|)
-* Example source code :ref:`Control Remote Switches with GUI <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
+* Example source code :ref:`Control Remote Mains Switches <starter_kit_hardware_hacking_remote_switch>` (Download: |remote_switch_examples_download|)
+* Example source code :ref:`Control Remote Mains Switches with GUI <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
 * Example source code :ref:`Read out Smoke Detectors <starter_kit_hardware_hacking_smoke_detector>` (Download: |smoke_detector_examples_download|)
-* Example source code :ref:`Control Garage Door over smart phone <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
+* Example source code :ref:`Control Garage Door over smart phone <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__, iOS* (ObjC))
 * Example source code :ref:`Doorbell Notifier <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
-* Demo Application :ref:`Control Remote Switches with GUI <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
-* Demo Apps :ref:`Control Garage Door over smart phone <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iPhone*) TODO
+* Demo application :ref:`Control Remote Mains Switches with GUI <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
+* Demo apps :ref:`Control Remote Mains Switches over smart phone <starter_kit_hardware_hacking_remote_switch>` (Download: Android, Windows Phone, iOS*) TODO
+* Demo apps :ref:`Control Garage Door over smart phone <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iOS*) TODO
 
-\* Demo for iPhone coming soon
+\* Coming soon
 
 
 Required Tools
@@ -161,7 +163,7 @@ in the :ref:`Hardware Hacking for Beginners
 
 
 .. warning:: Keep voltages in mentioned limitations and don't hack devices 
-  which are supplied by probably dangerous high voltages (e.g. mains voltage)!
+  which are supplied by dangerous high voltages (e.g. mains voltage)!
 
 
 Detect Digital Signals up to 36V
@@ -252,25 +254,36 @@ switches and connect it to a PC to create software controlled remote switches.
    :align: center
    :target: ../../_images/Kits/hardware_hacking_remote_finished_1200.jpg
 
-Therefore we connect an :ref:`Industrial Quad Relay Bricklet
+We connect an :ref:`Industrial Quad Relay Bricklet
 <industrial_quad_relay_bricklet>` to the buttons of the `ELRO AB440RA
 <http://www.elro.eu/en/products/cat/home-automation/home-control1/transmitters1/remote-control1>`__
 remote control. There are a vast number of remote switches available on the
 market. Most of the commercially available remote controls use the HX2262 IC
-with the same hardware design as the ELRO remote control used here,
-so this guide can be applied to most remote switches.
+with the same hardware design as the ELRO remote control.
+So this guide can be applied to most remote switches.
 
 The full description of the hardware setup can be found
 :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
 
-An example implementation of a GUI (compatible to Windows (.NET), 
-Linux (Mono) and Mac OS X (Mono)) is available in
+Example apps for :ref:`Android (Java)
+<starter_kit_hardware_hacking_power_outlet_control_android>`
+and :ref:`Windows Phone (C#)
+<starter_kit_hardware_hacking_power_outlet_control_windows_phone>` are available.
+An example app for iOS is coming soon.
 
-* :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
+.. toctree::
+   :hidden:
 
-Minimalistic examples are available in
+   PowerOutletControl_Android
+   PowerOutletControl_WindowsPhone
 
-* |remote_switch_examples|.
+An example implementation of a GUI (compatible to Windows (.NET),
+Linux (Mono) and Mac OS X (Mono)) is available in :ref:`C#
+<starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
+
+Minimalistic examples are available in:
+
+|remote_switch_examples|
 
 .. include:: SmokeDetector.toctree
 
@@ -308,7 +321,7 @@ The full description of the hardware setup can be found
 
 Example implementations with step-by-step instructions are available for:
 
-|smoke_detector_examples|.
+|smoke_detector_examples|
 
 .. include:: SmokeDetector.toctree
 
@@ -342,8 +355,7 @@ Example apps for :ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`
 and :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` are available.
-
-A demo app for iPhone is coming soon.
+An example app for iOS is coming soon.
 
 .. toctree::
    :hidden:

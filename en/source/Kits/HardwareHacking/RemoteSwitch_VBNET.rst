@@ -1,13 +1,13 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Switch using Visual Basic .NET
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Mains Switches using Visual Basic .NET
 
 .. |ref_set_monoflop| replace:: :vbnet:func:`SetMonoflop() <BrickletIndustrialQuadRelay.SetMonoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 
 .. _starter_kit_hardware_hacking_remote_switch_vbnet:
 
-Control Remote Switch using Visual Basic .NET
-=============================================
+Control Remote Mains Switches using Visual Basic .NET
+=====================================================
 
 .. include:: VBNETCommon.substitutions
    :start-after: >>>intro

@@ -212,7 +212,8 @@ def make_brick_substitutions(brick):
     return substitutions
 
 def make_bricklet_substitutions(bricklet):
-    substitutions = '>>>substitutions\n'
+    substitutions = ''
+    substitutions += '>>>substitutions\n'
     substitutions += bricklet_test_intro[lang].format(bricklet[0]) + '\n'
     substitutions += bricklet_test_connect[lang].format(bricklet[0]) + '\n'
     substitutions += bricklet_test_tab[lang].format(bricklet[0]) + '\n'

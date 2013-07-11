@@ -36,7 +36,7 @@ Features
 * Elektrogeräte mit geringer Spannung hacken 
 
   * PC, Smartphone/Tablet oder über das Internet (Internet der Dinge).
-  * Demo-Apps für Android, Windows Phone und iPhone* sind verfügbar.
+  * Demo-Apps für Android, Windows Phone und iOS* sind verfügbar.
 
 * Direkt mit dem Hacken beginnen: Zwei Funksteckdosen im Kit enthalten
 
@@ -47,9 +47,8 @@ Features
 * Interaktion über USB, WLAN und Ethernet möglich.
 
 
+\*: Demo für iOS folgt bald.
 
-
-\*: Demo für iPhone folgt bald.
 
 Beschreibung
 ------------
@@ -64,7 +63,7 @@ eine Ethernetschnittstelle kann mit der
 
 Zwei Funksteckdosen sind in diesem Kit enthalten, so dass direkt mit dem Hacken
 begonnen werden kann. Eine :ref:`Schritt-für-Schritt Anleitung
-<starter_kit_hardware_hacking_remote_switch>` erklärt wie diese
+<starter_kit_hardware_hacking_remote_switch_hardware_setup>` erklärt wie diese
 gehackt werden können (Lötkolben, Lötzinn und Schraubendreher benötigt).
 
 Es gibt zwei Gruppen von Anwendungen für dieses Kit: Steuern und Auslesen.
@@ -78,8 +77,9 @@ mitgeliefert. Dieses kann vier digitale Signale mit Spannungen bis zu
 Dokumentierte Beispielanwendungen sind:
 
 * Rauchmelderalarm zum PC weiterleiten.
-* Steckdosen über den PC fernsteuern.
-* Garagentore über ein Smartphone/Tablet (Android, Windows Phone und iPhone)
+* Steckdosen über den PC uns über Smartphone/Tablet fernsteuern (Android, 
+  Windows Phone und iOS).
+* Garagentore über ein Smartphone/Tablet (Android, Windows Phone und iOS)
   öffnen und schließen.
 * Türklingel zum PC weiterleiten.
 
@@ -116,12 +116,13 @@ Resourcen
 * Beispielquelltexte für :ref:`Funksteckdosen fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: |remote_switch_examples_download|)
 * Beispielquelltext für :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
 * Beispielquelltexte für :ref:`Rauchmelder auslesen <starter_kit_hardware_hacking_smoke_detector>` (Download: |smoke_detector_examples_download|)
-* Beispielquelltexte für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__)
+* Beispielquelltexte für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__, iOS* (ObjC))
 * Beispielquelltext für :ref:`Benachrichtigung durch Türklingel <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
 * Demo-Anwendung :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
-* Demo-Apps :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iPhone*) TODO
+* Demo-Apps :ref:`Funksteckdosen mit Smartphone fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: Android, Windows Phone, iOS*) TODO
+* Demo-Apps :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iOS*) TODO
 
-\*: Demo für iPhone folgt bald.
+\*: Demo für iOS folgt bald.
 
 
 Benötigte Werkzeuge
@@ -220,10 +221,10 @@ Hardware Hacking für Anfänger
 -----------------------------
 
 Um ein Industrial Digital In 4 oder Industrial Quad Relay Bricklet mit einem
-Gerät zu verbinden müssen zuvor folgendes erledigt werden:
+Gerät zu verbinden muss zuvor folgendes erledigt werden:
 
-* Finde Löt-Pads die benutzt werden können um eine Spannung zu messen oder zu schalten
-* Löte Drähte an diese Pads
+* Finde Löt-Pads die benutzt werden können um eine Spannung zu messen oder zu schalten.
+* Löte Drähte an diese Pads.
 
 In dem :ref:`Hardware Hacking für Anfänger
 <starter_kit_hardware_hacking_for_beginners>` Tutorial werden diese Schritte
@@ -248,7 +249,7 @@ Funksteckdosen fernsteuern
 
 In diesem Kit ist das Funksteckdosenset `ELRO AB440WD/2
 <http://www.elro.eu/de/products/cat/home-automation/home-control/outdoor1/2-outdoor-switches-with-remote-control>`__
-enthalten. Diese Funksteckdosen können als ersten Schritt in die 
+enthalten. Diese Funksteckdosen können als erster Schritt in die 
 Hausautomatisierung genutzt werden. Wir werden die Fernbedienung dieser
 Funksteckdosen hacken, so dass wir die Steckdosen über den PC schalten können.
 
@@ -264,7 +265,8 @@ Dazu schließen wir ein :ref:`Industrial Quad Relay Bricklet
 Fernbedienung. Es gibt eine große Anzahl an Funksteckdosen und 
 Fernbedienungen auf dem Markt. 
 Die meisten kommerziell erhältlichen Fernbedienungen nutzen einen HX2262 IC
-mit identischem Hardwaredesign wie das der hier verwendeten ELRO Fernbedienung.
+mit einem Hardwaredesign welches identisch zu der hier verwendeten ELRO 
+Fernbedienung ist.
 So kann diese Beschreibung auch für die meisten anderen Funksteckdosen-
 Fernbedienungen genutzt werden.
 
@@ -272,14 +274,25 @@ Die vollständige Beschreibung des Hardware-Aufbaus ist
 :ref:`hier <starter_kit_hardware_hacking_remote_switch_hardware_setup>`
 zu finden.
 
+Beispiel Apps für :ref:`Android (Java)
+<starter_kit_hardware_hacking_power_outlet_control_android>`
+und :ref:`Windows Phone (C#)
+<starter_kit_hardware_hacking_power_outlet_control_windows_phone>` sind verfügbar.
+Eine Beispielanwendung für iOS folgt bald.
+
+.. toctree::
+   :hidden:
+
+   PowerOutletControl_Android
+   PowerOutletControl_WindowsPhone
+
 Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
-Linux (Mono) und Mac OS X (Mono)) ist verfügbar in
+Linux (Mono) und Mac OS X (Mono)) ist verfügbar in :ref:`C#
+<starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
 
-* :ref:`C# <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
+Minimalistische Beispiele sind verfügbar in:
 
-Minmalistische Beispiele sind verfügbar in
-
-* |remote_switch_examples|.
+|remote_switch_examples|
 
 .. include:: SmokeDetector.toctree
 
@@ -316,7 +329,7 @@ Eine ausführliche Beschreibung des Hardware-Aufbaus ist
 :ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` zu
 finden.
 
-Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
+Beispielimplementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
 
 |smoke_detector_examples|.
 
@@ -333,8 +346,8 @@ Beispiel Implementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar 
 Garagentor mit Smartphone fernsteuern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Garagentoröffner sind wirklich nützlich. Typischerweise besitzen diese eine 
-Fernbedienung die wir in diesem Beispiel hacken werden. Anschließend werden
+Garagentoröffner besitzen typischerweise eine Fernbedienung. Eine solche 
+Fernbedienung wollen wir in diesem Beispiel hacken. Anschließend werden
 wir das Garagentor über eine kleine App mit dem Smartphone steuern können,
 so dass die Fernbedienung nicht mehr mitgenommen werden muss.
 
@@ -351,13 +364,11 @@ Eine kurze Beschreibung des Hardware-Aufbaus kann
 :ref:`hier <starter_kit_hardware_hacking_garage_control_hardware_setup>`
 gefunden werden.
 
-Beispiel Apps für
-:ref:`Android (Java)
+Beispiel Apps für :ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`
 und :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` sind verfügbar.
-
-Eine Beispielanwendung für das iPhone folgt bald.
+Eine Beispielanwendung für iOS folgt bald.
 
 .. toctree::
    :hidden:
@@ -375,8 +386,8 @@ Benachrichtigung durch die Türklingel
 In diesem Projekt verbinden wir das Industrial Digital In 4 Bricklet mit einer
 typischen, 12V betriebenen, Türklingel. Sobald jemand klingelt, wird unser
 Python-Script "Ring Ring Ring!" ausgeben. Dieses Projekt kann natürlich
-erweitert werden, so dass SMS versendet oder dein Telefon klingelt wenn jemand
-an der Tür ist. Sei kreativ!
+erweitert werden, so dass eine SMS versendet wird oder dein Telefon klingelt 
+wenn jemand an der Tür ist. Sei kreativ!
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
    :scale: 100 %

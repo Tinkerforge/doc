@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Garage Door Openers using Windows Phone
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Mains Switches using Windows Phone
 
 .. |name| replace:: Windows Phone
 .. |ref_CALLBACK_ENUMERATE| replace:: :csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
@@ -9,33 +9,33 @@
 .. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
 .. |async_helper| replace:: ``BackgroundWorker``
 
-.. include:: GarageControl.substitutions
+.. include:: PowerOutletControl.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-.. _starter_kit_hardware_hacking_garage_control_windows_phone:
+.. _starter_kit_hardware_hacking_power_outlet_control_windows_phone:
 
-Control Garage Door Openers using Windows Phone
-===============================================
+Control Remote Mains Switches using Windows Phone
+=================================================
 
 .. include:: WindowsPhoneCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
-.. include:: GarageControl.substitutions
+.. include:: PowerOutletControl.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
 The complete Visual Studio project can be downloaded `here
-<https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__.
+<https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/windows_phone>`__.
 A demo app based on this project is available in the
-`Windows Phone Store <http://www.windowsphone.com/en-us/store/app/garage-control/07028a03-fa41-4f24-8a99-f4b7ee48c5a9>`__.
+`Windows Phone Store <http://www.windowsphone.com/en-us/store/app/power-outlet-control/07028a03-fa41-4f24-8a99-f4b7ee48c5a9>`__.
 
 
 Goals
 -----
 
-.. include:: GarageControl.substitutions
+.. include:: PowerOutletControl.substitutions
    :start-after: >>>goals
    :end-before: <<<goals
 
@@ -579,8 +579,8 @@ Step 7: Everything put together
 |step7_intro|
 
 |step7_together| (`Download
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/garage_control_smart_phone/windows_phone/GarageControl/MainPage.xaml.cs>`__):
+<https://raw.github.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/windows_phone/PowerOutletControl/MainPage.xaml.cs>`__):
 
-.. literalinclude:: ../../../../../hardware-hacking/garage_control_smart_phone/windows_phone/GarageControl/MainPage.xaml.cs
+.. literalinclude:: ../../../../../hardware-hacking/power_outlet_control_smart_phone/windows_phone/PowerOutletControl/MainPage.xaml.cs
  :language: csharp
  :tab-width: 4

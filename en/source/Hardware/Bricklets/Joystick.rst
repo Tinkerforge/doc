@@ -159,8 +159,6 @@ A `laser-cut case for the Joystick Bricklet <https://www.tinkerforge.com/en/shop
 
 .. _joystick_bricklet_programming_interfaces:
 
-.. _joystick_bricklet_programming_interfaces:
-
 Programming Interfaces
 ----------------------
 
