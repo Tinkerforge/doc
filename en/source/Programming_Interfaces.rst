@@ -51,10 +51,9 @@ already loaded inside the Bricks Flash.
 This generic approach makes it possible to have compatibility between all 
 Bricks and Bricklets, including future ones.
 
-
 The High Level Programming Interface is available for Windows, Linux and 
-Mac OS as well as mobile operating systems, such as Android, 
-iOS and Windows Mobile.
+Mac OS X as well as mobile operating systems, such as Android,
+iOS and Windows Phone.
 
 .. note::
  See the :ref:`tutorial` for more information on how to use it
