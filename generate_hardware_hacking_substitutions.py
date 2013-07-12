@@ -208,7 +208,7 @@ remote_switch_goals = {
 """
 >>>goals
 The goal of this little project is to give an idea how the relays of the
-Industrial Quad Relay Bricklets have to be switched to turn the mains
+Industrial Quad Relay Bricklet have to be switched to turn the mains
 switches on/off.
 
 The following code uses |ref_set_monoflop| to trigger a button
@@ -230,8 +230,9 @@ ON     2
 OFF    3
 ====== =====
 
-To trigger the switch "A ON" of the remote control the relays 0 and 2 have to be
-closed. This is represented by the selection mask |bitmask_02|.
+To trigger the switch "A ON" of the remote control the relays 0 and 2 of the
+Industrial Quad Relay Bricklet have to be closed. This is represented by the
+selection mask |bitmask_02|.
 
 So the monoflop function should be called with this selection mask and
 a time of 1500ms to simulate a button press of "A ON". See the following
@@ -266,7 +267,8 @@ OFF    3
 ====== ======
 
 Um "A ON" auf der Fernbedienung auszulösen müssen also die Relais 0 und 2
-geschlossen werden. Dies wird durch die Bitmaske |bitmask_02| repräsentiert.
+des Industrial Quad Relay Bricklets geschlossen werden. Dies wird durch die
+Bitmaske |bitmask_02| repräsentiert.
 
 Die Monoflop-Funktion kann also mit dieser Bitmaske und einer
 Zeit von 1500ms aufgerufen werden um einen Knopfdruck von "A ON"
@@ -909,19 +911,20 @@ power_outlet_control_steps = {
 
 .. |step3_intro| replace::
  The connection is established and the Industrial Quad Relay Bricklet is found
- but there is no logic yet to trigger the switch on the remote control if the
- trigger button is clicked.
+ but there is no logic yet to trigger a switch on the remote control if on of
+ the four trigger buttons is clicked.
 
 .. |step3_monoflop| replace::
- The call to |set_monoflop| closes the first relay for 1.5s then opens it again.
+ The call to |set_monoflop| closes the selected relays for 0.5s then opens them
+ again.
 
 .. |step3_finish1| replace::
  That's it. If we would copy these three steps together in one file, we would
- have a working app that allows a smart phone to control a garage door opener
- using its hacked remote control!
+ have a working app that allows a smart phone to control remote mains switches
+ using their hacked remote control!
 
 .. |step3_finish2| replace::
- We don't have a disconnect button yet and the trigger button can be clicked
+ We don't have a disconnect button yet and the trigger buttons can be clicked
  before the connection is established. We need some more GUI logic!
 
 .. |step4_intro| replace::
@@ -995,20 +998,20 @@ power_outlet_control_steps = {
 
 .. |step3_intro| replace::
  Die Verbindung ist hergestellt und das Industrial Quad Relay Bricklet wurde
- gefunden, aber es fehlt noch die Logik um einen Taster auf der Fernbedienung
- auszulösen wenn der Knopf geklickt wurde.
+ gefunden, aber es fehlt noch die Logik um einen der Taster auf der Fernbedienung
+ auszulösen wenn einer der Knöpfe geklickt wurde.
 
 .. |step3_monoflop| replace::
- Der Aufruf von |set_monoflop| schließt das erste Relais für 1,5s und öffnet
- es dann wieder.
+ Der Aufruf von |set_monoflop| schließt die ausgewählten Relais für 0,5s und
+ öffnet es dann wieder.
 
 .. |step3_finish1| replace::
  Das ist es. Wenn wir diese drei Schritte zusammen in eine Datei kopieren, dann
  hätten wir jetzt eine funktionierende App, die es ermöglicht vom Smartphone
- aus den Garagentoröffner mittels dessen gehackter Fernbedienung zu steuern.
+ aus Funksteckdosen mittels deren gehackter Fernbedienung zu steuern.
 
 .. |step3_finish2| replace::
- Es fehlt noch ein Disconnect-Knopf und der Trigger-Knopf kann auch geklickt
+ Es fehlt noch ein Disconnect-Knopf und die Trigger-Knöpfe kann auch geklickt
  werden obwohl keine Verbindung besteht. Es fehlt also noch etwas mehr
  GUI-Logik!
 

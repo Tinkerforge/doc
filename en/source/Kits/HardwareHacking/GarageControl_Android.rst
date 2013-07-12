@@ -5,7 +5,7 @@
 .. |ref_CALLBACK_ENUMERATE| replace:: :java:func:`EnumerateListener <IPConnection.EnumerateListener>`
 .. |ref_connect| replace:: :java:func:`connect() <IPConnection::connect>`
 .. |connect| replace:: ``connect()``
-.. |set_monoflop| replace:: ``setMonoflop(1 << 0, 1 << 0, 1500)``
+.. |set_monoflop| replace:: ``setMonoflop(1 << 0, 15, 1500)``
 .. |ref_get_identity| replace:: :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>`
 .. |async_helper| replace:: ``AsyncTask``
 
@@ -186,7 +186,7 @@ Industrial Quad Relay Bricklet to trigger the switch on the remote control:
 
         class TriggerAsyncTask extends AsyncTask<Void, Void, Void> {
             protected Void doInBackground(Void... params) {
-                relay.setMonoflop(1 << 0, 1 << 0, 1500);
+                relay.setMonoflop(1 << 0, 15, 1500);
                 return null;
             }
         }

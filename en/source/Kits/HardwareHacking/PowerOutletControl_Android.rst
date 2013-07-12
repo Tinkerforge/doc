@@ -5,7 +5,7 @@
 .. |ref_CALLBACK_ENUMERATE| replace:: :java:func:`EnumerateListener <IPConnection.EnumerateListener>`
 .. |ref_connect| replace:: :java:func:`connect() <IPConnection::connect>`
 .. |connect| replace:: ``connect()``
-.. |set_monoflop| replace:: ``setMonoflop(1 << 0, 1 << 0, 1500)``
+.. |set_monoflop| replace:: ``setMonoflop(selectionMask, 15, 500)``
 .. |ref_get_identity| replace:: :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>`
 .. |async_helper| replace:: ``AsyncTask``
 
@@ -46,17 +46,18 @@ Step 1: Creating the GUI
 After creating a new "Android Application Project" named "Garage Control" in
 Eclipse we start with creating the GUI:
 
-.. image:: /Images/Kits/hardware_hacking_garage_control_android_gui_350.jpg
+.. image:: /Images/Kits/hardware_hacking_power_outlet_control_android_gui_350.jpg
    :scale: 100 %
    :alt: App GUI
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_garage_control_android_gui.jpg
+   :target: ../../_images/Kits/hardware_hacking_power_outlet_control_android_gui.jpg
 
 The basis is a "Linear Layout (Vertical)". Three text fields allow to enter
 the host, port and UID of the Industrial Quad Relay Bricklet. For the port a
 "Number" text field is used, so Android will restrict the content of this
-text field to numbers. The final two elements are one "Button" to connect and
-disconnect and another one to trigger the remote control.
+text field to numbers. The final five elements are one "Button" to connect and
+disconnect and four buttons in a "Linear Layout (Horizonal)" to trigger the
+different switches on the remote control.
 
 Now the GUI layout is finished. To access the GUI components in the Java code
 we use the ``findViewById()`` method and store the references to member
@@ -69,7 +70,10 @@ variables of the ``MainActivity`` class:
         private EditText port;
         private EditText uid;
         private Button connect;
-        private Button trigger;
+        private Button a_on;
+        private Button a_off;
+        private Button b_on;
+        private Button b_off;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +84,10 @@ variables of the ``MainActivity`` class:
             port = (EditText)findViewById(R.id.port);
             uid = (EditText)findViewById(R.id.uid);
             connect = (Button)findViewById(R.id.connect);
-            trigger = (Button)findViewById(R.id.trigger);
+            a_on = (Button)findViewById(R.id.a_on);
+            a_off = (Button)findViewById(R.id.a_off);
+            b_on = (Button)findViewById(R.id.b_on);
+            b_off = (Button)findViewById(R.id.b_off);
         }
     }
 
@@ -166,9 +173,26 @@ Step 3: Triggering Switches
 
 |step3_intro|
 
-An ``OnClickListener`` is added to the trigger button that creates and executes
-an ``AsyncTask`` that in turn calls the ``setMonoflop()`` method of the
-Industrial Quad Relay Bricklet to trigger the switch on the remote control:
+According to the :ref:`hardware setup section
+<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>` the
+inputs of the remote control should be connected as follows:
+
+====== =====
+Signal Relay
+====== =====
+A      0
+B      1
+ON     2
+OFF    3
+====== =====
+
+To trigger the switch "A ON" of the remote control the relays 0 and 2 of the
+Industrial Quad Relay Bricklet have to be closed. This is represented by the
+selection mask ``(1 << 0) | (1 << 2)``.
+
+``OnClickListener`` are added to the trigger the buttons. These create and
+execute an ``AsyncTask`` that in turn calls the ``setMonoflop()`` method of
+the Industrial Quad Relay Bricklet to trigger a switch on the remote control:
 
 .. code-block:: java
 
@@ -177,16 +201,38 @@ Industrial Quad Relay Bricklet to trigger the switch on the remote control:
 
         private BrickletIndustrialQuadRelay relay;
 
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            // [...]
+
+            a_on.setOnClickListener(new TriggerClickListener((1 << 0) | (1 << 2)));
+            a_off.setOnClickListener(new TriggerClickListener((1 << 0) | (1 << 3)));
+            b_on.setOnClickListener(new TriggerClickListener((1 << 1) | (1 << 2)));
+            b_off.setOnClickListener(new TriggerClickListener((1 << 1) | (1 << 3)));
+        }
+
         class TriggerAsyncTask extends AsyncTask<Void, Void, Void> {
+            private int selectionMask;
+
+            TriggerAsyncTask(int selectionMask) {
+                this.selectionMask = selectionMask;
+            }
+
             protected Void doInBackground(Void... params) {
-                relay.setMonoflop(1 << 0, 1 << 0, 1500);
+                relay.setMonoflop(selectionMask, 15, 500);
                 return null;
             }
         }
 
         class TriggerClickListener implements OnClickListener {
+            private int selectionMask;
+
+            TriggerClickListener(int selectionMask) {
+                this.selectionMask = selectionMask;
+            }
+
             public void onClick(View v) {
-                new TriggerAsyncTask().execute();
+                new TriggerAsyncTask(selectionMask).execute();
             }
         }
     }
@@ -277,7 +323,10 @@ disable and enable the GUI elements according to the current connection state:
             port.setEnabled(false);
             uid.setEnabled(false);
             connect.setEnabled(false);
-            trigger.setEnabled(false);
+            a_on.setEnabled(false);
+            a_off.setEnabled(false);
+            b_on.setEnabled(false);
+            b_off.setEnabled(false);
         }
 
         // [...]
@@ -287,7 +336,10 @@ disable and enable the GUI elements according to the current connection state:
             // [...]
 
             connect.setEnabled(true);
-            trigger.setEnabled(true);
+            a_on.setEnabled(true);
+            a_off.setEnabled(true);
+            b_on.setEnabled(true);
+            b_off.setEnabled(true);
         }
     }
 
@@ -299,7 +351,10 @@ disable and enable the GUI elements according to the current connection state:
         @Override
         protected void onPreExecute() {
             connect.setEnabled(false);
-            trigger.setEnabled(false);
+            a_on.setEnabled(false);
+            a_off.setEnabled(false);
+            b_on.setEnabled(false);
+            b_off.setEnabled(false);
         }
 
         // [...]
@@ -443,7 +498,10 @@ progress dialog is dismissed:
             connect.setText("Disconnect");
             connect.setOnClickListener(new DisconnectClickListener());
             connect.setEnabled(true);
-            trigger.setEnabled(true);
+            a_on.setEnabled(true);
+            a_off.setEnabled(true);
+            b_on.setEnabled(true);
+            b_off.setEnabled(true);
         }
 
 In the error case we use an ``AlertDialog`` and set the error message according

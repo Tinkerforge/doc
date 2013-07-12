@@ -5,7 +5,7 @@
 .. |ref_CALLBACK_ENUMERATE| replace:: :csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
 .. |ref_connect| replace:: :csharp:func:`Connect() <IPConnection::Connect>`
 .. |connect| replace:: ``Connect()``
-.. |set_monoflop| replace:: ``SetMonoflop(1 << 0, 1 << 0, 1500)``
+.. |set_monoflop| replace:: ``SetMonoflop(selectionMask, 15, 500)``
 .. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
 .. |async_helper| replace:: ``BackgroundWorker``
 
@@ -46,11 +46,11 @@ Step 1: Creating the GUI
 After creating a new "Windows Phone App" named "Garage Control" in Visual Studio
 we start with creating the GUI:
 
-.. image:: /Images/Kits/hardware_hacking_garage_control_windows_phone_gui_350.jpg
+.. image:: /Images/Kits/hardware_hacking_power_outlet_control_windows_phone_gui_350.jpg
    :scale: 100 %
    :alt: App GUI
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_garage_control_windows_phone_gui.jpg
+   :target: ../../_images/Kits/hardware_hacking_power_outlet_control_windows_phone_gui.jpg
 
 We extend the precreated layout by appending a "StackPanel" to the "LayoutRoot"
 grid, that will contain the other GUI elements. Three "TextBoxes" allow
@@ -58,9 +58,10 @@ to enter the host, port and UID of the Industrial Quad Relay Bricklet. For the
 port a text box with ``InputScope="Number"`` is used, so Windows Phone will
 restrict the content of this text box to numbers. Below the text boxes goes a
 "ProgressBar" that will be used to indicate that a connection attempt is in
-progress. The final two elements are one "Button" to connect and
-disconnect and another one to trigger the remote control. Here is a snippet of
-the ``MainPage.xaml`` file:
+progress. The final fife elements are one "Button" to connect and
+disconnect and four buttons in a horizonal "StackPanel" to trigger the
+different switches on the remote control. Here is a snippet of the
+``MainPage.xaml`` file:
 
 .. code-block:: xml
 
@@ -78,7 +79,12 @@ the ``MainPage.xaml`` file:
                 <TextBox x:Name="uid" Height="72" TextWrapping="Wrap" Text="ctG" VerticalAlignment="Top"/>
                 <ProgressBar x:Name="progress" Height="10" VerticalAlignment="Top"/>
                 <Button x:Name="connect" Content="Connect" VerticalAlignment="Top" Click="Connect_Click"/>
-                <Button x:Name="trigger" Content="Trigger" VerticalAlignment="Top" Height="144" Click="Trigger_Click"/>
+                <StackPanel Orientation="Horizontal" Height="100" HorizontalAlignment="Center">
+                    <Button x:Name="a_on" Content="A On" HorizontalAlignment="Center" Click="Aon_Click"/>
+                    <Button x:Name="a_off" Content="A Off" HorizontalAlignment="Center" Click="Aoff_Click"/>
+                    <Button x:Name="b_on" Content="B On" HorizontalAlignment="Center" Click="Bon_Click"/>
+                    <Button x:Name="b_off" Content="B Off" HorizontalAlignment="Center" Click="Boff_Click"/>
+                </StackPanel>
             </StackPanel>
         </Grid>
     </phone:PhoneApplicationPage>
@@ -177,10 +183,27 @@ Step 3: Triggering Switches
 
 |step3_intro|
 
-To do this the ``Trigger_Click()`` method is bound to the ``Click`` event of the
-trigger button. It starts another ``BackgroundWorker`` that in turn calls the
+According to the :ref:`hardware setup section
+<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>` the
+inputs of the remote control should be connected as follows:
+
+====== =====
+Signal Relay
+====== =====
+A      0
+B      1
+ON     2
+OFF    3
+====== =====
+
+To trigger the switch "A ON" of the remote control the relays 0 and 2 of the
+Industrial Quad Relay Bricklet have to be closed. This is represented by the
+selection mask ``(1 << 0) | (1 << 2)``.
+
+To do ``<X><Y>_Click()`` methods are bound to the ``Click`` events of the
+trigger buttons. They start another ``BackgroundWorker`` that in turn calls the
 ``SetMonoflop()`` method of the Industrial Quad Relay Bricklet to trigger the
-switch on the remote control:
+corresponding switch on the remote control:
 
 .. code-block:: csharp
 
@@ -200,12 +223,29 @@ switch on the remote control:
 
         private void TriggerWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            relay.SetMonoflop(1 << 0, 1 << 0, 1500);
+            int selectionMask = (int)e.Argument;
+
+            relay.SetMonoflop(selectionMask, 15, 500);
         }
 
-        private void Trigger_Click(object sender, RoutedEventArgs e)
+        private void Aon_Click(object sender, RoutedEventArgs e)
         {
-            triggerWorker.RunWorkerAsync();
+            triggerWorker.RunWorkerAsync((1 << 0) | (1 << 2));
+        }
+
+        private void Aoff_Click(object sender, RoutedEventArgs e)
+        {
+            triggerWorker.RunWorkerAsync((1 << 0) | (1 << 3));
+        }
+
+        private void Bon_Click(object sender, RoutedEventArgs e)
+        {
+            triggerWorker.RunWorkerAsync((1 << 1) | (1 << 2));
+        }
+
+        private void Boff_Click(object sender, RoutedEventArgs e)
+        {
+            triggerWorker.RunWorkerAsync((1 << 1) | (1 << 3));
         }
     }
 
@@ -304,7 +344,10 @@ disable and enable the GUI elements according to the current connection state:
         // [...]
 
         connect.IsEnabled = true;
-        trigger.IsEnabled = true;
+        a_on.IsEnabled = true;
+        a_off.IsEnabled = true;
+        b_on.IsEnabled = true;
+        b_off.IsEnabled = true;
     }
 
 .. code-block:: csharp
@@ -327,7 +370,10 @@ disable and enable the GUI elements according to the current connection state:
         port.IsEnabled = false;
         uid.IsEnabled = false;
         connect.IsEnabled = false;
-        trigger.IsEnabled = false;
+        a_on.IsEnabled = false;
+        a_off.IsEnabled = false;
+        b_on.IsEnabled = false;
+        b_off.IsEnabled = false;
 
         // [...]
     }
@@ -469,7 +515,10 @@ outcomes. First the progress bar is dismissed:
         {
             connect.Content = "Disconnect";
             connect.IsEnabled = true;
-            trigger.IsEnabled = true;
+            a_on.IsEnabled = true;
+            a_off.IsEnabled = true;
+            b_on.IsEnabled = true;
+            b_off.IsEnabled = true;
         }
 
 In the error case we use a ``MessageBox`` and set the error message according
