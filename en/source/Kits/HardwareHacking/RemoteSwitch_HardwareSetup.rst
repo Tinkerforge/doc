@@ -6,10 +6,10 @@
 Remote Mains Switches Hardware Setup
 ====================================
 
-This kit includes two remote control mains switches. So this example
+This kit includes two remote control mains switches. This example
 describes how to hack the included remote control. There are many other 
 remote control mains switches with similar or identical remote controls
-on the market, so you can most likely use this description for these, too.
+on the market. You can most likely use this description for these, too.
 
 Most remote controls for remote control mains switches are equipped with an IC 
 called HX2262. Basically it has six different inputs: Two to define if it is an 
@@ -26,7 +26,7 @@ C and D, you can use an additional Industrial Quad Relay Bricklet.
 The innards of the Remote Control
 ---------------------------------
 
-If you open your remote control you will most likely see a circuit board like this:
+If you open your remote control you will see a circuit board like this:
 
 .. image:: /Images/Kits/hardware_hacking_remote_open_350.jpg
    :scale: 100 %
