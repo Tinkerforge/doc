@@ -7,12 +7,12 @@ Doorbell Notifier Hardware Setup
 ================================
 
 The hardware setup is pretty simple. Typically doorbells are driven by 12V AC 
-(Alternating Current), this current is applied on the doorbell by two wires.
+(Alternating Current), this current is applied to the doorbell by two wires.
 If you have such a doorbell you can connect an 
 :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`
 to it, by connecting one input port of the Bricklet to the doorbell.
 This way the input port will be triggered if someone triggers the doorbell.
-A more detailed description how to connect it can be found in the following
+A more detailed description for the connection can be found in the following
 :ref:`hardware setup <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup_setup>`
 section.
 
@@ -45,7 +45,7 @@ Hardware Setup
 --------------
 
 The Industrial Digital In 4 Bricklet is connected in parallel to the doorbell. You can see 
-the set-up in the next picture. The big blue and black wire are the original
+the setup in the next picture. The big blue and black wire are the original
 installed doorbell triggering wires. We have connected a smaller red and
 black wire in parallel to the doorbell which are connected to the first
 input port of the Industrial Digital In 4 Bricklet.
