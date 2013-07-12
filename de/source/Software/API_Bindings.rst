@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../Software.html">Software</a> / API Bindings
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / API Bindings
 
 .. _api_bindings:
 
@@ -11,7 +11,8 @@ Die API Bindings stellen eine TCP/IP Verbindung zum
 das über den Brick Daemon zum Brick geschickt wird. Beim Brick Daemon vom Brick
 eingehende Pakete werden an den Aufrufer zurückgeroutet.
 
-Unser :ref:`tutorial` beschreibt wie alles zusammengehört und funktioniert.
+Diese :ref:`Tutorial <tutorial_first_steps>` beschreibt wie alles zusammengehört
+und funktioniert.
 
 .. _api_bindings_ip_connection:
 

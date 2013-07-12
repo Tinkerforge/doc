@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#master-extensions">Master Extensions</a> / RS485 Extension
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#master-extensions">Master Extensions</a> / RS485 Extension
 :shoplink: ../../../shop/master-extensions/rs485-master-extension.html
 
 .. _rs485_extension:

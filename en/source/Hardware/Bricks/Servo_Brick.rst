@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricks">Bricks</a> / Servo Brick
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricks">Bricks</a> / Servo Brick
 :shoplink: ../../../shop/bricks/servo-brick.html
 
 .. include:: Servo_Brick.substitutions

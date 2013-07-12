@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / LCD 16x2 Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / LCD 16x2 Bricklet
 
 .. include:: LCD_16x2.substitutions
    :start-after: >>>substitutions

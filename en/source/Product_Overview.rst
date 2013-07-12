@@ -6,7 +6,7 @@
 Product Overview
 ================
 
-Our products are divided into four different categories:
+Our products are divided into five different categories:
 
 * :ref:`Bricks <product_overview_bricks>`:
   Stackable microcontroller boards for sensing and controlling.
@@ -17,9 +17,10 @@ Our products are divided into four different categories:
   :ref:`Master Brick <master_brick>`.
 * :ref:`Power Supplies <product_overview_power_supplies>`:
   Boards to power a stack of Bricks, plugged below the stack.
+* :ref:`Accessories <product_overview_accessories>`
 
-See the :ref:`tutorial <tutorial>` for an explanation of how everything works
-together.
+See the :ref:`tutorial <tutorial_first_steps>` for an explanation of how
+everything works together.
 
 
 .. _product_overview_bricks:
@@ -76,8 +77,8 @@ This master routes the messages between the boards in the stack and the PC
 (:ref:`High Level Programming Interface <pi_hlpi>`).
 For the user, the stack behaves as if all Bricks were connected separately
 over USB with the PC.
-See :ref:`Tutorial Stacking <tutorial_build_stacks>` for more information
-about stacks.
+See the :ref:`stacking tutorial <tutorial_first_steps_build_stacks>` for more
+information about stacks.
 
 Besides the :ref:`High Level Programming Interface <pi_hlpi>` it will also
 possible to use Bricks with an :ref:`On Device Programming Interface <pi_odpi>`.
@@ -220,3 +221,21 @@ have the same size as :ref:`Bricks <product_overview_bricks>` and are
 stacked in at the bottom of the stack.
 
 .. include:: Product_Overview_power_supplies.table
+
+
+.. _product_overview_accessories:
+
+Accessories
+-----------
+
+.. container:: tfdocimages
+
+ .. list-table::
+
+  * - .. image:: /Images/Accessories/dc_jack_adapter_tilted_100.jpg
+       :scale: 100 %
+       :alt: DC Jack Adapter
+       :align: center
+       :target: _images/Accessories/dc_jack_adapter_tilted_800.jpg
+
+.. include:: Product_Overview_accessories.table

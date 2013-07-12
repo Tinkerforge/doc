@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / Industrial Dual 0-20mA Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Industrial Dual 0-20mA Bricklet
 :shoplink: ../../../shop/bricklets/industrial-dual-0-20ma-bricklet.html
 
 .. include:: Industrial_Dual_020mA.substitutions

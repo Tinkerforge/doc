@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Tutorials.html">Tutorials</a> / Rugged Approach
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#tutorials-and-faq">Tutorials and FAQ</a> / Rugged Approach - Tutorial
 
 .. _tutorial_rugged_approach:
 
-Rugged Approach
-===============
+Rugged Approach - Tutorial
+==========================
 
 With the new Protocol 2.0, it is possible to write programs that are
 resilient to outages, brief electricity cuts and similar things.

@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Tutorials.html">Tutorials</a> / Robuster Ansatz
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#tutorials-und-faq">Tutorials und FAQ</a> / Robuster Ansatz - Tutorial
 
 .. _tutorial_rugged_approach:
 
-Robuster Ansatz
-===============
+Robuster Ansatz - Tutorial
+==========================
 
 Seit dem neuen Protokoll 2.0 ist es möglich Programme zu schreiben die
 stabil bleiben bei Unterbrechungen, kurzen Stromausfällen und ähnlichem.

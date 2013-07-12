@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / IO-4 Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / IO-4 Bricklet
 :shoplink: ../../../shop/bricklets/io4-bricklet.html
 
 .. include:: IO4.substitutions

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../Software.html">Software</a> / <a href="API_Bindings.html">API Bindings</a> / PHP - API Bindings
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / PHP - API Bindings
 
 .. _api_bindings_php:
 
@@ -80,6 +80,6 @@ Dokumentation der :ref:`Bricks <product_overview_bricks>` und
 :ref:`Bricklets <product_overview_bricklets>` zu finden
 
 Anleitungen für weiterführende Projekte finden sich im Abschnitt
-über :ref:`Kits <kits>`.
+über :ref:`Kits <index_kits>`.
 
 .. FIXME: add a list with direct links here

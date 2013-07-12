@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Tutorials.html">Tutorials</a> / First steps
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#tutorials-and-faq">Tutorials and FAQ</a> / First steps - Tutorial
 
-.. _tutorial:
+.. _tutorial_first_steps:
 
-First steps
-===========
+First steps - Tutorial
+======================
 
 The following tutorial will demonstrate how to use
 :ref:`Bricks <product_overview_bricks>` and
@@ -213,7 +213,7 @@ In **Lines 35-37** we wait for user input to prevent program termination.
 After this the motor is stopped before the program ends.
 
 
-.. _tutorial_build_stacks:
+.. _tutorial_first_steps_build_stacks:
 
 Build Stacks
 ------------

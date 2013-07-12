@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / Device Identifier
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / Device Identifier
 
 .. _device_identifier:
 

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / Programming Interfaces
+:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#software">Software</a> / Programming Interfaces
 
 .. _pi:
 
@@ -56,8 +56,8 @@ Mac OS X as well as mobile operating systems, such as Android,
 iOS and Windows Phone.
 
 .. note::
- See the :ref:`tutorial` for more information on how to use it
- and an idea of the Brick and Bricklet concept.
+ See this :ref:`tutorial <tutorial_first_steps>` for more information on how to
+ use it and an idea of the Brick and Bricklet concept.
 
 
 .. _pi_odpi:

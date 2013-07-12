@@ -6,7 +6,7 @@
 Produktübersicht
 ================
 
-Unsere Produkte gliedern sich in vier verschiedene Kategorien:
+Unsere Produkte gliedern sich in fünf verschiedene Kategorien:
 
 * :ref:`Bricks <product_overview_bricks>`:
   Stapelbare Mikrocontrollerplatinen zum Messen und Steuern.
@@ -19,8 +19,10 @@ Unsere Produkte gliedern sich in vier verschiedene Kategorien:
 * :ref:`Stromversorgungen <product_overview_power_supplies>`:
   Platinen die einen Stapel von Bricks mit Strom versorgen; werden unter einen
   Stapel gesteckt.
+* :ref:`Zubehör <product_overview_accessories>`
 
-Das :ref:`Tutorial <tutorial>` erklärt wie alles zusammen funktioniert.
+Diese :ref:`Tutorial <tutorial_first_steps>` erklärt wie alles zusammen
+funktioniert.
 
 
 .. _product_overview_bricks:
@@ -74,8 +76,9 @@ Bricks können zu Stapeln zusammengesteckt werden. Ein Master kümmert sich um d
 Kommunikation aller anderen Teilnehmer im Stapel. Er routet Nachrichten zwischen
 den Teilnehmern und dem PC (:ref:`High Level Programmierschnittstelle <pi_hlpi>`).
 Aus Benutzersicht verhält sich solch ein Stapel so als wären alle Bricks einzeln
-per USB am PC angeschlossen. Das :ref:`Stapel Tutorial <tutorial_build_stacks>`
-beinhaltet weitere Informationen für Stapel.
+per USB am PC angeschlossen. Das :ref:`Stapel Tutorial
+<tutorial_first_steps_build_stacks>` beinhaltet weitere Informationen über
+Stapel.
 
 Neben der :ref:`High Level Programmierschnittstelle <pi_hlpi>` wird es in
 Zukunft auch möglich sein über eine :ref:`On Device Programmierschnittstelle
@@ -221,3 +224,21 @@ Stromversorgungen haben die Größe von :ref:`Bricks <product_overview_bricks>`
 und werden unter einen Stapel gesteckt.
 
 .. include:: Product_Overview_power_supplies.table
+
+
+.. _product_overview_accessories:
+
+Zubehör
+-------
+
+.. container:: tfdocimages
+
+ .. list-table::
+
+  * - .. image:: /Images/Accessories/dc_jack_adapter_tilted_100.jpg
+       :scale: 100 %
+       :alt: DC Jack Adapter
+       :align: center
+       :target: _images/Accessories/dc_jack_adapter_tilted_800.jpg
+
+.. include:: Product_Overview_accessories.table

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / Starter Kit: Weather Station
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / Starter Kit: Weather Station
 :shoplink: ../../../shop/kits/starter-kit-weather-station.html
 
 .. include:: WeatherStation.substitutions

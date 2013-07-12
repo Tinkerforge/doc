@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricklets">Bricklets</a> / GPS Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / GPS Bricklet
 :shoplink: ../../../shop/bricklets/gps-bricklet.html
 
 .. include:: GPS.substitutions

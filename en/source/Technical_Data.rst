@@ -1,5 +1,7 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / Technical Data
+:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#specifications">Specifications</a> / Technical Data
+
+.. _technical_data:
 
 Technical Data
 ==============

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../Software.html">Software</a> / Brick Daemon (brickd)
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / Brick Daemon (brickd)
 
 .. _brickd:
 

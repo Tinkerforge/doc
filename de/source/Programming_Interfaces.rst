@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="index.html">Startseite</a> / Programmierschnittstellen
+:breadcrumbs: <a href="index.html">Startseite</a> / <a href="index.html#software">Software</a> / Programmierschnittstellen
 
 .. _pi:
 
@@ -57,8 +57,8 @@ Diese Programmierschnittstelle ist für Windows, Linux und Mac OS X sowie mobile
 Betriebssystem wie Android, iOS und Windows Phone verfügbar.
 
 .. note::
- Die Seite :ref:`tutorial` vermittelt weitere Informationen wie diese Konzept
- verwendet werden kann.
+ Dieses :ref:`Tutorial <tutorial_first_steps>` vermittelt weitere Informationen
+ wie diese Konzept verwendet werden kann.
 
 
 .. _pi_odpi:

@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../Low_Level_Protocols.html">Low Level Protocols</a> / TCP/IP
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#specifications">Specifications</a> / TCP/IP Protocol
 
 .. _llproto_tcpip:
 
-TCP/IP
-======
+TCP/IP Protocol
+===============
 
 This is the API description for the TCP/IP protocol of the Brick Daemon
 and the WIFI Extension.

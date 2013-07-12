@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Kits.html">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Mains Switches using C#
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Mains Switches using C#
 
 .. |ref_set_monoflop| replace:: :csharp:func:`SetMonoflop() <BrickletIndustrialQuadRelay::SetMonoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#verwendung-mit-embedded-boards">Verwendung mit Embedded Boards</a> / Raspberry Pi
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#embedded-boards">Embedded Boards</a> / Raspberry Pi
 
 .. _embedded_raspberry_pi:
 
