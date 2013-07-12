@@ -192,7 +192,7 @@ A `laser-cut case for the Dual Relay Bricklet <https://www.tinkerforge.com/en/sh
    :align: center
    :target: ../../_images/Cases/bricklet_dual_relay_case_1000.jpg
 
-The case of the Dual Relay Bricklet is delieverd including cable ties
+The case of the Dual Relay Bricklet is delivered including cable ties
 for a cable relief and WAGO connecting clamps to join wires. The case
 is big enough to accommodate the cable relief as well as the WAGO
 clamps.

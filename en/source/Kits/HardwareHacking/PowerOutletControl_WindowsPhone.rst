@@ -59,7 +59,7 @@ port a text box with ``InputScope="Number"`` is used, so Windows Phone will
 restrict the content of this text box to numbers. Below the text boxes goes a
 "ProgressBar" that will be used to indicate that a connection attempt is in
 progress. The final fife elements are one "Button" to connect and
-disconnect and four buttons in a horizonal "StackPanel" to trigger the
+disconnect and four buttons in a horizontal "StackPanel" to trigger the
 different switches on the remote control. Here is a snippet of the
 ``MainPage.xaml`` file:
 

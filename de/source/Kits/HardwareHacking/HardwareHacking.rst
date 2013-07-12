@@ -110,8 +110,8 @@ Maximaler Schaltstrom             1,2A pro Relais
 Maximale Schaltspannung           30V pro Relais
 ================================  ======================================
 
-Resourcen
----------
+Ressourcen
+----------
 
 * Beispielquelltexte für :ref:`Funksteckdosen fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: |remote_switch_examples_download|)
 * Beispielquelltext für :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)

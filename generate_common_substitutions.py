@@ -116,7 +116,7 @@ Below you can see an exploded assembly drawing of the {0} Bricklet case:
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
 * Schraube Abstandshalter an das Bricklet,
-* schraube Untereteil an untere Abstandshalter,
+* schraube Unterteil an untere Abstandshalter,
 * baue Seitenteile auf,
 * stecke zusammengebaute Seitenteile in Unterteil und
 * schraube Oberteil auf obere Abstandshalter.
