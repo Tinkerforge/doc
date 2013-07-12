@@ -213,7 +213,7 @@ angeschlossen):
    :align: center
    :target: ../../_images/Cases/bricklet_dual_relay_case_top_open_2_1000.jpg
 
-Der Aussenleiter (braun) wird über das Dual Relay Bricklet geschalten.
+Der Außenleiter (braun) wird über das Dual Relay Bricklet geschaltet.
 Der Schutzleiter (grün-gelb), sowie der Neutralleiter (blau), werden
 mit den WAGO Klemmen gebrückt.
 
@@ -234,7 +234,7 @@ Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 * Bricklet an Unterteil mit Abstandshalter schrauben
 * Seitenteile (inklusive Zugentlastung) aufbauen
 * zusammengebaute Seitenteile in Unterteil stecken
-* erkabelung und WAGO Klemmen hinzufügen
+* Verkabelung und WAGO Klemmen hinzufügen
 * Kabel mit Kabelbinder für Zugentlastung festziehen
 * Oberteil auf oberen Abstandshalter schrauben
 
