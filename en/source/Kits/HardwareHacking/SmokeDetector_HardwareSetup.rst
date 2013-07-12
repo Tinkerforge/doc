@@ -74,8 +74,8 @@ for instructions how you can find the correct pins of the LED and its series
 resistor.
 
 In case of the ELRO FA20RF/2 the transparent LED consists in fact of two
-LEDs (one green and one red) in one common casing. Both have one common pin 
-(center) and one single pin each (pin left, right).
+LEDs (one green and one red) in one casing. Both LEDs have one common pin 
+(center) and one individual pin (pin left, right).
 To light the green LED the left pin is used.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_350.jpg
@@ -86,7 +86,7 @@ To light the green LED the left pin is used.
 
 We solder one wire to the center pin of the LED and trace the circuit from the
 left pin until we find the resistor
-(marked in red). The cable is soldered on behind this resistor.
+(marked in red). The cable is soldered behind this resistor.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_soldered_closeup_w_trace_350.jpg
    :scale: 100 %
@@ -96,7 +96,7 @@ left pin until we find the resistor
 
 After that we can screw the circuit board back to the casing.
 We connect the wires to the + and - of port 0 of the Industrial Digital In 4
-Bricklet. We can check if the polarity is correct later on with the Brick Viewer.
+Bricklet. We can check if the polarity is correct later with the Brick Viewer.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
    :scale: 100 %
@@ -104,7 +104,7 @@ Bricklet. We can check if the polarity is correct later on with the Brick Viewer
    :align: center
    :target: ../../_images/Kits/hardware_hacking_smoke_detector_finished_1200.jpg
 
-Now we can test the hacked smoke detector. To do that, we can press the test
+Now we can test the hacked smoke detector. To do that, we press the test
 button. The reaction of the LED should be represented in the 
 Brick Viewer. 
 
