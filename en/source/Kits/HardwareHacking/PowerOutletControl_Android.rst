@@ -591,7 +591,7 @@ In ``onStop()`` the configuration is then stored again:
     }
 
 If the orientation is changed Android basically restarts the app for the
-new orientation. This makes our app loss the connection. Therefore, the state
+new orientation. This makes our app lose the connection. Therefore, the state
 of the connection is stored when ``onSaveInstanceState()`` is called:
 
 .. code-block:: java

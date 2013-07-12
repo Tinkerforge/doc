@@ -911,7 +911,7 @@ power_outlet_control_steps = {
 
 .. |step3_intro| replace::
  The connection is established and the Industrial Quad Relay Bricklet is found
- but there is no logic yet to trigger a switch on the remote control if on of
+ but there is no logic yet to trigger a switch on the remote control if one of
  the four trigger buttons is clicked.
 
 .. |step3_monoflop| replace::
@@ -938,8 +938,8 @@ power_outlet_control_steps = {
  not be clickable if there is no connection.
 
 .. |step4_robust1| replace::
- But the program is not yet robust enough. What happens if can't connect? What
- happens if there is no Industrial Quad Relay Bricklet with the given UID?
+ But the program is not yet robust enough. What happens if it can't connect? 
+ What happens if there is no Industrial Quad Relay Bricklet with the given UID?
 
 .. |step4_robust2| replace::
  What we need is error handling!
