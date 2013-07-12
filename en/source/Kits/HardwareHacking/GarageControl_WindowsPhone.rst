@@ -5,7 +5,7 @@
 .. |ref_CALLBACK_ENUMERATE| replace:: :csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
 .. |ref_connect| replace:: :csharp:func:`Connect() <IPConnection::Connect>`
 .. |connect| replace:: ``Connect()``
-.. |set_monoflop| replace:: ``SetMonoflop(1 << 0, 1 << 0, 1500)``
+.. |set_monoflop| replace:: ``SetMonoflop(1 << 0, 15, 1500)``
 .. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
 .. |async_helper| replace:: ``BackgroundWorker``
 
@@ -200,7 +200,7 @@ switch on the remote control:
 
         private void TriggerWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            relay.SetMonoflop(1 << 0, 1 << 0, 1500);
+            relay.SetMonoflop(1 << 0, 15, 1500);
         }
 
         private void Trigger_Click(object sender, RoutedEventArgs e)

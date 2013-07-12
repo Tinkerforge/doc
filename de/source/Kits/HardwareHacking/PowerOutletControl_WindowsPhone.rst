@@ -5,7 +5,7 @@
 .. |ref_CALLBACK_ENUMERATE| replace:: :csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
 .. |ref_connect| replace:: :csharp:func:`Connect() <IPConnection::Connect>`
 .. |connect| replace:: ``Connect()``
-.. |set_monoflop| replace:: ``SetMonoflop(1 << 0, 1 << 0, 1500)``
+.. |set_monoflop| replace:: ``SetMonoflop(selectionMask, 15, 500)``
 .. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
 .. |async_helper| replace:: ``BackgroundWorker``
 
@@ -47,11 +47,11 @@ Schritt 1: Die GUI erstellen
 Nach dem Erstellen eines neuen "Windows Phone App" namens "Garage Control" in
 Visual Studio beginnen wir mit der Erstellung der GUI:
 
-.. image:: /Images/Kits/hardware_hacking_garage_control_windows_phone_gui_350.jpg
+.. image:: /Images/Kits/hardware_hacking_power_outlet_control_windows_phone_gui_350.jpg
    :scale: 100 %
    :alt: App GUI
    :align: center
-   :target: ../../_images/Kits/hardware_hacking_garage_control_windows_phone_gui.jpg
+   :target: ../../_images/Kits/hardware_hacking_power_outlet_control_windows_phone_gui.jpg
 
 An das bereits bestehende "LayoutRoot" Element wird ein "StackPanel" angehängt,
 das dann alle weiteren GUI Elemente aufnehmen wird. Drei "TextBoxes" ermöglichen
@@ -59,9 +59,10 @@ die Eingabe von Host, Port und UID des Industrial Quad Relay Bricklets. Für die
 Port Textbox wird das Attribut ``InputScope="Number"`` gesetzt, dadurch wird
 Windows Phone den Inhalt dieser Textbox auf Zahlen beschränken. Unterhalb der
 Textboxen folgt eine "ProgressBar" die einen laufenden Verbindungsversuch
-anzeigen wird. Die letzten beiden Elemente sind die "Button" für den Aufbau und
-das Trennen der Verbindung sowie das Auslösen eines Tastendrucks auf der
-gehackten Fernbedienung. Hier ein Auszug aus der ``MainPage.xaml`` Datei:
+anzeigen wird. Die letzten fünf Elemente sind ein "Button" für den Aufbau und
+das Trennen der Verbindung sowie vier "Button" in einem horizontalen StackPanel
+für das Drücken der verschiedenen Taster auf der gehackten Fernbedienung.
+Hier ein Auszug aus der ``MainPage.xaml`` Datei:
 
 .. code-block:: xml
 
@@ -76,10 +77,15 @@ gehackten Fernbedienung. Hier ein Auszug aus der ``MainPage.xaml`` Datei:
                 <TextBox x:Name="port" Height="72" TextWrapping="Wrap" Text="4223" VerticalAlignment="Top"
                          InputScope="Number"/>
                 <TextBlock TextWrapping="Wrap" Text="UID (Industrial Quad Relay Bricklet)" VerticalAlignment="Top"/>
-                <TextBox x:Name="uid" Height="72" TextWrapping="Wrap" Text="ctG" VerticalAlignment="Top"/>
+                <TextBox x:Name="uid" Height="72" TextWrapping="Wrap" Text="cuw" VerticalAlignment="Top"/>
                 <ProgressBar x:Name="progress" Height="10" VerticalAlignment="Top"/>
                 <Button x:Name="connect" Content="Connect" VerticalAlignment="Top" Click="Connect_Click"/>
-                <Button x:Name="trigger" Content="Trigger" VerticalAlignment="Top" Height="144" Click="Trigger_Click"/>
+                <StackPanel Orientation="Horizontal" Height="100" HorizontalAlignment="Center">
+                    <Button x:Name="a_on" Content="A On" HorizontalAlignment="Center" Click="Aon_Click"/>
+                    <Button x:Name="a_off" Content="A Off" HorizontalAlignment="Center" Click="Aoff_Click"/>
+                    <Button x:Name="b_on" Content="B On" HorizontalAlignment="Center" Click="Bon_Click"/>
+                    <Button x:Name="b_off" Content="B Off" HorizontalAlignment="Center" Click="Boff_Click"/>
+                </StackPanel>
             </StackPanel>
         </Grid>
     </phone:PhoneApplicationPage>
@@ -178,10 +184,27 @@ Schritt 3: Taster auslösen
 
 |step3_intro|
 
-Dafür wird die ``Trigger_Click()`` Methode an das ``Click``-Event des
-Trigger-Knopfes gebunden. Diese startet einen anderen ``BackgroundWorker`` der
+Gemäße der :ref:`Hardware-Aufbau Beschreibung
+<starter_kit_hardware_hacking_remote_switch_hardware_setup_relay_matrix>`
+ist die Fernbedienung wie folgt mit den Relais verbunden:
+
+====== ======
+Signal Relais
+====== ======
+A      0
+B      1
+ON     2
+OFF    3
+====== ======
+
+Um "A ON" auf der Fernbedienung auszulösen müssen also die Relais 0 und 2 des
+Industrial Quad Relay Bricklets geschlossen werden. Dies wird durch die
+Bitmaske ``(1 << 0) | (1 << 2)`` repräsentiert.
+
+Dafür werden ``<X><Y>_Click()`` Methode an die ``Click``-Events der
+Trigger-Knöpfe gebunden. Diese starten einen anderen ``BackgroundWorker`` der
 dann wiederum die ``SetMonoflop()`` Methode des Industrial Quad Relay Bricklet
-aufruft um einen Taster auf der gehackten Fernbedienung zu drücken:
+aufruft um den entsprechenden Taster auf der gehackten Fernbedienung zu drücken:
 
 .. code-block:: csharp
 
@@ -201,12 +224,29 @@ aufruft um einen Taster auf der gehackten Fernbedienung zu drücken:
 
         private void TriggerWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            relay.SetMonoflop(1 << 0, 1 << 0, 1500);
+            int selectionMask = (int)e.Argument;
+
+            relay.SetMonoflop(selectionMask, 15, 500);
         }
 
-        private void Trigger_Click(object sender, RoutedEventArgs e)
+        private void Aon_Click(object sender, RoutedEventArgs e)
         {
-            triggerWorker.RunWorkerAsync();
+            triggerWorker.RunWorkerAsync((1 << 0) | (1 << 2));
+        }
+
+        private void Aoff_Click(object sender, RoutedEventArgs e)
+        {
+            triggerWorker.RunWorkerAsync((1 << 0) | (1 << 3));
+        }
+
+        private void Bon_Click(object sender, RoutedEventArgs e)
+        {
+            triggerWorker.RunWorkerAsync((1 << 1) | (1 << 2));
+        }
+
+        private void Boff_Click(object sender, RoutedEventArgs e)
+        {
+            triggerWorker.RunWorkerAsync((1 << 1) | (1 << 3));
         }
     }
 
@@ -244,7 +284,7 @@ Schritt 4: Weitere GUI-Logik
 Die ``ConnectWorker_RunWorkerCompleted()`` Methode wird nach
 ``ConnectWorker_DoWork()`` aufgerufen. sie ändert den Text des Knopfes zu
 "Disconnect". Die ``Connect_Click()`` Methode entscheidet nun dynamisch was zu
-tun ist. Falls keine Verbindung besteht wird ``Connect()`` aufgerufen, 
+tun ist. Falls keine Verbindung besteht wird ``Connect()`` aufgerufen,
 andernfalls wird der ``BackgroundWorker`` für das Trennen der Verbindung
 gestartet:
 
@@ -308,7 +348,10 @@ aktivieren oder deaktivieren:
         // [...]
 
         connect.IsEnabled = true;
-        trigger.IsEnabled = true;
+        a_on.IsEnabled = true;
+        a_off.IsEnabled = true;
+        b_on.IsEnabled = true;
+        b_off.IsEnabled = true;
     }
 
 .. code-block:: csharp
@@ -331,7 +374,10 @@ aktivieren oder deaktivieren:
         port.IsEnabled = false;
         uid.IsEnabled = false;
         connect.IsEnabled = false;
-        trigger.IsEnabled = false;
+        a_on.IsEnabled = false;
+        a_off.IsEnabled = false;
+        b_on.IsEnabled = false;
+        b_off.IsEnabled = false;
 
         // [...]
     }
@@ -477,7 +523,10 @@ reagieren. Als erstes wird immer die "ProgressBar`` ausgeblendet:
         {
             connect.Content = "Disconnect";
             connect.IsEnabled = true;
-            trigger.IsEnabled = true;
+            a_on.IsEnabled = true;
+            a_off.IsEnabled = true;
+            b_on.IsEnabled = true;
+            b_off.IsEnabled = true;
         }
 
 Im Fehlerfall wird eine ``MessageBox`` mit einer entsprechenden Meldung
