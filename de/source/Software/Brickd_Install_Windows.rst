@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../Software.html">Software</a> / <a href="Brickd.html">Brick Daemon (brickd)</a> / Brick Daemon Installation auf Windows
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / <a href="Brickd.html">Brick Daemon (brickd)</a> / Brick Daemon Installation auf Windows
 
 .. _brickd_install_windows:
 

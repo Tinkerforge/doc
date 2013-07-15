@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Tutorials.html">Tutorials</a> / Erste Schritte
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#tutorials-und-faq">Tutorials und FAQ</a> / Erste Schritte - Tutorial
 
-.. _tutorial:
+.. _tutorial_first_steps:
 
-Erste Schritte
-==============
+Erste Schritte - Tutorial
+=========================
 
 Das folgende Tutorial demonstriert wie :ref:`Bricks <product_overview_bricks>`
 und :ref:`Bricklets <product_overview_bricklets>` mit der
@@ -215,7 +215,7 @@ Die **Zeile 35-36** sorgt dafür, dass das Programm weiter läuft bis die Enter
 Taste gedrückt wird. Der Motor wird danach abgeschaltet.
 
 
-.. _tutorial_build_stacks:
+.. _tutorial_first_steps_build_stacks:
 
 Stapel bauen
 ------------

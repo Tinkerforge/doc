@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricks">Bricks</a> / Stepper Brick
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricks">Bricks</a> / Stepper Brick
 :shoplink: ../../../shop/bricks/stepper-brick.html
 
 .. include:: Stepper_Brick.substitutions

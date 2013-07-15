@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../Software.html">Software</a> / Brick Viewer (brickv)
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / Brick Viewer (brickv)
 
 .. _brickv:
 

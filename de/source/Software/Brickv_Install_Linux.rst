@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../Software.html">Software</a> / <a href="Brickv.html">Brick Viewer (brickv)</a> / Brick Viewer Installation auf Linux
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / <a href="Brickv.html">Brick Viewer (brickv)</a> / Brick Viewer Installation auf Linux
 
 .. _brickv_install_linux:
 

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="index.html">Startseite</a> / Quelltexte und Bug Tracking
+:breadcrumbs: <a href="index.html">Startseite</a> / <a href="index.html#software">Software</a> / Quelltexte und Bug Tracking
 
 .. _source_code:
 

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricklets">Bricklets</a> / Linear Poti Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Linear Poti Bricklet
 :shoplink: ../../../shop/bricklets/linear-poti-bricklet.html
 
 .. include:: Linear_Poti.substitutions

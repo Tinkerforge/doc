@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../Low_Level_Protocols.html">Low Level Protocols</a> / Modbus
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#specifications">Specifications</a> / Modbus Protocol
 
 .. _llproto_modbus:
 
-Modbus
-======
+Modbus Protocol
+===============
 
 This is the API description for the Modbus RTU protocol of the RS485 Extension.
 

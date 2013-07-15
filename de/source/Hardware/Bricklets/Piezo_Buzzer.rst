@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#bricklets">Bricklets</a> / Piezo Buzzer Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Piezo Buzzer Bricklet
 
 .. include:: Piezo_Buzzer.substitutions
    :start-after: >>>substitutions

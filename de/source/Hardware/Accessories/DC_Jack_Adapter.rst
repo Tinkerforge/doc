@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#zubehor">Zubehör</a> / DC Jack Adapter
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#zubehor">Zubehör</a> / DC Jack Adapter
 :shoplink: ../../../shop/accessories/dc-adapter.html
 
 .. _dc_jack_adapter:

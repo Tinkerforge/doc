@@ -182,6 +182,59 @@ power_supply_descriptions = {
     }
 }
 
+accessories_descriptions = {
+'dc_jack_adapter': {
+    'en': 'Adapter between a 5mm DC jack and 2 Pole Black Connector',
+    'de': 'Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz'
+    }
+}
+
+
+index_table_head = {
+'en':
+""".. csv-table::
+ :header: "Hardware", "API"
+ :delim: |
+ :widths: 15, 40
+
+ **Bricks** |
+{0}
+ |
+ **Bricklets** |
+{1}
+ |
+ **Master Extensions** |
+{2}
+ |
+ **Power Supplies** |
+{3}
+ |
+ **Accessories** |
+{4}
+""",
+'de':
+""".. csv-table::
+ :header: "Hardware", "API"
+ :delim: |
+ :widths: 15, 40
+
+ **Bricks** |
+{0}
+ |
+ **Bricklets** |
+{1}
+ |
+ **Master Extensions** |
+{2}
+ |
+ **Stromversorgungen** |
+{3}
+ |
+ **Zubehör** |
+{4}
+"""
+}
+
 product_overview_table_head = {
 'en':
 """
@@ -342,7 +395,7 @@ source_code_gits_extension_row_cell = {
 }
 
 def fill_dicts():
-    global tools, bindings, bricks, bricklets, extensions, power_supplies
+    global tools, bindings, bricks, bricklets, extensions, power_supplies, accessories
 
              # display,        uri
     tools = [('Brick Daemon', 'brickd'),
@@ -407,6 +460,9 @@ def fill_dicts():
 
                       # display,                  uri,         bindings, description
     power_supplies = [('Step-Down Power Supply', 'step_down',  [],       power_supply_descriptions['step_down'][lang])]
+
+                    # display,          uri,               bindings, description
+    accessories = [('DC Jack Adapter', 'dc_jack_adapter',  [],       accessories_descriptions['dc_jack_adapter'][lang])]
 
 def get_body(url):
     try:
@@ -513,34 +569,16 @@ def make_index_table_ipcon():
 
     return table_head + row_head + ', '.join(cells) + '\n'
 
-def make_index_table(devices, category):
-    table_head = """
-.. container:: indextable
-
- .. csv-table::
-  :widths: 30, 60
-  :delim: |
-
-"""
-    row_head = '  * :ref:`{0} <{1}_' + category + '>` | '
-    row_cell = ':ref:`{0} <{1}_' + category + '_{2}>`'
-    rows = []
-
-    for device in devices:
-        cells = []
-
-        for binding in device[2]:
-            cells.append(row_cell.format(binding[0], device[1], binding[1]))
-
-        row = row_head.format(device[0], device[1]) + ', '.join(cells)
-        rows.append(row)
-
-    return table_head + '\n'.join(rows) + '\n'
-
-def make_product_overview_table(devices, category):
+def make_product_overview_table(devices, category, add_category_to_name=True):
     table_head = product_overview_table_head[lang]
-    row_head = '   ":ref:`{0} <{1}_' + category + '>`", "{2}"'
-    row_cell = '":ref:`{0} <{1}_' + category + '_{2}>`"'
+
+    if add_category_to_name:
+        row_head = '   ":ref:`{0} <{1}_' + category + '>`", "{2}"'
+        row_cell = '":ref:`{0} <{1}_' + category + '_{2}>`"'
+    else:
+        row_head = '   ":ref:`{0} <{1}>`", "{2}"'
+        row_cell = '":ref:`{0} <{1}_{2}>`"'
+
     rows = []
 
     for device in devices:
@@ -551,8 +589,8 @@ def make_product_overview_table(devices, category):
 def make_download_tools_table():
     source_code = download_tools_source_code[lang]
     table_head = download_tools_table_head[lang]
-    row_multi_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - Linux (`amd64 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_amd64.deb>`__, `i386 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_i386.deb>`__, `armhf <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_armhf.deb>`__), `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/zipball/v{3}.{4}.{5}>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
-    row_all_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/zipball/v{3}.{4}.{5}>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
+    row_multi_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - Linux (`amd64 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_amd64.deb>`__, `i386 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_i386.deb>`__, `armhf <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_armhf.deb>`__), `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{3}.{4}.{5}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
+    row_all_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{3}.{4}.{5}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
     rows = []
 
     for tool in tools:
@@ -661,6 +699,34 @@ def make_source_code_gits_table():
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows)) + '\n'
 
+def make_index_table_block(devices, category, add_category_to_name=True):
+    if add_category_to_name:
+        row_head = ' :ref:`{0} <{1}_' + category + '>` | '
+        row_cell = ' :ref:`{0} <{1}_' + category + '_{2}>`'
+    else:
+        row_head = ' :ref:`{0} <{1}>` | '
+        row_cell = ' :ref:`{0} <{1}_{2}>`'
+
+    rows = []
+
+    for device in devices:
+        cells = []
+
+        for binding in device[2]:
+            cells.append(row_cell.format(binding[0], device[1], binding[1]))
+
+        row = row_head.format(device[0], device[1]) + ', '.join(cells)
+        rows.append(row)
+
+    return '\n'.join(rows)
+
+def make_index_table():
+    return index_table_head[lang].format(make_index_table_block(bricks, 'brick'),
+                                         make_index_table_block(bricklets, 'bricklet'),
+                                         make_index_table_block(extensions, 'extension'),
+                                         make_index_table_block(power_supplies, 'power_supply'),
+                                         make_index_table_block(accessories, 'accessory', False))
+
 hlpi_table_head = {
 'en':
 """
@@ -759,20 +825,8 @@ def generate(path):
 
     fill_dicts()
 
-    print('Generating index_ipcon.table')
-    write_if_changed(os.path.join(path, 'source', 'index_ipcon.table'), make_index_table_ipcon())
-
-    print('Generating index_bricks.table')
-    write_if_changed(os.path.join(path, 'source', 'index_bricks.table'), make_index_table(bricks, 'brick'))
-
-    print('Generating index_bricklets.table')
-    write_if_changed(os.path.join(path, 'source', 'index_bricklets.table'), make_index_table(bricklets, 'bricklet'))
-
-    print('Generating index_extensions.table')
-    write_if_changed(os.path.join(path, 'source', 'index_extensions.table'), make_index_table(extensions, 'extension'))
-
-    print('Generating index_power_supplies.table')
-    write_if_changed(os.path.join(path, 'source', 'index_power_supplies.table'), make_index_table(power_supplies, 'power_supply'))
+    print('Generating index_links.table')
+    write_if_changed(os.path.join(path, 'source', 'index_links.table'), make_index_table())
 
     print('Generating Product_Overview_bricks.table')
     write_if_changed(os.path.join(path, 'source', 'Product_Overview_bricks.table'), make_product_overview_table(bricks, 'brick'))
@@ -785,6 +839,9 @@ def generate(path):
 
     print('Generating Product_Overview_power_supplies.table')
     write_if_changed(os.path.join(path, 'source', 'Product_Overview_power_supplies.table'), make_product_overview_table(power_supplies, 'power_supply'))
+
+    print('Generating Product_Overview_accessories.table')
+    write_if_changed(os.path.join(path, 'source', 'Product_Overview_accessories.table'), make_product_overview_table(accessories, 'accessory', False))
 
     print('Generating Downloads_tools.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_tools.table'), make_download_tools_table())

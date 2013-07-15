@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../Software.html">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Python - API Bindings
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Python - API Bindings
 
 .. _api_bindings_python:
 
@@ -73,6 +73,6 @@ All the small examples contained in the ZIP file of the bindings can also be
 found in the API documentation of the :ref:`Bricks <product_overview_bricks>` and
 :ref:`Bricklets <product_overview_bricklets>`.
 
-Further project descriptions can be found in the :ref:`kits <kits>` section.
+Further project descriptions can be found in the :ref:`kits <index_kits>` section.
 
 .. FIXME: add a list with direct links here

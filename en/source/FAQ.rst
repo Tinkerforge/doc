@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / FAQ
+:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#tutorials-and-faq">Tutorials and FAQ</a> / FAQ
 
 .. _faq:
 

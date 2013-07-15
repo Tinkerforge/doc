@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / Source Code and Bug Tracking
+:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#software">Software</a> / Source Code and Bug Tracking
 
 .. _source_code:
 

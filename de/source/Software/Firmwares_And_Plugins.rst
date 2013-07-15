@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / Firmwares und Plugins
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / Firmwares und Plugins
 
 .. _firmwares_and_plugins:
 
