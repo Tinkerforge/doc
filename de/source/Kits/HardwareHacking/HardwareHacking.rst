@@ -27,6 +27,26 @@ Starterkit: Hardware Hacking
 	             "Kits/hardware_hacking_garage_remote_finished_800.jpg",
 	             "Hardware Hacking: Kit Garagentorfernbedienung")
 	}}
+	{{
+	    tfdocimg("Kits/hardware_hacking_smoke_detector_and_remote_new_100.jpg",
+	             "Kits/hardware_hacking_smoke_detector_and_remote_new_800.jpg",
+	             "Hardware Hacking: Kit mit Funksteckdosenfernbedienung und Rauchmelder")
+	}}
+	{{
+	    tfdocimg("Kits/hardware_hacking_content_100.jpg",
+	             "Kits/hardware_hacking_content_800.jpg",
+	             "Hardware Hacking: Inhalte")
+	}}
+	{{
+	    tfdocimg("Kits/hardware_hacking_remote_soldered_closeup_remote_100.jpg",
+	             "Kits/hardware_hacking_remote_soldered_closeup_remote_800.jpg",
+	             "Hardware Hacking: Gehackte Fernbedienung")
+	}}
+	{{
+	    tfdocimg("Kits/hardware_hacking_remote_soldered_closeup_iqr_top_100.jpg",
+	             "Kits/hardware_hacking_remote_soldered_closeup_iqr_top_800.jpg",
+	             "Hardware Hacking: Quad Relay Verdrahtung")
+	}}
 	{{ tfdocend() }}
 
 
