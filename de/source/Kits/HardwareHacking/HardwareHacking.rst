@@ -119,6 +119,13 @@ stattfinden. Beispielimplementierungen für alle Programmiersprachen
 und Demo-Anwendungen erleichtern den Einstieg in die Programmierung mit
 Tinkerforge.
 
+Ein Howto-Video das zeigt wie man eine Funkfernbedienung hackt sowie
+Anwendungen des Kits gibt es auf Youtube:
+
+.. raw:: html
+
+ <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/hHnhflS3260" frameborder="0" allowfullscreen></iframe>
+
 Technische Spezifikation
 ------------------------
 

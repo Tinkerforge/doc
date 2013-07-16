@@ -27,7 +27,7 @@ Das Innenleben der Fernbedienung
 --------------------------------
 
 Im Gehäuse der Fernbedienung befindet sich höchst wahrscheinlich 
-eine Leiterplatte wie diese:
+eine Leiterplatte wie diese (Howto Video `1:31 <http://www.youtube.com/watch?v=hHnhflS3260&t=91>`__):
 
 .. image:: /Images/Kits/hardware_hacking_remote_open_350.jpg
    :scale: 100 %
@@ -50,8 +50,8 @@ Drähte am IC anlöten
 --------------------
 
 Als nächstes müssen wir Drähte an den HX2262 anlöten um diese von außen 
-steuern zu können. Wir werden fünf Drähte an den HX2262 anlöten:
-(:ref:`Kleines Löttutorial <starter_kit_hardware_hacking_for_beginners_soldering>`)
+steuern zu können. Wir werden fünf Drähte an den HX2262 anlöten
+(:ref:`Kleines Löttutorial <starter_kit_hardware_hacking_for_beginners_soldering>`, Howto Video `1:56 <http://www.youtube.com/watch?v=hHnhflS3260&t=116>`__):
 
 ========== ====== ===========
 Pin Nummer Signal Draht Farbe
@@ -91,7 +91,7 @@ Drähte am Industrial Quad Relay Bricklet anschließen
 Als nächstes werden wir diese Drähte an das Industrial Quad Relay Bricklet
 anschließen. Jeder Eingang des HX2262 ist an ein Relais angeschlossen.
 Im ersten Schritt wird jeder Draht (außer schwarz) an einen der zwei
-Anschlüsse jedes Relais angeschlossen.
+Anschlüsse jedes Relais angeschlossen (Howto Video `4:30 <http://www.youtube.com/watch?v=hHnhflS3260&t=270>`__).
 
 ====== =========== ======
 Signal Draht Farbe Relais
@@ -105,7 +105,7 @@ OFF    lila        3
 Nun ist jedes Relais mit einem Draht verbunden, aber es fehlt der zweite Draht.
 Da wir gegen GND schalten wollen (mit GND kurzschließen) muss dieser zweite
 Draht GND sein. Dazu verbinden wir den schwarzen Draht mit einem Relais und 
-Brücken ihn weiter mit kurzen schwarzen Drahtstücken zu den anderen.
+Brücken ihn weiter mit kurzen schwarzen Drahtstücken zu den anderen (Howto Video `5:02 <http://www.youtube.com/watch?v=hHnhflS3260&t=302>`__).
 Das nächste Bild zeigt das fertige Werk.
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_closeup_iqr_top_350.jpg

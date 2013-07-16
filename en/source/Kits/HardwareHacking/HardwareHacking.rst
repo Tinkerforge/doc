@@ -116,6 +116,13 @@ Programming can be done with all of the available bindings (|bindings|).
 Example implementations for each of the languages are available. This Kit
 will also give you a good starting point into the programming with Tinkerforge.
 
+A howto video that shows how to hack the mains switches and some applications
+can be found on Youtube:
+
+.. raw:: html
+
+ <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/hHnhflS3260" frameborder="0" allowfullscreen></iframe>
+
 Technical Specifications
 ------------------------
 

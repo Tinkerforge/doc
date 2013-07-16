@@ -265,4 +265,11 @@ Soldering a wire to a pad can be done in five basic steps:
 To make it easier, you can also apply some solder to the
 stripped part of the wire.
 
-You can also find many soldering howto videos on `Youtube <http://www.youtube.com>`__.
+You can find many soldering howto videos on `Youtube <http://www.youtube.com>`__.
+
+In our "Starter Kit: Hardware Hacking" Howto video you can also see the process
+of soldering the wires to the pads (soldering starts at 2:00):
+
+.. raw:: html
+
+ <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/hHnhflS3260?start=120" frameborder="0" allowfullscreen></iframe>
