@@ -185,9 +185,9 @@ Brick Viewer.
 **Master Brick 2.0 in stack with Master Extension**:
 
 Master Brick hardware version 2.0 has a change in its PCB layout that interferes
-with bootloader mode if a Master Extension such as WIFI or RS485 is present in
-the stack. In this case the Master Extension needs to be disconnected from the
-stack to make the bootloader mode work correctly.
+with bootloader mode if a Master Extension such as RS485, WIFI or Ethernet is
+present in the stack. In this case the Master Extension needs to be disconnected
+from the stack to make the bootloader mode work correctly.
 
 **/dev/ttyACM0 is not user-accessible (on Linux)**:
 

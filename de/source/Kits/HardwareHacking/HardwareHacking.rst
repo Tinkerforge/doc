@@ -78,8 +78,8 @@ Features
 Beschreibung
 ------------
 
-Das *Starterkit: Hardware Hacking* ermöglicht es Elektrogeräte mit niedriger
-Spannung zu hacken und so mit Tinkerforge Modulen zu verbinden. Jeder
+Das *Starterkit: Hardware Hacking* ermöglicht es Kleinstspannungs-Elektrogeräte 
+zu hacken und so mit Tinkerforge Modulen zu verbinden. Jeder
 (Embedded-)PC und jedes Smartphone/Tablet kann genutzt werden um mit den
 gehackten Geräten zu interagieren. Interaktion ist über USB sowie über
 WLAN mit Hilfe der :ref:`WIFI Extension <wifi_extension>` möglich. Auch
