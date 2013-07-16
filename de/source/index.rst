@@ -61,8 +61,7 @@ Kits
 Für einen einfachen Einstieg bieten wir Kits in verschiedenen Themenbereichen an:
 
 * :ref:`starter_kit_weather_station`
-
-.. * :ref:`starter_kit_hardware_hacking`
+* :ref:`starter_kit_hardware_hacking`
 
 .. toctree::
    :hidden:

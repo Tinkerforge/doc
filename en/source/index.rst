@@ -63,8 +63,7 @@ We offer kits for different subject areas so you can get started more easily
 with Tinkerforge:
 
 * :ref:`starter_kit_weather_station`
-
-.. * :ref:`starter_kit_hardware_hacking`
+* :ref:`starter_kit_hardware_hacking`
 
 .. toctree::
    :hidden:
