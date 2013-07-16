@@ -29,7 +29,7 @@ Garagentor mit Windows Phone fernsteuern
 Das vollständige Visual Studio Projekt kann `hier
 <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__
 heruntergeladen werden. Eine Demo-App basierend auf diesem Projekt steht im
-`Windows Phone Store <http://www.windowsphone.com/en-us/store/app/garage-control/07028a03-fa41-4f24-8a99-f4b7ee48c5a9>`__
+`Windows Phone Store <http://www.windowsphone.com/s?appid=4c9a8f61-d9ed-4fd2-b4e6-a332b617c596>`__
 zur Verfügung.
 
 
