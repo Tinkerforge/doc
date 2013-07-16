@@ -410,6 +410,7 @@ def fill_dicts():
                 ('Java',   'java',   True),
                 ('PHP',    'php',    True),
                 ('Python', 'python', True),
+             #   ('Shell',  'shell',  True),
                 ('Ruby',   'ruby',   True),
                 ('VB.NET', 'vbnet',  True)]
 
@@ -471,14 +472,17 @@ def get_body(url):
         response.close()
         tree = etreefromstring(data)
         return tree.find('body')
-    except:
-        traceback.print_exc()
+    except Exception as e:
+        print 'Could not download {0}: {1}'.format(url, e)
         return None
 
 def get_tool_versions(url, regex):
     print 'Discovering ' + url
     body = get_body(url)
     versions = []
+
+    if body is None:
+        return versions
 
     for a in body.getiterator('a'):
         if 'href' not in a.attrib:
@@ -503,6 +507,9 @@ def get_bindings_versions(url, name):
     body = get_body(url)
     versions = []
 
+    if body is None:
+        return versions
+
     for a in body.getiterator('a'):
         if 'href' not in a.attrib:
             continue
@@ -525,6 +532,9 @@ def get_firmware_versions(url, prefix):
     print 'Discovering ' + url
     body = get_body(url)
     versions = []
+
+    if body is None:
+        return versions
 
     if body != None:
         for a in body.getiterator('a'):
