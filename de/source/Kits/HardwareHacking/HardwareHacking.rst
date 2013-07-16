@@ -150,7 +150,7 @@ Ressourcen
 * Beispielquelltexte für :ref:`Rauchmelder auslesen <starter_kit_hardware_hacking_smoke_detector>` (Download: |smoke_detector_examples_download|)
 * Beispielquelltexte für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__, iOS* (ObjC))
 * Beispielquelltext für :ref:`Benachrichtigung durch Türklingel <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
-* Demo-Anwendung :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows, Linux, Mac OS X <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
+* Demo-Anwendung :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows (.NET), Linux (mono), Mac OS X (mono) <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
 * Demo-Apps :ref:`Funksteckdosen mit Smartphone fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: Android, Windows Phone, iOS*) TODO
 * Demo-Apps :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: Android, Windows Phone, iOS*) TODO
 
