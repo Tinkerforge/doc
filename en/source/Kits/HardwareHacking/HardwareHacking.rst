@@ -13,9 +13,14 @@ Starter Kit: Hardware Hacking
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Kits/hardware_hacking_remote_finished_350.jpg",
-	               "Kits/hardware_hacking_remote_finished_800.jpg",
-	               "Hardware Hacking: Kit with Remote Switches")
+	    tfdocstart("Kits/hardware_hacking_kit_tilted_350.jpg",
+	               "Kits/hardware_hacking_kit_tilted_800.jpg",
+	               "Hardware Hacking: Soldered Kit with Mains Sockets")
+	}}
+	{{
+	    tfdocimg("Kits/hardware_hacking_remote_finished_100.jpg",
+	             "Kits/hardware_hacking_remote_finished_800.jpg",
+	             "Hardware Hacking: Kit with Remote Switches")
 	}}
 	{{
 	    tfdocimg("Kits/hardware_hacking_smoke_detector_finished_100.jpg",

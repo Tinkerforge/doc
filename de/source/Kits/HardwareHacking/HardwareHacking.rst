@@ -13,9 +13,14 @@ Starterkit: Hardware Hacking
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Kits/hardware_hacking_remote_finished_350.jpg",
-	               "Kits/hardware_hacking_remote_finished_800.jpg",
-	               "Hardware Hacking: Kit mit Funksteckdosenfernbedienung")
+	    tfdocstart("Kits/hardware_hacking_kit_tilted_350.jpg",
+	               "Kits/hardware_hacking_kit_tilted_800.jpg",
+	               "Hardware Hacking: Gelötetes Kit mit Steckdosen")
+	}}
+	{{
+	    tfdocimg("Kits/hardware_hacking_remote_finished_100.jpg",
+	             "Kits/hardware_hacking_remote_finished_800.jpg",
+	             "Hardware Hacking: Kit mit Funksteckdosenfernbedienung")
 	}}
 	{{
 	    tfdocimg("Kits/hardware_hacking_smoke_detector_finished_100.jpg",
