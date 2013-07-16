@@ -58,9 +58,9 @@ Starterkit: Hardware Hacking
 Features
 --------
 
-* Elektrogeräte mit geringer Spannung hacken 
+* Kleinstspannungs-Elektrogeräte hacken und über
 
-  * PC, Smartphone/Tablet oder über das Internet (Internet der Dinge).
+  * PC, Smartphone/Tablet oder über das Internet (Internet der Dinge) steuern.
   * Demo-Apps für Android, Windows Phone und iOS* sind verfügbar.
 
 * Direkt mit dem Hacken beginnen: Zwei Funksteckdosen im Kit enthalten
@@ -72,7 +72,7 @@ Features
 * Interaktion über USB, WLAN und Ethernet möglich.
 
 
-\*: Demo für iOS folgt bald.
+\* Demo für iOS folgt bald.
 
 
 Beschreibung
