@@ -11,6 +11,13 @@ html:
 	@echo "=== Generate 'de' documentation ================="
 	@cd de; $(MAKE) $(MFLAGS) html; cd ..
 
+fasthtml:
+	@echo "=== Generate 'en' documentation ================="
+	@cd en; $(MAKE) $(MFLAGS) fasthtml; cd ..
+	@echo "=== Generate 'de' documentation ================="
+	@cd de; $(MAKE) $(MFLAGS) fasthtml; cd ..
+
+
 clean:
 	@echo "=== Clean 'en' documentation ================="
 	@cd en; $(MAKE) $(MFLAGS) clean; cd ..

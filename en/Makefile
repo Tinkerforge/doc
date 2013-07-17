@@ -6,11 +6,13 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build-in-progress
+FASTBUILDDIR  = build
 
 # Internal variables.
-PAPEROPT_a4     = -D latex_paper_size=a4
-PAPEROPT_letter = -D latex_paper_size=letter
-ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
+PAPEROPT_a4         = -D latex_paper_size=a4
+PAPEROPT_letter     = -D latex_paper_size=letter
+ALLSPHINXOPTS       = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
+FASTALLSPHINXOPTS   = -d $(FASTBUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
 .PHONY: help clean html dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest
 
@@ -37,8 +39,22 @@ generate:
 	python ../generate_hardware_hacking_substitutions.py
 
 html: generate
-	mkdir -p $(BUILDDIR)/html/_images
-	cp -r source/Images/* $(BUILDDIR)/html/_images/
+	mkdir -p $(BUILDDIR)/html/_images/
+	if [ ! -d $(BUILDDIR)/html/_images/Accessories ]; then ln -s `pwd`/source/Images/Accessories $(BUILDDIR)/html/_images/Accessories; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Bricklets ]; then ln -s `pwd`/source/Images/Bricklets $(BUILDDIR)/html/_images/Bricklets; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Bricks ]; then ln -s `pwd`/source/Images/Bricks $(BUILDDIR)/html/_images/Bricks; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Cases ]; then ln -s `pwd`/source/Images/Cases $(BUILDDIR)/html/_images/Cases; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Dimensions ]; then ln -s `pwd`/source/Images/Dimensions $(BUILDDIR)/html/_images/Dimensions; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Exploded ]; then ln -s `pwd`/source/Images/Exploded $(BUILDDIR)/html/_images/Exploded; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Extensions ]; then ln -s `pwd`/source/Images/Extensions $(BUILDDIR)/html/_images/Extensions; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/FAQ ]; then ln -s `pwd`/source/Images/FAQ $(BUILDDIR)/html/_images/FAQ; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Kits ]; then ln -s `pwd`/source/Images/Kits $(BUILDDIR)/html/_images/Kits; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Misc ]; then ln -s `pwd`/source/Images/Misc $(BUILDDIR)/html/_images/Misc; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Mounting_Kit ]; then ln -s `pwd`/source/Images/Mounting_Kit $(BUILDDIR)/html/_images/Mounting_Kit; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Power_Supplies ]; then ln -s `pwd`/source/Images/Power_Supplies $(BUILDDIR)/html/_images/Power_Supplies; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Screenshots ]; then ln -s `pwd`/source/Images/Screenshots $(BUILDDIR)/html/_images/Screenshots; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Software ]; then ln -s `pwd`/source/Images/Software $(BUILDDIR)/html/_images/Software; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Tutorial ]; then ln -s `pwd`/source/Images/Tutorial $(BUILDDIR)/html/_images/Tutorial; fi;
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
@@ -49,14 +65,28 @@ html: generate
 	cp -r $(BUILDDIR)/* build/
 
 fasthtml:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	mkdir -p $(FASTBUILDDIR)/html/_images/
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Accessories ]; then ln -s `pwd`/source/Images/Accessories $(FASTBUILDDIR)/html/_images/Accessories; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Bricklets ]; then ln -s `pwd`/source/Images/Bricklets $(FASTBUILDDIR)/html/_images/Bricklets; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Bricks ]; then ln -s `pwd`/source/Images/Bricks $(FASTBUILDDIR)/html/_images/Bricks; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Cases ]; then ln -s `pwd`/source/Images/Cases $(FASTBUILDDIR)/html/_images/Cases; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Dimensions ]; then ln -s `pwd`/source/Images/Dimensions $(FASTBUILDDIR)/html/_images/Dimensions; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Exploded ]; then ln -s `pwd`/source/Images/Exploded $(FASTBUILDDIR)/html/_images/Exploded; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Extensions ]; then ln -s `pwd`/source/Images/Extensions $(FASTBUILDDIR)/html/_images/Extensions; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/FAQ ]; then ln -s `pwd`/source/Images/FAQ $(FASTBUILDDIR)/html/_images/FAQ; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Kits ]; then ln -s `pwd`/source/Images/Kits $(FASTBUILDDIR)/html/_images/Kits; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Misc ]; then ln -s `pwd`/source/Images/Misc $(FASTBUILDDIR)/html/_images/Misc; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Mounting_Kit ]; then ln -s `pwd`/source/Images/Mounting_Kit $(FASTBUILDDIR)/html/_images/Mounting_Kit; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Power_Supplies ]; then ln -s `pwd`/source/Images/Power_Supplies $(FASTBUILDDIR)/html/_images/Power_Supplies; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Screenshots ]; then ln -s `pwd`/source/Images/Screenshots $(FASTBUILDDIR)/html/_images/Screenshots; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Software ]; then ln -s `pwd`/source/Images/Software $(FASTBUILDDIR)/html/_images/Software; fi;
+	if [ ! -d $(FASTBUILDDIR)/html/_images/Tutorial ]; then ln -s `pwd`/source/Images/Tutorial $(FASTBUILDDIR)/html/_images/Tutorial; fi;
+	$(SPHINXBUILD) -b html $(FASTALLSPHINXOPTS) $(FASTBUILDDIR)/html
 	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	@echo "Build finished. The HTML pages are in $(FASTBUILDDIR)/html."
 	@echo
-	sed -e "s|'doc'|'downloads'|" $(BUILDDIR)/html/Downloads.html > $(BUILDDIR)/html/Downloads.htmltmp
-	mv $(BUILDDIR)/html/Downloads.htmltmp $(BUILDDIR)/html/Downloads.html
-	mkdir -p build/
-	cp -r $(BUILDDIR)/* build/
+	sed -e "s|'doc'|'downloads'|" $(FASTBUILDDIR)/html/Downloads.html > $(FASTBUILDDIR)/html/Downloads.htmltmp
+	mv $(FASTBUILDDIR)/html/Downloads.htmltmp $(FASTBUILDDIR)/html/Downloads.html
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
