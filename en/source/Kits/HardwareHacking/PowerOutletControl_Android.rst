@@ -56,7 +56,7 @@ The basis is a "Linear Layout (Vertical)". Three text fields allow to enter
 the host, port and UID of the Industrial Quad Relay Bricklet. For the port a
 "Number" text field is used, so Android will restrict the content of this
 text field to numbers. The final five elements are one "Button" to connect and
-disconnect and four buttons in a "Linear Layout (Horizonal)" to trigger the
+disconnect and four buttons in a "Linear Layout (Horizontal)" to trigger the
 different switches on the remote control.
 
 Now the GUI layout is finished. To access the GUI components in the Java code

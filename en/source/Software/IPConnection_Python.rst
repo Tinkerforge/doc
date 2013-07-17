@@ -206,11 +206,11 @@ described below.
    reconstruct the complete network topology.
  * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
    'a' - 'd' (position on Brick).
- * *hardwareVersion*: Major, minor and release number for hardware version.
- * *firmwareVersion*: Major, minor and release number for firmware version.
- * *deviceIdentifier*: A number that represents the device, instead of the name
+ * *hardware_version*: Major, minor and release number for hardware version.
+ * *firmware_version*: Major, minor and release number for firmware version.
+ * *device_identifier*: A number that represents the device, instead of the name
    of the device (easier to parse).
- * *enumerationType*: Type of enumeration.
+ * *enumeration_type*: Type of enumeration.
 
  Possible enumeration types are:
 
