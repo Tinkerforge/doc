@@ -43,4 +43,5 @@ We will update the timeline as soon as we have better estimates or a firm date.
    "",     "16", "Starter Kit: Weather Station",                                         "`done <http://www.tinkerforge.com/en/blog/2013/4/19/starter-kit:-weather-station>`__"
    "",     "23", "Ethernet Extension with PoE",                                          "`done <http://www.tinkerforge.com/en/blog/2013/6/6/ethernet-extension-available>`__"
    "",     "27", "Industrial Dual 0-20mA and PTC Bricklet",                              "`done <http://www.tinkerforge.com/en/blog/2013/7/4/industrial-dual-0-20ma-and-ptc-bricklet>`__"
+   "",     "29", "Starter Kit: Hardware Hacking",                                        "`done <http://www.tinkerforge.com/en/blog/2013/7/16/starter-kit:-hardware-hacking>`__"
    "",     "?",  "Sonic Range Bricklet"

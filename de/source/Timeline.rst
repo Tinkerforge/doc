@@ -46,4 +46,5 @@ Termine haben.
    "",     "16", "Starterkit: Wetterstation",                                           "`fertig <http://www.tinkerforge.com/de/blog/2013/4/19/starterkit:-wetterstation>`__"
    "",     "23", "Ethernet Extension mit PoE",                                          "`fertig <http://www.tinkerforge.com/de/blog/2013/6/6/ethernet-extension-verfuegbar>`__"
    "",     "27", "Industrial Dual 0-20mA und PTC Bricklet",                             "`fertig <http://www.tinkerforge.com/de/blog/2013/7/4/industrial-dual-0-20ma-und-ptc-bricklet>`__"
+   "",     "29", "Starterkit: Hardware Hacking",                                        "`fertig <http://www.tinkerforge.com/de/blog/2013/7/16/starter-kit:-hardware-hacking>`__"
    "",     "?",  "Sonic Range Bricklet"
