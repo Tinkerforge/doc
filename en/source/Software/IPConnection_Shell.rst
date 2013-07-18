@@ -23,7 +23,7 @@ Example
 
 The example code below is public domain.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.py>`__
+`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.sh>`__
 
 .. literalinclude:: example.sh
  :language: bash
