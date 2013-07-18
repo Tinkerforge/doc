@@ -73,6 +73,9 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 GPS Modul Chipsatz                MTK MT3339 (PA6H Modul)
+Stromverbrauch                    25mA (Acquisition), 20mA (Tracking)*
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Empfindlichkeit                   -148dBm (Acquisition), -165dBm (Tracking)*
 Positionsgenauigkeit              3,0m (50% CEP)*
 Zeit bis erster Fix               < 35s (ohne Batterie), < 1s (mit Batterie)*

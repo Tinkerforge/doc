@@ -73,6 +73,9 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 GPS Module Chipset                MTK MT3339 (PA6H module)
+Current Consumption               25mA (acquisition), 20mA (tracking)*
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Sensitivity                       -148dBm (acquisition), -165dBm (tracking)*
 Position Accuracy                 3.0m (50% CEP)*
 Time to first Fix                 < 35s (without battery), < 1s (with battery)*
