@@ -154,6 +154,42 @@ you just need to add the required source files to the ``SOURCES`` and
   unix:QMAKE_CXXFLAGS += -pthread
 
 
+Orwell Dev-C++
+^^^^^^^^^^^^^^
+
+With Dev-C++ we can use the ``project_folder/`` too.
+
+A new Dev-C++ project for the ``project_folder/`` can be created by clicking:
+
+* File
+* New
+* Project...
+* Choose Console Application and C Project
+* Click Ok
+
+Dev-C++ will now create a new files named ``main.c``. We don't need it, remove
+it by clicking on "Remove file" in its context menu in the project view. Now add
+all files from the ``project_folder/`` to the project by clicking on
+"Add to Project" in the project's context menu.
+
+Then ``libws2_32.a`` (WinSock2) has to included by clicking:
+
+* Project
+* Project Options
+* Parameters
+* Click Add Library or Object
+* Choose libws2_32.a
+* Click Open
+* Click Ok
+
+Now the program can be compiled and started!
+
+This is an example for a project in C. If you want to use the bindings in a C++
+project then the simplest way to do this is to rename the required source files
+from ``*.c`` to ``*.cpp``. Then the compiler will treat the source code as C++
+and does the right thing automatically.
+
+
 More Examples and Projects
 --------------------------
 

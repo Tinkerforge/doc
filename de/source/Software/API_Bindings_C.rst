@@ -105,8 +105,8 @@ Qt Creator
 
 Mit Qt Creator kann der ``project_folder/`` auch verwendet werden.
 
-Jetzt kann ein neues Projekt für den ``project_folder/`` in Qt Creator erzeugt
-werden:
+Ein neues Projekt für den ``project_folder/`` in Qt Creator kann wie folgt
+erzeugt werden:
 
 * File
 * New File or Project...
@@ -154,6 +154,44 @@ eingefügt werden::
 
   win32:LIBS += -lws2_32
   unix:QMAKE_CXXFLAGS += -pthread
+
+
+Orwell Dev-C++
+^^^^^^^^^^^^^^
+
+Mit Dev-C++ kann der ``project_folder/`` auch verwendet werden.
+
+Ein neues Projekt für den ``project_folder/`` in Dev-C++ kann wie folgt erzeugt
+werden:
+
+* Datei
+* Neu
+* Projekt...
+* Wähle Console Application und C Projekt
+* Klicke Ok
+
+Dev-C++ erzeugt eine neue Datei namens ``main.c``. Diese benötigen wir nicht
+und siw kann durch einen Klick auf "Datei entfernen" in deren Kontextmenu in
+der Projektansicht entfernt werden. Als nächstes alle Dateien aus dem
+``project_folder/`` zum Projekt hinzufügen über den "Zum Projekt hinzufügen"
+Eintrag im Kontextmenus des Projekts.
+
+Dann noch ``libws2_32.a`` (WinSock2) zum Projekt hinzufügen:
+
+* Projekt
+* Projekt Optionen
+* Parameter
+* Klicke Bibliothek/Objekt hinzufügen
+* Wähle libws2_32.a
+* Klicke Open
+* Klicke Ok
+
+Jetzt kann das Programm kompiliert und gestartet werden!
+
+Dies ist ein Beispiel ein Projekt in C. Der einfachste Weg die Bindings in
+einem C++ Projekt zu verwenden, ist es alle benötigten Dateien von ``*.c`` nach
+``*.cpp`` umzubenennen. Dann behandelt der Compiler den Quelltext als C++ und
+tut automatisch das Richtige.
 
 
 Weitere Beispiele und Projekte
