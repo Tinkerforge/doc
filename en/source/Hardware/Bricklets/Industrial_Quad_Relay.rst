@@ -83,7 +83,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Solid State Relay                 CPC1020N
-Current Consumption               1mA
+Current Consumption               2mA (per Relay)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Output Type                       Four galvanically isolated solid state relays

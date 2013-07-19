@@ -83,7 +83,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Solid State Relais                CPC1020N
-Stromverbrauch                    1mA
+Stromverbrauch                    2mA (pro Relais)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Ausgangstyp                       Vier galvanisch getrennte Solid State Relais
