@@ -86,9 +86,12 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Current Consumption               1mA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Input Type                        Four optocoupled inputs (including 4.7k Ohm series resistor)
 Input Current                     Depending on input voltage, ca. 1mA/5V, ca. 5mA/24V
-Max. Input Voltage                36V
+Maximum Input Voltage             36V
 Low Level Voltage                 0-2V
 High Level Voltage                3-36V
 Isolation                         5000Vrms (optocoupler value)

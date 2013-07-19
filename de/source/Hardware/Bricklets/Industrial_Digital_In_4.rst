@@ -83,9 +83,12 @@ Technische Spezifikation
 ================================  =================================================================
 Eigenschaft                       Wert
 ================================  =================================================================
+Stromverbrauch                    1mA
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
 Eingangstyp                       Vier opto-gekoppelte Eingänge (4.7k Ohm Vorwiderstand enthalten)
 Eingangsstrom                     Abhängig von der Eingangsspannung: ca. 1mA/5V, ca. 5mA/24V
-Max. Eingangsspannung             36V
+Maximale Eingangsspannung         36V
 Low Level Spannung                0-2V
 High Level Spannung               3-36V
 Isolation                         5000Vrms (Optokoppler Datenblattangabe)

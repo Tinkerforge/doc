@@ -75,6 +75,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            Automatisch geschalteter Spannungsteiler
+Stromverbrauch                    1mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Elektrische Spannung              0V - 45V in 1mV Schritten, 12Bit Auflösung

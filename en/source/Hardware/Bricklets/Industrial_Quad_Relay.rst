@@ -82,11 +82,14 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Solid State Relay                 CPC1020N
+Current Consumption               1mA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Output Type                       Four galvanically isolated solid state relays
-Max. Switching Current            1.2A
-Max. Switching Voltage            30V
+Maximum Switching Current         1.2A
+Maximum Switching Voltage         30V
 Isolation                         1500Vrms (datasheet value)
-Relay Type                        CPC1020N
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
