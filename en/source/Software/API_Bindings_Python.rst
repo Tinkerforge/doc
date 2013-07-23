@@ -10,7 +10,7 @@ Python - API Bindings
 
 The Python bindings (:ref:`download <downloads_bindings_examples>`) consist of
 a Python egg with the bindings for all
-Tinkerforge Bricks and Bricklets (``tinkerforge.egg``, the source of the
+Tinkerforge Bricks and Bricklets (``tinkerforge.egg``), the source of the
 egg (in ``source/``) and all available Python examples (in ``examples/``).
 
 You can install the egg with easy_install::
