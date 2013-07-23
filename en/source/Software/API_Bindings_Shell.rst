@@ -27,8 +27,8 @@ on Linux and Mac OS X as they are. There are Bash ports for Windows that allow
 to run the examples unmodified, too.
 
 If the examples should be used from the Windows Command Prompt ``cmd.exe`` then
-the shebang line ``#!/bin/sh`` has to be removed and all lines starting with
-``tinkerforge`` have to be prefixed with ``python ``. So this::
+the shebang line ``#!/bin/sh`` has to be removed and all lines starting
+with ``tinkerforge`` have to be prefixed with ``python``. So this::
 
  #!/bin/sh
  tinkerforge enumerate

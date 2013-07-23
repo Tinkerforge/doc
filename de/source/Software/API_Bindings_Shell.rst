@@ -10,7 +10,7 @@ Shell - API Bindings
 
 Die Shell Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen
 aus einem Python Script zur Interaktion mit alle
-Tinkerforge Bricks und Bricklets (``tinkerforge``), ein passendes Bash
+Tinkerforge Bricks und Bricklets (``tinkerforge``), einem passendes Bash
 Completion Script (``tinkerforge-bash-completion.sh``) und allen verfügbaren
 Shell Beispielen (in ``examples/``).
 
@@ -28,8 +28,8 @@ Bash für Windows, die es ermöglichen die Beispiele unverändert auszuführen.
 
 Wenn die Beispiele von der Windows Eingabeaufforderung ``cmd.exe`` verwendet
 werden sollen, dann muss die Shebang Zeile ``#!/bin/sh`` entfernt werden und
-allen Zeilen die mit ``tinkerforge`` beginnen muss ein ``python ``
-vorangestellt werden. So dass aus diesem::
+allen Zeilen die mit ``tinkerforge`` beginnen muss ein ``python``
+vorangestellt werden. So dass aus::
 
  #!/bin/sh
  tinkerforge enumerate
