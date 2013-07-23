@@ -70,14 +70,14 @@ Kommandozeilenparameter
 
 Allgemein:
 
-* **--help**: Hilfe anzeigen
-* **--version**: Versionsnummer anzeigen
-* **--check-config**: Konfigurationsdatei auf Fehler überprüfen
-* **--debug**: Alle Log Level auf Debug setzen
+* ``--help`` zeigt Hilfetext an
+* ``--versio`` zeigt Versionsnummer an
+* ``--check-config`` prüft Konfigurationsdatei auf Fehler
+* ``--debug`` setzt alle Log Level auf Debug
 
 Spezifisch für Windows:
 
-* **--install**: Als Service registrieren und starten
-* **--uninstall**: Service stoppen und deregistrieren
-* **--console**: Start als Konsolenanwendung erzwingen
-* **--log-to-file**: Log Nachrichten in Datei schreiben
+* ``--install`` registriert und starten Brick Daemon als Service
+* ``--uninstall`` stoppt und deregistriert  Brick Daemon als Service
+* ``--console`` erzwingt den Start als Konsolenanwendung
+* ``--log-to-file`` schreibt alle Log Nachrichten in Datei
