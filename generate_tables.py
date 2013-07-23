@@ -74,6 +74,14 @@ bricklet_descriptions = {
     'en': 'Measures distances up to 150cm with IR light',
     'de': 'Misst Entfernungen bis zu 150cm mit IR Licht'
     },
+'distance_us': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'dual_button': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'dual_relay': {
     'en': 'Two relays to switch AC/DC devices',
     'de': 'Zwei Relais um AC/DC Geräte zu schalten'
@@ -122,9 +130,25 @@ bricklet_descriptions = {
     'en': '20x4 character alphanumeric display with blue backlight',
     'de': '20x4 Zeichen alphanumerisches Display'
     },
+'led_strip': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'linear_poti': {
     'en': '59mm linear potentiometer',
     'de': '59mm Linear-Potentiometer'
+    },
+'moisture': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'motion_detector': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'multi_touch': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 'piezo_buzzer': {
     'en': 'Creates 1kHz beep',
@@ -134,9 +158,25 @@ bricklet_descriptions = {
     'en': 'Reads temperatures from Pt100/1000 sensors',
     'de': 'Liest Temperaturen von Pt100/1000-Sensoren'
     },
+'remote_switch': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'rotary_encoder': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'rotary_poti': {
     'en': '300° rotary potentiometer',
     'de': '300° Dreh-Potentiometer'
+    },
+'segment_display_4x7': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'sound_intensity': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 'temperature': {
     'en': 'Measures ambient temperature with 0.5°C accuracy',
@@ -146,6 +186,10 @@ bricklet_descriptions = {
     'en': 'Measures contactless object temperature from -70°C to 380°C',
     'de': 'Kontaktlose Objekttemperaturmessung von -70°C bis 380°C'
     },
+'tilt': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'voltage': {
     'en': 'Measures voltages up to 50V',
     'de': 'Misst Spannungen bis zu 50V'
@@ -153,6 +197,10 @@ bricklet_descriptions = {
 'voltage_current': {
     'en': 'Measure power, voltage and current up to 720W/36V/20A',
     'de': 'Misst Leistung, Spannung und Strom bis zu 720W/36V/20A'
+    },
+'water': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 }
 
@@ -431,6 +479,8 @@ def fill_dicts():
                  ('Current12',                  'current12',                  bindings, bricklet_descriptions['current12'][lang]),
                  ('Current25',                  'current25',                  bindings, bricklet_descriptions['current25'][lang]),
                  ('Distance IR',                'distance_ir',                bindings, bricklet_descriptions['distance_ir'][lang]),
+                 #('Distance US',                'distance_us',                bindings, bricklet_descriptions['distance_us'][lang]),
+                 #('Dual Button',                'dual_button',                bindings, bricklet_descriptions['dual_button'][lang]),
                  ('Dual Relay',                 'dual_relay',                 bindings, bricklet_descriptions['dual_relay'][lang]),
                  ('GPS',                        'gps',                        bindings, bricklet_descriptions['gps'][lang]),
                  ('Humidity',                   'humidity',                   bindings, bricklet_descriptions['humidity'][lang]),
@@ -443,14 +493,24 @@ def fill_dicts():
                  ('Joystick',                   'joystick',                   bindings, bricklet_descriptions['joystick'][lang]),
                  ('LCD 16x2',                   'lcd_16x2',                   bindings, bricklet_descriptions['lcd_16x2'][lang]),
                  ('LCD 20x4',                   'lcd_20x4',                   bindings, bricklet_descriptions['lcd_20x4'][lang]),
+                 #('LED Strip',                  'led_strip',                  bindings, bricklet_descriptions['led_strip'][lang]),
                  ('Linear Poti',                'linear_poti',                bindings, bricklet_descriptions['linear_poti'][lang]),
+                 #('Moisture',                   'moisture',                   bindings, bricklet_descriptions['moisture'][lang]),
+                 #('Motion Detector',            'motion_detector',            bindings, bricklet_descriptions['motion_detector'][lang]),
+                 #('Multi Touch',                'multi_touch',                bindings, bricklet_descriptions['multi_touch'][lang]),
                  ('Piezo Buzzer',               'piezo_buzzer',               bindings, bricklet_descriptions['piezo_buzzer'][lang]),
                  ('PTC',                        'ptc',                        bindings, bricklet_descriptions['ptc'][lang]),
+                 #('Remote Switch',              'remote_switch',              bindings, bricklet_descriptions['remote_switch'][lang]),
+                 #('Rotary Encoder',             'rotary_encoder',             bindings, bricklet_descriptions['rotary_encoder'][lang]),
                  ('Rotary Poti',                'rotary_poti',                bindings, bricklet_descriptions['rotary_poti'][lang]),
+                 #('Segment Display 4x7',        'segment_display_4x7',        bindings, bricklet_descriptions['segment_display_4x7'][lang]),
+                 #('Sound Intensity',            'sound_intensity',            bindings, bricklet_descriptions['sound_intensity'][lang]),
                  ('Temperature',                'temperature',                bindings, bricklet_descriptions['temperature'][lang]),
                  ('Temperature IR',             'temperature_ir',             bindings, bricklet_descriptions['temperature_ir'][lang]),
+                 #('Tilt',                      'tilt',                       bindings, bricklet_descriptions['tilt'][lang]),
                  ('Voltage',                    'voltage',                    bindings, bricklet_descriptions['voltage'][lang]),
                  ('Voltage/Current',            'voltage_current',            bindings, bricklet_descriptions['voltage_current'][lang]),
+                 #('Water',                     'water',                       bindings, bricklet_descriptions['water'][lang]),
                 ]
 
                   # display,              uri,       bindings, description
