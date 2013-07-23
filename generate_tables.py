@@ -14,6 +14,88 @@ from device_identifiers import device_identifiers
 
 lang = 'en'
 
+         # display,        uri
+tools = [('Brick Daemon', 'brickd'),
+         ('Brick Viewer', 'brickv')]
+
+            # display,  uri      is_language
+bindings = [('Modbus', 'modbus', False),
+            ('TCP/IP', 'tcpip',  False),
+            ('C/C++',  'c',      True),
+            ('C#',     'csharp', True),
+            ('Delphi', 'delphi', True),
+            ('Java',   'java',   True),
+            ('PHP',    'php',    True),
+            ('Python', 'python', True),
+            #('Shell',  'shell',  True),
+            ('Ruby',   'ruby',   True),
+            ('VB.NET', 'vbnet',  True)]
+
+                  # display,                      uri,                         bindings, description, is_published
+bricks =         [['DC',                         'dc',                         bindings, "",          True],
+                  ['Debug',                      'debug',                      [],       "",          True],
+                  ['IMU',                        'imu',                        bindings, "",          True],
+                  ['Master',                     'master',                     bindings, "",          True],
+                  ['Servo',                      'servo',                      bindings, "",          True],
+                  ['Stepper',                    'stepper',                    bindings, "",          True]]
+
+
+                  # display,                      uri,                         bindings, description, is_published
+bricklets =      [['Ambient Light',              'ambient_light',              bindings, "",          True],
+                  ['Analog In',                  'analog_in',                  bindings, "",          True],
+                  ['Analog Out',                 'analog_out',                 bindings, "",          True],
+                  ['Barometer',                  'barometer',                  bindings, "",          True],
+                  ['Breakout',                   'breakout',                   [],       "",          True],
+                  ['Current12',                  'current12',                  bindings, "",          True],
+                  ['Current25',                  'current25',                  bindings, "",          True],
+                  ['Distance IR',                'distance_ir',                bindings, "",          True],
+                  ['Distance US',                'distance_us',                bindings, "",          False],
+                  ['Dual Button',                'dual_button',                bindings, "",          False],
+                  ['Dual Relay',                 'dual_relay',                 bindings, "",          True],
+                  ['GPS',                        'gps',                        bindings, "",          True],
+                  ['Humidity',                   'humidity',                   bindings, "",          True],
+                  ['Industrial Digital In 4',    'industrial_digital_in_4',    bindings, "",          True],
+                  ['Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, "",          True],
+                  ['Industrial Dual 0-20mA',     'industrial_dual_0_20ma',     bindings, "",          True],
+                  ['Industrial Quad Relay',      'industrial_quad_relay',      bindings, "",          True],
+                  ['IO-16',                      'io16',                       bindings, "",          True],
+                  ['IO-4',                       'io4',                        bindings, "",          True],
+                  ['Joystick',                   'joystick',                   bindings, "",          True],
+                  ['LCD 16x2',                   'lcd_16x2',                   bindings, "",          True],
+                  ['LCD 20x4',                   'lcd_20x4',                   bindings, "",          True],
+                  ['LED Strip',                  'led_strip',                  bindings, "",          False],
+                  ['Linear Poti',                'linear_poti',                bindings, "",          True],
+                  ['Moisture',                   'moisture',                   bindings, "",          False],
+                  ['Motion Detector',            'motion_detector',            bindings, "",          False],
+                  ['Multi Touch',                'multi_touch',                bindings, "",          False],
+                  ['Piezo Buzzer',               'piezo_buzzer',               bindings, "",          True],
+                  ['PTC',                        'ptc',                        bindings, "",          True],
+                  ['Remote Switch',              'remote_switch',              bindings, "",          False],
+                  ['Rotary Encoder',             'rotary_encoder',             bindings, "",          False],
+                  ['Rotary Poti',                'rotary_poti',                bindings, "",          True],
+                  ['Segment Display 4x7',        'segment_display_4x7',        bindings, "",          False],
+                  ['Sound Intensity',            'sound_intensity',            bindings, "",          False],
+                  ['Temperature',                'temperature',                bindings, "",          True],
+                  ['Temperature IR',             'temperature_ir',             bindings, "",          True],
+                  ['Tilt',                       'tilt',                       bindings, "",          False],
+                  ['Voltage',                    'voltage',                    bindings, "",          True],
+                  ['Voltage/Current',            'voltage_current',            bindings, "",          True],
+                  ['Water',                      'water',                      bindings, "",          False],
+                 ]
+
+                  # display,                      uri,                         bindings, description, is_published
+extensions =     [['Chibi Extension',            'chibi',                      [],       "",          True],
+                  ['Ethernet Extension',         'ethernet',                   [],       "",          True],
+                  ['RS485 Extension',            'rs485',                      [],       "",          True],
+                  ['WIFI Extension',             'wifi',                       [],       "",          True]]
+
+                  # display,                      uri,                         bindings, description, is_published
+power_supplies = [['Step-Down Power Supply',     'step_down',                  [],       "",          True]]
+
+                  # display,                      uri,                         bindings, description, is_published
+accessories =    [['DC Jack Adapter',            'dc_jack_adapter',            [],       "",          True]]
+
+
 brick_descriptions = {
 'dc': {
     'en': 'Drives one brushed DC motor with max. 28V and 5A',
@@ -230,7 +312,7 @@ power_supply_descriptions = {
     }
 }
 
-accessories_descriptions = {
+accessory_descriptions = {
 'dc_jack_adapter': {
     'en': 'Adapter between a 5mm DC jack and 2 Pole Black Connector',
     'de': 'Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz'
@@ -443,87 +525,20 @@ source_code_gits_extension_row_cell = {
 }
 
 def fill_dicts():
-    global tools, bindings, bricks, bricklets, extensions, power_supplies, accessories
+    for brick in bricks:
+        brick[3] = brick_descriptions[brick[1]][lang]
 
-             # display,        uri
-    tools = [('Brick Daemon', 'brickd'),
-             ('Brick Viewer', 'brickv')]
+    for bricklet in bricklets:
+        bricklet[3] = bricklet_descriptions[bricklet[1]][lang]
 
-                # display,  uri      is_language
-    bindings = [('Modbus', 'modbus', False),
-                ('TCP/IP', 'tcpip',  False),
-                ('C/C++',  'c',      True),
-                ('C#',     'csharp', True),
-                ('Delphi', 'delphi', True),
-                ('Java',   'java',   True),
-                ('PHP',    'php',    True),
-                ('Python', 'python', True),
-             #   ('Shell',  'shell',  True),
-                ('Ruby',   'ruby',   True),
-                ('VB.NET', 'vbnet',  True)]
+    for extension in extensions:
+        extension[3] = extension_descriptions[extension[1]][lang]
 
-              # display,   uri,      bindings, description
-    bricks = [('DC',      'dc',      bindings, brick_descriptions['dc'][lang]),
-              ('Debug',   'debug',   [],       brick_descriptions['debug'][lang]),
-              ('IMU',     'imu',     bindings, brick_descriptions['imu'][lang]),
-              ('Master',  'master',  bindings, brick_descriptions['master'][lang]),
-              ('Servo',   'servo',   bindings, brick_descriptions['servo'][lang]),
-              ('Stepper', 'stepper', bindings, brick_descriptions['stepper'][lang])]
+    for power_supply in power_supplies:
+        power_supply[3] = power_supply_descriptions[power_supply[1]][lang]
 
-                 # display,                      uri,                         bindings, description
-    bricklets = [('Ambient Light',              'ambient_light',              bindings, bricklet_descriptions['ambient_light'][lang]),
-                 ('Analog In',                  'analog_in',                  bindings, bricklet_descriptions['analog_in'][lang]),
-                 ('Analog Out',                 'analog_out',                 bindings, bricklet_descriptions['analog_out'][lang]),
-                 ('Barometer',                  'barometer',                  bindings, bricklet_descriptions['barometer'][lang]),
-                 ('Breakout',                   'breakout',                   [],       bricklet_descriptions['breakout'][lang]),
-                 ('Current12',                  'current12',                  bindings, bricklet_descriptions['current12'][lang]),
-                 ('Current25',                  'current25',                  bindings, bricklet_descriptions['current25'][lang]),
-                 ('Distance IR',                'distance_ir',                bindings, bricklet_descriptions['distance_ir'][lang]),
-                 #('Distance US',                'distance_us',                bindings, bricklet_descriptions['distance_us'][lang]),
-                 #('Dual Button',                'dual_button',                bindings, bricklet_descriptions['dual_button'][lang]),
-                 ('Dual Relay',                 'dual_relay',                 bindings, bricklet_descriptions['dual_relay'][lang]),
-                 ('GPS',                        'gps',                        bindings, bricklet_descriptions['gps'][lang]),
-                 ('Humidity',                   'humidity',                   bindings, bricklet_descriptions['humidity'][lang]),
-                 ('Industrial Digital In 4',    'industrial_digital_in_4',    bindings, bricklet_descriptions['industrial_digital_in_4'][lang]),
-                 ('Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, bricklet_descriptions['industrial_digital_out_4'][lang]),
-                 ('Industrial Dual 0-20mA',     'industrial_dual_0_20ma',     bindings, bricklet_descriptions['industrial_dual_0_20ma'][lang]),
-                 ('Industrial Quad Relay',      'industrial_quad_relay',      bindings, bricklet_descriptions['industrial_quad_relay'][lang]),
-                 ('IO-16',                      'io16',                       bindings, bricklet_descriptions['io16'][lang]),
-                 ('IO-4',                       'io4',                        bindings, bricklet_descriptions['io4'][lang]),
-                 ('Joystick',                   'joystick',                   bindings, bricklet_descriptions['joystick'][lang]),
-                 ('LCD 16x2',                   'lcd_16x2',                   bindings, bricklet_descriptions['lcd_16x2'][lang]),
-                 ('LCD 20x4',                   'lcd_20x4',                   bindings, bricklet_descriptions['lcd_20x4'][lang]),
-                 #('LED Strip',                  'led_strip',                  bindings, bricklet_descriptions['led_strip'][lang]),
-                 ('Linear Poti',                'linear_poti',                bindings, bricklet_descriptions['linear_poti'][lang]),
-                 #('Moisture',                   'moisture',                   bindings, bricklet_descriptions['moisture'][lang]),
-                 #('Motion Detector',            'motion_detector',            bindings, bricklet_descriptions['motion_detector'][lang]),
-                 #('Multi Touch',                'multi_touch',                bindings, bricklet_descriptions['multi_touch'][lang]),
-                 ('Piezo Buzzer',               'piezo_buzzer',               bindings, bricklet_descriptions['piezo_buzzer'][lang]),
-                 ('PTC',                        'ptc',                        bindings, bricklet_descriptions['ptc'][lang]),
-                 #('Remote Switch',              'remote_switch',              bindings, bricklet_descriptions['remote_switch'][lang]),
-                 #('Rotary Encoder',             'rotary_encoder',             bindings, bricklet_descriptions['rotary_encoder'][lang]),
-                 ('Rotary Poti',                'rotary_poti',                bindings, bricklet_descriptions['rotary_poti'][lang]),
-                 #('Segment Display 4x7',        'segment_display_4x7',        bindings, bricklet_descriptions['segment_display_4x7'][lang]),
-                 #('Sound Intensity',            'sound_intensity',            bindings, bricklet_descriptions['sound_intensity'][lang]),
-                 ('Temperature',                'temperature',                bindings, bricklet_descriptions['temperature'][lang]),
-                 ('Temperature IR',             'temperature_ir',             bindings, bricklet_descriptions['temperature_ir'][lang]),
-                 #('Tilt',                      'tilt',                       bindings, bricklet_descriptions['tilt'][lang]),
-                 ('Voltage',                    'voltage',                    bindings, bricklet_descriptions['voltage'][lang]),
-                 ('Voltage/Current',            'voltage_current',            bindings, bricklet_descriptions['voltage_current'][lang]),
-                 #('Water',                     'water',                       bindings, bricklet_descriptions['water'][lang]),
-                ]
-
-                  # display,              uri,       bindings, description
-    extensions = [('Chibi Extension',    'chibi',    [],       extension_descriptions['chibi'][lang]),
-                  ('Ethernet Extension', 'ethernet', [],       extension_descriptions['ethernet'][lang]),
-                  ('RS485 Extension',    'rs485',    [],       extension_descriptions['rs485'][lang]),
-                  ('WIFI Extension',     'wifi',     [],       extension_descriptions['wifi'][lang])]
-
-                      # display,                  uri,         bindings, description
-    power_supplies = [('Step-Down Power Supply', 'step_down',  [],       power_supply_descriptions['step_down'][lang])]
-
-                    # display,          uri,               bindings, description
-    accessories = [('DC Jack Adapter', 'dc_jack_adapter',  [],       accessories_descriptions['dc_jack_adapter'][lang])]
+    for accessory in accessories:
+        accessory[3] = accessory_descriptions[accessory[1]][lang]
 
 def get_body(url):
     try:
@@ -652,7 +667,8 @@ def make_product_overview_table(devices, category, add_category_to_name=True):
     rows = []
 
     for device in devices:
-        rows.append(row_head.format(device[0], device[1], device[3]))
+        if device[4]:
+            rows.append(row_head.format(device[0], device[1], device[3]))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -713,7 +729,7 @@ def make_download_firmwares_table():
     bricklet_rows = []
 
     for brick in bricks:
-        if len(brick[2]) > 0:
+        if len(brick[2]) > 0 and brick[4]:
             versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricks/{0}/'.format(brick[1]), 'brick_' + brick[1])
 
             if len(versions) < 1:
@@ -730,7 +746,7 @@ def make_download_firmwares_table():
             bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, *versions[-1]))
 
     for bricklet in bricklets:
-        if len(bricklet[2]) > 0:
+        if len(bricklet[2]) > 0 and bricklet[4]:
             if bricklet[1] == 'lcd_20x4':
                 handle_bricklet(bricklet[0] + ' 1.1', bricklet[1], bricklet[1] + '_v11')
                 handle_bricklet(bricklet[0] + ' 1.2', bricklet[1], bricklet[1] + '_v12')
@@ -759,13 +775,16 @@ def make_source_code_gits_table():
     extension_rows = []
 
     for brick in bricks:
-        brick_rows.append(brick_row_cell.format(brick[0], brick[1].replace('_', '-').replace('/', '-')))
+        if brick[4]:
+            brick_rows.append(brick_row_cell.format(brick[0], brick[1].replace('_', '-').replace('/', '-')))
 
     for bricklet in bricklets:
-        bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1].replace('_', '-').replace('/', '-')))
+        if bricklet[4]:
+            bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1].replace('_', '-').replace('/', '-')))
 
     for extension in extensions:
-        extension_rows.append(extension_row_cell.format(extension[0], extension[1].replace('_', '-').replace('/', '-')))
+        if extension[4]:
+            extension_rows.append(extension_row_cell.format(extension[0], extension[1].replace('_', '-').replace('/', '-')))
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows)) + '\n'
 
@@ -780,6 +799,9 @@ def make_index_table_block(devices, category, add_category_to_name=True):
     rows = []
 
     for device in devices:
+        if not device[4]:
+            continue
+
         cells = []
 
         for binding in device[2]:

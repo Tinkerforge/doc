@@ -1,0 +1,147 @@
+
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / LED Strip Bricklet
+:shoplink: ../../../shop/bricklets/led-strip-bricklet.html
+
+.. include:: LED_Strip.substitutions
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
+
+
+.. _led_strip_bricklet:
+
+LED Strip Bricklet
+==================
+
+.. note::
+ Diese Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
+ und die Dokumentation sind in einem halbfertigen Zustand.
+
+.. FIXME raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_led_strip_tilted_350.jpg",
+	               "Bricklets/bricklet_led_strip_tilted_600.jpg",
+	               "LED Strip Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_led_strip_vertical_100.jpg",
+	             "Bricklets/bricklet_led_strip_vertical_600.jpg",
+	             "LED Strip Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_led_strip_horizontal_100.jpg",
+	             "Bricklets/bricklet_led_strip_horizontal_600.jpg",
+	             "LED Strip Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_led_strip_master_100.jpg",
+	             "Bricklets/bricklet_led_strip_master_600.jpg",
+	             "LED Strip Bricklet mit Master Brick")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_led_strip_brickv_100.jpg",
+	             "Bricklets/bricklet_led_strip_brickv.jpg",
+	             "LED Strip Bricklet im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/led_strip_bricklet_dimensions_100.png",
+	             "Dimensions/led_strip_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
+
+
+Features
+--------
+
+* Work In Progress
+
+
+Beschreibung
+------------
+
+
+Technische Spezifikation
+------------------------
+
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Abmessungen (B x T x H)           ? x ? x ?mm (? x ? x ?")
+Gewicht                           ?g
+================================  ============================================================
+
+
+Ressourcen
+----------
+
+* Schaltplan (`Download <https://github.com/Tinkerforge/led-strip-bricklet/raw/master/hardware/led-strip-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/led_strip_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/led-strip-bricklet/zipball/master>`__)
+
+
+.. _led_strip_bricklet_test:
+
+Erster Test
+-----------
+
+|test_intro|
+
+|test_connect| (siehe folgendes Bild).
+
+.. FIXME image:: /Images/Bricklets/bricklet_led_strip_master_600.jpg
+   :scale: 100 %
+   :alt: LED Strip Bricklet verbunden mit Master Brick
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_master_1200.jpg
+
+|test_tab|
+Wenn alles wie erwartet funktioniert wird ... FIXME.
+
+.. FIXME image:: /Images/Bricklets/bricklet_led_strip_brickv.jpg
+   :scale: 100 %
+   :alt: LED Strip Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_brickv.jpg
+
+|test_pi_ref|
+
+.. _led_strip_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das LED Strip Bricklet <https://www.tinkerforge.com/de/shop/cases/case-led-strip-bricklet.html>`__ ist verfügbar.
+
+.. FIXME image:: /Images/Cases/bricklet_led_strip_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für LED Strip Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_led_strip_case_built_up_1000.jpg
+
+.. include:: LED_Strip.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. FIXME image:: /Images/Exploded/led_strip_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für LED Strip Bricklet
+   :align: center
+   :target: ../../_images/Exploded/led_strip_exploded.png
+
+|bricklet_case_hint|
+
+
+.. _led_strip_bricklet_programming_interfaces:
+
+Programmierschnittstellen
+-------------------------
+
+High Level Programmierschnittstelle
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Beschreibung.
+
+.. include:: LED_Strip_hlpi.table
