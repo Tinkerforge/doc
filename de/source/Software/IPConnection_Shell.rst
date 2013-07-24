@@ -6,11 +6,12 @@
 Shell - IP Connection
 =====================
 
-Dies ist die API Beschreibung für die Python Bindings der IP Connection.
+Dies ist die API Beschreibung für die Shell Bindings der IP Connection.
 Die IP Connection wird zwischen dem Brick Daemon und den API Bindings der
 entsprechenden Programmiersprache hergestellt. Bevor Geräte über deren API
 angesprochen werden können muss eine IP Connection zu brickd erzeugt und die
-Geräte dieser hinzugefügt werden.
+Geräte dieser hinzugefügt werden. Im Falle der Shell Bindings passiert dies
+alles im Hintergrund, unsichtbar für den Benutzer.
 
 Eine Übersicht über die Produkte die über eine IP Connection kontrolliert
 werden können ist :ref:`hier <product_overview>` zu finden.
@@ -25,7 +26,7 @@ Der folgende Beispielcode ist Public Domain.
 
 `Download <https://github.com/Tinkerforge/doc/raw/master/de/source/Software/example.sh>`__
 
-.. literalinclude:: example.py
+.. literalinclude:: example.sh
  :language: bash
  :linenos:
  :tab-width: 4
@@ -39,7 +40,7 @@ API
 Grundfunktionen
 ^^^^^^^^^^^^^^^
 
-.. sh:function:: IPConnection()
+.. sh:function:: tinkerforge
 
  Erzeugt ein IP Connection Objekt das verwendet werden kann um die verfügbar
  Geräte zu enumerieren. Es wird auch für den Konstruktor von Bricks und
@@ -119,7 +120,7 @@ Grundfunktionen
 
  :rtype: float
 
- Gibt den Timeout zurück, wie er von :py:func:`set_timeout()
+ Gibt den Timeout zurück, wie er von :sh:func:`set_timeout()
  <IPConnection.set_timeout>` gesetzt wurde.
 
 
@@ -129,32 +130,6 @@ Grundfunktionen
 
  Broadcast einer Enumerierungsanfrage. Alle Bricks und Bricklets werden mit
  einem Enumerate Callback antworten.
-
-
-.. sh:function:: IPConnection.wait()
-
- :rtype: None
-
- Hält den aktuellen Thread an bis :py:func:`unwait() <IPConnection.unwait>`
- aufgerufen wird.
-
- Dies ist nützlich falls ausschließlich auf Callbacks reagiert werden soll oder
- wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
- IP Connection in einem Thread gestartet wird.
-
- ``wait`` und ``unwait`` agieren auf die gleiche Weise wie "acquire" und
- "release" einer Semaphore.
-
-
-.. sh:function:: IPConnection.unwait()
-
- :rtype: None
-
- Startet einen Thread der vorher mit :py:func:`wait() <IPConnection.wait>`
- angehalten wurde wieder.
-
- ``wait`` und ``unwait`` agieren auf die gleiche Weise wie "acquire" und
- "release" einer Semaphore.
 
 
 Konfigurationsfunktionen für Callbacks
@@ -176,7 +151,7 @@ Callbacks
 ^^^^^^^^^
 
 Callbacks können registriert werden um über Ereignisse informiert zu werden.
-Die Registrierung kann mit der Funktion :py:func:`register_callback()
+Die Registrierung kann mit der Funktion :sh:func:`register_callback()
 <IPConnection.register_callback>` durchgeführt werden. Der erste Parameter
 ist der Callback ID und der zweite die Callback Funktion:
 
@@ -232,33 +207,3 @@ werden weiter unten beschrieben.
  zu implementieren (wie es im Brick Viewer geschieht)
 
  Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
-
-
-.. sh:attribute:: IPConnection.CALLBACK_CONNECTED
-
- :param connect_reason: int
-
- Dieser Callback wird aufgerufen wenn die IP Connection eine Verbindung
- zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
- mögliche Gründe sind:
-
- * IPConnection.CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage
-   vom Benutzer.
- * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach
-   einer automatischen Wiederverbindung.
-
-
-.. sh:attribute:: IPConnection.CALLBACK_DISCONNECTED
-
- :param disconnect_reason: int
-
- Dieser Callback wird aufgerufen wenn die Verbindung der IP Connection
- zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
- mögliche Gründe sind:
-
- * IPConnection.DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer
-   angefragt.
- * IPConnection.DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren
-   Problems.
- * IPConnection.DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon
-   oder WIFI/Ethernet Extension eingeleitet.

@@ -10,7 +10,8 @@ This is the API description for the Shell bindings of the IP Connection.
 The IP Connection is established between the Brick Daemon
 and the corresponding programming language API bindings. You need to
 create an IP Connection to brickd and add devices, before you can
-use them.
+use them. In case of the Shell Bindings all this happens in the background,
+invisible to you.
 
 An overview of products that are controllable over an IP Connection
 can be found :ref:`here <product_overview>`.
@@ -39,10 +40,36 @@ API
 Basic Functions
 ^^^^^^^^^^^^^^^
 
-.. sh:function:: IPConnection()
+.. sh:function:: tinkerforge
 
- Creates an IP Connection object that can be used to enumerate the available
- devices. It is also required for the constructor of Bricks and Bricklets.
+ The basic command takes several options:
+
+ * ``--help`` shows help and exits
+ * ``--version`` shows version number and exits
+ * ``--host <host>`` IP address or hostname, default: ``localhost``
+ * ``--port <port>`` port number, default: ``4223``
+ * ``--item-separator <item-separator>`` separator for array items, default: ``,`` (comma)
+ * ``--group-separator <group-separator>`` separator for output groups, default: ``\n`` (newline)
+
+ All commands, except if the ``--help`` or ``--version`` option is present,
+ create a TCP/IP connection to the given *host* and *port*. The host and port
+ can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
+
+ The item separator is used for parsing and formatting arrays. An array with
+ three values 1, 2 and 3 is formatted as ``1,2,3``.
+
+ The group separator is used for formatting the output of callbacks. Before
+ each callback, except the first one, the group separator is printed to
+ separate the output of multiple callback invocations.
+
+
+.. sh:function:: tinkerforge call <device> <uid> <function>
+
+
+.. sh:function:: tinkerforge dispatch <device> <uid> <callback>
+
+
+.. sh:function:: tinkerforge enumerate
 
 
 .. sh:function:: IPConnection.connect(host, port)
@@ -117,7 +144,7 @@ Basic Functions
 
  :rtype: float
 
- Returns the timeout as set by :py:func:`set_timeout() <IPConnection.set_timeout>`.
+ Returns the timeout as set by :sh:func:`set_timeout() <IPConnection.set_timeout>`.
 
 
 .. sh:function:: IPConnection.enumerate()
@@ -128,35 +155,11 @@ Basic Functions
  callback.
 
 
-.. sh:function:: IPConnection.wait()
-
- :rtype: None
-
- Stops the current thread until :py:func:`unwait() <IPConnection.unwait>`
- is called.
-
- This is useful if you rely solely on callbacks for events, if you want to
- wait for a specific callback or if the IP Connection was created in a thread.
-
- ``wait`` and ``unwait`` act in the same way as "acquire" and "release" of a
- semaphore.
-
-
-.. sh:function:: IPConnection.unwait()
-
- :rtype: None
-
- Unwaits the thread previously stopped by :py:func:`wait() <IPConnection.wait>`
-
- ``wait`` and ``unwait`` act in the same way as "acquire" and "release" of a
- semaphore.
-
-
 Callbacks
 ^^^^^^^^^
 
 Callbacks can be registered to be notified about events. The registration is
-done with the :py:func:`register_callback() <IPConnection.register_callback>`
+done with the :sh:func:`register_callback() <IPConnection.register_callback>`
 function. The first parameter is the callback ID and the second
 parameter the callback function:
 
