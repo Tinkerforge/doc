@@ -323,45 +323,49 @@ accessory_descriptions = {
 index_table_head = {
 'en':
 """.. csv-table::
- :header: "Hardware", "API"
+ :header: "", "API"
  :delim: |
  :widths: 15, 40
 
- **Bricks** |
 {0}
  |
- **Bricklets** |
+ **Bricks** |
 {1}
  |
- **Master Extensions** |
+ **Bricklets** |
 {2}
  |
- **Power Supplies** |
+ **Master Extensions** |
 {3}
  |
- **Accessories** |
+ **Power Supplies** |
 {4}
+ |
+ **Accessories** |
+{5}
 """,
 'de':
 """.. csv-table::
- :header: "Hardware", "API"
+ :header: "", "API"
  :delim: |
  :widths: 15, 40
 
- **Bricks** |
 {0}
  |
- **Bricklets** |
+ **Bricks** |
 {1}
  |
- **Master Extensions** |
+ **Bricklets** |
 {2}
  |
- **Stromversorgungen** |
+ **Master Extensions** |
 {3}
  |
- **Zubehör** |
+ **Stromversorgungen** |
 {4}
+ |
+ **Zubehör** |
+{5}
 """
 }
 
@@ -632,28 +636,6 @@ def get_firmware_versions(url, prefix):
 
     return []
 
-def make_index_table_ipcon():
-    table_head = """
-.. container:: indextable
-
- .. csv-table::
-  :widths: 30, 60
-  :delim: |
-
-"""
-    row_head = '  * :ref:`IP Connection <api_bindings_ip_connection>` | '
-    row_cell_ipcon = ':ref:`{0} <ipcon_{1}>`'
-    row_cell_llproto = ':ref:`{0} <llproto_{1}>`'
-    cells = []
-
-    for binding in bindings:
-        if binding[2]:
-            cells.append(row_cell_ipcon.format(binding[0], binding[1]))
-        else:
-            cells.append(row_cell_llproto.format(binding[0], binding[1]))
-
-    return table_head + row_head + ', '.join(cells) + '\n'
-
 def make_product_overview_table(devices, category, add_category_to_name=True):
     table_head = product_overview_table_head[lang]
 
@@ -813,7 +795,19 @@ def make_index_table_block(devices, category, add_category_to_name=True):
     return '\n'.join(rows)
 
 def make_index_table():
-    return index_table_head[lang].format(make_index_table_block(bricks, 'brick'),
+    ipcon_head = ' :ref:`IP Connection <api_bindings_ip_connection>` | '
+    ipcon_cell = ':ref:`{0} <ipcon_{1}>`'
+    ipcon_cell_llproto = ':ref:`{0} <llproto_{1}>`'
+    ipcon_cells = []
+
+    for binding in bindings:
+        if binding[2]:
+            ipcon_cells.append(ipcon_cell.format(binding[0], binding[1]))
+        else:
+            ipcon_cells.append(ipcon_cell_llproto.format(binding[0], binding[1]))
+
+    return index_table_head[lang].format(ipcon_head + ', '.join(ipcon_cells),
+                                         make_index_table_block(bricks, 'brick'),
                                          make_index_table_block(bricklets, 'bricklet'),
                                          make_index_table_block(extensions, 'extension'),
                                          make_index_table_block(power_supplies, 'power_supply'),
