@@ -37,173 +37,193 @@ Der folgende Beispielcode ist Public Domain.
 API
 ---
 
-Grundfunktionen
+Als erstes einige Information über die allgemeine Struktur der Befehle:
+
+.. sh:function:: X Ntinkerforge A[<option>..] L<command> L[<argument>..]
+
+ :param <command>: string
+
+ Der Grundbefehl kennt mehrere Optionen:
+
+ * ``--help`` zeigt allgemeine Hilfe an und endet dann
+ * ``--version`` zeigt die Versionsnummer an und endet dann
+ * ``--host <host>`` IP Adresse oder Hostname, Standard: ``localhost``
+ * ``--port <port>`` Port-Nummer, Standard: ``4223``
+ * ``--item-separator <item-separator>`` Trennzeichen für Array-Einträge,
+   Standard: ``,`` (Komma)
+ * ``--group-separator <group-separator>`` Trennzeichen für Ausgabegruppen,
+   Standard: ``\n`` (neue Zeile)
+
+ Alle Befehle, außer die ``--help`` oder ``--version`` Option sind angegeben,
+ erstellen eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
+ können auf einen Brick Daemon oder eine WIFI/Ethernet Extension verweisen.
+
+ Das Trennzeichen für Array-Einträge wird beim Parse und Formatieren von Arrays
+ verwendet. Ein Array mit den drei Werten 1, 2 und 3 wird als ``1,2,3``
+ formatiert.
+
+ Das Trennzeichen für Ausgabegruppen wird beim Formatieren der Ausgabe von
+ Callbacks verwendet. Das Trennzeichen wird vor jeder Callback-Ausgabe mit mehr
+ als einer Zeile ausgegeben, außer der ersten, um die Ausgabe von mehreren
+ Callback-Aufrufen zu trennen. Siehe den Abschnitt über
+ :ref:`Ausgabeformatierung <ipcon_shell_output>` für mehr Details.
+
+ Es gibt drei Unterbefehle: ``call``, ``dispatch`` und ``enumerate``
+
+
+.. sh:function:: X Ptinkerforge Ncall A[<option>..] L<device> L<uid> L<function> L[<argument>..]
+
+ :param <device>: string
+ :param <uid>: string
+ :param <function>: string
+
+ Der ``call`` Befehl wird verwendet um eine Funktion eines Bricks oder Bricklets
+ aufzurufen. Der Befehl kennt mehrere Optionen:
+
+ * ``--help`` zeigt Hilfe für den spezifischen ``call`` Befehl an und endet dann
+ * ``--list-devices`` zeigt eine Liste der bekannten Geräte an und enden dann
+ * ``--timeout <timeout>`` maximum time (msec) to wait for response, default:
+   ``2500``
+
+ If the ``--list-devices`` option is present all valid device names for the
+ ``<device>`` argument are listed. For example ``master-brick`` and
+ ``ambient-light-bricklet``.
+
+ The ``--timeout`` option allows to specifiy the maximum time in msec for
+ waiting for the response of a function call. If a response doesn't arrive
+ in time the program exits with an error.
+
+ The ``<uid>`` argument takes a UID corresponding to the selected device type.
+ This allows to select a specific device.
+
+ The ``<function>`` argument allows to specify which function to call. Which
+ additonal arguments have to be specified depends on the specified device and
+ function.
+
+
+.. sh:function:: X Ptinkerforge Ndispatch A[<option>..] L<device> L<uid> L<callback>
+
+ :param <device>: string
+ :param <uid>: string
+ :param <callback>: string
+
+ Der ``dispatch`` Befehl wird verwendet um eingehende Callbacks eines Brick oder
+ Bricklet abzufertigen. Der Befehl kennt mehrere Optionen:
+
+ * ``--help`` zeigt Hilfe für den spezifischen ``dispatch`` Befehl an und endet
+   dann
+ * ``--list-devices`` zeigt eine Liste der bekannten Geräte an und enden dann
+ * ``--duration <duration>`` time (msec) to dispatch incoming callbacks
+   (0: exit after first, -1: forever), default: -1
+
+ If the ``--list-devices`` option is present all valid device names for the
+ ``<device>`` argument are listed. For example ``master-brick`` and
+ ``ambient-light-bricklet``.
+
+ The ``--duration`` option allows to specifiy the time in msec for dispatching
+ incoming callbacks.
+
+ The ``<uid>`` argument takes a UID corresponding to the selected device type.
+ This allows to select a specific device.
+
+ The ``<callback>`` argument allows to specify which callback to dispatch.
+
+
+Basic Functions
 ^^^^^^^^^^^^^^^
 
-.. sh:function:: tinkerforge
+.. sh:function:: X Ptinkerforge Nenumerate A[<option>..]
 
- Erzeugt ein IP Connection Objekt das verwendet werden kann um die verfügbar
- Geräte zu enumerieren. Es wird auch für den Konstruktor von Bricks und
- Bricklets benötigt.
+ :returns uid: string
+ :returns connected-uid: string
+ :returns position: char
+ :returns hardware-version: int,int,int
+ :returns firmware-version: int,int,int
+ :returns device-identifier: string
 
+ The ``enumerate`` command is used to discover the connected Bricks and
+ Bricklets. It can take several options:
 
-.. sh:function:: IPConnection.connect(host, port)
+ * ``--help`` shows help for the ``enumerate`` command and exits
+ * ``--duration <duration>`` time (msec) to dispatch incoming responses (0: exit
+   after first, -1: forever), default: 250
+ * ``--execute <command>`` shell command to execute for each incoming response
 
- :param host: str
- :param port: int
- :rtype: None
+ The ``--duration`` option allows to specifiy the time in msec for dispatch
+ incoming enumerate responses.
 
- Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
- können auf einen Brick Daemon oder einer WIFI/Ethernet Extension verweisen.
+ The ``--execute`` option allows for advanced output formatting. See the
+ :ref:`section about this <ipcon_shell_output>` for details.
 
- Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
- aufgebaut wurde.
+ The command has six outputs:
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception falls
- kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen Host und Port
- horcht.
+ * ``uid`` is the UID of the device.
+ * ``connected-uid`` is the UID where the device is connected to. For a Bricklet
+   this will be a UID of the Brick where it is connected to. For a Brick it will
+   be the UID of the bottom Master Brick in the stack. For the bottom Master Brick
+   in a stack this will be "1". With this information it is possible to
+   reconstruct the complete network topology.
+ * ``position`` is position in stack (0 - 8) for Bricks or the position on
+   Brick (a - d) for Bricklets.
+ * ``hardware-version`` is in major, minor and release format.
+ * ``firmware-version`` is in major, minor and release format.
+ * ``device-identifier`` is the name of the device as known from the
+   ``--list-devices`` option of the ``call`` and ``dispatch`` commands.
 
+.. _ipcon_shell_output:
 
-.. sh:function:: IPConnection.disconnect()
+Output Formatting
+^^^^^^^^^^^^^^^^^
 
- :rtype: None
+By default the output of getters and callbacks is printed in ``<key>=<value>``
+format. For example, the output of an enumerate callback:
 
- Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
- Extension.
+.. code-block:: bash
 
+    $ tinkerforge enumerate
+    uid=68yjBL
+    connected-uid=0
+    position=0
+    hardware-version=1,0,0
+    firmware-version=2,0,6
+    device-identifier=master-brick
 
-.. sh:function:: IPConnection.get_connection_state()
-
- :rtype: int
-
- Kann die folgenden Zustände zurückgeben:
-
- * IPConnection.CONNECTION_STATE_DISCONNECTED (0): Keine Verbindung aufgebaut.
- * IPConnection.CONNECTION_STATE_CONNECTED (1): Eine Verbindung zum Brick Daemon
-   oder der WIFI/Ethernet Extension ist aufgebaut.
- * IPConnection.CONNECTION_STATE_PENDING (2): IP Connection versucht im Moment
-   eine Verbindung aufzubauen.
-
-
-.. sh:function:: IPConnection.set_auto_reconnect(auto_reconnect)
-
- :param auto_reconnect: bool
- :rtype: None
-
- Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
- Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
- zum vorher angegebenen Host und Port wieder herzustellen, falls die Verbindung
- verloren geht.
-
- Standardwert ist *True*.
-
-
-.. sh:function:: IPConnection.get_auto_reconnect()
-
- :rtype: bool
-
- Gibt *True* zurück wenn die Wiederverbindung aktiviert ist und *False* sonst.
-
-
-.. sh:function:: IPConnection.set_timeout(timeout)
-
- :param timeout: float
- :rtype: None
-
- Setzt den Timeout in Sekunden für Getter und für Setter die das
- Response-Expected-Flag aktiviert haben.
-
- Standardwert ist 2,5.
+    uid=eN3
+    connected-uid=68yjBL
+    position=a
+    hardware-version=1,1,0
+    firmware-version=2,0,0
+    device-identifier=distance-ir-bricklet
 
 
-.. sh:function:: IPConnection.get_timeout()
+The ``--item-separator`` option affects how arrays are formatted and the
+``--group-separator`` option affects how output groups are formatted. The
+example above contains two groups seperated by a blank line.
 
- :rtype: float
+Advanced Options
+""""""""""""""""
 
- Gibt den Timeout zurück, wie er von :sh:func:`set_timeout()
- <IPConnection.set_timeout>` gesetzt wurde.
+For more advanced output formatting all getter functions and callbacks support
+the ``--execute`` option. It takes a shell command line with placeholders to be
+executed for each incoming response.
 
+A simple example: getting the current distance in mm of a Distance IR Bricklet
+in ``<key>=<value>`` format:
 
-.. sh:function:: IPConnection.enumerate()
+.. code-block:: bash
 
- :rtype: None
+    $ tinkerforge call distance-ir-bricklet eN3 get-distance
+    distance=473
 
- Broadcast einer Enumerierungsanfrage. Alle Bricks und Bricklets werden mit
- einem Enumerate Callback antworten.
+Now the ``--execute`` option is used for advanced formatting with ``bc`` and
+``printf``:
 
+.. code-block:: bash
 
-Konfigurationsfunktionen für Callbacks
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    $ tinkerforge call distance-ir-bricklet eN3 get-distance --execute "echo 'scale=2; {distance} / 10' | bc | xargs printf 'current distance is %.1fcm\n'"
+    current distance is 46.3cm
 
-.. sh:function:: IPConnection.register_callback(id, callback)
-
- :param id: int
- :param callback: callable
- :rtype: None
-
- Registriert einen Callback für eine gegebene ID.
-
- Die verfügbaren IDs mit zugehörenden Callback-Funktionssignaturen
- sind unten beschrieben.
-
-
-Callbacks
-^^^^^^^^^
-
-Callbacks können registriert werden um über Ereignisse informiert zu werden.
-Die Registrierung kann mit der Funktion :sh:func:`register_callback()
-<IPConnection.register_callback>` durchgeführt werden. Der erste Parameter
-ist der Callback ID und der zweite die Callback Funktion:
-
-.. code-block:: python
-
-    def my_callback(param):
-        print(param)
-
-    ipcon.register_callback(IPConnection.CALLBACK_EXAMPLE, my_callback)
-
-Die verfügbaren Konstanten mit der dazugehörigen Parameteranzahl und -typen
-werden weiter unten beschrieben.
-
-
-.. sh:attribute:: IPConnection.CALLBACK_ENUMERATE
-
- :param uid: str
- :param connected_uid: str
- :param position: chr
- :param hardware_version: [int, int, int]
- :param firmware_version: [int, int, int]
- :param device_identifier: int
- :param enumeration_type: int
-
- Der Callback empfängt sieben Parameter:
-
- * *uid*: Die UID des Bricks/Bricklets.
- * *connected_uid*: Die UID wo das Brick/Bricklet mit verbunden ist. Für ein
-   Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen
-   Brick ist es die UID des untersten Master Bricks in einem Stapel. Der
-   unterste Master Brick hat die connected UID "1". Mit diesen Informationen
-   sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
- * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
-   'a' - 'd' (Position an Brick).
- * *hardware_version*: Major, Minor und Release Nummer der Hardwareversion.
- * *firmware_version*: Major, Minor und Release Nummer der Firmwareversion.
- * *device_identifier*: Eine Zahl, welche den Brick/Bricklet repräsentiert.
- * *enumeration_type*: Art der Enumerierung.
-
- Mögliche Enumerierungsarten sind:
-
- * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar
-   (Enumerierung vom Benutzer ausgelöst).
- * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Gerät ist neu verfügbar
-   (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde).
-   Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration
-   verloren hat und neu konfiguriert werden muss.
- * IPConnection.ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei
-   USB-Verbindungen möglich). In diesem Fall haben nur *uid* und
-   *enumeration_type* einen gültigen Wert.
-
- Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Callback
- zu implementieren (wie es im Brick Viewer geschieht)
-
- Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
+Before the command line is executed the contained placeholders are replaced with
+the actual values. In the example above a call to ``get-distance`` without
+``--execute`` outputs a single line with key ``distance``. This key is also the
+placeholder for ``--execute`` usage wrapped in curly brackets: ``{distance}``.
