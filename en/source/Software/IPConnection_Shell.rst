@@ -86,15 +86,16 @@ At first some information about the general command structure:
  ``<device>`` argument are listed. For example ``master-brick`` and
  ``ambient-light-bricklet``.
 
- The ``--timeout`` option allows to specifiy the maximum time in msec for
+ The ``--timeout`` option allows to specify the maximum time in msec for
  waiting for the response of a function call. If a response doesn't arrive
  in time the program exits with an error.
 
  The ``<uid>`` argument takes a UID corresponding to the selected device type.
- This allows to select a specific device.
+ This allows to select a specific device. All connected Bricks and Bricklets
+ can be found with the :sh:func:`enumerate <tinkerforge enumerate>` command.
 
  The ``<function>`` argument allows to specify which function to call. Which
- additonal arguments have to be specified depends on the specified device and
+ additional arguments have to be specified depends on the specified device and
  function.
 
 
@@ -116,11 +117,12 @@ At first some information about the general command structure:
  ``<device>`` argument are listed. For example ``master-brick`` and
  ``ambient-light-bricklet``.
 
- The ``--duration`` option allows to specifiy the time in msec for dispatching
+ The ``--duration`` option allows to specify the time in msec for dispatching
  incoming callbacks.
 
  The ``<uid>`` argument takes a UID corresponding to the selected device type.
- This allows to select a specific device.
+ This allows to select a specific device. All connected Bricks and Bricklets
+ can be found with the :sh:func:`enumerate <tinkerforge enumerate>` command.
 
  The ``<callback>`` argument allows to specify which callback to dispatch.
 
@@ -194,7 +196,7 @@ format. For example, the output of an enumerate callback:
 
 The ``--item-separator`` option affects how arrays are formatted and the
 ``--group-separator`` option affects how output groups are formatted. The
-example above contains two groups seperated by a blank line.
+example above contains two groups separated by a blank line.
 
 Advanced Options
 """"""""""""""""

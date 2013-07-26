@@ -82,23 +82,26 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
 
  * ``--help`` zeigt Hilfe für den spezifischen ``call`` Befehl an und endet dann
  * ``--list-devices`` zeigt eine Liste der bekannten Geräte an und enden dann
- * ``--timeout <timeout>`` maximum time (msec) to wait for response, default:
-   ``2500``
+ * ``--timeout <timeout>`` maximale Zeit (msec) für die auf eine Antwort
+    gewartet wird, Standard: ``2500``
 
- If the ``--list-devices`` option is present all valid device names for the
- ``<device>`` argument are listed. For example ``master-brick`` and
- ``ambient-light-bricklet``.
+ Wenn die ``--list-devices`` Option angegeben ist werden alle bekannten
+ Gerätenamen für das ``<device>`` Argument aufgelistet. Zum Beispiel
+ ``master-brick`` und ``ambient-light-bricklet``.
 
- The ``--timeout`` option allows to specifiy the maximum time in msec for
- waiting for the response of a function call. If a response doesn't arrive
- in time the program exits with an error.
+ Die ``--timeout`` Option erlaubt es die maximale Zeit in msec festzulegen für
+ die auf einen Antwort auf einen Funktionsaufruf gewartet wird. Falls eine
+ Antwort nicht rechtzeitig eintrifft, dann wird das Programm mit einem Fehler
+ beendet.
 
- The ``<uid>`` argument takes a UID corresponding to the selected device type.
- This allows to select a specific device.
+ Das ``<uid>`` Argument nimmt eine UID entsprechend dem gewählten Gerätetypen.
+ Dies erlaubt es ein spezifisches Gerät auszuwählen. Alle verbundenen Bricks
+ und Bricklets können mittels des :sh:func:`enumerate <tinkerforge enumerate>`
+ Befehls entdeckt werden.
 
- The ``<function>`` argument allows to specify which function to call. Which
- additonal arguments have to be specified depends on the specified device and
- function.
+ Das ``<function>`` Argument gibt an welche Funktion aufgerufen werden soll.
+ Welche weiteren Argumente angegeben werden müssen hängt von der ausgewählten
+ Funktion ab.
 
 
 .. sh:function:: X Ptinkerforge Ndispatch A[<option>..] L<device> L<uid> L<callback>
@@ -107,29 +110,32 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  :param <uid>: string
  :param <callback>: string
 
- Der ``dispatch`` Befehl wird verwendet um eingehende Callbacks eines Brick oder
- Bricklet abzufertigen. Der Befehl kennt mehrere Optionen:
+ Der ``dispatch`` Befehl wird verwendet um eingehende Callbacks eines Bricks
+ oder Bricklets abzufertigen. Der Befehl kennt mehrere Optionen:
 
  * ``--help`` zeigt Hilfe für den spezifischen ``dispatch`` Befehl an und endet
    dann
  * ``--list-devices`` zeigt eine Liste der bekannten Geräte an und enden dann
- * ``--duration <duration>`` time (msec) to dispatch incoming callbacks
-   (0: exit after first, -1: forever), default: -1
+ * ``--duration <duration>`` die Zeit (msec) für die eingehende Callbacks
+   abgefertigt werden (0: Ende nach dem ersten Callback, -1: unbegrenzt),
+   Standard: -1
 
- If the ``--list-devices`` option is present all valid device names for the
- ``<device>`` argument are listed. For example ``master-brick`` and
- ``ambient-light-bricklet``.
+ Wenn die ``--list-devices`` Option angegeben ist werden alle bekannten
+ Gerätenamen für das ``<device>`` Argument aufgelistet. Zum Beispiel
+ ``master-brick`` und ``ambient-light-bricklet``.
 
- The ``--duration`` option allows to specifiy the time in msec for dispatching
- incoming callbacks.
+ Die ``--duration`` Option erlaubt es die Zeit in msec festzulegen für die
+ eingehende Callbacks abgefertigt werden.
 
- The ``<uid>`` argument takes a UID corresponding to the selected device type.
- This allows to select a specific device.
+ Das ``<uid>`` Argument nimmt eine UID entsprechend dem gewählten Gerätetypen.
+ Dies erlaubt es ein spezifisches Gerät auszuwählen. Alle verbundenen Bricks
+ und Bricklets können mittels des :sh:func:`enumerate <tinkerforge enumerate>`
+ Befehls entdeckt werden.
 
- The ``<callback>`` argument allows to specify which callback to dispatch.
+ Das ``<callback>`` Argument gibt an welcher Callback abgefertigt werden soll.
 
 
-Basic Functions
+Grundfunktionen
 ^^^^^^^^^^^^^^^
 
 .. sh:function:: X Ptinkerforge Nenumerate A[<option>..]
@@ -141,42 +147,47 @@ Basic Functions
  :returns firmware-version: int,int,int
  :returns device-identifier: string
 
- The ``enumerate`` command is used to discover the connected Bricks and
- Bricklets. It can take several options:
+ Der ``enumerate`` Befehl wird verwendet um verbundenen Bricks und Bricklets zu
+ entdecken. Der Befehl kennt mehrere Optionen:
 
- * ``--help`` shows help for the ``enumerate`` command and exits
- * ``--duration <duration>`` time (msec) to dispatch incoming responses (0: exit
-   after first, -1: forever), default: 250
- * ``--execute <command>`` shell command to execute for each incoming response
+ * ``--help`` zeigt Hilfe für den ``enumerate`` Befehl an und endet dann
+ * ``--duration <duration>`` die Zeit (msec) für die eingehende Antworten
+   abgefertigt werden (0: Ende nach der ersten Antwort, -1: unbegrenzt),
+   Standard: 250
+ * ``--execute <command>`` Shell-Befehl der für jede eingehende Antwort
+   ausgeführt wird ()
 
- The ``--duration`` option allows to specifiy the time in msec for dispatch
- incoming enumerate responses.
+ Die ``--duration`` Option ermöglicht es die Zeit (msec) festzulegen für die
+ eingehende Antworten abgefertigt werden.
 
- The ``--execute`` option allows for advanced output formatting. See the
- :ref:`section about this <ipcon_shell_output>` for details.
+ Die ``--execute`` Option ermöglicht erweiterte Ausgabeformatierung. Siehe dazu
+ den Abschnitt über :ref:`Ausgabeformatierung <ipcon_shell_output>` für Details.
 
- The command has six outputs:
+ Der Befehl hat sechs Ausgabewerte:
 
- * ``uid`` is the UID of the device.
- * ``connected-uid`` is the UID where the device is connected to. For a Bricklet
-   this will be a UID of the Brick where it is connected to. For a Brick it will
-   be the UID of the bottom Master Brick in the stack. For the bottom Master Brick
-   in a stack this will be "1". With this information it is possible to
-   reconstruct the complete network topology.
- * ``position`` is position in stack (0 - 8) for Bricks or the position on
-   Brick (a - d) for Bricklets.
- * ``hardware-version`` is in major, minor and release format.
- * ``firmware-version`` is in major, minor and release format.
- * ``device-identifier`` is the name of the device as known from the
-   ``--list-devices`` option of the ``call`` and ``dispatch`` commands.
+ * ``uid`` ist die UID des Bricks/Bricklets.
+ * ``connected-uid`` ist die UID wo das Brick/Bricklet mit verbunden ist. Für
+   ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen
+   Brick ist es die UID des untersten Master Bricks in einem Stapel. Der
+   unterste Master Brick hat die Connected-UID "1". Mit diesen Informationen
+   sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
+ * ``position`` ist die Position im Stapel (0 - 8) für Bricks oder die Position
+   am Brick (a - d) für Bricklets.
+ * ``hardware-version`` in Major, Minor und Release Format.
+ * ``firmware-version`` in Major, Minor und Release Format.
+ * ``device-identifier`` ist der Name des Bricks/Bricklets wie er auch von der
+   ``--list-devices`` Option der ``call`` und ``dispatch`` Befehle ausgegeben
+   wird.
+
 
 .. _ipcon_shell_output:
 
-Output Formatting
-^^^^^^^^^^^^^^^^^
+Ausgabeformatierung
+^^^^^^^^^^^^^^^^^^^
 
-By default the output of getters and callbacks is printed in ``<key>=<value>``
-format. For example, the output of an enumerate callback:
+Standardmäßig wird die Ausgabe von Getter-Funktionen und Callbacks in
+``<key>=<value>``-Format ausgegeben. Zum Beispiel hier die Ausgabe eines
+Enumerate-Callbacks:
 
 .. code-block:: bash
 
@@ -195,27 +206,27 @@ format. For example, the output of an enumerate callback:
     firmware-version=2,0,0
     device-identifier=distance-ir-bricklet
 
+Die ``--item-separator`` Option beeinflusst wie Arrays formatiert werden und die
+``--group-separator`` Option beeinflusst wie die Ausgabe von Gruppen formatiert
+wird. Das obigen Beispiel zeigt zwei Gruppen getrennt mit einer leeren Zeile.
 
-The ``--item-separator`` option affects how arrays are formatted and the
-``--group-separator`` option affects how output groups are formatted. The
-example above contains two groups seperated by a blank line.
+Erweiterte Optionen
+"""""""""""""""""""
 
-Advanced Options
-""""""""""""""""
+Für erweitere Ausgabeformatierung unterstützen alle Getter-Funktionen und
+Callbacks die ``--execute`` Option. Diese nimmt als Argument eine
+Shell-Befehlszeile mit Platzhaltern der für jede eingehende Antwort ausgeführt
+wird.
 
-For more advanced output formatting all getter functions and callbacks support
-the ``--execute`` option. It takes a shell command line with placeholders to be
-executed for each incoming response.
-
-A simple example: getting the current distance in mm of a Distance IR Bricklet
-in ``<key>=<value>`` format:
+Ein einfaches Beispiel: Die aktuelle Distanz in mm eines Distance IR Bricklets
+in ``<key>=<value>``-Format:
 
 .. code-block:: bash
 
     $ tinkerforge call distance-ir-bricklet eN3 get-distance
     distance=473
 
-Now the ``--execute`` option is used for advanced formatting with ``bc`` and
+Und jetzt mit ``--execute`` Option erweitere Ausgabeformatierung mit ``bc`` und
 ``printf``:
 
 .. code-block:: bash
@@ -223,7 +234,8 @@ Now the ``--execute`` option is used for advanced formatting with ``bc`` and
     $ tinkerforge call distance-ir-bricklet eN3 get-distance --execute "echo 'scale=2; {distance} / 10' | bc | xargs printf 'current distance is %.1fcm\n'"
     current distance is 46.3cm
 
-Before the command line is executed the contained placeholders are replaced with
-the actual values. In the example above a call to ``get-distance`` without
-``--execute`` outputs a single line with key ``distance``. This key is also the
-placeholder for ``--execute`` usage wrapped in curly brackets: ``{distance}``.
+Bevor die Befehlszeile ausgeführt wird, werden die enthaltenen Platzhalter mit
+den entsprechenden Werten ersetzt. Im obigen Beispiel gibt ein Aufruf von
+``get-distance`` ohne ``--execute`` eine einzelne Zeile mit dem Key ``distance``
+aus. Dieser Key wid auch als Platzhalter in geschweiften Klammern für die
+`--execute`` Option verwendet: ``{distance}``.
