@@ -172,7 +172,7 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 
  * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar
    (Enumerierung vom Benutzer ausgelöst).
- * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Gerät ist neu verfügbar
+ * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Gerät ist wurde neu verbunden
    (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde).
    Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration
    verloren hat und neu konfiguriert werden muss.

@@ -216,7 +216,7 @@ werden im Folgenden beschrieben.
 
  * ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom
    Benutzer ausgelöst).
- * ENUMERATION_TYPE_CONNECTED (1): Gerät ist neu verfügbar (Automatisch vom
+ * ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden (Automatisch vom
    Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann
    bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat
    und neu konfiguriert werden muss.

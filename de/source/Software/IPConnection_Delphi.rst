@@ -185,8 +185,8 @@ beschrieben.
 
  * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom
    Benutzer ausgelöst).
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Gerät ist neu verfügbar (automatisch vom
-   Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann
+ * IPCON_ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden (automatisch
+   vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann
    bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat
    und neu konfiguriert werden muss.
  * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei
