@@ -51,6 +51,8 @@ At first some information about the general command structure:
  * ``--port <port>`` port number, default: ``4223``
  * ``--item-separator <item-separator>`` separator for array items, default: ``,`` (comma)
  * ``--group-separator <group-separator>`` separator for output groups, default: ``\n`` (newline)
+ * ``--no-symbolic-input`` disables symbolic input of values
+ * ``--no-symbolic-output`` disables symbolic output of values
 
  All commands, except if the ``--help`` or ``--version`` option is present,
  create a TCP/IP connection to the given *host* and *port*. The host and port
@@ -64,6 +66,14 @@ At first some information about the general command structure:
  except before the first one, to separate the output of multiple callback
  invocations. See the section about :ref:`output formatting <ipcon_shell_output>`
  for details.
+
+ By default symbolic input and output is enabled. For example, the
+ :sh:func:`set-i2c-mode <temperature-bricklet set-i2c-mode>` function of the
+ Temperature Bricklet can take two different values: 0 and 1. With symbolic
+ input enabled there are also two symbols ``fast`` (0) and ``slow`` (1) for
+ this values. The same holds for the :sh:func:`get-i2c-mode
+ <temperature-bricklet get-i2c-mode>` function: the same two symbols are used
+ for symbolic output, if enabled.
 
  There are three subcommands: ``call``, ``dispatch`` and ``enumerate``
 
@@ -137,7 +147,8 @@ Basic Functions
  :returns position: char
  :returns hardware-version: int,int,int
  :returns firmware-version: int,int,int
- :returns device-identifier: string
+ :returns device-identifier: int (has symbols)
+ :returns enumeration-type: int (has symbols)
 
  The ``enumerate`` command is used to discover the connected Bricks and
  Bricklets. It can take several options:
@@ -145,10 +156,16 @@ Basic Functions
  * ``--help`` shows help for the ``enumerate`` command and exits
  * ``--duration <duration>`` time (ms) to dispatch incoming responses (0: exit
    after first, -1: forever), default: 250
+ * ``--types <types>`` array of enumeration types to dispatch, default:
+   ``available``
  * ``--execute <command>`` shell command to execute for each incoming response
 
  The ``--duration`` option allows to specify the time in ms for dispatch
  incoming enumerate responses.
+
+ The ``--types`` option allows to specify which types of enumerate callbacks
+ to dispatch. By default only enuemrate callbacks with
+ ``enumeration-type=available`` are dispatched.
 
  The ``--execute`` option allows for advanced output formatting. See the
  :ref:`section about this <ipcon_shell_output>` for details.
@@ -166,7 +183,21 @@ Basic Functions
  * ``hardware-version`` is in major, minor and release format.
  * ``firmware-version`` is in major, minor and release format.
  * ``device-identifier`` is the name of the device as known from the
-   ``--list-devices`` option of the ``call`` and ``dispatch`` commands.
+   ``--list-devices`` option of the ``call`` and ``dispatch`` commands. With
+   symbolic output disabled it is a number that represents the device.
+ * ``enumeration-type`` is the type of enumeration.
+
+ Possible enumeration types are:
+
+ * ``available`` = 0, the device is available (enumeration triggered by user).
+ * ``connected`` = 1, the device is newly connected (automatically send by Brick
+   after establishing a communication connection). This indicates that the
+   device has potentially lost its previous configuration and needs to be
+   reconfigured.
+ * ``disconnected`` = 2, the device is disconnected (only possible for USB
+   connection). In this case only ``uid`` and ``enumeration-type`` are valid.
+
+ The device identifier numbers can be found :ref:`here <device_identifier>`.
 
 .. _ipcon_shell_output:
 

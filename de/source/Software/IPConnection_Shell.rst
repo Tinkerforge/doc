@@ -53,6 +53,8 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
    Standard: ``,`` (Komma)
  * ``--group-separator <group-separator>`` Trennzeichen für Ausgabegruppen,
    Standard: ``\n`` (neue Zeile)
+ * ``--no-symbolic-input`` deaktiviert symbolische Eingabe von Werten
+ * ``--no-symbolic-output`` deaktiviert symbolische Ausgabe von Werten
 
  Alle Befehle, außer die ``--help`` oder ``--version`` Option sind angegeben,
  erstellen eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
@@ -67,6 +69,15 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  als einer Zeile ausgegeben, außer der ersten, um die Ausgabe von mehreren
  Callback-Aufrufen zu trennen. Siehe den Abschnitt über
  :ref:`Ausgabeformatierung <ipcon_shell_output>` für mehr Details.
+
+ Standardmäßig ist die symbolische Eingabe und Ausgabe aktiviert. Zum Beispiel
+ kann die :sh:func:`set-i2c-mode <temperature-bricklet set-i2c-mode>` Funcktion
+ des Temperature Bricklets mit zwei verschiedenen Werten aufgerufen werden: 0
+ und 1. Wenn symbolische Eingabe aktiviert ist, dann werden auch noch die beiden
+ Symbole ``fast`` (0) und ``slow`` (1) als Eingabe für diese Werte akzeptiert.
+ Das gleiche gilt für die :sh:func:`get-i2c-mode
+ <temperature-bricklet get-i2c-mode>` Funktion: Die gleichen Symbole werden für
+ symbolische Ausgabe verwendet, wenn diese aktiviert ist.
 
  Es gibt drei Unterbefehle: ``call``, ``dispatch`` und ``enumerate``
 
@@ -145,7 +156,8 @@ Grundfunktionen
  :returns position: char
  :returns hardware-version: int,int,int
  :returns firmware-version: int,int,int
- :returns device-identifier: string
+ :returns device-identifier: int (hat Symbole)
+ :returns enumeration-type: int (hat Symbole)
 
  Der ``enumerate`` Befehl wird verwendet um verbundenen Bricks und Bricklets zu
  entdecken. Der Befehl kennt mehrere Optionen:
@@ -154,11 +166,17 @@ Grundfunktionen
  * ``--duration <duration>`` die Zeit (msec) für die eingehende Antworten
    abgefertigt werden (0: Ende nach der ersten Antwort, -1: unbegrenzt),
    Standard: 250
+ * ``--types <types>`` Array von abzufertigenden Enumerierungsarten, Standard:
+   ``available``
  * ``--execute <command>`` Shell-Befehl der für jede eingehende Antwort
    ausgeführt wird ()
 
  Die ``--duration`` Option ermöglicht es die Zeit (msec) festzulegen für die
  eingehende Antworten abgefertigt werden.
+
+ Die ``--types`` Option ermöglicht es anzugeben welche Enumerierungsarten
+ abgefertigt werden sollen. Standardmä0ig werden nur Enumerate-Callback mit
+ ``enumeration-type=available`` abgefertigt.
 
  Die ``--execute`` Option ermöglicht erweiterte Ausgabeformatierung. Siehe dazu
  den Abschnitt über :ref:`Ausgabeformatierung <ipcon_shell_output>` für Details.
@@ -177,7 +195,23 @@ Grundfunktionen
  * ``firmware-version`` in Major, Minor und Release Format.
  * ``device-identifier`` ist der Name des Bricks/Bricklets wie er auch von der
    ``--list-devices`` Option der ``call`` und ``dispatch`` Befehle ausgegeben
-   wird.
+   wird. Wenn symbolische Ausgabe deaktiviert ist, dann ist es eine Zahl die
+   das Brick/Bricklet repräsentiert.
+ * ``enumeration-type`` Art der Enumerierung.
+
+ Mögliche Enumerierungsarten sind:
+
+ * ``available`` = 0, das Gerät ist verfügbar (Enumerierung vom Benutzer
+   ausgelöst).
+ * ``connected`` = 1, das Gerät wurde neu verbunden (Automatisch vom Brick
+   gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten,
+   dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu
+   konfiguriert werden muss.
+ * ``disconnected`` = 2, das Gerät wurde getrennt (Nur bei USB-Verbindungen
+   möglich). In diesem Fall haben nur ``uid`` und ``enumeration-type`` einen
+   gültigen Wert.
+
+ Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
 
 
 .. _ipcon_shell_output:
