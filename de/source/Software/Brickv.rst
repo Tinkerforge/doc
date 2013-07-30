@@ -91,7 +91,7 @@ ermittelt und heruntergeladen. Diese können aber auch manuell im
 Um einen Brick flashen zu können, muss dieser per USB zu einem PC mit
 Brick Viewer verbunden sein.
 
-Bevor ein IMU Brick neu geflashed wird sollte dessen Kalibrierung exportiert
+Bevor ein IMU Brick neu geflasht wird sollte dessen Kalibrierung exportiert
 werden, da diese beim Flashen verloren geht. Dies ist allerdings nur dann
 notwendig falls eine eigenen Kalibrierung vorgenommen wurde, da die
 Werkskalibrierung seit Brick Viewer Version 1.1.13 automatisch wiederhergestellt

@@ -195,7 +195,7 @@ Ein `laser-geschnittenes Gehäuse für das Dual Relay Bricklet <https://www.tink
    :target: ../../_images/Cases/bricklet_dual_relay_case_1000.jpg
 
 Das Gehäuse des Dual Relay Bricklet wird inklusive Kabelbinder für eine
-Zugentlastung und WAGO Verbindungsklemmen zum brücken von Leitungen
+Zugentlastung und WAGO Verbindungsklemmen zum Verbinden von Leitungen
 ausgeliefert. Das Gehäuse ist groß genug um sowohl die Zugentlastung als
 auch die WAGO Klemmen im Gehäuse unterzubringen. 
 
@@ -216,7 +216,7 @@ angeschlossen):
 
 Der Außenleiter (braun) wird über das Dual Relay Bricklet geschaltet.
 Der Schutzleiter (grün-gelb), sowie der Neutralleiter (blau), werden
-mit den WAGO Klemmen gebrückt.
+mit den WAGO Klemmen durchgeschleift.
 
 Dabei ist unbedingt zu beachten, dass der Schutzleiter länger als die anderen
 beiden Leitungen seien sollte. So ist sichergestellt, das dieser bei

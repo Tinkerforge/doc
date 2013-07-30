@@ -237,5 +237,5 @@ Und jetzt mit ``--execute`` Option erweitere Ausgabeformatierung mit ``bc`` und
 Bevor die Befehlszeile ausgeführt wird, werden die enthaltenen Platzhalter mit
 den entsprechenden Werten ersetzt. Im obigen Beispiel gibt ein Aufruf von
 ``get-distance`` ohne ``--execute`` eine einzelne Zeile mit dem Key ``distance``
-aus. Dieser Key wid auch als Platzhalter in geschweiften Klammern für die
+aus. Dieser Key wird auch als Platzhalter in geschweiften Klammern für die
 `--execute`` Option verwendet: ``{distance}``.

@@ -566,7 +566,7 @@ smoke_detector_steps = {
  Das Industrial Digital In 4 Bricklet wird so eingestellt, dass es die
  |cb_interrupt| Callback-Funktion aufruft wenn sich die Spannung an einem
  der Eingänge verändert. Die Entprellperiode wird auf 10s (10000ms) gestellt,
- um zu vermeiden zu viele Callback zu erhalten. Interrupterkennung wird für
+ um zu vermeiden zu viele Callback zu erhalten. Interrupt-Erkennung wird für
  alle Eingänge aktiviert (15 = 0b1111).
 
 .. |step2_put_together| replace::
@@ -845,7 +845,7 @@ garage_control_steps = {
  Neustart der App hinweg, gespeichert.
 
 .. |step7_intro| replace::
- Das ist es! Die App für die gehackte Fernbedienung des Garangentoröffners ist
+ Das ist es! Die App für die gehackte Fernbedienung des Garagentoröffners ist
  fertig.
 
 .. |step7_together| replace::
@@ -1063,7 +1063,7 @@ power_outlet_control_steps = {
  Neustart der App hinweg, gespeichert.
 
 .. |step7_intro| replace::
- Das ist es! Die App für die gehackte Fernbedienung des Garangentoröffners ist
+ Das ist es! Die App für die gehackte Fernbedienung des Garagentoröffners ist
  fertig.
 
 .. |step7_together| replace::

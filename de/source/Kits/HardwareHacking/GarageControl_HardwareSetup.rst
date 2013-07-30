@@ -30,7 +30,7 @@ mit einem Schraubendreher.
 
 Nachdem das Gehäuse entfernt ist können wir einen genaueren Blick auf die
 fünf Taster werfen. Wir sind nur an dem linken Taster interessiert, da dieser,
-bei diesem Modell, das Garagtor öffnet bzw. schließt.
+bei diesem Modell, das Garagentor öffnet bzw. schließt.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_top_closeup.jpg
    :scale: 100 %

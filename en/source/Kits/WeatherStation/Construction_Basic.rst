@@ -45,15 +45,15 @@ Remove Protective Foils
 -----------------------
 
 At first the protective foils on all case parts have to be removed.
-There is one foil on the front- and backside each. In some cases the protective
+There is one foil on the front and back side each. In some cases the protective
 foils can be hard to remove and it seems that there is no foil at all.
 
-Master Brick on Backside
-------------------------
+Master Brick on Back Side
+-------------------------
 
-In the next step the Master Brick has to be screwed on the backside part:
+In the next step the Master Brick has to be screwed on the back side part:
 
-* **4x:** Screw one 10mm spacer with a 5mm screw on the backside part
+* **4x:** Screw one 10mm spacer with a 5mm screw on the back side part
 * Mount the Master Brick with four 5mm screws, the USB port should be oriented
   to the right side
 
@@ -69,12 +69,12 @@ In the next step the Master Brick has to be screwed on the backside part:
    :align: center
    :target: ../../_images/Kits/weather_station_construction_back_1200.jpg
 
-Ambient Light Bricklet on Topside
----------------------------------
+Ambient Light Bricklet on Top Side
+----------------------------------
 
-At the next step the Ambient Light Bricklet has to be attached to the topside
+At the next step the Ambient Light Bricklet has to be attached to the top side
 part of the case. To make sure that it picks up as little light as possible
-from the LCD backlight, it is screwed directly to the topside of the case:
+from the LCD backlight, it is screwed directly to the top side of the case:
 
 * **4x:** Put a 12mm screw from the outside through the case part and screw
   a washer and a nut from the other side against it
@@ -82,7 +82,7 @@ from the LCD backlight, it is screwed directly to the topside of the case:
   with four nuts
 
 If everything went as expected the Bricklet connector should have about 
-1mm space to the topside part. This way it is still easy to connect the 
+1mm space to the top side part. This way it is still easy to connect the 
 Bricklet cable, and the sensor is at a good position to give useful 
 measurements.
 
@@ -99,7 +99,7 @@ measurements.
    :target: ../../_images/Kits/weather_station_construction_top_1200.jpg
 
 Alternative: In case of the black weather station, the Ambient Light Bricklet is mounted
-on top of the outside of the topside.
+on top of the outside of the top side.
 
 .. image:: /Images/Kits/weather_station_black_construction_top_schematic_350.jpg
    :scale: 100 %
@@ -113,8 +113,8 @@ on top of the outside of the topside.
    :align: center
    :target: ../../_images/Kits/weather_station_black_construction_top_1200.jpg
 
-Humidity and Barometer Bricklet on Frontside
---------------------------------------------
+Humidity and Barometer Bricklet on Front Side
+---------------------------------------------
 
 Humidity and Barometer Bricklet will be attached directly to the front side part
 of the case:
@@ -144,8 +144,8 @@ Barometer Bricklets the same way as the Ambient Light Bricklet to save space.
 The already attached Bricklet cables will make the installation of the LCD 
 Bricklet in the next step more easy.
 
-LCD 20x4 Bricklet on Frontside
-------------------------------
+LCD 20x4 Bricklet on Front Side
+-------------------------------
 
 Now we mount the LCD 20x4 Bricklet to the front side of the case:
 
@@ -181,7 +181,7 @@ Putting the Case together
 
 In the last step the parts of the case are put together:
 
-* Put the topside part in the backside part
+* Put the top side part in the back side part
 * Connect the Ambient Light Bricklet with the Master Brick
 
 .. image:: /Images/Kits/weather_station_construction_top_to_back_350.jpg
@@ -190,9 +190,9 @@ In the last step the parts of the case are put together:
    :align: center
    :target: ../../_images/Kits/weather_station_construction_top_to_back_1200.jpg
 
-* Attach the side parts to the backside (1x left, 2x right)
+* Attach the side parts to the back side (1x left, 2x right)
 * **4x:** Construct spacer consisting of one 12mm, two 9mm and one 10mm spacer
-* **4x:** Mount these spacers on the backside part with 5mm screws
+* **4x:** Mount these spacers on the back side part with 5mm screws
 
 .. image:: /Images/Kits/weather_station_construction_top_back_spacer_350.jpg
    :scale: 100 %
@@ -201,7 +201,7 @@ In the last step the parts of the case are put together:
    :target: ../../_images/Kits/weather_station_construction_top_back_spacer_1200.jpg
 
 * Connect the remaining Bricklets to the Master Brick. This can be done by
-  lying the back and the front part side by side
+  lying the back and the front part side-by-side
 
 .. image:: /Images/Kits/weather_station_construction_cabling_350.jpg
    :scale: 100 %

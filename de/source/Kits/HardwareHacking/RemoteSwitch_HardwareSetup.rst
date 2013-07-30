@@ -66,7 +66,7 @@ Pin Nummer Signal Draht Farbe
 13         OFF    lila
 ========== ====== ===========
 
-Das folgende Foto zeigt die Position des HX2262 und die Pinnummerierung:
+Das folgende Foto zeigt die Position des HX2262 und die Pin-Nummerierung:
 
 .. image:: /Images/Kits/hardware_hacking_remote_bottom_labeled_350.jpg
    :scale: 100 %

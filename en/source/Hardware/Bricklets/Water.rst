@@ -112,7 +112,7 @@ If everything went as expected you can now ... FIXME.
 Case
 ----
 
-A `laser-cut case for the Water Bricklet <https://www.tinkerforge.com/en/shop/cases/case-water-bricklet.html>`__ is availabler.
+A `laser-cut case for the Water Bricklet <https://www.tinkerforge.com/en/shop/cases/case-water-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_water_case_built_up_350.jpg
    :scale: 100 %

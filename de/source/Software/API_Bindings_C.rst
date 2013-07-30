@@ -48,7 +48,7 @@ Befehl um das Beispiel mit GCC unter Linux zu kompilieren wie folgt aus::
 
 Unter Windows wird Win32 für Threads und WinSock2 (``ws2_32``) für die
 Netzwerkverbindung verwendet. Mit MinGW lässt sich das Beispiel wie folgt
-kompilieren (Linkerparameter müssen nach den Quelldateien angegeben werden)::
+kompilieren (Linker-Parameter müssen nach den Quelldateien angegeben werden)::
 
  gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
 
@@ -182,7 +182,7 @@ Dann noch ``libws2_32.a`` (WinSock2) zum Projekt hinzufügen:
 * Projekt Optionen
 * Parameter
 * Klicke Bibliothek/Objekt hinzufügen
-* Wähle libws2_32.a
+* Wähle ``libws2_32.a``
 * Klicke Open
 * Klicke Ok
 

@@ -86,7 +86,7 @@ Treiberadresse Manuell auswählen.
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_3.jpg
 
-Sie befinden sich beim Brickd im Verzeichnis "drivers".
+Sie befinden sich beim Brickd im Verzeichnis ``drivers\brick``.
 
 .. image:: /Images/Screenshots/brickd_windows_driver_4_small.jpg
    :scale: 100 %
@@ -94,9 +94,9 @@ Sie befinden sich beim Brickd im Verzeichnis "drivers".
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_4.jpg
 
-Nach einer erfolgreichen Installation sollte der Brick en Treiber
-"Brick_Driver" nutzen. Dies kann mit dem :ref:`Brick Viewer <brickv>` getestet
-werden.
+Nach einer erfolgreichen Installation sollte der Brick den Treiber
+"Tinkerforge Brick" nutzen. Dies kann mit dem :ref:`Brick Viewer <brickv>`
+getestet werden.
 
 .. note::
  Unter Windows 7 ist es möglich, dass Windows versucht den Treiber automatisch
@@ -105,8 +105,8 @@ werden.
  fehlschlagen. Falls im Brick Viewer kein Brick angezeigt wird, kann im
  Gerätemanager nachgeschaut werden ob der korrekte Treiber installiert ist.
  Falls dies nicht der Fall ist, kann dort der falsche Treiber mit dem
- richtigen aus dem ``drivers`` Verzeichnis vom Brickd manuell überschrieben
- werden.
+ richtigen aus dem ``drivers\brick`` Verzeichnis vom Brickd manuell
+ überschrieben werden.
 
 
 Treiber Installation (Windows 8)

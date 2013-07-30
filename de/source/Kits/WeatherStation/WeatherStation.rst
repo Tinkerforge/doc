@@ -178,7 +178,7 @@ Demo Anwendung
 
 Wenn die Hardware korrekt funktioniert kann die Demo Anwendung zum
 Starterkit: Wetterstation getestet werden. Diese implementiert für
-Demonstationszwecke drei der vorgestellten :ref:`Projekte
+Demonstrationszwecke drei der vorgestellten :ref:`Projekte
 <starter_kit_weather_station_projects>`:
 
 1. :ref:`starter_kit_weather_station_write_to_lcd`
@@ -273,7 +273,7 @@ Möglichkeiten:
 * USB Verbindung zu einem PC: Installiere den Brick Daemon und die Anwendung
   auf dem PC und verbinde den Master Brick per USB.
 * WLAN Verbindung zu einem PC: Installiere die Anwendung auf dem PC und
-  Verbinde die Wetterstation direct per WLAN oder über einen Accesspoint.
+  Verbinde die Wetterstation direkt per WLAN oder über einen Access Point.
 * Raspberry Pi oder ein anderes Embedded Board integriert in die Wetterstation:
   Installiere den Brick Daemon und die Anwendung auf dem Embedded Board und
   verbinde den Master Brick der Wetterstation per USB.
@@ -305,7 +305,7 @@ Historie der Wetterstationsdaten speichern, sowie nette Graphen zeichnen:
    :target: ../../_images/Kits/weather_station_xively_graphs_orig.jpg
 
 Eine Beispiel-Implementierung mit Schritt-für-Schritt Instruktionen
-die die Wetterdaten auf Xively veröffentlicht is verfügbar
+die die Wetterdaten auf Xively veröffentlicht ist verfügbar
 in :ref:`Python <starter_kit_weather_station_python_to_xively>`.
 
 .. toctree::

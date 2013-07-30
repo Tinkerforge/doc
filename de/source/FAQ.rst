@@ -177,7 +177,7 @@ Mein Brick taucht nicht als serielle Schnittstelle für's Flashing aus
 
 **Brick nicht im Bootloader**:
 
-Ein Brick kann nur geflashed werden wenn er im Bootloader Modus ist. Um in den
+Ein Brick kann nur geflasht werden wenn er im Bootloader Modus ist. Um in den
 Bootloader zu wechseln muss der Erase Knopf gedrückt gehalten und dabei der
 Reset Knopf einmal gedrückt werden. Die blaue LED sollte jetzt aus sein.
 

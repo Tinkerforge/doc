@@ -90,7 +90,7 @@ At first you have to take a
 closer look at the buttons and their connections on the circuit board. 
 In most cases you can directly see two traces of the circuit board connected
 to the button. If you have identified these connections, which should be
-externally shortable, you only have to solder
+shorted-out from the outside, you only have to solder
 two wires on it (each to one case) and connect one relay of the Industrial
 Quad Relay Bricklet with it.
 

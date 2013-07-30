@@ -113,7 +113,7 @@ initialisiert werden:
     ?>
 
 
-Hier müssen die UIDs ("apy", "7bA" und "d99") durch die UIDs von den eigenen
+Hier müssen die UIDs (``apy``, ``7bA`` und ``d99``) durch die UIDs von den eigenen
 Bricklets ersetzt werden.
 
 

@@ -79,14 +79,14 @@ At first some information about the general command structure:
 
  * ``--help`` shows help for the ``call`` command and exits
  * ``--list-devices`` shows a list of known devices and exits
- * ``--timeout <timeout>`` maximum time (msec) to wait for response, default:
+ * ``--timeout <timeout>`` maximum time (ms) to wait for response, default:
    ``2500``
 
  If the ``--list-devices`` option is present all valid device names for the
  ``<device>`` argument are listed. For example ``master-brick`` and
  ``ambient-light-bricklet``.
 
- The ``--timeout`` option allows to specify the maximum time in msec for
+ The ``--timeout`` option allows to specify the maximum time in ms for
  waiting for the response of a function call. If a response doesn't arrive
  in time the program exits with an error.
 
@@ -110,14 +110,14 @@ At first some information about the general command structure:
 
  * ``--help`` shows help for the ``dispatch`` command and exits
  * ``--list-devices`` shows a list of known devices and exits
- * ``--duration <duration>`` time (msec) to dispatch incoming callbacks
+ * ``--duration <duration>`` time (ms) to dispatch incoming callbacks
    (0: exit after first, -1: forever), default: -1
 
  If the ``--list-devices`` option is present all valid device names for the
  ``<device>`` argument are listed. For example ``master-brick`` and
  ``ambient-light-bricklet``.
 
- The ``--duration`` option allows to specify the time in msec for dispatching
+ The ``--duration`` option allows to specify the time in ms for dispatching
  incoming callbacks.
 
  The ``<uid>`` argument takes a UID corresponding to the selected device type.
@@ -143,11 +143,11 @@ Basic Functions
  Bricklets. It can take several options:
 
  * ``--help`` shows help for the ``enumerate`` command and exits
- * ``--duration <duration>`` time (msec) to dispatch incoming responses (0: exit
+ * ``--duration <duration>`` time (ms) to dispatch incoming responses (0: exit
    after first, -1: forever), default: 250
  * ``--execute <command>`` shell command to execute for each incoming response
 
- The ``--duration`` option allows to specifiy the time in msec for dispatch
+ The ``--duration`` option allows to specify the time in ms for dispatch
  incoming enumerate responses.
 
  The ``--execute`` option allows for advanced output formatting. See the

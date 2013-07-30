@@ -83,7 +83,7 @@ Choose the driver location manually.
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_3.jpg
 
-You will find them in your Brickd program folder in the "drivers" folder.
+You will find them in your Brickd program folder in the ``drivers\brick`` folder.
 
 .. image:: /Images/Screenshots/brickd_windows_driver_4_small.jpg
    :scale: 100 %
@@ -91,8 +91,9 @@ You will find them in your Brickd program folder in the "drivers" folder.
    :align: center
    :target: ../_images/Screenshots/brickd_windows_driver_4.jpg
 
-After a successful installation the Brick should use a driver called "Tinkerforge Brick".
-You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
+After a successful installation the Brick should use a driver called
+"Tinkerforge Brick". You can test the Brick by using the
+:ref:`Brick Viewer<brickv>`.
 
 .. note::
  Under Windows 7 it is possible that Windows tries to install the
@@ -100,8 +101,8 @@ You can test the Brick by using the :ref:`Brick Viewer<brickv>`.
  This automatic driver installation can fail without
  your notice. If you don't see Bricks in the Brick Viewer, please check in
  the Windows "Device Manager" that the drivers for the connected Bricks are
- installed correctly. If not, please choose the ``drivers`` folder in Brick
- Daemon installation and install the drivers manually.
+ installed correctly. If not, please choose the ``drivers\brick`` folder in
+ Brick Daemon installation and install the drivers manually.
 
 
 Driver Installation (Windows 8)

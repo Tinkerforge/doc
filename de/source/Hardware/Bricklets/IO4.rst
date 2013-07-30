@@ -137,13 +137,13 @@ benutzt werden.
   FIXME: update screenshot and description for monoflop
 
 Hier kann die "Debounce Period" eingestellt werden, dies ist die Entprellperiode
-die Interrupt Callbacks. Ein Beispiel: Wenn die Debounce Period auf 100 gestellt
+für die Interrupt Callbacks. Ein Beispiel: Wenn die Entprellperiode auf 100 gestellt
 wird, werden Interrupts maximal alle 100ms ausgelöst. Dies ist notwendig wenn
 etwas prellendes (z.B. ein Taster) an das IO-4 Bricklet angeschlossen wird.
 Der optimale Wert kann im Brick Viewer ermittelt und dann später im eigenen
 Programm verwendet werden.
 
-Unter der Einstellung für die Debounce Period können die einzelnen Pins
+Unter der Einstellung für die Entprellperiode können die einzelnen Pins
 konfiguriert werden. Jeder Pin kann als Eingang oder Ausgang betrieben werden.
 Für Eingangspins kann zusätzlich ein Pull-Up geschaltet werden. Die aktuelle
 Konfiguration und der Zustand der Pins ist dann in der Tabelle weiter unten

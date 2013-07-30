@@ -181,7 +181,7 @@ about an event or specific condition.
 
 Most callbacks are disabled by default and have to enabled first.
 For example, the :tcpip:func:`CALLBACK_MAGNETIC_FIELD <IMU.CALLBACK_MAGNETIC_FIELD>`
-callback of the IMU Brick with UID 6wVE7W (3631747890 as integer) can be enabled
+callback of the IMU Brick with UID ``6wVE7W`` (3631747890 as integer) can be enabled
 with a call to :tcpip:func:`IMU.set_magnetic_field_period` with a period larger 0.
 Afterwards you will periodically receive response packets with
 

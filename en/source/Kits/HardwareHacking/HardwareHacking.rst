@@ -332,7 +332,7 @@ Minimalistic examples are available in:
 Read out Smoke Detectors
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wireless interconnectable smoke detectors allow to read out the alarm signal of
+Wirelessly interconnectable smoke detectors allow to read out the alarm signal of
 a whole smoke detector network at a single point. We are going to hack such a
 smoke detector and utilized this feature to trigger actions if smoke is
 detected. For example, notify someone with an email or a text message about the

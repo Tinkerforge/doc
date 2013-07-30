@@ -161,3 +161,11 @@ armel
 Cosm
 Xively
 iPhone
+triggerable
+clickable
+interconnectable
+BaseT
+BaseTX
+jQuery
+nA
+Youtube

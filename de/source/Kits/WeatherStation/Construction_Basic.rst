@@ -134,7 +134,7 @@ befestigt:
   Abstandsbolzen schrauben
 * Das Humidity Bricklet mit 5mm Schrauben an die
   Abstandsbolzen schrauben
-* Brickletkabel an die Bricklets anschließen
+* Bricklet Kabel an die Bricklets anschließen
 
 .. image:: /Images/Kits/weather_station_construction_front1_schematic_350.jpg
    :scale: 100 %

@@ -178,7 +178,7 @@ Then ``libws2_32.a`` (WinSock2) has to included by clicking:
 * Project Options
 * Parameters
 * Click Add Library or Object
-* Choose libws2_32.a
+* Choose ``libws2_32.a``
 * Click Open
 * Click Ok
 
