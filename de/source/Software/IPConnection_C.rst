@@ -200,10 +200,10 @@ werden im Folgenden beschrieben.
  Der Callback empfängt sieben Parameter:
 
  * *uid*: Die UID des Bricks/Bricklets.
- * *connected_uid*: Die UID wo das Brick/Bricklet mit verbunden ist. Für ein
-   Bricklet ist dies die UID des Bricks mit dem es verbunden ist. Für einen
-   Brick ist es die UID des untersten Master Bricks in einem Stapel. Der
-   unterste Master Brick hat die connected UID "1". Mit diesen Informationen
+ * *connected_uid*: Die UID des Bricks mit dem das Brick/Bricklet verbunden
+   ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist.
+   Für einen Brick ist es die UID des untersten Master Bricks in einem Stapel.
+   Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
    sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
  * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
    'a' - 'd' (Position an Brick).

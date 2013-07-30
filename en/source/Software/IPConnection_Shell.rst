@@ -158,8 +158,8 @@ Basic Functions
  * ``uid`` is the UID of the device.
  * ``connected-uid`` is the UID where the device is connected to. For a Bricklet
    this will be a UID of the Brick where it is connected to. For a Brick it will
-   be the UID of the bottom Master Brick in the stack. For the bottom Master Brick
-   in a stack this will be "1". With this information it is possible to
+   be the UID of the bottom Master Brick in the stack. For the bottom Master
+   Brick in a stack this will be "0". With this information it is possible to
    reconstruct the complete network topology.
  * ``position`` is position in stack (0 - 8) for Bricks or the position on
    Brick (a - d) for Bricklets.
