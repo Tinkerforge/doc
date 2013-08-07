@@ -157,7 +157,7 @@ wieder zu entfernen.
   Der Listener empfängt sieben Parameter:
 
   * *uid*: Die UID des Bricks/Bricklets.
-  * *connectedUidDie UID des Bricks mit dem das Brick/Bricklet verbunden
+  * *connectedUid*: Die UID des Bricks mit dem das Brick/Bricklet verbunden
     ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist.
     Für einen Brick ist es die UID des untersten Master Bricks in einem Stapel.
     Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
