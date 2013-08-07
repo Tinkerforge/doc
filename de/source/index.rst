@@ -23,8 +23,8 @@ Kategorien:
 * :ref:`product_overview_power_supplies`
 * :ref:`product_overview_accessories`
 
-Die :ref:`Timeline <timeline>` gibt eine Übersicht über zukünftige Produkte und
-Entwicklungen.
+Die :ref:`Timeline <timeline>` gibt eine Übersicht über die Historie
+veröffentlichter Hardware und gemachter Entwicklungen.
 
 .. toctree::
    :hidden:

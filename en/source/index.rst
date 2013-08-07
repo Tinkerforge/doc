@@ -22,8 +22,8 @@ Our :ref:`products <product_overview>` are divided into five different categorie
 * :ref:`product_overview_power_supplies`
 * :ref:`product_overview_accessories`
 
-This :ref:`Timeline <timeline>` presents an overview of future products and
-developments.
+This :ref:`Timeline <timeline>` presents an overview of released products and
+finished developments.
 
 .. toctree::
    :hidden:
