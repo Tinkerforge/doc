@@ -6,7 +6,7 @@
 Shell - API Bindings
 ====================
 
-**Requirements**: Python 2.5 or newer, Python 3 is also supported
+**Requirements**: Python 2.5 or newer with argparse module, Python 3 is also supported
 
 The Shell bindings (:ref:`download <downloads_bindings_examples>`) consist of
 a Python script to interact with all
@@ -26,19 +26,6 @@ All examples are meant for typical Unix shells such as Bash. They will work
 on Linux and Mac OS X as they are. There are Bash ports for Windows that allow
 to run the examples unmodified, too.
 
-If the examples should be used from the Windows Command Prompt ``cmd.exe`` then
-the shebang line ``#!/bin/sh`` has to be removed and all lines starting
-with ``tinkerforge`` have to be prefixed with ``python``. So this::
-
- #!/bin/sh
- tinkerforge enumerate
-
-becomes this::
-
- python tinkerforge enumerate
-
-Finally, the file extension has to be changed from ``.sh`` to ``.bat`` or
-``.cmd``.
 
 More Examples and Projects
 --------------------------
