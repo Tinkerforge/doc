@@ -232,6 +232,7 @@ Enumerate-Callbacks:
     hardware-version=1,0,0
     firmware-version=2,0,6
     device-identifier=master-brick
+    enumeration-type=available
 
     uid=eN3
     connected-uid=68yjBL
@@ -239,6 +240,7 @@ Enumerate-Callbacks:
     hardware-version=1,1,0
     firmware-version=2,0,0
     device-identifier=distance-ir-bricklet
+    enumeration-type=available
 
 Die ``--item-separator`` Option beeinflusst wie Arrays formatiert werden und die
 ``--group-separator`` Option beeinflusst wie die Ausgabe von Gruppen formatiert
