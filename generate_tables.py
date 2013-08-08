@@ -53,6 +53,7 @@ bricklets =      [['Ambient Light',              'ambient_light',              b
                   ['Dual Button',                'dual_button',                bindings, "",          False],
                   ['Dual Relay',                 'dual_relay',                 bindings, "",          True],
                   ['GPS',                        'gps',                        bindings, "",          True],
+                  ['Hall Effect',                'hall_effect',                bindings, "",          False],
                   ['Humidity',                   'humidity',                   bindings, "",          True],
                   ['Industrial Digital In 4',    'industrial_digital_in_4',    bindings, "",          True],
                   ['Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, "",          True],
@@ -64,6 +65,7 @@ bricklets =      [['Ambient Light',              'ambient_light',              b
                   ['LCD 16x2',                   'lcd_16x2',                   bindings, "",          True],
                   ['LCD 20x4',                   'lcd_20x4',                   bindings, "",          True],
                   ['LED Strip',                  'led_strip',                  bindings, "",          False],
+                  ['Line',                       'line',                       bindings, "",          False],
                   ['Linear Poti',                'linear_poti',                bindings, "",          True],
                   ['Moisture',                   'moisture',                   bindings, "",          False],
                   ['Motion Detector',            'motion_detector',            bindings, "",          False],
@@ -80,7 +82,6 @@ bricklets =      [['Ambient Light',              'ambient_light',              b
                   ['Tilt',                       'tilt',                       bindings, "",          False],
                   ['Voltage',                    'voltage',                    bindings, "",          True],
                   ['Voltage/Current',            'voltage_current',            bindings, "",          True],
-                  ['Water',                      'water',                      bindings, "",          False],
                  ]
 
                   # display,                      uri,                         bindings, description, is_published
@@ -172,6 +173,10 @@ bricklet_descriptions = {
     'en': 'Determine position, velocity and altitude',
     'de': 'Bestimmt Position, Geschwindigkeit und Höhe'
     },
+'hall_effect': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'humidity': {
     'en': 'Measures relative humidity',
     'de': 'Misst relative Luftfeuchtigkeit'
@@ -213,6 +218,10 @@ bricklet_descriptions = {
     'de': '20x4 Zeichen alphanumerisches Display'
     },
 'led_strip': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'line': {
     'en': 'FIXME',
     'de': 'FIXME'
     },
@@ -279,10 +288,6 @@ bricklet_descriptions = {
 'voltage_current': {
     'en': 'Measure power, voltage and current up to 720W/36V/20A',
     'de': 'Misst Leistung, Spannung und Strom bis zu 720W/36V/20A'
-    },
-'water': {
-    'en': 'FIXME',
-    'de': 'FIXME'
     },
 }
 
