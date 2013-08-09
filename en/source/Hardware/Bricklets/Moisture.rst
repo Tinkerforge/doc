@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Moisture Bricklet
-:shoplink: ../../../shop/bricklets/moisture-bricklet.html
+:FIXME_shoplink: ../../../shop/bricklets/moisture-bricklet.html
 
 .. include:: Moisture.substitutions
    :start-after: >>>substitutions

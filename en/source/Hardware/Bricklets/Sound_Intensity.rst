@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Sound Intensity Bricklet
-:shoplink: ../../../shop/bricklets/sound-intensity-bricklet.html
+:FIXME_shoplink: ../../../shop/bricklets/sound-intensity-bricklet.html
 
 .. include:: Sound_Intensity.substitutions
    :start-after: >>>substitutions

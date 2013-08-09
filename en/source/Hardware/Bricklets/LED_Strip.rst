@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / LED Strip Bricklet
-:shoplink: ../../../shop/bricklets/led-strip-bricklet.html
+:FIXME_shoplink: ../../../shop/bricklets/led-strip-bricklet.html
 
 .. include:: LED_Strip.substitutions
    :start-after: >>>substitutions

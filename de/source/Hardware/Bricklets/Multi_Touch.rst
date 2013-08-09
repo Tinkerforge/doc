@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Multi Touch Bricklet
-:shoplink: ../../../shop/bricklets/multi-touch-bricklet.html
+:FIXME_shoplink: ../../../shop/bricklets/multi-touch-bricklet.html
 
 .. include:: Multi_Touch.substitutions
    :start-after: >>>substitutions
@@ -13,7 +13,7 @@ Multi Touch Bricklet
 ====================
 
 .. note::
- Diese Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
+ Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
  und die Dokumentation sind in einem halbfertigen Zustand.
 
 .. FIXME raw:: html

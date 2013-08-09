@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Segment Display 4x7 Bricklet
-:shoplink: ../../../shop/bricklets/segment-display-4x7-bricklet.html
+:FIXME_shoplink: ../../../shop/bricklets/segment-display-4x7-bricklet.html
 
 .. include:: Segment_Display_4x7.substitutions
    :start-after: >>>substitutions
@@ -13,7 +13,7 @@ Segment Display 4x7 Bricklet
 ============================
 
 .. note::
- Diese Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
+ Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
  und die Dokumentation sind in einem halbfertigen Zustand.
 
 .. FIXME raw:: html

@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Tilt Bricklet
-:shoplink: ../../../shop/bricklets/tilt-bricklet.html
+:FIXME_shoplink: ../../../shop/bricklets/tilt-bricklet.html
 
 .. include:: Tilt.substitutions
    :start-after: >>>substitutions
