@@ -14,7 +14,7 @@ LED Strip Bricklet
 
 .. note::
  Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
- und die Dokumentation sind in einem halbfertigen Zustand.
+ sowie die Dokumentation sind in einem unfertigen Zustand.
 
 .. FIXME raw:: html
 

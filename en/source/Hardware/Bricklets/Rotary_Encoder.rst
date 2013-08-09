@@ -14,7 +14,7 @@ Rotary Encoder Bricklet
 
 .. note::
  This Bricklet is currently in the prototype stage and the software/hardware
- and documentation is in a half-finished state.
+ as well as the documentation is in an incomplete state.
 
 .. FIXME raw:: html
 
