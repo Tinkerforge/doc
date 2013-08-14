@@ -47,3 +47,4 @@ History
    "",     "23", "`Ethernet Extension with PoE <http://www.tinkerforge.com/en/blog/2013/6/6/ethernet-extension-available>`__"
    "",     "27", "`Industrial Dual 0-20mA and PTC Bricklet <http://www.tinkerforge.com/en/blog/2013/7/4/industrial-dual-0-20ma-and-ptc-bricklet>`__"
    "",     "29", "`Starter Kit: Hardware Hacking <http://www.tinkerforge.com/en/blog/2013/7/16/starter-kit:-hardware-hacking>`__"
+   "",     "33", "`Shell bindings <http://www.tinkerforge.com/en/blog/2013/8/14/shell-bindings-ready>`__"

@@ -48,3 +48,4 @@ Historie
    "",     "23", "`Ethernet Extension mit PoE <http://www.tinkerforge.com/de/blog/2013/6/6/ethernet-extension-verfuegbar>`__"
    "",     "27", "`Industrial Dual 0-20mA und PTC Bricklet <http://www.tinkerforge.com/de/blog/2013/7/4/industrial-dual-0-20ma-und-ptc-bricklet>`__"
    "",     "29", "`Starterkit: Hardware Hacking <http://www.tinkerforge.com/de/blog/2013/7/16/starter-kit:-hardware-hacking>`__"
+   "",     "33", "`Shell Bindings <http://www.tinkerforge.com/de/blog/2013/8/14/shell-bindings-fertig>`__"
