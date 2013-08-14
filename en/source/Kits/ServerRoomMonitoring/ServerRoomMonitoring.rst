@@ -17,7 +17,7 @@ Features
  * Allows Low Cost and Modular Server Room Monitoring 
  * 19" or 10" Rack Mountable
  * Accessible and Powered by Ethernet (PoE) 
- * Expandable: Simply add Sensors if you need them
+ * Expandable: Simply add Sensors or I/O if you need them
  * API for many programming languages 
 
    * (|bindings|)
@@ -29,31 +29,43 @@ Description
 
 The *Starter Kit: Server Room Monitoring* is an open source kit to
 monitor server room installations. The basic kit is equipped with the following
-Sensors: One :ref:`Ambient Light Bricklet <ambient_light_bricklet>`,
-:ref:`Temperature Bricklet <temperature_bricklet>` and 
-:ref:`PTC Bricklet <ptc_bricklet>` with attachable sensor probe.
+Sensors: One :ref:`Ambient Light Bricklet <ambient_light_bricklet>` (e.g. to 
+monitor the room illumination),
+:ref:`Temperature Bricklet <temperature_bricklet>` (e.g. to monitor
+the temperature in the server rack) and a
+:ref:`PTC Bricklet <ptc_bricklet>` with attachable temperature sensor probe 
+(e.g. to monitor the temperature in a server). The included enclosure lets you
+mount the kit directly in a 10" or 19" server rack.
 
-It can be extended by multiple other Bricklets probes, different other sensors, in/outputs e.g. 
-to read case switches or doors or to switch warning devices on/off.
-There are different options to mount miscellaneous :ref:`Bricklets <product_overview_bricklets>`.
+The kit uses the Tinkerforge building blocks, such that it can be extended 
+easily by more temperature probes, other sensors types (e.g. motion detector), 
+in- or outputs (to switch computers on/off or to monitor doors) and so on. 
+This way it is adaptable flexibly to your needs. 
 
-One or more external controlling devices, such as (Embedded-) PCs, smart phones or
-tablets, can be used to control the kit from outside over the Ethernet 
-connection. Therefore monitoring over the Internet is also possible.
+One or more external controlling devices, such as (Embedded-) PCs, smart phones 
+or tablets, can be used to control the hardware from outside over the Ethernet 
+connection. Therefore monitoring over the Internet is also possible. Power 
+Supply is possible over onboard 
+`Power over Ethernet (PoE)<https://en.wikipedia.org/wiki/Power_over_Ethernet>`__.
 
 The kit allows to modify soft- and hardware. The casing consists of
 tinker-friendly PMMA which can be easily modified (e.g. drill new holes with 
 simple wood drill). Additionally mounting holes for 
+different :ref:`Bricklets <product_overview_bricklets>` and 
+:ref:`Bricks <product_overview_bricks>` are provided, e.g.:
+
 :ref:`Analog In <analog_in_bricklet>`,
 :ref:`Analog Out <analog_in_bricklet>`,
 :ref:`Industrial Digital In 4 <industrial_digital_in_4_bricklet>`,
 :ref:`Industrial Digital Out 4 <industrial_digital_out_4_bricklet>`,
 :ref:`Industrial Quad Relay <industrial_quad_relay_bricklet>`,
-and :ref:`IO-4 <io4_bricklet>` Bricklets are provided.
+and :ref:`IO-4 <io4_bricklet>`.
 
 Programming this kit can be done with all of the available
-bindings (|bindings|). Example implementations for all supported programming languages 
-and a demo application are available. This will give you a starting point into the 
+bindings (|bindings|). Example implementations for all supported programming 
+languages and example applications for the usage with 
+`Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ and 
+other are available. This will give you a quick starting point into the 
 programming with Tinkerforge.
 
 Technical Specifications
@@ -81,8 +93,8 @@ Resources
 * Example source code *Website* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
  
 
-Firmware updating and first tests
----------------------------------
+First tests, firmware upgrade and configuration
+------------------------------------------------
 
 As a very first step you should try out and update your Bricks and Bricklets.
 
@@ -101,9 +113,16 @@ Viewer, too:
    :target: ../../_images/Kits/server_room_monitoring_update_orig.jpg
 
 As next step click through the tabs of the Brick Viewer
-to see if all of the sensors are working correctly. Now you can be sure that 
+to see if everything is working correctly. Next you should configure the
+Ethernet Extension. To do that click on the Master Brick tab and
+configure it to your needs. More information about how to configure 
+a Ethernet Extension can be found 
+:ref:`here <ethernet_configuration>`.
+
+
+After testing the hardware and configuration you can be sure that 
 the Bricks and Bricklets have versions that work together and that
-everything will work if it is screwed together in the weather station
+everything will work if it is screwed together in the server 10"/19"
 enclosure.
 
 
@@ -135,8 +154,6 @@ Server Room Monitoring with Nagios
 Server Room Monitoring with Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-
 Upload Sensor Data to Xively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -153,4 +170,23 @@ in any way and you have published your results on our
 `Wiki <http://www.tinkerunity.org/wiki/>`__, on your blog or similar: 
 Please give us a notice. We would love to add a link
 to your project here!
+
+Remote On/Off Switch
+^^^^^^^^^^^^^^^^^^^^
+
+Use Industrial Quad Relay to switch computers remotely on or off.
+
+Server Room Motion Detector
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Use a Motion Detector Bricklet (coming soon) to detect motion in your server
+room. You can also add a Sound Intensity Bricklet to detect room intruders
+by their noise.
+
+Error Code Display
+^^^^^^^^^^^^^^^^^^
+
+With a Segment Display 4x7 Bricklet you can show information directly
+on the case.
+
 
