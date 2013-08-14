@@ -27,7 +27,7 @@ bindings = [('Modbus', 'modbus', False),
             ('Java',   'java',   True),
             ('PHP',    'php',    True),
             ('Python', 'python', True),
-            #('Shell',  'shell',  True),
+            ('Shell',  'shell',  True),
             ('Ruby',   'ruby',   True),
             ('VB.NET', 'vbnet',  True)]
 

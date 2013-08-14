@@ -49,4 +49,5 @@ Programmiersprache:
 * :ref:`PHP <api_bindings_php>`
 * :ref:`Python <api_bindings_python>`
 * :ref:`Ruby <api_bindings_ruby>`
+* :ref:`Shell <api_bindings_shell>`
 * :ref:`VB.NET <api_bindings_vbnet>`
