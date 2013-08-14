@@ -27,8 +27,8 @@ bindings = [('Modbus', 'modbus', False),
             ('Java',   'java',   True),
             ('PHP',    'php',    True),
             ('Python', 'python', True),
-            ('Shell',  'shell',  True),
             ('Ruby',   'ruby',   True),
+            ('Shell',  'shell',  True),
             ('VB.NET', 'vbnet',  True)]
 
                   # display,                      uri,                         bindings, description, is_published
