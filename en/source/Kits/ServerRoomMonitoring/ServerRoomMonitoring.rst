@@ -46,7 +46,7 @@ One or more external controlling devices, such as (Embedded-) PCs, smart phones
 or tablets, can be used to control the hardware from outside over the Ethernet 
 connection. Therefore monitoring over the Internet is also possible. Power 
 Supply is possible over onboard 
-`Power over Ethernet (PoE)<https://en.wikipedia.org/wiki/Power_over_Ethernet>`__.
+`Power over Ethernet (PoE) <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__.
 
 The kit allows to modify soft- and hardware. The casing consists of
 tinker-friendly PMMA which can be easily modified (e.g. drill new holes with 
@@ -54,12 +54,12 @@ simple wood drill). Additionally mounting holes for
 different :ref:`Bricklets <product_overview_bricklets>` and 
 :ref:`Bricks <product_overview_bricks>` are provided, e.g.:
 
-:ref:`Analog In <analog_in_bricklet>`,
-:ref:`Analog Out <analog_in_bricklet>`,
-:ref:`Industrial Digital In 4 <industrial_digital_in_4_bricklet>`,
-:ref:`Industrial Digital Out 4 <industrial_digital_out_4_bricklet>`,
-:ref:`Industrial Quad Relay <industrial_quad_relay_bricklet>`,
-and :ref:`IO-4 <io4_bricklet>`.
+:ref:`Analog In Bricklet <analog_in_bricklet>`,
+:ref:`Analog Out Bricklet <analog_in_bricklet>`,
+:ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`,
+:ref:`Industrial Digital Out 4 Bricklet <industrial_digital_out_4_bricklet>`,
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`,
+and :ref:`IO-4 Bricklet <io4_bricklet>`.
 
 Programming this kit can be done with all of the available
 bindings (|bindings|). Example implementations for all supported programming 
