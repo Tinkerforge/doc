@@ -18,18 +18,18 @@ lang = 'en'
 tools = [('Brick Daemon', 'brickd'),
          ('Brick Viewer', 'brickv')]
 
-            # display,  uri      is_language
-bindings = [('Modbus', 'modbus', False),
-            ('TCP/IP', 'tcpip',  False),
-            ('C/C++',  'c',      True),
-            ('C#',     'csharp', True),
-            ('Delphi', 'delphi', True),
-            ('Java',   'java',   True),
-            ('PHP',    'php',    True),
-            ('Python', 'python', True),
-            ('Ruby',   'ruby',   True),
-            ('Shell',  'shell',  True),
-            ('VB.NET', 'vbnet',  True)]
+            # display,  uri1     is_language, uri2
+bindings = [('Modbus', 'modbus', False,       None),
+            ('TCP/IP', 'tcpip',  False,       None),
+            ('C/C++',  'c',      True,        'C'),
+            ('C#',     'csharp', True,        'CSharp'),
+            ('Delphi', 'delphi', True,        'Delphi'),
+            ('Java',   'java',   True,        'Java'),
+            ('PHP',    'php',    True,        'PHP'),
+            ('Python', 'python', True,        'Python'),
+            ('Ruby',   'ruby',   True,        'Ruby'),
+            ('Shell',  'shell',  True,        'Shell'),
+            ('VB.NET', 'vbnet',  True,        'VBNET')]
 
                   # display,                      uri,                         bindings, description, is_published
 bricks =         [['DC',                         'dc',                         bindings, "",          True],
@@ -694,7 +694,7 @@ def make_download_tools_table():
 
 def make_download_bindings_table():
     table_head = download_bindings_table_head[lang]
-    row_cell = ' {0} | `{2}.{3}.{4} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{2}_{3}_{4}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
+    row_cell = ' `{0} <http://www.tinkerforge.com/' + lang + '/doc/Software/API_Bindings_{2}.html>`__ | `{3}.{4}.{5} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{3}_{4}_{5}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
     rows = []
 
     for binding in bindings:
@@ -704,7 +704,7 @@ def make_download_bindings_table():
             if len(versions) == 0:
                 print('Could not find versions of the {0} bindings'.format(binding[0]))
             else:
-                rows.append(row_cell.format(binding[0], binding[1], *versions[-1]))
+                rows.append(row_cell.format(binding[0], binding[1], binding[3], *versions[-1]))
 
     return table_head + '\n'.join(rows) + '\n'
 
