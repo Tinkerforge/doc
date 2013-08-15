@@ -15,8 +15,13 @@ Completion Script (``tinkerforge-bash-completion.sh``) und allen verfügbaren
 Shell Beispielen (in ``examples/``).
 
 Für funktionierende Bash Completion muss sich das ``tinkerforge`` Script im
-``PATH`` befinden und das Bash Completion Script ``tinkerforge-bash-completion.sh``
-in ``/etc/bash_completion.d/``.
+``PATH`` befinden, z.B. durch Kopieren nach ``/usr/local/bin/``. Das Bash
+Completion Script ``tinkerforge-bash-completion.sh`` muss nach
+``/etc/bash_completion.d/`` kopiert werden. Dann Bash Completion kann mittels::
+
+ . /etc/bash_completion
+
+neugeladen werden.
 
 
 Test eines Beispiels
