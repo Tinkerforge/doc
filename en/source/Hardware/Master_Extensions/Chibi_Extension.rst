@@ -70,7 +70,6 @@ only one is connected via USB (many-to-one routing).
 The following combinations with other Extensions in a stack are possible
 (regardless of order):
 
-* Chibi Master / Ethernet
 * Chibi Master / RS485 Slave
 * Chibi Slave / RS485 Master
 

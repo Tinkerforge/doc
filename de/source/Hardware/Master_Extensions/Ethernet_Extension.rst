@@ -79,7 +79,6 @@ Die folgenden Kombinationen von Extensions in einem Stapel sind möglich.
 Die Reihenfolge im Stapel ist dabei nicht relevant:
 
 * Ethernet / RS485 Master
-* Ethernet / Chibi Master
 
 
 Technische Spezifikation

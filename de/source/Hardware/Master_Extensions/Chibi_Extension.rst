@@ -72,7 +72,6 @@ wobei immer nur ein Stapel per USB verbunden sein darf (Many-to-One Routing).
 Die folgenden Kombinationen von Extensions in einem Stapel sind möglich.
 Die Reihenfolge im Stapel ist dabei nicht relevant:
 
-* Chibi Master / Ethernet
 * Chibi Master / RS485 Slave
 * Chibi Slave / RS485 Master
 

@@ -64,9 +64,9 @@ ein eingebettetes Gerät oder über einen Modbus Gateway.
 Die folgenden Kombinationen von Extensions in einem Stapel sind möglich.
 Die Reihenfolge im Stapel ist dabei nicht relevant:
 
-* RS485 Master / WIFI
 * RS485 Master / Chibi Slave
 * RS485 Master / Ethernet
+* RS485 Master / WIFI
 * RS485 Slave / Chibi Master
 
 Technische Spezifikation

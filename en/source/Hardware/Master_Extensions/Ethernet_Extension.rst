@@ -81,7 +81,6 @@ The following combinations with other Extensions in a stack are possible
 (regardless of order):
 
 * Ethernet / RS485 Master
-* Ethernet / Chibi Master
 
 Technical Specifications
 ------------------------

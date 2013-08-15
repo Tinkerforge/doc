@@ -63,9 +63,9 @@ directly via Modbus from an embedded device or over a Modbus gateway.
 The following combinations with other Extensions in a stack are possible
 (regardless of order):
 
-* RS485 Master / WIFI
 * RS485 Master / Chibi Slave
 * RS485 Master / Ethernet
+* RS485 Master / WIFI
 * RS485 Slave / Chibi Master
 
 
