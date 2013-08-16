@@ -113,6 +113,13 @@ bindings (|bindings|). Example implementations for all supported programming lan
 and a demo application are available. This will give you a starting point into the 
 programming with Tinkerforge.
 
+A small video that shows the construction and some applications 
+can be found on Youtube:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/uwsseiiu_4A" frameborder="0" allowfullscreen></iframe></center>
+
 Technical Specifications
 ------------------------
 

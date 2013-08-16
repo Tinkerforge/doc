@@ -117,6 +117,14 @@ programmiert werden. Beispielimplementierungen für alle Programmiersprachen
 und eine Demo-Anwendung erleichtern den Einstieg in die Programmierung mit 
 Tinkerforge.
 
+Ein kurzes Video, dass den Zusammenbau und ein paar Anwendungen zeigt, lässt 
+sich auf Youtube finden:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/uwsseiiu_4A" frameborder="0" allowfullscreen></iframe></center>
+
+
 Technische Spezifikation
 ------------------------
 
