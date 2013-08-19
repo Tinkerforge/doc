@@ -114,7 +114,8 @@ Viewer, too:
 
 As next step click through the tabs of the Brick Viewer
 to see if everything is working correctly. Next you should configure the
-Ethernet Extension. To do that click on the Master Brick tab and
+Ethernet Extension. In our further examples we configure the hostname to 
+"ServerMonitoring". To do that click on the Master Brick tab and
 configure it to your needs. More information about how to configure 
 a Ethernet Extension can be found 
 :ref:`here <ethernet_configuration>`.
@@ -147,6 +148,56 @@ There are several applications for the Weather Station:
 
 Simple Monitoring
 ^^^^^^^^^^^^^^^^^
+
+In this small test we use the :ref:`Shell Bindings <api_bindings_shell>` to 
+read out the different sensor in the kit.
+
+Todo: Installation link
+
+.. code-block:: bash 
+
+ tinkerforge --host ServerMonitoring enumerate
+ 
+ >>uid=6Dct25
+   connected-uid=0
+   position=0
+   hardware-version=1,0,0
+   firmware-version=2,1,0
+   device-identifier=master-brick
+   enumeration-type=available
+
+   uid=fow
+   connected-uid=6Dct25
+   position=a
+   hardware-version=1,0,0
+   firmware-version=2,0,0
+   device-identifier=ptc-bricklet
+   enumeration-type=available
+
+   uid=SCT31
+   connected-uid=6Dct25
+   position=b
+   hardware-version=1,1,0
+   firmware-version=2,0,1
+   device-identifier=temperature-bricklet
+   enumeration-type=available
+
+   uid=ajC
+   connected-uid=6Dct25
+   position=d
+   hardware-version=1,1,0
+   firmware-version=2,0,1
+   device-identifier=ambient-light-bricklet
+   enumeration-type=available
+
+ tinkerforge --host ServerMonitoring call temperature-bricklet SCT31 get-temperature
+ >>temperature=2487
+
+ tinkerforge --host ServerMonitoring call ambient-light-bricklet ajC get-illuminance
+ >>illuminance=41
+
+ tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
+ >>temperature=2603
 
 Server Room Monitoring with Nagios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
