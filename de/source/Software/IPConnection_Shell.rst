@@ -267,7 +267,8 @@ Und jetzt mit ``--execute`` Option erweitere Ausgabeformatierung mit ``bc`` und
 
 .. code-block:: bash
 
-    $ tinkerforge call distance-ir-bricklet eN3 get-distance --execute "echo 'scale=2; {distance} / 10' | bc | xargs printf 'current distance is %.1fcm\n'"
+    $ tinkerforge call distance-ir-bricklet eN3 get-distance\
+      --execute "echo 'scale=2; {distance} / 10' | bc | xargs printf 'current distance is %.1fcm\n'"
     current distance is 46.3cm
 
 Bevor die Befehlszeile ausgeführt wird, werden die enthaltenen Platzhalter mit
