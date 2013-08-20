@@ -251,7 +251,8 @@ Now the ``--execute`` option is used for advanced formatting with ``bc`` and
 
 .. code-block:: bash
 
-    $ tinkerforge call distance-ir-bricklet eN3 get-distance --execute "echo 'scale=2; {distance} / 10' | bc | xargs printf 'current distance is %.1fcm\n'"
+    $ tinkerforge call distance-ir-bricklet eN3 get-distance\
+      --execute "echo 'scale=2; {distance} / 10' | bc | xargs printf 'current distance is %.1fcm\n'"
     current distance is 46.3cm
 
 Before the command line is executed the contained placeholders are replaced with
