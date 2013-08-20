@@ -79,4 +79,4 @@ Windows only:
 * ``--install`` registers Brick Daemon as service and start it
 * ``--uninstall`` stops service and unregister it
 * ``--console`` forces start as console application
-* ``--log-to-file`` writes log messages to file
+* ``--log-to-file`` writes log messages to a file

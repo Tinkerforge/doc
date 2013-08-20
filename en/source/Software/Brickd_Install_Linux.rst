@@ -44,6 +44,7 @@ environments have very similar tools that practically work the same way.
 
 To install Brick Daemon from the console use the following::
 
+ # Use libudev1 instead of libudev0 in Ubuntu 13.04
  sudo apt-get install libusb-1.0-0 libudev0
 
  # On ARM (e.g. Raspberry Pi)
@@ -73,7 +74,7 @@ To install Brick Daemon from source, download the source from `here
 
 On Debian based distributions you can install the dependencies with apt-get::
 
- sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
+ sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev
 
 On Fedora you can install the dependencies with yum::
 

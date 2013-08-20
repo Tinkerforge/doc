@@ -48,6 +48,7 @@ funktionieren.
 Der Brick Daemon kann von der Console mit folgendem Befehl installiert
 werden::
 
+ # Use libudev1 instead of libudev0 in Ubuntu 13.04
  sudo apt-get install libusb-1.0-0 libudev0
 
  # On ARM (e.g. Raspberry Pi)
@@ -79,7 +80,7 @@ heruntergeladen werden. Es gibt folgende Abhängigkeiten:
 Auf Debian basierten Distributionen können die Abhängigkeiten mit apt-get
 installiert werden::
 
- sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
+ sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev
 
 Auf Fedora können die Abhängigkeiten mit yum installiert werden::
 
