@@ -158,11 +158,11 @@ a bit with it.
 
 Let's see what is connected: Call for a enumeration
 
-.. code-block:: bash 
+.. code-block:: none
 
  tinkerforge --host ServerMonitoring enumerate
  
- >>uid=6Dct25
+ $ uid=6Dct25
    connected-uid=0
    position=0
    hardware-version=1,0,0
@@ -196,16 +196,16 @@ Let's see what is connected: Call for a enumeration
 
 Next let us read out the connected sensors
 
-.. code-block:: bash 
+.. code-block:: none 
 
  tinkerforge --host ServerMonitoring call temperature-bricklet SCT31 get-temperature
- >>temperature=2487
+ $ temperature=2487
 
  tinkerforge --host ServerMonitoring call ambient-light-bricklet ajC get-illuminance
- >>illuminance=41
+ $ illuminance=41
 
  tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
- >>temperature=2603
+ $ temperature=2603
 
 But how can we use it in our own shell scripts?
 The shell bindings support the execution of bash code with the --execute flag 
@@ -213,7 +213,7 @@ The shell bindings support the execution of bash code with the --execute flag
 convert the returned value into degree celsius and how to save it in a variable
 for further use.
 
-.. code-block:: bash 
+.. code-block:: none 
 
  #!/bin/sh
 
@@ -257,7 +257,7 @@ and to warn for high temperatures.
 
 The small script, called *check_tf_temp.py*, uses the following interface:
 
-.. code-block:: bash
+.. code-block:: none
 
  usage: check_tf_temp [-h] -u UID [-H HOST] [-P PORT] [-m MODUS]
                              [-w WARNING] [-c CRITICAL] [-w2 WARNING2]
@@ -302,7 +302,7 @@ ServerMonitoring and to the Temperature Bricklet with UID SCT31. It creates a
 warning if temperature above 26°C and a critical message if temperature is 
 above 27°C:
 
-.. code-block:: bash
+.. code-block:: none
 
  check_tf_temp.py -H ServerMonitoring -u SCT31 -m high -w 26 -c 27
 
@@ -310,7 +310,7 @@ above 27°C:
 The following example creates a warning if temperature is below 10°C or above
 30°C and a critical message if temperature is below 8°C or above 35°C:
 
-.. code-block:: bash
+.. code-block:: none
 
  check_tf_temp.py -H ServerMonitoring -u SCT31 -m range -w 10 -w2 30 -c 8 -c2 35
 
@@ -328,7 +328,7 @@ return value.
 To run this script with Nagios you have to register it. To do this you have
 to register the command with the following lines in a config file:
 
-.. code-block:: bash
+.. code-block:: none
 
  define command{
         command_name    check_tf_temp
@@ -337,7 +337,7 @@ to register the command with the following lines in a config file:
 
 And register the service the follogin lines:
 
-.. code-block:: bash
+.. code-block:: none
 
  define service {
         use                             generic-service
