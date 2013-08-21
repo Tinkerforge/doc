@@ -132,7 +132,7 @@ keys and so on:
         HOST = 'api.xively.com'
         AGENT = "Tinkerforge xively 1.0"
         FEED = '196340443.json'
-	    API_KEY = 'SGpMEW3ZZ6yJVd9jZlaPgex06v1W00lA2UZkv5rgskwlVkr6'
+        API_KEY = 'SGpMEW3ZZ6yJVd9jZlaPgex06v1W00lA2UZkv5rgskwlVkr6'
 
         def __init__(self):
             self.items = {}
@@ -199,10 +199,6 @@ But if you put everything of the above together
 (`download <https://raw.github.com/Tinkerforge/server-room-monitoring/master/xively/server_room_monitoring.py>`__),
 you have a working Server Room Monitoring Kit that uploads the measurements to Xively:
 
-
 .. literalinclude:: ../../../../../server-room-monitoring/xively/server_room_monitoring.py
  :language: python
  :tab-width: 4
-
-
-
