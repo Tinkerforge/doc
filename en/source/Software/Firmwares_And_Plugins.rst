@@ -14,127 +14,29 @@ Firmwares and Plugins
  Only if you want to change something in a firmware of a Brick or a
  plugin of a Bricklet you will need to compile them yourself.
 
-.. _building_brick_firmware:
 
-Building a Brick firmware
--------------------------
-
-You can modify and build the Brick firmwares. At the moment there is no
-official Brick API or documentation of the Brick firmware code. So you
-will need some prior knowledge in C programming to do this.
-
-The source code for all Bricks and Bricklets can be found in the Tinkerforge
-`github account <https://github.com/Tinkerforge/>`__. In the following
-a small overview on what you have to do to compile the Servo Brick firmware,
-as an example.
-
-Clone the Servo Brick repository::
-
- git clone https://github.com/Tinkerforge/servo-brick.git
-
-Clone the bricklib into the ``software/src/`` folder of the firmware (a symlink
-will also work)::
-
- cd servo-brick/software/src/
- git clone https://github.com/Tinkerforge/bricklib.git
-
-Download and install the GCC none-eabi compiler for ARM from
-`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__.
-Ensure to use a :ref:`compatible compiler <compiler_compatibility>` version.
-
-Ensure that the ``bin`` folder of the CodeSourcery installation is added to the
-``PATH`` environment variable, otherwise CMake will not be able to find the
-compiler tools.
-
-Generate the Makefile in the ``software/`` folder (you will need CMake)::
-
- cd servo-brick/software/
- ./generate_makefile
-
-Build the firmware::
-
- cd servo-brick/software/build/
- make
-
-That's it. The ``software/build/`` folder now contains the newly compiled firmware.
-``servo-brick.bin``.
+You can modify and build the Brick firmwares and Bricklet plugins. At the
+moment there is no official Brick API or documentation of the Brick firmware
+Bricklet plugin code. So you will need some prior knowledge in C programming
+to do this.
 
 
-.. _flash_firmware_on_brick:
+.. _firmwares_and_plugins_install:
 
-Flash firmware on a Brick
--------------------------
-
-See :ref:`brickv_flash_firmware` in :ref:`Brick Viewer <brickv>` documentation
-for more information.
-
-.. _building_bricklet_plugin:
-
-Building a Bricklet plugin
+Install Compiler and Tools
 --------------------------
 
-You can modify and build the Bricklet plugins.
-You will need knowledge in C programming to do this. The plugins are
-compiled as position independent code (so it is easy for the Bricks to
-use them). This means that there are lots of C features you might take
-for granted that will not work in Bricklet plugins. For example you
-can not just call any library functions, the functions have to be provided
-by the Brick through the Bricklet API (BA). Global variables have to be
-written into the Bricklet Context (BC) and configuration for the Bricklet
-can be read from the Bricklet Settings (BS). All of these are provided
-by the Bricks to be used by Bricklet plugins. If you think you are up
-to that, you should take a look at the source code to see how it exactly
-works.
+As compiler we use GCC for ARM from `CodeSourcery
+<http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__.
+Choose EABI as Target OS and download the Lite Edition of the Sourcery
+CodeBench. It includes GCC for ARM and other tools. The Sourcery CodeBench
+installer is available for Linux and Windows.
 
-The source code for all Bricks and Bricklets can be found in the Tinkerforge
-`Github account <https://github.com/Tinkerforge/>`__. In the following
-a small overview on what you have to do to compile the Joystick Bricklet
-plugin, as an example.
+If you're running a 64-bit version of Linux you might have to install 32-bit
+support libraries to get the compiler working. On Debian you just have to
+install the ``ia32-libs`` package, see this `CodeSourcery Knowledgebase entry
+<https://sourcery.mentor.com/GNUToolchain/kbentry62>`__ for more details.
 
-Clone the Joystick Bricklet repository::
-
- git clone https://github.com/Tinkerforge/joystick-bricklet.git
-
-Clone the bricklib and the brickletlib (you need both) into the ``software/src/``
-folder of the plugin (a symlink will also work)::
-
- cd joystick-bricklet/software/src
- git clone https://github.com/Tinkerforge/bricklib.git
- git clone https://github.com/Tinkerforge/brickletlib.git
-
-Download and install the GCC none-eabi compiler for ARM from
-`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__.
-Ensure to use a :ref:`compatible compiler <compiler_compatibility>` version.
-
-Generate the Makefile in the ``software/`` folder (you will need CMake)::
-
- cd joystick-bricklet/software
- ./generate_makefile
-
-Build the plugin::
-
- cd joystick-bricklet/software/build/
- make
-
-That's it. The ``software/build/`` folder now contains the newly compiled plugin:
-``joystick-bricklet.bin``
-
-
-Flash plugin on a Bricklet
---------------------------
-
-See :ref:`brickv_flash_plugin` in :ref:`Brick Viewer <brickv>` documentation for
-more information.
-
-
-.. _compiler_compatibility:
-
-Compiler Compatibility
-----------------------
-
-The GCC none-eabi compiler for ARM from
-`CodeSourcery <http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite>`__
-is required.
 There are versions of this compiler that do not produce working firmwares.
 It's recommended to only use compiler versions that are known to work correctly,
 see the following list:
@@ -147,3 +49,44 @@ see the following list:
    "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Yes"
    "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "No"
    "Sourcery CodeBench Lite 2013.05-23, GCC 4.7.3", "Yes"
+
+Install the compiler and ensure that the ``bin`` folder of the CodeSourcery
+installation is added to the ``PATH`` environment variable. On Windows the
+installer offers to do this. Check that the compiler is properly installed by
+running this in a terminal::
+
+ arm-none-eabi-gcc --version
+
+You should see some version information about GCC.
+
+Next, CMake and make have to be installed. On Debian and related Linux
+distributions they can installed as follows::
+
+ sudo apt-get install cmake make
+
+A CMake installer for Windows is available on the `project's website
+<http://www.cmake.org/cmake/resources/software.html>`__. The `GnuWin32 project
+<http://gnuwin32.sourceforge.net/packages/make.htm>`__ provides a make installer
+for Windows. In both cases ensure that the ``bin`` folder of the CMake and make
+installation is added to the ``PATH`` environment variable. Again this can be
+check by running this in a terminal::
+
+ cmake --version
+
+.. code-block:: none
+
+ make --version
+
+You should see some version information about CMake and make.
+
+Now the compiler and tools are ready to be used from a terminal.
+
+
+Building a Brick Firmware or a Bricklet Plugin
+----------------------------------------------
+
+There are detailed descriptions about how to get the necessary source code
+from GitHub and how to compile it for:
+
+* :ref:`Brick Firmwares <building_brick_firmware>`
+* :ref:`Bricklet Plugins <building_bricklet_plugin>`

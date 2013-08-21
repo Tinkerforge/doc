@@ -63,7 +63,7 @@ Brick Firmwares and Bricklet Plugins
 .. include:: Downloads_firmwares.table
 
 Brick firmwares and Bricklet plugins can be flashed onto Bricks and
-Bricklets with the Brick Viewer (see :ref:`tutorial for Bricks <flash_firmware_on_brick>` and
-:ref:`tutorial for Bricklets <brickv_flash_plugin>`).
+Bricklets with the Brick Viewer (see :ref:`tutorial for Bricks
+<brickv_flash_firmware>` and :ref:`tutorial for Bricklets <brickv_flash_plugin>`).
 
 Older Versions can be found `here <http://download.tinkerforge.com/firmwares/>`__.
