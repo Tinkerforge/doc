@@ -112,7 +112,7 @@ to register the command with the following lines in a config file:
      command_line /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -m high -w 26 -c 27
  }
 
-And register the service the follogin lines:
+And register the service the following lines:
 
 .. code-block:: none
 

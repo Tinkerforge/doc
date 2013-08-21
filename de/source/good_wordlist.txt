@@ -207,3 +207,5 @@ nA
 Entstörfilter
 Entstörfilters
 akkumulativen
+Nagios
+Icinga

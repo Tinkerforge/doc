@@ -71,7 +71,7 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  :ref:`Ausgabeformatierung <ipcon_shell_output>` für mehr Details.
 
  Standardmäßig ist die symbolische Eingabe und Ausgabe aktiviert. Zum Beispiel
- kann die :sh:func:`set-i2c-mode <temperature-bricklet set-i2c-mode>` Funcktion
+ kann die :sh:func:`set-i2c-mode <temperature-bricklet set-i2c-mode>` Funktion
  des Temperature Bricklets mit zwei verschiedenen Werten aufgerufen werden: 0
  und 1. Wenn symbolische Eingabe aktiviert ist, dann werden auch noch die beiden
  Symbole ``fast`` (0) und ``slow`` (1) als Eingabe für diese Werte akzeptiert.
@@ -175,7 +175,7 @@ Grundfunktionen
  eingehende Antworten abgefertigt werden.
 
  Die ``--types`` Option ermöglicht es anzugeben welche Enumerierungsarten
- abgefertigt werden sollen. Standardmä0ig werden nur Enumerate-Callback mit
+ abgefertigt werden sollen. Standardmäßig werden nur Enumerate-Callback mit
  ``enumeration-type=available`` abgefertigt.
 
  Die ``--execute`` Option ermöglicht erweiterte Ausgabeformatierung. Siehe dazu

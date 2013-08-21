@@ -17,7 +17,7 @@ erweitert und modifiziert werden. Darüber hinaus kann unsere Entwicklungsarbeit
 unterstützt und Probleme leichter gemeldet werden.
 
 Um es der Community einfach zu machen Patches einzusenden und Probleme zu melden,
-sind alle `Tinkerforge Projekte <https://github.com/Tinkerforge>`__ auf Github
+sind alle `Tinkerforge Projekte <https://github.com/Tinkerforge>`__ auf GitHub
 gehostet.
 
 Weiterführenden Informationen über git sind `hier <http://git-scm.com/>`__ zu
