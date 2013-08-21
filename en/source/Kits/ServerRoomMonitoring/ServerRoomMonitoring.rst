@@ -158,79 +158,78 @@ a bit with it.
 
 Let's see what is connected: Call for a enumeration
 
-.. code-block:: none
+.. code-block:: bash
 
- tinkerforge --host ServerMonitoring enumerate
- 
- $ uid=6Dct25
-   connected-uid=0
-   position=0
-   hardware-version=1,0,0
-   firmware-version=2,1,0
-   device-identifier=master-brick
-   enumeration-type=available
+ $ tinkerforge --host ServerMonitoring enumerate
 
-   uid=fow
-   connected-uid=6Dct25
-   position=a
-   hardware-version=1,0,0
-   firmware-version=2,0,0
-   device-identifier=ptc-bricklet
-   enumeration-type=available
+ uid=6Dct25
+ connected-uid=0
+ position=0
+ hardware-version=1,0,0
+ firmware-version=2,1,0
+ device-identifier=master-brick
+ enumeration-type=available
 
-   uid=SCT31
-   connected-uid=6Dct25
-   position=b
-   hardware-version=1,1,0
-   firmware-version=2,0,1
-   device-identifier=temperature-bricklet
-   enumeration-type=available
+ uid=fow
+ connected-uid=6Dct25
+ position=a
+ hardware-version=1,0,0
+ firmware-version=2,0,0
+ device-identifier=ptc-bricklet
+ enumeration-type=available
 
-   uid=ajC
-   connected-uid=6Dct25
-   position=d
-   hardware-version=1,1,0
-   firmware-version=2,0,1
-   device-identifier=ambient-light-bricklet
-   enumeration-type=available
+ uid=SCT31
+ connected-uid=6Dct25
+ position=b
+ hardware-version=1,1,0
+ firmware-version=2,0,1
+ device-identifier=temperature-bricklet
+ enumeration-type=available
+
+ uid=ajC
+ connected-uid=6Dct25
+ position=d
+ hardware-version=1,1,0
+ firmware-version=2,0,1
+ device-identifier=ambient-light-bricklet
+ enumeration-type=available
 
 Next let us read out the connected sensors
 
-.. code-block:: none 
+.. code-block:: bash
 
- tinkerforge --host ServerMonitoring call temperature-bricklet SCT31 get-temperature
- $ temperature=2487
+ $ tinkerforge --host ServerMonitoring call temperature-bricklet SCT31 get-temperature
+ temperature=2487
 
- tinkerforge --host ServerMonitoring call ambient-light-bricklet ajC get-illuminance
- $ illuminance=41
+ $ tinkerforge --host ServerMonitoring call ambient-light-bricklet ajC get-illuminance
+ illuminance=41
 
- tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
- $ temperature=2603
+ $ tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
+ temperature=2603
 
 But how can we use it in our own shell scripts?
 The shell bindings support the execution of bash code with the --execute flag 
 (see Shell bindings for more information). The following script shows how to 
-convert the returned value into degree celsius and how to save it in a variable
+convert the returned value into degree Celsius and how to save it in a variable
 for further use.
 
-.. code-block:: none 
+.. code-block:: bash
 
  #!/bin/sh
 
- UID=SCT31
  HOST=ServerMonitoring
+ UID=SCT31
 
- temp=$(tinkerforge --host $HOST call temperature-bricklet $UID get-temperature --execute "echo '{temperature} / 100' | bc | xargs printf '%.2f\n'")
+ temp=$(tinkerforge --host $HOST call temperature-bricklet $UID get-temperature\
+        --execute "echo '{temperature} / 100' | bc | xargs printf '%.2f\n'")
  echo $temp
-
-
 
 
 Server Room Monitoring with Nagios or Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
-are computer system monitoring tools, whereis Icinga is a fork of Nagios and is 
-said to be backward compatible to Nagios. So we refering in the following 
+are computer system monitoring tools. Icinga is a fork of Nagios and is 
+said to be backward compatible to Nagios. So we referring in the following 
 examples to the Nagios API to be also compatible with Icinga.
 
 These monitoring tools use so called plugins, instantiated as services to 
@@ -242,9 +241,8 @@ temperature measuring. With a few modifications you can use the plugin to
 support other Tinkerforge hardware modules and create the physical monitoring
 you need.
 
-Please find the full project description :ref:`here <starter_kit_server_room_monitoring_server_room_monitoring_with_nagios_or_icinga>`.
-
-
+Please find the full project description :ref:`here
+<starter_kit_server_room_monitoring_server_room_monitoring_with_nagios_or_icinga>`.
 
 
 Upload Sensor Data to Xively
@@ -254,7 +252,8 @@ Upload Sensor Data to Xively
 analyze and visualize the "Internet of Things". It can store a history of 
 measured temperature or illumination an can display it with pretty graphs.
 
-The full project description can be found :ref:`here <starter_kit_server_room_monitoring_upload_sensor_data_to_xively>`.
+The full project description can be found :ref:`here
+<starter_kit_server_room_monitoring_upload_sensor_data_to_xively>`.
 
 
 Further Enhancements
@@ -283,5 +282,3 @@ Error Code Display
 
 With a Segment Display 4x7 Bricklet you can show information directly
 on the case.
-
-

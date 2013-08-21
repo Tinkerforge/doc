@@ -11,9 +11,10 @@ analyze and visualize the "Internet of Things". It can store a history of
 measured values, in our case temperature and illumination, can display it in pretty graphs
 and can be used for data exchange between different systems and machines.
 
-This example is mainly based on the :ref:`*Using Python to upload weather data to Xively*<starter_kit_weather_station_python_to_xively>` example.
+This example is mainly based on the :ref:`*Using Python to upload weather
+data to Xively* <starter_kit_weather_station_python_to_xively>` example.
 
-.. include:: PythonCommon.substitutions
+.. include:: ../WeatherStation/PythonCommon.substitutions
    :start-after: >>>intro
    :end-before: <<<intro
 
@@ -43,7 +44,7 @@ For every sensor value we have to add a new channel:
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_xively_orig.jpg
 
-The channels got the IDs AirPressure, AmbientLight, Humidity and Temperature.
+The channels got the IDs AmbientLight and Temperature.
 Later we will need these IDs to upload measurements.
 
 Step 2: Understanding Xively protocol
@@ -67,7 +68,7 @@ API key is put in the header of the HTTP request and the return consists of
 an HTTP header only.
 
 This seems quite straight forward. To not spam Xively, we should limit the uploading
-interval to once every 5 minutes. This means, that we need to store the
+interval to once every minute. This means, that we need to store the
 measurements and determine the corresponding
 min and max values for each interval.
 
@@ -199,10 +200,6 @@ But if you put everything of the above together
 (`download <https://raw.github.com/Tinkerforge/server-room-monitoring/master/xively/server_room_monitoring.py>`__),
 you have a working Server Room Monitoring Kit that uploads the measurements to Xively:
 
-
 .. literalinclude:: ../../../../../server-room-monitoring/xively/server_room_monitoring.py
  :language: python
  :tab-width: 4
-
-
-

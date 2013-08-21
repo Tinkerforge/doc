@@ -68,9 +68,9 @@ The small script, called *check_tf_temp.py*, uses the following interface:
 
 Most of the interface should be self-explanatory. It supports three modes:
 
- * *high*: Message is raised if measured temperature is above WARNING or CRITICAL
- * *low*: Message is raised if measured temperature is below WARNING or CRITICAL
- * *range*: Message is raised if measured temperature is above WARNING or CRITICAL or below WARNING2 or CRITICAL2
+ * ``high``: Message is raised if measured temperature is above WARNING or CRITICAL
+ * ``low``: Message is raised if measured temperature is below WARNING or CRITICAL
+ * ``range``: Message is raised if measured temperature is above WARNING or CRITICAL or below WARNING2 or CRITICAL2
 
 We make this script globally executable, e.g. store it under /usr/local/bin.
 
@@ -79,7 +79,7 @@ ServerMonitoring and to the Temperature Bricklet with UID SCT31. It creates a
 warning if temperature above 26°C and a critical message if temperature is 
 above 27°C:
 
-.. code-block:: none
+.. code-block:: bash
 
  check_tf_temp.py -H ServerMonitoring -u SCT31 -m high -w 26 -c 27
 
@@ -87,7 +87,7 @@ above 27°C:
 The following example creates a warning if temperature is below 10°C or above
 30°C and a critical message if temperature is below 8°C or above 35°C:
 
-.. code-block:: none
+.. code-block:: bash
 
  check_tf_temp.py -H ServerMonitoring -u SCT31 -m range -w 10 -w2 30 -c 8 -c2 35
 
@@ -107,24 +107,22 @@ to register the command with the following lines in a config file:
 
 .. code-block:: none
 
- define command{
-        command_name    check_tf_temp
-        command_line /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -m high -w 26 -c 27
+ define command {
+     command_name    check_tf_temp
+     command_line /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -m high -w 26 -c 27
  }
 
-And register the service the follogin lines:
+And register the service the following lines:
 
 .. code-block:: none
 
  define service {
-        use                             generic-service
-        host_name                       localhost
-        service_description             Check Temperature
-        check_command                   check_tf_temp
-        check_interval                  1
+     use                             generic-service
+     host_name                       localhost
+     service_description             Check Temperature
+     check_command                   check_tf_temp
+     check_interval                  1
  }
 
 That's it. You should see a new service in the web interface and should be
 warned if the ambient temperature get's to hot.
-
-

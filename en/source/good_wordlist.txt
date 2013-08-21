@@ -169,3 +169,5 @@ BaseTX
 jQuery
 nA
 Youtube
+Nagios
+Icinga

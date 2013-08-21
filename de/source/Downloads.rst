@@ -68,7 +68,7 @@ Brick Firmwares und Bricklet Plugins
 .. include:: Downloads_firmwares.table
 
 Brick Firmwares und Bricklet Plugins können mit dem Brick Viewer aktualisiert
-werden (siehe :ref:`Tutorial für Bricks <flash_firmware_on_brick>` und
+werden (siehe :ref:`Tutorial für Bricks <brickv_flash_firmware>` und
 :ref:`Tutorial für Bricklets <brickv_flash_plugin>`).
 
 Ältere Versionen sind `hier <http://download.tinkerforge.com/firmwares/>`__

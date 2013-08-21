@@ -63,8 +63,8 @@ eine neuere Software für die angeschlossenen Geräte verfügbar ist.
 
 Hierzu muss auf "Updates / Flashing" geklickt werden. Der Dialog
 zeigt die angeschlossenen Geräte und deren Software stand. Orange
-unterlegte Einträge können geupdated werden. Rot unterlegte Einträge
-müssen geupdated werden damit sie korrekt funktionieren.
+unterlegte Einträge können geupdatet werden. Rot unterlegte Einträge
+müssen geupdatet werden damit sie korrekt funktionieren.
 
 .. image:: /Images/Screenshots/brickv_auto_update_small.jpg
    :scale: 100 %

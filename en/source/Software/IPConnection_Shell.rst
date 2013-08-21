@@ -164,7 +164,7 @@ Basic Functions
  incoming enumerate responses.
 
  The ``--types`` option allows to specify which types of enumerate callbacks
- to dispatch. By default only enuemrate callbacks with
+ to dispatch. By default only enumerate callbacks with
  ``enumeration-type=available`` are dispatched.
 
  The ``--execute`` option allows for advanced output formatting. See the

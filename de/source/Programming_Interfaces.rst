@@ -71,7 +71,7 @@ eigene Firmwares für Bricks und Bricklets zu entwickeln.
 
 .. warning::
  Im Moment sind nur die Quelltexte der Bricks und Bricklets `online
- <https://github.com/organizations/Tinkerforge>`__ verfügbar. Derjenige der in
+ <https://github.com/Tinkerforge>`__ verfügbar. Derjenige der in
  der Lage ist die passende Entwicklungsumgebung aufzusetzen und C programmieren
  kann, kann jetzt schon den Quelltext für seine Zwecke abändern.
 
