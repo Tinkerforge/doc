@@ -43,7 +43,7 @@ For every sensor value we have to add a new channel:
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_xively_orig.jpg
 
-The channels got the IDs AirPressure, AmbientLight, Humidity and Temperature.
+The channels got the IDs AmbientLight and Temperature.
 Later we will need these IDs to upload measurements.
 
 Step 2: Understanding Xively protocol
@@ -67,7 +67,7 @@ API key is put in the header of the HTTP request and the return consists of
 an HTTP header only.
 
 This seems quite straight forward. To not spam Xively, we should limit the uploading
-interval to once every 5 minutes. This means, that we need to store the
+interval to once every minute. This means, that we need to store the
 measurements and determine the corresponding
 min and max values for each interval.
 
@@ -132,7 +132,7 @@ keys and so on:
         HOST = 'api.xively.com'
         AGENT = "Tinkerforge xively 1.0"
         FEED = '196340443.json'
-        API_KEY = 'SGpMEW3ZZ6yJVd9jZlaPgex06v1W00lA2UZkv5rgskwlVkr6'
+	    API_KEY = 'SGpMEW3ZZ6yJVd9jZlaPgex06v1W00lA2UZkv5rgskwlVkr6'
 
         def __init__(self):
             self.items = {}
