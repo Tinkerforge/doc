@@ -112,6 +112,61 @@ Der Graph gibt den zeitlichen Verlauf des Luftdrucks wieder.
 
 |test_pi_ref|
 
+
+Luftdruck verstehen
+-------------------
+
+Luftdruck ist ein kompliziertes Thema. Zwei häufig gestellte Fragen sind:
+Warum weicht die Luftdruckmessung des Barometer Bricklets vom Wetterbericht ab
+und warum weicht die Höhenangabe von der wirklichen Höhe des Messortes ab?
+
+Luftdruckangabe
+^^^^^^^^^^^^^^^
+
+Das Barometer Bricklet gibt den Luftdruck in Referenz auf die Höhe des
+Messortes an, in der Luftfahrt als `QFE
+<http://de.wikipedia.org/wiki/Barometrische_H%C3%B6henmessung_in_der_Luftfahrt#QFE>`__
+Wert bekannt. Im Wetterbericht wird der Luftdruck aber in Referenz auf Meereshöhe
+und speziell temperaturkorrigiert angegeben, in der Luftfahrt als `QFF
+<http://de.wikipedia.org/wiki/Barometrische_H%C3%B6henmessung_in_der_Luftfahrt#QFF>`__
+Wert bekannt.
+
+Mit der `barometrischen Höhenformel
+<http://de.wikipedia.org/wiki/Barometrische_H%C3%B6henformel>`__ kann der QFF
+Wert aus QFE Wert approximiert werden::
+
+ QFF = QFE / [1 - Tg * H / (273,15 + Tfe + Tg * H)] ^ (0,034163 / Tg)
+
+* ``Tg`` ist der Temperaturgradient, dieser gibt an, wie schnell die Temperatur
+  mit steigender Höhe fällt (eine gute Schätzung bei normalem Wetter ist
+  0,0065 °C/Meter)
+* ``Tfe`` ist die Temperatur am Messort in °C
+* ``H`` ist die Höhe des Messortes in Metern
+
+`Hier <http://rechneronline.de/barometer/>`__ gibt es einen Online-Rechner der
+diese Formel berechnet. Die Höhe des Messortes kann leicht mit `Google Maps
+<http://www.mapcoordinates.net/de>`__ bestimmt werden.
+
+Höhenangabe
+^^^^^^^^^^^
+
+Die Höhenangabe des Barometer Bricklets bezieht sich standardmäßig auf einen
+Referenzluftdruck von 1013,25 mbar und wird mittels einer Approximation
+des `International Standard Atmosphere <http://de.wikipedia.org/wiki/Normatmosph%C3%A4re>`__
+Models berechnet. Eine so bestimmte Höhe ist in der Luftfahrt als `QNE
+<http://de.wikipedia.org/wiki/Barometrische_H%C3%B6henmessung_in_der_Luftfahrt#QNE>`__
+Wert bekannt.
+
+Für eine genauere Höhenangabe in Referenz auf Meereshöhe muss der
+Referenzluftdruck für den Messort angegeben werden. In der Luftfahrt wird
+hierfür der `QNH
+<http://de.wikipedia.org/wiki/Barometrische_H%C3%B6henmessung_in_der_Luftfahrt#QNH>`__
+Wert verwendet. Daher ist dieser Wert häufig bei Flugplätze zu erfahren.
+Es kann aber auch der QFF Wert verwendet werden, bei diesem Wert fließt die
+Temperatur anders in die Berechnung ein als beim QNH Wert, der QFF Wert ist
+aber typischerweise dem QNH Wert ähnlich.
+
+
 .. _barometer_bricklet_case:
 
 Gehäuse
