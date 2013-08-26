@@ -70,7 +70,7 @@ To install Brick Daemon from source, download the source from `here
 <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
 * libusb-1.0
-* libudev (Optional for USB Hotplug)
+* libudev (optional for USB hotplug)
 
 On Debian based distributions you can install the dependencies with apt-get::
 
@@ -92,5 +92,5 @@ To compile and install from source run::
 Run the following commands to register brickd for autostart on Debian based
 Linux distributions and start it::
 
- update-rc.d brickd defaults
- /etc/init.d/brickd start
+ sudo update-rc.d brickd defaults
+ sudo /etc/init.d/brickd start

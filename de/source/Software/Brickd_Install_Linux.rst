@@ -75,7 +75,7 @@ der `Quellcode von github <https://github.com/Tinkerforge/brickd>`__
 heruntergeladen werden. Es gibt folgende Abhängigkeiten:
 
 * libusb-1.0
-* libudev (Optional für USB Hotplug)
+* libudev (optional für USB Hotplug)
 
 Auf Debian basierten Distributionen können die Abhängigkeiten mit apt-get
 installiert werden::
@@ -99,5 +99,5 @@ werden::
 Die folgenden Befehle registrieren brickd für Autostart auf Debian basierten
 Distributionen und starten brickd::
 
- update-rc.d brickd defaults
- /etc/init.d/brickd start
+ sudo update-rc.d brickd defaults
+ sudo /etc/init.d/brickd start
