@@ -71,6 +71,7 @@ bricklets =      [['Ambient Light',              'ambient_light',              b
                   ['Motion Detector',            'motion_detector',            bindings, "",          False],
                   ['Multi Touch',                'multi_touch',                bindings, "",          False],
                   ['Piezo Buzzer',               'piezo_buzzer',               bindings, "",          True],
+                  ['Piezo Speaker',              'piezo_speaker',               bindings, "",         False],
                   ['PTC',                        'ptc',                        bindings, "",          True],
                   ['Remote Switch',              'remote_switch',              bindings, "",          False],
                   ['Rotary Encoder',             'rotary_encoder',             bindings, "",          False],
@@ -244,6 +245,10 @@ bricklet_descriptions = {
 'piezo_buzzer': {
     'en': 'Creates 1kHz beep',
     'de': 'Erzeugt 1kHz Piepton'
+    },
+'piezo_speaker': {
+    'en': 'Creates beep with configurable frequency',
+    'de': 'Erzeugt Piepton mit konfigurierbarer Frequenz'
     },
 'ptc': {
     'en': 'Reads temperatures from Pt100/1000 sensors',
