@@ -84,10 +84,14 @@ Current Consumption               1mA
 Voltage                           0V - 45V in 1mV steps, 12bit resolution
 Measurement Range                 Automatically switched
 
-                                  * 0V -  6.05V, ~1.48mV resolution
+                                  * 0V - 6.05V, ~1.48mV resolution
                                   * 0V - 10.32V, ~2.52mV resolution
                                   * 0V - 36.30V, ~8.86mV resolution
                                   * 0V - 45.00V, ~11.25mV resolution
+
+                                  In addition, manually selectable
+
+                                  * 0V - 3.30V, ~0.81mV resolution
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            30 x 25 x 14mm (1.18 x 0.98 x 0.55")
