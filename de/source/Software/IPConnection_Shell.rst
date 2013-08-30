@@ -47,8 +47,8 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
 
  * ``--help`` zeigt allgemeine Hilfe an und endet dann
  * ``--version`` zeigt die Versionsnummer an und endet dann
- * ``--host <host>`` IP Adresse oder Hostname, Standard: ``localhost``
- * ``--port <port>`` Port-Nummer, Standard: ``4223``
+ * ``--host <host>`` IP Adresse oder Hostname des Verbindungsziels, Standard: ``localhost``
+ * ``--port <port>`` Port-Nummer des Verbindungsziels, Standard: ``4223``
  * ``--item-separator <item-separator>`` Trennzeichen für Array-Einträge,
    Standard: ``,`` (Komma)
  * ``--group-separator <group-separator>`` Trennzeichen für Ausgabegruppen,

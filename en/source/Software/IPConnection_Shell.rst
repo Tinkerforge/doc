@@ -47,8 +47,8 @@ At first some information about the general command structure:
 
  * ``--help`` shows general help and exits
  * ``--version`` shows version number and exits
- * ``--host <host>`` IP address or hostname, default: ``localhost``
- * ``--port <port>`` port number, default: ``4223``
+ * ``--host <host>`` IP address or hostname to connect to, default: ``localhost``
+ * ``--port <port>`` port number to connect to, default: ``4223``
  * ``--item-separator <item-separator>`` separator for array items, default: ``,`` (comma)
  * ``--group-separator <group-separator>`` separator for output groups, default: ``\n`` (newline)
  * ``--no-symbolic-input`` disables symbolic input of values
