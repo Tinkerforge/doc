@@ -192,7 +192,7 @@ The available callback property and their type of parameters are described below
  The device identifiers can be found :ref:`here <device_identifier>`.
 
 
-.. delphi:function:: property TIPConnection.OnEnumerate
+.. delphi:function:: property TIPConnection.OnConnected
 
  .. code-block:: delphi
 
@@ -205,7 +205,7 @@ The available callback property and their type of parameters are described below
  * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Connection after auto-reconnect.
 
 
-.. delphi:function:: property TIPConnection.OnEnumerate
+.. delphi:function:: property TIPConnection.OnDisconnected
 
  .. code-block:: delphi
 
