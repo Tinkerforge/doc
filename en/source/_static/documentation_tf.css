@@ -618,3 +618,10 @@ table.field-list tr:nth-child(even) { background-color:transparent; }
   font-size: 15px;
   color: #fff;
 }
+
+dl.function,
+dl.var,
+dl.member,
+dl.attribute {
+  margin-top: 15px;
+}
