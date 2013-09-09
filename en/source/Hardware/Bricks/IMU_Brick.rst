@@ -274,8 +274,8 @@ angles. The base position will be (0,0,0):
             x, y, z, w = self.make_relative_coordinates(-x, -y, -z, w)
 
             x_angle = int(math.atan2(2.0*(y*z - w*x), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
-            y_angle = int(math.atan2(2.0*(x*z + w*y), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
-            z_angle = int(math.atan2(2.0*(x*y + w*z), 1.0 - 2.0*(x*x + z*z))*180/math.pi)
+            y_angle = int(math.atan2(-2.0*(x*z + w*y), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
+            z_angle = int(math.atan2(-2.0*(x*y + w*z), 1.0 - 2.0*(x*x + z*z))*180/math.pi)
 
             print 'x: {0}, y: {1}, z: {2}'.format(x_angle, y_angle, z_angle)
 
