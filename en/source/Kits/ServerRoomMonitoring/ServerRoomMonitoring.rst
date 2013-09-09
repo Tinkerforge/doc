@@ -90,7 +90,7 @@ Resources
 
 * Server Room Monitoring Kit case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
 * Example source code *Simple Monitoring* (Download: `Bash <https://github.com/Tinkerforge/server-room-monitoring/tree/master/simple_monitoring/check_tf_temp_simple.sh>`__)
-* Example source code *Nagios/Icinga Plugin* (Download: `Python <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios-icinga/check_tf_temp.py>`__)
+* Example source code *Nagios/Icinga Plugin* (Download: `Python <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
 * Example source code *Upload Sensor Data to Xively* (Download: `Python <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
  
  
