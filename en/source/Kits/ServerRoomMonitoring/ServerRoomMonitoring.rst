@@ -15,7 +15,7 @@ Features
 .. Einrueckung so beibehalten, da sonst kaputt
 
  * Allows Low Cost and Modular Server Room Monitoring 
- * 19" or 10" Rack Mountable
+ * 19" Rack Mountable
  * Accessible and Powered by Ethernet (PoE) 
  * Expandable: Simply add Sensors or I/O if you need them
  * API for many programming languages 
@@ -23,6 +23,7 @@ Features
    * (|bindings|)
 
  * Open Source Soft- and Hardware
+ * Nagios and Icinga directly Supported
 
 Description
 -----------
@@ -35,7 +36,7 @@ monitor the room illumination),
 the temperature in the server rack) and a
 :ref:`PTC Bricklet <ptc_bricklet>` with attachable temperature sensor probe 
 (e.g. to monitor the temperature in a server). The included enclosure lets you
-mount the kit directly in a 10" or 19" server rack.
+mount the kit directly in a 19" server rack.
 
 The kit uses the Tinkerforge building blocks, such that it can be extended 
 easily by more temperature probes, other sensors types (e.g. motion detector), 
@@ -78,9 +79,7 @@ Illumination                      0lux - 900lux in 0.1lux steps
 Ambient Temperature               -40°C - 85°C in 0.01°C steps
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions 10" (W x D x H)        240 x 46 x 100mm (9.45 x 1.81 x 3.94")
 Dimensions 19" (W x D x H)        240 x 46 x 100mm (9.45 x 1.81 x 3.94")
-Weight 10"                        376g
 Weight 19"                        376g
 ================================  ============================================================
 
@@ -89,8 +88,8 @@ Weight 19"                        376g
 Resources
 ---------
 
-* Server Room Monitoring Kit case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
-* Example source code *Website* (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
+* Server Room Monitoring Kit case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/server-monitoring/tree/master/case>`__)
+* Example source code *Website* (Download: `PHP <https://github.com/Tinkerforge/server-monitoring/tree/master/website/php>`__)
  
 
 First tests, firmware upgrade and configuration
@@ -99,43 +98,43 @@ First tests, firmware upgrade and configuration
 As a very first step you should try out and update your Bricks and Bricklets.
 
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
-the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets to the Master 
-Brick and connect it via USB to your PC. Afterwards use Brick Viewer to find out
-if all of the firmwares up to date (Updates / Flashing button). If not, you can
+the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets and the 
+Ethernet Master Extension on top of the Master Brick and connect it via USB to 
+your PC. Afterwards use Brick Viewer to find out if all of the firmwares up to 
+date (Updates / Flashing button). If not, you can
 :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
 Viewer, too:
 
 .. image:: /Images/Kits/server_room_monitoring_update_350.jpg
    :scale: 100 %
-   :alt: Weather Station update in Brick Viewer
+   :alt: Server Room Monitoring Hardware update in Brick Viewer
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_update_orig.jpg
 
-As next step click through the tabs of the Brick Viewer
-to see if everything is working correctly. Next you should configure the
-Ethernet Extension. In our further examples we configure the hostname to 
-"ServerMonitoring". To do that click on the Master Brick tab and
-configure it to your needs. More information about how to configure 
-the Ethernet Extension can be found 
+As next step click through the tabs of the Brick Viewer to see if everything is
+working correctly. Next you should configure the Ethernet Extension. In our 
+further examples we configure the hostname to "ServerMonitoring". To do that 
+click on the Master Brick tab and configure it to your needs. More information 
+about how to configure the Ethernet Extension can be found 
 :ref:`here <ethernet_configuration>`.
 
 
-After testing the hardware and configuration you can be sure that 
-the Bricks and Bricklets have versions that work together and that
-everything will work if it is screwed together in the server 10"/19"
-enclosure.
+After testing the hardware and configuration you can be sure that the Bricks 
+and Bricklets have versions that work together and that everything will work if
+it is screwed together in the server 19" enclosure.
 
 
 Construction
 ------------
 
-Begin with 10"
+There is no singular way to build the 19" enclosure. Additionally it is
+extensible by different Bricks and Bricklets to meet your requirements.
 
-19" Case
-^^^^^^^^
+The construction of the basic kit is described 
+:ref:`here <starter_kit_server_room_monitoring_construction>`.
 
-Extend 10" kit
+
 
 
 .. _starter_kit_server_room_monitoring_projects:
