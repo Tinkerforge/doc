@@ -256,7 +256,7 @@ Please find the full project description :ref:`here
 .. toctree::
    :hidden:
 
-   ServerRoomMonitoringWithNagiosOrIcinga
+   NagiosOrIcinga
 
 
 Upload Sensor Data to Xively
@@ -292,6 +292,11 @@ information directly on the case.
 
 The full project description can be found 
 :ref:`here <starter_kit_server_room_monitoring_extended_nagios>`.
+
+.. toctree::
+   :hidden:
+
+   ExtendedNagios
 
 Remote On/Off Switch
 ^^^^^^^^^^^^^^^^^^^^
