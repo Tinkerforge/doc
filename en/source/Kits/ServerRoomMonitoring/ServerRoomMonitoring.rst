@@ -141,7 +141,10 @@ extensible by different Bricks and Bricklets to meet your requirements.
 The construction of the basic kit is described 
 :ref:`here <starter_kit_server_room_monitoring_construction>`.
 
+.. toctree::
+   :hidden:
 
+   Construction
 
 
 .. _starter_kit_server_room_monitoring_projects:
@@ -200,7 +203,7 @@ Let's see what is connected: Call for a enumeration
  device-identifier=ambient-light-bricklet
  enumeration-type=available
 
-Next let us read out the connected sensors
+Next let us read out the connected sensors:
 
 .. code-block:: bash
 
@@ -250,6 +253,11 @@ you need.
 Please find the full project description :ref:`here
 <starter_kit_server_room_monitoring_nagios_or_icinga>`.
 
+.. toctree::
+   :hidden:
+
+   ServerRoomMonitoringWithNagiosOrIcinga
+
 
 Upload Sensor Data to Xively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -260,6 +268,11 @@ measured temperature or illumination an can display it with pretty graphs.
 
 The full project description can be found :ref:`here
 <starter_kit_server_room_monitoring_upload_sensor_data_to_xively>`.
+
+.. toctree::
+   :hidden:
+
+   UploadSensorDataToXively
 
 
 Further Enhancements
