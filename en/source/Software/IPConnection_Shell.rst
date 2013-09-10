@@ -71,7 +71,7 @@ At first some information about the general command structure:
  <temperature-bricklet get-i2c-mode>` function: the same two symbols are used
  for symbolic output, if enabled.
 
- There are three subcommands: ``call``, ``dispatch`` and ``enumerate``
+ There are four subcommands: ``call``, ``dispatch``, ``enumerate`` and ``listen``
 
 
 .. sh:function:: X Ptinkerforge Ncall A[<option>..] L<device> L<uid> L<function> L[<argument>..]
@@ -195,6 +195,42 @@ Basic Functions
 
  The device identifier numbers can be found :ref:`here <device_identifier>`.
 
+Advanced Functions
+^^^^^^^^^^^^^^^^^^
+
+.. sh:function:: X Ptinkerforge Nlisten A[<option>..]
+
+ The ``listen`` command is used to open a TCP/IP socket that accepts ``call``,
+ ``dispatch`` and ``enumerate`` commands. This enables the Shell bindings to
+ act as a text protocol proxy for clients such as ``netcat``, ``telnet`` or the
+ :ref:`NetIO Controller App <netio_setup>`. The ``listen`` command can take
+ several options:
+
+ * ``--help`` shows help for the ``listen`` command and exits
+ * ``--address <address>`` IP address to listen to, default: ``0.0.0.0``
+ * ``--port <port>`` port number to listen to, default: ``4217``
+ * ``--enable-host`` enables ``--host`` option to override IP address or hostname to connect to
+ * ``--enable-port`` enables ``--port`` option to override port number to connect to
+ * ``--enable-execute`` enables ``--execute`` option for getters and callbacks
+
+ In listen mode some command line options are disabled by default for incoming
+ commands.
+
+ The ``--host`` and ``--port`` options are disabled by default so incoming
+ commands can only connect to the host and port given to the ``listen`` command.
+ Use ``--enable-host`` and ``--enable-port`` to enable these options for
+ incoming commands.
+
+ The ``--execute`` option for getter calls and callback dispatching is disabled
+ by default so incoming command cannot execute other commands. Use
+ ``--enable-execute`` to enable this option for incoming commands.
+
+ Incoming commands have to be terminated by ``\n``. The output is also
+ terminated by ``\n``. See the :ref:`output formatting <ipcon_shell_output>`
+ section for details.
+
+ .. versionadded:: 2.0.3
+
 .. _ipcon_shell_output:
 
 Output Formatting
@@ -222,10 +258,21 @@ format. For example, the output of an enumerate callback:
     device-identifier=distance-ir-bricklet
     enumeration-type=available
 
-
 The ``--item-separator`` option affects how arrays are formatted and the
 ``--group-separator`` option affects how output groups are formatted. The
 example above contains two groups separated by a blank line.
+
+The output in listen mode (see :sh:func:`tinkerforge listen`) differs in two
+aspects to simplify parsing on the client side:
+
+* no group separator is included in the output and the ``--group-separator``
+  option is ignored
+* output lines in a group are separated by ``\t`` instead of ``\n``
+
+This means the output for the ``enumerate`` command looks like this in listen mode::
+
+ uid=68yjBL\tconnected-uid=0\tposition=0\thardware-version=1,0,0\tfirmware-version=2,0,6\tdevice-identifier=master-brick\tenumeration-type=available\n
+ uid=eN3\tconnected-uid=68yjBL\tposition=a\thardware-version=1,1,0\tfirmware-version=2,0,0\tdevice-identifier=distance-ir-bricklet\tenumeration-type=available\n
 
 Advanced Options
 """"""""""""""""
@@ -255,3 +302,7 @@ Before the command line is executed the contained placeholders are replaced with
 the actual values. In the example above a call to ``get-distance`` without
 ``--execute`` outputs a single line with key ``distance``. This key is also the
 placeholder for ``--execute`` usage wrapped in curly brackets: ``{distance}``.
+
+In listen mode (see :sh:func:`tinkerforge listen`) the ``--execute`` option is
+not available by default and has to be enabled by the ``--enable-execute``
+option of the ``listen`` command.

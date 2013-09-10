@@ -75,7 +75,7 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  <temperature-bricklet get-i2c-mode>` Funktion: Die gleichen Symbole werden für
  symbolische Ausgabe verwendet, wenn diese aktiviert ist.
 
- Es gibt drei Unterbefehle: ``call``, ``dispatch`` und ``enumerate``
+ Es gibt vier Unterbefehle: ``call``, ``dispatch``, ``enumerate`` und ``listen``
 
 
 .. sh:function:: X Ptinkerforge Ncall A[<option>..] L<device> L<uid> L<function> L[<argument>..]
@@ -209,6 +209,42 @@ Grundfunktionen
 
  Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
 
+Fortgeschrittene Funktionen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. sh:function:: X Ptinkerforge Nlisten A[<option>..]
+
+ Der ``listen`` Befehlt wird verwendet um einen TCP/IP Socket zu öffnen der
+ ``call``, ``dispatch`` und ``enumerate`` Befehle entgegen nimmt. Dies erlaubt
+ es die Shell Bindings als Text Protokoll Proxy für Clients wie ``netcat``,
+ ``telnet`` oder die :ref:`NetIO Controller App <netio_setup>` zu verwenden.
+ Der ``listen`` Befehl kennt mehrere Optionen:
+
+ * ``--help`` zeigt Hilfe für den ``listen`` Befehl an und endet dann
+ * ``--address <address>`` IP Adresse auf der gelauscht wird, Standard: ``0.0.0.0``
+ * ``--port <port>`` Port-Nummer auf der gelauscht wird, Standard: ``4217``
+ * ``--enable-host`` aktivert die ``--host`` Option um IP Adresse oder Hostname des Verbindungsziels zu ändern
+ * ``--enable-port`` aktivert die ``--port`` Option um Port-Nummer des Verbindungsziels zu ändern
+ * ``--enable-execute`` aktivert die ``--execute`` Option für Getter und Callbacks
+
+ Im Listen Modus sind einige Optionen für eingehende Befehle standardmäßig
+ deaktiviert.
+
+ Die ``--host`` und ``--port`` Optionen sind standardmäßig deaktiviert, so dass
+ eingehende Befehle nur Verbindungen zu Hostname und Port-Nummer aufbauen
+ können, welche beim ``listen`` Befehl angegeben wurden.
+ Mittels ``--enable-host`` und ``--enable-port`` können diese Optionen für
+ eingehende Befehle aktiviert werden.
+
+ Die ``--execute`` Option ist standardmäßig deaktiviert, so dass eingehende
+ Befehle keine anderen Kommandozeilenbefehle ausführen können. Mittels
+ ``--enable-execute`` kann diese Option für eingehende Befehle aktiviert werden.
+
+ Eingehende Befehle müssen mit ``\n`` terminiert werden. Die Ausgabe ist
+ ebenfalls mit ``\n`` terminiert. Siehe den Abschnitt über
+ :ref:`Ausgabeformatierung <ipcon_shell_output>` für weitere Details.
+
+ .. versionadded:: 2.0.3
 
 .. _ipcon_shell_output:
 
@@ -242,6 +278,18 @@ Die ``--item-separator`` Option beeinflusst wie Arrays formatiert werden und die
 ``--group-separator`` Option beeinflusst wie die Ausgabe von Gruppen formatiert
 wird. Das obigen Beispiel zeigt zwei Gruppen getrennt mit einer leeren Zeile.
 
+Die Ausgabe im Listen Modus (siehe :sh:func:`tinkerforge listen`) unterscheidet
+sich in zwei Aspekten und das Parsen auf der Client Seite zu vereinfachen:
+
+* es wird kein Trennzeichen zwischen Ausgabegruppen verwendet und die
+  ``--group-separator`` Option wird ignoriert
+* einzelne Zeilen einer Ausgabegruppen werden mit ``\t`` statt ``\n`` getrennt
+
+Dies bedeutet, dass die Ausgabe des ``enumerate`` Befehls im Liste Modus so aussieht::
+
+ uid=68yjBL\tconnected-uid=0\tposition=0\thardware-version=1,0,0\tfirmware-version=2,0,6\tdevice-identifier=master-brick\tenumeration-type=available\n
+ uid=eN3\tconnected-uid=68yjBL\tposition=a\thardware-version=1,1,0\tfirmware-version=2,0,0\tdevice-identifier=distance-ir-bricklet\tenumeration-type=available\n
+
 Erweiterte Optionen
 """""""""""""""""""
 
@@ -272,3 +320,7 @@ den entsprechenden Werten ersetzt. Im obigen Beispiel gibt ein Aufruf von
 ``get-distance`` ohne ``--execute`` eine einzelne Zeile mit dem Key ``distance``
 aus. Dieser Key wird auch als Platzhalter in geschweiften Klammern für die
 `--execute`` Option verwendet: ``{distance}``.
+
+Im Listen Modus (siehe :sh:func:`tinkerforge listen`) ist die ``--execute``
+Option standardmäßig nicht verfügbar und muss über die ``--enable-execute``
+Option des ``listen`` Befehls erst aktiviert werden.
