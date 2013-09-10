@@ -245,7 +245,7 @@ support other Tinkerforge hardware modules and create the physical monitoring
 you need.
 
 Please find the full project description :ref:`here
-<starter_kit_server_room_monitoring_server_room_monitoring_with_nagios_or_icinga>`.
+<starter_kit_server_room_monitoring_nagios_or_icinga>`.
 
 
 Upload Sensor Data to Xively
@@ -262,26 +262,27 @@ The full project description can be found :ref:`here
 Further Enhancements
 --------------------
 
-If you modded, extended or improved the Starter Kit: Server Room Monitoring
+If you have modded, extended or improved the Starter Kit: Server Room Monitoring
 in any way and you have published your results on our 
 `Wiki <http://www.tinkerunity.org/wiki/>`__, on your blog or similar: 
-Please give us a notice. We would love to add a link
-to your project here!
+Please give us a notice. We would love to add a link to your project here!
+
+Extended Nagios Example: Server Room Motion Detector and Error Code Display
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Use a Motion Detector Bricklet (coming soon) to detect motion in your server
+room. An additional Segment Display 4x7 Bricklet is used to show error code
+information directly on the case.
+
+The full project description can be found 
+:ref:`here <starter_kit_server_room_monitoring_extended_nagios>`.
 
 Remote On/Off Switch
 ^^^^^^^^^^^^^^^^^^^^
 
 Use Industrial Quad Relay to switch computers remotely on or off.
+You can use the previous examples to modify them to your needs.
+The wireing is really simple, you only have to bypass the on/off switch
+of the computer.
 
-Server Room Motion Detector
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Use a Motion Detector Bricklet (coming soon) to detect motion in your server
-room. You can also add a Sound Intensity Bricklet to detect room intruders
-by their noise.
-
-Error Code Display
-^^^^^^^^^^^^^^^^^^
-
-With a Segment Display 4x7 Bricklet you can show information directly
-on the case.
+TODO Image

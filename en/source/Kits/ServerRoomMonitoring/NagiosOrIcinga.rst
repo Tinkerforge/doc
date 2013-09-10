@@ -1,7 +1,7 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/ServerRoomMonitoring/ServerRoomMonitoring.html">Starter Kit: Server Room Monitoring</a> / Server Room Monitoring with Nagios or Icinga
 
-.. _starter_kit_server_room_monitoring_server_room_monitoring_with_nagios_or_icinga:
+.. _starter_kit_server_room_monitoring_nagios_or_icinga:
 
 Server Room Monitoring with Nagios or Icinga
 ============================================
@@ -36,20 +36,21 @@ The small script, called *check_tf_temp.py*, uses the following interface:
 
 .. code-block:: none
 
- usage: check_tf_temp [-h] -u UID [-H HOST] [-P PORT] [-m MODUS]
-                             [-w WARNING] [-c CRITICAL] [-w2 WARNING2]
-                             [-c2 CRITICAL2]
- 
- Checks temperature
- 
+ usage: check_tf_temp.py [-h] -u UID -t {temp,ptc} [-H HOST] [-P PORT]
+                        [-m {none,high,low,range}] [-w WARNING] [-c CRITICAL]
+                        [-w2 WARNING2] [-c2 CRITICAL2]
+
  optional arguments:
   -h, --help            show this help message and exit
   -u UID, --uid UID     UID from Temperature Bricklet
-  -H HOST, --host HOST  Host Server (brickd, default=localhost)
+  -t {temp,ptc}, --type {temp,ptc}
+                        Type: temp = Temperature Bricklet, ptc = PTC Bricklet
+  -H HOST, --host HOST  Host Server (default=localhost)
   -P PORT, --port PORT  Port (default=4223)
-  -m MODUS, --modus MODUS
-                        Modus: high (default), low or range
-  -w WARNING, --waring WARNING
+  -m {none,high,low,range}, --modus {none,high,low,range}
+                        Modus: none (default, only print temperature), high,
+                        low or range
+  -w WARNING, --warning WARNING
                         Warning temperature level (temperatures above this
                         level will trigger a warning message in high mode,
                         temperature below this level will trigger a warning
@@ -66,6 +67,7 @@ The small script, called *check_tf_temp.py*, uses the following interface:
                         Critical temperature level (temperatures below this
                         level will trigger a critical message in range mode)
 
+
 Most of the interface should be self-explanatory. It supports three modes:
 
  * ``high``: Message is raised if measured temperature is above WARNING or CRITICAL
@@ -81,7 +83,7 @@ above 27°C:
 
 .. code-block:: bash
 
- check_tf_temp.py -H ServerMonitoring -u SCT31 -m high -w 26 -c 27
+ check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m high -w 26 -c 27
 
 
 The following example creates a warning if temperature is below 10°C or above
@@ -89,7 +91,15 @@ The following example creates a warning if temperature is below 10°C or above
 
 .. code-block:: bash
 
- check_tf_temp.py -H ServerMonitoring -u SCT31 -m range -w 10 -w2 30 -c 8 -c2 35
+ check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m range -w 10 -w2 30 -c 8 -c2 35
+
+To use the same function with the PTC Bricklet instead of the Temperature 
+Bricklet we have to change the UID and the type of the Bricklet. The command
+will then look like this:
+
+.. code-block:: bash
+
+ check_tf_temp.py -H ServerMonitoring -u fow -t ptc -m range -w 10 -w2 30 -c 8 -c2 35
 
 
 The *check_tf_temp.py* script is small and can be easily adapted for other
@@ -109,7 +119,7 @@ to register the command with the following lines in a config file:
 
  define command {
      command_name    check_tf_temp
-     command_line /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -m high -w 26 -c 27
+     command_line /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m high -w 26 -c 27
  }
 
 And register the service the following lines:
