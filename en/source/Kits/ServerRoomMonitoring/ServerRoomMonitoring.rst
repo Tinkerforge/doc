@@ -14,16 +14,16 @@ Features
 
 .. Einrueckung so beibehalten, da sonst kaputt
 
- * Allows Low Cost and Modular Server Room Monitoring 
- * 19" Rack Mountable
- * Accessible and Powered by Ethernet (PoE) 
- * Expandable: Simply add Sensors or I/O if you need them
- * API for many programming languages 
+* Allows Low Cost and Modular Server Room Monitoring 
+* 19" Rack Mountable
+* Accessible and Powered by Ethernet (PoE) 
+* Expandable: Simply add Sensors or I/O if you need them
+* API for many programming languages 
 
-   * (|bindings|)
+ * (|bindings|)
 
- * Open Source Soft- and Hardware
- * Nagios and Icinga directly Supported
+* Open Source Soft- and Hardware
+* Nagios and Icinga directly Supported
 
 Description
 -----------
@@ -45,7 +45,7 @@ This way it is adaptable flexibly to your needs.
 
 One or more external controlling devices, such as (Embedded-) PCs, smart phones 
 or tablets, can be used to control the hardware from outside over the Ethernet 
-connection. Therefore monitoring over the Internet is also possible. Power 
+connection. Therefore monitoring over the Internet is directly possible. Power 
 Supply is possible over onboard 
 `Power over Ethernet (PoE) <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__.
 
@@ -63,8 +63,8 @@ different :ref:`Bricklets <product_overview_bricklets>` and
 and :ref:`IO-4 Bricklet <io4_bricklet>`.
 
 Programming this kit can be done with all of the available
-bindings (|bindings|). Example implementations for all supported programming 
-languages and example applications for the usage with 
+bindings (currently: |bindings|). Different example implementations and
+applications for the usage with 
 `Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ and 
 other are available. This will give you a quick starting point into the 
 programming with Tinkerforge.
@@ -77,10 +77,12 @@ Property                          Value
 ================================  ============================================================
 Illumination                      0lux - 900lux in 0.1lux steps
 Ambient Temperature               -40°C - 85°C in 0.01°C steps
+PT100 Sensor Probe                -20°C - 450°C 
+PTC Bricklet                      0.03125°C (15bit) resolution
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions 19" (W x D x H)        240 x 46 x 100mm (9.45 x 1.81 x 3.94")
-Weight 19"                        376g
+Dimensions (W x D x H)            482 x 92 x 44mm (19.0 x 3.62 x 1.75")
+Weight                            TBDg
 ================================  ============================================================
 
 .. _starter_kit_server_room_monitoring_resources:
@@ -91,6 +93,7 @@ Resources
 * Server Room Monitoring Kit case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
 * Example source code *Simple Monitoring* (Download: `Bash <https://github.com/Tinkerforge/server-room-monitoring/tree/master/simple_monitoring/check_tf_temp_simple.sh>`__)
 * Example source code *Nagios/Icinga Plugin* (Download: `Python <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
+* Example source code *Nagios/Icinga Extended Plugin* (Download: `Python <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
 * Example source code *Upload Sensor Data to Xively* (Download: `Python <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
  
  

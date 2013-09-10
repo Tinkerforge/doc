@@ -11,8 +11,8 @@ analyze and visualize the "Internet of Things". It can store a history of
 measured values, in our case temperature and illumination, can display it in pretty graphs
 and can be used for data exchange between different systems and machines.
 
-This example is mainly based on the :ref:`*Using Python to upload weather
-data to Xively* <starter_kit_weather_station_python_to_xively>` example.
+This example is mainly based on the :ref:`Using Python to upload weather
+data to Xively <starter_kit_weather_station_python_to_xively>` example.
 
 .. include:: ../WeatherStation/PythonCommon.substitutions
    :start-after: >>>intro
