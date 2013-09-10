@@ -31,6 +31,7 @@ finished developments.
    Product_Overview
    Timeline
 
+
 .. _index_tutorials:
 
 *****************
@@ -78,8 +79,8 @@ with Tinkerforge:
 Software
 ********
 
-The software includes service and test programs, the API to interact with Bricks
-and Bricklets as well as their firmwares and plugins:
+The software includes service and test programs, the API bindings to interact
+with Bricks and Bricklets as well as their firmwares and plugins:
 
 * :ref:`brickd`
 * :ref:`brickv`

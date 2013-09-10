@@ -6,6 +6,9 @@
 C# - API Bindings
 =================
 
+.. note::
+ There is an extra section for :ref:`C# and Windows Phone <api_bindings_csharp_windows_phone>`.
+
 The C# bindings (:ref:`download <downloads_bindings_examples>`) consist of a
 library (.dll) for all Tinkerforge Bricks and Bricklets
 (``Tinkerforge.dll``), the source of the DLL (in ``source/``) and all available
@@ -53,13 +56,13 @@ For :ref:`Visual Basic .NET <api_bindings_vbnet>` we provide dedicated
 example code and documentation to demonstrate this.
 
 
-More Examples and Projects
---------------------------
+API Documentation and Examples
+------------------------------
 
-All the small examples contained in the ZIP file of the bindings can also be
-found in the API documentation of the :ref:`Bricks <product_overview_bricks>` and
-:ref:`Bricklets <product_overview_bricklets>`.
+Links to the API documentation for the IP Connection, Bricks and Bricklets as
+well as the examples from the ZIP file of the bindings are listed in the
+following table.
+
+.. include:: API_Bindings_CSharp_links.table
 
 Further project descriptions can be found in the :ref:`kits <index_kits>` section.
-
-.. FIXME: add a list with direct links here

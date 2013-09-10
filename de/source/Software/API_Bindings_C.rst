@@ -6,6 +6,9 @@
 C/C++ - API Bindings
 ====================
 
+.. note::
+ Es gibt einen extra Abschnitt für :ref:`Objective-C und iOS <api_bindings_c_ios>`.
+
 Die C/C++ Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen aus
 den Bindings für alle Tinkerforge Bricks und
 Bricklets (in ``bindings/``) und allen verfügbaren C/C++ Beispielen (in
@@ -194,14 +197,14 @@ einem C++ Projekt zu verwenden, ist es alle benötigten Dateien von ``*.c`` nach
 tut automatisch das Richtige.
 
 
-Weitere Beispiele und Projekte
-------------------------------
+API Dokumentation und Beispiele
+-------------------------------
 
-Die kleinen Beispiele aus der ZIP Datei der Bindings sind auch in der API
-Dokumentation der :ref:`Bricks <product_overview_bricks>` und
-:ref:`Bricklets <product_overview_bricklets>` zu finden
+Links zur API Dokumentation der IP Connection, Bricks und Bricklets sowie die
+Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
+aufgelistet.
+
+.. include:: API_Bindings_C_links.table
 
 Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Kits <index_kits>`.
-
-.. FIXME: add a list with direct links here

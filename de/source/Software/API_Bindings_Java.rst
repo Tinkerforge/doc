@@ -8,6 +8,9 @@ Java - API Bindings
 
 **Voraussetzungen**: Java 1.5 oder neuer
 
+.. note::
+ Es gibt einen extra Abschnitt für :ref:`Java und Android <api_bindings_java_android>`.
+
 Die Java Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen aus
 einer Bibliothek (.jar) für alle Tinkerforge
 Bricks und Bricklets (``Tinkerforge.jar``), dem Quelltext des JAR (in
@@ -48,14 +51,14 @@ Alternativ können die Beispiele auch in einer Java Entwicklungsumgebung deiner
 Wahl verwendet werden (wie Eclipse oder NetBeans).
 
 
-Weitere Beispiele und Projekte
-------------------------------
+API Dokumentation und Beispiele
+-------------------------------
 
-Die kleinen Beispiele aus der ZIP Datei der Bindings sind auch in der API
-Dokumentation der :ref:`Bricks <product_overview_bricks>` und
-:ref:`Bricklets <product_overview_bricklets>` zu finden
+Links zur API Dokumentation der IP Connection, Bricks und Bricklets sowie die
+Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
+aufgelistet.
+
+.. include:: API_Bindings_Java_links.table
 
 Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Kits <index_kits>`.
-
-.. FIXME: add a list with direct links here

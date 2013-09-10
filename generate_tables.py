@@ -329,7 +329,6 @@ accessory_descriptions = {
     }
 }
 
-
 index_table_head = {
 'en':
 """.. csv-table::
@@ -536,6 +535,52 @@ source_code_gits_bricklet_row_cell = {
 source_code_gits_extension_row_cell = {
 'en': ' {0} | `git://github.com/Tinkerforge/{1}-extension.git <https://github.com/Tinkerforge/{1}-extension/>`__ | `Report Bug <https://github.com/Tinkerforge/{1}-extension/issues>`__',
 'de': ' {0} | `git://github.com/Tinkerforge/{1}-extension.git <https://github.com/Tinkerforge/{1}-extension/>`__ | `Problem melden <https://github.com/Tinkerforge/{1}-extension/issues>`__',
+}
+
+api_bindings_links_table_head = {
+'en':
+""".. csv-table::
+ :header: "", "API", "Examples"
+ :delim: |
+ :widths: 20, 10, 10
+
+{0}
+ | |
+ **Bricks** | |
+{1}
+ | |
+ **Bricklets** | |
+{2}
+""",
+'de':
+""".. csv-table::
+ :header: "", "API", "Beispiele"
+ :delim: |
+ :widths: 20, 10, 10
+
+{0}
+ | |
+ **Bricks** | |
+{1}
+ | |
+ **Bricklets** | |
+{2}
+"""
+}
+
+api_bindings_links_ipcon_row = {
+'en': ' :ref:`IP Connection <api_bindings_ip_connection>` | :ref:`API <ipcon_{0}>` | :ref:`Examples <ipcon_{0}_examples>`',
+'de': ' :ref:`IP Connection <api_bindings_ip_connection>` | :ref:`API <ipcon_{0}>` | :ref:`Beispiele <ipcon_{0}_examples>`'
+}
+
+api_bindings_links_brick_row = {
+'en': ' :ref:`{2} <{0}_brick>` | :ref:`API <{0}_brick_{1}_api>` | :ref:`Examples <{0}_brick_{1}_examples>`',
+'de': ' :ref:`{2} <{0}_brick>` | :ref:`API <{0}_brick_{1}_api>` | :ref:`Beispiele <{0}_brick_{1}_examples>`'
+}
+
+api_bindings_links_bricklet_row = {
+'en': ' :ref:`{2} <{0}_bricklet>` | :ref:`API <{0}_bricklet_{1}_api>` | :ref:`Examples <{0}_bricklet_{1}_examples>`',
+'de': ' :ref:`{2} <{0}_bricklet>` | :ref:`API <{0}_bricklet_{1}_api>` | :ref:`Beispiele <{0}_bricklet_{1}_examples>`'
 }
 
 def fill_dicts():
@@ -747,7 +792,7 @@ def make_download_firmwares_table():
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows)) + '\n'
 
-def make_api_bindings_table():
+def make_api_bindings_bindings_table():
     row = '* :ref:`{0} <ipcon_{1}>`'
     rows = []
 
@@ -756,6 +801,23 @@ def make_api_bindings_table():
             rows.append(row.format(binding[0], binding[1]))
 
     return '\n'.join(rows) + '\n'
+
+def make_api_bindings_links_table(binding):
+    ipcon_line = api_bindings_links_ipcon_row[lang].format(binding[1])
+
+    brick_lines = []
+    for brick in bricks:
+        if brick[4] and len(brick[2]) > 0: # released and has bindings
+            brick_lines.append(api_bindings_links_brick_row[lang].format(brick[1], binding[1], brick[0]))
+
+    bricklet_lines = []
+    for bricklet in bricklets:
+        if bricklet[4] and len(bricklet[2]) > 0: # released and has bindings
+            bricklet_lines.append(api_bindings_links_bricklet_row[lang].format(bricklet[1], binding[1], bricklet[0]))
+
+    return api_bindings_links_table_head[lang].format(ipcon_line,
+                                                      '\n'.join(brick_lines),
+                                                      '\n'.join(bricklet_lines))
 
 def make_source_code_gits_table():
     table_head = source_code_gits_table_head[lang]
@@ -828,14 +890,14 @@ hlpi_table_head = {
 """
 .. csv-table::
    :header: "Language", "API", "Examples", "Installation"
-   :widths: 25, 8, 15, 12
+   :widths: 25, 10, 10, 10
 
 """,
 'de':
 """
 .. csv-table::
    :header: "Sprache", "API", "Beispiele", "Installation"
-   :widths: 25, 8, 15, 12
+   :widths: 25, 10, 10, 10
 
 """
 }
@@ -949,7 +1011,7 @@ def generate(path):
     write_if_changed(os.path.join(path, 'source', 'Downloads_firmwares.table'), make_download_firmwares_table())
 
     print('Generating API_Bindings_bindings.table')
-    write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_bindings.table'), make_api_bindings_table())
+    write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_bindings.table'), make_api_bindings_bindings_table())
 
     print('Generating Source_Code_gits.table')
     write_if_changed(os.path.join(path, 'source', 'Source_Code_gits.table'), make_source_code_gits_table())
@@ -974,6 +1036,11 @@ def generate(path):
 
     print('Generating Device_Identifier.table')
     write_if_changed(os.path.join(path, 'source', 'Software', 'Device_Identifier.table'), make_device_identifier_table())
+
+    for binding in bindings:
+        if binding[2]:
+            print('Generating API_Bindings_{0}_links.table'.format(binding[3]))
+            write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_{0}_links.table'.format(binding[3])), make_api_bindings_links_table(binding))
 
 if __name__ == "__main__":
     generate(os.getcwd())

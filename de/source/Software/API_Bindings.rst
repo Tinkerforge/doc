@@ -14,22 +14,6 @@ eingehende Pakete werden an den Aufrufer zurückgeroutet.
 Diese :ref:`Tutorial <tutorial_first_steps>` beschreibt wie alles zusammengehört
 und funktioniert.
 
-.. _api_bindings_ip_connection:
-
-IP Connection
--------------
-
-Die IP Connection erstellt eine TCP/IP Verbindung zwischen dem
-:ref:`Brick Daemon <brickd>` und den entsprechenden API Bindings für die
-verschiedenen Programmiersprachen.
-
-Diese wird in den Bindings benutzt und ist für jede unterstütze
-Programmiersprache implementiert. Die dazugehörige Dokumentation ist hier zu
-finden:
-
-.. include:: API_Bindings_bindings.table
-
-
 Verwendung der Bindings
 -----------------------
 
@@ -51,3 +35,19 @@ Programmiersprache:
 * :ref:`Ruby <api_bindings_ruby>`
 * :ref:`Shell <api_bindings_shell>`
 * :ref:`VB.NET <api_bindings_vbnet>`
+
+
+.. _api_bindings_ip_connection:
+
+IP Connection
+-------------
+
+Die IP Connection erstellt eine TCP/IP Verbindung zwischen dem
+:ref:`Brick Daemon <brickd>` und den entsprechenden API Bindings für die
+verschiedenen Programmiersprachen.
+
+Diese wird in den Bindings benutzt und ist für jede unterstütze
+Programmiersprache implementiert. Die dazugehörige Dokumentation ist hier zu
+finden:
+
+.. include:: API_Bindings_bindings.table

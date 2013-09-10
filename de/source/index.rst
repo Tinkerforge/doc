@@ -32,6 +32,7 @@ veröffentlichter Hardware und gemachter Entwicklungen.
    Product_Overview
    Timeline
 
+
 .. _index_tutorials:
 
 *****************
@@ -52,6 +53,8 @@ Antworten auf häufig gestellte Fragen finden sich in den :ref:`FAQ <faq>`.
    Tutorials/Tutorial_Extending/Tutorial
    Tutorials/Tutorial_Rugged/Tutorial
    FAQ
+
+
 .. _index_kits:
 
 ****
@@ -76,8 +79,8 @@ Für einen einfachen Einstieg bieten wir Kits in verschiedenen Themenbereichen a
 Software
 ********
 
-Die Software umfasst Dienst- und Testprogramme, die API zur Verwendung der
-Bricks und Bricklets sowie deren Firmwares und Plugins:
+Die Software umfasst Dienst- und Testprogramme, die API Bindings zur Verwendung
+der Bricks und Bricklets sowie deren Firmwares und Plugins:
 
 * :ref:`brickd`
 * :ref:`brickv`

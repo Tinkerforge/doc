@@ -83,14 +83,14 @@ dann bleiben noch diese Schritte:
 * Klicke Open
 
 
-Weitere Beispiele und Projekte
-------------------------------
+API Dokumentation und Beispiele
+-------------------------------
 
-Die kleinen Beispiele aus der ZIP Datei der Bindings sind auch in der API
-Dokumentation der :ref:`Bricks <product_overview_bricks>` und
-:ref:`Bricklets <product_overview_bricklets>` zu finden
+Links zur API Dokumentation der IP Connection, Bricks und Bricklets sowie die
+Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
+aufgelistet.
+
+.. include:: API_Bindings_Delphi_links.table
 
 Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Kits <index_kits>`.
-
-.. FIXME: add a list with direct links here

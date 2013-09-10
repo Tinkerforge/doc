@@ -70,13 +70,13 @@ we use:
 After that, the example can be executed again.
 
 
-More Examples and Projects
---------------------------
+API Documentation and Examples
+------------------------------
 
-All the small examples contained in the ZIP file of the bindings can also be
-found in the API documentation of the :ref:`Bricks <product_overview_bricks>` and
-:ref:`Bricklets <product_overview_bricklets>`.
+Links to the API documentation for the IP Connection, Bricks and Bricklets as
+well as the examples from the ZIP file of the bindings are listed in the
+following table.
+
+.. include:: API_Bindings_PHP_links.table
 
 Further project descriptions can be found in the :ref:`kits <index_kits>` section.
-
-.. FIXME: add a list with direct links here

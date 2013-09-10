@@ -14,28 +14,13 @@ are routed back to the caller.
 See also our :ref:`tutorial <tutorial_first_steps>` for more information on how
 everything works together.
 
-.. _api_bindings_ip_connection:
-
-IP Connection
--------------
-
-The IP Connection creates a TCP/IP connection between the
-:ref:`Brick Daemon <brickd>` and the corresponding programming language
-API bindings.
-
-It is used by the bindings and implemented for each programming language.
-The corresponding documentation can be found here:
-
-.. include:: API_Bindings_bindings.table
-
-
 Using the Bindings
 ------------------
 
-The latest versions of the bindings can be found on the
-:ref:`download page <downloads_bindings_examples>`.
+The latest versions of the bindings can be found in the
+:ref:`download section <downloads_bindings_examples>`.
 
-Installation and usage instructions for each programming languages:
+Installation and usage instructions for each programming language:
 
 * :ref:`C/C++ <api_bindings_c>`
 * :ref:`C/C++ (iOS) <api_bindings_c_ios>`
@@ -49,3 +34,18 @@ Installation and usage instructions for each programming languages:
 * :ref:`Ruby <api_bindings_ruby>`
 * :ref:`Shell <api_bindings_shell>`
 * :ref:`VB.NET <api_bindings_vbnet>`
+
+
+.. _api_bindings_ip_connection:
+
+IP Connection
+-------------
+
+The IP Connection creates a TCP/IP connection between the
+:ref:`Brick Daemon <brickd>` and the corresponding programming language
+API bindings.
+
+It is used by the bindings and implemented for each programming language.
+The corresponding documentation can be found here:
+
+.. include:: API_Bindings_bindings.table
