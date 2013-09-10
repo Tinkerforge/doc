@@ -59,6 +59,33 @@ bricklets = [('Ambient Light',             'ambient_light'),
              ('Voltage/Current',           'voltage_current'),
             ]
 
+ipcon_common = {
+'en': """
+>>>intro
+This is the API description for the |ref_api_bindings| of the IP Connection.
+The IP Connection is established between the :ref:`Brick Daemon <brickd>`
+and the corresponding programming language API bindings. You need to
+create an IP Connection to brickd and add devices, before you can
+use them.
+
+An overview of products that are controllable over an IP Connection
+can be found :ref:`here <product_overview>`.
+<<<intro
+""",
+'de': """
+>>>intro
+Dies ist die API Beschreibung für die |ref_api_bindings| der IP Connection.
+Die IP Connection wird zwischen dem :ref:`Brick Daemon <brickd>` und den API
+Bindings der entsprechenden Programmiersprache hergestellt. Bevor Geräte über
+deren API angesprochen werden können muss eine IP Connection zu brickd erzeugt
+und die Geräte dieser hinzugefügt werden.
+
+Eine Übersicht über die Produkte die über eine IP Connection kontrolliert
+werden können ist :ref:`hier <product_overview>` zu finden.
+<<<intro
+"""
+}
+
 brick_test_intro = {
 'en':
 """.. |test_intro| replace::
@@ -217,6 +244,12 @@ bricklet_test_pi_ref = {
 """
 }
 
+def make_ipcon_substitutions():
+    substitutions = ''
+    substitutions += ipcon_common[lang]
+
+    return substitutions
+
 def make_brick_substitutions(brick):
     substitutions = ''
     substitutions += brick_test_intro[lang].format(brick[0]) + '\n'
@@ -260,6 +293,8 @@ def generate(path):
     else:
         print 'Wrong working directory'
         sys.exit(1)
+
+    write_if_changed(os.path.join(path, 'source', 'Software', 'IPConnection_Common.substitutions'), make_ipcon_substitutions())
 
     for brick in bricks:
         name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_')

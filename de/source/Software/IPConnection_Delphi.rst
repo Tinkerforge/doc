@@ -1,19 +1,16 @@
 
 :breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Delphi - IP Connection
 
+.. |ref_api_bindings| replace:: :ref:`Delphi Bindings <api_bindings_delphi>`
+
 .. _ipcon_delphi:
 
 Delphi - IP Connection
 ======================
 
-Dies ist die API Beschreibung für die Delphi Bindings der IP Connection.
-Die IP Connection wird zwischen dem Brick Daemon und den API Bindings der
-entsprechenden Programmiersprache hergestellt. Bevor Geräte über deren API
-angesprochen werden können muss eine IP Connection zu brickd erzeugt und die
-Geräte dieser hinzugefügt werden.
-
-Eine Übersicht über die Produkte die über eine IP Connection kontrolliert
-werden können ist :ref:`hier <product_overview>` zu finden.
+.. include:: IPConnection_Common.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
 
 .. _ipcon_delphi_examples:

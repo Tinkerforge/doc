@@ -1,20 +1,16 @@
 
 :breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Shell - IP Connection
 
+.. |ref_api_bindings| replace:: :ref:`Shell bindings <api_bindings_shell>`
+
 .. _ipcon_shell:
 
 Shell - IP Connection
 =====================
 
-This is the API description for the Shell bindings of the IP Connection.
-The IP Connection is established between the Brick Daemon
-and the corresponding programming language API bindings. You need to
-create an IP Connection to brickd and add devices, before you can
-use them. In case of the Shell Bindings all this happens in the background,
-invisible to you.
-
-An overview of products that are controllable over an IP Connection
-can be found :ref:`here <product_overview>`.
+.. include:: IPConnection_Common.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
 
 .. _ipcon_shell_examples:
@@ -170,7 +166,7 @@ Basic Functions
  The ``--execute`` option allows for advanced output formatting. See the
  :ref:`section about this <ipcon_shell_output>` for details.
 
- The command has six outputs:
+ The command has seven output values:
 
  * ``uid`` is the UID of the device.
  * ``connected-uid`` is the UID where the device is connected to. For a Bricklet

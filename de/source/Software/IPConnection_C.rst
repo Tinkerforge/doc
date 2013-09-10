@@ -1,19 +1,16 @@
 
 :breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / C/C++ - IP Connection
 
+.. |ref_api_bindings| replace:: :ref:`C/C++ Bindings <api_bindings_c>`
+
 .. _ipcon_c:
 
 C/C++ - IP Connection
 =====================
 
-Dies ist die API Beschreibung für die C/C++ Bindings der IP Connection.
-Die IP Connection wird zwischen dem Brick Daemon und den API Bindings der
-entsprechenden Programmiersprache hergestellt. Bevor Geräte über deren API
-angesprochen werden können muss eine IP Connection zu brickd erzeugt und die
-Geräte dieser hinzugefügt werden.
-
-Eine Übersicht über die Produkte die über eine IP Connection kontrolliert
-werden können ist :ref:`hier <product_overview>` zu finden.
+.. include:: IPConnection_Common.substitutions
+   :start-after: >>>intro
+   :end-before: <<<intro
 
 
 .. _ipcon_c_examples:
