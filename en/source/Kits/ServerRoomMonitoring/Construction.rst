@@ -9,7 +9,7 @@ The Starter Kit: Server Room Monitoring comes with :ref:`Ambient Light
 <ambient_light_bricklet>`, :ref:`PTC <ptc_bricklet>` and
 :ref:`Temperature Bricklet<temperature_bricklet>`, 
 :ref:`Master Brick <master_brick>`,
-:ref:`Ethernet Master Extensions <ethernet_master_extension>` and
+:ref:`Ethernet Master Extensions <ethernet_extension>` and
 Bricklet cables as well as lots of screws, spacers, nuts and washers.
 
 .. image:: /Images/Kits/server_room_monitoring_exploded_guided_small.png

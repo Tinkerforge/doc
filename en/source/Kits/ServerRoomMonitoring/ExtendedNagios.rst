@@ -80,7 +80,7 @@ by
  python check_tf_temp_ext.py -H ServerMonitoring -u abc -t motion_detector
 
 
-The full script looks like this:
+The full script will look like this:
 
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp_ext.py
