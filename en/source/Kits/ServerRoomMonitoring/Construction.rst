@@ -5,6 +5,7 @@
 
 Construction of the Starter Kit: Server Room Monitoring
 =======================================================
+
 The Starter Kit: Server Room Monitoring comes with :ref:`Ambient Light
 <ambient_light_bricklet>`, :ref:`PTC <ptc_bricklet>` and
 :ref:`Temperature Bricklet<temperature_bricklet>`, 
