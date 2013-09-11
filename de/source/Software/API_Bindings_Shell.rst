@@ -32,6 +32,8 @@ funktionieren auf Linux und Mac OS X so wie sie sind. Es gibt Portierungen von
 Bash für Windows, die es ermöglichen die Beispiele unverändert auszuführen.
 
 
+.. _api_bindings_shell_links:
+
 API Dokumentation und Beispiele
 -------------------------------
 

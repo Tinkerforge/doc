@@ -1,0 +1,1 @@
+Tinkerforge is a platform of stackable microcontroller building blocks. The hardware can be controlled by external programs written in various programming languages over a USB, Wi-Fi or Ethernet connection. This demo project shows how to use NetIO to interact with Tinkerforge hardware.

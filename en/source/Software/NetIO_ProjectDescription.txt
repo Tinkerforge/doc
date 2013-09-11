@@ -1,0 +1,115 @@
+[url=http://www.tinkerforge.com]Tinkerforge[/url] uses a binary [url=http://www.tinkerforge.com/en/doc/Low_Level_Protocols/TCPIP.html]TCP/IP protocol[/url] for the communication between the external program and the hardware. [url=http://www.tinkerforge.com/en/doc/Software/API_Bindings.html]API bindings[/url] are provided for various programming languages that handle the details of the TCP/IP protocol and offer an easy-to-use and high-level interface for the user.
+
+NetIO supports sending binary commands and could speak the TCP/IP protocol directly, but this would be difficult to use. Instead the [url=http://www.tinkerforge.com/en/doc/Software/API_Bindings_Shell.html]Shell bindings[/url] can be used, as they offer a text based interface and can receive text commands from the command line and over a TCP/IP connection.
+
+[b]Tinkerforge Side[/b]
+
+As first step you should download the Shell bindings from the [url=http://www.tinkerforge.com/en/doc/Downloads.html#bindings-and-examples]download section[/url] and test them. You'll also need the [url=http://www.tinkerforge.com/en/doc/Software/Brickd.html]Brick Daemon[/url] if your Tinkerforge hardware is connected to USB.
+
+[u]Command Format[/u]
+
+The Shell bindings can handle commands given on the command line or send over a TCP/IP connection. The command format is almost the same in both cases. For example, this command line:
+
+[code]$ tinkerforge call ambient-light-bricklet gxe get-illuminance
+illuminance=721[/code]
+has to be send over a TCP/IP connection as:
+
+[code]call ambient-light-bricklet gxe get-illuminance\n[/code]
+Basically, strip [i]tinkerforge[/i] from the front and append [i]\n[/i] as command terminator. NetIO has a [i]commandTermination[/i] attribute with [i]\n[/i] as default value, so NetIO will take care of appending the final [i]\n[/i] to the commands for you.
+
+The output sent over a TCP/IP connection is also terminated by [i]\n[/i]:
+
+[code]illuminance=721\n[/code]
+If the output contains multiple values then those are printed one value per line on the command line:
+
+[code]$ tinkerforge call dual-relay-bricklet fAa get-state
+relay1=true
+relay2=false[/code]
+If they are send over a TCP/IP connection then [i]\t[/i] is used as separator:
+
+[code]relay1=true\trelay2=false\n[/code]
+[u]Listen Command[/u]
+
+The text protocol proxy is started by the [url=http://www.tinkerforge.com/en/doc/Software/IPConnection_Shell.html#tinkerforge listen]listen[/url] command:
+
+[code]$ tinkerforge listen[/code]
+By default this will connect to the Brick Daemon on [i]localhost[/i]. If you're running brickd on a different computer or want to connect to a WIFI or Ethernet Extension then you can use the [i]--host[/i] and [i]--port[/i] option:
+
+[code]$ tinkerforge --host different-computer --port 5000 listen[/code]
+By default the [i]listen[/i] command binds to port 4217. You can use the other [i]--port[/i] option of the [i]listen[/i] command to change this:
+
+[code]$ tinkerforge --host different-computer --port 5000 listen --port 6000[/code]
+This will connect to [i]different-computer[/i] on port 5000 and listen for incoming connections on port 6000.
+
+[b]NetIO Side[/b]
+
+The attached demo UI configs show how to read the values of a [url=http://www.tinkerforge.com/de/doc/Hardware/Bricklets/Temperature.html]Temperature Bricklet[/url] and an [url=http://www.tinkerforge.com/de/doc/Hardware/Bricklets/Ambient_Light.html]Ambient Light Bricklet[/url] and how to switch a [url=http://www.tinkerforge.com/de/doc/Hardware/Bricklets/Dual_Relay.html]Dual Relay Bricklet[/url]. See the [url=http://www.tinkerforge.com/en/doc/Software/API_Bindings_Shell.html#api-documentation-and-examples]Tinkerforge API documentation[/url] for a complete command reference.
+
+Both demos use advanced output formatting and require that you start the [i]tinkerforge listen[/i] command with the [i]--enable-execute[/i] option. More details about this in the section below.
+
+Before you can use the demo UI configs you need to configure the connection according to your setup. At least you need to change the [i]host[/i] attribute to the IP address or hostname of the computer on which you started the [i]tinkerforge listen --enable-execute[/i] command.
+
+The Shell bindings require a connection with [i]format[/i] set to [i]string[/i] and [i]protocol[/i] set to [i]socket[/i]. But those are the default values anyway.
+
+As second step you need to figure out the UIDs of the Bricks and Bricklets you want to interact with. You can use the [url=http://www.tinkerforge.com/en/doc/Software/IPConnection_Shell.html#tinkerforge enumerate]enumerate[/url] command of the Shell bindings for this, or you can use the [url=http://www.tinkerforge.com/en/doc/Software/Brickv.html]Brick Viewer[/url] instead.
+
+[u]Reading Values[/u]
+
+To read out the temperature value of a Temperature Bricklet with UID [i]dHd[/i] you can just use a Label and set its [i]reads[/i] attribute to:
+
+[code]call temperature-bricklet dHd get-temperature[/code]
+This will show [i]temperature=2168[/i] as text in the Label. The [i]parseResponse[/i] attribute can be used to just get the number part. Here's an example using a [url=http://www.regular-expressions.info/lookaround.html]positive lookbehind assertion[/url] for this:
+
+[code](?<=temperature=)[^\n]+[/code]
+This regular expression matches all characters between [i]temperature=[/i] and the next [i]\n[/i].
+
+A simpler but less robust way to do this would be to just use [i]\d+[/i] to match a number at any position in the response.
+
+The [i]formatResponse[/i] attribute can be used to append a unit to the output:
+
+[code]{0} °C/100[/code]
+This will show [i]2168 °C/100[/i] as text in the Label now. This reads a bit clumsy due to the fact that the Temperature Bricklet reports its value in °C/100 units.
+
+The Shell bindings have the ability to fed the output of a command to an arbitrary shell command line that can then take care of formatting the output as desired. The [i]--execute[/i] option is used for this. See the [url=http://www.tinkerforge.com/en/doc/Software/IPConnection_Shell.html#output-formatting]output formatting[/url] section of the Shell bindings for more details. Because the [i]--execute[/i] option can be used to execute arbitrary shell command lines it is disabled by default in listen mode. You have to enable it with the [i]--enable-execute[/i] option:
+
+[code]tinkerforge listen --enable-execute[/code]
+To display the temperature in °C instead of °C/100 the value needs to be divided by 100. This can be done with the [i]bc[/i] command:
+
+[code]echo "scale=2; 2168/100" | bc[/code]
+This command line prints [i]21.68[/i] and requires a decent shell as typically available on Linux and Mac OS X, but not on Windows. So to do output formating like this requires to run [i]tinkerforge listen[/i] on Linux or Mac OS X. Windows will work too, but you have to work around the limitations of its command prompt.
+
+Setting the [i]reads[/i] attribute of the Label to:
+
+[code]call temperature-bricklet dHd get-temperature --execute "echo scale=2\; {temperature}/100 | bc"[/code]
+the [i]parseResponse[/i] attribute to [i].*[/i] and [i]formatResponse[/i] to [i]{0} °C[/i] then results in the desired text of [i]21.68 °C[/i] in the Label.
+
+[u]Triggering Actions[/u]
+
+Beside reading sensor values you can also trigger actions such as switching a Dual Relay Bricklet (its UID for this example is [i]fAa[/i]).
+
+A simple way to do this is using two Buttons. One to switch it on and the other one to switch it off. The [i]sends[/i] attribute of the On Button is set to:
+
+[code]call dual-relay-bricklet fAa set-selected-state 1 true[/code]
+and the [i]sends[/i] attribute of the Off Button:
+
+[code]call dual-relay-bricklet fAa set-selected-state 1 false[/code]
+This will control relay 1 on the Dual Relay Bricklet. To control relay 2 replace [i]1[/i] with [i]2[/i] in the commands.
+
+Another way to do this is using a Switch element. That element has two [i]sends[/i] attributes and also has a [i]reads[/i] attribute to read back the current status of the relay and display it. There are several attributes that needs to be set to make the Switch element work (in [i]<attribute>: <value>[/i] format):
+
+[code]onSend: call dual-relay-bricklet fAa set-selected-state 1 true
+offSend: call dual-relay-bricklet fAa set-selected-state 1 false
+reads: call dual-relay-bricklet fAa get-state
+parseResponse: (?<=relay1=)[^\t]+
+formatResponse: {0}
+onValue: true
+interval: 2000[/code]
+The [i]onSend[/i] and [i]offSend[/i] attributes use the same commands as in the two Button example above. The [i]reads[/i] attribute is used to read back the current state of the relay. The response looks like this:
+
+[code]relay1=true\trelay2=false\n[/code]
+The [i]parseResponse[/i] and [i]formatResponse[/i] attributes are used to get the state of relay 1 from the response, which is either [i]true[/i] or [i]false[/i]. Finally the Switch element compares the result to its [i]onValue[/i] attribute to decide in which state it should display itself. This process is repeated in an [i]interval[/i] of 2 seconds.
+
+To make this work for relay 2 replace [i]1[/i] with [i]2[/i] in the [i]onSend[/i] and [i]offSend[/i] commands and change the [i]parseResponse[/i] attribute to:
+
+[code](?<=relay2=)[^\n]+[/code]
+The demo UI configs contain two Switch elements that work this way.

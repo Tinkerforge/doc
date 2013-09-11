@@ -99,6 +99,10 @@ haben wir das Kommunikationsprotokoll der Bricks überarbeitet. Für Programme
 die vor diesem Zeitpunkt entwickelt wurden gibt es eine Anleitung für den
 :ref:`Übergang von Protokoll 1.0 auf Protokoll 2.0 <transition_1to2>`.
 
+Die :ref:`Shell Bindings <api_bindings_shell>` können auch als Text Protokoll
+Proxy zwischen Bricks/Bricklets und der :ref:`NetIO Controller App <netio_setup>`
+verwendet werden.
+
 .. toctree::
    :hidden:
 

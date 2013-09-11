@@ -30,6 +30,8 @@ on Linux and Mac OS X as they are. There are Bash ports for Windows that allow
 to run the examples unmodified, too.
 
 
+.. _api_bindings_shell_links:
+
 API Documentation and Examples
 ------------------------------
 
