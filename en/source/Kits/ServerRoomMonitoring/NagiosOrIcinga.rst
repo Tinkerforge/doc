@@ -7,8 +7,8 @@ Server Room Monitoring with Nagios or Icinga
 ============================================
 
 `Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
-are computer system monitoring tools, whereis Icinga is a fork of Nagios and is 
-said to be backward compatible to Nagios. So we refering in the following 
+are computer system monitoring tools. Icinga is a fork of Nagios and is 
+said to be backward compatible to Nagios. So we referring in the following 
 examples to the Nagios API to be also compatible with Icinga.
 
 These monitoring tools use so called plugins, instantiated as services to 

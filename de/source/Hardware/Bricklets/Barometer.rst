@@ -153,7 +153,7 @@ Höhenangabe
 Die Höhenangabe des Barometer Bricklets bezieht sich standardmäßig auf einen
 Referenzluftdruck von 1013,25 mbar und wird mittels einer Approximation
 des `International Standard Atmosphere <http://de.wikipedia.org/wiki/Normatmosph%C3%A4re>`__
-Models berechnet. Eine so bestimmte Höhe ist in der Luftfahrt als `QNE
+Modells berechnet. Eine so bestimmte Höhe ist in der Luftfahrt als `QNE
 <http://de.wikipedia.org/wiki/Barometrische_H%C3%B6henmessung_in_der_Luftfahrt#QNE>`__
 Wert bekannt.
 

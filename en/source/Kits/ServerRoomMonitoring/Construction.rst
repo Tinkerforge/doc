@@ -82,7 +82,7 @@ TODO Image Bricklets, Master, Bricklet cable
 
 In the last step attach the Ambient Light Bricklet to the front panel.
 To do this connect the 25cm Bricklet cable first to the Bricklet. After that
-put four long screws through the frontpanel and fix them with one washer and one
+put four long screws through the front panel and fix them with one washer and one
 nut each. Put the Bricklet on it and fix it with four additional nuts.
 As the last step connect the Bricklet cable to the Master Brick
 
