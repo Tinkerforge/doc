@@ -244,7 +244,7 @@ Schritt 4: Weitere GUI-Logik
 Die ``ConnectWorker_RunWorkerCompleted()`` Methode wird nach
 ``ConnectWorker_DoWork()`` aufgerufen. sie ändert den Text des Knopfes zu
 "Disconnect". Die ``Connect_Click()`` Methode entscheidet nun dynamisch was zu
-tun ist. Falls keine Verbindung besteht wird ``Connect()`` aufgerufen, 
+tun ist. Falls keine Verbindung besteht wird ``Connect()`` aufgerufen,
 andernfalls wird der ``BackgroundWorker`` für das Trennen der Verbindung
 gestartet:
 
@@ -410,13 +410,27 @@ repräsentiert:
         string[] argument = e.Argument as string[];
 
         ipcon = new IPConnection();
-        relay = new BrickletIndustrialQuadRelay(argument[2], ipcon);
+
+        try
+        {
+            relay = new BrickletIndustrialQuadRelay(argument[2], ipcon);
+        }
+        catch (ArgumentOutOfRangeException)
+        {
+            e.Result = ConnectResult.NO_DEVICE;
+            return;
+        }
 
         try
         {
             ipcon.Connect(argument[0], Convert.ToInt32(argument[1]));
         }
         catch (System.IO.IOException)
+        {
+            e.Result = ConnectResult.NO_CONNECTION;
+            return;
+        }
+        catch (ArgumentOutOfRangeException)
         {
             e.Result = ConnectResult.NO_CONNECTION;
             return;

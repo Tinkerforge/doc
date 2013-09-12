@@ -461,15 +461,22 @@ das die drei möglichen Ausgänge eines Verbindungsversuchs repräsentiert:
 
     protected ConnectResult doInBackground(Void... params) {
         ipcon = new IPConnection();
-        relay = new BrickletIndustrialQuadRelay(currentUID, ipcon);
 
         try {
-            ipcon.connect(currentHost, currentPort);
+            relay = new BrickletIndustrialQuadRelay(currentUID, ipcon);
+        } catch(IllegalArgumentException e) {
+            return ConnectResult.NO_DEVICE;
+        }
+
+        try {
+            ipcon.connect(currentHost, Integer.parseInt(currentPort));
         } catch(java.net.UnknownHostException e) {
+            return ConnectResult.NO_CONNECTION;
+        } catch(IllegalArgumentException e) {
             return ConnectResult.NO_CONNECTION;
         } catch(java.io.IOException e) {
             return ConnectResult.NO_CONNECTION;
-        } catch(com.tinkerforge.AlreadyConnectedException e) {
+        } catch(AlreadyConnectedException e) {
             return ConnectResult.NO_CONNECTION;
         }
 

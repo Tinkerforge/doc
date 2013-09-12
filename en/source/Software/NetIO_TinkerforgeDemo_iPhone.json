@@ -7,9 +7,7 @@
 		{
 			"host": "192.168.178.46",
 			"name": "tinker",
-			"port": 4217,
-			"format": "string",
-			"protocol": "socket"
+			"port": 4217
 		}
 	],
 	"version": 1.3,
