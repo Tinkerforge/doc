@@ -43,7 +43,7 @@ Goals
 Step 1: Creating the GUI
 ------------------------
 
-After creating a new "Android Application Project" named "Garage Control" in
+After creating a new "Android Application Project" named "Power Outlet Control" in
 Eclipse we start with creating the GUI:
 
 .. image:: /Images/Kits/hardware_hacking_power_outlet_control_android_gui_350.jpg

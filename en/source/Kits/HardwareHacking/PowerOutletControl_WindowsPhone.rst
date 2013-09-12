@@ -43,7 +43,7 @@ Goals
 Step 1: Creating the GUI
 ------------------------
 
-After creating a new "Windows Phone App" named "Garage Control" in Visual Studio
+After creating a new "Windows Phone App" named "Power Outlet Control" in Visual Studio
 we start with creating the GUI:
 
 .. image:: /Images/Kits/hardware_hacking_power_outlet_control_windows_phone_gui_350.jpg
