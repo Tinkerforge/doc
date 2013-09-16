@@ -4,43 +4,13 @@
 import os
 import sys
 
+from kit_generics import bindings
+from kit_generics import binding_name
+from kit_generics import binding_names
+
 lang = 'en'
 
-            # display,            example,              uri,      filename, getting started
-bindings = [('C/C++',             'C',                  'c',      'C',      {'en': 'http://www.cprogramming.com/',
-                                                                             'de': 'http://www.cprogramming.com/'}), # http://www.c-howto.de/
-            ('C#',                'C#',                 'csharp', 'CSharp', {'en': 'http://csharp.net-tutorials.com/',
-                                                                             'de': 'http://csharp.net-tutorials.com/'}),
-            ('Delphi',            'Delphi',             'delphi', 'Delphi', {'en': 'http://www.delphibasics.co.uk/',
-                                                                             'de': 'http://www.delphi-treff.de/tutorials/grundlagen/'}),
-            ('Java',              'Java',               'java',   'Java',   {'en': 'http://docs.oracle.com/javase/tutorial/',
-                                                                             'de': 'http://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
-            ('PHP',               'PHP',                'php',    'PHP',    {'en': 'http://www.php.net/manual/en/getting-started.php',
-                                                                             'de': 'http://www.php.net/manual/de/getting-started.php'}),
-            ('Python',            'Python',             'python', 'Python', {'en': 'http://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
-                                                                             'de': 'http://www.python.org/about/gettingstarted/'}),
-            ('Ruby',              'Ruby',               'ruby',   'Ruby',   {'en': 'http://www.ruby-lang.org/en/documentation/quickstart/',
-                                                                             'de': 'http://www.ruby-lang.org/de/documentation/quickstart/'}),
-            ('Visual Basic .NET', 'Visual Basic .NET',  'vbnet',  'VBNET',  {'en': 'http://howtostartprogramming.com/vb-net/',
-                                                                             'de': 'http://howtostartprogramming.com/vb-net/'})] # http://openbook.galileocomputing.de/vb_net/index.htm
-
-binding_name = {
-'en':
-""":ref:`{0} <api_bindings_{1}>`""",
-'de':
-""":ref:`{0} <api_bindings_{1}>`"""
-}
-
-binding_names = {
-'en':
-"""
-.. |bindings| replace:: {0}
-""",
-'de':
-"""
-.. |bindings| replace:: {0}
-"""
-}
+examples_in = ('C', 'C#', 'Delphi', 'java', 'PHP', 'Python', 'Ruby', 'Visual Basic .NET')
 
 common_intro = {
 'en':
@@ -1083,38 +1053,44 @@ def make_substitutions():
 
     example_lines = []
     for binding in bindings:
-        example_lines.append(smoke_detector_example_line[lang].format(binding[1], binding[2]))
+        if binding[1] in examples_in:
+            example_lines.append(smoke_detector_example_line[lang].format(binding[1], binding[2]))
 
     substitutions += smoke_detector_examples[lang].format(', '.join(example_lines))
 
     examples_toctree_lines = []
     for binding in bindings:
-        examples_toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding[3]))
+        if binding[1] in examples_in:
+            examples_toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding[3]))
 
     substitutions += smoke_detector_examples_toctree[lang].format('\n'.join(examples_toctree_lines))
 
     example_download_lines = []
     for binding in bindings:
-        example_download_lines.append(smoke_detector_example_download_line[lang].format(binding[1], binding[2]))
+        if binding[1] in examples_in:
+            example_download_lines.append(smoke_detector_example_download_line[lang].format(binding[1], binding[2]))
 
     substitutions += smoke_detector_example_downloads[lang].format(', '.join(example_download_lines))
 
 
     example_lines = []
     for binding in bindings:
-        example_lines.append(remote_switch_example_line[lang].format(binding[1], binding[2]))
+        if binding[1] in examples_in:
+            example_lines.append(remote_switch_example_line[lang].format(binding[1], binding[2]))
 
     substitutions += remote_switch_examples[lang].format(', '.join(example_lines))
 
     examples_toctree_lines = []
     for binding in bindings:
-        examples_toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding[3]))
+        if binding[1] in examples_in:
+            examples_toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding[3]))
 
     substitutions += remote_switch_examples_toctree[lang].format('\n'.join(examples_toctree_lines))
 
     example_download_lines = []
     for binding in bindings:
-        example_download_lines.append(remote_switch_example_download_line[lang].format(binding[1], binding[2]))
+        if binding[1] in examples_in:
+            example_download_lines.append(remote_switch_example_download_line[lang].format(binding[1], binding[2]))
 
     substitutions += remote_switch_example_downloads[lang].format(', '.join(example_download_lines))
 
@@ -1122,7 +1098,8 @@ def make_substitutions():
 
 def make_common_substitutions(binding):
     substitutions = ''
-    substitutions += common_intro[lang].format(binding[1], binding[2], binding[4][lang])
+    if binding[1] in examples_in:
+        substitutions += common_intro[lang].format(binding[1], binding[2], binding[4][lang])
 
     return substitutions
 
@@ -1152,7 +1129,8 @@ def make_smoke_detector_substitutions():
 def make_smoke_detector_toctree():
     toctree_lines = []
     for binding in bindings:
-        toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding[3]))
+        if binding[1] in examples_in:
+            toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding[3]))
 
     return smoke_detector_examples_toctree[lang].format('\n'.join(toctree_lines))
 
@@ -1167,7 +1145,8 @@ def make_remote_switch_substitutions():
 def make_remote_switch_toctree():
     toctree_lines = []
     for binding in bindings:
-        toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding[3]))
+        if binding[1] in examples_in:
+            toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding[3]))
 
     return remote_switch_examples_toctree[lang].format('\n'.join(toctree_lines))
 
@@ -1221,8 +1200,9 @@ def generate(path):
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'HardwareHacking.substitutions'), make_substitutions())
 
     for binding in bindings:
-        print 'Generating {0}Common.substitutions (HardwareHacking)'.format(binding[3])
-        write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding[3] + 'Common.substitutions'), make_common_substitutions(binding))
+        if binding[1] in examples_in:
+            print 'Generating {0}Common.substitutions (HardwareHacking)'.format(binding[3])
+            write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding[3] + 'Common.substitutions'), make_common_substitutions(binding))
 
     print 'Generating AndroidCommon.substitutions (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'AndroidCommon.substitutions'), make_android_common_substitutions())
