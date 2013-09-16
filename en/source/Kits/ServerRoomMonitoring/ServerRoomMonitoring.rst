@@ -12,16 +12,11 @@ Starter Kit: Server Room Monitoring
 Features
 --------
 
-.. Einrueckung so beibehalten, da sonst kaputt
-
 * Allows Low Cost and Modular Server Room Monitoring 
 * 19" Rack Mountable
 * Accessible and Powered by Ethernet (PoE) 
 * Expandable: Simply add Sensors or I/O if you need them
-* API for many programming languages 
-
- * (|bindings|)
-
+* API for many programming languages (|bindings|)
 * Open Source Soft- and Hardware
 * Nagios and Icinga directly Supported
 
@@ -30,30 +25,30 @@ Description
 
 The *Starter Kit: Server Room Monitoring* is an open source kit to
 monitor server room installations. The basic kit is equipped with the following
-Sensors: One :ref:`Ambient Light Bricklet <ambient_light_bricklet>` (e.g. to 
-monitor the room illumination),
-:ref:`Temperature Bricklet <temperature_bricklet>` (e.g. to monitor
-the temperature in the server rack) and a
+Sensors: :ref:`Ambient Light Bricklet <ambient_light_bricklet>` ( 
+monitors room illumination),
+:ref:`Temperature Bricklet <temperature_bricklet>` (monitors
+temperature in the server rack) and a
 :ref:`PTC Bricklet <ptc_bricklet>` with attachable temperature sensor probe 
-(e.g. to monitor the temperature in a server). The included enclosure lets you
-mount the kit directly in a 19" server rack.
+(monitors temperature in a server). The included enclosure can be
+mounted directly in a 19" server rack.
 
-The kit uses the Tinkerforge building blocks, such that it can be extended 
-easily by more temperature probes, other sensors types (e.g. motion detector), 
+The kit uses the Tinkerforge building blocks. It can be extended 
+by more temperature probes, other sensors types (e.g. motion detector), 
 in- or outputs (to switch computers on/off or to monitor doors) and so on. 
-This way it is adaptable flexibly to your needs. 
+It is flexible and you can adapt it to your needs. 
 
 One or more external controlling devices, such as (Embedded-) PCs, smart phones 
-or tablets, can be used to control the hardware from outside over the Ethernet 
-connection. Therefore monitoring over the Internet is directly possible. Power 
-Supply is possible over onboard 
+or tablets, can be used to control the hardware over the Ethernet 
+connection. Monitoring directly over the Internet is possible. Power can
+be supplied with 
 `Power over Ethernet (PoE) <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__.
 
-The kit allows to modify soft- and hardware. The casing consists of
-tinker-friendly PMMA which can be easily modified (e.g. drill new holes with 
-simple wood drill). Additionally mounting holes for 
+The soft- and hardware of the kit can be modified. The casing consists of
+tinker-friendly PMMA, you can drill new holes with 
+simple wood drill. Mounting holes for 
 different :ref:`Bricklets <product_overview_bricklets>` and 
-:ref:`Bricks <product_overview_bricks>` are provided, e.g.:
+:ref:`Bricks <product_overview_bricks>` are provided, by default you can mount:
 
 :ref:`Analog In Bricklet <analog_in_bricklet>`,
 :ref:`Analog Out Bricklet <analog_in_bricklet>`,
@@ -63,11 +58,10 @@ different :ref:`Bricklets <product_overview_bricklets>` and
 and :ref:`IO-4 Bricklet <io4_bricklet>`.
 
 Programming this kit can be done with all of the available
-bindings (currently: |bindings|). Different example implementations and
+bindings (currently: |bindings|). Example implementations and
 applications for the usage with 
 `Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ and 
-other are available. This will give you a quick starting point into the 
-programming with Tinkerforge.
+other are available. 
 
 Technical Specifications
 ------------------------
@@ -107,7 +101,7 @@ As a very first step you should try out and update your Bricks and Bricklets.
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
 the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets and the 
 Ethernet Master Extension on top of the Master Brick and connect it via USB to 
-your PC. Afterwards use Brick Viewer to find out if all of the firmwares up to 
+your PC. Afterwards use Brick Viewer to find out if all of the firmwares are up to 
 date (Updates / Flashing button). If not, you can
 :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
@@ -123,20 +117,16 @@ As next step click through the tabs of the Brick Viewer to see if everything is
 working correctly. Next you should configure the Ethernet Extension. In our 
 further examples we configure the hostname to "ServerMonitoring". To do that 
 click on the Master Brick tab and configure it to your needs. More information 
-about how to configure the Ethernet Extension can be found 
+about the configuration of the Ethernet Extension can be found 
 :ref:`here <ethernet_configuration>`.
-
 
 After testing the hardware and configuration you can be sure that the Bricks 
 and Bricklets have versions that work together and that everything will work if
-it is screwed together in the server 19" enclosure.
+it is screwed together in the 19" server enclosure.
 
 
 Construction
 ------------
-
-There is no singular way to build the 19" enclosure. Additionally it is
-extensible by different Bricks and Bricklets to meet your requirements.
 
 The construction of the basic kit is described 
 :ref:`here <starter_kit_server_room_monitoring_construction>`.
@@ -153,7 +143,7 @@ Projects
 --------
 
 There are several applications for the Starter Kit: Server Room Monitoring. In 
-the following we are showing some examples which can be act as a starting point
+the following we are showing some examples which can act as a starting point
 for your own projects.
 
 
@@ -161,11 +151,9 @@ Simple Monitoring
 ^^^^^^^^^^^^^^^^^
 
 In this example we use the :ref:`Shell Bindings <api_bindings_shell>` to read 
-out the different sensors in the kit. After installation we use them to play
-a bit with it.
+out the different sensors in the kit. 
 
-
-Let's see what is connected: Call for a enumeration
+Enumerate the Bricks and Bricklets:
 
 .. code-block:: bash
 
@@ -203,7 +191,7 @@ Let's see what is connected: Call for a enumeration
  device-identifier=ambient-light-bricklet
  enumeration-type=available
 
-Next let us read out the connected sensors:
+Read out connected sensors:
 
 .. code-block:: bash
 
@@ -216,9 +204,8 @@ Next let us read out the connected sensors:
  $ tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
  temperature=2603
 
-But how can we use it in our own shell scripts?
 The shell bindings support the execution of bash code with the --execute flag 
-(see Shell bindings for more information). The following script shows how to 
+(see `Shell bindings <ipcon_shell_api>`__ for more information). The following script shows how to 
 convert the returned value into degree Celsius and how to save it in a variable
 for further use.
 
@@ -238,10 +225,10 @@ Server Room Monitoring with Nagios or Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
-said to be backward compatible to Nagios. So we referring in the following 
-examples to the Nagios API to be also compatible with Icinga.
+said to be backward compatible to Nagios. In the following examples we are
+reffering to the Nagios API to be also compatible with Icinga.
 
-These monitoring tools use so called plugins, instantiated as services to 
+These monitoring tools use plugins, instantiated as services to 
 monitor processor load, memory utilization, software processes or physical 
 values like temperature.
 
@@ -250,7 +237,9 @@ temperature measuring. With a few modifications you can use the plugin to
 support other Tinkerforge hardware modules and create the physical monitoring
 you need.
 
-Please find the full project description :ref:`here
+TODO: Image
+
+Find the full project description :ref:`here
 <starter_kit_server_room_monitoring_nagios_or_icinga>`.
 
 .. toctree::
@@ -264,7 +253,9 @@ Upload Sensor Data to Xively
 
 `Xively <https://xively.com/>`__ is a service that provides the possibility to
 analyze and visualize the "Internet of Things". It can store a history of 
-measured temperature or illumination an can display it with pretty graphs.
+measured temperature or illumination and can display it with pretty graphs.
+
+TODO: Image
 
 The full project description can be found :ref:`here
 <starter_kit_server_room_monitoring_upload_sensor_data_to_xively>`.
@@ -288,7 +279,7 @@ Extended Nagios Example: Server Room Motion Detector and Error Code Display
 
 Use a Motion Detector Bricklet (coming soon) to detect motion in your server
 room. An additional Segment Display 4x7 Bricklet is used to show error code
-information directly on the case.
+information on the case.
 
 The full project description can be found 
 :ref:`here <starter_kit_server_room_monitoring_extended_nagios>`.
@@ -301,9 +292,9 @@ The full project description can be found
 Remote On/Off Switch
 ^^^^^^^^^^^^^^^^^^^^
 
-Use Industrial Quad Relay to switch computers remotely on or off.
+Use Industrial Quad Relay to switch computers on or off remotely.
 You can use the previous examples to modify them to your needs.
-The wireing is really simple, you only have to bypass the on/off switch
+The wiring is really simple, you only have to bypass the on/off switch
 of the computer.
 
-TODO Image
+TODO: Image
