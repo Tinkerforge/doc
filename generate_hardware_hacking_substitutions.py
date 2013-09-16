@@ -10,7 +10,7 @@ from kit_generics import binding_names
 
 lang = 'en'
 
-examples_in = ('C', 'C#', 'Delphi', 'java', 'PHP', 'Python', 'Ruby', 'Visual Basic .NET')
+examples_in = ('C', 'C#', 'Delphi', 'Java', 'PHP', 'Python', 'Ruby', 'Visual Basic .NET')
 
 common_intro = {
 'en':
