@@ -15,6 +15,8 @@ We extend the script introduced in the basic
 :ref:`Nagios/Icinga project <starter_kit_server_room_monitoring_nagios_or_icinga>`
 by the Motion Detector Bricklet and the Segment Display 4x7 Bricklet.
 
+Extended Script
+^^^^^^^^^^^^^^^
 
 The small script, called *check_tf_temp_ext.py*, uses the following interface:
 

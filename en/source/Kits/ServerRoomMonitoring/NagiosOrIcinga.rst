@@ -6,8 +6,6 @@
 Server Room Monitoring with Nagios or Icinga
 ============================================
 
-TODO: Top right is broken here, since there are no sections
-
 `Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
 said to be backward compatible to Nagios. In the following examples we are
@@ -29,6 +27,9 @@ After the basic installation of Nagios you can start with the
 development of your own plugin. At first install the 
 :ref:`bindings <api_bindings>` for your programming language. Next you can start 
 to write your program considering the Nagios Developer Guidelines. 
+
+Basic Nagios/Icinga Script
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For this example we use the :ref:`Python Bindings <api_bindings_python>`. 
 The program is based on a `Wiki project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/IT_Infrastructure_Monitoring_-_Nagios_Plugin>`__
