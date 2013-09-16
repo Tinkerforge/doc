@@ -274,8 +274,8 @@ in any way and you have published your results on our
 `Wiki <http://www.tinkerunity.org/wiki/>`__, on your blog or similar: 
 Please give us a notice. We would love to add a link to your project here!
 
-Extended Nagios Example: Server Room Motion Detector and Error Code Display
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Motion Detector and Error Code Display
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Use a Motion Detector Bricklet (coming soon) to detect motion in your server
 room. An additional Segment Display 4x7 Bricklet is used to show error code

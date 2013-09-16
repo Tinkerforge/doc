@@ -3,8 +3,8 @@
 
 .. _starter_kit_server_room_monitoring_extended_nagios:
 
-Extended Nagios Example: Server Room Motion Detector and Error Code Display
-===========================================================================
+Motion Detector and Error Code Display
+======================================
 
 `Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
