@@ -205,7 +205,7 @@ Read out connected sensors:
  temperature=2603
 
 The shell bindings support the execution of bash code with the --execute flag 
-(see `Shell bindings <ipcon_shell_api>`__ for more information). The following script shows how to 
+(see `Shell Bindings <api_bindings_shell>`__ for more information). The following script shows how to 
 convert the returned value into degree Celsius and how to save it in a variable
 for further use.
 

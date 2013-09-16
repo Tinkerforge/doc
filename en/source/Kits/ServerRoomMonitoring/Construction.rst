@@ -23,8 +23,9 @@ Remove Protective Foils
 -----------------------
 
 At first the protective foils on all case parts have to be removed.
-There is one foil on the front and back side each. In some cases the protective
-foils can be hard to remove and it seems that there is no foil at all.
+There is foil on the front and back side. In some cases the protective
+foils may be hard to remove, you can use a cutter or similar as a
+lever to get to the foil.
 
 Screw Brackets to Side Parts
 ----------------------------
@@ -42,7 +43,7 @@ Screw Side Parts to the Front Panel
 -----------------------------------
 
 Attach the previous manufactured side parts into the front panel and screw it to 
-the front panel with the previous used nut technique. It will look as the 
+the front panel with the previously used nut technique. It will look as the 
 following:
 
 TODO Image
@@ -50,8 +51,8 @@ TODO Image
 Screw Back Side to the Side Parts
 ---------------------------------
 
-Next put the back side on the side parts and attach it as precious with nuts 
-and screws. After that you have completed the build up of the rack enclosure.
+Next put the back side on the side parts and attach it as previously with nuts 
+and screws. After that you have completed the build of the rack enclosure.
 In the next step we attach the Bricks and Bricklets to it.
 
 TODO Image
@@ -81,7 +82,7 @@ You can freely choose the port.
 TODO Image Bricklets, Master, Bricklet cable
 
 In the last step attach the Ambient Light Bricklet to the front panel.
-To do this connect the 25cm Bricklet cable first to the Bricklet. After that
+To do this connect the 50cm Bricklet cable to the Bricklet first. After that
 put four long screws through the front panel and fix them with one washer and one
 nut each. Put the Bricklet on it and fix it with four additional nuts.
 As the last step connect the Bricklet cable to the Master Brick

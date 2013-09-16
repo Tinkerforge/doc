@@ -8,12 +8,12 @@ Extended Nagios Example: Server Room Motion Detector and Error Code Display
 
 `Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
-said to be backward compatible to Nagios. So we referring in the following 
-examples to the Nagios API to be also compatible with Icinga.
+said to be backward compatible to Nagios. In the following example we are
+reffering to the Nagios API to be also compatible with Icinga.
 
 We extend the script introduced in the basic 
 :ref:`Nagios/Icinga project <starter_kit_server_room_monitoring_nagios_or_icinga>`
-by the usage of the Motion Detector Bricklet and the Segment Display 4x7 Bricklet.
+by the Motion Detector Bricklet and the Segment Display 4x7 Bricklet.
 
 
 The small script, called *check_tf_temp_ext.py*, uses the following interface:
@@ -64,7 +64,7 @@ You can write "Err" on the Segment Display 4x7 Bricklet by
 
  python check_tf_temp_ext.py -u 9VU -H ServerMonitoring -t segment_display_4x7 -e true
 
-and disable it by
+and disable it with
 
 .. code-block:: bash
 
@@ -72,7 +72,7 @@ and disable it by
 
 
 With the Motion Detector Bricklet you can get information if motion was detected 
-by
+by running
 
 
 .. code-block:: bash
@@ -80,7 +80,7 @@ by
  python check_tf_temp_ext.py -H ServerMonitoring -u abc -t motion_detector
 
 
-The full script will look like this:
+The full script looks like this:
 
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp_ext.py
