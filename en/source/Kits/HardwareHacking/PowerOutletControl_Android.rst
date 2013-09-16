@@ -43,7 +43,7 @@ Goals
 Step 1: Creating the GUI
 ------------------------
 
-After creating a new "Android Application Project" named "Garage Control" in
+After creating a new "Android Application Project" named "Power Outlet Control" in
 Eclipse we start with creating the GUI:
 
 .. image:: /Images/Kits/hardware_hacking_power_outlet_control_android_gui_350.jpg
@@ -452,15 +452,22 @@ represents the three possible outcomes of a connection attempt:
 
     protected ConnectResult doInBackground(Void... params) {
         ipcon = new IPConnection();
-        relay = new BrickletIndustrialQuadRelay(currentUID, ipcon);
 
         try {
-            ipcon.connect(currentHost, currentPort);
+            relay = new BrickletIndustrialQuadRelay(currentUID, ipcon);
+        } catch(IllegalArgumentException e) {
+            return ConnectResult.NO_DEVICE;
+        }
+
+        try {
+            ipcon.connect(currentHost, Integer.parseInt(currentPort));
         } catch(java.net.UnknownHostException e) {
+            return ConnectResult.NO_CONNECTION;
+        } catch(IllegalArgumentException e) {
             return ConnectResult.NO_CONNECTION;
         } catch(java.io.IOException e) {
             return ConnectResult.NO_CONNECTION;
-        } catch(com.tinkerforge.AlreadyConnectedException e) {
+        } catch(AlreadyConnectedException e) {
             return ConnectResult.NO_CONNECTION;
         }
 

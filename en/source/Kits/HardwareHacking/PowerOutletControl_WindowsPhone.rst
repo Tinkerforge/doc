@@ -43,7 +43,7 @@ Goals
 Step 1: Creating the GUI
 ------------------------
 
-After creating a new "Windows Phone App" named "Garage Control" in Visual Studio
+After creating a new "Windows Phone App" named "Power Outlet Control" in Visual Studio
 we start with creating the GUI:
 
 .. image:: /Images/Kits/hardware_hacking_power_outlet_control_windows_phone_gui_350.jpg
@@ -448,13 +448,27 @@ represents the three possible outcomes of a connection attempt:
         string[] argument = e.Argument as string[];
 
         ipcon = new IPConnection();
-        relay = new BrickletIndustrialQuadRelay(argument[2], ipcon);
+
+        try
+        {
+            relay = new BrickletIndustrialQuadRelay(argument[2], ipcon);
+        }
+        catch (ArgumentOutOfRangeException)
+        {
+            e.Result = ConnectResult.NO_DEVICE;
+            return;
+        }
 
         try
         {
             ipcon.Connect(argument[0], Convert.ToInt32(argument[1]));
         }
         catch (System.IO.IOException)
+        {
+            e.Result = ConnectResult.NO_CONNECTION;
+            return;
+        }
+        catch (ArgumentOutOfRangeException)
         {
             e.Result = ConnectResult.NO_CONNECTION;
             return;

@@ -44,7 +44,7 @@ Ziele
 Schritt 1: Die GUI erstellen
 ----------------------------
 
-Nach dem Erstellen eines neuen "Windows Phone App" namens "Garage Control" in
+Nach dem Erstellen eines neuen "Windows Phone App" namens "Power Outlet Control" in
 Visual Studio beginnen wir mit der Erstellung der GUI:
 
 .. image:: /Images/Kits/hardware_hacking_power_outlet_control_windows_phone_gui_350.jpg
@@ -456,13 +456,27 @@ repräsentiert:
         string[] argument = e.Argument as string[];
 
         ipcon = new IPConnection();
-        relay = new BrickletIndustrialQuadRelay(argument[2], ipcon);
+
+        try
+        {
+            relay = new BrickletIndustrialQuadRelay(argument[2], ipcon);
+        }
+        catch (ArgumentOutOfRangeException)
+        {
+            e.Result = ConnectResult.NO_DEVICE;
+            return;
+        }
 
         try
         {
             ipcon.Connect(argument[0], Convert.ToInt32(argument[1]));
         }
         catch (System.IO.IOException)
+        {
+            e.Result = ConnectResult.NO_CONNECTION;
+            return;
+        }
+        catch (ArgumentOutOfRangeException)
         {
             e.Result = ConnectResult.NO_CONNECTION;
             return;
