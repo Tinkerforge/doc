@@ -7,10 +7,10 @@ Construction of the Starter Kit: Server Room Monitoring
 =======================================================
 
 The Starter Kit: Server Room Monitoring comes with :ref:`Ambient Light
-<ambient_light_bricklet>`, :ref:`PTC <ptc_bricklet>` and
+<ambient_light_bricklet>`, :ref:`PTC <ptc_bricklet>`,
 :ref:`Temperature Bricklet<temperature_bricklet>`, 
 :ref:`Master Brick <master_brick>`,
-:ref:`Ethernet Master Extensions <ethernet_extension>` and
+:ref:`Ethernet Master Extension <ethernet_extension>` and
 Bricklet cables as well as lots of screws, spacers, nuts and washers.
 
 .. image:: /Images/Kits/server_room_monitoring_exploded_guided_small.png
@@ -31,8 +31,8 @@ Screw Brackets to Side Parts
 ----------------------------
 
 In the next step we screw one bracket to one side part each. To do this you have
-to put a nut in the dedicated slot of the bracket and put a screw through the 
-side part and fix the bracket. If the nut does not seem to fit, rotate it a 
+to put a nut in the dedicated slot of the bracket and put a long screw through 
+the side part and fix the bracket. If the nut does not seem to fit, rotate it a 
 little bit in the slot until it fits.
 
 The result is depicted in the following image:
@@ -43,15 +43,21 @@ Screw Side Parts to the Front Panel
 -----------------------------------
 
 Attach the previous manufactured side parts into the front panel and screw it to 
-the front panel with the previously used nut technique. It will look as the 
-following:
+the front panel with the previously used nut technique. It is important to 
+attach the front panel as depicted in the following image (Pay attention to the
+position of the Ethernet Master Extension cut-out ).
 
 TODO Image
 
 Screw Back Side to the Side Parts
 ---------------------------------
 
-Next put the back side on the side parts and attach it as previously with nuts 
+Next put eight 10mm spacers and screws and attach them to the position of the
+PTC and Temperature Bricklet.
+
+TODO Image
+
+At next put the back side on the side parts and attach it as previously with nuts 
 and screws. After that you have completed the build of the rack enclosure.
 In the next step we attach the Bricks and Bricklets to it.
 
@@ -62,30 +68,34 @@ Attach Bricks and Bricklets
 
 The kit comes with a lot of mounting kits. There is one 9mm mounting kit 
 included with 9mm spacers instead of 12mm spacers. Use these four 9mm spacers 
-to put them between Master Brick and Ethernet Master Extension. Fix them with
-nuts on the bottom side of the Ethernet Extension.
+to put them between Master Brick and Ethernet Master Extension (on top). 
+Fix them with 10mm spacers on the bottom side and with screws on the top side 
+of the Ethernet Extension.
 
-TODO Image Master Brick, 9mm Spacers, Ethernet Extension, Nuts
+TODO Image 10mm Spacers, Master Brick, 9mm Spacers, Ethernet Extension, Screws
 
 Screw this stack to one of the side parts by four screws. See below picture.
 
 TODO Image Stack screwed to side part.
 
-Next screw the PTC and the Temperature Bricklet to the backside
-with four 10mm spacers and eight screws each.
+Next attach a 15cm Bricklet cable to the PTC Bricklet and to the Temperature
+Bricklet each. Use four screws each to mount it on the previous installed 
+spacers on the back side part. The following image depicts the routing of the
+cables.
+
+Before the first usage the PTC Bricklet has to be configured and the temperature
+probe (2-wire) has to be attached. How this is done is documented
+:ref:`here <ptc_bricklet_jumper_configuration>` and 
+:ref:`here <ptc_bricklet_connectivity>`.
 
 TODO Image back side with ptc and temperature
-
-Next connect the Bricklets with 15cm Bricklet cables to the Master Brick.
-You can freely choose the port.
-
-TODO Image Bricklets, Master, Bricklet cable
 
 In the last step attach the Ambient Light Bricklet to the front panel.
 To do this connect the 50cm Bricklet cable to the Bricklet first. After that
 put four long screws through the front panel and fix them with one washer and one
 nut each. Put the Bricklet on it and fix it with four additional nuts.
-As the last step connect the Bricklet cable to the Master Brick
+As the last step connect the Bricklet cable to the Master Brick and use a 
+cable strap to fasten them.
 
 That was it! The finished work should look like the following:
 

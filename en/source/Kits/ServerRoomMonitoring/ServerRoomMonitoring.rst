@@ -103,7 +103,13 @@ First tests, firmware upgrade and configuration
 As a very first step you should try out and update your Bricks and Bricklets.
 
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
-the :ref:`Brick Viewer <brickv_installation>`. Put the
+the :ref:`Brick Viewer <brickv_installation>`. At next you should
+configure the PTC Bricklet and attach the temperature probe (2-wire).
+documented
+:ref:`here <ptc_bricklet_jumper_configuration>` and 
+:ref:`here <ptc_bricklet_connectivity>`.
+
+After this put the
 Ethernet Master Extension on top of the Master Brick, connect all Bricklets
 to it and connect it via USB to your PC. 
 Afterwards use Brick Viewer to find out if all of the firmwares are up to 

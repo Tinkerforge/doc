@@ -93,7 +93,7 @@ Ressourcen
 * Beispielcode *Simple Monitoring* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/simple_monitoring/check_tf_temp_simple.sh>`__)
 * Beispielcode *Nagios/Icinga Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
 * Beispielcode *Nagios/Icinga Extended Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
-* Beispielcode *Sensordaten nach Xively hochladen* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
+* Beispielcode *Sensordaten an Xively übertragen* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
  
  
  
@@ -105,7 +105,13 @@ Als ersten Schritt sollten die Bricks und Bricklets getestet werden
 und deren Firmware gegebenenfalls aktualisiert werden.
 
 Dazu muss der :ref:`Brick Daemon <brickd_installation>` und
-der :ref:`Brick Viewer <brickv_installation>` installiert werden. 
+der :ref:`Brick Viewer <brickv_installation>` installiert werden.
+
+Als nächstes sollte das PTC Bricklet konfiguriert und der 
+Temperatursensor (2-draht) angeschlossen werden. Wie dies funktioniert
+ist :ref:`hier <ptc_bricklet_jumper_configuration>` und
+:ref:`hier <ptc_bricklet_connectivity>` dokumentiert.
+
 Anschließend wird die Ethernet Master Extension auf das Master Brick
 gesteckt und alle Bricklets angeschlossen. Das Master Brick wird per USB
 mit dem PC verbunden. Mit dem Brick Viewer können nun die Module getestet werden
@@ -256,8 +262,8 @@ Die vollstände Projektbeschreibung kann :ref:`here
    NagiosOrIcinga
 
 
-Sensordaten nach Xively hochladen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sensordaten an Xively übertragen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Bei `Xively <https://xively.com/>`__ handelt es sich um einen Dienst, der die
 Möglichkeit bietet das "Internet der Dinge" zu analysieren und zu visualisieren.
