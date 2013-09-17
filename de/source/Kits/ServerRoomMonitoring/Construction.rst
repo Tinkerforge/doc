@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/ServerRoomMonitoring/ServerRoomMonitoring.html">Starter Kit: Server Room Monitoring</a> / Construction of the Starter Kit: Server Room Monitoring
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/ServerRoomMonitoring/ServerRoomMonitoring.html">Starterkit: Serverraum-Überwachung</a> / Aufbau des Starterkits: Serverraum-Überwachung
 
 .. _starter_kit_server_room_monitoring_construction:
 

@@ -11,7 +11,7 @@ are computer system monitoring tools. Icinga is a fork of Nagios and is
 said to be backward compatible to Nagios. In the following examples we are
 reffering to the Nagios API to be also compatible with Icinga.
 
-These monitoring tools use plugins, instantiated as services to 
+Both monitoring tools use plugins, instantiated as services to 
 monitor processor load, memory utilization, software processes or physical 
 values like temperature. Please refer to the respective documentation for more
 information.
@@ -32,8 +32,8 @@ Basic Nagios/Icinga Script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For this example we use the :ref:`Python Bindings <api_bindings_python>`. 
-The program is based on a `Wiki project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/IT_Infrastructure_Monitoring_-_Nagios_Plugin>`__
-and uses the a Temperature Bricklet to measure the ambient temperature
+The script is based on a `Wiki project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/IT_Infrastructure_Monitoring_-_Nagios_Plugin>`__
+and uses the a Temperature or PTC Bricklet to measure the temperature
 and to warn if high temperatures are detected.
 
 The small script, called *check_tf_temp.py*, uses the following interface:
@@ -81,7 +81,7 @@ Most of the interface should be self-explanatory. It supports three modes:
 Make the script globally executable, e.g. store it under /usr/local/bin.
 
 The following example connects to the Ethernet Extension with hostname 
-ServerMonitoring and to the Temperature Bricklet with UID SCT31. It creates a 
+*ServerMonitoring* and to the Temperature Bricklet with UID SCT31. It creates a 
 warning if the temperature is above 26°C and a critical message if the
 temperature is above 27°C:
 
@@ -108,7 +108,7 @@ will then look like this:
 
 The *check_tf_temp.py* script is small and is easy to adapted for other
 Tinkerforge sensors. The *read* method is the main part of the script. It reads
-out the Temperature Bricklet and compares the measured temperature with
+out the Bricklet and compares the measured temperature with
 the warning and critical thresholds and generates the necessary message and 
 return value.
 
@@ -127,7 +127,9 @@ to register the command with the following lines in a commands config file
      command_line /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m high -w 26 -c 27
  }
 
-And register the service in the services config file with the following lines:
+After the command is known to Nagios it can be used by a service.
+To register a new service you can add the following lines to a service
+config file:
 
 .. code-block:: none
 
@@ -140,7 +142,8 @@ And register the service in the services config file with the following lines:
  }
 
 Possible config file locations are /usr/local/nagios/etc/services.cfg, 
-/etc/icinga/objects/services_icinga.cfg or other.
+/etc/icinga/objects/services_icinga.cfg or other. The respective documentation
+should give more information.
 
 
 That's it. You should see a new service in the web interface and should be

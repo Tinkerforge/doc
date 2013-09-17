@@ -1,24 +1,22 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/ServerRoomMonitoring/ServerRoomMonitoring.html">Starter Kit: Server Room Monitoring</a> / Extended Nagios Example
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/ServerRoomMonitoring/ServerRoomMonitoring.html">Starterkit: Serverraum-Überwachung</a> / Erweitertes Nagios Beispiel
 
 .. _starter_kit_server_room_monitoring_extended_nagios:
 
-Extended Nagios Example
-=======================
+Erweitertes Nagios Beispiel
+===========================
 
-This example is an extended version of the 
-:ref:`Nagios/Icinga project <starter_kit_server_room_monitoring_nagios_or_icinga>`.
-It is extended by the usage of a Motion Detector Bricklet and a 
-Segment Display 4x7 Bricklet.
+Dieses Beispiel basiert auf dem
+:ref:`Nagios/Icinga Projekt <starter_kit_server_room_monitoring_nagios_or_icinga>`.
+Es erweitert dieses um die Möglichkeit einen Fehlerzustand anzuzeigen und
+Bewegung im Serverraum zu detektieren. Hierzu wird ein Motion Detector Bricklet 
+und ein Segment Display 4x7 Bricklet genutzt. Das Skript kann als Startpunkt für
+eigene Entwicklungen dienen.
 
-With the extended script you can display if there is an error occured
-and can detect motion in the server room. The script can be used as a starting
-point for your own projects.
+Erweitertes Skript
+^^^^^^^^^^^^^^^^^^
 
-Extended Script
-^^^^^^^^^^^^^^^
-
-The small script, called *check_tf_temp_ext.py*, uses the following interface:
+Dieses kleine Skript, genannt *check_tf_temp_ext.py*, besitzt die folgende Schnittstelle:
 
 .. code-block:: none
 
@@ -57,32 +55,29 @@ The small script, called *check_tf_temp_ext.py*, uses the following interface:
   -e {true,false}, --error {true,false}
                         Set Error Message on 4x7 Segment On/Off
 
-The interface is extended in comparison to the *check_tf_temp.py* script.
-
-You can write "Err" on the Segment Display 4x7 Bricklet by
+Die Schnittstelle ist im Vergleich zu dem *check_tf_temp.py* Skript erweitert.
+Ein "Err" kann auf das Segment Display 4x7 Bricklet mittels
 
 
 .. code-block:: bash
 
  python check_tf_temp_ext.py -u 9VU -H ServerMonitoring -t segment_display_4x7 -e true
 
-and disable it with
+geschrieben werden. Entfernt wird dieses mittels:
 
 .. code-block:: bash
 
  python check_tf_temp_ext.py -u 9VU -H ServerMonitoring -t segment_display_4x7 -e false
 
-
-With the Motion Detector Bricklet you can get information if motion was detected 
-by running
-
+Mit dem Motion Detector Bricklet können Bewegungen im Serverraum detektiert 
+werden. Diese Information erhält man mittels:
 
 .. code-block:: bash
 
  python check_tf_temp_ext.py -H ServerMonitoring -u abc -t motion_detector
 
 
-The full script looks like this:
+Das gesamte Skript sieht wie folgt aus:
 
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp_ext.py

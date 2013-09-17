@@ -7,9 +7,9 @@ Upload Sensor Data to Xively
 ============================
 
 `Xively <https://xively.com/>`__ is a service that provides the possibility to
-analyze and visualize the "Internet of Things". It can store a history of 
-measured values, in our case temperature and illumination, can display it in pretty graphs
-and can be used for data exchange between different systems and machines.
+analyze and visualize the "Internet of Things". It can be used to interconnect
+different devices over the Internet and can store a history of 
+measured values and can display it with pretty graphs.
 
 This example is mainly based on the :ref:`Using Python to upload weather
 data to Xively <starter_kit_weather_station_python_to_xively>` example.
@@ -21,11 +21,8 @@ data to Xively <starter_kit_weather_station_python_to_xively>` example.
 Goals
 -----
 
-We are setting the following goals for this project:
-
-* The measured temperature and ambient light should be gathered and be uploaded
-  and stored with Xively in 1 minute intervals.
-
+In this project the temperature and illuminance should be measured
+and uploaded to Xively in 1 minute intervals.
 In the following we will show step-by-step how this can be achieved.
 
 Step 1: Create and configure Xively account
