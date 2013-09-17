@@ -29,8 +29,8 @@ Sensors: :ref:`Ambient Light Bricklet <ambient_light_bricklet>` (
 monitors room illumination),
 :ref:`Temperature Bricklet <temperature_bricklet>` (monitors
 temperature in the server rack) and a
-:ref:`PTC Bricklet <ptc_bricklet>` with attachable temperature sensor probe 
-(monitors temperature in a server). Additionally a 
+:ref:`PTC Bricklet <ptc_bricklet>` with attachable PT100 temperature sensor 
+probe (monitors temperature in a server). Additionally a 
 :ref:`Master Brick <master_brick>` and a 
 :ref:`Ethernet Master Extension (supports PoE) <ethernet_extension>` is included.
 The kits enclosure can be mounted directly in a 19" server rack
@@ -57,7 +57,9 @@ different :ref:`Bricklets <product_overview_bricklets>` and
 :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`,
 :ref:`Industrial Digital Out 4 Bricklet <industrial_digital_out_4_bricklet>`,
 :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`,
-and :ref:`IO-4 Bricklet <io4_bricklet>`.
+:ref:`IO-4 Bricklet <io4_bricklet>`
+Motion Detector Bricklet (coming soon)
+and Segment Display 4x7 Bricklet (coming soon).
 
 Programming this kit can be done with all of the available
 bindings (currently: |bindings|). Example implementations and
@@ -101,9 +103,10 @@ First tests, firmware upgrade and configuration
 As a very first step you should try out and update your Bricks and Bricklets.
 
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
-the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets and the 
-Ethernet Master Extension on top of the Master Brick and connect it via USB to 
-your PC. Afterwards use Brick Viewer to find out if all of the firmwares are up to 
+the :ref:`Brick Viewer <brickv_installation>`. Put the
+Ethernet Master Extension on top of the Master Brick, connect all Bricklets
+to it and connect it via USB to your PC. 
+Afterwards use Brick Viewer to find out if all of the firmwares are up to 
 date (Updates / Flashing button). If not, you can
 :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
@@ -116,8 +119,9 @@ Viewer, too:
    :target: ../../_images/Kits/server_room_monitoring_update_orig.jpg
 
 As next step click through the tabs of the Brick Viewer to see if everything is
-working correctly. Next you should configure the Ethernet Extension. In our 
-further examples we configure the hostname to "ServerMonitoring". To do that 
+working correctly. Next you should configure the Ethernet Master Extension. In 
+our further examples we configure the hostname to "ServerMonitoring"
+and use DHCP. To do that 
 click on the Master Brick tab and configure it to your needs. More information 
 about the configuration of the Ethernet Extension can be found 
 :ref:`here <ethernet_configuration>`.
@@ -155,7 +159,7 @@ Simple Monitoring
 In this example we use the :ref:`Shell Bindings <api_bindings_shell>` to read 
 out the different sensors in the kit. 
 
-Enumerate the Bricks and Bricklets:
+Enumerate the Bricks and Bricklets ("is all connected?"):
 
 .. code-block:: bash
 
@@ -228,11 +232,11 @@ Server Room Monitoring with Nagios or Icinga
 `Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
 said to be backward compatible to Nagios. In the following examples we are
-reffering to the Nagios API to be also compatible with Icinga.
+referring to the Nagios API to be also compatible with Icinga.
 
 These monitoring tools use plugins, instantiated as services to 
-monitor processor load, memory utilization, software processes or physical 
-values like temperature.
+monitor processor load, memory utilization, specific software processes or 
+physical values like temperature.
 
 In this example we write our own plugin to use the kits hardware for ambient
 temperature measuring. With a few modifications you can use the plugin to
@@ -254,8 +258,9 @@ Upload Sensor Data to Xively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 `Xively <https://xively.com/>`__ is a service that provides the possibility to
-analyze and visualize the "Internet of Things". It can store a history of 
-measured temperature or illumination and can display it with pretty graphs.
+analyze and visualize the "Internet of Things". It can be used to interconnect
+different devices over the Internet and can store a history of 
+measured values and can display it with pretty graphs.
 
 .. image:: /Images/Kits/server_room_monitoring_xively_350.jpg
    :scale: 100 %
@@ -283,12 +288,15 @@ Please give us a notice. We would love to add a link to your project here!
 Motion Detector and Error Code Display
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Use a Motion Detector Bricklet (coming soon) to detect motion in your server
-room. An additional Segment Display 4x7 Bricklet is used to show error code
-information on the case.
+The casing has already the necessary cut-outs for a Motion Detector Bricklet
+(coming soon) and a Segment Display 4x7 Bricklet (coming soon). Use a Motion 
+Detector Bricklet to detect motion in your server room. An additional Segment 
+Display 4x7 Bricklet can be used to show error code information on the case.
 
 The full project description can be found 
 :ref:`here <starter_kit_server_room_monitoring_extended_nagios>`.
+
+TODO: Image kit + motion + 4x7
 
 .. toctree::
    :hidden:
