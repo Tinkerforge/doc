@@ -57,7 +57,7 @@ different :ref:`Bricklets <product_overview_bricklets>` and
 :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`,
 :ref:`Industrial Digital Out 4 Bricklet <industrial_digital_out_4_bricklet>`,
 :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`,
-:ref:`IO-4 Bricklet <io4_bricklet>`
+:ref:`IO-4 Bricklet <io4_bricklet>`,
 Motion Detector Bricklet (coming soon)
 and Segment Display 4x7 Bricklet (coming soon).
 

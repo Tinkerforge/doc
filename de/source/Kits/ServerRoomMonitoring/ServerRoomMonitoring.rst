@@ -15,8 +15,7 @@ Features
 * Low cost und modulare Serverraum-Überwachung 
 * 19" Rack montierbar
 * Steuerung und Versorgung über Ethernet (PoE)
-* Erweiterbar: Es können einfach Sensoren oder I/O hinzugesteckt werden, falls 
-	benötigt
+* Erweiterbar: Es können einfach Sensoren oder I/O hinzugesteckt werden, falls benötigt
 * API für viele Programmiersprachen (|bindings|)
 * Open Source Soft- und Hardware
 * Nagios und Icinga Unterstützung
@@ -59,7 +58,7 @@ Folgende Module können direkt befestigt werden:
 :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`,
 :ref:`Industrial Digital Out 4 Bricklet <industrial_digital_out_4_bricklet>`,
 :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`,
-:ref:`IO-4 Bricklet <io4_bricklet>`
+:ref:`IO-4 Bricklet <io4_bricklet>`,
 Motion Detector Bricklet (bald verfügbar)
 und Segment Display 4x7 Bricklet (bald verfügbar).
 
