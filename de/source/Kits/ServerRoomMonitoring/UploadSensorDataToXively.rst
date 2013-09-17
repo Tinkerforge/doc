@@ -28,8 +28,8 @@ und an Xively in 1 Minuten Intervallen übertragen werden. Nachfolgend erklärt
 eine Schritt für Schritt Anleitung wie dies funktioniert.
 
 
-Schritt 1: ErzCreate and configure Xively account
--------------------------------------------
+Schritt 1: Erstelle und Konfiguriere einen Xively Account
+---------------------------------------------------------
 
 Um Xively benutzen zu können, muss zuerst ein Xively Account angelegt werden.
 Dazu muss `xively.com <https://xively.com>`__ besucht werden und sich
