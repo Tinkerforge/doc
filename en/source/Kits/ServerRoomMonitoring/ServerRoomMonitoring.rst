@@ -30,19 +30,21 @@ monitors room illumination),
 :ref:`Temperature Bricklet <temperature_bricklet>` (monitors
 temperature in the server rack) and a
 :ref:`PTC Bricklet <ptc_bricklet>` with attachable temperature sensor probe 
-(monitors temperature in a server). The included enclosure can be
-mounted directly in a 19" server rack.
-
-The kit uses the Tinkerforge building blocks. It can be extended 
-by more temperature probes, other sensors types (e.g. motion detector), 
-in- or outputs (to switch computers on/off or to monitor doors) and so on. 
-It is flexible and you can adapt it to your needs. 
+(monitors temperature in a server). Additionally a 
+:ref:`Master Brick <master_brick>` and a 
+:ref:`Ethernet Master Extension (supports PoE) <ethernet_extension>` is included.
+The kits enclosure can be mounted directly in a 19" server rack
+and can be extended by more temperature probes, other sensors types (e.g. motion
+detector), in- or outputs (to switch computers on/off or to monitor doors) and 
+so on. With the Tinkerforge :ref:`building blocks<product_overview>` you can
+flexibly adapt it to your needs.
 
 One or more external controlling devices, such as (Embedded-) PCs, smart phones 
 or tablets, can be used to control the hardware over the Ethernet 
 connection. Monitoring directly over the Internet is possible. Power can
 be supplied with 
-`Power over Ethernet (PoE) <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__.
+`Power over Ethernet (PoE) <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__
+or USB.
 
 The soft- and hardware of the kit can be modified. The casing consists of
 tinker-friendly PMMA, you can drill new holes with 
@@ -255,7 +257,11 @@ Upload Sensor Data to Xively
 analyze and visualize the "Internet of Things". It can store a history of 
 measured temperature or illumination and can display it with pretty graphs.
 
-TODO: Image
+.. image:: /Images/Kits/server_room_monitoring_xively_350.jpg
+   :scale: 100 %
+   :alt: Xively datastream configuration
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_xively_orig.jpg
 
 The full project description can be found :ref:`here
 <starter_kit_server_room_monitoring_upload_sensor_data_to_xively>`.

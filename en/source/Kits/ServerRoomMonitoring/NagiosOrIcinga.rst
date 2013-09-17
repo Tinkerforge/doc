@@ -117,9 +117,8 @@ return value.
  :tab-width: 4
 
 To run this script with Nagios you have to register it. To do this you have
-to register the command with the following lines in a config file:
-
-TODO: What config file?
+to register the command with the following lines in a commands config file
+(e.g. /usr/local/nagios/etc/checkcommands.cfg or /etc/icinga/commands.cfg):
 
 .. code-block:: none
 
@@ -128,7 +127,7 @@ TODO: What config file?
      command_line /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m high -w 26 -c 27
  }
 
-And register the service with the following lines:
+And register the service in the services config file with the following lines:
 
 .. code-block:: none
 
@@ -139,6 +138,10 @@ And register the service with the following lines:
      check_command                   check_tf_temp
      check_interval                  1
  }
+
+Possible config file locations are /usr/local/nagios/etc/services.cfg, 
+/etc/icinga/objects/services_icinga.cfg or other.
+
 
 That's it. You should see a new service in the web interface and should be
 warned if the ambient temperature is too hot.
