@@ -7,16 +7,16 @@ Serverraum-Überwachung mit Nagios oder Icinga
 =============================================
 
 `Icinga <https://www.icinga.org/>`__ und `Nagios <http://www.nagios.org/>`__ 
-sind Computer Überwachungswerkzeuge. Icinga ist ein Fork und Nagios und gilt
-als rückwärtskompatibel zu Nagios. Die nachfolgenden Beispielen beziehen
-sich auf die Nagios API sind aber auch kompatibel zu Icinga.
+sind Computer Überwachungswerkzeuge. Icinga ist ein Fork von Nagios und gilt
+als rückwärtskompatibel zu diesem. Die nachfolgenden Beispielen beziehen
+sich auf die Nagios API sind daher aber auch kompatibel zu Icinga.
 
 Beide Überwachungswerkzeuge nutzen Plugins, instanziiert als Services,
 um die Prozessorauslastung, Speicherbelegung, spezielle Software Prozesse oder
 physikalische Werte, wie die Temperatur, zu überwachen. Die jeweilige 
 Dokumentation gibt hier weitere Informationen.
 
-Plugins werden genutzt um überwachende Services zu erzeugen. Plugins sind 
+Plugins werden genutzt um überwachende Services zu erzeugen. Dies sind 
 Programme mit einem definierten Rückgabewert (z.B. 0=OK, 1=Warning, 2=Critical, 
 3=Unknown). Deren Standardausgabe wird von Nagios genutzt um Informationen
 über deren Zustand zu bekommen. Die
@@ -84,7 +84,7 @@ drei Modi:
 Das Skript sollte global ausführbar sein, z.B. durch speichern unter /usr/local/bin.
 
 Das folgende Beispiel verbindet zu einer Ethernet Extension mit dem Hostnamen
-*ServerMonitoring* und zu einem Temperature Bricklet mit der UID SCT31. Eine
+*ServerMonitoring* und zu einem Temperature Bricklet mit der UID *SCT31*. Eine
 Warning Nachricht wird bei Temperaturen über 26°C abgegeben und eine Critical 
 Nachricht bei Temperaturen über 27°C:
 
@@ -108,7 +108,7 @@ Das Kommando sieht dann wie folgt aus:
  check_tf_temp.py -H ServerMonitoring -u fow -t ptc -m range -w 10 -w2 30 -c 8 -c2 35
 
 Das *check_tf_temp.py* Skript kann einfach an andere Tinkerforge Sensoren 
-angepasst werden. Die *read* Methode ist der Hauptteil des Skripts. Es liest
+angepasst werden. Die *read* Methode ist der Hauptteil des Skripts. Diese liest
 das Bricklet aus und vergleicht die gemessene Temperatur mit den Warning
 und Critical Grenzwerten. Falls notwendig generiert sie eine Meldung und
 den dazu passenden Rückgabewert.

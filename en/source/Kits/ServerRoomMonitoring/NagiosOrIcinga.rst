@@ -81,8 +81,8 @@ Most of the interface should be self-explanatory. It supports three modes:
 Make the script globally executable, e.g. store it under /usr/local/bin.
 
 The following example connects to the Ethernet Extension with hostname 
-*ServerMonitoring* and to the Temperature Bricklet with UID SCT31. It creates a 
-warning if the temperature is above 26°C and a critical message if the
+*ServerMonitoring* and to the Temperature Bricklet with UID *SCT31*. It creates 
+a warning if the temperature is above 26°C and a critical message if the
 temperature is above 27°C:
 
 .. code-block:: bash
