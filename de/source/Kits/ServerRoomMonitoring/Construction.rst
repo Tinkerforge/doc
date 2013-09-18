@@ -6,12 +6,18 @@
 Aufbau des Starterkits: Serverraum-Überwachung
 ==============================================
 
-Das Starterkit: Serverraum-Überwachung wird mit einem :ref:`Ambient Light
-<ambient_light_bricklet>`, :ref:`PTC <ptc_bricklet>`,
+Das Starterkit: Serverraum-Überwachung wird mit einem :ref:`Ambient Light 
+Bricklet <ambient_light_bricklet>`, :ref:`PTC Bricklet <ptc_bricklet>`,
 :ref:`Temperature Bricklet<temperature_bricklet>`, 
 :ref:`Master Brick <master_brick>`,
 :ref:`Ethernet Master Extension <ethernet_extension>` sowie
 Bricklet Kabel, Schrauben, Abstandshalter, Muttern und Unterlegscheiben.
+
+Schrauben, Abstandshalter, Muttern und Unterlegscheiben sind in einzelnen
+Befestigungskits verpackt. Diese sind Standard-Befestigungskits und nicht 
+speziell für dieses Starterkit zusammengestellt. Die benötigten Teile für jeden 
+Arbeitsschritt müssen aus den Befestigungskits selektiert werden. Für eigene 
+Modifikationen sind mehr Befestigungsteile enthalten als notwendig.
 
 .. image:: /Images/Kits/server_room_monitoring_exploded_guided_small.png
    :scale: 100 %
@@ -34,7 +40,8 @@ Im nächsten Schritt werden die Winkel mit den Seitenteilen verbunden.
 Dazu wird der Winkel, wie im nachfolgenden Foto abgebildet, in das Seitenteil 
 gesteckt. Anschließend wird eine Mutter in die vorgesehene Aussparung gesteckt
 und mittels einer langen Schraube mit dem Seitenteil verbunden. Falls diese 
-Mutter nicht in die Aussparung zu passen scheint muss diese etwas gedreht werden.
+Mutter nicht in die Aussparung zu passen scheint, muss diese etwas gedreht 
+werden.
 
 Das Ergebnis dieses Arbeitsschritts ist in dem folgenden Foto abgebildet:
 
@@ -46,7 +53,7 @@ Seitenteile mit dem Frontteil verbinden
 Die zuvor hergestellten Seitenteile werden in das Frontteil gesteckt und 
 ebenfalls mit jeweils einer Mutter und Schraube befestigt. Wichtig ist das 
 Fronteil wie im nachfolgenden Foto zu befestigen. Das Frontteil ist korrekt 
-befestigt wenn die Position des Ausschnitts für die Ethernet Master Extension 
+befestigt, wenn die Position des Ausschnitts für die Ethernet Master Extension 
 übereinstimmt.
 
 TODO Image
@@ -68,10 +75,6 @@ TODO Image
 
 Bricks and Bricklets einbauen
 -----------------------------
-
-Das Kit wird mit einer Reihe von Befestigungskits geliefert. Es ist ein
-9mm Kit enthalten welches 9mm Abstandshalter anstatt der 12mm 
-Abstandshalter besitzt, welche in den anderen Kits enthalten ist.
 
 Die Ethernet Master Extension wird auf das Master Brick gesteckt wobei
 jeweils ein 9mm Abstandshalter dazwischen gesteckt wird. Anschließend

@@ -13,8 +13,8 @@ Features
 --------
 
 * Allows Low Cost and Modular Server Room Monitoring 
-* 19" Rack Mountable
-* Accessible and Powered by Ethernet (PoE) 
+* 19" Rack Mountable (1U)
+* Accessible and Powered by Ethernet (`PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__) 
 * Expandable: Simply add Sensors or I/O if you need them
 * API for many programming languages (|bindings|)
 * Open Source Soft- and Hardware
@@ -34,7 +34,7 @@ probe (monitors temperature in a server). Additionally a
 :ref:`Master Brick <master_brick>` and a 
 :ref:`Ethernet Master Extension (supports PoE) <ethernet_extension>` is included.
 The kits enclosure can be mounted directly in a 19" server rack
-and can be extended by more temperature probes, other sensors types (e.g. motion
+and can be extended by more temperature probes, other modules (e.g. motion
 detector), in- or outputs (to switch computers on/off or to monitor doors) and 
 so on. With the Tinkerforge :ref:`building blocks<product_overview>` you can
 flexibly adapt it to your needs.
@@ -65,7 +65,7 @@ Programming this kit can be done with all of the available
 bindings (currently: |bindings|). Example implementations and
 applications for the usage with 
 `Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ and 
-other are available. 
+other are available (see below). 
 
 Technical Specifications
 ------------------------
@@ -203,7 +203,7 @@ Enumerate the Bricks and Bricklets ("is all connected?"):
  device-identifier=ambient-light-bricklet
  enumeration-type=available
 
-Read out connected sensors:
+Read out connected sensors (adapt the UID):
 
 .. code-block:: bash
 
@@ -286,7 +286,7 @@ The full project description can be found :ref:`here
 Further Enhancements
 --------------------
 
-If you have modded, extended or improved the Starter Kit: Server Room Monitoring
+If you have modded, extended or improved the kit
 in any way and you have published your results on our 
 `Wiki <http://www.tinkerunity.org/wiki/>`__, on your blog or similar: 
 Please give us a notice. We would love to add a link to your project here!
@@ -315,6 +315,9 @@ Remote On/Off Switch
 Use Industrial Quad Relay to switch computers on or off remotely.
 You can use the previous examples to modify them to your needs.
 The wiring is really simple, you only have to bypass the on/off switch
-of the computer.
+of the computer with one of the relays of the Industrial Quad Relay Bricklet.
+A tutorial how a switch can be bypassed can be found at the
+:ref:`Hardware Hacking for Beginners Tutorial <starter-kit-hardware-hacking-for-beginners>`.
+
 
 TODO: Image

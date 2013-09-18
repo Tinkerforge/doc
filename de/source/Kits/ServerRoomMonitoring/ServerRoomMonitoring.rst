@@ -12,10 +12,10 @@ Starterkit: Serverraum-Überwachung
 Features
 --------
 
-* Low cost und modulare Serverraum-Überwachung 
-* 19" Rack montierbar
-* Steuerung und Versorgung über Ethernet (PoE)
-* Erweiterbar: Es können einfach Sensoren oder I/O hinzugesteckt werden, falls benötigt
+* Modulare low cost Serverraum-Überwachung 
+* 19" Rack montierbar (1HE)
+* Steuerung und Versorgung per Ethernet (`PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__)
+* Erweiterbar: Falls benötigt können einfach Sensoren oder I/O hinzugesteckt werden
 * API für viele Programmiersprachen (|bindings|)
 * Open Source Soft- und Hardware
 * Nagios und Icinga Unterstützung
@@ -28,12 +28,12 @@ Serverraum Installationen zu überwachen. Das Basiskit ist mit folgenden Sensore
 ausgestattet: :ref:`Ambient Light Bricklet <ambient_light_bricklet>` ( 
 überwacht z.B. die Raumbeleuchtung),
 :ref:`Temperature Bricklet <temperature_bricklet>` (überwacht die Temperatur im
-Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit PT100 Temperatursonde (z.B. 
+Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit PT100 Temperatursensor (z.B. 
 zum Überwachen der Temperatur in einem Server). Zusätzlich ist ein 
 :ref:`Master Brick <master_brick>` und eine
 :ref:`Ethernet Master Extension (unterstützt PoE) <ethernet_extension>` 
 enthalten. Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werden
-und mittels weiterer Temperatursonden und anderen Sensortypen (z.B. 
+und mittels weiterer Temperatursensoren und anderen Module (z.B. 
 Bewegungsdetektoren, Ein-/Ausgabe Modulen (um Computer ein-/auszuschalten oder 
 um Türen zu überwachen) etc.) erweitert werden. Mit den Tinkerforge
 :ref:`Bausteinen<product_overview>` kann das Kit flexibel an die eigenen 
@@ -41,8 +41,8 @@ Anforderungen angepasst werden.
 
 Ein oder mehrere steuernde Geräte, wie z.B. (Embedded-) PCs, Smartphones
 oder Tables, können genutzt werden um die Module per Ethernet auszulesen und zu 
-steuern. Eine Überwachung direkt per Internet ist daher möglich. Die Module
-können per 
+steuern. Eine Überwachung direkt per Internet ist daher möglich. Das System
+kann per 
 `Power over Ethernet (PoE) <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__
 oder USB versorgt werden.
 
@@ -65,7 +65,7 @@ und Segment Display 4x7 Bricklet (bald verfügbar).
 Das Kit kann über alle verfügbaren Bindings (zur Zeit: |bindings|) erfolgen.
 Beispiel Implementierungen und Anwendungen für die Benutzung mit
 `Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ und
-weitere werden zur Verfügung gestellt.
+weitere werden nachfolgend zur Verfügung gestellt.
 
 Technische Spezifikation
 ------------------------
@@ -88,7 +88,7 @@ Gewicht                           TBDg
 Ressourcen
 ----------
 
-* Serverraum Überwachung Kit Geäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
+* Serverraum-Überwachung Kit Gehäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
 * Beispielcode *Simple Monitoring* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/simple_monitoring/check_tf_temp_simple.sh>`__)
 * Beispielcode *Nagios/Icinga Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
 * Beispielcode *Nagios/Icinga Extended Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
@@ -122,14 +122,15 @@ aktualisiert werden:
 
 .. image:: /Images/Kits/server_room_monitoring_update_350.jpg
    :scale: 100 %
-   :alt: Serverraum Überwachung Hardware update im Brick Viewer
+   :alt: Serverraum-Überwachung Hardware Update im Brick Viewer
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_update_orig.jpg
 
 Im nächsten Schritt sollte jedes Modul überprüft werden. Im Brick Viewer besitzt
 jedes Modul einen Reiter über dem eine modulspezifische Ansicht geöffnet werden
-kann. Funktioniert alles wie erwartet sollte die Ethernet Master Extension
-konfiguriert werden. In den folgenden Beispielen ist diese auf den Hostnamen
+kann. Zeigen alle Ansichten sinnvolle Werte, funktioniert alles wie erwartet.
+Als nächstes sollte die Ethernet Master Extension konfiguriert werden. 
+In den folgenden Beispielen ist diese auf den Hostnamen
 "ServerMonitoring" und DHCP konfiguriert. Zur Konfiguration muss der Master 
 Brick Reiter geöffnet werden. Die weitere Konfiguration ist 
 :ref:`hier <ethernet_configuration>` beschrieben.
@@ -155,7 +156,7 @@ Der Aufbau der Basisversion des Kits ist
 Projekte
 --------
 
-Es gibt verschiedene Anwendungen für das Starterkit: Serverraum Überwachung. 
+Es gibt verschiedene Anwendungen für das Starterkit: Serverraum-Überwachung. 
 Nachfolgend werden Beispiele präsentiert, die als Startpunkt für eigene Projekte
 dienen können.
 
@@ -203,7 +204,7 @@ Enummerierung der Bricks und Bricklets ("Ist alles angeschlossen?"):
  device-identifier=ambient-light-bricklet
  enumeration-type=available
 
-Auslesen der verbundenen Sensoren:
+Auslesen der verbundenen Sensoren (die UID ist anzupassen):
 
 .. code-block:: bash
 
@@ -252,7 +253,7 @@ zu ermöglichen.
 
 TODO: Image
 
-Die vollstände Projektbeschreibung kann :ref:`here
+Die vollstände Projektbeschreibung kann :ref:`hier
 <starter_kit_server_room_monitoring_nagios_or_icinga>` hier gefunden werden.
 
 .. toctree::
@@ -278,7 +279,7 @@ visualisieren.
 
 Die vollständige Projektbeschreibung kann :ref:`hier
 <starter_kit_server_room_monitoring_upload_sensor_data_to_xively>`
-gefunden worden.
+gefunden werden.
 
 .. toctree::
    :hidden:
@@ -289,8 +290,8 @@ gefunden worden.
 Erweiterungsmöglichkeiten
 -------------------------
 
-Gerne führen wir hier Mods, Erweiterungen oder Verbesserungen der Wetterstation 
-auf. Bitte gebt uns Bescheid, wir verlinken hier gerne eure Projekte.
+Gerne führen wir hier Mods, Erweiterungen oder Verbesserungen des Kits auf. 
+Bitte gebt uns Bescheid, wir verlinken hier gerne eure Projekte.
 
 Bewegungs-Detektor und Fehlercode Anzeige
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -315,9 +316,13 @@ TODO: Image kit + motion + 4x7
 Remote Ein/Aus Schalter
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Ein Industrial Quad Relay kann dazu benutzt werden einen Computer
+Ein Industrial Quad Relay kann dazu genutzt werden einen Computer
 Ein- bzw. Auszuschalten. Dazu muss nur der entsprechende Schalter des Computers
-mit einem Relais überbrückt werden. Als Software kann eine modifizierte Variante
-der zuvor vorgestellten Beispiele genutzt werden.
+mit einem der Relais des Industrial Quad Relay Bricklets überbrückt werden. 
+Als Software kann eine modifizierte Variante der zuvor vorgestellten Beispiele 
+genutzt werden. Eine Anleitung wie ein Schalter mit dem Quad Relay überbrückt 
+werden kann, kann im 
+:ref:`Hardware Hacking für Anfänger Tutorial <starter-kit-hardware-hacking-for-beginners>`
+gefunden werden.
 
 TODO: Image

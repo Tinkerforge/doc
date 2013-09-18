@@ -7,11 +7,16 @@ Construction of the Starter Kit: Server Room Monitoring
 =======================================================
 
 The Starter Kit: Server Room Monitoring comes with :ref:`Ambient Light
-<ambient_light_bricklet>`, :ref:`PTC <ptc_bricklet>`,
+Bricklet <ambient_light_bricklet>`, :ref:`PTC Bricklet <ptc_bricklet>`,
 :ref:`Temperature Bricklet<temperature_bricklet>`, 
 :ref:`Master Brick <master_brick>`,
 :ref:`Ethernet Master Extension <ethernet_extension>` and
 Bricklet cables as well as lots of screws, spacers, nuts and washers.
+
+Screws, spacers, nuts and washers are packed in mounting kits. These are
+standarized kits and are not specially composed for this starter kit. Get
+the necessary parts you need for each step from all mounting kits. For your own
+modifications there are more mounting parts included then necessary.
 
 .. image:: /Images/Kits/server_room_monitoring_exploded_guided_small.png
    :scale: 100 %
@@ -66,8 +71,7 @@ TODO Image
 Attach Bricks and Bricklets
 ---------------------------
 
-The kit comes with a lot of mounting kits. There is one 9mm mounting kit 
-included with 9mm spacers instead of 12mm spacers. Use these four 9mm spacers 
+Use four 9mm spacers 
 to put them between Master Brick and Ethernet Master Extension (on top). 
 Fix them with 10mm spacers on the bottom side and with screws on the top side 
 of the Ethernet Extension.
