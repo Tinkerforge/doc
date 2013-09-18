@@ -36,9 +36,9 @@ Screw Brackets to Side Parts
 ----------------------------
 
 In the next step we screw one bracket to one side part each. To do this you have
-to put a nut in the dedicated slot of the bracket and put a long screw through 
-the side part and fix the bracket. If the nut does not seem to fit, rotate it a 
-little bit in the slot until it fits.
+to put a nut in the dedicated slot of the bracket and put a 12mm long screw 
+through the side part and fix the bracket. If the nut does not seem to fit, 
+rotate it a little bit in the slot until it fits.
 
 The result is depicted in the following image:
 
@@ -57,8 +57,8 @@ TODO Image
 Screw Back Side to the Side Parts
 ---------------------------------
 
-Next put eight 10mm spacers and screws and attach them to the position of the
-PTC and Temperature Bricklet.
+Next put eight 10mm spacers (thread inside/inside) and short screws and attach 
+them to the position of the PTC and Temperature Bricklet.
 
 TODO Image
 
@@ -71,10 +71,10 @@ TODO Image
 Attach Bricks and Bricklets
 ---------------------------
 
-Use four 9mm spacers 
+Use four 9mm spacers (thread inside/outside) 
 to put them between Master Brick and Ethernet Master Extension (on top). 
-Fix them with 10mm spacers on the bottom side and with screws on the top side 
-of the Ethernet Extension.
+Fix them with 10mm spacers (thread inside/inside) on the bottom side and with 
+screws on the top side of the Ethernet Extension.
 
 TODO Image 10mm Spacers, Master Brick, 9mm Spacers, Ethernet Extension, Screws
 
@@ -96,8 +96,8 @@ TODO Image back side with ptc and temperature
 
 In the last step attach the Ambient Light Bricklet to the front panel.
 To do this connect the 50cm Bricklet cable to the Bricklet first. After that
-put four long screws through the front panel and fix them with one washer and one
-nut each. Put the Bricklet on it and fix it with four additional nuts.
+put four 12mm long screws through the front panel and fix them with one washer 
+and one nut each. Put the Bricklet on it and fix it with four additional nuts.
 As the last step connect the Bricklet cable to the Master Brick and use a 
 cable strap to fasten them.
 

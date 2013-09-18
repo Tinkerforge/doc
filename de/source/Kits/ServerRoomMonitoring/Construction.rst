@@ -39,7 +39,7 @@ Winkel mit den Seitenteilen verbinden
 Im nächsten Schritt werden die Winkel mit den Seitenteilen verbunden.
 Dazu wird der Winkel, wie im nachfolgenden Foto abgebildet, in das Seitenteil 
 gesteckt. Anschließend wird eine Mutter in die vorgesehene Aussparung gesteckt
-und mittels einer langen Schraube mit dem Seitenteil verbunden. Falls diese 
+und mittels einer 12mm langen Schraube mit dem Seitenteil verbunden. Falls diese 
 Mutter nicht in die Aussparung zu passen scheint, muss diese etwas gedreht 
 werden.
 
@@ -51,7 +51,7 @@ Seitenteile mit dem Frontteil verbinden
 ---------------------------------------
 
 Die zuvor hergestellten Seitenteile werden in das Frontteil gesteckt und 
-ebenfalls mit jeweils einer Mutter und Schraube befestigt. Wichtig ist das 
+ebenfalls mit jeweils einer Mutter und 12mm Schraube befestigt. Wichtig ist das 
 Fronteil wie im nachfolgenden Foto zu befestigen. Das Frontteil ist korrekt 
 befestigt, wenn die Position des Ausschnitts für die Ethernet Master Extension 
 übereinstimmt.
@@ -62,14 +62,16 @@ TODO Image
 Rückseite befestigen
 --------------------
 
-Als nächstes werden acht 10mm Abstandshalter mittels Schrauben an die Positionen
-für das PTC und das Temperature Bricklet auf das Rückseitenteil geschraubt.
+Als nächstes werden acht 10mm Abstandshalter (Innen-/Innengewinde) mittels 
+kurzen Schrauben an die Positionen für das PTC und das Temperature Bricklet auf 
+das Rückseitenteil geschraubt.
 
 TODO Image
 
 Anschließend wird die Rückseite auf die Seitenteile gesteckt und ebenfalls
-mittels zwei Schrauben und zwei Muttern befestigt. Anschließend ist das Gehäuse
-fertiggestellt. Im nächsten Schritt werden die Bricks und Bricklets eingebaut.
+mittels zwei 12mm langen Schrauben und zwei Muttern befestigt. Anschließend ist 
+das Gehäuse fertiggestellt. Im nächsten Schritt werden die Bricks und Bricklets 
+eingebaut.
 
 TODO Image
 
@@ -77,9 +79,9 @@ Bricks and Bricklets einbauen
 -----------------------------
 
 Die Ethernet Master Extension wird auf das Master Brick gesteckt wobei
-jeweils ein 9mm Abstandshalter dazwischen gesteckt wird. Anschließend
-wird jeweils ein 10mm Abstandshalter unten aufgeschraubt und die Master 
-Extension mittels Schrauben befestigt.
+jeweils ein 9mm Abstandshalter (Innen-/Außengewinde) dazwischen gesteckt wird. 
+Anschließend wird jeweils ein 10mm Abstandshalter (Innen-/Innengewinde)
+unten aufgeschraubt und die Master Extension mittels Schrauben befestigt.
 
 TODO Image 10mm Spacers, Master Brick, 9mm Spacers, Ethernet Extension, Screws
 
@@ -99,12 +101,13 @@ Temperatursensor (2-draht) angeschlossen werden. Wie dies funktioniert ist
 TODO Image back side with ptc and temperature
 
 Im letzten Schritt wird das Ambient Light Bricklet an die Frontseite geschraubt.
-Dazu werden vier lange Schrauben durch die Frontseite gesteckt und von hinten
-jeweils mittels einer Unterlegscheibe und einer Mutter fixiert. Anschließend
-wird das 50cm Brickletkabel an das Ambient Light Bricklet angeschlossen
-und dieses auf die vier Schrauben gesteckt. Fixiert wird es über jeweils eine
-Mutter. Das Brickletkabel wird über die Aussparung im Seitenteil zum Master
-Brick geführt und mit diesem verbunden. Ein Kabelbinder ordnet die Verkabelung.
+Dazu werden vier 12mm lange Schrauben durch die Frontseite gesteckt und von 
+hinten jeweils mittels einer Unterlegscheibe und einer Mutter fixiert. 
+Anschließend wird das 50cm Brickletkabel an das Ambient Light Bricklet 
+angeschlossen und dieses auf die vier Schrauben gesteckt. Fixiert wird es über 
+jeweils eine Mutter. Das Brickletkabel wird über die Aussparung im Seitenteil 
+zum Master Brick geführt und mit diesem verbunden. Ein Kabelbinder ordnet die 
+Verkabelung.
 
 Das nachfolgende Foto zeigt das fertig aufgebaute Kit.
 

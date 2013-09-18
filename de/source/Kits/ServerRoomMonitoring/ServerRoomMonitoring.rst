@@ -322,7 +322,7 @@ mit einem der Relais des Industrial Quad Relay Bricklets überbrückt werden.
 Als Software kann eine modifizierte Variante der zuvor vorgestellten Beispiele 
 genutzt werden. Eine Anleitung wie ein Schalter mit dem Quad Relay überbrückt 
 werden kann, kann im 
-:ref:`Hardware Hacking für Anfänger Tutorial <starter-kit-hardware-hacking-for-beginners>`
+:ref:`Hardware Hacking für Anfänger Tutorial <starter_kit_hardware_hacking_for_beginners>`
 gefunden werden.
 
 TODO: Image

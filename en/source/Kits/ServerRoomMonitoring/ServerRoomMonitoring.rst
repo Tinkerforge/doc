@@ -317,7 +317,7 @@ You can use the previous examples to modify them to your needs.
 The wiring is really simple, you only have to bypass the on/off switch
 of the computer with one of the relays of the Industrial Quad Relay Bricklet.
 A tutorial how a switch can be bypassed can be found at the
-:ref:`Hardware Hacking for Beginners Tutorial <starter-kit-hardware-hacking-for-beginners>`.
+:ref:`Hardware Hacking for Beginners Tutorial <starter_kit_hardware_hacking_for_beginners>`.
 
 
 TODO: Image
