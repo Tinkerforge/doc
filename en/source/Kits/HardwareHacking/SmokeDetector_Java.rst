@@ -171,8 +171,10 @@ Step 3: Handle the alarm signal
 
 .. code-block:: java
 
-    public void voltageReached(int illuminance) {
-        System.out.println("Fire! Fire!");
+    public void interrupt(int interruptMask, int valueMask) {
+        if(valueMask > 0) {
+            System.out.println("Fire! Fire!");
+        }
     }
 
 |step3_complete|
