@@ -249,7 +249,11 @@ temperature measuring. With a few modifications you can use the plugin to
 support other Tinkerforge hardware modules and create the physical monitoring
 you need.
 
-TODO: Image
+.. image:: /Images/Kits/server_room_monitoring_icinga_screenshot_350.jpg
+   :scale: 100 %
+   :alt: Icinga Screenshot
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_icinga_screenshot_orig.jpg
 
 Find the full project description :ref:`here
 <starter_kit_server_room_monitoring_nagios_or_icinga>`.

@@ -251,7 +251,11 @@ In diesem Beispiel wird ein eigenes Plugin geschrieben welches die Temperatur
 andere Tinkerforge Module auszulesen und so eine spezifische Überwachung
 zu ermöglichen.
 
-TODO: Image
+.. image:: /Images/Kits/server_room_monitoring_icinga_screenshot_350.jpg
+   :scale: 100 %
+   :alt: Icinga Screenshot
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_icinga_screenshot_orig.jpg
 
 Die vollstände Projektbeschreibung kann :ref:`hier
 <starter_kit_server_room_monitoring_nagios_or_icinga>` hier gefunden werden.

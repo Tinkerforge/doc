@@ -148,3 +148,9 @@ oder an anderen Positionen. Die jeweilige Dokumentation gibt hier aufschluss.
 
 Das war es. Es sollte ein neuer Service im Web-Interface angezeigt werden,
 der vor zu hohen Temperaturen warnt.
+
+.. image:: /Images/Kits/server_room_monitoring_icinga_screenshot_350.jpg
+   :scale: 100 %
+   :alt: Icinga Screenshot
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_icinga_screenshot_orig.jpg

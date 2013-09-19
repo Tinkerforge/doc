@@ -148,3 +148,9 @@ should give more information.
 
 That's it. You should see a new service in the web interface and should be
 warned if the ambient temperature is too hot.
+
+.. image:: /Images/Kits/server_room_monitoring_icinga_screenshot_350.jpg
+   :scale: 100 %
+   :alt: Icinga Screenshot
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_icinga_screenshot_orig.jpg
