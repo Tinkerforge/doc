@@ -105,12 +105,13 @@ will then look like this:
 
  check_tf_temp.py -H ServerMonitoring -u fow -t ptc -m range -w 10 -w2 30 -c 8 -c2 35
 
-
 The ``check_tf_temp.py`` script is small and is easy to adapted for other
 Tinkerforge sensors. The ``read`` method is the main part of the script. It reads
 out the Bricklet and compares the measured temperature with
 the warning and critical thresholds and generates the necessary message and 
-return value.
+return value
+
+(`download <https://raw.github.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp.py
  :language: python
@@ -124,7 +125,7 @@ to register the command with the following lines in a commands config file
 
  define command {
      command_name    check_tf_temp
-     command_line /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m high -w 26 -c 27
+     command_line    /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m high -w 26 -c 27
  }
 
 After the command is known to Nagios it can be used by a service.

@@ -25,7 +25,7 @@ geben hier weitere Auskünfte.
 
 Nach der Grundinstallation von Nagios kann damit begonnen werden ein eigens
 Plugin zu entwickeln. Als erstes sollten die 
-:ref:`Bindings <api_bindings>` für die persönliche Programmiersprache
+:ref:`Bindings <api_bindings>` für die gewünschte Programmiersprache
 installiert werden. Anschließend kann das eigene Plugin unter Beachtung der
 Nagios Developer Guidelines geschrieben werden.
 
@@ -111,7 +111,9 @@ Das ``check_tf_temp.py`` Skript kann einfach an andere Tinkerforge Sensoren
 angepasst werden. Die ``read`` Methode ist der Hauptteil des Skripts. Diese liest
 das Bricklet aus und vergleicht die gemessene Temperatur mit den Warning
 und Critical Grenzwerten. Falls notwendig generiert sie eine Meldung und
-den dazu passenden Rückgabewert.
+den dazu passenden Rückgabewert:
+
+(`download <https://raw.github.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp.py
  :language: python
@@ -126,7 +128,7 @@ registriert:
 
  define command {
      command_name    check_tf_temp
-     command_line /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m high -w 26 -c 27
+     command_line    /usr/local/bin/check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m high -w 26 -c 27
  }
 
 Anschließend kann dieses Kommando einem Service zugeordnet werden. Ein neuer

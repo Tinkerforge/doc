@@ -76,9 +76,9 @@ werden. Diese Information erhält man mittels:
 
  python check_tf_temp_ext.py -H ServerMonitoring -u abc -t motion_detector
 
-
 Das gesamte Skript sieht wie folgt aus:
 
+(`download <https://raw.github.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp_ext.py>`__)
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp_ext.py
  :language: python

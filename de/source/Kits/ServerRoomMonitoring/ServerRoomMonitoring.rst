@@ -25,13 +25,13 @@ Beschreibung
 
 Das *Starterkit: Serverraum-Überwachung* ist ein Open Source Kit um
 Serverraum Installationen zu überwachen. Das Basiskit ist mit folgenden Sensoren
-ausgestattet: :ref:`Ambient Light Bricklet <ambient_light_bricklet>` ( 
-überwacht z.B. die Raumbeleuchtung),
+ausgestattet: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
+(überwacht z.B. die Raumbeleuchtung),
 :ref:`Temperature Bricklet <temperature_bricklet>` (überwacht die Temperatur im
-Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit PT100 Temperatursensor (z.B. 
-zum Überwachen der Temperatur in einem Server). Zusätzlich ist ein 
+Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit Pt100 Temperatursensor
+(z.B. zum Überwachen der Temperatur in einem Server). Zusätzlich ist ein
 :ref:`Master Brick <master_brick>` und eine
-:ref:`Ethernet Master Extension (unterstützt PoE) <ethernet_extension>` 
+:ref:`Ethernet Master Extension <ethernet_extension>` (unterstützt PoE)
 enthalten. Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werden
 und mittels weiterer Temperatursensoren und anderen Module (z.B. 
 Bewegungsdetektoren, Ein-/Ausgabe Modulen (um Computer ein-/auszuschalten oder 
@@ -75,7 +75,7 @@ Eigenschaft                       Wert
 ================================  ============================================================
 Beleuchtungsstärke                0Lux - 900Lux in 0,1Lux Schritten
 Temperatur (Ambient)              -40°C - 85°C in 0,01°C Schritten
-PT100 Sensor                      -20°C - 450°C 
+Pt100 Sensor                      -20°C - 450°C
 PTC Bricklet                      0,03125°C (15Bit) Auflösung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -93,9 +93,6 @@ Ressourcen
 * Beispielcode *Nagios/Icinga Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
 * Beispielcode *Nagios/Icinga Extended Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
 * Beispielcode *Sensordaten an Xively übertragen* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
- 
- 
- 
 
 Erste Tests, Firmware-Aktualisierung und Konfiguration
 ------------------------------------------------------
@@ -171,7 +168,6 @@ Enumerierung der Bricks und Bricklets ("Ist alles angeschlossen?"):
 .. code-block:: bash
 
  $ tinkerforge --host ServerMonitoring enumerate
-
  uid=6Dct25
  connected-uid=0
  position=0

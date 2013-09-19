@@ -61,7 +61,6 @@ The interface is extended in comparison to the *check_tf_temp.py* script.
 
 You can write "Err" on the Segment Display 4x7 Bricklet by
 
-
 .. code-block:: bash
 
  python check_tf_temp_ext.py -u 9VU -H ServerMonitoring -t segment_display_4x7 -e true
@@ -72,18 +71,16 @@ and disable it with
 
  python check_tf_temp_ext.py -u 9VU -H ServerMonitoring -t segment_display_4x7 -e false
 
-
 With the Motion Detector Bricklet you can get information if motion was detected 
 by running
-
 
 .. code-block:: bash
 
  python check_tf_temp_ext.py -H ServerMonitoring -u abc -t motion_detector
 
-
 The full script looks like this:
 
+(`download <https://raw.github.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp_ext.py>`__)
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp_ext.py
  :language: python
