@@ -9,3 +9,4 @@ de/source/Software/Bricklets
 *.table
 *.toctree
 *.substitutions
+*.pyc

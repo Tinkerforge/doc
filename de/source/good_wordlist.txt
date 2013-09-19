@@ -124,6 +124,7 @@ dBm
 kB
 mG
 mW
+mT
 Pluspol
 Minuspol
 Multimeter

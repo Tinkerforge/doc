@@ -216,10 +216,10 @@ Read out connected sensors (adapt the UID):
  $ tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
  temperature=2603
 
-The shell bindings support the execution of bash code with the --execute flag 
-(see `Shell Bindings <api_bindings_shell>`__ for more information). The following script shows how to 
-convert the returned value into degree Celsius and how to save it in a variable
-for further use.
+The shell bindings support the execution of additional shell commands with the
+``--execute`` option (see `Shell Bindings <ipcon_shell_output>`__ for more
+information). The following script shows how to convert the returned value into
+degree Celsius and how to save it in a variable for further use.
 
 .. code-block:: bash
 
@@ -235,6 +235,7 @@ for further use.
 
 Server Room Monitoring with Nagios or Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 `Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
 said to be backward compatible to Nagios. In the following examples we are

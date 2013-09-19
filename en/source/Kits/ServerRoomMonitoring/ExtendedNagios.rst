@@ -11,7 +11,7 @@ This example is an extended version of the
 It is extended by the usage of a Motion Detector Bricklet and a 
 Segment Display 4x7 Bricklet.
 
-With the extended script you can display if there is an error occured
+With the extended script you can display if there is an error occurred
 and can detect motion in the server room. The script can be used as a starting
 point for your own projects.
 

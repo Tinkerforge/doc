@@ -14,7 +14,7 @@ Bricklet <ambient_light_bricklet>`, :ref:`PTC Bricklet <ptc_bricklet>`,
 Bricklet cables as well as lots of screws, spacers, nuts and washers.
 
 Screws, spacers, nuts and washers are packed in mounting kits. These are
-standarized kits and are not specially composed for this starter kit. Get
+standardized kits and are not specially composed for this starter kit. Get
 the necessary parts you need for each step from all mounting kits. For your own
 modifications there are more mounting parts included then necessary.
 

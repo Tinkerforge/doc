@@ -11,7 +11,7 @@ sind Computer Überwachungswerkzeuge. Icinga ist ein Fork von Nagios und gilt
 als rückwärtskompatibel zu diesem. Die nachfolgenden Beispielen beziehen
 sich auf die Nagios API sind daher aber auch kompatibel zu Icinga.
 
-Beide Überwachungswerkzeuge nutzen Plugins, instanziiert als Services,
+Beide Überwachungswerkzeuge nutzen Plugins, instantiiert als Services,
 um die Prozessorauslastung, Speicherbelegung, spezielle Software Prozesse oder
 physikalische Werte, wie die Temperatur, zu überwachen. Die jeweilige 
 Dokumentation gibt hier weitere Informationen.
@@ -38,7 +38,7 @@ Das Skript basiert auf einem
 und nutzt das Temperature oder PTC Bricklet um die Temperatur zu messen und zu
 warnen falls zu hohe Temperaturen gemessen werden.
 
-Das kleine Skript, *check_tf_temp.py* genannt, besitzt folgende Schnittstelle:
+Das kleine Skript, ``check_tf_temp.py`` genannt, besitzt folgende Schnittstelle:
 
 .. code-block:: none
 
@@ -77,14 +77,14 @@ Das kleine Skript, *check_tf_temp.py* genannt, besitzt folgende Schnittstelle:
 Der Großteil der Schnittstelle sollte selbsterklärend sein. Diese unterstützt
 drei Modi:
 
- * ``high``: Nachricht wird abgegeben wenn die gemessene Temperatur über WARNING oder CRITICAL liegt
- * ``low``: Nachricht wird abgegeben wenn die gemessene Temperatur unter WARNING oder CRITICAL liegt
- * ``range``: Nachricht wird abgegeben falls die Temperatur über WARNING oder CRITICAL der unter WARNING2 oder CRITICAL2 liegt
+* ``high``: Nachricht wird abgegeben wenn die gemessene Temperatur über WARNING oder CRITICAL liegt
+* ``low``: Nachricht wird abgegeben wenn die gemessene Temperatur unter WARNING oder CRITICAL liegt
+* ``range``: Nachricht wird abgegeben falls die Temperatur über WARNING oder CRITICAL der unter WARNING2 oder CRITICAL2 liegt
 
-Das Skript sollte global ausführbar sein, z.B. durch speichern unter /usr/local/bin.
+Das Skript sollte global ausführbar sein, z.B. durch speichern unter ``/usr/local/bin``.
 
 Das folgende Beispiel verbindet zu einer Ethernet Extension mit dem Hostnamen
-*ServerMonitoring* und zu einem Temperature Bricklet mit der UID *SCT31*. Eine
+``ServerMonitoring`` und zu einem Temperature Bricklet mit der UID ``SCT31``. Eine
 Warning Nachricht wird bei Temperaturen über 26°C abgegeben und eine Critical 
 Nachricht bei Temperaturen über 27°C:
 
@@ -107,8 +107,8 @@ Das Kommando sieht dann wie folgt aus:
 
  check_tf_temp.py -H ServerMonitoring -u fow -t ptc -m range -w 10 -w2 30 -c 8 -c2 35
 
-Das *check_tf_temp.py* Skript kann einfach an andere Tinkerforge Sensoren 
-angepasst werden. Die *read* Methode ist der Hauptteil des Skripts. Diese liest
+Das ``check_tf_temp.py`` Skript kann einfach an andere Tinkerforge Sensoren 
+angepasst werden. Die ``read`` Methode ist der Hauptteil des Skripts. Diese liest
 das Bricklet aus und vergleicht die gemessene Temperatur mit den Warning
 und Critical Grenzwerten. Falls notwendig generiert sie eine Meldung und
 den dazu passenden Rückgabewert.
@@ -119,7 +119,7 @@ den dazu passenden Rückgabewert.
 
 Um das Skript mit Nagios auszuführen muss es zuerst registriert werden.
 Dazu wird dieses mit den folgenden Zeilen in einer Command Konfigurationsdatei
-(e.g. /usr/local/nagios/etc/checkcommands.cfg or /etc/icinga/commands.cfg)
+(e.g. ``/usr/local/nagios/etc/checkcommands.cfg`` or ``/etc/icinga/commands.cfg``)
 registriert:
 
 .. code-block:: none
@@ -143,8 +143,8 @@ Service kann in eine Service Konfigurationsdatei mit den folgenden Zeilen:
  }
 
 erzeugt werden. Mögliche Konfigurationsdateien befinden sich unter
-/usr/local/nagios/etc/services.cfg, /etc/icinga/objects/services_icinga.cfg 
-oder an anderen Positionen. Die jeweilige Dokumentation gibt hier aufschluss.
+``/usr/local/nagios/etc/services.cfg``, ``/etc/icinga/objects/services_icinga.cfg``
+oder an anderen Positionen. Die jeweilige Dokumentation gibt hier Aufschluss.
 
 Das war es. Es sollte ein neuer Service im Web-Interface angezeigt werden,
 der vor zu hohen Temperaturen warnt.
