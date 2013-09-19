@@ -151,8 +151,8 @@ Ressourcen
 * Beispielquelltext für :ref:`starter_kit_weather_station_xively` (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Beispielquelltext für :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Beispielquelltext für :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
-* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, Source Code: `Download <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
-		
+* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, Quelltext: `Download <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
+
 Firmware aktualisieren und erste Tests
 --------------------------------------
 
