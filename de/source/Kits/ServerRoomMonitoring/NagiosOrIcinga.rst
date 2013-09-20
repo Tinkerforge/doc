@@ -121,7 +121,7 @@ den dazu passenden Rückgabewert:
 
 Um das Skript mit Nagios auszuführen muss es zuerst registriert werden.
 Dazu wird dieses mit den folgenden Zeilen in einer Command Konfigurationsdatei
-(e.g. ``/usr/local/nagios/etc/checkcommands.cfg`` or ``/etc/icinga/commands.cfg``)
+(z.B. ``/usr/local/nagios/etc/checkcommands.cfg`` oder ``/etc/icinga/commands.cfg``)
 registriert:
 
 .. code-block:: none

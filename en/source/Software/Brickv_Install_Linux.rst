@@ -71,7 +71,7 @@ distribution you have to search for and install the equivalent packages::
 
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial pyqt4-dev-tools
 
-First you have to build the Qt .ui files (note: you need ``pyuic4`` for that),
+First you have to build the Qt ``.ui`` files (note: you need ``pyuic4`` for that),
 change to the folder ``src/brickv/`` and run::
 
  python build_all_ui.py

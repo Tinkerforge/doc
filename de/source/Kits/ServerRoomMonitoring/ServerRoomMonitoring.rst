@@ -47,7 +47,7 @@ kann per
 oder USB versorgt werden.
 
 Die Soft- und Hardware des Kits können modifiziert werden. Das Gehäuse besteht 
-aus bastelfreundlichen PMMA in das einfach neue Befestigungslöcher gebohrt 
+aus bastelfreundlichem PMMA in das einfach neue Befestigungslöcher gebohrt
 werden können. Befestigungslöcher für verschiedene
 :ref:`Bricklets <product_overview_bricklets>` und
 :ref:`Bricks <product_overview_bricks>` sind bereits vorhanden.
@@ -104,7 +104,7 @@ Dazu muss der :ref:`Brick Daemon <brickd_installation>` und
 der :ref:`Brick Viewer <brickv_installation>` installiert werden.
 
 Als nächstes sollte das PTC Bricklet konfiguriert und der 
-Temperatursensor (2-Draht) angeschlossen werden. Wie dies funktioniert
+Temperatursensor (2-Leiter) angeschlossen werden. Wie dies funktioniert
 ist :ref:`hier <ptc_bricklet_jumper_configuration>` und
 :ref:`hier <ptc_bricklet_connectivity>` dokumentiert.
 

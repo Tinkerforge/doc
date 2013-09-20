@@ -124,8 +124,8 @@ Grundfunktionen
  wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
  IP Connection in einem Thread gestartet wird.
 
- ``Wait`` und ``Unwait`` agieren auf die gleiche Weise wie "acquire" und
- "release" einer Semaphore.
+ ``Wait`` und ``Unwait`` agieren auf die gleiche Weise wie ``Acquire`` und
+ ``Release`` einer Semaphore.
 
 
 .. delphi:function:: procedure TIPConnection.Unwait()
@@ -133,8 +133,8 @@ Grundfunktionen
  Startet einen Thread der vorher mit :delphi:func:`TIPConnection.Wait`
  angehalten wurde wieder.
 
- ``Wait`` und ``Unwait`` agieren auf die gleiche Weise wie "acquire" und
- "release" einer Semaphore.
+ ``Wait`` und ``Unwait`` agieren auf die gleiche Weise wie ``Acquire`` und
+ ``Release`` einer Semaphore.
 
 
 Callbacks

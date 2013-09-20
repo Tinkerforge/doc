@@ -117,8 +117,8 @@ Grundfunktionen
  wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
  IP Connection in einem Thread gestartet wird.
 
- ``Wait`` und ``Unwait`` agieren auf die gleiche Weise wie "acquire" und
- "release" einer Semaphore.
+ ``Wait`` und ``Unwait`` agieren auf die gleiche Weise wie ``Acquire`` und
+ ``Release`` einer Semaphore.
 
 
 .. csharp:function:: public void IPConnection::Unwait()
@@ -126,8 +126,8 @@ Grundfunktionen
  Startet einen Thread der vorher mit :csharp:func:`Wait() <IPConnection::Wait>`
  angehalten wurde wieder.
 
- ``Wait`` und ``Unwait`` agieren auf die gleiche Weise wie "acquire" und
- "release" einer Semaphore.
+ ``Wait`` und ``Unwait`` agieren auf die gleiche Weise wie ``Acquire`` und
+ ``Release`` einer Semaphore.
 
 
 Callbacks

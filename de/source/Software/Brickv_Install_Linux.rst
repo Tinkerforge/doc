@@ -76,7 +76,7 @@ installiert werden. Für andere Distributionen sollte es äquivalente Pakete geb
 
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial pyqt4-dev-tools
 
-Als erstes müssen die Qt .ui Dateien übersetzt werden (dafür wird ``pyuic4``
+Als erstes müssen die Qt ``.ui`` Dateien übersetzt werden (dafür wird ``pyuic4``
 benötigt). Dazu in den ``src/brickv/`` Ordner innerhalb des entpackten Quelltext
 wechseln und dort folgender Befehl ausführen::
 

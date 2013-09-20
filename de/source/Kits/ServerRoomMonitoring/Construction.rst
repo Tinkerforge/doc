@@ -56,7 +56,7 @@ Seitenteile mit dem Frontteil verbinden
 
 Die zuvor hergestellten Seitenteile werden in das Frontteil gesteckt und 
 ebenfalls mit jeweils einer Mutter und 12mm Schraube befestigt. Wichtig ist das 
-Fronteil wie im nachfolgenden Bild zu befestigen. Das Frontteil ist korrekt 
+Frontteil wie im nachfolgenden Bild zu befestigen. Das Frontteil ist korrekt
 befestigt, wenn die Position des Ausschnitts für die Ethernet Master Extension 
 übereinstimmt.
 
@@ -90,7 +90,7 @@ eingebaut.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step4.png
 
-Bricks and Bricklets einbauen
+Bricks und Bricklets einbauen
 -----------------------------
 
 Die Ethernet Master Extension wird auf das Master Brick gesteckt wobei
@@ -120,7 +120,7 @@ Es ist einfacher wenn hier vor dem aufschrauben die 15cm Bricklet Kabel
 an die Bricklets angeschlossen werden.
 
 Vor der ersten Benutzung muss das PTC Bricklet konfiguriert werden und der 
-Temperatursensor (2-draht) angeschlossen werden. Wie dies funktioniert ist
+Temperatursensor (2-Leiter) angeschlossen werden. Wie dies funktioniert ist
 :ref:`hier <ptc_bricklet_jumper_configuration>` und
 :ref:`hier <ptc_bricklet_connectivity>` dokumentiert.
 

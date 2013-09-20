@@ -223,9 +223,9 @@ Fortgeschrittene Funktionen
  * ``--help`` zeigt Hilfe für den ``listen`` Befehl an und endet dann
  * ``--address <address>`` IP Adresse auf der gelauscht wird, Standard: ``0.0.0.0``
  * ``--port <port>`` Port-Nummer auf der gelauscht wird, Standard: ``4217``
- * ``--enable-host`` aktivert die ``--host`` Option um IP Adresse oder Hostname des Verbindungsziels zu ändern
- * ``--enable-port`` aktivert die ``--port`` Option um Port-Nummer des Verbindungsziels zu ändern
- * ``--enable-execute`` aktivert die ``--execute`` Option für Getter und Callbacks
+ * ``--enable-host`` aktiviert die ``--host`` Option um IP Adresse oder Hostname des Verbindungsziels zu ändern
+ * ``--enable-port`` aktiviert die ``--port`` Option um Port-Nummer des Verbindungsziels zu ändern
+ * ``--enable-execute`` aktiviert die ``--execute`` Option für Getter und Callbacks
 
  Im Listen Modus sind einige Optionen für eingehende Befehle standardmäßig
  deaktiviert.

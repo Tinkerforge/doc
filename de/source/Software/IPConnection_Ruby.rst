@@ -129,8 +129,8 @@ Grundfunktionen
  wenn auf einen spezifischen Callback gewartet werden soll oder wenn die
  IP Connection in einem Thread gestartet wird.
 
- ``wait`` und ``unwait`` agieren auf die gleiche Weise wie "acquire" und
- "release" einer Semaphore.
+ ``wait`` und ``unwait`` agieren auf die gleiche Weise wie ``acquire`` und
+ ``release`` einer Semaphore.
 
 
 .. rb:function:: IPConnection#unwait() -> nil
@@ -139,7 +139,7 @@ Grundfunktionen
  angehalten wurde wieder.
 
  ``wait`` und ``unwait`` agieren auf die gleiche Weise wie "acquire" und
- "release" einer Semaphore.
+ ``release`` einer Semaphore.
 
 
 Konfigurationsfunktionen für Callbacks
@@ -194,7 +194,7 @@ werden weiter unten beschrieben.
  * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
    'a' - 'd' (Position an Brick).
  * *hardware_version*: Major, Minor und Release Nummer der Hardwareversion.
- * *firmware_version*: Major, Minor und Release number der Firmwareversion.
+ * *firmware_version*: Major, Minor und Release Nummer der Firmwareversion.
  * *device_identifier*: Eine Zahl, welche den Brick/Bricklet repräsentiert.
  * *enumeration_type*: Art der Enumerierung.
 
