@@ -42,7 +42,11 @@ rotate it a little bit in the slot until it fits.
 
 The result is depicted in the following image:
 
-TODO Image
+.. image:: /Images/Kits/server_room_monitoring_construction_step1_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 1
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step1.png
 
 Screw Side Parts to the Front Panel
 -----------------------------------
@@ -52,7 +56,11 @@ the front panel with the previously used nut technique. It is important to
 attach the front panel as depicted in the following image (Pay attention to the
 position of the Ethernet Master Extension cut-out ).
 
-TODO Image
+.. image:: /Images/Kits/server_room_monitoring_construction_step2_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 2
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step2.png
 
 Screw Back Side to the Side Parts
 ---------------------------------
@@ -60,13 +68,21 @@ Screw Back Side to the Side Parts
 Next put eight 10mm spacers (thread inside/inside) and short screws and attach 
 them to the position of the PTC and Temperature Bricklet.
 
-TODO Image
+.. image:: /Images/Kits/server_room_monitoring_construction_step3_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 3
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step3.png
 
 At next put the back side on the side parts and attach it as previously with nuts 
 and screws. After that you have completed the build of the rack enclosure.
 In the next step we attach the Bricks and Bricklets to it.
 
-TODO Image
+.. image:: /Images/Kits/server_room_monitoring_construction_step4_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 4
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step4.png
 
 Attach Bricks and Bricklets
 ---------------------------
@@ -76,11 +92,19 @@ to put them between Master Brick and Ethernet Master Extension (on top).
 Fix them with 10mm spacers (thread inside/inside) on the bottom side and with 
 screws on the top side of the Ethernet Extension.
 
-TODO Image 10mm Spacers, Master Brick, 9mm Spacers, Ethernet Extension, Screws
+.. image:: /Images/Kits/server_room_monitoring_construction_step5_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 5
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step5.png
 
 Screw this stack to one of the side parts by four screws. See below picture.
 
-TODO Image Stack screwed to side part.
+.. image:: /Images/Kits/server_room_monitoring_construction_step6_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 6
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
 
 Next attach a 15cm Bricklet cable to the PTC Bricklet and to the Temperature
 Bricklet each. Use four screws each to mount it on the previous installed 
@@ -92,7 +116,11 @@ probe (2-wire) has to be attached. How this is done is documented
 :ref:`here <ptc_bricklet_jumper_configuration>` and 
 :ref:`here <ptc_bricklet_connectivity>`.
 
-TODO Image back side with ptc and temperature
+.. image:: /Images/Kits/server_room_monitoring_construction_step7_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 7
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step7.png
 
 In the last step attach the Ambient Light Bricklet to the front panel.
 To do this connect the 50cm Bricklet cable to the Bricklet first. After that
@@ -101,7 +129,16 @@ and one nut each. Put the Bricklet on it and fix it with four additional nuts.
 As the last step connect the Bricklet cable to the Master Brick and use a 
 cable strap to fasten them.
 
+.. image:: /Images/Kits/server_room_monitoring_construction_step8_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 8
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step8.png
+
 That was it! The finished work should look like the following:
 
-TODO Image completed build up
-
+.. image:: /Images/Kits/server_room_monitoring_construction_step9_600.jpg
+   :scale: 100 %
+   :alt: Construction Step 9
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step9.png

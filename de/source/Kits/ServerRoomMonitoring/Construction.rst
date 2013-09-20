@@ -45,7 +45,11 @@ werden.
 
 Das Ergebnis dieses Arbeitsschritts ist in dem folgenden Foto abgebildet:
 
-TODO Image
+.. image:: /Images/Kits/server_room_monitoring_construction_step1_350.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 1
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step1.png
 
 Seitenteile mit dem Frontteil verbinden
 ---------------------------------------
@@ -56,8 +60,11 @@ Fronteil wie im nachfolgenden Foto zu befestigen. Das Frontteil ist korrekt
 befestigt, wenn die Position des Ausschnitts für die Ethernet Master Extension 
 übereinstimmt.
 
-TODO Image
-
+.. image:: /Images/Kits/server_room_monitoring_construction_step2_350.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 2
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step2.png
 
 Rückseite befestigen
 --------------------
@@ -66,14 +73,22 @@ Als nächstes werden acht 10mm Abstandshalter (Innen-/Innengewinde) mittels
 kurzen Schrauben an die Positionen für das PTC und das Temperature Bricklet auf 
 das Rückseitenteil geschraubt.
 
-TODO Image
+.. image:: /Images/Kits/server_room_monitoring_construction_step3_350.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 3
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step3.png
 
 Anschließend wird die Rückseite auf die Seitenteile gesteckt und ebenfalls
 mittels zwei 12mm langen Schrauben und zwei Muttern befestigt. Anschließend ist 
 das Gehäuse fertiggestellt. Im nächsten Schritt werden die Bricks und Bricklets 
 eingebaut.
 
-TODO Image
+.. image:: /Images/Kits/server_room_monitoring_construction_step4_350.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 4
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step4.png
 
 Bricks and Bricklets einbauen
 -----------------------------
@@ -83,11 +98,19 @@ jeweils ein 9mm Abstandshalter (Innen-/Außengewinde) dazwischen gesteckt wird.
 Anschließend wird jeweils ein 10mm Abstandshalter (Innen-/Innengewinde)
 unten aufgeschraubt und die Master Extension mittels Schrauben befestigt.
 
-TODO Image 10mm Spacers, Master Brick, 9mm Spacers, Ethernet Extension, Screws
+.. image:: /Images/Kits/server_room_monitoring_construction_step5_350.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 5
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step5.png
 
 Dieser Stapel wird an ein Seitenteil mittels vier Schrauben geschraubt.
 
-TODO Image Stack screwed to side part.
+.. image:: /Images/Kits/server_room_monitoring_construction_step6_350.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 6
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
 
 Als nächstes wird jeweils ein 15cm Bricklet Kabel an das PTC und Temperature
 Bricklet angeschlossen und auf die zuvor installierten 10mm Abstandshalter auf
@@ -98,7 +121,11 @@ Temperatursensor (2-draht) angeschlossen werden. Wie dies funktioniert ist
 :ref:`hier <ptc_bricklet_jumper_configuration>` und
 :ref:`hier <ptc_bricklet_connectivity>` dokumentiert.
 
-TODO Image back side with ptc and temperature
+.. image:: /Images/Kits/server_room_monitoring_construction_step7_350.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 7
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step7.png
 
 Im letzten Schritt wird das Ambient Light Bricklet an die Frontseite geschraubt.
 Dazu werden vier 12mm lange Schrauben durch die Frontseite gesteckt und von 
@@ -109,7 +136,16 @@ jeweils eine Mutter. Das Brickletkabel wird über die Aussparung im Seitenteil
 zum Master Brick geführt und mit diesem verbunden. Ein Kabelbinder ordnet die 
 Verkabelung.
 
+.. image:: /Images/Kits/server_room_monitoring_construction_step8_350.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 8
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step8.png
+
 Das nachfolgende Foto zeigt das fertig aufgebaute Kit.
 
-TODO Image completed build up
-
+.. image:: /Images/Kits/server_room_monitoring_construction_step9_600.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 9
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_step9.png
