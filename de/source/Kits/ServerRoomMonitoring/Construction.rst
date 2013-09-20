@@ -10,7 +10,7 @@ Das Starterkit: Serverraum-Überwachung wird mit einem :ref:`Ambient Light
 Bricklet <ambient_light_bricklet>`, :ref:`PTC Bricklet <ptc_bricklet>`,
 :ref:`Temperature Bricklet<temperature_bricklet>`, 
 :ref:`Master Brick <master_brick>`,
-:ref:`Ethernet Master Extension <ethernet_extension>` sowie
+:ref:`Ethernet Extension <ethernet_extension>` sowie
 Bricklet Kabel, Schrauben, Abstandshalter, Muttern und Unterlegscheiben.
 
 Schrauben, Abstandshalter, Muttern und Unterlegscheiben sind in einzelnen
@@ -57,7 +57,7 @@ Seitenteile mit dem Frontteil verbinden
 Die zuvor hergestellten Seitenteile werden in das Frontteil gesteckt und 
 ebenfalls mit jeweils einer Mutter und 12mm Schraube befestigt. Wichtig ist das 
 Frontteil wie im nachfolgenden Bild zu befestigen. Das Frontteil ist korrekt
-befestigt, wenn die Position des Ausschnitts für die Ethernet Master Extension 
+befestigt, wenn die Position des Ausschnitts für die Ethernet Extension 
 übereinstimmt.
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step2_350.jpg
@@ -93,7 +93,7 @@ eingebaut.
 Bricks und Bricklets einbauen
 -----------------------------
 
-Die Ethernet Master Extension wird auf das Master Brick gesteckt wobei
+Die Ethernet Extension wird auf das Master Brick gesteckt wobei
 jeweils ein 9mm Abstandshalter (Innen-/Außengewinde) dazwischen gesteckt wird. 
 Anschließend wird jeweils ein 10mm Abstandshalter (Innen-/Innengewinde)
 unten aufgeschraubt und die Master Extension mittels Schrauben befestigt.

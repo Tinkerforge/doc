@@ -14,9 +14,9 @@ Features
 
 * Allows Low Cost and Modular Server Room Monitoring 
 * 19" Rack Mountable (1U)
-* Accessible and Powered by Ethernet (`PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__) 
-* Expandable: Simply add Sensors or I/O if you need them
-* API for many programming languages (|bindings|)
+* Accessible and Powered over Ethernet (`PoE <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__) 
+* Expandable: Simply add extra Sensors and I/O moduls as needed
+* API for many programming languages: |bindings|
 * Open Source Soft- and Hardware
 * Nagios and Icinga directly Supported
 
@@ -30,10 +30,11 @@ Sensors: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
 :ref:`Temperature Bricklet <temperature_bricklet>` (monitors
 temperature in the server rack) and a
 :ref:`PTC Bricklet <ptc_bricklet>` with attachable Pt100 temperature sensor
-probe (monitors temperature in a server). Additionally a 
-:ref:`Master Brick <master_brick>` and a 
-:ref:`Ethernet Master Extension <ethernet_extension>` (supports PoE) is included.
-The kits enclosure can be mounted directly in a 19" server rack
+probe (monitors temperature in a server). A :ref:`Master Brick <master_brick>`
+and a :ref:`Ethernet Extension <ethernet_extension>`, with
+`Power over Ethernet (PoE) <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__
+support, are included
+as well. The kits enclosure can be mounted directly in a 19" server rack
 and can be extended by more temperature probes, other modules (e.g. motion
 detector), in- or outputs (to switch computers on/off or to monitor doors) and 
 so on. With the Tinkerforge :ref:`building blocks<product_overview>` you can
@@ -42,15 +43,14 @@ flexibly adapt it to your needs.
 One or more external controlling devices, such as (Embedded-) PCs, smart phones 
 or tablets, can be used to control the hardware over the Ethernet 
 connection. Monitoring directly over the Internet is possible. Power can
-be supplied with 
-`Power over Ethernet (PoE) <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__
-or USB.
+be supplied with PoE or USB.
 
 The soft- and hardware of the kit can be modified. The casing consists of
 tinker-friendly PMMA, you can drill new holes with 
 simple wood drill. Mounting holes for 
-different :ref:`Bricklets <product_overview_bricklets>` and 
-:ref:`Bricks <product_overview_bricks>` are provided, by default you can mount:
+different :ref:`Bricks <product_overview_bricks>` and 
+:ref:`Bricklets <product_overview_bricklets>` are provided, by default you can
+mount:
 
 :ref:`Analog In Bricklet <analog_in_bricklet>`,
 :ref:`Analog Out Bricklet <analog_in_bricklet>`,
@@ -62,8 +62,7 @@ Motion Detector Bricklet (coming soon)
 and Segment Display 4x7 Bricklet (coming soon).
 
 Programming this kit can be done with all of the available
-bindings (currently: |bindings|). Example implementations and
-applications for the usage with 
+bindings (|bindings|). Example implementations and applications for the usage with 
 `Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ and 
 other are available (see below). 
 
@@ -102,14 +101,12 @@ As a very first step you should try out and update your Bricks and Bricklets.
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
 the :ref:`Brick Viewer <brickv_installation>`. At next you should
 configure the PTC Bricklet and attach the temperature probe (2-wire).
-documented
-:ref:`here <ptc_bricklet_jumper_configuration>` and 
+documented :ref:`here <ptc_bricklet_jumper_configuration>` and 
 :ref:`here <ptc_bricklet_connectivity>`.
 
-After this put the
-Ethernet Master Extension on top of the Master Brick, connect all Bricklets
-to it and connect it via USB to your PC. 
-Afterwards use Brick Viewer to find out if all of the firmwares are up to 
+After this put the Ethernet Extension on top of the Master Brick, connect all
+Bricklets to it and connect it via USB to your PC. 
+Afterwards use Brick Viewer to check if all firmwares are up to 
 date (Updates / Flashing button). If not, you can
 :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick

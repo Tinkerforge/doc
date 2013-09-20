@@ -156,7 +156,7 @@ As a very first step you should try out and update your Bricks and Bricklets.
 
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
 the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets to the Master 
-Brick and connect it via USB to your PC. Afterwards use Brick Viewer to find out
+Brick and connect it via USB to your PC. Afterwards use Brick Viewer to check
 if all of the firmwares up to date (Updates / Flashing button). If not, you can
 :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
