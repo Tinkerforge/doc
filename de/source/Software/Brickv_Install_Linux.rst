@@ -69,15 +69,21 @@ Auch hier müssen die benötigten Abhängigkeiten installiert werden:
 * python-qwt5-qt4
 * python-opengl
 * python-serial
+* pyqt4-dev-tools
 
 Auf Debian basierte Distributionen können diese Pakete wie zuvor per ``apt-get``
 installiert werden. Für andere Distributionen sollte es äquivalente Pakete geben::
 
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
+ sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial pyqt4-dev-tools
 
-Um den Brick Viewer zu starten muss zuerst in den ``src/brickv/`` Ordner
-innerhalb des entpackten Quelltext gewechselt und dort folgender Befehl
-ausgeführt werden::
+Als erstes müssen die Qt .ui Dateien übersetzt werden (dafür wird ``pyuic4``
+benötigt). Dazu in den ``src/brickv/`` Ordner innerhalb des entpackten Quelltext
+wechseln und dort folgender Befehl ausführen::
+
+ python build_all_ui.py
+
+Um den Brick Viewer zu starten muss wieder in den ``src/brickv/`` Ordner
+gewechselt und dort folgender Befehl ausgeführt werden::
 
  python main.py
 

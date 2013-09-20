@@ -58,19 +58,26 @@ From Source
 To install Brick Viewer from source, download the source from
 :ref:`here <downloads_tools>` and install the dependencies:
 
+* python
 * python-qt4
 * python-qt4-gl
 * python-qwt5-qt4
 * python-opengl
 * python-serial
+* pyqt4-dev-tools
 
 On Debian based distributions you install them via ``apt-get``. On other
 distribution you have to search for and install the equivalent packages::
 
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
+ sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial pyqt4-dev-tools
 
-To start brickv from source, change to the folder ``src/brickv/`` and
-start with::
+First you have to build the Qt .ui files (note: you need ``pyuic4`` for that),
+change to the folder ``src/brickv/`` and run::
+
+ python build_all_ui.py
+
+After that you should be able to start brickv from source, change to the folder
+``src/brickv/`` and start with::
 
  python main.py
 
