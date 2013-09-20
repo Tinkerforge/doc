@@ -25,14 +25,14 @@ Description
 
 The *Starter Kit: Server Room Monitoring* is an open source kit to
 monitor server room installations. The basic kit is equipped with the following
-Sensors: :ref:`Ambient Light Bricklet <ambient_light_bricklet>` ( 
-monitors room illumination),
+Sensors: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
+(monitors room illumination),
 :ref:`Temperature Bricklet <temperature_bricklet>` (monitors
 temperature in the server rack) and a
-:ref:`PTC Bricklet <ptc_bricklet>` with attachable PT100 temperature sensor 
+:ref:`PTC Bricklet <ptc_bricklet>` with attachable Pt100 temperature sensor
 probe (monitors temperature in a server). Additionally a 
 :ref:`Master Brick <master_brick>` and a 
-:ref:`Ethernet Master Extension (supports PoE) <ethernet_extension>` is included.
+:ref:`Ethernet Master Extension <ethernet_extension>` (supports PoE) is included.
 The kits enclosure can be mounted directly in a 19" server rack
 and can be extended by more temperature probes, other modules (e.g. motion
 detector), in- or outputs (to switch computers on/off or to monitor doors) and 
@@ -75,7 +75,7 @@ Property                          Value
 ================================  ============================================================
 Illumination                      0lux - 900lux in 0.1lux steps
 Ambient Temperature               -40°C - 85°C in 0.01°C steps
-PT100 Sensor Probe                -20°C - 450°C 
+Pt100 Sensor Probe                -20°C - 450°C
 PTC Bricklet                      0.03125°C (15bit) resolution
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -93,9 +93,6 @@ Resources
 * Example source code *Nagios/Icinga Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
 * Example source code *Nagios/Icinga Extended Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
 * Example source code *Upload Sensor Data to Xively* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
- 
- 
- 
 
 First tests, firmware upgrade and configuration
 ------------------------------------------------
@@ -170,7 +167,6 @@ Enumerate the Bricks and Bricklets ("is all connected?"):
 .. code-block:: bash
 
  $ tinkerforge --host ServerMonitoring enumerate
-
  uid=6Dct25
  connected-uid=0
  position=0
@@ -216,10 +212,10 @@ Read out connected sensors (adapt the UID):
  $ tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
  temperature=2603
 
-The shell bindings support the execution of bash code with the --execute flag 
-(see `Shell Bindings <api_bindings_shell>`__ for more information). The following script shows how to 
-convert the returned value into degree Celsius and how to save it in a variable
-for further use.
+The shell bindings support the execution of additional shell commands with the
+``--execute`` option (see `Shell Bindings <ipcon_shell_output>`__ for more
+information). The following script shows how to convert the returned value into
+degree Celsius and how to save it in a variable for further use.
 
 .. code-block:: bash
 
@@ -235,6 +231,7 @@ for further use.
 
 Server Room Monitoring with Nagios or Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 `Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
 said to be backward compatible to Nagios. In the following examples we are
@@ -249,7 +246,11 @@ temperature measuring. With a few modifications you can use the plugin to
 support other Tinkerforge hardware modules and create the physical monitoring
 you need.
 
-TODO: Image
+.. image:: /Images/Kits/server_room_monitoring_icinga_screenshot_350.jpg
+   :scale: 100 %
+   :alt: Icinga Screenshot
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_icinga_screenshot_orig.jpg
 
 Find the full project description :ref:`here
 <starter_kit_server_room_monitoring_nagios_or_icinga>`.

@@ -22,6 +22,7 @@ kbit
 Mbit
 mG
 mW
+mT
 Arduino
 Changelog
 plugin
@@ -171,3 +172,6 @@ nA
 Youtube
 Nagios
 Icinga
+online
+spammed
+bitfield

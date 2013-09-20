@@ -12,7 +12,7 @@ Starterkit: Serverraum-Überwachung
 Features
 --------
 
-* Modulare low cost Serverraum-Überwachung 
+* Modulare Low-Cost Serverraum-Überwachung 
 * 19" Rack montierbar (1HE)
 * Steuerung und Versorgung per Ethernet (`PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__)
 * Erweiterbar: Falls benötigt können einfach Sensoren oder I/O hinzugesteckt werden
@@ -25,13 +25,13 @@ Beschreibung
 
 Das *Starterkit: Serverraum-Überwachung* ist ein Open Source Kit um
 Serverraum Installationen zu überwachen. Das Basiskit ist mit folgenden Sensoren
-ausgestattet: :ref:`Ambient Light Bricklet <ambient_light_bricklet>` ( 
-überwacht z.B. die Raumbeleuchtung),
+ausgestattet: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
+(überwacht z.B. die Raumbeleuchtung),
 :ref:`Temperature Bricklet <temperature_bricklet>` (überwacht die Temperatur im
-Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit PT100 Temperatursensor (z.B. 
-zum Überwachen der Temperatur in einem Server). Zusätzlich ist ein 
+Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit Pt100 Temperatursensor
+(z.B. zum Überwachen der Temperatur in einem Server). Zusätzlich ist ein
 :ref:`Master Brick <master_brick>` und eine
-:ref:`Ethernet Master Extension (unterstützt PoE) <ethernet_extension>` 
+:ref:`Ethernet Master Extension <ethernet_extension>` (unterstützt PoE)
 enthalten. Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werden
 und mittels weiterer Temperatursensoren und anderen Module (z.B. 
 Bewegungsdetektoren, Ein-/Ausgabe Modulen (um Computer ein-/auszuschalten oder 
@@ -73,10 +73,10 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Beleuchtungsstärke                0lux - 900lux in 0.1lux Schritten
-Temperatur (Ambient)              -40°C - 85°C in 0.01°C Schritten
-PT100 Sensor                      -20°C - 450°C 
-PTC Bricklet                      0.03125°C (15bit) Auflösung
+Beleuchtungsstärke                0Lux - 900Lux in 0,1Lux Schritten
+Temperatur (Ambient)              -40°C - 85°C in 0,01°C Schritten
+Pt100 Sensor                      -20°C - 450°C
+PTC Bricklet                      0,03125°C (15Bit) Auflösung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (L x B x H)           482 x 92 x 44mm (19.0 x 3.62 x 1.75")
@@ -93,9 +93,6 @@ Ressourcen
 * Beispielcode *Nagios/Icinga Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
 * Beispielcode *Nagios/Icinga Extended Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
 * Beispielcode *Sensordaten an Xively übertragen* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
- 
- 
- 
 
 Erste Tests, Firmware-Aktualisierung und Konfiguration
 ------------------------------------------------------
@@ -107,7 +104,7 @@ Dazu muss der :ref:`Brick Daemon <brickd_installation>` und
 der :ref:`Brick Viewer <brickv_installation>` installiert werden.
 
 Als nächstes sollte das PTC Bricklet konfiguriert und der 
-Temperatursensor (2-draht) angeschlossen werden. Wie dies funktioniert
+Temperatursensor (2-Draht) angeschlossen werden. Wie dies funktioniert
 ist :ref:`hier <ptc_bricklet_jumper_configuration>` und
 :ref:`hier <ptc_bricklet_connectivity>` dokumentiert.
 
@@ -166,12 +163,11 @@ Simple Monitoring
 In diesem Beispiel werden die :ref:`Shell Bindings <api_bindings_shell>` genutzt
 um die Sensoren des Kits auszulesen.
 
-Enummerierung der Bricks und Bricklets ("Ist alles angeschlossen?"):
+Enumerierung der Bricks und Bricklets ("Ist alles angeschlossen?"):
 
 .. code-block:: bash
 
  $ tinkerforge --host ServerMonitoring enumerate
-
  uid=6Dct25
  connected-uid=0
  position=0
@@ -217,8 +213,8 @@ Auslesen der verbundenen Sensoren (die UID ist anzupassen):
  $ tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
  temperature=2603
 
-Die Shell Bindings unterstützen die Ausführung von Bashcode mit dem
---execute flag (siehe `Shell Bindings <api_bindings_shell>`__ für weitere 
+Die Shell Bindings unterstützen die Ausführung von weiteren Shell Befehlen mit der
+``--execute`` Option (siehe :ref:`Shell Bindings <ipcon_shell_output>` für weitere 
 Informationen). Das nachfolgende Skript zeigt ein Beispiel wie der Rückgabewert
 in Grad Celsius umgerechnet und anschließend in einer Variable für die 
 weitere Benutzung gespeichert werden kann.
@@ -237,12 +233,13 @@ weitere Benutzung gespeichert werden kann.
 
 Serverraum-Überwachung mit Nagios oder Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 `Icinga <https://www.icinga.org/>`__ und `Nagios <http://www.nagios.org/>`__ 
 sind Computer Überwachungswerkzeuge. Icinga ist ein Fork von Nagios
 und gilt als rückwärtskompatibel zu Nagios. Die dokumentierten Beispiele 
 beziehen sich auf die Nagios API sind aber ebenfalls mit Icinga kompatibel.
 
-Beide Überwachungswerkzeuge nutzen Plugins, instanziiert als Service,
+Beide Überwachungswerkzeuge nutzen Plugins, instantiiert als Service,
 um die Auslastung des Prozessors, die Speicherbelegung, spezifische Software 
 Prozesse oder physikalische Werte wie die Temperatur zu überwachen.
 
@@ -251,9 +248,13 @@ In diesem Beispiel wird ein eigenes Plugin geschrieben welches die Temperatur
 andere Tinkerforge Module auszulesen und so eine spezifische Überwachung
 zu ermöglichen.
 
-TODO: Image
+.. image:: /Images/Kits/server_room_monitoring_icinga_screenshot_350.jpg
+   :scale: 100 %
+   :alt: Icinga Screenshot
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_icinga_screenshot_orig.jpg
 
-Die vollstände Projektbeschreibung kann :ref:`hier
+Die vollständige Projektbeschreibung kann :ref:`hier
 <starter_kit_server_room_monitoring_nagios_or_icinga>` hier gefunden werden.
 
 .. toctree::
