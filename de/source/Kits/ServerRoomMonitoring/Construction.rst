@@ -37,13 +37,13 @@ Winkel mit den Seitenteilen verbinden
 -------------------------------------
 
 Im nächsten Schritt werden die Winkel mit den Seitenteilen verbunden.
-Dazu wird der Winkel, wie im nachfolgenden Foto abgebildet, in das Seitenteil 
+Dazu wird der Winkel, wie im nachfolgenden Bild abgebildet, in das Seitenteil 
 gesteckt. Anschließend wird eine Mutter in die vorgesehene Aussparung gesteckt
 und mittels einer 12mm langen Schraube mit dem Seitenteil verbunden. Falls diese 
 Mutter nicht in die Aussparung zu passen scheint, muss diese etwas gedreht 
 werden.
 
-Das Ergebnis dieses Arbeitsschritts ist in dem folgenden Foto abgebildet:
+Das Ergebnis dieses Arbeitsschritts ist in dem folgenden Bild abgebildet:
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step1_350.jpg
    :scale: 100 %
@@ -56,7 +56,7 @@ Seitenteile mit dem Frontteil verbinden
 
 Die zuvor hergestellten Seitenteile werden in das Frontteil gesteckt und 
 ebenfalls mit jeweils einer Mutter und 12mm Schraube befestigt. Wichtig ist das 
-Fronteil wie im nachfolgenden Foto zu befestigen. Das Frontteil ist korrekt 
+Fronteil wie im nachfolgenden Bild zu befestigen. Das Frontteil ist korrekt 
 befestigt, wenn die Position des Ausschnitts für die Ethernet Master Extension 
 übereinstimmt.
 
@@ -112,9 +112,12 @@ Dieser Stapel wird an ein Seitenteil mittels vier Schrauben geschraubt.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
 
-Als nächstes wird jeweils ein 15cm Bricklet Kabel an das PTC und Temperature
-Bricklet angeschlossen und auf die zuvor installierten 10mm Abstandshalter auf
-dem Rückseitenteil aufgeschraubt. Das nachfolgende Foto zeigt die Verkabelung.
+Als nächstes werden PTC und Temperature
+Bricklet auf die zuvor installierten 10mm Abstandshalter auf
+dem Rückseitenteil aufgeschraubt. 
+
+Es ist einfacher wenn hier vor dem aufschrauben die 15cm Bricklet Kabel
+an die Bricklets angeschlossen werden.
 
 Vor der ersten Benutzung muss das PTC Bricklet konfiguriert werden und der 
 Temperatursensor (2-draht) angeschlossen werden. Wie dies funktioniert ist
@@ -132,9 +135,7 @@ Dazu werden vier 12mm lange Schrauben durch die Frontseite gesteckt und von
 hinten jeweils mittels einer Unterlegscheibe und einer Mutter fixiert. 
 Anschließend wird das 50cm Brickletkabel an das Ambient Light Bricklet 
 angeschlossen und dieses auf die vier Schrauben gesteckt. Fixiert wird es über 
-jeweils eine Mutter. Das Brickletkabel wird über die Aussparung im Seitenteil 
-zum Master Brick geführt und mit diesem verbunden. Ein Kabelbinder ordnet die 
-Verkabelung.
+jeweils eine Mutter. 
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step8_350.jpg
    :scale: 100 %
@@ -142,10 +143,16 @@ Verkabelung.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step8.png
 
-Das nachfolgende Foto zeigt das fertig aufgebaute Kit.
+Die Brickletkabel müssen nun noch zum Master Brick geführt und dort
+angeschlossen werden. Ein Kabelbinder kann genutzt werden um die
+Verkabelung ordnen.
+
+Das nachfolgende Bild zeigt das fertig aufgebaute Kit.
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step9_600.jpg
    :scale: 100 %
    :alt: Arbeitsschritt 9
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step9.png
+
+TODO: Foto von Kit mit Kabel

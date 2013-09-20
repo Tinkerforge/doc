@@ -35,10 +35,11 @@ lever to get to the foil.
 Screw Brackets to Side Parts
 ----------------------------
 
-In the next step we screw one bracket to one side part each. To do this you have
-to put a nut in the dedicated slot of the bracket and put a 12mm long screw 
-through the side part and fix the bracket. If the nut does not seem to fit, 
-rotate it a little bit in the slot until it fits.
+As the first construction step screw one bracket to one side part each. 
+To do this you have to put a nut in the dedicated slot of the bracket,
+put a 12mm long screw through the side part and fix the bracket. 
+If the nut does not seem to fit, rotate it a little bit in the slot 
+until it fits.
 
 The result is depicted in the following image:
 
@@ -51,10 +52,10 @@ The result is depicted in the following image:
 Screw Side Parts to the Front Panel
 -----------------------------------
 
-Attach the previous manufactured side parts into the front panel and screw it to 
-the front panel with the previously used nut technique. It is important to 
-attach the front panel as depicted in the following image (Pay attention to the
-position of the Ethernet Master Extension cut-out ).
+Attach the previously build side parts into the front panel and screw it to 
+the front panel with the same nut technique. Attach the front panel as 
+depicted in the following image (Pay attention to the
+position of the Ethernet Master Extension cut-out).
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step2_350.jpg
    :scale: 100 %
@@ -65,7 +66,7 @@ position of the Ethernet Master Extension cut-out ).
 Screw Back Side to the Side Parts
 ---------------------------------
 
-Next put eight 10mm spacers (thread inside/inside) and short screws and attach 
+Next take eight 10mm spacers (thread inside/inside) and short screws and attach 
 them to the position of the PTC and Temperature Bricklet.
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step3_350.jpg
@@ -74,7 +75,7 @@ them to the position of the PTC and Temperature Bricklet.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step3.png
 
-At next put the back side on the side parts and attach it as previously with nuts 
+Put the back side on the side parts and attach it with nuts 
 and screws. After that you have completed the build of the rack enclosure.
 In the next step we attach the Bricks and Bricklets to it.
 
@@ -88,7 +89,7 @@ Attach Bricks and Bricklets
 ---------------------------
 
 Use four 9mm spacers (thread inside/outside) 
-to put them between Master Brick and Ethernet Master Extension (on top). 
+and put them between Master Brick and Ethernet Master Extension (on top). 
 Fix them with 10mm spacers (thread inside/inside) on the bottom side and with 
 screws on the top side of the Ethernet Extension.
 
@@ -98,7 +99,7 @@ screws on the top side of the Ethernet Extension.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step5.png
 
-Screw this stack to one of the side parts by four screws. See below picture.
+Screw this stack to one of the side parts by four screws.
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step6_350.jpg
    :scale: 100 %
@@ -106,10 +107,12 @@ Screw this stack to one of the side parts by four screws. See below picture.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
 
-Next attach a 15cm Bricklet cable to the PTC Bricklet and to the Temperature
-Bricklet each. Use four screws each to mount it on the previous installed 
-spacers on the back side part. The following image depicts the routing of the
-cables.
+Next attach the PTC Bricklet and the Temperature Bricklet. 
+Use four screws to mount them on the previously installed 
+spacers on the back side part. 
+
+You may want to attach the 15cm Bricklet cable before you mount the Bricklets
+to the screws.
 
 Before the first usage the PTC Bricklet has to be configured and the temperature
 probe (2-wire) has to be attached. How this is done is documented
@@ -122,12 +125,10 @@ probe (2-wire) has to be attached. How this is done is documented
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step7.png
 
-In the last step attach the Ambient Light Bricklet to the front panel.
+Attach the Ambient Light Bricklet to the front panel.
 To do this connect the 50cm Bricklet cable to the Bricklet first. After that
 put four 12mm long screws through the front panel and fix them with one washer 
 and one nut each. Put the Bricklet on it and fix it with four additional nuts.
-As the last step connect the Bricklet cable to the Master Brick and use a 
-cable strap to fasten them.
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step8_350.jpg
    :scale: 100 %
@@ -135,10 +136,15 @@ cable strap to fasten them.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step8.png
 
-That was it! The finished work should look like the following:
+As the last step connect the Bricklet cables to the Master Brick and use a 
+cable strap to fasten them.
+
+That's it! The finished work should look as the following:
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step9_600.jpg
    :scale: 100 %
    :alt: Construction Step 9
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step9.png
+
+TODO: Photo of Kit with cables.
