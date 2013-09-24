@@ -10,13 +10,13 @@ The Starter Kit: Server Room Monitoring comes with :ref:`Ambient Light
 Bricklet <ambient_light_bricklet>`, :ref:`PTC Bricklet <ptc_bricklet>`,
 :ref:`Temperature Bricklet<temperature_bricklet>`, 
 :ref:`Master Brick <master_brick>`,
-:ref:`Ethernet Master Extension <ethernet_extension>` and
+:ref:`Ethernet Extension <ethernet_extension>` and
 Bricklet cables as well as lots of screws, spacers, nuts and washers.
 
 Screws, spacers, nuts and washers are packed in mounting kits. These are
 standardized kits and are not specially composed for this starter kit. Get
-the necessary parts you need for each step from all mounting kits. For your own
-modifications there are more mounting parts included then necessary.
+the necessary parts you need for each step from all mounting kits. The
+remaining mounting parts can be used for your own modifications.
 
 .. image:: /Images/Kits/server_room_monitoring_exploded_guided_small.png
    :scale: 100 %
@@ -28,7 +28,7 @@ Remove Protective Foils
 -----------------------
 
 At first the protective foils on all case parts have to be removed.
-There is foil on the front and back side. In some cases the protective
+There is a foil on the front and back side. In some cases the protective
 foils may be hard to remove, you can use a cutter or similar as a
 lever to get to the foil.
 
@@ -54,8 +54,8 @@ Screw Side Parts to the Front Panel
 
 Attach the previously build side parts into the front panel and screw it to 
 the front panel with the same nut technique. Attach the front panel as 
-depicted in the following image (Pay attention to the
-position of the Ethernet Master Extension cut-out).
+depicted in the following image (pay attention to the
+position of the Ethernet Extension cut-out).
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step2_350.jpg
    :scale: 100 %
@@ -88,8 +88,13 @@ In the next step we attach the Bricks and Bricklets to it.
 Attach Bricks and Bricklets
 ---------------------------
 
+Now the Bricks and Bricklets will be attached to the case.
+
+Master Brick and Ethernet Extension
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Use four 9mm spacers (thread inside/outside) 
-and put them between Master Brick and Ethernet Master Extension (on top). 
+and put them between Master Brick and Ethernet Extension (on top). 
 Fix them with 10mm spacers (thread inside/inside) on the bottom side and with 
 screws on the top side of the Ethernet Extension.
 
@@ -106,6 +111,9 @@ Screw this stack to one of the side parts by four screws.
    :alt: Construction Step 6
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
+
+PTC and Temperature Bricklet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Next attach the PTC Bricklet and the Temperature Bricklet. 
 Use four screws to mount them on the previously installed 
@@ -125,6 +133,9 @@ probe (2-wire) has to be attached. How this is done is documented
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step7.png
 
+Ambient Light Bricklet
+^^^^^^^^^^^^^^^^^^^^^^
+
 Attach the Ambient Light Bricklet to the front panel.
 To do this connect the 50cm Bricklet cable to the Bricklet first. After that
 put four 12mm long screws through the front panel and fix them with one washer 
@@ -135,6 +146,9 @@ and one nut each. Put the Bricklet on it and fix it with four additional nuts.
    :alt: Construction Step 8
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step8.png
+
+Connect Calbes and Done
+-----------------------
 
 As the last step connect the Bricklet cables to the Master Brick and use a 
 cable strap to fasten them.

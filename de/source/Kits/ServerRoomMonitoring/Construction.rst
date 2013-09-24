@@ -16,8 +16,8 @@ Bricklet Kabel, Schrauben, Abstandshalter, Muttern und Unterlegscheiben.
 Schrauben, Abstandshalter, Muttern und Unterlegscheiben sind in einzelnen
 Befestigungskits verpackt. Diese sind Standard-Befestigungskits und nicht 
 speziell für dieses Starterkit zusammengestellt. Die benötigten Teile für jeden 
-Arbeitsschritt müssen aus den Befestigungskits selektiert werden. Für eigene 
-Modifikationen sind mehr Befestigungsteile enthalten als notwendig.
+Arbeitsschritt müssen aus den Befestigungskits zusammengesucht werden. Das
+übrige Befestigungsmaterial kann für eigene Modifikationen verwendet werden.
 
 .. image:: /Images/Kits/server_room_monitoring_exploded_guided_small.png
    :scale: 100 %
@@ -93,6 +93,11 @@ eingebaut.
 Bricks und Bricklets einbauen
 -----------------------------
 
+Jetzt werden die Bricks und Bricklets ans Gehäuse geschraubt.
+
+Master Brick und Ethernet Extension
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Die Ethernet Extension wird auf das Master Brick gesteckt wobei
 jeweils ein 9mm Abstandshalter (Innen-/Außengewinde) dazwischen gesteckt wird. 
 Anschließend wird jeweils ein 10mm Abstandshalter (Innen-/Innengewinde)
@@ -112,6 +117,9 @@ Dieser Stapel wird an ein Seitenteil mittels vier Schrauben geschraubt.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
 
+PTC und Temperature Bricklet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Als nächstes werden PTC und Temperature
 Bricklet auf die zuvor installierten 10mm Abstandshalter auf
 dem Rückseitenteil aufgeschraubt. 
@@ -130,10 +138,13 @@ Temperaturfühler (2-Leiter) angeschlossen werden. Wie dies funktioniert ist
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step7.png
 
+Ambient Light Bricklet
+^^^^^^^^^^^^^^^^^^^^^^
+
 Im letzten Schritt wird das Ambient Light Bricklet an die Frontseite geschraubt.
 Dazu werden vier 12mm lange Schrauben durch die Frontseite gesteckt und von 
 hinten jeweils mittels einer Unterlegscheibe und einer Mutter fixiert. 
-Anschließend wird das 50cm Brickletkabel an das Ambient Light Bricklet 
+Anschließend wird das 50cm Bricklet Kabel an das Ambient Light Bricklet
 angeschlossen und dieses auf die vier Schrauben gesteckt. Fixiert wird es über 
 jeweils eine Mutter. 
 
@@ -143,7 +154,10 @@ jeweils eine Mutter.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step8.png
 
-Die Brickletkabel müssen nun noch zum Master Brick geführt und dort
+Verkabeln und Fertig
+--------------------
+
+Die Bricklet Kabel müssen nun noch zum Master Brick geführt und dort
 angeschlossen werden. Ein Kabelbinder kann genutzt werden um die
 Verkabelung ordnen.
 
