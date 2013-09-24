@@ -9,6 +9,52 @@
 Starter Kit: Server Room Monitoring
 ===================================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Kits/server_room_monitoring_back_350.jpg",
+	               "Kits/server_room_monitoring_back_800.jpg",
+	               "Server Room Monitoring Kit: Back")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_in_rack3_100.jpg",
+	             "Kits/server_room_monitoring_in_rack3_800.jpg",
+	             "Server Room Monitoring Kit: In Rack")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_front_100.jpg",
+	             "Kits/server_room_monitoring_front_800.jpg",
+	             "Server Room Monitoring Kit: Front")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_content_100.jpg",
+	             "Kits/server_room_monitoring_content_800.jpg",
+	             "Server Room Monitoring Kit: Content")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_extended_100.jpg",
+	             "Kits/server_room_monitoring_extended_800.jpg",
+	             "Server Room Monitoring Kit: Extended Version")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_iqr_100.jpg",
+	             "Kits/server_room_monitoring_iqr_800.jpg",
+	             "Server Room Monitoring Kit: Switching Power")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_in_rack1_100.jpg",
+	             "Kits/server_room_monitoring_in_rack1_800.jpg",
+	             "Server Room Monitoring Kit: In Rack")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_in_rack2_100.jpg",
+	             "Kits/server_room_monitoring_in_rack2_800.jpg",
+	             "Server Room Monitoring Kit: In Rack")
+	}}
+	{{ tfdocend() }}
+
+
 Features
 --------
 
@@ -80,7 +126,7 @@ PTC Bricklet                      0.03125°C (15bit) resolution
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            482 x 92 x 44mm (19.0 x 3.62 x 1.75")
-Weight                            TBDg
+Weight                            250g
 ================================  ============================================================
 
 .. _starter_kit_server_room_monitoring_resources:
@@ -303,7 +349,11 @@ Display 4x7 Bricklet can be used to show error code information on the case.
 The full project description can be found 
 :ref:`here <starter_kit_server_room_monitoring_extended_nagios>`.
 
-TODO: Image kit + motion + 4x7
+.. image:: /Images/Kits/server_room_monitoring_extended_350.jpg
+   :scale: 100 %
+   :alt: Extended version of kit
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_extended_1000.jpg
 
 .. toctree::
    :hidden:
@@ -320,5 +370,8 @@ of the computer with one of the relays of the Industrial Quad Relay Bricklet.
 A tutorial how a switch can be bypassed can be found at the
 :ref:`Hardware Hacking for Beginners Tutorial <starter_kit_hardware_hacking_for_beginners>`.
 
-
-TODO: Image
+.. image:: /Images/Kits/server_room_monitoring_iqr_350.jpg
+   :scale: 100 %
+   :alt: Kit with Industrial Quad Relay Bricklet
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_iqr_1000.jpg
