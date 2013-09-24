@@ -43,16 +43,22 @@ Variante ab.
 Raspbian (armhf)
 ^^^^^^^^^^^^^^^^
 
-Wurde Debian **mit** Hardware Floating Point Unit Unterstützung (Raspbian) installiert,
-so kann der :ref:`Brick Daemon <brickd>` einfach mit folgenden Befehlen installiert werden::
+Wurde Debian **mit** Hardware Floating Point Unit Unterstützung (Raspbian)
+installiert, so kann der :ref:`Brick Daemon <brickd>` einfach mit folgenden
+Befehlen installiert werden (falls ``libudev0`` nicht verfügbar ist ``libudev1``
+installieren)::
 
- cd /home/pi
  sudo apt-get install libusb-1.0-0 libudev0
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
 Der Brick Daemon wird nach der Installation und beim Hochfahren des Systems
 automatisch gestartet.
+
+Updates können durch Wiederholen der letzten beiden Befehle installiert werden::
+
+ wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
+ sudo dpkg -i brickd_linux_latest_armhf.deb
 
 
 Soft-Float Debian (armel)
@@ -68,7 +74,6 @@ heruntergeladen werden und im ``home`` Verzeichnis platziert werden.
 Danach müssen folgende Schritte ausgeführt werden::
 
  sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
- cd /home/pi
  unzip Tinkerforge-brickd-vX.Y.Z-W-***.zip (Dateiname anpassen)
  cd Tinkerforge-brickd-vX.Y.Z-W-*** (Ordnername anpassen)
  cd src/brickd
@@ -83,8 +88,12 @@ Brick Viewer installieren
 
 Der :ref:`Brick Viewer <brickv>` kann mit folgenden Befehlen installiert werden::
 
- cd /home/pi
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
+ wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
+ sudo dpkg -i brickv_linux_latest.deb
+
+Updates können durch Wiederholen der letzten beiden Befehle installiert werden::
+
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 

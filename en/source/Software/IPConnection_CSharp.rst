@@ -113,7 +113,7 @@ Basic Functions
  This is useful if you rely solely on callbacks for events, if you want to
  wait for a specific callback or if the IP Connection was created in a thread.
 
- ``Wait`` and ``Unwait`` act in the same way as "acquire" and "release" of a
+ ``Wait`` and ``Unwait`` act in the same way as ``Acquire`` and ``Release`` of a
  semaphore.
 
 
@@ -121,7 +121,7 @@ Basic Functions
 
  Unwaits the thread previously stopped by :csharp:func:`Wait() <IPConnection::Wait>`
 
- ``Wait`` and ``Unwait`` act in the same way as "acquire" and "release" of a
+ ``Wait`` and ``Unwait`` act in the same way as ``Acquire`` and ``Release`` of a
  semaphore.
 
 

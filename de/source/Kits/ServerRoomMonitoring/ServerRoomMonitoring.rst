@@ -14,9 +14,9 @@ Features
 
 * Modulare Low-Cost Serverraum-Überwachung 
 * 19" Rack montierbar (1HE)
-* Steuerung und Versorgung per Ethernet (`PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__)
-* Erweiterbar: Falls benötigt können einfach Sensoren oder I/O hinzugesteckt werden
-* API für viele Programmiersprachen (|bindings|)
+* Steuerung und Versorgung über Ethernet (`PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__)
+* Erweiterbar: Falls nötig können Sensoren und Ein-/Ausgabe Module einfach hinzugesteckt werden
+* API für viele Programmiersprachen: |bindings|
 * Open Source Soft- und Hardware
 * Nagios und Icinga Unterstützung
 
@@ -29,9 +29,10 @@ ausgestattet: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
 (überwacht z.B. die Raumbeleuchtung),
 :ref:`Temperature Bricklet <temperature_bricklet>` (überwacht die Temperatur im
 Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit Pt100 Temperatursensor
-(z.B. zum Überwachen der Temperatur in einem Server). Zusätzlich ist ein
-:ref:`Master Brick <master_brick>` und eine
-:ref:`Ethernet Master Extension <ethernet_extension>` (unterstützt PoE)
+(z.B. zum Überwachen der Temperatur in einem Server). Ein
+:ref:`Master Brick <master_brick>` und eine :ref:`Ethernet Extension
+<ethernet_extension>`, mit `Power over Ethernet (PoE)
+<https://de.wikipedia.org/wiki/Power_over_Ethernet>`__ Unterstützung, sind ebenfalls
 enthalten. Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werden
 und mittels weiterer Temperatursensoren und anderen Module (z.B. 
 Bewegungsdetektoren, Ein-/Ausgabe Modulen (um Computer ein-/auszuschalten oder 
@@ -47,10 +48,10 @@ kann per
 oder USB versorgt werden.
 
 Die Soft- und Hardware des Kits können modifiziert werden. Das Gehäuse besteht 
-aus bastelfreundlichen PMMA in das einfach neue Befestigungslöcher gebohrt 
+aus bastelfreundlichem PMMA in das einfach neue Befestigungslöcher gebohrt
 werden können. Befestigungslöcher für verschiedene
-:ref:`Bricklets <product_overview_bricklets>` und
-:ref:`Bricks <product_overview_bricks>` sind bereits vorhanden.
+:ref:`Bricks <product_overview_bricks>` und
+:ref:`Bricklets <product_overview_bricklets>` sind bereits vorhanden.
 Folgende Module können direkt befestigt werden:
 
 :ref:`Analog In Bricklet <analog_in_bricklet>`,
@@ -62,7 +63,7 @@ Folgende Module können direkt befestigt werden:
 Motion Detector Bricklet (bald verfügbar)
 und Segment Display 4x7 Bricklet (bald verfügbar).
 
-Das Kit kann über alle verfügbaren Bindings (zur Zeit: |bindings|) erfolgen.
+Das Kit kann über alle verfügbaren Bindings (|bindings|) erfolgen.
 Beispiel Implementierungen und Anwendungen für die Benutzung mit
 `Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ und
 weitere werden nachfolgend zur Verfügung gestellt.
@@ -104,18 +105,17 @@ Dazu muss der :ref:`Brick Daemon <brickd_installation>` und
 der :ref:`Brick Viewer <brickv_installation>` installiert werden.
 
 Als nächstes sollte das PTC Bricklet konfiguriert und der 
-Temperatursensor (2-Draht) angeschlossen werden. Wie dies funktioniert
+Temperatursensor (2-Leiter) angeschlossen werden. Wie dies funktioniert
 ist :ref:`hier <ptc_bricklet_jumper_configuration>` und
 :ref:`hier <ptc_bricklet_connectivity>` dokumentiert.
 
-Anschließend wird die Ethernet Master Extension auf das Master Brick
-gesteckt und alle Bricklets angeschlossen. Das Master Brick wird per USB
-mit dem PC verbunden. Mit dem Brick Viewer können nun die Module getestet werden
-und deren Firmwares bestimmt werden (Updates / Flashing Knopf). Falls diese
-veraltet sind können
-:ref:`Bricks aktualisiert <brickv_flash_firmware>` und
-:ref:`Bricklets aktualisiert<brickv_flash_plugin>` mit dem Brick Viewer 
-aktualisiert werden:
+Anschließend wird die Ethernet Extension auf den Master Brick
+gesteckt und alle Bricklets angeschlossen. Der Master Brick wird per USB
+mit dem PC verbunden. Mit dem Brick Viewer können nun die Module getestet.
+Anschließend kann über den Brick Viewer bestimmt werden, ob alle 
+Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
+(:ref:`Bricks aktualisieren <brickv_flash_firmware>`,
+:ref:`Bricklets aktualisieren <brickv_flash_plugin>`):
 
 .. image:: /Images/Kits/server_room_monitoring_update_350.jpg
    :scale: 100 %
@@ -126,7 +126,7 @@ aktualisiert werden:
 Im nächsten Schritt sollte jedes Modul überprüft werden. Im Brick Viewer besitzt
 jedes Modul einen Reiter über dem eine modulspezifische Ansicht geöffnet werden
 kann. Zeigen alle Ansichten sinnvolle Werte, funktioniert alles wie erwartet.
-Als nächstes sollte die Ethernet Master Extension konfiguriert werden. 
+Als nächstes sollte die Ethernet Extension konfiguriert werden. 
 In den folgenden Beispielen ist diese auf den Hostnamen
 "ServerMonitoring" und DHCP konfiguriert. Zur Konfiguration muss der Master 
 Brick Reiter geöffnet werden. Die weitere Konfiguration ist 
@@ -157,8 +157,8 @@ Es gibt verschiedene Anwendungen für das Starterkit: Serverraum-Überwachung.
 Nachfolgend werden Beispiele präsentiert, die als Startpunkt für eigene Projekte
 dienen können.
 
-Simple Monitoring
-^^^^^^^^^^^^^^^^^
+Einfaches Monitoring
+^^^^^^^^^^^^^^^^^^^^
 
 In diesem Beispiel werden die :ref:`Shell Bindings <api_bindings_shell>` genutzt
 um die Sensoren des Kits auszulesen.

@@ -136,7 +136,7 @@ richtig als serielle Schnittstelle erkannt.
  zu installieren, damit ein Brick im Bootloader Modus richtig funktioniert.
 
 .. note::
- Mac OS X kann einen Brick im Bootloader Modus as DVB-T Stick erkennen und
+ Mac OS X kann einen Brick im Bootloader Modus als DVB-T Stick erkennen und
  automatisch EyeTV oder ein ähnliches Programm starten. Einfach EyeTV schließen
  und mit dem Flash-Vorgang fortfahren.
 
