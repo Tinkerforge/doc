@@ -9,6 +9,8 @@
 Starterkit: Serverraum-Überwachung
 ==================================
 
+.. raw:: html
+
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Kits/server_room_monitoring_back_350.jpg",
