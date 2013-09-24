@@ -64,7 +64,7 @@ Features
 * Expandable: Simply add extra Sensors and I/O moduls as needed
 * API for many programming languages: |bindings|
 * Open Source Soft- and Hardware
-* Nagios and Icinga directly Supported
+* `Nagios <http://www.nagios.org/>`__ and `Icinga <https://www.icinga.org/>`__ supported
 
 Description
 -----------

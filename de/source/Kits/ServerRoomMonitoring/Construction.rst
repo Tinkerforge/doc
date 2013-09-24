@@ -120,7 +120,7 @@ Es ist einfacher wenn hier vor dem aufschrauben die 15cm Bricklet Kabel
 an die Bricklets angeschlossen werden.
 
 Vor der ersten Benutzung muss das PTC Bricklet konfiguriert werden und der 
-Temperatursensor (2-Leiter) angeschlossen werden. Wie dies funktioniert ist
+Temperaturfühler (2-Leiter) angeschlossen werden. Wie dies funktioniert ist
 :ref:`hier <ptc_bricklet_jumper_configuration>` und
 :ref:`hier <ptc_bricklet_connectivity>` dokumentiert.
 

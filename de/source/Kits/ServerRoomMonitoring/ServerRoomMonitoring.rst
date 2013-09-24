@@ -63,7 +63,7 @@ Features
 * Erweiterbar: Falls nötig können Sensoren und Ein-/Ausgabe Module einfach hinzugesteckt werden
 * API für viele Programmiersprachen: |bindings|
 * Open Source Soft- und Hardware
-* Nagios und Icinga Unterstützung
+* `Nagios <http://www.nagios.org/>`__ und `Icinga <https://www.icinga.org/>`__ Unterstützung
 
 Beschreibung
 ------------
@@ -73,7 +73,7 @@ Serverraum Installationen zu überwachen. Das Basiskit ist mit folgenden Sensore
 ausgestattet: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
 (überwacht z.B. die Raumbeleuchtung),
 :ref:`Temperature Bricklet <temperature_bricklet>` (überwacht die Temperatur im
-Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit Pt100 Temperatursensor
+Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit Pt100 Temperaturfühler
 (z.B. zum Überwachen der Temperatur in einem Server). Ein
 :ref:`Master Brick <master_brick>` und eine :ref:`Ethernet Extension
 <ethernet_extension>`, mit `Power over Ethernet (PoE)
@@ -150,7 +150,7 @@ Dazu muss der :ref:`Brick Daemon <brickd_installation>` und
 der :ref:`Brick Viewer <brickv_installation>` installiert werden.
 
 Als nächstes sollte das PTC Bricklet konfiguriert und der 
-Temperatursensor (2-Leiter) angeschlossen werden. Wie dies funktioniert
+Temperaturfühler (2-Leiter) angeschlossen werden. Wie dies funktioniert
 ist :ref:`hier <ptc_bricklet_jumper_configuration>` und
 :ref:`hier <ptc_bricklet_connectivity>` dokumentiert.
 
