@@ -403,14 +403,14 @@ download_tools_source_code = {
 download_tools_table_head = {
 'en':
 """.. csv-table::
- :header: "Tool", "Current Version", "Changelog"
+ :header: "Tool", "Current Version (Download)", "Changelog"
  :delim: |
  :widths: 15, 40, 8
 
 """,
 'de':
 """.. csv-table::
- :header: "Tool", "Aktuelle Version", "Changelog"
+ :header: "Tool", "Aktuelle Version (Download)", "Changelog"
  :delim: |
  :widths: 15, 40, 8
 
@@ -420,14 +420,14 @@ download_tools_table_head = {
 download_bindings_table_head = {
 'en':
 """.. csv-table::
- :header: "Language", "Current Version", "Changelog"
+ :header: "Language", "Current Version (Download)", "Changelog"
  :delim: |
  :widths: 15, 40, 8
 
 """,
 'de':
 """.. csv-table::
- :header: "Sprache", "Aktuelle Version", "Changelog"
+ :header: "Sprache", "Aktuelle Version (Download)", "Changelog"
  :delim: |
  :widths: 15, 40, 8
 
@@ -437,7 +437,7 @@ download_bindings_table_head = {
 download_firmwares_table_head = {
 'en':
 """.. csv-table::
- :header: "", "Current Version", "Changelog"
+ :header: "", "Current Version (Download)", "Changelog"
  :delim: |
  :widths: 15, 40, 8
 
@@ -448,7 +448,7 @@ download_firmwares_table_head = {
  {1}""",
 'de':
 """.. csv-table::
- :header: "", "Aktuelle Version", "Changelog"
+ :header: "", "Aktuelle Version (Download)", "Changelog"
  :delim: |
  :widths: 15, 40, 8
 
