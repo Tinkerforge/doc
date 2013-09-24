@@ -9,6 +9,49 @@
 Starterkit: Serverraum-Überwachung
 ==================================
 
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Kits/server_room_monitoring_back_350.jpg",
+	               "Kits/server_room_monitoring_back_800.jpg",
+	               "Serverraum-Überwachungskit: Rückseite")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_in_rack3_100.jpg",
+	             "Kits/server_room_monitoring_in_rack3_800.jpg",
+	             "Serverraum-Überwachungskit: Im Serverrack")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_front_100.jpg",
+	             "Kits/server_room_monitoring_front_800.jpg",
+	             "Serverraum-Überwachungskit: Vorderseite")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_content_100.jpg",
+	             "Kits/server_room_monitoring_content_800.jpg",
+	             "Serverraum-Überwachungskit: Inhalt")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_extended_100.jpg",
+	             "Kits/server_room_monitoring_extended_800.jpg",
+	             "Serverraum-Überwachungskit: Erweiterte Version")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_iqr_100.jpg",
+	             "Kits/server_room_monitoring_iqr_800.jpg",
+	             "Serverraum-Überwachungskit: An/Aus-Schalter")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_in_rack1_100.jpg",
+	             "Kits/server_room_monitoring_in_rack1_800.jpg",
+	             "Serverraum-Überwachungskit: Im Serverrack")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_in_rack2_100.jpg",
+	             "Kits/server_room_monitoring_in_rack2_800.jpg",
+	             "Serverraum-Überwachungskit: Im Serverrack")
+	}}
+	{{ tfdocend() }}
+
 Features
 --------
 
@@ -307,7 +350,11 @@ Die vollständige Projektbeschreibung kann
 :ref:`hier <starter_kit_server_room_monitoring_extended_nagios>` gefunden 
 werden.
 
-TODO: Image kit + motion + 4x7
+.. image:: /Images/Kits/server_room_monitoring_extended_350.jpg
+   :scale: 100 %
+   :alt: Erweiterte Version des Kits
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_extended_1000.jpg
 
 .. toctree::
    :hidden:
@@ -326,4 +373,8 @@ werden kann, kann im
 :ref:`Hardware Hacking für Anfänger Tutorial <starter_kit_hardware_hacking_for_beginners>`
 gefunden werden.
 
-TODO: Image
+.. image:: /Images/Kits/server_room_monitoring_iqr_350.jpg
+   :scale: 100 %
+   :alt: Kit Mit Industrial Quad Relay Bricklet
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_iqr_1000.jpg

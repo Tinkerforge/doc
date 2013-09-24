@@ -147,4 +147,8 @@ That's it! The finished work should look as the following:
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step9.png
 
-TODO: Photo of Kit with cables.
+.. image:: /Images/Kits/server_room_monitoring_cabling_600.jpg
+   :scale: 100 %
+   :alt: Server Room Monitoring Kit: Cabling
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_cabling_1000.jpg
