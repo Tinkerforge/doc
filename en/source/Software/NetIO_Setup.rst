@@ -68,7 +68,7 @@ Listen Command
 ^^^^^^^^^^^^^^
 
 The text protocol proxy is started by the :sh:func:`listen <tinkerforge listen>`
-command:
+command of the Shell bindings:
 
 .. code-block:: bash
 

@@ -66,7 +66,7 @@ Listen Befehl
 ^^^^^^^^^^^^^
 
 Der Text Protokoll Proxy wird über den :sh:func:`listen <tinkerforge listen>`
-Befehl gestartet:
+Befehl der Shell Bindings gestartet:
 
 .. code-block:: bash
 
