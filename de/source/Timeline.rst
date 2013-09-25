@@ -49,3 +49,5 @@ Historie
    "",     "27", "`Industrial Dual 0-20mA und PTC Bricklet <http://www.tinkerforge.com/de/blog/2013/7/4/industrial-dual-0-20ma-und-ptc-bricklet>`__"
    "",     "29", "`Starterkit: Hardware Hacking <http://www.tinkerforge.com/de/blog/2013/7/16/starter-kit:-hardware-hacking>`__"
    "",     "33", "`Shell Bindings <http://www.tinkerforge.com/de/blog/2013/8/14/shell-bindings-fertig>`__"
+   "",     "37", "`NetIO Support für Shell Bindings <http://www.tinkerforge.com/de/blog/2013/9/11/tinkerforge-+-netio>`__"
+   "",     "39", "`Starterkit: Serverraum-Überwachung <http://www.tinkerforge.com/de/blog/2013/9/24/starterkit:-serverraum-ueberwachung>`__"
