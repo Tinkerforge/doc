@@ -65,12 +65,14 @@ Für einen einfachen Einstieg bieten wir Kits in verschiedenen Themenbereichen a
 
 * :ref:`starter_kit_weather_station`
 * :ref:`starter_kit_hardware_hacking`
+* :ref:`starter_kit_server_room_monitoring`
 
 .. toctree::
    :hidden:
 
    Kits/WeatherStation/WeatherStation
    Kits/HardwareHacking/HardwareHacking
+   Kits/ServerRoomMonitoring/ServerRoomMonitoring
 
 
 .. _index_software:
