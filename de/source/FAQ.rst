@@ -98,6 +98,14 @@ auftreten, siehe :ref:`oben <faq_brick_hot>`.
 Unter älteren Windows Versionen ist eine Treiberinstallation notwendig.
 Siehe :ref:`hier <brickd_install_windows_driver>`.
 
+**Renesas/NEC USB 3.0 Controller mit altem Treiber**:
+
+Falls der Brick an einem Renesas/NEC USB 3.0 Controller (µPD720200)
+angeschlossen ist, dann muss mindestens Treiberversion 2.1.16 für diesen
+Controller installiert sein. Ältere Treiberversionen haben einen Bug, der
+brickd daran hindert Bricks zu sehen, die an einen solchen USB Controller
+angeschlossen sind.
+
 
 Eine Extension wird im Brick Viewer nicht angezeigt
 ---------------------------------------------------

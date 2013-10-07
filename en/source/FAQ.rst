@@ -90,6 +90,13 @@ connector. See :ref:`above <faq_brick_hot>`.
 Bricks need a driver installation on older Windows versions
 to work properly. Please see :ref:`here <brickd_install_windows_driver>`.
 
+**Renesas/NEC USB 3.0 controller with old driver**:
+
+If your Brick is connected to a Renesas/NEC USB 3.0 controller (µPD720200)
+ensure that you have at least driver version 2.1.16 installed for this
+controller. Older driver versions have a bug that hinders brickd from seeing
+Bricks connected to such an USB controller.
+
 
 An Extension does not show up in the Brick Viewer
 -------------------------------------------------
