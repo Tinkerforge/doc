@@ -6,7 +6,7 @@
 PHP - API Bindings
 ==================
 
-**Requirements**: PHP 5.3 or newer with bcmath extension
+**Requirements**: PHP 5.3 or newer with ``bcmath`` and ``sockets`` extension
 
 The PHP bindings (:ref:`download <downloads_bindings_examples>`) consist of a
 PEAR package with the bindings for all
