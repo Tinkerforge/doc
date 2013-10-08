@@ -55,12 +55,13 @@ Motion Detector Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Erkennt Bewegungen in einer Distanz von bis zu 7m (konfigurierbar)
+* Hoher Erfassungswinkel (100°)
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

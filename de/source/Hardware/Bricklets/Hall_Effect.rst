@@ -55,12 +55,14 @@ Hall Effect Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Detektiert Präsenz eines Magnetfelds
+* Zählt Vorkommnisse eines Magnetfelds
+* Kann genutzt werden um Wasser-/Stromzähler auszulesen
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

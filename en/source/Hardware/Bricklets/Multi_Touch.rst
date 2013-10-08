@@ -55,12 +55,15 @@ Multi Touch Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Detects touch of finger at 12 different locations
+* Touch can be detected through a small layer of glass/plastic/paper
+* Size and placement of touch area can be user defined
+* Can be used to build custom touch panel
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

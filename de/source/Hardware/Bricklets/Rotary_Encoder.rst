@@ -55,12 +55,13 @@ Rotary Encoder Bricklet
 Features
 --------
 
-* Work In Progress
-
+* 360° Drehencoder
+* Zählt 24 Schritte pro Umdrehung (Schrittwinkel 15°)
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

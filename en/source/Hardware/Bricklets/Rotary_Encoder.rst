@@ -55,12 +55,13 @@ Rotary Encoder Bricklet
 Features
 --------
 
-* Work In Progress
-
+* 360° rotary encoder
+* Counts 24 steps per rotation (step angle 15°)
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

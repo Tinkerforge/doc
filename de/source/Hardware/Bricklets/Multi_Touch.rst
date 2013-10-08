@@ -55,12 +55,15 @@ Multi Touch Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Erkennt Berührung von Finger an 12 unterschiedlichen Positionen
+* Berührung kann durch eine schmale Schicht Glas/Plastik/Papier erkannt werden
+* Größe und Positionierung der Berührungsfläche wird vom Nutzer festgelegt
+* Kann genutzt werden um ein maßgeschneidertes Touchpanel zu bauen
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

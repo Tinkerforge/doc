@@ -55,12 +55,14 @@ LED Strip Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Schaltet bis zu 960 LEDs (320 RGB LEDs)
+* Alle LEDs können unabhängig voneinander geschaltet werden
+* Aktualisierungsrate von bis zu 100Hz für jede LED möglich
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

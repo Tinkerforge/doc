@@ -55,12 +55,14 @@ Segment Display 4x7 Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Vier 7-Segment Anzeigen
+* Schaltbarer Doppelpunkt
+* Helligkeit von Segmenten konfigurierbar.
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

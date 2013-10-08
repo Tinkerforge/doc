@@ -55,12 +55,13 @@ Distance US Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Misst Entfernungen von 2cm bis 400cm mit Ultraschall
+* Ausgabe in 1mm Schritten (12Bit Auflösung)
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

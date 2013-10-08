@@ -55,12 +55,13 @@ Piezo Speaker Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Erzeugt Piepton mit konfigurierbarer Frequenz von 585Hz bis 7100Hz
+* Konfigurierbare Piepdauer
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

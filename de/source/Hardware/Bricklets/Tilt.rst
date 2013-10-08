@@ -55,12 +55,13 @@ Tilt Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Erkennt Neigung des Bricklets (Neigungsschalter offen/geschlossen)
+* Erkennt ob Bricklet vibriert.
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

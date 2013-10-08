@@ -55,12 +55,13 @@ Tilt Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Detects inclination of Bricklet (tilt switch open/closed)
+* Detects if Bricklet is vibrating
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

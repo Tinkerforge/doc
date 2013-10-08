@@ -55,12 +55,13 @@ Motion Detector Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Detects motion in distances of up to 7m (configurable)
+* High sensing angle (100°)
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

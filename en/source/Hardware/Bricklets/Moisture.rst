@@ -55,12 +55,13 @@ Moisture Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Measures moisture
+* 12 bit resolution
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

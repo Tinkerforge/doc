@@ -55,12 +55,13 @@ Piezo Speaker Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Creates beep with configurable frequency of 585Hz to 7100Hz
+* Configurable beep duration
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

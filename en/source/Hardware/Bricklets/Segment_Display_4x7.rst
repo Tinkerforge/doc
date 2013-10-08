@@ -55,12 +55,14 @@ Segment Display 4x7 Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Four 7-segment displays
+* Switchable colon
+* Brightness of segments configurable
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

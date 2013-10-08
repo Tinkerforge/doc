@@ -55,12 +55,13 @@ Dual Button Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Zwei Taster mit eingebauter LED
+* Auto-Toggle von LED möglich
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

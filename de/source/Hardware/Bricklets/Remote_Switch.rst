@@ -55,12 +55,13 @@ Remote Switch Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Steuert Funksteckdosen (`Unterstützte Steckdosen <TODO>`__)
+* Kann Funksteckdosen mit Dimmfunktion steuern
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

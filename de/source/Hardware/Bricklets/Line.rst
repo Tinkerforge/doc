@@ -55,12 +55,14 @@ Line Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Misst die Reflektivität einer Fläche
+* Kann genutzt werden um Linen zu erkennen/zu folgen
+* Kann genutzt werden um Entfernungen von ~0-10mm zu messen
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

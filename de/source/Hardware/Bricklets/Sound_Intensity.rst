@@ -55,12 +55,13 @@ Sound Intensity Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Misst Schallintensität
+* 12 Bit Auflösung
 
 Beschreibung
 ------------
 
+* Work In Progress
 
 Technische Spezifikation
 ------------------------

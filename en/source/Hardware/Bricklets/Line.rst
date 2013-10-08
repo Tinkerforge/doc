@@ -55,12 +55,14 @@ Line Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Measures the reflectivity of a surface
+* Can be used to detect/follow lines
+* Can be used to measure distances of ~0-10mm
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

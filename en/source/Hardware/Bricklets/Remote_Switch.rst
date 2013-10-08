@@ -55,12 +55,13 @@ Remote Switch Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Controls remote mains switches (`supported devices <TODO>`__)
+* Can control remote mains switches with dimming function
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

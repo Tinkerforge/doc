@@ -55,12 +55,13 @@ Distance US Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Measures distances from 2cm to 400cm with ultrasound
+* Output in 1mm steps (12bit resolution)
 
 Description
 -----------
 
+* Work In Progress
 
 Technical Specifications
 ------------------------

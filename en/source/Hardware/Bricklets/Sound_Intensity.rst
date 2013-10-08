@@ -55,11 +55,12 @@ Sound Intensity Bricklet
 Features
 --------
 
-* Work In Progress
-
+* Measures sound intensity
+* 12 bit resolution
 
 Description
 -----------
+
 
 
 Technical Specifications
