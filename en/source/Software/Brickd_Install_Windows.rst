@@ -6,6 +6,8 @@
 Brick Daemon Installation on Windows
 ====================================
 
+**Requirements**: Windows XP or newer
+
 The :ref:`Brick Daemon <brickd>` can be installed from a setup ``.exe`` file.
 
 
