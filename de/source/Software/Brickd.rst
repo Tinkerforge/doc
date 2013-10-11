@@ -39,7 +39,9 @@ Logging
 Standardmäßig loggt Brick Daemon Nachrichten über Informationen, Warnungen und
 Fehler.
 
-* Windows: Nachrichten werden im Windows Event Log angezeigt.
+* Windows: Nachrichten werden im Windows Event Log angezeigt. Das
+  ``eventlog.exe`` Tool (Teil der brickd Installation) zeigt die brickd
+  Meldungen im Windows Event Log an.
 * Linux und Mac OS X: Nachrichten werden nach ``/var/log/brickd.log`` geschrieben.
 
 
