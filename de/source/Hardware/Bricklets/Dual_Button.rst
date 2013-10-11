@@ -61,7 +61,15 @@ Features
 Beschreibung
 ------------
 
-* Work In Progress
+Das Dual Button Bricklet ist mit zwei Drucktastern ausgestattet. Beide
+Taster haben eine eingebaute blaue LED. Der aktuelle Wert der Tater
+(gedrückt/nicht gedrückt) und der LEDs (an/aus) kann jederzeit ausgelesen
+werden. Es ist möglich die LEDs selbst an/aus zu schalten sowie
+Auto-Toggle zu aktivieren. Im Auto-Toggle Modus werden die LEDs
+automatisch bei jedem Tastendruck umgeschaltet.
+
+Es ist auch möglich Events zu nutzen. Dadurch ist es möglich auf einen
+Tastendruck zu reagieren ohne zu pollen.
 
 Technische Spezifikation
 ------------------------
@@ -104,7 +112,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_dual_button_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert können nun Tastendrücke beobachtet 
+werden sowie die Zustände der LEDs verändert werden.
 
 .. FIXME image:: /Images/Bricklets/bricklet_dual_button_brickv.jpg
    :scale: 100 %
@@ -113,31 +122,6 @@ Wenn alles wie erwartet funktioniert wird ... FIXME.
    :target: ../../_images/Bricklets/bricklet_dual_button_brickv.jpg
 
 |test_pi_ref|
-
-.. _dual_button_bricklet_case:
-
-Gehäuse
--------
-
-Ein `laser-geschnittenes Gehäuse für das Dual Button Bricklet <https://www.tinkerforge.com/de/shop/cases/case-dual-button-bricklet.html>`__ ist verfügbar.
-
-.. FIXME image:: /Images/Cases/bricklet_dual_button_case_built_up_350.jpg
-   :scale: 100 %
-   :alt: Gehäuse für Dual Button Bricklet
-   :align: center
-   :target: ../../_images/Cases/bricklet_dual_button_case_built_up_1000.jpg
-
-.. include:: Dual_Button.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
-
-.. FIXME image:: /Images/Exploded/dual_button_exploded_350.png
-   :scale: 100 %
-   :alt: Explosionszeichnung für Dual Button Bricklet
-   :align: center
-   :target: ../../_images/Exploded/dual_button_exploded.png
-
-|bricklet_case_hint|
 
 
 .. _dual_button_bricklet_programming_interfaces:

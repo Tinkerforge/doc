@@ -58,11 +58,17 @@ Features
 * Two tactile Buttons with built-in LED
 * LED auto-toggle possible
 
-
 Description
 -----------
 
-* Work In Progress
+The Dual Button Bricklet is equipped with two buttons. Both buttons have a
+built-in blue LED. You can read the current value of the button 
+(pressed/released) and of the LED (on/off). You can turn the LED on/off
+yourself or enable auto-toggle. In auto-toggle mode the LEDs are toggled
+between on/off with each button press.
+
+It is also possible to use events. This allows to react to button presses
+without polling.
 
 Technical Specifications
 ------------------------
@@ -105,7 +111,8 @@ Test your Dual Button Bricklet
    :target: ../../_images/Bricklets/bricklet_dual_button_master_1200.jpg
 
 |test_tab|
-If everything went as expected you can now ... FIXME.
+If everything went as expected you can now see button presses and
+change the state of the LED.
 
 .. FIXME image:: /Images/Bricklets/bricklet_dual_button_brickv.jpg
    :scale: 100 %
@@ -114,31 +121,6 @@ If everything went as expected you can now ... FIXME.
    :target: ../../_images/Bricklets/bricklet_dual_button_brickv.jpg
 
 |test_pi_ref|
-
-.. _dual_button_bricklet_case:
-
-Case
-----
-
-A `laser-cut case for the Dual Button Bricklet <https://www.tinkerforge.com/en/shop/cases/case-dual-button-bricklet.html>`__ is available.
-
-.. FIXME image:: /Images/Cases/bricklet_dual_button_case_built_up_350.jpg
-   :scale: 100 %
-   :alt: Case for Dual Button Bricklet
-   :align: center
-   :target: ../../_images/Cases/bricklet_dual_button_case_built_up_1000.jpg
-
-.. include:: Dual_Button.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
-
-.. FIXME image:: /Images/Exploded/dual_button_exploded_350.png
-   :scale: 100 %
-   :alt: Exploded assembly drawing for Dual Button Bricklet
-   :align: center
-   :target: ../../_images/Exploded/dual_button_exploded.png
-
-|bricklet_case_hint|
 
 
 .. _dual_button_bricklet_programming_interfaces:
