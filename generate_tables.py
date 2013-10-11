@@ -599,97 +599,51 @@ def fill_dicts():
     for accessory in accessories:
         accessory[3] = accessory_descriptions[accessory[1]][lang]
 
-def get_body(url):
+LATEST_VERSIONS_URL = 'http://download.tinkerforge.com/latest_versions.txt'
+
+tool_versions = {}
+bindings_versions = {}
+firmware_versions = {}
+plugin_versions = {}
+
+def get_latest_version_info():
+    print 'Discovering latest versions on tinkerforge.com'
+
     try:
-        response = urllib2.urlopen(url)
-        data = response.read().replace('<hr>', '').replace('<br>', '')
-        response.close()
-        tree = etreefromstring(data)
-        return tree.find('body')
-    except Exception as e:
-        print 'Could not download {0}: {1}'.format(url, e)
-        return None
+        response = urllib2.urlopen(LATEST_VERSIONS_URL)
+        latest_versions_data = response.read()
+    except urllib2.URLError:
+        raise Exception('Latest version information on tinkerforge.com is not available (error code 1)')
 
-def get_tool_versions(url, regex):
-    print 'Discovering ' + url
-    body = get_body(url)
-    versions = []
+    for line in latest_versions_data.split('\n'):
+        line = line.strip()
 
-    if body is None:
-        return versions
-
-    for a in body.getiterator('a'):
-        if 'href' not in a.attrib:
+        if len(line) < 1:
             continue
 
-        url_part = a.attrib['href'].replace('/', '')
+        parts = line.split(':')
 
-        if url_part == '..':
-            continue
+        if len(parts) != 3:
+            raise Exception('Latest version information on tinkerforge.com is malformed (error code 2)')
 
-        m = re.match(regex, url_part)
+        latest_version_parts = parts[2].split('.')
 
-        if m is None:
-            continue
+        if len(latest_version_parts) != 3:
+            raise Exception('Latest version information on tinkerforge.com is malformed (error code 3)')
 
-        versions.append((int(m.group(1)), int(m.group(2)), int(m.group(3))))
+        try:
+            latest_version = int(latest_version_parts[0]), int(latest_version_parts[1]), int(latest_version_parts[2])
+        except:
+            raise Exception('Latest version information on tinkerforge.com is malformed (error code 4)')
 
-    return sorted(versions)
-
-def get_bindings_versions(url, name):
-    print 'Discovering ' + url
-    body = get_body(url)
-    versions = []
-
-    if body is None:
-        return versions
-
-    for a in body.getiterator('a'):
-        if 'href' not in a.attrib:
-            continue
-
-        url_part = a.attrib['href'].replace('/', '')
-
-        if url_part == '..':
-            continue
-
-        m = re.match('tinkerforge_{0}_bindings_(\d+)_(\d+)_(\d+)\.zip'.format(name), url_part)
-
-        if m is None:
-            continue
-
-        versions.append((int(m.group(1)), int(m.group(2)), int(m.group(3))))
-
-    return sorted(versions)
-
-def get_firmware_versions(url, prefix):
-    print 'Discovering ' + url
-    body = get_body(url)
-    versions = []
-
-    if body is None:
-        return versions
-
-    if body != None:
-        for a in body.getiterator('a'):
-            if 'href' not in a.attrib:
-                continue
-
-            url_part = a.attrib['href'].replace('/', '')
-
-            if url_part == '..':
-                continue
-
-            m = re.match(prefix + '_firmware_(\d+)_(\d+)_(\d+)\.bin', url_part)
-
-            if m is None:
-                continue
-
-            versions.append((int(m.group(1)), int(m.group(2)), int(m.group(3))))
-
-        return sorted(versions)
-
-    return []
+        if parts[0] == 'tools':
+            tool_versions[parts[1]] = latest_version
+        elif parts[0] == 'bindings':
+            bindings_versions[parts[1]] = latest_version
+        elif parts[0] == 'bricks':
+            firmware_versions[parts[1]] = latest_version
+        elif parts[0] == 'bricklets':
+            plugin_versions[parts[1]] = latest_version
 
 def make_product_overview_table(devices, category, add_category_to_name=True):
     table_head = product_overview_table_head[lang]
@@ -719,26 +673,10 @@ def make_download_tools_table():
     for tool in tools:
         if tool[1] == 'brickd':
             row_cell = row_multi_cell
-            linux_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/linux/'.format(tool[1]), '{0}-(\d+).(\d+).(\d+)_amd64.deb'.format(tool[1]))
         else:
             row_cell = row_all_cell
-            linux_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/linux/'.format(tool[1]), '{0}-(\d+).(\d+).(\d+)_all.deb'.format(tool[1]))
-        macos_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/macos/'.format(tool[1]), '{0}_macos_(\d+)_(\d+)_(\d+).dmg'.format(tool[1]))
-        windows_versions = get_tool_versions('http://download.tinkerforge.com/tools/{0}/windows/'.format(tool[1]), '{0}_windows_(\d+)_(\d+)_(\d+).exe'.format(tool[1]))
 
-        if len(linux_versions) == 0:
-            raise RuntimeError('Could not find Linux versions of {0}'.format(tool[0]))
-
-        if len(macos_versions) == 0:
-            raise RuntimeError('Could not find Mac OS X versions of {0}'.format(tool[0]))
-
-        if len(windows_versions) == 0:
-            raise RuntimeError('Could not find Windows versions of {0}'.format(tool[0]))
-
-        if len(set([linux_versions[-1], macos_versions[-1], windows_versions[-1]])) != 1:
-            raise RuntimeError('Cross-platform version mismatch for {0}'.format(tool[0]))
-
-        rows.append(row_cell.format(tool[0], tool[1], source_code, *linux_versions[-1]))
+        rows.append(row_cell.format(tool[0], tool[1], source_code, *tool_versions[tool[1]]))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -749,12 +687,7 @@ def make_download_bindings_table():
 
     for binding in bindings:
         if binding[2]:
-            versions = get_bindings_versions('http://download.tinkerforge.com/bindings/{0}/'.format(binding[1]), binding[1])
-
-            if len(versions) == 0:
-                print('Could not find versions of the {0} bindings'.format(binding[0]))
-            else:
-                rows.append(row_cell.format(binding[0], binding[1], binding[3], *versions[-1]))
+            rows.append(row_cell.format(binding[0], binding[1], binding[3], *bindings_versions[binding[1]]))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -767,20 +700,10 @@ def make_download_firmwares_table():
 
     for brick in bricks:
         if len(brick[2]) > 0 and brick[4]:
-            versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricks/{0}/'.format(brick[1]), 'brick_' + brick[1])
-
-            if len(versions) < 1:
-                print('Could not find versions of the {0} Brick firmware'.format(brick[0]))
-            else:
-                brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), *versions[-1]))
+            brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), *firmware_versions[brick[1]]))
 
     def handle_bricklet(name, common_url_part, plugin_url_part):
-        versions = get_firmware_versions('http://download.tinkerforge.com/firmwares/bricklets/{0}/'.format(plugin_url_part), 'bricklet_' + plugin_url_part)
-
-        if len(versions) < 1:
-            print('Could not find versions of the {0} Bricklet firmware'.format(name))
-        else:
-            bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, *versions[-1]))
+        bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, *plugin_versions[plugin_url_part]))
 
     for bricklet in bricklets:
         if len(bricklet[2]) > 0 and bricklet[4]:
@@ -982,6 +905,7 @@ def generate(path):
         sys.exit(1)
 
     fill_dicts()
+    get_latest_version_info()
 
     print('Generating index_links.table')
     write_if_changed(os.path.join(path, 'source', 'index_links.table'), make_index_table())
