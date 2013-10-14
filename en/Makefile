@@ -62,6 +62,8 @@ html: generate
 	@echo
 	sed -e "s|'doc'|'downloads'|" $(BUILDDIR)/html/Downloads.html > $(BUILDDIR)/html/Downloads.htmltmp
 	mv $(BUILDDIR)/html/Downloads.htmltmp $(BUILDDIR)/html/Downloads.html
+	sed -e "s|'doc'|'partners'|" $(BUILDDIR)/html/Partners.html > $(BUILDDIR)/html/Partners.htmltmp
+	mv $(BUILDDIR)/html/Partners.htmltmp $(BUILDDIR)/html/Partners.html
 	mkdir -p build/
 	cp -r $(BUILDDIR)/* build/
 
@@ -88,6 +90,8 @@ fasthtml:
 	@echo
 	sed -e "s|'doc'|'downloads'|" $(FASTBUILDDIR)/html/Downloads.html > $(FASTBUILDDIR)/html/Downloads.htmltmp
 	mv $(FASTBUILDDIR)/html/Downloads.htmltmp $(FASTBUILDDIR)/html/Downloads.html
+	sed -e "s|'doc'|'partners'|" $(FASTBUILDDIR)/html/Partners.html > $(FASTBUILDDIR)/html/Partners.htmltmp
+	mv $(FASTBUILDDIR)/html/Partners.htmltmp $(FASTBUILDDIR)/html/Partners.html
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
