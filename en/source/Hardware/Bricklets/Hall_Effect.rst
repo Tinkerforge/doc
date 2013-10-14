@@ -62,7 +62,14 @@ Features
 Description
 -----------
 
-* Work In Progress
+The Hall Effect Bricklet can detect the presence of magnetic fields.
+It counts the appearances of magnetic fields and can thus be used to
+measure the speed of a wheel.
+
+Example applications are:
+
+* Detection if a door is closed
+* Reading out water/electricity meters
 
 Technical Specifications
 ------------------------
@@ -104,7 +111,8 @@ Test your Hall Effect Bricklet
    :target: ../../_images/Bricklets/bricklet_hall_effect_master_1200.jpg
 
 |test_tab|
-If everything went as expected you can now ... FIXME.
+If everything went as expected you can now see the detection of a
+magnetic field.
 
 .. FIXME image:: /Images/Bricklets/bricklet_hall_effect_brickv.jpg
    :scale: 100 %
