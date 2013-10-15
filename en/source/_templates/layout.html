@@ -26,6 +26,7 @@
 {% raw %}
 <script type="text/javascript" src="{{ url_for('static', filename='jquery.lightbox-0.5.js', _external=True) }}"></script>
 <script type="text/javascript">$(function() { $('#gallery a').lightBox(); });</script>
+<script type="text/javascript">$(function() { $(".sphinxsidebarwrapper").filter(function() { return $.trim($(this).text()).length == 0; }).parent().hide(); });</script>
 {% endraw %}
 {% endblock %}
 
