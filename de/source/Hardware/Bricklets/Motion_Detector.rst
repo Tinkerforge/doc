@@ -110,7 +110,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_motion_detector_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert wird nun eine erkannte Bewegung
+angezeigt.
 
 .. FIXME image:: /Images/Bricklets/bricklet_motion_detector_brickv.jpg
    :scale: 100 %

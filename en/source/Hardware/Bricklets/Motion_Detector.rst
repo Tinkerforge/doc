@@ -109,7 +109,7 @@ Test your Motion Detector Bricklet
    :target: ../../_images/Bricklets/bricklet_motion_detector_master_1200.jpg
 
 |test_tab|
-If everything went as expected you can now ... FIXME.
+If everything went as expected you can now see when a motion is detected.
 
 .. FIXME image:: /Images/Bricklets/bricklet_motion_detector_brickv.jpg
    :scale: 100 %
