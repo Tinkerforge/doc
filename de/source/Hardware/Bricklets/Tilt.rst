@@ -61,7 +61,11 @@ Features
 Beschreibung
 ------------
 
-* Work In Progress
+Das Tilt Bricklet ist mit einem Neigungsschalter ausgestattet. Es kann
+erkennen ob das Bricklet aktuell geneigt ist und ob es vibriert.
+
+Es ist möglich Events zu konfigurieren die automatisch ausgelöst werden 
+wenn sich der Status des Tilt Bricklets ändert.
 
 Technische Spezifikation
 ------------------------
@@ -98,7 +102,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_tilt_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert wird nun der aktuelle Status
+des Tilt Bricklet angezeigt.
 
 .. FIXME image:: /Images/Bricklets/bricklet_tilt_brickv.jpg
    :scale: 100 %
