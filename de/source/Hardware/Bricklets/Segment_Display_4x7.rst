@@ -62,7 +62,10 @@ Features
 Beschreibung
 ------------
 
-* Work In Progress
+Da Segment Display 4x7 kann genutzt werden um vier 7-Segment-Anzeigen zu
+und ein Doppelpunkt zu steuern. Jedes der 29 Segmente kann eingenständig
+geschaltet werden. Es ist zusätzlich möglich die Helligkeit der Segmente
+einzustellen.
 
 Technische Spezifikation
 ------------------------
@@ -104,7 +107,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_segment_display_4x7_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert wird können die einzelnen Segmente
+nun an-/ausgeschaltet werden.
 
 .. FIXME image:: /Images/Bricklets/bricklet_segment_display_4x7_brickv.jpg
    :scale: 100 %

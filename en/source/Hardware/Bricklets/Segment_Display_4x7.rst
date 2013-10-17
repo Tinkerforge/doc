@@ -62,7 +62,10 @@ Features
 Description
 -----------
 
-* Work In Progress
+The Segment Display 4x7 Bricklet can be used to control four 7-segment 
+displays and a colon. Each of the 29 segments can be controlled
+independently. It is also possible to configure the brightness of the
+segments.
 
 Technical Specifications
 ------------------------
@@ -104,7 +107,8 @@ Test your Segment Display 4x7 Bricklet
    :target: ../../_images/Bricklets/bricklet_segment_display_4x7_master_1200.jpg
 
 |test_tab|
-If everything went as expected you can now ... FIXME.
+If everything went as expected you can now activate/deactivate the
+individual segments.
 
 .. FIXME image:: /Images/Bricklets/bricklet_segment_display_4x7_brickv.jpg
    :scale: 100 %
