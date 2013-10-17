@@ -625,3 +625,23 @@ dl.member,
 dl.attribute {
   margin-top: 15px;
 }
+
+div.partnerlogo {
+	float: left;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+div.partnertext {
+	margin-left: 385px;
+}
+
+div.partnertext p.rubric {
+	border-bottom: 1px solid #00AAEA;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-left: 10px !important;
+	color: #565656;
+	font-size: 18px;
+	font-weight: normal;
+}
