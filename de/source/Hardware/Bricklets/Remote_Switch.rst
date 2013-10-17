@@ -55,27 +55,32 @@ Remote Switch Bricklet
 Features
 --------
 
-* Steuert Funksteckdosen (`Unterstützte Steckdosen <TODO>`__)
+* Steuert Funksteckdosen (:ref:`Unterstützte Steckdosen <remote_switch_supported_devices>`)
 * Kann Funksteckdosen mit Dimmfunktion steuern
 
 Beschreibung
 ------------
 
-* Work In Progress
+Das Remote Switch Bricklet ist mit einem 433MHz transmitter ausgestattet.
+Es kann genutzt werden um alle Funksteckdosen zu steuern die auf dem
+PT2262 oder HX2262 IC basieren.
+
+House Code und Receiver Code der zu schaltenden Steckdose können über die 
+API konfiguriert werden.
 
 Technische Spezifikation
 ------------------------
 
-================================  ============================================================
+================================  ===============================================================================================
 Eigenschaft                       Wert
-================================  ============================================================
+================================  ===============================================================================================
 Funkfrequenz                      433MHz
-Unterstütze Funksteckdosen        Alle basierend auf HX2262 (`komplette Liste <TODO>`__)
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
+Unterstütze Funksteckdosen        Alle basierend auf PT2262 und HX2262 (:ref:`komplette Liste <remote_switch_supported_devices>`)
+--------------------------------  -----------------------------------------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 40 x 5mm (0,98 x 1,58 x 0,2") ohne Antenne
 Gewicht                           7g
-================================  ============================================================
+================================  ===============================================================================================
 
 
 Ressourcen
@@ -84,6 +89,81 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/hardware/remote-switch-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/remote_switch_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)
+
+
+.. _remote_switch_supported_devices:
+
+Liste unterstützter Geräte
+--------------------------
+
+Die folgenden Geräte werden vom Remote Switch Bricklet unterstützt. Wenn du
+eine weitere kompatible Funksteckdosen findest, würden wir uns über eine
+Email freuen. Dann können wir die Liste erweitern und aktuell halten.
+
+=============== ====================================
+Property        Value
+=============== ====================================
+Manufacturer:   BAT
+Models:         * RC 3500-A
+                * RC AAA1000-A
+                * RC AAA3680-A
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   Brennstuhl
+Models:         * RC 2044 Indoor
+                * RC 2044 Outdoor
+                * RC 3600
+                * RCS 1000 N Comfort
+                * RCS 1044 N Comfort
+                * RCS 2044 N Comfort Indoor
+                * RCS 2044 N Comfort Outdoor
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   ELRO 
+Models:         * AB440D
+                * AB440ID
+                * AB440IS
+                * AB440L
+                * AB440S
+                * AB440W
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   Intertechno
+Models:         * CMR-300
+                * CMR-500
+                * CMR-1000
+                * CMR-1224
+                * GRR-300
+                * GRR-3500
+                * IT-1500
+                * IT-2300
+                * ITL-150
+                * ITL-210
+                * ITL-230
+                * ITL-250
+                * ITL-300
+                * ITL-500
+                * ITL-1000
+                * ITL-3500
+                * ITR-300
+                * ITR-1500
+                * ITR-3500
+                * ITR-7000
+                * ITDL-1000
+                * ITDR-3500
+                * ITDR-3500T
+                * LBUR-100
+                * PA3-1000
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   Mumbi
+Models:         * m-FS300
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   Vivanco
+Models:         * FSS 31000W
+                * FSS 33600W
+=============== ====================================
 
 
 .. _remote_switch_bricklet_test:
@@ -102,7 +182,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_remote_switch_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert können nun Funksteckdosen gesteuert 
+werden.
 
 .. FIXME image:: /Images/Bricklets/bricklet_remote_switch_brickv.jpg
    :scale: 100 %

@@ -55,27 +55,31 @@ Remote Switch Bricklet
 Features
 --------
 
-* Controls remote mains switches (`supported devices <TODO>`__)
+* Controls remote mains switches (:ref:`supported devices <remote_switch_supported_devices>`)
 * Can control remote mains switches with dimming function
 
 Description
 -----------
 
-* Work In Progress
+The Remote Switch Bricklet is equipped with a 433MHz rf transmitter. It can
+be used to control remote mains swichtes that are based on the PT2262 
+and HX2262 ICs.
+
+House code as well as receiver code can be configured with the API.
 
 Technical Specifications
 ------------------------
 
-================================  ============================================================
+================================  ========================================================================================
 Property                          Value
-================================  ============================================================
+================================  ========================================================================================
 Radio Frequency                   433MHz
-Supported Remote Mains Switches   All based on HX2262, (`complete list <TODO>`__)
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
+Supported Remote Mains Switches   All based on PT2262 and HX2262, (:ref:`complete list <remote_switch_supported_devices>`)
+--------------------------------  ----------------------------------------------------------------------------------------
+--------------------------------  ----------------------------------------------------------------------------------------
 Dimensions (W x D x H)            25 x 40 x 5mm (0.98 x 1.58 x 0.2") without antenna
 Weight                            7g
-================================  ============================================================
+================================  ========================================================================================
 
 
 Resources
@@ -85,6 +89,80 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/remote_switch_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)
 
+
+.. _remote_switch_supported_devices:
+
+List of Supported Devices
+-------------------------
+
+The following devices are known to be controllable with the 
+Remote Switch Bricklet. If you found another remote mains switch
+that is compatible please write us an email, we would like to add it.
+
+=============== ====================================
+Property        Value
+=============== ====================================
+Manufacturer:   BAT
+Models:         * RC 3500-A
+                * RC AAA1000-A
+                * RC AAA3680-A
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   Brennstuhl
+Models:         * RC 2044 Indoor
+                * RC 2044 Outdoor
+                * RC 3600
+                * RCS 1000 N Comfort
+                * RCS 1044 N Comfort
+                * RCS 2044 N Comfort Indoor
+                * RCS 2044 N Comfort Outdoor
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   ELRO 
+Models:         * AB440D
+                * AB440ID
+                * AB440IS
+                * AB440L
+                * AB440S
+                * AB440W
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   Intertechno
+Models:         * CMR-300
+                * CMR-500
+                * CMR-1000
+                * CMR-1224
+                * GRR-300
+                * GRR-3500
+                * IT-1500
+                * IT-2300
+                * ITL-150
+                * ITL-210
+                * ITL-230
+                * ITL-250
+                * ITL-300
+                * ITL-500
+                * ITL-1000
+                * ITL-3500
+                * ITR-300
+                * ITR-1500
+                * ITR-3500
+                * ITR-7000
+                * ITDL-1000
+                * ITDR-3500
+                * ITDR-3500T
+                * LBUR-100
+                * PA3-1000
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   Mumbi
+Models:         * m-FS300
+--------------- ------------------------------------
+--------------- ------------------------------------
+Manufacturer:   Vivanco
+Models:         * FSS 31000W
+                * FSS 33600W
+=============== ====================================
 
 .. _remote_switch_bricklet_test:
 
@@ -102,7 +180,7 @@ Test your Remote Switch Bricklet
    :target: ../../_images/Bricklets/bricklet_remote_switch_master_1200.jpg
 
 |test_tab|
-If everything went as expected you can now ... FIXME.
+If everything went as expected you can now control remote mains switches. 
 
 .. FIXME image:: /Images/Bricklets/bricklet_remote_switch_brickv.jpg
    :scale: 100 %
