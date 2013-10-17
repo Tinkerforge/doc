@@ -61,7 +61,12 @@ Features
 Description
 -----------
 
-* Work In Progress
+The Motion Detector Bricklet is equipped with a passive infrared (PIR) sensor.
+It can be used to sense movement of people. It has a configurable detection
+range of 3m to 7m with a sensing angle of 100°.
+
+It is also possible to use events. This allows to react to a detected motion
+without polling.
 
 Technical Specifications
 ------------------------

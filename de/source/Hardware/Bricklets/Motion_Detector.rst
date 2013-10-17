@@ -61,7 +61,13 @@ Features
 Beschreibung
 ------------
 
-* Work In Progress
+Das Motion Detector Bricklet ist mit einem Passive-Infrared (PIR) Sensor
+ausgestattet. Es kann benutzt werden um Bewegungen von Personen zu erkennen.
+Es hat eine konfigurierbare Reichweite von 3m bis 7m mit einem
+Erfassungswinkel von 100°.
+
+Es ist auch möglich Events zu nutzen. Dadurch ist möglich auf eine
+Bewegungserkennung zu reagieren ohne zu pollen.
 
 Technische Spezifikation
 ------------------------
