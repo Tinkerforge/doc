@@ -57,11 +57,18 @@ Features
 
 * 360° Drehencoder
 * Zählt 24 Schritte pro Umdrehung (Schrittwinkel 15°)
+* Hat einen integrierten Taster
 
 Beschreibung
 ------------
 
-* Work In Progress
+Das Rotary Encoder Bricklet ist mit einem 360° Encoder ausgestattet.
+Es hat 24 Schritte pro Umdrehung mit "Klick-Haptik" pro Schritt. Der
+Encoder hat einen integrierten Taster (auslösbar indem man auf den Knopf
+drückt) der genutzt werden kann um Menüpunkte o.ä. auszuwählen.
+
+Der Unterschied zwischen dem Rotary Poti und dem Rotary Encoder Bricklet
+ist, dass der Encoder ohne Begrenzungen gedreht werden kann.
 
 Technische Spezifikation
 ------------------------
@@ -104,7 +111,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_rotary_encoder_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert wird nun der aktuelle 
+Encoderzählstand angezeigt.
 
 .. FIXME image:: /Images/Bricklets/bricklet_rotary_encoder_brickv.jpg
    :scale: 100 %
