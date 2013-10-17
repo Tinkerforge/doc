@@ -61,7 +61,10 @@ Features
 Beschreibung
 ------------
 
-* Work In Progress
+Das Distance US Bricklet ist mit einem Ultraschall-Entfernungsmesser
+ausgestattet. Es kann Entfernungen zwischen 2cm und 400cm messen.
+Mit konfigurierbaren Events ist es möglich auf veränderte Distanzmessung
+zu reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 
 Technische Spezifikation
 ------------------------
@@ -104,7 +107,7 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_distance_us_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
 
 .. FIXME image:: /Images/Bricklets/bricklet_distance_us_brickv.jpg
    :scale: 100 %

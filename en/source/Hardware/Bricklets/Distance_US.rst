@@ -61,7 +61,8 @@ Features
 Description
 -----------
 
-* Work In Progress
+The Distance US Bricklet is equipped with an ultrasonic distance sensor.
+It can measure distances from 2cm to 400cm. With configurable events it is possible to react on changing distances without polling.
 
 Technical Specifications
 ------------------------
@@ -104,7 +105,7 @@ Test your Distance US Bricklet
    :target: ../../_images/Bricklets/bricklet_distance_us_master_1200.jpg
 
 |test_tab|
-If everything went as expected you can now ... FIXME.
+If everything went as expected you can now see the measured distance.
 
 .. FIXME image:: /Images/Bricklets/bricklet_distance_us_brickv.jpg
    :scale: 100 %
