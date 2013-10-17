@@ -61,7 +61,14 @@ Features
 Beschreibung
 ------------
 
-* Work In Progress
+Das Sound Intensity Bricklet ist mit einer Mikrofonkapsel ausgestattet und
+es kann genutzt werden um Latustärke zu messen. Der zurückgegebene Wert
+entspricht der 
+`Hüllkurve <http://de.wikipedia.org/wiki/Hüllkurvendemodulator>`__ des
+Signals der Mikrofonkapsel.
+
+Es ist möglich Events zu konfigurieren die ausgelöst werden wenn eine
+spezifizierte Lautstärkenschwelle überschritten wird.
 
 Technische Spezifikation
 ------------------------
@@ -101,7 +108,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_sound_intensity_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert wird nun die aktuelle Lautstärke
+angezeigt.
 
 .. FIXME image:: /Images/Bricklets/bricklet_sound_intensity_brickv.jpg
    :scale: 100 %
