@@ -61,7 +61,14 @@ Features
 Beschreibung
 ------------
 
-* Work In Progress
+Das Piezo Speaker Bricklet kann genutzt werden um Töne mit unterschiedlichen
+Frequenzen zu erzeugen. Der verfügbare Frequenzbereich ist 585Hz bis 7100 Hz.
+Ein Ton hat eine konfigurierbare Länge und es ist möglich 
+`Moresezeichen <http://de.wikipedia.org/wiki/Morsezeichen>`__ als String zu
+übergieben.
+
+Eine typische Anwendung dieses Bricklets ist das signalisieren von 
+Zustandsänderungen wie "Email empfangen".
 
 Technische Spezifikation
 ------------------------
@@ -102,7 +109,7 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_piezo_speaker_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert wird können nun Töne erzeugt werden. 
 
 .. FIXME image:: /Images/Bricklets/bricklet_piezo_speaker_brickv.jpg
    :scale: 100 %
