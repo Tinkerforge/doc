@@ -62,7 +62,14 @@ Features
 Beschreibung
 ------------
 
-* Work In Progress
+Das LED Strip Bricklet kann genutzt werden um LED Strips zu steuern
+die mit einem WS2801 LED-Treiber augestattet sind. Es ist möglich
+960 LEDs unabhängig voneinander zu schalten.
+
+Mit Hilfe der API können alle LEDs gleichzetig mit einer festen
+aktualisierungsrate von bis zu 100Hz gesteuert werden.
+
+TODO: Video
 
 Technische Spezifikation
 ------------------------
@@ -105,7 +112,7 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_led_strip_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ... FIXME.
+Wenn alles wie erwartet funktioniert, kann nun ein LED Strip gesteuert werden.
 
 .. FIXME image:: /Images/Bricklets/bricklet_led_strip_brickv.jpg
    :scale: 100 %
