@@ -17,7 +17,7 @@ Partners
 
     .. rubric:: Xively
 
-    *Could Service Provider of the Internet of Things*
+    *Cloud Service Provider of the Internet of Things*
 
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
     eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
