@@ -434,6 +434,11 @@ download_bindings_table_head = {
 """
 }
 
+download_firmwares_source_code = {
+'en': 'Source Code',
+'de': 'Quelltext'
+}
+
 download_firmwares_table_head = {
 'en':
 """.. csv-table::
@@ -692,18 +697,19 @@ def make_download_bindings_table():
     return table_head + '\n'.join(rows) + '\n'
 
 def make_download_firmwares_table():
+    source_code = download_firmwares_source_code[lang]
     table_head = download_firmwares_table_head[lang]
-    brick_row_cell = ' :ref:`{0} <{1}_brick>` | `{3}.{4}.{5} <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_{3}_{4}_{5}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-brick/master/software/changelog>`__'
-    bricklet_row_cell = ' :ref:`{0} <{1}_bricklet>` | `{4}.{5}.{6} <http://download.tinkerforge.com/firmwares/bricklets/{3}/bricklet_{3}_firmware_{4}_{5}_{6}.bin>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
+    brick_row_cell = ' :ref:`{0} <{1}_brick>` | {4}.{5}.{6} - `Firmware <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_{4}_{5}_{6}.bin>`__, `{3} <https://github.com/Tinkerforge/{2}-brick/archive/v{4}.{5}.{6}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-brick/master/software/changelog>`__'
+    bricklet_row_cell = ' :ref:`{0} <{1}_bricklet>` | {5}.{6}.{7} - `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{3}/bricklet_{3}_firmware_{5}_{6}_{7}.bin>`__, `{4} <https://github.com/Tinkerforge/{2}-bricklet/archive/v{5}.{6}.{7}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
     brick_rows = []
     bricklet_rows = []
 
     for brick in bricks:
         if len(brick[2]) > 0 and brick[4]:
-            brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), *firmware_versions[brick[1]]))
+            brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), source_code, *firmware_versions[brick[1]]))
 
     def handle_bricklet(name, common_url_part, plugin_url_part):
-        bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, *plugin_versions[plugin_url_part]))
+        bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, source_code, *plugin_versions[plugin_url_part]))
 
     for bricklet in bricklets:
         if len(bricklet[2]) > 0 and bricklet[4]:
