@@ -276,6 +276,44 @@ Ad Hoc and Access Point mode. The WEP key should be 64 or 128 bit and
 in hexadecimal notation. You can generate valid WEP keys 
 `here <http://www.andrewscompanies.com/tools/wep.asp>`__.
 
+Access Point Mode with static IP Address
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This examples shows how to configure the WIFI Extension as access point with
+a static IP address and how to connect an Android smart phone to it.
+
+Firstly, select "Access Point: Static IP" for the Connection and configure
+IP, Subnet Mask and Gateway. For example:
+
+* IP: 192.168.1.17
+* Subnet Mask: 255.255.255.0
+* Gateway: 192.168.1.1
+
+Select "No Encryption" or "WEP" for Encryption. If "WEP" should be used then
+you also have to provide a Key. A 64 or 128 bit WEP key can be generated
+`here <http://www.andrewscompanies.com/tools/wep.asp>`__. The key has to be
+entered in hexadecimal notation.
+
+Save the WIFI configuration and restart the Master Brick. Now the WIFI Extension
+should act as an access point.
+
+Secondly, open the Wi-Fi settings on your Android smart phone and add a new
+network. Enter the SSID of the WIFI Extension (default: TinkerforgeWLAN)
+and select "None" or "WEP" for Security, according to the configuration of the
+WIFI Extension. If you selected WEP you have to enter the generated WEP key as
+Password in hexadecimal notation.
+
+The WIFI Extension does not provide its own DHCP server, therefore you have to
+configure a static IP address for your smart phone in the advanced options.
+Change the IP settings from "DHCP" to "Static" and enter IP address, Gateway
+and Network prefix length. For example:
+
+* IP address: 192.168.1.23
+* Gateway: 192.168.1.1
+* Network prefix length: 24
+
+Finally, save the new network configuration and connect to it. Now your smart
+phone should be connected to the access point of the WIFI Extension.
 
 .. _extension_wifi_leds:
 
