@@ -85,7 +85,7 @@ Weight                            7g
 Resources
 ---------
 
-* Schematic (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/hardware/remote-switch-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/hardware/remote-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/remote_switch_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)
 
