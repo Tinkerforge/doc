@@ -103,14 +103,14 @@ Email freuen. Dann können wir die Liste erweitern und aktuell halten.
 =============== ====================================
 Property        Value
 =============== ====================================
-Manufacturer:   BAT
-Models:         * RC 3500-A
+Hersteller:     BAT
+Modelle:        * RC 3500-A
                 * RC AAA1000-A
                 * RC AAA3680-A
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Brennstuhl
-Models:         * RC 2044 Indoor
+Hersteller:     Brennstuhl
+Modelle:        * RC 2044 Indoor
                 * RC 2044 Outdoor
                 * RC 3600
                 * RCS 1000 N Comfort
@@ -119,8 +119,8 @@ Models:         * RC 2044 Indoor
                 * RCS 2044 N Comfort Outdoor
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   ELRO 
-Models:         * AB440D
+Hersteller:     ELRO 
+Modelle:        * AB440D
                 * AB440ID
                 * AB440IS
                 * AB440L
@@ -128,8 +128,8 @@ Models:         * AB440D
                 * AB440W
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Intertechno
-Models:         * CMR-300
+Hersteller:     Intertechno
+Modelle:        * CMR-300
                 * CMR-500
                 * CMR-1000
                 * CMR-1224
@@ -156,12 +156,12 @@ Models:         * CMR-300
                 * PA3-1000
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Mumbi
-Models:         * m-FS300
+Hersteller:     Mumbi
+Modelle:        * m-FS300
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Vivanco
-Models:         * FSS 31000W
+Hersteller:     Vivanco
+Modelle:        * FSS 31000W
                 * FSS 33600W
 =============== ====================================
 
