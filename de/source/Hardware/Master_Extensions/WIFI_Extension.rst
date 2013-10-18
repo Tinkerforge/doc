@@ -281,9 +281,48 @@ statischen IP.
 
 Als Verschlüsselung steht WEP zur Verfügung. WPA wird 
 im Ad Hoc und Access Point Modus leider nicht unterstützt. Der WEP Schlüssel
-sollte 64 oder 128 Bit groß sein und in Hexadezimaler Schreibweise angegeben
+sollte 64 oder 128 Bit groß sein und in hexadezimaler Schreibweise angegeben
 sein. Gültige WEP Schlüssel können 
 `hier <http://www.andrewscompanies.com/tools/wep.asp>`__ generiert werden.
+
+Access Point Modus mit statischer IP Adresse
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Als Beispiel wird hier die WIFI Extension als Access Point mit statischer
+IP Adresse konfiguriert und mit einem Android Smartphone verbunden.
+
+Dazu im Brick Viewer die Connection auf "Access Point: Static IP" stellen und
+IP, Subnet Mask und Gateway einstellen. Ein Beispiel:
+
+* IP: 192.168.1.17
+* Subnet Mask: 255.255.255.0
+* Gateway: 192.168.1.1
+
+Als Encryption "No Encryption" oder "WEP" wählen. Falls "WEP" verwendet wird
+muss noch ein Key eingegeben werden. Ein 64 oder 128 Bit WEP Schlüssel kann
+`hier <http://www.andrewscompanies.com/tools/wep.asp>`__ generiert werden.
+Der Key muss in hexadezimaler Schreibweise eingeben werden.
+
+Dann die WIFI Konfiguration speichern und den Master Brick neustarten. Jetzt
+sollte WIFI Extension einen Access Point bereitstellen.
+
+Am Android Smartphone die WLAN Einstellungen aufrufen und ein neues Netzwerk
+hinzufügen. Dazu die SSID der WIFI Extension eingeben (Standard:
+TinkerforgeWLAN) und für Sicherheit "Keine" oder "WEP" entsprechend der
+Einstellung der WIFI Extension wählen. Für WEP dann den gewählten Schlüssel als
+Passwort in hexadezimaler Schreibweise eingeben.
+
+Da die WIFI Extension keinen DHCP Server beinhaltet muss nun noch unter den
+Erweiterten Optionen eine statische IP Adresse für das Smartphone eingegeben
+werden. Dazu die IP-Einstellung von "DHCP" auf "Statisch" ändern und
+IP-Adresse, Gateway und Länge Netzwerkpräfix einstellen. Ein Beispiel:
+
+* IP-Adresse: 192.168.1.23
+* Gateway: 192.168.1.1
+* Länge Netzwerkpräfix: 24
+
+Dann Speichern und mit dem Netzwerk verbinden. Jetzt sollte das Smartphone mit
+dem Access Point der WIFI Extension verbunden sein.
 
 .. _extension_wifi_leds:
 
