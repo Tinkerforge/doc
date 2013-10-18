@@ -63,7 +63,16 @@ Features
 Description
 -----------
 
-* Work In Progress
+The Multi Touch Bricklet is equipped with the MPR121 capacitive touch
+sensor. It can be used to sense touch at 12 different locations.
+
+The thingy that is actually touched is called an "electrode". The
+electrode can be a cable, electrically conductive tape or a
+copper surface of a circuit board. Electrodes can sense touch through
+a small layer of glass, plastic, paper or simlar.
+
+With the Multi Touch Bricklet it is possible to build custom touch panels
+by gluing a cover onto the electrodes.
 
 Technical Specifications
 ------------------------
@@ -103,7 +112,7 @@ Test your Multi Touch Bricklet
    :target: ../../_images/Bricklets/bricklet_multi_touch_master_1200.jpg
 
 |test_tab|
-If everything went as expected you can now ... FIXME.
+If everything went as expected you can now see the current state.
 
 .. FIXME image:: /Images/Bricklets/bricklet_multi_touch_brickv.jpg
    :scale: 100 %
