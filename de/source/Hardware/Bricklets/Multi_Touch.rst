@@ -136,11 +136,16 @@ Ein `laser-geschnittenes Gehäuse für das Multi Touch Bricklet <https://www.tin
    :align: center
    :target: ../../_images/Cases/bricklet_multi_touch_case_built_up_1000.jpg
 
-.. include:: Multi_Touch.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-.. FIXME image:: /Images/Exploded/multi_touch_exploded_350.png
+* Schraube Abstandshalter an das Bricklet,
+* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte,
+* schraube Unterteil an untere Abstandshalter,
+* schraube Oberteil auf obere Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des Temperature IR Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/multi_touch_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für Multi Touch Bricklet
    :align: center

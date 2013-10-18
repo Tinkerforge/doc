@@ -130,11 +130,16 @@ Ein `laser-geschnittenes Gehäuse für das Distance US Bricklet <https://www.tin
    :align: center
    :target: ../../_images/Cases/bricklet_distance_us_case_built_up_1000.jpg
 
-.. include:: Distance_US.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-.. FIXME image:: /Images/Exploded/distance_us_exploded_350.png
+* Schraube Abstandshalter an das Bricklet,
+* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte,
+* schraube Unterteil an untere Abstandshalter,
+* schraube Oberteil auf obere Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des Distance US Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/distance_us_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für Distance US Bricklet
    :align: center

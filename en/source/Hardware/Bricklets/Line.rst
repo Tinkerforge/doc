@@ -123,31 +123,6 @@ reflectivity.
 
 |test_pi_ref|
 
-.. _line_bricklet_case:
-
-Case
-----
-
-A `laser-cut case for the Line Bricklet <https://www.tinkerforge.com/en/shop/cases/case-line-bricklet.html>`__ is available.
-
-.. FIXME image:: /Images/Cases/bricklet_line_case_built_up_350.jpg
-   :scale: 100 %
-   :alt: Case for Line Bricklet
-   :align: center
-   :target: ../../_images/Cases/bricklet_line_case_built_up_1000.jpg
-
-.. include:: Line.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
-
-.. FIXME image:: /Images/Exploded/line_exploded_350.png
-   :scale: 100 %
-   :alt: Exploded assembly drawing for Line Bricklet
-   :align: center
-   :target: ../../_images/Exploded/line_exploded.png
-
-|bricklet_case_hint|
-
 
 .. _line_bricklet_programming_interfaces:
 

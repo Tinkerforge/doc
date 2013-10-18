@@ -132,11 +132,16 @@ Ein `laser-geschnittenes Gehäuse für das Sound Intensity Bricklet <https://www
    :align: center
    :target: ../../_images/Cases/bricklet_sound_intensity_case_built_up_1000.jpg
 
-.. include:: Sound_Intensity.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-.. FIXME image:: /Images/Exploded/sound_intensity_exploded_350.png
+* Schraube Bricklet an Oberteil mit Abstandshalter von unten und den langen Schrauben von oben,
+* baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Oberteil und
+* schraube Unterteil auf unteren Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des Sound Intensity Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/sound_intensity_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für Sound Intensity Bricklet
    :align: center

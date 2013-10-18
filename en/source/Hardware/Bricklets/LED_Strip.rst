@@ -139,7 +139,7 @@ A `laser-cut case for the LED Strip Bricklet <https://www.tinkerforge.com/en/sho
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
-.. FIXME image:: /Images/Exploded/led_strip_exploded_350.png
+.. image:: /Images/Exploded/led_strip_exploded_350.png
    :scale: 100 %
    :alt: Exploded assembly drawing for LED Strip Bricklet
    :align: center

@@ -140,11 +140,11 @@ A `laser-cut case for the Rotary Encoder Bricklet <https://www.tinkerforge.com/e
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
-.. FIXME image:: /Images/Exploded/rotary_encoder_exploded_350.png
+.. image:: /Images/Exploded/rotary_poti_exploded_350.png
    :scale: 100 %
    :alt: Exploded assembly drawing for Rotary Encoder Bricklet
    :align: center
-   :target: ../../_images/Exploded/rotary_encoder_exploded.png
+   :target: ../../_images/Exploded/rotary_poti_exploded.png
 
 |bricklet_case_hint|
 

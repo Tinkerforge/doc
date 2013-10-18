@@ -134,7 +134,7 @@ A `laser-cut case for the Piezo Speaker Bricklet <https://www.tinkerforge.com/en
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
-.. FIXME image:: /Images/Exploded/piezo_speaker_exploded_350.png
+.. image:: /Images/Exploded/piezo_speaker_exploded_350.png
    :scale: 100 %
    :alt: Exploded assembly drawing for Piezo Speaker Bricklet
    :align: center

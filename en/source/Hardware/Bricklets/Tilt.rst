@@ -130,7 +130,7 @@ A `laser-cut case for the Tilt Bricklet <https://www.tinkerforge.com/en/shop/cas
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
-.. FIXME image:: /Images/Exploded/tilt_exploded_350.png
+.. image:: /Images/Exploded/tilt_exploded_350.png
    :scale: 100 %
    :alt: Exploded assembly drawing for Tilt Bricklet
    :align: center

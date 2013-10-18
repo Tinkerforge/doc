@@ -138,11 +138,16 @@ Ein `laser-geschnittenes Gehäuse für das Moisture Bricklet <https://www.tinker
    :align: center
    :target: ../../_images/Cases/bricklet_moisture_case_built_up_1000.jpg
 
-.. include:: Moisture.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-.. FIXME image:: /Images/Exploded/moisture_exploded_350.png
+* Schraube Abstandshalter an das Bricklet,
+* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte,
+* schraube Unterteil an untere Abstandshalter,
+* schraube Oberteil auf obere Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des Moisture Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/moisture_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für Moisture Bricklet
    :align: center

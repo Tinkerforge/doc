@@ -139,7 +139,7 @@ Ein `laser-geschnittenes Gehäuse für das LED Strip Bricklet <https://www.tinke
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
-.. FIXME image:: /Images/Exploded/led_strip_exploded_350.png
+.. image:: /Images/Exploded/led_strip_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für LED Strip Bricklet
    :align: center

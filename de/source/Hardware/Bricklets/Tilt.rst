@@ -130,7 +130,7 @@ Ein `laser-geschnittenes Gehäuse für das Tilt Bricklet <https://www.tinkerforg
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
-.. FIXME image:: /Images/Exploded/tilt_exploded_350.png
+.. image:: /Images/Exploded/tilt_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für Tilt Bricklet
    :align: center

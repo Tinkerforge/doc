@@ -121,31 +121,6 @@ Wenn alles wie erwartet funktioniert wird ein Magnetfeld erkannt.
 
 |test_pi_ref|
 
-.. _hall_effect_bricklet_case:
-
-Gehäuse
--------
-
-Ein `laser-geschnittenes Gehäuse für das Hall Effect Bricklet <https://www.tinkerforge.com/de/shop/cases/case-hall-effect-bricklet.html>`__ ist verfügbar.
-
-.. FIXME image:: /Images/Cases/bricklet_hall_effect_case_built_up_350.jpg
-   :scale: 100 %
-   :alt: Gehäuse für Hall Effect Bricklet
-   :align: center
-   :target: ../../_images/Cases/bricklet_hall_effect_case_built_up_1000.jpg
-
-.. include:: Hall_Effect.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
-
-.. FIXME image:: /Images/Exploded/hall_effect_exploded_350.png
-   :scale: 100 %
-   :alt: Explosionszeichnung für Hall Effect Bricklet
-   :align: center
-   :target: ../../_images/Exploded/hall_effect_exploded.png
-
-|bricklet_case_hint|
-
 
 .. _hall_effect_bricklet_programming_interfaces:
 

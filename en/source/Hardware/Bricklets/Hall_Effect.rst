@@ -122,31 +122,6 @@ magnetic field.
 
 |test_pi_ref|
 
-.. _hall_effect_bricklet_case:
-
-Case
-----
-
-A `laser-cut case for the Hall Effect Bricklet <https://www.tinkerforge.com/en/shop/cases/case-hall-effect-bricklet.html>`__ is available.
-
-.. FIXME image:: /Images/Cases/bricklet_hall_effect_case_built_up_350.jpg
-   :scale: 100 %
-   :alt: Case for Hall Effect Bricklet
-   :align: center
-   :target: ../../_images/Cases/bricklet_hall_effect_case_built_up_1000.jpg
-
-.. include:: Hall_Effect.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
-
-.. FIXME image:: /Images/Exploded/hall_effect_exploded_350.png
-   :scale: 100 %
-   :alt: Exploded assembly drawing for Hall Effect Bricklet
-   :align: center
-   :target: ../../_images/Exploded/hall_effect_exploded.png
-
-|bricklet_case_hint|
-
 
 .. _hall_effect_bricklet_programming_interfaces:
 

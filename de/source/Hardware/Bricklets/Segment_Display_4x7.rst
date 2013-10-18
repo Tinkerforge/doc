@@ -131,11 +131,16 @@ Ein `laser-geschnittenes Gehäuse für das Segment Display 4x7 Bricklet <https:/
    :align: center
    :target: ../../_images/Cases/bricklet_segment_display_4x7_case_built_up_1000.jpg
 
-.. include:: Segment_Display_4x7.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-.. FIXME image:: /Images/Exploded/segment_display_4x7_exploded_350.png
+* Schraube Bricklet an Oberteil mit Abstandshalter von unten und den langen Schrauben von oben,
+* baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Oberteil und
+* schraube Unterteil auf unteren Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des Segment Display 4x7 Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/segment_display_4x7_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für Segment Display 4x7 Bricklet
    :align: center

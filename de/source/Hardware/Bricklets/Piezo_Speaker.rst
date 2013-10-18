@@ -136,7 +136,7 @@ Ein `laser-geschnittenes Gehäuse für das Piezo Speaker Bricklet <https://www.t
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
-.. FIXME image:: /Images/Exploded/piezo_speaker_exploded_350.png
+.. image:: /Images/Exploded/piezo_speaker_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für Piezo Speaker Bricklet
    :align: center

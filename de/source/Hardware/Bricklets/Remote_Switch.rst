@@ -206,15 +206,20 @@ Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet <https://www.t
    :align: center
    :target: ../../_images/Cases/bricklet_remote_switch_case_built_up_1000.jpg
 
-.. include:: Remote_Switch.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-.. FIXME image:: /Images/Exploded/remote_switch_exploded_350.png
+* Schraube Abstandshalter an das Bricklet,
+* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte,
+* schraube Unterteil an untere Abstandshalter,
+* schraube Oberteil auf obere Abstandshalter.
+
+Im folgenden befindet sich eine Explosionszeichnung des Remote Switch Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/remote_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für Remote Switch Bricklet
    :align: center
-   :target: ../../_images/Exploded/remote_switch_exploded.png
+   :target: ../../_images/Exploded/remote_exploded.png
 
 |bricklet_case_hint|
 

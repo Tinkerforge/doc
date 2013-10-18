@@ -131,11 +131,16 @@ A `laser-cut case for the Sound Intensity Bricklet <https://www.tinkerforge.com/
    :align: center
    :target: ../../_images/Cases/bricklet_sound_intensity_case_built_up_1000.jpg
 
-.. include:: Sound_Intensity.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+The assembly is easiest if you follow the following steps:
 
-.. FIXME image:: /Images/Exploded/sound_intensity_exploded_350.png
+* Screw Bricklet to top plate with spacers at the bottom and long screws from the top,
+* build up side plates,
+* plug side plates into top plate and
+* screw bottom plate to bottom spacers.
+
+Below you can see an exploded assembly drawing of the Temperature IR Bricklet case:
+
+.. image:: /Images/Exploded/sound_intensity_exploded_350.png
    :scale: 100 %
    :alt: Exploded assembly drawing for Sound Intensity Bricklet
    :align: center

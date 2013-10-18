@@ -136,11 +136,16 @@ A `laser-cut case for the Moisture Bricklet <https://www.tinkerforge.com/en/shop
    :align: center
    :target: ../../_images/Cases/bricklet_moisture_case_built_up_1000.jpg
 
-.. include:: Moisture.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+The assembly is easiest if you follow the following steps:
 
-.. FIXME image:: /Images/Exploded/moisture_exploded_350.png
+* Screw spacers to the Bricklet,
+* build up side plates and put them around Bricklet,
+* screw bottom plate to bottom spacers,
+* screw top plate to top spacers.
+
+Below you can see an exploded assembly drawing of the Moisture Bricklet case:
+
+.. image:: /Images/Exploded/moisture_exploded_350.png
    :scale: 100 %
    :alt: Exploded assembly drawing for Moisture Bricklet
    :align: center

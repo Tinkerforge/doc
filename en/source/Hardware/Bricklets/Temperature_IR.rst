@@ -161,11 +161,11 @@ The assembly is easiest if you follow the following steps:
 
 Below you can see an exploded assembly drawing of the Temperature IR Bricklet case:
 
-.. image:: /Images/Exploded/dual_relay_exploded_350.png
+.. image:: /Images/Exploded/temperature_ir_exploded_350.png
    :scale: 100 %
-   :alt: Exploded assembly drawing for Dual Relay Bricklet
+   :alt: Exploded assembly drawing for Temperature IR Bricklet
    :align: center
-   :target: ../../_images/Exploded/dual_relay_exploded.png
+   :target: ../../_images/Exploded/temperature_ir_exploded.png
 
 |bricklet_case_hint|
 

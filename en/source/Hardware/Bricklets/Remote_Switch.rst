@@ -203,15 +203,20 @@ A `laser-cut case for the Remote Switch Bricklet <https://www.tinkerforge.com/en
    :align: center
    :target: ../../_images/Cases/bricklet_remote_switch_case_built_up_1000.jpg
 
-.. include:: Remote_Switch.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+The assembly is easiest if you follow the following steps:
 
-.. FIXME image:: /Images/Exploded/remote_switch_exploded_350.png
+* Screw spacers to the Bricklet,
+* build up side plates and put them around Bricklet,
+* screw bottom plate to bottom spacers,
+* screw top plate to top spacers.
+
+Below you can see an exploded assembly drawing of the Temperature IR Bricklet case:
+
+.. image:: /Images/Exploded/remote_exploded_350.png
    :scale: 100 %
    :alt: Exploded assembly drawing for Remote Switch Bricklet
    :align: center
-   :target: ../../_images/Exploded/remote_switch_exploded.png
+   :target: ../../_images/Exploded/remote_exploded.png
 
 |bricklet_case_hint|
 

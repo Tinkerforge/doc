@@ -136,7 +136,7 @@ A `laser-cut case for the Motion Detector Bricklet <https://www.tinkerforge.com/
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
-.. FIXME image:: /Images/Exploded/motion_detector_exploded_350.png
+.. image:: /Images/Exploded/motion_detector_exploded_350.png
    :scale: 100 %
    :alt: Exploded assembly drawing for Motion Detector Bricklet
    :align: center
