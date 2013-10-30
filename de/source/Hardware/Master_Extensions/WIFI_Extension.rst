@@ -201,7 +201,7 @@ das Anführungszeichen) eingegeben werden.
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wpa.jpg
 
-Für WPA Enterprise muss die äußere Authentifizierung 
+Für WPA Enterprise muss die äußere Authentifizierung
 (FAST, TLS, TTLS, PEAP), die innere (MSCHAP, GTC), Benutzer und Passwort
 konfiguriert werden sowie die notwendigen Zertifikate (ca cert, client cert, private key)
 hinzugefügt werden.
@@ -222,13 +222,17 @@ Der Schlüssel ist hierbei in Hex-Notation einzutragen mit voller Schlüssellän
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wep.jpg
 
-Soll keine Verschlüsselung genutzt werden muss "No Encryption" gewählt werden. 
+.. note::
+ WEP Verschlüsselung ist gebrochen und bietet keine Sicherheit mehr. Daher wird
+ dringend dazu geraten stattdessen WPA/WPA2 Verschlüsselung zu verwenden.
+
+Soll keine Verschlüsselung genutzt werden muss "No Encryption" gewählt werden.
 
 Nun kann noch der Power Mode konfiguriert werden. Es gibt zwei Modi:
 Full Speed und Low Power. Im Full Speed Modus verbraucht die Extension mehr Leistung
 besitzt aber einen deutlich höheren Datendurchsatz. Dies ist für die meisten Anwendungen
 die typische Konfiguration. Müssen nur ein paar Nachrichten pro Sekunden transferiert werden,
-z.B. bei der drahtlosen Temperaturmessung, so kann auch der Low Power Mode gewählt 
+z.B. bei der drahtlosen Temperaturmessung, so kann auch der Low Power Mode gewählt
 und Energie gespart werden.
 
 .. image:: /Images/Extensions/extension_wifi_power_mode.jpg
@@ -249,6 +253,34 @@ Falls andere Einstellungen als der Power Mode geändert wurden muss der Master B
 neu gestartet werden um die neue Konfiguration zu übernehmen. Nach dem Neustart
 sollte der Master Brick bei Eingabe der konfigurierten IP Adresse und Port im Brick Viewer erreichbar sein.
 
+Beispiel: Client Modus mit dynamischer IP Adresse
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Diese Beispiel zeigt wie die WIFI Extension eingestellt werden muss, damit sie
+sich zu einem typischen WLAN Access Point verbindet. Für diese Beispiel wird
+angenommen, dass die SSID des Access Points "MyHomeNetwork" lautet und WPA/WPA2
+als Verschlüsselung mit Schlüssel "1234567890ABCDEF" verwendet wird.
+
+Dazu als erstes im Brick Viewer die SSID (Name des WLAN Netzwerks) eingeben zu
+der eine Verbindung hergestellt werden soll. Ein Beispiel:
+
+* SSID: MyHomeNetwork
+
+Dann einen Hostnamen eingeben. Mit diesem kann dann eine Verbindung zur WIFI
+Extension aufgebaut werden ohne vorher deren dynamische IP Adresse ermitteln zu
+müssen. Ein Beispiel:
+
+* Hostname: WIFI-Extension
+
+Als nächstes "DHCP" für Connection und "WPA/WPA2" für Encryption auswählen und
+den WPA/WPA2 Schlüssel eingeben. Ein Beispiel:
+
+* Key: 1234567890ABCDEF
+
+Dann die WIFI Konfiguration speichern und den Master Brick neustarten. Jetzt
+sollte sich die WIFI Extension zum Access Point verbinden und dann im eigenen
+Programm und im Brick Viewer unter dem eingestellten Hostnamen "WIFI-Extension"
+erreichbar sein.
 
 .. _extension_wifi_adhoc_ap:
 
@@ -279,20 +311,26 @@ Es gibt keine DHCP Server Implementierung auf dem WIFI Modul. Da das aufsetzen
 eines DHCP Servers mühselig sein kann, empfehlen wir die Benutzung einer
 statischen IP.
 
-Als Verschlüsselung steht WEP zur Verfügung. WPA wird 
+Als Verschlüsselung steht WEP zur Verfügung. WPA wird
 im Ad Hoc und Access Point Modus leider nicht unterstützt. Der WEP Schlüssel
 sollte 64 oder 128 Bit groß sein und in hexadezimaler Schreibweise angegeben
-sein. Gültige WEP Schlüssel können 
+sein. Gültige WEP Schlüssel können
 `hier <http://www.andrewscompanies.com/tools/wep.asp>`__ generiert werden.
 
-Access Point Modus mit statischer IP Adresse
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Beispiel: Access Point Modus mit statischer IP Adresse
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Als Beispiel wird hier die WIFI Extension als Access Point mit statischer
 IP Adresse konfiguriert und mit einem Android Smartphone verbunden.
 
-Dazu im Brick Viewer die Connection auf "Access Point: Static IP" stellen und
-IP, Subnet Mask und Gateway einstellen. Ein Beispiel:
+Dazu als erstes im Brick Viewer die SSID (der Name des WLAN Netzwerks)
+festlegen. Dabei ist darauf zu achten, dass der Name nicht schon von einem
+anderen WLAN Netzwerk in der Nähe verwendet wird. Ein Beispiel:
+
+* SSID: TinkerforgeWLAN
+
+Dann die Connection auf "Access Point: Static IP" stellen und IP, Subnet Mask
+und Gateway einstellen. Ein Beispiel:
 
 * IP: 192.168.1.17
 * Subnet Mask: 255.255.255.0
@@ -302,6 +340,11 @@ Als Encryption "No Encryption" oder "WEP" wählen. Falls "WEP" verwendet wird
 muss noch ein Key eingegeben werden. Ein 64 oder 128 Bit WEP Schlüssel kann
 `hier <http://www.andrewscompanies.com/tools/wep.asp>`__ generiert werden.
 Der Key muss in hexadezimaler Schreibweise eingeben werden.
+
+.. note::
+ WEP Verschlüsselung ist gebrochen und bietet keine Sicherheit mehr. Leider
+ unterstützt die WIFI Extension keine WPA/WPA2 Verschlüsselung im Ad Hoc und
+ Access Point Modus.
 
 Dann die WIFI Konfiguration speichern und den Master Brick neustarten. Jetzt
 sollte WIFI Extension einen Access Point bereitstellen.

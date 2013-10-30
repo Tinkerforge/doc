@@ -216,7 +216,11 @@ Please enter your key in hex notation with the full key length
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wep.jpg
 
-If you don't want encryption select "No Encryption". 
+.. note::
+ WEP encryption has been broken and it doesn't provide any real security
+ anymore. We strongly suggest to use WPA/WPA2 instead.
+
+If you don't want encryption select "No Encryption".
 
 Finally you have to configure the Power Mode. There are two Power Modes:
 Full Speed and Low Power. In Full Speed mode the device consumes more power,
@@ -242,6 +246,33 @@ on the WIFI Extension. If another option besides the Power Mode has be changed
 then the Master Brick has to be restarted to apply the new configuration.
 After restart you should be able to reach the Master Brick by entering the IP
 address and port of the Brick in the Brick Viewer.
+
+Example: Client Mode with dynamic IP Address
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This examples shows how to configure the WIFI Extension to connect to a typical
+Wi-Fi access point. This example assumes that the SSID of your access point is
+"MyHomeNetwork" and that it is using WPA/WPA2 encryption with "1234567890ABCDEF"
+as key.
+
+Firstly, enter the SSID (the name of your Wi-Fi network) to connect to. For
+example:
+
+* SSID: MyHomeNetwork
+
+Next, enter a Hostname that you can use to connect to the WIFI Extension without
+having to figure out which dynamic IP address got assigned to it. For example:
+
+* Hostname: WIFI-Extension
+
+Secondly, select "DHCP" for the Connection, "WPA/WPA2" for Encryption and enter
+the WPA/WPA2 key. For example:
+
+* Key: 1234567890ABCDEF
+
+Save the WIFI configuration and restart the Master Brick. Now the WIFI Extension
+should connect to your access point and you should be able to connect to it with
+your program and Brick Viewer using "WIFI-Extension" as host.
 
 
 .. _extension_wifi_adhoc_ap:
@@ -276,13 +307,18 @@ Ad Hoc and Access Point mode. The WEP key should be 64 or 128 bit and
 in hexadecimal notation. You can generate valid WEP keys 
 `here <http://www.andrewscompanies.com/tools/wep.asp>`__.
 
-Access Point Mode with static IP Address
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Example: Access Point Mode with static IP Address
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This examples shows how to configure the WIFI Extension as access point with
 a static IP address and how to connect an Android smart phone to it.
 
-Firstly, select "Access Point: Static IP" for the Connection and configure
+Firstly, select a SSID (the name of the Wi-Fi network). Make sure to use a
+name that is not already used by another Wi-Fi network near you. For example:
+
+* SSID: TinkerforgeWLAN
+
+Secondly, select "Access Point: Static IP" for the Connection and configure
 IP, Subnet Mask and Gateway. For example:
 
 * IP: 192.168.1.17
@@ -294,10 +330,15 @@ you also have to provide a Key. A 64 or 128 bit WEP key can be generated
 `here <http://www.andrewscompanies.com/tools/wep.asp>`__. The key has to be
 entered in hexadecimal notation.
 
+.. note::
+ WEP encryption has been broken and it doesn't provide any real security
+ anymore. Unfortunately the WIFI Extension doesn't support WPA/WPA2 encryption
+ in Ad Hoc and Access Point mode.
+
 Save the WIFI configuration and restart the Master Brick. Now the WIFI Extension
 should act as an access point.
 
-Secondly, open the Wi-Fi settings on your Android smart phone and add a new
+Thirdly, open the Wi-Fi settings on your Android smart phone and add a new
 network. Enter the SSID of the WIFI Extension (default: TinkerforgeWLAN)
 and select "None" or "WEP" for Security, according to the configuration of the
 WIFI Extension. If you selected WEP you have to enter the generated WEP key as
