@@ -60,7 +60,8 @@ vorhanden ist.
 
 Falls dies nicht der Fall ist sollte
 `hier <http://docs.oracle.com/javase/tutorial/>`__ begonnen werden. Informationen
-über die Tinkerforge API sind dann :ref:`hier <api_bindings_java>` zu finden.
+über die Tinkerforge API sind dann :ref:`hier <api_bindings_java_android>` zu
+finden.
 <<<intro
 """
 }
@@ -89,7 +90,8 @@ vorhanden ist.
 
 Falls dies nicht der Fall ist sollte
 `hier <http://csharp.net-tutorials.com/>`__ begonnen werden. Informationen
-über die Tinkerforge API sind dann :ref:`hier <api_bindings_csharp>` zu finden.
+über die Tinkerforge API sind dann :ref:`hier <api_bindings_csharp_windows_phone>`
+zu finden.
 <<<intro
 """
 }
