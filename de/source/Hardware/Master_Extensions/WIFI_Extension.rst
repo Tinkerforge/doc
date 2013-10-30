@@ -164,13 +164,17 @@ geändert werden.
 WIFI Konfiguration
 ------------------
 
-Die WIFI Extension wird über das Tab des Master Bricks im Brick Viewer konfiguriert.
-Als erstes muss die SSID (eingeschränkt auf ASCII Zeichen, ohne das
-Anführungszeichen) des drahtlosen Netzes
-eingegeben werden und ob DHCP oder eine statische IP genutzt werden soll.
+Die WIFI Extension wird über das Tab des Master Bricks im Brick Viewer
+konfiguriert. Als erstes muss die SSID des WLAN Netzes eingegeben werden.
+Die SSID ist der Name des WLAN Netzes zu dem sich die WIFI Extension im
+Client Modus verbinden soll, bzw. der Name des WLAN Netzes das die WIFI
+Extension im Access Point Modus oder Ad Hoc Modus bereitstellt (im Folgenden
+geht es um den Client Modus). Die SSID kann maximal 32 ASCII Zeichen lang sein
+(Anführungszeichen ist nicht erlaubt).
 
-Für den Fall, dass DHCP genutzt werden soll muss einfach DHCP ausgewählt werden
-und der Port definiert werden.
+Dann zwischen DHCP oder statischer IP Adresse wählen. Für den Fall, dass DHCP
+genutzt werden soll muss einfach DHCP ausgewählt werden und der Port definiert
+werden.
 
 .. image:: /Images/Extensions/extension_wifi_connection_dhcp.jpg
    :scale: 100 %
@@ -180,7 +184,7 @@ und der Port definiert werden.
 
 Wenn eine statische IP Adresse genutzt werden soll muss diese zusammen mit
 der Subnet Mask und Gateway Adresse konfiguriert werden.
-Zusätzlich ist auch der Port über den Kommuniziert werden soll zu konfigurieren.
+Zusätzlich ist auch der Port über den kommuniziert werden soll zu konfigurieren.
 
 .. image:: /Images/Extensions/extension_wifi_connection_static.jpg
    :scale: 100 %
@@ -261,7 +265,7 @@ sich zu einem typischen WLAN Access Point verbindet. Für diese Beispiel wird
 angenommen, dass die SSID des Access Points "MyHomeNetwork" lautet und WPA/WPA2
 als Verschlüsselung mit Schlüssel "1234567890ABCDEF" verwendet wird.
 
-Dazu als erstes im Brick Viewer die SSID (Name des WLAN Netzwerks) eingeben zu
+Dazu als erstes im Brick Viewer die SSID (Name des WLAN Netzes) eingeben zu
 der eine Verbindung hergestellt werden soll. Ein Beispiel:
 
 * SSID: MyHomeNetwork
@@ -323,9 +327,9 @@ Beispiel: Access Point Modus mit statischer IP Adresse
 Als Beispiel wird hier die WIFI Extension als Access Point mit statischer
 IP Adresse konfiguriert und mit einem Android Smartphone verbunden.
 
-Dazu als erstes im Brick Viewer die SSID (der Name des WLAN Netzwerks)
+Dazu als erstes im Brick Viewer die SSID (der Name des WLAN Netzes)
 festlegen. Dabei ist darauf zu achten, dass der Name nicht schon von einem
-anderen WLAN Netzwerk in der Nähe verwendet wird. Ein Beispiel:
+anderen WLAN Netz in der Nähe verwendet wird. Ein Beispiel:
 
 * SSID: TinkerforgeWLAN
 

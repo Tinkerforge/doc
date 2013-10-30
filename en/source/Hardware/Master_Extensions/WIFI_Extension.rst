@@ -164,11 +164,15 @@ WIFI Configuration
 ------------------
 
 To configure the WIFI Extension open the Master Brick Tab in the Brick Viewer.
-First of all you have to enter the SSID (limited to ASCII characters, without
-the quotation mark) of your wireless network and if the device should use DHCP
-or a static IP.
+First of all you have to enter the SSID of your wireless network. The SSID is
+the name of the wireless network to which the WIFI Extension should connect to
+in client mode, respectively it is the name of the wireless network the WIFI
+Extension provides in access point mode or ad hoc mode (this section focuses
+on client mode). The SSID can be 32 ASCII characters long (quotation mark is
+not allowed).
 
-In case of you want to use DHCP simply select DHCP and configure the port.
+Then you have to select DHCP or static IP address configuration. In case of
+you want to use DHCP simply select DHCP and configure the port.
 
 .. image:: /Images/Extensions/extension_wifi_connection_dhcp.jpg
    :scale: 100 %
@@ -197,7 +201,7 @@ the quotation mark).
    :align: center
    :target: ../../_images/Extensions/extension_wifi_encryption_wpa.jpg
 
-For WPA Enterprise configure outer auth (FAST, TLS, TTLS, PEAP), 
+For WPA Enterprise configure outer auth (FAST, TLS, TTLS, PEAP),
 inner auth (MSCHAP, GTC), user, password and add the necessary certificates (ca cert, client cert, private key).
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wpa_enterprise.jpg
@@ -207,7 +211,7 @@ inner auth (MSCHAP, GTC), user, password and add the necessary certificates (ca 
    :target: ../../_images/Extensions/extension_wifi_encryption_wpa_enterprise.jpg
 
 For WEP enter the key and the key index. If the key index is unknown it is likely 1.
-Please enter your key in hex notation with the full key length 
+Please enter your key in hex notation with the full key length
 (depending on 64bit and 128bit key).
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wep.jpg
@@ -304,7 +308,7 @@ cumbersome to get running, we recommend that you use static IP.
 
 As encryption you can use WEP. WPA is unfortunately not supported in
 Ad Hoc and Access Point mode. The WEP key should be 64 or 128 bit and
-in hexadecimal notation. You can generate valid WEP keys 
+in hexadecimal notation. You can generate valid WEP keys
 `here <http://www.andrewscompanies.com/tools/wep.asp>`__.
 
 Example: Access Point Mode with static IP Address
