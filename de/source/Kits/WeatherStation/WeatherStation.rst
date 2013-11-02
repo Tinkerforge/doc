@@ -133,7 +133,7 @@ Eigenschaft                       Wert
 ================================  ============================================================
 Luftdruck                         10mbar - 1200mbar in 0,012mbar Schritten
 Beleuchtungsstärke                0Lux - 900Lux in 0,1Lux Schritten
-Relative Luftfeuchtigkeit         0% RH - 10% RH in 0,1% RH Schritten
+Relative Luftfeuchtigkeit         0% RH - 100% RH in 0,1% RH Schritten
 Temperatur                        -40°C - 85°C in 0,01°C Schritten
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
