@@ -119,6 +119,12 @@ If everything went as expected you can now see when a motion is detected.
 
 |test_pi_ref|
 
+
+Delay Time and Block Time
+-------------------------
+
+
+
 .. _motion_detector_bricklet_case:
 
 Case

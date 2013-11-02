@@ -122,6 +122,55 @@ Wenn alles wie erwartet funktioniert, kann nun ein LED Strip gesteuert werden.
 
 |test_pi_ref|
 
+.. _led_strip_led_strips:
+
+LED Strips
+----------
+
+TODO:
+
+* How to use them?
+* Where to inject power?
+
+.. _led_strip_led_pixels:
+
+LED Pixels
+----------
+
+TODO:
+
+* How to use them?
+* Where to inject power?
+
+
+.. _led_strip_fixed_frame_rate:
+
+Feste Aktualisierungsrate
+-------------------------
+
+Um eine flüssige Animation zu erreichen wird eine feste Aktualisierungsrate
+benötigt. Eine feste Aktualisierungsrate kann einfach mit einer
+korrekt konfigurierten Framelänge und dem FrameRendered Callback erreicht
+werden. Die Framelänge stellt die Zeit in ms dar, die zwischen zwei
+Frames verstreicht. Der FrameRendered Callback wird ausgelöst nachdem
+ein neues Frame auf die LEDs übertragen wurde.
+
+Wenn als Beispiel eine Aktualisierungsrate von 20 Frames pro Sekunde
+erreicht werden soll, sollte die Framelänge auf 50ms gesetzt werden.
+Nachdem die Framelänge gesetzt ist, muss das erste Frame übertragen werden
+(d.h. es müssen alle RGB Werte gesetzt werden). Danach muss auf den
+FrameRendered Callback gewartet werden woraufhin das nächste Frame
+übertragen werden muss usw.
+
+.. image:: /Images/Bricklets/bricklet_led_strip_fixed_frame_rate.png
+   :scale: 100 %
+   :alt: LEDs mit fester Aktualisierungsrate steuern
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_fixed_frame_rate.png
+
+Wenn ein FrameRendered Callback empfangen wird bevor alle LEDs eines frames
+gesetzt wurden, ist die Aktualisierungsrate zu hoch.
+
 .. _led_strip_bricklet_case:
 
 Gehäuse

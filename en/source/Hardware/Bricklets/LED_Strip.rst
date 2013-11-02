@@ -122,6 +122,52 @@ If everything went as expected you can now control a LED strip.
 
 |test_pi_ref|
 
+.. _led_strip_led_strips:
+
+LED Strips
+----------
+
+TODO:
+
+* How to use them?
+* Where to inject power?
+
+.. _led_strip_led_pixels:
+
+LED Pixels
+----------
+
+TODO:
+
+* How to use them?
+* Where to inject power?
+
+
+.. _led_strip_fixed_frame_rate:
+
+Fixed Frame Rate
+----------------
+
+To achieve a smooth animation a fixed frame rate is desirable. A fixed frame
+rate is easy to achieve with a properly configured frame duration and the 
+FrameRendered callback. The frame duration configures the amount of time
+between each frame in ms. The FrameRendered callback is triggered after
+a frame is transfered to the LEDs.
+
+For example, if you want to have an animation with 20 frames per second, you
+should set the frame duration to 50ms. After the frame duration is set you
+need to send the first frame (i.e. you need to set all rgb values), wait 
+until the FrameRendered callback is triggered, write the next frame and so on.
+
+.. image:: /Images/Bricklets/bricklet_led_strip_fixed_frame_rate.png
+   :scale: 100 %
+   :alt: Control LEDs with fixed frame rate
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_fixed_frame_rate.png
+
+If you receive a FrameRendered callback before all LEDs are set, your frame
+rate is too high.
+
 .. _led_strip_bricklet_case:
 
 Case
