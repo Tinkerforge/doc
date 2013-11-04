@@ -76,6 +76,7 @@ Allgemein:
 * ``--version`` zeigt Versionsnummer an
 * ``--check-config`` prüft Konfigurationsdatei auf Fehler
 * ``--debug`` setzt alle Log Level auf Debug
+* ``--libusb-debug`` setzt libusb Log Level auf Debug
 
 Spezifisch für Windows:
 

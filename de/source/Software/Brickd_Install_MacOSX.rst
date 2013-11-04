@@ -27,7 +27,7 @@ Ein Klick auf die Datei sollte das Disk Image öffnen:
 
 Danach muss auf ``INSTALL`` geklickt werden, es sollte ein
 Passwort-Abfrage geöffnet werden. Es kann aber auch folgende Fehlermeldung
-angezeigt werden:
+angezeigt werden for Brick Daemon 2.0.8 und ältere Versionen angezeigt werden:
 
 .. image:: /Images/Screenshots/brickd_macos_not_signed_1_small.jpg
    :scale: 100 %
@@ -36,10 +36,11 @@ angezeigt werden:
    :target: ../_images/Screenshots/brickd_macos_not_signed_1.jpg
 
 Seit Mac OS X Mountain Lion kann ausschließlich signierte Software installiert
-werden. Der Brick Daemon Installer ist im Moment nicht signiert. Daher kann
-es passieren, dass Mac OS X beim Versuch den Installer zu starten die oben
-gezeigte Fehlermeldung ausgibt. Als Ausweg können die Sicherheitseinstellungen
-kurzzeitig abgeschwächt werden, unter:
+werden. Der Brick Daemon Installer ist erst seit Version 2.0.9 signiert. Für
+Version 2.0.8 und älter kann es passieren, dass Mac OS X beim Versuch den
+Installer zu starten die obige Fehlermeldung anzeigt. Um Version 2.0.8 oder
+älter installieren zu können müssen die Sicherheitseinstellungen kurzzeitig
+abgeschwächt werden, unter:
 
 * Systemeinstellungen
 * Sicherheit
