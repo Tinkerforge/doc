@@ -7,7 +7,7 @@
 .. |connect| replace:: ``Connect()``
 .. |set_monoflop| replace:: ``SetMonoflop(selectionMask, 15, 500)``
 .. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
-.. |async_helper| replace:: ``BackgroundWorker``
+.. |async_helper| replace:: einem ``BackgroundWorker``
 
 .. include:: PowerOutletControl.substitutions
    :start-after: >>>substitutions

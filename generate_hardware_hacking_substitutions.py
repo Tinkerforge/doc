@@ -657,7 +657,7 @@ garage_control_steps = {
 .. |step2_async| replace::
  We don't want to call the |ref_connect| method directly, because it might take
  a moment and block the GUI during that period of time. Instead |connect| will
- be called by a |async_helper|, so it will run in the background and the GUI
+ be called from |async_helper|, so it will run in the background and the GUI
  stays responsive:
 
 .. |step2_finish| replace::
@@ -673,7 +673,7 @@ garage_control_steps = {
  The call to |set_monoflop| closes the first relay for 1.5s then opens it again.
 
 .. |step3_finish1| replace::
- That's it. If we would copy these three steps together in one file, we would
+ That's it. If we would copy these three steps together in one project, we would
  have a working app that allows a smart phone to control a garage door opener
  using its hacked remote control!
 
@@ -743,8 +743,8 @@ garage_control_steps = {
 .. |step2_async| replace::
  Die |ref_connect| Methode soll nicht direkt aufgerufen werden, da dies einen
  Moment dauern kann und in dieser Zeit die GUI nicht auf den Benutzer reagieren
- könnte. Daher wird |connect| aus einem |async_helper| aufgerufen werden, so
- dass es im Hintergrund ausgeführt und die GUI nicht blockiert wird:
+ könnte. Daher wird |connect| aus |async_helper| aufgerufen werden, so
+ dass es im Hintergrund ausgeführt und die GUI nicht blockiert wird
 
 .. |step2_finish| replace::
  Host, Port und UID können jetzt eingestellt werden und ein Klick auf den
@@ -760,7 +760,7 @@ garage_control_steps = {
  es dann wieder.
 
 .. |step3_finish1| replace::
- Das ist es. Wenn wir diese drei Schritte zusammen in eine Datei kopieren, dann
+ Das ist es. Wenn wir diese drei Schritte zusammen in ein Projekt kopieren, dann
  hätten wir jetzt eine funktionierende App, die es ermöglicht vom Smartphone
  aus den Garagentoröffner mittels dessen gehackter Fernbedienung zu steuern.
 
@@ -874,7 +874,7 @@ power_outlet_control_steps = {
 .. |step2_async| replace::
  We don't want to call the |ref_connect| method directly, because it might take
  a moment and block the GUI during that period of time. Instead |connect| will
- be called by a |async_helper|, so it will run in the background and the GUI
+ be called from |async_helper|, so it will run in the background and the GUI
  stays responsive:
 
 .. |step2_finish| replace::
@@ -961,7 +961,7 @@ power_outlet_control_steps = {
 .. |step2_async| replace::
  Die |ref_connect| Methode soll nicht direkt aufgerufen werden, da dies einen
  Moment dauern kann und in dieser Zeit die GUI nicht auf den Benutzer reagieren
- könnte. Daher wird |connect| aus einem |async_helper| aufgerufen werden, so
+ könnte. Daher wird |connect| aus |async_helper| aufgerufen werden, so
  dass es im Hintergrund ausgeführt und die GUI nicht blockiert wird:
 
 .. |step2_finish| replace::

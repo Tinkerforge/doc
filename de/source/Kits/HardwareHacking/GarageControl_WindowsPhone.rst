@@ -7,7 +7,7 @@
 .. |connect| replace:: ``Connect()``
 .. |set_monoflop| replace:: ``SetMonoflop(1 << 0, 1 << 0, 1500)``
 .. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
-.. |async_helper| replace:: ``BackgroundWorker``
+.. |async_helper| replace:: einem ``BackgroundWorker``
 
 .. include:: GarageControl.substitutions
    :start-after: >>>substitutions
