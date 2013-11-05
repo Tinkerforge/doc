@@ -307,6 +307,10 @@ Find the full project description :ref:`here
 
    NagiosOrIcinga
 
+The section about :ref:`further enhancements
+<starter_kit_server_room_monitoring_further_enhancements>` lists more
+Nagios/Icinga examples.
+
 
 .. _starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index:
 
@@ -368,6 +372,7 @@ The full project description can be found
 
    ExtendedNagios
 
+
 Remote On/Off Switch
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -383,3 +388,20 @@ A tutorial how a switch can be bypassed can be found at the
    :alt: Kit with Industrial Quad Relay Bricklet
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_iqr_1000.jpg
+
+
+Monitoring Server Rack Door with Distance IR Bricklet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Martin Seener developed a check for Nagios that uses a Distance IR Bricklet to
+detect if the door of a server rack was opened. The Distance IR Bricklet is
+mounted inside the server rack and measures the distance towards the closed
+door. If the distance changes significantly then the door was opened.
+
+To get a proper threshold the standard deviation of the distance measurements
+of the Distance IR Bricklets is calculated over a longer time. Martin Seener
+included a script for this task.
+
+This check is the first one in a `collection
+<https://github.com/martinseener/tinkerforge-nagios-checks>`__ of Nagios checks
+for Tinkerforge.

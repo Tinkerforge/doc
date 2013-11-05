@@ -311,6 +311,10 @@ Die vollständige Projektbeschreibung kann :ref:`hier
 
    NagiosOrIcinga
 
+Der Abschnitt über :ref:`Erweiterungsmöglichkeiten
+<starter_kit_server_room_monitoring_further_enhancements>` beinhaltet weitere
+Nagios/Icinga Beispiele.
+
 
 .. _starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index:
 
@@ -338,6 +342,8 @@ gefunden werden.
 
    UploadSensorDataToXively
 
+
+.. _starter_kit_server_room_monitoring_further_enhancements:
 
 Erweiterungsmöglichkeiten
 -------------------------
@@ -372,6 +378,7 @@ werden.
 
    ExtendedNagios
 
+
 Remote Ein/Aus Schalter
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -389,3 +396,20 @@ gefunden werden.
    :alt: Kit Mit Industrial Quad Relay Bricklet
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_iqr_1000.jpg
+
+
+Serverschranktür-Überwachung mit Distance IR Bricklet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Martin Seener hat einen Check für Nagios entwickelt, der mittels Distance IR
+Bricklet überwacht, ob die Serverschranktür geöffnet wurde. Dazu ist das
+Distance IR Bricklet im Serverschrank montiert und misst die Distanz zur
+geschlossenen Tür. Ändert sich die Distanz signifikant wurde die Tür geöffnet.
+
+Um einen passenden Schwellwert für den Check zu ermitteln wird über einen
+längeren Zeitraum die Standardabweichung der Messwerte des Distance IR Bricklets
+ermittelt. Auch dafür stellt Martin Seener ein Script zur Verfügung.
+
+Dieser Check ist der erste in einer `Sammlung
+<https://github.com/martinseener/tinkerforge-nagios-checks>`__ von Nagios Checks
+für Tinkerforge.
