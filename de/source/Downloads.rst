@@ -41,23 +41,17 @@ Für Linux Distributionen die kein ``.deb`` verwenden, können der
 Brick Daemon und Brick Viewer auch basierend auf dem Quelltext installiert
 werden.
 
-Ältere Versionen sind `hier <http://download.tinkerforge.com/tools/>`__
-verfügbar.
-
 
 .. _downloads_bindings_examples:
 
 Bindings und Beispiele
 ----------------------
 
-.. include:: Downloads_bindings.table
-
 Das ZIP für die jeweilige Programmiersprache beinhaltet Bindings für alle Bricks
 und Bricklets sowie alle verfügbaren Beispiele. Ein Tutorial wie die Bindings zu
 benutzen sind ist :ref:`hier <api_bindings>` zu finden.
 
-Ältere Versionen sind `hier <http://download.tinkerforge.com/bindings/>`__
-verfügbar.
+.. include:: Downloads_bindings.table
 
 
 .. _downloads_firmwares_plugins:
@@ -65,11 +59,8 @@ verfügbar.
 Brick Firmwares und Bricklet Plugins
 ------------------------------------
 
-.. include:: Downloads_firmwares.table
-
 Brick Firmwares und Bricklet Plugins können mit dem Brick Viewer aktualisiert
 werden (siehe :ref:`Tutorial für Bricks <brickv_flash_firmware>` und
 :ref:`Tutorial für Bricklets <brickv_flash_plugin>`).
 
-Ältere Versionen sind `hier <http://download.tinkerforge.com/firmwares/>`__
-verfügbar.
+.. include:: Downloads_firmwares.table

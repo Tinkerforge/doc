@@ -38,21 +38,17 @@ onto Bricks and Bricklets.
 If you use a Linux distribution that does not use ``.deb``, you can
 install the Brick Viewer and the Brick Daemon from source.
 
-Older Versions can be found `here <http://download.tinkerforge.com/tools/>`__.
-
 
 .. _downloads_bindings_examples:
 
 Bindings and Examples
 ---------------------
 
-.. include:: Downloads_bindings.table
-
 The ZIP for each language contains bindings for all Bricks and Bricklets and all
 available examples for the language. A tutorial on how to use the bindings can
 be found :ref:`here <api_bindings>`.
 
-Older Versions can be found `here <http://download.tinkerforge.com/bindings/>`__.
+.. include:: Downloads_bindings.table
 
 
 .. _downloads_firmwares_plugins:
@@ -60,10 +56,8 @@ Older Versions can be found `here <http://download.tinkerforge.com/bindings/>`__
 Brick Firmwares and Bricklet Plugins
 ------------------------------------
 
-.. include:: Downloads_firmwares.table
-
 Brick firmwares and Bricklet plugins can be flashed onto Bricks and
 Bricklets with the Brick Viewer (see :ref:`tutorial for Bricks
 <brickv_flash_firmware>` and :ref:`tutorial for Bricklets <brickv_flash_plugin>`).
 
-Older Versions can be found `here <http://download.tinkerforge.com/firmwares/>`__.
+.. include:: Downloads_firmwares.table

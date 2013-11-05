@@ -400,36 +400,51 @@ download_tools_source_code = {
 'de': 'Quelltext'
 }
 
+download_tools_archive = {
+'en': 'Archive',
+'de': 'Archiv'
+}
+
 download_tools_table_head = {
 'en':
 """.. csv-table::
- :header: "Tool", "Current Version (Download)", "Changelog"
+ :header: "Tool", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 15, 40, 8
+ :widths: 15, 32, 6, 6, 8
 
 """,
 'de':
 """.. csv-table::
- :header: "Tool", "Aktuelle Version (Download)", "Changelog"
+ :header: "Tool", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 15, 40, 8
+ :widths: 15, 32, 6, 6, 8
 
 """
+}
+
+download_bindings_bindings_and_examples = {
+'en': 'Bindings and Examples',
+'de': 'Bindings und Beispiele'
+}
+
+download_bindings_archive = {
+'en': 'Archive',
+'de': 'Archiv'
 }
 
 download_bindings_table_head = {
 'en':
 """.. csv-table::
- :header: "Language", "Current Version (Download)", "Changelog"
+ :header: "Language", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 15, 40, 8
+ :widths: 17, 30, 6, 6, 8
 
 """,
 'de':
 """.. csv-table::
- :header: "Sprache", "Aktuelle Version (Download)", "Changelog"
+ :header: "Sprache", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
- :widths: 15, 40, 8
+ :widths: 17, 30, 6, 6, 8
 
 """
 }
@@ -439,12 +454,17 @@ download_firmwares_source_code = {
 'de': 'Quelltext'
 }
 
+download_firmwares_archive = {
+'en': 'Archive',
+'de': 'Archiv'
+}
+
 download_firmwares_table_head = {
 'en':
 """.. csv-table::
- :header: "", "Current Version (Download)", "Changelog"
+ :header: "", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
- :widths: 15, 40, 8
+ :widths: 17, 30, 6, 6, 8
 
  **Bricks** | |
 {0}
@@ -453,9 +473,9 @@ download_firmwares_table_head = {
  {1}""",
 'de':
 """.. csv-table::
- :header: "", "Aktuelle Version (Download)", "Changelog"
+ :header: "", "Downloads","Version",  "Archiv", "Changelog"
  :delim: |
- :widths: 15, 40, 8
+ :widths: 17, 30, 6, 6, 8
 
  **Bricks** | |
 {0}
@@ -670,9 +690,10 @@ def make_product_overview_table(devices, category, add_category_to_name=True):
 
 def make_download_tools_table():
     source_code = download_tools_source_code[lang]
+    archive = download_tools_archive[lang]
     table_head = download_tools_table_head[lang]
-    row_multi_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - Linux (`amd64 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_amd64.deb>`__, `i386 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_i386.deb>`__, `armhf <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_armhf.deb>`__), `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{3}.{4}.{5}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
-    row_all_cell = ' :ref:`{0} <{1}>` | {3}.{4}.{5} - `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{3}.{4}.{5}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{3}_{4}_{5}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{3}_{4}_{5}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{3}.{4}.{5}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
+    row_multi_cell = ' :ref:`{0} <{1}>` | Linux (`amd64 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_amd64.deb>`__, `i386 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_i386.deb>`__, `armhf <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_armhf.deb>`__), `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
+    row_all_cell = ' :ref:`{0} <{1}>` | `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.github.com/Tinkerforge/{1}/master/changelog>`__'
     rows = []
 
     for tool in tools:
@@ -681,35 +702,38 @@ def make_download_tools_table():
         else:
             row_cell = row_all_cell
 
-        rows.append(row_cell.format(tool[0], tool[1], source_code, *tool_versions[tool[1]]))
+        rows.append(row_cell.format(tool[0], tool[1], source_code, archive, *tool_versions[tool[1]]))
 
     return table_head + '\n'.join(rows) + '\n'
 
 def make_download_bindings_table():
+    bindings_and_examples = download_bindings_bindings_and_examples[lang]
+    archive = download_bindings_archive[lang]
     table_head = download_bindings_table_head[lang]
-    row_cell = ' `{0} <http://www.tinkerforge.com/' + lang + '/doc/Software/API_Bindings_{2}.html>`__ | `{3}.{4}.{5} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{3}_{4}_{5}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
+    row_cell = ' `{0} <http://www.tinkerforge.com/' + lang + '/doc/Software/API_Bindings_{2}.html>`__ | `{4} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{5}_{6}_{7}.zip>`__ | {5}.{6}.{7} | `{3} <http://download.tinkerforge.com/bindings/{1}/>`__ | `Changelog <https://raw.github.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
     rows = []
 
     for binding in bindings:
         if binding[2]:
-            rows.append(row_cell.format(binding[0], binding[1], binding[3], *bindings_versions[binding[1]]))
+            rows.append(row_cell.format(binding[0], binding[1], binding[3], archive, bindings_and_examples, *bindings_versions[binding[1]]))
 
     return table_head + '\n'.join(rows) + '\n'
 
 def make_download_firmwares_table():
+    archive = download_firmwares_archive[lang]
     source_code = download_firmwares_source_code[lang]
     table_head = download_firmwares_table_head[lang]
-    brick_row_cell = ' :ref:`{0} <{1}_brick>` | {4}.{5}.{6} - `Firmware <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_{4}_{5}_{6}.bin>`__, `{3} <https://github.com/Tinkerforge/{2}-brick/archive/v{4}.{5}.{6}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-brick/master/software/changelog>`__'
-    bricklet_row_cell = ' :ref:`{0} <{1}_bricklet>` | {5}.{6}.{7} - `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{3}/bricklet_{3}_firmware_{5}_{6}_{7}.bin>`__, `{4} <https://github.com/Tinkerforge/{2}-bricklet/archive/v{5}.{6}.{7}.zip>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
+    brick_row_cell = ' :ref:`{0} <{1}_brick>` | `Firmware <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_{5}_{6}_{7}.bin>`__, `{3} <https://github.com/Tinkerforge/{2}-brick/archive/v{5}.{6}.{7}.zip>`__ | {5}.{6}.{7} | `{4} <http://download.tinkerforge.com/firmwares/bricks/{1}/>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-brick/master/software/changelog>`__'
+    bricklet_row_cell = ' :ref:`{0} <{1}_bricklet>` | `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{3}/bricklet_{3}_firmware_{6}_{7}_{8}.bin>`__, `{4} <https://github.com/Tinkerforge/{2}-bricklet/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/bricklets/{1}/>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
     brick_rows = []
     bricklet_rows = []
 
     for brick in bricks:
         if len(brick[2]) > 0 and brick[4]:
-            brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), source_code, *firmware_versions[brick[1]]))
+            brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), source_code, archive, *firmware_versions[brick[1]]))
 
     def handle_bricklet(name, common_url_part, plugin_url_part):
-        bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, source_code, *plugin_versions[plugin_url_part]))
+        bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, source_code, archive, *plugin_versions[plugin_url_part]))
 
     for bricklet in bricklets:
         if len(bricklet[2]) > 0 and bricklet[4]:
