@@ -353,7 +353,6 @@ verwendet werden. Mittels ``AlertDialog`` werden mögliche Probleme gemeldet:
 
     class ConnectAsyncTask extends AsyncTask<Void, Void, ConnectResult> {
         // [...]
-        private ProgressDialog progressDialog;
 
         @Override
         protected void onPreExecute() {
@@ -369,6 +368,9 @@ verwendet werden. Mittels ``AlertDialog`` werden mögliche Probleme gemeldet:
                 return;
             }
         }
+
+        // [...]
+    }
 
 Der ``ConnectAsyncTask`` bekommt auch einen ``ProgressDialog`` um auf den
 laufenden Verbindungsversuch hinzuweisen:
@@ -388,6 +390,9 @@ laufenden Verbindungsversuch hinzuweisen:
             progressDialog.setCancelable(false);
             progressDialog.show();
         }
+
+        // [...]
+    }
 
 Dann benötigt die ``doInBackground()`` Methode noch eine Möglichkeit das
 Ergebnis des Verbindungsversuchs mitzuteilen. Sie darf zwar nicht direkt mit

@@ -345,7 +345,6 @@ The ``ConnectAsyncTask`` has to validate the user input before using it. An
 
     class ConnectAsyncTask extends AsyncTask<Void, Void, ConnectResult> {
         // [...]
-        private ProgressDialog progressDialog;
 
         @Override
         protected void onPreExecute() {
@@ -361,6 +360,9 @@ The ``ConnectAsyncTask`` has to validate the user input before using it. An
                 return;
             }
         }
+
+        // [...]
+    }
 
 The ``ConnectAsyncTask`` also gains a ``ProgressDialog`` to show the connection
 process:
@@ -380,6 +382,9 @@ process:
             progressDialog.setCancelable(false);
             progressDialog.show();
         }
+
+        // [...]
+    }
 
 Then the ``doInBackground()`` method needs to be able to report its result. But
 it is not allowed to interact with the GUI, but it can return a value that is
