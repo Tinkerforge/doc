@@ -134,10 +134,10 @@ Resources
 ---------
 
 * Server Room Monitoring Kit case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
-* Example source code *Simple Monitoring* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/simple_monitoring/check_tf_temp_simple.sh>`__)
-* Example source code *Nagios/Icinga Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
-* Example source code *Nagios/Icinga Extended Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
-* Example source code *Upload Sensor Data to Xively* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
+* Example source code for :ref:`Simple Monitoring <starter_kit_server_room_monitoring_simple_monitoring>` (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/simple_monitoring/check_tf_temp_simple.sh>`__)
+* Example source code for :ref:`Nagios/Icinga Plugin <starter_kit_server_room_monitoring_nagios_or_icinga_index>` (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
+* Example source code for :ref:`Nagios/Icinga Extended Plugin <starter_kit_server_room_monitoring_extended_nagios_index>` (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
+* Example source code for :ref:`Upload Sensor Data to Xively <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>` (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
 
 First tests, firmware upgrade and configuration
 ------------------------------------------------
@@ -198,6 +198,8 @@ There are several applications for the Starter Kit: Server Room Monitoring. In
 the following we are showing some examples which can act as a starting point
 for your own projects.
 
+
+.. _starter_kit_server_room_monitoring_simple_monitoring:
 
 Simple Monitoring
 ^^^^^^^^^^^^^^^^^
@@ -272,6 +274,8 @@ degree Celsius and how to save it in a variable for further use.
  echo $temp
 
 
+.. _starter_kit_server_room_monitoring_nagios_or_icinga_index:
+
 Server Room Monitoring with Nagios or Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -304,6 +308,8 @@ Find the full project description :ref:`here
    NagiosOrIcinga
 
 
+.. _starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index:
+
 Upload Sensor Data to Xively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -327,6 +333,8 @@ The full project description can be found :ref:`here
    UploadSensorDataToXively
 
 
+.. _starter_kit_server_room_monitoring_further_enhancements:
+
 Further Enhancements
 --------------------
 
@@ -334,6 +342,9 @@ If you have modded, extended or improved the kit
 in any way and you have published your results on our 
 `Wiki <http://www.tinkerunity.org/wiki/>`__, on your blog or similar: 
 Please give us a notice. We would love to add a link to your project here!
+
+
+.. _starter_kit_server_room_monitoring_extended_nagios_index:
 
 Motion Detector and Error Code Display
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

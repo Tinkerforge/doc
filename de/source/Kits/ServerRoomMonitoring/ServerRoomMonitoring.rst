@@ -135,10 +135,10 @@ Ressourcen
 ----------
 
 * Serverraum-Überwachung Kit Gehäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
-* Beispielcode *Simple Monitoring* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/simple_monitoring/check_tf_temp_simple.sh>`__)
-* Beispielcode *Nagios/Icinga Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
-* Beispielcode *Nagios/Icinga Extended Plugin* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
-* Beispielcode *Sensordaten an Xively übertragen* (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
+* Beispielquelltext für :ref:`Einfaches Monitoring <starter_kit_server_room_monitoring_simple_monitoring>` (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/simple_monitoring/check_tf_temp_simple.sh>`__)
+* Beispielquelltext für :ref:`Nagios/Icinga Plugin <starter_kit_server_room_monitoring_nagios_or_icinga_index>` (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
+* Beispielquelltext für :ref:`Nagios/Icinga Extended Plugin <starter_kit_server_room_monitoring_extended_nagios_index>` (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
+* Beispielquelltext für :ref:`Sensordaten an Xively übertragen <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>` (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
 
 Erste Tests, Firmware-Aktualisierung und Konfiguration
 ------------------------------------------------------
@@ -201,6 +201,8 @@ Projekte
 Es gibt verschiedene Anwendungen für das Starterkit: Serverraum-Überwachung. 
 Nachfolgend werden Beispiele präsentiert, die als Startpunkt für eigene Projekte
 dienen können.
+
+.. _starter_kit_server_room_monitoring_simple_monitoring:
 
 Einfaches Monitoring
 ^^^^^^^^^^^^^^^^^^^^
@@ -276,6 +278,8 @@ weitere Benutzung gespeichert werden kann.
  echo $temp
 
 
+.. _starter_kit_server_room_monitoring_nagios_or_icinga_index:
+
 Serverraum-Überwachung mit Nagios oder Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -308,6 +312,8 @@ Die vollständige Projektbeschreibung kann :ref:`hier
    NagiosOrIcinga
 
 
+.. _starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index:
+
 Sensordaten an Xively übertragen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -339,8 +345,11 @@ Erweiterungsmöglichkeiten
 Gerne führen wir hier Mods, Erweiterungen oder Verbesserungen des Kits auf. 
 Bitte gebt uns Bescheid, wir verlinken hier gerne eure Projekte.
 
-Bewegungs-Detektor und Fehlercode Anzeige
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _starter_kit_server_room_monitoring_extended_nagios_index:
+
+Bewegungsmelder und Fehlercode Anzeige
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Das 19" Gehäuse ist bereits mit Aussparungen für ein Motion Detector Bricklet
 (bald verfügbar) und ein Segment Display 4x7 Bricklet (ebenfalls bald verfügbar)
