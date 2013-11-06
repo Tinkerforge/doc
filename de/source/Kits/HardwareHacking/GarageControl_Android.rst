@@ -6,7 +6,7 @@
 .. |ref_connect| replace:: :java:func:`connect() <IPConnection::connect>`
 .. |connect| replace:: ``connect()``
 .. |set_monoflop| replace:: ``setMonoflop(1 << 0, 15, 1500)``
-.. |ref_get_identity| replace:: :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>`
+.. |ref_get_identity| replace:: :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>` Methode
 .. |async_helper| replace:: einem ``AsyncTask``
 
 .. include:: GarageControl.substitutions

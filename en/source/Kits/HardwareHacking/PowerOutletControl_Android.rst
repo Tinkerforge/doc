@@ -6,7 +6,7 @@
 .. |ref_connect| replace:: :java:func:`connect() <IPConnection::connect>`
 .. |connect| replace:: ``connect()``
 .. |set_monoflop| replace:: ``setMonoflop(selectionMask, 15, 500)``
-.. |ref_get_identity| replace:: :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>`
+.. |ref_get_identity| replace:: :java:func:`getIdentity() <BrickletIndustrialQuadRelay::getIdentity>` method
 .. |async_helper| replace:: an ``AsyncTask``
 
 .. include:: PowerOutletControl.substitutions

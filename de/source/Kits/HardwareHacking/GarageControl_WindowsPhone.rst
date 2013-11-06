@@ -6,7 +6,7 @@
 .. |ref_connect| replace:: :csharp:func:`Connect() <IPConnection::Connect>`
 .. |connect| replace:: ``Connect()``
 .. |set_monoflop| replace:: ``SetMonoflop(1 << 0, 1 << 0, 1500)``
-.. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
+.. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>` Methode
 .. |async_helper| replace:: einem ``BackgroundWorker``
 
 .. include:: GarageControl.substitutions
@@ -58,7 +58,8 @@ das dann alle weiteren GUI Elemente aufnehmen wird. Drei "TextBoxes" ermögliche
 die Eingabe von Host, Port und UID des Industrial Quad Relay Bricklets. Für die
 Port Textbox wird das Attribut ``InputScope="Number"`` gesetzt, dadurch wird
 Windows Phone den Inhalt dieser Textbox auf Zahlen beschränken. Unterhalb der
-Textboxen folgt eine "ProgressBar" die einen laufenden Verbindungsversuch
+Textboxen folgt eine "ProgressBar" (nicht sichtbar im Screenshot) die einen
+laufenden Verbindungsversuch
 anzeigen wird. Die letzten beiden Elemente sind die "Button" für den Aufbau und
 das Trennen der Verbindung sowie das Auslösen eines Tastendrucks auf der
 gehackten Fernbedienung. Hier ein Auszug aus der ``MainPage.xaml`` Datei:

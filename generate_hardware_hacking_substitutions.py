@@ -710,7 +710,7 @@ garage_control_steps = {
  Relay Bricklet with the given UID.
 
 .. |step5_check_identity| replace::
- The |ref_get_identity| method is used to check that the device for the given
+ The |ref_get_identity| is used to check that the device for the given
  UID really is an Industrial Quad Relay Bricklet. If this is not the case then
  the connection gets closed:
 
@@ -799,7 +799,7 @@ garage_control_steps = {
  Relay Bricklet mit passender UID gefunden.
 
 .. |step5_check_identity| replace::
- Mit der |ref_get_identity| Methode wird überprüft, ob die angegebene UID
+ Mit der |ref_get_identity| wird überprüft, ob die angegebene UID
  wirklich zu einem Industrial Quad Relay Bricklet gehört. Falls das nicht der
  Fall ist wird die Verbindung getrennt:
 
@@ -891,7 +891,7 @@ power_outlet_control_steps = {
  again.
 
 .. |step3_finish1| replace::
- That's it. If we would copy these three steps together in one file, we would
+ That's it. If we would copy these three steps together in one project, we would
  have a working app that allows a smart phone to control remote mains switches
  using their hacked remote control!
 
@@ -906,7 +906,7 @@ power_outlet_control_steps = {
 
 .. |step4_disabled_gui| replace::
  Finally, the user should not be able to change the content of the text fields
- during the time the connection gets established and the trigger button should
+ during the time the connection gets established and the trigger buttons should
  not be clickable if there is no connection.
 
 .. |step4_robust1| replace::
@@ -928,7 +928,7 @@ power_outlet_control_steps = {
  Relay Bricklet with the given UID.
 
 .. |step5_check_identity| replace::
- The |ref_get_identity| method is used to check that the device for the given
+ The |ref_get_identity| is used to check that the device for the given
  UID really is an Industrial Quad Relay Bricklet. If this is not the case then
  the connection gets closed:
 
@@ -978,7 +978,7 @@ power_outlet_control_steps = {
  öffnet es dann wieder.
 
 .. |step3_finish1| replace::
- Das ist es. Wenn wir diese drei Schritte zusammen in eine Datei kopieren, dann
+ Das ist es. Wenn wir diese drei Schritte zusammen in ein Projekt kopieren, dann
  hätten wir jetzt eine funktionierende App, die es ermöglicht vom Smartphone
  aus Funksteckdosen mittels deren gehackter Fernbedienung zu steuern.
 
@@ -994,8 +994,8 @@ power_outlet_control_steps = {
 
 .. |step4_disabled_gui| replace::
  Außerdem sollte der Benutzer nicht den Inhalt der Eingabefelder ändern können
- solange die Verbindung aufgebaut wird oder besteht und der Trigger-Knopf sollte
- nicht klickbar sein wenn keine Verbindung besteht.
+ solange die Verbindung aufgebaut wird oder besteht und die Trigger-Knöpfe
+ sollten nicht klickbar sein wenn keine Verbindung besteht.
 
 .. |step4_robust1| replace::
  Das Programm ist noch nicht robust genug. Was passiert wenn die Verbindung
@@ -1017,7 +1017,7 @@ power_outlet_control_steps = {
  Relay Bricklet mit passender UID gefunden.
 
 .. |step5_check_identity| replace::
- Mit der |ref_get_identity| Methode wird überprüft, ob die angegebene UID
+ Mit der |ref_get_identity| wird überprüft, ob die angegebene UID
  wirklich zu einem Industrial Quad Relay Bricklet gehört. Falls das nicht der
  Fall ist wird die Verbindung getrennt:
 

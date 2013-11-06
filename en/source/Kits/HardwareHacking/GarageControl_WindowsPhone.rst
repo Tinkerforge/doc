@@ -6,7 +6,7 @@
 .. |ref_connect| replace:: :csharp:func:`Connect() <IPConnection::Connect>`
 .. |connect| replace:: ``Connect()``
 .. |set_monoflop| replace:: ``SetMonoflop(1 << 0, 15, 1500)``
-.. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>`
+.. |ref_get_identity| replace:: :csharp:func:`GetIdentity() <BrickletIndustrialQuadRelay::GetIdentity>` method
 .. |async_helper| replace:: a ``BackgroundWorker``
 
 .. include:: GarageControl.substitutions
@@ -57,7 +57,8 @@ grid, that will contain the other GUI elements. Three "TextBoxes" allow
 to enter the host, port and UID of the Industrial Quad Relay Bricklet. For the
 port a text box with ``InputScope="Number"`` is used, so Windows Phone will
 restrict the content of this text box to numbers. Below the text boxes goes a
-"ProgressBar" that will be used to indicate that a connection attempt is in
+"ProgressBar" (not visible on screenshot) that will be used to indicate that a
+connection attempt is in
 progress. The final two elements are one "Button" to connect and
 disconnect and another one to trigger the remote control. Here is a snippet of
 the ``MainPage.xaml`` file:
