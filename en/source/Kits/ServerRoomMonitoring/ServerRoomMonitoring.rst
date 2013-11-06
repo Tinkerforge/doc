@@ -61,7 +61,7 @@ Features
 * Allows Low Cost and Modular Server Room Monitoring 
 * 19" Rack Mountable (1U)
 * Accessible and Powered over Ethernet (`PoE <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__) 
-* Expandable: Simply add extra Sensors and I/O moduls as needed
+* Expandable: Simply add extra Sensors and I/O modules as needed
 * API for many programming languages: |bindings|
 * Open Source Soft- and Hardware
 * `Nagios <http://www.nagios.org/>`__ and `Icinga <https://www.icinga.org/>`__ supported
