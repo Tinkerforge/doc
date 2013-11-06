@@ -126,16 +126,22 @@ Delay Time and Block Time
 
 TODO Image
 
-TODO correct title?
-
 The sensor is equipped with two potentiometers. With the TODO potentiometer it
 is possible to adjust the sensitivity of the sensor. This way the detection 
-range can be adjusted. Rotate the potentiometer clockwise and it will TODO
-the range. 
+range can be adjusted (3-7m). Rotate the potentiometer clockwise will 
+TODO the range. 
 
-The potentiometer on the TODO side can be used to set the block time of the 
-sensor. It is the time the sensor holds its state when motion was detected.
-Rotate the potentiometer clockwise and it will TODO the block time.
+The potentiometer on the TODO side can be used to set the delay time of the 
+sensor (5s-200s). It is the time the sensor holds its state when motion was 
+detected. Rotate the potentiometer clockwise and it will TODO the delay time.
+
+The block time is fixed with 2.5s. What does it mean? After the 
+sensor has detected motion and the motion has stopped the sensor will go in the
+"no motion detected" state. This state will be held for 2.5 seconds 
+indepentent if there is any motion. After 2.5 seconds the sensor will again 
+detect motion if there is any.
+
+
 
 .. _motion_detector_bricklet_case:
 

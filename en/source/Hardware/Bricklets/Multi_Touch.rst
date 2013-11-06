@@ -123,6 +123,21 @@ If everything went as expected you can now see the current state.
 
 |test_pi_ref|
 
+Create own Touch Pads/ Adjust Sensitivity
+-----------------------------------------
+
+TODO Image
+
+You can create simple touch pads by using stripped wires. To create real pads
+you can use self-adhesive aluminium tape to create the pad and connect the wire
+to it. Since it is a capacitive technology you can cover your self created touch 
+panel with thin non-conductive materials.
+
+Dependend on your touch pads it might be necessary to adjust the sensitivity.
+Use the Brick Viewer Software to play around with it by changing the value until
+you have found a satisfying sensitivity. To take over the entered value press
+"Recalibrate".
+
 .. _multi_touch_bricklet_case:
 
 Case
