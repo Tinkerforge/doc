@@ -62,16 +62,14 @@ Features
 Description
 -----------
 
-The Line Bricklet is equipped with a reflective optical sensor. The sensor
-consists of an infrared emitter and phototransistor. Output of the sensor
-is the reflectivity a surface. 
+The Line Bricklet is equipped with a reflective optical sensor. The sensor 
+consists of an infrared emitter and a phototransistor. Output of the sensor is 
+the reflectivity of a surface. 
 
 The reflectivity value can be used to detect
 and follow lines (e.g. a black line has a different reflectivity then
-a white background). 
-
-The Line Bricklet can also be used to measure the distance to a surface, since the
-reflectivity decreases with increased distance.
+a white background). The Line Bricklet can also be used to measure the distance 
+to a surface, since the reflectivity decreases with increased distance.
 
 Technical Specifications
 ------------------------
@@ -99,7 +97,7 @@ Resources
 .. _line_bricklet_test:
 
 Test your Line Bricklet
-------------------------------
+-----------------------
 
 |test_intro|
 
@@ -115,7 +113,7 @@ Test your Line Bricklet
 If everything went as expected you can now see the currently measured
 reflectivity.
 
-.. FIXME image:: /Images/Bricklets/bricklet_line_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_line_brickv.jpg
    :scale: 100 %
    :alt: Line Bricklet in Brick Viewer
    :align: center
@@ -123,6 +121,13 @@ reflectivity.
 
 |test_pi_ref|
 
+Mounting of the Line Bricklet
+-----------------------------
+
+To be used as a line detector the Bricklet has to be mounted with
+a fixed distance to the line. The mounting distance depends on the 
+reflectiveness of the line and the underground and has to be found out by
+trail and error.
 
 .. _line_bricklet_programming_interfaces:
 

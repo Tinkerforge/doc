@@ -64,7 +64,7 @@ Description
 
 The Hall Effect Bricklet can detect the presence of magnetic fields.
 It counts the appearances of magnetic fields and can thus be used to
-measure the speed of a wheel.
+measure the speed of a wheel with attached magnet.
 
 Example applications are:
 
@@ -77,7 +77,7 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Operation                         Omnipolar (North and South pole are detected)
+Operation                         Omnipolar (North and South pole is detected)
 Operation Point                   -35/35 Gauss
 Release Point                     -25/25 Gauss
 --------------------------------  ------------------------------------------------------------
@@ -114,7 +114,7 @@ Test your Hall Effect Bricklet
 If everything went as expected you can now see the detection of a
 magnetic field.
 
-.. FIXME image:: /Images/Bricklets/bricklet_hall_effect_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_hall_effect_brickv.jpg
    :scale: 100 %
    :alt: Hall Effect Bricklet in Brick Viewer
    :align: center

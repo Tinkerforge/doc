@@ -55,14 +55,14 @@ Dual Button Bricklet
 Features
 --------
 
-* Two tactile Buttons with built-in LED
+* Two tactile Buttons with built-in blue LED
 * LED auto-toggle possible
 
 Description
 -----------
 
 The Dual Button Bricklet is equipped with two buttons. Both buttons have a
-built-in blue LED. You can read the current value of the button 
+built-in blue LED. You can read the current state of the button 
 (pressed/released) and of the LED (on/off). You can turn the LED on/off
 yourself or enable auto-toggle. In auto-toggle mode the LEDs are toggled
 between on/off with each button press.
@@ -114,7 +114,7 @@ Test your Dual Button Bricklet
 If everything went as expected you can now see button presses and
 change the state of the LED.
 
-.. FIXME image:: /Images/Bricklets/bricklet_dual_button_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_dual_button_brickv.jpg
    :scale: 100 %
    :alt: Dual Button Bricklet in Brick Viewer
    :align: center

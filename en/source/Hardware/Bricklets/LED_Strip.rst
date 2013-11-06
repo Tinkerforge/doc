@@ -55,7 +55,7 @@ LED Strip Bricklet
 Features
 --------
 
-* Controls up to 960 LEDs (320 RGB LEDs)
+* Controls up to 320 RGB LEDs
 * All LEDs can be switched independently
 * Update rate of up to 100Hz for each LED possible
 
@@ -63,8 +63,8 @@ Description
 -----------
 
 The LED Strip Bricklet can be used to control LED strips that are equipped
-with the WS2801 LED driver. It is possible to independently control 960
-different LEDs. 
+with the WS2801 LED driver. It is possible to independently control 320 RGB LEDs
+(960 different LEDs). 
 
 The API allows to change all LEDs at the same time with a fixed update rate
 of up to 100Hz.
@@ -114,7 +114,7 @@ Test your LED Strip Bricklet
 |test_tab|
 If everything went as expected you can now control a LED strip.
 
-.. FIXME image:: /Images/Bricklets/bricklet_led_strip_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_led_strip_brickv.jpg
    :scale: 100 %
    :alt: LED Strip Bricklet in Brick Viewer
    :align: center
@@ -122,6 +122,78 @@ If everything went as expected you can now control a LED strip.
 
 |test_pi_ref|
 
+
+
+.. _led_strip_ws2801:
+
+WS2801
+------
+
+At the moment the LED Strip Bricklets only supports LED strips and pixels 
+equipped with WS2801 controllers. 
+
+Technical speaking the WS2811 IC can control three LEDs independently, 
+typically used for R,G,B LEDs combined in one package. It is controlled over
+a three wire chained data bus with clock and data signal (and ground for 
+reference). Each WS2811 chip has a bus input 
+,connected to a controlling device like the LED Strip Bricklet or to a WS2801 
+predecessor, and a bus output which can be connected to a subsequent 
+WS2801. Since it is a chained bus, a signle bus output has to be connected only 
+to a single bus input. The bus is indexed beginning with the first WS2811 on the 
+LED Strip Bricklet (API index 0).
+
+TODO Image: LED Strip Bricklet + LED Strip with marked signals and WS2811
+
+.. _led_strip_connectivity:
+
+Connectivity
+------------
+
+The following picture depicts the interfaces of the LED Strip Bricklet.
+
+.. FIXME image:: /Images/Bricklets/bricklet_led_strip_connection_600.jpg
+   :scale: 100 %
+   :alt: LED Strip Bricklet Interface Description
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
+
+As described in the :ref:`WS2811 section <led_strip_ws2811>` above
+the Bricklet supports pixels and stripes with WS2811 controller.
+The terminal labeled with "Output" has to be connected with the input of
+the first WS2811 controller.
+
+The output terminal consisting of four signals:
+
+ * "DAT" is the data signal line to the WS2801 chip. It has to be connected with
+   the data input of the first WS2801. Unfortunately there is no 
+   general label on LED pixels or on LED strips for this input. Sometimes the 
+   signal is marked with SD (Serial Data) or DI (Data Input). It is also 
+   possible that the input of the pixel or strip is not marked, but the output 
+   is marked (DO, Data Output). Therefore, if the output is marked, the non 
+   marked other side has to be the input.
+
+ * "CLK" is the clock signal line to the WS2801 chip. It has to be connected 
+   with the clock input of the first WS2801. This input is typically labeled 
+   with CLK, CK or CI (Clock Input). If only the output is labeled it can be 
+   labeled with CO (Clock Output).
+
+ * "-" is the ground signal line. Ground is necessary to give a reference for the
+   DAT and CLK signals. So it has to be connected.
+
+ * "+" is the supply voltage output. It is connected to the "+" signal of the
+   "Input" terminal and should not be used to power LED Strips or pixels. So 
+   leave it unconnected.
+  
+
+The input terminal consisting of two signals:
+
+ * "+" voltage supply input. It can be connected to the power supply for the 
+   LEDs to measure the supplied voltage. If you don't need this feature you
+   can leave it unconnected.
+
+ * "-" is the ground input. It is internally connected with the "-" ground of 
+   the "OUTPUT" terminal. 
+   
 .. _led_strip_led_strips:
 
 LED Strips

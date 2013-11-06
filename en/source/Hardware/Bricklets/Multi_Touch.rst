@@ -55,7 +55,8 @@ Multi Touch Bricklet
 Features
 --------
 
-* Detects touch of finger at 12 different locations
+* Capacative Touch Sensor
+* Can handle up to 12 electrodes used as touch locations
 * Touch can be detected through a small layer of glass/plastic/paper
 * Size and placement of touch area can be user defined
 * Can be used to build custom touch panel
@@ -114,7 +115,7 @@ Test your Multi Touch Bricklet
 |test_tab|
 If everything went as expected you can now see the current state.
 
-.. FIXME image:: /Images/Bricklets/bricklet_multi_touch_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_multi_touch_brickv.jpg
    :scale: 100 %
    :alt: Multi Touch Bricklet in Brick Viewer
    :align: center

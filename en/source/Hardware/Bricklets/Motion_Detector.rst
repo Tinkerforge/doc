@@ -55,6 +55,7 @@ Motion Detector Bricklet
 Features
 --------
 
+* Passive Infrared Sensor
 * Detects motion in distances of up to 7m (configurable)
 * High sensing angle (100°)
 
@@ -62,11 +63,11 @@ Description
 -----------
 
 The Motion Detector Bricklet is equipped with a passive infrared (PIR) sensor.
-It can be used to sense movement of people. It has a configurable detection
-range of 3m to 7m with a sensing angle of 100°.
+It can be used to sense movement of people and animals. It has a configurable 
+detection range of 3m to 7m with a sensing angle of 100°.
 
-It is also possible to use events. This allows to react to a detected motion
-without polling.
+By using configureable events it is possible to react on detected motion without
+polling.
 
 Technical Specifications
 ------------------------
@@ -111,7 +112,7 @@ Test your Motion Detector Bricklet
 |test_tab|
 If everything went as expected you can now see when a motion is detected.
 
-.. FIXME image:: /Images/Bricklets/bricklet_motion_detector_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_motion_detector_brickv.jpg
    :scale: 100 %
    :alt: Motion Detector Bricklet in Brick Viewer
    :align: center
@@ -123,7 +124,18 @@ If everything went as expected you can now see when a motion is detected.
 Delay Time and Block Time
 -------------------------
 
+TODO Image
 
+TODO correct title?
+
+The sensor is equipped with two potentiometers. With the TODO potentiometer it
+is possible to adjust the sensitivity of the sensor. This way the detection 
+range can be adjusted. Rotate the potentiometer clockwise and it will TODO
+the range. 
+
+The potentiometer on the TODO side can be used to set the block time of the 
+sensor. It is the time the sensor holds its state when motion was detected.
+Rotate the potentiometer clockwise and it will TODO the block time.
 
 .. _motion_detector_bricklet_case:
 
