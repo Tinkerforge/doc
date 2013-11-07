@@ -96,6 +96,29 @@ Ressourcen
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/led_strip_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/led-strip-bricklet/zipball/master>`__)
 
+.. _led_strip_ram_constraints:
+
+RAM Beschränkung
+----------------
+
+Das LED Strip Bricklet benötigt viel RAM um die Farbdaten für die LEDs zu
+speichern. Normalerweise würde das LED Strip Bricklet mit dem RAM der pro
+Bricklet zur Verfügung steht nur bis zu 80 RGB LEDs kontrollieren können.
+
+Um diese Einschränkung zu umgehen, kann das LED Strip Bricklet den RAM der
+unverbundenen LED Bricklets nutzen. Dadurch ist es möglich bis zu 320 RGB LEDs
+mit einem Master Brick und einem LED Strip Bricklet zu steuern.
+
+Die maximale Anzahl steuerbarer LEDs setzt sich wie folgt zusammen:
+
+================================  ============================================================
+Freie Bricklet Ports              Maximale Anzahl RGB LEDs
+================================  ============================================================
+0                                 80
+1                                 160
+2                                 240
+3                                 320
+================================  ============================================================
 
 .. _led_strip_bricklet_test:
 

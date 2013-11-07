@@ -221,7 +221,6 @@ Free Bricklet Ports               Maximum number of RGB LEDs
 3                                 320
 ================================  ============================================================
 
-   
 .. _led_strip_led_strips:
 
 LED Strips
