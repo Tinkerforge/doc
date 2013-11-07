@@ -62,7 +62,7 @@ Beschreibung
 ------------
 
 Das Sound Intensity Bricklet ist mit einer Mikrofonkapsel ausgestattet und
-es kann genutzt werden um Latustärke zu messen. Der zurückgegebene Wert
+es kann genutzt werden um Lautstärke zu messen. Der zurückgegebene Wert
 entspricht der 
 `Hüllkurve <http://de.wikipedia.org/wiki/Hüllkurvendemodulator>`__ des
 Signals der Mikrofonkapsel.

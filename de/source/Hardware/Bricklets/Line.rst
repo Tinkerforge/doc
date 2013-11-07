@@ -56,7 +56,7 @@ Features
 --------
 
 * Misst die Reflektivität einer Fläche
-* Kann genutzt werden um Linen zu erkennen/zu folgen
+* Kann genutzt werden um Linien zu erkennen/zu folgen
 * Kann genutzt werden um Entfernungen von ~0-10mm zu messen
 
 Beschreibung
@@ -66,7 +66,7 @@ Das Line Bricklet ist mit einem optisch-reflektierenden Sensor ausgestattet.
 Der Sensor besteht aus einem Infrarot Sender und Fototransistor. Ausgabe des
 Sensors ist die Reflektivität der Fläche.
 
-Der Reflektivitätswert kann genutzt werden um Linen zu erkennen (Beispiel:
+Der Reflektivitätswert kann genutzt werden um Linien zu erkennen (Beispiel:
 Eine schwarze Linie hat eine andere Reflektivität als ein weißer Hintergrund).
 
 Das Line Bricklet kann auch genutzt werden um Entfernungen zu einer Fläche

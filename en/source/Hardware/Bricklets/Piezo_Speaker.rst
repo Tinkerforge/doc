@@ -61,9 +61,9 @@ Features
 Description
 -----------
 
-The Piezo Speaker Bricklet can be used to genearte beeps with different
+The Piezo Speaker Bricklet can be used to generate beeps with different
 frequencies. The available frequency range is 585Hz to 7100Hz. A beep
-has a configureable length and it is possble to transmit a
+has a configurable length and it is possible to transmit a
 `Morse Code <http://en.wikipedia.org/wiki/Morse_code>`__ string.
 
 A typical application is to beep on specific events (e.g. "email received").

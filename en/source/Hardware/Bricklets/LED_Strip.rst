@@ -138,7 +138,7 @@ a three wire chained data bus with clock and data signal (and ground for
 reference). Each WS2801 chip has a bus input connected to a controlling 
 device such as the LED Strip Bricklet or to a WS2801 predecessor and a 
 bus output which can be connected to a subsequent WS2801. 
-Since it is a chained bus, a signle bus output has to be connected only 
+Since it is a chained bus, a single bus output has to be connected only
 to a single bus input. The bus is indexed beginning with the first WS2801 on the 
 LED Strip Bricklet (API index 0).
 

@@ -65,14 +65,14 @@ Das Moisture Bricklet ist dafür gedacht die Menge von Feuchtigkeit in Erde
 zu ermitteln.
 
 Strom wird durch zwei Prüfspitzen geführt. Dadurch steigt der Widerstand
-zischen den Prüfspitzen bei fallendem Feichtegrad (da Wasser besser leitet
+zischen den Prüfspitzen bei fallendem Feuchtegrad (da Wasser besser leitet
 als Erde). Die Veränderung des Widerstandes wird als Feuchtigkeitswert
 ausgewertet.
 
 Es ist möglich das Bricklte direkt in Erde zu stecken oder zwei Prüfspitzen
 an das Bricklet zu löten.
 
-Desweiteren kann das Moisture Bricklet den Füllstand eines Wasserbehälters
+Des Weiteren kann das Moisture Bricklet den Füllstand eines Wasserbehälters
 messen.
 
 

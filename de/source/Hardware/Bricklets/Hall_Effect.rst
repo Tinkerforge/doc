@@ -63,7 +63,7 @@ Beschreibung
 ------------
 
 Das Hall Effect Bricklet kann die Präsenz eines Magnetfelds detektieren.
-Es zählt die Vorkomnisse eines Magnetfelds und kann dadurch genutzt werden
+Es zählt die Vorkommnisse eines Magnetfelds und kann dadurch genutzt werden
 um z.B. die Geschwindigkeit eines Rades zu messen.
 
 Beispielanwendungen:

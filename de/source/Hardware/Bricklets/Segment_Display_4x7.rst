@@ -63,7 +63,7 @@ Beschreibung
 ------------
 
 Da Segment Display 4x7 kann genutzt werden um vier 7-Segment-Anzeigen zu
-und ein Doppelpunkt zu steuern. Jedes der 29 Segmente kann eingenständig
+und ein Doppelpunkt zu steuern. Jedes der 29 Segmente kann eigenständig
 geschaltet werden. Es ist zusätzlich möglich die Helligkeit der Segmente
 einzustellen.
 

@@ -147,7 +147,7 @@ and one nut each. Put the Bricklet on it and fix it with four additional nuts.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step8.png
 
-Connect Calbes and Done
+Connect Cables and Done
 -----------------------
 
 As the last step connect the Bricklet cables to the Master Brick and use a 

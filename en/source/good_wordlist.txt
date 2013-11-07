@@ -175,3 +175,5 @@ Icinga
 online
 spammed
 bitfield
+WIFI
+DHCP

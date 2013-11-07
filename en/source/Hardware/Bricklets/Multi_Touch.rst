@@ -55,7 +55,7 @@ Multi Touch Bricklet
 Features
 --------
 
-* Capacative Touch Sensor
+* Capacitive Touch Sensor
 * Can handle up to 12 electrodes used as touch locations
 * Touch can be detected through a small layer of glass/plastic/paper
 * Size and placement of touch area can be user defined
@@ -67,10 +67,10 @@ Description
 The Multi Touch Bricklet is equipped with the MPR121 capacitive touch
 sensor. It can be used to sense touch at 12 different locations.
 
-The thingy that is actually touched is called an "electrode". The
+The thing that is actually touched is called an "electrode". The
 electrode can be a cable, electrically conductive tape or a
 copper surface of a circuit board. Electrodes can sense touch through
-a small layer of glass, plastic, paper or simlar.
+a small layer of glass, plastic, paper or similar.
 
 With the Multi Touch Bricklet it is possible to build custom touch panels
 by gluing a cover onto the electrodes.
@@ -129,11 +129,11 @@ Create own Touch Pads/ Adjust Sensitivity
 TODO Image
 
 You can create simple touch pads by using stripped wires. To create real pads
-you can use self-adhesive aluminium tape to create the pad and connect the wire
+you can use self-adhesive aluminum tape to create the pad and connect the wire
 to it. Since it is a capacitive technology you can cover your self created touch 
 panel with thin non-conductive materials.
 
-Dependend on your touch pads it might be necessary to adjust the sensitivity.
+Dependent on your touch pads it might be necessary to adjust the sensitivity.
 Use the Brick Viewer Software to play around with it by changing the value until
 you have found a satisfying sensitivity. To take over the entered value press
 "Recalibrate".
