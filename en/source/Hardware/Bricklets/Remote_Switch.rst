@@ -62,7 +62,7 @@ Description
 -----------
 
 The Remote Switch Bricklet is equipped with a 433MHz rf transmitter. It can
-be used to control remote mains swichtes that are based on the PT2262 
+be used to control remote mains switches that are based on the PT2262
 and HX2262 ICs.
 
 House code as well as receiver code can be configured with the API.

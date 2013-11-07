@@ -65,10 +65,10 @@ Das Piezo Speaker Bricklet kann genutzt werden um Töne mit unterschiedlichen
 Frequenzen zu erzeugen. Der verfügbare Frequenzbereich ist 585Hz bis 7100 Hz.
 Ein Ton hat eine konfigurierbare Länge und es ist möglich 
 `Moresezeichen <http://de.wikipedia.org/wiki/Morsezeichen>`__ als String zu
-übergieben.
+übergeben.
 
 Eine typische Anwendung dieses Bricklets ist das signalisieren von 
-Zustandsänderungen wie "Email empfangen".
+Zustandsänderungen wie "E-Mail empfangen".
 
 Technische Spezifikation
 ------------------------

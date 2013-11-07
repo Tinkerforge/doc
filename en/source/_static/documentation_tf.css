@@ -628,8 +628,9 @@ dl.attribute {
 
 div.partnerlogo {
 	float: left;
-	padding-left: 30px;
 	padding-top: 10px;
+	width: 360px;
+	text-align: center;
 }
 
 div.partnertext {
@@ -645,4 +646,9 @@ div.partnertext p.rubric {
 	color: #565656;
 	font-size: 18px;
 	font-weight: normal;
+}
+
+div.partnerdisclaimer {
+	padding-top: 50px;
+	text-align: right;
 }

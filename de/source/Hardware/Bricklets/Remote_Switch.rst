@@ -56,12 +56,12 @@ Features
 --------
 
 * Steuert Funksteckdosen (:ref:`Unterstützte Steckdosen <remote_switch_supported_devices>`)
-* Kann Funksteckdosen mit Dimmfunktion steuern
+* Kann Funksteckdosen mit Dimm-Funktion steuern
 
 Beschreibung
 ------------
 
-Das Remote Switch Bricklet ist mit einem 433MHz transmitter ausgestattet.
+Das Remote Switch Bricklet ist mit einem 433MHz Transmitter ausgestattet.
 Es kann genutzt werden um alle Funksteckdosen zu steuern die auf dem
 PT2262 oder HX2262 IC basieren.
 
@@ -98,7 +98,7 @@ Liste unterstützter Geräte
 
 Die folgenden Geräte werden vom Remote Switch Bricklet unterstützt. Wenn du
 eine weitere kompatible Funksteckdosen findest, würden wir uns über eine
-Email freuen. Dann können wir die Liste erweitern und aktuell halten.
+E-Mail freuen. Dann können wir die Liste erweitern und aktuell halten.
 
 =============== ====================================
 Property        Value

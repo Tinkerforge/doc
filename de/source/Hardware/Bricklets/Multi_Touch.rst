@@ -64,7 +64,7 @@ Beschreibung
 ------------
 
 Das Multi Touch Bricklet ist mit dem MPR121 Capacitive Touch Sensor
-ausgestattet. Es kann genutzt ewrden um Berührungen an 12
+ausgestattet. Es kann genutzt werden um Berührungen an 12
 unterschiedlichen Stellen zu erkennen.
 
 Das zu berührende Teil wird "Elektrode" genannt. Die Elektrode kann
@@ -143,7 +143,7 @@ Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 * schraube Unterteil an untere Abstandshalter,
 * schraube Oberteil auf obere Abstandshalter.
 
-Im folgenden befindet sich eine Explosionszeichnung des Temperature IR Bricklet-Gehäuse:
+Im folgenden befindet sich eine Explosionszeichnung des Multi Touch Bricklet-Gehäuse:
 
 .. image:: /Images/Exploded/multi_touch_exploded_350.png
    :scale: 100 %

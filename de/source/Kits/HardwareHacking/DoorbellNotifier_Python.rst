@@ -22,7 +22,7 @@ Ziele
 In diesem Projekt wandeln wir den Quelltext des
 :ref:`starter_kit_hardware_hacking_smoke_detector_python` Projekts etwas ab,
 damit dieser uns benachrichtigt wenn jemand an der Tür klingelt. Natürlich
-kann diese Programm auch so erweitert werden, dass es eine Email oder SMS
+kann diese Programm auch so erweitert werden, dass es eine E-Mail oder SMS
 zur Benachrichtigung verschickt.
 
 

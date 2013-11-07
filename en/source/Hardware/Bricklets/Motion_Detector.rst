@@ -66,7 +66,7 @@ The Motion Detector Bricklet is equipped with a passive infrared (PIR) sensor.
 It can be used to sense movement of people and animals. It has a configurable 
 detection range of 3m to 7m with a sensing angle of 100°.
 
-By using configureable events it is possible to react on detected motion without
+By using configurable events it is possible to react on detected motion without
 polling.
 
 Technical Specifications
@@ -138,9 +138,8 @@ detected. Rotate the potentiometer clockwise and it will TODO the delay time.
 The block time is fixed with 2.5s. What does it mean? After the 
 sensor has detected motion and the motion has stopped the sensor will go in the
 "no motion detected" state. This state will be held for 2.5 seconds 
-indepentent if there is any motion. After 2.5 seconds the sensor will again 
+independent if there is any motion. After 2.5 seconds the sensor will again
 detect motion if there is any.
-
 
 
 .. _motion_detector_bricklet_case:

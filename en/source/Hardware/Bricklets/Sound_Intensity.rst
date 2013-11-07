@@ -56,7 +56,7 @@ Features
 --------
 
 * Measures sound intensity
-* 12 bit resolution
+* 12bit resolution
 
 Description
 -----------
@@ -67,7 +67,7 @@ can be used to measure loudness. The returned value corresponds to the
 of the signal of the microphone capsule.
 
 It is possible to configure events that are triggered if a specified
-threshould of loudness is exceeded.
+threshold of loudness is exceeded.
 
 Technical Specifications
 ------------------------

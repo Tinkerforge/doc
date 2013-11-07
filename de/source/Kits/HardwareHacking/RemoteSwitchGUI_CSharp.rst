@@ -163,7 +163,7 @@ die GUI nicht blockiert wird:
     }
 
 Die ``ConnectedCB`` Callback-Funktion ist die die gleiche wie im Rauchmelder
-Projekt. Aber die ``EnumerateCB`` Callback-Function ist einfacher, da das
+Projekt. Aber die ``EnumerateCB`` Callback-Funktion ist einfacher, da das
 Industrial Quad Relay Bricklet nicht extra konfiguriert werden muss für diese
 Projekt:
 
@@ -348,7 +348,7 @@ wird. Der ``Load``-Event kann dafür verwendet werden:
 Schritt 5: Alles zusammen
 -------------------------
 
-Das is es! Das C# Programm zum Fernsteuern der gehackten Funksteckdosen ist
+Das ist es! Das C# Programm zum Fernsteuern der gehackten Funksteckdosen ist
 fertig und sollte nun alle gesteckten Ziele erfüllen.
 
 Das gesamte Programm in einem Stück (`download
