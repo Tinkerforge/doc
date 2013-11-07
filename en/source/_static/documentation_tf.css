@@ -628,8 +628,9 @@ dl.attribute {
 
 div.partnerlogo {
 	float: left;
-	padding-left: 30px;
 	padding-top: 10px;
+	width: 360px;
+	text-align: center;
 }
 
 div.partnertext {
