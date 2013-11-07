@@ -114,7 +114,7 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird die aktuell gemessene Reflektivität
 angezeigt.
 
-.. FIXME image:: /Images/Bricklets/bricklet_line_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_line_brickv.jpg
    :scale: 100 %
    :alt: Line Bricklet im Brick Viewer
    :align: center

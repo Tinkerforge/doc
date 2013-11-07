@@ -55,7 +55,7 @@ LED Strip Bricklet
 Features
 --------
 
-* Schaltet bis zu 960 LEDs (320 RGB LEDs)
+* Steuert bis zu 320 RGB LEDs
 * Alle LEDs können unabhängig voneinander geschaltet werden
 * Aktualisierungsrate von bis zu 100Hz für jede LED möglich
 
@@ -64,7 +64,7 @@ Beschreibung
 
 Das LED Strip Bricklet kann genutzt werden um LED Strips zu steuern
 die mit einem WS2801 LED-Treiber ausgestattet sind. Es ist möglich
-960 LEDs unabhängig voneinander zu schalten.
+320 RGB LEDs (960 verschiedene LEDs) unabhängig voneinander zu steuern.
 
 Mit Hilfe der API können alle LEDs gleichzeitig mit einer festen
 Aktualisierungsrate von bis zu 100Hz gesteuert werden.
@@ -79,7 +79,7 @@ Eigenschaft                       Wert
 ================================  ============================================================
 Unterstützer LED-Treiber          WS2801
 Auflösung                         8 Bit pro LED
-Anzahl kontrollierbarer LEDs      Maximal 960 (320 RGB LEDs)
+Anzahl kontrollierbarer LEDs      Maximal 960 (320 RGB LEDs)*
 Aktualisierungsrate               Maximal 100 Aktualisierungen pro Sekunde
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -87,6 +87,7 @@ Abmessungen (B x T x H)           30 x 30 x 12mm (1,18 x 1,18 x 0,47")
 Gewicht                           10g
 ================================  ============================================================
 
+\* Mit einem Master Brick, 480 mit anderen Bricks
 
 Ressourcen
 ----------
@@ -114,13 +115,112 @@ Erster Test
 |test_tab|
 Wenn alles wie erwartet funktioniert, kann nun ein LED Strip gesteuert werden.
 
-.. FIXME image:: /Images/Bricklets/bricklet_led_strip_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_led_strip_brickv.jpg
    :scale: 100 %
    :alt: LED Strip Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_brickv.jpg
 
 |test_pi_ref|
+
+
+
+.. _led_strip_ws2801:
+
+WS2801
+------
+
+Momentan werden LED Strips und Pixels unterstütz die mit WS2801 Controllern
+ausgestattet sind (weitere Kontrollertypen werden folgen).
+
+Das WS2801 IC kann bis zu drei LEDs unabhängig voneinander steuern.
+Typischerweise werden RGB LEDs, die in einem Gehäuse zusammen untergebracht 
+sind, gesteuert. Der WS2801 wird über einen 3-draht Datenbus, bestehend aus 
+einer Datenleitung, Taktleitung und Masse als Referenz, gesteuert. Jeder
+IC verfügt dazu über einen Bus-Eingang und einen Bus-Ausgang, so dass die ICs
+in Serie hintereinander geschaltet werden 
+(`Daisy Chain <http://de.wikipedia.org/wiki/Daisy_chain>`__).
+Jeder Bus-Eingang der WS2801 ICs ist entweder mit einem steuernden Gerät (wie 
+z.B. das LED Strip Bricklet) oder mit einem Bus-Ausgang von einem WS2801 
+Vorgänger verbunden. Da die WS2801 in Serie geschalten werden müssen, darf jeder
+Bus-Ausgang höchstens mit einem Bus-Eingang verbunden werden. Der Bus wird
+beginnend beim ersten WS2801 indeziert.
+
+TODO Image: LED Strip Bricklet + LED Strip with marked signals and WS2801
+
+.. _led_strip_connectivity:
+
+Anschlussmöglichkeit
+--------------------
+
+Das nachfolgende Bild stellt die Schnittstellen des LED Strip Bricklets dar.
+
+.. FIXME image:: /Images/Bricklets/bricklet_led_strip_connection_600.jpg
+   :scale: 100 %
+   :alt: LED Strip Bricklet Interface Description
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
+
+Wie in dem :ref:`WS2801 Abschnitt <led_strip_ws2801>` beschrieben
+unterstütz das Bricklet Strips und Pixels ausgestattet mit dem WS2801
+controller. Die mit "Output" beschrifteten Klemmen müssen mit dem Eingang
+des ersten WS2801 Controllers verbunden werden.
+
+Die Klemme ist mit folgenden Signalen belegt:
+
+ * "DAT" ist die Datenleitung zun WS2801 Chip. Sie muss mit dem Dateneingang des
+   ersten WS2801 verbunden werden. Leider gibt es keine allgemeingültige 
+   Beschriftung für Strips und Pixels. Manchmal ist das Signal mit SD 
+   (Serial Data) oder DI (Data Input) beschriftet. Es ist ebenfalls möglich das 
+   nur der Ausgang beschriftet ist (z.B. DO, Data Output). Bei der anderen Seite
+   muss es sich also folglich um den Eingang handeln.
+   
+ * "CLK" ist die Taktleitung zum WS2801 Chip. Sie muss mit dem Takteingang des 
+   ersten WS2801 verbunden werden. Dieser Eingang ist typischerweise mit
+   CLK, CK oder CI (Clock Input) beschriftet. Falls nur der Ausgang beschriftet
+   ist findet man Beschriftungen wie CO (Clock Output).
+
+ * "-" ist die Masseleitung. Masse ist notwendig um eine Referenz zu den
+   DAT und CLK Signalen zu besitzen.
+
+ * "+" ist die Versorgungsspanungsausgang. Es ist mit dem "+" Signal der "Input"
+   Klemme verbunden und sollte nicht benutzt werden um LED Strips oder Pixel zu
+   versorgen. Daher sollte dieses Signal nicht angeschlossen werden.
+
+Die Eingangsklemme verfügt über zwei Signale:
+
+ * "+" ist der Spannungsversorgungs-Eingang. Dieser kann mit der Stromversorgung
+   für die LEDs verbunden werden um die Versorgungsspannung zu messen. Wird dies
+   nicht benötigt, so kann die Klemme unangeschlossen bleiben.
+
+ * "-" ist die Masseleitung. Sie ist intern mit der Masse von der "Output" 
+   Klemme verbunden.
+
+.. _led_strip_ram_constraints:
+
+RAM Beschränkungen
+------------------
+
+Das LED Strip Bricklet benötigt viel RAM um die Farbinformationen für die LEDs
+zu speichern. Normalerweise könnte das LED Strip Bricklet nut bis zu 80 RGB LEDs
+steuern auf Grund des begrenzten RAMs pro Bricklet.
+
+Um diese Beschränkung zu umgehen kann das LED Strip Bricklet den ungenutzen RAM
+von nicht genutzen Brickletports nutzen. Dies erlaubt es bis zu 
+320 RGB LEDs mit einem Master Brick und einem LED Strip Bricklet zu steuern.
+
+Die maximale Anzahl von LEDs ergibt sich wie folgt:
+
+================================  ============================================================
+Freie Bricklet Ports              Maximale Anzahl von RGB LEDs
+================================  ============================================================
+0                                 80
+1                                 160
+2                                 240
+3                                 320
+================================  ============================================================
+
+
 
 .. _led_strip_led_strips:
 

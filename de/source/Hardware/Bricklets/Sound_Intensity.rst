@@ -55,8 +55,9 @@ Sound Intensity Bricklet
 Features
 --------
 
-* Misst Schallintensität
+* Misst die Schallintensität
 * 12 Bit Auflösung
+* Einsetzbar als Klatschschalter, Alarmanlagen-Sensor, u.v.m.
 
 Beschreibung
 ------------
@@ -111,7 +112,7 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird nun die aktuelle Lautstärke
 angezeigt.
 
-.. FIXME image:: /Images/Bricklets/bricklet_sound_intensity_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_sound_intensity_brickv.jpg
    :scale: 100 %
    :alt: Sound Intensity Bricklet im Brick Viewer
    :align: center

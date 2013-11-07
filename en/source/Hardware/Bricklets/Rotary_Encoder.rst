@@ -57,7 +57,7 @@ Features
 
 * 360° rotary encoder
 * Counts 24 steps per rotation (step angle 15°)
-* Has an integrated switch
+* Integrated switch
 
 Description
 -----------
@@ -74,17 +74,18 @@ is that the encoder has full rotation without limits.
 Technical Specifications
 ------------------------
 
-================================  ============================================================
-Property                          Value
-================================  ============================================================
-Number of Clicks per Rotation     24 (step angle 15°)
-Button Operating Force            200gf
-Button Travel Distance            0.5mm
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            30 x 25 x 23mm (1.18 x 0.98 x 0.9")
-Weight                            5g*
-================================  ============================================================
+==================================  ============================================================
+Property                            Value
+==================================  ============================================================
+Number of Steps per Rotation        24 (step angle 15°)
+Maximum Number of Steps detectable  up to 250 steps / sec.
+Button Operating Force              200gf
+Button Travel Distance              0.5mm
+----------------------------------  ------------------------------------------------------------
+----------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)              30 x 25 x 23mm (1.18 x 0.98 x 0.9")
+Weight                              5g*
+==================================  ============================================================
 
 * without knob
 
@@ -115,7 +116,7 @@ Test your Rotary Encoder Bricklet
 If everything went as expected you can now turn the encoder and see
 the corresponding count.
 
-.. FIXME image:: /Images/Bricklets/bricklet_rotary_encoder_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_rotary_encoder_brickv.jpg
    :scale: 100 %
    :alt: Rotary Encoder Bricklet in Brick Viewer
    :align: center

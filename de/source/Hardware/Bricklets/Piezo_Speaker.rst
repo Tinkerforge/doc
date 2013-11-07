@@ -57,6 +57,7 @@ Features
 
 * Erzeugt Piepton mit konfigurierbarer Frequenz von 585Hz bis 7100Hz
 * Konfigurierbare Piepdauer
+* Morsecode Ausgabe unterstützt
 
 Beschreibung
 ------------
@@ -111,7 +112,7 @@ Erster Test
 |test_tab|
 Wenn alles wie erwartet funktioniert wird können nun Töne erzeugt werden. 
 
-.. FIXME image:: /Images/Bricklets/bricklet_piezo_speaker_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_piezo_speaker_brickv.jpg
    :scale: 100 %
    :alt: Piezo Speaker Bricklet im Brick Viewer
    :align: center

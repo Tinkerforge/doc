@@ -55,6 +55,7 @@ Motion Detector Bricklet
 Features
 --------
 
+* Passiver Infrarot Sensor
 * Erkennt Bewegungen in einer Distanz von bis zu 7m (konfigurierbar)
 * Hoher Erfassungswinkel (100°)
 
@@ -62,8 +63,8 @@ Beschreibung
 ------------
 
 Das Motion Detector Bricklet ist mit einem Passive-Infrared (PIR) Sensor
-ausgestattet. Es kann benutzt werden um Bewegungen von Personen zu erkennen.
-Es hat eine konfigurierbare Reichweite von 3m bis 7m mit einem
+ausgestattet. Es kann benutzt werden um Bewegungen von Personen und Tieren zu 
+erkennen. Es hat eine konfigurierbare Reichweite von 3m bis 7m mit einem
 Erfassungswinkel von 100°.
 
 Es ist auch möglich Events zu nutzen. Dadurch ist möglich auf eine
@@ -113,13 +114,33 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird nun eine erkannte Bewegung
 angezeigt.
 
-.. FIXME image:: /Images/Bricklets/bricklet_motion_detector_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_motion_detector_brickv.jpg
    :scale: 100 %
    :alt: Motion Detector Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_motion_detector_brickv.jpg
 
 |test_pi_ref|
+
+
+
+Verzögerungs- und Blockier-Zeit
+-------------------------------
+
+TODO Image
+
+Der Sensor ist mit zwei Potentiometern ausgestattet. Mit dem TODO Potentiometer
+kann die Empfindlichkeit des Sensors und damit die Erkennungsreichweite (3-7m)
+eingestellt werden. Drehe das Potentiometer im Uhrzeigersinn und die Reichweite
+wird TODO. Mit dem Potentiometer auf der TODO Seite kann die Zeit eingestellt 
+werden die der Sensor seinen Zustand hält nachdem eine Bewegung erkannt wurde
+(Delay Time, 5s-200s). Drehe das Potentiometer im Uhrzeigersinn um die 
+Verzögerung TODO.
+
+Die Blockierzeit (Block Time) ist mit 2,5s festeingestellt. Hiermit ist die Zeit
+gemeint, in der der Sensor im "no motion detected" Zustand bleibt,
+nachdem eine Bewegung erkannt wurde und diese Bewegung nicht mehr erkannt wurde.
+
 
 .. _motion_detector_bricklet_case:
 

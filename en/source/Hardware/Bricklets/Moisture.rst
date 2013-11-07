@@ -55,16 +55,16 @@ Moisture Bricklet
 Features
 --------
 
-* Measures moisture
+* Measures moisture between two probes
 * 12 bit resolution
 
 Description
 -----------
 
-The Moisture Bricklet is intended to measure the amount of moisture in soil.
+The Moisture Bricklet is intended to measure moisture in soil.
 
-Current is passed through two probes. With a decreasing moisture level the
-resistance between the probes will increase (since water is a better conductor
+Current is passed through two probes. With a increasing moisture level the
+resistance between the probes will decrease (since water is a better conductor
 than soil). The change in resistance is measured and returned as the moisture
 value.
 
@@ -115,7 +115,7 @@ Test your Moisture Bricklet
 If everything went as expected you can now see changes of the moisture
 value.
 
-.. FIXME image:: /Images/Bricklets/bricklet_moisture_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_moisture_brickv.jpg
    :scale: 100 %
    :alt: Moisture Bricklet in Brick Viewer
    :align: center

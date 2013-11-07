@@ -55,17 +55,18 @@ Remote Switch Bricklet
 Features
 --------
 
+* Drahtlose Hausautomatisation
 * Steuert Funksteckdosen (:ref:`Unterstützte Steckdosen <remote_switch_supported_devices>`)
 * Kann Funksteckdosen mit Dimm-Funktion steuern
 
 Beschreibung
 ------------
 
-Das Remote Switch Bricklet ist mit einem 433MHz Transmitter ausgestattet.
+Das Remote Switch Bricklet ist mit einem 433MHz Transceiver ausgestattet.
 Es kann genutzt werden um alle Funksteckdosen zu steuern die auf dem
 PT2262 oder HX2262 IC basieren.
 
-House Code und Receiver Code der zu schaltenden Steckdose können über die 
+Housecode und Receivercode der zu schaltenden Steckdose können über die 
 API konfiguriert werden.
 
 Technische Spezifikation
@@ -75,7 +76,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ===============================================================================================
 Funkfrequenz                      433MHz
-Unterstütze Funksteckdosen        Alle basierend auf PT2262 und HX2262 (:ref:`komplette Liste <remote_switch_supported_devices>`)
+Unterstütze Funksteckdosen        Alle auf PT2262 und HX2262 basierenden (:ref:`komplette Liste <remote_switch_supported_devices>`)
 --------------------------------  -----------------------------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 40 x 5mm (0,98 x 1,58 x 0,2") ohne Antenne
@@ -87,7 +88,7 @@ Ressourcen
 ----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/hardware/remote-schematic.pdf>`__)
-* Umriss und Bohrplan (`Download <../../_images/Dimensions/remote_switch_bricklet_dimensions.png>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/remote_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)
 
 
@@ -185,13 +186,24 @@ Erster Test
 Wenn alles wie erwartet funktioniert können nun Funksteckdosen gesteuert 
 werden.
 
-.. FIXME image:: /Images/Bricklets/bricklet_remote_switch_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_remote_switch_brickv.jpg
    :scale: 100 %
    :alt: Remote Switch Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_remote_switch_brickv.jpg
 
 |test_pi_ref|
+
+
+Housecode und Receivercode
+----------------------------
+
+Um Funksteckdosen oder -dimmer zu steuern muss der Housecode und der 
+eingestellte Receivercode bekannt sein. Diese Codes werden typischerweise über
+kleine DIP-Schalter in der Steckdose oder dem Dimmer eingestellt.
+
+TODO Image
+
 
 .. _remote_switch_bricklet_case:
 

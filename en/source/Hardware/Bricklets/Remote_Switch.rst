@@ -55,13 +55,14 @@ Remote Switch Bricklet
 Features
 --------
 
+* Wireless house automation
 * Controls remote mains switches (:ref:`supported devices <remote_switch_supported_devices>`)
 * Can control remote mains switches with dimming function
 
 Description
 -----------
 
-The Remote Switch Bricklet is equipped with a 433MHz rf transmitter. It can
+The Remote Switch Bricklet is equipped with a 433MHz rf transceiver. It can
 be used to control remote mains switches that are based on the PT2262
 and HX2262 ICs.
 
@@ -86,7 +87,7 @@ Resources
 ---------
 
 * Schematic (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/hardware/remote-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/remote_switch_bricklet_dimensions.png>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/remote_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)
 
 
@@ -182,13 +183,24 @@ Test your Remote Switch Bricklet
 |test_tab|
 If everything went as expected you can now control remote mains switches. 
 
-.. FIXME image:: /Images/Bricklets/bricklet_remote_switch_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_remote_switch_brickv.jpg
    :scale: 100 %
    :alt: Remote Switch Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_remote_switch_brickv.jpg
 
 |test_pi_ref|
+
+
+House Code and Receiver Code
+----------------------------
+
+To control remote switches or dimmers the house code and the receiver code
+must be known. These codes are typically configureable with small DIP-switches
+inside the remote switch or dimmer.
+
+TODO Image
+
 
 .. _remote_switch_bricklet_case:
 

@@ -62,7 +62,7 @@ Beschreibung
 ------------
 
 Das Tilt Bricklet ist mit einem Neigungsschalter ausgestattet. Es kann
-erkennen ob das Bricklet aktuell geneigt ist und ob es vibriert.
+erkennen ob das Bricklet aktuell geneigt ist oder ob es vibriert.
 
 Es ist möglich Events zu konfigurieren die automatisch ausgelöst werden 
 wenn sich der Status des Tilt Bricklets ändert.
@@ -105,7 +105,7 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird nun der aktuelle Status
 des Tilt Bricklet angezeigt.
 
-.. FIXME image:: /Images/Bricklets/bricklet_tilt_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_tilt_brickv.jpg
    :scale: 100 %
    :alt: Tilt Bricklet im Brick Viewer
    :align: center

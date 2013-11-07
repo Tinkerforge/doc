@@ -55,9 +55,9 @@ Rotary Encoder Bricklet
 Features
 --------
 
-* 360° Drehencoder
+* 360° Drehgeber / Drehencoder
 * Zählt 24 Schritte pro Umdrehung (Schrittwinkel 15°)
-* Hat einen integrierten Taster
+* Integrierter Taster
 
 Beschreibung
 ------------
@@ -76,7 +76,8 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Anzahl Klicks pro Rotation        24 (Winkel pro Schritt 15°)
+Anzahl Schritten pro Rotation     24 (Winkel pro Schritt 15°)
+Maximale erkennbare Schritte      mehr wie 250 Schritte / sek.
 Taster Betätigungskraft           200gf
 Taster Bewegungsdistanz           0.5mm
 --------------------------------  ------------------------------------------------------------
@@ -114,7 +115,7 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird nun der aktuelle 
 Encoderzählstand angezeigt.
 
-.. FIXME image:: /Images/Bricklets/bricklet_rotary_encoder_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_rotary_encoder_brickv.jpg
    :scale: 100 %
    :alt: Rotary Encoder Bricklet im Brick Viewer
    :align: center

@@ -55,9 +55,9 @@ Segment Display 4x7 Bricklet
 Features
 --------
 
-* Vier 7-Segment Anzeigen
-* Schaltbarer Doppelpunkt
+* Vier 7-Segment Anzeigen mit Schaltbarem Doppelpunkt
 * Helligkeit von Segmenten konfigurierbar.
+* Konfigurierbare Counter Funktion
 
 Beschreibung
 ------------
@@ -65,7 +65,8 @@ Beschreibung
 Da Segment Display 4x7 kann genutzt werden um vier 7-Segment-Anzeigen zu
 und ein Doppelpunkt zu steuern. Jedes der 29 Segmente kann eigenständig
 geschaltet werden. Es ist zusätzlich möglich die Helligkeit der Segmente
-einzustellen.
+einzustellen. Neben der Möglichkeit des Schaltens einzelner Segmente bietet
+die API auch einen Anwender konfigurierbaren Counter.
 
 Technische Spezifikation
 ------------------------
@@ -110,7 +111,7 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird können die einzelnen Segmente
 nun an-/ausgeschaltet werden.
 
-.. FIXME image:: /Images/Bricklets/bricklet_segment_display_4x7_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_segment_display_4x7_brickv.jpg
    :scale: 100 %
    :alt: Segment Display 4x7 Bricklet im Brick Viewer
    :align: center

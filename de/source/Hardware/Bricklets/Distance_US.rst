@@ -109,7 +109,7 @@ Erster Test
 |test_tab|
 Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
 
-.. FIXME image:: /Images/Bricklets/bricklet_distance_us_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_distance_us_brickv.jpg
    :scale: 100 %
    :alt: Distance US Bricklet im Brick Viewer
    :align: center

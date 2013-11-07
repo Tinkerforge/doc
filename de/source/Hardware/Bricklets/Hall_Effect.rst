@@ -55,7 +55,7 @@ Hall Effect Bricklet
 Features
 --------
 
-* Detektiert Präsenz eines Magnetfelds
+* Detektiert Magnetfelder
 * Zählt Vorkommnisse eines Magnetfelds
 * Kann genutzt werden um Wasser-/Stromzähler auszulesen
 
@@ -113,7 +113,7 @@ Erster Test
 |test_tab|
 Wenn alles wie erwartet funktioniert wird ein Magnetfeld erkannt.
 
-.. FIXME image:: /Images/Bricklets/bricklet_hall_effect_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_hall_effect_brickv.jpg
    :scale: 100 %
    :alt: Hall Effect Bricklet im Brick Viewer
    :align: center

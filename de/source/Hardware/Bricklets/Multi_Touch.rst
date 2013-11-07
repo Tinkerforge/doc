@@ -55,7 +55,8 @@ Multi Touch Bricklet
 Features
 --------
 
-* Erkennt Berührung von Finger an 12 unterschiedlichen Positionen
+* Kapazitiver Touch Sensor
+* Unterstützt bis zu 12 Elektroden nutzbar als Touchflächen 
 * Berührung kann durch eine schmale Schicht Glas/Plastik/Papier erkannt werden
 * Größe und Positionierung der Berührungsfläche wird vom Nutzer festgelegt
 * Kann genutzt werden um ein maßgeschneidertes Touchpanel zu bauen
@@ -115,13 +116,31 @@ Erster Test
 |test_tab|
 Wenn alles wie erwartet funktioniert wird nun der aktuelle Zustand angezeigt.
 
-.. FIXME image:: /Images/Bricklets/bricklet_multi_touch_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_multi_touch_brickv.jpg
    :scale: 100 %
    :alt: Multi Touch Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_multi_touch_brickv.jpg
 
 |test_pi_ref|
+
+
+Eigene Touchpads/ Empfindlichkeit einstellen
+--------------------------------------------
+
+TODO Image
+
+Einfache Touchpads können mittels abisolierter Drähte erzeugt werden. Echte
+Pads können mittels Aluminiumklebeband erzeugt werden, indem der Draht mit der 
+erzeugten Fläche verbunden wird. Da es sich um eine kapazitive Technologie 
+handelt können die erzeugten Flächen mit dünnen nicht-leitenden Materialen
+bedeckt werden.
+
+Abhängig von dem Aufbau der Touchpads kann es notwendig sein die Empfindlichkeit
+einzustellen. Die Brick Viewer Software kann genutzt werden um verschiedene 
+Empfindlichkeiten auszuprobieren. Dazu muss nur der Electrode Sensitivity Wert
+geändert werden und mittels "Recalibrate" übernommen werden.
+
 
 .. _multi_touch_bricklet_case:
 

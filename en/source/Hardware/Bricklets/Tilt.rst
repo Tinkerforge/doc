@@ -62,7 +62,7 @@ Description
 -----------
 
 The Tilt Bricklet is equipped with a tilt switch. It can detect if the
-Bricklet is tilted and if the Bricklet is vibrating.
+Bricklet is tilted or if the Bricklet is vibrating.
 
 It is possible to configure events that are triggered if the state of
 the Tilt Bricklet changes.
@@ -105,7 +105,7 @@ Test your Tilt Bricklet
 If everything went as expected you can now see the current
 state of the Tilt Bricklet.
 
-.. FIXME image:: /Images/Bricklets/bricklet_tilt_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_tilt_brickv.jpg
    :scale: 100 %
    :alt: Tilt Bricklet in Brick Viewer
    :align: center

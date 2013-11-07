@@ -79,7 +79,7 @@ Property                          Value
 ================================  ============================================================
 Supported LED Driver              WS2801
 Resolution                        8bit per LED
-Number of Controllable LEDs       Max 960 (320 RGB LEDs)
+Number of Controllable LEDs       Max 960 (320 RGB LEDs)*
 Update Rate                       Max 100 updates per second
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -87,6 +87,7 @@ Dimensions (W x D x H)            30 x 30 x 12mm (1.18 x 1.18 x 0.47")
 Weight                            10g
 ================================  ============================================================
 
+\* With a Master Brick, 480 with other Bricks
 
 Resources
 ---------
@@ -134,8 +135,9 @@ equipped with WS2801 controllers (more controller types will follow).
 
 The WS2801 IC can control three LEDs independently.
 Typically a RGB LED combined in one package is used. It is controlled over
-a three wire chained data bus with clock and data signal (and ground for 
-reference). Each WS2801 chip has a bus input connected to a controlling 
+a three wire chained data bus with clock, data signal and ground for 
+reference (`Daisy Chain <http://en.wikipedia.org/wiki/Daisy_chain>`__). 
+Each WS2801 chip has a bus input connected to a controlling 
 device such as the LED Strip Bricklet or to a WS2801 predecessor and a 
 bus output which can be connected to a subsequent WS2801. 
 Since it is a chained bus, a single bus output has to be connected only

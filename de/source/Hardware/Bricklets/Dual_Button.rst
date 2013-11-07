@@ -55,7 +55,7 @@ Dual Button Bricklet
 Features
 --------
 
-* Zwei Taster mit eingebauter LED
+* Zwei Taster mit eingebauter blauer LED
 * Auto-Toggle von LED möglich
 
 Beschreibung
@@ -115,7 +115,7 @@ Erster Test
 Wenn alles wie erwartet funktioniert können nun Tastendrücke beobachtet 
 werden sowie die Zustände der LEDs verändert werden.
 
-.. FIXME image:: /Images/Bricklets/bricklet_dual_button_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_dual_button_brickv.jpg
    :scale: 100 %
    :alt: Dual Button Bricklet im Brick Viewer
    :align: center

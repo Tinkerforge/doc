@@ -57,6 +57,7 @@ Features
 
 * Measures sound intensity
 * 12bit resolution
+* Usable as clapping switch, alarm system sensor, etc.
 
 Description
 -----------
@@ -110,7 +111,7 @@ Test your Sound Intensity Bricklet
 If everything went as expected you can now see the changing sound
 intensity.
 
-.. FIXME image:: /Images/Bricklets/bricklet_sound_intensity_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_sound_intensity_brickv.jpg
    :scale: 100 %
    :alt: Sound Intensity Bricklet in Brick Viewer
    :align: center
