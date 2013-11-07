@@ -27,7 +27,7 @@ Partners
     Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
     sit amet.
 
-    The :ref:`Starterkit: Weather Station <starter_kit_weather_station_xively>`
-    and the :ref:`Starterkit: Server Room Monitoring
+    The :ref:`Starter Kit: Weather Station <starter_kit_weather_station_xively>`
+    and the :ref:`Starter Kit: Server Room Monitoring
     <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
     include projects that use Xively for their data management.

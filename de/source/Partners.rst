@@ -27,7 +27,7 @@ Partner
     Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
     sit amet.
 
-    Das :ref:`Starter Kit: Wetterstation <starter_kit_weather_station_xively>`
+    Das :ref:`Starterkit: Wetterstation <starter_kit_weather_station_xively>`
     und das :ref:`Starterkit: Serverraum-Überwachung
     <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
     beinhalten Projekte die Xively für ihr Datenmanagement.
