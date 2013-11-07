@@ -129,27 +129,27 @@ If everything went as expected you can now control a LED strip.
 WS2801
 ------
 
-At the moment the LED Strip Bricklets only supports LED strips and pixels 
-equipped with WS2801 controllers. 
+At the moment the LED Strip Bricklets supports LED strips and pixels 
+equipped with WS2801 controllers (more controller types will follow). 
 
-Technical speaking the WS2811 IC can control three LEDs independently, 
-typically used for R,G,B LEDs combined in one package. It is controlled over
+The WS2801 IC can control three LEDs independently.
+Typically a RGB LED combined in one package is used. It is controlled over
 a three wire chained data bus with clock and data signal (and ground for 
-reference). Each WS2811 chip has a bus input 
-,connected to a controlling device like the LED Strip Bricklet or to a WS2801 
-predecessor, and a bus output which can be connected to a subsequent 
-WS2801. Since it is a chained bus, a signle bus output has to be connected only 
-to a single bus input. The bus is indexed beginning with the first WS2811 on the 
+reference). Each WS2801 chip has a bus input connected to a controlling 
+device such as the LED Strip Bricklet or to a WS2801 predecessor and a 
+bus output which can be connected to a subsequent WS2801. 
+Since it is a chained bus, a signle bus output has to be connected only 
+to a single bus input. The bus is indexed beginning with the first WS2801 on the 
 LED Strip Bricklet (API index 0).
 
-TODO Image: LED Strip Bricklet + LED Strip with marked signals and WS2811
+TODO Image: LED Strip Bricklet + LED Strip with marked signals and WS2801
 
 .. _led_strip_connectivity:
 
 Connectivity
 ------------
 
-The following picture depicts the interfaces of the LED Strip Bricklet.
+The following image depicts the interfaces of the LED Strip Bricklet.
 
 .. FIXME image:: /Images/Bricklets/bricklet_led_strip_connection_600.jpg
    :scale: 100 %
@@ -157,19 +157,19 @@ The following picture depicts the interfaces of the LED Strip Bricklet.
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
-As described in the :ref:`WS2811 section <led_strip_ws2811>` above
-the Bricklet supports pixels and stripes with WS2811 controller.
+As described in the :ref:`WS2801 section <led_strip_ws2801>` above
+the Bricklet supports pixels and strips with WS2801 controller.
 The terminal labeled with "Output" has to be connected with the input of
-the first WS2811 controller.
+the first WS2801 controller.
 
-The output terminal consisting of four signals:
+The output terminal consists of four signals:
 
- * "DAT" is the data signal line to the WS2801 chip. It has to be connected with
+ * "DAT" is the data signal line to the WS2801 chip. It has to be connected to
    the data input of the first WS2801. Unfortunately there is no 
    general label on LED pixels or on LED strips for this input. Sometimes the 
    signal is marked with SD (Serial Data) or DI (Data Input). It is also 
    possible that the input of the pixel or strip is not marked, but the output 
-   is marked (DO, Data Output). Therefore, if the output is marked, the non 
+   is marked (DO, Data Output). If the output is marked, the non 
    marked other side has to be the input.
 
  * "CLK" is the clock signal line to the WS2801 chip. It has to be connected 
@@ -178,11 +178,11 @@ The output terminal consisting of four signals:
    labeled with CO (Clock Output).
 
  * "-" is the ground signal line. Ground is necessary to give a reference for the
-   DAT and CLK signals. So it has to be connected.
+   DAT and CLK signals.
 
  * "+" is the supply voltage output. It is connected to the "+" signal of the
-   "Input" terminal and should not be used to power LED Strips or pixels. So 
-   leave it unconnected.
+   "Input" terminal and should not be used to power LED Strips or pixels. 
+   Leave it unconnected.
   
 
 The input terminal consisting of two signals:
@@ -193,6 +193,32 @@ The input terminal consisting of two signals:
 
  * "-" is the ground input. It is internally connected with the "-" ground of 
    the "OUTPUT" terminal. 
+
+
+.. _led_strip_ram_constraints:
+
+RAM Constraints
+---------------
+
+The LED Strip Bricklet needs lots of RAM to store the color data for the LEDs.
+Normally the LED Strip Bricklet would only be able to control up to 80 RGB
+LEDs with the RAM that is available per Bricklet.
+
+To circumvent this limitation, the LED Strip Bricklet is able to use the
+RAM of the remaining unconnected Bricklets. This allows to control up to
+320 RGB LEDs with one Master Brick and one LED Strip Bricklet.
+
+The maximum number of controllable LEDs is as follows:
+
+================================  ============================================================
+Free Bricklet Ports               Maximum number of RGB LEDs
+================================  ============================================================
+0                                 80
+1                                 160
+2                                 240
+3                                 320
+================================  ============================================================
+
    
 .. _led_strip_led_strips:
 

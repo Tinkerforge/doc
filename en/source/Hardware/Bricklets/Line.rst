@@ -126,8 +126,8 @@ Mounting of the Line Bricklet
 
 To be used as a line detector the Bricklet has to be mounted with
 a fixed distance to the line. The mounting distance depends on the 
-reflectiveness of the line and the underground and has to be found out by
-trail and error.
+reflectiveness of the line and the underground. It can be found out by
+trial and error.
 
 .. _line_bricklet_programming_interfaces:
 
