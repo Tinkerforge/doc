@@ -37,5 +37,5 @@ Partners
 
   .. container:: partnerdisclaimer
 
-    :sup:`All other brand names and trademarks are the property of their
-    respective owners and are used for descriptive purposes only.`
+    All other brand names and trademarks are the property of their respective
+    owners and are used for descriptive purposes only.

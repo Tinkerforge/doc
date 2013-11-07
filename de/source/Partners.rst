@@ -37,5 +37,5 @@ Partner
 
   .. container:: partnerdisclaimer
 
-    :sup:`Alle anderen genannten Markennamen oder Warenzeichen dienen nur der
-    Wiedererkennung und sind Eigentum der jeweiligen Inhaber.`
+    Alle anderen genannten Markennamen oder Warenzeichen dienen nur der
+    Wiedererkennung und sind Eigentum der jeweiligen Inhaber.
