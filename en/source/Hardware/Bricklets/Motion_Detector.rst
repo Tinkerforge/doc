@@ -137,8 +137,8 @@ detected. Rotate the potentiometer clockwise and it will TODO the delay time.
 
 The block time is fixed with 2.5s. What does it mean? After the 
 sensor has detected motion and the motion has stopped the sensor will go in the
-"no motion detected" state. This state will be held for 2.5 seconds 
-independent if there is any motion. After 2.5 seconds the sensor will again
+"no motion detected" state (after the delay time). This state will be held for 
+2.5 seconds independent of any motion. After 2.5 seconds the sensor will again
 detect motion if there is any.
 
 
