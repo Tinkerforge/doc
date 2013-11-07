@@ -647,3 +647,8 @@ div.partnertext p.rubric {
 	font-size: 18px;
 	font-weight: normal;
 }
+
+div.partnerdisclaimer {
+	padding-top: 50px;
+	text-align: right;
+}
