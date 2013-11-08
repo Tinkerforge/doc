@@ -78,7 +78,7 @@ Technical Specifications
 Property                            Value
 ==================================  ============================================================
 Number of Steps per Rotation        24 (step angle 15°)
-Maximum Number of Steps detectable  up to 250 steps / sec.
+Maximum Number of Steps detectable  up to 250 steps / second
 Button Operating Force              200gf
 Button Travel Distance              0.5mm
 ----------------------------------  ------------------------------------------------------------

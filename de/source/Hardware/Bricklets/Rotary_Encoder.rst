@@ -76,10 +76,10 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Anzahl Schritten pro Rotation     24 (Winkel pro Schritt 15°)
-Maximale erkennbare Schritte      mehr wie 250 Schritte / sek.
+Anzahl Schritten pro Rotation     24 (Winkel pro Schritt: 15°)
+Maximale erkennbare Schritte      mehr wie 250 Schritte / Sekunde
 Taster Betätigungskraft           200gf
-Taster Bewegungsdistanz           0.5mm
+Taster Bewegungsdistanz           0,5mm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           30 x 25 x 23mm (1,18 x 0,98 x 0,9")

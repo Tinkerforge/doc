@@ -96,30 +96,6 @@ Ressourcen
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/led_strip_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/led-strip-bricklet/zipball/master>`__)
 
-.. _led_strip_ram_constraints:
-
-RAM Beschränkung
-----------------
-
-Das LED Strip Bricklet benötigt viel RAM um die Farbdaten für die LEDs zu
-speichern. Normalerweise würde das LED Strip Bricklet mit dem RAM der pro
-Bricklet zur Verfügung steht nur bis zu 80 RGB LEDs kontrollieren können.
-
-Um diese Einschränkung zu umgehen, kann das LED Strip Bricklet den RAM der
-unverbundenen LED Bricklets nutzen. Dadurch ist es möglich bis zu 320 RGB LEDs
-mit einem Master Brick und einem LED Strip Bricklet zu steuern.
-
-Die maximale Anzahl steuerbarer LEDs setzt sich wie folgt zusammen:
-
-================================  ============================================================
-Freie Bricklet Ports              Maximale Anzahl RGB LEDs
-================================  ============================================================
-0                                 80
-1                                 160
-2                                 240
-3                                 320
-================================  ============================================================
-
 .. _led_strip_bricklet_test:
 
 Erster Test
@@ -147,27 +123,26 @@ Wenn alles wie erwartet funktioniert, kann nun ein LED Strip gesteuert werden.
 |test_pi_ref|
 
 
-
-.. _led_strip_ws2801:
+.. _led_strip_bricklet_ws2801:
 
 WS2801
 ------
 
-Momentan werden LED Strips und Pixels unterstütz die mit WS2801 Controllern
-ausgestattet sind (weitere Kontrollertypen werden folgen).
+Momentan werden LED Strips und Pixels unterstützt die mit WS2801 Controllern
+ausgestattet sind (weitere Controller-Typen werden folgen).
 
 Das WS2801 IC kann bis zu drei LEDs unabhängig voneinander steuern.
 Typischerweise werden RGB LEDs, die in einem Gehäuse zusammen untergebracht 
-sind, gesteuert. Der WS2801 wird über einen 3-draht Datenbus, bestehend aus 
+sind, gesteuert. Der WS2801 wird über einen 3-Leiter Datenbus, bestehend aus 
 einer Datenleitung, Taktleitung und Masse als Referenz, gesteuert. Jeder
 IC verfügt dazu über einen Bus-Eingang und einen Bus-Ausgang, so dass die ICs
 in Serie hintereinander geschaltet werden 
 (`Daisy Chain <http://de.wikipedia.org/wiki/Daisy_chain>`__).
 Jeder Bus-Eingang der WS2801 ICs ist entweder mit einem steuernden Gerät (wie 
 z.B. das LED Strip Bricklet) oder mit einem Bus-Ausgang von einem WS2801 
-Vorgänger verbunden. Da die WS2801 in Serie geschalten werden müssen, darf jeder
+Vorgänger verbunden. Da die WS2801 in Serie geschaltet werden müssen, darf jeder
 Bus-Ausgang höchstens mit einem Bus-Eingang verbunden werden. Der Bus wird
-beginnend beim ersten WS2801 indeziert.
+beginnend beim ersten WS2801 indiziert.
 
 TODO Image: LED Strip Bricklet + LED Strip with marked signals and WS2801
 
@@ -184,52 +159,52 @@ Das nachfolgende Bild stellt die Schnittstellen des LED Strip Bricklets dar.
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
-Wie in dem :ref:`WS2801 Abschnitt <led_strip_ws2801>` beschrieben
+Wie in dem :ref:`WS2801 Abschnitt <led_strip_bricklet_ws2801>` beschrieben
 unterstütz das Bricklet Strips und Pixels ausgestattet mit dem WS2801
 controller. Die mit "Output" beschrifteten Klemmen müssen mit dem Eingang
 des ersten WS2801 Controllers verbunden werden.
 
 Die Klemme ist mit folgenden Signalen belegt:
 
- * "DAT" ist die Datenleitung zun WS2801 Chip. Sie muss mit dem Dateneingang des
-   ersten WS2801 verbunden werden. Leider gibt es keine allgemeingültige 
-   Beschriftung für Strips und Pixels. Manchmal ist das Signal mit SD 
-   (Serial Data) oder DI (Data Input) beschriftet. Es ist ebenfalls möglich das 
-   nur der Ausgang beschriftet ist (z.B. DO, Data Output). Bei der anderen Seite
-   muss es sich also folglich um den Eingang handeln.
-   
- * "CLK" ist die Taktleitung zum WS2801 Chip. Sie muss mit dem Takteingang des 
-   ersten WS2801 verbunden werden. Dieser Eingang ist typischerweise mit
-   CLK, CK oder CI (Clock Input) beschriftet. Falls nur der Ausgang beschriftet
-   ist findet man Beschriftungen wie CO (Clock Output).
+* "DAT" ist die Datenleitung zum WS2801 Chip. Sie muss mit dem Dateneingang des
+  ersten WS2801 verbunden werden. Leider gibt es keine allgemeingültige 
+  Beschriftung für Strips und Pixels. Manchmal ist das Signal mit SD 
+  (Serial Data) oder DI (Data Input) beschriftet. Es ist ebenfalls möglich das 
+  nur der Ausgang beschriftet ist (z.B. DO, Data Output). Bei der anderen Seite
+  muss es sich also folglich um den Eingang handeln.
 
- * "-" ist die Masseleitung. Masse ist notwendig um eine Referenz zu den
-   DAT und CLK Signalen zu besitzen.
+* "CLK" ist die Taktleitung zum WS2801 Chip. Sie muss mit dem Takteingang des 
+  ersten WS2801 verbunden werden. Dieser Eingang ist typischerweise mit
+  CLK, CK oder CI (Clock Input) beschriftet. Falls nur der Ausgang beschriftet
+  ist findet man Beschriftungen wie CO (Clock Output).
 
- * "+" ist die Versorgungsspanungsausgang. Es ist mit dem "+" Signal der "Input"
-   Klemme verbunden und sollte nicht benutzt werden um LED Strips oder Pixel zu
-   versorgen. Daher sollte dieses Signal nicht angeschlossen werden.
+* "-" ist die Masseleitung. Masse ist notwendig um eine Referenz zu den
+  DAT und CLK Signalen zu besitzen.
+
+* "+" ist die Versorgungsspannungs-Ausgang. Es ist mit dem "+" Signal der "Input"
+  Klemme verbunden und sollte nicht benutzt werden um LED Strips oder Pixel zu
+  versorgen. Daher sollte dieses Signal nicht angeschlossen werden.
 
 Die Eingangsklemme verfügt über zwei Signale:
 
- * "+" ist der Spannungsversorgungs-Eingang. Dieser kann mit der Stromversorgung
-   für die LEDs verbunden werden um die Versorgungsspannung zu messen. Wird dies
-   nicht benötigt, so kann die Klemme unangeschlossen bleiben.
+* "+" ist der Spannungsversorgungs-Eingang. Dieser kann mit der Stromversorgung
+  für die LEDs verbunden werden um die Versorgungsspannung zu messen. Wird dies
+  nicht benötigt, so kann die Klemme offen bleiben.
 
- * "-" ist die Masseleitung. Sie ist intern mit der Masse von der "Output" 
-   Klemme verbunden.
+* "-" ist die Masseleitung. Sie ist intern mit der Masse von der "Output" 
+  Klemme verbunden.
 
-.. _led_strip_ram_constraints:
+.. _led_strip_bricklet_ram_constraints:
 
 RAM Beschränkungen
 ------------------
 
 Das LED Strip Bricklet benötigt viel RAM um die Farbinformationen für die LEDs
-zu speichern. Normalerweise könnte das LED Strip Bricklet nut bis zu 80 RGB LEDs
+zu speichern. Normalerweise könnte das LED Strip Bricklet nur bis zu 80 RGB LEDs
 steuern auf Grund des begrenzten RAMs pro Bricklet.
 
-Um diese Beschränkung zu umgehen kann das LED Strip Bricklet den ungenutzen RAM
-von nicht genutzen Brickletports nutzen. Dies erlaubt es bis zu 
+Um diese Beschränkung zu umgehen kann das LED Strip Bricklet den ungenutzten RAM
+von nicht genutzten Bricklet Ports nutzen. Dies erlaubt es bis zu 
 320 RGB LEDs mit einem Master Brick und einem LED Strip Bricklet zu steuern.
 
 Die maximale Anzahl von LEDs ergibt sich wie folgt:
@@ -244,8 +219,7 @@ Freie Bricklet Ports              Maximale Anzahl von RGB LEDs
 ================================  ============================================================
 
 
-
-.. _led_strip_led_strips:
+.. _led_strip_bricklet_led_strips:
 
 LED Strips
 ----------
@@ -255,7 +229,8 @@ TODO:
 * How to use them?
 * Where to inject power?
 
-.. _led_strip_led_pixels:
+
+.. _led_strip_bricklet_led_pixels:
 
 LED Pixels
 ----------
@@ -266,7 +241,7 @@ TODO:
 * Where to inject power?
 
 
-.. _led_strip_fixed_frame_rate:
+.. _led_strip_bricklet_fixed_frame_rate:
 
 Feste Aktualisierungsrate
 -------------------------
@@ -291,8 +266,9 @@ FrameRendered Callback gewartet werden woraufhin das nächste Frame
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_fixed_frame_rate.png
 
-Wenn ein FrameRendered Callback empfangen wird bevor alle LEDs eines frames
+Wenn ein FrameRendered Callback empfangen wird bevor alle LEDs eines Frames
 gesetzt wurden, ist die Aktualisierungsrate zu hoch.
+
 
 .. _led_strip_bricklet_case:
 

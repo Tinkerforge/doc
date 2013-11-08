@@ -65,8 +65,8 @@ Description
 The Segment Display 4x7 Bricklet can be used to control four 7-segment 
 displays and a colon. Each of the 29 segments can be controlled
 independently. It is also possible to configure the brightness of the
-segments. Besides the possibility of controlling each segment idependently,
-the API offers a user configureable counter.
+segments. Besides the possibility of controlling each segment independently,
+the API offers a user configurable counter.
 
 Technical Specifications
 ------------------------

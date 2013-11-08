@@ -144,7 +144,7 @@ eingestellt werden die der Sensor seinen Zustand hält nachdem eine Bewegung
 erkannt wurde (Delay Time, 5s-200s). Drehe das Potentiometer im Uhrzeigersinn 
 um die Verzögerung zu erhöhen.
 
-Die Blockierzeit (Block Time) ist mit 2,5s festeingestellt. Hiermit ist die Zeit
+Die Blockierzeit (Block Time) ist mit 2,5s fest eingestellt. Hiermit ist die Zeit
 gemeint, in der der Sensor im "no motion detected" Zustand bleibt,
 nachdem eine Bewegung erkannt wurde und diese Bewegung nicht mehr erkannt wurde.
 

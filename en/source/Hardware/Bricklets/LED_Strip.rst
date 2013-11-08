@@ -124,8 +124,7 @@ If everything went as expected you can now control a LED strip.
 |test_pi_ref|
 
 
-
-.. _led_strip_ws2801:
+.. _led_strip_bricklet_ws2801:
 
 WS2801
 ------
@@ -146,7 +145,8 @@ LED Strip Bricklet (API index 0).
 
 TODO Image: LED Strip Bricklet + LED Strip with marked signals and WS2801
 
-.. _led_strip_connectivity:
+
+.. _led_strip_bricklet_connectivity:
 
 Connectivity
 ------------
@@ -159,45 +159,45 @@ The following image depicts the interfaces of the LED Strip Bricklet.
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
-As described in the :ref:`WS2801 section <led_strip_ws2801>` above
+As described in the :ref:`WS2801 section <led_strip_bricklet_ws2801>` above
 the Bricklet supports pixels and strips with WS2801 controller.
 The terminal labeled with "Output" has to be connected with the input of
 the first WS2801 controller.
 
 The output terminal consists of four signals:
 
- * "DAT" is the data signal line to the WS2801 chip. It has to be connected to
-   the data input of the first WS2801. Unfortunately there is no 
-   general label on LED pixels or on LED strips for this input. Sometimes the 
-   signal is marked with SD (Serial Data) or DI (Data Input). It is also 
-   possible that the input of the pixel or strip is not marked, but the output 
-   is marked (DO, Data Output). If the output is marked, the non 
-   marked other side has to be the input.
+* "DAT" is the data signal line to the WS2801 chip. It has to be connected to
+  the data input of the first WS2801. Unfortunately there is no 
+  general label on LED pixels or on LED strips for this input. Sometimes the 
+  signal is marked with SD (Serial Data) or DI (Data Input). It is also 
+  possible that the input of the pixel or strip is not marked, but the output 
+  is marked (DO, Data Output). If the output is marked, the non 
+  marked other side has to be the input.
 
- * "CLK" is the clock signal line to the WS2801 chip. It has to be connected 
-   with the clock input of the first WS2801. This input is typically labeled 
-   with CLK, CK or CI (Clock Input). If only the output is labeled it can be 
-   labeled with CO (Clock Output).
+* "CLK" is the clock signal line to the WS2801 chip. It has to be connected 
+  with the clock input of the first WS2801. This input is typically labeled 
+  with CLK, CK or CI (Clock Input). If only the output is labeled it can be 
+  labeled with CO (Clock Output).
 
- * "-" is the ground signal line. Ground is necessary to give a reference for the
-   DAT and CLK signals.
+* "-" is the ground signal line. Ground is necessary to give a reference for the
+  DAT and CLK signals.
 
- * "+" is the supply voltage output. It is connected to the "+" signal of the
-   "Input" terminal and should not be used to power LED Strips or pixels. 
-   Leave it unconnected.
+* "+" is the supply voltage output. It is connected to the "+" signal of the
+  "Input" terminal and should not be used to power LED Strips or pixels. 
+  Leave it unconnected.
   
 
 The input terminal consisting of two signals:
 
- * "+" voltage supply input. It can be connected to the power supply for the 
-   LEDs to measure the supplied voltage. If you don't need this feature you
-   can leave it unconnected.
+* "+" voltage supply input. It can be connected to the power supply for the 
+  LEDs to measure the supplied voltage. If you don't need this feature you
+  can leave it unconnected.
 
- * "-" is the ground input. It is internally connected with the "-" ground of 
-   the "OUTPUT" terminal. 
+* "-" is the ground input. It is internally connected with the "-" ground of 
+  the "OUTPUT" terminal. 
 
 
-.. _led_strip_ram_constraints:
+.. _led_strip_bricklet_ram_constraints:
 
 RAM Constraints
 ---------------
@@ -221,7 +221,8 @@ Free Bricklet Ports               Maximum number of RGB LEDs
 3                                 320
 ================================  ============================================================
 
-.. _led_strip_led_strips:
+
+.. _led_strip_bricklet_led_strips:
 
 LED Strips
 ----------
@@ -231,7 +232,8 @@ TODO:
 * How to use them?
 * Where to inject power?
 
-.. _led_strip_led_pixels:
+
+.. _led_strip_bricklet_led_pixels:
 
 LED Pixels
 ----------
@@ -242,7 +244,7 @@ TODO:
 * Where to inject power?
 
 
-.. _led_strip_fixed_frame_rate:
+.. _led_strip_bricklet_fixed_frame_rate:
 
 Fixed Frame Rate
 ----------------
@@ -266,6 +268,7 @@ until the FrameRendered callback is triggered, write the next frame and so on.
 
 If you receive a FrameRendered callback before all LEDs are set, your frame
 rate is too high.
+
 
 .. _led_strip_bricklet_case:
 

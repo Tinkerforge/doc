@@ -196,7 +196,7 @@ House Code and Receiver Code
 ----------------------------
 
 To control remote switches or dimmers the house code and the receiver code
-must be known. These codes are typically configureable with small DIP-switches
+must be known. These codes are typically configurable with small DIP-switches
 inside the remote switch or dimmer.
 
 TODO Image
