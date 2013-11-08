@@ -127,15 +127,22 @@ angezeigt.
 Verzögerungs- und Blockier-Zeit
 -------------------------------
 
-TODO Image
+.. image:: /Images/Bricklets/bricklet_motion_detector_potentiometer_caption_350.jpg
+   :scale: 100 %
+   :alt: Motion Detector Foto mit beschrifteten Potentiometer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_motion_detector_potentiometer_caption_1200.jpg
 
-Der Sensor ist mit zwei Potentiometern ausgestattet. Mit dem TODO Potentiometer
-kann die Empfindlichkeit des Sensors und damit die Erkennungsreichweite (3-7m)
-eingestellt werden. Drehe das Potentiometer im Uhrzeigersinn und die Reichweite
-wird TODO. Mit dem Potentiometer auf der TODO Seite kann die Zeit eingestellt 
-werden die der Sensor seinen Zustand hält nachdem eine Bewegung erkannt wurde
-(Delay Time, 5s-200s). Drehe das Potentiometer im Uhrzeigersinn um die 
-Verzögerung TODO.
+Der Sensor ist mit zwei Potentiometern ausgestattet. Mit dem rechten 
+Potentiometer kann die Empfindlichkeit des Sensors und damit die 
+Erkennungsreichweite (3-7m) eingestellt werden. 
+Drehe das Potentiometer im Uhrzeigersinn und die Reichweite
+wird erhöht. 
+
+Mit dem Potentiometer auf der linken Seite kann die Zeit 
+eingestellt werden die der Sensor seinen Zustand hält nachdem eine Bewegung 
+erkannt wurde (Delay Time, 5s-200s). Drehe das Potentiometer im Uhrzeigersinn 
+um die Verzögerung zu erhöhen.
 
 Die Blockierzeit (Block Time) ist mit 2,5s festeingestellt. Hiermit ist die Zeit
 gemeint, in der der Sensor im "no motion detected" Zustand bleibt,

@@ -121,19 +121,23 @@ If everything went as expected you can now see when a motion is detected.
 |test_pi_ref|
 
 
-Delay Time and Block Time
--------------------------
+Delay Time, Block Time and Sensitivity
+--------------------------------------
 
-TODO Image
+.. image:: /Images/Bricklets/bricklet_motion_detector_potentiometer_caption_350.jpg
+   :scale: 100 %
+   :alt: Motion Detector Image with potentiometer labled
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_motion_detector_potentiometer_caption_1200.jpg
 
-The sensor is equipped with two potentiometers. With the TODO potentiometer it
+The sensor is equipped with two potentiometers. With the right potentiometer it
 is possible to adjust the sensitivity of the sensor. This way the detection 
 range can be adjusted (3-7m). Rotate the potentiometer clockwise will 
-TODO the range. 
+increase the range. 
 
-The potentiometer on the TODO side can be used to set the delay time of the 
+The potentiometer on the left side can be used to set the delay time of the 
 sensor (5s-200s). It is the time the sensor holds its state when motion was 
-detected. Rotate the potentiometer clockwise and it will TODO the delay time.
+detected. Rotate the potentiometer clockwise and it will increase the delay time.
 
 The block time is fixed with 2.5s. What does it mean? After the 
 sensor has detected motion and the motion has stopped the sensor will go in the
