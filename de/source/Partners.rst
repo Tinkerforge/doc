@@ -6,7 +6,8 @@ Partner
 .. note::
  Diese Seite befindet sich im Aufbau.
 
-.. container::
+..
+  .. container::
 
   .. container:: partnerlogo
 
@@ -19,8 +20,6 @@ Partner
 
     .. rubric:: Xively
 
-    *Cloud Service Provider für das Internet der Dinge*
-
     `Xively <https://xively.com/>`__ ist ...
     lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
     eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -31,6 +30,140 @@ Partner
     und das :ref:`Starterkit: Serverraum-Überwachung
     <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
     beinhalten Projekte die Xively für ihr Datenmanagement.
+
+
+..
+  .. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/openhab-logo.png
+       :alt: openHAB Logo
+       :align: center
+       :target: http://www.openhab.org/
+
+  .. container:: partnertext
+
+    .. rubric:: openHAB
+
+    `openHAB <http://www.openhab.org/>`__ is ...
+    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+
+..
+  .. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/xively-logo.png
+       :alt: Wolfram / Mathematica Logo
+       :align: center
+       :target: http://www.wolfram.com/mathematica/
+
+  .. container:: partnertext
+
+    .. rubric:: Wolfram / Mathematica
+
+    `Mathematica <http://www.wolfram.com/mathematica/>`__ is ...
+    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+
+..
+  .. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/xively-logo.png
+       :alt: Elektor JSON Protocol Logo
+       :align: center
+       :target: http://www.elektor.de/
+
+  .. container:: partnertext
+
+    .. rubric:: Elektor JSON Protokoll
+
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+    amet.
+
+
+..
+  .. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/netio-logo.png
+       :alt: NetIO Controller App Logo
+       :align: center
+       :target: http://netio.davideickhoff.de/
+
+  .. container:: partnertext
+
+    .. rubric:: NetIO Controller App
+
+    `NetIO <http://netio.davideickhoff.de/>`__ is ...
+    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+    This :ref:`setup guide <netio_setup>` explains how to use NetIO to control
+    Tinkerforge hardware.
+
+
+.. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/praxislive-logo.png
+       :alt: Praxis LIVE Logo
+       :align: center
+       :target: http://www.praxislive.org/
+
+  .. container:: partnertext
+
+    .. rubric:: Praxis LIVE
+
+    `Praxis LIVE <http://www.praxislive.org/>`__ ist ein grafische Open-Source
+    Umgebung für die schnelle Entwicklung von Medienübergreifenden Performance-Tools,
+    Projektionen und interaktiven Erlebniswelten. Einfaches Erstellen von
+    Projektionen, eigenen VJ Werkzeugen, Klanginstrumenten, Live-Medien für
+    Theater / Tanz Darbietungen; verwenden Sie es als digitales Live-Skizzenbuch,
+    zum Testen von Ideen und Experimentieren mit Quelltext.
+
+    Praxis LIVE kann als visuelle Entwicklungsumgebung für Tinkerforge allein
+    verwendet werden, oder für die Interaktion mit Audio-, Video-, GUIs,
+    MIDI-Steuerung oder OSC. Projekte können auch über die Befehlszeile
+    ausgeführt werden, oder exportiert als eigenständige Anwendungen.
+
+
+..
+  .. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/cumolocity-logo.png
+       :alt: Cumulocity Logo
+       :align: center
+       :target: http://www.cumulocity.com/
+
+  .. container:: partnertext
+
+    .. rubric:: Cumulocity
+
+    `Cumulocity <http://www.cumulocity.com/>`__ is ...
+    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 
 .. container::
