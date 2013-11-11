@@ -143,7 +143,15 @@ Since it is a chained bus, a single bus output has to be connected only
 to a single bus input. The bus is indexed beginning with the first WS2801 on the 
 LED Strip Bricklet (API index 0).
 
-TODO Image: LED Strip Bricklet + LED Strip with marked signals and WS2801
+.. image:: /Images/Bricklets/bricklet_led_strip_strip_example_600.jpg
+   :scale: 100 %
+   :alt: LED Strip with WS2801
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_strip_example_800.jpg
+
+The above picture depicts an typical WS2801 LED strip. You can see the
+WS2801 IC and the RGB LED. Recognize the signal labels for input ("IN") and
+output ("OUT"): 5V, CK (clock), SD (serial data) and GND.
 
 
 .. _led_strip_bricklet_connectivity:

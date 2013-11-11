@@ -144,9 +144,19 @@ Vorgänger verbunden. Da die WS2801 in Serie geschaltet werden müssen, darf jed
 Bus-Ausgang höchstens mit einem Bus-Eingang verbunden werden. Der Bus wird
 beginnend beim ersten WS2801 indiziert.
 
-TODO Image: LED Strip Bricklet + LED Strip with marked signals and WS2801
+.. image:: /Images/Bricklets/bricklet_led_strip_strip_example_600.jpg
+   :scale: 100 %
+   :alt: LED Strip with WS2801
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_strip_example_800.jpg
 
-.. _led_strip_connectivity:
+Das obige Foto zeigt einen typischen WS2801 LED Strip. Das WS2801 IC und die
+davon angesteuerte RGB LED sind gut erkennbar. Die Signale sind jeweils auf der
+Eingangsseite ("IN") und auf der Ausgangsseite ("OUT") gekennzeichnet:
+5V, CK (Clock), SD (Serial Data) und GND.
+
+
+.. _led_strip_bricklet_connectivity:
 
 Anschlussmöglichkeit
 --------------------
