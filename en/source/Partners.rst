@@ -3,11 +3,7 @@
 Partners
 ========
 
-.. note::
- This site is currently under construction.
-
-..
-  .. container::
+.. container::
 
   .. container:: partnerlogo
 
@@ -20,11 +16,30 @@ Partners
 
     .. rubric:: Xively
 
-    `Xively <https://xively.com/>`__ is ...
-    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    ..
+      `Xively <https://xively.com/>`__ provides the first public cloud
+      purpose-built for the Internet of Things (IoT). Xively's Platform as a
+      Service (PaaS) helps companies simplify and accelerate development of a
+      new generation of IoT-connected products that easily interact with other
+      connected offerings, and effortlessly scale to billions of devices. With
+      Xively, businesses of all sizes can focus on their innovation, instead of
+      infrastructure, and bring compelling connected offerings to market at
+      significant cost savings. Through the power of Xively's Connected Object
+      Cloud™, solutions can securely and selectively interconnect, creating an
+      exponential effect.
+
+    ..
+      http://blog.xively.com/2013/10/28/logmeins-xively-and-linear-technology-partner-to-spur-development-on-the-internet-of-things/
+
+    `Xively <https://xively.com/>`__ is a platform devoted to simplifying the
+    interconnection of devices and data with applications on the Internet of
+    Things. By providing necessary resources, Xively helps developers and
+    builders to easily create, prototype, build, pilot and deploy their Internet
+    connected product. So they can transform the way people experience their
+    world.
+
+    ..
+      http://www.linkedin.com/company/xively
 
     The :ref:`Starter Kit: Weather Station <starter_kit_weather_station_xively>`
     and the :ref:`Starter Kit: Server Room Monitoring
@@ -32,8 +47,7 @@ Partners
     include projects that use Xively for their data management.
 
 
-..
-  .. container::
+.. container::
 
   .. container:: partnerlogo
 
@@ -46,11 +60,15 @@ Partners
 
     .. rubric:: openHAB
 
-    `openHAB <http://www.openhab.org/>`__ is ...
-    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    `openHAB <http://www.openhab.org/>`__ is a software solution developed in
+    Java and is designed to be absolutely vendor-neutral as well as
+    hardware/protocol-agnostic. It can run on devices like the Raspberry Pi and
+    lets you integrate an abundance of different home automation technologies
+    into one. As it is fully open source and is maintained by a passionate and
+    growing community, it is the best way to make sure that your Smart Home
+    stays flexible in the future and that new upcoming technologies can be
+    easily integrated with it and that you are not trapped in any vendor
+    lock-in.
 
 
 ..
@@ -58,7 +76,7 @@ Partners
 
   .. container:: partnerlogo
 
-    .. image:: /Images/Misc/xively-logo.png
+    .. image:: /Images/Misc/mathematica-logo.png
        :alt: Wolfram / Mathematica logo
        :align: center
        :target: http://www.wolfram.com/mathematica/
@@ -79,7 +97,7 @@ Partners
 
   .. container:: partnerlogo
 
-    .. image:: /Images/Misc/xively-logo.png
+    .. image:: /Images/Misc/elektor-logo.png
        :alt: Elektor JSON Protocol logo
        :align: center
        :target: http://www.elektor.de/
@@ -95,8 +113,7 @@ Partners
     amet.
 
 
-..
-  .. container::
+.. container::
 
   .. container:: partnerlogo
 
@@ -109,11 +126,13 @@ Partners
 
     .. rubric:: NetIO Controller App
 
-    `NetIO <http://netio.davideickhoff.de/>`__ is ...
-    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    `NetIO <http://netio.davideickhoff.de/>`__ is a multi platform smart phone
+    application, a generic remote controller for almost everything. It simply
+    sends and reads strings over a network connection. The communication is not
+    fixed to a specific protocol is, this allows to interact with many
+    different devices. It can easily communicate with microcontrollers or PCs
+    connected to a LAN! An online editor allows to configure the layout and
+    functions of the control elements to realize different tasks.
 
     This :ref:`setup guide <netio_setup>` explains how to use NetIO to control
     Tinkerforge hardware.
@@ -133,9 +152,9 @@ Partners
     .. rubric:: Praxis LIVE
 
     `Praxis LIVE <http://www.praxislive.org/>`__ is an open-source, graphical
-    environment for rapid development of intermedia performance tools,
+    environment for rapid development of inter-media performance tools,
     projections and interactive spaces. Easily create projections, custom VJ
-    tools, sonic performance instruments, live media for theatre / dance
+    tools, sonic performance instruments, live media for theater/dance
     performances; use it as a live digital sketchbook, test out ideas,
     experiment with code.
 
@@ -170,5 +189,5 @@ Partners
 
   .. container:: partnerdisclaimer
 
-    All other brand names and trademarks are the property of their respective
-    owners and are used for descriptive purposes only.
+    All brand names and trademarks are the property of their respective owners
+    and are used for descriptive purposes only.

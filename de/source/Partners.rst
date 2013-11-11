@@ -3,11 +3,7 @@
 Partner
 =======
 
-.. note::
- Diese Seite befindet sich im Aufbau.
-
-..
-  .. container::
+.. container::
 
   .. container:: partnerlogo
 
@@ -20,20 +16,20 @@ Partner
 
     .. rubric:: Xively
 
-    `Xively <https://xively.com/>`__ ist ...
-    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    `Xively <https://xively.com/>`__ ist eine Plattform, die sich der einfachen
+    Verbindung von Anwendungen mit Geräten und Daten im Internet der Dinge
+    widmet. Durch die Bereitstellung von notwendigen Ressourcen, hilft Xively
+    Entwicklern und Herstellern die Entwicklung, Verteilung und Steuerung ihrer
+    Produkte für das Internet der Dinge zu vereinfachen. So können diese die Art
+    und Weise verändern, wie Menschen ihre Welt erleben.
 
     Das :ref:`Starterkit: Wetterstation <starter_kit_weather_station_xively>`
     und das :ref:`Starterkit: Serverraum-Überwachung
     <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
-    beinhalten Projekte die Xively für ihr Datenmanagement.
+    beinhalten Projekte die Xively für ihr Datenmanagement verwenden.
 
 
-..
-  .. container::
+.. container::
 
   .. container:: partnerlogo
 
@@ -46,11 +42,15 @@ Partner
 
     .. rubric:: openHAB
 
-    `openHAB <http://www.openhab.org/>`__ is ...
-    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    `openHAB <http://www.openhab.org/>`__ ist eine Software-Lösung entwickelt
+    in Java und entworfen um absolut herstellerunabhängig und hardware- und
+    protokollagnostisch zu sein. Sie kann auf Geräten wie dem Raspberry Pi
+    ausgeführt werden und kann eine Vielzahl von verschiedenen
+    Hausautomatierungs-Technologien in ein System integrieren. openHAB ist
+    vollständig Open Source und wird von einer sehr aktiven und ständig
+    wachsenden Community weiterentwickelt. Dadurch ist es die beste Lösung, um
+    sicherzustellen, dass ihr Smart Home flexibel bleibt und zukünftige
+    Technologien einfach integriert werden können.
 
 
 ..
@@ -95,8 +95,7 @@ Partner
     amet.
 
 
-..
-  .. container::
+.. container::
 
   .. container:: partnerlogo
 
@@ -109,14 +108,17 @@ Partner
 
     .. rubric:: NetIO Controller App
 
-    `NetIO <http://netio.davideickhoff.de/>`__ is ...
-    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    `NetIO <http://netio.davideickhoff.de/>`__ ist eine Multi-Plattform
+    Smartphone App, eine universale Fernbedienung für fast alles. Es werden
+    Zeichenfolgen über eine Netzwerkverbindung gesendet und empfangen. Die
+    Kommunikation ist nicht an ein spezielles Protokoll gebunden, dadurch
+    können viele verschiedene Gerät angesprochen werden. Es kann einfach mit
+    Mikrocontrollern oder PCs im Netzwerk kommuniziert werden. Ein Online-Editor
+    ermöglicht es, das Layout und die Funktion der Kontrollelemente zu
+    konfigurieren, um so verschiedene Abläufe und Aufgaben zu realisieren.
 
-    This :ref:`setup guide <netio_setup>` explains how to use NetIO to control
-    Tinkerforge hardware.
+    Diese :ref:`Anleitung <netio_setup>` erklärt wie NetIO verwendet werden
+    kann, um Tinkerforge Bausteine zu kontrollieren.
 
 
 .. container::
@@ -136,7 +138,7 @@ Partner
     Umgebung für die schnelle Entwicklung von Medienübergreifenden Performance-Tools,
     Projektionen und interaktiven Erlebniswelten. Einfaches Erstellen von
     Projektionen, eigenen VJ Werkzeugen, Klanginstrumenten, Live-Medien für
-    Theater / Tanz Darbietungen; verwenden Sie es als digitales Live-Skizzenbuch,
+    Theater/Tanz Darbietungen; verwenden Sie es als digitales Live-Skizzenbuch,
     zum Testen von Ideen und Experimentieren mit Quelltext.
 
     Praxis LIVE kann als visuelle Entwicklungsumgebung für Tinkerforge allein
@@ -170,5 +172,5 @@ Partner
 
   .. container:: partnerdisclaimer
 
-    Alle anderen genannten Markennamen oder Warenzeichen dienen nur der
-    Wiedererkennung und sind Eigentum der jeweiligen Inhaber.
+    Alle genannten Markennamen oder Warenzeichen dienen nur der Wiedererkennung
+    und sind Eigentum der jeweiligen Inhaber.
