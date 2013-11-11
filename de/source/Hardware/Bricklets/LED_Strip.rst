@@ -150,8 +150,9 @@ beginnend beim ersten WS2801 indiziert.
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_strip_example_800.jpg
 
-Das obige Foto zeigt einen typischen WS2801 LED Strip. Das WS2801 IC und die
-davon angesteuerte RGB LED sind gut erkennbar. Die Signale sind jeweils auf der
+Das obige Foto zeigt einen typischen WS2801 LED Strip. Jedes Modul des Strips
+ist mit einem WS2801 IC und einer davon angesteuerten RGB LED ausgestattet.
+Die Signale sind jeweils auf der
 Eingangsseite ("IN") und auf der Ausgangsseite ("OUT") gekennzeichnet:
 5V, CK (Clock), SD (Serial Data) und GND.
 

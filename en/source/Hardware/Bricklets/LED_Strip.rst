@@ -149,9 +149,9 @@ LED Strip Bricklet (API index 0).
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_strip_example_800.jpg
 
-The above picture depicts an typical WS2801 LED strip. You can see the
-WS2801 IC and the RGB LED. Recognize the signal labels for input ("IN") and
-output ("OUT"): 5V, CK (clock), SD (serial data) and GND.
+The above picture depicts an typical WS2801 LED strip. You can see each module
+equipped with one WS2801 IC and a connected RGB LED. Recognize the signal labels 
+for input ("IN") and output ("OUT"): 5V, CK (clock), SD (serial data) and GND. 
 
 
 .. _led_strip_bricklet_connectivity:
