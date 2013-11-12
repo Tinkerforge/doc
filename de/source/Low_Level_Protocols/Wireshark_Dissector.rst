@@ -22,7 +22,7 @@ welches zwischen :ref:`Bindings <api_bindings>` und
 zwischen Brick Daemon und :ref:`Bricks <product_overview_bricks>` (USB)
 genutzt wird zu analysieren.
 
-Der Dissector kann nütlich sein um Bugs in den Bindings und in bickd zu
+Der Dissector kann nützlich sein um Bugs in den Bindings und in brickd zu
 debuggen. Er ist auch sehr hilfreich beim erstellen neuer Bindings.
 
 .. image:: /Images/Screenshots/wireshark_dissector.jpg
@@ -34,7 +34,7 @@ debuggen. Er ist auch sehr hilfreich beim erstellen neuer Bindings.
 Installation
 ------------
 
-Der TFP Dissector ist im Wireshark trunk seit
+Der TFP Dissector ist im Wireshark SVN trunk seit
 `November 2013 <https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9324>`__. 
 Er ist noch nicht in der letzten "stable" Veröffentlichung. Die folgenden
 Schritte sind notwendig um Wireshark aus dem Quellcode zu installieren::
@@ -55,25 +55,25 @@ Oder auch installiert werden::
 
 Wireshark hat viele Abhängigkeiten. Das Configure-Script gibt die
 fehlenden Abhängigkeiten aus. Auf Debian basierten System können
-alle notwendigen Abhängigkeiten wie folg installiert werden::
+alle notwendigen Abhängigkeiten wie folgt installiert werden::
 
  apt-get build-dep wireshark
 
-Der dissector selbst ist auch auf
-`Gibhub verfügbar <https://github.com/Tinkerforge/tf-wireshark-dissector>`__.
+Der Dissector selbst ist auch auf
+`GibHub verfügbar <https://github.com/Tinkerforge/tf-wireshark-dissector>`__.
 
 Display Filter
 --------------
 
 Display Filter sind für alle Felder der TFP Pakete vorhanden.
 
-Nütliche Beispiele:
+Nützliche Beispiele:
 
 Zeige nur TFP Pakete::
 
  tfp
 
-Zeige nur Pakete die von oder zur uid "XYZ" gehen::
+Zeige nur Pakete die von oder zur UID "XYZ" gehen::
 
  tfp.uid == "XYZ"
 
@@ -81,6 +81,6 @@ Zeige nur Pakete mit einem Fehlercode::
 
  tfp.e != 0
 
-Zeige nur spezifische Funktionsaufrufe (in diesem Fall function id 4)::
+Zeige nur spezifische Funktionsaufrufe (in diesem Fall Function ID 4)::
 
  tfp.fid == 4

@@ -10,7 +10,7 @@ Wireshark Dissector
 analyzer. It is used for network troubleshooting, analysis, software and 
 communications protocol development, and education.
 
-A wireshark dissector is a plugin for a specific protocol. With the
+A Wireshark dissector is a plugin for a specific protocol. With the
 TFP (Tinkerforge Protocol) dissector it is possible to analyze the
 protocol that is used between :ref:`Bindings <api_bindings>` and 
 :ref:`Brick Daemon <brickd>` (TCP/IP) as well as the protocol that is used 
@@ -28,10 +28,10 @@ is also very helpful while creating new Bindings.
 Installation
 ------------
 
-The TFP dissector is in the wireshark trunk since 
+The TFP dissector is in the Wireshark SVN trunk since
 `November 2013 <https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9324>`__. 
 It is not yet available in the latest stable release. The following steps 
-are necessary to build wireshark trunk from source::
+are necessary to build Wireshark trunk from source::
 
  svn co http://anonsvn.wireshark.org/wireshark/trunk/ wireshark
  cd wireshark/
@@ -39,7 +39,7 @@ are necessary to build wireshark trunk from source::
  ./configure
  make
 
-You can now start wireshark directly with::
+You can now start Wireshark directly with::
 
  ./wireshark
 
@@ -48,13 +48,13 @@ Or you can install it with::
  make install
 
 Wireshark has lots of dependencies, the configure script will tell you which
-ones are missing. On debian based system you can install all necessary
+ones are missing. On Debian based system you can install all necessary
 dependencies via::
 
  apt-get build-dep wireshark
 
 The dissector itself is also 
-`available on github <https://github.com/Tinkerforge/tf-wireshark-dissector>`__.
+`available on GitHub <https://github.com/Tinkerforge/tf-wireshark-dissector>`__.
 
 Display Filter
 --------------
@@ -67,7 +67,7 @@ Only show TFP packets::
 
  tfp
 
-Only show packets that are from or to uid "XYZ"::
+Only show packets that are from or to UID "XYZ"::
 
  tfp.uid == "XYZ"
 
@@ -75,6 +75,6 @@ Only show packets with an error::
 
  tfp.e != 0
 
-Only show specific function calls (in this case function id 4)::
+Only show specific function calls (in this case function ID 4)::
 
  tfp.fid == 4

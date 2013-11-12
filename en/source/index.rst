@@ -161,7 +161,7 @@ level protocols:
    Low_Level_Protocols/TCPIP
    Low_Level_Protocols/Modbus
 
-A :ref:`wireshark dissector <wireshark_dissector>` for TFP 
+A :ref:`Wireshark dissector <wireshark_dissector>` for TFP
 (Tinkerforge Protocol) is available.
 
 
