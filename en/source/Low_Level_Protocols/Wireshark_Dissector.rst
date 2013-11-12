@@ -28,9 +28,10 @@ is also very helpful while creating new Bindings.
 Installation
 ------------
 
-The TFP dissector is in the wireshark trunk since November 2013. It is not
-yet available in the latest stable release. The following steps are necessary
-to build wireshark trunk from source::
+The TFP dissector is in the wireshark trunk since 
+`November 2013 <https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=9324>`__. 
+It is not yet available in the latest stable release. The following steps 
+are necessary to build wireshark trunk from source::
 
  svn co http://anonsvn.wireshark.org/wireshark/trunk/ wireshark
  cd wireshark/
@@ -52,6 +53,8 @@ dependencies via::
 
  apt-get build-dep wireshark
 
+The dissector itself is also 
+`available on github <https://github.com/Tinkerforge/tf-wireshark-dissector>`__.
 
 Display Filter
 --------------
