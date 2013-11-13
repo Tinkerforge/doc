@@ -67,12 +67,16 @@ with Tinkerforge:
 * :ref:`starter_kit_hardware_hacking`
 * :ref:`starter_kit_server_room_monitoring`
 
+.. * :ref:`starter_kit_blinkenlights`
+
 .. toctree::
    :hidden:
 
    Kits/WeatherStation/WeatherStation
    Kits/HardwareHacking/HardwareHacking
    Kits/ServerRoomMonitoring/ServerRoomMonitoring
+   
+..   Kits/Blinkenlights/Blinkenlights
 
 
 .. _index_software:
