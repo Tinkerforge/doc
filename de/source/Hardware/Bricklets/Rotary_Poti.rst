@@ -139,7 +139,8 @@ entstanden.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Rotary Poti Bricklet <https://www.tinkerforge.com/de/shop/cases/case-rotary-poti-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Rotary Poti Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-rotary-poti-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_rotary_poti_case_350.jpg
    :scale: 100 %

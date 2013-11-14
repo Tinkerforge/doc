@@ -157,7 +157,8 @@ and a graph that shows the voltage over time.
 Case
 ----
 
-A `laser-cut case for the Analog In Bricklet <https://www.tinkerforge.com/en/shop/cases/case-analog-in-out-bricklet.html>`__ is available.
+A `laser-cut case for the Analog In Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-analog-in-out-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_analog_in_case_build_up_350.jpg
    :scale: 100 %

@@ -207,7 +207,8 @@ TODO Image
 Case
 ----
 
-A `laser-cut case for the Remote Switch Bricklet <https://www.tinkerforge.com/en/shop/cases/case-remote-switch-bricklet.html>`__ is available.
+A `laser-cut case for the Remote Switch Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-remote-switch-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_remote_switch_case_built_up_350.jpg
    :scale: 100 %

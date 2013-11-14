@@ -170,7 +170,8 @@ und der Motor ungefähr 40W Leistung verbraucht.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Voltage/Current Bricklet <https://www.tinkerforge.com/de/shop/cases/case-voltage-current-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Voltage/Current Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-voltage-current-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_voltage_current_case_350.jpg
    :scale: 100 %

@@ -128,7 +128,8 @@ Encoderzählstand angezeigt.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Rotary Encoder Bricklet <https://www.tinkerforge.com/de/shop/cases/case-rotary-encoder-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Rotary Encoder Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-rotary-encoder-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_rotary_encoder_case_built_up_350.jpg
    :scale: 100 %

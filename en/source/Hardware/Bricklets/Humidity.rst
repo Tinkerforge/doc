@@ -130,7 +130,8 @@ as long as you breath and fall again afterwards.
 Case
 ----
 
-A `laser-cut case for the Humidity Bricklet <https://www.tinkerforge.com/en/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ is available.
+A `laser-cut case for the Humidity Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
    :scale: 100 %

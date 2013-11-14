@@ -118,7 +118,8 @@ des Tilt Bricklet angezeigt.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Tilt Bricklet <https://www.tinkerforge.com/de/shop/cases/case-tilt-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Tilt Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-tilt-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_tilt_case_built_up_350.jpg
    :scale: 100 %

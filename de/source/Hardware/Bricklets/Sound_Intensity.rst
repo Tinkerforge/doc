@@ -125,7 +125,8 @@ angezeigt.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Sound Intensity Bricklet <https://www.tinkerforge.com/de/shop/cases/case-sound-intensity-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Sound Intensity Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-sound-intensity-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_sound_intensity_case_built_up_350.jpg
    :scale: 100 %

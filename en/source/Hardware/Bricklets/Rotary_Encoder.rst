@@ -129,7 +129,8 @@ the corresponding count.
 Case
 ----
 
-A `laser-cut case for the Rotary Encoder Bricklet <https://www.tinkerforge.com/en/shop/cases/case-rotary-encoder-bricklet.html>`__ is available.
+A `laser-cut case for the Rotary Encoder Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-rotary-encoder-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_rotary_encoder_case_built_up_350.jpg
    :scale: 100 %

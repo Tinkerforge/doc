@@ -118,7 +118,8 @@ state of the Tilt Bricklet.
 Case
 ----
 
-A `laser-cut case for the Tilt Bricklet <https://www.tinkerforge.com/en/shop/cases/case-tilt-bricklet.html>`__ is available.
+A `laser-cut case for the Tilt Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-tilt-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_tilt_case_built_up_350.jpg
    :scale: 100 %

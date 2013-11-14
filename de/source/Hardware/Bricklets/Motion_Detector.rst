@@ -154,7 +154,8 @@ nachdem eine Bewegung erkannt wurde und diese Bewegung nicht mehr erkannt wurde.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Motion Detector Bricklet <https://www.tinkerforge.com/de/shop/cases/case-motion-detector-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Motion Detector Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-motion-detector-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_motion_detector_case_built_up_350.jpg
    :scale: 100 %

@@ -124,7 +124,8 @@ intensity.
 Case
 ----
 
-A `laser-cut case for the Sound Intensity Bricklet <https://www.tinkerforge.com/en/shop/cases/case-sound-intensity-bricklet.html>`__ is available.
+A `laser-cut case for the Sound Intensity Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-sound-intensity-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_sound_intensity_case_built_up_350.jpg
    :scale: 100 %

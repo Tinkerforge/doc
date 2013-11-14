@@ -167,7 +167,8 @@ auch mit Hilfe einer Büroklammer erzeugt werden.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das IO-4 Bricklet <https://www.tinkerforge.com/de/shop/cases/case-io-4-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das IO-4 Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-io-4-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_io4_case_350.jpg
    :scale: 100 %

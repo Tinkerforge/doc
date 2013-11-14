@@ -122,7 +122,8 @@ Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Distance US Bricklet <https://www.tinkerforge.com/de/shop/cases/case-distance-us-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Distance US Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-distance-us-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_distance_us_case_built_up_350.jpg
    :scale: 100 %

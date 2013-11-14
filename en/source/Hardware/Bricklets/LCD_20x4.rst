@@ -154,7 +154,8 @@ with one input (BTN0 to BTN3) and the other with GND.
 Case
 ----
 
-A `laser-cut case for the LCD 20x4 Bricklet <https://www.tinkerforge.com/en/shop/cases/case-lcd-20x4-bricklet.html>`__ is available.
+A `laser-cut case for the LCD 20x4 Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-lcd-20x4-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_lcd_20x4_case_350.jpg
    :scale: 100 %

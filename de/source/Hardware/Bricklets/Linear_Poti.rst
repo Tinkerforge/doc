@@ -140,7 +140,8 @@ Der Graph ist durch hoch und runter bewegen des Sliders entstanden.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Linear Poti Bricklet <https://www.tinkerforge.com/de/shop/cases/case-linear-poti-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Linear Poti Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-linear-poti-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_linear_poti_case_350.jpg
    :scale: 100 %

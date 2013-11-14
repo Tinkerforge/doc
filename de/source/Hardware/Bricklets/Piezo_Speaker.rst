@@ -125,7 +125,8 @@ Wenn alles wie erwartet funktioniert wird können nun Töne erzeugt werden.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Piezo Speaker Bricklet <https://www.tinkerforge.com/de/shop/cases/case-piezo-speaker-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Piezo Speaker Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-piezo-speaker-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_piezo_speaker_case_built_up_350.jpg
    :scale: 100 %

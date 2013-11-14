@@ -205,7 +205,8 @@ Look in the provided files above to get an idea.
 Case
 ----
 
-A `laser-cut case for the Distance IR Bricklet <https://www.tinkerforge.com/en/shop/cases/case-distance-ir-bricklet.html>`__ is available.
+A `laser-cut case for the Distance IR Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-distance-ir-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_distance_ir_case_350.jpg
    :scale: 100 %

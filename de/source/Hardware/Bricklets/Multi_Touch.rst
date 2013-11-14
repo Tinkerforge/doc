@@ -147,7 +147,8 @@ geändert werden und mittels "Recalibrate" übernommen werden.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Multi Touch Bricklet <https://www.tinkerforge.com/de/shop/cases/case-multi-touch-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Multi Touch Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-multi-touch-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_multi_touch_case_built_up_350.jpg
    :scale: 100 %

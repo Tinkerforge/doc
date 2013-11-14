@@ -186,7 +186,8 @@ Weitere Informationen über Schutzbeschaltung ist
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Dual Relay Bricklet <https://www.tinkerforge.com/de/shop/cases/case-dual-relay-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Dual Relay Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-dual-relay-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_dual_relay_case_350.jpg
    :scale: 100 %

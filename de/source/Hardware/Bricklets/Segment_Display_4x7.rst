@@ -124,7 +124,8 @@ nun an-/ausgeschaltet werden.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Segment Display 4x7 Bricklet <https://www.tinkerforge.com/de/shop/cases/case-segment-display-4x7-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Segment Display 4x7 Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-segment-display-4x7-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_segment_display_4x7_case_built_up_350.jpg
    :scale: 100 %

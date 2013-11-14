@@ -148,7 +148,8 @@ Interact with the sensor to see the current changing in the Brick Viewer.
 Case
 ----
 
-A `laser-cut case for the Industrial Dual 0-20mA Bricklet <https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
+A `laser-cut case for the Industrial Dual 0-20mA Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_industrial_case_350.jpg
    :scale: 100 %

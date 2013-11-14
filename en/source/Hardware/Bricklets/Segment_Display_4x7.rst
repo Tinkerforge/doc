@@ -124,7 +124,8 @@ individual segments.
 Case
 ----
 
-A `laser-cut case for the Segment Display 4x7 Bricklet <https://www.tinkerforge.com/en/shop/cases/case-segment-display-4x7-bricklet.html>`__ is available.
+A `laser-cut case for the Segment Display 4x7 Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-segment-display-4x7-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_segment_display_4x7_case_built_up_350.jpg
    :scale: 100 %

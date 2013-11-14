@@ -121,7 +121,8 @@ If everything went as expected you can now see the measured distance.
 Case
 ----
 
-A `laser-cut case for the Distance US Bricklet <https://www.tinkerforge.com/en/shop/cases/case-distance-us-bricklet.html>`__ is available.
+A `laser-cut case for the Distance US Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-distance-us-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_distance_us_case_built_up_350.jpg
    :scale: 100 %

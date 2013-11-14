@@ -151,7 +151,8 @@ detect motion if there is any.
 Case
 ----
 
-A `laser-cut case for the Motion Detector Bricklet <https://www.tinkerforge.com/en/shop/cases/case-motion-detector-bricklet.html>`__ is available.
+A `laser-cut case for the Motion Detector Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-motion-detector-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_motion_detector_case_built_up_350.jpg
    :scale: 100 %

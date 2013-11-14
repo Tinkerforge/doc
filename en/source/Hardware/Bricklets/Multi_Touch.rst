@@ -143,7 +143,8 @@ you have found a satisfying sensitivity. To take over the entered value press
 Case
 ----
 
-A `laser-cut case for the Multi Touch Bricklet <https://www.tinkerforge.com/en/shop/cases/case-multi-touch-bricklet.html>`__ is available.
+A `laser-cut case for the Multi Touch Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-multi-touch-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_multi_touch_case_built_up_350.jpg
    :scale: 100 %

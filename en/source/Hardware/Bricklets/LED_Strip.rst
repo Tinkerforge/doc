@@ -283,7 +283,8 @@ rate is too high.
 Case
 ----
 
-A `laser-cut case for the LED Strip Bricklet <https://www.tinkerforge.com/en/shop/cases/case-led-strip-bricklet.html>`__ is available.
+A `laser-cut case for the LED Strip Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-led-strip-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_led_strip_case_built_up_350.jpg
    :scale: 100 %

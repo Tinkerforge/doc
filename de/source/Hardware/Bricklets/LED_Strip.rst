@@ -286,7 +286,8 @@ gesetzt wurden, ist die Aktualisierungsrate zu hoch.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das LED Strip Bricklet <https://www.tinkerforge.com/de/shop/cases/case-led-strip-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das LED Strip Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-led-strip-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_led_strip_case_built_up_350.jpg
    :scale: 100 %

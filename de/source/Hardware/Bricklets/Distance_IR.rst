@@ -213,7 +213,8 @@ Abbildungsdateien diesen als Beispiel für ein besseres Verständnis.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Distance IR Bricklet <https://www.tinkerforge.com/de/shop/cases/case-distance-ir-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Distance IR Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-distance-ir-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_distance_ir_case_350.jpg
    :scale: 100 %

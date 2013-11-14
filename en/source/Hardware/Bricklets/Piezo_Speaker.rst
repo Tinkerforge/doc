@@ -123,7 +123,8 @@ If everything went as expected you can now generate beeps.
 Case
 ----
 
-A `laser-cut case for the Piezo Speaker Bricklet <https://www.tinkerforge.com/en/shop/cases/case-piezo-speaker-bricklet.html>`__ is available.
+A `laser-cut case for the Piezo Speaker Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-piezo-speaker-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_piezo_speaker_case_built_up_350.jpg
    :scale: 100 %

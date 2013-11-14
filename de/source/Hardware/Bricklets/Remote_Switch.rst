@@ -210,7 +210,8 @@ TODO Image
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet <https://www.tinkerforge.com/de/shop/cases/case-remote-switch-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-remote-switch-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_remote_switch_case_built_up_350.jpg
    :scale: 100 %

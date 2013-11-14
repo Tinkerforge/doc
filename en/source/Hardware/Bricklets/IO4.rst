@@ -169,7 +169,8 @@ Brick Viewer.
 Case
 ----
 
-A `laser-cut case for the IO-4 Bricklet <https://www.tinkerforge.com/en/shop/cases/case-io-4-bricklet.html>`__ is available.
+A `laser-cut case for the IO-4 Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-io-4-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_io4_case_350.jpg
    :scale: 100 %

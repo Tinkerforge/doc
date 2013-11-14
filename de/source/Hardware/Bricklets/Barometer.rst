@@ -172,7 +172,8 @@ aber typischerweise dem QNH Wert ähnlich.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Barometer Bricklet <https://www.tinkerforge.com/de/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Barometer Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
    :scale: 100 %
