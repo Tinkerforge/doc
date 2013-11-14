@@ -159,12 +159,12 @@ bricklet_descriptions = {
     'de': 'Misst Entfernungen bis zu 150cm mit IR Licht'
     },
 'distance_us': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Measures distances from 2cm to 400cm with ultrasound',
+    'de': 'Misst Entfernungen von 2cm bis 400cm mit Ultraschall'
     },
 'dual_button': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Two tactile buttons with built-in blue LEDs',
+    'de': 'Zwei Taster mit eingebauten blauen LEDs'
     },
 'dual_relay': {
     'en': 'Two relays to switch AC/DC devices',
@@ -175,8 +175,8 @@ bricklet_descriptions = {
     'de': 'Bestimmt Position, Geschwindigkeit und Höhe'
     },
 'hall_effect': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Detects presence of magnetic field',
+    'de': 'Detektiert Magnetfelder'
     },
 'humidity': {
     'en': 'Measures relative humidity',
@@ -219,28 +219,28 @@ bricklet_descriptions = {
     'de': '20x4 Zeichen alphanumerisches Display'
     },
 'led_strip': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Controls up to 320 RGB LEDs',
+    'de': 'Steuert bis zu 320 RGB LEDs'
     },
 'line': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Measures the reflectivity of a surface',
+    'de': 'Misst die Reflektivität einer Oberfläche'
     },
 'linear_poti': {
     'en': '59mm linear potentiometer',
     'de': '59mm Linear-Potentiometer'
     },
 'moisture': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Measures moisture between two probes',
+    'de': 'Misst Feuchtigkeit zwischen zwei Elektroden'
     },
 'motion_detector': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Passive Infrared Motion Sensor, 7m range',
+    'de': 'Passiver Infrarot Bewegungssensor, 7m Reichweite'
     },
 'multi_touch': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Capacitive Touch Sensor for 12 electrodes',
+    'de': 'Kapazitiver Touch Sensor für 12 Elektroden'
     },
 'piezo_buzzer': {
     'en': 'Creates 1kHz beep',
@@ -255,24 +255,24 @@ bricklet_descriptions = {
     'de': 'Liest Temperaturen von Pt100/1000-Sensoren'
     },
 'remote_switch': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Controls remote mains switches',
+    'de': 'Steuert Funksteckdosen'
     },
 'rotary_encoder': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': '360° rotary encoder with push-button',
+    'de': '360° Drehgeber / Drehencoder mit Taster'
     },
 'rotary_poti': {
     'en': '300° rotary potentiometer',
     'de': '300° Dreh-Potentiometer'
     },
 'segment_display_4x7': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Four 7-segment displays with switchable colon',
+    'de': 'Vier 7-Segment Anzeigen mit schaltbarem Doppelpunkt'
     },
 'sound_intensity': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Measures sound intensity',
+    'de': 'Misst die Schallintensität'
     },
 'temperature': {
     'en': 'Measures ambient temperature with 0.5°C accuracy',
@@ -283,8 +283,8 @@ bricklet_descriptions = {
     'de': 'Kontaktlose Objekttemperaturmessung von -70°C bis 380°C'
     },
 'tilt': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Detects inclination of Bricklet (tilt switch open/closed)',
+    'de': 'Erkennt Neigung des Bricklets (Neigungsschalter offen/geschlossen)'
     },
 'voltage': {
     'en': 'Measures voltages up to 50V',
