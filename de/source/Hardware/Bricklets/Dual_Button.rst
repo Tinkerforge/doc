@@ -55,17 +55,17 @@ Dual Button Bricklet
 Features
 --------
 
-* Zwei Taster mit eingebauter blauer LED
+* Zwei Taster mit eingebauten blauen LEDs
 * Auto-Toggle von LED möglich
 
 Beschreibung
 ------------
 
-Das Dual Button Bricklet ist mit zwei Drucktastern ausgestattet. Beide
-Taster haben eine eingebaute blaue LED. Der aktuelle Wert der Taster
-(gedrückt/nicht gedrückt) und der LEDs (an/aus) kann jederzeit ausgelesen
-werden. Es ist möglich die LEDs selbst an/aus zu schalten sowie
-Auto-Toggle zu aktivieren. Im Auto-Toggle Modus werden die LEDs
+Das Dual Button :ref:`Bricklet <product_overview_bricklets>` ist mit zwei
+Drucktastern ausgestattet. Beide Taster haben eine eingebaute blaue LED. Der
+aktuelle Wert der Taster (gedrückt/nicht gedrückt) und der LEDs (an/aus) kann
+jederzeit ausgelesen werden. Es ist möglich die LEDs selbst an/aus zu schalten
+sowie Auto-Toggle zu aktivieren. Im Auto-Toggle Modus werden die LEDs
 automatisch bei jedem Tastendruck umgeschaltet.
 
 Es ist auch möglich Events zu nutzen. Dadurch ist es möglich auf einen
@@ -79,7 +79,7 @@ Eigenschaft                       Wert
 ================================  ============================================================
 Taster Typ                        Drucktaster mit LED
 Taster Betätigungskraft           150gf
-Taster Bewegungsdistanz           2.5mm
+Taster Bewegungsdistanz           2,5mm
 LED Farbe                         Blau
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------

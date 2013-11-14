@@ -57,15 +57,15 @@ Features
 
 * 360° rotary encoder
 * Counts 24 steps per rotation (step angle 15°)
-* Integrated switch
+* Integrated push-button
 
 Description
 -----------
 
-The Rotary Encoder Bricklet is equipped with a 360° rotary encoder.
-It has 24 steps per rotation with a nice clicking feel. The encoder
-has an integrated switch (by pressing on the knob) that can be used 
-to select a menu item or similar.
+The Rotary Encoder :ref:`Bricklet <product_overview_bricklets>` is equipped
+with a 360° rotary encoder. It has 24 steps per rotation with a nice clicking
+feel. The encoder has an integrated push-button (by pressing on the knob) that
+can be used to select a menu item or similar.
 
 The difference between the Rotary Poti and the Rotary Encoder Bricklet
 is that the encoder has full rotation without limits.

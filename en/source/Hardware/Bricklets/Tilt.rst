@@ -61,8 +61,8 @@ Features
 Description
 -----------
 
-The Tilt Bricklet is equipped with a tilt switch. It can detect if the
-Bricklet is tilted or if the Bricklet is vibrating.
+The Tilt :ref:`Bricklet <product_overview_bricklets>` is equipped with a tilt
+switch. It can detect if the Bricklet is tilted or if the Bricklet is vibrating.
 
 It is possible to configure events that are triggered if the state of
 the Tilt Bricklet changes.

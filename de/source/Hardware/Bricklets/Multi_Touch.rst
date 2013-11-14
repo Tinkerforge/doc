@@ -64,9 +64,9 @@ Features
 Beschreibung
 ------------
 
-Das Multi Touch Bricklet ist mit dem MPR121 Capacitive Touch Sensor
-ausgestattet. Es kann genutzt werden um Berührungen an 12
-unterschiedlichen Stellen zu erkennen.
+Das Multi Touch :ref:`Bricklet <product_overview_bricklets>` ist mit dem MPR121
+Capacitive Touch Sensor ausgestattet. Es kann genutzt werden um Berührungen an
+12 unterschiedlichen Stellen zu erkennen.
 
 Das zu berührende Teil wird "Elektrode" genannt. Die Elektrode kann
 ein Kabel, elektrisch leitendes Klebeband oder die Kupferlage einer 
@@ -82,6 +82,9 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
+Sensor                            MPR121
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Anzahl Elektroden                 12 + simulierte 13te Elektrode für Naherkennung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -93,6 +96,7 @@ Gewicht                           4g
 Ressourcen
 ----------
 
+* MPR121 Datenblatt (`Download <https://github.com/Tinkerforge/multi-touch-bricklet/raw/master/datasheets/MPR121.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/multi-touch-bricklet/raw/master/hardware/multi-touch-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/multi_touch_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/multi-touch-bricklet/zipball/master>`__)
@@ -133,7 +137,7 @@ TODO Image
 Einfache Touchpads können mittels abisolierter Drähte erzeugt werden. Echte
 Pads können mittels Aluminiumklebeband erzeugt werden, indem der Draht mit der 
 erzeugten Fläche verbunden wird. Da es sich um eine kapazitive Technologie 
-handelt können die erzeugten Flächen mit dünnen nicht-leitenden Materialen
+handelt können die erzeugten Flächen mit dünnen nicht-leitenden Materialien
 bedeckt werden.
 
 Abhängig von dem Aufbau der Touchpads kann es notwendig sein die Empfindlichkeit

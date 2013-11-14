@@ -62,9 +62,9 @@ Features
 Beschreibung
 ------------
 
-Das Hall Effect Bricklet kann die Präsenz eines Magnetfelds detektieren.
-Es zählt die Vorkommnisse eines Magnetfelds und kann dadurch genutzt werden
-um z.B. die Geschwindigkeit eines Rades zu messen.
+Das Hall Effect :ref:`Bricklet <product_overview_bricklets>` kann die Präsenz
+eines Magnetfelds detektieren. Es zählt die Vorkommnisse eines Magnetfelds und
+kann dadurch genutzt werden um z.B. die Geschwindigkeit eines Rades zu messen.
 
 Beispielanwendungen:
 
@@ -77,6 +77,9 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
+Sensor                            AH180N
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Funktionsweise                    Omnipolar (Nord- und Südpol werden detektiert)
 Funktionspunkt                    -35/35 Gauss
 Freigabepunkt                     -25/25 Gauss
@@ -90,6 +93,7 @@ Gewicht                           2g
 Ressourcen
 ----------
 
+* AH180N Datenblatt (`Download <https://github.com/Tinkerforge/hall-effect-bricklet/raw/master/datasheets/AH180N.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/hall-effect-bricklet/raw/master/hardware/hall-effect-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/hall_effect_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/hall-effect-bricklet/zipball/master>`__)

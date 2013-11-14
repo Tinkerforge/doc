@@ -62,11 +62,11 @@ Features
 Beschreibung
 ------------
 
-Das Piezo Speaker Bricklet kann genutzt werden um Töne mit unterschiedlichen
-Frequenzen zu erzeugen. Der verfügbare Frequenzbereich ist 585Hz bis 7100 Hz.
-Ein Ton hat eine konfigurierbare Länge und es ist möglich 
-`Moresezeichen <http://de.wikipedia.org/wiki/Morsezeichen>`__ als String zu
-übergeben.
+Das Piezo Speaker :ref:`Bricklet <product_overview_bricklets>` kann genutzt
+werden um Töne mit unterschiedlichen Frequenzen zu erzeugen. Der verfügbare
+Frequenzbereich ist 585Hz bis 7100Hz. Ein Ton hat eine konfigurierbare Länge
+und es ist möglich `Moresezeichen <http://de.wikipedia.org/wiki/Morsezeichen>`__
+als String zu übergeben.
 
 Eine typische Anwendung dieses Bricklets ist das signalisieren von 
 Zustandsänderungen wie "E-Mail empfangen".
@@ -77,6 +77,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
+Buzzer                            PS1420P02CT
 Frequenzbereich                   585 - 7100Hz (konfigurierbar)
 Schalldruck                       60 - 82dB/10cm (abhängig von Frequenz)
 --------------------------------  ------------------------------------------------------------
@@ -89,6 +90,7 @@ Gewicht                           5g
 Ressourcen
 ----------
 
+* PS1420P02CT Datenblatt (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/raw/master/datasheets/ef532_ps.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/raw/master/hardware/piezo-speaker-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/piezo_speaker_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/zipball/master>`__)

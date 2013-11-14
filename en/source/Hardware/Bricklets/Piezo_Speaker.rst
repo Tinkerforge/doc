@@ -62,10 +62,10 @@ Features
 Description
 -----------
 
-The Piezo Speaker Bricklet can be used to generate beeps with different
-frequencies. The available frequency range is 585Hz to 7100Hz. A beep
-has a configurable length and it is possible to transmit a
-`Morse Code <http://en.wikipedia.org/wiki/Morse_code>`__ string.
+The Piezo Speaker :ref:`Bricklet <product_overview_bricklets>` can be used to
+generate beeps with different frequencies. The available frequency range is
+585Hz to 7100Hz. A beep has a configurable length and it is possible to transmit
+a `Morse Code <http://en.wikipedia.org/wiki/Morse_code>`__ string.
 
 A typical application is to beep on specific events (e.g. "email received").
 
@@ -75,6 +75,9 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Buzzer                            PS1420P02CT
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Frequency Range                   585 - 7100Hz (configurable)
 Sound Pressure                    60 - 82dB/10cm (depends on frequency)
 --------------------------------  ------------------------------------------------------------
@@ -87,6 +90,7 @@ Weight                            5g
 Resources
 ---------
 
+* PS1420P02CT datasheet (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/raw/master/datasheets/ef532_ps.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/raw/master/hardware/piezo-speaker-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/piezo_speaker_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/piezo-speaker-bricklet/zipball/master>`__)

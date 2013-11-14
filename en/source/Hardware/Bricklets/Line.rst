@@ -57,19 +57,19 @@ Features
 
 * Measures the reflectivity of a surface
 * Can be used to detect/follow lines
-* Can be used to measure distances of ~0-10mm
+* Can be used to measure distances of ca. 0-10mm
 
 Description
 -----------
 
-The Line Bricklet is equipped with a reflective optical sensor. The sensor 
-consists of an infrared emitter and a phototransistor. Output of the sensor is 
-the reflectivity of a surface. 
+The Line :ref:`Bricklet <product_overview_bricklets>` is equipped with a
+reflective optical sensor. The sensor consists of an infrared emitter and a
+phototransistor. Output of the sensor is the reflectivity of a surface.
 
-The reflectivity value can be used to detect
-and follow lines (e.g. a black line has a different reflectivity then
-a white background). The Line Bricklet can also be used to measure the distance 
-to a surface, since the reflectivity decreases with increased distance.
+The reflectivity value can be used to detect and follow lines (e.g. a black
+line has a different reflectivity then a white background). The Line Bricklet
+can also be used to measure the distance to a surface, since the reflectivity
+decreases with increased distance.
 
 Technical Specifications
 ------------------------
@@ -77,6 +77,9 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Sensor                            CNY70
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Resolution                        12bit
 Emitter Wavelength                950nm
 --------------------------------  ------------------------------------------------------------
@@ -89,6 +92,7 @@ Weight                            2g
 Resources
 ---------
 
+* CNY70 datasheet (`Download <https://github.com/Tinkerforge/line-bricklet/raw/master/datasheets/cny70.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/line-bricklet/raw/master/hardware/line-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/line_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/line-bricklet/zipball/master>`__)
@@ -128,6 +132,9 @@ To be used as a line detector the Bricklet has to be mounted with
 a fixed distance to the line. The mounting distance depends on the 
 reflectiveness of the line and the underground. It can be found out by
 trial and error.
+
+TODO: Mountingplate for Line Bricklet
+
 
 .. _line_bricklet_programming_interfaces:
 

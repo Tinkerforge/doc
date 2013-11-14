@@ -62,9 +62,9 @@ Features
 Description
 -----------
 
-The Sound Intensity Bricklet is equipped with a microphone capsule and
-can be used to measure loudness. The returned value corresponds to the 
-`upper envelop <http://en.wikipedia.org/wiki/Envelope_(waves)>`__
+The Sound Intensity :ref:`Bricklet <product_overview_bricklets>` is equipped
+with a microphone capsule and can be used to measure loudness. The returned
+value corresponds to the `upper envelop <http://en.wikipedia.org/wiki/Envelope_(waves)>`__
 of the signal of the microphone capsule.
 
 It is possible to configure events that are triggered if a specified

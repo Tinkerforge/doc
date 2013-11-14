@@ -55,18 +55,19 @@ Segment Display 4x7 Bricklet
 Features
 --------
 
-* Vier 7-Segment Anzeigen mit Schaltbarem Doppelpunkt
-* Helligkeit von Segmenten konfigurierbar.
-* Konfigurierbare Counter Funktion
+* Vier 7-Segment Anzeigen mit schaltbarem Doppelpunkt
+* Helligkeit der Segmente konfigurierbar
+* Konfigurierbare Zähler Funktion
 
 Beschreibung
 ------------
 
-Da Segment Display 4x7 kann genutzt werden um vier 7-Segment-Anzeigen zu
-und ein Doppelpunkt zu steuern. Jedes der 29 Segmente kann eigenständig
-geschaltet werden. Es ist zusätzlich möglich die Helligkeit der Segmente
-einzustellen. Neben der Möglichkeit des Schaltens einzelner Segmente bietet
-die API auch einen Anwender konfigurierbaren Counter.
+Das Segment Display 4x7 :ref:`Bricklet <product_overview_bricklets>` kann
+genutzt werden um vier 7-Segment-Anzeigen zu und ein Doppelpunkt zu steuern.
+Jedes der 29 Segmente kann eigenständig geschaltet werden. Es ist zusätzlich
+möglich die Helligkeit der Segmente einzustellen. Neben der Möglichkeit des
+Schaltens einzelner Segmente bietet die API auch einen anwender-konfigurierbaren
+Zähler.
 
 Technische Spezifikation
 ------------------------

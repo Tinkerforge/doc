@@ -64,13 +64,14 @@ Features
 Description
 -----------
 
-The Multi Touch Bricklet is equipped with the MPR121 capacitive touch
-sensor. It can be used to sense touch at 12 different locations.
+The Multi Touch :ref:`Bricklet <product_overview_bricklets>` is equipped with
+the MPR121 capacitive touch sensor. It can be used to sense touch at 12
+different locations.
 
-The thing that is actually touched is called an "electrode". The
-electrode can be a cable, electrically conductive tape or a
-copper surface of a circuit board. Electrodes can sense touch through
-a small layer of glass, plastic, paper or similar.
+The thing that is actually touched is called an "electrode". The electrode can
+be a cable, electrically conductive tape or a copper surface of a circuit board.
+Electrodes can sense touch through a small layer of glass, plastic, paper or
+similar.
 
 With the Multi Touch Bricklet it is possible to build custom touch panels
 by gluing a cover onto the electrodes.
@@ -81,6 +82,9 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Sensor                            MPR121
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Number of Electrodes              12 + simulated 13th electrode for proximity
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -92,6 +96,7 @@ Weight                            4g
 Resources
 ---------
 
+* MPR121 datasheet (`Download <https://github.com/Tinkerforge/multi-touch-bricklet/raw/master/datasheets/MPR121.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/multi-touch-bricklet/raw/master/hardware/multi-touch-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/multi_touch_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/multi-touch-bricklet/zipball/master>`__)

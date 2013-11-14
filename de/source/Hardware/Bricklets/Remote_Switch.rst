@@ -62,9 +62,9 @@ Features
 Beschreibung
 ------------
 
-Das Remote Switch Bricklet ist mit einem 433MHz Transceiver ausgestattet.
-Es kann genutzt werden um alle Funksteckdosen zu steuern die auf dem
-PT2262 oder HX2262 IC basieren.
+Das Remote Switch :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+433MHz Transceiver ausgestattet. Es kann genutzt werden um alle Funksteckdosen
+zu steuern die auf dem PT2262 oder HX2262 IC basieren.
 
 Housecode und Receivercode der zu schaltenden Steckdose können über die 
 API konfiguriert werden.
@@ -75,6 +75,9 @@ Technische Spezifikation
 ================================  ===============================================================================================
 Eigenschaft                       Wert
 ================================  ===============================================================================================
+Funkmodul                         RFM69HW
+--------------------------------  -----------------------------------------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------------------------------------
 Funkfrequenz                      433MHz
 Unterstütze Funksteckdosen        Alle auf PT2262 und HX2262 basierenden (:ref:`komplette Liste <remote_switch_supported_devices>`)
 --------------------------------  -----------------------------------------------------------------------------------------------
@@ -87,6 +90,7 @@ Gewicht                           7g
 Ressourcen
 ----------
 
+* RFM69HW Datenblatt (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/datasheets/RFM69HW.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/hardware/remote-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/remote_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)

@@ -62,9 +62,9 @@ Features
 Description
 -----------
 
-The Remote Switch Bricklet is equipped with a 433MHz rf transceiver. It can
-be used to control remote mains switches that are based on the PT2262
-and HX2262 ICs.
+The Remote Switch :ref:`Bricklet <product_overview_bricklets>` is equipped with
+a 433MHz RF transceiver. It can be used to control remote mains switches that
+are based on the PT2262 and HX2262 ICs.
 
 House code as well as receiver code can be configured with the API.
 
@@ -74,6 +74,9 @@ Technical Specifications
 ================================  ========================================================================================
 Property                          Value
 ================================  ========================================================================================
+Radio Module                      RFM69HW
+--------------------------------  ----------------------------------------------------------------------------------------
+--------------------------------  ----------------------------------------------------------------------------------------
 Radio Frequency                   433MHz
 Supported Remote Mains Switches   All based on PT2262 and HX2262, (:ref:`complete list <remote_switch_supported_devices>`)
 --------------------------------  ----------------------------------------------------------------------------------------
@@ -86,6 +89,7 @@ Weight                            7g
 Resources
 ---------
 
+* RFM69HW datasheet (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/datasheets/RFM69HW.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/hardware/remote-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/remote_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)

@@ -62,9 +62,9 @@ Features
 Description
 -----------
 
-The LED Strip Bricklet can be used to control LED strips that are equipped
-with the WS2801 LED driver. It is possible to independently control 320 RGB LEDs
-(960 different LEDs). 
+The LED Strip :ref:`Bricklet <product_overview_bricklets>` can be used to
+control LED strips that are equipped with the WS2801 LED driver. It is possible
+to independently control 320 RGB LEDs (960 different LEDs).
 
 The API allows to change all LEDs at the same time with a fixed update rate
 of up to 100Hz.
@@ -168,9 +168,9 @@ The following image depicts the interfaces of the LED Strip Bricklet.
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
 As described in the :ref:`WS2801 section <led_strip_bricklet_ws2801>` above
-the Bricklet supports pixels and strips with WS2801 controller.
+the Bricklet supports pixels and strips with WS2801 driver.
 The terminal labeled with "Output" has to be connected with the input of
-the first WS2801 controller.
+the first WS2801 driver.
 
 The output terminal consists of four signals:
 
@@ -193,7 +193,6 @@ The output terminal consists of four signals:
 * "+" is the supply voltage output. It is connected to the "+" signal of the
   "Input" terminal and should not be used to power LED Strips or pixels. 
   Leave it unconnected.
-  
 
 The input terminal consisting of two signals:
 
