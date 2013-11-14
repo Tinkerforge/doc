@@ -155,15 +155,16 @@ Protokolle:
 * :ref:`llproto_tcpip`
 * :ref:`llproto_modbus`
 
+Ein :ref:`Wireshark Dissector <wireshark_dissector>` für TFP
+(Tinkerforge Protokoll) ist verfügbar.
+
 .. toctree::
    :hidden:
 
    Technical_Data
    Low_Level_Protocols/TCPIP
    Low_Level_Protocols/Modbus
-
-Ein :ref:`Wireshark Dissector <wireshark_dissector>` für das TFP
-(Tinkerforge Protokoll) ist verfügbar.
+   Low_Level_Protocols/Wireshark_Dissector
 
 
 .. _index_links:
