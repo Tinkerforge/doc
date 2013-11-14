@@ -271,10 +271,10 @@ Einen Draht an ein Pad anzulöten kann in fünf Schritten erfolgen:
 * Warte bis das Zinn abgekühlt ist
 
 Eine Vereinfachung kann es sein wenn man den Draht vorher verzinnt.
-Bei `Youtube <http://www.youtube.com>`__ gibt es eine Menge an Howto Videos zum Thema
-Löten.
+Bei `Youtube <http://www.youtube.com>`__ gibt es eine Menge an How-To Videos
+zum Thema Löten.
 
-Auch in unserem "Starter Kit: Hardware Hacking" Howto Video kann man erkennen
+Auch in unserem "Starter Kit: Hardware Hacking" How-To Video kann man erkennen
 wie die Drähte an die Pads gelötet werden (löten startet bei 2:00):
 
 .. raw:: html

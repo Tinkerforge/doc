@@ -426,7 +426,7 @@ with one input.
 
 .. image:: /Images/Kits/weather_station_button_wiring_350.jpg
    :scale: 100 %
-   :alt: Button Connect Howto
+   :alt: Button Connect How-To
    :align: center
    :target: ../../_images/Kits/weather_station_button_wiring.jpg
 
