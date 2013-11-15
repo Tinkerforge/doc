@@ -13,25 +13,56 @@ TODO: Images
 Features
 --------
 
-* TODO: Features
+* Huge 40x80cm 200 Pixel RGB Display
+* Update Rates up to 100Hz possible
+* Develop Party Games, Exhibition Presentations and Customer Specific Displays
+
 
 Description
 -----------
 
-TODO: Description
+The Starter Kit: Blinkenlights basically is a huge, freely programmable display. 
+It consits of 200 independently controllable full-color RGB pixels updatable 
+up to 100 times per second. Possible applications are vast. The 
+kit is useable to create party games, exhibition presentations and custom 
+displays of any kind.
+
+Basic kit comes with one :ref:`Master Brick <master_brick>`, one :ref:`LED Strip
+Bricklet <led_strip_bricklet>`, four 50 LED Pixels sets, two led power supplies, 
+one mounting plate, one back plate and all necessary cables and mouting 
+materials.
+
+The kit can be extended by other Tinkerforge products. 
+In game applications the :ref:`Multi Touch Bricklet <multi_touch_bricklet>`
+can be useful when custom game controls are needed. With 
+:ref:`Master Brick Extensions <product_overview_master_extensions>` the USB 
+interface can be replaced with :ref:`WiFi <wifi_extension>` or 
+:ref:`Ethernet <ethernet_extension>` so Smartphone or Tablet
+controlled applications are imaginable.
+
+A free application implements clones of
+`Tetris <http://en.wikipedia.org/wiki/Tetris>`__ and 
+`Pong <http://en.wikipedia.org/wiki/Pong>`__.
+The games can be controlled by a PC keyboard but can be also be controlled
+by customizable touch pads when using the Multi Touch Bricklet.
+
+The kits name "Blinkenlights" relies on the 
+`Project Blinkenlights <http://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
 
 Technical Specifications
 ------------------------
 
-================================  ============================================================
-Property                          Value
-================================  ============================================================
-TODO                              TODO
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TODO
-Weight                            TODO
-================================  ============================================================
+========================================  ============================================================
+Property                                  Value
+========================================  ============================================================
+Maximum Update Rate (LED Strip Bricklet)  100Hz
+RGB resolution (LED Strip Bricklet)       3 x 8Bit
+----------------------------------------  ------------------------------------------------------------
+----------------------------------------  ------------------------------------------------------------
+Number of RGB Pixels                      10 x 20
+Dimensions (W x D x H)                    40 x 80 x TODO cm
+Weight                                    TODO
+========================================  ============================================================
 
 .. _starter_kit_blinkenlights_resources:
 
@@ -56,7 +87,7 @@ Viewer, too:
 
 TODO: Image of Blinkenlights Bricks/Bricklets:
 
-.. image:: /Images/Kits/blinkenlights_update_350.jpg
+.. .. image:: /Images/Kits/blinkenlights_update_350.jpg
    :scale: 100 %
    :alt: Blinkenlights update in Brick Viewer
    :align: center
