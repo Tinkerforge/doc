@@ -39,7 +39,7 @@ Technical Specifications
 Property                    Value
 ==========================  ==========================================
 Maximum Current             3A
-Necessary DC Connector      5.5mm x 2.1mm
+Compatible DC Connector     5.5 x 2.1mm
 --------------------------  ------------------------------------------
 --------------------------  ------------------------------------------
 Dimensions (W x D x H)      15 x 29 x 15mm (0.59 x 1.14 x 0.59")
