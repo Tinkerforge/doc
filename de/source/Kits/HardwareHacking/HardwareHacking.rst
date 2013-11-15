@@ -115,11 +115,11 @@ Beispiele sollten ausreichen um auch ohne Vorkenntnisse jedes Elektrogerät
 in dieser Kategorie zu hacken.
 
 Die Programmierung kann über alle verfügbaren Bindings (|bindings|) 
-stattfinden. Beispielimplementierungen für alle Programmiersprachen 
+stattfinden. Beispielimplementierungen für viele Programmiersprachen
 und Demo-Anwendungen erleichtern den Einstieg in die Programmierung mit
 Tinkerforge.
 
-Ein Howto-Video das zeigt wie man eine Funkfernbedienung hackt sowie
+Ein How-To-Video das zeigt wie man eine Funkfernbedienung hackt sowie
 Anwendungen des Kits gibt es auf Youtube:
 
 .. raw:: html

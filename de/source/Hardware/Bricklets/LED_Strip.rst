@@ -62,9 +62,10 @@ Features
 Beschreibung
 ------------
 
-Das LED Strip Bricklet kann genutzt werden um LED Streifen und LED Pixel zu
-steuern die mit einem WS2801 LED-Treiber ausgestattet sind. Es ist möglich
-320 RGB LEDs (960 einzelne LEDs) unabhängig voneinander zu steuern.
+Das LED Strip :ref:`Bricklet <product_overview_bricklets>` kann genutzt werden
+um LED Streifen und LED Pixel zu steuern die mit einem WS2801 LED-Treiber
+ausgestattet sind. Es ist möglich 320 RGB LEDs (960 einzelne LEDs) unabhängig
+voneinander zu steuern.
 
 Mit Hilfe der API können alle LEDs gleichzeitig mit einer festen
 Aktualisierungsrate von bis zu 100Hz gesteuert werden.

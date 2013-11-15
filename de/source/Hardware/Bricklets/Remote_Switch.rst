@@ -63,8 +63,9 @@ Beschreibung
 ------------
 
 Das Remote Switch :ref:`Bricklet <product_overview_bricklets>` ist mit einem
-433MHz Transceiver ausgestattet. Es kann genutzt werden um alle Funksteckdosen
-zu steuern die auf dem PT2262 oder HX2262 IC basieren.
+433MHz Transceiver ausgestattet (433MHz SMA Antenne liegt bei). Es kann genutzt
+werden um alle Funksteckdosen zu steuern die auf dem PT2262 oder HX2262 IC
+basieren.
 
 Housecode und Receivercode der zu schaltenden Steckdose können über die 
 API konfiguriert werden.
@@ -82,10 +83,11 @@ Funkfrequenz                      433MHz
 Unterstütze Funksteckdosen        Alle auf PT2262 und HX2262 basierenden (:ref:`komplette Liste <remote_switch_supported_devices>`)
 --------------------------------  -----------------------------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------------------------
-Abmessungen (B x T x H)           25 x 40 x 5mm (0,98 x 1,58 x 0,2") ohne Antenne
-Gewicht                           7g
+Abmessungen (B x T x H)           25 x 40 x 5mm (0,98 x 1,58 x 0,2")*
+Gewicht                           7g*
 ================================  ===============================================================================================
 
+\* ohne Antenne
 
 Ressourcen
 ----------

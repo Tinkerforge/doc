@@ -109,7 +109,7 @@ are provided, this gives the possibility to add more sensors
 `pluviometer <https://en.wikipedia.org/wiki/Rain_gauge>`__ etc). 
 
 Programming of the weather station can be done with all of the available
-bindings (|bindings|). Example implementations for all supported programming languages 
+bindings (|bindings|). Example implementations for many supported programming languages
 and a demo application are available. This will give you a starting point into the 
 programming with Tinkerforge.
 

@@ -83,7 +83,7 @@ Taster Betätigungskraft           200gf
 Taster Bewegungsdistanz           0,5mm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           30 x 25 x 23mm (1,18 x 0,98 x 0,9")
+Abmessungen (B x T x H)           30 x 25 x 23mm (1,18 x 0,98 x 0,9")*
 Gewicht                           5g*
 ================================  ============================================================
 
@@ -130,7 +130,7 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das Rotary Encoder Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-rotary-encoder-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-rotary-poti-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_rotary_encoder_case_built_up_350.jpg
    :scale: 100 %

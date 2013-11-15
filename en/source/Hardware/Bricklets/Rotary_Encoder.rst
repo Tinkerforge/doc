@@ -84,7 +84,7 @@ Button Operating Force              200gf
 Button Travel Distance              0.5mm
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)              30 x 25 x 23mm (1.18 x 0.98 x 0.9")
+Dimensions (W x D x H)              30 x 25 x 23mm (1.18 x 0.98 x 0.9")*
 Weight                              5g*
 ==================================  ============================================================
 
@@ -131,7 +131,7 @@ Case
 ----
 
 A `laser-cut case for the Rotary Encoder Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-rotary-encoder-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-rotary-poti-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_rotary_encoder_case_built_up_350.jpg
    :scale: 100 %

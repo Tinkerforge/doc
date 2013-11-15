@@ -113,7 +113,7 @@ vorhanden. So können auch noch weitere Sensoren
 angeschlossen werden.
 
 Die Wetterstation kann über alle verfügbaren Bindings (|bindings|) 
-programmiert werden. Beispielimplementierungen für alle Programmiersprachen 
+programmiert werden. Beispielimplementierungen für viele Programmiersprachen
 und eine Demo-Anwendung erleichtern den Einstieg in die Programmierung mit 
 Tinkerforge.
 

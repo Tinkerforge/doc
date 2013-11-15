@@ -63,8 +63,8 @@ Description
 -----------
 
 The Remote Switch :ref:`Bricklet <product_overview_bricklets>` is equipped with
-a 433MHz RF transceiver. It can be used to control remote mains switches that
-are based on the PT2262 and HX2262 ICs.
+a 433MHz RF transceiver (433MHz SMA Antenna is included). It can be used to
+control remote mains switches that are based on the PT2262 and HX2262 ICs.
 
 House code as well as receiver code can be configured with the API.
 
@@ -81,10 +81,11 @@ Radio Frequency                   433MHz
 Supported Remote Mains Switches   All based on PT2262 and HX2262, (:ref:`complete list <remote_switch_supported_devices>`)
 --------------------------------  ----------------------------------------------------------------------------------------
 --------------------------------  ----------------------------------------------------------------------------------------
-Dimensions (W x D x H)            25 x 40 x 5mm (0.98 x 1.58 x 0.2") without antenna
-Weight                            7g
+Dimensions (W x D x H)            25 x 40 x 5mm (0.98 x 1.58 x 0.2")*
+Weight                            7g*
 ================================  ========================================================================================
 
+\* without antenna
 
 Resources
 ---------

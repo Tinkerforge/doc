@@ -113,10 +113,10 @@ The given examples applications should be enough to give you the power
 to hack any electronic appliance in this category.
 
 Programming can be done with all of the available bindings (|bindings|).
-Example implementations for each of the languages are available. This Kit
+Example implementations for many of the languages are available. This kit
 will also give you a good starting point into the programming with Tinkerforge.
 
-A howto video that shows how to hack the mains switches and some applications
+A how-to video that shows how to hack the mains switches and some applications
 can be found on Youtube:
 
 .. raw:: html
