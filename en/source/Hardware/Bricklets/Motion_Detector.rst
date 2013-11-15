@@ -55,16 +55,17 @@ Motion Detector Bricklet
 Features
 --------
 
-* Passive Infrared Sensor
+* Passive Infrared Motion Sensor
 * Detects motion in distances of up to 7m (configurable)
 * High sensing angle (100°)
 
 Description
 -----------
 
-The Motion Detector Bricklet is equipped with a passive infrared (PIR) sensor.
-It can be used to sense movement of people and animals. It has a configurable 
-detection range of 3m to 7m with a sensing angle of 100°.
+The Motion Detector :ref:`Bricklet <product_overview_bricklets>` is equipped
+with a passive infrared (PIR) sensor. It can be used to sense movement of
+people and animals. It has a configurable detection range of 3m to 7m with a
+sensing angle of 100°.
 
 By using configurable events it is possible to react on detected motion without
 polling.
@@ -121,7 +122,7 @@ If everything went as expected you can now see when a motion is detected.
 |test_pi_ref|
 
 
-Delay Time, Block Time and Sensitivity
+Sensitivity, Delay Time and Block Time
 --------------------------------------
 
 .. image:: /Images/Bricklets/bricklet_motion_detector_potentiometer_caption_350.jpg
@@ -130,20 +131,26 @@ Delay Time, Block Time and Sensitivity
    :align: center
    :target: ../../_images/Bricklets/bricklet_motion_detector_potentiometer_caption_1200.jpg
 
-The sensor is equipped with two potentiometers. With the right potentiometer it
-is possible to adjust the sensitivity of the sensor. This way the detection 
-range can be adjusted (3-7m). Rotate the potentiometer clockwise will 
-increase the range. 
+The sensor is equipped with two potentiometers. The potentiometer on the right
+side adjusts the sensitivity of the sensor which controls the detection range
+(3-7m). Turning the potentiometer clockwise increase the range.
 
-The potentiometer on the left side can be used to set the delay time of the 
-sensor (5s-200s). It is the time the sensor holds its state when motion was 
-detected. Rotate the potentiometer clockwise and it will increase the delay time.
+The potentiometer on the left side adjusts the delay time of the sensor
+(5s-200s). This is the time the sensor stays in the "motion detected" state
+after motion was first detected. Rotating the potentiometer clockwise increase
+the delay time.
 
-The block time is fixed with 2.5s. What does it mean? After the 
-sensor has detected motion and the motion has stopped the sensor will go in the
-"no motion detected" state (after the delay time). This state will be held for 
-2.5 seconds independent of any motion. After 2.5 seconds the sensor will again
-detect motion if there is any.
+During the delay time the sensor ignores motion and stays in the "motion
+detected" state. It goes back to the "no motion detected" state after the delay
+time, even if there is continuous motion. The sensor stays in the "no
+motion detected" state for the block time of 2.5s (not configurable). After the
+delay and block time the sensor is ready to detect motion again if there is any.
+
+This means that the sensor will react to motion at most every delay time plus
+block time seconds. For continuous motion the sensor will continuously alternate
+between "motion detected" state and "no motion detected" state and stay in
+"motion detected" state for the delay time and stay in "no motion detected"
+state for the block time.
 
 
 .. _motion_detector_bricklet_case:
@@ -151,7 +158,8 @@ detect motion if there is any.
 Case
 ----
 
-A `laser-cut case for the Motion Detector Bricklet <https://www.tinkerforge.com/en/shop/cases/case-motion-detector-bricklet.html>`__ is available.
+A `laser-cut case for the Motion Detector Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-motion-detector-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_motion_detector_case_built_up_350.jpg
    :scale: 100 %

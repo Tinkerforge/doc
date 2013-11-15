@@ -137,7 +137,8 @@ um die Null-Position zu kalibrieren.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Joystick Bricklet <https://www.tinkerforge.com/de/shop/cases/case-joystick-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Joystick Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-joystick-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_joystick_case_350.jpg
    :scale: 100 %

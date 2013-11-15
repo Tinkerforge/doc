@@ -173,7 +173,8 @@ temperature rising (or falling if it is extremely warm in your room).
 Case
 ----
 
-A `laser-cut case for the PTC Bricklet <https://www.tinkerforge.com/en/shop/cases/case-ptc-bricklet.html>`__ is available.
+A `laser-cut case for the PTC Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-ptc-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_ptc_case_350.jpg
    :scale: 100 %

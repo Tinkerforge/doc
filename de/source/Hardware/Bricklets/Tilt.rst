@@ -61,8 +61,9 @@ Features
 Beschreibung
 ------------
 
-Das Tilt Bricklet ist mit einem Neigungsschalter ausgestattet. Es kann
-erkennen ob das Bricklet aktuell geneigt ist oder ob es vibriert.
+Das Tilt :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+Neigungsschalter ausgestattet. Es kann erkennen ob das Bricklet aktuell
+geneigt ist oder ob es vibriert.
 
 Es ist möglich Events zu konfigurieren die automatisch ausgelöst werden 
 wenn sich der Status des Tilt Bricklets ändert.
@@ -118,7 +119,8 @@ des Tilt Bricklet angezeigt.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Tilt Bricklet <https://www.tinkerforge.com/de/shop/cases/case-tilt-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Tilt Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-tilt-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_tilt_case_built_up_350.jpg
    :scale: 100 %

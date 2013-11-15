@@ -62,9 +62,9 @@ Features
 Description
 -----------
 
-The Remote Switch Bricklet is equipped with a 433MHz rf transceiver. It can
-be used to control remote mains switches that are based on the PT2262
-and HX2262 ICs.
+The Remote Switch :ref:`Bricklet <product_overview_bricklets>` is equipped with
+a 433MHz RF transceiver. It can be used to control remote mains switches that
+are based on the PT2262 and HX2262 ICs.
 
 House code as well as receiver code can be configured with the API.
 
@@ -74,6 +74,9 @@ Technical Specifications
 ================================  ========================================================================================
 Property                          Value
 ================================  ========================================================================================
+Radio Module                      RFM69HW
+--------------------------------  ----------------------------------------------------------------------------------------
+--------------------------------  ----------------------------------------------------------------------------------------
 Radio Frequency                   433MHz
 Supported Remote Mains Switches   All based on PT2262 and HX2262, (:ref:`complete list <remote_switch_supported_devices>`)
 --------------------------------  ----------------------------------------------------------------------------------------
@@ -86,6 +89,7 @@ Weight                            7g
 Resources
 ---------
 
+* RFM69HW datasheet (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/datasheets/RFM69HW.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/hardware/remote-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/remote_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)
@@ -101,16 +105,14 @@ Remote Switch Bricklet. If you found another remote mains switch
 that is compatible please write us an email, we would like to add it.
 
 =============== ====================================
-Property        Value
+Manufacturer    Models
 =============== ====================================
-Manufacturer:   BAT
-Models:         * RC 3500-A
+BAT             * RC 3500-A
                 * RC AAA1000-A
                 * RC AAA3680-A
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Brennstuhl
-Models:         * RC 2044 Indoor
+Brennstuhl      * RC 2044 Indoor
                 * RC 2044 Outdoor
                 * RC 3600
                 * RCS 1000 N Comfort
@@ -119,8 +121,7 @@ Models:         * RC 2044 Indoor
                 * RCS 2044 N Comfort Outdoor
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   ELRO 
-Models:         * AB440D
+ELRO            * AB440D
                 * AB440ID
                 * AB440IS
                 * AB440L
@@ -128,8 +129,7 @@ Models:         * AB440D
                 * AB440W
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Intertechno
-Models:         * CMR-300
+Intertechno     * CMR-300
                 * CMR-500
                 * CMR-1000
                 * CMR-1224
@@ -156,12 +156,10 @@ Models:         * CMR-300
                 * PA3-1000
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Mumbi
-Models:         * m-FS300
+Mumbi           * m-FS300
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Vivanco
-Models:         * FSS 31000W
+Vivanco         * FSS 31000W
                 * FSS 33600W
 =============== ====================================
 
@@ -207,7 +205,8 @@ TODO Image
 Case
 ----
 
-A `laser-cut case for the Remote Switch Bricklet <https://www.tinkerforge.com/en/shop/cases/case-remote-switch-bricklet.html>`__ is available.
+A `laser-cut case for the Remote Switch Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-remote-switch-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_remote_switch_case_built_up_350.jpg
    :scale: 100 %

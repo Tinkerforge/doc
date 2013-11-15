@@ -56,19 +56,19 @@ Features
 --------
 
 * Detects presence of magnetic field
-* Counts appearances of magnetic field
+* Counts (dis-)appearances of magnetic fields
 * Can be used to read out water/electricity meter
 
 Description
 -----------
 
-The Hall Effect Bricklet can detect the presence of magnetic fields.
-It counts the appearances of magnetic fields and can thus be used to
-measure the speed of a wheel with attached magnet.
+The Hall Effect :ref:`Bricklet <product_overview_bricklets>` can detect the
+presence of magnetic fields. It counts the (dis-)appearances of magnetic fields
+and can thus be used to measure the speed of a wheel with attached magnet.
 
 Example applications are:
 
-* Detection if a door is closed
+* Detect if a door is open or closed
 * Reading out water/electricity meters
 
 Technical Specifications
@@ -77,8 +77,11 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Sensor                            AH180N
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Operation                         Omnipolar (North and South pole is detected)
-Operation Point                   -35/35 Gauss
+Trigger Point                     -35/35 Gauss
 Release Point                     -25/25 Gauss
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -90,6 +93,7 @@ Weight                            2g
 Resources
 ---------
 
+* AH180N datasheet (`Download <https://github.com/Tinkerforge/hall-effect-bricklet/raw/master/datasheets/AH180N.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/hall-effect-bricklet/raw/master/hardware/hall-effect-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/hall_effect_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/hall-effect-bricklet/zipball/master>`__)

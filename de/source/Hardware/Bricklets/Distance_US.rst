@@ -61,7 +61,9 @@ Features
 Beschreibung
 ------------
 
-Das Distance US Bricklet ist mit einem Ultraschall-Entfernungsmesser
+Das Distance US :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+`Ultraschall-Entfernungsmesser
+<http://de.wikipedia.org/wiki/Entfernungsmessung#Laufzeitmessung>`__
 ausgestattet. Es kann Entfernungen zwischen 2cm und 400cm messen.
 Mit konfigurierbaren Events ist es möglich auf veränderte Distanzmessung
 zu reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
@@ -72,8 +74,10 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Maximale Reichweite               400cm
-Minimale Reichweite               2cm
+Sensor                            HC-SR04
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Entfernungen                      2cm - 400cm in 1mm Schritten, 12Bit Auflösung
 Messwinkel                        15°
 Aktualisierungsrate               40Hz
 --------------------------------  ------------------------------------------------------------
@@ -115,6 +119,8 @@ Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_us_brickv.jpg
 
+TODO: Neuer Screenshot mit richtigen Messwerten
+
 |test_pi_ref|
 
 .. _distance_us_bricklet_case:
@@ -122,7 +128,8 @@ Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Distance US Bricklet <https://www.tinkerforge.com/de/shop/cases/case-distance-us-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Distance US Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-distance-us-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_distance_us_case_built_up_350.jpg
    :scale: 100 %
@@ -133,7 +140,7 @@ Ein `laser-geschnittenes Gehäuse für das Distance US Bricklet <https://www.tin
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
 * Schraube Abstandshalter an das Bricklet,
-* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte,
+* baue Seitenteile auf mit Bricklet und Sensor in der Mitte,
 * schraube Unterteil an untere Abstandshalter,
 * schraube Oberteil auf obere Abstandshalter.
 

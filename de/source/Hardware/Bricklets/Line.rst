@@ -55,16 +55,17 @@ Line Bricklet
 Features
 --------
 
-* Misst die Reflektivität einer Fläche
-* Kann genutzt werden um Linien zu erkennen/zu folgen
-* Kann genutzt werden um Entfernungen von ~0-10mm zu messen
+* Misst die Reflektivität einer Oberfläche
+* Kann genutzt werden um Linien zu erkennen/folgen
+* Kann genutzt werden um Entfernungen von ca. 0-10mm zu messen
 
 Beschreibung
 ------------
 
-Das Line Bricklet ist mit einem optisch-reflektierenden Sensor ausgestattet.
-Der Sensor besteht aus einem Infrarot Sender und Fototransistor. Ausgabe des
-Sensors ist die Reflektivität der Fläche.
+Das Line :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+optisch-reflektierenden Sensor ausgestattet. Der Sensor besteht aus einem
+Infrarot Sender und Fototransistor. Ausgabe des Sensors ist die Reflektivität
+der Fläche.
 
 Der Reflektivitätswert kann genutzt werden um Linien zu erkennen (Beispiel:
 Eine schwarze Linie hat eine andere Reflektivität als ein weißer Hintergrund).
@@ -78,7 +79,10 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Auflösung                         12 Bit
+Sensor                            CNY70
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Auflösung                         12Bit
 Emitter-Wellenlänge               950nm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -90,6 +94,7 @@ Gewicht                           2g
 Ressourcen
 ----------
 
+* CNY70 Datenblatt (`Download <https://github.com/Tinkerforge/line-bricklet/raw/master/datasheets/cny70.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/line-bricklet/raw/master/hardware/line-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/line_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/line-bricklet/zipball/master>`__)
@@ -121,6 +126,16 @@ angezeigt.
    :target: ../../_images/Bricklets/bricklet_line_brickv.jpg
 
 |test_pi_ref|
+
+Line Bricklet montieren
+-----------------------
+
+Um als Linien-Detektor verwendet werden zu können, muss das Bricklet mit einem
+fixen Abstand zu Linie angebracht sein. Der richtige Abstand hängt von der
+Reflektivität der Linie und des Untergrundes ab und kann durch Ausprobieren
+ermittelt werden.
+
+TODO: Montageplatte für Line Bricklet
 
 
 .. _line_bricklet_programming_interfaces:

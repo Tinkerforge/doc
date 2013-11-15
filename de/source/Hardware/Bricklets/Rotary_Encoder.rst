@@ -62,13 +62,14 @@ Features
 Beschreibung
 ------------
 
-Das Rotary Encoder Bricklet ist mit einem 360° Encoder ausgestattet.
-Es hat 24 Schritte pro Umdrehung mit "Klick-Haptik" pro Schritt. Der
-Encoder hat einen integrierten Taster (auslösbar indem man auf den Knopf
-drückt) der genutzt werden kann um Menüpunkte o.ä. auszuwählen.
+Das Rotary Encoder :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+360° Encoder ausgestattet. Es hat 24 Schritte pro Umdrehung mit "Klick-Haptik"
+pro Schritt. Der Encoder hat einen integrierten Taster (auslösbar indem man auf
+den Knopf drückt) der genutzt werden kann um Menüpunkte o.ä. auszuwählen.
 
-Der Unterschied zwischen dem Rotary Poti und dem Rotary Encoder Bricklet
-ist, dass der Encoder ohne Begrenzungen gedreht werden kann.
+Der Unterschied zwischen dem :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`
+und dem Rotary Encoder Bricklet ist, dass der Encoder ohne Begrenzungen gedreht
+werden kann.
 
 Technische Spezifikation
 ------------------------
@@ -77,7 +78,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Anzahl Schritten pro Rotation     24 (Winkel pro Schritt: 15°)
-Maximale erkennbare Schritte      mehr wie 250 Schritte / Sekunde
+Maximale erkennbare Schritte      bis zu 250 Schritte / Sekunde
 Taster Betätigungskraft           200gf
 Taster Bewegungsdistanz           0,5mm
 --------------------------------  ------------------------------------------------------------
@@ -86,7 +87,7 @@ Abmessungen (B x T x H)           30 x 25 x 23mm (1,18 x 0,98 x 0,9")
 Gewicht                           5g*
 ================================  ============================================================
 
-* ohne Knopf
+\* ohne Knopf
 
 Ressourcen
 ----------
@@ -128,7 +129,8 @@ Encoderzählstand angezeigt.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Rotary Encoder Bricklet <https://www.tinkerforge.com/de/shop/cases/case-rotary-encoder-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Rotary Encoder Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-rotary-encoder-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_rotary_encoder_case_built_up_350.jpg
    :scale: 100 %

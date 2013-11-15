@@ -175,11 +175,23 @@ Master Extensions
        :align: center
        :target: _images/Extensions/extension_chibi_tilted_800.jpg
 
+    - .. image:: /Images/Extensions/extension_ethernet_tilted_100.jpg
+       :scale: 100 %
+       :alt: Ethernet Extension
+       :align: center
+       :target: _images/Extensions/extension_ethernet_tilted_800.jpg
+
     - .. image:: /Images/Extensions/extension_rs485_tilted_100.jpg
        :scale: 100 %
        :alt: RS485 Extension
        :align: center
        :target: _images/Extensions/extension_rs485_tilted_800.jpg
+
+    - .. image:: /Images/Extensions/extension_wifi_tilted_100.jpg
+       :scale: 100 %
+       :alt: WIFI Extension
+       :align: center
+       :target: _images/Extensions/extension_wifi_tilted_800.jpg
 
 Bei der Verwendung der :ref:`High Level Programmierschnittstelle <pi_hlpi>`
 routet der :ref:`Master Brick <master_brick>` Nachrichten zwischen den anderen

@@ -61,8 +61,8 @@ Features
 Description
 -----------
 
-The Tilt Bricklet is equipped with a tilt switch. It can detect if the
-Bricklet is tilted or if the Bricklet is vibrating.
+The Tilt :ref:`Bricklet <product_overview_bricklets>` is equipped with a tilt
+switch. It can detect if the Bricklet is tilted or if the Bricklet is vibrating.
 
 It is possible to configure events that are triggered if the state of
 the Tilt Bricklet changes.
@@ -118,7 +118,8 @@ state of the Tilt Bricklet.
 Case
 ----
 
-A `laser-cut case for the Tilt Bricklet <https://www.tinkerforge.com/en/shop/cases/case-tilt-bricklet.html>`__ is available.
+A `laser-cut case for the Tilt Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-tilt-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_tilt_case_built_up_350.jpg
    :scale: 100 %

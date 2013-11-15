@@ -162,7 +162,8 @@ by connecting and disconnecting the battery.
 Case
 ----
 
-A `laser-cut case for the Industrial Digital In 4 Bricklet <https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
+A `laser-cut case for the Industrial Digital In 4 Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_industrial_case_350.jpg
    :scale: 100 %

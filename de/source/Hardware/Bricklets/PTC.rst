@@ -173,7 +173,8 @@ steigen (oder fallen wenn es im Raum sehr warm ist).
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das PTC Bricklet <https://www.tinkerforge.com/de/shop/cases/case-ptc-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das PTC Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-ptc-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_ptc_case_350.jpg
    :scale: 100 %

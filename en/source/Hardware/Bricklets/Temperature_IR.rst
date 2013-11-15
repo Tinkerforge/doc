@@ -144,7 +144,8 @@ The default is an emissivity of 0.98 (0.98 * 0xFFFF = 64224).
 Case
 ----
 
-A `laser-cut case for the Temperature IR Bricklet <https://www.tinkerforge.com/en/shop/cases/case-temperature-ir-bricklet.html>`__ is available.
+A `laser-cut case for the Temperature IR Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-temperature-ir-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_temperature_ir_case_350.jpg
    :scale: 100 %

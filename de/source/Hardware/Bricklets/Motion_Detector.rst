@@ -55,17 +55,17 @@ Motion Detector Bricklet
 Features
 --------
 
-* Passiver Infrarot Sensor
+* Passiver Infrarot Bewegungssensor
 * Erkennt Bewegungen in einer Distanz von bis zu 7m (konfigurierbar)
 * Hoher Erfassungswinkel (100°)
 
 Beschreibung
 ------------
 
-Das Motion Detector Bricklet ist mit einem Passive-Infrared (PIR) Sensor
-ausgestattet. Es kann benutzt werden um Bewegungen von Personen und Tieren zu 
-erkennen. Es hat eine konfigurierbare Reichweite von 3m bis 7m mit einem
-Erfassungswinkel von 100°.
+Das Motion Detector :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+Passive-Infrared (PIR) Sensor ausgestattet. Es kann benutzt werden um Bewegungen
+von Personen und Tieren zu erkennen. Es hat eine konfigurierbare Reichweite von
+3m bis 7m mit einem Erfassungswinkel von 100°.
 
 Es ist auch möglich Events zu nutzen. Dadurch ist möglich auf eine
 Bewegungserkennung zu reagieren ohne zu pollen.
@@ -79,7 +79,7 @@ Eigenschaft                       Wert
 Erkennungsreichweite              3-7m (konfigurierbar)
 Erfassungswinkel                  100°
 Verzögerungszeit                  3-200s (konfigurierbar)
-Blockierungszeit                  2,5s
+Blockierzeit                      2,5s
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 45 x 30mm (0,98 x 1,78 x 1,18")
@@ -124,8 +124,8 @@ angezeigt.
 
 
 
-Verzögerungs- und Blockier-Zeit
--------------------------------
+Empfindlichkeit, Verzögerungs- und Blockierzeit
+------------------------------------------------
 
 .. image:: /Images/Bricklets/bricklet_motion_detector_potentiometer_caption_350.jpg
    :scale: 100 %
@@ -136,17 +136,25 @@ Verzögerungs- und Blockier-Zeit
 Der Sensor ist mit zwei Potentiometern ausgestattet. Mit dem rechten 
 Potentiometer kann die Empfindlichkeit des Sensors und damit die 
 Erkennungsreichweite (3-7m) eingestellt werden. 
-Drehe das Potentiometer im Uhrzeigersinn und die Reichweite
-wird erhöht. 
+Drehen des Potentiometer im Uhrzeigersinn erhöht die Erkennungsreichweite.
 
-Mit dem Potentiometer auf der linken Seite kann die Zeit 
-eingestellt werden die der Sensor seinen Zustand hält nachdem eine Bewegung 
-erkannt wurde (Delay Time, 5s-200s). Drehe das Potentiometer im Uhrzeigersinn 
-um die Verzögerung zu erhöhen.
+Mit dem linken Potentiometer wird die Verzögerungszeit (Delay Time) eingestellt
+(5s-200s). Für diese Zeit bleibt der Sensor im "Bewegung erkannt" Zustand,
+nachdem die erste Bewegung detektiert wurde. Drehen des Potentiometer im
+Uhrzeigersinn erhöht die Verzögerungszeit.
 
-Die Blockierzeit (Block Time) ist mit 2,5s fest eingestellt. Hiermit ist die Zeit
-gemeint, in der der Sensor im "no motion detected" Zustand bleibt,
-nachdem eine Bewegung erkannt wurde und diese Bewegung nicht mehr erkannt wurde.
+Während der Verzögerungszeit ignoriert der Sensor Bewegung und bleibt im
+"Bewegung erkannt" Zustand. Nach der Verzögerungszeit wechselt der Sensor in
+den "keine Bewegung erkannt" Zustand, auch wenn weiterhin Bewegung vorhanden
+ist. Der Sensor bleibt dann im "keine Bewegung erkannt" Zustand für die Dauer
+der Blockierzeit von 2,5s (nicht einstellbar). Nach der Verzögerungs- und
+Blockierzeit ist der Sensor wieder bereit auf Bewegung zu reagieren.
+
+Dies bedeutet, dass der Sensor höchstens alle Verzögerungszeit plus
+Blockierzeit Sekunden auf Bewegung reagiert. Bei anhaltender Bewegung wechselt
+der Sensor fortlaufend zwischen "Bewegung erkannt" und "keine Bewegung erkannt"
+Zustand. Dabei bleibt er für die Verzögerungszeit im "Bewegung erkannt" Zustand
+und für die Blockierzeit im "keine Bewegung erkannt" Zustand.
 
 
 .. _motion_detector_bricklet_case:
@@ -154,7 +162,8 @@ nachdem eine Bewegung erkannt wurde und diese Bewegung nicht mehr erkannt wurde.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Motion Detector Bricklet <https://www.tinkerforge.com/de/shop/cases/case-motion-detector-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Motion Detector Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-motion-detector-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_motion_detector_case_built_up_350.jpg
    :scale: 100 %

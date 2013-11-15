@@ -184,7 +184,8 @@ More information about protection circuitries can be found
 Case
 ----
 
-A `laser-cut case for the Dual Relay Bricklet <https://www.tinkerforge.com/en/shop/cases/case-dual-relay-bricklet.html>`__ is available.
+A `laser-cut case for the Dual Relay Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-dual-relay-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_dual_relay_case_350.jpg
    :scale: 100 %

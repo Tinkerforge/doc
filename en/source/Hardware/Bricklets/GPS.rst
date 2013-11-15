@@ -149,7 +149,8 @@ depicted below.
 Case
 ----
 
-A `laser-cut case for the GPS Bricklet <https://www.tinkerforge.com/en/shop/cases/case-gps-bricklet.html>`__ is available.
+A `laser-cut case for the GPS Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-gps-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_gps_case_350.jpg
    :scale: 100 %

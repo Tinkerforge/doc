@@ -62,11 +62,11 @@ Features
 Description
 -----------
 
-The Segment Display 4x7 Bricklet can be used to control four 7-segment 
-displays and a colon. Each of the 29 segments can be controlled
-independently. It is also possible to configure the brightness of the
-segments. Besides the possibility of controlling each segment independently,
-the API offers a user configurable counter.
+The Segment Display 4x7 :ref:`Bricklet <product_overview_bricklets>` can be
+used to control four 7-segment displays and a colon. Each of the 29 segments
+can be controlled independently. It is also possible to configure the
+brightness of the segments. Besides the possibility of controlling each segment
+independently, the API offers a user configurable counter.
 
 Technical Specifications
 ------------------------
@@ -124,7 +124,8 @@ individual segments.
 Case
 ----
 
-A `laser-cut case for the Segment Display 4x7 Bricklet <https://www.tinkerforge.com/en/shop/cases/case-segment-display-4x7-bricklet.html>`__ is available.
+A `laser-cut case for the Segment Display 4x7 Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-segment-display-4x7-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_segment_display_4x7_case_built_up_350.jpg
    :scale: 100 %

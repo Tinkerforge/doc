@@ -210,3 +210,5 @@ Entstörfilters
 akkumulativen
 Nagios
 Icinga
+µA
+Vrms

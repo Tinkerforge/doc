@@ -147,7 +147,8 @@ aussehen.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das GPS Bricklet <https://www.tinkerforge.com/de/shop/cases/case-gps-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das GPS Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-gps-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_gps_case_350.jpg
    :scale: 100 %

@@ -141,7 +141,8 @@ from left left to right and back to left.
 Case
 ----
 
-A `laser-cut case for the Rotary Poti Bricklet <https://www.tinkerforge.com/en/shop/cases/case-rotary-poti-bricklet.html>`__ is available.
+A `laser-cut case for the Rotary Poti Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-rotary-poti-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_rotary_poti_case_350.jpg
    :scale: 100 %

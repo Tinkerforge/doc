@@ -142,7 +142,8 @@ by moving the potentiometer from bottom to top and back to bottom.
 Case
 ----
 
-A `laser-cut case for the Linear Poti Bricklet <https://www.tinkerforge.com/en/shop/cases/case-linear-poti-bricklet.html>`__ is available.
+A `laser-cut case for the Linear Poti Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-linear-poti-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_linear_poti_case_350.jpg
    :scale: 100 %

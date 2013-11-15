@@ -55,18 +55,18 @@ Sound Intensity Bricklet
 Features
 --------
 
-* Misst die Schallintensität
-* 12 Bit Auflösung
+* Misst Schallintensität
+* 12Bit Auflösung
 * Einsetzbar als Klatschschalter, Alarmanlagen-Sensor, u.v.m.
 
 Beschreibung
 ------------
 
-Das Sound Intensity Bricklet ist mit einer Mikrofonkapsel ausgestattet und
-es kann genutzt werden um Lautstärke zu messen. Der zurückgegebene Wert
-entspricht der 
-`Hüllkurve <http://de.wikipedia.org/wiki/Hüllkurvendemodulator>`__ des
-Signals der Mikrofonkapsel.
+Das Sound Intensity :ref:`Bricklet <product_overview_bricklets>` ist mit einer
+Mikrofonkapsel ausgestattet und es kann genutzt werden um Lautstärke zu messen.
+Der zurückgegebene Wert entspricht der `Hüllkurve
+<http://de.wikipedia.org/wiki/Hüllkurvendemodulator>`__ des Signals der
+Mikrofonkapsel.
 
 Es ist möglich Events zu konfigurieren die ausgelöst werden wenn eine
 spezifizierte Lautstärkenschwelle überschritten wird.
@@ -77,7 +77,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Auflösung                         12 Bit
+Auflösung                         12Bit
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 30 x 9mm (0,98 x 1,18 x 0,35")
@@ -125,7 +125,8 @@ angezeigt.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Sound Intensity Bricklet <https://www.tinkerforge.com/de/shop/cases/case-sound-intensity-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Sound Intensity Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-sound-intensity-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_sound_intensity_case_built_up_350.jpg
    :scale: 100 %

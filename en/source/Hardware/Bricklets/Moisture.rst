@@ -56,12 +56,13 @@ Features
 --------
 
 * Measures moisture between two probes
-* 12 bit resolution
+* 12bit resolution
 
 Description
 -----------
 
-The Moisture Bricklet is intended to measure moisture in soil.
+The Moisture :ref:`Bricklet <product_overview_bricklets>` is intended to
+measure moisture in soil.
 
 Current is passed through two probes. With a increasing moisture level the
 resistance between the probes will decrease (since water is a better conductor
@@ -128,7 +129,8 @@ value.
 Case
 ----
 
-A `laser-cut case for the Moisture Bricklet <https://www.tinkerforge.com/en/shop/cases/case-moisture-bricklet.html>`__ is available.
+A `laser-cut case for the Moisture Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-moisture-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_moisture_case_built_up_350.jpg
    :scale: 100 %

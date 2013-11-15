@@ -56,20 +56,20 @@ Features
 --------
 
 * Misst Feuchtigkeit zwischen zwei Elektroden
-* 12 Bit Auflösung
+* 12Bit Auflösung
 
 Beschreibung
 ------------
 
-Das Moisture Bricklet ist dafür gedacht die Feuchtigkeit in Erde
-zu ermitteln.
+Das Moisture :ref:`Bricklet <product_overview_bricklets>` ist dafür gedacht die
+Feuchtigkeit in Erde zu ermitteln.
 
 Dazu wird Strom durch zwei Elektroden geführt die in der Erde stecken. 
 Mit steigender Feuchtigkeit sinkt der Widerstand. Die Veränderung des 
 Widerstandes wird als Feuchtigkeitswert ausgewertet.
 
 Es ist möglich das Bricklet direkt in Erde zu stecken oder zwei Prüfspitzen
-an das Bricklet zu löten
+an das Bricklet zu löten.
 
 Das Moisture Bricklet kann auch zum Messen des Füllstands eines Wasserbehälters
 genutzt werden.
@@ -81,7 +81,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Auflösung                         12 Bit
+Auflösung                         12Bit
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           20 x 45 x 5mm (0,79 x 1,77 x 0,2")
@@ -129,7 +129,8 @@ Feuchtegrades angezeigt.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Moisture Bricklet <https://www.tinkerforge.com/de/shop/cases/case-moisture-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Moisture Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-moisture-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_moisture_case_built_up_350.jpg
    :scale: 100 %

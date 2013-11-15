@@ -155,7 +155,8 @@ state with the Brick Viewer.
 Case
 ----
 
-A `laser-cut case for the Industrial Digital Out 4 Bricklet <https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
+A `laser-cut case for the Industrial Digital Out 4 Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_industrial_case_350.jpg
    :scale: 100 %

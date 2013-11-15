@@ -62,9 +62,9 @@ Features
 Beschreibung
 ------------
 
-Das Remote Switch Bricklet ist mit einem 433MHz Transceiver ausgestattet.
-Es kann genutzt werden um alle Funksteckdosen zu steuern die auf dem
-PT2262 oder HX2262 IC basieren.
+Das Remote Switch :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+433MHz Transceiver ausgestattet. Es kann genutzt werden um alle Funksteckdosen
+zu steuern die auf dem PT2262 oder HX2262 IC basieren.
 
 Housecode und Receivercode der zu schaltenden Steckdose können über die 
 API konfiguriert werden.
@@ -75,6 +75,9 @@ Technische Spezifikation
 ================================  ===============================================================================================
 Eigenschaft                       Wert
 ================================  ===============================================================================================
+Funkmodul                         RFM69HW
+--------------------------------  -----------------------------------------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------------------------------------
 Funkfrequenz                      433MHz
 Unterstütze Funksteckdosen        Alle auf PT2262 und HX2262 basierenden (:ref:`komplette Liste <remote_switch_supported_devices>`)
 --------------------------------  -----------------------------------------------------------------------------------------------
@@ -87,6 +90,7 @@ Gewicht                           7g
 Ressourcen
 ----------
 
+* RFM69HW Datenblatt (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/datasheets/RFM69HW.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/raw/master/hardware/remote-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/remote_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)
@@ -102,16 +106,14 @@ eine weitere kompatible Funksteckdosen findest, würden wir uns über eine
 E-Mail freuen. Dann können wir die Liste erweitern und aktuell halten.
 
 =============== ====================================
-Property        Value
+Hersteller      Modelle
 =============== ====================================
-Hersteller:     BAT
-Modelle:        * RC 3500-A
+BAT             * RC 3500-A
                 * RC AAA1000-A
                 * RC AAA3680-A
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     Brennstuhl
-Modelle:        * RC 2044 Indoor
+Brennstuhl      * RC 2044 Indoor
                 * RC 2044 Outdoor
                 * RC 3600
                 * RCS 1000 N Comfort
@@ -120,8 +122,7 @@ Modelle:        * RC 2044 Indoor
                 * RCS 2044 N Comfort Outdoor
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     ELRO 
-Modelle:        * AB440D
+ELRO            * AB440D
                 * AB440ID
                 * AB440IS
                 * AB440L
@@ -129,8 +130,7 @@ Modelle:        * AB440D
                 * AB440W
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     Intertechno
-Modelle:        * CMR-300
+Intertechno     * CMR-300
                 * CMR-500
                 * CMR-1000
                 * CMR-1224
@@ -157,12 +157,10 @@ Modelle:        * CMR-300
                 * PA3-1000
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     Mumbi
-Modelle:        * m-FS300
+Mumbi           * m-FS300
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     Vivanco
-Modelle:        * FSS 31000W
+Vivanco         * FSS 31000W
                 * FSS 33600W
 =============== ====================================
 
@@ -210,7 +208,8 @@ TODO Image
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet <https://www.tinkerforge.com/de/shop/cases/case-remote-switch-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-remote-switch-bricklet.html>`__ ist verfügbar.
 
 .. FIXME image:: /Images/Cases/bricklet_remote_switch_case_built_up_350.jpg
    :scale: 100 %

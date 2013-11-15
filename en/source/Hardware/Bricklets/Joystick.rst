@@ -138,7 +138,8 @@ in center position, press the "Calibrate (0,0)" button.
 Case
 ----
 
-A `laser-cut case for the Joystick Bricklet <https://www.tinkerforge.com/en/shop/cases/case-joystick-bricklet.html>`__ is available.
+A `laser-cut case for the Joystick Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-joystick-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_joystick_case_350.jpg
    :scale: 100 %

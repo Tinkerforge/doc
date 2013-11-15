@@ -151,7 +151,8 @@ mit der Messung des Voltmeters übereinstimmen.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Analog Out Bricklet <https://www.tinkerforge.com/de/shop/cases/case-analog-in-out-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Analog Out Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-analog-in-out-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_analog_in_case_build_up_350.jpg
    :scale: 100 %

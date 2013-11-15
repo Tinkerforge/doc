@@ -57,18 +57,19 @@ Features
 
 * 360° rotary encoder
 * Counts 24 steps per rotation (step angle 15°)
-* Integrated switch
+* Integrated push-button
 
 Description
 -----------
 
-The Rotary Encoder Bricklet is equipped with a 360° rotary encoder.
-It has 24 steps per rotation with a nice clicking feel. The encoder
-has an integrated switch (by pressing on the knob) that can be used 
-to select a menu item or similar.
+The Rotary Encoder :ref:`Bricklet <product_overview_bricklets>` is equipped
+with a 360° rotary encoder. It has 24 steps per rotation with a nice clicking
+feel. The encoder has an integrated push-button (by pressing on the knob) that
+can be used to select a menu item or similar.
 
-The difference between the Rotary Poti and the Rotary Encoder Bricklet
-is that the encoder has full rotation without limits.
+The difference between the :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`
+and the Rotary Encoder Bricklet is that the encoder has full rotation without
+limits.
 
 
 Technical Specifications
@@ -87,7 +88,7 @@ Dimensions (W x D x H)              30 x 25 x 23mm (1.18 x 0.98 x 0.9")
 Weight                              5g*
 ==================================  ============================================================
 
-* without knob
+\* without knob
 
 Resources
 ---------
@@ -129,7 +130,8 @@ the corresponding count.
 Case
 ----
 
-A `laser-cut case for the Rotary Encoder Bricklet <https://www.tinkerforge.com/en/shop/cases/case-rotary-encoder-bricklet.html>`__ is available.
+A `laser-cut case for the Rotary Encoder Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-rotary-encoder-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_rotary_encoder_case_built_up_350.jpg
    :scale: 100 %

@@ -61,8 +61,11 @@ Features
 Description
 -----------
 
-The Distance US Bricklet is equipped with an `ultrasonic distance sensor <http://en.wikipedia.org/wiki/Ultrasonic_sensor>`__.
-It can measure distances from 2cm to 400cm. With configurable events it is possible to react on changing distances without polling. Typical applications can be found in robotics, usage as light barrier alternative and so on.
+The Distance US :ref:`Bricklet <product_overview_bricklets>` is equipped with
+an `ultrasonic distance sensor <http://en.wikipedia.org/wiki/Ultrasonic_sensor>`__.
+It can measure distances from 2cm to 400cm. With configurable events it is
+possible to react on changing distances without polling. Typical applications
+can be found in robotics, usage as light barrier alternative and so on.
 
 Technical Specifications
 ------------------------
@@ -71,8 +74,9 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Sensor                            HC-SR04
-Max Range                         400cm
-Min Range                         2cm
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Distance                          2cm - 400cm in 1mm steps, 12bit resolution
 Measuring Angle                   15°
 Update Rate                       40Hz
 --------------------------------  ------------------------------------------------------------
@@ -114,6 +118,8 @@ If everything went as expected you can now see the measured distance.
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_us_brickv.jpg
 
+TODO: New screenshot with correct measurements
+
 |test_pi_ref|
 
 .. _distance_us_bricklet_case:
@@ -121,7 +127,8 @@ If everything went as expected you can now see the measured distance.
 Case
 ----
 
-A `laser-cut case for the Distance US Bricklet <https://www.tinkerforge.com/en/shop/cases/case-distance-us-bricklet.html>`__ is available.
+A `laser-cut case for the Distance US Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-distance-us-bricklet.html>`__ is available.
 
 .. FIXME image:: /Images/Cases/bricklet_distance_us_case_built_up_350.jpg
    :scale: 100 %

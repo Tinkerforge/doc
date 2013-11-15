@@ -162,7 +162,8 @@ utilizes about 40W power.
 Case
 ----
 
-A `laser-cut case for the Voltage/Current Bricklet <https://www.tinkerforge.com/en/shop/cases/case-voltage-current-bricklet.html>`__ is available.
+A `laser-cut case for the Voltage/Current Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-voltage-current-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_voltage_current_case_350.jpg
    :scale: 100 %

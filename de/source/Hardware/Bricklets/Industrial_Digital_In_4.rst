@@ -157,7 +157,8 @@ der Batterie geändert werden können.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Industrial Digital In 4 Bricklet <https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Industrial Digital In 4 Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_industrial_case_350.jpg
    :scale: 100 %
