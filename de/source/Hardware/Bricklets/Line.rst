@@ -56,7 +56,7 @@ Features
 --------
 
 * Misst die Reflektivität einer Oberfläche
-* Kann genutzt werden um Linien zu erkennen/zu folgen
+* Kann genutzt werden um Linien zu erkennen/folgen
 * Kann genutzt werden um Entfernungen von ca. 0-10mm zu messen
 
 Beschreibung

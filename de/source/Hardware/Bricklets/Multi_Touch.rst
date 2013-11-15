@@ -57,7 +57,7 @@ Features
 
 * Kapazitiver Touch Sensor
 * Unterstützt bis zu 12 Elektroden nutzbar als Touchflächen 
-* Berührung kann durch eine schmale Schicht Glas/Plastik/Papier erkannt werden
+* Berührung kann durch eine dünne Schicht Glas/Plastik/Papier erkannt werden
 * Größe und Positionierung der Berührungsfläche wird vom Nutzer festgelegt
 * Kann genutzt werden um ein maßgeschneidertes Touchpanel zu bauen
 
@@ -129,13 +129,15 @@ Wenn alles wie erwartet funktioniert wird nun der aktuelle Zustand angezeigt.
 |test_pi_ref|
 
 
-Eigene Touchpads/ Empfindlichkeit einstellen
---------------------------------------------
+Eigene Touchpads / Empfindlichkeit einstellen
+---------------------------------------------
 
 TODO Image
 
 Einfache Touchpads können mittels abisolierter Drähte erzeugt werden. Echte
-Pads können mittels Aluminiumklebeband erzeugt werden, indem der Draht mit der 
+Pads können mittels `Aluminium Klebeband
+<https://www.tinkerforge.com/de/shop/accessories/sensors/aluminum-tape-1m.html>`__
+erzeugt werden, indem der Draht mit der
 erzeugten Fläche verbunden wird. Da es sich um eine kapazitive Technologie 
 handelt können die erzeugten Flächen mit dünnen nicht-leitenden Materialien
 bedeckt werden.

@@ -57,7 +57,7 @@ Features
 
 * Capacitive Touch Sensor
 * Can handle up to 12 electrodes used as touch locations
-* Touch can be detected through a small layer of glass/plastic/paper
+* Touch can be detected through a thin layer of glass/plastic/paper
 * Size and placement of touch area can be user defined
 * Can be used to build custom touch panel
 
@@ -70,7 +70,7 @@ different locations.
 
 The thing that is actually touched is called an "electrode". The electrode can
 be a cable, electrically conductive tape or a copper surface of a circuit board.
-Electrodes can sense touch through a small layer of glass, plastic, paper or
+Electrodes can sense touch through a thin layer of glass, plastic, paper or
 similar.
 
 With the Multi Touch Bricklet it is possible to build custom touch panels
@@ -128,19 +128,21 @@ If everything went as expected you can now see the current state.
 
 |test_pi_ref|
 
-Create own Touch Pads/ Adjust Sensitivity
------------------------------------------
+Create own Touch Pads / Adjust Sensitivity
+------------------------------------------
 
 TODO Image
 
 You can create simple touch pads by using stripped wires. To create real pads
-you can use self-adhesive aluminum tape to create the pad and connect the wire
+you can use `self-adhesive aluminum tape
+<https://www.tinkerforge.com/en/shop/accessories/sensors/aluminum-tape-1m.html>`__
+to create the pad and connect the wire
 to it. Since it is a capacitive technology you can cover your self created touch 
 panel with thin non-conductive materials.
 
 Dependent on your touch pads it might be necessary to adjust the sensitivity.
 Use the Brick Viewer Software to play around with it by changing the value until
-you have found a satisfying sensitivity. To take over the entered value press
+you have found a satisfying sensitivity. To accept the entered value press
 "Recalibrate".
 
 .. _multi_touch_bricklet_case:

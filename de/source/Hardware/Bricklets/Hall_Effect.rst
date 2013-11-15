@@ -56,15 +56,16 @@ Features
 --------
 
 * Detektiert Magnetfelder
-* Zählt Vorkommnisse eines Magnetfelds
+* Zählt das Auftreten und Verschwinden eines Magnetfelds
 * Kann genutzt werden um Wasser-/Stromzähler auszulesen
 
 Beschreibung
 ------------
 
 Das Hall Effect :ref:`Bricklet <product_overview_bricklets>` kann die Präsenz
-eines Magnetfelds detektieren. Es zählt die Vorkommnisse eines Magnetfelds und
-kann dadurch genutzt werden um z.B. die Geschwindigkeit eines Rades zu messen.
+eines Magnetfelds detektieren. Es zählt das Auftreten und Verschwinden eines
+Magnetfelds und kann dadurch genutzt werden um z.B. die Geschwindigkeit eines
+Rades zu messen an dem ein Magnet befestigt ist.
 
 Beispielanwendungen:
 
@@ -81,7 +82,7 @@ Sensor                            AH180N
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Funktionsweise                    Omnipolar (Nord- und Südpol werden detektiert)
-Funktionspunkt                    -35/35 Gauss
+Auslösepunkt                      -35/35 Gauss
 Freigabepunkt                     -25/25 Gauss
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------

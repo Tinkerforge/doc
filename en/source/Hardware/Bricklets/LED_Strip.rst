@@ -64,7 +64,7 @@ Description
 
 The LED Strip :ref:`Bricklet <product_overview_bricklets>` can be used to
 control LED strips that are equipped with the WS2801 LED driver. It is possible
-to independently control 320 RGB LEDs (960 different LEDs).
+to independently control 320 RGB LEDs (960 individual LEDs).
 
 The API allows to change all LEDs at the same time with a fixed update rate
 of up to 100Hz.
@@ -79,15 +79,15 @@ Property                          Value
 ================================  ============================================================
 Supported LED Driver              WS2801
 Resolution                        8bit per LED
-Number of Controllable LEDs       Max 960 (320 RGB LEDs)*
-Update Rate                       Max 100 updates per second
+Maximum Number of LEDs            960 (320 RGB LEDs)*
+Maximum Update Rate               100 updates per second
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            30 x 30 x 12mm (1.18 x 1.18 x 0.47")
 Weight                            10g
 ================================  ============================================================
 
-\* With a Master Brick, 480 with other Bricks
+\* with a Master Brick, 480 with other Bricks
 
 Resources
 ---------
@@ -130,15 +130,15 @@ WS2801
 ------
 
 At the moment the LED Strip Bricklets supports LED strips and pixels 
-equipped with WS2801 controllers (more controller types will follow). 
+equipped with the WS2801 driver chip (more driver chip types will follow).
 
-The WS2801 IC can control three LEDs independently.
+The WS2801 chip can control three LEDs independently.
 Typically a RGB LED combined in one package is used. It is controlled over
 a three wire chained data bus with clock, data signal and ground for 
-reference (`Daisy Chain <http://en.wikipedia.org/wiki/Daisy_chain>`__). 
+reference (`daisy chain <http://en.wikipedia.org/wiki/Daisy_chain_(electrical_engineering)>`__).
 Each WS2801 chip has a bus input connected to a controlling 
 device such as the LED Strip Bricklet or to a WS2801 predecessor and a 
-bus output which can be connected to a subsequent WS2801. 
+bus output which can be connected to a subsequent WS2801 chip.
 Since it is a chained bus, a single bus output has to be connected only
 to a single bus input. The bus is indexed beginning with the first WS2801 on the 
 LED Strip Bricklet (API index 0).
@@ -149,9 +149,9 @@ LED Strip Bricklet (API index 0).
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_strip_example_800.jpg
 
-The above picture depicts an typical WS2801 LED strip. You can see each module
-equipped with one WS2801 IC and a connected RGB LED. Recognize the signal labels 
-for input ("IN") and output ("OUT"): 5V, CK (clock), SD (serial data) and GND. 
+The above picture depicts a typical WS2801 LED strip. You can see each module
+equipped with one WS2801 chip and a connected RGB LED. Recognize the signal labels
+for input (IN) and output (OUT): 5V, CK (clock), SD (serial data) and GND.
 
 
 .. _led_strip_bricklet_connectivity:
@@ -168,14 +168,14 @@ The following image depicts the interfaces of the LED Strip Bricklet.
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
 As described in the :ref:`WS2801 section <led_strip_bricklet_ws2801>` above
-the Bricklet supports pixels and strips with WS2801 driver.
+the Bricklet supports LED strips and pixels with WS2801 driver.
 The terminal labeled with "Output" has to be connected with the input of
 the first WS2801 driver.
 
 The output terminal consists of four signals:
 
 * "DAT" is the data signal line to the WS2801 chip. It has to be connected to
-  the data input of the first WS2801. Unfortunately there is no 
+  the data input of the first WS2801 chip. Unfortunately there is no
   general label on LED pixels or on LED strips for this input. Sometimes the 
   signal is marked with SD (Serial Data) or DI (Data Input). It is also 
   possible that the input of the pixel or strip is not marked, but the output 
@@ -183,7 +183,7 @@ The output terminal consists of four signals:
   marked other side has to be the input.
 
 * "CLK" is the clock signal line to the WS2801 chip. It has to be connected 
-  with the clock input of the first WS2801. This input is typically labeled 
+  with the clock input of the first WS2801 chip. This input is typically labeled
   with CLK, CK or CI (Clock Input). If only the output is labeled it can be 
   labeled with CO (Clock Output).
 
@@ -264,10 +264,10 @@ a frame is transfered to the LEDs.
 
 For example, if you want to have an animation with 20 frames per second, you
 should set the frame duration to 50ms. After the frame duration is set you
-need to send the first frame (i.e. you need to set all rgb values), wait 
+need to send the first frame (i.e. you need to set all RGB values), wait
 until the FrameRendered callback is triggered, write the next frame and so on.
 
-.. image:: /Images/Bricklets/bricklet_led_strip_fixed_frame_rate.png
+.. image:: /Images/Bricklets/bricklet_led_strip_fixed_frame_rate_230.png
    :scale: 100 %
    :alt: Control LEDs with fixed frame rate
    :align: center

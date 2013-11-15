@@ -56,7 +56,7 @@ Features
 --------
 
 * Measures moisture between two probes
-* 12 bit resolution
+* 12bit resolution
 
 Description
 -----------

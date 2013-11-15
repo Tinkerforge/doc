@@ -67,8 +67,9 @@ Das Rotary Encoder :ref:`Bricklet <product_overview_bricklets>` ist mit einem
 pro Schritt. Der Encoder hat einen integrierten Taster (auslösbar indem man auf
 den Knopf drückt) der genutzt werden kann um Menüpunkte o.ä. auszuwählen.
 
-Der Unterschied zwischen dem Rotary Poti und dem Rotary Encoder Bricklet
-ist, dass der Encoder ohne Begrenzungen gedreht werden kann.
+Der Unterschied zwischen dem :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`
+und dem Rotary Encoder Bricklet ist, dass der Encoder ohne Begrenzungen gedreht
+werden kann.
 
 Technische Spezifikation
 ------------------------
@@ -86,7 +87,7 @@ Abmessungen (B x T x H)           30 x 25 x 23mm (1,18 x 0,98 x 0,9")
 Gewicht                           5g*
 ================================  ============================================================
 
-* ohne Knopf
+\* ohne Knopf
 
 Ressourcen
 ----------

@@ -74,8 +74,9 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Sensor                            HC-SR04
-Max Range                         400cm
-Min Range                         2cm
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Distance                          2cm - 400cm in 1mm steps, 12bit resolution
 Measuring Angle                   15°
 Update Rate                       40Hz
 --------------------------------  ------------------------------------------------------------
@@ -116,6 +117,8 @@ If everything went as expected you can now see the measured distance.
    :alt: Distance US Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_us_brickv.jpg
+
+TODO: New screenshot with correct measurements
 
 |test_pi_ref|
 

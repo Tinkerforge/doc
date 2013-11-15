@@ -105,16 +105,14 @@ Remote Switch Bricklet. If you found another remote mains switch
 that is compatible please write us an email, we would like to add it.
 
 =============== ====================================
-Property        Value
+Manufacturer    Models
 =============== ====================================
-Manufacturer:   BAT
-Models:         * RC 3500-A
+BAT             * RC 3500-A
                 * RC AAA1000-A
                 * RC AAA3680-A
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Brennstuhl
-Models:         * RC 2044 Indoor
+Brennstuhl      * RC 2044 Indoor
                 * RC 2044 Outdoor
                 * RC 3600
                 * RCS 1000 N Comfort
@@ -123,8 +121,7 @@ Models:         * RC 2044 Indoor
                 * RCS 2044 N Comfort Outdoor
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   ELRO 
-Models:         * AB440D
+ELRO            * AB440D
                 * AB440ID
                 * AB440IS
                 * AB440L
@@ -132,8 +129,7 @@ Models:         * AB440D
                 * AB440W
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Intertechno
-Models:         * CMR-300
+Intertechno     * CMR-300
                 * CMR-500
                 * CMR-1000
                 * CMR-1224
@@ -160,12 +156,10 @@ Models:         * CMR-300
                 * PA3-1000
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Mumbi
-Models:         * m-FS300
+Mumbi           * m-FS300
 --------------- ------------------------------------
 --------------- ------------------------------------
-Manufacturer:   Vivanco
-Models:         * FSS 31000W
+Vivanco         * FSS 31000W
                 * FSS 33600W
 =============== ====================================
 

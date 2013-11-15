@@ -55,7 +55,7 @@ Sound Intensity Bricklet
 Features
 --------
 
-* Misst die Schallintensität
+* Misst Schallintensität
 * 12Bit Auflösung
 * Einsetzbar als Klatschschalter, Alarmanlagen-Sensor, u.v.m.
 

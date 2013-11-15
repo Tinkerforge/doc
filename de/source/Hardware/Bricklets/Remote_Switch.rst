@@ -106,16 +106,14 @@ eine weitere kompatible Funksteckdosen findest, würden wir uns über eine
 E-Mail freuen. Dann können wir die Liste erweitern und aktuell halten.
 
 =============== ====================================
-Property        Value
+Hersteller      Modelle
 =============== ====================================
-Hersteller:     BAT
-Modelle:        * RC 3500-A
+BAT             * RC 3500-A
                 * RC AAA1000-A
                 * RC AAA3680-A
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     Brennstuhl
-Modelle:        * RC 2044 Indoor
+Brennstuhl      * RC 2044 Indoor
                 * RC 2044 Outdoor
                 * RC 3600
                 * RCS 1000 N Comfort
@@ -124,8 +122,7 @@ Modelle:        * RC 2044 Indoor
                 * RCS 2044 N Comfort Outdoor
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     ELRO 
-Modelle:        * AB440D
+ELRO            * AB440D
                 * AB440ID
                 * AB440IS
                 * AB440L
@@ -133,8 +130,7 @@ Modelle:        * AB440D
                 * AB440W
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     Intertechno
-Modelle:        * CMR-300
+Intertechno     * CMR-300
                 * CMR-500
                 * CMR-1000
                 * CMR-1224
@@ -161,12 +157,10 @@ Modelle:        * CMR-300
                 * PA3-1000
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     Mumbi
-Modelle:        * m-FS300
+Mumbi           * m-FS300
 --------------- ------------------------------------
 --------------- ------------------------------------
-Hersteller:     Vivanco
-Modelle:        * FSS 31000W
+Vivanco         * FSS 31000W
                 * FSS 33600W
 =============== ====================================
 

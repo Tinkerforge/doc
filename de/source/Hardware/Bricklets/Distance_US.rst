@@ -74,8 +74,10 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Maximale Reichweite               400cm
-Minimale Reichweite               2cm
+Sensor                            HC-SR04
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Entfernungen                      2cm - 400cm in 1mm Schritten, 12Bit Auflösung
 Messwinkel                        15°
 Aktualisierungsrate               40Hz
 --------------------------------  ------------------------------------------------------------
@@ -117,6 +119,8 @@ Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_us_brickv.jpg
 
+TODO: Neuer Screenshot mit richtigen Messwerten
+
 |test_pi_ref|
 
 .. _distance_us_bricklet_case:
@@ -136,7 +140,7 @@ Ein `laser-geschnittenes Gehäuse für das Distance US Bricklet
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
 * Schraube Abstandshalter an das Bricklet,
-* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte,
+* baue Seitenteile auf mit Bricklet und Sensor in der Mitte,
 * schraube Unterteil an untere Abstandshalter,
 * schraube Oberteil auf obere Abstandshalter.
 

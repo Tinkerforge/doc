@@ -67,8 +67,9 @@ with a 360° rotary encoder. It has 24 steps per rotation with a nice clicking
 feel. The encoder has an integrated push-button (by pressing on the knob) that
 can be used to select a menu item or similar.
 
-The difference between the Rotary Poti and the Rotary Encoder Bricklet
-is that the encoder has full rotation without limits.
+The difference between the :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`
+and the Rotary Encoder Bricklet is that the encoder has full rotation without
+limits.
 
 
 Technical Specifications
@@ -87,7 +88,7 @@ Dimensions (W x D x H)              30 x 25 x 23mm (1.18 x 0.98 x 0.9")
 Weight                              5g*
 ==================================  ============================================================
 
-* without knob
+\* without knob
 
 Resources
 ---------

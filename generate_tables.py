@@ -272,7 +272,7 @@ bricklet_descriptions = {
     },
 'sound_intensity': {
     'en': 'Measures sound intensity',
-    'de': 'Misst die Schallintensität'
+    'de': 'Misst Schallintensität'
     },
 'temperature': {
     'en': 'Measures ambient temperature with 0.5°C accuracy',

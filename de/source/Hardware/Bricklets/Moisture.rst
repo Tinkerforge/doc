@@ -69,7 +69,7 @@ Mit steigender Feuchtigkeit sinkt der Widerstand. Die Veränderung des
 Widerstandes wird als Feuchtigkeitswert ausgewertet.
 
 Es ist möglich das Bricklet direkt in Erde zu stecken oder zwei Prüfspitzen
-an das Bricklet zu löten
+an das Bricklet zu löten.
 
 Das Moisture Bricklet kann auch zum Messen des Füllstands eines Wasserbehälters
 genutzt werden.

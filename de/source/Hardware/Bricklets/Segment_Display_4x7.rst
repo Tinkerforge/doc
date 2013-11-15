@@ -63,7 +63,7 @@ Beschreibung
 ------------
 
 Das Segment Display 4x7 :ref:`Bricklet <product_overview_bricklets>` kann
-genutzt werden um vier 7-Segment-Anzeigen zu und ein Doppelpunkt zu steuern.
+genutzt werden um vier 7-Segment-Anzeigen und einen Doppelpunkt zu steuern.
 Jedes der 29 Segmente kann eigenständig geschaltet werden. Es ist zusätzlich
 möglich die Helligkeit der Segmente einzustellen. Neben der Möglichkeit des
 Schaltens einzelner Segmente bietet die API auch einen anwender-konfigurierbaren
