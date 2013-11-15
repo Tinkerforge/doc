@@ -8,6 +8,11 @@
 Starter Kit: Blinkenlights
 ==========================
 
+.. note::
+ This Starter Kit is currently in the prototype state and the software/hardware
+ as well as the documentation is incomplete and may not represent the final
+ version.
+
 TODO: Images
 
 Features
