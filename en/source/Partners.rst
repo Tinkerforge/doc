@@ -18,11 +18,11 @@ Partners
 
     `Xively <https://xively.com/>`__ is a platform devoted to simplifying the
     interconnection of devices and data with applications on the Internet of
-    Things. By providing a platform and open source libraries, Xively helps 
-	developers and builders easily create, prototype, build, pilot and deploy 
-	their Internet connected product.  The result is the shortest path to 
-	providing compelling connected products that can transform the way people 
-	experience their world.
+    Things. By providing a platform and open source libraries, Xively helps
+    developers and builders easily create, prototype, build, pilot and deploy
+    their Internet connected product.  The result is the shortest path to
+    providing compelling connected products that can transform the way people
+    experience their world.
 	
     ..
       http://www.linkedin.com/company/xively

@@ -18,11 +18,11 @@ Partner
 
     `Xively <https://xively.com/>`__ ist eine Plattform, die sich der einfachen
     Verbindung von Anwendungen mit Geräten und Daten im Internet der Dinge
-    widmet. Durch die Bereitstellung einer Plattform und Open Source 
-	Bibliotheken, hilft Xively Entwicklern und Herstellern die Entwicklung, 
-	Verteilung und Steuerung ihrer Produkte für das Internet der Dinge zu 
-	vereinfachen. So können diese die Art und Weise verändern, wie Menschen 
-	ihre Welt erleben.
+    widmet. Durch die Bereitstellung einer Plattform und Open Source
+    Bbliotheken, hilft Xively Entwicklern und Herstellern die Entwicklung,
+    Verteilung und Steuerung ihrer Produkte für das Internet der Dinge zu
+    vereinfachen. So können diese die Art und Weise verändern, wie Menschen
+    ihre Welt erleben.
 
     Das :ref:`Starterkit: Wetterstation <starter_kit_weather_station_xively>`
     und das :ref:`Starterkit: Serverraum-Überwachung
