@@ -16,28 +16,14 @@ Partners
 
     .. rubric:: Xively
 
-    ..
-      `Xively <https://xively.com/>`__ provides the first public cloud
-      purpose-built for the Internet of Things (IoT). Xively's Platform as a
-      Service (PaaS) helps companies simplify and accelerate development of a
-      new generation of IoT-connected products that easily interact with other
-      connected offerings, and effortlessly scale to billions of devices. With
-      Xively, businesses of all sizes can focus on their innovation, instead of
-      infrastructure, and bring compelling connected offerings to market at
-      significant cost savings. Through the power of Xively's Connected Object
-      Cloud™, solutions can securely and selectively interconnect, creating an
-      exponential effect.
-
-    ..
-      http://blog.xively.com/2013/10/28/logmeins-xively-and-linear-technology-partner-to-spur-development-on-the-internet-of-things/
-
     `Xively <https://xively.com/>`__ is a platform devoted to simplifying the
     interconnection of devices and data with applications on the Internet of
-    Things. By providing necessary resources, Xively helps developers and
-    builders to easily create, prototype, build, pilot and deploy their Internet
-    connected product. So they can transform the way people experience their
-    world.
-
+    Things. By providing a platform and open source libraries, Xively helps 
+	developers and builders easily create, prototype, build, pilot and deploy 
+	their Internet connected product.  The result is the shortest path to 
+	providing compelling connected products that can transform the way people 
+	experience their world.
+	
     ..
       http://www.linkedin.com/company/xively
 
