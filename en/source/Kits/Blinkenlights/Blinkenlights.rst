@@ -20,13 +20,16 @@ Features
 
 * Huge 40x80cm 200 Pixel RGB Display
 * Update Rates up to 100Hz possible
-* Develop Party Games, Exhibition Presentations and Customer Specific Displays
+* Develop Party Games, Exhibition Presentations and Customer Specific Displays 
+  of any kind
+* Freely programmable, configurable and expandable
 
 
 Description
 -----------
 
-The Starter Kit: Blinkenlights basically is a huge, freely programmable display. 
+The Starter Kit: Blinkenlights implements (besser: realize?) a huge, 
+freely programmable display. 
 It consits of 200 independently controllable full-color RGB pixels updatable 
 up to 100 times per second. Possible applications are vast. The 
 kit is useable to create party games, exhibition presentations and custom 
@@ -35,13 +38,14 @@ displays of any kind.
 Basic kit comes with one :ref:`Master Brick <master_brick>`, one :ref:`LED Strip
 Bricklet <led_strip_bricklet>`, four 50 LED Pixels sets, two led power supplies, 
 one mounting plate, one back plate and all necessary cables and mouting 
-materials.
+materials. The basic kit can be controlled over USB by any (Embedded-) PC (e.g.
+:ref:'Raspberry Pi <raspberry_pi>'), Laptop, Server or Tablet.
 
 The kit can be extended by other Tinkerforge products. 
 In game applications the :ref:`Multi Touch Bricklet <multi_touch_bricklet>`
 can be useful when custom game controls are needed. With 
 :ref:`Master Brick Extensions <product_overview_master_extensions>` the USB 
-interface can be replaced with :ref:`WiFi <wifi_extension>` or 
+interface can be changed to :ref:`WiFi <wifi_extension>` or 
 :ref:`Ethernet <ethernet_extension>` so Smartphone or Tablet
 controlled applications are imaginable.
 
@@ -51,7 +55,7 @@ A free application implements clones of
 The games can be controlled by a PC keyboard but can be also be controlled
 by customizable touch pads when using the Multi Touch Bricklet.
 
-The kits name "Blinkenlights" relies on the 
+The kit name "Blinkenlights" relies on the 
 `Project Blinkenlights <http://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
 
 Technical Specifications
