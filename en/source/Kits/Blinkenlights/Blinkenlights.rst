@@ -18,28 +18,30 @@ TODO: Images
 Features
 --------
 
-* Huge 40x80cm 200 Pixel RGB Display
-* Update Rates up to 100Hz possible
+* Giant 40x80cm 200 Pixel RGB Display with update rate up to 100Hz
 * Develop Party Games, Exhibition Presentations and Customer Specific Displays 
   of any kind
 * Freely programmable, configurable and expandable
+* Pixels: 12mm diameter, waterproof (IP65), full-color RGB  with 1600mcd
 
 
 Description
 -----------
 
-The Starter Kit: Blinkenlights implements (besser: realize?) a huge, 
-freely programmable display. 
-It consits of 200 independently controllable full-color RGB pixels updatable 
-up to 100 times per second. Possible applications are vast. The 
+The Starter Kit: Blinkenlights implements (besser: realize?) a giant, 
+freely programmable display. It consits of 200 independently controllable, 
+full-color, 12mm diameter, waterproof (IP65) RGB color pixels updatable up to 
+100 times per second. Possible applications depend on your creativity: The 
 kit is useable to create party games, exhibition presentations and custom 
 displays of any kind.
+
+TODO Video
 
 Basic kit comes with one :ref:`Master Brick <master_brick>`, one :ref:`LED Strip
 Bricklet <led_strip_bricklet>`, four 50 LED Pixels sets, two led power supplies, 
 one mounting plate, one back plate and all necessary cables and mouting 
 materials. The basic kit can be controlled over USB by any (Embedded-) PC (e.g.
-:ref:'Raspberry Pi <raspberry_pi>'), Laptop, Server or Tablet.
+:ref:`Raspberry Pi <embedded_raspberry_pi>`), Laptop, Server or Tablet.
 
 The kit can be extended by other Tinkerforge products. 
 In game applications the :ref:`Multi Touch Bricklet <multi_touch_bricklet>`
@@ -47,7 +49,8 @@ can be useful when custom game controls are needed. With
 :ref:`Master Brick Extensions <product_overview_master_extensions>` the USB 
 interface can be changed to :ref:`WiFi <wifi_extension>` or 
 :ref:`Ethernet <ethernet_extension>` so Smartphone or Tablet
-controlled applications are imaginable.
+controlled applications are imaginable. A larger display can be created by 
+attaching more LED Pixels to it.
 
 A free application implements clones of
 `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ and 
@@ -66,6 +69,7 @@ Property                                  Value
 ========================================  ============================================================
 Maximum Update Rate (LED Strip Bricklet)  100Hz
 RGB resolution (LED Strip Bricklet)       3 x 8Bit
+Luminous Itensity                         1600cd
 ----------------------------------------  ------------------------------------------------------------
 ----------------------------------------  ------------------------------------------------------------
 Number of RGB Pixels                      10 x 20
