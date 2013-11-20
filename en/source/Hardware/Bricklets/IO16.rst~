@@ -1,0 +1,210 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#bricklets">Bricklets</a> / IO-16 Bricklet
+:shoplink: ../../../shop/bricklets/io16-bricklet.html
+
+.. include:: IO16.substitutions
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
+
+.. _io16_bricklet:
+
+IO-16 Bricklet
+==============
+
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_io16_tilted_350.jpg",
+	               "Bricklets/bricklet_io16_tilted_600.jpg",
+	               "IO-16 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_io16_front_100.jpg",
+	             "Bricklets/bricklet_io16_front_600.jpg",
+	             "IO-16 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_io16_vertical_100.jpg",
+	             "Bricklets/bricklet_io16_vertical_600.jpg",
+	             "IO-16 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_io16_horizontal_100.jpg",
+	             "Bricklets/bricklet_io16_horizontal_600.jpg",
+	             "IO-16 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_io16_master_100.jpg",
+	             "Bricklets/bricklet_io16_master_600.jpg",
+	             "IO-16 Bricklet with Master Brick")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_io16_brickv_100.jpg",
+	             "Bricklets/bricklet_io16_brickv.jpg",
+	             "IO-16 Bricklet in Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/io16_bricklet_dimensions_100.png",
+	             "Dimensions/io16_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
+	}}
+	{{ tfdocend() }}
+
+
+Features
+--------
+
+* 16-channel digital input/output
+* Switchable logic voltage 3.3V or 5V*
+* Configurable pull-ups and interrupts
+
+
+Description
+-----------
+
+The IO-16 :ref:`Bricklet <product_overview_bricklets>` can be used to extend
+the features of :ref:`Bricks <product_overview_bricks>` by external digital
+inputs and outputs.
+
+The Bricklet features 2x 8 I/O pins that can be independently configured as
+digital inputs or outputs. Each input pin can additionally be configured with
+a pull-up or as interrupt source. The input/output voltages can be switched
+manually between 3.3V and 5V*. Via terminal blocks all signals
+and GND can be accessed. An additional terminal block
+delivers the switched output voltage.
+
+Human interfaces, such as switches, push-buttons and LEDs are typical
+applications of this Bricklet.
+
+
+Technical Specifications
+------------------------
+
+================================  =================================================================
+Property                          Value
+================================  =================================================================
+I/O Pins                          16
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
+I/O Voltages                      Switchable between 3.3V and 5V*
+Maximum Output Current            20mA
+Maximum API Calls**               ``set_port`` (1kHz), ``get_port`` (> 0.25kHz), callbacks (1kHz)
+--------------------------------  -----------------------------------------------------------------
+--------------------------------  -----------------------------------------------------------------
+Dimensions (W x D x H)            35 x 75 x 14mm (1.38 x 2.95 x 0.55")
+Weight                            30g
+================================  =================================================================
+
+\* The maximum output voltage depends on supply voltage. If the connected Brick is
+powered over USB, 5V may not be reached. The reason for this is a voltage
+drop about 0.5V caused by protection diodes on our products.
+If you need to reach 5V, you have to use a stack supply,
+e.g. the :ref:`Step-Down Power Supply <step_down_power_supply>`.
+
+\** depends on your system (OS, CPU etc.)
+
+
+Resources
+---------
+
+* MCP23017 datasheet (`Download <https://github.com/Tinkerforge/io16-bricklet/raw/master/datasheets/MCP23017.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/io16-bricklet/raw/master/hardware/io-16-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/io16_bricklet_dimensions.png>`__)
+* Source code and design files (`Download <https://github.com/Tinkerforge/io16-bricklet/zipball/master>`__)
+
+
+.. _io16_bricklet_test:
+
+Test your IO-16 Bricklet
+------------------------
+
+|test_intro|
+
+|test_connect|.
+In our test we connected an LED with series resistor to the board
+by attaching the anode to port B pin 0 and the cathode to a GND pin.
+Additionally we connected a slide switch that can short port A pin 7 to GND
+(see picture below).
+
+.. image:: /Images/Bricklets/bricklet_io16_master_600.jpg
+   :scale: 100 %
+   :alt: IO-16 Bricklet connected to Master Brick
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_io16_master_1200.jpg
+
+|test_tab|
+
+If everything went as expected the Brick Viewer should look as
+depicted below.
+
+.. image:: /Images/Bricklets/bricklet_io16_brickv.jpg
+   :scale: 100 %
+   :alt: IO-16 Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_io16_brickv.jpg
+
+..
+  FIXME: update screenshot and description for monoflop
+
+In this tab you can change the "Debounce Period",
+it is the debounce time for interrupt callbacks.
+For example: If you set this value to 100, you will get interrupts
+maximal every 100ms. This is necessary if something that bounces is
+connected to the IO-16 Bricklet, such as a button. You can test the optimal
+value in the Brick Viewer and use it later in your own program.
+
+Below the debounce period configuration you can configure the pins.
+Each pin can be configured as input/output and in case of an input pin
+as pull-up. The current state is depicted in the table below.
+
+To test the LED we configure port B pin 0 as output and change
+the value. When the pin is high the LED should light up. To test the button
+configure port A pin 7 as input pull-up. We need the pull-up to define a stable
+state when the slide switch does not short port A pin 7 to GND. Now look in the
+table, you should see that you can change the value of the pin by toggling the
+slide switch.
+
+If you don't have a button or a LED you can try to measure voltages with
+a voltage meter or connect an input pin with GND or VCC to see changes in the
+Brick Viewer.
+
+|test_pi_ref|
+
+
+.. _io16_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the IO-16 Bricklet <https://www.tinkerforge.com/en/shop/cases/case-io-16-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_io16_case_600.jpg
+   :scale: 100 %
+   :alt: Case for IO-16 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_io16_case_1000.jpg
+
+.. include:: IO16.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/io16_exploded_600.jpg
+   :scale: 100 %
+   :alt: Exploded assembly drawing for IO-16 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/io16_exploded.png
+
+|bricklet_case_hint|
+
+.. _io16_bricklet_programming_interfaces:
+
+Programming Interfaces
+----------------------
+
+High Level Programming Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+
+.. include:: IO16_hlpi.table

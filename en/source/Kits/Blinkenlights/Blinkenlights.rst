@@ -58,7 +58,9 @@ configurable durations and can warm your heart with a virtual fire.
 The games can be controlled by a PC keyboard but can be also be controlled
 by customizable touch pads when using the Multi Touch Bricklet.
 
-The kit name "Blinkenlights" comes from the
+The kit name "Blinkenlights" is used in 
+`hacker jargon <http://en.wikipedia.org/wiki/Blinkenlights>`
+to describe blinking lights. It is also known from the
 `Project Blinkenlights <http://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
 
 Technical Specifications
@@ -256,6 +258,15 @@ application will display each image for the given time ("Speed") and then switch
 to the next image. This way you can create animations. Each image is resized to
 20x10 pixels (size of the display) and stretched if the aspect ration does not 
 fit. Use an image editing tool if you are not satisfied with the results.
+
+Virtual Fire
+^^^^^^^^^^^^
+
+Scrolling Text
+^^^^^^^^^^^^^^
+
+Show Images
+^^^^^^^^^^^
 
 
 Further Enhancements
