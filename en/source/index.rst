@@ -75,8 +75,7 @@ with Tinkerforge:
    Kits/WeatherStation/WeatherStation
    Kits/HardwareHacking/HardwareHacking
    Kits/ServerRoomMonitoring/ServerRoomMonitoring
-   
-..   Kits/Blinkenlights/Blinkenlights
+   Kits/Blinkenlights/Blinkenlights
 
 
 .. _index_software:

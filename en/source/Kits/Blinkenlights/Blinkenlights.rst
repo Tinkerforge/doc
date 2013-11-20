@@ -28,37 +28,37 @@ Features
 Description
 -----------
 
-The Starter Kit: Blinkenlights implements (besser: realize?) a giant, 
-freely programmable display. It consits of 200 independently controllable, 
-full-color, 12mm diameter, waterproof (IP65) RGB color pixels updatable up to 
-100 times per second. Possible applications depend on your creativity: The 
-kit is useable to create party games, exhibition presentations and custom 
-displays of any kind.
+The Starter Kit: Blinkenlights is a huge, freely programmable display.
+It consist of 200 independently controllable full-color RGB LED pixels that can
+be changed up to 100 times per second. Possible applications are vast. The
+kit can be used to create party games, exhibition presentations, fancy mood
+lighting and custom displays of any kind.
 
-TODO Video
-
-Basic kit comes with one :ref:`Master Brick <master_brick>`, one :ref:`LED Strip
-Bricklet <led_strip_bricklet>`, four 50 LED Pixels sets, two led power supplies, 
-one mounting plate, one back plate and all necessary cables and mouting 
+The basic kit comes with one :ref:`Master Brick <master_brick>`, one :ref:`LED Strip
+Bricklet <led_strip_bricklet>`, four 50 LED Pixel sets, two LED power supplies,
+one mounting plate, one back plate and all necessary cables and mounting
 materials. The basic kit can be controlled over USB by any (Embedded-) PC (e.g.
-:ref:`Raspberry Pi <embedded_raspberry_pi>`), Laptop, Server or Tablet.
+:ref:`Raspberry Pi <embedded_raspberry_pi>`), laptop, server or tablet.
 
 The kit can be extended by other Tinkerforge products. 
 In game applications the :ref:`Multi Touch Bricklet <multi_touch_bricklet>`
 can be useful when custom game controls are needed. With 
 :ref:`Master Brick Extensions <product_overview_master_extensions>` the USB 
 interface can be changed to :ref:`WiFi <wifi_extension>` or 
-:ref:`Ethernet <ethernet_extension>` so Smartphone or Tablet
+:ref:`Ethernet <ethernet_extension>` so smart phone or tablet
 controlled applications are imaginable. A larger display can be created by 
 attaching more LED Pixels to it.
 
-A free application implements clones of
+A demo application implements clones of
 `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ and 
-`Pong <http://en.wikipedia.org/wiki/Pong>`__.
+`Pong <http://en.wikipedia.org/wiki/Pong>`__ and demonstrates different non game 
+applications. For example it can scroll customizable text in different colors on 
+the display, shows rainbows, shows customizable image sets with 
+configurable durations and can warm your heart with a virtual fire.
 The games can be controlled by a PC keyboard but can be also be controlled
 by customizable touch pads when using the Multi Touch Bricklet.
 
-The kit name "Blinkenlights" relies on the 
+The kit name "Blinkenlights" comes from the
 `Project Blinkenlights <http://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
 
 Technical Specifications
