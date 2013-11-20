@@ -25,6 +25,11 @@ LED Strip Bricklet
 	               "LED Strip Bricklet")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_led_strip_tilted_back_100.jpg",
+	             "Bricklets/bricklet_led_strip_tilted_back_600.jpg",
+	             "LED Strip Bricklet")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_led_strip_vertical_100.jpg",
 	             "Bricklets/bricklet_led_strip_vertical_600.jpg",
 	             "LED Strip Bricklet")
