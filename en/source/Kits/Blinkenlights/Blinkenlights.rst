@@ -82,7 +82,12 @@ Weight                                    TODO
 Resources
 ---------
 
-* TODO
+* Example source code :ref:`Tetris <starter_kit_blinkenlights_tetris>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__)
+* Example source code :ref:`Pong <starter_kit_blinkenlights_Pong>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__)
+* Example source code :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire>`__)
+* Demo application :ref:`Starter Kit: Blinkenlights Demo <starter_kit_blinkenlights_demo_examples>` (Download: Windows, Linux, Mac OS X)
+
+
 
 
 Firmware updating and first tests
@@ -112,14 +117,6 @@ the Bricks and Bricklets have versions that work together and that
 everything will work if it is screwed together. 
 
 
-.. _starter_kit_blinkenlights_demo:
-
-Demo Application
-^^^^^^^^^^^^^^^^
-
-TODO
-
-
 Construction
 ------------
 
@@ -128,24 +125,137 @@ TODO
 * Construction of standard kit
 * Help for front plate extension
 
-Projects
---------
 
-TODO: Description of types of projects
+.. _starter_kit_blinkenlights_demo_examples:
+
+Demo Application/ Example Projects
+----------------------------------
+
+TODO Screenshot
+
+The demo application should demonstrate possible applications for this kit. It 
+consists of five individual applications each also provided as single project 
+(see below). Each projects is represented by its own tab and will be 
+started by selecting the corresponding tab. The application supports the
+additional usage of two Dual Button Bricklets or one Multi Touch Bricklet
+to control the games. If a Piezo Speaker Bricklet and or Segment Display 4x7 
+Bricklet is connected, these Bricklets will also be used by the games to give
+acoustic feedback or to display the score.
+
+Before starting you have to configure the host and port. If you use the standard
+kit and have connected it directly to your PC via USB "localhost" and "4223" is 
+fine. If you extended the kit by :ref:`Extensions <master_brick_extension>` or 
+want to control the kit from another PC you have to enter the IP or hostname
+of the extension or the PC where the kit is connected to. Below the 
+input boxes is a table which shows you the connected Bricks and 
+Bricklets. 
+
+
+.. _starter_kit_blinkenlights_tetris:
 
 Tetris
 ^^^^^^
 
 TODO:
 
-* Link to github, description how to configure/start
 * Picture of Tetris 
+* With/Without frontpanel?
+* Example Image
+
+The demo application implements a typical Tetris games with all defined
+specialities. Tetris can be controlled by three possible ways. At first there 
+are buttons in the tab which can be used to control the game. Next you can use 
+your Keyboard. The keys are defined in the tab (e.g. "a" is left). Finally a 
+connected Multi Touch Bricklet with attached electrodes can be used (e.g. 
+electrode 0 is left).
+
+
+.. _starter_kit_blinkenlights_pong:
 
 Pong
 ^^^^
 
 * Link to github, description how to configure/start
 * Picture of Pong
+* With/Without frontpanel?
+* Example Image
+
+Like :ref:`Tetris <starter_kit_blinkenlights_tetris>` the game can be controlled
+by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be 
+controlled by two Dual Button Bricklets.
+
+
+.. _starter_kit_blinkenlights_fire:
+
+Fire Simulation
+^^^^^^^^^^^^^^^
+
+TODO:
+
+* Distance to front panel
+* Example Image
+
+When selecting the Fire tab you will see a fire simulation. It looks good
+if you place the front panel in a distance of TODO to the back panel.
+The simulation is based on a particle system and can be configured by four 
+sliders:
+
+* Speed
+  
+  Defines the frame duration in milliseconds. After the duration time is 
+  exceeded a new frame will be computed. So if you decrease the frame duration
+  you will see a faster burning fire.
+
+* Hue
+
+  Defines the color of your fire.
+
+* Start
+
+  Defines the starting point where the fire particles will start to rise.
+
+* End
+
+  Defines the end point where the fire particles will extinguish.
+
+Play with the sliders to configure your personal fire! With the "Default" button
+you will set back all sliders to their defaults.
+
+
+.. _starter_kit_blinkenlights_scrolling_text:
+
+Scrolling Text
+^^^^^^^^^^^^^^
+
+TODO:
+
+* Frontpanel?
+* Example Image
+
+The "Scrolling Text" demo will scroll the entered Text with the given speed
+on the display. You can set changing colors by selecting "Rainbow" or select
+"Color" and pick the color you like py pressing the button.
+
+
+.. _starter_kit_blinkenlights_images:
+
+Display Images
+^^^^^^^^^^^^^^
+
+TODO:
+
+* Frontpanel? Distance?
+* Example Image
+
+The "Image" demo can be used to display user specific images and whole 
+animations. 
+
+
+Choose the images you want to display by pressing "Choose images...". The 
+application will display each image for the given time ("Speed") and then switch
+to the next image. This way you can create animations. Each image is resized to
+20x10 pixels (size of the display) and stretched if the aspect ration does not 
+fit. Use an image editing tool if you are not satisfied with the results.
 
 
 Further Enhancements
