@@ -2,6 +2,26 @@
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / LED Strip Bricklet
 :FIXME_shoplink: ../../../shop/bricklets/led-strip-bricklet.html
 
+
+.. role:: led-strip-red
+
+.. role:: led-strip-green
+
+.. role:: led-strip-blue
+
+.. role:: led-strip-black
+
+
+
+.. role:: led-pixel-red
+
+.. role:: led-pixel-green
+
+.. role:: led-pixel-blue
+
+.. role:: led-pixel-white
+
+
 .. include:: LED_Strip.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -240,20 +260,21 @@ LED Strips
 ----------
 
 There is no general color code for LED strips. Especially sometimes the color 
-codes are against any agreements. In this example the black wire is 5V, green is 
-clock, red is data and the blue wire is ground.
+codes are against any agreements. In this example the :led-strip-black:`black`
+wire is 5V, :led-strip-green:`green` is clock, :led-strip-red:`red` is data and
+the :led-strip-blue:`blue` wire is ground.
 
 Connect clock and data of the first strip to the LED Strip Bricklet and 
 connect ground of your power supply to it. Pay attention to connect the clock 
-and data input of the first strip to the clock and data output of the LED Strip 
-Bricklet.
+and data input of the first strip to the clock and data output of the
+LED Strip Bricklet.
 
-If you want to measure your power supply voltage connect 5V to the Bricklet, 
-too. You can connect more LED strips to the first strip in serial (have the 
+If you want to measure your supply voltage connect 5V to the Bricklet, too.
+You can connect more LED strips to the first strip in series (have the 
 :ref:`RAM constraints <led_strip_bricklet_ram_constraints>` in mind).
 
-It is not sufficient to power the led strips only at one point. We recommend to
-feed power to the strip at least every two meters. This could be done
+It is not sufficient to power the LED strips only at one point. We recommend to
+feed power to the strip at least every two meters. This can be done
 by connecting a cable between the strip and the power supply for each supply 
 point. This will reduce the resistance and minimize the conduction losses.
 See the following image as an example for it.
@@ -272,23 +293,22 @@ LED Pixels
 
 The connection of LED pixels to the LED Strip Bricklet is similar to the
 connection of LED strips. There is no general color code for LED pixels. 
-In the following example the red wire is 5V, blue is ground, clock is green and 
-data is the white wire.
+In the following example the :led-pixel-red:`red` wire is 5V,
+:led-pixel-blue:`blue` is ground, :led-pixel-green:`clock` is green and
+:led-pixel-white:`data` is the white wire.
 
 Connect clock and data of the first bunch of pixels to the LED Strip Bricklet 
-and connect ground to it. Pay attention to connect the clock and data input of
-the first pixel to the clock and data output of the LED Strip Bricklet.
+and connect ground to it. Pay attention to connect the clock and data input
+of the first pixel to the clock and data output of the LED Strip Bricklet.
 If you want to measure the voltage of your power supply connect 5V to the 
 Bricklet, too. You can connect more bunches of LED pixel to the first bunch in 
-serial (have the :ref:`RAM constraints <led_strip_bricklet_ram_constraints>` in 
+series (have the :ref:`RAM constraints <led_strip_bricklet_ram_constraints>` in 
 mind). 
 
 Typically each bunch has power supply wires at the beginning and the end
 of the bunch. Connect these over additional wires to the power supply. 
 You can unite nearby wires. This will reduce the resistance and minimize the 
 conduction losses.
-
-
 
 .. image:: /Images/Bricklets/bricklet_led_strip_pixel_wiring_800.jpg
    :scale: 100 %

@@ -2,6 +2,26 @@
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / LED Strip Bricklet
 :FIXME_shoplink: ../../../shop/bricklets/led-strip-bricklet.html
 
+
+.. role:: led-strip-red
+
+.. role:: led-strip-green
+
+.. role:: led-strip-blue
+
+.. role:: led-strip-black
+
+
+
+.. role:: led-pixel-red
+
+.. role:: led-pixel-green
+
+.. role:: led-pixel-blue
+
+.. role:: led-pixel-white
+
+
 .. include:: LED_Strip.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -238,15 +258,16 @@ LED Steifen
 
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
 Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem Beispiel
-ist der schwarze Draht 5V, grün ist die Taktleitung, rot ist die Datenleitung 
-und der blaue Draht ist Masse.
+ist der :led-strip-black:`schwarze` Draht 5V, :led-strip-green:`grün` die
+Taktleitung, :led-strip-red:`rot` die Datenleitung und der
+:led-strip-blue:`blaue` Draht ist Masse.
 
-Als erstes wird die Takt- und Datenleitung des ersten LED Streifen und Masse der 
-Spannungsversorgung mit dem LED Strip Bricklet. Dabei muss darauf geachtet 
-werden, dass der Takt- und Dateneingang des ersten Streifen mit dem Takt-
-und Datenausgang des LED Strip Bricklets verbunden wird.
+Als erstes werden die Takt- und Datenleitung des ersten LED Streifens und Masse
+der Spannungsversorgung mit dem LED Strip Bricklet verbunden. Dabei muss darauf
+geachtet werden, dass der Takt- und Dateneingang des ersten Streifen mit dem
+Takt- und Datenausgang des LED Strip Bricklets verbunden wird.
 
-Falls die Spannung  der Versorgung gemessen werden soll, müssen die 5V der
+Falls die Spannung der Versorgung gemessen werden soll, müssen die 5V der
 Stromversorgung mit dem LED Strip Bricklet verbunden werden. Es können weitere
 LED Streifen in Reihe (hintereinander) an den ersten LED Streifen angeschlossen 
 werden (dabei müssen die
@@ -260,7 +281,7 @@ Das nachfolgende Bild zeigt ein Beispiel.
 
 .. image:: /Images/Bricklets/bricklet_led_strip_strip_wiring_600.jpg
    :scale: 100 %
-   :alt: LED Strip Bricklet wiring for LED Strip
+   :alt: LED Strip Bricklet Verkabelung für LED Streifen
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_strip_wiring_1500.jpg
 
@@ -269,15 +290,16 @@ Das nachfolgende Bild zeigt ein Beispiel.
 LED Pixel
 ---------
 
-Die Verbindung zu LED Pixeln ist sehr ähnlich zu der Verbindung zu LED Streifen.
+Die Verbindung zu LED Pixeln ist sehr ähnlich zur Verbindung zu LED Streifen.
 Es existiert ebenfalls keine allgemeine farbliche Kennzeichnung. Im 
-nachfolgenden Beispiel ist der rote Draht 5V, blau ist Masse, die Taktleitung
-ist grün und die Datenleitung ist weiß.
+nachfolgenden Beispiel ist der :led-pixel-red:`rote` Draht 5V,
+:led-pixel-blue:`blau` ist Masse, die Taktleitung ist :led-pixel-green:`grün`
+und die Datenleitung ist :led-pixel-white:`weiß`.
 
 Die Takt- und Datenleitung vom ersten LED Pixel Bündel, sowie Masse von der 
 Stromversorgung werden mit dem LED Strip Bricklet verbunden. Dabei muss darauf 
-geachtet werden, dass der Takt- und Dateneingang des ersten Pixels mit dem Takt-
-und Datenausgang des LED Strip Bricklets verbunden wird. Soll die 
+geachtet werden, dass der Takt- und Dateneingang des ersten Pixels mit dem
+Takt- und Datenausgang des LED Strip Bricklets verbunden wird. Soll die 
 Versorgungsspannung gemessen werden, muss auch 5V von der Stromversorgung an das
 Bricklet angeschlossen werden. Sollen mehrere Bündel verwendet werden, so können
 diese in Reihe (hintereinander) an das erste Bündel angeschlossen werden
@@ -290,10 +312,9 @@ Stromversorgung verbunden werden. Benachbarte Drähte können auch zusammengefas
 werden. Diese Maßnahme reduziert den elektrischen Widerstand und minimiert
 die Leitungsverluste der Stromversorgung.
 
-
 .. image:: /Images/Bricklets/bricklet_led_strip_pixel_wiring_800.jpg
    :scale: 100 %
-   :alt: LED Strip Bricklet wiring for Pixel
+   :alt: LED Strip Bricklet Verkabelung für Pixel
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_pixel_wiring_1500.jpg
 
