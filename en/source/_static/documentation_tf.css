@@ -653,3 +653,44 @@ div.partnerdisclaimer {
 	text-align: right;
 	font-size: 10px;
 }
+
+
+.led-strip-red {
+	color: white;
+	background-color: #bc2b26;
+}
+
+.led-strip-green {
+	color: white;
+	background-color: #207560;
+}
+
+.led-strip-blue {
+	color: white;
+	background-color: #39487f;
+}
+
+.led-strip-black {
+	color: white;
+	background-color: #383838;
+}
+
+
+.led-pixel-red {
+	color: white;
+	background-color: #a9241b;
+}
+
+.led-pixel-green {
+	color: white;
+	background-color: #26cab1;
+}
+
+.led-pixel-blue {
+	color: white;
+	background-color: #4282bf;
+}
+
+.led-pixel-white {
+	background-color: #d6d7db;
+}

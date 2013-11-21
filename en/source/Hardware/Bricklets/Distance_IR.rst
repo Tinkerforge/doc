@@ -156,8 +156,8 @@ distance sensor not directly supported by us, you have to calibrate this
 voltage/distance mapping yourself.
 
 
-Store Voltage/Distance Mapping
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changing the Voltage/Distance Mapping
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To write the voltage/distance mapping you have to connect the Bricklet
 with a Brick to your PC with has :ref:`Brick Daemon <brickd>` and the
@@ -176,8 +176,8 @@ After this press the reset button on the Brick or power cycle to
 load the newly stored voltage/distance mapping.
 
 
-Voltage/Distance Mappings
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Available Voltage/Distance Mappings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We provide the voltage/distance mappings for the following sensors:
 

@@ -56,7 +56,7 @@ Features
 --------
 
 * Misst Entfernungen von 2cm bis 400cm mit Ultraschall
-* Ausgabe in 1mm Schritten (12Bit Auflösung)
+* 12Bit Auflösung
 
 Beschreibung
 ------------
@@ -65,6 +65,11 @@ Das Distance US :ref:`Bricklet <product_overview_bricklets>` ist mit einem
 `Ultraschall-Entfernungsmesser
 <http://de.wikipedia.org/wiki/Entfernungsmessung#Laufzeitmessung>`__
 ausgestattet. Es kann Entfernungen zwischen 2cm und 400cm messen.
+Die gemessene Entfernungen wird als einheitenloser Wert ausgegeben, nicht in mm.
+Dies liegt daran, dass das Verhältnis von gemessenem Entfernungswert zu
+wirklicher Entfernung vom exakten Wert der 5V Versorgungsspannung abhängt.
+Abweichungen in der Versorgungsspannung führen zu Abweichungen in den gemessenen
+Entfernungswerten.
 Mit konfigurierbaren Events ist es möglich auf veränderte Distanzmessung
 zu reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 
@@ -77,7 +82,7 @@ Eigenschaft                       Wert
 Sensor                            HC-SR04
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Entfernungen                      2cm - 400cm in 1mm Schritten, 12Bit Auflösung
+Entfernungen                      2cm - 400cm, 12Bit Auflösung
 Messwinkel                        15°
 Aktualisierungsrate               40Hz
 --------------------------------  ------------------------------------------------------------

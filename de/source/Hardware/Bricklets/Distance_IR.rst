@@ -161,8 +161,8 @@ die nicht direkt von uns unterstützt werden muss zuerst eine passenden Abbildun
 von Spannung auf Distanz definiert werden.
 
 
-Spannung/Distanz Abbildung speichern
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Spannung/Distanz Abbildung ändern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Um die Spannung/Distanz Abbildung auf dem Bricklet zu speichern muss es über
 einen Brick an einen PC angeschlossen werden auf dem der :ref:`Brick Daemon
@@ -178,8 +178,8 @@ Damit die neue Abbildung verwendet wird muss der Brick per Reset Knopf oder per
 USB ab- und anstecken neu gestartet werden.
 
 
-Spannung/Distanz Abbildung
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Verfügbare Spannung/Distanz Abbildung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wir haben vorgefertigte Spannung/Distanz Abbildungsdateien für die folgenden
 Sensoren:
