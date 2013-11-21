@@ -166,7 +166,7 @@ Connectivity
 
 The following image depicts the interfaces of the LED Strip Bricklet.
 
-.. FIXME image:: /Images/Bricklets/bricklet_led_strip_connection_600.jpg
+.. image:: /Images/Bricklets/bricklet_led_strip_connection_350.jpg
    :scale: 100 %
    :alt: LED Strip Bricklet Interface Description
    :align: center
@@ -239,10 +239,30 @@ Free Bricklet Ports               Maximum number of RGB LEDs
 LED Strips
 ----------
 
-TODO:
+There is no general color code for LED strips. Especially sometimes the color 
+codes are against any agreements. In this example the black wire is 5V, green is 
+clock, red is data and the blue wire is ground.
 
-* How to use them?
-* Where to inject power?
+Connect clock and data of the first strip to the LED Strip Bricklet and 
+connect ground of your power supply to it. Pay attention to connect the clock 
+and data input of the first strip to the clock and data output of the LED Strip 
+Bricklet.
+
+If you want to measure your power supply voltage connect 5V to the Bricklet, 
+too. You can connect more LED strips to the first strip in serial (have the 
+:ref:`RAM constraints <led_strip_bricklet_ram_constraints>` in mind).
+
+It is not sufficient to power the led strips only at one point. We recommend to
+feed power to the strip at least every two meters. This could be done
+by connecting a cable between the strip and the power supply for each supply 
+point. This will reduce the resistance and minimize the conduction losses.
+See the following image as an example for it.
+
+.. image:: /Images/Bricklets/bricklet_led_strip_strip_wiring_600.jpg
+   :scale: 100 %
+   :alt: LED Strip Bricklet wiring for LED Strip
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_strip_wiring_1500.jpg
 
 
 .. _led_strip_bricklet_led_pixels:
@@ -250,12 +270,34 @@ TODO:
 LED Pixels
 ----------
 
-TODO:
+The connection of LED pixels to the LED Strip Bricklet is similar to the
+connection of LED strips. There is no general color code for LED pixels. 
+In the following example the red wire is 5V, blue is ground, clock is green and 
+data is the white wire.
 
-* How to use them?
-* Where to inject power?
+Connect clock and data of the first bunch of pixels to the LED Strip Bricklet 
+and connect ground to it. Pay attention to connect the clock and data input of
+the first pixel to the clock and data output of the LED Strip Bricklet.
+If you want to measure the voltage of your power supply connect 5V to the 
+Bricklet, too. You can connect more bunches of LED pixel to the first bunch in 
+serial (have the :ref:`RAM constraints <led_strip_bricklet_ram_constraints>` in 
+mind). 
+
+Typically each bunch has power supply wires at the beginning and the end
+of the bunch. Connect these over additional wires to the power supply. 
+You can unite nearby wires. This will reduce the resistance and minimize the 
+conduction losses.
 
 
+
+.. image:: /Images/Bricklets/bricklet_led_strip_pixel_wiring_800.jpg
+   :scale: 100 %
+   :alt: LED Strip Bricklet wiring for Pixel
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_pixel_wiring_1500.jpg
+
+
+   
 .. _led_strip_bricklet_fixed_frame_rate:
 
 Fixed Frame Rate

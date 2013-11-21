@@ -165,7 +165,7 @@ Anschlussmöglichkeit
 
 Das nachfolgende Bild stellt die Schnittstellen des LED Strip Bricklets dar.
 
-.. FIXME image:: /Images/Bricklets/bricklet_led_strip_connection_600.jpg
+.. image:: /Images/Bricklets/bricklet_led_strip_connection_350.jpg
    :scale: 100 %
    :alt: LED Strip Bricklet Interface Description
    :align: center
@@ -236,21 +236,67 @@ Freie Bricklet Ports              Maximale Anzahl an RGB LEDs
 LED Steifen
 -----------
 
-TODO:
+Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
+Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem Beispiel
+ist der schwarze Draht 5V, grün ist die Taktleitung, rot ist die Datenleitung 
+und der blaue Draht ist Masse.
 
-* How to use them?
-* Where to inject power?
+Als erstes wird die Takt- und Datenleitung des ersten LED Streifen und Masse der 
+Spannungsversorgung mit dem LED Strip Bricklet. Dabei muss darauf geachtet 
+werden, dass der Takt- und Dateneingang des ersten Streifen mit dem Takt-
+und Datenausgang des LED Strip Bricklets verbunden wird.
 
+Falls die Spannung  der Versorgung gemessen werden soll, müssen die 5V der
+Stromversorgung mit dem LED Strip Bricklet verbunden werden. Es können weitere
+LED Streifen in Reihe (hintereinander) an den ersten LED Streifen angeschlossen 
+werden (dabei müssen die
+:ref:`RAM Beschränkungen <led_strip_bricklet_ram_constraints>` beachtet werden).
+
+Es ist nicht ausreichend die LED Streifen nur an deren Anfang zu versorgen.
+Wir empfehlen mindestens alle 2 Meter neu einzuspeisen. Dazu kann zum Beispiel
+pro Einspeisepunkt ein eigenes Kabel zur Stromversorgung geführt werden. 
+Somit wird der elektrische Widerstand reduziert und Leitungsverluste minimiert.
+Das nachfolgende Bild zeigt ein Beispiel.
+
+.. image:: /Images/Bricklets/bricklet_led_strip_strip_wiring_600.jpg
+   :scale: 100 %
+   :alt: LED Strip Bricklet wiring for LED Strip
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_strip_wiring_1500.jpg
 
 .. _led_strip_bricklet_led_pixels:
 
 LED Pixel
 ---------
 
-TODO:
+Die Verbindung zu LED Pixeln ist sehr ähnlich zu der Verbindung zu LED Streifen.
+Es existiert ebenfalls keine allgemeine farbliche Kennzeichnung. Im 
+nachfolgenden Beispiel ist der rote Draht 5V, blau ist Masse, die Taktleitung
+ist grün und die Datenleitung ist weiß.
 
-* How to use them?
-* Where to inject power?
+Die Takt- und Datenleitung vom ersten LED Pixel Bündel, sowie Masse von der 
+Stromversorgung werden mit dem LED Strip Bricklet verbunden. Dabei muss darauf 
+geachtet werden, dass der Takt- und Dateneingang des ersten Pixels mit dem Takt-
+und Datenausgang des LED Strip Bricklets verbunden wird. Soll die 
+Versorgungsspannung gemessen werden, muss auch 5V von der Stromversorgung an das
+Bricklet angeschlossen werden. Sollen mehrere Bündel verwendet werden, so können
+diese in Reihe (hintereinander) an das erste Bündel angeschlossen werden
+(dabei müssen die
+:ref:`RAM Beschränkungen <led_strip_bricklet_ram_constraints>` beachtet werden).
+
+Typischerweise besitzt jedes Pixel Bündel Drähte zur Stromversorgung am Anfang
+und Ende des Bündels. Diese sollten über zusätzliche Kabel mit der 
+Stromversorgung verbunden werden. Benachbarte Drähte können auch zusammengefasst
+werden. Diese Maßnahme reduziert den elektrischen Widerstand und minimiert
+die Leitungsverluste der Stromversorgung.
+
+
+.. image:: /Images/Bricklets/bricklet_led_strip_pixel_wiring_800.jpg
+   :scale: 100 %
+   :alt: LED Strip Bricklet wiring for Pixel
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_pixel_wiring_1500.jpg
+
 
 
 .. _led_strip_bricklet_fixed_frame_rate:

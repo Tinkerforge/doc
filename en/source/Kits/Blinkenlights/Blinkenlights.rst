@@ -146,7 +146,8 @@ acoustic feedback or to display the score.
 
 Before starting you have to configure the host and port. If you use the standard
 kit and have connected it directly to your PC via USB "localhost" and "4223" is 
-fine. If you extended the kit by :ref:`Extensions <master_brick_extension>` or 
+fine. If you extended the kit by 
+:ref:`Extensions <product_overview_master_extensions>` or 
 want to control the kit from another PC you have to enter the IP or hostname
 of the extension or the PC where the kit is connected to. Below the 
 input boxes is a table which shows you the connected Bricks and 
