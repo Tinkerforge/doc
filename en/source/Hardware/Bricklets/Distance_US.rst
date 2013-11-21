@@ -56,16 +56,21 @@ Features
 --------
 
 * Measures distances from 2cm to 400cm with ultrasound
-* Output in 1mm steps (12bit resolution)
+* 12bit resolution
 
 Description
 -----------
 
 The Distance US :ref:`Bricklet <product_overview_bricklets>` is equipped with
 an `ultrasonic distance sensor <http://en.wikipedia.org/wiki/Ultrasonic_sensor>`__.
-It can measure distances from 2cm to 400cm. With configurable events it is
-possible to react on changing distances without polling. Typical applications
-can be found in robotics, usage as light barrier alternative and so on.
+It can measure distances from 2cm to 400cm.
+The measured distance is reported as unitless value, not in mm. This is because
+the relation between the distance value and the actual distance depends on the
+exact value of the 5V supply voltage. Deviations in the supply voltage result
+in deviations in the measured distance values.
+With configurable events it is possible to react on changing distances without
+polling. Typical applications can be found in robotics, usage as light barrier
+alternative and so on.
 
 Technical Specifications
 ------------------------
@@ -76,7 +81,7 @@ Property                          Value
 Sensor                            HC-SR04
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Distance                          2cm - 400cm in 1mm steps, 12bit resolution
+Distance                          2cm - 400cm, 12bit resolution
 Measuring Angle                   15°
 Update Rate                       40Hz
 --------------------------------  ------------------------------------------------------------
