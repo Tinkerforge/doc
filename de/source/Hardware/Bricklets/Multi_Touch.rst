@@ -146,6 +146,37 @@ Empfindlichkeiten auszuprobieren. Dazu muss nur der Electrode Sensitivity Wert
 geändert werden und mittels "Recalibrate" übernommen werden.
 
 
+
+
+.. _multi_touch_bricklet_giant_game_pad:
+
+Benutzung des Giant Game Pads
+-----------------------------
+
+TODO Image Kit Content
+
+Das Giant Game Pad Kit besteht aus verschiedenen Pads, hergestellt aus 3mm PMMA.
+Neben den Pads sind 10m Litze, zwei Streifen Aluminiumklebeband und eine 12pol
+Pfostenbuchse im Kit enthalten.
+
+Um aus diesen Teilen Touchpads herzustellen müssen die 10m Litze in 12 
+Abschnitte geteilt werden. Anschließend müssen einseitig jeweils 1cm abisoliert 
+werden. Jedes Pad wird von der Unterseite mit Aluminiumklebeband beklebt.
+Die Abisolierten Drahtenden werden dabei mit dem Klebeband eingeklebt.
+
+TODO Image Bottom Side Game Pads
+
+Anschließend werden die Litzen in die Pfostenbuchse gesteckt und diese
+zusammengedrückt.
+
+TODO Image IDC connector with wires
+
+Nach diesem Schritt sind die Giant Game Pads fertiggestellt. Falls gewünscht
+können die mitgelieferten Gummifüße unter die Pads geklebt werden.
+
+TODO Image Pads connected to Multi Touch
+
+
 .. _multi_touch_bricklet_case:
 
 Gehäuse

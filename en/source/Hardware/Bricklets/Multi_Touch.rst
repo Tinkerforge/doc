@@ -144,6 +144,35 @@ you have found a satisfying sensitivity. To accept the entered value press
 "Recalibrate".
 
 
+.. _multi_touch_bricklet_giant_game_pad:
+
+Usage of the Giant Game Pad
+---------------------------
+
+TODO Image Kit Content
+
+The Giant Game Pad kit consists of different pads made of 3mm PMMA.
+Besides the pads there is 10m of stranded wire, two pieces of aluminum tape
+and a 12 pole IDC connector is included. 
+
+To create working pads you have to cut the 10m wire in 12 sections as you need 
+them. Dismantle 1cm of the isolation on one side of the wires.
+Stick the bottom side of each pad with the aluminum tape and attach a wire to 
+it.
+
+TODO Image Bottom Side Game Pads
+
+After that insert the wires in the IDC connector and use for example a vise
+to press the connector together.
+
+TODO Image IDC connector with wires
+
+After that your Giant Game Pads are finished. If you want you can stick
+the adhesive rubber feets to the pads.
+
+TODO Image Pads connected to Multi Touch
+
+
 .. _multi_touch_bricklet_case:
 
 Case
