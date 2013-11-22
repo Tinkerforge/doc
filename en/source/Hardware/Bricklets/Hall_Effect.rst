@@ -12,11 +12,7 @@
 Hall Effect Bricklet
 ====================
 
-.. note::
- This Bricklet is currently in the prototype stage and the software/hardware
- as well as the documentation is in an incomplete state.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -35,9 +31,9 @@ Hall Effect Bricklet
 	             "Hall Effect Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_hall_effect_master_100.jpg",
-	             "Bricklets/bricklet_hall_effect_master_600.jpg",
-	             "Hall Effect Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_hall_effect_tilted_back_100.jpg",
+	             "Bricklets/bricklet_hall_effect_tilted_back_600.jpg",
+	             "Hall Effect Bricklet")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_hall_effect_brickv_100.jpg",

@@ -12,11 +12,7 @@
 Line Bricklet
 ====================
 
-.. note::
- Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
- sowie die Dokumentation sind in einem unfertigen Zustand.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -35,9 +31,9 @@ Line Bricklet
 	             "Line Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_line_master_100.jpg",
-	             "Bricklets/bricklet_line_master_600.jpg",
-	             "Line Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_line_tilted_back_100.jpg",
+	             "Bricklets/bricklet_line_tilted_back_600.jpg",
+	             "Line Bricklet")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_line_brickv_100.jpg",

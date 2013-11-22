@@ -12,32 +12,33 @@
 Remote Switch Bricklet
 ======================
 
-.. note::
- This Bricklet is currently in the prototype stage and the software/hardware
- as well as the documentation is in an incomplete state.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_remote_switch_tilted_350.jpg",
-	               "Bricklets/bricklet_remote_switch_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_remote_tilted_350.jpg",
+	               "Bricklets/bricklet_remote_tilted_600.jpg",
 	               "Remote Switch Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_remote_switch_vertical_100.jpg",
-	             "Bricklets/bricklet_remote_switch_vertical_600.jpg",
+	    tfdocimg("Bricklets/bricklet_remote_vertical_100.jpg",
+	             "Bricklets/bricklet_remote_vertical_600.jpg",
 	             "Remote Switch Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_remote_switch_horizontal_100.jpg",
-	             "Bricklets/bricklet_remote_switch_horizontal_600.jpg",
+	    tfdocimg("Bricklets/bricklet_remote_horizontal_100.jpg",
+	             "Bricklets/bricklet_remote_horizontal_600.jpg",
 	             "Remote Switch Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_remote_switch_master_100.jpg",
-	             "Bricklets/bricklet_remote_switch_master_600.jpg",
-	             "Remote Switch Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_remote_tilted_wo_antenna_100.jpg",
+	             "Bricklets/bricklet_remote_tilted_wo_antenna_600.jpg",
+	             "Remote Switch Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_remote_w_antenna_100.jpg",
+	             "Bricklets/bricklet_remote_w_antenna_600.jpg",
+	             "Remote Switch Bricklet und Antenne")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_remote_switch_brickv_100.jpg",
@@ -45,8 +46,8 @@ Remote Switch Bricklet
 	             "Remote Switch Bricklet in Brick Viewer")
 	}}
 	{{
-	    tfdocimg("Dimensions/remote_switch_bricklet_dimensions_100.png",
-	             "Dimensions/remote_switch_bricklet_dimensions_600.png",
+	    tfdocimg("Dimensions/remote_bricklet_dimensions_100.png",
+	             "Dimensions/remote_bricklet_dimensions_600.png",
 	             "Outline and drilling plan")
 	}}
 	{{ tfdocend() }}

@@ -12,11 +12,7 @@
 Moisture Bricklet
 =================
 
-.. note::
- This Bricklet is currently in the prototype stage and the software/hardware
- as well as the documentation is in an incomplete state.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -35,9 +31,9 @@ Moisture Bricklet
 	             "Moisture Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_moisture_master_100.jpg",
-	             "Bricklets/bricklet_moisture_master_600.jpg",
-	             "Moisture Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_moisture_tilted_back_100.jpg",
+	             "Bricklets/bricklet_moisture_tilted_back_600.jpg",
+	             "Moisture Bricklet")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_moisture_brickv_100.jpg",

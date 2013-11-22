@@ -12,11 +12,7 @@
 Motion Detector Bricklet
 ========================
 
-.. note::
- Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
- sowie die Dokumentation sind in einem unfertigen Zustand.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -25,19 +21,9 @@ Motion Detector Bricklet
 	               "Motion Detector Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_motion_detector_vertical_100.jpg",
-	             "Bricklets/bricklet_motion_detector_vertical_600.jpg",
-	             "Motion Detector Bricklet")
-	}}
-	{{
 	    tfdocimg("Bricklets/bricklet_motion_detector_horizontal_100.jpg",
 	             "Bricklets/bricklet_motion_detector_horizontal_600.jpg",
 	             "Motion Detector Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_motion_detector_master_100.jpg",
-	             "Bricklets/bricklet_motion_detector_master_600.jpg",
-	             "Motion Detector Bricklet mit Master Brick")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_motion_detector_brickv_100.jpg",

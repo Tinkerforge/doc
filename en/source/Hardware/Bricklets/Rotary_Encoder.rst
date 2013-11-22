@@ -12,11 +12,7 @@
 Rotary Encoder Bricklet
 =======================
 
-.. note::
- This Bricklet is currently in the prototype stage and the software/hardware
- as well as the documentation is in an incomplete state.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -25,19 +21,24 @@ Rotary Encoder Bricklet
 	               "Rotary Encoder Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_rotary_encoder_vertical_100.jpg",
-	             "Bricklets/bricklet_rotary_encoder_vertical_600.jpg",
-	             "Rotary Encoder Bricklet")
-	}}
-	{{
 	    tfdocimg("Bricklets/bricklet_rotary_encoder_horizontal_100.jpg",
 	             "Bricklets/bricklet_rotary_encoder_horizontal_600.jpg",
 	             "Rotary Encoder Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_rotary_encoder_master_100.jpg",
-	             "Bricklets/bricklet_rotary_encoder_master_600.jpg",
-	             "Rotary Encoder Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_rotary_encoder_back_w_knob_100.jpg",
+	             "Bricklets/bricklet_rotary_encoder_back_w_knob_600.jpg",
+	             "Rotary Encoder Bricklet and knob")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_rotary_encoder_tilted_back_wo_knob_100.jpg",
+	             "Bricklets/bricklet_rotary_encoder_tilted_back_wo_knob_600.jpg",
+	             "Rotary Encoder Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_rotary_encoder_tilted_wo_knob_100.jpg",
+	             "Bricklets/bricklet_rotary_encoder_tilted_wo_knob_600.jpg",
+	             "Rotary Encoder Bricklet")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_rotary_encoder_brickv_100.jpg",

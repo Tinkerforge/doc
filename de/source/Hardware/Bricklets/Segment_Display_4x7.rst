@@ -12,11 +12,7 @@
 Segment Display 4x7 Bricklet
 ============================
 
-.. note::
- Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
- sowie die Dokumentation sind in einem unfertigen Zustand.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{

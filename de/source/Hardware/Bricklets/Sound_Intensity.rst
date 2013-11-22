@@ -12,11 +12,7 @@
 Sound Intensity Bricklet
 ========================
 
-.. note::
- Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
- sowie die Dokumentation sind in einem unfertigen Zustand.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -35,9 +31,9 @@ Sound Intensity Bricklet
 	             "Sound Intensity Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_sound_intensity_master_100.jpg",
-	             "Bricklets/bricklet_sound_intensity_master_600.jpg",
-	             "Sound Intensity Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_sound_intensity_tilted_back_100.jpg",
+	             "Bricklets/bricklet_sound_intensity_tilted_back_600.jpg",
+	             "Sound Intensity Bricklet")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_sound_intensity_brickv_100.jpg",

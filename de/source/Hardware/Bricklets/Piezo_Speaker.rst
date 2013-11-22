@@ -12,11 +12,7 @@
 Piezo Speaker Bricklet
 ========================
 
-.. note::
- Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
- sowie die Dokumentation sind in einem unfertigen Zustand.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -33,11 +29,6 @@ Piezo Speaker Bricklet
 	    tfdocimg("Bricklets/bricklet_piezo_speaker_horizontal_100.jpg",
 	             "Bricklets/bricklet_piezo_speaker_horizontal_600.jpg",
 	             "Piezo Speaker Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_piezo_speaker_master_100.jpg",
-	             "Bricklets/bricklet_piezo_speaker_master_600.jpg",
-	             "Piezo Speaker Bricklet mit Master Brick")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_piezo_speaker_brickv_100.jpg",
