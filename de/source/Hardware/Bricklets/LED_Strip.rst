@@ -264,8 +264,8 @@ Taktleitung, :led-strip-red:`rot` die Datenleitung und der
 
 Als erstes werden die Takt- und Datenleitung des ersten LED Streifens und Masse
 der Spannungsversorgung mit dem LED Strip Bricklet verbunden. Dabei muss darauf
-geachtet werden, dass der Takt- und Dateneingang des ersten Streifen mit dem
-Takt- und Datenausgang des LED Strip Bricklets verbunden wird.
+geachtet werden, dass der Takt- und Daten\ **eingang** des ersten Streifen mit dem
+Takt- und Daten\ **ausgang** des LED Strip Bricklets verbunden wird.
 
 Falls die Spannung der Versorgung gemessen werden soll, müssen die 5V der
 Stromversorgung mit dem LED Strip Bricklet verbunden werden. Es können weitere
@@ -298,8 +298,8 @@ und die Datenleitung ist :led-pixel-white:`weiß`.
 
 Die Takt- und Datenleitung vom ersten LED Pixel Bündel, sowie Masse von der 
 Stromversorgung werden mit dem LED Strip Bricklet verbunden. Dabei muss darauf 
-geachtet werden, dass der Takt- und Dateneingang des ersten Pixels mit dem
-Takt- und Datenausgang des LED Strip Bricklets verbunden wird. Soll die 
+geachtet werden, dass der Takt- und Daten\ **eingang** des ersten Pixels mit dem
+Takt- und Daten\ **ausgang** des LED Strip Bricklets verbunden wird. Soll die
 Versorgungsspannung gemessen werden, muss auch 5V von der Stromversorgung an das
 Bricklet angeschlossen werden. Sollen mehrere Bündel verwendet werden, so können
 diese in Reihe (hintereinander) an das erste Bündel angeschlossen werden

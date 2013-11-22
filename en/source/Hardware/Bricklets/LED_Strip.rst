@@ -266,7 +266,7 @@ the :led-strip-blue:`blue` wire is ground.
 
 Connect clock and data of the first strip to the LED Strip Bricklet and 
 connect ground of your power supply to it. Pay attention to connect the clock 
-and data input of the first strip to the clock and data output of the
+and data **input** of the first strip to the clock and data **output** of the
 LED Strip Bricklet.
 
 If you want to measure your supply voltage connect 5V to the Bricklet, too.
@@ -298,8 +298,8 @@ In the following example the :led-pixel-red:`red` wire is 5V,
 :led-pixel-white:`data` is the white wire.
 
 Connect clock and data of the first bunch of pixels to the LED Strip Bricklet 
-and connect ground to it. Pay attention to connect the clock and data input
-of the first pixel to the clock and data output of the LED Strip Bricklet.
+and connect ground to it. Pay attention to connect the clock and data **input**
+of the first pixel to the clock and data **output** of the LED Strip Bricklet.
 If you want to measure the voltage of your power supply connect 5V to the 
 Bricklet, too. You can connect more bunches of LED pixel to the first bunch in 
 series (have the :ref:`RAM constraints <led_strip_bricklet_ram_constraints>` in 
