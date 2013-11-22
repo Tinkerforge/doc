@@ -136,14 +136,16 @@ TODO Image
 You can create simple touch pads by using stripped wires. To create real pads
 you can use `self-adhesive aluminum tape
 <https://www.tinkerforge.com/en/shop/accessories/sensors/aluminum-tape-1m.html>`__
-to create the pad and connect the wire
-to it. Since it is a capacitive technology you can cover your self created touch 
-panel with thin non-conductive materials.
+to create the pad and connect the wire to it. Since it is a capacitive 
+technology you can cover your self created touch panel with thin non-conductive 
+materials. If your self created touch pad is too sensitive you can
+remove some of the aluminium tape.
 
 Dependent on your touch pads it might be necessary to adjust the sensitivity.
 Use the Brick Viewer Software to play around with it by changing the value until
 you have found a satisfying sensitivity. To accept the entered value press
 "Recalibrate".
+
 
 .. _multi_touch_bricklet_case:
 

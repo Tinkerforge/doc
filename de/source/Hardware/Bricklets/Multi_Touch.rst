@@ -140,7 +140,8 @@ Pads können mittels `Aluminium Klebeband
 erzeugt werden, indem der Draht mit der
 erzeugten Fläche verbunden wird. Da es sich um eine kapazitive Technologie 
 handelt können die erzeugten Flächen mit dünnen nicht-leitenden Materialien
-bedeckt werden.
+bedeckt werden. Ist die Empfindlichkeit dieser Pads zu hoch kann einfach ein 
+Teil des Klebebands entfernt werden.
 
 Abhängig von dem Aufbau der Touchpads kann es notwendig sein die Empfindlichkeit
 einzustellen. Die Brick Viewer Software kann genutzt werden um verschiedene 
