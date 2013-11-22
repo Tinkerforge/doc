@@ -26,8 +26,8 @@ Rotary Encoder Bricklet
 	             "Rotary Encoder Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_rotary_encoder_back_w_knob_100.jpg",
-	             "Bricklets/bricklet_rotary_encoder_back_w_knob_600.jpg",
+	    tfdocimg("Bricklets/bricklet_rotary_encoder_w_knob_100.jpg",
+	             "Bricklets/bricklet_rotary_encoder_w_knob_600.jpg",
 	             "Rotary Encoder Bricklet and knob")
 	}}
 	{{
