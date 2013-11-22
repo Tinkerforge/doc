@@ -112,11 +112,11 @@ Erster Test
 Anschließend muss der Sensor mit dem Bricklet verbunden werden 
 (siehe nachfolgendes Foto).
 
-.. FIXME image:: /Images/Bricklets/bricklet_distance_us__600.jpg
+.. image:: /Images/Bricklets/bricklet_distance_us_tilted_back_600.jpg
    :scale: 100 %
    :alt: Distance US Bricklet verbunden mit Master Brick
    :align: center
-   :target: ../../_images/Bricklets/bricklet_distance_us__1200.jpg
+   :target: ../../_images/Bricklets/bricklet_distance_us_tilted_back_1200.jpg
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
