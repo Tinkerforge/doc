@@ -12,11 +12,7 @@
 Distance US Bricklet
 ====================
 
-.. note::
- Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
- sowie die Dokumentation sind in einem unfertigen Zustand.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -35,9 +31,14 @@ Distance US Bricklet
 	             "Distance US Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_distance_us_master_100.jpg",
-	             "Bricklets/bricklet_distance_us_master_600.jpg",
-	             "Distance US Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_distance_us_tilted_back_100.jpg",
+	             "Bricklets/bricklet_distance_us_tilted_back_600.jpg",
+	             "Distance US Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_distance_us_w_sensor_100.jpg",
+	             "Bricklets/bricklet_distance_us_w_sensor_600.jpg",
+	             "Distance US Bricklet mit Sensor")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_distance_us_brickv_100.jpg",
