@@ -28,7 +28,7 @@ Features
 Description
 -----------
 
-The Starter Kit: Blinkenlights is a huge, freely programmable display.
+The *Starter Kit: Blinkenlights* is a huge, freely programmable display.
 It consist of 200 independently controllable full-color RGB LED pixels that can
 be changed up to 100 times per second. Possible applications are vast. The
 kit can be used to create party games, exhibition presentations, fancy mood
@@ -79,19 +79,18 @@ Dimensions (W x D x H)                    40 x 80 x TODO cm
 Weight                                    TODO
 ========================================  ============================================================
 
+
 .. _starter_kit_blinkenlights_resources:
 
 Resources
 ---------
 
-* Example source code :ref:`Tetris <starter_kit_blinkenlights_tetris>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__)
-* Example source code :ref:`Pong <starter_kit_blinkenlights_Pong>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__)
-* Example source code :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire>`__)
-* Example source code :ref:`Scrolling Text <starter_kit_blinkenlights_scrolling_text>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/text>`__)
-* Example source code :ref:`Display Images <starter_kit_blinkenlights_images>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/images>`__)
-* Demo application :ref:`Starter Kit: Blinkenlights Demo <starter_kit_blinkenlights_demo_examples>` (Download: Windows, Linux, Mac OS X)
-
-
+* Example Source Code for :ref:`Tetris <starter_kit_blinkenlights_tetris>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__)
+* Example Source Code for :ref:`Pong <starter_kit_blinkenlights_Pong>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__)
+* Example source Code for :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire>`__)
+* Example Source Code for :ref:`Scrolling Text <starter_kit_blinkenlights_scrolling_text>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/text>`__)
+* Example Source Code for :ref:`Display Images <starter_kit_blinkenlights_images>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/images>`__)
+* :ref:`Demo Application <starter_kit_blinkenlights_demo_examples>` (Download: Windows, Linux, Mac OS X, `Source Code <https://github.com/Tinkerforge/blinkenlights/tree/master/demo>`__)
 
 
 Firmware updating and first tests
@@ -132,17 +131,17 @@ TODO
 
 .. _starter_kit_blinkenlights_demo_examples:
 
-Demo Application/ Example Projects
-----------------------------------
+Demo Application and Example Projects
+-------------------------------------
 
 TODO Screenshot
 
-The demo application should demonstrate possible applications for this kit. It 
+The demo application shows possible applications for this kit. It
 consists of five individual applications each also provided as single project 
-(see below). Each projects is represented by its own tab and will be 
+(see below). Each project is represented by its own tab and will be
 started by selecting the corresponding tab. The application supports the
 additional usage of two Dual Button Bricklets or one Multi Touch Bricklet
-to control the games. If a Piezo Speaker Bricklet and or Segment Display 4x7 
+to control the games. If a Piezo Speaker Bricklet and/or Segment Display 4x7
 Bricklet is connected, these Bricklets will also be used by the games to give
 acoustic feedback or to display the score.
 
@@ -152,8 +151,7 @@ fine. If you extended the kit by
 :ref:`Extensions <product_overview_master_extensions>` or 
 want to control the kit from another PC you have to enter the IP or hostname
 of the extension or the PC where the kit is connected to. Below the 
-input boxes is a table which shows you the connected Bricks and 
-Bricklets. 
+input boxes is a table which shows you the connected Bricks and Bricklets.
 
 
 .. _starter_kit_blinkenlights_tetris:
@@ -169,20 +167,19 @@ TODO:
 
 The demo application implements a typical 
 `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ game with all specialities.
-This Tetris clone can be controlled by three possible ways. At first there 
+This Tetris clone can be controlled by three possible ways. Firstly, there
 are buttons in the tab which can be used to control the game. Next you can use 
-your Keyboard. The keys are defined in the tab (e.g. "a" is left). Finally a 
+your keyboard. The keys are defined in the tab (e.g. "a" is left). Finally a
 connected Multi Touch Bricklet with attached electrodes can be used (e.g. 
 electrode 0 is left).
 
-The standalone Python project can be downloaded at 
-`github <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__.
-It has also incorporates the 
-:ref:`Pong project <starter_kit_blinkenlights_pong>` and consists of mainly
-two files: "tetris.py" implements the game and "config.py" defines the 
+The standalone Python project can be downloaded from
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__.
+This also incorporates the
+:ref:`Pong <starter_kit_blinkenlights_pong>` project and consists of mainly
+two files: ``tetris.py`` implements the game and ``config.py`` defines the
 configuration (host, port, keymaps and UIDs):
-	
-	
+
 .. code-block:: python
 
     # General Settings                                                              
@@ -193,18 +190,20 @@ configuration (host, port, keymaps and UIDs):
     UID_MULTI_TOUCH_BRICKLET = 'pax'   
     ...
 
-Modify the config.py according to your needs and run the application by calling:
+Modify the ``config.py`` according to your needs and run the application by
+calling:
 
 .. code-block:: python
 
    python tetris.py
-	
 
 
 .. _starter_kit_blinkenlights_pong:
 
 Pong
 ^^^^
+
+TODO:
 
 * Link to github, description how to configure/start
 * Picture of Pong
@@ -217,12 +216,11 @@ by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be
 controlled by two Dual Button Bricklets.
 
 The standalone Python project can be downloaded at 
-`github <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__.
-It has also incorporates the 
-:ref:`Tetris project <starter_kit_blinkenlights_tetris>` and consists of mainly
-two files: "pong.py" implements the game and "config.py" defines the 
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__.
+This also incorporates the
+:ref:`Tetris <starter_kit_blinkenlights_tetris>` project and consists of mainly
+two files: ``pong.py`` implements the game and ``config.py`` defines the
 configuration (host, port, keymaps and UIDs):
-
 
 .. code-block:: python
 
@@ -234,13 +232,12 @@ configuration (host, port, keymaps and UIDs):
     UID_MULTI_TOUCH_BRICKLET = 'pax'   
     ...
 
-Modify the config.py according to your needs and run the application by calling:
+Modify the ``config.py`` according to your needs and run the application by
+calling:
 
 .. code-block:: python
 
    python pong.py
-
-
 
 
 .. _starter_kit_blinkenlights_fire:
@@ -258,27 +255,26 @@ if you place the front panel in a distance of TODO to the back panel.
 The simulation is based on a particle system and can be configured by four 
 sliders:
 
-* **Speed** 
+* **Speed**:
   Defines the frame duration in milliseconds. After the duration time is 
   exceeded a new frame will be computed. So if you decrease the frame duration
   you will see a faster burning fire.
 
-* **Hue**
+* **Hue**:
   Defines the color of your fire.
 
-* **Start**
+* **Start**:
   Defines the starting point where the fire particles will start to rise.
 
-* **End**
+* **End**:
   Defines the end point where the fire particles will extinguish.
 
 Play with the sliders to configure your personal fire! With the "Default" button
 you will set back all sliders to their defaults.
 
-
 The standalone Python project can be downloaded at 
-`github <https://github.com/Tinkerforge/blinkenlights/tree/master/fire>`__.
-It mainly consists of one file: "fire.py". In the main class "Fire" at first
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/fire>`__.
+It mainly consists of one file: ``fire.py``. In the main class ``Fire`` at first
 the necessary configurations are made:
 
 .. code-block:: python
@@ -289,7 +285,7 @@ the necessary configurations are made:
        UID = 'abc'     
        ...
 
-Whereas "UID" specifies the ID of the used LED Strip Bricklet. Run this demo by:
+Whereas ``UID`` specifies the ID of the used LED Strip Bricklet. Run this demo by:
 
 .. code-block:: python
 
@@ -311,9 +307,9 @@ on the display. You can set changing colors by selecting "Rainbow" or select
 "Color" and pick the color you like by pressing the button.
 
 The standalone Python project can be downloaded at 
-`github <https://github.com/Tinkerforge/blinkenlights/tree/master/text>`__.
-It mainly consists of one file: "text.py". In the main class "ScrollingText" at 
-first the necessary configurations are made:
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/text>`__.
+It mainly consists of one file: ``text.py``. In the main class "ScrollingText"
+at first the necessary configurations are made:
 
 .. code-block:: python
 
@@ -323,7 +319,7 @@ first the necessary configurations are made:
         UID = 'abc'      
         ...
 
-Whereas "UID" specifies the ID of the used LED Strip Bricklet. 
+Whereas ``UID`` specifies the ID of the used LED Strip Bricklet. 
 Below in the code are more definitions made, e.g.:
 
 .. code-block:: python
@@ -350,17 +346,15 @@ TODO:
 The "Image" demo can be used to display user specific images and whole 
 animations. 
 
-
 Choose the images you want to display by pressing "Choose images...". The 
 application will display each image for the given time ("Speed") and then switch
 to the next image. This way you can create animations. Each image is resized to
 20x10 pixels (size of the display) and stretched if the aspect ration does not 
 fit. Use an image editing tool if you are not satisfied with the results.
 
-
 The standalone Python project can be downloaded at 
 `github <https://github.com/Tinkerforge/blinkenlights/tree/master/images>`__.
-It mainly consists of one file: "images.py". In the main class "Images" at 
+It mainly consists of one file: ``images.py``. In the main class "Images" at 
 first the necessary configurations are made:
 
 .. code-block:: python
@@ -373,7 +367,7 @@ first the necessary configurations are made:
         SPEED = 1000 # in ms per step
         ...
 
-Whereas "UID" specifies the ID of the used LED Strip Bricklet. 
+Whereas ``UID`` specifies the ID of the used LED Strip Bricklet. 
 Execute the script and pass the image file locations to the script:
 
 .. code-block:: python

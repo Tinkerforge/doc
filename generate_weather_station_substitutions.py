@@ -490,7 +490,8 @@ def make_substitutions():
 
     example_download_lines = []
     for binding in bindings:
-        example_download_lines.append(write_to_lcd_example_download_line[lang].format(binding[1], binding[2]))
+        if binding[1] in examples_in:
+            example_download_lines.append(write_to_lcd_example_download_line[lang].format(binding[1], binding[2]))
 
     substitutions += write_to_lcd_example_downloads[lang].format(', '.join(example_download_lines))
 
