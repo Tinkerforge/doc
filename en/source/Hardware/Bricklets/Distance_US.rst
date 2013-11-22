@@ -106,13 +106,14 @@ Test your Distance US Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
+|test_connect|.
+Attach the Distance US sensor to the Bricklet (see image below).
 
-.. FIXME image:: /Images/Bricklets/bricklet_distance_us_master_600.jpg
+.. FIXME image:: /Images/Bricklets/bricklet_distance__600.jpg
    :scale: 100 %
-   :alt: Distance US Bricklet connected to Master Brick
+   :alt: Distance US Bricklet with Sensor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_distance_us_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_distance_us__1200.jpg
 
 |test_tab|
 If everything went as expected you can now see the measured distance.
@@ -122,8 +123,6 @@ If everything went as expected you can now see the measured distance.
    :alt: Distance US Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_distance_us_brickv.jpg
-
-TODO: New screenshot with correct measurements
 
 |test_pi_ref|
 

@@ -102,13 +102,8 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. FIXME image:: /Images/Bricklets/bricklet_motion_detector_master_600.jpg
-   :scale: 100 %
-   :alt: Motion Detector Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_motion_detector_master_1200.jpg
+|test_connect|. Anschließend muss der Bewegungssensor auf das Bricklet gesteckt
+werden.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird nun eine erkannte Bewegung

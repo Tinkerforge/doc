@@ -102,13 +102,7 @@ Test your Motion Detector Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_motion_detector_master_600.jpg
-   :scale: 100 %
-   :alt: Motion Detector Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_motion_detector_master_1200.jpg
+|test_connect|. Attach the motion detector bricklet on top of the Bricklet.
 
 |test_tab|
 If everything went as expected you can now see when a motion is detected.

@@ -124,13 +124,8 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. FIXME image:: /Images/Bricklets/bricklet_led_strip_master_600.jpg
-   :scale: 100 %
-   :alt: LED Strip Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_led_strip_master_1200.jpg
+|test_connect|. Anschließend kann ein LED Streifen oder LED Pixel an das
+Bricklet, wie weiter unten beschrieben, angeschlossen werden.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert, kann nun ein LED Steifen gesteuert werden.

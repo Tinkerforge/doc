@@ -106,17 +106,11 @@ Test your Hall Effect Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_hall_effect_master_600.jpg
-   :scale: 100 %
-   :alt: Hall Effect Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_hall_effect_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now see the detection of a
-magnetic field.
+magnetic field. A magnet can be used to test the Bricklet.
 
 .. image:: /Images/Bricklets/bricklet_hall_effect_brickv.jpg
    :scale: 100 %

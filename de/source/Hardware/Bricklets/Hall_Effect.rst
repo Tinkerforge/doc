@@ -107,16 +107,11 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. FIXME image:: /Images/Bricklets/bricklet_hall_effect_master_600.jpg
-   :scale: 100 %
-   :alt: Hall Effect Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_hall_effect_master_1200.jpg
+|test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird ein Magnetfeld erkannt.
+Wenn alles wie erwartet funktioniert wird ein Magnetfeld erkannt. Zum Testen
+kann zum Beispiel ein Magnet verwendet werden.
 
 .. image:: /Images/Bricklets/bricklet_hall_effect_brickv.jpg
    :scale: 100 %

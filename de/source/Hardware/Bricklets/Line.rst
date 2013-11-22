@@ -107,17 +107,12 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. FIXME image:: /Images/Bricklets/bricklet_line_master_600.jpg
-   :scale: 100 %
-   :alt: Line Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_line_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird die aktuell gemessene Reflektivität
-angezeigt.
+angezeigt. Um das Bricklet zu testen kann dieses zum Beispiel über ein weißes
+Blatt Papier mit schwarzen Streifen geführt werden.
 
 .. image:: /Images/Bricklets/bricklet_line_brickv.jpg
    :scale: 100 %
@@ -135,7 +130,11 @@ fixen Abstand zu Linie angebracht sein. Der richtige Abstand hängt von der
 Reflektivität der Linie und des Untergrundes ab und kann durch Ausprobieren
 ermittelt werden.
 
-TODO: Montageplatte für Line Bricklet
+Im `Shop <https://www.tinkerforge.com/de/shop/mounting-plate-line-bricklet.html>`__
+ist eine Montageplatte für das Line Bricklet verfügbar, die die Montage 
+vereinfacht.
+
+TODO Foto: Montageplatte für Line Bricklet
 
 
 .. _line_bricklet_programming_interfaces:

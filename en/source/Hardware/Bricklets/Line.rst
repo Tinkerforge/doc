@@ -105,17 +105,12 @@ Test your Line Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_line_master_600.jpg
-   :scale: 100 %
-   :alt: Line Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_line_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now see the currently measured
-reflectivity.
+reflectivity. To test it you can for example move the Bricklet over a
+white paper with black stripes on it.
 
 .. image:: /Images/Bricklets/bricklet_line_brickv.jpg
    :scale: 100 %
@@ -133,7 +128,11 @@ a fixed distance to the line. The mounting distance depends on the
 reflectiveness of the line and the underground. It can be found out by
 trial and error.
 
-TODO: Mountingplate for Line Bricklet
+There is a mounting Plate available for the Line Bricklet in the
+`shop <https://www.tinkerforge.com/en/shop/mounting-plate-line-bricklet.html>`__
+which simplfies the mounting.
+
+TODO Image: Mountingplate for Line Bricklet
 
 
 .. _line_bricklet_programming_interfaces:

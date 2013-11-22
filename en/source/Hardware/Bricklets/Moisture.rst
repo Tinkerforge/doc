@@ -116,12 +116,6 @@ Test your Moisture Bricklet
 If everything went as expected you can now see changes of the moisture
 value.
 
-.. image:: /Images/Bricklets/bricklet_moisture_brickv.jpg
-   :scale: 100 %
-   :alt: Moisture Bricklet in Brick Viewer
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_moisture_brickv.jpg
-
 |test_pi_ref|
 
 .. _moisture_bricklet_case:

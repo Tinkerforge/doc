@@ -102,13 +102,7 @@ Test your Dual Button Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_dual_button_master_600.jpg
-   :scale: 100 %
-   :alt: Dual Button Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_dual_button_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now see button presses and

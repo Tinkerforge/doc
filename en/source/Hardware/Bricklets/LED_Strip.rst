@@ -129,13 +129,8 @@ Test your LED Strip Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_led_strip_master_600.jpg
-   :scale: 100 %
-   :alt: LED Strip Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_led_strip_master_1200.jpg
+|test_connect|. After that connect a LED strip or bunch of pixels
+to the Bricklet as described below.
 
 |test_tab|
 If everything went as expected you can now control a LED strip.
