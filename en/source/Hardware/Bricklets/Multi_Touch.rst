@@ -139,7 +139,7 @@ you can use `self-adhesive aluminum tape
 to create the pad and connect the wire to it. Since it is a capacitive 
 technology you can cover your self created touch panel with thin non-conductive 
 materials. If your self created touch pad is too sensitive you can
-remove some of the aluminium tape.
+remove some of the aluminum tape.
 
 Dependent on your touch pads it might be necessary to adjust the sensitivity.
 Use the Brick Viewer Software to play around with it by changing the value until
