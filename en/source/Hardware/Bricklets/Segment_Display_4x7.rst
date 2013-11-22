@@ -85,13 +85,7 @@ Test your Segment Display 4x7 Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_segment_display_4x7_master_600.jpg
-   :scale: 100 %
-   :alt: Segment Display 4x7 Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_segment_display_4x7_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now activate/deactivate the

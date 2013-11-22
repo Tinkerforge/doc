@@ -94,18 +94,12 @@ Test your Piezo Speaker Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_piezo_speaker_master_600.jpg
-   :scale: 100 %
-   :alt: Piezo Speaker Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_piezo_speaker_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now generate beeps.
 
-.. FIXME image:: /Images/Bricklets/bricklet_piezo_speaker_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_piezo_speaker_brickv.jpg
    :scale: 100 %
    :alt: Piezo Speaker Bricklet in Brick Viewer
    :align: center

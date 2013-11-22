@@ -89,13 +89,7 @@ Test your Tilt Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_tilt_master_600.jpg
-   :scale: 100 %
-   :alt: Tilt Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_tilt_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now see the current

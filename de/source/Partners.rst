@@ -3,55 +3,53 @@
 Partner
 =======
 
+
 .. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/cumolocity-logo.png
+       :alt: Cumulocity Logo
+       :align: center
+       :target: http://www.cumulocity.com/
+
+  .. container:: partnertext
+
+    .. rubric:: Cumulocity
+
+    `Cumulocity <http://www.cumulocity.com/>`__ vereinfacht das Aufbauen von
+    Maschine-zu-Maschine Lösungen für alle Businesses und macht diese mittels
+    vorgefertigten Cloud Services schnell rentabel.
+
+	Folgende Anwendungen können
+
+    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+
+
+..
+  .. container::
 
   .. container:: partnerlogo
 
     .. image:: /Images/Misc/xively-logo.png
-       :alt: Xively Logo
+       :alt: Elektor JSON Protocol Logo
        :align: center
-       :target: https://xively.com/
+       :target: http://www.elektor.de/
 
   .. container:: partnertext
 
-    .. rubric:: Xively
+    .. rubric:: Elektor JSON Protokoll
 
-    `Xively <https://xively.com/>`__ ist eine Plattform, die sich der einfachen
-    Verbindung von Anwendungen mit Geräten und Daten im Internet der Dinge
-    widmet. Durch die Bereitstellung einer Plattform und Open Source
-    Bbliotheken, hilft Xively Entwicklern und Herstellern die Entwicklung,
-    Verteilung und Steuerung ihrer Produkte für das Internet der Dinge zu
-    vereinfachen. So können diese die Art und Weise verändern, wie Menschen
-    ihre Welt erleben.
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+    amet.
 
-    Das :ref:`Starterkit: Wetterstation <starter_kit_weather_station_xively>`
-    und das :ref:`Starterkit: Serverraum-Überwachung
-    <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
-    beinhalten Projekte die Xively für ihr Datenmanagement verwenden.
-
-
-.. container::
-
-  .. container:: partnerlogo
-
-    .. image:: /Images/Misc/openhab-logo.png
-       :alt: openHAB Logo
-       :align: center
-       :target: http://www.openhab.org/
-
-  .. container:: partnertext
-
-    .. rubric:: openHAB
-
-    `openHAB <http://www.openhab.org/>`__ ist eine Software-Lösung entwickelt
-    in Java und entworfen um absolut herstellerunabhängig und hardware- und
-    protokollagnostisch zu sein. Sie kann auf Geräten wie dem Raspberry Pi
-    ausgeführt werden und kann eine Vielzahl von verschiedenen
-    Hausautomatierungs-Technologien in ein System integrieren. openHAB ist
-    vollständig Open Source und wird von einer sehr aktiven und ständig
-    wachsenden Community weiterentwickelt. Dadurch ist es die beste Lösung, um
-    sicherzustellen, dass ihr Smart Home flexibel bleibt und zukünftige
-    Technologien einfach integriert werden können.
 
 
 ..
@@ -75,25 +73,6 @@ Partner
     clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 
-..
-  .. container::
-
-  .. container:: partnerlogo
-
-    .. image:: /Images/Misc/xively-logo.png
-       :alt: Elektor JSON Protocol Logo
-       :align: center
-       :target: http://www.elektor.de/
-
-  .. container:: partnertext
-
-    .. rubric:: Elektor JSON Protokoll
-
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-    amet.
 
 
 .. container::
@@ -122,6 +101,32 @@ Partner
     kann, um Tinkerforge Bausteine zu kontrollieren.
 
 
+
+
+.. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/openhab-logo.png
+       :alt: openHAB Logo
+       :align: center
+       :target: http://www.openhab.org/
+
+  .. container:: partnertext
+
+    .. rubric:: openHAB
+
+    `openHAB <http://www.openhab.org/>`__ ist eine Software-Lösung entwickelt
+    in Java und entworfen um absolut herstellerunabhängig und hardware- und
+    protokollagnostisch zu sein. Sie kann auf Geräten wie dem Raspberry Pi
+    ausgeführt werden und kann eine Vielzahl von verschiedenen
+    Hausautomatierungs-Technologien in ein System integrieren. openHAB ist
+    vollständig Open Source und wird von einer sehr aktiven und ständig
+    wachsenden Community weiterentwickelt. Dadurch ist es die beste Lösung, um
+    sicherzustellen, dass ihr Smart Home flexibel bleibt und zukünftige
+    Technologien einfach integriert werden können.
+
+
 .. container::
 
   .. container:: partnerlogo
@@ -148,25 +153,35 @@ Partner
     ausgeführt werden, oder exportiert als eigenständige Anwendungen.
 
 
-..
-  .. container::
+
+
+.. container::
 
   .. container:: partnerlogo
 
-    .. image:: /Images/Misc/cumolocity-logo.png
-       :alt: Cumulocity Logo
+    .. image:: /Images/Misc/xively-logo.png
+       :alt: Xively Logo
        :align: center
-       :target: http://www.cumulocity.com/
+       :target: https://xively.com/
 
   .. container:: partnertext
 
-    .. rubric:: Cumulocity
+    .. rubric:: Xively
 
-    `Cumulocity <http://www.cumulocity.com/>`__ is ...
-    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    `Xively <https://xively.com/>`__ ist eine Plattform, die sich der einfachen
+    Verbindung von Anwendungen mit Geräten und Daten im Internet der Dinge
+    widmet. Durch die Bereitstellung einer Plattform und Open Source
+    Bbliotheken, hilft Xively Entwicklern und Herstellern die Entwicklung,
+    Verteilung und Steuerung ihrer Produkte für das Internet der Dinge zu
+    vereinfachen. So können diese die Art und Weise verändern, wie Menschen
+    ihre Welt erleben.
+
+    Das :ref:`Starterkit: Wetterstation <starter_kit_weather_station_xively>`
+    und das :ref:`Starterkit: Serverraum-Überwachung
+    <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
+    beinhalten Projekte die Xively für ihr Datenmanagement verwenden.
+
+
 
 
 .. container::

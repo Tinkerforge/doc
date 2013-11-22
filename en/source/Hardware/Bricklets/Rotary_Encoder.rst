@@ -106,13 +106,7 @@ Test your Rotary Encoder Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_rotary_encoder_master_600.jpg
-   :scale: 100 %
-   :alt: Rotary Encoder Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_rotary_encoder_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now turn the encoder and see

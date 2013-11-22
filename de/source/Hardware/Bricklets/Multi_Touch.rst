@@ -107,6 +107,7 @@ Erster Test
 
 |test_connect| (siehe folgendes Bild).
 
+TODO Image Connection
 .. FIXME image:: /Images/Bricklets/bricklet_multi_touch_master_600.jpg
    :scale: 100 %
    :alt: Multi Touch Bricklet verbunden mit Master Brick

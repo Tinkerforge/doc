@@ -90,13 +90,7 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. FIXME image:: /Images/Bricklets/bricklet_tilt_master_600.jpg
-   :scale: 100 %
-   :alt: Tilt Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_tilt_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird nun der aktuelle Status

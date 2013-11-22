@@ -86,13 +86,7 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. FIXME image:: /Images/Bricklets/bricklet_segment_display_4x7_master_600.jpg
-   :scale: 100 %
-   :alt: Segment Display 4x7 Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_segment_display_4x7_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird können die einzelnen Segmente

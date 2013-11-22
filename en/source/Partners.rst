@@ -7,30 +7,103 @@ Partners
 
   .. container:: partnerlogo
 
-    .. image:: /Images/Misc/xively-logo.png
-       :alt: Xively logo
+    .. image:: /Images/Misc/cumolocity-logo.png
+       :alt: Cumulocity logo
        :align: center
-       :target: https://xively.com/
+       :target: http://www.cumulocity.com/
 
   .. container:: partnertext
 
-    .. rubric:: Xively
+    .. rubric:: Cumulocity
 
-    `Xively <https://xively.com/>`__ is a platform devoted to simplifying the
-    interconnection of devices and data with applications on the Internet of
-    Things. By providing a platform and open source libraries, Xively helps
-    developers and builders easily create, prototype, build, pilot and deploy
-    their Internet connected product.  The result is the shortest path to
-    providing compelling connected products that can transform the way people
-    experience their world.
-	
-    ..
-      http://www.linkedin.com/company/xively
+    `Cumulocity <http://www.cumulocity.com/>`__ makes building machine-to-machine 
+    solutions simple and profitable for all businesses through ready-made cloud 
+    applications.
 
-    The :ref:`Starter Kit: Weather Station <starter_kit_weather_station_xively>`
-    and the :ref:`Starter Kit: Server Room Monitoring
-    <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
-    include projects that use Xively for their data management.
+    Try the applications for free at http://www.cumulocity.com
+
+    * Cumulocity DeviceCloud: M2M Device Management as a Service.
+    * Cumulocity AssetTrack: Extensible, open and affordable asset tracking.
+    * Cumulocity VendMe: Maximize your return from vending operations and connect with your customers.
+    * Cumulocity DriveSafe: Drive safe, save costs.
+
+    You can connect Tinkeforge to Cumulocity Device Cloud using Cumulocity's 
+    agent, see http://www.cumulocity.com/guides for details. 
+
+
+
+
+..
+  .. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/elektor-logo.png
+       :alt: Elektor JSON Protocol logo
+       :align: center
+       :target: http://www.elektor.de/
+
+  .. container:: partnertext
+
+    .. rubric:: Elektor JSON Protokoll
+
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+    amet.
+
+
+
+
+..
+  .. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/mathematica-logo.png
+       :alt: Wolfram / Mathematica logo
+       :align: center
+       :target: http://www.wolfram.com/mathematica/
+
+  .. container:: partnertext
+
+    .. rubric:: Wolfram / Mathematica
+
+    `Mathematica <http://www.wolfram.com/mathematica/>`__ is ...
+    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+
+
+
+.. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/netio-logo.png
+       :alt: NetIO Controller App logo
+       :align: center
+       :target: http://netio.davideickhoff.de/
+
+  .. container:: partnertext
+
+    .. rubric:: NetIO Controller App
+
+    `NetIO <http://netio.davideickhoff.de/>`__ is a multi platform smart phone
+    application, a generic remote controller for almost everything. It simply
+    sends and reads strings over a network connection. The communication is not
+    fixed to a specific protocol is, this allows to interact with many
+    different devices. It can easily communicate with microcontrollers or PCs
+    connected to a LAN! An online editor allows to configure the layout and
+    functions of the control elements to realize different tasks.
+
+    This :ref:`setup guide <netio_setup>` explains how to use NetIO to control
+    Tinkerforge hardware.
+
+
 
 
 .. container::
@@ -57,71 +130,6 @@ Partners
     lock-in.
 
 
-..
-  .. container::
-
-  .. container:: partnerlogo
-
-    .. image:: /Images/Misc/mathematica-logo.png
-       :alt: Wolfram / Mathematica logo
-       :align: center
-       :target: http://www.wolfram.com/mathematica/
-
-  .. container:: partnertext
-
-    .. rubric:: Wolfram / Mathematica
-
-    `Mathematica <http://www.wolfram.com/mathematica/>`__ is ...
-    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-
-..
-  .. container::
-
-  .. container:: partnerlogo
-
-    .. image:: /Images/Misc/elektor-logo.png
-       :alt: Elektor JSON Protocol logo
-       :align: center
-       :target: http://www.elektor.de/
-
-  .. container:: partnertext
-
-    .. rubric:: Elektor JSON Protokoll
-
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-    amet.
-
-
-.. container::
-
-  .. container:: partnerlogo
-
-    .. image:: /Images/Misc/netio-logo.png
-       :alt: NetIO Controller App logo
-       :align: center
-       :target: http://netio.davideickhoff.de/
-
-  .. container:: partnertext
-
-    .. rubric:: NetIO Controller App
-
-    `NetIO <http://netio.davideickhoff.de/>`__ is a multi platform smart phone
-    application, a generic remote controller for almost everything. It simply
-    sends and reads strings over a network connection. The communication is not
-    fixed to a specific protocol is, this allows to interact with many
-    different devices. It can easily communicate with microcontrollers or PCs
-    connected to a LAN! An online editor allows to configure the layout and
-    functions of the control elements to realize different tasks.
-
-    This :ref:`setup guide <netio_setup>` explains how to use NetIO to control
-    Tinkerforge hardware.
 
 
 .. container::
@@ -150,25 +158,38 @@ Partners
     applications.
 
 
-..
-  .. container::
+
+	
+.. container::
 
   .. container:: partnerlogo
 
-    .. image:: /Images/Misc/cumolocity-logo.png
-       :alt: Cumulocity logo
+    .. image:: /Images/Misc/xively-logo.png
+       :alt: Xively logo
        :align: center
-       :target: http://www.cumulocity.com/
+       :target: https://xively.com/
 
   .. container:: partnertext
 
-    .. rubric:: Cumulocity
+    .. rubric:: Xively
 
-    `Cumulocity <http://www.cumulocity.com/>`__ is ...
-    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    `Xively <https://xively.com/>`__ is a platform devoted to simplifying the
+    interconnection of devices and data with applications on the Internet of
+    Things. By providing a platform and open source libraries, Xively helps
+    developers and builders easily create, prototype, build, pilot and deploy
+    their Internet connected product.  The result is the shortest path to
+    providing compelling connected products that can transform the way people
+    experience their world.
+	
+    ..
+      http://www.linkedin.com/company/xively
+
+    The :ref:`Starter Kit: Weather Station <starter_kit_weather_station_xively>`
+    and the :ref:`Starter Kit: Server Room Monitoring
+    <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
+    include projects that use Xively for their data management.
+
+
 
 
 .. container::

@@ -94,13 +94,7 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. FIXME image:: /Images/Bricklets/bricklet_piezo_speaker_master_600.jpg
-   :scale: 100 %
-   :alt: Piezo Speaker Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_piezo_speaker_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird können nun Töne erzeugt werden. 

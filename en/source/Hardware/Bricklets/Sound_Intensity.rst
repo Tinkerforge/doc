@@ -95,13 +95,7 @@ Test your Sound Intensity Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. FIXME image:: /Images/Bricklets/bricklet_sound_intensity_master_600.jpg
-   :scale: 100 %
-   :alt: Sound Intensity Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_sound_intensity_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now see the changing sound
