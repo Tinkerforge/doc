@@ -3,8 +3,8 @@
 Partner
 =======
 
-
-.. container::
+..
+  .. container::
 
   .. container:: partnerlogo
 
