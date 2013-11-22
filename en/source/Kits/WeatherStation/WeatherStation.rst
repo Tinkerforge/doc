@@ -141,12 +141,12 @@ Weight                            376g
 Resources
 ---------
 
-* Weather Station case as FreeCAD CAD files (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
-* Example source code :ref:`starter_kit_weather_station_write_to_lcd` (Download: |write_to_lcd_examples_download|)
-* Example source code :ref:`starter_kit_weather_station_xively` (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
-* Example source code :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
-* Example source code :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
-* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, Source Code: `Download <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
+* Weather Station Case as FreeCAD CAD files (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
+* Example Source Code for :ref:`starter_kit_weather_station_write_to_lcd` (Download: |write_to_lcd_examples_download|)
+* Example Source Code for :ref:`starter_kit_weather_station_xively` (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
+* Example Source Code for :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
+* Example Source Code for :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
+* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
  
 
 Firmware updating and first tests
@@ -285,9 +285,7 @@ done through three different paths:
 
 All three possible solutions can use the same source code.
 
-Example implementations with step-by-step instructions are available for:
-
-|write_to_lcd_examples|.
+Example implementations with step-by-step instructions are available for: |write_to_lcd_examples|.
 
 .. include:: WriteToLCD.toctree
 

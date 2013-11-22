@@ -12,11 +12,7 @@
 Multi Touch Bricklet
 ====================
 
-.. note::
- Dieses Bricklet ist im Moment in der Prototyp-Phase und die Software/Hardware
- sowie die Dokumentation sind in einem unfertigen Zustand.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -35,9 +31,9 @@ Multi Touch Bricklet
 	             "Multi Touch Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_multi_touch_master_100.jpg",
-	             "Bricklets/bricklet_multi_touch_master_600.jpg",
-	             "Multi Touch Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_multi_touch_tilted_back_100.jpg",
+	             "Bricklets/bricklet_multi_touch_tilted_back_600.jpg",
+	             "Multi Touch Bricklet")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_multi_touch_brickv_100.jpg",

@@ -204,11 +204,11 @@ bricklet_test_connect = {
 'en':
 """.. |test_connect| replace::
  Connect the {0} Bricklet to a :ref:`Brick <product_overview_bricks>`
- with the supplied cable
+ with a Bricklet Cable
 """,
 'de':
 """.. |test_connect| replace::
- Als nächstes muss das {0} Bricklet über das mitgelieferte Kabel mit
+ Als nächstes muss das {0} Bricklet mittels eines Bricklet Kabels mit
  einem :ref:`Brick <product_overview_bricks>` verbunden werden
 """
 }

@@ -12,11 +12,7 @@
 Segment Display 4x7 Bricklet
 ============================
 
-.. note::
- This Bricklet is currently in the prototype stage and the software/hardware
- as well as the documentation is in an incomplete state.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -25,19 +21,9 @@ Segment Display 4x7 Bricklet
 	               "Segment Display 4x7 Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_segment_display_4x7_vertical_100.jpg",
-	             "Bricklets/bricklet_segment_display_4x7_vertical_600.jpg",
-	             "Segment Display 4x7 Bricklet")
-	}}
-	{{
 	    tfdocimg("Bricklets/bricklet_segment_display_4x7_horizontal_100.jpg",
 	             "Bricklets/bricklet_segment_display_4x7_horizontal_600.jpg",
 	             "Segment Display 4x7 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_segment_display_4x7_master_100.jpg",
-	             "Bricklets/bricklet_segment_display_4x7_master_600.jpg",
-	             "Segment Display 4x7 Bricklet with Master Brick")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_segment_display_4x7_brickv_100.jpg",

@@ -12,11 +12,7 @@
 Tilt Bricklet
 =============
 
-.. note::
- This Bricklet is currently in the prototype stage and the software/hardware
- as well as the documentation is in an incomplete state.
-
-.. FIXME raw:: html
+.. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
@@ -35,9 +31,9 @@ Tilt Bricklet
 	             "Tilt Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_tilt_master_100.jpg",
-	             "Bricklets/bricklet_tilt_master_600.jpg",
-	             "Tilt Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_tilt_tilted_back_100.jpg",
+	             "Bricklets/bricklet_tilt_tilted_back_600.jpg",
+	             "Tilt Bricklet")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_tilt_brickv_100.jpg",
