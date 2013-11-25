@@ -66,7 +66,7 @@ Das Distance US :ref:`Bricklet <product_overview_bricklets>` ist mit einem
 `Ultraschall-Entfernungsmesser
 <http://de.wikipedia.org/wiki/Entfernungsmessung#Laufzeitmessung>`__
 ausgestattet. Es kann Entfernungen zwischen 2cm und 400cm messen.
-Die gemessene Entfernungen wird als einheitenloser Wert ausgegeben, nicht in mm.
+Die gemessene Entfernung wird als einheitenloser Wert ausgegeben, nicht in mm.
 Dies liegt daran, dass das Verhältnis von gemessenem Entfernungswert zu
 wirklicher Entfernung vom exakten Wert der 5V Versorgungsspannung abhängt.
 Abweichungen in der Versorgungsspannung führen zu Abweichungen in den gemessenen

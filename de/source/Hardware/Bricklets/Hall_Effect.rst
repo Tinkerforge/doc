@@ -53,14 +53,14 @@ Features
 
 * Detektiert Magnetfelder
 * Zählt das Auftreten und Verschwinden eines Magnetfelds
-* Kann genutzt werden um Wasser-/Stromzähler auszulesen
+* Kann genutzt werden um einen Wasser-/Stromzähler auszulesen
 
 Beschreibung
 ------------
 
 Das Hall Effect :ref:`Bricklet <product_overview_bricklets>` kann die Präsenz
 eines Magnetfelds detektieren. Es zählt das Auftreten und Verschwinden eines
-Magnetfelds und kann dadurch genutzt werden um z.B. die Geschwindigkeit eines
+Magnetfelds und kann dadurch genutzt werden, um z.B. die Geschwindigkeit eines
 Rades zu messen an dem ein Magnet befestigt ist.
 
 Beispielanwendungen:
@@ -107,7 +107,7 @@ Erster Test
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird ein Magnetfeld erkannt. Zum Testen
-kann zum Beispiel ein Magnet verwendet werden.
+kann zum Beispiel ein Magnet verwendet werden, der an dem Bricklet vorbei geführt wird.
 
 .. image:: /Images/Bricklets/bricklet_hall_effect_brickv.jpg
    :scale: 100 %

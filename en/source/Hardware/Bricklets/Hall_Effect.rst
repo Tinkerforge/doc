@@ -60,7 +60,7 @@ Description
 
 The Hall Effect :ref:`Bricklet <product_overview_bricklets>` can detect the
 presence of magnetic fields. It counts the (dis-)appearances of magnetic fields
-and can thus be used to measure the speed of a wheel with attached magnet.
+and can for example be used to measure the speed of a wheel with attached magnet.
 
 Example applications are:
 
@@ -106,7 +106,9 @@ Test your Hall Effect Bricklet
 
 |test_tab|
 If everything went as expected you can now see the detection of a
-magnetic field. A magnet can be used to test the Bricklet.
+magnetic field. A magnet can be used to test the Bricklet by moving it near
+the Bricklet.
+
 
 .. image:: /Images/Bricklets/bricklet_hall_effect_brickv.jpg
    :scale: 100 %

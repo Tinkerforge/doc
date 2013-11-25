@@ -64,8 +64,8 @@ jederzeit ausgelesen werden. Es ist möglich die LEDs selbst an/aus zu schalten
 sowie Auto-Toggle zu aktivieren. Im Auto-Toggle Modus werden die LEDs
 automatisch bei jedem Tastendruck umgeschaltet.
 
-Es ist auch möglich Events zu nutzen. Dadurch ist es möglich auf einen
-Tastendruck zu reagieren ohne zu pollen.
+Es ist auch möglich Events zu nutzen. Dadurch kann auf einen
+Tastendruck reagiert werden ohne zu pollen.
 
 Technische Spezifikation
 ------------------------

@@ -84,8 +84,8 @@ Description
 -----------
 
 The LED Strip :ref:`Bricklet <product_overview_bricklets>` can be used to
-control LED strips that are equipped with the WS2801 LED driver. It is possible
-to independently control 320 RGB LEDs (960 individual LEDs).
+control LED strips and LED pixels that are equipped with the WS2801 LED driver. 
+It is possible to independently control 320 RGB LEDs (960 individual LEDs).
 
 The API allows to change all LEDs at the same time with a fixed update rate
 of up to 100Hz.
@@ -146,7 +146,7 @@ WS2801
 ------
 
 At the moment the LED Strip Bricklets supports LED strips and pixels 
-equipped with the WS2801 driver chip (more driver chip types will follow).
+equipped with the WS2801 driver chip (more driver chip types should follow).
 
 The WS2801 chip can control three LEDs independently.
 Typically a RGB LED combined in one package is used. It is controlled over
