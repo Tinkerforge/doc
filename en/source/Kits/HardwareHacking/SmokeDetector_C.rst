@@ -36,6 +36,8 @@ Goals
    :end-before: <<<goals
 
 
+.. _starter_kit_hardware_hacking_smoke_detector_c_step1:
+
 Step 1: Discover Bricks and Bricklets
 -------------------------------------
 
@@ -203,6 +205,8 @@ Step 3: Handle the alarm signal
 
 |step3_robust2|
 
+
+.. _starter_kit_hardware_hacking_smoke_detector_c_step4:
 
 Step 4: Error handling and Logging
 ----------------------------------

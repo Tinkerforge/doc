@@ -36,6 +36,8 @@ Ziele
    :end-before: <<<goals
 
 
+.. _starter_kit_hardware_hacking_smoke_detector_c_step1:
+
 Schritt 1: Bricks und Bricklets dynamisch erkennen
 --------------------------------------------------
 
@@ -203,6 +205,8 @@ Schritt 3: Auf Alarmsignal reagieren
 
 |step3_robust2|
 
+
+.. _starter_kit_hardware_hacking_smoke_detector_c_step4:
 
 Schritt 4: Fehlerbehandlung und Logging
 ---------------------------------------
