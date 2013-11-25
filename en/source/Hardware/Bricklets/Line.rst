@@ -64,7 +64,7 @@ phototransistor. Output of the sensor is the reflectivity of a surface.
 
 The reflectivity value can be used to detect and follow lines (e.g. a black
 line has a different reflectivity then a white background). The Line Bricklet
-can also be used to measure the distance to a surface, since the reflectivity
+can also be used to measure the distance to a surface, since the received light
 decreases with increased distance.
 
 Technical Specifications

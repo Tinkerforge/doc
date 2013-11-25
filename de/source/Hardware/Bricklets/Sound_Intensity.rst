@@ -64,7 +64,7 @@ Der zurückgegebene Wert entspricht der `Hüllkurve
 <http://de.wikipedia.org/wiki/Hüllkurvendemodulator>`__ des Signals der
 Mikrofonkapsel.
 
-Es ist möglich Events zu konfigurieren die ausgelöst werden wenn eine
+Es ist möglich Events zu konfigurieren die ausgelöst werden, wenn eine
 spezifizierte Lautstärkenschwelle überschritten wird.
 
 Technische Spezifikation

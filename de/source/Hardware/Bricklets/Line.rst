@@ -52,22 +52,21 @@ Features
 --------
 
 * Misst die Reflektivität einer Oberfläche
-* Kann genutzt werden um Linien zu erkennen/folgen
-* Kann genutzt werden um Entfernungen von ca. 0-10mm zu messen
+* Kann genutzt werden um Linien zu erkennen/verfolgen
+* Kann Entfernungen von ca. 0-10mm zu messen
 
 Beschreibung
 ------------
 
 Das Line :ref:`Bricklet <product_overview_bricklets>` ist mit einem
 optisch-reflektierenden Sensor ausgestattet. Der Sensor besteht aus einem
-Infrarot Sender und Fototransistor. Ausgabe des Sensors ist die Reflektivität
+Infrarot Sender und einem Fototransistor. Ausgabe des Sensors ist die Reflektivität
 der Fläche.
 
 Der Reflektivitätswert kann genutzt werden um Linien zu erkennen (Beispiel:
 Eine schwarze Linie hat eine andere Reflektivität als ein weißer Hintergrund).
-
-Das Line Bricklet kann auch genutzt werden um Entfernungen zu einer Fläche
-zu messen, da die Reflektivität mit steigender Entfernung abnimmt.
+Das Line Bricklet kann aber auch genutzt werden um Entfernungen zu einer Fläche
+zu messen, da das empfangene Licht mit steigender Entfernung abnimmt.
 
 Technische Spezifikation
 ------------------------

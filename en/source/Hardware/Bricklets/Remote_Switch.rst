@@ -175,6 +175,7 @@ Test your Remote Switch Bricklet
 |test_connect|.
 
 |test_tab|
+After that configure the house and receiver code.
 If everything went as expected you can now control remote mains switches. 
 
 .. image:: /Images/Bricklets/bricklet_remote_switch_brickv.jpg

@@ -178,6 +178,7 @@ Erster Test
 |test_connect|.
 
 |test_tab|
+Als nächstes müssen der House und Receiver Code konfiguriert werden.
 Wenn alles wie erwartet funktioniert können nun Funksteckdosen gesteuert 
 werden.
 

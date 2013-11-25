@@ -90,7 +90,7 @@ Erster Test
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird können die einzelnen Segmente
-nun an-/ausgeschaltet werden.
+nun ein-/ausgeschaltet werden.
 
 .. image:: /Images/Bricklets/bricklet_segment_display_4x7_brickv.jpg
    :scale: 100 %

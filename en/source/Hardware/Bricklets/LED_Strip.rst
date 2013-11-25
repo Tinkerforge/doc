@@ -150,7 +150,7 @@ equipped with the WS2801 driver chip (more driver chip types should follow).
 
 The WS2801 chip can control three LEDs independently.
 Typically a RGB LED combined in one package is used. It is controlled over
-a three wire chained data bus with clock, data signal and ground for 
+a three wire chained data bus with clock, data signal and ground as voltage 
 reference (`daisy chain <http://en.wikipedia.org/wiki/Daisy_chain_(electrical_engineering)>`__).
 Each WS2801 chip has a bus input connected to a controlling 
 device such as the LED Strip Bricklet or to a WS2801 predecessor and a 
@@ -183,7 +183,7 @@ The following image depicts the interfaces of the LED Strip Bricklet.
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
-As described in the :ref:`WS2801 section <led_strip_bricklet_ws2801>` above
+As described in the :ref:`WS2801 section <led_strip_bricklet_ws2801>` above,
 the Bricklet supports LED strips and pixels with WS2801 driver.
 The terminal labeled with "Output" has to be connected with the input of
 the first WS2801 driver.
@@ -231,7 +231,8 @@ LEDs with the RAM that is available per Bricklet.
 
 To circumvent this limitation, the LED Strip Bricklet is able to use the
 RAM of the remaining unconnected Bricklets. This allows to control up to
-320 RGB LEDs with one Master Brick and one LED Strip Bricklet.
+320 RGB LEDs with one Master Brick and one LED Strip Bricklet. As described above
+these used ports can't be used by other Bricklets.
 
 The maximum number of controllable LEDs is as follows:
 

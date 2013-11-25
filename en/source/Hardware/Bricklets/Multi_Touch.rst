@@ -108,7 +108,8 @@ Test your Multi Touch Bricklet
 |test_connect| (see picture below).
 
 TODO Image connection
-.. FIXME image:: /Images/Bricklets/bricklet_multi_touch_master_600.jpg
+.. FIXME 
+   .. image:: /Images/Bricklets/bricklet_multi_touch_master_600.jpg
    :scale: 100 %
    :alt: Multi Touch Bricklet connected to Master Brick
    :align: center

@@ -51,7 +51,7 @@ Moisture Bricklet
 Features
 --------
 
-* Misst Feuchtigkeit zwischen zwei Elektroden
+* Misst die Feuchtigkeit zwischen zwei Elektroden
 * 12Bit Auflösung
 
 Beschreibung
@@ -60,7 +60,7 @@ Beschreibung
 Das Moisture :ref:`Bricklet <product_overview_bricklets>` ist dafür gedacht die
 Feuchtigkeit in Erde zu ermitteln.
 
-Dazu wird Strom durch zwei Elektroden geführt die in der Erde stecken. 
+Dazu wird Strom durch zwei Elektroden geführt, die zum Beispiel in der Erde stecken. 
 Mit steigender Feuchtigkeit sinkt der Widerstand. Die Veränderung des 
 Widerstandes wird als Feuchtigkeitswert ausgewertet.
 

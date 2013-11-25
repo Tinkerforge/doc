@@ -46,7 +46,7 @@ Piezo Speaker Bricklet
 Features
 --------
 
-* Creates beep with configurable frequency of 585Hz to 7100Hz
+* Creates beeps with configurable frequency of 585Hz to 7100Hz
 * Configurable beep duration
 * Morse code output supported
 
