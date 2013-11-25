@@ -54,11 +54,14 @@ Beschreibung
 Mit dieser Ethernet Extension können :ref:`Bricks <product_overview_bricks>` und
 :ref:`Bricklets <product_overview_bricklets>` in ein 
 `LAN <https://de.wikipedia.org/wiki/Local_Area_Network>`__ integriert 
-werden. Das Modul unterstützt 10BaseT/100BaseTX Ethernet und ist 1000BaseTX 
-kompatibel. Die integrierte `PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__
-Stromversorgung ermöglicht eine Versorgung der angeschlossenen Module
-nach Industriestandard IEEE 802.3af, so dass sowohl über PoE 
+werden. 10BaseT/100BaseTX Ethernet wird unterstützt und das Modul ist 
+1000BaseTX kompatibel. Die Extension wird in zwei Varianten angeboten:
+In der PoE Variante verfügt diese über eine integrierte 
+`PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__
+Stromversorgung, die eine Versorgung der angeschlossenen Module
+nach Industriestandard IEEE 802.3af ermöglicht, so dass sowohl über PoE 
 Injektoren als auch über PoE fähige Switche versorgt werden kann.
+Zusätzlich ist eine zweite Variante ohne PoE erhältlich.
 
 Da die Extension selbst die von der API generierten TCP/IP Pakete behandeln kann, 
 ist es möglich direkt vom Smartphone, Tablet oder (Embedded) PC zu steuern. 
