@@ -51,3 +51,4 @@ Historie
    "",     "33", "`Shell Bindings <http://www.tinkerforge.com/de/blog/2013/8/14/shell-bindings-fertig>`__"
    "",     "37", "`NetIO Support für Shell Bindings <http://www.tinkerforge.com/de/blog/2013/9/11/tinkerforge-+-netio>`__"
    "",     "39", "`Starterkit: Serverraum-Überwachung <http://www.tinkerforge.com/de/blog/2013/9/24/starterkit:-serverraum-ueberwachung>`__"
+   "",     "48", "`Ethernet Extension ohne PoE <http://www.tinkerforge.com/de/blog/2013/11/25/ethernet-extension-jetzt-auch-ohne-poe-erhaeltlich>`__"
