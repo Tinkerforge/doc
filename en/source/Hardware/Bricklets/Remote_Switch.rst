@@ -192,7 +192,10 @@ House Code and Receiver Code
 
 To control remote switches or dimmers the house code and the receiver code
 must be known. These codes are typically configurable with small DIP-switches
-inside the remote switch or dimmer.
+inside the remote switch or dimmer. Please note that house and receiver code
+is sometimes otherwise labeled. In the following example image the removed
+cover of the DIP switch is labeled with "System Code" and "Unit Code".
+"System Code" means house code and with "Unit Code" the receiver code is meant.
 
 .. image:: /Images/Bricklets/bricklet_remote_dip_switch_350.jpg
    :scale: 100 %
