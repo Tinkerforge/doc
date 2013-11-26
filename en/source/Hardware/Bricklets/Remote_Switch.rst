@@ -194,7 +194,12 @@ To control remote switches or dimmers the house code and the receiver code
 must be known. These codes are typically configurable with small DIP-switches
 inside the remote switch or dimmer.
 
-TODO Image
+.. image:: /Images/Bricklets/bricklet_remote_dip_switch_350.jpg
+   :scale: 100 %
+   :alt: DIP switch in remote switch to set house and receiver code
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_remote_dip_switch_1000.jpg
+
 
 
 .. _remote_switch_bricklet_case:
