@@ -45,6 +45,27 @@ Multi Touch Bricklet
 	             "Dimensions/multi_touch_bricklet_dimensions_600.png",
 	             "Outline and drilling plan")
 	}}
+	{{
+	    tfdocimg("Bricklets/button_pad_w_multi_touch_tilted_100.png",
+	             "Bricklets/button_pad_w_multi_touch_tilted_600.png",
+	             "Multi Touch Bricklet with Button Pads")
+	}}
+	{{
+	    tfdocimg("Bricklets/cursor_pad_w_cable_100.png",
+	             "Bricklets/cursor_pad_w_cable_600.png",
+	             "Cursor Pad with Cable")
+	}}
+	{{
+	    tfdocimg("Bricklets/key_pad_w_multi_touch_100.png",
+	             "Bricklets/key_pad_w_multi_touch_600.png",
+	             "Multi Touch Bricklet with Key Pad")
+	}}
+	{{
+	    tfdocimg("Bricklets/slider_pad_w_multi_touch_100.png",
+	             "Bricklets/slider_pad_w_multi_touch_600.png",
+	             "Multi Touch Bricklet with Slider Pad")
+	}}
+
 	{{ tfdocend() }}
 
 
@@ -105,20 +126,12 @@ Test your Multi Touch Bricklet
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-TODO Image connection
-.. 
-
-   FIXME 
-   .. image:: /Images/Bricklets/bricklet_multi_touch_master_600.jpg
-   :scale: 100 %
-   :alt: Multi Touch Bricklet connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_multi_touch_master_1200.jpg
+|test_connect|.
 
 |test_tab|
-If everything went as expected you can now see the current state.
+
+Touch single pins of the Multi Touch Bricklet and you should see their
+state changing in the Brick Viewer:
 
 .. image:: /Images/Bricklets/bricklet_multi_touch_brickv.jpg
    :scale: 100 %
@@ -145,6 +158,24 @@ Dependent on your touch pads it might be necessary to adjust the sensitivity.
 Use the Brick Viewer Software to play around with it by changing the value until
 you have found a satisfying sensitivity. To accept the entered value press
 "Recalibrate".
+
+
+.. _multi_touch_bricklet_circuit_board_pads:
+
+Circuit Board Pads
+------------------
+
+There are several circuit boards offered in the shop which can be used as
+inputs for the Multi Touch Bricklet without the need of creating own pads.
+
+ * `Cursor Pad <https://www.tinkerforge.com/en/shop/cursor-pad.html>`__
+ * `Key Pad 3x4 <https://www.tinkerforge.com/en/shop/key-pad-3x4.html>`__
+ * `Slider Pad <https://www.tinkerforge.com/en/shop/slider-pad.html>`__
+ * `Button Pad <https://www.tinkerforge.com/en/shop/button-pad.html>`__
+
+Besides there is a pad kit especially for gaming applications:
+
+ * `Giant Game Pad (see below) <https://www.tinkerforge.com/en/shop/giant-game-pad.html>`__
 
 
 .. _multi_touch_bricklet_giant_game_pad:

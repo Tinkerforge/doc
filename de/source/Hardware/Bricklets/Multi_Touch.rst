@@ -45,6 +45,26 @@ Multi Touch Bricklet
 	             "Dimensions/multi_touch_bricklet_dimensions_600.png",
 	             "Umriss und Bohrplan")
 	}}
+	{{
+	    tfdocimg("Bricklets/button_pad_w_multi_touch_tilted_100.png",
+	             "Bricklets/button_pad_w_multi_touch_tilted_600.png",
+	             "Multi Touch Bricklet mit Button Pads")
+	}}
+	{{
+	    tfdocimg("Bricklets/cursor_pad_w_cable_100.png",
+	             "Bricklets/cursor_pad_w_cable_600.png",
+	             "Cursor Pad mit Kabel")
+	}}
+	{{
+	    tfdocimg("Bricklets/key_pad_w_multi_touch_100.png",
+	             "Bricklets/key_pad_w_multi_touch_600.png",
+	             "Multi Touch Bricklet mit Key Pad")
+	}}
+	{{
+	    tfdocimg("Bricklets/slider_pad_w_multi_touch_100.png",
+	             "Bricklets/slider_pad_w_multi_touch_600.png",
+	             "Multi Touch Bricklet mit Slider Pad")
+	}}
 	{{ tfdocend() }}
 
 
@@ -105,20 +125,11 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-TODO Image Connection
-.. 
-
-   FIXME 
-   .. image:: /Images/Bricklets/bricklet_multi_touch_master_600.jpg
-   :scale: 100 %
-   :alt: Multi Touch Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_multi_touch_master_1200.jpg
+|test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird nun der aktuelle Zustand angezeigt.
+Bei Berührung von einzelnen Pins des Multi Touch Bricklets sollte sich der 
+angezeigte Zustand im Brick Viewer verändern:
 
 .. image:: /Images/Bricklets/bricklet_multi_touch_brickv.jpg
    :scale: 100 %
@@ -147,6 +158,24 @@ Abhängig von dem Aufbau der Touchpads kann es notwendig sein die Empfindlichkei
 einzustellen. Die Brick Viewer Software kann genutzt werden um verschiedene 
 Empfindlichkeiten auszuprobieren. Dazu muss nur der Electrode Sensitivity Wert
 geändert werden und mittels "Recalibrate" übernommen werden.
+
+.. _multi_touch_bricklet_circuit_board_pads:
+
+Leiterplatten Pads
+------------------
+
+Verschiedene Leiterplatten-Pads werden im Shop angeboten, die als Touchpads
+für das Multi Touch Bricklet genutzt werden können ohne das eigene pads
+hergestellt werden müssen.
+
+ * `Cursor Pad <https://www.tinkerforge.com/de/shop/cursor-pad.html>`__
+ * `Key Pad 3x4 <https://www.tinkerforge.com/de/shop/key-pad-3x4.html>`__
+ * `Slider Pad <https://www.tinkerforge.com/de/shop/slider-pad.html>`__
+ * `Button Pad <https://www.tinkerforge.com/de/shop/button-pad.html>`__
+
+Für Spiele-Anwendungen gibt es ein spezielles Pad-Kit:
+
+ * `Giant Game Pad (siehe unten) <https://www.tinkerforge.com/de/shop/giant-game-pad.html>`__
 
 
 
