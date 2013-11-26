@@ -46,23 +46,23 @@ Multi Touch Bricklet
 	             "Outline and drilling plan")
 	}}
 	{{
-	    tfdocimg("Bricklets/button_pad_w_multi_touch_tilted_100.png",
-	             "Bricklets/button_pad_w_multi_touch_tilted_600.png",
+	    tfdocimg("Bricklets/button_pad_w_multi_touch_tilted_100.jpg",
+	             "Bricklets/button_pad_w_multi_touch_tilted_600.jpg",
 	             "Multi Touch Bricklet with Button Pads")
 	}}
 	{{
-	    tfdocimg("Bricklets/cursor_pad_w_cable_100.png",
-	             "Bricklets/cursor_pad_w_cable_600.png",
+	    tfdocimg("Bricklets/cursor_pad_w_cable_100.jpg",
+	             "Bricklets/cursor_pad_w_cable_600.jpg",
 	             "Cursor Pad with Cable")
 	}}
 	{{
-	    tfdocimg("Bricklets/key_pad_w_multi_touch_100.png",
-	             "Bricklets/key_pad_w_multi_touch_600.png",
+	    tfdocimg("Bricklets/key_pad_w_multi_touch_100.jpg",
+	             "Bricklets/key_pad_w_multi_touch_600.jpg",
 	             "Multi Touch Bricklet with Key Pad")
 	}}
 	{{
-	    tfdocimg("Bricklets/slider_pad_w_multi_touch_100.png",
-	             "Bricklets/slider_pad_w_multi_touch_600.png",
+	    tfdocimg("Bricklets/slider_pad_w_multi_touch_100.jpg",
+	             "Bricklets/slider_pad_w_multi_touch_600.jpg",
 	             "Multi Touch Bricklet with Slider Pad")
 	}}
 
