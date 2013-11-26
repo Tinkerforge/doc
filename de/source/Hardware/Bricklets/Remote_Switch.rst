@@ -219,7 +219,7 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-remote-switch-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-remote-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_remote_case_tilted_front_350.jpg
    :scale: 100 %
@@ -230,7 +230,7 @@ Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
 * Schraube Abstandshalter an das Bricklet,
-* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte,
+* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte (das Antennenteil ist leicht asymmetrisch, der breitere Rand gehört von außen gesehen nach unten),
 * schraube Unterteil an untere Abstandshalter,
 * schraube Oberteil auf obere Abstandshalter.
 

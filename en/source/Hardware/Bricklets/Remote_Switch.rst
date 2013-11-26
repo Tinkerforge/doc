@@ -216,7 +216,7 @@ Case
 ----
 
 A `laser-cut case for the Remote Switch Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-remote-switch-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-remote-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_remote_case_tilted_front_350.jpg
    :scale: 100 %
@@ -227,7 +227,7 @@ A `laser-cut case for the Remote Switch Bricklet
 The assembly is easiest if you follow the following steps:
 
 * Screw spacers to the Bricklet,
-* build up side plates and put them around Bricklet,
+* build up side plates and put them around Bricklet (the antenna plate is slightly asymmetric, the wider margin goes to the bottom side, when viewed from the outside),
 * screw bottom plate to bottom spacers,
 * screw top plate to top spacers.
 
