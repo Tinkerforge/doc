@@ -44,16 +44,16 @@ The kit can be extended by other Tinkerforge products.
 In game applications the :ref:`Multi Touch Bricklet <multi_touch_bricklet>`
 can be useful when custom game controls are needed. With 
 :ref:`Master Brick Extensions <product_overview_master_extensions>` the USB 
-interface can be changed to :ref:`WiFi <wifi_extension>` or 
+interface can be changed to :ref:`Wi-Fi <wifi_extension>` or
 :ref:`Ethernet <ethernet_extension>` so smart phone or tablet
-controlled applications are imaginable. A larger display can be created by 
-attaching more LED Pixels to it.
+controlled applications are possible. A larger display can be created by
+attaching more LED Pixels to the kit.
 
-A demo application implements clones of
-`Tetris <http://en.wikipedia.org/wiki/Tetris>`__ and 
-`Pong <http://en.wikipedia.org/wiki/Pong>`__ and demonstrates different non game 
-applications. For example it can scroll customizable text in different colors on 
-the display, shows rainbows, shows customizable image sets with 
+A :ref:`demo application <starter_kit_blinkenlights_demo_examples>` implements
+clones of `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ and
+`Pong <http://en.wikipedia.org/wiki/Pong>`__ and includes different non-game
+applications. For example, it can show customizable scrolling text in
+different colors on the display, it shows rainbows, customizable image sets with
 configurable durations and can warm your heart with a virtual fire.
 The games can be controlled by a PC keyboard but can be also be controlled
 by customizable touch pads when using the Multi Touch Bricklet.
