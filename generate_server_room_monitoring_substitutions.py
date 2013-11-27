@@ -4,18 +4,36 @@
 import os
 import sys
 
-from kit_generics import bindings
-from kit_generics import binding_name
-from kit_generics import binding_names
+import generate_tables
 
+bindings = generate_tables.bindings
 lang = 'en'
+
+binding_name = {
+'en':
+""":ref:`{0} <api_bindings_{1}>`""",
+'de':
+""":ref:`{0} <api_bindings_{1}>`"""
+}
+
+binding_names = {
+'en':
+"""
+.. |bindings| replace:: {0}
+""",
+'de':
+"""
+.. |bindings| replace:: {0}
+"""
+}
 
 def make_substitutions():
     substitutions = ''
 
     formated_binding_names = []
     for binding in bindings:
-        formated_binding_names.append(binding_name[lang].format(binding[0], binding[2]))
+        if binding.is_programming_language and binding.is_published:
+            formated_binding_names.append(binding_name[lang].format(binding.display_name, binding.url_part))
 
     substitutions += binding_names[lang].format(', '.join(formated_binding_names)) + '\n'
 
@@ -43,6 +61,8 @@ def generate(path):
     else:
         print 'Wrong working directory'
         sys.exit(1)
+
+    generate_tables.lang = lang
 
     print 'Generating ServerRoomMonitoring.substitutions'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'ServerRoomMonitoring', 'ServerRoomMonitoring.substitutions'), make_substitutions())

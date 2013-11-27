@@ -23,28 +23,83 @@ class Tool:
 tools = [Tool('Brick Daemon', 'brickd'),
          Tool('Brick Viewer', 'brickv')]
 
+binding_tutorials = {
+'c': {
+    'en': 'http://www.cprogramming.com/',
+    'de': 'http://www.cprogramming.com/' # http://www.c-howto.de/
+    },
+'csharp': {
+    'en': 'http://csharp.net-tutorials.com/',
+    'de': 'http://csharp.net-tutorials.com/'
+    },
+'delphi': {
+    'en': 'http://www.delphibasics.co.uk/',
+    'de': 'http://www.delphi-treff.de/tutorials/grundlagen/'
+    },
+'java': {
+    'en': 'http://docs.oracle.com/javase/tutorial/',
+    'de': 'http://docs.oracle.com/javase/tutorial/' # http://openbook.galileocomputing.de/javainsel/
+    },
+'mathematica': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'perl': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'php': {
+    'en': 'http://www.php.net/manual/en/getting-started.php',
+    'de': 'http://www.php.net/manual/de/getting-started.php'
+    },
+'python': {
+    'en': 'http://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
+    'de': 'http://www.python.org/about/gettingstarted/'
+    },
+'ruby': {
+    'en': 'http://www.ruby-lang.org/en/documentation/quickstart/',
+    'de': 'http://www.ruby-lang.org/de/documentation/quickstart/'
+    },
+'shell': {
+    'en': '',
+    'de': ''
+    },
+'vbnet': {
+    'en': 'http://howtostartprogramming.com/vb-net/',
+    'de': 'http://howtostartprogramming.com/vb-net/' # http://openbook.galileocomputing.de/vb_net/index.htm
+    }
+}
 
 class Binding:
     def __init__(self, display_name, url_part, url_part_for_doc, is_programming_language, is_published):
         self.display_name = display_name
+        self.short_display_name = display_name
         self.url_part = url_part
         self.url_part_for_doc = url_part_for_doc
         self.is_programming_language = is_programming_language
         self.is_published = is_published
 
-bindings = [Binding('Modbus',      'modbus',      None,          False, True),
-            Binding('TCP/IP',      'tcpip',       None,          False, True),
-            Binding('C/C++',       'c',           'C',           True,  True),
-            Binding('C#',          'csharp',      'CSharp',      True,  True),
-            Binding('Delphi',      'delphi',      'Delphi',      True,  True),
-            Binding('Java',        'java',        'Java',        True,  True),
-            Binding('Mathematica', 'mathematica', 'Mathematica', True,  False),
-            Binding('Perl',        'perl',        'Perl',        True,  False),
-            Binding('PHP',         'php',         'PHP',         True,  True),
-            Binding('Python',      'python',      'Python',      True,  True),
-            Binding('Ruby',        'ruby',        'Ruby',        True,  True),
-            Binding('Shell',       'shell',       'Shell',       True,  True),
-            Binding('VB.NET',      'vbnet',       'VBNET',       True,  True)]
+        # FIXME: remove short_display_name once index table got refactored to other format
+        if display_name == 'Visual Basic .NET':
+            self.short_display_name = 'VB.NET'
+
+    @property
+    def tutorial(self):
+        return binding_tutorials[self.url_part][lang]
+
+bindings = [Binding('Modbus',            'modbus',      None,          False, True),
+            Binding('TCP/IP',            'tcpip',       None,          False, True),
+            Binding('C/C++',             'c',           'C',           True,  True),
+            Binding('C#',                'csharp',      'CSharp',      True,  True),
+            Binding('Delphi',            'delphi',      'Delphi',      True,  True),
+            Binding('Java',              'java',        'Java',        True,  True),
+            Binding('Mathematica',       'mathematica', 'Mathematica', True,  False),
+            Binding('Perl',              'perl',        'Perl',        True,  False),
+            Binding('PHP',               'php',         'PHP',         True,  True),
+            Binding('Python',            'python',      'Python',      True,  True),
+            Binding('Ruby',              'ruby',        'Ruby',        True,  True),
+            Binding('Shell',             'shell',       'Shell',       True,  True),
+            Binding('Visual Basic .NET', 'vbnet',       'VBNET',       True,  True)]
 
 
 class Product:
@@ -762,7 +817,7 @@ def make_download_bindings_table():
         if not binding.is_programming_language or not binding.is_published:
             continue
 
-        rows.append(row_cell.format(binding.display_name, binding.url_part, binding.url_part_for_doc, archive, bindings_and_examples, *bindings_versions[binding.url_part]))
+        rows.append(row_cell.format(binding.short_display_name, binding.url_part, binding.url_part_for_doc, archive, bindings_and_examples, *bindings_versions[binding.url_part]))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -798,7 +853,7 @@ def make_api_bindings_bindings_table():
 
     for binding in bindings:
         if binding.is_programming_language and binding.is_published:
-            rows.append(row.format(binding.display_name, binding.url_part))
+            rows.append(row.format(binding.short_display_name, binding.url_part))
 
     return '\n'.join(rows) + '\n'
 
@@ -860,7 +915,7 @@ def make_index_table_block(devices, category, add_category_to_name=True):
 
         for binding in device.bindings:
             if binding.is_published:
-                cells.append(row_cell.format(binding.display_name, device.url_part, binding.url_part))
+                cells.append(row_cell.format(binding.short_display_name, device.url_part, binding.url_part))
 
         row = row_head.format(device.display_name, device.url_part) + ', '.join(cells)
         rows.append(row)
@@ -878,9 +933,9 @@ def make_index_table():
             continue
 
         if binding.is_programming_language:
-            ipcon_cells.append(ipcon_cell.format(binding.display_name, binding.url_part))
+            ipcon_cells.append(ipcon_cell.format(binding.short_display_name, binding.url_part))
         else:
-            ipcon_cells.append(ipcon_cell_llproto.format(binding.display_name, binding.url_part))
+            ipcon_cells.append(ipcon_cell_llproto.format(binding.short_display_name, binding.url_part))
 
     return index_table_head[lang].format(ipcon_head + ', '.join(ipcon_cells),
                                          make_index_table_block(bricks, 'brick'),
@@ -927,9 +982,9 @@ def make_hlpi_table(device, category):
             continue
 
         if binding.is_programming_language:
-            rows.append(row_source.format(binding.display_name, device.url_part, category, binding.url_part))
+            rows.append(row_source.format(binding.short_display_name, device.url_part, category, binding.url_part))
         else:
-            rows.append(row.format(binding.display_name, device.url_part, category, binding.url_part))
+            rows.append(row.format(binding.short_display_name, device.url_part, category, binding.url_part))
 
     return table_head + '\n'.join(rows) + '\n'
 
