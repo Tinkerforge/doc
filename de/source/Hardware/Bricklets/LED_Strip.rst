@@ -61,6 +61,16 @@ LED Strip Bricklet
 	             "LED Strip Bricklet im Gehäuse")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_led_strip_50_pixel_100.jpg",
+	             "Bricklets/bricklet_led_strip_50_pixel_600.jpg",
+	             "LED Strip Bricklet mit 50 RGB LED Pixel")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_led_strip_w_reel_100.jpg",
+	             "Bricklets/bricklet_led_strip_w_reel_600.jpg",
+	             "LED Strip Bricklet mit RGB LED Streifen")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_led_strip_brickv_100.jpg",
 	             "Bricklets/bricklet_led_strip_brickv.jpg",
 	             "LED Strip Bricklet im Brick Viewer")

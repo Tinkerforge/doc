@@ -66,6 +66,16 @@ LED Strip Bricklet
 	             "LED Strip Bricklet in Case")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_led_strip_50_pixel_100.jpg",
+	             "Bricklets/bricklet_led_strip_50_pixel_600.jpg",
+	             "LED Strip Bricklet with 50 RGB LED Pixels")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_led_strip_w_reel_100.jpg",
+	             "Bricklets/bricklet_led_strip_w_reel_600.jpg",
+	             "LED Strip Bricklet with RGB LED Strip")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_led_strip_brickv_100.jpg",
 	             "Bricklets/bricklet_led_strip_brickv.jpg",
 	             "LED Strip Bricklet in Brick Viewer")
