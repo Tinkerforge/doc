@@ -51,3 +51,4 @@ History
    "",     "37", "`NetIO Support for Shell bindings <http://www.tinkerforge.com/en/blog/2013/9/11/tinkerforge-+-netio>`__"
    "",     "39", "`Starter Kit: Server Room Monitoring <http://www.tinkerforge.com/en/blog/2013/9/24/starter-kit:-server-room-monitoring>`__"
    "",     "48", "`Ethernet Extension without PoE <http://www.tinkerforge.com/en/blog/2013/11/25/ethernet-extension-without-poe-available>`__"
+   "",     "48", "`14 new Bricklets <http://www.tinkerforge.com/en/blog/2013/11/27/14-new-bricklets-in-one-fell-swoop-part-1-4>`__"
