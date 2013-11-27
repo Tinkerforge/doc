@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / LED Strip Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/led-strip-bricklet.html
+:shoplink: ../../../shop/bricklets/led-strip-bricklet.html
 
 
 .. role:: led-strip-red

@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Rotary Encoder Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/rotary-encoder-bricklet.html
+:shoplink: ../../../shop/bricklets/rotary-encoder-bricklet.html
 
 .. include:: Rotary_Encoder.substitutions
    :start-after: >>>substitutions

@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Distance US Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/distance-us-bricklet.html
+:shoplink: ../../../shop/bricklets/distance-us-bricklet.html
 
 .. include:: Distance_US.substitutions
    :start-after: >>>substitutions

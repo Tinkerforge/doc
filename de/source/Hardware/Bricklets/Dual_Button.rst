@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Dual Button Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/dual-button-bricklet.html
+:shoplink: ../../../shop/bricklets/dual-button-bricklet.html
 
 .. include:: Dual_Button.substitutions
    :start-after: >>>substitutions

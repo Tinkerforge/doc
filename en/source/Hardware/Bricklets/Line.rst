@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Line Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/line-bricklet.html
+:shoplink: ../../../shop/bricklets/line-bricklet.html
 
 .. include:: Line.substitutions
    :start-after: >>>substitutions

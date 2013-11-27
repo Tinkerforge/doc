@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Moisture Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/moisture-bricklet.html
+:shoplink: ../../../shop/bricklets/moisture-bricklet.html
 
 .. include:: Moisture.substitutions
    :start-after: >>>substitutions
@@ -105,13 +105,7 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. FIXME image:: /Images/Bricklets/bricklet_moisture_master_600.jpg
-   :scale: 100 %
-   :alt: Moisture Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_moisture_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird nun die Änderung des

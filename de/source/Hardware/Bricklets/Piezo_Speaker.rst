@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Piezo Speaker Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/piezo-speaker-bricklet.html
+:shoplink: ../../../shop/bricklets/piezo-speaker-bricklet.html
 
 .. include:: Piezo_Speaker.substitutions
    :start-after: >>>substitutions

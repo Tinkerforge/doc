@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Multi Touch Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/multi-touch-bricklet.html
+:shoplink: ../../../shop/bricklets/multi-touch-bricklet.html
 
 .. include:: Multi_Touch.substitutions
    :start-after: >>>substitutions
@@ -184,11 +184,12 @@ Für Spiele-Anwendungen gibt es ein spezielles Pad-Kit:
 
 
 
-
 .. _multi_touch_bricklet_giant_game_pad:
 
 Benutzung des Giant Game Pads
 -----------------------------
+
+.. note:: Coming Soon
 
 TODO Image Kit Content
 

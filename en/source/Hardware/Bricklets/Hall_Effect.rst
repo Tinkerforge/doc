@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Hall Effect Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/hall-effect-bricklet.html
+:shoplink: ../../../shop/bricklets/hall-effect-bricklet.html
 
 .. include:: Hall_Effect.substitutions
    :start-after: >>>substitutions

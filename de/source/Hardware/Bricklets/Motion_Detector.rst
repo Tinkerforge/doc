@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Motion Detector Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/motion-detector-bricklet.html
+:shoplink: ../../../shop/bricklets/motion-detector-bricklet.html
 
 .. include:: Motion_Detector.substitutions
    :start-after: >>>substitutions
@@ -109,6 +109,7 @@ angezeigt.
 |test_pi_ref|
 
 
+.. _motion_detector_bricklet_sensitivity_delay_block_time:
 
 Empfindlichkeit, Verzögerungs- und Blockierzeit
 ------------------------------------------------

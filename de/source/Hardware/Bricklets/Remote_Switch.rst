@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Remote Switch Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/remote-switch-bricklet.html
+:shoplink: ../../../shop/bricklets/remote-switch-bricklet.html
 
 .. include:: Remote_Switch.substitutions
    :start-after: >>>substitutions
@@ -195,6 +195,7 @@ werden.
 
 |test_pi_ref|
 
+.. _remote_switch_bricklet_house_and_receiver_code:
 
 Housecode und Receivercode
 ----------------------------

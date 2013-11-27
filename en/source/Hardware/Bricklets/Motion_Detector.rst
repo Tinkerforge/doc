@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Motion Detector Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/motion-detector-bricklet.html
+:shoplink: ../../../shop/bricklets/motion-detector-bricklet.html
 
 .. include:: Motion_Detector.substitutions
    :start-after: >>>substitutions
@@ -106,6 +106,9 @@ If everything went as expected you can now see when a motion is detected.
 
 |test_pi_ref|
 
+
+
+.. _motion_detector_bricklet_sensitivity_delay_block_time:
 
 Sensitivity, Delay Time and Block Time
 --------------------------------------
