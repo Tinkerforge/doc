@@ -140,11 +140,11 @@ Case
 A `laser-cut case for the Distance US Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-distance-us-bricklet.html>`__ is available.
 
-.. FIXME image:: /Images/Cases/bricklet_distance_us_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_distance_us_case_front_350.jpg
    :scale: 100 %
    :alt: Case for Distance US Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_distance_us_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_distance_us_case_front_1000.jpg
 
 The assembly is easiest if you follow the following steps:
 

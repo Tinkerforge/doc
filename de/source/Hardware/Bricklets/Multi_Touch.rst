@@ -36,8 +36,8 @@ Multi Touch Bricklet
 	             "Multi Touch Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_multi_touch_case_tilted_100.jpg",
-	             "Bricklets/bricklet_multi_touch_case_tilted_600.jpg",
+	    tfdocimg("Cases/bricklet_multi_touch_case_tilted_100.jpg",
+	             "Cases/bricklet_multi_touch_case_tilted_600.jpg",
 	             "Multi Touch Bricklet im Gehäuse")
 	}}
 	{{

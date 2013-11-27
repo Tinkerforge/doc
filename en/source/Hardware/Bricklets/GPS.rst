@@ -31,7 +31,7 @@ GPS Bricklet
 	}}
     {{
 	    tfdocimg("Cases/bricklet_gps_case_100.jpg",
-	             "Cases/bricklet_gps_case_350.jpg",
+	             "Cases/bricklet_gps_case_600.jpg",
 	             "GPS Bricklet in Case")
 	}}
 	{{

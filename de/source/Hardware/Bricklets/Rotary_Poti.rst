@@ -45,8 +45,8 @@ Rotary Poti Bricklet
 	             "Rotary Poti Bricklet mit Master Brick")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_rotary_poti_case_shallow_100.jpg",
-	             "Bricklets/bricklet_rotary_poti_case_shallow_600.jpg",
+	    tfdocimg("Cases/bricklet_rotary_poti_case_shallow_100.jpg",
+	             "Cases/bricklet_rotary_poti_case_shallow_600.jpg",
 	             "Rotary Poti Bricklet im Gehäuse")
 	}}
 	{{

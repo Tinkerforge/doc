@@ -41,8 +41,8 @@ Rotary Encoder Bricklet
 	             "Rotary Encoder Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_rotary_poti_case_shallow_100.jpg",
-	             "Bricklets/bricklet_rotary_poti_case_shallow_600.jpg",
+	    tfdocimg("Cases/bricklet_rotary_poti_case_shallow_100.jpg",
+	             "Cases/bricklet_rotary_poti_case_shallow_600.jpg",
 	             "Rotary Encoder Bricklet in Case")
 	}}
 	{{
