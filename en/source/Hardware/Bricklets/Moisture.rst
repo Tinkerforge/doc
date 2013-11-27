@@ -41,6 +41,16 @@ Moisture Bricklet
 	             "Moisture Bricklet in Case")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_moisture_plant1_100.jpg",
+	             "Cases/bricklet_moisture_plant1_600.jpg",
+	             "Moisture Bricklet in Soil of Plant")
+	}}
+	{{
+	    tfdocimg("Cases/bricklet_moisture_plant2_100.jpg",
+	             "Cases/bricklet_moisture_plant2_600.jpg",
+	             "Moisture Bricklet in Soil of Plant")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_moisture_brickv_100.jpg",
 	             "Bricklets/bricklet_moisture_brickv.jpg",
 	             "Moisture Bricklet in Brick Viewer")
