@@ -111,6 +111,12 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird nun die Änderung des
 Feuchtegrades angezeigt.
 
+.. image:: /Images/Bricklets/bricklet_moisture_brickv.jpg
+   :scale: 100 %
+   :alt: Moisture Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_moisture_brickv.jpg
+
 |test_pi_ref|
 
 .. _moisture_bricklet_case:
