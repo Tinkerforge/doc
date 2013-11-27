@@ -36,6 +36,16 @@ Line Bricklet
 	             "Line Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_line_case1_tilted_100.jpg",
+	             "Bricklets/bricklet_line_case1_tilted_600.jpg",
+	             "Line Bricklet Befestigungsplatte Version 1")
+	}}
+	{{
+	    tfdocimg("Cases/bricklet_line_case2_tilted1_100.jpg",
+	             "Bricklets/bricklet_line_case2_tilted1_600.jpg",
+	             "Line Bricklet Befestigungsplatte Version 2")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_line_brickv_100.jpg",
 	             "Bricklets/bricklet_line_brickv.jpg",
 	             "Line Bricklet im Brick Viewer")
@@ -126,10 +136,25 @@ Reflektivität der Linie und des Untergrundes ab und kann durch Ausprobieren
 ermittelt werden.
 
 Im `Shop <https://www.tinkerforge.com/de/shop/mounting-plate-line-bricklet.html>`__
-ist eine Montageplatte für das Line Bricklet verfügbar, die die Montage 
-vereinfacht.
+ist eine Montageplatte-Kit für das Line Bricklet verfügbar, das die Montage 
+vereinfacht. Dieses besteht aus einer Montageplatte mit festem Abstand:
 
-TODO Foto: Montageplatte für Line Bricklet
+
+.. image:: /Images/Cases/bricklet_line_case1_tilted_350.jpg
+   :scale: 100 %
+   :alt: Line Bricklet Montageplatte Version 1
+   :align: center
+   :target: ../../_images/Cases/bricklet_line_case1_tilted_600.jpg
+
+Und einer Montageplatte mit einstellbarem Abstand:
+
+.. image:: /Images/Cases/bricklet_line_case2_tilted1_350.jpg
+   :scale: 100 %
+   :alt: Line Bricklet Montageplatte Version 2
+   :align: center
+   :target: ../../_images/Cases/bricklet_line_case2_tilted1_600.jpg
+
+
 
 
 .. _line_bricklet_programming_interfaces:

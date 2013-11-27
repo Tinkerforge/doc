@@ -40,6 +40,11 @@ Distance IR Bricklet
 	             "Distance IR Bricklet Sensoren")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_distance_ir_case_100.jpg",
+	             "Cases/bricklet_distance_ir_case_600.jpg",
+	             "Distance IR Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_distance_ir_brickv_100.jpg",
 	             "Bricklets/bricklet_distance_ir_brickv.jpg",
 	             "Distance IR Bricklet im Brick Viewer")

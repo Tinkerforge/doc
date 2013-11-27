@@ -35,6 +35,11 @@ Analog In Bricklet
                  "Analog In Bricklet mit Master Brick")
     }}
     {{
+        tfdocimg("Cases/bricklet_analog_in_case_build_up_100.jpg",
+                 "Cases/bricklet_analog_in_case_build_up_600.jpg",
+                 "Analog In Bricklet im Gehäuse")
+    }}      
+    {{
         tfdocimg("Bricklets/bricklet_analog_in_brickv_100.jpg",
                  "Bricklets/bricklet_analog_in_brickv.jpg",
                  "Analog In Bricklet im Brick Viewer")

@@ -36,6 +36,11 @@ Sound Intensity Bricklet
 	             "Sound Intensity Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_segment_display_4x7_case_tilted_100.jpg",
+	             "Cases/bricklet_segment_display_4x7_case_tilted_600.jpg",
+	             "Segment Display 4x7 Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_sound_intensity_brickv_100.jpg",
 	             "Bricklets/bricklet_sound_intensity_brickv.jpg",
 	             "Sound Intensity Bricklet im Brick Viewer")
@@ -118,11 +123,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Sound Intensity Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-sound-intensity-bricklet.html>`__ ist verfügbar.
 
-.. FIXME image:: /Images/Cases/bricklet_sound_intensity_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_sound_intensity_case_tilted_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Sound Intensity Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_sound_intensity_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_sound_intensity_case_tilted_1000.jpg
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 

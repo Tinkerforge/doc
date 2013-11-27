@@ -41,6 +41,11 @@ Distance US Bricklet
 	             "Distance US Bricklet with sensor")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_distance_us_case_front_100.jpg",
+	             "Cases/bricklet_distance_us_case_front_600.jpg",
+	             "Distance US Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_distance_us_brickv_100.jpg",
 	             "Bricklets/bricklet_distance_us_brickv.jpg",
 	             "Distance US Bricklet in Brick Viewer")

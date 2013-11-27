@@ -40,6 +40,11 @@ PTC Bricklet
 	             "PTC Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_ptc_case_100.jpg",
+	             "Cases/bricklet_ptc_case_600.jpg",
+	             "PTC Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_ptc_brickv_100.jpg",
 	             "Bricklets/bricklet_ptc_brickv.jpg",
 	             "PTC Bricklet im Brick Viewer")

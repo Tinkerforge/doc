@@ -29,6 +29,11 @@ GPS Bricklet
 	             "Bricklets/bricklet_gps_battery_600.jpg",
 	             "GPS Bricklet")
 	}}
+    {{
+	    tfdocimg("Cases/bricklet_gps_case_100.jpg",
+	             "Cases/bricklet_gps_case_350.jpg",
+	             "GPS Bricklet in Case")
+	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_gps_brickv_100.jpg",
 	             "Bricklets/bricklet_gps_brickv.jpg",

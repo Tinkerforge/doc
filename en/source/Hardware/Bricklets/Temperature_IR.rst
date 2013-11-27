@@ -35,6 +35,11 @@ Temperature IR Bricklet
 	             "Temperature IR Bricklet with Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_temperature_ir_case_100.jpg",
+	             "Cases/bricklet_temperature_ir_case_600.jpg",
+	             "Temperature IR Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_temperature_ir_brickv_100.jpg",
 	             "Bricklets/bricklet_temperature_ir_brickv.jpg",
 	             "Temperature IR Bricklet in Brick Viewer")

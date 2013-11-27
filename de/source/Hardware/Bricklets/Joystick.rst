@@ -35,6 +35,11 @@ Joystick Bricklet
 	             "Joystick Bricklet mit Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_joystick_case_100.jpg",
+	             "Cases/bricklet_joystick_case_600.jpg",
+	             "Joystick Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_joystick_brickv_100.jpg",
 	             "Bricklets/bricklet_joystick_brickv.jpg",
 	             "Joystick Bricklet im Brick Viewer")

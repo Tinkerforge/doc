@@ -40,6 +40,11 @@ Dual Relay Bricklet
 	             "Dual Relay Bricklet mit Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_dual_relay_case_100.jpg",
+	             "Cases/bricklet_dual_relay_case_600.jpg",
+	             "Dual Relay Bricklet Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_dual_relay_brickv_100.jpg",
 	             "Bricklets/bricklet_dual_relay_brickv.jpg",
 	             "Dual Relay Bricklet im Brick Viewer")

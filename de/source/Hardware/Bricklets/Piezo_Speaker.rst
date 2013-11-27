@@ -31,6 +31,11 @@ Piezo Speaker Bricklet
 	             "Piezo Speaker Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_piezo_speaker_case_tilted_100.jpg",
+	             "Cases/bricklet_piezo_speaker_case_tilted_600.jpg",
+	             "Piezo Speaker Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_piezo_speaker_brickv_100.jpg",
 	             "Bricklets/bricklet_piezo_speaker_brickv.jpg",
 	             "Piezo Speaker Bricklet im Brick Viewer")
@@ -115,11 +120,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Piezo Speaker Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-piezo-speaker-bricklet.html>`__ ist verfügbar.
 
-.. FIXME image:: /Images/Cases/bricklet_piezo_speaker_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_piezo_speaker_case_tilted_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Piezo Speaker Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_piezo_speaker_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_piezo_speaker_case_tilted_1000.jpg
 
 .. include:: Piezo_Speaker.substitutions
    :start-after: >>>bricklet_case_steps

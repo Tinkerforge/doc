@@ -35,6 +35,11 @@ Industrial Quad Relay Bricklet
 	             "Industrial Quad Relay Bricklet Setup")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_industrial_case_100.jpg",
+	             "Cases/bricklet_industrial_case_600.jpg",
+	             "Industrial Quad Relay Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_industrial_quad_relay_brickv_100.jpg",
 	             "Bricklets/bricklet_industrial_quad_relay_brickv.jpg",
 	             "Industrial Quad Relay Bricklet im Brick Viewer")

@@ -35,6 +35,11 @@ LCD 20x4 Bricklet
 	             "LCD 20x4 Bricklet with Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_lcd_20x4_case_100.jpg",
+	             "Cases/bricklet_lcd_20x4_case_600.jpg",
+	             "LCD 20x4 Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_lcd_20x4_brickv_100.jpg",
 	             "Bricklets/bricklet_lcd_20x4_brickv.jpg",
 	             "LCD 20x4 Bricklet in Brick Viewer")

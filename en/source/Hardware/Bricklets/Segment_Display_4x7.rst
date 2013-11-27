@@ -26,6 +26,11 @@ Segment Display 4x7 Bricklet
 	             "Segment Display 4x7 Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_segment_display_4x7_case_tilted_100.jpg",
+	             "Cases/bricklet_segment_display_4x7_case_tilted_600.jpg",
+	             "Segment Display 4x7 Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_segment_display_4x7_brickv_100.jpg",
 	             "Bricklets/bricklet_segment_display_4x7_brickv.jpg",
 	             "Segment Display 4x7 Bricklet in Brick Viewer")
@@ -107,11 +112,11 @@ Case
 A `laser-cut case for the Segment Display 4x7 Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-segment-display-4x7-bricklet.html>`__ is available.
 
-.. FIXME image:: /Images/Cases/bricklet_segment_display_4x7_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_segment_display_4x7_case_tilted_350.jpg
    :scale: 100 %
    :alt: Case for Segment Display 4x7 Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_segment_display_4x7_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_segment_display_4x7_case_tilted_1000.jpg
 
 The assembly is easiest if you follow the following steps:
 

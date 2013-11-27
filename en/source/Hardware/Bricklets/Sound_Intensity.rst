@@ -36,6 +36,11 @@ Sound Intensity Bricklet
 	             "Sound Intensity Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_sound_intensity_case_tilted_100.jpg",
+	             "Cases/bricklet_sound_intensity_case_tilted_600.jpg",
+	             "Sound Intensity Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_sound_intensity_brickv_100.jpg",
 	             "Bricklets/bricklet_sound_intensity_brickv.jpg",
 	             "Sound Intensity Bricklet in Brick Viewer")
@@ -117,11 +122,11 @@ Case
 A `laser-cut case for the Sound Intensity Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-sound-intensity-bricklet.html>`__ is available.
 
-.. FIXME image:: /Images/Cases/bricklet_sound_intensity_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_sound_intensity_case_tilted_350.jpg
    :scale: 100 %
    :alt: Case for Sound Intensity Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_sound_intensity_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_sound_intensity_case_tilted_1000.jpg
 
 The assembly is easiest if you follow the following steps:
 

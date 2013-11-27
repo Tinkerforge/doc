@@ -35,6 +35,11 @@ IO-4 Bricklet
 	             "IO-4 Bricklet with Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_io4_case_100.jpg",
+	             "Cases/bricklet_io4_case_600.jpg",
+	             "IO-4 Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_io4_brickv_100.jpg",
 	             "Bricklets/bricklet_io4_brickv.jpg",
 	             "IO-4 Bricklet in Brick Viewer")

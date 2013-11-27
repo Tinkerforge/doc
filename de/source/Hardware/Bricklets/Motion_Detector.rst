@@ -26,6 +26,11 @@ Motion Detector Bricklet
 	             "Motion Detector Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_motion_detector_case_tilted_100.jpg",
+	             "Cases/bricklet_motion_detector_case_tilted_600.jpg",
+	             "Motion Detector Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_motion_detector_brickv_100.jpg",
 	             "Bricklets/bricklet_motion_detector_brickv.jpg",
 	             "Motion Detector Bricklet im Brick Viewer")
@@ -146,11 +151,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Motion Detector Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-motion-detector-bricklet.html>`__ ist verfügbar.
 
-.. FIXME image:: /Images/Cases/bricklet_motion_detector_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_motion_detector_case_tilted_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Motion Detector Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_motion_detector_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_motion_detector_case_tilted_1000.jpg
 
 .. include:: Motion_Detector.substitutions
    :start-after: >>>bricklet_case_steps

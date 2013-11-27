@@ -41,6 +41,11 @@ Distance US Bricklet
 	             "Distance US Bricklet mit Sensor")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_distance_us_case_front_100.jpg",
+	             "Cases/bricklet_distance_us_case_front_600.jpg",
+	             "Distance US Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_distance_us_brickv_100.jpg",
 	             "Bricklets/bricklet_distance_us_brickv.jpg",
 	             "Distance US Bricklet im Brick Viewer")
@@ -137,11 +142,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Distance US Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-distance-us-bricklet.html>`__ ist verfügbar.
 
-.. FIXME image:: /Images/Cases/bricklet_distance_us_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_distance_us_case_front_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Distance US Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_distance_us_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_distance_us_case_front_1000.jpg
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 

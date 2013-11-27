@@ -35,6 +35,11 @@ Industrial Digital In 4 Bricklet
 	             "Industrial Digital In 4 Bricklet setup")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_industrial_case_100.jpg",
+	             "Cases/bricklet_industrial_case_600.jpg",
+	             "Industrial Digital In 4 Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_brickv_100.jpg",
 	             "Bricklets/bricklet_industrial_digital_in_4_brickv.jpg",
 	             "Industrial Digital In 4 Bricklet in Brick Viewer")

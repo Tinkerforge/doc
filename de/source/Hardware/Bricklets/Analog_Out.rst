@@ -35,6 +35,11 @@ Analog Out Bricklet
 	             "Analog Out Bricklet mit Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_analog_in_case_build_up_100.jpg",
+	             "Cases/bricklet_analog_in_case_build_up_600.jpg",
+	             "Analog Out Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_analog_out_brickv_100.jpg",
 	             "Bricklets/bricklet_analog_out_brickv.jpg",
 	             "Analog Out Bricklet im Brick Viewer")

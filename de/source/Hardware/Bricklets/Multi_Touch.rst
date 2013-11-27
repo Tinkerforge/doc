@@ -36,14 +36,9 @@ Multi Touch Bricklet
 	             "Multi Touch Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_multi_touch_brickv_100.jpg",
-	             "Bricklets/bricklet_multi_touch_brickv.jpg",
-	             "Multi Touch Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/multi_touch_bricklet_dimensions_100.png",
-	             "Dimensions/multi_touch_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
+	    tfdocimg("Bricklets/bricklet_multi_touch_case_tilted_100.jpg",
+	             "Bricklets/bricklet_multi_touch_case_tilted_600.jpg",
+	             "Multi Touch Bricklet im Gehäuse")
 	}}
 	{{
 	    tfdocimg("Bricklets/button_pad_w_multi_touch_tilted_100.jpg",
@@ -64,6 +59,16 @@ Multi Touch Bricklet
 	    tfdocimg("Bricklets/slider_pad_w_multi_touch_100.jpg",
 	             "Bricklets/slider_pad_w_multi_touch_600.jpg",
 	             "Multi Touch Bricklet mit Slider Pad")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_multi_touch_brickv_100.jpg",
+	             "Bricklets/bricklet_multi_touch_brickv.jpg",
+	             "Multi Touch Bricklet im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/multi_touch_bricklet_dimensions_100.png",
+	             "Dimensions/multi_touch_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
 	}}
 	{{ tfdocend() }}
 
@@ -217,11 +222,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Multi Touch Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-multi-touch-bricklet.html>`__ ist verfügbar.
 
-.. FIXME image:: /Images/Cases/bricklet_multi_touch_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_multi_touch_case_tilted_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Multi Touch Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_multi_touch_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_multi_touch_case_tilted_1000.jpg
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 

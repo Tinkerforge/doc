@@ -56,6 +56,11 @@ LED Strip Bricklet
 	             "LED Strip Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_led_strip_case_tilted_100.jpg",
+	             "Cases/bricklet_led_strip_case_tilted_600.jpg",
+	             "LED Strip Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_led_strip_brickv_100.jpg",
 	             "Bricklets/bricklet_led_strip_brickv.jpg",
 	             "LED Strip Bricklet im Brick Viewer")
@@ -351,11 +356,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das LED Strip Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-led-strip-bricklet.html>`__ ist verfügbar.
 
-.. FIXME image:: /Images/Cases/bricklet_led_strip_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_led_strip_case_tilted_350.jpg
    :scale: 100 %
    :alt: Gehäuse für LED Strip Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_led_strip_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_led_strip_case_tilted_1000.jpg
 
 .. include:: LED_Strip.substitutions
    :start-after: >>>bricklet_case_steps

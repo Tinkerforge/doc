@@ -30,6 +30,11 @@ Barometer Bricklet
 	             "Barometer Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
+	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
+	             "Barometer Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_barometer_brickv_100.jpg",
 	             "Bricklets/bricklet_barometer_brickv.jpg",
 	             "Barometer Bricklet im Brick Viewer")

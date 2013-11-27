@@ -35,6 +35,11 @@ Voltage/Current Bricklet
 	             "Voltage/Current Bricklet with Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_voltage_current_case_100.jpg",
+	             "Cases/bricklet_voltage_current_case_600.jpg",
+	             "Voltage/Current Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_voltage_current_brickv_100.png",
 	             "Bricklets/bricklet_voltage_current_brickv.png",
 	             "Voltage/Current Bricklet in Brick Viewer")

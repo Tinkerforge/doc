@@ -36,6 +36,11 @@ Moisture Bricklet
 	             "Moisture Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_moisture_case_tilted_front_100.jpg",
+	             "Cases/bricklet_moisture_case_tilted_front_600.jpg",
+	             "Moisture Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_moisture_brickv_100.jpg",
 	             "Bricklets/bricklet_moisture_brickv.jpg",
 	             "Moisture Bricklet im Brick Viewer")
@@ -122,11 +127,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Moisture Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-moisture-bricklet.html>`__ ist verfügbar.
 
-.. FIXME image:: /Images/Cases/bricklet_moisture_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_moisture_case_tilted_front_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Moisture Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_moisture_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_moisture_case_tilted_front_1000.jpg
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 

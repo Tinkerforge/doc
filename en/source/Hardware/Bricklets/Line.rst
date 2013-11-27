@@ -36,6 +36,16 @@ Line Bricklet
 	             "Line Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_line_case1_tilted_100.jpg",
+	             "Bricklets/bricklet_line_case1_tilted_600.jpg",
+	             "Line Bricklet Mounting Plate Version 1")
+	}}
+	{{
+	    tfdocimg("Cases/bricklet_line_case2_tilted1_100.jpg",
+	             "Bricklets/bricklet_line_case2_tilted1_600.jpg",
+	             "Line Bricklet Mounting Plate Version 2")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_line_brickv_100.jpg",
 	             "Bricklets/bricklet_line_brickv.jpg",
 	             "Line Bricklet in Brick Viewer")
@@ -126,10 +136,22 @@ trial and error.
 
 There is a mounting Plate available for the Line Bricklet in the
 `shop <https://www.tinkerforge.com/en/shop/mounting-plate-line-bricklet.html>`__
-which simplfies the mounting.
+which simplfies the mounting. It consits of a mounting plate with fixed 
+distance: 
 
-TODO Image: Mountingplate for Line Bricklet
+.. image:: /Images/Cases/bricklet_line_case1_tilted_350.jpg
+   :scale: 100 %
+   :alt: Line Bricklet Mounting Plate Version 1
+   :align: center
+   :target: ../../_images/Cases/bricklet_line_case1_tilted_600.jpg
 
+And a mounting plate with configurable distance:
+
+.. image:: /Images/Cases/bricklet_line_case2_tilted1_350.jpg
+   :scale: 100 %
+   :alt: Line Bricklet Mounting Plate Version 2
+   :align: center
+   :target: ../../_images/Cases/bricklet_line_case2_tilted1_600.jpg
 
 .. _line_bricklet_programming_interfaces:
 

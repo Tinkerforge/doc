@@ -35,6 +35,11 @@ Humidity Bricklet
 	             "Humidity Bricklet with Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
+	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
+	             "Humidity Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_humidity_brickv_100.jpg",
 	             "Bricklets/bricklet_humidity_brickv.jpg",
 	             "Humidity Bricklet in Brick Viewer")

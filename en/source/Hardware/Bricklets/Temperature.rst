@@ -35,6 +35,11 @@ Temperature Bricklet
 	             "Temperature Bricklet with Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
+	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
+	             "Temperature Bricklet in Case")
+	}} 
+	{{
 	    tfdocimg("Bricklets/bricklet_temperature_brickv_100.jpg",
 	             "Bricklets/bricklet_temperature_brickv.jpg",
 	             "Temperature Bricklet in Brick Viewer")

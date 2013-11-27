@@ -41,6 +41,11 @@ Remote Switch Bricklet
 	             "Remote Switch Bricklet und Antenne")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_remote_case_tilted_front_100.jpg",
+	             "Cases/bricklet_remote_case_tilted_front_600.jpg",
+	             "Remote Switch Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_remote_switch_brickv_100.jpg",
 	             "Bricklets/bricklet_remote_switch_brickv.jpg",
 	             "Remote Switch Bricklet in Brick Viewer")
@@ -213,11 +218,11 @@ Case
 A `laser-cut case for the Remote Switch Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-remote-switch-bricklet.html>`__ is available.
 
-.. FIXME image:: /Images/Cases/bricklet_remote_switch_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_remote_case_tilted_front_350.jpg
    :scale: 100 %
    :alt: Case for Remote Switch Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_remote_switch_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_remote_case_tilted_front_1000.jpg
 
 The assembly is easiest if you follow the following steps:
 

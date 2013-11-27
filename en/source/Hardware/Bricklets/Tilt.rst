@@ -36,6 +36,11 @@ Tilt Bricklet
 	             "Tilt Bricklet")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_tilt_case_tilted_front_100.jpg",
+	             "Cases/bricklet_tilt_case_tilted_front_600.jpg",
+	             "Tilt Bricklet in Case")
+	}} 
+	{{
 	    tfdocimg("Bricklets/bricklet_tilt_brickv_100.jpg",
 	             "Bricklets/bricklet_tilt_brickv.jpg",
 	             "Tilt Bricklet in Brick Viewer")
@@ -111,11 +116,11 @@ Case
 A `laser-cut case for the Tilt Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-tilt-bricklet.html>`__ is available.
 
-.. FIXME image:: /Images/Cases/bricklet_tilt_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_tilt_case_tilted_front_350.jpg
    :scale: 100 %
    :alt: Case for Tilt Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_tilt_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_tilt_case_tilt_front_1000.jpg
 
 .. include:: Tilt.substitutions
    :start-after: >>>bricklet_case_steps

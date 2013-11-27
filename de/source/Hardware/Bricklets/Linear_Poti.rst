@@ -45,6 +45,11 @@ Linear Poti Bricklet
 	             "Linear Poti Bricklet mit Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_linear_poti_case_100.jpg",
+	             "Cases/bricklet_linear_poti_case_600.jpg",
+	             "Linear Poti Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_linear_poti_brickv_100.jpg",
 	             "Bricklets/bricklet_linear_poti_brickv.jpg",
 	             "Linear Poti Bricklet im Brick Viewer")

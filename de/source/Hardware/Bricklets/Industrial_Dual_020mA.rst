@@ -35,6 +35,11 @@ Industrial Dual 0-20mA Bricklet
 	             "Industrial Dual 0-20mA Bricklet mit Umgebungslichtsensor")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_industrial_case_100.jpg",
+	             "Cases/bricklet_industrial_case_600.jpg",
+	             "Industrial Dual 0-20mA Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_brickv_100.jpg",
 	             "Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg",
 	             "Industrial Dual 0-20mA Bricklet im Brick Viewer")

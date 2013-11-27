@@ -41,6 +41,11 @@ Rotary Encoder Bricklet
 	             "Rotary Encoder Bricklet")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_rotary_poti_case_shallow_100.jpg",
+	             "Bricklets/bricklet_rotary_poti_case_shallow_600.jpg",
+	             "Rotary Encoder Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_rotary_encoder_brickv_100.jpg",
 	             "Bricklets/bricklet_rotary_encoder_brickv.jpg",
 	             "Rotary Encoder Bricklet im Brick Viewer")
@@ -127,11 +132,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Rotary Encoder Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-rotary-poti-bricklet.html>`__ ist verfügbar.
 
-.. FIXME image:: /Images/Cases/bricklet_rotary_encoder_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_rotary_poti_case_shallow_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Rotary Encoder Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_rotary_encoder_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_rotary_poti_case_shallow_1000.jpg
 
 .. include:: Rotary_Encoder.substitutions
    :start-after: >>>bricklet_case_steps

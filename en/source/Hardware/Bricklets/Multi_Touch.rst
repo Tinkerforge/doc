@@ -36,14 +36,9 @@ Multi Touch Bricklet
 	             "Multi Touch Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_multi_touch_brickv_100.jpg",
-	             "Bricklets/bricklet_multi_touch_brickv.jpg",
-	             "Multi Touch Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/multi_touch_bricklet_dimensions_100.png",
-	             "Dimensions/multi_touch_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
+	    tfdocimg("Bricklets/bricklet_multi_touch_case_tilted_100.jpg",
+	             "Bricklets/bricklet_multi_touch_case_tilted_600.jpg",
+	             "Multi Touch Bricklet in Case")
 	}}
 	{{
 	    tfdocimg("Bricklets/button_pad_w_multi_touch_tilted_100.jpg",
@@ -65,7 +60,16 @@ Multi Touch Bricklet
 	             "Bricklets/slider_pad_w_multi_touch_600.jpg",
 	             "Multi Touch Bricklet with Slider Pad")
 	}}
-
+	{{
+	    tfdocimg("Bricklets/bricklet_multi_touch_brickv_100.jpg",
+	             "Bricklets/bricklet_multi_touch_brickv.jpg",
+	             "Multi Touch Bricklet in Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/multi_touch_bricklet_dimensions_100.png",
+	             "Dimensions/multi_touch_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
+	}}
 	{{ tfdocend() }}
 
 
@@ -215,11 +219,11 @@ Case
 A `laser-cut case for the Multi Touch Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-multi-touch-bricklet.html>`__ is available.
 
-.. FIXME image:: /Images/Cases/bricklet_multi_touch_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_multi_touch_case_tilted_350.jpg
    :scale: 100 %
    :alt: Case for Multi Touch Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_multi_touch_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_multi_touch_case_tilted_1000.jpg
 
 The assembly is easiest if you follow the following steps:
 

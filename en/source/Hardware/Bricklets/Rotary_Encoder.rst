@@ -41,6 +41,11 @@ Rotary Encoder Bricklet
 	             "Rotary Encoder Bricklet")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_rotary_poti_case_shallow_100.jpg",
+	             "Bricklets/bricklet_rotary_poti_case_shallow_600.jpg",
+	             "Rotary Encoder Bricklet in Case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_rotary_encoder_brickv_100.jpg",
 	             "Bricklets/bricklet_rotary_encoder_brickv.jpg",
 	             "Rotary Encoder Bricklet in Brick Viewer")
@@ -128,11 +133,11 @@ Case
 A `laser-cut case for the Rotary Encoder Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-rotary-poti-bricklet.html>`__ is available.
 
-.. FIXME image:: /Images/Cases/bricklet_rotary_encoder_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_rotary_poti_case_shallow_350.jpg
    :scale: 100 %
    :alt: Case for Rotary Encoder Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_rotary_encoder_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_rotary_poti_case_shallow_1000.jpg
 
 .. include:: Rotary_Encoder.substitutions
    :start-after: >>>bricklet_case_steps

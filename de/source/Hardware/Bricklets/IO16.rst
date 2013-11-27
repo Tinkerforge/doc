@@ -40,6 +40,11 @@ IO-16 Bricklet
 	             "IO-16 Bricklet mit Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_io16_case_100.jpg",
+	             "Cases/bricklet_io16_case_600.jpg",
+	             "IO-16 Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_io16_brickv_100.jpg",
 	             "Bricklets/bricklet_io16_brickv.jpg",
 	             "IO-16 Bricklet im Brick Viewer")
