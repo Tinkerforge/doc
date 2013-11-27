@@ -114,14 +114,6 @@ Erster Test
 |test_intro|
 
 |test_connect|.
-Anschließend muss der Sensor mit dem Bricklet verbunden werden 
-(siehe nachfolgendes Foto).
-
-.. image:: /Images/Bricklets/bricklet_distance_us_tilted_back_600.jpg
-   :scale: 100 %
-   :alt: Distance US Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_distance_us_tilted_back_1200.jpg
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
