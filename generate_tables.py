@@ -14,88 +14,100 @@ from device_identifiers import device_identifiers
 
 lang = 'en'
 
-         # display,        uri
-tools = [('Brick Daemon', 'brickd'),
-         ('Brick Viewer', 'brickv')]
 
-            # display,  uri1     is_language, uri2
-bindings = [('Modbus', 'modbus', False,       None),
-            ('TCP/IP', 'tcpip',  False,       None),
-            ('C/C++',  'c',      True,        'C'),
-            ('C#',     'csharp', True,        'CSharp'),
-            ('Delphi', 'delphi', True,        'Delphi'),
-            ('Java',   'java',   True,        'Java'),
-            ('PHP',    'php',    True,        'PHP'),
-            ('Python', 'python', True,        'Python'),
-            ('Ruby',   'ruby',   True,        'Ruby'),
-            ('Shell',  'shell',  True,        'Shell'),
-            ('VB.NET', 'vbnet',  True,        'VBNET')]
+class Tool:
+    def __init__(self, display_name, url_part):
+        self.display_name = display_name
+        self.url_part = url_part
 
-                  # display,                      uri,                         bindings, description, is_published
-bricks =         [['DC',                         'dc',                         bindings, "",          True],
-                  ['Debug',                      'debug',                      [],       "",          True],
-                  ['IMU',                        'imu',                        bindings, "",          True],
-                  ['Master',                     'master',                     bindings, "",          True],
-                  ['Servo',                      'servo',                      bindings, "",          True],
-                  ['Stepper',                    'stepper',                    bindings, "",          True]]
+tools = [Tool('Brick Daemon', 'brickd'),
+         Tool('Brick Viewer', 'brickv')]
+
+binding_tutorials = {
+'c': {
+    'en': 'http://www.cprogramming.com/',
+    'de': 'http://www.cprogramming.com/' # http://www.c-howto.de/
+    },
+'csharp': {
+    'en': 'http://csharp.net-tutorials.com/',
+    'de': 'http://csharp.net-tutorials.com/'
+    },
+'delphi': {
+    'en': 'http://www.delphibasics.co.uk/',
+    'de': 'http://www.delphi-treff.de/tutorials/grundlagen/'
+    },
+'java': {
+    'en': 'http://docs.oracle.com/javase/tutorial/',
+    'de': 'http://docs.oracle.com/javase/tutorial/' # http://openbook.galileocomputing.de/javainsel/
+    },
+'mathematica': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'perl': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'php': {
+    'en': 'http://www.php.net/manual/en/getting-started.php',
+    'de': 'http://www.php.net/manual/de/getting-started.php'
+    },
+'python': {
+    'en': 'http://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
+    'de': 'http://www.python.org/about/gettingstarted/'
+    },
+'ruby': {
+    'en': 'http://www.ruby-lang.org/en/documentation/quickstart/',
+    'de': 'http://www.ruby-lang.org/de/documentation/quickstart/'
+    },
+'shell': {
+    'en': '',
+    'de': ''
+    },
+'vbnet': {
+    'en': 'http://howtostartprogramming.com/vb-net/',
+    'de': 'http://howtostartprogramming.com/vb-net/' # http://openbook.galileocomputing.de/vb_net/index.htm
+    }
+}
+
+class Binding:
+    def __init__(self, display_name, url_part, url_part_for_doc, is_programming_language, is_published):
+        self.display_name = display_name
+        self.short_display_name = display_name
+        self.url_part = url_part
+        self.url_part_for_doc = url_part_for_doc
+        self.is_programming_language = is_programming_language
+        self.is_published = is_published
+
+        # FIXME: remove short_display_name once index table got refactored to other format
+        if display_name == 'Visual Basic .NET':
+            self.short_display_name = 'VB.NET'
+
+    @property
+    def tutorial(self):
+        return binding_tutorials[self.url_part][lang]
+
+bindings = [Binding('Modbus',            'modbus',      None,          False, True),
+            Binding('TCP/IP',            'tcpip',       None,          False, True),
+            Binding('C/C++',             'c',           'C',           True,  True),
+            Binding('C#',                'csharp',      'CSharp',      True,  True),
+            Binding('Delphi',            'delphi',      'Delphi',      True,  True),
+            Binding('Java',              'java',        'Java',        True,  True),
+            Binding('Mathematica',       'mathematica', 'Mathematica', True,  False),
+            Binding('Perl',              'perl',        'Perl',        True,  False),
+            Binding('PHP',               'php',         'PHP',         True,  True),
+            Binding('Python',            'python',      'Python',      True,  True),
+            Binding('Ruby',              'ruby',        'Ruby',        True,  True),
+            Binding('Shell',             'shell',       'Shell',       True,  True),
+            Binding('Visual Basic .NET', 'vbnet',       'VBNET',       True,  True)]
 
 
-                  # display,                      uri,                         bindings, description, is_published
-bricklets =      [['Ambient Light',              'ambient_light',              bindings, "",          True],
-                  ['Analog In',                  'analog_in',                  bindings, "",          True],
-                  ['Analog Out',                 'analog_out',                 bindings, "",          True],
-                  ['Barometer',                  'barometer',                  bindings, "",          True],
-                  ['Breakout',                   'breakout',                   [],       "",          True],
-                  ['Current12',                  'current12',                  bindings, "",          True],
-                  ['Current25',                  'current25',                  bindings, "",          True],
-                  ['Distance IR',                'distance_ir',                bindings, "",          True],
-                  ['Distance US',                'distance_us',                bindings, "",          False],
-                  ['Dual Button',                'dual_button',                bindings, "",          False],
-                  ['Dual Relay',                 'dual_relay',                 bindings, "",          True],
-                  ['GPS',                        'gps',                        bindings, "",          True],
-                  ['Hall Effect',                'hall_effect',                bindings, "",          False],
-                  ['Humidity',                   'humidity',                   bindings, "",          True],
-                  ['Industrial Digital In 4',    'industrial_digital_in_4',    bindings, "",          True],
-                  ['Industrial Digital Out 4',   'industrial_digital_out_4',   bindings, "",          True],
-                  ['Industrial Dual 0-20mA',     'industrial_dual_0_20ma',     bindings, "",          True],
-                  ['Industrial Quad Relay',      'industrial_quad_relay',      bindings, "",          True],
-                  ['IO-16',                      'io16',                       bindings, "",          True],
-                  ['IO-4',                       'io4',                        bindings, "",          True],
-                  ['Joystick',                   'joystick',                   bindings, "",          True],
-                  ['LCD 16x2',                   'lcd_16x2',                   bindings, "",          True],
-                  ['LCD 20x4',                   'lcd_20x4',                   bindings, "",          True],
-                  ['LED Strip',                  'led_strip',                  bindings, "",          False],
-                  ['Line',                       'line',                       bindings, "",          False],
-                  ['Linear Poti',                'linear_poti',                bindings, "",          True],
-                  ['Moisture',                   'moisture',                   bindings, "",          False],
-                  ['Motion Detector',            'motion_detector',            bindings, "",          False],
-                  ['Multi Touch',                'multi_touch',                bindings, "",          False],
-                  ['Piezo Buzzer',               'piezo_buzzer',               bindings, "",          True],
-                  ['Piezo Speaker',              'piezo_speaker',               bindings, "",         False],
-                  ['PTC',                        'ptc',                        bindings, "",          True],
-                  ['Remote Switch',              'remote_switch',              bindings, "",          False],
-                  ['Rotary Encoder',             'rotary_encoder',             bindings, "",          False],
-                  ['Rotary Poti',                'rotary_poti',                bindings, "",          True],
-                  ['Segment Display 4x7',        'segment_display_4x7',        bindings, "",          False],
-                  ['Sound Intensity',            'sound_intensity',            bindings, "",          False],
-                  ['Temperature',                'temperature',                bindings, "",          True],
-                  ['Temperature IR',             'temperature_ir',             bindings, "",          True],
-                  ['Tilt',                       'tilt',                       bindings, "",          False],
-                  ['Voltage',                    'voltage',                    bindings, "",          True],
-                  ['Voltage/Current',            'voltage_current',            bindings, "",          True],
-                 ]
-
-                  # display,                      uri,                         bindings, description, is_published
-extensions =     [['Chibi Extension',            'chibi',                      [],       "",          True],
-                  ['Ethernet Extension',         'ethernet',                   [],       "",          True],
-                  ['RS485 Extension',            'rs485',                      [],       "",          True],
-                  ['WIFI Extension',             'wifi',                       [],       "",          True]]
-
-                  # display,                      uri,                         bindings, description, is_published
-power_supplies = [['Step-Down Power Supply',     'step_down',                  [],       "",          True]]
-
-                  # display,                      uri,                         bindings, description, is_published
-accessories =    [['DC Jack Adapter',            'dc_jack_adapter',            [],       "",          True]]
+class Product:
+    def __init__(self, display_name, url_part, bindings, is_published):
+        self.display_name = display_name
+        self.url_part = url_part
+        self.bindings = bindings
+        self.is_published = is_published
 
 
 brick_descriptions = {
@@ -124,6 +136,22 @@ brick_descriptions = {
     'de': 'Steuert einen bipolaren Schrittmotor mit max. 38V und 2,5A pro Phase'
     }
 }
+
+class Brick(Product):
+    def __init__(self, *args, **kwargs):
+        Product.__init__(self, *args, **kwargs)
+
+    @property
+    def description(self):
+        return brick_descriptions[self.url_part][lang]
+
+bricks = [Brick('DC',      'dc',      bindings, True),
+          Brick('Debug',   'debug',   [],       True),
+          Brick('IMU',     'imu',     bindings, True),
+          Brick('Master',  'master',  bindings, True),
+          Brick('Servo',   'servo',   bindings, True),
+          Brick('Stepper', 'stepper', bindings, True)]
+
 
 bricklet_descriptions = {
 'ambient_light': {
@@ -296,6 +324,58 @@ bricklet_descriptions = {
     },
 }
 
+class Bricklet(Product):
+    def __init__(self, *args, **kwargs):
+        Product.__init__(self, *args, **kwargs)
+
+    @property
+    def description(self):
+        return bricklet_descriptions[self.url_part][lang]
+
+bricklets = [Bricklet('Ambient Light',            'ambient_light',            bindings, True),
+             Bricklet('Analog In',                'analog_in',                bindings, True),
+             Bricklet('Analog Out',               'analog_out',               bindings, True),
+             Bricklet('Barometer',                'barometer',                bindings, True),
+             Bricklet('Breakout',                 'breakout',                 [],       True),
+             Bricklet('Current12',                'current12',                bindings, True),
+             Bricklet('Current25',                'current25',                bindings, True),
+             Bricklet('Distance IR',              'distance_ir',              bindings, True),
+             Bricklet('Distance US',              'distance_us',              bindings, False),
+             Bricklet('Dual Button',              'dual_button',              bindings, False),
+             Bricklet('Dual Relay',               'dual_relay',               bindings, True),
+             Bricklet('GPS',                      'gps',                      bindings, True),
+             Bricklet('Hall Effect',              'hall_effect',              bindings, False),
+             Bricklet('Humidity',                 'humidity',                 bindings, True),
+             Bricklet('Industrial Digital In 4',  'industrial_digital_in_4',  bindings, True),
+             Bricklet('Industrial Digital Out 4', 'industrial_digital_out_4', bindings, True),
+             Bricklet('Industrial Dual 0-20mA',   'industrial_dual_0_20ma',   bindings, True),
+             Bricklet('Industrial Quad Relay',    'industrial_quad_relay',    bindings, True),
+             Bricklet('IO-16',                    'io16',                     bindings, True),
+             Bricklet('IO-4',                     'io4',                      bindings, True),
+             Bricklet('Joystick',                 'joystick',                 bindings, True),
+             Bricklet('LCD 16x2',                 'lcd_16x2',                 bindings, True),
+             Bricklet('LCD 20x4',                 'lcd_20x4',                 bindings, True),
+             Bricklet('LED Strip',                'led_strip',                bindings, False),
+             Bricklet('Line',                     'line',                     bindings, False),
+             Bricklet('Linear Poti',              'linear_poti',              bindings, True),
+             Bricklet('Moisture',                 'moisture',                 bindings, False),
+             Bricklet('Motion Detector',          'motion_detector',          bindings, False),
+             Bricklet('Multi Touch',              'multi_touch',              bindings, False),
+             Bricklet('Piezo Buzzer',             'piezo_buzzer',             bindings, True),
+             Bricklet('Piezo Speaker',            'piezo_speaker',            bindings, False),
+             Bricklet('PTC',                      'ptc',                      bindings, True),
+             Bricklet('Remote Switch',            'remote_switch',            bindings, False),
+             Bricklet('Rotary Encoder',           'rotary_encoder',           bindings, False),
+             Bricklet('Rotary Poti',              'rotary_poti',              bindings, True),
+             Bricklet('Segment Display 4x7',      'segment_display_4x7',      bindings, False),
+             Bricklet('Sound Intensity',          'sound_intensity',          bindings, False),
+             Bricklet('Temperature',              'temperature',              bindings, True),
+             Bricklet('Temperature IR',           'temperature_ir',           bindings, True),
+             Bricklet('Tilt',                     'tilt',                     bindings, False),
+             Bricklet('Voltage',                  'voltage',                  bindings, True),
+             Bricklet('Voltage/Current',          'voltage_current',          bindings, True)]
+
+
 extension_descriptions = {
 'chibi': {
     'en': 'Wireless Chibi Master Extension',
@@ -315,6 +395,20 @@ extension_descriptions = {
     }
 }
 
+class Extension(Product):
+    def __init__(self, display_name, url_part, is_published):
+        Product.__init__(self, display_name, url_part, [], is_published)
+
+    @property
+    def description(self):
+        return extension_descriptions[self.url_part][lang]
+
+extensions = [Extension('Chibi Extension',    'chibi',    True),
+              Extension('Ethernet Extension', 'ethernet', True),
+              Extension('RS485 Extension',    'rs485',    True),
+              Extension('WIFI Extension',     'wifi',     True)]
+
+
 power_supply_descriptions = {
 'step_down': {
     'en': 'Powers a stack of Bricks with 5V',
@@ -322,12 +416,34 @@ power_supply_descriptions = {
     }
 }
 
+class PowerSupply(Product):
+    def __init__(self, display_name, url_part, is_published):
+        Product.__init__(self, display_name, url_part, [], is_published)
+
+    @property
+    def description(self):
+        return power_supply_descriptions[self.url_part][lang]
+
+power_supplies = [PowerSupply('Step-Down Power Supply', 'step_down', True)]
+
+
 accessory_descriptions = {
 'dc_jack_adapter': {
     'en': 'Adapter between a 5mm DC jack and 2 Pole Black Connector',
     'de': 'Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz'
     }
 }
+
+class Accessory(Product):
+    def __init__(self, display_name, url_part, is_published):
+        Product.__init__(self, display_name, url_part, [], is_published)
+
+    @property
+    def description(self):
+        return accessory_descriptions[self.url_part][lang]
+
+accessories = [Accessory('DC Jack Adapter', 'dc_jack_adapter', True)]
+
 
 index_table_head = {
 'en':
@@ -608,22 +724,6 @@ api_bindings_links_bricklet_row = {
 'de': ' :ref:`{2} <{0}_bricklet>` | :ref:`API <{0}_bricklet_{1}_api>` | :ref:`Beispiele <{0}_bricklet_{1}_examples>`'
 }
 
-def fill_dicts():
-    for brick in bricks:
-        brick[3] = brick_descriptions[brick[1]][lang]
-
-    for bricklet in bricklets:
-        bricklet[3] = bricklet_descriptions[bricklet[1]][lang]
-
-    for extension in extensions:
-        extension[3] = extension_descriptions[extension[1]][lang]
-
-    for power_supply in power_supplies:
-        power_supply[3] = power_supply_descriptions[power_supply[1]][lang]
-
-    for accessory in accessories:
-        accessory[3] = accessory_descriptions[accessory[1]][lang]
-
 LATEST_VERSIONS_URL = 'http://download.tinkerforge.com/latest_versions.txt'
 
 tool_versions = {}
@@ -683,8 +783,8 @@ def make_product_overview_table(devices, category, add_category_to_name=True):
     rows = []
 
     for device in devices:
-        if device[4]:
-            rows.append(row_head.format(device[0], device[1], device[3]))
+        if device.is_published:
+            rows.append(row_head.format(device.display_name, device.url_part, device.description))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -697,12 +797,12 @@ def make_download_tools_table():
     rows = []
 
     for tool in tools:
-        if tool[1] == 'brickd':
+        if tool.url_part == 'brickd':
             row_cell = row_multi_cell
         else:
             row_cell = row_all_cell
 
-        rows.append(row_cell.format(tool[0], tool[1], source_code, archive, *tool_versions[tool[1]]))
+        rows.append(row_cell.format(tool.display_name, tool.url_part, source_code, archive, *tool_versions[tool.url_part]))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -714,8 +814,10 @@ def make_download_bindings_table():
     rows = []
 
     for binding in bindings:
-        if binding[2]:
-            rows.append(row_cell.format(binding[0], binding[1], binding[3], archive, bindings_and_examples, *bindings_versions[binding[1]]))
+        if not binding.is_programming_language or not binding.is_published:
+            continue
+
+        rows.append(row_cell.format(binding.short_display_name, binding.url_part, binding.url_part_for_doc, archive, bindings_and_examples, *bindings_versions[binding.url_part]))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -729,19 +831,19 @@ def make_download_firmwares_table():
     bricklet_rows = []
 
     for brick in bricks:
-        if len(brick[2]) > 0 and brick[4]:
-            brick_rows.append(brick_row_cell.format(brick[0], brick[1], brick[1].replace('_', '-').replace('/', '-'), source_code, archive, *firmware_versions[brick[1]]))
+        if len(brick.bindings) > 0 and brick.is_published:
+            brick_rows.append(brick_row_cell.format(brick.display_name, brick.url_part, brick.url_part.replace('_', '-').replace('/', '-'), source_code, archive, *firmware_versions[brick.url_part]))
 
     def handle_bricklet(name, common_url_part, plugin_url_part):
         bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, source_code, archive, *plugin_versions[plugin_url_part]))
 
     for bricklet in bricklets:
-        if len(bricklet[2]) > 0 and bricklet[4]:
-            if bricklet[1] == 'lcd_20x4':
-                handle_bricklet(bricklet[0] + ' 1.1', bricklet[1], bricklet[1] + '_v11')
-                handle_bricklet(bricklet[0] + ' 1.2', bricklet[1], bricklet[1] + '_v12')
+        if len(bricklet.bindings) > 0 and bricklet.is_published:
+            if bricklet.url_part == 'lcd_20x4':
+                handle_bricklet(bricklet.display_name + ' 1.1', bricklet.url_part, bricklet.url_part + '_v11')
+                handle_bricklet(bricklet.display_name + ' 1.2', bricklet.url_part, bricklet.url_part + '_v12')
             else:
-                handle_bricklet(bricklet[0], bricklet[1], bricklet[1])
+                handle_bricklet(bricklet.display_name, bricklet.url_part, bricklet.url_part)
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows)) + '\n'
 
@@ -750,23 +852,23 @@ def make_api_bindings_bindings_table():
     rows = []
 
     for binding in bindings:
-        if binding[2]:
-            rows.append(row.format(binding[0], binding[1]))
+        if binding.is_programming_language and binding.is_published:
+            rows.append(row.format(binding.short_display_name, binding.url_part))
 
     return '\n'.join(rows) + '\n'
 
 def make_api_bindings_links_table(binding):
-    ipcon_line = api_bindings_links_ipcon_row[lang].format(binding[1])
+    ipcon_line = api_bindings_links_ipcon_row[lang].format(binding.url_part)
 
     brick_lines = []
     for brick in bricks:
-        if brick[4] and len(brick[2]) > 0: # released and has bindings
-            brick_lines.append(api_bindings_links_brick_row[lang].format(brick[1], binding[1], brick[0]))
+        if brick.is_published and len(brick.bindings) > 0: # released and has bindings
+            brick_lines.append(api_bindings_links_brick_row[lang].format(brick.url_part, binding.url_part, brick.display_name))
 
     bricklet_lines = []
     for bricklet in bricklets:
-        if bricklet[4] and len(bricklet[2]) > 0: # released and has bindings
-            bricklet_lines.append(api_bindings_links_bricklet_row[lang].format(bricklet[1], binding[1], bricklet[0]))
+        if bricklet.is_published and len(bricklet.bindings) > 0: # released and has bindings
+            bricklet_lines.append(api_bindings_links_bricklet_row[lang].format(bricklet.url_part, binding.url_part, bricklet.display_name))
 
     return api_bindings_links_table_head[lang].format(ipcon_line,
                                                       '\n'.join(brick_lines),
@@ -782,16 +884,16 @@ def make_source_code_gits_table():
     extension_rows = []
 
     for brick in bricks:
-        if brick[4]:
-            brick_rows.append(brick_row_cell.format(brick[0], brick[1].replace('_', '-').replace('/', '-')))
+        if brick.is_published:
+            brick_rows.append(brick_row_cell.format(brick.display_name, brick.url_part.replace('_', '-').replace('/', '-')))
 
     for bricklet in bricklets:
-        if bricklet[4]:
-            bricklet_rows.append(bricklet_row_cell.format(bricklet[0], bricklet[1].replace('_', '-').replace('/', '-')))
+        if bricklet.is_published:
+            bricklet_rows.append(bricklet_row_cell.format(bricklet.display_name, bricklet.url_part.replace('_', '-').replace('/', '-')))
 
     for extension in extensions:
-        if extension[4]:
-            extension_rows.append(extension_row_cell.format(extension[0], extension[1].replace('_', '-').replace('/', '-')))
+        if extension.is_published:
+            extension_rows.append(extension_row_cell.format(extension.display_name, extension.url_part.replace('_', '-').replace('/', '-')))
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows)) + '\n'
 
@@ -806,15 +908,16 @@ def make_index_table_block(devices, category, add_category_to_name=True):
     rows = []
 
     for device in devices:
-        if not device[4]:
+        if not device.is_published:
             continue
 
         cells = []
 
-        for binding in device[2]:
-            cells.append(row_cell.format(binding[0], device[1], binding[1]))
+        for binding in device.bindings:
+            if binding.is_published:
+                cells.append(row_cell.format(binding.short_display_name, device.url_part, binding.url_part))
 
-        row = row_head.format(device[0], device[1]) + ', '.join(cells)
+        row = row_head.format(device.display_name, device.url_part) + ', '.join(cells)
         rows.append(row)
 
     return '\n'.join(rows)
@@ -826,10 +929,13 @@ def make_index_table():
     ipcon_cells = []
 
     for binding in bindings:
-        if binding[2]:
-            ipcon_cells.append(ipcon_cell.format(binding[0], binding[1]))
+        if not binding.is_published:
+            continue
+
+        if binding.is_programming_language:
+            ipcon_cells.append(ipcon_cell.format(binding.short_display_name, binding.url_part))
         else:
-            ipcon_cells.append(ipcon_cell_llproto.format(binding[0], binding[1]))
+            ipcon_cells.append(ipcon_cell_llproto.format(binding.short_display_name, binding.url_part))
 
     return index_table_head[lang].format(ipcon_head + ', '.join(ipcon_cells),
                                          make_index_table_block(bricks, 'brick'),
@@ -871,11 +977,14 @@ def make_hlpi_table(device, category):
     row = hlpi_row[lang]
     rows = []
 
-    for binding in device[2]:
-        if binding[2]:
-            rows.append(row_source.format(binding[0], device[1], category, binding[1]))
+    for binding in device.bindings:
+        if not binding.is_published:
+            continue
+
+        if binding.is_programming_language:
+            rows.append(row_source.format(binding.short_display_name, device.url_part, category, binding.url_part))
         else:
-            rows.append(row.format(binding[0], device[1], category, binding[1]))
+            rows.append(row.format(binding.short_display_name, device.url_part, category, binding.url_part))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -934,7 +1043,6 @@ def generate(path):
         print('Wrong working directory')
         sys.exit(1)
 
-    fill_dicts()
     get_latest_version_info()
 
     print('Generating index_links.table')
@@ -971,19 +1079,19 @@ def generate(path):
     write_if_changed(os.path.join(path, 'source', 'Source_Code_gits.table'), make_source_code_gits_table())
 
     for brick in bricks:
-        if len(brick[2]) == 0:
+        if len(brick.bindings) == 0:
             continue
 
-        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_')
+        name = brick.display_name.replace(' ', '_').replace('-', '').replace('/', '_')
 
         print('Generating {0}_Brick_hlpi.table'.format(name))
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick_hlpi.table'), make_hlpi_table(brick, 'brick'))
 
     for bricklet in bricklets:
-        if len(bricklet[2]) == 0:
+        if len(bricklet.bindings) == 0:
             continue
 
-        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_')
+        name = bricklet.display_name.replace(' ', '_').replace('-', '').replace('/', '_')
 
         print('Generating {0}_hlpi.table'.format(name))
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), make_hlpi_table(bricklet, 'bricklet'))
@@ -992,9 +1100,11 @@ def generate(path):
     write_if_changed(os.path.join(path, 'source', 'Software', 'Device_Identifier.table'), make_device_identifier_table())
 
     for binding in bindings:
-        if binding[2]:
-            print('Generating API_Bindings_{0}_links.table'.format(binding[3]))
-            write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_{0}_links.table'.format(binding[3])), make_api_bindings_links_table(binding))
+        if not binding.is_programming_language:
+            continue
+
+        print('Generating API_Bindings_{0}_links.table'.format(binding.url_part_for_doc))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_{0}_links.table'.format(binding.url_part_for_doc)), make_api_bindings_links_table(binding))
 
 if __name__ == "__main__":
     generate(os.getcwd())

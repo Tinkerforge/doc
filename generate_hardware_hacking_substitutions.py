@@ -4,13 +4,39 @@
 import os
 import sys
 
-from kit_generics import bindings
-from kit_generics import binding_name
-from kit_generics import binding_names
+import generate_tables
+
+bindings = generate_tables.bindings
 
 lang = 'en'
 
-examples_in = ('C', 'C#', 'Delphi', 'Java', 'PHP', 'Python', 'Ruby', 'Visual Basic .NET')
+          # url_part, display_name
+examples = {'c':      'C',
+            'csharp': 'C#',
+            'delphi': 'Delphi',
+            'java':   'Java',
+            'php':    'PHP',
+            'python': 'Python',
+            'ruby':   'Ruby',
+            'vbnet':  'Visual Basic .NET'}
+
+binding_name = {
+'en':
+""":ref:`{0} <api_bindings_{1}>`""",
+'de':
+""":ref:`{0} <api_bindings_{1}>`"""
+}
+
+binding_names = {
+'en':
+"""
+.. |bindings| replace:: {0}
+""",
+'de':
+"""
+.. |bindings| replace:: {0}
+"""
+}
 
 common_intro = {
 'en':
@@ -92,6 +118,35 @@ Falls dies nicht der Fall ist sollte
 `hier <http://csharp.net-tutorials.com/>`__ begonnen werden. Informationen
 über die Tinkerforge API sind dann :ref:`hier <api_bindings_csharp_windows_phone>`
 zu finden.
+<<<intro
+"""
+}
+
+ios_common_intro = {
+'en':
+"""
+>>>intro
+For this project we are assuming, that you have `Xcode
+<https://developer.apple.com/xcode/>`__ set up and that you have a
+rudimentary understanding of the Objective-C language.
+
+If you are totally new to Objective-C itself you should start
+`here <http://cocoadevcentral.com/d/learn_objectivec/>`__.
+If you are new to the Tinkerforge API, you should start
+:ref:`here <api_bindings_c_ios>`.
+<<<intro
+""",
+'de':
+"""
+>>>intro
+Für diese Projekt setzen wir voraus, dass `Xcode
+<https://developer.apple.com/xcode/>`__
+eingerichtet ist und ein grundsätzliches Verständnis der Objective-C
+Programmiersprache vorhanden ist.
+
+Falls dies nicht der Fall ist sollte
+`hier <http://cocoadevcentral.com/d/learn_objectivec/>`__ begonnen werden. Informationen
+über die Tinkerforge API sind dann :ref:`hier <api_bindings_c_ios>` zu finden.
 <<<intro
 """
 }
@@ -910,7 +965,7 @@ power_outlet_control_steps = {
  not be clickable if there is no connection.
 
 .. |step4_robust1| replace::
- But the program is not yet robust enough. What happens if it can't connect? 
+ But the program is not yet robust enough. What happens if it can't connect?
  What happens if there is no Industrial Quad Relay Bricklet with the given UID?
 
 .. |step4_robust2| replace::
@@ -1049,50 +1104,51 @@ def make_substitutions():
 
     formated_binding_names = []
     for binding in bindings:
-        formated_binding_names.append(binding_name[lang].format(binding[0], binding[2]))
+        if binding.is_programming_language and binding.is_published:
+            formated_binding_names.append(binding_name[lang].format(binding.display_name, binding.url_part))
 
     substitutions += binding_names[lang].format(', '.join(formated_binding_names)) + '\n'
 
     example_lines = []
     for binding in bindings:
-        if binding[1] in examples_in:
-            example_lines.append(smoke_detector_example_line[lang].format(binding[1], binding[2]))
+        if binding.url_part in examples and binding.is_programming_language and binding.is_published:
+            example_lines.append(smoke_detector_example_line[lang].format(examples[binding.url_part], binding.url_part))
 
     substitutions += smoke_detector_examples[lang].format(', '.join(example_lines))
 
     examples_toctree_lines = []
     for binding in bindings:
-        if binding[1] in examples_in:
-            examples_toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding[3]))
+        if binding.url_part in examples and binding.is_programming_language and binding.is_published:
+            examples_toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding.url_part_for_doc))
 
     substitutions += smoke_detector_examples_toctree[lang].format('\n'.join(examples_toctree_lines))
 
     example_download_lines = []
     for binding in bindings:
-        if binding[1] in examples_in:
-            example_download_lines.append(smoke_detector_example_download_line[lang].format(binding[1], binding[2]))
+        if binding.url_part in examples and binding.is_programming_language and binding.is_published:
+            example_download_lines.append(smoke_detector_example_download_line[lang].format(examples[binding.url_part], binding.url_part))
 
     substitutions += smoke_detector_example_downloads[lang].format(', '.join(example_download_lines))
 
 
     example_lines = []
     for binding in bindings:
-        if binding[1] in examples_in:
-            example_lines.append(remote_switch_example_line[lang].format(binding[1], binding[2]))
+        if binding.url_part in examples:
+            example_lines.append(remote_switch_example_line[lang].format(examples[binding.url_part], binding.url_part))
 
     substitutions += remote_switch_examples[lang].format(', '.join(example_lines))
 
     examples_toctree_lines = []
     for binding in bindings:
-        if binding[1] in examples_in:
-            examples_toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding[3]))
+        if binding.url_part in examples:
+            examples_toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding.url_part_for_doc))
 
     substitutions += remote_switch_examples_toctree[lang].format('\n'.join(examples_toctree_lines))
 
     example_download_lines = []
     for binding in bindings:
-        if binding[1] in examples_in:
-            example_download_lines.append(remote_switch_example_download_line[lang].format(binding[1], binding[2]))
+        if binding.url_part in examples:
+            example_download_lines.append(remote_switch_example_download_line[lang].format(examples[binding.url_part], binding.url_part))
 
     substitutions += remote_switch_example_downloads[lang].format(', '.join(example_download_lines))
 
@@ -1100,8 +1156,8 @@ def make_substitutions():
 
 def make_common_substitutions(binding):
     substitutions = ''
-    if binding[1] in examples_in:
-        substitutions += common_intro[lang].format(binding[1], binding[2], binding[4][lang])
+    if binding.url_part in examples:
+        substitutions += common_intro[lang].format(examples[binding.url_part], binding.url_part, binding.tutorial)
 
     return substitutions
 
@@ -1117,6 +1173,11 @@ def make_windows_phone_common_substitutions():
 
     return substitutions
 
+def make_ios_common_substitutions():
+    substitutions = ''
+    substitutions += ios_common_intro[lang]
+
+    return substitutions
 
 def make_smoke_detector_substitutions():
     substitutions = ''
@@ -1131,8 +1192,8 @@ def make_smoke_detector_substitutions():
 def make_smoke_detector_toctree():
     toctree_lines = []
     for binding in bindings:
-        if binding[1] in examples_in:
-            toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding[3]))
+        if binding.url_part in examples:
+            toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding.url_part_for_doc))
 
     return smoke_detector_examples_toctree[lang].format('\n'.join(toctree_lines))
 
@@ -1147,8 +1208,8 @@ def make_remote_switch_substitutions():
 def make_remote_switch_toctree():
     toctree_lines = []
     for binding in bindings:
-        if binding[1] in examples_in:
-            toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding[3]))
+        if binding.url_part in examples:
+            toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding.url_part_for_doc))
 
     return remote_switch_examples_toctree[lang].format('\n'.join(toctree_lines))
 
@@ -1198,19 +1259,24 @@ def generate(path):
         print 'Wrong working directory'
         sys.exit(1)
 
+    generate_tables.lang = lang
+
     print 'Generating HardwareHacking.substitutions'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'HardwareHacking.substitutions'), make_substitutions())
 
     for binding in bindings:
-        if binding[1] in examples_in:
-            print 'Generating {0}Common.substitutions (HardwareHacking)'.format(binding[3])
-            write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding[3] + 'Common.substitutions'), make_common_substitutions(binding))
+        if binding.url_part in examples:
+            print 'Generating {0}Common.substitutions (HardwareHacking)'.format(binding.url_part_for_doc)
+            write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding.url_part_for_doc + 'Common.substitutions'), make_common_substitutions(binding))
 
     print 'Generating AndroidCommon.substitutions (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'AndroidCommon.substitutions'), make_android_common_substitutions())
 
     print 'Generating WindowsPhoneCommon.substitutions (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'WindowsPhoneCommon.substitutions'), make_windows_phone_common_substitutions())
+
+    print 'Generating iOSCommon.substitutions (HardwareHacking)'
+    write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'iOSCommon.substitutions'), make_ios_common_substitutions())
 
     print 'Generating SmokeDetector.substitutions (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'SmokeDetector.substitutions'), make_smoke_detector_substitutions())

@@ -150,8 +150,8 @@ Ein `laser-geschnittenes Gehäuse für das Distance US Bricklet
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-* Schraube Abstandshalter an das Bricklet,
-* baue Seitenteile auf mit Bricklet und Sensor in der Mitte,
+* Schraube Abstandshalter an das Bricklet (jeder lange Abstandshalter besteht aus 2x 9mm und 1x 12mm Stücken),
+* baue Seitenteile auf mit Bricklet und Sensor in der Mitte (das Vorderteil ist asymmetrisch, der breitere Rand gehört von außen gesehen nach rechts),
 * schraube Unterteil an untere Abstandshalter,
 * schraube Oberteil auf obere Abstandshalter.
 

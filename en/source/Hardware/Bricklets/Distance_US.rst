@@ -148,8 +148,8 @@ A `laser-cut case for the Distance US Bricklet
 
 The assembly is easiest if you follow the following steps:
 
-* Screw spacers to the Bricklet,
-* build up side plates and put them around Bricklet and sensor,
+* Screw spacers to the Bricklet (each long spacer consists of 2x 9mm and 1x 12mm pieces),
+* build up side plates and put them around Bricklet and sensor (the front plate is asymmetric, the wider margin goes to the right side, when viewed from the outside),
 * screw bottom plate to bottom spacers,
 * screw top plate to top spacers.
 
