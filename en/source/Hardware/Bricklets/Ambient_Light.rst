@@ -35,6 +35,11 @@ Ambient Light Bricklet
 	             "Ambient Light Bricklet with Master Brick")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
+	             "Cases/bricklet_ambient_light_case_build_up_600.jpg",
+	             "Ambient Light Bricklet in Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_ambient_light_brickv_100.jpg",
 	             "Bricklets/bricklet_ambient_light_brickv.jpg",
 	             "Ambient Light Bricklet in Brick Viewer")
