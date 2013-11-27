@@ -36,9 +36,9 @@ Sound Intensity Bricklet
 	             "Sound Intensity Bricklet")
 	}}
 	{{
-	    tfdocimg("Cases/bricklet_segment_display_4x7_case_tilted_100.jpg",
-	             "Cases/bricklet_segment_display_4x7_case_tilted_600.jpg",
-	             "Segment Display 4x7 Bricklet im Gehäuse")
+	    tfdocimg("Cases/bricklet_sound_intensity_brickv_100.jpg",
+	             "Cases/bricklet_sound_intensity_brickv_600.jpg",
+	             "Sound Intensity Bricklet im Gehäuse")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_sound_intensity_brickv_100.jpg",
