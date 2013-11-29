@@ -41,13 +41,13 @@ Moisture Bricklet
 	             "Moisture Bricklet im Gehäuse")
 	}}
 	{{
-	    tfdocimg("Cases/bricklet_moisture_plant1_100.jpg",
-	             "Cases/bricklet_moisture_plant1_600.jpg",
+	    tfdocimg("Bricklets/bricklet_moisture_plant1_100.jpg",
+	             "Bricklets/bricklet_moisture_plant1_600.jpg",
 	             "Moisture Bricklet in Erde einer Pflanze")
 	}}
 	{{
-	    tfdocimg("Cases/bricklet_moisture_plant2_100.jpg",
-	             "Cases/bricklet_moisture_plant2_600.jpg",
+	    tfdocimg("Bricklets/bricklet_moisture_plant2_100.jpg",
+	             "Bricklets/bricklet_moisture_plant2_600.jpg",
 	             "Moisture Bricklet in Erde einer Pflanze")
 	}}
 	{{
