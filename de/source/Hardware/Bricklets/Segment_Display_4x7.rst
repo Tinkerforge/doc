@@ -31,6 +31,11 @@ Segment Display 4x7 Bricklet
 	             "Segment Display 4x7 Bricklet im Gehäuse")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_segment_display_4x7_leds_on_100.jpg",
+	             "Bricklets/bricklet_segment_display_4x7_leds_on_600.jpg",
+	             "Segment Display 4x7 Bricklet aktiv")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_segment_display_4x7_brickv_100.jpg",
 	             "Bricklets/bricklet_segment_display_4x7_brickv.jpg",
 	             "Segment Display 4x7 Bricklet im Brick Viewer")
