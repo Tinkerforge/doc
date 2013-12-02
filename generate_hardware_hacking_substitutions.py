@@ -369,7 +369,7 @@ smoke_detector_intro = {
 """
 >>>intro
 We are also assuming that you have a smoke detector connected to an
-:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
+:ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` as
 described :ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`.
 <<<intro
 """,
@@ -377,7 +377,7 @@ described :ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware_setup
 """
 >>>intro
 Wir setzen weiterhin voraus, dass ein passender Rauchmelder mit einem
-:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` verbunden
+:ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` verbunden
 wurde wie :ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`
 beschrieben.
 <<<intro
