@@ -70,6 +70,11 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Current Consumption               | 1mA (all segments off)
+                                  | 6mA (all segments on at minimum brightness)
+                                  | 62mA (all segments on at maximum brightness)
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Segment Width                     6mm
 Segment Height                    10mm
 Brightness of Segments            Configurable, up to 70mcd

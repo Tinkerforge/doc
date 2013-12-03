@@ -109,6 +109,9 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Supported LED Driver              WS2801
+Current Consumption               1mA (idle), 4mA (active)
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Resolution                        8bit per LED
 Maximum Number of LEDs            960 (320 RGB LEDs)*
 Maximum Update Rate               100 updates per second

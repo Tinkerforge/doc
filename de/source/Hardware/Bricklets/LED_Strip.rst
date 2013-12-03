@@ -110,6 +110,9 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Unterstützer LED-Treiber          WS2801
+Stromverbrauch                    1mA (inaktiv), 4mA (aktiv)
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Auflösung                         8Bit pro LED
 Maximale Anzahl LEDs              960 (320 RGB LEDs)*
 Maximale Aktualisierungsrate      100 Aktualisierungen pro Sekunde

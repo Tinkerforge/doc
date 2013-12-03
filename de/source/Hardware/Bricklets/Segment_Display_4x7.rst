@@ -71,6 +71,11 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
+Stromverbrauch                    | 1mA (alle Segmente aus)
+                                  | 6mA (alle Segmente an mit minimaler Helligkeit)
+                                  | 62mA (alle Segmente an mit maximaler Helligkeit)
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
 Segmentbreite                     6mm
 Segmenthöhe                       10mm
 Helligkeit eines Segments         Konfigurierbar, bis zu 70mcd
