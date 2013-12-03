@@ -101,6 +101,8 @@ voneinander zu steuern.
 Mit Hilfe der API können alle LEDs gleichzeitig mit einer festen
 Aktualisierungsrate von bis zu 100Hz gesteuert werden.
 
+Brick Daemon 2.0.10 oder neuer wird für diese Bricklet empfohlen.
+
 TODO: Video
 
 Technische Spezifikation

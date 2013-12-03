@@ -100,6 +100,8 @@ It is possible to independently control 320 RGB LEDs (960 individual LEDs).
 The API allows to change all LEDs at the same time with a fixed update rate
 of up to 100Hz.
 
+Brick Daemon 2.0.10 or newer is recommended for this Bricklet.
+
 TODO: Video
 
 Technical Specifications
