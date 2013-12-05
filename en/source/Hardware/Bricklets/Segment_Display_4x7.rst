@@ -157,3 +157,14 @@ High Level Programming Interface
 See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
 
 .. include:: Segment_Display_4x7_hlpi.table
+
+
+Known Bugs
+----------
+
+When connecting the Segment Display 4x7 Bricklet (version 1.0) to a Master 
+Brick, try to connect it to port A or B (not C or D). The reason for that is, 
+that the Segment Display 4x7 Bricklet might interfere with the Analog-to-digital 
+converter of the microcontroller due to a voltage feedback.
+
+This will be fixed in the next product version.

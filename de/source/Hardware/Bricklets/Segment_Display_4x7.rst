@@ -159,3 +159,14 @@ Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detailliert
 Beschreibung.
 
 .. include:: Segment_Display_4x7_hlpi.table
+
+
+Bekannte Fehler/Probleme
+------------------------
+
+Falls das Segment Display 4x7 Bricklet (Version 1.0) an ein Master Brick 
+angeschlossen wird, sollte versucht werden dieses an Port A oder B anzuschließen 
+(nicht C und D). Das Segment Display 4x7 Bricklet speist eine Spannung zurück 
+zum Master, welches den Analog-Digital-Wandler des Mikrocontrollers stören kann.
+
+Dieses Problem wird in der nächsten Produktversion gelöst.
