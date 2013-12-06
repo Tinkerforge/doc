@@ -11,7 +11,7 @@ Our products are divided into five different categories:
 * :ref:`Bricks <product_overview_bricks>`:
   Stackable microcontroller boards for sensing and controlling.
 * :ref:`Bricklets <product_overview_bricklets>`:
-  Non-stackable sensor/actor boards that extend the features of a Brick.
+  Non-stackable sensor/actuator boards that extend the features of a Brick.
 * :ref:`Master Extensions <product_overview_master_extensions>`:
   Boards that extend the communication interfaces of a
   :ref:`Master Brick <master_brick>`.
@@ -62,8 +62,8 @@ Bricks
        :align: center
        :target: _images/Bricks/brick_imu_tilted_front_800.jpg
 
-Bricks are 4 x 4cm (1.57 x 1.57") boards equipped with a 32-bit ARM
-microcontroller, an USB port, two status LEDs, connectors for
+Bricks are 4 x 4cm (1.57 x 1.57") boards equipped with a preprogrammed 32-bit
+ARM microcontroller, a Mini-USB port, two status LEDs, connectors for
 stacking and up to four connectors for
 :ref:`Bricklets <product_overview_bricklets>`.
 There are Bricks that perform complex

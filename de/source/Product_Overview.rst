@@ -65,8 +65,9 @@ Bricks
        :target: _images/Bricks/brick_imu_tilted_front_800.jpg
 
 
-Bricks sind 4 x 4cm (1,57 x 1,57") große Platinen die mit einem 32-Bit ARM
-Mikrocontroller, einem USB Abschluss, zwei Status LEDs, vier Steckern zur
+Bricks sind 4 x 4cm (1,57 x 1,57") große Platinen die mit einem
+vorprogrammierten 32-Bit ARM
+Mikrocontroller, einem Mini-USB Abschluss, zwei Status LEDs, vier Steckern zur
 Stapelbildung und bis zu vier Anschlüssen für :ref:`Bricklets
 <product_overview_bricklets>` ausgestattet sind. Es gibt Bricks für Messaufgaben
 (z.B. :ref:`IMU Brick <imu_brick>`), für Kommunikation (z.B. :ref:`Master Brick
