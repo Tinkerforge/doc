@@ -389,7 +389,7 @@ Bigger Push Buttons
 The push buttons on the LCD 20x4 Bricklet are a bit fiddly. To extend
 the Weather Station with bigger buttons we provide the
 `Weather Station Push Button Extension
-<https://www.tinkerforge.com/en/shop/kits/weather-station-push-button-extension.html>`__.
+<https://www.tinkerforge.com/en/shop/kits/weather-station-push-button-add-on.html>`__.
 
 .. image:: /Images/Kits/weather_station_buttons_assembled_600.jpg
    :scale: 100 %

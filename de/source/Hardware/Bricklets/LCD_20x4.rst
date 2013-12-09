@@ -162,7 +162,7 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das LCD 20x4 Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-lcd-20x4-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-lcd20x4-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_lcd_20x4_case_350.jpg
    :scale: 100 %

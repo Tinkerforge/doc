@@ -61,7 +61,7 @@ Features
 
 * Steuert bis zu **7** RC Servos mit max. **3A**
 * Steuert Brushless Motoren (benötigt externe ESC)
-* Unterstützt `TurboPWM <http://wiki.openpilot.org/display/Doc/TurboPWM>`__
+* Unterstützt `TurboPWM <http://wiki.openpilot.org/display/Doc/TurboPWM+ESC's>`__
 * Software einstellbare Servospannung, Periode und Pulsweite
 * Position, Geschwindigkeit und Beschleunigung steuerbar
 * Eine USB und zwei Bricklet Schnittstellen

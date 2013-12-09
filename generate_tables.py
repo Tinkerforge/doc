@@ -826,7 +826,7 @@ def make_download_firmwares_table():
     source_code = download_firmwares_source_code[lang]
     table_head = download_firmwares_table_head[lang]
     brick_row_cell = ' :ref:`{0} <{1}_brick>` | `Firmware <http://download.tinkerforge.com/firmwares/bricks/{1}/brick_{1}_firmware_{5}_{6}_{7}.bin>`__, `{3} <https://github.com/Tinkerforge/{2}-brick/archive/v{5}.{6}.{7}.zip>`__ | {5}.{6}.{7} | `{4} <http://download.tinkerforge.com/firmwares/bricks/{1}/>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-brick/master/software/changelog>`__'
-    bricklet_row_cell = ' :ref:`{0} <{1}_bricklet>` | `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{3}/bricklet_{3}_firmware_{6}_{7}_{8}.bin>`__, `{4} <https://github.com/Tinkerforge/{2}-bricklet/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/bricklets/{1}/>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
+    bricklet_row_cell = ' :ref:`{0} <{1}_bricklet>` | `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{3}/bricklet_{3}_firmware_{6}_{7}_{8}.bin>`__, `{4} <https://github.com/Tinkerforge/{2}-bricklet/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/bricklets/{3}/>`__ | `Changelog <https://raw.github.com/Tinkerforge/{2}-bricklet/master/software/changelog>`__'
     brick_rows = []
     bricklet_rows = []
 

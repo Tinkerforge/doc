@@ -20,7 +20,7 @@ Plugins werden genutzt um überwachende Services zu erzeugen. Dies sind
 Programme mit einem definierten Rückgabewert (z.B. 0=OK, 1=Warning, 2=Critical, 
 3=Unknown). Deren Standardausgabe wird von Nagios genutzt um Informationen
 über deren Zustand zu bekommen. Die
-`Nagios Developer Guidelines <http://nagiosplug.sourceforge.net/developer-guidelines.html#AEN76>`__
+`Nagios Developer Guidelines <https://www.nagios-plugins.org/doc/guidelines.html>`__
 geben hier weitere Auskünfte.
 
 Nach der Grundinstallation von Nagios kann damit begonnen werden ein eigens

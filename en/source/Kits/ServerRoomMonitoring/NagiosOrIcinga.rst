@@ -20,7 +20,7 @@ Plugins are used to create monitoring services. Plugins are programs with
 defined return codes (e.g. 0=OK, 1=Warning, 2=Critical, 3=Unknown). Their 
 standard output is used by Nagios to get information about their state. Please 
 refer to the 
-`Nagios Developer Guidelines <http://nagiosplug.sourceforge.net/developer-guidelines.html#AEN76>`__
+`Nagios Developer Guidelines <https://www.nagios-plugins.org/doc/guidelines.html>`__
 for more information.
 
 After the basic installation of Nagios you can start with the 

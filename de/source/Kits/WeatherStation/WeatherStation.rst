@@ -392,7 +392,7 @@ Größere Drucktaster
 Die Drucktaster des LCD 20x4 Bricklet sind ein wenig fummelig. Als
 Erweiterung für die Wetterstation bieten wir große Drucktaster
 mit der `Wetterstation Drucktaster-Erweiterung
-<https://www.tinkerforge.com/de/shop/kits/weather-station-push-button-extension.html>`__ an.
+<https://www.tinkerforge.com/de/shop/kits/weather-station-push-button-add-on.html>`__ an.
 
 
 .. image:: /Images/Kits/weather_station_buttons_assembled_600.jpg

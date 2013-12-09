@@ -48,10 +48,12 @@ The Chibi Extension is equipped with a 700/800/900MHz radio transceiver.
 Typically this transceiver is used for long range
 `Zigbee <http://en.wikipedia.org/wiki/Zigbee>`__ networks. Unfortunately
 the Zigbee terms of use do forbid a GPL implementation of the
-Zigbee protocol stack (see `here <http://freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`__ for more information).
+Zigbee protocol stack (see `here
+<http://www.freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`__
+for more information).
 
 Thus we decided to port the open source `Chibi Wireless Stack
-<http://freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`__
+<http://www.freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`__
 or this extension. It is a
 simple and small protocol stack that is perfectly suited for our use cases.
 

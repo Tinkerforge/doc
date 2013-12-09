@@ -32,7 +32,7 @@ History
    "",     "26", "`RS485 Extension <http://www.tinkerforge.com/en/blog/2012/6/28/rs485-extension>`__"
    "",     "30", "`Delphi bindings <http://www.tinkerforge.com/en/blog/2012/7/25/delphi-bindings-ready>`__"
    "",     "37", "Complete German translation of documentation"
-   "",     "38", "`WIFI Extension <http://www.tinkerforge.com/en/blog/2012/9/17/wifi-master-extension-availablel>`__"
+   "",     "38", "`WIFI Extension <http://www.tinkerforge.com/en/blog/2012/9/17/wifi-master-extension-available>`__"
    "",     "39", "`Barometer Bricklet <http://www.tinkerforge.com/en/blog/2012/9/28/barometer-bricklet-available-and-more-made-in-germany>`__"
    "",     "41", "`Add support for usage of two Master Extensions at the same time <http://www.tinkerunity.org/forum/index.php/topic,674.msg6312.html#msg6312>`__"
    "",     "45", "`Introduction of Industrial Bricklets <http://www.tinkerforge.com/en/blog/2012/11/5/introduction-of-industrial-bricklets>`__"
