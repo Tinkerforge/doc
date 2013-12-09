@@ -88,7 +88,9 @@ with high precision.
 
 It can be controlled by an (Embedded-) PC.
 Control via Wi-Fi is possible if a :ref:`WIFI Extension <wifi_extension>` is 
-added. To use it standalone you can add an embedded board such as the
+added. As alternative the weather station can be controlled over your local 
+network when adding a  :ref:`Ethernet Extension <ethernet_extension>`.
+To use it standalone you can add an embedded board such as the
 :ref:`Raspberry Pi <embedded_raspberry_pi>` which can be mounted in the casing.
 
 There are several example projects available, e.g. the measurements can be 

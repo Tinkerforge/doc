@@ -88,9 +88,11 @@ Präzision.
 
 Sie kann per USB von einem (Embedded-) PC gesteuert werden. 
 Auch eine Steuerung per WLAN ist über die :ref:`WIFI Extension <wifi_extension>`
-möglich. Für einen Standalone-Betrieb kann ein Embbeded Board, wie z.B. das
-:ref:`Raspberry Pi <embedded_raspberry_pi>`, direkt ins Gehäuse eingebaut
-werden.
+möglich. Alternativ kann die Wetterstation auch mittels einer 
+:ref:`Ethernet Extension <ethernet_extension>` in das lokale Netzwerk 
+eingebunden werden. Für einen Standalone-Betrieb kann ein Embbeded Board, wie 
+z.B. das :ref:`Raspberry Pi <embedded_raspberry_pi>`, direkt ins Gehäuse 
+eingebaut werden.
 
 Für die Wetterstation sind verschiedene Beispielprojekte verfügbar, so können 
 die Messwerte auf einem 20x4 Zeichen LCD angezeigt, 
