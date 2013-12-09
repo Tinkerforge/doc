@@ -205,6 +205,10 @@ is sometimes otherwise labeled. In the following example image the removed
 cover of the DIP switch is labeled with "System Code" and "Unit Code".
 "System Code" means house code and with "Unit Code" the receiver code is meant.
 
+In the image below DIP-switches 1 and 5 are on for the house code, this equals
+10001 in binary or 17 in decimal. For the receiver code only DIP-switch A is
+on, this equals 10000 in binary or 16 in decimal.
+
 .. image:: /Images/Bricklets/bricklet_remote_dip_switch_350.jpg
    :scale: 100 %
    :alt: DIP switch in remote switch to set house and receiver code

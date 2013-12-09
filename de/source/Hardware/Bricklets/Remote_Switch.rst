@@ -201,13 +201,17 @@ werden.
 Housecode und Receivercode
 ----------------------------
 
-Um Funksteckdosen oder -dimmer zu steuern, muss der Housecode und der 
-eingestellte Receivercode bekannt sein. Diese Codes werden typischerweise über
+Um Funksteckdosen oder -dimmer zu steuern, muss der eingestellte Housecode und
+Receivercode bekannt sein. Diese Codes werden typischerweise über
 kleine DIP-Schalter in der Steckdose oder dem Dimmer eingestellt. Es kann 
 vorkommen, dass Geräte nicht mit House- oder Receivercode beschriftet sind.
 Im nachfolgenden Foto ist zum Beispiel die DIP-Schalter-Abdeckung mit
 "System Code" und "Unit Code" beschriftet. Hierbei ist mit "System Code" der
 Housecode und mit "Unit Code" der Receivercode gemeint.
+
+Im Bild unten sind die DIP-Schalter 1 und 5 für den Housecode auf On gestellt,
+dies entspricht 10001 binär bzw. 17 dezimal. Für den Receivercode steht nur
+DIP-Schalter A auf On, dies entspricht 10000 binär bzw. 16 dezimal.
 
 .. image:: /Images/Bricklets/bricklet_remote_dip_switch_350.jpg
    :scale: 100 %
