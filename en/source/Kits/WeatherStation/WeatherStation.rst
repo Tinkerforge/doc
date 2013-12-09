@@ -249,13 +249,13 @@ RS485, Ethernet, etc.
 ^^^^^^^^^^^^^^^^^^^^^
 
 We could also control the Weather Station with the RS485 or
-Ethernet Extension. The setup in this case is the same as with the Wi-Fi
-Weather Station, we just have to exchange the WIFI Extension with the
-RS485 or Ethernet Extension.
+Ethernet Extension. The setup in this case is the same as with the "Wi-Fi
+Weather Station" described above, we just have to exchange the WIFI Extension 
+with the RS485 or Ethernet Extension.
 
-If the Ethernet Extension is used, the stack can also be powered by PoE.
-in this case the Step-Down Power Supply and the DC Jack Adapter are
-not needed.
+If the Ethernet Extension with PoE is used, the stack can also be powered by 
+PoE. in this case the Step-Down Power Supply and the DC Jack Adapter are not 
+needed.
 
 
 .. _starter_kit_weather_station_projects:
