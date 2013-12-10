@@ -173,6 +173,22 @@ Ein `laser-geschnittenes Gehäuse für das Motion Detector Bricklet
 
 |bricklet_case_hint|
 
+..
+  Modifikationsmöglichkeiten
+  --------------------------
+
+  Der Bewegungssensor kann auch unabhängig vom Bricklet angebracht werden.
+  Dazu muss zuerst der mitgelieferte Jumper auf die Stiftleiste wie nachfolgend
+  abgebildet gesteckt werden.
+
+  TODO Image sensor with placed jumper
+
+  Anschließend muss eine Verbindung zwischen dem Sensor und dem Bricklet 
+  hergestellt werden. Dazu kann zum Beispiel, wie nachfolgend abgebildet,
+  ein Kabel genutzt werden, dass an beide angelötet wird.
+    
+  TODO Image sensor <-> cable <-> Bricklet
+
 
 .. _motion_detector_bricklet_programming_interfaces:
 

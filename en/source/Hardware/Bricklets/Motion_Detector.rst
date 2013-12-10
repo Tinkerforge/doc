@@ -170,6 +170,20 @@ A `laser-cut case for the Motion Detector Bricklet
 
 |bricklet_case_hint|
 
+..
+  Modification Possibilities
+  --------------------------
+  The motion sensor can also be placed independently from the Bricklet. To do this a 
+  small jumper is delivered with the sensor and the Bricklet. Place the Jumper 
+  on the sensor as depicted below.
+
+  TODO Image sensor with placed jumper
+
+  After this you have to establish a connection between the sensor and the 
+  Bricklet. For example this can be done by soldering three wires on them as
+  depicted below
+    
+  TODO Image sensor <-> cable <-> Bricklet
 
 .. _motion_detector_bricklet_programming_interfaces:
 
