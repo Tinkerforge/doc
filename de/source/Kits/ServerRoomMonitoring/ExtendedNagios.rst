@@ -9,9 +9,10 @@ Erweitertes Nagios Beispiel
 Dieses Beispiel basiert auf dem
 :ref:`Nagios/Icinga Projekt <starter_kit_server_room_monitoring_nagios_or_icinga>`.
 Es erweitert dieses um die Möglichkeit einen Fehlerzustand anzuzeigen und
-Bewegung im Serverraum zu detektieren. Hierzu wird ein Motion Detector Bricklet 
-und ein Segment Display 4x7 Bricklet genutzt. Das Skript kann als Startpunkt für
-eigene Entwicklungen dienen.
+Bewegung im Serverraum zu detektieren. Hierzu wird ein 
+:ref:`Motion Detector Bricklet <motion_detector_bricklet>`
+und ein :ref:`Segment Display 4x7 Bricklet <segment_display_4x7_bricklet>` 
+genutzt. Das Skript kann als Startpunkt für eigene Entwicklungen dienen.
 
 Erweitertes Skript
 ^^^^^^^^^^^^^^^^^^

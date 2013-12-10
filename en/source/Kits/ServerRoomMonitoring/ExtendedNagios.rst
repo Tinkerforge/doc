@@ -8,8 +8,9 @@ Extended Nagios Example
 
 This example is an extended version of the 
 :ref:`Nagios/Icinga project <starter_kit_server_room_monitoring_nagios_or_icinga>`.
-It is extended by the usage of a Motion Detector Bricklet and a 
-Segment Display 4x7 Bricklet.
+It is extended by the usage of a 
+:ref:`Motion Detector Bricklet <motion_detector_bricklet>` and a 
+:ref:`Segment Display 4x7 Bricklet <segment_display_4x7_bricklet>`.
 
 With the extended script you can display if there is an error occurred
 and can detect motion in the server room. The script can be used as a starting
