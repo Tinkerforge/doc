@@ -137,7 +137,7 @@ Demo Application and Example Projects
 TODO Screenshot
 
 The demo application shows possible applications for this kit. It
-consists of five individual applications each also provided as single project 
+consists of 6 individual applications each also provided as individual project
 (see below). Each project is represented by its own tab and will be
 started by selecting the corresponding tab. The application supports the
 additional usage of two Dual Button Bricklets or one Multi Touch Bricklet
@@ -149,8 +149,8 @@ Before starting you have to configure the host and port. If you use the standard
 kit and have connected it directly to your PC via USB "localhost" and "4223" is 
 fine. If you extended the kit by 
 :ref:`Extensions <product_overview_master_extensions>` or 
-want to control the kit from another PC you have to enter the IP or hostname
-of the extension or the PC where the kit is connected to. Below the 
+want to control the kit from another PC you have to enter the IP address or
+hostname of the extension or the PC where the kit is connected to. Below the
 input boxes is a table which shows you the connected Bricks and Bricklets.
 
 
@@ -174,24 +174,13 @@ connected Multi Touch Bricklet with attached electrodes can be used (e.g.
 electrode 0 is left).
 
 The standalone Python project can be downloaded from
-`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__.
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__.
 This also incorporates the
 :ref:`Pong <starter_kit_blinkenlights_pong>` project and consists of mainly
 two files: ``tetris.py`` implements the game and ``config.py`` defines the
-configuration (host, port, keymaps and UIDs):
+configuration (host, port, UIDs, LED matrix layout and keymaps).
 
-.. code-block:: python
-
-    # General Settings                                                              
-    HOST = 'localhost'                                                              
-    PORT = 4223                                                                     
-                                                                                
-    # Optional Bricklets (use None as UID if not connected)                         
-    UID_MULTI_TOUCH_BRICKLET = 'pax'   
-    ...
-
-Modify the ``config.py`` according to your needs and run the application by
-calling:
+Modify ``config.py`` according to your needs and run the application:
 
 .. code-block:: python
 
@@ -211,29 +200,18 @@ TODO:
 * Example Image
 
 Like :ref:`Tetris <starter_kit_blinkenlights_tetris>` the 
-`Pong <http://en.wikipedia.org/wiki/Pong>`__ can be controlled
+`Pong <http://en.wikipedia.org/wiki/Pong>`__ game can be controlled
 by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be 
 controlled by two Dual Button Bricklets.
 
 The standalone Python project can be downloaded at 
-`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__.
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__.
 This also incorporates the
 :ref:`Tetris <starter_kit_blinkenlights_tetris>` project and consists of mainly
 two files: ``pong.py`` implements the game and ``config.py`` defines the
-configuration (host, port, keymaps and UIDs):
+configuration (host, port, UIDs, LED matrix layout and keymaps).
 
-.. code-block:: python
-
-    # General Settings                                                              
-    HOST = 'localhost'                                                              
-    PORT = 4223                                                                     
-                                                                                
-    # Optional Bricklets (use None as UID if not connected)                         
-    UID_MULTI_TOUCH_BRICKLET = 'pax'   
-    ...
-
-Modify the ``config.py`` according to your needs and run the application by
-calling:
+Modify the ``config.py`` according to your needs and run the application:
 
 .. code-block:: python
 
@@ -255,10 +233,9 @@ if you place the front panel in a distance of TODO to the back panel.
 The simulation is based on a particle system and can be configured by four 
 sliders:
 
-* **Speed**:
-  Defines the frame duration in milliseconds. After the duration time is 
-  exceeded a new frame will be computed. So if you decrease the frame duration
-  you will see a faster burning fire.
+* **Frame Rate**:
+  Defines the frame rate in Hz. The simulation is updated for each new frame.
+  If you increase the frame rate you will see a faster burning fire.
 
 * **Hue**:
   Defines the color of your fire.
@@ -270,22 +247,15 @@ sliders:
   Defines the end point where the fire particles will extinguish.
 
 Play with the sliders to configure your personal fire! With the "Default" button
-you will set back all sliders to their defaults.
+you will set back all sliders to their default values.
 
-The standalone Python project can be downloaded at 
-`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/fire>`__.
-It mainly consists of one file: ``fire.py``. In the main class ``Fire`` at first
-the necessary configurations are made:
+The standalone Python project can be downloaded from
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__.
+It consists of mainly two files: ``fire.py`` implements the simulation and
+``config.py`` defines the configuration (host, port, UID, LED matrix layout and
+simulation parameters).
 
-.. code-block:: python
-
-   class Fire:                                                                     
-       HOST = 'localhost'                                                          
-       PORT = 4223                                                                 
-       UID = 'abc'     
-       ...
-
-Whereas ``UID`` specifies the ID of the used LED Strip Bricklet. Run this demo by:
+Modify the ``config.py`` according to your needs and run the application:
 
 .. code-block:: python
 
@@ -302,35 +272,23 @@ TODO:
 * Frontpanel?
 * Example Image
 
-The "Scrolling Text" demo will scroll the entered Text with the given speed
-on the display. You can set changing colors by selecting "Rainbow" or select
-"Color" and pick the color you like by pressing the button.
+The "Text" demo will scroll the entered text with the given frame rate
+on the display. The text moved one column per frame. A higher frame rate results
+in faster moving text. You can set changing colors by selecting "Rainbow" or
+select "Color" and pick the color you like by pressing the button.
 
-The standalone Python project can be downloaded at 
-`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/text>`__.
-It mainly consists of one file: ``text.py``. In the main class "ScrollingText"
-at first the necessary configurations are made:
+The standalone Python project can be downloaded from
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__.
+It consists of mainly two files: ``text.py`` implements the logic and
+``config.py`` defines the configuration (host, port, UID, LED matrix layout and
+color parameters).
 
-.. code-block:: python
-
-    class ScrollingText:                                                            
-        HOST = 'localhost'                                                          
-        PORT = 4223                                                                 
-        UID = 'abc'      
-        ...
-
-Whereas ``UID`` specifies the ID of the used LED Strip Bricklet. 
-Below in the code are more definitions made, e.g.:
+Modify the ``config.py`` according to your needs and run the application with
+some text to display:
 
 .. code-block:: python
 
-    text_to_display = '   Starter Kit: Blinkenlights'     
-
-Defines the text to display. The demo can be executed by:
-
-.. code-block:: python
-
-   python text.py
+   python text.py Starter Kit: Blinkenlights
 
 
 .. _starter_kit_blinkenlights_images:
@@ -343,39 +301,53 @@ TODO:
 * Frontpanel? Distance?
 * Example Image
 
-The "Image" demo can be used to display user specific images and whole 
+The "Images" demo can be used to display user specific images and whole
 animations. 
 
 Choose the images you want to display by pressing "Choose images...". The 
-application will display each image for the given time ("Speed") and then switch
-to the next image. This way you can create animations. Each image is resized to
-20x10 pixels (size of the display) and stretched if the aspect ration does not 
-fit. Use an image editing tool if you are not satisfied with the results.
+application will display the images with the given frame rate and switch to the
+next image in the sequence each frame. This way you can create animations.
+Each image is resized to 20x10 pixel (size of the display) and stretched if the
+aspect ration does not  fit. Use an image editing tool if you are not satisfied
+with the results.
 
-The standalone Python project can be downloaded at 
-`github <https://github.com/Tinkerforge/blinkenlights/tree/master/images>`__.
-It mainly consists of one file: ``images.py``. In the main class "Images" at 
-first the necessary configurations are made:
+The standalone Python project can be downloaded from
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/images/python>`__.
+It consists of mainly two files: ``images.py`` implements the logic and
+``config.py`` defines the configuration (host, port, UID, LED matrix layout).
 
-.. code-block:: python
-
-    class Images:                                                            
-        HOST = 'localhost'                                                          
-        PORT = 4223                                                                 
-        UID = 'abc'    
-
-        SPEED = 1000 # in ms per step
-        ...
-
-Whereas ``UID`` specifies the ID of the used LED Strip Bricklet. 
-Execute the script and pass the image file locations to the script:
+Modify the ``config.py`` according to your needs and run the application with
+some image files to display:
 
 .. code-block:: python
 
-   python text.py image1.jpg image2.jpg ...
+   python text.py image1.jpg image2.jpg
 
-The images will be shown in a slide show with the specified speed.
 
+.. _starter_kit_blinkenlights_scrolling_rainbow:
+
+Rainbow
+^^^^^^^
+
+TODO:
+
+* Frontpanel?
+* Example Image
+
+The "Rainbow" demo will display a moving rainbow with the given frame rate
+and speed. A higher frame rate and speed results in faster moving rainbow.
+
+The standalone Python project can be downloaded from
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/rainbow/python>`__.
+It consists of mainly two files: ``rainbow.py`` implements the logic and
+``config.py`` defines the configuration (host, port, UID, LED matrix layout and
+speed parameter).
+
+Modify the ``config.py`` according to your needs and run the application:
+
+.. code-block:: python
+
+   python rainbow.py
 
 
 Further Enhancements
