@@ -124,11 +124,11 @@ Empfindlichkeit, Verzögerungs- und Blockierzeit
    :target: ../../_images/Bricklets/bricklet_motion_detector_potentiometer_caption_1200.jpg
 
 Der Sensor ist mit zwei Potentiometern ausgestattet. Mit dem rechten 
-Potentiometer kann die Empfindlichkeit des Sensors und damit die 
+Potentiometer kann die Empfindlichkeit (Sensitivity) des Sensors und damit die
 Erkennungsreichweite (3-7m) eingestellt werden. 
 Drehen des Potentiometer im Uhrzeigersinn erhöht die Erkennungsreichweite.
 
-Mit dem linken Potentiometer wird die Verzögerungszeit eingestellt
+Mit dem linken Potentiometer wird die Verzögerungszeit (Delay) eingestellt
 (5s-200s). Für diese Zeit bleibt der Sensor im "Bewegung erkannt" Zustand,
 nachdem keine Bewegung mehr erkannt wurde. Drehen des Potentiometer im
 Uhrzeigersinn erhöht die Verzögerungszeit.
