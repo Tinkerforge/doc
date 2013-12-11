@@ -128,23 +128,49 @@ Potentiometer kann die Empfindlichkeit des Sensors und damit die
 Erkennungsreichweite (3-7m) eingestellt werden. 
 Drehen des Potentiometer im Uhrzeigersinn erhöht die Erkennungsreichweite.
 
-Mit dem linken Potentiometer wird die Verzögerungszeit (Delay Time) eingestellt
+Mit dem linken Potentiometer wird die Verzögerungszeit eingestellt
 (5s-200s). Für diese Zeit bleibt der Sensor im "Bewegung erkannt" Zustand,
-nachdem die erste Bewegung detektiert wurde. Drehen des Potentiometer im
+nachdem keine Bewegung mehr erkannt wurde. Drehen des Potentiometer im
 Uhrzeigersinn erhöht die Verzögerungszeit.
 
-Während der Verzögerungszeit ignoriert der Sensor Bewegung und bleibt im
-"Bewegung erkannt" Zustand. Nach der Verzögerungszeit wechselt der Sensor in
-den "keine Bewegung erkannt" Zustand, auch wenn weiterhin Bewegung vorhanden
-ist. Der Sensor bleibt dann im "keine Bewegung erkannt" Zustand für die Dauer
-der Blockierzeit von 2,5s (nicht einstellbar). Nach der Verzögerungs- und
-Blockierzeit ist der Sensor wieder bereit auf Bewegung zu reagieren.
+Wenn der Sensor Bewegung erkennt wechselt er in den "Bewegung erkannt" Zustand
+und bleibt in diesem Zustand solange weiterhin Bewegung vorhanden ist. Nachdem
+die Bewegung endet bleibt der Sensor noch für die Dauer der Verzögerungszeit im
+"Bewegung erkannt" Zustand. Falls währenddessen keine Bewegung mehr erkannt wird
+wechselt der Sensor in den "keine Bewegung erkannt" Zustand. Falls aber Bewegung
+erkannt wird bleibt der Sensor weiterhin im "Bewegung erkannt" Zustand. Dies
+bedeutet, dass der Sensor den "Bewegung erkannt" Zustand nur dann verlässt,
+wenn für die Dauer der Verzögerungszeit keine Bewegung mehr erkannt wird.
 
-Dies bedeutet, dass der Sensor höchstens alle Verzögerungszeit plus
-Blockierzeit Sekunden auf Bewegung reagiert. Bei anhaltender Bewegung wechselt
-der Sensor fortlaufend zwischen "Bewegung erkannt" und "keine Bewegung erkannt"
-Zustand. Dabei bleibt er für die Verzögerungszeit im "Bewegung erkannt" Zustand
-und für die Blockierzeit im "keine Bewegung erkannt" Zustand.
+Wenn der Sensor in den "keine Bewegung erkannt" Zustand gewechselt ist, dann
+ignoriert er für die Dauer der Blockierzeit (2,5s, nicht einstellbar) jegliche
+Bewegung. Nach dem Ablauf der Blockierzeit ist der Sensor wieder bereit auf
+Bewegung zu reagieren.
+
+
+Status LED
+----------
+
+Die blaue LED auf dem Bricklet is an, wenn der Sensor im "Bewegung erkannt"
+Zustand ist. Sie ist aus, wenn der Sensor im "keine Bewegung erkannt" Zustand
+ist.
+
+
+..
+  Modifikationsmöglichkeiten
+  --------------------------
+
+  Der Bewegungssensor kann auch unabhängig vom Bricklet angebracht werden.
+  Dazu muss zuerst der mitgelieferte Jumper auf die Stiftleiste wie nachfolgend
+  abgebildet gesteckt werden.
+
+  TODO Image sensor with placed jumper
+
+  Anschließend muss eine Verbindung zwischen dem Sensor und dem Bricklet
+  hergestellt werden. Dazu kann zum Beispiel, wie nachfolgend abgebildet,
+  ein Kabel genutzt werden, dass an beide angelötet wird.
+
+  TODO Image sensor <-> cable <-> Bricklet
 
 
 .. _motion_detector_bricklet_case:
@@ -172,22 +198,6 @@ Ein `laser-geschnittenes Gehäuse für das Motion Detector Bricklet
    :target: ../../_images/Exploded/motion_detector_exploded.png
 
 |bricklet_case_hint|
-
-..
-  Modifikationsmöglichkeiten
-  --------------------------
-
-  Der Bewegungssensor kann auch unabhängig vom Bricklet angebracht werden.
-  Dazu muss zuerst der mitgelieferte Jumper auf die Stiftleiste wie nachfolgend
-  abgebildet gesteckt werden.
-
-  TODO Image sensor with placed jumper
-
-  Anschließend muss eine Verbindung zwischen dem Sensor und dem Bricklet 
-  hergestellt werden. Dazu kann zum Beispiel, wie nachfolgend abgebildet,
-  ein Kabel genutzt werden, dass an beide angelötet wird.
-    
-  TODO Image sensor <-> cable <-> Bricklet
 
 
 .. _motion_detector_bricklet_programming_interfaces:

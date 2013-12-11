@@ -128,20 +128,44 @@ side adjusts the sensitivity of the sensor which controls the detection range
 
 The potentiometer on the left side adjusts the delay time of the sensor
 (5s-200s). This is the time the sensor stays in the "motion detected" state
-after motion was first detected. Rotating the potentiometer clockwise increase
-the delay time.
+after no motion is detected anymore. Rotating the potentiometer clockwise
+increase the delay time.
 
-During the delay time the sensor ignores motion and stays in the "motion
-detected" state. It goes back to the "no motion detected" state after the delay
-time, even if there is continuous motion. The sensor stays in the "no
-motion detected" state for the block time of 2.5s (not configurable). After the
-delay and block time the sensor is ready to detect motion again if there is any.
+If motion is detected the sensor enters the "motion detected" state and stays
+in this state as long as there is continuous motion. After no motion is detected
+anymore the sensor stays in the "motion detected" state for theduration of the
+delay time. If no motion is detected during the delay time then the sensor
+enters the "no motion detected" state. But if motion is detected during the
+delay time then it stays in the "motion detected" state. This means the sensor
+will only leave the "motion detected" state if there is no motion for the
+duration of the delay time.
 
-This means that the sensor will react to motion at most every delay time plus
-block time seconds. For continuous motion the sensor will continuously alternate
-between "motion detected" state and "no motion detected" state and stay in
-"motion detected" state for the delay time and stay in "no motion detected"
-state for the block time.
+If the sensor enters the "no motion detected" state it will ignore motion
+for the duration of the block time (2.5s, not configurable). After the block
+time the sensor is ready to detect motion again if there is any.
+
+
+Status LED
+----------
+
+The blue LED on the Bricklet is on if the sensor is in the "motion detected"
+state and is off if the sensor is in the "no motion detected" state.
+
+
+..
+  Modification Possibilities
+  --------------------------
+  The motion sensor can also be placed independently from the Bricklet. To do this a
+  small jumper is delivered with the sensor and the Bricklet. Place the Jumper
+  on the sensor as depicted below.
+
+  TODO Image sensor with placed jumper
+
+  After this you have to establish a connection between the sensor and the
+  Bricklet. For example this can be done by soldering three wires on them as
+  depicted below
+
+  TODO Image sensor <-> cable <-> Bricklet
 
 
 .. _motion_detector_bricklet_case:
@@ -170,20 +194,6 @@ A `laser-cut case for the Motion Detector Bricklet
 
 |bricklet_case_hint|
 
-..
-  Modification Possibilities
-  --------------------------
-  The motion sensor can also be placed independently from the Bricklet. To do this a 
-  small jumper is delivered with the sensor and the Bricklet. Place the Jumper 
-  on the sensor as depicted below.
-
-  TODO Image sensor with placed jumper
-
-  After this you have to establish a connection between the sensor and the 
-  Bricklet. For example this can be done by soldering three wires on them as
-  depicted below
-    
-  TODO Image sensor <-> cable <-> Bricklet
 
 .. _motion_detector_bricklet_programming_interfaces:
 
