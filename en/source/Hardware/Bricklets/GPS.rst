@@ -149,6 +149,17 @@ depicted below.
 |test_pi_ref|
 
 
+.. _gps_bricklet_fix_led:
+
+Fix LED
+-------
+
+The blue LED labeled "Fix" indicates that status of the position data. If
+there is no fix (position data is not valid) the LED is blinking with a 1
+second pattern. Once a fix is achieved the blue LED is turned of and the
+position data is valid.
+
+
 .. _gps_bricklet_case:
 
 Case
