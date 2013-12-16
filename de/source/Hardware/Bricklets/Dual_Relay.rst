@@ -15,23 +15,18 @@ Dual Relay Bricklet
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_dual_relay_tilted_350.jpg",
-	               "Bricklets/bricklet_dual_relay_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_dual_relay_12_tilted_350.jpg",
+	               "Bricklets/bricklet_dual_relay_12_tilted_600.jpg",
 	               "Dual Relay Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_horizontal_100.jpg",
-	             "Bricklets/bricklet_dual_relay_horizontal_600.jpg",
+	    tfdocimg("Bricklets/bricklet_dual_relay_12_horizontal_100.jpg",
+	             "Bricklets/bricklet_dual_relay_12_horizontal_600.jpg",
 	             "Dual Relay Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_vertical_100.jpg",
-	             "Bricklets/bricklet_dual_relay_vertical_600.jpg",
-	             "Dual Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_front_100.jpg",
-	             "Bricklets/bricklet_dual_relay_front_600.jpg",
+	    tfdocimg("Bricklets/bricklet_dual_relay_12_front_100.jpg",
+	             "Bricklets/bricklet_dual_relay_12_front_600.jpg",
 	             "Dual Relay Bricklet")
 	}}
 	{{
@@ -61,7 +56,7 @@ Features
 --------
 
 * Zwei Relais um AC/DC Geräte zu schalten
-* Schaltet bis zu 240VAC/10A und 24VDC/10A
+* Schaltet bis zu 240VAC/10A und 30VDC/7A
 
 
 Beschreibung
@@ -72,6 +67,8 @@ Mit dem Dual Relay :ref:`Bricklet <product_overview_bricklets>` können
 `Relais <http://de.wikipedia.org/wiki/Relais>`__ erweitert werden.
 Jedes Relais besitzt drei Anschlüsse, der mittlere wird zwischen den beiden
 äußeren umgeschaltet. Der Schaltzustand wird jeweils durch eine LED angezeigt.
+Die neue Hardwareversion 1.2 ist mit umfangreicher Schutzbeschaltung gegen
+Störungen durch Schalten induktiver Lasten ausgestattet.
 
 Dieses Bricklet kann benutzt werden um Stromversorgungen, Motoren, Lampen etc.
 zu schalten.
@@ -91,24 +88,23 @@ Technische Spezifikation
 ==================================  ============================================================
 Eigenschaft                         Wert
 ==================================  ============================================================
-Relais                              T7CS5D-05
-Stromverbrauch                      60mA (pro Relais)
+Relais                              AZ943-1CH-5DE
+Stromverbrauch                      75mA (pro Relais)
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
-Schalthäufigkeit                    360 pro Stunde
 Maximale Spannung/Strom             | AC: 240V/10A
-                                    | DC: 24V/10A
+                                    | DC: 30V/7A
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)             45 x 45 x 25mm (1,77 x 1,77 x 0,98")
-Gewicht                             37g
+Gewicht                             29g
 ==================================  ============================================================
 
 
 Ressourcen
 ----------
 
-* T7CS5D-05 Datenblatt (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/datasheets/T7CS5D-05.pdf>`__)
+* AZ943-1CH-5DE Datenblatt (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/datasheets/az943.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/hardware/dual-relay-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/dual_relay_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/zipball/master>`__)

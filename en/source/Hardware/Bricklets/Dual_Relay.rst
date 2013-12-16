@@ -15,23 +15,18 @@ Dual Relay Bricklet
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_dual_relay_tilted_350.jpg",
-	               "Bricklets/bricklet_dual_relay_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_dual_relay_12_tilted_350.jpg",
+	               "Bricklets/bricklet_dual_relay_12_tilted_600.jpg",
 	               "Dual Relay Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_horizontal_100.jpg",
-	             "Bricklets/bricklet_dual_relay_horizontal_600.jpg",
+	    tfdocimg("Bricklets/bricklet_dual_relay_12_horizontal_100.jpg",
+	             "Bricklets/bricklet_dual_relay_12_horizontal_600.jpg",
 	             "Dual Relay Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_vertical_100.jpg",
-	             "Bricklets/bricklet_dual_relay_vertical_600.jpg",
-	             "Dual Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_front_100.jpg",
-	             "Bricklets/bricklet_dual_relay_front_600.jpg",
+	    tfdocimg("Bricklets/bricklet_dual_relay_12_front_100.jpg",
+	             "Bricklets/bricklet_dual_relay_12_front_600.jpg",
 	             "Dual Relay Bricklet")
 	}}
 	{{
@@ -61,7 +56,7 @@ Features
 --------
 
 * Two relays to switch AC/DC devices
-* Switches up to 240VAC/10A and 24VDC/10A
+* Switches up to 240VAC/10A and 30VDC/7A
 
 
 Description
@@ -72,7 +67,8 @@ extend the features of :ref:`Bricks <product_overview_bricks>` by two
 `relays <http://en.wikipedia.org/wiki/Relay>`__. Each relay has three
 terminals such that the terminal in the middle is electrically connected to
 the terminal left or right depending on the state.
-The state is visualized by a LED.
+The state is visualized by a LED. The new hardware version 1.2 is equipped with 
+extensive protection circuitry against interference of inductive load switching. 
 
 You can use this Bricklet to switch power supplies, motors, lamps, etc.
 Consider the maximum voltage and current.
@@ -92,24 +88,23 @@ Technical Specifications
 ==================================  ============================================================
 Property                            Value
 ==================================  ============================================================
-Relay                               T7CS5D-05
-Current Consumption                 60mA (per Relay)
+Relay                               AZ943-1CH-5DE
+Current Consumption                 75mA (per Relay)
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
-Frequency Of Operation              360 per hour
 Maximum Voltage/Current             | AC: 240V/10A
-                                    | DC: 24V/10A
+                                    | DC: 30V/7A
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)              45 x 45 x 25mm (1.77 x 1.77 x 0.98")
-Weight                              37g
+Weight                              29g
 ==================================  ============================================================
 
 
 Resources
 ---------
 
-* T7CS5D-05 datasheet (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/datasheets/T7CS5D-05.pdf>`__)
+* AZ943-1CH-5DE datasheet (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/datasheets/az943.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/hardware/dual-relay-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dual_relay_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/zipball/master>`__)
