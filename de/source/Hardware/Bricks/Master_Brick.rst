@@ -81,12 +81,12 @@ sind und stellen nur ihre angeschlossenen Bricklets zur Verfügung.
 
 Im einfachsten Fall werden Daten von einem PC über die **USB** Verbindung
 des Master Bricks geleitet. Diese Schnittstelle kann mit Master Extensions
-geändert werde. Es gibt Master Extensions für kabelgebundene Schnittstellen
+geändert werden. Es gibt Master Extensions für kabelgebundene Schnittstellen
 (**RS485**, **Ethernet**) und drahtlose Schnittstellen (**WLAN**).
-Diese können auf einen Master Brick gesteckt werden und werden von diesem
+Extensions können auf einen Master Brick gesteckt werden und werden von diesem
 als weitere Schnittstelle erkannt.
 
-Ein maximale großer Stapel besteht aus (von unten nach oben)
+Der großtmögliche Stapel besteht aus (von unten nach oben)
 1x Step-Down Power Supply, 1x Master Brick, 8x Bricks, 2x Master Extensions.
 Wenn alle Bricks im Stapel Master Bricks sind können bis zu 36 Bricklets an
 einen Stapel angeschlossen werden.

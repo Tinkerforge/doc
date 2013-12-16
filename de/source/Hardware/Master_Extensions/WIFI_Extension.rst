@@ -74,7 +74,7 @@ der Transceiver geht nach jeder Nachricht in den Schlafmodus.
 Dies führt zu einer drastisch reduzierten Leistungsaufnahme aber auch zu einem deutlich geringeren Datendurchsatz.
 
 Da die Extension selbst die von der API generierten TCP/IP Pakete behandeln kann, ist es möglich direkt vom
-Smartphone, Tablet oder (Embedded) PC zu steuern. Der :ref:`Brick Daemon <brickd>` ist nicht mehr notwendig.
+Smartphone, Tablet oder (Embedded) PC zu steuern. Der :ref:`Brick Daemon <brickd>` ist dann nicht mehr notwendig.
 
 Um die WIFI Extension zu nutzen ist ein :ref:`Master Brick <master_brick>` notwendig.
 Wenn andere Bricks gesteuert werden sollen, so kann ein Stapel aus diesen gebaut werden
