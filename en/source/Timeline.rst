@@ -52,3 +52,4 @@ History
    "",     "39", "`Starter Kit: Server Room Monitoring <http://www.tinkerforge.com/en/blog/2013/9/24/starter-kit:-server-room-monitoring>`__"
    "",     "48", "`Ethernet Extension without PoE <http://www.tinkerforge.com/en/blog/2013/11/25/ethernet-extension-without-poe-available>`__"
    "",     "48", "`14 new Bricklets <http://www.tinkerforge.com/en/blog/2013/11/27/14-new-bricklets-in-one-fell-swoop-part-1-4>`__"
+   "",     "51", "`New Dual Relay Bricklet <http://www.tinkerforge.com/en/blog/2013/12/16/new-dual-relay-bricklet>`__"
