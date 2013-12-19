@@ -22,7 +22,7 @@ Goals
 In this project we modify the source code from the
 :ref:`starter_kit_hardware_hacking_smoke_detector_python` project just minimally
 to notify us if the doorbell is ringing. Of course this script can be extended
-such that it will send an Email or SMS to you.
+such that it will send an email or text message to you.
 
 
 Source Code

@@ -6,7 +6,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _remote_switch_bricklet:
 
 Remote Switch Bricklet
@@ -73,7 +72,7 @@ Das Remote Switch :ref:`Bricklet <product_overview_bricklets>` ist mit einem
 werden um alle Funksteckdosen zu steuern die auf dem PT2262 oder HX2262 IC
 basieren.
 
-Housecode und Receivercode der zu schaltenden Steckdose können über die 
+Housecode und Receivercode der zu schaltenden Steckdose können über die
 API konfiguriert werden.
 
 Technische Spezifikation
@@ -105,77 +104,6 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/remote-switch-bricklet/zipball/master>`__)
 
 
-.. _remote_switch_supported_devices:
-
-Liste unterstützter Geräte
---------------------------
-
-Die folgenden Geräte werden vom Remote Switch Bricklet unterstützt. Wenn du
-eine weitere kompatible Funksteckdosen findest, würden wir uns über eine
-E-Mail freuen. Dann können wir die Liste erweitern und aktuell halten.
-
-=============== ====================================
-Hersteller      Modelle
-=============== ====================================
-BAT             * RC 3500-A
-                * RC AAA1000-A
-                * RC AAA3680-A
---------------- ------------------------------------
---------------- ------------------------------------
-Brennstuhl      * RC 2044 Indoor
-                * RC 2044 Outdoor
-                * RC 3600
-                * RCS 1000 N Comfort
-                * RCS 1044 N Comfort
-                * RCS 2044 N Comfort Indoor
-                * RCS 2044 N Comfort Outdoor
---------------- ------------------------------------
---------------- ------------------------------------
-ELRO            * AB440D
-                * AB440ID
-                * AB440IS
-                * AB440L
-                * AB440S
-                * AB440W
---------------- ------------------------------------
---------------- ------------------------------------
-Intertechno*    * CMR-300
-                * CMR-500
-                * CMR-1000
-                * CMR-1224
-                * GRR-300
-                * GRR-3500
-                * IT-1500
-                * IT-2300
-                * ITL-150
-                * ITL-210
-                * ITL-230
-                * ITL-250
-                * ITL-300
-                * ITL-500
-                * ITL-1000
-                * ITL-3500
-                * ITR-300
-                * ITR-1500
-                * ITR-3500
-                * ITR-7000
-                * ITDL-1000
-                * ITDR-3500
-                * ITDR-3500T
-                * LBUR-100
-                * PA3-1000
---------------- ------------------------------------
---------------- ------------------------------------
-Mumbi           * m-FS300
---------------- ------------------------------------
---------------- ------------------------------------
-Vivanco         * FSS 31000W
-                * FSS 33600W
-=============== ====================================
-
-\* wird in kürze unterstüzt
-
-
 .. _remote_switch_bricklet_test:
 
 Erster Test
@@ -187,7 +115,7 @@ Erster Test
 
 |test_tab|
 Als nächstes müssen der House und Receiver Code konfiguriert werden.
-Wenn alles wie erwartet funktioniert können nun Funksteckdosen gesteuert 
+Wenn alles wie erwartet funktioniert können nun Funksteckdosen gesteuert
 werden.
 
 .. image:: /Images/Bricklets/bricklet_remote_switch_brickv.jpg
@@ -198,28 +126,246 @@ werden.
 
 |test_pi_ref|
 
-.. _remote_switch_bricklet_house_and_receiver_code:
 
-Housecode und Receivercode
-----------------------------
+.. _remote_switch_supported_devices:
 
-Um Funksteckdosen oder -dimmer zu steuern, muss der eingestellte Housecode und
-Receivercode bekannt sein. Diese Codes werden typischerweise über
-kleine DIP-Schalter in der Steckdose oder dem Dimmer eingestellt. Es kann 
-vorkommen, dass Geräte nicht mit House- oder Receivercode beschriftet sind.
-Im nachfolgenden Foto ist zum Beispiel die DIP-Schalter-Abdeckung mit
-"System Code" und "Unit Code" beschriftet. Hierbei ist mit "System Code" der
-Housecode und mit "Unit Code" der Receivercode gemeint.
+Liste unterstützter Geräte
+--------------------------
+
+Die folgenden Geräte werden vom Remote Switch Bricklet unterstützt. Wenn du
+eine weitere kompatible Funksteckdosen findest, würden wir uns über eine
+E-Mail freuen. Dann können wir die Liste erweitern und aktuell halten.
+
+Das Remote Switch Bricklet unterstüzt im Moment drei verschiedene
+:ref:`Adressierungsarten <remote_switch_bricklet_addressing_types>`: A, B and C.
+
+.. |nbsp| unicode:: 0xA0
+   :trim:
+
+=================== ==================================== ================================== =======
+Hersteller          Modelle                              Funktion                           Typ
+=================== ==================================== ================================== =======
+BAT                 RC 3500-A                            Schalter                           A
+|nbsp|              RC AAA1000-A                         Schalter                           A
+|nbsp|              RC AAA3680-A                         Schalter                           A
+------------------- ------------------------------------ ---------------------------------- -------
+------------------- ------------------------------------ ---------------------------------- -------
+Brennstuhl          RC 2044 Indoor                       Schalter Set                       A
+|nbsp|              RC 2044 Outdoor                      Außenschalter Set                  A
+|nbsp|              RC 3600                              Schalter Set                       A
+|nbsp|              RCS 1000 N Comfort                   Schalter Set                       A
+|nbsp|              RCS 1044 N Comfort                   Außenschalter Set                  A
+|nbsp|              RCS 2044 N Comfort Indoor            Schalter Set                       A
+|nbsp|              RCS 2044 N Comfort Outdoor           Außenschalter Set                  A
+------------------- ------------------------------------ ---------------------------------- -------
+------------------- ------------------------------------ ---------------------------------- -------
+ELRO                AB440D                               Dimmer                             A
+|nbsp|              AB440ID                              Dimmer (unter Putz)                A
+|nbsp|              AB440IS                              Schalter (unter Putz)              A
+|nbsp|              AB440L                               Lampenfassung-Dimmer               A
+|nbsp|              AB440S                               Schalter                           A
+|nbsp|              AB440W                               Außenschalter                      A
+------------------- ------------------------------------ ---------------------------------- -------
+------------------- ------------------------------------ ---------------------------------- -------
+ELRO Home Easy      HE874                                Schalter                           B
+|nbsp|              und weitere
+------------------- ------------------------------------ ---------------------------------- -------
+------------------- ------------------------------------ ---------------------------------- -------
+Intertechno         CMR-300                              Dimmer (unter Putz)                C
+|nbsp|              CMR-500                              Jalousieschalter (unter Putz)      C
+|nbsp|              CMR-1000                             Schalter (unter Putz)              C
+|nbsp|              CMR-1224                             12/24V Schalter (unter Putz)       C
+|nbsp|              PA3-1000                             Schalter Set                       C
+|nbsp|              GR-300                               Außendimmer                        C
+|nbsp|              GRR-300                              Außendimmer                        B
+|nbsp|              GRR-3500                             Außenschalter                      B
+|nbsp|              IT-1500                              Schalter Set                       B
+|nbsp|              IT-2300                              4x Schalter                        B
+|nbsp|              IT-3500L                             Schalter                           B
+|nbsp|              ITL-150                              Dimmer (unter Putz)                B
+|nbsp|              ITL-210                              Dimmer (unter Putz)                B
+|nbsp|              ITL-230                              Schalter (unter Putz)              B
+|nbsp|              ITL-250                              LED Dimmer (unter Putz)            B
+|nbsp|              ITL-300                              Dimmer (unter Putz)                B
+|nbsp|              ITL-500                              Jalousieschalter (unter Putz)      B
+|nbsp|              ITL-1000                             Zeitschalter (unter Putz)          B
+|nbsp|              ITL-3500                             Schalter (unter Putz)              B
+|nbsp|              ITR-300                              Dimmer                             C
+|nbsp|              ITR-1500                             Schalter Set                       B
+|nbsp|              ITR-3500                             Schalter                           C
+|nbsp|              ITR-7000                             Gong                               B
+|nbsp|              ITLR-300                             Dimmer                             B
+|nbsp|              ITLR-3500                            Schalter                           B
+|nbsp|              ITDL-1000                            Schalter (unter Putz)              B
+|nbsp|              LBUR-100                             Lampenfassung-Schalter             B
+|nbsp|              und weitere
+------------------- ------------------------------------ ---------------------------------- -------
+------------------- ------------------------------------ ---------------------------------- -------
+Mumbi               m-FS300                              Schalter Set                       A
+------------------- ------------------------------------ ---------------------------------- -------
+------------------- ------------------------------------ ---------------------------------- -------
+Vivanco             FSS 31000W                           Schalter Set                       A
+|nbsp|              FSS 33600W                           Schalter Set                       A
+=================== ==================================== ================================== =======
+
+
+230V Geräte schalten
+^^^^^^^^^^^^^^^^^^^^
+
+230V Geräte schalten ist eine typische Anwendung. Geräte dafür gibt es in
+verschiedenen Varianten. Zum Beispiel als Zwischenstecker der in eine
+gewöhnliche Steckdose gesteckt wird (z.B. Intertechno ITR-1500 und ELRO HE874)
+oder dafür gemacht um unter Putz verbaut zu werden (z.B. Intertechno ITL-1000).
+Zusätzliche Funktionen wie eine Abschaltautomatik, die nach einer einstellbaren
+Zeit das Gerät wieder abschaltet sind ebenfalls erhältlich.
+
+.. image:: /Images/Bricklets/bricklet_remote_it_homeeasy_350.jpg
+   :scale: 100 %
+   :alt: Intertechno ITR-1500 Schalter und ELRO HE874 Schalter
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_remote_it_homeeasy_1000.jpg
+
+.. image:: /Images/Bricklets/bricklet_remote_it_itl_1000_350.jpg
+   :scale: 100 %
+   :alt: Intertechno ITL-1000 Zeitschalter (unter Putz)
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_remote_it_itl_1000_1000.jpg
+
+
+12/24V Geräte schalten
+^^^^^^^^^^^^^^^^^^^^^^
+
+Niederspannungs und batteriebetriebene Geräte sind üblich im Bereich von
+Autos, LKWs und Booten. Dafür gibt es spezielle Funkschalter die mit 12/24V
+arbeiten (z.B. Intertechno CMR-1224).
+
+.. image:: /Images/Bricklets/bricklet_remote_it_cmr_1224_350.jpg
+   :scale: 100 %
+   :alt: Intertechno CMR-1224 12/24V Schalter (unter Putz)
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_remote_it_cmr_1224_1000.jpg
+
+
+(Energiespar-) Lampen und LEDs dimmen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Neben einfachen An- und Ausschaltern gibt es auch Funkdimmer für gewöhnliche
+Lampen (z.B. Intertechno ITLR-300), für Energiespar-Lampen (z.B. Intertechno
+ITL-150) und für LED Lampen (z.B. Intertechno ITL-250).
+
+.. image:: /Images/Bricklets/bricklet_remote_it_dimmer_350.jpg
+   :scale: 100 %
+   :alt: Intertechno ITLR-300 Dimmer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_remote_it_dimmer_1000.jpg
+
+
+Garagentore und Jalousien steuern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Für Garagentore und Jalousien sind einfache An- und Ausschalter nicht
+ausreichend. Für diesen Anwendungsfall gibt es spezielle Funkschalter die
+drei Zustande haben: hoch, runter und aus (z.B. Intertechno CMR-500).
+
+.. image:: /Images/Bricklets/bricklet_remote_it_cmr_500_350.jpg
+   :scale: 100 %
+   :alt: Intertechno CMR-500 Jalousieschalter (unter Putz)
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_remote_it_cmr_500_1000.jpg
+
+
+Gongs auslösen
+^^^^^^^^^^^^^^
+
+Neben Schaltern in verschiedensten Variationen gibt es auch noch Gongs (z.B.
+Intertechno ITR-7000) die mit Ton und/oder Lichtsignalen auf sich aufmerksam
+machen und ebenfalls über Funk ausgelöst werden können.
+
+.. image:: /Images/Bricklets/bricklet_remote_it_gong_350.jpg
+   :scale: 100 %
+   :alt: Intertechno ITR-7000 Gong
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_remote_it_gong_1000.jpg
+
+
+.. _remote_switch_bricklet_addressing_types:
+
+Adressierungsarten
+------------------
+
+Um Funksteckdosen oder -dimmer zu steuern, muss deren Adresse bekannt sein.
+Das Remote Switch Bricklet unterstützt verschiedene Adressierungsarten. Wie
+man die Adresse eines Gerätes herausfinden bzw. festlegt wird im Folgenden
+beschrieben. Die :ref:`Liste unterstützter Geräte
+<remote_switch_supported_devices>` gibt an welche Adressierungsart jeweils
+verwendet wird.
+
+
+.. _remote_switch_bricklet_type_a_house_and_receiver_code:
+
+Typ A: Housecode und Receivercode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Der Housecode und Receivercode wird typischerweise über kleine DIP-Schalter
+in der Steckdose oder dem Dimmer eingestellt. Es kann vorkommen, dass Geräte
+nicht mit House- oder Receivercode beschriftet sind. Im nachfolgenden Foto ist
+zum Beispiel die DIP-Schalter-Abdeckung mit "System Code" und "Unit Code"
+beschriftet. Hierbei ist mit "System Code" der Housecode und mit "Unit Code"
+der Receivercode gemeint.
 
 Im Bild unten sind die DIP-Schalter 1 und 5 für den Housecode auf On gestellt,
-dies entspricht 10001 binär bzw. 17 dezimal. Für den Receivercode steht nur
-DIP-Schalter A auf On, dies entspricht 10000 binär bzw. 16 dezimal.
+dies entspricht 10001 binär (niederwertigstes Bit zuerst) bzw. 17 dezimal. Für
+den Receivercode steht nur DIP-Schalter A auf On, dies entspricht 10000 binär
+(niederwertigstes Bit zuerst) bzw. 1 dezimal.
 
 .. image:: /Images/Bricklets/bricklet_remote_dip_switch_350.jpg
    :scale: 100 %
    :alt: DIP-Schalter in Funksteckdose um Housecode und Reiceivercode zu setzen
    :align: center
    :target: ../../_images/Bricklets/bricklet_remote_dip_switch_1000.jpg
+
+
+.. _remote_switch_bricklet_type_b_address_and_unit:
+
+Typ B: Adresse und Unit
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Geräte von Typ B haben keine Schalter um ihre Adresse und Unit einzustellen.
+Stattdessen kann diesen Funksteckdosen und -dimmern ihre Adresse und Unit
+angelernt werden. Abhängig vom jeweiligen Gerät befindet sich dieses
+automatisch für einige Sekunden nach dem Einstecken im Lernmodus (Intertechno
+Gerät, links im Bild) oder es hat einen Knopf um es in den Lernmodus zu
+versetzen (ELRO Gerät, rechts im Bild). Während das Gerät im Lernmodus ist
+muss ein Einschaltbefehl gesendet werden mit der Adresse und Unit die dem
+Gerät zugewiesen werden soll.
+
+
+.. image:: /Images/Bricklets/bricklet_remote_it_homeeasy_350.jpg
+   :scale: 100 %
+   :alt: Anlernbare Funkschalter von Intertechno und ELRO
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_remote_it_homeeasy_1000.jpg
+
+
+.. _remote_switch_bricklet_type_c_system_and_device_code:
+
+Typ C: Systemcode und Devicecode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Der System- und Devicecode werden üblicherweise mittels Kodierrädern auf der
+Rückseite des Funkschalters oder -dimmers. Es kann vorkommen, dass der
+Systemcode anders benannt ist. Zum Beispiel "Housecode", "Systembuchstabe"
+oder "Familiencode".
+
+Im folgenden Bild steht das linke Kodierrad (A-P) auf M für den Systemcode und
+das rechte Kodierrad (1-16) auf 1 für den Devicecode.
+
+.. image:: /Images/Bricklets/bricklet_remote_it_cmr_500_350.jpg
+   :scale: 100 %
+   :alt: Kodierrad an Jalousieschalter um Systemcode und Devicecode einzustellen
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_remote_it_cmr_500_1000.jpg
+
 
 .. _remote_switch_bricklet_case:
 
@@ -238,7 +384,8 @@ Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
 * Schraube Abstandshalter an das Bricklet,
-* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte (das Antennenteil ist leicht asymmetrisch, der breitere Rand gehört von außen gesehen nach unten),
+* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte (das Antennenteil
+  ist leicht asymmetrisch, der breitere Rand gehört von außen gesehen nach unten),
 * schraube Unterteil an untere Abstandshalter,
 * schraube Oberteil auf obere Abstandshalter.
 
