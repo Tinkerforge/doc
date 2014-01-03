@@ -121,7 +121,7 @@ of the case:
 
 * **8x:** Screw a 10mm spacer with a 5mm screw to the **inside** on the 
   front side part
-* Mount the Ambient Light Bricklet with 5mm screws to the spacers
+* Mount the Barometer Bricklet with 5mm screws to the spacers
 * Mount the Humidity Bricklet with 5mm screws to the spacers
 * Attach the Bricklet cable to the Bricklets
 

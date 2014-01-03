@@ -130,7 +130,7 @@ befestigt:
 
 * **8x:** Jeweils einen 10mm Abstandsbolzen mit einer 5mm Schraube auf der 
   **Innenseite** des Frontseitenteils befestigen
-* Das Ambient Light Bricklet mit 5mm Schrauben an die
+* Das Barometer Bricklet mit 5mm Schrauben an die
   Abstandsbolzen schrauben
 * Das Humidity Bricklet mit 5mm Schrauben an die
   Abstandsbolzen schrauben
