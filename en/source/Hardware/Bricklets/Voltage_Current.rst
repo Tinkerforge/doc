@@ -107,9 +107,10 @@ You have to connect the Voltage/Current Bricklet between your power supply and
 your load. Connect the power supply with the terminal marked with "IN" and the
 load with the terminal marked "OUT". The polarity is marked with "+" and "-".
 
-.. warning:
+.. warning::
  
- Keep the polarity in mind! This Bricklet is not protected against polarity reversal!
+ Keep the polarity in mind! This Bricklet is not protected against polarity 
+ reversal!
 
 
 Calibration

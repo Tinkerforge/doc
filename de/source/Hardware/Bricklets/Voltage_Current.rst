@@ -109,7 +109,7 @@ Last eingebaut. Schließe an die Klemme beschriftet mit "IN" die
 Stromversorgung an. An die Klemme "OUT" die Last. Die Polung ist mit "+" 
 und "-" vor der Klemme gekennzeichnet.
 
-.. warning:
+.. warning::
 
  Die Polung beim Anschließen unbedingt beachten! Das Bricklet ist nicht
  verpolungssicher!
