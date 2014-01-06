@@ -43,7 +43,7 @@ Features
 
 * Versorgt einen Stapel von Bricks mit 5V
 * Kann an Bricks angeschlossen Motoren versorgen (z.B. DC Brick)
-* Eingangsspannung 6V bis 27V
+* Eingangsspannung 6V bis 27V DC
 * Zusätzlich Ausgangsspannung 5V (seit Hardwareversion 1.1)
 
 
@@ -65,13 +65,13 @@ Stapel über Batterien zu versorgen. Solche Stapel können dann über
 kabelgebundene oder drahtlose Master Extensions kommunizieren. Die Step-Down
 Power Supply ermöglicht kann auch genutzt werden um über den Stapel DC Motoren,
 Servos oder Schrittmotoren zu versorgen (über die Stapelstromversorgung mit bis
-zu 27V) ohne eine weitere externe Spannungsquelle an den entsprechenden
+zu 27V DC) ohne eine weitere externe Spannungsquelle an den entsprechenden
 Motortreiber Brick anschließen zu müssen.
 Falls der Stromverbrauch großer Stapel die 500mA überschreitet die ein normaler
 USB Anschluss liefern kann, so kann hier die Step-Down Power Supply einspringen
 und die Stromversorgung des Stapels übernehmen.
 
-Der erlaubt Eingangsspannungsbereich betragt 6V bis 27V.
+Der erlaubt Eingangsspannungsbereich betragt 6V bis 27V DC.
 Ein :ref:`Master Brick <master_brick>` kann den Stromverbrauch und die Spannung
 der externen Stromversorgung messen. Ströme unter 200mA könne nicht
 zufriedenstellend gemessen werden.
@@ -86,7 +86,7 @@ Eigenschaft                                  Wert
 Stromverbrauch                               20-30mA, abhängig von der Eingangsspannung
 -------------------------------------------  ------------------------------------------------------------
 -------------------------------------------  ------------------------------------------------------------
-Minimale/Maximale Eingangsspannung           6V/27V
+Minimale/Maximale Eingangsspannung           6V/27V DC
 Maximaler Ausgangsstrom                      | 5V Versorgung: 3A
                                              | Durchleitung für Motortreiber Bricks: 5A
 -------------------------------------------  ------------------------------------------------------------
