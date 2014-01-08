@@ -185,8 +185,8 @@ Partner
     Seit dem Jahr 2000 setzt die SiteOS AG ihre Kompetenz und ihr Expertenwissen 
     erfolgreich in den Bereichen Desktop und Web um.
     Schon sehr früh setzte die SiteOS AG dabei auf die Einbindung von 
-    unterschiedlichen Medien. IoT / Industrie 4.0 war ein weiterer logischer 
-    Schritt.
+    unterschiedlichen Medien. IoT (Internet of Things) / Industrie 4.0 war ein 
+    weiterer logischer Schritt.
 
 
     Zusammen mit der TinkerForge GmbH ergibt sich eine perfekte Kombination aus 
