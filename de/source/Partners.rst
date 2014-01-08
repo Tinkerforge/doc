@@ -162,6 +162,42 @@ Partner
 
 
 
+	
+.. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/siteos-logo.jpg
+       :alt: Site OS AG logo
+       :align: center
+       :target: http://www.siteos.de/
+
+  .. container:: partnertext
+
+    .. rubric:: SiteOS AG
+
+    Die `SiteOS AG <http://www.siteos.de/>`__ ist der Partner für die 
+    Konzeption, Entwicklung und Integration individueller Softwarelösungen. Als 
+    kompetenter Full-Service-Dienstleister 	für Projekte unterschiedlicher 
+    Größenordnung und Branchen liefert die SiteOS AG Impulse für neue 
+    Lösungsansätze und Technologien.
+
+    Seit dem Jahr 2000 setzt die SiteOS AG ihre Kompetenz und ihr Expertenwissen 
+    erfolgreich in den Bereichen Desktop und Web um.
+    Schon sehr früh setzte die SiteOS AG dabei auf die Einbindung von 
+    unterschiedlichen Medien. IoT / Industrie 4.0 war ein weiterer logischer 
+    Schritt.
+
+
+    Zusammen mit der TinkerForge GmbH ergibt sich eine perfekte Kombination aus 
+    Hard- und Software.
+	
+	
+
+
+
+
+
 .. container::
 
   .. container:: partnerlogo
