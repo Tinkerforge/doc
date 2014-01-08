@@ -303,7 +303,7 @@ sie sparen vornehmlich Verkabelung und Platz ein. Aber das Stapelkonzept kann
 mehr. Es erlaubt **Master Extensions** auf den Stapel zu stecken um die
 Kommunikationsmöglichkeiten des Stapels über USB hinaus zu erweitern. Dazu
 gehören :ref:`RS485 <rs485_extension>` und :ref:`WIFI <wifi_extension>`, sowie
-in Zukunft Ethernet.
+die :ref:`Ethernet <ethernet_extension>`.
 
 Um einen RS485 Bus zwischen zwei Stapeln zu bauen werden noch ein Master Brick
 und zwei RS485 Extensions zusätzlich zu den bisher verwendeten Teilen

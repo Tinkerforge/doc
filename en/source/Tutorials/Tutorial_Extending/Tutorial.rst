@@ -296,8 +296,8 @@ The stacks as shown so far in the tutorial are not super exciting,
 they only reduce wiring and save space. But, as you might have already
 guessed, there is more to it. It is possible to attach **Master Extensions** to
 the stack, which extend the stack with interfaces other than USB,
-e.g. :ref:`RS485 <rs485_extension>` or :ref:`WIFI <wifi_extension>`, and in
-the future Ethernet.
+e.g. :ref:`RS485 <rs485_extension>` or :ref:`WIFI <wifi_extension>`, and 
+:ref:`Ethernet <ethernet_extension>`.
 
 To create a RS485 bus between two stacks, you need two need one Master Brick and
 two RS485 Master Extensions additionally to the
