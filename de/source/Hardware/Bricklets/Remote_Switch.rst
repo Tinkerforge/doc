@@ -167,14 +167,44 @@ ELRO                AB440D                               Dimmer                 
 |nbsp|              AB440W                               Außenschalter                      A
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
-ELRO Home Easy      HE874                                Schalter                           B
-|nbsp|              und weitere
+ELRO Home Easy      HE800S                               Schalter Set                       B
+|nbsp|              HE801S                               Schalter Set                       B
+|nbsp|              HE801SA                              Schalter Set                       B
+|nbsp|              HE801SF                              Schalter Set                       B
+|nbsp|              HE802SA                              Dimmer Set                         B
+|nbsp|              HE802SF                              Dimmer Set                         B
+|nbsp|              HE803S                               Dimmer Set                         B
+|nbsp|              HE805S                               Schalter Set (unter Putz)          B
+|nbsp|              HE808S                               Schalter Set                       B
+|nbsp|              HE815S                               Dimmer/Schalter Set                B
+|nbsp|              HE820                                Gong                               B
+|nbsp|              HE821S                               Gong mit Blinklicht                B
+|nbsp|              HE831S                               Außenschalter Set                  B
+|nbsp|              HE834S                               Außenschalter Set                  B
+|nbsp|              HE866                                Einbauschalter für Außenbereich    B
+|nbsp|              HE867                                Außenschalter                      B
+|nbsp|              HE871                                Lampenfassung-Schalter             B
+|nbsp|              HE872                                Lampenfassung-Dimmer               B
+|nbsp|              HE874                                Schalter                           B
+|nbsp|              HE875                                Mini-Schalter                      B
+|nbsp|              HE877                                Schalter                           B
+|nbsp|              HE877A                               Schalter mit Ein/Aus am Empfänger  B
+|nbsp|              HE878                                Schalter                           B
+|nbsp|              HE878A                               Dimmer                             B
+|nbsp|              HE881                                Einbausteckdose                    B
+|nbsp|              HE886                                Schalter (unter Putz)              B
+|nbsp|              HE888                                Dimmer (unter Putz)                B
+|nbsp|              HE889                                Jalousieschalter (unter Putz)      B
+|nbsp|              HE876                                Mini-Dimmer                        B
+|nbsp|              HE892S                               Steckdosenleiste                   B
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
 Intertechno         CMR-300                              Dimmer (unter Putz)                C
 |nbsp|              CMR-500                              Jalousieschalter (unter Putz)      C
 |nbsp|              CMR-1000                             Schalter (unter Putz)              C
+|nbsp|              CMR-1001                             Impulseschalter (unter Putz)       C
 |nbsp|              CMR-1224                             12/24V Schalter (unter Putz)       C
+|nbsp|              HDR-105                              12V Dimmer                         C
 |nbsp|              PA3-1000                             Schalter Set                       C
 |nbsp|              GR-300                               Außendimmer                        C
 |nbsp|              GRR-300                              Außendimmer                        B
@@ -198,7 +228,6 @@ Intertechno         CMR-300                              Dimmer (unter Putz)    
 |nbsp|              ITLR-3500                            Schalter                           B
 |nbsp|              ITDL-1000                            Schalter (unter Putz)              B
 |nbsp|              LBUR-100                             Lampenfassung-Schalter             B
-|nbsp|              und weitere
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
 Mumbi               m-FS300                              Schalter Set                       A

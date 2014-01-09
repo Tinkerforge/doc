@@ -165,14 +165,44 @@ ELRO                AB440D                               Dimmer                 
 |nbsp|              AB440W                               Outdoor Switch                     A
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
-ELRO Home Easy      HE874                                Switch                             B
-|nbsp|              and more
+ELRO Home Easy      HE800S                               Switch Set                         B
+|nbsp|              HE801S                               Switch Set                         B
+|nbsp|              HE801SA                              Switch Set                         B
+|nbsp|              HE801SF                              Switch Set                         B
+|nbsp|              HE802SA                              Dimmer Set                         B
+|nbsp|              HE802SF                              Dimmer Set                         B
+|nbsp|              HE803S                               Dimmer Set                         B
+|nbsp|              HE805S                               Switch Set (flush-mounted)         B
+|nbsp|              HE808S                               Switch Set                         B
+|nbsp|              HE815S                               Dimmer/Switch Set                  B
+|nbsp|              HE820                                Gong                               B
+|nbsp|              HE821S                               Gong with light                    B
+|nbsp|              HE831S                               Outdoor Switch Set                 B
+|nbsp|              HE834S                               Outdoor Switch Set                 B
+|nbsp|              HE866                                Outdoor build-in Switch            B
+|nbsp|              HE867                                Outdoor Switch                     B
+|nbsp|              HE871                                Bulb Holder Switch                 B
+|nbsp|              HE872                                Bulb Holder Switch Dimmer          B
+|nbsp|              HE874                                Switch                             B
+|nbsp|              HE875                                Mini-Switch                        B
+|nbsp|              HE877                                Switch                             B
+|nbsp|              HE877A                               Switch with On/Off at Receiver     B
+|nbsp|              HE878                                Switch                             B
+|nbsp|              HE878A                               Dimmer                             B
+|nbsp|              HE881                                Build-in Switch                    B
+|nbsp|              HE886                                Switch (flush-mounted)             B
+|nbsp|              HE888                                Dimmer (flush-mounted)             B
+|nbsp|              HE889                                Blind Switch (flush-mounted)       B
+|nbsp|              HE876                                Mini-Dimmer                        B
+|nbsp|              HE892S                               Outlet Strip                       B
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
 Intertechno         CMR-300                              Dimmer (flush-mounted)             C
 |nbsp|              CMR-500                              Blind Switch (flush-mounted)       C
 |nbsp|              CMR-1000                             Switch (flush-mounted)             C
+|nbsp|              CMR-1001                             Impulse Switch (flush-mounted)     C
 |nbsp|              CMR-1224                             12/24V Switch (flush-mounted)      C
+|nbsp|              HDR-105                              12V Dimmer                         C
 |nbsp|              PA3-1000                             Switch Set                         C
 |nbsp|              GR-300                               Outdoor Dimmer                     C
 |nbsp|              GRR-300                              Outdoor Dimmer                     B
@@ -180,6 +210,8 @@ Intertechno         CMR-300                              Dimmer (flush-mounted) 
 |nbsp|              IT-1500                              Switch Set                         B
 |nbsp|              IT-2300                              4x Switch                          B
 |nbsp|              IT-3500L                             Switch                             B
+|nbsp|              ITE-300                              Dimmer (flush-mounted)             C
+|nbsp|              ITE-1000                             Switch (flush-mounted)             C
 |nbsp|              ITL-150                              Dimmer (flush-mounted)             B
 |nbsp|              ITL-210                              Dimmer (flush-mounted)             B
 |nbsp|              ITL-230                              Switch (flush-mounted)             B
@@ -196,7 +228,6 @@ Intertechno         CMR-300                              Dimmer (flush-mounted) 
 |nbsp|              ITLR-3500                            Switch                             B
 |nbsp|              ITDL-1000                            Switch (flush-mounted)             B
 |nbsp|              LBUR-100                             Bulb Holder Switch                 B
-|nbsp|              and more
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
 Mumbi               m-FS300                              Switch Set                         A
