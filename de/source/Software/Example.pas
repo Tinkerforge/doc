@@ -52,13 +52,13 @@ end;
 procedure TExample.Execute;
 begin
   { Create connection and connect to brickd }
-  ipcon := TIPConnection.Create();
+  ipcon := TIPConnection.Create;
   ipcon.Connect(HOST, PORT);
 
   { Register enumeration callback to "EnumerateCB }
   ipcon.OnEnumerate := {$ifdef FPC}@{$endif}EnumerateCB;
 
-  ipcon.Enumerate();
+  ipcon.Enumerate;
 
   WriteLn('Press key to exit');
   ReadLn;
