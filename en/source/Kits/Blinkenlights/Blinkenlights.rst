@@ -19,7 +19,7 @@ Features
 --------
 
 * Giant 40x80cm 200 Pixel RGB Display with update rate up to 100Hz
-* Develop Party Games, Exhibition Presentations and Customer Specific Displays 
+* Develop Party Games, Exhibition Presentations and Customer Specific Displays
   of any kind
 * Freely programmable, configurable and expandable
 * Pixels: 12mm diameter, waterproof (IP65), full-color RGB  with 1600mcd
@@ -40,10 +40,10 @@ one mounting plate, one back plate and all necessary cables and mounting
 materials. The basic kit can be controlled over USB by any (Embedded-) PC (e.g.
 :ref:`Raspberry Pi <embedded_raspberry_pi>`), laptop, server or tablet.
 
-The kit can be extended by other Tinkerforge products. 
+The kit can be extended by other Tinkerforge products.
 In game applications the :ref:`Multi Touch Bricklet <multi_touch_bricklet>`
-can be useful when custom game controls are needed. With 
-:ref:`Master Brick Extensions <product_overview_master_extensions>` the USB 
+can be useful when custom game controls are needed. With
+:ref:`Master Brick Extensions <product_overview_master_extensions>` the USB
 interface can be changed to :ref:`Wi-Fi <wifi_extension>` or
 :ref:`Ethernet <ethernet_extension>` so smart phone or tablet
 controlled applications are possible. A larger display can be created by
@@ -58,7 +58,7 @@ configurable durations and can warm your heart with a virtual fire.
 The games can be controlled by a PC keyboard but can be also be controlled
 by customizable touch pads when using the Multi Touch Bricklet.
 
-The kit name "Blinkenlights" is used in 
+The kit name "Blinkenlights" is used in
 `hacker jargon <http://en.wikipedia.org/wiki/Blinkenlights>`__
 to describe blinking lights. It is also known from the
 `Project Blinkenlights <http://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
@@ -99,7 +99,7 @@ Firmware updating and first tests
 As a very first step you should try out and update your Bricks and Bricklets.
 
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
-the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets to the Master 
+the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets to the Master
 Brick and connect it via USB to your PC. Afterwards use Brick Viewer to check
 if all of the firmwares up to date (Updates / Flashing button). If not, you can
 :ref:`update the Bricks <brickv_flash_firmware>` and
@@ -115,9 +115,9 @@ TODO: Image of Blinkenlights Bricks/Bricklets:
    :target: ../../_images/Kits/blinkenlights_update_orig.jpg
 
 As next step click through the tabs of the Brick Viewer
-to see if all of the sensors are working correctly. Now you can be sure that 
+to see if all of the sensors are working correctly. Now you can be sure that
 the Bricks and Bricklets have versions that work together and that
-everything will work if it is screwed together. 
+everything will work if it is screwed together.
 
 
 Construction
@@ -146,9 +146,9 @@ Bricklet is connected, these Bricklets will also be used by the games to give
 acoustic feedback or to display the score.
 
 Before starting you have to configure the host and port. If you use the standard
-kit and have connected it directly to your PC via USB "localhost" and "4223" is 
-fine. If you extended the kit by 
-:ref:`Extensions <product_overview_master_extensions>` or 
+kit and have connected it directly to your PC via USB "localhost" and "4223" is
+fine. If you extended the kit by
+:ref:`Extensions <product_overview_master_extensions>` or
 want to control the kit from another PC you have to enter the IP address or
 hostname of the extension or the PC where the kit is connected to. Below the
 input boxes is a table which shows you the connected Bricks and Bricklets.
@@ -161,19 +161,19 @@ Tetris
 
 TODO:
 
-* Picture of Tetris 
+* Picture of Tetris
 * With/Without frontpanel?
 * Example Image
 
-The demo application implements a typical 
+The demo application implements a typical
 `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ game with all specialities.
 This Tetris clone can be controlled by three possible ways. Firstly, there
-are buttons in the tab which can be used to control the game. Next you can use 
+are buttons in the tab which can be used to control the game. Next you can use
 your keyboard. The keys are defined in the tab (e.g. "a" is left). Finally a
-connected Multi Touch Bricklet with attached electrodes can be used (e.g. 
+connected Multi Touch Bricklet with attached electrodes can be used (e.g.
 electrode 0 is left).
 
-The standalone Python project can be downloaded from
+The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__.
 This also incorporates the
 :ref:`Pong <starter_kit_blinkenlights_pong>` project and consists of mainly
@@ -186,6 +186,10 @@ Modify ``config.py`` according to your needs and run the application:
 
    python tetris.py
 
+There is also a :ref:`C# <api_bindings_csharp>` implementation that can be
+downloaded from `GitHub
+<https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__.
+
 
 .. _starter_kit_blinkenlights_pong:
 
@@ -194,17 +198,16 @@ Pong
 
 TODO:
 
-* Link to github, description how to configure/start
 * Picture of Pong
 * With/Without frontpanel?
 * Example Image
 
-Like :ref:`Tetris <starter_kit_blinkenlights_tetris>` the 
+Like :ref:`Tetris <starter_kit_blinkenlights_tetris>` the
 `Pong <http://en.wikipedia.org/wiki/Pong>`__ game can be controlled
-by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be 
+by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be
 controlled by two Dual Button Bricklets.
 
-The standalone Python project can be downloaded at 
+The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__.
 This also incorporates the
 :ref:`Tetris <starter_kit_blinkenlights_tetris>` project and consists of mainly
@@ -216,6 +219,10 @@ Modify the ``config.py`` according to your needs and run the application:
 .. code-block:: python
 
    python pong.py
+
+There is also a :ref:`C# <api_bindings_csharp>` implementation that can be
+downloaded from `GitHub
+<https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__.
 
 
 .. _starter_kit_blinkenlights_fire:
@@ -230,7 +237,7 @@ TODO:
 
 When selecting the Fire tab you will see a fire simulation. It looks good
 if you place the front panel in a distance of TODO to the back panel.
-The simulation is based on a particle system and can be configured by four 
+The simulation is based on a particle system and can be configured by four
 sliders:
 
 * **Frame Rate**:
@@ -249,7 +256,7 @@ sliders:
 Play with the sliders to configure your personal fire! With the "Default" button
 you will set back all sliders to their default values.
 
-The standalone Python project can be downloaded from
+The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__.
 It consists of mainly two files: ``fire.py`` implements the simulation and
 ``config.py`` defines the configuration (host, port, UID, LED matrix layout and
@@ -260,6 +267,10 @@ Modify the ``config.py`` according to your needs and run the application:
 .. code-block:: python
 
    python fire.py
+
+There is also a :ref:`Delphi <api_bindings_delphi>` implementation that can be
+downloaded from `GitHub
+<https://github.com/Tinkerforge/blinkenlights/tree/master/fire/delphi>`__.
 
 
 .. _starter_kit_blinkenlights_scrolling_text:
@@ -277,7 +288,7 @@ on the display. The text moved one column per frame. A higher frame rate results
 in faster moving text. You can set changing colors by selecting "Rainbow" or
 select "Color" and pick the color you like by pressing the button.
 
-The standalone Python project can be downloaded from
+The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__.
 It consists of mainly two files: ``text.py`` implements the logic and
 ``config.py`` defines the configuration (host, port, UID, LED matrix layout and
@@ -289,6 +300,10 @@ some text to display:
 .. code-block:: python
 
    python text.py Starter Kit: Blinkenlights
+
+There is also a :ref:`PHP <api_bindings_php>` implementation that can be
+downloaded from `GitHub
+<https://github.com/Tinkerforge/blinkenlights/tree/master/text/php>`__.
 
 
 .. _starter_kit_blinkenlights_images:
@@ -302,16 +317,16 @@ TODO:
 * Example Image
 
 The "Images" demo can be used to display user specific images and whole
-animations. 
+animations.
 
-Choose the images you want to display by pressing "Choose images...". The 
+Choose the images you want to display by pressing "Choose images...". The
 application will display the images with the given frame rate and switch to the
 next image in the sequence each frame. This way you can create animations.
 Each image is resized to 20x10 pixel (size of the display) and stretched if the
 aspect ration does not  fit. Use an image editing tool if you are not satisfied
 with the results.
 
-The standalone Python project can be downloaded from
+The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/images/python>`__.
 It consists of mainly two files: ``images.py`` implements the logic and
 ``config.py`` defines the configuration (host, port, UID, LED matrix layout).
@@ -322,6 +337,10 @@ some image files to display:
 .. code-block:: python
 
    python text.py image1.jpg image2.jpg
+
+There is also a :ref:`Java <api_bindings_java>` implementation that can be
+downloaded from `GitHub
+<https://github.com/Tinkerforge/blinkenlights/tree/master/text/java>`__.
 
 
 .. _starter_kit_blinkenlights_scrolling_rainbow:
@@ -337,7 +356,7 @@ TODO:
 The "Rainbow" demo will display a moving rainbow with the given frame rate
 and speed. A higher frame rate and speed results in faster moving rainbow.
 
-The standalone Python project can be downloaded from
+The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/rainbow/python>`__.
 It consists of mainly two files: ``rainbow.py`` implements the logic and
 ``config.py`` defines the configuration (host, port, UID, LED matrix layout and
@@ -348,6 +367,10 @@ Modify the ``config.py`` according to your needs and run the application:
 .. code-block:: python
 
    python rainbow.py
+
+There is also a :ref:`C <api_bindings_c>` implementation that can be
+downloaded from `GitHub
+<https://github.com/Tinkerforge/blinkenlights/tree/master/rainbow/c>`__.
 
 
 Further Enhancements
