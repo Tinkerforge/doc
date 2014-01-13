@@ -54,7 +54,7 @@ Grundfunktionen
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
  aufgebaut wurde.
 
- Blockiert bis die Verbindung aufgebaut wurde und wirf eine Exception falls
+ Blockiert bis die Verbindung aufgebaut wurde und wirft eine Exception, falls
  kein Brick Daemon oder WIFI/Ethernet Extension auf dem gegebenen Host und Port
  horcht.
 
