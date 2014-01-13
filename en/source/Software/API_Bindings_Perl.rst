@@ -4,17 +4,18 @@
 .. _api_bindings_perl:
 
 Perl - API Bindings
-=====================
+===================
 
 **Requirements**: Perl 5.014 or newer
 
 The Perl bindings (:ref:`download <downloads_bindings_examples>`) consist of
-a Perl package with the bindings for all
-Tinkerforge Bricks and Bricklets (``Tinkerforge.tar.gz``), the source (in ``source/``) and all available Perl examples (in ``examples/``).
+a CPAN package with the bindings for all Tinkerforge Bricks and Bricklets
+(``Tinkerforge.tar.gz``), the source (in ``source/``) and all available Perl
+examples (in ``examples/``).
 
 You can install the package with CPAN::
 
- sudo cpan install Tinkerforge 
+ sudo cpan install Tinkerforge
 
 After that you can use the examples as they are.
 
@@ -63,7 +64,7 @@ we use:
  use lib './';
  use IPConnection;
  use Device;
- use DBrickStepper;
+ use BrickStepper;
 
 After that, the example can be executed again.
 
