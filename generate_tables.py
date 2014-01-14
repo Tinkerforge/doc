@@ -94,7 +94,7 @@ bindings = [Binding('Modbus',            'modbus',      None,          False, Tr
             Binding('Delphi',            'delphi',      'Delphi',      True,  True),
             Binding('Java',              'java',        'Java',        True,  True),
             Binding('Mathematica',       'mathematica', 'Mathematica', True,  False),
-            Binding('Perl',              'perl',        'Perl',        True,  False),
+            Binding('Perl',              'perl',        'Perl',        True,  True),
             Binding('PHP',               'php',         'PHP',         True,  True),
             Binding('Python',            'python',      'Python',      True,  True),
             Binding('Ruby',              'ruby',        'Ruby',        True,  True),
