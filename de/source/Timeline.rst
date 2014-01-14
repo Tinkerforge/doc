@@ -54,3 +54,4 @@ Historie
    "",     "48", "`Ethernet Extension ohne PoE <http://www.tinkerforge.com/de/blog/2013/11/25/ethernet-extension-jetzt-auch-ohne-poe-erhaeltlich>`__"
    "",     "48", "`14 neue Bricklets <http://www.tinkerforge.com/de/blog/2013/11/27/14-neue-bricklets-auf-einen-schlag-teil-1-4>`__"
    "",     "51", "`Neues Dual Relay Bricklet <http://www.tinkerforge.com/de/blog/2013/12/16/neues-dual-relay-bricklet>`__"
+   "2014", "03", "`Perl Bindings <http://www.tinkerforge.com/de/blog/2014/1/14/perl-bindings-fertig>`__"
