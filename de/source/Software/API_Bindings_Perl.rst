@@ -6,36 +6,24 @@
 Perl - API Bindings
 ===================
 
-**Voraussetzungen**: Perl 5.014 or newer
+**Voraussetzungen**: Perl 5.014 oder neuer
 
 Die Perl Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen
 aus einem CPAN Paket mit den Bindings für alle Tinkerforge Bricks und Bricklets
 (``Tinkerforge.tar.gz``), dem Quelltext des CPAN Pakets (in ``source/``) und
 allen verfügbaren Perl Beispielen (in ``examples/``).
 
-Das CPAN Paket kann mit Hilfe des cpan Tools installiert werden::
+Das Paket wird in Kürze auch auf CPAN verfügbar sein und kann dann von dort aus
+installiert werden.
 
- cpan install Tinkerforge.tar.gz
+Das vorläufige CPAN Paket (``Tinkerforge.tar.gz``) ist in der ZIP Datei
+enthalten. Es kann entpackt und dann mit den folgenden Befehlen installiert
+werden::
 
-Das CPAN Paket auch auf `www.cpan.org <http://www.cpan.org/gems/tinkerforge>`__
-gehostet und kann alternativ auch von dort installiert werden::
-
- gem install tinkerforge
-
-Das egg kann mit Hilfe von easy_install installiert werden::
-
-Das CPAN Paket ::
-
- sudo cpan install Tinkerforge
-
- easy_install tinkerforge.egg
-
-
-Auf Windows ist easy_install möglicherweise noch nicht installiert:
-
-* Installiere easy_install: https://pypi.python.org/pypi/setuptools#windows (setuptools)
-* Öffne eine Eingabeaufforderung
-* Führe ``C:\YourPythonDir\Scripts\easy_install.exe C:\PathToEgg\tinkerforge.egg`` aus
+ perl Makefile.PL
+ make
+ make test
+ make install
 
 Danach können alle Beispiel unverändert verwendet werden.
 
@@ -43,41 +31,51 @@ Danach können alle Beispiel unverändert verwendet werden.
 Test eines Beispiels
 --------------------
 
-Wenn das egg nicht verwenden werden soll oder kann, dann kann der Quelltext
-auch direkt verwendet werden. Dafür muss der ``tinkerforge`` Ordner
+Wenn das CPAN Paket nicht verwenden werden soll oder kann, dann kann der
+Quelltext auch direkt verwendet werden. Dafür muss der ``Tinkerforge`` Ordner
 vom ``source/`` Ordner und das Beispiel, das ausprobiert werden soll (z.B. das
 Stepper Konfigurationsbeispiel
-``examples/brick/stepper/example_configuration.py``), in einen Ordner kopiert
+``examples/brick/stepper/example_configuration.pl``), in einen Ordner kopiert
 werden::
 
  example_folder/
-  -> tinkerforge/
-  -> example_configuration.py
+  -> Tinkerforge/
+  -> example_configuration.pl
+
+Dann muss noch am Anfang von ``example_configuration.pl`` folgende Zeile
+eingefügt werden:
+
+.. code-block:: perl
+
+ use lib './';
 
 Falls nur einige ausgewählte Bricks oder Bricklets verwendet werden sollen und
 keine unnötigen Dateien im Projekt auftauchen sollen, dann können auch nur die
 wirklich benötigten Dateien in einen Ordner kopiert werden. Das Stepper Brick
-Beispiel benötigt ``ip_connection.py`` und ``brick_stepper.py``::
+Beispiel benötigt ``IPConnection.pm`` und ``BrickStepper.pm``::
 
  example_folder/
-  -> ip_connection.py
-  -> brick_stepper.py
-  -> example_configuration.py
+  -> IPConnection.pm
+  -> BrickStepper.pm
+  -> example_configuration.pl
 
-Nachdem diese Dateien in einen Ordner kopiert sind muss noch das ``tinkerforge``
+Nachdem diese Dateien in einen Ordner kopiert sind muss noch das ``Tinkerforge::``
 Package aus dem Quelltext des Beispiels entfernt werden. Statt:
 
-.. code-block:: python
+.. code-block:: perl
 
- from tinkerforge.ip_connection import IPConnection
- from tinkerforge.brick_stepper import Stepper
+ use Tinkerforge::IPConnection;
+ use Tinkerforge::Device;
+ use Tinkerforge::BrickStepper;
 
-muss dort nun dies stehen:
+mss nun dort dies stehen:
 
-.. code-block:: python
+.. code-block:: perl
 
- from ip_connection import IPConnection
- from brick_stepper import Stepper
+ use lib './';
+ use IPConnection;
+ use Device;
+ use BrickStepper;
 
 Jetzt kann das Beispiel wieder ausgeführt werden.
 

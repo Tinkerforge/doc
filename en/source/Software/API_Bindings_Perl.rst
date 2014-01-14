@@ -13,9 +13,17 @@ a CPAN package with the bindings for all Tinkerforge Bricks and Bricklets
 (``Tinkerforge.tar.gz``), the source (in ``source/``) and all available Perl
 examples (in ``examples/``).
 
-You can install the package with CPAN::
+The package will be available on CPAN soon. Then it will be possible to install
+the bindings from CPAN.
 
- sudo cpan install Tinkerforge
+A preliminary CPAN package (``Tinkerforge.tar.gz``) is included in the ZIP file.
+You can unpack it and execute the following commands to install the Perl
+bindings::
+
+ perl Makefile.PL
+ make
+ make test
+ make install
 
 After that you can use the examples as they are.
 
@@ -23,7 +31,7 @@ After that you can use the examples as they are.
 Testing an Example
 ------------------
 
-If you can't or don't want to use CPAN, you can also use the source
+If you can't or don't want to use the CPAN package, you can also use the source
 directly, just create a folder for your project and copy the ``Tinkerforge``
 folder from ``source/`` and the example you want to try in there
 (e.g. the Stepper configuration example from
@@ -33,7 +41,7 @@ folder from ``source/`` and the example you want to try in there
   -> Tinkerforge/
   -> example_configuration.pl
 
-we have to add a line on top of the file example_configuration.pl:
+You have to add a line on top of the file ``example_configuration.pl``:
 
 .. code-block:: perl
 
