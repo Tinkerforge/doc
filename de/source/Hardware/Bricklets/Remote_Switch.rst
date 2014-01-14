@@ -136,8 +136,8 @@ Die folgenden Geräte werden vom Remote Switch Bricklet unterstützt. Wenn du
 eine weitere kompatible Funksteckdosen findest, würden wir uns über eine
 E-Mail freuen. Dann können wir die Liste erweitern und aktuell halten.
 
-Das Remote Switch Bricklet unterstüzt im Moment drei verschiedene
-:ref:`Adressierungsarten <remote_switch_bricklet_addressing_types>`: A, B and C.
+Das Remote Switch Bricklet unterstützt im Moment drei verschiedene
+:ref:`Adressierungsarten <remote_switch_bricklet_addressing_types>`: A, B und C.
 
 .. |nbsp| unicode:: 0xA0
    :trim:

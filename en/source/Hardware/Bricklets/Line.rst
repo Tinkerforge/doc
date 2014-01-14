@@ -137,7 +137,7 @@ trial and error.
 
 There is a mounting Plate available for the Line Bricklet in the
 `shop <https://www.tinkerforge.com/en/shop/mounting-plate-line-bricklet.html>`__
-which simplfies the mounting. It consits of a mounting plate with fixed 
+which simplifies the mounting. It consists of a mounting plate with fixed 
 distance: 
 
 .. image:: /Images/Cases/bricklet_line_case1_tilted_350.jpg

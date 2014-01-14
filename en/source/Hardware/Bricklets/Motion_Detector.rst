@@ -96,7 +96,7 @@ Test your Motion Detector Bricklet
 
 |test_intro|
 
-|test_connect|. Attach the motion detector bricklet on top of the Bricklet.
+|test_connect|. Attach the motion detector on top of the Bricklet.
 
 |test_tab|
 If everything went as expected you can now see when a motion is detected.
@@ -133,7 +133,7 @@ increase the delay time.
 
 If motion is detected the sensor enters the "motion detected" state and stays
 in this state as long as there is continuous motion. After no motion is detected
-anymore the sensor stays in the "motion detected" state for theduration of the
+anymore the sensor stays in the "motion detected" state for the duration of the
 delay time. If no motion is detected during the delay time then the sensor
 enters the "no motion detected" state. But if motion is detected during the
 delay time then it stays in the "motion detected" state. This means the sensor

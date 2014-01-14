@@ -264,7 +264,7 @@ also available.
 Switch 12/24V devices
 ^^^^^^^^^^^^^^^^^^^^^
 
-Low-voltage or batterie powered systems are common in cars, trucks and boats.
+Low-voltage or battery powered systems are common in cars, trucks and boats.
 There are specialized remote switches that operate on 12/24V (e.g. Intertechno
 CMR-1224).
 

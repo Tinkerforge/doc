@@ -71,7 +71,7 @@ Property                                  Value
 ========================================  ============================================================
 Maximum Update Rate (LED Strip Bricklet)  100Hz
 RGB resolution (LED Strip Bricklet)       3 x 8Bit
-Luminous Itensity                         1600cd
+Luminous Intensity                        1600cd
 ----------------------------------------  ------------------------------------------------------------
 ----------------------------------------  ------------------------------------------------------------
 Number of RGB Pixels                      10 x 20
@@ -166,7 +166,7 @@ TODO:
 * Example Image
 
 The demo application implements a typical
-`Tetris <http://en.wikipedia.org/wiki/Tetris>`__ game with all specialities.
+`Tetris <http://en.wikipedia.org/wiki/Tetris>`__ game with all specialties.
 This Tetris clone can be controlled by three possible ways. Firstly, there
 are buttons in the tab which can be used to control the game. Next you can use
 your keyboard. The keys are defined in the tab (e.g. "a" is left). Finally a

@@ -27,7 +27,7 @@ Partners
     * Cumulocity VendMe: Maximize your return from vending operations and connect with your customers.
     * Cumulocity DriveSafe: Drive safe, save costs.
 
-    You can connect Tinkeforge to Cumulocity Device Cloud using Cumulocity's 
+    You can connect Tinkerforge to Cumulocity Device Cloud using Cumulocity's 
     agent, see http://www.cumulocity.com/guides for details. 
 
 

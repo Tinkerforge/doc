@@ -209,7 +209,7 @@ to press the connector together.
 TODO Image IDC connector with wires
 
 After that your Giant Game Pads are finished. If you want you can stick
-the adhesive rubber feets to the pads.
+the adhesive rubber feet to the pads.
 
 TODO Image Pads connected to Multi Touch
 

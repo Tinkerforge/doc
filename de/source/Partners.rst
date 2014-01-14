@@ -127,7 +127,7 @@ Partner
     in Java und entworfen um absolut herstellerunabhängig und hardware- und
     protokollagnostisch zu sein. Sie kann auf Geräten wie dem Raspberry Pi
     ausgeführt werden und kann eine Vielzahl von verschiedenen
-    Hausautomatierungs-Technologien in ein System integrieren. openHAB ist
+    Hausautomatisierungs-Technologien in ein System integrieren. openHAB ist
     vollständig Open Source und wird von einer sehr aktiven und ständig
     wachsenden Community weiterentwickelt. Dadurch ist es die beste Lösung, um
     sicherzustellen, dass ihr Smart Home flexibel bleibt und zukünftige
@@ -214,7 +214,7 @@ Partner
     `Xively <https://xively.com/>`__ ist eine Plattform, die sich der einfachen
     Verbindung von Anwendungen mit Geräten und Daten im Internet der Dinge
     widmet. Durch die Bereitstellung einer Plattform und Open Source
-    Bbliotheken, hilft Xively Entwicklern und Herstellern die Entwicklung,
+    Bibliotheken, hilft Xively Entwicklern und Herstellern die Entwicklung,
     Verteilung und Steuerung ihrer Produkte für das Internet der Dinge zu
     vereinfachen. So können diese die Art und Weise verändern, wie Menschen
     ihre Welt erleben.
