@@ -85,11 +85,11 @@ Weight                                    TODO
 Resources
 ---------
 
-* Example Source Code for :ref:`Tetris <starter_kit_blinkenlights_tetris>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__)
-* Example Source Code for :ref:`Pong <starter_kit_blinkenlights_Pong>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games>`__)
-* Example source Code for :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire>`__)
-* Example Source Code for :ref:`Scrolling Text <starter_kit_blinkenlights_scrolling_text>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/text>`__)
-* Example Source Code for :ref:`Display Images <starter_kit_blinkenlights_images>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/images>`__)
+* Example Source Code for :ref:`Tetris <starter_kit_blinkenlights_tetris>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__, `C# <https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__)
+* Example Source Code for :ref:`Pong <starter_kit_blinkenlights_Pong>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__, `C# <https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__)
+* Example source Code for :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__, `Delphi <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/delphi>`__)
+* Example Source Code for :ref:`Scrolling Text <starter_kit_blinkenlights_scrolling_text>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__, `PHP <https://github.com/Tinkerforge/blinkenlights/tree/master/text/php>`__)
+* Example Source Code for :ref:`Display Images <starter_kit_blinkenlights_images>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/images/python>`__, `Java <https://github.com/Tinkerforge/blinkenlights/tree/master/images/java>`__)
 * :ref:`Demo Application <starter_kit_blinkenlights_demo_examples>` (Download: Windows, Linux, Mac OS X, `Source Code <https://github.com/Tinkerforge/blinkenlights/tree/master/demo>`__)
 
 
@@ -134,7 +134,11 @@ TODO
 Demo Application and Example Projects
 -------------------------------------
 
-TODO Screenshot
+.. image:: /Images/Kits/blinkenlights_demo_setup_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Demo Application Screenshot: Setup
+   :align: center
+   :target: ../../_images/Kits/blinkenlights_demo_setup.jpg
 
 The demo application shows possible applications for this kit. It
 consists of 6 individual applications each also provided as individual project
@@ -161,7 +165,6 @@ Tetris
 
 TODO:
 
-* Picture of Tetris
 * With/Without frontpanel?
 * Example Image
 
@@ -172,6 +175,12 @@ are buttons in the tab which can be used to control the game. Next you can use
 your keyboard. The keys are defined in the tab (e.g. "a" is left). Finally a
 connected Multi Touch Bricklet with attached electrodes can be used (e.g.
 electrode 0 is left).
+
+.. image:: /Images/Kits/blinkenlights_demo_tetris_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Demo Application Screenshot: Tetris
+   :align: center
+   :target: ../../_images/Kits/blinkenlights_demo_tetris.jpg
 
 The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__.
@@ -198,7 +207,6 @@ Pong
 
 TODO:
 
-* Picture of Pong
 * With/Without frontpanel?
 * Example Image
 
@@ -206,6 +214,12 @@ Like :ref:`Tetris <starter_kit_blinkenlights_tetris>` the
 `Pong <http://en.wikipedia.org/wiki/Pong>`__ game can be controlled
 by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be
 controlled by two Dual Button Bricklets.
+
+.. image:: /Images/Kits/blinkenlights_demo_pong_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Demo Application Screenshot: Pong
+   :align: center
+   :target: ../../_images/Kits/blinkenlights_demo_pong.jpg
 
 The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__.
@@ -256,6 +270,12 @@ sliders:
 Play with the sliders to configure your personal fire! With the "Default" button
 you will set back all sliders to their default values.
 
+.. image:: /Images/Kits/blinkenlights_demo_fire_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Demo Application Screenshot: Fire
+   :align: center
+   :target: ../../_images/Kits/blinkenlights_demo_fire.jpg
+
 The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__.
 It consists of mainly two files: ``fire.py`` implements the simulation and
@@ -287,6 +307,12 @@ The "Text" demo will scroll the entered text with the given frame rate
 on the display. The text moved one column per frame. A higher frame rate results
 in faster moving text. You can set changing colors by selecting "Rainbow" or
 select "Color" and pick the color you like by pressing the button.
+
+.. image:: /Images/Kits/blinkenlights_demo_text_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Demo Application Screenshot: Text
+   :align: center
+   :target: ../../_images/Kits/blinkenlights_demo_text.jpg
 
 The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__.
@@ -326,6 +352,12 @@ Each image is resized to 20x10 pixel (size of the display) and stretched if the
 aspect ration does not  fit. Use an image editing tool if you are not satisfied
 with the results.
 
+.. image:: /Images/Kits/blinkenlights_demo_images_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Demo Application Screenshot: Images
+   :align: center
+   :target: ../../_images/Kits/blinkenlights_demo_images.jpg
+
 The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/images/python>`__.
 It consists of mainly two files: ``images.py`` implements the logic and
@@ -355,6 +387,12 @@ TODO:
 
 The "Rainbow" demo will display a moving rainbow with the given frame rate
 and speed. A higher frame rate and speed results in faster moving rainbow.
+
+.. image:: /Images/Kits/blinkenlights_demo_rainbow_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Demo Application Screenshot: Rainbow
+   :align: center
+   :target: ../../_images/Kits/blinkenlights_demo_rainbow.jpg
 
 The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/rainbow/python>`__.
