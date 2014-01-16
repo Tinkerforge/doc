@@ -145,10 +145,8 @@ be powered by PoE since the PoE voltage typically is too high.
 
 The Ethernet Extension can be used together with a Step-Down Power Supply.
 
-Programming Interfaces
-----------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programming Interface
+---------------------
 
-See :ref:`Master Brick Documentation <master_brick_programming_interfaces>`.
+See :ref:`Master Brick Documentation <master_brick_programming_interface>`.

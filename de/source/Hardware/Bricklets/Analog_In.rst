@@ -181,15 +181,12 @@ Ein `laser-geschnittenes Gehäuse für das Analog In Bricklet
 |bricklet_case_hint|
 
 
-.. _analog_in_bricklet_programming_interfaces:
+.. _analog_in_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Analog_In_hlpi.table

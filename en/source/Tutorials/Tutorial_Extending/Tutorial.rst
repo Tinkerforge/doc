@@ -9,7 +9,7 @@ First steps - Tutorial
 The following tutorial will demonstrate how to use
 :ref:`Bricks <product_overview_bricks>` and
 :ref:`Bricklets <product_overview_bricklets>`
-with the :ref:`High Level Programming Interface <pi_hlpi>`.
+with the :ref:`Programming Interface <programming_interface>`.
 
 In the first part we use the :ref:`DC Brick <dc_brick>`
 to drive a motor. After this we make the velocity of this motor
@@ -135,7 +135,7 @@ for your own project.
 .. note::
  A full description of the API and further examples can be found in the
  description page of each product. In case of the
- DC Brick :ref:`here <dc_brick_programming_interfaces>`.
+ DC Brick :ref:`here <dc_brick_programming_interface>`.
 
 
 Add Bricklets to extend features

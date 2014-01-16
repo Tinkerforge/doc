@@ -199,15 +199,13 @@ Ein `laser-geschnittenes Gehäuse für das PTC Bricklet
 
 |bricklet_case_hint|
 
-.. _ptc_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _ptc_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: PTC_hlpi.table

@@ -239,15 +239,13 @@ Ein `laser-geschnittenes Gehäuse für das Distance IR Bricklet
 
 |bricklet_case_hint|
 
-.. _distance_ir_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _distance_ir_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Distance_IR_hlpi.table

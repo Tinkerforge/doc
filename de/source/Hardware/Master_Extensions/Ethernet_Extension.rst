@@ -148,11 +148,9 @@ hoch wäre.
 Die Ethernet Extension kann zusammen mit einer Step-Down Power Supply betrieben
 werden.
 
-Programmierschnittstellen
--------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interfaces>`.
+Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interface>`.
 

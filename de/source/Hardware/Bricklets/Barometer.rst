@@ -198,15 +198,13 @@ Ein `laser-geschnittenes Gehäuse für das Barometer Bricklet
 
 |bricklet_case_hint|
 
-.. _barometer_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _barometer_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Barometer_hlpi.table

@@ -172,15 +172,13 @@ Im folgenden befindet sich eine Explosionszeichnung des Temperature IR Bricklet-
 
 |bricklet_case_hint|
 
-.. _temperature_ir_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _temperature_ir_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Temperature_IR_hlpi.table

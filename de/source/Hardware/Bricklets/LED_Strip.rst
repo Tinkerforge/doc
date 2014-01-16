@@ -390,15 +390,12 @@ Ein `laser-geschnittenes Gehäuse für das LED Strip Bricklet
 |bricklet_case_hint|
 
 
-.. _led_strip_bricklet_programming_interfaces:
+.. _led_strip_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: LED_Strip_hlpi.table

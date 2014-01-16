@@ -142,15 +142,12 @@ Ein `laser-geschnittenes Gehäuse für das Piezo Speaker Bricklet
 |bricklet_case_hint|
 
 
-.. _piezo_speaker_bricklet_programming_interfaces:
+.. _piezo_speaker_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Piezo_Speaker_hlpi.table

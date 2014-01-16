@@ -119,15 +119,12 @@ kann zum Beispiel ein Magnet verwendet werden, der an dem Bricklet vorbei gefüh
 |test_pi_ref|
 
 
-.. _hall_effect_bricklet_programming_interfaces:
+.. _hall_effect_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Hall_Effect_hlpi.table

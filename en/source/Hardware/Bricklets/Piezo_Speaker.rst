@@ -140,14 +140,11 @@ A `laser-cut case for the Piezo Speaker Bricklet
 |bricklet_case_hint|
 
 
-.. _piezo_speaker_bricklet_programming_interfaces:
+.. _piezo_speaker_bricklet_programming_interface:
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Piezo_Speaker_hlpi.table

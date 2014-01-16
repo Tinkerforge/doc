@@ -74,14 +74,11 @@ and drive motors (e.g. :ref:`DC Brick <dc_brick>`).
 Bricks can be assembled into a stack. A Master Brick at the bottom of a
 stack is responsible for the communication all boards within the stack.
 This master routes the messages between the boards in the stack and the PC
-(:ref:`High Level Programming Interface <pi_hlpi>`).
+(:ref:`Programming Interface <programming_interface>`).
 For the user, the stack behaves as if all Bricks were connected separately
 over USB with the PC.
 See the :ref:`stacking tutorial <tutorial_first_steps_build_stacks>` for more
 information about stacks.
-
-Besides the :ref:`High Level Programming Interface <pi_hlpi>` it will also
-possible to use Bricks with an :ref:`On Device Programming Interface <pi_odpi>`.
 
 .. include:: Product_Overview_bricks.table
 
@@ -151,7 +148,7 @@ stored in the `EEPROM <http://en.wikipedia.org/wiki/EEPROM>`__ of the Bricklet,
 are loaded into the flash of the Brick. This adds new functions to the Brick,
 that can then be used from the PC.
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for more information.
+See :ref:`Programming Interface <programming_interface>` for more information.
 
 .. include:: Product_Overview_bricklets.table
 
@@ -189,8 +186,8 @@ Master Extensions
        :align: center
        :target: _images/Extensions/extension_wifi_tilted_800.jpg
 
-When using the :ref:`High Level Programming Interface <pi_hlpi>` concept,
-:ref:`Master Bricks <master_brick>` can route messages between
+For the :ref:`Programming Interface <programming_interface>` concept,
+:ref:`Master Bricks <master_brick>` route messages between
 :ref:`Bricks <product_overview_bricks>` and the PC. To establish a connection
 between a PC and the Master Brick, typically the USB port is used.
 Master Extensions can be utilized to change the interface of a Master Brick.

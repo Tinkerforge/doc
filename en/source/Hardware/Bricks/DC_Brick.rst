@@ -89,12 +89,8 @@ automatically to this power supply.
 Controlling the device is possible in several ways. You can control it via
 a PC connection. This connection can be established directly with a **USB**
 cable or by other cable based (**RS485**, **Ethernet**) or wireless
-(**WIFI**) connections via an additional Master Brick with
-corresponding Master Extension (:ref:`High Level Concept <pi_hlpi>`).
-
-Since the firmware is open source it is possible to program the device
-directly (:ref:`On Device Programming <pi_odpi>`).
-Currently we are not offering an On Device API.
+(**WIFI**) connections via an additional Master Brick with corresponding
+Master Extension (:ref:`Programming Interface <programming_interface>`).
 
 
 Technical Specifications
@@ -246,37 +242,16 @@ much current.
 To get the Brick operational again you have to increase the voltage or in the
 latter case you have to let the driver chip cool down and enable it again.
 
-.. _dc_brick_programming_interfaces:
 
+.. _dc_brick_programming_interface:
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: DC_Brick_hlpi.table
 
-
-On Device Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. note::
- Coming soon!
-
- An API and documentation for direct on device programming (comparable
- to Arduino) is planned.
- You can however already use our firmware as a starting point for your
- own modifications (C knowledge required).
-
-..
-  .. csv-table::
-     :header: "Interface", "API", "Examples", "Installation"
-     :widths: 25, 8, 15, 12
-
-     "Programming", "API", "Examples", "Installation"
 
 ..
 	FAQ

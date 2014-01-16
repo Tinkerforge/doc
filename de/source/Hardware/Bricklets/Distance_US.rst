@@ -159,15 +159,12 @@ Im folgenden befindet sich eine Explosionszeichnung des Distance US Bricklet-Geh
 |bricklet_case_hint|
 
 
-.. _distance_us_bricklet_programming_interfaces:
+.. _distance_us_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Distance_US_hlpi.table

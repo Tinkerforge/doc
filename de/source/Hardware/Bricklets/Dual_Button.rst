@@ -117,15 +117,12 @@ werden sowie die Zustände der LEDs verändert werden.
 |test_pi_ref|
 
 
-.. _dual_button_bricklet_programming_interfaces:
+.. _dual_button_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Dual_Button_hlpi.table

@@ -186,14 +186,12 @@ A `laser-cut case for the GPS Bricklet
 
 |bricklet_case_hint|
 
-.. _gps_bricklet_programming_interfaces:
 
-Programming Interfaces
-----------------------
+.. _gps_bricklet_programming_interface:
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programming Interface
+---------------------
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: GPS_hlpi.table

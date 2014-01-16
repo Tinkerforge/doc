@@ -176,14 +176,13 @@ Ein `laser-geschnittenes Gehäuse für das Industrial Dual 0-20mA Bricklet
 
 |bricklet_case_hint|
 
-.. _industrial_dual_0_20ma_bricklet_programming_interfaces:
+
+.. _industrial_dual_0_20ma_bricklet_programming_interface:
 
 Programmierschnittstelle
 ------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte Beschreibung.
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
+Beschreibung.
 
 .. include:: Industrial_Dual_020mA_hlpi.table

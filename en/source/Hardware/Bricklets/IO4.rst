@@ -195,14 +195,12 @@ A `laser-cut case for the IO-4 Bricklet
 
 |bricklet_case_hint|
 
-.. _io4_bricklet_programming_interfaces:
 
-Programming Interfaces
-----------------------
+.. _io4_bricklet_programming_interface:
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programming Interface
+---------------------
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: IO4_hlpi.table

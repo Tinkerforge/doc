@@ -157,14 +157,12 @@ A `laser-cut case for the Temperature Bricklet
 
 |bricklet_case_hint|
 
-.. _temperature_bricklet_programming_interfaces:
 
-Programming Interfaces
-----------------------
+.. _temperature_bricklet_programming_interface:
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programming Interface
+---------------------
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Temperature_hlpi.table

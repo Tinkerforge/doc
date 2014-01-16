@@ -147,15 +147,12 @@ Im folgenden befindet sich eine Explosionszeichnung des Segment Display 4x7 Bric
 |bricklet_case_hint|
 
 
-.. _segment_display_4x7_bricklet_programming_interfaces:
+.. _segment_display_4x7_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Segment_Display_4x7_hlpi.table

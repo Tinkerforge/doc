@@ -378,14 +378,11 @@ A `laser-cut case for the LED Strip Bricklet
 |bricklet_case_hint|
 
 
-.. _led_strip_bricklet_programming_interfaces:
+.. _led_strip_bricklet_programming_interface:
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: LED_Strip_hlpi.table

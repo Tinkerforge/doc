@@ -75,15 +75,11 @@ Stapelbildung und bis zu vier Anschlüssen für :ref:`Bricklets
 
 Bricks können zu Stapeln zusammengesteckt werden. Ein Master kümmert sich um die
 Kommunikation aller anderen Teilnehmer im Stapel. Er routet Nachrichten zwischen
-den Teilnehmern und dem PC (:ref:`High Level Programmierschnittstelle <pi_hlpi>`).
+den Teilnehmern und dem PC (:ref:`Programmierschnittstelle <programming_interface>`).
 Aus Benutzersicht verhält sich solch ein Stapel so als wären alle Bricks einzeln
 per USB am PC angeschlossen. Das :ref:`Stapel Tutorial
 <tutorial_first_steps_build_stacks>` beinhaltet weitere Informationen über
 Stapel.
-
-Neben der :ref:`High Level Programmierschnittstelle <pi_hlpi>` wird es in
-Zukunft auch möglich sein über eine :ref:`On Device Programmierschnittstelle
-<pi_odpi>` Bricks zu verwenden.
 
 .. include:: Product_Overview_bricks.table
 
@@ -155,7 +151,7 @@ auf dem Bricklet gespeichert und werden zur Ausführung in den Flash des Bricks
 geladen. Dies fügt dem Brick neue Funktionen hinzu die vom PC aus genutzt
 werden können.
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für weitere
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für weitere
 Information.
 
 .. include:: Product_Overview_bricklets.table
@@ -194,7 +190,7 @@ Master Extensions
        :align: center
        :target: _images/Extensions/extension_wifi_tilted_800.jpg
 
-Bei der Verwendung der :ref:`High Level Programmierschnittstelle <pi_hlpi>`
+Für die :ref:`Programmierschnittstelle <programming_interface>`
 routet der :ref:`Master Brick <master_brick>` Nachrichten zwischen den anderen
 :ref:`Bricks <product_overview_bricks>` im Stapel und dem PC. Typischerweise
 wird die Verbindung zwischen Master Brick und PC über den USB Anschluss des

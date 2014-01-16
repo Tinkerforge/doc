@@ -156,17 +156,12 @@ Und einer Montageplatte mit einstellbarem Abstand:
    :target: ../../_images/Cases/bricklet_line_case2_tilted1_600.jpg
 
 
+.. _line_bricklet_programming_interface:
 
+Programmierschnittstelle
+------------------------
 
-.. _line_bricklet_programming_interfaces:
-
-Programmierschnittstellen
--------------------------
-
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Line_hlpi.table

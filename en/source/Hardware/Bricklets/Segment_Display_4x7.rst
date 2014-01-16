@@ -146,15 +146,12 @@ Below you can see an exploded assembly drawing of the Segment Display 4x7 Brickl
 |bricklet_case_hint|
 
 
-.. _segment_display_4x7_bricklet_programming_interfaces:
+.. _segment_display_4x7_bricklet_programming_interface:
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Segment_Display_4x7_hlpi.table
 

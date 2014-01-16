@@ -177,15 +177,13 @@ Ein `laser-geschnittenes Gehäuse für das Analog Out Bricklet
 
 |bricklet_case_hint|
 
-.. _analog_out_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _analog_out_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Analog_Out_hlpi.table

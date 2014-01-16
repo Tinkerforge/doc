@@ -154,15 +154,12 @@ Ein `laser-geschnittenes Gehäuse für das Rotary Encoder Bricklet
 |bricklet_case_hint|
 
 
-.. _rotary_encoder_bricklet_programming_interfaces:
+.. _rotary_encoder_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Rotary_Encoder_hlpi.table

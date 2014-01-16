@@ -1,18 +1,12 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#software">Software</a> / Programming Interfaces
+:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#software">Software</a> / Programming Interface
 
-.. _pi:
+.. _programming_interface:
 
-Programming Interfaces
-======================
+Programming Interface
+=====================
 
-
-.. _pi_hlpi:
-
-High Level Programming Interface (HLPI)
----------------------------------------
-
-The High Level Programming Interface uses preprogrammed devices
+The Programming Interface uses preprogrammed devices
 (:ref:`Bricks <product_overview_bricks>` and 
 :ref:`Bricklets<product_overview_bricklets>`) that can be controlled by an 
 (embedded-) PC, tablet or smart phone. Each device has its own unique
@@ -51,28 +45,10 @@ already loaded inside the Bricks Flash.
 This generic approach makes it possible to have compatibility between all 
 Bricks and Bricklets, including future ones.
 
-The High Level Programming Interface is available for Windows, Linux and 
+The Programming Interface is available for Windows, Linux and 
 Mac OS X as well as mobile operating systems, such as Android,
 iOS and Windows Phone.
 
 .. note::
  See this :ref:`tutorial <tutorial_first_steps>` for more information on how to
  use it and an idea of the Brick and Bricklet concept.
-
-
-.. _pi_odpi:
-
-On Device Programming Interface (ODPI)
---------------------------------------
-
-The On Device Programming Interface (ODPI) is an API to write your own
-firmware for Bricks.
-
-.. warning::
- Currently only the source code of the Bricks and Bricklets is
- `online <https://github.com/organizations/Tinkerforge>`__.
- If you have the skills to set up the compiler environment and can
- program C, you can adapt the code for your own purposes.
-
- We are working on a simple API to allow easy firmware development
- (comparable to the Arduino API).

@@ -124,14 +124,14 @@ brick_test_pi_ref = {
 'en':
 """.. |test_pi_ref| replace::
  After this test you can go on with writing your own application.
- See the :ref:`Programming Interface <{0}_brick_programming_interfaces>`
+ See the :ref:`Programming Interface <{0}_brick_programming_interface>`
  section for the API of the {1} Brick and examples in different programming
  languages.
 """,
 'de':
 """.. |test_pi_ref| replace::
  Nun kann ein eigenes Programm geschrieben werden. Der Abschnitt
- :ref:`Programmierschnittstellen <{0}_brick_programming_interfaces>` listet die
+ :ref:`Programmierschnittstelle <{0}_brick_programming_interface>` listet die
  API des {1} Bricks und Beispiele in verschiedenen Programmiersprachen auf.
 """
 }
@@ -231,14 +231,14 @@ bricklet_test_pi_ref = {
 'en':
 """.. |test_pi_ref| replace::
  After this test you can go on with writing your own application.
- See the :ref:`Programming Interface <{0}_bricklet_programming_interfaces>`
+ See the :ref:`Programming Interface <{0}_bricklet_programming_interface>`
  section for the API of the {1} Bricklet and examples in different programming
  languages.
 """,
 'de':
 """.. |test_pi_ref| replace::
  Nun kann ein eigenes Programm geschrieben werden. Der Abschnitt
- :ref:`Programmierschnittstellen <{0}_bricklet_programming_interfaces>` listet
+ :ref:`Programmierschnittstelle <{0}_bricklet_programming_interface>` listet
  die API des {1} Bricklets und Beispiele in verschiedenen
  Programmiersprachen auf.
 """

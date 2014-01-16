@@ -124,15 +124,12 @@ Dauer.
 |test_pi_ref|
 
 
-.. _piezo_buzzer_bricklet_programming_interfaces:
+.. _piezo_buzzer_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Piezo_Buzzer_hlpi.table

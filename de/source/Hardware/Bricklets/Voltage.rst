@@ -121,15 +121,12 @@ Der Graph gibt den zeitlichen Verlauf der Spannung wieder.
 |test_pi_ref|
 
 
-.. _voltage_bricklet_programming_interfaces:
+.. _voltage_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Voltage_hlpi.table

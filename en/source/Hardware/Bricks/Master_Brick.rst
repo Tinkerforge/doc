@@ -78,19 +78,15 @@ acts as the master of this stack and routes all communication between the
 boards of the stack and the PC. Other Master Bricks in the stack provide their
 attached Bricklets.
 
-Normally the communication with a stack is routed
-over the **USB** connection of the master. This can be changed with
-:ref:`Master Extensions <product_overview_master_extensions>`. There are
-Master Extensions for cable based interfaces (**RS485**, **Ethernet**) and wireless
-interfaces (**WIFI**). Extensions are plugged on the topside of the master.
+Normally the communication with a stack is routed over the **USB** connection
+of the Master Brick. This can be changed with :ref:`Master Extensions
+<product_overview_master_extensions>`. There are Master Extensions for cable
+based interfaces (**RS485**, **Ethernet**) and wireless interfaces (**WIFI**).
+Extensions are plugged on the topside of the master.
 
 The maximum stack consists of (bottom to top) 1x Step-Down Power Supply,
 1x Master Brick, 8x Bricks, 2x Master Extensions. With all Bricks being Master
 Bricks in a stack up to 36 Bricklets can be connected to a single stack.
-
-Since the firmware is open source it is possible to program the device
-directly (:ref:`On Device Programming <pi_odpi>`).
-Currently we are not offering an On Device API.
 
 
 Technical Specifications
@@ -156,33 +152,11 @@ flowing in.
 |test_pi_ref|
 
 
-.. _master_brick_programming_interfaces:
+.. _master_brick_programming_interface:
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Master_Brick_hlpi.table
-
-
-On Device Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. note::
- Coming soon!
-
- An API and documentation for direct on device programming (comparable
- to Arduino) is planned.
- You can however already use our firmware as a starting point for your
- own modifications (C knowledge required).
-
-..
-  .. csv-table::
-     :header: "Interface", "API", "Examples", "Installation"
-     :widths: 25, 8, 15, 12
-
-     "Programming", "API", "Examples", "Installation"

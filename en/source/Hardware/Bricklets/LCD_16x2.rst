@@ -141,14 +141,11 @@ turn the potentiometer on the Bricklet with a screwdriver.
 The potentiometer is attached next to the Bricklet connector.
 
 
-.. _lcd_16x2_bricklet_programming_interfaces:
+.. _lcd_16x2_bricklet_programming_interface:
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: LCD_16x2_hlpi.table

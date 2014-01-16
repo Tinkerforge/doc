@@ -156,15 +156,13 @@ Ein `laser-geschnittenes Gehäuse für das Humidity Bricklet
 
 |bricklet_case_hint|
 
-.. _humidity_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _humidity_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Humidity_hlpi.table

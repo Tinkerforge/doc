@@ -159,15 +159,12 @@ Ein `laser-geschnittenes Gehäuse für das Ambient Light Bricklet
 |bricklet_case_hint|
 
 
-.. _ambient_light_bricklet_programming_interfaces:
+.. _ambient_light_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Ambient_Light_hlpi.table

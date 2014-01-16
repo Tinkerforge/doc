@@ -196,15 +196,13 @@ Ein `laser-geschnittenes Gehäuse für das Voltage/Current Bricklet
 
 |bricklet_case_hint|
 
-.. _voltage_current_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _voltage_current_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine
-detaillierte Beschreibung.
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
+Beschreibung.
 
 .. include:: Voltage_Current_hlpi.table

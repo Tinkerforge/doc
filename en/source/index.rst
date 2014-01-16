@@ -96,8 +96,8 @@ Those can be downloaded in the :ref:`downloads section <downloads>`. The
 :ref:`source code and links for bug trackers <source_code>` can be found in
 their own section.
 
-The basics of the different programming interfaces are described
-:ref:`here <pi>`.
+The basics of the programming interface are described :ref:`here
+<programming_interface>`.
 
 In `January 2013 <http://www.tinkerforge.com/en/blog/2013/1/15/protocol-2-0-available>`__
 we updated the communication protocol used for Bricks. For programs that were
@@ -117,7 +117,7 @@ protocol proxy between Bricks/Bricklets and the :ref:`NetIO Controller App
    Software/Firmwares_And_Plugins
    Downloads
    Source_Code
-   Programming_Interfaces
+   Programming_Interface
    Transitioning_Guide_1To2
 
 .. toctree::

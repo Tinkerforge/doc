@@ -150,15 +150,12 @@ Im folgenden befindet sich eine Explosionszeichnung des Sound Intensity Bricklet
 |bricklet_case_hint|
 
 
-.. _sound_intensity_bricklet_programming_interfaces:
+.. _sound_intensity_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Sound_Intensity_hlpi.table

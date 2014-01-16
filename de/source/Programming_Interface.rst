@@ -1,20 +1,14 @@
 
-:breadcrumbs: <a href="index.html">Startseite</a> / <a href="index.html#software">Software</a> / Programmierschnittstellen
+:breadcrumbs: <a href="index.html">Startseite</a> / <a href="index.html#software">Software</a> / Programmierschnittstelle
 
-.. _pi:
+.. _programming_interface:
 
-Programmierschnittstellen
-=========================
+Programmierschnittstelle
+========================
 
-
-.. _pi_hlpi:
-
-High Level Programmierschnittstelle (HLPI)
-------------------------------------------
-
-Die High Level Programmierschnittstelle verwendet vorprogrammierte Geräte
+Die Programmierschnittstelle verwendet vorprogrammierte Geräte
 (:ref:`Bricks <product_overview_bricks>` und 
-:ref:`Bricklets<product_overview_bricklets>`) die von einem (Embedded-) PC, 
+:ref:`Bricklets <product_overview_bricklets>`) die von einem (Embedded-) PC, 
 Tablet oder Smartphone aus gesteuert werden können. Jedes Gerät
 hat seine eigene eindeutige Identifikationsnummer (UID).
 
@@ -59,21 +53,3 @@ Betriebssystem wie Android, iOS und Windows Phone verfügbar.
 .. note::
  Dieses :ref:`Tutorial <tutorial_first_steps>` vermittelt weitere Informationen
  wie diese Konzept verwendet werden kann.
-
-
-.. _pi_odpi:
-
-On Device Programmierschnittstelle (ODPI)
------------------------------------------
-
-Die On Device Programmierschnittstelle (ODPI) ist eine API, die es erlaubt
-eigene Firmwares für Bricks und Bricklets zu entwickeln.
-
-.. warning::
- Im Moment sind nur die Quelltexte der Bricks und Bricklets `online
- <https://github.com/Tinkerforge>`__ verfügbar. Derjenige der in
- der Lage ist die passende Entwicklungsumgebung aufzusetzen und C programmieren
- kann, kann jetzt schon den Quelltext für seine Zwecke abändern.
-
- Eine einfache API (vergleichbar der Arduino API) für einfache
- Firmwareentwicklung ist in Arbeit.

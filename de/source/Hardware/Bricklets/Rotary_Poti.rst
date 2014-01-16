@@ -165,15 +165,13 @@ Ein `laser-geschnittenes Gehäuse für das Rotary Poti Bricklet
 
 |bricklet_case_hint|
 
-.. _rotary_poti_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _rotary_poti_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Rotary_Poti_hlpi.table

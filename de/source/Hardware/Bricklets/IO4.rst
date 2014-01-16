@@ -193,15 +193,13 @@ Ein `laser-geschnittenes Gehäuse für das IO-4 Bricklet
 
 |bricklet_case_hint|
 
-.. _io4_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _io4_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: IO4_hlpi.table

@@ -8,7 +8,7 @@ Erste Schritte - Tutorial
 
 Das folgende Tutorial demonstriert wie :ref:`Bricks <product_overview_bricks>`
 und :ref:`Bricklets <product_overview_bricklets>` mit der
-:ref:`High Level Programmierschnittstelle <pi_hlpi>` verwendet werden können.
+:ref:`Programmierschnittstelle <programming_interface>` verwendet werden können.
 
 Im ersten Teil wird ein :ref:`DC Brick <dc_brick>` verwendet, um einen Motor
 zu steuern. Danach wird der Aufbau erweitert um die Geschwindigkeit des Motors
@@ -135,7 +135,7 @@ als Ausgangspunkt für ein eigenes Projekt.
 .. note::
  Eine vollständige Beschreibung der API und weitere Beispiele finden sich auch
  der Beschreibungsseite jedes Produkts. Im Falle des DC Bricks :ref:`hier
- <dc_brick_programming_interfaces>`.
+ <dc_brick_programming_interface>`.
 
 
 Bricklets anschließen für weitere Features

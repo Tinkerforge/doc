@@ -178,14 +178,13 @@ Ein `laser-geschnittenes Gehäuse für das Industrial Quad Relay Bricklet
 
 |bricklet_case_hint|
 
-.. _industrial_quad_relay_bricklet_programming_interfaces:
+
+.. _industrial_quad_relay_bricklet_programming_interface:
 
 Programmierschnittstelle
 ------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte Beschreibung.
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
+Beschreibung.
 
 .. include:: Industrial_Quad_Relay_hlpi.table

@@ -224,10 +224,7 @@ Here is a small list of frequencies with corresponding possible channels:
  you are allowed to use the frequency you are configuring!
 
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`Master Brick documentation <master_brick_programming_interfaces>`.
+See :ref:`Master Brick documentation <master_brick_programming_interface>`.

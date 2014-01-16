@@ -91,10 +91,6 @@ Der großtmögliche Stapel besteht aus (von unten nach oben)
 Wenn alle Bricks im Stapel Master Bricks sind können bis zu 36 Bricklets an
 einen Stapel angeschlossen werden.
 
-Da die Firmware Open Source ist, ist es natürlich auch möglich den Brick direkt
-zu programmieren (:ref:`On Device Programmierung <pi_odpi>`).
-Momentan bieten wir keine On Device API an.
-
 
 Technische Spezifikation
 ------------------------
@@ -159,35 +155,12 @@ Stromverbrauch des Stapels angezeigt.
 |test_pi_ref|
 
 
-.. _master_brick_programming_interfaces:
+.. _master_brick_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Master_Brick_hlpi.table
-
-
-On Device Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. note::
- In Kürze!
-
- Eine API und Dokumentation um direkt auf dem Mikrocontroller zu programmieren
- (vergleichbar mit Arduino) ist geplant.
- Bis es soweit ist kann unsere Firmware als Grundlage für eigene Modifikationen
- verwendet werden (C Kenntnisse vorausgesetzt).
-
-..
-  .. csv-table::
-     :header: "Interface", "API", "Examples", "Installation"
-     :widths: 25, 8, 15, 12
-
-     "Programming", "API", "Examples", "Installation"
-

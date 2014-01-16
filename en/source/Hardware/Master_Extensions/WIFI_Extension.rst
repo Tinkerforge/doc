@@ -379,10 +379,7 @@ Depending on your application it is possible to disconnect the pigtail cable
 and connect your own cable.
 
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`Master Brick documentation <master_brick_programming_interfaces>`.
+See :ref:`Master Brick documentation <master_brick_programming_interface>`.

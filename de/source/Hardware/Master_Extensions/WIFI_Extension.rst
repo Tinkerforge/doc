@@ -389,11 +389,8 @@ Das WIFI Modul ist mit einem U.FL Anschluss und einem 75 Ohm U.FL nach RP-SMA Ka
 Abhängig von der Anwendung kann dieses Kabel auch vom WIFI Modul getrennt und ein eigenes
 angeschlossen werden.
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interfaces>`.
+Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interface>`.
 

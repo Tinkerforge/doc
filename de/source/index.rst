@@ -93,8 +93,8 @@ Diese können im :ref:`Downloadbereich <downloads>` heruntergeladen werden.
 Die :ref:`Quelltexte und Links zu Bug Trackern <source_code>` befinden sich in
 einem eigenen Bereich.
 
-Die Grundlagen der verschiedenen Programmierschnittstellen werden
-:ref:`hier <pi>` beschrieben.
+Die Grundlagen der Programmierschnittstelle werden :ref:`hier
+<programming_interface>` beschrieben.
 
 Im `Januar 2013 <http://www.tinkerforge.com/de/blog/2013/1/15/protokoll-2-0-verfuegbar>`__
 haben wir das Kommunikationsprotokoll der Bricks überarbeitet. Für Programme
@@ -114,7 +114,7 @@ verwendet werden.
    Software/Firmwares_And_Plugins
    Downloads
    Source_Code
-   Programming_Interfaces
+   Programming_Interface
    Transitioning_Guide_1To2
 
 .. toctree::

@@ -429,15 +429,12 @@ Im folgenden befindet sich eine Explosionszeichnung des Remote Switch Bricklet-G
 |bricklet_case_hint|
 
 
-.. _remote_switch_bricklet_programming_interfaces:
+.. _remote_switch_bricklet_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Remote_Switch_hlpi.table

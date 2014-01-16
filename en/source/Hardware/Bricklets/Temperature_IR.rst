@@ -175,14 +175,12 @@ Below you can see an exploded assembly drawing of the Temperature IR Bricklet ca
 
 |bricklet_case_hint|
 
-.. _temperature_ir_bricklet_programming_interfaces:
 
-Programming Interfaces
-----------------------
+.. _temperature_ir_bricklet_programming_interface:
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programming Interface
+---------------------
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Temperature_IR_hlpi.table

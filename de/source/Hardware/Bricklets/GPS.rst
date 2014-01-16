@@ -184,15 +184,13 @@ Ein `laser-geschnittenes Gehäuse für das GPS Bricklet
 
 |bricklet_case_hint|
 
-.. _gps_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _gps_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: GPS_hlpi.table

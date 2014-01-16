@@ -120,14 +120,11 @@ the Bricklet.
 |test_pi_ref|
 
 
-.. _hall_effect_bricklet_programming_interfaces:
+.. _hall_effect_bricklet_programming_interface:
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Hall_Effect_hlpi.table

@@ -207,11 +207,9 @@ Kommunikation mit ihnen aufnimmt. Den Neustart des RS485 Masters kann
 durch Drücken seines Reset Knopfes erreicht werden, bzw. durch ein kurzes Trennen
 seiner USB Verbindung.
 
-Programmierschnittstellen
--------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interfaces>`.
+Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interface>`.
 

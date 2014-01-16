@@ -233,10 +233,8 @@ Hier ist eine Liste von Frequenzen und zugehörigen Kanälen:
  sicherzustellen, dass die konfigurierte Frequenz am jeweiligen Standort für die
  Nutzung freigegeben ist!
 
-Programmierschnittstellen
--------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interfaces>`.
+Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interface>`.

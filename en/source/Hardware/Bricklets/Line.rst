@@ -154,14 +154,12 @@ And a mounting plate with configurable distance:
    :align: center
    :target: ../../_images/Cases/bricklet_line_case2_tilted1_600.jpg
 
-.. _line_bricklet_programming_interfaces:
 
-Programming Interfaces
-----------------------
+.. _line_bricklet_programming_interface:
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programming Interface
+---------------------
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:` Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Line_hlpi.table

@@ -166,15 +166,13 @@ Ein `laser-geschnittenes Gehäuse für das Linear Poti Bricklet
 
 |bricklet_case_hint|
 
-.. _linear_poti_bricklet_programming_interfaces:
 
-Programmierschnittstellen
--------------------------
+.. _linear_poti_bricklet_programming_interface:
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programmierschnittstelle
+------------------------
 
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: Linear_Poti_hlpi.table

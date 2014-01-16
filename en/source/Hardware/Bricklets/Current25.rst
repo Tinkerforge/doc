@@ -130,14 +130,11 @@ starting of the motor when the battery is connected.
 |test_pi_ref|
 
 
-.. _current25_bricklet_programming_interfaces:
+.. _current25_bricklet_programming_interface:
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Current25_hlpi.table

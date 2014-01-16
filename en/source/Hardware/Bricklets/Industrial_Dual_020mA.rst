@@ -174,14 +174,12 @@ A `laser-cut case for the Industrial Dual 0-20mA Bricklet
 
 |bricklet_case_hint|
 
-.. _industrial_dual_0_20ma_bricklet_programming_interfaces:
 
-Programming Interfaces
-----------------------
+.. _industrial_dual_0_20ma_bricklet_programming_interface:
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programming Interface
+---------------------
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Industrial_Dual_020mA_hlpi.table

@@ -155,14 +155,11 @@ A `laser-cut case for the Rotary Encoder Bricklet
 |bricklet_case_hint|
 
 
-.. _rotary_encoder_bricklet_programming_interfaces:
+.. _rotary_encoder_bricklet_programming_interface:
 
-Programming Interfaces
-----------------------
+Programming Interface
+---------------------
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Rotary_Encoder_hlpi.table

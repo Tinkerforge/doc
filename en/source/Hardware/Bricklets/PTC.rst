@@ -173,6 +173,7 @@ temperature rising (or falling if it is extremely warm in your room).
 
 |test_pi_ref|
 
+
 .. _ptc_bricklet_case:
 
 Case
@@ -197,14 +198,12 @@ A `laser-cut case for the PTC Bricklet
    :align: center
    :target: ../../_images/Exploded/ptc_exploded.png
 
-.. _ptc_bricklet_programming_interfaces:
 
-Programming Interfaces
-----------------------
+.. _ptc_bricklet_programming_interface:
 
-High Level Programming Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programming Interface
+---------------------
 
-See :ref:`High Level Programming Interface <pi_hlpi>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: PTC_hlpi.table

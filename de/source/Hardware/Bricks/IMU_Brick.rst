@@ -73,8 +73,7 @@ drei Achsen. Wenn die Quaternionen-Darstellung benutzt wird, ist der IMU Brick
 `Gimbal Lock <http://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei.
 
 Der Brick ist kompatibel zu anderen Tinkerforge
-:ref:`Bricks <product_overview_bricks>`
-und kann in einem Stapel benutzt werden.
+:ref:`Bricks <product_overview_bricks>` und kann in einem Stapel benutzt werden.
 Über zwei Anschlüsse können :ref:`Bricklet <product_overview_bricklets>`
 angeschlossen werden.
 
@@ -82,11 +81,7 @@ angeschlossen werden.
 Über einen zusätzlichen Master Brick mit Master Extension ist es möglich diese
 USB Verbindung durch kabelgebundene Schnittstellen (**RS485**, **Ethernet**)
 oder drahtlose Schnittstellen (**WLAN**) zu ersetzen
-(:ref:`High Level Konzept <pi_hlpi>`).
-
-Da die Firmware Open Source ist, ist es natürlich auch möglich den Brick direkt
-zu programmieren (:ref:`On Device Programmierung <pi_odpi>`).
-Momentan bieten wir keine On Device API an.
+(:ref:`Programmierschnittstelle <programming_interface>`).
 
 
 Technische Spezifikation
@@ -341,34 +336,12 @@ for inertial and inertial/magnetic sensor arrays", University of Bristol,
 April 2010.
 
 
-.. _imu_brick_programming_interfaces:
+.. _imu_brick_programming_interface:
 
-Programmierschnittstellen
--------------------------
+Programmierschnittstelle
+------------------------
 
-High Level Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Siehe :ref:`High Level Programmierschnittstelle <pi_hlpi>` für eine detaillierte
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
 .. include:: IMU_Brick_hlpi.table
-
-
-On Device Programmierschnittstelle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. note::
- In Kürze!
-
- Eine API und Dokumentation um direkt auf dem Mikrocontroller zu programmieren
- (vergleichbar mit Arduino) ist geplant.
- Bis es soweit ist kann unsere Firmware als Grundlage für eigene Modifikationen
- verwendet werden (C Kenntnisse vorausgesetzt).
-
-..
-  .. csv-table::
-     :header: "Interface", "API", "Examples", "Installation"
-     :widths: 25, 8, 15, 12
-
-     "Programming", "API", "Examples", "Installation"
