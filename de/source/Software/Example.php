@@ -4,8 +4,8 @@ require_once('Tinkerforge/IPConnection.php');
 
 use Tinkerforge\IPConnection;
 
-$host = 'localhost';
-$port = 4223;
+const HOST = 'localhost';
+const PORT = 4223;
 
 function cb_enumerate($uid, $connectedUid, $position,
                       $hardwareVersion, $firmwareVersion,
@@ -29,7 +29,7 @@ function cb_enumerate($uid, $connectedUid, $position,
 
 // Create IP connection and connect to brickd
 $ipcon = new IPConnection();
-$ipcon->connect($host, $port);
+$ipcon->connect(HOST, PORT);
 
 // Register enumeration callback to "cb_enumerate"
 $ipcon->registerCallback(IPConnection::CALLBACK_ENUMERATE, 'cb_enumerate');
