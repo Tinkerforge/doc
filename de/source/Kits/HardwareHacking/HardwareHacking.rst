@@ -61,7 +61,7 @@ Features
 * Kleinstspannungs-Elektrogeräte hacken und über
 
   * PC, Smartphone/Tablet oder über das Internet (Internet der Dinge) steuern.
-  * Demo-Apps für Android, Windows Phone und iOS* sind verfügbar.
+  * Demo-Apps für Android, Windows Phone und iOS sind verfügbar.
 
 * Direkt mit dem Hacken beginnen: Zwei Funksteckdosen im Kit enthalten
 
@@ -70,9 +70,6 @@ Features
   * z.B. Rauchmelder, Funkfernbedienungen, Garagentore und Türklingel.
 
 * Interaktion über USB, WLAN und Ethernet möglich.
-
-
-\* Demo für iOS folgt bald.
 
 
 Beschreibung
@@ -142,19 +139,19 @@ Maximaler Schaltstrom             1,2A pro Relais
 Maximale Schaltspannung           30V pro Relais
 ================================  ======================================
 
+
 Ressourcen
 ----------
 
 * Beispielquelltexte für :ref:`Funksteckdosen fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: |remote_switch_examples_download|)
 * Beispielquelltext für :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `C# <https://github.com/Tinkerforge/hardware-hacking/tree/master/remote_switch_gui/csharp>`__)
+* Beispielquelltexte für :ref:`Funksteckdosen mit Smartphone fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/windows_phone>`__, `iOS (ObjC) <https://github.com/Tinkerforge/hardware-hacking/tree/master/power_outlet_control_smart_phone/ios>`__)
 * Beispielquelltexte für :ref:`Rauchmelder auslesen <starter_kit_hardware_hacking_smoke_detector>` (Download: |smoke_detector_examples_download|)
-* Beispielquelltexte für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__, iOS* (ObjC))
+* Beispielquelltexte für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android (Java) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/android>`__, `Windows Phone (C#) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/windows_phone>`__, `iOS (ObjC) <https://github.com/Tinkerforge/hardware-hacking/tree/master/garage_control_smart_phone/ios>`__)
 * Beispielquelltext für :ref:`Benachrichtigung durch Türklingel <starter_kit_hardware_hacking_doorbell_notifier>` (Download: `Python <https://github.com/Tinkerforge/hardware-hacking/tree/master/doorbell_notifier/python>`__)
-* Demo-Anwendung :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows (.NET), Linux (Mono), Mac OS X (Mono) <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
-* Demo-Apps :ref:`Funksteckdosen mit Smartphone fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: `Android <https://play.google.com/store/apps/details?id=com.tinkerforge.poweroutletcontrol>`__, `Windows Phone <http://www.windowsphone.com/s?appid=52e1f6a9-707c-4961-9e68-5736e6d29b73>`__, iOS*)
-* Demo-Apps :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android <https://play.google.com/store/apps/details?id=com.tinkerforge.garagecontrol>`__, `Windows Phone <http://www.windowsphone.com/s?appid=4c9a8f61-d9ed-4fd2-b4e6-a332b617c596>`__, iOS*)
-
-\*: Demo für iOS folgt bald.
+* Demo-Anwendung für :ref:`Funksteckdosen mit GUI fernsteuern <starter_kit_hardware_hacking_remote_switch_gui_csharp>` (Download: `Windows (.NET), Linux (Mono), Mac OS X (Mono) <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__)
+* Demo-Apps für :ref:`Funksteckdosen mit Smartphone fernsteuern <starter_kit_hardware_hacking_remote_switch>` (Download: `Android <https://play.google.com/store/apps/details?id=com.tinkerforge.poweroutletcontrol>`__, `Windows Phone <http://www.windowsphone.com/s?appid=52e1f6a9-707c-4961-9e68-5736e6d29b73>`__, `iOS <https://itunes.apple.com/en/app/power-outlet-control/id739029826?mt=8>`__)
+* Demo-Apps für :ref:`Garagentor mit Smartphone fernsteuern <starter_kit_hardware_hacking_garage_control>` (Download: `Android <https://play.google.com/store/apps/details?id=com.tinkerforge.garagecontrol>`__, `Windows Phone <http://www.windowsphone.com/s?appid=4c9a8f61-d9ed-4fd2-b4e6-a332b617c596>`__, `iOS <https://itunes.apple.com/en/app/garage-control/id739047995?&mt=8>`__)
 
 
 Benötigte Werkzeuge
@@ -307,16 +304,19 @@ Die vollständige Beschreibung des Hardware-Aufbaus ist
 zu finden.
 
 Beispiel Apps für :ref:`Android (Java)
-<starter_kit_hardware_hacking_power_outlet_control_android>`
-und :ref:`Windows Phone (C#)
-<starter_kit_hardware_hacking_power_outlet_control_windows_phone>` sind verfügbar.
-Eine Beispielanwendung für iOS folgt bald.
+<starter_kit_hardware_hacking_power_outlet_control_android>`,
+:ref:`Windows Phone (C#)
+<starter_kit_hardware_hacking_power_outlet_control_windows_phone>` und
+:ref:`iOS (ObjC)
+<starter_kit_hardware_hacking_power_outlet_control_ios>`
+sind verfügbar.
 
 .. toctree::
    :hidden:
 
    PowerOutletControl_Android
    PowerOutletControl_WindowsPhone
+   PowerOutletControl_iOS
 
 Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
 Linux (Mono) und Mac OS X (Mono)) ist verfügbar in :ref:`C#
@@ -397,10 +397,12 @@ Eine kurze Beschreibung des Hardware-Aufbaus kann
 gefunden werden.
 
 Beispiel Apps für :ref:`Android (Java)
-<starter_kit_hardware_hacking_garage_control_android>`
-und :ref:`Windows Phone (C#)
-<starter_kit_hardware_hacking_garage_control_windows_phone>` sind verfügbar.
-Eine Beispielanwendung für iOS folgt bald.
+<starter_kit_hardware_hacking_garage_control_android>`,
+:ref:`Windows Phone (C#)
+<starter_kit_hardware_hacking_garage_control_windows_phone>` und
+:ref:`iOS (ObjC)
+<starter_kit_hardware_hacking_garage_control_ios>`
+sind verfügbar.
 
 .. toctree::
    :hidden:
@@ -408,6 +410,7 @@ Eine Beispielanwendung für iOS folgt bald.
    GarageControl_HardwareSetup
    GarageControl_Android
    GarageControl_WindowsPhone
+   GarageControl_iOS
 
 
 .. _starter_kit_hardware_hacking_doorbell_notifier:
