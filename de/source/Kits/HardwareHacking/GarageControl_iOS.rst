@@ -86,7 +86,7 @@ aus zugreifen zu können fügen wir ein ``IBOutlet`` für jedes GUI Element dem
 
     @end
 
-Diese ``IBOutlet``s müssen jetzt im Interface Builder mit den GUI Elementen
+Diese ``IBOutlet`` müssen jetzt im Interface Builder mit den GUI Elementen
 verbunden werden. Dazu über das jeweilige Kontextmenu der GUI Elemente einen
 neuen "Referencing Outlet" zwischen jedem GUI Element und dem entsprechenden
 ``IBOutlet`` des "File's Owner" erzeugen.
