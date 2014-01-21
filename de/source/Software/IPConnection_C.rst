@@ -212,13 +212,13 @@ werden im Folgenden beschrieben.
 
  Mögliche Enumerierungsarten sind:
 
- * ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom
+ * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom
    Benutzer ausgelöst).
- * ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden (Automatisch vom
-   Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann
+ * IPCON_ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden (Automatisch
+   vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann
    bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat
    und neu konfiguriert werden muss.
- * ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei
+ * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur bei
    USB-Verbindungen möglich). In diesem Fall haben nur *uid* und
    *enumeration_type* einen gültigen Wert.
 
@@ -238,8 +238,8 @@ werden im Folgenden beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
  mögliche Gründe sind:
 
- * CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
- * CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer
+ * IPCON_CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
+ * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer
    automatischen Wiederverbindung.
 
 
@@ -253,7 +253,7 @@ werden im Folgenden beschrieben.
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
  mögliche Gründe sind:
 
- * DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
- * DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.
- * DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon oder
+ * IPCON_DISCONNECT_REASON_REQUEST (0): Trennung wurde vom Benutzer angefragt.
+ * IPCON_DISCONNECT_REASON_ERROR (1): Trennung aufgrund eines unlösbaren Problems.
+ * IPCON_DISCONNECT_REASON_SHUTDOWN (2): Trennung wurde vom Brick Daemon oder
    WIFI/Ethernet Extension eingeleitet.
