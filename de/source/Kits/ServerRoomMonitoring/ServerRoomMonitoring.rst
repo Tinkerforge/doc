@@ -12,10 +12,26 @@ Starterkit: Serverraum-Überwachung
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+
 	{{
-	    tfdocstart("Kits/server_room_monitoring_back_350.jpg",
-	               "Kits/server_room_monitoring_back_800.jpg",
-	               "Serverraum-Überwachungskit: Rückseite")
+	    tfdocstart("Kits/server_room_monitoring_alu_front_350.jpg",
+	               "Kits/server_room_monitoring_alu_front_800.jpg",
+	               "Serverraum-Überwachungskit: Vorderseite")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_alu_surface_100.jpg",
+	             "Kits/server_room_monitoring_alu_surface_800.jpg",
+	             "Serverraum-Überwachungskit: Oberfläche Aluminium")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_alu_in_hand_100.jpg",
+	             "Kits/server_room_monitoring_alu_in_hand_800.jpg",
+	             "Serverraum-Überwachungskit")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_back_100.jpg",
+	             "Kits/server_room_monitoring_back_800.jpg",
+	             "Serverraum-Überwachungskit: Rückseite")
 	}}
 	{{
 	    tfdocimg("Kits/server_room_monitoring_in_rack3_100.jpg",
@@ -112,6 +128,15 @@ Das Kit kann über alle verfügbaren Bindings (|bindings|) erfolgen.
 Beispiel Implementierungen und Anwendungen für die Benutzung mit
 `Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ und
 weitere werden nachfolgend zur Verfügung gestellt.
+
+**Seit dem 22ten Januar 2014 ist die Vorderseite des Gehäuses aus
+pulverbeschichteten Aluminium anstatt PMMA:**
+
+.. image:: /Images/Kits/server_room_monitoring_alu_surface_350.jpg
+   :scale: 100 %
+   :alt: Server Room Monitoring Front Panel made from Aluminum
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_alu_surface_600.jpg
 
 Technische Spezifikation
 ------------------------

@@ -13,9 +13,24 @@ Starter Kit: Server Room Monitoring
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Kits/server_room_monitoring_back_350.jpg",
-	               "Kits/server_room_monitoring_back_800.jpg",
-	               "Server Room Monitoring Kit: Back")
+	    tfdocstart("Kits/server_room_monitoring_alu_front_350.jpg",
+	               "Kits/server_room_monitoring_alu_front_800.jpg",
+	               "Server Room Monitoring Kit: Front")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_alu_surface_100.jpg",
+	             "Kits/server_room_monitoring_alu_surface_800.jpg",
+	             "Server Room Monitoring Kit: Surface Aluminum")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_alu_in_hand_100.jpg",
+	             "Kits/server_room_monitoring_alu_in_hand_800.jpg",
+	             "Server Room Monitoring Kit")
+	}}
+	{{
+	    tfdocimg("Kits/server_room_monitoring_back_100.jpg",
+	             "Kits/server_room_monitoring_back_800.jpg",
+	             "Server Room Monitoring Kit: Back")
 	}}
 	{{
 	    tfdocimg("Kits/server_room_monitoring_in_rack3_100.jpg",
@@ -111,6 +126,16 @@ Programming this kit can be done with all of the available
 bindings (|bindings|). Example implementations and applications for the usage with 
 `Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ and 
 other are available (see below). 
+
+**Starting from January 22nd 2014 the front panel of the case is made from powder
+coated aluminum instead of PMMA:**
+
+.. image:: /Images/Kits/server_room_monitoring_alu_surface_350.jpg
+   :scale: 100 %
+   :alt: Server Room Monitoring Front Panel made from Aluminum
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_alu_surface_600.jpg
+
 
 Technical Specifications
 ------------------------
