@@ -276,7 +276,7 @@ panel.
    :scale: 100 %
    :alt: Blinkenlights Demo Application Screenshot: Pong in Daylight
    :align: center
-   :target: ../../_images/Kits/blinkenlights_pong_daylight_1200.jpg
+   :target: ../../_images/Kits/kit_blinkenlights_pong_daylight_1200.jpg
 
 The game can be controlled
 by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be
