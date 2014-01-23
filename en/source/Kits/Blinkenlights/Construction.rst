@@ -18,7 +18,8 @@ The Starter Kit: Blinkenlights comes with:
  * 4x 2-wire clamps
  * 6x 3-wire clamps
  * 4x 5-wire clamps
- and cable straps, screws, spacers and some other parts.
+
+and cable straps, screws, spacers and some other parts.
 
 
 Necessary Tools
