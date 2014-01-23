@@ -151,13 +151,11 @@ if all of the firmwares up to date (Updates / Flashing button). If not, you can
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
 Viewer, too:
 
-TODO: Image of Blinkenlights Bricks/Bricklets:
-
-.. .. image:: /Images/Kits/blinkenlights_update_350.jpg
+.. image:: /Images/Kits/kit_blinkenlights_update_350.jpg
    :scale: 100 %
    :alt: Blinkenlights update in Brick Viewer
    :align: center
-   :target: ../../_images/Kits/blinkenlights_update_orig.jpg
+   :target: ../../_images/Kits/kit_blinkenlights_update.jpg
 
 As next step click through the tabs of the Brick Viewer
 to see if all of the sensors are working correctly. Now you can be sure that
