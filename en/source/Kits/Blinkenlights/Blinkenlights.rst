@@ -13,7 +13,50 @@ Starter Kit: Blinkenlights
  as well as the documentation is incomplete and may not represent the final
  version.
 
-TODO: Images
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Kits/kit_blinkenlights_fire_350.jpg",
+	               "Kits/kit_blinkenlights_fire_800.jpg",
+	               "Blinkenlights: Fire Simulation")
+	}}
+	{{
+	    tfdocstart("Kits/kit_blinkenlights_fire_daylight_350.jpg",
+	               "Kits/kit_blinkenlights_fire_daylight_800.jpg",
+	               "Blinkenlights: Fire Simulation in Daylight")
+	}}
+	{{
+	    tfdocstart("Kits/kit_blinkenlights_on_wall_350.jpg",
+	               "Kits/kit_blinkenlights_on_wall_800.jpg",
+	               "Blinkenlights: On Wall")
+	}}
+	{{
+	    tfdocstart("Kits/kit_blinkenlights_pong_350.jpg",
+	               "Kits/kit_blinkenlights_pong_800.jpg",
+	               "Blinkenlights: Pong")
+	}}
+	{{
+	    tfdocstart("Kits/kit_blinkenlights_pong_daylight_350.jpg",
+	               "Kits/kit_blinkenlights_pong_daylight_800.jpg",
+	               "Blinkenlights: Fire Pong in Daylight")
+	}}
+	{{
+	    tfdocstart("Kits/kit_blinkenlights_tetris_350.jpg",
+	               "Kits/kit_blinkenlights_tetris_800.jpg",
+	               "Blinkenlights: Tetris")
+	}}
+	{{
+	    tfdocstart("Kits/kit_blinkenlights_text_daylight_350.jpg",
+	               "Kits/kit_blinkenlights_text_daylight_800.jpg",
+	               "Blinkenlights: Text Display")
+	}}
+	{{
+	    tfdocstart("Kits/kit_blinkenlights_rainbow_near_far_dark_350.jpg",
+	               "Kits/kit_blinkenlights_rainbow_near_far_dark_800.jpg",
+	               "Blinkenlights: Rainbow with different Front Panel Distances")
+	}}
+	{{ tfdocend() }}
 
 Features
 --------
@@ -75,10 +118,12 @@ Luminous Intensity                        1600cd
 ----------------------------------------  ------------------------------------------------------------
 ----------------------------------------  ------------------------------------------------------------
 Number of RGB Pixels                      10 x 20
-Dimensions (W x D x H)                    40 x 80 x TODO cm
+Dimensions (W x D x H)                    40 x 80 x 7 cm (with out front panel)
+\                                         50 x 90 x * (with front panel)
 Weight                                    TODO
 ========================================  ============================================================
 
+\* depends on the distance between front and back panel
 
 .. _starter_kit_blinkenlights_resources:
 
@@ -123,11 +168,14 @@ everything will work if it is screwed together.
 Construction
 ------------
 
-TODO
+.. image:: /Images/Kits/kit_blinkenlights_build_step9_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Kit Construction Step with 40cm Cable
+   :align: center
+   :target: ../../_images/Kits/kit_blinkenlights_build_step9_1200.jpg
 
-* Construction of standard kit
-* Help for front plate extension
-
+The construction is described 
+:ref:`here <starter_kit_blinkenlights_construction>`.
 
 .. _starter_kit_blinkenlights_demo_examples:
 
@@ -162,14 +210,24 @@ input boxes is a table which shows you the connected Bricks and Bricklets.
 
 Tetris
 ^^^^^^
-
-TODO:
-
-* With/Without frontpanel?
-* Example Image
-
 The demo application implements a typical
 `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ game with all specialties.
+It can be played with:
+
+.. image:: /Images/Kits/kit_blinkenlights_tetris_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Kit Tetris
+   :align: center
+   :target: ../../_images/Kits/kit_blinkenlights_tetris_1200.jpg
+
+or without front panel:
+
+.. image:: /Images/Kits/kit_blinkenlights_tetris_wo_frontpanel_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Kit Tetris
+   :align: center
+   :target: ../../_images/Kits/kit_blinkenlights_tetris_wo_frontpanel_1200.jpg
+
 This Tetris clone can be controlled by three possible ways. Firstly, there
 are buttons in the tab which can be used to control the game. Next you can use
 your keyboard. The keys are defined in the tab (e.g. "a" is left). Finally a
@@ -205,13 +263,24 @@ downloaded from `GitHub
 Pong
 ^^^^
 
-TODO:
-
-* With/Without frontpanel?
-* Example Image
-
 Like :ref:`Tetris <starter_kit_blinkenlights_tetris>` the
-`Pong <http://en.wikipedia.org/wiki/Pong>`__ game can be controlled
+`Pong <http://en.wikipedia.org/wiki/Pong>`__ can be used with or without front 
+panel.
+
+.. image:: /Images/Kits/kit_blinkenlights_pong_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Demo Application Screenshot: Pong
+   :align: center
+   :target: ../../_images/Kits/kit_blinkenlights_pong.jpg
+
+
+.. image:: /Images/Kits/kit_blinkenlights_pong_daylight_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Demo Application Screenshot: Pong in Daylight
+   :align: center
+   :target: ../../_images/Kits/blinkenlights_pong_daylight.jpg
+
+The game can be controlled
 by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be
 controlled by two Dual Button Bricklets.
 
@@ -244,10 +313,18 @@ downloaded from `GitHub
 Fire Simulation
 ^^^^^^^^^^^^^^^
 
-TODO:
+.. image:: /Images/Kits/kit_blinkenlights_fire_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Fire Demo
+   :align: center
+   :target: ../../_images/Kits/kit_blinkenlights_fire_1500.jpg
 
-* Distance to front panel
-* Example Image
+
+.. image:: /Images/Kits/kit_blinkenlights_fire_daylight_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Fire Demo in Daylight
+   :align: center
+   :target: ../../_images/Kits/kit_blinkenlights_fire_daylight_1500.jpg
 
 When selecting the Fire tab you will see a fire simulation. It looks good
 if you place the front panel in a distance of TODO to the back panel.
@@ -298,13 +375,16 @@ downloaded from `GitHub
 Scrolling Text
 ^^^^^^^^^^^^^^
 
-TODO:
-
-* Frontpanel?
-* Example Image
-
 The "Text" demo will scroll the entered text with the given frame rate
-on the display. The text moved one column per frame. A higher frame rate results
+on the display. 
+
+.. image:: /Images/Kits/kit_blinkenlights_text_daylight_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Kit Text Demo
+   :align: center
+   :target: ../../_images/Kits/kit_blinkenlights_text_daylight_1200.jpg
+
+The text moved one column per frame. A higher frame rate results
 in faster moving text. You can set changing colors by selecting "Rainbow" or
 select "Color" and pick the color you like by pressing the button.
 
@@ -377,16 +457,18 @@ downloaded from `GitHub
 
 .. _starter_kit_blinkenlights_scrolling_rainbow:
 
-Rainbow
-^^^^^^^
+Moving Rainbow
+^^^^^^^^^^^^^^
 
-TODO:
-
-* Frontpanel?
-* Example Image
+.. image:: /Images/Kits/kit_blinkenlights_rainbow_near_far_dark_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Kit Rainbow Demo
+   :align: center
+   :target: ../../_images/Kits/kit_blinkenlights_rainbow_near_far_dark_1200.jpg
 
 The "Rainbow" demo will display a moving rainbow with the given frame rate
-and speed. A higher frame rate and speed results in faster moving rainbow.
+and speed. The results depend on the distance to the front panel (see image 
+above). A higher frame rate and speed results in faster moving rainbow.
 
 .. image:: /Images/Kits/blinkenlights_demo_rainbow_350.jpg
    :scale: 100 %
