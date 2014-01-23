@@ -269,14 +269,14 @@ panel.
    :scale: 100 %
    :alt: Blinkenlights Demo Application Screenshot: Pong
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_pong.jpg
+   :target: ../../_images/Kits/kit_blinkenlights_pong_1200.jpg
 
 
 .. image:: /Images/Kits/kit_blinkenlights_pong_daylight_350.jpg
    :scale: 100 %
    :alt: Blinkenlights Demo Application Screenshot: Pong in Daylight
    :align: center
-   :target: ../../_images/Kits/blinkenlights_pong_daylight.jpg
+   :target: ../../_images/Kits/blinkenlights_pong_daylight_1200.jpg
 
 The game can be controlled
 by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be
@@ -315,14 +315,14 @@ Fire Simulation
    :scale: 100 %
    :alt: Blinkenlights Fire Demo
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_fire_1500.jpg
+   :target: ../../_images/Kits/kit_blinkenlights_fire_1200.jpg
 
 
 .. image:: /Images/Kits/kit_blinkenlights_fire_daylight_350.jpg
    :scale: 100 %
    :alt: Blinkenlights Fire Demo in Daylight
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_fire_daylight_1500.jpg
+   :target: ../../_images/Kits/kit_blinkenlights_fire_daylight_1200.jpg
 
 When selecting the Fire tab you will see a fire simulation. It looks good
 if you place the front panel in a distance of TODO to the back panel.
@@ -349,7 +349,7 @@ you will set back all sliders to their default values.
    :scale: 100 %
    :alt: Blinkenlights Demo Application Screenshot: Fire
    :align: center
-   :target: ../../_images/Kits/blinkenlights_demo_fire.jpg
+   :target: ../../_images/Kits/blinkenlights_demo_fire_1200.jpg
 
 The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__.
