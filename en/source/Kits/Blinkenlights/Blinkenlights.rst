@@ -18,43 +18,43 @@ Starter Kit: Blinkenlights
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Kits/kit_blinkenlights_fire_350.jpg",
-	               "Kits/kit_blinkenlights_fire_800.jpg",
+	               "Kits/kit_blinkenlights_fire_600.jpg",
 	               "Blinkenlights: Fire Simulation")
 	}}
 	{{
-	    tfdocstart("Kits/kit_blinkenlights_fire_daylight_350.jpg",
-	               "Kits/kit_blinkenlights_fire_daylight_800.jpg",
-	               "Blinkenlights: Fire Simulation in Daylight")
+	    tfdocimg("Kits/kit_blinkenlights_fire_daylight_100.jpg",
+	             "Kits/kit_blinkenlights_fire_daylight_600.jpg",
+	             "Blinkenlights: Fire Simulation in Daylight")
 	}}
 	{{
-	    tfdocstart("Kits/kit_blinkenlights_on_wall_350.jpg",
-	               "Kits/kit_blinkenlights_on_wall_800.jpg",
-	               "Blinkenlights: On Wall")
+	    tfdocimg("Kits/kit_blinkenlights_on_wall_100.jpg",
+	             "Kits/kit_blinkenlights_on_wall_600.jpg",
+	             "Blinkenlights: On Wall")
 	}}
 	{{
-	    tfdocstart("Kits/kit_blinkenlights_pong_350.jpg",
-	               "Kits/kit_blinkenlights_pong_800.jpg",
-	               "Blinkenlights: Pong")
+	    tfdocimg("Kits/kit_blinkenlights_pong_100.jpg",
+	             "Kits/kit_blinkenlights_pong_600.jpg",
+	             "Blinkenlights: Pong")
 	}}
 	{{
-	    tfdocstart("Kits/kit_blinkenlights_pong_daylight_350.jpg",
-	               "Kits/kit_blinkenlights_pong_daylight_800.jpg",
-	               "Blinkenlights: Fire Pong in Daylight")
+	    tfdocimg("Kits/kit_blinkenlights_pong_daylight_100.jpg",
+	             "Kits/kit_blinkenlights_pong_daylight_600.jpg",
+	             "Blinkenlights: Pong in Daylight")
 	}}
 	{{
-	    tfdocstart("Kits/kit_blinkenlights_tetris_350.jpg",
-	               "Kits/kit_blinkenlights_tetris_800.jpg",
-	               "Blinkenlights: Tetris")
+	    tfdocimg("Kits/kit_blinkenlights_tetris_100.jpg",
+	             "Kits/kit_blinkenlights_tetris_600.jpg",
+	             "Blinkenlights: Tetris")
 	}}
 	{{
-	    tfdocstart("Kits/kit_blinkenlights_text_daylight_350.jpg",
-	               "Kits/kit_blinkenlights_text_daylight_800.jpg",
-	               "Blinkenlights: Text Display")
+	    tfdocimg("Kits/kit_blinkenlights_text_daylight_100.jpg",
+	             "Kits/kit_blinkenlights_text_daylight_600.jpg",
+	             "Blinkenlights: Text Display")
 	}}
 	{{
-	    tfdocstart("Kits/kit_blinkenlights_rainbow_near_far_dark_350.jpg",
-	               "Kits/kit_blinkenlights_rainbow_near_far_dark_800.jpg",
-	               "Blinkenlights: Rainbow with different Front Panel Distances")
+	    tfdocimg("Kits/kit_blinkenlights_rainbow_near_far_dark_100.jpg",
+	             "Kits/kit_blinkenlights_rainbow_near_far_dark_600.jpg",
+	             "Blinkenlights: Rainbow with different Front Panel Distances")
 	}}
 	{{ tfdocend() }}
 
@@ -65,7 +65,7 @@ Features
 * Develop Party Games, Exhibition Presentations and Customer Specific Displays
   of any kind
 * Freely programmable, configurable and expandable
-* Pixels: 12mm diameter, waterproof (IP65), full-color RGB  with 1600mcd
+* Pixels: 12mm diameter, waterproof (IP65), full-color RGB with 1600mcd per pixel
 
 
 Description
@@ -78,10 +78,11 @@ kit can be used to create party games, exhibition presentations, fancy mood
 lighting and custom displays of any kind.
 
 The basic kit comes with one :ref:`Master Brick <master_brick>`, one :ref:`LED Strip
-Bricklet <led_strip_bricklet>`, four 50 LED Pixel sets, two LED power supplies,
-one mounting plate, one back plate and all necessary cables and mounting
-materials. The basic kit can be controlled over USB by any (Embedded-) PC (e.g.
-:ref:`Raspberry Pi <embedded_raspberry_pi>`), laptop, server or tablet.
+Bricklet <led_strip_bricklet>`, four 50 LED Pixel sets, one LED power supply,
+four wall mounting plates, one perforated back plate, one front plate and all 
+necessary cables and mounting materials. The basic kit can be controlled over USB 
+by any (Embedded-) PC (e.g. :ref:`Raspberry Pi <embedded_raspberry_pi>`), laptop, 
+server or tablet.
 
 The kit can be extended by other Tinkerforge products.
 In game applications the :ref:`Multi Touch Bricklet <multi_touch_bricklet>`
@@ -103,7 +104,7 @@ by customizable touch pads when using the Multi Touch Bricklet.
 
 The kit name "Blinkenlights" is used in
 `hacker jargon <http://en.wikipedia.org/wiki/Blinkenlights>`__
-to describe blinking lights. It is also known from the
+to describe blinking lights of network equipment. It is also known from the
 `Project Blinkenlights <http://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
 
 Technical Specifications
@@ -114,11 +115,11 @@ Property                                  Value
 ========================================  ============================================================
 Maximum Update Rate (LED Strip Bricklet)  100Hz
 RGB resolution (LED Strip Bricklet)       3 x 8Bit
-Luminous Intensity                        1600cd
+Luminous Intensity                        1600cd per pixel
 ----------------------------------------  ------------------------------------------------------------
 ----------------------------------------  ------------------------------------------------------------
 Number of RGB Pixels                      10 x 20
-Dimensions (W x D x H)                    40 x 80 x 7 cm (with out front panel)
+Dimensions (W x D x H)                    40 x 80 x 7 cm (without front panel)
 \                                         50 x 90 x * (with front panel)
 Weight                                    TODO
 ========================================  ============================================================
@@ -146,10 +147,10 @@ As a very first step you should try out and update your Bricks and Bricklets.
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
 the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets to the Master
 Brick and connect it via USB to your PC. Afterwards use Brick Viewer to check
-if all of the firmwares up to date (Updates / Flashing button). If not, you can
+if all of the firmwares are up to date (Updates / Flashing button). If not, you can
 :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
-Viewer, too:
+Viewer too:
 
 .. image:: /Images/Kits/kit_blinkenlights_update_350.jpg
    :scale: 100 %
@@ -158,7 +159,7 @@ Viewer, too:
    :target: ../../_images/Kits/kit_blinkenlights_update.jpg
 
 As next step click through the tabs of the Brick Viewer
-to see if all of the sensors are working correctly. Now you can be sure that
+to see if all of the Bricklets are working correctly. Now you can be sure that
 the Bricks and Bricklets have versions that work together and that
 everything will work if it is screwed together.
 
@@ -172,8 +173,8 @@ Construction
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_build_step9_1200.jpg
 
-The construction is described 
-:ref:`here <starter_kit_blinkenlights_construction>`.
+The construction is described
+:ref:`here <starter_kit_blinkenlights_construction>` in detail.
 
 .. _starter_kit_blinkenlights_demo_examples:
 
@@ -216,7 +217,6 @@ It can be played with:
    :scale: 100 %
    :alt: Blinkenlights Kit Tetris
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_tetris_1200.jpg
 
 or without front panel:
 
@@ -224,7 +224,6 @@ or without front panel:
    :scale: 100 %
    :alt: Blinkenlights Kit Tetris
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_tetris_wo_frontpanel_1200.jpg
 
 This Tetris clone can be controlled by three possible ways. Firstly, there
 are buttons in the tab which can be used to control the game. Next you can use
@@ -265,18 +264,18 @@ Like :ref:`Tetris <starter_kit_blinkenlights_tetris>` the
 `Pong <http://en.wikipedia.org/wiki/Pong>`__ can be used with or without front 
 panel.
 
+The following images show pong with darkness and daylight.
+
 .. image:: /Images/Kits/kit_blinkenlights_pong_350.jpg
    :scale: 100 %
    :alt: Blinkenlights Demo Application Screenshot: Pong
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_pong_1200.jpg
 
 
 .. image:: /Images/Kits/kit_blinkenlights_pong_daylight_350.jpg
    :scale: 100 %
    :alt: Blinkenlights Demo Application Screenshot: Pong in Daylight
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_pong_daylight_1200.jpg
 
 The game can be controlled
 by buttons, keyboard or a Multi Touch Bricklet. Additionally it can be
@@ -311,23 +310,26 @@ downloaded from `GitHub
 Fire Simulation
 ^^^^^^^^^^^^^^^
 
+When selecting the Fire tab you will see a fire simulation. It looks good
+if you place the front panel in a distance of 42mm (2x9mm and 2x12mm standoff)
+to the back panel. 
+
+The following images show the fire simulation during darkness and daylight.
+
 .. image:: /Images/Kits/kit_blinkenlights_fire_350.jpg
    :scale: 100 %
    :alt: Blinkenlights Fire Demo
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_fire_1200.jpg
 
 
 .. image:: /Images/Kits/kit_blinkenlights_fire_daylight_350.jpg
    :scale: 100 %
    :alt: Blinkenlights Fire Demo in Daylight
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_fire_daylight_1200.jpg
 
-When selecting the Fire tab you will see a fire simulation. It looks good
-if you place the front panel in a distance of TODO to the back panel.
-The simulation is based on a particle system and can be configured by four
-sliders:
+
+The simulation is based on a particle system and can be 
+configured by four sliders:
 
 * **Frame Rate**:
   Defines the frame rate in Hz. The simulation is updated for each new frame.
@@ -380,9 +382,8 @@ on the display.
    :scale: 100 %
    :alt: Blinkenlights Kit Text Demo
    :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_text_daylight_1200.jpg
 
-The text moved one column per frame. A higher frame rate results
+The text moves one column per frame. A higher frame rate results
 in faster moving text. You can set changing colors by selecting "Rainbow" or
 select "Color" and pick the color you like by pressing the button.
 
@@ -415,13 +416,22 @@ downloaded from `GitHub
 Display Images
 ^^^^^^^^^^^^^^
 
-TODO:
-
-* Frontpanel? Distance?
-* Example Image
-
 The "Images" demo can be used to display user specific images and whole
 animations.
+
+The following image
+
+.. image:: /Images/Kits/kit_blinkenlights_heart_input.png
+   :scale: 100 %
+   :alt: Blinkenlights Heart Input
+   :align: center
+
+generates the following output
+
+.. image:: /Images/Kits/kit_blinkenlights_heart_350.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Heart
+   :align: center
 
 Choose the images you want to display by pressing "Choose images...". The
 application will display the images with the given frame rate and switch to the
@@ -458,15 +468,19 @@ downloaded from `GitHub
 Moving Rainbow
 ^^^^^^^^^^^^^^
 
+The "Rainbow" demo will display a moving rainbow with the given frame rate
+and speed. The results depend on the distance to the front panel. 
+
+The following image shows the rainbow demo with 12mm distance in daylight, 
+42mm distance in daylight and with 42mm distance during darkness.
+
 .. image:: /Images/Kits/kit_blinkenlights_rainbow_near_far_dark_350.jpg
    :scale: 100 %
    :alt: Blinkenlights Kit Rainbow Demo
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_rainbow_near_far_dark_1200.jpg
 
-The "Rainbow" demo will display a moving rainbow with the given frame rate
-and speed. The results depend on the distance to the front panel (see image 
-above). A higher frame rate and speed results in faster moving rainbow.
+A higher frame rate and speed results in faster moving rainbow.
 
 .. image:: /Images/Kits/blinkenlights_demo_rainbow_350.jpg
    :scale: 100 %
