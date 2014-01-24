@@ -149,11 +149,11 @@ angezeigte Zustand im Brick Viewer verändern:
 Eigene Touchpads / Empfindlichkeit einstellen
 ---------------------------------------------
 
-Einfache Touchpads können mittels abisolierter Drähte erzeugt werden. Echte
-Pads können mittels `Aluminium Klebeband
+Einfache Touchpads können mittels abisolierter Drähte erzeugt werden. Dazu
+wird der Draht mit `Aluminium Klebeband
 <https://www.tinkerforge.com/de/shop/accessories/sensors/aluminum-tape-1m.html>`__
-erzeugt werden, indem der Draht mit der
-erzeugten Fläche verbunden wird. Da es sich um eine kapazitive Technologie 
+auf einer Oberfläche festgeklebt. Die Aluminium Fläche dient dann als Touch Pad.
+Da es sich umm eine kapazitive Technologie 
 handelt können die erzeugten Flächen mit dünnen nicht-leitenden Materialien
 bedeckt werden. Ist die Empfindlichkeit dieser Pads zu hoch kann einfach ein 
 Teil des Klebebands entfernt werden oder die Sensitivität per Software
@@ -167,12 +167,10 @@ Das nachfolgende Bild zeigt den grundsätzlichen Aufbau eines Touchpads:
    :align: center
    :target: ../../_images/Bricklets/bricklet_multi_touch_custom_pad2_1200.jpg
 
-
-
-Abhängig von dem Aufbau der Touchpads kann es notwendig sein die Empfindlichkeit
+Abhängig vom Aufbau der Touchpads kann es notwendig sein die Empfindlichkeit
 einzustellen. Die Brick Viewer Software kann genutzt werden um verschiedene 
 Empfindlichkeiten auszuprobieren. Dazu muss nur der Electrode Sensitivity Wert
-geändert werden und mittels "Recalibrate" übernommen werden.
+geändert und mittels "Recalibrate" übertragen werden.
 
 .. _multi_touch_bricklet_circuit_board_pads:
 
@@ -198,8 +196,6 @@ Für Spiele-Anwendungen gibt es ein spezielles Pad-Kit:
 
  * `Giant Game Pad (siehe unten) <https://www.tinkerforge.com/de/shop/giant-game-pad.html>`__
 
-
-
 .. _multi_touch_bricklet_giant_game_pad:
 
 Benutzung des Giant Game Pads
@@ -222,7 +218,7 @@ Pfostenbuchse im Kit enthalten.
    :target: ../../_images/Kits/ggp_content_1200.jpg
 
 Um aus diesen Teilen Touchpads herzustellen müssen die 10m Litze in 12 
-Abschnitte geteilt werden. Anschließend müssen einseitig jeweils 1cm abisoliert 
+Abschnitte geteilt werden. Anschließend müssen einseitig jeweils 5cm abisoliert 
 werden. Jedes Pad wird von der Unterseite mit Aluminiumklebeband beklebt.
 Die Abisolierten Drahtenden werden dabei mit dem Klebeband eingeklebt. Zu Anfang
 sollte nicht die volle Fläche beklebt werden.
@@ -234,7 +230,7 @@ sollte nicht die volle Fläche beklebt werden.
    :target: ../../_images/Kits/ggp_pad_bottom_1200.jpg
 
 Anschließend werden die Litzen in die Pfostenbuchse gesteckt und diese
-zusammengedrückt.
+zusammengedrückt. Dazu kann ein kleiner Schraubstock o.ä. hilfreich sein.
 
 .. image:: /Images/Kits/ggp_connector_crimp_350.jpg
    :scale: 100 %
@@ -243,8 +239,9 @@ zusammengedrückt.
    :target: ../../_images/Kits/ggp_connector_crimp_1200.jpg
 
 
-Nach diesem Schritt sind die Giant Game Pads fertiggestellt. Falls gewünscht
-können die mitgelieferten Gummifüße unter die Pads geklebt werden.
+Nach diesem Schritt ist das Giant Game Pad fertiggestellt. Falls gewünscht
+können die mitgelieferten Gummifüße unter die Pads geklebt werden um ein
+Rutschen der Pads zu vermeiden.
 
 .. image:: /Images/Kits/ggp_table_front_350.jpg
    :scale: 100 %
@@ -255,7 +252,6 @@ können die mitgelieferten Gummifüße unter die Pads geklebt werden.
 Abhängig von der Kabellänge muss die Sensitivität für die Pads angepasst werden.
 Dies kann allgemein per Software geschehen und für jedes Pad einzeln über die
 Aluminiumfläche.
-
 
 .. _multi_touch_bricklet_case:
 

@@ -149,15 +149,14 @@ state changing in the Brick Viewer:
 Create own Touch Pads / Adjust Sensitivity
 ------------------------------------------
 
-You can create simple touch pads by using stripped wires. To create real pads
-you can use `self-adhesive aluminum tape
+You can create simple touch pads by using stripped wires. tape the wires with
+`self-adhesive aluminum tape
 <https://www.tinkerforge.com/en/shop/accessories/sensors/aluminum-tape-1m.html>`__
-to create the pad and connect the wire to it. Since it is a capacitive 
-technology you can cover your self created touch panel with thin non-conductive 
-materials. If your self created touch pad is too sensitive you can
-remove some of the aluminum tape or reduce the sensitivity in software.
+to a surface. Since it is a capacitive technology you can cover your
+touch panel with thin non-conductive materials. If your pad is too sensitive you 
+can remove some of the aluminum tape or reduce the sensitivity in software.
 
-The following image depicts the basic buildup of a touch pad:
+The following image shows the basic setup of a touch pad:
 
 .. image:: /Images/Bricklets/bricklet_multi_touch_custom_pad2_350.jpg
    :scale: 100 %
@@ -165,10 +164,9 @@ The following image depicts the basic buildup of a touch pad:
    :align: center
    :target: ../../_images/Bricklets/bricklet_multi_touch_custom_pad2_1200.jpg
 
-Dependent on your touch pads it might be necessary to adjust the sensitivity.
+Depending on your touch pads it might be necessary to adjust the sensitivity.
 Use the Brick Viewer Software to play around with it by changing the value until
-you have found a satisfying sensitivity. To accept the entered value press
-"Recalibrate".
+you found a satisfying sensitivity. To transfer new values press "Recalibrate".
 
 
 .. _multi_touch_bricklet_circuit_board_pads:
@@ -190,7 +188,7 @@ inputs for the Multi Touch Bricklet without the need of creating own pads.
  * `Slider Pad <https://www.tinkerforge.com/en/shop/slider-pad.html>`__
  * `Button Pad <https://www.tinkerforge.com/en/shop/button-pad.html>`__
 
-Besides there is a pad kit especially for gaming applications:
+Additionally there is a pad kit especially for gaming applications:
 
  * `Giant Game Pad (see below) <https://www.tinkerforge.com/en/shop/giant-game-pad.html>`__
 
@@ -207,9 +205,9 @@ Usage of the Giant Game Pad
    :target: ../../_images/Kits/ggp_table_top_1200.jpg
 
 
-The Giant Game Pad kit consists of different pads made of 3mm PMMA.
-Besides the pads there is 10m of stranded wire, two pieces of aluminum tape
-and a 12 pole IDC connector is included. 
+The Giant Game Pad consists of different pads made out of 3mm PMMA.
+Besides the pads there is 10m of stranded wire, two 1m pieces of aluminum tape
+and a 12 pole IDC connector included in the kit. 
 
 .. image:: /Images/Kits/ggp_content_350.jpg
    :scale: 100 %
@@ -218,9 +216,9 @@ and a 12 pole IDC connector is included.
    :target: ../../_images/Kits/ggp_content_1200.jpg
 
 To create working pads you have to cut the 10m wire in 12 sections as you need 
-them. Dismantle 1cm of the isolation on one side of the wires.
-Stick the bottom side of each pad with the aluminum tape and attach a wire to 
-it. For the first test only use a small section of the aluminum foil.
+them. Dismantle 5cm of the isolation on one side of the wires.
+Stick the wire with the aluminum tape to the bottom side of the pads.
+For a first test only use a small section of the aluminum foil.
 
 .. image:: /Images/Kits/ggp_pad_bottom_350.jpg
    :scale: 100 %
@@ -228,8 +226,7 @@ it. For the first test only use a small section of the aluminum foil.
    :align: center
    :target: ../../_images/Kits/ggp_pad_bottom_1200.jpg
 
-
-After that insert the wires in the IDC connector and use for example a vise
+After that insert the wires in the IDC connector. You can use avise or similar
 to press the connector together.
 
 .. image:: /Images/Kits/ggp_connector_crimp_350.jpg
@@ -239,8 +236,8 @@ to press the connector together.
    :target: ../../_images/Kits/ggp_connector_crimp_1200.jpg
 
 
-After that your Giant Game Pads are finished. If you want you can stick
-the adhesive rubber feet to the pads.
+After that your Giant Game Pad is finished. To ensure that the pads don't slide
+around can stick the adhesive rubber feet to the bottom of the pads.
 
 .. image:: /Images/Kits/ggp_table_front_350.jpg
    :scale: 100 %
@@ -249,7 +246,7 @@ the adhesive rubber feet to the pads.
    :target: ../../_images/Kits/ggp_table_front_1200.jpg
 
 
-Dependend of the used wire length sensitivity has to be adapted. This can be
+The sensitivity has to be adapted depending on the wire length. This can be
 done for all pads by software and for each panel by adjusting the size of the 
 aluminum plane.
 
