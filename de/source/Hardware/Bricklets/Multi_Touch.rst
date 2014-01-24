@@ -149,8 +149,6 @@ angezeigte Zustand im Brick Viewer verändern:
 Eigene Touchpads / Empfindlichkeit einstellen
 ---------------------------------------------
 
-TODO Image
-
 Einfache Touchpads können mittels abisolierter Drähte erzeugt werden. Echte
 Pads können mittels `Aluminium Klebeband
 <https://www.tinkerforge.com/de/shop/accessories/sensors/aluminum-tape-1m.html>`__
@@ -158,7 +156,18 @@ erzeugt werden, indem der Draht mit der
 erzeugten Fläche verbunden wird. Da es sich um eine kapazitive Technologie 
 handelt können die erzeugten Flächen mit dünnen nicht-leitenden Materialien
 bedeckt werden. Ist die Empfindlichkeit dieser Pads zu hoch kann einfach ein 
-Teil des Klebebands entfernt werden.
+Teil des Klebebands entfernt werden oder die Sensitivität per Software
+reduziert werden.
+
+Das nachfolgende Bild zeigt den grundsätzlichen Aufbau eines Touchpads:
+
+.. image:: /Images/Bricklets/bricklet_multi_touch_custom_pad2_350.jpg
+   :scale: 100 %
+   :alt: Touch Pad für das Multi Touch Bricklet
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_multi_touch_custom_pad2_1200.jpg
+
+
 
 Abhängig von dem Aufbau der Touchpads kann es notwendig sein die Empfindlichkeit
 einzustellen. Die Brick Viewer Software kann genutzt werden um verschiedene 
@@ -169,6 +178,12 @@ geändert werden und mittels "Recalibrate" übernommen werden.
 
 Leiterplatten Pads
 ------------------
+
+.. image:: /Images/Bricklets/cursor_pad_w_cable_350.jpg
+   :scale: 100 %
+   :alt: Cursor Pad mit Kabel
+   :align: center
+   :target: ../../_images/Bricklets/cursor_pad_w_cable_1200.jpg
 
 Verschiedene Leiterplatten-Pads werden im Shop angeboten, die als Touchpads
 für das Multi Touch Bricklet genutzt werden können ohne das eigene pads
@@ -190,30 +205,56 @@ Für Spiele-Anwendungen gibt es ein spezielles Pad-Kit:
 Benutzung des Giant Game Pads
 -----------------------------
 
-.. note:: Coming Soon
-
-TODO Image Kit Content
+.. image:: /Images/Kits/ggp_table_top_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad auf einem Tisch
+   :align: center
+   :target: ../../_images/Kits/ggp_table_top_1200.jpg
 
 Das Giant Game Pad Kit besteht aus verschiedenen Pads, hergestellt aus 3mm PMMA.
 Neben den Pads sind 10m Litze, zwei Streifen Aluminiumklebeband und eine 12pol
 Pfostenbuchse im Kit enthalten.
 
+.. image:: /Images/Kits/ggp_content_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad Kit Inhalt
+   :align: center
+   :target: ../../_images/Kits/ggp_content_1200.jpg
+
 Um aus diesen Teilen Touchpads herzustellen müssen die 10m Litze in 12 
 Abschnitte geteilt werden. Anschließend müssen einseitig jeweils 1cm abisoliert 
 werden. Jedes Pad wird von der Unterseite mit Aluminiumklebeband beklebt.
-Die Abisolierten Drahtenden werden dabei mit dem Klebeband eingeklebt.
+Die Abisolierten Drahtenden werden dabei mit dem Klebeband eingeklebt. Zu Anfang
+sollte nicht die volle Fläche beklebt werden.
 
-TODO Image Bottom Side Game Pads
+.. image:: /Images/Kits/ggp_pad_bottom_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad Ansicht von Unten
+   :align: center
+   :target: ../../_images/Kits/ggp_pad_bottom_1200.jpg
 
 Anschließend werden die Litzen in die Pfostenbuchse gesteckt und diese
 zusammengedrückt.
 
-TODO Image IDC connector with wires
+.. image:: /Images/Kits/ggp_connector_crimp_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad Pfostenbuchse
+   :align: center
+   :target: ../../_images/Kits/ggp_connector_crimp_1200.jpg
+
 
 Nach diesem Schritt sind die Giant Game Pads fertiggestellt. Falls gewünscht
 können die mitgelieferten Gummifüße unter die Pads geklebt werden.
 
-TODO Image Pads connected to Multi Touch
+.. image:: /Images/Kits/ggp_table_front_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad auf einem Tisch
+   :align: center
+   :target: ../../_images/Kits/ggp_table_front_1200.jpg
+
+Abhängig von der Kabellänge muss die Sensitivität für die Pads angepasst werden.
+Dies kann allgemein per Software geschehen und für jedes Pad einzeln über die
+Aluminiumfläche.
 
 
 .. _multi_touch_bricklet_case:
