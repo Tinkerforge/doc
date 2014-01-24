@@ -149,15 +149,21 @@ state changing in the Brick Viewer:
 Create own Touch Pads / Adjust Sensitivity
 ------------------------------------------
 
-TODO Image
-
 You can create simple touch pads by using stripped wires. To create real pads
 you can use `self-adhesive aluminum tape
 <https://www.tinkerforge.com/en/shop/accessories/sensors/aluminum-tape-1m.html>`__
 to create the pad and connect the wire to it. Since it is a capacitive 
 technology you can cover your self created touch panel with thin non-conductive 
 materials. If your self created touch pad is too sensitive you can
-remove some of the aluminum tape.
+remove some of the aluminum tape or reduce the sensitivity in software.
+
+The following image depicts the basic buildup of a touch pad:
+
+.. image:: /Images/Bricklets/bricklet_multi_touch_custom_pad2_350.jpg
+   :scale: 100 %
+   :alt: Self Made Touch Pad for Multi Touch Bricklet
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_multi_touch_custom_pad2_1200.jpg
 
 Dependent on your touch pads it might be necessary to adjust the sensitivity.
 Use the Brick Viewer Software to play around with it by changing the value until
@@ -169,6 +175,12 @@ you have found a satisfying sensitivity. To accept the entered value press
 
 Circuit Board Pads
 ------------------
+
+.. image:: /Images/Bricklets/cursor_pad_w_cable_350.jpg
+   :scale: 100 %
+   :alt: Cursor Pad with Cable
+   :align: center
+   :target: ../../_images/Bricklets/cursor_pad_w_cable_1200.jpg
 
 There are several circuit boards offered in the shop which can be used as
 inputs for the Multi Touch Bricklet without the need of creating own pads.
@@ -188,31 +200,58 @@ Besides there is a pad kit especially for gaming applications:
 Usage of the Giant Game Pad
 ---------------------------
 
-.. note:: Coming Soon
+.. image:: /Images/Kits/ggp_table_top_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad on Table
+   :align: center
+   :target: ../../_images/Kits/ggp_table_top_1200.jpg
 
-TODO Image Kit Content
 
 The Giant Game Pad kit consists of different pads made of 3mm PMMA.
 Besides the pads there is 10m of stranded wire, two pieces of aluminum tape
 and a 12 pole IDC connector is included. 
 
+.. image:: /Images/Kits/ggp_content_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad Kit Content
+   :align: center
+   :target: ../../_images/Kits/ggp_content_1200.jpg
+
 To create working pads you have to cut the 10m wire in 12 sections as you need 
 them. Dismantle 1cm of the isolation on one side of the wires.
 Stick the bottom side of each pad with the aluminum tape and attach a wire to 
-it.
+it. For the first test only use a small section of the aluminum foil.
 
-TODO Image Bottom Side Game Pads
+.. image:: /Images/Kits/ggp_pad_bottom_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad Bottom View
+   :align: center
+   :target: ../../_images/Kits/ggp_pad_bottom_1200.jpg
+
 
 After that insert the wires in the IDC connector and use for example a vise
 to press the connector together.
 
-TODO Image IDC connector with wires
+.. image:: /Images/Kits/ggp_connector_crimp_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad IDC connector
+   :align: center
+   :target: ../../_images/Kits/ggp_connector_crimp_1200.jpg
+
 
 After that your Giant Game Pads are finished. If you want you can stick
 the adhesive rubber feet to the pads.
 
-TODO Image Pads connected to Multi Touch
+.. image:: /Images/Kits/ggp_table_front_350.jpg
+   :scale: 100 %
+   :alt: Giant Game Pad on Table
+   :align: center
+   :target: ../../_images/Kits/ggp_table_front_1200.jpg
 
+
+Dependend of the used wire length sensitivity has to be adapted. This can be
+done for all pads by software and for each panel by adjusting the size of the 
+aluminum plane.
 
 .. _multi_touch_bricklet_case:
 

@@ -7,19 +7,19 @@ Construction of Starter Kit: Blinkenlights
 
 The Starter Kit: Blinkenlights comes with:
 
- * 1x :ref:`Master Brick <master_brick>`,
- * 1x :ref:`LED Strip Bricklet <led_strip_bricklet>`,
- * 4x LED Pixels (50 pieces each),
- * 1x Perforated Board 80x40cm (black)
- * 1x Front Panel (white)
- * 4x Wall Mounting Plate (for wall peg)
- * 1x 5V/8A Power Supply
- * 1x Bricklet Cable 15cm
- * 1x 2x2.5mm² wires (5m)
- * 2x Dowel and wall peg
- * 4x 2-wire clamps
- * 6x 3-wire clamps
- * 4x 5-wire clamps
+* 1x :ref:`Master Brick <master_brick>`,
+* 1x :ref:`LED Strip Bricklet <led_strip_bricklet>`,
+* 4x LED Pixels (50 pieces each),
+* 1x Perforated Board 80x40cm (black)
+* 1x Front Panel (white)
+* 4x Wall Mounting Plate (for wall peg)
+* 1x 5V/8A Power Supply
+* 1x Bricklet Cable 15cm
+* 1x 2x2.5mm² wires (5m)
+* 2x Dowel and wall peg
+* 4x 2-wire clamps
+* 6x 3-wire clamps
+* 4x 5-wire clamps
 
 and cable straps, screws, spacers and some other parts.
 
@@ -101,12 +101,12 @@ Power Supply Cables and Pixel Cables
 In the next step we will cut and place the power supply cables. 5m of 2x2.5mm² 
 wires are included in the kit. Cut the following wire lengths from it:
 
- * 1x 95cm
- * 1x 80cm
- * 1x 55cm
- * 1x 40cm
- * 1x 20cm
- * 1x 10cm
+* 1x 95cm
+* 1x 80cm
+* 1x 55cm
+* 1x 40cm
+* 1x 20cm
+* 1x 10cm
 
 Strip 10mm of the wires on both ends. 
 
