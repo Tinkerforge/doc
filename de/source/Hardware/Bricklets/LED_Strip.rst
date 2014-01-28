@@ -11,8 +11,6 @@
 
 .. role:: led-strip-black
 
-
-
 .. role:: led-pixel-red
 
 .. role:: led-pixel-green
@@ -272,9 +270,9 @@ LED Steifen
 
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
 Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem Beispiel
-ist der :led-strip-black:`schwarze` Draht 5V, :led-strip-green:`grün` die
-Taktleitung, :led-strip-red:`rot` die Datenleitung und der
-:led-strip-blue:`blaue` Draht ist Masse.
+ist der schwarze Draht :led-strip-black:`5V`, grün die
+:led-strip-green:`Taktleitung`, rot die :led-strip-red:`Datenleitung` und der
+blaue Draht ist :led-strip-blue:`Masse`.
 
 Als erstes werden die Takt- und Datenleitung des ersten LED Streifens und Masse
 der Spannungsversorgung mit dem LED Strip Bricklet verbunden. Dabei muss darauf
@@ -306,9 +304,9 @@ LED Pixel
 
 Die Verbindung zu LED Pixeln ist sehr ähnlich zur Verbindung zu LED Streifen.
 Es existiert ebenfalls keine allgemeine farbliche Kennzeichnung. Im 
-nachfolgenden Beispiel ist der :led-pixel-red:`rote` Draht 5V,
-:led-pixel-blue:`blau` ist Masse, die Taktleitung ist :led-pixel-green:`grün`
-und die Datenleitung ist :led-pixel-white:`weiß`.
+nachfolgenden Beispiel ist der rote Draht :led-pixel-red:`5V`,
+blau ist :led-pixel-blue:`Masse`, die :led-pixel-green:`Taktleitung` ist grün
+und die :led-pixel-white:`Datenleitung` ist weiß.
 
 Die Takt- und Datenleitung vom ersten LED Pixel Bündel, sowie Masse von der 
 Stromversorgung werden mit dem LED Strip Bricklet verbunden. Dabei muss darauf 

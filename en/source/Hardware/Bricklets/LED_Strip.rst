@@ -11,8 +11,6 @@
 
 .. role:: led-strip-black
 
-
-
 .. role:: led-pixel-red
 
 .. role:: led-pixel-green
@@ -267,9 +265,9 @@ LED Strips
 ----------
 
 There is no general color code for LED strips. Especially sometimes the color 
-codes are against any agreements. In this example the :led-strip-black:`black`
-wire is 5V, :led-strip-green:`green` is clock, :led-strip-red:`red` is data and
-the :led-strip-blue:`blue` wire is ground.
+codes are against any agreements. In this example the black wire is
+:led-strip-black:`5V`, green is :led-strip-green:`clock`, red is
+:led-strip-red:`data` and the blue wire is :led-strip-blue:`ground`.
 
 Connect clock and data of the first strip to the LED Strip Bricklet and 
 connect ground of your power supply to it. Pay attention to connect the clock 
@@ -300,8 +298,8 @@ LED Pixels
 
 The connection of LED pixels to the LED Strip Bricklet is similar to the
 connection of LED strips. There is no general color code for LED pixels. 
-In the following example the :led-pixel-red:`red` wire is 5V,
-:led-pixel-blue:`blue` is ground, :led-pixel-green:`clock` is green and
+In the following example the red wire is :led-pixel-red:`5V`,
+blue is :led-pixel-blue:`ground`, :led-pixel-green:`clock` is green and
 :led-pixel-white:`data` is the white wire.
 
 Connect clock and data of the first bunch of pixels to the LED Strip Bricklet 
