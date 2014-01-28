@@ -694,3 +694,18 @@ div.partnerdisclaimer {
 .led-pixel-white {
 	background-color: #d6d7db;
 }
+
+
+.power-red {
+	color: white;
+	background-color: #a9241b;
+}
+
+.power-black {
+	color: white;
+	background-color: #383838;
+}
+
+.power-white {
+	background-color: #d6d7db;
+}

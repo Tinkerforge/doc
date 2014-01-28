@@ -79,7 +79,7 @@ lighting and custom displays of any kind.
 
 The basic kit comes with one :ref:`Master Brick <master_brick>`, one :ref:`LED Strip
 Bricklet <led_strip_bricklet>`, four 50 LED Pixel sets, one LED power supply,
-four wall mounting plates, one perforated back plate, one front plate and all 
+four wall mounting plates, one perforated board, one front panel and all
 necessary cables and mounting materials. The basic kit can be controlled over USB 
 by any (Embedded-) PC (e.g. :ref:`Raspberry Pi <embedded_raspberry_pi>`), laptop, 
 server or tablet.
@@ -114,13 +114,13 @@ Technical Specifications
 Property                                  Value
 ========================================  ============================================================
 Maximum Update Rate (LED Strip Bricklet)  100Hz
-RGB resolution (LED Strip Bricklet)       3 x 8Bit
+RGB resolution (LED Strip Bricklet)       3 x 8bit
 Luminous Intensity                        1600mcd per pixel
 ----------------------------------------  ------------------------------------------------------------
 ----------------------------------------  ------------------------------------------------------------
 Number of RGB Pixels                      10 x 20
-Dimensions (W x D x H)                    40 x 80 x 7 cm (without front panel)
-\                                         50 x 90 x * (with front panel)
+Dimensions (W x D x H)                    | 40 x 80 x 7cm (without front panel)
+                                          | 50 x 90 x > 7cm* (with front panel)
 Weight                                    TODO
 ========================================  ============================================================
 
@@ -133,7 +133,7 @@ Resources
 
 * Example Source Code for :ref:`Tetris <starter_kit_blinkenlights_tetris>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__, `C# <https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__)
 * Example Source Code for :ref:`Pong <starter_kit_blinkenlights_Pong>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__, `C# <https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__)
-* Example source Code for :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__, `Delphi <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/delphi>`__)
+* Example Source Code for :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__, `Delphi <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/delphi>`__)
 * Example Source Code for :ref:`Scrolling Text <starter_kit_blinkenlights_scrolling_text>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__, `PHP <https://github.com/Tinkerforge/blinkenlights/tree/master/text/php>`__)
 * Example Source Code for :ref:`Display Images <starter_kit_blinkenlights_images>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/images/python>`__, `Java <https://github.com/Tinkerforge/blinkenlights/tree/master/images/java>`__)
 * :ref:`Demo Application <starter_kit_blinkenlights_demo_examples>` (Download: Windows, Linux, Mac OS X, `Source Code <https://github.com/Tinkerforge/blinkenlights/tree/master/demo>`__)
@@ -175,6 +175,12 @@ Construction
 
 The construction is described
 :ref:`here <starter_kit_blinkenlights_construction>` in detail.
+
+.. toctree::
+   :hidden:
+
+   Construction
+
 
 .. _starter_kit_blinkenlights_demo_examples:
 

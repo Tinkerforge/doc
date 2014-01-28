@@ -1,5 +1,21 @@
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/Blinkenlights/Blinkenlights.html">Starter Kit: Blinkenlights</a> / Construction of Starter Kit: Blinkenlights
 
+
+.. role:: led-pixel-red
+
+.. role:: led-pixel-green
+
+.. role:: led-pixel-blue
+
+.. role:: led-pixel-white
+
+.. role:: power-red
+
+.. role:: power-black
+
+.. role:: power-white
+
+
 .. _starter_kit_blinkenlights_construction:
 
 Construction of Starter Kit: Blinkenlights
@@ -11,7 +27,7 @@ The Starter Kit: Blinkenlights comes with:
 * 1x :ref:`LED Strip Bricklet <led_strip_bricklet>`,
 * 4x LED Pixels (50 pieces each),
 * 1x Perforated Board 80x40cm (black)
-* 1x Front Panel (white)
+* 1x Front Panel 90x50cm (white)
 * 4x Wall Mounting Plate (for wall peg)
 * 1x 5V/8A Power Supply
 * 1x Bricklet Cable 15cm
@@ -33,7 +49,7 @@ and cable straps, screws, spacers and some other parts.
 Necessary Tools
 ---------------
 
-You will need a phillips screwdriver, something to dismantle wires 
+You will need a Phillips screwdriver, something to dismantle wires
 (knife or cable stripper) and a tape measure. Allow some extra time to build
 the kit.
 
@@ -50,30 +66,19 @@ perforated board (black).
    :alt: Blinkenlights Contruction Remove Foils
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_remove_protective_foil_1200.jpg
-	
 
 
 Attach Pixels to Perforated Board
 ---------------------------------
 
-Next you can stick the pixels into the perforated board. It is  
-important that you start with the correct pixel (begin with led pixel chain
-input) on the correct position. If you start wrong it is possible that you can't
-wire the pixels or that your cables will come out on the top position of the
-display instead of the bottom side. 
+Next you can stick the pixels into the perforated board. It is important that
+you start with the correct pixel on the correct position. If you start wrong it
+is possible that you can't wire the pixels or that your cables will come out on
+the top position of the display instead of the bottom side.
 
-The following image shows the back of the perforated board. The pixels
-will be plugged in this side, such that the heads of the LEDs are on the front.
-Notice the positions of the small mounting holes and the starting position.
-
-.. image:: /Images/Kits/kit_blinkenlights_led_wiring_600.jpg
-   :scale: 100 %
-   :alt: Blinkenlights Kit Construction Wiring Process Description
-   :align: center
-   :target: ../../_images/Kits/kit_blinkenlights_led_wiring_1200.jpg
-
-Take the first bunch of pixels and insert the pixel with the 
-plug (the end that will be connected to the LED Strip Bricklet).
+Take the first bunch of pixels and insert the pixel with the plug (the end that
+will be connected to the LED Strip Bricklet). See the schematic drawing for the
+correct position, marked as start.
 
 .. image:: /Images/Kits/kit_blinkenlights_build_step1_350.jpg
    :scale: 100 %
@@ -81,8 +86,17 @@ plug (the end that will be connected to the LED Strip Bricklet).
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_build_step1_1200.jpg
 
+The following drawing shows the back of the perforated board. The pixels
+will be plugged in from this side, such that the heads of the LEDs are on the front.
+Notice the positions of the small mounting holes and the starting position for
+the first LED. After inserting the first pixel continue in the alternating
+pattern as show by the red line.
 
-Place the next pixels as depicted above.
+.. image:: /Images/Kits/kit_blinkenlights_led_wiring_600.jpg
+   :scale: 100 %
+   :alt: Blinkenlights Kit Construction Wiring Process Description
+   :align: center
+   :target: ../../_images/Kits/kit_blinkenlights_led_wiring_1200.jpg
 
 If you finished to attach the first 50 pixels take the next pixels and plug
 them together with their connectors. Then put the next 50 pixels into the 
@@ -116,19 +130,23 @@ Strip 10mm of the wires on both ends.
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_wire_stripped_1200.jpg
 
-Additionally strip 8mm on the power supply wires of the led pixels (blue and
+Additionally strip 8mm on the power supply wires of the LED pixels (blue and
 red wires).
 
 
 Connect the Wires
 -----------------
 
+Pay attention to correctly constructing the power supply wiring. Incorrect
+wiring can damage the LED pixels.
+
 Start the wiring with the 95cm cable. It will connect the power supply to
-the last connected led pixels. Take two 2-wire clamps and connect
-one to the red led pixel wire and one on to the blue led pixel wire. The blue wire
-will be connected with the black power supply wire. The red wire of the pixels
-will be connected with the red wire of the power supply.
-After that install it the 95cm power supply calbe as depicted in the 
+the last connected LED pixels. Take two 2-wire clamps and connect one to the
+:led-pixel-red:`red` LED pixel wire and one on to the :led-pixel-blue:`blue`
+LED pixel wire. The :led-pixel-blue:`blue` wire will be connected with the
+:power-black:`black` power supply wire. The :led-pixel-red:`red` wire of
+the pixels will be connected with the :power-red:`red` wire of the power
+supply. After that install it the 95cm power supply cable as depicted in the
 following picture.
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_2x_connected_350.jpg
@@ -144,8 +162,9 @@ following picture.
    :target: ../../_images/Kits/kit_blinkenlights_build_step6_1200.jpg
 
 After that wire the 80cm cable. It will be connected to the last but one
-power supply point. Take two 3-wire clamps and connect the two blue wires of the
-pixels with the black wire and the two red wires with the red wire. Install it
+power supply point. Take two 3-wire clamps and connect the two
+:led-pixel-blue:`blue` wires of the pixels with the :power-black:`black` wire
+and the two :led-pixel-red:`red wires with the :power-red:`red wire. Install it
 as depicted below.
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_3x_connected_350.jpg
@@ -179,7 +198,7 @@ Repeat this step also for the 40cm cable.
    :target: ../../_images/Kits/kit_blinkenlights_build_step9_1200.jpg
 
 
-As the last wiring step take two 2-wire clamps and wire the first power supply 
+As the last wiring step take two 2-wire clamps and wire the last power supply
 point with the 20cm cable and install the cable as depicted:
 
 .. image:: /Images/Kits/kit_blinkenlights_build_step10_350.jpg
@@ -195,15 +214,15 @@ Prepare the 5V Power Supply
 Now the wiring of the power cables needs to be joined.
 Connect the 5V power supply to two 5-wire clamps as depicted below.
 
-
 .. image:: /Images/Kits/kit_blinkenlights_wago_power_350.jpg
    :scale: 100 %
    :alt: Blinkenlights Kit Construction Power Supply Connection
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_wago_power_1200.jpg
 
-The white wire of the power supply is the 5V wire and will later be connected to
-the red wires. the black wire is GND and will be connected to the black wires.
+The white wire of the power supply is the :power-white:`5V` wire and will later
+be connected to the :power-red:`red` wires. the black wire is
+:power-black:`ground` and will be connected to the :power-black:`black` wires.
 
 Next take two additional 5-wire clamps and connect these clamps with the
 previous 5-wire clamps.
@@ -232,9 +251,8 @@ Attach LED Strip Bricklet and Master Brick
 ------------------------------------------
 
 After that attach the LED Strip Bricklet and the Master Brick.
-To do this start by stripping the LED Strip Bricklet connection wires. 7mm 
-will suffice. Connect it with the Bricklet and install everything as depicted
-below
+To do this start by stripping the LED pixel connection wires. 7mm will suffice.
+Connect it with the Bricklet and install everything as depicted below.
 
 .. image:: /Images/Kits/kit_blinkenlights_master_led_strip_350.jpg
    :scale: 100 %
@@ -286,10 +304,10 @@ Attach Front Panel (Optional)
 -----------------------------
 
 This step is optional. You can attach the front panel to the board,
-dependend on your application you don't have to. The pixels without
+dependent on your application you don't have to. The pixels without
 front panel are **very bright**.
 
-The following image is from the tetris example without front panel:
+The following image is from the Tetris example without front panel:
 
 .. image:: /Images/Kits/kit_blinkenlights_tetris_wo_frontpanel_600.jpg
    :scale: 100 %
@@ -297,7 +315,7 @@ The following image is from the tetris example without front panel:
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_tetris_wo_frontpanel_1200.jpg
 
-To mount the frount panel, add 12mm spacers (thread inside/outside) to
+To mount the front panel, add 12mm spacers (thread inside/outside) to
 six positions
 
 .. image:: /Images/Kits/kit_blinkenlights_mounting_600.jpg
@@ -330,4 +348,3 @@ darkness:
    :alt: Blinkenlights Kit rainbow
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_rainbow_near_far_dark_1200.jpg
-
