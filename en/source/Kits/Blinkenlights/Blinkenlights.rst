@@ -115,7 +115,7 @@ Property                                  Value
 ========================================  ============================================================
 Maximum Update Rate (LED Strip Bricklet)  100Hz
 RGB resolution (LED Strip Bricklet)       3 x 8Bit
-Luminous Intensity                        1600cd per pixel
+Luminous Intensity                        1600mcd per pixel
 ----------------------------------------  ------------------------------------------------------------
 ----------------------------------------  ------------------------------------------------------------
 Number of RGB Pixels                      10 x 20
