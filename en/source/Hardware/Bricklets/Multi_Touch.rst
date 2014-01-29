@@ -226,7 +226,7 @@ For a first test only use a small section of the aluminum foil.
    :align: center
    :target: ../../_images/Kits/ggp_pad_bottom_1200.jpg
 
-After that insert the wires in the IDC connector. You can use avise or similar
+After that insert the wires in the IDC connector. You can use a vise or similar
 to press the connector together.
 
 .. image:: /Images/Kits/ggp_connector_crimp_350.jpg
