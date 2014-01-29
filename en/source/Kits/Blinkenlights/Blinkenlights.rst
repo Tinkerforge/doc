@@ -100,7 +100,8 @@ applications. For example, it can show customizable scrolling text in
 different colors on the display, it shows rainbows, customizable image sets with
 configurable durations and can warm your heart with a virtual fire.
 The games can be controlled by a PC keyboard but can be also be controlled
-by customizable touch pads when using the Multi Touch Bricklet.
+by customizable touch pads when using the Multi Touch Bricklet or by Dual Button
+Bricklet.
 
 The kit name "Blinkenlights" is used in
 `hacker jargon <http://en.wikipedia.org/wiki/Blinkenlights>`__
@@ -113,7 +114,7 @@ Technical Specifications
 ========================================  ============================================================
 Property                                  Value
 ========================================  ============================================================
-Maximum Update Rate (LED Strip Bricklet)  100Hz
+Maximum Update Rate (LED Strip Bricklet)  100Hz (per Pixel)
 RGB resolution (LED Strip Bricklet)       3 x 8bit
 Luminous Intensity                        1600mcd per pixel
 ----------------------------------------  ------------------------------------------------------------
@@ -124,7 +125,7 @@ Dimensions (W x D x H)                    | 40 x 80 x 7cm (without front panel)
 Weight                                    TODO
 ========================================  ============================================================
 
-\* depends on the distance between front and back panel
+\* depends on configured the distance between front and back panel
 
 .. _starter_kit_blinkenlights_resources:
 
@@ -145,10 +146,10 @@ Firmware updating and first tests
 As a very first step you should try out and update your Bricks and Bricklets.
 
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
-the :ref:`Brick Viewer <brickv_installation>`. Connect all Bricklets to the Master
-Brick and connect it via USB to your PC. Afterwards use Brick Viewer to check
-if all of the firmwares are up to date (Updates / Flashing button). If not, you can
-:ref:`update the Bricks <brickv_flash_firmware>` and
+the :ref:`Brick Viewer <brickv_installation>`. Connect the LED Strip Bricklet 
+to the Master Brick and connect it via USB to your PC. Afterwards use Brick 
+Viewer to check if all of the firmwares are up to date (Updates / Flashing 
+button). If not, you can :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
 Viewer too:
 
@@ -158,10 +159,9 @@ Viewer too:
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_update.jpg
 
-As next step click through the tabs of the Brick Viewer
-to see if all of the Bricklets are working correctly. Now you can be sure that
-the Bricks and Bricklets have versions that work together and that
-everything will work if it is screwed together.
+As the next step test the LED Strip Bricklet and the pixels as described
+:ref:`here <led_strip_bricklet_test>`. After that you can start to assemble
+the kit.
 
 
 Construction
