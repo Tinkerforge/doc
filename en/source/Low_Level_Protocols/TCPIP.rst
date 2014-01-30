@@ -123,12 +123,12 @@ To do this you need to send a corresponding request packet. The UID
 specifies the destination of the request packet and also affects the meaning
 of the function ID. This is because the same function ID has different meanings
 for different Bricks and Bricklets. For example, function ID 1 maps to the
-:tcpip:func:`get_stack_voltage <Master.get_stack_voltage>` function on the
-Master Brick and to the :tcpip:func:`set_port <IO16.set_port>` function on the
+:tcpip:func:`get_stack_voltage <BrickMaster.get_stack_voltage>` function on the
+Master Brick and to the :tcpip:func:`set_port <BrickletIO16.set_port>` function on the
 IO-16 Bricklet.
 
 The following example shows how to call the
-:tcpip:func:`get_humidity <Humidity.get_humidity>` function of a Humidity
+:tcpip:func:`get_humidity <BrickletHumidity.get_humidity>` function of a Humidity
 Bricklet with UID "b1Q" (Base58) or 33688 (integer). The corresponding
 request packet has
 
@@ -168,7 +168,7 @@ After this amount of time you can assume that there is no device with the given
 UID.
 
 There are also specific functions that do not send a response packet under
-normal conditions, for example the :tcpip:func:`set_state <DualRelay.set_state>`
+normal conditions, for example the :tcpip:func:`set_state <BrickletDualRelay.set_state>`
 function of the Dual Relay Bricklet
 (assuming the response expected flag is not set).
 
@@ -180,9 +180,9 @@ Devices can send response packets spontaneously back to the host to notify
 about an event or specific condition.
 
 Most callbacks are disabled by default and have to enabled first.
-For example, the :tcpip:func:`CALLBACK_MAGNETIC_FIELD <IMU.CALLBACK_MAGNETIC_FIELD>`
+For example, the :tcpip:func:`CALLBACK_MAGNETIC_FIELD <BrickIMU.CALLBACK_MAGNETIC_FIELD>`
 callback of the IMU Brick with UID ``6wVE7W`` (3631747890 as integer) can be enabled
-with a call to :tcpip:func:`IMU.set_magnetic_field_period` with a period larger 0.
+with a call to :tcpip:func:`BrickIMU.set_magnetic_field_period` with a period larger 0.
 Afterwards you will periodically receive response packets with
 
 * UID 3631747890 as uint32 (0x32 0x13 0x78 0xd8),
