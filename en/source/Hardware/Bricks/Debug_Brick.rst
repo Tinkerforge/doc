@@ -76,3 +76,21 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/debug-brick/raw/master/hardware/debug-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/debug_brick_dimensions.png>`__)
 * Design files (`Download <https://github.com/Tinkerforge/debug-brick/zipball/master>`__)
+
+
+Known Bugs
+----------
+
+Debug Brick Hardware Version 1.1 has a design flaw. GND pins of the JTAG 
+connector are not connected. This can lead to debug problems when using the
+JTAG interface. The serial console is not affected. The problem can be fixed
+by soldering a wire from a GND pin of the JTAG connector to a GND pad on the
+board. This issue will be fixed with the next hardware version. 
+
+.. image:: /Images/Bricks/brick_debug_wire_fix_350.jpg
+   :scale: 100 %
+   :alt: Debug Brick with Wire
+   :align: center
+   :target: ../../_images/Bricks/brick_debug_wire_fix_1000.jpg
+
+

@@ -73,6 +73,8 @@ Für einen einfachen Einstieg bieten wir Kits in verschiedenen Themenbereichen a
    Kits/WeatherStation/WeatherStation
    Kits/HardwareHacking/HardwareHacking
    Kits/ServerRoomMonitoring/ServerRoomMonitoring
+   Kits/Blinkenlights/Blinkenlights                                             
+
 
 
 .. _index_software:

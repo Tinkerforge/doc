@@ -77,3 +77,21 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/debug-brick/raw/master/hardware/debug-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/debug_brick_dimensions.png>`__)
 * Platinenlayout (`Download <https://github.com/Tinkerforge/debug-brick/zipball/master>`__)
+
+Bekannte Fehler/Probleme
+------------------------
+
+Bei dem Debug Brick Hardware Version 1.1 sind die GND Pins des JTAG Steckers
+nicht verbunden. Dies kann zu Problemen mit der JTAG Verbindung führen. Die 
+serielle Konsole ist davon nicht betroffen. Das JTAG Problem kann über das 
+Anlöten eines  Drähtchens zwischen einem GND Pin des JTAG Steckers und GND auf 
+der Platine behoben werden. Der Fehler wird in der nächsten Hardwareversion 
+behoben.
+
+.. image:: /Images/Bricks/brick_debug_wire_fix_350.jpg
+   :scale: 100 %
+   :alt: Debug Brick mit Draht
+   :align: center
+   :target: ../../_images/Bricks/brick_debug_wire_fix_1000.jpg
+
+
