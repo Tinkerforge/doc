@@ -54,7 +54,7 @@ Starterkit: Blinkenlights
 	{{
 	    tfdocimg("Kits/kit_blinkenlights_rainbow_near_far_dark_100.jpg",
 	             "Kits/kit_blinkenlights_rainbow_near_far_dark_600.jpg",
-	             "Blinkenlights: Regenbogen mit verschiedenen Frontpaneln")
+	             "Blinkenlights: Regenbogen mit verschiedenen Frontplatten")
 	}}
 	{{ tfdocend() }}
 
@@ -124,12 +124,12 @@ Helligkeit                                 1600mcd pro Pixel
 -----------------------------------------  ------------------------------------------------------------
 -----------------------------------------  ------------------------------------------------------------
 Anzahl der RGB Pixel                       10 x 20
-Abmessungen (B x T x H)                    | 40 x 80 x 7cm (ohne Frontpanel)
-                                           | 50 x 90 x > 7cm* (mit Frontpanel)
+Abmessungen (B x T x H)                    | 40 x 80 x 7cm (ohne Frontplatte)
+                                           | 50 x 90 x > 7cm* (mit Frontplatte)
 Gewicht                                    TODO
 =========================================  ============================================================
 
-\* hängt von dem eingestellten Abstand zwischen Fron- und Rückseite ab
+\* hängt von dem eingestellten Abstand zwischen Front- und Rückplatte ab
 
 .. _starter_kit_blinkenlights_resources:
 
@@ -230,7 +230,7 @@ Es kann mit:
    :alt: Blinkenlights Kit Tetris
    :align: center
 
-oder ohne Frontpanel:
+oder ohne Frontplatte:
 
 .. image:: /Images/Kits/kit_blinkenlights_tetris_wo_frontpanel_350.jpg
    :scale: 100 %
@@ -278,7 +278,7 @@ Pong
 ^^^^
 
 Wie :ref:`Tetris <starter_kit_blinkenlights_tetris>` kann
-`Pong <http://en.wikipedia.org/wiki/Pong>`__ mit oder ohne Frontpanel genutzt 
+`Pong <http://en.wikipedia.org/wiki/Pong>`__ mit oder ohne Frontplatte genutzt 
 werden.
 
 Die folgenden Bilder zeigen Pong bei Dunkelheit und Tageslicht.
@@ -330,8 +330,8 @@ Feuer Simulation
 ^^^^^^^^^^^^^^^^
 
 Wenn das Fire Tab gewählt wird erscheint eine Feuersimulation. Diese sieht
-besonders gut aus, wenn das Frontpanel in einem Abstand von 
-42mm (2x9mm und 2x12mm Abstandsbolzen) zur Rückseite angebracht wird.
+besonders gut aus, wenn das Frontplatte in einem Abstand von 
+42mm (2x9mm und 2x12mm Abstandsbolzen) zur Rückplatte angebracht wird.
 
 Die folgenden Bilder zeigen die Feuersimulation bei Dunkelheit und bei 
 Tageslicht.
@@ -491,14 +491,14 @@ heruntergeladen werden.
 
 .. _starter_kit_blinkenlights_scrolling_rainbow:
 
-Moving Rainbow
-^^^^^^^^^^^^^^
+Bewegender Regenbogen
+^^^^^^^^^^^^^^^^^^^^^
 
-The "Rainbow" demo will display a moving rainbow with the given frame rate
-and speed. The results depend on the distance to the front panel. 
-
-The following image shows the rainbow demo with 12mm distance in daylight, 
-42mm distance in daylight and with 42mm distance during darkness.
+Die "Rainbow" Demo zeigt einen mit der eingestellten Framerate und 
+Geschwindigkeit sich bewegenden Regenbogen auf dem Display an.
+Die Ergebnisse hängen von dem Abstand des Frontplatte zur Rückplatte ab.
+Das folgende Bild zeigt das Demo mit 12mm Abstand in Tageslicht, 42mm Abstand in
+Tageslich und 42mm Abstand in Dunkelheit an.
 
 .. image:: /Images/Kits/kit_blinkenlights_rainbow_near_far_dark_350.jpg
    :scale: 100 %
@@ -506,7 +506,8 @@ The following image shows the rainbow demo with 12mm distance in daylight,
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_rainbow_near_far_dark_1200.jpg
 
-A higher frame rate and speed results in faster moving rainbow.
+Eine höhere Framerate und Geschwindigkeit führen zu einem sich schneller 
+bewegenden Regenbogen.
 
 .. image:: /Images/Kits/blinkenlights_demo_rainbow_350.jpg
    :scale: 100 %
@@ -514,27 +515,28 @@ A higher frame rate and speed results in faster moving rainbow.
    :align: center
    :target: ../../_images/Kits/blinkenlights_demo_rainbow.jpg
 
-The standalone :ref:`Python <api_bindings_python>` project can be downloaded from
-`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/rainbow/python>`__.
-It consists of mainly two files: ``rainbow.py`` implements the logic and
-``config.py`` defines the configuration (host, port, UID, LED matrix layout and
-speed parameter).
+Das einzelne :ref:`Python <api_bindings_python>` Projekt kann von 
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/rainbow/python>`__
+heruntergeladen werden. Dieses besteht hauptsächlich aus zwei Dateien:
+``rainbow.py`` implementiert die Logik, wohingegen ``config.py`` die 
+Konfiguration speichert.
 
-Modify the ``config.py`` according to your needs and run the application:
+Nach Anpassen der ``config.py`` kann die Demo wie folgt gestartet werden:
 
 .. code-block:: python
 
    python rainbow.py
 
-There is also a :ref:`C <api_bindings_c>` implementation that can be
-downloaded from `GitHub
-<https://github.com/Tinkerforge/blinkenlights/tree/master/rainbow/c>`__.
+In :ref:`C <api_bindings_c>` ist diese Demo ebenfalls Implementiert worden. Sie 
+kann von `GitHub
+<https://github.com/Tinkerforge/blinkenlights/tree/master/rainbow/c>`__ 
+heruntergeladen werden.
 
 
-Further Enhancements
---------------------
+Zusätzliche Erweiterungen
+-------------------------
 
-If you modded, extended or improved your Blinkenlights installation in any way and you
-have published your results on our `Wiki <http://www.tinkerunity.org/wiki/>`__,
-on your blog or similar: Please give us a notice. We would love to add a link
-to your project here!
+Mods, Erweiterungen und Verbesserungen des Blinkenlight Kits veröffentlicht in
+unserem `Wiki <http://www.tinkerunity.org/wiki/>`__,
+in einem Blog oder ähnlich veröffentlichen wir gerne. Bitte kontaktiert uns und 
+wir verlinken es hier!

@@ -1,4 +1,4 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/Blinkenlights/Blinkenlights.html">Starter Kit: Blinkenlights</a> / Construction of Starter Kit: Blinkenlights
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/Blinkenlights/Blinkenlights.html">Starterkit: Blinkenlights</a> / Aufbau des Starterkits: Blinkenlights
 
 
 .. role:: led-pixel-red
@@ -18,57 +18,56 @@
 
 .. _starter_kit_blinkenlights_construction:
 
-Construction of Starter Kit: Blinkenlights
-==========================================
+Aufbau des Starterkits: Blinkenlights
+=====================================
 
-The Starter Kit: Blinkenlights comes with:
+Das Starterkit: Blinkenlights besteht aus:
 
 * 1x :ref:`Master Brick <master_brick>`,
 * 1x :ref:`LED Strip Bricklet <led_strip_bricklet>`,
-* 4x LED Pixels (50 pieces each),
-* 1x Perforated Board 80x40cm (black)
-* 1x Front Panel 90x50cm (white)
-* 4x Wall Mounting Plate (for wall peg)
-* 1x 5V/8A Power Supply
-* 1x Bricklet Cable 15cm
-* 1x 2x2.5mm² wires (5m)
-* 2x Dowel and wall peg
-* 4x 2-wire clamps
-* 6x 3-wire clamps
-* 4x 5-wire clamps
+* 4x LED Pixels (jeweils 50 Stück),
+* 1x Gelochte Rückplatte 80x40cm (schwarz)
+* 1x Frontplatte 90x50cm (weiß)
+* 4x Wandbefestigungsplatte (für Wandharken)
+* 1x 5V/8A Stromversorgung
+* 1x Brickletkabel 15cm
+* 1x 2x2.5mm² Litze (5m)
+* 2x Dübel und Wandharken
+* 4x 2-Draht Klemmen
+* 6x 3-Draht Klemmen
+* 4x 5-Draht Klemmen
 
-and cable straps, screws, spacers and some other parts.
+sowie Kabelbinder, Schrauben, Abstandshalter und andere Teile.
 
 .. image:: /Images/Kits/kit_blinkenlights_content_350.jpg
    :scale: 100 %
-   :alt: Blinkenlights Content
+   :alt: Blinkenlights Inhalt
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_content_1200.jpg
 
 
-Necessary Tools
----------------
+Notwendige Werkzeuge
+--------------------
 
-You will need a Phillips screwdriver, something to dismantle wires
-(knife or cable stripper) and a tape measure. Allow some extra time to build
-the kit.
+Ein Kreuzschlitz-Schraubendreher, etwas zum Abisolieren von Drähten (Messer
+oder Abisolierzange) und eine Maßband sind notwendig. Es sollte sich genügend
+Zeit zum Aufbau des Kits genommen werden.
 
+Erster Schritt
+--------------
 
-First Step
-----------
-
-Check if everything was delivered correctly. Remove the 
-protective foil of the front and back of the front panel (white) and the 
-perforated board (black).
+Es sollte überprüft werden ob alles vorhanden und unbeschädigt ist. Anschließend
+sollten die Schutzfolien von Frontplatte (weiß) und Rückplatte (schwarz) 
+abgezogen werden. Jeweils auf Vorder- und Rückseite befindet sich eine Folie.
 
 .. image:: /Images/Kits/kit_blinkenlights_remove_protective_foil_350.jpg
    :scale: 100 %
-   :alt: Blinkenlights Contruction Remove Foils
+   :alt: Blinkenlights Aufbau Folien entfernen
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_remove_protective_foil_1200.jpg
 
 
-Attach Pixels to Perforated Board
+Pixel in die Rückplatte einsetzen
 ---------------------------------
 
 Next you can stick the pixels into the perforated board. It is important that

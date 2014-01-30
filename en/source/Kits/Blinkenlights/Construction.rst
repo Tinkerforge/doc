@@ -59,7 +59,8 @@ First Step
 
 Check if everything was delivered correctly. Remove the 
 protective foil of the front and back of the front panel (white) and the 
-perforated board (black).
+perforated board (black). There is a protective foil on each side of the 
+panel/board.
 
 .. image:: /Images/Kits/kit_blinkenlights_remove_protective_foil_350.jpg
    :scale: 100 %
@@ -73,8 +74,8 @@ Attach Pixels to Perforated Board
 
 Next you can stick the pixels into the perforated board. It is important that
 you start with the correct pixel on the correct position. If you start wrong it
-is possible that you can't wire the pixels or that your cables will come out on
-the top position of the display instead of the bottom side.
+is possible that you can't wire the pixels or that the cable wiring will 
+not work as intended.
 
 Take the first bunch of pixels and insert the pixel with the plug (the end that
 will be connected to the LED Strip Bricklet). See the schematic drawing for the
