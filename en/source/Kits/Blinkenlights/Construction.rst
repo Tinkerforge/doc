@@ -78,8 +78,7 @@ is possible that you can't wire the pixels or that the cable wiring will
 not work as intended.
 
 Take the first bunch of pixels and insert the pixel with the plug (the end that
-will be connected to the LED Strip Bricklet). See the schematic drawing for the
-correct position, marked as start.
+will be connected to the LED Strip Bricklet). 
 
 .. image:: /Images/Kits/kit_blinkenlights_build_step1_350.jpg
    :scale: 100 %
@@ -139,15 +138,15 @@ Connect the Wires
 -----------------
 
 Pay attention to correctly constructing the power supply wiring. Incorrect
-wiring can damage the LED pixels.
+wiring can damage the hardware!.
 
-Start the wiring with the 95cm cable. It will connect the power supply to
+Start the wiring with the 95cm cable. It will connect the later power supply to
 the last connected LED pixels. Take two 2-wire clamps and connect one to the
 :led-pixel-red:`red` LED pixel wire and one on to the :led-pixel-blue:`blue`
 LED pixel wire. The :led-pixel-blue:`blue` wire will be connected with the
 :power-black:`black` power supply wire. The :led-pixel-red:`red` wire of
 the pixels will be connected with the :power-red:`red` wire of the power
-supply. After that install it the 95cm power supply cable as depicted in the
+supply. The installed 95cm power supply cable is depicted in the
 following picture.
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_2x_connected_350.jpg
@@ -165,7 +164,7 @@ following picture.
 After that wire the 80cm cable. It will be connected to the last but one
 power supply point. Take two 3-wire clamps and connect the two
 :led-pixel-blue:`blue` wires of the pixels with the :power-black:`black` wire
-and the two :led-pixel-red:`red wires with the :power-red:`red wire. Install it
+and the two :led-pixel-red:`red` wires with the :power-red:`red wire`. Install it
 as depicted below.
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_3x_connected_350.jpg
@@ -226,7 +225,7 @@ be connected to the :power-red:`red` wires. the black wire is
 :power-black:`ground` and will be connected to the :power-black:`black` wires.
 
 Next take two additional 5-wire clamps and connect these clamps with the
-previous 5-wire clamps.
+previous 5-wire clamps with the 10cm wire.
 
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_5x_350.jpg
@@ -252,7 +251,8 @@ Attach LED Strip Bricklet and Master Brick
 ------------------------------------------
 
 After that attach the LED Strip Bricklet and the Master Brick.
-To do this start by stripping the LED pixel connection wires. 7mm will suffice.
+To do this start by stripping the supplied LED pixel connection wires. 
+7mm will suffice.
 Connect it with the Bricklet and install everything as depicted below.
 
 .. image:: /Images/Kits/kit_blinkenlights_master_led_strip_350.jpg
