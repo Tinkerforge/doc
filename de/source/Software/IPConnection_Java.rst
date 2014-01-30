@@ -182,7 +182,14 @@ wieder zu entfernen.
   Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Listener
   zu implementieren (wie es im Brick Viewer geschieht).
 
-  Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
+  Die Device Identifier Werte sind :ref:`hier <device_identifier>` zu finden.
+  Es gibt auch Konstanten für diese Werte, welche nach dem folgenden Muster
+  benannt sind::
+
+   <device-class>.DEVICE_IDENTIFIER
+
+  Zum Beispiel: :java:member:`BrickMaster.DEVICE_IDENTIFIER`
+  oder :java:member:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
 
 
 .. java:function:: public class IPConnection.ConnectedListener()

@@ -187,7 +187,13 @@ The available callback property and their type of parameters are described below
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
 
- The device identifiers can be found :ref:`here <device_identifier>`.
+ The device identifier numbers can be found :ref:`here <device_identifier>`.
+ There are also constants for these numbers named following this pattern::
+
+  <device-type>_DEVICE_IDENTIFIER
+
+ For example: :delphi:func:`BRICK_MASTER_DEVICE_IDENTIFIER`
+ or :delphi:func:`BRICKLET_AMBIENT_LIGHT_DEVICE_IDENTIFIER`.
 
 
 .. delphi:function:: property TIPConnection.OnConnected

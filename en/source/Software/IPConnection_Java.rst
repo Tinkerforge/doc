@@ -176,7 +176,13 @@ to remove them with the corresponding "removeListener" function.
   It should be possible to implement plug-and-play functionality with this
   (as is done in Brick Viewer).
 
-  The device identifiers can be found :ref:`here <device_identifier>`.
+  The device identifier numbers can be found :ref:`here <device_identifier>`.
+  There are also constants for these numbers named following this pattern::
+
+   <device-class>.DEVICE_IDENTIFIER
+
+  For example: :java:member:`BrickMaster.DEVICE_IDENTIFIER`
+  or :java:member:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
 
 
 .. java:function:: public class IPConnection.ConnectedListener()

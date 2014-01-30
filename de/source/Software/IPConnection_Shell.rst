@@ -208,7 +208,7 @@ Grundfunktionen
    möglich). In diesem Fall haben nur ``uid`` und ``enumeration-type`` einen
    gültigen Wert.
 
- Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
+ Die Device Identifier Werte sind :ref:`hier <device_identifier>` zu finden.
 
 Fortgeschrittene Funktionen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

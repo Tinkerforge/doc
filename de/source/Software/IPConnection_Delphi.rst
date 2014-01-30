@@ -194,7 +194,14 @@ beschrieben.
  Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Callback
  zu implementieren (wie es im Brick Viewer geschieht).
 
- Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
+ Die Device Identifier Werte sind :ref:`hier <device_identifier>` zu finden.
+ Es gibt auch Konstanten für diese Werte, welche nach dem folgenden Muster
+ benannt sind::
+
+  <device-type>_DEVICE_IDENTIFIER
+
+ Zum Beispiel: :delphi:func:`BRICK_MASTER_DEVICE_IDENTIFIER`
+ oder :delphi:func:`BRICKLET_AMBIENT_LIGHT_DEVICE_IDENTIFIER`.
 
 
 .. delphi:function:: property TIPConnection.OnConnected

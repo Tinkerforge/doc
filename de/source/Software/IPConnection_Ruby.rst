@@ -214,7 +214,14 @@ werden weiter unten beschrieben.
  Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Callback
  zu implementieren (wie es im Brick Viewer geschieht)
 
- Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
+ Die Device Identifier Werte sind :ref:`hier <device_identifier>` zu finden.
+ Es gibt auch Konstanten für diese Werte, welche nach dem folgenden Muster
+ benannt sind::
+
+  <device-class>::DEVICE_IDENTIFIER
+
+ Zum Beispiel: :rb:attr:`BrickMaster::DEVICE_IDENTIFIER`
+ oder :rb:attr:`BrickletAmbientLight::DEVICE_IDENTIFIER`.
 
 
 .. rb:attribute:: IPConnection::CALLBACK_CONNECTED

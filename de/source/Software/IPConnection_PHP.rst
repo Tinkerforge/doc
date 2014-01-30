@@ -172,7 +172,14 @@ werden im Folgenden beschrieben.
  Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Callback
  zu implementieren (wie es im Brick Viewer geschieht)
 
- Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
+ Die Device Identifier Werte sind :ref:`hier <device_identifier>` zu finden.
+ Es gibt auch Konstanten für diese Werte, welche nach dem folgenden Muster
+ benannt sind::
+
+  <device-class>::DEVICE_IDENTIFIER
+
+ Zum Beispiel: :php:member:`BrickMaster::DEVICE_IDENTIFIER`
+ oder :php:member:`BrickletAmbientLight::DEVICE_IDENTIFIER`.
 
 
 .. php:member:: int IPConnection::CALLBACK_CONNECTED

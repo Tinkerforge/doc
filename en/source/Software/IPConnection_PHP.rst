@@ -169,7 +169,13 @@ described below.
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
 
- The device identifiers can be found :ref:`here <device_identifier>`.
+ The device identifier numbers can be found :ref:`here <device_identifier>`.
+ There are also constants for these numbers named following this pattern::
+
+  <device-class>::DEVICE_IDENTIFIER
+
+ For example: :php:member:`BrickMaster::DEVICE_IDENTIFIER`
+ or :php:member:`BrickletAmbientLight::DEVICE_IDENTIFIER`.
 
 
 .. php:member:: int IPConnection::CALLBACK_CONNECTED

@@ -225,7 +225,14 @@ werden im Folgenden beschrieben.
  Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Callback
  zu implementieren (wie es im Brick Viewer geschieht).
 
- Die Device Identifiers sind :ref:`hier <device_identifier>` zu finden.
+ Die Device Identifier Werte sind :ref:`hier <device_identifier>` zu finden.
+ Es gibt auch Konstanten für diese Werte, welche nach dem folgenden Muster
+ benannt sind::
+
+  <device-type>_DEVICE_IDENTIFIER
+
+ Zum Beispiel: :c:data:`MASTER_DEVICE_IDENTIFIER`
+ oder :c:data:`AMBIENT_LIGHT_DEVICE_IDENTIFIER`.
 
 
 .. c:var:: IPCON_CALLBACK_CONNECTED
