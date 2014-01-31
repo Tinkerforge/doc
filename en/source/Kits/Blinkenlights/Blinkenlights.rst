@@ -122,7 +122,7 @@ Luminous Intensity                        1600mcd per pixel
 Number of RGB Pixels                      10 x 20
 Dimensions (W x D x H)                    | 40 x 80 x 7cm (without front panel)
                                           | 50 x 90 x > 7cm* (with front panel)
-Weight                                    TODO
+Weight                                    4kg (assembled kit)
 ========================================  ============================================================
 
 \* depends on configured the distance between front and back panel

@@ -126,7 +126,7 @@ Helligkeit                                 1600mcd pro Pixel
 Anzahl der RGB Pixel                       10 x 20
 Abmessungen (B x T x H)                    | 40 x 80 x 7cm (ohne Frontplatte)
                                            | 50 x 90 x > 7cm* (mit Frontplatte)
-Gewicht                                    TODO
+Gewicht                                    4kg (zusammengebautes Kit)
 =========================================  ============================================================
 
 \* hängt von dem eingestellten Abstand zwischen Front- und Rückplatte ab
