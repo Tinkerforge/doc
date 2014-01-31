@@ -86,9 +86,11 @@ will be connected to the LED Strip Bricklet).
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_build_step1_1200.jpg
 
+The back and front of the perforated board are different, check the layout
+of the small mounting holes.
 The following drawing shows the back of the perforated board. The pixels
-will be plugged in from this side, such that the heads of the LEDs are on the front.
-Notice the positions of the small mounting holes and the starting position for
+will be plugged in from this side, such that the heads of the LEDs are on the
+front. Notice the starting position for
 the first LED. After inserting the first pixel continue in the alternating
 pattern as show by the red line.
 
@@ -130,8 +132,8 @@ Strip 10mm of the wires on both ends.
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_wire_stripped_1200.jpg
 
-Additionally strip 8mm on the power supply wires of the LED pixels (blue and
-red wires).
+Additionally strip 8mm on the power supply wires of the LED pixels
+(:led-pixel-blue:`blue` and :led-pixel-red:`red` wires).
 
 
 Connect the Wires
@@ -164,7 +166,7 @@ following picture.
 After that wire the 80cm cable. It will be connected to the last but one
 power supply point. Take two 3-wire clamps and connect the two
 :led-pixel-blue:`blue` wires of the pixels with the :power-black:`black` wire
-and the two :led-pixel-red:`red` wires with the :power-red:`red wire`. Install it
+and the two :led-pixel-red:`red` wires with the :power-red:`red` wire. Install it
 as depicted below.
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_3x_connected_350.jpg
@@ -316,8 +318,11 @@ The following image is from the Tetris example without front panel:
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_tetris_wo_frontpanel_1200.jpg
 
-To mount the front panel, add 12mm spacers (thread inside/outside) to
-six positions
+To mount the front panel, add 12mm spacers (thread inside/outside) to six
+places. Two of this places are blocked by the screws of the wall mounting
+plates. Just replace these M3 screws with the outside thread of the 12mm
+spacers. For the other four places the outside thread of the spacer is put in
+the small holes of the perforated board and locked with a nut.
 
 .. image:: /Images/Kits/kit_blinkenlights_mounting_600.jpg
    :scale: 100 %
@@ -325,7 +330,7 @@ six positions
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_mounting_1200.jpg
 
-and attach the front panel to them with screws:
+Now attach the front panel to the six spacers with screws:
 
 .. image:: /Images/Kits/kit_blinkenlights_on_wall_350.jpg
    :scale: 100 %

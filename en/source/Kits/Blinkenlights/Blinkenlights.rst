@@ -439,7 +439,7 @@ generates the following output
    :alt: Blinkenlights Heart
    :align: center
 
-Choose the images you want to display by pressing "Choose images...". The
+Choose the images you want to display by pressing "Choose Images...". The
 application will display the images with the given frame rate and switch to the
 next image in the sequence each frame. This way you can create animations.
 Each image is resized to 20x10 pixel (size of the display) and stretched if the

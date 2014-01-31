@@ -1,3 +1,4 @@
+
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/Blinkenlights/Blinkenlights.html">Starterkit: Blinkenlights</a> / Aufbau des Starterkits: Blinkenlights
 
 
@@ -25,14 +26,14 @@ Das Starterkit: Blinkenlights besteht aus:
 
 * 1x :ref:`Master Brick <master_brick>`,
 * 1x :ref:`LED Strip Bricklet <led_strip_bricklet>`,
-* 4x LED Pixels (jeweils 50 Stück),
+* 4x LED Pixel (jeweils 50 Stück),
 * 1x Gelochte Rückplatte 80x40cm (schwarz)
 * 1x Frontplatte 90x50cm (weiß)
-* 4x Wandbefestigungsplatte (für Wandharken)
+* 4x Wandbefestigungsplatte (für Wandhaken)
 * 1x 5V/8A Stromversorgung
-* 1x Brickletkabel 15cm
+* 1x Bricklet Kabel 15cm
 * 1x 2x2.5mm² Litze (5m)
-* 2x Dübel und Wandharken
+* 2x Dübel und Wandhaken
 * 4x 2-Draht Klemmen
 * 6x 3-Draht Klemmen
 * 4x 5-Draht Klemmen
@@ -46,8 +47,8 @@ sowie Kabelbinder, Schrauben, Abstandshalter und andere Teile.
    :target: ../../_images/Kits/kit_blinkenlights_content_1200.jpg
 
 
-Notwendige Werkzeuge
---------------------
+Benötigte Werkzeuge
+-------------------
 
 Ein Kreuzschlitz-Schraubendreher, etwas zum Abisolieren von Drähten (Messer
 oder Abisolierzange) und eine Maßband sind notwendig. Es sollte sich genügend
@@ -56,7 +57,7 @@ Zeit zum Aufbau des Kits genommen werden.
 Erster Schritt
 --------------
 
-Es sollte überprüft werden ob alles vorhanden und unbeschädigt ist. Anschließend
+Es sollte überprüft werden, ob alles vorhanden und unbeschädigt ist. Anschließend
 sollten die Schutzfolien von Frontplatte (weiß) und Rückplatte (schwarz) 
 abgezogen werden. Jeweils auf Vorder- und Rückseite befindet sich eine Folie.
 
@@ -75,7 +76,7 @@ mit dem korrekten Pixel an der korrekten Position zu beginnen. Falls falsch
 begonnen wird ist es möglich, dass die Pixel nicht verbunden werden können
 oder die Kabel unglücklich verlegt werden müssen.
 
-Nehme das erste Bündel Pixel und stecken das Pixel andem ein Stecker befestigt 
+Nehme das erste Bündel Pixel und stecken das Pixel an dem ein Stecker befestigt
 ist (das Ende, dass mit dem LED Strip Bricklet verbunden wird) in das erste
 Loch. 
 
@@ -85,10 +86,12 @@ Loch.
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_build_step1_1200.jpg
 
+Die Vorder- und Rückseite der Rückplatte sind unterschiedliche, zu erkennen an
+der Anordung der kleinen Befestigungslöcher.
 Die folgende Grafik zeigt die Rückseite der Rückplatte. Die Pixel werden von
 dieser Seite eingesteckt, so dass die Köpfe der Pixel auf der Vorderseite sind.
-Beachte die Positionen der kleinen Befestigungslöcher und der Startposition der
-ersten LED. Nach dem Einstecken der ersten LED werden die folgenden im 
+Beachte die Startposition der
+ersten LED. Nach dem Einstecken der ersten LED werden die Folgenden im
 rot markierten Muster eingesteckt.
 
 .. image:: /Images/Kits/kit_blinkenlights_led_wiring_600.jpg
@@ -98,7 +101,7 @@ rot markierten Muster eingesteckt.
    :target: ../../_images/Kits/kit_blinkenlights_led_wiring_1200.jpg
 
 Nachdem die ersten 50 Pixel eingesteckt wurden, wird mit den nächsten 50
-fortgefahren. Das erste Pixel des neuen Bündels sollte mit dem letzten Pixel
+fortgefahren. Das erste Pixel des nächsten Bündels sollte mit dem letzten Pixel
 der bereits eingesteckten Pixel verbunden werden.
 
 .. image:: /Images/Kits/kit_blinkenlights_build_step4_350.jpg
@@ -130,8 +133,8 @@ davon geschnitten werden:
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_wire_stripped_1200.jpg
 
-Zusätzlich müssen 8mm der Stromversorgungsdrähte der LED pixel (blaue und rote
-Drähte) abisoliert werden.
+Zusätzlich müssen 8mm der Stromversorgungsdrähte der LED Pixel
+(:led-pixel-blue:`blaue` und :led-pixel-red:`rote` Drähte) abisoliert werden.
 
 
 Drähte verbinden
@@ -146,8 +149,8 @@ Klemmen und verbinden sie jeweils mit dem :led-pixel-red:`roten` LED Pixel
 Draht bzw. dem :led-pixel-blue:`blauen` Draht.
 Der :led-pixel-blue:`blaue` Draht wird mit dem :power-black:`schwarzen` 
 Stromversorgungsdraht verbunden. Der :led-pixel-red:`rote` Draht des Pixels
-mit dem :power-red:`roten` Stromversorgungsdraht verbunden.
-Das in installierte 95cm Stromversorgungskabel ist nachfolgend abgebildet.
+wird mit dem :power-red:`roten` Stromversorgungsdraht verbunden.
+Das fertig installierte 95cm Stromversorgungskabel ist nachfolgend abgebildet.
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_2x_connected_350.jpg
    :scale: 100 %
@@ -163,10 +166,10 @@ Das in installierte 95cm Stromversorgungskabel ist nachfolgend abgebildet.
 
 Danach wird das 80cm Kabel installiert. Dieses wird mit dem vorletzten 
 Versorgungspunkt verbunden. Dazu nehmen wir zwei 3-Draht Klemmen und verbinden
-die zwei :led-pixel-blue:`bluen` Drähte der Pixels mit dem 
-:power-black:`schwarzen` Draht. Anschließend verbinden wir die zwei 
-:led-pixel-red:`roten` Drähte mit dem :power-red:`roten` Draht der 
-Stromversorgung. wire. Das Kabel verlegen wie nachfolgend abgebildet.
+die zwei :led-pixel-blue:`blauen` Drähte der Pixel mit dem
+:power-black:`schwarzen` Stromversorgungsdraht. Anschließend verbinden wir die
+zwei :led-pixel-red:`roten` Drähte mit dem :power-red:`roten` Draht der
+Stromversorgung. Das Kabel verlegen wir wie nachfolgend abgebildet.
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_3x_connected_350.jpg
    :scale: 100 %
@@ -221,7 +224,7 @@ nachfolgend abgebildet:
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_wago_power_1200.jpg
 
-Der weiße Draht der Stromversorgung ist der :power-white:`5V` Draht und wird 
+Der weiße Draht der Stromversorgung ist der :power-white:`5V` Anschluss und wird
 später mit den :power-red:`roten` Drähten verbunden. Der schwarze Draht ist
 :power-black:`Masse` und wird mit den :power-black:`schwarzen` Drähten 
 verbunden.
@@ -257,7 +260,7 @@ verbinden es mit dem LED Strip Bricklet. 7mm reichen aus.
 
 .. image:: /Images/Kits/kit_blinkenlights_master_led_strip_350.jpg
    :scale: 100 %
-   :alt: Blinkenlights Kit Aufbau Master Brick mit LED Strip
+   :alt: Blinkenlights Kit Aufbau Master Brick mit LED Strip Bricklet
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_master_led_strip_1200.jpg
 
@@ -284,7 +287,7 @@ Befestigungsplatte geschraubt:
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_holder_1200.jpg
 
-Diese Befestigungsplatten werden wiederrum mit M3 Schrauben an die Rückplatte
+Diese Befestigungsplatten werden wiederum mit M3 Schrauben an die Rückplatte
 geschraubt:
 
 .. image:: /Images/Kits/kit_blinkenlights_holder_on_board_350.jpg
@@ -302,13 +305,13 @@ Danach sieht die Platte wie folgt aus:
    :target: ../../_images/Kits/kit_blinkenlights_on_wall_wo_frontpanel_1200.jpg
 
 Der Abstand zwischen den Befestigungshaltern ist 32cm für vertikale
-als auch horizontale Montierung.
+als auch horizontale Montage.
 
 Frontplatte befestigen (Optional)
 ---------------------------------
 
 Dieser Schritt ist optional. Abhängig von der Anwendung kann die Frontplatte
-befestigt werrden. Ohne Frontplatte sind die Pixel **sehr hell**.
+befestigt werden. Ohne Frontplatte sind die Pixel **sehr hell**.
 
 Das folgende Foto aus dem Tetris Beispiel zeigt das Kit ohne Frontplatte:
 
@@ -319,15 +322,20 @@ Das folgende Foto aus dem Tetris Beispiel zeigt das Kit ohne Frontplatte:
    :target: ../../_images/Kits/kit_blinkenlights_tetris_wo_frontpanel_1200.jpg
 
 Um die Frontplatte zu montieren werden 12mm Abstandsbolzen (Außen-/Innengewinde)
-an sechs Positionen montiert.
+an sechs Stellen montiert. An zwei Stellen sind die Löcher schon durch die
+M3 Schrauben der Wandhalterungen belegt. Hier werden die M3 Schrauben einfach
+durch die Außengewinde der 12mm Abstandsbolzen ersetzt. An den anderen vier
+Stellen wird der Abstandsbolzen mit dem Außengewinde durch die Rückplatte
+gesteckt und mit einer Mutter fixiert.
 
 .. image:: /Images/Kits/kit_blinkenlights_mounting_600.jpg
    :scale: 100 %
-   :alt: Blinkenlights Kit Aufbau Montierung Frontplatte
+   :alt: Blinkenlights Kit Aufbau Montage Frontplatte
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_mounting_1200.jpg
 
-Anschließend wird die Frontplatte mit Schrauben befestigt:
+Anschließend wird die Frontplatte mit Schrauben an den sechs Abstandsbolzen
+befestigt:
 
 .. image:: /Images/Kits/kit_blinkenlights_on_wall_350.jpg
    :scale: 100 %

@@ -62,10 +62,10 @@ Features
 --------
 
 * Riesiges 40x80cm 200 Pixel RGB Display mit Aktualisierungsraten bis zu 100Hz
-* Entwickel Party Spiele, Messe-Auftritte und kundenspezifische Anzeigen
+* Entwickle Party Spiele, Messeauftritte und kundenspezifische Anzeigen
   jeglicher Art
 * Frei programmierbar, konfigurierbar und erweiterbar
-* Pixel: 12mm Durchmesser, wasserdicht (IP65), voll-farb RGB mit 1600mcd pro p
+* Pixel: 12mm Durchmesser, wasserdicht (IP65), vollfarb RGB mit 1600mcd pro
   Pixel
 
 
@@ -75,14 +75,14 @@ Beschreibung
 Das *Starterkit: Blinkenlights* ist ein großes, freiprogrammierbares Display.
 Es besteht aus 200 individuell steuerbare vollfarb RGB LED Pixel, deren Farbe
 bis zu 100 mal pro Sekunde geändert werden kann. Es gibt vielfältige 
-Anwendungen, dazu zählen das Schreiben von eigenen (Party-) Spielen, 
+Anwendungen, dazu zählen eigenen (Party-) Spielen,
 Messeauftritte, schicke Moodlights oder individuelle Anzeigen aller Art.
 
 Das Basiskit besteht aus einem :ref:`Master Brick <master_brick>`, einem 
 :ref:`LED Strip Bricklet <led_strip_bricklet>`, vier 50 LED Pixel Sets, einer 
-LED power supply, vier Wandbefestigungs-Platten, einer gelochten Rückplatte,
+LED Stromversorgung, vier Wandbefestigungsplatten, einer gelochten Rückplatte,
 einer Frontplatte sowie alle notwendigen Kabel und Befestigungsmaterialien.
-Das Kasiskit kann per USB von jedem(Embedded-) PC (z.B. 
+Das Basiskit kann per USB von jedem (Embedded-) PC (z.B.
 :ref:`Raspberry Pi <embedded_raspberry_pi>`), Laptop, Server oder Tablet
 gesteuert werden.
 
@@ -90,14 +90,14 @@ gesteuert werden.
 Bei Spiele-Anwendungen kann das 
 :ref:`Multi Touch Bricklet <multi_touch_bricklet>` nützlich sein wenn
 individuelle Spielsteuerungen realisiert werden sollen. Mit den 
-:ref:`Master Brick Extensions <product_overview_master_extensions>` kann die
-USB Schnittstelle durch :ref:`Wi-Fi <wifi_extension>` oder
+:ref:`Master Extensions <product_overview_master_extensions>` kann die
+USB Schnittstelle durch :ref:`WLAN <wifi_extension>` oder
 :ref:`Ethernet <ethernet_extension>` ausgetauscht werden, so dass Smartphone 
 oder Tablet gesteuerte Anwendungen möglich sind. Ein größeres Display kann durch
 das Hinzufügen weiterer Pixel realisiert werden.
 
 Eine :ref:`Demo-Anwendung <starter_kit_blinkenlights_demo_examples>` 
-implementiert Clone von `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ und
+implementiert Klone von `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ und
 `Pong <http://en.wikipedia.org/wiki/Pong>`__ und beinhaltet verschiedene
 andere Anwendungen. Zum Beispiel können individuelle scrollende Texte in 
 diversen Farben, Regenbogen oder individuelle Bildsätze mit konfigurierbarer
@@ -105,9 +105,9 @@ Dauer angezeigt werden. Ein virtuelles Feuer erwärmt das Herz auch in den
 kältesten Wintermonaten. Die Spiele können über eine PC Tastatur gesteuert 
 werden aber auch per Multi Touch oder Dual Button Bricklet.
 
-Der Kitname "Blinkenlights" wird im 
+Der Name des Kits "Blinkenlights" wird im
 `Hackerjargon <http://de.wikipedia.org/wiki/Blinkenlights_%28Jargon%29>`__ 
-benutzt um blinkende Lampen von Netzwerkequipment zu beschreiben. Er ist auch 
+benutzt um blinkende Lampen von Netzwerk-Equipment zu beschreiben. Er ist auch
 über das
 `Blinkenlights Projekt <http://de.wikipedia.org/wiki/Projekt_Blinkenlights>`__
 bekannt.
@@ -136,12 +136,12 @@ Gewicht                                    TODO
 Ressourcen
 ----------
 
-* Beispiel Source Code für :ref:`Tetris <starter_kit_blinkenlights_tetris>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__, `C# <https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__)
-* Beispiel Source Code für :ref:`Pong <starter_kit_blinkenlights_Pong>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__, `C# <https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__)
-* Beispiel Source Code für :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__, `Delphi <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/delphi>`__)
-* Beispiel Source Code für :ref:`Scrolling Text <starter_kit_blinkenlights_scrolling_text>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__, `PHP <https://github.com/Tinkerforge/blinkenlights/tree/master/text/php>`__)
-* Beispiel Source Code für :ref:`Display Images <starter_kit_blinkenlights_images>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/images/python>`__, `Java <https://github.com/Tinkerforge/blinkenlights/tree/master/images/java>`__)
-* :ref:`Demo Anwendung <starter_kit_blinkenlights_demo_examples>` (Download: Windows, Linux, Mac OS X, `Source Code <https://github.com/Tinkerforge/blinkenlights/tree/master/demo>`__)
+* Beispiel Quelltext für :ref:`Tetris <starter_kit_blinkenlights_tetris>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__, `C# <https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__)
+* Beispiel Quelltext für :ref:`Pong <starter_kit_blinkenlights_Pong>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__, `C# <https://github.com/Tinkerforge/blinkenlights/tree/master/games/csharp>`__)
+* Beispiel Quelltext für :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__, `Delphi <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/delphi>`__)
+* Beispiel Quelltext für :ref:`Scrolling Text <starter_kit_blinkenlights_scrolling_text>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__, `PHP <https://github.com/Tinkerforge/blinkenlights/tree/master/text/php>`__)
+* Beispiel Quelltext für :ref:`Display Images <starter_kit_blinkenlights_images>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/images/python>`__, `Java <https://github.com/Tinkerforge/blinkenlights/tree/master/images/java>`__)
+* :ref:`Demo-Anwendung <starter_kit_blinkenlights_demo_examples>` (Download: Windows, Linux, Mac OS X, `Quelltext <https://github.com/Tinkerforge/blinkenlights/tree/master/demo>`__)
 
 
 Firmware aktualisieren und erste Tests
@@ -221,6 +221,7 @@ verbunden wurde. Die Tabelle unter der Host/Port Konfiguration gibt einen
 
 Tetris
 ^^^^^^
+
 Die Demoanwendung implementiert ein typisches 
 `Tetris <http://de.wikipedia.org/wiki/Tetris>`__ mit allen Besonderheiten.
 Es kann mit:
@@ -239,7 +240,7 @@ oder ohne Frontplatte:
 
 gespielt werden.
 
-Dieser Tetris-Clone kann über drei verschiedene Arten gesteuert werden. Als 
+Dieser Tetris-Klon kann über drei verschiedene Arten gesteuert werden. Als
 erstes können die Buttons im Tab genutzt werden um das Spiel zu steuern.
 Alternativ funktioniert dies auch über die PC Tastatur ("a" ist zum Beispiel 
 links). Als letzte Möglichkeit kann ein Mutli Touch Bricklet angeschlossen 
@@ -254,11 +255,11 @@ werden (Elektrode 0 ist zum Beispiel links).
 Das einzelne :ref:`Python <api_bindings_python>` Projekt kann von
 `GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/games/python>`__
 heruntergeladen werden. Dieses beinhaltet auch das 
-:ref:`Pong <starter_kit_blinkenlights_pong>` Project und beseht hauptsächlich 
+:ref:`Pong <starter_kit_blinkenlights_pong>` Projekt und beseht hauptsächlich
 aus zwei Dateien: ``tetris.py`` implementiert das Spiel und ``config.py`` 
 definiert Konfigurationen (Host, Port, UIDs, LED Matrixlayout und Keymap).
 
-Die ``config.py`` muss entprechend angepasst werden und die Anwendung mittels:
+Die ``config.py`` muss entsprechend angepasst werden und die Anwendung mittels:
 
 .. code-block:: python
 
@@ -312,7 +313,7 @@ hauptsächlich aus zwei Dateien: ``pong.py`` implementiert das Spiel und
 und Keymaps).
 
 
-Die ``config.py`` muss entprechend angepasst werden und die Anwendung mittels:
+Die ``config.py`` muss entsprechend angepasst werden und die Anwendung mittels:
 
 .. code-block:: python
 
@@ -326,8 +327,8 @@ herunter geladen werden.
 
 .. _starter_kit_blinkenlights_fire:
 
-Feuer Simulation
-^^^^^^^^^^^^^^^^
+Feuersimulation
+^^^^^^^^^^^^^^^
 
 Wenn das Fire Tab gewählt wird erscheint eine Feuersimulation. Diese sieht
 besonders gut aus, wenn das Frontplatte in einem Abstand von 
@@ -347,11 +348,11 @@ Tageslicht.
    :alt: Blinkenlights Feuer Simulation bei Tageslicht
    :align: center
 
-Die Simulation bastiert auf einem Partikelsystem und kann über vier 
+Die Simulation basiert auf einem Partikelsystem und kann über vier
 Schieberegler beeinflusst werden:
 
 * **Frame Rate**:
-  Definiert die Bildrate in Hz. Die Simulation wird jedes neue Bild (frame)
+  Definiert die Bildrate in Hz. Die Simulation wird jedes neue Bild (Frame)
   aktualisiert. Wenn die Bildrate erhöht wird, dann brennt das Feuer schneller.
 
 * **Hue**:
@@ -393,8 +394,8 @@ heruntergeladen werden.
 
 .. _starter_kit_blinkenlights_scrolling_text:
 
-Scrolling Text
-^^^^^^^^^^^^^^
+Scrollender Text
+^^^^^^^^^^^^^^^^
 
 Die "Text" Demo scrollt den eingegebenen Text in der angegebenen 
 Geschwindigkeit.
@@ -415,9 +416,9 @@ werden.
    :align: center
    :target: ../../_images/Kits/blinkenlights_demo_text.jpg
 
-Das einzelne :ref:`Python <api_bindings_python>` Projekt kann von Github
-heruntergeladen werden
-`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__.
+Das einzelne :ref:`Python <api_bindings_python>` Projekt kann von
+`GitHub <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__
+heruntergeladen werden.
 Es besteht ebenfalls hauptsächlich aus zwei Dateien: ``text.py`` implementiert
 die Logik und ``config.py`` definiert Host, Port, UID, LED Matrixlayout und
 Farbparameter.
@@ -457,7 +458,7 @@ generiert folgende Ausgabe
    :align: center
 
 Wähle die Bilder, die angezeigt werden sollen, durch Klicken auf 
-"Choose images...". Die Demo zeigt das erste Bild an und wechselt in der 
+"Choose Images...". Die Demo zeigt das erste Bild an und wechselt in der
 angegebenen Framerate zum nächsten Bild in der Reihe. Auf diese Art können
 Animationen erstellt werden. Jedes Bild wird auf eine Größe von 20x10 Pixel
 (Größe des Displays) verkleinert und verzerrt falls das Bildformat nicht passt.
@@ -498,7 +499,7 @@ Die "Rainbow" Demo zeigt einen mit der eingestellten Framerate und
 Geschwindigkeit sich bewegenden Regenbogen auf dem Display an.
 Die Ergebnisse hängen von dem Abstand des Frontplatte zur Rückplatte ab.
 Das folgende Bild zeigt das Demo mit 12mm Abstand in Tageslicht, 42mm Abstand in
-Tageslich und 42mm Abstand in Dunkelheit an.
+Tageslicht und 42mm Abstand in Dunkelheit an.
 
 .. image:: /Images/Kits/kit_blinkenlights_rainbow_near_far_dark_350.jpg
    :scale: 100 %
