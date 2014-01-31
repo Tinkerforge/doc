@@ -51,14 +51,14 @@ Benötigte Werkzeuge
 -------------------
 
 Ein Kreuzschlitz-Schraubendreher, etwas zum Abisolieren von Drähten (Messer
-oder Abisolierzange) und eine Maßband sind notwendig. Es sollte sich genügend
+oder Abisolierzange) und ein Maßband sind notwendig. Es sollte sich genügend
 Zeit zum Aufbau des Kits genommen werden.
 
 Erster Schritt
 --------------
 
-Es sollte überprüft werden, ob alles vorhanden und unbeschädigt ist. Anschließend
-sollten die Schutzfolien von Frontplatte (weiß) und Rückplatte (schwarz) 
+Überprüfe ob alles vorhanden und unbeschädigt ist. Anschließend
+sollte die Schutzfolien von Frontplatte (weiß) und Rückplatte (schwarz) 
 abgezogen werden. Jeweils auf Vorder- und Rückseite befindet sich eine Folie.
 
 .. image:: /Images/Kits/kit_blinkenlights_remove_protective_foil_350.jpg
@@ -76,7 +76,7 @@ mit dem korrekten Pixel an der korrekten Position zu beginnen. Falls falsch
 begonnen wird ist es möglich, dass die Pixel nicht verbunden werden können
 oder die Kabel unglücklich verlegt werden müssen.
 
-Nehme das erste Bündel Pixel und stecken das Pixel an dem ein Stecker befestigt
+Nimm das erste Bündel Pixel und stecken das Pixel an dem ein Stecker befestigt
 ist (das Ende, dass mit dem LED Strip Bricklet verbunden wird) in das erste
 Loch. 
 
@@ -86,7 +86,7 @@ Loch.
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_build_step1_1200.jpg
 
-Die Vorder- und Rückseite der Rückplatte sind unterschiedliche, zu erkennen an
+Die Vorder- und Rückseite der Rückplatte sind unterschiedlich, zu erkennen an
 der Anordung der kleinen Befestigungslöcher.
 Die folgende Grafik zeigt die Rückseite der Rückplatte. Die Pixel werden von
 dieser Seite eingesteckt, so dass die Köpfe der Pixel auf der Vorderseite sind.
@@ -101,8 +101,8 @@ rot markierten Muster eingesteckt.
    :target: ../../_images/Kits/kit_blinkenlights_led_wiring_1200.jpg
 
 Nachdem die ersten 50 Pixel eingesteckt wurden, wird mit den nächsten 50
-fortgefahren. Das erste Pixel des nächsten Bündels sollte mit dem letzten Pixel
-der bereits eingesteckten Pixel verbunden werden.
+fortgefahren. Das erste Pixel des nächsten Bündel wird mit dem letzten Pixel
+der bereits eingesteckten Pixel verbunden.
 
 .. image:: /Images/Kits/kit_blinkenlights_build_step4_350.jpg
    :scale: 100 %
@@ -143,10 +143,10 @@ Drähte verbinden
 Es muss darauf geachtet werden, dass die Verdrahtung korrekt ist. Eine 
 inkorrekte Verdrahtung kann zu Kurzschlüssen und zerstörter Hardware führen!
 
-Wir beginnen die Verdrahtung mit dem 95cm Abschnitt. Mit diesem verbinden wir
-das letzte Pixel mit der späteren Stromversorgung. Dazu nehmen wir zwei 2-Draht
-Klemmen und verbinden sie jeweils mit dem :led-pixel-red:`roten` LED Pixel 
-Draht bzw. dem :led-pixel-blue:`blauen` Draht.
+Wir beginnen die Verdrahtung mit dem 95cm Abschnitt. Mit diesem wird 
+das letzte Pixel mit der späteren Stromversorgung verbunden. Dazu nehmen werden
+zwei 2-Draht Klemmen jeweils mit dem :led-pixel-red:`roten` LED Pixel 
+Draht bzw. dem :led-pixel-blue:`blauen` Draht verbunden.
 Der :led-pixel-blue:`blaue` Draht wird mit dem :power-black:`schwarzen` 
 Stromversorgungsdraht verbunden. Der :led-pixel-red:`rote` Draht des Pixels
 wird mit dem :power-red:`roten` Stromversorgungsdraht verbunden.
@@ -165,11 +165,11 @@ Das fertig installierte 95cm Stromversorgungskabel ist nachfolgend abgebildet.
    :target: ../../_images/Kits/kit_blinkenlights_build_step6_1200.jpg
 
 Danach wird das 80cm Kabel installiert. Dieses wird mit dem vorletzten 
-Versorgungspunkt verbunden. Dazu nehmen wir zwei 3-Draht Klemmen und verbinden
-die zwei :led-pixel-blue:`blauen` Drähte der Pixel mit dem
-:power-black:`schwarzen` Stromversorgungsdraht. Anschließend verbinden wir die
-zwei :led-pixel-red:`roten` Drähte mit dem :power-red:`roten` Draht der
-Stromversorgung. Das Kabel verlegen wir wie nachfolgend abgebildet.
+Versorgungspunkt verbunden. Dazu nehmen werden zwei 3-Draht Klemmen genommen
+um die zwei :led-pixel-blue:`blauen` Drähte der Pixel mit dem
+:power-black:`schwarzen` Stromversorgungsdraht zu verbinden. Anschließend
+werden zwei :led-pixel-red:`roten` Drähte mit dem :power-red:`roten` Draht der
+Stromversorgung verbunden. Das Kabel wird wie unten abgebildet verlegt.
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_3x_connected_350.jpg
    :scale: 100 %
@@ -184,8 +184,7 @@ Stromversorgung. Das Kabel verlegen wir wie nachfolgend abgebildet.
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_build_step7_1200.jpg
 
-Wir fahren mit dem 55cm Kabel fort und verbinden dieses über zwei 3-Draht 
-Klemmen.
+Danach wird das 55cm Kabel für zwei 3-Draht Klemmen verbunden.
 
 .. image:: /Images/Kits/kit_blinkenlights_build_step8_350.jpg
    :scale: 100 %
@@ -193,7 +192,7 @@ Klemmen.
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_build_step8_1200.jpg
 
-Diesen Schritt wiederholen wir mit dem 40cm Kabel.
+Diesen Schritt wiederholen sich mit dem 40cm Kabel.
    
 .. image:: /Images/Kits/kit_blinkenlights_build_step9_350.jpg
    :scale: 100 %
@@ -201,8 +200,9 @@ Diesen Schritt wiederholen wir mit dem 40cm Kabel.
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_build_step9_1200.jpg
 
-Im letzten Verdrahtungsschritt nehmen wir zwei 2-Draht Klemmen und verbinden
-den letzten Versorgungspunkt mit dem 20cm Kabel. Dies sieht wie folgt aus:
+Im letzten Verdrahtungsschritt  wird mit 2-Draht Klemmen
+der letzten Versorgungspunkt mit dem 20cm Kabel verbunden. 
+Dies sieht wie folgt aus:
 
 .. image:: /Images/Kits/kit_blinkenlights_build_step10_350.jpg
    :scale: 100 %
@@ -215,8 +215,8 @@ den letzten Versorgungspunkt mit dem 20cm Kabel. Dies sieht wie folgt aus:
 ------------------------------
 
 Nun müssen die Stromversorgungskabel verbunden werden.
-Dazu verbinden wir die 5V Stromversorgung mit zwei 5-Draht Klemmen wie
-nachfolgend abgebildet:
+Dazu wird die 5V Stromversorgung mit zwei 5-Draht Klemmen wie
+nachfolgend abgebildet verbunden:
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_power_350.jpg
    :scale: 100 %
@@ -229,8 +229,8 @@ später mit den :power-red:`roten` Drähten verbunden. Der schwarze Draht ist
 :power-black:`Masse` und wird mit den :power-black:`schwarzen` Drähten 
 verbunden.
 
-Als nächstes verbinden wir zwei weitere 5-Draht Klemmen mit diesen Klemmen.
-Dazu nutzen wir den zuvor erstellten 10cm Draht.
+Als nächstes werden zwei weitere 5-Draht Klemmen mit diesen Klemmen verbunden.
+Dazu wird der zuvor erstellten 10cm Draht verwendet.
 
 .. image:: /Images/Kits/kit_blinkenlights_wago_5x_350.jpg
    :scale: 100 %
@@ -254,9 +254,9 @@ Das nachfolgende Foto zeigt den abgeschlossenen Schritt.
 LED Strip Bricklet und Master Brick einbauen
 --------------------------------------------
 
-Wir verbinden das LED Strip Bricklet mit dem Master Brick. Anschließend
-isolieren wir das mitgelieferte LED Pixel Verbindungskabel ab und
-verbinden es mit dem LED Strip Bricklet. 7mm reichen aus.
+Verbinde das LED Strip Bricklet mit dem Master Brick. Das mitgelieferte 
+LED Pixel Verbindungskabel muss abisoliert werden und kann dann
+dem LED Strip Bricklet verbunden werden. 7mm reichen aus.
 
 .. image:: /Images/Kits/kit_blinkenlights_master_led_strip_350.jpg
    :scale: 100 %
@@ -264,8 +264,8 @@ verbinden es mit dem LED Strip Bricklet. 7mm reichen aus.
    :align: center
    :target: ../../_images/Kits/kit_blinkenlights_master_led_strip_1200.jpg
 
-Danach verbinden wir diesen Aufbau mit dem ersten Pixel und befestigen
-den diesen wie nachfolgend abgebildet:
+Danach wird dieser Aufbau mit dem ersten Pixel verbunden und wie nachfolgend
+ dargestellt befestigt:
 
 .. image:: /Images/Kits/kit_blinkenlights_build_step13_350.jpg
    :scale: 100 %

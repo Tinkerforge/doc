@@ -72,10 +72,10 @@ Features
 Beschreibung
 ------------
 
-Das *Starterkit: Blinkenlights* ist ein großes, freiprogrammierbares Display.
-Es besteht aus 200 individuell steuerbare vollfarb RGB LED Pixel, deren Farbe
+Das *Starterkit: Blinkenlights* ist ein großes, frei programmierbares Display.
+Es besteht aus 200 individuell steuerbaren vollfarb RGB LED Pixel, deren Farbe
 bis zu 100 mal pro Sekunde geändert werden kann. Es gibt vielfältige 
-Anwendungen, dazu zählen eigenen (Party-) Spielen,
+Anwendungen, dazu zählen eigene (Party-) Spiele,
 Messeauftritte, schicke Moodlights oder individuelle Anzeigen aller Art.
 
 Das Basiskit besteht aus einem :ref:`Master Brick <master_brick>`, einem 
@@ -199,7 +199,7 @@ Beispielanwendung und Beispielprojekte
    :align: center
    :target: ../../_images/Kits/blinkenlights_demo_setup.jpg
 
-Die Demoanwendungen demonstriert verschiedene Anwendungen des Kits. Es besteht
+Die Demoanwendung demonstriert verschiedene Anwendungen des Kits. Es besteht
 aus 6 Teilanwendungen die als individuelle Projekte zur Verfügung stehen (siehe 
 unten). Jedes Projekt wird durch ein eigenes Tab dargestellt. Zwei Dual Button 
 Bricklets und ein Multi Touch Bricklet können zusätzlich zur Steuerung der
@@ -210,7 +210,7 @@ akustisches Feedback zu geben und den Spielstand anzuzeigen.
 Vor Beginn müssen Host und Port konfiguriert werden. Falls das normale Kit 
 benutzt wird und dieses direkt per USB an einem PC angeschlossen ist, sind
 "localhost" und "4223" die korrekten Einstellungen. Falls das Kit mit
-:ref:`Extensions <product_overview_master_extensions>` erweitert wurden oder
+:ref:`Extensions <product_overview_master_extensions>` erweitert wurde oder
 es von einem anderen PC gesteuert werden soll muss die IP Adresse oder der 
 Hostname des Rechners oder der Extension eingestellt werden zu dem das Kit 
 verbunden wurde. Die Tabelle unter der Host/Port Konfiguration gibt einen
@@ -330,7 +330,7 @@ herunter geladen werden.
 Feuersimulation
 ^^^^^^^^^^^^^^^
 
-Wenn das Fire Tab gewählt wird erscheint eine Feuersimulation. Diese sieht
+Wenn der Fire Tab gewählt wird erscheint eine Feuersimulation. Diese sieht
 besonders gut aus, wenn das Frontplatte in einem Abstand von 
 42mm (2x9mm und 2x12mm Abstandsbolzen) zur Rückplatte angebracht wird.
 
@@ -440,8 +440,8 @@ heruntergeladen werden.
 Bilder anzeigen
 ^^^^^^^^^^^^^^^
 
-Das "Images" Demo kann genutzt werden um spezifische Bilder und ganze 
-Animationen angezeigt werden.
+Die "Images" Demo kann genutzt werden um spezifische Bilder und ganze 
+Animationen anzuzeigen.
 
 Das folgende Bild
 
@@ -539,5 +539,5 @@ Zusätzliche Erweiterungen
 
 Mods, Erweiterungen und Verbesserungen des Blinkenlight Kits veröffentlicht in
 unserem `Wiki <http://www.tinkerunity.org/wiki/>`__,
-in einem Blog oder ähnlich veröffentlichen wir gerne. Bitte kontaktiert uns und 
+in einem Blog oder ähnlich würden hier gerne vorstellen. Bitte kontaktiert uns und 
 wir verlinken es hier!
