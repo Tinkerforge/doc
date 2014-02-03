@@ -88,11 +88,14 @@ gesteuert werden.
 
 Über andere Tinkerforge Produkte kann das Kit erweitert werden.
 Bei Spiele-Anwendungen kann das 
-:ref:`Multi Touch Bricklet <multi_touch_bricklet>` nützlich sein wenn
-individuelle Spielsteuerungen realisiert werden sollen. Mit den 
-:ref:`Master Extensions <product_overview_master_extensions>` kann die
-USB Schnittstelle durch :ref:`WLAN <wifi_extension>` oder
-:ref:`Ethernet <ethernet_extension>` ausgetauscht werden, so dass Smartphone 
+:ref:`Giant Game Pad <multi_touch_bricklet_giant_game_pad>` zur
+Steuerung verwendet werden. Des weiteren kann das 
+:ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>` zur musikalischen
+Untermalung sowie das :ref:`Segment Display 4x7 <segment_display_4x7_bricklet>`
+zur Punktedarstellung verwendet werden. Pong lässt sich mit zwei
+:ref:`Dual Button Bricklets <dual_button_bricklet>` spielen.
+Mit der :ref:`Ethernet Extension <ethernet_extension>` kann die
+USB Schnittstelle durch Ethernet ausgetauscht werden, so dass Smartphone 
 oder Tablet gesteuerte Anwendungen möglich sind. Ein größeres Display kann durch
 das Hinzufügen weiterer Pixel realisiert werden.
 
@@ -103,7 +106,7 @@ andere Anwendungen. Zum Beispiel können individuelle scrollende Texte in
 diversen Farben, Regenbogen oder individuelle Bildsätze mit konfigurierbarer
 Dauer angezeigt werden. Ein virtuelles Feuer erwärmt das Herz auch in den 
 kältesten Wintermonaten. Die Spiele können über eine PC Tastatur gesteuert 
-werden aber auch per Multi Touch oder Dual Button Bricklet.
+werden aber auch per Multi Touch (Giant Game Pad) oder Dual Button Bricklet.
 
 Der Name des Kits "Blinkenlights" wird im
 `Hackerjargon <http://de.wikipedia.org/wiki/Blinkenlights_%28Jargon%29>`__ 
@@ -242,9 +245,10 @@ gespielt werden.
 
 Dieser Tetris-Klon kann über drei verschiedene Arten gesteuert werden. Als
 erstes können die Buttons im Tab genutzt werden um das Spiel zu steuern.
-Alternativ funktioniert dies auch über die PC Tastatur ("a" ist zum Beispiel 
-links). Als letzte Möglichkeit kann ein Mutli Touch Bricklet angeschlossen 
-werden (Elektrode 0 ist zum Beispiel links).
+Alternativ funktioniert dies auch über die PC Tastatur. 
+Als letzte Möglichkeit kann ein Mutli Touch Bricklet mit
+einem Giant Game Pad oder selstgebauten Elektroden angeschlossen 
+werden.
 
 .. image:: /Images/Kits/blinkenlights_demo_tetris_350.jpg
    :scale: 100 %
@@ -296,7 +300,7 @@ Die folgenden Bilder zeigen Pong bei Dunkelheit und Tageslicht.
    :align: center
 
 Das Spiel kann über Buttons, Tastatur oder Multi Touch Bricklet gesteuert
-werden. Zusätzlich ist eine Steuerung über Dual Button Bricklets möglich.
+werden. Zusätzlich ist eine Steuerung über zwei Dual Button Bricklets möglich.
 
 .. image:: /Images/Kits/blinkenlights_demo_pong_350.jpg
    :scale: 100 %

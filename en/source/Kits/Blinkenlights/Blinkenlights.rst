@@ -85,12 +85,17 @@ by any (Embedded-) PC (e.g. :ref:`Raspberry Pi <embedded_raspberry_pi>`), laptop
 server or tablet.
 
 The kit can be extended by other Tinkerforge products.
-In game applications the :ref:`Multi Touch Bricklet <multi_touch_bricklet>`
-can be useful when custom game controls are needed. With
-:ref:`Master Brick Extensions <product_overview_master_extensions>` the USB
-interface can be changed to :ref:`Wi-Fi <wifi_extension>` or
-:ref:`Ethernet <ethernet_extension>` so smart phone or tablet
-controlled applications are possible. A larger display can be created by
+In game applications the
+:ref:`Giant Game Pad <multi_touch_bricklet_giant_game_pad>` 
+can be used for controls. The 
+:ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>` can provide background
+music and the :ref:`Segment Display 4x7 <segment_display_4x7_bricklet>` can
+show a score. It is possible to play pong with two 
+:ref:`Dual Button Bricklets <dual_button_bricklet>`. 
+
+With the :ref:`Ethernet Extension <ethernet_extension>` the USB
+interface can be changed to Ethernet, to allow smart phone or tablet
+controlled applications. A larger display can be created by
 attaching more LED Pixels to the kit.
 
 A :ref:`demo application <starter_kit_blinkenlights_demo_examples>` implements
@@ -100,8 +105,8 @@ applications. For example, it can show customizable scrolling text in
 different colors on the display, it shows rainbows, customizable image sets with
 configurable durations and can warm your heart with a virtual fire.
 The games can be controlled by a PC keyboard but can be also be controlled
-by customizable touch pads when using the Multi Touch Bricklet or by Dual Button
-Bricklet.
+by customizable touch pads when using the Multi Touch Bricklet (Giant Game Pad)
+or by Dual Button Bricklet.
 
 The kit name "Blinkenlights" is used in
 `hacker jargon <http://en.wikipedia.org/wiki/Blinkenlights>`__
@@ -233,9 +238,9 @@ or without front panel:
 
 This Tetris clone can be controlled by three possible ways. Firstly, there
 are buttons in the tab which can be used to control the game. Next you can use
-your keyboard. The keys are defined in the tab (e.g. "a" is left). Finally a
-connected Multi Touch Bricklet with attached electrodes can be used (e.g.
-electrode 0 is left).
+your keyboard. The keys are defined in the tab. Finally a
+connected Multi Touch Bricklet with a Giant Game Pad or self-made electrodes 
+can be used.
 
 .. image:: /Images/Kits/blinkenlights_demo_tetris_350.jpg
    :scale: 100 %
