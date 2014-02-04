@@ -14,11 +14,7 @@ einer Bibliothek (.dll) für alle Tinkerforge Bricks
 und Bricklets (``Tinkerforge.dll``), dem Quelltext der DLL (in ``source/``) und
 allen verfügbaren C# Beispielen (in ``examples/``).
 
-Die Bibliothek wurde mit dem folgenden Befehl erzeugt::
-
- gmcs /optimize /target:library /out:Tinkerforge.dll source/Tinkerforge/*.cs
-
-Diese hat keine weiteren Abhängigkeiten.
+Die Bibliothek hat keine weiteren Abhängigkeiten.
 
 
 Test eines Beispiels

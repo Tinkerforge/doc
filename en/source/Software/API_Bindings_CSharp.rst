@@ -14,11 +14,7 @@ library (.dll) for all Tinkerforge Bricks and Bricklets
 (``Tinkerforge.dll``), the source of the DLL (in ``source/``) and all available
 C# examples (in ``examples/``).
 
-The library has been compiled with::
-
- gmcs /optimize /target:library /out:Tinkerforge.dll source/Tinkerforge/*.cs
-
-It can be used without any further extensions.
+The library can be used without any further extensions.
 
 
 Testing an Example
