@@ -46,7 +46,7 @@ Grundfunktionen
 
 .. java:function:: public void IPConnection::connect(String host, int port)
 
- Erstellt eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
+ Erstellt eine TCP/IP Verbindung zum gegebenen ``host`` und ``port``. Host und Port
  können auf einen Brick Daemon oder eine WIFI/Ethernet Extension verweisen.
 
  Bricks/Bricklets können erst gesteuert werden, wenn die Verbindung erfolgreich
@@ -154,18 +154,18 @@ wieder zu entfernen.
 
   Der Listener empfängt sieben Parameter:
 
-  * *uid*: Die UID des Bricks/Bricklets.
-  * *connectedUid*: Die UID des Bricks mit dem das Brick/Bricklet verbunden
+  * ``uid``: Die UID des Bricks/Bricklets.
+  * ``connectedUid``: Die UID des Bricks mit dem das Brick/Bricklet verbunden
     ist. Für ein Bricklet ist dies die UID des Bricks mit dem es verbunden ist.
     Für einen Brick ist es die UID des untersten Master Bricks in einem Stapel.
     Der unterste Master Brick hat die Connected-UID "0". Mit diesen Informationen
     sollte es möglich sein die komplette Netzwerktopologie zu rekonstruieren.
-  * *position*: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
+  * ``position``: Für Bricks: '0' - '8' (Position in Stapel). Für Bricklets:
     'a' - 'd' (Position an Brick).
-  * *hardwareVersion*: Major, Minor und Release Nummer der Hardwareversion.
-  * *firmwareVersion*: Major, Minor und Release Nummer der Firmwareversion.
-  * *deviceIdentifier*: Eine Zahl, welche den Brick/Bricklet repräsentiert.
-  * *enumerationType*: Art der Enumerierung.
+  * ``hardwareVersion``: Major, Minor und Release Nummer der Hardwareversion.
+  * ``firmwareVersion``: Major, Minor und Release Nummer der Firmwareversion.
+  * ``deviceIdentifier``: Eine Zahl, welche den Brick/Bricklet repräsentiert.
+  * ``enumerationType``: Art der Enumerierung.
 
   Mögliche Enumerierungsarten sind:
 
@@ -176,8 +176,8 @@ wieder zu entfernen.
     Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration
     verloren hat und neu konfiguriert werden muss.
   * IPConnection.ENUMERATION_TYPE_DISCONNECTED (2): Gerät wurde getrennt (Nur
-    bei USB-Verbindungen möglich). In diesem Fall haben nur *uid* und
-    *enumerationType* einen gültigen Wert.
+    bei USB-Verbindungen möglich). In diesem Fall haben nur ``uid`` und
+    ``enumerationType`` einen gültigen Wert.
 
   Es sollte möglich sein Plug-and-Play-Funktionalität mit diesem Listener
   zu implementieren (wie es im Brick Viewer geschieht).

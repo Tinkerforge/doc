@@ -54,7 +54,7 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  * ``--no-symbolic-output`` deaktiviert symbolische Ausgabe von Werten
 
  Alle Befehle, außer die ``--help`` oder ``--version`` Option sind angegeben,
- erstellen eine TCP/IP Verbindung zum gegebenen *host* und *port*. Host und Port
+ erstellen eine TCP/IP Verbindung zum gegebenen ``host`` und ``port``. Host und Port
  können auf einen Brick Daemon oder eine WIFI/Ethernet Extension verweisen.
 
  Das Trennzeichen für Array-Einträge wird beim Parse und Formatieren von Arrays

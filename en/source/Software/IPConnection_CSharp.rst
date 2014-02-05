@@ -34,6 +34,8 @@ The example code below is `Public Domain (CC0 1.0)
 API
 ---
 
+The namespace for the IPConnection is ``Tinkerforge.*``.
+
 Basic Functions
 ^^^^^^^^^^^^^^^
 
@@ -45,7 +47,7 @@ Basic Functions
 
 .. csharp:function:: public void IPConnection::Connect(String host, int port)
 
- Creates a TCP/IP connection to the given *host* and *port*. The host and port
+ Creates a TCP/IP connection to the given ``host`` and ``port``. The host and port
  can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
@@ -139,27 +141,27 @@ done by appending your callback handler to the corresponding event:
         System.Console.WriteLine("Value: " + value);
     }
 
-    ipcon.ExampleCallback += Callback;
+    ipcon.Example += Callback;
 
 The available events are described below.
 
 
 .. csharp:function:: public event IPConnection::EnumerateCallback(IPConnection sender, string uid, string connectedUid, char position, short[] hardwareVersion, short[] firmwareVersion, int deviceIdentifier, short enumerationType)
 
- The Event receives seven parameters:
+ The event receives seven parameters:
 
- * *uid*: The UID of the device.
- * *connectedUid*: UID where the device is connected to. For a Bricklet this
+ * ``uid``: The UID of the device.
+ * ``connectedUid``: UID where the device is connected to. For a Bricklet this
    will be a UID of the Brick where it is connected to. For a Brick it will be
    the UID of the bottom Master Brick in the stack. For the bottom Master Brick
    in a stack this will be "0". With this information it is possible to
    reconstruct the complete network topology.
- * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+ * ``position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
    'a' - 'd' (position on Brick).
- * *hardwareVersion*: Major, minor and release number for hardware version.
- * *firmwareVersion*: Major, minor and release number for firmware version.
- * *deviceIdentifier*: A number that represents the device.
- * *enumerationType*: Type of enumeration.
+ * ``hardwareVersion``: Major, minor and release number for hardware version.
+ * ``firmwareVersion``: Major, minor and release number for firmware version.
+ * ``deviceIdentifier``: A number that represents the device.
+ * ``enumerationType``: Type of enumeration.
 
  Possible enumeration types are:
 
@@ -170,8 +172,8 @@ The available events are described below.
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
  * IPConnection.ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected
-   (only possible for USB connection). In this case only *uid* and
-   *enumerationType* are valid.
+   (only possible for USB connection). In this case only ``uid`` and
+   ``enumerationType`` are valid.
 
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).

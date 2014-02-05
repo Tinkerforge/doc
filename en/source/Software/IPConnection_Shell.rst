@@ -52,7 +52,7 @@ At first some information about the general command structure:
  * ``--no-symbolic-output`` disables symbolic output of values
 
  All commands, except if the ``--help`` or ``--version`` option is present,
- create a TCP/IP connection to the given *host* and *port*. The host and port
+ create a TCP/IP connection to the given ``host`` and ``port``. The host and port
  can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  The item separator is used for parsing and formatting arrays. An array with
