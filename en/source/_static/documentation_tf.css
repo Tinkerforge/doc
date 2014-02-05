@@ -379,17 +379,19 @@ a.reference:focus span {
 
 dl.function dt,
 dl.member dt,
-dl.attribute dt {
-		font-weight:normal;
-    color: #444444;
+dl.attribute dt,
+dl.symbol dt {
+	font-weight:normal;
+	color: #444444;
 }
 
 dl.function dt big,
 dl.function dt em,
 dl.member dt em,
-dl.attribute dt em {
-    color: #000;
-		font-style: normal;
+dl.attribute dt em,
+dl.symbol dt em {
+	color: #000;
+	font-style: normal;
 }
 
 dd p {
