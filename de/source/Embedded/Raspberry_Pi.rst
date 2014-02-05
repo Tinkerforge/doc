@@ -48,7 +48,7 @@ installiert, so kann der :ref:`Brick Daemon <brickd>` einfach mit folgenden
 Befehlen installiert werden (falls ``libudev0`` nicht verfügbar ist ``libudev1``
 installieren)::
 
- sudo apt-get install libusb-1.0-0 libudev0
+ sudo apt-get install libusb-1.0-0 libudev0 pm-utils
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
@@ -73,7 +73,7 @@ heruntergeladen werden und im ``home`` Verzeichnis platziert werden.
 
 Danach müssen folgende Schritte ausgeführt werden::
 
- sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
+ sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev pm-utils
  unzip Tinkerforge-brickd-vX.Y.Z-W-***.zip (Dateiname anpassen)
  cd Tinkerforge-brickd-vX.Y.Z-W-*** (Ordnername anpassen)
  cd src/brickd
