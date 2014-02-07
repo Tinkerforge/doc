@@ -93,7 +93,7 @@ bindings = [Binding('Modbus',            'modbus',      None,          False, Tr
             Binding('C#',                'csharp',      'CSharp',      True,  True),
             Binding('Delphi',            'delphi',      'Delphi',      True,  True),
             Binding('Java',              'java',        'Java',        True,  True),
-            Binding('Mathematica',       'mathematica', 'Mathematica', True,  False),
+            Binding('Mathematica',       'mathematica', 'Mathematica', True,  True),
             Binding('Perl',              'perl',        'Perl',        True,  True),
             Binding('PHP',               'php',         'PHP',         True,  True),
             Binding('Python',            'python',      'Python',      True,  True),

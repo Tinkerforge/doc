@@ -711,3 +711,8 @@ div.partnerdisclaimer {
 .power-white {
 	background-color: #d6d7db;
 }
+
+
+div.index-link-table table.docutils {
+	width: 100%;
+}

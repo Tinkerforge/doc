@@ -178,7 +178,15 @@ Links
 The following table summarizes the hardware and API documentation for quick
 access:
 
+.. raw:: html
+
+   <div class="index-link-table">
+
 .. include:: index_links.table
+
+.. raw:: html
+
+   </div>
 
 .. toctree::
    :glob:

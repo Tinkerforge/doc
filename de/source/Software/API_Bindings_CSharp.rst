@@ -49,8 +49,9 @@ Seit Version 2.0.0 sind die C# Bindings konform zur `Common Language Specificati
 <http://de.wikipedia.org/wiki/Common_Language_Specification>`__.
 Dies erlaubt es diese Bindings mit allen `CLI/.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden.
-Für :ref:`Visual Basic .NET <api_bindings_vbnet>` stehen gesondert
-Beispielcode und Dokumentation zur Verfügung um dies zu demonstrieren.
+Für :ref:`Visual Basic .NET <api_bindings_vbnet>` und
+:ref:`Mathematica .NET/Link <api_bindings_mathematica>` stehen eigene
+Beispiele und Dokumentation zur Verfügung, um dies zu demonstrieren.
 
 
 API Dokumentation und Beispiele
