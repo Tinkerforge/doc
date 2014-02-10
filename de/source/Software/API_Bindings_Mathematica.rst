@@ -14,7 +14,7 @@ sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLS
 <http://de.wikipedia.org/wiki/Common_Language_Specification>`__-konform.
 Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
-z.B. Mathematicas .NET/Link Unterstüzung.
+z.B. Mathematicas .NET/Link Unterstützung.
 
 Die Bindings bestehen aus einer Bibliothek (.dll) für alle Tinkerforge Bricks
 und Bricklets (``Tinkerforge.dll``), dem C# Quelltext der DLL (in ``source/``)
