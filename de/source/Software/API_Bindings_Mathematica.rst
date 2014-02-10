@@ -6,7 +6,7 @@
 Mathematica - API Bindings
 ==========================
 
-**Voraussetzungen**: Mathematica 5.0 oder neuer auf Windows, Linux und Mac OS X mit .NET/Link Unterstüzung
+**Voraussetzungen**: Mathematica 5.0 oder neuer auf Windows, Linux und Mac OS X mit .NET/Link Unterstützung
 
 Die Mathematica Bindings (:ref:`Download <downloads_bindings_examples>`)
 und die :ref:`C# Bindings <api_bindings_csharp>`
