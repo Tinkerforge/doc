@@ -146,7 +146,7 @@ Ressourcen
 * Beispiel Quelltext für :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__, `Delphi <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/delphi>`__)
 * Beispiel Quelltext für :ref:`Scrolling Text <starter_kit_blinkenlights_scrolling_text>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__, `PHP <https://github.com/Tinkerforge/blinkenlights/tree/master/text/php>`__)
 * Beispiel Quelltext für :ref:`Display Images <starter_kit_blinkenlights_images>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/images/python>`__, `Java <https://github.com/Tinkerforge/blinkenlights/tree/master/images/java>`__)
-* :ref:`Demo-Anwendung <starter_kit_blinkenlights_demo_examples>` (Download: Windows, Linux, Mac OS X, `Quelltext <https://github.com/Tinkerforge/blinkenlights/tree/master/demo>`__)
+* :ref:`Demo-Anwendung <starter_kit_blinkenlights_demo_examples>` (Download: `Windows <http://download.tinkerforge.com/kits/blinkenlights/windows/starter_kit_blinkenlights_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/blinkenlights/linux/starter-kit-blinkenlights-demo-linux_latest.deb>`__, Mac OS X, `Quelltext <https://github.com/Tinkerforge/blinkenlights/tree/master/demo>`__)
 
 
 Firmware aktualisieren und erste Tests
