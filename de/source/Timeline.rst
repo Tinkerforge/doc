@@ -56,3 +56,4 @@ Historie
    "",     "51", "`Neues Dual Relay Bricklet <http://www.tinkerforge.com/de/blog/2013/12/16/neues-dual-relay-bricklet>`__"
    "2014", "03", "`Perl Bindings <http://www.tinkerforge.com/de/blog/2014/1/14/perl-bindings-fertig>`__"
    "",     "06", "`Mathematica Bindings <http://www.tinkerforge.com/de/blog/2014/2/7/mathematica-bindings-fertig>`__"
+   "",     "07", "`Starter Kit: Blinkenlights <http://www.tinkerforge.com/de/blog/2014/2/10/neues-starterkit:-blinkenlights>`__"
