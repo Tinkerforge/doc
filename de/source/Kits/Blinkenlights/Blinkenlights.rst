@@ -8,11 +8,6 @@
 Starterkit: Blinkenlights
 ==========================
 
-.. note::
- This Starter Kit is currently in the prototype state and the software/hardware
- as well as the documentation is incomplete and may not represent the final
- version.
-
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
@@ -114,6 +109,13 @@ benutzt um blinkende Lampen von Netzwerk-Equipment zu beschreiben. Er ist auch
 über das
 `Blinkenlights Projekt <http://de.wikipedia.org/wiki/Projekt_Blinkenlights>`__
 bekannt.
+
+Das nachfolgende Video zeigt die Beispiele und den Zusammenbau im Zeitraffer:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/mmNRa-lLaXM" frameborder="0" allowfullscreen></iframe></center>
+
 
 Technische Spezifikation
 ------------------------

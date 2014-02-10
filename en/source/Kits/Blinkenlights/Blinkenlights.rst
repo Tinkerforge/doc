@@ -8,11 +8,6 @@
 Starter Kit: Blinkenlights
 ==========================
 
-.. note::
- This Starter Kit is currently in the prototype state and the software/hardware
- as well as the documentation is incomplete and may not represent the final
- version.
-
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
@@ -112,6 +107,12 @@ The kit name "Blinkenlights" is used in
 `hacker jargon <http://en.wikipedia.org/wiki/Blinkenlights>`__
 to describe blinking lights of network equipment. It is also known from the
 `Project Blinkenlights <http://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
+
+The following video shows the demo application and the construction in time lapse:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/mmNRa-lLaXM" frameborder="0" allowfullscreen></iframe></center>
 
 Technical Specifications
 ------------------------
