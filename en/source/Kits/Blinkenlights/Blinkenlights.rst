@@ -61,7 +61,7 @@ Starter Kit: Blinkenlights
 Features
 --------
 
-* Giant 40x80cm 200 Pixel RGB Display with update rate up to 100Hz
+* Giant 90x50cm 200 Pixel RGB Display with update rate up to 100Hz
 * Develop Party Games, Exhibition Presentations and Customer Specific Displays
   of any kind
 * Freely programmable, configurable and expandable

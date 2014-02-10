@@ -61,7 +61,7 @@ Starterkit: Blinkenlights
 Features
 --------
 
-* Riesiges 40x80cm 200 Pixel RGB Display mit Aktualisierungsraten bis zu 100Hz
+* Riesiges 90x50cm 200 Pixel RGB Display mit Aktualisierungsraten bis zu 100Hz
 * Entwickle Party Spiele, Messeauftritte und kundenspezifische Anzeigen
   jeglicher Art
 * Frei programmierbar, konfigurierbar und erweiterbar
