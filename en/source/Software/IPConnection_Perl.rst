@@ -158,6 +158,13 @@ parameter the callback function:
 
     $ipcon->register_callback(IPConnection->CALLBACK_EXAMPLE, 'my_callback')
 
+The callback function will be called from an internal thread of the
+IP Connection. In contrast to many other programming languages, variables are
+not automatically shared between threads in Perl. If you want to share a global
+variable between a callback function and the rest for your program it has to be
+marked as ``:shared``. See the documentation of the `threads::shared
+<http://perldoc.perl.org/threads/shared.html>`__ Perl module for more details.
+
 The available constants with inherent number and type of parameters are
 described below.
 

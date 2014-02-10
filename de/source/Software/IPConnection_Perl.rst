@@ -161,6 +161,15 @@ ist der Callback ID und der zweite die Callback Funktion:
 
     $ipcon->register_callback(IPConnection->CALLBACK_EXAMPLE, 'my_callback')
 
+Die Callback Funktion wird von einem internen Thread der IP Connection
+aufgerufen werden. Im Gegensatz zu vielen anderen Programmiersprachen werden
+Variablen nicht automatisch zwischen Threads geshared. Wenn eine Variable
+gleichzeitig in einer Callback Funktion und dem Rest des Programms genutzt
+werden soll, dann muss diese als ``:shared`` markiert werden. Siehe dazu auch
+die Dokumentation des `threads::shared
+<http://perldoc.perl.org/threads/shared.html>`__ Perl Moduls für weitere
+Details.
+
 Die verfügbaren Konstanten mit der dazugehörigen Parameteranzahl und -typen
 werden weiter unten beschrieben.
 
