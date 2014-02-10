@@ -6,7 +6,7 @@
 Mathematica - API Bindings
 ==========================
 
-**Voraussetzungen**: Mathematica 5.0 oder neuer mit .NET/Link Unterstüzung
+**Voraussetzungen**: Mathematica 5.0 oder neuer auf Windows, Linux und Mac OS X mit .NET/Link Unterstüzung
 
 Die Mathematica Bindings (:ref:`Download <downloads_bindings_examples>`)
 und die :ref:`C# Bindings <api_bindings_csharp>`
@@ -15,6 +15,10 @@ sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLS
 Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. Mathematicas .NET/Link Unterstützung.
+
+Die .NET/Link Unterstützung in Mathematica benötigt das `.NET Framework
+<http://www.microsoft.com/net>`__ auf Windows und das `Mono Framework
+<http://www.mono-project.com/>`__ unter Linux und Mac OS X.
 
 Die Bindings bestehen aus einer Bibliothek (.dll) für alle Tinkerforge Bricks
 und Bricklets (``Tinkerforge.dll``), dem C# Quelltext der DLL (in ``source/``)
