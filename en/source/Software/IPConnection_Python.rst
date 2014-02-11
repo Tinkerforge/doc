@@ -34,6 +34,19 @@ The example code below is `Public Domain (CC0 1.0)
 API
 ---
 
+Generally, every method of the Python bindings can throw an
+``tinkerforge.ip_connection.Error`` exception that has a ``value`` and a
+``description`` property. ``value`` can have different values:
+
+* Error.TIMEOUT = -1
+* Error.ALREADY_CONNECTED = -7
+* Error.NOT_CONNECTED = -8
+* Error.INVALID_PARAMETER = -9
+* Error.NOT_SUPPORTED = -10
+* Error.UNKNOWN_ERROR_CODE = -11
+
+All methods listed below are thread-safe.
+
 Basic Functions
 ^^^^^^^^^^^^^^^
 

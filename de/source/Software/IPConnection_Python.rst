@@ -34,6 +34,19 @@ Der folgende Beispielcode ist `Public Domain (CC0 1.0)
 API
 ---
 
+Prinzipiell kann jede Funktion der Python Bindings
+``tinkerforge.ip_connection.Error`` Exception werfen, welche ein ``value`` und
+eine ``description`` Property hat. ``value`` kann verschiende Werte haben:
+
+* Error.TIMEOUT = -1
+* Error.ALREADY_CONNECTED = -7
+* Error.NOT_CONNECTED = -8
+* Error.INVALID_PARAMETER = -9
+* Error.NOT_SUPPORTED = -10
+* Error.UNKNOWN_ERROR_CODE = -11
+
+Alle folgend aufgelisteten Funktionen sind Thread-sicher.
+
 Grundfunktionen
 ^^^^^^^^^^^^^^^
 
