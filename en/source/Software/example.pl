@@ -14,7 +14,7 @@ sub cb_enumerate()
 	print "\nUID:               ".$uid;
 	print "\nEnumeration Type:  ".$enumeration_type;
 
-	if ($enumeration_type == IPConnection->ENUMERATION_TYPE_DISCONNECTED)
+	if ($enumeration_type == Tinkerforge::IPConnection->ENUMERATION_TYPE_DISCONNECTED)
 	{
 		print "\n";
 		return 1;
@@ -29,12 +29,12 @@ sub cb_enumerate()
 }
 
 # Create connection and connect to brickd
-my $ipcon = IPConnection->new();
+my $ipcon = Tinkerforge::IPConnection->new();
 
 $ipcon->connect(&HOST, &PORT);
 
 # Register Enumerate Callback
-$ipcon->register_callback(IPConnection->CALLBACK_ENUMERATE, 'cb_enumerate');
+$ipcon->register_callback($ipcon->CALLBACK_ENUMERATE, 'cb_enumerate');
 
 # Trigger Enumerate
 $ipcon->enumerate();
