@@ -716,3 +716,8 @@ div.partnerdisclaimer {
 div.index-link-table table.docutils {
 	width: 100%;
 }
+
+div.horizontal-image-scroll {
+	overflow: auto;
+	overflow-y: hidden;
+}
