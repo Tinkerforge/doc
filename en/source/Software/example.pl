@@ -39,5 +39,6 @@ $ipcon->register_callback(IPConnection->CALLBACK_ENUMERATE, 'cb_enumerate');
 # Trigger Enumerate
 $ipcon->enumerate();
 
+print "\nPress any key to exit...\n";
 <STDIN>;
 $ipcon->disconnect();
