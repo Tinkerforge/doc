@@ -129,8 +129,8 @@ Beispiel Implementierungen und Anwendungen für die Benutzung mit
 `Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ und
 weitere werden nachfolgend zur Verfügung gestellt.
 
-**Seit dem 22ten Januar 2014 ist die Vorderseite des Gehäuses aus
-pulverbeschichteten Aluminium anstatt PMMA:**
+**Seit dem 22. Januar 2014 wird die Vorderseite des Gehäuses aus
+pulverbeschichteten Aluminium anstatt PMMA gefertige:**
 
 .. image:: /Images/Kits/server_room_monitoring_alu_surface_350.jpg
    :scale: 100 %

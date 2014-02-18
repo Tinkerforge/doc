@@ -14,7 +14,8 @@ sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLS
 <http://de.wikipedia.org/wiki/Common_Language_Specification>`__-konform.
 Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
-z.B. Mathematicas .NET/Link Unterstützung.
+z.B. Mathematicas `.NET/Link Unterstützung
+<http://reference.wolfram.com/mathematica/NETLink/tutorial/CallingNETFromMathematica.html>`__.
 
 Die .NET/Link Unterstützung in Mathematica benötigt das `.NET Framework
 <http://www.microsoft.com/net>`__ auf Windows und das `Mono Framework
@@ -29,7 +30,7 @@ Test eines Beispiels
 --------------------
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel ausführen.
-Dazu das `examples/Brick/Stepper/ExampleConfiguration.nb`` Notebook in
+Dazu das ``examples/Brick/Stepper/ExampleConfiguration.nb`` Notebook in
 Mathematica öffnen, die UID des Stepper Bricks eintragen und alle Cells von
 oben nach unten auswerten.
 

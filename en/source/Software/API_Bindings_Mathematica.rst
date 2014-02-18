@@ -14,7 +14,8 @@ Since version 2.0.0 the C# bindings are
 `CLS <http://en.wikipedia.org/wiki/Common_Language_Specification>`__
 compliant. This allows to use them with all `CLI/.NET compatible languages
 <http://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
-Mathematica's .NET/Link support.
+Mathematica's `.NET/Link support
+<http://reference.wolfram.com/mathematica/NETLink/tutorial/CallingNETFromMathematica.html>`__.
 
 The .NET/Link support in Mathematica requires the `.NET Framework
 <http://www.microsoft.com/net>`__ on Windows and the `Mono Framework
@@ -22,8 +23,7 @@ The .NET/Link support in Mathematica requires the `.NET Framework
 
 The bindings consist of a library (.dll) for all Tinkerforge
 Bricks and Bricklets (``Tinkerforge.dll``), the C# source of the DLL
-(in ``source/``) and all available Visual Basic .NET examples (in
-``examples/``).
+(in ``source/``) and all available Mathematica examples (in ``examples/``).
 
 
 Testing an Example
