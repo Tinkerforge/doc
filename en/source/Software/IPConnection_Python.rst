@@ -34,6 +34,19 @@ The example code below is `Public Domain (CC0 1.0)
 API
 ---
 
+Generally, every method of the Python bindings can throw an
+``tinkerforge.ip_connection.Error`` exception that has a ``value`` and a
+``description`` property. ``value`` can have different values:
+
+* Error.TIMEOUT = -1
+* Error.ALREADY_CONNECTED = -7
+* Error.NOT_CONNECTED = -8
+* Error.INVALID_PARAMETER = -9
+* Error.NOT_SUPPORTED = -10
+* Error.UNKNOWN_ERROR_CODE = -11
+
+All methods listed below are thread-safe.
+
 Basic Functions
 ^^^^^^^^^^^^^^^
 
@@ -49,7 +62,7 @@ Basic Functions
  :param port: int
  :rtype: None
 
- Creates a TCP/IP connection to the given *host* and *port*. The host and port
+ Creates a TCP/IP connection to the given ``host`` and ``port``. The host and port
  can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
@@ -159,7 +172,7 @@ Callback Configuration Functions
  :param callback: callable
  :rtype: None
 
- Registers a callback with ID *id* to the function *callback*.
+ Registers a callback with ID ``id`` to the function ``callback``.
 
  The available ids with corresponding callback function signatures
  are described below.
@@ -196,30 +209,30 @@ described below.
 
  The callback has seven parameters:
 
- * *uid*: The UID of the device.
- * *connected_uid*: UID where the device is connected to. For a Bricklet this
+ * ``uid``: The UID of the device.
+ * ``connected_uid``: UID where the device is connected to. For a Bricklet this
    will be a UID of the Brick where it is connected to. For a Brick it will be
    the UID of the bottom Master Brick in the stack. For the bottom Master Brick
    in a stack this will be "0". With this information it is possible to
    reconstruct the complete network topology.
- * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+ * ``position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
    'a' - 'd' (position on Brick).
- * *hardware_version*: Major, minor and release number for hardware version.
- * *firmware_version*: Major, minor and release number for firmware version.
- * *device_identifier*: A number that represents the device.
- * *enumeration_type*: Type of enumeration.
+ * ``hardware_version``: Major, minor and release number for hardware version.
+ * ``firmware_version``: Major, minor and release number for firmware version.
+ * ``device_identifier``: A number that represents the device.
+ * ``enumeration_type``: Type of enumeration.
 
  Possible enumeration types are:
 
- * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
-   triggered by user).
+ * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Device is available
+   (enumeration triggered by user).
  * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
  * IPConnection.ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
-   possible for USB connection). In this case only *uid* and *enumeration_type*
-   are valid.
+   possible for USB connection). In this case only ``uid`` and
+   ``enumeration_type`` are valid.
 
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).

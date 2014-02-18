@@ -8,11 +8,6 @@
 Starter Kit: Blinkenlights
 ==========================
 
-.. note::
- This Starter Kit is currently in the prototype state and the software/hardware
- as well as the documentation is incomplete and may not represent the final
- version.
-
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
@@ -61,7 +56,7 @@ Starter Kit: Blinkenlights
 Features
 --------
 
-* Giant 40x80cm 200 Pixel RGB Display with update rate up to 100Hz
+* Giant 90x50cm 200 Pixel RGB Display with update rate up to 100Hz
 * Develop Party Games, Exhibition Presentations and Customer Specific Displays
   of any kind
 * Freely programmable, configurable and expandable
@@ -85,12 +80,17 @@ by any (Embedded-) PC (e.g. :ref:`Raspberry Pi <embedded_raspberry_pi>`), laptop
 server or tablet.
 
 The kit can be extended by other Tinkerforge products.
-In game applications the :ref:`Multi Touch Bricklet <multi_touch_bricklet>`
-can be useful when custom game controls are needed. With
-:ref:`Master Brick Extensions <product_overview_master_extensions>` the USB
-interface can be changed to :ref:`Wi-Fi <wifi_extension>` or
-:ref:`Ethernet <ethernet_extension>` so smart phone or tablet
-controlled applications are possible. A larger display can be created by
+In game applications the
+:ref:`Giant Game Pad <multi_touch_bricklet_giant_game_pad>` 
+can be used for controls. The 
+:ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>` can provide background
+music and the :ref:`Segment Display 4x7 <segment_display_4x7_bricklet>` can
+show a score. It is possible to play pong with two 
+:ref:`Dual Button Bricklets <dual_button_bricklet>`. 
+
+With the :ref:`Ethernet Extension <ethernet_extension>` the USB
+interface can be changed to Ethernet, to allow smart phone or tablet
+controlled applications. A larger display can be created by
 attaching more LED Pixels to the kit.
 
 A :ref:`demo application <starter_kit_blinkenlights_demo_examples>` implements
@@ -100,13 +100,19 @@ applications. For example, it can show customizable scrolling text in
 different colors on the display, it shows rainbows, customizable image sets with
 configurable durations and can warm your heart with a virtual fire.
 The games can be controlled by a PC keyboard but can be also be controlled
-by customizable touch pads when using the Multi Touch Bricklet or by Dual Button
-Bricklet.
+by customizable touch pads when using the Multi Touch Bricklet (Giant Game Pad)
+or by Dual Button Bricklet.
 
 The kit name "Blinkenlights" is used in
 `hacker jargon <http://en.wikipedia.org/wiki/Blinkenlights>`__
 to describe blinking lights of network equipment. It is also known from the
 `Project Blinkenlights <http://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
+
+The following video shows the demo application and the construction in time lapse:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/mmNRa-lLaXM" frameborder="0" allowfullscreen></iframe></center>
 
 Technical Specifications
 ------------------------
@@ -137,7 +143,7 @@ Resources
 * Example Source Code for :ref:`Fire <starter_kit_blinkenlights_fire>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/python>`__, `Delphi <https://github.com/Tinkerforge/blinkenlights/tree/master/fire/delphi>`__)
 * Example Source Code for :ref:`Scrolling Text <starter_kit_blinkenlights_scrolling_text>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/text/python>`__, `PHP <https://github.com/Tinkerforge/blinkenlights/tree/master/text/php>`__)
 * Example Source Code for :ref:`Display Images <starter_kit_blinkenlights_images>` (Download: `Python <https://github.com/Tinkerforge/blinkenlights/tree/master/images/python>`__, `Java <https://github.com/Tinkerforge/blinkenlights/tree/master/images/java>`__)
-* :ref:`Demo Application <starter_kit_blinkenlights_demo_examples>` (Download: Windows, Linux, Mac OS X, `Source Code <https://github.com/Tinkerforge/blinkenlights/tree/master/demo>`__)
+* :ref:`Demo Application <starter_kit_blinkenlights_demo_examples>` (Download: `Windows <http://download.tinkerforge.com/kits/blinkenlights/windows/starter_kit_blinkenlights_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/blinkenlights/linux/starter-kit-blinkenlights-demo-linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/blinkenlights/macos/starter_kit_blinkenlights_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/blinkenlights/tree/master/demo>`__)
 
 
 Firmware updating and first tests
@@ -233,9 +239,9 @@ or without front panel:
 
 This Tetris clone can be controlled by three possible ways. Firstly, there
 are buttons in the tab which can be used to control the game. Next you can use
-your keyboard. The keys are defined in the tab (e.g. "a" is left). Finally a
-connected Multi Touch Bricklet with attached electrodes can be used (e.g.
-electrode 0 is left).
+your keyboard. The keys are defined in the tab. Finally a
+connected Multi Touch Bricklet with a Giant Game Pad or self-made electrodes 
+can be used.
 
 .. image:: /Images/Kits/blinkenlights_demo_tetris_350.jpg
    :scale: 100 %

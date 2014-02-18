@@ -45,7 +45,7 @@ environments have very similar tools that practically work the same way.
 To install Brick Daemon from the console use the following::
 
  # Use libudev1 instead of libudev0 in Ubuntu 13.04
- sudo apt-get install libusb-1.0-0 libudev0
+ sudo apt-get install libusb-1.0-0 libudev0 pm-utils
 
  # On ARM (e.g. Raspberry Pi)
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
@@ -71,15 +71,16 @@ To install Brick Daemon from source, download the source from `here
 
 * libusb-1.0
 * libudev (optional for USB hotplug)
+* pm-utils (optional for suspend/resume handling)
 
 On Debian based distributions you can install the dependencies with apt-get::
 
- sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev
+ sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev pm-utils
 
 On Fedora you can install the dependencies with yum::
 
  sudo yum groupinstall "Development Tools"
- sudo yum install libusb1-devel libudev-devel
+ sudo yum install libusb1-devel libudev-devel pm-utils-devel
 
 On other distribution you have to search for and install the equivalent packages.
 

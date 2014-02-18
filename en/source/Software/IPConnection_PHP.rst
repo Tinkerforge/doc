@@ -45,7 +45,7 @@ Basic Functions
 
 .. php:function:: void IPConnection::connect(string $host, int $port)
 
- Creates a TCP/IP connection to the given *$host* and *$port*. The host and
+ Creates a TCP/IP connection to the given ``$host`` and ``$port``. The host and
  port can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
 
  Devices can only be controlled when the connection was established
@@ -106,7 +106,7 @@ Callback Configuration Functions
 
 .. php:function:: void IPConnection::registerCallback(int $id, callable $callback, mixed $userData = NULL)
 
- Registers a callback with ID *$id* to the function *$callback*.
+ Registers a callback with ID ``$id`` to the function ``$callback``.
 
  The available IDs with corresponding callback function signatures
  are described below.
@@ -141,18 +141,18 @@ described below.
 
  The callback receives seven parameters:
 
- * *$uid*: The UID of the device.
- * *$connectedUid*: UID where the device is connected to. For a Bricklet this
+ * ``$uid``: The UID of the device.
+ * ``$connectedUid``: UID where the device is connected to. For a Bricklet this
    will be a UID of the Brick where it is connected to. For a Brick it will be
    the UID of the bottom Master Brick in the stack. For the bottom Master Brick
    in a stack this will be "0". With this information it is possible to
    reconstruct the complete network topology.
- * *$position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+ * ``$position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
    'a' - 'd' (position on Brick).
- * *$hardwareVersion*: Major, minor and release number for hardware version.
- * *$firmwareVersion*: Major, minor and release number for firmware version.
- * *$deviceIdentifier*: A number that represents the device.
- * *$enumerationType*: Type of enumeration.
+ * ``$hardwareVersion``: Major, minor and release number for hardware version.
+ * ``$firmwareVersion``: Major, minor and release number for firmware version.
+ * ``$deviceIdentifier``: A number that represents the device.
+ * ``$enumerationType``: Type of enumeration.
 
  Possible enumeration types are:
 
@@ -162,9 +162,9 @@ described below.
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous
    configuration and needs to be reconfigured.
- * IPConnection::ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
-   possible for USB connection). In this case only *$uid* and *$enumerationType*
-   are valid.
+ * IPConnection::ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected
+   (only possible for USB connection). In this case only ``$uid`` and
+   ``$enumerationType`` are valid.
 
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).

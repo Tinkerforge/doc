@@ -66,6 +66,7 @@ Für einen einfachen Einstieg bieten wir Kits in verschiedenen Themenbereichen a
 * :ref:`starter_kit_weather_station`
 * :ref:`starter_kit_hardware_hacking`
 * :ref:`starter_kit_server_room_monitoring`
+* :ref:`starter_kit_blinkenlights`
 
 .. toctree::
    :hidden:
@@ -178,7 +179,15 @@ Links
 Die folgenden Tabelle fassen die Hardware und API Dokumentation für schnellen
 Zugriff zusammen.
 
+.. raw:: html
+
+   <div class="index-link-table">
+
 .. include:: index_links.table
+
+.. raw:: html
+
+   </div>
 
 .. toctree::
    :glob:

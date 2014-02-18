@@ -46,7 +46,7 @@ If you have installed an Debian **with** hardware floating point unit support
 (Raspbian) you can simply install the :ref:`Brick Daemon <brickd>` package by
 executing (if ``libudev0`` isn't available install ``libudev1`` instead)::
 
- sudo apt-get install libusb-1.0-0 libudev0
+ sudo apt-get install libusb-1.0-0 libudev0 pm-utils
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
  sudo dpkg -i brickd_linux_latest_armhf.deb
 
@@ -71,7 +71,7 @@ and put it under the ``home`` directory.
 
 After this you have to execute the following steps::
 
- sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev
+ sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev pm-utils
  unzip Tinkerforge-brickd-vX.Y.Z-W-***.zip (modify filename)
  cd Tinkerforge-brickd-vX.Y.Z-W-*** (modify folder name)
  cd src/brickd

@@ -49,7 +49,7 @@ Der Brick Daemon kann von der Console mit folgendem Befehl installiert
 werden::
 
  # Use libudev1 instead of libudev0 in Ubuntu 13.04
- sudo apt-get install libusb-1.0-0 libudev0
+ sudo apt-get install libusb-1.0-0 libudev0 pm-utils
 
  # On ARM (e.g. Raspberry Pi)
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_armhf.deb
@@ -76,16 +76,17 @@ heruntergeladen werden. Es gibt folgende Abhängigkeiten:
 
 * libusb-1.0
 * libudev (optional für USB Hotplug)
+* pm-utils (optional für Suspend/Resume Behandlung)
 
 Auf Debian basierten Distributionen können die Abhängigkeiten mit apt-get
 installiert werden::
 
- sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev
+ sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev pm-utils
 
 Auf Fedora können die Abhängigkeiten mit yum installiert werden::
 
  sudo yum groupinstall "Development Tools"
- sudo yum install libusb1-devel libudev-devel
+ sudo yum install libusb1-devel libudev-devel pm-utils-devel
 
 Auf anderen Distributionen muss nach den äquivalenten Paketen gesucht werden.
 
