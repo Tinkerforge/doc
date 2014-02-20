@@ -49,6 +49,7 @@ see the following list:
    "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Yes"
    "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "No"
    "Sourcery CodeBench Lite 2013.05-23, GCC 4.7.3", "Yes"
+   "Sourcery CodeBench Lite 2013.11-24, GCC 4.8.1", "Yes"
 
 Install the compiler and ensure that the ``bin`` folder of the CodeSourcery
 installation is added to the ``PATH`` environment variable. On Windows the

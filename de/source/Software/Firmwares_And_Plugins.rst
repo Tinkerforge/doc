@@ -50,6 +50,7 @@ ist, dass sie richtig funktionieren:
    "Sourcery CodeBench Lite 2012.03-56, GCC 4.6.3", "Ja"
    "Sourcery CodeBench Lite 2012.09-63, GCC 4.7.2", "Nein"
    "Sourcery CodeBench Lite 2013.05-23, GCC 4.7.3", "Ja"
+   "Sourcery CodeBench Lite 2013.11-24, GCC 4.8.1", "Ja"
 
 Nach der Installation muss der ``bin`` Order der CodeSourcery Installation zur
 PATH Umgebungsvariable hinzugefügt werden. Unter Windows bietet der Installer
