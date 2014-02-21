@@ -55,7 +55,7 @@ Analog In Bricklet
 Features
 --------
 
-* Measures voltages up to 45V
+* Measures voltages up to 45V (DC)
 * Output in 1mV steps (12bit resolution)
 * High resolution up to 1.48mV
 
@@ -86,7 +86,7 @@ Sensor                            Automatically switched voltage divider
 Current Consumption               1mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Voltage                           0V - 45V in 1mV steps, 12bit resolution
+Voltage                           0V - 45V (DC) in 1mV steps, 12bit resolution
 Measurement Range                 Automatically switched
 
                                   * 0V - 6.05V, ~1.48mV resolution
@@ -135,7 +135,7 @@ Test your Analog In Bricklet
 |test_intro|
 
 |test_connect|.
-Additionally connect a voltage source to the Bricklet.
+Additionally connect a DC voltage source to the Bricklet.
 For testing purposes the positive pole of a battery can be connected to the VIN
 terminal and the negative pole to the GND terminal.
 

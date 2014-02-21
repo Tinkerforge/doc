@@ -49,7 +49,7 @@ Voltage Bricklet
 Features
 --------
 
-* Measures voltages up to 50V
+* Measures voltages up to 50V (DC)
 * Output in 1mV steps (12bit resolution)
 
 
@@ -58,7 +58,7 @@ Description
 
 The Voltage :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend the features of :ref:`Bricks <product_overview_bricks>` by the
-capability to measure voltages. The measurement range is 0-50V.
+capability to measure voltages. The measurement range is 0-50V (DC).
 The voltage can be read out directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`__ without conversion.
 With configurable events it is possible to react on changing
@@ -75,7 +75,7 @@ Sensor                            Fixed voltage divider with factor 0.0625
 Current Consumption               1mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Voltage                           0V - 50V in 1mV steps, 12bit resolution
+Voltage                           0V - 50V (DC) in 1mV steps, 12bit resolution
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 25 x 14mm (0.98 x 0.98 x 0.55")

@@ -49,7 +49,7 @@ Voltage Bricklet
 Features
 --------
 
-* Misst Spannungen bis zu 50V
+* Misst Spannungen bis zu 50V (DC)
 * Ausgabe in 1mV Schritten (12Bit Auflösung)
 
 
@@ -59,7 +59,7 @@ Beschreibung
 Mit dem Voltage :ref:`Bricklet <product_overview_bricklets>` können
 :ref:`Bricks <product_overview_bricks>` Spannungen messen.
 Über eine Schraubklemme wird das Bricklet mit der zu messenden Spannung
-verbunden. Der Messbereich beträgt 0-50V. Die gemessene Spannung kann direkt
+verbunden. Der Messbereich beträgt 0-50V (DC). Die gemessene Spannung kann direkt
 in `Volt <http://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.
 Zusätzlich können Events definiert werden die ausgelöst werden wenn eine
 bestimmte Spannung über- oder unterschritten wird.
@@ -75,7 +75,7 @@ Sensor                            Spannungsteiler mit Faktor 0,0625
 Stromverbrauch                    1mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Spannung                          0V - 50V in 1mV Schritten, 12Bit Auflösung
+Spannung                          0V - 50V (DC) in 1mV Schritten, 12Bit Auflösung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 25 x 14mm (0,98 x 0,98 x 0,55")

@@ -55,7 +55,7 @@ Analog In Bricklet
 Features
 --------
 
-* Misst elektrische Spannungen bis zu 45V
+* Misst elektrische Spannungen bis zu 45V (DC)
 * Ausgabe in 1mV Schritten (12Bit Auflösung)
 * Hohe Auflösung bis zu 1,48mV
 
@@ -66,7 +66,7 @@ Beschreibung
 Das Analog In :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
 um :ref:`Bricks <product_overview_bricks>` die Möglichkeit zu geben elektrische
 Spannungen zu messen.
-Der Messbereich beträgt 0V bis 45V mit hoher Auflösung für kleine Spannungen.
+Der Messbereich beträgt 0V bis 45V (DC) mit hoher Auflösung für kleine Spannungen.
 Die gemessene Spannung kann direkt in `Volt
 <http://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.
 Mit konfigurierbaren Events ist es möglich auf Spannungsänderungen zu
@@ -83,7 +83,7 @@ Sensor                            Automatisch geschalteter Spannungsteiler
 Stromverbrauch                    1mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Elektrische Spannung              0V - 45V in 1mV Schritten, 12Bit Auflösung
+Elektrische Spannung              0V - 45V (DC) in 1mV Schritten, 12Bit Auflösung
 Messbereich                       Automatisch geschaltet
 
                                   * 0V - 6,05V, ~1,48mV Auflösung
@@ -132,7 +132,7 @@ Erster Test
 |test_intro|
 
 |test_connect|.
-Als nächstes muss noch eine Spannungsquelle mit dem Bricklet verbunden werden.
+Als nächstes muss noch eine DC Spannungsquelle mit dem Bricklet verbunden werden.
 Zum Beispiel kann der Pluspol einer Batterie mit der VIN Anschlussklemme und
 der Minuspol mit der GND Anschlussklemme verbunden werden.
 

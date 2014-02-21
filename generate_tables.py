@@ -159,8 +159,8 @@ bricklet_descriptions = {
     'de': 'Misst Umgebungslicht bis zu 900Lux'
     },
 'analog_in': {
-    'en': 'Measures voltages up to 45V',
-    'de': 'Misst elektrische Spannungen bis zu 45V'
+    'en': 'Measures voltages up to 45V (DC)',
+    'de': 'Misst elektrische Spannungen bis zu 45V (DC)'
     },
 'analog_out': {
     'en': 'Generates configurable voltages up to 5V',
@@ -315,8 +315,8 @@ bricklet_descriptions = {
     'de': 'Erkennt Neigung des Bricklets (Neigungsschalter offen/geschlossen)'
     },
 'voltage': {
-    'en': 'Measures voltages up to 50V',
-    'de': 'Misst Spannungen bis zu 50V'
+    'en': 'Measures voltages up to 50V (DC)',
+    'de': 'Misst Spannungen bis zu 50V (DC)'
     },
 'voltage_current': {
     'en': 'Measure power, voltage and current up to 720W/36V/20A',
