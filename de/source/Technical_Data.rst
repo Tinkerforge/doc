@@ -161,8 +161,8 @@ Bricklet Stecker
    "05", "SDA",			"I2C Serial Data"
    "06", "ADDR",		"Adressleitung (logisch 0 oder 1) um Bricklets für I2C Kommunikation auszuwählen"
    "07", "IO_1/AD",		"I/O 1 mit Analog-Digital-Wandler Fähigkeit"
-   "08", "IO_2/DA",		"I/O 2 mit Digital-Analog-Wandler Fähigkeit"
-   "09", "IO_3/PWM",	"I/O 3 mit Pulsweitenmodulationsfähigkeit"
+   "08", "IO_2",		"I/O 2"
+   "09", "IO_3",		"I/O 3"
    "10", "IO_4",		"I/O 4"
 
 Falls nicht anders angegeben, sind alle Signale 3,3V basiert.

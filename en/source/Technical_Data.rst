@@ -159,8 +159,8 @@ Bricklet Connector
    "05", "SDA",			"I2C Serial Data"
    "06", "ADDR",		"Address line (low/high) used to select Bricklets for I2C communication"
    "07", "IO_1/AD",		"I/O 1 with analog-to-digital capability"
-   "08", "IO_2/DA",		"I/O 2 with digital-to-analog capability"
-   "09", "IO_3/PWM",	"I/O 3 with pulse with modulation capability"
+   "08", "IO_2",		"I/O 2"
+   "09", "IO_3",		"I/O 3"
    "10", "IO_4",		"I/O 4"
 
 When not otherwise stated, all signals are 3.3V based.
