@@ -150,7 +150,7 @@ Bricklet Connector
 
 .. csv-table:: 
    :header: "Pin", "Function", "Description"
-   :widths: 25, 100, 200
+   :widths: 25, 50, 250
 
    "01", "5V",			"5V signal, same as 5V in stack"
    "02", "GND",			"Ground"
@@ -173,7 +173,7 @@ USB Connector
 
 .. csv-table::
    :header: "Pin", "Function", "Description"
-   :widths: 25, 100, 200
+   :widths: 25, 50, 250
 
    "1", "VCC",        "5V"
    "2", "D-",         "Data -"

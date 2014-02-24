@@ -152,7 +152,7 @@ Bricklet Stecker
 
 .. csv-table:: 
    :header: "Pin", "Funktion", "Beschreibung"
-   :widths: 25, 100, 200
+   :widths: 25, 50, 250
 
    "01", "5V",			"5V Signal, verbunden mit 5V des Stapels"
    "02", "GND",			"Masse"
@@ -175,7 +175,7 @@ USB Stecker
 
 .. csv-table::
    :header: "Pin", "Funktion", "Beschreibung"
-   :widths: 25, 100, 200
+   :widths: 25, 50, 250
 
    "1", "VCC",        "5V"
    "2", "D-",         "Data -"
