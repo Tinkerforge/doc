@@ -16,12 +16,12 @@ C# - IP Connection
 .. _ipcon_csharp_examples:
 
 Example
---------
+-------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.cs>`__
+`Download (Example.cs) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.cs>`__
 
 .. literalinclude:: Example.cs
  :language: csharp

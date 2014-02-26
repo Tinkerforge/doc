@@ -16,12 +16,12 @@ Ruby - IP Connection
 .. _ipcon_ruby_examples:
 
 Example
---------
+-------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.rb>`__
+`Download (example.rb) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.rb>`__
 
 .. literalinclude:: example.rb
  :language: ruby

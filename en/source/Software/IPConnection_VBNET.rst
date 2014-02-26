@@ -16,12 +16,12 @@ Visual Basic .NET - IP Connection
 .. _ipcon_vbnet_examples:
 
 Example
---------
+-------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.vb>`__
+`Download (Example.vb) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.vb>`__
 
 .. literalinclude:: Example.vb
  :language: vbnet

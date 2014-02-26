@@ -16,12 +16,12 @@ C/C++ - IP Connection
 .. _ipcon_c_examples:
 
 Example
---------
+-------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.c>`__
+`Download (example.c) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.c>`__
 
 .. literalinclude:: example.c
  :language: c

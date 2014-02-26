@@ -16,12 +16,12 @@ Delphi - IP Connection
 .. _ipcon_delphi_examples:
 
 Example
---------
+-------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.pas>`__
+`Download (Example.pas) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.pas>`__
 
 .. literalinclude:: Example.pas
  :language: delphi

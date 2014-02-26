@@ -16,12 +16,12 @@ Python - IP Connection
 .. _ipcon_python_examples:
 
 Example
---------
+-------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.py>`__
+`Download (example.py) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.py>`__
 
 .. literalinclude:: example.py
  :language: python
