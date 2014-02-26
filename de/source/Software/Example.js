@@ -1,4 +1,4 @@
-var Tinkerforge = require('Tinkerforge');
+var Tinkerforge = require('tinkerforge');
 
 var HOST = 'localhost';
 var PORT = 4223;
@@ -7,26 +7,31 @@ var PORT = 4223;
 ipcon = new Tinkerforge.IPConnection();
 ipcon.connect(HOST, PORT);
 
-// Register Enumerate Callback
-ipcon.on(Tinkerforge.IPConnection.CALLBACK_ENUMERATE,
-    // Print incoming enumeration
-    function(uid, cuid, pos, hwv, fwv, devid, enumtype) {
-        console.log('UID:               '+uid);
-        console.log('Enumeration Type:  '+enumtype);
-        if(enumtype === Tinkerforge.IPConnection.ENUMERATION_TYPE_DISCONNECTED) {
-            return;
-        }
-        console.log('Connected UID:     '+cuid);
-        console.log('Position:          '+pos);
-        console.log('Hardware Version:  '+hwv);
-        console.log('Firmware Version:  '+fwv);
-        console.log('Device Identifier: '+devid);
-        console.log('');
+ipcon.on(Tinkerforge.IPConnection.CALLBACK_CONNECTED,
+    function(connectReason) {
+        // Trigger Enumerate
+        ipcon.enumerate();
     }
 );
 
-// Trigger Enumerate
-ipcon.enumerate();
+// Register Enumerate Callback
+ipcon.on(Tinkerforge.IPConnection.CALLBACK_ENUMERATE,
+    // Print incoming enumeration
+    function(uid, connectedUid, position, hardwareVersion, firmwareVersion,
+             deviceIdentifier, enumerationType) {
+        console.log('UID:               '+uid);
+        console.log('Enumeration Type:  '+enumerationType);
+        if(enumerationType === Tinkerforge.IPConnection.ENUMERATION_TYPE_DISCONNECTED) {
+            return;
+        }
+        console.log('Connected UID:     '+connectedUid);
+        console.log('Position:          '+position);
+        console.log('Hardware Version:  '+hardwareVersion);
+        console.log('Firmware Version:  '+firmwareVersion);
+        console.log('Device Identifier: '+deviceIdentifier);
+        console.log('');
+    }
+);
 
 console.log("Press any key to exit ...");
 process.stdin.on('data',
@@ -35,4 +40,3 @@ process.stdin.on('data',
         process.exit(0);
     }
 );
-
