@@ -45,20 +45,20 @@
                         ipcon.enumerate();     
                     }
                 );
-                ipcon.on(IPConnection.CALLBACK_ENUMERATE,
+                ipcon.on(Tinkerforge.IPConnection.CALLBACK_ENUMERATE,
                     // Print incoming enumeration
                     function(uid, cuid, pos, hwv, fwv, devid, enumtype) {
-                        console.log('UID:               '+uid);
-                        console.log('Enumeration Type:  '+enumtype);
-                        if(enumtype === IPConnection.ENUMERATION_TYPE_DISCONNECTED) {
+                        textArea.value += 'UID:               '+uid+'\n';
+                        textArea.value += 'Enumeration Type:  '+enumtype+'\n';
+                        if(enumtype === Tinkerforge.IPConnection.ENUMERATION_TYPE_DISCONNECTED) {
                             return;
                         }
-                        console.log('Connected UID:     '+cuid);
-                        console.log('Position:          '+pos);
-                        console.log('Hardware Version:  '+hwv);
-                        console.log('Firmware Version:  '+fwv);
-                        console.log('Device Identifier: '+devid);
-                        console.log('');
+                        textArea.value += 'Connected UID:     '+cuid+'\n';
+                        textArea.value += 'Position:          '+pos+'\n';
+                        textArea.value += 'Hardware Version:  '+hwv+'\n';
+                        textArea.value += 'Firmware Version:  '+fwv+'\n';
+                        textArea.value += 'Device Identifier: '+devid+'\n';
+                        textArea.value += '\n';
                     }
 
                 );
