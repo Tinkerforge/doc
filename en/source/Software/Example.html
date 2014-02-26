@@ -36,9 +36,8 @@
                         textArea.value += 'Error: '+error+ '\n';        
                     }
                 );// Connect to brickd
+                // Don't use device before ipcon is connected
 
-                // Don't use device before ipcon is connected
-                // Don't use device before ipcon is connected
                 ipcon.on(Tinkerforge.IPConnection.CALLBACK_CONNECTED,
                     function(connectReason) {
                         // Trigger Enumerate

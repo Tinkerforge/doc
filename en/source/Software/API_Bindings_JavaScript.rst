@@ -6,6 +6,8 @@
 JavaScript - API Bindings
 =========================
 
+**Requirements**: Node.js 0.10 or newer or any recent browser with Websocket support (tested with Chrome, Firefox and IE)
+
 The JavaScript binding (:ref:`download <downloads_bindings_examples>`) consists
 of a Node.js NPM package ``tinkerforge.tgz`` and the browser version (in ``browser/``)
 of the bindings for all Tinkerforge Bricks and Bricklets. The source and examples of
@@ -35,17 +37,19 @@ The required statements must be modified in this case as follows,
 instead of,
 
 .. code-block::javascript
- var Tinkerforge = require('Tinkerforge');
- var ipcon = new Tinkerforge.IPConnection();
- var stepper = new Tinkerforge.BrickStepper();
+
+    var Tinkerforge = require('Tinkerforge');
+    var ipcon = new Tinkerforge.IPConnection();
+    var stepper = new Tinkerforge.BrickStepper();
 
 use,
 
 .. code-block::javascript
- var IPConnection = require('./Tinkerforge/IPConnection');
- var BrickStepper = require('./Tinkerforge/BrickStepper');
- var ipcon = new IPConnection();
- var stepper = new BrickStepper();
+
+    var IPConnection = require('./Tinkerforge/IPConnection');
+    var BrickStepper = require('./Tinkerforge/BrickStepper');
+    var ipcon = new IPConnection();
+    var stepper = new BrickStepper();
 
 For using the HTML examples, just put the browser implementation source
 file from ``browser/source/Tinkerforge.js`` and the HTML file of the example
