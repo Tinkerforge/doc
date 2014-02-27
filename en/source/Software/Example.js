@@ -22,6 +22,7 @@ ipcon.on(Tinkerforge.IPConnection.CALLBACK_ENUMERATE,
         console.log('UID:               '+uid);
         console.log('Enumeration Type:  '+enumerationType);
         if(enumerationType === Tinkerforge.IPConnection.ENUMERATION_TYPE_DISCONNECTED) {
+            console.log('');
             return;
         }
         console.log('Connected UID:     '+connectedUid);
