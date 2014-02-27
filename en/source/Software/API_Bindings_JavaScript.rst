@@ -38,7 +38,7 @@ instead of,
 
 .. code-block::javascript
 
-    var Tinkerforge = require('Tinkerforge');
+    var Tinkerforge = require('tinkerforge');
     var ipcon = new Tinkerforge.IPConnection();
     var stepper = new Tinkerforge.BrickStepper();
 
