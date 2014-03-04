@@ -177,7 +177,7 @@ Callback Configuration Functions
 
  Registers a callback with ID ``id`` to the function ``callback``.
 
- The available ids with corresponding callback function signatures
+ The available IDs with corresponding callback function signatures
  are described below.
 
 

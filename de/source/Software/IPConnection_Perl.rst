@@ -173,7 +173,7 @@ die Dokumentation des `threads::shared
 <http://perldoc.perl.org/threads/shared.html>`__ Perl Moduls für weitere
 Details.
 
-Die verfügbaren Konstanten mit der dazugehörigen Parameteranzahl und -typen
+Die verfügbaren IDs mit der dazugehörigen Parameteranzahl und -typen
 werden weiter unten beschrieben.
 
 

@@ -188,8 +188,8 @@ Callback ID, der Callback Funktion und optionalen Benutzer Daten:
 
     ipcon_register_callback(&ipcon, IPCON_CALLBACK_EXAMPLE, (void*)my_callback, NULL);
 
-Die verfügbaren Konstanten mit den zugehörigen Callback Funktionssignaturen
-werden im Folgenden beschrieben.
+Die verfügbaren IDs mit den zugehörigen Callback Funktionssignaturen
+werden weiter unten beschrieben.
 
 
 .. c:var:: IPCON_CALLBACK_ENUMERATE

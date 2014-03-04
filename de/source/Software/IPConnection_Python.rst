@@ -201,7 +201,7 @@ ist der Callback ID und der zweite die Callback Funktion:
 
     ipcon.register_callback(IPConnection.CALLBACK_EXAMPLE, my_callback)
 
-Die verfügbaren Konstanten mit der dazugehörigen Parameteranzahl und -typen
+Die verfügbaren IDs mit der dazugehörigen Parameteranzahl und -typen
 werden weiter unten beschrieben.
 
 
