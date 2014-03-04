@@ -2,12 +2,13 @@ en/build
 en/build-in-progress
 en/source/Software/Bricks
 en/source/Software/Bricklets
+en/source/Software/IPConnection_*_*xample*
 en/source/Images/Screenshots/LabVIEW/*.vi.png
-!en/source/Images/Screenshots/LabVIEW/Example.vi.png
 de/build
 de/build-in-progress
 de/source/Software/Bricks
 de/source/Software/Bricklets
+de/source/Software/IPConnection_*_*xample*
 *.table
 *.toctree
 *.substitutions

@@ -15,15 +15,18 @@ Mathematica - IP Connection
 
 .. _ipcon_mathematica_examples:
 
-Example
--------
+Examples
+--------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download (Example.nb) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.nb>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: Example.nb.txt
+`Download (ExampleEnumerate.nb) <https://github.com/Tinkerforge/generators/raw/master/mathematica/ExampleEnumerate.nb>`__
+
+.. literalinclude:: IPConnection_Mathematica_ExampleEnumerate.nb.txt
  :language: mathematica
  :linenos:
  :tab-width: 4

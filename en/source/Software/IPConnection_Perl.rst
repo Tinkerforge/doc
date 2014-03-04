@@ -15,15 +15,18 @@ Perl - IP Connection
 
 .. _ipcon_perl_examples:
 
-Example
--------
+Examples
+--------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download (example.pl) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.pl>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: example.pl
+`Download (example_enumerate.pl) <https://github.com/Tinkerforge/generators/raw/master/perl/example_enumerate.pl>`__
+
+.. literalinclude:: IPConnection_Perl_example_enumerate.pl
  :language: perl
  :linenos:
  :tab-width: 4

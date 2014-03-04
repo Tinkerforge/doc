@@ -15,15 +15,18 @@ Java - IP Connection
 
 .. _ipcon_java_examples:
 
-Beispiel
---------
+Beispiele
+---------
 
 Der folgende Beispielcode ist `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/deed.de>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/de/source/Software/Example.java>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: Example.java
+`Download (ExampleEnumerate.java) <https://github.com/Tinkerforge/generators/raw/master/java/ExampleEnumerate.java>`__
+
+.. literalinclude:: IPConnection_Java_ExampleEnumerate.java
  :language: java
  :linenos:
  :tab-width: 4

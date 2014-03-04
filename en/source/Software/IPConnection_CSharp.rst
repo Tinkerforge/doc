@@ -15,15 +15,18 @@ C# - IP Connection
 
 .. _ipcon_csharp_examples:
 
-Example
--------
+Examples
+--------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download (Example.cs) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.cs>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: Example.cs
+`Download (ExampleEnumerate.cs) <https://github.com/Tinkerforge/generators/raw/master/csharp/ExampleEnumerate.cs>`__
+
+.. literalinclude:: IPConnection_CSharp_ExampleEnumerate.cs
  :language: csharp
  :linenos:
  :tab-width: 4

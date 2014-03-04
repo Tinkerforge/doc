@@ -15,15 +15,18 @@ Ruby - IP Connection
 
 .. _ipcon_ruby_examples:
 
-Beispiel
---------
+Beispiele
+---------
 
 Der folgende Beispielcode ist `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/deed.de>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/de/source/Software/example.rb>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: example.rb
+`Download (example_enumerate.rb) <https://github.com/Tinkerforge/generators/raw/master/ruby/example_enumerate.rb>`__
+
+.. literalinclude:: IPConnection_Ruby_example_enumerate.rb
  :language: ruby
  :linenos:
  :tab-width: 4

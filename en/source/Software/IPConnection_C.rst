@@ -15,15 +15,18 @@ C/C++ - IP Connection
 
 .. _ipcon_c_examples:
 
-Example
--------
+Examples
+--------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download (example.c) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.c>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: example.c
+`Download (example_enumerate.c) <https://github.com/Tinkerforge/generators/raw/master/c/example_enumerate.c>`__
+
+.. literalinclude:: IPConnection_C_example_enumerate.c
  :language: c
  :linenos:
  :tab-width: 4

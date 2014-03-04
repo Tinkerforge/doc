@@ -15,15 +15,18 @@ Shell - IP Connection
 
 .. _ipcon_shell_examples:
 
-Beispiel
---------
+Beispiele
+---------
 
 Der folgende Beispielcode ist `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/deed.de>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/de/source/Software/example.sh>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: example.sh
+`Download (example-enumerate.sh) <https://github.com/Tinkerforge/generators/raw/master/shell/example-enumerate.sh>`__
+
+.. literalinclude:: IPConnection_Shell_example-enumerate.sh
  :language: bash
  :linenos:
  :tab-width: 4

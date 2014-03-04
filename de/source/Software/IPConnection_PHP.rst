@@ -15,14 +15,18 @@ PHP - IP Connection
 
 .. _ipcon_php_examples:
 
-Beispiel
---------
+Beispiele
+---------
 
-Der folgende Beispielcode ist Public Domain.
+Der folgende Beispielcode ist `Public Domain (CC0 1.0)
+<http://creativecommons.org/publicdomain/zero/1.0/deed.de>`__.
 
-`Download <https://github.com/Tinkerforge/doc/raw/master/de/source/Software/Example.php>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: Example.php
+`Download (ExampleEnumerate.php) <https://github.com/Tinkerforge/generators/raw/master/php/ExampleEnumerate.php>`__
+
+.. literalinclude:: IPConnection_PHP_ExampleEnumerate.php
  :language: php
  :linenos:
  :tab-width: 4

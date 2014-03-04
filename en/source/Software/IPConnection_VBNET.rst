@@ -15,15 +15,18 @@ Visual Basic .NET - IP Connection
 
 .. _ipcon_vbnet_examples:
 
-Example
--------
+Examples
+--------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download (Example.vb) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.vb>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: Example.vb
+`Download (ExampleEnumerate.vb) <https://github.com/Tinkerforge/generators/raw/master/vbnet/ExampleEnumerate.vb>`__
+
+.. literalinclude:: IPConnection_VBNET_ExampleEnumerate.vb
  :language: vbnet
  :linenos:
  :tab-width: 4

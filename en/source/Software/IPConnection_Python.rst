@@ -15,15 +15,18 @@ Python - IP Connection
 
 .. _ipcon_python_examples:
 
-Example
--------
+Examples
+--------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download (example.py) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/example.py>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: example.py
+`Download (example_enumerate.py) <https://github.com/Tinkerforge/generators/raw/master/python/example_enumerate.py>`__
+
+.. literalinclude:: IPConnection_Python_example_enumerate.py
  :language: python
  :linenos:
  :tab-width: 4

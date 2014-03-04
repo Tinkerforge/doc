@@ -15,15 +15,18 @@ Delphi - IP Connection
 
 .. _ipcon_delphi_examples:
 
-Example
--------
+Examples
+--------
 
 The example code below is `Public Domain (CC0 1.0)
 <http://creativecommons.org/publicdomain/zero/1.0/>`__.
 
-`Download (Example.pas) <https://github.com/Tinkerforge/doc/raw/master/en/source/Software/Example.pas>`__
+Enumerate
+^^^^^^^^^
 
-.. literalinclude:: Example.pas
+`Download (ExampleEnumerate.pas) <https://github.com/Tinkerforge/generators/raw/master/delphi/ExampleEnumerate.pas>`__
+
+.. literalinclude:: IPConnection_Delphi_ExampleEnumerate.pas
  :language: delphi
  :linenos:
  :tab-width: 4
