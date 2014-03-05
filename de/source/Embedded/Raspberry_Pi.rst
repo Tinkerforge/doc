@@ -73,7 +73,7 @@ heruntergeladen werden und im ``home`` Verzeichnis platziert werden.
 
 Danach müssen folgende Schritte ausgeführt werden::
 
- sudo apt-get install build-essential libusb-1.0-0-dev libudev-dev pm-utils
+ sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev pm-utils
  unzip Tinkerforge-brickd-vX.Y.Z-W-***.zip (Dateiname anpassen)
  cd Tinkerforge-brickd-vX.Y.Z-W-*** (Ordnername anpassen)
  cd src/brickd
