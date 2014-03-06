@@ -19,8 +19,9 @@ z.B. LabVIEWs `.NET Unterstützung
 
 Die Bindings bestehen aus einer Bibliothek (.dll) für alle Tinkerforge Bricks
 und Bricklets (``Tinkerforge.dll``), dem C# Quelltext der DLL (in ``source/``)
-und allen verfügbaren LabVIEW Beispielen (in ``examples/``).
-
+und allen verfügbaren LabVIEW Beispielen (in ``examples/``). Die Beispiele sind
+in LabVIEW 2013 Format gespeichert. Alle Beispiele liegen aber auch im LabVIEW
+2010 Format bei.
 
 Test eines Beispiels
 --------------------
@@ -32,7 +33,9 @@ Suchen-und-Nachfragen kann vermieden werden, indem die ``Tinkerforge.dll`` in
 einem LabVIEW bekannten Ordern gespeichert wird. Die einfachsten Möglichkeiten
 sind der ``vi.lib`` Ordern der LabVIEW oder der gleiche Ordner in dem auch das
 zu öffnende Beispiel gespeichert ist. In beiden Fällen wird LabVIEW die
-``Tinkerforge.dll`` automatisch finden und nicht Nachfragen.
+``Tinkerforge.dll`` automatisch finden und nicht Nachfragen. Allderdings wird
+LabVIEW möglicherweise darüber warnen, dass die DLL aus einen anderen Ordner
+geladen wurde. Diese Warnungs kann ignoriert werden.
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel ausführen.
 Dazu ``examples/Brick/Stepper/ExampleConfiguration.nb`` in
