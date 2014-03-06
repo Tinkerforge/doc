@@ -41,6 +41,22 @@ As an example we will run the Stepper Brick configuration example. To do this
 open ``examples/Brick/Stepper/ExampleConfiguration.vi`` in LabVIEW, change the
 UID to the one of your Stepper Brick and run it.
 
+Here's an another :ref:`example <barometer_bricklet_labview_examples>`
+showing a graph of air pressure values measured by a Barometer Bricklet.
+
+.. image:: /Images/Screenshots/labview_example_frontpanel.jpg
+   :scale: 100 %
+   :alt: Front Panel Barometer Bricklet Graph Example
+   :align: center
+
+And here the corresponding block diagram:
+
+.. image:: /Images/Screenshots/labview_example_blockdiagram_small.png
+   :scale: 100 %
+   :alt: Block Diagram Barometer Bricklet Graph Example
+   :align: center
+   :target: ../_images/Screenshots/labview_example_blockdiagram.png
+
 API Documentation and Examples
 ------------------------------
 
