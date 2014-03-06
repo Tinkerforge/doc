@@ -45,7 +45,7 @@ die ``Tinkerforge.dll`` finden kann:
 Ersetze das ``NotebookDirectory[]<>"../.."`` Parameter mit einem absoluten
 Pfad zum Ordner der die ``Tinkerforge.dll`` enthält.
 
-Hier ein weiters :ref:`Beispiel <temperature_bricklet_mathematica_examples>`,
+Hier ein weiteres :ref:`Beispiel <temperature_bricklet_mathematica_examples>`,
 das einen dynamischen Plot der Temperaturwerte eines Temperature Bricklets
 zeigt. Der Einbruch bei Sample 82 wurde mittels eines Kältesprays erzeugt.
 

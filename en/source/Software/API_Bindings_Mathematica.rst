@@ -44,7 +44,7 @@ the ``LoadNETAssembly[]`` line to make Mathematica find the ``Tinkerforge.dll``:
 Replace the ``NotebookDirectory[]<>"../.."`` parameter with an absolute path
 to the folder that contains the ``Tinkerforge.dll``.
 
-Here an example :ref:`example <temperature_bricklet_mathematica_examples>`
+Here's an another :ref:`example <temperature_bricklet_mathematica_examples>`
 showing a dynamic plot of Temprature Bricklet measurements. The drop at sample
 82 was created using a freezer spray.
 
