@@ -49,34 +49,6 @@ eingefügt werden:
 
  use lib './';
 
-Falls nur einige ausgewählte Bricks oder Bricklets verwendet werden sollen und
-keine unnötigen Dateien im Projekt auftauchen sollen, dann können auch nur die
-wirklich benötigten Dateien in einen Ordner kopiert werden. Das Stepper Brick
-Beispiel benötigt ``IPConnection.pm`` und ``BrickStepper.pm``::
-
- example_folder/
-  -> IPConnection.pm
-  -> BrickStepper.pm
-  -> example_configuration.pl
-
-Nachdem diese Dateien in einen Ordner kopiert sind muss noch das ``Tinkerforge::``
-Package aus dem Quelltext des Beispiels entfernt werden. Statt:
-
-.. code-block:: perl
-
- use Tinkerforge::IPConnection;
- use Tinkerforge::Device;
- use Tinkerforge::BrickStepper;
-
-mss nun dort dies stehen:
-
-.. code-block:: perl
-
- use lib './';
- use IPConnection;
- use Device;
- use BrickStepper;
-
 Jetzt kann das Beispiel wieder ausgeführt werden.
 
 
