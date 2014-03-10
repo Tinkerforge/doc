@@ -57,3 +57,5 @@ Historie
    "2014", "03", "`Perl Bindings <http://www.tinkerforge.com/de/blog/2014/1/14/perl-bindings-fertig>`__"
    "",     "06", "`Mathematica Bindings <http://www.tinkerforge.com/de/blog/2014/2/7/mathematica-bindings-fertig>`__"
    "",     "07", "`Starter Kit: Blinkenlights <http://www.tinkerforge.com/de/blog/2014/2/10/neues-starterkit:-blinkenlights>`__"
+   "",     "08", "`Ankündigung RED Brick <http://www.tinkerforge.com/de/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__"
+   "",     "10", "`LabVIEW Bindings <http://www.tinkerforge.com/de/blog/2014/3/6/labview-bindings-fertig>`__"
