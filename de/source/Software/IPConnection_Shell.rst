@@ -47,8 +47,9 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
 
  * ``--help`` zeigt allgemeine Hilfe an und endet dann
  * ``--version`` zeigt die Versionsnummer an und endet dann
- * ``--host <host>`` IP Adresse oder Hostname des Verbindungsziels, Standard: ``localhost``
- * ``--port <port>`` Port-Nummer des Verbindungsziels, Standard: ``4223``
+ * ``--host <host>`` IP Adresse oder Hostname des Verbindungsziels,
+   Standard: ``localhost``
+ * ``--port <port>`` Port-Nummer des Verbindungsziels, Standard: 4223
  * ``--item-separator <item-separator>`` Trennzeichen für Array-Einträge,
    Standard: ``,`` (Komma)
  * ``--group-separator <group-separator>`` Trennzeichen für Ausgabegruppen,
@@ -94,7 +95,7 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  * ``--help`` zeigt Hilfe für den spezifischen ``call`` Befehl an und endet dann
  * ``--list-devices`` zeigt eine Liste der bekannten Geräte an und enden dann
  * ``--timeout <timeout>`` maximale Zeit (msec) für die auf eine Antwort
-    gewartet wird, Standard: ``2500``
+   gewartet wird, Standard: 2500
 
  Wenn die ``--list-devices`` Option angegeben ist werden alle bekannten
  Gerätenamen für das ``<device>`` Argument aufgelistet. Zum Beispiel
@@ -169,7 +170,7 @@ Grundfunktionen
  * ``--types <types>`` Array von abzufertigenden Enumerierungsarten, Standard:
    ``available``
  * ``--execute <command>`` Shell-Befehl der für jede eingehende Antwort
-   ausgeführt wird ()
+   ausgeführt wird
 
  Die ``--duration`` Option ermöglicht es die Zeit (msec) festzulegen für die
  eingehende Antworten abgefertigt werden.

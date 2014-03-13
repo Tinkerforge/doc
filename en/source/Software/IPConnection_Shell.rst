@@ -48,7 +48,7 @@ At first some information about the general command structure:
  * ``--help`` shows general help and exits
  * ``--version`` shows version number and exits
  * ``--host <host>`` IP address or hostname to connect to, default: ``localhost``
- * ``--port <port>`` port number to connect to, default: ``4223``
+ * ``--port <port>`` port number to connect to, default: 4223
  * ``--item-separator <item-separator>`` separator for array items, default: ``,`` (comma)
  * ``--group-separator <group-separator>`` separator for output groups, default: ``\n`` (newline)
  * ``--no-symbolic-input`` disables symbolic input of values
@@ -89,8 +89,7 @@ At first some information about the general command structure:
 
  * ``--help`` shows help for the ``call`` command and exits
  * ``--list-devices`` shows a list of known devices and exits
- * ``--timeout <timeout>`` maximum time (ms) to wait for response, default:
-   ``2500``
+ * ``--timeout <timeout>`` maximum time (ms) to wait for response, default: 2500
 
  If the ``--list-devices`` option is present all valid device names for the
  ``<device>`` argument are listed. For example ``master-brick`` and
