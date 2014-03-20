@@ -13,16 +13,24 @@ Hier wird beschrieben wie Bricks und Bricklets zusammen mit einem
 SD Karte vorbereiten
 --------------------
 
-Als erstes musst Debian auf einer SD Karte eingerichtet werden. Hier gibt es 
-zwei verschiedene Varianten für das Raspberry Pi: Einmal "Raspbian" (armhf)
+Als erstes musst Debian auf einer SD Karte eingerichtet werden. Es gibt zwei
+Wege das zu tun.
+
+Es gibt den empfohlenen `New Out of Box Software (NOOBS)
+<http://www.raspberrypi.org/downloads>`__ Weg. Dazu wird einfach die NOOBS ZIP
+Datei herunterladen, auf eine SD Karte enpackt und das Raspberry Pi damit
+gestartet. Dann den Schritten des graphischen Installers folgen und "Raspbian"
+zur Installation auswählen.
+
+Falls NOOBS nicht verwendet werden soll, dann gibt es noch den alten mehr
+händischen Weg eines der vorgefertigten Debian Images herunterzuladen. Hier gibt
+es zwei verschiedene Varianten für das Raspberry Pi: Einmal "Raspbian" (armhf)
 und "Soft-Float Debian" (armel). Raspbian nutzt die Hardware Floating Point
-Unit (FPU) des Boards und ist die empfohlene Variante.
-
-Dazu muss zuerst
-das neuste Raspbian Image von `hier <http://www.raspberrypi.org/downloads>`__
-heruntergeladen werden. Diese `Anleitung <http://elinux.org/RPi_Easy_SD_Card_Setup>`__
-erklärt dann alles weitere.
-
+Unit (FPU) des Boards und ist die empfohlene Variante. Dazu muss zuerst
+das neuste `Raspbian Image <http://www.raspberrypi.org/downloads>`__
+heruntergeladen werden und dann den Schitten dieser `Anleitung
+<http://elinux.org/RPi_Easy_SD_Card_Setup>`__ zum manuelle Einrichten einer
+SD Karte folgen.
 
 Raspberry Pi starten
 --------------------
@@ -91,6 +99,14 @@ Der :ref:`Brick Viewer <brickv>` kann mit folgenden Befehlen installiert werden:
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
+
+Es kann vorkommen, dass ``apt-get`` meldet, dass bestimmte Abhängigkeiten nicht
+installiert werden. Wenn dies passiert schlägt ``apt-get`` vor
+``sudo apt-get -f install`` auszuführen. Dies sollte das Problem beheben und
+die benötigten Abhängigkeiten installieren.
+
+Dabei ist darauf zu achten, dass Python 2 installiert ist (was der Standard bei
+Raspbian ist), da Brick Viewer noch nicht mit Python 3 funktioniert.
 
 Updates können durch Wiederholen der letzten beiden Befehle installiert werden::
 

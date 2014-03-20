@@ -13,15 +13,22 @@ This section describes how to use Bricks and Bricklets with a
 Prepare SD Card
 ---------------
 
-In the first step you have to set up Debian on a SD Card.
-There exist different Debian images, one called "Raspbian" (armhf)
-and the other "Soft-Float Debian" (armel). Raspbian uses the hardware floating 
-point unit (FPU) of the board and is the recommended image.
+In the first step you have to set up Debian on a SD card. There are two ways
+to do this.
 
-Download the latest "Raspbian" image from
-`here <http://www.raspberrypi.org/downloads>`__
-and follow the necessary steps of
-`this <http://elinux.org/RPi_Easy_SD_Card_Setup>`__ tutorial.
+There is the recommended `New Out of Box Software (NOOBS)
+<http://www.raspberrypi.org/downloads>`__ approach. You just download the NOOBS
+ZIP file unpack it to an SD card and boot your Raspberry Pi from it. Then
+follow the steps in the graphical installer and select "Raspbian" to be
+installed.
+
+If you don't want to use NOOBS there is also the old and more manual way to
+download one of the different Debian images. There is one called "Raspbian"
+(armhf) and the other one called "Soft-Float Debian" (armel). Raspbian uses
+the hardware floating point unit (FPU) of the board and is the recommended one.
+Download the latest `Raspbian image <http://www.raspberrypi.org/downloads>`__
+and follow the necessary steps of this `SD card setup tutorial
+<http://elinux.org/RPi_Easy_SD_Card_Setup>`__.
 
 
 Start Raspberry Pi
@@ -31,7 +38,7 @@ Connect a keyboard, a monitor and a power supply to your Raspberry Pi.
 After connecting the power supply the Raspberry Pi should start booting.
 
 At the end of the boot process you should see the a login prompt. Enter
-as username ``pi`` and as password ``raspberry``. You should be logged in.
+as user name ``pi`` and as password ``raspberry``. You should be logged in.
 
 
 Install Brick Daemon
@@ -91,6 +98,13 @@ commands::
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo dpkg -i brickv_linux_latest.deb
 
+``apt-get`` might complain about dependencies that are not going to be installed.
+If this happens ``apt-get`` suggest to run ``sudo apt-get -f install`` which
+should resolve this problem and install re required dependencies.
+
+Ensure that you have Python 2 installed (this is the default in Raspbian anyway),
+because Brick Viewer doesn't work with Python 3 yet.
+
 Updates can be installed by repeating the last two commands::
 
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
@@ -114,4 +128,3 @@ Reported Problems
 The USB port of the Raspberry Pi may not be able to handle the power
 that is needed by a big stack of Bricks and Bricklets. In this case you
 should use a :ref:`Step-Down Power Supply <step_down_power_supply>`.
-
