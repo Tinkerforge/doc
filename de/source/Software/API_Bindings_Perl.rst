@@ -6,12 +6,17 @@
 Perl - API Bindings
 ===================
 
-**Voraussetzungen**: Perl 5.014 oder neuer
+**Voraussetzungen**: Perl 5.014 oder neuer mit Thread::Queue 3.02 oder neuer
 
 Die Perl Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen
 aus einem CPAN Paket mit den Bindings für alle Tinkerforge Bricks und Bricklets
 (``Tinkerforge.tar.gz``), dem Quelltext des CPAN Pakets (in ``source/``) und
 allen verfügbaren Perl Beispielen (in ``examples/``).
+
+Es sind Deadlock-Probleme auf Windows mit Strawberry Perl und Active State Perl
+bekannt. Der empfohlene Workaround dafür ist Cygwins Perl zu verwenden, das von
+diesen Problemen nicht betroffen ist. Siehe diesen `PerlMonks Thread
+<http://perlmonks.org/?node_id=1078634>`__ für weitere Details.
 
 Das Paket wird in Kürze auch auf CPAN verfügbar sein und kann dann von dort aus
 installiert werden.
