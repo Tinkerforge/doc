@@ -78,7 +78,7 @@ Basic Functions
    trying to connect.
 
 
-.. csharp:function:: public void IPConnection::SetAutoReconnect(boolean autoReconnect)
+.. csharp:function:: public void IPConnection::SetAutoReconnect(bool autoReconnect)
 
  Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
@@ -87,7 +87,7 @@ Basic Functions
  Default value is *true*.
 
 
-.. csharp:function:: public boolean IPConnection::GetAutoReconnect()
+.. csharp:function:: public bool IPConnection::GetAutoReconnect()
 
  Returns *true* if auto-reconnect is enabled, *false* otherwise.
 

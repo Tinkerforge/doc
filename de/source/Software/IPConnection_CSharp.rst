@@ -79,7 +79,7 @@ Grundfunktionen
    eine Verbindung aufzubauen.
 
 
-.. csharp:function:: public void IPConnection::SetAutoReconnect(boolean autoReconnect)
+.. csharp:function:: public void IPConnection::SetAutoReconnect(bool autoReconnect)
 
  Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
  Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
@@ -89,7 +89,7 @@ Grundfunktionen
  Standardwert ist *true*.
 
 
-.. csharp:function:: public boolean IPConnection::GetAutoReconnect()
+.. csharp:function:: public bool IPConnection::GetAutoReconnect()
 
  Gibt *true* zurück wenn die Wiederverbindung aktiviert ist und *false* sonst.
 
