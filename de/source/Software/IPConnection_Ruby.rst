@@ -94,8 +94,6 @@ Grundfunktionen
 
 .. rb:function:: IPConnection#get_auto_reconnect() -> bool
 
- :rtype: bool
-
  Gibt *true* zurück wenn die Wiederverbindung aktiviert ist und *false* sonst.
 
 
@@ -109,9 +107,7 @@ Grundfunktionen
  Standardwert ist 2.5.
 
 
-.. rb:function:: IPConnection#get_timeout() -> int
-
- :rtype: int
+.. rb:function:: IPConnection#get_timeout() -> float
 
  Gibt den Timeout zurück, wie er von
  :rb:func:`#set_timeout <IPConnection#set_timeout>` gesetzt wurde.

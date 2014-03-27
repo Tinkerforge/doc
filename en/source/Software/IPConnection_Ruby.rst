@@ -92,8 +92,6 @@ Basic Functions
 
 .. rb:function:: IPConnection#get_auto_reconnect() -> bool
 
- :rtype: bool
-
  Returns *true* if auto-reconnect is enabled, *false* otherwise.
 
 
@@ -107,9 +105,7 @@ Basic Functions
  Default timeout is 2.5.
 
 
-.. rb:function:: IPConnection#get_timeout() -> int
-
- :rtype: int
+.. rb:function:: IPConnection#get_timeout() -> float
 
  Returns the timeout as set by :rb:func:`#set_timeout <IPConnection#set_timeout>`.
 
