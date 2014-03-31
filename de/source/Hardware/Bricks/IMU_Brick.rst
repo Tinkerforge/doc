@@ -221,7 +221,7 @@ Berechnung unabhängiger Winkel
 
 Es ist nicht möglich Winkel für alle 3 Achsen zu berechnen die vollständig
 unabhängig sind. Zumindest an den Gimbal Lock Positionen werden Sprünge von
-180° auftreten für gewisse Winkel. Die ist grundsätzlich nicht anders möglich.
+180° auftreten für gewisse Winkel. Dies ist grundsätzlich nicht anders möglich.
 
 Wenn Rotationswinkel für die X, Y und Z Achse in Abhängigkeit zu einer
 definierten Grundposition benötigt werden, dann muss das Quaternion zuerst im
@@ -301,6 +301,13 @@ bei +90° und -90° für jede der Achsen auftreten. Die Grundposition ist (0,0,0
         raw_input('Press key to exit\n') # Use input() in Python 3
         q.ipcon.disconnect()
 
+Paul Balzer von MechLab Engineering hat zusätzlich 
+`Code auf github <http://mechlab-engineering.de/2014/03/tinkerforge-imu-zur-lageerkennung-von-fahrzeugen/>`__
+bereit gestellt der die Quaternionen in das Fahrzeugkoordinatensystem nach
+DIN70000 umwandelt. Insbesondere wird dort durchgängig ein
+`rechtshändiges Koordinatensystem <http://de.wikipedia.org/wiki/Rechtssystem_(Mathematik)>`__
+verwendet. Mehr Informationen dazu gibt es im 
+`Blog von MachLab Engineering <http://mechlab-engineering.de/2014/03/tinkerforge-imu-zur-lageerkennung-von-fahrzeugen/>`__.
 
 Funktionsweise
 --------------
