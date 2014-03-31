@@ -296,7 +296,7 @@ angles. The base position will be (0,0,0):
         raw_input('Press key to exit\n') # Use input() in Python 3
         q.ipcon.disconnect()
 
-Paul Balzer from MechLab Engineering has additional `code on github <http://mechlab-engineering.de/2014/03/tinkerforge-imu-zur-lageerkennung-von-fahrzeugen/>`__ that uses the
+Paul Balzer from MechLab Engineering has additional `code on github <https://github.com/MechLabEngineering/TinkerforgeAttitude>`__ that uses the
 quaternions to calculate yaw, pitch and roll in a vehicale coordinate system according
 to DIN70000. It is notably consistently a right-handed coordinate system.
 
