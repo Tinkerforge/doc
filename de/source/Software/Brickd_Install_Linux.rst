@@ -71,7 +71,7 @@ Aus Quelltext
 -------------
 
 Um den Brick Daemon aus dem Quelltext zu installieren, muss
-der `Quellcode von github <https://github.com/Tinkerforge/brickd>`__
+der `Quellcode von GitHub <https://github.com/Tinkerforge/brickd>`__
 heruntergeladen werden. Es gibt folgende Abhängigkeiten:
 
 * libusb-1.0

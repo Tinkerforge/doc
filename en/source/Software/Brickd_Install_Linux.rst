@@ -66,7 +66,7 @@ automatically.
 From Source
 -----------
 
-To install Brick Daemon from source, download the source from `here
+To install Brick Daemon from source, download the source from `GitHub
 <https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
 
 * libusb-1.0

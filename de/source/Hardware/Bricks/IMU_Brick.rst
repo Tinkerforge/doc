@@ -302,7 +302,7 @@ bei +90° und -90° für jede der Achsen auftreten. Die Grundposition ist (0,0,0
         q.ipcon.disconnect()
 
 Paul Balzer von MechLab Engineering hat zusätzlich 
-`Code auf github <https://github.com/MechLabEngineering/TinkerforgeAttitude>`__
+`Code auf GitHub <https://github.com/MechLabEngineering/TinkerforgeAttitude>`__
 bereit gestellt der die Quaternionen in das Fahrzeugkoordinatensystem nach
 DIN70000 umwandelt. Insbesondere wird dort durchgängig ein
 `rechtshändiges Koordinatensystem <http://de.wikipedia.org/wiki/Rechtssystem_(Mathematik)>`__
