@@ -31,6 +31,16 @@ Enumerate
  :linenos:
  :tab-width: 4
 
+Authenticate
+^^^^^^^^^^^^
+
+`Download (example-authenticate.sh) <https://github.com/Tinkerforge/generators/raw/master/shell/example-authenticate.sh>`__
+
+.. literalinclude:: IPConnection_Shell_example-authenticate.sh
+ :language: bash
+ :linenos:
+ :tab-width: 4
+
 
 .. _ipcon_shell_api:
 
@@ -49,6 +59,7 @@ At first some information about the general command structure:
  * ``--version`` shows version number and exits
  * ``--host <host>`` IP address or hostname to connect to, default: ``localhost``
  * ``--port <port>`` port number to connect to, default: 4223
+ * ``--secret <secret>`` secret for authentication (new in version 2.1.0)
  * ``--item-separator <item-separator>`` separator for array items, default: ``,`` (comma)
  * ``--group-separator <group-separator>`` separator for output groups, default: ``\n`` (newline)
  * ``--no-symbolic-input`` disables symbolic input of values
@@ -57,6 +68,15 @@ At first some information about the general command structure:
  All commands, except if the ``--help`` or ``--version`` option is present,
  create a TCP/IP connection to the given ``host`` and ``port``. The host and port
  can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
+
+ If the ``--secret`` option is present then an authentication handshake with
+ the connected Brick Daemon or
+ WIFI/Ethernet Extension is performed. On success the connection switches from
+ non-authenticated to authenticated state and communication can continue as
+ normal. On failure the connection gets closed by the server side. Authentication
+ can fail if the authentication secrets mismatch or if authentication is not
+ enabled at all on the Brick Daemon or WIFI/Ethernet Extension.
+ For more information about authentication see TODO.
 
  The item separator is used for parsing and formatting arrays. An array with
  three values 1, 2 and 3 is formatted as ``1,2,3``.

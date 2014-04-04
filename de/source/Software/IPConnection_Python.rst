@@ -31,6 +31,16 @@ Enumerate
  :linenos:
  :tab-width: 4
 
+Authenticate
+^^^^^^^^^^^^
+
+`Download (example_authenticate.py) <https://github.com/Tinkerforge/generators/raw/master/python/example_authenticate.py>`__
+
+.. literalinclude:: IPConnection_Python_example_authenticate.py
+ :language: python
+ :linenos:
+ :tab-width: 4
+
 
 .. _ipcon_python_api:
 
@@ -83,6 +93,25 @@ Grundfunktionen
 
  Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
  Extension.
+
+
+.. py:function:: IPConnection.authenticate(secret)
+
+ :param secret: str
+ :rtype: None
+
+ Führt einen Authentifizierungs-Handshake mit dem verbundenen Brick Daemon
+ oder WIFI/Ethernet Extension durch. Bei Erfolg wechselt die Verbindung
+ vom nicht-authentifizierten in den authentifizierten Zustand und die
+ Kommunikation kann normal weitergeführt werden. Bei Misserfolg wird die
+ Verbindung durch die Gegenseite geschlossen. Die Authentifizierung kann
+ fehlschlagen wenn das Authentifizierungsgeheimnis nicht übereinstimmt oder
+ Authentifizierung für den Brick Daemon oder die WIFI/Ethernet Extension nicht
+ aktiviert ist.
+
+ Für mehr Informationen zur Authentifizierung siehe TODO.
+
+ .. versionadded:: 2.1.0
 
 
 .. py:function:: IPConnection.get_connection_state()

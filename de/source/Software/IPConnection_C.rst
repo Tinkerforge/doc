@@ -31,6 +31,16 @@ Enumerate
  :linenos:
  :tab-width: 4
 
+Authenticate
+^^^^^^^^^^^^
+
+`Download (example_authenticate.c) <https://github.com/Tinkerforge/generators/raw/master/c/example_authenticate.c>`__
+
+.. literalinclude:: IPConnection_C_example_authenticate.c
+ :language: c
+ :linenos:
+ :tab-width: 4
+
 
 .. _ipcon_c_api:
 
@@ -92,6 +102,22 @@ Grundfunktionen
 
  Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
  Extension.
+
+
+.. c:function:: int ipcon_authenticate(IPConnection *ipcon, const char *secret)
+
+ Führt einen Authentifizierungs-Handshake mit dem verbundenen Brick Daemon
+ oder WIFI/Ethernet Extension durch. Bei Erfolg wechselt die Verbindung
+ vom nicht-authentifizierten in den authentifizierten Zustand und die
+ Kommunikation kann normal weitergeführt werden. Bei Misserfolg wird die
+ Verbindung durch die Gegenseite geschlossen. Die Authentifizierung kann
+ fehlschlagen wenn das Authentifizierungsgeheimnis nicht übereinstimmt oder
+ Authentifizierung für den Brick Daemon oder die WIFI/Ethernet Extension nicht
+ aktiviert ist.
+
+ Für mehr Informationen zur Authentifizierung siehe TODO.
+
+ .. versionadded:: 2.1.0
 
 
 .. c:function:: int ipcon_get_connection_state(IPConnection *ipcon)

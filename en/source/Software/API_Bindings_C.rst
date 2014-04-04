@@ -55,7 +55,7 @@ On Windows Win32 is used for threading and WinSock2 (``ws2_32``) for the network
 connection. Under MinGW we can compile the example as following (the library
 linking must come after the source)::
 
- gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
+ gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32 -ladvapi32
 
 The simplest way to use the bindings in a C++ project is to rename the required
 source files from ``*.c`` to ``*.cpp``. Then the compiler will treat the source
@@ -86,13 +86,13 @@ Now a new project can be created in Visual Studio by clicking:
 * Choose "Console Application"
 * Click Finish
 
-Then ``ws2_32.lib`` (WinSock2) has to included by clicking:
+Then ``ws2_32.lib`` (WinSock2) and ``advapi32.lib`` have to included by clicking:
 
 * Project
 * Properties
 * Linker
 * Input, option "Additional Dependencies"
-* Add ``ws2_32.lib;``
+* Add ``ws2_32.lib;advapi32.lib;``
 
 Older version of Visual Studio don't come with ``stdint.h``. A compatible
 version can be found `here <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
@@ -102,7 +102,7 @@ That's it, we are ready to go!
 
 The Visual Studio compiler can also be used from the command line::
 
- cl.exe /I. brick_stepper.cpp ip_connection.cpp example_configuration.cpp /link /out:example_configuration.exe ws2_32.lib
+ cl.exe /I. brick_stepper.cpp ip_connection.cpp example_configuration.cpp /link /out:example_configuration.exe ws2_32.lib advapi32.lib
 
 
 Qt Creator
@@ -129,14 +129,14 @@ and paste the following lines into it and save the result::
   TEMPLATE = app
   CONFIG += console
   TARGET = example_configuration
-  win32:LIBS += -lws2_32
+  win32:LIBS += -lws2_32 -ladvapi32
   unix:QMAKE_CXXFLAGS += -pthread
   SOURCES += ip_connection.c brick_stepper.c example_configuration.c
   HEADERS += ip_connection.h brick_stepper.h
 
 This tells Qt Creator that this is an console application named
-"example_configuration". It is linked to the ``ws2_32`` library on Windows and
-uses pthreads on Unix (Linux, Mac OS X, etc).
+"example_configuration". It is linked to the ``ws2_32`` and ``advapi32``
+libraries on Windows and uses pthreads on Unix (Linux, Mac OS X, etc).
 
 Before stating the program you need to tick the "Run in terminal" check box on
 the project's run configuration tab, otherwise its output will not be visible.
@@ -153,7 +153,7 @@ If you want to add the C/C++ bindings to an existing Qt Creator project then
 you just need to add the required source files to the ``SOURCES`` and
 ``HEADERS`` variables and add these two lines to your ``.pro`` file::
 
-  win32:LIBS += -lws2_32
+  win32:LIBS += -lws2_32 -ladvapi32
   unix:QMAKE_CXXFLAGS += -pthread
 
 
@@ -175,13 +175,13 @@ it by clicking on "Remove file" in its context menu in the project view. Now add
 all files from the ``project_folder/`` to the project by clicking on
 "Add to Project" in the project's context menu.
 
-Then ``libws2_32.a`` (WinSock2) has to included by clicking:
+Then ``libws2_32.a`` (WinSock2) and ``libadvapi32.a`` have to included by clicking:
 
 * Project
 * Project Options
 * Parameters
 * Click Add Library or Object
-* Choose ``libws2_32.a``
+* Choose ``libws2_32.a`` and ``libadvapi32.a``
 * Click Open
 * Click Ok
 

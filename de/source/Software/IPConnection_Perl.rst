@@ -31,6 +31,16 @@ Enumerate
  :linenos:
  :tab-width: 4
 
+Authenticate
+^^^^^^^^^^^^
+
+`Download (example_authenticate.pl) <https://github.com/Tinkerforge/generators/raw/master/perl/example_authenticate.pl>`__
+
+.. literalinclude:: IPConnection_Perl_example_authenticate.pl
+ :language: perl
+ :linenos:
+ :tab-width: 4
+
 
 .. _ipcon_perl_api:
 
@@ -86,6 +96,25 @@ Grundfunktionen
 
  Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
  Extension.
+
+
+.. perl:function:: IPConnection->authenticate($secret)
+
+ :param $host: string
+ :rtype: undef
+
+ Führt einen Authentifizierungs-Handshake mit dem verbundenen Brick Daemon
+ oder WIFI/Ethernet Extension durch. Bei Erfolg wechselt die Verbindung
+ vom nicht-authentifizierten in den authentifizierten Zustand und die
+ Kommunikation kann normal weitergeführt werden. Bei Misserfolg wird die
+ Verbindung durch die Gegenseite geschlossen. Die Authentifizierung kann
+ fehlschlagen wenn das Authentifizierungsgeheimnis nicht übereinstimmt oder
+ Authentifizierung für den Brick Daemon oder die WIFI/Ethernet Extension nicht
+ aktiviert ist.
+
+ Für mehr Informationen zur Authentifizierung siehe TODO.
+
+ .. versionadded:: 2.1.0
 
 
 .. perl:function:: IPConnection->get_connection_state()

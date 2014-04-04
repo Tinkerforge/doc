@@ -31,6 +31,16 @@ Enumerate
  :linenos:
  :tab-width: 4
 
+Authenticate
+^^^^^^^^^^^^
+
+`Download (example_authenticate.rb) <https://github.com/Tinkerforge/generators/raw/master/ruby/example_authenticate.rb>`__
+
+.. literalinclude:: IPConnection_Ruby_example_authenticate.rb
+ :language: ruby
+ :linenos:
+ :tab-width: 4
+
 
 .. _ipcon_ruby_api:
 
@@ -66,6 +76,22 @@ Basic Functions
 
  Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
  Extension.
+
+
+.. rb:function:: IPConnection#authenticate(secret) -> nil
+
+ :param secret: str
+
+ Performs an authentication handshake with the connected Brick Daemon or
+ WIFI/Ethernet Extension. On success the connection switches from
+ non-authenticated to authenticated state and communication can continue as
+ normal. On failure the connection gets closed by the server side. Authentication
+ can fail if the authentication secrets mismatch or if authentication is not
+ enabled at all on the Brick Daemon or WIFI/Ethernet Extension.
+
+ For more information about authentication see TODO.
+
+ .. versionadded:: 2.1.0
 
 
 .. rb:function:: IPConnection#get_connection_state() -> int

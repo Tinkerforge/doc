@@ -40,6 +40,26 @@ Enumerate
 
    </div>
 
+Authenticate
+^^^^^^^^^^^^
+
+`Download (Example Authenticate.vi) <https://github.com/Tinkerforge/generators/raw/master/labview/Example%20Authenticate.vi>`__,
+`Download (Example Authenticate - Connected Callback.vi) <https://github.com/Tinkerforge/generators/raw/master/labview/Example%20Authenticate%20-%20Connected%20Callback.vi>`__
+`Download (Example Authenticate - EnumerateCallback Callback.vi) <https://github.com/Tinkerforge/generators/raw/master/labview/Example%20Authenticate%20-%20EnumerateCallback%20Callback.vi>`__
+
+.. raw:: html
+
+   <div class="horizontal-image-scroll">
+
+.. image:: /Images/Screenshots/LabVIEW/IPConnection_LabVIEW_Example_Authenticate.vi.png
+   :scale: 100 %
+   :alt: LabVIEW Authenticate Example
+   :align: center
+
+.. raw:: html
+
+   </div>
+
 
 .. _ipcon_labview_api:
 
@@ -79,6 +99,22 @@ Basic Functions
 
  Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
  Extension.
+
+
+.. labview:function:: IPConnection.Authenticate(secret)
+
+ :input secret: String
+
+ Performs an authentication handshake with the connected Brick Daemon or
+ WIFI/Ethernet Extension. On success the connection switches from
+ non-authenticated to authenticated state and communication can continue as
+ normal. On failure the connection gets closed by the server side. Authentication
+ can fail if the authentication secrets mismatch or if authentication is not
+ enabled at all on the Brick Daemon or WIFI/Ethernet Extension.
+
+ For more information about authentication see TODO.
+
+ .. versionadded:: 2.1.0
 
 
 .. labview:function:: IPConnection.GetConnectionState() -> connectionState

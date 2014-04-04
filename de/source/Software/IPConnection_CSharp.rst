@@ -31,6 +31,16 @@ Enumerate
  :linenos:
  :tab-width: 4
 
+Authenticate
+^^^^^^^^^^^^
+
+`Download (ExampleAuthenticate.cs) <https://github.com/Tinkerforge/generators/raw/master/csharp/ExampleAuthenticate.cs>`__
+
+.. literalinclude:: IPConnection_CSharp_ExampleAuthenticate.cs
+ :language: csharp
+ :linenos:
+ :tab-width: 4
+
 
 .. _ipcon_csharp_api:
 
@@ -66,6 +76,22 @@ Grundfunktionen
 
  Trennt die TCP/IP Verbindung zum Brick Daemon oder einer WIFI/Ethernet
  Extension.
+
+
+.. csharp:function:: public void IPConnection::Authenticate(string secret)
+
+ Führt einen Authentifizierungs-Handshake mit dem verbundenen Brick Daemon
+ oder WIFI/Ethernet Extension durch. Bei Erfolg wechselt die Verbindung
+ vom nicht-authentifizierten in den authentifizierten Zustand und die
+ Kommunikation kann normal weitergeführt werden. Bei Misserfolg wird die
+ Verbindung durch die Gegenseite geschlossen. Die Authentifizierung kann
+ fehlschlagen wenn das Authentifizierungsgeheimnis nicht übereinstimmt oder
+ Authentifizierung für den Brick Daemon oder die WIFI/Ethernet Extension nicht
+ aktiviert ist.
+
+ Für mehr Informationen zur Authentifizierung siehe TODO.
+
+ .. versionadded:: 2.1.0
 
 
 .. csharp:function:: public short IPConnection::GetConnectionState()

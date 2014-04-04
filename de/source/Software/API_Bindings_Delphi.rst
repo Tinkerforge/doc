@@ -36,8 +36,9 @@ Lazarus
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit dem Free
 Pascal Compiler (FPC) kompilieren. FPC ist Teil der Lazarus IDE. Dafür
-müssen die IP Connection (``Base58.pas``, ``BlockingQueue.pas``, ``Device.pas``,
-``IPConnection.pas``, ``LEConverter.pas`` und ``TimedSemaphore.pas``) und die
+müssen die IP Connection (``Base58.pas``, ``BlockingQueue.pas``,
+``BrickDaemon.pas``, ``Device.pas``, ``DeviceBase.pas``, ``IPConnection.pas``,
+``LEConverter.pas``, ``SHA1.pas`` und ``TimedSemaphore.pas``) und die
 Stepper Brick Bindings (``BrickStepper.pas``) vom ``bindings/`` Ordner sowie
 ``ExampleConfiguration.pas`` vom ``examples/Brick/Stepper/`` Ordner in ein
 Projektordner kopiert werden::
@@ -45,9 +46,12 @@ Projektordner kopiert werden::
  project_folder/
   -> Base58.pas
   -> BlockingQueue.pas
+  -> BrickDaemon.pas
   -> Device.pas
+  -> DeviceBase.pas
   -> IPConnection.pas
   -> LEConverter.pas
+  -> SHA1.pas
   -> TimedSemaphore.pas
   -> BrickStepper.pas
   -> ExampleConfiguration.pas

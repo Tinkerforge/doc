@@ -53,7 +53,7 @@ Unter Windows wird Win32 für Threads und WinSock2 (``ws2_32``) für die
 Netzwerkverbindung verwendet. Mit MinGW lässt sich das Beispiel wie folgt
 kompilieren (Linker-Parameter müssen nach den Quelldateien angegeben werden)::
 
- gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32
+ gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32 -ladvapi32
 
 Der einfachste Weg die Bindings in einem C++ Projekt zu verwenden, ist es alle
 benötigten Dateien von ``*.c`` nach ``*.cpp`` umzubenennen. Dann behandelt der
@@ -84,13 +84,14 @@ Jetzt kann ein neues Projekt in Visual Studio erzeugt werden:
 * Wähle "Console Application"
 * Klicke Finish
 
-Zusätzlich muss noch ``ws2_32.lib`` (WinSock2) dem Projekt hinzugefügt werden:
+Zusätzlich müssen noch ``ws2_32.lib`` (WinSock2) und ``advapi32.lib`` dem
+Projekt hinzugefügt werden:
 
 * Project
 * Properties
 * Linker
 * Input, Option "Additional Dependencies"
-* Füge ``ws2_32.lib;`` hinzu
+* Füge ``ws2_32.lib;advapi32.lib;`` hinzu
 
 Ältere Versionen von Visual Studio bringen kein ``stdint.h`` mit. Eine kompatible
 Version gibt es `hier <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
@@ -100,7 +101,7 @@ Das waren alle nötigen Änderungen, jetzt kann es los gehen!
 
 Der Visual Studio Compiler kann auch von der Kommandozeile aus verwendet werden::
 
- cl.exe /I. brick_stepper.cpp ip_connection.cpp example_configuration.cpp /link /out:example_configuration.exe ws2_32.lib
+ cl.exe /I. brick_stepper.cpp ip_connection.cpp example_configuration.cpp /link /out:example_configuration.exe ws2_32.lib advapi32.lib
 
 
 Qt Creator
@@ -129,14 +130,15 @@ werden::
   TEMPLATE = app
   CONFIG += console
   TARGET = example_configuration
-  win32:LIBS += -lws2_32
+  win32:LIBS += -lws2_32 -ladvapi32
   unix:QMAKE_CXXFLAGS += -pthread
   SOURCES += ip_connection.c brick_stepper.c example_configuration.c
   HEADERS += ip_connection.h brick_stepper.h
 
 Dies weist Qt Creator an, dass dies eine Konsolenanwendung namens
-"example_configuration" ist. Sie ist gegen die ``ws2_32`` Bibliothek auf Windows
-zu linken und verwendet pthreads auf Unix (Linux, Mac OS X, etc).
+"example_configuration" ist. Sie ist gegen die ``ws2_32`` und ``advapi32``
+Bibliothekeb auf Windows gelinkt und verwendet pthreads auf Unix
+(Linux, Mac OS X, etc).
 
 Bevor das Programm jetzt gestartet werden kann muss noch der Haken bei
 "Run in terminal" auf dem Tab für die Run Konfiguration des Projekts gesetzt
@@ -155,7 +157,7 @@ müssen nur die benötigten Dateien zu den ``SOURCES`` und ``HEADERS`` Variablen
 hinzugefügt und folgende zwei Zeilen in die ``.pro`` Datei des Projekts
 eingefügt werden::
 
-  win32:LIBS += -lws2_32
+  win32:LIBS += -lws2_32 -ladvapi32
   unix:QMAKE_CXXFLAGS += -pthread
 
 
@@ -179,13 +181,13 @@ der Projektansicht entfernt werden. Als nächstes alle Dateien aus dem
 ``project_folder/`` zum Projekt hinzufügen über den "Zum Projekt hinzufügen"
 Eintrag im Kontextmenus des Projekts.
 
-Dann noch ``libws2_32.a`` (WinSock2) zum Projekt hinzufügen:
+Dann noch ``libws2_32.a`` (WinSock2) und ``libadvapi32.a`` zum Projekt hinzufügen:
 
 * Projekt
 * Projekt Optionen
 * Parameter
 * Klicke Bibliothek/Objekt hinzufügen
-* Wähle ``libws2_32.a``
+* Wähle ``libws2_32.a`` und ``libadvapi32.a``
 * Klicke Open
 * Klicke Ok
 

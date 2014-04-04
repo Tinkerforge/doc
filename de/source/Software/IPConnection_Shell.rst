@@ -31,6 +31,16 @@ Enumerate
  :linenos:
  :tab-width: 4
 
+Authenticate
+^^^^^^^^^^^^
+
+`Download (example-authenticate.sh) <https://github.com/Tinkerforge/generators/raw/master/shell/example-authenticate.sh>`__
+
+.. literalinclude:: IPConnection_Shell_example-authenticate.sh
+ :language: bash
+ :linenos:
+ :tab-width: 4
+
 
 .. _ipcon_shell_api:
 
@@ -50,6 +60,7 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  * ``--host <host>`` IP Adresse oder Hostname des Verbindungsziels,
    Standard: ``localhost``
  * ``--port <port>`` Port-Nummer des Verbindungsziels, Standard: 4223
+ * ``--secret <secret>`` Geheimnis für die Authentifizierung (neu in Version 2.1.0)
  * ``--item-separator <item-separator>`` Trennzeichen für Array-Einträge,
    Standard: ``,`` (Komma)
  * ``--group-separator <group-separator>`` Trennzeichen für Ausgabegruppen,
@@ -60,6 +71,16 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  Alle Befehle, außer die ``--help`` oder ``--version`` Option sind angegeben,
  erstellen eine TCP/IP Verbindung zum gegebenen ``host`` und ``port``. Host und Port
  können auf einen Brick Daemon oder eine WIFI/Ethernet Extension verweisen.
+
+ Ist die ``--secret`` Option angegeben dann wird ein
+ Authentifizierungs-Handshake mit dem verbundenen Brick Daemon
+ oder WIFI/Ethernet Extension durchgeführt. Bei Erfolg wechselt die Verbindung
+ vom nicht-authentifizierten in den authentifizierten Zustand und die
+ Kommunikation kann normal weitergeführt werden. Bei Misserfolg wird die
+ Verbindung durch die Gegenseite geschlossen. Die Authentifizierung kann
+ fehlschlagen wenn das Authentifizierungsgeheimnis nicht übereinstimmt oder
+ Authentifizierung für den Brick Daemon oder die WIFI/Ethernet Extension nicht
+ aktiviert ist. Für mehr Informationen zur Authentifizierung siehe TODO.
 
  Das Trennzeichen für Array-Einträge wird beim Parse und Formatieren von Arrays
  verwendet. Ein Array mit den drei Werten 1, 2 und 3 wird als ``1,2,3``

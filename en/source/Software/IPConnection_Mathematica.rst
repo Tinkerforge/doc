@@ -31,6 +31,17 @@ Enumerate
  :linenos:
  :tab-width: 4
 
+Authenticate
+^^^^^^^^^^^^
+
+`Download (ExampleAuthenticate.nb) <https://github.com/Tinkerforge/generators/raw/master/mathematica/ExampleAuthenticate.nb>`__
+
+.. literalinclude:: IPConnection_Mathematica_ExampleAuthenticate.nb.txt
+ :language: mathematica
+ :linenos:
+ :tab-width: 4
+
+
 .. _ipcon_mathematica_api:
 
 API
@@ -84,6 +95,22 @@ Basic Functions
 
  Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
  Extension.
+
+
+.. mathematica:function:: IPConnection@Authenticate[secret] -> Null
+
+ :param secret: String
+
+ Performs an authentication handshake with the connected Brick Daemon or
+ WIFI/Ethernet Extension. On success the connection switches from
+ non-authenticated to authenticated state and communication can continue as
+ normal. On failure the connection gets closed by the server side. Authentication
+ can fail if the authentication secrets mismatch or if authentication is not
+ enabled at all on the Brick Daemon or WIFI/Ethernet Extension.
+
+ For more information about authentication see TODO.
+
+ .. versionadded:: 2.1.0
 
 
 .. mathematica:function:: IPConnection@GetConnectionState[] -> connectionState
@@ -169,7 +196,7 @@ done by appending your callback handler to the corresponding event:
 .. code-block:: mathematica
 
     Callback[sender_,value_]:=Print["Value: "<>ToString[value]]
-    
+
     AddEventHandler[ipcon@Example,Callback]
 
 For further information about event handling using .NET/Link see the
