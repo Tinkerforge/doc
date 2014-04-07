@@ -143,19 +143,17 @@ running Brick Daemon but to your WIFI Extension.
    :align: center
    :target: ../../_images/Extensions/extension_wifi_brickv.jpg
 
-For your own code modify the passed host and port
-at your IPConnection call, e.g.:
+For your own code modify the passed host and port to your ``connect`` call, e.g.:
 
 .. code-block:: python
 
- ipcon = IPConnection("localhost", 4223)
+ ipcon.connect("localhost", 4223)
 
 has to be changed to
 
 .. code-block:: python
 
- ipcon = IPConnection("192.168.0.25", 4223)
-
+ ipcon.connect("192.168.0.25", 4223)
 
 
 .. _wifi_configuration:

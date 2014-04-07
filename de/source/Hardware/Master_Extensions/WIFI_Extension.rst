@@ -144,7 +144,7 @@ und nicht zu dem lokal laufenden Brick Daemon hergestellt.
    :target: ../../_images/Extensions/extension_wifi_brickv.jpg
 
 Für die eigene Anwendung muss im Quelltext der übergebene Host und Port
-im IPConnection Aufruf modifiziert werden, z.B.:
+im ``connect`` Aufruf modifiziert werden, z.B.:
 
 .. code-block:: python
 
