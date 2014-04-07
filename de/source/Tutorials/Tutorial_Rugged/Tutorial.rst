@@ -23,11 +23,13 @@ Der generelle Ansatz für ein solches Programm sieht wie folgt aus
 
  func main() {
      ipcon.enumerate();
-     while(true) {
-         if(brick_is_configured) {
+
+     while (true) {
+         if (brick_is_configured) {
              do_something_with_brick();
          }
-         if(bricklet_is_configured) {
+
+         if (bricklet_is_configured) {
              do_something_with_bricklet();
          }
      }

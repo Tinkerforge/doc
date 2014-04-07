@@ -45,8 +45,59 @@ Fehler.
 * Linux und Mac OS X: Nachrichten werden nach ``/var/log/brickd.log`` geschrieben.
 
 
-Installierte Version herausfinden
----------------------------------
+.. _brickd_authentication:
+
+Authentifizierung konfigurieren
+-------------------------------
+
+Brick Daemon unterstützt seit Version 2.1.0 Authentifizierung. Diese ist
+standardmäßig deaktiviert. Um Authentifizierung zu aktivieren muss ein
+Authentifizierungsgeheimnis in der Brick Daemon Konfigurationsdatei eingetragen
+werden.
+
+* Windows: Die Konfigurationsdatei heißt ``brickd.ini`` und ist im Brick Daemon
+  Installationsverzeichnis gespeichert::
+
+   C:\Program Files\Tinkerforge\Brickd\brickd.ini
+
+* Linux und Mac OS X: Die Konfigurationsdatei heißt ``brickd.conf`` und ist hier
+  gespeichert::
+
+   /etc/brickd.conf
+
+Die Konfigurationsdatei hat ein Schlüssel-Wert Format. Das
+Authentifizierungsgeheimnis kann maximal 64 ASCII Zeichen lang sein und hat den
+Schlüssel ``authentication.secret``. Ein leerer Wert oder das Fehlen des
+``authentication.secret`` Schlüssels führt zur deaktiviert der Authentifizierung.
+Hier der Authentifizierungsabschnitt einer Beispiel-Konfiguration die
+``My Authentication Secret!`` als Authentifizierungsgeheimnis verwendet::
+
+  authentication.secret = My Authentication Secret!
+
+Danach muss der Brick Daemon neugestartet werden, um die Änderungen an der
+Konfigurationsdatei zu übernehmen:
+
+* Windows:
+
+  Die "Computerverwaltung" öffnen, zum Abschnitt für "Dienste" wechseln
+  und den Brick Daemon Dienst neustarten.
+* Linux::
+
+   sudo /etc/init.d/brickd restart
+
+* Mac OS X::
+
+   sudo launchctl stop com.tinkerforge.brickd
+   sudo launchctl start com.tinkerforge.brickd
+
+Ab jetzt muss jede TCP/IP Verbindung zum Brick Daemon zuerst nachweisen,
+dass sie das Authentifizierungsgeheimnis kennt, bevor normale Kommunikation
+stattfinden kann. Für mehr Informationen zur Authentifizierung siehe das
+dazugehörige :ref:`Tutorial <tutorial_authentication>`.
+
+
+Installierte Version bestimmen
+------------------------------
 
 Seit Brick Daemon Version 1.0.8 ist es möglich die aktuell installierte
 Brick Daemon Version zu erfragen. Dafür unterstützt der Brick Daemon

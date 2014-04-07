@@ -94,7 +94,8 @@ Grundfunktionen
  Authentifizierung für den Brick Daemon oder die WIFI/Ethernet Extension nicht
  aktiviert ist.
 
- Für mehr Informationen zur Authentifizierung siehe TODO.
+ Für mehr Informationen zur Authentifizierung siehe das dazugehörige
+ :ref:`Tutorial <tutorial_authentication>`.
 
  .. versionadded:: 2.1.0
 

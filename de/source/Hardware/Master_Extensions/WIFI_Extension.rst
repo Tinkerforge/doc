@@ -371,6 +371,30 @@ IP-Adresse, Gateway und Länge Netzwerkpräfix einstellen. Ein Beispiel:
 Dann Speichern und mit dem Netzwerk verbinden. Jetzt sollte das Smartphone mit
 dem Access Point der WIFI Extension verbunden sein.
 
+
+.. _extension_wifi_authentication:
+
+Authentifizierung
+-----------------
+
+Die WIFI Extension unterstützt seit Master Brick Firmware Version 2.2.0
+Authentifizierung. Diese ist standardmäßig deaktiviert. Um
+Authentifizierung zu aktivieren muss das Häkchen bei "Use Authentication"
+gesetzt und ein Authentifizierungsgeheimnis eingetragen werden. Das Geheimnis
+kann maximal 64 ASCII Zeichen lang sein. Nachdem die Konfiguration gespeichert
+und der Master Brick neugestartet wurde ist Authentifizierung aktiv.
+
+.. image:: /Images/Extensions/extension_wifi_authentication.jpg
+   :scale: 100 %
+   :alt: Configure Authentication
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi_authentication.jpg
+
+Ab jetzt muss jede TCP/IP Verbindung zur WIFI Extension zuerst nachweisen,
+dass sie das Authentifizierungsgeheimnis kennt, bevor normale Kommunikation
+stattfinden kann. Für mehr Informationen zur Authentifizierung siehe das
+dazugehörige :ref:`Tutorial <tutorial_authentication>`.
+
 .. _extension_wifi_leds:
 
 LEDs und Anschlussmöglichkeiten
@@ -383,11 +407,12 @@ LEDs und Anschlussmöglichkeiten
    :target: ../../_images/Extensions/extension_wifi_caption_800.jpg
 
 Die blaue LED leuchtet permanent wenn die Extension mit Strom versorgt wird.
-Als Status LED ist eine grüne LED vorhanden (permanent aus = Fehler, blinkend = Verbindungsaufbau, permanent an = Verbunden).
+Als Status LED ist eine grüne LED vorhanden (permanent aus = Fehler,
+blinkend = Verbindungsaufbau, permanent an = Verbunden).
 
-Das WIFI Modul ist mit einem U.FL Anschluss und einem 75 Ohm U.FL nach RP-SMA Kabel ausgestattet.
-Abhängig von der Anwendung kann dieses Kabel auch vom WIFI Modul getrennt und ein eigenes
-angeschlossen werden.
+Das WIFI Modul ist mit einem U.FL Anschluss und einem 75 Ohm U.FL nach RP-SMA
+Kabel ausgestattet. Abhängig von der Anwendung kann dieses Kabel auch vom WIFI
+Modul getrennt und ein eigenes angeschlossen werden.
 
 Programmierschnittstelle
 ------------------------

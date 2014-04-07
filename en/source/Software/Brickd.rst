@@ -45,7 +45,54 @@ By default Brick Daemon logs messages about information, warnings and errors.
 * Linux and Mac OS X: Log messages are written to ``/var/log/brickd.log``.
 
 
-Checking installed version
+.. _brickd_authentication:
+
+Authentication Configuration
+----------------------------
+
+Since Brick Daemon version 2.1.0 authentication is supported, but disabled by
+default. To enable it you have to configure an authentication secret in the
+Brick Daemon configuration file.
+
+* Windows: The configuration file is called ``brickd.ini`` and stored in the
+  Brick Daemon installation directory::
+
+   C:\Program Files\Tinkerforge\Brickd\brickd.ini
+
+* Linux and Mac OS X: The configuration file is called ``brickd.conf`` and
+  stored in::
+
+   /etc/brickd.conf
+
+The configuration file has a key-value format. The authentication secret can
+be 64 ASCII characters long and has ``authentication.secret`` as key. An empty
+value or removing the ``authentication.secret`` key disables authentication.
+Here is the authentication part of an example configuration using
+``My Authentication Secret!`` as secret::
+
+  authentication.secret = My Authentication Secret!
+
+Afterwards Brick Daemon has to be restarted to pick up the configuration change:
+
+* Windows:
+
+  Open the "Computer Management", navigate to the "Services" section and
+  restart the Brick Daemon service.
+* Linux::
+
+   sudo /etc/init.d/brickd restart
+
+* Mac OS X::
+
+   sudo launchctl stop com.tinkerforge.brickd
+   sudo launchctl start com.tinkerforge.brickd
+
+Now every TCP/IP connection to the Brick Daemon has to prove that it knows the
+authentication secret before normal communication can occur. See the
+:ref:`authentication tutorial <tutorial_authentication>` for more information.
+
+
+Checking Installed Version
 --------------------------
 
 Since Brick Daemon version 1.0.8 you can check which Brick Daemon is currently
@@ -55,7 +102,7 @@ installed with the `--version` commandline argument:
 
   .. code-block:: none
 
-    "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
+   "C:\Program Files\Tinkerforge\Brickd\brickd.exe" --version
 
 * Linux::
 

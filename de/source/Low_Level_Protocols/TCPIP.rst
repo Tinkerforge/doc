@@ -85,10 +85,7 @@ Options:
   Additionally, the R option can be used together with the E flag,
   see below.
 
-* Authentication (1 bit): This bit is set to 1 if the authentication is
-  used (not implemented yet on Bricks).
-
-* Other Options (2 bit): Two currently unused options, for future use.
+* Other Options (3 bit): Three currently unused options, for future use.
 
 Flags:
 
@@ -96,12 +93,12 @@ Flags:
   answer message to a function call. If it is different from zero it means that
   an error occurred.
 
- * 0 = OK
- * 1 = INVALID_PARAMETER (index out of range or similar)
- * 2 = FUNCTION_NOT_SUPPORTED
- * Value 3 is not used yet.
+ * 0: OK
+ * 1: Invalid parameter (index out-of-range or similar)
+ * 2: Function not supported
+ * Value 3 is not used yet
 
-* Future use (6 bit): Six possible flags for future use.
+* Future Use (6 bit): Six possible flags for future use.
 
 All data is represented in little endian. A *bool* value is represented by 1
 byte; 0 is false, all other values are true. A *float* value is represented by
@@ -212,12 +209,62 @@ corresponding response packet.
  will be a lot better, since there is no round-trip time.
 
 
+.. _llproto_tcpip_authentication:
+
+Authentication
+^^^^^^^^^^^^^^
+
+FIXME
+
+
 .. _llproto_tcpip_api:
 
 API
 ---
 
-The following functions and callbacks are supported by all devices.
+The API is split in several categories. The Brick Daemon functions currently
+deal with authentication. The broadcast functions are send to all devices and
+the callbacks are send back by the devices.
+
+Brick Daemon Functions
+^^^^^^^^^^^^^^^^^^^^^^
+
+Support for :ref:`authentication <tutorial_authentication>` was added in
+Brick Daemon version 2.1.0 and Master Brick firmware version 2.2.0 for the
+Ethernet and WIFI Extensions. Authentication is done per-connection. For this
+Brick Daemon got its own UID ``2`` (1 as integer) as the manager of the
+TCP/IP connection.
+
+
+.. tcpip:function:: get_authentication_nonce
+
+ :functionid: 1
+ :emptyrequest: empty payload
+ :response server_nonce: uint8[4]
+
+ This is step 1 of the authentication handshake. Asks the manager of the TCP/IP
+ connection for the server authentication nonce.
+
+
+.. tcpip:function:: authenticate
+
+ :functionid: 2
+ :request client_nonce: uint8[4]
+ :request digest: uint8[20]
+ :noresponse: no response
+
+ This is step 2 of the authentication handshake. Sends the client nonce and
+ the HMAC-SHA1 digest to the manager of the TCP/IP connection.
+ If the handshake succeeds the connection switches from non-authenticated to
+ authenticated state and communication can continue as normal. If the handshake
+ fails then the connection gets closed.
+
+
+Broadcast Functions
+^^^^^^^^^^^^^^^^^^^
+
+The following functions are supported by all devices. The UID in the packet
+header has to be set to ``1`` (0 as integer) for broadcast.
 
 
 .. tcpip:function:: disconnect_probe
@@ -237,9 +284,6 @@ The following functions and callbacks are supported by all devices.
  As this feature is only useful for the WIFI Extension the Brick Daemon just
  drops incoming packets with this function ID and does not forward them over USB.
 
- This is a broadcast function and the UID in the packet header has to be
- set to 0 (broadcast).
-
 
 .. tcpip:function:: enumerate
 
@@ -250,12 +294,12 @@ The following functions and callbacks are supported by all devices.
  Triggers the :tcpip:func:`CALLBACK_ENUMERATE` callback for all devices
  currently connected to the Brick Daemon.
 
- This is a broadcast function and the UID in the packet header has to be
- set to 0 (broadcast).
-
  Use this function to enumerate all connected devices without the need to know
  their UIDs beforehand.
 
+
+Callbacks
+^^^^^^^^^
 
 .. tcpip:function:: CALLBACK_FORCED_ACK
 
@@ -283,33 +327,29 @@ The following functions and callbacks are supported by all devices.
 
  The callback has seven parameters:
 
- * *uid*: The UID of the device.
- * *connected_uid*: UID where the device is connected to. For a Bricklet this
+ * ``uid``: The UID of the device.
+ * ``connected_uid``: UID where the device is connected to. For a Bricklet this
    will be a UID of the Brick where it is connected to. For a Brick it will be
    the UID of the bottom Master Brick in the stack. For the bottom Master Brick
-   in a stack this will be "1". With this information it is possible to
+   in a stack this will be "0". With this information it is possible to
    reconstruct the complete network topology.
- * *position*: For Bricks: '0' - '8' (position in stack). For Bricklets:
+ * ``position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
    'a' - 'd' (position on Brick).
- * *hardware_version*: Major, minor and release number for hardware version.
- * *firmware_version*: Major, minor and release number for firmware version.
- * *device_identifier*: A number that represents the device, instead of the
-   name of the device (easier to parse).
- * *enumeration_type*: Type of enumeration.
+ * ``hardware_version``: Major, minor and release number for hardware version.
+ * ``firmware_version``: Major, minor and release number for firmware version.
+ * ``device_identifier``: A number that represents the device.
+ * ``enumeration_type``: Type of enumeration.
 
  Possible enumeration types are:
 
- * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
-   triggered by user).
- * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
-   (automatically send by Brick after establishing a communication connection).
-   This indicates that the device has potentially lost its previous
-   configuration and needs to be reconfigured.
- * IPCON_ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
-   possible for USB connection). In this case only *uid* and *enumeration_type*
-   are valid.
+ * 0: Device is available (enumeration triggered by user).
+ * 1: Device is newly connected (automatically send by Brick after establishing
+   a communication connection). This indicates that the device has potentially
+   lost its previous configuration and needs to be reconfigured.
+ * 2: Device is disconnected (only possible for USB connection).
+   In this case only ``uid`` and ``enumeration_type`` are valid.
 
  It should be possible to implement plug-and-play functionality with this
  (as is done in Brick Viewer).
 
- The device identifiers can be found :ref:`here <device_identifier>`.
+ The device identifier numbers can be found :ref:`here <device_identifier>`.

@@ -111,6 +111,7 @@ Ressourcen
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/ethernet_extension_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
 
+
 .. _ethernet_configuration:
 
 Ethernet Konfiguration
@@ -132,6 +133,25 @@ geklickt werden und der Master Brick neu gestartet werden.
    :alt: Ethernet Extension Konfiguration
    :align: center
    :target: ../../_images/Extensions/extension_ethernet_brickv.jpg
+
+
+.. _ethernet_configuration_authentication:
+
+Authentifizierung
+"""""""""""""""""
+
+Die Ethernet Extension unterstützt seit Master Brick Firmware Version 2.2.0
+Authentifizierung. Diese ist standardmäßig deaktiviert. Um
+Authentifizierung zu aktivieren muss das Häkchen bei "Use Authentication"
+gesetzt und ein Authentifizierungsgeheimnis eingetragen werden. Das Geheimnis
+kann maximal 64 ASCII Zeichen lang sein. Nachdem die Konfiguration gespeichert
+und der Master Brick neugestartet wurde ist Authentifizierung aktiv.
+
+Ab jetzt muss jede TCP/IP Verbindung zur Ethernet Extension zuerst nachweisen,
+dass sie das Authentifizierungsgeheimnis kennt, bevor normale Kommunikation
+stattfinden kann. Für mehr Informationen zur Authentifizierung siehe das
+dazugehörige :ref:`Tutorial <tutorial_authentication>`.
+
 
 PoE Stromversorgung
 ^^^^^^^^^^^^^^^^^^^

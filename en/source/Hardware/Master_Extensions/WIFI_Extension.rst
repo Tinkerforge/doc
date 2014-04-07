@@ -358,6 +358,30 @@ and Network prefix length. For example:
 Finally, save the new network configuration and connect to it. Now your smart
 phone should be connected to the access point of the WIFI Extension.
 
+
+.. _extension_wifi_authentication:
+
+Authentication
+--------------
+
+The WIFI Extension supports authentication since Master Brick firmware
+version 2.2.0. Authentication is disabled by default. Tick the "Use
+Authentication" check box and choose an authentication secret to enable it.
+This secret can be 64 ASCII characters long. After saving the configuration
+and restarting the Master Brick authentication is enabled.
+
+.. image:: /Images/Extensions/extension_wifi_authentication.jpg
+   :scale: 100 %
+   :alt: Configure Authentication
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi_authentication.jpg
+
+Now every TCP/IP connection to the WIFI Extension has to prove to the
+Master Brick that it knows the authentication secret before normal communication
+can occur. See the :ref:`authentication tutorial <tutorial_authentication>`
+for more information.
+
+
 .. _extension_wifi_leds:
 
 LEDs and Connectivity

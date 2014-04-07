@@ -111,6 +111,7 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/ethernet_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
 
+
 .. _ethernet_configuration:
 
 Ethernet Configuration
@@ -132,6 +133,24 @@ After configuring the Ethernet Extension you have to press the button
    :alt: Ethernet Extension Configuration
    :align: center
    :target: ../../_images/Extensions/extension_ethernet_brickv.jpg
+
+
+.. _ethernet_configuration_authentication:
+
+Authentication
+""""""""""""""
+
+The Ethernet Extension supports authentication since Master Brick firmware
+version 2.2.0. Authentication is disabled by default. Tick the "Use
+Authentication" check box and choose an authentication secret to enable it.
+This secret can be 64 ASCII characters long. After saving the configuration
+and restarting the Master Brick authentication is enabled.
+
+Now every TCP/IP connection to the Ethernet Extension has to prove to the
+Master Brick that it knows the authentication secret before normal communication
+can occur. See the :ref:`authentication tutorial <tutorial_authentication>`
+for more information.
+
 
 PoE Power Supply
 ^^^^^^^^^^^^^^^^
