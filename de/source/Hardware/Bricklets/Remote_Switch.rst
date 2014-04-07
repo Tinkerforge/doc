@@ -150,10 +150,7 @@ BAT                 RC 3500-A                            Schalter               
 |nbsp|              RC AAA3680-A                         Schalter                           A
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
-Brennstuhl          RC 2044 Indoor                       Schalter Set                       A
-|nbsp|              RC 2044 Outdoor                      Außenschalter Set                  A
-|nbsp|              RC 3600                              Schalter Set                       A
-|nbsp|              RCS 1000 N Comfort                   Schalter Set                       A
+Brennstuhl          RCS 1000 N Comfort                   Schalter Set                       A
 |nbsp|              RCS 1044 N Comfort                   Außenschalter Set                  A
 |nbsp|              RCS 2044 N Comfort Indoor            Schalter Set                       A
 |nbsp|              RCS 2044 N Comfort Outdoor           Außenschalter Set                  A

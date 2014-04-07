@@ -148,10 +148,7 @@ BAT                 RC 3500-A                            Switch                 
 |nbsp|              RC AAA3680-A                         Switch                             A
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
-Brennstuhl          RC 2044 Indoor                       Switch Set                         A
-|nbsp|              RC 2044 Outdoor                      Outdoor Switch Set                 A
-|nbsp|              RC 3600                              Switch Set                         A
-|nbsp|              RCS 1000 N Comfort                   Switch Set                         A
+Brennstuhl          RCS 1000 N Comfort                   Switch Set                         A
 |nbsp|              RCS 1044 N Comfort                   Outdoor Switch Set                 A
 |nbsp|              RCS 2044 N Comfort Indoor            Switch Set                         A
 |nbsp|              RCS 2044 N Comfort Outdoor           Outdoor Switch Set                 A
