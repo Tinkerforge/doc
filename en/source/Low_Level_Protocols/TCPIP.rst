@@ -184,7 +184,7 @@ Afterwards you will periodically receive response packets with
 
 * UID 3631747890 as uint32 (0x32 0x13 0x78 0xd8),
 * Packet length 14 as uint8 (0x0e),
-* function ID 32 as uint8 (0x20),
+* Function ID 32 as uint8 (0x20),
 * Sequence number 0 and response expected 1 as uint8 (0x08)
 * Flags 0 as uint8 (0x00)
 
@@ -211,10 +211,55 @@ corresponding response packet.
 
 .. _llproto_tcpip_authentication:
 
-Authentication
-^^^^^^^^^^^^^^
+Authentication Handshake
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-FIXME
+Support for :ref:`authentication <tutorial_authentication>` was added in
+Brick Daemon version 2.1.0 and Master Brick firmware version 2.2.0 for the
+Ethernet and WIFI Extensions.
+
+With authentication enabled each TCP/IP connection starts in non-authenticated
+state. Before any normal communication can occur an authentication handshake
+has to be performed successfully to switch the connection to authenticated state.
+This handshake uses the `server/client nonce
+<http://en.wikipedia.org/wiki/Cryptographic_nonce>`__ approach utilizing
+`HMAC-SHA1 <http://en.wikipedia.org/wiki/Hmac>`__.
+
+The server side of the handshake is handled by the manager of the TCP/IP
+connection. This can either be a Brick Daemon or a Master Brick with a
+Ethernet or WIFI Extension. For this the manager of the TCP/IP connection
+(the server) got its own UID ``2`` (1 as integer) so it can receive function
+calls: :tcpip:func:`get_authentication_nonce` and :tcpip:func:`authenticate`.
+
+The handshake is initiated by the client (e.g. API bindings or Brick Viewer)
+calling the :tcpip:func:`get_authentication_nonce` function to receive the 4 byte
+
+* Server nonce 0x50 0xc0 0x29 0xd1.
+
+Then the client generates a 4 byte
+
+* Client nonce 0xdc 0x42 0x57 0x4d
+
+that it concatenates to the server nonce to form the
+
+* Full nonce 0x50 0xc0 0x29 0xd1 0xdc 0x42 0x57 0x4d.
+
+Next the client uses the
+
+* Authentication secret ``My Authentication Secret!``
+
+as key to calculate the 20 byte
+
+* HMAC-SHA1 digest 0x61 0x3d 0x62 0xec 0x24 0x6e 0xeb 0xe3 0x08 0xf7 0x95 0x60 0x56 0x0d 0xa7 0xee 0x29 0x06 0x40 0x01
+
+of the final nonce. The digest is then send to the server along with the
+client nonce by calling the :tcpip:func:`authenticate` function.
+The server receives client nonce and digest and does the same calculations as
+the client did. If the server calculates the same digest as provided by the
+client then client and server used the same secret. In this case the connection
+is switched to authenticated state and the client can proceed with normal
+communication. If the digests don't match the client used a mismatching
+authentication secret and the server closes the connection.
 
 
 .. _llproto_tcpip_api:
@@ -242,8 +287,8 @@ TCP/IP connection.
  :emptyrequest: empty payload
  :response server_nonce: uint8[4]
 
- This is step 1 of the authentication handshake. Asks the manager of the TCP/IP
- connection for the server authentication nonce.
+ This is the first function used in the authentication handshake. It asks the
+ manager of the TCP/IP connection for the server authentication nonce.
 
 
 .. tcpip:function:: authenticate
@@ -253,11 +298,11 @@ TCP/IP connection.
  :request digest: uint8[20]
  :noresponse: no response
 
- This is step 2 of the authentication handshake. Sends the client nonce and
- the HMAC-SHA1 digest to the manager of the TCP/IP connection.
- If the handshake succeeds the connection switches from non-authenticated to
- authenticated state and communication can continue as normal. If the handshake
- fails then the connection gets closed.
+ This is the second function used in the authentication handshake. It sends
+ the client nonce and the HMAC-SHA1 digest to the manager of the TCP/IP
+ connection. If the handshake succeeds the connection switches from
+ non-authenticated to authenticated state and communication can continue as
+ normal. If the handshake fails then the connection gets closed.
 
 
 Broadcast Functions

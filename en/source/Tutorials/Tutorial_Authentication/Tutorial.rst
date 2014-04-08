@@ -23,6 +23,9 @@ Support for authentication was added in this software versions:
 * All API bindings: 2.1.0
 * Master Brick firmware (Ethernet/WIFI Extension): 2.2.0
 
+
+.. _tutorial_authentication_concept:
+
 Concept
 -------
 
@@ -37,8 +40,8 @@ To switch a TCP/IP connection from non-authenticated to authenticated state the
 client has to authenticate itself, it has to prove to the Brick Daemon or the
 Ethernet/WIFI Extension that it knows the authentication secret and thus is
 allowed to control the Bricks and Bricklets. This prove is done by a HMAC-SHA1
-based handshake during which the authentication secret is never directly
-exchanged over the wire.
+based :ref:`handshake <llproto_tcpip_authentication>` during which the
+authentication secret is never directly exchanged over the wire.
 
 If the handshake succeeds the connection switches from non-authenticated to
 authenticated state and communication can continue as normal. If the handshake
@@ -63,7 +66,8 @@ configure the authentication secret:
 Usage
 -----
 
-Once authentication is enabled you need to perform the authentication handshake
+Once authentication is enabled you need to perform the
+:ref:`authentication handshake <llproto_tcpip_authentication>`
 in your program to switch the connection from non-authenticated to authenticated
 state. In Brick Viewer you just tick the "Use Authentication" check box on the
 Setup tab and enter your authentication secret before clicking connect and
