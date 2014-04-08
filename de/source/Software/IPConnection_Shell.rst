@@ -77,14 +77,15 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
 
  Ist die ``--secret`` Option angegeben dann wird ein
  Authentifizierungs-Handshake mit dem verbundenen Brick Daemon
- oder WIFI/Ethernet Extension durchgeführt. Bei Erfolg wechselt die Verbindung
- vom nicht-authentifizierten in den authentifizierten Zustand und die
- Kommunikation kann normal weitergeführt werden. Bei Misserfolg wird die
+ oder WIFI/Ethernet Extension durchgeführt.
+ Ist der Handshake erfolgreich dann wechselt die Verbindung vom
+ nicht-authentifizierten in den authentifizierten Zustand und die Kommunikation
+ kann normal weitergeführt werden. Schlägt der Handshake fehl wird die
  Verbindung durch die Gegenseite geschlossen. Die Authentifizierung kann
  fehlschlagen wenn das Authentifizierungsgeheimnis nicht übereinstimmt oder
  Authentifizierung für den Brick Daemon oder die WIFI/Ethernet Extension nicht
- aktiviert ist. Für mehr Informationen zur Authentifizierung siehe das dazugehörige
- :ref:`Tutorial <tutorial_authentication>`.
+ aktiviert ist. Für mehr Informationen zur Authentifizierung siehe das
+ dazugehörige :ref:`Tutorial <tutorial_authentication>`.
 
  Das Trennzeichen für Array-Einträge wird beim Parse und Formatieren von Arrays
  verwendet. Ein Array mit den drei Werten 1, 2 und 3 wird als ``1,2,3``

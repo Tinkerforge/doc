@@ -9,7 +9,7 @@ Authentication - Tutorial
 By default no access control is performed on the TCP/IP interface of
 Brick Daemon and the Ethernet/WIFI Extension. If you can connect to it you
 can control the Bricks and Bricklets. In most cases this might no be a problem
-because there are no untrusted third parties in your network.
+because there are no untrusted third parties in your local network.
 
 In cases where you need to protect your stack against access from untrusted
 third parties you can use authentication to do so. With authentication enabled
@@ -47,7 +47,7 @@ If the handshake succeeds the connection switches from non-authenticated to
 authenticated state and communication can continue as normal. If the handshake
 fails then the connection gets closed. Authentication can fail if the wrong
 secret was used or if authentication is not enabled at all on the Brick Daemon
-or the WIFI/Ethernet Extension.
+or the Ethernet/WIFI Extension.
 
 
 Configuration
@@ -63,13 +63,15 @@ configure the authentication secret:
 * :ref:`Ethernet Extension: Authentication <ethernet_configuration_authentication>`
 * :ref:`WIFI Extension: Authentication <extension_wifi_authentication>`
 
+
 Usage
 -----
 
-Once authentication is enabled you need to perform the
-:ref:`authentication handshake <llproto_tcpip_authentication>`
-in your program to switch the connection from non-authenticated to authenticated
-state. In Brick Viewer you just tick the "Use Authentication" check box on the
+Once authentication is enabled you need to perform the :ref:`authentication
+handshake <llproto_tcpip_authentication>` in your client to switch the
+connection from non-authenticated to authenticated state.
+
+In Brick Viewer you just tick the "Use Authentication" check box on the
 Setup tab and enter your authentication secret before clicking connect and
 Brick Viewer will just work as normal.
 
@@ -77,10 +79,11 @@ In your own program you need to call the ``authenticate()`` function that was
 added to all API bindings. This function takes the secret and performs the
 handshake. It'll either succeed or fail with and error or exception indicating
 that you provided the wrong secret or that authentication is not enabled at all
-on the Brick Daemon or the WIFI/Ethernet Extension.
+on the Brick Daemon or the Ethernet/WIFI Extension.
 
 There are two ways to call ``authenticate()`` in your program, one without
 callbacks and one with callbacks.
+
 
 Without Callbacks
 ^^^^^^^^^^^^^^^^^
@@ -96,10 +99,13 @@ You can just insert the call to ``authenticate()`` after the call to
  }
 
 It's easy to insert a single additional line in your program and use
-authentication. But this does not work with auto-reconnect. As explained
-in the tutorial about the :ref:`rugged approach <tutorial_rugged_approach>`
-your code should follow a basic structure using the connected and enumerate
-callback to be more resilient to outages.
+authentication. But this does not work with auto-reconnect.
+
+As explained in the tutorial about the :ref:`rugged approach
+<tutorial_rugged_approach>` your code should follow a basic structure using
+the connected and enumerate callback in combination with auto-reconnect to
+be more resilient to outages.
+
 
 With Callbacks
 ^^^^^^^^^^^^^^

@@ -110,9 +110,10 @@ Grundfunktionen
  :input secret: String
 
  Führt einen Authentifizierungs-Handshake mit dem verbundenen Brick Daemon
- oder WIFI/Ethernet Extension durch. Bei Erfolg wechselt die Verbindung
- vom nicht-authentifizierten in den authentifizierten Zustand und die
- Kommunikation kann normal weitergeführt werden. Bei Misserfolg wird die
+ oder WIFI/Ethernet Extension durch.
+ Ist der Handshake erfolgreich dann wechselt die Verbindung vom
+ nicht-authentifizierten in den authentifizierten Zustand und die Kommunikation
+ kann normal weitergeführt werden. Schlägt der Handshake fehl wird die
  Verbindung durch die Gegenseite geschlossen. Die Authentifizierung kann
  fehlschlagen wenn das Authentifizierungsgeheimnis nicht übereinstimmt oder
  Authentifizierung für den Brick Daemon oder die WIFI/Ethernet Extension nicht
