@@ -828,7 +828,7 @@ def make_download_bindings_table():
         if not binding.is_programming_language or not binding.is_published:
             continue
 
-        rows.append(row_cell.format(binding.short_display_name, binding.url_part, binding.url_part_for_doc, archive, bindings_and_examples, *bindings_versions[binding.url_part]))
+        rows.append(row_cell.format(binding.display_name, binding.url_part, binding.url_part_for_doc, archive, bindings_and_examples, *bindings_versions[binding.url_part]))
 
     return table_head + '\n'.join(rows) + '\n'
 
@@ -864,7 +864,7 @@ def make_api_bindings_bindings_table():
 
     for binding in bindings:
         if binding.is_programming_language and binding.is_published:
-            rows.append(row.format(binding.short_display_name, binding.url_part))
+            rows.append(row.format(binding.display_name, binding.url_part))
 
     return '\n'.join(rows) + '\n'
 
@@ -993,9 +993,9 @@ def make_hlpi_table(device, category):
             continue
 
         if binding.is_programming_language:
-            rows.append(row_source.format(binding.short_display_name, device.url_part, category, binding.url_part))
+            rows.append(row_source.format(binding.display_name, device.url_part, category, binding.url_part))
         else:
-            rows.append(row.format(binding.short_display_name, device.url_part, category, binding.url_part))
+            rows.append(row.format(binding.display_name, device.url_part, category, binding.url_part))
 
     return table_head + '\n'.join(rows) + '\n'
 
