@@ -873,12 +873,12 @@ def make_api_bindings_links_table(binding):
 
     brick_lines = []
     for brick in bricks:
-        if brick.is_published and len(brick.bindings) > 0: # released and has bindings
+        if brick.is_published and len(brick.bindings) > 0: # published and has bindings
             brick_lines.append(api_bindings_links_brick_row[lang].format(brick.url_part, binding.url_part, brick.display_name))
 
     bricklet_lines = []
     for bricklet in bricklets:
-        if bricklet.is_published and len(bricklet.bindings) > 0: # released and has bindings
+        if bricklet.is_published and len(bricklet.bindings) > 0: # published and has bindings
             bricklet_lines.append(api_bindings_links_bricklet_row[lang].format(bricklet.url_part, binding.url_part, bricklet.display_name))
 
     return api_bindings_links_table_head[lang].format(ipcon_line,
@@ -1031,6 +1031,16 @@ def make_device_identifier_table():
 
     return table_head + '\n'.join(rows) + '\n'
 
+def make_authentication_tutorial_examples_table():
+    row = '* :ref:`{0} <ipcon_{1}_examples_authenticate>`'
+    rows = []
+
+    for binding in bindings:
+        if binding.is_programming_language and binding.is_published:
+            rows.append(row.format(binding.display_name, binding.url_part))
+
+    return '\n'.join(rows) + '\n'
+
 def write_if_changed(path, content):
     if os.path.exists(path):
         f = open(path, 'rb')
@@ -1109,6 +1119,9 @@ def generate(path):
 
     print('Generating Device_Identifier.table')
     write_if_changed(os.path.join(path, 'source', 'Software', 'Device_Identifier.table'), make_device_identifier_table())
+
+    print('Generating Device_Identifier.table')
+    write_if_changed(os.path.join(path, 'source', 'Tutorials', 'Tutorial_Authentication', 'Tutorial_authenticate_examples.table'), make_authentication_tutorial_examples_table())
 
     for binding in bindings:
         if not binding.is_programming_language:

@@ -40,6 +40,9 @@ Enumerate
 
    </div>
 
+
+.. _ipcon_labview_examples_authenticate:
+
 Authenticate
 ^^^^^^^^^^^^
 

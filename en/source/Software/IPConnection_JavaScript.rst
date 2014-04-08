@@ -41,6 +41,9 @@ Enumerate (HTML)
  :linenos:
  :tab-width: 4
 
+
+.. _ipcon_javascript_examples_authenticate:
+
 Authenticate (Node.js)
 ^^^^^^^^^^^^^^^^^^^^^^
 

@@ -126,5 +126,6 @@ before calling ``enumerate()``. This way you can ensure that your connection
 is always in the authenticated state.
 
 For all API bindings there is a new authenticate example that demonstrates
-this approach available in the :ref:`IPConnection <api_bindings_ip_connection>`
-documentation.
+this approach:
+
+.. include:: Tutorial_authenticate_examples.table
