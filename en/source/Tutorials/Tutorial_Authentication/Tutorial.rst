@@ -8,7 +8,7 @@ Authentication - Tutorial
 
 By default no access control is performed on the TCP/IP interface of
 Brick Daemon and the Ethernet/WIFI Extension. If you can connect to it you
-can control the Bricks and Bricklets. In most cases this might no be a problem
+can control the Bricks and Bricklets. In most cases this might not be a problem
 because there are no untrusted third parties in your local network.
 
 In cases where you need to protect your stack against access from untrusted
@@ -16,13 +16,12 @@ third parties you can use authentication to do so. With authentication enabled
 only parties that know your authentication secret can control your Bricks and
 Bricklets.
 
-Support for authentication was added in this software versions:
+Support for authentication was added in these software versions:
 
 * Brick Daemon: 2.1.0
 * Brick Viewer: 2.1.0
 * All API bindings: 2.1.0
 * Master Brick firmware (Ethernet/WIFI Extension): 2.2.0
-
 
 .. _tutorial_authentication_concept:
 

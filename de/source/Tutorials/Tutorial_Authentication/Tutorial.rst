@@ -39,7 +39,7 @@ verworfen. Im nicht-authentifizierten Zustand findet keine normale
 Kommunikation statt.
 
 Um eine TCP/IP Verbindung vom nicht-authentifizierten in den authentifizierten
-Zustand zu überführen muss der Client sich authentifizierten, er muss dem Brick
+Zustand zu überführen muss der Client sich authentifizierten. Er muss dem Brick
 Daemon oder der Ethernet/WIFI Extension beweisen, dass er das
 Authentifizierungsgeheimnis kennt und daher berechtigt ist die Bricks und
 Bricklets zu kontrollieren. Dieser Beweis wird über einen HMAC-SHA1
@@ -80,15 +80,16 @@ die TCP/IP Verbindung vom nicht-authentifizierten in den authentifizierten
 Zustand zu überführen.
 
 Im Brick Viewer muss dazu nur das Häkchen für "Use Authentication" auf dem
-Setup Tab gesetzt und das Authentifizierungsgeheimnis eingegeben werden vor
-dem Klick auf den "Connect" Knopf. Ab dann arbeitet Brick Viewer wie gewohnt.
+Setup Tab gesetzt und das Authentifizierungsgeheimnis vor dem Klick auf den 
+"Connect" Knopf eingegeben werden. Ab dann arbeitet Brick Viewer wie gewohnt.
 
 Im eigenen Programm muss stattdessen die ``authenticate()`` Funktion aufgerufen
-werden, die allen API Bindings hinzugefügt wurde. Diese Funktion bekommt das
+werden, die allen API Bindings hinzugefügt wurde. Diese Funktion bekommt als
 Parameter das Geheimnis übergeben und führt den Handshake durch. Dies ist
-entweder erfolgreich oder schlägt mit einem Fehlercode oder Exception fehl. In
-diesem Fall stimmt entweder das Geheimnis nicht überein, oder Authentifizierung
-für den Brick Daemon oder die Ethernet/WIFI Extension nicht aktiviert ist.
+entweder erfolgreich oder schlägt mit einem Fehlercode oder einer Exception 
+fehl. In diesem Fall stimmt entweder das Geheimnis nicht überein, 
+oder Authentifizierung für den Brick Daemon oder die Ethernet/WIFI Extension 
+ist nicht aktiviert.
 
 Es gibt zwei Arten ``authenticate()`` aufzurufen, ohne und mit Callbacks.
 
@@ -145,7 +146,7 @@ in den authentifizierten Zustand zu bringen bevor ``enumerate()`` aufgerufen
 wird. Auf diese Weise wird sichergestellt, dass die Verbindung sich immer
 im authentifizierten Zustand befindet.
 
-Für alle API Bindings gibt es eine neues Authentifizierungsbeispiel, das die
+Für alle API Bindings gibt es ein neues Authentifizierungsbeispiel, das die
 Verwendung dieses Ansatzes demonstriert:
 
 .. include:: Tutorial_authenticate_examples.table
