@@ -40,7 +40,15 @@ binding_tutorials = {
     'en': 'http://docs.oracle.com/javase/tutorial/',
     'de': 'http://docs.oracle.com/javase/tutorial/' # http://openbook.galileocomputing.de/javainsel/
     },
+'javascript': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'mathematica': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
+'matlab': {
     'en': 'FIXME',
     'de': 'FIXME'
     },
@@ -96,6 +104,7 @@ bindings = [Binding('Modbus',            'modbus',      None,          False, Tr
             Binding('JavaScript',        'javascript',  'JavaScript',  True,  False),
             Binding('LabVIEW',           'labview',     'LabVIEW',     True,  True),
             Binding('Mathematica',       'mathematica', 'Mathematica', True,  True),
+            Binding('MATLAB',            'matlab',      'MATLAB',      True,  False),
             Binding('Perl',              'perl',        'Perl',        True,  True),
             Binding('PHP',               'php',         'PHP',         True,  True),
             Binding('Python',            'python',      'Python',      True,  True),
