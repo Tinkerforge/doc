@@ -1,0 +1,27 @@
+\documentclass[a4paper]{article}
+
+\usepackage{bytefield}
+
+\begin{document}
+
+\fontfamily{lmss}\selectfont
+
+\begin{bytefield}{32}
+\bitheader{0,7,8,15,16,23,24,31} \\
+\begin{rightwordgroup}{Transport \\ Header}
+\bitbox{32}{UID} \\
+\bitbox{8}{Length} & \bitbox{8}{Function ID} & \bitbox{4}{Seq \#} & \bitbox{1}{R} & \bitbox{3}{OO} & \bitbox{2}{E} & \bitbox{6}{Future Use}
+\end{rightwordgroup} \\
+\begin{rightwordgroup}{Function \\ Data}
+\wordbox[lrt]{1}{Payload} \\
+\skippedwords \\
+\wordbox[lrb]{1}{}
+\end{rightwordgroup} \\
+\begin{rightwordgroup}{According \\ to Options}
+\wordbox[lrt]{1}{Optional Data} \\
+\skippedwords \\
+\wordbox[lrb]{1}{}
+\end{rightwordgroup}
+\end{bytefield}
+
+\end{document}
