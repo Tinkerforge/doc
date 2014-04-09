@@ -56,14 +56,26 @@ html: generate
 	if [ ! -d $(BUILDDIR)/html/_images/Screenshots ]; then ln -s `pwd`/source/Images/Screenshots $(BUILDDIR)/html/_images/Screenshots; fi;
 	if [ ! -d $(BUILDDIR)/html/_images/Software ]; then ln -s `pwd`/source/Images/Software $(BUILDDIR)/html/_images/Software; fi;
 	if [ ! -d $(BUILDDIR)/html/_images/Tutorial ]; then ln -s `pwd`/source/Images/Tutorial $(BUILDDIR)/html/_images/Tutorial; fi;
+
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 	@echo
+
+	@echo copy javascript html examples
+	mkdir -p $(BUILDDIR)/html/Software/Examples/JavaScript
+	cp source/Software/*.html $(BUILDDIR)/html/Software/Examples/JavaScript
+	cp source/Software/Bricks/*.html $(BUILDDIR)/html/Software/Examples/JavaScript
+	cp source/Software/Bricklets/*.html $(BUILDDIR)/html/Software/Examples/JavaScript
+	cp source/Software/Tinkerforge.js $(BUILDDIR)/html/Software/Examples/JavaScript
+
+	@echo fix download and partners page
 	sed -e "s|'doc'|'downloads'|" $(BUILDDIR)/html/Downloads.html > $(BUILDDIR)/html/Downloads.htmltmp
 	mv $(BUILDDIR)/html/Downloads.htmltmp $(BUILDDIR)/html/Downloads.html
 	sed -e "s|'doc'|'partners'|" $(BUILDDIR)/html/Partners.html > $(BUILDDIR)/html/Partners.htmltmp
 	mv $(BUILDDIR)/html/Partners.htmltmp $(BUILDDIR)/html/Partners.html
+
+	@echo copy to build/
 	mkdir -p build/
 	cp -r $(BUILDDIR)/* build/
 
@@ -88,6 +100,15 @@ fasthtml:
 	@echo
 	@echo "Build finished. The HTML pages are in $(FASTBUILDDIR)/html."
 	@echo
+
+	@echo copy javascript html examples
+	mkdir -p $(FASTBUILDDIR)/html/Software/Examples/JavaScript
+	cp source/Software/*.html $(FASTBUILDDIR)/html/Software/Examples/JavaScript
+	cp source/Software/Bricks/*.html $(FASTBUILDDIR)/html/Software/Examples/JavaScript
+	cp source/Software/Bricklets/*.html $(FASTBUILDDIR)/html/Software/Examples/JavaScript
+	cp source/Software/Tinkerforge.js $(FASTBUILDDIR)/html/Software/Examples/JavaScript
+
+	@echo fix download and partners page
 	sed -e "s|'doc'|'downloads'|" $(FASTBUILDDIR)/html/Downloads.html > $(FASTBUILDDIR)/html/Downloads.htmltmp
 	mv $(FASTBUILDDIR)/html/Downloads.htmltmp $(FASTBUILDDIR)/html/Downloads.html
 	sed -e "s|'doc'|'partners'|" $(FASTBUILDDIR)/html/Partners.html > $(FASTBUILDDIR)/html/Partners.htmltmp

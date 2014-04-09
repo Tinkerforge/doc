@@ -34,7 +34,8 @@ Enumerate (Node.js)
 Enumerate (HTML)
 ^^^^^^^^^^^^^^^^
 
-`Download (ExampleEnumerate.html) <https://github.com/Tinkerforge/generators/raw/master/javascript/ExampleEnumerate.html>`__
+`Download (ExampleEnumerate.html) <https://github.com/Tinkerforge/generators/raw/master/javascript/ExampleEnumerate.html>`__,
+`Test (ExampleEnumerate.html) <http://www.tinkerforge.com/en/doc/Software/Examples/JavaScript/IPConnection_JavaScript_ExampleEnumerate.html>`__
 
 .. literalinclude:: IPConnection_JavaScript_ExampleEnumerate.html
  :language: html
@@ -57,7 +58,8 @@ Authenticate (Node.js)
 Authenticate (HTML)
 ^^^^^^^^^^^^^^^^^^^
 
-`Download (ExampleAuthenticate.html) <https://github.com/Tinkerforge/generators/raw/master/javascript/ExampleAuthenticate.html>`__
+`Download (ExampleAuthenticate.html) <https://github.com/Tinkerforge/generators/raw/master/javascript/ExampleAuthenticate.html>`__,
+`Test (ExampleAuthenticate.html) <http://www.tinkerforge.com/en/doc/Software/Examples/JavaScript/IPConnection_JavaScript_ExampleAuthenticate.html>`__
 
 .. literalinclude:: IPConnection_JavaScript_ExampleAuthenticate.html
  :language: html
