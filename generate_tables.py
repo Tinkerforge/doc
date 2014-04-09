@@ -185,6 +185,10 @@ bricklet_descriptions = {
     'en': 'Makes all Bricklet signals available',
     'de': 'Macht alle Bricklet Signale zugänglich'
     },
+'color': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'current12': {
     'en': 'Bidirectional current sensor for up to 12.5A',
     'de': 'Bidirektionaler Stromsensor für bis zu 12,5A'
@@ -216,6 +220,10 @@ bricklet_descriptions = {
 'hall_effect': {
     'en': 'Detects presence of magnetic field',
     'de': 'Detektiert Magnetfelder'
+    },
+'heart_rate': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 'humidity': {
     'en': 'Measures relative humidity',
@@ -348,6 +356,7 @@ bricklets = [Bricklet('Ambient Light',            'ambient_light',            bi
              Bricklet('Analog Out',               'analog_out',               bindings, True),
              Bricklet('Barometer',                'barometer',                bindings, True),
              Bricklet('Breakout',                 'breakout',                 [],       True),
+             Bricklet('Color',                    'color',                    bindings, False),
              Bricklet('Current12',                'current12',                bindings, True),
              Bricklet('Current25',                'current25',                bindings, True),
              Bricklet('Distance IR',              'distance_ir',              bindings, True),
@@ -356,6 +365,7 @@ bricklets = [Bricklet('Ambient Light',            'ambient_light',            bi
              Bricklet('Dual Relay',               'dual_relay',               bindings, True),
              Bricklet('GPS',                      'gps',                      bindings, True),
              Bricklet('Hall Effect',              'hall_effect',              bindings, True),
+             Bricklet('Heart Rate',               'heart_rate',               bindings, False),
              Bricklet('Humidity',                 'humidity',                 bindings, True),
              Bricklet('Industrial Digital In 4',  'industrial_digital_in_4',  bindings, True),
              Bricklet('Industrial Digital Out 4', 'industrial_digital_out_4', bindings, True),
