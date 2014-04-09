@@ -471,7 +471,7 @@ index_table_head = {
 """.. csv-table::
  :header: "", "API"
  :delim: |
- :widths: 15, 40
+ :widths: 19, 36
 
 {0}
  |
@@ -494,7 +494,7 @@ index_table_head = {
 """.. csv-table::
  :header: "", "API"
  :delim: |
- :widths: 15, 40
+ :widths: 19, 36
 
 {0}
  |
