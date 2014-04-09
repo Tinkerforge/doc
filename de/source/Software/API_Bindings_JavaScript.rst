@@ -38,7 +38,7 @@ kopiert werden::
 
 Dann muss noch der ``require`` Aufruf angepasst werden. Statt:
 
-.. code-block::javascript
+.. code-block:: javascript
 
     var Tinkerforge = require('tinkerforge');
 
@@ -47,7 +47,7 @@ Dann muss noch der ``require`` Aufruf angepasst werden. Statt:
 
 muss dort nun dies stehen:
 
-.. code-block::javascript
+.. code-block:: javascript
 
     var IPConnection = require('./Tinkerforge/IPConnection');
     var BrickStepper = require('./Tinkerforge/BrickStepper');

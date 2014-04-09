@@ -36,7 +36,7 @@ the Stepper Brick configuration example from
 
 The ``require`` statement must be modified in this case as follows. Instead of:
 
-.. code-block::javascript
+.. code-block:: javascript
 
     var Tinkerforge = require('tinkerforge');
 
@@ -45,7 +45,7 @@ The ``require`` statement must be modified in this case as follows. Instead of:
 
 use:
 
-.. code-block::javascript
+.. code-block:: javascript
 
     var IPConnection = require('./Tinkerforge/IPConnection');
     var BrickStepper = require('./Tinkerforge/BrickStepper');
