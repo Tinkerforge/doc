@@ -29,6 +29,7 @@ Installation and usage instructions for each programming language:
 * :ref:`Delphi <api_bindings_delphi>`
 * :ref:`Java <api_bindings_java>`
 * :ref:`Java (Android) <api_bindings_java_android>`
+* :ref:`JavaScript <api_bindings_javascript>`
 * :ref:`LabVIEW <api_bindings_labview>`
 * :ref:`Mathematica <api_bindings_mathematica>`
 * :ref:`Perl <api_bindings_perl>`

@@ -101,7 +101,7 @@ bindings = [Binding('Modbus',            'modbus',      None,          False, Tr
             Binding('C#',                'csharp',      'CSharp',      True,  True),
             Binding('Delphi',            'delphi',      'Delphi',      True,  True),
             Binding('Java',              'java',        'Java',        True,  True),
-            Binding('JavaScript',        'javascript',  'JavaScript',  True,  False),
+            Binding('JavaScript',        'javascript',  'JavaScript',  True,  True),
             Binding('LabVIEW',           'labview',     'LabVIEW',     True,  True),
             Binding('Mathematica',       'mathematica', 'Mathematica', True,  True),
             Binding('MATLAB',            'matlab',      'MATLAB',      True,  False),
