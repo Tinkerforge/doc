@@ -45,14 +45,10 @@ By default Brick Daemon logs messages about information, warnings and errors.
 * Linux and Mac OS X: Log messages are written to ``/var/log/brickd.log``.
 
 
-.. _brickd_authentication:
+Configuration
+-------------
 
-Authentication Configuration
-----------------------------
-
-Since Brick Daemon version 2.1.0 authentication is supported, but disabled by
-default. To enable it you have to configure an authentication secret in the
-Brick Daemon configuration file.
+The Brick Daemon configuration is stored in a file using a key-value format:
 
 * Windows: The configuration file is called ``brickd.ini`` and stored in the
   Brick Daemon installation directory::
@@ -64,15 +60,8 @@ Brick Daemon configuration file.
 
    /etc/brickd.conf
 
-The configuration file has a key-value format. The authentication secret can
-be 64 ASCII characters long and has ``authentication.secret`` as key. An empty
-value or removing the ``authentication.secret`` key disables authentication.
-Here is the authentication part of an example configuration using
-``My Authentication Secret!`` as secret::
-
-  authentication.secret = My Authentication Secret!
-
-Afterwards Brick Daemon has to be restarted to pick up the configuration change:
+After changing the configuration file Brick Daemon has to be restarted to pick
+up the chnages:
 
 * Windows:
 
@@ -87,8 +76,59 @@ Afterwards Brick Daemon has to be restarted to pick up the configuration change:
    sudo launchctl stop com.tinkerforge.brickd
    sudo launchctl start com.tinkerforge.brickd
 
-Now every TCP/IP connection to the Brick Daemon has to prove that it knows the
-authentication secret before normal communication can occur. See the
+If there are errors in the configuration file then Brick Daemon will report
+them in the log.
+
+.. _brickd_websockets:
+
+WebSockets
+^^^^^^^^^^
+
+`WebSockets <http://en.wikipedia.org/wiki/WebSocket>`__ are supported since
+Brick Daemon version 2.1.0 , but disabled by default. To enable it you have to
+configure the WebSocket port in the Brick Daemon configuration file.
+
+The WebSocket port option has ``listen.websocket_port`` as key. An value of
+0 or removing the ``listen.websocket_port`` key disables the WebSocket support.
+Here is the WebSocket part of an example configuration using the recommened
+value 4280 as WebSocket port:
+
+  .. code-block:: none
+
+    listen.websocket_port = 4280
+
+Afterwards Brick Daemon has to be restarted to pick up the configuration
+change. Now the browser version of the :ref:`JavaScript bindings
+<api_bindings_javascript>` can connect to Brick Daemon and control Bricks
+and Bricklets.
+
+.. note::
+
+ As WebSockets basically allow any website in your browser to connect to your
+ Bricks and Bricklets we recommended that you use :ref:`authentication
+ <tutorial_authentication>` in combination with WebSockets.
+
+
+.. _brickd_authentication:
+
+Authentication
+^^^^^^^^^^^^^^
+
+Authentication is supported since Brick Daemon version 2.1.0, but disabled by
+default. To enable it you have to configure an authentication secret in the
+Brick Daemon configuration file.
+
+The authentication secret can be 64 ASCII characters long and has
+``authentication.secret`` as key. An empty value or removing the
+``authentication.secret`` key disables authentication. Here is the
+authentication part of an example configuration using
+``My Authentication Secret!`` as secret::
+
+  authentication.secret = My Authentication Secret!
+
+Afterwards Brick Daemon has to be restarted to pick up the configuration
+change. Now every TCP/IP connection to the Brick Daemon has to prove that it
+knows the authentication secret before normal communication can occur. See the
 :ref:`authentication tutorial <tutorial_authentication>` for more information.
 
 

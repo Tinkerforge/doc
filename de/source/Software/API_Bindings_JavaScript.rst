@@ -22,8 +22,8 @@ aus der Datei im ZIP installiert werden, oder aus der NPM Registry mittels
 ``sudo npm -g install tinkerforge``. Danach können alle Node.js Beispiel
 unverändert verwendet werden.
 
-Test eines Beispiels
---------------------
+Test eines Node.js Beispiels
+----------------------------
 
 Wenn das NPM Package nicht verwenden werden soll oder kann, dann kann der
 Quelltext auch direkt verwendet werden. Dafür muss der ``Tinkerforge`` Ordner
@@ -55,10 +55,21 @@ muss dort nun dies stehen:
     var ipcon = new IPConnection();
     var stepper = new BrickStepper(UID, ipcon);
 
-Um eines der HTML Beispiele zu testen muss nur der Quelltext der Browser
-Implementierung ``browser/source/Tinkerforge.js`` und das gewünschte HTML
-Beispiel in einen Ordner kopiert werden und kann dann einfach im Browser
-geöffnet werden.
+Test eines HTML Beispiels
+-------------------------
+
+Die Browser-Version der JavaScript Bindings verwendet `WebSockets
+<http://de.wikipedia.org/wiki/WebSocket>`__. WebSockets werden von Brick
+Daemon (seit Version 2.1.0) und der Ethernet Extension (seit Master Brick
+Firmware Version 2.2.0) unterstützt. Sie sind allerdings standardmäßig nicht
+aktiviert und müssen erst konfiguriert werden:
+
+* :ref:`Brick Daemon: WebSockets <brickd_websockets>`
+* :ref:`Ethernet Extension: WebSockets <ethernet_configuration_websockets>`
+
+Um eines der HTML Beispiele zu testen muss die Browser JavaScript Datei
+``browser/source/Tinkerforge.js`` und das gewünschte HTML Beispiel in einen
+Ordner kopiert werden und kann dann einfach im Browser geöffnet werden.
 
 
 API Dokumentation und Beispiele

@@ -135,6 +135,20 @@ After configuring the Ethernet Extension you have to press the button
    :target: ../../_images/Extensions/extension_ethernet_brickv.jpg
 
 
+.. _ethernet_configuration_websockets:
+
+WebSockets
+""""""""""
+
+The Ethernet Extension supports `WebSockets
+<http://en.wikipedia.org/wiki/WebSocket>`__ since Master Brick firmware
+version 2.2.0. The "Max Connections" option allows to freely devide the seven
+Sockets of the Ethernet Extension between plain and WebSockets connections.
+
+WebSockets are used by the browser version of the :ref:`JavaScript bindings
+<api_bindings_javascript>` to control Bricks and Bricklets.
+
+
 .. _ethernet_configuration_authentication:
 
 Authentication

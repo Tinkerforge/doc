@@ -134,6 +134,19 @@ geklickt werden und der Master Brick neu gestartet werden.
    :align: center
    :target: ../../_images/Extensions/extension_ethernet_brickv.jpg
 
+.. _ethernet_configuration_websockets:
+
+WebSockets
+""""""""""
+
+Die Ethernet Extension unterstützt seit Master Brick Firmware Version 2.2.0
+`WebSockets <http://de.wikipedia.org/wiki/WebSocket>`__. Die "Max Connections"
+Einstellung erlaubt die sieben Sockets der Ethernet Extension nach belieben
+zwischen normalen und WebSocket-Verbindungen aufzuteilen.
+
+WebSockets werden von der Browser-Version der :ref:`JavaScript Bindings
+<api_bindings_javascript>` verwendet um Bricks und Bricklets zu steuern.
+
 
 .. _ethernet_configuration_authentication:
 

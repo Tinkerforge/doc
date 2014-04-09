@@ -45,15 +45,10 @@ Fehler.
 * Linux und Mac OS X: Nachrichten werden nach ``/var/log/brickd.log`` geschrieben.
 
 
-.. _brickd_authentication:
+Konfiguration
+-------------
 
-Authentifizierung konfigurieren
--------------------------------
-
-Brick Daemon unterstützt seit Version 2.1.0 Authentifizierung. Diese ist
-standardmäßig deaktiviert. Um Authentifizierung zu aktivieren muss ein
-Authentifizierungsgeheimnis in der Brick Daemon Konfigurationsdatei eingetragen
-werden.
+Brick Daemon verwendet eine Konfigurationsdatei mit Schlüssel-Wert Format:
 
 * Windows: Die Konfigurationsdatei heißt ``brickd.ini`` und ist im Brick Daemon
   Installationsverzeichnis gespeichert::
@@ -65,17 +60,8 @@ werden.
 
    /etc/brickd.conf
 
-Die Konfigurationsdatei hat ein Schlüssel-Wert Format. Das
-Authentifizierungsgeheimnis kann maximal 64 ASCII Zeichen lang sein und hat den
-Schlüssel ``authentication.secret``. Ein leerer Wert oder das Fehlen des
-``authentication.secret`` Schlüssels führt zur deaktiviert der Authentifizierung.
-Hier der Authentifizierungsabschnitt einer Beispiel-Konfiguration die
-``My Authentication Secret!`` als Authentifizierungsgeheimnis verwendet::
-
-  authentication.secret = My Authentication Secret!
-
-Danach muss der Brick Daemon neugestartet werden, um die Änderungen an der
-Konfigurationsdatei zu übernehmen:
+Nach Änderungen an der Konfigurationsdatei muss Brick Daemon neugestartet
+werden um die Änderungen zu übernehmen:
 
 * Windows:
 
@@ -90,10 +76,66 @@ Konfigurationsdatei zu übernehmen:
    sudo launchctl stop com.tinkerforge.brickd
    sudo launchctl start com.tinkerforge.brickd
 
-Ab jetzt muss jede TCP/IP Verbindung zum Brick Daemon zuerst nachweisen,
-dass sie das Authentifizierungsgeheimnis kennt, bevor normale Kommunikation
-stattfinden kann. Für mehr Informationen zur Authentifizierung siehe das
-dazugehörige :ref:`Tutorial <tutorial_authentication>`.
+Wenn die Konfigurationsdatei fehlerhaft ist meldet Brick Daemon dies im Log.
+
+
+.. _brickd_websockets:
+
+WebSockets
+^^^^^^^^^^
+
+Brick Daemon unterstützt seit Version 2.1.0 `WebSockets
+<http://de.wikipedia.org/wiki/WebSocket>`__. Diese sind
+standardmäßig deaktiviert. Um WebSockets zu aktivieren muss ein
+WebSockets-Port in der Brick Daemon Konfigurationsdatei eingetragen werden.
+
+Die WebSockets-Port Option hat den Schlüssel ``listen.websocket_port``. Ein
+Wert von 0 oder das Fehlen des ``listen.websocket_port`` Schlüssels führt zur
+deaktiviert der WebSocket-Unterstützung. Hier der Authentifizierungsabschnitt
+einer Beispiel-Konfiguration, das dem empfohlenen Wert 4280 als
+WebSockets-Port verwendet:
+
+  .. code-block:: none
+
+    listen.websocket_port = 4280
+
+Danach muss Brick Daemon neugestartet werden, um die Änderungen an der
+Konfigurationsdatei zu übernehmen. Ab jetzt kann die Browser-Version der
+:ref:`JavaScript Bindings <api_bindings_javascript>` sich zum Brick Daemon
+verbinden und Bricks und Brickets steuern.
+
+.. note::
+
+ Da WebSockets es grundsätzlich ermöglichen, dass jede Webseite in ihrem
+ Browser sich mit ihren Bricks und Bricklets verbinden kann, empfehlen
+ wir :ref:`Authentifizierung <tutorial_authentication>` in Kombination mit
+ WebSockets zu verwenden.
+
+
+.. _brickd_authentication:
+
+Authentifizierung
+^^^^^^^^^^^^^^^^^
+
+Brick Daemon unterstützt seit Version 2.1.0 Authentifizierung. Diese ist
+standardmäßig deaktiviert. Um Authentifizierung zu aktivieren muss ein
+Authentifizierungsgeheimnis in der Brick Daemon Konfigurationsdatei eingetragen
+werden.
+
+Das Authentifizierungsgeheimnis kann maximal 64 ASCII Zeichen lang sein und hat
+den Schlüssel ``authentication.secret``. Ein leerer Wert oder das Fehlen des
+``authentication.secret`` Schlüssels führt zur deaktiviert der Authentifizierung.
+Hier der Authentifizierungsabschnitt einer Beispiel-Konfiguration die
+``My Authentication Secret!`` als Authentifizierungsgeheimnis verwendet::
+
+  authentication.secret = My Authentication Secret!
+
+Danach muss Brick Daemon neugestartet werden, um die Änderungen an der
+Konfigurationsdatei zu übernehmen. Ab jetzt muss jede TCP/IP Verbindung zum
+Brick Daemon zuerst nachweisen, dass sie das Authentifizierungsgeheimnis kennt,
+bevor normale Kommunikation stattfinden kann. Für mehr Informationen zur
+Authentifizierung siehe das dazugehörige :ref:`Tutorial
+<tutorial_authentication>`.
 
 
 Installierte Version bestimmen
