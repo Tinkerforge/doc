@@ -213,9 +213,9 @@ parameter the callback function:
 .. code-block:: javascript
 
     ipcon.on(IPConnection.CALLBACK_EXAMPLE,
-        function (param) {{
+        function (param) {
             console.log(param);
-        }}
+        }
     );
 
 The available constants with inherent number and type of parameters are

@@ -217,9 +217,9 @@ Callback ID, der Callback Funktion und optionalen Benutzer Daten:
 .. code-block:: javascript
 
     ipcon.on(IPConnection.CALLBACK_EXAMPLE,
-        function (param) {{
+        function (param) {
             console.log(param);
-        }}
+        }
     );
 
 Die verfügbaren IDs mit den zugehörigen Callback Funktionssignaturen
