@@ -229,8 +229,6 @@ werden im Folgenden beschrieben.
 
  * IPConnection::CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage
    vom Benutzer.
- * IPConnection::CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach
-   einer automatischen Wiederverbindung.
 
 
 .. php:member:: int IPConnection::CALLBACK_DISCONNECTED

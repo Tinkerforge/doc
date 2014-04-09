@@ -117,17 +117,16 @@ Grundfunktionen
 
 .. delphi:function:: procedure TIPConnection.SetAutoReconnect(const autoReconnect: boolean)
 
- Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
- Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
- zum vorher angegebenen Host und Port wieder herzustellen, falls die Verbindung
- verloren geht.
+ Aktiviert oder deaktiviert Auto-Reconnect. Falls Auto-Reconnect aktiviert
+ ist, versucht die IP Connection eine Verbindung zum vorher angegebenen Host
+ und Port wieder herzustellen, falls die Verbindung verloren geht.
 
  Standardwert ist *true*.
 
 
 .. delphi:function:: function TIPConnection.GetAutoReconnect(): boolean
 
- Gibt *true* zurück wenn die Wiederverbindung aktiviert ist und *false* sonst.
+ Gibt *true* zurück wenn Auto-Reconnect aktiviert ist und *false* sonst.
 
 
 .. delphi:function:: procedure TIPConnection.SetTimeout(const timeout: longword)
@@ -249,8 +248,8 @@ beschrieben.
  mögliche Gründe sind:
 
  * IPCON_CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage vom Benutzer.
- * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach einer
-   automatischen Wiederverbindung.
+ * IPCON_CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut durch
+   Auto-Reconnect.
 
 
 .. delphi:function:: property TIPConnection.OnDisconnected

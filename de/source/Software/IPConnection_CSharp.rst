@@ -112,17 +112,16 @@ Grundfunktionen
 
 .. csharp:function:: public void IPConnection::SetAutoReconnect(bool autoReconnect)
 
- Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
- Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
- zum vorher angegebenen Host und Port wieder herzustellen, falls die Verbindung
- verloren geht.
+ Aktiviert oder deaktiviert Auto-Reconnect. Falls Auto-Reconnect aktiviert
+ ist, versucht die IP Connection eine Verbindung zum vorher angegebenen Host
+ und Port wieder herzustellen, falls die Verbindung verloren geht.
 
  Standardwert ist *true*.
 
 
 .. csharp:function:: public bool IPConnection::GetAutoReconnect()
 
- Gibt *true* zurück wenn die Wiederverbindung aktiviert ist und *false* sonst.
+ Gibt *true* zurück wenn Auto-Reconnect aktiviert ist und *false* sonst.
 
 
 .. csharp:function:: public void IPConnection::SetTimeout(int timeout)
@@ -236,8 +235,8 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 
  * IPConnection.CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage
    vom Benutzer.
- * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach
-   einer automatischen Wiederverbindung.
+ * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut durch
+   Auto-Reconnect.
 
 
 .. csharp:function:: public event IPConnection::Disconnected(IPConnection sender, short disconnectReason)

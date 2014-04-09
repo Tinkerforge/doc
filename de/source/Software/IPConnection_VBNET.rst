@@ -110,17 +110,16 @@ Grundfunktionen
 
 .. vbnet:function:: Sub IPConnection.SetAutoReconnect(ByVal autoReconnect As Boolean)
 
- Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
- Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
- zum vorher angegebenen Host und Port wieder herzustellen, falls die Verbindung
- verloren geht.
+ Aktiviert oder deaktiviert Auto-Reconnect. Falls Auto-Reconnect aktiviert
+ ist, versucht die IP Connection eine Verbindung zum vorher angegebenen Host
+ und Port wieder herzustellen, falls die Verbindung verloren geht.
 
  Standardwert ist *true*.
 
 
 .. vbnet:function:: Function IPConnection.GetAutoReconnect() As Boolean
 
- Gibt *true* zurück wenn die Wiederverbindung aktiviert ist und *False* sonst.
+ Gibt *true* zurück wenn Auto-Reconnect aktiviert ist und *False* sonst.
 
 
 .. vbnet:function:: Sub IPConnection.SetTimeout(ByVal timeout: Integer)
@@ -233,8 +232,8 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 
  * IPConnection.CONNECT_REASON_REQUEST (0): Verbindung aufgebaut nach Anfrage
    vom Benutzer.
- * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut nach
-   einer automatischen Wiederverbindung.
+ * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Verbindung aufgebaut durch
+   Auto-Reconnect.
 
 
 .. vbnet:function:: Event IPConnection.Disconnected(ByVal sender As IPConnection, ByVal disconnectReason As Short)

@@ -140,10 +140,9 @@ Grundfunktionen
 
  :param autoReconnect: True/False
 
- Aktiviert oder deaktiviert die automatische Wiederverbindung. Falls die
- Wiederverbindung aktiviert ist, versucht die IP Connection eine Verbindung
- zum vorher angegebenen Host und Port wieder herzustellen, falls die Verbindung
- verloren geht.
+ Aktiviert oder deaktiviert Auto-Reconnect. Falls Auto-Reconnect aktiviert
+ ist, versucht die IP Connection eine Verbindung zum vorher angegebenen Host
+ und Port wieder herzustellen, falls die Verbindung verloren geht.
 
  Standardwert ist *True*.
 
@@ -152,7 +151,7 @@ Grundfunktionen
 
  :ret autoReconnect: True/False
 
- Gibt *True* zurück wenn die Wiederverbindung aktiviert ist und *False* sonst.
+ Gibt *True* zurück wenn Auto-Reconnect aktiviert ist und *False* sonst.
 
 
 .. mathematica:function:: IPConnection@SetTimeout[timeout] -> Null
@@ -281,8 +280,8 @@ Die verfügbaren Events werden im Folgenden beschrieben.
 
  * IPConnection`CONNECTUREASONUREQUEST (0): Verbindung aufgebaut nach Anfrage
    vom Benutzer.
- * IPConnection`CONNECTUREASONUAUTOURECONNECT (1): Verbindung aufgebaut nach
-   einer automatischen Wiederverbindung.
+ * IPConnection`CONNECTUREASONUAUTOURECONNECT (1): Verbindung aufgebaut durch
+   Auto-Reconnect.
 
 
 .. mathematica:function:: event IPConnection@Disconnected[sender, disconnectReason]
