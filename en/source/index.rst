@@ -43,8 +43,7 @@ and their concepts:
 
 * :ref:`First Steps <tutorial_first_steps>`
 * :ref:`Rugged Approach <tutorial_rugged_approach>`
-
-.. * :ref:`Authentication <tutorial_authentication>`
+* :ref:`Authentication <tutorial_authentication>`
 
 Answers to frequently asked questions can be found in the :ref:`FAQ <faq>`.
 

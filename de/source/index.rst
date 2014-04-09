@@ -44,8 +44,7 @@ Konzepte ein:
 
 * :ref:`Erste Schritte <tutorial_first_steps>`
 * :ref:`Robuster Ansatz <tutorial_rugged_approach>`
-
-.. * :ref:`Authentifizierung <tutorial_authentication>`
+* :ref:`Authentifizierung <tutorial_authentication>`
 
 Antworten auf häufig gestellte Fragen finden sich in den :ref:`FAQ <faq>`.
 
