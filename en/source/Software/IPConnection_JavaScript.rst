@@ -108,10 +108,6 @@ Basic Functions
  Devices can only be controlled when the connection was established
  successfully.
 
- Blocks until the connection is established and throws an exception if there
- is no Brick Daemon or WIFI/Ethernet Extension listening at the given
- host and port.
-
 
 .. javascript:function:: IPConnection.disconnect([errorCallback])
 
@@ -169,17 +165,17 @@ Basic Functions
 
 .. javascript:function:: IPConnection.setTimeout(timeout)
 
- :param timeout: float
+ :param timeout: int
 
- Sets the timeout in seconds for getters and for setters for which the
+ Sets the timeout in milliseconds for getters and for setters for which the
  response expected flag is activated.
 
- Default timeout is 2.5.
+ Default timeout is 2500.
 
 
 .. javascript:function:: IPConnection.getTimeout()
 
- :rtype: float
+ :rtype: int
 
  Returns the timeout as set by :javascript:func:`setTimeout() <IPConnection.setTimeout>`.
 
