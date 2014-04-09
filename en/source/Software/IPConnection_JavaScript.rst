@@ -70,11 +70,12 @@ Authenticate (HTML)
 API
 ---
 
-Generally, every method of the JavaScript bindings can take two optional parameters,
-``returnCallback`` and ``errorCallback``. These are two user defined callback functions.
-``returnCallback`` is called when a return value is expected with the value as the
-function's argument and ``errorCallback`` is called in case of an error with an error code.
-The error code can be one of the following:
+Generally, every method of the JavaScript bindings can take two optional
+parameters, ``returnCallback`` and ``errorCallback``. These are two user
+defined callback functions. The ``returnCallback`` is called with the return
+values as parameters, if the method returns something. The ``errorCallback``
+is called with an error code in case of an error. The error code can be one
+of the following values:
 
 * IPConnection.ERROR_ALREADY_CONNECTED = 11
 * IPConnection.ERROR_NOT_CONNECTED = 12
@@ -100,7 +101,6 @@ Basic Functions
 
  :param host: string
  :param port: int
- :rtype: undefined
 
  Creates a TCP/IP connection to the given ``host`` and ``port``. The host and port
  can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
@@ -114,8 +114,6 @@ Basic Functions
 
 
 .. javascript:function:: IPConnection.disconnect([errorCallback])
-
- :rtype: undefined
 
  Disconnects the TCP/IP connection from the Brick Daemon or the WIFI/Ethernet
  Extension.
@@ -137,8 +135,6 @@ Basic Functions
  See the :ref:`authentication tutorial <tutorial_authentication>` for more
  information.
 
- .. versionadded:: 2.1.0
-
 
 .. javascript:function:: IPConnection.getConnectionState()
 
@@ -156,7 +152,6 @@ Basic Functions
 .. javascript:function:: IPConnection.setAutoReconnect(autoReconnect)
 
  :param auto_reconnect: boolean
- :rtype: undefined
 
  Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
@@ -175,7 +170,6 @@ Basic Functions
 .. javascript:function:: IPConnection.setTimeout(timeout)
 
  :param timeout: float
- :noreturn: undefined
 
  Sets the timeout in seconds for getters and for setters for which the
  response expected flag is activated.
@@ -191,8 +185,6 @@ Basic Functions
 
 
 .. javascript:function:: IPConnection.enumerate([errorCallback])
-
- :rtype: undefined
 
  Broadcasts an enumerate request. All devices will respond with an enumerate
  callback.
@@ -222,10 +214,11 @@ parameter the callback function:
 
 .. code-block:: javascript
 
-    def my_callback(param):
-        print(param)
-
-    ipcon.on(IPConnection.CALLBACK_EXAMPLE, my_callback)
+    ipcon.on(IPConnection.CALLBACK_EXAMPLE,
+        function (param) {{
+            console.log(param);
+        }}
+    );
 
 The available constants with inherent number and type of parameters are
 described below.

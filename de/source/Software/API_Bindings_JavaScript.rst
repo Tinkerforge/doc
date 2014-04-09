@@ -9,7 +9,7 @@ JavaScript - API Bindings
 **Voraussetzungen**: Node.js 0.10 oder neuer oder jeder aktuelle Browser mit
 WebSocket-Unterstützung (getestet mit Chrome, Firefox und IE)
 
-The JavaScript Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen
+Die JavaScript Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen
 aus einem Node.js NPM Package ``tinkerforge.tgz`` und der WebSocket-basierten
 Browser-Version (in ``browser/``) der Bindings für alle Tinkerforge Bricks und
 Bricklets. Außerdem liegt der Quelltext der Node.js Implementierung (in
@@ -41,6 +41,7 @@ Dann muss noch der ``require`` Aufruf angepasst werden. Statt:
 .. code-block::javascript
 
     var Tinkerforge = require('tinkerforge');
+
     var ipcon = new Tinkerforge.IPConnection();
     var stepper = new Tinkerforge.BrickStepper(UID, ipcon);
 
@@ -50,6 +51,7 @@ muss dort nun dies stehen:
 
     var IPConnection = require('./Tinkerforge/IPConnection');
     var BrickStepper = require('./Tinkerforge/BrickStepper');
+
     var ipcon = new IPConnection();
     var stepper = new BrickStepper(UID, ipcon);
 

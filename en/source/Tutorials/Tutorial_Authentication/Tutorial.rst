@@ -20,7 +20,8 @@ Support for authentication was added in these software versions:
 
 * Brick Daemon: 2.1.0
 * Brick Viewer: 2.1.0
-* All API bindings: 2.1.0
+* JavaScript API Bindings: 2.0.0
+* All other API Bindings: 2.1.0
 * Master Brick firmware (Ethernet/WIFI Extension): 2.2.0
 
 .. _tutorial_authentication_concept:

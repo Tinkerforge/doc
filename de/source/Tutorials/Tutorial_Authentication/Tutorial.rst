@@ -21,7 +21,8 @@ Authentifizierung wird seit diesen Softwareversionen unterstützt:
 
 * Brick Daemon: 2.1.0
 * Brick Viewer: 2.1.0
-* Alle API Bindings: 2.1.0
+* JavaScript API Bindings: 2.0.0
+* Alle anderen API Bindings: 2.1.0
 * Master Brick Firmware (Ethernet/WIFI Extension): 2.2.0
 
 
