@@ -6,14 +6,14 @@
 MATLAB - API Bindings
 =====================
 
-**Requirements**: MATLAB or Octave with Java support.
+**Requirements**: MATLAB or Octave with Java support
 
-The bindings (:ref:`download <downloads_bindings_examples>`) consist of
+The MATLAB bindings (:ref:`download <downloads_bindings_examples>`) consist of
 two .jar files with the bindings for all Tinkerforge Bricks and Bricklets
-for MATLAB and Octave (in ``matlab/Tinkerforge.jar``) and
-(in ``octave/Tinkerforge.jar``) respectively. The source (in ``matlab/source/``)
-for MATLAB and (in ``octave/source/``) for Octave and all available
-Matlab and Octave examples (in ``matlab/examples/``) and (in ``octave/examples/``).
+for MATLAB (``matlab/Tinkerforge.jar``) and Octave (``octave/Tinkerforge.jar``).
+The source for MATLAB (``matlab/source/``) and for Octave (``octave/source/``)
+and all available MATLAB (``matlab/examples/``) and Octave examples
+(``octave/examples/``) are included as well.
 
 
 Testing an Example on MATLAB
@@ -41,8 +41,9 @@ Then add the following line::
 
  $matlabroot/Tinkerforge.jar
 
-to the file located at,
-<MATLAB_INSTALLATION_ROOT>/toolbox/local/classpath.txt
+to the file located at::
+
+ <MATLAB_INSTALLATION_ROOT>/toolbox/local/classpath.txt
 
 This applies for both Windows and Linux installation of MATLAB.
 
@@ -53,31 +54,31 @@ form MATLAB console.
 Testing an Example on Octave
 ----------------------------
 
-Just like MATLAB for Octave it is important to verify that java support
+Just like MATLAB for Octave it is important to verify that Java support
 is enabled. For Linux install Octave and the package ``octave_java`` from the
 distribution's official repository. This should make Octave's Java support
 properly configured. Now add the following line::
 
- javaaddpath("<PATH/TO/Tinkerforge.jar>");
+ javaaddpath("<path/to/Tinkerforge.jar>");
 
-to the file located at,
-~/.octaverc
+to the file located at::
+
+ ~/.octaverc
 
 If this file is not there then create one. After adding this line
-restart Octave if you had any running Octave console. Now the exmaples
+restart Octave if you had any running Octave console. Now the examples
 can be executed from Octave console.
 
 For using these bindings with Octave in Windows you need to setup the
 MinGW version of Octave. This version comes preconfigured with Java support
-enabled by default. Follow the instructions from here to set up Octave
-in Windows::
+enabled by default. Follow the instructions from `here
+<http://wiki.octave.org/Octave_for_Microsoft_Windows>`__ to set up Octave
+in Windows.
 
- http://wiki.octave.org/Octave_for_Microsoft_Windows
- 
 Once Octave setup is complete then run Octave console and from the console
 add the ``Tinkerforge.jar`` file for Octave with the following command::
 
- javaaddpath("<PATH_TO_Tinkerforge.jar>");
+ javaaddpath("<path/to/Tinkerforge.jar>");
 
 Now all the examples should be able to execute from Octave console.
 
