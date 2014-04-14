@@ -107,11 +107,10 @@ button). If not, you can :ref:`update the Bricks <brickv_flash_firmware>` and
 :ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
 Viewer too:
 
-.. image:: /Images/Kits/kit_iot_update_350.jpg
+.. image:: /Images/Kits/iot_update.jpg
    :scale: 100 %
    :alt: Internet of Things update in Brick Viewer
    :align: center
-   :target: ../../_images/Kits/iot_update.jpg
 
 As the next step test the Remote Switch Bricklet with a remotely controlled
 mains switch. After that you can start to assemble the kit!
