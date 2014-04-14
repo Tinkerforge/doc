@@ -108,11 +108,10 @@ Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
 (:ref:`Bricks aktualisieren <brickv_flash_firmware>`,
 :ref:`Bricklets aktualisieren <brickv_flash_plugin>`):
 
-.. image:: /Images/Kits/kit_blinkenlights_update_350.jpg
+.. image:: /Images/Kits/iot_update.jpg
    :scale: 100 %
    :alt: Internet der Dinge Update im Brick Viewer
    :align: center
-   :target: ../../_images/Kits/kit_iot_update.jpg
 
    
 Im nächsten Schritt sollte das Remote Switch Bricklet mit einer Funksteckdose
