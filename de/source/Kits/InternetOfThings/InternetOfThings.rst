@@ -165,8 +165,8 @@ werden.
    :align: center
    :target: ../../_images/Kits/iot_construction_ethernet_step1.png
 
-Step 2: Gehäuseunterteil anschrauben
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Schritt 2: Gehäuseunterteil anschrauben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Schraube den Master Brick (mit oder ohne Ethernet Extension) und das
 Remote Switch Bricklet auf die Unterseite des Gehäuses. Dabei sollte
@@ -184,8 +184,8 @@ folgende Reihenfolge eingehalten werden:
    :align: center
    :target: ../../_images/Kits/iot_construction_step2.png
 
-Step 3: Kuppel aufsetzen
-^^^^^^^^^^^^^^^^^^^^^^^^
+Schritt 3: Kuppel aufsetzen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Im letzten Schritt muss nun noch das Rückteil des Gehäuses in das Unterteil
 gesteckt werden. Danach kann dann das Oberteil geboten und angebracht werden.
