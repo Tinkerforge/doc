@@ -57,16 +57,52 @@ Starterkit: Internet der Dinge
 Features
 --------
 
-* TODO
-* TODO
-* TODO
+* Ermöglicht das Steuern von Geräten über das Internet
+* 433MHz, externe Antenne, große Reichweite
+* Erweiterbar, frei programmierbar
 * TODO
 
 
 Beschreibung
 ------------
 
-Das *Starterkit: Blinkenlights* ist ...
+Das `Internet der Dinge <http://de.wikipedia.org/wiki/Internet_der_Dinge>`__ 
+(engl. Internet of Things (IoT)) stellt eine Evolution des Internets dar und 
+vernetzt nicht nur, wie bisher, Menschen und Computer sondern auch beliebige 
+andere physische Objekte ("Dinge", "things").
+
+Das *Starterkit: Internet der Dinge* bietet einen einfachen Einstieg in die Welt
+des Internet der Dinge und ermöglicht es, nahezu beliebige Geräte über das 
+Internet zu steuern. Dazu ist das Kit mit einem Remote Switch Bricklet 
+ausgestattet über das verschiedenste 433MHz Funk- steckdosen, dimmer und 
+Hausautomatisationskomponenten gesteuert werden können. Eine Liste der 
+unterstützten Funkaktoren kann hier gefunden werden: 
+:ref:`Link <remote_switch_supported_devices>`.
+
+Über die :ref:`API Bindings <api_bindings>` können diese Funkaktoren von 
+jedem (Embedded-) PC, Smartphone oder Tablet über das Internet gesteuert werden. 
+Dem Einschalten der Kaffeemaschine von unterwegs über das eigene Smartphone, 
+oder das Dimmen der Wohnungsbeleuchtung gesteuert aus der eigenen Cloud oder
+von einem Raspberry Pi steht mit dem Kit nichts im Wege. Die Webseite
+`www.iot-remote.com <http://www.iot-remote.com/>`__ stellt eine direkte 
+Möglichkeit zur Verfügung diese Aktoren von jedem internetfähigen Gerät zu 
+steuern.
+
+Das Kit besteht im wesentlichen aus einem Master Brick und einem Remote Switch 
+Bricklet, welches mit einem 433MHz Sender ausgestattet ist. Über die USB 
+Verbindung des Master Bricks können somit Steckdosen o.ä. gesteuert werden.
+Ein angeschlossener (Embedded-) PC (z.B. Raspberry Pi) kann direkt die Steuerung
+übernehmen oder als Gateway dienen. Über eine zusätzliche WIFI- oder Ethernet 
+Master Extension kann auf ein Gateway verzichtet werden.
+
+Mittels weiterer Module aus dem Baukastensystem kann das Kit weiter erweitert 
+werden. So können zum Beispiel Temperaturen erfasst werden (Temperature, 
+Temperature-IR oder PTC Bricklet) oder auf Bewegungen reagiert werden (Motion 
+Detector Bricklet).
+
+
+
+
 
 Technische Spezifikation
 ------------------------
@@ -196,3 +232,50 @@ Das war es schon, das Gehäuse ist fertig!
    :alt: Konstruktion Schritt 3
    :align: center
    :target: ../../_images/Kits/iot_construction_step3.png
+
+Anwendungen
+-----------
+
+Über das eigene Tablet, Smartphone oder PC steuern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TODO: How to use `www.iot-remote.com <http://www.iot-remote.com/>`__ ?
+
+Eigene Programme Entwickeln
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TODO: Link Remote Switch Bricklet Examples
+
+Hardware Erweiterungen
+----------------------
+
+Das Kit kann mit jedem Produkt aus dem Baukastensystem erweitert werden.
+Möchte man auf ein externes USB <-> Ethernet Gateway (PC, Raspberry Pi o.ä.)
+verzichten, bietet sich der Einsatz einer Ethernet oder WIFI Extension an.
+
+Ethernet/WIFI Extension
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Um die USB Schnittstelle zu ersetzen kann eine Ethernet oder WIFI Extension
+auf das Master Brick gesteckt werden.
+
+TODO FOTO Ethernet/WIFI
+
+Weitere Informationen lassen sich hier finden: Ethernet Extension, WIFI Extension
+
+
+Weitere Bricks/Bricklets
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sollen Motoren gesteuert werden, oder eine IMU hinzugefügt werden können
+weitere Bricks auf das Master Brick gesteckt werden. 
+
+Über Bricklets kann das Kit um verschiedene Sensoren und I/O Module erweitert
+werden. Diese werden einfach zusätzlich zum Remote Switch Bricklet an das Master
+Brick angeschlossen.
+
+TODO FOTO Temperature Bricklet im offenen Gehäuse
+
+
+
+
