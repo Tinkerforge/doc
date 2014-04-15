@@ -246,22 +246,51 @@ Eigene Programme Entwickeln
 
 TODO: Link Remote Switch Bricklet Examples
 
-Hardware Erweiterungen
-----------------------
+Ethernet Hardware Erweiterung
+-----------------------------
 
-Das Kit kann mit jedem Produkt aus dem Baukastensystem erweitert werden.
 Möchte man auf ein externes USB <-> Ethernet Gateway (PC, Raspberry Pi o.ä.)
-verzichten, bietet sich der Einsatz einer Ethernet oder WIFI Extension an.
+verzichten, bietet sich der Einsatz einer Ethernet Master Extension an.
+Somit kann direkt mit dem Kit kommuniziert werden. Im Gehäuse ist Platz für 
+eine Ethernet Master Extension vorgesehen, die nur auf das Master Brick gesteckt 
+werden muss. Weitere Informationen zur Nutzung der Ethernet Extension
+lassen sich hier finden: Link.
 
-Ethernet/WIFI Extension
-^^^^^^^^^^^^^^^^^^^^^^^
+Interaktion mit anderen Dingen
+------------------------------
 
-Um die USB Schnittstelle zu ersetzen kann eine Ethernet oder WIFI Extension
-auf das Master Brick gesteckt werden.
+Das Kit kann mit den verschiedensten anderen "Dingen" kommunizieren.
+Am einfachsten lassen sich andere Bricks und Bricklets des Baukastensystems 
+nutzen. Über produktspezifische Schnittstellen oder on-line Services wie 
+Xively oder Carriots lässt sich aber auch ohne viel Aufwand mit anderen Geräten
+interagieren. Nachfolgend stellen wir einige Beispiele vor:
 
-TODO FOTO Ethernet/WIFI
+Bewegungserkennung mit dem Motion Detektor Bricklet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Weitere Informationen lassen sich hier finden: Ethernet Extension, WIFI Extension
+Temperaturbasiertes Steuern von Fenstermotoren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Tageslichtabhänige Jalousiesteuerung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+GPS basierte Haussteuerung
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Strompreisbasierte Verbraucherschaltung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Verbrauchsabhängige Verbraucherschaltung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Intelligenter Strompreiszähler oder Hall-Effect Bricklet
+
+
+
+
+
+
+
+
 
 
 Weitere Bricks/Bricklets
