@@ -80,8 +80,8 @@ Current Consumption                       10mA (idle), 40mA (sending)
 Radio Frequency                           433MHz
 ----------------------------------------  ------------------------------------------------------------
 ----------------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)                    TBD
-Weight                                    TBD (assembled kit)
+Dimensions (W x D x H)                    11cm x 6,5cm x 4,5cm (assembled kit)
+Weight                                    130g (assembled kit)
 ========================================  ============================================================
 
 .. _starter_kit_iot_resources:
@@ -157,7 +157,7 @@ Master Brick with 9mm spacers (thread inside/outside).
 
 .. image:: /Images/Kits/iot_construction_ethernet_step1_350.jpg
    :scale: 100 %
-   :alt: Construction Step 1
+   :alt: Construction Step 1 (Ethernet Extension)
    :align: center
    :target: ../../_images/Kits/iot_construction_ethernet_step1.png
 
@@ -169,7 +169,7 @@ Remote Switch Bricklet to the bottom part of the case. You should use
 the following sequence:
 
 * Plug front part of case into bottom part
-* Screw Master Brick and Remtoe Switch Bricklet to bottom part
+* Screw Master Brick and Remote Switch Bricklet to bottom part
 * Add self-adhesive non-slip rubber feet to bottom part
 * Add Bricklet cable between Master Brick and Remote Switch Bricklet
 * Screw antenna to Remote Switch Bricklet

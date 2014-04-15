@@ -79,8 +79,8 @@ Stromverbrauch                             10mA (inaktiv), 40mA (senden)
 Funkfrequenz                               433MHz
 -----------------------------------------  ------------------------------------------------------------
 -----------------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)                    TBD 
-Gewicht                                    TBD (zusammengebautes Kit)
+Abmessungen (B x T x H)                    11cm x 6.5cm x 4.5cm (zusammengebautes Kit)
+Gewicht                                    130g (zusammengebautes Kit)
 =========================================  ============================================================
 
 
@@ -121,4 +121,78 @@ getestet werden. Anschließend kann damit begonnen werden das Kit zusammenzubaue
 Konstruktion
 ------------
 
-TODO
+Das Starterkit: Internet der Dinge wird mit einem :ref:`Master Brick <master_brick>`,
+einem :ref:`Remote Switch Bricklet <remote_switch_bricklet>`, einem 6cm 
+Bricklet Kabel, zwei Befestigungskits und vier rutschfeste Gummifüsse 
+ausgeliefert.
+
+Das Gehäuse kann in vier einfachen Schritten aufgebaut werden.
+
+.. image:: /Images/Kits/iot_construction_exploded_w_lines_500.jpg
+   :scale: 100 %
+   :alt: Exploded assembly drawing
+   :align: center
+   :target: ../../_images/Kits/iot_construction_exploded_w_lines.png
+
+
+Schritt 0: Schutzfolie entfernen 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Als erstes müssen die Schutzfolien von allen Gehäuseteilen entfernt werden. 
+Jeweils auf Front- und Rückseite befindet sich eine Schutzfolie. Ein Messer kann
+bei der Entfernung der Folien helfen, sollten sich diese schwer entfernen 
+lassen.
+
+Schritt 1: Abstandshalter anschrauben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Schraube die 10mm Abstandshalter (Gewinde innen/innen) an den Master Brick
+und das Remote Switch Bricklet.
+
+.. image:: /Images/Kits/iot_construction_step1_350.jpg
+   :scale: 100 %
+   :alt: Konstruktion Schritt 1
+   :align: center
+   :target: ../../_images/Kits/iot_construction_step1.png
+
+Wenn die Ethernet Extension verwendet werden soll, kann diese auf mit
+9mm Abstandshaltern (Gewinde innen/außen) auf den Master Brick geschraubt
+werden.
+
+.. image:: /Images/Kits/iot_construction_ethernet_step1_350.jpg
+   :scale: 100 %
+   :alt: Konstruktion Schritt 1 (Ethernet Extension)
+   :align: center
+   :target: ../../_images/Kits/iot_construction_ethernet_step1.png
+
+Step 2: Gehäuseunterteil anschrauben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Schraube den Master Brick (mit oder ohne Ethernet Extension) und das
+Remote Switch Bricklet auf die Unterseite des Gehäuses. Dabei sollte
+folgende Reihenfolge eingehalten werden:
+
+* Stecke Vorderteil des Gehäuses in Unterteil
+* Schraube Master Brick und Remote Switch Bricklet zur Unterseite
+* Klebe rutschfeste Gummifüsse an Unterseite
+* Verbinde Master Brick udn Remote Switch Bricklet mit Bricklet Kabel
+* Schraube Antenne an Remote Switch Bricklet
+
+.. image:: /Images/Kits/iot_construction_step2_350.jpg
+   :scale: 100 %
+   :alt: Konstruktion Schritt 2
+   :align: center
+   :target: ../../_images/Kits/iot_construction_step2.png
+
+Step 3: Kuppel aufsetzen
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Im letzten Schritt muss nun noch das Rückteil des Gehäuses in das Unterteil
+gesteckt werden. Danach kann dann das Oberteil geboten und angebracht werden.
+Das war es schon, das Gehäuse ist fertig!
+
+.. image:: /Images/Kits/iot_construction_step3_350.jpg
+   :scale: 100 %
+   :alt: Konstruktion Schritt 3
+   :align: center
+   :target: ../../_images/Kits/iot_construction_step3.png
