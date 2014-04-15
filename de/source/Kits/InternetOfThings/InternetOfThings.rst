@@ -79,7 +79,7 @@ Stromverbrauch                             10mA (inaktiv), 40mA (senden)
 Funkfrequenz                               433MHz
 -----------------------------------------  ------------------------------------------------------------
 -----------------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)                    11cm x 6.5cm x 4.5cm (zusammengebautes Kit)
+Abmessungen (B x T x H)                    11cm x 6,5cm x 4,5cm (zusammengebautes Kit)
 Gewicht                                    130g (zusammengebautes Kit)
 =========================================  ============================================================
 
