@@ -119,6 +119,12 @@ mains switch. After that you can start to assemble the kit!
 Construction
 ------------
 
+The Starter Kit: Internet of Things comes with :ref:`Master Brick <master_brick>`,
+:ref:`Remote Switch Bricklet <remote_switch_bricklet>`, a 6cm Bricklet cable,
+two mounting kits and self-adhesive non-slip rubber feet.
+
+Building the case can be done in four easy steps.
+
 .. image:: /Images/Kits/iot_construction_exploded_w_lines_500.jpg
    :scale: 100 %
    :alt: Exploded assembly drawing
@@ -129,8 +135,16 @@ Construction
 Step 0: Remove protective foils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+At first the protective foils on all case parts have to be removed.
+There is a foil on the front and back side. In some cases the protective
+foils may be hard to remove, you can use a cutter or similar as a
+lever to get to the foil.
+
 Step 1: Use mounting kit
 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Screw the 10mm spacers (thread inside/inside) to the Master Brick
+and the Remote Switch Bricklet.
 
 .. image:: /Images/Kits/iot_construction_step1_350.jpg
    :scale: 100 %
@@ -138,8 +152,27 @@ Step 1: Use mounting kit
    :align: center
    :target: ../../_images/Kits/iot_construction_step1.png
 
+If you want to use the Ethernet Extension, you should attach it to the
+Master Brick with 9mm spacers (thread inside/outside).
+
+.. image:: /Images/Kits/iot_construction_ethernet_step1_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 1
+   :align: center
+   :target: ../../_images/Kits/iot_construction_ethernet_step1.png
+
 Step 2: Screw to bottom
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+Now screw the Master Brick (with or without Ethernet Extension) and the 
+Remote Switch Bricklet to the bottom part of the case. You should use 
+the following sequence:
+
+* Plug front part of case into bottom part
+* Screw Master Brick and Remtoe Switch Bricklet to bottom part
+* Add self-adhesive non-slip rubber feet to bottom part
+* Add Bricklet cable between Master Brick and Remote Switch Bricklet
+* Screw antenna to Remote Switch Bricklet
 
 .. image:: /Images/Kits/iot_construction_step2_350.jpg
    :scale: 100 %
@@ -149,6 +182,10 @@ Step 2: Screw to bottom
 
 Step 3: Attach dome
 ^^^^^^^^^^^^^^^^^^^
+
+In the last step you just have to plug the back part of the case into
+the bottom part. After that bend and attach the top part. Thats it, we
+are done already!
 
 .. image:: /Images/Kits/iot_construction_step3_350.jpg
    :scale: 100 %
