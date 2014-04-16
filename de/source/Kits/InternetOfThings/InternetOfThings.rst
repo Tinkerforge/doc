@@ -240,7 +240,7 @@ oder Hausautomatisierungskomponenten über die Webseite
 Die Webseite nutzt Javascript, das direkt im Browser ausgeführt wird. Es 
 erfolgt also nach dem Laden der Webseite und des Javascipts kein Datenaustausch 
 über einen Server sondern nur zwischen dem lokalen Gerät und der zu steuernden
-Hardware.
+Hardware. Für eine offline Nutzung kann die Webseite heruntergeladen werden.
 
 .. image:: /Images/Kits/iot_website_iot_remote_start_350.jpg
    :scale: 100 %
@@ -329,6 +329,14 @@ Das Laden einer Konfiguration erfolgt analog. Dazu wird eine Konfigurations ID
 eingegeben und "Load configuration" geklickt. Anschließend sollten die zur ID 
 gehörenen Geräte in der Liste angezeigt werden.
 
+**Offline Betrieb / Lokale Nutzung**
+Die komplette Webseite kann heruntergeladen werden (inkl. dem Javascript) und
+lokal genutzt werden. Ein Aufruf von 
+`www.iot-remote.com <http://www.iot-remote.com/>`__ ist dann nicht mehr 
+notwendig. Am einfachsten kann das komplette Projekt von GitHub heruntergeladen
+werden: 
+`ZIP <https://github.com/Tinkerforge/internet-of-things/archive/master.zip>`__
+Die Webseite inkl. JavaScript befindet sich im Verzeichnis "web".
 
 Eigene Programme Entwickeln
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -350,7 +358,7 @@ verzichten, bietet sich der Einsatz einer
 Somit kann direkt mit dem Kit kommuniziert werden. Im Gehäuse ist Platz für 
 eine Ethernet Master Extension vorgesehen, die nur auf das Master Brick gesteckt 
 werden muss. Weitere Informationen zur Nutzung der Ethernet Extension
-lassen sich hier finden: Link.
+lassen sich hier finden: `Link <remote_switch_supported_devices>`.
 
 Interaktion mit anderen Dingen
 ------------------------------
@@ -363,15 +371,13 @@ nutzen. Über produktspezifische Schnittstellen oder on-line Services wie
 viel Aufwand mit anderen Geräten interagieren. Nachfolgend stellen wir einige 
 Beispiele vor:
 
-Bewegungserkennung mit dem Motion Detektor Bricklet
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Bewegungserkennung mit dem Motion Detektor Bricklet**
 Das :ref:`Motion Detector Bricklet <motion_detector_bricklet>`
 ermöglicht die Detektion von Bewegungen. Zusammen
 mit dem Kit können somit Verbraucher in Abhängigkeit von der Anwesenheit von
 Personen geschaltet werden.
 
-Temperaturbasiertes Steuern von Fenstermotoren
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Temperaturbasiertes Steuern von Fenstermotoren**
 Über Bricklets wie 
 :ref:`Temperature <temperature_bricklet>`, 
 :ref:`Temperature IR<temperature_ir_bricklet>` oder dem 
@@ -380,28 +386,24 @@ Temperaturen gemessen werden. Zusammen mit 433MHz
 Hausautomatisierungskomponenten können somit Fenster temperaturabhängig bewegt
 werden.
 
-Tageslichtabhänige Jalousiesteuerung
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Tageslichtabhänige Jalousiesteuerung**
 Das :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
 ermöglicht die Messung der Helligkeit von 
 Sonnenlicht. Somit könnten Jalousien lichtabhängig gesteuert werden.
 
-GPS basierte Haussteuerung
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+**GPS basierte Haussteuerung**
 Über das :ref:`GPS Bricklet <gps_bricklet>`
 oder ein Smartphone mit GPS könnte eigene Heim in 
 Abhängigkeit der eigenen Position über das Internet gesteuert werden. Als 
 Beispiel könnte die Außenbeleuchtung eingeschaltet werden wenn es dunkel ist und 
 der Eigentümer sich dem Haus nähert.
 
-Strompreisbasierte Verbraucherschaltung
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Strompreisbasierte Verbraucherschaltung**
 In manchen Stromtarifen ist der Strompreis abhängig von der Uhrzeit oder richtet
 sich direkt an den akutellen Strommarktpreisen. Verbraucher könnten in 
 Abhängigkeit des aktuellen Strompreises Ein-/Ausgeschaltet werden.
 
-Verbrauchsabhängige Verbraucherschaltung
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Verbrauchsabhängige Verbraucherschaltung**
 Viele intelligente Stromzähler ermöglichen den Zugriff auf den aktuellen
 Stromverbrauch. Eine Alternative stellt das Auslesen der Umdrehungen der 
 Ferrarisscheibe in einem gewöhnlichen Stromzähler mittels eines 
