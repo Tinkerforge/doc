@@ -60,8 +60,7 @@ Features
 * Ermöglicht das Steuern von Geräten über das Internet
 * 433MHz, externe Antenne, große Reichweite
 * Erweiterbar, frei programmierbar
-* TODO
-
+* Steuerbar über `www.iot-remote.com <http://www.iot-remote.com/>`__ 
 
 Beschreibung
 ------------
@@ -73,7 +72,8 @@ andere physische Objekte ("Dinge", "things").
 
 Das *Starterkit: Internet der Dinge* bietet einen einfachen Einstieg in die Welt
 des Internet der Dinge und ermöglicht es, nahezu beliebige Geräte über das 
-Internet zu steuern. Dazu ist das Kit mit einem Remote Switch Bricklet 
+Internet zu steuern. Dazu ist das Kit mit einem 
+`Remote Switch Bricklet <remote_switch_bricklet>`__
 ausgestattet über das verschiedenste 433MHz Funk- steckdosen, dimmer und 
 Hausautomatisationskomponenten gesteuert werden können. Eine Liste der 
 unterstützten Funkaktoren kann hier gefunden werden: 
@@ -110,7 +110,7 @@ Technische Spezifikation
 =========================================  ============================================================
 Eigenschaft                                Wert
 =========================================  ============================================================
-Funkmodul                                  RFM69HW
+Integriertes Funkmodul                     RFM69HW (Remote Switch Bricklet)
 Stromverbrauch                             10mA (inaktiv), 40mA (senden)
 Funkfrequenz                               433MHz
 -----------------------------------------  ------------------------------------------------------------
@@ -151,7 +151,9 @@ Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
 
    
 Im nächsten Schritt sollte das Remote Switch Bricklet mit einer Funksteckdose
-getestet werden. Anschließend kann damit begonnen werden das Kit zusammenzubauen.
+getestet werden. Eine Anleitung zu den Konfigurationsmöglichkeiten
+lässt sich hier finden: `Link <remote_switch_bricklet_addressing_types>`__.
+Anschließend kann damit begonnen werden das Kit zusammenzubauen.
 
 
 Konstruktion
@@ -239,12 +241,112 @@ Anwendungen
 Über das eigene Tablet, Smartphone oder PC steuern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO: How to use `www.iot-remote.com <http://www.iot-remote.com/>`__ ?
+Ohne Programmieraufwand können direkt 433MHz Aktoren wie Funksteckdosen, Dimmer
+oder Hausautomatisierungskomponenten über die Webseite 
+`www.iot-remote.com <http://www.iot-remote.com/>`__ gesteuert werden.
+Die Webseite nutzt Javascript, das direkt im Browser ausgeführt wird. Es 
+erfolgt also nach dem Laden der Webseite und des Javascipts kein Datenaustausch 
+über einen Server sondern nur zwischen dem lokalen Gerät und der zu steuernden
+Hardware.
+
+.. image:: /Images/Kits/iot_website_iot_remote_start_350.jpg
+   :scale: 100 %
+   :alt: Explosionszeichnung für Remote Switch Bricklet
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_start.jpg
+
+Die Webseite ist sehr einfach aufgebaut. Über "+ New Remote..." können neue
+Geräte hinzugefügt werden. "Settings" erlaubt das Laden/Speichern von 
+Konfigurationen und die Liste rechts (leer im Bild) zeigt die konfigurierten 
+Geräte und bietet Zugriff auf deren Steuerung.
+
+**Neues Gerät hinzufügen**
+
+Über "+ New Remote..." können neue Geräte hinzugefügt werden. Es gibt vier 
+Typen: A (Schalter), B (Schalter), B(Dimmer), C (Schalter). Der einzustellende 
+Typ ist nur von dem zu steuernden Aktor abhängig. Eine Liste der unterstützten 
+Aktoren findet man hier: Link.
+
+Je nach Aktor sind verschiedene Angaben zu machen. Eine genauere Beschreibung
+befindet sich in der `Remote Switch Bricklet Dokumentation 
+<remote_switch_bricklet_addressing_types>`__
+
+Typ A (Schalter):
+
+.. image:: /Images/Kits/iot_website_iot_remote_configure_a_350.jpg
+   :scale: 100 %
+   :alt: Konfiguration für Typ A Schalter
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_configure_a.jpg
+
+Typ B (Schalter):
+
+.. image:: /Images/Kits/iot_website_iot_remote_configure_b_350.jpg
+   :scale: 100 %
+   :alt: Konfiguration für Typ B Schalter
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_configure_b.jpg
+
+Typ B (Dimmer):
+
+.. image:: /Images/Kits/iot_website_iot_remote_configure_b2_350.jpg
+   :scale: 100 %
+   :alt: Konfiguration für Typ B Dimmer
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_configure_b2.jpg
+
+Typ C (Schalter):
+
+.. image:: /Images/Kits/iot_website_iot_remote_configure_c_350.jpg
+   :scale: 100 %
+   :alt: Konfiguration für Typ C Schalter
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_configure_c.jpg
+
+**Steuern eines Geräts**
+
+Geräte können durch Klicken auf den jeweiligen Eintrag in der Liste
+gesteuert werden. Als Beispiel nachfolgend die Steuerungssseite eines
+Typ A Schalters.
+
+.. image:: /Images/Kits/iot_website_iot_remote_switch_350.jpg
+   :scale: 100 %
+   :alt: Konfigurierter für Typ A Schalter
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_switch.jpg
+
+
+**Speicher/Laden der Konfiguration**
+Die Webseite `www.iot-remote.com <http://www.iot-remote.com/>`__ wurde 
+absichtlich ohne Loginfunktion programmiert. Um eine einmal erstellte 
+Konfiguration in verschiedenen Browsern zu nutzen kann diese gespeichert werden.
+
+.. image:: /Images/Kits/iot_website_iot_remote_save_350.jpg
+   :scale: 100 %
+   :alt: Speichern/Laden der Konfiguration
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_save.jpg
+
+Wurde eine Konfiguration erstellt, so kann diese gespeichert werden. Dazu klickt
+man auf "Settings" und klickt anschließend "Save configuration". Der Server
+erzeugt anschließend eine Konfigurations ID mit der die aktuelle Konfiguration
+geladen werden kann.
+
+Das Laden einer Konfiguration erfolgt analog. Dazu wird eine Konfigurations ID 
+eingegeben und "Load configuration" geklickt. Anschließend sollten die zur ID 
+gehörenen Geräte in der Liste angezeigt werden.
+
 
 Eigene Programme Entwickeln
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO: Link Remote Switch Bricklet Examples
+Neben der direkten Nutzung von 
+`www.iot-remote.com <http://www.iot-remote.com/>`__ kann das Kit natürlich auch
+in eigenen Anwendungen verwendet werden. Grundlage hierzu bildet die 
+:ref:`ÀPI des Remote Switch Bricklets<remote_switch_bricklet_programming_interface>`,
+die für verschiedene Programmiersprachen zur Verfügung steht. Die API 
+Dokumentation der jeweiligen Sprache enthält zusätzlich kleine Beispielprogramme
+die als Startpunkt für die eigenen Entwicklungen dienen können.
 
 Ethernet Hardware Erweiterung
 -----------------------------
@@ -267,43 +369,42 @@ interagieren. Nachfolgend stellen wir einige Beispiele vor:
 
 Bewegungserkennung mit dem Motion Detektor Bricklet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Das Motion Detector Bricklet ermöglicht die Detektion von Bewegungen. Zusammen
+mit dem Kit können somit Verbraucher in Abhängigkeit von der Anwesenheit von
+Personen geschaltet werden.
 
 Temperaturbasiertes Steuern von Fenstermotoren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Über Bricklets wie Temperature, Temperature IR oder dem PTC Bricklet können
+Temperaturen gemessen werden. Zusammen mit 433MHz 
+Hausautomatisierungskomponenten können somit Fenster temperaturabhängig bewegt
+werden.
 
 Tageslichtabhänige Jalousiesteuerung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Das Ambient Light Bricklet ermöglicht die Messung der Helligkeit von 
+Sonnenlicht. Somit könnten Jalousien lichtabhängig gesteuert werden.
 
 GPS basierte Haussteuerung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Über das GPS Bricklet oder ein Smartphone mit GPS könnte eigene Heim in 
+Abhängigkeit der eigenen Position über das Internet gesteuert werden. Als 
+Beispiel könnte die Außenbeleuchtung eingeschaltet werden wenn es dunkel ist und 
+der Eigentümer sich dem Haus nähert.
 
 Strompreisbasierte Verbraucherschaltung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In manchen Stromtarifen ist der Strompreis abhängig von der Uhrzeit oder richtet
+sich direkt an den akutellen Strommarktpreisen. Verbraucher könnten in 
+Abhängigkeit des aktuellen Strompreises Ein-/Ausgeschaltet werden.
 
 Verbrauchsabhängige Verbraucherschaltung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Intelligenter Strompreiszähler oder Hall-Effect Bricklet
-
-
-
-
-
-
-
-
-
-
-Weitere Bricks/Bricklets
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Sollen Motoren gesteuert werden, oder eine IMU hinzugefügt werden können
-weitere Bricks auf das Master Brick gesteckt werden. 
-
-Über Bricklets kann das Kit um verschiedene Sensoren und I/O Module erweitert
-werden. Diese werden einfach zusätzlich zum Remote Switch Bricklet an das Master
-Brick angeschlossen.
-
-TODO FOTO Temperature Bricklet im offenen Gehäuse
+Viele intelligente Stromzähler ermöglichen den Zugriff auf den aktuellen
+Stromverbrauch. Eine Alternative stellt das Auslesen der Umdrehungen der 
+Ferrarisscheibe in einem gewöhnlichen Stromzähler mittels eines 
+Hall-Effect Bricklets dar. Abhängig vom aktuellen Verbrauch könnten somit
+Verbraucher geschaltet werden.
 
 
 
