@@ -74,10 +74,10 @@ Das *Starterkit: Internet der Dinge* bietet einen einfachen Einstieg in die Welt
 des Internet der Dinge und ermöglicht es, nahezu beliebige Geräte über das 
 Internet zu steuern. Dazu ist das Kit mit einem 
 `Remote Switch Bricklet <remote_switch_bricklet>`__
-ausgestattet über das verschiedenste 433MHz Funk- steckdosen, dimmer und 
-Hausautomatisationskomponenten gesteuert werden können. Eine Liste der 
-unterstützten Funkaktoren kann hier gefunden werden: 
-:ref:`Link <remote_switch_supported_devices>`.
+ausgestattet über das verschiedenste 433MHz Funksteckdosen, Funkdimmer und 
+Hausautomatisationskomponenten gesteuert werden können. In der Dokumentation
+gibt es eine 
+:ref:`Liste der unterstützten Funkaktoren <remote_switch_supported_devices>`.
 
 Über die :ref:`API Bindings <api_bindings>` können diese Funkaktoren von 
 jedem (Embedded-) PC, Smartphone oder Tablet über das Internet gesteuert werden. 
@@ -92,15 +92,13 @@ Das Kit besteht im wesentlichen aus einem Master Brick und einem Remote Switch
 Bricklet, welches mit einem 433MHz Sender ausgestattet ist. Über die USB 
 Verbindung des Master Bricks können somit Steckdosen o.ä. gesteuert werden.
 Ein angeschlossener (Embedded-) PC (z.B. Raspberry Pi) kann direkt die Steuerung
-übernehmen oder als Gateway dienen. Über eine zusätzliche WIFI- oder Ethernet 
+übernehmen oder als Gateway dienen. Mit einer zusätzlichen Ethernet 
 Master Extension kann auf ein Gateway verzichtet werden.
 
-Mittels weiterer Module aus dem Baukastensystem kann das Kit weiter erweitert 
+Mittels weiterer Module aus dem Baukastensystem kann das Kit erweitert 
 werden. So können zum Beispiel Temperaturen erfasst werden (Temperature, 
 Temperature-IR oder PTC Bricklet) oder auf Bewegungen reagiert werden (Motion 
 Detector Bricklet).
-
-
 
 
 
@@ -126,6 +124,8 @@ Ressourcen
 ----------
 
 * Internet of Things Kit Gehäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/case>`__)
+* iot-remote.com Webseite (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/web>`__)
+* iot-remote.com Server Implementierung (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/server>`__)
 
 
 Firmware aktualisieren und erste Tests
@@ -261,9 +261,9 @@ Geräte und bietet Zugriff auf deren Steuerung.
 **Neues Gerät hinzufügen**
 
 Über "+ New Remote..." können neue Geräte hinzugefügt werden. Es gibt vier 
-Typen: A (Schalter), B (Schalter), B(Dimmer), C (Schalter). Der einzustellende 
-Typ ist nur von dem zu steuernden Aktor abhängig. Eine Liste der unterstützten 
-Aktoren findet man hier: :ref:`Link <remote_switch_supported_devices>`.
+Typen: A (Schalter), B (Schalter), B (Dimmer), C (Schalter). Der einzustellende 
+Typ ist nur von dem zu steuernden Aktor abhängig (siehe :ref:`Liste der unterstützten 
+Aktoren <remote_switch_supported_devices>`__).
 
 Je nach Aktor sind verschiedene Angaben zu machen. Eine genauere Beschreibung
 befindet sich in der `Remote Switch Bricklet Dokumentation 
@@ -343,16 +343,38 @@ werden:
 `ZIP <https://github.com/Tinkerforge/internet-of-things/archive/master.zip>`__
 Die Webseite inkl. JavaScript befindet sich im Verzeichnis "web".
 
+Leider unterstützt Chrome/Chromium standardmäßig keine file cookies, welche 
+benötigt werden um Cookies bei Offline Nutzung zu speichern. Um dieses
+Problem zu umgehen kann Chrome/Chromium mit folgendem Parameter gestartet 
+werden::
+
+ --enable-file-cookies
+
+Die Webseite kann im Offline Betrieb immernoch den iot-remote.com Server nutzen
+um Konfiugrationen zu speichern/laden. Dieser Server kann aber auch leicht
+selbst aufgesetzt werden. Dazu müssen folgende Programmteile angepasst werden:
+
+* ``web/js/remote/pages/PageSettings``: ``this.HOST`` und ``this.PORT`` anpassen
+* ``server/server.py``: ``CONFIGURATION_PATH`` und ``LOCAL_PROXY_PORT``
+
+Die Abhängigkeiten des Python Servers bestehen aus python-twisted und 
+python-autobahn. Der Server kann einfach mit Python gestartet werden::
+
+ python server.py
+
+Und schon ist man im Besitzt eines eigenen Internet of Things webserver der 
+über Websockets Konfigurationen speichern kann!
+
 Eigene Programme Entwickeln
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Neben der direkten Nutzung von 
 `www.iot-remote.com <http://www.iot-remote.com/>`__ kann das Kit natürlich auch
 in eigenen Anwendungen verwendet werden. Grundlage hierzu bildet die 
-:ref:`ÀPI des Remote Switch Bricklets<remote_switch_bricklet_programming_interface>`,
+:ref:`ÀPI des Remote Switch Bricklets <remote_switch_bricklet_programming_interface>`,
 die für verschiedene Programmiersprachen zur Verfügung steht. Die API 
 Dokumentation der jeweiligen Sprache enthält zusätzlich kleine Beispielprogramme
-die als Startpunkt für die eigenen Entwicklungen dienen können.
+die als Startpunkte für die eigenen Entwicklungen dienen können.
 
 Ethernet Hardware Erweiterung
 -----------------------------
@@ -361,9 +383,9 @@ Möchte man auf ein externes USB <-> Ethernet Gateway (PC, Raspberry Pi o.ä.)
 verzichten, bietet sich der Einsatz einer 
 :ref:`Ethernet Master Extension<ethernet_extension>` an.
 Somit kann direkt mit dem Kit kommuniziert werden. Im Gehäuse ist Platz für 
-eine Ethernet Master Extension vorgesehen, die nur auf das Master Brick gesteckt 
-werden muss. Weitere Informationen zur Nutzung der Ethernet Extension
-lassen sich hier finden: `Link <remote_switch_supported_devices>`.
+eine Ethernet Master Extension vorgesehen. Diese muss nur auf das Master Brick gesteckt 
+werden. In der Dokumentation gibt es `weitere Informationen zur Nutzung der 
+Ethernet Extension <remote_switch_supported_devices>`.
 
 Interaktion mit anderen Dingen
 ------------------------------
@@ -398,14 +420,14 @@ Sonnenlicht. Somit könnten Jalousien lichtabhängig gesteuert werden.
 
 **GPS basierte Haussteuerung**
 Über das :ref:`GPS Bricklet <gps_bricklet>`
-oder ein Smartphone mit GPS könnte eigene Heim in 
+oder ein Smartphone mit GPS könnte das eigene Heim in 
 Abhängigkeit der eigenen Position über das Internet gesteuert werden. Als 
 Beispiel könnte die Außenbeleuchtung eingeschaltet werden wenn es dunkel ist und 
 der Eigentümer sich dem Haus nähert.
 
 **Strompreisbasierte Verbraucherschaltung**
 In manchen Stromtarifen ist der Strompreis abhängig von der Uhrzeit oder richtet
-sich direkt an den akutellen Strommarktpreisen. Verbraucher könnten in 
+sich direkt an den aktuellen Strommarktpreisen. Verbraucher könnten in 
 Abhängigkeit des aktuellen Strompreises Ein-/Ausgeschaltet werden.
 
 **Verbrauchsabhängige Verbraucherschaltung**
@@ -414,7 +436,4 @@ Stromverbrauch. Eine Alternative stellt das Auslesen der Umdrehungen der
 Ferrarisscheibe in einem gewöhnlichen Stromzähler mittels eines 
 :ref:`Hall-Effect Bricklets <hall_effect_bricklet>` dar. 
 Abhängig vom aktuellen Verbrauch könnten somit Verbraucher geschaltet werden.
-
-
-
 
