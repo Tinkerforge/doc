@@ -52,7 +52,8 @@ Features
 --------
 
 * Ermöglicht das Steuern von Geräten über das Internet
-* 433MHz, externe Antenne, große Reichweite
+* 433MHz Aktoren unterstützt
+* Externe Antenne, große Reichweite
 * Erweiterbar, frei programmierbar
 * Steuerbar über `www.iot-remote.com <http://www.iot-remote.com/>`__ 
 
@@ -119,10 +120,8 @@ Gewicht                                    130g (zusammengebautes Kit)
 Ressourcen
 ----------
 
-* TODO
-* TODO
-* TODO
-* TODO
+* Internet of Things Kit Gehäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/case>`__)
+
 
 Firmware aktualisieren und erste Tests
 --------------------------------------
@@ -251,7 +250,7 @@ Hardware.
 
 Die Webseite ist sehr einfach aufgebaut. Über "+ New Remote..." können neue
 Geräte hinzugefügt werden. "Settings" erlaubt das Laden/Speichern von 
-Konfigurationen und die Liste rechts (leer im Bild) zeigt die konfigurierten 
+Konfigurationen und die Liste links (leer im Bild) zeigt die konfigurierten 
 Geräte und bietet Zugriff auf deren Steuerung.
 
 **Neues Gerät hinzufügen**
@@ -259,7 +258,7 @@ Geräte und bietet Zugriff auf deren Steuerung.
 Über "+ New Remote..." können neue Geräte hinzugefügt werden. Es gibt vier 
 Typen: A (Schalter), B (Schalter), B(Dimmer), C (Schalter). Der einzustellende 
 Typ ist nur von dem zu steuernden Aktor abhängig. Eine Liste der unterstützten 
-Aktoren findet man hier: Link.
+Aktoren findet man hier: :ref:`Link <remote_switch_supported_devices>`.
 
 Je nach Aktor sind verschiedene Angaben zu machen. Eine genauere Beschreibung
 befindet sich in der `Remote Switch Bricklet Dokumentation 
@@ -346,7 +345,8 @@ Ethernet Hardware Erweiterung
 -----------------------------
 
 Möchte man auf ein externes USB <-> Ethernet Gateway (PC, Raspberry Pi o.ä.)
-verzichten, bietet sich der Einsatz einer Ethernet Master Extension an.
+verzichten, bietet sich der Einsatz einer 
+:ref:`Ethernet Master Extension<ethernet_extension>` an.
 Somit kann direkt mit dem Kit kommuniziert werden. Im Gehäuse ist Platz für 
 eine Ethernet Master Extension vorgesehen, die nur auf das Master Brick gesteckt 
 werden muss. Weitere Informationen zur Nutzung der Ethernet Extension
@@ -358,30 +358,38 @@ Interaktion mit anderen Dingen
 Das Kit kann mit den verschiedensten anderen "Dingen" kommunizieren.
 Am einfachsten lassen sich andere Bricks und Bricklets des Baukastensystems 
 nutzen. Über produktspezifische Schnittstellen oder on-line Services wie 
-Xively oder Carriots lässt sich aber auch ohne viel Aufwand mit anderen Geräten
-interagieren. Nachfolgend stellen wir einige Beispiele vor:
+`Xively <https://xively.com/>`__, `Cumulocity <http://www.cumulocity.com/>`__,
+`Carriots <http://www.carriots.com/>`__, oder ähnliche lässt sich aber auch ohne 
+viel Aufwand mit anderen Geräten interagieren. Nachfolgend stellen wir einige 
+Beispiele vor:
 
 Bewegungserkennung mit dem Motion Detektor Bricklet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Das Motion Detector Bricklet ermöglicht die Detektion von Bewegungen. Zusammen
+Das :ref:`Motion Detector Bricklet <motion_detector_bricklet>`
+ermöglicht die Detektion von Bewegungen. Zusammen
 mit dem Kit können somit Verbraucher in Abhängigkeit von der Anwesenheit von
 Personen geschaltet werden.
 
 Temperaturbasiertes Steuern von Fenstermotoren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Über Bricklets wie Temperature, Temperature IR oder dem PTC Bricklet können
+Über Bricklets wie 
+:ref:`Temperature <temperature_bricklet>`, 
+:ref:`Temperature IR<temperature_ir_bricklet>` oder dem 
+:ref:`PTC Bricklet <ptc_bricklet>` können
 Temperaturen gemessen werden. Zusammen mit 433MHz 
 Hausautomatisierungskomponenten können somit Fenster temperaturabhängig bewegt
 werden.
 
 Tageslichtabhänige Jalousiesteuerung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Das Ambient Light Bricklet ermöglicht die Messung der Helligkeit von 
+Das :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
+ermöglicht die Messung der Helligkeit von 
 Sonnenlicht. Somit könnten Jalousien lichtabhängig gesteuert werden.
 
 GPS basierte Haussteuerung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-Über das GPS Bricklet oder ein Smartphone mit GPS könnte eigene Heim in 
+Über das :ref:`GPS Bricklet <gps_bricklet>`
+oder ein Smartphone mit GPS könnte eigene Heim in 
 Abhängigkeit der eigenen Position über das Internet gesteuert werden. Als 
 Beispiel könnte die Außenbeleuchtung eingeschaltet werden wenn es dunkel ist und 
 der Eigentümer sich dem Haus nähert.
@@ -397,8 +405,8 @@ Verbrauchsabhängige Verbraucherschaltung
 Viele intelligente Stromzähler ermöglichen den Zugriff auf den aktuellen
 Stromverbrauch. Eine Alternative stellt das Auslesen der Umdrehungen der 
 Ferrarisscheibe in einem gewöhnlichen Stromzähler mittels eines 
-Hall-Effect Bricklets dar. Abhängig vom aktuellen Verbrauch könnten somit
-Verbraucher geschaltet werden.
+:ref:`Hall-Effect Bricklets <hall_effect_bricklet>` dar. 
+Abhängig vom aktuellen Verbrauch könnten somit Verbraucher geschaltet werden.
 
 
 
