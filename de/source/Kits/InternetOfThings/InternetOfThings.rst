@@ -71,12 +71,12 @@ vernetzt nicht nur, wie bisher, Menschen und Computer sondern auch beliebige
 andere physische Objekte ("Dinge", "things").
 
 Das *Starterkit: Internet der Dinge* bietet einen einfachen Einstieg in die Welt
-des Internet der Dinge und ermöglicht es, nahezu beliebige Geräte über das 
+des Internets der Dinge und ermöglicht es, nahezu beliebige Geräte über das
 Internet zu steuern. Dazu ist das Kit mit einem 
-`Remote Switch Bricklet <remote_switch_bricklet>`__
+:ref:`Remote Switch Bricklet <remote_switch_bricklet>`
 ausgestattet über das verschiedenste 433MHz Funksteckdosen, Funkdimmer und 
 Hausautomatisationskomponenten gesteuert werden können. In der Dokumentation
-gibt es eine 
+des Bricklets gibt es eine
 :ref:`Liste der unterstützten Funkaktoren <remote_switch_supported_devices>`.
 
 Über die :ref:`API Bindings <api_bindings>` können diese Funkaktoren von 
@@ -88,17 +88,21 @@ von einem Raspberry Pi steht mit dem Kit nichts im Wege. Die Webseite
 Möglichkeit zur Verfügung diese Aktoren von jedem internetfähigen Gerät zu 
 steuern.
 
-Das Kit besteht im wesentlichen aus einem Master Brick und einem Remote Switch 
-Bricklet, welches mit einem 433MHz Sender ausgestattet ist. Über die USB 
+Das Kit besteht im wesentlichen aus einem :ref:`Master Brick <master_brick>`
+und einem :ref:`Remote Switch Bricklet <remote_switch_bricklet>`,
+welches mit einem 433MHz Sender ausgestattet ist. Über die USB
 Verbindung des Master Bricks können somit Steckdosen o.ä. gesteuert werden.
 Ein angeschlossener (Embedded-) PC (z.B. Raspberry Pi) kann direkt die Steuerung
-übernehmen oder als Gateway dienen. Mit einer zusätzlichen Ethernet 
-Master Extension kann auf ein Gateway verzichtet werden.
+übernehmen oder als Gateway dienen. Mit einer zusätzlichen
+:ref:`Ethernet Master Extension <ethernet_extension>`
+kann auf ein Gateway verzichtet werden.
 
 Mittels weiterer Module aus dem Baukastensystem kann das Kit erweitert 
-werden. So können zum Beispiel Temperaturen erfasst werden (Temperature, 
-Temperature-IR oder PTC Bricklet) oder auf Bewegungen reagiert werden (Motion 
-Detector Bricklet).
+werden. So können zum Beispiel Temperaturen erfasst werden
+(:ref:`Temperature <temperature_bricklet>`,
+:ref:`Temperature IR <temperature_ir_bricklet>` oder
+:ref:`PTC Bricklet <ptc_bricklet>`) oder auf Bewegungen reagiert werden
+(:ref:`Motion Detector Bricklet <motion_detector_bricklet>`).
 
 
 
@@ -150,7 +154,7 @@ Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
    
 Im nächsten Schritt sollte das Remote Switch Bricklet mit einer Funksteckdose
 getestet werden. Eine Anleitung zu den Konfigurationsmöglichkeiten
-lässt sich hier finden: `Link <remote_switch_bricklet_addressing_types>`__.
+ist :ref:`hier <remote_switch_bricklet_addressing_types>` zu finden.
 Anschließend kann damit begonnen werden das Kit zusammenzubauen.
 
 
@@ -224,7 +228,7 @@ Schritt 3: Kuppel aufsetzen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Im letzten Schritt muss nun noch das Rückteil des Gehäuses in das Unterteil
-gesteckt werden. Danach kann dann das Oberteil geboten und angebracht werden.
+gesteckt werden. Danach kann dann das Oberteil gebogen und angebracht werden.
 Das war es schon, das Gehäuse ist fertig!
 
 .. image:: /Images/Kits/iot_construction_step3_350.jpg
@@ -242,7 +246,7 @@ Anwendungen
 Ohne Programmieraufwand können direkt 433MHz Aktoren wie Funksteckdosen, Dimmer
 oder Hausautomatisierungskomponenten über die Webseite 
 `www.iot-remote.com <http://www.iot-remote.com/>`__ gesteuert werden.
-Die Webseite nutzt Javascript, das direkt im Browser ausgeführt wird. Es 
+Die Webseite nutzt JavaScript, das direkt im Browser ausgeführt wird. Es
 erfolgt also nach dem Laden der Webseite und des Javascipts kein Datenaustausch 
 über einen Server sondern nur zwischen dem lokalen Gerät und der zu steuernden
 Hardware. Für eine offline Nutzung kann die Webseite heruntergeladen werden.
@@ -262,12 +266,12 @@ Geräte und bietet Zugriff auf deren Steuerung.
 
 Über "+ New Remote..." können neue Geräte hinzugefügt werden. Es gibt vier 
 Typen: A (Schalter), B (Schalter), B (Dimmer), C (Schalter). Der einzustellende 
-Typ ist nur von dem zu steuernden Aktor abhängig (siehe `Liste der unterstützten 
-Aktoren <remote_switch_supported_devices>`__).
+Typ ist nur von dem zu steuernden Aktor abhängig (siehe :ref:`Liste der unterstützten
+Aktoren <remote_switch_supported_devices>`).
 
 Je nach Aktor sind verschiedene Angaben zu machen. Eine genauere Beschreibung
-befindet sich in der `Remote Switch Bricklet Dokumentation 
-<remote_switch_bricklet_addressing_types>`__
+befindet sich in der :ref:`Dokumentation <remote_switch_bricklet_addressing_types>`
+des Remote Switch Bricklets:
 
 Typ A (Schalter):
 
@@ -317,8 +321,14 @@ Typ A Schalters.
 **Speicher/Laden der Konfiguration**
 
 Die Webseite `www.iot-remote.com <http://www.iot-remote.com/>`__ wurde 
-absichtlich ohne Loginfunktion programmiert. Um eine einmal erstellte 
-Konfiguration in verschiedenen Browsern zu nutzen kann diese gespeichert werden.
+absichtlich ohne Loginfunktion programmiert. Die Konfiguration wird lokal im
+Browser in einem Cookie gespeichert und standardmäßig nicht an den Server
+übertragen. Für die Nutzung der Webseite von einem Browser aus ist dies
+ausreichend.
+
+Um eine einmal erstellte Konfiguration in verschiedenen Browsern zu nutzen
+kann diese auf www.iot-remote.com gespeichert werden, um sie dann in einem
+anderen Browser wieder zu laden.
 
 .. image:: /Images/Kits/iot_website_iot_remote_save_350.jpg
    :scale: 100 %
@@ -328,33 +338,35 @@ Konfiguration in verschiedenen Browsern zu nutzen kann diese gespeichert werden.
 
 Wurde eine Konfiguration erstellt, so kann diese gespeichert werden. Dazu klickt
 man auf "Settings" und klickt anschließend "Save configuration". Der Server
-erzeugt anschließend eine Konfigurations ID mit der die aktuelle Konfiguration
+erzeugt anschließend eine Konfigurations-ID mit der die aktuelle Konfiguration
 geladen werden kann.
 
-Das Laden einer Konfiguration erfolgt analog. Dazu wird eine Konfigurations ID 
+Das Laden einer Konfiguration erfolgt analog. Dazu wird eine Konfigurations-ID
 eingegeben und "Load configuration" geklickt. Anschließend sollten die zur ID 
-gehörenen Geräte in der Liste angezeigt werden.
+gehörenden Geräte in der Liste angezeigt werden.
 
 **Offline Betrieb / Lokale Nutzung**
 
-Die komplette Webseite kann heruntergeladen werden (inkl. dem Javascript) und
+Die komplette Webseite kann heruntergeladen werden (inklusive JavaScript) und
 lokal genutzt werden. Ein Aufruf von 
 `www.iot-remote.com <http://www.iot-remote.com/>`__ ist dann nicht mehr 
 notwendig. Am einfachsten kann das komplette 
-`Projekt von GitHub <https://github.com/Tinkerforge/internet-of-things>`__ 
-heruntergeladen werden: 
+`Projekt von GitHub <https://github.com/Tinkerforge/internet-of-things>`__ als
 `ZIP <https://github.com/Tinkerforge/internet-of-things/archive/master.zip>`__
-Die Webseite inkl. JavaScript befindet sich im Verzeichnis "web".
+heruntergeladen werden. Die Webseite inklusive JavaScript befindet sich
+im Verzeichnis "web".
 
-Leider unterstützt Chrome/Chromium standardmäßig keine file cookies, welche 
+Leider unterstützt Chrome/Chromium standardmäßig keine File-Cookies, welche
 benötigt werden um Cookies bei Offline Nutzung zu speichern. Um dieses
 Problem zu umgehen kann Chrome/Chromium mit folgendem Parameter gestartet 
-werden::
+werden:
+
+.. code-block:: none
 
  --enable-file-cookies
 
-Die Webseite kann im Offline Betrieb immernoch den iot-remote.com Server nutzen
-um Konfiugrationen zu speichern/laden. Dieser Server kann aber auch leicht
+Die Webseite kann bei Lokale Nutzung immer noch den www.iot-remote.com Server
+nutzen um Konfiugrationen zu speichern/laden. Dieser Server kann aber auch leicht
 selbst aufgesetzt werden. Dazu müssen folgende Programmteile angepasst werden:
 
 * ``web/js/remote/pages/PageSettings``: ``this.HOST``,  ``this.PORT`` sowie
@@ -365,8 +377,8 @@ python-autobahn. Der Server kann einfach mit Python gestartet werden::
 
  python server.py
 
-Und schon ist man im Besitzt eines eigenen Internet of Things webserver der 
-über Websockets Konfigurationen speichern kann!
+Und schon ist man im Besitzt eines eigenen Internet of Things Webserver der
+über WebSockets Konfigurationen speichern kann!
 
 Eigene Programme Entwickeln
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -374,7 +386,7 @@ Eigene Programme Entwickeln
 Neben der direkten Nutzung von 
 `www.iot-remote.com <http://www.iot-remote.com/>`__ kann das Kit natürlich auch
 in eigenen Anwendungen verwendet werden. Grundlage hierzu bildet die 
-:ref:`ÀPI des Remote Switch Bricklets <remote_switch_bricklet_programming_interface>`,
+:ref:`API des Remote Switch Bricklets <remote_switch_bricklet_programming_interface>`,
 die für verschiedene Programmiersprachen zur Verfügung steht. Die API 
 Dokumentation der jeweiligen Sprache enthält zusätzlich kleine Beispielprogramme
 die als Startpunkte für die eigenen Entwicklungen dienen können.
@@ -384,18 +396,18 @@ Ethernet Hardware Erweiterung
 
 Möchte man auf ein externes USB <-> Ethernet Gateway (PC, Raspberry Pi o.ä.)
 verzichten, bietet sich der Einsatz einer 
-:ref:`Ethernet Master Extension<ethernet_extension>` an.
+:ref:`Ethernet Master Extension <ethernet_extension>` an.
 Somit kann direkt mit dem Kit kommuniziert werden. Im Gehäuse ist Platz für 
 eine Ethernet Master Extension vorgesehen. Diese muss nur auf das Master Brick gesteckt 
-werden. In der Dokumentation gibt es `weitere Informationen zur Nutzung der 
-Ethernet Extension <remote_switch_supported_devices>`__.
+werden. In der Dokumentation gibt es :ref:`weitere Informationen zur Nutzung der
+Ethernet Extension <remote_switch_supported_devices>`.
 
 Interaktion mit anderen Dingen
 ------------------------------
 
 Das Kit kann mit den verschiedensten anderen "Dingen" kommunizieren.
 Am einfachsten lassen sich andere Bricks und Bricklets des Baukastensystems 
-nutzen. Über produktspezifische Schnittstellen oder on-line Services wie 
+nutzen. Über produktspezifische Schnittstellen oder Online-Services wie
 `Xively <https://xively.com/>`__, `Cumulocity <http://www.cumulocity.com/>`__,
 `Carriots <http://www.carriots.com/>`__, oder ähnliche lässt sich aber auch ohne 
 viel Aufwand mit anderen Geräten interagieren. Nachfolgend stellen wir einige 
@@ -410,7 +422,7 @@ Personen geschaltet werden.
 **Temperaturbasiertes Steuern von Fenstermotoren:**
 Über Bricklets wie 
 :ref:`Temperature <temperature_bricklet>`, 
-:ref:`Temperature IR<temperature_ir_bricklet>` oder dem 
+:ref:`Temperature IR <temperature_ir_bricklet>` oder dem
 :ref:`PTC Bricklet <ptc_bricklet>` können
 Temperaturen gemessen werden. Zusammen mit 433MHz 
 Hausautomatisierungskomponenten können somit Fenster temperaturabhängig bewegt
@@ -439,4 +451,3 @@ Stromverbrauch. Eine Alternative stellt das Auslesen der Umdrehungen der
 Ferrarisscheibe in einem gewöhnlichen Stromzähler mittels eines 
 :ref:`Hall-Effect Bricklets <hall_effect_bricklet>` dar. 
 Abhängig vom aktuellen Verbrauch könnten somit Verbraucher geschaltet werden.
-
