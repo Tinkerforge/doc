@@ -262,7 +262,7 @@ Geräte und bietet Zugriff auf deren Steuerung.
 
 Über "+ New Remote..." können neue Geräte hinzugefügt werden. Es gibt vier 
 Typen: A (Schalter), B (Schalter), B (Dimmer), C (Schalter). Der einzustellende 
-Typ ist nur von dem zu steuernden Aktor abhängig (siehe :ref:`Liste der unterstützten 
+Typ ist nur von dem zu steuernden Aktor abhängig (siehe `Liste der unterstützten 
 Aktoren <remote_switch_supported_devices>`__).
 
 Je nach Aktor sind verschiedene Angaben zu machen. Eine genauere Beschreibung
@@ -315,6 +315,7 @@ Typ A Schalters.
 
 
 **Speicher/Laden der Konfiguration**
+
 Die Webseite `www.iot-remote.com <http://www.iot-remote.com/>`__ wurde 
 absichtlich ohne Loginfunktion programmiert. Um eine einmal erstellte 
 Konfiguration in verschiedenen Browsern zu nutzen kann diese gespeichert werden.
@@ -335,11 +336,13 @@ eingegeben und "Load configuration" geklickt. Anschließend sollten die zur ID
 gehörenen Geräte in der Liste angezeigt werden.
 
 **Offline Betrieb / Lokale Nutzung**
+
 Die komplette Webseite kann heruntergeladen werden (inkl. dem Javascript) und
 lokal genutzt werden. Ein Aufruf von 
 `www.iot-remote.com <http://www.iot-remote.com/>`__ ist dann nicht mehr 
-notwendig. Am einfachsten kann das komplette Projekt von GitHub heruntergeladen
-werden: 
+notwendig. Am einfachsten kann das komplette 
+`Projekt von GitHub <https://github.com/Tinkerforge/internet-of-things>`__ 
+heruntergeladen werden: 
 `ZIP <https://github.com/Tinkerforge/internet-of-things/archive/master.zip>`__
 Die Webseite inkl. JavaScript befindet sich im Verzeichnis "web".
 
@@ -354,8 +357,8 @@ Die Webseite kann im Offline Betrieb immernoch den iot-remote.com Server nutzen
 um Konfiugrationen zu speichern/laden. Dieser Server kann aber auch leicht
 selbst aufgesetzt werden. Dazu müssen folgende Programmteile angepasst werden:
 
-* ``web/js/remote/pages/PageSettings``: ``this.HOST`` und ``this.PORT`` anpassen
-* ``server/server.py``: ``CONFIGURATION_PATH`` und ``LOCAL_PROXY_PORT``
+* ``web/js/remote/pages/PageSettings``: ``this.HOST``,  ``this.PORT`` sowie
+* ``server/server.py``: ``CONFIGURATION_PATH`` und ``LOCAL_PROXY_PORT``.
 
 Die Abhängigkeiten des Python Servers bestehen aus python-twisted und 
 python-autobahn. Der Server kann einfach mit Python gestartet werden::
@@ -385,7 +388,7 @@ verzichten, bietet sich der Einsatz einer
 Somit kann direkt mit dem Kit kommuniziert werden. Im Gehäuse ist Platz für 
 eine Ethernet Master Extension vorgesehen. Diese muss nur auf das Master Brick gesteckt 
 werden. In der Dokumentation gibt es `weitere Informationen zur Nutzung der 
-Ethernet Extension <remote_switch_supported_devices>`.
+Ethernet Extension <remote_switch_supported_devices>`__.
 
 Interaktion mit anderen Dingen
 ------------------------------
@@ -398,13 +401,13 @@ nutzen. Über produktspezifische Schnittstellen oder on-line Services wie
 viel Aufwand mit anderen Geräten interagieren. Nachfolgend stellen wir einige 
 Beispiele vor:
 
-**Bewegungserkennung mit dem Motion Detektor Bricklet**
+**Bewegungserkennung mit dem Motion Detektor Bricklet:**
 Das :ref:`Motion Detector Bricklet <motion_detector_bricklet>`
 ermöglicht die Detektion von Bewegungen. Zusammen
 mit dem Kit können somit Verbraucher in Abhängigkeit von der Anwesenheit von
 Personen geschaltet werden.
 
-**Temperaturbasiertes Steuern von Fenstermotoren**
+**Temperaturbasiertes Steuern von Fenstermotoren:**
 Über Bricklets wie 
 :ref:`Temperature <temperature_bricklet>`, 
 :ref:`Temperature IR<temperature_ir_bricklet>` oder dem 
@@ -413,24 +416,24 @@ Temperaturen gemessen werden. Zusammen mit 433MHz
 Hausautomatisierungskomponenten können somit Fenster temperaturabhängig bewegt
 werden.
 
-**Tageslichtabhänige Jalousiesteuerung**
+**Tageslichtabhänige Jalousiesteuerung:**
 Das :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
 ermöglicht die Messung der Helligkeit von 
 Sonnenlicht. Somit könnten Jalousien lichtabhängig gesteuert werden.
 
-**GPS basierte Haussteuerung**
+**GPS basierte Haussteuerung:**
 Über das :ref:`GPS Bricklet <gps_bricklet>`
 oder ein Smartphone mit GPS könnte das eigene Heim in 
 Abhängigkeit der eigenen Position über das Internet gesteuert werden. Als 
 Beispiel könnte die Außenbeleuchtung eingeschaltet werden wenn es dunkel ist und 
 der Eigentümer sich dem Haus nähert.
 
-**Strompreisbasierte Verbraucherschaltung**
+**Strompreisbasierte Verbraucherschaltung:**
 In manchen Stromtarifen ist der Strompreis abhängig von der Uhrzeit oder richtet
 sich direkt an den aktuellen Strommarktpreisen. Verbraucher könnten in 
 Abhängigkeit des aktuellen Strompreises Ein-/Ausgeschaltet werden.
 
-**Verbrauchsabhängige Verbraucherschaltung**
+**Verbrauchsabhängige Verbraucherschaltung:**
 Viele intelligente Stromzähler ermöglichen den Zugriff auf den aktuellen
 Stromverbrauch. Eine Alternative stellt das Auslesen der Umdrehungen der 
 Ferrarisscheibe in einem gewöhnlichen Stromzähler mittels eines 
