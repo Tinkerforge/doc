@@ -58,3 +58,5 @@ History
    "",     "07", "`Starter Kit: Blinkenlights <http://www.tinkerforge.com/en/blog/2014/2/10/starter-kit:-blinkenlights>`__"
    "",     "08", "`Announcement of RED Brick <http://www.tinkerforge.com/en/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__"
    "",     "10", "`LabVIEW bindings <http://www.tinkerforge.com/en/blog/2014/3/6/labview-bindings-ready>`__"
+   "",     "15", "`JavaScript bindings for browser/Node.js and authentication <http://www.tinkerforge.com/en/blog/2014/4/9/javascript-bindings-for-browser-node-js-and-authentication>`__"
+   "",     "15", "`RED Brick: Prototype-PCBs <http://www.tinkerforge.com/en/blog/2014/4/10/red-brick-circuit-boards-arrived>`__"
