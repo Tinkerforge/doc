@@ -76,13 +76,13 @@ installiert werden. Für andere Distributionen sollte es äquivalente Pakete geb
 
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial pyqt4-dev-tools
 
-Als erstes müssen die Qt ``.ui`` Dateien übersetzt werden (dafür wird ``pyuic4``
-benötigt). Dazu in den ``src/brickv/`` Ordner innerhalb des entpackten Quelltext
-wechseln und dort folgender Befehl ausführen::
+Als erstes müssen die Qt ``.ui`` Dateien übersetzt werden (dafür wird
+``pyuic4`` benötigt). Dazu in den ``src/`` Ordner innerhalb des entpackten
+Quelltexts wechseln und dort folgenden Befehl ausführen::
 
  python build_all_ui.py
 
-Um den Brick Viewer zu starten muss wieder in den ``src/brickv/`` Ordner
+Um den Brick Viewer zu starten muss in den ``src/brickv/`` Ordner
 gewechselt und dort folgender Befehl ausgeführt werden::
 
  python main.py
