@@ -12,9 +12,14 @@ Starter Kit: Internet of Things
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-		tfdocstart("Kits/iot_front_350.jpg",
-				   "Kits/iot_front_800.jpg",
+		tfdocstart("Kits/iot_on_table_350.jpg",
+				   "Kits/iot_on_table_800.jpg",
 				   "Starter Kit: Internet of Things")
+	}}
+	{{
+		tfdocimg("Kits/iot_front_350.jpg",
+				 "Kits/iot_front_800.jpg",
+				 "Starter Kit: Internet of Things")
 	}}
 	{{
 		tfdocimg("Kits/iot_back_ethernet_100.jpg",
