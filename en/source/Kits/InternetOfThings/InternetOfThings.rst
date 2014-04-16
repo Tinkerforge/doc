@@ -8,51 +8,45 @@
 Starter Kit: Internet of Things
 ===============================
 
-..
-	.. raw:: html
+.. raw:: html
 
-		{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-		{{
-			tfdocstart("Kits/kit_blinkenlights_fire_350.jpg",
-					   "Kits/kit_blinkenlights_fire_600.jpg",
-					   "Blinkenlights: Fire Simulation")
-		}}
-		{{
-			tfdocimg("Kits/kit_blinkenlights_fire_daylight_100.jpg",
-					 "Kits/kit_blinkenlights_fire_daylight_600.jpg",
-					 "Blinkenlights: Fire Simulation in Daylight")
-		}}
-		{{
-			tfdocimg("Kits/kit_blinkenlights_on_wall_100.jpg",
-					 "Kits/kit_blinkenlights_on_wall_600.jpg",
-					 "Blinkenlights: On Wall")
-		}}
-		{{
-			tfdocimg("Kits/kit_blinkenlights_pong_100.jpg",
-					 "Kits/kit_blinkenlights_pong_600.jpg",
-					 "Blinkenlights: Pong")
-		}}
-		{{
-			tfdocimg("Kits/kit_blinkenlights_pong_daylight_100.jpg",
-					 "Kits/kit_blinkenlights_pong_daylight_600.jpg",
-					 "Blinkenlights: Pong in Daylight")
-		}}
-		{{
-			tfdocimg("Kits/kit_blinkenlights_tetris_100.jpg",
-					 "Kits/kit_blinkenlights_tetris_600.jpg",
-					 "Blinkenlights: Tetris")
-		}}
-		{{
-			tfdocimg("Kits/kit_blinkenlights_text_daylight_100.jpg",
-					 "Kits/kit_blinkenlights_text_daylight_600.jpg",
-					 "Blinkenlights: Text Display")
-		}}
-		{{
-			tfdocimg("Kits/kit_blinkenlights_rainbow_near_far_dark_100.jpg",
-					 "Kits/kit_blinkenlights_rainbow_near_far_dark_600.jpg",
-					 "Blinkenlights: Rainbow with different Front Panel Distances")
-		}}
-		{{ tfdocend() }}
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+		tfdocstart("Kits/iot_front_350.jpg",
+				   "Kits/iot_front_800.jpg",
+				   "Starter Kit: Internet of Things")
+	}}
+	{{
+		tfdocimg("Kits/iot_back_ethernet_100.jpg",
+				 "Kits/iot_back_ethernet_800.jpg",
+				 "Internet of Things: Back side with Ethernet")
+	}}
+	{{
+		tfdocimg("Kits/iot_rpi_100.jpg",
+				 "Kits/iot_rpi_800.jpg",
+				 "Internet of Things: Connected to Raspberry PI")
+	}}
+	{{
+		tfdocimg("Kits/iot_half_open_100.jpg",
+				 "Kits/iot_half_open_800.jpg",
+				 "Internet of Things: Open")
+	}}
+	{{
+		tfdocimg("Kits/iot_half_open_ethernet_100.jpg",
+				 "Kits/iot_half_open_ethernet_800.jpg",
+				 "Internet of Things: Open with Ethernet")
+	}}
+	{{
+		tfdocimg("Kits/iot_content_100.jpg",
+				 "Kits/iot_content_800.jpg",
+				 "Internet of Things: Content")
+	}}
+	{{
+		tfdocimg("Kits/iot_packaging_open_100.jpg",
+				 "Kits/iot_packaging_open_800.jpg",
+				 "Internet of Things: Packaging")
+	}}
+	{{ tfdocend() }}
 
 Features
 --------
