@@ -17,8 +17,10 @@ und des Octave .jar (``octave/source/``) und alle verfügbaren MATLAB
 ebenfalls enthalten.
 
 
-Testing an Example
-------------------
+Test eines Beispiels
+--------------------
+
+Die Bindings kommen mit Beispielen für MATLAB und Octave.
 
 MATLAB
 ^^^^^^

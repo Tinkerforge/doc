@@ -20,6 +20,8 @@ available MATLAB (``matlab/examples/``) and Octave examples
 Testing an Example
 ------------------
 
+The bindings include examples for MATLAB and Octave.
+
 MATLAB
 ^^^^^^
 
