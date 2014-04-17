@@ -776,3 +776,11 @@ div.category_content_inner {
 	float: left;
 	margin: 1px 0;
 }
+
+div.category_api_outer {
+  margin-top: 10px;
+}
+
+div.category_hardware_outer .category_body .category_content {
+  margin-bottom: 0px;
+}
