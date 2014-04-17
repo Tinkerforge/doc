@@ -1,12 +1,16 @@
 en/build
 en/build-in-progress
+en/source/index_api.html
+en/source/index_hardware.html
+en/source/Images/Screenshots/LabVIEW/*.vi.png
 en/source/Software/Bricks
 en/source/Software/Bricklets
 en/source/Software/IPConnection_*_*xample*
 en/source/Software/Tinkerforge.js
-en/source/Images/Screenshots/LabVIEW/*.vi.png
 de/build
 de/build-in-progress
+de/source/index_api.html
+de/source/index_hardware.html
 de/source/Software/Bricks
 de/source/Software/Bricklets
 de/source/Software/IPConnection_*_*xample*
@@ -15,3 +19,4 @@ de/source/Software/Tinkerforge.js
 *.toctree
 *.substitutions
 *.pyc
+source_orig
