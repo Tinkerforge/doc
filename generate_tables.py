@@ -1127,13 +1127,13 @@ def make_index_api():
     function toggleContent(parent) {
         if(parent.find(".category_body").is(":hidden")) {
             parent.find(".category_body").slideDown(100);	
-            parent.find(".btn_more").removeClass("btn-more-down");
-            parent.find(".btn_more").addClass("btn-more-up");
+            parent.find(".btn-more").removeClass("btn-more-down");
+            parent.find(".btn-more").addClass("btn-more-up");
         }
         else {
             parent.find(".category_body").slideUp(100);	
-            parent.find(".btn_more").removeClass("btn-more-up");
-            parent.find(".btn_more").addClass("btn-more-down");
+            parent.find(".btn-more").removeClass("btn-more-up");
+            parent.find(".btn-more").addClass("btn-more-down");
         }
     }
 </script>

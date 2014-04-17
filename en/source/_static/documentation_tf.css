@@ -741,23 +741,30 @@ div.category_content_inner {
 }
 
 .category_head {
-	background: #00AAEA;
+	background-color: #00AAEA;
 	color: #fff;
 	padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;					 
 }
 
 .category_head:hover {
-	background: #40BBEA;
-	cursor: hand;
+	background-color: #40BBEA;
+	cursor: pointer;
 }
 
 .btn-more-up {
-	background-image:url('_images/Misc/arrow-up.png');
+  background-image: url('../_images/Misc/arrow-up.png');
+  background-repeat: no-repeat;
+  background-position: right 5px;
 }
 
 .btn-more-down {
-	background-image:url('_images/Misc/arrow-down.png');
+  background-image: url('../_images/Misc/arrow-down.png');
+  background-repeat: no-repeat;
+  background-position: right 5px;
 }
+
 
 .category_api {
 	width: 100%;
