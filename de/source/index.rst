@@ -172,24 +172,24 @@ Ein :ref:`Wireshark Dissector <wireshark_dissector>` für TFP
    Low_Level_Protocols/Wireshark_Dissector
 
 
-.. _index_links:
+.. _index_hardware:
 
-*****
-Links
-*****
-
-Die folgenden Tabelle fassen die Hardware und API Dokumentation für schnellen
-Zugriff zusammen.
+********
+Hardware
+********
 
 .. raw:: html
+	:file: index_hardware.html
 
-   <div class="index-link-table">
 
-.. include:: index_links.table
+.. _index_api:
+
+***
+API
+***
 
 .. raw:: html
-
-   </div>
+	:file: index_api.html
 
 .. toctree::
    :glob:
