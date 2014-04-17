@@ -121,9 +121,9 @@ The basics of the programming interface are described :ref:`here
 
 .. _index_kits:
 
-****
-Kits
-****
+************
+Starter Kits
+************
 
 We offer kits for different subject areas so you can get started more easily
 with Tinkerforge:

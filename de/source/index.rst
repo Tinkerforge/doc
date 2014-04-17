@@ -119,9 +119,9 @@ Die Grundlagen der Programmierschnittstelle werden :ref:`hier
 
 .. _index_kits:
 
-****
-Kits
-****
+***********
+Starterkits
+***********
 
 Für einen einfachen Einstieg bieten wir Kits in verschiedenen Themenbereichen an:
 
