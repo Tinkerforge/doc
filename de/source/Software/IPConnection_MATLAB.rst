@@ -47,7 +47,7 @@ Enumerate (Octave)
 `Download (octave_example_enumerate.m) <https://github.com/Tinkerforge/generators/raw/master/matlab/octave_example_enumerate.m>`__
 
 .. literalinclude:: IPConnection_MATLAB_octave_example_enumerate.m
- :language: matlab
+ :language: octave_fixed
  :linenos:
  :tab-width: 4
 
@@ -57,7 +57,7 @@ Authenticate (Octave)
 `Download (octave_example_authenticate.m) <https://github.com/Tinkerforge/generators/raw/master/matlab/octave_example_authenticate.m>`__
 
 .. literalinclude:: IPConnection_MATLAB_octave_example_authenticate.m
- :language: matlab
+ :language: octave_fixed
  :linenos:
  :tab-width: 4
 
