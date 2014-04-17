@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Delphi - API Bindings
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Delphi/Lazarus - API Bindings
 
 .. _api_bindings_delphi:
 
-Delphi - API Bindings
-=====================
+Delphi/Lazarus - API Bindings
+=============================
 
 **Requirements**: Delphi 2007 or newer, or Lazarus (Free Pascal Compiler 2.4
 or newer), other Delphi or Object Pascal compilers might work as well

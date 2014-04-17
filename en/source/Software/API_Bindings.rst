@@ -26,7 +26,7 @@ Installation and usage instructions for each programming language:
 * :ref:`C/C++ (iOS) <api_bindings_c_ios>`
 * :ref:`C# <api_bindings_csharp>`
 * :ref:`C# (Windows Phone) <api_bindings_csharp_windows_phone>`
-* :ref:`Delphi <api_bindings_delphi>`
+* :ref:`Delphi/Lazarus <api_bindings_delphi>`
 * :ref:`Java <api_bindings_java>`
 * :ref:`Java (Android) <api_bindings_java_android>`
 * :ref:`JavaScript <api_bindings_javascript>`
