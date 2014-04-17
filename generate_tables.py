@@ -998,22 +998,24 @@ def make_index_hardware_device(devices, category_url, use_category_content=True,
 
 def make_index_hardware():
     index_html = {'en': """
-<div class="category_body">
-    <div class="category_content">
-        <h3>Bricks</h3>
-        {0}
-    </div>
-    <div class="category_content">
-        <h3>Bricklets</h3>
-        {1}
-    </div>
-    <div class="category_content">
-        <h3>Master Extensions</h3>
-        {2}
-        <h3>Power Supplies</h3>
-        {3}
-        <h3>Accesories</h3>
-        {4}
+<div class="category_hardware_outer">
+    <div class="category_body">
+        <div class="category_content">
+            <h3>Bricks</h3>
+            {0}
+        </div>
+        <div class="category_content">
+            <h3>Bricklets</h3>
+            {1}
+        </div>
+        <div class="category_content">
+            <h3>Master Extensions</h3>
+            {2}
+            <h3>Power Supplies</h3>
+            {3}
+            <h3>Accesories</h3>
+            {4}
+        </div>
     </div>
 </div>
 <div style="clear: both;"></div>
@@ -1139,13 +1141,16 @@ def make_index_api():
 </script>
 """
 
-    html = ''
+    html = '<div class="category_api_outer">'
 
     for binding in bindings:
-        html += index_html[lang].format(make_index_api_device(bricks, 'Brick', binding.url_part_for_doc, False),
-                                        make_index_api_misc(binding, lang),
-                                        make_index_api_device(bricklets, 'Bricklet', binding.url_part_for_doc),
-                                        binding.display_name)
+        if binding.is_published:
+            html += index_html[lang].format(make_index_api_device(bricks, 'Brick', binding.url_part_for_doc, False),
+                                            make_index_api_misc(binding, lang),
+                                            make_index_api_device(bricklets, 'Bricklet', binding.url_part_for_doc),
+                                            binding.display_name)
+
+    html += '</div>'
 
     return html + script_html
 
