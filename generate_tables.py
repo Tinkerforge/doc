@@ -99,7 +99,7 @@ bindings = [Binding('Modbus',            'modbus',      'Modbus',      False, Tr
             Binding('TCP/IP',            'tcpip',       'TCPIP',       False, True),
             Binding('C/C++',             'c',           'C',           True,  True),
             Binding('C#',                'csharp',      'CSharp',      True,  True),
-            Binding('Delphi/Lazerus',    'delphi',      'Delphi',      True,  True),
+            Binding('Delphi/Lazarus',    'delphi',      'Delphi',      True,  True),
             Binding('Java',              'java',        'Java',        True,  True),
             Binding('JavaScript',        'javascript',  'JavaScript',  True,  True),
             Binding('LabVIEW',           'labview',     'LabVIEW',     True,  True),
@@ -1226,7 +1226,7 @@ def make_device_identifier_table():
     return table_head + '\n'.join(rows) + '\n'
 
 def make_authentication_tutorial_examples_table():
-    row = '* :ref:`{0} <ipcon_{1}_examples_authenticate>`'
+    row = '* :ref:`{0} <ipcon_{1}_examples>`'
     rows = []
 
     for binding in bindings:

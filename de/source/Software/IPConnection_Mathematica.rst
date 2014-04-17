@@ -32,8 +32,6 @@ Enumerate
  :tab-width: 4
 
 
-.. _ipcon_mathematica_examples_authenticate:
-
 Authenticate
 ^^^^^^^^^^^^
 

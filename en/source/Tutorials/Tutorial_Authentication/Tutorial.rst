@@ -20,7 +20,7 @@ Support for authentication was added in these software versions:
 
 * Brick Daemon: 2.1.0
 * Brick Viewer: 2.1.0
-* JavaScript API Bindings: 2.0.0
+* JavaScript and MATLAB/Octave API Bindings: 2.0.0
 * All other API Bindings: 2.1.0
 * Master Brick firmware (Ethernet/WIFI Extension): 2.2.0
 
@@ -119,7 +119,6 @@ in non-authenticated state again. A modified version of the
 
  func connected_callback(...) {
      ipcon.authenticate("My Authentication Secret!");
-
      ipcon.enumerate();
  }
 
