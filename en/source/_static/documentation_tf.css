@@ -752,11 +752,11 @@ div.category_content_inner {
 }
 
 .btn-more-up {
-		background-image:url('http://cdn2.iconfinder.com/data/icons/vaga/arrow_down.png');
+	background-image:url('_images/Misc/arrow-up.png');
 }
 
 .btn-more-down {
-		background-image:url('http://cdn2.iconfinder.com/data/icons/vaga/arrow_down.png');
+	background-image:url('_images/Misc/arrow-down.png');
 }
 
 .category_api {
