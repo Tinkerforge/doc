@@ -104,7 +104,7 @@ bindings = [Binding('Modbus',            'modbus',      'Modbus',      False, Tr
             Binding('JavaScript',        'javascript',  'JavaScript',  True,  True),
             Binding('LabVIEW',           'labview',     'LabVIEW',     True,  True),
             Binding('Mathematica',       'mathematica', 'Mathematica', True,  True),
-            Binding('MATLAB/Octave',     'matlab',      'MATLAB',      True,  False),
+            Binding('MATLAB/Octave',     'matlab',      'MATLAB',      True,  True),
             Binding('Perl',              'perl',        'Perl',        True,  True),
             Binding('PHP',               'php',         'PHP',         True,  True),
             Binding('Python',            'python',      'Python',      True,  True),
