@@ -733,10 +733,13 @@ div.category_content {
 	float: left;
 }
 
+div.category_content ul {
+	margin-right: 20px;
+}
+
 div.category_content_inner {
 	display: inline;
 	padding:  0 0px;
-	padding-right: 20px;
 	float: left;
 }
 
