@@ -989,7 +989,7 @@ def make_index_hardware_device(devices, category_url, use_category_content=True,
         li_part = lis[:14]
         lis = lis[14:]
         if use_category_content:
-            ret += '\n<div class="category_content">\n<ul>' +'\n'.join(li_part) + '</ul>\n</div>'
+            ret += '\n<div class="category_content_inner">\n<ul>' +'\n'.join(li_part) + '</ul>\n</div>'
         else:
             ret += '\n<ul>' +'\n'.join(li_part) + '</ul>\n'
 
@@ -1010,7 +1010,7 @@ def make_index_hardware():
     <div class="category_content">
         <h3>Master Extensions</h3>
         {2}
-        <h3>Power Supplys</h3>
+        <h3>Power Supplies</h3>
         {3}
         <h3>Accesories</h3>
         {4}
@@ -1018,7 +1018,7 @@ def make_index_hardware():
 </div>
 <div style="clear: both;"></div>
 """}
-    index_html['de'] = index_html['en'].replace('Power Supplys', 'Stromversorgungen').replace('Accesories', 'Zubehör')
+    index_html['de'] = index_html['en'].replace('Power Supplies', 'Stromversorgungen').replace('Accesories', 'Zubehör')
 
     return index_html[lang].format(make_index_hardware_device(bricks, 'Brick'),
                                    make_index_hardware_device(bricklets, 'Bricklet', use_category_in_name=False),
@@ -1049,7 +1049,7 @@ def make_index_api_device(devices, category_url, language, use_category_content=
         li_part = lis[:11]
         lis = lis[11:]
         if use_category_content:
-            ret += '\n<div class="category_content">\n<ul>' +'\n'.join(li_part) + '</ul>\n</div>'
+            ret += '\n<div class="category_content_inner">\n<ul>' +'\n'.join(li_part) + '</ul>\n</div>'
         else:
             ret += '\n<ul>' +'\n'.join(li_part) + '</ul>\n'
 
@@ -1096,7 +1096,7 @@ def make_index_api_misc(binding, lang):
 def make_index_api():
     index_html = {'en': """
 <div class="category_api">
-    <div class="category_head">
+    <div class="category_head btn-more down">
         {3}
     </div>
     <div class="category_body" style="display: none;">
@@ -1118,24 +1118,24 @@ def make_index_api():
 
     script_html = """
 <script type="text/javascript">
-    if($(document).ready()) {{
-        $(".category_head").click(function() {{
+    if($(document).ready()) {
+        $(".category_head").click(function() {
             toggleContent($(this).parent());
-        }});
-    }}
+        });
+    }
 
-    function toggleContent(parent) {{
-        if(parent.find(".category_body").is(":hidden")) {{
+    function toggleContent(parent) {
+        if(parent.find(".category_body").is(":hidden")) {
             parent.find(".category_body").slideDown(100);	
-            //parent.find(".btn_more").removeClass("down");
-            //parent.find(".btn_more").addClass("up");
-        }}
-        else {{
+            parent.find(".btn_more").removeClass("down");
+            parent.find(".btn_more").addClass("up");
+        }
+        else {
             parent.find(".category_body").slideUp(100);	
-            //parent.find(".btn_more").removeClass("up");
-            //parent.find(".btn_more").addClass("down");
-        }}
-    }}
+            parent.find(".btn_more").removeClass("up");
+            parent.find(".btn_more").addClass("down");
+        }
+    }
 </script>
 """
 

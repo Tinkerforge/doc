@@ -723,12 +723,20 @@ div.horizontal-image-scroll {
 }
 
 div.category_body h3 {
-	margin: 10px 0;
+	margin-right: 10px;
+	padding: 0px 10px;
 }
 
 div.category_content {
 	display: inline;
 	padding:  0 10px;
+	float: left;
+}
+
+div.category_content_inner {
+	display: inline;
+	padding:  0 0px;
+	padding-right: 20px;
 	float: left;
 }
 
@@ -741,6 +749,14 @@ div.category_content {
 .category_head:hover {
 	background: #40BBEA;
 	cursor: hand;
+}
+
+.btn-more-up {
+		background-image:url('http://cdn2.iconfinder.com/data/icons/vaga/arrow_down.png');
+}
+
+.btn-more-down {
+		background-image:url('http://cdn2.iconfinder.com/data/icons/vaga/arrow_down.png');
 }
 
 .category_api {
