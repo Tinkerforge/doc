@@ -99,7 +99,7 @@ bindings = [Binding('Modbus',            'modbus',      'Modbus',      False, Tr
             Binding('TCP/IP',            'tcpip',       'TCPIP',       False, True),
             Binding('C/C++',             'c',           'C',           True,  True),
             Binding('C#',                'csharp',      'CSharp',      True,  True),
-            Binding('Delphi/Lazerus',    'delphi',      'Delphi',      True,  True),
+            Binding('Delphi/Lazarus',    'delphi',      'Delphi',      True,  True),
             Binding('Java',              'java',        'Java',        True,  True),
             Binding('JavaScript',        'javascript',  'JavaScript',  True,  True),
             Binding('LabVIEW',           'labview',     'LabVIEW',     True,  True),
