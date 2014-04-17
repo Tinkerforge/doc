@@ -724,6 +724,7 @@ div.horizontal-image-scroll {
 
 div.category_body h3 {
 	margin-right: 10px;
+	margin-top: 10px;
 	padding: 0px 10px;
 }
 
@@ -731,6 +732,7 @@ div.category_content {
 	display: inline;
 	padding:  0 10px;
 	float: left;
+	margin-bottom: 15px;
 }
 
 div.category_content ul {

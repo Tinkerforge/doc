@@ -82,11 +82,6 @@ their own section.
 The basics of the programming interface are described :ref:`here
 <programming_interface>`.
 
-.. _index_api:
-
-API
-===
-
 .. raw:: html
 	:file: index_api.html
 

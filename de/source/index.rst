@@ -83,12 +83,6 @@ einem eigenen Bereich.
 Die Grundlagen der Programmierschnittstelle werden :ref:`hier
 <programming_interface>` beschrieben.
 
-
-.. _index_api:
-
-API
-===
-
 .. raw:: html
 	:file: index_api.html
 
