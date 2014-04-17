@@ -1226,7 +1226,7 @@ def make_device_identifier_table():
     return table_head + '\n'.join(rows) + '\n'
 
 def make_authentication_tutorial_examples_table():
-    row = '* :ref:`{0} <ipcon_{1}_examples_authenticate>`'
+    row = '* :ref:`{0} <ipcon_{1}_examples>`'
     rows = []
 
     for binding in bindings:

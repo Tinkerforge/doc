@@ -119,7 +119,6 @@ in non-authenticated state again. A modified version of the
 
  func connected_callback(...) {
      ipcon.authenticate("My Authentication Secret!");
-
      ipcon.enumerate();
  }
 

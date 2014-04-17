@@ -130,7 +130,6 @@ folgt aus (Pseudocode)::
 
  func connected_callback(...) {
      ipcon.authenticate("My Authentication Secret!");
-
      ipcon.enumerate();
  }
 

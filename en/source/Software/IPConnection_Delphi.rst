@@ -32,8 +32,6 @@ Enumerate
  :tab-width: 4
 
 
-.. _ipcon_delphi_examples_authenticate:
-
 Authenticate
 ^^^^^^^^^^^^
 

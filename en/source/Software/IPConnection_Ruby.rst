@@ -32,8 +32,6 @@ Enumerate
  :tab-width: 4
 
 
-.. _ipcon_ruby_examples_authenticate:
-
 Authenticate
 ^^^^^^^^^^^^
 

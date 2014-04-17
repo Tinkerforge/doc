@@ -32,8 +32,6 @@ Enumerate
  :tab-width: 4
 
 
-.. _ipcon_java_examples_authenticate:
-
 Authenticate
 ^^^^^^^^^^^^
 
@@ -140,17 +138,6 @@ Grundfunktionen
 
  Broadcast einer Enumerierungsanfrage. Alle Bricks und Bricklets werden mit einem
  Enumerate Callback antworten.
-
-
-Konfigurationsfunktionen für Listener
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. java:function:: public void IPConnection::addListener(Object object)
-
- Registriert ein Listener Objekt.
-
- Die verfügbaren Listener Klassen mit den Methoden welche überschrieben
- werden können werden unten beschrieben.
 
 
 Listener
