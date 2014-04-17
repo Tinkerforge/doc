@@ -8,31 +8,6 @@ Dokumentation
 #############
 
 
-.. _index_product_overview:
-
-****************
-Produktübersicht
-****************
-
-Unsere :ref:`Produkte <product_overview>` gliedern sich in fünf verschiedene
-Kategorien:
-
-* :ref:`product_overview_bricks`
-* :ref:`product_overview_bricklets`
-* :ref:`product_overview_master_extensions`
-* :ref:`product_overview_power_supplies`
-* :ref:`product_overview_accessories`
-
-Die :ref:`Timeline <timeline>` gibt eine Übersicht über die Historie
-veröffentlichter Hardware und gemachter Entwicklungen.
-
-.. toctree::
-   :hidden:
-
-   Product_Overview
-   Timeline
-
-
 .. _index_tutorials:
 
 *****************
@@ -57,27 +32,34 @@ Antworten auf häufig gestellte Fragen finden sich in den :ref:`FAQ <faq>`.
    FAQ
 
 
-.. _index_kits:
 
-****
-Kits
-****
+.. _index_hardware:
 
-Für einen einfachen Einstieg bieten wir Kits in verschiedenen Themenbereichen an:
+********
+Hardware
+********
 
-* :ref:`starter_kit_weather_station`
-* :ref:`starter_kit_hardware_hacking`
-* :ref:`starter_kit_server_room_monitoring`
-* :ref:`starter_kit_blinkenlights`
+Unsere :ref:`Produkte <product_overview>` gliedern sich in fünf verschiedene
+Kategorien:
+
+* :ref:`product_overview_bricks`
+* :ref:`product_overview_bricklets`
+* :ref:`product_overview_master_extensions`
+* :ref:`product_overview_power_supplies`
+* :ref:`product_overview_accessories`
+
+Die :ref:`Timeline <timeline>` gibt eine Übersicht über die Historie
+veröffentlichter Hardware und gemachter Entwicklungen.
+
+
+.. raw:: html
+	:file: index_hardware.html
 
 .. toctree::
    :hidden:
 
-   Kits/WeatherStation/WeatherStation
-   Kits/HardwareHacking/HardwareHacking
-   Kits/ServerRoomMonitoring/ServerRoomMonitoring
-   Kits/Blinkenlights/Blinkenlights                                             
-
+   Product_Overview
+   Timeline
 
 
 .. _index_software:
@@ -101,14 +83,18 @@ einem eigenen Bereich.
 Die Grundlagen der Programmierschnittstelle werden :ref:`hier
 <programming_interface>` beschrieben.
 
-Im `Januar 2013 <http://www.tinkerforge.com/de/blog/2013/1/15/protokoll-2-0-verfuegbar>`__
-haben wir das Kommunikationsprotokoll der Bricks überarbeitet. Für Programme
-die vor diesem Zeitpunkt entwickelt wurden gibt es eine Anleitung für den
-:ref:`Übergang von Protokoll 1.0 auf Protokoll 2.0 <transition_1to2>`.
+.. raw:: html
+	:file: index_api.html
 
-Die :ref:`Shell Bindings <api_bindings_shell>` können auch als Text Protokoll
-Proxy zwischen Bricks/Bricklets und der :ref:`NetIO Controller App <netio_setup>`
-verwendet werden.
+.. toctree::
+   :glob:
+   :hidden:
+
+   Hardware/Bricks/*
+   Hardware/Bricklets/*
+   Hardware/Master_Extensions/*
+   Hardware/Power_Supplies/*
+   Hardware/Accessories/*
 
 .. toctree::
    :hidden:
@@ -129,6 +115,29 @@ verwendet werden.
    Software/*
    Software/Bricks/*
    Software/Bricklets/*
+
+
+.. _index_kits:
+
+***********
+Starterkits
+***********
+
+Für einen einfachen Einstieg bieten wir Kits in verschiedenen Themenbereichen an:
+
+* :ref:`starter_kit_weather_station`
+* :ref:`starter_kit_hardware_hacking`
+* :ref:`starter_kit_server_room_monitoring`
+* :ref:`starter_kit_blinkenlights`
+
+.. toctree::
+   :hidden:
+
+   Kits/WeatherStation/WeatherStation
+   Kits/HardwareHacking/HardwareHacking
+   Kits/ServerRoomMonitoring/ServerRoomMonitoring
+   Kits/Blinkenlights/Blinkenlights                                             
+
 
 
 .. _index_embedded_boards:
@@ -171,35 +180,3 @@ Ein :ref:`Wireshark Dissector <wireshark_dissector>` für TFP
    Low_Level_Protocols/Modbus
    Low_Level_Protocols/Wireshark_Dissector
 
-
-.. _index_links:
-
-*****
-Links
-*****
-
-Die folgenden Tabelle fassen die Hardware und API Dokumentation für schnellen
-Zugriff zusammen.
-
-.. raw:: html
-
-   <div class="index-link-table">
-
-.. include:: index_links.table
-
-.. raw:: html
-
-   </div>
-
-.. toctree::
-   :glob:
-   :hidden:
-
-   Hardware/Bricks/*
-   Hardware/Bricklets/*
-   Hardware/Master_Extensions/*
-   Hardware/Power_Supplies/*
-   Hardware/Accessories/*
-
-Die Dokumentation für Protokoll 1.0 befindet sich
-`hier <http://www.tinkerforge.com/de/doc_v1/index.html>`__.

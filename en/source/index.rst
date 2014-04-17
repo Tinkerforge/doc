@@ -8,30 +8,6 @@ Documentation
 #############
 
 
-.. _index_product_overview:
-
-****************
-Product Overview
-****************
-
-Our :ref:`products <product_overview>` are divided into five different categories:
-
-* :ref:`product_overview_bricks`
-* :ref:`product_overview_bricklets`
-* :ref:`product_overview_master_extensions`
-* :ref:`product_overview_power_supplies`
-* :ref:`product_overview_accessories`
-
-This :ref:`Timeline <timeline>` presents an overview of released products and
-finished developments.
-
-.. toctree::
-   :hidden:
-
-   Product_Overview
-   Timeline
-
-
 .. _index_tutorials:
 
 *****************
@@ -56,27 +32,33 @@ Answers to frequently asked questions can be found in the :ref:`FAQ <faq>`.
    FAQ
 
 
-.. _index_kits:
 
-****
-Kits
-****
+.. _index_hardware:
 
-We offer kits for different subject areas so you can get started more easily
-with Tinkerforge:
+********
+Hardware
+********
 
-* :ref:`starter_kit_weather_station`
-* :ref:`starter_kit_hardware_hacking`
-* :ref:`starter_kit_server_room_monitoring`
-* :ref:`starter_kit_blinkenlights`
+Our :ref:`products <product_overview>` are divided into five different categories:
+
+* :ref:`product_overview_bricks`
+* :ref:`product_overview_bricklets`
+* :ref:`product_overview_master_extensions`
+* :ref:`product_overview_power_supplies`
+* :ref:`product_overview_accessories`
+
+This :ref:`Timeline <timeline>` presents an overview of released products and
+finished developments.
+
+.. raw:: html
+	:file: index_hardware.html
+
 
 .. toctree::
    :hidden:
 
-   Kits/WeatherStation/WeatherStation
-   Kits/HardwareHacking/HardwareHacking
-   Kits/ServerRoomMonitoring/ServerRoomMonitoring
-   Kits/Blinkenlights/Blinkenlights
+   Product_Overview
+   Timeline
 
 
 .. _index_software:
@@ -100,14 +82,18 @@ their own section.
 The basics of the programming interface are described :ref:`here
 <programming_interface>`.
 
-In `January 2013 <http://www.tinkerforge.com/en/blog/2013/1/15/protocol-2-0-available>`__
-we updated the communication protocol used for Bricks. For programs that were
-developed before this time we provide a guide for the :ref:`transitioning from
-Protocol 1.0 to Protocol 2.0 <transition_1to2>`.
+.. raw:: html
+	:file: index_api.html
 
-The :ref:`Shell bindings <api_bindings_shell>` can also be used as a text
-protocol proxy between Bricks/Bricklets and the :ref:`NetIO Controller App
-<netio_setup>`.
+.. toctree::
+   :glob:
+   :hidden:
+
+   Hardware/Bricks/*
+   Hardware/Bricklets/*
+   Hardware/Master_Extensions/*
+   Hardware/Power_Supplies/*
+   Hardware/Accessories/*
 
 .. toctree::
    :hidden:
@@ -128,6 +114,32 @@ protocol proxy between Bricks/Bricklets and the :ref:`NetIO Controller App
    Software/*
    Software/Bricks/*
    Software/Bricklets/*
+
+
+
+
+
+.. _index_kits:
+
+************
+Starter Kits
+************
+
+We offer kits for different subject areas so you can get started more easily
+with Tinkerforge:
+
+* :ref:`starter_kit_weather_station`
+* :ref:`starter_kit_hardware_hacking`
+* :ref:`starter_kit_server_room_monitoring`
+* :ref:`starter_kit_blinkenlights`
+
+.. toctree::
+   :hidden:
+
+   Kits/WeatherStation/WeatherStation
+   Kits/HardwareHacking/HardwareHacking
+   Kits/ServerRoomMonitoring/ServerRoomMonitoring
+   Kits/Blinkenlights/Blinkenlights
 
 
 .. _index_embedded_boards:
@@ -168,36 +180,3 @@ A :ref:`Wireshark dissector <wireshark_dissector>` for TFP
    Low_Level_Protocols/TCPIP
    Low_Level_Protocols/Modbus
    Low_Level_Protocols/Wireshark_Dissector
-
-
-.. _index_links:
-
-*****
-Links
-*****
-
-The following table summarizes the hardware and API documentation for quick
-access:
-
-.. raw:: html
-
-   <div class="index-link-table">
-
-.. include:: index_links.table
-
-.. raw:: html
-
-   </div>
-
-.. toctree::
-   :glob:
-   :hidden:
-
-   Hardware/Bricks/*
-   Hardware/Bricklets/*
-   Hardware/Master_Extensions/*
-   Hardware/Power_Supplies/*
-   Hardware/Accessories/*
-
-The documentation for Protocol 1.0 can be found
-`here <http://www.tinkerforge.com/en/doc_v1/index.html>`__.

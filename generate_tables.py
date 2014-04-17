@@ -95,16 +95,16 @@ class Binding:
     def tutorial(self):
         return binding_tutorials[self.url_part][lang]
 
-bindings = [Binding('Modbus',            'modbus',      None,          False, True),
-            Binding('TCP/IP',            'tcpip',       None,          False, True),
+bindings = [Binding('Modbus',            'modbus',      'Modbus',      False, True),
+            Binding('TCP/IP',            'tcpip',       'TCPIP',       False, True),
             Binding('C/C++',             'c',           'C',           True,  True),
             Binding('C#',                'csharp',      'CSharp',      True,  True),
-            Binding('Delphi',            'delphi',      'Delphi',      True,  True),
+            Binding('Delphi / Lazarus',  'delphi',      'Delphi',      True,  True),
             Binding('Java',              'java',        'Java',        True,  True),
             Binding('JavaScript',        'javascript',  'JavaScript',  True,  True),
             Binding('LabVIEW',           'labview',     'LabVIEW',     True,  True),
             Binding('Mathematica',       'mathematica', 'Mathematica', True,  True),
-            Binding('MATLAB',            'matlab',      'MATLAB',      True,  False),
+            Binding('MATLAB / Octave',   'matlab',      'MATLAB',      True,  False),
             Binding('Perl',              'perl',        'Perl',        True,  True),
             Binding('PHP',               'php',         'PHP',         True,  True),
             Binding('Python',            'python',      'Python',      True,  True),
@@ -965,6 +965,195 @@ def make_index_table():
                                          make_index_table_block(power_supplies, 'power_supply'),
                                          make_index_table_block(accessories, 'accessory', False))
 
+
+
+def make_index_hardware_device(devices, category_url, use_category_content=True, use_category_in_name=True):
+    hardware_li = """<li><a class="reference internal" href="Hardware/{1}s/{2}{3}.html">{0}</a></li>"""
+    lis = []
+
+    for device in devices:
+        if not device.is_published:
+            continue
+
+        link = device.display_name.replace(' ', '_').replace('/', '_').replace('-', '')
+        if link == 'StepDown_Power_Supply':
+            link = 'Step_Down'
+
+        category_name = ''
+        if use_category_in_name:
+            category_name = '_' + category_url
+        lis.append(hardware_li.format(device.display_name, category_url, link, category_name))
+
+    ret = ''
+    while lis != []:
+        li_part = lis[:14]
+        lis = lis[14:]
+        if use_category_content:
+            ret += '\n<div class="category_content_inner">\n<ul>' +'\n'.join(li_part) + '</ul>\n</div>'
+        else:
+            ret += '\n<ul>' +'\n'.join(li_part) + '</ul>\n'
+
+    return ret
+
+
+def make_index_hardware():
+    index_html = {'en': """
+<div class="category_hardware_outer">
+    <div class="category_body">
+        <div class="category_content">
+            <h3>Bricks</h3>
+            {0}
+        </div>
+        <div class="category_content">
+            <h3>Bricklets</h3>
+            {1}
+        </div>
+        <div class="category_content">
+            <h3>Master Extensions</h3>
+            {2}
+            <h3>Power Supplies</h3>
+            {3}
+            <h3>Accesories</h3>
+            {4}
+        </div>
+    </div>
+</div>
+<div style="clear: both;"></div>
+"""}
+    index_html['de'] = index_html['en'].replace('Power Supplies', 'Stromversorgungen').replace('Accesories', 'Zubehör')
+
+    return index_html[lang].format(make_index_hardware_device(bricks, 'Brick'),
+                                   make_index_hardware_device(bricklets, 'Bricklet', use_category_in_name=False),
+                                   make_index_hardware_device(extensions, 'Master_Extension', False, False),
+                                   make_index_hardware_device(power_supplies, 'Power_Supplie', False, False),
+                                   make_index_hardware_device(accessories, 'Accessorie', False, False))
+
+
+def make_index_api_device(devices, category_url, language, use_category_content=True, use_category_in_name = True):
+    hardware_brick_li = """<li><a class="reference internal" href="Software/{1}s/{2}{3}_{4}.html">{0}</a></li>"""
+    lis = []
+
+    for device in devices:
+        if not device.is_published:
+            continue
+
+        if device.bindings == []:
+            continue
+
+        link = device.display_name.replace(' ', '').replace('/', '').replace('-', '')
+        category_name = ''
+        if use_category_in_name:
+            category_name = '_' + category_url
+        lis.append(hardware_brick_li.format(device.display_name, category_url, link, category_name, language))
+
+    ret = ''
+    while lis != []:
+        li_part = lis[:11]
+        lis = lis[11:]
+        if use_category_content:
+            ret += '\n<div class="category_content_inner">\n<ul>' +'\n'.join(li_part) + '</ul>\n</div>'
+        else:
+            ret += '\n<ul>' +'\n'.join(li_part) + '</ul>\n'
+
+    return ret
+
+def make_index_api_misc(binding, lang):
+    misc_html = {'en': """
+<ul>
+    <li><a class="reference internal" href="Software/IPConnection_{0}.html">IP Connection</a></li>
+    <li><a class="reference internal" href="Software/API_Bindings_{0}.html">Usage</a></li>
+    {1}
+</ul>
+"""}
+    misc_html['de'] = misc_html['en'].replace('Usage', 'Benutzung')
+
+    llp_html = {'en': """
+<ul>
+    <li><a class="reference internal" href="Low_Level_Protocols/{0}.html">Specification</a></li>
+</ul>
+"""}
+    llp_html['de'] = llp_html['en'].replace('Specification', 'Spezifikation')
+
+
+    add = ''
+
+    additional_li = {'en': '<li><a class="reference internal" href="Software/API_Bindings_{0}_{1}.html">Usage ({2})</a></li>'}
+    additional_li['de'] = additional_li['en'].replace('Usage', 'Benutzung')
+
+    language = binding.url_part_for_doc
+    if not binding.is_programming_language:
+            return llp_html[lang].format(language)
+    else:
+        if language == 'C':
+            add = additional_li[lang].format(language, 'iOS', 'iOS')
+        elif language == 'CSharp':
+            add = additional_li[lang].format(language, 'Windows_Phone', 'Windows Phone')
+        elif language == 'Java':
+            add = additional_li[lang].format(language, 'Android', 'Android')
+
+        return misc_html[lang].format(language, add)
+
+    return ''
+
+def make_index_api():
+    index_html = {'en': """
+<div class="category_api">
+    <div class="category_head btn-more btn-more-down">
+        {3}
+    </div>
+    <div class="category_body" style="display: none;">
+        <div class="category_content">
+            <h3>Bricks</h3>
+            {0}
+            <h3>Misc</h3>
+            {1}
+        </div>
+        <div class="category_content">
+            <h3>Bricklets</h3>
+            {2}
+        </div>
+    </div>
+</div>
+<div style="clear: both;"></div>
+"""}
+    index_html['de'] = index_html['en']
+
+    script_html = """
+<script type="text/javascript">
+    if($(document).ready()) {
+        $(".category_head").click(function() {
+            toggleContent($(this).parent());
+        });
+    }
+
+    function toggleContent(parent) {
+        if(parent.find(".category_body").is(":hidden")) {
+            parent.find(".category_body").slideDown(100);	
+            parent.find(".btn-more").removeClass("btn-more-down");
+            parent.find(".btn-more").addClass("btn-more-up");
+        }
+        else {
+            parent.find(".category_body").slideUp(100);	
+            parent.find(".btn-more").removeClass("btn-more-up");
+            parent.find(".btn-more").addClass("btn-more-down");
+        }
+    }
+</script>
+"""
+
+    html = '<div class="category_api_outer">'
+
+    for binding in bindings:
+        if binding.is_published:
+            html += index_html[lang].format(make_index_api_device(bricks, 'Brick', binding.url_part_for_doc, False),
+                                            make_index_api_misc(binding, lang),
+                                            make_index_api_device(bricklets, 'Bricklet', binding.url_part_for_doc),
+                                            binding.display_name)
+
+    html += '</div>'
+
+    return html + script_html
+
 hlpi_table_head = {
 'en':
 """
@@ -1042,7 +1231,7 @@ def make_device_identifier_table():
     return table_head + '\n'.join(rows) + '\n'
 
 def make_authentication_tutorial_examples_table():
-    row = '* :ref:`{0} <ipcon_{1}_examples_authenticate>`'
+    row = '* :ref:`{0} <ipcon_{1}_examples>`'
     rows = []
 
     for binding in bindings:
@@ -1075,6 +1264,12 @@ def generate(path):
         sys.exit(1)
 
     get_latest_version_info()
+
+    print('Generating index_hardware.html')
+    write_if_changed(os.path.join(path, 'source', 'index_hardware.html'), make_index_hardware())
+
+    print('Generating index_api.html')
+    write_if_changed(os.path.join(path, 'source', 'index_api.html'), make_index_api())
 
     print('Generating index_links.table')
     write_if_changed(os.path.join(path, 'source', 'index_links.table'), make_index_table())

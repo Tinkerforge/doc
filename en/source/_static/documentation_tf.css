@@ -721,3 +721,66 @@ div.horizontal-image-scroll {
 	overflow: auto;
 	overflow-y: hidden;
 }
+
+div.category_body h3 {
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 0px 10px;
+}
+
+div.category_content {
+	display: inline;
+	padding:  0 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+
+div.category_content ul {
+	margin-right: 20px;
+}
+
+div.category_content_inner {
+	display: inline;
+	padding:  0 0px;
+	float: left;
+}
+
+.category_head {
+	background-color: #00AAEA;
+	color: #fff;
+	padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;					 
+}
+
+.category_head:hover {
+	background-color: #40BBEA;
+	cursor: pointer;
+}
+
+.btn-more-up {
+  background-image: url('../_images/Misc/arrow-up.png');
+  background-repeat: no-repeat;
+  background-position: right 5px;
+}
+
+.btn-more-down {
+  background-image: url('../_images/Misc/arrow-down.png');
+  background-repeat: no-repeat;
+  background-position: right 5px;
+}
+
+
+.category_api {
+	width: 100%;
+	float: left;
+	margin: 1px 0;
+}
+
+div.category_api_outer {
+  margin-top: 10px;
+}
+
+div.category_hardware_outer .category_body .category_content {
+  margin-bottom: 0px;
+}

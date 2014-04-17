@@ -1,12 +1,12 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Delphi - IP Connection
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Delphi/Lazarus - IP Connection
 
-.. |ref_api_bindings| replace:: :ref:`Delphi bindings <api_bindings_delphi>`
+.. |ref_api_bindings| replace:: :ref:`Delphi/Lazarus bindings <api_bindings_delphi>`
 
 .. _ipcon_delphi:
 
-Delphi - IP Connection
-======================
+Delphi/Lazarus - IP Connection
+==============================
 
 .. include:: IPConnection_Common.substitutions
    :start-after: >>>intro
@@ -31,8 +31,6 @@ Enumerate
  :linenos:
  :tab-width: 4
 
-
-.. _ipcon_delphi_examples_authenticate:
 
 Authenticate
 ^^^^^^^^^^^^

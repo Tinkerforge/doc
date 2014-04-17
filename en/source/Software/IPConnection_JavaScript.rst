@@ -31,6 +31,16 @@ Enumerate (Node.js)
  :linenos:
  :tab-width: 4
 
+Authenticate (Node.js)
+^^^^^^^^^^^^^^^^^^^^^^
+
+`Download (ExampleAuthenticate.js) <https://github.com/Tinkerforge/generators/raw/master/javascript/ExampleAuthenticate.js>`__
+
+.. literalinclude:: IPConnection_JavaScript_ExampleAuthenticate.js
+ :language: javascript
+ :linenos:
+ :tab-width: 4
+
 Enumerate (HTML)
 ^^^^^^^^^^^^^^^^
 
@@ -39,19 +49,6 @@ Enumerate (HTML)
 
 .. literalinclude:: IPConnection_JavaScript_ExampleEnumerate.html
  :language: html
- :linenos:
- :tab-width: 4
-
-
-.. _ipcon_javascript_examples_authenticate:
-
-Authenticate (Node.js)
-^^^^^^^^^^^^^^^^^^^^^^
-
-`Download (ExampleAuthenticate.js) <https://github.com/Tinkerforge/generators/raw/master/javascript/ExampleAuthenticate.js>`__
-
-.. literalinclude:: IPConnection_JavaScript_ExampleAuthenticate.js
- :language: javascript
  :linenos:
  :tab-width: 4
 

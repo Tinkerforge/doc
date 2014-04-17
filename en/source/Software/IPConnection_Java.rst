@@ -32,8 +32,6 @@ Enumerate
  :tab-width: 4
 
 
-.. _ipcon_java_examples_authenticate:
-
 Authenticate
 ^^^^^^^^^^^^
 
@@ -136,17 +134,6 @@ Basic Functions
 
  Broadcasts an enumerate request. All devices will respond with an enumerate
  callback.
-
-
-Listener Configuration Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. java:function:: public void IPConnection::addListener(Object object)
-
- Registers a listener object.
-
- The available listener classes with inherent methods to be overwritten
- are described below.
 
 
 Listeners
