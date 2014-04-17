@@ -1096,7 +1096,7 @@ def make_index_api_misc(binding, lang):
 def make_index_api():
     index_html = {'en': """
 <div class="category_api">
-    <div class="category_head btn-more down">
+    <div class="category_head btn-more btn-more-down">
         {3}
     </div>
     <div class="category_body" style="display: none;">
@@ -1127,13 +1127,13 @@ def make_index_api():
     function toggleContent(parent) {
         if(parent.find(".category_body").is(":hidden")) {
             parent.find(".category_body").slideDown(100);	
-            parent.find(".btn_more").removeClass("down");
-            parent.find(".btn_more").addClass("up");
+            parent.find(".btn_more").removeClass("btn-more-down");
+            parent.find(".btn_more").addClass("btn-more-up");
         }
         else {
             parent.find(".category_body").slideUp(100);	
-            parent.find(".btn_more").removeClass("up");
-            parent.find(".btn_more").addClass("down");
+            parent.find(".btn_more").removeClass("btn-more-up");
+            parent.find(".btn_more").addClass("btn-more-down");
         }
     }
 </script>
