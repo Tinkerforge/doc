@@ -32,6 +32,7 @@ Installation and usage instructions for each programming language:
 * :ref:`JavaScript <api_bindings_javascript>`
 * :ref:`LabVIEW <api_bindings_labview>`
 * :ref:`Mathematica <api_bindings_mathematica>`
+* :ref:`MATLAB/Octave <api_bindings_matlab>`
 * :ref:`Perl <api_bindings_perl>`
 * :ref:`PHP <api_bindings_php>`
 * :ref:`Python <api_bindings_python>`

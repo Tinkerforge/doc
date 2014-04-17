@@ -1,12 +1,12 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / MATLAB - IP Connection
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / MATLAB/Octave - IP Connection
 
-.. |ref_api_bindings| replace:: :ref:`MATLAB bindings <api_bindings_matlab>`
+.. |ref_api_bindings| replace:: :ref:`MATLAB/Octave bindings <api_bindings_matlab>`
 
 .. _ipcon_matlab:
 
-MATLAB - IP Connection
-======================
+MATLAB/Octave - IP Connection
+=============================
 
 .. include:: IPConnection_Common.substitutions
    :start-after: >>>intro
@@ -74,18 +74,21 @@ Basic Functions
 
  Creates an IP Connection object that can be used to enumerate the available
  devices. It is also required for the constructor of Bricks and Bricklets.
- 
- In MATLAB,
- 
- .. code-block:: matlab
 
-  ipcon = new IPConnection();
-
- In Octave,
+ In MATLAB:
 
  .. code-block:: matlab
+
+  import com.tinkerforge.IPConnection;
+
+  ipcon = IPConnection();
+
+ In Octave:
+
+ .. code-block:: octave
 
   ipcon = java_new("com.tinkerforge.IPConnection");
+
 
 .. matlab:function:: public void IPConnection::connect(String host, int port)
 
@@ -118,8 +121,6 @@ Basic Functions
 
  See the :ref:`authentication tutorial <tutorial_authentication>` for more
  information.
-
- .. versionadded:: 2.1.0
 
 
 .. matlab:function:: public byte IPConnection::getConnectionState()
@@ -166,142 +167,136 @@ Basic Functions
  callback.
 
 
-Callbacks (MATLAB)
-^^^^^^^^^^^^^^^^^^
+Callbacks
+^^^^^^^^^
 
 Callbacks can be registered to be notified about events. The registration is
-done with "set" function of MATLAB.
-
-For example:
+done with "set" function of MATLAB. The parameters consist of the
+IP Connection object, the callback name and the callback function. For example,
+it looks like this in MATLAB:
 
 .. code-block:: matlab
 
-    set(ipcon, 'EnumerateCallback', @(h, e)cb_enumerate(e.uid, e.connectedUid, e.position,
-                                                        e.hardwareVersion, e.firmwareVersion,
-                                                        e.deviceIdentifier, e.enumerationType));
+    function cb_example(e)
+        fprintf('Parameter: %s\n', e.param);
+    end
 
-Callbacks can be registered by speciffying the callback in MATLAB set() function.
+    set(ipcon, 'ExampleCallback', @(h, e) cb_example(e));
+
+Due to a difference in the Octave Java support the "set" function cannot be
+used in Octave. The registration is done with "add*Callback" functions of the
+IP Connection object. It looks like this in Octave:
+
+.. code-block:: octave
+
+    function cb_example(e)
+        fprintf("Parameter: %s\n", e.param);
+    end
+
+    ipcon.addExampleCallback(@cb_example);
+
+It is possible to add several callback functions and to remove them with the
+corresponding "remove*Callback" function.
+
+The parameters of the callback are passed to the callback function as fields of
+the structure ``e``, which is derived from the ``java.util.EventObject`` class.
+The available callback names with corresponding structure fields are described
+below.
+
 
 .. matlab:member:: public callback IPConnection.EnumerateCallback
 
- This callback is used to register an enumerate callback.
+ :param uid: String
+ :param connectedUid: String
+ :param position: char
+ :param hardwareVersion: short[]
+ :param firmwareVersion: short[]
+ :param deviceIdentifier: int
+ :param enumerationType: short
 
-  The callback function receives seven parameters as members of the object "e" (event):
+ The callback function receives seven parameters as fields of the
+ structure ``e``:
 
-  * ``uid``: The UID of the device.
-  * ``connectedUID``: UID where the device is connected to. For a Bricklet
-    this will be a UID of the Brick where it is connected to. For a Brick it
-    will be the UID of the bottom Master Brick in the stack. For the bottom
-    Master Brick in a stack this will be "0". With this information it is
-    possible to reconstruct the complete network topology.
-  * ``position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
-    'a' - 'd' (position on Brick).
-  * ``hardwareVersion``: Major, minor and release number for hardware version.
-  * ``firmwareVersion``: Major, minor and release number for firmware version.
-  * ``deviceIdentifier``: A number that represents the device.
-  * ``enumerationType``: Type of enumeration.
+ * ``uid``: The UID of the device.
+ * ``connectedUID``: UID where the device is connected to. For a Bricklet
+   this will be a UID of the Brick where it is connected to. For a Brick it
+   will be the UID of the bottom Master Brick in the stack. For the bottom
+   Master Brick in a stack this will be "0". With this information it is
+   possible to reconstruct the complete network topology.
+ * ``position``: For Bricks: '0' - '8' (position in stack). For Bricklets:
+   'a' - 'd' (position on Brick).
+ * ``hardwareVersion``: Major, minor and release number for hardware version.
+ * ``firmwareVersion``: Major, minor and release number for firmware version.
+ * ``deviceIdentifier``: A number that represents the device.
+ * ``enumerationType``: Type of enumeration.
 
-  Possible enumeration types are:
+ Possible enumeration types are:
 
-  * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Device is available
-    (enumeration triggered by user).
-  * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
-    (automatically send by Brick after establishing a communication connection).
-    This indicates that the device has potentially lost its previous
-    configuration and needs to be reconfigured.
-  * IPConnection.ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
-    possible for USB connection). In this case only ``uid`` and
-    ``enumerationType`` are valid.
+ * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Device is available
+   (enumeration triggered by user).
+ * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
+   (automatically send by Brick after establishing a communication connection).
+   This indicates that the device has potentially lost its previous
+   configuration and needs to be reconfigured.
+ * IPConnection.ENUMERATION_TYPE_DISCONNECTED (2): Device is disconnected (only
+   possible for USB connection). In this case only ``uid`` and
+   ``enumerationType`` are valid.
 
-  It should be possible to implement plug-and-play functionality with this
-  (as is done in Brick Viewer).
+ It should be possible to implement plug-and-play functionality with this
+ (as is done in Brick Viewer).
 
-  The device identifier numbers can be found :ref:`here <device_identifier>`.
-  There are also constants for these numbers named following this pattern::
+ The device identifier numbers can be found :ref:`here <device_identifier>`.
+ There are also constants for these numbers named following this pattern::
 
-   <device-class>.DEVICE_IDENTIFIER
+  <device-class>.DEVICE_IDENTIFIER
 
-  For example: :matlab:member:`BrickMaster.DEVICE_IDENTIFIER`
-  or :matlab:member:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
+ For example: :matlab:member:`BrickMaster.DEVICE_IDENTIFIER`
+ or :matlab:member:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
+
+ In MATLAB the ``set()`` function can be used to register a callback function
+ to this callback.
+
+ In Octave a callback function can be added to this callback using the
+ ``addEnumerateCallback()`` function. An added callback function can be removed with
+ the ``removeEnumerateCallback()`` function.
 
 
 .. matlab:member:: public callback IPConnection.ConnectedCallback
 
- This callback can be used to register connected callback.
+ :param connectReason: short
 
-  This listener is called whenever the IP Connection got connected to a
-  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
+ This callback is called whenever the IP Connection got connected to a
+ Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
 
-  * IPConnection.CONNECT_REASON_REQUEST (0): Connection established after
-    request from user.
-  * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Connection after
-    auto-reconnect.
+ * IPConnection.CONNECT_REASON_REQUEST (0): Connection established after
+   request from user.
+ * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Connection after
+   auto-reconnect.
+
+ In MATLAB the ``set()`` function can be used to register a callback function
+ to this callback.
+
+ In Octave a callback function can be added to this callback using the
+ ``addConnectedCallback()`` function. An added callback function can be removed with
+ the ``removeConnectedCallback()`` function.
 
 
 .. matlab:member:: public callback IPConnection.DisconnectedCallback
 
- This callback can be used to register disconnected callback.
+ :param disconnectReason: short
 
-  This listener is called whenever the IP Connection got disconnected from a
-  Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:
+ This callback is called whenever the IP Connection got disconnected from a
+ Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:
 
-  * IPConnection.DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
-  * IPConnection.DISCONNECT_REASON_ERROR (1): Disconnect because of an
-    unresolvable error.
-  * IPConnection.DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick
-    Daemon or WIFI/Ethernet Extension.
-    
-Callbacks (Octave)
-^^^^^^^^^^^^^^^^^^
+ * IPConnection.DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
+ * IPConnection.DISCONNECT_REASON_ERROR (1): Disconnect because of an
+   unresolvable error.
+ * IPConnection.DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick
+   Daemon or WIFI/Ethernet Extension.
 
-Listeners can be registered to be notified about events. The registration is
-done with methods of the IPConnection class to register particular callbacks.
+ In MATLAB the ``set()`` function can be used to register a callback function
+ to this callback.
 
-For example:
-
-.. code-block:: matlab
-
-    public void IPConnection.addEnumerateListener(String functionName);
-
- This will register function "functionName" which is defined in Octave as the
- callback function for enumerate callback.
- 
- The registered functions will get the following parameters as the function arguments.
-
- .. py:function:: functionName(uid, connectedUid, position, hardwareVersion, firmwareVersion, deviceIdentifier, enumerationType)
-  :noindex:
-
-  :param uid: String
-  :param connected_uid: String
-  :param position: String
-  :param hardware_version: [short, short, short]
-  :param firmware_version: [short, short, short]
-  :param device_identifier: int
-  :param enumeration_type: short
-
-
-.. matlab:function:: public void IPConnection.addConnectedListener(String functionName)
-
- This callback can be used to register connected callback.
-
-  This listener is called whenever the IP Connection got connected to a
-  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
-
-  * IPConnection.CONNECT_REASON_REQUEST (0): Connection established after
-    request from user.
-  * IPConnection.CONNECT_REASON_AUTO_RECONNECT (1): Connection after
-    auto-reconnect.
-
-
-.. matlab:function:: public void IPConnection.addDisconnectedListener(String functionName)
-
- This callback can be used to register disconnected callback.
-
-  This listener is called whenever the IP Connection got disconnected from a
-  Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:
-
-  * IPConnection.DISCONNECT_REASON_REQUEST (0): Disconnect was requested by user.
-  * IPConnection.DISCONNECT_REASON_ERROR (1): Disconnect because of an
-    unresolvable error.
-  * IPConnection.DISCONNECT_REASON_SHUTDOWN (2): Disconnect initiated by Brick
-    Daemon or WIFI/Ethernet Extension.
+ In Octave a callback function can be added to this callback using the
+ ``addDisconnectedCallback()`` function. An added callback function can be removed with
+ the ``removeDisconnectedCallback()`` function.
