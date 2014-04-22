@@ -56,17 +56,52 @@ Starter Kit: Internet of Things
 Features
 --------
 
-* TODO
-* TODO
-* TODO
-* TODO
+* Allows to control devices over the Internet 
+* Supports 433MHz actuators
+* External antenna, big range
+* Controllable by `www.iot-remote.com <http://www.iot-remote.com/>`__
 
 
 Description
 -----------
 
-The *Starter Kit: Internet of Things* is ...
+The `Internet of Things <http://en.wikipedia.org/wiki/Internet_of_Things>`__
+is an evolution of the Internet. It interconnects not only human and computer
+as before but also physical objects (things).
 
+The *Starter Kit: Internet of Things* offers an easy access into the
+world of the Internet of Things. It allows to control many devices
+over the internet. For that the kit is equipped with a 
+:ref:`Remote Switch Bricklet <remote_switch_bricklet>`. It can be
+used to remotely control 433MHz mains switches, dimmers and home automation
+:ref:`list of supported actuators <remote_switch_supported_devices>` in the
+documentation of the Bricklet.
+
+With the :ref:`API Bindings <api_bindings>` it is possible to control the
+wireless actuators with any (Embedded-)PC, smart phone or tablet over the
+Internet.
+
+With the kit nothing stands in the way of turning your coffee maker on
+while you are headed home or to dim your living room illumination
+with your own cloud or with a Raspberry Pi. The website 
+`www.iot-remote.com <http://www.iot-remote.com/>`__ gives you direct
+access to wireless actuators from any web-enabled device.
+
+The kit basically consists of a :ref:`Master Brick <master_brick>` and a
+:ref:`Remote Switch Bricklet <remote_switch_bricklet>` which is
+equipped with a 433MHz transceiver. Over the USB connection of the
+Master Brick you can control remote control mains switches or similar.
+An (Embedded-)PC (e.g. Raspberry Pi) either do the switching itself
+or it can serve as a gateway. With an additional 
+:ref:`Ethernet Master Extension <ethernet_extension>` it is possible
+to go without a gateway.
+
+With additional modules from the Tinkerforge building blocks you can
+extend the kit. It is for example possible to measure temperature
+(:ref:`Temperature <temperature_bricklet>`,
+:ref:`Temperature IR <temperature_ir_bricklet>` or
+:ref:`PTC Bricklet <ptc_bricklet>`) or to react on movements
+(:ref:`Motion Detector Bricklet <motion_detector_bricklet>`).
 
 Technical Specifications
 ------------------------
@@ -88,10 +123,9 @@ Weight                                    130g (assembled kit)
 Resources
 ---------
 
-* TODO
-* TODO
-* TODO
-* TODO
+* Internet of Things kit case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/case>`__)
+* iot-remote.com web site (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/web>`__)
+* iot-remote.com server Implementation (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/server>`__)
 
 Firmware updating and first tests
 ---------------------------------
@@ -191,4 +225,12 @@ are done already!
    :alt: Construction Step 3
    :align: center
    :target: ../../_images/Kits/iot_construction_step3.png
+
+
+Applications
+------------
+
+With your own tablet, smart phone or PC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
