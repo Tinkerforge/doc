@@ -253,7 +253,7 @@ Hardware. Für eine offline Nutzung kann die Webseite heruntergeladen werden.
 
 .. image:: /Images/Kits/iot_website_iot_remote_start_350.jpg
    :scale: 100 %
-   :alt: Explosionszeichnung für Remote Switch Bricklet
+   :alt: iot-remote.com Webseite 
    :align: center
    :target: ../../_images/Kits/iot_website_iot_remote_start.jpg
 
@@ -313,7 +313,7 @@ Typ A Schalters.
 
 .. image:: /Images/Kits/iot_website_iot_remote_switch_350.jpg
    :scale: 100 %
-   :alt: Konfigurierter für Typ A Schalter
+   :alt: Konfigurierter Typ A Schalter
    :align: center
    :target: ../../_images/Kits/iot_website_iot_remote_switch.jpg
 
@@ -321,7 +321,8 @@ Typ A Schalters.
 **Speicher/Laden der Konfiguration**
 
 Die Webseite `www.iot-remote.com <http://www.iot-remote.com/>`__ wurde 
-absichtlich ohne Loginfunktion programmiert. Die Konfiguration wird lokal im
+absichtlich ohne Loginfunktion programmiert. Dies macht es einfacher
+eine eigene Instanz der Webseite aufzusetzen. Die Konfiguration wird lokal im
 Browser in einem Cookie gespeichert und standardmäßig nicht an den Server
 übertragen. Für die Nutzung der Webseite von einem Browser aus ist dies
 ausreichend.
