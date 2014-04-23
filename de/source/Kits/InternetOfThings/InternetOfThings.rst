@@ -51,6 +51,12 @@ Starterkit: Internet der Dinge
 				 "Kits/iot_packaging_open_800.jpg",
 				 "Internet der Dinge: Verpackung")
 	}}
+	{{
+		tfdocimg("Kits/iot_website_iot_remote_switch_100.jpg",
+				 "Kits/iot_website_iot_remote_switch_800.jpg",
+				 "Screenshot von iot-remote.com")
+
+	}}
 	{{ tfdocend() }}
 
 Features

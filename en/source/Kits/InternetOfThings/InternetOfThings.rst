@@ -51,6 +51,12 @@ Starter Kit: Internet of Things
 				 "Kits/iot_packaging_open_800.jpg",
 				 "Internet of Things: Packaging")
 	}}
+	{{
+		tfdocimg("Kits/iot_website_iot_remote_switch_100.jpg",
+				 "Kits/iot_website_iot_remote_switch_800.jpg",
+				 "Screenshot of iot-remote.com")
+
+	 }}
 	{{ tfdocend() }}
 
 Features
@@ -82,7 +88,7 @@ wireless actuators with any (Embedded-)PC, smart phone or tablet over the
 Internet.
 
 With the kit nothing stands in the way of turning your coffee maker on
-while you are headed home or to dim your living room illumination
+while you are heading home or to dim your living room illumination
 with your own cloud or with a Raspberry Pi. The website 
 `www.iot-remote.com <http://www.iot-remote.com/>`__ gives you direct
 access to wireless actuators from any web-enabled device.
@@ -230,8 +236,8 @@ are done already!
 Applications
 ------------
 
-With your own tablet, smart phone or PC
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Control by your own tablet, smart phone or PC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 433MHz mains switches, dimmers and home automation components can be
 controlled through `www.iot-remote.com <http://www.iot-remote.com/>`__ 
@@ -306,7 +312,7 @@ list. In the following we have the controlling site of a type A switch.
 **Save/Load configuration**
 
 The web site `www.iot-remote.com <http://www.iot-remote.com/>`__ does
-not have a log in function. This keeps the site simple and to it is simple
+not have a log-in function. This keeps the site simple and to it is simple
 to start your own instance of the web site. The configuration is saved
 locally in the browser with a cookie, by default it is not transferred
 to a server. If you only use the web site from one browser this is
