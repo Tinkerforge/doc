@@ -73,9 +73,9 @@ The *Starter Kit: Internet of Things* offers an easy access into the
 world of the Internet of Things. It allows to control many devices
 over the internet. For that the kit is equipped with a 
 :ref:`Remote Switch Bricklet <remote_switch_bricklet>`. It can be
-used to remotely control 433MHz mains switches, dimmers and home automation
-:ref:`list of supported actuators <remote_switch_supported_devices>` in the
-documentation of the Bricklet.
+used to remotely control 433MHz mains switches, dimmers and home automation components.
+You can find a :ref:`list of supported actuators <remote_switch_supported_devices>` 
+in the documentation of the Bricklet.
 
 With the :ref:`API Bindings <api_bindings>` it is possible to control the
 wireless actuators with any (Embedded-)PC, smart phone or tablet over the
@@ -91,7 +91,7 @@ The kit basically consists of a :ref:`Master Brick <master_brick>` and a
 :ref:`Remote Switch Bricklet <remote_switch_bricklet>` which is
 equipped with a 433MHz transceiver. Over the USB connection of the
 Master Brick you can control remote control mains switches or similar.
-An (Embedded-)PC (e.g. Raspberry Pi) either do the switching itself
+An (Embedded-)PC (e.g. Raspberry Pi) either does the switching itself
 or it can serve as a gateway. With an additional 
 :ref:`Ethernet Master Extension <ethernet_extension>` it is possible
 to go without a gateway.
@@ -233,4 +233,204 @@ Applications
 With your own tablet, smart phone or PC
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+433MHz mains switches, dimmers and home automation components can be
+controlled through `www.iot-remote.com <http://www.iot-remote.com/>`__ 
+without any programming. The web site uses JavaScript, which is directly
+executed by the browser. After the web site is loaded there is no
+communication between a server and the local device or the hardware
+that should be controlled. For offline usage the web site can be
+downloaded.
 
+.. image:: /Images/Kits/iot_website_iot_remote_start_350.jpg
+   :scale: 100 %
+   :alt: iot-remote.com web site 
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_start.jpg
+
+The web site is very easy to use. With "+ New Remote..." you can add
+new devices. There are four types: A (Switch), B (Switch), B (Dimmer),
+C (Switch). The types can be configured dependent on the actuators
+that will be controlled (see :ref:`list of supported
+actuators <remote_switch_supported_devices>`).
+
+Depending on the actuator there are different forms to fill. A precise
+description of the actuator types can be found in the 
+:ref:`documentation <remote_switch_bricklet_addressing_types>` of
+the Remote Switch Bricklet.
+
+Type A (Switch):
+
+.. image:: /Images/Kits/iot_website_iot_remote_configure_a_350.jpg
+   :scale: 100 %
+   :alt: Configuration for type A
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_configure_a.jpg
+
+Type B (Switch):
+
+.. image:: /Images/Kits/iot_website_iot_remote_configure_b_350.jpg
+   :scale: 100 %
+   :alt: Configuration for type B
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_configure_b.jpg
+
+Type B (Dimmer):
+
+.. image:: /Images/Kits/iot_website_iot_remote_configure_b2_350.jpg
+   :scale: 100 %
+   :alt: Configuration for type B (Dimmer)
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_configure_b2.jpg
+
+Type C (Switch):
+
+.. image:: /Images/Kits/iot_website_iot_remote_configure_c_350.jpg
+   :scale: 100 %
+   :alt: Configuration for type C
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_configure_c.jpg
+
+
+**Controlling a device**
+
+Devices can be controlled by clicking on the appropriate entry in the
+list. In the following we have the controlling site of a type A switch.
+
+.. image:: /Images/Kits/iot_website_iot_remote_switch_350.jpg
+   :scale: 100 %
+   :alt: Configured type A switch
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_switch.jpg
+
+
+**Save/Load configuration**
+
+The web site `www.iot-remote.com <http://www.iot-remote.com/>`__ does
+not have a log in function. This keeps the site simple and to it is simple
+to start your own instance of the web site. The configuration is saved
+locally in the browser with a cookie, by default it is not transferred
+to a server. If you only use the web site from one browser this is
+good enough.
+
+To use an already created configuration in different browsers it is
+possible to save the configuration on www.iot-remote.com and load
+it again in another browser.
+
+.. image:: /Images/Kits/iot_website_iot_remote_save_350.jpg
+   :scale: 100 %
+   :alt: Save/Load of configuration
+   :align: center
+   :target: ../../_images/Kits/iot_website_iot_remote_save.jpg
+
+After a configuration is created it can be saved. You just have to click
+on "Settings" and then on "Save configuration". The server creates
+an configuration ID that represents the current configuration.
+
+Loading a configuration can be done analogously. Just enter the configuration
+ID in the appropriate field and click on "Load configuration".
+Subsequently the devices that are saved by this ID are shown on the left.
+
+**Offline/Local usage**
+
+The complete web site can be downloaded (including the JavaScript) and used
+locally. After that it is not necessary to use 
+`www.iot-remote.com <http://www.iot-remote.com/>`__. The easiest way is
+to download the `project from GitHub <https://github.com/Tinkerforge/internet-of-things>`__
+as a `ZIP <https://github.com/Tinkerforge/internet-of-things/archive/master.zip>`__.
+The web site can be found in the "web" folder.
+
+Unfortunately Chrome/Chromium does not support File-Cookies by default.
+Those are necessary to use cookies offline. To circumvent this problem
+you can start Chrome/Chromium with the following parameter:
+
+.. code-block:: none
+
+ --enable-file-cookies
+
+If used locally, the web site can still use the www.iot-remote.com server
+to save/load configurations. It is however also easy to host the
+server yourself. You have to adjust the following source code parts:
+
+* ``web/js/remote/pages/PageSettings``: ``this.HOST``,  ``this.PORT`` as well as
+* ``server/server.py``: ``CONFIGURATION_PATH`` and ``LOCAL_PROXY_PORT``.
+
+The dependencies of the Python server are python-twisted and python-autobahn.
+The server can be startet with Python::
+
+ python server.py
+
+It is as easy as that to host your own Internet of Things web server that
+can save configurations over WebSockets!
+
+
+Develop your own programs
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Beside the direct usage of `www.iot-remote.com <http://www.iot-remote.com/>`__
+it is of course also possible to develop your own programs. The basis
+of this is the 
+:ref:`API of the Remote Switch Bricklets <remote_switch_bricklet_programming_interface>`.
+The API is available for many different programming languages. The 
+documentation of the API does have example applications for all
+of the programing languages that we support. Those examples are
+a good starting point if you are just starting to program the
+Tinkerforge hardware.
+
+
+Ethernet Extension
+------------------
+
+If you don't want to use a USB <-> Ethernet Gateway (PC, Raspberry PI, etc),
+you can use the :ref:`Ethernet Master Extension <ethernet_extension>`. With
+the Ethernet Master Extension it is possible to directly communicate with
+the kit by a smart phone or tablet. The case of the IoT kit does have the
+necessary slits to accommodate the Extension. The documentation has
+:ref:`more information <remote_switch_supported_devices>` regarding the
+usage of the Ethernet Extension.
+
+
+Interaction with other things
+-----------------------------
+
+The kit can communicate with lots of different other "things". It is
+very easy to integrate other Bricks and Bricklets from the Tinkerforge
+building blocks. You can also use product specific interfaces or online
+services such as `Xively <https://xively.com/>`__,
+`Cumulocity <http://www.cumulocity.com/>`__, 
+`Carriots <http://www.carriots.com/>`__ or similar to interact with
+other devices. In the following we will show some examples:
+
+**Motion detection with Motion Detector Bricklet:**
+The :ref:`Motion Detector Bricklet <motion_detector_bricklet>` allows
+to detect movement. Together with the kit it is possible to turn
+devices on or off dependent on the presence of persons.
+
+**Temperature-based control of window motors:**
+With Bricklets such as :ref:`Temperature <temperature_bricklet>`, 
+:ref:`Temperature IR <temperature_ir_bricklet>` or the
+:ref:`PTC Bricklet <ptc_bricklet>` you can measure temperatures.
+Together with 433MHz home automation components you can open and
+close windows depending on the temperature.
+
+**Daylight dependent blind control:**
+With the :ref:`Ambient Light Bricklet <ambient_light_bricklet>` you
+can measure the light intensity, it allows to control blinds
+dependent on light level.
+
+**GPS based home automation:**
+By using the :ref:`GPS Bricklet <gps_bricklet>` or your smart phone
+with GPS you can control your home dependent on your position. 
+As an example you could turn on the outdoor lighting if it is dark
+and you are approaching your home.
+
+**Load switching dependent on electricity prices:**
+If your electricity price depends on the time of day or on the current
+market prices you can switch loads on if the prices are cheap and
+off if they are expensive.
+
+**Load switching dependent on power usage:**
+Many intelligent electricity meters allow you to get access to the
+current power usage. Alternatively you can read the revolutions of an
+electromechanical meter with the 
+:ref:`Hall-Effect Bricklet <hall_effect_bricklet>`. With this information 
+you can control devices dependent on power usage.
