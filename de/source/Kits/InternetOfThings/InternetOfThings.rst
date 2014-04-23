@@ -53,7 +53,7 @@ Starterkit: Internet der Dinge
 	}}
 	{{
 		tfdocimg("Kits/iot_website_iot_remote_switch_100.jpg",
-				 "Kits/iot_website_iot_remote_switch_800.jpg",
+				 "Kits/iot_website_iot_remote_switch_600.jpg",
 				 "Screenshot von iot-remote.com")
 
 	}}
