@@ -1131,7 +1131,7 @@ def make_index_api():
         updateContent(0);
     });
 
-    $(window).on("popstate", function () {
+    $(window).on("hashchange", function () {
         if (!togglingContent) {
             updateContent(100);
         }
@@ -1140,13 +1140,17 @@ def make_index_api():
     function updateContent(duration) {
         anchorName = location.hash.substring(1);
 
-        if (anchorName.length > 0 && anchorName !== "software-none") {
-            toggleContent($("a[name="+anchorName+"-open]").parent().parent(), duration, true);
+        if (anchorName.length > 0 && anchorName.substring(0, 9) === "software-" && anchorName !== "software-none") {
+            a = $("a[name="+anchorName+"-open]")
+
+            if (a.length > 0) {
+                toggleContent(a.parent().parent(), duration, true);
+                return;
+            }
         }
-        else {
-            $(".btn-more").parent().find(".category_body").slideUp(duration);
-            $(".btn-more").removeClass("btn-more-up").addClass("btn-more-down");
-        }
+
+        $(".btn-more").parent().find(".category_body").slideUp(duration);
+        $(".btn-more").removeClass("btn-more-up").addClass("btn-more-down");
     }
 
     function toggleContent(parent, duration, forceShow) {
@@ -1162,6 +1166,7 @@ def make_index_api():
 
             btnMore.removeClass("btn-more-down").addClass("btn-more-up");
 
+            // this has to be the last line and after the hash change
             categoryBody.slideDown(duration, function() { togglingContent = false });
         }
         else {
@@ -1171,6 +1176,7 @@ def make_index_api():
                 location.hash = "software-none";
             }
 
+            // this has to be the last line and after the hash change
             categoryBody.slideUp(duration, function() { togglingContent = false });
         }
     }
