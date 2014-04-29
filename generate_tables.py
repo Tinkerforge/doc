@@ -1029,7 +1029,7 @@ def make_index_hardware():
                                    make_index_hardware_device(accessories, 'Accessorie', False, False))
 
 
-def make_index_api_device(devices, category_url, language, use_category_content=True, use_category_in_name = True):
+def make_index_api_device(devices, category_url, language, use_category_content=True, use_category_in_name=True):
     hardware_brick_li = """<li><a class="reference internal" href="Software/{1}s/{2}{3}_{4}.html">{0}</a></li>"""
     lis = []
 
@@ -1082,7 +1082,7 @@ def make_index_api_misc(binding, lang):
 
     language = binding.url_part_for_doc
     if not binding.is_programming_language:
-            return llp_html[lang].format(language)
+        return llp_html[lang].format(language)
     else:
         if language == 'C':
             add = additional_li[lang].format(language, 'iOS', 'iOS')
@@ -1099,9 +1099,10 @@ def make_index_api():
     index_html = {'en': """
 <div class="category_api">
     <div class="category_head btn-more btn-more-down">
+        <a name="software-{4}-open"></a>
         {3}
     </div>
-    <div class="category_body" style="display: none;">
+    <div class="category_body" {5}>
         <div class="category_content">
             <h3>Bricks</h3>
             {0}
@@ -1120,35 +1121,80 @@ def make_index_api():
 
     script_html = """
 <script type="text/javascript">
-    if($(document).ready()) {
-        $(".category_head").click(function() {
-            toggleContent($(this).parent());
-        });
-    }
+    var togglingContent = false;
 
-    function toggleContent(parent) {
-        if(parent.find(".category_body").is(":hidden")) {
-            parent.find(".category_body").slideDown(100);	
-            parent.find(".btn-more").removeClass("btn-more-down");
-            parent.find(".btn-more").addClass("btn-more-up");
+    $(document).ready(function () {
+        $(".category_head").click(function() {
+            toggleContent($(this).parent(), 100);
+        });
+
+        updateContent(0);
+    });
+
+    $(window).on("popstate", function () {
+        if (!togglingContent) {
+            updateContent(100);
+        }
+    });
+
+    function updateContent(duration) {
+        anchorName = location.hash.substring(1);
+
+        if (anchorName.length > 0 && anchorName !== "software-none") {
+            toggleContent($("a[name="+anchorName+"-open]").parent().parent(), duration, true);
         }
         else {
-            parent.find(".category_body").slideUp(100);	
-            parent.find(".btn-more").removeClass("btn-more-up");
-            parent.find(".btn-more").addClass("btn-more-down");
+            $(".btn-more").parent().find(".category_body").slideUp(duration);
+            $(".btn-more").removeClass("btn-more-up").addClass("btn-more-down");
+        }
+    }
+
+    function toggleContent(parent, duration, forceShow) {
+        togglingContent = true;
+
+        categoryBody = parent.find(".category_body")
+        btnMore = parent.find(".btn-more")
+
+        if (categoryBody.is(":hidden") || forceShow === true) {
+            location.hash = categoryBody.parent().find(".category_head a").attr("name").replace("-open", "")
+            $(".btn-more").parent().find(".category_body").slideUp(duration);
+            $(".btn-more").removeClass("btn-more-up").addClass("btn-more-down");
+
+            btnMore.removeClass("btn-more-down").addClass("btn-more-up");
+
+            categoryBody.slideDown(duration, function() { togglingContent = false });
+        }
+        else {
+            btnMore.removeClass("btn-more-up").addClass("btn-more-down");
+
+            if (location.hash.substring(0, 10) === "#software-") {
+                location.hash = "software-none";
+            }
+
+            categoryBody.slideUp(duration, function() { togglingContent = false });
         }
     }
 </script>
 """
 
     html = '<div class="category_api_outer">'
+    first = True
 
     for binding in bindings:
         if binding.is_published:
+            if first:
+                style = ''
+            else:
+                style = ' style="display: none;"'
+
+            first = False
+
             html += index_html[lang].format(make_index_api_device(bricks, 'Brick', binding.url_part_for_doc, False),
                                             make_index_api_misc(binding, lang),
                                             make_index_api_device(bricklets, 'Bricklet', binding.url_part_for_doc),
-                                            binding.display_name)
+                                            binding.display_name,
+                                            binding.url_part,
+                                            style)
 
     html += '</div>'
 
