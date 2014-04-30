@@ -120,6 +120,23 @@ class Product:
         self.bindings = bindings
         self.is_published = is_published
 
+    @property
+    def url_part_for_hardware_doc(self):
+        url_part = self.display_name.replace(' ', '_').replace('/', '_').replace('-', '')
+
+        if url_part == 'StepDown_Power_Supply':
+            url_part = 'Step_Down'
+
+        return url_part
+
+    @property
+    def url_part_for_software_doc(self):
+        return self.display_name.replace(' ', '').replace('/', '').replace('-', '')
+
+    @property
+    def url_part_for_git(self):
+        return self.url_part.replace('_', '-').replace('/', '-')
+
 
 brick_descriptions = {
 'dc': {
@@ -853,7 +870,7 @@ def make_download_firmwares_table():
 
     for brick in bricks:
         if len(brick.bindings) > 0 and brick.is_published:
-            brick_rows.append(brick_row_cell.format(brick.display_name, brick.url_part, brick.url_part.replace('_', '-').replace('/', '-'), source_code, archive, *firmware_versions[brick.url_part]))
+            brick_rows.append(brick_row_cell.format(brick.display_name, brick.url_part, brick.url_part_for_git, source_code, archive, *firmware_versions[brick.url_part]))
 
     def handle_bricklet(name, common_url_part, plugin_url_part):
         bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, source_code, archive, *plugin_versions[plugin_url_part]))
@@ -906,15 +923,15 @@ def make_source_code_gits_table():
 
     for brick in bricks:
         if brick.is_published:
-            brick_rows.append(brick_row_cell.format(brick.display_name, brick.url_part.replace('_', '-').replace('/', '-')))
+            brick_rows.append(brick_row_cell.format(brick.display_name, brick.url_part_for_git))
 
     for bricklet in bricklets:
         if bricklet.is_published:
-            bricklet_rows.append(bricklet_row_cell.format(bricklet.display_name, bricklet.url_part.replace('_', '-').replace('/', '-')))
+            bricklet_rows.append(bricklet_row_cell.format(bricklet.display_name, bricklet.url_part_for_git))
 
     for extension in extensions:
         if extension.is_published:
-            extension_rows.append(extension_row_cell.format(extension.display_name, extension.url_part.replace('_', '-').replace('/', '-')))
+            extension_rows.append(extension_row_cell.format(extension.display_name, extension.url_part_for_git))
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows)) + '\n'
 
@@ -975,14 +992,10 @@ def make_index_hardware_device(devices, category_url, use_category_content=True,
         if not device.is_published:
             continue
 
-        link = device.display_name.replace(' ', '_').replace('/', '_').replace('-', '')
-        if link == 'StepDown_Power_Supply':
-            link = 'Step_Down'
-
         category_name = ''
         if use_category_in_name:
             category_name = '_' + category_url
-        lis.append(hardware_li.format(device.display_name, category_url, link, category_name))
+        lis.append(hardware_li.format(device.display_name, category_url, device.url_part_for_hardware_doc, category_name))
 
     ret = ''
     while lis != []:
@@ -1030,7 +1043,7 @@ def make_index_hardware():
 
 
 def make_index_api_device(devices, category_url, language, use_category_content=True, use_category_in_name=True):
-    hardware_brick_li = """<li><a class="reference internal" href="Software/{1}s/{2}{3}_{4}.html">{0}</a></li>"""
+    software_li = """<li><a class="reference internal" href="Software/{1}s/{2}{3}_{4}.html">{0}</a></li>"""
     lis = []
 
     for device in devices:
@@ -1040,11 +1053,10 @@ def make_index_api_device(devices, category_url, language, use_category_content=
         if device.bindings == []:
             continue
 
-        link = device.display_name.replace(' ', '').replace('/', '').replace('-', '')
         category_name = ''
         if use_category_in_name:
             category_name = '_' + category_url
-        lis.append(hardware_brick_li.format(device.display_name, category_url, link, category_name, language))
+        lis.append(software_li.format(device.display_name, category_url, device.url_part_for_software_doc, category_name, language))
 
     ret = ''
     while lis != []:
@@ -1366,7 +1378,7 @@ def generate(path):
         if len(brick.bindings) == 0:
             continue
 
-        name = brick.display_name.replace(' ', '_').replace('-', '').replace('/', '_')
+        name = brick.url_part_for_hardware_doc
 
         print('Generating {0}_Brick_hlpi.table'.format(name))
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick_hlpi.table'), make_hlpi_table(brick, 'brick'))
@@ -1375,7 +1387,7 @@ def generate(path):
         if len(bricklet.bindings) == 0:
             continue
 
-        name = bricklet.display_name.replace(' ', '_').replace('-', '').replace('/', '_')
+        name = bricklet.url_part_for_hardware_doc
 
         print('Generating {0}_hlpi.table'.format(name))
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '_hlpi.table'), make_hlpi_table(bricklet, 'bricklet'))
