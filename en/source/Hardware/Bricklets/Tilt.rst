@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Tilt Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Tilt Bricklet
 :shoplink: ../../../shop/bricklets/tilt-bricklet.html
 
 .. include:: Tilt.substitutions

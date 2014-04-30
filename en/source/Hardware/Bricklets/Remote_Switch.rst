@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Remote Switch Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Remote Switch Bricklet
 :shoplink: ../../../shop/bricklets/remote-switch-bricklet.html
 
 .. include:: Remote_Switch.substitutions

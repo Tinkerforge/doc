@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Segment Display 4x7 Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Segment Display 4x7 Bricklet
 :shoplink: ../../../shop/bricklets/segment-display-4x7-bricklet.html
 
 .. include:: Segment_Display_4x7.substitutions

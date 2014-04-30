@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Dual Button Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Dual Button Bricklet
 :shoplink: ../../../shop/bricklets/dual-button-bricklet.html
 
 .. include:: Dual_Button.substitutions

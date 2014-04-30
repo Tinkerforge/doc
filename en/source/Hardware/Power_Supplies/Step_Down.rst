@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#power-supplies">Power Supplies</a> / Step-Down Power Supply
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Step-Down Power Supply
 :shoplink: ../../../shop/power-supplies/step-down-power-supply.html
 
 .. _step_down_power_supply:

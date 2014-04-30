@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Ambient Light Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Ambient Light Bricklet
 :shoplink: ../../../shop/bricklets/ambient-light-bricklet.html
 
 .. include:: Ambient_Light.substitutions

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Heart Rate Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Heart Rate Bricklet
 :FIXME_shoplink: ../../../shop/bricklets/heart-rate-bricklet.html
 
 .. include:: Color.substitutions

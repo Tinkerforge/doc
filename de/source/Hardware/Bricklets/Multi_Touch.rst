@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Multi Touch Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Multi Touch Bricklet
 :shoplink: ../../../shop/bricklets/multi-touch-bricklet.html
 
 .. include:: Multi_Touch.substitutions

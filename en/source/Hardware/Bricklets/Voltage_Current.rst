@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Voltage/Current Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Voltage/Current Bricklet
 :shoplink: ../../../shop/bricklets/voltage-current-bricklet.html
 
 .. include:: Voltage_Current.substitutions

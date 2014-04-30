@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / PTC Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / PTC Bricklet
 :shoplink: ../../../shop/bricklets/ptc-bricklet.html
 
 .. include:: PTC.substitutions

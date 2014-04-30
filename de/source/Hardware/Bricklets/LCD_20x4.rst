@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / LCD 20x4 Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / LCD 20x4 Bricklet
 :shoplink: ../../../shop/bricklets/lcd20x4-bricklet.html
 
 .. include:: LCD_20x4.substitutions

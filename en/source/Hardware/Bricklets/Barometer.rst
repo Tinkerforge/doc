@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Barometer Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Barometer Bricklet
 :shoplink: ../../../shop/bricklets/barometer-bricklet.html
 
 .. include:: Barometer.substitutions

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Sound Intensity Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Sound Intensity Bricklet
 :shoplink: ../../../shop/bricklets/sound-intensity-bricklet.html
 
 .. include:: Sound_Intensity.substitutions

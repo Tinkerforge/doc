@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Analog Out Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Analog Out Bricklet
 :shoplink: ../../../shop/bricklets/analog-out-bricklet.html
 
 .. include:: Analog_Out.substitutions

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../Product_Overview.html#bricklets">Bricklets</a> / Rotary Encoder Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Rotary Encoder Bricklet
 :shoplink: ../../../shop/bricklets/rotary-encoder-bricklet.html
 
 .. include:: Rotary_Encoder.substitutions
