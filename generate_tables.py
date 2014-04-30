@@ -1310,6 +1310,23 @@ def make_authentication_tutorial_examples_table():
 
     return '\n'.join(rows) + '\n'
 
+def make_devices_toctree(devices, category):
+    prefix = """
+.. toctree::
+   :hidden:
+
+"""
+    line = '   Software/{0}s/{1}_{0}_{2}'
+    lines = []
+
+    for binding in bindings:
+        if binding.is_published:
+            for device in devices:
+                if len(device.bindings) > 0:
+                    lines.append(line.format(category, device.url_part_for_software_doc, binding.url_part_for_doc))
+
+    return prefix + '\n'.join(lines) + '\n'
+
 def write_if_changed(path, content):
     if os.path.exists(path):
         f = open(path, 'rb')
@@ -1404,6 +1421,12 @@ def generate(path):
 
         print('Generating API_Bindings_{0}_links.table'.format(binding.url_part_for_doc))
         write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_{0}_links.table'.format(binding.url_part_for_doc)), make_api_bindings_links_table(binding))
+
+    print('Generating Bricks.toctree')
+    write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks.toctree'), make_devices_toctree(bricks, 'Brick'))
+
+    print('Generating Bricklets.toctree')
+    write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets.toctree'), make_devices_toctree(bricklets, 'Bricklet'))
 
 if __name__ == "__main__":
     generate(os.getcwd())

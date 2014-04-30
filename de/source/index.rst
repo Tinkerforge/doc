@@ -32,7 +32,6 @@ Antworten auf häufig gestellte Fragen finden sich in den :ref:`FAQ <faq>`.
    FAQ
 
 
-
 .. _index_hardware:
 
 ********
@@ -53,13 +52,23 @@ veröffentlichter Hardware und gemachter Entwicklungen.
 
 
 .. raw:: html
-	:file: index_hardware.html
+   :file: index_hardware.html
 
 .. toctree::
    :hidden:
 
    Product_Overview
    Timeline
+
+.. toctree::
+   :glob:
+   :hidden:
+
+   Hardware/Bricks/*
+   Hardware/Bricklets/*
+   Hardware/Master_Extensions/*
+   Hardware/Power_Supplies/*
+   Hardware/Accessories/*
 
 
 .. _index_software:
@@ -84,17 +93,7 @@ Die Grundlagen der Programmierschnittstelle werden :ref:`hier
 <programming_interface>` beschrieben.
 
 .. raw:: html
-	:file: index_api.html
-
-.. toctree::
-   :glob:
-   :hidden:
-
-   Hardware/Bricks/*
-   Hardware/Bricklets/*
-   Hardware/Master_Extensions/*
-   Hardware/Power_Supplies/*
-   Hardware/Accessories/*
+   :file: index_api.html
 
 .. toctree::
    :hidden:
@@ -113,8 +112,10 @@ Die Grundlagen der Programmierschnittstelle werden :ref:`hier
    :hidden:
 
    Software/*
-   Software/Bricks/*
-   Software/Bricklets/*
+
+.. include:: Software/Bricks.toctree
+
+.. include:: Software/Bricklets.toctree
 
 
 .. _index_kits:

@@ -32,7 +32,6 @@ Answers to frequently asked questions can be found in the :ref:`FAQ <faq>`.
    FAQ
 
 
-
 .. _index_hardware:
 
 ********
@@ -51,14 +50,23 @@ This :ref:`Timeline <timeline>` presents an overview of released products and
 finished developments.
 
 .. raw:: html
-	:file: index_hardware.html
-
+   :file: index_hardware.html
 
 .. toctree::
    :hidden:
 
    Product_Overview
    Timeline
+
+.. toctree::
+   :glob:
+   :hidden:
+
+   Hardware/Bricks/*
+   Hardware/Bricklets/*
+   Hardware/Master_Extensions/*
+   Hardware/Power_Supplies/*
+   Hardware/Accessories/*
 
 
 .. _index_software:
@@ -83,17 +91,7 @@ The basics of the programming interface are described :ref:`here
 <programming_interface>`.
 
 .. raw:: html
-	:file: index_api.html
-
-.. toctree::
-   :glob:
-   :hidden:
-
-   Hardware/Bricks/*
-   Hardware/Bricklets/*
-   Hardware/Master_Extensions/*
-   Hardware/Power_Supplies/*
-   Hardware/Accessories/*
+   :file: index_api.html
 
 .. toctree::
    :hidden:
@@ -112,11 +110,10 @@ The basics of the programming interface are described :ref:`here
    :hidden:
 
    Software/*
-   Software/Bricks/*
-   Software/Bricklets/*
 
+.. include:: Software/Bricks.toctree
 
-
+.. include:: Software/Bricklets.toctree
 
 
 .. _index_kits:
