@@ -83,6 +83,13 @@ Bricks können nicht automatisch auf den neusten Stand gebracht werden
 Brick Firmware Flashing
 ^^^^^^^^^^^^^^^^^^^^^^^
 
+Wir empfehlen Brick Viewer zum Flashen von Firmwares zu verwenden. Für
+Linux System ohne graphische Benutzeroberfläche steht aber auch
+``brick-flash-cmd`` zur Verfügung.
+
+Mit Brick Viewer
+""""""""""""""""
+
 Seit Version 1.1.0 kann der Brick Viewer Firmwares auf Bricks flashen. Die
 jeweils neuste Firmwareversion wird dabei automatisch vom Brick Viewer
 ermittelt und heruntergeladen. Diese können aber auch manuell im
@@ -158,6 +165,37 @@ Schnittstelle ausgewählt wurde.
 Anstatt den Brick Viewer die jeweils neuste Firmware herunterladen zu lassen,
 kann auch "Custom..." als Firmware gewählt werden und dann die zu flashende
 Firmware als lokale Datei über den "Browse..." Knopf ausgewählt werden.
+
+Mit brick-flash-cmd auf Linux
+"""""""""""""""""""""""""""""
+
+Brick Viewer benötigt eine graphische Benutzeroberfläche. Falls Bricks an
+Linux Rechnern ohne graphische Benutzeroberfläche geflasht werden sollen kann
+``brick-flash-cmd`` verwendet werden. Es steht als `Debian Packet
+<http://download.tinkerforge.com/tools/brick_flash_cmd/linux/brick-flash-cmd_linux_latest.deb>`__
+zum Downlaod bereit::
+
+ wget http://download.tinkerforge.com/tools/brick_flash_cmd/linux/brick-flash-cmd_linux_latest.deb
+ sudo dpkg -i brick-flash-cmd_linux_latest.deb
+
+Im Gegensatz zum Brick Viewer lädt ``brick-flash-cmd`` die Firmware nicht
+automatisch herunter. Die jeweils neusten Firmwares sind :ref:`hier
+<downloads_firmwares_plugins>` zu finden. Lade die zu flashende Firmware
+herunter, z.B. die neuste Master Brick Firmware::
+
+ wget http://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin
+
+Stelle sicher, dass sich der Brick im Bootloader Modus befindet (siehe Brick
+Viewer Abschnitt weiter oben) und bestimme die serielle Schnittstelle des
+Bricks. Typischerweise ist dies ``/dev/ttyACM0`` oder ``/dev/ttyUSB0``.
+
+Jetzt kann ``brick-flash-cmd`` mit dem Namen der serielle Schnittstelle und dem
+Dateinamen der Firmware ausgeführt werden::
+
+ brick-flash-cmd -p /dev/ttyACM0 -f brick_master_firmware_latest.bin
+
+Nach dem Flash-Vorgang startet der Brick automatisch neu und verwendet die
+neue Firmware.
 
 
 .. _brickv_flash_plugin:

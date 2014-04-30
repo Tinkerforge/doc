@@ -85,6 +85,13 @@ you have to update them one by one
 Brick Firmware Flashing
 ^^^^^^^^^^^^^^^^^^^^^^^
 
+The recommended tool for flashing of Brick firmwares is Brick Viewer.
+For Linux systems without a graphical desktop there is the ``brick-flash-cmd``
+tool.
+
+Using Brick Viewer
+""""""""""""""""""
+
 Flashing of Brick firmwares can be done with Brick Viewer since version 1.1.0.
 The latest firmwares will be downloaded automatically and can be found
 :ref:`here <downloads_firmwares_plugins>` too.
@@ -148,6 +155,36 @@ If the flash process failed, check if you have selected the correct serial port.
 Instead of letting the Brick Viewer download the latest firmware you can also
 select "Custom..." from the drop-down box and specify a local file via the
 "Browse..." button.
+
+
+Using brick-flash-cmd on Linux
+""""""""""""""""""""""""""""""
+
+Brick Viewer requires a graphical desktop. If you need to flash Bricks
+connected to a Linux system without a graphical desktop you can use the
+``brick-flash-cmd`` tool. It is available as `Debian package
+<http://download.tinkerforge.com/tools/brick_flash_cmd/linux/brick-flash-cmd_linux_latest.deb>`__
+that you can download and install::
+
+ wget http://download.tinkerforge.com/tools/brick_flash_cmd/linux/brick-flash-cmd_linux_latest.deb
+ sudo dpkg -i brick-flash-cmd_linux_latest.deb
+
+In contrast to Brick Viewer ``brick-flash-cmd`` does not download the firmware
+for the Brick automatically. The latest firmwares can be found
+:ref:`here <downloads_firmwares_plugins>`. Download the one that should be
+flashed, for example the latest Master Brick firmware::
+
+ wget http://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin
+
+Ensure that the Brick is in bootloader mode (see the Brick Viewer section above
+about how to do that) and find the serial port name of the Brick. Typically
+this is ``/dev/ttyACM0`` or ``/dev/ttyUSB0``.
+
+Now run ``brick-flash-cmd`` and provide the serial port and firmware file name::
+
+ brick-flash-cmd -p /dev/ttyACM0 -f brick_master_firmware_latest.bin
+
+Afterwards the Brick should restart automatically and use the new firmware.
 
 
 .. _brickv_flash_plugin:
