@@ -306,6 +306,10 @@ bricklet_descriptions = {
     'en': 'Capacitive Touch Sensor for 12 electrodes',
     'de': 'Kapazitiver Touch Sensor für 12 Elektroden'
     },
+'nfc_rfid': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'piezo_buzzer': {
     'en': 'Creates 1kHz beep',
     'de': 'Erzeugt 1kHz Piepton'
@@ -399,6 +403,7 @@ bricklets = [Bricklet('Ambient Light',            'ambient_light',            bi
              Bricklet('Moisture',                 'moisture',                 bindings, True),
              Bricklet('Motion Detector',          'motion_detector',          bindings, True),
              Bricklet('Multi Touch',              'multi_touch',              bindings, True),
+             Bricklet('NFC/RFID',                 'nfc_rfid',                 bindings, False),
              Bricklet('Piezo Buzzer',             'piezo_buzzer',             bindings, True),
              Bricklet('Piezo Speaker',            'piezo_speaker',            bindings, True),
              Bricklet('PTC',                      'ptc',                      bindings, True),
