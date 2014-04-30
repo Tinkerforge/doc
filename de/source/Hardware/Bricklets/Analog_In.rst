@@ -51,6 +51,12 @@ Analog In Bricklet
     }}
     {{ tfdocend() }}
 
+.. note::
+
+ Das Analog In Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das genauere :ref:`Voltage/Current Bricklet
+ <voltage_current_bricklet>` empfohlen.
+
 
 Features
 --------
