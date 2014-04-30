@@ -1099,7 +1099,7 @@ def make_index_api():
     index_html = {'en': """
 <div class="category_api">
     <div class="category_head btn-more btn-more-down">
-        <a name="software-{4}-open"></a>
+        <a name="software-{4}"></a>
         {3}
     </div>
     <div class="category_body" {5}>
@@ -1138,10 +1138,10 @@ def make_index_api():
     });
 
     function updateContent(duration) {
-        anchorName = location.hash.substring(1);
+        anchorName = location.hash.replace(/^[^#]*#/, '').replace(/^#+|#+$/, '').replace(/^\/*/, '').replace(/-open$/, '')
 
         if (anchorName.length > 0 && anchorName.substring(0, 9) === "software-" && anchorName !== "software-none") {
-            a = $("a[name="+anchorName+"-open]")
+            a = $("a[name="+anchorName+"]")
 
             if (a.length > 0) {
                 toggleContent(a.parent().parent(), duration, true);
@@ -1160,7 +1160,13 @@ def make_index_api():
         btnMore = parent.find(".btn-more")
 
         if (categoryBody.is(":hidden") || forceShow === true) {
-            location.hash = categoryBody.parent().find(".category_head a").attr("name").replace("-open", "")
+            anchorName = categoryBody.parent().find(".category_head a").attr("name")
+
+            // only set hash, if it doesn't point to the current category already
+            if (location.hash.indexOf(anchorName) < 0) {
+                location.hash = "/" + anchorName + "-open";
+            }
+
             $(".btn-more").parent().find(".category_body").slideUp(duration);
             $(".btn-more").removeClass("btn-more-up").addClass("btn-more-down");
 
@@ -1172,8 +1178,8 @@ def make_index_api():
         else {
             btnMore.removeClass("btn-more-up").addClass("btn-more-down");
 
-            if (location.hash.substring(0, 10) === "#software-") {
-                location.hash = "software-none";
+            if (/software-/.test(location.hash)) {
+                location.hash = "/software-none-open";
             }
 
             // this has to be the last line and after the hash change
