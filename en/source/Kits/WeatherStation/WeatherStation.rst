@@ -78,6 +78,7 @@ Features
 * Control over USB, Wi-Fi, Ethernet or with Raspberry Pi
 * Modifiable: more buttons, more sensors and customized software
 * Demo Application available
+* Internet of Things (IoT) capable
 
 Description
 -----------
@@ -92,6 +93,8 @@ added. As alternative the weather station can be controlled over your local
 network when adding a  :ref:`Ethernet Extension <ethernet_extension>`.
 To use it standalone you can add an embedded board such as the
 :ref:`Raspberry Pi <embedded_raspberry_pi>` which can be mounted in the casing.
+Thus Internet of Things applications are a possible with this kit (e.g. see
+:ref:`Xively Example <starter_kit_weather_station_xively>`).
 
 There are several example projects available, e.g. the measurements can be 
 displayed on the 20x4 character LCD, they can be shown on a
@@ -294,8 +297,8 @@ Example implementations with step-by-step instructions are available for: |write
 
 .. _starter_kit_weather_station_xively:
 
-Connect to Xively
-^^^^^^^^^^^^^^^^^
+Internet of Things / Connect to Xively
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 `Xively <https://xively.com/>`__ is a service that provides the possibility to
 analyze and visualize the "Internet of Things". They can store a history of our
