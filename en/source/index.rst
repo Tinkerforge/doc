@@ -129,6 +129,7 @@ with Tinkerforge:
 * :ref:`starter_kit_hardware_hacking`
 * :ref:`starter_kit_server_room_monitoring`
 * :ref:`starter_kit_blinkenlights`
+* :ref:`starter_kit_iot`
 
 .. toctree::
    :hidden:
