@@ -63,7 +63,7 @@ Features
 --------
 
 * Ermöglicht das Steuern von Geräten über das Internet
-* 433MHz Aktoren unterstützt
+* Unterstützt 433MHz Aktoren
 * Externe Antenne, große Reichweite
 * Erweiterbar, frei programmierbar
 * Steuerbar über `www.iot-remote.com <http://www.iot-remote.com/>`__ 
@@ -73,7 +73,7 @@ Beschreibung
 
 Das `Internet der Dinge <http://de.wikipedia.org/wiki/Internet_der_Dinge>`__ 
 (engl. Internet of Things (IoT)) stellt eine Evolution des Internets dar und 
-vernetzt nicht nur, wie bisher, Menschen und Computer sondern auch beliebige 
+vernetzt nicht nur, wie bisher Menschen und Computer, sondern auch beliebige 
 andere physische Objekte ("Dinge", "things").
 
 Das *Starterkit: Internet der Dinge* bietet einen einfachen Einstieg in die Welt
@@ -324,7 +324,7 @@ Typ A Schalters.
    :target: ../../_images/Kits/iot_website_iot_remote_switch.jpg
 
 
-**Speicher/Laden der Konfiguration**
+**Speichern/Laden der Konfiguration**
 
 Die Webseite `www.iot-remote.com <http://www.iot-remote.com/>`__ wurde 
 absichtlich ohne Loginfunktion programmiert. Dies macht es einfacher
