@@ -56,25 +56,38 @@ Color Bricklet
 Features
 --------
 
-* TODO: FIXME
-* Misst Umgebungslicht bis zu 900Lux
-* Ausgabe in 0,1Lux Schritten (12Bit Auflösung)
+* Misst Farbe (RGB), Farbtemperatur und Helligkeit (jeweils 16Bit Auflösung)
+* Ausgestattet mit einer schaltbaren LED zur definierten Beleuchtung
 
 
 Beschreibung
 ------------
 
-TODO: FIXME
-
 Mit dem Color :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` die Umgebungshelligkeit messen.
-Die gemessene Helligkeit kann in `Lux <http://de.wikipedia.org/wiki/Lux>`__
-ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf
-Helligkeitsänderungen zu reagieren ohne die Werte laufend abzufragen
-(kein Polling notwendig).
+:ref:`Bricks <product_overview_bricks>` die 
+`Farbe <http://de.wikipedia.org/wiki/Farbe>`__ , 
+`Farbtemperatur <http://de.wikipedia.org/wiki/Farbtemperatur>`__ und die 
+`Helligkeit <http://de.wikipedia.org/wiki/Helligkeit>`__ von Licht messen. Wird 
+das reflektierte Licht von Gegenständen gemessen, kann somit deren Farbe 
+bestimmt werden. Um eine definierte Beleuchtung zu schaffen ist das Bricklet 
+mit einer schaltbaren LED ausgestattet. 
 
-Dieses Board kann genutzt werden um z.B. helligkeitsabhängig Beleuchtungen
-oder Motoren zu steuern.
+Das Bricklet kann für viele Anwendungen genutzt werden, z.B. für das Sortieren
+von Objekten.
+
+.. image:: /Images/Bricklets/bricklet_color_wavelength_chart_350.jpg
+   :scale: 100 %
+   :alt: Empfindlichkeit/ Wellenlängen
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_color_wavelength_chart_350.jpg
+
+Der Sensor verfügt über interne Farbfilter zur Messung der Farben Rot, Grün und 
+Blau. Die obige Grafik zeigt die Empfindlichkeit des Sensors für den jeweiligen
+Farbbereich. Neben der Farbinformaton (RGB) gibt der Sensor eine zusätzliche 
+Information aus, genannt "Clear" (C). Dies ist der Sensormesswert ohne einen 
+Farbfilter. R,G,B und C sind jeweils 16Bit Werte. Aus diesen Informationen 
+berechnet das die Helligkeit und die Farbtemperatur (ebenfalls jeweils 16Bit).
+
 
 
 Technische Spezifikation
@@ -88,6 +101,9 @@ Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Beleuchtungsstärke                TBD
+Dynamik-Bereich                   3800000:1
+Auflösung Farbe (R, G, B, C)      jeweils 16Bit (0-65535)
+Auflösung Farbtemperatur          16Bit (0-65535)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 20 x 5mm (0,98 x 0,79 x 0,19")
@@ -98,7 +114,7 @@ Gewicht                           2g
 Ressourcen
 ----------
 
-* TEMT6000 Datenblatt (`Download <https://github.com/Tinkerforge/color-bricklet/raw/master/datasheets/TCS34725.pdf>`__)
+* TCS3472 Datenblatt (`Download <https://github.com/Tinkerforge/color-bricklet/raw/master/datasheets/TCS34725.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/color-bricklet/raw/master/hardware/color-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/color_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/color-bricklet/zipball/master>`__)
@@ -129,6 +145,25 @@ Wenn alles wie erwartet funktioniert wird TBD
    :target: ../../_images/Bricklets/bricklet_color_brickv.jpg
 
 |test_pi_ref|
+
+
+Nutzung und Konfiguration
+-------------------------
+
+Der Sensor des Bricklets kann konfiguriert werden. Sowohl die Verstärkung 
+(Gain) als auch die Integrationszeit (Integration Time) kann eingestellt werden.
+Dunkele Umgebungen erfordern eine hohe Verstärkung und/oder eine lange 
+Integrationszeit. Durch lange Integrationszeiten wird der Sensor träger, so dass
+dür schnelle Messungen eine kurze Integrationszeit genutzt werden sollte.
+
+Die einzustellenden Werte hängen von der jeweiligen Anwendung ab. Je nach 
+Beleuchtung und Entfernung zum Objekt muss eine andere Parametrierung 
+vorgenommen werden. Diese kann über den Brick Viewer erprobt werden.
+
+Für Sortieraufgaben sollte der Sensor mit einer festen Distanz zum messenden 
+Objekt verbaut werden, eine definierte Lichtquelle besitzen (z.B. über 
+eingebaute LED) und gegen Fremdlicht geschützt sein.
+
 
 .. _color_bricklet_case:
 
