@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Color Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/color-bricklet.html
+:shoplink: ../../../shop/bricklets/color-bricklet.html
 
 .. include:: Color.substitutions
    :start-after: >>>substitutions
@@ -12,24 +12,96 @@
 Color Bricklet
 ==============
 
-.. note::
-  Diese Bricklet ist noch in Entwicklung!
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_color_tilted_350.jpg",
+	               "Bricklets/bricklet_color_tilted_600.jpg",
+	               "Color Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_color_vertical_100.jpg",
+	             "Bricklets/bricklet_color_vertical_600.jpg",
+	             "Color Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_color_horizontal_100.jpg",
+	             "Bricklets/bricklet_color_horizontal_600.jpg",
+	             "Color Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_color_master_100.jpg",
+	             "Bricklets/bricklet_color_master_600.jpg",
+	             "Color Bricklet mit Master Brick")
+	}}
+	{{
+	    tfdocimg("Cases/bricklet_color_case_built_up_100.jpg",
+	             "Cases/bricklet_color_case_built_up_600.jpg",
+	             "Color Bricklet in Case")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_color_brickv_100.jpg",
+	             "Bricklets/bricklet_color_brickv.jpg",
+	             "Color Bricklet im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/color_bricklet_dimensions_100.png",
+	             "Dimensions/color_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
 
 
 Features
 --------
 
+* TODO: FIXME
+* Misst Umgebungslicht bis zu 900Lux
+* Ausgabe in 0,1Lux Schritten (12Bit Auflösung)
+
 
 Beschreibung
 ------------
+
+TODO: FIXME
+
+Mit dem Color :ref:`Bricklet <product_overview_bricklets>` können
+:ref:`Bricks <product_overview_bricks>` die Umgebungshelligkeit messen.
+Die gemessene Helligkeit kann in `Lux <http://de.wikipedia.org/wiki/Lux>`__
+ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf
+Helligkeitsänderungen zu reagieren ohne die Werte laufend abzufragen
+(kein Polling notwendig).
+
+Dieses Board kann genutzt werden um z.B. helligkeitsabhängig Beleuchtungen
+oder Motoren zu steuern.
 
 
 Technische Spezifikation
 ------------------------
 
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Sensor                            TCS34725
+Stromverbrauch                    TBDmA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Beleuchtungsstärke                TBD
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           25 x 20 x 5mm (0,98 x 0,79 x 0,19")
+Gewicht                           2g
+================================  ============================================================
+
 
 Ressourcen
 ----------
+
+* TEMT6000 Datenblatt (`Download <https://github.com/Tinkerforge/color-bricklet/raw/master/datasheets/TCS34725.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/color-bricklet/raw/master/hardware/color-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/color_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/color-bricklet/zipball/master>`__)
 
 
 .. _color_bricklet_test:
@@ -37,11 +109,52 @@ Ressourcen
 Erster Test
 -----------
 
+|test_intro|
+
+|test_connect| (siehe folgendes Bild).
+
+.. image:: /Images/Bricklets/bricklet_color_master_600.jpg
+   :scale: 100 %
+   :alt: Color Bricklet verbunden mit Master Brick
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_color_master_1200.jpg
+
+|test_tab|
+Wenn alles wie erwartet funktioniert wird TBD 
+
+.. image:: /Images/Bricklets/bricklet_color_brickv.jpg
+   :scale: 100 %
+   :alt: Color Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_color_brickv.jpg
+
+|test_pi_ref|
 
 .. _color_bricklet_case:
 
 Gehäuse
 -------
+
+Ein `laser-geschnittenes Gehäuse für das Color Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-color-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_color_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Color Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_color_case_built_up_1000.jpg
+
+.. include:: Color.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/color_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Color Bricklet
+   :align: center
+   :target: ../../_images/Exploded/color_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _color_bricklet_programming_interface:
