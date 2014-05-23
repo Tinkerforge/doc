@@ -277,6 +277,24 @@ beschränkt.
  GND Kabel fließen und die Strommessschaltung auf dem Servo Brick zerstört
  werden.
 
+
+Andere Hardware anschließen
+---------------------------
+
+Es können auch andere Geräte wie z.B. Lüfter mit PWM Eingang (nicht zu 
+verwechseln mit Tachoausgang) gesteuert werden. Diese dürfen nur direkt über das 
+Servo Brick mit Strom versorgt werden, wenn die normale Gerätespannung unter 9V 
+liegt. 
+
+Möchte man z.B. einen 12V Lüfter betreiben, so sollte dieser nicht über 
+das Servo Brick versorgt werden! Auftretende Spannungsspitzen können dazu 
+führen, dass die Maximalspannung von 10V (definiert durch einen verbauten 
+Tantal-Kondensator) überschritten wird und der Tantal-Kondensator explodiert!
+Um dies zu verhindern sollte der Lüfter extern über 12V versorgt werden 
+(12V, Masse). Das PWM Signal kommt dann vom Servo Brick. 
+Masse muss ebenfalls mit dem Servo Brick verbunden werden.
+
+
 Fehler LED
 ----------
 

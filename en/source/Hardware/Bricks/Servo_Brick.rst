@@ -270,6 +270,19 @@ the maximum brushless motor current only depends on your selected ESC.
  circuit.
 
 
+Connect other Hardware
+----------------------
+
+Also other hardware like fan cooler with PWM input can be controlled. These 
+devices must not be powered by the Brick if their voltage is above 9V.
+
+If for example a 12V fan cooler should be controlled it should not be powered by 
+the Brick! Otherwise voltage peaks, caused by the fan, can lead to a exploding
+tantal capacitor on the brick (max. capacitor voltage 10V). To prevent this
+the fan should be powered externally by 12V (12V, ground). The PWM line will be 
+connected to the Brick. Additionally ground has to be connected to the Brick, 
+too.
+
 Error LED
 ---------
 
