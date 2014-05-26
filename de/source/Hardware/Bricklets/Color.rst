@@ -77,9 +77,9 @@ von Objekten.
 
 .. image:: /Images/Bricklets/bricklet_color_wavelength_chart_350.jpg
    :scale: 100 %
-   :alt: Diagramm Empfindlichkeit/ Wellenlängen
+   :alt: Diagramm Empfindlichkeit / Wellenlängen
    :align: center
-   :target: ../../_images/Bricklets/bricklet_color_wavelength_chart_350.jpg
+   :target: ../../_images/Bricklets/bricklet_color_wavelength_chart_600.jpg
 
 Der Sensor verfügt über interne Farbfilter zur Messung der Farben Rot, Grün und 
 Blau (RGB). Die obige Grafik stellt die Empfindlichkeit des Sensors für den 

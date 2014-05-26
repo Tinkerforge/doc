@@ -75,9 +75,9 @@ The Bricklet can be used for many purposes e.g. the sorting of objects.
 
 .. image:: /Images/Bricklets/bricklet_color_wavelength_chart_350.jpg
    :scale: 100 %
-   :alt: Chart Responsivity/ Wavelength
+   :alt: Chart Responsivity / Wavelength
    :align: center
-   :target: ../../_images/Bricklets/bricklet_color_wavelength_chart_350.jpg
+   :target: ../../_images/Bricklets/bricklet_color_wavelength_chart_600.jpg
 
 The Sensor is equipped with color filters for the colors red, green and blue 
 (RGB). In the chart above the responsivity of the sensor in the given color 
