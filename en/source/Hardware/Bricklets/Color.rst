@@ -55,25 +55,38 @@ Color Bricklet
 Features
 --------
 
-* TODO: FIXME
-* Measures ambient light up to 900lux
-* Output in 0.1lux steps (12bit resolution)
+* Measures color (RGB), color temperature and luminous intensity (16Bit resolution each)
+* Equipped with switchable LED for defined illumination
 
 
 Description
 -----------
 
-TODO: FIXME
-
-
 The Color :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend the features of :ref:`Bricks <product_overview_bricks>` with the
-capability to measure ambient light. The measured illuminance can be read
-out in `lux <http://en.wikipedia.org/wiki/Lux>`__. With configurable events
-it is possible to react on changing illuminance without polling.
+capability to measure `color <http://en.wikipedia.org/wiki/Color>`__,
+`color temperature <http://en.wikipedia.org/wiki/Color_temperature>`__ and
+`luminous intensity <http://en.wikipedia.org/wiki/Luminous_intensity>`__. If the 
+reflected light of objects will be measured, their color can be measured. To 
+create a defined illumination the Bricklet is equipped with a API switchable 
+LED.
 
-Typical applications are illuminance dependent switching of
-backlights, motors etc.
+The Bricklet can be used for many purposes e.g. the sorting of objects.
+
+.. image:: /Images/Bricklets/bricklet_color_wavelength_chart_350.jpg
+   :scale: 100 %
+   :alt: Chart Responsivity/ Wavelength
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_color_wavelength_chart_350.jpg
+
+The Sensor is equipped with color filters for the colors red, green and blue 
+(RGB). In the chart above the responsivity of the sensor in the given color 
+range is shown. Additional to the color information (RGB) a fourth value is 
+measured called "clear value" (C). This is the sensors value without any color
+filter. Each value of RGB and C is measured as 16bit value. From these sensor
+values the Bricklet computes two additional values: illuminance and color 
+temperature each with 16bit resolution.
+
 
 
 Technical Specifications
@@ -86,7 +99,10 @@ Sensor                            TCS34725
 Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Illumination                      TBD
+Dynamic Range                     3800000:1
+Color Resolution (R,G,B,C)        16bit each (0-65535)
+Color Temperature Resolution      16bit (0-65535)
+Illuminance Resolution            16bit (0-65535)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")
@@ -106,7 +122,7 @@ Resources
 .. _color_bricklet_test:
 
 Test your Color Bricklet
---------------------------------
+------------------------
 
 |test_intro|
 
@@ -119,7 +135,8 @@ Test your Color Bricklet
    :target: ../../_images/Bricklets/bricklet_color_master_1200.jpg
 
 |test_tab|
-If everything went as expected you can now see TBD 
+If everything went as expected you can now see the changing measured values 
+depending on the illumination.
 
 .. image:: /Images/Bricklets/bricklet_color_brickv.jpg
    :scale: 100 %
@@ -128,6 +145,24 @@ If everything went as expected you can now see TBD
    :target: ../../_images/Bricklets/bricklet_color_brickv.jpg
 
 |test_pi_ref|
+
+
+Usage and Configuration
+-----------------------
+
+The sensor of the Bricklet can be configured. Gain and integration time can
+be changed. Dark environments need a higher gain or a longer integration time.
+If you use long integration times the sensor will react slower. If you need fast
+measurements use a high gain and short integration times.
+
+The values to be configured depend on the application. Dependend on the 
+illumination and distance to the measured object other values has to be choosen.
+Brick Viewer can be used to find proper values.
+
+If you want to use the Bricklet in sorting applications it has to be mounted in 
+a fixed distance, with a fixed source of light (e.g. the equipped LED) and 
+covered from interfering light.
+
 
 
 .. _color_bricklet_case:

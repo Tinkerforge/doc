@@ -70,23 +70,24 @@ Mit dem Color :ref:`Bricklet <product_overview_bricklets>` können
 `Helligkeit <http://de.wikipedia.org/wiki/Helligkeit>`__ von Licht messen. Wird 
 das reflektierte Licht von Gegenständen gemessen, kann somit deren Farbe 
 bestimmt werden. Um eine definierte Beleuchtung zu schaffen ist das Bricklet 
-mit einer schaltbaren LED ausgestattet. 
+mit einer per API schaltbaren LED ausgestattet. 
 
 Das Bricklet kann für viele Anwendungen genutzt werden, z.B. für das Sortieren
 von Objekten.
 
 .. image:: /Images/Bricklets/bricklet_color_wavelength_chart_350.jpg
    :scale: 100 %
-   :alt: Empfindlichkeit/ Wellenlängen
+   :alt: Diagramm Empfindlichkeit/ Wellenlängen
    :align: center
    :target: ../../_images/Bricklets/bricklet_color_wavelength_chart_350.jpg
 
 Der Sensor verfügt über interne Farbfilter zur Messung der Farben Rot, Grün und 
-Blau. Die obige Grafik zeigt die Empfindlichkeit des Sensors für den jeweiligen
-Farbbereich. Neben der Farbinformaton (RGB) gibt der Sensor eine zusätzliche 
-Information aus, genannt "Clear" (C). Dies ist der Sensormesswert ohne einen 
-Farbfilter. R,G,B und C sind jeweils 16Bit Werte. Aus diesen Informationen 
-berechnet das die Helligkeit und die Farbtemperatur (ebenfalls jeweils 16Bit).
+Blau (RGB). Die obige Grafik stellt die Empfindlichkeit des Sensors für den 
+jeweiligen Farbbereich dar. Neben der Farbinformaton (RGB) gibt der Sensor eine 
+zusätzliche Information aus, genannt "Clear" (C). Dies ist der Sensormesswert 
+ohne einen Farbfilter. R,G,B und C sind jeweils 16Bit Werte. Aus diesen 
+Informationen berechnet das Bricklet die Helligkeit und die Farbtemperatur 
+(ebenfalls jeweils 16Bit).
 
 
 
@@ -100,14 +101,14 @@ Sensor                            TCS34725
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Beleuchtungsstärke                TBD
 Dynamik-Bereich                   3800000:1
-Auflösung Farbe (R, G, B, C)      jeweils 16Bit (0-65535)
+Auflösung Farbe (R,G,B,C)         jeweils 16Bit (0-65535)
 Auflösung Farbtemperatur          16Bit (0-65535)
+Auflösung Helligkeit              16Bit (0-65535)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 20 x 5mm (0,98 x 0,79 x 0,19")
-Gewicht                           2g
+Gewicht                           TBDg
 ================================  ============================================================
 
 
@@ -136,7 +137,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_color_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird TBD 
+Wenn alles wie erwartet funktioniert, sollte das Bricklet auf die jeweilige
+Beleuchtung reagieren.
 
 .. image:: /Images/Bricklets/bricklet_color_brickv.jpg
    :scale: 100 %
@@ -154,13 +156,13 @@ Der Sensor des Bricklets kann konfiguriert werden. Sowohl die Verstärkung
 (Gain) als auch die Integrationszeit (Integration Time) kann eingestellt werden.
 Dunkele Umgebungen erfordern eine hohe Verstärkung und/oder eine lange 
 Integrationszeit. Durch lange Integrationszeiten wird der Sensor träger, so dass
-dür schnelle Messungen eine kurze Integrationszeit genutzt werden sollte.
+für schnelle Messungen eine kurze Integrationszeit genutzt werden sollte.
 
 Die einzustellenden Werte hängen von der jeweiligen Anwendung ab. Je nach 
 Beleuchtung und Entfernung zum Objekt muss eine andere Parametrierung 
 vorgenommen werden. Diese kann über den Brick Viewer erprobt werden.
 
-Für Sortieraufgaben sollte der Sensor mit einer festen Distanz zum messenden 
+Für Sortieraufgaben sollte das Bricklet mit einer festen Distanz zum messenden 
 Objekt verbaut werden, eine definierte Lichtquelle besitzen (z.B. über 
 eingebaute LED) und gegen Fremdlicht geschützt sein.
 
