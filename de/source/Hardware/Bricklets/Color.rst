@@ -56,8 +56,8 @@ Color Bricklet
 Features
 --------
 
-* Misst Farbe (RGB), Farbtemperatur und Helligkeit (jeweils 16Bit Auflösung)
-* Ausgestattet mit einer schaltbaren LED zur definierten Beleuchtung
+* Misst Farbe (RGB), Farbtemperatur und Beleuchtungsstärke (jeweils 16Bit Auflösung)
+* Ausgestattet mit einer schaltbaren LED zur gleichmäßigen Beleuchtung mit definierter Farbtemperatur
 
 
 Beschreibung
@@ -67,10 +67,11 @@ Mit dem Color :ref:`Bricklet <product_overview_bricklets>` können
 :ref:`Bricks <product_overview_bricks>` die 
 `Farbe <http://de.wikipedia.org/wiki/Farbe>`__ , 
 `Farbtemperatur <http://de.wikipedia.org/wiki/Farbtemperatur>`__ und die 
-`Helligkeit <http://de.wikipedia.org/wiki/Helligkeit>`__ von Licht messen. Wird 
-das reflektierte Licht von Gegenständen gemessen, kann somit deren Farbe 
-bestimmt werden. Um eine definierte Beleuchtung zu schaffen ist das Bricklet 
-mit einer per API schaltbaren LED ausgestattet. 
+`Beleuchtungsstärke <http://de.wikipedia.org/wiki/Beleuchtungsstärke>`__ von Licht messen. 
+Mit dem Bricklet kann somit die Farbe des reflektierten Lichts von
+Gegenständen gemessen werden.
+Um eine gleichmäßige Beleuchtung mit definierter Farbtemperatur zu schaffen
+ist das Bricklet mit einer per API schaltbaren LED ausgestattet. 
 
 Das Bricklet kann für viele Anwendungen genutzt werden, z.B. für das Sortieren
 von Objekten.
@@ -101,14 +102,14 @@ Sensor                            TCS34725
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dynamik-Bereich                   3800000:1
+Dynamikbereich                    3800000:1
 Auflösung Farbe (R,G,B,C)         jeweils 16Bit (0-65535)
 Auflösung Farbtemperatur          16Bit (0-65535)
 Auflösung Helligkeit              16Bit (0-65535)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 20 x 5mm (0,98 x 0,79 x 0,19")
-Gewicht                           TBDg
+Gewicht                           2g
 ================================  ============================================================
 
 
@@ -154,7 +155,7 @@ Nutzung und Konfiguration
 
 Der Sensor des Bricklets kann konfiguriert werden. Sowohl die Verstärkung 
 (Gain) als auch die Integrationszeit (Integration Time) kann eingestellt werden.
-Dunkele Umgebungen erfordern eine hohe Verstärkung und/oder eine lange 
+Dunkle Umgebungen erfordern eine hohe Verstärkung und/oder eine lange 
 Integrationszeit. Durch lange Integrationszeiten wird der Sensor träger, so dass
 für schnelle Messungen eine kurze Integrationszeit genutzt werden sollte.
 
@@ -165,7 +166,6 @@ vorgenommen werden. Diese kann über den Brick Viewer erprobt werden.
 Für Sortieraufgaben sollte das Bricklet mit einer festen Distanz zum messenden 
 Objekt verbaut werden, eine definierte Lichtquelle besitzen (z.B. über 
 eingebaute LED) und gegen Fremdlicht geschützt sein.
-
 
 .. _color_bricklet_case:
 

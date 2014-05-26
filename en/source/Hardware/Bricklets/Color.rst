@@ -55,8 +55,8 @@ Color Bricklet
 Features
 --------
 
-* Measures color (RGB), color temperature and luminous intensity (16Bit resolution each)
-* Equipped with switchable LED for defined illumination
+* Measures color (RGB), color temperature and illuminance (16Bit resolution each)
+* Equipped with switchable LED for defined illumination and color temperature
 
 
 Description
@@ -66,10 +66,10 @@ The Color :ref:`Bricklet <product_overview_bricklets>` can be used to
 extend the features of :ref:`Bricks <product_overview_bricks>` with the
 capability to measure `color <http://en.wikipedia.org/wiki/Color>`__,
 `color temperature <http://en.wikipedia.org/wiki/Color_temperature>`__ and
-`luminous intensity <http://en.wikipedia.org/wiki/Luminous_intensity>`__. If the 
-reflected light of objects will be measured, their color can be measured. To 
-create a defined illumination the Bricklet is equipped with a API switchable 
-LED.
+`illuminance <http://en.wikipedia.org/wiki/Illuminance>`__. 
+Thus the Bricklet can measure the color of the reflected light of objects.
+To create a defined illumination and color temperature the Bricklet is equipped 
+with a API switchable LED.
 
 The Bricklet can be used for many purposes e.g. the sorting of objects.
 
@@ -106,7 +106,7 @@ Illuminance Resolution            16bit (0-65535)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")
-Weight                            TBDg
+Weight                            2g
 ================================  ============================================================
 
 
@@ -155,15 +155,13 @@ be changed. Dark environments need a higher gain or a longer integration time.
 If you use long integration times the sensor will react slower. If you need fast
 measurements use a high gain and short integration times.
 
-The values to be configured depend on the application. Dependend on the 
-illumination and distance to the measured object other values has to be choosen.
-Brick Viewer can be used to find proper values.
+The desired configuration depends on the application. Depending on the 
+illumination and distance to the measured object other parameters have to be choosen.
+The Brick Viewer can be used to find proper values.
 
-If you want to use the Bricklet in sorting applications it has to be mounted in 
+If you want to use the Bricklet in sorting applications it should be mounted in 
 a fixed distance, with a fixed source of light (e.g. the equipped LED) and 
-covered from interfering light.
-
-
+it should also be protected from interfering light.
 
 .. _color_bricklet_case:
 
