@@ -221,13 +221,14 @@ First Test
 
 .. image:: /Images/Bricklets/bricklet_nfc_rfid_setup_600.jpg
    :scale: 100 %
-   :alt: NFC/RFID Bricklet with Battery and Motor
+   :alt: NFC/RFID Bricklet with tag 
    :align: center
    :target: ../../_images/Bricklets/bricklet_nfc_rfid_setup_1200.jpg
 
 |test_tab|
 
-If everything went as expected you can now see TBD 
+If everything went as expected you can now scan for tags and read/write
+pages.
 
 .. image:: /Images/Bricklets/bricklet_nfc_rfid_brickv.png
    :scale: 70 %
