@@ -55,7 +55,7 @@ NFC/RFID Bricklet
 Features
 --------
 
-* Can read and write Mifare Classic and NFC Forum Type 1 and 2 tags
+* Can read and write Mifare Classic and NFC Forum Type 1 and 2 RFID/NFC tags
 * Operating frequency is 13.56 MHz
 
 Description
@@ -69,8 +69,6 @@ and write NFC/RFID tags. To do this you only have to place a NFC or RFID
 tag in the proximity (up to 10cm) of the Bricklet.
 
 Currently we support Mifare Classic as well as NFC Forum Type 1 and 2 tags.
-
-The Bricklet can be used for any kind of 
 
 Capability for tag emulation as well as NFC P2P communication may be added
 in the future firmware updates.
@@ -146,7 +144,7 @@ structure to not accidentially lock a tag.
 * The last page in every sector controls the authentication keys for this sector (page 7, 11, 15, ..). Do not overwrite these pages if you don't know what you are doing.
 
 `Adafruit <http://www.adafruit.com>`__ has a quite good description of the structure: 
-`link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
+`Link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
 
 **NFC Forum Type 1:**
 
@@ -195,6 +193,8 @@ after the state changes to *STATE_WRITE_PAGE_READY*.
 If a tag is selected you can read and write without calling *RequestTagID*
 again as long as the tag isn't removed from the proximity of the 
 NFC/RFID Bricklet.
+
+**Special Case for Mifare Classic**
 
 In case of Mifare Classic you have to authenticate a page before you can
 read or write it:

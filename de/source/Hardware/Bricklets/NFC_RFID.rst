@@ -55,7 +55,7 @@ NFC/RFID Bricklet
 Features
 --------
 
-* Kann Mifare Classic und NFC Forum Typ 1 und 2 Tags lesen/schreiben
+* Kann Mifare Classic und NFC Forum Typ 1 und 2 RFID/NFC Tags lesen/schreiben
 * Arbeitsfrequenz 13,56 MHz
 
 Beschreibung
@@ -143,7 +143,7 @@ nicht versehendlich den Tag zu lock'en.
 * Die letzte Seite jedes Sektors steuert den Zugriff (Seite 7, 11, 15, ..). Diese Seite sollte nur überschrieben werden, wenn man weiß was man tut.
 
 `Adafruit <http://www.adafruit.com>`__ hat eine recht gute Beschreibung der Speicherstruktur: 
-`link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
+`Link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
 
 **NFC Forum Typ 1:**
 
@@ -155,14 +155,14 @@ nicht versehendlich den Tag zu lock'en.
 
 * Page Größe 4 Byte (4 Pages werden mit einem Aufruf von *RequestPage*/*WritePage* gelesen/geschrieben).
 * Page 0-1 ist nur lesbar und enthält die Tag ID.
-* Page 3-4 und die letzten zwei Pages (Page-Nummerb hängen von der Größe des Tags ab) enthalten die Lock-Bits. Diese sollten nur überschrieben werden, wenn man weiß was man tut.
+* Page 3-4 und die letzten zwei Pages (Die Page-Nummern hängen von der Größe des Tags ab) enthalten die Lock-Bits. Diese sollten nur überschrieben werden, wenn man weiß was man tut.
 
 
 Tags Erkennen, Lesen und Schreiben
 ----------------------------------
 
 Um einen Tag zu erkennen und auszuwählen muss *RequestTagID* mit einem Tagtyp 
-(Mifare Classic or NFC Forum Type 1/2) aufgerufen werden. Der Zustand (state)
+(Mifare Classic or NFC Forum Type 1/2) aufgerufen werden. Der Zustand (State)
 des Bricklets wird sich zu *STATE_REQUEST_TAG_ID* ändern und anschließend zu 
 *STATE_REQUEST_TAG_ID_READY* wenn ein Tag gefunden wurde. Die ID des Tags kann
 anschließend durch Aufruf von *GetTagID* ausgelesen werden. Der Tag mit dieser
@@ -193,8 +193,10 @@ werden mittels des Aufrufs von *WritePage*. Der Schreibvorgang ist beendet wenn
 der Zustand zu *STATE_WRITE_PAGE_READY* wechselt.
 
 Nachdem ein Tag selektiert wurde kann diese ohne Aufrufe von *RequestTagID*
-gelesen/geschrieben werden solange der Tag nicht aus der Nähe des NFC/RFID 
+gelesen/geschrieben werden solange das Tag nicht aus der Nähe des NFC/RFID 
 Bricklets entfernt wurde.
+
+**Spezialfall für Mifare Classic**
 
 Im Falle von Mifare Classic muss man sich zuerst für den Zugriff auf eine Page 
 authentifizieren:
@@ -241,7 +243,8 @@ Erster Test
 
 |test_tab|
 
-Wenn alles wie erwartet funktioniert wird TBD
+Wenn alles wie erwartet funktioniert können nun Tags gescannt und Pages
+gelesen/geschrieben werden.
 
 .. image:: /Images/Bricklets/bricklet_nfc_rfid_brickv.png
    :scale: 70 %
