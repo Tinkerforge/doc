@@ -92,7 +92,7 @@ Weight                            TODOg
 Resources
 ---------
 
-* INA226 Datasheet (`Download <https://github.com/Tinkerforge/nfc-rfid-bricklet/raw/master/datasheets/PN532.pdf>`__)
+* PN532 Datasheet (`Download <https://github.com/Tinkerforge/nfc-rfid-bricklet/raw/master/datasheets/PN532.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/nfc-rfid-bricklet/raw/master/hardware/nfc-rfid-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/nfc_rfid_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/nfc-rfid-bricklet/zipball/master>`__)
@@ -105,17 +105,17 @@ The Bricklet should work with every tag that is either compatible to
 Mifare Classic, NFC Forum Type 1 or NFC Forum Type 2. We explicitly
 tested the Bricklet with the following tags.
 
-Mifare Classic:
+**Mifare Classic:**
 
 * FM11RF08
 * MF1S50
 
-NFC Forum Type 1:
+**NFC Forum Type 1:**
 
 * Jewel
 * Topaz 512 (TPZ-505-016)
 
-NFC Forum Type 2:
+**NFC Forum Type 2:**
 
 * NTAG203(F)
 * NTAG210
@@ -133,19 +133,20 @@ Mifare Classic and NFC Forum Type 1 as well as NFC Forum Type 2 have different
 page sizes and a different memory structure. You have to keep track of this
 structure to not accidentially lock a tag.
 
-Mifare Classic:
+**Mifare Classic:**
 
 * Page size 16 byte (1 page is read/written per call of *RequestPage*/*WritePage*).
+* 4 pages build one sector.
 * Sector 0 (pages 0-3) should not be overwritten.
 * The last page in every sector controls the authentication keys for this sector (page 7, 11, 15, ..). Do not overwrite these pages if you don't know what you are doing.
 
-NFC Forum Type 1:
+**NFC Forum Type 1:**
 
 * Page size 8 byte (2 pages are read/written per call of *RequestPage*/*WritePage*).
 * pages 0-2 are reserved for lock control. Do not overwrite these pages if you don't know what you are doing.
 * page 15 is reserved and can not be written.
 
-NFC Forum Type 2:
+**NFC Forum Type 2:**
 
 * Page size 4 byte (4 pages are read/written per call of *RequestPage*/*WritePage*).
 * Page 0-1 are read only and contains the tag ID
