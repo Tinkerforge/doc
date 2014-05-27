@@ -97,7 +97,7 @@ TODO
 .. _solid_state_relay_bricklet_test:
 
 Test your Solid State Relay Bricklet
------------------------------
+------------------------------------
 
 |test_intro|
 
