@@ -55,7 +55,7 @@ Color Bricklet
 Features
 --------
 
-* Measures color (RGB), color temperature and illuminance (16Bit resolution each)
+* Measures color (RGB), color temperature and illuminance (16bit resolution each)
 * Equipped with switchable LED for defined illumination and color temperature
 
 
@@ -113,7 +113,7 @@ Weight                            2g
 Resources
 ---------
 
-* TEMT6000 datasheet (`Download <https://github.com/Tinkerforge/color-bricklet/raw/master/datasheets/TCS34725.pdf>`__)
+* TCS3472 datasheet (`Download <https://github.com/Tinkerforge/color-bricklet/raw/master/datasheets/TCS34725.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/color-bricklet/raw/master/hardware/color-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/color_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/color-bricklet/zipball/master>`__)
