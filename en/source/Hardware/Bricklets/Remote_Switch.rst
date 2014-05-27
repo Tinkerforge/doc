@@ -183,7 +183,7 @@ ELRO Home Easy      HE800S                               Switch Set             
 |nbsp|              HE867                                Outdoor Switch                     B
 |nbsp|              HE871                                Bulb Holder Switch                 B
 |nbsp|              HE872                                Bulb Holder Switch Dimmer          B
-|nbsp|              HE874                                Switch                             B
+|nbsp|              HE874                                Switch                             C
 |nbsp|              HE875                                Mini-Switch                        B
 |nbsp|              HE877                                Switch                             B
 |nbsp|              HE877A                               Switch with On/Off at Receiver     B

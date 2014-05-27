@@ -185,7 +185,7 @@ ELRO Home Easy      HE800S                               Schalter Set           
 |nbsp|              HE867                                Außenschalter                      B
 |nbsp|              HE871                                Lampenfassung-Schalter             B
 |nbsp|              HE872                                Lampenfassung-Dimmer               B
-|nbsp|              HE874                                Schalter                           B
+|nbsp|              HE874                                Schalter                           C
 |nbsp|              HE875                                Mini-Schalter                      B
 |nbsp|              HE877                                Schalter                           B
 |nbsp|              HE877A                               Schalter mit Ein/Aus am Empfänger  B
