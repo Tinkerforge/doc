@@ -61,12 +61,16 @@ Features
 Description
 -----------
 
-The NFC/RFID :ref:`Bricklet <product_overview_bricklets>` can be used to 
+The `NFC <http://en.wikipedia.org/wiki/Near_field_communication>`__/
+`RFID <http://en.wikipedia.org/wiki/Rfid>`__ 
+:ref:`Bricklet <product_overview_bricklets>` can be used to 
 extend :ref:`Bricks <product_overview_bricks>` by the possibility to read
 and write NFC/RFID tags. To do this you only have to place a NFC or RFID 
 tag in the proximity (up to 10cm) of the Bricklet.
 
 Currently we support Mifare Classic as well as NFC Forum Type 1 and 2 tags.
+
+The Bricklet can be used for any kind of 
 
 Capability for tag emulation as well as NFC P2P communication may be added
 in the future firmware updates.
@@ -78,13 +82,14 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Sensor                            PN532
+Current Consumption               TODOmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Supported tags                    Mifare Classic, NFC Forum Type 1, NFC Forum Type 2
 Operating Frequency               13.56 MHz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TODO: 30 x 30 x 18mm (1.18 x 1.18 x 0.67")
+Dimensions (W x D x H)            50 x 85 x 5mm (1.97 x 3.35 x 0.2")
 Weight                            TODOg
 ================================  ============================================================
 
@@ -98,12 +103,12 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/nfc-rfid-bricklet/zipball/master>`__)
 
 
-Compatability
+Compatibility
 -------------
 
 The Bricklet should work with every tag that is either compatible to 
 Mifare Classic, NFC Forum Type 1 or NFC Forum Type 2. We explicitly
-tested the Bricklet with the following tags.
+tested the Bricklet with the following tags:
 
 **Mifare Classic:**
 
@@ -124,7 +129,7 @@ tested the Bricklet with the following tags.
 * NTAG216
 * Mifare Ultralight (MF01CU1)
 
-Every smart phone that is capable of NFC can read NFC Form Type 1 and 2 tags.
+Every smart phone that is capable of NFC can read NFC Forum Type 1 and 2 tags.
 
 Page Sizes and other things to know
 -----------------------------------
@@ -139,6 +144,9 @@ structure to not accidentially lock a tag.
 * 4 pages build one sector.
 * Sector 0 (pages 0-3) should not be overwritten.
 * The last page in every sector controls the authentication keys for this sector (page 7, 11, 15, ..). Do not overwrite these pages if you don't know what you are doing.
+
+`Adafruit <http://www.adafruit.com>`__ has a quite good description of the structure: 
+`link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
 
 **NFC Forum Type 1:**
 
@@ -167,7 +175,8 @@ by calling *RequestTagID* again.
 If you know the tag ID of your tag and *GetTagID* returns another tag ID it
 means that another tag is also in the proximity of the reader. In this case
 you can call *RequestTagID* again, the NFC/RFID Bricklet will cycle through up
-to two tags if *RequestTagID* is called repeatedly.
+to two tags if *RequestTagID* is called repeatedly. Therefore *RequestTagID* 
+select Tags.
 
 If a tag is selected (i.e. the state is *STATE_REQUEST_TAG_ID_READY*) you can 
 read or write the tag page by page:
