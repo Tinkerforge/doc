@@ -203,8 +203,8 @@ bricklet_descriptions = {
     'de': 'Macht alle Bricklet Signale zugänglich'
     },
 'color': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Measures color (RGB value), illuminance and color temperature',
+    'de': 'Misst Farbe (RGB Wert), Beleuchtungsstärke und Farbtemperatur'
     },
 'current12': {
     'en': 'Bidirectional current sensor for up to 12.5A',
@@ -307,8 +307,8 @@ bricklet_descriptions = {
     'de': 'Kapazitiver Touch Sensor für 12 Elektroden'
     },
 'nfc_rfid': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Reads and writes NFC and RFID tags',
+    'de': 'Liest und schreibt NFC und RFID Tags'
     },
 'piezo_buzzer': {
     'en': 'Creates 1kHz beep',
@@ -338,6 +338,11 @@ bricklet_descriptions = {
     'en': 'Four 7-segment displays with switchable colon',
     'de': 'Vier 7-Segment Anzeigen mit schaltbarem Doppelpunkt'
     },
+'solid_state_relay': {
+    'en': 'Controls AC and DC Solid State Relays',
+    'de': 'Schaltet AC und DC Halbleiterrelais (Solid State Relais)'
+    },
+
 'sound_intensity': {
     'en': 'Measures sound intensity',
     'de': 'Misst Schallintensität'
@@ -411,6 +416,7 @@ bricklets = [Bricklet('Ambient Light',            'ambient_light',            bi
              Bricklet('Rotary Encoder',           'rotary_encoder',           bindings, True),
              Bricklet('Rotary Poti',              'rotary_poti',              bindings, True),
              Bricklet('Segment Display 4x7',      'segment_display_4x7',      bindings, True),
+             Bricklet('Solid State Relay',        'solid_state_relay',        bindings, False),
              Bricklet('Sound Intensity',          'sound_intensity',          bindings, True),
              Bricklet('Temperature',              'temperature',              bindings, True),
              Bricklet('Temperature IR',           'temperature_ir',           bindings, True),
