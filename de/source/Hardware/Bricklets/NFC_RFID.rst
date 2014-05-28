@@ -217,12 +217,23 @@ Der Standardschlüssel (key number A) eines Mifare Classic Tags ist
 [0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF].
 
 
-NFC NDEF Nachrichten
---------------------
+NFC NDEF Messages
+-----------------
 
-TODO: Beispiel
+Das NFC Forum hat ein NFC Data Exchange Format (NDEF) spezifiziert um Daten
+zwischen Tags und Smartphones auszutauschen. NDEF Messages bestehen aus
+einem oder mehreren NDEF Records. Viele der definierten NDEF Records können
+von jedem Smartphone interpretiert werden welches NFC-Kommunikation
+unterstützt.
 
+Wir haben ein Beispielprogramm implementiert welches *Text*, *URI* und
+*Mime Media Type* Records auf NFC Forum Type 1 und 2 Tags schreiben kann.
 
+Das Beispiel ist in Python implementiert, kann aber einfach als
+Startpunkt für eine implementierung in einer anderen Programmiersprache
+verwendet werden.
+
+* `Beispiel auf Github <https://github.com/Tinkerforge/nfc-rfid-bricklet/raw/master/software/examples/python/example_write_ndef_message.py>`__.
 
 
 .. _nfc_rfid_bricklet_test:
