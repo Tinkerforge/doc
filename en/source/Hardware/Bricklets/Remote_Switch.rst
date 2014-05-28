@@ -167,7 +167,7 @@ ELRO                AB440D                               Dimmer                 
 ------------------- ------------------------------------ ---------------------------------- -------
 ELRO Home Easy      HE800S                               Switch Set                         B
 |nbsp|              HE801S                               Switch Set                         B
-|nbsp|              HE801SA                              Switch Set                         B
+|nbsp|              HE801SA                              Switch Set                         C
 |nbsp|              HE801SF                              Switch Set                         B
 |nbsp|              HE802SA                              Dimmer Set                         B
 |nbsp|              HE802SF                              Dimmer Set                         B
