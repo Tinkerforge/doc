@@ -172,6 +172,7 @@ Ein `laser-geschnittenes Gehäuse für das LCD 20x4 Bricklet
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
+* Befestige die langen Schrauben mit den mitgelieferten Muttern am Oberteil,
 * Schraube LCD an Oberteil mit Abstandshalter (10mm) von unten und den langen Schrauben von oben,
 * Schraube Bricklet an LCD mit Abstandshalter (12mm)
 * baue Seitenteile auf,
