@@ -210,7 +210,7 @@ gemittelte Werte.
 Eine Spannung/Distanz Abbildungsdatei kann Kommentare beinhalten (Zeilen die
 mit ``#`` beginnen) und beinhaltet Zeilen die jeweils ein
 ``<Distanz in cm>: <Analogwert in mV>`` Paar enthalten. Die bestehenden
-Abbildungsdateien diesen als Beispiel für ein besseres Verständnis.
+Abbildungsdateien dienen als Beispiel für ein besseres Verständnis.
 
 
 .. _distance_ir_bricklet_case:
