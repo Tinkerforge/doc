@@ -55,10 +55,10 @@ Features
 --------
 
 * Controls one brushed DC motor with max. **28V** and **5A** (peak) over USB
-* APIs for many programming languages available
+* API for many programming languages available
 * Direction, velocity and acceleration controllable
 * Extendable by two connectable Bricklets
-* Overtemperature and overcurrent events
+* Configurable overtemperature and overcurrent events
 
 
 Description
@@ -66,29 +66,32 @@ Description
 
 With the DC :ref:`Brick <product_overview_bricks>` you are able to control one 
 `DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`__
-over USB (max. **28V** and **5A**). With the provided APIs for many 
-:ref:`programming languages<programming_interface>` you can control the 
+(max. **28V** and **5A**) over USB. With the provided API for many 
+:ref:`programming languages<dc_brick_programming_interface>` you can control the 
 direction, velocity and acceleration of the connected motor.
 
 Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
-features of this device. It is compatible to other Tinkerforge 
+features of this Brick. It is compatible to other 
 :ref:`Bricks <product_overview_bricks>` and can be used within a stack.
-For example an additional :ref:`Master Brick <master_brick>` with corresponding
+For example an additional :ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <product_overview_master_extensions>` can be used 
-to control the Brick instead by **USB** by other cable based (**RS485**, 
+to control the Brick instead over **USB** by other cable based (**RS485**, 
 **Ethernet**) or wireless (**WIFI**) connections.
 
-The APIs can be used to measure current consumption or the voltage of the power
-supply. In case of overtemperature and overcurrent callbacks are triggered. 
+Besides methods to control the connected motor the API provide the possibility
+to measure current consumption or the voltage of the power supply. 
+In case of overtemperature and overcurrent callbacks can be triggered. 
 These can be used to react properly in your own program to these events.
-For battery driven applications an undervoltage callback is user configurable.
-Additionally, the drive mode can be switched between Drive/Brake and
-Drive/Coast (see :ref:`Drive Modes <dc_brick_drive_mode>`).
+For battery driven applications an undervoltage callback is user configurable to 
+prevent damaged batteries caused by depth discharge. Additionally, the drive 
+mode can be switched between Drive/Brake and Drive/Coast 
+(see :ref:`Drive Modes <dc_brick_drive_mode>`).
 
-The DC motor can be powered by an external power supply connected
-directly to the Brick or by the stack internal power supply.
-If an external power supply is connected the Brick switches
-automatically to this power supply.
+By the power supply connector jack (black) motors can be powered directly. In 
+stack usage connected motors can be also powered by the stack. The Brick 
+switches automatically to the external power supply if connected.
+
+
 
 
 

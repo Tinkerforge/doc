@@ -49,39 +49,43 @@ IMU Brick
 Features
 --------
 
-* Voll ausgestattetes AHRS mit 9 Freiheitsgraden
+* Voll ausgestattete IMU/AHRS mit 9 Freiheitsgraden (je 3-achs Beschleunigungssensor, Kompass, Gyroskop)
 * Keine akkumulierenden Fehler, kein Gimbal Lock!
-* Vorkalibriert, einfach Anwendungsspezifisch zu kalibrieren
+* Vorkalibriert, einfach anwendungsspezifisch zu kalibrieren
 * Berechnet Quaternionen sowie Roll-, Nick- (Pitch) und Gier- (Yaw) Winkel
-* Ein USB und zwei Bricklet Anschlüsse
+* Direkt auslesbar per USB, erweiterbar über zwei Bricklet Anschlüsse
 
 
 Beschreibung
 ------------
 
-Der IMU :ref:`Brick <product_overview_bricks>` ist mit einem 32-Bit ARM
-Mikrocontroller und einem `Inertialsensor
-<http://de.wikipedia.org/wiki/Inertialsensor>`__ ausgestattet.
-Dieser kann 9 Freiheitsgrade messen und besteht aus einem 3-Achsen
-Beschleunigungssensor, Kompass und Gyroskop. Die Platine berechnet
+Der IMU :ref:`Brick <product_overview_bricks>` ist mit je einem 3-Achs 
+Beschleunigungssensor, Magnetfeldsensor (Kompass) und Gyroskop ausgestattet und
+arbeitet als **USB** 
+`Inertialsensor <http://de.wikipedia.org/wiki/Inertialsensor>`__.
+Dieser kann 9 Freiheitsgrade messen und berechnet
 `Quaternionen <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
 sowie auch `Roll-, Nick- und Gier-Winkel
-<http://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__.
-Die API erlaubt den Zugriff auf die berechneten Daten sowie
-Beschleunigung, Magnetfeld und Winkelgeschwindigkeiten für die
-drei Achsen. Wenn die Quaternionen-Darstellung benutzt wird, ist der IMU Brick
-`Gimbal Lock <http://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei.
+<http://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__. Es ist ein vollständiges
+`Attitude and Heading Reference System <http://de.wikipedia.org/wiki/Attitude_Heading_Reference_System>`__.
 
-Der Brick ist kompatibel zu anderen Tinkerforge
-:ref:`Bricks <product_overview_bricks>` und kann in einem Stapel benutzt werden.
-Über zwei Anschlüsse können :ref:`Bricklet <product_overview_bricklets>`
-angeschlossen werden.
+Die API, verfügbar für 
+:ref:`viele Programmiersprachen <imu_brick_programming_interface>`, erlaubt den 
+Zugriff auf die berechneten Daten sowie auf die Beschleunigung, Magnetfeld und 
+Winkelgeschwindigkeiten für die drei Achsen. Wenn die Quaternionen-Darstellung 
+benutzt wird, ist der IMU Brick 
+`Gimbal Lock <http://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei (im Gegensatz 
+zur Euler-Winkel Darstellung).
 
-Über eine **USB** Verbindung kann der Brick von einem PC gesteuert werden.
-Über einen zusätzlichen Master Brick mit Master Extension ist es möglich diese
-USB Verbindung durch kabelgebundene Schnittstellen (**RS485**, **Ethernet**)
-oder drahtlose Schnittstellen (**WLAN**) zu ersetzen
-(:ref:`Programmierschnittstelle <programming_interface>`).
+Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
+angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Als Beispiel 
+kann ein :ref:`GPS Bricklet <gps_bricklet>` angeschlossen werden um 
+Positionsdaten zu ermitteln. Der IMU Brick kann aber auch mit anderen 
+:ref:`Bricks <product_overview_bricks>` in einem Stapel genutzt werden. Zum 
+Beispiel kann ein zusätzlicher :ref:`Master Brick <master_brick>` mit
+:ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
+um die USB Verbindung durch andere kabelgebundene Schnittstellen 
+(**RS485**, **Ethernet**) oder drahtlose Schnittstellen (**WLAN**) zu ersetzen.
 
 
 Technische Spezifikation
@@ -90,10 +94,6 @@ Technische Spezifikation
 ==============================================================  ============================================================
 Eigenschaft                                                     Wert
 ==============================================================  ============================================================
-Mikrocontroller                                                 ATSAM3S2B (128kB Flash, 32kB RAM)
-Stromverbrauch                                                  53mA
---------------------------------------------------------------  ------------------------------------------------------------
---------------------------------------------------------------  ------------------------------------------------------------
 Beschleunigungs-, Magnetfeld-, Winkelgeschwindigkeitsauflösung  12Bit, 16Bit, 16Bit
 Auflösung der Roll-, Nick- (Pitch), Gier- (Yaw) Winkel          0,01° Schritte
 Quaternionenauflösung                                           32Bit
@@ -102,6 +102,7 @@ Quaternionenauflösung                                           32Bit
 Bricklet Anschlüsse                                             2
 Abmessungen (B x T x H)                                         40 x 40 x 16mm (1,57 x 1,57 x 0,63")
 Gewicht                                                         12g
+Stromverbrauch                                                  53mA
 ==============================================================  ============================================================
 
 

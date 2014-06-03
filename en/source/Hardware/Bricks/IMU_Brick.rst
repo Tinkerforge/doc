@@ -49,44 +49,41 @@ IMU Brick
 Features
 --------
 
-* Full fledged AHRS with 9 degrees of freedom
+* Full fledged IMU/AHRS with 9 degrees of freedom (3-axis each: accelerometer, compass, gyro)
 * No accumulating errors, no gimbal lock!
 * Factory calibrated, easy to recalibrate
 * Calculates quaternions as well as roll, pitch and yaw
-* One USB port and two Bricklet ports
+* Directly readable by USB, extendable by two Bricklet ports
 
 
 Description
 -----------
 
-The IMU :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit ARM
-microcontroller and an `inertial measurement unit
-<http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
-It has 9 degrees of freedom and consists of a 3-axis accelerometer,
-magnetometer and gyroscope. The board computes
+The IMU :ref:`Brick <product_overview_bricks>` is equipped with a 3-axis 
+accelerometer, magnetometer (compass) and gyroscope and works as a **USB**
+`inertial measurement unit <http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
+It can measure 9 degrees of freedom and computes
 `quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
 as well as `roll, pitch and yaw
-<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ information,
-it is a complete `attitude and heading reference system
+<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ information.
+It is a complete `attitude and heading reference system
 <http://en.wikipedia.org/wiki/AHRS>`__.
-The API allows access to the calculated data and
-also the acceleration, magnetic field and angular velocity for the
-three axes. If the quaternion representation is used, the IMU Brick does
-not have a `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__,
+
+The API, provided for many :ref:`programming languages <imu_brick_programming_interface>`,
+allows access to the calculated data and also the acceleration, magnetic field 
+and angular velocity for the three axes. If the quaternion representation is 
+used, the IMU Brick does not have a 
+`gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__,
 as known from Euler angles.
 
-It is compatible to other Tinkerforge
-:ref:`Bricks <product_overview_bricks>`
-and can be used within a stack.
-Two :ref:`Bricklet <product_overview_bricklets>` ports
-can be used to extend the features of this device.
-
-Controlling the device is possible in several ways. You can control it via
-a PC connection. This connection can be established directly with a **USB**
-cable or by other cable based (**RS485**, **Ethernet**) or wireless
-(**WIFI**) connections via an additional Master Brick with corresponding
-Master Extension (:ref:`Programming Interface <programming_interface>`).
-
+Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
+features of this Brick. For Example a :ref:`GPS Bricklet <gps_bricklet>` can be
+attached to get position information. The IMU Brick is compatible to other 
+:ref:`Bricks <product_overview_bricks>` and can be used within a stack.
+For example an additional :ref:`Master Brick <master_brick>` with
+:ref:`Master Extension <product_overview_master_extensions>` can be used 
+to control the Brick instead over **USB** by other cable based (**RS485**, 
+**Ethernet**) or wireless (**WIFI**) connections.
 
 Technical Specifications
 ------------------------
@@ -94,10 +91,6 @@ Technical Specifications
 ===================================================  ============================================================
 Property                                             Value
 ===================================================  ============================================================
-Microcontroller                                      ATSAM3S2B (128kB Flash, 32kB RAM)
-Current Consumption                                  53mA
----------------------------------------------------  ------------------------------------------------------------
----------------------------------------------------  ------------------------------------------------------------
 Acceleration, Magnetic, Angular Velocity Resolution  12bit, 16bit, 16bit
 Roll, Pitch, Yaw Resolution                          0.01° steps
 Quaternion Resolution                                32bit
@@ -106,6 +99,7 @@ Quaternion Resolution                                32bit
 Bricklet Ports                                       2
 Dimensions (W x D x H)                               40 x 40 x 16mm (1.57 x 1.57 x 0.63")
 Weight                                               12g
+Current Consumption                                  53mA
 ===================================================  ============================================================
 
 

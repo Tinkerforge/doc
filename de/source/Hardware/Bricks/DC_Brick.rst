@@ -53,43 +53,43 @@ DC Brick
 Features
 --------
 
-* Steuert einen Gleichstrom-Motor mit max. **28V** und **5A** über USB
-* APIs für viele Programmiersprachen verfügbar
+* Steuert einen Gleichstrommotor mit max. **28V** und **5A** über USB
+* API für viele Programmiersprachen verfügbar
 * Richtung, Geschwindigkeit und Beschleunigung können gesteuert werden
-* Erweiterbar über zwei zusätzlich anschließbare Bricklets
-* Übertemperatur- und Überstrom-Events konfigurierbar
+* Erweiterbar mit zwei anschließbaren Bricklets
+* Übertemperatur- und Überstrom-Callbacks konfigurierbar
 
 
 Beschreibung
 ------------
 
 Mit dem DC :ref:`Brick <product_overview_bricks>` kann ein
-`Gleichstrom-Motor <http://de.wikipedia.org/wiki/Gleichstrommaschine>`__
-über **USB** gesteuert werden (max. **28V** und **5A**). Zur Verfügung gestellte 
-APIs für
-:ref:`viele Programmiersprachen <programming_interface>` ermöglichen die 
-Kontrolle der Richtung, Geschwindigkeit und Beschleunigung des Motors.
+`Gleichstrommotor <http://de.wikipedia.org/wiki/Gleichstrommaschine>`__
+(max. **28V** und **5A**) über **USB** gesteuert werden. Eine API für
+:ref:`viele Programmiersprachen <dc_brick_programming_interface>` ermöglichen 
+das Steuern der Richtung, Geschwindigkeit und Beschleunigung des Motors.
 
 Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
-angeschlossen und die Fähigkeiten des Bricks erweitert werden. Der Brick ist 
-kompatibel zu anderen Tinkerforge :ref:`Bricks <product_overview_bricks>` und 
-kann in einem Stapel benutzt werden. Zum Beispiel kann ein zusätzliches 
-:ref:`Master Brick <master_brick>` mit ensprechender 
-:ref:`Master Extension <product_overview_master_extensions>` genutzt werden,
+angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Der DC Brick 
+kann mit anderen :ref:`Bricks <product_overview_bricks>` in einem Stapel genutzt 
+werden. Zum Beispiel kann ein zusätzlicher 
+:ref:`Master Brick <master_brick>` mit
+:ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
 (**RS485**, **Ethernet**) oder drahtlose Schnittstellen (**WLAN**) zu ersetzen.
 
-Die APIs ermöglichen die Messung des Stromverbrauchs und der 
-Versorgungsspannung. Im Falle einer Überhitzung oder Überspannung werden 
-Callbacks ausgelöst, so dass auf diese im eigenen Programm reagiert werden kann. 
-Ein "Undervoltage" Callback kann genutzt werden um Batterien oder Akkus vor 
-Tiefentladung zu schützen. Zusätzlich kann der Fahrmodus zwischen Drive/Brake 
-und Drive/Coast umgeschaltet werden 
-(siehe :ref:`Fahrmodus <dc_brick_drive_mode>`).
+Neben Methoden zum Steuern des angeschlossenen Motors bietet die API 
+Möglichkeiten zur Messung des Stromverbrauchs und der Versorgungsspannung. Im 
+Falle einer Überhitzung oder Überspannung können Callbacks ausgelöst werden, 
+so dass auf diese im eigenen Programm reagiert werden kann. Ein "Undervoltage" 
+Callback kann genutzt werden um Batterien oder Akkus vor Tiefentladung zu 
+schützen. Zusätzlich kann der Fahrmodus zwischen Drive/Brake und Drive/Coast 
+umgeschaltet werden (siehe :ref:`Fahrmodus <dc_brick_drive_mode>`).
 
-Der DC Motor kann über eine externe Stromversorgung oder durch einen
-Stapel versorgt werden. Der Brick schaltet automatisch auf eine externe
-Stromversorgung um, sobald eine an das Brick angeschlossen wird.
+Über die Stromversorgungsbuchse (schwarz) kann der Motor direkt versorgt werden. 
+Im Stapel kann der Motor aber auch durch den Stapel versorgt werden. Der Brick 
+schaltet automatisch auf eine externe Stromversorgung um, sobald diese am Brick 
+angeschlossen wird.
 
 
 
