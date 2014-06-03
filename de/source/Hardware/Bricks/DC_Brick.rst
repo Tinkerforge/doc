@@ -53,43 +53,46 @@ DC Brick
 Features
 --------
 
-* Steuert einen DC Motor mit max. **28V** und **5A**
-* Richtung, Geschwindigkeit und Beschleunigung können kontrolliert werden
-* Übertemperatur- und Überstrom-Events
-* Drive/Brake und Drive/Coast Modus konfigurierbar
-* Ein USB und zwei Bricklet Anschlüsse
+* Steuert einen Gleichstrom-Motor mit max. **28V** und **5A** über USB
+* APIs für viele Programmiersprachen verfügbar
+* Richtung, Geschwindigkeit und Beschleunigung können gesteuert werden
+* Erweiterbar über zwei zusätzlich anschließbare Bricklets
+* Übertemperatur- und Überstrom-Events konfigurierbar
 
 
 Beschreibung
 ------------
 
-Der DC :ref:`Brick <product_overview_bricks>` ist mit einem 32-Bit ARM
-Mikrocontroller ausgestattet und kann einen
-`DC Motor <http://de.wikipedia.org/wiki/Gleichstrommaschine>`__
-bidirektional mit max. **28V** und **5A** steuern. Der Stromverbrauch und
-die Versorgungsspannung kann gemessen,
-die Geschwindigkeit und Beschleunigung des Motors können gesteuert werden.
-Im Falle einer Überhitzung oder Überspannung werden Callbacks ausgelöst.
-Ein "Undervoltage" Callback kann genutzt werden um Batterien oder Akkus
-vor Tiefentladung zu schützen.
-Zusätzlich kann der Fahrmodus zwischen Drive/Brake und Drive/Coast umgeschaltet
-werden (siehe :ref:`Fahrmodus <dc_brick_drive_mode>`).
+Mit dem DC :ref:`Brick <product_overview_bricks>` kann ein
+`Gleichstrom-Motor <http://de.wikipedia.org/wiki/Gleichstrommaschine>`__
+über **USB** gesteuert werden (max. **28V** und **5A**). Zur Verfügung gestellte 
+APIs für
+:ref:`viele Programmiersprachen <programming_interface>` ermöglichen die 
+Kontrolle der Richtung, Geschwindigkeit und Beschleunigung des Motors.
 
-Der Brick ist kompatibel zu anderen Tinkerforge
-:ref:`Bricks <product_overview_bricks>`
-und kann in einem Stapel benutzt werden.
-Über zwei Anschlüsse können :ref:`Bricklet <product_overview_bricklets>`
-angeschlossen werden.
+Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
+angeschlossen und die Fähigkeiten des Bricks erweitert werden. Der Brick ist 
+kompatibel zu anderen Tinkerforge :ref:`Bricks <product_overview_bricks>` und 
+kann in einem Stapel benutzt werden. Zum Beispiel kann ein zusätzliches 
+:ref:`Master Brick <master_brick>` mit ensprechender 
+:ref:`Master Extension <product_overview_master_extensions>` genutzt werden,
+um die USB Verbindung durch andere kabelgebundene Schnittstellen 
+(**RS485**, **Ethernet**) oder drahtlose Schnittstellen (**WLAN**) zu ersetzen.
+
+Die APIs ermöglichen die Messung des Stromverbrauchs und der 
+Versorgungsspannung. Im Falle einer Überhitzung oder Überspannung werden 
+Callbacks ausgelöst, so dass auf diese im eigenen Programm reagiert werden kann. 
+Ein "Undervoltage" Callback kann genutzt werden um Batterien oder Akkus vor 
+Tiefentladung zu schützen. Zusätzlich kann der Fahrmodus zwischen Drive/Brake 
+und Drive/Coast umgeschaltet werden 
+(siehe :ref:`Fahrmodus <dc_brick_drive_mode>`).
 
 Der DC Motor kann über eine externe Stromversorgung oder durch einen
 Stapel versorgt werden. Der Brick schaltet automatisch auf eine externe
-Stromversorgung um, sobald eine angeschlossen wird.
+Stromversorgung um, sobald eine an das Brick angeschlossen wird.
 
-Über eine **USB** Verbindung kann der Brick von einem PC gesteuert werden.
-Über einen zusätzlichen Master Brick mit Master Extension ist es möglich diese
-USB Verbindung durch kabelgebundene Schnittstellen (**RS485**, **Ethernet**)
-oder drahtlose Schnittstellen (**WLAN**) zu ersetzen
-(:ref:`Programmierschnittstelle <programming_interface>`).
+
+
 
 
 Technische Spezifikation
@@ -98,10 +101,6 @@ Technische Spezifikation
 ===================================  ====================================================================
 Eigenschaft                          Wert
 ===================================  ====================================================================
-Mikrocontroller                      ATSAM3S2B (128kB Flash, 32kB RAM)
-Stromverbrauch                       53mA
------------------------------------  --------------------------------------------------------------------
------------------------------------  --------------------------------------------------------------------
 Maximaler Motorstrom                 | Kurzzeitig: 5A (Peak)
                                      | Dauerhaft: > 3A (Abhängig von der Kühlung)
 Minimale/Maximale Eingangsspannung   6V/28V
@@ -115,6 +114,7 @@ Beschleunigung                       0 bis 65535, Geschwindigkeit/s, Inkrement f
 Bricklet Anschlüsse                  2
 Abmessungen (B x T x H)              40 x 40 x 17mm (1,57 x 1,57 x 0,67")
 Gewicht                              18g
+Stromverbrauch                       53mA
 ===================================  ====================================================================
 
 

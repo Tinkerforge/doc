@@ -54,43 +54,42 @@ DC Brick
 Features
 --------
 
-* Drives one brushed DC motor with max. **28V** and **5A** (peak)
+* Controls one brushed DC motor with max. **28V** and **5A** (peak) over USB
+* APIs for many programming languages available
 * Direction, velocity and acceleration controllable
+* Extendable by two connectable Bricklets
 * Overtemperature and overcurrent events
-* Drive/Brake and Drive/Coast mode configurable
-* One USB port and two Bricklet ports
 
 
 Description
 -----------
 
-The DC :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit ARM
-microcontroller and is able to control one
+With the DC :ref:`Brick <product_overview_bricks>` you are able to control one 
 `DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`__
-bidirectional with max. **28V** and **5A** (peak). The current consumption and
-power supply voltage can be measured,
-velocity and acceleration of the motor can be controlled.
-In case of overtemperature and overcurrent callbacks are triggered.
+over USB (max. **28V** and **5A**). With the provided APIs for many 
+:ref:`programming languages<programming_interface>` you can control the 
+direction, velocity and acceleration of the connected motor.
+
+Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
+features of this device. It is compatible to other Tinkerforge 
+:ref:`Bricks <product_overview_bricks>` and can be used within a stack.
+For example an additional :ref:`Master Brick <master_brick>` with corresponding
+:ref:`Master Extension <product_overview_master_extensions>` can be used 
+to control the Brick instead by **USB** by other cable based (**RS485**, 
+**Ethernet**) or wireless (**WIFI**) connections.
+
+The APIs can be used to measure current consumption or the voltage of the power
+supply. In case of overtemperature and overcurrent callbacks are triggered. 
+These can be used to react properly in your own program to these events.
 For battery driven applications an undervoltage callback is user configurable.
 Additionally, the drive mode can be switched between Drive/Brake and
 Drive/Coast (see :ref:`Drive Modes <dc_brick_drive_mode>`).
-
-It is compatible to other Tinkerforge
-:ref:`Bricks <product_overview_bricks>`
-and can be used within a stack.
-Two :ref:`Bricklet <product_overview_bricklets>` ports
-can be used to extend the features of this device.
 
 The DC motor can be powered by an external power supply connected
 directly to the Brick or by the stack internal power supply.
 If an external power supply is connected the Brick switches
 automatically to this power supply.
 
-Controlling the device is possible in several ways. You can control it via
-a PC connection. This connection can be established directly with a **USB**
-cable or by other cable based (**RS485**, **Ethernet**) or wireless
-(**WIFI**) connections via an additional Master Brick with corresponding
-Master Extension (:ref:`Programming Interface <programming_interface>`).
 
 
 Technical Specifications
@@ -99,10 +98,6 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Microcontroller                   ATSAM3S2B (128kB Flash, 32kB RAM)
-Current Consumption               53mA
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
 Maximum Motor Current             | Peak: 5A
                                   | Continous: > 3A (depends on cooling)
 Minimum/Maximum Input Voltage     6V/28V
@@ -116,6 +111,7 @@ Acceleration                      0 to 65535, velocity/s, increment for velocity
 Bricklet Ports                    2
 Dimensions (W x D x H)            40 x 40 x 17mm (1.57 x 1.57 x 0.67")
 Weight                            18g
+Current Consumption               53mA
 ================================  ============================================================
 
 
