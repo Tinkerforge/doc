@@ -472,7 +472,7 @@ some image files to display:
 
 There is also a :ref:`Java <api_bindings_java>` implementation that can be
 downloaded from `GitHub
-<https://github.com/Tinkerforge/blinkenlights/tree/master/text/java>`__.
+<https://github.com/Tinkerforge/blinkenlights/tree/master/images/java>`__.
 
 
 .. _starter_kit_blinkenlights_scrolling_rainbow:
