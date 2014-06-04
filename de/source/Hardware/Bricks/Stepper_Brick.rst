@@ -59,7 +59,7 @@ Features
 * Position, Geschwindigkeit und Beschleunigung sind steuerbar
 * Voll-, Halb-, Viertel- und Achtelschritt
 * Konfigurierbarer Decay Modus
-* Erweiterbar mit zwei anschließbaren Bricklets
+* Erweiterbar über zwei Bricklet Anschlüsse
 
 
 Beschreibung
@@ -78,9 +78,8 @@ und die Versorgungsspannung können über diese auch gemessen werden.
 
 Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Der Stepper 
-Brick kann mit anderen :ref:`Bricks <product_overview_bricks>` in einem Stapel 
-genutzt werden. Zum Beispiel kann ein zusätzlicher 
-:ref:`Master Brick <master_brick>` mit
+Brick kann mit anderen Bricks in einem Stapel genutzt werden. Zum Beispiel
+kann ein zusätzlicher  :ref:`Master Brick <master_brick>` mit
 :ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 

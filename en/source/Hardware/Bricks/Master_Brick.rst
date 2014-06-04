@@ -71,7 +71,7 @@ First of all it has **four** :ref:`Bricklet <product_overview_bricklets>` ports
 and therefore is ideally suited for applications where a many Bricklets are 
 used. These can be directly controlled over the **USB** interface of the Master
 Brick. This way USB sensors, like temperature or humidity sensors, or USB 
-actors, like relais, can be created according to your individual needs.
+actors, like relays, can be created according to your individual needs.
 
 Secondly, the Master Brick can be used for communication purposes. When 
 building a stack the lowermost Master Brick acts as the master of this stack 

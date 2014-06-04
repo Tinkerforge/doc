@@ -59,7 +59,7 @@ Features
 * Position, velocity and acceleration controllable
 * Full, half, quarter and eighth step modes
 * Configurable decay mode
-* Extendable by two connectable Bricklets
+* Extendable via two Bricklets ports
 
 
 Description
@@ -77,9 +77,8 @@ The maximum driving current and the
 the current consumption and power supply voltage can be measured by the API.
 
 Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
-features of this Brick. It is compatible to other 
-:ref:`Bricks <product_overview_bricks>` and can be used within a stack.
-For example an additional :ref:`Master Brick <master_brick>` with
+features of this Brick. It can also be used together with other Bricks in a
+stack. For example an additional :ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <product_overview_master_extensions>` can be used 
 to control the Brick instead over USB by other cable based 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 

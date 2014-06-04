@@ -56,7 +56,7 @@ Features
 * Steuert einen Gleichstrommotor mit max. **28V** und **5A** über USB
 * API für viele Programmiersprachen verfügbar
 * Richtung, Geschwindigkeit und Beschleunigung können gesteuert werden
-* Erweiterbar mit zwei anschließbaren Bricklets
+* Erweiterbar über zwei Bricklet Anschlüsse
 * Übertemperatur- und Überstrom-Callbacks konfigurierbar
 
 
@@ -71,9 +71,8 @@ das Steuern der Richtung, Geschwindigkeit und Beschleunigung des Motors.
 
 Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Der DC Brick 
-kann mit anderen :ref:`Bricks <product_overview_bricks>` in einem Stapel genutzt 
-werden. Zum Beispiel kann ein zusätzlicher 
-:ref:`Master Brick <master_brick>` mit
+kann mit anderen Bricks in einem Stapel genutzt werden. Zum Beispiel kann ein
+zusätzlicher :ref:`Master Brick <master_brick>` mit
 :ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
@@ -84,16 +83,14 @@ Möglichkeiten zur Messung des Stromverbrauchs und der Versorgungsspannung. Im
 Falle einer Überhitzung oder Überspannung können Callbacks ausgelöst werden, 
 so dass auf diese im eigenen Programm reagiert werden kann. Ein "Undervoltage" 
 Callback kann genutzt werden um Batterien oder Akkus vor Tiefentladung zu 
-schützen. Zusätzlich kann der Fahrmodus zwischen Drive/Brake und Drive/Coast 
-umgeschaltet werden (siehe :ref:`Fahrmodus <dc_brick_drive_mode>`).
+schützen. Zusätzlich kann der Fahrmodus zwischen Fahren/Bremsen und
+Fahren/Leerlauf umgeschaltet werden (siehe :ref:`Fahrmodus
+<dc_brick_drive_mode>`).
 
 Über die Stromversorgungsbuchse (schwarz) kann der Motor direkt versorgt werden. 
 Im Stapel kann der Motor aber auch durch den Stapel versorgt werden. Der Brick 
 schaltet automatisch auf eine externe Stromversorgung um, sobald diese am Brick 
 angeschlossen wird.
-
-
-
 
 
 Technische Spezifikation
@@ -108,7 +105,7 @@ Minimale/Maximale Eingangsspannung   6V/28V
 -----------------------------------  --------------------------------------------------------------------
 -----------------------------------  --------------------------------------------------------------------
 PWM Frequenz                         Einstellbar, 1-20kHz, Standard 15kHz
-Geschwindigkeit                      -32767 bis 32767, Rückwärts nach Vorwärts, 0=Stop
+Geschwindigkeit                      -32767 bis 32767, Rückwärts nach Vorwärts, 0=Stopp
 Beschleunigung                       0 bis 65535, Geschwindigkeit/s, Inkrement für Geschwindigkeit/s
 -----------------------------------  --------------------------------------------------------------------
 -----------------------------------  --------------------------------------------------------------------

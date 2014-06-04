@@ -65,7 +65,7 @@ Features
 * Unterstützt `TurboPWM <http://wiki.openpilot.org/display/Doc/TurboPWM+ESC's>`__
 * Über API einstellbare Servospannung, Periode und Pulsweite
 * Position, Geschwindigkeit und Beschleunigung steuerbar
-* Erweiterbar über zwei anschließbare Bricklets
+* Erweiterbar über zwei Bricklet Anschlüsse
 
 
 Beschreibung
@@ -80,7 +80,7 @@ Servos. Die Ausgangsspannung ist ebenfalls per API einstellbar (max. **9V**),
 der Stromverbrauch jedes Servos kann einzeln gemessen werden. Zusätzlich kann die 
 PWM jedes Servos einzeln konfiguriert werden.
 
-Modellbau Fahrtenregler (Electronic Speed Controller - ESC) können anstatt der
+Modellbau-Fahrtenregler (Electronic Speed Controller - ESC) können anstatt der
 Servos angeschlossen werden und ermöglichen es andere Motoren, wie z.B. 
 Brushless Motoren, zu steuern. Es muss nur der richtige ESC abhängig vom Motor
 gewählt werden, so dass auch Motoren mit einem Stromverbrauch von 150A und 
@@ -88,9 +88,8 @@ mehr steuerbar sind.
 
 Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Der Servo 
-Brick kann mit anderen :ref:`Bricks <product_overview_bricks>` in einem Stapel 
-genutzt werden. Zum Beispiel kann ein zusätzlicher 
-:ref:`Master Brick <master_brick>` mit
+Brick kann mit anderen Bricks in einem Stapel genutzt werden. Zum Beispiel
+kann ein zusätzlicher :ref:`Master Brick <master_brick>` mit
 :ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 

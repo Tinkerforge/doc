@@ -82,13 +82,12 @@ zur Euler-Winkel Darstellung).
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Als Beispiel 
 kann ein :ref:`GPS Bricklet <gps_bricklet>` angeschlossen werden um 
 Positionsdaten zu ermitteln. Ein 
-`Youtube Video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__ zeigt, wie das
+`Youtube Video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__ zeigt, wie der
 Brick zusammen mit einem :ref:`Barometer Bricklet <barometer_bricklet>` genutzt
 werden kann um die Höhe zu bestimmen.
 
-Der IMU Brick kann aber auch mit anderen :ref:`Bricks <product_overview_bricks>` 
-in einem Stapel genutzt werden. Zum Beispiel kann ein zusätzlicher 
-:ref:`Master Brick <master_brick>` mit 
+Der IMU Brick kann aber auch mit anderen Bricks in einem Stapel genutzt werden.
+Zum Beispiel kann ein zusätzlicher :ref:`Master Brick <master_brick>` mit
 :ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 

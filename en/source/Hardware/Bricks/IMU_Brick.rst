@@ -85,9 +85,8 @@ A
 Brick can be used together with a :ref:`Barometer Bricklet <barometer_bricklet>` 
 to gain altitude information.
 
-The IMU Brick is compatible to other :ref:`Bricks <product_overview_bricks>` and 
-can be used within a stack. For example an additional 
-:ref:`Master Brick <master_brick>` with
+The IMU Brick can be use together with other Bricks in a stack.
+For example an additional :ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <product_overview_master_extensions>` can be used 
 to control the Brick instead over USB by other cable based 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 

@@ -65,7 +65,7 @@ Features
 * Supports `TurboPWM <http://wiki.openpilot.org/display/Doc/TurboPWM+ESC's>`__
 * With API adjustable servo voltage, period and pulse width
 * Position, velocity and acceleration controllable
-* Extendable by two connectable Bricklets
+* Extendable via two Bricklets ports
 
 
 Description
@@ -80,15 +80,14 @@ voltage is adjustable with API (up to **9V**), the drawn current of each
 servo can be measured independently. Additionally output PWM is configurable 
 for each servo.
 
-Instead of RC servos Electronic Speed Controllers (ESC) can be connected.
+Electronic Speed Controllers (ESC) can be connected instead of RC servos.
 With these, motors e.g Brushless motors, can be controlled. The maximum motor
 current depends only on the ESC such that motors with 150A and more are 
 possible to control.
 
 Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
-features of this Brick. It is compatible to other 
-:ref:`Bricks <product_overview_bricks>` and can be used within a stack.
-For example an additional :ref:`Master Brick <master_brick>` with
+features of this Brick. It can also be used together with other Bricks in a
+stack. For example an additional :ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <product_overview_master_extensions>` can be used 
 to control the Brick instead over USB by other cable based 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 

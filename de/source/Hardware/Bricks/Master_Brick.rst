@@ -68,7 +68,6 @@ Beschreibung
 ------------
 
 Der Master :ref:`Brick <product_overview_bricks>` besitzt zwei Aufgaben:
-
 Als erstes besitzt er **vier** :ref:`Bricklet <product_overview_bricklets>`
 Anschlüsse und ist daher ideal geeignet für Anwendungen bei denen viele
 Bricklets genutzt werden. Diese können dann direkt über die **USB** 
@@ -78,13 +77,13 @@ Aktoren, wie Relais, ganz nach den eigenen Bedürfnissen aufgebaut werden.
 
 Als zweites kann der Master Brick für Kommunikationsaufgaben genutzt werden.
 Wird ein Stapel von Bricks aufgebaut so arbeitet der unterste Brick als Master
-des Stapels und leitet Daten von dem steuerenden Gerät an die Platinen des 
+des Stapels und leitet Daten von dem steuernden Gerät an die Platinen des
 Stapels weiter. Andere Master Bricks im Stapel erkennen, dass sie nicht als 
 Master eingesetzt sind und stellen nur ihre angeschlossenen Bricklets zur 
 Verfügung. Es ist also nur eine USB Verbindung, die des untersten Master 
 Bricks, für einen ganzen Stapel von Bricks notwendig.
 
-Die USB Schnittstelle kann mit Master Extensions ersetzt werden. Es gibt 
+Die USB Schnittstelle kann durch Master Extensions ersetzt werden. Es gibt
 Master Extensions für kabelgebundene Schnittstellen
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 und drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`).
@@ -93,7 +92,7 @@ als weitere Schnittstelle erkannt. Somit können Bricks und Bricklets zum
 Beispiel direkt aus dem eigenen Netzwerk gesteuert werden (WLAN, Ethernet) oder
 aber über größere Strecken vernetzt werden (RS485).
 
-Der großtmögliche Stapel besteht aus (von unten nach oben)
+Der größtmögliche Stapel besteht aus (von unten nach oben)
 1x Step-Down Power Supply, 1x Master Brick, 8x beliebige andere Bricks, 
 2x Master Extensions. Wenn alle Bricks im Stapel Master Bricks sind können bis 
 zu 9 Master Bricks x je 4 Bricklets = 36 Bricklets an einem Stapel 

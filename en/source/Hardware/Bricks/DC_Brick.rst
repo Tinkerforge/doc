@@ -57,8 +57,8 @@ Features
 * Controls one brushed DC motor with max. **28V** and **5A** (peak) over USB
 * API for many programming languages available
 * Direction, velocity and acceleration controllable
-* Extendable by two connectable Bricklets
-* Configurable overtemperature and overcurrent events
+* Extendable via two Bricklets ports
+* Configurable overtemperature and overcurrent callbacks
 
 
 Description
@@ -66,16 +66,15 @@ Description
 
 With the DC :ref:`Brick <product_overview_bricks>` you are able to control one 
 `DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`__
-(max. **28V** and **5A**) over USB. With the provided API for many 
+(max. **28V** and **5A**) over **USB**. With the provided API for many
 :ref:`programming languages<dc_brick_programming_interface>` you can control the 
 direction, velocity and acceleration of the connected motor.
 
 Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
-features of this Brick. It is compatible to other 
-:ref:`Bricks <product_overview_bricks>` and can be used within a stack.
-For example an additional :ref:`Master Brick <master_brick>` with
+features of this Brick. It can also be used together with other Bricks in a
+stack. For example an additional :ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <product_overview_master_extensions>` can be used 
-to control the Brick instead over **USB** by other cable based 
+to control the Brick instead over USB by other cable based
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 or wireless (:ref:`WIFI <wifi_extension>`) connections.
 
