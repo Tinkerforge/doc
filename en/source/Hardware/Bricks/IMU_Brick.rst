@@ -79,9 +79,15 @@ as known from Euler angles.
 
 Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
 features of this Brick. For Example a :ref:`GPS Bricklet <gps_bricklet>` can be
-attached to get position information. The IMU Brick is compatible to other 
-:ref:`Bricks <product_overview_bricks>` and can be used within a stack.
-For example an additional :ref:`Master Brick <master_brick>` with
+attached to get position information. 
+A 
+`Youtube video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__ shows, how the 
+Brick can be used together with a :ref:`Barometer Bricklet <barometer_bricklet>` 
+to gain altitude information.
+
+The IMU Brick is compatible to other :ref:`Bricks <product_overview_bricks>` and 
+can be used within a stack. For example an additional 
+:ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <product_overview_master_extensions>` can be used 
 to control the Brick instead over USB by other cable based 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
@@ -193,6 +199,9 @@ button and select the "Im/Export" tab. Finally copy and paste the content of
 Since Brick Viewer version 1.1.13 you can also click the "Restore Factory
 Calibration" button, that automatically downloads and imports the factory
 calibration for you.
+
+A video how we calibrate the IMU Bricks can be found:
+`here <http://www.youtube.com/watch?v=JckgemCHvCA>`__.
 
 
 Quaternions vs Euler Angles
