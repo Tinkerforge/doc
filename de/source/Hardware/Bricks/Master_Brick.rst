@@ -59,37 +59,44 @@ Master Brick
 Features
 --------
 
+* Bis zu **vier** Bricklets per USB steuerbar
 * Ist Grundlage um Stapel zu bauen
 * Benutzbar mit kabelgebundenen und drahtlosen Master Extensions
-* Eine USB und **vier** Bricklet Schnittstellen
 
 
 Beschreibung
 ------------
 
-Der Master :ref:`Brick <product_overview_bricks>` ist mit einem 32-Bit ARM
-Mikrocontroller ausgestattet und besitzt zwei Aufgaben.
-Als erstes besitzt es **vier** :ref:`Bricklet <product_overview_bricklets>`
+Der Master :ref:`Brick <product_overview_bricks>` besitzt zwei Aufgaben:
+
+Als erstes besitzt er **vier** :ref:`Bricklet <product_overview_bricklets>`
 Anschlüsse und ist daher ideal geeignet für Anwendungen bei denen viele
-Bricklets genutzt werden.
+Bricklets genutzt werden. Diese können dann direkt über die **USB** 
+Schnittstelle des Master Bricks gesteuert werden. Somit können USB Sensoren, 
+zum Beispiel zur Messung der Luftfeuchtigkeit und Temperatur, aber auch USB 
+Aktoren, wie Relais, ganz nach den eigenen Bedürfnissen aufgebaut werden.
 
-Als zweites kann das Master Brick für Kommunikationsaufgaben genutzt werden.
-Wird ein Stapel von Bricks aufgebaut so arbeitet der untere Brick als Master
-des Stapels und leitet Daten von dem PC an die Platinen des Stapels weiter.
-Andere Master Bricks im Stapel erkennen, dass sie nicht als Master eingesetzt
-sind und stellen nur ihre angeschlossenen Bricklets zur Verfügung.
+Als zweites kann der Master Brick für Kommunikationsaufgaben genutzt werden.
+Wird ein Stapel von Bricks aufgebaut so arbeitet der unterste Brick als Master
+des Stapels und leitet Daten von dem steuerenden Gerät an die Platinen des 
+Stapels weiter. Andere Master Bricks im Stapel erkennen, dass sie nicht als 
+Master eingesetzt sind und stellen nur ihre angeschlossenen Bricklets zur 
+Verfügung. Es ist also nur eine USB Verbindung, die des untersten Master 
+Bricks, für einen ganzen Stapel von Bricks notwendig.
 
-Im einfachsten Fall werden Daten von einem PC über die **USB** Verbindung
-des Master Bricks geleitet. Diese Schnittstelle kann mit Master Extensions
-geändert werden. Es gibt Master Extensions für kabelgebundene Schnittstellen
+Die USB Schnittstelle kann mit Master Extensions ersetzt werden. Es gibt 
+Master Extensions für kabelgebundene Schnittstellen
 (**RS485**, **Ethernet**) und drahtlose Schnittstellen (**WLAN**).
 Extensions können auf einen Master Brick gesteckt werden und werden von diesem
-als weitere Schnittstelle erkannt.
+als weitere Schnittstelle erkannt. Somit können Bricks und Bricklets zum 
+Beispiel direkt aus dem eigenen Netzwerk gesteuert werden (WLAN, Ethernet) oder
+aber über größere Strecken vernetzt werden (RS485).
 
 Der großtmögliche Stapel besteht aus (von unten nach oben)
-1x Step-Down Power Supply, 1x Master Brick, 8x Bricks, 2x Master Extensions.
-Wenn alle Bricks im Stapel Master Bricks sind können bis zu 36 Bricklets an
-einen Stapel angeschlossen werden.
+1x Step-Down Power Supply, 1x Master Brick, 8x beliebige andere Bricks, 
+2x Master Extensions. Wenn alle Bricks im Stapel Master Bricks sind können bis 
+zu 9 Master Bricks x je 4 Bricklets = 36 Bricklets an einem Stapel 
+angeschlossen werden.
 
 
 Technische Spezifikation
@@ -98,13 +105,10 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Mikrocontroller                   ATSAM3S4C (256kB Flash, 48kB RAM)
-Stromverbrauch                    68mA
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
 Bricklet Anschlüsse               4
 Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
 Gewicht                           12g
+Stromverbrauch                    68mA
 ================================  ============================================================
 
 

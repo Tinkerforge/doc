@@ -58,35 +58,39 @@ Master Brick
 Features
 --------
 
+* Up to **four** Bricklets useable over USB
 * Is the basis to build stacks
 * Usable with cable based and wireless Master Extensions
-* One USB port and **four** Bricklet ports
 
 
 Description
 -----------
 
-The Master :ref:`Brick <product_overview_bricks>`
-is equipped with a 32-bit ARM microcontroller and can be
-used for two purposes. First of all it has **four**
-:ref:`Bricklet <product_overview_bricklets>` ports and therefore is ideally
-suited for applications where a many Bricklets are used.
+The Master :ref:`Brick <product_overview_bricks>` can be used for two purposes:
+First of all it has **four** :ref:`Bricklet <product_overview_bricklets>` ports
+and therefore is ideally suited for applications where a many Bricklets are 
+used. These can be directly controlled over the **USB** interface of the Master
+Brick. This way USB sensors, like temperature or humidity sensors, or USB 
+actors, like relais, can be created according to your individual needs.
 
-Secondly, the Master Brick can be used for communication purposes.
-When building a stack the lowermost Master Brick
-acts as the master of this stack and routes all communication between the
-boards of the stack and the PC. Other Master Bricks in the stack provide their
-attached Bricklets.
+Secondly, the Master Brick can be used for communication purposes. When 
+building a stack the lowermost Master Brick acts as the master of this stack 
+and routes all communication between the boards of the stack and the controlling
+device. Other Master Bricks in the stack detect that they do not act as a 
+master and will only provide their attached Bricklets. This way only one USB
+connection, the to the lowermost Master Brick, is necessary.
 
-Normally the communication with a stack is routed over the **USB** connection
-of the Master Brick. This can be changed with :ref:`Master Extensions
-<product_overview_master_extensions>`. There are Master Extensions for cable
-based interfaces (**RS485**, **Ethernet**) and wireless interfaces (**WIFI**).
-Extensions are plugged on the topside of the master.
+The USB connection of the Master Brick can be changed with :ref:`Master 
+Extensions <product_overview_master_extensions>`. There are Master Extensions 
+for cable based interfaces (**RS485**, **Ethernet**) and wireless interfaces 
+(**WIFI**). This way Bricks and Bricklets can be directly controlled from 
+devices inside a network (WIFI or Ethernet) or can be interconnected over
+large distances (RS485).
 
-The maximum stack consists of (bottom to top) 1x Step-Down Power Supply,
-1x Master Brick, 8x Bricks, 2x Master Extensions. With all Bricks being Master
-Bricks in a stack up to 36 Bricklets can be connected to a single stack.
+The maximum stack consists of (bottom to top): 1x Step-Down Power Supply,
+1x Master Brick, 8x arbitrarily Bricks, 2x Master Extensions. With all Bricks 
+being Master Bricks in a stack up to 9 Master Bricks x 4 Bricklets each = 36 
+Bricklets can be connected to a single stack.
 
 
 Technical Specifications
@@ -95,13 +99,10 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Microcontroller                   ATSAM3S4C (256kB Flash, 48kB RAM)
-Current Consumption               68mA
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
 Bricklet Ports                    4
 Dimensions (W x D x H)            40 x 40 x 16mm (1.57 x 1.57 x 0.63")
 Weight                            12g
+Current Consumption               68mA
 ================================  ============================================================
 
 
