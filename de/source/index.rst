@@ -138,8 +138,8 @@ Für einen einfachen Einstieg bieten wir Kits in verschiedenen Themenbereichen a
    Kits/WeatherStation/WeatherStation
    Kits/HardwareHacking/HardwareHacking
    Kits/ServerRoomMonitoring/ServerRoomMonitoring
-   Kits/Blinkenlights/Blinkenlights                                             
-
+   Kits/Blinkenlights/Blinkenlights
+   Kits/InternetOfThings/InternetOfThings
 
 
 .. _index_embedded_boards:
@@ -181,4 +181,3 @@ Ein :ref:`Wireshark Dissector <wireshark_dissector>` für TFP
    Low_Level_Protocols/TCPIP
    Low_Level_Protocols/Modbus
    Low_Level_Protocols/Wireshark_Dissector
-

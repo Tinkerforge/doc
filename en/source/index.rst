@@ -138,6 +138,7 @@ with Tinkerforge:
    Kits/HardwareHacking/HardwareHacking
    Kits/ServerRoomMonitoring/ServerRoomMonitoring
    Kits/Blinkenlights/Blinkenlights
+   Kits/InternetOfThings/InternetOfThings
 
 
 .. _index_embedded_boards:
