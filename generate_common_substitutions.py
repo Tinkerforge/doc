@@ -11,6 +11,7 @@ bricks = [('DC',      'dc'),
           ('Debug',   'debug'),
           ('IMU',     'imu'),
           ('Master',  'master'),
+          ('RED',     'red'),
           ('Servo',   'servo'),
           ('Stepper', 'stepper')]
 

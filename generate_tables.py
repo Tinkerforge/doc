@@ -155,6 +155,10 @@ brick_descriptions = {
     'en': 'Is the basis to build stacks and has 4 Bricklet Ports',
     'de': 'Ist Grundlage um Stapel zu bauen und bietet 4 Bricklet Anschlüsse'
     },
+'red': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'servo': {
     'en': 'Drives up to 7 RC Servos with max. 3A',
     'de': 'Steuert bis zu 7 RC Servos mit max. 3A'
@@ -177,6 +181,7 @@ bricks = [Brick('DC',      'dc',      bindings, True),
           Brick('Debug',   'debug',   [],       True),
           Brick('IMU',     'imu',     bindings, True),
           Brick('Master',  'master',  bindings, True),
+          Brick('RED',     'red',     bindings, False),
           Brick('Servo',   'servo',   bindings, True),
           Brick('Stepper', 'stepper', bindings, True)]
 
