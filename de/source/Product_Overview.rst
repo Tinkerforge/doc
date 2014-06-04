@@ -1,34 +1,42 @@
 
-:breadcrumbs: <a href="index.html">Startseite</a> / Produktübersicht
+:breadcrumbs: <a href="index.html">Startseite</a> / Einführung
+
+Einführung
+==========
+
+Die nachfolgende Beschreibung gibt einen Überblick über die verschiedenen
+Produkte und Konzepte des Tinkerforge Baukastensystems. Detailierte 
+Beschreibungen über die Funktion und die zur Verfügung stehende API befindet 
+sich in der Dokumentation des jeweiligen Produktes.
 
 .. _product_overview:
 
-Produktübersicht
-================
+Produkte
+--------
 
 Unsere Produkte gliedern sich in fünf verschiedene Kategorien:
 
 * :ref:`Bricks <product_overview_bricks>`:
-  Stapelbare Mikrocontrollerplatinen zum Messen und Steuern.
+  Stapelbare Module zum Messen und Steuern über USB.
 * :ref:`Bricklets <product_overview_bricklets>`:
-  Nicht stapelbare Sensor-/Aktorplatinen um die Fähigkeiten eines Bricks zu
+  Nicht stapelbare Sensor-/Aktormodule, die die Fähigkeiten von Bricks
   erweitern.
 * :ref:`Master Extensions <product_overview_master_extensions>`:
-  Platinen um die Kommunikationsmöglichkeiten des
-  :ref:`Master Bricks <master_brick>` zu erweitern.
+  Module um Alternativen zur USB Schnittstelle des
+  :ref:`Master Bricks <master_brick>` zu bieten (WIFI, Ethernet, RS485).
 * :ref:`Stromversorgungen <product_overview_power_supplies>`:
-  Platinen die einen Stapel von Bricks mit Strom versorgen; werden unter einen
-  Stapel gesteckt.
+  Module die einen Stapel von Bricks mit Strom versorgen.
 * :ref:`Zubehör <product_overview_accessories>`
 
-Diese :ref:`Tutorial <tutorial_first_steps>` erklärt wie alles zusammen
+Dieses :ref:`Tutorial <tutorial_first_steps>` erklärt wie alles zusammen
 funktioniert.
 
 
 .. _product_overview_bricks:
+.. _introduction_bricks:
 
 Bricks
-------
+^^^^^^
 
 .. container:: tfdocimages
 
@@ -65,29 +73,33 @@ Bricks
        :target: _images/Bricks/brick_imu_tilted_front_800.jpg
 
 
-Bricks sind 4 x 4cm (1,57 x 1,57") große Platinen die mit einem
-vorprogrammierten 32-Bit ARM
-Mikrocontroller, einem Mini-USB Abschluss, zwei Status LEDs, vier Steckern zur
-Stapelbildung und bis zu vier Anschlüssen für :ref:`Bricklets
-<product_overview_bricklets>` ausgestattet sind. Es gibt Bricks für Messaufgaben
-(z.B. :ref:`IMU Brick <imu_brick>`), für Kommunikation (z.B. :ref:`Master Brick
-<master_brick>`) und um Motoren zu steuern (z.B. :ref:`DC Brick <dc_brick>`).
+Bricks sind 4 x 4cm (1,57 x 1,57") große Module, die über einen Mini-USB 
+Anschluss verfügen und über diesen von Geräten, wie zum Beispiel einem 
+(Embedded-) PC, gesteuert werden können. Jedes Brick besitzt eine Aufgabe: Es 
+gibt Bricks für Messaufgaben (z.B. :ref:`IMU Brick <imu_brick>`), zur 
+Kommunikation (z.B. :ref:`Master Brick <master_brick>`) und um Motore zu 
+steuern (z.B. :ref:`DC Brick <dc_brick>`).
 
-Bricks können zu Stapeln zusammengesteckt werden. Ein Master kümmert sich um die
-Kommunikation aller anderen Teilnehmer im Stapel. Er routet Nachrichten zwischen
-den Teilnehmern und dem PC (:ref:`Programmierschnittstelle <programming_interface>`).
-Aus Benutzersicht verhält sich solch ein Stapel so als wären alle Bricks einzeln
-per USB am PC angeschlossen. Das :ref:`Stapel Tutorial
-<tutorial_first_steps_build_stacks>` beinhaltet weitere Informationen über
-Stapel.
+Über :ref:`Bricklets <product_overview_bricklets>` können die Fähigkeiten von
+Bricks erweitert werden. Abhängig vom Modell verfügt jeder Brick über zwei oder
+vier Anschlüsse für Bricklets.
+
+Bricks können gestapelt werden, siehe die 
+:ref:`Beschreibung zum Stapelkonzept <introduction_stack>`. Die USB 
+Schnittstelle eines Master Bricks kann mit 
+:ref:`Master Extensions <introduction_master_extensions>` durch
+WLAN, Ethernet oder RS485 ersetzt werden. Zusammen mit dem Stapelkonzept können 
+somit auch andere Bricks per WLAN oder Ethernet gesteuert werden.
+	
 
 .. include:: Product_Overview_bricks.table
 
 
 .. _product_overview_bricklets:
+.. _introduction_bricklets:
 
 Bricklets
----------
+^^^^^^^^^
 
 .. container:: tfdocimages
 
@@ -143,24 +155,25 @@ Ausgänge sowie alphanumerische Ausgaben auf LCDs.
 
 Im Gegensatz zu Bricks haben Bricklets keine feste Größe. Jedes Bricklet hat
 die kleinste mögliche Größe. Jeder Brick hat bis zu vier Anschlüsse für
-Bricklets.
+Bricklets. Über seine USB Verbindung können diese gesteuert werden.
 
-Beim Start erkennt ein Brick die angeschlossenen Bricklets. Die Bricklet Plugins
-sind auf einem `EEPROM <http://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
+Jedes Bricklet besitzt seine eigene API und wird programmtechnisch wie ein 
+eigenständiges Modul behandelt. Beim Start erkennt ein Brick die angeschlossenen 
+Bricklets. Die Bricklet Plugins sind auf einem 
+`EEPROM <http://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
 auf dem Bricklet gespeichert und werden zur Ausführung in den Flash des Bricks
-geladen. Dies fügt dem Brick neue Funktionen hinzu die vom PC aus genutzt
-werden können.
+geladen. Nach diesem Vorgang verarbeitet das Brick die API Aufrufe seiner 
+angeschlossenen Bricklets und steuert die Bricklets.
 
-Siehe :ref:`Programmierschnittstelle <programming_interface>` für weitere
-Information.
 
 .. include:: Product_Overview_bricklets.table
 
 
 .. _product_overview_master_extensions:
+.. _introduction_master_extensions:
 
 Master Extensions
------------------
+^^^^^^^^^^^^^^^^^
 
 .. container:: tfdocimages
 
@@ -190,15 +203,19 @@ Master Extensions
        :align: center
        :target: _images/Extensions/extension_wifi_tilted_800.jpg
 
-Für die :ref:`Programmierschnittstelle <programming_interface>`
-routet der :ref:`Master Brick <master_brick>` Nachrichten zwischen den anderen
-:ref:`Bricks <product_overview_bricks>` im Stapel und dem PC. Typischerweise
-wird die Verbindung zwischen Master Brick und PC über den USB Anschluss des
-Master Bricks hergestellt. Master Extensions erweitern die
-Kommunikationsmöglichkeiten eines Master Bricks. Es gibt kabelgebundene und
-drahtlose Master Extensions. Aus Programmierersicht sind die verschiedenen
-Kommunikationsmöglichkeiten transparent. Ein Stapel mit Master Extension
-verhält sich so als wären alle Bricks einzeln per USB am PC angeschlossen.
+Wird ein :ref:`Master Brick <master_brick>` alleine oder im 
+:ref:`Stapel <introduction_stack>` eingesetzt, läuft die Kommunikation über
+seine USB Schnittstelle. Master Extensions erweitern die 
+Kommunikationsmöglichkeiten von Master Bricks. Es gibt kabelgebundene 
+(:ref:`RS485 <rs485_extension>`,  :ref:`Ethernet <ethernet_extension>`) und 
+drahtlose Master Extensions (:ref:`WIFI <wifi_extension>`). Anstatt über USB 
+können Bricks und Bricklets somit über WLAN (WIFI) oder Ethernet gesteuert 
+werden. Über RS485 ist eine Vernetzung untereinander auch über größere Strecken 
+möglich.
+
+Aus Programmierersicht sind die verschiedenen Kommunikationsmöglichkeiten 
+transparent. Ein Stapel mit Master Extension verhält sich so als wären alle 
+Bricks einzeln per USB am PC angeschlossen.
 
 Dies bedeutet: Programme können mit allen Bricks einzeln per USB am PC
 angeschlossen entwickelt werden. Wenn später die Bricks gestapelt und über
@@ -209,9 +226,10 @@ Programm ohne Änderungen weiter.
 
 
 .. _product_overview_power_supplies:
+.. _introduction_power_supplies:
 
 Stromversorgungen
------------------
+^^^^^^^^^^^^^^^^^
 
 .. container:: tfdocimages
 
@@ -223,22 +241,27 @@ Stromversorgungen
        :align: center
        :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
 
-Ein Stapel kann über den USB Anschluss des Masters mit Strom versorgt werden.
+:ref:`Bricks <introduction_bricks>` und 
+:ref:`Bricklets <introduction_bricklets>` können über die USB Schnittstelle
+des Bricks mit Strom versorgt werden. :ref:`Stapel <introduction_stack>` können
+ebenfalls über die USB Verbindung des Masters mit Strom versorgt werden.
 Diese Möglichkeit ist durch die USB Spezifikation auf 500mA beschränkt. Ein
-großer Stapel kann mehr als 500mA Stromverbrauch aufweisen.
+großer Stapel kann einen höheren Stromverbrauch als 500mA aufweisen.
 
-Eine Stromversorgung kann einen Stapel mit mehr als 500mA versorgen. Sie kann
-auch an Bricks angeschlossen Motoren versorgen (z.B. :ref:`DC Brick <dc_brick>`).
-Stromversorgungen haben die Größe von :ref:`Bricks <product_overview_bricks>`
-und werden unter einen Stapel gesteckt.
+Die Stromversorgungsmodule können einen Stapel mit mehr als 500mA versorgen. 
+Zusätzlich wird über den Stapel auch die Versorgungsspannung geleitet, so dass
+Bricks im Stapel ihre angeschlossenen Motoren darüber direkt versorgen können
+(z.B. :ref:`DC Brick <dc_brick>`). Stromversorgungsmodule haben die Größe von 
+:ref:`Bricks <product_overview_bricks>` und werden unter einen Stapel gesteckt.
 
 .. include:: Product_Overview_power_supplies.table
 
 
 .. _product_overview_accessories:
+.. _introduction_accessories:
 
 Zubehör
--------
+^^^^^^^
 
 .. container:: tfdocimages
 
@@ -251,3 +274,52 @@ Zubehör
        :target: _images/Accessories/dc_jack_adapter_tilted_800.jpg
 
 .. include:: Product_Overview_accessories.table
+
+
+Konzepte
+--------
+
+.. _introduction_stack:
+
+Stapel aus Bricks
+^^^^^^^^^^^^^^^^^
+
+.. image:: /Images/Bricks/brick_master_stack_front_big_350.jpg
+	:scale: 100 %
+	:alt: Bild eines Stacks von Bricks
+	:align: center
+	:target: _images/Bricks/brick_master_stack_front_big_800.jpg
+
+Bricks können zu einem Stapel zusammengesteckt werden. Ein Master kümmert sich 
+um die Kommunikation aller anderen Teilnehmer im Stapel. Er routet Nachrichten 
+zwischen den Teilnehmern und dem steuernden Gerät. Es ist also nur eine USB
+Verbindung notwendig um die Bricks und Bricklets eines Stapels zu steuern.
+Aus Benutzersicht verhält sich ein Stapel so, als wären alle Bricks einzeln
+per USB am Gerät angeschlossen. Das :ref:`Stapel Tutorial
+<tutorial_first_steps_build_stacks>` beinhaltet weitere Informationen über
+Stapel.
+
+Über :ref:`Master Extensions <introduction_master_extensions>` kann die USB 
+Verbindung eines Stapels durch Ethernet, WLAN (WIFI) oder RS485 ersetzt werden.
+Reicht die USB Stromversorgung nicht aus, kann ein Stapel auch mit einer 
+:ref:`Stromversorgung <introduction_power_supplies>` versorgt werden.
+
+
+.. _introduction_programming:
+
+Programmierung/API
+^^^^^^^^^^^^^^^^^^
+
+Eine generelle Beschreibung der Programmierschnittstelle kann 
+:ref:`hier <programming_interface>` gefunden werden. Eine Übersicht der API 
+Bindings für die jeweilige Programmiersprache befindet sich 
+:ref:`hier <api_bindings>`. Die API eines Produkts ist auf der jeweiligen 
+Produktseite dokumentiert. Hier lassen sich auch spezifische Beispiele für jede
+Programmiersprache finden.
+
+Die folgenden Tutorials bilden einen Einstieg in die Verwendung von Bricks und 
+Bricklets:
+
+* :ref:`Erste Schritte <tutorial_first_steps>`
+* :ref:`Robuster Ansatz <tutorial_rugged_approach>`
+* :ref:`Authentifizierung <tutorial_authentication>`
