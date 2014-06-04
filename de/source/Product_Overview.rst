@@ -1,6 +1,8 @@
 
 :breadcrumbs: <a href="index.html">Startseite</a> / Einführung
 
+.. _primer:
+
 Einführung
 ==========
 
@@ -10,6 +12,7 @@ Beschreibungen über die Funktion und die zur Verfügung stehende API befindet
 sich in der Dokumentation des jeweiligen Produktes.
 
 .. _product_overview:
+.. _primer_products:
 
 Produkte
 --------
@@ -33,7 +36,7 @@ funktioniert.
 
 
 .. _product_overview_bricks:
-.. _introduction_bricks:
+.. _primer_bricks:
 
 Bricks
 ^^^^^^
@@ -85,18 +88,18 @@ Bricks erweitert werden. Abhängig vom Modell verfügt jeder Brick über zwei od
 vier Anschlüsse für Bricklets.
 
 Bricks können gestapelt werden, siehe die 
-:ref:`Beschreibung zum Stapelkonzept <introduction_stack>`. Die USB 
+:ref:`Beschreibung zum Stapelkonzept <primer_stack>`. Die USB
 Schnittstelle eines Master Bricks kann mit 
-:ref:`Master Extensions <introduction_master_extensions>` durch
+:ref:`Master Extensions <primer_master_extensions>` durch
 WLAN, Ethernet oder RS485 ersetzt werden. Zusammen mit dem Stapelkonzept können 
 somit auch andere Bricks per WLAN oder Ethernet gesteuert werden.
-	
+
 
 .. include:: Product_Overview_bricks.table
 
 
 .. _product_overview_bricklets:
-.. _introduction_bricklets:
+.. _primer_bricklets:
 
 Bricklets
 ^^^^^^^^^
@@ -170,7 +173,7 @@ angeschlossenen Bricklets und steuert die Bricklets.
 
 
 .. _product_overview_master_extensions:
-.. _introduction_master_extensions:
+.. _primer_master_extensions:
 
 Master Extensions
 ^^^^^^^^^^^^^^^^^
@@ -204,7 +207,7 @@ Master Extensions
        :target: _images/Extensions/extension_wifi_tilted_800.jpg
 
 Wird ein :ref:`Master Brick <master_brick>` alleine oder im 
-:ref:`Stapel <introduction_stack>` eingesetzt, läuft die Kommunikation über
+:ref:`Stapel <primer_stack>` eingesetzt, läuft die Kommunikation über
 seine USB Schnittstelle. Master Extensions erweitern die 
 Kommunikationsmöglichkeiten von Master Bricks. Es gibt kabelgebundene 
 (:ref:`RS485 <rs485_extension>`,  :ref:`Ethernet <ethernet_extension>`) und 
@@ -226,7 +229,7 @@ Programm ohne Änderungen weiter.
 
 
 .. _product_overview_power_supplies:
-.. _introduction_power_supplies:
+.. _primer_power_supplies:
 
 Stromversorgungen
 ^^^^^^^^^^^^^^^^^
@@ -241,9 +244,9 @@ Stromversorgungen
        :align: center
        :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
 
-:ref:`Bricks <introduction_bricks>` und 
-:ref:`Bricklets <introduction_bricklets>` können über die USB Schnittstelle
-des Bricks mit Strom versorgt werden. :ref:`Stapel <introduction_stack>` können
+:ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` können über die USB Schnittstelle
+des Bricks mit Strom versorgt werden. :ref:`Stapel <primer_stack>` können
 ebenfalls über die USB Verbindung des Masters mit Strom versorgt werden.
 Diese Möglichkeit ist durch die USB Spezifikation auf 500mA beschränkt. Ein
 großer Stapel kann einen höheren Stromverbrauch als 500mA aufweisen.
@@ -258,7 +261,7 @@ Bricks im Stapel ihre angeschlossenen Motoren darüber direkt versorgen können
 
 
 .. _product_overview_accessories:
-.. _introduction_accessories:
+.. _primer_accessories:
 
 Zubehör
 ^^^^^^^
@@ -279,16 +282,16 @@ Zubehör
 Konzepte
 --------
 
-.. _introduction_stack:
+.. _primer_stack:
 
 Stapel aus Bricks
 ^^^^^^^^^^^^^^^^^
 
 .. image:: /Images/Bricks/brick_master_stack_front_big_350.jpg
-	:scale: 100 %
-	:alt: Bild eines Stacks von Bricks
-	:align: center
-	:target: _images/Bricks/brick_master_stack_front_big_800.jpg
+    :scale: 100 %
+    :alt: Bild eines Stacks von Bricks
+    :align: center
+    :target: _images/Bricks/brick_master_stack_front_big_800.jpg
 
 Bricks können zu einem Stapel zusammengesteckt werden. Ein Master kümmert sich 
 um die Kommunikation aller anderen Teilnehmer im Stapel. Er routet Nachrichten 
@@ -299,13 +302,13 @@ per USB am Gerät angeschlossen. Das :ref:`Stapel Tutorial
 <tutorial_first_steps_build_stacks>` beinhaltet weitere Informationen über
 Stapel.
 
-Über :ref:`Master Extensions <introduction_master_extensions>` kann die USB 
+Über :ref:`Master Extensions <primer_master_extensions>` kann die USB
 Verbindung eines Stapels durch Ethernet, WLAN (WIFI) oder RS485 ersetzt werden.
 Reicht die USB Stromversorgung nicht aus, kann ein Stapel auch mit einer 
-:ref:`Stromversorgung <introduction_power_supplies>` versorgt werden.
+:ref:`Stromversorgung <primer_power_supplies>` versorgt werden.
 
 
-.. _introduction_programming:
+.. _primer_programming:
 
 Programmierung/API
 ^^^^^^^^^^^^^^^^^^
