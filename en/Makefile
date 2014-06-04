@@ -77,7 +77,7 @@ html: generate
 
 	@echo copy to build/
 	mkdir -p build/
-	cp -r $(BUILDDIR)/* build/
+	rsync -arpc $(BUILDDIR)/* build/
 
 fasthtml:
 	mkdir -p $(FASTBUILDDIR)/html/_images/
