@@ -54,6 +54,7 @@ Features
 * Factory calibrated, easy to recalibrate
 * Calculates quaternions as well as roll, pitch and yaw
 * Directly readable by USB, extendable by two Bricklet ports
+* API for many programming languages available
 
 
 Description
@@ -82,8 +83,10 @@ attached to get position information. The IMU Brick is compatible to other
 :ref:`Bricks <product_overview_bricks>` and can be used within a stack.
 For example an additional :ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <product_overview_master_extensions>` can be used 
-to control the Brick instead over **USB** by other cable based (**RS485**, 
-**Ethernet**) or wireless (**WIFI**) connections.
+to control the Brick instead over **USB** by other cable based 
+(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
+or wireless (:ref:`**WIFI** <wifi_extension>`) connections.
+
 
 Technical Specifications
 ------------------------

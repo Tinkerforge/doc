@@ -75,8 +75,9 @@ features of this Brick. It is compatible to other
 :ref:`Bricks <product_overview_bricks>` and can be used within a stack.
 For example an additional :ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <product_overview_master_extensions>` can be used 
-to control the Brick instead over **USB** by other cable based (**RS485**, 
-**Ethernet**) or wireless (**WIFI**) connections.
+to control the Brick instead over **USB** by other cable based 
+(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
+or wireless (:ref:`**WIFI** <wifi_extension>`) connections.
 
 Besides methods to control the connected motor the API provide the possibility
 to measure current consumption or the voltage of the power supply. 

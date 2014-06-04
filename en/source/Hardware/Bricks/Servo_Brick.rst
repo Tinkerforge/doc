@@ -59,45 +59,45 @@ Servo Brick
 Features
 --------
 
-* Drives up to **7** RC Servos with max. **3A**
-* Drives brushless motors (requires external ESC)
+* Controls up to **7** RC Servos with max. **3A** over USB
+* Brushless motors with external ESC also controllable
+* API for many programming languages available
 * Supports `TurboPWM <http://wiki.openpilot.org/display/Doc/TurboPWM+ESC's>`__
-* Software adjustable servo voltage, period and pulse width
+* With API adjustable servo voltage, period and pulse width
 * Position, velocity and acceleration controllable
-* One USB port and two Bricklet ports
+* Extendable by two connectable Bricklets
 
 
 Description
 -----------
 
-The Servo :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit
-ARM microcontroller and is able to control up to **7**
+The Servo :ref:`Brick <product_overview_bricks>` is able to control up to **7**
 `RC servos <http://en.wikipedia.org/wiki/Servo_Motor#RC_servos>`__
-with a maximum current of **3A**.
-The output voltage is adjustable up to **9V**, the drawn current of each
-servo can be measured independently.
-Additionally output PWM is configurable for each servo independently.
+with a maximum current of **3A** over **USB**. With the provided API for many 
+:ref:`programming languages <servo_brick_programming_interface>` you can control 
+the position, velocity and acceleration of the connected servos. The output 
+voltage is adjustable with API (up to **9V**), the drawn current of each
+servo can be measured independently. Additionally output PWM is configurable 
+for each servo.
 
-Brushless motors can be driven by usage of external Electronic Speed
-Controllers (ESC). The maximum motor current depends only on the ESC such
-that motors with 150A and more are possible to control.
+Instead of RC servos Electronic Speed Controllers (ESC) can be connected.
+With these, motors e.g Brushless motors, can be controlled. The maximum motor
+current depends only on the ESC such that motors with 150A and more are 
+possible to control.
 
-It is compatible to other Tinkerforge
-:ref:`Bricks <product_overview_bricks>`
-and can be used within a stack.
-Two :ref:`Bricklet <product_overview_bricklets>` ports
-can be used to extend the features of this device.
+Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
+features of this Brick. It is compatible to other 
+:ref:`Bricks <product_overview_bricks>` and can be used within a stack.
+For example an additional :ref:`Master Brick <master_brick>` with
+:ref:`Master Extension <product_overview_master_extensions>` can be used 
+to control the Brick instead over **USB** by other cable based 
+(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
+or wireless (:ref:`**WIFI** <wifi_extension>`) connections.
 
-The servos can be powered by an external power supply connected
-directly to the Brick or by the stack internal power supply.
+The servos can be powered by an external power supply (black connector) 
+connected directly to the Brick or by the stack internal power supply.
 If an external power supply is connected the Brick switches
 automatically to this power supply.
-
-Controlling the device is possible in several ways. You can control it via
-a PC connection. This connection can be established directly with a **USB**
-cable or by other cable based (**RS485**, **Ethernet**) or wireless
-(**WIFI**) connections via an additional Master Brick with corresponding
-Master Extension (:ref:`Programming Interface <programming_interface>`).
 
 
 Technical Specifications
@@ -106,10 +106,6 @@ Technical Specifications
 ===================================== ============================================================
 Property                              Value
 ===================================== ============================================================
-Microcontroller                       ATSAM3S2B (128kB Flash, 32kB RAM)
-Current Consumption                   60mA
-------------------------------------- ------------------------------------------------------------
-------------------------------------- ------------------------------------------------------------
 Maximum Motor Current (Sum)           3A
 Minimum/Maximum Input Voltage         5V/25V
 Output Voltage                        Software adjustable 2V - 9V
@@ -124,6 +120,7 @@ Acceleration*                         1 - 65535 °/100s²
 Bricklet Ports                        2
 Dimensions (W x D x H)                40 x 40 x 16mm (1.57 x 1.57 x 0.63")
 Weight                                18g
+Current Consumption                   60mA
 ===================================== ============================================================
 
 \* configurable per servo

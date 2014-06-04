@@ -54,41 +54,41 @@ Stepper Brick
 Features
 --------
 
-* Drives one bipolar stepper motor with max. **38V** and **2.5A** per phase
+* Drives one bipolar stepper motor over USB (max. **38V**, **2.5A** per phase)
+* API for many programming languages available
 * Position, velocity and acceleration controllable
 * Full, half, quarter and eighth step modes
 * Configurable decay mode
-* One USB port and two Bricklet ports
+* Extendable by two connectable Bricklets
 
 
 Description
 -----------
 
-The Stepper :ref:`Brick <product_overview_bricks>` is equipped with a 32-bit ARM
-microcontroller and is able to control one bipolar
-`stepper motor <http://en.wikipedia.org/wiki/Stepper_motor>`__
-with a maximum current of **2.5A** and a maximum voltage of **38V** per phase.
-The maximum driving current and the
-:ref:`decay mode <stepper_brick_decay_mode>` as well as
-steps, velocity and acceleration of the connected stepper motor can be
-controlled. The current consumption and power supply voltage can be measured.
+With the Stepper :ref:`Brick <product_overview_bricks>` one bipolar
+`stepper motor <http://en.wikipedia.org/wiki/Stepper_motor>`__ 
+with a maximum current of **2.5A** and a maximum voltage of **38V** per phase
+can be controlled over **USB**.  With the provided API for many 
+:ref:`programming languages<stepper_brick_programming_interface>` you can 
+control the direction, velocity and acceleration of the connected motor.
 
-It is compatible to other Tinkerforge
-:ref:`Bricks <product_overview_bricks>`
-and can be used within a stack.
-Two :ref:`Bricklet <product_overview_bricklets>` ports
-can be used to extend the features of this device.
+The maximum driving current and the 
+:ref:`decay mode <stepper_brick_decay_mode>` can be also be controlled,
+the current consumption and power supply voltage can be measured by the API.
+
+Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
+features of this Brick. It is compatible to other 
+:ref:`Bricks <product_overview_bricks>` and can be used within a stack.
+For example an additional :ref:`Master Brick <master_brick>` with
+:ref:`Master Extension <product_overview_master_extensions>` can be used 
+to control the Brick instead over **USB** by other cable based 
+(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
+or wireless (:ref:`**WIFI** <wifi_extension>`) connections.
 
 The stepper motor can be powered by an external power supply connected
-directly to the Brick or by the stack internal power supply.
-If an external power supply is connected the Brick switches
-automatically to this power supply.
-
-Controlling the device is possible in several ways. You can control it via
-a PC connection. This connection can be established directly with a **USB**
-cable or by other cable based (**RS485**, **Ethernet**) or wireless
-(**WIFI**) connections via an additional Master Brick with corresponding
-Master Extension (:ref:`Programming Interface <programming_interface>`).
+directly to the Brick (black connector) or by the stack internal power supply.
+If an external power supply is connected the Brick switches automatically to 
+this power supply.
 
 
 Technical Specifications
@@ -97,10 +97,6 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Microcontroller                   ATSAM3S2B (128kB Flash, 32kB RAM)
-Current Consumption               60mA
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
 Maximum Motor Current per Phase   2.5A
 Minimum/Maximum Input Voltage     8V/38V
 --------------------------------  ------------------------------------------------------------
@@ -114,6 +110,7 @@ Maximum Acceleration              0 to 65535, configurable as limit, in steps/sÂ
 Bricklet Ports                    2
 Dimensions (W x D x H)            40 x 40 x 17mm (1.57 x 1.57 x 0.67")
 Weight                            20g
+Current Consumption               60mA
 ================================  ============================================================
 
 

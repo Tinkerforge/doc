@@ -82,8 +82,11 @@ connection, the to the lowermost Master Brick, is necessary.
 
 The USB connection of the Master Brick can be changed with :ref:`Master 
 Extensions <product_overview_master_extensions>`. There are Master Extensions 
-for cable based interfaces (**RS485**, **Ethernet**) and wireless interfaces 
-(**WIFI**). This way Bricks and Bricklets can be directly controlled from 
+for cable based interfaces 
+(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
+or wireless interfaces (:ref:`**WIFI** <wifi_extension>`). Master Extensions 
+have to be plugged on top of a Master Brick and will be detected as new 
+interfaces. This way Bricks and Bricklets can be directly controlled from 
 devices inside a network (WIFI or Ethernet) or can be interconnected over
 large distances (RS485).
 

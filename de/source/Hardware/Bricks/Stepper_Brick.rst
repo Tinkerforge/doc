@@ -54,42 +54,42 @@ Stepper Brick
 Features
 --------
 
-* Steuert einen bipolaren Schrittmotor mit max. **38V** und **2,5A** pro Phase
+* Steuert einen bipolaren Schrittmotor über USB (max. **38V**, **2,5A** pro Phase)
+* API für viele Programmiersprachen verfügbar
 * Position, Geschwindigkeit und Beschleunigung sind steuerbar
 * Voll-, Halb-, Viertel- und Achtelschritt
 * Konfigurierbarer Decay Modus
-* Eine USB und zwei Bricklet Schnittstellen
+* Erweiterbar mit zwei anschließbaren Bricklets
 
 
 Beschreibung
 ------------
 
-Der Stepper :ref:`Brick <product_overview_bricks>` ist mit einem 32-Bit ARM
-Mikrocontroller ausgestattet und kann einen bipolaren `Schrittmotor
-<http://de.wikipedia.org/wiki/Schrittmotor>`__
+Mit dem Stepper :ref:`Brick <product_overview_bricks>` kann einen bipolaren
+`Schrittmotor <http://de.wikipedia.org/wiki/Schrittmotor>`__
 mit einem maximalen Strom von **2,5A** und einer maximalen Spannung von **38V**
-pro Phase steuern.
+pro Phase über **USB** gesteuert werden. Eine API für
+:ref:`viele Programmiersprachen <stepper_brick_programming_interface>` ermöglicht 
+das Steuern der Richtung, Geschwindigkeit und Beschleunigung des Motors.
+
 Der maximale Treiberstrom und der :ref:`Decay Modus <stepper_brick_decay_mode>`
-können per Software über die API eingestellt werden.
-Schritte, Geschwindigkeit und Beschleunigung des angeschlossenen Schrittmotors
-können gesteuert, der Stromverbrauch und die Versorgungsspannung gemessen werden.
+können ebenfalls per Software über die API eingestellt werden. Der Stromverbrauch 
+und die Versorgungsspannung können über diese auch gemessen werden.
 
-Der Brick ist kompatibel zu anderen Tinkerforge
-:ref:`Bricks <product_overview_bricks>`
-und kann in einem Stapel benutzt werden.
-Über zwei Anschlüsse können :ref:`Bricklet <product_overview_bricklets>`
-angeschlossen werden.
+Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
+angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Der Stepper 
+Brick kann mit anderen :ref:`Bricks <product_overview_bricks>` in einem Stapel 
+genutzt werden. Zum Beispiel kann ein zusätzlicher 
+:ref:`Master Brick <master_brick>` mit
+:ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
+um die USB Verbindung durch andere kabelgebundene Schnittstellen 
+(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
+oder drahtlose Schnittstellen (:ref:`**WLAN** <wifi_extension>`) zu ersetzen.
 
-Der Schrittmotor kann über eine externe Stromversorgung oder durch den
-Stapel versorgt werden.
-Der Brick schaltet automatisch auf eine externe Stromversorgung um,
-sobald eine angeschlossen wird.
-
-Über eine **USB** Verbindung kann der Brick von einem PC gesteuert werden.
-Über einen zusätzlichen Master Brick mit Master Extension ist es möglich diese
-USB Verbindung durch kabelgebundene Schnittstellen (**RS485**, **Ethernet**)
-oder drahtlose Schnittstellen (**WLAN**) zu ersetzen
-(:ref:`Programmierschnittstelle <programming_interface>`).
+Der Schrittmotor kann über eine externe Stromversorgung (schwarze 
+Stromversorgungsbuchse) oder durch den Stapel versorgt werden.
+Der Brick schaltet automatisch auf die externe Stromversorgung um,
+sobald diese angeschlossen wird.
 
 
 Technische Spezifikation
@@ -98,10 +98,6 @@ Technische Spezifikation
 ===================================  ============================================================
 Eigenschaft                          Wert
 ===================================  ============================================================
-Mikrocontroller                      ATSAM3S2B (128kB Flash, 32kB RAM)
-Stromverbrauch                       60mA
------------------------------------  ------------------------------------------------------------
------------------------------------  ------------------------------------------------------------
 Maximaler Motorstrom pro Phase       2,5A
 Minimale/Maximale Eingangsspannung   8V/38V
 -----------------------------------  ------------------------------------------------------------
@@ -115,6 +111,7 @@ Maximale Beschleunigung              0 bis 65535, konfigurierbar als Grenze, in 
 Bricklet Anschlüsse                  2
 Abmessungen (B x T x H)              40 x 40 x 17mm (1,57 x 1,57 x 0,67")
 Gewicht                              20g
+Stromverbrauch                       60mA
 ===================================  ============================================================
 
 

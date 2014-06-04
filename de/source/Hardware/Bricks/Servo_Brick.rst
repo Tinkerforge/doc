@@ -59,47 +59,47 @@ Servo Brick
 Features
 --------
 
-* Steuert bis zu **7** RC Servos mit max. **3A**
-* Steuert Brushless Motoren (benötigt externe ESC)
+* Steuert bis zu **7** RC Servos mit max. **3A** über USB
+* Brushless Motoren über externe ESCs ebenfalls steuerbar
+* API für viele Programmiersprachen verfügbar
 * Unterstützt `TurboPWM <http://wiki.openpilot.org/display/Doc/TurboPWM+ESC's>`__
-* Software einstellbare Servospannung, Periode und Pulsweite
+* Über API einstellbare Servospannung, Periode und Pulsweite
 * Position, Geschwindigkeit und Beschleunigung steuerbar
-* Eine USB und zwei Bricklet Schnittstellen
+* Erweiterbar über zwei anschließbare Bricklets
 
 
 Beschreibung
 ------------
 
-Der Servo :ref:`Brick <product_overview_bricks>` ist mit einem 32-Bit
-ARM Mikrocontroller ausgestattet und kann bis zu **7**
-`RC Servos <http://de.wikipedia.org/wiki/Servo>`__
-mit einem maximalen Strom bis zu **3A** steuern.
-Die Ausgangsspannung ist einstellbar bis zu **9V**, der Stromverbrauch jedes
-Servos kann einzeln gemessen werden.
-Zusätzlich kann die PWM jedes Servos einzeln konfiguriert werden.
+Der Servo :ref:`Brick <product_overview_bricks>` kann bis zu **7**
+`RC Servos <http://de.wikipedia.org/wiki/Servo>`__ mit einem maximalen Strom 
+von **3A** per **USB** steuern. Eine API für
+:ref:`viele Programmiersprachen <servo_brick_programming_interface>` ermöglichen 
+das Steuern der Position, Geschwindigkeit und Beschleunigung der angeschlossenen
+Servos. Die Ausgangsspannung ist ebenfalls per API einstellbar (max. **9V**), 
+der Stromverbrauch jedes Servos kann einzeln gemessen werden. Zusätzlich kann die 
+PWM jedes Servos einzeln konfiguriert werden.
 
-Über einen zusätzlichen Modellbau Fahrtenregler (Electronic Speed
-Controller - ESC) ist es möglich Brushless Motoren zu steuern.
-Es muss nur der richtige ESC abhängig vom Motor gewählt werden, so dass auch
-Motoren mit einem Stromverbrauch von 150A und mehr steuerbar sind.
+Modellbau Fahrtenregler (Electronic Speed Controller - ESC) können anstatt der
+Servos angeschlossen werden und ermöglichen es andere Motoren, wie z.B. 
+Brushless Motoren, zu steuern. Es muss nur der richtige ESC abhängig vom Motor
+gewählt werden, so dass auch Motoren mit einem Stromverbrauch von 150A und 
+mehr steuerbar sind.
 
-Der Brick ist kompatibel zu anderen Tinkerforge
-:ref:`Bricks <product_overview_bricks>`
-und kann in einem Stapel benutzt werden.
-Über zwei Anschlüsse können :ref:`Bricklet <product_overview_bricklets>`
-angeschlossen werden.
+Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
+angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Der Servo 
+Brick kann mit anderen :ref:`Bricks <product_overview_bricks>` in einem Stapel 
+genutzt werden. Zum Beispiel kann ein zusätzlicher 
+:ref:`Master Brick <master_brick>` mit
+:ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
+um die USB Verbindung durch andere kabelgebundene Schnittstellen 
+(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
+oder drahtlose Schnittstellen (:ref:`**WLAN** <wifi_extension>`) zu ersetzen.
 
 Die Versorgung der Servos erfolgt entweder über eine externe Stromversorgung
-die direkt an den Brick angeschlossen wird oder über die interne
-Stromversorgung des Stapels.
-Der Brick schaltet automatisch auf externe Stromversorgung um, sobald eine
-angeschlossen wird.
-
-Über eine **USB** Verbindung kann der Brick von einem PC gesteuert werden.
-Über einen zusätzlichen Master Brick mit Master Extension ist es möglich diese
-USB Verbindung durch kabelgebundene Schnittstellen (**RS485**, **Ethernet**)
-oder drahtlose Schnittstellen (**WLAN**) zu ersetzen
-(:ref:`Programmierschnittstelle <programming_interface>`).
+(schwarze Stromversorgungsbuchse), die direkt an den Brick angeschlossen wird, 
+oder über die interne Stromversorgung des Stapels. Der Brick schaltet 
+automatisch auf externe Stromversorgung um, sobald eine angeschlossen wird.
 
 
 Technische Spezifikation
@@ -108,10 +108,6 @@ Technische Spezifikation
 ===================================== ============================================================
 Eigenschaft                           Wert
 ===================================== ============================================================
-Mikrocontroller                       ATSAM3S2B (128kB Flash, 32kB RAM)
-Stromverbrauch                        60mA
-------------------------------------- ------------------------------------------------------------
-------------------------------------- ------------------------------------------------------------
 Maximaler Motorstrom (Summe)          3A
 Minimale/Maximale Eingangsspannung    5V/25V
 Ausgangsspannung                      Über Software einstellbar 2V - 9V
@@ -126,6 +122,7 @@ Beschleunigung*                       1 - 65535 °/100s²
 Bricklet Anschlüsse                   2
 Abmessungen (B x T x H)               40 x 40 x 16mm (1,57 x 1,57 x 0,63")
 Gewicht                               18g
+Stromverbrauch                        60mA
 ===================================== ============================================================
 
 \* einstellbar pro Servo

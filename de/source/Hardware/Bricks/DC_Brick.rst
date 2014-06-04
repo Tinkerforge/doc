@@ -66,7 +66,7 @@ Beschreibung
 Mit dem DC :ref:`Brick <product_overview_bricks>` kann ein
 `Gleichstrommotor <http://de.wikipedia.org/wiki/Gleichstrommaschine>`__
 (max. **28V** und **5A**) über **USB** gesteuert werden. Eine API für
-:ref:`viele Programmiersprachen <dc_brick_programming_interface>` ermöglichen 
+:ref:`viele Programmiersprachen <dc_brick_programming_interface>` ermöglicht 
 das Steuern der Richtung, Geschwindigkeit und Beschleunigung des Motors.
 
 Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
@@ -76,7 +76,8 @@ werden. Zum Beispiel kann ein zusätzlicher
 :ref:`Master Brick <master_brick>` mit
 :ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
-(**RS485**, **Ethernet**) oder drahtlose Schnittstellen (**WLAN**) zu ersetzen.
+(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
+oder drahtlose Schnittstellen (:ref:`**WLAN** <wifi_extension>`) zu ersetzen.
 
 Neben Methoden zum Steuern des angeschlossenen Motors bietet die API 
 Möglichkeiten zur Messung des Stromverbrauchs und der Versorgungsspannung. Im 
