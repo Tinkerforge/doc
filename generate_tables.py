@@ -342,7 +342,6 @@ bricklet_descriptions = {
     'en': 'Controls AC and DC Solid State Relays',
     'de': 'Schaltet AC und DC Halbleiterrelais (Solid State Relais)'
     },
-
 'sound_intensity': {
     'en': 'Measures sound intensity',
     'de': 'Misst Schallintensität'
