@@ -72,7 +72,7 @@ It is a complete `attitude and heading reference system
 
 The API, provided for many :ref:`programming languages <imu_brick_programming_interface>`,
 allows access to the calculated data and also the acceleration, magnetic field 
-and angular velocity for the three axes. If the quaternion representation is 
+and angular velocity of the three axes. If the quaternion representation is 
 used, the IMU Brick does not have a 
 `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__,
 as known from Euler angles.
@@ -87,8 +87,8 @@ to gain altitude information.
 
 The IMU Brick can be use together with other Bricks in a stack.
 For example an additional :ref:`Master Brick <master_brick>` with
-:ref:`Master Extension <product_overview_master_extensions>` can be used 
-to control the Brick instead over USB by other cable based 
+:ref:`Master Extension <product_overview_master_extensions>` allows 
+to replace the USB connection by other cable based 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 or wireless (:ref:`WIFI <wifi_extension>`) connections.
 

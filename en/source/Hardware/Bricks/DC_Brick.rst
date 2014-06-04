@@ -73,8 +73,8 @@ direction, velocity and acceleration of the connected motor.
 Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
 features of this Brick. It can also be used together with other Bricks in a
 stack. For example an additional :ref:`Master Brick <master_brick>` with
-:ref:`Master Extension <product_overview_master_extensions>` can be used 
-to control the Brick instead over USB by other cable based
+:ref:`Master Extension <product_overview_master_extensions>` allows 
+to replace the USB connection by other cable based
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 or wireless (:ref:`WIFI <wifi_extension>`) connections.
 
@@ -83,13 +83,13 @@ to measure current consumption or the voltage of the power supply.
 In case of overtemperature and overcurrent callbacks can be triggered. 
 These can be used to react properly in your own program to these events.
 For battery driven applications an undervoltage callback is user configurable to 
-prevent damaged batteries caused by depth discharge. Additionally, the drive 
+prevent damaging batteries caused by depth discharge. Additionally, the drive 
 mode can be switched between Drive/Brake and Drive/Coast 
 (see :ref:`Drive Modes <dc_brick_drive_mode>`).
 
-By the power supply connector jack (black) motors can be powered directly. In 
-stack usage connected motors can be also powered by the stack. The Brick 
-switches automatically to the external power supply if connected.
+With the power supply connector jack (black) motors can be powered directly. If 
+a stack is used, the connected motors can also be powered through the stack. 
+The Brick switches automatically to the external power supply if connected.
 
 
 

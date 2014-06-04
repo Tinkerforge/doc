@@ -229,7 +229,7 @@ unterstützt.
 Wir haben ein Beispielprogramm implementiert welches *Text*, *URI* und
 *Mime Media Type* Records auf NFC Forum Type 1 und 2 Tags schreiben kann.
 
-Das Beispiel ist in Python implementiert, kann aber einfach als
+Das Beispiel ist in Python implementiert, kann aber einfach als 
 Startpunkt für eine implementierung in einer anderen Programmiersprache
 verwendet werden.
 

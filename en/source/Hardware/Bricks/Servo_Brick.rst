@@ -82,21 +82,21 @@ for each servo.
 
 Electronic Speed Controllers (ESC) can be connected instead of RC servos.
 With these, motors e.g Brushless motors, can be controlled. The maximum motor
-current depends only on the ESC such that motors with 150A and more are 
-possible to control.
+current depends only on the ESC such that it is possible to control motors with 
+150A or more are.
 
 Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
 features of this Brick. It can also be used together with other Bricks in a
 stack. For example an additional :ref:`Master Brick <master_brick>` with
-:ref:`Master Extension <product_overview_master_extensions>` can be used 
-to control the Brick instead over USB by other cable based 
+:ref:`Master Extension <product_overview_master_extensions>` allows 
+to replace the USB connection by other cable based 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 or wireless (:ref:`WIFI <wifi_extension>`) connections.
 
 The servos can be powered by an external power supply (black connector) 
 connected directly to the Brick or by the stack internal power supply.
-If an external power supply is connected the Brick switches
-automatically to this power supply.
+If an external power supply is connected the Brick automatically switches
+to this power supply.
 
 
 Technical Specifications

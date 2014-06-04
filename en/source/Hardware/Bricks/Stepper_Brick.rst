@@ -69,24 +69,24 @@ With the Stepper :ref:`Brick <product_overview_bricks>` one bipolar
 `stepper motor <http://en.wikipedia.org/wiki/Stepper_motor>`__ 
 with a maximum current of **2.5A** and a maximum voltage of **38V** per phase
 can be controlled over **USB**.  With the provided API for many 
-:ref:`programming languages<stepper_brick_programming_interface>` you can 
+:ref:`programming languages <stepper_brick_programming_interface>` you can 
 control the direction, velocity and acceleration of the connected motor.
 
 The maximum driving current and the 
-:ref:`decay mode <stepper_brick_decay_mode>` can be also be controlled,
-the current consumption and power supply voltage can be measured by the API.
+:ref:`decay mode <stepper_brick_decay_mode>` can also be controlled.
+The current consumption and power supply voltage can be measured by the API.
 
 Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
 features of this Brick. It can also be used together with other Bricks in a
 stack. For example an additional :ref:`Master Brick <master_brick>` with
-:ref:`Master Extension <product_overview_master_extensions>` can be used 
-to control the Brick instead over USB by other cable based 
+:ref:`Master Extension <product_overview_master_extensions>` allows
+to replace the USB connection by other cable based 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 or wireless (:ref:`WIFI <wifi_extension>`) connections.
 
 The stepper motor can be powered by an external power supply connected
 directly to the Brick (black connector) or by the stack internal power supply.
-If an external power supply is connected the Brick switches automatically to 
+If an external power supply is connected the Brick automatically switches to 
 this power supply.
 
 

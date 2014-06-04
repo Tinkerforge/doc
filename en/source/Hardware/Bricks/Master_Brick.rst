@@ -58,7 +58,7 @@ Master Brick
 Features
 --------
 
-* Up to **four** Bricklets useable over USB
+* Up to **four** Bricklets usable over USB
 * Is the basis to build stacks
 * Usable with cable based and wireless Master Extensions
 
@@ -74,11 +74,11 @@ Brick. This way USB sensors, like temperature or humidity sensors, or USB
 actors, like relays, can be created according to your individual needs.
 
 Secondly, the Master Brick can be used for communication purposes. When 
-building a stack the lowermost Master Brick acts as the master of this stack 
+building a stack the lowermost Master Brick acts as the master of the stack 
 and routes all communication between the boards of the stack and the controlling
-device. Other Master Bricks in the stack detect that they do not act as a 
-master and will only provide their attached Bricklets. This way only one USB
-connection, the to the lowermost Master Brick, is necessary.
+device. Other Master Bricks in the stack detect that are not the lowermost Master
+and will only provide their attached Bricklets. This way only one USB
+connection, the one to the lowermost Master Brick, is necessary.
 
 The USB connection of the Master Brick can be changed with :ref:`Master 
 Extensions <product_overview_master_extensions>`. There are Master Extensions 
@@ -91,7 +91,7 @@ devices inside a network (WIFI or Ethernet) or can be interconnected over
 large distances (RS485).
 
 The maximum stack consists of (bottom to top): 1x Step-Down Power Supply,
-1x Master Brick, 8x arbitrarily Bricks, 2x Master Extensions. With all Bricks 
+1x Master Brick, 8x arbitrary Bricks, 2x Master Extensions. With all Bricks 
 being Master Bricks in a stack up to 9 Master Bricks x 4 Bricklets each = 36 
 Bricklets can be connected to a single stack.
 
