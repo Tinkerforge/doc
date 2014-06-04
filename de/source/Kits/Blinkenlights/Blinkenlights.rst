@@ -492,7 +492,7 @@ folgt gestartet werden:
 
 Zusätzlich wurde das Projekt in :ref:`Java <api_bindings_java>` implementiert
 und kann bei `GitHub
-<https://github.com/Tinkerforge/blinkenlights/tree/master/text/java>`__ 
+<https://github.com/Tinkerforge/blinkenlights/tree/master/images/java>`__
 heruntergeladen werden.
 
 
