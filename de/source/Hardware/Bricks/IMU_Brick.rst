@@ -86,8 +86,8 @@ Positionsdaten zu ermitteln. Der IMU Brick kann aber auch mit anderen
 Beispiel kann ein zusätzlicher :ref:`Master Brick <master_brick>` mit
 :ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
-(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
-oder drahtlose Schnittstellen (:ref:`**WLAN** <wifi_extension>`) zu ersetzen.
+(:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
+oder drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`) zu ersetzen.
 
 
 Technische Spezifikation

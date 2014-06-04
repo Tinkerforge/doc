@@ -90,9 +90,9 @@ features of this Brick. It is compatible to other
 :ref:`Bricks <product_overview_bricks>` and can be used within a stack.
 For example an additional :ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <product_overview_master_extensions>` can be used 
-to control the Brick instead over **USB** by other cable based 
-(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
-or wireless (:ref:`**WIFI** <wifi_extension>`) connections.
+to control the Brick instead over USB by other cable based 
+(:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
+or wireless (:ref:`WIFI <wifi_extension>`) connections.
 
 The servos can be powered by an external power supply (black connector) 
 connected directly to the Brick or by the stack internal power supply.

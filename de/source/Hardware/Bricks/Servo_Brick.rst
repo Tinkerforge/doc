@@ -93,8 +93,8 @@ genutzt werden. Zum Beispiel kann ein zusätzlicher
 :ref:`Master Brick <master_brick>` mit
 :ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
-(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
-oder drahtlose Schnittstellen (:ref:`**WLAN** <wifi_extension>`) zu ersetzen.
+(:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
+oder drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`) zu ersetzen.
 
 Die Versorgung der Servos erfolgt entweder über eine externe Stromversorgung
 (schwarze Stromversorgungsbuchse), die direkt an den Brick angeschlossen wird, 

@@ -86,8 +86,8 @@ Bricks, für einen ganzen Stapel von Bricks notwendig.
 
 Die USB Schnittstelle kann mit Master Extensions ersetzt werden. Es gibt 
 Master Extensions für kabelgebundene Schnittstellen
-(:ref:`**RS485** <rs485_extension>`, :ref:`**Ethernet** <ethernet_extension>`) 
-und drahtlose Schnittstellen (:ref:`**WLAN** <wifi_extension>`).
+(:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
+und drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`).
 Extensions können auf einen Master Brick gesteckt werden und werden von diesem
 als weitere Schnittstelle erkannt. Somit können Bricks und Bricklets zum 
 Beispiel direkt aus dem eigenen Netzwerk gesteuert werden (WLAN, Ethernet) oder
