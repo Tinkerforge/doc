@@ -63,9 +63,9 @@ Features
 Beschreibung
 ------------
 
-Das LCD 20x4 :ref:`Bricklet <product_overview_bricklets>` ist mit einem 20x4
+Das LCD 20x4 :ref:`Bricklet <primer_bricklets>` ist mit einem 20x4
 Zeichen Punktmatrix LCD Display, blauer Hintergrundbeleuchtung und vier Tastern
-ausgestattet. Über einen :ref:`Bricks <product_overview_bricks>` der mit diesem
+ausgestattet. Über einen :ref:`Bricks <primer_bricks>` der mit diesem
 Bricklet verbunden ist kann es gesteuert werden. Die API ermöglicht es Zeichen
 oder ganze Zeilen auf das LCD zu schreiben, den Status von jedem Taster
 abzufragen und die Hintergrundbeleuchtung zu schalten. Zusätzlich können Events

@@ -7,21 +7,21 @@ Programmierschnittstelle
 ========================
 
 Die Programmierschnittstelle verwendet vorprogrammierte Geräte
-(:ref:`Bricks <product_overview_bricks>` und 
-:ref:`Bricklets <product_overview_bricklets>`) die von einem (Embedded-) PC, 
+(:ref:`Bricks <primer_bricks>` und 
+:ref:`Bricklets <primer_bricklets>`) die von einem (Embedded-) PC, 
 Tablet oder Smartphone aus gesteuert werden können. Jedes Gerät
 hat seine eigene eindeutige Identifikationsnummer (UID).
 
 Der Benutzer ruft eine Funktion, implementiert in den
 :ref:`API Bindings <api_bindings>`, für ein Gerät das mit seiner UID 
 spezifiziert wird, auf. Diese Funktion erzeugt dann wiederum ein TCP/IP
-Datenpaket, welches dann zu dem :ref:`Brick <product_overview_bricks>` mit 
+Datenpaket, welches dann zu dem :ref:`Brick <primer_bricks>` mit 
 der entsprechenden UID geschickt wird.
 
 Ist das Brick per USB mit einem Computer verbunden, so muss noch ein 
 Programm :ref:`Brick Daemon <brickd>` genannt installiert werden. Es dient als
 Übersetzer zwischen TCP/IP und USB.
-Manche :ref:`Master Extensions <product_overview_master_extensions>` können 
+Manche :ref:`Master Extensions <primer_master_extensions>` können 
 genutzt werden um auf diesen Computer zu verzichten. Sie können direkt TCP/IP
 Pakete annehmen. Ein Beispiel hierfür ist die 
 :ref:`WIFI Extension <wifi_extension>`.
@@ -33,7 +33,7 @@ schickt diese in einem Datenpaket zurück. Der Funktionsaufruf des Benutzers
 blockiert bis die Antwort vom Brick eingetroffen ist und gibt dann die 
 gemessene Temperatur zurück.
 
-Falls eine :ref:`Bricklet <product_overview_bricklets>` Funktion aufgerufen
+Falls eine :ref:`Bricklet <primer_bricklets>` Funktion aufgerufen
 wird, wird das Datenpaket an den Brick geschickt an dem das Bricklet
 angeschlossen ist. Dieser Brick führt dann die entsprechende Funktion aus.
 

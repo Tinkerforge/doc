@@ -91,16 +91,18 @@ Features
 Description
 -----------
 
-The LED Strip :ref:`Bricklet <product_overview_bricklets>` can be used to
+The LED Strip :ref:`Bricklet <primer_bricklets>` can be used to
 control LED strips and LED pixels that are equipped with the WS2801 LED driver. 
-It is possible to independently control 320 RGB LEDs (960 individual LEDs).
+It is possible to independently control 320 RGB LEDs (960 individual LEDs) over
+the connected :ref:`Brick <primer_bricks>`.
 
 The API allows to change all LEDs at the same time with a fixed update rate
-of up to 100Hz.
+of up to 100Hz. A possible application can be found in the 
+:ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`: 
+`Video <http://www.youtube.com/watch?v=mmNRa-lLaXM>`__
 
 Brick Daemon 2.0.10 or newer is recommended for this Bricklet.
 
-TODO: Video
 
 Technical Specifications
 ------------------------

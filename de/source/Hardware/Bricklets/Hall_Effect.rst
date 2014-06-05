@@ -58,10 +58,10 @@ Features
 Beschreibung
 ------------
 
-Das Hall Effect :ref:`Bricklet <product_overview_bricklets>` kann die Präsenz
+Das Hall Effect :ref:`Bricklet <primer_bricklets>` kann die Präsenz
 eines Magnetfelds detektieren. Es zählt das Auftreten und Verschwinden eines
-Magnetfelds und kann dadurch genutzt werden, um z.B. die Geschwindigkeit eines
-Rades zu messen an dem ein Magnet befestigt ist.
+Magnetfelds und kann von :ref:`Bricks <primer_bricks>` genutzt werden, um z.B. 
+die Geschwindigkeit eines Rades zu messen an dem ein Magnet befestigt ist.
 
 Beispielanwendungen:
 

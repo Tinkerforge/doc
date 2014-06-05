@@ -58,7 +58,8 @@ Features
 Description
 -----------
 
-The Barometer Bricklet can be used to extend the features of Bricks by the
+The Barometer :ref:`Bricklet <primer_bricklets>` can be used to extend the 
+features of :ref:`Bricks <primer_bricks>` by the
 capability to measure air pressure in range of 10 to 1200mbar with a resolution
 of 0.012mbar. The measurement is temperature compensated internally.
 The Bricklet is equipped with a MS5611-01BA01 sensor which is designed to be

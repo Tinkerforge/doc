@@ -62,8 +62,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Humidity :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` die `relative Luftfeuchtigkeit
+Mit dem Humidity :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` die `relative Luftfeuchtigkeit
 <http://de.wikipedia.org/wiki/Relative_Luftfeuchtigkeit>`__ messen.
 Die gemessene Luftfeuchtigkeit kann in Prozent direkt ausgelesen werden.
 Mit konfigurierbaren Events ist es möglich auf veränderte Luftfeuchtigkeit zu

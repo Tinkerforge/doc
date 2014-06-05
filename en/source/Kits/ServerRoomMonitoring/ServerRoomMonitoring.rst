@@ -98,7 +98,7 @@ support, are included
 as well. The kits enclosure can be mounted directly in a 19" server rack
 and can be extended by more temperature probes, other modules (e.g. motion
 detector), in- or outputs (to switch computers on/off or to monitor doors) and 
-so on. With the Tinkerforge :ref:`building blocks<product_overview>` you can
+so on. With the Tinkerforge :ref:`building blocks<primer_products>` you can
 flexibly adapt it to your needs.
 
 One or more external controlling devices, such as (Embedded-) PCs, smart phones 
@@ -109,8 +109,8 @@ be supplied with PoE or USB.
 The soft- and hardware of the kit can be modified. The casing consists of
 tinker-friendly PMMA, you can drill new holes with 
 simple wood drill. Mounting holes for 
-different :ref:`Bricks <product_overview_bricks>` and 
-:ref:`Bricklets <product_overview_bricklets>` are provided, by default you can
+different :ref:`Bricks <primer_bricks>` and 
+:ref:`Bricklets <primer_bricklets>` are provided, by default you can
 mount:
 
 :ref:`Analog In Bricklet <analog_in_bricklet>`,

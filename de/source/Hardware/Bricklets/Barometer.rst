@@ -57,7 +57,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Barometer Bricklet können Bricks den Luftdruck im Bereich von 10 bis
+Mit dem Barometer :ref:`Bricklet <primer_bricklets>` können 
+:ref:`Bricks <primer_bricks>` den Luftdruck im Bereich von 10 bis
 1200mbar mit einer Auflösung von 0,012mbar messen. Die Messung ist intern
 temperaturkompensiert.
 Das Bricklet ist mit einem MS5611-01BA01 Sensor ausgestattet der auch als

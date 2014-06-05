@@ -58,7 +58,8 @@ Features
 Description
 -----------
 
-The Hall Effect :ref:`Bricklet <product_overview_bricklets>` can detect the
+The Hall Effect :ref:`Bricklet <primer_bricklets>` extends 
+:ref:`Bricks <primer_bricks>` and can detect the
 presence of magnetic fields. It counts the (dis-)appearances of magnetic fields
 and can for example be used to measure the speed of a wheel with attached magnet.
 

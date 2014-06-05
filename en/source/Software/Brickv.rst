@@ -7,8 +7,8 @@ Brick Viewer (brickv)
 =====================
 
 The Brick Viewer provides a graphical interface for
-testing :ref:`Bricks <product_overview_bricks>`
-and :ref:`Bricklets <product_overview_bricklets>`. Each device has its own
+testing :ref:`Bricks <primer_bricks>`
+and :ref:`Bricklets <primer_bricklets>`. Each device has its own
 view that shows the main features and allows to control them.
 
 Additionally brickv can be used to :ref:`calibrate <brickv_adc_calibration>`

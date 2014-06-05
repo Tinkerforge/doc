@@ -67,15 +67,15 @@ Features
 Beschreibung
 ------------
 
-Das Distance US :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+Das Distance US :ref:`Bricklet <primer_bricklets>` ist mit einem
 `Ultraschall-Entfernungsmesser
 <http://de.wikipedia.org/wiki/Entfernungsmessung#Laufzeitmessung>`__
-ausgestattet. Es kann Entfernungen zwischen 2cm und 400cm messen.
-Die gemessene Entfernung wird als einheitenloser Wert ausgegeben, nicht in mm.
-Dies liegt daran, dass das Verhältnis von gemessenem Entfernungswert zu
-wirklicher Entfernung vom exakten Wert der 5V Versorgungsspannung abhängt.
-Abweichungen in der Versorgungsspannung führen zu Abweichungen in den gemessenen
-Entfernungswerten.
+ausgestattet. :ref:`Bricks <primer_bricks>` können hiermit Entfernungen zwischen 
+2cm und 400cm messen. Die gemessene Entfernung wird als einheitenloser Wert 
+ausgegeben, nicht in mm. Dies liegt daran, dass das Verhältnis von gemessenem 
+Entfernungswert zu wirklicher Entfernung vom exakten Wert der 5V 
+Versorgungsspannung abhängt. Abweichungen in der Versorgungsspannung führen zu 
+Abweichungen in den gemessenen Entfernungswerten.
 Mit konfigurierbaren Events ist es möglich auf veränderte Distanzmessung
 zu reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 

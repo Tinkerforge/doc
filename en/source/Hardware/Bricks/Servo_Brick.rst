@@ -71,7 +71,7 @@ Features
 Description
 -----------
 
-The Servo :ref:`Brick <product_overview_bricks>` is able to control up to **7**
+The Servo :ref:`Brick <primer_bricks>` is able to control up to **7**
 `RC servos <http://en.wikipedia.org/wiki/Servo_Motor#RC_servos>`__
 with a maximum current of **3A** over **USB**. With the provided API for many 
 :ref:`programming languages <servo_brick_programming_interface>` you can control 
@@ -85,10 +85,11 @@ With these, motors e.g Brushless motors, can be controlled. The maximum motor
 current depends only on the ESC such that it is possible to control motors with 
 150A or more are.
 
-Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
+Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the 
 features of this Brick. It can also be used together with other Bricks in a
-stack. For example an additional :ref:`Master Brick <master_brick>` with
-:ref:`Master Extension <product_overview_master_extensions>` allows 
+:ref:`stack <primer_stack>`. For example an additional 
+:ref:`Master Brick <master_brick>` with
+:ref:`Master Extension <primer_master_extensions>` allows 
 to replace the USB connection by other cable based 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 or wireless (:ref:`WIFI <wifi_extension>`) connections.
@@ -233,7 +234,7 @@ The Servo Brick is equipped with an internal power supply.
 It offers the possibility to adjust the output voltages for the connected
 servos.
 The internal power supply can be powered through the black on-board power-connector
-or through a :ref:`Power Supply <product_overview_power_supplies>` in a stack.
+or through a :ref:`Power Supply <primer_power_supplies>` in a stack.
 The Servo Brick switches automatically to the on-board power-connector when
 there is a voltage measured. Since we use a step-down controller for the
 internal power supply please consider that the input voltage of the Brick has

@@ -72,10 +72,10 @@ Features
 Description
 -----------
 
-The Linear Poti :ref:`Bricklet <product_overview_bricklets>` is equipped with
+The Linear Poti :ref:`Bricklet <primer_bricklets>` is equipped with
 a linear `potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`__
 ("fader", "slider"). It can be connected to a
-:ref:`Brick <product_overview_bricks>`, with which the position of the
+:ref:`Brick <primer_bricks>`, with which the position of the
 slider can be read out.
 With configurable events it is possible to react on changing positions
 without polling.

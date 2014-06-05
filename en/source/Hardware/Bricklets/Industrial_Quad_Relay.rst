@@ -64,8 +64,8 @@ Features
 Description
 -----------
 
-The Industrial Quad Relay :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend :ref:`Bricks <product_overview_bricks>` by four galvanically isolated solid state relays.
+The Industrial Quad Relay :ref:`Bricklet <primer_bricklets>` can be used to
+extend :ref:`Bricks <primer_bricks>` by four galvanically isolated solid state relays.
 Each channel can switch currents of up to 1.2 `Ampere <http://en.wikipedia.org/wiki/Ampere>`__
 with 30 `Volt <http://en.wikipedia.org/wiki/Volt>`__. 
 Output isolation permits the usage without a direct electric connection, 

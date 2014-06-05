@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#product-overview">Product Overview</a> / Timeline
+:breadcrumbs: <a href="index.html">Home</a> / Timeline
 
 .. _timeline:
 

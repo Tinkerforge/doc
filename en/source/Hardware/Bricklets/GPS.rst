@@ -58,8 +58,8 @@ Features
 Description
 -----------
 
-The GPS :ref:`Bricklet <product_overview_bricklets>` can be used to extend
-:ref:`Bricks <product_overview_bricks>` by the possibility to
+The GPS :ref:`Bricklet <primer_bricklets>` can be used to extend
+:ref:`Bricks <primer_bricks>` by the possibility to
 determine their position via 
 `GPS <http://de.wikipedia.org/wiki/GPS>`__.
 Additionally it is possible to receive movement (direction and velocity),

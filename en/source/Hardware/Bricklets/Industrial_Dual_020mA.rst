@@ -63,8 +63,8 @@ Features
 Description
 -----------
 
-The Industrial Dual 0-20mA :ref:`Bricklet <product_overview_bricklets>` 
-can be used to extend the features of :ref:`Bricks <product_overview_bricks>` 
+The Industrial Dual 0-20mA :ref:`Bricklet <primer_bricklets>` 
+can be used to extend the features of :ref:`Bricks <primer_bricks>` 
 by the capability to measure currents between 0 and 22.5mA.
 
 This Bricklet can be used to read out up to two IEC 60381-1 type 2 and 

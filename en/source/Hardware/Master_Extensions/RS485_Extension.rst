@@ -31,8 +31,8 @@ RS485 Extension
 Features
 --------
 
+* Allows cable based interconnection between stacks of Bricks
 * Long distance connections (up to 1200m)
-* Allows cable based interconnection between stacks
 * Configurable baud rate, parity and stop bits
 * Can be used in existing RS485 networks (:ref:`Modbus RTU <llproto_modbus>`)
 
@@ -41,13 +41,14 @@ Description
 -----------
 
 The RS485 Extension can be used for long range cable based
-inter-stack communication. It uses the RS485 differential interface
-standard to achieve ranges of **up to 1200m**.
+inter-:ref:`stack <primer_stack>` communication. It uses the RS485 differential 
+interface standard to achieve ranges of **up to 1200m**.
 
-To establish a RS485 bus with Bricks, two RS485 Extensions and two
-Master Bricks are needed. Both Master Bricks can be connected to a
-full stack of Bricks and Bricklets, whereas one Master Brick is Battery
-powered and one is connected with USB. From a programming perspective
+To establish a RS485 bus with :ref:`Bricks <primer_bricks>`, two RS485 
+Extensions and two :ref:`Master Bricks <master_brick>` are needed. Both Master 
+Bricks can be connected to a full stack of Bricks and 
+:ref:`Bricklets <primer_bricklets>`, whereas one Master Brick is 
+Battery powered and one is connected with USB. From a programming perspective
 the RS485 bus is completely transparent, i.e. the two stacks can
 be used exactly the same way as if they were both connected via USB.
 

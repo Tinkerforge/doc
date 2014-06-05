@@ -7,8 +7,8 @@ Brick Viewer (brickv)
 =====================
 
 Der Brick Viewer bietet eine graphische Oberfläche um
-:ref:`Bricks <product_overview_bricks>` und
-:ref:`Bricklets <product_overview_bricklets>` zu testen. Jedes Gerät hat seine
+:ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` zu testen. Jedes Gerät hat seine
 eigenen Tab der die Hauptfunktionen abbildet und erlaubt diese zu steuern.
 
 Darüber hinaus kann der Brick Viewer verwendet werden, um den

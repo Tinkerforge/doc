@@ -91,17 +91,19 @@ Features
 Beschreibung
 ------------
 
-Das LED Strip :ref:`Bricklet <product_overview_bricklets>` kann genutzt werden
-um LED Streifen und LED Pixel zu steuern die mit einem WS2801 LED-Treiber
+Das LED Strip :ref:`Bricklet <primer_bricklets>` kann genutzt werden
+um LED Streifen und LED Pixel zu steuern, die mit einem WS2801 LED-Treiber
 ausgestattet sind. Es ist möglich 320 RGB LEDs (960 einzelne LEDs) unabhängig
-voneinander zu steuern.
+voneinander über ein :ref:`Brick <primer_bricks>` zu steuern.
 
 Mit Hilfe der API können alle LEDs gleichzeitig mit einer festen
-Aktualisierungsrate von bis zu 100Hz gesteuert werden.
+Aktualisierungsrate von bis zu 100Hz gesteuert werden.  Ein Anwendungsbeispiel
+findet man im 
+:ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`: 
+`Video <http://www.youtube.com/watch?v=mmNRa-lLaXM>`__
+
 
 Brick Daemon 2.0.10 oder neuer wird für diese Bricklet empfohlen.
-
-TODO: Video
 
 Technische Spezifikation
 ------------------------

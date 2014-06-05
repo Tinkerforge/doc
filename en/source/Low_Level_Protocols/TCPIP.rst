@@ -10,7 +10,7 @@ This is the API description for the TCP/IP protocol of the Brick Daemon
 and the WIFI Extension.
 
 An overview of products that are controllable over TCP/IP
-can be found :ref:`here <product_overview>`.
+can be found :ref:`here <primer_products>`.
 
 
 .. _llproto_tcpip_protocol:

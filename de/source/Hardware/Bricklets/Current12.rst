@@ -57,8 +57,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Current12 :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` bidirektional Ströme bis zu **12,5A**
+Mit dem Current12 :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` bidirektional Ströme bis zu **12,5A**
 messen. Der gemessene Strom kann direkt in `Ampere
 <http://de.wikipedia.org/wiki/Ampere>`__ ausgelesen werden.
 Mit konfigurierbaren Events ist es möglich auf Stromänderungen zu

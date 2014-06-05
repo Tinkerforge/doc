@@ -13,7 +13,7 @@ sind in den Schaltplänen für jedes Produkt und den KiCad Bibliotheken zu finde
 Stapelstecker
 -------------
 
-Jeder :ref:`Brick <product_overview_bricks>` hat zwei Arten von Stapelsteckern:
+Jeder :ref:`Brick <primer_bricks>` hat zwei Arten von Stapelsteckern:
 
 * **Stapeldatenstecker:** Verwendet für den Datenaustausch zwischen Bricks.
 * **Stapelstromversorgungsstecker:** Versorgt Bricks und angeschlossene Bricklets, Motoren, Servos usw.
@@ -51,7 +51,7 @@ Beschreibung
 """"""""""""
 
 * **Stack SPI**: Der SPI Bus für Kommunikation zwischen
-  :ref:`Brick <product_overview_bricks>` und Master Brick.
+  :ref:`Brick <primer_bricks>` und Master Brick.
 * **JTAG**: Debug-Schnittstelle, überschneidet sich mit anderen Signals. JTAG
   darf nicht verwendet werden, wenn der Brick Teil eines Stapels ist.
 * **Reset**: Signal um eine Brick zurückzusetzen, durch den Stapel
@@ -129,7 +129,7 @@ Beschreibung
 
 * **PGND**: Stapelmassesignal.
 * **PVCC**: Stapelstromversorgung (max. 27V, 0,5A per Pin, 5A gesamt), durch
-  :ref:`Stromversorgung <product_overview_power_supplies>` bereitgestellt.
+  :ref:`Stromversorgung <primer_power_supplies>` bereitgestellt.
 * **GND**: Gemeinsames Massesignal.
 * **5V**: 5V Stromversorgung (max. 0,5A per Pin, 1,5A gesamt),
   bereitgestellt durch jeden Brick (per USB) oder Stromversorgungen.
@@ -138,10 +138,10 @@ Beschreibung
 * **3V3**: Bereitgestellt durch jeden Brick. Wird durch einen DC/DC Wandler
   (5V -> 3V3) auf der Platine erzeugt.
 * **Current**: Signal zur Messung des Stromverbrauchs über die
-  :ref:`Stromversorgung <product_overview_power_supplies>` (max. 3,3V). Kann
+  :ref:`Stromversorgung <primer_power_supplies>` (max. 3,3V). Kann
   von Master Bricks verwendet wird.
 * **Voltage**: Signal zur Messung der externen Versorgungsspannung der
-  :ref:`Stromversorgung <product_overview_power_supplies>` (max. 3,3V). Kann
+  :ref:`Stromversorgung <primer_power_supplies>` (max. 3,3V). Kann
   von Master Bricks verwendet wird.
 
 

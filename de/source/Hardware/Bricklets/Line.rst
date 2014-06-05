@@ -68,10 +68,10 @@ Features
 Beschreibung
 ------------
 
-Das Line :ref:`Bricklet <product_overview_bricklets>` ist mit einem
-optisch-reflektierenden Sensor ausgestattet. Der Sensor besteht aus einem
-Infrarot Sender und einem Fototransistor. Ausgabe des Sensors ist die Reflektivität
-der Fläche.
+Das Line :ref:`Bricklet <primer_bricklets>` erweitert 
+:ref:`Bricks <primer_bricks>` um einen optisch-reflektierenden Sensor. Der 
+Sensor besteht aus einem Infrarot Sender und einem Fototransistor. Ausgabe des 
+Sensors ist die Reflektivität der Fläche.
 
 Der Reflektivitätswert kann genutzt werden um Linien zu erkennen (Beispiel:
 Eine schwarze Linie hat eine andere Reflektivität als ein weißer Hintergrund).

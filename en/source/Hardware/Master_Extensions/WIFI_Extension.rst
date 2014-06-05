@@ -60,10 +60,10 @@ Features
 Description
 -----------
 
-With this WIFI Extension you can control :ref:`Bricks <product_overview_bricks>` and
-:ref:`Bricklets <product_overview_bricklets>` wirelessly over your
+With this WIFI Extension you can control :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` wirelessly over your
 mobile phone, tablet or your PC. For the Master Extension concept please take a look at the general
-:ref:`description <product_overview_master_extensions>`. The Extension is equipped with a `GainSpan <http://www.gainspan.com>`__
+:ref:`description <primer_master_extensions>`. The Extension is equipped with a `GainSpan <http://www.gainspan.com>`__
 `GS1011MEES <http://www.gainspan.com/gs1011mees>`__ WIFI module with an internal power amplifier
 which allows for superior range compared to other WIFI modules.
 

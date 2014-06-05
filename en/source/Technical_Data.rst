@@ -14,7 +14,7 @@ KiCad development files of each product.
 Stack Connectors
 ----------------
 
-Each :ref:`Brick <product_overview_bricks>` has two connector types:
+Each :ref:`Brick <primer_bricks>` has two connector types:
 
 * **Stack Data Connector:** Used for data exchange between Bricks.
 * **Stack Power Connector:** Powers the Bricks and attached Bricklets, motors, servos etc.
@@ -52,7 +52,7 @@ Description
 """""""""""
 
 * **Stack SPI**: SPI bus communication between
-  :ref:`Brick <product_overview_bricks>` and Master Brick.
+  :ref:`Brick <primer_bricks>` and Master Brick.
 * **JTAG**: Debug Interface, shared with other signals. JTAG must
   not be used when a Brick is stacked together with others.
 * **Reset**: Signal to reset a Brick, routed through a
@@ -127,7 +127,7 @@ Description
 
 * **PGND**: Stack power ground signal.
 * **PVCC**: Stack power signal (max. 27V, 0.5A per pin, 5A in total), powered by
-  :ref:`Power Supplies <product_overview_power_supplies>`.
+  :ref:`Power Supplies <primer_power_supplies>`.
 * **GND**: Common ground signal.
 * **5V**: 5V power signal (max. 0.5A per pin, 1.5A in total),
   powered by every Brick (per USB) or Power Supplies.
@@ -136,10 +136,10 @@ Description
 * **3V3**: Powered by every Brick. Created with on-board DC/DC converter
   (5V -> 3V3).
 * **Current**: Signal to measure the current flow created by
-  :ref:`Power Supply <product_overview_power_supplies>` (max. 3.3V). Can be
+  :ref:`Power Supply <primer_power_supplies>` (max. 3.3V). Can be
   measured by Master Bricks.
 * **Voltage**: Signal to measure the voltage of an external power supply
-  connected to a :ref:`Power Supply <product_overview_power_supplies>`
+  connected to a :ref:`Power Supply <primer_power_supplies>`
   (max. 3.3V). Can be measured by Master Bricks.
 
 

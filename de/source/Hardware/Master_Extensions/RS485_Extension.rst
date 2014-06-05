@@ -31,8 +31,8 @@ RS485 Extension
 Features
 --------
 
+* Erlaubt kabelgebundene Verbindungen zwischen Stapeln aus Bricks
 * Lange Verbindungen möglich (bis zu 1200m)
-* Erlaubt kabelgebundene Verbindungen zwischen Stapeln
 * Konfigurierbare Baudrate, Parität und Stoppbits
 * Kann in existierenden RS485 Netzwerken genutzt
   werden (:ref:`Modbus RTU <llproto_modbus>`)
@@ -42,15 +42,16 @@ Beschreibung
 ------------
 
 Die RS485 Extension kann für lange kabelgebundene Kommunikation zwischen
-Stapeln genutzt werden. Es wird der differentielle RS485 Standard verwendet
-um Längen von **bis zu 1200m** zu erreichen.
+:ref:`Stapeln <primer_stack>` genutzt werden. Es wird der differentielle RS485 
+Standard verwendet um Längen von **bis zu 1200m** zu erreichen.
 
-Für einen RS485 Bus mit Bricks werden zwei RS485 Extension und zwei Master
-Bricks benötigt. Beide Master Bricks können mit einem vollen Stapel aus Bricks
-und Bricklets verbunden sein. Dabei muss ein Master per USB mit dem PC
-verbunden sein. Aus Programmierer-Sicht ist der RS485 Bus vollkommen
-transparent, d.h. alle Bricks und Bricklets können genauso benutzt werden
-als wenn sie einzeln per USB angeschlossen wären.
+Für einen RS485 Bus mit :ref:`Bricks <primer_bricks>` werden zwei RS485 
+Extension und zwei :ref:`Master Bricks <master_brick>` benötigt. Beide Master 
+Bricks können mit einem vollen Stapel aus Bricks und 
+:ref:`Bricklets <primer_bricklets>` verbunden sein. Dabei muss ein 
+Master per USB mit dem PC verbunden sein. Aus Programmierer-Sicht ist der RS485 
+Bus vollkommen transparent, d.h. alle Bricks und Bricklets können genauso 
+benutzt werden als wenn sie einzeln per USB angeschlossen wären.
 
 Es ist möglich einen Bus mit mehreren RS485 Extension zu betreiben, dabei
 muss einer per USB verbunden sein (Many-to-One Routing).

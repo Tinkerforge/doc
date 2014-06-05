@@ -62,8 +62,8 @@ Features
 Description
 -----------
 
-The Humidity :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` by the
+The Humidity :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to measure
 `relative humidity <http://en.wikipedia.org/wiki/Relative_humidity>`__.
 The measured humidity can be read out directly in percent, no conversions are

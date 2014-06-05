@@ -28,7 +28,7 @@ Description
 
 The DC Jack Adapter is an adapter between a 5mm DC jack and
 a 2 Pole Black Connector. It can be used to power
-:ref:`Bricks <product_overview_bricks>` and
+:ref:`Bricks <primer_bricks>` and
 stacks via external power supplies with 5mm DC jacks.
 
 

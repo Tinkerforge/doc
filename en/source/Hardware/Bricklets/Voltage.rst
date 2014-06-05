@@ -56,8 +56,8 @@ Features
 Description
 -----------
 
-The Voltage :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` by the
+The Voltage :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to measure voltages. The measurement range is 0-50V (DC).
 The voltage can be read out directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`__ without conversion.

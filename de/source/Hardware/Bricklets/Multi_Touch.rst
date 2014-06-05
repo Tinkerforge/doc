@@ -85,9 +85,10 @@ Features
 Beschreibung
 ------------
 
-Das Multi Touch :ref:`Bricklet <product_overview_bricklets>` ist mit dem MPR121
-Capacitive Touch Sensor ausgestattet. Es kann genutzt werden um Berührungen an
-12 unterschiedlichen Stellen zu erkennen.
+Das Multi Touch :ref:`Bricklet <primer_bricklets>` ist mit dem MPR121
+Capacitive Touch Sensor ausgestattet und erweitert 
+:ref:`Bricks <primer_bricks>`. Es kann genutzt werden um Berührungen an 12 
+unterschiedlichen Stellen zu erkennen.
 
 Das zu berührende Teil wird "Elektrode" genannt. Die Elektrode kann
 ein Kabel, elektrisch leitendes Klebeband oder die Kupferlage einer 

@@ -547,7 +547,7 @@ index_table_head = {
 """
 }
 
-product_overview_table_head = {
+primer_table_head = {
 'en':
 """
 .. csv-table::
@@ -823,8 +823,8 @@ def get_latest_version_info():
         elif parts[0] == 'bricklets':
             plugin_versions[parts[1]] = latest_version
 
-def make_product_overview_table(devices, category, add_category_to_name=True):
-    table_head = product_overview_table_head[lang]
+def make_primer_table(devices, category, add_category_to_name=True):
+    table_head = primer_table_head[lang]
 
     if add_category_to_name:
         row_head = '   ":ref:`{0} <{1}_' + category + '>`", "{2}"'
@@ -1376,20 +1376,20 @@ def generate(path):
     print('Generating index_links.table')
     write_if_changed(os.path.join(path, 'source', 'index_links.table'), make_index_table())
 
-    print('Generating Product_Overview_bricks.table')
-    write_if_changed(os.path.join(path, 'source', 'Product_Overview_bricks.table'), make_product_overview_table(bricks, 'brick'))
+    print('Generating Primer_bricks.table')
+    write_if_changed(os.path.join(path, 'source', 'Primer_bricks.table'), make_primer_table(bricks, 'brick'))
 
-    print('Generating Product_Overview_bricklets.table')
-    write_if_changed(os.path.join(path, 'source', 'Product_Overview_bricklets.table'), make_product_overview_table(bricklets, 'bricklet'))
+    print('Generating Primer_bricklets.table')
+    write_if_changed(os.path.join(path, 'source', 'Primer_bricklets.table'), make_primer_table(bricklets, 'bricklet'))
 
-    print('Generating Product_Overview_extensions.table')
-    write_if_changed(os.path.join(path, 'source', 'Product_Overview_extensions.table'), make_product_overview_table(extensions, 'extension'))
+    print('Generating Primer_extensions.table')
+    write_if_changed(os.path.join(path, 'source', 'Primer_extensions.table'), make_primer_table(extensions, 'extension'))
 
-    print('Generating Product_Overview_power_supplies.table')
-    write_if_changed(os.path.join(path, 'source', 'Product_Overview_power_supplies.table'), make_product_overview_table(power_supplies, 'power_supply'))
+    print('Generating Primer_power_supplies.table')
+    write_if_changed(os.path.join(path, 'source', 'Primer_power_supplies.table'), make_primer_table(power_supplies, 'power_supply'))
 
-    print('Generating Product_Overview_accessories.table')
-    write_if_changed(os.path.join(path, 'source', 'Product_Overview_accessories.table'), make_product_overview_table(accessories, 'accessory', False))
+    print('Generating Primer_accessories.table')
+    write_if_changed(os.path.join(path, 'source', 'Primer_accessories.table'), make_primer_table(accessories, 'accessory', False))
 
     print('Generating Downloads_tools.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_tools.table'), make_download_tools_table())

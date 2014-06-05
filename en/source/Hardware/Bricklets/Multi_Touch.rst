@@ -85,9 +85,9 @@ Features
 Description
 -----------
 
-The Multi Touch :ref:`Bricklet <product_overview_bricklets>` is equipped with
-the MPR121 capacitive touch sensor. It can be used to sense touch at 12
-different locations.
+The Multi Touch :ref:`Bricklet <primer_bricklets>` is equipped with
+the MPR121 capacitive touch sensor. It can be used to extend 
+:ref:`Bricks <primer_bricks>` to sense touch at 12 different locations.
 
 The thing that is actually touched is called an "electrode". The electrode can
 be a cable, electrically conductive tape or a copper surface of a circuit board.

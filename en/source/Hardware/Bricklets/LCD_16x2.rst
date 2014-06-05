@@ -57,9 +57,9 @@ Features
 Description
 -----------
 
-This LCD :ref:`Bricklet <product_overview_bricklets>` is equipped with a
+This LCD :ref:`Bricklet <primer_bricklets>` is equipped with a
 16x2 character alphanumeric display with blue backlight and three push-buttons.
-It can be controlled with :ref:`Bricks <product_overview_bricks>`.
+It can be controlled with :ref:`Bricks <primer_bricks>`.
 The API allows to write characters to the LCD, get the state of the buttons,
 switch the backlight on or off and configure events for the buttons.
 

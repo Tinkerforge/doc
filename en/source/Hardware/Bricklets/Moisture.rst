@@ -72,8 +72,9 @@ Features
 Description
 -----------
 
-The Moisture :ref:`Bricklet <product_overview_bricklets>` is intended to
-measure moisture in soil.
+The Moisture :ref:`Bricklet <primer_bricklets>` is intended to
+measure moisture in soil. It can extend :ref:`Bricks <primer_bricks>` by this
+feature.
 
 Current is passed through two probes. With a increasing moisture level the
 resistance between the probes will decrease (since water is a better conductor

@@ -63,8 +63,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Industrial Dual 0-20mA :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` Ströme von 0 bis 22,5mA gemessen werden.
+Mit dem Industrial Dual 0-20mA :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Ströme von 0 bis 22,5mA gemessen werden.
 
 Das Bricklet kann genutzt werden um bis zu zwei IEC 60381-1 Typ 2 und Typ 3 Sensoren
 auszulesen 

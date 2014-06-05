@@ -7,8 +7,8 @@ Brick Daemon (brickd)
 =====================
 
 Der Brick Daemon ist ein Daemon (bzw. Service für Windows) der als eine Brücke
-zwischen :ref:`Bricks <product_overview_bricks>`/:ref:`Bricklets
-<product_overview_bricklets>` und den :ref:`API Bindings <api_bindings>` für die
+zwischen :ref:`Bricks <primer_bricks>`/:ref:`Bricklets
+<primer_bricklets>` und den :ref:`API Bindings <api_bindings>` für die
 verschiedenen Programmiersprachen fungiert.
 
 Der Daemon leitet Daten zwischen der USB Verbindung und den TCP/IP Sockets

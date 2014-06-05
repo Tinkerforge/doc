@@ -66,22 +66,22 @@ Features
 Description
 -----------
 
-The Master :ref:`Brick <product_overview_bricks>` can be used for two purposes:
-First of all it has **four** :ref:`Bricklet <product_overview_bricklets>` ports
+The Master :ref:`Brick <primer_bricks>` can be used for two purposes:
+First of all it has **four** :ref:`Bricklet <primer_bricklets>` ports
 and therefore is ideally suited for applications where a many Bricklets are 
 used. These can be directly controlled over the **USB** interface of the Master
 Brick. This way USB sensors, like temperature or humidity sensors, or USB 
 actors, like relays, can be created according to your individual needs.
 
 Secondly, the Master Brick can be used for communication purposes. When 
-building a stack the lowermost Master Brick acts as the master of the stack 
-and routes all communication between the boards of the stack and the controlling
-device. Other Master Bricks in the stack detect that are not the lowermost Master
-and will only provide their attached Bricklets. This way only one USB
-connection, the one to the lowermost Master Brick, is necessary.
+building a :ref:`stack <primer_stack>` the lowermost Master Brick acts as the 
+master of the stack and routes all communication between the boards of the stack 
+and the controlling device. Other Master Bricks in the stack detect that are not 
+the lowermost Master and will only provide their attached Bricklets. This way 
+only one USB connection, the one to the lowermost Master Brick, is necessary.
 
 The USB connection of the Master Brick can be changed with :ref:`Master 
-Extensions <product_overview_master_extensions>`. There are Master Extensions 
+Extensions <primer_master_extensions>`. There are Master Extensions 
 for cable based interfaces 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 or wireless interfaces (:ref:`WIFI <wifi_extension>`). Master Extensions 
@@ -149,7 +149,7 @@ Test your Master Brick
 
 You should see that the Master Brick isn't measuring any stack voltages or
 currents. This is because you have not attached a
-:ref:`Power Supply <product_overview_power_supplies>`. When attaching
+:ref:`Power Supply <primer_power_supplies>`. When attaching
 such a board you should see the voltage applied to your stack and the current
 flowing in.
 

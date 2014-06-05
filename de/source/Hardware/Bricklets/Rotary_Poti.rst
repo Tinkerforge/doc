@@ -72,10 +72,11 @@ Features
 Beschreibung
 ------------
 
-Das Rotary Poti :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+Das Rotary Poti :ref:`Bricklet <primer_bricklets>` ist mit einem
 Dreh-`Potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`__ ausgestattet,
-dessen Position ausgelesen werden kann. Zusätzlich können Events konfiguriert
-werden die ausgelöst werden wenn eine spezifizierte Position erreicht wird.
+dessen Position über ein :ref:`Brick <primer_bricks>` ausgelesen werden kann. 
+Zusätzlich können Events konfiguriert werden die ausgelöst werden wenn eine 
+spezifizierte Position erreicht wird.
 
 Dieses Bricklet kann für Steueraufgaben benutzt werden wie z.B. das Steuern
 einer Lautstärke.

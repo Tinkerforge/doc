@@ -61,8 +61,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem NFC/RFID :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` um die Fähigkeit erweitert werden
+Mit dem NFC/RFID :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` um die Fähigkeit erweitert werden
 `NFC <http://de.wikipedia.org/wiki/Near_Field_Communication>`__/`RFID <http://de.wikipedia.org/wiki/RFID>`__ 
 Tags zu lesen und zu schreiben. Dazu muss der NFC oder RFID Tag in
 der Nähe des Bricklets platziert werden (bis zu 10cm Entfernung).

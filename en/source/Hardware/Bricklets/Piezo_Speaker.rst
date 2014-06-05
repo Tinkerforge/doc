@@ -58,8 +58,9 @@ Features
 Description
 -----------
 
-The Piezo Speaker :ref:`Bricklet <product_overview_bricklets>` can be used to
-generate beeps with different frequencies. The available frequency range is
+The Piezo Speaker :ref:`Bricklet <primer_bricklets>` can be used to extend
+:ref:`Bricks <primer_bricks>` by the possibility to generate beeps with 
+different frequencies. The available frequency range is
 585Hz to 7100Hz. A beep has a configurable length and it is possible to transmit
 a `Morse Code <http://en.wikipedia.org/wiki/Morse_code>`__ string.
 

@@ -63,8 +63,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Color :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` die 
+Mit dem Color :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` die 
 `Farbe <http://de.wikipedia.org/wiki/Farbe>`__ , 
 `Farbtemperatur <http://de.wikipedia.org/wiki/Farbtemperatur>`__ und die 
 `Beleuchtungsstärke <http://de.wikipedia.org/wiki/Beleuchtungsstärke>`__ von Licht messen. 

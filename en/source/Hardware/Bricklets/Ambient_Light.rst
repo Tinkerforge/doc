@@ -62,8 +62,8 @@ Features
 Description
 -----------
 
-The Ambient Light :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` with the
+The Ambient Light :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to measure ambient light. The measured illuminance can be read
 out in `lux <http://en.wikipedia.org/wiki/Lux>`__. With configurable events
 it is possible to react on changing illuminance without polling.

@@ -63,17 +63,17 @@ Features
 Beschreibung
 ------------
 
-Mit dem DC :ref:`Brick <product_overview_bricks>` kann ein
+Mit dem DC :ref:`Brick <primer_bricks>` kann ein
 `Gleichstrommotor <http://de.wikipedia.org/wiki/Gleichstrommaschine>`__
 (max. **28V** und **5A**) über **USB** gesteuert werden. Eine API für
 :ref:`viele Programmiersprachen <dc_brick_programming_interface>` ermöglicht 
 das Steuern der Richtung, Geschwindigkeit und Beschleunigung des Motors.
 
-Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
+Über zwei Anschlüsse können :ref:`Bricklets <primer_bricklets>` 
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Der DC Brick 
-kann mit anderen Bricks in einem Stapel genutzt werden. Zum Beispiel kann ein
-zusätzlicher :ref:`Master Brick <master_brick>` mit
-:ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
+kann mit anderen Bricks in einem :ref:`Stapel <primer_stack>` genutzt werden. 
+Zum Beispiel kann ein zusätzlicher :ref:`Master Brick <master_brick>` mit
+:ref:`Master Extensions <primer_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 oder drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`) zu ersetzen.
@@ -188,7 +188,7 @@ Stromversorgung
 
 Der angeschlossene Motor kann über den schwarzen Stromversorgungsstecker auf
 der Platine extern versorgt werden. Alternativ kann eine :ref:`Stromversorgung
-<product_overview_power_supplies>` unter den Brick gesteckt werden.
+<primer_power_supplies>` unter den Brick gesteckt werden.
 Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
 Stecker eine Spannung anliegt.
 

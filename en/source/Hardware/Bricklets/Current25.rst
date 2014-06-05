@@ -57,8 +57,8 @@ Features
 Description
 -----------
 
-The Current25 :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` by
+The Current25 :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by
 bidirectional current flow measurements of up to **25A**.
 Additionally events can be configured to receive signals when a specified
 current is exceeded.

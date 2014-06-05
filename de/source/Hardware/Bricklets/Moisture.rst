@@ -72,8 +72,9 @@ Features
 Beschreibung
 ------------
 
-Das Moisture :ref:`Bricklet <product_overview_bricklets>` ist dafür gedacht die
-Feuchtigkeit in Erde zu ermitteln.
+Das Moisture :ref:`Bricklet <primer_bricklets>` erweitert 
+:ref:`Bricks <primer_bricks>` und ist dafür gedacht die Feuchtigkeit in Erde zu 
+ermitteln.
 
 Dazu wird Strom durch zwei Elektroden geführt, die zum Beispiel in der Erde stecken. 
 Mit steigender Feuchtigkeit sinkt der Widerstand. Die Veränderung des 

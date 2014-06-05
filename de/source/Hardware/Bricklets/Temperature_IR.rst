@@ -64,10 +64,10 @@ Features
 Beschreibung
 ------------
 
-Das Temperature IR :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+Das Temperature IR :ref:`Bricklet <primer_bricklets>` ist mit einem
 `Infrarot Thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`__
-ausgestattet. Es kann die Funktionen von Bricks mit der Möglichkeit kontaktlos
-Temperatur zu messen erweitern.
+ausgestattet. Es kann die Funktionen von :ref:`Bricks <primer_bricks>`, mit der 
+Möglichkeit kontaktlos Temperatur zu messen, erweitern.
 
 Es ist möglich Objekt- und Umgebungstemperatur in `°C
 <http://en.wikipedia.org/wiki/Degree_Celsius>`__ zu messen. Dabei kann die

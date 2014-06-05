@@ -64,8 +64,8 @@ Features
 Beschreibung
 ------------
 
-Das Industrial Digital In 4 :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
-um :ref:`Bricks <product_overview_bricks>` mit vier digitale Eingängen zu erweitern.
+Das Industrial Digital In 4 :ref:`Bricklet <primer_bricklets>` kann benutzt werden
+um :ref:`Bricks <primer_bricks>` mit vier digitale Eingängen zu erweitern.
 Die Eingangsspannung kann bis zu 36 `Volt <http://de.wikipedia.org/wiki/Volt>`__ betragen. 
 Die galvanische Trennung der Eingänge erlaubt eine Benutzung ohne direkte elektrische
 Verbindung, so dass Masseschleifen vermieden werden können und eine zusätzliche Sicherheit

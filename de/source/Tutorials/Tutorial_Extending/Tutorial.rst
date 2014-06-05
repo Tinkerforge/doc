@@ -6,8 +6,8 @@
 Erste Schritte - Tutorial
 =========================
 
-Das folgende Tutorial demonstriert wie :ref:`Bricks <product_overview_bricks>`
-und :ref:`Bricklets <product_overview_bricklets>` mit der
+Das folgende Tutorial demonstriert wie :ref:`Bricks <primer_bricks>`
+und :ref:`Bricklets <primer_bricklets>` mit der
 :ref:`Programmierschnittstelle <programming_interface>` verwendet werden können.
 
 Im ersten Teil wird ein :ref:`DC Brick <dc_brick>` verwendet, um einen Motor
@@ -22,7 +22,7 @@ Ein einzelner Brick
 -------------------
 
 Der DC Brick dient hier als Beispiel. Die beschriebenen Konzept gelten aber für
-alle Bricks. :ref:`Hier <product_overview_bricks>` ist eine Übersicht über alle
+alle Bricks. :ref:`Hier <primer_bricks>` ist eine Übersicht über alle
 verfügbaren Bricks.
 
 
@@ -142,7 +142,7 @@ Bricklets anschließen für weitere Features
 ------------------------------------------
 
 Bricklets können genutzt werden um die Fähigkeiten von Bricks zu erweitern.
-:ref:`Hier <product_overview_bricklets>` findet sich eine Übersicht über alle
+:ref:`Hier <primer_bricklets>` findet sich eine Übersicht über alle
 verfügbaren Bricklets.
 
 Um ein Bricklet nutzen zu können muss es an einen Brick über das mitgelieferte
@@ -239,7 +239,7 @@ Der Master des Stapels versorgt alle Teilnehmer des Stapels über seine USB
 Verbindung mit maximal 500mA in Summe. Jeder Motortreiber Brick kann über
 seinen schwarzen Stromversorgungsstecker auf der Platine extern versorgt werden.
 Um nochmal Verkabelung zu sparen und auch den Stapel mit mehr Strom versorgen
-zu können kann eine :ref:`Stromversorgung <product_overview_power_supplies>`
+zu können kann eine :ref:`Stromversorgung <primer_power_supplies>`
 unter den Stapel gesteckt werden (unter den Master des Stapels). Von dort stellt
 sie die 5V bereit die von Bricks und Bricklets benötigt werden. Motortreiber
 Bricks die nicht über ihren schwarzen Stromversorgungsstecker extern versorgt

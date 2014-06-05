@@ -14,6 +14,9 @@ Documentation
 Tutorials and FAQ
 *****************
 
+A general description of Bricks, Master Extensions Bricklets and concepts
+can be found in the :ref:`Primer <primer>`.
+
 These Tutorials are an introduction to the usage of Bricks and Bricklets
 and their concepts:
 
@@ -38,13 +41,13 @@ Answers to frequently asked questions can be found in the :ref:`FAQ <faq>`.
 Hardware
 ********
 
-Our :ref:`products <product_overview>` are divided into five different categories:
+Our :ref:`products <primer_products>` are divided into five different categories:
 
-* :ref:`product_overview_bricks`
-* :ref:`product_overview_bricklets`
-* :ref:`product_overview_master_extensions`
-* :ref:`product_overview_power_supplies`
-* :ref:`product_overview_accessories`
+* :ref:`primer_bricks`
+* :ref:`primer_bricklets`
+* :ref:`primer_master_extensions`
+* :ref:`primer_power_supplies`
+* :ref:`primer_accessories`
 
 This :ref:`Timeline <timeline>` presents an overview of released products and
 finished developments.
@@ -55,7 +58,7 @@ finished developments.
 .. toctree::
    :hidden:
 
-   Product_Overview
+   Primer
    Timeline
 
 .. toctree::

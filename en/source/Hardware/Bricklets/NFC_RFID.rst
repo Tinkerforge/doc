@@ -63,8 +63,8 @@ Description
 
 The `NFC <http://en.wikipedia.org/wiki/Near_field_communication>`__/
 `RFID <http://en.wikipedia.org/wiki/Rfid>`__ 
-:ref:`Bricklet <product_overview_bricklets>` can be used to 
-extend :ref:`Bricks <product_overview_bricks>` by the possibility to read
+:ref:`Bricklet <primer_bricklets>` can be used to 
+extend :ref:`Bricks <primer_bricks>` by the possibility to read
 and write NFC/RFID tags. To do this you only have to place a NFC or RFID 
 tag in the proximity (up to 10cm) of the Bricklet.
 

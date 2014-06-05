@@ -68,10 +68,11 @@ Features
 Beschreibung
 ------------
 
-Das Rotary Encoder :ref:`Bricklet <product_overview_bricklets>` ist mit einem
-360° Encoder ausgestattet. Es hat 24 Schritte pro Umdrehung mit "Klick-Haptik"
-pro Schritt. Der Encoder hat einen integrierten Taster (auslösbar indem man auf
-den Knopf drückt) der genutzt werden kann um Menüpunkte o.ä. auszuwählen.
+Das Rotary Encoder :ref:`Bricklet <primer_bricklets>` erweitert
+:ref:`Bricks <primer_bricks>` um einen 360° Encoder. Der Encoder hat 
+24 Schritte pro Umdrehung mit "Klick-Haptik" pro Schritt. Der Encoder hat einen 
+integrierten Taster (auslösbar indem man auf den Knopf drückt) der genutzt 
+werden kann um Menüpunkte o.ä. auszuwählen.
 
 Der Unterschied zwischen dem :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`
 und dem Rotary Encoder Bricklet ist, dass der Encoder ohne Begrenzungen gedreht

@@ -63,8 +63,8 @@ Features
 Description
 -----------
 
-The Analog Out :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` by the
+The Analog Out :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to generate voltages between 0V and 5V*.
 The voltage can be configured directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`__ without any conversion.

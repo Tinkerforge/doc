@@ -67,8 +67,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem PTC :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` Temperaturen über Pt100 und Pt1000
+Mit dem PTC :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Temperaturen über Pt100 und Pt1000
 Sensoren messen. 
 
 Es können Pt100 und Pt1000 Sensoren vom Typ 2-Leiter, 3-Leiter und 4-Leiter

@@ -64,8 +64,8 @@ Features
 Description
 -----------
 
-The Industrial Digital Out 4 :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend :ref:`Bricks <product_overview_bricks>` by four galvanically isolated digital outputs.
+The Industrial Digital Out 4 :ref:`Bricklet <primer_bricklets>` can be used to
+extend :ref:`Bricks <primer_bricks>` by four galvanically isolated digital outputs.
 The outputs have to be supplied externally with a voltage of up to
 36 `Volt <http://en.wikipedia.org/wiki/Volt>`__. 
 Output isolation permits the usage without a direct electric connection, 

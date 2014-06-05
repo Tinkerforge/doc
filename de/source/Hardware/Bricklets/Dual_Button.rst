@@ -57,8 +57,9 @@ Features
 Beschreibung
 ------------
 
-Das Dual Button :ref:`Bricklet <product_overview_bricklets>` ist mit zwei
-Drucktastern ausgestattet. Beide Taster haben eine eingebaute blaue LED. Der
+Das Dual Button :ref:`Bricklet <primer_bricklets>` ist mit zwei
+Drucktastern ausgestattet und kann :ref:`Bricks <primer_bricks>` um diese 
+erweitern. Beide Taster haben eine eingebaute blaue LED. Der
 aktuelle Zustand der Taster (gedrückt/nicht gedrückt) und der LEDs (an/aus) kann
 jederzeit ausgelesen werden. Es ist möglich die LEDs selbst an/aus zu schalten
 sowie Auto-Toggle zu aktivieren. Im Auto-Toggle Modus werden die LEDs

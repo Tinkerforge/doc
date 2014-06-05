@@ -60,11 +60,11 @@ Features
 Beschreibung
 ------------
 
-Mit dieser WIFI Extension können :ref:`Bricks <product_overview_bricks>` und
-:ref:`Bricklets <product_overview_bricklets>` drahtlos mittels
+Mit dieser WIFI Extension können :ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` drahtlos mittels
 Smartphone, Tablet oder PC gesteuert werden.
 Weitere Informationen zum Master Extension Konzept gibt es in der allgemeinen
-:ref:`Beschreibung <product_overview_master_extensions>`. Die Extension ist mit einem `GainSpan <http://www.gainspan.com>`__
+:ref:`Beschreibung <primer_master_extensions>`. Die Extension ist mit einem `GainSpan <http://www.gainspan.com>`__
 `GS1011MEES <http://www.gainspan.com/gs1011mees>`__ WIFI Modul mit integriertem Leistungsverstärker ausgestattet
 der eine erweiterte Reichweite im Vergleich zu ähnlichen Modulen erlaubt.
 

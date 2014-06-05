@@ -67,8 +67,8 @@ Features
 Beschreibung
 ------------
 
-Der Master :ref:`Brick <product_overview_bricks>` besitzt zwei Aufgaben:
-Als erstes besitzt er **vier** :ref:`Bricklet <product_overview_bricklets>`
+Der Master :ref:`Brick <primer_bricks>` besitzt zwei Aufgaben:
+Als erstes besitzt er **vier** :ref:`Bricklet <primer_bricklets>`
 Anschlüsse und ist daher ideal geeignet für Anwendungen bei denen viele
 Bricklets genutzt werden. Diese können dann direkt über die **USB** 
 Schnittstelle des Master Bricks gesteuert werden. Somit können USB Sensoren, 
@@ -76,12 +76,12 @@ zum Beispiel zur Messung der Luftfeuchtigkeit und Temperatur, aber auch USB
 Aktoren, wie Relais, ganz nach den eigenen Bedürfnissen aufgebaut werden.
 
 Als zweites kann der Master Brick für Kommunikationsaufgaben genutzt werden.
-Wird ein Stapel von Bricks aufgebaut so arbeitet der unterste Brick als Master
-des Stapels und leitet Daten von dem steuernden Gerät an die Platinen des
-Stapels weiter. Andere Master Bricks im Stapel erkennen, dass sie nicht als 
-Master eingesetzt sind und stellen nur ihre angeschlossenen Bricklets zur 
-Verfügung. Es ist also nur eine USB Verbindung, die des untersten Master 
-Bricks, für einen ganzen Stapel von Bricks notwendig.
+Wird ein :ref:`Stapel <primer_stack>` von Bricks aufgebaut so arbeitet der 
+unterste Brick als Master des Stapels und leitet Daten von dem steuernden Gerät 
+an die Platinen des Stapels weiter. Andere Master Bricks im Stapel erkennen, 
+dass sie nicht als Master eingesetzt sind und stellen nur ihre angeschlossenen 
+Bricklets zur Verfügung. Es ist also nur eine USB Verbindung, die des untersten 
+Master Bricks, für einen ganzen Stapel von Bricks notwendig.
 
 Die USB Schnittstelle kann durch Master Extensions ersetzt werden. Es gibt
 Master Extensions für kabelgebundene Schnittstellen
@@ -152,7 +152,7 @@ Erster Test
 
 Die Messung Versorgungsspannung des Stapels und des Stromverbrauchs sollte
 jeweils Null anzeigen. Dies liegt daran, dass keine :ref:`Stromversorgung
-<product_overview_power_supplies>` angeschlossen ist. Wenn eine unter den
+<primer_power_supplies>` angeschlossen ist. Wenn eine unter den
 Stapel gesteckt wurde, dann wird hier die angelegte Spannung und der
 Stromverbrauch des Stapels angezeigt.
 

@@ -14,7 +14,7 @@ LCD Extension
 Description
 -----------
 
-The LCD Extension is a :ref:`Master Extension <product_overview_master_extensions>`
+The LCD Extension is a :ref:`Master Extension <primer_master_extensions>`
 which can be used to provide a :ref:`Master Brick <master_brick>` with a
 LC Display. This device has to be attached to the top of a Stack.
 

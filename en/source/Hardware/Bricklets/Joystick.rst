@@ -61,8 +61,8 @@ Features
 Description
 -----------
 
-The Joystick :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` by joystick
+The Joystick :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by joystick
 functionality.
 
 The Joystick is two directional and equipped with a push-button.

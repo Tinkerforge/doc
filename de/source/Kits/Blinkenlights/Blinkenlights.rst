@@ -215,7 +215,7 @@ akustisches Feedback zu geben und den Spielstand anzuzeigen.
 Vor Beginn müssen Host und Port konfiguriert werden. Falls das normale Kit 
 benutzt wird und dieses direkt per USB an einem PC angeschlossen ist, sind
 "localhost" und "4223" die korrekten Einstellungen. Falls das Kit mit
-:ref:`Extensions <product_overview_master_extensions>` erweitert wurde oder
+:ref:`Extensions <primer_master_extensions>` erweitert wurde oder
 es von einem anderen PC gesteuert werden soll muss die IP Adresse oder der 
 Hostname des Rechners oder der Extension eingestellt werden zu dem das Kit 
 verbunden wurde. Die Tabelle unter der Host/Port Konfiguration gibt einen

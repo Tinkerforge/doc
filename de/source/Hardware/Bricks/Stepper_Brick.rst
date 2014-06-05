@@ -65,7 +65,7 @@ Features
 Beschreibung
 ------------
 
-Mit dem Stepper :ref:`Brick <product_overview_bricks>` kann einen bipolaren
+Mit dem Stepper :ref:`Brick <primer_bricks>` kann einen bipolaren
 `Schrittmotor <http://de.wikipedia.org/wiki/Schrittmotor>`__
 mit einem maximalen Strom von **2,5A** und einer maximalen Spannung von **38V**
 pro Phase über **USB** gesteuert werden. Eine API für
@@ -76,11 +76,11 @@ Der maximale Treiberstrom und der :ref:`Decay Modus <stepper_brick_decay_mode>`
 können ebenfalls per Software über die API eingestellt werden. Der Stromverbrauch 
 und die Versorgungsspannung können über diese auch gemessen werden.
 
-Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
+Über zwei Anschlüsse können :ref:`Bricklets <primer_bricklets>` 
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Der Stepper 
-Brick kann mit anderen Bricks in einem Stapel genutzt werden. Zum Beispiel
-kann ein zusätzlicher  :ref:`Master Brick <master_brick>` mit
-:ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
+Brick kann mit anderen Bricks in einem :ref:`Stapel <primer_stack>` genutzt 
+werden. Zum Beispiel kann ein zusätzlicher  :ref:`Master Brick <master_brick>` 
+mit :ref:`Master Extensions <primer_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 oder drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`) zu ersetzen.
@@ -200,7 +200,7 @@ Stromversorgung
 
 Der angeschlossene Motor kann über den schwarzen Stromversorgungsstecker auf
 der Platine extern versorgt werden. Alternativ kann eine :ref:`Stromversorgung
-<product_overview_power_supplies>` unter den Brick gesteckt werden.
+<primer_power_supplies>` unter den Brick gesteckt werden.
 Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
 Stecker eine Spannung anliegt.
 

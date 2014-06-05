@@ -62,8 +62,8 @@ Features
 Description
 -----------
 
-The Dual Relay :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` by two
+The Dual Relay :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by two
 `relays <http://en.wikipedia.org/wiki/Relay>`__. Each relay has three
 terminals such that the terminal in the middle is electrically connected to
 the terminal left or right depending on the state.

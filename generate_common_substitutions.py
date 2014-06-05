@@ -75,7 +75,7 @@ create an IP Connection, connect it and add devices, before you can
 use them.
 
 An overview of products that are controllable over an IP Connection
-can be found :ref:`here <product_overview>`.
+can be found :ref:`here <primer_products>`.
 <<<intro
 """,
 'de': """
@@ -88,7 +88,7 @@ deren API angesprochen werden können muss eine IP Connection erzeugt, verbunden
 und die Geräte dieser hinzugefügt werden.
 
 Eine Übersicht über die Produkte die über eine IP Connection kontrolliert
-werden können ist :ref:`hier <product_overview>` zu finden.
+werden können ist :ref:`hier <primer_products>` zu finden.
 <<<intro
 """
 }
@@ -210,13 +210,13 @@ bricklet_test_intro = {
 bricklet_test_connect = {
 'en':
 """.. |test_connect| replace::
- Connect the {0} Bricklet to a :ref:`Brick <product_overview_bricks>`
+ Connect the {0} Bricklet to a :ref:`Brick <primer_bricks>`
  with a Bricklet Cable
 """,
 'de':
 """.. |test_connect| replace::
  Als nächstes muss das {0} Bricklet mittels eines Bricklet Kabels mit
- einem :ref:`Brick <product_overview_bricks>` verbunden werden
+ einem :ref:`Brick <primer_bricks>` verbunden werden
 """
 }
 

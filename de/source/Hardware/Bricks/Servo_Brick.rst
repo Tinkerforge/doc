@@ -71,7 +71,7 @@ Features
 Beschreibung
 ------------
 
-Der Servo :ref:`Brick <product_overview_bricks>` kann bis zu **7**
+Der Servo :ref:`Brick <primer_bricks>` kann bis zu **7**
 `RC Servos <http://de.wikipedia.org/wiki/Servo>`__ mit einem maximalen Strom 
 von **3A** per **USB** steuern. Eine API für
 :ref:`viele Programmiersprachen <servo_brick_programming_interface>` ermöglichen 
@@ -86,11 +86,12 @@ Brushless Motoren, zu steuern. Es muss nur der richtige ESC abhängig vom Motor
 gewählt werden, so dass auch Motoren mit einem Stromverbrauch von 150A und 
 mehr steuerbar sind.
 
-Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
+Über zwei Anschlüsse können :ref:`Bricklets <primer_bricklets>` 
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Der Servo 
-Brick kann mit anderen Bricks in einem Stapel genutzt werden. Zum Beispiel
+Brick kann mit anderen Bricks in einem :ref:`Stapel <primer_stack>` genutzt 
+werden. Zum Beispiel
 kann ein zusätzlicher :ref:`Master Brick <master_brick>` mit
-:ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
+:ref:`Master Extensions <primer_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 oder drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`) zu ersetzen.
@@ -238,7 +239,7 @@ Der Servo Brick hat eine interne Stromversorgung, die es ermögliche die
 Ausgangsspannung für die Servos einzustellen. Die interne Stromversorgung
 kann entweder über den schwarzen Stromversorgungsstecker auf der Platine
 versorgt werden oder über eine :ref:`Stromversorgung
-<product_overview_power_supplies>` die unter den Brick gesteckt wird.
+<primer_power_supplies>` die unter den Brick gesteckt wird.
 Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
 Stecker eine Spannung anliegt. Da die interne Stromversorgung einen Step-Down
 Regler verwendet muss die Eingangsspannung am schwarzen Stromversorgungsstecker

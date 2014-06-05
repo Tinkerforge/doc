@@ -61,8 +61,8 @@ Features
 Beschreibung
 ------------
 
-Das Joystick :ref:`Bricklet <product_overview_bricklets>` kann an jeden
-:ref:`Brick <product_overview_bricks>` angeschlossen werden.
+Das Joystick :ref:`Bricklet <primer_bricklets>` kann an jeden
+:ref:`Brick <primer_bricks>` angeschlossen werden.
 
 Der Joystick ist 2-achsig und mit einem Taster ausgestattet.
 Die Position des Joysticks (X/Y Koordinaten) und der Status des Tasters kann

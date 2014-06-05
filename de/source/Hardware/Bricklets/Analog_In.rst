@@ -69,8 +69,8 @@ Features
 Beschreibung
 ------------
 
-Das Analog In :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
-um :ref:`Bricks <product_overview_bricks>` die Möglichkeit zu geben elektrische
+Das Analog In :ref:`Bricklet <primer_bricklets>` kann benutzt werden
+um :ref:`Bricks <primer_bricks>` die Möglichkeit zu geben elektrische
 Spannungen zu messen.
 Der Messbereich beträgt 0V bis 45V (DC) mit hoher Auflösung für kleine Spannungen.
 Die gemessene Spannung kann direkt in `Volt

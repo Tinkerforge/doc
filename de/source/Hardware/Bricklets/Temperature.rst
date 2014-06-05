@@ -63,8 +63,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Temperature :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` Temperaturen messen. Die gemessene
+Mit dem Temperature :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Temperaturen messen. Die gemessene
 Temperatur kann in `°C
 <http://de.wikipedia.org/wiki/Grad_Celsius>`__ ausgelesen werden. Zusätzlich
 können Events konfiguriert werden die ausgelöst werden wenn eine bestimmte

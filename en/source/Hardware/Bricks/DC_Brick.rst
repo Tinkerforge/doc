@@ -64,16 +64,17 @@ Features
 Description
 -----------
 
-With the DC :ref:`Brick <product_overview_bricks>` you are able to control one 
+With the DC :ref:`Brick <primer_bricks>` you are able to control one 
 `DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`__
 (max. **28V** and **5A**) over **USB**. With the provided API for many
 :ref:`programming languages<dc_brick_programming_interface>` you can control the 
 direction, velocity and acceleration of the connected motor.
 
-Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
+Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the 
 features of this Brick. It can also be used together with other Bricks in a
-stack. For example an additional :ref:`Master Brick <master_brick>` with
-:ref:`Master Extension <product_overview_master_extensions>` allows 
+:ref:`stack <primer_stack>`. For example an additional 
+:ref:`Master Brick <master_brick>` with
+:ref:`Master Extension <primer_master_extensions>` allows 
 to replace the USB connection by other cable based
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 or wireless (:ref:`WIFI <wifi_extension>`) connections.
@@ -188,7 +189,7 @@ Power Supply
 ------------
 
 The connected motor can be powered through the black on-board power-connector
-or through a :ref:`Power Supply <product_overview_power_supplies>` in a
+or through a :ref:`Power Supply <primer_power_supplies>` in a
 stack. The Brick switches automatically to the on-board power-connector when a 
 voltage above 1V is measured there.
 

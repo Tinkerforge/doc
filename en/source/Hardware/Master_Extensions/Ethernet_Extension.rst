@@ -52,8 +52,8 @@ Description
 -----------
 
 With this Ethernet Extension you can control 
-:ref:`Bricks <product_overview_bricks>` and
-:ref:`Bricklets <product_overview_bricklets>` and integrate them into a 
+:ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` and integrate them into a 
 `LAN <https://de.wikipedia.org/wiki/Local_Area_Network>`__. 
 10BaseT/100BaseTX Ethernet is supported and the module is 1000BaseTX 
 compatible. The Extension is available in two variants:

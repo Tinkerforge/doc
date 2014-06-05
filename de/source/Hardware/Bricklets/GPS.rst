@@ -57,8 +57,8 @@ Features
 
 Beschreibung
 ------------
-Mit dem GPS :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` über 
+Mit dem GPS :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` über 
 `GPS <http://de.wikipedia.org/wiki/GPS>`__ ihre Position bestimmen.
 Es ist auch möglich Bewegungsdaten (Richtung und Geschwindigkeit),
 Höheninformationen (Höhe und 

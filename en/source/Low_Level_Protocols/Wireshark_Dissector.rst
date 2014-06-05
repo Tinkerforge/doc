@@ -14,7 +14,7 @@ A Wireshark dissector is a plugin for a specific protocol. With the
 TFP (Tinkerforge Protocol) dissector it is possible to analyze the
 protocol that is used between :ref:`Bindings <api_bindings>` and 
 :ref:`Brick Daemon <brickd>` (TCP/IP) as well as the protocol that is used 
-between Brick Daemon and :ref:`Bricks <product_overview_bricks>` (USB).
+between Brick Daemon and :ref:`Bricks <primer_bricks>` (USB).
 
 The dissector can assist in debugging bugs in the bindings and brickd. It
 is also very helpful while creating new Bindings.

@@ -11,7 +11,6 @@ Produkte und Konzepte des Tinkerforge Baukastensystems. Detailierte
 Beschreibungen über die Funktion und die zur Verfügung stehende API befindet 
 sich in der Dokumentation des jeweiligen Produktes.
 
-.. _product_overview:
 .. _primer_products:
 
 Produkte
@@ -19,23 +18,22 @@ Produkte
 
 Unsere Produkte gliedern sich in fünf verschiedene Kategorien:
 
-* :ref:`Bricks <product_overview_bricks>`:
+* :ref:`Bricks <primer_bricks>`:
   Stapelbare Module zum Messen und Steuern über USB.
-* :ref:`Bricklets <product_overview_bricklets>`:
+* :ref:`Bricklets <primer_bricklets>`:
   Nicht stapelbare Sensor-/Aktormodule, die die Fähigkeiten von Bricks
   erweitern.
-* :ref:`Master Extensions <product_overview_master_extensions>`:
+* :ref:`Master Extensions <primer_master_extensions>`:
   Module um Alternativen zur USB Schnittstelle des
   :ref:`Master Bricks <master_brick>` zu bieten (WIFI, Ethernet, RS485).
-* :ref:`Stromversorgungen <product_overview_power_supplies>`:
+* :ref:`Stromversorgungen <primer_power_supplies>`:
   Module die einen Stapel von Bricks mit Strom versorgen.
-* :ref:`Zubehör <product_overview_accessories>`
+* :ref:`Zubehör <primer_accessories>`
 
 Dieses :ref:`Tutorial <tutorial_first_steps>` erklärt wie alles zusammen
 funktioniert.
 
 
-.. _product_overview_bricks:
 .. _primer_bricks:
 
 Bricks
@@ -83,7 +81,7 @@ gibt Bricks für Messaufgaben (z.B. :ref:`IMU Brick <imu_brick>`), zur
 Kommunikation (z.B. :ref:`Master Brick <master_brick>`) und um Motore zu 
 steuern (z.B. :ref:`DC Brick <dc_brick>`).
 
-Über :ref:`Bricklets <product_overview_bricklets>` können die Fähigkeiten von
+Über :ref:`Bricklets <primer_bricklets>` können die Fähigkeiten von
 Bricks erweitert werden. Abhängig vom Modell verfügt jeder Brick über zwei oder
 vier Anschlüsse für Bricklets.
 
@@ -92,13 +90,13 @@ Bricks können gestapelt werden, siehe die
 Schnittstelle eines Master Bricks kann mit 
 :ref:`Master Extensions <primer_master_extensions>` durch
 WLAN, Ethernet oder RS485 ersetzt werden. Zusammen mit dem Stapelkonzept können 
-somit auch andere Bricks per WLAN oder Ethernet gesteuert werden.
+somit alle Bricks und Bricklets anstatt per USB auch per WLAN oder Ethernet 
+gesteuert werden.
 
 
-.. include:: Product_Overview_bricks.table
+.. include:: Primer_bricks.table
 
 
-.. _product_overview_bricklets:
 .. _primer_bricklets:
 
 Bricklets
@@ -150,7 +148,7 @@ Bricklets
        :align: center
        :target: _images/Bricklets/bricklet_voltage_tilted_800.jpg
 
-Bricklets erweitern die Fähigkeiten von :ref:`Bricks <product_overview_bricks>`.
+Bricklets erweitern die Fähigkeiten von :ref:`Bricks <primer_bricks>`.
 Es gibt Bricklets um physikalische Größen wie Rotation, elektrische Spannung,
 elektrischen Strom, Umgebungshelligkeit oder Umgebungstemperatur zu messen.
 Es gibt auch Bricklets für Steuerungsaufgaben wie Relais, digitale Ein- und
@@ -160,19 +158,19 @@ Im Gegensatz zu Bricks haben Bricklets keine feste Größe. Jedes Bricklet hat
 die kleinste mögliche Größe. Jeder Brick hat bis zu vier Anschlüsse für
 Bricklets. Über seine USB Verbindung können diese gesteuert werden.
 
-Jedes Bricklet besitzt seine eigene API und wird programmtechnisch wie ein 
-eigenständiges Modul behandelt. Beim Start erkennt ein Brick die angeschlossenen 
-Bricklets. Die Bricklet Plugins sind auf einem 
+Bricklets verfügen über keinen eigenen Prozessor, verfügen aber über eine eigene 
+API. Aus Sicht des Programmierers werden sie wie eigenständige Module behandelt. 
+Beim Start erkennt ein Brick die angeschlossenen Bricklets. Die Bricklet Plugins 
+sind auf einem 
 `EEPROM <http://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
 auf dem Bricklet gespeichert und werden zur Ausführung in den Flash des Bricks
 geladen. Nach diesem Vorgang verarbeitet das Brick die API Aufrufe seiner 
 angeschlossenen Bricklets und steuert die Bricklets.
 
 
-.. include:: Product_Overview_bricklets.table
+.. include:: Primer_bricklets.table
 
 
-.. _product_overview_master_extensions:
 .. _primer_master_extensions:
 
 Master Extensions
@@ -225,10 +223,9 @@ angeschlossen entwickelt werden. Wenn später die Bricks gestapelt und über
 eine Master Extension angebunden werden dann funktioniert das zuvor geschrieben
 Programm ohne Änderungen weiter.
 
-.. include:: Product_Overview_extensions.table
+.. include:: Primer_extensions.table
 
 
-.. _product_overview_power_supplies:
 .. _primer_power_supplies:
 
 Stromversorgungen
@@ -244,23 +241,22 @@ Stromversorgungen
        :align: center
        :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
 
-:ref:`Bricks <primer_bricks>` und
-:ref:`Bricklets <primer_bricklets>` können über die USB Schnittstelle
-des Bricks mit Strom versorgt werden. :ref:`Stapel <primer_stack>` können
-ebenfalls über die USB Verbindung des Masters mit Strom versorgt werden.
-Diese Möglichkeit ist durch die USB Spezifikation auf 500mA beschränkt. Ein
-großer Stapel kann einen höheren Stromverbrauch als 500mA aufweisen.
+:ref:`Bricks <primer_bricks>` und :ref:`Bricklets <primer_bricklets>` 
+können über die USB Schnittstelle des Bricks mit Strom versorgt werden. 
+:ref:`Stapel <primer_stack>` können ebenfalls über die USB Verbindung des 
+Masters mit Strom versorgt werden. Diese Möglichkeit ist durch die USB 
+Spezifikation auf 500mA beschränkt. Ein großer Stapel kann einen höheren 
+Stromverbrauch aufweisen.
 
 Die Stromversorgungsmodule können einen Stapel mit mehr als 500mA versorgen. 
 Zusätzlich wird über den Stapel auch die Versorgungsspannung geleitet, so dass
 Bricks im Stapel ihre angeschlossenen Motoren darüber direkt versorgen können
 (z.B. :ref:`DC Brick <dc_brick>`). Stromversorgungsmodule haben die Größe von 
-:ref:`Bricks <product_overview_bricks>` und werden unter einen Stapel gesteckt.
+:ref:`Bricks <primer_bricks>` und werden unter einen Stapel gesteckt.
 
-.. include:: Product_Overview_power_supplies.table
+.. include:: Primer_power_supplies.table
 
 
-.. _product_overview_accessories:
 .. _primer_accessories:
 
 Zubehör
@@ -276,7 +272,7 @@ Zubehör
        :align: center
        :target: _images/Accessories/dc_jack_adapter_tilted_800.jpg
 
-.. include:: Product_Overview_accessories.table
+.. include:: Primer_accessories.table
 
 
 Konzepte
@@ -293,7 +289,8 @@ Stapel aus Bricks
     :align: center
     :target: _images/Bricks/brick_master_stack_front_big_800.jpg
 
-Bricks können zu einem Stapel zusammengesteckt werden. Ein Master kümmert sich 
+:ref:`Bricks <primer_bricks>` können zu einem Stapel zusammengesteckt werden. 
+Ein :ref:`Master Brick<master_brick>` (als unterstes Brick) kümmert sich 
 um die Kommunikation aller anderen Teilnehmer im Stapel. Er routet Nachrichten 
 zwischen den Teilnehmern und dem steuernden Gerät. Es ist also nur eine USB
 Verbindung notwendig um die Bricks und Bricklets eines Stapels zu steuern.
@@ -317,8 +314,8 @@ Eine generelle Beschreibung der Programmierschnittstelle kann
 :ref:`hier <programming_interface>` gefunden werden. Eine Übersicht der API 
 Bindings für die jeweilige Programmiersprache befindet sich 
 :ref:`hier <api_bindings>`. Die API eines Produkts ist auf der jeweiligen 
-Produktseite dokumentiert. Hier lassen sich auch spezifische Beispiele für jede
-Programmiersprache finden.
+Produktseite dokumentiert. Hier lassen sich auch spezifische Programmbeispiele 
+für jedes Produkt in jeder unterstützen Programmiersprache finden.
 
 Die folgenden Tutorials bilden einen Einstieg in die Verwendung von Bricks und 
 Bricklets:

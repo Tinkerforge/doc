@@ -68,8 +68,9 @@ Features
 Description
 -----------
 
-The Remote Switch :ref:`Bricklet <product_overview_bricklets>` is equipped with
+The Remote Switch :ref:`Bricklet <primer_bricklets>` is equipped with
 a 433MHz RF transceiver (433MHz SMA Antenna is included). It can be used to
+extend :ref:`Bricks <primer_bricks>` by the possibility to
 control remote mains switches that are based on the PT2262 and HX2262 ICs.
 
 House code as well as receiver code can be configured with the API.

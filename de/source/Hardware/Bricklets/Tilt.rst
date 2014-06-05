@@ -62,9 +62,9 @@ Features
 Beschreibung
 ------------
 
-Das Tilt :ref:`Bricklet <product_overview_bricklets>` ist mit einem
-Neigungsschalter ausgestattet. Es kann erkennen ob das Bricklet aktuell
-geneigt ist oder ob es vibriert.
+Das Tilt :ref:`Bricklet <primer_bricklets>` ist mit einem
+Neigungsschalter ausgestattet. :ref:`Bricks <primer_bricks>` können somit 
+erkennen ob das Bricklet aktuell geneigt ist oder ob es vibriert.
 
 Es ist möglich Events zu konfigurieren die automatisch ausgelöst werden 
 wenn sich der Status des Tilt Bricklets ändert.

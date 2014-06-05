@@ -63,8 +63,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem IO-4 :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` um externe digitale Ein- und Ausgänge
+Mit dem IO-4 :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` um externe digitale Ein- und Ausgänge
 (I/Os) erweitert werden.
 
 Das Bricklet besitzt 4 I/O Pins die unabhängig voneinander als Ein- oder Ausgänge

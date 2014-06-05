@@ -51,8 +51,8 @@ Description
 -----------
 
 The Step-Down Power Supply can be used to power a stack of
-:ref:`Bricks <product_overview_bricks>` and
-:ref:`Bricklets <product_overview_bricklets>`.
+:ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>`.
 It is equipped with an efficient step-down controller and can be plugged in
 at the bottom of the stack where it provides the 5V needed for Bricks and
 Bricklets. In addition it feeds the external voltage into the stack power signals.

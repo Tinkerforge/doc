@@ -69,8 +69,8 @@ Features
 Description
 -----------
 
-The Analog In :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` by the
+The Analog In :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to measure voltages.
 The voltage can be read out in `Volt
 <http://en.wikipedia.org/wiki/Volt>`__ directly without conversions necessary.

@@ -68,8 +68,8 @@ Features
 Description
 -----------
 
-The IO-16 :ref:`Bricklet <product_overview_bricklets>` can be used to extend
-the features of :ref:`Bricks <product_overview_bricks>` by external digital
+The IO-16 :ref:`Bricklet <primer_bricklets>` can be used to extend
+the features of :ref:`Bricks <primer_bricks>` by external digital
 inputs and outputs.
 
 The Bricklet features 2x 8 I/O pins that can be independently configured as

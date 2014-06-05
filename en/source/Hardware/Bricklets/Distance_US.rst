@@ -67,9 +67,10 @@ Features
 Description
 -----------
 
-The Distance US :ref:`Bricklet <product_overview_bricklets>` is equipped with
-an `ultrasonic distance sensor <http://en.wikipedia.org/wiki/Ultrasonic_sensor>`__.
-It can measure distances from 2cm to 400cm.
+The Distance US :ref:`Bricklet <primer_bricklets>` is equipped with
+an `ultrasonic distance sensor <http://en.wikipedia.org/wiki/Ultrasonic_sensor>`__
+and extends :ref:`Bricks <primer_bricks>` by the possibility to measure 
+distances from 2cm to 400cm.
 The measured distance is reported as unitless value, not in mm. This is because
 the relation between the distance value and the actual distance depends on the
 exact value of the 5V supply voltage. Deviations in the supply voltage result

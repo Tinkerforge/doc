@@ -63,8 +63,8 @@ Features
 Description
 -----------
 
-The Voltage/Current :ref:`Bricklet <product_overview_bricklets>` can be used to 
-extend :ref:`Bricks <product_overview_bricks>` by the possibility to measure
+The Voltage/Current :ref:`Bricklet <primer_bricklets>` can be used to 
+extend :ref:`Bricks <primer_bricks>` by the possibility to measure
 power/voltage/current. To do this you only have to put the Bricklet between
 your power supply (e.g. battery) and your load (e.g. motor).
 

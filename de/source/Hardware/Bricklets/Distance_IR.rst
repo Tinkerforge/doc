@@ -68,8 +68,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Distance IR :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` Entfernungen messen.
+Mit dem Distance IR :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Entfernungen messen.
 Dieses Bricklet wird auf der Rückseite von analogen
 `Sharp <http://www.sharpsma.com>`__ Infrarot Entfernungssensoren befestigt.
 Nachdem der verbundene Sensor konfiguriert wurde, können die gemessenen

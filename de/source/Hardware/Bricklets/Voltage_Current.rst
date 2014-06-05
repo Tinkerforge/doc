@@ -64,8 +64,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Voltage/Current :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` um die Fähigkeit Leistung/Spannung/Strom
+Mit dem Voltage/Current :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` um die Fähigkeit Leistung/Spannung/Strom
 zu messen erweitert werden. Das Bricklet wird einfach
 zwischen Spannungsversorgung (z.B. Batterie) und Last (z.B. Motor) eingebaut.
 

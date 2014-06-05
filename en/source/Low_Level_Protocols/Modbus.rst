@@ -9,7 +9,7 @@ Modbus Protocol
 This is the API description for the Modbus RTU protocol of the RS485 Extension.
 
 An overview of products that are controllable over Modbus 
-can be found :ref:`here <product_overview>`.
+can be found :ref:`here <primer_products>`.
 
 
 .. _llproto_modbus_protocol:

@@ -56,8 +56,8 @@ Features
 Beschreibung
 ------------
 
-Das Piezo Buzzer :ref:`Bricklet <product_overview_bricklets>` ermöglicht es
-einem :ref:`Bricks <product_overview_bricks>` akustische Signale abzugeben.
+Das Piezo Buzzer :ref:`Bricklet <primer_bricklets>` ermöglicht es
+einem :ref:`Bricks <primer_bricks>` akustische Signale abzugeben.
 Es können 1kHz Pieptöne in verschiedenen Längen ausgegeben werden.
 Die Ausgabe von Morse Codes ist ebenfalls möglich.
 

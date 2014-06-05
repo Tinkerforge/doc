@@ -7,20 +7,20 @@ Programming Interface
 =====================
 
 The Programming Interface uses preprogrammed devices
-(:ref:`Bricks <product_overview_bricks>` and 
-:ref:`Bricklets<product_overview_bricklets>`) that can be controlled by an 
+(:ref:`Bricks <primer_bricks>` and 
+:ref:`Bricklets<primer_bricklets>`) that can be controlled by an 
 (embedded-) PC, tablet or smart phone. Each device has its own unique
 identifier (UID).
 
 The user calls a function implemented in the :ref:`API Bindings <api_bindings>`
 on a UID specified device. This function creates a TCP/IP data package 
-which will be delivered to the :ref:`Brick <product_overview_bricks>` with the
+which will be delivered to the :ref:`Brick <primer_bricks>` with the
 corresponding UID. 
 
 If this Brick is connected via USB to a computer, a 
 program called :ref:`Brick Daemon <brickd>` has to be installed.
 It acts as a translator between TCP/IP and USB. 
-Some :ref:`Master Extensions <product_overview_master_extensions>` can be used
+Some :ref:`Master Extensions <primer_master_extensions>` can be used
 to create a direct TCP/IP connection without the need of another
 computer in between. One example for it is the :ref:`WIFI Extension <wifi_extension>`.
 
@@ -29,7 +29,7 @@ data. For example in case of a ``getTemperature()`` call the Brick will read the
 temperature and send it back. The initial function call blocks until the 
 data package is received and returns the temperature.
 
-In case of calling a :ref:`Bricklet <product_overview_bricklets>` function,
+In case of calling a :ref:`Bricklet <primer_bricklets>` function,
 data is send to the Brick where the Bricklet is attached. The Brick
 calls the corresponding function.
 

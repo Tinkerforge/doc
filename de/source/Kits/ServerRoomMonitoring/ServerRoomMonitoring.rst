@@ -98,7 +98,7 @@ enthalten. Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werde
 und mittels weiterer Temperatursensoren und anderen Module (z.B. 
 Bewegungsdetektoren, Ein-/Ausgabe Modulen (um Computer ein-/auszuschalten oder 
 um Türen zu überwachen) etc.) erweitert werden. Mit den Tinkerforge
-:ref:`Bausteinen<product_overview>` kann das Kit flexibel an die eigenen 
+:ref:`Bausteinen<primer_products>` kann das Kit flexibel an die eigenen 
 Anforderungen angepasst werden.
 
 Ein oder mehrere steuernde Geräte, wie z.B. (Embedded-) PCs, Smartphones
@@ -111,8 +111,8 @@ oder USB versorgt werden.
 Die Soft- und Hardware des Kits können modifiziert werden. Das Gehäuse besteht 
 aus bastelfreundlichem PMMA in das einfach neue Befestigungslöcher gebohrt
 werden können. Befestigungslöcher für verschiedene
-:ref:`Bricks <product_overview_bricks>` und
-:ref:`Bricklets <product_overview_bricklets>` sind bereits vorhanden.
+:ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` sind bereits vorhanden.
 Folgende Module können direkt befestigt werden:
 
 :ref:`Analog In Bricklet <analog_in_bricklet>`,

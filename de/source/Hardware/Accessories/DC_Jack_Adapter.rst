@@ -27,7 +27,7 @@ Beschreibung
 ------------
 
 Dies ist ein Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz.
-Er kann genutzt werden um :ref:`Bricks <product_overview_bricks>` oder
+Er kann genutzt werden um :ref:`Bricks <primer_bricks>` oder
 Stromversorgungen über eine externe Stromversorgung mit einem 5mm DC Stecker
 zu versorgen.
 

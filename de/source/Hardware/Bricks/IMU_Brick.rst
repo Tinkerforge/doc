@@ -60,7 +60,7 @@ Features
 Beschreibung
 ------------
 
-Der IMU :ref:`Brick <product_overview_bricks>` ist mit je einem 3-Achs 
+Der IMU :ref:`Brick <primer_bricks>` ist mit je einem 3-Achs 
 Beschleunigungssensor, Magnetfeldsensor (Kompass) und Gyroskop ausgestattet und
 arbeitet als **USB** 
 `Inertialsensor <http://de.wikipedia.org/wiki/Inertialsensor>`__.
@@ -78,7 +78,7 @@ benutzt wird, ist der IMU Brick
 `Gimbal Lock <http://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei (im Gegensatz 
 zur Euler-Winkel Darstellung).
 
-Über zwei Anschlüsse können :ref:`Bricklets <product_overview_bricklets>` 
+Über zwei Anschlüsse können :ref:`Bricklets <primer_bricklets>` 
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Als Beispiel 
 kann ein :ref:`GPS Bricklet <gps_bricklet>` angeschlossen werden um 
 Positionsdaten zu ermitteln. Ein 
@@ -86,9 +86,10 @@ Positionsdaten zu ermitteln. Ein
 Brick zusammen mit einem :ref:`Barometer Bricklet <barometer_bricklet>` genutzt
 werden kann um die Höhe zu bestimmen.
 
-Der IMU Brick kann aber auch mit anderen Bricks in einem Stapel genutzt werden.
+Der IMU Brick kann aber auch mit anderen Bricks in einem 
+:ref:`Stapel <primer_stack>` genutzt werden.
 Zum Beispiel kann ein zusätzlicher :ref:`Master Brick <master_brick>` mit
-:ref:`Master Extensions <product_overview_master_extensions>` genutzt werden,
+:ref:`Master Extensions <primer_master_extensions>` genutzt werden,
 um die USB Verbindung durch andere kabelgebundene Schnittstellen 
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
 oder drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`) zu ersetzen.

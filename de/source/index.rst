@@ -10,11 +10,14 @@ Dokumentation
 
 .. _index_tutorials:
 
-*****************
-Tutorials und FAQ
-*****************
+***************************
+Einstieg, Tutorials und FAQ
+***************************
 
-Diese Tutorials führen in die Verwendung von Bricks und Bricklets und deren
+Eine allgemeine Beschreibung zu Bricks, Master Extensions Bricklets und den 
+Konzepten befindet sich in der :ref:`Allgemeinen Beschreibung <primer>`.
+
+Tutorials führen in die Verwendung von Bricks und Bricklets und deren
 Konzepte ein:
 
 * :ref:`Erste Schritte <tutorial_first_steps>`
@@ -38,14 +41,14 @@ Antworten auf häufig gestellte Fragen finden sich in den :ref:`FAQ <faq>`.
 Hardware
 ********
 
-Unsere :ref:`Produkte <product_overview>` gliedern sich in fünf verschiedene
+Unsere :ref:`Produkte <primer_products>` gliedern sich in fünf verschiedene
 Kategorien:
 
-* :ref:`product_overview_bricks`
-* :ref:`product_overview_bricklets`
-* :ref:`product_overview_master_extensions`
-* :ref:`product_overview_power_supplies`
-* :ref:`product_overview_accessories`
+* :ref:`primer_bricks`
+* :ref:`primer_bricklets`
+* :ref:`primer_master_extensions`
+* :ref:`primer_power_supplies`
+* :ref:`primer_accessories`
 
 Die :ref:`Timeline <timeline>` gibt eine Übersicht über die Historie
 veröffentlichter Hardware und gemachter Entwicklungen.
@@ -57,7 +60,7 @@ veröffentlichter Hardware und gemachter Entwicklungen.
 .. toctree::
    :hidden:
 
-   Product_Overview
+   Primer
    Timeline
 
 .. toctree::

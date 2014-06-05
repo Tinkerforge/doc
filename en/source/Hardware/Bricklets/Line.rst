@@ -68,8 +68,9 @@ Features
 Description
 -----------
 
-The Line :ref:`Bricklet <product_overview_bricklets>` is equipped with a
-reflective optical sensor. The sensor consists of an infrared emitter and a
+The Line :ref:`Bricklet <primer_bricklets>` can extend 
+:ref:`Bricks <primer_bricks>` by a reflective optical sensor. 
+The sensor consists of an infrared emitter and a
 phototransistor. Output of the sensor is the reflectivity of a surface.
 
 The reflectivity value can be used to detect and follow lines (e.g. a black

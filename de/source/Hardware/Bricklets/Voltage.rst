@@ -56,8 +56,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Voltage :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` Spannungen messen.
+Mit dem Voltage :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Spannungen messen.
 Über eine Schraubklemme wird das Bricklet mit der zu messenden Spannung
 verbunden. Der Messbereich beträgt 0-50V (DC). Die gemessene Spannung kann direkt
 in `Volt <http://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.

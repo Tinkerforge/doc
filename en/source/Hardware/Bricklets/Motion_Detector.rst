@@ -53,10 +53,10 @@ Features
 Description
 -----------
 
-The Motion Detector :ref:`Bricklet <product_overview_bricklets>` is equipped
-with a passive infrared (PIR) sensor. It can be used to sense movement of
-people and animals. It has a configurable detection range of 3m to 7m with a
-sensing angle of 100°.
+The Motion Detector :ref:`Bricklet <primer_bricklets>` is equipped
+with a passive infrared (PIR) sensor. It can be used to extend 
+:ref:`Bricks <primer_bricks>` to sense movement of people and animals. 
+It has a configurable detection range of 3m to 7m with a sensing angle of 100°.
 
 By using configurable events it is possible to react on detected motion without
 polling.

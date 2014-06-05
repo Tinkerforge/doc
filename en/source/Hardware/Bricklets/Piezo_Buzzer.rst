@@ -57,8 +57,8 @@ Description
 -----------
 
 The `Piezo Buzzer <http://en.wikipedia.org/wiki/Buzzer>`__
-:ref:`Bricklet <product_overview_bricklets>` ca be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` by
+:ref:`Bricklet <primer_bricklets>` ca be used to
+extend the features of :ref:`Bricks <primer_bricks>` by
 the capability to beep. The device can output 1kHz beeps in different
 lengths. It is possible to beep for a specified timespan or to transmit a
 `Morse Code <http://en.wikipedia.org/wiki/Morse_code>`__ string.

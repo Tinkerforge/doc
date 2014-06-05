@@ -7,8 +7,8 @@ First steps - Tutorial
 ======================
 
 The following tutorial will demonstrate how to use
-:ref:`Bricks <product_overview_bricks>` and
-:ref:`Bricklets <product_overview_bricklets>`
+:ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>`
 with the :ref:`Programming Interface <programming_interface>`.
 
 In the first part we use the :ref:`DC Brick <dc_brick>`
@@ -25,7 +25,7 @@ Use a single Brick
 
 We choose the DC Brick as a representative throughout
 this tutorial. It is however easily possible to transfer the concepts
-shown to other Bricks. Click :ref:`here <product_overview_bricks>` for
+shown to other Bricks. Click :ref:`here <primer_bricks>` for
 an overview of all available Bricks.
 
 
@@ -142,7 +142,7 @@ Add Bricklets to extend features
 --------------------------------
 
 You can add Bricklets to extend the features of Bricks.
-Click :ref:`here <product_overview_bricklets>` for an overview of available
+Click :ref:`here <primer_bricklets>` for an overview of available
 Bricklets.
 
 To use a Bricklet, connect it to your Brick over the supplied cable
@@ -235,7 +235,7 @@ The master of a stack powers each device of the stack over its USB
 connection with a maximum of 500mA. Every driver Brick in the stack can
 to be powered by its own on-board power-connector. To again reduce wiring and
 save space it is possible to use a
-:ref:`Power Supply <product_overview_power_supplies>`, which
+:ref:`Power Supply <primer_power_supplies>`, which
 is attached at the bottom of the stack (below the Master Brick).
 These boards power the stacks internal power signal.
 That means, that each driver Brick which is not powered by its on-board

@@ -49,8 +49,9 @@ Beschreibung
 ------------
 
 Der Debug Brick kann benutzt werden um Debug-Möglichkeiten wie JTAG und eine
-serielle Konsole zu :ref:`Bricks <product_overview_bricks>`,
-:ref:`Bricklets <product_overview_bricklets>` und Stapeln hinzuzufügen.
+serielle Konsole zu :ref:`Bricks <primer_bricks>`,
+:ref:`Bricklets <primer_bricklets>` und :ref:`Stapeln <primer_stack>` 
+hinzuzufügen.
 
 .. note::
  Ein Debug Brick kann zum Debuggen der Low Level C Firmware von Bricks und

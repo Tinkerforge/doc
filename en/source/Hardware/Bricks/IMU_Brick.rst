@@ -60,7 +60,7 @@ Features
 Description
 -----------
 
-The IMU :ref:`Brick <product_overview_bricks>` is equipped with a 3-axis 
+The IMU :ref:`Brick <primer_bricks>` is equipped with a 3-axis 
 accelerometer, magnetometer (compass) and gyroscope and works as a **USB**
 `inertial measurement unit <http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
 It can measure 9 degrees of freedom and computes
@@ -77,7 +77,7 @@ used, the IMU Brick does not have a
 `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__,
 as known from Euler angles.
 
-Two :ref:`Bricklet <product_overview_bricklets>` ports can be used to extend the 
+Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the 
 features of this Brick. For Example a :ref:`GPS Bricklet <gps_bricklet>` can be
 attached to get position information. 
 A 
@@ -85,12 +85,13 @@ A
 Brick can be used together with a :ref:`Barometer Bricklet <barometer_bricklet>` 
 to gain altitude information.
 
-The IMU Brick can be use together with other Bricks in a stack.
-For example an additional :ref:`Master Brick <master_brick>` with
-:ref:`Master Extension <product_overview_master_extensions>` allows 
-to replace the USB connection by other cable based 
-(:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`) 
-or wireless (:ref:`WIFI <wifi_extension>`) connections.
+The IMU Brick can be use together with other Bricks in a 
+:ref:`stack <primer_stack>`. For example an additional 
+:ref:`Master Brick <master_brick>` with
+:ref:`Master Extension <primer_master_extensions>` allows to replace the USB 
+connection by other cable based (:ref:`RS485 <rs485_extension>`, 
+:ref:`Ethernet <ethernet_extension>`) or wireless (:ref:`WIFI <wifi_extension>`) 
+connections.
 
 
 Technical Specifications

@@ -64,8 +64,8 @@ Features
 Beschreibung
 ------------
 
-Das Industrial Digital Out 4 :ref:`Bricklet <product_overview_bricklets>` kann benutzt werden
-um :ref:`Bricks <product_overview_bricks>` mit vier digitalen Ausgänge zu erweitern.
+Das Industrial Digital Out 4 :ref:`Bricklet <primer_bricklets>` kann benutzt werden
+um :ref:`Bricks <primer_bricks>` mit vier digitalen Ausgänge zu erweitern.
 Die Ausgangsspannung kann bis zu 36 `Volt <http://de.wikipedia.org/wiki/Volt>`__ betragen. 
 Die galvanische Trennung der Ausgänge erlaubt eine Benutzung ohne direkte elektrische
 Verbindung, so dass Masseschleifen vermieden werden können und eine zusätzliche Sicherheit

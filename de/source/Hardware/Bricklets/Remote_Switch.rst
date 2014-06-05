@@ -67,10 +67,10 @@ Features
 Beschreibung
 ------------
 
-Das Remote Switch :ref:`Bricklet <product_overview_bricklets>` ist mit einem
+Das Remote Switch :ref:`Bricklet <primer_bricklets>` ist mit einem
 433MHz Transceiver ausgestattet (433MHz SMA Antenne liegt bei). Es kann genutzt
-werden um alle Funksteckdosen zu steuern die auf dem PT2262 oder HX2262 IC
-basieren.
+werden um über einen :ref:`Brick <primer_bricks>` alle Funksteckdosen zu steuern 
+die auf dem PT2262 oder HX2262 IC basieren.
 
 Housecode und Receivercode der zu schaltenden Steckdose können über die
 API konfiguriert werden.

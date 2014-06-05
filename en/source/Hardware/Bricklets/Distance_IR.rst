@@ -68,8 +68,8 @@ Features
 Description
 -----------
 
-The Distance IR :ref:`Bricklet <product_overview_bricklets>` can be used to
-extend the features of :ref:`Bricks <product_overview_bricks>` by the
+The Distance IR :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to measure distances. `Sharp <http://www.sharpsma.com>`__ analog
 infrared proximity sensors can be attached to the Bricklet.
 After configuring the attached sensor you can read out the measured distance

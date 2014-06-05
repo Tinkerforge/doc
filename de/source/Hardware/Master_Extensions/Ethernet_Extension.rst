@@ -51,8 +51,8 @@ Features
 Beschreibung
 ------------
 
-Mit dieser Ethernet Extension können :ref:`Bricks <product_overview_bricks>` und
-:ref:`Bricklets <product_overview_bricklets>` in ein 
+Mit dieser Ethernet Extension können :ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` in ein 
 `LAN <https://de.wikipedia.org/wiki/Local_Area_Network>`__ integriert 
 werden. 10BaseT/100BaseTX Ethernet wird unterstützt und das Modul ist 
 1000BaseTX kompatibel. Die Extension wird in zwei Varianten angeboten:

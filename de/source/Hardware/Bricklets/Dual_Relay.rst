@@ -62,8 +62,8 @@ Features
 Beschreibung
 ------------
 
-Mit dem Dual Relay :ref:`Bricklet <product_overview_bricklets>` können
-:ref:`Bricks <product_overview_bricks>` um zwei
+Mit dem Dual Relay :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` um zwei
 `Relais <http://de.wikipedia.org/wiki/Relais>`__ erweitert werden.
 Jedes Relais besitzt drei Anschlüsse, der mittlere wird zwischen den beiden
 äußeren umgeschaltet. Der Schaltzustand wird jeweils durch eine LED angezeigt.
