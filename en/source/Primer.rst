@@ -277,6 +277,12 @@ Concepts
 Stack of Bricks
 ^^^^^^^^^^^^^^^
 
+.. image:: /Images/Bricks/brick_master_stack_front_big_350.jpg
+    :scale: 100 %
+    :alt: Image of Stack of Bricks
+    :align: center
+    :target: _images/Bricks/brick_master_stack_front_big_800.jpg
+
 :ref:`Bricks <primer_bricks>` can be stacked. A 
 :ref:`Master Brick <master_brick>` (as the lowermost Brick) is responsible for 
 the communication between all boards within the stack. This master routes the 
