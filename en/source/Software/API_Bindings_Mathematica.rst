@@ -45,7 +45,7 @@ Replace the ``NotebookDirectory[]<>"../.."`` parameter with an absolute path
 to the folder that contains the ``Tinkerforge.dll``.
 
 Here's an another :ref:`example <temperature_bricklet_mathematica_examples>`
-showing a dynamic plot of Temprature Bricklet measurements. The drop at sample
+showing a dynamic plot of Temperature Bricklet measurements. The drop at sample
 82 was created using a freezer spray.
 
 .. image:: /Images/Screenshots/mathematica_example.jpg

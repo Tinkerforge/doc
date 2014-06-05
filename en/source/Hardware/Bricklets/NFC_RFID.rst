@@ -218,7 +218,7 @@ NFC NDEF Messages
 -----------------
 
 The NFC Forum has specified the NFC Data Exchange Format (NDEF) to 
-trasfer messages from NFC tags to smart phones. NDEF Messages
+transfer messages from NFC tags to smart phones. NDEF Messages
 consist of one or more NDEF Records. Many of te predefined
 NDEF Records can be understood by any smart phone that is capable
 of NFC communication.
