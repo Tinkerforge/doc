@@ -7,7 +7,7 @@ Primer
 ======
 
 The following description gives an overview for the different products and 
-concepts of the Tinkerforge building block systen. A detailed description of
+concepts of the Tinkerforge building block system. A detailed description of
 the functions and offered APIs can be found in the documentation of each 
 product. 
 
@@ -80,7 +80,7 @@ task. There are Bricks that perform complex sensor tasks (e.g.
 (e.g. :ref:`DC Brick <dc_brick>`).
 
 With :ref:`Bricklets <primer_bricklets>` the features of Bricks can
-be extended. Dependend on the Brick it has two or four connectors for Bricklets.
+be extended. Dependent on the Brick it has two or four connectors for Bricklets.
 
 Bricks can be assembled into a stack (see 
 :ref:`description of stack concept <primer_stack>`). The USB interface of a 
@@ -158,7 +158,7 @@ size possible. Each Brick has up to four connectors for Bricklets. Bricklets
 can be controlled over the USB connection of the connected Brick.
 
 Bricklets are not equipped with processors but possess their own API.
-From the programmer perspective they are handeled as an indepentent modules.
+From the programmer perspective they are handeled as an independent modules.
 On startup a Brick detects connected Bricklets. The Bricklet plugins,
 stored in the `EEPROM <http://en.wikipedia.org/wiki/EEPROM>`__ of the Bricklet,
 are loaded into the flash of the Brick. This adds new functions to the Brick,
@@ -289,7 +289,7 @@ information about how to use stacks.
 
 With :ref:`Master Extensions <primer_master_extensions>` the USB interface of
 a stack can be replaced by Ethernet, WIFI or RS485. If the USB connection does
-not deliver enogh power :ref:`power supplies <primer_power_supplies>` can be
+not deliver enough power :ref:`power supplies <primer_power_supplies>` can be
 used to power the stack.
 
 .. _primer_programming:
@@ -297,7 +297,7 @@ used to power the stack.
 Programming/API
 ^^^^^^^^^^^^^^^
 
-A general descrption of the programming interface can be found 
+A general description of the programming interface can be found 
 :ref:`here <programming_interface>`. An overview of the API bindings for each
 programming language is given :ref:`here <api_bindings>`. The API of each 
 product can be found on each product document page. Additional there can be 
