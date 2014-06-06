@@ -6,21 +6,9 @@
 FAQ
 ===
 
-Ich habe etwas aktualisiert und jetzt funktioniert es nicht mehr
-----------------------------------------------------------------
-
-Es handelt sich vermutlich um ein Problem mit inkompatiblen Versionen.
-Am 22. Januar haben wir eine neue Protokollversion veröffentlicht:
-Protokoll 2.0. Die Art und Weise wie Bricks und Bricklets
-untereinander und mit dem Brick Daemon kommunizieren hat sich
-dadurch geändert. Es gibt auch kleine Änderungen in der API. Es ist
-daher notwendig, dass die Programmiersprachen Bindings, der Brick
-Daemon, der Brick Viewer und die Firmwares/Plugins der Bricks/Bricklets
-auf den neuesten Stand gebraucht werden. Alle Versionen müssen mit
-einer "2" beginnen um miteinander kompatibel zu sein.
-
-Eine Anleitung zum Aktualisieren gibt es
-:ref:`hier <transition_1to2>`.
+Allgemeine Informationen zu Bricks, Bricklets und Master Extensions sowie
+zu deren Benutzung können auf der :ref:`Einführungsseite <primer>` gefunden 
+werden.
 
 
 .. _faq_brick_hot:
@@ -212,3 +200,19 @@ Es kann sein, dass serielle Schnittstellen auf Linux nicht für User zugreifbar
 konfiguriert sind. Sie tauchen in Brick Viewer auf, beim Versuch zu Flashen
 wird aber eine Fehlermeldung ausgegeben. Dieses Problem kann umgangen werden,
 indem zum Flashen Brick Viewer als ``root`` gestartet wird.
+
+Ich habe etwas aktualisiert und jetzt funktioniert es nicht mehr
+----------------------------------------------------------------
+
+Es handelt sich vermutlich um ein Problem mit inkompatiblen Versionen.
+Am 22. Januar 2013 haben wir eine neue Protokollversion veröffentlicht:
+Protokoll 2.0. Die Art und Weise wie Bricks und Bricklets
+untereinander und mit dem Brick Daemon kommunizieren hat sich
+dadurch geändert. Es gibt auch kleine Änderungen in der API. Es ist
+daher notwendig, dass die Programmiersprachen Bindings, der Brick
+Daemon, der Brick Viewer und die Firmwares/Plugins der Bricks/Bricklets
+auf den neuesten Stand gebraucht werden. Alle Versionen müssen mit
+einer "2" beginnen um miteinander kompatibel zu sein.
+
+Eine Anleitung zum Aktualisieren gibt es
+:ref:`hier <transition_1to2>`.

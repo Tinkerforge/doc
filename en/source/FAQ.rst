@@ -6,19 +6,8 @@
 FAQ
 ===
 
-I updated something and now it doesn't work anymore
----------------------------------------------------
-
-You probably have a version mismatch. On January 22nd we released a new 
-protocol version, Protocol 2.0. This means that the way Bricks and Bricklets
-communicate with each other and with the Brick Daemon has changed. Also
-there are small changes in the API. You need to update your
-language Bindings, the Brick Daemon, the Brick Viewer and the 
-Firmwares/Plugins of your Bricks/Bricklets to a version starting with "2".
-
-To do this you can use the :ref:`transitioning guide <transition_1to2>`. 
-It also describes how to port already existing code to the new protocol. 
-
+General information about Bricks, Bricklets and Master Extensions as well as how 
+to use them can be found in the :ref:`Primer <primer>`.
 
 .. _faq_brick_hot:
 
@@ -201,3 +190,19 @@ from the stack to make the bootloader mode work correctly.
 Serial devices might not be user-accessible on Linux. The device is listed in
 Brick Viewer, but an error is reported if you try to flash the Brick. As
 workaround start Brick Viewer as ``root``.
+
+
+I updated something and now it doesn't work anymore
+---------------------------------------------------
+
+You probably have a version mismatch. On January 22nd 2013 we released a new 
+protocol version, Protocol 2.0. This means that the way Bricks and Bricklets
+communicate with each other and with the Brick Daemon has changed. Also
+there are small changes in the API. You need to update your
+language Bindings, the Brick Daemon, the Brick Viewer and the 
+Firmwares/Plugins of your Bricks/Bricklets to a version starting with "2".
+
+To do this you can use the :ref:`transitioning guide <transition_1to2>`. 
+It also describes how to port already existing code to the new protocol. 
+
+
