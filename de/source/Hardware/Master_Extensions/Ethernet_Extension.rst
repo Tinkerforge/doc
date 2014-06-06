@@ -68,7 +68,8 @@ ist es möglich direkt vom Smartphone, Tablet oder (Embedded) PC zu steuern.
 Der :ref:`Brick Daemon <brickd>` ist nicht mehr notwendig.
 
 Um die Ethernet Extension zu nutzen ist ein :ref:`Master Brick <master_brick>` 
-notwendig. Wenn andere Bricks gesteuert werden sollen, so kann ein Stapel aus 
+notwendig. Wenn andere Bricks gesteuert werden sollen, so kann ein 
+:ref:`Stapel <primer_stack>` aus 
 diesen gebaut werden und auf der Master Brick gesteckt werden. Wenn Bricklets 
 verwendet werden sollen, so können diese einfach an den Master Brick oder 
 andere Bricks im Stapel angeschlossen werden. Aus Programmierersicht ist 

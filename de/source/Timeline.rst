@@ -61,3 +61,5 @@ Historie
    "",     "10", "`LabVIEW Bindings <http://www.tinkerforge.com/de/blog/2014/3/6/labview-bindings-fertig>`__"
    "",     "15", "`JavaScript Bindings für Browser/Node.js und Authentifizierung <http://www.tinkerforge.com/de/blog/2014/4/9/javascript-bindings-fuer-browser-nodejs-und-authentifizierung>`__"
    "",     "15", "`RED Brick: Prototyp-Leiterplatten <http://www.tinkerforge.com/de/blog/2014/4/10/red-brick-leiterplatten-angekommen>`__"
+   "",     "20", "`RED Brick: Bugfixes <http://www.tinkerforge.com/de/blog/2014/5/13/neuigkeiten-zum-red-brick>`__"
+   "",     "21", "`RED Brick: Erste Tests abgeschlossen <http://www.tinkerforge.com/de/blog/2014/5/21/red-brick:-tut-es-oder-tut-es-nicht>`__"

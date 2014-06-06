@@ -300,7 +300,9 @@ per USB am Gerät angeschlossen. Das :ref:`Stapel Tutorial
 Stapel.
 
 Über :ref:`Master Extensions <primer_master_extensions>` kann die USB
-Verbindung eines Stapels durch Ethernet, WLAN (WIFI) oder RS485 ersetzt werden.
+Verbindung eines Stapels durch :ref:`Ethernet <ethernet_extension>`, 
+:ref:`WLAN (WIFI) <wifi_extension>` oder 
+:ref:`RS485 <rs485_extension>` ersetzt werden.
 Reicht die USB Stromversorgung nicht aus, kann ein Stapel auch mit einer 
 :ref:`Stromversorgung <primer_power_supplies>` versorgt werden.
 

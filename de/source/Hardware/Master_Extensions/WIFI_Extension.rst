@@ -77,7 +77,8 @@ Da die Extension selbst die von der API generierten TCP/IP Pakete behandeln kann
 Smartphone, Tablet oder (Embedded) PC zu steuern. Der :ref:`Brick Daemon <brickd>` ist dann nicht mehr notwendig.
 
 Um die WIFI Extension zu nutzen ist ein :ref:`Master Brick <master_brick>` notwendig.
-Wenn andere Bricks gesteuert werden sollen, so kann ein Stapel aus diesen gebaut werden
+Wenn andere Bricks gesteuert werden sollen, so kann ein :ref:`Stapel <primer_stack>` 
+aus diesen gebaut werden
 und auf der Master Brick gesteckt werden. Wenn Bricklets verwendet werden sollen,
 so können diese einfach an der Master Brick oder andere Bricks im Stapel angeschlossen werden.
 Aus der Programmierersicht ist dies absolut transparent, d.h. alle Bricks und Bricklets können

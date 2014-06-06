@@ -294,9 +294,10 @@ separately over USB with the device. The
 information about how to use stacks.
 
 With :ref:`Master Extensions <primer_master_extensions>` the USB interface of
-a stack can be replaced by Ethernet, WIFI or RS485. If the USB connection does
-not deliver enough power :ref:`power supplies <primer_power_supplies>` can be
-used to power the stack.
+a stack can be replaced by :ref:`Ethernet <ethernet_extension>`, 
+:ref:`WIFI <wifi_extension>` or :ref:`RS485 <rs485_extension>`. 
+If the USB connection does not deliver enough power 
+:ref:`power supplies <primer_power_supplies>` can be used to power the stack.
 
 .. _primer_programming:
 

@@ -60,3 +60,5 @@ History
    "",     "10", "`LabVIEW bindings <http://www.tinkerforge.com/en/blog/2014/3/6/labview-bindings-ready>`__"
    "",     "15", "`JavaScript bindings for browser/Node.js and authentication <http://www.tinkerforge.com/en/blog/2014/4/9/javascript-bindings-for-browser-node-js-and-authentication>`__"
    "",     "15", "`RED Brick: Prototype-PCBs <http://www.tinkerforge.com/en/blog/2014/4/10/red-brick-circuit-boards-arrived>`__"
+   "",     "20", "`RED Brick: Bugfixes <http://www.tinkerforge.com/en/blog/2014/5/13/red-brick-news>`__"
+   "",     "21", "`RED Brick: First Testing Completed <http://www.tinkerforge.com/en/blog/2014/5/23/red-brick:-does-it-work>`__"

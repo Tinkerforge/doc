@@ -66,7 +66,9 @@ Altimeter (Höhenmesser) genutzt werden kann. Da der Luftdruck sich schon über
 kurze Zeiträume signifikant ändern kann ist die erreichbare Genauigkeit begrenzt.
 Eine mögliche Lösung um die Genauigkeit und Stabilität der Höhenmessung zu
 steigern ist Sensorfusion mit den Sensordaten eines :ref:`IMU Bricks <imu_brick>`
-durchzuführen.
+durchzuführen (siehe 
+`Youtube video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
+
 
 Technische Spezifikation
 ------------------------

@@ -51,8 +51,8 @@ Beschreibung
 ------------
 
 
-Die Step-Down Power Supply kann verwendet werden um einen Stapel von
-:ref:`Bricks <primer_bricks>` und
+Die Step-Down Power Supply kann verwendet werden um einen 
+:ref:`Stapel <primer_stack>` von :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` mit Strom zu versorgen.
 Sie ist mit einem effizienten Step-Down Regler ausgestattet und wird unter
 einen Stapel gesteckt. Von dort stellt sie die 5V bereit die von Bricks und

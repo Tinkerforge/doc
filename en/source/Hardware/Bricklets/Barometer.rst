@@ -66,7 +66,8 @@ The Bricklet is equipped with a MS5611-01BA01 sensor which is designed to be
 used as an altimeter, too. But since the air pressure is changing significantly
 even over a short period time the achievable accuracy is limited. One possible
 solution to achieve higher accuracy and stability of the altitude measurement is
-to perform sensor fusion with the sensor data of an :ref:`IMU Brick <imu_brick>`.
+to perform sensor fusion with the sensor data of an :ref:`IMU Brick <imu_brick>`
+(see `Youtube video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
 
 Technical Specifications
