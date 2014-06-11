@@ -130,7 +130,7 @@ Beispiel Implementierungen und Anwendungen für die Benutzung mit
 weitere werden nachfolgend zur Verfügung gestellt.
 
 **Seit dem 22. Januar 2014 wird die Vorderseite des Gehäuses aus
-pulverbeschichteten Aluminium anstatt PMMA gefertige:**
+pulverbeschichteten Aluminium anstatt aus PMMA gefertigt:**
 
 .. image:: /Images/Kits/server_room_monitoring_alu_surface_350.jpg
    :scale: 100 %
