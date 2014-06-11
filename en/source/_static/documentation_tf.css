@@ -158,7 +158,6 @@ div.body h6 {
 	background-color: transparent;
 	font-weight: normal;
 	color: #565656;
-	border-bottom: 1px solid #00AAEA;
 	margin: 20px -10px 10px -10px;
 	padding: 0px 10px;
 }
@@ -176,28 +175,27 @@ div.body h1 {
 
 div.body h2 {
 	font-size: 18px;
+	border-bottom: 2px solid #00AAEA;
 }
 
 div.body h3 {
 	font-size: 16px;
-	padding: 0px 20px;
 	border-bottom: 1px solid #00AAEA;
 }
 
 div.body h4 {
 	font-size: 14px;
-	padding: 0px 30px;
-	border-bottom: 1px solid #00AAEA;
+	border-bottom: 1px dashed #00AAEA;
 }
 
 div.body h5 {
 	font-size: 12px;
-	padding: 0px 40px;
+	border-bottom: 1px dotted #00AAEA;
 }
 
 div.body h6 {
 	font-size: 10px;
-	padding: 0px 50px;
+	border-bottom: 1px dotted #00AAEA;
 }
 
 div.body a {
@@ -636,7 +634,7 @@ div.partnertext {
 }
 
 div.partnertext p.rubric {
-	border-bottom: 1px solid #00AAEA;
+	border-bottom: 2px solid #00AAEA;
 	margin-left: -10px;
 	margin-right: -10px;
 	margin-bottom: 10px;
