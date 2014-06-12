@@ -157,6 +157,15 @@ A `laser-cut case for the Humidity Bricklet
 |bricklet_case_hint|
 
 
+Troubleshooting
+---------------
+
+If enough liquid water forms on the sensor under condensing conditions, this
+water can create a leakage path. This leads to an erroneous reading of 0% 
+humidity. Once this water evaporates the sensor returns to normal functionality.
+If you want to use the sensor under heavy condensing conditions mount it top 
+side down. If this not suffice protect it e.g by foam.
+
 .. _humidity_bricklet_programming_interface:
 
 Programming Interface
