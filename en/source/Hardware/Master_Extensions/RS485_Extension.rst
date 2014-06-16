@@ -48,12 +48,13 @@ To establish a RS485 bus with :ref:`Bricks <primer_bricks>`, two RS485
 Extensions and two :ref:`Master Bricks <master_brick>` are needed. Both Master 
 Bricks can be connected to a full stack of Bricks and 
 :ref:`Bricklets <primer_bricklets>`, whereas one Master Brick is 
-Battery powered and one is connected with USB. From a programming perspective
+battery powered and one is connected with USB, Ethernet or WIFI to a PC. From a
+programming perspective
 the RS485 bus is completely transparent, i.e. the two stacks can
 be used exactly the same way as if they were both connected via USB.
 
 It is also possible to create a bus with several RS485 Extension where
-only one is connected via USB (many-to-one routing).
+only one is connected via USB, Ethernet or WIFI to a PC (many-to-one routing).
 
 :ref:`Modbus RTU <llproto_modbus>` is used as the
 protocol on the RS485 interface. This allows to use a stack of Bricks
@@ -115,15 +116,15 @@ RS485 Bus Assembly
 ------------------
 
 A RS485 bus consists of one master and multiple slaves.
-RS485 master is the Master Brick which has a USB connection to the PC
-running brickd. All the other Master Bricks with RS485 Extension must not have
-a USB connection (they can use a USB Power Supply).
+RS485 master is the Master Brick which has a USB, Ethernet or WIFI connection
+to the PC running brickd. All the other Master Bricks with RS485 Extension
+must not have a USB, Ethernet or WIFI connection (they can use a USB Power Supply).
 Each RS485 slave is identified with its own ID. The IDs have
 to be unique on the bus.
 
 To create a RS485 bus, stack the RS485 Extension on top of a Master Brick.
-Connect the Master Brick via USB with your PC and start the Brick Viewer
-software. You should see the Master Brick view
+Connect the Master Brick via USB, Ethernet or WIFI with your PC and start the
+Brick Viewer software. You should see the Master Brick view
 with the identified RS485 Extension (see images below). Configure the extension
 as slave or master (as described :ref:`here <rs485_configuration>`).
 

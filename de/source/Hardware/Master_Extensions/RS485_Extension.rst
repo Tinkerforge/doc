@@ -49,12 +49,13 @@ Für einen RS485 Bus mit :ref:`Bricks <primer_bricks>` werden zwei RS485
 Extension und zwei :ref:`Master Bricks <master_brick>` benötigt. Beide Master 
 Bricks können mit einem vollen Stapel aus Bricks und 
 :ref:`Bricklets <primer_bricklets>` verbunden sein. Dabei muss ein 
-Master per USB mit dem PC verbunden sein. Aus Programmierer-Sicht ist der RS485 
+Master per USB, Ethernet oder WLAN mit dem PC verbunden sein. Aus
+Programmierer-Sicht ist der RS485
 Bus vollkommen transparent, d.h. alle Bricks und Bricklets können genauso 
 benutzt werden als wenn sie einzeln per USB angeschlossen wären.
 
 Es ist möglich einen Bus mit mehreren RS485 Extension zu betreiben, dabei
-muss einer per USB verbunden sein (Many-to-One Routing).
+muss einer per USB, Ethernet oder WLAN verbunden sein (Many-to-One Routing).
 
 :ref:`Modbus RTU <llproto_modbus>` wird als Protokoll auf der RS485
 Schnittstelle genutzt. Dadurch ist es möglich Stapel aus Bricks und Bricklets
@@ -115,14 +116,17 @@ RS485 Busaufbau
 ---------------
 
 Ein RS485 Bus besteht aus einem Master und mehreren Slaves. Der RS485
-Master ist der Master Brick der per USB an den PC angeschlossen ist auf dem
+Master ist der Master Brick der per USB, Ethernet oder WLAN an den PC
+angeschlossen ist auf dem
 der Brick Daemon läuft. Alle anderen Master Bricks mit RS485 Extension dürfen
-keine USB Verbindung haben (sie können allerdings seit Master Brick Firmware
+keine USB, Ethernet or WIFI Verbindung haben (sie können allerdings seit
+Master Brick Firmware
 1.1.3 eine USB Power Supply verwenden). Jede RS485 Extension hat eine eigene
 Adresse. Diese Adressen müssen innerhalb des Buses eindeutig sein.
 
 Um einen RS485 Bus aufzubauen muss zuerst die RS485 Extension auf einen
-Master Brick gesteckt werden und der Master Brick über USB mit dem PC verbunden
+Master Brick gesteckt werden und der Master Brick über USB, Ethernet oder WLAN
+mit dem PC verbunden
 werden. Im Brick Viewer sollte jetzt ein Master Brick mit erkannter RS485
 Extension angezeigt werden. Die RS485 Extension muss jetzt als Master oder
 Slave konfiguriert werden wie :ref:`hier <rs485_configuration>` beschrieben.
