@@ -35,14 +35,12 @@ Resources
 ---------
 
 
-
 FAQ
 ---
 
-Q: I connected the RED Brick to my Linux PC. Why is there no ``/dev/ttyACM0``
-   device to access its serial console?
-A: The ``cdc_acm`` driver has to be loaded for this to work.
-
+* Q: I connected the RED Brick to my Linux PC. Why is there no ``/dev/ttyACM0``
+  device to access its serial console?
+* A: The ``cdc_acm`` driver has to be loaded for this to work.
 
 
 .. _red_brick_connectivity:
