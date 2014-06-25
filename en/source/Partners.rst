@@ -166,37 +166,6 @@ Partners
 
   .. container:: partnerlogo
 
-    .. image:: /Images/Misc/siteos-logo.jpg
-       :alt: Site OS AG logo
-       :align: center
-       :target: http://www.siteos.de/
-
-  .. container:: partnertext
-
-    .. rubric:: SiteOS AG
-
-    The `SiteOS AG <http://www.siteos.de/>`__ is the partner for the conception, 
-    development and integration of custom software solutions. As professional 
-    full service provider for 
-    projects of different magnitudes and businesses the SiteOS AG delivers 
-    impulses for solutions and technologies.
-
-    Since year 2000 the SiteOS AG transfers her expertise and expert knowledge
-    in the sectors desktop and web. Very early the SiteOS AG had embedded 
-    diverse media. IoT (Internet of Things) / Industry 4.0 was the next logical 
-    step.
-
-    Together with Tinkerforge a perfect combination of hard- and software is
-    formed.
-
-
-
-
-
-.. container::
-
-  .. container:: partnerlogo
-
     .. image:: /Images/Misc/xively-logo.png
        :alt: Xively logo
        :align: center
