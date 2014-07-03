@@ -92,7 +92,8 @@ Description
 -----------
 
 The LED Strip :ref:`Bricklet <primer_bricklets>` can be used to
-control LED strips and LED pixels that are equipped with the WS2801 LED driver. 
+control LED strips and LED pixels that are equipped with the WS2801, WS2811 or
+WS2812 LED driver.
 It is possible to independently control 320 RGB LEDs (960 individual LEDs) over
 the connected :ref:`Brick <primer_bricks>`.
 
@@ -110,7 +111,7 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Supported LED Driver              WS2801
+Supported LED Drivers             WS2801, WS2811 and WS2812
 Current Consumption               1mA (idle), 4mA (active)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -155,23 +156,27 @@ If everything went as expected you can now control a LED strip.
 |test_pi_ref|
 
 
-.. _led_strip_bricklet_ws2801:
+.. _led_strip_bricklet_ws28xy:
 
-WS2801
-------
+WS2801, WS2811 und WS2812
+-------------------------
 
-At the moment the LED Strip Bricklets supports LED strips and pixels 
-equipped with the WS2801 driver chip (more driver chip types should follow).
+The LED Strip Bricklet supports LED strips and pixels equipped with the
+WS2801, WS2811 or WS2812 driver chip. WS28xy refers to any of these chips.
 
-The WS2801 chip can control three LEDs independently.
-Typically a RGB LED combined in one package is used. It is controlled over
-a three wire chained data bus with clock, data signal and ground as voltage 
+You have to configure which of this driver chips you want to use with the
+Brick Viewer or the ``set_chip_type()`` function of the LED Strip Bricklet.
+WS2811 and WS2812 requires LED Strip Bricklet plugin version 2.0.2 or newer.
+
+The WS28xy chips can control three LEDs independently. Typically a RGB LED
+combined in one package is used. It is controlled over a three or two wire
+chained data bus with clock (WS2801 only), data signal and ground as voltage
 reference (`daisy chain <http://en.wikipedia.org/wiki/Daisy_chain_(electrical_engineering)>`__).
-Each WS2801 chip has a bus input connected to a controlling 
-device such as the LED Strip Bricklet or to a WS2801 predecessor and a 
-bus output which can be connected to a subsequent WS2801 chip.
+Each WS28xy chip has a bus input connected to a controlling
+device such as the LED Strip Bricklet or to a WS28xy predecessor and a
+bus output which can be connected to a subsequent WS28xy chip.
 Since it is a chained bus, a single bus output has to be connected only
-to a single bus input. The bus is indexed beginning with the first WS2801 on the 
+to a single bus input. The bus is indexed beginning with the first WS28xy on the
 LED Strip Bricklet (API index 0).
 
 .. image:: /Images/Bricklets/bricklet_led_strip_strip_example_600.jpg
@@ -181,8 +186,10 @@ LED Strip Bricklet (API index 0).
    :target: ../../_images/Bricklets/bricklet_led_strip_strip_example_800.jpg
 
 The above picture depicts a typical WS2801 LED strip. You can see each module
-equipped with one WS2801 chip and a connected RGB LED. Recognize the signal labels
-for input (IN) and output (OUT): 5V, CK (clock), SD (serial data) and GND.
+equipped with one WS2801 chip and a connected RGB LED. Recognize the signal
+labels for input (IN) and output (OUT): 5V, CK (clock), SD (serial data) and GND.
+In contrast to the WS2801, the WS2811 and WS2812 driver chips don't have a
+clock signal.
 
 
 .. _led_strip_bricklet_connectivity:
@@ -198,15 +205,15 @@ The following image depicts the interfaces of the LED Strip Bricklet.
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
-As described in the :ref:`WS2801 section <led_strip_bricklet_ws2801>` above,
-the Bricklet supports LED strips and pixels with WS2801 driver.
+As described in the :ref:`WS28xy section <led_strip_bricklet_ws28xy>` above,
+the Bricklet supports LED strips and pixels with WS2801, WS2811 or WS2812 driver.
 The terminal labeled with "Output" has to be connected with the input of
-the first WS2801 driver.
+the first WS28xy driver.
 
 The output terminal consists of four signals:
 
-* "DAT" is the data signal line to the WS2801 chip. It has to be connected to
-  the data input of the first WS2801 chip. Unfortunately there is no
+* "DAT" is the data signal line to the WS28xy chip. It has to be connected to
+  the data input of the first WS28xy chip. Unfortunately there is no
   general label on LED pixels or on LED strips for this input. Sometimes the 
   signal is marked with SD (Serial Data) or DI (Data Input). It is also 
   possible that the input of the pixel or strip is not marked, but the output 
@@ -217,6 +224,9 @@ The output terminal consists of four signals:
   with the clock input of the first WS2801 chip. This input is typically labeled
   with CLK, CK or CI (Clock Input). If only the output is labeled it can be 
   labeled with CO (Clock Output).
+
+  The WS2811 and WS2812 chips don't have a clock signal, leave the "CLK"
+  terminal unconnected form them.
 
 * "-" is the ground signal line. Ground is necessary to give a reference for the
   DAT and CLK signals.
@@ -268,10 +278,10 @@ LED Strips
 
 There is no general color code for LED strips. Especially sometimes the color 
 codes are against any agreements. In this example the black wire is
-:led-strip-black:`5V`, green is :led-strip-green:`clock`, red is
+:led-strip-black:`5V`, green is :led-strip-green:`clock` (WS2801 only), red is
 :led-strip-red:`data` and the blue wire is :led-strip-blue:`ground`.
 
-Connect clock and data of the first strip to the LED Strip Bricklet and 
+Connect clock (WS2801 only) and data of the first strip to the LED Strip Bricklet and
 connect ground of your power supply to it. Pay attention to connect the clock 
 and data **input** of the first strip to the clock and data **output** of the
 LED Strip Bricklet.
@@ -301,12 +311,13 @@ LED Pixels
 The connection of LED pixels to the LED Strip Bricklet is similar to the
 connection of LED strips. There is no general color code for LED pixels. 
 In the following example the red wire is :led-pixel-red:`5V`,
-blue is :led-pixel-blue:`ground`, :led-pixel-green:`clock` is green and
-:led-pixel-white:`data` is the white wire.
+blue is :led-pixel-blue:`ground`, :led-pixel-green:`clock` (WS2801 only) is
+green and :led-pixel-white:`data` is the white wire.
 
-Connect clock and data of the first bunch of pixels to the LED Strip Bricklet 
-and connect ground to it. Pay attention to connect the clock and data **input**
-of the first pixel to the clock and data **output** of the LED Strip Bricklet.
+Connect clock (WS2801 only) and data of the first bunch of pixels to the
+LED Strip Bricklet and connect ground to it. Pay attention to connect
+the clock (WS2801 only) and data **input** of the first pixel to the
+clock (WS2801 only) and data **output** of the LED Strip Bricklet.
 If you want to measure the voltage of your power supply connect 5V to the 
 Bricklet, too. You can connect more bunches of LED pixel to the first bunch in 
 series (have the :ref:`RAM constraints <led_strip_bricklet_ram_constraints>` in 
@@ -332,14 +343,14 @@ Fixed Frame Rate
 
 To achieve a smooth animation a fixed frame rate is desirable. A fixed frame
 rate is easy to achieve with a properly configured frame duration and the 
-FrameRendered callback. The frame duration configures the amount of time
-between each frame in ms. The FrameRendered callback is triggered after
+``FrameRendered`` callback. The frame duration configures the amount of time
+between each frame in ms. The ``FrameRendered`` callback is triggered after
 a frame is transfered to the LEDs.
 
 For example, if you want to have an animation with 20 frames per second, you
 should set the frame duration to 50ms. After the frame duration is set you
 need to send the first frame (i.e. you need to set all RGB values), wait
-until the FrameRendered callback is triggered, write the next frame and so on.
+until the ``FrameRendered`` callback is triggered, write the next frame and so on.
 
 .. image:: /Images/Bricklets/bricklet_led_strip_fixed_frame_rate_230.png
    :scale: 100 %
@@ -347,7 +358,7 @@ until the FrameRendered callback is triggered, write the next frame and so on.
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_fixed_frame_rate.png
 
-If you receive a FrameRendered callback before all LEDs are set, your frame
+If you receive a ``FrameRendered`` callback before all LEDs are set, your frame
 rate is too high.
 
 

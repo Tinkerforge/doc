@@ -91,17 +91,15 @@ Features
 Beschreibung
 ------------
 
-Das LED Strip :ref:`Bricklet <primer_bricklets>` kann genutzt werden
-um LED Streifen und LED Pixel zu steuern, die mit einem WS2801 LED-Treiber
-ausgestattet sind. Es ist möglich 320 RGB LEDs (960 einzelne LEDs) unabhängig
-voneinander über ein :ref:`Brick <primer_bricks>` zu steuern.
+Das LED Strip :ref:`Bricklet <primer_bricklets>` kann genutzt werden um LED
+Streifen und LED Pixel zu steuern, die mit einem WS2801, WS2811 oder WS2812
+LED-Treiber ausgestattet sind. Es ist möglich 320 RGB LEDs (960 einzelne LEDs)
+unabhängig voneinander über ein :ref:`Brick <primer_bricks>` zu steuern.
 
 Mit Hilfe der API können alle LEDs gleichzeitig mit einer festen
 Aktualisierungsrate von bis zu 100Hz gesteuert werden.  Ein Anwendungsbeispiel
-findet man im 
-:ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`: 
+findet man im :ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`:
 `Video <http://www.youtube.com/watch?v=mmNRa-lLaXM>`__
-
 
 Brick Daemon 2.0.10 oder neuer wird für diese Bricklet empfohlen.
 
@@ -111,7 +109,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Unterstützer LED-Treiber          WS2801
+Unterstützer LED-Treiber          WS2801, WS2811 und WS2812
 Stromverbrauch                    1mA (inaktiv), 4mA (aktiv)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -155,26 +153,31 @@ Wenn alles wie erwartet funktioniert, kann nun ein LED Steifen gesteuert werden.
 |test_pi_ref|
 
 
-.. _led_strip_bricklet_ws2801:
+.. _led_strip_bricklet_ws28xy:
 
-WS2801
-------
+WS2801, WS2811 und WS2812
+-------------------------
 
-Momentan werden LED Streifen und Pixel unterstützt, die mit dem WS2801 Treiber
-ausgestattet sind (weitere Treiber-IC-Typen sollen folgen).
+Es werden LED Streifen und Pixel unterstützt, die mit dem WS2801, WS2811 oder
+WS2812 Treiber ausgestattet sind. Im Weiteren bezieht sich WS28xy auf alle
+diese drei Treiber.
 
-Der WS2801 Treiber kann bis zu drei LEDs unabhängig voneinander steuern.
+Der verwendete Treiber muss über Brick Viewer oder die ``set_chip_type()``
+Funktion des LED Strip Bricklets eingestellt werden. Für WS2811 und WS2812
+wird LED Bricklet Plugin Version 2.0.2 oder neuer benötigt.
+
+Der WS28xy Treiber kann bis zu drei LEDs unabhängig voneinander steuern.
 Typischerweise werden RGB LEDs, die in einem Gehäuse zusammen untergebracht 
-sind, gesteuert. Der WS2801 Treiber wird über einen 3-Leiter Datenbus, bestehend
-aus einer Datenleitung, einer Taktleitung und Masse als Referenz, gesteuert. Jeder
-Treiber verfügt dazu über einen Bus-Eingang und einen Bus-Ausgang, so dass die
-Treiber in Serie hintereinander geschaltet werden
-(`Daisy Chain <http://de.wikipedia.org/wiki/Daisy_chain>`__).
-Jeder Bus-Eingang der WS2801 Treiber ist entweder mit einem steuernden Gerät (wie
+sind, gesteuert. Der WS28xy Treiber wird über einen 3- oder 2-Leiter Datenbus,
+bestehend aus einer Datenleitung, einer Taktleitung (nur WS2801) und Masse als
+Referenz, gesteuert. Jeder Treiber verfügt dazu über einen Bus-Eingang und
+einen Bus-Ausgang, so dass die Treiber in Serie hintereinander geschaltet
+werden (`Daisy Chain <http://de.wikipedia.org/wiki/Daisy_chain>`__).
+Jeder Bus-Eingang der WS28xy Treiber ist entweder mit einem steuernden Gerät (wie
 z.B. das LED Strip Bricklet) oder mit einem Bus-Ausgang von einem vorherigen 
-WS2801 Treiber verbunden. Da die WS2801 Treiber in Serie geschaltet werden müssen,
+WS28xy Treiber verbunden. Da die WS28xy Treiber in Serie geschaltet werden müssen,
 darf jeder Bus-Ausgang höchstens mit einem Bus-Eingang verbunden werden. Der
-Bus wird beginnend beim ersten WS2801 Treiber indiziert (API Index 0).
+Bus wird beginnend beim ersten WS28xy Treiber indiziert (API Index 0).
 
 .. image:: /Images/Bricklets/bricklet_led_strip_strip_example_600.jpg
    :scale: 100 %
@@ -184,9 +187,9 @@ Bus wird beginnend beim ersten WS2801 Treiber indiziert (API Index 0).
 
 Das obige Foto zeigt einen typischen WS2801 LED Steifen. Jedes Modul des Streifens
 ist mit einem WS2801 Treiber und einer davon angesteuerten RGB LED ausgestattet.
-Die Signale sind jeweils auf der
-Eingangsseite (IN) und auf der Ausgangsseite (OUT) gekennzeichnet:
-5V, CK (Clock), SD (Serial Data) und GND.
+Die Signale sind jeweils auf der Eingangsseite (IN) und auf der Ausgangsseite
+(OUT) gekennzeichnet: 5V, CK (Clock), SD (Serial Data) und GND.
+Im Gegensatz zum WS2801 haben die WS2811 und WS2812 Treiber kene Taktleitung.
 
 
 .. _led_strip_bricklet_connectivity:
@@ -202,16 +205,16 @@ Das nachfolgende Bild stellt die Schnittstellen des LED Strip Bricklets dar:
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
-Wie im :ref:`WS2801 Abschnitt <led_strip_bricklet_ws2801>` beschrieben,
-unterstützt das Bricklet LED Steifen und Pixel, die mit WS2801
-Treiber-ICs ausgestattet sind. 
+Wie im :ref:`WS28xy Abschnitt <led_strip_bricklet_ws28xy>` beschrieben,
+unterstützt das Bricklet LED Steifen und Pixel, die mit WS2801, WS2811 oder
+WS2812 Treiber-ICs ausgestattet sind.
 Die mit "Output" beschrifteten Klemmen müssen mit dem Eingang
-des ersten WS2801 Treiber-ICs verbunden werden.
+des ersten WS28xy Treiber-ICs verbunden werden.
 
 Die Klemme ist mit folgenden Signalen belegt:
 
-* "DAT" ist die Datenleitung zum WS2801 Chip. Sie muss mit dem Dateneingang des
-  ersten WS2801 Chips verbunden werden. Leider gibt es keine allgemeingültige
+* "DAT" ist die Datenleitung zum WS28xy Chip. Sie muss mit dem Dateneingang des
+  ersten WS28xy Chips verbunden werden. Leider gibt es keine allgemeingültige
   Beschriftung für LED Steifen und Pixel. Manchmal ist das Signal mit SD
   (Serial Data) oder DI (Data Input) beschriftet. Es ist ebenfalls möglich, dass
   nur der Ausgang beschriftet ist (z.B. DO, Data Output). Bei der anderen Seite
@@ -221,6 +224,9 @@ Die Klemme ist mit folgenden Signalen belegt:
   ersten WS2801 Chips verbunden werden. Dieser Eingang ist typischerweise mit
   CLK, CK oder CI (Clock Input) beschriftet. Falls nur der Ausgang beschriftet
   ist findet man Beschriftungen wie CO (Clock Output).
+
+  Die WS2811 und WS2812 Treiber-ICs haben keine Taktleitung, für diese muss die
+  "CLK" Klemme offen gelassen werden.
 
 * "-" ist die Masseleitung. Masse ist notwendig um eine Spannungsreferenz zu 
   den DAT und CLK Signalen zu besitzen.
@@ -273,13 +279,15 @@ LED Steifen
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
 Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem Beispiel
 ist der schwarze Draht :led-strip-black:`5V`, grün die
-:led-strip-green:`Taktleitung`, rot die :led-strip-red:`Datenleitung` und der
+:led-strip-green:`Taktleitung` (nur WS2801),
+rot die :led-strip-red:`Datenleitung` und der
 blaue Draht ist :led-strip-blue:`Masse`.
 
-Als erstes werden die Takt- und Datenleitung des ersten LED Streifens und Masse
-der Spannungsversorgung mit dem LED Strip Bricklet verbunden. Dabei muss darauf
-geachtet werden, dass der Takt- und Daten\ **eingang** des ersten Streifen mit dem
-Takt- und Daten\ **ausgang** des LED Strip Bricklets verbunden wird.
+Als erstes werden die Takt- (nur WS2801) und Datenleitung des ersten
+LED Streifens und Masse der Spannungsversorgung mit dem LED Strip Bricklet
+verbunden. Dabei muss darauf geachtet werden, dass der Takt- und
+Daten\ **eingang** des ersten Streifen mit dem Takt- und
+Daten\ **ausgang** des LED Strip Bricklets verbunden wird.
 
 Falls die Spannung der Versorgung gemessen werden soll, müssen die 5V der
 Stromversorgung mit dem LED Strip Bricklet verbunden werden. Es können weitere
@@ -307,13 +315,14 @@ LED Pixel
 Die Verbindung zu LED Pixeln ist sehr ähnlich zur Verbindung zu LED Streifen.
 Es existiert ebenfalls keine allgemeine farbliche Kennzeichnung. Im 
 nachfolgenden Beispiel ist der rote Draht :led-pixel-red:`5V`,
-blau ist :led-pixel-blue:`Masse`, die :led-pixel-green:`Taktleitung` ist grün
-und die :led-pixel-white:`Datenleitung` ist weiß.
+blau ist :led-pixel-blue:`Masse`, die :led-pixel-green:`Taktleitung`
+(nur WS2801) ist grün und die :led-pixel-white:`Datenleitung` ist weiß.
 
 Die Takt- und Datenleitung vom ersten LED Pixel Bündel, sowie Masse von der 
 Stromversorgung werden mit dem LED Strip Bricklet verbunden. Dabei muss darauf 
-geachtet werden, dass der Takt- und Daten\ **eingang** des ersten Pixels mit dem
-Takt- und Daten\ **ausgang** des LED Strip Bricklets verbunden wird. Soll die
+geachtet werden, dass der Takt- (nur WS2801) und Daten\ **eingang** des ersten
+Pixels mit dem Takt- (nur WS2801) und Daten\ **ausgang** des LED Strip Bricklets
+verbunden wird. Soll die
 Versorgungsspannung gemessen werden, muss auch 5V von der Stromversorgung an das
 Bricklet angeschlossen werden. Sollen mehrere Bündel verwendet werden, so können
 diese in Reihe (hintereinander) an das erste Bündel angeschlossen werden
@@ -341,16 +350,16 @@ Feste Aktualisierungsrate
 
 Um eine flüssige Animation zu erreichen wird eine feste Aktualisierungsrate
 benötigt. Eine feste Aktualisierungsrate kann einfach mit einer
-korrekt konfigurierten Framelänge und dem FrameRendered Callback erreicht
+korrekt konfigurierten Framelänge und dem ``FrameRendered`` Callback erreicht
 werden. Die Framelänge stellt die Zeit in ms dar, die zwischen zwei
-Frames verstreicht. Der FrameRendered Callback wird ausgelöst nachdem
+Frames verstreicht. Der ``FrameRendered`` Callback wird ausgelöst nachdem
 ein neues Frame auf die LEDs übertragen wurde.
 
 Wenn als Beispiel eine Aktualisierungsrate von 20 Frames pro Sekunde
 erreicht werden soll, sollte die Framelänge auf 50ms gesetzt werden.
 Nachdem die Framelänge gesetzt ist, muss das erste Frame übertragen werden
 (d.h. es müssen alle RGB Werte gesetzt werden). Danach muss auf den
-FrameRendered Callback gewartet werden woraufhin das nächste Frame
+``FrameRendered`` Callback gewartet werden woraufhin das nächste Frame
 übertragen werden muss usw.
 
 .. image:: /Images/Bricklets/bricklet_led_strip_fixed_frame_rate_230.png
@@ -359,7 +368,7 @@ FrameRendered Callback gewartet werden woraufhin das nächste Frame
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_fixed_frame_rate.png
 
-Wenn ein FrameRendered Callback empfangen wird bevor alle LEDs eines Frames
+Wenn ein ``FrameRendered`` Callback empfangen wird bevor alle LEDs eines Frames
 gesetzt wurden, ist die Aktualisierungsrate zu hoch.
 
 
