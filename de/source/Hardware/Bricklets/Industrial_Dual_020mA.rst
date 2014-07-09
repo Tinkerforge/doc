@@ -119,7 +119,8 @@ vom Typ 2/3 angeschlossen werden können:
 .. _industrial_dual_0_20ma_bricklet_test:
 
 Beide Sensorports ("Sensor 0" und "Sensor 1") können unabhängig
-voneinander genutzt werden.
+voneinander genutzt werden. Über den "Supply" Eingang können die Sensoren 
+versorgt werden (bis zu 48V).
 
 Erster Test
 -----------

@@ -117,6 +117,9 @@ See below for connection diagrams for type 2/3 sensor.
    :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_connectivity_1200.jpg
 
 Both sensor ports ("Sensor 0" and "Sensor 1") can be used independently.
+Notice the battery symbol in the picture above. 
+Over the external power supply input of the Bricklet (up to 48V) the sensors can
+be powered. 
 
 .. _industrial_dual_0_20ma_bricklet_test:
 
