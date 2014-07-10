@@ -16,7 +16,7 @@ library (.jar) for all Tinkerforge Bricks and
 Bricklets (``Tinkerforge.jar``), the source of the JAR (in ``source/``) and all
 available Java examples (in ``examples/``).
 
-The library is also avialable from the `Central Maven Repository
+The library is also available from the `Central Maven Repository
 <http://search.maven.org/#search%7Cga%7C1%7Ctinkerforge>`__.
 
 Testing an Example
