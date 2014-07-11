@@ -48,6 +48,7 @@ or in a terminal with::
 
 To install Brick Viewer from the terminal use the following::
 
+ wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
  sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
  sudo dpkg -i brickv_linux_latest.deb
 
