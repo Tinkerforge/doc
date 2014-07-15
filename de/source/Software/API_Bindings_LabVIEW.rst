@@ -31,11 +31,13 @@ Damit die Bindings funktionieren können muss LabVIEW in der Lage sein die
 der DLL suchen und nachfragen falls sie nicht gefunden werden kann. Dieses
 Suchen-und-Nachfragen kann vermieden werden, indem die ``Tinkerforge.dll`` in
 einem LabVIEW bekannten Ordern gespeichert wird. Die einfachsten Möglichkeiten
-sind der ``vi.lib`` Ordern der LabVIEW oder der gleiche Ordner in dem auch das
-zu öffnende Beispiel gespeichert ist. In beiden Fällen wird LabVIEW die
-``Tinkerforge.dll`` automatisch finden und nicht Nachfragen. Allderdings wird
-LabVIEW möglicherweise darüber warnen, dass die DLL aus einen anderen Ordner
-geladen wurde. Diese Warnungs kann ignoriert werden.
+sind der ``vi.lib`` Ordern der LabVIEW Installation (z.B.
+``C:\Program Files\National Instruments\LabVIEW 2013\vi.lib\``) oder der
+gleiche Ordner in dem auch das zu öffnende Beispiel gespeichert ist. In beiden
+Fällen wird LabVIEW die ``Tinkerforge.dll`` automatisch finden und nicht
+Nachfragen. Allderdings wird LabVIEW möglicherweise darüber warnen, dass die
+DLL aus einen anderen Ordner geladen wurde. Diese Warnungs kann ignoriert
+werden.
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel ausführen.
 Dazu ``examples/Brick/Stepper/ExampleConfiguration.nb`` in
