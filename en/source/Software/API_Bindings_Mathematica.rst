@@ -15,7 +15,7 @@ Since version 2.0.0 the C# bindings are
 compliant. This allows to use them with all `CLI/.NET compatible languages
 <http://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
 Mathematica's `.NET/Link support
-<http://reference.wolfram.com/mathematica/NETLink/tutorial/CallingNETFromMathematica.html>`__.
+<http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html>`__.
 
 The .NET/Link support in Mathematica requires the `.NET Framework
 <http://www.microsoft.com/net>`__ on Windows and the `Mono Framework

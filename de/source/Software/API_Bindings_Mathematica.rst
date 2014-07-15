@@ -15,7 +15,7 @@ sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLS
 Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. Mathematicas `.NET/Link Unterstützung
-<http://reference.wolfram.com/mathematica/NETLink/tutorial/CallingNETFromMathematica.html>`__.
+<http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html>`__.
 
 Die .NET/Link Unterstützung in Mathematica benötigt das `.NET Framework
 <http://www.microsoft.com/net>`__ auf Windows und das `Mono Framework
