@@ -8,21 +8,21 @@ Python - API Bindings
 
 **Voraussetzungen**: Python 2.5 oder neuer, Python 3 wird auch unterstützt
 
-Die Python Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen
-aus einem Python egg mit den Bindings für alle
-Tinkerforge Bricks und Bricklets (``tinkerforge.egg``), dem Quelltext des eggs
+Die Python Bindings (:ref:`download <downloads_bindings_examples>`) bestehen
+aus dem Python Quelltext der Bindings für alle Tinkerforge Bricks und Bricklets
 (in ``source/``) und allen verfügbaren Python Beispielen (in ``examples/``).
 
-Das egg kann mit Hilfe von easy_install installiert werden::
+Die Bindings können mit Hilfe der `setuptools
+<https://pypi.python.org/pypi/setuptools>`__ installiert werden, dazu folgenden
+Befehl im ``source/`` Ordner ausführen::
 
- easy_install tinkerforge.egg
+ python setup.py install
 
+Die Bindings stehen auch im Python Package Index `PyPI
+<https://pypi.python.org>`__ bereit. Von dort können sie mit dem Python Package
+Installer `pip <https://pip.pypa.io>`__ und folgendem Befehl installiert werden::
 
-Auf Windows ist easy_install möglicherweise noch nicht installiert:
-
-* Installiere easy_install: https://pypi.python.org/pypi/setuptools#windows (setuptools)
-* Öffne eine Eingabeaufforderung
-* Führe ``C:\YourPythonDir\Scripts\easy_install.exe C:\PathToEgg\tinkerforge.egg`` aus
+ pip install tinkerforge
 
 Danach können alle Beispiel unverändert verwendet werden.
 
@@ -30,8 +30,8 @@ Danach können alle Beispiel unverändert verwendet werden.
 Test eines Beispiels
 --------------------
 
-Wenn das egg nicht verwenden werden soll oder kann, dann kann der Quelltext
-auch direkt verwendet werden. Dafür muss der ``tinkerforge`` Ordner
+Wenn die Bindings nicht installiert werden sollen oder können, dann kann der
+Quelltext auch direkt verwendet werden. Dafür muss der ``tinkerforge/`` Ordner
 vom ``source/`` Ordner und das Beispiel, das ausprobiert werden soll (z.B. das
 Stepper Konfigurationsbeispiel
 ``examples/brick/stepper/example_configuration.py``), in einen Ordner kopiert

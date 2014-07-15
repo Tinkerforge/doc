@@ -9,19 +9,20 @@ Python - API Bindings
 **Requirements**: Python 2.5 or newer, Python 3 is also supported
 
 The Python bindings (:ref:`download <downloads_bindings_examples>`) consist of
-a Python egg with the bindings for all
-Tinkerforge Bricks and Bricklets (``tinkerforge.egg``), the source of the
-egg (in ``source/``) and all available Python examples (in ``examples/``).
+the Python source code of the bindings for all Tinkerforge Bricks and Bricklets
+(in ``source/``) and all available Python examples (in ``examples/``).
 
-You can install the egg with easy_install::
+You can install the bindings using `setuptools
+<https://pypi.python.org/pypi/setuptools>`__ by executing the following
+command in the ``source/`` folder::
 
- easy_install tinkerforge.egg
+ python setup.py install
 
-On Windows easy_install might not be installed:
+The bindings are also available on the Python Package Index `PyPI
+<https://pypi.python.org>`__. You can install them with the Python Package
+Installer `pip <https://pip.pypa.io>`__ using the following command::
 
-* Install easy_install: https://pypi.python.org/pypi/setuptools#windows (setuptools)
-* Open Windows command shell
-* Execute ``C:\YourPythonDir\Scripts\easy_install.exe C:\PathToEgg\tinkerforge.egg``
+ pip install tinkerforge
 
 After that you can use the examples as they are.
 
@@ -29,8 +30,8 @@ After that you can use the examples as they are.
 Testing an Example
 ------------------
 
-If you can't or don't want to use the egg, you can also use the source
-directly, just create a folder for your project and copy the ``tinkerforge``
+If you can't or don't want to install the bindings, you can also use the source
+directly, just create a folder for your project and copy the ``tinkerforge/``
 folder from ``source/`` and the example you want to try in there
 (e.g. the Stepper configuration example from
 ``examples/brick/stepper/example_configuration.py``)::
