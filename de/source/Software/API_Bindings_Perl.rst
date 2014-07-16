@@ -18,10 +18,14 @@ bekannt. Der empfohlene Workaround dafür ist Cygwins Perl zu verwenden, das von
 diesen Problemen nicht betroffen ist. Siehe diesen `PerlMonks Thread
 <http://perlmonks.org/?node_id=1078634>`__ für weitere Details.
 
-Das Paket wird in Kürze auch auf CPAN verfügbar sein und kann dann von dort aus
-installiert werden.
+Die Bindings können auch von `CPAN <http://www.cpan.org/>`__ installiert werden
+mit folgendem Befehl (wir emfehlen dafür das `CPANminus
+<http://search.cpan.org/dist/App-cpanminus/lib/App/cpanminus.pm>`__ Tool
+``cpanm``)::
 
-Das vorläufige CPAN Paket (``Tinkerforge.tar.gz``) ist in der ZIP Datei
+ cpanm Tinkerforge
+
+Das CPAN Paket (``Tinkerforge.tar.gz``) ist in der ZIP Datei
 enthalten. Es kann entpackt und dann mit den folgenden Befehlen installiert
 werden::
 

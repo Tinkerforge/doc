@@ -18,12 +18,15 @@ State Perl. The recommended workaround is to use Cygwin's Perl that doesn't
 suffer from this problem. See this `PerlMonks thread
 <http://perlmonks.org/?node_id=1078634>`__ for some details.
 
-The package will be available on CPAN soon. Then it will be possible to install
-the bindings from CPAN.
+You can install the package from `CPAN <http://www.cpan.org/>`__ with the
+following command (we recommend the `CPANminus
+<http://search.cpan.org/dist/App-cpanminus/lib/App/cpanminus.pm>`__ commandline
+tool ``cpanm`` for this task)::
 
-A preliminary CPAN package (``Tinkerforge.tar.gz``) is included in the ZIP file.
-You can unpack it and execute the following commands to install the Perl
-bindings::
+ cpanm Tinkerforge
+
+Yon can also install the local version of the CPAN package by unpacking
+``Tinkerforge.tar.gz`` and running the following commands::
 
  perl Makefile.PL
  make
