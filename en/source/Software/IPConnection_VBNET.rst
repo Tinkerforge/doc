@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Visual Basic .NET - IP Connection
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-vbnet">Software</a> / Visual Basic .NET - IP Connection
 
 .. |ref_api_bindings| replace:: :ref:`Visual Basic .NET bindings <api_bindings_vbnet>`
 

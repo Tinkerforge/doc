@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Shell - IP Connection
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-shell">Software</a> / Shell - IP Connection
 
 .. |ref_api_bindings| replace:: :ref:`Shell bindings <api_bindings_shell>`
 

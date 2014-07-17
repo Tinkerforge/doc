@@ -1,13 +1,13 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#spezifikationen">Spezifikationen</a> / TCP/IP Protokoll
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-tcpip">Software</a> / TCP/IP Protokoll
 
 .. _llproto_tcpip:
 
 TCP/IP Protokoll
 ================
 
-This is the API description for the TCP/IP protocol of the Brick Daemon
-and the WIFI Extension.
+This is the description of the TCP/IP protocol for the Brick Daemon and the
+WIFI/Ethernet Extensions.
 
 An overview of products that are controllable over TCP/IP
 can be found :ref:`here <primer_products>`.

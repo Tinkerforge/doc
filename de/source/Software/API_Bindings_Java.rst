@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Java - API Bindings
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-java">Software</a> / Java - API Bindings
 
 .. _api_bindings_java:
 
@@ -57,9 +57,7 @@ API Dokumentation und Beispiele
 
 Links zur API Dokumentation der IP Connection, Bricks und Bricklets sowie die
 Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
-aufgelistet.
+aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
+über :ref:`Kits <index_kits>`.
 
 .. include:: API_Bindings_Java_links.table
-
-Anleitungen für weiterführende Projekte finden sich im Abschnitt
-über :ref:`Kits <index_kits>`.

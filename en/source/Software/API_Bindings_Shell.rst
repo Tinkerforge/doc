@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Shell - API Bindings
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-shell">Software</a> / Shell - API Bindings
 
 .. _api_bindings_shell:
 
@@ -37,8 +37,7 @@ API Documentation and Examples
 
 Links to the API documentation for the IP Connection, Bricks and Bricklets as
 well as the examples from the ZIP file of the bindings are listed in the
-following table.
+following table. Further project descriptions can be found in the
+:ref:`kits <index_kits>` section.
 
 .. include:: API_Bindings_Shell_links.table
-
-Further project descriptions can be found in the :ref:`kits <index_kits>` section.

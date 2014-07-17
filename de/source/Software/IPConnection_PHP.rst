@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / PHP - IP Connection
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-php">Software</a> / PHP - IP Connection
 
 .. |ref_api_bindings| replace:: :ref:`PHP Bindings <api_bindings_php>`
 

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / C# - IP Connection
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-csharp">Software</a> / C# - IP Connection
 
 .. |ref_api_bindings| replace:: :ref:`C# bindings <api_bindings_csharp>`
 

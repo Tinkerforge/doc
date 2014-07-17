@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Delphi/Lazarus - IP Connection
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-delphi">Software</a> / Delphi/Lazarus - IP Connection
 
 .. |ref_api_bindings| replace:: :ref:`Delphi/Lazarus Bindings <api_bindings_delphi>`
 

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / <a href="API_Bindings.html">API Bindings</a> / Mathematica - IP Connection
+:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-mathematica">Software</a> / Mathematica - IP Connection
 
 .. |ref_api_bindings| replace:: :ref:`Mathematica bindings <api_bindings_mathematica>`
 
