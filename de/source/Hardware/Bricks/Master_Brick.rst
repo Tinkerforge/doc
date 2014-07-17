@@ -64,6 +64,8 @@ Features
 * Benutzbar mit kabelgebundenen und drahtlosen Master Extensions
 
 
+.. _master_brick_description:
+
 Beschreibung
 ------------
 

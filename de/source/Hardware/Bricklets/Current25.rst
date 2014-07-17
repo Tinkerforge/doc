@@ -54,6 +54,8 @@ Features
 * Ausgabe in 1mA Schritten (12Bit Auflösung)
 
 
+.. _current25_bricklet_description:
+
 Beschreibung
 ------------
 

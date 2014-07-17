@@ -55,6 +55,9 @@ Features
 * Zählt das Auftreten und Verschwinden eines Magnetfelds
 * Kann genutzt werden um einen Wasser-/Stromzähler auszulesen
 
+
+.. _hall_effect_bricklet_description:
+
 Beschreibung
 ------------
 

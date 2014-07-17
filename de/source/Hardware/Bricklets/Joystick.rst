@@ -6,6 +6,7 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
+
 .. _joystick_bricklet:
 
 Joystick Bricklet
@@ -57,6 +58,8 @@ Features
 
 * 2-Achsen Joystick mit Taster
 
+
+.. _joystick_bricklet_description:
 
 Beschreibung
 ------------

@@ -21,6 +21,14 @@ You can install the NPM Package locally with ``sudo npm -g install tinkerforge.t
 or from NPM registry with ``sudo npm -g install tinkerforge``. After that you
 can use the examples as they are.
 
+
+.. _api_bindings_javascript_install:
+
+Installation
+------------
+
+TODO
+
 Testing a Node.js Example
 -------------------------
 

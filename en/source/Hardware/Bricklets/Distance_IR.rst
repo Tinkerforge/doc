@@ -65,6 +65,8 @@ Features
 * Output in 1mm steps (12bit resolution)
 
 
+.. _distance_ir_bricklet_description:
+
 Description
 -----------
 

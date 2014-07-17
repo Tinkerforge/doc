@@ -24,6 +24,14 @@ The examples are stored in LabVIEW 2013 format. All examples are
 provided in LabVIEW 2010 format as well.
 
 
+.. _api_bindings_labview_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

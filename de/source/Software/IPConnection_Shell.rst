@@ -1,7 +1,9 @@
 
 :breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-shell">Software</a> / Shell - IP Connection
 
-.. |ref_api_bindings| replace:: :ref:`Shell Bindings <api_bindings_shell>`
+.. |ref_api_bindings| replace:: :ref:`Shell API Bindings <api_bindings_shell>`
+.. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_shell_install>`
+.. |bindings_name| replace:: Shell
 
 .. _ipcon_shell:
 

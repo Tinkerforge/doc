@@ -63,6 +63,8 @@ Features
 * Ausgestattet mit einer schaltbaren LED zur gleichmäßigen Beleuchtung mit definierter Farbtemperatur
 
 
+.. _color_bricklet_description:
+
 Beschreibung
 ------------
 

@@ -21,6 +21,14 @@ und Bricklets (``Tinkerforge.dll``), dem C# Quelltext der DLL (in ``source/``)
 und allen verfügbaren Visual Basic .NET Beispielen (in ``examples/``).
 
 
+.. _api_bindings_vbnet_install:
+
+Installation
+------------
+
+TODO
+
+
 Test eines Beispiels
 --------------------
 

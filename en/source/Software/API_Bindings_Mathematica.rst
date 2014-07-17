@@ -26,6 +26,14 @@ Bricks and Bricklets (``Tinkerforge.dll``), the C# source of the DLL
 (in ``source/``) and all available Mathematica examples (in ``examples/``).
 
 
+.. _api_bindings_mathematica_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

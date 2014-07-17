@@ -35,6 +35,8 @@ Features
 * Not detected by Bricks
 
 
+.. _breakout_bricklet_description:
+
 Description
 -----------
 

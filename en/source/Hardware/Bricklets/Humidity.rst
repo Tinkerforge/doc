@@ -59,6 +59,8 @@ Features
 * Output in 0.1% RH steps (12bit resolution)
 
 
+.. _humidity_bricklet_description:
+
 Description
 -----------
 

@@ -64,6 +64,9 @@ Features
 * Misst Temperaturen mit 0,5% Genauigkeit auf der vollen Skala von -246 bis 849°C
 * Auflösung von 0,03125°C (15Bit), Ausgabe in 0,01°C Schritten
 
+
+.. _ptc_bricklet_description:
+
 Beschreibung
 ------------
 

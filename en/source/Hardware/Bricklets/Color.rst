@@ -62,6 +62,8 @@ Features
 * Equipped with switchable LED for defined illumination and color temperature
 
 
+.. _color_bricklet_description:
+
 Description
 -----------
 

@@ -17,6 +17,14 @@ allen verfügbaren C# Beispielen (in ``examples/``).
 Die Bibliothek hat keine weiteren Abhängigkeiten.
 
 
+.. _api_bindings_csharp_install:
+
+Installation
+------------
+
+TODO
+
+
 Test eines Beispiels
 --------------------
 

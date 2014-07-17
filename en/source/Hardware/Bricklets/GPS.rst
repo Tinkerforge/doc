@@ -55,6 +55,8 @@ Features
 * High sensitivity and accuracy, interference canceller
 
 
+.. _gps_bricklet_description:
+
 Description
 -----------
 

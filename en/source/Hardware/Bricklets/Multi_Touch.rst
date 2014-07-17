@@ -82,6 +82,9 @@ Features
 * Size and placement of touch area can be user defined
 * Can be used to build custom touch panel
 
+
+.. _multi_touch_bricklet_description:
+
 Description
 -----------
 

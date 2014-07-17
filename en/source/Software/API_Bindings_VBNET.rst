@@ -21,6 +21,14 @@ Bricks and Bricklets (``Tinkerforge.dll``), the C# source of the DLL
 (in ``source/``) and all available Visual Basic .NET examples (in ``examples/``).
 
 
+.. _api_bindings_vbnet_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

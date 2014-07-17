@@ -65,6 +65,8 @@ Features
 * Resolution of 0.03125°C (15bit), output in 0.01°C steps
 
 
+.. _ptc_bricklet_description:
+
 Description
 -----------
 

@@ -25,6 +25,14 @@ gehostet und kann alternativ auch von dort installiert werden::
 Danach können alle Beispiel unverändert verwendet werden.
 
 
+.. _api_bindings_ruby_install:
+
+Installation
+------------
+
+TODO
+
+
 Test eines Beispiels
 --------------------
 

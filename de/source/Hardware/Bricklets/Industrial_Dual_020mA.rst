@@ -6,6 +6,7 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
+
 .. _industrial_dual_0_20ma_bricklet:
 
 Industrial Dual 0-20mA Bricklet
@@ -51,6 +52,7 @@ Industrial Dual 0-20mA Bricklet
 	}}
 	{{ tfdocend() }}
 
+
 Features
 --------
 
@@ -59,6 +61,8 @@ Features
 * Hohe Genauigkeit (0,15%), Auflösung (bis zu 0,172µA) und Abtastrate (bis zu 240 SPS)
 * Es ist möglich zu detektieren ob ein Sensor angeschlossen/defekt ist
 
+
+.. _industrial_dual_0_20ma_bricklet_description:
 
 Beschreibung
 ------------
@@ -72,6 +76,7 @@ auszulesen
 Der gemessene Strom kann in nA ausgelesen werden. Zusätzlich
 können Events konfiguriert werden die ausgelöst werden wenn ein bestimmter
 Stromwert über- oder unterschritten wird.
+
 
 Technische Spezifikation
 ------------------------

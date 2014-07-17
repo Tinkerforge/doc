@@ -82,6 +82,9 @@ Features
 * Größe und Positionierung der Berührungsfläche wird vom Nutzer festgelegt
 * Kann genutzt werden um ein maßgeschneidertes Touchpanel zu bauen
 
+
+.. _multi_touch_bricklet_description:
+
 Beschreibung
 ------------
 

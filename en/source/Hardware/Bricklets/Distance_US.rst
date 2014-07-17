@@ -64,6 +64,9 @@ Features
 * Measures distances from 2cm to 400cm with ultrasound
 * 12bit resolution
 
+
+.. _distance_us_bricklet_description:
+
 Description
 -----------
 

@@ -54,6 +54,8 @@ Features
 * 3 Taster
 
 
+.. _lcd_16x2_bricklet_description:
+
 Beschreibung
 ------------
 

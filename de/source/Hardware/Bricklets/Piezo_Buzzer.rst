@@ -5,6 +5,7 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
+
 .. _piezo_buzzer_bricklet:
 
 Piezo Buzzer Bricklet
@@ -52,6 +53,8 @@ Features
 * Erzeugt 1kHz Piepton
 * Konfigurierbare Piepdauer
 
+
+.. _piezo_buzzer_bricklet_description:
 
 Beschreibung
 ------------

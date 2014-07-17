@@ -22,6 +22,14 @@ Bash Completion can then be reloaded by::
  . /etc/bash_completion
 
 
+.. _api_bindings_shell_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

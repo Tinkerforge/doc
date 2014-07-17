@@ -60,6 +60,9 @@ Features
 * Bidirectional current measurement (e.g. charge/discharge)
 * Configurable averaging and ADC conversion time
 
+
+.. _voltage_current_bricklet_description:
+
 Description
 -----------
 

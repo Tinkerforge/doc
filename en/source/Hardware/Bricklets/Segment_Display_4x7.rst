@@ -55,6 +55,9 @@ Features
 * Brightness of segments configurable
 * Configurable counter functionality
 
+
+.. _segment_display_4x7_bricklet_description:
+
 Description
 -----------
 

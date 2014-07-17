@@ -25,6 +25,14 @@ So you can alternatively install it from there::
 After that you can use the examples as they are.
 
 
+.. _api_bindings_ruby_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

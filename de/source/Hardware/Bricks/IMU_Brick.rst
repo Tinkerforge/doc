@@ -57,6 +57,8 @@ Features
 * API für viele Programmiersprachen verfügbar
 
 
+.. _imu_brick_description:
+
 Beschreibung
 ------------
 

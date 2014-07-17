@@ -60,6 +60,9 @@ Features
 
 * TODO
 
+
+.. _solid_state_relay_bricklet_description:
+
 Beschreibung
 ------------
 

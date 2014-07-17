@@ -58,6 +58,9 @@ Features
 * Can read and write Mifare Classic and NFC Forum Type 1 and 2 RFID/NFC tags
 * Operating frequency is 13.56 MHz
 
+
+.. _nfc_rfid_bricklet_description:
+
 Description
 -----------
 

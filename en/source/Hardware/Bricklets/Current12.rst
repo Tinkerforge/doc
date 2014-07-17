@@ -53,6 +53,7 @@ Features
 * Measures direction of current
 * Output in 1mA steps (12bit resolution)
 
+.. _current12_bricklet_description:
 
 Description
 -----------

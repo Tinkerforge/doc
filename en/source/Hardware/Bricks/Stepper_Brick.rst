@@ -62,6 +62,8 @@ Features
 * Extendable via two Bricklets ports
 
 
+.. _stepper_brick_description:
+
 Description
 -----------
 

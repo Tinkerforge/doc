@@ -55,6 +55,9 @@ Features
 * Counts (dis-)appearances of magnetic fields
 * Can be used to read out water/electricity meter
 
+
+.. _hall_effect_bricklet_description:
+
 Description
 -----------
 

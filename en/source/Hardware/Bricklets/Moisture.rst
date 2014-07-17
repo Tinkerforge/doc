@@ -69,6 +69,9 @@ Features
 * Measures moisture between two probes
 * 12bit resolution
 
+
+.. _moisture_bricklet_description:
+
 Description
 -----------
 

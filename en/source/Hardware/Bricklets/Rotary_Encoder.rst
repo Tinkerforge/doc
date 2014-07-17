@@ -65,6 +65,9 @@ Features
 * Counts 24 steps per rotation (step angle 15°)
 * Integrated push-button
 
+
+.. _rotary_encoder_bricklet_description:
+
 Description
 -----------
 

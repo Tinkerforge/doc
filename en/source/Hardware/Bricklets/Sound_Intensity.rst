@@ -60,6 +60,9 @@ Features
 * 12bit resolution
 * Usable as clapping switch, alarm system sensor, etc.
 
+
+.. _sound_intensity_bricklet_description:
+
 Description
 -----------
 

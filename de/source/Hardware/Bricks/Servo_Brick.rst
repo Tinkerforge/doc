@@ -68,6 +68,8 @@ Features
 * Erweiterbar über zwei Bricklet Anschlüsse
 
 
+.. _servo_brick_description:
+
 Beschreibung
 ------------
 

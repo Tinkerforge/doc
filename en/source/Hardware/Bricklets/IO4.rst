@@ -60,6 +60,8 @@ Features
 * Configurable pull-ups and interrupts
 
 
+.. _io4_bricklet_description:
+
 Description
 -----------
 

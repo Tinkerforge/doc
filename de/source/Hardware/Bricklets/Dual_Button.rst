@@ -54,6 +54,9 @@ Features
 * Zwei Taster mit eingebauten blauen LEDs
 * Auto-Toggle der LEDs möglich
 
+
+.. _dual_button_bricklet_description:
+
 Beschreibung
 ------------
 
@@ -67,6 +70,7 @@ automatisch bei jedem Tastendruck umgeschaltet.
 
 Es ist auch möglich Events zu nutzen. Dadurch kann auf einen
 Tastendruck reagiert werden ohne zu pollen.
+
 
 Technische Spezifikation
 ------------------------

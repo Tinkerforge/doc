@@ -45,6 +45,8 @@ Features
 * JTAG and serial console
 
 
+.. _debug_brick_description:
+
 Description
 -----------
 

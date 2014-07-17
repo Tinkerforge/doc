@@ -60,6 +60,8 @@ Features
 * Ausgabe in 0,1Lux Schritten (12Bit Auflösung)
 
 
+.. _ambient_light_bricklet_description:
+
 Beschreibung
 ------------
 

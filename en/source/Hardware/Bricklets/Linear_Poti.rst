@@ -69,6 +69,8 @@ Features
 * Outputs position from 0% to 100% in 1% steps
 
 
+.. _linear_poti_bricklet_description:
+
 Description
 -----------
 

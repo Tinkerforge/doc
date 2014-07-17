@@ -88,6 +88,9 @@ Features
 * All LEDs can be switched independently
 * Update rate of up to 100Hz for each LED possible
 
+
+.. _led_strip_bricklet_description:
+
 Description
 -----------
 

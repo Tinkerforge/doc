@@ -60,6 +60,8 @@ Features
 * Einstellbarer Lastwiderstand nach Masse
 
 
+.. _analog_out_bricklet_description:
+
 Beschreibung
 ------------
 

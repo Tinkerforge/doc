@@ -35,6 +35,8 @@ Features
 * Wird von Bricks nicht erkannt
 
 
+.. _breakout_bricklet_description:
+
 Beschreibung
 ------------
 

@@ -61,6 +61,8 @@ Features
 * Groupable
 
 
+.. _industrial_digital_in_4_bricklet_description:
+
 Description
 -----------
 

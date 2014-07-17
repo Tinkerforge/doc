@@ -65,6 +65,9 @@ Features
 * Can be used to detect/follow lines
 * Can be used to measure distances of ca. 0-10mm
 
+
+.. _line_bricklet_description:
+
 Description
 -----------
 

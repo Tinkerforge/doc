@@ -20,6 +20,14 @@ Die Bibliothek steht auch im `Central Maven Repository
 <http://search.maven.org/#search%7Cga%7C1%7Ctinkerforge>`__ zur Verfügung.
 
 
+.. _api_bindings_java_install:
+
+Installation
+------------
+
+TODO
+
+
 Test eines Beispiels
 --------------------
 

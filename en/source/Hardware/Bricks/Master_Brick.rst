@@ -55,6 +55,7 @@ Master Brick
 	}}
 	{{ tfdocend() }}
 
+
 Features
 --------
 
@@ -62,6 +63,8 @@ Features
 * Is the basis to build stacks
 * Usable with cable based and wireless Master Extensions
 
+
+.. _master_brick_description:
 
 Description
 -----------

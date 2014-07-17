@@ -19,6 +19,14 @@ available Java examples (in ``examples/``).
 The library is also available from the `Central Maven Repository
 <http://search.maven.org/#search%7Cga%7C1%7Ctinkerforge>`__.
 
+
+.. _api_bindings_java_install:
+
+Installation
+------------
+
+TODO
+
 Testing an Example
 ------------------
 

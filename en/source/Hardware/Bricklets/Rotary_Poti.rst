@@ -69,6 +69,8 @@ Features
 * Outputs position from -150° to 150° in 1° steps
 
 
+.. _rotary_poti_bricklet_description:
+
 Description
 -----------
 

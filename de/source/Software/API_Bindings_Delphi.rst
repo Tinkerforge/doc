@@ -24,6 +24,14 @@ Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
 POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
 
 
+.. _api_bindings_delphi_install:
+
+Installation
+------------
+
+TODO
+
+
 Test eines Beispiels
 --------------------
 

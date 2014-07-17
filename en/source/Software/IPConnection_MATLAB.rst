@@ -1,7 +1,9 @@
 
 :breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-matlab">Software</a> / MATLAB/Octave - IP Connection
 
-.. |ref_api_bindings| replace:: :ref:`MATLAB/Octave bindings <api_bindings_matlab>`
+.. |ref_api_bindings| replace:: :ref:`MATLAB/Octave API bindings <api_bindings_matlab>`
+.. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_matlab_install>`
+.. |bindings_name| replace:: MATLAB/Octave
 
 .. _ipcon_matlab:
 

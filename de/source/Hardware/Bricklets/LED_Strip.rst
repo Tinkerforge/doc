@@ -88,6 +88,9 @@ Features
 * Alle LEDs können unabhängig voneinander geschaltet werden
 * Aktualisierungsrate von bis zu 100Hz für jede LED möglich
 
+
+.. _led_strip_bricklet_description:
+
 Beschreibung
 ------------
 
@@ -102,6 +105,7 @@ findet man im :ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`:
 `Video <http://www.youtube.com/watch?v=mmNRa-lLaXM>`__
 
 Brick Daemon 2.0.10 oder neuer wird für diese Bricklet empfohlen.
+
 
 Technische Spezifikation
 ------------------------

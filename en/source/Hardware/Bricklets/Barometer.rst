@@ -55,6 +55,8 @@ Features
 * Range 10 to 1200mbar
 
 
+.. _barometer_bricklet_description:
+
 Description
 -----------
 

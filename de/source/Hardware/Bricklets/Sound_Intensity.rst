@@ -60,6 +60,9 @@ Features
 * 12Bit Auflösung
 * Einsetzbar als Klatschschalter, Alarmanlagen-Sensor, u.v.m.
 
+
+.. _sound_intensity_bricklet_description:
+
 Beschreibung
 ------------
 

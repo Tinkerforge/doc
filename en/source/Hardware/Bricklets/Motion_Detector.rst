@@ -50,6 +50,9 @@ Features
 * Detects motion in distances of up to 7m (configurable)
 * High sensing angle (100°)
 
+
+.. _motion_detector_bricklet_description:
+
 Description
 -----------
 

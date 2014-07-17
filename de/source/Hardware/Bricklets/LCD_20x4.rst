@@ -60,6 +60,8 @@ Features
 * 4 Taster
 
 
+.. _lcd_20x4_bricklet_description:
+
 Beschreibung
 ------------
 

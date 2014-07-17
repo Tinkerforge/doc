@@ -54,6 +54,8 @@ Features
 * 3 push-buttons
 
 
+.. _lcd_16x2_bricklet_description:
+
 Description
 -----------
 

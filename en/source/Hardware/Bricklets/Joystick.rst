@@ -58,6 +58,8 @@ Features
 * 2-axis joystick with push-button
 
 
+.. _joystick_bricklet_description:
+
 Description
 -----------
 

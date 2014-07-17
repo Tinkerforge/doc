@@ -1,7 +1,9 @@
 
 :breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-java">Software</a> / Java - IP Connection
 
-.. |ref_api_bindings| replace:: :ref:`Java Bindings <api_bindings_java>`
+.. |ref_api_bindings| replace:: :ref:`Java API Bindings <api_bindings_java>`
+.. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_java_install>`
+.. |bindings_name| replace:: Java
 
 .. _ipcon_java:
 

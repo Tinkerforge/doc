@@ -66,6 +66,8 @@ Features
 * High resolution up to 1.48mV
 
 
+.. _analog_in_bricklet_description:
+
 Description
 -----------
 

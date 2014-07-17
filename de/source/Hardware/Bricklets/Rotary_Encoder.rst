@@ -65,6 +65,9 @@ Features
 * Zählt 24 Schritte pro Umdrehung (Schrittwinkel 15°)
 * Integrierter Taster
 
+
+.. _rotary_encoder_bricklet_description:
+
 Beschreibung
 ------------
 
@@ -77,6 +80,7 @@ werden kann um Menüpunkte o.ä. auszuwählen.
 Der Unterschied zwischen dem :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`
 und dem Rotary Encoder Bricklet ist, dass der Encoder ohne Begrenzungen gedreht
 werden kann.
+
 
 Technische Spezifikation
 ------------------------

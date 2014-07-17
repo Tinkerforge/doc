@@ -61,6 +61,8 @@ Features
 * Groupable
 
 
+.. _industrial_quad_relay_bricklet_description:
+
 Description
 -----------
 

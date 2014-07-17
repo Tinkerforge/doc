@@ -36,6 +36,14 @@ Yon can also install the local version of the CPAN package by unpacking
 After that you can use the examples as they are.
 
 
+.. _api_bindings_perl_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

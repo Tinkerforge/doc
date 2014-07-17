@@ -69,6 +69,9 @@ Features
 * Misst die Feuchtigkeit zwischen zwei Elektroden
 * 12Bit Auflösung
 
+
+.. _moisture_bricklet_description:
+
 Beschreibung
 ------------
 

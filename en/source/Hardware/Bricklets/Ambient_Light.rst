@@ -59,6 +59,8 @@ Features
 * Output in 0.1lux steps (12bit resolution)
 
 
+.. _ambient_light_bricklet_description:
+
 Description
 -----------
 

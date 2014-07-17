@@ -59,6 +59,8 @@ Features
 * Switches up to 240VAC/10A and 30VDC/7A
 
 
+.. _dual_relay_bricklet_description:
+
 Description
 -----------
 

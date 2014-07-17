@@ -60,6 +60,7 @@ Features
 * Extendable via two Bricklets ports
 * Configurable overtemperature and overcurrent callbacks
 
+.. _dc_brick_description:
 
 Description
 -----------

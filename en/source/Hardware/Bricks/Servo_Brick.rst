@@ -68,6 +68,8 @@ Features
 * Extendable via two Bricklets ports
 
 
+.. _servo_brick_description:
+
 Description
 -----------
 

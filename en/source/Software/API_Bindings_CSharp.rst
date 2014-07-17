@@ -17,6 +17,14 @@ C# examples (in ``examples/``).
 The library can be used without any further extensions.
 
 
+.. _api_bindings_csharp_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

@@ -67,28 +67,29 @@ bricklets = [('Ambient Light',             'ambient_light'),
 ipcon_common = {
 'en': """
 >>>intro
-This is the API description for the |ref_api_bindings| of the IP Connection.
-The IP Connection is established between a :ref:`Brick Daemon <brickd>`
-or a :ref:`WIFI <wifi_extension>`/:ref:`Ethernet <ethernet_extension>` Extension
-and the corresponding programming language API bindings. You need to
-create an IP Connection, connect it and add devices, before you can
-use them.
+This is the description of the |ref_api_bindings| for the IP Connection.
+The IP Connection manages the communication between the API bindings and the
+:ref:`Brick Daemon <brickd>` or a :ref:`WIFI <wifi_extension>`/:ref:`Ethernet
+<ethernet_extension>` Extension. Before :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` can be controlled using their API an
+IP Connection has to be created and its TCP/IP connection has to be established.
 
-An overview of products that are controllable over an IP Connection
-can be found :ref:`here <primer_products>`.
+An |ref_install_guide| for the |bindings_name| API bindings is part of their
+general description.
 <<<intro
 """,
 'de': """
 >>>intro
-Dies ist die API Beschreibung für die |ref_api_bindings| der IP Connection.
-Die IP Connection wird zwischen einem :ref:`Brick Daemon <brickd>` oder
-einer :ref:`WIFI <wifi_extension>`/:ref:`Ethernet <ethernet_extension>` Extension und den API
-Bindings der entsprechenden Programmiersprache hergestellt. Bevor Geräte über
-deren API angesprochen werden können muss eine IP Connection erzeugt, verbunden
-und die Geräte dieser hinzugefügt werden.
+Dies ist die Beschreibung der |ref_api_bindings| für die IP Connection.
+Die IP Connection kümmert sich um die Kommunikation zwischen einem
+:ref:`Brick Daemon <brickd>` oder einer
+:ref:`WIFI <wifi_extension>`/:ref:`Ethernet <ethernet_extension>` Extension.
+Bevor :ref:`Bricks <primer_bricks>` und :ref:`Bricklets <primer_bricklets>` über
+deren API angesprochen werden können muss eine IP Connection erzeugt und
+die TCP/IP Verbindung hergestellt werden.
 
-Eine Übersicht über die Produkte die über eine IP Connection kontrolliert
-werden können ist :ref:`hier <primer_products>` zu finden.
+Eine |ref_install_guide| für die |bindings_name| API Bindings ist Teil deren
+allgemeine Beschreibung.
 <<<intro
 """
 }

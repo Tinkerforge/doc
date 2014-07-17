@@ -1,7 +1,9 @@
 
 :breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-mathematica">Software</a> / Mathematica - IP Connection
 
-.. |ref_api_bindings| replace:: :ref:`Mathematica Bindings <api_bindings_mathematica>`
+.. |ref_api_bindings| replace:: :ref:`Mathematica API Bindings <api_bindings_mathematica>`
+.. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_mathematica_install>`
+.. |bindings_name| replace:: Mathematica
 
 .. _ipcon_mathematica:
 

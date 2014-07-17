@@ -59,6 +59,9 @@ Features
 * Detects inclination of Bricklet (tilt switch open/closed)
 * Detects if Bricklet is vibrating
 
+
+.. _tilt_bricklet_description:
+
 Description
 -----------
 

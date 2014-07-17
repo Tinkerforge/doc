@@ -60,6 +60,8 @@ Features
 * Configurable with load resistor to ground
 
 
+.. _analog_out_bricklet_description:
+
 Description
 -----------
 

@@ -27,6 +27,14 @@ Installer `pip <https://pip.pypa.io>`__ using the following command::
 After that you can use the examples as they are.
 
 
+.. _api_bindings_python_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

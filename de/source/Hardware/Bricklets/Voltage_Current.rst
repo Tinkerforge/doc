@@ -61,6 +61,8 @@ Features
 * Konfigurierbare Mittelwertbildung und ADC-Wandlungszeit
 
 
+.. _voltage_current_bricklet_description:
+
 Beschreibung
 ------------
 

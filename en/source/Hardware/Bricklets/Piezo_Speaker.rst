@@ -55,6 +55,9 @@ Features
 * Configurable beep duration
 * Morse code output supported
 
+
+.. _piezo_speaker_bricklet_description:
+
 Description
 -----------
 

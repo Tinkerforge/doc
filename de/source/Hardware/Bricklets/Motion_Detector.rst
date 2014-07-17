@@ -50,6 +50,9 @@ Features
 * Erkennt Bewegungen in einer Distanz von bis zu 7m (konfigurierbar)
 * Hoher Erfassungswinkel (100°)
 
+
+.. _motion_detector_bricklet_description:
+
 Beschreibung
 ------------
 
@@ -60,6 +63,7 @@ konfigurierbare Reichweite von 3m bis 7m mit einem Erfassungswinkel von 100°.
 
 Es ist auch möglich Events zu nutzen. Dadurch ist möglich auf eine
 Bewegungserkennung zu reagieren ohne zu pollen.
+
 
 Technische Spezifikation
 ------------------------

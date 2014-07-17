@@ -53,6 +53,8 @@ Features
 * Output in 1mV steps (12bit resolution)
 
 
+.. _voltage_bricklet_description:
+
 Description
 -----------
 

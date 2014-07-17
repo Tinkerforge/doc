@@ -17,6 +17,14 @@ available MATLAB (``matlab/examples/``) and Octave examples
 (``octave/examples/``) are included as well.
 
 
+.. _api_bindings_matlab_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

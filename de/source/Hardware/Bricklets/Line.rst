@@ -65,6 +65,9 @@ Features
 * Kann genutzt werden um Linien zu erkennen/verfolgen
 * Kann Entfernungen von ca. 0-10mm zu messen
 
+
+.. _line_bricklet_description:
+
 Beschreibung
 ------------
 
@@ -77,6 +80,7 @@ Der Reflektivitätswert kann genutzt werden um Linien zu erkennen (Beispiel:
 Eine schwarze Linie hat eine andere Reflektivität als ein weißer Hintergrund).
 Das Line Bricklet kann aber auch genutzt werden um Entfernungen zu einer Fläche
 zu messen, da das empfangene Licht mit steigender Entfernung abnimmt.
+
 
 Technische Spezifikation
 ------------------------

@@ -24,6 +24,14 @@ Completion Script ``tinkerforge-bash-completion.sh`` muss nach
 neugeladen werden.
 
 
+.. _api_bindings_shell_install:
+
+Installation
+------------
+
+TODO
+
+
 Test eines Beispiels
 --------------------
 

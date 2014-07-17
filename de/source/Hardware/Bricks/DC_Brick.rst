@@ -60,6 +60,8 @@ Features
 * Übertemperatur- und Überstrom-Callbacks konfigurierbar
 
 
+.. _dc_brick_description:
+
 Beschreibung
 ------------
 

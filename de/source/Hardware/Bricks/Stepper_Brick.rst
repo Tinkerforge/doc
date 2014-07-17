@@ -62,6 +62,8 @@ Features
 * Erweiterbar über zwei Bricklet Anschlüsse
 
 
+.. _stepper_brick_description:
+
 Beschreibung
 ------------
 

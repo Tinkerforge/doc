@@ -24,6 +24,14 @@ bindings should work on most architectures (ARM, x86, etc.) and on most
 operating systems (Windows and POSIX systems, such as Linux and Mac OS X, etc.).
 
 
+.. _api_bindings_c_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

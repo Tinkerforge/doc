@@ -54,6 +54,9 @@ Features
 * Two tactile buttons with built-in blue LEDs
 * LED auto-toggle possible
 
+
+.. _dual_button_bricklet_description:
+
 Description
 -----------
 

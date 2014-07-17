@@ -55,6 +55,9 @@ Features
 * Konfigurierbare Piepdauer
 * Morsecode Ausgabe unterstützt
 
+
+.. _piezo_speaker_bricklet_description:
+
 Beschreibung
 ------------
 
@@ -67,6 +70,7 @@ konfigurierbare Länge und es ist möglich
 
 Eine typische Anwendung dieses Bricklets ist das signalisieren von 
 Zustandsänderungen wie "E-Mail empfangen".
+
 
 Technische Spezifikation
 ------------------------

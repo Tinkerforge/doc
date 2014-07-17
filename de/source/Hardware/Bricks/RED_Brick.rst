@@ -18,6 +18,8 @@ Features
 --------
 
 
+.. _red_brick_description:
+
 Beschreibung
 ------------
 

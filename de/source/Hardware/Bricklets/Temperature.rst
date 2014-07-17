@@ -60,6 +60,8 @@ Features
 * Ausgabe in 0,1°C Schritten (12Bit Auflösung)
 
 
+.. _temperature_bricklet_description:
+
 Beschreibung
 ------------
 

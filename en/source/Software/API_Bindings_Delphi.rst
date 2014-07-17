@@ -23,6 +23,14 @@ operating systems. This means, the bindings should work on most architectures
 as Linux and Mac OS X, etc.).
 
 
+.. _api_bindings_delphi_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

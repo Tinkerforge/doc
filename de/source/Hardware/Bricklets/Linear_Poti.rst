@@ -6,6 +6,7 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
+
 .. _linear_poti_bricklet:
 
 Linear Poti Bricklet
@@ -69,6 +70,7 @@ Features
 * Ausgabe der Position von 0% bis 100% in 1% Schritten
 
 
+.. _linear_poti_bricklet_description:
 
 Beschreibung
 ------------

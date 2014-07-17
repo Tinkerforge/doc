@@ -64,6 +64,9 @@ Features
 * Misst Entfernungen von 2cm bis 400cm mit Ultraschall
 * 12Bit Auflösung
 
+
+.. _distance_us_bricklet_description:
+
 Beschreibung
 ------------
 

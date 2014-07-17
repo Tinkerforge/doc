@@ -22,6 +22,15 @@ aus der Datei im ZIP installiert werden, oder aus der NPM Registry mittels
 ``sudo npm -g install tinkerforge``. Danach können alle Node.js Beispiel
 unverändert verwendet werden.
 
+
+.. _api_bindings_javascript_install:
+
+Installation
+------------
+
+TODO
+
+
 Test eines Node.js Beispiels
 ----------------------------
 

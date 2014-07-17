@@ -55,6 +55,8 @@ Features
 * Hohe Empfindlichkeit und Genauigkeit, Störunterdrückung
 
 
+.. _gps_bricklet_description:
+
 Beschreibung
 ------------
 Mit dem GPS :ref:`Bricklet <primer_bricklets>` können

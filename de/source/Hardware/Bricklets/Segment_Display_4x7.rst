@@ -55,6 +55,9 @@ Features
 * Helligkeit der Segmente konfigurierbar
 * Konfigurierbare Zähler Funktion
 
+
+.. _segment_display_4x7_bricklet_description:
+
 Beschreibung
 ------------
 
@@ -65,6 +68,7 @@ Jedes der 29 Segmente kann eigenständig geschaltet werden. Es ist zusätzlich
 möglich die Helligkeit der Segmente einzustellen. Neben der Möglichkeit des
 Schaltens einzelner Segmente bietet die API auch einen anwender-konfigurierbaren
 Zähler.
+
 
 Technische Spezifikation
 ------------------------

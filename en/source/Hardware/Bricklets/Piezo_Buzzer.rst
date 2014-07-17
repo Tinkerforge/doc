@@ -53,6 +53,8 @@ Features
 * Configurable beep duration
 
 
+.. _piezo_buzzer_bricklet_description:
+
 Description
 -----------
 

@@ -1,7 +1,9 @@
 
 :breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-vbnet">Software</a> / Visual Basic .NET - IP Connection
 
-.. |ref_api_bindings| replace:: :ref:`Visual Basic .NET bindings <api_bindings_vbnet>`
+.. |ref_api_bindings| replace:: :ref:`Visual Basic .NET API bindings <api_bindings_vbnet>`
+.. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_vbnet_install>`
+.. |bindings_name| replace:: Visual Basic .NET
 
 .. _ipcon_vbnet:
 

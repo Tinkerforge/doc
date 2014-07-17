@@ -65,6 +65,9 @@ Features
 * Controls remote mains switches (:ref:`supported devices <remote_switch_supported_devices>`)
 * Can control remote mains switches with dimming function
 
+
+.. _remote_switch_bricklet_description:
+
 Description
 -----------
 

@@ -60,6 +60,8 @@ Features
 * 4 push-buttons
 
 
+.. _lcd_20x4_bricklet_description:
+
 Description
 -----------
 

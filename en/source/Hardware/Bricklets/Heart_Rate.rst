@@ -19,6 +19,8 @@ Features
 --------
 
 
+.. _heart_rate_bricklet_description:
+
 Description
 -----------
 

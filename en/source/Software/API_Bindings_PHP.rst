@@ -20,6 +20,14 @@ You can install the PEAR package with the pear tool::
 After that you can use all examples as they are.
 
 
+.. _api_bindings_php_install:
+
+Installation
+------------
+
+TODO
+
+
 Testing an Example
 ------------------
 

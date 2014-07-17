@@ -64,6 +64,9 @@ Features
 * Steuert Funksteckdosen (:ref:`Unterstützte Steckdosen <remote_switch_supported_devices>`)
 * Kann Funksteckdosen mit Dimm-Funktion steuern
 
+
+.. _remote_switch_bricklet_description:
+
 Beschreibung
 ------------
 

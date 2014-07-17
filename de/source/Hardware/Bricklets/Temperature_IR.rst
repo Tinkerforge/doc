@@ -61,6 +61,8 @@ Features
 * Ausgabe in 0,1°C Schritten (16Bit Auflösung)
 
 
+.. _temperature_ir_bricklet_description:
+
 Beschreibung
 ------------
 

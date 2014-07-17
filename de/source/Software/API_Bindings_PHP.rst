@@ -20,6 +20,14 @@ Das PEAR Paket kann mit Hilfe des pear Tools installiert werden::
 Danach können alle Beispiel unverändert verwendet werden.
 
 
+.. _api_bindings_php_install:
+
+Installation
+------------
+
+TODO
+
+
 Test eines Beispiels
 --------------------
 

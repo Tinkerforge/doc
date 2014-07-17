@@ -57,7 +57,10 @@ Features
 --------
 
 * Erkennt Neigung des Bricklets (Neigungsschalter offen/geschlossen)
-* Erkennt ob Bricklet vibriert.
+* Erkennt ob Bricklet vibriert
+
+
+.. _tilt_bricklet_description:
 
 Beschreibung
 ------------

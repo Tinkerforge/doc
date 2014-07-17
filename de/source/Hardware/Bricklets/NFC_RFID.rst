@@ -58,6 +58,9 @@ Features
 * Kann Mifare Classic und NFC Forum Typ 1 und 2 RFID/NFC Tags lesen/schreiben
 * Arbeitsfrequenz 13,56 MHz
 
+
+.. _nfc_rfid_bricklet_description:
+
 Beschreibung
 ------------
 
@@ -71,6 +74,7 @@ Aktuell werden Mifare Classic und NFC Forum Typ 1 und 2 unterstützt.
 
 Die Möglichkeit Tags zu emulieren als auch NFC P2P Kommunikation könnte in 
 Zukunft über ein Firmware Update hinzugefügt werden.
+
 
 Technische Spezifikation
 ------------------------

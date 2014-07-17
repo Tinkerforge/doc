@@ -60,6 +60,8 @@ Features
 * It is possible to detect if a sensor is connected/faulty
 
 
+.. _industrial_dual_0_20ma_bricklet_description:
+
 Description
 -----------
 
