@@ -7,6 +7,8 @@ Java (Android) - API Bindings
 =============================
 
 For Android the normal :ref:`Java bindings <api_bindings_java>` can be used.
+For general information see the documentation about the Java bindings,
+this page only covers Android specific things.
 
 In the following we assume that you already have the Android development
 environment installed. If you are just starting with Android development,
@@ -126,15 +128,3 @@ Test in simulator by clicking:
   ``andriod.os.NetworkOnMainThreadException`` to be thrown. See this
   `StackOverflow question <http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
   for more details.
-
-
-API Documentation and Examples
-------------------------------
-
-Links to the API documentation for the IP Connection, Bricks and Bricklets as
-well as the examples from the ZIP file of the bindings are listed in the
-following table.
-
-.. include:: API_Bindings_Java_links.table
-
-Further project descriptions can be found in the :ref:`kits <index_kits>` section.

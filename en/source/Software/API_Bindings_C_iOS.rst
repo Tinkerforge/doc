@@ -7,7 +7,8 @@ C/C++ (iOS) - API Bindings
 ==========================
 
 Objective-C is compatible to C. This allows to use the :ref:`C/C++ bindings
-<api_bindings_c>` in an iOS App.
+<api_bindings_c>` in an iOS App. For general information see the documentation
+about the C/C++ bindings, this page only covers iOS specific things.
 
 In the following we assume that you already have the iOS development environment
 installed.
@@ -130,15 +131,3 @@ Switch *Value Changed* event with the *toggleRelays* action:
 Test the App in the simulator by clicking the Run button. Don't forget to change
 the UID and the host IP address to the correct values for your brickd host and
 your Dual Relay Bricklet.
-
-
-API Documentation and Examples
-------------------------------
-
-Links to the API documentation for the IP Connection, Bricks and Bricklets as
-well as the examples from the ZIP file of the bindings are listed in the
-following table.
-
-.. include:: API_Bindings_C_links.table
-
-Further project descriptions can be found in the :ref:`kits <index_kits>` section.

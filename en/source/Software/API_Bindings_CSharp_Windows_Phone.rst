@@ -9,7 +9,10 @@ C# (Windows Phone) - API Bindings
 **Requirements**: Windows Phone SDK 7.1 or newer
 
 For Windows Phone the normal :ref:`C# bindings <api_bindings_csharp>` can be
-used. The asynchronous sockets that are needed for Windows Phone are currently
+used. For general information see the documentation about the C# bindings,
+this page only covers Windows Phone specific things.
+
+The asynchronous sockets that are needed for Windows Phone are currently
 not supported in Mono. Since the ``Tinkerforge.dll`` is build to be compatible
 with C# 2.0 and Mono, the DLL is not
 compatible with Windows Phone. To overcome this we have added asynchronous
@@ -117,15 +120,3 @@ Start the emulator with F5. You should be able to toggle a relay with
 the toggle button on your Windows Phone. Don't forget to change the
 UID and the host IP address to the correct values for your brickd host and
 your Dual Relay Bricklet.
-
-
-API Documentation and Examples
-------------------------------
-
-Links to the API documentation for the IP Connection, Bricks and Bricklets as
-well as the examples from the ZIP file of the bindings are listed in the
-following table.
-
-.. include:: API_Bindings_Delphi_links.table
-
-Further project descriptions can be found in the :ref:`kits <index_kits>` section.

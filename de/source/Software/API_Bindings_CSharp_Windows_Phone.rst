@@ -9,7 +9,11 @@ C# (Windows Phone) - API Bindings
 **Voraussetzungen**: Windows Phone SDK 7.1 oder neuer
 
 Für Windows Phone können die normalen :ref:`C# Bindings <api_bindings_csharp>`
-verwendet werden. Die asynchronen Sockets die Windows Phone benötigt werden von
+verwendet werden. Allgemeine Informationen sind in der Beschreibung der C#
+Bindings zu finden, diese Seite befasst sich nur mit Windows Phone spezifischen
+Dingen.
+
+Die asynchronen Sockets die Windows Phone benötigt werden von
 Mono im Moment nicht unterstützt. Da die ``Tinkerforge.dll`` für Kompatibilität
 mit C# 2.0 und Mono kompiliert wird ist sie nicht kompatible mit Windows Phone.
 Um dieses Problem zu umgehen haben wir eine asynchronen Socket Implementierung
@@ -120,16 +124,3 @@ Der Emulator kann über F5 gestartet werden. Das Relais sollte jetzt mit dem
 Umschaltknopf auf dem Windows Phone Bildschirm umgeschaltet werden können.
 Dabei ist darauf zu achten UID und IP Adresse entsprechend des verwendeten Dual
 Relay Bricklets und PCs abzuändern.
-
-
-API Dokumentation und Beispiele
--------------------------------
-
-Links zur API Dokumentation der IP Connection, Bricks und Bricklets sowie die
-Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
-aufgelistet.
-
-.. include:: API_Bindings_CSharp_links.table
-
-Anleitungen für weiterführende Projekte finden sich im Abschnitt
-über :ref:`Kits <index_kits>`.

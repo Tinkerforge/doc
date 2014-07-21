@@ -7,7 +7,9 @@ Java (Android) - API Bindings
 =============================
 
 Für Android können die normalen :ref:`Java Bindings <api_bindings_java>`
-verwendet werden.
+verwendet werden. Allgemeine Informationen sind in der Beschreibung der Java
+Bindings zu finden, diese Seite befasst sich nur mit Android spezifischen
+Dingen.
 
 Im Folgenden wird angenommen, dass die Android Entwicklungsumgebung schon
 installiert ist. Für Android-Anfänger empfehlen wir zuerst mit dem
@@ -130,16 +132,3 @@ Die App kann nun im Simulator getestet werden:
   zu einer ``andriod.os.NetworkOnMainThreadException``. Siehe diese
   `StackOverflow Frage <http://stackoverflow.com/questions/6343166/android-os-networkonmainthreadexception>`__
   für weitere Informationen.
-
-
-API Dokumentation und Beispiele
--------------------------------
-
-Links zur API Dokumentation der IP Connection, Bricks und Bricklets sowie die
-Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
-aufgelistet.
-
-.. include:: API_Bindings_Java_links.table
-
-Anleitungen für weiterführende Projekte finden sich im Abschnitt
-über :ref:`Kits <index_kits>`.

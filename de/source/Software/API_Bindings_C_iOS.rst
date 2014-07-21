@@ -7,7 +7,9 @@ C/C++ (iOS) - API Bindings
 ==========================
 
 Objective-C ist kompatible zu C. Dies erlaubt es uns die :ref:`C/C++ Bindings
-<api_bindings_c>` in einer iOS App zu verwenden.
+<api_bindings_c>` in einer iOS App zu verwenden. Allgemeine Informationen sind
+in der Beschreibung der C/C++ Bindings zu finden, diese Seite befasst sich nur
+mit iOS spezifischen Dingen.
 
 Im Folgenden wird angenommen, dass die iOS Entwicklungsumgebung schon
 installiert ist.
@@ -134,16 +136,3 @@ letzte Schritt is das Verbinden des *Value Changed* Events des Switches mit der
 Die App kann mittels des Run Knopfes im Simulator getestet werden. Dabei ist
 darauf zu achten UID und IP Adresse entsprechend des verwendeten Dual Relay
 Bricklets und PCs abzuändern.
-
-
-API Dokumentation und Beispiele
--------------------------------
-
-Links zur API Dokumentation der IP Connection, Bricks und Bricklets sowie die
-Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
-aufgelistet.
-
-.. include:: API_Bindings_C_links.table
-
-Anleitungen für weiterführende Projekte finden sich im Abschnitt
-über :ref:`Kits <index_kits>`.

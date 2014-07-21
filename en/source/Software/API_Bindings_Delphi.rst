@@ -99,6 +99,6 @@ API Documentation and Examples
 Links to the API documentation for the IP Connection, Bricks and Bricklets as
 well as the examples from the ZIP file of the bindings are listed in the
 following table. Further project descriptions can be found in the
-:ref:`kits <index_kits>` section.
+:ref:`Starter Kits <index_kits>` section.
 
 .. include:: API_Bindings_Delphi_links.table
