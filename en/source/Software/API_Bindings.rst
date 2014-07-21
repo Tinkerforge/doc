@@ -6,10 +6,13 @@
 API Bindings
 ============
 
-The API bindings establish a TCP/IP connection to the
-:ref:`Brick Daemon <brickd>`. Each function call creates a TCP/IP packet that
-is send over the Brick Daemon to the Brick. Incoming packets from the Brick
-are routed back to the caller.
+The API bindings allow you to control :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` from your programs.
+They do this by establishing a TCP/IP connection to the
+:ref:`Brick Daemon <brickd>` or a :ref:`WIFI <wifi_extension>`/:ref:`Ethernet
+<ethernet_extension>` Extension. Each function call creates a TCP/IP packet that
+is send over the Brick Daemon or directly to the Brick. Incoming packets from
+the Brick are routed back to the caller.
 
 See also our :ref:`tutorial <tutorial_first_steps>` for more information on how
 everything works together.
@@ -46,9 +49,9 @@ Installation and usage instructions for each programming language:
 IP Connection
 -------------
 
-The IP Connection creates a TCP/IP connection between the
-:ref:`Brick Daemon <brickd>` and the corresponding programming language
-API bindings.
+The IP Connection manages the TCP/IP communication between the API bindings and
+the :ref:`Brick Daemon <brickd>` or a :ref:`WIFI <wifi_extension>`/:ref:`Ethernet
+<ethernet_extension>` Extension.
 
 It is used by the bindings and implemented for each programming language.
 The corresponding documentation can be found here:
