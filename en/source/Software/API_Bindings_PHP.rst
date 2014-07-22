@@ -31,13 +31,22 @@ TODO
 Testing an Example
 ------------------
 
+To test a PHP example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
+<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
+USB interface of the Bricks and the API bindings. Brick Viewer connects to
+Brick Daemon and helps to figure out basic information about the connected
+Bricks and Bricklets.
+
+
+
+
 If you can't or don't want to use the PEAR package, you can also use the source
 directly, just create a folder for your project and copy the ``Tinkerforge``
 folder from ``source/`` and the example you want to try in there
 (e.g. the Stepper configuration example from
 ``examples/brick/stepper/ExampleConfiguration.php``)::
 
- example_folder/
+ example_project/
   -> Tinkerforge/
   -> ExampleConfiguration.php
 
@@ -46,7 +55,7 @@ have this many files in you project, you can also copy the files as they are
 needed. For the Stepper Brick examples we need ``IPConnection.php`` and
 ``BrickStepper.php``. After copying these in the project folder::
 
- example_folder/
+ example_project/
   -> IPConnection.php
   -> BrickStepper.php
   -> ExampleConfiguration.php

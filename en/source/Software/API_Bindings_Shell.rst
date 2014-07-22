@@ -33,6 +33,16 @@ TODO
 Testing an Example
 ------------------
 
+To test a Shell example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
+<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
+USB interface of the Bricks and the API bindings. Brick Viewer connects to
+Brick Daemon and helps to figure out basic information about the connected
+Bricks and Bricklets.
+
+
+
+
+
 All examples are meant for typical Unix shells such as Bash. They will work
 on Linux and Mac OS X as they are. There are Bash ports for Windows that allow
 to run the examples unmodified, too.

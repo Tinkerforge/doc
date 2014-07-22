@@ -36,13 +36,23 @@ TODO
 Test eines Beispiels
 --------------------
 
+Um ein Ruby Beispiel testen zu können müssen zuerst :ref:`Brick Daemon
+<brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
+arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
+Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
+Informationen über die angeschlossenen Bricks und Bricklets aus.
+
+
+
+
+
 Wenn der GEM nicht verwendet werden soll oder kann, dann kann der Quelltext auch
 direkt verwendet werden. Dafür muss der ``tinkerforge`` Ordner vom ``source/``
 Ordner und das Beispiel, das ausprobiert werden soll (z.B. das Stepper
 Konfigurationsbeispiel ``examples/brick/stepper/example_configuration.rb``),
 in einen Ordner kopiert werden::
 
- example_folder/
+ example_project/
   -> tinkerforge/
   -> example_configuration.rb
 
@@ -56,7 +66,7 @@ keine unnötigen Dateien im Projekt auftauchen sollen, dann können auch nur die
 wirklich benötigten Dateien in einen Ordner kopiert werden. Das Stepper Brick
 Beispiel benötigt ``ip_connection.rb`` und ``brick_stepper.rb``::
 
- example_folder/
+ example_project/
   -> ip_connection.rb
   -> brick_stepper.rb
   -> example_configuration.rb

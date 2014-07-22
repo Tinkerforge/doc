@@ -8,7 +8,7 @@ MATLAB/Octave - API Bindings
 
 **Voraussetzungen**: MATLAB oder Octave mit Java Unterstützung
 
-Die MATLAB Bindings (:ref:`download <downloads_bindings_examples>`) bestehen
+Die MATLAB/Octave Bindings (:ref:`download <downloads_bindings_examples>`) bestehen
 aus zwei .jar Dateien mit den Bindings für alle Tinkerforge Bricks und Bricklets,
 ein .jar for MATLAB (``matlab/Tinkerforge.jar``) und eines für Octave
 (``octave/Tinkerforge.jar``). Der Quelltext des MATLAB .jar (``matlab/source/``)
@@ -27,6 +27,15 @@ TODO
 
 Test eines Beispiels
 --------------------
+
+Um ein MATLAB/Octave Beispiel testen zu können müssen zuerst :ref:`Brick Daemon
+<brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
+arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
+Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
+Informationen über die angeschlossenen Bricks und Bricklets aus.
+
+
+
 
 Die Bindings kommen mit Beispielen für MATLAB und Octave.
 

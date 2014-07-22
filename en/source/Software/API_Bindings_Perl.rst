@@ -6,7 +6,7 @@
 Perl - API Bindings
 ===================
 
-**Requirements**: Perl 5.014 or newer with Thread::Queue 3.02 or newer
+**Requirements**: Perl 5.14.0 or newer with Thread::Queue 3.02 or newer
 
 The Perl bindings (:ref:`download <downloads_bindings_examples>`) consist of
 a CPAN package with the bindings for all Tinkerforge Bricks and Bricklets
@@ -47,13 +47,22 @@ TODO
 Testing an Example
 ------------------
 
+To test a Perl example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
+<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
+USB interface of the Bricks and the API bindings. Brick Viewer connects to
+Brick Daemon and helps to figure out basic information about the connected
+Bricks and Bricklets.
+
+
+
+
 If you can't or don't want to use the CPAN package, you can also use the source
 directly, just create a folder for your project and copy the ``Tinkerforge``
 folder from ``source/`` and the example you want to try in there
 (e.g. the Stepper configuration example from
 ``examples/brick/stepper/example_configuration.pl``)::
 
- example_folder/
+ example_project/
   -> Tinkerforge/
   -> example_configuration.pl
 

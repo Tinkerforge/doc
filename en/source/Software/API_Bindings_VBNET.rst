@@ -32,6 +32,15 @@ TODO
 Testing an Example
 ------------------
 
+To test a Visual Basic .NET example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
+<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
+USB interface of the Bricks and the API bindings. Brick Viewer connects to
+Brick Daemon and helps to figure out basic information about the connected
+Bricks and Bricklets.
+
+
+
+
 As an example we will compile the Stepper Brick configuration example with
 MonoDevelop and Visual Studio.
 

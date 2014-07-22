@@ -35,6 +35,15 @@ TODO
 Testing an Example
 ------------------
 
+To test a LabVIEW example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
+<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
+USB interface of the Bricks and the API bindings. Brick Viewer connects to
+Brick Daemon and helps to figure out basic information about the connected
+Bricks and Bricklets.
+
+
+
+
 To make the bindings work LabVIEW has to be able to find the ``Tinkerforge.dll``.
 If you open an example then LabVIEW will search fo it and ask you if it could
 not find it. You can avoid this search and ask procedure by putting the

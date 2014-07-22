@@ -37,6 +37,15 @@ TODO
 Test eines Beispiels
 --------------------
 
+Um ein Mathematica Beispiel testen zu können müssen zuerst :ref:`Brick Daemon
+<brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
+arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
+Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
+Informationen über die angeschlossenen Bricks und Bricklets aus.
+
+
+
+
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel ausführen.
 Dazu das ``examples/Brick/Stepper/ExampleConfiguration.nb`` Notebook in
 Mathematica öffnen, die UID des Stepper Bricks eintragen und alle Cells von
