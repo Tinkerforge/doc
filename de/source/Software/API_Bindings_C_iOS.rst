@@ -41,7 +41,7 @@ Füge den Quelltext der C/C++ Bindings dem Projekt hinzu:
 * New Group, wähle als Name "Tinkerforge"
 * Rechtsklick auf die neue Tinkerforge Group
 * Add Files to "Relay"...
-* Wähle alle Dateien aus dem ``bindings`` Ordner der C/C++ Bindings
+* Wähle alle Dateien aus dem ``source/`` Ordner der C/C++ Bindings
 
 Es folgt ein kleines Beispielprogramm zum Schalten eines Relays per Knopfdruck.
 

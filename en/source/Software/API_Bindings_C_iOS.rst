@@ -39,7 +39,7 @@ Add the C/C++ bindings code:
 * New Group, choose name "Tinkerforge"
 * Right click on new Tinkerforge group
 * Add Files to "Relay"...
-* Choose all files from the ``bindings`` folder of the C/C++ bindings
+* Choose all files from the ``source/`` folder of the C/C++ bindings
 
 Below is a small example program that turns a relay on and off with a toggle button.
 

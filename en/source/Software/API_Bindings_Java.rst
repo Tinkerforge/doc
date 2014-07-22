@@ -11,13 +11,15 @@ Java - API Bindings
 .. note::
  There is an extra section for :ref:`Java and Android <api_bindings_java_android>`.
 
-The Java bindings (:ref:`download <downloads_bindings_examples>`) consist of a
-library (.jar) for all Tinkerforge Bricks and
-Bricklets (``Tinkerforge.jar``), the source of the JAR (in ``source/``) and all
-available Java examples (in ``examples/``).
+The Java bindings allow you to control :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` from your Java programs. The
+:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-The library is also available from the `Central Maven Repository
-<http://search.maven.org/#search%7Cga%7C1%7Ctinkerforge>`__.
+* ``Tinkerforge.jar``, a precompiled Java library
+* in ``source/`` the source code of ``Tinkerforge.jar``
+* in ``examples/`` examples for every Brick and Bricklet
+
+The Java library has no external dependencies.
 
 
 .. _api_bindings_java_install:
@@ -25,36 +27,80 @@ The library is also available from the `Central Maven Repository
 Installation
 ------------
 
-TODO
+If and how the Java bindings have to be installed depends heavily on how you are
+going to use them. If you are just calling the Java compiler from the command
+line then you can just put the ``Tinkerforge.jar`` file into the same folder
+as the Java code of your program and include it in the classpath.
+
+How the bindings can be used in a certain IDE depends on the specific IDE and
+will be explained in the documentation of the IDE.
+
+Maven
+^^^^^
+
+The bindings are also available from the `Central Maven Repository
+<http://search.maven.org/#search%7Cga%7C1%7Ca%3Atinkerforge>`__. This allows
+to use them directly in Maven project. Just add ``tinkerforge`` as a dependency
+to your Maven project file (``pom.xml``). The placeholder ``x.y.z`` represents
+the specific version of the bindings to be used, e.g. ``2.1.1``:
+
+.. code-block:: xml
+
+  <project ...>
+    ...
+    <dependencies>
+      ...
+      <dependency>
+        <groupId>com.tinkerforge</groupId>
+        <artifactId>tinkerforge</artifactId>
+        <version>x.y.z</version>
+      </dependency>
+      ...
+    </dependencies>
+    ...
+  </project>
+
 
 Testing an Example
 ------------------
 
-As an example lets compile the configuration example of the Stepper Brick.
+To test a Java example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
+<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
+USB interface of the Bricks and the API bindings. Brick Viewer connects to
+Brick Daemon and helps to figure out basic information about the connected
+Bricks and Bricklets.
 
-Create a new folder and copy the ``Tinkerforge.jar`` and the
-``examples/Brick/Stepper/ExampleConfiguration.java`` into this folder::
+As an example let's compile the configuration example for the Stepper Brick.
+Copy the ``Tinkerforge.jar`` file and the ``ExampleConfiguration.java`` file
+from ``examples/Brick/Stepper/`` into a new folder::
 
- example_folder/
+ example_project/
   -> Tinkerforge.jar
   -> ExampleConfiguration.java
 
-In this folder we can now call the Java compiler with the following
-parameters (1. Windows and 2. Linux/Mac OS X)::
+In the example ``HOST`` and ``PORT`` specify at which network address the
+Stepper Brick can be found. If it is connected locally to USB then ``localhost``
+and 4223 is correct. The ``UID`` value has to be changed to the UID of the
+connected Stepper Brick, which you can figure out using Brick Viewer:
 
- 1.) javac -cp Tinkerforge.jar;. ExampleConfiguration.java
- 2.) javac -cp Tinkerforge.jar:. ExampleConfiguration.java
+.. code-block:: java
 
-and run it with the following parameters (1. Windows and 2. Linux/Mac OS X)::
+  private static final String HOST = "localhost";
+  private static final int PORT = 4223;
+  private static final String UID = "XYZ"; // Change to your UID
 
- 1.) java -cp Tinkerforge.jar;. ExampleConfiguration
- 2.) java -cp Tinkerforge.jar:. ExampleConfiguration
+Now we can execute the Java compiler in the ``example_project/`` folder like
+this on Windows (replace ``;`` in classpath with ``:`` on Linux and Mac OS X)::
 
-.. note::
- The difference between 1. and 2. is semicolon vs colon
+ javac -cp Tinkerforge.jar;. ExampleConfiguration.java
 
-Or, alternatively add the JAR and the Example in an Java development environment
-of your choice (such as Eclipse or NetBeans).
+and run it with the following parameters on Windows (replace ``;`` in
+classpath with ``:`` on Linux and Mac OS X again)::
+
+ java -cp Tinkerforge.jar;. ExampleConfiguration
+
+Alternatively you can use the Java library and example in an Java IDE of your
+choice such as Eclipse or NetBeans.
 
 
 API Documentation and Examples

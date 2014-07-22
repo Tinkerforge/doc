@@ -9,19 +9,12 @@ C/C++ - API Bindings
 .. note::
  There is an extra section for :ref:`Objective-C and iOS <api_bindings_c_ios>`.
 
-The C/C++ bindings (:ref:`download <downloads_bindings_examples>`) consist of
-the bindings for all Tinkerforge Bricks and
-Bricklets (in ``bindings/``) and all available C/C++ examples (in
-``examples/``).
+The C/C++ bindings allow you to control :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` from your C/C++ programs. The
+:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-To keep the C/C++ bindings stupid and simple, they only have
-dependencies that are available nearly everywhere, thus making it
-possible to compile into any project hassle-free.
-We do not offer a pre-compiled library, since it would be a
-pain in the ass to provide them for all combinations of architectures and
-operating systems. This means, the
-bindings should work on most architectures (ARM, x86, etc.) and on most
-operating systems (Windows and POSIX systems, such as Linux and Mac OS X, etc.).
+* in ``source/`` the source code of the bindings
+* in ``examples/`` the examples for every Brick and Bricklet
 
 
 .. _api_bindings_c_install:
@@ -29,41 +22,68 @@ operating systems (Windows and POSIX systems, such as Linux and Mac OS X, etc.).
 Installation
 ------------
 
-TODO
+To keep the C/C++ bindings stupid and simple, they only have
+dependencies that are available nearly everywhere, thus making it
+possible to compile into any project hassle-free.
+We do not offer a precompiled library, since it would be a
+pain in the ass to provide them for all combinations of architectures and
+operating systems. This means, the
+bindings should work on most architectures (ARM, x86, etc.) and on most
+operating systems (Windows and POSIX systems, such as Linux and Mac OS X, etc.).
+
+Because there is no precompiled library for the C/C++ bindings there is nothing
+to install as such. The recommended way of using the bindings is to include their
+source code directly into your C/C++ project. The next section shows some examples
+about how to do that.
 
 
 Testing an Example
 ------------------
 
-As an example we will compile the Stepper Brick configuration example
-with GCC on Windows and Linux.
-For that we have to copy the IP Connection and the Stepper Brick
-bindings (``ip_connection.h``, ``ip_connection.c``, ``brick_stepper.c`` and
-``brick_stepper.h``) from the ``bindings/`` folder as well as the
-``example_configuration.c`` from the ``examples/brick/stepper/`` folder into our
-project::
+To test a C/C++ example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
+<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
+USB interface of the Bricks and the API bindings. Brick Viewer connects to
+Brick Daemon and helps to figure out basic information about the connected
+Bricks and Bricklets.
 
- project_folder/
+As an example we will compile the Stepper Brick configuration example
+with GCC on the command line and with some IDEs. For that we have to copy the
+IP Connection and the Stepper Brick bindings from the ``source/`` folder
+as well as the ``example_configuration.c`` from the ``examples/brick/stepper/``
+folder into a new folder::
+
+ example_project/
   -> ip_connection.c
   -> ip_connection.h
   -> brick_stepper.c
   -> brick_stepper.h
   -> example_configuration.c
 
+In the example ``HOST`` and ``PORT`` specify at which network address the
+Stepper Brick can be found. If it is connected locally to USB then ``localhost``
+and 4223 is correct. The ``UID`` value has to be changed to the UID of the
+connected Stepper Brick, which you can figure out using Brick Viewer:
+
+.. code-block:: c
+
+  #define HOST "localhost"
+  #define PORT 4223
+  #define UID "XYZ" // Change to your UID
+
 
 GCC
 ^^^
 
 The only dependency on Unix-like systems is pthreads, therefore a
-compilation of the example with GCC on Linux looks like::
+compilation of the example with GCC on Linux and Mac OS X looks like this::
 
- gcc -pthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
+ gcc -pthread -o example *.c
 
 On Windows Win32 is used for threading and WinSock2 (``ws2_32``) for the network
 connection. Under MinGW we can compile the example as following (the library
 linking must come after the source)::
 
- gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32 -ladvapi32
+ gcc -o example.exe *.c -lws2_32 -ladvapi32
 
 The simplest way to use the bindings in a C++ project is to rename the required
 source files from ``*.c`` to ``*.cpp``. Then the compiler will treat the source
@@ -73,14 +93,15 @@ code as C++ and does the right thing automatically.
 Visual Studio
 ^^^^^^^^^^^^^
 
-With Visual Studio we can use the ``project_folder/`` too. The simplest way to
-use the bindings in a Visual C++ project is to rename the required source files
-from ``*.c`` to ``*.cpp``. Then the compiler will treat the source code as C++
-and does the right thing automatically.
+With Visual Studio we can use the ``example_project/`` folder too. The simplest
+way to use the bindings in a Visual C++ project is to rename the required source
+files from ``*.c`` to ``*.cpp``. Then the compiler will treat the source code as
+C++ and does the right thing automatically. This will also avoid the problem
+that the Visual Studio compiler supports the C89 standard only, but the bindings
+uses the newer C99 standard.
 
-As a side note: this will also avoid the problem that the Visual Studio
-compiler supports the C89 standard only, but the bindings uses the newer C99
-standard.
+IDE
+"""
 
 Now a new project can be created in Visual Studio by clicking:
 
@@ -88,7 +109,7 @@ Now a new project can be created in Visual Studio by clicking:
 * New
 * Project From Existing Code
 * Choose Type "Visual C++"
-* Choose ``project_folder/``
+* Choose ``example_project/``
 * Choose a project name
 * Click Next
 * Choose "Console Application"
@@ -104,35 +125,38 @@ Then ``ws2_32.lib`` (WinSock2) and ``advapi32.lib`` have to included by clicking
 
 Older version of Visual Studio don't come with ``stdint.h``. A compatible
 version can be found `here <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
-If necessary download it to the ``project_folder/``.
+If necessary download it to the ``example_project/`` folder.
 
-That's it, we are ready to go!
+That's it, now the project can be compiled an executed!
 
-The Visual Studio compiler can also be used from the command line::
+Command Line
+""""""""""""
 
- cl.exe /I. brick_stepper.cpp ip_connection.cpp example_configuration.cpp /link /out:example_configuration.exe ws2_32.lib advapi32.lib
+The Visual Studio compiler can also be used from the command line in the
+``example_project/`` folder::
+
+ cl.exe /I. *.cpp /link /out:example.exe ws2_32.lib advapi32.lib
 
 
 Qt Creator
 ^^^^^^^^^^
 
-With Qt Creator we can use the ``project_folder/`` too.
-
-A new Qt Creator project for the ``project_folder/`` can be created by clicking:
+A new Qt Creator project for the ``example_project/`` folder can be created by
+clicking:
 
 * File
 * New File or Project...
 * Choose Other Project
 * Choose Empty Qt Project
 * Click Choose...
-* Choose "project_folder" as Name
-* Choose the folder that contains the ``project_folder/`` for "Create in"
+* Choose "example_project" as Name
+* Choose the folder that contains the ``example_project/`` folder for "Create in"
 * Click Next
 * Click Next
 * Click Finish
 
-Qt Creator should now show an empty file named ``project_folder.pro``. Copy
-and paste the following lines into it and save the result::
+Qt Creator should now show an empty file named ``example_project.pro``.
+Copy and paste the following lines into it and save the result::
 
   TEMPLATE = app
   CONFIG += console
@@ -154,7 +178,7 @@ Now the program can be compiled and started!
 This is an example for a project in C. If you want to use the bindings in a C++
 project then the simplest way to do this is to rename the required source files
 from ``*.c`` to ``*.cpp`` and to change the ``SOURCES`` line in
-``project_folder.pro`` accordingly. Then the compiler will treat the source
+``example_project.pro`` accordingly. Then the compiler will treat the source
 code as C++ and does the right thing automatically.
 
 If you want to add the C/C++ bindings to an existing Qt Creator project then
@@ -168,9 +192,8 @@ you just need to add the required source files to the ``SOURCES`` and
 Orwell Dev-C++
 ^^^^^^^^^^^^^^
 
-With Dev-C++ we can use the ``project_folder/`` too.
-
-A new Dev-C++ project for the ``project_folder/`` can be created by clicking:
+A new Dev-C++ project for the ``example_project/`` folder can be created by
+clicking:
 
 * File
 * New
@@ -180,7 +203,7 @@ A new Dev-C++ project for the ``project_folder/`` can be created by clicking:
 
 Dev-C++ will now create a new files named ``main.c``. We don't need it, remove
 it by clicking on "Remove file" in its context menu in the project view. Now add
-all files from the ``project_folder/`` to the project by clicking on
+all files from the ``example_project/`` folder to the project by clicking on
 "Add to Project" in the project's context menu.
 
 Then ``libws2_32.a`` (WinSock2) and ``libadvapi32.a`` have to included by clicking:

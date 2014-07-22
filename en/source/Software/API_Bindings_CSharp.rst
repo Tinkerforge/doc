@@ -9,12 +9,16 @@ C# - API Bindings
 .. note::
  There is an extra section for :ref:`C# and Windows Phone <api_bindings_csharp_windows_phone>`.
 
-The C# bindings (:ref:`download <downloads_bindings_examples>`) consist of a
-library (.dll) for all Tinkerforge Bricks and Bricklets
-(``Tinkerforge.dll``), the source of the DLL (in ``source/``) and all available
-C# examples (in ``examples/``).
+The C# bindings allow you to control :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` from your C# programs. The
+:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-The library can be used without any further extensions.
+* ``Tinkerforge.dll``, a precompiled C#/.NET library
+* ``Tinkerforge.xml``, the API documentation for Visual Studio, MonoDevelop, etc
+* in ``source/`` the source code of ``Tinkerforge.dll``
+* in ``examples/`` the examples for every Brick and Bricklet
+
+The C#/.NET library has no external dependencies.
 
 
 .. _api_bindings_csharp_install:
@@ -22,29 +26,56 @@ The library can be used without any further extensions.
 Installation
 ------------
 
-TODO
+If and how the C# bindings have to be installed depends heavily on how you are
+going to use them. If you are just calling the C# compiler from the command
+line then you can just put the ``Tinkerforge.dll`` file into the same folder
+as the C# code of your program.
+
+To use the bindings in an IDE you'll probably have to add the
+``Tinkerforge.dll`` file to the assembly catalog of the IDE. How this is done
+depends on the IDE and will be explained in documentation of that IDE.
 
 
 Testing an Example
 ------------------
 
-As an example lets compile the configuration example of the Stepper Brick.
+To test a C# example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
+<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
+USB interface of the Bricks and the API bindings. Brick Viewer connects to
+Brick Daemon and helps to figure out basic information about the connected
+Bricks and Bricklets.
 
-For this we create a folder and copy the ``Tinkerforge.dll`` and the
-``examples/Brick/Stepper/ExampleConfiguration.cs`` into this folder::
+As an example let's compile the configuration example for the Stepper Brick
+from the command line. For this we copy ``Tinkerforge.dll`` file and
+``ExampleConfiguration.cs`` file from the ``examples/Brick/Stepper/`` folder
+into a new folder::
 
- example_folder/
+ example_project/
   -> Tinkerforge.dll
   -> ExampleConfiguration.cs
 
-In this folder we can now call the C# compiler with the following parameters
-(1. Windows and 2. Linux/Mac OS X (Mono))::
+In the example ``HOST`` and ``PORT`` specify at which network address the
+Stepper Brick can be found. If it is connected locally to USB then ``localhost``
+and 4223 is correct. The ``UID`` value has to be changed to the UID of the
+connected Stepper Brick, which you can figure out using Brick Viewer:
 
- 1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
- 2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
+.. code-block:: csharp
 
-Or, alternatively add the DLL and the Example in an C# development environment
-of your choice (such as Visual Studio or Mono Develop).
+  private static string HOST = "localhost";
+  private static int PORT = 4223;
+  private static string UID = "XYZ"; // Change to your UID
+
+Now we can call the Visual Studio C# compiler in the ``example_project/`` folder
+like this on Windows::
+
+ csc /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
+
+and the Mono Compiler like this on Linux and Mac OS X::
+
+ gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
+
+Alternatively you can use the C# library and example in an C# IDE of your choice
+such as Visual Studio or MonoDevelop.
 
 
 .. _api_bindings_csharp_cls_complience:

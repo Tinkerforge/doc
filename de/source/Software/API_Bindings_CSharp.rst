@@ -9,12 +9,17 @@ C# - API Bindings
 .. note::
  Es gibt einen extra Abschnitt für :ref:`C# und Windows Phone <api_bindings_csharp_windows_phone>`.
 
-Die C# Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen aus
-einer Bibliothek (.dll) für alle Tinkerforge Bricks
-und Bricklets (``Tinkerforge.dll``), dem Quelltext der DLL (in ``source/``) und
-allen verfügbaren C# Beispielen (in ``examples/``).
+Die C# Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen C# Programmen
+heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
+die Bindings beinhaltet:
 
-Die Bibliothek hat keine weiteren Abhängigkeiten.
+* ``Tinkerforge.dll``, eine vorkompilierte C#/.NET Bibliothek
+* ``Tinkerforge.xml``, die API Dokumentation für Visual Studio,  MonoDevelop, usw.
+* in ``source/`` den Quelltext für ``Tinkerforge.dll``
+* in ``examples/`` die Beispiele für alle Bricks und Bricklets
+
+Die C#/.NET Bibliothek hat keine weiteren Abhängigkeiten.
 
 
 .. _api_bindings_csharp_install:
@@ -22,31 +27,59 @@ Die Bibliothek hat keine weiteren Abhängigkeiten.
 Installation
 ------------
 
-TODO
+Ob und wie die C# Bindings installiert werden müssen hängt stark davon ab wie
+sie benutzt werden sollen. Wenn der C# Compiler direkt von der Kommandozeile
+aufgerufen wird genügt es die ``Tinkerforge.dll`` Datei im gleichen Verzeichnis
+wie den C# Quelltext des Programms abzulegen.
+
+Um die Bindings in einer IDE zu verwenden muss die ``Tinkerforge.dll`` Datei
+wahrscheinlich zuerst dem Assembly-Katalog der IDE hinzugefügt werden. Wie dies
+gemacht wird hängt von der IDE ab und wird in der Dokumentation der jeweiligen
+IDE erklärt.
 
 
 Test eines Beispiels
 --------------------
 
+Um ein C# Beispiel testen zu können müssen zuerst :ref:`Brick Daemon
+<brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
+arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
+Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
+Informationen über die angeschlossenen Bricks und Bricklets aus.
+
 Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
-kompiliert.
+auf der Kommandozeile kompiliert. Dafür müssen zuerst die ``Tinkerforge.dll``
+Datei und die ``ExampleConfiguration.cs`` Datei aus dem
+``examples/Brick/Stepper/`` Ordner in einen neuen Ordner kopiert werden::
 
-Dafür müssen zuerst die ``Tinkerforge.dll`` und die
-``examples/Brick/Stepper/ExampleConfiguration.cs`` Datei in einen Ordern kopiert
-werden::
-
- example_folder/
+ example_project/
   -> Tinkerforge.dll
   -> ExampleConfiguration.cs
 
-In diesem Ordner kann jetzt ein C# Compiler mit den folgenden Parametern
-aufgerufen werden (1. Windows und 2. Linux/Mac OS X (Mono))::
+Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``UID`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden:
 
- 1.) csc.exe       /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
- 2.) /usr/bin/gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
+.. code-block:: csharp
 
-Alternativ können die Beispiele auch in einer C# Entwicklungsumgebung deiner
-Wahl verwendet werden (wie Visual Studio oder Mono Develop).
+  private static string HOST = "localhost";
+  private static int PORT = 4223;
+  private static string UID = "XYZ"; // Change to your UID
+
+Jetzt kann im ``example_project/`` Ordner der Visual Studio C# Compiler auf
+Windows so aufgerufen werden::
+
+ csc /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
+
+oder so der Mono Compiler auf Linux und Mac OS X::
+
+ gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
+
+Alternativ können die Beispiele auch in einer C# IDE deiner Wahl verwendet
+werden, wie z.B. Visual Studio oder MonoDevelop.
+
 
 .. _api_bindings_csharp_cls_complience:
 

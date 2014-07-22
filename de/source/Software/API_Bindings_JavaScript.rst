@@ -9,18 +9,16 @@ JavaScript - API Bindings
 **Voraussetzungen**: Node.js 0.10 oder neuer oder jeder aktuelle Browser mit
 WebSocket-Unterstützung (getestet mit Chrome, Firefox und IE)
 
-Die JavaScript Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen
-aus einem Node.js NPM Package ``tinkerforge.tgz`` und der WebSocket-basierten
-Browser-Version (in ``browser/``) der Bindings für alle Tinkerforge Bricks und
-Bricklets. Außerdem liegt der Quelltext der Node.js Implementierung (in
-``nodejs/source/``) und die Beispiele (in ``nodejs/examples/``) bei, sowie der
-Quelltext der Browser-Version (in ``browser/source/``) die HTML Beispiele (in
-``browser/examples/``).
+Die JavaScript Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen JavaScript Programmen
+heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
+die Bindings beinhaltet:
 
-Das NPM Package kann entweder mittels ``sudo npm -g install tinkerforge.tgz``
-aus der Datei im ZIP installiert werden, oder aus der NPM Registry mittels
-``sudo npm -g install tinkerforge``. Danach können alle Node.js Beispiel
-unverändert verwendet werden.
+* ``nodejs/tinkerforge.tgz``, ein Node.js NPM Package (installierbar mit ``npm`` Tool)
+* in ``nodejs/source/`` den Quelltext für ``tinkerforge.tgz``
+* in ``nodejs/examples/`` die Node.js Beispiele für alle Bricks und Bricklets
+* in ``browser/source/`` den Quelltext der Browser Version der Bindings
+* in ``browser/examples/`` die HTML Beispiele für alle Bricks und Bricklets
 
 
 .. _api_bindings_javascript_install:

@@ -9,6 +9,17 @@ JavaScript - API Bindings
 **Requirements**: Node.js 0.10 or newer or any recent browser with WebSocket
 support (tested with Chrome, Firefox and IE)
 
+The JavaScript bindings allow you to control :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` from your JavaScript programs. The
+:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
+
+* ``nodejs/tinkerforge.tgz``, a Node.js NPM package (installable with ``npm`` tool)
+* in ``nodejs/source/`` the source code of ``tinkerforge.tgz``
+* in ``nodejs/examples/`` the Node.js examples for every Brick and Bricklet
+* in ``browser/source/`` the source code of the browser version of the bindings
+* in ``browser/examples/`` the HTML examples for every Brick and Bricklet
+
+
 The JavaScript bindings (:ref:`download <downloads_bindings_examples>`) consists
 of the Node.js NPM package ``tinkerforge.tgz`` and the WebSocket based browser
 version (in ``browser/``) of the bindings for all Tinkerforge Bricks and Bricklets.

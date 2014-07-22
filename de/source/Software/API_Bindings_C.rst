@@ -9,10 +9,19 @@ C/C++ - API Bindings
 .. note::
  Es gibt einen extra Abschnitt für :ref:`Objective-C und iOS <api_bindings_c_ios>`.
 
-Die C/C++ Bindings (:ref:`Download <downloads_bindings_examples>`) bestehen aus
-den Bindings für alle Tinkerforge Bricks und
-Bricklets (in ``bindings/``) und allen verfügbaren C/C++ Beispielen (in
-``examples/``).
+Die C/C++ Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen C/C++ Programmen
+heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
+die Bindings beinhaltet:
+
+* in ``source/`` den Quelltext der Bindings
+* in ``examples/`` die Beispiele für alle Bricks und Bricklets
+
+
+.. _api_bindings_c_install:
+
+Installation
+------------
 
 Um die C/C++ Bindings einfach zu halten haben sie nur externe Abhängigkeiten,
 die möglichst überall verfügbar sind, wodurch sie leicht in jegliches Projekt
@@ -22,46 +31,62 @@ Betriebssystem zu versorgen. Die Bindings sollten aber auf den meisten
 Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
 POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
 
-
-.. _api_bindings_c_install:
-
-Installation
-------------
-
-TODO
+Da es keine vorkompilierte Bibliothek für die C/C++ Bindings gibt, gibt es in
+diese Sinne auch nichts zu installieren. Die empfohlene Art und Weise die
+Bindings zu verwenden, ist ihren Quelltext direkt in das jeweilige C/C++ Projekt
+mit einzubinden. Der folgenden Abschnitt zeigt an verschiedenen Beispielen auf
+wie dies gemacht werden kann.
 
 
 Test eines Beispiels
 --------------------
 
-Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit GCC unter
-Linux kompilieren. Dafür müssen die IP Connection und die Stepper Brick
-Bindings (``ip_connection.h``, ``ip_connection.c``, ``brick_stepper.c`` und
-``brick_stepper.h``) vom ``bindings/`` Ordner sowie
-``example_configuration.c`` vom ``examples/brick/stepper/`` Ordner in ein
-Projektordner kopiert werden::
+Um ein C/C++ Beispiel testen zu können müssen zuerst :ref:`Brick Daemon
+<brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
+arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
+Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
+Informationen über die angeschlossenen Bricks und Bricklets aus.
 
- project_folder/
+Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit GCC auf der
+Kommandozeile und in verschiedenen IDEs kompilieren.
+Dafür müssen zuerst die IP Connection und die Stepper Brick Bindings aus dem
+``source/`` Ordner sowie ``example_configuration.c`` aus dem
+``examples/brick/stepper/`` Ordner in ein neuen Ordner kopiert werden::
+
+ example_project/
   -> ip_connection.c
   -> ip_connection.h
   -> brick_stepper.c
   -> brick_stepper.h
   -> example_configuration.c
 
+Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``UID`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden:
+
+.. code-block:: c
+
+  #define HOST "localhost"
+  #define PORT 4223
+  #define UID "XYZ" // Change to your UID
+
 
 GCC
 ^^^
 
 Die einzige Abhängigkeit auf Unix-artigen Systemen ist pthreads. Somit sieht der
-Befehl um das Beispiel mit GCC unter Linux zu kompilieren wie folgt aus::
+Befehl um das Beispiel mit GCC unter Linux und Mac OS X zu kompilieren wie
+folgt aus::
 
- gcc -pthread -o example_configuration brick_stepper.c ip_connection.c example_configuration.c
+ gcc -pthread -o example *.c
 
 Unter Windows wird Win32 für Threads und WinSock2 (``ws2_32``) für die
 Netzwerkverbindung verwendet. Mit MinGW lässt sich das Beispiel wie folgt
 kompilieren (Linker-Parameter müssen nach den Quelldateien angegeben werden)::
 
- gcc -o example_configuration.exe brick_stepper.c ip_connection.c example_configuration.c -lws2_32 -ladvapi32
+ gcc -o example.exe *.c -lws2_32 -ladvapi32
 
 Der einfachste Weg die Bindings in einem C++ Projekt zu verwenden, ist es alle
 benötigten Dateien von ``*.c`` nach ``*.cpp`` umzubenennen. Dann behandelt der
@@ -71,14 +96,16 @@ Compiler den Quelltext als C++ und tut automatisch das Richtige.
 Visual Studio
 ^^^^^^^^^^^^^
 
-Mit Visual Studio kann der ``project_folder/`` auch verwendet werden. Der
+Mit Visual Studio kann der ``example_project/`` Ordner auch verwendet werden. Der
 einfachste Weg die Bindings in einem Visual C++ Projekt zu verwenden, ist es
 alle benötigten Dateien von ``*.c`` nach ``*.cpp`` umzubenennen. Dann
 behandelt der Compiler den Quelltext als C++ und tut automatisch das Richtige.
-
-Als Randnotiz: Dadurch wird auch das Problem vermieden, dass der Visual Studio
+Dadurch wird auch das Problem vermieden, dass der Visual Studio
 Compiler nur den C89 Standard unterstützt, die Bindings aber den neueren C99
 Standard verwenden.
+
+IDE
+"""
 
 Jetzt kann ein neues Projekt in Visual Studio erzeugt werden:
 
@@ -86,7 +113,7 @@ Jetzt kann ein neues Projekt in Visual Studio erzeugt werden:
 * New
 * Project From Existing Code
 * Wähle als Type "Visual C++"
-* Wähle ``project_folder/``
+* Wähle ``example_project/``
 * Wähle einen Projektnamen
 * Klicke Next
 * Wähle "Console Application"
@@ -103,21 +130,24 @@ Projekt hinzugefügt werden:
 
 Ältere Versionen von Visual Studio bringen kein ``stdint.h`` mit. Eine kompatible
 Version gibt es `hier <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
-Falls nötig diese herunterladen und im ``project_folder/`` speichern.
+Falls nötig diese herunterladen und im ``example_project/`` Ordner speichern.
 
-Das waren alle nötigen Änderungen, jetzt kann es los gehen!
+Das waren alle nötigen Änderungen, jetzt kann das Projekt kompiliert und
+gestartet werden!
 
-Der Visual Studio Compiler kann auch von der Kommandozeile aus verwendet werden::
+Kommandozeile
+"""""""""""""
 
- cl.exe /I. brick_stepper.cpp ip_connection.cpp example_configuration.cpp /link /out:example_configuration.exe ws2_32.lib advapi32.lib
+Der Visual Studio Compiler kann auch von der Kommandozeile aus verwendet werden
+im ``example_project/`` Ordner::
+
+ cl.exe /I. *.cpp /link /out:example.exe ws2_32.lib advapi32.lib
 
 
 Qt Creator
 ^^^^^^^^^^
 
-Mit Qt Creator kann der ``project_folder/`` auch verwendet werden.
-
-Ein neues Projekt für den ``project_folder/`` in Qt Creator kann wie folgt
+Ein neues Projekt für der ``example_project/`` Ordner in Qt Creator kann wie folgt
 erzeugt werden:
 
 * File
@@ -125,13 +155,13 @@ erzeugt werden:
 * Wähle Other Project
 * Wähle Empty Qt Project
 * Klicke Choose...
-* Wähle "project_folder" als Name
-* Wähle den Ordner der den ``project_folder/`` beinhaltet für "Create in"
+* Wähle "example_project" als Name
+* Wähle den Ordner der den ``example_project/`` Ordner beinhaltet für "Create in"
 * Klicke Next
 * Klicke Next
 * Klicke Finish
 
-Qt Creator sollte jetzt eine leere Datei namens ``project_folder.pro`` anzeige.
+Qt Creator sollte jetzt eine leere Datei namens ``example_project.pro`` anzeigen.
 In diesem müssen jetzt folgende Zeilen kopiert und das Ergebnis gespeichert
 werden::
 
@@ -156,7 +186,7 @@ Jetzt kann das Programm kompiliert und gestartet werden!
 
 Dies ist ein Beispiel ein Projekt in C. Der einfachste Weg die Bindings in
 einem C++ Projekt zu verwenden, ist es alle benötigten Dateien von ``*.c`` nach
-``*.cpp`` umzubenennen und die ``SOURCES`` Zeile in ``project_folder.pro``
+``*.cpp`` umzubenennen und die ``SOURCES`` Zeile in ``example_project.pro``
 entsprechend anzupassen. Dann behandelt der Compiler den Quelltext als C++ und
 tut automatisch das Richtige.
 
@@ -172,10 +202,8 @@ eingefügt werden::
 Orwell Dev-C++
 ^^^^^^^^^^^^^^
 
-Mit Dev-C++ kann der ``project_folder/`` auch verwendet werden.
-
-Ein neues Projekt für den ``project_folder/`` in Dev-C++ kann wie folgt erzeugt
-werden:
+Ein neues Projekt für der ``example_project/`` Ordner in Dev-C++ kann wie folgt
+erzeugt werden:
 
 * Datei
 * Neu
@@ -184,12 +212,13 @@ werden:
 * Klicke Ok
 
 Dev-C++ erzeugt eine neue Datei namens ``main.c``. Diese benötigen wir nicht
-und siw kann durch einen Klick auf "Datei entfernen" in deren Kontextmenu in
+und sie kann durch einen Klick auf "Datei entfernen" in deren Kontextmenü in
 der Projektansicht entfernt werden. Als nächstes alle Dateien aus dem
-``project_folder/`` zum Projekt hinzufügen über den "Zum Projekt hinzufügen"
-Eintrag im Kontextmenus des Projekts.
+``example_project/`` Ordner zum Projekt hinzufügen über den "Zum Projekt
+hinzufügen" Eintrag im Kontextmenüs des Projekts.
 
-Dann noch ``libws2_32.a`` (WinSock2) und ``libadvapi32.a`` zum Projekt hinzufügen:
+Dann noch ``libws2_32.a`` (WinSock2) und ``libadvapi32.a`` zum Projekt
+hinzufügen:
 
 * Projekt
 * Projekt Optionen

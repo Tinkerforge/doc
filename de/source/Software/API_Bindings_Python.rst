@@ -8,23 +8,14 @@ Python - API Bindings
 
 **Voraussetzungen**: Python 2.5 oder neuer, Python 3 wird auch unterstützt
 
-Die Python Bindings (:ref:`download <downloads_bindings_examples>`) bestehen
-aus dem Python Quelltext der Bindings für alle Tinkerforge Bricks und Bricklets
-(in ``source/``) und allen verfügbaren Python Beispielen (in ``examples/``).
+Die Python Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Python Programmen
+heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
+die Bindings beinhaltet:
 
-Die Bindings können mit Hilfe der `setuptools
-<https://pypi.python.org/pypi/setuptools>`__ installiert werden, dazu folgenden
-Befehl im ``source/`` Ordner ausführen::
-
- python setup.py install
-
-Die Bindings stehen auch im Python Package Index `PyPI
-<https://pypi.python.org>`__ bereit. Von dort können sie mit dem Python Package
-Installer `pip <https://pip.pypa.io>`__ und folgendem Befehl installiert werden::
-
- pip install tinkerforge
-
-Danach können alle Beispiel unverändert verwendet werden.
+* in ``source/`` den Quelltext der Bindings (inklusive `setuptools
+  <https://pypi.python.org/pypi/setuptools>`__ Installations-Script)
+* in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 
 .. _api_bindings_python_install:
@@ -32,49 +23,87 @@ Danach können alle Beispiel unverändert verwendet werden.
 Installation
 ------------
 
-TODO
+Die Python Bindings können auf drei Wegen installiert werden: vom Quelltext
+oder von PyPi oder gar nicht.
+
+Vom Quelltext
+^^^^^^^^^^^^^
+
+Der ``source/`` Ordner beinhaltet ein `setuptools
+<https://pypi.python.org/pypi/setuptools>`__ Installations-Script:
+``setup.py``. Um die Bindings zu installieren muss nur dieses Script im
+``source/`` Ordner ausgeführt werden. Abhängig von der Art der Python
+Installation muss dies möglicherweise mit ``sudo`` bzw. als Administrator
+ausgeführt werden::
+
+ python setup.py install
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können.
+
+Von PyPI
+^^^^^^^^
+
+Die Bindings stehen auch im Python Package Index `PyPI
+<https://pypi.python.org/pypi/tinkerforge>`__ bereit. Von dort können sie mit
+dem Python Package Installer `pip <https://pip.pypa.io>`__ und folgendem Befehl
+installiert werden (dazu wird die ZIP Datei der Bindings nicht benötigt).
+Abhängig von der Art der Python Installation muss dies möglicherweise mit
+``sudo`` bzw. als Administrator ausgeführt werden::
+
+ pip install tinkerforge
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können.
+
+Gar nicht
+^^^^^^^^^
+
+Die Python Bindings müssen nicht unbedingt installiert werden. Stattdessen
+kann auch einfach der ``tinkerforge/`` Ordner vom ``source/`` Ordner in den
+gleichen Ordner wie dein Python Programm kopiert werden und Python wird die
+Bindings automatisch finden. Der Abschnitt über den Test eines Beispiels
+vermittelt mehr Details darüber.
 
 
 Test eines Beispiels
 --------------------
 
-Wenn die Bindings nicht installiert werden sollen oder können, dann kann der
-Quelltext auch direkt verwendet werden. Dafür muss der ``tinkerforge/`` Ordner
-vom ``source/`` Ordner und das Beispiel, das ausprobiert werden soll (z.B. das
-Stepper Konfigurationsbeispiel
-``examples/brick/stepper/example_configuration.py``), in einen Ordner kopiert
-werden::
+Um ein Python Beispiel testen zu können müssen zuerst :ref:`Brick Daemon
+<brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
+arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
+Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
+Informationen über die angeschlossenen Bricks und Bricklets aus.
 
- example_folder/
+Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
+getestet. Dafür muss zuerst die ``example_configuration.py`` Datei aus dem
+``examples/brick/stepper/`` Ordner in einen neuen Ordner kopiert werden::
+
+ example_project/
+  -> example_configuration.py
+
+Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``UID`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden:
+
+.. code-block:: python
+
+  HOST = "localhost"
+  PORT = 4223
+  UID = "XYZ" # Change to your UID
+
+Wenn die Bindings vom Quelltext oder von PyPI installiert wurden, dann kann
+das Beispiele jetzt direkt ausgeführt werden.
+
+Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext auch
+direkt verwendet werden. Dafür muss der ganze ``tinkerforge/`` Ordner vom
+``source/`` Ordner in den ``example_project/`` Ordner kopiert werden::
+
+ example_project/
   -> tinkerforge/
   -> example_configuration.py
 
-Falls nur einige ausgewählte Bricks oder Bricklets verwendet werden sollen und
-keine unnötigen Dateien im Projekt auftauchen sollen, dann können auch nur die
-wirklich benötigten Dateien in einen Ordner kopiert werden. Das Stepper Brick
-Beispiel benötigt ``ip_connection.py`` und ``brick_stepper.py``::
-
- example_folder/
-  -> ip_connection.py
-  -> brick_stepper.py
-  -> example_configuration.py
-
-Nachdem diese Dateien in einen Ordner kopiert sind muss noch das ``tinkerforge``
-Package aus dem Quelltext des Beispiels entfernt werden. Statt:
-
-.. code-block:: python
-
- from tinkerforge.ip_connection import IPConnection
- from tinkerforge.brick_stepper import Stepper
-
-muss dort nun dies stehen:
-
-.. code-block:: python
-
- from ip_connection import IPConnection
- from brick_stepper import Stepper
-
-Jetzt kann das Beispiel wieder ausgeführt werden.
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
 
 
 API Dokumentation und Beispiele

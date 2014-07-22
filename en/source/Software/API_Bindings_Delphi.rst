@@ -9,18 +9,12 @@ Delphi/Lazarus - API Bindings
 **Requirements**: Delphi 2007 or newer, or Lazarus (Free Pascal Compiler 2.4
 or newer), other Delphi or Object Pascal compilers might work as well
 
-The Delphi bindings (:ref:`download <downloads_bindings_examples>`) consist of
-the bindings for all Tinkerforge Bricks and
-Bricklets (in ``bindings/``) and all available Delphi examples (in
-``examples/``).
+The Delphi/Lazarus bindings allow you to control :ref:`Bricks <primer_bricks>`
+and :ref:`Bricklets <primer_bricklets>` from your Delphi/Lazarus programs. The
+:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-To keep the Delphi bindings stupid and simple, they only have dependencies that
-are available nearly everywhere, thus making it possible to compile into any
-project hassle-free. We do not offer a pre-compiled library, since it would be
-a pain in the ass to provide them for all combinations of architectures and
-operating systems. This means, the bindings should work on most architectures
-(ARM, x86, etc.) and on most operating systems (Windows and POSIX systems such
-as Linux and Mac OS X, etc.).
+* in ``source/`` the source code of the bindings
+* in ``examples/`` the examples for every Brick and Bricklet
 
 
 .. _api_bindings_delphi_install:
@@ -28,29 +22,36 @@ as Linux and Mac OS X, etc.).
 Installation
 ------------
 
-TODO
+To keep the Delphi/Lazarus bindings stupid and simple, they only have dependencies that
+are available nearly everywhere, thus making it possible to compile into any
+project hassle-free. We do not offer a precompiled library, since it would be
+a pain in the ass to provide them for all combinations of architectures and
+operating systems. This means, the bindings should work on most architectures
+(ARM, x86, etc.) and on most operating systems (Windows and POSIX systems such
+as Linux and Mac OS X, etc.).
+
+Because there is no precompiled library for the Delphi/Lazarus bindings there is nothing
+to install as such. The recommended way of using the bindings is to include their
+source code directly into your Delphi/Lazarus project. The next section shows some examples
+about how to do that.
 
 
 Testing an Example
 ------------------
 
+To test a Delphi/Lazarus example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
+<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
+USB interface of the Bricks and the API bindings. Brick Viewer connects to
+Brick Daemon and helps to figure out basic information about the connected
+Bricks and Bricklets.
+
 As an example we will compile the Stepper Brick configuration example with
-Lazarus and Delphi XE2.
+the Free Pascal Compiler (FPC), as well as the Lazarus IDE and the Delphi IDE.
+For that we have to copy the IP Connection and the Stepper Brick bindings from
+the ``source/`` folder as well as the ``ExampleConfiguration.pas`` from the
+``examples/Brick/Stepper/`` folder into a new folder::
 
-
-Lazarus
-^^^^^^^
-
-As an example we will compile the Stepper Brick configuration example with
-the Free Pascal Compiler (FPC) that comes with the Lazarus IDE. For that we
-have to copy the IP Connection (``Base58.pas``, ``BlockingQueue.pas``,
-``BrickDaemon.pas``, ``Device.pas``, ``DeviceBase.pas``, ``IPConnection.pas``,
-``LEConverter.pas``, ``SHA1.pas`` and ``TimedSemaphore.pas``) and the Stepper
-Brick bindings (``BrickStepper.pas``) from the ``bindings/`` folder as well as the
-``ExampleConfiguration.pas`` from the ``examples/Brick/Stepper/`` folder into our
-project::
-
- project_folder/
+ example_project/
   -> Base58.pas
   -> BlockingQueue.pas
   -> BrickDaemon.pas
@@ -63,34 +64,58 @@ project::
   -> BrickStepper.pas
   -> ExampleConfiguration.pas
 
+In the example ``HOST`` and ``PORT`` specify at which network address the
+Stepper Brick can be found. If it is connected locally to USB then ``localhost``
+and 4223 is correct. The ``UID`` value has to be changed to the UID of the
+connected Stepper Brick, which you can figure out using Brick Viewer:
+
+.. code-block:: delphi
+
+  const
+    HOST = 'localhost';
+    PORT = 4223;
+    UID = 'XYZ'; { Change to your UID }
+
+
+Free Pascal Compiler (FPC)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 FPC automatically finds the used units, therefore a compilation of the project
-with FPC like::
+with FPC looks like this::
 
  fpc ExampleConfiguration.pas
 
-With Lazarus we can use our ``project_folder/`` by clicking:
+
+Lazarus IDE
+^^^^^^^^^^^
+
+With Lazarus we can use our ``example_project/`` folder by clicking:
 
 * Project
 * New Project from file ...
-* Choose ``project_folder/ExampleConfiguration.pas``
+* Choose ``example_project/ExampleConfiguration.pas``
 * Click Open
 * Choose "Console Application"
 * Click OK
 * Choose "Application Class Name" and "Title"
 * Click OK
 
+That's it, now the project can be compiled an executed!
+
 
 Delphi IDE
 ^^^^^^^^^^
 
 With Delphi XE2 (older Delphi version should work similar) we can use our
-``project_folder/`` as follows. First rename ``ExampleConfiguration.pas`` to
+``example_project/`` as follows. First rename ``ExampleConfiguration.pas`` to
 ``ExampleConfiguration.dpr`` then click:
 
 * Project
 * Add Existing Project...
-* Choose ``project_folder/ExampleConfiguration.dpr``
+* Choose ``example_project/ExampleConfiguration.dpr``
 * Click Open
+
+That's it, now the project can be compiled an executed!
 
 
 API Documentation and Examples
