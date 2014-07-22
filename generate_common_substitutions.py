@@ -97,20 +97,20 @@ allgemeine Beschreibung.
 brick_test_intro = {
 'en':
 """.. |test_intro| replace::
- To test the {0} Brick you need to have the
- :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
- (for installation guides click :ref:`here <brickd_installation>`
- and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
- to the Brick Daemon.
+ To test a {0} Brick you need to have :ref:`Brick Daemon <brickd>` and
+ :ref:`Brick Viewer <brickv>` installed. Brick Daemon acts as a proxy between
+ the USB interface of the Bricks and the API bindings. Brick Viewer connects
+ to Brick Daemon. It helps to figure out basic information about the connected
+ Bricks and Bricklets and allows to test them.
 """,
 'de':
 """.. |test_intro| replace::
- Um den {0} Brick testen zu können müssen der
- :ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
- (für Installationsanleitungen :ref:`hier <brickd_installation>`
- und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
- dem Brick Daemon verbunden sein.
-
+ Um einen {0} Brick testen zu können müssen zuerst :ref:`Brick Daemon
+ <brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
+ arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
+ Bindings. Brick Viewer kann sich mit Brick Daemon verbinden, gibt
+ Informationen über die angeschlossenen Bricks und Bricklets aus und ermöglicht
+ es diese zu testen.
 """
 }
 
@@ -188,23 +188,23 @@ bricklet_case_hint = {
 """
 }
 
-
 bricklet_test_intro = {
 'en':
 """.. |test_intro| replace::
- To test the {0} Bricklet you need to have the
- :ref:`Brick Daemon <brickd>` and the :ref:`Brick Viewer <brickv>` installed
- (for installation guides click :ref:`here <brickd_installation>`
- and :ref:`here <brickv_installation>`) and the Brick Viewer has to be connected
- to the Brick Daemon.
+ To test a {0} Bricklet you need to have :ref:`Brick Daemon <brickd>` and
+ :ref:`Brick Viewer <brickv>` installed. Brick Daemon acts as a proxy between
+ the USB interface of the Bricks and the API bindings. Brick Viewer connects
+ to Brick Daemon. It helps to figure out basic information about the connected
+ Bricks and Bricklets and allows to test them.
 """,
 'de':
 """.. |test_intro| replace::
- Um das {0} Bricklet testen zu können müssen der
- :ref:`Brick Daemon <brickd>` und der :ref:`Brick Viewer <brickv>` installiert
- (für Installationsanleitungen :ref:`hier <brickd_installation>`
- und :ref:`hier <brickv_installation>` klicken) und der Brick Viewer muss mit
- dem Brick Daemon verbunden sein.
+ Um ein {0} Bricklet testen zu können müssen zuerst :ref:`Brick Daemon
+ <brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
+ arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
+ Bindings. Brick Viewer kann sich mit Brick Daemon verbinden, gibt
+ Informationen über die angeschlossenen Bricks und Bricklets aus und ermöglicht
+ es diese zu testen.
 """
 }
 
