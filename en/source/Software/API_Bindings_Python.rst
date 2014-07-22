@@ -22,8 +22,8 @@ The Python bindings allow you to control :ref:`Bricks <primer_bricks>` and
 Installation
 ------------
 
-There are three ways to install the Python bindings: from source or from PyPI
-or not at all.
+There are two ways to install the Python bindings: from source or from PyPI.
+But the bindings can also be used without installing them first.
 
 From Source
 ^^^^^^^^^^^
@@ -36,7 +36,7 @@ with ``sudo`` or as administrator::
 
  python setup.py install
 
-Then you're ready to test the examples.
+Now you're ready to test the examples.
 
 From PyPI
 ^^^^^^^^^
@@ -52,8 +52,8 @@ Depending on your Python installation you might have to execute this with
 
 Now you're ready to test the examples.
 
-Not at all
-^^^^^^^^^^
+Without Installation
+^^^^^^^^^^^^^^^^^^^^
 
 You can use the bindings without having to install them. Just put the
 ``tinkerforge/`` folder from ``source/`` folder in the same folder as your
@@ -71,7 +71,7 @@ Brick Daemon and helps to figure out basic information about the connected
 Bricks and Bricklets.
 
 As an example let's test the configuration example for the Stepper Brick.
-For this copy the ``example_configuration.cs`` file from the
+For this copy the ``example_configuration.py`` file from the
 ``examples/brick/stepper/`` folder into a new folder::
 
  example_project/
@@ -92,8 +92,9 @@ If you did install the bindings from source or PyPI then you're now ready to
 test this example.
 
 If you did **not** install the bindings from source or PyPI, you can also use
-the source directly. Just copy the whole ``tinkerforge/`` folder from the
-``source/`` folder to your ``example_project/``::
+the source of the bindings directly. Just copy the ``tinkerforge/`` folder from
+the ``source/`` folder to your ``example_project/`` folder and Python will
+automatically find the bindings::
 
  example_project/
   -> tinkerforge/

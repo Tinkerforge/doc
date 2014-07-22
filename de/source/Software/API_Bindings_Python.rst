@@ -23,8 +23,8 @@ die Bindings beinhaltet:
 Installation
 ------------
 
-Die Python Bindings können auf drei Wegen installiert werden: vom Quelltext
-oder von PyPi oder gar nicht.
+Die Python Bindings können auf zwei Weisen installiert werden: vom Quelltext
+oder von PyPi. Die Bindings können aber auch ohne Installation genutzt werden.
 
 Vom Quelltext
 ^^^^^^^^^^^^^
@@ -54,8 +54,8 @@ Abhängig von der Art der Python Installation muss dies möglicherweise mit
 
 Dann ist auch schon alles bereit, um Beispiele testen zu können.
 
-Gar nicht
-^^^^^^^^^
+Ohne Installation
+^^^^^^^^^^^^^^^^^
 
 Die Python Bindings müssen nicht unbedingt installiert werden. Stattdessen
 kann auch einfach der ``tinkerforge/`` Ordner vom ``source/`` Ordner in den
@@ -95,9 +95,10 @@ Brick Viewer ermittelt werden:
 Wenn die Bindings vom Quelltext oder von PyPI installiert wurden, dann kann
 das Beispiele jetzt direkt ausgeführt werden.
 
-Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext auch
-direkt verwendet werden. Dafür muss der ganze ``tinkerforge/`` Ordner vom
-``source/`` Ordner in den ``example_project/`` Ordner kopiert werden::
+Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext der
+Bindings auch direkt verwendet werden. Dafür muss der ``tinkerforge/`` Ordner
+vom ``source/`` Ordner in den ``example_project/`` Ordner kopiert werden und
+Python wird die Bindings automatisch finden::
 
  example_project/
   -> tinkerforge/

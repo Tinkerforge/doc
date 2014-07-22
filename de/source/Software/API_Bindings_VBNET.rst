@@ -12,7 +12,7 @@ Die Visual Basic .NET Bindings (:ref:`Download <downloads_bindings_examples>`)
 und die :ref:`C# Bindings <api_bindings_csharp>`
 sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLS
 <http://de.wikipedia.org/wiki/Common_Language_Specification>`__-konform.
-Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
+Dies erlaubt es die Bindings mit allen `.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. Visual Basic .NET.
 

@@ -85,10 +85,10 @@ CLS Compliance
 
 Since version 2.0.0 the C# bindings are `Common Language Specification
 <http://en.wikipedia.org/wiki/Common_Language_Specification>`__
-compliant. This allows to use them with all `CLI/.NET compatible languages
+compliant. This allows to use them with all `.NET compatible languages
 <http://en.wikipedia.org/wiki/List_of_CLI_languages>`__.
 For :ref:`Visual Basic .NET <api_bindings_vbnet>`,
-:ref:`Mathematica .NET/Link <api_bindings_mathematica>` and
+:ref:`Mathematica <api_bindings_mathematica>` and
 :ref:`LabVIEW (Windows) <api_bindings_labview>` we provide dedicated
 examples and documentation to demonstrate this.
 

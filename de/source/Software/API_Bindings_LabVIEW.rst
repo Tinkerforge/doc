@@ -8,20 +8,23 @@ LabVIEW - API Bindings
 
 **Voraussetzungen**: LabVIEW auf Windows mit .NET Unterstützung
 
-Die LabVIEW Bindings (:ref:`Download <downloads_bindings_examples>`)
-und die :ref:`C# Bindings <api_bindings_csharp>`
-sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLS
+Die LabVIEW Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen LabVIEW Programmen
+heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
+die Bindings beinhaltet:
+
+* ``Tinkerforge.dll``, eine vorkompilierte .NET Bibliothek
+* in ``source/`` den Quelltext für ``Tinkerforge.dll``
+* in ``examples/`` die Beispiele für alle Bricks und Bricklets im LabVIEW 2010
+  und LabVIEW 2013 Format
+
+Die LabVIEW Bindings basieren auf den :ref:`C# Bindings <api_bindings_csharp>`.
+Seit Version 2.0.0 sind die C# Bindings `CLS
 <http://de.wikipedia.org/wiki/Common_Language_Specification>`__-konform.
-Dies erlaubt es die Bindings mit allen `CLI/.NET kompatiblen Sprachen
+Dies erlaubt es die Bindings mit allen `.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. LabVIEWs `.NET Unterstützung
 <http://zone.ni.com/reference/en-XX/help/371361K-01/lvcomm/dotnet_pal/>`__.
-
-Die Bindings bestehen aus einer Bibliothek (.dll) für alle Tinkerforge Bricks
-und Bricklets (``Tinkerforge.dll``), dem C# Quelltext der DLL (in ``source/``)
-und allen verfügbaren LabVIEW Beispielen (in ``examples/``). Die Beispiele sind
-in LabVIEW 2013 Format gespeichert. Alle Beispiele liegen aber auch im LabVIEW
-2010 Format bei.
 
 
 .. _api_bindings_labview_install:
@@ -29,7 +32,19 @@ in LabVIEW 2013 Format gespeichert. Alle Beispiele liegen aber auch im LabVIEW
 Installation
 ------------
 
-TODO
+Damit die Bindings funktionieren können muss LabVIEW in der Lage sein die
+``Tinkerforge.dll`` zu finden. Beim Öffnen einen Beispiels wird LabVIEW nach
+der DLL suchen und nachfragen falls sie nicht gefunden werden kann. Dieses
+Suchen-und-Nachfragen kann vermieden werden, indem die ``Tinkerforge.dll`` in
+einem LabVIEW bekannten Ordern gespeichert wird. Die einfachsten Möglichkeiten
+ist der ``vi.lib`` Ordern der LabVIEW Installation::
+
+ C:\Program Files\National Instruments\LabVIEW 2013\vi.lib\
+
+Dann kann LabVIEW die ``Tinkerforge.dll`` automatisch finden und nicht
+Nachfragen. Allderdings wird LabVIEW möglicherweise darüber warnen, dass
+die DLL aus einen anderen Ordner geladen wurde. Diese Warnung kann ignoriert
+werden.
 
 
 Test eines Beispiels
@@ -41,26 +56,34 @@ arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
 Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
 Informationen über die angeschlossenen Bricks und Bricklets aus.
 
+Stepper Brick
+^^^^^^^^^^^^^
 
+Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
+ausführen. Dafür muss zuerst die ``Example Configuration.vi`` Datei aus dem
+``examples/Brick/Stepper/`` Ordner in einen neuen Ordner kopiert werden::
 
+ example_project/
+  -> Example Configuration.vi
 
+Wenn die Bindings **nicht** in den ``vi.lib`` Ordern der LabVIEW Installation
+kopiert wurden so muss auch noch die ``Tinkerforge.dll`` in den ``example_project/``
+Ordner kopiert werden bevor das Beispiel in LabVIEW geöffnet werden kann::
 
-Damit die Bindings funktionieren können muss LabVIEW in der Lage sein die
-``Tinkerforge.dll`` zu finden. Beim Öffnen einen Beispiels wird LabVIEW nach
-der DLL suchen und nachfragen falls sie nicht gefunden werden kann. Dieses
-Suchen-und-Nachfragen kann vermieden werden, indem die ``Tinkerforge.dll`` in
-einem LabVIEW bekannten Ordern gespeichert wird. Die einfachsten Möglichkeiten
-sind der ``vi.lib`` Ordern der LabVIEW Installation (z.B.
-``C:\Program Files\National Instruments\LabVIEW 2013\vi.lib\``) oder der
-gleiche Ordner in dem auch das zu öffnende Beispiel gespeichert ist. In beiden
-Fällen wird LabVIEW die ``Tinkerforge.dll`` automatisch finden und nicht
-Nachfragen. Allderdings wird LabVIEW möglicherweise darüber warnen, dass die
-DLL aus einen anderen Ordner geladen wurde. Diese Warnungs kann ignoriert
-werden.
+ example_project/
+  -> Tinkerforge.dll
+  -> Example Configuration.vi
 
-Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel ausführen.
-Dazu ``examples/Brick/Stepper/ExampleConfiguration.nb`` in
-LabVIEW öffnen, die UID des Stepper Bricks eintragen und ausführen.
+Am Anfang des Beispiels ist mit ``host`` und ``port`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``uid`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden.
+
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
+
+Barometer Bricklet
+^^^^^^^^^^^^^^^^^^
 
 Hier ein weiteres :ref:`Beispiel <barometer_bricklet_labview_examples>`,
 das einen Graph der gemessenen Luftdruckwerte eines Barometer Bricklets

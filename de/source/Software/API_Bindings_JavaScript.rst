@@ -7,7 +7,7 @@ JavaScript - API Bindings
 =========================
 
 **Voraussetzungen**: Node.js 0.10 oder neuer oder jeder aktuelle Browser mit
-WebSocket-Unterstützung (getestet mit Chrome, Firefox und IE)
+WebSocket-Unterstützung (getestet mit Chrome, Firefox und Internet Explorer)
 
 Die JavaScript Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen JavaScript Programmen
@@ -26,46 +26,114 @@ die Bindings beinhaltet:
 Installation
 ------------
 
-TODO
+Ob und wie die JavaScript Bindings installiert werden können oder müssen hängt
+von der Art der Verwendung ab.
+
+Node.js
+^^^^^^^
+
+Die Node.js Version der Bindings können mit dem Node.js Package Manager
+`npm <https://www.npmjs.org/>`__ installiert werden, müssen aber nicht.
+
+Mit NPM Package
+"""""""""""""""
+
+Für die Verwendung der Bindings mit Node.js steht in NPM Package bereit. Dies
+ist im `Node.js Package Repository <https://www.npmjs.org/package/tinkerforge>`__
+verfügbar und kann von dort mit folgendem Befehl global installiert werden.
+Möglicherweise muss dies mit ``sudo`` bzw. als Administrator ausgeführt werden::
+
+ npm -g install tinkerforge
+
+Alternativ ist das NPM Package auch in der ZIP Datei der Bindings enthalten und
+kann mit folgendem Befehl global installiert werden. Möglicherweise muss dies
+mit ``sudo`` bzw. als Administrator ausgeführt werden::
+
+ npm -g install nodejs/tinkerforge.tgz
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können.
+
+Ohne Installation
+"""""""""""""""""
+
+Die JavaScript Bindings für Node.js müssen nicht unbedingt installiert werden.
+Stattdessen kann auch einfach der ``Tinkerforge/`` Ordner und die
+``Tinkerforge.js`` Datei vom ``nodejs/source/`` Ordner in den gleichen Ordner
+wie dein JavaScript Programm kopiert werden. Der Abschnitt über den Test eines
+Beispiels vermittelt mehr Details darüber.
+
+HTML
+^^^^
+
+Für die Verwendung der Bindings im Browser steht im ``browser/source/`` Ordner
+eine ``Tinkerforge.js`` Datei bereit, die die kompletten Bindings beinhaltet.
+Diese wird einfach in das gleiche Verzeichnis wie deine HTML Datei kopiert. Der
+Abschnitt über den Test eines Beispiels vermittelt mehr Details darüber.
 
 
-Test eines Node.js Beispiels
-----------------------------
+Test eines Beispiels
+--------------------
 
-Wenn das NPM Package nicht verwenden werden soll oder kann, dann kann der
-Quelltext auch direkt verwendet werden. Dafür muss der ``Tinkerforge`` Ordner
-vom ``nodejs/source/`` Ordner und das Beispiel, das ausprobiert werden soll
-(z.B. das Stepper Konfigurationsbeispiel
-``nodejs/examples/Brick/Stepper/ExampleConfiguration.js``), in einen Ordner
-kopiert werden::
+Um ein JavaScript Beispiel testen zu können müssen zuerst :ref:`Brick Daemon
+<brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
+arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
+Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
+Informationen über die angeschlossenen Bricks und Bricklets aus.
 
- example_folder/
- -> Tinkerforge/
- -> ExampleConfiguration.js
+Node.js
+^^^^^^^
 
-Dann muss noch der ``require`` Aufruf angepasst werden. Statt:
+Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
+getestet. Dafür muss zuerst die ``ExampleConfiguration.js`` Datei aus dem
+``nodejs/examples/Brick/Stepper/`` Ordner in einen neuen Ordner kopiert werden::
+
+ example_project/
+  -> ExampleConfiguration.js
+
+Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``UID`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden:
 
 .. code-block:: javascript
 
-    var Tinkerforge = require('tinkerforge');
+  var HOST = 'localhost';
+  var PORT = 4223;
+  var UID = 'XYZ'; // Change to your UID
 
-    var ipcon = new Tinkerforge.IPConnection();
-    var stepper = new Tinkerforge.BrickStepper(UID, ipcon);
+Wenn die Bindings mittels NPM Package installiert wurden, dann kann
+das Beispiele jetzt direkt ausgeführt werden.
+
+Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext der
+Bindings auch direkt verwendet werden. Dafür muss der ``Tinkerforge/`` Ordner
+und die ``Tinkerforge.js`` Datei vom ``nodejs/source/`` Ordner in den
+``example_project/`` Ordner kopiert werden::
+
+ example_project/
+  -> Tinkerforge/
+  -> Tinkerforge.js
+  -> ExampleConfiguration.js
+
+Dann muss noch der ``require`` Aufruf in ``ExampleConfiguration.js`` angepasst
+werden. Statt:
+
+.. code-block:: javascript
+
+  var Tinkerforge = require('tinkerforge');
 
 muss dort nun dies stehen:
 
 .. code-block:: javascript
 
-    var IPConnection = require('./Tinkerforge/IPConnection');
-    var BrickStepper = require('./Tinkerforge/BrickStepper');
+  var Tinkerforge = require('./Tinkerforge.js');
 
-    var ipcon = new IPConnection();
-    var stepper = new BrickStepper(UID, ipcon);
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
 
-Test eines HTML Beispiels
--------------------------
+HTML
+^^^^
 
-Die Browser-Version der JavaScript Bindings verwendet `WebSockets
+Die Browser Version der JavaScript Bindings verwendet `WebSockets
 <http://de.wikipedia.org/wiki/WebSocket>`__. WebSockets werden von Brick
 Daemon (seit Version 2.1.0) und der Ethernet Extension (seit Master Brick
 Firmware Version 2.2.0) unterstützt. Sie sind allerdings standardmäßig nicht
@@ -74,9 +142,24 @@ aktiviert und müssen erst konfiguriert werden:
 * :ref:`Brick Daemon: WebSockets <brickd_websockets>`
 * :ref:`Ethernet Extension: WebSockets <ethernet_configuration_websockets>`
 
-Um eines der HTML Beispiele zu testen muss die Browser JavaScript Datei
-``browser/source/Tinkerforge.js`` und das gewünschte HTML Beispiel in einen
-Ordner kopiert werden und kann dann einfach im Browser geöffnet werden.
+Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
+getestet. Dafür muss zuerst die ``ExampleConfiguration.html`` Datei aus dem
+``browser/examples/Brick/Stepper/`` Ordner und die ``Tinkerforge.js`` Datei
+aus dem ``browser/source/`` Ordner in einen neuen Ordner kopiert werden::
+
+ example_project/
+  -> Tinkerforge.js
+  -> ExampleConfiguration.html
+
+Dann ist auch schon alles bereit, um dieses Beispiel im Browser zu öffnen.
+
+Am Anfang des Beispiels gibt es Eingabefelder für Host und Port. Hier
+muss angegeben werden unter welcher Netzwerkadresse der Stepper Brick zu
+erreichen ist. Ist er lokal per USB angeschlossen dann ist ``localhost`` und
+4280 richtig. Als UID muss die UID des angeschlossen Stepper Bricks
+angegeben werden, diese kann über den Brick Viewer ermittelt werden. Ist alles
+richtig eingegeben kann über den "Start Example" Knopf das Beispiel gestartet
+werden.
 
 
 API Dokumentation und Beispiele

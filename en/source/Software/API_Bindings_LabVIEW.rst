@@ -8,20 +8,22 @@ LabVIEW - API Bindings
 
 **Requirements**: LabVIEW on Windows with .NET support
 
-The LabVIEW bindings (:ref:`download <downloads_bindings_examples>`)
-are the same as the :ref:`C# bindings <api_bindings_csharp>`.
+The LabVIEW bindings allow you to control :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` from your LabVIEW programs. The
+:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
+
+* ``Tinkerforge.dll``, a precompiled .NET library
+* in ``source/`` the source code of ``Tinkerforge.dll``
+* in ``examples/`` the examples for every Brick and Bricklet in LabVIEW 2010
+  and LabVIEW 2013 format
+
+The LabVIEW bindings are based on the :ref:`C# bindings <api_bindings_csharp>`.
 Since version 2.0.0 the C# bindings are
 `CLS <http://en.wikipedia.org/wiki/Common_Language_Specification>`__
-compliant. This allows to use them with all `CLI/.NET compatible languages
+compliant. This allows to use them with all `.NET compatible languages
 <http://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
 LabVIEW's `.NET support
 <http://zone.ni.com/reference/en-XX/help/371361K-01/lvcomm/dotnet_pal/>`__.
-
-The bindings consist of a library (.dll) for all Tinkerforge
-Bricks and Bricklets (``Tinkerforge.dll``), the C# source of the DLL
-(in ``source/``) and all available LabVIEW examples (in ``examples/``).
-The examples are stored in LabVIEW 2013 format. All examples are
-provided in LabVIEW 2010 format as well.
 
 
 .. _api_bindings_labview_install:
@@ -29,7 +31,17 @@ provided in LabVIEW 2010 format as well.
 Installation
 ------------
 
-TODO
+To make the bindings work LabVIEW has to be able to find the ``Tinkerforge.dll``.
+If you open an example then LabVIEW will search fo it and ask you if it could
+not find it. You can avoid this search and ask procedure by putting the
+``Tinkerforge.dll`` in a folder known to LabVIEW. The easiest option is the
+``vi.lib`` folder of your LabVIEW installation::
+
+ C:\Program Files\National Instruments\LabVIEW 2013\vi.lib\
+
+Then LabVIEW will find the ``Tinkerforge.dll`` automatically and does not ask
+for your support. But LabVIEW might warn that ``Tinkerforge.dll`` was loaded
+from a different folder. This warning can be ignored.
 
 
 Testing an Example
@@ -42,22 +54,33 @@ Brick Daemon and helps to figure out basic information about the connected
 Bricks and Bricklets.
 
 
+Stepper Brick
+^^^^^^^^^^^^^
 
+As an example let's run the configuration example for the Stepper Brick. For
+this we copy the ``Example Configuration.vi`` file from the
+``examples/Brick/Stepper/`` folder into a new folder::
 
-To make the bindings work LabVIEW has to be able to find the ``Tinkerforge.dll``.
-If you open an example then LabVIEW will search fo it and ask you if it could
-not find it. You can avoid this search and ask procedure by putting the
-``Tinkerforge.dll`` in a folder known to LabVIEW. The easiest options are
-the ``vi.lib`` folder of your LabVIEW installation (for example:
-``C:\Program Files\National Instruments\LabVIEW 2013\vi.lib\``) or you can put
-it in the same folder as the example you want to test. In both cases LabVIEW
-will find the ``Tinkerforge.dll`` automatically and does not ask for your
-support. But LabVIEW might warn that ``Tinkerforge.dll`` was loaded from a
-different folder. This warning can be ignored.
+ example_project/
+  -> Example Configuration.vi
 
-As an example we will run the Stepper Brick configuration example. To do this
-open ``examples/Brick/Stepper/ExampleConfiguration.vi`` in LabVIEW, change the
-UID to the one of your Stepper Brick and run it.
+If you did **not** copy the bindings to the ``vi.lib`` folder of your LabVIEW
+installation then the ``Tinkerforge.dll`` file has to be copied to the
+``example_project/`` folder as well before the example can be opened in LabVIEW::
+
+ example_project/
+  -> Tinkerforge.dll
+  -> Example Configuration.vi
+
+In the example ``host`` and ``port`` specify at which network address the
+Stepper Brick can be found. If it is connected locally to USB then ``localhost``
+and 4223 is correct. The ``uid`` value has to be changed to the UID of the
+connected Stepper Brick, which you can figure out using Brick Viewer.
+
+Now you're ready to test this example.
+
+Barometer Bricklet
+^^^^^^^^^^^^^^^^^^
 
 Here's an another :ref:`example <barometer_bricklet_labview_examples>`
 showing a graph of air pressure values measured by a Barometer Bricklet.
