@@ -25,9 +25,9 @@ Dies erlaubt es die Bindings mit allen `.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. Mathematicas `.NET/Link Unterstützung
 <http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html>`__.
-Die .NET/Link Unterstützung in Mathematica benötigt das `.NET Framework
-<http://www.microsoft.com/net>`__ auf Windows und das `Mono Framework
-<http://www.mono-project.com/>`__ unter Linux und Mac OS X.
+Diese benötigt das `.NET Framework <http://www.microsoft.com/net>`__ unter
+Windows und das `Mono Framework <http://www.mono-project.com/>`__ unter
+Linux und Mac OS X.
 
 
 .. _api_bindings_mathematica_install:
@@ -35,20 +35,102 @@ Die .NET/Link Unterstützung in Mathematica benötigt das `.NET Framework
 Installation
 ------------
 
-Die Installation der Mathematica Bindings is optional, sie können installiert
-werden, sie können aber auch ohne Installation genutzt werden. Zur Installation
-einfach die ``Tinkerforge.dll`` in Mathematicas .NET/Link Ordner kopieren.
-Dieser ist unter Windows hier zu finden::
+Die Installation der Mathematica Bindings ist optional. Sie können als
+Mathematica :ref:`AddOn <api_bindings_mathematica_install_addon>` oder als
+Mathematica :ref:`SystemFile <api_bindings_mathematica_install_systemfile>`
+installiert werden, sie können aber auch :ref:`ohne Installation
+<api_bindings_mathematica_install_without>` genutzt werden.
 
- C:\Program Files\Wolfram Research\Mathematica\9.0\SystemFiles\Links\NETLink\
 
-hier unter Linux::
+.. _api_bindings_mathematica_install_addon:
+
+Als AddOn
+^^^^^^^^^
+
+Zur Installation als AddOn einfach in Mathematicas AddOn-Applications Ordner
+ein neue Ordner für Tinkerforge anlegen und die ``Tinkerforge.dll`` Datei hinein
+kopieren. Unter Windows ist der AddOn-Applications Ordner für Mathematica 9 hier
+zu finden (für Mathematica 10 die ``9.0`` durch ``10.0`` ersetzen)::
+
+ C:\Programme\Wolfram Research\Mathematica\9.0\AddOns\Applications\
+
+Unter Linux ist er hier (für Mathematica 10 die ``9.0`` durch ``10.0`` ersetzen)
+zu finden::
+
+ /usr/local/Wolfram/Mathematica/9.0/AddOns/Applications/
+
+Und unter Mac OS X ist er hier zu finden::
+
+ /Applications/Mathematica.app/AddOns/Applications/
+
+In diesem Ordner dann einen ``Tinkerforge/`` Ordner anlegen, in diesem einen
+``assembly/`` Ordner anlegen und in diesen dann die ``Tinkerforge.dll`` Datei
+kopieren. Es sollte dann unter Windows so aussehen::
+
+ C:\Programme\Wolfram Research\Mathematica\9.0\AddOns\Applications\Tinkerforge\assembly\Tinkerforge.dll
+
+So unter Linux::
+
+ /usr/local/Wolfram/Mathematica/9.0/AddOns/Applications/Tinkerforge/assembly/Tinkerforge.dll
+
+Und so unter Mac OS X::
+
+ /Applications/Mathematica.app/AddOns/Applications/Tinkerforge/assembly/Tinkerforge.dll
+
+Wenn die Bindings so installiert wurden muss dann noch der ``LoadNETAssembly[]``
+Aufruf in den Beispielen zu
+
+.. code-block:: mathematica
+
+  LoadNETAssembly["Tinkerforge","Tinkerforge`"]
+
+abgeändert werden. Der Abschnitt über den Test eines Beispiels vermittelt mehr
+Details darüber.
+
+
+.. _api_bindings_mathematica_install_systemfile:
+
+Als SystemFile
+^^^^^^^^^^^^^^
+
+Zur Installation als SystemFile einfach die ``Tinkerforge.dll`` in Mathematicas
+SystemFiles Ordner für .NET/Link kopieren. Unter Windows ist der SystemFiles
+Ordner für .NET/Link für Mathematica 9 hier zu finden (für Mathematica 10 die
+``9.0`` durch ``10.0`` ersetzen)::
+
+ C:\Programme\Wolfram Research\Mathematica\9.0\SystemFiles\Links\NETLink\
+
+Unter Linux ist er hier (für Mathematica 10 die ``9.0`` durch ``10.0`` ersetzen)::
 
  /usr/local/Wolfram/Mathematica/9.0/SystemFiles/Links/NETLink/
 
-und hier unter Mac OS X::
+Und unter Mac OS X ist er hier::
 
  /Applications/Mathematica.app/SystemFiles/Links/NETLink/
+
+Wenn die Bindings so installiert wurden muss dann noch der ``LoadNETAssembly[]``
+Aufruf in den Beispielen zu
+
+.. code-block:: mathematica
+
+  LoadNETAssembly["Tinkerforge"]
+
+abgeändert werden. Der Abschnitt über den Test eines Beispiels vermittelt mehr
+Details darüber.
+
+
+.. _api_bindings_mathematica_install_without:
+
+Ohne Installation
+^^^^^^^^^^^^^^^^^
+
+Die Mathematica Bindings müssen nicht unbedingt installiert werden. Stattdessen
+kann auch einfach der Ordner in dem die ``Tinkerforge.dll`` liegt beim
+``LoadNETAssembly[]`` Aufruf mit angegeben werden. In den Beispielen ist
+der ``LoadNETAssembly[]`` schon so, dass er passend auf die ``Tinkerforge.dll``
+Datei verweist, wenn die Bindings und die Beispiele aus deren ZIP Datei entpackt
+wurden. Der Abschnitt über den Test eines Beispiels vermittelt mehr Details
+darüber.
 
 
 Test eines Beispiels
@@ -60,24 +142,77 @@ arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
 Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
 Informationen über die angeschlossenen Bricks und Bricklets aus.
 
-
-
+Stepper Brick
+^^^^^^^^^^^^^
 
 Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel ausführen.
-Dazu das ``examples/Brick/Stepper/ExampleConfiguration.nb`` Notebook in
-Mathematica öffnen, die UID des Stepper Bricks eintragen und alle Cells von
-oben nach unten auswerten.
+Dazu das ``ExampleConfiguration.nb`` Notebook aus dem
+``examples/Brick/Stepper/`` Ordner in Mathematica öffnen.
 
-Falls das Notebook von einem anderen Ordner aus geöffnet wurde muss unter
-Umständen die ``LoadNETAssembly[]`` Zeile angepasst werden, damit Mathematica
-die ``Tinkerforge.dll`` finden kann:
+Bindings laden
+""""""""""""""
 
- .. code-block:: mathematica
+Abhängig davon ob und wie die Mathematica Bindings installiert wurden muss
+die ``LoadNETAssembly[]`` Zeile angepasst werden, damit Mathematica die
+``Tinkerforge.dll`` Datei finden kann. Weitere Details über das Laden von
+.NET Bibliotheken finden sich in der `Mathematica Dokumentation
+<http://reference.wolfram.com/language/NETLink/ref/LoadNETAssembly.html>`__.
 
-    LoadNETAssembly["Tinkerforge",NotebookDirectory[]<>"../.."]
+Wurden die Bindings als :ref:`AddOn <api_bindings_mathematica_install_addon>`
+installiert dann muss der ``LoadNETAssembly[]`` Aufruf so aussehen:
 
-Ersetze das ``NotebookDirectory[]<>"../.."`` Parameter mit einem absoluten
-Pfad zum Ordner der die ``Tinkerforge.dll`` enthält.
+.. code-block:: mathematica
+
+  LoadNETAssembly["Tinkerforge","Tinkerforge`"]
+
+Wurden die Bindings als :ref:`SystemFile
+<api_bindings_mathematica_install_systemfile>` installiert dann muss der
+``LoadNETAssembly[]`` Aufruf so aussehen:
+
+.. code-block:: mathematica
+
+  LoadNETAssembly["Tinkerforge"]
+
+Wurden die Bindings :ref:`nicht installiert
+<api_bindings_mathematica_install_without>` dann kann der ``LoadNETAssembly[]``
+Aufruf unverändert bleiben, wenn die Beispiele direkt aus der entpackten
+ZIP Datei der Bindings ausgeführt werden. Die Beispiele sind so konstruiert,
+dass der ``LoadNETAssembly[]`` Aufruf sich auf die ``Tinkerforge.dll`` Datei aus
+der entpackten ZIP Datei bezieht.
+
+Ansonsten kann ``LoadNETAssembly[]`` auch mit dem absoluten Pfad zur
+``Tinkerforge.dll`` Datei aufgerufen werden. Zum Beispiel so unter Windows:
+
+.. code-block:: mathematica
+
+  LoadNETAssembly["C:\\Absoluter\\Pfad\\zur\\Tinkerforge.dll"]
+
+Und zum Beispiel so unter Linux und Mac OS X:
+
+.. code-block:: mathematica
+
+  LoadNETAssembly["/Absoluter/Pfad/zur/Tinkerforge.dll"]
+
+Netzwerkadresse und UID einstellen
+""""""""""""""""""""""""""""""""""
+
+Am Anfang des Beispiels ist mit ``host`` und ``port`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``uid`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden:
+
+.. code-block:: mathematica
+
+  host="localhost"
+  port=4223
+  uid="XYZ"(* Change to your UID *)
+
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können. Dazu
+alle Zellen des Notebooks von oben nach unten auswerten.
+
+Temperature Bricklet
+^^^^^^^^^^^^^^^^^^^^
 
 Hier ein weiteres :ref:`Beispiel <temperature_bricklet_mathematica_examples>`,
 das einen dynamischen Plot der Temperaturwerte eines Temperature Bricklets
@@ -87,6 +222,7 @@ zeigt. Der Einbruch bei Sample 82 wurde mittels eines Kältesprays erzeugt.
    :scale: 100 %
    :alt: Temprature Bricklet mit dynamischem Plot der Messwerte
    :align: center
+
 
 API Dokumentation und Beispiele
 -------------------------------

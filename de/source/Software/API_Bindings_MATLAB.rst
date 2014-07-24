@@ -6,23 +6,115 @@
 MATLAB/Octave - API Bindings
 ============================
 
-**Voraussetzungen**: MATLAB oder Octave mit Java Unterstützung
+**Voraussetzungen**: MATLAB oder Octave 3.6 mit Java Unterstützung
 
-Die MATLAB/Octave Bindings (:ref:`download <downloads_bindings_examples>`) bestehen
-aus zwei .jar Dateien mit den Bindings für alle Tinkerforge Bricks und Bricklets,
-ein .jar for MATLAB (``matlab/Tinkerforge.jar``) und eines für Octave
-(``octave/Tinkerforge.jar``). Der Quelltext des MATLAB .jar (``matlab/source/``)
-und des Octave .jar (``octave/source/``) und alle verfügbaren MATLAB
-(``matlab/examples/``) und Octave Beispiele (``octave/examples/``) sind
-ebenfalls enthalten.
+Die MATLAB/Octave Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen MATLAB/Octave Programmen
+heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
+die Bindings beinhaltet:
 
+* ``matlab/Tinkerforge.jar``, eine vorkompilierte Java Bibliothek für MATLAB
+* in ``matlab/source/`` den Quelltext für ``Tinkerforge.jar`` für MATLAB
+* in ``matlab/examples/`` die MATLAB Beispiele für alle Bricks und Bricklets
+* ``octave/Tinkerforge.jar``, eine vorkompilierte Java Bibliothek für Octave
+* in ``octave/source/`` den Quelltext für ``Tinkerforge.jar`` für Octave
+* in ``octave/examples/`` die Octave Beispiele für alle Bricks und Bricklets
+
+Die MATLAB/Octave Bindings basieren auf den :ref:`Java Bindings
+<api_bindings_java>`.
 
 .. _api_bindings_matlab_install:
 
 Installation
 ------------
 
-TODO
+Bevor die Bindings mit MATLAB oder Octave benutzt werden können müssen sie
+installiert werden.
+
+MATLAB
+^^^^^^
+
+Die Java Unterstützung in MATLAB ist normalerweise standardmäßig aktiv. Dies
+kann mit folgendem Befehl in MATLAB getestet werden:
+
+.. code-block:: matlab
+
+ version -java
+
+Zur Installation der Bindings muss die ``Tinkerforge.jar`` Datei aus dem
+``matlab/`` Ordner in den MATLAB Programmordner kopiert werden. Unter Windows
+ist dieser für MATLAB R2014a typischerweise hier::
+
+ C:\Programme\MATLAB\R2014a
+
+Unter Linux ist es hier::
+
+ /usr/local/matlab/r2014a
+
+Unter Mac OS X ist es hier::
+
+ /Applications/MATLAB_R2014a.app
+
+Dann muss die neue Java Bibliothek noch zu MATLABs Classpath hinzugefügt
+werden. Dazu muss der folgenden Datei bearbeitet::
+
+ <MATLAB Programmordner>/toolbox/local/classpath.txt
+
+und diese Zeile am Ende dieser Datei angehängt werden::
+
+ $matlabroot/Tinkerforge.jar
+
+Nach einem Neustart von MATLAB stehen sie Bindings dann zur Verfügung.
+
+Octave
+^^^^^^
+
+Die Verfügbarkeit der Java Unterstützung in Octave hängt von der Octave
+Version ab. Bis Version 3.6 einschließlich war die Java Unterstürzung ein
+einiges Modul. Ab Version 3.8 ist sie standardmäßiger Teil von Octave.
+
+Allerdings funktionieren Callbacks nicht mit der Java Unterstützung in Octave
+3.8, siehe dazu den Abschnitt über :ref:`bekannte Probleme
+<api_bindings_matlab_known_problems>`. Wir empfehlen daher derzeit Octave 3.6.
+
+Unter Linux muss die Java Unterstützung für Octave 3.6 separat installiert
+werden::
+
+  sudo apt-get install octave octave-java
+
+Für Windows empfehlen wir die MinGW Variante von Octave. In dieser Variante ist
+die Java Unterstützung standardmäßig aktiviert. Eine Anleitung wie Octave für
+Windows installiert werden kann findet sich im
+`Octave Wiki <http://wiki.octave.org/Octave_for_Microsoft_Windows>`__.
+
+Die Verfügbarkeit der Java Unterstützung kann mit folgendem Befehl in Octave
+getestet werden:
+
+.. code-block:: octave
+
+  octave_config_info("features").JAVA
+
+Um die Bindings in Octave verfügbar zu machen muss die ``Tinkerforge.jar`` Datei
+aus dem ``octave/`` Ordner zu Octaves Classpath hinzugefügt werden werden. Zum
+Beispiel durch folgenden Octave Befehl unter Windows:
+
+.. code-block:: octave
+
+  javaaddpath("C:\\Absoluter\\Pfad\\zum\\Octave\\Tinkerforge.jar");
+
+Und durch folgenden Octave Befehl unter Linux:
+
+.. code-block:: octave
+
+  javaaddpath("/Absoluter/Pfad/zum/Octave/Tinkerforge.jar");
+
+Damit diese Änderung dauerhaft ist kann der Befehlt unter Linux in folgenden
+Datei eingetragen werden::
+
+ ~/.octaverc
+
+Falls diese Datei noch nicht existiert kann sie einfach angelegt werden.
+Nach Änderungen an dieser Datei muss Octave neugestartet werden.
 
 
 Test eines Beispiels
@@ -34,81 +126,63 @@ arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
 Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
 Informationen über die angeschlossenen Bricks und Bricklets aus.
 
-
-
-
-Die Bindings kommen mit Beispielen für MATLAB und Octave.
-
 MATLAB
 ^^^^^^
 
-Als erstes ist sicherzustellen, dass die Java Unterstützung in MATLAB richtig
-konfiguriert ist. Derzeit wird nur Java 1.6 von MATLAB unterstützt. Falls also
-eine andere Java Version installiert ist kann es sein, dass Java in MATLAB nicht
-richtig funktioniert.
+Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel ausführen.
+Dazu die ``matlab_example_configuration.m`` Datei aus dem
+``matlab/examples/brick/stepper/`` Ordner in MATLAB öffnen.
 
-Normalerweise ist die Java Unterstützung in MATLAB standardmäßig aktiviert.
-Dies kann mit dem folgenden Befehl in der MATLAB Konsole kontrolliert werden::
+Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``UID`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden:
 
- version -java
+.. code-block:: matlab
 
-Als nächstes muss das ``Tinkerforge.jar`` dem ``javaclasspath`` in MATLAB
-hinzugefügt werden. Dazu einfach die ``Tinkerforge.jar`` für MATLAB in das
-Installationsverzeichnis von MATLAB kopieren und dann die folgende Zeile::
+  HOST = 'localhost';
+  PORT = 4223;
+  UID = 'XYZ'; % Change to your UID
 
- $matlabroot/Tinkerforge.jar
-
-am Ende dieser Datei einfügen::
-
- <MATLAB-Installationverzeichnis>/toolbox/local/classpath.txt
-
-Dies gilt gleichermaßen für MATLAB unter Windows und Linux.
-
-Jetzt können alle MATLAB Beispiel einfach von der MATLAB Konsole aus
-ausprobiert werden.
-
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
 
 Octave
 ^^^^^^
 
-Auch hier muss zuerst sichergestellt werden, dass die Java Unterstützung
-aktiviert ist. Unter Debian Linux kann einfach das ``octave`` und das
-``octave-java`` Package installiert werden::
+Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel ausführen.
+Dazu die ``octave_example_configuration.m`` Datei aus dem
+``octave/examples/brick/stepper/`` Ordner in Octave öffnen.
 
-  sudo apt-get install octave octave-java
+Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``UID`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden:
 
-Stelle sicher, dass mindestens ``octave-java`` 1.2.8-6 installiert ist. Dann
-sollte deie Java Unterstützung in Octave korrekt konfiguriert sein. Als
-nächstes muss folgende Zeile:
+.. code-block:: octave
 
-.. code-block:: none
+  HOST = "localhost";
+  PORT = 4223;
+  UID = "XYZ"; % Change to your UID
 
- javaaddpath("<path-to-bindings>/Tinkerforge.jar");
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
 
-am Ende dieser Datei einfügen werden::
 
- ~/.octaverc
+.. _api_bindings_matlab_known_problems:
 
-Falls diese Datei noch nicht existiert kann sie einfach angelegt werden.
-Nach der Änderung dieser Datei muss Octave neugestartet werden, falls es lief.
-Jetzt können alle Octave Beispiel einfach von der Octave Konsole aus
-ausprobiert werden.
+Bekannte Probleme
+-----------------
 
-Um die Bindings auf Windows zu verwenden wird die MinGW Variante von Octave
-benötigt. In dieser Variante ist die Java Unterstützung standardmäßig aktiviert.
-Eine Anleitung wie man Octave für Windows installiert findet sich im
-`Octave Wiki <http://wiki.octave.org/Octave_for_Microsoft_Windows>`__.
-
-Wenn die Installation für Windows abgeschlossen ist muss das ``Tinkerforge.jar``
-noch Octave bekannt gemacht werden. Dies kann mit dem folgenden Befehl in der
-MATLAB Octave getan werden:
-
-.. code-block:: none
-
- javaaddpath("<path-to-bindings>/Tinkerforge.jar");
-
-Jetzt können alle Octave Beispiel einfach von der Octave Konsole aus auf
-Windows ausprobiert werden.
+In Octave 3.8 funktioniert die Invoke Funktion nicht und wirft eine
+``java.lang.UnsatisfiedLinkError`` Exception. Die Invoke Funktion erlaubt es
+von Java aus Octave Funktionen aufzurufen. Dies wird von den Bindings für
+Callbacks benutzt. Dies bedeutet, dass in Octave 3.8 keine Callbacks verwendet
+werden können. Eine `Diskussion
+<http://octave.1599824.n4.nabble.com/Problem-with-invoke-call-from-Java-td4664495.html>`__
+auf der Octave Mailing Liste hat noch zu keinem Erfolg geführt. Daher
+empfehlen wir derzeit Octave 3.6, in dieser Version tritt das Problem nicht auf
+und die Bindings funktionieren in vollem Umfang.
 
 
 API Dokumentation und Beispiele

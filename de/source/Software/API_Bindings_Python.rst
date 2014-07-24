@@ -23,8 +23,13 @@ die Bindings beinhaltet:
 Installation
 ------------
 
-Die Python Bindings können auf zwei Weisen installiert werden: vom Quelltext
-oder von PyPi. Die Bindings können aber auch ohne Installation genutzt werden.
+Die Python Bindings können auf zwei Weisen installiert werden: vom
+:ref:`Quelltext <api_bindings_python_install_source>` oder von
+:ref:`PyPI <api_bindings_python_install_pypi>`. Die Bindings können aber auch
+:ref:`ohne Installation <api_bindings_python_install_without>` genutzt werden.
+
+
+.. _api_bindings_python_install_source:
 
 Vom Quelltext
 ^^^^^^^^^^^^^
@@ -40,6 +45,9 @@ ausgeführt werden::
 
 Dann ist auch schon alles bereit, um Beispiele testen zu können.
 
+
+.. _api_bindings_python_install_pypi:
+
 Von PyPI
 ^^^^^^^^
 
@@ -53,6 +61,9 @@ Abhängig von der Art der Python Installation muss dies möglicherweise mit
  pip install tinkerforge
 
 Dann ist auch schon alles bereit, um Beispiele testen zu können.
+
+
+.. _api_bindings_python_install_without:
 
 Ohne Installation
 ^^^^^^^^^^^^^^^^^
@@ -92,7 +103,8 @@ Brick Viewer ermittelt werden:
   PORT = 4223
   UID = "XYZ" # Change to your UID
 
-Wenn die Bindings vom Quelltext oder von PyPI installiert wurden, dann kann
+Wenn die Bindings vom :ref:`Quelltext <api_bindings_python_install_source>` oder
+von :ref:`PyPI <api_bindings_python_install_pypi>` installiert wurden, dann kann
 das Beispiele jetzt direkt ausgeführt werden.
 
 Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext der

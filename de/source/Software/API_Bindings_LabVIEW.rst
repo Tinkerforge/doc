@@ -39,7 +39,7 @@ Suchen-und-Nachfragen kann vermieden werden, indem die ``Tinkerforge.dll`` in
 einem LabVIEW bekannten Ordern gespeichert wird. Die einfachsten Möglichkeiten
 ist der ``vi.lib`` Ordern der LabVIEW Installation::
 
- C:\Program Files\National Instruments\LabVIEW 2013\vi.lib\
+ C:\Programme\National Instruments\LabVIEW 2013\vi.lib\
 
 Dann kann LabVIEW die ``Tinkerforge.dll`` automatisch finden und nicht
 Nachfragen. Allderdings wird LabVIEW möglicherweise darüber warnen, dass

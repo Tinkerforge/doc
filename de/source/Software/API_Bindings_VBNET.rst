@@ -8,17 +8,22 @@ Visual Basic .NET - API Bindings
 
 **Voraussetzungen**: Visual Basic 2005 (VB 8.0) oder neuer, oder Mono 1.2.3 oder neuer
 
-Die Visual Basic .NET Bindings (:ref:`Download <downloads_bindings_examples>`)
-und die :ref:`C# Bindings <api_bindings_csharp>`
-sind gleich. Seit Version 2.0.0 sind die C# Bindings `CLS
+Die Visual Basic .NET Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Visual Basic .NET Programmen
+heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
+die Bindings beinhaltet:
+
+* ``Tinkerforge.dll``, eine vorkompilierte .NET Bibliothek
+* ``Tinkerforge.xml``, die API Dokumentation für Visual Studio,  MonoDevelop, usw.
+* in ``source/`` den Quelltext für ``Tinkerforge.dll``
+* in ``examples/`` die Beispiele für alle Bricks und Bricklets
+
+Die Visual Basic .NET Bindings basieren auf den :ref:`C# Bindings <api_bindings_csharp>`.
+Seit Version 2.0.0 sind die C# Bindings `CLS
 <http://de.wikipedia.org/wiki/Common_Language_Specification>`__-konform.
 Dies erlaubt es die Bindings mit allen `.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. Visual Basic .NET.
-
-Die Bindings bestehen aus einer Bibliothek (.dll) für alle Tinkerforge Bricks
-und Bricklets (``Tinkerforge.dll``), dem C# Quelltext der DLL (in ``source/``)
-und allen verfügbaren Visual Basic .NET Beispielen (in ``examples/``).
 
 
 .. _api_bindings_vbnet_install:
@@ -26,7 +31,15 @@ und allen verfügbaren Visual Basic .NET Beispielen (in ``examples/``).
 Installation
 ------------
 
-TODO
+Ob und wie die Visual Basic .NET Bindings installiert werden müssen hängt stark davon ab wie
+sie benutzt werden sollen. Wenn der Visual Basic .NET Compiler direkt von der Kommandozeile
+aufgerufen wird genügt es die ``Tinkerforge.dll`` Datei im gleichen Verzeichnis
+wie den Visual Basic .NET Quelltext des Programms abzulegen.
+
+Um die Bindings in einer IDE zu verwenden muss die ``Tinkerforge.dll`` Datei
+wahrscheinlich zuerst dem Assembly-Katalog der IDE hinzugefügt werden. Wie dies
+gemacht wird hängt von der IDE ab und wird in der Dokumentation der jeweiligen
+IDE erklärt.
 
 
 Test eines Beispiels
@@ -37,12 +50,6 @@ Um ein Visual Basic .NET Beispiel testen zu können müssen zuerst :ref:`Brick D
 arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
 Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
 Informationen über die angeschlossenen Bricks und Bricklets aus.
-
-
-
-
-Als Beispiel werden wir das Stepper Brick Konfigurationsbeispiel mit MonoDevelop
-und Visual Studio kompilieren.
 
 MonoDevelop
 ^^^^^^^^^^^
@@ -62,8 +69,20 @@ klicke:
 * Klicke OK
 
 MonoDevelop sollte jetzt einen ``Application.vb`` Datei in seinem Editor
-anzeigen. Ersetze deren Inhalt durch dem Inhalt von
-``examples/Brick/Stepper/ExampleConfiguration.vb``.
+anzeigen. Ersetze deren Inhalt durch dem Inhalt der ``ExampleConfiguration.vb``
+Datei im ``examples/Brick/Stepper/`` Ordner.
+
+Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``UID`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden:
+
+.. code-block:: vbnet
+
+  Const HOST As String = "localhost"
+  Const PORT As Integer = 4223
+  Const UID As String = "XYZ" ' Change to your UID
 
 Jetzt muss noch ``Tinkerforge.dll`` dem Projekt als Verweis hinzugefügt werden:
 
@@ -81,7 +100,7 @@ Das Projekt ist jetzt bereit für einen Test, klicke:
 Der Visual Basic .NET Compiler kann auch von der Kommandozeile aus verwendet
 werden::
 
- /usr/bin/vbnc /target:exe /out:ExampleConfiguration.exe /reference:Tinkerforge.dll ExampleConfiguration.vb
+ vbnc /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.vb
 
 
 Visual Studio
@@ -99,8 +118,20 @@ erstellt werden, klicke:
 * Klicke OK
 
 Visual Studio sollte jetzt einen ``Module1.vb`` Datei in seinem Editor
-anzeigen. Ersetze deren Inhalt durch dem Inhalt von
-``examples\Brick\Stepper\ExampleConfiguration.vb``.
+anzeigen. Ersetze deren Inhalt durch dem Inhalt der ``ExampleConfiguration.vb``
+Datei im ``examples/Brick/Stepper/`` Ordner.
+
+Am Anfang des Beispiels ist mit ``HOST`` und ``PORT`` angegeben unter welcher
+Netzwerkadresse der Stepper Brick zu erreichen ist. Ist er lokal per USB
+angeschlossen dann ist ``localhost`` und 4223 richtig. Als ``UID`` muss die
+UID des angeschlossen Stepper Bricks angegeben werden, diese kann über den
+Brick Viewer ermittelt werden:
+
+.. code-block:: vbnet
+
+  Const HOST As String = "localhost"
+  Const PORT As Integer = 4223
+  Const UID As String = "XYZ" ' Change to your UID
 
 Jetzt muss noch ``Tinkerforge.dll`` dem Projekt als Verweis hinzugefügt werden:
 

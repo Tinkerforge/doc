@@ -22,8 +22,14 @@ The Python bindings allow you to control :ref:`Bricks <primer_bricks>` and
 Installation
 ------------
 
-There are two ways to install the Python bindings: from source or from PyPI.
-But the bindings can also be used without installing them first.
+There are two ways to install the Python bindings: from
+:ref:`source <api_bindings_python_install_source>` or from
+:ref:`PyPI <api_bindings_python_install_pypi>`.
+But the bindings can also be used
+:ref:`without installing <api_bindings_python_install_without>` them first.
+
+
+.. _api_bindings_python_install_source:
 
 From Source
 ^^^^^^^^^^^
@@ -38,6 +44,9 @@ with ``sudo`` or as administrator::
 
 Now you're ready to test the examples.
 
+
+.. _api_bindings_python_install_pypi:
+
 From PyPI
 ^^^^^^^^^
 
@@ -51,6 +60,9 @@ Depending on your Python installation you might have to execute this with
  pip install tinkerforge
 
 Now you're ready to test the examples.
+
+
+.. _api_bindings_python_install_without:
 
 Without Installation
 ^^^^^^^^^^^^^^^^^^^^
@@ -91,7 +103,9 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 If you did install the bindings from source or PyPI then you're now ready to
 test this example.
 
-If you did **not** install the bindings from source or PyPI, you can also use
+If you did **not** install the bindings from
+:ref:`source <api_bindings_python_install_source>` or
+:ref:`PyPI <api_bindings_python_install_pypi>`, you can also use
 the source of the bindings directly. Just copy the ``tinkerforge/`` folder from
 the ``source/`` folder to your ``example_project/`` folder and Python will
 automatically find the bindings::
