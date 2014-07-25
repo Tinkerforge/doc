@@ -6,8 +6,6 @@
 Python - API Bindings
 =====================
 
-**Requirements**: Python 2.5 or newer, Python 3 is also supported
-
 The Python bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your Python programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
@@ -15,6 +13,12 @@ The Python bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * in ``source/`` the source code of the bindings (including a
   `setuptools <https://pypi.python.org/pypi/setuptools>`__ install script)
 * in ``examples/`` the examples for every Brick and Bricklet
+
+
+Requirements
+------------
+
+* Python 2.5 or newer, Python 3 is also supported
 
 
 .. _api_bindings_python_install:

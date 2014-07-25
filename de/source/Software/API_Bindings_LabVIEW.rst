@@ -6,8 +6,6 @@
 LabVIEW - API Bindings
 ======================
 
-**Voraussetzungen**: LabVIEW auf Windows mit .NET Unterstützung
-
 Die LabVIEW Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen LabVIEW Programmen
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -25,6 +23,12 @@ Dies erlaubt es die Bindings mit allen `.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. LabVIEWs `.NET Unterstützung
 <http://zone.ni.com/reference/en-XX/help/371361K-01/lvcomm/dotnet_pal/>`__.
+
+
+Voraussetzungen
+---------------
+
+* LabVIEW auf Windows mit .NET Unterstützung
 
 
 .. _api_bindings_labview_install:

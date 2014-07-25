@@ -6,8 +6,6 @@
 MATLAB/Octave - API Bindings
 ============================
 
-**Voraussetzungen**: MATLAB oder Octave 3.6 mit Java Unterstützung
-
 Die MATLAB/Octave Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen MATLAB/Octave Programmen
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -22,6 +20,13 @@ die Bindings beinhaltet:
 
 Die MATLAB/Octave Bindings basieren auf den :ref:`Java Bindings
 <api_bindings_java>`.
+
+
+Voraussetzungen
+---------------
+
+* MATLAB oder Octave 3.6 mit Java Unterstützung
+
 
 .. _api_bindings_matlab_install:
 

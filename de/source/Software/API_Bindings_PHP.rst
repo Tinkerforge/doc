@@ -6,8 +6,6 @@
 PHP - API Bindings
 ==================
 
-**Voraussetzungen**: PHP 5.3 oder neuer mit ``bcmath`` und ``sockets`` Erweiterung
-
 Die PHP Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen PHP Programmen
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -17,6 +15,12 @@ die Bindings beinhaltet:
   <http://pear.php.net/>`__ Tool)
 * in ``source/`` den Quelltext für ``Tinkerforge.tgz``
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
+
+
+Voraussetzungen
+---------------
+
+* PHP 5.3 oder neuer mit ``bcmath`` und ``sockets`` Erweiterung
 
 
 .. _api_bindings_php_install:

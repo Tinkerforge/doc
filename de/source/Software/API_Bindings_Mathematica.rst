@@ -6,9 +6,6 @@
 Mathematica - API Bindings
 ==========================
 
-**Voraussetzungen**: Mathematica 5.0 oder neuer auf Windows, Linux und Mac OS X
-mit .NET/Link Unterstützung
-
 Die Mathematica Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen Mathematica Programmen
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -28,6 +25,13 @@ z.B. Mathematicas `.NET/Link Unterstützung
 Diese benötigt das `.NET Framework <http://www.microsoft.com/net>`__ unter
 Windows und das `Mono Framework <http://www.mono-project.com/>`__ unter
 Linux und Mac OS X.
+
+
+Voraussetzungen
+---------------
+
+* Mathematica 5.0 oder neuer auf Windows, Linux und Mac OS X mit .NET/Link
+  Unterstützung
 
 
 .. _api_bindings_mathematica_install:

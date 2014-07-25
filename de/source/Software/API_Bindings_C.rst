@@ -18,6 +18,12 @@ die Bindings beinhaltet:
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 
+Voraussetzungen
+------------
+
+* C Compiler (C99 kompatible) oder C++ Compiler
+
+
 .. _api_bindings_c_install:
 
 Installation

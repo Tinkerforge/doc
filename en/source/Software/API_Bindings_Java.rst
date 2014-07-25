@@ -6,8 +6,6 @@
 Java - API Bindings
 ===================
 
-**Requirements**: Java 1.5 or newer
-
 .. note::
  There is an extra section for :ref:`Java and Android <api_bindings_java_android>`.
 
@@ -20,6 +18,12 @@ The Java bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * in ``examples/`` examples for every Brick and Bricklet
 
 The Java library has no external dependencies.
+
+
+Requirements
+------------
+
+* Java JDK 1.5 or newer
 
 
 .. _api_bindings_java_install:

@@ -6,8 +6,6 @@
 Shell - API Bindings
 ====================
 
-**Voraussetzungen**: Python 2.5 oder neuer mit argparse Modul, Python 3 wird auch unterstützt
-
 Die Shell Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen Shell Scripten
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -18,6 +16,13 @@ die Bindings beinhaltet:
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 Die Shell Bindings basieren auf den :ref:`Python Bindings <api_bindings_python>`.
+
+
+Voraussetzungen
+---------------
+
+* Python 2.5 oder neuer mit ``argparse`` Modul, Python 3 wird auch unterstützt
+
 
 .. _api_bindings_shell_install:
 

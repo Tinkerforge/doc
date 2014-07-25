@@ -6,8 +6,6 @@
 Visual Basic .NET - API Bindings
 ================================
 
-**Voraussetzungen**: Visual Basic 2005 (VB 8.0) oder neuer, oder Mono 1.2.3 oder neuer
-
 Die Visual Basic .NET Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen Visual Basic .NET Programmen
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -24,6 +22,12 @@ Seit Version 2.0.0 sind die C# Bindings `CLS
 Dies erlaubt es die Bindings mit allen `.NET kompatiblen Sprachen
 <http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. Visual Basic .NET.
+
+
+Voraussetzungen
+---------------
+
+* Visual Basic 2005 (VB 8.0) oder neuer, oder Mono 1.2.3 oder neuer
 
 
 .. _api_bindings_vbnet_install:

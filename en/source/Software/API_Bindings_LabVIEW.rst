@@ -6,8 +6,6 @@
 LabVIEW - API Bindings
 ======================
 
-**Requirements**: LabVIEW on Windows with .NET support
-
 The LabVIEW bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your LabVIEW programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
@@ -24,6 +22,12 @@ compliant. This allows to use them with all `.NET compatible languages
 <http://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
 LabVIEW's `.NET support
 <http://zone.ni.com/reference/en-XX/help/371361K-01/lvcomm/dotnet_pal/>`__.
+
+
+Requirements
+------------
+
+* LabVIEW on Windows with .NET support
 
 
 .. _api_bindings_labview_install:

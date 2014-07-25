@@ -6,8 +6,6 @@
 Ruby - API Bindings
 ===================
 
-**Requirements**: Ruby 1.9 or newer
-
 The Ruby bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your Ruby programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
@@ -16,6 +14,12 @@ The Ruby bindings allow you to control :ref:`Bricks <primer_bricks>` and
   <https://rubygems.org/pages/download>`__ tool)
 * in ``source/`` the source code of ``tinkerforge.gem``
 * in ``examples/`` the examples for every Brick and Bricklet
+
+
+Requirements
+------------
+
+* Ruby 1.9 or newer
 
 
 .. _api_bindings_ruby_install:

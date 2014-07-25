@@ -23,6 +23,12 @@ die Bindings beinhaltet:
 Die C#/.NET Bibliothek hat keine weiteren Abhängigkeiten.
 
 
+Voraussetzungen
+---------------
+
+* C# Compiler
+
+
 .. _api_bindings_csharp_install:
 
 Installation

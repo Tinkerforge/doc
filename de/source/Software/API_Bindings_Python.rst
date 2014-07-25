@@ -6,8 +6,6 @@
 Python - API Bindings
 =====================
 
-**Voraussetzungen**: Python 2.5 oder neuer, Python 3 wird auch unterstützt
-
 Die Python Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen Python Programmen
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -16,6 +14,12 @@ die Bindings beinhaltet:
 * in ``source/`` den Quelltext der Bindings (inklusive `setuptools
   <https://pypi.python.org/pypi/setuptools>`__ Installations-Script)
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
+
+
+Voraussetzungen
+---------------
+
+* Python 2.5 oder neuer, Python 3 wird auch unterstützt
 
 
 .. _api_bindings_python_install:

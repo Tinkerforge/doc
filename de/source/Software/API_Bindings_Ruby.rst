@@ -6,8 +6,6 @@
 Ruby - API Bindings
 ===================
 
-**Voraussetzungen**: Ruby 1.9 oder neuer
-
 Die Ruby Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen Ruby Programmen
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -17,6 +15,12 @@ die Bindings beinhaltet:
   <https://rubygems.org/pages/download>`__ Tool)
 * in ``source/`` den Quelltext für ``tinkerforge.gem``
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
+
+
+Voraussetzungen
+---------------
+
+* Ruby 1.9 oder neuer
 
 
 .. _api_bindings_ruby_install:

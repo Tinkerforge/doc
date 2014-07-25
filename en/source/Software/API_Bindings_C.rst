@@ -17,6 +17,12 @@ The C/C++ bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * in ``examples/`` the examples for every Brick and Bricklet
 
 
+Requirements
+------------
+
+* C compiler (C99 compatible) or C++ compiler
+
+
 .. _api_bindings_c_install:
 
 Installation

@@ -6,8 +6,6 @@
 Shell - API Bindings
 ====================
 
-**Requirements**: Python 2.5 or newer with argparse module, Python 3 is also supported
-
 The Shell bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your shell scripts. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
@@ -17,6 +15,12 @@ The Shell bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * in ``examples/`` the examples for every Brick and Bricklet
 
 The Shell bindings are based on the :ref:`Python bindings <api_bindings_python>`.
+
+
+Requirements
+------------
+
+* Python 2.5 or newer with ``argparse`` module, Python 3 is also supported
 
 
 .. _api_bindings_shell_install:

@@ -6,9 +6,6 @@
 JavaScript - API Bindings
 =========================
 
-**Requirements**: Node.js 0.10 or newer or any recent browser with WebSocket
-support (tested with Chrome, Firefox and Internet Explorer)
-
 The JavaScript bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your JavaScript programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
@@ -19,6 +16,13 @@ The JavaScript bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * in ``nodejs/examples/`` the Node.js examples for every Brick and Bricklet
 * in ``browser/source/`` the source code of the browser version of the bindings
 * in ``browser/examples/`` the HTML examples for every Brick and Bricklet
+
+
+Requirements
+------------
+
+* Node.js 0.10 or newer, or any recent browser with WebSocket support (tested
+  with Chrome, Firefox and Internet Explorer)
 
 
 .. _api_bindings_javascript_install:

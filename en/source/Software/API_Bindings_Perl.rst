@@ -6,8 +6,6 @@
 Perl - API Bindings
 ===================
 
-**Requirements**: Perl 5.14.0 or newer with Digest::HMAC_SHA1 and Thread::Queue 3.02 or newer
-
 The Perl bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your Perl programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
@@ -15,6 +13,13 @@ The Perl bindings allow you to control :ref:`Bricks <primer_bricks>` and
 * in ``source/`` the source code of the bindings (installable with
   ``Makefile.PL`` script)
 * in ``examples/`` the examples for every Brick and Bricklet
+
+
+Requirements
+------------
+
+* Perl 5.14 or newer with thread support, ``Digest::HMAC_SHA1`` module and
+  ``Thread::Queue`` module 3.02 or newer
 
 
 .. _api_bindings_perl_install:

@@ -6,15 +6,19 @@
 Delphi/Lazarus - API Bindings
 =============================
 
-**Requirements**: Delphi 2007 or newer, or Lazarus (Free Pascal Compiler 2.4
-or newer), other Delphi or Object Pascal compilers might work as well
-
 The Delphi/Lazarus bindings allow you to control :ref:`Bricks <primer_bricks>`
 and :ref:`Bricklets <primer_bricklets>` from your Delphi/Lazarus programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
 * in ``source/`` the source code of the bindings
 * in ``examples/`` the examples for every Brick and Bricklet
+
+
+Requirements
+------------
+
+* Delphi 2007 or newer, or Lazarus (Free Pascal Compiler 2.4 or newer), other
+  Delphi or Object Pascal compilers might work as well
 
 
 .. _api_bindings_delphi_install:

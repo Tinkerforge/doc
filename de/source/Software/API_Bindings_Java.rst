@@ -6,8 +6,6 @@
 Java - API Bindings
 ===================
 
-**Voraussetzungen**: Java 1.5 oder neuer
-
 .. note::
  Es gibt einen extra Abschnitt für :ref:`Java und Android <api_bindings_java_android>`.
 
@@ -21,6 +19,12 @@ die Bindings beinhaltet:
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 Die Java Bibliothek hat keine weiteren Abhängigkeiten.
+
+
+Voraussetzungen
+---------------
+
+* Java JDK 1.5 oder neuer
 
 
 .. _api_bindings_java_install:

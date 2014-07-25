@@ -22,6 +22,12 @@ The C# bindings allow you to control :ref:`Bricks <primer_bricks>` and
 The C#/.NET library has no external dependencies.
 
 
+Requirements
+------------
+
+* C# compiler
+
+
 .. _api_bindings_csharp_install:
 
 Installation

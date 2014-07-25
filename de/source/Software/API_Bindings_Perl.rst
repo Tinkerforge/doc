@@ -6,8 +6,6 @@
 Perl - API Bindings
 ===================
 
-**Voraussetzungen**: Perl 5.14.0 oder neuer mit Digest::HMAC_SHA1 und Thread::Queue 3.02 oder neuer
-
 Die Perl Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen Perl Programmen
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -16,6 +14,13 @@ die Bindings beinhaltet:
 * in ``source/`` den Quelltext der Bindings (installierbar mit ``Makefile.PL``
   Script)
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
+
+
+Voraussetzungen
+---------------
+
+* Perl 5.14 oder neuer mit Thread Unterstützung, ``Digest::HMAC_SHA1`` Modul
+  und ``Thread::Queue`` Modul 3.02 oder neuer
 
 
 .. _api_bindings_perl_install:

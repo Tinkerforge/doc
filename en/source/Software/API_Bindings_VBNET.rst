@@ -6,8 +6,6 @@
 Visual Basic .NET - API Bindings
 ================================
 
-**Requirements**: Visual Basic 2005 (VB 8.0) or newer, or Mono 1.2.3 or newer
-
 The Visual Basic .NET bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your Visual Basic .NET programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
@@ -23,6 +21,12 @@ Since version 2.0.0 the C# bindings are
 compliant. This allows to use them with all `.NET compatible languages
 <http://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
 Visual Basic .NET.
+
+
+Requirements
+------------
+
+* Visual Basic 2005 (VB 8.0) or newer, or Mono 1.2.3 or newer
 
 
 .. _api_bindings_vbnet_install:

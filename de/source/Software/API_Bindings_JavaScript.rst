@@ -6,9 +6,6 @@
 JavaScript - API Bindings
 =========================
 
-**Voraussetzungen**: Node.js 0.10 oder neuer oder jeder aktuelle Browser mit
-WebSocket-Unterstützung (getestet mit Chrome, Firefox und Internet Explorer)
-
 Die JavaScript Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen JavaScript Programmen
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
@@ -20,6 +17,13 @@ die Bindings beinhaltet:
 * in ``nodejs/examples/`` die Node.js Beispiele für alle Bricks und Bricklets
 * in ``browser/source/`` den Quelltext der Browser Version der Bindings
 * in ``browser/examples/`` die HTML Beispiele für alle Bricks und Bricklets
+
+
+Voraussetzungen
+---------------
+
+* Node.js 0.10 oder neuer oder jeder aktuelle Browser mit
+  WebSocket Unterstützung (getestet mit Chrome, Firefox und Internet Explorer)
 
 
 .. _api_bindings_javascript_install:
