@@ -80,7 +80,9 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
   ?>
 
-If you did install the bindings then you're now ready to test this example.
+If you did install the bindings then you're now ready to test this example::
+
+ php ExampleConfiguration.php
 
 If you did **not** install the bindings then you can also use
 the source of the bindings directly. Just copy the ``Tinkerforge/`` folder from
@@ -91,7 +93,9 @@ automatically find the bindings::
   -> Tinkerforge/
   -> ExampleConfiguration.php
 
-Now you're ready to test this example.
+Now you're ready to test this example::
+
+ php ExampleConfiguration.php
 
 
 API Documentation and Examples

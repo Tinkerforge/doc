@@ -106,7 +106,9 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
 If you did install the bindings from :ref:`source
 <api_bindings_python_install_source>` or :ref:`PyPI
-<api_bindings_python_install_pypi>` then you're now ready to test this example.
+<api_bindings_python_install_pypi>` then you're now ready to test this example::
+
+ python example_configuration.py
 
 If you did **not** install the bindings then you can also use the source of the
 bindings directly. Just copy the ``tinkerforge/`` folder from the ``source/``
@@ -117,7 +119,9 @@ the bindings::
   -> tinkerforge/
   -> example_configuration.py
 
-Now you're ready to test this example.
+Now you're ready to test this example::
+
+ python example_configuration.py
 
 
 API Documentation and Examples

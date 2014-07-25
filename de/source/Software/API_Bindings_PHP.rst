@@ -85,7 +85,9 @@ Brick Viewer ermittelt werden:
   ?>
 
 Wenn die Bindings installiert wurden, dann kann das Beispiele jetzt direkt
-ausgeführt werden.
+ausgeführt werden::
+
+ php ExampleConfiguration.php
 
 Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext der
 Bindings auch direkt verwendet werden. Dafür muss der ``Tinkerforge/`` Ordner
@@ -96,7 +98,9 @@ PHP wird die Bindings automatisch finden::
   -> Tinkerforge/
   -> ExampleConfiguration.php
 
-Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können::
+
+ php ExampleConfiguration.php
 
 
 API Dokumentation und Beispiele

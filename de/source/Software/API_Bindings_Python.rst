@@ -109,7 +109,9 @@ Brick Viewer ermittelt werden:
 
 Wenn die Bindings vom :ref:`Quelltext <api_bindings_python_install_source>` oder
 von :ref:`PyPI <api_bindings_python_install_pypi>` installiert wurden, dann kann
-das Beispiele jetzt direkt ausgeführt werden.
+das Beispiele jetzt direkt ausgeführt werden::
+
+ python example_configuration.py
 
 Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext der
 Bindings auch direkt verwendet werden. Dafür muss der ``tinkerforge/`` Ordner
@@ -120,7 +122,9 @@ Python wird die Bindings automatisch finden::
   -> tinkerforge/
   -> example_configuration.py
 
-Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können::
+
+ python example_configuration.py
 
 
 API Dokumentation und Beispiele

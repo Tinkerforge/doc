@@ -121,7 +121,9 @@ diese kann über den Brick Viewer ermittelt werden:
   # change to your UID
   uid=XYZ
 
-Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können::
+
+ ./example-configuration.sh
 
 
 .. _api_bindings_shell_links:

@@ -106,7 +106,9 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   var UID = 'XYZ'; // Change to your UID
 
 If you did install the bindings using the NPM package then you're now ready to
-test this example.
+test this example::
+
+ node ExampleConfiguration.js
 
 If you did **not** install the bindings then you can also use the source of the
 bindings directly. Just copy the ``Tinkerforge/`` folder and the
@@ -131,7 +133,10 @@ use:
 
   var Tinkerforge = require('./Tinkerforge.js');
 
-Now you're ready to test this example.
+Now you're ready to test this example::
+
+ node ExampleConfiguration.js
+
 
 HTML
 ^^^^

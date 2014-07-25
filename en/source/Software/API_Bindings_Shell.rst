@@ -117,7 +117,9 @@ which you can figure out using Brick Viewer:
   # change to your UID
   uid=XYZ
 
-Now you're ready to test this example.
+Now you're ready to test this example::
+
+ ./example-configuration.sh
 
 
 .. _api_bindings_shell_links:

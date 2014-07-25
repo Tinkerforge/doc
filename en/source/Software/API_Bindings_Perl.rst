@@ -108,7 +108,9 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 
 If you did install the bindings from :ref:`source
 <api_bindings_perl_install_source>` or :ref:`CPAN
-<api_bindings_perl_install_cpan>` then you're now ready to test this example.
+<api_bindings_perl_install_cpan>` then you're now ready to test this example::
+
+ perl example_configuration.pl
 
 If you did **not** install the bindings then you can also use the source of the
 bindings directly. Just copy the ``Tinkerforge/`` folder from the ``source/lib/``
@@ -125,7 +127,9 @@ make Perl find the ``Tinkerforge/`` folder:
 
  use lib './';
 
-Now you're ready to test this example.
+Now you're ready to test this example::
+
+ perl example_configuration.pl
 
 
 .. _api_bindings_perl_known_problems:

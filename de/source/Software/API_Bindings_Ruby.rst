@@ -89,7 +89,9 @@ Brick Viewer ermittelt werden:
   UID = 'XYZ' # Change to your UID
 
 Wenn die Bindings installiert wurden, dann kann das Beispiele jetzt direkt
-ausgeführt werden.
+ausgeführt werden::
+
+ ruby example_configuration.rb
 
 Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext der
 Bindings auch direkt verwendet werden. Dafür muss der ``tinkerforge/`` Ordner
@@ -99,12 +101,11 @@ vom ``source/`` Ordner in den ``example_project/`` Ordner kopiert werden::
   -> tinkerforge/
   -> example_configuration.rb
 
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
 Damit Ruby den ``tinkerforge/`` Ordner findet muss es per ``-I.`` Option
 angewiesen werden im aktuelle Ordner danach zu suchen::
 
  ruby -I. example_configuration.rb
-
-Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
 
 
 API Dokumentation und Beispiele

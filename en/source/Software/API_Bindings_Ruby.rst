@@ -84,7 +84,9 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   PORT = 4223
   UID = 'XYZ' # Change to your UID
 
-If you did install the bindings then you're now ready to test this example.
+If you did install the bindings then you're now ready to test this example::
+
+ ruby example_configuration.rb
 
 If you did **not** install the bindings then you can also use the source of the
 bindings directly. Just copy the ``tinkerforge/`` folder from the ``source/``
@@ -94,12 +96,10 @@ folder to your ``example_project/`` folder::
   -> tinkerforge/
   -> example_configuration.rb
 
-You need to tell Ruby to look in the current folder for required modules
-using the ``-I.`` option::
+Now you're ready to test this example. You need to tell Ruby to look in the
+current folder for required modules using the ``-I.`` option::
 
  ruby -I. example_configuration.rb
-
-Now you're ready to test this example.
 
 
 API Documentation and Examples

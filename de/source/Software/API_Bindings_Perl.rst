@@ -111,7 +111,9 @@ Brick Viewer ermittelt werden:
 
 Wenn die Bindings vom :ref:`Quelltext <api_bindings_perl_install_source>` oder
 von :ref:`CPAN <api_bindings_perl_install_cpan>` installiert wurden, dann kann
-das Beispiele jetzt direkt ausgeführt werden.
+das Beispiele jetzt direkt ausgeführt werden::
+
+ perl example_configuration.pl
 
 Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext der
 Bindings auch direkt verwendet werden. Dafür muss der ``Tinkerforge/`` Ordner
@@ -128,7 +130,9 @@ folgende Zeile eingefügt werden:
 
  use lib './';
 
-Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können::
+
+ perl example_configuration.pl
 
 
 .. _api_bindings_perl_known_problems:

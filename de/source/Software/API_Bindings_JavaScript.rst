@@ -108,7 +108,9 @@ Brick Viewer ermittelt werden:
   var UID = 'XYZ'; // Change to your UID
 
 Wenn die Bindings mittels NPM Package installiert wurden, dann kann
-das Beispiele jetzt direkt ausgeführt werden.
+das Beispiele jetzt direkt ausgeführt werden::
+
+ node ExampleConfiguration.js
 
 Wenn die Bindings **nicht** installiert wurden, dann kann der Quelltext der
 Bindings auch direkt verwendet werden. Dafür muss der ``Tinkerforge/`` Ordner
@@ -133,7 +135,10 @@ muss dort nun dies stehen:
 
   var Tinkerforge = require('./Tinkerforge.js');
 
-Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
+Dann ist auch schon alles bereit, um dieses Beispiel testen zu können::
+
+ node ExampleConfiguration.js
+
 
 HTML
 ^^^^
