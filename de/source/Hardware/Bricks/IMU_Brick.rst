@@ -118,7 +118,7 @@ Stromverbrauch                                                  53mA
 Ressourcen
 ----------
 
-* 3-Achsen Beschleunigungssensor/Kompass LSM303 Datenblatt (`Download <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00260288.pdf>`__)
+* 3-Achsen Beschleunigungssensor/Kompass LSM303 Datenblatt (`Download <http://www.st.com/web/en/resource/technical/document/datasheet/CD00260288.pdf>`__)
 * 3-Achsen Gyroskop ITG-3200 Datenblatt (`Download <http://invensense.com/mems/gyro/documents/PS-ITG-3200A.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/hardware/imu-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
