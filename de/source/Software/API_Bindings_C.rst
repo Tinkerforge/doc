@@ -19,7 +19,7 @@ die Bindings beinhaltet:
 
 
 Voraussetzungen
-------------
+---------------
 
 * C Compiler (C99 kompatible) oder C++ Compiler
 

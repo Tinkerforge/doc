@@ -138,7 +138,7 @@ Case
 TODO: FIXME
 
 A `laser-cut case for the Solid State Relay Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-solid_state-relay-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-solid-state-relay-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_solid_state_relay_case_350.jpg
    :scale: 100 %
