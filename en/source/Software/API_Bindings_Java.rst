@@ -41,7 +41,7 @@ Maven
 The bindings are also available from the `Central Maven Repository
 <http://search.maven.org/#search%7Cga%7C1%7Ca%3Atinkerforge>`__. This allows
 to use them directly in Maven project. Just add ``tinkerforge`` as a dependency
-to your Maven project file (``pom.xml``). The placeholder ``x.y.z`` represents
+to your Maven project file (``pom.xml``). The placeholder ``X.Y.Z`` represents
 the specific version of the bindings to be used, e.g. ``2.1.1``:
 
 .. code-block:: xml
@@ -53,7 +53,7 @@ the specific version of the bindings to be used, e.g. ``2.1.1``:
       <dependency>
         <groupId>com.tinkerforge</groupId>
         <artifactId>tinkerforge</artifactId>
-        <version>x.y.z</version>
+        <version>X.Y.Z</version>
       </dependency>
       ...
     </dependencies>

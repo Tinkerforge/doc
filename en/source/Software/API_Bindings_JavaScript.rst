@@ -13,7 +13,8 @@ The JavaScript bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your JavaScript programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-* ``nodejs/tinkerforge.tgz``, a Node.js NPM package (installable with ``npm`` tool)
+* ``nodejs/tinkerforge.tgz``, a Node.js NPM package (installable with `npm
+  <https://www.npmjs.org/>`__ tool)
 * in ``nodejs/source/`` the source code of ``tinkerforge.tgz``
 * in ``nodejs/examples/`` the Node.js examples for every Brick and Bricklet
 * in ``browser/source/`` the source code of the browser version of the bindings
@@ -34,7 +35,7 @@ Node.js
 The Node.js version of the bindings can be installed with the Node.js Package
 Manager `npm <https://www.npmjs.org/>`__, but you don't have to.
 
-With NPM Package
+From NPM Package
 """"""""""""""""
 
 There is a NPM package available for using the Bindings with Node.js. It is
@@ -46,8 +47,8 @@ administrator::
  npm -g install tinkerforge
 
 Alternatively, the NPM Package is also part of the ZIP file of the bindings. It
-can be installed from there as well with the following command which might has
-to execute with ``sudo`` or as administrator::
+can be installed globally from there as well with the following command which
+might has to execute with ``sudo`` or as administrator::
 
  npm -g install nodejs/tinkerforge.tgz
 
@@ -103,9 +104,9 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 If you did install the bindings using the NPM package then you're now ready to
 test this example.
 
-If you did **not** install the bindings from the NPM package, you can also use
-the source of the bindings directly. Just copy the ``Tinkerforge/`` folder and
-the ``Tinkerforge.js`` file from the ``nodejs/source/`` folder to your
+If you did **not** install the bindings then you can also use the source of the
+bindings directly. Just copy the ``Tinkerforge/`` folder and the
+``Tinkerforge.js`` file from the ``nodejs/source/`` folder to your
 ``example_project/`` folder::
 
  example_project/

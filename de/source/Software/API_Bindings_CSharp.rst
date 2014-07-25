@@ -7,7 +7,8 @@ C# - API Bindings
 =================
 
 .. note::
- Es gibt einen extra Abschnitt für :ref:`C# und Windows Phone <api_bindings_csharp_windows_phone>`.
+ Es gibt einen extra Abschnitt für :ref:`C# und Windows Phone
+ <api_bindings_csharp_windows_phone>`.
 
 Die C# Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 :ref:`Bricklets <primer_bricklets>` aus selbst erstellen C# Programmen

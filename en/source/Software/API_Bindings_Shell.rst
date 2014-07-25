@@ -8,18 +8,15 @@ Shell - API Bindings
 
 **Requirements**: Python 2.5 or newer with argparse module, Python 3 is also supported
 
-The Shell bindings (:ref:`download <downloads_bindings_examples>`) consist of
-a Python script to interact with all
-Tinkerforge Bricks and Bricklets (``tinkerforge``), a corresponding Bash
-Completion script (``tinkerforge-bash-completion.sh``) and all available Shell
-examples (in ``examples/``).
+The Shell bindings allow you to control :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` from your shell scripts. The
+:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-To get Bash Completion to work the ``tinkerforge`` script has to be in ``PATH``.
-For example by copying it to ``/usr/local/bin/``. The Bash Completion script
-``tinkerforge-bash-completion.sh`` has to be in ``/etc/bash_completion.d/``.
-Bash Completion can then be reloaded by::
+* ``tinkerforge``, a Python script that acts as a shell command
+* ``tinkerforge-bash-completion.sh``, a Bash completion script
+* in ``examples/`` the examples for every Brick and Bricklet
 
- . /etc/bash_completion
+The Shell bindings are based on the :ref:`Python bindings <api_bindings_python>`.
 
 
 .. _api_bindings_shell_install:
@@ -27,7 +24,37 @@ Bash Completion can then be reloaded by::
 Installation
 ------------
 
-TODO
+The Shell bindings can be installed, but can also be used without installation.
+
+To install the bindings copy the ``tinkerforge`` file to a folder that is in
+the ``PATH``. For example, this folder on Linux and Mac OS X::
+
+ /usr/local/bin/
+
+On Windows the ``Scripts/`` folder of the Python installation is a good choice::
+
+ C:\Python27\Scripts\
+
+To be able to call the bindings directly on Windows you have to create a
+``tinkerforge.bat`` file in the ``Scripts/`` folder with the following content::
+
+ @"C:\Python27\python.exe" "C:\Python27\Scripts\tinkerforge"
+
+If your Python is not installed in ``C:\Python27\`` then you have to adapt the
+content of the ``tinkerforge.bat`` file accordingly.
+
+Bash Completion
+^^^^^^^^^^^^^^^
+
+IF you're using Bash as your shell then you can use the Bash completion script
+``tinkerforge-bash-completion.sh``. To install it copy the
+``tinkerforge-bash-completion.sh`` file to the ``/etc/bash_completion.d/``
+an reload the Bash completions with the following command::
+
+ . /etc/bash_completion
+
+The Bash completion for ``tinkerforge`` can complete options, UIDs, Brick and
+Bricklet names as well as function and callback names.
 
 
 Testing an Example
@@ -39,13 +66,54 @@ USB interface of the Bricks and the API bindings. Brick Viewer connects to
 Brick Daemon and helps to figure out basic information about the connected
 Bricks and Bricklets.
 
-
-
-
-
 All examples are meant for typical Unix shells such as Bash. They will work
 on Linux and Mac OS X as they are. There are Bash ports for Windows that allow
 to run the examples unmodified, too.
+
+As an example let's test the configuration example for the Stepper Brick.
+For this copy the ``example-configuration.sh`` file from the
+``examples/brick/stepper/`` folder into a new folder::
+
+ example_project/
+  -> example-configuration.sh
+
+If you did **not** install the bindings then you have to copy the
+``tinkerforge`` file to the ``example_project/`` folder too::
+
+ example_project/
+  -> tinkerforge
+  -> example-configuration.sh
+
+To make the example find the non-installed ``tinkerforge`` file all occurrences
+of the ``tinkerforge`` command in the ``example-configuration.sh`` file have
+to be replaced by ``./tinkerforge``.
+
+The example starts with a comment about changing the network address using the
+``--host`` and ``--port`` option if it differs from ``localhost:4223``. If the
+Stepper Brick is connected locally to USB then ``localhost`` and 4223 is
+correct.
+
+.. code-block:: bash
+
+  # connects to localhost:4223 by default, use --host and --port to change it
+
+To control a Stepper Brick that can be found at host ``foobar`` and port 5678
+the examples has to be changed as follows: each occurrence of the
+``tinkerforge`` command has to be replaced by this:
+
+.. code-block:: bash
+
+  tinkerforge --host foobar --port 5678
+
+The ``UID`` value has to be changed to the UID of the connected Stepper Brick,
+which you can figure out using Brick Viewer:
+
+.. code-block:: bash
+
+  # change to your UID
+  uid=XYZ
+
+Now you're ready to test this example.
 
 
 .. _api_bindings_shell_links:

@@ -67,8 +67,9 @@ ausführen. Dafür muss zuerst die ``Example Configuration.vi`` Datei aus dem
   -> Example Configuration.vi
 
 Wenn die Bindings **nicht** in den ``vi.lib`` Ordern der LabVIEW Installation
-kopiert wurden so muss auch noch die ``Tinkerforge.dll`` in den ``example_project/``
-Ordner kopiert werden bevor das Beispiel in LabVIEW geöffnet werden kann::
+kopiert wurden, dann muss auch noch die ``Tinkerforge.dll`` in den
+``example_project/`` Ordner kopiert werden bevor das Beispiel in LabVIEW
+geöffnet werden kann::
 
  example_project/
   -> Tinkerforge.dll

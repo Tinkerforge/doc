@@ -14,7 +14,8 @@ Die JavaScript Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
-* ``nodejs/tinkerforge.tgz``, ein Node.js NPM Package (installierbar mit ``npm`` Tool)
+* ``nodejs/tinkerforge.tgz``, ein Node.js NPM Package (installierbar mit `npm
+  <https://www.npmjs.org/>`__ Tool)
 * in ``nodejs/source/`` den Quelltext für ``tinkerforge.tgz``
 * in ``nodejs/examples/`` die Node.js Beispiele für alle Bricks und Bricklets
 * in ``browser/source/`` den Quelltext der Browser Version der Bindings
@@ -35,7 +36,7 @@ Node.js
 Die Node.js Version der Bindings können mit dem Node.js Package Manager
 `npm <https://www.npmjs.org/>`__ installiert werden, müssen aber nicht.
 
-Mit NPM Package
+Vom NPM Package
 """""""""""""""
 
 Für die Verwendung der Bindings mit Node.js steht in NPM Package bereit. Dies

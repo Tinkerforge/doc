@@ -8,16 +8,14 @@ PHP - API Bindings
 
 **Requirements**: PHP 5.3 or newer with ``bcmath`` and ``sockets`` extension
 
-The PHP bindings (:ref:`download <downloads_bindings_examples>`) consist of a
-PEAR package with the bindings for all
-Tinkerforge Bricks and Bricklets (``Tinkerforge.tgz``), the source of the
-PEAR package (in ``source/``) and all available PHP examples (in ``examples/``).
+The PHP bindings allow you to control :ref:`Bricks <primer_bricks>` and
+:ref:`Bricklets <primer_bricklets>` from your PHP programs. The
+:ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-You can install the PEAR package with the pear tool::
-
- pear install Tinkerforge.tgz
-
-After that you can use all examples as they are.
+* ``Tinkerforge.tgz``, a PEAR package (installable with `pear
+  <http://pear.php.net/>`__ tool)
+* in ``source/`` the source code of ``Tinkerforge.tgz``
+* in ``examples/`` the examples for every Brick and Bricklet
 
 
 .. _api_bindings_php_install:
@@ -25,7 +23,26 @@ After that you can use all examples as they are.
 Installation
 ------------
 
-TODO
+The bindings can be installed, but can also be used without installation.
+
+From PEAR Package
+^^^^^^^^^^^^^^^^^
+
+The bindings are available as a PEAR package. You can install it with the
+`pear <http://pear.php.net/>`__ tool using the following command. Depending on
+your PHP installation you might have to execute this with ``sudo`` or as
+administrator::
+
+ pear install Tinkerforge.tgz
+
+Now you're ready to test the examples.
+
+Without Installation
+^^^^^^^^^^^^^^^^^^^^
+
+You can use the bindings without having to install them. Just copy the
+``Tinkerforge/`` folder from the ``source/`` folder in the same folder as your
+PHP program. The section about testing an example has more details about this.
 
 
 Testing an Example
@@ -37,54 +54,40 @@ USB interface of the Bricks and the API bindings. Brick Viewer connects to
 Brick Daemon and helps to figure out basic information about the connected
 Bricks and Bricklets.
 
+As an example let's test the configuration example for the Stepper Brick.
+For this copy the ``ExampleConfiguration.php`` file from the
+``examples/Brick/Stepper/`` folder into a new folder::
 
+ example_project/
+  -> ExampleConfiguration.php
 
+In the example ``HOST`` and ``PORT`` specify at which network address the
+Stepper Brick can be found. If it is connected locally to USB then ``localhost``
+and 4223 is correct. The ``UID`` value has to be changed to the UID of the
+connected Stepper Brick, which you can figure out using Brick Viewer:
 
-If you can't or don't want to use the PEAR package, you can also use the source
-directly, just create a folder for your project and copy the ``Tinkerforge``
-folder from ``source/`` and the example you want to try in there
-(e.g. the Stepper configuration example from
-``examples/brick/stepper/ExampleConfiguration.php``)::
+.. code-block:: php
+
+  <?php
+
+  const HOST = 'localhost';
+  const PORT = 4223;
+  const UID = 'XYZ'; // Change to your UID
+
+  ?>
+
+If you did install the bindings then you're now ready to test this example.
+
+If you did **not** install the bindings then you can also use
+the source of the bindings directly. Just copy the ``Tinkerforge/`` folder from
+the ``source/`` folder to your ``example_project/`` folder and PHP will
+automatically find the bindings::
 
  example_project/
   -> Tinkerforge/
   -> ExampleConfiguration.php
 
-If you just want to use a few Bricks or Bricklets and you don't want to
-have this many files in you project, you can also copy the files as they are
-needed. For the Stepper Brick examples we need ``IPConnection.php`` and
-``BrickStepper.php``. After copying these in the project folder::
-
- example_project/
-  -> IPConnection.php
-  -> BrickStepper.php
-  -> ExampleConfiguration.php
-
-we have to remove the ``Tinkerforge`` folder from the examples, i.e. instead of:
-
-.. code-block:: php
-
-    <?php
-
-    require_once('Tinkerforge/IPConnection.php');
-    require_once('Tinkerforge/BrickStepper.php');
-    ...
-
-    ?>
-
-we use:
-
-.. code-block:: php
-
-    <?php
-
-    require_once('IPConnection.php');
-    require_once('BrickStepper.php');
-    ...
-
-    ?>
-
-After that, the example can be executed again.
+Now you're ready to test this example.
 
 
 API Documentation and Examples

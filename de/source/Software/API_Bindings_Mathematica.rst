@@ -77,7 +77,7 @@ Und so unter Mac OS X::
 
  /Applications/Mathematica.app/AddOns/Applications/Tinkerforge/assembly/Tinkerforge.dll
 
-Wenn die Bindings so installiert wurden muss dann noch der ``LoadNETAssembly[]``
+Wenn die Bindings so installiert wurden dann muss noch der ``LoadNETAssembly[]``
 Aufruf in den Beispielen zu
 
 .. code-block:: mathematica
@@ -108,7 +108,7 @@ Und unter Mac OS X ist er hier::
 
  /Applications/Mathematica.app/SystemFiles/Links/NETLink/
 
-Wenn die Bindings so installiert wurden muss dann noch der ``LoadNETAssembly[]``
+Wenn die Bindings so installiert wurden dann muss noch der ``LoadNETAssembly[]``
 Aufruf in den Beispielen zu
 
 .. code-block:: mathematica

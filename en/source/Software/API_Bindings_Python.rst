@@ -100,15 +100,14 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   PORT = 4223
   UID = "XYZ" # Change to your UID
 
-If you did install the bindings from source or PyPI then you're now ready to
-test this example.
+If you did install the bindings from :ref:`source
+<api_bindings_python_install_source>` or :ref:`PyPI
+<api_bindings_python_install_pypi>` then you're now ready to test this example.
 
-If you did **not** install the bindings from
-:ref:`source <api_bindings_python_install_source>` or
-:ref:`PyPI <api_bindings_python_install_pypi>`, you can also use
-the source of the bindings directly. Just copy the ``tinkerforge/`` folder from
-the ``source/`` folder to your ``example_project/`` folder and Python will
-automatically find the bindings::
+If you did **not** install the bindings then you can also use the source of the
+bindings directly. Just copy the ``tinkerforge/`` folder from the ``source/``
+folder to your ``example_project/`` folder and Python will automatically find
+the bindings::
 
  example_project/
   -> tinkerforge/
