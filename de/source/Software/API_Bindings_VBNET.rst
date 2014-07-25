@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-vbnet">Software</a>/ Visual Basic .NET - API Bindings
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-vbnet">Software</a> / Visual Basic .NET - API Bindings
 
 .. _api_bindings_vbnet:
 
