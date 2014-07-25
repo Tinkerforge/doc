@@ -427,6 +427,7 @@ table.docutils {
 	margin-left: auto; /*center table */
 	margin-right:auto;
 	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 table.docutils.field-list {
