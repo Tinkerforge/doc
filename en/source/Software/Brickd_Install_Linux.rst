@@ -66,8 +66,19 @@ automatically.
 From Source
 -----------
 
-To install Brick Daemon from source, download the source from `GitHub
-<https://github.com/Tinkerforge/brickd>`__ and install the dependencies:
+To install Brick Daemon from source you need to clone/download its
+`source code from GitHub <https://github.com/Tinkerforge/brickd>`__::
+
+ git clone https://github.com/Tinkerforge/brickd
+
+Brick Daemon uses the common Tinkerforge daemonlib. Clone/Download its
+`source code from GitHub <https://github.com/Tinkerforge/daemonlib>`__ to the
+``src/`` folder in the brickd clone::
+
+ cd src/
+ git clone https://github.com/Tinkerforge/daemonlib
+
+Also install the following libraries:
 
 * libusb-1.0
 * libudev (optional for USB hotplug)

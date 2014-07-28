@@ -72,7 +72,18 @@ Aus Quelltext
 
 Um den Brick Daemon aus dem Quelltext zu installieren, muss
 der `Quellcode von GitHub <https://github.com/Tinkerforge/brickd>`__
-heruntergeladen werden. Es gibt folgende Abhängigkeiten:
+geclont/heruntergeladen werden::
+
+ git clone https://github.com/Tinkerforge/brickd
+
+Brick Daemon benutzt die Tinkerforge daemonlib. Deren `Quellcode von GitHub
+<https://github.com/Tinkerforge/daemonlib>`__ muss in den ``src/`` Ordner des
+brickd Clones geclont/heruntergeladen werden::
+
+ cd src/
+ git clone https://github.com/Tinkerforge/daemonlib
+
+Es müssen folgende Abhängigkeiten installiert werden:
 
 * libusb-1.0
 * libudev (optional für USB Hotplug)
