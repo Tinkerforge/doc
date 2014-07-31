@@ -38,9 +38,10 @@ Logging
 -------
 
 By default Brick Daemon logs messages about information, warnings and errors.
+This includes basic information about USB hotplug and TCP/IP connections.
 
 * Windows: Log messages are reported in the Windows Event Log. You can use the
-  ``eventlog.exe`` tool (part of the brickd installation) to view the Windows
+  ``logviewer.exe`` tool (part of the brickd installation) to view the Windows
   Event Log filtered for brickd messages.
 * Linux and Mac OS X: Log messages are written to ``/var/log/brickd.log``.
 
