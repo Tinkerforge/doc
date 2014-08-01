@@ -11,6 +11,19 @@ zu deren Benutzung können auf der :ref:`Einführungsseite <primer>` gefunden
 werden.
 
 
+Mein Programm funktioniert nur wenn Brick Viewer läuft
+------------------------------------------------------
+
+Dann benutzt dein Programm wahrscheinlich Callbacks ohne sie richtig zu
+aktivieren. Brick Viewer benutzt auch Callbacks und aktiviert sie wenn der Tab
+eines Bricks oder Bricklets ausgewählt wird. Da die Einstellungen der Callbacks
+global sind ist dann der Callback auch für dein Programm aktiviert.
+
+Die Lösung ist also die verwendeten Callbacks richtig zu konfigurieren und
+aktivieren im Programm. Die Dokumentation des Callbacks beschreibt wie dies
+zu tun ist.
+
+
 .. _faq_brick_hot:
 
 Mein Brick wird heiß

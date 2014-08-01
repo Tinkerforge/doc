@@ -9,6 +9,20 @@ FAQ
 General information about Bricks, Bricklets and Master Extensions as well as how 
 to use them can be found in the :ref:`Primer <primer>`.
 
+
+My Program only works if Brick Viewer is running
+------------------------------------------------
+
+Your program is probably using callbacks, but is not activating them correctly.
+Brick Viewer also uses callbacks and activates them if you select the tab of
+a Brick or Bricklet. Because the callback configuration is global this activates
+the callback for your program to.
+
+To fix this problem you need to activate the callbacks you use in your program
+properly. See the documentation of the callback it tells you how to activate
+and configure it.
+
+
 .. _faq_brick_hot:
 
 My Brick gets hot
@@ -204,5 +218,3 @@ Firmwares/Plugins of your Bricks/Bricklets to a version starting with "2".
 
 To do this you can use the :ref:`transitioning guide <transition_1to2>`. 
 It also describes how to port already existing code to the new protocol. 
-
-
