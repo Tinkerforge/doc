@@ -20,6 +20,11 @@ NFC/RFID Bricklet
 	               "NFC/RFID Bricklet")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_nfc_rfid_w_master_100.jpg",
+	             "Bricklets/bricklet_nfc_rfid_w_master_600.jpg",
+	             "NFC/RFID Bricklet mit Master Brick")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_nfc_rfid_horizontal_100.jpg",
 	             "Bricklets/bricklet_nfc_rfid_horizontal_600.jpg",
 	             "NFC/RFID Bricklet")
@@ -241,11 +246,11 @@ Erster Test
 |test_connect|.
 
 
-.. image:: /Images/Bricklets/bricklet_nfc_rfid_setup_600.jpg
+.. image:: /Images/Bricklets/bricklet_nfc_rfid_w_master_600.jpg
    :scale: 100 %
    :alt: NFC/RFID Bricklet with Battery and Motor connected to Master Brick
    :align: center
-   :target: ../../_images/Bricklets/bricklet_nfc_rfid_setup_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_nfc_rfid_w_master_1200.jpg
 
 |test_tab|
 

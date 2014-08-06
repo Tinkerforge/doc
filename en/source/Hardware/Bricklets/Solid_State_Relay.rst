@@ -20,6 +20,11 @@ Solid State Relay Bricklet
 	               "Solid State Relay Bricklet")
 	}}
 	{{
+	    tfdocstart("Bricklets/bricklet_ssr_w_master_350.jpg",
+	               "Bricklets/bricklet_ssr_w_master_600.jpg",
+	               "Solid State Relay Bricklet with Master Brick")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_ssr_vertical_100.jpg",
 	             "Bricklets/bricklet_ssr_vertical_600.jpg",
 	             "Solid State Relay Bricklet")
@@ -146,11 +151,11 @@ Test your Solid State Relay Bricklet
 
 |test_connect| (see picture below).
 
-.. image:: /Images/Bricklets/bricklet_solid_state_relay_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_ssr_w_master_600.jpg
    :scale: 100 %
    :alt: Master Brick with connected Solid State Relay Bricklet
    :align: center
-   :target: ../../_images/Bricklets/bricklet_solid_state_relay_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_ssr_w_master_1200.jpg
 
 |test_tab|
 If everything went as expected the Brick Viewer should look as

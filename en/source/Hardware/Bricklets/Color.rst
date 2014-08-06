@@ -20,6 +20,11 @@ Color Bricklet
 	               "Color Bricklet")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_color_w_master_100.jpg",
+	             "Bricklets/bricklet_color_w_master_600.jpg",
+	             "Color Bricklet with Master Brick")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_color_horizontal_100.jpg",
 	             "Bricklets/bricklet_color_horizontal_600.jpg",
 	             "Color Bricklet")
@@ -123,11 +128,11 @@ Test your Color Bricklet
 
 |test_connect| (see picture below).
 
-.. image:: /Images/Bricklets/bricklet_color_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_color_w_master_600.jpg
    :scale: 100 %
    :alt: Color Bricklet connected to Master Brick
    :align: center
-   :target: ../../_images/Bricklets/bricklet_color_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_color_w_master_1200.jpg
 
 |test_tab|
 If everything went as expected you can now see the changing measured values 

@@ -20,6 +20,11 @@ Solid State Relay Bricklet
 	               "Solid State Relay Bricklet")
 	}}
 	{{
+	    tfdocstart("Bricklets/bricklet_ssr_w_master_350.jpg",
+	               "Bricklets/bricklet_ssr_w_master_600.jpg",
+	               "Solid State Relay Bricklet mit Master Brick")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_ssr_vertical_100.jpg",
 	             "Bricklets/bricklet_ssr_vertical_600.jpg",
 	             "Solid State Relay Bricklet")
@@ -152,11 +157,11 @@ Erster Test
 
 |test_connect| (siehe folgendes Bild).
 
-.. image:: /Images/Bricklets/bricklet_solid_state_relay_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_ssr_w_master_600.jpg
    :scale: 100 %
    :alt: Solid State Relay verbunden mit Master Brick
    :align: center
-   :target: ../../_images/Bricklets/bricklet_solid_state_relay_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_ssr_w_master_1200.jpg
 
 |test_tab|
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
