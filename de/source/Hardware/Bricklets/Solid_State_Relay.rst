@@ -52,9 +52,6 @@ Solid State Relay Bricklet
 	{{ tfdocend() }}
 
 
-.. note::
-  Diese Bricklet ist noch in Entwicklung!
-
 Features
 --------
 
@@ -64,7 +61,9 @@ Features
 
 * Bricklet steuert Solid State Relais (SSR)
 
-  * Angebotene SSRs mit bis zu 380V/25A AC oder 50V/80A DC
+  * Mit angebotenen SSRs bis zu 380V/25A AC oder 50V/80A DC schaltbar
+
+* PWM möglich (Dimmen von Lampen, Geschindigkeit von Motoren steuern)
 
 
 .. _solid_state_relay_bricklet_description:
@@ -72,16 +71,14 @@ Features
 Beschreibung
 ------------
 
-Mittels Solid State Relais können große Lasten, galvanisch getrennt geschaltet 
-werden. Schaltfunken und damit verbundene Störungen, wie sie bei mechanischen 
-Relais auftreten können, treten somit nicht auf. Zudem sind Solid State Relais 
-verschleißfrei und ermöglichen deutlich höhere Schaltfrequenzen.
+Mittels Solid State Relais (SSR) können große Lasten, galvanisch getrennt 
+geschaltet werden. Schaltfunken und damit verbundene Störungen, wie sie bei 
+mechanischen Relais auftreten können, treten somit nicht auf. Zudem sind Solid 
+State Relais verschleißfrei und ermöglichen deutlich höhere Schaltfrequenzen.
 
 Die maximale Schaltleistung hängt von dem angeschlossenen Solid State Relais ab, 
-das über das Solid State Relais Bricklet gesteuert wird. Das Bricklet kann jedes
-Solid State Relais steuern welches eine DC Steuerspannung von 5V unterstützt.
-Bei einem Abstand von 25,4mm (1") der Steuerungs-Kontakte kann das Bricklet 
-direkt auf diese Kontakte geschraubt werden.
+das über das Solid State Relay Bricklet gesteuert wird. 
+
 
 Im Shop bieten wir zwei passende Solid State Relais an:
 
@@ -91,18 +88,18 @@ Im Shop bieten wir zwei passende Solid State Relais an:
 Technische Spezifikation
 ------------------------
 
-==================================  ============================================================
-Eigenschaft                         Wert
-==================================  ============================================================
-Stromverbrauch                      <20mA
-----------------------------------  ------------------------------------------------------------
-----------------------------------  ------------------------------------------------------------
-Kontaktabstand                      25,4mm (1")
-----------------------------------  ------------------------------------------------------------
-----------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)             19 x 33,4 x 5mm (0,75 x 1,31 x 0,2")
-Gewicht                             1.6g
-==================================  ============================================================
+===========================================  ============================================================
+Eigenschaft                                  Wert
+===========================================  ============================================================
+Stromverbrauch                               <20mA
+-------------------------------------------  ------------------------------------------------------------
+-------------------------------------------  ------------------------------------------------------------
+Notwendiger Kontaktabstand des SSR Eingangs   25,4mm (1")
+-------------------------------------------  ------------------------------------------------------------
+-------------------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)                      19 x 33,4 x 5mm (0,75 x 1,31 x 0,2")
+Gewicht                                      1,6g
+===========================================  ============================================================
 
 
 Ressourcen
@@ -171,14 +168,15 @@ kann anhand der LED des Relais nachvollzogen werden.
 
 |test_pi_ref|
 
-PWM / Dimmen von Lampen
------------------------
+PWM / Dimmen / Geschwindigkeitssteuerung
+----------------------------------------
 
 Durch ein häufiges Ein-/ und Ausschalten des Solid State Relais können 
-angeschlossene Lasten geregelt werden (Beispiel: Helligkeit einer Lampe). Das 
-Verhältnis von eingeschalteter Zeit zur ausgeschalteter Zeit bestimmt dabei die 
-Leistung der angeschlossenen Last. Die Frequenz sollte dabei konstant sein und 
-nur die eingeschaltete Zeit variiert werden
+angeschlossene Lasten geregelt werden (Beispiel: Helligkeit einer Lampe,
+Geschwindigkeit eines Motors). Das Verhältnis von eingeschalteter Zeit zur 
+ausgeschalteter Zeit bestimmt dabei die Leistung der angeschlossenen Last. Die 
+Frequenz sollte dabei konstant sein und nur die eingeschaltete Zeit variiert 
+werden
 (siehe `Pulsweitenmodulation <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__).
 
 Beispiel:

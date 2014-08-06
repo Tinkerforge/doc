@@ -52,11 +52,18 @@ Solid State Relay Bricklet
 	{{ tfdocend() }}
 
 
-.. note::
- This Bricklet is currently work-in-progress.
-
 Features
 --------
+
+* Galvanically isolated switching of large AC or DC loads
+
+  * for example: motors, pumps and lamps
+
+* Bricklet controls Solid State Relays (SSR)
+
+  * With offered SSRs it can switch up to 380V/25A AC or 50V/80A DC
+
+* PWM possible (dimming of lamps, control speed of motors)
 
 
 .. _solid_state_relay_bricklet_description:
@@ -64,24 +71,35 @@ Features
 Description
 -----------
 
-TODO
+With Solid State Relays (SSR) large loads can be galvanically isolated switched. 
+Mechanical relays create switching sparks which cause intereference while 
+switching these loads. Solid state relays do not. Furhermore solid state relays 
+are wearless and allow higher switching frequencies.
 
+The maximum switching capacity depend on the connected solid state relay, which
+is controlled by the Solid State Relay Bricklet.
 
-Technical Specifications
-------------------------
+We offer two compatible solid state relays in our shop:
 
-==================================  ============================================================
-Property                            Value
-==================================  ============================================================
-Current Consumption                 TBDmA
-----------------------------------  ------------------------------------------------------------
-----------------------------------  ------------------------------------------------------------
-Maximum Voltage/Current             TBD
-----------------------------------  ------------------------------------------------------------
-----------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)              TBD: 45 x 45 x 25mm (1.77 x 1.77 x 0.98")
-Weight                              TBDg
-==================================  ============================================================
+* `AC (Alternating Current) SSR with a maximum power of 380V with 25A <https://www.tinkerforge.com/en/shop/solid-state-relay-ac-380v-25a.html>`__
+* `DC (Direct Current) SSR with a maximum power of 50V with 80A <https://www.tinkerforge.com/en/shop/solid-state-relay-dc-50v-80a.html>`__
+
+Technical Specification
+-----------------------
+
+=====================================  ============================================================
+Property                               Value
+=====================================  ============================================================
+Current Consumption                    <20mA
+-------------------------------------  ------------------------------------------------------------
+-------------------------------------  ------------------------------------------------------------
+Neccessary Contact Space of SSR Input  25.4mm (1")
+-------------------------------------  ------------------------------------------------------------
+-------------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)                 19 x 33.4 x 5mm (0.75 x 1.31 x 0.2")
+Weight                                 1.6g
+=====================================  ============================================================
+
 
 
 Resources
@@ -90,12 +108,29 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/hardware/solid-state-relay-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/solid_state_relay_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/zipball/master>`__)
-
+* Datasheet SSR AC 380V/25A (KS15/D-38Z25-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ks15_ac.pdf?raw=true>`__)
+* Datasheet SSR DC 50V/80A (KS33/D-50D80-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ks33_dc.pdf?raw=true>`__)
+* Datasheet SSR Heatsink (HF92B-120) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/hf92b_heatsink.pdf?raw=true>`__)
+* Datasheet SSR Cover (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ssr_cover.pdf?raw=true>`__)
 
 Connectivity
 ------------
 
-TODO
+The Bricklet has to be connected to the control inputs of the solid state relay.
+You have to consider the polarity. Connect the SSR input marked with "+" with 
+the "+" marked contact of the Bricklet.
+
+The output of the AC solid state relays has no polarity. Typically you want to 
+switch the phase wire. To do this you cut the phase wire (black) and connect 
+both ends with the relay.
+
+The output of DC solid state relays have a polarity. "+" marks the higher 
+voltage. If for example the power supply should be switched, you have to cut 
+the "+" wire. Each end will be connected to the SSR, whereas the wire directly
+connected to the power supply have to be connected to the "+" pole of the SSR.
+
+.. warning:: The handling with alternating currents as well as high direct 
+   currents is potential hazardous!
 
 .. _solid_state_relay_bricklet_test:
 
@@ -127,6 +162,27 @@ switching.
 
 |test_pi_ref|
 
+
+PWM / Dimming / Speed Control
+-----------------------------
+
+With `Pulse-width modulation <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__
+the power of loads connected to the solid state relay can be controlled
+(e.g. brightness of a lamp, speed of a motor). With a fixed frequency the load
+will be switched on for a variable time. Depending on the time the power will be
+controlled.
+
+Example:
+We want to control a heating device. A heating device has a high inertia so a 
+frequency of 1 Hz suffice. By variing the on-time between 0-1 second the power
+can be controlled between 0-100%. To do this we write a small program with a
+timer which calls every second the "set_monoflop" method of the Solid State 
+Relay Bricklet with a on-time between 0-1 seconds.
+
+.. warning::
+   High switching frequencies produce heat in the solid state relay. If these 
+   frequencies are too high, and there is not enough cooling, the relay can be
+   destroyed. Frequencies of 20-30 Hz should not be exceeded.
 
 
 .. _solid_state_relay_bricklet_programming_interface:
