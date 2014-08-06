@@ -26,7 +26,7 @@ Color Bricklet
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_color_in_action_100.jpg",
-	             "Bricklets/bricklet_color_in action_600.jpg",
+	             "Bricklets/bricklet_color_in_action_600.jpg",
 	             "Color Bricklet in action")
 	}}
 	{{
