@@ -58,7 +58,13 @@ Solid State Relay Bricklet
 Features
 --------
 
-* TODO
+* Galvanisch getrenntes Schalten großer Wechselstrom- oder Gleichstrom-Lasten
+
+  * zum Beispiel: Motoren, Pumpen und Lampen
+
+* Bricklet steuert Solid State Relais (SSR)
+
+  * Angebotene SSRs mit bis zu 380V/25A AC oder 50V/80A DC
 
 
 .. _solid_state_relay_bricklet_description:
@@ -66,7 +72,21 @@ Features
 Beschreibung
 ------------
 
-TODO
+Mittels Solid State Relais können große Lasten, galvanisch getrennt geschaltet 
+werden. Schaltfunken und damit verbundene Störungen, wie sie bei mechanischen 
+Relais auftreten können, treten somit nicht auf. Zudem sind Solid State Relais 
+verschleißfrei und ermöglichen deutlich höhere Schaltfrequenzen.
+
+Die maximale Schaltleistung hängt von dem angeschlossenen Solid State Relais ab, 
+das über das Solid State Relais Bricklet gesteuert wird. Das Bricklet kann jedes
+Solid State Relais steuern welches eine DC Steuerspannung von 5V unterstützt.
+Bei einem Abstand von 25,4mm (1") der Steuerungs-Kontakte kann das Bricklet 
+direkt auf diese Kontakte geschraubt werden.
+
+Im Shop bieten wir zwei passende Solid State Relais an:
+
+* `AC (Wechselstrom) SSR mit einer maximalen Leistung von 380V bei 25A <https://www.tinkerforge.com/de/shop/solid-state-relay-ac-380v-25a.html>`__
+* `DC (Gleichstrom) SSR mit einer maximalen Leistung von 50V bei 80A <https://www.tinkerforge.com/de/shop/solid-state-relay-dc-50v-80a.html>`__
 
 Technische Spezifikation
 ------------------------
@@ -74,14 +94,14 @@ Technische Spezifikation
 ==================================  ============================================================
 Eigenschaft                         Wert
 ==================================  ============================================================
-Stromverbrauch                      TBDmA
+Stromverbrauch                      <20mA
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
-Maximale Spannung/Strom             TBD
+Kontaktabstand                      25,4mm (1")
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)             TBD: 45 x 45 x 25mm (1,77 x 1,77 x 0,98")
-Gewicht                             TBDg
+Abmessungen (B x T x H)             19 x 33,4 x 5mm (0,75 x 1,31 x 0,2")
+Gewicht                             1.6g
 ==================================  ============================================================
 
 
@@ -91,13 +111,35 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/hardware/solid-state-relay-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/solid_state_relay_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/zipball/master>`__)
+* Datenblatt SSR AC 380V/25A (KS15/D-38Z25-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ks15_ac.pdf?raw=true>`__)
+* Datenblatt SSR DC 50V/80A (KS33/D-50D80-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ks33_dc.pdf?raw=true>`__)
+* Datenblatt SSR Kühlkörper (HF92B-120) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/hf92b_heatsink.pdf?raw=true>`__)
+* Datenblatt SSR Abdeckung (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ssr_cover.pdf?raw=true>`__)
 
 
 Anschlussmöglichkeit
 --------------------
 
-TODO
+Das Bricklet wird mit den Steuerkontakten (Input) des Solid State Relais 
+verbunden. Dabei ist auf die Polung zu achten. Typischerweise ist auf dem Relais 
+ein Kontakt mit einem "+" markiert, dieser Kontakt muss mit dem ebenfalls mit 
+"+" markierten Kontakt des Bricklets verbunden werden.
 
+Die Ausgangssseite des Solid State Relais weist bei Wechselstromrelais keine 
+Polung auf. Typischerweise schaltet man mit dem Relais eine Phase 
+(schwarzer Draht), indem man diesen Draht trennt und beide Enden mit dem Relais 
+verbindet.
+
+Bei Gleichstromrelais ist die Polung des Ausgangs zu berücksichtigen.
+"+" Kennzeichnet hierbei die höhere Spannung. Soll zum Beispiel eine 
+Stromversorgung geschaltet werden, so kann deren "+" Leitung getrennt werden.
+Das Leitungsende, welches anschließend noch einen direkten Kontakt zur 
+Stromversorgung besitzt muss anschließend mit dem "+" Pol des Solid State Relais 
+verbunden werden. Die verbleibende Leitung wird mit dem "-" Pol des Relais 
+verbunden.
+
+.. warning:: Der Umgang mit Wechselspannungen, als auch mit hohen 
+   Gleichspannungen, ist potentiell lebensgefährlich!
 
 .. _solid_state_relay_bricklet_test:
 
@@ -129,81 +171,28 @@ kann anhand der LED des Relais nachvollzogen werden.
 
 |test_pi_ref|
 
+PWM / Dimmen von Lampen
+-----------------------
 
-.. _solid_state_relay_bricklet_case:
+Durch ein häufiges Ein-/ und Ausschalten des Solid State Relais können 
+angeschlossene Lasten geregelt werden (Beispiel: Helligkeit einer Lampe). Das 
+Verhältnis von eingeschalteter Zeit zur ausgeschalteter Zeit bestimmt dabei die 
+Leistung der angeschlossenen Last. Die Frequenz sollte dabei konstant sein und 
+nur die eingeschaltete Zeit variiert werden
+(siehe `Pulsweitenmodulation <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__).
 
-Gehäuse
--------
+Beispiel:
+Eine Heizung soll geregelt werden. Da eine Heizung sehr träge reagiert reicht 
+eine Schaltfrequenz von 1Hz. Dazu schreibt man ein kleines Programm, welches 
+mittels eines Timers 1 mal pro Sekunde die "set_monoflop" Methode des Solid 
+State Relay Bricklets mit einer Zeitdauer von 0-1 Sekunde aufruft 
+(0% - 100% Leistung).
 
-TODO: FIXME
-
-Ein `laser-geschnittenes Gehäuse für das Solid State Relay Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-solid-state-relay-bricklet.html>`__ ist verfügbar.
-
-.. image:: /Images/Cases/bricklet_solid_state_relay_case_350.jpg
-   :scale: 100 %
-   :alt: Gehäuse für Solid State Relay Bricklet
-   :align: center
-   :target: ../../_images/Cases/bricklet_solid_state_relay_case_1000.jpg
-
-Das Gehäuse des Solid State Relay Bricklet wird inklusive Kabelbinder für eine
-Zugentlastung und WAGO Verbindungsklemmen zum Verbinden von Leitungen
-ausgeliefert. Das Gehäuse ist groß genug um sowohl die Zugentlastung als
-auch die WAGO Klemmen im Gehäuse unterzubringen. 
-
-Der interne Aufbau kann wie folgt aussehen (mit einem bzw. beiden Relais
-angeschlossen):
-
-.. image:: /Images/Cases/bricklet_solid_state_relay_case_top_open_1_350.jpg
-   :scale: 100 %
-   :alt: Gehäuse für Solid State Relay Bricklet mit einem Relais angeschlossen
-   :align: center
-   :target: ../../_images/Cases/bricklet_solid_state_relay_case_top_open_1_1000.jpg
-
-.. image:: /Images/Cases/bricklet_solid_state_relay_case_top_open_2_350.jpg
-   :scale: 100 %
-   :alt: Gehäuse für Solid State Relay Bricklet mit zwei Relais angeschlossen
-   :align: center
-   :target: ../../_images/Cases/bricklet_solid_state_relay_case_top_open_2_1000.jpg
-
-Der Außenleiter (braun) wird über das Solid State Relay Bricklet geschaltet.
-Der Schutzleiter (grün-gelb), sowie der Neutralleiter (blau), werden
-mit den WAGO Klemmen durchgeschleift.
-
-Dabei ist unbedingt zu beachten, dass der Schutzleiter länger als die anderen
-beiden Leitungen seien sollte. So ist sichergestellt, das dieser bei
-überbeanspruchter oder beschädigter Zugentlastung als letztes abreißt.
-Wir empfehlen die folgenden Leitungs- bzw. Abisolier-Längen:
-
-.. image:: /Images/Cases/bricklet_solid_state_relay_case_cables_350.jpg
-   :scale: 100 %
-   :alt: Empfohlene Kabellängen
-   :align: center
-   :target: ../../_images/Cases/bricklet_solid_state_relay_case_cable_1000.jpg
-
-Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
-
-* Abstandshalter an Bricklet schrauben
-* Bricklet an Unterteil mit Abstandshalter schrauben
-* Seitenteile (inklusive Zugentlastung) aufbauen
-* zusammengebaute Seitenteile in Unterteil stecken
-* Verkabelung und WAGO Klemmen hinzufügen
-* Kabel mit Kabelbinder für Zugentlastung festziehen
-* Oberteil auf oberen Abstandshalter schrauben
-
-.. warning:: Niemals im geöffneten Gehäuse unter Spannung arbeiten!
-
-
-Die genaue Anordnung der Teile kann der folgenden Explosionszeichnung des Dual 
-Relay Bricklet-Gehäuses entnommen werden:
-
-.. image:: /Images/Exploded/solid_state_relay_exploded_350.png
-   :scale: 100 %
-   :alt: Explosionszeichnung für Solid State Relay Bricklet
-   :align: center
-   :target: ../../_images/Exploded/solid_state_relay_exploded.png
-
-|bricklet_case_hint|
+.. warning::
+   Hohe Schaltfrequenzen führen zu der Produktion von Wärme in einem Solid State 
+   Relais. Zu hohe Frequenzen, bei nicht ausreichender Kühlung, können das 
+   Relais zerstören. Frequenzen im Bereich von 20-30 Hz sollten nicht 
+   überschritten werden.
 
 
 .. _solid_state_relay_bricklet_programming_interface:

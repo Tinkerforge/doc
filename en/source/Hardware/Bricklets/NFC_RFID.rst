@@ -56,6 +56,7 @@ Features
 --------
 
 * Can read and write Mifare Classic and NFC Forum Type 1 and 2 RFID/NFC tags
+* Range is restricted to 10cm (3.94")
 * Operating frequency is 13.56 MHz
 
 
@@ -263,32 +264,6 @@ pages.
    :target: ../../_images/Bricklets/bricklet_nfc_rfid_brickv.png
 
 |test_pi_ref|
-
-.. _nfc_rfid_bricklet_case:
-
-Case
-----
-
-A `laser-cut case for the NFC/RFID Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-nfc-rfid-bricklet.html>`__ is available.
-
-.. image:: /Images/Cases/bricklet_nfc_rfid_case_350.jpg
-   :scale: 100 %
-   :alt: Case for NFC/RFID Bricklet
-   :align: center
-   :target: ../../_images/Cases/bricklet_nfc_rfid_case_1000.jpg
-
-.. include:: NFC_RFID.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
-
-.. image:: /Images/Exploded/nfc_rfid_exploded_350.png
-   :scale: 100 %
-   :alt: Exploded assembly drawing for NFC/RFID Bricklet
-   :align: center
-   :target: ../../_images/Exploded/nfc_rfid_exploded.png
-
-|bricklet_case_hint|
 
 
 .. _nfc_rfid_bricklet_programming_interface:

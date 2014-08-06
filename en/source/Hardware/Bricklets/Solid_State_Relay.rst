@@ -58,8 +58,6 @@ Solid State Relay Bricklet
 Features
 --------
 
-* TODO
-
 
 .. _solid_state_relay_bricklet_description:
 
@@ -129,80 +127,6 @@ switching.
 
 |test_pi_ref|
 
-
-.. _solid_state_relay_bricklet_case:
-
-Case
-----
-
-TODO: FIXME
-
-A `laser-cut case for the Solid State Relay Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-solid-state-relay-bricklet.html>`__ is available.
-
-.. image:: /Images/Cases/bricklet_solid_state_relay_case_350.jpg
-   :scale: 100 %
-   :alt: Case for Solid State Relay Bricklet
-   :align: center
-   :target: ../../_images/Cases/bricklet_solid_state_relay_case_1000.jpg
-
-The case of the Solid State Relay Bricklet is delivered including cable ties
-for a cable relief and WAGO connecting clamps to join wires. The case
-is big enough to accommodate the cable relief as well as the WAGO
-clamps.
-
-The internal construction can look as follows (with one as well as
-two relays connected)
-
-.. image:: /Images/Cases/bricklet_solid_state_relay_case_top_open_1_350.jpg
-   :scale: 100 %
-   :alt: Case for Solid State Relay Bricklet with one relay connected
-   :align: center
-   :target: ../../_images/Cases/bricklet_solid_state_relay_case_top_open_1_1000.jpg
-
-.. image:: /Images/Cases/bricklet_solid_state_relay_case_top_open_2_350.jpg
-   :scale: 100 %
-   :alt: Case for Solid State Relay Bricklet with two relays connected
-   :align: center
-   :target: ../../_images/Cases/bricklet_solid_state_relay_case_top_open_2_1000.jpg
-
-The protective conductor (brown) is switched with the Solid State Relay Bricklet.
-The external conductor (green-yellow) and the neutral conductor (blue)
-are coupled with the WAGO connecting clamps.
-
-It is important that the external conductor is longer then the other cables.
-This way it is assured that the external conductor will be pulled of at last
-if the cable relief is overstrained or defect. We recommend the following 
-length for the cables and the stripping:
-
-.. image:: /Images/Cases/bricklet_solid_state_relay_case_cables_350.jpg
-   :scale: 100 %
-   :alt: Recommended lengths
-   :align: center
-   :target: ../../_images/Cases/bricklet_solid_state_relay_case_cable_1000.jpg
-
-The assembly is easiest if you follow the following steps:
-
-* screw spacers to Bricklet
-* screw Bricklet to bottom plate with spacers
-* build up side plates (including cable relief)
-* plug side plates into bottom plate
-* add cabling and WAGO clamps
-* tie cable ties to cables
-* screw top plate to top spacers
-
-.. warning:: Never work inside the case when components are carrying voltage!
-
-The exact position of each part can be seen in the following exploded assembly 
-drawing of the Solid State Relay Bricklet case:
-
-.. image:: /Images/Exploded/solid_state_relay_exploded_350.png
-   :scale: 100 %
-   :alt: Exploded assembly drawing for Solid State Relay Bricklet
-   :align: center
-   :target: ../../_images/Exploded/solid_state_relay_exploded.png
-
-|bricklet_case_hint|
 
 
 .. _solid_state_relay_bricklet_programming_interface:
