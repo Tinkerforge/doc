@@ -61,7 +61,7 @@ Features
 
 * Bricklet controls Solid State Relays (SSR)
 
-  * With offered SSRs it can switch up to 380V/25A AC or 50V/80A DC
+  * The offered SSRs can switch up to 380V/25A AC or 50V/80A DC
 
 * PWM possible (dimming of lamps, control speed of motors)
 
@@ -71,12 +71,12 @@ Features
 Description
 -----------
 
-With Solid State Relays (SSR) large loads can be galvanically isolated switched. 
-Mechanical relays create switching sparks which cause intereference while 
-switching these loads. Solid state relays do not. Furhermore solid state relays 
+With Solid State Relays (SSR) large loads can be switched while beeing galvanically isolated. 
+Mechanical relays can create switching sparks and other intereferences. 
+Solid state relays do not. Furhermore solid state relays 
 are wearless and allow higher switching frequencies.
 
-The maximum switching capacity depend on the connected solid state relay, which
+The maximum switching capacity depends on the connected solid state relay, which
 is controlled by the Solid State Relay Bricklet.
 
 We offer two compatible solid state relays in our shop:
@@ -116,7 +116,7 @@ Resources
 Connectivity
 ------------
 
-The Bricklet has to be connected to the control inputs of the solid state relay.
+The Bricklet has to be connected to the control inputs of a solid state relay.
 You have to consider the polarity. Connect the SSR input marked with "+" with 
 the "+" marked contact of the Bricklet.
 
@@ -125,9 +125,9 @@ switch the phase wire. To do this you cut the phase wire (black) and connect
 both ends with the relay.
 
 The output of DC solid state relays have a polarity. "+" marks the higher 
-voltage. If for example the power supply should be switched, you have to cut 
+voltage. If for example a power supply should be switched, you have to cut 
 the "+" wire. Each end will be connected to the SSR, whereas the wire directly
-connected to the power supply have to be connected to the "+" pole of the SSR.
+connected to the power supply has to be connected to the "+" pole of the SSR.
 
 .. warning:: The handling with alternating currents as well as high direct 
    currents is potential hazardous!
@@ -174,10 +174,10 @@ controlled.
 
 Example:
 We want to control a heating device. A heating device has a high inertia so a 
-frequency of 1 Hz suffice. By variing the on-time between 0-1 second the power
+frequency of 1 Hz will suffice. By variing the on-time between 0-1 second the power
 can be controlled between 0-100%. To do this we write a small program with a
-timer which calls every second the "set_monoflop" method of the Solid State 
-Relay Bricklet with a on-time between 0-1 seconds.
+timer that calls the "set_monoflop" function of the Solid State Relay Bricklet 
+every second with an on-time between 0-1 seconds.
 
 .. warning::
    High switching frequencies produce heat in the solid state relay. If these 
