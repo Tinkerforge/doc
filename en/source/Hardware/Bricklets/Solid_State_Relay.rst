@@ -15,29 +15,34 @@ Solid State Relay Bricklet
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_solid_state_relay_tilted_350.jpg",
-	               "Bricklets/bricklet_solid_state_relay_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_ssr_w_ssr_350.jpg",
+	               "Bricklets/bricklet_ssr_w_ssr_600.jpg",
 	               "Solid State Relay Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_solid_state_relay_horizontal_100.jpg",
-	             "Bricklets/bricklet_solid_state_relay_horizontal_600.jpg",
+	    tfdocimg("Bricklets/bricklet_ssr_vertical_100.jpg",
+	             "Bricklets/bricklet_ssr_vertical_600.jpg",
 	             "Solid State Relay Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_solid_state_relay_front_100.jpg",
-	             "Bricklets/bricklet_solid_state_relay_front_600.jpg",
+	    tfdocimg("Bricklets/bricklet_ssr_tilted_100.jpg",
+	             "Bricklets/bricklet_ssr_tilted_600.jpg",
 	             "Solid State Relay Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_solid_state_relay_master_100.jpg",
-	             "Bricklets/bricklet_solid_state_relay_master_600.jpg",
-	             "Solid State Relay Bricklet with Master Brick")
+	    tfdocimg("Bricklets/bricklet_ssr_w_cover_100.jpg",
+	             "Bricklets/bricklet_ssr_w_cover_600.jpg",
+	             "Solid State Relay Bricklet with cover")
 	}}
 	{{
-	    tfdocimg("Cases/bricklet_solid_state_relay_case_100.jpg",
-	             "Cases/bricklet_solid_state_relay_case_600.jpg",
-	             "Solid State Relay Bricklet Case")
+	    tfdocimg("Bricklets/bricklet_ssr_w_heatsink_tilted_low_100.jpg",
+	             "Bricklets/bricklet_ssr_w_heatsink_tilted_low_600.jpg",
+	             "Solid State Relay Bricklet with heatsink")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_ssr_w_heatsink_tilted_100.jpg",
+	             "Bricklets/bricklet_ssr_w_heatsink_tilted_600.jpg",
+	             "Solid State Relay Bricklet with heatsink")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_solid_state_relay_brickv_100.jpg",
