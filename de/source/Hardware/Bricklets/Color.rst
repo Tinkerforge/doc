@@ -21,24 +21,14 @@ Color Bricklet
 	               "Color Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_color_vertical_100.jpg",
-	             "Bricklets/bricklet_color_vertical_600.jpg",
-	             "Color Bricklet")
-	}}
-	{{
 	    tfdocimg("Bricklets/bricklet_color_horizontal_100.jpg",
 	             "Bricklets/bricklet_color_horizontal_600.jpg",
 	             "Color Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_color_master_100.jpg",
-	             "Bricklets/bricklet_color_master_600.jpg",
-	             "Color Bricklet mit Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_color_case_built_up_100.jpg",
-	             "Cases/bricklet_color_case_built_up_600.jpg",
-	             "Color Bricklet in Case")
+	    tfdocimg("Bricklets/bricklet_color_in_action_100.jpg",
+	             "Bricklets/bricklet_color_in_action_600.jpg",
+	             "Color Bricklet in Aktion")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_color_brickv_100.jpg",
