@@ -20,9 +20,9 @@ Solid State Relay Bricklet
 	               "Solid State Relay Bricklet")
 	}}
 	{{
-	    tfdocstart("Bricklets/bricklet_ssr_w_master_350.jpg",
-	               "Bricklets/bricklet_ssr_w_master_600.jpg",
-	               "Solid State Relay Bricklet mit Master Brick")
+	    tfdocimg("Bricklets/bricklet_ssr_w_master_100.jpg",
+	             "Bricklets/bricklet_ssr_w_master_600.jpg",
+	             "Solid State Relay Bricklet mit Master Brick")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_ssr_vertical_100.jpg",
