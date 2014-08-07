@@ -62,16 +62,17 @@ Beschreibung
 
 Mit dem Color :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` die 
-`Farbe <http://de.wikipedia.org/wiki/Farbe>`__ , 
+`Farbe <http://de.wikipedia.org/wiki/Farbe>`__,
 `Farbtemperatur <http://de.wikipedia.org/wiki/Farbtemperatur>`__ und die 
-`Beleuchtungsstärke <http://de.wikipedia.org/wiki/Beleuchtungsstärke>`__ von Licht messen. 
-Mit dem Bricklet kann somit die Farbe des reflektierten Lichts von
-Gegenständen gemessen werden.
-Um eine gleichmäßige Beleuchtung mit definierter Farbtemperatur zu schaffen
-ist das Bricklet mit einer per API schaltbaren LED ausgestattet. 
+`Beleuchtungsstärke <http://de.wikipedia.org/wiki/Beleuchtungsstärke>`__ einer
+Lichtquelle messen.
+Mit dem Bricklet kann somit die Farbe eines Gegenständes über dessen
+reflektiertes Licht gemessen werden.
+Um eine gleichmäßige Beleuchtung mit einer definierter Farbtemperatur zu
+erhalten ist das Bricklet mit einer API-schaltbaren LED ausgestattet.
 
 Das Bricklet kann für viele Anwendungen genutzt werden, z.B. für das Sortieren
-von Objekten.
+von Objekten nach deren Farbe.
 
 .. image:: /Images/Bricklets/bricklet_color_wavelength_chart_350.jpg
    :scale: 100 %
@@ -88,7 +89,6 @@ Informationen berechnet das Bricklet die Helligkeit und die Farbtemperatur
 (ebenfalls jeweils 16Bit).
 
 
-
 Technische Spezifikation
 ------------------------
 
@@ -96,7 +96,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            TCS34725
-Stromverbrauch                    0.2mA (LED aus), ~5mA (LED an)
+Stromverbrauch                    0,2mA (LED aus), 5mA (LED an)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dynamikbereich                    3800000:1

@@ -63,12 +63,13 @@ The Color :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to measure `color <http://en.wikipedia.org/wiki/Color>`__,
 `color temperature <http://en.wikipedia.org/wiki/Color_temperature>`__ and
-`illuminance <http://en.wikipedia.org/wiki/Illuminance>`__. 
-Thus the Bricklet can measure the color of the reflected light of objects.
+`illuminance <http://en.wikipedia.org/wiki/Illuminance>`__ of a light source.
+Thus the Bricklet can measure the color of an object via its reflected light.
 To create a defined illumination and color temperature the Bricklet is equipped 
 with a API switchable LED.
 
-The Bricklet can be used for many purposes e.g. the sorting of objects.
+The Bricklet can be used for many purposes, e.g. sorting of objects by their
+color.
 
 .. image:: /Images/Bricklets/bricklet_color_wavelength_chart_350.jpg
    :scale: 100 %
@@ -93,7 +94,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Sensor                            TCS34725
-Current Consumption               0.2mA (with LED off), ~5mA (with LED on)
+Current Consumption               0.2mA (LED off), 5mA (LED on)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dynamic Range                     3800000:1
@@ -153,7 +154,7 @@ If you use long integration times the sensor will react slower. If you need fast
 measurements use a high gain and short integration times.
 
 The desired configuration depends on the application. Depending on the 
-illumination and distance to the measured object other parameters have to be choosen.
+illumination and distance to the measured object other parameters have to be chosen.
 The Brick Viewer can be used to find proper values.
 
 If you want to use the Bricklet in sorting applications it should be mounted in 
