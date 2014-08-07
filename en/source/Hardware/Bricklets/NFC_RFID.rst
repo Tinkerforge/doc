@@ -79,7 +79,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 NFC IC                            PN532
-Current Consumption               max 200mA (Transmit)
+Current Consumption               ca. 115mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Supported tags                    Mifare Classic, NFC Forum Type 1, NFC Forum Type 2

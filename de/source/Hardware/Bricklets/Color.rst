@@ -48,9 +48,6 @@ Color Bricklet
 	{{ tfdocend() }}
 
 
-.. note::
-  Diese Bricklet ist noch in Entwicklung!
-
 Features
 --------
 
@@ -99,7 +96,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            TCS34725
-Stromverbrauch                    TBDmA
+Stromverbrauch                    0.2mA (LED aus), ~5mA (LED an)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dynamikbereich                    3800000:1

@@ -47,9 +47,6 @@ Color Bricklet
 	{{ tfdocend() }}
 
 
-.. note::
- This Bricklet is currently work-in-progress.
-
 Features
 --------
 
@@ -96,7 +93,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Sensor                            TCS34725
-Current Consumption               TBDmA
+Current Consumption               0.2mA (with LED off), ~5mA (with LED on)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dynamic Range                     3800000:1

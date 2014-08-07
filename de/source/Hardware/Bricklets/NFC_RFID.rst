@@ -79,7 +79,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            PN532
-Stromverbrauch                    200mA (Senden)
+Stromverbrauch                    ca. 115mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Unterstütze Tags                  Mifare Classic, NFC Forum Typ 1, NFC Forum Typ 2
