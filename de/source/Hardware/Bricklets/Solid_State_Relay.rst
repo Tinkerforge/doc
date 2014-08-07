@@ -15,29 +15,39 @@ Solid State Relay Bricklet
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_solid_state_relay_tilted_350.jpg",
-	               "Bricklets/bricklet_solid_state_relay_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_ssr_w_ssr_350.jpg",
+	               "Bricklets/bricklet_ssr_w_ssr_600.jpg",
 	               "Solid State Relay Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_solid_state_relay_horizontal_100.jpg",
-	             "Bricklets/bricklet_solid_state_relay_horizontal_600.jpg",
-	             "Solid State Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_solid_state_relay_front_100.jpg",
-	             "Bricklets/bricklet_solid_state_relay_front_600.jpg",
-	             "Solid State Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_solid_state_relay_master_100.jpg",
-	             "Bricklets/bricklet_solid_state_relay_master_600.jpg",
+	    tfdocimg("Bricklets/bricklet_ssr_w_master_100.jpg",
+	             "Bricklets/bricklet_ssr_w_master_600.jpg",
 	             "Solid State Relay Bricklet mit Master Brick")
 	}}
 	{{
-	    tfdocimg("Cases/bricklet_solid_state_relay_case_100.jpg",
-	             "Cases/bricklet_solid_state_relay_case_600.jpg",
-	             "Solid State Relay Bricklet Gehäuse")
+	    tfdocimg("Bricklets/bricklet_ssr_vertical_100.jpg",
+	             "Bricklets/bricklet_ssr_vertical_600.jpg",
+	             "Solid State Relay Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_ssr_tilted_100.jpg",
+	             "Bricklets/bricklet_ssr_tilted_600.jpg",
+	             "Solid State Relay Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_ssr_w_cover_100.jpg",
+	             "Bricklets/bricklet_ssr_w_cover_600.jpg",
+	             "Solid State Relay Bricklet mit Abdeckung")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_ssr_w_heatsink_tilted_low_100.jpg",
+	             "Bricklets/bricklet_ssr_w_heatsink_tilted_low_600.jpg",
+	             "Solid State Relay Bricklet mit Kühlkörper")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_ssr_w_heatsink_tilted_100.jpg",
+	             "Bricklets/bricklet_ssr_w_heatsink_tilted_600.jpg",
+	             "Solid State Relay Bricklet mit Kühlkörper")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_solid_state_relay_brickv_100.jpg",
@@ -147,11 +157,11 @@ Erster Test
 
 |test_connect| (siehe folgendes Bild).
 
-.. image:: /Images/Bricklets/bricklet_solid_state_relay_master_600.jpg
+.. image:: /Images/Bricklets/bricklet_ssr_w_master_600.jpg
    :scale: 100 %
    :alt: Solid State Relay verbunden mit Master Brick
    :align: center
-   :target: ../../_images/Bricklets/bricklet_solid_state_relay_master_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_ssr_w_master_1200.jpg
 
 |test_tab|
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
