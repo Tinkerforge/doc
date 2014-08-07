@@ -40,8 +40,8 @@ NFC/RFID Bricklet
 	             "NFC/RFID Bricklet in Case")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_nfc_rfid_brickv_100.png",
-	             "Bricklets/bricklet_nfc_rfid_brickv.png",
+	    tfdocimg("Bricklets/bricklet_nfc_rfid_brickv_100.jpg",
+	             "Bricklets/bricklet_nfc_rfid_brickv.jpg",
 	             "NFC/RFID Bricklet in Brick Viewer")
 	}}
 	{{
