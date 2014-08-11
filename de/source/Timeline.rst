@@ -22,6 +22,10 @@ Projekte auf `GitHub <https://github.com/Tinkerforge>`__ herausgelesen werden.
 Historie
 --------
 
+.. note:: Die Timeline wird nicht mehr aktualisiert. Wir berichten in unserem
+          `Blog <http://www.tinkerforge.com/de/blog>`__ über unsere aktuellen
+          Projekte und Produkte.
+
 .. csv-table:: 
    :header: "Jahr", "Woche", "Veröffentlichung"
    :widths: 20, 20, 400

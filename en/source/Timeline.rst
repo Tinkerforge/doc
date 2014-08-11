@@ -21,6 +21,10 @@ history of our projects on `GitHub <https://github.com/Tinkerforge>`__.
 History
 -------
 
+.. note:: The timeline is not updated anymore. See our `blog
+          <http://www.tinkerforge.com/en/blog>`__ for news and updates on our
+          current projects and products.
+
 .. csv-table:: 
    :header: "Year", "Week", "Release"
    :widths: 20, 20, 400
