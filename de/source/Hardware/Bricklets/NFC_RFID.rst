@@ -35,6 +35,11 @@ NFC/RFID Bricklet
 	             "NFC/RFID Bricklet mit Schlüsselanhänger")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_nfc_rfid_case_tilted_100.jpg",
+	             "Cases/bricklet_nfc_rfid_case_tilted_600.jpg",
+	             "NFC/RFID Bricklet im Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_nfc_rfid_brickv_100.png",
 	             "Bricklets/bricklet_nfc_rfid_brickv.png",
 	             "NFC/RFID Bricklet im Brick Viewer")
@@ -265,6 +270,38 @@ gelesen/geschrieben werden.
 
 |test_pi_ref|
 
+
+.. _nfc_rfid_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das NFC/RFID Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-nfc-rfid-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_nfc_rfid_case_tilted_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für NFC/RFID Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_nfc_rfid_case_tilted_1000.jpg
+
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
+
+* Stecke lange schrauben durch Unterteil,
+* stecke Bricklet auf Unterteil und schraube es mit Abstandshaltern fest,
+* baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Unterteil und
+* schraube Oberteil mit kleinen Schrauben zum Unterteil. 
+
+Im folgenden befindet sich eine Explosionszeichnung des NFC/RFID Bricklet-Gehäuse:
+
+.. image:: /Images/Exploded/nfc_rfid_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für NFC/RFID Bricklet
+   :align: center
+   :target: ../../_images/Exploded/nfc_rfid_exploded.png
+
+|bricklet_case_hint|
 
 .. _nfc_rfid_bricklet_programming_interface:
 

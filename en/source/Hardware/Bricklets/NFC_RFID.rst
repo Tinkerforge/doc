@@ -35,6 +35,11 @@ NFC/RFID Bricklet
 	             "NFC/RFID Bricklet with keyfob")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_nfc_rfid_case_tilted_100.jpg",
+	             "Cases/bricklet_nfc_rfid_case_tilted_600.jpg",
+	             "NFC/RFID Bricklet with case")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_nfc_rfid_brickv_100.png",
 	             "Bricklets/bricklet_nfc_rfid_brickv.png",
 	             "NFC/RFID Bricklet in Brick Viewer")
@@ -259,6 +264,40 @@ pages.
    :target: ../../_images/Bricklets/bricklet_nfc_rfid_brickv.png
 
 |test_pi_ref|
+
+
+.. _nfc_rfid_bricklet_case:
+
+Case
+----
+
+A `laser-cut case for the NFC/RFID Bricklet
+<https://www.tinkerforge.com/en/shop/cases/nfc-rfid-bricklet.html>`__ is available.
+
+.. image:: /Images/Cases/bricklet_nfc_rfid_case_tilted_350.jpg
+   :scale: 100 %
+   :alt: Case for NFC/RFID Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_nfc_rfid_case_tilted_1000.jpg
+
+The assembly is easiest if you follow the following steps:
+
+* Put long screws through bottom plate,
+* put Bricklet on plate and fasten screws with spacers
+* build up side plates,
+* plug side plates in bottom plate,
+* add top plate onto side plates and
+* add screws to top plate.
+
+Below you can see an exploded assembly drawing of the NFC/RFID Bricklet case:
+
+.. image:: /Images/Exploded/nfc_rfid_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for NFC/RFID Bricklet
+   :align: center
+   :target: ../../_images/Exploded/nfc_rfid_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _nfc_rfid_bricklet_programming_interface:
