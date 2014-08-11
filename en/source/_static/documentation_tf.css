@@ -388,6 +388,11 @@ dl.symbol dt em {
 	font-style: normal;
 }
 
+dl.function sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
 dd p {
 	margin-top: 2px;
 	margin-bottom: 5px;
@@ -404,7 +409,6 @@ table.docutils th {
 	border-bottom: solid 1px transparent;
 	text-align: left;
 }
-
 
 table.docutils tr:nth-child(even) {
 	background-color:#F0F0F0;
