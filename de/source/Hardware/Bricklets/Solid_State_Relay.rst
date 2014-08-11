@@ -139,12 +139,12 @@ verbunden. Dabei ist auf die Polung zu achten. Typischerweise ist auf dem Relais
 ein Kontakt mit einem "+" markiert, dieser Kontakt muss mit dem ebenfalls mit 
 "+" markierten Kontakt des Bricklets verbunden werden.
 
-Die Ausgangsseite des Solid State Relais weist bei Wechselstromrelais keine
+Die Lastseite (Load) des Solid State Relais weist bei Wechselstromrelais keine
 Polung auf. Typischerweise schaltet man mit dem Relais eine Phase 
-(schwarzer Draht), indem man diesen Draht trennt und beide Enden mit dem Relais 
-verbindet.
+(typischerweise schwarzer oder brauner Draht), indem man diesen Draht trennt
+und beide Enden mit dem Relais verbindet.
 
-Bei Gleichstromrelais ist die Polung des Ausgangs zu berücksichtigen.
+Bei Gleichstromrelais ist die Polung der Lastseite zu berücksichtigen.
 "+" Kennzeichnet hierbei die höhere Spannung. Soll zum Beispiel eine 
 Stromversorgung geschaltet werden, so kann deren "+" Leitung getrennt werden.
 Das Leitungsende, welches anschließend noch einen direkten Kontakt zur 
@@ -188,7 +188,7 @@ kann anhand der LED des Relais nachvollzogen werden.
 PWM / Dimmen / Geschwindigkeitssteuerung
 ----------------------------------------
 
-Durch ein häufiges Ein-/ und Ausschalten des Solid State Relais können 
+Durch ein häufiges Ein- und Ausschalten des Solid State Relais können
 angeschlossene Lasten geregelt werden (Beispiel: Helligkeit einer Lampe,
 Geschwindigkeit eines Motors). Das Verhältnis von eingeschalteter Zeit zur 
 ausgeschalteter Zeit bestimmt dabei die Leistung der angeschlossenen Last. Die 

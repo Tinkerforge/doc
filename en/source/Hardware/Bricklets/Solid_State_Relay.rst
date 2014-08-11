@@ -134,20 +134,20 @@ Connectivity
 ------------
 
 The Bricklet has to be connected to the control inputs of a solid state relay.
-You have to consider the polarity. Connect the SSR input marked with "+" with 
+You have to consider the polarity. Connect the SSR input marked with "+" with
 the "+" marked contact of the Bricklet.
 
-The output of the AC solid state relays has no polarity. Typically you want to 
-switch the phase wire. To do this you cut the phase wire (black) and connect 
-both ends with the relay.
+The load terminals of the AC solid state relays has no polarity. Typically you
+want to switch the phase wire. To do this you cut the phase wire (typically
+black or brown) and connect both ends with the relay.
 
-The output of DC solid state relays have a polarity. "+" marks the higher 
-voltage. If for example a power supply should be switched, you have to cut 
+The load terminals of DC solid state relays has a polarity. "+" marks the higher
+voltage. For example, if a power supply should be switched, you have to cut
 the "+" wire. Each end will be connected to the SSR, whereas the wire directly
 connected to the power supply has to be connected to the "+" pole of the SSR.
 
-.. warning:: The handling with alternating currents as well as high direct 
-   currents is potential hazardous!
+.. warning:: The handling of alternating currents and high direct currents is
+             potential hazardous!
 
 .. _solid_state_relay_bricklet_test:
 
