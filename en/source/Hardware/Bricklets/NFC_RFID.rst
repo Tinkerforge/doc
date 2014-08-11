@@ -283,7 +283,7 @@ A `laser-cut case for the NFC/RFID Bricklet
 The assembly is easiest if you follow the following steps:
 
 * Put long screws through bottom plate,
-* put Bricklet on plate and fasten screws with spacers
+* put Bricklet on plate and fasten screws with spacers,
 * build up side plates,
 * plug side plates in bottom plate,
 * add top plate onto side plates and
