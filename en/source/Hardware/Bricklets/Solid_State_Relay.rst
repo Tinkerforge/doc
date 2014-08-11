@@ -67,7 +67,7 @@ Features
 
 * Galvanically isolated switching of large AC or DC loads
 
-  * for example: motors, pumps and lamps
+  * For example: motors, pumps and lamps
 
 * Bricklet controls Solid State Relays (SSR)
 
@@ -81,9 +81,13 @@ Features
 Description
 -----------
 
-With Solid State Relays (SSR) large loads can be switched while beeing galvanically isolated. 
-Mechanical relays can create switching sparks and other intereferences. 
-Solid state relays do not. Furhermore solid state relays 
+The Solid State Relay :ref:`Bricklet <primer_bricklets>` can be used to
+extend :ref:`Bricks <primer_bricks>` by the possibility to switch `solid state
+relays (SSR) <http://en.wikipedia.org/wiki/Solid-state_relay>`__.
+
+With solid state relays large loads can be switched while being galvanically isolated.
+Mechanical relays can create switching sparks and other interferences.
+Solid state relays do not. Furthermore solid state relays
 are wearless and allow higher switching frequencies.
 
 The maximum switching capacity depends on the connected solid state relay, which
@@ -91,8 +95,11 @@ is controlled by the Solid State Relay Bricklet.
 
 We offer two compatible solid state relays in our shop:
 
-* `AC (Alternating Current) SSR with a maximum power of 380V with 25A <https://www.tinkerforge.com/en/shop/solid-state-relay-ac-380v-25a.html>`__
-* `DC (Direct Current) SSR with a maximum power of 50V with 80A <https://www.tinkerforge.com/en/shop/solid-state-relay-dc-50v-80a.html>`__
+* `AC (Alternating Current) SSR with a maximum switching capacity of 25A at 380V
+  <https://www.tinkerforge.com/en/shop/solid-state-relay-ac-380v-25a.html>`__
+* `DC (Direct Current) SSR with a maximum switching capacity of 80A at 50V
+  <https://www.tinkerforge.com/en/shop/solid-state-relay-dc-50v-80a.html>`__
+
 
 Technical Specification
 -----------------------
@@ -103,7 +110,7 @@ Property                               Value
 Current Consumption                    <20mA
 -------------------------------------  ------------------------------------------------------------
 -------------------------------------  ------------------------------------------------------------
-Neccessary Contact Space of SSR Input  25.4mm (1")
+Necessary Contact Space of SSR Input   25.4mm (1")
 -------------------------------------  ------------------------------------------------------------
 -------------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)                 19 x 33.4 x 5mm (0.75 x 1.31 x 0.2")
@@ -184,7 +191,7 @@ controlled.
 
 Example:
 We want to control a heating device. A heating device has a high inertia so a 
-frequency of 1 Hz will suffice. By variing the on-time between 0-1 second the power
+frequency of 1 Hz will suffice. By varying the on-time between 0-1 second the power
 can be controlled between 0-100%. To do this we write a small program with a
 timer that calls the "set_monoflop" function of the Solid State Relay Bricklet 
 every second with an on-time between 0-1 seconds.

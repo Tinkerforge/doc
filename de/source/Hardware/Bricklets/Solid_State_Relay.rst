@@ -67,13 +67,13 @@ Features
 
 * Galvanisch getrenntes Schalten großer Wechselstrom- oder Gleichstrom-Lasten
 
-  * zum Beispiel: Motoren, Pumpen und Lampen
+  * Zum Beispiel: Motoren, Pumpen und Lampen
 
 * Bricklet steuert Solid State Relais (SSR)
 
   * Mit angebotenen SSRs bis zu 380V/25A AC oder 50V/80A DC schaltbar
 
-* PWM möglich (Dimmen von Lampen, Geschindigkeit von Motoren steuern)
+* PWM möglich (Dimmen von Lampen, Geschwindigkeit von Motoren steuern)
 
 
 .. _solid_state_relay_bricklet_description:
@@ -81,19 +81,26 @@ Features
 Beschreibung
 ------------
 
-Mittels Solid State Relais (SSR) können große Lasten, galvanisch getrennt 
-geschaltet werden. Schaltfunken und damit verbundene Störungen, wie sie bei 
-mechanischen Relais auftreten können, treten somit nicht auf. Zudem sind Solid 
+Mit dem Solid State Relay :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` um die Fähigkeit erweitert werden
+`Solid State Relais (SSR) <http://de.wikipedia.org/wiki/Relais#Halbleiterrelais>`__
+zu schalten.
+
+Mittels Solid State Relais können große Lasten, galvanisch getrennt
+geschaltet werden. Schaltfunken und damit verbundene Störungen, wie sie bei
+mechanischen Relais auftreten können, treten somit nicht auf. Zudem sind Solid
 State Relais verschleißfrei und ermöglichen deutlich höhere Schaltfrequenzen.
 
-Die maximale Schaltleistung hängt von dem angeschlossenen Solid State Relais ab, 
-das über das Solid State Relay Bricklet gesteuert wird. 
-
+Die maximale Schaltleistung hängt von dem angeschlossenen Solid State Relais ab,
+das über das Solid State Relay Bricklet gesteuert wird.
 
 Im Shop bieten wir zwei passende Solid State Relais an:
 
-* `AC (Wechselstrom) SSR mit einer maximalen Leistung von 380V bei 25A <https://www.tinkerforge.com/de/shop/solid-state-relay-ac-380v-25a.html>`__
-* `DC (Gleichstrom) SSR mit einer maximalen Leistung von 50V bei 80A <https://www.tinkerforge.com/de/shop/solid-state-relay-dc-50v-80a.html>`__
+* `AC (Wechselstrom) SSR mit einer maximalen Schaltleistung von 25A bei 380V
+  <https://www.tinkerforge.com/de/shop/solid-state-relay-ac-380v-25a.html>`__
+* `DC (Gleichstrom) SSR mit einer maximalen Schaltleistung von 80A bei 50V
+  <https://www.tinkerforge.com/de/shop/solid-state-relay-dc-50v-80a.html>`__
+
 
 Technische Spezifikation
 ------------------------
@@ -104,7 +111,7 @@ Eigenschaft                                  Wert
 Stromverbrauch                               <20mA
 -------------------------------------------  ------------------------------------------------------------
 -------------------------------------------  ------------------------------------------------------------
-Notwendiger Kontaktabstand des SSR Eingangs   25,4mm (1")
+Notwendiger Kontaktabstand des SSR Eingangs  25,4mm (1")
 -------------------------------------------  ------------------------------------------------------------
 -------------------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)                      19 x 33,4 x 5mm (0,75 x 1,31 x 0,2")
@@ -127,12 +134,12 @@ Ressourcen
 Anschlussmöglichkeit
 --------------------
 
-Das Bricklet wird mit den Steuerkontakten (Input) des Solid State Relais 
+Das Bricklet wird mit den Steuerkontakten (Input) des Solid State Relais
 verbunden. Dabei ist auf die Polung zu achten. Typischerweise ist auf dem Relais 
 ein Kontakt mit einem "+" markiert, dieser Kontakt muss mit dem ebenfalls mit 
 "+" markierten Kontakt des Bricklets verbunden werden.
 
-Die Ausgangssseite des Solid State Relais weist bei Wechselstromrelais keine 
+Die Ausgangsseite des Solid State Relais weist bei Wechselstromrelais keine
 Polung auf. Typischerweise schaltet man mit dem Relais eine Phase 
 (schwarzer Draht), indem man diesen Draht trennt und beide Enden mit dem Relais 
 verbindet.

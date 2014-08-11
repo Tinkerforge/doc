@@ -40,8 +40,8 @@ NFC/RFID Bricklet
 	             "NFC/RFID Bricklet im Gehäuse")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_nfc_rfid_brickv_100.png",
-	             "Bricklets/bricklet_nfc_rfid_brickv.png",
+	    tfdocimg("Bricklets/bricklet_nfc_rfid_brickv_100.jpg",
+	             "Bricklets/bricklet_nfc_rfid_brickv.jpg",
 	             "NFC/RFID Bricklet im Brick Viewer")
 	}}
 	{{
@@ -84,7 +84,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            PN532
-Stromverbrauch                    200mA (Senden)
+Stromverbrauch                    115mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Unterstütze Tags                  Mifare Classic, NFC Forum Typ 1, NFC Forum Typ 2
@@ -262,11 +262,11 @@ Erster Test
 Wenn alles wie erwartet funktioniert können nun Tags gescannt und Pages
 gelesen/geschrieben werden.
 
-.. image:: /Images/Bricklets/bricklet_nfc_rfid_brickv.png
+.. image:: /Images/Bricklets/bricklet_nfc_rfid_brickv.jpg
    :scale: 70 %
    :alt: NFC/RFID Bricklet in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_nfc_rfid_brickv.png
+   :target: ../../_images/Bricklets/bricklet_nfc_rfid_brickv.jpg
 
 |test_pi_ref|
 

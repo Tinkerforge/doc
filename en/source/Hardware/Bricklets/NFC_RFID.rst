@@ -40,8 +40,8 @@ NFC/RFID Bricklet
 	             "NFC/RFID Bricklet with case")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_nfc_rfid_brickv_100.png",
-	             "Bricklets/bricklet_nfc_rfid_brickv.png",
+	    tfdocimg("Bricklets/bricklet_nfc_rfid_brickv_100.jpg",
+	             "Bricklets/bricklet_nfc_rfid_brickv.jpg",
 	             "NFC/RFID Bricklet in Brick Viewer")
 	}}
 	{{
@@ -84,7 +84,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 NFC IC                            PN532
-Current Consumption               max 200mA (Transmit)
+Current Consumption               115mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Supported tags                    Mifare Classic, NFC Forum Type 1, NFC Forum Type 2
@@ -257,11 +257,11 @@ First Test
 If everything went as expected you can now scan for tags and read/write
 pages.
 
-.. image:: /Images/Bricklets/bricklet_nfc_rfid_brickv.png
+.. image:: /Images/Bricklets/bricklet_nfc_rfid_brickv.jpg
    :scale: 70 %
    :alt: NFC/RFID Bricklet in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_nfc_rfid_brickv.png
+   :target: ../../_images/Bricklets/bricklet_nfc_rfid_brickv.jpg
 
 |test_pi_ref|
 
