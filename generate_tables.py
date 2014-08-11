@@ -1012,10 +1012,15 @@ def make_index_hardware_device(devices, category_url, use_category_content=True,
             category_name = '_' + category_url
         lis.append(hardware_li.format(device.display_name, category_url, device.url_part_for_hardware_doc, category_name))
 
+    if category_name == '_Bricklet':
+        split = int(len(lis) / 3 + 0.5)
+    else:
+        split = 15
+
     ret = ''
-    while lis != []:
-        li_part = lis[:14]
-        lis = lis[14:]
+    while len(lis) > 0:
+        li_part = lis[:split]
+        lis = lis[split:]
         if use_category_content:
             ret += '\n<div class="category_content_inner">\n<ul>' +'\n'.join(li_part) + '</ul>\n</div>'
         else:
