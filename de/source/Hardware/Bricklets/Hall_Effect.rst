@@ -85,6 +85,7 @@ Stromverbrauch                    1mA
 Funktionsweise                    Omnipolar (Nord- und Südpol werden detektiert)
 Auslösepunkt                      -35/35 Gauss
 Freigabepunkt                     -25/25 Gauss
+Abtastrate                        8Hz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")

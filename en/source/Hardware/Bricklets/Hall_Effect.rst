@@ -85,6 +85,7 @@ Current Consumption               1mA
 Operation                         Omnipolar (North and South pole is detected)
 Trigger Point                     -35/35 Gauss
 Release Point                     -25/25 Gauss
+Sampling Rate                     8Hz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 15 x 5mm (0.98 x 0.59 x 0.19")
