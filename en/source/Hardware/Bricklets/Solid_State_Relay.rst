@@ -191,7 +191,7 @@ controlled.
 
 Example:
 We want to control a heating device. A heating device has a high inertia so a 
-frequency of 1 Hz will suffice. By varying the on-time between 0-1 second the power
+frequency of 1Hz will suffice. By varying the on-time between 0-1 second the power
 can be controlled between 0-100%. To do this we write a small program with a
 timer that calls the "set_monoflop" function of the Solid State Relay Bricklet 
 every second with an on-time between 0-1 seconds.
@@ -199,7 +199,7 @@ every second with an on-time between 0-1 seconds.
 .. warning::
    High switching frequencies produce heat in the solid state relay. If these 
    frequencies are too high, and there is not enough cooling, the relay can be
-   destroyed. Frequencies of 20-30 Hz should not be exceeded.
+   destroyed. The maximum switching frequency with sufficent cooling is 30Hz.
 
 
 .. _solid_state_relay_bricklet_programming_interface:

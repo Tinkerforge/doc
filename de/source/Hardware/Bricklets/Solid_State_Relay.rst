@@ -206,8 +206,8 @@ State Relay Bricklets mit einer Zeitdauer von 0-1 Sekunde aufruft
 .. warning::
    Hohe Schaltfrequenzen führen zu der Produktion von Wärme in einem Solid State 
    Relais. Zu hohe Frequenzen, bei nicht ausreichender Kühlung, können das 
-   Relais zerstören. Frequenzen im Bereich von 20-30 Hz sollten nicht 
-   überschritten werden.
+   Relais zerstören. Die maximale Schaltfrequenz bei ausreichender Kühlung
+   beträgt 30Hz.
 
 
 .. _solid_state_relay_bricklet_programming_interface:
