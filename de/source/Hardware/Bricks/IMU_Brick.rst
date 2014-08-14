@@ -106,6 +106,7 @@ Eigenschaft                                                     Wert
 Beschleunigungs-, Magnetfeld-, Winkelgeschwindigkeitsauflösung  12Bit, 16Bit, 16Bit
 Auflösung der Roll-, Nick- (Pitch), Gier- (Yaw) Winkel          0,01° Schritte
 Quaternionenauflösung                                           32Bit
+Abtastrate                                                      500Hz
 --------------------------------------------------------------  ------------------------------------------------------------
 --------------------------------------------------------------  ------------------------------------------------------------
 Bricklet Anschlüsse                                             2

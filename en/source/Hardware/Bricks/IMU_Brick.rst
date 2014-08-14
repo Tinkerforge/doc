@@ -105,6 +105,7 @@ Property                                             Value
 Acceleration, Magnetic, Angular Velocity Resolution  12bit, 16bit, 16bit
 Roll, Pitch, Yaw Resolution                          0.01° steps
 Quaternion Resolution                                32bit
+Sampling Rate                                        500Hz
 ---------------------------------------------------  ------------------------------------------------------------
 ---------------------------------------------------  ------------------------------------------------------------
 Bricklet Ports                                       2
