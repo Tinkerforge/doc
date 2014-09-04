@@ -30,12 +30,18 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
+Dimensions (W x D x H)            40 x 40 x 16mm (1.57 x 1.57 x 0.63")
+Weight                            TBD
+Current Consumption               TBD
 ================================  ============================================================
 
 
 Resources
 ---------
 
+* Schematic (`Download <https://github.com/Tinkerforge/red-brick/raw/master/hardware/red-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/red_brick_dimensions.png>`__)
+* Linux image and hardware design files (`Download <https://github.com/Tinkerforge/red-brick/zipball/master>`__)
 
 FAQ
 ---
