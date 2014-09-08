@@ -11,6 +11,8 @@
 
 .. role:: led-strip-black
 
+.. role:: led-strip-white
+
 .. role:: led-pixel-red
 
 .. role:: led-pixel-green
@@ -274,17 +276,47 @@ Free Bricklet Ports               Maximum number of RGB LEDs
 ================================  ============================================================
 
 
-.. _led_strip_bricklet_led_strips:
+.. _led_strip_bricklet_ws2812b_led_strips:
 
-LED Strips
-----------
+WS2812B LED Strips
+------------------
 
 There is no general color code for LED strips. Especially sometimes the color 
-codes are against any agreements. In this example the black wire is
-:led-strip-black:`5V`, green is :led-strip-green:`clock` (WS2801 only), red is
+codes are against any agreements. In this WS2812B LED strip example the red 
+wire is :led-strip-red:`5V`, green is :led-strip-green:`data` the white wire is 
+:led-strip-white:`ground`.
+
+Connect data of the first strip to the LED Strip Bricklet and
+connect ground of your power supply to it. Pay attention to connect the data 
+**input** of the first strip to the data **output** of the LED Strip Bricklet.
+
+If you want to measure your supply voltage connect 5V to the Bricklet, too.
+You can connect more LED strips to the first strip in series (have the 
+:ref:`RAM constraints <led_strip_bricklet_ram_constraints>` in mind).
+
+It is not sufficient to power the LED strips only at one point. We recommend to
+feed power to the strip at least every two meters. This can be done
+by connecting a cable between the strip and the power supply for each supply 
+point. This will reduce the resistance and minimize the conduction losses.
+See the following image as an example for it.
+
+.. image:: /Images/Bricklets/bricklet_led_strip_ws2812b_wiring_600.png
+   :scale: 100 %
+   :alt: LED Strip Bricklet wiring for WS2812B LED Strip
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_ws2812b_wiring_1500.png
+
+.. _led_strip_bricklet_ws2801_led_strips:
+
+WS2801 LED Strips
+-----------------
+
+There is no general color code for LED strips. Especially sometimes the color 
+codes are against any agreements. In this WS2801 LED strip example the black 
+wire is :led-strip-black:`5V`, green is :led-strip-green:`clock`, red is
 :led-strip-red:`data` and the blue wire is :led-strip-blue:`ground`.
 
-Connect clock (WS2801 only) and data of the first strip to the LED Strip Bricklet and
+Connect clock and data of the first strip to the LED Strip Bricklet and
 connect ground of your power supply to it. Pay attention to connect the clock 
 and data **input** of the first strip to the clock and data **output** of the
 LED Strip Bricklet.
@@ -301,7 +333,7 @@ See the following image as an example for it.
 
 .. image:: /Images/Bricklets/bricklet_led_strip_strip_wiring_600.jpg
    :scale: 100 %
-   :alt: LED Strip Bricklet wiring for LED Strip
+   :alt: LED Strip Bricklet wiring for WS2801 LED Strip
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_strip_wiring_1500.jpg
 

@@ -676,6 +676,10 @@ div.partnerdisclaimer {
 	background-color: #383838;
 }
 
+.led-strip-white {
+	background-color: #d6d7db;
+}
+
 .led-pixel-red {
 	color: white;
 	background-color: #a9241b;

@@ -11,6 +11,8 @@
 
 .. role:: led-strip-black
 
+.. role:: led-strip-white
+
 .. role:: led-pixel-red
 
 .. role:: led-pixel-green
@@ -275,19 +277,58 @@ Freie Bricklet Ports              Maximale Anzahl an RGB LEDs
 ================================  ==================================
 
 
-.. _led_strip_bricklet_led_strips:
 
-LED Steifen
------------
+.. _led_strip_bricklet_ws2812b_led_strips:
+
+WS2812B LED Steifen
+-------------------
 
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
-Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem Beispiel
-ist der schwarze Draht :led-strip-black:`5V`, grün die
-:led-strip-green:`Taktleitung` (nur WS2801),
+Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem WS2812B
+LED Streifen Beispiel ist der rote Draht :led-strip-black:`5V`, grün die
+:led-strip-green:`Datenleitungleitung` und der weiße Draht ist 
+:led-strip-white:`Masse`.
+
+Als erstes wird die Datenleitung des ersten
+LED Streifens und Masse der Spannungsversorgung mit dem LED Strip Bricklet
+verbunden. Dabei muss darauf geachtet werden, dass der 
+Daten\ **eingang** des ersten Streifen mit 
+Daten\ **ausgang** des LED Strip Bricklets verbunden wird.
+
+Falls die Spannung der Versorgung gemessen werden soll, müssen die 5V der
+Stromversorgung mit dem LED Strip Bricklet verbunden werden. Es können weitere
+LED Streifen in Reihe (hintereinander) an den ersten LED Streifen angeschlossen 
+werden (dabei müssen die
+:ref:`RAM Beschränkungen <led_strip_bricklet_ram_constraints>` beachtet werden).
+
+Es ist nicht ausreichend die LED Streifen nur an deren Anfang zu versorgen.
+Wir empfehlen mindestens alle 2 Meter neu einzuspeisen. Dazu kann zum Beispiel
+pro Einspeisepunkt ein eigenes Kabel zur Stromversorgung geführt werden. 
+Somit wird der elektrische Widerstand reduziert und Leitungsverluste minimiert.
+Das nachfolgende Bild zeigt ein Beispiel.
+
+.. image:: /Images/Bricklets/bricklet_led_strip_ws2812b_wiring_600.png
+   :scale: 100 %
+   :alt: LED Strip Bricklet Verkabelung für WS2812B LED Streifen
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_led_strip_ws2812b_wiring_1500.png
+
+
+
+
+.. _led_strip_bricklet_ws2801_led_strips:
+
+WS2801 LED Steifen
+------------------
+
+Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
+Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem WS2801 
+LED Strifen Beispiel ist der schwarze Draht :led-strip-black:`5V`, grün die
+:led-strip-green:`Taktleitung`,
 rot die :led-strip-red:`Datenleitung` und der
 blaue Draht ist :led-strip-blue:`Masse`.
 
-Als erstes werden die Takt- (nur WS2801) und Datenleitung des ersten
+Als erstes werden die Takt- und Datenleitung des ersten
 LED Streifens und Masse der Spannungsversorgung mit dem LED Strip Bricklet
 verbunden. Dabei muss darauf geachtet werden, dass der Takt- und
 Daten\ **eingang** des ersten Streifen mit dem Takt- und
@@ -307,7 +348,7 @@ Das nachfolgende Bild zeigt ein Beispiel.
 
 .. image:: /Images/Bricklets/bricklet_led_strip_strip_wiring_600.jpg
    :scale: 100 %
-   :alt: LED Strip Bricklet Verkabelung für LED Streifen
+   :alt: LED Strip Bricklet Verkabelung für WS2801 LED Streifen
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_strip_wiring_1500.jpg
 
