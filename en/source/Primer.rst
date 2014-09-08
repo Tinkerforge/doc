@@ -72,9 +72,9 @@ Bricks
        :align: center
        :target: _images/Bricks/brick_imu_tilted_front_800.jpg
 
-Bricks are 4 x 4cm (1.57 x 1.57") modules can be controlled by devices, such as
-(embedded) PCs, over its Mini-USB connector. Every Brick basically performs one 
-task. There are Bricks that perform complex sensor tasks (e.g. 
+Bricks are 4 x 4cm (1.57 x 1.57") modules that can be controlled by devices, 
+such as (embedded) PCs, over their Mini-USB connector. Every Brick basically 
+performs one task. There are Bricks that perform complex sensor tasks (e.g. 
 :ref:`IMU Brick <imu_brick>`), communicate (e.g. 
 :ref:`Master Brick <master_brick>`) and drive motors 
 (e.g. :ref:`DC Brick <dc_brick>`).
