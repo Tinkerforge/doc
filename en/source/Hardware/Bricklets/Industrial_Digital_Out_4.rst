@@ -89,12 +89,12 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               2mA (per Output)
+Current Consumption               2mA (per active output pin)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 External Voltage Supply           Up to 36V
 Output Type                       Four operational amplifier outputs
-Maximum Output Current            25mA
+Maximum Output Current            25mA (per output pin)
 Isolation                         5000Vrms (optocoupler value)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------

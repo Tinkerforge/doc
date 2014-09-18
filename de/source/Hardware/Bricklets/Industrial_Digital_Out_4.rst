@@ -90,12 +90,12 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    2mA (pro Ausgang)
+Stromverbrauch                    2mA (pro aktivem Ausgang)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Externe Spannungsversorgung       Bis zu 36V
 Ausgangstyp                       Vier Operationsverstärker-Ausgänge
-Maximaler Ausgangsstrom           25mA
+Maximaler Ausgangsstrom           25mA (pro Ausgang)
 Isolation                         5000Vrms (Optokoppler Datenblattangabe)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
