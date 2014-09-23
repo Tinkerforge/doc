@@ -160,12 +160,16 @@ Callback ID, der Callback Funktion und optionalen Benutzer Daten:
 
 .. code-block:: php
 
+    <?php
+
     function my_callback($param)
     {
         echo $param . "\n";
     }
 
     $ipcon->registerCallback(IPConnection::CALLBACK_EXAMPLE, 'my_callback');
+
+    ?>
 
 Die verfügbaren Konstanten mit den zugehörigen Callback Funktionssignaturen
 werden im Folgenden beschrieben.
@@ -175,7 +179,7 @@ werden im Folgenden beschrieben.
 
  .. code-block:: php
 
-  void callback(string $uid, string $connectedUid, char $position, array $hardwareVersion, array $firmwareVersion, int $deviceIdentifier, int $enumerationType [, mixed $userData])
+  <?php   void callback(string $uid, string $connectedUid, char $position, array $hardwareVersion, array $firmwareVersion, int $deviceIdentifier, int $enumerationType [, mixed $userData])   ?>
 
  Der Callback empfängt sieben Parameter:
 
@@ -221,7 +225,7 @@ werden im Folgenden beschrieben.
 
  .. code-block:: php
 
-  void callback(int $connectReason [, mixed $userData])
+  <?php   void callback(int $connectReason [, mixed $userData])   ?>
 
  Dieser Callback wird aufgerufen wenn die IP Connection eine Verbindung
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
@@ -235,7 +239,7 @@ werden im Folgenden beschrieben.
 
  .. code-block:: php
 
-  void callback(int $disconnectReason [, mixed $userData])
+  <?php   void callback(int $disconnectReason [, mixed $userData])   ?>
 
  Dieser Callback wird aufgerufen wenn die Verbindung der IP Connection
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,
