@@ -169,7 +169,7 @@ ELRO                AB440D                               Dimmer                 
 |nbsp|              AB440W                               Outdoor Switch                     A
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
-|nbsp|              HE801S                               Switch Set                         B
+ELRO Home Easy      HE801S                               Switch Set                         B
 |nbsp|              HE801SA                              Switch Set                         C
 |nbsp|              HE801SF                              Switch Set                         B
 |nbsp|              HE802SA                              Dimmer Set                         B
