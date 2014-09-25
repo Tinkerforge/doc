@@ -170,7 +170,6 @@ ELRO                AB440D                               Dimmer                 
 |nbsp|              AB440W                               Außenschalter                      A
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
-ELRO Home Easy      HE800S                               Schalter Set                       B
 |nbsp|              HE801S                               Schalter Set                       B
 |nbsp|              HE801SA                              Schalter Set                       C
 |nbsp|              HE801SF                              Schalter Set                       B
