@@ -124,6 +124,7 @@ Stromversorgungen wie die Step-Down Power Supply.
 
 
 **Die Extension ist nicht konfiguriert**:
+
 Schließe ein einzelnes Master Brick an den PC an und öffne den Brick Viewer.
 Nachdem das Master Brick Tab angezeigt wird, stecke die Extension auf das Master 
 Brick und öffne das Tab. Klicke auf "Configure", wähle Extension 0 und den Typ 
