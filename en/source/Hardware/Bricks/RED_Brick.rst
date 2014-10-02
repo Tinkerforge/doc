@@ -17,11 +17,27 @@ RED Brick
 Features
 --------
 
+* Executes high level languages standalone
 
 .. _red_brick_description:
 
 Description
 -----------
+
+The Rapid Embedded Development Brick (RED Brick) can directly control
+Bricks and Bricklets (standalone). The currently supported languages
+include C/C++, C#, Delphi/Lazarus, Java, JavaScript, MATLAB/Octave, 
+Perl, PHP, Python, Ruby, Shell, Visual Basic .NET.
+
+A program that controls Bricks and Bricklets can be written and tested 
+on a normal PC/MAC and later transferred to the RED Brick, where it can
+then be executed without any changes.
+
+This approach enables a very easy and very fast solution for embedded 
+programming. To our knowledge there is no other solution available that is
+even remotely comparable.
+
+
 
 
 Technical Specifications
@@ -74,12 +90,12 @@ The RED Brick has a blue, a red and a green LED.
 The blue LED is directly connected to the power supply and is on if the 
 RED Brick is powered.
 
-The red LED shows if an error is present. If the red LED is on at startup, no 
-image could be found. There may be no sd card inserted or there is no 
-valid image on the sd card.
+The red LED shows if an error is present. If the red LED stays on during
+startup, no image could be found. There may be no sd card inserted or 
+there is no valid image on the sd card.
 
 The green LED shows the current state. If on startup the red LED is off
-and the green LED does not turn on, Linux could start booting. During 
+and the green LED does not turn on, Linux couldn't start booting. During
 boottime the green LED turns on. After the RED Brick has booted up
 and all of the services are available the green led starts showing a
 heartbeat.
