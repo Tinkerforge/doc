@@ -67,7 +67,7 @@ Description
 
 With the DC :ref:`Brick <primer_bricks>` you are able to control one 
 `DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`__
-(max. **28V** and **5A**) over **USB**. With the provided API for many
+(max. **28V** and **5A** (peak)) over **USB**. With the provided API for many
 :ref:`programming languages<dc_brick_programming_interface>` you can control the 
 direction, velocity and acceleration of the connected motor.
 

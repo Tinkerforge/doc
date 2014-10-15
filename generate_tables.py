@@ -140,8 +140,8 @@ class Product:
 
 brick_descriptions = {
 'dc': {
-    'en': 'Drives one brushed DC motor with max. 28V and 5A',
-    'de': 'Steuert einen DC Motor mit max. 28V und 5A'
+    'en': 'Drives one brushed DC motor with max. 28V and 5A (peak)',
+    'de': 'Steuert einen DC Motor mit max. 28V und 5A (Peak)'
     },
 'debug': {
     'en': 'For Firmware Developers: JTAG and serial console',
