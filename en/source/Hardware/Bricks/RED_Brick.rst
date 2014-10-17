@@ -11,31 +11,66 @@ RED Brick
 =========
 
 .. note::
- This Brick is currently work-in-progress.
+ This Brick is under development and not yet available. Planned release: Dec. 2014. You can find news in our `blog <http://www.tinkerforge.com/en/blog/>`__.
+
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricks/brick_red_prototype_350.jpg",
+	               "Bricks/brick_red_prototype_600.jpg",
+	               "RED Brick Prototype")
+	}}
+	{{ tfdocend() }}
 
 
 Features
 --------
 
-* Executes high level languages standalone
+* Controls other Bricks and Bricklets
+* Executes directly your program
+* Supports nearly every language
 
 .. _red_brick_description:
 
 Description
 -----------
 
-The Rapid Embedded Development Brick (RED Brick) can directly control
-Bricks and Bricklets (standalone). The currently supported languages
-include C/C++, C#, Delphi/Lazarus, Java, JavaScript, MATLAB/Octave, 
-Perl, PHP, Python, Ruby, Shell, Visual Basic .NET.
+.. note::
+ This Brick is under development and not yet available. Planned release: Dec. 2014. You can find news in our `blog <http://www.tinkerforge.com/en/blog/>`__.
+
+The Rapid Embedded Development Brick (RED Brick) can control other
+Bricks and Bricklets. Currently supported languages as: C/C++, C#, 
+Delphi/Lazarus, Java, JavaScript, MATLAB/Octave, Perl, PHP, Python, Ruby, Shell 
+and Visual Basic .NET can be directly executed on the Brick.
 
 A program that controls Bricks and Bricklets can be written and tested 
-on a normal PC/MAC and later transferred to the RED Brick, where it can
-then be executed without any changes.
+on a normal PC/Mac. Afterwards the program can be transferred to the RED Brick
+by the press of a button and can be executed without any changes. Multiple 
+programs can be executed simultaneously, whereas their execution can be 
+configurated (permanently execution, every X seconds etc.) and monitored.
 
 This approach enables a very easy and very fast solution for embedded 
 programming. To our knowledge there is no other solution available that is
-even remotely comparable.
+even remotely comparable. 
+
+For each supported programming language the Tinkerforge API and commonly used 
+software libraries are preinstalled on the system. Other necessary libraries can 
+be manually installed.
+
+The Brick is equipped with a Micro-HDMI connector, such that it can also used 
+for programs with graphical user interface. A onboard USB 2.0 Host connector 
+supports input and pointing devices, such that keyboards, mouses or touchscreens 
+can be also connected and used.
+
+With an Ethernet Master Extension the RED Brick can be extended by an Ethernet 
+interface. The RS485 Master Extension is also supported by the Brick and let you 
+interconnect the controlling RED Brick with other remote stacks of Bricks and 
+Bricklets.
+
+Advanced users can use the module with full access on the underlying Debian 
+system. Over a GPIO FPC header, the export user can directly access 
+different processor pins and can use them in his own developments.
 
 
 
@@ -47,8 +82,8 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Dimensions (W x D x H)            40 x 40 x 16mm (1.57 x 1.57 x 0.63")
-Weight                            TBD
-Current Consumption               TBD
+Weight                            TBD g
+Current Consumption               TBD mA
 ================================  ============================================================
 
 
