@@ -11,7 +11,7 @@ RED Brick
 =========
 
 .. note::
-  Dieses Brick befindet sich noch in Entwicklung und ist noch nicht erhältlich. Geplanter Verkaufsstart: Dez 2014. Aktuelle Informationen lassen sich in unserem `Blog <http://www.tinkerforge.com/de/blog/>`__ finden.
+  Dieses Brick befindet sich noch in Entwicklung und ist noch nicht erhältlich
 
 .. raw:: html
 
@@ -37,7 +37,19 @@ Beschreibung
 ------------
 
 .. note::
-  Dieses Brick befindet sich noch in Entwicklung und ist noch nicht erhältlich. Geplanter Verkaufsstart: Dez 2014. Aktuelle Informationen lassen sich in unserem `Blog <http://www.tinkerforge.com/de/blog/>`__ finden.
+  Dieses Brick befindet sich noch in Entwicklung und ist noch nicht erhältlich. Geplanter Verkaufsstart: Dez 2014. 
+
+  Aktuelle Informationen lassen sich in unserem `Blog <http://www.tinkerforge.com/de/blog/>`__ finden. Bisherige Blogposts:
+
+  * `Tinkerforge goes Stand-Alone aka RED Brick <http://www.tinkerforge.com/de/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
+  * `RED Brick Leiterplatten angekommen <http://www.tinkerforge.com/de/blog/2014/4/10/red-brick-leiterplatten-angekommen>`__
+  * `Neuigkeiten zum RED Brick <http://www.tinkerforge.com/de/blog/2014/5/13/neuigkeiten-zum-red-brick>`__
+  * `RED Brick: Tut es? Oder tut es nicht? <http://www.tinkerforge.com/de/blog/2014/5/21/red-brick:-tut-es-oder-tut-es-nicht>`__
+  * `RED Brick Software-Infrastruktur <http://www.tinkerforge.com/de/blog/2014/6/20/red-brick-software-infrastruktur>`__
+  * `RED Brick im EMV Labor <http://www.tinkerforge.com/de/blog/2014/8/28/red-brick-im-emv-labor>`__
+  * `RED Brick Zustandsbericht <http://www.tinkerforge.com/de/blog/2014/10/15/neuigkeiten-zum-red-brick>`__
+
+
 
 Das Rapid Embedded Development Brick (RED Brick) kann andere Bricks und 
 Bricklets steuern. Die aktuell unterstützten Sprachen: C/C++, C#, 
@@ -88,17 +100,56 @@ Stromverbrauch                    TBDmA
 Ressourcen
 ----------
 
+* Schaltplan (`Download <https://github.com/Tinkerforge/master-brick/raw/master/hardware/master-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/red_brick_dimensions.png>`__)
+* Linux Image und Platinenlayout (`Download <https://github.com/Tinkerforge/red-brick/zipball/master>`__)
 
-.. _red_brick_connectivity:
 
-Anschlussmöglichkeit
+.. _red_brick_hardware:
+
+Hardwarebeschreibung
 --------------------
 
+Das RED Brick ist mit einem 1Ghz Cortex A8 mit 512MB DDR3 SDRAM ausgestattet.
+Dazu kommen noch diverse Schnittstellen
+
+Power Button
+^^^^^^^^^^^^
+
+LEDs
+^^^^
+
+
+Linux Images
+------------
+
+Im Hintergrund läuft ein von uns angepasstes Debian Image. Dieses ist in zwei 
+Versionen verfügbar. Das Full Image TODO. Das TODO Image.
+
+Full Image
+^^^^^^^^^^
+
+X Image
+^^^^^^^
 
 .. _red_brick_test:
 
 Erster Test
 -----------
+
+.. _red_brick_usage:
+
+Nutzung des RED Bricks
+----------------------
+
+Programme ausführen
+^^^^^^^^^^^^^^^^^^^
+TODO Link auf RED Brick Tutorial
+
+Ethernet konfigurieren
+^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 
 .. _red_brick_programming_interface:

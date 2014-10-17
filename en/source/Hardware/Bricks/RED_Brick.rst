@@ -11,7 +11,7 @@ RED Brick
 =========
 
 .. note::
- This Brick is under development and not yet available. Planned release: Dec. 2014. You can find news in our `blog <http://www.tinkerforge.com/en/blog/>`__.
+ This Brick is under development and not yet available. 
 
 .. raw:: html
 
@@ -37,7 +37,17 @@ Description
 -----------
 
 .. note::
- This Brick is under development and not yet available. Planned release: Dec. 2014. You can find news in our `blog <http://www.tinkerforge.com/en/blog/>`__.
+ This Brick is under development and not yet available. Planned release: Dec. 2014. 
+
+ You can find news in our `blog <http://www.tinkerforge.com/en/blog/>`__.  Blog posts so far:
+
+ * `Tinkerforge goes Stand-Alone aka RED Brick <http://www.tinkerforge.com/en/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
+ * `RED Brick circuit boards arrived <http://www.tinkerforge.com/en/blog/2014/4/10/red-brick-circuit-boards-arrived>`__
+ * `RED Brick news <http://www.tinkerforge.com/en/blog/2014/5/13/red-brick-news>`__
+ * `RED Brick: Does it work? <http://www.tinkerforge.com/en/blog/2014/5/23/red-brick:-does-it-work>`__
+ * `RED Brick Software Infrastructure <http://www.tinkerforge.com/en/blog/2014/6/20/red-brick-software-infrastructure>`__
+ * `RED Brick in EMC laboratory <http://www.tinkerforge.com/en/blog/2014/8/28/red-brick-in-emc-laboratory>`__
+ * `RED Brick status report <http://www.tinkerforge.com/en/blog/2014/10/16/red-brick-status-report>`__
 
 The Rapid Embedded Development Brick (RED Brick) can control other
 Bricks and Bricklets. Currently supported languages as: C/C++, C#, 
@@ -102,21 +112,17 @@ FAQ
 * A: The ``cdc_acm`` driver has to be loaded for this to work.
 
 
-.. _red_brick_connectivity:
+.. _red_brick_hardware:
 
-Connectivity
-------------
+Hardware Description
+--------------------
+TODO: Image of each part in each section
 
-
-.. _red_brick_test:
-
-Test your RED Brick
--------------------
-
-.. _red_brick_leds:
+Power Button
+^^^^^^^^^^^^
 
 LEDs
-----
+^^^^
 
 TODO: Image of RED Brick with arrows to LEDs
 
@@ -138,6 +144,60 @@ heartbeat.
 You can change the function of the green LED after bootup to `show
 cpu or sd card usage <TODO>`__ instead of a heartbeat.
 
+SD Card Slot
+^^^^^^^^^^^^
+TODO: Link images
+
+USB 2.0 Host Connector
+^^^^^^^^^^^^^^^^^^^^^^
+TODO: what kind of devices are usable?
+
+USB Mini Connector
+^^^^^^^^^^^^^^^^^^
+TODO: used for configuration
+
+Micro-HDMI Connector
+^^^^^^^^^^^^^^^^^^^^
+
+Brick Stack Connector
+^^^^^^^^^^^^^^^^^^^^^
+
+
+RED Brick Software Images
+-------------------------
+
+Im Hintergrund läuft ein von uns angepasstes Debian Image. Dieses ist in zwei 
+Versionen verfügbar. Das Full Image TODO. Das TODO Image.
+
+Full Image
+^^^^^^^^^^
+
+X Image
+^^^^^^^
+
+Configuration (in Brick Viewer)
+-------------------------------
+TODO: Describe configuration in Brick Viewer
+
+Program Upload and Execution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TODO: Link to Tutorial
+
+Ethernet
+^^^^^^^^
+
+RS485
+^^^^^
+
+
+
+
+.. _red_brick_test:
+
+Test your RED Brick
+-------------------
+
+.. _red_brick_leds:
 
 .. _red_brick_programming_interface:
 
