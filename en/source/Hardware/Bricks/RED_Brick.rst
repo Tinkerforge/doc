@@ -104,22 +104,31 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/red_brick_dimensions.png>`__)
 * Linux image and hardware design files (`Download <https://github.com/Tinkerforge/red-brick/zipball/master>`__)
 
-FAQ
----
+.. _red_brick_test:
 
-* Q: I connected the RED Brick to my Linux PC. Why is there no ``/dev/ttyACM0``
-  device to access its serial console?
-* A: The ``cdc_acm`` driver has to be loaded for this to work.
+Quickstart / Test your RED Brick
+--------------------------------
+
+TODO: description of unboxing, sd card, connecting, software installation
+Goal: see RED Brick in Brick Viewer, link to Brick Viewer description
+
+
 
 
 .. _red_brick_hardware:
 
 Hardware Description
 --------------------
-TODO: Image of each part in each section
+TODO: Image of each hardware part in each section
 
 Power Button
 ^^^^^^^^^^^^
+
+TODO: RED Brick is directly on after connecting power, can be shut down and
+powered on with btn. no support for software shutdown when pressing the button.
+
+
+.. _red_brick_leds:
 
 LEDs
 ^^^^
@@ -146,42 +155,72 @@ cpu or sd card usage <TODO>`__ instead of a heartbeat.
 
 SD Card Slot
 ^^^^^^^^^^^^
-TODO: Link images
+TODO: Link software images section, supported card sizes and types
 
 USB 2.0 Host Connector
 ^^^^^^^^^^^^^^^^^^^^^^
-TODO: what kind of devices are usable?
+TODO: what kind of devices are supported? Supported devies List? Power output
 
 USB Mini Connector
 ^^^^^^^^^^^^^^^^^^
-TODO: used for configuration
+TODO: used for configuration over API (Brickv)
 
 Micro-HDMI Connector
 ^^^^^^^^^^^^^^^^^^^^
+TODO: only in full image, screen resolution?
 
 Brick Stack Connector
 ^^^^^^^^^^^^^^^^^^^^^
+
+TODO: text, can stack up to 8 Bricks, 2 Extensions
+
+GPIO Header
+^^^^^^^^^^^
+
+TODO: FPC, for experts, pin description, link demo programm
+
+Power Supply
+^^^^^^^^^^^^
+
+TODO: needs X Watts, power over USB or Stack
+
 
 
 RED Brick Software Images
 -------------------------
 
-Im Hintergrund läuft ein von uns angepasstes Debian Image. Dieses ist in zwei 
-Versionen verfügbar. Das Full Image TODO. Das TODO Image.
+The RED Brick software image is placed on a Micro SD-Card. It is a modified
+Debian image and available in two different versions:
 
 Full Image
 ^^^^^^^^^^
 
-X Image
-^^^^^^^
+ * with X
+ * Download Link
+ * minimum card size
+ * which programs installed?
+
+Fast Boot Image
+^^^^^^^^^^^^^^^
+
+ * no X
+ * boots very fast
+ * limited support for ...
+ * minimum card size
+ * Download Link
+ * which programs installed?
 
 Configuration (in Brick Viewer)
 -------------------------------
-TODO: Describe configuration in Brick Viewer
+
+This section describes the configuration of the RED Brick with the Brick Viewer
+Software.
+
+TODO: Necessary software, connecting process, tab description
 
 Program Upload and Execution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TODO: Link to Tutorial
+TODO: Describe GUI and link to RED Brick Tutorial
 
 Ethernet
 ^^^^^^^^
@@ -189,15 +228,25 @@ Ethernet
 RS485
 ^^^^^
 
+Shell (Remote Access)
+^^^^^^^^^^^^^^^^^^^^^
+
+TODO: HINT to ACM0, Link Beginners shell tutorial
+
+Version and Library Management
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _red_brick_faq:
+
+FAQ
+---
+
+* Q: I connected the RED Brick to my Linux PC. Why is there no ``/dev/ttyACM0``
+  device to access its serial console?
+* A: The ``cdc_acm`` driver has to be loaded for this to work.
 
 
 
-.. _red_brick_test:
-
-Test your RED Brick
--------------------
-
-.. _red_brick_leds:
 
 .. _red_brick_programming_interface:
 
