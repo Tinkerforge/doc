@@ -159,7 +159,8 @@ TODO: Link software images section, supported card sizes and types
 
 USB 2.0 Host Connector
 ^^^^^^^^^^^^^^^^^^^^^^
-TODO: what kind of devices are supported? Supported devies List? Power output
+TODO: what kind of devices are supported?: Every Linux supported device.
+Power output
 
 USB Mini Connector
 ^^^^^^^^^^^^^^^^^^
@@ -167,7 +168,7 @@ TODO: used for configuration over API (Brickv)
 
 Micro-HDMI Connector
 ^^^^^^^^^^^^^^^^^^^^
-TODO: only in full image, screen resolution?
+TODO: only in full image, LXDE, configure resolution etc. in LXDE
 
 Brick Stack Connector
 ^^^^^^^^^^^^^^^^^^^^^
@@ -198,7 +199,8 @@ Full Image
  * with X
  * Download Link
  * minimum card size
- * which programs installed?
+ * which programs installed? (multistrap_full.conf)
+ * which kernel modules are loaded (diff red_brick_full_defconfig)
 
 Fast Boot Image
 ^^^^^^^^^^^^^^^
@@ -208,7 +210,7 @@ Fast Boot Image
  * limited support for ...
  * minimum card size
  * Download Link
- * which programs installed?
+ * which programs installed? (multistrap_fast.conf)
 
 Configuration (in Brick Viewer)
 -------------------------------
