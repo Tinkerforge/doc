@@ -28,8 +28,8 @@ Features
 --------
 
 * Controls other Bricks and Bricklets
-* Executes directly your program
-* Supports nearly every language
+* Executes your program directly
+* Supports many high level programming languages
 
 .. _red_brick_description:
 
@@ -51,15 +51,15 @@ Description
 
 The Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) can 
 control other :ref:`Bricks <primer_bricks>` and 
-:ref:`Bricklets <primer_bricklets>`. Currently supported languages as: C/C++, C#, 
+:ref:`Bricklets <primer_bricklets>`. The programming languages C/C++, C#, 
 Delphi/Lazarus, Java, JavaScript, MATLAB/Octave, Perl, PHP, Python, Ruby, Shell 
-and Visual Basic .NET can be directly executed on the Brick.
+and Visual Basic .NET can be executed on the Brick.
 
 A program that controls Bricks and Bricklets can be written and tested 
 on a normal PC/Mac. Afterwards the program can be transferred to the RED Brick
-by the press of a button and can be executed without any changes. Multiple 
-programs can be executed simultaneously, whereas their execution can be 
-configurated (permanently execution, every X seconds etc.) and monitored.
+by the press of a button and can then be executed without any changes. Multiple 
+programs can be executed simultaneously. The execution of programs can be
+scheduled (execution on bootup, every hour, etc.) and monitored.
 
 This approach enables a very easy and very fast solution for embedded 
 programming. To our knowledge there is no other solution available that is
@@ -67,25 +67,22 @@ even remotely comparable.
 
 For each supported programming language the :ref:`Tinkerforge API <api_bindings>` 
 and commonly used software libraries are preinstalled on the system. Other 
-necessary libraries can be manually installed.
+necessary libraries can be installed manually.
 
 The Brick is equipped with a `Micro-HDMI <http://en.wikipedia.org/wiki/HDMI>`__
-connector, such that it can also used 
-for programs with graphical user interface. An onboard 
-`USB2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector supports input and 
-pointing devices, such that keyboards, mouses or touchscreens can be also 
-connected and used.
+connector, which can be used by programs to show a graphical user interface. A
+`USB2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
+connect WIFI dongles, mice, keyboards, touchscreens and similar.
 
 With an :ref:`Ethernet Master Extension <ethernet_extension>` the RED Brick can 
 be extended by an Ethernet interface. The 
-:ref:`RS485 Master Extension <rs485_extension>` is also supported by the Brick 
-and let you interconnect the controlling RED Brick with other remote stacks of 
-Bricks and Bricklets.
+:ref:`RS485 Master Extension <rs485_extension>` can be used to connect
+other remote stacks of Bricks and Bricklets.
 
-Advanced users can use the module with full access on the underlying 
-`Debian <http://www.debian.org>`__ 
-system. Over a GPIO FPC header, the export user can directly access 
-different processor pins and can use them in his own developments.
+Advanced users can use the RED Brick with full access on the underlying 
+`Debian <http://www.debian.org>`__ system. Over a GPIO FPC header, 
+the expert user can directly access gpio/spi/i2c pins for individual
+hardware development.
 
 
 
@@ -121,11 +118,11 @@ Quickstart / Test your RED Brick
 --------------------------------
 
 As a first step install the :ref:`Brick Daemon <brickd>` and the
-:ref:`Brick Viewer <brickv>` software on your PC or Mac. Insert the SD Card into 
-the :ref:`SD Card slot <red_brick_sd_card_slot>` (you can order a SD Card with
-preinstalled image or you have to 
-:ref:`copy it on your card <red_brick_copy_image>`). After that your RED Brick
-is ready to go and can be connected to your PC or Mac with a micro USB cable.
+:ref:`Brick Viewer <brickv>` software on your PC or Mac. Insert the SD card into 
+the :ref:`SD Card slot <red_brick_sd_card_slot>` (you can order a SD card with
+preinstalled image. Otherwise you have to 
+:ref:`copy it to your card <red_brick_copy_image>`). After that your RED Brick
+is ready to go and can be connected to your PC or Mac with a Mini USB cable.
 
 TODO: Image RED Brick with micro USB cable connected
 
@@ -135,18 +132,18 @@ labeled with "RED Brick". Click on it.
 TODO: Image RED Brick Tab.
 
 On the left side of the tab you see different additional tabs. The "Overview" 
-tab should be selected and should show different information about the CPU load, 
-memory usage and different other status informations. This means your RED Brick
-works as expected and you can start to upload your program. See the 
+tab shows different information about the CPU load, 
+memory usage and other status informations. This means that your RED Brick
+works as expected and you can start to upload your programs. See the 
 :ref:`Brick Viewer Chapter <red_brick_brickv>` on how to configure the Brick
 and how to upload your programs.
 
 Users of the :ref:`Full image <red_brick_images>` can test the graphical 
-interface. To do so, connect an monitor to the 
-:ref:`HDMI Port <red_brick_hdmi_port>` and a USB hub with keyboard and 
-mouse to the :ref:`USB2.0 Port <red_brick_usb2_port>` of the RED Brick and see 
-the LXDE desktop environment booting. After the boot process you should work 
-with it as expected.
+user interface. To do so, connect a monitor to the 
+:ref:`HDMI Port <red_brick_hdmi>` and a USB hub with keyboard and 
+mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
+power the Brick you can see the LXDE desktop environment booting. After 
+the boot process you should be able to use it like a normal desktop PC.
 
 .. _red_brick_hardware:
 
@@ -162,10 +159,9 @@ Power Button
 TODO: Image of Power Button
 
 The button on the RED Brick is a power button. Press it longer than 5 seconds
-and the RED Brick will immediately turn off. If you press it shorter, the 
-Brick will not start to power down. This feature is not supported at the 
-moment. If the Brick is off, press the button until the blue LED lights up and 
-the Brick starts booting. 
+and the RED Brick will turn off immediately. 
+If the Brick is off, press the button until the blue LED lights up and 
+the Brick starts booting again. 
 
 .. _red_brick_leds:
 
@@ -189,8 +185,8 @@ boottime the green LED turns on. After the RED Brick has booted up
 and all of the services are available the green led starts showing a
 heartbeat.
 
-You can change the function of the green LED after bootup to `show
-cpu or sd card usage <TODO>`__ instead of a heartbeat.
+You can change the function of the green and red LED after bootup to 
+`show cpu or sd card usage <TODO>`__ instead of a heartbeat.
 
 .. _red_brick_sd_card_slot:
 
@@ -200,25 +196,25 @@ SD Card Slot
 TODO: Image of SD Card Slot
 
 The linux system and your data is stored on a Micro SD card. The slot
-is located on the bottom side of Brick. 
+is located at the bottom side of the Brick. 
 Micro SD cards (Version 1.0), Micro SDHC (2.0) and Micro SDXC (3.0) cards
-are supported. We recommend as a minimum a class 10 Micro SD Card to ensure
+are supported. As a minimum we recommend a class 10 Micro SD Card to ensure
 fast reads and writes.
 
 A description of the images can be found in the 
 :ref:`image section <red_brick_images>`.
 
-.. _red_brick_usb2_port:
+.. _red_brick_usb_host:
 
-USB2.0 Host Port
-^^^^^^^^^^^^^^^^
+USB2.0 Host
+^^^^^^^^^^^
 
 TODO: Image of USB Port
 
 The RED Brick is equipped with a standard 
 `USB2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mbps) type A jack.
-All human input devices, which are supported by a standard Debian Linux system,
-are supported and can be directly used to control the graphical user interface
+Human input devices, which are supported by a standard Debian Linux system,
+are supported and can be used to control the graphical user interface
 (for :ref:`full image <red_brick_images>`).
 
 Other devices, like webcams, printers etc. are also supported but may have to be
@@ -227,20 +223,19 @@ configured directly on the linux system.
 The RED Brick can power other USB devices with up to 7.5W (5V/1.5A). The port is
 short circuit protected.
 
-USB Mini Connector
-^^^^^^^^^^^^^^^^^^
+Mini USB
+^^^^^^^^
 
 TODO: Image of USB Mini connector
 
-With the mini USB connector, the RED Brick can be configured and is controllable
-by the :ref:`RED Brick API <red_brick_programming_interface>`. It can also be 
-used to power the Brick.
+With the mini USB connector, the RED Brick can be configurable through the
+Brick Viewer. It can also be used to power the Brick.
 
 
-.. _red_brick_hdmi_port:
+.. _red_brick_hdmi:
 
-Micro-HDMI Port
-^^^^^^^^^^^^^^^
+Micro HDMI
+^^^^^^^^^^
 
 TODO: Image HDMI connector
 
@@ -256,12 +251,13 @@ Brick Stack Connector
 
 TODO: Image Stack connector
 
-Up to eight other Bricks can be stacked on top of the RED Brick and can be 
-directly controlled by it. Additionally up to two Master Extensions can
-be used with the RED Brick. At the moment the RS485 Extension all versions of 
-the Ethernet Extension are supported and can be used as a typical Ethernet 
-interface. A Step Down Power Supply can be stacked below the RED Brick and can 
-power it.
+The RED Brick can control up to eight Bricks through the stack connectors.
+Additionally up to two Master Extensions can be used with the RED Brick. 
+At the moment the RS485 Extension all versions of
+the Ethernet Extension are supported. The Ethernet Extension shows up as a
+normal ethernet interface on the underlying Linux system.
+A Step Down Power Supply can be put below the RED Brick and can 
+power the whole stack.
 
 GPIO Header
 ^^^^^^^^^^^
@@ -275,7 +271,7 @@ GPIO Header
 TODO Image Header
 
 The RED Brick is equipped with a 21 pin, 0.25mm pitch, FPC GPIO connector
-(Type Molex 502078-2110).
+(Molex 502078-2110).
 
 All signals of Port E of the A10s processor are connected to this GPIO 
 connector. These signals can be configured for several functions:
@@ -285,43 +281,43 @@ Interface (CSI), Serial Peripheral Interface (SPI), Secure Digital Memory 3.0
 Card Controller (SDC), Universal Asynchronous Receiver Transmitter (UART), 
 Interrupt capable. Additionally a I2C (TWI) interface is connected to this GPIO.
 
-==== ======== ===================================================
+==== ======== =========================================================
 Pin  Signal   Description
-==== ======== ===================================================
+==== ======== =========================================================
 1    5V       5V Power Supply
-2    3V3      3V3 Power Supply
-3    PE0      TS Clock, CSI Pixel Clock, SPI Chip Select 0, INT14
+2    3V3      3.3V Power Supply
+3    PE0      TS Clock, CSI Pixel Clock, SPI Chip Select 0, INT14, GPIO
 4    GND      Ground
-5    PE1      TS Error, CSI Sensor Clock, SPI Clock, INT15
+5    PE1      TS Error, CSI Sensor Clock, SPI Clock, INT15, GPIO
 6    GND      Ground
-7    PE2      TS Sync, CSI Horizontal Sync, SPI MOSI
+7    PE2      TS Sync, CSI Horizontal Sync, SPI MOSI, GPIO
 8    GND      Ground
-9    PE3      TS Data Valid, CSI Vertical Sync, SPI MISO
+9    PE3      TS Data Valid, CSI Vertical Sync, SPI MISO, GPIO
 10   GND      Ground
-11   PE4      TS Data 0, CSI Data 0, SD Controller Data 0
-12   PE5      TS Data 1, CSI Data 1, SD Controller Data 1
-13   PE6      TS Data 2, CSI Data 2, SD Controller Data 2
-14   PE7      TS Data 3, CSI Data 3, SD Controller Data 3
-15   PE8      TS Data 4, CSI Data 4, SD Controller Command
-16   PE9      TS Data 5, CSI Data 5, SD Controller Clock
-17   PE10     TS Data 6, CSI Data 6, UART TX
-18   PE11     TS Data 7, CSI Data 7, UART RX
+11   PE4      TS Data 0, CSI Data 0, SD Controller Data 0, GPIO
+12   PE5      TS Data 1, CSI Data 1, SD Controller Data 1, GPIO
+13   PE6      TS Data 2, CSI Data 2, SD Controller Data 2, GPIO
+14   PE7      TS Data 3, CSI Data 3, SD Controller Data 3, GPIO
+15   PE8      TS Data 4, CSI Data 4, SD Controller Command, GPIO
+16   PE9      TS Data 5, CSI Data 5, SD Controller Clock, GPIO
+17   PE10     TS Data 6, CSI Data 6, UART TX, GPIO
+18   PE11     TS Data 7, CSI Data 7, UART RX, GPIO
 19   GND      Ground
-20   PB15     I2C Clock (with 2k2 Pullup)
-21   PB16     I2C Data (with 2k2 Pullup)
-==== ======== ===================================================
+20   PB15     I2C Clock (with 2k2 Pullup), GPIO
+21   PB16     I2C Data (with 2k2 Pullup), GPIO
+==== ======== =========================================================
 
 
 Power Supply
 ^^^^^^^^^^^^
 
-The RED Brick needs to be powered by a 5V supply. It can be powered by 
-the mini USB connector or a Step Down Power Supply. The single RED Brick needs
+The RED Brick needs to be powered by a 5V supply. It can be powered through 
+the Mini USB connector or a Step-Down Power Supply. A single RED Brick needs
 up to TODO Watts, so that a typical 5W (5V/1A) USB power supply will suffice to
 power it and a Master Brick with a few connected Bricklets. If you use a 
 larger setup, calculate the power requirements and choose a suitable power 
-supply with enough power reserves. Don't forget to calculate the consumption of 
-connected USB2.0 devices in.
+supply with enough power reserves. Don't forget to add the consumption of 
+additionally connected USB devices.
 
 .. _red_brick_images:
 
@@ -331,35 +327,39 @@ RED Brick Software Images
 The RED Brick software image is stored on a Micro SD-Card. It is a modified
 `Debian <http://www.debian.org/>`__ image and available in two different 
 versions. The ''full'' and the ''fast'' image. Both images supports the 
-execution of your code. 
+execution of your code and come with the full suite of Tinkerforge
+libraries. 
 
-The **full image** comes with installed `HDMI <http://en.wikipedia.org/wiki/HDMI>`__
-drivers and all necessary graphical user interface libraries. 
+The **full image** comes with a driver for the GPU 
+and all necessary graphical user interface libraries. 
 It boots an X server and the `LXDE desktop environment <http://www.lxde.org>`__ 
 with auto login. If the program you run on the RED Brick uses a graphical 
 interface it will show up on the desktop. The typical screen resolution is TODO. 
-To change the screen resolution you have to configure it over LXDE. Of course 
+You can configure the screen resolution over LXDE. Of course 
 you don't have to use the HDMI port and can execute non graphical programs on 
 this image.
 
 The **fast image** comes without graphical interface support and has no X, LXDE 
-and other graphical libraries preinstalled. Drivers for HDMI are also missing. 
-It is optimized for a fast boot time.
+and other graphical libraries preinstalled. Drivers for the GPU are not loaded,
+which means that the RED Brick has more available RAM (the RAM is shared between
+CPU and GPU). It is optimized for a fast boot time and can boot in ~10s.
 
-TODO: Check. On both images new software can be installed.
+New software can be installed on both images.
 See the `installing section TODO <TODO>` on how to install new software.
 
-The complete list of installed libraries and programs can be found below:
+The list of installed programming language libraries can be found below:
 
 * `Full Image Installed Programs List <TODO_Link_to_download_page>`__.
 * `Fast Image Installed Programs List <TODO_Link_to_download_page>`__.
 
-If you want to log in the linux system by command line or LXDE, the standard 
-user is **tf** with default password **tf**. The user is a sudoer, such that you 
-can gain root access.
+If you want to log into the linux system by command line or LXDE, the standard 
+user is **tf** with default password **tf**. The user is a sudoer, i.e.
+you can get root access by calling::
+
+ sudo su
 
 The images can be downloaded from the:
-`Download Page <TODO_Link_to_download_page>`__.
+`download page <TODO_Link_to_download_page>`__.
 
 
 
@@ -376,28 +376,27 @@ TODO: Explain here?
 Copy Image on SD Card
 ^^^^^^^^^^^^^^^^^^^^^
 
- 1) At first you should download the 
- :ref:`full image or the fast image <red_brick_images>` of the RED Brick:
- `Download Page  <TODO_Link_to_download_page>`__
+1. Download the 
+   :ref:`full image or the fast image <red_brick_images>` of the RED Brick:
+   `Download page  <TODO_Link_to_download_page>`__
 
+2. Choose a suitable SD card. We recommend a fast SD card (e.g. class 10) with
+   enough space. You find the size of the image on the download page.
 
- 2) Choose a suitable SD Card. We recommend a fast SD Card (e.g. class 10) with
- enough space. You find the size of the image on the download page.
+3. Transfer the image on the SD card:
 
- 3) Transfer the image on the SD Card:
- 
- * On Windows use a tool like Win32DiskImager to transfer the image to the card.
+    * On Windows use a tool like Win32DiskImager to transfer the image to the card.
 
-   * `Download Link <https://http://sourceforge.net/projects/win32diskimager/files/latest/download>`__ 
-   * `Documentation <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__
+        * `Download Link <https://sourceforge.net/projects/win32diskimager/files/latest/download>`__ 
+        * `Documentation <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__
 
- * On Mac OS and Linux
+    * On OS X and Linux
 
-   * Connect the SD Card to your PC 
-   * Identify the path to your SD Card (e.g. dmesg)
-   * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=1M
+        * Connect the SD card to your PC 
+        * Identify the path to your SD card (e.g. dmesg)
+        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=1M
 
-      * e.g.: dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M
+            * e.g.: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
 
 
 .. _red_brick_brickv:
@@ -406,7 +405,7 @@ Configuration (in Brick Viewer)
 -------------------------------
 
 This section describes the configuration of the RED Brick with the Brick Viewer
-Software. The configuration can also be done by the 
+software. The configuration can also be done by the 
 :ref:`RED Brick API <red_brick_programming_interface>`.
 
 TODO: Necessary software, connecting process, tab description
