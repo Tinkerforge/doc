@@ -381,7 +381,7 @@ Copy Image on SD Card
  `Download Page  <TODO_Link_to_download_page>`__
 
 
- 2) Choose a suitable SD Card. We recommend a fast SD Card (min. Class 10) with
+ 2) Choose a suitable SD Card. We recommend a fast SD Card (e.g. class 10) with
  enough space. You find the size of the image on the download page.
 
  3) Transfer the image on the SD Card:
