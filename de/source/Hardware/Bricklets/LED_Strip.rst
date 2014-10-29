@@ -239,7 +239,8 @@ Die Klemme ist mit folgenden Signalen belegt:
 
 * "+" ist der Versorgungsspannungs-Ausgang. Es ist mit dem "+" Signal der "Input"
   Klemme verbunden und sollte nicht benutzt werden um LED Steifen oder Pixel zu
-  versorgen. Daher sollte dieses Signal nicht angeschlossen werden.
+  versorgen. Die Streifen oder Pixel sollten direkt von der Stromquelle aus
+  versorgt und dieses Signal nicht angeschlossen werden.
 
 Die Eingangsklemme verfügt über zwei Signale:
 

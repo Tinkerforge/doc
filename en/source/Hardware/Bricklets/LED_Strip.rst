@@ -238,7 +238,8 @@ The output terminal consists of four signals:
 
 * "+" is the supply voltage output. It is connected to the "+" signal of the
   "Input" terminal and should not be used to power LED Strips or pixels. 
-  Leave it unconnected.
+  Leave it unconnected and power the connected strip or pixels directly from
+  your supply.
 
 The input terminal consisting of two signals:
 
