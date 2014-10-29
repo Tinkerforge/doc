@@ -229,6 +229,7 @@ Intertechno         CMR-300                              Dimmer (unter Putz)    
 |nbsp|              ITLR-300                             Dimmer                             B
 |nbsp|              ITLR-3500                            Schalter                           B
 |nbsp|              ITDL-1000                            Schalter (unter Putz)              B
+|nbsp|              ITDM-250                             LED Dimmer (unter Putz)            B 
 |nbsp|              LBUR-100                             Lampenfassung-Schalter             B
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------

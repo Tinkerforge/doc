@@ -230,6 +230,7 @@ Intertechno         CMR-300                              Dimmer (flush-mounted) 
 |nbsp|              ITLR-300                             Dimmer                             B
 |nbsp|              ITLR-3500                            Switch                             B
 |nbsp|              ITDL-1000                            Switch (flush-mounted)             B
+|nbsp|              ITDM-250                             LED Dimmer (flush-mounted)         B 
 |nbsp|              LBUR-100                             Bulb Holder Switch                 B
 ------------------- ------------------------------------ ---------------------------------- -------
 ------------------- ------------------------------------ ---------------------------------- -------
