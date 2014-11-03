@@ -334,10 +334,11 @@ The **full image** comes with a driver for the GPU
 and all necessary graphical user interface libraries. 
 It boots an X server and the `LXDE desktop environment <http://www.lxde.org>`__ 
 with auto login. If the program you run on the RED Brick uses a graphical 
-interface it will show up on the desktop. The typical screen resolution is TODO. 
-You can configure the screen resolution over LXDE. Of course 
-you don't have to use the HDMI port and can execute non graphical programs on 
-this image.
+interface it will show up on the desktop. The screen resolution should
+automatically adapt to the prefered resolution of the connector HDMI monitor. 
+If you want to change it, you can configure the screen resolution over LXDE. Of 
+course you don't have to use the HDMI port and can execute non graphical 
+programs on this image.
 
 The **fast image** comes without graphical interface support and has no X, LXDE 
 and other graphical libraries preinstalled. Drivers for the GPU are not loaded,
@@ -345,7 +346,7 @@ which means that the RED Brick has more available RAM (the RAM is shared between
 CPU and GPU). It is optimized for a fast boot time and can boot in ~10s.
 
 New software can be installed on both images.
-See the `installing section TODO <TODO>` on how to install new software.
+See the `installing section <TODO>`__ on how to install new software.
 
 The list of installed programming language libraries can be found below:
 
@@ -369,7 +370,16 @@ The images can be downloaded from the:
 Build your Own Image
 ^^^^^^^^^^^^^^^^^^^^
 
-TODO: Explain here?
+The building steps are documented for `Debian Linux <https://www.debian.org/>`__
+as building platform.
+
+1. Check out RED Brick Git
+
+    git clone https://github.com/Tinkerforge/red-brick
+
+2. Move into folder *image*, open the README.rst file and execute the documented 
+   steps.
+
 
 .. _red_brick_copy_image:
 
