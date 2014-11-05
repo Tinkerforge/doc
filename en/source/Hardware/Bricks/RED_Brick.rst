@@ -114,13 +114,13 @@ Resources
 
 .. _red_brick_test:
 
-Quickstart / Test your RED Brick
---------------------------------
+First Steps / Test your RED Brick
+---------------------------------
 
 As a first step install the :ref:`Brick Daemon <brickd>` and the
 :ref:`Brick Viewer <brickv>` software on your PC or Mac. Insert the SD card into 
-the :ref:`SD Card slot <red_brick_sd_card_slot>` (you can order a SD card with
-preinstalled image. Otherwise you have to 
+the :ref:`SD Card slot <red_brick_sd_card_slot>` of the RED Brick 
+(you can order a SD card with preinstalled image. Otherwise you have to 
 :ref:`copy it to your card <red_brick_copy_image>`). After that your RED Brick
 is ready to go and can be connected to your PC or Mac with a Mini USB cable.
 
@@ -144,6 +144,106 @@ user interface. To do so, connect a monitor to the
 mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
 power the Brick you can see the LXDE desktop environment booting. After 
 the boot process you should be able to use it like a normal desktop PC.
+
+A tutorial hot to use the RED Brick can be found here: 
+:ref:`RED Brick Tutorial <tutorial_red_brick>`.
+
+.. _red_brick_brickv:
+
+Brick Viewer
+------------
+This section describes the configuration of the RED Brick with the 
+:ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by 
+the :ref:`RED Brick API <red_brick_programming_interface>`.
+
+The RED Brick representation in Brick Viewer consists of different tabs, each 
+described in detail below. On the upper right corner you can find the word 
+*System*, click on it and you get the option to restart the Brick Daemon on the
+RED Brick, to reboot the RED Brick or to shut it down.
+
+Overview Tab (Status Information)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TODO default Tab Screenshot
+
+This is tab is selected as default. It shows you the time your RED Brick is 
+running (Uptime) and the usage of CPU, memory (RAM) and storage. You can see 
+the top processes based on CPU or memory usage and the up- and download of the 
+configured network interfaces. 
+
+The list can contain the following possible network interfaces
+
+* ``lo``: This is the loopback interface. It is a local interface, e.g. used for
+  the communication between your program and the local Brick Daemon.
+* ``wlan0`` : This is a WIFI interface. It is created if you attach a WIFI 
+  dongle to the :ref:`USB Host connector <red_brick_usb_host>`
+* ``eth0`` : This is a Ethernet interface. It is created if you attach a 
+  Ethernet dongle to the :ref:`USB Host connector <red_brick_usb_host>`
+* ``tf0`` : This is the Ethernet interface created if you plug an 
+  :ref:`Ethernet Extension <ethernet_extension>` on top of the RED Brick
+
+The data in the overview tab is refreshed every 3 seconds.
+
+Settings Tab (Network, Brick Daemon, Date/Time)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In the *Network* section of this tab you can configure every network related
+setting.
+
+TODO Image General subsection
+
+In the *General* subsection you can set the hostname and get the current network 
+status.
+
+TODO Image Wireless subsection
+
+The *Wireless* subsection is only active if you attach a USB WIFI dongle.
+Supported devices can be found in our shop (TODO Link).
+TODO description
+
+TODO Image Wired subsection
+
+In the *Wired* subsection is only active if you attach an USB Ethernet dongle
+or a Ethernet Master Extension. The USB dongle will show up as ``eth0``, the
+Ethernet Extension as ``tf0``. To configure a interface, choose it, select if it
+should be used with a static IP or with DHCP and configure it properly.
+After it press the *Save* button.
+
+
+.. _red_brick_brickv_program:
+
+Program Tab (Upload and Execution)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TODO: Describe GUI and link to RED Brick Tutorial
+
+.. _red_brick_brickv_console:
+
+Console Tab (Remote Access)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+If you have attached the RED Brick over its 
+`Mini USB Connector <red_brick_mini_usb>`__ to your PC it will also register
+a USB serial interface. This serial interface can be used to access the Linux
+shell of the Brick. Select the serial port of the Brick and press *Connect*.
+Under Linux the typical interface is ``/dev/ttyACM0`` under Windows it is
+``TODO``. You will be logged in as user **tf** with password **tf**. If you are 
+not sure what the right port is test all, until you see the shell. It might be 
+necessary to press ENTER to see the prompt. 
+
+A good shell tutorial can be found at 
+`linuxcommand.org <http://linuxcommand.org/lc3_learning_the_shell.php>`__.
+
+Versions Tab (Daemon, Bindings and Libraries)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The versions tab shows version information of the installed Brick Daemon, RED 
+Brick API Daemon, of the installed Bindings and their associated libraries.
+
+If you want to use other libraries than the installed ones, you can 
+:ref:`upload <red_brick_brickv_program>` them with your program or use the 
+:ref:`console <red_brick_brickv_console>` to install them.
+
+.. _red_brick_faq:
+
+
 
 .. _red_brick_hardware:
 
@@ -413,93 +513,6 @@ Copy Image on SD Card
             * e.g.: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
 
 
-.. _red_brick_brickv:
-
-Brick Viewer (Configuration, Status)
-------------------------------------
-
-This section describes the configuration of the RED Brick with the 
-:ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by 
-the :ref:`RED Brick API <red_brick_programming_interface>`.
-
-The RED Brick representation in Brick Viewer consists of different tabs, each 
-described in detail below. On the upper right corner you can find the word 
-*System*, click on it and you get the option to restart the Brick Daemon on the
-RED Brick, to reboot the RED Brick or to shut it down.
-
-Overview Tab (Status Information)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-TODO default Tab Screenshot
-
-This is tab is selected as default. It shows you the time your RED Brick is 
-running (Uptime) and the usage of CPU, memory (RAM) and storage. You can see 
-the top processes based on CPU or memory usage and the up- and download of the 
-configured network interfaces. 
-
-The list can contain the following possible network interfaces
-
-* ``lo``: This is the loopback interface. It is a local interface, e.g. used for
-  the communication between your program and the local Brick Daemon.
-* ``wlan0`` : This is a WIFI interface. It is created if you attach a WIFI 
-  dongle to the :ref:`USB Host connector <red_brick_usb_host>`
-* ``eth0`` : This is a Ethernet interface. It is created if you attach a 
-  Ethernet dongle to the :ref:`USB Host connector <red_brick_usb_host>`
-* ``tf0`` : This is the Ethernet interface created if you plug an 
-  :ref:`Ethernet Extension <ethernet_extension>` on top of the RED Brick
-
-The data in the overview tab is refreshed every 3 seconds.
-
-Settings Tab (Network, Brick Daemon, Date/Time)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In the *Network* section of this tab you can configure every network related
-setting.
-
-TODO Image General subsection
-
-In the *General* subsection you can set the hostname and get the current network 
-status.
-
-TODO Image Wireless subsection
-
-The *Wireless* subsection is only active if you attach a USB WIFI dongle.
-Supported devices can be found in our shop (TODO Link).
-TODO description
-
-TODO Image Wired subsection
-
-In the *Wired* subsection is only active if you attach an USB Ethernet dongle
-or a Ethernet Master Extension. The USB dongle will show up as ``eth0``, the
-Ethernet Extension as ``tf0``. To configure a interface, choose it, select if it
-should be used with a static IP or with DHCP and configure it properly.
-After it press the *Save* button.
-
-
-Program Tab (Upload and Execution)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TODO: Describe GUI and link to RED Brick Tutorial
-
-Console Tab (Remote Access)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-If you have attached the RED Brick over its 
-`Mini USB Connector <red_brick_mini_usb>`__ to your PC it will also register
-a USB serial interface. This serial interface can be used to access the Linux
-shell of the Brick. Select the serial port of the Brick and press *Connect*.
-Under Linux the typical interface is ``/dev/ttyACM0`` under Windows it is
-``TODO``. You will be logged in as user ``tf``. If you are not sure what the 
-right port is test all, until you see the shell. It might be necessary to press 
-ENTER to see the prompt. 
-
-A good shell tutorial can be found at 
-`linuxcommand.org <http://linuxcommand.org/lc3_learning_the_shell.php>`__.
-
-Versions Tab (Daemon, Bindings and Libraries)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The versions tab shows version information of the installed Brick Daemon, RED 
-Brick API Daemon, of the installed Bindings and their associated libraries.
-
-.. _red_brick_faq:
 
 FAQ
 ---
