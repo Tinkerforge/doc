@@ -212,21 +212,25 @@ USB2.0 Host
 TODO: Image of USB Port
 
 The RED Brick is equipped with a standard 
-`USB2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mbps) type A jack.
-Human input devices, which are supported by a standard Debian Linux system,
-are supported and can be used to control the graphical user interface
-(for :ref:`full image <red_brick_images>`).
+`USB2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mbps) type A jack. It can 
+power other USB devices with up to 7.5W (5V/1.5A) and is short circuit 
+protected. Both, full and fast image are based on Debian Linux and support 
+typical USB devices like WIFI or Ethernet dongles, webcams, printers, keyboards, 
+mouses or USB touchscreens. 
 
-Other devices, like webcams, printers etc. are also supported but may have to be
-configured directly on the linux system.
+Some Ethernet or WIFI dongles can be directly configured with the Brick Viewer. 
+Supported dongles can be found in our shop (TODO Link). Other devices might have
+to be configured directly in the linux system and can't be configured with the 
+Brick Viewer.
 
-The RED Brick can power other USB devices with up to 7.5W (5V/1.5A). The port is
-short circuit protected.
+The :ref:`Full image <red_brick_images>` supports a graphical user interface,
+which can be controlled by standard USB keyboards, mouses or touchscreens.
+
+
+.. _red_brick_mini_usb:
 
 Mini USB
 ^^^^^^^^
-
-TODO: Image of USB Mini connector
 
 With the mini USB connector, the RED Brick can be configurable through the
 Brick Viewer. It can also be used to power the Brick.
@@ -411,32 +415,89 @@ Copy Image on SD Card
 
 .. _red_brick_brickv:
 
-Configuration (in Brick Viewer)
--------------------------------
+Brick Viewer (Configuration, Status)
+------------------------------------
 
-This section describes the configuration of the RED Brick with the Brick Viewer
-software. The configuration can also be done by the 
-:ref:`RED Brick API <red_brick_programming_interface>`.
+This section describes the configuration of the RED Brick with the 
+:ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by 
+the :ref:`RED Brick API <red_brick_programming_interface>`.
 
-TODO: Necessary software, connecting process, tab description
+The RED Brick representation in Brick Viewer consists of different tabs, each 
+described in detail below. On the upper right corner you can find the word 
+*System*, click on it and you get the option to restart the Brick Daemon on the
+RED Brick, to reboot the RED Brick or to shut it down.
 
-Program Upload and Execution
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Overview Tab (Status Information)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TODO default Tab Screenshot
+
+This is tab is selected as default. It shows you the time your RED Brick is 
+running (Uptime) and the usage of CPU, memory (RAM) and storage. You can see 
+the top processes based on CPU or memory usage and the up- and download of the 
+configured network interfaces. 
+
+The list can contain the following possible network interfaces
+
+* ``lo``: This is the loopback interface. It is a local interface, e.g. used for
+  the communication between your program and the local Brick Daemon.
+* ``wlan0`` : This is a WIFI interface. It is created if you attach a WIFI 
+  dongle to the :ref:`USB Host connector <red_brick_usb_host>`
+* ``eth0`` : This is a Ethernet interface. It is created if you attach a 
+  Ethernet dongle to the :ref:`USB Host connector <red_brick_usb_host>`
+* ``tf0`` : This is the Ethernet interface created if you plug an 
+  :ref:`Ethernet Extension <ethernet_extension>` on top of the RED Brick
+
+The data in the overview tab is refreshed every 3 seconds.
+
+Settings Tab (Network, Brick Daemon, Date/Time)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In the *Network* section of this tab you can configure every network related
+setting.
+
+TODO Image General subsection
+
+In the *General* subsection you can set the hostname and get the current network 
+status.
+
+TODO Image Wireless subsection
+
+The *Wireless* subsection is only active if you attach a USB WIFI dongle.
+Supported devices can be found in our shop (TODO Link).
+TODO description
+
+TODO Image Wired subsection
+
+In the *Wired* subsection is only active if you attach an USB Ethernet dongle
+or a Ethernet Master Extension. The USB dongle will show up as ``eth0``, the
+Ethernet Extension as ``tf0``. To configure a interface, choose it, select if it
+should be used with a static IP or with DHCP and configure it properly.
+After it press the *Save* button.
+
+
+Program Tab (Upload and Execution)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TODO: Describe GUI and link to RED Brick Tutorial
 
-Ethernet
-^^^^^^^^
+Console Tab (Remote Access)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+If you have attached the RED Brick over its 
+`Mini USB Connector <red_brick_mini_usb>`__ to your PC it will also register
+a USB serial interface. This serial interface can be used to access the Linux
+shell of the Brick. Select the serial port of the Brick and press *Connect*.
+Under Linux the typical interface is ``/dev/ttyACM0`` under Windows it is
+``TODO``. You will be logged in as user ``tf``. If you are not sure what the 
+right port is test all, until you see the shell. It might be necessary to press 
+ENTER to see the prompt. 
 
-RS485
-^^^^^
+A good shell tutorial can be found at 
+`linuxcommand.org <http://linuxcommand.org/lc3_learning_the_shell.php>`__.
 
-Shell (Remote Access)
-^^^^^^^^^^^^^^^^^^^^^
+Versions Tab (Daemon, Bindings and Libraries)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO: HINT to ACM0, Link Beginners shell tutorial
-
-Version and Library Management
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The versions tab shows version information of the installed Brick Daemon, RED 
+Brick API Daemon, of the installed Bindings and their associated libraries.
 
 .. _red_brick_faq:
 
