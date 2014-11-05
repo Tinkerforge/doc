@@ -117,12 +117,22 @@ Resources
 First Steps / Test your RED Brick
 ---------------------------------
 
-As a first step install the :ref:`Brick Daemon <brickd>` and the
-:ref:`Brick Viewer <brickv>` software on your PC or Mac. Insert the SD card into 
-the :ref:`SD Card slot <red_brick_sd_card_slot>` of the RED Brick 
-(you can order a SD card with preinstalled image. Otherwise you have to 
-:ref:`copy it to your card <red_brick_copy_image>`). After that your RED Brick
-is ready to go and can be connected to your PC or Mac with a Mini USB cable.
+With the following instructions you test your RED Brick.
+
+A full step-by-step tutorial how to use the RED Brick can be found here: 
+:ref:`RED Brick Tutorial <tutorial_red_brick>`.
+
+First install the :ref:`Brick Daemon <brickd>` and the
+:ref:`Brick Viewer <brickv>` software on your PC or Mac. Insert the micro SD 
+card into the :ref:`Micro SD Card slot <red_brick_micro_sd_card_slot>` of the 
+RED Brick. The location of it and an overview of the different hardware 
+interfaces of the RED Brick is given in the 
+:ref:`Hardware Section <red_brick_hardware>`. You can order a SD card with 
+preinstalled image in our shop. Otherwise you have to 
+:ref:`copy the image to your card <red_brick_copy_image>`. 
+
+After that your RED Brick is ready to go and can be connected to your PC or Mac 
+with a mini USB cable.
 
 TODO: Image RED Brick with micro USB cable connected
 
@@ -145,8 +155,6 @@ mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
 power the Brick you can see the LXDE desktop environment booting. After 
 the boot process you should be able to use it like a normal desktop PC.
 
-A tutorial hot to use the RED Brick can be found here: 
-:ref:`RED Brick Tutorial <tutorial_red_brick>`.
 
 .. _red_brick_brickv:
 
@@ -156,10 +164,13 @@ This section describes the configuration of the RED Brick with the
 :ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by 
 the :ref:`RED Brick API <red_brick_programming_interface>`.
 
+TODO Image with marked tabs and label row
+
 The RED Brick representation in Brick Viewer consists of different tabs, each 
-described in detail below. On the upper right corner you can find the word 
-*System*, click on it and you get the option to restart the Brick Daemon on the
-RED Brick, to reboot the RED Brick or to shut it down.
+described in detail below. Above the tabs the UID of the RED Brick, its position
+in the stack, the name of the used image, number of timeouts and the word
+*System* is shown. If you click on it, you can restart the Brick Daemon on the 
+RED Brick and reboot, or shut down the RED Brick.
 
 Overview Tab (Status Information)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -184,6 +195,8 @@ The list can contain the following possible network interfaces
 
 The data in the overview tab is refreshed every 3 seconds.
 
+.. _red_brick_brick_settings:
+
 Settings Tab (Network, Brick Daemon, Date/Time)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In the *Network* section of this tab you can configure every network related
@@ -192,21 +205,23 @@ setting.
 TODO Image General subsection
 
 In the *General* subsection you can set the hostname and get the current network 
-status.
+status. It additionally shows you the currently used network interface.
 
 TODO Image Wireless subsection
 
 The *Wireless* subsection is only active if you attach a USB WIFI dongle.
-Supported devices can be found in our shop (TODO Link).
-TODO description
+Supported devices can be found in our shop (TODO Link). You can see the
+currently used interface and its status, can select the interface which should 
+be used. You can select an Access Point to connect, configure encryption and
+set static or dynamic IP.
 
 TODO Image Wired subsection
 
-In the *Wired* subsection is only active if you attach an USB Ethernet dongle
-or a Ethernet Master Extension. The USB dongle will show up as ``eth0``, the
-Ethernet Extension as ``tf0``. To configure a interface, choose it, select if it
-should be used with a static IP or with DHCP and configure it properly.
-After it press the *Save* button.
+The *Wired* subsection is only active if you attach a USB Ethernet dongle
+or an Ethernet Master Extension. The USB dongle will show up as ``eth0``, the
+Ethernet Extension as ``tf0``. To configure an interface, choose it, select if 
+it should be used with a static IP or with DHCP and configure it properly.
+If you have configured everything press the *Save* button.
 
 
 .. _red_brick_brickv_program:
@@ -241,7 +256,114 @@ If you want to use other libraries than the installed ones, you can
 :ref:`upload <red_brick_brickv_program>` them with your program or use the 
 :ref:`console <red_brick_brickv_console>` to install them.
 
-.. _red_brick_faq:
+Extensions Tab (Configure, Manage)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Two different :ref:`Master Extensions <master_extension>` are supported by the 
+RED Brick: :ref:`Ethernet Extension <ethernet_extension>` and 
+:ref:`RS485 Extension <rs485_extension>`.
+
+**Ethernet Extension**
+
+The Ethernet Extension will be configured over the 
+:ref:`Settings Tab <red_brick_brick_settings>`. Only the MAC address is 
+configured here if necessary. 
+
+**RS485 Extension**
+
+The configuration of the RS485 Extension is 
+described in the 
+:ref:`RS485 Extension documentation <rs485_configuration>`.
+
+
+.. _red_brick_images:
+
+RED Brick Software Images
+-------------------------
+
+The RED Brick software image is stored on a Micro SD-Card. It is a modified
+`Debian <http://www.debian.org/>`__ image and available in two different 
+versions. The ''full'' and the ''fast'' image. Both images supports the 
+execution of your code and come with the full suite of Tinkerforge
+libraries. 
+
+The **full image** comes with a driver for the GPU 
+and all necessary graphical user interface libraries. 
+It boots an X server and the `LXDE desktop environment <http://www.lxde.org>`__ 
+with auto login. If the program you run on the RED Brick uses a graphical 
+interface it will show up on the desktop. The screen resolution should
+automatically adapt to the prefered resolution of the connector HDMI monitor. 
+If you want to change it, you can configure the screen resolution over LXDE. Of 
+course you don't have to use the HDMI port and can execute non graphical 
+programs on this image.
+
+The **fast image** comes without graphical interface support and has no X, LXDE 
+and other graphical libraries preinstalled. Drivers for the GPU are not loaded,
+which means that the RED Brick has more available RAM (the RAM is shared between
+CPU and GPU). It is optimized for a fast boot time and can boot in ~10s.
+
+New software can be installed on both images.
+See the `installing section <TODO>`__ on how to install new software.
+
+The list of installed programming language libraries can be found below:
+
+* `Full Image Installed Programs List <TODO_Link_to_download_page>`__.
+* `Fast Image Installed Programs List <TODO_Link_to_download_page>`__.
+
+If you want to log into the linux system by command line or LXDE, the standard 
+user is **tf** with default password **tf**. The user is a sudoer, i.e.
+you can get root access by calling::
+
+ sudo su
+
+The images can be downloaded from the:
+`download page <TODO_Link_to_download_page>`__.
+
+
+
+
+.. _red_brick_build_image:
+
+Build your Own Image
+^^^^^^^^^^^^^^^^^^^^
+
+The building steps are documented for `Debian Linux <https://www.debian.org/>`__
+as building platform.
+
+1. Check out RED Brick Git
+
+    git clone https://github.com/Tinkerforge/red-brick
+
+2. Move into folder *image*, open the README.rst file and execute the documented 
+   steps.
+
+
+.. _red_brick_copy_image:
+
+Copy Image on SD Card
+^^^^^^^^^^^^^^^^^^^^^
+
+1. Download the 
+   :ref:`full image or the fast image <red_brick_images>` of the RED Brick:
+   `Download page  <TODO_Link_to_download_page>`__
+
+2. Choose a suitable SD card. We recommend a fast SD card (e.g. class 10) with
+   enough space. You find the size of the image on the download page.
+
+3. Transfer the image on the SD card:
+
+    * On Windows use a tool like Win32DiskImager to transfer the image to the card.
+
+        * `Download Link <https://sourceforge.net/projects/win32diskimager/files/latest/download>`__ 
+        * `Documentation <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__
+
+    * On OS X and Linux
+
+        * Connect the SD card to your PC 
+        * Identify the path to your SD card (e.g. dmesg)
+        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=1M
+
+            * e.g.: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
 
 
 
@@ -250,7 +372,7 @@ If you want to use other libraries than the installed ones, you can
 Hardware Description
 --------------------
 
-TODO: Overview Image
+TODO: Overview Image with Top and Bottom Side
 
 
 Power Button
@@ -288,10 +410,10 @@ heartbeat.
 You can change the function of the green and red LED after bootup to 
 `show cpu or sd card usage <TODO>`__ instead of a heartbeat.
 
-.. _red_brick_sd_card_slot:
+.. _red_brick_micro_sd_card_slot:
 
-SD Card Slot
-^^^^^^^^^^^^
+Micro SD Card Slot
+^^^^^^^^^^^^^^^^^^
 
 TODO: Image of SD Card Slot
 
@@ -423,95 +545,9 @@ larger setup, calculate the power requirements and choose a suitable power
 supply with enough power reserves. Don't forget to add the consumption of 
 additionally connected USB devices.
 
-.. _red_brick_images:
-
-RED Brick Software Images
--------------------------
-
-The RED Brick software image is stored on a Micro SD-Card. It is a modified
-`Debian <http://www.debian.org/>`__ image and available in two different 
-versions. The ''full'' and the ''fast'' image. Both images supports the 
-execution of your code and come with the full suite of Tinkerforge
-libraries. 
-
-The **full image** comes with a driver for the GPU 
-and all necessary graphical user interface libraries. 
-It boots an X server and the `LXDE desktop environment <http://www.lxde.org>`__ 
-with auto login. If the program you run on the RED Brick uses a graphical 
-interface it will show up on the desktop. The screen resolution should
-automatically adapt to the prefered resolution of the connector HDMI monitor. 
-If you want to change it, you can configure the screen resolution over LXDE. Of 
-course you don't have to use the HDMI port and can execute non graphical 
-programs on this image.
-
-The **fast image** comes without graphical interface support and has no X, LXDE 
-and other graphical libraries preinstalled. Drivers for the GPU are not loaded,
-which means that the RED Brick has more available RAM (the RAM is shared between
-CPU and GPU). It is optimized for a fast boot time and can boot in ~10s.
-
-New software can be installed on both images.
-See the `installing section <TODO>`__ on how to install new software.
-
-The list of installed programming language libraries can be found below:
-
-* `Full Image Installed Programs List <TODO_Link_to_download_page>`__.
-* `Fast Image Installed Programs List <TODO_Link_to_download_page>`__.
-
-If you want to log into the linux system by command line or LXDE, the standard 
-user is **tf** with default password **tf**. The user is a sudoer, i.e.
-you can get root access by calling::
-
- sudo su
-
-The images can be downloaded from the:
-`download page <TODO_Link_to_download_page>`__.
 
 
-
-
-.. _red_brick_build_image:
-
-Build your Own Image
-^^^^^^^^^^^^^^^^^^^^
-
-The building steps are documented for `Debian Linux <https://www.debian.org/>`__
-as building platform.
-
-1. Check out RED Brick Git
-
-    git clone https://github.com/Tinkerforge/red-brick
-
-2. Move into folder *image*, open the README.rst file and execute the documented 
-   steps.
-
-
-.. _red_brick_copy_image:
-
-Copy Image on SD Card
-^^^^^^^^^^^^^^^^^^^^^
-
-1. Download the 
-   :ref:`full image or the fast image <red_brick_images>` of the RED Brick:
-   `Download page  <TODO_Link_to_download_page>`__
-
-2. Choose a suitable SD card. We recommend a fast SD card (e.g. class 10) with
-   enough space. You find the size of the image on the download page.
-
-3. Transfer the image on the SD card:
-
-    * On Windows use a tool like Win32DiskImager to transfer the image to the card.
-
-        * `Download Link <https://sourceforge.net/projects/win32diskimager/files/latest/download>`__ 
-        * `Documentation <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__
-
-    * On OS X and Linux
-
-        * Connect the SD card to your PC 
-        * Identify the path to your SD card (e.g. dmesg)
-        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=1M
-
-            * e.g.: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
-
+.. _red_brick_faq:
 
 
 FAQ
@@ -521,6 +557,8 @@ FAQ
   device to access its serial console?
 * A: The ``cdc_acm`` driver has to be loaded for this to work.
 
+* Q: The red and blue LED are on. But nothing happens.
+* A: The image is not booting. Please check your micro SD Card.
 
 
 
