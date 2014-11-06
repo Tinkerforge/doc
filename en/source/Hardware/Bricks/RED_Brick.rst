@@ -337,6 +337,9 @@ as building platform.
 2. Move into folder *image*, open the README.rst file and execute the documented 
    steps.
 
+The build process will take several hours up to one day, dependent on the power
+of your building platform.
+
 
 .. _red_brick_copy_image:
 
@@ -566,6 +569,10 @@ FAQ
 
 Programming Interface
 ---------------------
+
+The RED Brick API is used by the Brick Viewer to implement the offered 
+functionality (Get status information, transfer files etc.) Normal users will 
+not need to use this API, it may only be interesting for power users.
 
 See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
