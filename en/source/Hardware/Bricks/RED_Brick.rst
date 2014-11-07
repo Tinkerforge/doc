@@ -420,7 +420,7 @@ It will be called by the webserver.
 A minimal hello world index.py might look like this::
 
  def index(req):
-	 return '<html><body>Hello World!</body></html>'
+     return '<html><body>Hello World!</body></html>'
 
 To control Bricks/Bricklets you can just import the Tinkerforge Bindings::
 
