@@ -202,7 +202,7 @@ Settings Tab (Network, Brick Daemon, Date/Time)
 
 .. _red_brick_brick_settings_network:
 
-In the *Network* section of this tab you can configure settings
+In the **Network section** of this tab you can configure settings
 related to networking.
 
 TODO Image General subsection
@@ -233,7 +233,7 @@ bit and press the refresh button again.
 
 .. _red_brick_brick_settings_brickd:
 
-In the *Brick Daemon* section of this tab you can configure
+In the **Brick Daemon section** of this tab you can configure
 all of the Brick Daemon settings.
 
 The configuration includes the listen address, port, port for web sockets
@@ -243,7 +243,7 @@ for the red and green LED can also be set here.
 
 .. _red_brick_brick_settings_date:
 
-In the *Date/Time* section you can sync the clock of the RED Brick to
+In the **Date/Time section** you can sync the clock of the RED Brick to
 the clock of your PC. There is no battery on the RED Brick, so the
 time won't be incremented if the RED Brick is not powered.
 
