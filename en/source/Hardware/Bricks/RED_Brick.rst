@@ -347,25 +347,114 @@ The configuration of the RS485 Extension is the same as it can be
 done through a Master Brick. See the  
 :ref:`RS485 Extension documentation <rs485_configuration>`.
 
-The recommended baudrates to be used on the RED Brick are
-
-* 500000,
-* 250000,
-* 166666,
-* 125000,
-* 100000,
-* 83333,
-* 71428,
-* 62500,
-* 55555,
-* 50000,
-* 45454 or
-* 41666.
-
+The recommended baudrates to be used on the RED Brick are 500000, 250000,
+166666, 125000, 100000, 83333, 71428, 62500, 55555, 50000, 45454 or 
+41666 baud.
 
 Changing the settings on either of the Extensions will restart the
 Brick Daemon on the RED Brick, i.e. your RED Brick tab in the Brick 
 Viewer will disappear for a few seconds and then pop up again. 
+
+.. _red_brick_web_interface:
+
+RED Brick Web Interface
+-----------------------
+
+If your RED Brick is equipped with a USB WIFI dongle, an Ethernet 
+Extension or has other network connectivity, you can access a
+web interface. The web interface is available at the IP of the
+RED Brick or the hostname (``red-brick`` by default).
+
+The RED Brick web interface shows the installed programs. You
+can view the logs and configs of the programs as well as the
+uploaded binaries.
+
+.. image:: /Images/Screenshots/red_brick_web_interface.jpg
+   :scale: 40 %
+   :alt: Screenshot of RED Brick web interface.
+   :align: center
+
+Besides the default web interface you can also put your own
+web interfaces on the RED Brick. Currently we support web applications
+written in HTML/JavaScript, Python and PHP. If you uploaded an ``index.py``, 
+``index.php`` or ``index.html`` the respective file will be used as 
+directory index for the binary folder.
+
+Example: If you want to write a PHP website that controls 
+Bricks/Bricklets you can upload your program ``EXAMPLE`` with id 
+``EXAMPLEID`` that includes an index.php as starting point. If you now 
+go to the RED Brick web interface and click on the "Bin" button for the 
+newly created program, you will get a link to 
+``/programs/EXAMPLEID/bin``, which will directly execute the index.php 
+if opened.
+
+This way you can easily implement a webpage that shows environment information
+gathered from Temperature/Barometer/Humidity Bricklets or you can
+have a webpage with buttons that control Relay Bricklets, etc.
+
+With the RED Brick it is super simple to write web applications that can
+control hardware.
+
+HTML/JavaScript
+^^^^^^^^^^^^^^^
+
+If you upload HTML with embedded JavaScript you can use the JavaScript
+Bindings. They are available in the root directory, import them with::
+
+ <script src="/Tinkerforge.js" type='text/javascript'></script>
+
+Note that the JavaScript is executed in the browser of the user and not
+on the RED Brick, so you have to connect to the IP of the RED Brick,
+not localhost.
+
+Python
+^^^^^^
+
+The webserver on the RED Brick is configured to recognize an index.py.
+In your python program you have to define an index function::
+
+ def index(req):
+
+It will be called by the webserver.
+
+A minimal hello world index.py might look like this::
+
+ def index(req):
+	 return '<html><body>Hello World!</body></html>'
+
+To control Bricks/Bricklets you can just import the Tinkerforge Bindings::
+
+ from tinkerforge.ip_connection import IPConnection
+ from tinkerforge.bricklet_temperature import Temperature
+ # ...
+
+The default web interface of the RED Brick uses Python. You can find it
+`on github <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__.
+
+PHP
+^^^
+
+The webserver on the RED Brick is configured to recognize an index.php.
+
+An minimal hello world index.php might look like this::
+
+ <?php $greeting = 'Hello World!'; ?>
+
+ <html>
+  <head>
+   <title>PHP Example</title>
+  </head>
+  <body>
+   <p><?php echo $greeting; ?><p>
+   <p><?php phpinfo(); ?><p>
+  </body>
+ </html>
+
+To control Bricks/Bricklets you can import the Tinkerforge Bindings::
+
+ require_once('Tinkerforge/IPConnection.php');
+ require_once('Tinkerforge/BrickletTemperature.php');
+ // ...
 
 .. _red_brick_images:
 
