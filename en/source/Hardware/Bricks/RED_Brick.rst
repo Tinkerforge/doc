@@ -52,7 +52,7 @@ Description
 The Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) can 
 control other :ref:`Bricks <primer_bricks>` and 
 :ref:`Bricklets <primer_bricklets>`. The programming languages C/C++, C#, 
-Delphi/Lazarus, Java, JavaScript, MATLAB/Octave, Perl, PHP, Python, Ruby, Shell 
+Delphi/Lazarus, Java, JavaScript, Octave, Perl, PHP, Python, Ruby, Shell
 and Visual Basic .NET can be executed on the Brick.
 
 A program that controls Bricks and Bricklets can be written and tested 
