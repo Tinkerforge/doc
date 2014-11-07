@@ -164,7 +164,10 @@ This section describes the configuration of the RED Brick with the
 :ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by 
 the :ref:`RED Brick API <red_brick_programming_interface>` (not recommended).
 
-TODO Image with marked tabs and label row
+.. image:: /Images/Screenshots/brickv_red_tab_and_labels.jpg
+   :scale: 60 %
+   :alt: Screenshot of tab selection and labels.
+   :align: center
 
 The RED Brick representation in Brick Viewer consists of different tabs, each 
 described in detail below. Additionally the UID of the RED Brick, the position
@@ -175,12 +178,15 @@ RED Brick and reboot, or shut down the RED Brick itself.
 Overview Tab (Status Information)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO default Tab Screenshot
-
 This tab is selected as default. It shows the uptime of your RED Brick
 and the usage of CPU, memory (RAM) and storage. You can see 
 the top processes based on CPU or memory usage and the up- and download speed
 of the configured network interfaces. 
+
+.. image:: /Images/Screenshots/brickv_red_tab_overview.jpg
+   :scale: 60 %
+   :alt: Screenshot of overview tab.
+   :align: center
 
 The list can contain the following possible network interfaces
 
@@ -236,6 +242,11 @@ bit and press the refresh button again.
 In the **Brick Daemon section** of this tab you can configure
 all of the Brick Daemon settings.
 
+.. image:: /Images/Screenshots/brickv_red_tab_settings_brickd.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing brickd configurations.
+   :align: center
+
 The configuration includes the listen address, port, port for web sockets
 and the authentication secret in the *General* subsection as well as more
 low level configurations in the *Advanced* subsection. The LED trigger
@@ -246,6 +257,11 @@ for the red and green LED can also be set here.
 In the **Date/Time section** you can sync the clock of the RED Brick to
 the clock of your PC. There is no battery on the RED Brick, so the
 time won't be incremented if the RED Brick is not powered.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_date.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing date/time configurations.
+   :align: center
 
 If you have a connection to the internet (trough the Ethernet Extension
 or a USB WIFI dongle), the date and time are automatically set by
@@ -273,6 +289,13 @@ Under Linux the typical interface is ``/dev/ttyACM0`` under Windows it is
 them all, until you see the shell. It might be necessary to press ENTER to 
 see the prompt. 
 
+Below you can see a screenshot of the console showing ``htop``.
+
+.. image:: /Images/Screenshots/brickv_red_tab_console.jpg
+   :scale: 60 %
+   :alt: Screenshot of console tab showing htop.
+   :align: center
+
 A good shell tutorial can be found at 
 `linuxcommand.org <http://linuxcommand.org/lc3_learning_the_shell.php>`__.
 
@@ -282,6 +305,11 @@ Versions Tab (Daemon, Bindings and Libraries)
 The versions tab shows version information of the installed Brick Daemon and
 RED Brick API Daemon as well as the installed Bindings and their associated 
 libraries.
+
+.. image:: /Images/Screenshots/brickv_red_tab_versions.jpg
+   :scale: 60 %
+   :alt: Screenshot of versions tab.
+   :align: center
 
 If you want to use other libraries than the installed ones, you can 
 :ref:`upload <red_brick_brickv_program>` them with your program or use the 
@@ -298,12 +326,22 @@ RED Brick: :ref:`Ethernet Extension <ethernet_extension>` and
 
 **Ethernet Extension**
 
+.. image:: /Images/Screenshots/brickv_red_tab_extension_ethernet.jpg
+   :scale: 60 %
+   :alt: Screenshot of extension tab showing Ethernet Extension configuration.
+   :align: center
+
 Only MAC address of the Ethernet Extension can be changed here.
 Since the Ethernet Extension shows up as a normal network interface in the
 underlying Linux, you can configure it like any other network interface
 through the :ref:`Settings Tab <red_brick_brick_settings>`.
 
 **RS485 Extension**
+
+.. image:: /Images/Screenshots/brickv_red_tab_extension_rs485.jpg
+   :scale: 60 %
+   :alt: Screenshot of extension tab showing RS485 Extension configuration.
+   :align: center
 
 The configuration of the RS485 Extension is the same as it can be
 done through a Master Brick. See the  
