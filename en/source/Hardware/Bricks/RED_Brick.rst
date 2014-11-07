@@ -59,14 +59,14 @@ A program that controls Bricks and Bricklets can be written and tested
 on a normal PC/Mac. Afterwards the program can be transferred to the RED Brick
 by the press of a button and can then be executed without any changes. Multiple 
 programs can be executed simultaneously. The execution of programs can be
-scheduled (execution on bootup, every hour, etc.) and monitored.
+scheduled (execution on boot up, every hour, etc.) and monitored.
 
 This approach enables a very easy and very fast solution for embedded 
 programming. To our knowledge there is no other solution available that is
 even remotely comparable. 
 
 For each supported programming language the :ref:`Tinkerforge API <api_bindings>` 
-and commonly used software libraries are preinstalled on the system. Other 
+and commonly used software libraries are pre-installed on the system. Other 
 necessary libraries can be installed manually.
 
 The Brick is equipped with a `Micro-HDMI <http://en.wikipedia.org/wiki/HDMI>`__
@@ -128,7 +128,7 @@ card into the :ref:`Micro SD Card slot <red_brick_micro_sd_card_slot>` of the
 RED Brick. The location of it and an overview of the different hardware 
 interfaces of the RED Brick is given in the 
 :ref:`Hardware Section <red_brick_hardware>`. You can order a SD card with 
-preinstalled image in our shop. Otherwise you have to 
+pre-installed image in our shop. Otherwise you have to 
 :ref:`copy the image to your card <red_brick_copy_image>`. 
 
 After that your RED Brick is ready to go and can be connected to your PC or Mac 
@@ -233,9 +233,25 @@ bit and press the refresh button again.
 
 .. _red_brick_brick_settings_brickd:
 
+In the *Brick Daemon* section of this tab you can configure
+all of the Brick Daemon settings.
+
+The configuration includes the listen address, port, port for web sockets
+and the authentication secret in the *General* subsection as well as more
+low level configurations in the *Advanced* subsection. The LED trigger
+for the red and green LED can also be set here.
+
 .. _red_brick_brick_settings_date:
 
-TODO: Brick Daemon and Date/Time section
+In the *Date/Time* section you can sync the clock of the RED Brick to
+the clock of your PC. There is no battery on the RED Brick, so the
+time won't be incremented if the RED Brick is not powered.
+
+If you have a connection to the internet (trough the Ethernet Extension
+or a USB WIFI dongle), the date and time are automatically set by
+NTP. You only have to configure the timezone, which is saved even if
+the RED Brick is powered down.
+
 
 .. _red_brick_brickv_program:
 
@@ -435,8 +451,8 @@ The blue LED is directly connected to the internal power supply of the
 processor. The LED is on if the Brick is powered.
 
 The red LED shows if an error is present. If the red LED stays on during 
-startup, no image could be found. There may be no sd card inserted or there is 
-no valid image on the sd card.
+startup, no image could be found. There may be no SD card inserted or there is 
+no valid image on the SD card.
 
 The green LED shows the current state. If on startup the red LED is off
 and the green LED does not turn on, Linux couldn't boot properly. During
@@ -488,7 +504,7 @@ mouses or USB touchscreens.
 
 Some Ethernet or WIFI dongles can be directly configured with the Brick Viewer. 
 Supported dongles can be found in our shop (TODO Link). Other devices might have
-to be configured directly in the linux system and can't be configured with the 
+to be configured directly in the Linux system and can't be configured with the 
 Brick Viewer.
 
 The :ref:`Full image <red_brick_images>` supports a graphical user interface,
