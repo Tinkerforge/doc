@@ -79,7 +79,7 @@ be extended by an Ethernet interface. The
 :ref:`RS485 Master Extension <rs485_extension>` can be used to connect
 other remote stacks of Bricks and Bricklets.
 
-Advanced users can use the RED Brick with full access on the underlying 
+Advanced users can use the RED Brick with full access to the underlying 
 `Debian <http://www.debian.org>`__ system. Over a GPIO FPC header, 
 the expert user can directly access gpio/spi/i2c pins for individual
 hardware development.
@@ -117,9 +117,9 @@ Resources
 First Steps / Test your RED Brick
 ---------------------------------
 
-With the following instructions you test your RED Brick.
+With the following instructions you can test your RED Brick.
 
-A full step-by-step tutorial how to use the RED Brick can be found here: 
+A full step-by-step tutorial regarding the RED Brick can be found here: 
 :ref:`RED Brick Tutorial <tutorial_red_brick>`.
 
 First install the :ref:`Brick Daemon <brickd>` and the
@@ -142,8 +142,8 @@ labeled with "RED Brick". Click on it.
 TODO: Image RED Brick Tab.
 
 On the left side of the tab you see different additional tabs. The "Overview" 
-tab shows different information about the CPU load, 
-memory usage and other status informations. This means that your RED Brick
+tab shows information about the CPU load, 
+memory usage and other status information. This means that your RED Brick
 works as expected and you can start to upload your programs. See the 
 :ref:`Brick Viewer Chapter <red_brick_brickv>` on how to configure the Brick
 and how to upload your programs.
@@ -153,7 +153,7 @@ user interface. To do so, connect a monitor to the
 :ref:`HDMI Port <red_brick_hdmi>` and a USB hub with keyboard and 
 mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
 power the Brick you can see the LXDE desktop environment booting. After 
-the boot process you should be able to use it like a normal desktop PC.
+the boot process you should be able to use it as a normal desktop PC.
 
 
 .. _red_brick_brickv:
@@ -162,36 +162,36 @@ Brick Viewer
 ------------
 This section describes the configuration of the RED Brick with the 
 :ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by 
-the :ref:`RED Brick API <red_brick_programming_interface>`.
+the :ref:`RED Brick API <red_brick_programming_interface>` (not recommended).
 
 TODO Image with marked tabs and label row
 
 The RED Brick representation in Brick Viewer consists of different tabs, each 
-described in detail below. Above the tabs the UID of the RED Brick, its position
+described in detail below. Additionally the UID of the RED Brick, the position
 in the stack, the name of the used image, number of timeouts and the word
 *System* is shown. If you click on it, you can restart the Brick Daemon on the 
-RED Brick and reboot, or shut down the RED Brick.
+RED Brick and reboot, or shut down the RED Brick itself.
 
 Overview Tab (Status Information)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 TODO default Tab Screenshot
 
-This is tab is selected as default. It shows you the time your RED Brick is 
-running (Uptime) and the usage of CPU, memory (RAM) and storage. You can see 
-the top processes based on CPU or memory usage and the up- and download of the 
-configured network interfaces. 
+This tab is selected as default. It shows the uptime of your RED Brick
+and the usage of CPU, memory (RAM) and storage. You can see 
+the top processes based on CPU or memory usage and the up- and download speed
+of the configured network interfaces. 
 
 The list can contain the following possible network interfaces
 
-* ``lo``: This is the loopback interface. It is a local interface, e.g. used for
+* ``lo``: This is the loopback interface. It is a local interface, used for
   the communication between your program and the local Brick Daemon.
 * ``wlan0`` : This is a WIFI interface. It is created if you attach a WIFI 
-  dongle to the :ref:`USB Host connector <red_brick_usb_host>`
+  dongle to the :ref:`USB Host connector <red_brick_usb_host>`.
 * ``eth0`` : This is a Ethernet interface. It is created if you attach a 
-  Ethernet dongle to the :ref:`USB Host connector <red_brick_usb_host>`
-* ``tf0`` : This is the Ethernet interface created if you plug an 
-  :ref:`Ethernet Extension <ethernet_extension>` on top of the RED Brick
+  Ethernet dongle to the :ref:`USB Host connector <red_brick_usb_host>`.
+* ``tf0`` : This is the Ethernet interface created if you add an 
+  :ref:`Ethernet Extension <ethernet_extension>` on top of the RED Brick.
 
 The data in the overview tab is refreshed every 3 seconds.
 
@@ -199,8 +199,11 @@ The data in the overview tab is refreshed every 3 seconds.
 
 Settings Tab (Network, Brick Daemon, Date/Time)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In the *Network* section of this tab you can configure every network related
-setting.
+
+.. _red_brick_brick_settings_network:
+
+In the *Network* section of this tab you can configure settings
+related to networking.
 
 TODO Image General subsection
 
@@ -210,10 +213,10 @@ status. It additionally shows you the currently used network interface.
 TODO Image Wireless subsection
 
 The *Wireless* subsection is only active if you attach a USB WIFI dongle.
-Supported devices can be found in our shop (TODO Link). You can see the
+Supported dongles can be found in our shop (TODO Link). You can see the
 currently used interface and its status, can select the interface which should 
 be used. You can select an Access Point to connect, configure encryption and
-set static or dynamic IP.
+set a static or dynamic IP.
 
 TODO Image Wired subsection
 
@@ -223,6 +226,16 @@ Ethernet Extension as ``tf0``. To configure an interface, choose it, select if
 it should be used with a static IP or with DHCP and configure it properly.
 If you have configured everything press the *Save* button.
 
+Please note that it can take a few seconds to obtain an IP through DHCP or
+to connect to a WIFI network. If the new configuration doesn't immediately
+show up in the *General* subsection you likely just have to wait a little
+bit and press the refresh button again.
+
+.. _red_brick_brick_settings_brickd:
+
+.. _red_brick_brick_settings_date:
+
+TODO: Brick Daemon and Date/Time section
 
 .. _red_brick_brickv_program:
 
@@ -239,9 +252,10 @@ If you have attached the RED Brick over its
 a USB serial interface. This serial interface can be used to access the Linux
 shell of the Brick. Select the serial port of the Brick and press *Connect*.
 Under Linux the typical interface is ``/dev/ttyACM0`` under Windows it is
-``TODO``. You will be logged in as user **tf** with password **tf**. If you are 
-not sure what the right port is test all, until you see the shell. It might be 
-necessary to press ENTER to see the prompt. 
+``TODO`` and on OS X usually shows up as ``TODO``. You can log in as user 
+**tf** with password **tf**. If you are not sure what the right port is test
+them all, until you see the shell. It might be necessary to press ENTER to 
+see the prompt. 
 
 A good shell tutorial can be found at 
 `linuxcommand.org <http://linuxcommand.org/lc3_learning_the_shell.php>`__.
@@ -249,32 +263,55 @@ A good shell tutorial can be found at
 Versions Tab (Daemon, Bindings and Libraries)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The versions tab shows version information of the installed Brick Daemon, RED 
-Brick API Daemon, of the installed Bindings and their associated libraries.
+The versions tab shows version information of the installed Brick Daemon and
+RED Brick API Daemon as well as the installed Bindings and their associated 
+libraries.
 
 If you want to use other libraries than the installed ones, you can 
 :ref:`upload <red_brick_brickv_program>` them with your program or use the 
-:ref:`console <red_brick_brickv_console>` to install them.
+:ref:`console <red_brick_brickv_console>` to install them via ``apt-get``, 
+``pip``, ``pear``, ``npm`` or similar package managers. They are all
+installed in both images.
 
 Extensions Tab (Configure, Manage)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Two different :ref:`Master Extensions <master_extension>` are supported by the 
+Two :ref:`Master Extensions <master_extension>` are supported by the 
 RED Brick: :ref:`Ethernet Extension <ethernet_extension>` and 
 :ref:`RS485 Extension <rs485_extension>`.
 
 **Ethernet Extension**
 
-The Ethernet Extension will be configured over the 
-:ref:`Settings Tab <red_brick_brick_settings>`. Only the MAC address is 
-configured here if necessary. 
+Only MAC address of the Ethernet Extension can be changed here.
+Since the Ethernet Extension shows up as a normal network interface in the
+underlying Linux, you can configure it like any other network interface
+through the :ref:`Settings Tab <red_brick_brick_settings>`.
 
 **RS485 Extension**
 
-The configuration of the RS485 Extension is 
-described in the 
+The configuration of the RS485 Extension is the same as it can be
+done through a Master Brick. See the  
 :ref:`RS485 Extension documentation <rs485_configuration>`.
 
+The recommended baudrates to be used on the RED Brick are
+
+* 500000,
+* 250000,
+* 166666,
+* 125000,
+* 100000,
+* 83333,
+* 71428,
+* 62500,
+* 55555,
+* 50000,
+* 45454 or
+* 41666.
+
+
+Changing the settings on either of the Extensions will restart the
+Brick Daemon on the RED Brick, i.e. your RED Brick tab in the Brick 
+Viewer will disappear for a few seconds and then pop up again. 
 
 .. _red_brick_images:
 
@@ -283,7 +320,7 @@ RED Brick Software Images
 
 The RED Brick software image is stored on a Micro SD-Card. It is a modified
 `Debian <http://www.debian.org/>`__ image and available in two different 
-versions. The ''full'' and the ''fast'' image. Both images supports the 
+versions. The ''full'' and the ''fast'' image. Both images support the 
 execution of your code and come with the full suite of Tinkerforge
 libraries. 
 
@@ -292,20 +329,20 @@ and all necessary graphical user interface libraries.
 It boots an X server and the `LXDE desktop environment <http://www.lxde.org>`__ 
 with auto login. If the program you run on the RED Brick uses a graphical 
 interface it will show up on the desktop. The screen resolution should
-automatically adapt to the prefered resolution of the connector HDMI monitor. 
-If you want to change it, you can configure the screen resolution over LXDE. Of 
-course you don't have to use the HDMI port and can execute non graphical 
+automatically adapt to the preferred resolution of the connected HDMI monitor. 
+If you want to change it, you can configure the screen resolution through LXDE. 
+You don't have to use the HDMI port and can execute non graphical 
 programs on this image.
 
 The **fast image** comes without graphical interface support and has no X, LXDE 
-and other graphical libraries preinstalled. Drivers for the GPU are not loaded,
+and other graphical libraries pre-installed. GPU drivers are not loaded,
 which means that the RED Brick has more available RAM (the RAM is shared between
 CPU and GPU). It is optimized for a fast boot time and can boot in ~10s.
 
 New software can be installed on both images.
 See the `installing section <TODO>`__ on how to install new software.
 
-The list of installed programming language libraries can be found below:
+The list of pre-installed programming language libraries can be found below:
 
 * `Full Image Installed Programs List <TODO_Link_to_download_page>`__.
 * `Fast Image Installed Programs List <TODO_Link_to_download_page>`__.
@@ -320,25 +357,23 @@ The images can be downloaded from the:
 `download page <TODO_Link_to_download_page>`__.
 
 
-
-
 .. _red_brick_build_image:
 
 Build your Own Image
 ^^^^^^^^^^^^^^^^^^^^
 
-The building steps are documented for `Debian Linux <https://www.debian.org/>`__
-as building platform.
+For the building steps we are assuming a `Debian Linux <https://www.debian.org/>`__
+or derivative (Ubuntu etc) as the host platform.
 
-1. Check out RED Brick Git
+1. Check out RED Brick Git::
 
     git clone https://github.com/Tinkerforge/red-brick
 
-2. Move into folder *image*, open the README.rst file and execute the documented 
+2. Move into the folder *image*, open the README.rst file and execute the documented 
    steps.
 
-The build process will take several hours up to one day, dependent on the power
-of your building platform.
+The build process will take at least 4-6 hours, depending on the processing power
+of your PC it might also take considerably longer.
 
 
 .. _red_brick_copy_image:
@@ -347,13 +382,13 @@ Copy Image on SD Card
 ^^^^^^^^^^^^^^^^^^^^^
 
 1. Download the 
-   :ref:`full image or the fast image <red_brick_images>` of the RED Brick:
+   :ref:`full image or the fast image <red_brick_images>` from the RED Brick:
    `Download page  <TODO_Link_to_download_page>`__
 
 2. Choose a suitable SD card. We recommend a fast SD card (e.g. class 10) with
-   enough space. You find the size of the image on the download page.
+   enough space. You can find the size of the image on the download page.
 
-3. Transfer the image on the SD card:
+3. Transfer the image to the SD card:
 
     * On Windows use a tool like Win32DiskImager to transfer the image to the card.
 
@@ -367,7 +402,6 @@ Copy Image on SD Card
         * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=1M
 
             * e.g.: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
-
 
 
 .. _red_brick_hardware:
@@ -386,7 +420,7 @@ TODO: Image of Power Button
 The button on the RED Brick is a power button. Press it longer than 5 seconds
 and the RED Brick will turn off immediately. 
 If the Brick is off, press the button until the blue LED lights up and 
-the Brick starts booting again. 
+the Brick will boot again. 
 
 .. _red_brick_leds:
 
@@ -405,13 +439,22 @@ startup, no image could be found. There may be no sd card inserted or there is
 no valid image on the sd card.
 
 The green LED shows the current state. If on startup the red LED is off
-and the green LED does not turn on, Linux couldn't start booting. During
-boottime the green LED turns on. After the RED Brick has booted up
+and the green LED does not turn on, Linux couldn't boot properly. During
+boot-time the green LED turns on. After the RED Brick has booted up
 and all of the services are available the green led starts showing a
 heartbeat.
 
-You can change the function of the green and red LED after bootup to 
-`show cpu or sd card usage <TODO>`__ instead of a heartbeat.
+To summarize, a proper boot up of the RED Brick will result in the following
+sequence:
+
+1. Blue and red on, green off (power on).
+2. Red turns off (U-Boot loaded).
+3. Green turns on (Linux boots).
+4. Green starts heartbeat (Linux booted successfully and all services available).
+
+You can change the function of the green and red LED. They can also 
+`show cpu or sd card usage <red_brick_brick_settings_brickd>`__ instead of a 
+heartbeat.
 
 .. _red_brick_micro_sd_card_slot:
 
@@ -420,9 +463,9 @@ Micro SD Card Slot
 
 TODO: Image of SD Card Slot
 
-The linux system and your data is stored on a Micro SD card. The slot
+The Linux system and your data is stored on a Micro SD card. The slot
 is located at the bottom side of the Brick. 
-Micro SD cards (Version 1.0), Micro SDHC (2.0) and Micro SDXC (3.0) cards
+Micro SD (1.0), Micro SDHC (2.0) and Micro SDXC (3.0) cards
 are supported. As a minimum we recommend a class 10 Micro SD Card to ensure
 fast reads and writes.
 
@@ -457,8 +500,9 @@ which can be controlled by standard USB keyboards, mouses or touchscreens.
 Mini USB
 ^^^^^^^^
 
-With the mini USB connector, the RED Brick can be configurable through the
-Brick Viewer. It can also be used to power the Brick.
+With the Mini USB connector, the RED Brick can be configured through the
+Brick Viewer (see :ref`Brick Viewer <red_brick_brickv>`__. It can also be used 
+to power the Brick.
 
 
 .. _red_brick_hdmi:
@@ -469,8 +513,8 @@ Micro HDMI
 TODO: Image HDMI connector
 
 With the Micro `HDMI <http://en.wikipedia.org/wiki/HDMI>`__ connector 
-(also called type D), all standard monitors and televisions can be connected to 
-the RED Brick. The connector is active only in the 
+(also called type D), all standard HDMI monitors and TVs can be connected to 
+the RED Brick. The connector is only active in the 
 :ref:`full image <red_brick_images>`. HDMI Ethernet Channel (HEC) is not 
 supported.
 
@@ -482,10 +526,16 @@ TODO: Image Stack connector
 
 The RED Brick can control up to eight Bricks through the stack connectors.
 Additionally up to two Master Extensions can be used with the RED Brick. 
-At the moment the RS485 Extension all versions of
-the Ethernet Extension are supported. The Ethernet Extension shows up as a
-normal ethernet interface on the underlying Linux system.
-A Step Down Power Supply can be put below the RED Brick and can 
+Currently only the RS485 Extension all versions of
+the Ethernet Extension are supported. 
+
+The WIFI Extension is currently not supported. We recommend to use a USB 
+WIFI dongle to add WIFI connectivity to the RED Brick. 
+
+The Ethernet Extension shows up as a
+normal Ethernet interface in the underlying Linux system.
+
+A Step-Down Power Supply can be put below the RED Brick and can 
 power the whole stack.
 
 GPIO Header
@@ -494,8 +544,8 @@ GPIO Header
 .. note:: 
 
    This header is intended for advanced users to connect their own hardware. 
-   There is no software support in the moment for any function of this GPIO
-   connector.
+   Currently there is no software support for any of the functions of this 
+   GPIO connector.
 
 TODO Image Header
 
@@ -547,7 +597,6 @@ power it and a Master Brick with a few connected Bricklets. If you use a
 larger setup, calculate the power requirements and choose a suitable power 
 supply with enough power reserves. Don't forget to add the consumption of 
 additionally connected USB devices.
-
 
 
 .. _red_brick_faq:
