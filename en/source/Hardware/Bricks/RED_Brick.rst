@@ -644,7 +644,7 @@ Mini USB
 ^^^^^^^^
 
 With the Mini USB connector, the RED Brick can be configured through the
-Brick Viewer (see :ref`Brick Viewer <red_brick_brickv>`__. It can also be used 
+Brick Viewer (see :ref:`Brick Viewer <red_brick_brickv>`. It can also be used 
 to power the Brick.
 
 
