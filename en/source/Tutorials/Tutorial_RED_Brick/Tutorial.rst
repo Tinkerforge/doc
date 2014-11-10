@@ -32,7 +32,7 @@ Bricklet. If you develop your application, you might use other Bricks, Bricklets
 and programming language, but the concepts and workflow stays the same.
 	
 
-Install necessary Software
+Install necessary software
 --------------------------
 
 At first you need to :ref:`install the Brick Daemon <brickd_installation>` and 
@@ -78,7 +78,7 @@ software and click on **Connect**. Now the RED Brick tab, a Master Brick,
 Barometer Bricklet and LCD20x4 Bricklet tab should come up. You might want to
 click through the tabs to test the connected hardware.
 
-Run Example Program
+Run example program
 -------------------
 
 Before writing your first program you have to take a look in the API 
@@ -96,7 +96,7 @@ LCD20x4 Bricklet tab.
 Execute this program on your PC. If everything went as expected, you should see
 "Hello World" in the first line of the LCD20x4 Bricklet.
 
-Execute the Program on the RED Brick
+Execute the program on the RED Brick
 ------------------------------------
 
 We have tested the example program and know that it is working correctly. Next 
@@ -146,12 +146,12 @@ Click on the **Start Upload** Button to upload the file. After that click on
 **Finish**. You should now see the text "Hello World" in the first line of your 
 LCD20x4 Bricklet. 
 
-Gain Web Access
----------------
+Gain internet access
+--------------------
 
 TODO: Screenshot Brickv Screenshot
 
-We need web access for the following example. The Ethernet Extension is already 
+We need internet access for the following example. The Ethernet Extension is already 
 connected to the RED Brick, next we have to configure it. The procedure is 
 described :ref:`here <red_brick_brick_settings>`. Connect it to your hub, router
 or switch. If everything works as expected you can see a configured **tf0** 
@@ -161,8 +161,8 @@ interface in the **General** tab of the network settings.
 TODO: Screenshot Brickv configured interface
 
 
-Development of your own Program
--------------------------------
+Develop a custom program
+------------------------
 
 Now it is time to write your own program. As mentioned we want to display 
 weather information gained from the web together with the measured air pressure 
@@ -201,3 +201,19 @@ problems during execution.
 
 You have now learned all necessary steps to develop with the RED Brick.
 
+Develop a custom GUI
+--------------------
+
+pyqt
+
+
+
+Develop a custom web interface
+------------------------------
+
+.. image:: /Images/Screenshots/red_brick_tutorial_web_interface_schedule.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick web interface scheduler configuration.
+   :align: center
+
+index.php
