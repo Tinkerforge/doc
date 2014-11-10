@@ -71,7 +71,7 @@ necessary libraries can be installed manually.
 
 The Brick is equipped with a `Micro-HDMI <http://en.wikipedia.org/wiki/HDMI>`__
 connector, which can be used by programs to show a graphical user interface. A
-`USB2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
+`USB 2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
 connect WIFI dongles, mice, keyboards, touchscreens and similar.
 
 With an :ref:`Ethernet Master Extension <ethernet_extension>` the RED Brick can 
@@ -90,19 +90,19 @@ hardware development.
 Technical Specifications
 ------------------------
 
-=============================  ============================================================================
+=============================  ==============================================================================
 Property                       Value
-=============================  ============================================================================
+=============================  ==============================================================================
 Dimensions (W x D x H)         40 x 40 x 16mm (1.57 x 1.57 x 0.63")
 Weight                         TBD g
 Power Consumption              TBD mW or 5V/TBDmA (idle), TBD mW or 5V/TBDmA (100% load)
------------------------------  ----------------------------------------------------------------------------
+-----------------------------  ------------------------------------------------------------------------------
 
------------------------------  ----------------------------------------------------------------------------
+-----------------------------  ------------------------------------------------------------------------------
 Processor                      Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
 Memory                         512MB DDR3 SDRAM, Micro SD Card as Flash
-Connectors                     USB2.0, micro HDMI (type D), micro USB, Stack connectors, GPIO FPC connector
-=============================  ============================================================================
+Connectors                     USB 2.0, micro HDMI (type D), micro USB, Stack connectors, GPIO FPC connector
+=============================  ==============================================================================
 
 
 Resources
@@ -150,7 +150,7 @@ and how to upload your programs.
 
 Users of the :ref:`Full image <red_brick_images>` can test the graphical 
 user interface. To do so, connect a monitor to the 
-:ref:`HDMI Port <red_brick_hdmi>` and a USB hub with keyboard and 
+:ref:`HDMI port <red_brick_hdmi>` and a USB hub with keyboard and
 mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
 power the Brick you can see the LXDE desktop environment booting. After 
 the boot process you should be able to use it as a normal desktop PC.
@@ -160,6 +160,7 @@ the boot process you should be able to use it as a normal desktop PC.
 
 Brick Viewer
 ------------
+
 This section describes the configuration of the RED Brick with the 
 :ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by 
 the :ref:`RED Brick API <red_brick_programming_interface>` (not recommended).
@@ -617,13 +618,13 @@ A description of the images can be found in the
 
 .. _red_brick_usb_host:
 
-USB2.0 Host
-^^^^^^^^^^^
+USB 2.0 Host
+^^^^^^^^^^^^
 
 TODO: Image of USB Port
 
 The RED Brick is equipped with a standard 
-`USB2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mbps) type A jack. It can 
+`USB 2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mbps) type A jack. It can
 power other USB devices with up to 7.5W (5V/1.5A) and is short circuit 
 protected. Both, full and fast image are based on Debian Linux and support 
 typical USB devices like WIFI or Ethernet dongles, webcams, printers, keyboards, 
@@ -634,7 +635,7 @@ Supported dongles can be found in our shop (TODO Link). Other devices might have
 to be configured directly in the Linux system and can't be configured with the 
 Brick Viewer.
 
-The :ref:`Full image <red_brick_images>` supports a graphical user interface,
+The :ref:`full image <red_brick_images>` supports a graphical user interface,
 which can be controlled by standard USB keyboards, mouses or touchscreens.
 
 
@@ -644,8 +645,7 @@ Mini USB
 ^^^^^^^^
 
 With the Mini USB connector, the RED Brick can be configured through the
-Brick Viewer (see :ref:`Brick Viewer <red_brick_brickv>`. It can also be used 
-to power the Brick.
+:ref:`Brick Viewer <red_brick_brickv>`. It can also be used to power the Brick.
 
 
 .. _red_brick_hdmi:
