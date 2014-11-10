@@ -174,12 +174,12 @@ The RED Brick representation in Brick Viewer consists of different tabs, each
 described in detail below. Additionally the UID of the RED Brick, the position
 in the stack, the name of the used image, number of timeouts and the word
 *System* is shown. If you click on it, you can restart the Brick Daemon on the 
-RED Brick and reboot, or shut down the RED Brick itself.
+RED Brick and reboot or shut down the RED Brick itself.
 
 Overview Tab (Status Information)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This tab is selected as default. It shows the uptime of your RED Brick
+This tab is selected by default. It shows the uptime of your RED Brick
 and the usage of CPU, memory (RAM) and storage. You can see 
 the top processes based on CPU or memory usage and the up- and download speed
 of the configured network interfaces. 
@@ -189,7 +189,7 @@ of the configured network interfaces.
    :alt: Screenshot of overview tab.
    :align: center
 
-The list can contain the following possible network interfaces
+The list can contain the following network interfaces
 
 * ``lo``: This is the loopback interface. It is a local interface, used for
   the communication between your program and the local Brick Daemon.
@@ -377,7 +377,7 @@ uploaded binaries.
 
 Besides the default web interface you can also put your own
 web interfaces on the RED Brick. Currently we support web applications
-written in HTML/JavaScript, Python and PHP. If you uploaded an ``index.py``, 
+written in HTML/JavaScript, Python and PHP. If you upload an ``index.py``, 
 ``index.php`` or ``index.html`` the respective file will be used as 
 directory index for the binary folder.
 
@@ -597,7 +597,7 @@ sequence:
 4. Green starts heartbeat (Linux booted successfully and all services available).
 
 You can change the function of the green and red LED. They can also 
-`show cpu or sd card usage <red_brick_brick_settings_brickd>`__ instead of a 
+:ref:`show cpu or sd card usage <red_brick_brick_settings_brickd>` instead of a 
 heartbeat.
 
 .. _red_brick_micro_sd_card_slot:
