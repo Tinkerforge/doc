@@ -269,6 +269,12 @@ or a USB WIFI dongle), the date and time are automatically set by
 NTP. You only have to configure the timezone, which is saved even if
 the RED Brick is powered down.
 
+If you need the correct time after bootup but you can't guarantee
+or can't obtain internet access, you can also use the GPS Bricklet.
+You can find a small
+`program on github <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__ 
+that you can upload to the RED Brick to sync the Linux system time with
+the GPS time.
 
 .. _red_brick_brickv_program:
 
