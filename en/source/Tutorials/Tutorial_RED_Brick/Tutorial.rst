@@ -191,7 +191,7 @@ TODO: Screenshot Brickv Screenshot
 
 Now that you have internet access, you can can easily do IoT and similar
 applications. Another advantage of internet access is, that the RED Brick
-will now automatically use `NTP <http://en.wikipedia.org/wiki/Network_Time_Protocol>`__ 
+will automatically use `NTP <http://en.wikipedia.org/wiki/Network_Time_Protocol>`__ 
 and thus have a correct system time.
 
 This means that you can now add a time to each measured temperature.
@@ -251,9 +251,9 @@ Develop a custom RED Brick web interface
  :tab-width: 4
 
 
-.. image:: /Images/Screenshots/red_brick_tutorial_web_interface_schedule.jpg
+.. image:: /Images/Screenshots/red_brick_tutorial_web_interface_execution.jpg
    :scale: 100 %
-   :alt: Screenshot of RED Brick web interface scheduler configuration.
+   :alt: Screenshot of RED Brick web interface execution configuration.
    :align: center
 
 .. image:: /Images/Screenshots/red_brick_tutorial_web_interface.jpg
