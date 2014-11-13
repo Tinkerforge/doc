@@ -742,7 +742,7 @@ Power Supply
 
 The RED Brick needs to be powered by a 5V supply. It can be powered through 
 the Mini USB connector or a Step-Down Power Supply. A single RED Brick needs
-up to TODO Watts, so that a typical 5W (5V/1A) USB power supply will suffice to
+up to 1.1 Watts, so that a typical 5W (5V/1A) USB power supply will suffice to
 power it and a Master Brick with a few connected Bricklets. If you use a 
 larger setup, calculate the power requirements and choose a suitable power 
 supply with enough power reserves. Don't forget to add the consumption of 
@@ -758,6 +758,7 @@ FAQ
 * Q: I connected the RED Brick to my Linux PC. Why is there no ``/dev/ttyACM0``
   device to access its serial console?
 * A: The ``cdc_acm`` driver has to be loaded for this to work.
+
 
 * Q: The red and blue LED are on. But nothing happens.
 * A: The image is not booting. Please check your micro SD Card.
