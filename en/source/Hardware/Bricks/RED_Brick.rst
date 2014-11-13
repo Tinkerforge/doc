@@ -48,6 +48,7 @@ Description
  * `RED Brick Software Infrastructure <http://www.tinkerforge.com/en/blog/2014/6/20/red-brick-software-infrastructure>`__
  * `RED Brick in EMC laboratory <http://www.tinkerforge.com/en/blog/2014/8/28/red-brick-in-emc-laboratory>`__
  * `RED Brick status report <http://www.tinkerforge.com/en/blog/2014/10/16/red-brick-status-report>`__
+ * `The RED Brick Countdown has started <http://www.tinkerforge.com/en/blog/2014/11/12/the-red-brick-countdown-has-started>`__
 
 The Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) can 
 control other :ref:`Bricks <primer_bricks>` and 
