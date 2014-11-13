@@ -93,7 +93,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
-Gewicht                           TBDg
+Gewicht                           14g
 Stromverbrauch                    TBDmA
 ================================  ============================================================
 
