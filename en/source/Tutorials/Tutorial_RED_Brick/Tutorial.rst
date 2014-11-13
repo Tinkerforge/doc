@@ -187,7 +187,10 @@ Now you can see the configured **tf0** interface in the **General**
 tab of the network settings. If you use DHCP you may have to click
 **Refresh** a few times until the RED Brick received an IP.
 
-TODO: Screenshot Brickv Screenshot
+.. image:: /Images/Screenshots/red_brick_tutorial_network_general.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick network settings.
+   :align: center
 
 Now that you have internet access, you can can easily do IoT and similar
 applications. Another advantage of internet access is, that the RED Brick
@@ -209,6 +212,14 @@ You can upload this program the same way as before.
 Develop a custom RED Brick GUI
 ------------------------------
 
+.. note::
+    GUI on the RED Brick only works with the full image.
+
+Another type of program that the RED Brick can execute is a GUI program
+that is shown on the HDMI output.
+In this example we will add a Qt GUI to the simple Temperature Bricklet
+program.
+
 `Download (example_gui_red.py) <https://github.com/Tinkerforge/doc/TODO/example_gui_red.py>`__
 
 .. literalinclude:: example_gui_red.py
@@ -216,25 +227,54 @@ Develop a custom RED Brick GUI
  :linenos:
  :tab-width: 4
 
+The GUI has a label that is refreshed with the current temperature
+every second. Additionally there is a *Refresh* button that forces
+a refresh of the label. 
+
+You can upload this program the same way as the other Python programs
+before, with two small differences:
 
 .. image:: /Images/Screenshots/red_brick_tutorial_gui_environment.jpg
    :scale: 100 %
    :alt: Screenshot of RED Brick GUI environment.
    :align: center
 
+In step 4 you need to add the environment variable **DISPLAY** with
+a value of **:0**. With this configuration the GUI will be shown on
+the RED Brick desktop that is running on the full image. Adding this
+variable is necessary, the program will not be able to start otherwise.
+
 .. image:: /Images/Screenshots/red_brick_tutorial_gui_schedule.jpg
    :scale: 100 %
    :alt: Screenshot of RED Brick GUI schedule.
    :align: center
+
+For the scheduler you may want to choose **Always** and tick off
+**Continue After Error**. With this configuration your GUI will be
+automatically restarted if is closed and also if it fails with
+an error.
+
+On the RED Brick desktop the simple GUI looks as follows:
 
 .. image:: /Images/Screenshots/red_brick_tutorial_gui.jpg
    :scale: 100 %
    :alt: Screenshot of RED Brick Temperature GUI.
    :align: center
 
-
 Develop a custom RED Brick web interface
 ----------------------------------------
+
+If your RED Brick has a network interface (WIFI dongle or Ethernet Extension),
+you can also use it to display a dynamic web page. Currently we support
+HTML/JavaScript, PHP and Python for this purpose.
+
+Please look at the :ref:`RED Brick web interface documentation <red_brick_web_interface>`
+for more information about the web interface. Basically you can call
+your start point index.html, index.php or index.py and it will automatically
+be used as a directory index.
+
+Our simple Temperature Bicklet program as a web interface looks as follows
+(Python and PHP):
 
 `Download (index.py) <https://github.com/Tinkerforge/doc/TODO/index.py>`__
 
@@ -250,11 +290,18 @@ Develop a custom RED Brick web interface
  :linenos:
  :tab-width: 4
 
+If your program is used as a web interface, you don't need to configure
+your executable, arguments, environment and working directory. The steps
+4-6 will actually be skipped if you choose **Web Interface** in Step 3:
 
 .. image:: /Images/Screenshots/red_brick_tutorial_web_interface_execution.jpg
    :scale: 100 %
    :alt: Screenshot of RED Brick web interface execution configuration.
    :align: center
+
+To take a look at your web interface go to the IP address or hostname of
+your RED Brick with a browser and click on the **Bin** button of your
+program. Your index file will be used automatically:
 
 .. image:: /Images/Screenshots/red_brick_tutorial_web_interface.jpg
    :scale: 100 %
