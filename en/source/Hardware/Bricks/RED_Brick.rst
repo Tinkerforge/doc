@@ -29,7 +29,7 @@ Features
 
 * Controls other Bricks and Bricklets
 * Executes your program directly
-* Supports many high level programming languages
+* Supports nearly all programming languages
 
 .. _red_brick_description:
 
@@ -62,9 +62,9 @@ by the press of a button and can then be executed without any changes. Multiple
 programs can be executed simultaneously. The execution of programs can be
 scheduled (execution on boot up, every hour, etc.) and monitored.
 
-This approach enables a very easy and very fast solution for embedded 
-programming. To our knowledge there is no other solution available that is
-even remotely comparable. 
+This approach enables a very easy and very fast solution to realize projects. 
+To our knowledge there is no other solution available that is even remotely 
+comparable. 
 
 For each supported programming language the :ref:`Tinkerforge API <api_bindings>` 
 and commonly used software libraries are pre-installed on the system. Other 
@@ -129,7 +129,7 @@ card into the :ref:`Micro SD Card slot <red_brick_micro_sd_card_slot>` of the
 RED Brick. The location of it and an overview of the different hardware 
 interfaces of the RED Brick is given in the 
 :ref:`Hardware Section <red_brick_hardware>`. You can order a SD card with 
-pre-installed image in our shop. Otherwise you have to 
+pre-installed image in our shop (TODO Link?). Otherwise you have to 
 :ref:`copy the image to your card <red_brick_copy_image>`. 
 
 After that your RED Brick is ready to go and can be connected to your PC or Mac 
@@ -144,13 +144,13 @@ TODO: Image RED Brick Tab.
 
 On the left side of the tab you see different additional tabs. The "Overview" 
 tab shows information about the CPU load, 
-memory usage and other status information. This means that your RED Brick
+memory usage and other status information. This view means that your RED Brick
 works as expected and you can start to upload your programs. See the 
-:ref:`Brick Viewer Chapter <red_brick_brickv>` on how to configure the Brick
+:ref:`Brick Viewer section <red_brick_brickv>` on how to configure the Brick
 and how to upload your programs.
 
 Users of the :ref:`Full image <red_brick_images>` can test the graphical 
-user interface. To do so, connect a monitor to the 
+user interface (HDMI). To do so, connect a monitor to the 
 :ref:`HDMI port <red_brick_hdmi>` and a USB hub with keyboard and
 mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
 power the Brick you can see the LXDE desktop environment booting. After 
@@ -164,7 +164,8 @@ Brick Viewer
 
 This section describes the configuration of the RED Brick with the 
 :ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by 
-the :ref:`RED Brick API <red_brick_programming_interface>` (not recommended).
+the :ref:`RED Brick API <red_brick_programming_interface>` (only for power 
+users).
 
 .. image:: /Images/Screenshots/brickv_red_tab_and_labels.jpg
    :scale: 60 %
@@ -190,7 +191,7 @@ of the configured network interfaces.
    :alt: Screenshot of overview tab.
    :align: center
 
-The list can contain the following network interfaces
+The list can contain the following network interfaces:
 
 * ``lo``: This is the loopback interface. It is a local interface, used for
   the communication between your program and the local Brick Daemon.
@@ -220,18 +221,18 @@ status. It additionally shows you the currently used network interface.
 
 TODO Image Wireless subsection
 
-The *Wireless* subsection is only active if you attach a USB WIFI dongle.
-Supported dongles can be found in our shop (TODO Link). You can see the
+The *Wireless* subsection is only active if you attach a supported USB WIFI 
+dongle. Supported dongles can be found in our shop (TODO Link). You can see the
 currently used interface and its status, can select the interface which should 
 be used. You can select an Access Point to connect, configure encryption and
-set a static or dynamic IP.
+set a static or dynamic IP (DHCP).
 
 TODO Image Wired subsection
 
-The *Wired* subsection is only active if you attach a USB Ethernet dongle
-or an Ethernet Master Extension. The USB dongle will show up as ``eth0``, the
-Ethernet Extension as ``tf0``. To configure an interface, choose it, select if 
-it should be used with a static IP or with DHCP and configure it properly.
+The *Wired* subsection is only active if you attach a supported USB Ethernet 
+dongle or an Ethernet Master Extension. The USB dongle will show up as ``eth0``, 
+the Ethernet Extension as ``tf0``. To configure an interface, choose it, select 
+if it should be used with a static IP or with DHCP and configure it properly.
 If you have configured everything press the *Save* button.
 
 Please note that it can take a few seconds to obtain an IP through DHCP or
@@ -242,17 +243,19 @@ bit and press the refresh button again.
 .. _red_brick_brick_settings_brickd:
 
 In the **Brick Daemon section** of this tab you can configure
-all of the Brick Daemon settings.
+settings related to the local Brick Daemon.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_brickd.jpg
    :scale: 60 %
    :alt: Screenshot of settings tab showing brickd configurations.
    :align: center
 
-The configuration includes the listen address, port, port for web sockets
-and the authentication secret in the *General* subsection as well as more
-low level configurations in the *Advanced* subsection. The LED trigger
-for the red and green LED can also be set here.
+The configuration includes the listen address, the corresponding port, port for 
+web sockets and the authentication secret in the *General* subsection.
+WebSockets are used by the browser version of the 
+:ref:`JavaScript bindings <api-bindings-javascript>` to control Bricks and 
+Bricklets. More low level configurations can be found in the *Advanced* 
+subsection. The LED trigger for the red and green LED can also be set here.
 
 .. _red_brick_brick_settings_date:
 
@@ -271,8 +274,8 @@ NTP. You only have to configure the timezone, which is saved even if
 the RED Brick is powered down.
 
 If you need the correct time after bootup but you can't guarantee
-or can't obtain internet access, you can also use the GPS Bricklet.
-You can find a small
+or can't obtain internet access, you can also use the 
+:ref:`GPS Bricklet <bricklet_gps>` You can find a small
 `program on github <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__ 
 that you can upload to the RED Brick to sync the Linux system time with
 the GPS time.
