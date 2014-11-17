@@ -318,7 +318,7 @@ Nachfolgend ein Screenshot, das die Konsole mit dem Befehl ``htop`` zeigt.
 
 .. image:: /Images/Screenshots/brickv_red_tab_console.jpg
    :scale: 60 %
-   :alt: Screenshot des Console Tab zeigt htop.
+   :alt: Screenshot des Console Tab.
    :align: center
 
 Ein gutes Shell Tutorial kann unter 
@@ -328,8 +328,200 @@ gefunden werden.
 Versions Tab (Daemon, Bindings und Bibliotheken)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Der Version Tab gibt Informationen über den installierten Brick Daemon, RED 
+Brick API Daemon sowie die installierten Bindings und deren Bibliotheken.
+
+.. image:: /Images/Screenshots/brickv_red_tab_versions.jpg
+   :scale: 60 %
+   :alt: Screenshot des Versions Tab.
+   :align: center
+
+Wenn andere Bibliotheken, wie die installierten genutzt werden sollen, dann 
+können diese entweder mit dem eigenen Programm 
+:ref:`hochgeladen werden <red_brick_brickv_program>` oder aber mittels
+``apt-get``, ``pip``, ``pear``, ``npm`` oder aber eines ähnlichen Paketmanagers
+installiert werden. Die genannten Paketmanager sind in allen RED Brick Images 
+vorinstalliert.
+
+Extensions Tab (Konfiguration, Verwaltung)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Zwei :ref:`Master Extensions <master_extension>` werden vom RED Brick 
+unterstützt: :ref:`Ethernet Extension <ethernet_extension>` und 
+:ref:`RS485 Extension <rs485_extension>`.
+
+**Ethernet Extension**
+
+.. image:: /Images/Screenshots/brickv_red_tab_extension_ethernet.jpg
+   :scale: 60 %
+   :alt: Screenshot des Extension Tabs: Ethernet Extension Konfiguration.
+   :align: center
+
+Nur die MAC Adresse der Ethernet Extension kann hier geändert werden. Da diese
+als normale Netzwerkschnittstelle auftaucht, können die Netzwerkeinstellungen im 
+:ref:`Settings Tab <red_brick_brick_settings>` verändert werden.
+
+**RS485 Extension**
+
+.. image:: /Images/Screenshots/brickv_red_tab_extension_rs485.jpg
+   :scale: 60 %
+   :alt: Screenshot des Extension Tabs: RS485 Extension Konfiguration.
+   :align: center
+
+Die Konfiguration der RS485 Extension ist identisch zu der mittels einem Master 
+Brick. Siehe :ref:`RS485 Extension Dokumentation <rs485_configuration>`
+
+Wir empfehlen Baudraten von 500000, 250000, 166666, 125000, 100000, 83333, 
+71428, 62500, 55555, 50000, 45454 oder 41666 Baud bei Benutzung eines RED 
+Bricks.
+
+Eine Änderung der Einstellungen zu einer Extension führen zu einem Neustart des
+Brick Daemons, d.h. der RED Brick Tab verschwindet kurz aus dem Brick Viewer
+und taucht kurze Zeit später wieder auf.
+
+.. _red_brick_web_interface:
+
+RED Brick Web Interface
+-----------------------
+
+Wenn der RED Brick mit einem USB WLAN Stick, Ethernet Extension oder eine andere
+Netzwerkverbindung ausgestattet ist, kann auf das Web Interface zugegriffen 
+werden. Das Web Interface is unter der IP Adresse des RED Bricks oder unter
+dessen Hostnamen (Voreinstellung: ``red-brick``) erreichbar.
+
+Das RED Brick Web Interface zeigt die installierten Programme. Deren Logs und
+Konfiguration als auch die hochgeladenen Dateien werden angezeigt.
+
+.. image:: /Images/Screenshots/red_brick_web_interface.jpg
+   :scale: 40 %
+   :alt: Screenshot des RED Brick Web Interfaces.
+   :align: center
+
+Neben dem vorinstallierten Web Interface können auch eigene installiert werden.
+Es werden Webanwendungen, die in HTML/Javascript, Python oder PHP geschrieben
+sind, unterstützt. Wenn eine ``index.py``, ``index.php`` oder ``index.html`` 
+hochgeladen wird, so wird diese als Index Datei des binary Ordners genutzt.
+
+**Beispiel zur Erklärung:** Es soll eine PHP Webseite entwickelt werden, die 
+Bricks/Bricklets steuert. Dazu wird das PHP Programm ``EXAMPLE`` mit der ID 
+``EXAMPLEID`` hochgeladen, das eine index.php als Startpunkt enthält. Wird 
+anschließend das RED Brick Web Interface aufgerufen und der "Bin" Button der 
+``EXAMPLE`` Anwendung geklickt, so wird der Link zu ``/programs/EXAMPLEID/bin`` 
+geöffnet. Dieser Link führt direkt die index.php aus.
+
+Webseiten, die Umwelt-Messungen von einem Temperature/Barometer/Humidity 
+Bricklets anzeigt können somit sehr einfach erstellt werden. Es können aber auch
+Aktoren, zum Beispiel ein Relay Bricklet, über Buttons gesteuert werden.
+
+Mit dem RED Brick ist es also sehr einfach Web-Anwendungen zu entwickeln, die
+Hardware steuern.
+
+HTML/Javascript
+^^^^^^^^^^^^^^^
+
+Wenn eine HTML datei mit eingebetteten JavaScript hochgeladen wird, können die 
+JavaScript Bindings genutzt werden. Diese sind direkt im Root Verzeichnis 
+verfügbar.
+
+ <script src="/Tinkerforge.js" type='text/javascript'></script>
+
+Das JavaScript wird im Browser des Benutzers ausgeführt und nicht auf dem RED 
+Brick. Aus diesem Grund muss sich mit der IP des RED Bricks verbunden werden
+und nicht mit localhost.
+
+Python
+^^^^^^
+
+TODO: Flask?
+
+Der Webserver auf dem RED Brick ist konfiguriert um eine ``index.py`` zu 
+erkennen.
+
+PHP
+^^^
+
+Der Webserver auf dem RED Brick ist dazu eingerichtet eine ``index.php`` zu 
+erkennen.
+
+Eine minimale Hallo Welt index.php könnte wie folgt aussehen::
+
+ <?php $greeting = 'Hello World!'; ?>
+
+ <html>
+  <head>
+   <title>PHP Example</title>
+  </head>
+  <body>
+   <p><?php echo $greeting; ?><p>
+   <p><?php phpinfo(); ?><p>
+  </body>
+ </html>
+
+Um Bricks/Bricklets zu steuern müssen die Tinkerforge Bindings eingebunden
+werden::
+
+ require_once('Tinkerforge/IPConnection.php');
+ require_once('Tinkerforge/BrickletTemperature.php');
+ // ...
+
+.. _red_brick_images:
+
+RED Brick Software Images
+-------------------------
+
+Das RED Brick Software Image ist auf einer Micro SD-Karte gespeichert. Es ist 
+ein modifiziertes `Debian <http://debian.org/>`__ Image und in zwei 
+verschiedenen Versionen erhältlich: Das ''full'' und das ''fast'' Image. Beide
+Images unterstützen die Ausführung von eigenen Programmen und verfügen über alle
+notwendigen Tinkerforge Bibliotheken.
+
+Das **Full Image** verfügt über GPU Treiber und besitzt alle notwendigen
+Bibliotheken für die Nutzung von grafischen Benutzerschnittstellen (GUIs). Ein
+X Server startet während des Bootvorgangs und das 
+`LXDE Desktop Environment <http://www.lxde.org>`__ wird mit Autologin gestartet.
+Wenn das eigene Programm eine grafische Benutzerschnittstelle nutzt, so wird 
+diese auf dem Desktop angezeigt. Die Bildschirmauflösung passt sich der 
+Voreinstellung des angeschlossenen HDMI Monitors an. Über LXDE kann diese aber
+auch konfiguriert werden. Die HDMI Schnittstelle muss aber nicht benutzt werden
+und es können auch Programme ohne grafische Benutzerschnittstelle ausgeführt
+werden.
+
+Das **Fast Image** besitzt keine GPU Treiber und es sind keine Bibliotheken für
+grafische Benutzerschnittstellen, ein X Server und LXDE installiert. Da diverse
+Treiber und die grafische Benutzerschnittstelle nicht geladen werden müssen
+erfolgt der Bootvorgang mit einer Dauer von 10s (TODO korrekt?) deutlich 
+schneller.
+
+Neue Software kann in beiden Images installiert werden. Siehe
+`installing section <TODO>`__ wie neue Software installiert wird.
+
+Eine Liste mit den vorinstallierten Bibliotheken kann hier gefunden werden:
+
+* `Full Image Installed Programs List <TODO_Link_to_download_page>`__.
+* `Fast Image Installed Programs List <TODO_Link_to_download_page>`__.
+
+Der Nutzer **tf** ist der Standardnutzer auf den Images. Beim Einloggen über die
+Konsole oder in LXDE kann dieser Nutzer mit dem Standardpasswort **tf** benutzt
+werden. Der Nutzer ist ein sudoer, so dass Root-Zugriff mittels::
+
+ sudo su
+
+erhalten werden kann. Die Images können von der
+`Download Seite <TODO_LINK_TO_DOWNLOAD>`__ herunter geladen werden.
+
+.. _red_brick_build_image:
+
+Baue dein eigenes Image
+^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
 
 .. _red_brick_hardware:
+
 
 Hardwarebeschreibung
 --------------------

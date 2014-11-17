@@ -325,8 +325,8 @@ libraries.
 If you want to use other libraries than the installed ones, you can 
 :ref:`upload <red_brick_brickv_program>` them with your program or use the 
 :ref:`console <red_brick_brickv_console>` to install them via ``apt-get``, 
-``pip``, ``pear``, ``npm`` or similar package managers. They are all
-installed in both images.
+``pip``, ``pear``, ``npm`` or similar package managers. The listed package
+managers are all installed in all RED Brick images.
 
 Extensions Tab (Configure, Manage)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -391,11 +391,11 @@ written in HTML/JavaScript, Python and PHP. If you upload an ``index.py``,
 ``index.php`` or ``index.html`` the respective file will be used as 
 directory index for the binary folder.
 
-Example: If you want to write a PHP website that controls 
-Bricks/Bricklets you can upload your program ``EXAMPLE`` with id 
+**Example to clarify:** If you want to write a PHP website that controls 
+Bricks/Bricklets you can upload your PHP program ``EXAMPLE`` with id 
 ``EXAMPLEID`` that includes an index.php as starting point. If you now 
 go to the RED Brick web interface and click on the "Bin" button for the 
-newly created program, you will get a link to 
+newly created ``EXAMPLE`` program, you will get a link to 
 ``/programs/EXAMPLEID/bin``, which will directly execute the index.php 
 if opened.
 
@@ -421,7 +421,9 @@ not localhost.
 Python
 ^^^^^^
 
-The webserver on the RED Brick is configured to recognize an index.py.
+TODO: Change to Flask?
+
+The webserver on the RED Brick is configured to recognize an ``index.py``.
 In your python program you have to define an index function::
 
  def index(req):
@@ -445,7 +447,7 @@ The default web interface of the RED Brick uses Python. You can find it
 PHP
 ^^^
 
-The webserver on the RED Brick is configured to recognize an index.php.
+The webserver on the RED Brick is configured to recognize an ``index.php``.
 
 An minimal hello world index.php might look like this::
 
@@ -474,7 +476,7 @@ RED Brick Software Images
 
 The RED Brick software image is stored on a Micro SD-Card. It is a modified
 `Debian <http://www.debian.org/>`__ image and available in two different 
-versions. The ''full'' and the ''fast'' image. Both images support the 
+versions: The ''full'' and the ''fast'' image. Both images support the 
 execution of your code and come with the full suite of Tinkerforge
 libraries. 
 
@@ -491,7 +493,8 @@ programs on this image.
 The **fast image** comes without graphical interface support and has no X, LXDE 
 and other graphical libraries pre-installed. GPU drivers are not loaded,
 which means that the RED Brick has more available RAM (the RAM is shared between
-CPU and GPU). It is optimized for a fast boot time and can boot in ~10s.
+CPU and GPU). It is optimized for a fast boot time and can boot in ~10s 
+(TODO, correct?).
 
 New software can be installed on both images.
 See the `installing section <TODO>`__ on how to install new software.
