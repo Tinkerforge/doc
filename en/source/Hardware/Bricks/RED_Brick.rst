@@ -542,8 +542,8 @@ Copy Image on SD Card
    :ref:`full image or the fast image <red_brick_images>` from the RED Brick:
    `Download page  <TODO_Link_to_download_page>`__
 
-2. Choose a suitable SD card. We recommend a fast SD card (e.g. class 10) with
-   enough space. You can find the size of the image on the download page.
+2. Choose a suitable micro SD card. We recommend a fast SD card (e.g. class 10) 
+   with enough space. You can find the size of the image on the download page.
 
 3. Transfer the image to the SD card:
 

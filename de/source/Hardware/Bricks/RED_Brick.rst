@@ -513,12 +513,46 @@ erhalten werden kann. Die Images können von der
 
 Baue dein eigenes Image
 ^^^^^^^^^^^^^^^^^^^^^^^
+Bei dieser Anleitung nehmen wir an, dass ein 
+`Debian Linux <https://www.debian.org/>`__ als Host Plattform genutzt wird.
 
+1. RED Brick Git auschecken::
 
+    git clone https://github.com/Tinkerforge/red-brick
 
+2. In den Ordner *image* gehen, die Datei README.rst und die dokumentierten 
+   Schritte durchführen.
 
+Das Bauen eines Images kann 4-6 Stunden dauern, abhängig von der 
+Leistungsfähigkeit des genutzten Rechners kann es auch deutlich
+länger dauern.
 
+.. _red_brick_copy_image:
 
+Image auf SD Karte kopieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Das
+   :ref:`Full Image oder Fast Image <red_brick_images>` von der RED Brick:
+   `Download-Seite  <TODO_Link_to_download_page>`__ herunterladen.
+
+2. Eine geeignete micro SD-Karte suchen. Wir empfehlen eine schnelle Karte
+   (z.B. Class 10) mit genügend Speicherplatz. Die Größe des Images steht
+   ebenfall auf der Downloadseite.
+3. Das Image auf die SD Karte kopieren:
+
+    * Für Windows nutze ein Tool wie Win32DiskImager um das Image auf die Karte zu kopieren.
+
+        * `Download Link <https://sourceforge.net/projects/win32diskimager/files/latest/download>`__ 
+        * `Dokumentation <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__
+
+    * Auf OS X und Linux
+
+        * Verbinde die SD Karte mit dem PC 
+        * Identifiziere den Pfad zu der SD Karte (z.B. dmesg)
+        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=1M
+
+            * Beispiel: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
 
 .. _red_brick_hardware:
 
@@ -526,11 +560,20 @@ Baue dein eigenes Image
 Hardwarebeschreibung
 --------------------
 
-Das RED Brick ist mit einem 1Ghz Cortex A8 mit 512MB DDR3 SDRAM ausgestattet.
-Dazu kommen noch diverse Schnittstellen
+
+TODO: Overview Image with Top and Bottom Side
+
 
 Power Button
 ^^^^^^^^^^^^
+TODO: Image of Power Button
+
+The button on the RED Brick is a power button. Press it longer than 5 seconds
+and the RED Brick will turn off immediately. 
+If the Brick is off, press the button until the blue LED lights up and 
+the Brick will boot again. 
+
+.. _red_brick_leds:
 
 LEDs
 ^^^^
