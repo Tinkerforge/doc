@@ -124,47 +124,85 @@ Now you can execute it on the RED Brick. The general program uploading procedure
 can be found in the :ref:`RED Brick Brick Viewer description <red_brick_brickv_program>`.
 We will only describe the necessary steps here:
 
+.. image:: /Images/Screenshots/red_brick_tutorial_upload_1.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick program upload step 1.
+   :align: center
+
 First, open the RED Brick tab in the Brick Viewer and select the **Program** 
 tab.
 
-TODO: Screenshot Brick Viewer Program tab
+.. image:: /Images/Screenshots/red_brick_tutorial_upload_2.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick program upload step 2.
+   :align: center
 
 The **New** button will open the **New Program** wizard. Enter 
 "Temperature Logger" as name of the program, and select **Python** as 
 language. Click on **Next**.
 
-TODO: Screenshot first page of wizard
+.. image:: /Images/Screenshots/red_brick_tutorial_upload_3.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick program upload step 3.
+   :align: center
 
 Click on **Add Files** and select the **example_simple_red.py** program. 
 Click on **Next**.
 
-TODO: Screenshot second page of wizard
+.. image:: /Images/Screenshots/red_brick_tutorial_upload_4.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick program upload step 4.
+   :align: center
 
-In this case no changes are needed, so we can again click on **Next**.
+We will use Python version **2.7.3**, **Script File** as start mode and
+our single file as script file. All of these settings are alread
+the default, so we can again click on **Next**.
 
-TODO: Screenshot third page of wizard
+.. image:: /Images/Screenshots/red_brick_tutorial_upload_5.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick program upload step 5.
+   :align: center
 
-We don't want to pass any arguments to our Python program, so we can again 
-click on the **Next** button.
+Our simple Python program does not need any aruguments or environment
+variable, so we can again click on the **Next** button.
 
-TODO: Screenshot Arguments page
+.. image:: /Images/Screenshots/red_brick_tutorial_upload_6.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick program upload step 6.
+   :align: center
 
 We use Pipe as Standard input and log all output (standard output and standard 
 error) to a continuous log file. So no changes are required. Click on
 **Next** again.
 
-TODO: Screenshot Stdio
+.. image:: /Images/Screenshots/red_brick_tutorial_upload_7.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick program upload step 7.
+   :align: center
 
-TODO describe schedule page
+There are many options for scheduling, one of the easist option os to
+schedule a program with a given time interval. Will will choose
+**Interval** as mode with an interval time of 10 minutes (**600 seconds)**.
+This means that our program will be scheduled every 10 minutes, i.e.
+the temperature will be logged every 10 minutes.
 
-TODO: Screenshot Schedule
+.. image:: /Images/Screenshots/red_brick_tutorial_upload_8.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick program upload step 8.
+   :align: center
 
-The summary page will summarize your configuration. Click on **Next**.
-TODO: Screenshot summary
+The summary page will show your configuration. Click on **Next**.
+
+.. image:: /Images/Screenshots/red_brick_tutorial_upload_9.jpg
+   :scale: 100 %
+   :alt: Screenshot of RED Brick program upload step 9.
+   :align: center
 
 Click on the **Start Upload** Button to upload the file. After that click on
 **Finish**. You should now be able to take a look at the log file
-and see the logged temperatures
+and see the logged temperatures.
+
+TODO: Screenshots that show how log files can be viewed.
 
 Gain internet access
 --------------------
