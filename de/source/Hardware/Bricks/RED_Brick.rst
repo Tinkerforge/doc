@@ -537,8 +537,8 @@ Image auf SD Karte kopieren
    `Download-Seite  <TODO_Link_to_download_page>`__ herunterladen.
 
 2. Eine geeignete micro SD-Karte suchen. Wir empfehlen eine schnelle Karte
-   (z.B. Class 10) mit genügend Speicherplatz. Die Größe des Images steht
-   ebenfall auf der Downloadseite.
+   (z.B. Class 10, >30MB/sek. Lesen) mit genügend Speicherplatz. Die Größe 
+   des Images steht ebenfall auf der Downloadseite.
 3. Das Image auf die SD Karte kopieren:
 
     * Für Windows nutze ein Tool wie Win32DiskImager um das Image auf die Karte zu kopieren.
@@ -568,47 +568,208 @@ Power Button
 ^^^^^^^^^^^^
 TODO: Image of Power Button
 
-The button on the RED Brick is a power button. Press it longer than 5 seconds
-and the RED Brick will turn off immediately. 
-If the Brick is off, press the button until the blue LED lights up and 
-the Brick will boot again. 
+Der Taster auf dem RED Brick ist ein Power Button. Wenn dieser länger wie 5 
+Sekunden gedrückt wird, so schaltet sich der RED Brick ab. Wenn der Brick
+aus ist, kann dieser über den Button auch wieder eingeschalten werden. Dazu
+muss der Button solange gedrückt werden (ca. 3 Sekunden) bis die blaue LED
+an geht. Der Brick bootet anschließend.
 
 .. _red_brick_leds:
 
 LEDs
 ^^^^
 
+TODO: Image of RED Brick with arrows to LEDs
 
-Linux Images
-------------
+Der RED Brick besitzt drei verschiedene LEDs auf der Oberseite. Eine blaue, 
+eine rote und eine grüne LED.
 
-Im Hintergrund läuft ein von uns angepasstes Debian Image. Dieses ist in zwei 
-Versionen verfügbar. Das Full Image TODO. Das TODO Image.
+Die blaue LED ist direkt mit der internen Stromversorgung des Prozessors 
+verbunden und leuchtet damit immer wenn der Brick mit Strom versorgt ist.
 
-Full Image
+Die rote LED zeigt an wenn ein Fehler vorliegt. Wenn die rote LED während des 
+Bootvorgangs dauerhaft leuchtet, so konnte kein Image gefunden werden. Es ist
+entweder keine SD Karte vorhanden oder auf dieser ist kein gültiges Image.
+
+Die grüne LED zeigt den aktuellen Status. Wenn beim Starten die rote LED
+aus geht und die grüne nicht an, dann konnte Linux nicht korrekt booten.
+Während des Bootvorgangs geht die grüne LED an, nachdem alle Services gestartet
+sind und der Brick bereit ist blinkt diese (Heartbeat).
+
+Ein normaler Bootvorgang verläuft wie folgt:
+
+1. Blaue und rote LED sind an, Grüne LED ist aus.
+2. Rote LED geht aus (U-Boot geladen).
+3. Grüne LED geht an (Linux bootet).
+4. Grüne LED blinkt (heartbeat) (Linux erfolgreich gestartet, alle Services laufen).
+
+Die Funktion der grünen und der roten LED kann geändert werden. Diese können zum 
+Beispiel die Ausnutzung der 
+:ref:`CPU oder der SD Karte <red_brick_brick_settings_brickd>` anstatt des 
+Heartbeats.
+
+.. _red_brick_micro_sd_card_slot:
+
+Micro SD-Karten Slot
+^^^^^^^^^^^^^^^^^^^^
+
+TODO: Image of SD Card Slot
+
+Das Linux System und alle Daten sind auf einer Micro SD-Karte gespeichert.
+Der Kartenslot ist auf der Unterseite des Bricks.
+Micro SD (1.0), Micro SDHC (2.0) und Micro SDXC (3.0) Karten werden 
+unterstützt. Wir empfehlen als Minimum eine Class 10 Micro SD Karte mit
+einer Leserate von mindestens 30MB/sek um schnelle Lese- und 
+Schreibvorgänge zu ermöglichen.
+
+Eine Beschreibung der Images kann in dem
+:ref:`Image Abschnitt <red_brick_images>` gefunden werden.
+
+.. _red_brick_usb_host:
+
+USB 2.0 Host
+^^^^^^^^^^^^
+
+TODO: Image of USB Port
+
+
+Der RED Brick ist mit einer Standard 
+`USB 2.0 <http://de.wikipedia.org/wiki/USB>`__ (480Mbps) Typ A Buchse 
+ausgestattet. Mit ihr können USB Geräte mit bis zu 7.5W (5V/1.5) betrieben 
+werden. Ein Kurzschluss-Schutz schützt den RED Brick und das angeschlossene
+Gerät. Sowohl das Full als auch das Fast Image basieren auf Debian Linux und
+unterstützen typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
+Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens.
+
+Manche Ethernet oder WLAN Sticks können direkt über den Brick Viewer 
+konfiguriert werden. Unterstützte Sticks bieten wir in unserem Shop an 
+(TODO Link). Andere Geräte müssen ggf. direkt im Linux System konfiguriert
+werden und können nicht vom Brick Viewer konfiguriert werden.
+
+Das :ref:`Full Image <red_brick_images>` unterstützt grafische 
+Benutzerschnittstellen die per standard USB Tastatur, Mäusen oder
+Touchscreens gesteuert werden können.
+
+
+.. _red_brick_mini_usb:
+
+Mini USB
+^^^^^^^^
+Über den Mini USB Anschluss wird der RED Brick mittels
+:ref:`Brick Viewer <red_brick_brickv>` gesteuert und konfiguriert. Der RED 
+Brick kann auch über diesen mit Strom versorgt werden.
+
+
+.. _red_brick_hdmi:
+
+Micro HDMI
 ^^^^^^^^^^
 
-X Image
-^^^^^^^
+TODO: Image HDMI connector
 
-.. _red_brick_test:
-
-Erster Test
------------
-
-.. _red_brick_usage:
-
-Nutzung des RED Bricks
-----------------------
-
-Programme ausführen
-^^^^^^^^^^^^^^^^^^^
-TODO Link auf RED Brick Tutorial
-
-Ethernet konfigurieren
-^^^^^^^^^^^^^^^^^^^^^^
+Mit dem Micro `HDMI <http://en.wikipedia.org/wiki/HDMI>`__ Anschluss 
+(auch Typ D genannt), können alle standard HDMI Monitore und Fernseher mit dem 
+RED Brick verbunden werden. Der Anschluss ist nur aktiv, wenn das
+:ref:`Full Image <red_brick_images>` genutzt wird. HDMI Ethernet Channel (HEC) 
+wird nicht unterstützt.
 
 
+Brick Stapel Stecker
+^^^^^^^^^^^^^^^^^^^^
+
+TODO: Image Stack connector
+
+Der RED Brick kann bis zu acht andere Bricks über den Stapel Stecker steuern.
+Zusätzlich können bis zu zwei Master Extensions genutzt werden. Aktuell
+wird nur die :ref:`RS485 Extension <rs485_extension>` und alle Versionen der 
+:ref:`Ethernet Extension <ethernet_extension>`
+unterstützt. Jede Extension kann maximal einmal im Stapel verbaut werden.
+Zwei RS485 oder zwei Ethernet Extensions sind also nicht möglich.
+
+Die :ref:`WIFI Extension <wifi_extension>` wird zur Zeit nicht unterstützt. 
+Wir empfehlen die Nutzung eines WLAN Sticks um den RED Brick ins WLAN zu bringen.
+
+Die Ethernet Extension taucht als normale Ethernet Schnittstelle des Linux 
+Systems auf. Über eine :ref:`Step-Down Power Supply <step_down_power_supply>` 
+kann der RED Brick und die anderen Module des Stapels mit Strom versorgt werden. 
+Dazu muss dieser nur unter den RED Brick gesteckt werden.
+
+GPIO Anschluss
+^^^^^^^^^^^^^^
+
+.. note:: 
+
+	Dieser Anschluss ist für fortgeschrittene Nutzer gedacht um eigene Hardware 
+	anzuschließen. Aktuell bieten wir keine Softwareunterstützung zur Nutzung 
+	dieses Anschlusses.
+
+TODO Image Header
+
+Der Red Brick ist mit einem 21 Pin, 0.25mm Pitch, FPC GPIO Anschluss
+ausgestattet (Molex 502078-2110).
+
+Alle Signale des A10s Prozessors auf Port E sind mit diesem GPIO Anschluss
+verbunden. Diese können für verschiedene Funktionen konfiguriert werden:
+
+General Purpose Input/Output, Transport Stream Controller (TS), Camera Sensor
+Interface (CSI), Serial Peripheral Interface (SPI), Secure Digital Memory 3.0 
+Card Controller (SDC), Universal Asynchronous Receiver Transmitter (UART), 
+Interrupt. Zusätzlich befindet sich ein I2C (TWI) Interface auf diesen
+Anschluss.
+
+==== ======== =========================================================
+Pin  Signal   Beschreibung
+==== ======== =========================================================
+1    5V       5V Stromversorgung
+2    3V3      3.3V Stromversorgung
+3    PE0      TS Clock, CSI Pixel Clock, SPI Chip Select 0, INT14, GPIO
+4    GND      Masse (Ground)
+5    PE1      TS Error, CSI Sensor Clock, SPI Clock, INT15, GPIO
+6    GND      Masse (Ground)
+7    PE2      TS Sync, CSI Horizontal Sync, SPI MOSI, GPIO
+8    GND      Masse (Ground)
+9    PE3      TS Data Valid, CSI Vertical Sync, SPI MISO, GPIO
+10   GND      Masse (Ground)
+11   PE4      TS Data 0, CSI Data 0, SD Controller Data 0, GPIO
+12   PE5      TS Data 1, CSI Data 1, SD Controller Data 1, GPIO
+13   PE6      TS Data 2, CSI Data 2, SD Controller Data 2, GPIO
+14   PE7      TS Data 3, CSI Data 3, SD Controller Data 3, GPIO
+15   PE8      TS Data 4, CSI Data 4, SD Controller Command, GPIO
+16   PE9      TS Data 5, CSI Data 5, SD Controller Clock, GPIO
+17   PE10     TS Data 6, CSI Data 6, UART TX, GPIO
+18   PE11     TS Data 7, CSI Data 7, UART RX, GPIO
+19   GND      Masse (Ground)
+20   PB15     I2C Takt (mit 2k2 Pullup), GPIO
+21   PB16     I2C Daten (mit 2k2 Pullup), GPIO
+==== ======== =========================================================
+
+
+Stromversorgung
+^^^^^^^^^^^^^^^
+
+Der RED Brick muss mit 5V versorgt werden. Er kann über den 
+Mini USB connector oder eine 
+:ref:`Step-Down Power Supply <step_down_power_supply>` versorgt werden. Ein 
+einzelner RED Brick benötigt bis zu 1.1 Watt, so dass ein typisches 5W 
+(5V/1A) USB Netzteil ausreicht um diesen und zum Beispiel ein Master Brick
+mit ein paar Bricklets zu versorgen. Bei größeren Aufbauten sollte der
+Strombedarf berechnet werden und eine geeignete Stromversorgung genutzt werden.
+Dabei dürfen zusätzlich angeschlossene USB Geräte, die ebenfalls versorgt 
+werden, nicht außer acht gelassen werden.
+
+.. _red_brick_faq:
+
+
+FAQ
+---
+
+* F: Ich habe mein RED Brick mit einem Linux PC verbunden. Ich sehe aber kein ``/dev/ttyACM0``
+  Gerät um mich mit der seriellen Konsole zu verbinden.
+* A: Der ``cdc_acm`` Treiber muss geladen werden
+
+
+* F: Die rote und blaue LED sind an, aber nichts passiert.
+* A: Der RED Brick bootet nicht. Überprüfe die micro SD Karte.
 
 
 .. _red_brick_programming_interface:
@@ -616,7 +777,13 @@ Ethernet konfigurieren
 Programmierschnittstelle
 ------------------------
 
-Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
+Die RED Brick API ist dazu gedacht um für den Brick Viewer die angebotene 
+Funktionalität zu implementieren (Statusinformationen bekommen, Programme 
+managen, etc.). Diese API ist vielleicht für Power users interessant, normale
+Nutzer benötigen diese nicht.
+
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte 
 Beschreibung.
 
 .. include:: RED_Brick_hlpi.table
+

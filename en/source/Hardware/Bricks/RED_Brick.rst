@@ -542,7 +542,7 @@ Copy Image on SD Card
    :ref:`full image or the fast image <red_brick_images>` from the RED Brick:
    `Download page  <TODO_Link_to_download_page>`__
 
-2. Choose a suitable micro SD card. We recommend a fast SD card (e.g. class 10) 
+2. Choose a suitable micro SD card. We recommend a fast SD card (e.g. class 10, > 30MB/sec. read) 
    with enough space. You can find the size of the image on the download page.
 
 3. Transfer the image to the SD card:
@@ -576,8 +576,8 @@ TODO: Image of Power Button
 
 The button on the RED Brick is a power button. Press it longer than 5 seconds
 and the RED Brick will turn off immediately. 
-If the Brick is off, press the button until the blue LED lights up and 
-the Brick will boot again. 
+If the Brick is off, press the button until the blue LED lights up (ca. 3
+seconds) and the Brick will boot again. 
 
 .. _red_brick_leds:
 
@@ -623,8 +623,8 @@ TODO: Image of SD Card Slot
 The Linux system and your data is stored on a Micro SD card. The slot
 is located at the bottom side of the Brick. 
 Micro SD (1.0), Micro SDHC (2.0) and Micro SDXC (3.0) cards
-are supported. As a minimum we recommend a class 10 Micro SD Card to ensure
-fast reads and writes.
+are supported. As a minimum we recommend a class 10 Micro SD Card, with a read
+data rate of 30MB/sec. as minimum, to ensure fast reads and writes.
 
 A description of the images can be found in the 
 :ref:`image section <red_brick_images>`.
@@ -657,8 +657,9 @@ which can be controlled by standard USB keyboards, mouses or touchscreens.
 Mini USB
 ^^^^^^^^
 
-With the Mini USB connector, the RED Brick can be configured through the
-:ref:`Brick Viewer <red_brick_brickv>`. It can also be used to power the Brick.
+With the Mini USB connector, the RED Brick can be controlled and configured 
+through the :ref:`Brick Viewer <red_brick_brickv>`. It can also be used to 
+power the Brick.
 
 
 .. _red_brick_hdmi:
@@ -680,18 +681,20 @@ Brick Stack Connector
 
 TODO: Image Stack connector
 
-The RED Brick can control up to eight Bricks through the stack connectors.
-Additionally up to two Master Extensions can be used with the RED Brick. 
-Currently only the RS485 Extension all versions of
-the Ethernet Extension are supported. 
+The RED Brick can control up to eight other Bricks through the stack 
+connectors. Additionally up to two Master Extensions can be used with the RED 
+Brick. Currently only the :ref:`RS485 Extension <rs485_extension>` all versions 
+of the :ref:`Ethernet Extension <ethernet_extension>` are supported. In a stack 
+each Extension can only be present one time,
+such that two RS485 or two Ethernet Extension can't be used.
 
-The WIFI Extension is currently not supported. We recommend to use a USB 
-WIFI dongle to add WIFI connectivity to the RED Brick. 
+The :ref:`WIFI Extension <wifi_extension>` is currently not supported. We 
+recommend to use a USB WIFI dongle to add WIFI connectivity to the RED Brick. 
 
 The Ethernet Extension shows up as a
 normal Ethernet interface in the underlying Linux system.
 
-A Step-Down Power Supply can be put below the RED Brick and can 
+A :ref:`Step-Down Power Supply <step_down_power_supply>` can be put below the RED Brick and can 
 power the whole stack.
 
 GPIO Header
@@ -747,7 +750,8 @@ Power Supply
 ^^^^^^^^^^^^
 
 The RED Brick needs to be powered by a 5V supply. It can be powered through 
-the Mini USB connector or a Step-Down Power Supply. A single RED Brick needs
+the Mini USB connector or a 
+:ref:`Step-Down Power Supply <step_down_power_supply>`. A single RED Brick needs
 up to 1.1 Watts, so that a typical 5W (5V/1A) USB power supply will suffice to
 power it and a Master Brick with a few connected Bricklets. If you use a 
 larger setup, calculate the power requirements and choose a suitable power 
@@ -767,7 +771,7 @@ FAQ
 
 
 * Q: The red and blue LED are on. But nothing happens.
-* A: The image is not booting. Please check your micro SD Card.
+* A: The RED Brick is not booting. Please check your micro SD Card.
 
 
 
