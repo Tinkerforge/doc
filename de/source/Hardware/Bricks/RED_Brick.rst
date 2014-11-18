@@ -286,7 +286,7 @@ wenn der RED Brick das nächste mal hochfährt.
 
 Falls die Zeit nach dem booten immer vorhanden sein muss, ein Verbindung zum
 Internet aber nicht garantiert werden kann, dann kann auch das 
-:ref:`GPS Bricklet <bricklet_gps>` benutzt werden. Dazu muss nur ein kleines
+:ref:`GPS Bricklet <gps_bricklet>` benutzt werden. Dazu muss nur ein kleines
 `Programm von Github <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
 heruntergeladen werden und auf den RED Brick geladen werden um die Uhrzeit 
 mittels GPS Uhrzeit zu synchronisieren.
@@ -346,7 +346,7 @@ vorinstalliert.
 Extensions Tab (Konfiguration, Verwaltung)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Zwei :ref:`Master Extensions <master_extension>` werden vom RED Brick 
+Zwei :ref:`Master Extensions <primer_master_extensions>` werden vom RED Brick 
 unterstützt: :ref:`Ethernet Extension <ethernet_extension>` und 
 :ref:`RS485 Extension <rs485_extension>`.
 

@@ -275,7 +275,7 @@ the RED Brick is powered down.
 
 If you need the correct time after bootup but you can't guarantee
 or can't obtain internet access, you can also use the 
-:ref:`GPS Bricklet <bricklet_gps>` You can find a small
+:ref:`GPS Bricklet <gps_bricklet>` You can find a small
 `program on github <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__ 
 that you can upload to the RED Brick to sync the Linux system time with
 the GPS time.
@@ -331,7 +331,7 @@ managers are all installed in all RED Brick images.
 Extensions Tab (Configure, Manage)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Two :ref:`Master Extensions <master_extension>` are supported by the 
+Two :ref:`Master Extensions <primer_master_extensions>` are supported by the 
 RED Brick: :ref:`Ethernet Extension <ethernet_extension>` and 
 :ref:`RS485 Extension <rs485_extension>`.
 
