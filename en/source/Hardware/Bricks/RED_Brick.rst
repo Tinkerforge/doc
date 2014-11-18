@@ -421,18 +421,21 @@ not localhost.
 Python
 ^^^^^^
 
-TODO: Change to Flask?
+The webserver on the RED Brick (Apache) uses WSGI to interface with
+Python programs. It is configured to recognize an ``index.py`` as the
+starting point for a WSGI script. All of the common Python web frameworks
+support WSGI. The `Flask framework <http://flask.pocoo.org/>`__ is 
+preinstalled on the RED Brick (including Werkzeug and Jinja).
 
-The webserver on the RED Brick is configured to recognize an ``index.py``.
-In your python program you have to define an index function::
+A minimal flask web interface that can be uploaded to the RED Brick
+is an ``index.py`` with the following content::
 
- def index(req):
+ from flask import Flask       # Use Flask framework
+ application = Flask(__name__) # Function "application" is used by Apache/wsgi
+ app = application             # Use shortcut for routing
 
-It will be called by the webserver.
-
-A minimal hello world index.py might look like this::
-
- def index(req):
+ @app.route('/')
+ def index():
      return '<html><body>Hello World!</body></html>'
 
 To control Bricks/Bricklets you can just import the Tinkerforge Bindings::
@@ -441,8 +444,13 @@ To control Bricks/Bricklets you can just import the Tinkerforge Bindings::
  from tinkerforge.bricklet_temperature import Temperature
  # ...
 
-The default web interface of the RED Brick uses Python. You can find it
+The default web interface of the RED Brick uses Python/Flask. 
+You can find it
 `on github <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__.
+
+It is of course also possible to use templates, static files and so on. You
+can just use them as it is shown in most Flask tutorials. We also have
+a `more complex Flask example <TODO>`__ that uses more features on github.
 
 PHP
 ^^^
