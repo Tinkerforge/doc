@@ -105,6 +105,47 @@ C/C++
    :alt: Screenshot of RED Brick Wizard Step 3 (C/C++).
    :align: center
 
+The Tinkerforge C Bindings are compiled as a library (libtinkerforge.so),
+which is available in ``/usr/lib/``. The headers are available in
+``/usr/include/tinkerforge``.
+
+* Start Mode: Currently only *Executable* is available as start mode.
+* Executable: Name of the executable that should be called. This is
+  either the name of the cross compiled executable that you are 
+  uploading or it is the name of the executable that is created
+  during compilation
+* Compile From Source: If you check this checkbox, your code will be
+  compiled upon upload. If you use this option your project must
+  contain a **Makefile**. An example Makefile for a small
+  project that uses the Tinkerforge Bindings and consists otherwise
+  of the file **example.c** looks as follows::
+
+    # Defines
+    CC=g++
+    CFLAGS=-c -Wall -I/usr/include/tinkerforge
+    LIBS=-ltinkerforge -lpthread
+    EXE=example
+    SOURCES=example.c
+    OBJECTS=$(SOURCES:.c=.o)
+
+    # Build Rules
+    all: $(SOURCES) $(EXE)
+
+    .c.o:
+    	$(CC) $(CFLAGS) $< -o $@
+
+    $(EXE): $(OBJECTS)
+    	$(CC) $(OBJECTS) -o $(EXE) $(LIBS)
+
+    clean:
+    	rm -f *.o $(EXE)
+* Make options: If you compile from source you can also add
+  Makefile parameters.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+
 C#
 ^^
 
@@ -112,6 +153,23 @@ C#
    :scale: 60 %
    :alt: Screenshot of RED Brick Wizard Step 3 (C#).
    :align: center
+
+* Mono Version: Currently there is only one mono version installed.
+* Start Mode: Currently only *Executable* is available as start mode.
+* Executable: Choose the .NET executable from the files that you added
+  in step 2. A .NET executable usually has the file ending .exe.
+
+  Your executable will be executed with 
+  `mono <http://www.mono-project.com/>`__, but you can compile 
+  on Windows with Visual Studio, that works without problem. 
+  Make sure that you don't use any Windows specific libraries that 
+  are not available on the RED Brick.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+* Mono Options: Here you can add options that will be given to
+  the mono JIT compiler.
 
 Delphi/Lazarus
 ^^^^^^^^^^^^^^
@@ -121,6 +179,29 @@ Delphi/Lazarus
    :alt: Screenshot of RED Brick Wizard Step 3 (Delphi/Lazarus).
    :align: center
 
+* Start Mode: Currently only *Executable* is available as start mode.
+* Executable: Name of the executable that should be called. This is
+  either the name of the cross compiled executable that you are 
+  uploading or it is the name of the executable that is created
+  during compilation
+* Compile From Source: If you check this checkbox, your code will be
+  compiled upon upload. If you use this option your project must
+  contain a **Makefile.fpc**. An example Makefile for a small
+  project that uses the Tinkerforge Bindings and has the file
+  **Example.pas** as main unit looks as follows::
+
+    [target]
+    programs=Example
+
+    [require]
+    packages=tinkerforge
+* Make options: If you compile from source you can also add
+  Makefile parameters.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+
 Java
 ^^^^
 
@@ -128,6 +209,27 @@ Java
    :scale: 60 %
    :alt: Screenshot of RED Brick Wizard Step 3 (Java).
    :align: center
+
+* Java Version: Currently there is only one Java version installed.
+* Start Mode: The start modes **Main Class** and **JAR File** are
+  available as start mode.
+
+  * Main Class: If you choose main class, the Brick Viewer will parse
+    all of the class files that you added in step two and show you
+    all Classes that contain a main method and can thus be used to
+    start your program.
+  * JAR File: If you create a JAR file from your program, you can
+    also start your program directly from the JAR file. The available
+    JAR files will be listed in the drop down box.
+* Class Path: You can add files that are added to your class path.
+  All JARs that you added in step 2 will automatically be added
+  to the classpath.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+* JVM Options: Here you can add options that will be given to
+  the Java virtual machine.
 
 JavaScript (Browser/Node.js)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -239,8 +341,8 @@ likely just leave the default values as they are and click **Next**.
   * Pipe: If you choose Pipe you can send input to your program 
     with the Brick Viewer (in the Stdio Redirection section of the
     program tab). Many of our example programs wait for user input
-	and only react on callbacks. If your program is of this nature
-	you have to select *Pipe* as standard input.
+    and only react on callbacks. If your program is of this nature
+    you have to select *Pipe* as standard input.
   * File: You can specify a file that will be given to your program as
     input.
 
@@ -254,9 +356,10 @@ likely just leave the default values as they are and click **Next**.
     execution of your program.
 
 * Standard Error: For error output you can use the same configurations
-as for standard output. Additionally you can redirect the error
-output to the standard output (i.e. they will both be written to the
-same file).
+  as for standard output. Additionally you can redirect the error
+  output to the standard output (i.e. they will both be written to the
+  same file).
+
 
 Wizard Step 6: Schedule
 -----------------------
