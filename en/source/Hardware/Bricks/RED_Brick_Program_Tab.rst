@@ -115,7 +115,6 @@ C#
 
 Delphi/Lazarus
 ^^^^^^^^^^^^^^
-TODO: Screenshot still missing
 
 .. image:: /Images/Screenshots/red_brick_wizard_step3_delphi.jpg
    :scale: 60 %
