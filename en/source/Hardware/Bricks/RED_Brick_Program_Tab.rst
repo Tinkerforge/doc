@@ -97,6 +97,10 @@ of the RED Brick program.
 Wizard Step 3: Language Specific Configuration
 ----------------------------------------------
 
+In step 3 you have to configure the compiler/interpreter of the language
+that you selected in step 1. This step is documented for each
+language individually.
+
 C/C++
 ^^^^^
 
@@ -154,6 +158,12 @@ C#
    :alt: Screenshot of RED Brick Wizard Step 3 (C#).
    :align: center
 
+For C# the Tinkerforge.dll is available in ``/usr/lib/`` and can
+thus be found by mono. That means, if you compile your C# program
+and you use the Tinkerforge.dll as reference, it will be
+automatically found on the RED Brick. You don't have to add
+the Tinkerforge.dll in step 2.
+
 * Mono Version: Currently there is only one mono version installed.
 * Start Mode: Currently only *Executable* is available as start mode.
 * Executable: Choose the .NET executable from the files that you added
@@ -210,6 +220,11 @@ Java
    :alt: Screenshot of RED Brick Wizard Step 3 (Java).
    :align: center
 
+The Tinkerforge.jar Java Bindings are available in
+``/usr/tinkerforge/bindings/java/``. The file is already added
+to the classpath by default, so you can just import the Tinkerforge
+classes by the usual means, e.g. ``import com.tinkerforge.IPConnection;``.
+
 * Java Version: Currently there is only one Java version installed.
 * Start Mode: The start modes **Main Class** and **JAR File** are
   available as start mode.
@@ -239,6 +254,28 @@ JavaScript (Browser/Node.js)
    :alt: Screenshot of RED Brick Wizard Step 3 (JavaScript).
    :align: center
 
+* Client-Side (Browser): If you use client-side JavaScript, there is
+  nothing to configure. You can add your **.html** files in step 2,
+  which are then available through the
+  :ref:`RED Brick web interface <red_brick_web_interface>`. The
+  **Tinkerforge.js** can be used via::
+
+      <script src="/Tinkerforge.js" type='text/javascript'></script>
+* Server-Side (Node.js): If you use Node.js, you can configure the
+  start mode and other options. The Tinkerforge Bindings are available,
+  you can use ``require('tinkerforge')`` to import them.
+
+  * Start Mode *Script File*: Specify the script file that should be
+    executed by node.
+  * Start Mode *Command*: Specify a command that should be executed
+    by node with the **-e** option.
+  * Working Directory: Specify the 
+    `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+    of your program. You can use a path that is relative to the
+    root directory of your program. Usually you will leave this as ``.``.
+  * Node.js Options: Here you can add options that will be given to
+    node when your script file or command is executed.
+
 Octave
 ^^^^^^
 
@@ -246,6 +283,26 @@ Octave
    :scale: 60 %
    :alt: Screenshot of RED Brick Wizard Step 3 (Octave).
    :align: center
+
+For octave the java path to the Tinkerforge.jar is already added
+in the octaverc. This means that in your program you can assume
+that ``javaaddpath("Tinkerforge.jar")`` was already called with
+the correct directory.
+
+* Octave Version: Currently there is only one Octave version installed
+  on the RED Brick.
+* Start Mode: Currently only **Script File** is available as start mode.
+* Script File: Choose one of the script files that you added in step 2,
+  it will be executed by octave.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+* Octave Options: Here you can add options that will be given to
+  the Octave interpreter. By default the **--silent** options is
+  already set, it suppresses the output version and copyright information
+  that is usually done by octave. If you remove this option your log
+  file will have this output added to each log entry.
 
 Perl
 ^^^^
@@ -255,13 +312,21 @@ Perl
    :alt: Screenshot of RED Brick Wizard Step 3 (Perl).
    :align: center
 
-Python
-^^^^^^
+The Tinkerforge Bindings are available. You can use the ``use``
+directive to import them, e.g.: ``use Tinkerforge::IPConnection;``.
 
-.. image:: /Images/Screenshots/red_brick_wizard_step3_python.jpg
-   :scale: 60 %
-   :alt: Screenshot of RED Brick Wizard Step 3 (Python).
-   :align: center
+* Perl Version: Currently there is only one Perl interpreter version
+  installed on the RED Brick.
+* Start Mode *Script File*: Specify the script file that should be
+  executed by the Perl interpreter.
+* Start Mode *Command*: Specify a command that should be executed
+  by the Perl interpreter with the **-e** option.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+* Perl Options: Here you can add options that will be given to
+  Perl when your script file or command is executed.
 
 PHP
 ^^^
@@ -271,6 +336,62 @@ PHP
    :alt: Screenshot of RED Brick Wizard Step 3 (PHP).
    :align: center
 
+The Tinkerforge Bindings are installed through PEAR and thus
+available. You can import them with the ``require_once``
+function, e.g.: ``require_once('Tinkerforge/IPConnection.php');``.
+
+* Perl Version: Currently there is only one PHP interpreter version
+  installed on the RED Brick.
+* Start Mode *Script File*: Specify the script file that should be
+  executed by the PHP interpreter.
+* Start Mode *Command*: Specify a command that should be executed
+  by the PHP interpreter with the **-r** option.
+* Start Mode *Web Interface*: If you want to implement a web
+  interface with PHP you have to chose this option.
+  In this case PHP will be called from Apache, thus there are
+  no other configurations to be made. See 
+  :ref:`RED Brick web interface <red_brick_web_interface>` for
+  more informations about the web interface.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+* PHP Options: Here you can add options that will be given to
+  the PHP interpreter when your script file or command is executed.
+
+Python
+^^^^^^
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_python.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (Python).
+   :align: center
+
+The Tinkerforge Bindings are installed through pip and thus
+available. You can import them with the normal ``import``
+statement, e.g.: ``from tinkerforge.ip_connection import IPConnection``.
+
+* Python Version: You can choose between Python 2 and Python 3.
+* Start Mode *Script File*: Specify the script file that should be
+  executed by the Python interpreter.
+* Start Mode *Module Name*: Specify a module name that should be executed
+  by the Python interpreter with the **-m** option.
+* Start Mode *Command*: Specify a command that should be executed
+  by the Python interpreter with the **-c** option.
+* Start Mode *Web Interface*: If you want to implement a web
+  interface with Python you have to chose this option.
+  In this case Python will be called from Apache/WSGI, thus there are
+  no other configurations to be made. See 
+  :ref:`RED Brick web interface <red_brick_web_interface>` for
+  more informations about the web interface.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+* Python Options: Here you can add options that will be given to
+  Python interpreter when your script file or command is executed.
+
+
 Ruby
 ^^^^
 
@@ -278,6 +399,23 @@ Ruby
    :scale: 60 %
    :alt: Screenshot of RED Brick Wizard Step 3 (Ruby).
    :align: center
+
+The Tinkerforge Bindings are installed through gem and thus 
+available. You can use the ``require`` statement to import them, 
+e.g.: ``require 'tinkerforge/ip_connection'``.
+
+* Ruby Version: Currently there is only one Ruby interpreter version
+  installed on the RED Brick.
+* Start Mode *Script File*: Specify the script file that should be
+  executed by the Ruby interpreter.
+* Start Mode *Command*: Specify a command that should be executed
+  by the Ruby interpreter with the **-e** option.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+* Ruby Options: Here you can add options that will be given to
+  Ruby when your script file or command is executed.
 
 Shell
 ^^^^^
@@ -287,6 +425,23 @@ Shell
    :alt: Screenshot of RED Brick Wizard Step 3 (Shell).
    :align: center
 
+The Shell Bindings are available in ``/usr/local/bin``, which is
+in the PATH. In your shell script you can just call ``tinkerforge`` 
+without any prefix.
+
+* Shell Version: Currently there is only one bash available on the
+  RED Brick.
+* Start Mode *Script File*: Specify the script file that should be
+  executed by bash.
+* Start Mode *Command*: Specify a command that should be executed
+  by bash with the **-c** option.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+* Shell Options: Here you can add options that will be given to
+  bash when your script file or command is executed.
+
 Visual Basic .NET
 ^^^^^^^^^^^^^^^^^
 
@@ -294,6 +449,30 @@ Visual Basic .NET
    :scale: 60 %
    :alt: Screenshot of RED Brick Wizard Step 3 (Visual Basic .NET).
    :align: center
+
+For Visual Basic .NET the Tinkerforge.dll is available in ``/usr/lib/`` 
+and can thus be found by mono. That means, if you compile your VB.NET 
+program and you use the Tinkerforge.dll as reference, it will be
+automatically found on the RED Brick. You don't have to add
+the Tinkerforge.dll in step 2.
+
+* Mono Version: Currently there is only one mono version installed.
+* Start Mode: Currently only *Executable* is available as start mode.
+* Executable: Choose the .NET executable from the files that you added
+  in step 2. A .NET executable usually has the file ending .exe.
+
+  Your executable will be executed with 
+  `mono <http://www.mono-project.com/>`__, but you can compile 
+  on Windows with Visual Studio, that works without problem. 
+  Make sure that you don't use any Windows specific libraries that 
+  are not available on the RED Brick.
+* Working Directory: Specify the 
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  of your program. You can use a path that is relative to the
+  root directory of your program. Usually you will leave this as ``.``.
+* Mono Options: Here you can add options that will be given to
+  the mono JIT compiler.
+
 
 Wizard Step 4: Arguments and Environment
 ----------------------------------------
@@ -320,7 +499,7 @@ it will be equivalent to the following call in  the terminal::
 
 * Environment: Your program will have the environment variables
   that you set here available. Environment variables that are
-  necessary to start a standard program in the chosen programming
+  necessary to start a program in the chosen programming
   language will already be there by default. If you don't know what
   this means you very likely don't have to touch this setting. 
 
