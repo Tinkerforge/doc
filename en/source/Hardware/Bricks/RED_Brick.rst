@@ -284,12 +284,16 @@ the GPS time.
 
 Program Tab (Upload and Execution)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TODO: Describe GUI and link to RED Brick Tutorial
+
+The
+:ref:`detailed documentation for the program tab <red_brick_program_tab>` 
+can be found on a seperate site.
 
 .. _red_brick_brickv_console:
 
 Console Tab (Remote Access)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 If you have attached the RED Brick over its 
 `Mini USB Connector <red_brick_mini_usb>`__ to your PC it will also register
 a USB serial interface. This serial interface can be used to access the Linux
