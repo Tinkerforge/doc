@@ -421,7 +421,8 @@ not localhost.
 Python
 ^^^^^^
 
-The webserver on the RED Brick (Apache) uses WSGI to interface with
+The webserver on the RED Brick (Apache) uses WSGI 
+(`mod_wsgi <https://code.google.com/p/modwsgi/>`) to interface with
 Python programs. It is configured to recognize an ``index.py`` as the
 starting point for a WSGI script. All of the common Python web frameworks
 support WSGI. The `Flask framework <http://flask.pocoo.org/>`__ is 
