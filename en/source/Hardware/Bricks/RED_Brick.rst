@@ -308,11 +308,90 @@ If you click on new, the new program wizard will be started:
 
 **Step 3: Language Specific Configuration**
 
-**Python:**
+**C/C++**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_c.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (C/C++).
+   :align: center
+
+**C#**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_csharp.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (C#).
+   :align: center
+
+**Delphi/Lazarus**
+
+TODO: Screenshot still missing
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_delphi.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (Delphi/Lazarus).
+   :align: center
+
+**Java**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_java.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (Java).
+   :align: center
+
+**JavaScript (Browser/Node.js)**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_javascript.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (JavaScript).
+   :align: center
+
+**Octave**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_octave.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (Octave).
+   :align: center
+
+**Perl**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_perl.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (Perl).
+   :align: center
+
+**Python**
 
 .. image:: /Images/Screenshots/red_brick_wizard_step3_python.jpg
    :scale: 60 %
-   :alt: Screenshot of RED Brick Wizard Step 3.
+   :alt: Screenshot of RED Brick Wizard Step 3 (Python).
+   :align: center
+
+**PHP**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_php.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (PHP).
+   :align: center
+
+**Ruby**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_ruby.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (Ruby).
+   :align: center
+
+**Shell**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_shell.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (Shell).
+   :align: center
+
+**Visual Basic .NET**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_vbnet.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3 (Visual Basic .NET).
    :align: center
 
 **Step 4: Arguments and Environment**
