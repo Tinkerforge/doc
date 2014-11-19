@@ -211,6 +211,8 @@ Settings Tab (Network, Brick Daemon, Date/Time)
 
 .. _red_brick_brick_settings_network:
 
+TODO: General Tab network interface selection implementet?
+
 In the **Network section** of this tab you can configure settings
 related to networking.
 
@@ -431,8 +433,8 @@ Python programs. It is configured to recognize an ``index.py`` as the
 starting point for a WSGI script. All of the common Python web frameworks
 support WSGI. The `Flask framework <http://flask.pocoo.org/>`__ is 
 preinstalled on the RED Brick (including 
-`Werkzeug <http://werkzeug.pocoo.org/>` and 
-`Jinja <http://jinja.pocoo.org/>`).
+`Werkzeug <http://werkzeug.pocoo.org/>`__ and 
+`Jinja <http://jinja.pocoo.org/>`__).
 
 A minimal flask web interface that can be uploaded to the RED Brick
 is an ``index.py`` with the following content::
