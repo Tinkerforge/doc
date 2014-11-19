@@ -18,18 +18,21 @@ executed on the RED Brick.
 
 In this tutorial we will demonstrate the different capabilities
 of the RED Brick. To keep it simple we will use a small setup
-consisting of a RED Brick, a Master Brick and a Temperature Bricklet.
+consisting of a RED Brick, a :ref:`Master Brick <master_brick>` and a 
+:ref:`Temperature Bricklet <temperature_bricklet>`.
 Later in the Tutorial will additionally add an Ethernet Extension to
 get internet access.
 
-We will test a simple program that prints a temperature
+At first we will test a simple program that prints a temperature
 on your PC and upload and execute it on the RED Brick after that. 
 Then we will extend the program to also show the current time,
 to utilize a GUI (that is shown on an HDMI monitor) and we will add
-a web interface for our temperature measurements.
+a web interface for our temperature measurements. The features of this example 
+are not very useful, but it shows some of the important possibilities of the RED 
+Brick.
 
 If you build your application, you might use other Bricks, Bricklets 
-and programming languages, but the concepts and the workflow will be the same.
+or programming languages, but the concepts and the workflow will be the same.
 	
 
 Install necessary software
@@ -44,11 +47,12 @@ Test the RED Brick
 
 TODO Image RED Brick
 
-After you have installed the necessary software on your PC, you can test the 
+After you have installed the necessary software, you can test the 
 RED Brick. At first you need to put a micro SD card with an 
 :ref:`RED Brick software image <red_brick_images>` in the micro SD card slot of
-the Brick. It is located on the bottom side. A `micro SD card with a pre-installed image <TODO>`__
-can be found in our shop. After that, you can connect the RED Brick 
+the Brick. It is located on the bottom side 
+(a `micro SD card with a pre-installed image <TODO>`__ can be found in our 
+shop). After that, you can connect the RED Brick 
 with a mini USB cable to your PC.
 
 TODO Image RED Brick connected with mini USB cable
@@ -109,8 +113,9 @@ correctly. In the example program we wait for user input::
  raw_input('Press key to exit\n')
 
 We do this to prevent the command line on windows from closing immediately. 
-On the RED Brick there won't be any user interaction, so you need to remove 
-this line.
+On the RED Brick there won't be any user interaction. We want the program
+to print the measured temperature one time and end the program afterwards. So
+we need to remove this line.
 
 `Download (example_simple_red.py) <https://github.com/Tinkerforge/doc/TODO/example_simple_red.py>`__
 
@@ -155,7 +160,7 @@ Click on **Next**.
    :align: center
 
 We will use Python version **2.7.3**, **Script File** as start mode and
-our single file as script file. All of these settings are alread
+our single file as script file. All of these settings are already
 the default, so we can again click on **Next**.
 
 .. image:: /Images/Screenshots/red_brick_tutorial_upload_5.jpg
@@ -209,14 +214,14 @@ Gain internet access
 
 To gain internet access on the RED Brick we can either connect a 
 USB WIFI/Ethernet dongle or the Ethernet Extension. In this example we 
-will add the Ethernet Extension:
+will add the :ref:`Ethernet Extension <ethernet_extension>`:
 
 TODO Stack of RED + Master + Temperature Bricklet + Ethernet Extension
 
-Shut the RED Brick down and remove the power before you add the
-Extension.
+Shut the RED Brick down and remove the power before you stack the
+Extension on top of the stack.
 
-After the enhanced stack has booted click on "Settings", "Network", 
+After the enhanced stack has booted click on "Settings", "Network" and
 "Wired" in the RED Brick tab of the Brick Viewer.
 Choose **tf0** as interface either use DHCP or enter a static
 configuration. Then click on **Save**.
@@ -255,8 +260,8 @@ Develop a custom RED Brick GUI
 
 Another type of program that the RED Brick can execute is a GUI program
 that is shown on the HDMI output.
-In this example we will add a Qt GUI to the simple Temperature Bricklet
-program.
+In this example we will add a `Qt <http://pyqt.sourceforge.net/>`__ GUI to the 
+simple Temperature Bricklet program.
 
 `Download (example_gui_red.py) <https://github.com/Tinkerforge/doc/TODO/example_gui_red.py>`__
 
@@ -266,7 +271,7 @@ program.
  :tab-width: 4
 
 The GUI has a label that is refreshed with the current temperature
-every second. Additionally there is a *Refresh* button that forces
+every second. Additionally there is a **Refresh** button that forces
 a refresh of the label. 
 
 You can upload this program the same way as the other Python programs
@@ -339,7 +344,8 @@ your executable, arguments, environment and working directory. The steps
 
 To take a look at your web interface go to the IP address or hostname of
 your RED Brick with a browser and click on the **Bin** button of your
-program. Your index file will be used automatically:
+program. It will redirect you to your program path for which your index file
+will be executed automatically:
 
 .. image:: /Images/Screenshots/red_brick_tutorial_web_interface.jpg
    :scale: 100 %
