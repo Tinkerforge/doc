@@ -284,12 +284,78 @@ the GPS time.
 
 Program Tab (Upload and Execution)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TODO: Describe GUI and link to RED Brick Tutorial
+
+.. image:: /Images/Screenshots/red_brick_program_overview.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Program tab.
+   :align: center
+
+If you click on new, the new program wizard will be started:
+
+**Step 1: General Information**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step1.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 1.
+   :align: center
+
+**Step 2: Files**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step2.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 2.
+   :align: center
+
+**Step 3: Language Specific Configuration**
+
+**Python:**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step3_python.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 3.
+   :align: center
+
+**Step 4: Arguments and Environment**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step4.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 4.
+   :align: center
+
+**Step 5: Stdio Redirection**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step5.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 5.
+   :align: center
+
+**Step 6: Schedule**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step6.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 6.
+   :align: center
+
+**Step 7: Summary**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step7.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 7.
+   :align: center
+
+**Step 8: Upload**
+
+.. image:: /Images/Screenshots/red_brick_wizard_step8.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Wizard Step 8.
+   :align: center
+
 
 .. _red_brick_brickv_console:
 
 Console Tab (Remote Access)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 If you have attached the RED Brick over its 
 `Mini USB Connector <red_brick_mini_usb>`__ to your PC it will also register
 a USB serial interface. This serial interface can be used to access the Linux
