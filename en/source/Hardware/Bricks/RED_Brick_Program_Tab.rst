@@ -27,8 +27,8 @@ If you start the RED Brick for the first time you will be presented with an
 empty program list and three buttons:
 
 * Refresh: Refreshes programs tab
-* New: Starts New Program wizward
-* Delete: Delets selected program
+* New: Starts New Program wizard
+* Delete: Deletes selected program
 
 After you uploaded your first program you can select the program and
 information about the program will be displayed on the right. You
@@ -51,8 +51,8 @@ Wizard Step 1: General Information
 * Description: The description will be shown in the program, if your program
   is selected.
 * Unique Identifier: If you uncheck *Auto-generate unique identifier* you will
-  have to specify your own identifier. The identifier ist mostly used 
-  intenally, you can use your own identifier if you want to have a specfic
+  have to specify your own identifier. The identifier is mostly used 
+  internally. You can use your own identifier if you want to have a specific
   name of the program folder in the underlying Linux.
 
 Wizard Step 2: Files
