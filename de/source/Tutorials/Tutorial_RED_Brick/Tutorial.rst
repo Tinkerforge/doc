@@ -27,7 +27,7 @@ Internet zu bekommen.
 Als erstes werden wir ein einfaches Programm an einem PC entwickeln und testen 
 und dieses anschließend auf den RED Brick hochladen und ausführen. Danach 
 werden wir das Programm erweitern, so dass die aktuelle Uhrzeit auf der 
-grafischen Benutzerschnittstelle (GUI) angezeigt wird. Hierzu nutzen wir zum 
+grafischen Nutzerschnittstelle (GUI) angezeigt wird. Hierzu nutzen wir zum 
 Beispiel einen HDMI Monitor. Zusätzlich werden wir eine Web Schnittstelle für 
 die Temperaturmessugen anbieten. Die Fähigkeiten dieses Beispiel sind sicherlich 
 nicht sonderlich sinnvoll, zeigt aber viele Möglichkeiten des RED Bricks.
@@ -258,11 +258,11 @@ Entwicklung von GUI Programmen mit dem RED Brick
 ------------------------------------------------
 
 .. note::
-	Programme mit grafischer Benutzerschnittstelle (GUI) können nur auf dem Full
+	Programme mit grafischer Nutzerschnittstelle (GUI) können nur auf dem Full
 	Image ausgeführt werden.
 
 Eine weitere Art von Programmen die auf dem RED Brick ausgeführt werden können,
-sind Programme mit grafischer Benutzerschnittstelle (GUI), die über die HDMI
+sind Programme mit grafischer Nutzerschnittstelle (GUI), die über die HDMI
 Schnittstelle des Bricks angezeigt werden. In diesem Beispiel fügen wir eine 
 `Qt <http://pyqt.sourceforge.net/>`__ GUI unserem einfachen Temperature Bricklet 
 Programm hinzu.

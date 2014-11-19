@@ -70,7 +70,7 @@ erhältlich.
 
 Für jede unterstützte Programmiersprache sind die 
 :ref:`Tinkerforge API <api_bindings>` und häufig genutzte Bibliotheken 
-vorinstalliert. Weitere notwendige Bibliotheken können nachinstalliert werden.
+vorinstalliert. Weitere Bibliotheken können nachinstalliert werden.
 
 Der Brick ist mit einem `Micro-HDMI <http://de.wikipedia.org/wiki/HDMI>`__
 Anschluss ausgestattet, so dass auch 
@@ -117,8 +117,8 @@ Ressourcen
 
 .. _red_brick_test:
 
-Erste Schritte / Teste das RED Brick
----------------------------------
+Erste Schritte / Teste den RED Brick
+------------------------------------
 
 Mit den folgenden Schritten kann der RED Brick getestet werden.
 
@@ -127,19 +127,19 @@ Ein Schritt für Schritt Tutorial zu dem RED Brick kann hier gefunden werden:
 
 Als erstes müssen :ref:`Brick Daemon <brickd>` und :ref:`Brick Viewer <brickv>`
 Software auf einem PC oder Mac installiert werden. Anschließend sollte die Micro
-SD Karte in den :ref:`Micro SD Card Slot <red_brick_micro_sd_card_slot>` des
+SD Karte in den :ref:`Micro SD Karten Slot <red_brick_micro_sd_card_slot>` des
 RED Bricks gesteckt werden. Die Position von diesem und eine Übersicht über
 alle Schnittstellen des Bricks lässt sich in dem 
 :ref:`Hardware Abschnitt <red_brick_hardware>` finden. Es können SD Karten mit 
 vorinstalliertem Image in unserem Shop bestellt werden (TODO Link?). Ansonsten
-muss ein :ref:`Image of eine SD Karte kopiert werden <red_brick_copy_image>`.
+muss ein :ref:`Image auf eine SD Karte kopiert werden <red_brick_copy_image>`.
 
 Danach ist der RED Brick einsatzbereit und kann mit dem PC oder Mac mit einem 
 Mini USB Kabel verbunden werden.
 
 TODO: Image RED Brick with micro USB cable connected
 
-Nachdem die Brick Viewer software gestartet wurde muss auf "connect" geklickt 
+Nachdem die Brick Viewer Software gestartet wurde muss auf "connect" geklickt 
 werden. Ein Tab (Reiter), beschriftet mit "RED Brick", sollte auftauchen. Dieser 
 Tab sollte angelickt werden.
 
@@ -147,9 +147,9 @@ TODO: Image RED Brick Tab.
 
 Auf der linken Seite des Tabs sind weitere Tabs vorhanden. Der "Overview" Tab 
 gibt eine Übersicht über die CPU Last, Speicherbelegung und anderen 
-Statusinformationen. Diese Ansicht bedeutet, dass der RED Brick wie erwartet
+Statusinformationen. Normale Anzeigen bedeuten, dass der RED Brick wie erwartet
 funktioniert und Programme hochgeladen werden können. Im 
-:ref:`Brick Viewer Abschnitt <red_brick_brickv>` wird beschrieben wie der
+:ref:`Brick Viewer Abschnitt <red_brick_brickv>` wird beschrieben, wie der
 RED Brick konfiguriert werden kann und wie Programme hochgeladen werden.
 
 Nutzer des :ref:`Full Image <red_brick_images>` können zusätzlich die grafische
@@ -178,14 +178,14 @@ Die RED Brick Darstellung im Brick Viewer besteht aus verschiedenen Tabs. Jeder
 wird nachfolgend im Detail beschrieben. Die UID des RED Bricks, die Position im
 Stapel, der Name des benutzten Images, Anzahl der Timeouts und das Wort *System*
 werden als erstes aufgeführt. Über *System* kann der Brick Daemon auf dem RED 
-Brick neugestartet werden, oder aber das RED Brick selber neugestartet oder 
-herunter gefahren werden.
+Brick neugestartet werden, oder aber der RED Brick selber neugestartet oder 
+heruntergefahren werden.
 
 Overview Tab (Statusinformation)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dieser Tab ist standardmäßig selektiert. Er zeigt die Zeit, die das RED Brick
-bereits läuft (Uptime) sowie die CPU- und Speicher- Nutzung an. Weiter unten
+Dieser Tab ist standardmäßig selektiert. Er zeigt die Zeit, die der RED Brick
+bereits läuft (Uptime), sowie die CPU- und Speicher- Nutzung an. Weiter unten
 werden die Top-Prozesse nach CPU oder Speichernutzung angezeigt, die aktuell
 auf dem RED Brick laufen. Die Tabelle *Network Interfaces* zeigt den Status
 der aktuell konfigurierten Netzwerkschnittstellen.
@@ -205,7 +205,7 @@ Die Liste kann folgende Netzwerkschnittstellen enthalten:
 * ``eth0``: Dies ist eine Ethernet-Schnittstelle. Sie wird erzeugt wenn ein 
   Ethernet Stick Stick an die :ref:`USB Host Buchse <red_brick_usb_host>` 
   angeschlossen wird.
-* ``tf0```: Ist die Ethernet-Schnittstelle, die erzeugt wird, wenn eine
+* ``tf0``: Ist die Ethernet-Schnittstelle, die erzeugt wird, wenn eine
   :ref:`Ethernet Extension <ethernet_extension>` auf den RED Brick gesteckt
   wird.
 
@@ -218,7 +218,9 @@ Settings Tab (Netzwerk, Brick Daemon, Datum/Uhrzeit)
 
 .. _red_brick_brick_settings_network:
 
-In dem **Network Abschnitt** dieses Tabs können alle Einstellungen zu Netzwerken
+TODO: Selektion über den General Tab implementiert?
+
+In dem **Network** Abschnitt dieses Tabs können alle Einstellungen zu Netzwerken
 vorgenommen werden.
 
 TODO Image General subsection
@@ -260,7 +262,7 @@ Brick Daemon vorgenommen werden.
    :alt: Screenshot des Settings Tabs: Brickd Konfiguration.
    :align: center
 
-Zu den Konfigurationsmöglichkeiten gehören die Address auf dem der Brick Daemon
+Zu den Konfigurationsmöglichkeiten gehören die Adresse auf dem der Brick Daemon
 lauscht, der dazugehörige Port, der Port für die Nutzung von Websockets und 
 das Authentifizierungsgeheimnis. WebSockets werden von der Browser-Version der 
 :ref:`JavaScript Bindings <api-bindings-javascript>` verwendet um Bricks und 
@@ -288,7 +290,7 @@ Falls die Zeit nach dem booten immer vorhanden sein muss, ein Verbindung zum
 Internet aber nicht garantiert werden kann, dann kann auch das 
 :ref:`GPS Bricklet <gps_bricklet>` benutzt werden. Dazu muss nur ein kleines
 `Programm von Github <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
-heruntergeladen werden und auf den RED Brick geladen werden um die Uhrzeit 
+heruntergeladen und auf den RED Brick geladen werden, um die Uhrzeit 
 mittels GPS Uhrzeit zu synchronisieren.
 
 .. _red_brick_brickv_program:
@@ -303,10 +305,10 @@ TODO
 Console Tab (Konsole, Fernsteuerung)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn das RED Brick mittels `Mini USB Anschluss <red_brick_mini_usb>`__ mit einem
-PC verbunden ist regestriert es eine serielle Schnittstelle. Diese Schnittstelle
+Wenn der RED Brick mittels `Mini USB Anschluss <red_brick_mini_usb>`__ mit einem
+PC verbunden ist registriert es eine serielle Schnittstelle. Diese Schnittstelle
 kann dazu genutzt werden um auf die Linux Shell des RED Bricks zuzugreifen. Dazu
-muss nur die entsprechende Schnittstelle gewählt werden und *Connect* gedrückt 
+muss nur die entsprechende Schnittstelle gewählt werden und *Connect* geklickt 
 werden. Die Schnittstelle ist typischerweise unter Linux ``/dev/ttyACM0``, unter
 Windows ``TODO`` und unter OS X ``TODO``. Mit dem Nutzer **tf** und Passwort
 **tf** kann man sich einloggen. Falls unbekannt ist welche Schnittstelle die 
@@ -405,7 +407,7 @@ hochgeladen wird, so wird diese als Index Datei des binary Ordners genutzt.
 **Beispiel zur Erklärung:** Es soll eine PHP Webseite entwickelt werden, die 
 Bricks/Bricklets steuert. Dazu wird das PHP Programm ``EXAMPLE`` mit der ID 
 ``EXAMPLEID`` hochgeladen, das eine index.php als Startpunkt enthält. Wird 
-anschließend das RED Brick Web Interface aufgerufen und der "Bin" Button der 
+anschließend der RED Brick Web Interface aufgerufen und der "Bin" Button der 
 ``EXAMPLE`` Anwendung geklickt, so wird der Link zu ``/programs/EXAMPLEID/bin`` 
 geöffnet. Dieser Link führt direkt die index.php aus.
 
@@ -413,7 +415,7 @@ Webseiten, die Umwelt-Messungen von einem Temperature/Barometer/Humidity
 Bricklets anzeigt können somit sehr einfach erstellt werden. Es können aber auch
 Aktoren, zum Beispiel ein Relay Bricklet, über Buttons gesteuert werden.
 
-Mit dem RED Brick ist es also sehr einfach Web-Anwendungen zu entwickeln, die
+Mit dem RED Brick ist es also sehr einfach, Web-Anwendungen zu entwickeln, die
 Hardware steuern.
 
 HTML/Javascript
@@ -437,8 +439,8 @@ Webseiten darzustellen. Dieser ist konfiguriert um eine ``index.py`` als
 Startpunkt für ein WSGI Skript zu nutzen. Alle verbreiteten Python Web 
 Frameworks unterstützen WSGI. Das `Flask framework <http://flask.pocoo.org/>`__ 
 ist auf dem RED Brick vor installiert (beinhaltet
-`Werkzeug <http://werkzeug.pocoo.org/>` und 
-`Jinja <http://jinja.pocoo.org/>`).
+`Werkzeug <http://werkzeug.pocoo.org/>`__ und 
+`Jinja <http://jinja.pocoo.org/>`__).
 
 Ein minimales Flask Web Interface das auf den RED Brick hochgeladen werden kann,
 ist eine ``index.py`` mit folgenden Inhalt::
@@ -500,26 +502,26 @@ werden::
 RED Brick Software Images
 -------------------------
 
-Das RED Brick Software Image ist auf einer Micro SD-Karte gespeichert. Es ist 
+Das RED Brick Software Image ist auf einer Micro SD Karte gespeichert. Es ist 
 ein modifiziertes `Debian <http://debian.org/>`__ Image und in zwei 
 verschiedenen Versionen erhältlich: Das ''full'' und das ''fast'' Image. Beide
 Images unterstützen die Ausführung von eigenen Programmen und verfügen über alle
 notwendigen Tinkerforge Bibliotheken.
 
 Das **Full Image** verfügt über GPU Treiber und besitzt alle notwendigen
-Bibliotheken für die Nutzung von grafischen Benutzerschnittstellen (GUIs). Ein
+Bibliotheken für die Nutzung von grafischen Nutzerschnittstellen (GUIs). Ein
 X Server startet während des Bootvorgangs und das 
 `LXDE Desktop Environment <http://www.lxde.org>`__ wird mit Autologin gestartet.
-Wenn das eigene Programm eine grafische Benutzerschnittstelle nutzt, so wird 
+Wenn das eigene Programm eine grafische Nutzerschnittstelle nutzt, so wird 
 diese auf dem Desktop angezeigt. Die Bildschirmauflösung passt sich der 
 Voreinstellung des angeschlossenen HDMI Monitors an. Über LXDE kann diese aber
 auch konfiguriert werden. Die HDMI Schnittstelle muss aber nicht benutzt werden
-und es können auch Programme ohne grafische Benutzerschnittstelle ausgeführt
+und es können auch Programme ohne grafische Nutzerschnittstelle ausgeführt
 werden.
 
 Das **Fast Image** besitzt keine GPU Treiber und es sind keine Bibliotheken für
-grafische Benutzerschnittstellen, ein X Server und LXDE installiert. Da diverse
-Treiber und die grafische Benutzerschnittstelle nicht geladen werden müssen
+grafische Nutzerschnittstellen, ein X Server und LXDE installiert. Da diverse
+Treiber und die grafische Nutzerschnittstelle nicht geladen werden müssen
 erfolgt der Bootvorgang mit einer Dauer von 10s (TODO korrekt?) deutlich 
 schneller.
 
@@ -567,7 +569,7 @@ Image auf SD Karte kopieren
    :ref:`Full Image oder Fast Image <red_brick_images>` von der RED Brick:
    `Download-Seite  <TODO_Link_to_download_page>`__ herunterladen.
 
-2. Eine geeignete micro SD-Karte suchen. Wir empfehlen eine schnelle Karte
+2. Eine geeignete micro SD Karte suchen. Wir empfehlen eine schnelle Karte
    (z.B. Class 10, >30MB/sek. Lesen) mit genügend Speicherplatz. Die Größe 
    des Images steht ebenfall auf der Downloadseite.
 3. Das Image auf die SD Karte kopieren:
@@ -641,12 +643,12 @@ Heartbeats.
 
 .. _red_brick_micro_sd_card_slot:
 
-Micro SD-Karten Slot
+Micro SD Karten Slot
 ^^^^^^^^^^^^^^^^^^^^
 
 TODO: Image of SD Card Slot
 
-Das Linux System und alle Daten sind auf einer Micro SD-Karte gespeichert.
+Das Linux System und alle Daten sind auf einer Micro SD Karte gespeichert.
 Der Kartenslot ist auf der Unterseite des Bricks.
 Micro SD (1.0), Micro SDHC (2.0) und Micro SDXC (3.0) Karten werden 
 unterstützt. Wir empfehlen als Minimum eine Class 10 Micro SD Karte mit
@@ -678,7 +680,7 @@ konfiguriert werden. Unterstützte Sticks bieten wir in unserem Shop an
 werden und können nicht vom Brick Viewer konfiguriert werden.
 
 Das :ref:`Full Image <red_brick_images>` unterstützt grafische 
-Benutzerschnittstellen die per standard USB Tastatur, Mäusen oder
+Nutzerschnittstellen die per standard USB Tastatur, Mäusen oder
 Touchscreens gesteuert werden können.
 
 
