@@ -441,7 +441,8 @@ is an ``index.py`` with the following content::
  def index():
      return '<html><body>Hello World!</body></html>'
 
-To control Bricks/Bricklets you can just import the Tinkerforge Bindings::
+To control Bricks/Bricklets you can just import the Tinkerforge Bindings as for
+all Python programs::
 
  from tinkerforge.ip_connection import IPConnection
  from tinkerforge.bricklet_temperature import Temperature
