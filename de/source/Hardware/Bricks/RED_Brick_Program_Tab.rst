@@ -30,9 +30,9 @@ werden:
 * **New**: Startet den "New Program Wizard"
 * **Delete**: Löscht das ausgewählteProgramm
 
-Nachdem das erste eigene Programm hochgeladen wurde, kann diese ausgewählt 
+Nachdem das erste eigene Programm hochgeladen wurde, kann dieses ausgewählt 
 werden. Auf der rechten Seite werden dann Informationen zu dem Programm 
-angezeigt. Dazu gehört auch die Programm-Konfiguration, die geändert werden kann
+angezeigt. Dazu gehört die Programm-Konfiguration, die geändert werden kann
 und die Logs des Programms.
 
 
@@ -49,13 +49,13 @@ Wizard Schritt 1: Einfache Informationen
 
 * Name: Dies ist der Name des Programms. Er wird in der Programmliste angezeigt
   und dient auch an vielen anderen Stellen zur Identifikation.
-* Langauge: Wähle die Programmiersprache des Programms
+* Language: Wählt die Programmiersprache des Programms
 * Description: Der eingegebene Text wird als Beschreibung angezeigt, wenn das 
   Programm ausgewählt wird.
 * Unique Identifier: Wenn *Auto-generate unique identifier* abgewählt wird, muss
   ein eigener eindeutiger Bezeichner gewählt werden. Dieser wird hauptsächlich 
   intern verwendet und dient zum Beispiel zur Benennung des Programmordners
-  im Linux System verwendet.
+  im Linux System.
 
 Wizard Schritt 2: Dateien
 -------------------------
@@ -89,9 +89,10 @@ mit folgender Struktur hochgeladen werden soll
     * static.css
     * static.js
 
-und sowohl index.py als auch die beiden Ordner in dem Root Verzeichnis sein soll
-muss als erstes die index.py mit **Add files** hinzugefügt werden. Anschließend
-muss jedes Unterverzeichnis einzelnd mit **Add Directory** hinzugefügt werden.
+und sowohl index.py als auch die beiden Ordner in dem Root Verzeichnis seien 
+sollen, muss als erstes die index.py mit **Add files** hinzugefügt werden. 
+Anschließend muss jedes Unterverzeichnis einzelnd mit **Add Directory** 
+hinzugefügt werden.
 
 Jedes "Add" fügt etwas zum Root Verzeichnis des RED Brick Programms hinzu.
 
@@ -115,16 +116,16 @@ Die Tinkerforge C Bindings sind auf dem RED Brick vorinstalliert
 Die Header sind verfügbar in ``/usr/include/tinkerforge``. Es kann direkt gegen 
 die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
 
-* Start Mode: Aktuell ist nur *Executable* verfügbar als Start Mode.
-* Executable: Name der auführbaren Datei die aufgerufen werden soll. Diese ist 
-  entweder eine Cross-Kompilierte Datei die direkt mit hochgeladen wurde oder es
-  ist der Name der ausführbaren Datei, die während des Kompilierens erstellt 
+* Start Mode: Aktuell ist nur *Executable* verfügbar.
+* Executable: Name der ausführbaren Datei, die aufgerufen werden soll. Diese ist 
+  entweder eine Cross-Kompilierte Datei, die direkt mit hochgeladen wurde oder 
+  es ist der Name der ausführbaren Datei, die während des Kompilierens erstellt 
   wird.
 * Compile From Source: Wird diese Checkbox aktiviert, so wird der Code vor dem
   Upload kompiliert. Eine **Makefile** muss in dem Projekt enthalten sein, damit 
   diese Option genutzt werden kann. Nachfolgend eine Beispiel-Makefile für ein 
-  kleines  Projekt, das die Tinkerforge Bindings benutzt und die **example.c**
-  kompiliert::
+  kleines  Projekt, das die Tinkerforge Bindings benutzt und die Datei
+  **example.c** kompiliert::
 
     # Defines
     CC=g++
@@ -162,18 +163,18 @@ C#
 
 Die C# Tinkerforge.dll ist in ``/usr/lib/`` verfügbar und wird daher von Mono
 direkt gefunden. Jedes C# Programm, dass die Tinkerforge.dll als Referenz nutzt,
-kann also ohne Angabe der Tinkerforge.dll im zuvorigen Schritt (Schritt 2) 
+kann also ohne Angabe der Tinkerforge.dll im vorherigen Schritt (Schritt 2) 
 kompiliert werden.
 
 * Mono Version: Aktuell ist nur eine Mono Version installiert.
 * Start Mode: Aktuell ist nur *Executable* verfügbar.
-* Executable: Wähle die ausführbare .NET Datei die in Schritt 2 hinzugefügt 
+* Executable: Wähle die ausführbare .NET Datei, die in Schritt 2 hinzugefügt 
   wurde. Diese Datei hat typischerweise die Endung .exe.
 
   Die ausführbare Datei wird mit `Mono <http://www.mono-project.com/>`__ 
   ausgeführt. Die Datei kann auch unter Windows mit Visual Studio kompiliert 
   und auf dem RED Brick mit Mono ausgeführt werden, dabei muss allerdings darauf
-  geachtet werden, dass keine Windows spezifische Bibliotheken genutzt werden, 
+  geachtet werden, dass keine Windows spezifischen Bibliotheken genutzt werden, 
   die auf dem   RED Brick nicht verfügbar sind.
 * Working Directory: Spezifiziert das 
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
@@ -230,14 +231,14 @@ Z.B. mittels ``import com.tinkerforge.IPConnection;``.
 * Start Mode: **Main Class** und **JAR File** sind als Start Mode verfügbar.
 
   * Main Class: Wenn Main Class ausgewählt wird, parst der Brick Viewer alle 
-    Class Dateien, die in Schritt 2 hinzugefügt worden und gibt eine Liste aller
+    Class Dateien, die in Schritt 2 hinzugefügt wurden und gibt eine Liste aller
     Klassen die eine "main"-Methode enthalten und genutzt werden können um das 
     Programm zu starten.
   * JAR File: Wenn eine JAR Datei von dem Programm erstellt wurde, kann auch von
     dieser aus das Programm direkt gestartet werden. Die verfügbaren JAR Dateien
     werden in einer Drop-Down Box gelistet.
 * Class Path: Hier können Dateien zum Class Path hinzugefügt werden. Alle JARs,
-  die in Schritt 2 hinzugefügt wurden werden automatisch zum Class Path
+  die in Schritt 2 hinzugefügt wurden, werden automatisch zum Class Path
   hinzugefügt.
 * Working Directory: Spezifiziert das 
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
@@ -254,9 +255,9 @@ JavaScript (Browser/Node.js)
    :alt: Screenshot des RED Brick Wizard Schritt 3 (JavaScript).
    :align: center
 
-* Client-Side (Browser): Wenn client seitiges JavaScript genutzt wird muss
+* Client-Side (Browser): Wenn Client seitiges JavaScript genutzt wird, muss
   nichts konfiguriert werden. Es mussten nur die **.html** Dateien in Schritt 2
-  hinzugefügt werden, die dann mit dem 
+  zuvor hinzugefügt werden, die dann über das 
   :ref:`RED Brick Web Interface <red_brick_web_interface>` verfügbar sind.
   **Tinkerforge.js** kann genutzt werden mittels::
 
@@ -265,20 +266,20 @@ JavaScript (Browser/Node.js)
   weitere Optionen gesetzt werden. Die Tinkerforge Bindings sind verfügbar und
   können mittels ``require('tinkerforge')`` importiert werden.
 
-  * Start Mode: The start modes **Script File** und **Command** sind verfügbar
+  * Start Mode: **Script File** und **Command** sind verfügbar
     als Start Mode.
 
-    * Start Mode *Script File*: Gebe die Skriptdatei an die ausgeführt werden 
+    * Start Mode *Script File*: Gebe die Skriptdatei an, die ausgeführt werden 
       soll.
-    * Start Mode *Command*: Gebe das Kommando an das von Node mittels der **-e**
-      Option ausgeführt werden soll.
+    * Start Mode *Command*: Gebe das Kommando an, welches von Node mittels der 
+      **-e** Option ausgeführt werden soll.
   * Working Directory: Spezifiziert das 
     `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
     des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
     Typischerweise kann dies bei ``.`` belassen werden.
 
   * Node.js Options: Hier können Optionen hinzugefügt werden, die an Node 
-    übergeben werden wenn die Skriptdatei oder das Kommando ausgeführt werden.
+    übergeben werden, wenn die Skriptdatei oder das Kommando ausgeführt werden.
 
 Octave
 ^^^^^^
@@ -314,7 +315,7 @@ Perl
    :alt: Screenshot des RED Brick Wizard Schritt 3 (Perl).
    :align: center
 
-Die Tinkerforge Bindings sind für Perl ebenfalls verfügbar, nutze die ``use``
+Die Tinkerforge Bindings sind für Perl ebenfalls verfügbar. Nutze die ``use``
 Direktive um sie zu importieren, z.B: ``use Tinkerforge::IPConnection;``.
 
 * Perl Version: Aktuell ist nur eine Version des Perl Interpreters installiert.
@@ -340,7 +341,8 @@ PHP
    :alt: Screenshot des RED Brick Wizard Schritt 3 (PHP).
    :align: center
 
-Die Tinkerforge Bindings wurden mittels PEAR installiert und sind verfügbar.
+Die Tinkerforge Bindings wurden mittels `PEAR <http://pear.php.net/>`__
+installiert und sind verfügbar.
 Mittels ``require_once`` können diese importiert werden, z.B.:
 ``require_once('Tinkerforge/IPConnection.php');``.
 
@@ -354,7 +356,7 @@ Mittels ``require_once`` können diese importiert werden, z.B.:
   * Start Mode *Command*: Spezifiziert das Kommando, dass vom PHP Interpreter 
     mittels der **-r** Option während der Ausführung ausgeführt werden soll.
   * Start Mode *Web Interface*: Wenn ein Web Interface mit PHP realisiert 
-    werden soll muss diese Option gewählt werden. In diesem Fall wird PHP von
+    werden soll, muss diese Option gewählt werden. In diesem Fall wird PHP von
     Apache aufgerufen, so dass keine weiteren Optionen anzugeben sind. Siehe
     :ref:`RED Brick Web Interface <red_brick_web_interface>` für weitere 
     Informationen zum Web Interface.
@@ -363,7 +365,7 @@ Mittels ``require_once`` können diese importiert werden, z.B.:
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * PHP Options: Hier können Optionen hinzugefügt werden, die dem PHP Interpreter
-  übergeben werden wenn eine Skriptdatei oder ein Kommando ausgeführt wird.
+  übergeben werden, wenn eine Skriptdatei oder ein Kommando ausgeführt wird.
 
 Python
 ^^^^^^
@@ -373,7 +375,8 @@ Python
    :alt: Screenshot des RED Brick Wizard Schritt 3 (Python).
    :align: center
 
-Die Tinkerforge Bindings wurden mittels pip installiert und stehen zur 
+Die Tinkerforge Bindings wurden mittels 
+`pip <https://pypi.python.org/pypi/pip>`__ installiert und stehen zur 
 Verfügung. Die Bindings können mit der normalen ``import`` Direktive eingebunden
 werden, z.B.: ``from tinkerforge.ip_connection import IPConnection``.
 
@@ -381,11 +384,11 @@ werden, z.B.: ``from tinkerforge.ip_connection import IPConnection``.
 * Start Mode **Script File**, **Command**, **Module Name** und **Web Interface** 
   stehen zur Verfügung
 
-  * Start Mode *Script File*: Spezifiziert die Skriptdatei die vom Python 
+  * Start Mode *Script File*: Spezifiziert die Skriptdatei, die vom Python 
     Interpreter ausgefürt werden soll.
   * Start Mode *Module Name*: Spezifiziert einen Modulnamen, der vom Python
     Interpreter mittels der **-m** Option ausgeführt werden soll
-  * Start Mode *Command*: Spezifiziert ein Kommando, dass mittels der **-c** 
+  * Start Mode *Command*: Spezifiziert ein Kommando, welches mittels der **-c** 
     Option des Interpreters ausgeführt werden soll.
   * Start Mode *Web Interface*: Wenn ein Web Interface mit Python realisiert 
     werden soll muss diese Option gewählt werden. In diesem Fall wird Python von
@@ -408,7 +411,8 @@ Ruby
    :alt: Screenshot des RED Brick Wizard Schritt 3 (Ruby).
    :align: center
 
-Die Tinkerforge Bindings sind mittels gem installiert und daher direkt 
+Die Tinkerforge Bindings sind mittels `gem <https://rubygems.org/>`__
+installiert und daher direkt 
 verfügbar. Die ``require`` Anweisung kann genutzt werden um diese zu 
 importieren, z.B. ``require 'tinkerforge/ip_connection'``.
 
@@ -440,17 +444,17 @@ kann in einem Shellskript direkt ``tinkerforge`` ohne jeden Prefix aufgerufen
 werden.
 
 * Shell Version: Es ist nur eine Bash Version auf dem RED Brick verfügbar.
-* Start Mode **Script File** und **Command** stehen zur Verfügung
+* Start Mode **Script File** und **Command** stehen zur Verfügung.
 
-  * Start Mode *Script File*: Spezifiziert eine Skriptdatei die von der Bash
+  * Start Mode *Script File*: Spezifiziert eine Skriptdatei, die von der Bash
     ausgeführt werden soll.
-  * Start Mode *Command*: Spezifiziert ein Kommando das von Bash mittels der
-    **-c** Version ausgeführt werden soll.
+  * Start Mode *Command*: Spezifiziert ein Kommando, welches von Bash mittels 
+    der **-c** Version ausgeführt werden soll.
 * Working Directory: Spezifiziert das 
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
-* Shell Options: Hier können Optionen an Bash währen der Ausführung der 
+* Shell Options: Hier können Optionen an Bash während der Ausführung der 
   Skriptdatei oder des Kommandos übergeben werden.
 
 Visual Basic .NET
@@ -463,19 +467,19 @@ Visual Basic .NET
 
 Die Tinkerforge.dll ist unter ``/usr/lib/`` für Visual Basic .NET verfügbar und
 kann direkt von Mono gefunden werden. Jedes Visual Basic .NET Programm, dass die 
-Tinkerforge.dll als Referenz nutzt,kann also ohne Angabe der Tinkerforge.dll im 
+Tinkerforge.dll als Referenz nutzt, kann also ohne Angabe der Tinkerforge.dll im 
 zuvorigen Schritt (Schritt 2) kompiliert werden.
 
 * Mono Version: Aktuell ist nur eine Mono Version installiert.
-* Start Mode: *Executable* ist momentan der einzig unterstützte Start Mode.
+* Start Mode: Es wird momentan nur *Executable* unterstützt.
 * Executable: Wähle die ausführbare .NET Datei von den in Schritt 2 zuvor 
   gewählten dateien. Die Endung ist typischerweise .exe.
 
   Die ausführbare Datei wird mit `Mono <http://www.mono-project.com/>`__ 
-  ausgeführt. Die Datei kann auch unter Windows mit Visual Studio kompiliert 
-  und auf dem RED Brick mit Mono ausgeführt werden, dabei muss allerdings darauf
-  geachtet werden, dass keine Windows spezifische Bibliotheken genutzt werden, 
-  die auf dem RED Brick nicht verfügbar sind.
+  ausgeführt. Die Datei kann unter Windows zuvor mit Visual Studio kompiliert
+  worden sein und anschließend auf dem RED Brick mit Mono ausgeführt werden. 
+  Dabei muss allerdings darauf geachtet werden, dass keine Windows spezifischen 
+  Bibliotheken genutzt werden, die auf dem RED Brick nicht verfügbar sind.
 * Working Directory: Spezifiziert das 
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
@@ -484,8 +488,8 @@ zuvorigen Schritt (Schritt 2) kompiliert werden.
   übergeben werden.
   
 
-Wizard Schritt 4: Argumente und Umgebungvariablen
--------------------------------------------------
+Wizard Schritt 4: Argumente und Umgebungsvariablen
+--------------------------------------------------
 
 .. image:: /Images/Screenshots/red_brick_wizard_step4.jpg
    :scale: 60 %
@@ -499,7 +503,7 @@ Beispiel ein Programm mittels::
 
  ./my_program --setting value1 value2
 
-in der Kommandozeile aufgerufen werden soll, so müssen drei Argumente 
+aufgerufen werden soll, so müssen drei Argumente 
 **--settings**, **value1** und **value2** einzeln in der Liste angegeben werden.
 
 Wenn nur ein Argument mit dem Inhalt **--settings value1 value2** übergeben wird
@@ -508,7 +512,7 @@ ist dies gleichbedeutend mit folgendem Programmaufruf::
  ./my_program --settings\ value1\ value2
 
 * Environment: Die Umgebungsvariablen, die hier gesetzt werden, sind für das 
-  Programm verfügbar. Umgebungsvariablen die zum Programmstart notwendig sind, 
+  Programm verfügbar. Umgebungsvariablen, die zum Programmstart notwendig sind, 
   sind bereits voreingestellt. Falls du dir unsicher bist was diese bedeuten, 
   ist es sehr wahrscheinlich das du hier nichts anpassen musst.
   
@@ -521,14 +525,14 @@ Wizard Schritt 5: Stdio Umleitung
    :align: center
 
 In vielen Fällen können die Einstellungen hier so bleiben wie sie sind. Wenn
-du nicht weißt was Standard Input und Standard Output ist, kannst du vermutlich
-einfach **Next** klicken.
+dir die Begriffe Standard Input und Standard Output das erste mal begegnen, 
+kannst du vermutlich einfach **Next** klicken.
 
 * Standard Input:
  
   * /dev/null: Das Programm nutzt keine Eingaben.
-  * Pipe: Wenn Pipe ausgewählt wird können Eingaben an das Programm mit dem
-    Brick Viewer (in der Stdio Umleitungs-Sektion des Program Tabs) gesendet 
+  * Pipe: Wenn Pipe ausgewählt wird, können Eingaben an das Programm mit dem
+    Brick Viewer (im Stdio Redirect des Program Tabs) gesendet 
     werden. Viele unserer Beispiele warten auf Eingaben vom Nutzer und reagieren
     nur auf Callbacks. Wenn du Programme dieser Art nutzt wähle *Pipe* als
     Standard Input.
@@ -538,15 +542,15 @@ einfach **Next** klicken.
 * Standard Output:
 
   * /dev/null: Jede Ausgabe des Programms wird verworfen.
-  * File: Gibt eine Datei an in der die Ausgabe des Programms geschrieben wird.
+  * File: Gib eine Datei an in der die Ausgabe des Programms geschrieben wird.
   * Individual Log Files: Erzeugt eine neue Log Datei für jede Ausführung des
     Programms.
   * Continuous Log File: Erzeugt eine Log Datei in der alle Ausgaben des 
     Programms geschrieben wird.
 
 * Standard Error: Für die Ausgabe von Fehlern werden die gleichen Möglichkeiten
-  geboten wie für den Standard Output. Zusätzlich gibt es die Möglichkeit Fehler
-  ebenfalls in das Log des Standard Outputs zu schreiben (redirect).
+  geboten, wie für den Standard Output. Zusätzlich gibt es die Möglichkeit 
+  Fehler ebenfalls in das Log des Standard Outputs zu schreiben (redirect).
 
 
 Wizard Schritt 6: Schedule
@@ -569,10 +573,10 @@ Wizard Schritt 6: Schedule
   
   Damit kann man zum Beispiel die Ausführung eines Programms planen, das
   
-  * Jeden Tag um 20:00: ``00 20 * * *``
-  * Jeden Wochentag zur Arbeitszeit (6:00-18:00) einmal pro Stunde: ``00 09-18 * * 1-5``
-  * oder jede Minute zur 12. Stunde am Montag, aber nur wenn dieser der 16. des 
-    Monats ist: ``* 12 16 * Mon``
+  * jeden Tag um 20:00: ``00 20 * * *``
+  * jeden Wochentag zur Arbeitszeit (6:00-18:00) einmal pro Stunde: ``00 09-18 * * 1-5``
+  * oder jede Minute in der 12. Stunde des Montags, sofern dieser der 16. Tag 
+    des Monats ist: ``* 12 16 * Mon``
 
   ausgeführt wird.
 
@@ -581,8 +585,8 @@ Wizard Schritt 6: Schedule
   `Cron Tutorials <http://www.linuxhelp.net/guides/cron/>`__ 
   im Internet.
 
-  Zur Nutzung von Cron ist die aktuelle Uhrzeit notwendig. Der RED
-  Brick verfügt über keine Uhr, die weiterläuft wenn der Brick heruntergefahren 
+  Zur Nutzung von Cron ist die aktuelle Uhrzeit notwendig. Der RED Brick verfügt 
+  aber über keine Uhr, die weiterläuft wenn der Brick heruntergefahren 
   wurde. Verfügt der RED Brick eine Verbindung zum Internet, so werden Datum und
   Uhrzeit neu gesetzt (mittels NTP). Sie können auch manuell in dem Date/Time
   Abschnitt des Settings Tab gesetzt werden. Alternativ kann auch das GPS 

@@ -47,7 +47,7 @@ Wizard Step 1: General Information
 
 * Name: This is the name of your program. It will be shown in the program list
   and every other time the program is referred to.
-* Langauge: Select the language of your program.
+* Language: Select the language of your program.
 * Description: The description will be shown in the program, if your program
   is selected.
 * Unique Identifier: If you uncheck *Auto-generate unique identifier* you will
@@ -344,8 +344,8 @@ PHP
    :alt: Screenshot of RED Brick Wizard Step 3 (PHP).
    :align: center
 
-The Tinkerforge Bindings are installed through PEAR and thus
-available. You can import them with the ``require_once``
+The Tinkerforge Bindings are installed through `PEAR <http://pear.php.net/>`__
+and thus available. You can import them with the ``require_once``
 function, e.g.: ``require_once('Tinkerforge/IPConnection.php');``.
 
 * PHP Version: Currently there is only one PHP interpreter version
@@ -378,7 +378,8 @@ Python
    :alt: Screenshot of RED Brick Wizard Step 3 (Python).
    :align: center
 
-The Tinkerforge Bindings are installed through pip and thus
+The Tinkerforge Bindings are installed through 
+`pip <https://pypi.python.org/pypi/pip>`__ and thus
 available. You can import them with the normal ``import``
 statement, e.g.: ``from tinkerforge.ip_connection import IPConnection``.
 
@@ -414,8 +415,8 @@ Ruby
    :alt: Screenshot of RED Brick Wizard Step 3 (Ruby).
    :align: center
 
-The Tinkerforge Bindings are installed through gem and thus 
-available. You can use the ``require`` statement to import them, 
+The Tinkerforge Bindings are installed through `gem <https://rubygems.org/>`__
+and thus available. You can use the ``require`` statement to import them, 
 e.g.: ``require 'tinkerforge/ip_connection'``.
 
 * Ruby Version: Currently there is only one Ruby interpreter version
