@@ -45,8 +45,6 @@ your PC/Mac. Please follow the documented steps.
 Test the RED Brick
 ------------------
 
-TODO Image RED Brick
-
 After you have installed the necessary software, you can test the 
 RED Brick. At first you need to put a micro SD card with an 
 :ref:`RED Brick software image <red_brick_images>` in the micro SD card slot of
@@ -55,7 +53,11 @@ the Brick. It is located on the bottom side
 shop). After that, you can connect the RED Brick 
 with a mini USB cable to your PC.
 
-TODO Image RED Brick connected with mini USB cable
+.. image:: /Images/Bricks/brick_red_mini_usb_600.jpg
+   :scale: 100 %
+   :alt: RED Brick with Mini-USB cable
+   :align: center
+   :target: ../../_images/Bricks/brick_red_mini_usb_800.jpg
 
 Start the Brick Viewer software and click on **Connect**. A tab marked with 
 **RED Brick** will show up. Click on it. You should see some status 
@@ -74,7 +76,11 @@ you should power the RED Brick down. To shut it down click on
 top of the RED Brick and connect a Temperature Bricklet 
 Bricklet to it.
 
-TODO Stack of RED + Master + Temperature Bricklet
+.. image:: /Images/Bricks/brick_red_master_temp_600.jpg
+   :scale: 100 %
+   :alt: RED Brick with Master Brick and Temperature Bricklet
+   :align: center
+   :target: ../../_images/Bricks/brick_red_master_temp_800.jpg
 
 After that reconnect the RED Brick to the PC, open the Brick Viewer
 software and click on **Connect**. Now the RED Brick tab, a Master Brick and the
@@ -216,7 +222,11 @@ To gain internet access on the RED Brick we can either connect a
 USB WIFI/Ethernet dongle or the Ethernet Extension. In this example we 
 will add the :ref:`Ethernet Extension <ethernet_extension>`:
 
-TODO Stack of RED + Master + Temperature Bricklet + Ethernet Extension
+.. image:: /Images/Bricks/brick_red_master_temp_600.jpg
+   :scale: 100 %
+   :alt: RED Brick with Master Brick, Temperature Bricklet and Ethernet Extension
+   :align: center
+   :target: ../../_images/Bricks/brick_red_master_temp_800.jpg
 
 Shut the RED Brick down and remove the power before you stack the
 Extension on top of the stack.

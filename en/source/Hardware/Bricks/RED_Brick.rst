@@ -186,12 +186,16 @@ pre-installed image in our shop (TODO Link?). Otherwise you have to
 After that your RED Brick is ready to go and can be connected to your PC or Mac 
 with a mini USB cable.
 
-TODO: Image RED Brick with micro USB cable connected
+.. image:: /Images/Bricks/brick_red_mini_usb_600.jpg
+   :scale: 100 %
+   :alt: RED Brick with Mini-USB cable
+   :align: center
+   :target: ../../_images/Bricks/brick_red_mini_usb_800.jpg
 
 If you start the Brick Viewer software and press "connect". A tab should show up
 labeled with "RED Brick". Click on it.
 
-TODO: Image RED Brick Tab.
+TODO: Image RED Brick Tab (is already directly below here?)
 
 On the left side of the tab you see different additional tabs. The "Overview" 
 tab shows information about the CPU load, 
@@ -635,13 +639,20 @@ Copy Image on SD Card
 Hardware Description
 --------------------
 
-TODO: Overview Image with Top and Bottom Side
+.. image:: /Images/Bricks/brick_red_caption_top_fixed_width.jpg
+   :scale: 100 %
+   :alt: RED Brick caption top
+   :align: center
+   :target: ../../_images/Bricks/brick_red_caption_top_1000.jpg
 
+.. image:: /Images/Bricks/brick_red_caption_bottom_fixed_width.jpg
+   :scale: 100 %
+   :alt: RED Brick caption bottom
+   :align: center
+   :target: ../../_images/Bricks/brick_red_caption_bottom_1000.jpg
 
 Power Button
 ^^^^^^^^^^^^
-
-TODO: Image of Power Button
 
 The button on the RED Brick is a power button. Press it longer than 5 seconds
 and the RED Brick will turn off immediately. 
@@ -652,8 +663,6 @@ seconds) and the Brick will boot again.
 
 LEDs
 ^^^^
-
-TODO: Image of RED Brick with arrows to LEDs
 
 The RED Brick has three LEDs on the top side: A blue, a red and a green LED.
 
@@ -687,8 +696,6 @@ heartbeat.
 Micro SD Card Slot
 ^^^^^^^^^^^^^^^^^^
 
-TODO: Image of SD Card Slot
-
 The Linux system and your data is stored on a Micro SD card. The slot
 is located at the bottom side of the Brick. 
 Micro SD (1.0), Micro SDHC (2.0) and Micro SDXC (3.0) cards
@@ -702,8 +709,6 @@ A description of the images can be found in the
 
 USB 2.0 Host
 ^^^^^^^^^^^^
-
-TODO: Image of USB Port
 
 The RED Brick is equipped with a standard 
 `USB 2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mbps) type A jack. It can
@@ -736,8 +741,6 @@ power the Brick.
 Micro HDMI
 ^^^^^^^^^^
 
-TODO: Image HDMI connector
-
 With the Micro `HDMI <http://en.wikipedia.org/wiki/HDMI>`__ connector 
 (also called type D), all standard HDMI monitors and TVs can be connected to 
 the RED Brick. The connector is only active in the 
@@ -747,8 +750,6 @@ supported.
 
 Brick Stack Connector
 ^^^^^^^^^^^^^^^^^^^^^
-
-TODO: Image Stack connector
 
 The RED Brick can control up to eight other Bricks through the stack 
 connectors. Additionally up to two Master Extensions can be used with the RED 
@@ -774,8 +775,6 @@ GPIO Header
    This header is intended for advanced users to connect their own hardware. 
    Currently there is no software support for any of the functions of this 
    GPIO connector.
-
-TODO Image Header
 
 The RED Brick is equipped with a 21 pin, 0.25mm pitch, FPC GPIO connector
 (Molex 502078-2110).
