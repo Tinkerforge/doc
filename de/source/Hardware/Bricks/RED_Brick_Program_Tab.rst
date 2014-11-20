@@ -231,11 +231,11 @@ Z.B. mittels ``import com.tinkerforge.IPConnection;``.
 
   * Main Class: Wenn Main Class ausgewählt wird, parst der Brick Viewer alle 
     Class Dateien, die in Schritt 2 hinzugefügt worden und gibt eine Liste aller
-	Klassen die eine "main"-Methode enthalten und genutzt werden können um das 
-	Programm zu starten.
+    Klassen die eine "main"-Methode enthalten und genutzt werden können um das 
+    Programm zu starten.
   * JAR File: Wenn eine JAR Datei von dem Programm erstellt wurde, kann auch von
     dieser aus das Programm direkt gestartet werden. Die verfügbaren JAR Dateien
-	werden in einer Drop-Down Box gelistet.
+    werden in einer Drop-Down Box gelistet.
 * Class Path: Hier können Dateien zum Class Path hinzugefügt werden. Alle JARs,
   die in Schritt 2 hinzugefügt wurden werden automatisch zum Class Path
   hinzugefügt.
@@ -348,15 +348,16 @@ Mittels ``require_once`` können diese importiert werden, z.B.:
   installiert.
 * Start Mode **Script File**, **Command** und **Web Interface** stehen zur 
   Verfügung
+
   * Start Mode *Script File*: Spezifiziert die Skriptdatei, die vom PHP 
     Interpreter ausgeführt werden soll.
   * Start Mode *Command*: Spezifiziert das Kommando, dass vom PHP Interpreter 
     mittels der **-r** Option während der Ausführung ausgeführt werden soll.
   * Start Mode *Web Interface*: Wenn ein Web Interface mit PHP realisiert 
     werden soll muss diese Option gewählt werden. In diesem Fall wird PHP von
-	Apache aufgerufen, so dass keine weiteren Optionen anzugeben sind. Siehe
+    Apache aufgerufen, so dass keine weiteren Optionen anzugeben sind. Siehe
     :ref:`RED Brick Web Interface <red_brick_web_interface>` für weitere 
-	Informationen zum Web Interface.
+    Informationen zum Web Interface.
 * Working Directory: Spezifiziert das 
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
@@ -371,6 +372,7 @@ Python
    :scale: 60 %
    :alt: Screenshot des RED Brick Wizard Schritt 3 (Python).
    :align: center
+
 Die Tinkerforge Bindings wurden mittels pip installiert und stehen zur 
 Verfügung. Die Bindings können mit der normalen ``import`` Direktive eingebunden
 werden, z.B.: ``from tinkerforge.ip_connection import IPConnection``.
@@ -387,9 +389,9 @@ werden, z.B.: ``from tinkerforge.ip_connection import IPConnection``.
     Option des Interpreters ausgeführt werden soll.
   * Start Mode *Web Interface*: Wenn ein Web Interface mit Python realisiert 
     werden soll muss diese Option gewählt werden. In diesem Fall wird Python von
-	Apache/WSGI aufgerufen, so dass keine weiteren Optionen anzugeben sind. 
-	Siehe :ref:`RED Brick Web Interface <red_brick_web_interface>` für 
-	weitere Informationen zum Web Interface.
+    Apache/WSGI aufgerufen, so dass keine weiteren Optionen anzugeben sind. 
+    Siehe :ref:`RED Brick Web Interface <red_brick_web_interface>` für 
+    weitere Informationen zum Web Interface.
 * Working Directory: Spezifiziert das 
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
@@ -527,9 +529,9 @@ einfach **Next** klicken.
   * /dev/null: Das Programm nutzt keine Eingaben.
   * Pipe: Wenn Pipe ausgewählt wird können Eingaben an das Programm mit dem
     Brick Viewer (in der Stdio Umleitungs-Sektion des Program Tabs) gesendet 
-	werden. Viele unserer Beispiele warten auf Eingaben vom Nutzer und reagieren
-	nur auf Callbacks. Wenn du Programme dieser Art nutzt wähle *Pipe* als
-	Standard Input.
+    werden. Viele unserer Beispiele warten auf Eingaben vom Nutzer und reagieren
+    nur auf Callbacks. Wenn du Programme dieser Art nutzt wähle *Pipe* als
+    Standard Input.
   * File: Hiermit wird eine Datei ausgewählt, deren Inhalt als Eingabe übergeben
     wird.
   
@@ -548,7 +550,7 @@ einfach **Next** klicken.
 
 
 Wizard Schritt 6: Schedule
------------------------
+--------------------------
 
 .. image:: /Images/Screenshots/red_brick_wizard_step6.jpg
    :scale: 60 %
