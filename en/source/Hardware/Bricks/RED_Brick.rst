@@ -17,11 +17,62 @@ RED Brick
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricks/brick_red_prototype_350.jpg",
-	               "Bricks/brick_red_prototype_600.jpg",
-	               "RED Brick Prototype")
+	    tfdocstart("Bricks/brick_red_tilted_top_front_350.jpg",
+	               "Bricks/brick_red_tilted_top_front_800.jpg",
+	               "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_tilted_top_back_100.jpg",
+	             "Bricks/brick_red_tilted_top_back_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_tilted_bottom_front_100.jpg",
+	             "Bricks/brick_red_tilted_bottom_front_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_tilted_bottom_back_100.jpg",
+	             "Bricks/brick_red_tilted_bottom_back_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_side_front_100.jpg",
+	             "Bricks/brick_red_side_front_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_side_back_100.jpg",
+	             "Bricks/brick_red_side_back_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_top_100.jpg",
+	             "Bricks/brick_red_top_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_bottom_100.jpg",
+	             "Bricks/brick_red_bottom_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_caption_top_100.jpg",
+	             "Bricks/brick_red_caption_top_800.jpg",
+	             "RED Brick with caption")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_caption_bottom_100.jpg",
+	             "Bricks/brick_red_caption_bottom_800.jpg",
+	             "RED Brick with caption")
+	}}
+	{{
+	    tfdocimg("Dimensions/red_brick_dimensions_100.png",
+	             "Dimensions/red_brick_dimensions_600.png",
+	             "Outline and drilling plan")
 	}}
 	{{ tfdocend() }}
+
 
 
 Features
