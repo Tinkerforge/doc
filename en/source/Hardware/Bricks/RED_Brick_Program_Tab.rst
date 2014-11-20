@@ -26,9 +26,9 @@ and monitor your programs.
 If you start the RED Brick for the first time you will be presented with an
 empty program list and three buttons:
 
-* Refresh: Refreshes programs tab
-* New: Starts New Program wizard
-* Delete: Deletes selected program
+* **Refresh**: Refreshes programs tab
+* **New**: Starts New Program wizard
+* **Delete**: Deletes selected program
 
 After you uploaded your first program you can select the program and
 information about the program will be displayed on the right. You
@@ -63,9 +63,10 @@ Wizard Step 2: Files
    :alt: Screenshot of RED Brick Wizard Step 2.
    :align: center
 
-* Add files: Adds your program files.
-* Add Directory: Adds you program directories.
-* Remove: Removes the selected file or directory.
+* **Add files**: Adds single program files.
+* **Add Directory**: Adds your program directory, the included files 
+  and subdirectories.
+* **Remove**: Removes the selected file or directory.
 
 Please note that the hierarchical structure that you create here will be used
 on the RED Brick exactly as specified.
@@ -88,8 +89,8 @@ Python/Flask with the following structure
 
 and you want the index.py as well as the two folders to be in the root 
 directory of your program on the RED Brick, you need to first
-select the index.py with *Add file* and then independently select the 
-two folders with *Add Directory*.
+select the index.py with **Add file** and then independently select the 
+two folders with **Add Directory**.
 
 Every "Add" will add the thing you are selecting to the root directory
 of the RED Brick program.
@@ -109,9 +110,10 @@ C/C++
    :alt: Screenshot of RED Brick Wizard Step 3 (C/C++).
    :align: center
 
-The Tinkerforge C Bindings are compiled as a library (libtinkerforge.so),
-which is available in ``/usr/lib/``. The headers are available in
-``/usr/include/tinkerforge``.
+The Tinkerforge C Bindings are preinstalled on the RED Brick
+(compiled as a library (libtinkerforge.so), available in ``/usr/lib/``). 
+The headers are available in ``/usr/include/tinkerforge``. You can
+directly link against this library (see example below).
 
 * Start Mode: Currently only *Executable* is available as start mode.
 * Executable: Name of the executable that should be called. This is
@@ -265,10 +267,13 @@ JavaScript (Browser/Node.js)
   start mode and other options. The Tinkerforge Bindings are available,
   you can use ``require('tinkerforge')`` to import them.
 
-  * Start Mode *Script File*: Specify the script file that should be
-    executed by node.
-  * Start Mode *Command*: Specify a command that should be executed
-    by node with the **-e** option.
+  * Start Mode: The start modes **Script File** and **Command** are
+    available as start mode.
+
+    * Start Mode *Script File*: Specify the script file that should be
+      executed by node.
+    * Start Mode *Command*: Specify a command that should be executed
+      by node with the **-e** option.
   * Working Directory: Specify the 
     `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
     of your program. You can use a path that is relative to the
@@ -317,10 +322,13 @@ directive to import them, e.g.: ``use Tinkerforge::IPConnection;``.
 
 * Perl Version: Currently there is only one Perl interpreter version
   installed on the RED Brick.
-* Start Mode *Script File*: Specify the script file that should be
-  executed by the Perl interpreter.
-* Start Mode *Command*: Specify a command that should be executed
-  by the Perl interpreter with the **-e** option.
+* Start Mode: The start modes **Script File** and **Command** are
+  available as start mode.
+
+  * Start Mode *Script File*: Specify the script file that should be
+    executed by the Perl interpreter.
+  * Start Mode *Command*: Specify a command that should be executed
+    by the Perl interpreter with the **-e** option.
 * Working Directory: Specify the 
   `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
   of your program. You can use a path that is relative to the
@@ -340,18 +348,21 @@ The Tinkerforge Bindings are installed through PEAR and thus
 available. You can import them with the ``require_once``
 function, e.g.: ``require_once('Tinkerforge/IPConnection.php');``.
 
-* Perl Version: Currently there is only one PHP interpreter version
+* PHP Version: Currently there is only one PHP interpreter version
   installed on the RED Brick.
-* Start Mode *Script File*: Specify the script file that should be
-  executed by the PHP interpreter.
-* Start Mode *Command*: Specify a command that should be executed
-  by the PHP interpreter with the **-r** option.
-* Start Mode *Web Interface*: If you want to implement a web
-  interface with PHP you have to chose this option.
-  In this case PHP will be called from Apache, thus there are
-  no other configurations to be made. See 
-  :ref:`RED Brick web interface <red_brick_web_interface>` for
-  more informations about the web interface.
+* Start Mode: The start modes **Script File**, **Command** and **Web Interface**
+  are available as start mode.
+
+  * Start Mode *Script File*: Specify the script file that should be
+    executed by the PHP interpreter.
+  * Start Mode *Command*: Specify a command that should be executed
+    by the PHP interpreter with the **-r** option.
+  * Start Mode *Web Interface*: If you want to implement a web
+    interface with PHP you have to chose this option.
+    In this case PHP will be called from Apache, thus there are
+    no other configurations to be made. See 
+    :ref:`RED Brick web interface <red_brick_web_interface>` for
+    more informations about the web interface.
 * Working Directory: Specify the 
   `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
   of your program. You can use a path that is relative to the
@@ -372,18 +383,21 @@ available. You can import them with the normal ``import``
 statement, e.g.: ``from tinkerforge.ip_connection import IPConnection``.
 
 * Python Version: You can choose between Python 2 and Python 3.
-* Start Mode *Script File*: Specify the script file that should be
-  executed by the Python interpreter.
-* Start Mode *Module Name*: Specify a module name that should be executed
-  by the Python interpreter with the **-m** option.
-* Start Mode *Command*: Specify a command that should be executed
-  by the Python interpreter with the **-c** option.
-* Start Mode *Web Interface*: If you want to implement a web
-  interface with Python you have to chose this option.
-  In this case Python will be called from Apache/WSGI, thus there are
-  no other configurations to be made. See 
-  :ref:`RED Brick web interface <red_brick_web_interface>` for
-  more informations about the web interface.
+* Start Mode: The start modes **Script File**, **Module Name**, **Command** and
+  **Web Interface** are available as start mode.
+
+  * Start Mode *Script File*: Specify the script file that should be
+    executed by the Python interpreter.
+  * Start Mode *Module Name*: Specify a module name that should be executed
+    by the Python interpreter with the **-m** option.
+  * Start Mode *Command*: Specify a command that should be executed
+    by the Python interpreter with the **-c** option.
+  * Start Mode *Web Interface*: If you want to implement a web
+    interface with Python you have to chose this option.
+    In this case Python will be called from Apache/WSGI, thus there are
+    no other configurations to be made. See 
+    :ref:`RED Brick web interface <red_brick_web_interface>` for
+    more informations about the web interface.
 * Working Directory: Specify the 
   `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
   of your program. You can use a path that is relative to the
@@ -406,10 +420,13 @@ e.g.: ``require 'tinkerforge/ip_connection'``.
 
 * Ruby Version: Currently there is only one Ruby interpreter version
   installed on the RED Brick.
-* Start Mode *Script File*: Specify the script file that should be
-  executed by the Ruby interpreter.
-* Start Mode *Command*: Specify a command that should be executed
-  by the Ruby interpreter with the **-e** option.
+* Start Mode: The start modes **Script File** and **Command** are
+  available as start mode.
+
+  * Start Mode *Script File*: Specify the script file that should be
+    executed by the Ruby interpreter.
+  * Start Mode *Command*: Specify a command that should be executed
+    by the Ruby interpreter with the **-e** option.
 * Working Directory: Specify the 
   `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
   of your program. You can use a path that is relative to the
@@ -429,12 +446,15 @@ The Shell Bindings are available in ``/usr/local/bin``, which is
 in the PATH. In your shell script you can just call ``tinkerforge`` 
 without any prefix.
 
-* Shell Version: Currently there is only one bash available on the
+* Shell Version: Currently there is only one bash version available on the
   RED Brick.
-* Start Mode *Script File*: Specify the script file that should be
-  executed by bash.
-* Start Mode *Command*: Specify a command that should be executed
-  by bash with the **-c** option.
+* Start Mode: The start modes **Script File** and **Command** are
+  available as start mode.
+
+  * Start Mode *Script File*: Specify the script file that should be
+    executed by bash.
+  * Start Mode *Command*: Specify a command that should be executed
+    by bash with the **-c** option.
 * Working Directory: Specify the 
   `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
   of your program. You can use a path that is relative to the
@@ -511,9 +531,9 @@ Wizard Step 5: Stdio Redirection
    :alt: Screenshot of RED Brick Wizard Step 5.
    :align: center
 
-If you don't quite understand what any of this means, you can 
-likely just leave the default values as they are and click **Next**.
-
+In many cases the default values can just leaved as they are. If you don't know
+what the standard input and output is you can likely just click **Next**.
+   
 * Standard Input:
  
   * /dev/null: Your program does not have any input.
@@ -551,9 +571,9 @@ Wizard Step 6: Schedule
 * Mode *Never*: The scheduler of the RED Brick will not be used. You can
   start your program manually in the program tab of the Brick Viewer.
 * Mode *Always*: The scheduler will try to always keep your program running.
-  If your program ends it will be restarted immediately. If you have a
-  program that uses some input to control some output that should just
-  always do its thing, this mode is the right one for you.
+  If your program ends it will be restarted immediately. If you have a 
+  controlling program that uses some input to control some output that should 
+  just always do its thing, this mode is the right one for you.
 * Mode *Interval*: Define an interval (in seconds) in which your program 
   should be executed.
 * Mode *Cron*: Use `cron <http://en.wikipedia.org/wiki/Cron>`__ to 
@@ -569,7 +589,9 @@ Wizard Step 6: Schedule
   available on the internet.
 
   Please note that your RED Brick needs to have the current time available for
-  cron to work. The time will be automatically set if your RED Brick is
+  cron to work. The RED Brick is not equipped with a clock, which is also active
+  when the RED Brick is powered down. Such that the time is lost
+  after power down. The time will be automatically set if your RED Brick is
   connected to the Internet (through NTP). You can set it in the Date/Time
   section of the settings tab and you can use the GPS Bricklet to 
   `sync the Linux system time with the GPS time <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__.
@@ -587,8 +609,8 @@ Wizard Step 7: Summary
    :alt: Screenshot of RED Brick Wizard Step 7.
    :align: center
 
-The summary page shows a summary of your configuration. If you want to 
-ask for help regarding the configuration of a program it probably makes 
+The summary page shows a summary of the previous made configuration. If you want
+to ask for help regarding the configuration of a program it probably makes 
 sense to append the content of this summary to your inquiry.
 
 Wizard Step 8: Upload
