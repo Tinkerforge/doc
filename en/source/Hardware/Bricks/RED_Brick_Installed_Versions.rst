@@ -30,7 +30,7 @@ For the languages with package managers (JavaScript, Perl, PHP, Python, Ruby)
 the package manager (``npm``, ``cpanm``, ``pear``, ``pip``, ``gem``) is 
 pre-installed and you can use it through the
 console tab of the Brick Viewer. Even if you don't have any experience with
-Linux or terminals, you can read up these package managers and learn how
+Linux or terminals, you can read up on these package managers and learn how
 to use them in a matter of minutes!
 
 For C\# and Visual Basic .NET you can just take the .NET DLL, upload it
