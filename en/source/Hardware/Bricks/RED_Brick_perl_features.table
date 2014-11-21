@@ -1,0 +1,45 @@
+Perl
+----
+============================== ===================== ==================================================================== ====
+Name                           Version               Description                                                          full
+============================== ===================== ==================================================================== ====
+RPC::Simple                    1.002                 Perl classes to handle simple asynchronous RPC calls with  call-back |c|
+Thread::Queue                  3.05                  Thread-safe queues                                                   |c|
+cpanminus                      1.5015-1              script to get, unpack, build and install modules from CPAN           |c|
+libcrypt-blowfish-perl         2.12-1                Blowfish cryptography for Perl                                       |c|
+libcrypt-des-perl              2.05-2                Perl DES encryption module                                           |c|
+libcrypt-dsa-perl              1.17-3                Perl module for DSA Signatures and Key Generation                    |c|
+libcrypt-generatepassword-perl 0.03-4                perl module to generate secure passwords                             |c|
+libcrypt-gpg-perl              1.52-1                An Object Oriented Interface to GnuPG                                |c|
+libcrypt-hcesha-perl           0.70-3                Perl extension for one way hash chaining encryption using SHA        |c|
+libcrypt-openssl-dsa-perl      0.13-6                module which implements the DSA signature verification system        |c|
+libcrypt-openssl-random-perl   0.04-1                Access to the OpenSSL pseudo-random number generator                 |c|
+libcrypt-openssl-rsa-perl      0.28-1                module for RSA encryption using OpenSSL                              |c|
+libcrypt-passwdmd5-perl        1.3-10                interoperable MD5-based crypt() for perl                             |c|
+libcrypt-util-perl             0.11-1                lightweight Crypt/Digest convenience API                             |c|
+libdbd-mysql-perl              4.021-1+b1            Perl5 database interface to the MySQL database                       |c|
+libdbd-sqlite2-perl            2:0.33-9              Perl DBI driver with a self-contained RDBMS (SQLite2 version)        |c|
+libdbd-sqlite3-perl            1.37-1                Perl DBI driver with a self-contained RDBMS                          |c|
+libdigest-hmac-perl            1.03+dfsg-1           module for creating standard message integrity checks                |c|
+libgd-graph-perl               1.44-6                Graph Plotting Module for Perl 5                                     |c|
+libgd-graph3d-perl             0.63-8                Create 3D Graphs with GD and GD::Graph                               |c|
+libgtk2-perl                   2:1.244-1             Perl interface to the 2.x series of the Gimp Toolkit library         |c|
+libgtk3-perl                   0.006-2               Perl bindings for the GTK+ graphical user interface library          |c|
+libnet-pcap-perl               0.16-3                Perl binding to the LBL pcap packet capture library                  |c|
+libopengl-perl                 0.66+dfsg-1           Perl interface providing graphics display using OpenGL               |c|
+libpdf-create-perl             1.06-1                Perl module to create PDF files                                      |c|
+libqtcore4-perl                4.8.4-1               perl bindings for the Qt Core library                                |c|
+libqtgui4-perl                 4.8.4-1               perl bindings for the Qt Gui library                                 |c|
+libqtnetwork4-perl             4.8.4-1               perl bindings for the Qt Network library                             |c|
+libqttest4-perl                4.8.4-1               perl bindings for the Qt Test library                                |c|
+libqtxml4-perl                 4.8.4-1               perl bindings for the Qt Xml library                                 |c|
+librpc-xml-perl                0.76-3                Perl implementation of the XML-RPC protocol                          |c|
+libsys-statistics-linux-perl   0.66-1                Perl module to collect system statistics                             |c|
+libterm-readline-gnu-perl      1.20-2                Perl extension for the GNU ReadLine/History Library                  |c|
+libwww-curl-perl               4.15-1                Perl bindings to libcurl                                             |c|
+libxml-simple-perl             2.20-1                Perl module for reading and writing XML                              |c|
+libyaml-perl                   0.81-1                YAML Ain't Markup Language                                           |c|
+perl                           5.14.2-21+rpi2+deb7u1 Larry Wall's Practical Extraction and Report Language                |c|
+perl-doc                       5.14.2-21+rpi2+deb7u1 Perl documentation                                                   |c|
+pmtools                        1.10+ds1-2            Perl module tools                                                    |c|
+============================== ===================== ==================================================================== ====

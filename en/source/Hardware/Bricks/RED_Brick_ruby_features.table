@@ -1,0 +1,20 @@
+Ruby
+----
+============ ============ ================================================================================================================ ====
+Name         Version      Description                                                                                                      full
+============ ============ ================================================================================================================ ====
+curb         0.8.6        Ruby libcurl bindings                                                                                            |c|
+distribution 0.7.1        Distribution                                                                                                     |c|
+god          0.13.4       Process monitoring framework.                                                                                    |c|
+integration  0.1.1        A suite for integration in Ruby                                                                                  |c|
+minimization 0.2.1        Minimization algorithms on pure Ruby.                                                                            |c|
+msgpack-rpc  0.5.2        MessagePack-RPC, asynchronous RPC library using MessagePack                                                      |c|
+mysql2       0.3.16       A simple, fast Mysql library for Ruby, binding to libmysql                                                       |c|
+plotrb       0.0.1        Plotrb is a plotting tool in Ruby, built on Vega and D3, and is part of the SciRuby Project.                     |c|
+prawn        1.3.0, 0.8.4 A fast and nimble PDF generator for Ruby                                                                         |c|
+ruby-full    1:1.9.3      Ruby full installation (default version)                                                                         |c|
+ruby-pcap    0.7.8        Ruby interface to LBL Packet Capture library. This library also includes classes to access packet header fields. |c|
+rubyvis      0.6.1        Rubyvis                                                                                                          |c|
+sqlite3      1.3.10       This module allows Ruby programs to interface with the SQLite3 database engine (http://www.sqlite.org)           |c|
+statsample   1.4.0        A suite for basic and advanced statistics on Ruby                                                                |c|
+============ ============ ================================================================================================================ ====
