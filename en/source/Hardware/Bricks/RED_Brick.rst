@@ -195,8 +195,6 @@ with a Mini-USB cable.
 If you start the Brick Viewer software and press "connect". A tab should show up
 labeled with "RED Brick". Click on it.
 
-TODO: Image RED Brick Tab (is already directly below here?)
-
 On the left side of the tab you see different additional tabs. The "Overview" 
 tab shows information about the CPU load, 
 memory usage and other status information. This view means that your RED Brick
@@ -249,7 +247,7 @@ of the configured network interfaces.
 The list can contain the following network interfaces:
 
 * ``lo``: This is the loopback interface. It is a local interface, used for
-  the communication between your program and the local Brick Daemon.
+  example for the communication between your program and the local Brick Daemon.
 * ``wlan0`` : This is a WIFI interface. It is created if you attach a WIFI 
   dongle to the :ref:`USB Host connector <red_brick_usb_host>`.
 * ``eth0`` : This is a Ethernet interface. It is created if you attach a 
@@ -342,9 +340,8 @@ the GPS time.
 Program Tab (Upload and Execution)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The
-:ref:`detailed documentation for the program tab <red_brick_program_tab>` 
-can be found on a seperate site.
+The documentation of the program tab can be found on
+:ref:`a separate site <red_brick_program_tab>`.
 
 .. _red_brick_brickv_console:
 
@@ -370,6 +367,8 @@ Below you can see a screenshot of the console showing ``htop``.
 
 A good shell tutorial can be found at 
 `linuxcommand.org <http://linuxcommand.org/lc3_learning_the_shell.php>`__.
+
+.. _red_brick_brickv_versions_tab:
 
 Versions Tab (Daemon, Bindings and Libraries)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -458,7 +457,7 @@ Bricks/Bricklets you can upload your PHP program ``EXAMPLE`` with id
 go to the RED Brick web interface and click on the "Bin" button for the 
 newly created ``EXAMPLE`` program, you will get a link to 
 ``/programs/EXAMPLEID/bin``, which will directly execute the index.php 
-if opened.
+if opened since it will act as index for this directory.
 
 This way you can easily implement a webpage that shows environment information
 gathered from Temperature/Barometer/Humidity Bricklets or you can
@@ -477,13 +476,13 @@ Bindings. They are available in the root directory, import them with::
 
 Note that the JavaScript is executed in the browser of the user and not
 on the RED Brick, so you have to connect to the IP of the RED Brick,
-not localhost.
+not localhost!
 
 Python
 ^^^^^^
 
 The webserver on the RED Brick (Apache) uses WSGI 
-(`mod_wsgi <https://code.google.com/p/modwsgi/>`) to interface with
+(`mod_wsgi <https://code.google.com/p/modwsgi/>`__) to interface with
 Python programs. It is configured to recognize an ``index.py`` as the
 starting point for a WSGI script. All of the common Python web frameworks
 support WSGI. The `Flask framework <http://flask.pocoo.org/>`__ is 
@@ -510,7 +509,7 @@ all Python programs::
  # ...
 
 The default web interface of the RED Brick uses Python/Flask. 
-You can find it
+You can find the code 
 `on github <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__.
 
 It is of course also possible to use templates, static files and so on. You
@@ -563,14 +562,15 @@ If you want to change it, you can configure the screen resolution through LXDE.
 You don't have to use the HDMI port and can execute non graphical 
 programs on this image.
 
-The **fast image** comes without graphical interface support and has no X, LXDE 
-and other graphical libraries pre-installed. GPU drivers are not loaded,
+The **fast image** comes without graphical interface support and has no X, no 
+LXDE and no other graphical libraries pre-installed. GPU drivers are not loaded,
 which means that the RED Brick has more available RAM (the RAM is shared between
 CPU and GPU). It is optimized for a fast boot time and can boot in ~10s 
 (TODO, correct?).
 
 New software can be installed on both images.
-See the `installing section <TODO>`__ on how to install new software.
+See the `description of the versions tab <red_brick_brickv_versions_tab>`__ 
+on how to install new software.
 
 The list of pre-installed programming language libraries can be found below:
 
@@ -700,7 +700,7 @@ The Linux system and your data is stored on a Micro-SD card. The slot
 is located at the bottom side of the Brick. 
 Micro-SD (1.0), Micro-SDHC (2.0) and Micro-SDXC (3.0) cards
 are supported. As a minimum we recommend a class 10 Micro-SD Card, with a read
-data rate of 30MB/sec. as minimum, to ensure fast reads and writes.
+data rate of 30MB/s as minimum, to ensure fast reads and writes.
 
 A description of the images can be found in the 
 :ref:`image section <red_brick_images>`.

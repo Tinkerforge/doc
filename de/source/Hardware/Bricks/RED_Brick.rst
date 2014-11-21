@@ -108,13 +108,14 @@ JavaScript, MATLAB/Octave, Perl, PHP, Python, Ruby, Shell und Visual Basic .NET,
 können direkt auf dem Brick ausgeführt werden.
 
 Ein Programm, das Bricks und Bricklets steuert, kann auf einem normalen 
-PC/Mac geschrieben und getestet werden. Anschließend kann es per Knopfdruck auf 
-den RED Brick übertragen und ohne Änderungen auf diesen ausgeführt werden. 
-Es können mehrere Programme gleichzeitig ausgeführt werden und deren Ausführung 
-konfiguriert (nach dem Booten, jede Stunde, etc.) sowie überwacht werden.
+PC oder Mac geschrieben und getestet werden. Anschließend kann es per Knopfdruck 
+auf den RED Brick übertragen und ohne Änderungen auf diesen ausgeführt werden. 
+Es können mehrere Programme gleichzeitig ausgeführt werden. Deren Ausführung 
+kann konfiguriert (direkt nach dem Booten, jede Stunde, etc.) sowie überwacht 
+werden.
 
 Eigene Projekte können somit sehr schnell und einfach realisiert werden. 
-Unseres Wissens nach ist keine auch nur im Ansatz vergleichbare Lösung 
+Unseres Wissens nach ist keine, auch nur im Ansatz vergleichbare Lösung,
 erhältlich. 
 
 Für jede unterstützte Programmiersprache sind die 
@@ -125,7 +126,7 @@ Der Brick ist mit einem `Micro-HDMI <http://de.wikipedia.org/wiki/HDMI>`__
 Anschluss ausgestattet, so dass auch 
 Programme mit grafischer Benutzeroberfläche ausgeführt werden können. Eine 
 `USB 2.0 <http://de.wikipedia.org/wiki/USB>`__ Host Schnittstelle kann genutzt 
-werden um Eingabe- und Zeigegeräte, wie Tastaturen, Mäuse oder Touchscreens, 
+werden, um Eingabe- und Zeigegeräte, wie Tastaturen, Mäuse oder Touchscreens, 
 zu nutzen.
 
 Mit der :ref:`Ethernet Master Extension <ethernet_extension>` kann der RED Brick 
@@ -193,31 +194,30 @@ Mini-USB Kabel verbunden werden.
    :target: ../../_images/Bricks/brick_red_mini_usb_800.jpg
 
 Nachdem die Brick Viewer Software gestartet wurde muss auf "connect" geklickt 
-werden. Ein Tab (Reiter), beschriftet mit "RED Brick", sollte auftauchen. Dieser 
-Tab sollte angelickt werden.
-
-TODO: Image RED Brick Tab (ist schon direkt hier drunter?)
+werden. Ein Tab (Reiter), beschriftet mit "RED Brick", sollte auftauchen. Diesen
+Tab anklicken.
 
 Auf der linken Seite des Tabs sind weitere Tabs vorhanden. Der "Overview" Tab 
-gibt eine Übersicht über die CPU Last, Speicherbelegung und anderen 
-Statusinformationen. Normale Anzeigen bedeuten, dass der RED Brick wie erwartet
-funktioniert und Programme hochgeladen werden können. Im 
-:ref:`Brick Viewer Abschnitt <red_brick_brickv>` wird beschrieben, wie der
-RED Brick konfiguriert werden kann und wie Programme hochgeladen werden.
+gibt eine Übersicht über die Auslastung der CPU, die Speicherbelegung und 
+andere Statusinformationen. Erscheinen diese Anzeigen, so beudeted dies, dass 
+der RED Brick wie erwartet funktioniert und Programme hochgeladen werden 
+können. Im :ref:`Brick Viewer Abschnitt <red_brick_brickv>` wird beschrieben, 
+wie der RED Brick konfiguriert werden kann und wie Programme hochgeladen werden.
 
 Nutzer des :ref:`Full Image <red_brick_images>` können zusätzlich die grafische
 Nutzerschnittstelle (HDMI) testen. Dazu muss ein Monitor an den 
 :ref:`HDMI Anschluss <red_brick_hdmi>` und ein USB Hub mit Tastatur und Maus an
 dem :ref:`USB Anschluss <red_brick_usb_host>` des RED Bricks angeschlossen 
-werden. Während des Bootvorgangs kann das LXDE Desktop Environment gesehen 
-werden, dass anschließend wie ein ganz normaler Desktop PC verwendet werden kann.
+werden. Während des Bootvorgangs kann das Starten des LXDE Desktop Environments
+beobachtet werden, das anschließend wie ein ganz normaler Desktop PC verwendet 
+werden kann.
 
 .. _red_brick_brickv:
 
 Brick Viewer
 ------------
 Dieser Abschnitt beschreibt die Konfiguration des RED Bricks mit der
-:ref:`Brick Viewer <brickv>` Software. Das RED Brick kann ebenfalls über die
+:ref:`Brick Viewer <brickv>` Software. Der RED Brick kann ebenfalls über die
 :ref:`RED Brick API <red_brick_programming_interface>` konfiguriert werden (nur 
 für Poweruser gedacht).
 
@@ -251,12 +251,12 @@ der aktuell konfigurierten Netzwerkschnittstellen.
 Die Liste kann folgende Netzwerkschnittstellen enthalten:
 
 * ``lo``: Dies ist die sogenannte Loopback Schnittstelle. Sie ist rein lokal und
-  dient der Kommunikation zwischen Anwenderprogrammen und dem lokalen Brick 
-  Daemon.
+  dient unter anderem der Kommunikation zwischen Anwenderprogrammen und dem 
+  lokalen Brick Daemon.
 * ``wlan0``: Dies ist die WLAN-Schnittstelle. Sie wird erzeugt wenn ein WLAN 
   Stick an die :ref:`USB Host Buchse <red_brick_usb_host>` angeschlossen wird.
 * ``eth0``: Dies ist eine Ethernet-Schnittstelle. Sie wird erzeugt wenn ein 
-  Ethernet Stick Stick an die :ref:`USB Host Buchse <red_brick_usb_host>` 
+  Ethernet Stick an die :ref:`USB Host Buchse <red_brick_usb_host>` 
   angeschlossen wird.
 * ``tf0``: Ist die Ethernet-Schnittstelle, die erzeugt wird, wenn eine
   :ref:`Ethernet Extension <ethernet_extension>` auf den RED Brick gesteckt
@@ -325,9 +325,9 @@ konfiguriert werden.
 
 .. _red_brick_brick_settings_date:
 
-In dem **Date/Time Abschnitt** kann die Uhr des RED Bricks mit der Uhr des
-angeschlossenen PCs synchronisiert werden. Es gibt keine Batterie auf dem RED 
-Brick, so dass die Uhr nicht weiterläuft wenn der RED Brick nicht läuft.
+In dem **Date/Time Abschnitt** kann die Uhr des RED Bricks, mit der Uhr des
+angeschlossenen PCs, synchronisiert werden. Es gibt keine Batterie auf dem RED 
+Brick, so dass die Uhr nicht weiterläuft, wenn der RED Brick nicht aktiv ist.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_date.jpg
    :scale: 60 %
@@ -351,9 +351,8 @@ mittels GPS Uhrzeit zu synchronisieren.
 Program Tab (Programme hochladen und ausführen)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Eine
-:ref:`detalierte Dokumentation für den Program Tab <red_brick_program_tab>` 
-kann auf einer seperaten Seite gefunden werden.
+Die Beschreibung des Tabs kann auf einer
+:ref:`separaten Seite <red_brick_program_tab>` gefunden werden.
 
 .. _red_brick_brickv_console:
 
@@ -361,7 +360,7 @@ Console Tab (Konsole, Fernsteuerung)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wenn der RED Brick mittels `Mini-USB Anschluss <red_brick_mini_usb>`__ mit einem
-PC verbunden ist registriert es eine serielle Schnittstelle. Diese Schnittstelle
+PC verbunden ist, registriert er eine serielle Schnittstelle. Diese Schnittstelle
 kann dazu genutzt werden um auf die Linux Shell des RED Bricks zuzugreifen. Dazu
 muss nur die entsprechende Schnittstelle gewählt werden und *Connect* geklickt 
 werden. Die Schnittstelle ist typischerweise unter Linux ``/dev/ttyACM0``, unter
@@ -370,7 +369,8 @@ Windows ``TODO`` und unter OS X ``TODO``. Mit dem Nutzer **tf** und Passwort
 richtig ist, kann diese durch Ausprobieren bestimmt werden. Es kann notwendig 
 sein die ENTER Taste zu drücken um die Kommandozeile zu sehen.
 
-Nachfolgend ein Screenshot, das die Konsole mit dem Befehl ``htop`` zeigt.
+Nachfolgend ein Screenshot, das die Konsole bei der Ausführung des Befehls 
+``htop`` zeigt.
 
 
 .. image:: /Images/Screenshots/brickv_red_tab_console.jpg
@@ -381,6 +381,8 @@ Nachfolgend ein Screenshot, das die Konsole mit dem Befehl ``htop`` zeigt.
 Ein gutes Shell Tutorial kann unter 
 `linuxcommand.org <http://linuxcommand.org/lc3_learning_the_shell.php>`__ 
 gefunden werden.
+
+.. _red_brick_brickv_versions_tab:
 
 Versions Tab (Daemon, Bindings und Bibliotheken)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -393,10 +395,10 @@ Brick API Daemon sowie die installierten Bindings und deren Bibliotheken.
    :alt: Screenshot des Versions Tab.
    :align: center
 
-Wenn andere Bibliotheken, wie die installierten genutzt werden sollen, dann 
+Wenn andere Bibliotheken, wie die Installierten genutzt werden sollen, dann 
 können diese entweder mit dem eigenen Programm 
 :ref:`hochgeladen werden <red_brick_brickv_program>` oder aber mittels
-``apt-get``, ``pip``, ``pear``, ``npm`` oder aber eines ähnlichen Paketmanagers
+``apt-get``, ``pip``, ``pear``, ``npm`` oder ähnlichen Paketmanagern
 installiert werden. Die genannten Paketmanager sind in allen RED Brick Images 
 vorinstalliert.
 
@@ -425,14 +427,14 @@ als normale Netzwerkschnittstelle auftaucht, können die Netzwerkeinstellungen i
    :alt: Screenshot des Extension Tabs: RS485 Extension Konfiguration.
    :align: center
 
-Die Konfiguration der RS485 Extension ist identisch zu der mittels einem Master 
-Brick. Siehe :ref:`RS485 Extension Dokumentation <rs485_configuration>`
+Die Konfiguration der RS485 Extension ist identisch zu der mit einem Master 
+Brick. Siehe :ref:`RS485 Extension Dokumentation <rs485_configuration>`.
 
 Wir empfehlen Baudraten von 500000, 250000, 166666, 125000, 100000, 83333, 
-71428, 62500, 55555, 50000, 45454 oder 41666 Baud bei Benutzung eines RED 
+71428, 62500, 55555, 50000, 45454 oder 41666 Baud bei der Nutzung eines RED 
 Bricks.
 
-Eine Änderung der Einstellungen zu einer Extension führen zu einem Neustart des
+Eine Änderung der Einstellungen einer Extension führt zu einem Neustart des
 Brick Daemons, d.h. der RED Brick Tab verschwindet kurz aus dem Brick Viewer
 und taucht kurze Zeit später wieder auf.
 
@@ -441,13 +443,13 @@ und taucht kurze Zeit später wieder auf.
 RED Brick Web Interface
 -----------------------
 
-Wenn der RED Brick mit einem USB WLAN Stick, Ethernet Extension oder eine andere
-Netzwerkverbindung ausgestattet ist, kann auf das Web Interface zugegriffen 
-werden. Das Web Interface is unter der IP Adresse des RED Bricks oder unter
-dessen Hostnamen (Voreinstellung: ``red-brick``) erreichbar.
+Wenn der RED Brick mit einem USB WLAN Stick, einer Ethernet Extension oder einer
+anderen Netzwerkverbindung ausgestattet ist, kann auf das Web Interface 
+zugegriffen werden. Das Web Interface is unter der IP Adresse des RED Bricks 
+oder unter dessen Hostnamen (Voreinstellung: ``red-brick``) erreichbar.
 
-Das RED Brick Web Interface zeigt die installierten Programme. Deren Logs und
-Konfiguration als auch die hochgeladenen Dateien werden angezeigt.
+Das RED Brick Web Interface zeigt die installierten Programme, deren Logs und
+Konfiguration, als auch die hochgeladenen Dateien.
 
 .. image:: /Images/Screenshots/red_brick_web_interface.jpg
    :scale: 40 %
@@ -457,26 +459,27 @@ Konfiguration als auch die hochgeladenen Dateien werden angezeigt.
 Neben dem vorinstallierten Web Interface können auch eigene installiert werden.
 Es werden Webanwendungen, die in HTML/Javascript, Python oder PHP geschrieben
 sind, unterstützt. Wenn eine ``index.py``, ``index.php`` oder ``index.html`` 
-hochgeladen wird, so wird diese als Index Datei des binary Ordners genutzt.
+Datei hochgeladen wird, so wird diese als Index Datei des binary Ordners genutzt.
 
 **Beispiel zur Erklärung:** Es soll eine PHP Webseite entwickelt werden, die 
 Bricks/Bricklets steuert. Dazu wird das PHP Programm ``EXAMPLE`` mit der ID 
 ``EXAMPLEID`` hochgeladen, das eine index.php als Startpunkt enthält. Wird 
-anschließend der RED Brick Web Interface aufgerufen und der "Bin" Button der 
+anschließend das RED Brick Web Interface aufgerufen und der "Bin" Button der 
 ``EXAMPLE`` Anwendung geklickt, so wird der Link zu ``/programs/EXAMPLEID/bin`` 
-geöffnet. Dieser Link führt direkt die index.php aus.
+geöffnet. Dieser Link führt direkt die index.php aus, da diese als Index Datei
+des Verzeichnisses fungiert.
 
 Webseiten, die Umwelt-Messungen von einem Temperature/Barometer/Humidity 
 Bricklets anzeigt können somit sehr einfach erstellt werden. Es können aber auch
 Aktoren, zum Beispiel ein Relay Bricklet, über Buttons gesteuert werden.
 
-Mit dem RED Brick ist es also sehr einfach, Web-Anwendungen zu entwickeln, die
+Mit dem RED Brick ist es also sehr einfach Web-Anwendungen zu entwickeln, die
 Hardware steuern.
 
 HTML/Javascript
 ^^^^^^^^^^^^^^^
 
-Wenn eine HTML datei mit eingebetteten JavaScript hochgeladen wird, können die 
+Wenn eine HTML Datei mit eingebettetem JavaScript hochgeladen wird, können die 
 JavaScript Bindings genutzt werden. Diese sind direkt im Root Verzeichnis 
 verfügbar.
 
@@ -484,20 +487,20 @@ verfügbar.
 
 Das JavaScript wird im Browser des Benutzers ausgeführt und nicht auf dem RED 
 Brick. Aus diesem Grund muss sich mit der IP des RED Bricks verbunden werden
-und nicht mit localhost.
+und nicht mit localhost!
 
 Python
 ^^^^^^
 Auf dem Webserver (Apache) des RED Bricks wird WSGI 
-(`mod_wsgi <https://code.google.com/p/modwsgi/>`) von Python genutzt um 
+(`mod_wsgi <https://code.google.com/p/modwsgi/>`__) von Python genutzt um 
 Webseiten darzustellen. Dieser ist konfiguriert um eine ``index.py`` als
 Startpunkt für ein WSGI Skript zu nutzen. Alle verbreiteten Python Web 
 Frameworks unterstützen WSGI. Das `Flask framework <http://flask.pocoo.org/>`__ 
-ist auf dem RED Brick vor installiert (beinhaltet
+ist auf dem RED Brick vorinstalliert (beinhaltet
 `Werkzeug <http://werkzeug.pocoo.org/>`__ und 
 `Jinja <http://jinja.pocoo.org/>`__).
 
-Ein minimales Flask Web Interface das auf den RED Brick hochgeladen werden kann,
+Ein minimales Flask Web Interface, das auf den RED Brick hochgeladen werden kann,
 ist eine ``index.py`` mit folgenden Inhalt::
 
  from flask import Flask       # Use Flask framework
@@ -516,14 +519,14 @@ Bindings, wie bei jedem Python Programm, eingebunden werden::
  # ...
 
 Das standardmäßig installierte Web Interface auf dem RED Brick nutzt 
-Python/Flask. Es kann auf
+Python/Flask. Der Code kann auf
 `Github <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__
 gefunden werden.
 
-Es können natürlich auch templates, statische Dateien und so weiter benutzt 
+Es können natürlich auch Templates, statische Dateien und so weiter benutzt 
 werden. Diese können genauso benutzt werden wie in den meisten Flask Tutorials
 gezeigt. Ein `etawas komplexeres Flask Beispiel <TODO>`__, dass mehr
-Features nutzt liegt ebenfalls auf Github.
+Features nutzt, liegt ebenfalls auf Github.
 
 PHP
 ^^^
@@ -559,7 +562,7 @@ RED Brick Software Images
 
 Das RED Brick Software Image ist auf einer Micro-SD-Karte gespeichert. Es ist 
 ein modifiziertes `Debian <http://debian.org/>`__ Image und in zwei 
-verschiedenen Versionen erhältlich: Das ''full'' und das ''fast'' Image. Beide
+verschiedenen Versionen erhältlich: Das ''Full'' und das ''Fast'' Image. Beide
 Images unterstützen die Ausführung von eigenen Programmen und verfügen über alle
 notwendigen Tinkerforge Bibliotheken.
 
@@ -575,13 +578,14 @@ und es können auch Programme ohne grafische Nutzerschnittstelle ausgeführt
 werden.
 
 Das **Fast Image** besitzt keine GPU Treiber und es sind keine Bibliotheken für
-grafische Nutzerschnittstellen, ein X Server und LXDE installiert. Da diverse
-Treiber und die grafische Nutzerschnittstelle nicht geladen werden müssen
-erfolgt der Bootvorgang mit einer Dauer von 10s (TODO korrekt?) deutlich 
-schneller.
+grafische Nutzerschnittstellen, kein X Server und kein LXDE installiert. Da 
+diverse Treiber und die grafische Nutzerschnittstelle nicht geladen werden 
+müssen erfolgt der Bootvorgang mit einer Dauer von 10s (TODO korrekt?) 
+deutlich schneller.
 
-Neue Software kann in beiden Images installiert werden. Siehe
-`installing section <TODO>`__ wie neue Software installiert wird.
+Neue Software kann in beiden Images installiert werden. Siehe die
+`Beschreibung des Versions Tab <red_brick_brickv_versions_tab>`__, 
+wie neue Software installiert wird.
 
 Eine Liste mit den vorinstallierten Bibliotheken kann hier gefunden werden:
 
@@ -608,8 +612,8 @@ Bei dieser Anleitung nehmen wir an, dass ein
 
     git clone https://github.com/Tinkerforge/red-brick
 
-2. In den Ordner *image* gehen, die Datei README.rst und die dokumentierten 
-   Schritte durchführen.
+2. In den Ordner *image* gehen, die Datei README.rst öffnen und die 
+   dokumentierten Schritte durchführen.
 
 Das Bauen eines Images kann 4-6 Stunden dauern, abhängig von der 
 Leistungsfähigkeit des genutzten Rechners kann es auch deutlich
@@ -678,7 +682,7 @@ Der RED Brick besitzt drei verschiedene LEDs auf der Oberseite. Eine blaue,
 eine rote und eine grüne LED.
 
 Die blaue LED ist direkt mit der internen Stromversorgung des Prozessors 
-verbunden und leuchtet damit immer wenn der Brick mit Strom versorgt ist.
+verbunden und leuchtet also immer, wenn der Prozessor mit Strom versorgt ist.
 
 Die rote LED zeigt an wenn ein Fehler vorliegt. Wenn die rote LED während des 
 Bootvorgangs dauerhaft leuchtet, so konnte kein Image gefunden werden. Es ist
@@ -698,8 +702,8 @@ Ein normaler Bootvorgang verläuft wie folgt:
 
 Die Funktion der grünen und der roten LED kann geändert werden. Diese können zum 
 Beispiel die Ausnutzung der 
-:ref:`CPU oder der SD Karte <red_brick_brick_settings_brickd>` anstatt des 
-Heartbeats.
+:ref:`CPU oder der SD Karte <red_brick_brick_settings_brickd>` anzeigen, 
+anstatt des Heartbeats.
 
 .. _red_brick_micro_sd_card_slot:
 
@@ -710,7 +714,7 @@ Das Linux System und alle Daten sind auf einer Micro-SD-Karte gespeichert.
 Der Kartenslot ist auf der Unterseite des Bricks.
 Micro-SD (1.0), Micro-SDHC (2.0) und Micro-SDXC (3.0) Karten werden 
 unterstützt. Wir empfehlen als Minimum eine Class 10 Micro-SD-Karte mit
-einer Leserate von mindestens 30MB/sek um schnelle Lese- und 
+einer Leserate von mindestens 30MB/s um schnelle Lese- und 
 Schreibvorgänge zu ermöglichen.
 
 Eine Beschreibung der Images kann in dem
@@ -723,7 +727,7 @@ USB 2.0 Host
 
 Der RED Brick ist mit einer Standard 
 `USB 2.0 <http://de.wikipedia.org/wiki/USB>`__ (480Mbps) Typ A Buchse 
-ausgestattet. Mit ihr können USB Geräte mit bis zu 7.5W (5V/1.5) betrieben 
+ausgestattet. Mit ihr können USB Geräte mit bis zu 7.5W (5V/1.5A) betrieben 
 werden. Ein Kurzschluss-Schutz schützt den RED Brick und das angeschlossene
 Gerät. Sowohl das Full als auch das Fast Image basieren auf Debian Linux und
 unterstützen typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
@@ -735,7 +739,7 @@ konfiguriert werden. Unterstützte Sticks bieten wir in unserem Shop an
 werden und können nicht vom Brick Viewer konfiguriert werden.
 
 Das :ref:`Full Image <red_brick_images>` unterstützt grafische 
-Nutzerschnittstellen die per standard USB Tastatur, Mäusen oder
+Nutzerschnittstellen die per Standard USB Tastatur, Mäusen oder
 Touchscreens gesteuert werden können.
 
 
@@ -744,7 +748,7 @@ Touchscreens gesteuert werden können.
 Mini-USB
 ^^^^^^^^
 
-Über den Mini-USB Anschluss wird der RED Brick mittels
+Über den Mini-USB Anschluss wird der RED Brick vom
 :ref:`Brick Viewer <red_brick_brickv>` gesteuert und konfiguriert. Der RED 
 Brick kann auch über diesen mit Strom versorgt werden.
 
@@ -755,7 +759,7 @@ Micro-HDMI
 ^^^^^^^^^^
 
 Mit dem Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ Anschluss 
-(auch Typ D genannt), können alle standard HDMI Monitore und Fernseher mit dem 
+(auch Typ D genannt), können alle Standard HDMI Monitore und Fernseher mit dem 
 RED Brick verbunden werden. Der Anschluss ist nur aktiv, wenn das
 :ref:`Full Image <red_brick_images>` genutzt wird. HDMI Ethernet Channel (HEC) 
 wird nicht unterstützt.
@@ -764,9 +768,9 @@ wird nicht unterstützt.
 Brick Stapel Stecker
 ^^^^^^^^^^^^^^^^^^^^
 
-Der RED Brick kann bis zu acht andere Bricks über den Stapel Stecker steuern.
+Der RED Brick kann bis zu acht andere Bricks über den Stapelstecker steuern.
 Zusätzlich können bis zu zwei Master Extensions genutzt werden. Aktuell
-wird nur die :ref:`RS485 Extension <rs485_extension>` und alle Versionen der 
+werden nur die :ref:`RS485 Extension <rs485_extension>` und alle Versionen der 
 :ref:`Ethernet Extension <ethernet_extension>`
 unterstützt. Jede Extension kann maximal einmal im Stapel verbaut werden.
 Zwei RS485 oder zwei Ethernet Extensions sind also nicht möglich.
@@ -831,7 +835,7 @@ Stromversorgung
 ^^^^^^^^^^^^^^^
 
 Der RED Brick muss mit 5V versorgt werden. Er kann über den 
-Mini-USB connector oder eine 
+Mini-USB Anschluss oder eine 
 :ref:`Step-Down Power Supply <step_down_power_supply>` versorgt werden. Ein 
 einzelner RED Brick benötigt bis zu 1.1 Watt, so dass ein typisches 5W 
 (5V/1A) USB Netzteil ausreicht um diesen und zum Beispiel ein Master Brick
@@ -862,7 +866,7 @@ Programmierschnittstelle
 
 Die RED Brick API ist dazu gedacht um für den Brick Viewer die angebotene 
 Funktionalität zu implementieren (Statusinformationen bekommen, Programme 
-managen, etc.). Diese API ist vielleicht für Power users interessant, normale
+managen, etc.). Diese API ist ggf. für Power User interessant, normale
 Nutzer benötigen diese nicht.
 
 Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte 
