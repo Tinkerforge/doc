@@ -13,15 +13,64 @@ RED Brick
 .. note::
   Dieses Brick befindet sich noch in Entwicklung und ist noch nicht erhältlich
 
-.. raw:: html
-
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricks/brick_red_prototype_350.jpg",
-	               "Bricks/brick_red_prototype_600.jpg",
-	               "RED Brick Prototyp")
+	    tfdocstart("Bricks/brick_red_tilted_top_front_350.jpg",
+	               "Bricks/brick_red_tilted_top_front_800.jpg",
+	               "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_tilted_top_back_100.jpg",
+	             "Bricks/brick_red_tilted_top_back_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_tilted_bottom_front_100.jpg",
+	             "Bricks/brick_red_tilted_bottom_front_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_tilted_bottom_back_100.jpg",
+	             "Bricks/brick_red_tilted_bottom_back_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_side_front_100.jpg",
+	             "Bricks/brick_red_side_front_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_side_back_100.jpg",
+	             "Bricks/brick_red_side_back_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_top_100.jpg",
+	             "Bricks/brick_red_top_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_bottom_100.jpg",
+	             "Bricks/brick_red_bottom_800.jpg",
+	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_caption_top_100.jpg",
+	             "Bricks/brick_red_caption_top_800.jpg",
+	             "RED Brick mit Beschreibung")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_caption_bottom_100.jpg",
+	             "Bricks/brick_red_caption_bottom_800.jpg",
+	             "RED Brick mit Beschreibung")
+	}}
+	{{
+	    tfdocimg("Dimensions/red_brick_dimensions_100.png",
+	             "Dimensions/red_brick_dimensions_600.png",
+	             "Umriss und Bohrplan")
 	}}
 	{{ tfdocend() }}
+
 
 
 Features
@@ -137,13 +186,17 @@ muss ein :ref:`Image auf eine SD Karte kopiert werden <red_brick_copy_image>`.
 Danach ist der RED Brick einsatzbereit und kann mit dem PC oder Mac mit einem 
 Mini-USB Kabel verbunden werden.
 
-TODO: Image RED Brick with Micro-USB cable connected
+.. image:: /Images/Bricks/brick_red_mini_usb_600.jpg
+   :scale: 100 %
+   :alt: RED Brick mit Mini-USB-Kabel
+   :align: center
+   :target: ../../_images/Bricks/brick_red_mini_usb_800.jpg
 
 Nachdem die Brick Viewer Software gestartet wurde muss auf "connect" geklickt 
 werden. Ein Tab (Reiter), beschriftet mit "RED Brick", sollte auftauchen. Dieser 
 Tab sollte angelickt werden.
 
-TODO: Image RED Brick Tab.
+TODO: Image RED Brick Tab (ist schon direkt hier drunter?)
 
 Auf der linken Seite des Tabs sind weitere Tabs vorhanden. Der "Overview" Tab 
 gibt eine Übersicht über die CPU Last, Speicherbelegung und anderen 
@@ -298,7 +351,9 @@ mittels GPS Uhrzeit zu synchronisieren.
 Program Tab (Programme hochladen und ausführen)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO
+Eine
+:ref:`detalierte Dokumentation für den Program Tab <red_brick_program_tab>` 
+kann auf einer seperaten Seite gefunden werden.
 
 .. _red_brick_brickv_console:
 
@@ -593,13 +648,20 @@ Image auf SD Karte kopieren
 Hardwarebeschreibung
 --------------------
 
+.. image:: /Images/Bricks/brick_red_caption_top_fixed_width.jpg
+   :scale: 100 %
+   :alt: RED Brick Beschreibung Oberseite 
+   :align: center
+   :target: ../../_images/Bricks/brick_red_caption_top_1000.jpg
 
-TODO: Overview Image with Top and Bottom Side
-
+.. image:: /Images/Bricks/brick_red_caption_bottom_fixed_width.jpg
+   :scale: 100 %
+   :alt: RED Brick Beschreibung Unterseite
+   :align: center
+   :target: ../../_images/Bricks/brick_red_caption_bottom_1000.jpg
 
 Power Button
 ^^^^^^^^^^^^
-TODO: Image of Power Button
 
 Der Taster auf dem RED Brick ist ein Power Button. Wenn dieser länger wie 5 
 Sekunden gedrückt wird, so schaltet sich der RED Brick ab. Wenn der Brick
@@ -611,8 +673,6 @@ an geht. Der Brick bootet anschließend.
 
 LEDs
 ^^^^
-
-TODO: Image of RED Brick with arrows to LEDs
 
 Der RED Brick besitzt drei verschiedene LEDs auf der Oberseite. Eine blaue, 
 eine rote und eine grüne LED.
@@ -646,8 +706,6 @@ Heartbeats.
 Micro-SD-Kartenslot
 ^^^^^^^^^^^^^^^^^^^
 
-TODO: Image of SD Card Slot
-
 Das Linux System und alle Daten sind auf einer Micro-SD-Karte gespeichert.
 Der Kartenslot ist auf der Unterseite des Bricks.
 Micro-SD (1.0), Micro-SDHC (2.0) und Micro-SDXC (3.0) Karten werden 
@@ -662,9 +720,6 @@ Eine Beschreibung der Images kann in dem
 
 USB 2.0 Host
 ^^^^^^^^^^^^
-
-TODO: Image of USB Port
-
 
 Der RED Brick ist mit einer Standard 
 `USB 2.0 <http://de.wikipedia.org/wiki/USB>`__ (480Mbps) Typ A Buchse 
@@ -688,6 +743,7 @@ Touchscreens gesteuert werden können.
 
 Mini-USB
 ^^^^^^^^
+
 Über den Mini-USB Anschluss wird der RED Brick mittels
 :ref:`Brick Viewer <red_brick_brickv>` gesteuert und konfiguriert. Der RED 
 Brick kann auch über diesen mit Strom versorgt werden.
@@ -698,8 +754,6 @@ Brick kann auch über diesen mit Strom versorgt werden.
 Micro-HDMI
 ^^^^^^^^^^
 
-TODO: Image HDMI connector
-
 Mit dem Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ Anschluss 
 (auch Typ D genannt), können alle standard HDMI Monitore und Fernseher mit dem 
 RED Brick verbunden werden. Der Anschluss ist nur aktiv, wenn das
@@ -709,8 +763,6 @@ wird nicht unterstützt.
 
 Brick Stapel Stecker
 ^^^^^^^^^^^^^^^^^^^^
-
-TODO: Image Stack connector
 
 Der RED Brick kann bis zu acht andere Bricks über den Stapel Stecker steuern.
 Zusätzlich können bis zu zwei Master Extensions genutzt werden. Aktuell
@@ -735,8 +787,6 @@ GPIO Anschluss
 	Dieser Anschluss ist für fortgeschrittene Nutzer gedacht um eigene Hardware 
 	anzuschließen. Aktuell bieten wir keine Softwareunterstützung zur Nutzung 
 	dieses Anschlusses.
-
-TODO Image Header
 
 Der Red Brick ist mit einem 21 Pin, 0.25mm Pitch, FPC GPIO Anschluss
 ausgestattet (Molex 502078-2110).

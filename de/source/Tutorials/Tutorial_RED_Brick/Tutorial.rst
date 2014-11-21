@@ -47,8 +47,6 @@ installiert werdem. Dazu sind die dokumentierten Schritte zu befolgen.
 Teste den RED Brick
 -------------------
 
-TODO Image RED Brick
-
 Nachdem die notwendige Software installiert wurde kann der RED Brick getestet
 werden. Dazu stecken wir eine Micro-SD-Karte mit
 :ref:`RED Brick Software Image <red_brick_images>` in den Micro-SD-Karten Slot
@@ -57,7 +55,11 @@ des RED Bricks. Dieser befindet sich auf der Unterseite des Bricks (eine
 gefunden werden). Anschließend wir der RED Brick per Mini-USB Kabel mit dem
 Rechner verbunden.
 
-TODO Image RED Brick connected with mini USB cable
+.. image:: /Images/Bricks/brick_red_mini_usb_600.jpg
+   :scale: 100 %
+   :alt: RED Brick mit Mini-USB-Kabel
+   :align: center
+   :target: ../../_images/Bricks/brick_red_mini_usb_800.jpg
 
 Nun starten wir die Brick Viewer Software und klicken auf **Connect**. Ein Tab
 mit **RED Brick** bezeichnet sollte nun auftauchen. Klicke auf diesen. Der Tab
@@ -76,7 +78,11 @@ werden. Dazu klickt man in der oberen rechten Ecke auf **System**, wählt
 den Master Brick auf den RED Brick und verbinden das Temperature Bricklet mit 
 diesem.
 
-TODO Stack of RED + Master + Temperature Bricklet
+.. image:: /Images/Bricks/brick_red_master_temp_600.jpg
+   :scale: 100 %
+   :alt: RED Brick mit Master Brick und Temperature Bricklet
+   :align: center
+   :target: ../../_images/Bricks/brick_red_master_temp_800.jpg
 
 Danach wird der RED Brick wieder mit dem Computer verbunden, der Brick Viewer
 geöffnet und auf **Connect** geklickt. Es sollten Tabs für den RED Brick, 
@@ -218,7 +224,11 @@ Um Zugriff auf das Internet zu bekommen kann entweder ein USB WLAN oder Ethernet
 Stick oder eine :ref:`Ethernet Extension <ethernet_extension>` mit dem RED Brick
 verbunden werden. In diesem Beispiel werden wir eine Ethernet Extension nutzen:
 
-TODO Stack of RED + Master + Temperature Bricklet + Ethernet Extension
+.. image:: /Images/Bricks/brick_red_master_temp_600.jpg
+   :scale: 100 %
+   :alt: RED Brick mit Master Brick, Temperature Bricklet und Ethernet Extension
+   :align: center
+   :target: ../../_images/Bricks/brick_red_master_temp_800.jpg
 
 Fahre den RED Brick herunter und entferne die Stromversorgung bevor du die 
 Ethernet Extension auf den Stapel steckst.
