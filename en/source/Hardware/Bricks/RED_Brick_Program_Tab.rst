@@ -110,7 +110,7 @@ C/C++
    :alt: Screenshot of RED Brick Wizard Step 3 (C/C++).
    :align: center
 
-The Tinkerforge C Bindings are preinstalled on the RED Brick
+The Tinkerforge C/C++ Bindings are preinstalled on the RED Brick
 (compiled as a library (libtinkerforge.so), available in ``/usr/lib/``). 
 The headers are available in ``/usr/include/tinkerforge``. You can
 directly link against this library (see example below).

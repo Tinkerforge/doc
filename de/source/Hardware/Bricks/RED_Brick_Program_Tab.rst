@@ -28,7 +28,7 @@ werden:
 
 * **Refresh**: Aktualisiert die Liste
 * **New**: Startet den "New Program Wizard"
-* **Delete**: Löscht das ausgewählteProgramm
+* **Delete**: Löscht das ausgewählte Programm
 
 Nachdem das erste eigene Programm hochgeladen wurde, kann dieses ausgewählt 
 werden. Auf der rechten Seite werden dann Informationen zu dem Programm 
@@ -66,7 +66,7 @@ Wizard Schritt 2: Dateien
    :align: center
 
 * **Add files**: Fügt einzelne Programm-Dateien hinzu.
-* **Add Directory**: Fügt einzelne Programm-Ordner, die enthaltenen Dateien 
+* **Add Directory**: Fügt einzelne Programm-Ordner, deren enthaltenen Dateien 
   und Unterordner hinzu.
 * **Remove**: Löscht die selektierte Datei oder Ordner.
 
@@ -111,7 +111,7 @@ C/C++
    :alt: Screenshot des RED Brick Wizard Schritt 3 (C/C++).
    :align: center
 
-Die Tinkerforge C Bindings sind auf dem RED Brick vorinstalliert
+Die Tinkerforge C/C++ Bindings sind auf dem RED Brick vorinstalliert
 (Kompiliert als Bibliothek (libtinkerforge.so), verfügbar in ``/usr/lib/``).
 Die Header sind verfügbar in ``/usr/include/tinkerforge``. Es kann direkt gegen 
 die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
@@ -121,8 +121,8 @@ die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
   entweder eine Cross-Kompilierte Datei, die direkt mit hochgeladen wurde oder 
   es ist der Name der ausführbaren Datei, die während des Kompilierens erstellt 
   wird.
-* Compile From Source: Wird diese Checkbox aktiviert, so wird der Code vor dem
-  Upload kompiliert. Eine **Makefile** muss in dem Projekt enthalten sein, damit 
+* Compile From Source: Wird diese Checkbox aktiviert, so wird der Code nach dem
+  Hochladen kompiliert. Eine **Makefile** muss in dem Projekt enthalten sein, damit 
   diese Option genutzt werden kann. Nachfolgend eine Beispiel-Makefile für ein 
   kleines  Projekt, das die Tinkerforge Bindings benutzt und die Datei
   **example.c** kompiliert::
@@ -244,7 +244,7 @@ Z.B. mittels ``import com.tinkerforge.IPConnection;``.
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
-* JVM Options: Hier können Option angegeben werden, die der Java Virtual Machine
+* JVM Options: Hier können Optionen angegeben werden, die der Java Virtual Machine
   übergeben werden.
 
 JavaScript (Browser/Node.js)
@@ -532,7 +532,8 @@ kannst du vermutlich einfach **Next** klicken.
  
   * /dev/null: Das Programm nutzt keine Eingaben.
   * Pipe: Wenn Pipe ausgewählt wird, können Eingaben an das Programm mit dem
-    Brick Viewer (im Stdio Redirect des Program Tabs) gesendet 
+    Brick Viewer (:w
+			Stdio Redirect des Program Tabs) gesendet 
     werden. Viele unserer Beispiele warten auf Eingaben vom Nutzer und reagieren
     nur auf Callbacks. Wenn du Programme dieser Art nutzt wähle *Pipe* als
     Standard Input.
@@ -606,7 +607,7 @@ Wizard Schritt 7: Zusammenfassung
    :alt: Screenshot des RED Brick Wizard Schritt 7.
    :align: center
 
-Die Seite zeigt eine Zusammenfassung der zuvor gewählten Konifiguration. Falls
+Die Seite zeigt eine Zusammenfassung der zuvor gewählten Konfiguration. Falls
 Probleme auftreten und es Fragen gibt hilft die Angabe dieser Zusammenfassung.
 
 Wizard Schritt 8: Upload
