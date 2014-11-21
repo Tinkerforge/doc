@@ -13,6 +13,8 @@ RED Brick
 .. note::
   Dieses Brick befindet sich noch in Entwicklung und ist noch nicht erhältlich
 
+.. raw:: html
+
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
 	    tfdocstart("Bricks/brick_red_tilted_top_front_350.jpg",
