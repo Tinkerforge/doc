@@ -125,7 +125,7 @@ RED Brick wird es keine Benutzereingabe geben. Wir wollen, dass das Programm
 nur einmal die gemessene Temperatur ausgibt und sich anschließend beendet. Dazu
 entferen wir diese Zeile.
 
-`Download (example_simple_red.py) <https://github.com/Tinkerforge/doc/TODO/example_simple_red.py>`__
+`Download (example_simple_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_simple_red.py>`__
 
 .. literalinclude:: example_simple_red.py
  :language: python
@@ -255,7 +255,7 @@ aktualisieren wird.
 
 Somit können wir jeder Messung die entsprechende Uhrzeit hinzufügen.
 
-`Download (example_time_red.py) <https://github.com/Tinkerforge/doc/TODO/example_time_red.py>`__
+`Download (example_time_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_time_red.py>`__
 
 .. literalinclude:: example_time_red.py
  :language: python
@@ -277,7 +277,7 @@ Schnittstelle des Bricks angezeigt werden. In diesem Beispiel fügen wir eine
 `Qt <http://pyqt.sourceforge.net/>`__ GUI unserem einfachen Temperature Bricklet 
 Programm hinzu.
 
-`Download (example_gui_red.py) <https://github.com/Tinkerforge/doc/TODO/example_gui_red.py>`__
+`Download (example_gui_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_gui_red.py>`__
 
 .. literalinclude:: example_gui_red.py
  :language: python
@@ -332,14 +332,14 @@ Pfades dienende index.html, index.php oder index.py genutzt werden.
 Unser einfaches Temperature Bricklet Programm mit Web Interface sieht wie folgt
 aus (Python und PHP):
 
-`Download (index.py) <https://github.com/Tinkerforge/doc/TODO/index.py>`__
+`Download (index.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/index.py>`__
 
 .. literalinclude:: index.py
  :language: python
  :linenos:
  :tab-width: 4
 
-`Download (index.php) <https://github.com/Tinkerforge/doc/TODO/index.php>`__
+`Download (index.php) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/index.php>`__
 
 .. literalinclude:: index.php
  :language: php

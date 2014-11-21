@@ -123,7 +123,7 @@ On the RED Brick there won't be any user interaction. We want the program
 to print the measured temperature one time and end the program afterwards. So
 we need to remove this line.
 
-`Download (example_simple_red.py) <https://github.com/Tinkerforge/doc/TODO/example_simple_red.py>`__
+`Download (example_simple_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_simple_red.py>`__
 
 .. literalinclude:: example_simple_red.py
  :language: python
@@ -252,7 +252,7 @@ and thus have a correct system time.
 
 This means that you can now add a time to each measured temperature.
 
-`Download (example_time_red.py) <https://github.com/Tinkerforge/doc/TODO/example_time_red.py>`__
+`Download (example_time_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_time_red.py>`__
 
 .. literalinclude:: example_time_red.py
  :language: python
@@ -273,7 +273,7 @@ that is shown on the HDMI output.
 In this example we will add a `Qt <http://pyqt.sourceforge.net/>`__ GUI to the 
 simple Temperature Bricklet program.
 
-`Download (example_gui_red.py) <https://github.com/Tinkerforge/doc/TODO/example_gui_red.py>`__
+`Download (example_gui_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_gui_red.py>`__
 
 .. literalinclude:: example_gui_red.py
  :language: python
@@ -329,14 +329,14 @@ be used as a directory index.
 Our simple Temperature Bicklet program as a web interface looks as follows
 (Python and PHP):
 
-`Download (index.py) <https://github.com/Tinkerforge/doc/TODO/index.py>`__
+`Download (index.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/index.py>`__
 
 .. literalinclude:: index.py
  :language: python
  :linenos:
  :tab-width: 4
 
-`Download (index.php) <https://github.com/Tinkerforge/doc/TODO/index.php>`__
+`Download (index.php) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/index.php>`__
 
 .. literalinclude:: index.php
  :language: php
