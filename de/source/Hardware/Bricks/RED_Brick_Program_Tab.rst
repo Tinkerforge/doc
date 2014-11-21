@@ -112,7 +112,7 @@ C/C++
    :align: center
 
 Die Tinkerforge C/C++ Bindings sind auf dem RED Brick vorinstalliert
-(Kompiliert als Bibliothek (libtinkerforge.so), verfügbar in ``/usr/lib/``).
+(Kompiliert als Bibliothek libtinkerforge.so, verfügbar in ``/usr/lib/``).
 Die Header sind verfügbar in ``/usr/include/tinkerforge``. Es kann direkt gegen 
 die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
 

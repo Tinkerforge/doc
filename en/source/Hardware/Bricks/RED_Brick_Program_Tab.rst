@@ -30,7 +30,7 @@ empty program list and three buttons:
 * **New**: Starts New Program wizard
 * **Delete**: Deletes selected program
 
-After you uploaded your first program you can select the program and
+After you have uploaded your first program you can select the program and
 information about the program will be displayed on the right. You
 can edit the configuration and also view and download logs.
 
@@ -111,7 +111,7 @@ C/C++
    :align: center
 
 The Tinkerforge C/C++ Bindings are preinstalled on the RED Brick
-(compiled as a library (libtinkerforge.so), available in ``/usr/lib/``). 
+(compiled as a library libtinkerforge.so, available in ``/usr/lib/``). 
 The headers are available in ``/usr/include/tinkerforge``. You can
 directly link against this library (see example below).
 
