@@ -46,10 +46,10 @@ Test the RED Brick
 ------------------
 
 After you have installed the necessary software, you can test the 
-RED Brick. At first you need to put a micro SD card with an 
-:ref:`RED Brick software image <red_brick_images>` in the micro SD card slot of
+RED Brick. At first you need to put a Micro-SD card with an 
+:ref:`RED Brick software image <red_brick_images>` in the Micro-SD card slot of
 the Brick. It is located on the bottom side 
-(a `micro SD card with a pre-installed image <TODO>`__ can be found in our 
+(a `Micro-SD card with a pre-installed image <TODO>`__ can be found in our 
 shop). After that, you can connect the RED Brick 
 with a mini USB cable to your PC.
 

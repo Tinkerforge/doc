@@ -123,7 +123,7 @@ necessary libraries can be installed manually.
 
 The Brick is equipped with a `Micro-HDMI <http://en.wikipedia.org/wiki/HDMI>`__
 connector, which can be used by programs to show a graphical user interface. A
-`USB 2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
+`USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
 connect WIFI dongles, mice, keyboards, touchscreens and similar.
 
 With an :ref:`Ethernet Master Extension <ethernet_extension>` the RED Brick can 
@@ -152,8 +152,8 @@ Power Consumption              0.75W or 5V/150mA (idle), 1.1W or 5V/220mA (100% 
 
 -----------------------------  ------------------------------------------------------------------------------
 Processor                      Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
-Memory                         512MB DDR3 SDRAM, Micro SD Card as Flash
-Connectors                     USB 2.0, micro HDMI (type D), micro USB, Stack connectors, GPIO FPC connector
+Memory                         512MB DDR3 SDRAM, Micro-SD-Card as Flash
+Connectors                     USB-2.0-Host, Micro-HDMI (type D), Mini-USB, Stack connectors, GPIO FPC connector
 =============================  ==============================================================================
 
 
@@ -175,8 +175,8 @@ A full step-by-step tutorial regarding the RED Brick can be found here:
 :ref:`RED Brick Tutorial <tutorial_red_brick>`.
 
 First install the :ref:`Brick Daemon <brickd>` and the
-:ref:`Brick Viewer <brickv>` software on your PC or Mac. Insert the micro SD 
-card into the :ref:`Micro SD Card slot <red_brick_micro_sd_card_slot>` of the 
+:ref:`Brick Viewer <brickv>` software on your PC or Mac. Insert the Micro-SD 
+card into the :ref:`Micro-SD-Card slot <red_brick_micro_sd_card_slot>` of the 
 RED Brick. The location of it and an overview of the different hardware 
 interfaces of the RED Brick is given in the 
 :ref:`Hardware Section <red_brick_hardware>`. You can order a SD card with 
@@ -184,7 +184,7 @@ pre-installed image in our shop (TODO Link?). Otherwise you have to
 :ref:`copy the image to your card <red_brick_copy_image>`. 
 
 After that your RED Brick is ready to go and can be connected to your PC or Mac 
-with a mini USB cable.
+with a Mini-USB cable.
 
 .. image:: /Images/Bricks/brick_red_mini_usb_600.jpg
    :scale: 100 %
@@ -352,7 +352,7 @@ Console Tab (Remote Access)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you have attached the RED Brick over its 
-`Mini USB Connector <red_brick_mini_usb>`__ to your PC it will also register
+`Mini-USB Connector <red_brick_mini_usb>`__ to your PC it will also register
 a USB serial interface. This serial interface can be used to access the Linux
 shell of the Brick. Select the serial port of the Brick and press *Connect*.
 Under Linux the typical interface is ``/dev/ttyACM0`` under Windows it is
@@ -547,7 +547,7 @@ To control Bricks/Bricklets you can import the Tinkerforge Bindings::
 RED Brick Software Images
 -------------------------
 
-The RED Brick software image is stored on a Micro SD-Card. It is a modified
+The RED Brick software image is stored on a Micro-SD-Card. It is a modified
 `Debian <http://www.debian.org/>`__ image and available in two different 
 versions: The ''full'' and the ''fast'' image. Both images support the 
 execution of your code and come with the full suite of Tinkerforge
@@ -608,14 +608,14 @@ of your PC it might also take considerably longer.
 
 .. _red_brick_copy_image:
 
-Copy Image on SD Card
+Copy Image to SD Card
 ^^^^^^^^^^^^^^^^^^^^^
 
 1. Download the 
    :ref:`full image or the fast image <red_brick_images>` from the RED Brick:
    `Download page  <TODO_Link_to_download_page>`__
 
-2. Choose a suitable micro SD card. We recommend a fast SD card (e.g. class 10, > 30MB/sec. read) 
+2. Choose a suitable Micro-SD card. We recommend a fast SD card (e.g. class 10, > 30MB/sec. read) 
    with enough space. You can find the size of the image on the download page.
 
 3. Transfer the image to the SD card:
@@ -693,13 +693,13 @@ heartbeat.
 
 .. _red_brick_micro_sd_card_slot:
 
-Micro SD Card Slot
+Micro-SD-Card Slot
 ^^^^^^^^^^^^^^^^^^
 
-The Linux system and your data is stored on a Micro SD card. The slot
+The Linux system and your data is stored on a Micro-SD card. The slot
 is located at the bottom side of the Brick. 
-Micro SD (1.0), Micro SDHC (2.0) and Micro SDXC (3.0) cards
-are supported. As a minimum we recommend a class 10 Micro SD Card, with a read
+Micro-SD (1.0), Micro-SDHC (2.0) and Micro-SDXC (3.0) cards
+are supported. As a minimum we recommend a class 10 Micro-SD Card, with a read
 data rate of 30MB/sec. as minimum, to ensure fast reads and writes.
 
 A description of the images can be found in the 
@@ -707,11 +707,11 @@ A description of the images can be found in the
 
 .. _red_brick_usb_host:
 
-USB 2.0 Host
+USB-2.0-Host
 ^^^^^^^^^^^^
 
 The RED Brick is equipped with a standard 
-`USB 2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mbps) type A jack. It can
+`USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mbps) type A jack. It can
 power other USB devices with up to 7.5W (5V/1.5A) and is short circuit 
 protected. Both, full and fast image are based on Debian Linux and support 
 typical USB devices like WIFI or Ethernet dongles, webcams, printers, keyboards, 
@@ -728,20 +728,20 @@ which can be controlled by standard USB keyboards, mouses or touchscreens.
 
 .. _red_brick_mini_usb:
 
-Mini USB
+Mini-USB
 ^^^^^^^^
 
-With the Mini USB connector, the RED Brick can be controlled and configured 
+With the Mini-USB connector, the RED Brick can be controlled and configured 
 through the :ref:`Brick Viewer <red_brick_brickv>`. It can also be used to 
 power the Brick.
 
 
 .. _red_brick_hdmi:
 
-Micro HDMI
+Micro-HDMI
 ^^^^^^^^^^
 
-With the Micro `HDMI <http://en.wikipedia.org/wiki/HDMI>`__ connector 
+With the Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ connector 
 (also called type D), all standard HDMI monitors and TVs can be connected to 
 the RED Brick. The connector is only active in the 
 :ref:`full image <red_brick_images>`. HDMI Ethernet Channel (HEC) is not 
@@ -818,7 +818,7 @@ Power Supply
 ^^^^^^^^^^^^
 
 The RED Brick needs to be powered by a 5V supply. It can be powered through 
-the Mini USB connector or a 
+the Mini-USB connector or a 
 :ref:`Step-Down Power Supply <step_down_power_supply>`. A single RED Brick needs
 up to 1.1 Watts, so that a typical 5W (5V/1A) USB power supply will suffice to
 power it and a Master Brick with a few connected Bricklets. If you use a 
@@ -839,7 +839,7 @@ FAQ
 
 
 * Q: The red and blue LED are on. But nothing happens.
-* A: The RED Brick is not booting. Please check your micro SD Card.
+* A: The RED Brick is not booting. Please check your Micro-SD card.
 
 
 
