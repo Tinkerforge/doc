@@ -25,24 +25,30 @@ eine :ref:`Ethernet Extension <ethernet_extension>` hinzu um Zugriff auf das
 Internet zu bekommen.
 
 Als erstes werden wir ein einfaches Programm an einem PC entwickeln und testen 
-und dieses anschließend auf den RED Brick hochladen und ausführen. Danach 
-werden wir das Programm erweitern, so dass die aktuelle Uhrzeit auf der 
-grafischen Nutzerschnittstelle (GUI) angezeigt wird. Hierzu nutzen wir zum 
-Beispiel einen HDMI Monitor. Zusätzlich werden wir eine Web Schnittstelle für 
-die Temperaturmessugen anbieten. Die Fähigkeiten dieses Beispiel sind sicherlich 
-nicht sonderlich sinnvoll, zeigt aber viele Möglichkeiten des RED Bricks.
+und dieses anschließend auf den RED Brick hochladen und ausführen. Das Programm
+wird einfach nur die aktuelle Temperatur ausgeben. Danach 
+werden wir das Programm erweitern, so dass auch die grafischen 
+Nutzerschnittstelle (GUI) genutzt wird und zeigen auf einen HDMI Monitor die
+aktuelle Uhrzeit an. Im nächsten Schritt werden wir eine Web Schnittstelle 
+anbieten, mit der wir auf die gemessene Temperatur zugreifen können.
+Die Fähigkeiten dieses Beispiel sind sicherlich nicht sonderlich 
+sinnvoll, zeigen aber die wichtigsten Möglichkeiten der Nutzung eines RED 
+Bricks.
 
 Für die eigene Anwendung werden sicher andere Bricks, Bricklets oder eine andere
-Programmiersprache verwendet. Die vorgestellten Konzepte und Abläufe sind
-für diese aber im wesentlichen die selben.
+Programmiersprache verwendet, als die in diesem Beispiel. Die vorgestellten 
+Konzepte und Abläufe sind aber für alle im wesentlichen die gleichen.
 	
 
 Notwendige Software installieren
 --------------------------------
 
-Als erstes müssen die :ref:`Brick Daemon <brickd_installation>` und
-die :ref:`Brick Viewer <brickv_installation>` Software auf dem PC/Mac 
-installiert werdem. Dazu sind die dokumentierten Schritte zu befolgen.
+Als erstes müssen der: :ref:`Brick Daemon <brickd>` und der
+:ref:`Brick Viewer <brickv>` auf einem PC oder Mac installiert werden.
+Dazu sind die dokumentierten Schritte zu befolgen:
+
+ * :ref:`Brick Daemon Installation <brickd_installation>`
+ * :ref:`Brick Viewer Installation <brickv_installation>` 
 
 Teste den RED Brick
 -------------------
@@ -72,7 +78,7 @@ Bricks und Bricklets hinzufügen
 -------------------------------
 
 Nun wissen wir das der RED Brick wie erwartet funktioniert. Bevor andere
-Bricks/Bricklets hinzugesteckt werden sollte der RED Brick heruntergefahren 
+Bricks/Bricklets hinzugesteckt werden, sollte der RED Brick heruntergefahren 
 werden. Dazu klickt man in der oberen rechten Ecke auf **System**, wählt 
 **shut down** und wartet bis alle LEDs aus sind. Anschließend stecken wir
 den Master Brick auf den RED Brick und verbinden das Temperature Bricklet mit 
@@ -93,10 +99,11 @@ Beispielprogramm ausführen
 --------------------------
 
 Bevor das erste eigene Programm geschrieben wird, sollte ein Blick in die API
-Dokumentation der genutzten Module auf deren unterstützen Funktionen geworfen 
-werden. Jede Dokumentationsseite beginnt mit Beispielen. Wir empfehlen diese
+Dokumentation der genutzten Bricks/Bricklets geworfen werden, um einen Eindruck
+von deren unterstützen Funktionen zu bekommen. Jede Dokumentationsseite beginnt 
+mit Beispielen. Wir empfehlen diese
 Beispielprogramm zuerst auszuführen. Wir nehmen das "Simple" Beispiel des
-:ref:`Temperature Bricklet API documentation <temperature_bricklet_python>` und
+:ref:`Temperature Bricklet API Dokumentation <temperature_bricklet_python>` und
 führen es aus.
 
 .. literalinclude:: ../Software/Bricklets/Temperature_Bricklet_Python_example_simple.py
@@ -120,10 +127,10 @@ funktioniert. Das Beispiel wartet auf eine Benutzereingabe mittels::
  
  raw_input('Press key to exit\n')
 
-Dies dient zum verhindern, dass sich die Kommandozeile sofort beendet. Auf dem 
-RED Brick wird es keine Benutzereingabe geben. Wir wollen, dass das Programm
-nur einmal die gemessene Temperatur ausgibt und sich anschließend beendet. Dazu
-entferen wir diese Zeile.
+Diese Zeile dient zum verhindern, dass sich die Kommandozeile sofort beendet. 
+Auf dem RED Brick wird es keine Benutzereingabe geben. Wir wollen, dass das 
+Programm nur einmal die gemessene Temperatur ausgibt und sich anschließend 
+beendet. Dazu entferen wir diese Zeile.
 
 `Download (example_simple_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_simple_red.py>`__
 
@@ -132,7 +139,7 @@ entferen wir diese Zeile.
  :linenos:
  :tab-width: 4
 
-Nun können wir das Programm auf den RED Brick ausführen. Die allgemeine 
+Nun können wir das Programm auf dem RED Brick ausführen. Die allgemeine 
 Beschreibung wie Programme hochgeladen werden findet sich in der
 :ref:`RED Brick Brick Viewer Beschreibung <red_brick_brickv_program>`.
 Nachfolgend werden wir nur die notwendigen Schrtte beschreiben:
@@ -196,7 +203,7 @@ und Standard Error) in einer forlaufenden Logdatei. Es sind also wieder keine
 Es gibt viele Optionen für das Scheduling des Programms. Eine der einfachsten 
 Optionen ist es das Programm in einem gegebenen Intervall auszuführen. Dazu 
 wählen wir **Interval** mit einer Zeit von 10 Minuten (**600 Sekunden**).
-Somit wird unser Programm alle 20 Minuten ausgeführt, d.h. die Temperatur wird
+Somit wird unser Programm alle 10 Minuten ausgeführt und die Temperatur
 alle 10 Minuten einmal ausgegeben.
 
 .. image:: /Images/Screenshots/red_brick_tutorial_upload_8.jpg
@@ -204,7 +211,7 @@ alle 10 Minuten einmal ausgegeben.
    :alt: Screenshot des RED Brick Programm Uploads Schritt 8
    :align: center
 
-Die Übersichtsseite zeigt die Konfiguration. Klicke auf **Next**.
+Die Übersichtsseite zeigt die gewählten Einstellungen. Klicke auf **Next**.
 
 .. image:: /Images/Screenshots/red_brick_tutorial_upload_9.jpg
    :scale: 100 %
@@ -212,7 +219,7 @@ Die Übersichtsseite zeigt die Konfiguration. Klicke auf **Next**.
    :align: center
 
 Klicke auf den **Start Upload** Button um die Datei hochzuladen. Klicke 
-anschließend auf **Finish**. Nun können wir der Logdatei des Programms die 
+anschließend auf **Finish**. Nun können wir der Logdatei des Programms, die 
 gemessenen Temperaturen entnehmen.
 
 TODO: Screenshots that show how log files can be viewed.
@@ -233,10 +240,13 @@ verbunden werden. In diesem Beispiel werden wir eine Ethernet Extension nutzen:
 Fahre den RED Brick herunter und entferne die Stromversorgung bevor du die 
 Ethernet Extension auf den Stapel steckst.
 
-Nachdem der erweiterte Stapel fertig gebootet at, klicke auf "Settings",
+Nachdem wirder die Stromversorgung angeschlossen wurde und der erweiterte Stapel 
+fertig gebootet hat, klicke auf "Settings",
 "Network" und "Wired" in dem RED Brick Tab des Brick Viewers.
 Wähle **tf0** als Interface und wähle entweder DHCP oder eine statische IP.
 Klicke auf **Save**.
+
+TODO anpassen an neue Version!!!!
 
 In dem **General** Tab wird anschließend das konfigurierte **tf0** Interface
 angezeigt. Falls DHCP verwendet wird, kann es notwendig sein **Refresh** einige 
@@ -253,7 +263,7 @@ ist, dass das RED Brick automatsch die Systemzeit
 mittels `NTP <http://de.wikipedia.org/wiki/Network_Time_Protocol>`__ 
 aktualisieren wird.
 
-Somit können wir jeder Messung die entsprechende Uhrzeit hinzufügen.
+Somit können wir jeder Messung die entsprechende Uhrzeit zuordnen.
 
 `Download (example_time_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_time_red.py>`__
 
@@ -271,7 +281,7 @@ Entwicklung von GUI Programmen mit dem RED Brick
 	Programme mit grafischer Nutzerschnittstelle (GUI) können nur auf dem Full
 	Image ausgeführt werden.
 
-Eine weitere Art von Programmen die auf dem RED Brick ausgeführt werden können,
+Eine weitere Art von Programmen, die auf dem RED Brick ausgeführt werden können,
 sind Programme mit grafischer Nutzerschnittstelle (GUI), die über die HDMI
 Schnittstelle des Bricks angezeigt werden. In diesem Beispiel fügen wir eine 
 `Qt <http://pyqt.sourceforge.net/>`__ GUI unserem einfachen Temperature Bricklet 
@@ -346,8 +356,8 @@ aus (Python und PHP):
  :linenos:
  :tab-width: 4
 
-Wenn das Programm eigene Programm ein Web Interface nutzt, müssen
-die die auszuführende Datei, deren Argumente, Umgebungsvariablen und
+Wenn das Programm ein Web Interface nutzt, müssen
+die auszuführende Datei, deren Argumente, Umgebungsvariablen und
 Arbeitsverzeichnis nicht angegeben werden. Schritte 4-6 werden ausgelassen
 wenn **Web Interface** in Schritt 3 ausgewählt wird.
 
@@ -359,7 +369,7 @@ wenn **Web Interface** in Schritt 3 ausgewählt wird.
 Um das eigene Web Interface aufzurufen, müssen nur die IP Adresse oder der 
 Hostname des RED Bricks im Browser aufgerufen werden und der **Bin** Button
 des eigenen Programms geklickt werden. Dies öffnet den Pfad zum eigenen Programm
-für den die eigene Indexdatei automatisch aufgerufen wird:
+für den die Indexdatei automatisch aufgerufen wird:
 
 .. image:: /Images/Screenshots/red_brick_tutorial_web_interface.jpg
    :scale: 100 %

@@ -32,15 +32,19 @@ are not very useful, but it shows some of the important possibilities of the RED
 Brick.
 
 If you build your application, you might use other Bricks, Bricklets 
-or programming languages, but the concepts and the workflow will be the same.
+or programming languages, than those used in this example. But the presented 
+concepts and the workflow will be the same.
 	
 
 Install necessary software
 --------------------------
 
-At first you need to install the :ref:`Brick Daemon <brickd_installation>` and 
-the :ref:`Brick Viewer <brickv_installation>` software on 
-your PC/Mac. Please follow the documented steps.
+At first you need to install the :ref:`Brick Daemon <brickd>`
+and the :ref:`Brick Viewer <brickv>` on your PC or Mac.
+Follow the documented steps: 
+
+ * :ref:`Brick Daemon Installation <brickd_installation>`
+ * :ref:`Brick Viewer Installation <brickv_installation>` 
 
 Test the RED Brick
 ------------------
@@ -91,8 +95,8 @@ Run example program
 -------------------
 
 Before writing your first program you should to take a look at the API 
-documentation of the used modules to see the supported functions. Each
-documentation page starts with some examples. It is a good idea to run an 
+documentation of the used Bricks/Bricklet to see their supported functions. 
+Each documentation page starts with some examples. It is a good idea to run an 
 example program first. We take the "Simple" example of the 
 :ref:`Temperature Bricklet API documentation <temperature_bricklet_python>` and 
 execute it. 
@@ -235,6 +239,8 @@ After the enhanced stack has booted click on "Settings", "Network" and
 "Wired" in the RED Brick tab of the Brick Viewer.
 Choose **tf0** as interface either use DHCP or enter a static
 configuration. Then click on **Save**.
+
+TODO: Adapt to new Brick Viewer Tab!!!!
 
 Now you can see the configured **tf0** interface in the **General** 
 tab of the network settings. If you use DHCP you may have to click
