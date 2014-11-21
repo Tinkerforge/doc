@@ -1,0 +1,48 @@
+Python
+------
+========================== =========================== ========================================================================= ====
+Name                       Version                     Description                                                               full
+========================== =========================== ========================================================================= ====
+libpython2.7               2.7.3-6+deb7u2              Shared Python runtime library (version 2.7)                               |c|
+libpython3.2               3.2.3-7                     Shared Python runtime library (version 3.2)                               |c|
+msgpack-python             0.1.10-1                    Python implementation of MessagePack format                               |c|
+pycrypto                   2.6.1                       Cryptographic modules for Python.                                         |c|
+python                     2.7.3-4+deb7u1              interactive high-level object-oriented language (default version)         |c|
+python-gtk2                2.24.0-3+b1                 Python bindings for the GTK+ widget set                                   |c|
+python-gtk2-dev            2.24.0-3                    GTK+ bindings: devel files                                                |c|
+python-matplotlib          1.1.1~rc2-1                 Python based plotting system in a style similar to Matlab                 |c|
+python-matplotlib-data     1.1.1~rc2-1                 Python based plotting system (data package)                               |c|
+python-mysql.connector     0.3.2-1                     pure Python implementation of MySQL Client/Server protocol                |c|
+python-mysqldb             1.2.3-2                     Python interface to MySQL                                                 |c|
+python-netifaces           0.8-1                       portable network interface information for Python                         |c|
+python-numpy               1:1.6.2-1.2                 Numerical Python adds a fast array facility to the Python language        |c|
+python-opencv              2.3.1-11                    Python bindings for the computer vision library                           |c|
+python-opengl              3.0.1-1                     Python bindings to OpenGL                                                 |c|
+python-pcapy               0.10.8-1                    Python interface to the libpcap packet capture library                    |c|
+python-pip                 1.1-3                       alternative Python package installer                                      |c|
+python-psutil              0.5.1-1                     module providing convenience functions for managing processes             |c|
+python-pycurl              7.19.0-5                    Python bindings to libcurl                                                |c|
+python-pypdf               1.13-1                      PDF toolkit implemented solely in Python                                  |c|
+python-qt4                 4.9.3-4                     Python bindings for Qt4                                                   |c|
+python-qt4-gl              4.9.3-4                     Python bindings for Qt4's OpenGL module                                   |c|
+python-qwt5-qt4            5.2.1~cvs20091107+dfsg-6+b1 Python version of the Qwt5 technical widget library                       |c|
+python-scientific          2.8-4                       Python modules useful for scientific computing                            |c|
+python-scipy               0.10.1+dfsg2-1              scientific tools for Python                                               |c|
+python-sciscipy            0.3.0-3                     Python binding of Scilab                                                  |c|
+python-scitools            0.9.0-1                     Python library for scientific computing                                   |c|
+python-serial              2.5-2.1                     pyserial - module encapsulating access for the serial port                |c|
+python-setuptools          0.6.24-1                    Python Distutils Enhancements (setuptools compatibility)                  |c|
+python-sip                 4.13.3-2                    Python/C++ bindings generator runtime library                             |c|
+python-software-properties 0.82.7.1debian1             manage the repositories that you install software from                    |c|
+python-sqlite              1.0.1-9                     Python interface to SQLite 2                                              |c|
+python-sqlitecachec        1.1.2-1                     A fast metadata parser for YUM                                            |c|
+python3                    3.2.3-6                     interactive high-level object-oriented language (default python3 version) |c|
+python3-numpy              1:1.6.2-1.2                 Numerical Python adds a fast array facility to the Python language        |c|
+python3-pip                1.1-3                       alternative Python package installer - Python 3 version of the package    |c|
+python3-pyqt4              4.9.3-4                     Python3 bindings for Qt4                                                  |c|
+python3-pyqt4.qtopengl     4.9.3-4                     Python 3 bindings for Qt4's OpenGL module                                 |c|
+python3-scipy              0.10.1+dfsg2-1              scientific tools for Python 3                                             |c|
+python3-serial             2.5-2.1                     pyserial - module encapsulating access for the serial port                |c|
+python3-setuptools         0.6.24-1                    Python3 Distutils Enhancements (setuptools compatibility)                 |c|
+python3-sip                4.13.3-2                    Python 3/C++ bindings generator runtime library                           |c|
+========================== =========================== ========================================================================= ====

@@ -574,8 +574,7 @@ on how to install new software.
 
 The list of pre-installed programming language libraries can be found below:
 
-* `Full Image Installed Programs List <TODO_Link_to_download_page>`__.
-* `Fast Image Installed Programs List <TODO_Link_to_download_page>`__.
+* :ref:`Full and fast image installed library versions <red_brick_installed_versions>`.
 
 If you want to log into the linux system by command line or LXDE, the standard 
 user is **tf** with default password **tf**. The user is a sudoer, i.e.
