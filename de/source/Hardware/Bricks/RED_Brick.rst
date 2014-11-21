@@ -77,7 +77,7 @@ Features
 --------
 
 * Steuert andere Bricks und Bricklets
-* Führt direkt dein geschriebenes Programm aus
+* Führt direkt dein geschriebenes Programm auf dem Brick aus
 * Unterstützt nahezu alle Programmiersprachen
 
 .. _red_brick_description:

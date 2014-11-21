@@ -79,7 +79,7 @@ Features
 --------
 
 * Controls other Bricks and Bricklets
-* Executes your program directly
+* Executes your program directly on the Brick
 * Supports nearly all programming languages
 
 .. _red_brick_description:
@@ -108,7 +108,7 @@ Delphi/Lazarus, Java, JavaScript, Octave, Perl, PHP, Python, Ruby, Shell
 and Visual Basic .NET can be executed on the Brick.
 
 A program that controls Bricks and Bricklets can be written and tested 
-on a normal PC/Mac. Afterwards the program can be transferred to the RED Brick
+on a normal PC or Mac. Afterwards the program can be transferred to the RED Brick
 by the press of a button and can then be executed without any changes. Multiple 
 programs can be executed simultaneously. The execution of programs can be
 scheduled (execution on boot up, every hour, etc.) and monitored.
@@ -124,7 +124,7 @@ necessary libraries can be installed manually.
 The Brick is equipped with a `Micro-HDMI <http://en.wikipedia.org/wiki/HDMI>`__
 connector, which can be used by programs to show a graphical user interface. A
 `USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
-connect WIFI dongles, mice, keyboards, touchscreens and similar.
+connect WIFI dongles, mouses, keyboards, touchscreens and similar.
 
 With an :ref:`Ethernet Master Extension <ethernet_extension>` the RED Brick can 
 be extended by an Ethernet interface. The 
@@ -132,9 +132,9 @@ be extended by an Ethernet interface. The
 other remote stacks of Bricks and Bricklets.
 
 Advanced users can use the RED Brick with full access to the underlying 
-`Debian <http://www.debian.org>`__ system. Over a GPIO FPC header, 
-the expert user can directly access gpio/spi/i2c pins for individual
-hardware development.
+`Debian <http://www.debian.org>`__ system. 
+The expert user can directly access gpio/spi/i2c pins for individual
+hardware development over a GPIO FPC header.
 
 
 
@@ -226,7 +226,7 @@ users).
    :align: center
 
 The RED Brick representation in Brick Viewer consists of different tabs, each 
-described in detail below. Additionally the UID of the RED Brick, the position
+described in detail below. At the top the UID of the RED Brick, the position
 in the stack, the name of the used image, number of timeouts and the word
 *System* is shown. If you click on it, you can restart the Brick Daemon on the 
 RED Brick and reboot or shut down the RED Brick itself.
@@ -264,7 +264,7 @@ Settings Tab (Network, Brick Daemon, Date/Time)
 
 .. _red_brick_brick_settings_network:
 
-TODO: General Tab network interface selection implementet?
+TODO: General Tab network interface selection implemented?
 
 In the **Network section** of this tab you can configure settings
 related to networking.
@@ -330,9 +330,9 @@ the RED Brick is powered down.
 
 If you need the correct time after bootup but you can't guarantee
 or can't obtain internet access, you can also use the 
-:ref:`GPS Bricklet <gps_bricklet>` You can find a small
+:ref:`GPS Bricklet <gps_bricklet>`. You can find a small
 `program on github <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__ 
-that you can upload to the RED Brick to sync the Linux system time with
+that could be uploaded to the RED Brick to sync the Linux system time with
 the GPS time.
 
 .. _red_brick_brickv_program:
@@ -358,7 +358,7 @@ Under Linux the typical interface is ``/dev/ttyACM0`` under Windows it is
 them all, until you see the shell. It might be necessary to press ENTER to 
 see the prompt. 
 
-Below you can see a screenshot of the console showing ``htop``.
+Below you can see a screenshot of the console executing ``htop``.
 
 .. image:: /Images/Screenshots/brickv_red_tab_console.jpg
    :scale: 60 %
@@ -448,7 +448,7 @@ uploaded binaries.
 Besides the default web interface you can also put your own
 web interfaces on the RED Brick. Currently we support web applications
 written in HTML/JavaScript, Python and PHP. If you upload an ``index.py``, 
-``index.php`` or ``index.html`` the respective file will be used as 
+``index.php`` or ``index.html``, the respective file will be used as 
 directory index for the binary folder.
 
 **Example to clarify:** If you want to write a PHP website that controls 
@@ -667,7 +667,7 @@ LEDs
 The RED Brick has three LEDs on the top side: A blue, a red and a green LED.
 
 The blue LED is directly connected to the internal power supply of the 
-processor. The LED is on if the Brick is powered.
+processor. The LED is on if the processor is powered.
 
 The red LED shows if an error is present. If the red LED stays on during 
 startup, no image could be found. There may be no SD card inserted or there is 
