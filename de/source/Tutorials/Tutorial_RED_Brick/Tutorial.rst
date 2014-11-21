@@ -50,11 +50,11 @@ Teste den RED Brick
 TODO Image RED Brick
 
 Nachdem die notwendige Software installiert wurde kann der RED Brick getestet
-werden. Dazu stecken wir eine Micro SD-Karte mit
-:ref:`RED Brick Software Image <red_brick_images>` in den Micro SD-Karten Slot
+werden. Dazu stecken wir eine Micro-SD-Karte mit
+:ref:`RED Brick Software Image <red_brick_images>` in den Micro-SD-Karten Slot
 des RED Bricks. Dieser befindet sich auf der Unterseite des Bricks (eine
-`Micro SD-Karte mit vorinstalliertem Image <TODO>`__ kann in unserem Shop
-gefunden werden). Anschließend wir der RED Brick per mini USB Kabel mit dem
+`Micro-SD-Karte mit vorinstalliertem Image <TODO>`__ kann in unserem Shop
+gefunden werden). Anschließend wir der RED Brick per Mini-USB Kabel mit dem
 Rechner verbunden.
 
 TODO Image RED Brick connected with mini USB cable

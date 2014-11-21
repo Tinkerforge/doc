@@ -93,19 +93,19 @@ genutzt werden um eigene Entwicklungen anzubinden.
 Technische Spezifikation
 ------------------------
 
-================================  ==================================================================================
+================================  ======================================================================================
 Eigenschaft                       Wert
-================================  ==================================================================================
+================================  ======================================================================================
 Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
 Gewicht                           14g
 Stromverbrauch                    0,75W or 5V/150mA (Leerlauf), 1,1W or 5V/220mA (100% Last)
---------------------------------  ----------------------------------------------------------------------------------
+--------------------------------  --------------------------------------------------------------------------------------
 
---------------------------------  ----------------------------------------------------------------------------------
+--------------------------------  --------------------------------------------------------------------------------------
 Processor                         Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
-Memory                            512MB DDR3 SDRAM, Micro SD Karte als Flash Speicher
-Connectors                        USB 2.0, micro HDMI (type D), micro USB, Stapel Verbinder, GPIO FPC Steckverbinder
-================================  ==================================================================================
+Memory                            512MB DDR3 SDRAM, Micro-SD-Karte als Flash Speicher
+Connectors                        USB-2.0-Host, Micro-HDMI (type D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
+================================  ======================================================================================
 
 
 Ressourcen
@@ -126,8 +126,8 @@ Ein Schritt für Schritt Tutorial zu dem RED Brick kann hier gefunden werden:
 :ref:`RED Brick Tutorial <tutorial_red_brick>`.
 
 Als erstes müssen :ref:`Brick Daemon <brickd>` und :ref:`Brick Viewer <brickv>`
-Software auf einem PC oder Mac installiert werden. Anschließend sollte die Micro
-SD Karte in den :ref:`Micro SD Karten Slot <red_brick_micro_sd_card_slot>` des
+Software auf einem PC oder Mac installiert werden. Anschließend sollte die 
+Micro-SD-Karte in den :ref:`Micro-SD-Kartenslot <red_brick_micro_sd_card_slot>` des
 RED Bricks gesteckt werden. Die Position von diesem und eine Übersicht über
 alle Schnittstellen des Bricks lässt sich in dem 
 :ref:`Hardware Abschnitt <red_brick_hardware>` finden. Es können SD Karten mit 
@@ -135,9 +135,9 @@ vorinstalliertem Image in unserem Shop bestellt werden (TODO Link?). Ansonsten
 muss ein :ref:`Image auf eine SD Karte kopiert werden <red_brick_copy_image>`.
 
 Danach ist der RED Brick einsatzbereit und kann mit dem PC oder Mac mit einem 
-Mini USB Kabel verbunden werden.
+Mini-USB Kabel verbunden werden.
 
-TODO: Image RED Brick with micro USB cable connected
+TODO: Image RED Brick with Micro-USB cable connected
 
 Nachdem die Brick Viewer Software gestartet wurde muss auf "connect" geklickt 
 werden. Ein Tab (Reiter), beschriftet mit "RED Brick", sollte auftauchen. Dieser 
@@ -305,7 +305,7 @@ TODO
 Console Tab (Konsole, Fernsteuerung)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn der RED Brick mittels `Mini USB Anschluss <red_brick_mini_usb>`__ mit einem
+Wenn der RED Brick mittels `Mini-USB Anschluss <red_brick_mini_usb>`__ mit einem
 PC verbunden ist registriert es eine serielle Schnittstelle. Diese Schnittstelle
 kann dazu genutzt werden um auf die Linux Shell des RED Bricks zuzugreifen. Dazu
 muss nur die entsprechende Schnittstelle gewählt werden und *Connect* geklickt 
@@ -502,7 +502,7 @@ werden::
 RED Brick Software Images
 -------------------------
 
-Das RED Brick Software Image ist auf einer Micro SD Karte gespeichert. Es ist 
+Das RED Brick Software Image ist auf einer Micro-SD-Karte gespeichert. Es ist 
 ein modifiziertes `Debian <http://debian.org/>`__ Image und in zwei 
 verschiedenen Versionen erhältlich: Das ''full'' und das ''fast'' Image. Beide
 Images unterstützen die Ausführung von eigenen Programmen und verfügen über alle
@@ -569,7 +569,7 @@ Image auf SD Karte kopieren
    :ref:`Full Image oder Fast Image <red_brick_images>` von der RED Brick:
    `Download-Seite  <TODO_Link_to_download_page>`__ herunterladen.
 
-2. Eine geeignete micro SD Karte suchen. Wir empfehlen eine schnelle Karte
+2. Eine geeignete Micro-SD-Karte suchen. Wir empfehlen eine schnelle Karte
    (z.B. Class 10, >30MB/sek. Lesen) mit genügend Speicherplatz. Die Größe 
    des Images steht ebenfall auf der Downloadseite.
 3. Das Image auf die SD Karte kopieren:
@@ -643,15 +643,15 @@ Heartbeats.
 
 .. _red_brick_micro_sd_card_slot:
 
-Micro SD Karten Slot
-^^^^^^^^^^^^^^^^^^^^
+Micro-SD-Kartenslot
+^^^^^^^^^^^^^^^^^^^
 
 TODO: Image of SD Card Slot
 
-Das Linux System und alle Daten sind auf einer Micro SD Karte gespeichert.
+Das Linux System und alle Daten sind auf einer Micro-SD-Karte gespeichert.
 Der Kartenslot ist auf der Unterseite des Bricks.
-Micro SD (1.0), Micro SDHC (2.0) und Micro SDXC (3.0) Karten werden 
-unterstützt. Wir empfehlen als Minimum eine Class 10 Micro SD Karte mit
+Micro-SD (1.0), Micro-SDHC (2.0) und Micro-SDXC (3.0) Karten werden 
+unterstützt. Wir empfehlen als Minimum eine Class 10 Micro-SD-Karte mit
 einer Leserate von mindestens 30MB/sek um schnelle Lese- und 
 Schreibvorgänge zu ermöglichen.
 
@@ -686,21 +686,21 @@ Touchscreens gesteuert werden können.
 
 .. _red_brick_mini_usb:
 
-Mini USB
+Mini-USB
 ^^^^^^^^
-Über den Mini USB Anschluss wird der RED Brick mittels
+Über den Mini-USB Anschluss wird der RED Brick mittels
 :ref:`Brick Viewer <red_brick_brickv>` gesteuert und konfiguriert. Der RED 
 Brick kann auch über diesen mit Strom versorgt werden.
 
 
 .. _red_brick_hdmi:
 
-Micro HDMI
+Micro-HDMI
 ^^^^^^^^^^
 
 TODO: Image HDMI connector
 
-Mit dem Micro `HDMI <http://en.wikipedia.org/wiki/HDMI>`__ Anschluss 
+Mit dem Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ Anschluss 
 (auch Typ D genannt), können alle standard HDMI Monitore und Fernseher mit dem 
 RED Brick verbunden werden. Der Anschluss ist nur aktiv, wenn das
 :ref:`Full Image <red_brick_images>` genutzt wird. HDMI Ethernet Channel (HEC) 
@@ -781,7 +781,7 @@ Stromversorgung
 ^^^^^^^^^^^^^^^
 
 Der RED Brick muss mit 5V versorgt werden. Er kann über den 
-Mini USB connector oder eine 
+Mini-USB connector oder eine 
 :ref:`Step-Down Power Supply <step_down_power_supply>` versorgt werden. Ein 
 einzelner RED Brick benötigt bis zu 1.1 Watt, so dass ein typisches 5W 
 (5V/1A) USB Netzteil ausreicht um diesen und zum Beispiel ein Master Brick
@@ -802,7 +802,7 @@ FAQ
 
 
 * F: Die rote und blaue LED sind an, aber nichts passiert.
-* A: Der RED Brick bootet nicht. Überprüfe die micro SD Karte.
+* A: Der RED Brick bootet nicht. Überprüfe die Micro-SD-Karte.
 
 
 .. _red_brick_programming_interface:
