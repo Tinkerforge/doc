@@ -23,10 +23,10 @@ consisting of a RED Brick, a :ref:`Master Brick <master_brick>` and a
 Later in the Tutorial will additionally add an Ethernet Extension to
 get internet access.
 
-At first we will test a simple program that prints a temperature
+At first we will test a simple program that prints the temperature
 on your PC and upload and execute it on the RED Brick after that. 
-Then we will extend the program to also show the current time,
-to utilize a GUI (that is shown on an HDMI monitor) and we will add
+Then we will extend the program by a GUI to also show the current time 
+on an HDMI monitor. After that we will add
 a web interface for our temperature measurements. The features of this example 
 are not very useful, but it shows some of the important possibilities of the RED 
 Brick.
@@ -73,7 +73,7 @@ The RED Brick is now ready to go!
 Add Bricks and Bricklets
 ------------------------
 
-Know we can be sure that your RED Brick works. Before adding Bricks/Bricklets,
+Now we can be sure that your RED Brick works. Before adding Bricks/Bricklets,
 you should power the RED Brick down. To shut it down click on 
 **System** located in the right upper corner of the RED Brick tab and choose 
 **shut down**. Wait until all LEDs turn off. After that plug a Master Brick on 
@@ -178,7 +178,7 @@ the default, so we can again click on **Next**.
    :alt: Screenshot of RED Brick program upload step 5.
    :align: center
 
-Our simple Python program does not need any aruguments or environment
+Our simple Python program does not need any arguments or environment
 variable, so we can again click on the **Next** button.
 
 .. image:: /Images/Screenshots/red_brick_tutorial_upload_6.jpg
@@ -186,7 +186,7 @@ variable, so we can again click on the **Next** button.
    :alt: Screenshot of RED Brick program upload step 6.
    :align: center
 
-We use Pipe as Standard input and log all output (standard output and standard 
+We use Pipe as standard input and log all output (standard output and standard 
 error) to a continuous log file. So no changes are required. Click on
 **Next** again.
 
@@ -235,7 +235,8 @@ will add the :ref:`Ethernet Extension <ethernet_extension>`:
 Shut the RED Brick down and remove the power before you stack the
 Extension on top of the stack.
 
-After the enhanced stack has booted click on "Settings", "Network" and
+After that reconnect power and wait until the enhanced stack has booted.
+Click on "Settings", "Network" and
 "Wired" in the RED Brick tab of the Brick Viewer.
 Choose **tf0** as interface either use DHCP or enter a static
 configuration. Then click on **Save**.
@@ -251,7 +252,7 @@ tab of the network settings. If you use DHCP you may have to click
    :alt: Screenshot of RED Brick network settings.
    :align: center
 
-Now that you have internet access, you can can easily do IoT and similar
+Now that you have internet access, you can easily do IoT and similar
 applications. Another advantage of internet access is, that the RED Brick
 will automatically use `NTP <http://en.wikipedia.org/wiki/Network_Time_Protocol>`__ 
 and thus have a correct system time.
