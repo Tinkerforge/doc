@@ -226,11 +226,11 @@ To gain internet access on the RED Brick we can either connect a
 USB WIFI/Ethernet dongle or the Ethernet Extension. In this example we 
 will add the :ref:`Ethernet Extension <ethernet_extension>`:
 
-.. image:: /Images/Bricks/brick_red_master_temp_600.jpg
+.. image:: /Images/Bricks/brick_red_master_temp_eth_600.jpg
    :scale: 100 %
    :alt: RED Brick with Master Brick, Temperature Bricklet and Ethernet Extension
    :align: center
-   :target: ../../_images/Bricks/brick_red_master_temp_800.jpg
+   :target: ../../_images/Bricks/brick_red_master_temp_eth_800.jpg
 
 Shut the RED Brick down and remove the power before you stack the
 Extension on top of the stack.

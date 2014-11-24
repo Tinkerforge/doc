@@ -231,11 +231,11 @@ Um Zugriff auf das Internet zu bekommen kann entweder ein USB WLAN oder Ethernet
 Stick oder eine :ref:`Ethernet Extension <ethernet_extension>` mit dem RED Brick
 verbunden werden. In diesem Beispiel werden wir eine Ethernet Extension nutzen:
 
-.. image:: /Images/Bricks/brick_red_master_temp_600.jpg
+.. image:: /Images/Bricks/brick_red_master_temp_eth_600.jpg
    :scale: 100 %
    :alt: RED Brick mit Master Brick, Temperature Bricklet und Ethernet Extension
    :align: center
-   :target: ../../_images/Bricks/brick_red_master_temp_800.jpg
+   :target: ../../_images/Bricks/brick_red_master_temp_eth_800.jpg
 
 Fahre den RED Brick herunter und entferne die Stromversorgung bevor du die 
 Ethernet Extension auf den Stapel steckst.
