@@ -308,7 +308,7 @@ settings related to the local Brick Daemon.
 The configuration includes the listen address, the corresponding port, port for 
 web sockets and the authentication secret in the *General* subsection.
 WebSockets are used by the browser version of the 
-:ref:`JavaScript bindings <api-bindings-javascript>` to control Bricks and 
+:ref:`JavaScript bindings <api_bindings_javascript>` to control Bricks and 
 Bricklets. More low level configurations can be found in the *Advanced* 
 subsection. The LED trigger for the red and green LED can also be set here.
 

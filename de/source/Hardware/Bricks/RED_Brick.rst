@@ -320,7 +320,7 @@ Brick Daemon vorgenommen werden.
 Zu den Konfigurationsmöglichkeiten gehören die Adresse auf dem der Brick Daemon
 lauscht, der dazugehörige Port, der Port für die Nutzung von Websockets und 
 das Authentifizierungsgeheimnis. WebSockets werden von der Browser-Version der 
-:ref:`JavaScript Bindings <api-bindings-javascript>` verwendet um Bricks und 
+:ref:`JavaScript Bindings <api_bindings_javascript>` verwendet um Bricks und 
 Bricklets zu steuern. Weitere Einstellungen können in dem *Advanced* Abschnitt
 gefunden werden. Die Nutzung der roten und grünen LED kann auch hier 
 konfiguriert werden.
