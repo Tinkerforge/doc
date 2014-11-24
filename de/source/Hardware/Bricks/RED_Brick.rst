@@ -22,6 +22,11 @@ RED Brick
 	               "RED Brick")
 	}}
 	{{
+	    tfdocimg("Bricks/brick_red_hand_100.jpg",
+	             "Bricks/brick_red_hand_800.jpg",
+	             "RED Brick in einer Hand")
+	}}
+	{{
 	    tfdocimg("Bricks/brick_red_tilted_top_back_100.jpg",
 	             "Bricks/brick_red_tilted_top_back_800.jpg",
 	             "RED Brick")
