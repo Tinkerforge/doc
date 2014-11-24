@@ -250,17 +250,18 @@ der aktuell konfigurierten Netzwerkschnittstellen.
    :alt: Screenshot der Overview Tabs.
    :align: center
 
-Die Liste kann folgende Netzwerkschnittstellen enthalten:
+Die Liste kann folgende Netzwerkschnittstellen enthalten 
+(X steht für eine Zahl, typischerweise 0):
 
 * ``lo``: Dies ist die sogenannte Loopback Schnittstelle. Sie ist rein lokal und
   dient unter anderem der Kommunikation zwischen Anwenderprogrammen und dem 
   lokalen Brick Daemon.
-* ``wlan0``: Dies ist die WLAN-Schnittstelle. Sie wird erzeugt wenn ein WLAN 
+* ``wlanX``: Dies ist die WLAN-Schnittstelle. Sie wird erzeugt wenn ein WLAN 
   Stick an die :ref:`USB Host Buchse <red_brick_usb_host>` angeschlossen wird.
-* ``eth0``: Dies ist eine Ethernet-Schnittstelle. Sie wird erzeugt wenn ein 
+* ``ethX``: Dies ist eine Ethernet-Schnittstelle. Sie wird erzeugt wenn ein 
   Ethernet Stick an die :ref:`USB Host Buchse <red_brick_usb_host>` 
   angeschlossen wird.
-* ``tf0``: Ist die Ethernet-Schnittstelle, die erzeugt wird, wenn eine
+* ``tfX``: Ist die Ethernet-Schnittstelle, die erzeugt wird, wenn eine
   :ref:`Ethernet Extension <ethernet_extension>` auf den RED Brick gesteckt
   wird.
 
@@ -365,8 +366,10 @@ Wenn der RED Brick mittels `Mini-USB Anschluss <red_brick_mini_usb>`__ mit einem
 PC verbunden ist, registriert er eine serielle Schnittstelle. Diese Schnittstelle
 kann dazu genutzt werden um auf die Linux Shell des RED Bricks zuzugreifen. Dazu
 muss nur die entsprechende Schnittstelle gewählt werden und *Connect* geklickt 
-werden. Die Schnittstelle ist typischerweise unter Linux ``/dev/ttyACM0``, unter
-Windows ``TODO`` und unter OS X ``TODO``. Mit dem Nutzer **tf** und Passwort
+werden. Die Schnittstelle ist typischerweise unter Linux ``/dev/ttyACMX`` (X ist
+eine Zahl), unter Windows ``Serial Port X`` (X ist Zahl) mit dem Gerätenamen
+``RED Brick Serial Console`` und unter OS X ``/dev/tty.usbmodemXYZ``, wobei XYZ
+ein Teil der UID des RED Bricks ist. Mit dem Nutzer **tf** und Passwort
 **tf** kann man sich einloggen. Falls unbekannt ist welche Schnittstelle die 
 richtig ist, kann diese durch Ausprobieren bestimmt werden. Es kann notwendig 
 sein die ENTER Taste zu drücken um die Kommandozeile zu sehen.

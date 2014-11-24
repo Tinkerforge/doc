@@ -244,15 +244,16 @@ of the configured network interfaces.
    :alt: Screenshot of overview tab.
    :align: center
 
-The list can contain the following network interfaces:
+The list can contain the following network interfaces
+(X is a number, typically 0):
 
 * ``lo``: This is the loopback interface. It is a local interface, used for
   example for the communication between your program and the local Brick Daemon.
-* ``wlan0`` : This is a WIFI interface. It is created if you attach a WIFI 
+* ``wlanX`` : This is a WIFI interface. It is created if you attach a WIFI 
   dongle to the :ref:`USB Host connector <red_brick_usb_host>`.
-* ``eth0`` : This is a Ethernet interface. It is created if you attach a 
+* ``ethX`` : This is a Ethernet interface. It is created if you attach a 
   Ethernet dongle to the :ref:`USB Host connector <red_brick_usb_host>`.
-* ``tf0`` : This is the Ethernet interface created if you add an 
+* ``tfX`` : This is the Ethernet interface created if you add an 
   :ref:`Ethernet Extension <ethernet_extension>` on top of the RED Brick.
 
 The data in the overview tab is refreshed every 3 seconds.
@@ -352,10 +353,12 @@ If you have attached the RED Brick over its
 `Mini-USB Connector <red_brick_mini_usb>`__ to your PC it will also register
 a USB serial interface. This serial interface can be used to access the Linux
 shell of the Brick. Select the serial port of the Brick and press *Connect*.
-Under Linux the typical interface is ``/dev/ttyACM0`` under Windows it is
-``TODO`` and on OS X usually shows up as ``TODO``. You can log in as user 
-**tf** with password **tf**. If you are not sure what the right port is test
-them all, until you see the shell. It might be necessary to press ENTER to 
+Under Linux the typical interface is ``/dev/ttyACMX`` (X is number) under 
+Windows it is ``Serial Port COMX`` (X is number) with device name 
+``RED Brick Serial Console`` and on OS X usually shows up as 
+``/dev/tty.usbmodemXYZ`` with XYZ is part of RED Bricks UID. You can log in as 
+user **tf** with password **tf**. If you are not sure what the right port is 
+test them all, until you see the shell. It might be necessary to press ENTER to 
 see the prompt. 
 
 Below you can see a screenshot of the console executing ``htop``.
