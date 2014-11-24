@@ -24,7 +24,10 @@ We install libraries from many different sources (debian packages,
 pip packages, tarball, etc). Unfortunately not all of the sources are
 easily parsable, thus they are not all included.
 
-We made it easy to install new libraries to the RED Brick. 
+Installation of other Libraries
+-------------------------------
+
+We made it easy to install other libraries to the RED Brick. 
 
 For the languages with package managers (JavaScript, Perl, PHP, Python, Ruby)
 the package manager (``npm``, ``cpanm``, ``pear``, ``pip``, ``gem``) is 
@@ -48,6 +51,9 @@ If you know a library that should definitely be in the default images,
 please write us an email (info@tinkerforge.com). Include a place where we
 can find it and how we can install it. Preferably it is available in the
 Debian wheezy repository.
+
+Installed Libraries
+-------------------
 
 .. include:: RED_Brick_c_features.table
 
