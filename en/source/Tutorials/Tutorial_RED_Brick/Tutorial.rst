@@ -101,7 +101,9 @@ example program first. We take the "Simple" example of the
 :ref:`Temperature Bricklet API documentation <temperature_bricklet_python>` and 
 execute it. 
 
-.. literalinclude:: ../Software/Bricklets/Temperature_Bricklet_Python_example_simple.py
+`Download (example_simple.py) <https://github.com/Tinkerforge/temperature-bricklet/raw/master/software/examples/python/example_simple.py>`__
+
+.. literalinclude:: ../../Software/Bricklets/Temperature_Bricklet_Python_example_simple.py
  :language: python
  :linenos:
  :tab-width: 4
