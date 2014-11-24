@@ -589,10 +589,9 @@ Neue Software kann in beiden Images installiert werden. Siehe die
 `Beschreibung des Versions Tab <red_brick_brickv_versions_tab>`__, 
 wie neue Software installiert wird.
 
-Eine Liste mit den vorinstallierten Bibliotheken kann hier gefunden werden:
+Eine Liste der vorinstallierten Bibliotheken kann hier gefunden werden:
 
-* `Full Image Installed Programs List <TODO_Link_to_download_page>`__.
-* `Fast Image Installed Programs List <TODO_Link_to_download_page>`__.
+* `Installierte Bibliotheken (Fast und Fast Image) <red_brick_installed_versions>`__.
 
 Der Nutzer **tf** ist der Standardnutzer auf den Images. Beim Einloggen über die
 Konsole oder in LXDE kann dieser Nutzer mit dem Standardpasswort **tf** benutzt
