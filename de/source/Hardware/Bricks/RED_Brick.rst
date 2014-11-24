@@ -591,7 +591,7 @@ wie neue Software installiert wird.
 
 Eine Liste der vorinstallierten Bibliotheken kann hier gefunden werden:
 
-* `Installierte Bibliotheken (Fast und Fast Image) <red_brick_installed_versions>`__.
+* :ref:`Installierte Bibliotheken (Fast und Fast Image) <red_brick_installed_versions>`.
 
 Der Nutzer **tf** ist der Standardnutzer auf den Images. Beim Einloggen über die
 Konsole oder in LXDE kann dieser Nutzer mit dem Standardpasswort **tf** benutzt
