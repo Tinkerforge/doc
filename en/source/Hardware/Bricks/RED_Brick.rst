@@ -27,6 +27,11 @@ RED Brick
 	             "RED Brick in a hand")
 	}}
 	{{
+	    tfdocimg("Bricks/brick_red_master_temp_eth_100.jpg",
+	             "Bricks/brick_red_master_temp_eth_800.jpg",
+	             "RED Brick with Master Brick, Temperature Bricklet and Ethernet Extension")
+	}}
+	{{
 	    tfdocimg("Bricks/brick_red_w_monitor_100.jpg",
 	             "Bricks/brick_red_w_monitor_800.jpg",
 	             "RED Brick with Step-Down Power Supply and small HDMI monitor")
@@ -65,6 +70,11 @@ RED Brick
 	    tfdocimg("Bricks/brick_red_bottom_100.jpg",
 	             "Bricks/brick_red_bottom_800.jpg",
 	             "RED Brick")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_red_big_stack_100.jpg",
+	             "Bricks/brick_red_big_stack_800.jpg",
+	             "RED Brick with big stack")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_red_caption_top_100.jpg",
