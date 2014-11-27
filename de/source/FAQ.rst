@@ -185,7 +185,7 @@ kann es passieren, dass der Master zu wenig Strom zieht um überhaupt
 erkannt zu werden (d.h. ``GetStackCurrent`` gibt 0 zurück).
 
 
-Mein Brick taucht nicht als serielle Schnittstelle für's Flashing aus
+Mein Brick taucht nicht als serielle Schnittstelle für's Flashing auf
 ---------------------------------------------------------------------
 
 **Brick nicht im Bootloader**:
