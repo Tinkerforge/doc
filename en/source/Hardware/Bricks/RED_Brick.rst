@@ -27,6 +27,11 @@ RED Brick
 	             "RED Brick in a hand")
 	}}
 	{{
+	    tfdocimg("Bricks/brick_red_w_monitor_100.jpg",
+	             "Bricks/brick_red_w_monitor_800.jpg",
+	             "RED Brick with Step-Down Power Supply and small HDMI monitor")
+	}}
+	{{
 	    tfdocimg("Bricks/brick_red_tilted_top_back_100.jpg",
 	             "Bricks/brick_red_tilted_top_back_800.jpg",
 	             "RED Brick")
