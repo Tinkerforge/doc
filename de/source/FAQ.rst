@@ -221,6 +221,8 @@ indem zum Flashen Brick Viewer als ``root`` gestartet wird.
 Ich habe etwas aktualisiert und jetzt funktioniert es nicht mehr
 ----------------------------------------------------------------
 
+**Version < 2.0:**
+
 Es handelt sich vermutlich um ein Problem mit inkompatiblen Versionen.
 Am 22. Januar 2013 haben wir eine neue Protokollversion veröffentlicht:
 Protokoll 2.0. Die Art und Weise wie Bricks und Bricklets
@@ -233,3 +235,11 @@ einer "2" beginnen um miteinander kompatibel zu sein.
 
 Eine Anleitung zum Aktualisieren gibt es
 :ref:`hier <transition_1to2>`.
+
+**Brick Firmware Version < 2.3:**
+
+Am 26. November 2014 hben wir ein neues SPI-Stack-Protokoll veröffentlich um
+Unterstützung für den RED Brick hinzuzufügen. Dieses Protokoll ist nicht
+kompatibel zum alten Protokoll. Um eine fehlerfreie Stack-Kommunikation
+sicherzustellen sollten alle Bricks eine Firmware Version von mindestens
+2.3 haben.

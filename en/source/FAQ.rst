@@ -213,6 +213,8 @@ workaround start Brick Viewer as ``root``.
 I updated something and now it doesn't work anymore
 ---------------------------------------------------
 
+**Version < 2.0:**
+
 You probably have a version mismatch. On January 22nd 2013 we released a new 
 protocol version, Protocol 2.0. This means that the way Bricks and Bricklets
 communicate with each other and with the Brick Daemon has changed. Also
@@ -221,4 +223,11 @@ language Bindings, the Brick Daemon, the Brick Viewer and the
 Firmwares/Plugins of your Bricks/Bricklets to a version starting with "2".
 
 To do this you can use the :ref:`transitioning guide <transition_1to2>`. 
-It also describes how to port already existing code to the new protocol. 
+It also describes how to port already existing code to the new protocol.
+
+**Brick Firmware Version < 2.3:**
+
+On November 26th 2014 we released a new SPI stack protocol to add support for 
+the RED Brick. This protocol is not compatible to the old protocol. Pleaes make
+sure that all Bricks have a firmware version greater or equal to 2.3,
+otherwise the stack communication might not work.
