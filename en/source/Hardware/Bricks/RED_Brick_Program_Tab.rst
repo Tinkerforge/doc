@@ -95,6 +95,12 @@ two folders with **Add Directory**.
 Every "Add" will add the thing you are selecting to the root directory
 of the RED Brick program.
 
+Depending on the chosen language you have to upload different types of files:
+
+* For JavaScript, Perl, PHP, Python and Ruby you can upload the script files (e.g.: .js, .pl, .php, .py, .rb)
+* For Java, C# and Visual Basic .NET you have to upload already compiled files (e.g.: .jar, .class, .exe)
+* For C/C++ and Delphi/Lazarus you can upload crosscompiled executable or Makefile with source code (see the description in step below)
+
 Wizard Step 3: Language Specific Configuration
 ----------------------------------------------
 
