@@ -100,7 +100,7 @@ Je nach gewählter Sprache können verschiedene Dateien hochgeladen werden:
 
 * Bei JavaScript, Perl, PHP, Python und Ruby können die Script-Dateien hochgeladen werden (z.B.: .js, .pl, .php, .py, .rb)
 * Bei Java, C# und Visual Basic .NET müssen bereits kompilierte Dateien hochgeladen werden (z.B.: .jar, .class, .exe)
-* Bei C/C++ und Delphi/Lazarus kann eine cross-kompilierte ausführbare Datei (executeable) oder eine Makefile mit Source Code hochgeladen werden (siehe folgende Beschreibung)
+* Bei C/C++ und Delphi/Lazarus kann eine cross-kompilierte ausführbare Datei (executable) oder eine Makefile mit Source Code hochgeladen werden (siehe folgende Beschreibung)
 
 
 
