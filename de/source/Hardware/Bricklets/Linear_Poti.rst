@@ -136,7 +136,7 @@ aussehen.
    :scale: 100 %
    :alt: Linear Poti Bricklet im Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_linear_poti_brickv.jpg
 
 Der Graph ist durch hoch und runter bewegen des Sliders entstanden.
 

@@ -136,7 +136,7 @@ depicted below.
    :scale: 100 %
    :alt: Linear Poti Bricklet in Brick Viewer
    :align: center
-   :target: ../../_images/Bricklets/bricklet_current12_brickv.jpg
+   :target: ../../_images/Bricklets/bricklet_linear_poti_brickv.jpg
 
 Move the potentiometer.
 You should be able to create a similar graph
