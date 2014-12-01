@@ -227,7 +227,7 @@ gemessenen Temperaturen entnehmen.
 TODO description: View log files!
 
 .. image:: /Images/Screenshots/red_brick_tutorial_view_log.jpg
-   :scale: 100 %
+   :scale: 50 %
    :alt: Screenshot Log Files
    :align: center
 
