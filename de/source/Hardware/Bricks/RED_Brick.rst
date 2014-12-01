@@ -183,7 +183,7 @@ Connectors                        USB-2.0-Host, Micro-HDMI (type D), Mini-USB, S
 Ressourcen
 ----------
 
-* Schaltplan (`Download <https://github.com/Tinkerforge/master-brick/raw/master/hardware/master-schematic.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/red-brick/raw/master/hardware/red-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/red_brick_dimensions.png>`__)
 * Linux Image und Platinenlayout (`Download <https://github.com/Tinkerforge/red-brick/zipball/master>`__)
 
