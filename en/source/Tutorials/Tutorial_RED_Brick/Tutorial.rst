@@ -219,7 +219,12 @@ Click on the **Start Upload** Button to upload the file. After that click on
 **Finish**. You should now be able to take a look at the log file
 and see the logged temperatures.
 
-TODO: Screenshots that show how log files can be viewed.
+TODO description: View log files!
+
+.. image:: /Images/Screenshots/red_brick_tutorial_view_log.jpg
+   :scale: 100 %
+   :alt: Screenshot Log Files
+   :align: center
 
 Gain internet access
 --------------------

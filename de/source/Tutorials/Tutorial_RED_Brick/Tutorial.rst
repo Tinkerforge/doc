@@ -224,7 +224,13 @@ Klicke auf den **Start Upload** Button um die Datei hochzuladen. Klicke
 anschließend auf **Finish**. Nun können wir der Logdatei des Programms, die 
 gemessenen Temperaturen entnehmen.
 
-TODO: Screenshots that show how log files can be viewed.
+TODO description: View log files!
+
+.. image:: /Images/Screenshots/red_brick_tutorial_view_log.jpg
+   :scale: 100 %
+   :alt: Screenshot Log Files
+   :align: center
+
 
 Zugriff auf das Internet bekommen
 ---------------------------------
