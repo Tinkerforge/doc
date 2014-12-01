@@ -202,8 +202,9 @@ Software auf einem PC oder Mac installiert werden. Anschließend sollte die
 Micro-SD-Karte in den :ref:`Micro-SD-Kartenslot <red_brick_micro_sd_card_slot>` des
 RED Bricks gesteckt werden. Die Position von diesem und eine Übersicht über
 alle Schnittstellen des Bricks lässt sich in dem 
-:ref:`Hardware Abschnitt <red_brick_hardware>` finden. Es können SD Karten mit 
-vorinstalliertem Image in unserem Shop bestellt werden (TODO Link?). Ansonsten
+:ref:`Hardware Abschnitt <red_brick_hardware>` finden. Es können `SD Karten mit 
+vorinstalliertem Image <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__ 
+in unserem Shop bestellt werden. Ansonsten
 muss ein :ref:`Image auf eine SD Karte kopiert werden <red_brick_copy_image>`.
 
 Danach ist der RED Brick einsatzbereit und kann mit dem PC oder Mac mit einem 
@@ -308,8 +309,9 @@ angezeigt.
 TODO Image Wireless subsection
 
 Der *Wireless* Unterabschnitt ist nur aktiv, wenn ein unterstützter USB WLAN 
-Stick angeschlossen wurde. Unterstützte WLAN Sticks gibt es in unserem Shop 
-(TODO Link). Die aktuell genutze WLAN Schnittstelle und deren Status werden 
+Stick angeschlossen wurde. 
+`Unterstützte WLAN Sticks <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__
+gibt es in unserem Shop. Die aktuell genutze WLAN Schnittstelle und deren Status werden 
 angezeigt und können modifiziert werden. Hier wird auch eingestellt zu welchem 
 Access Point sich verbuinden werden soll, welche Verschlüsselung eingesetzt wird 
 und ob eine statische oder dynamische IP (DHCP) genutzt werden sollen.
@@ -623,7 +625,7 @@ werden. Der Nutzer ist ein sudoer, so dass Root-Zugriff mittels::
  sudo su
 
 erhalten werden kann. Die Images können von der
-`Download Seite <TODO_LINK_TO_DOWNLOAD>`__ herunter geladen werden.
+:ref:`Download Seite <downloads>` herunter geladen werden.
 
 .. _red_brick_build_image:
 
@@ -650,7 +652,7 @@ Image auf SD Karte kopieren
 
 1. Das
    :ref:`Full Image oder Fast Image <red_brick_images>` von der RED Brick:
-   `Download-Seite  <TODO_Link_to_download_page>`__ herunterladen.
+   :ref:`Download-Seite <downloads>` herunterladen.
 
 2. Eine geeignete Micro-SD-Karte suchen. Wir empfehlen eine schnelle Karte
    (z.B. Class 10, >30MB/sek. Lesen) mit genügend Speicherplatz. Die Größe 
@@ -758,9 +760,11 @@ unterstützen typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
 Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens.
 
 Manche Ethernet oder WLAN Sticks können direkt über den Brick Viewer 
-konfiguriert werden. Unterstützte Sticks bieten wir in unserem Shop an 
-(TODO Link). Andere Geräte müssen ggf. direkt im Linux System konfiguriert
-werden und können nicht vom Brick Viewer konfiguriert werden.
+konfiguriert werden. 
+`Unterstützte Sticks <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__ 
+bieten wir in unserem Shop an. Andere Geräte müssen ggf. direkt 
+im Linux System konfiguriert werden und können nicht vom Brick Viewer
+konfiguriert werden.
 
 Das :ref:`Full Image <red_brick_images>` unterstützt grafische 
 Nutzerschnittstellen die per Standard USB Tastatur, Mäusen oder

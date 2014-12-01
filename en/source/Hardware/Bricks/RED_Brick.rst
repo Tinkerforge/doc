@@ -199,8 +199,9 @@ First install the :ref:`Brick Daemon <brickd>` and the
 card into the :ref:`Micro-SD-Card slot <red_brick_micro_sd_card_slot>` of the 
 RED Brick. The location of it and an overview of the different hardware 
 interfaces of the RED Brick is given in the 
-:ref:`Hardware Section <red_brick_hardware>`. You can order a SD card with 
-pre-installed image in our shop (TODO Link?). Otherwise you have to 
+:ref:`Hardware Section <red_brick_hardware>`. You can order a `SD card with 
+pre-installed image <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__ 
+in our shop. Otherwise you have to 
 :ref:`copy the image to your card <red_brick_copy_image>`. 
 
 After that your RED Brick is ready to go and can be connected to your PC or Mac 
@@ -298,7 +299,8 @@ status. It additionally shows you the currently used network interface.
 TODO Image Wireless subsection
 
 The *Wireless* subsection is only active if you attach a supported USB WIFI 
-dongle. Supported dongles can be found in our shop (TODO Link). You can see the
+dongle. `Supported dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
+can be found in our shop. You can see the
 currently used interface and its status, can select the interface which should 
 be used. You can select an Access Point to connect, configure encryption and
 set a static or dynamic IP (DHCP).
@@ -606,7 +608,7 @@ you can get root access by calling::
  sudo su
 
 The images can be downloaded from the:
-`download page <TODO_Link_to_download_page>`__.
+:ref:`download page <downloads>`.
 
 
 .. _red_brick_build_image:
@@ -635,7 +637,7 @@ Copy Image to SD Card
 
 1. Download the 
    :ref:`full image or the fast image <red_brick_images>` from the RED Brick:
-   `Download page  <TODO_Link_to_download_page>`__
+   :ref:`Download page  <downloads>`.
 
 2. Choose a suitable Micro-SD card. We recommend a fast SD card (e.g. class 10, > 30MB/sec. read) 
    with enough space. You can find the size of the image on the download page.
@@ -740,7 +742,8 @@ typical USB devices like WIFI or Ethernet dongles, webcams, printers, keyboards,
 mouses or USB touchscreens. 
 
 Some Ethernet or WIFI dongles can be directly configured with the Brick Viewer. 
-Supported dongles can be found in our shop (TODO Link). Other devices might have
+`Supported dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__ 
+can be found in our shop. Other devices might have
 to be configured directly in the Linux system and can't be configured with the 
 Brick Viewer.
 
