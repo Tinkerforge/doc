@@ -286,17 +286,18 @@ Settings Tab (Network, Brick Daemon, Date/Time)
 
 .. _red_brick_brick_settings_network:
 
-TODO: General Tab network interface selection implemented?
-
 In the **Network section** of this tab you can configure settings
 related to networking.
 
-TODO Image General subsection
+.. image:: /Images/Screenshots/brickv_red_tab_settings_network.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing network configurations.
+   :align: center
+
+TODO: Fix network description!!! 
 
 In the *General* subsection you can set the hostname and get the current network 
 status. It additionally shows you the currently used network interface.
-
-TODO Image Wireless subsection
 
 The *Wireless* subsection is only active if you attach a supported USB WIFI 
 dongle. `Supported dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
@@ -304,8 +305,6 @@ can be found in our shop. You can see the
 currently used interface and its status, can select the interface which should 
 be used. You can select an Access Point to connect, configure encryption and
 set a static or dynamic IP (DHCP).
-
-TODO Image Wired subsection
 
 The *Wired* subsection is only active if you attach a supported USB Ethernet 
 dongle or an Ethernet Master Extension. The USB dongle will show up as ``eth0``, 

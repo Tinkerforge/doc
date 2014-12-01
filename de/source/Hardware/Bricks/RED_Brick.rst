@@ -295,18 +295,19 @@ Settings Tab (Netzwerk, Brick Daemon, Datum/Uhrzeit)
 
 .. _red_brick_brick_settings_network:
 
-TODO: Selektion über den General Tab implementiert?
-
 In dem **Network** Abschnitt dieses Tabs können alle Einstellungen zu Netzwerken
 vorgenommen werden.
 
-TODO Image General subsection
+.. image:: /Images/Screenshots/brickv_red_tab_settings_network.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing network configurations.
+   :align: center
+
+TODO: Fix network description!!!
 
 In dem *General* Unterabschnitt kann der Hostname des RED Brick gesetzt werden.
 Der aktuelle Netzwerkstatus und das aktuell benutzte Netzwerkgerät werden 
 angezeigt.
-
-TODO Image Wireless subsection
 
 Der *Wireless* Unterabschnitt ist nur aktiv, wenn ein unterstützter USB WLAN 
 Stick angeschlossen wurde. 
@@ -315,8 +316,6 @@ gibt es in unserem Shop. Die aktuell genutze WLAN Schnittstelle und deren Status
 angezeigt und können modifiziert werden. Hier wird auch eingestellt zu welchem 
 Access Point sich verbuinden werden soll, welche Verschlüsselung eingesetzt wird 
 und ob eine statische oder dynamische IP (DHCP) genutzt werden sollen.
-
-TODO Image Wired subsection
 
 Der *Wired* Unterabschnitt ist nur aktiv, wenn ein unterstützter USB Ethernet 
 Stick oder eine Ethernet Extension angeschlossen werden. Der USB Stick wird
