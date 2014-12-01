@@ -10,7 +10,7 @@ Partner
 
   .. container:: partnerlogo
 
-    .. image:: /Images/Misc/cumolocity-logo.png
+    .. image:: /Images/Misc/cumulocity-logo.png
        :alt: Cumulocity Logo
        :align: center
        :target: http://www.cumulocity.com/
@@ -20,24 +20,10 @@ Partner
     .. rubric:: Cumulocity
     
     Offen, anwendungsorientiert, frei verwendbar: Die Mission von 
-    `Cumulocity <http://www.cumulocity.com/>`__ ist es, mobile Internet der 
-    Dinge oder Machine-to-Machine-Applikationen durch vorkonfigurierte Cloud 
-    Services schnell, einfach und kostengünstig zu realisieren.
-    
-    Registrieren Sie sich auf 
-    `www.cumulocity.com <http://www.cumulocity.com/>`__, um unsere Anwendungen 
-    zu testen:
-
-    * Cumulocity DeviceCloud: M2M Device Management as a Service.
-    * Cumulocity AssetTrack: Erweiterbare, offene und bezahlbares GPS-Tracking.
-    * Cumulocity VendMe: Verbesserte Effizienz und bessere Kundenbindung für Verkaufsautomaten-Betreiber. 
-    * Cumulocity DriveSafe: Sicher fahren und Kosten sparen.
-
-    Tinkerforge kann schnell und einfach an die Cumulocity DeviceCloud 
-    angeschlossen werden. Details sind unter  
-    `http://www.cumulocity.com/guides <http://www.cumulocity.com/guides>`__ 
-    beschrieben.
-
+    `Cumulocity <http://www.cumulocity.com/>`__ ist es, das Internet der Dinge 
+    durch vorkonfigurierte Cloud Services schnell, einfach und kostengünstig zu 
+    realisieren. Verbinden sie ihre Tinkerforge-Geräte mit Cumulocity: 
+    `https://cumulocity.com/tinkerforge <https://cumulocity.com/tinkerforge>`__
 
 ..
   .. container::

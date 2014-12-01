@@ -9,7 +9,7 @@ Partners
 
   .. container:: partnerlogo
 
-    .. image:: /Images/Misc/cumolocity-logo.png
+    .. image:: /Images/Misc/cumulocity-logo.png
        :alt: Cumulocity logo
        :align: center
        :target: http://www.cumulocity.com/
@@ -20,17 +20,9 @@ Partners
 
     `Cumulocity <http://www.cumulocity.com/>`__ makes building machine-to-machine 
     solutions simple and profitable for all businesses through ready-made cloud 
-    applications.
+    applications. Connect your Tinkerforge devices to Cumulocity: 
+    `https://cumulocity.com/tinkerforge <https://cumulocity.com/tinkerforge>`__
 
-    Try the applications for free at http://www.cumulocity.com
-
-    * Cumulocity DeviceCloud: M2M Device Management as a Service.
-    * Cumulocity AssetTrack: Extensible, open and affordable asset tracking.
-    * Cumulocity VendMe: Maximize your return from vending operations and connect with your customers.
-    * Cumulocity DriveSafe: Drive safe, save costs.
-
-    You can connect Tinkerforge to Cumulocity Device Cloud using Cumulocity's 
-    agent, see http://www.cumulocity.com/guides for details. 
 
 
 
