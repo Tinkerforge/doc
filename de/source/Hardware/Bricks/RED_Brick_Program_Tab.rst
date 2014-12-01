@@ -154,7 +154,7 @@ die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
 
     clean:
     	rm -f *.o $(EXE)
-* Make options: Wenn vom Source kompiliert wird, könnnen hier Makefile Parameter
+* Make Options: Wenn vom Source kompiliert wird, könnnen hier Makefile Parameter
   angegeben werden.
 * Working Directory: Spezifiziert das 
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
@@ -215,7 +215,7 @@ Delphi/Lazarus
 
     [require]
     packages=tinkerforge
-* Make options: Wenn von Source kompiliert wird können hier Makefile Parameter
+* Make Options: Wenn von Source kompiliert wird können hier Makefile Parameter
   übergeben werden.  
 * Working Directory: Spezifiziert das 
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 

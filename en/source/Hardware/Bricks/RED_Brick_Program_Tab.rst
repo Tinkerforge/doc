@@ -151,7 +151,7 @@ directly link against this library (see example below).
 
     clean:
     	rm -f *.o $(EXE)
-* Make options: If you compile from source you can also add
+* Make Options: If you compile from source you can also add
   Makefile parameters.
 * Working Directory: Specify the 
   `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
@@ -213,7 +213,7 @@ Delphi/Lazarus
 
     [require]
     packages=tinkerforge
-* Make options: If you compile from source you can also add
+* Make Options: If you compile from source you can also add
   Makefile parameters.
 * Working Directory: Specify the 
   `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
