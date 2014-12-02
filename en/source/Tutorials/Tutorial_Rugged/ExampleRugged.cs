@@ -33,8 +33,8 @@ class ExampleRugged
 		ipcon.Connect(HOST, PORT); 
 		ipcon.Enumerate();
 
-		System.Console.WriteLine("Press key to exit");
-		System.Console.ReadKey();
+		System.Console.WriteLine("Press enter to exit");
+		System.Console.ReadLine();
 		ipcon.Disconnect();
 	}
 
