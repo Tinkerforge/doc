@@ -122,7 +122,7 @@ Description
  * `The RED Brick Countdown has started <http://www.tinkerforge.com/en/blog/2014/11/12/the-red-brick-countdown-has-started>`__
 
 The Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) can 
-control other :ref:`Bricks <primer_bricks>` and 
+control other Bricks and 
 :ref:`Bricklets <primer_bricklets>`. The programming languages C/C++, C#, 
 Delphi/Lazarus, Java, JavaScript, Octave, Perl, PHP, Python, Ruby, Shell
 and Visual Basic .NET can be executed on the Brick.
@@ -165,15 +165,15 @@ Technical Specifications
 =============================  =================================================================================
 Property                       Value
 =============================  =================================================================================
-Dimensions (W x D x H)         40 x 40 x 16mm (1.57 x 1.57 x 0.63")
-Weight                         14g
-Power Consumption              0.75W (5V/150mA, idle), 1.1W (5V/220mA, 100% load)
------------------------------  ---------------------------------------------------------------------------------
-
------------------------------  ---------------------------------------------------------------------------------
 Processor                      Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
 Memory                         512MB DDR3 SDRAM, Micro-SD-Card as Flash
 Connectors                     USB-2.0-Host, Micro-HDMI (type D), Mini-USB, Stack connectors, GPIO FPC connector
+-----------------------------  ---------------------------------------------------------------------------------
+
+-----------------------------  ---------------------------------------------------------------------------------
+Dimensions (W x D x H)         40 x 40 x 16mm (1.57 x 1.57 x 0.63")
+Weight                         14g
+Power Consumption              0.75W (5V/150mA, idle), 1.1W (5V/220mA, 100% load)
 =============================  =================================================================================
 
 

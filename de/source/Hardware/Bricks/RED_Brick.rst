@@ -124,7 +124,7 @@ Beschreibung
 
 
 Der Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) kann 
-andere :ref:`Bricks <primer_bricks>` und :ref:`Bricklets <primer_bricklets>` 
+andere Bricks <primer_bricks>` und :ref:`Bricklets <primer_bricklets>` 
 steuern. Die aktuell unterstützten Sprachen: C/C++, C#, Delphi/Lazerus, Java, 
 JavaScript, MATLAB/Octave, Perl, PHP, Python, Ruby, Shell und Visual Basic .NET, 
 können direkt auf dem Brick ausgeführt werden.
@@ -168,15 +168,15 @@ Technische Spezifikation
 ================================  ======================================================================================
 Eigenschaft                       Wert
 ================================  ======================================================================================
-Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
-Gewicht                           14g
-Stromverbrauch                    0,75W (5V/150mA, Leerlauf); 1,1W (5V/220mA, 100% Last)
+Prozessor                         Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
+Speicher                          512MB DDR3 SDRAM, Micro-SD-Karte als Flash Speicher
+Anschlüsse                        USB-2.0-Host, Micro-HDMI (type D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
 --------------------------------  --------------------------------------------------------------------------------------
 
 --------------------------------  --------------------------------------------------------------------------------------
-Processor                         Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
-Memory                            512MB DDR3 SDRAM, Micro-SD-Karte als Flash Speicher
-Connectors                        USB-2.0-Host, Micro-HDMI (type D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
+Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
+Gewicht                           14g
+Stromverbrauch                    0,75W (5V/150mA, Leerlauf); 1,1W (5V/220mA, 100% Last)
 ================================  ======================================================================================
 
 
