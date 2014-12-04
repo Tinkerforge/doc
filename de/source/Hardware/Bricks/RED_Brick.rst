@@ -121,10 +121,8 @@ Beschreibung
   * `RED Brick Zustandsbericht <http://www.tinkerforge.com/de/blog/2014/10/15/neuigkeiten-zum-red-brick>`__
   * `RED Brick, der Countdown läuft <http://www.tinkerforge.com/de/blog/2014/11/12/red-brick-der-countdown-laeuft>`__
 
-
-
 Der Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) kann 
-andere Bricks <primer_bricks>` und :ref:`Bricklets <primer_bricklets>` 
+andere Bricks und :ref:`Bricklets <primer_bricklets>`
 steuern. Die aktuell unterstützten Sprachen: C/C++, C#, Delphi/Lazerus, Java, 
 JavaScript, MATLAB/Octave, Perl, PHP, Python, Ruby, Shell und Visual Basic .NET, 
 können direkt auf dem Brick ausgeführt werden.
