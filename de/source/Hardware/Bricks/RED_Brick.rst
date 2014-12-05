@@ -168,7 +168,7 @@ Eigenschaft                       Wert
 ================================  ======================================================================================
 Prozessor                         Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
 Speicher                          512MB DDR3 SDRAM, Micro-SD-Karte als Flash Speicher
-Anschlüsse                        USB-2.0-Host, Micro-HDMI (type D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
+Anschlüsse                        USB-2.0-Host, Micro-HDMI (Typ D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
 --------------------------------  --------------------------------------------------------------------------------------
 
 --------------------------------  --------------------------------------------------------------------------------------
