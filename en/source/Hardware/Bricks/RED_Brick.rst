@@ -230,6 +230,8 @@ mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
 power the Brick you can see the LXDE desktop environment booting. After 
 the boot process you should be able to use it as a normal desktop PC.
 
+You can log in to the underlying linux with **tf**:**tf**
+(user:password). The user is a sudoer.
 
 .. _red_brick_brickv:
 

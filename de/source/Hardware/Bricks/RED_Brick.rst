@@ -233,6 +233,9 @@ werden. Während des Bootvorgangs kann das Starten des LXDE Desktop Environments
 beobachtet werden, das anschließend wie ein ganz normaler Desktop PC verwendet 
 werden kann.
 
+Auf dem Linux kann man sich mittels **tf**:**tf** (Nutzer:Passwort) anmelden.
+Der Nutzer ist sudoer.
+
 .. _red_brick_brickv:
 
 Brick Viewer
