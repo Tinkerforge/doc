@@ -233,6 +233,10 @@ the boot process you should be able to use it as a normal desktop PC.
 You can log in to the underlying linux with **tf**:**tf**
 (user:password). The user is a sudoer.
 
+.. note:: For security reasons you may want to change the password. The 
+          procedure is documented :ref:`here <red_brick_change_password>`.
+          
+
 .. _red_brick_brickv:
 
 Brick Viewer
@@ -658,6 +662,17 @@ Copy Image to SD Card
 
             * e.g.: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
 
+.. _red_brick_change_password:
+
+Change Default Password
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The default password of user ``tf`` is ``tf``. To change the password open
+the :ref:`console tab <red_brick_brickv_console>`. 
+Choose the correct serial port and press the *Connect*
+button. You should be logged in as user ``tf`` (if you see nothing press Enter).
+Type ``passwd``. You will be asked for the current password. Type ``tf``. After
+that you can enter your new password.
 
 .. _red_brick_hardware:
 
@@ -866,7 +881,6 @@ FAQ
 
 * Q: The red and blue LED are on. But nothing happens.
 * A: The RED Brick is not booting. Please check your Micro-SD card.
-
 
 
 .. _red_brick_programming_interface:

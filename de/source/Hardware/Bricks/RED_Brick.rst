@@ -236,6 +236,11 @@ werden kann.
 Auf dem Linux kann man sich mittels **tf**:**tf** (Nutzer:Passwort) anmelden.
 Der Nutzer ist sudoer.
 
+.. note:: Aus Sicherheitsgründen kann es Sinn machen das Passwort zu ändern. Die
+          Prozedur ist :ref:`hier <red_brick_change_password>` beschrieben.
+          
+
+
 .. _red_brick_brickv:
 
 Brick Viewer
@@ -671,6 +676,20 @@ Image auf SD Karte kopieren
         * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=1M
 
             * Beispiel: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
+
+.. _red_brick_change_password:
+
+Standard Passwort Ändern
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Das Standard-Passwort des Benutzers ``tf`` lautet ``tf``. Um dieses zu ändern 
+öffnet man den :ref:`Console Tab <red_brick_brickv_console>`. Anschließend wählt
+man die korrekte serielle Schnittstelle und klickt auf den *Connect* Button.
+Man wird als Nutzer ``tf`` eingeloggt (Die Enter-Taste drücken falls die Konsole 
+nichts anzeigt). Als nächstes gibt man den Befehlt ``passwd`` ein und es wird 
+nach dem aktuellen Passwort gefragt. Man gibt ``tf`` ein. Anschließend
+kann man das neue Passwort eingeben und bestätigen.
+
 
 .. _red_brick_hardware:
 
