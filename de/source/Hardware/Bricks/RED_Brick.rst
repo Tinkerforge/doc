@@ -309,30 +309,39 @@ vorgenommen werden.
    :alt: Screenshot of settings tab showing network configurations.
    :align: center
 
-TODO: Fix network description!!!
+TODO: Fix Screenshots
 
-In dem *General* Unterabschnitt kann der Hostname des RED Brick gesetzt werden.
-Der aktuelle Netzwerkstatus und das aktuell benutzte Netzwerkgerät werden 
-angezeigt.
+Der *Current Network Status* Abschnitt zeigt den Status der konfigurierten und 
+aktuell genutzen Netzwerkschnittstelle an. Der angezeigte Status wird 
+automatisch alle 3 Sekunden aktualisiert.
 
-Der *Wireless* Unterabschnitt ist nur aktiv, wenn ein unterstützter USB WLAN 
-Stick angeschlossen wurde. 
-`Unterstützte WLAN Sticks <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__
-gibt es in unserem Shop. Die aktuell genutze WLAN Schnittstelle und deren Status werden 
-angezeigt und können modifiziert werden. Hier wird auch eingestellt zu welchem 
-Access Point sich verbuinden werden soll, welche Verschlüsselung eingesetzt wird 
-und ob eine statische oder dynamische IP (DHCP) genutzt werden sollen.
+Die genutzte Schnittstelle kann in dem *Configuration* Abschnitt konfiguriert 
+werden. Als erstes muss die Schnittstelle gewählt werden (Ein USB Ethernet Stick
+wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein USB WIFI Stick 
+als ``wlanX`` angezeigt (X ist eine Zahl). Abhängig von der gewählten 
+Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 
-Der *Wired* Unterabschnitt ist nur aktiv, wenn ein unterstützter USB Ethernet 
-Stick oder eine Ethernet Extension angeschlossen werden. Der USB Stick wird
-als ``eth0``, die Ethernet Extension als ``tf0`` erkannt. Um die Schnittstelle
-zu nutzen muss sie ausgewählt und die Nutzung einer statischen IP oder
-von DHCP konfiguriert werden. Anschließend muss *Save* geklickt werden.
+**Konfiguration einer Ethernet Schnittstelle**
 
-Es kann einige Sekunden dauern bis eine IP mittels DHCP zugewiesen wird oder
-sich ein WLAN Stick zu einem Netzwerk verbindet. Wenn die neue Konfiguration 
-nicht sofort in dem *General* Unterabschnitt angezeigt wird, muss ggf. etwas
-gewartet werden und der *Refresh* Knopf geklickt werden.
+TODO Screenshot Ethernet Interface
+
+Nachdem eine Ethernet Schnittstelle gewählt wurde kann zwischen DHCP oder
+statischer IP gewählt werden. Klicke anschließend *Connect*.
+
+**Konfiguration einer WLAN Schnittstelle**
+
+TODO Screenshot WIFI before scanning
+
+Nachdem eine WLAN Schnittstelle gewählt wurde, können WLAN-Netze durch Klicken
+auf den *Scan* Button gesucht werden. Dies dauert ein paar Sekunden.
+
+TODO Screenshot WIFI after scanning (with secret key etc).
+
+Wähle den gewünschten Accesspoint und gebe den dazugehörigen Key ein. 
+Anschließend muss nur noch zwischen DHCP oder statischer IP Address gewählt 
+werden. Durch Klicken auf *Connect* wird die Verbindung zum Netzwerk 
+hergestellt. Unterstützte USB WLAN Sticks finden sich in unserem 
+`Shop <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__.
 
 .. _red_brick_brick_settings_brickd:
 

@@ -300,28 +300,40 @@ related to networking.
    :alt: Screenshot of settings tab showing network configurations.
    :align: center
 
-TODO: Fix network description!!! 
+TODO: Fix Screenshots
 
-In the *General* subsection you can set the hostname and get the current network 
-status. It additionally shows you the currently used network interface.
+The *Current Network Status* subsection shows you the status of the configured 
+and currently used network interface. The status is updated automatically every
+3 seconds.
 
-The *Wireless* subsection is only active if you attach a supported USB WIFI 
-dongle. `Supported dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
-can be found in our shop. You can see the
-currently used interface and its status, can select the interface which should 
-be used. You can select an Access Point to connect, configure encryption and
-set a static or dynamic IP (DHCP).
+You can configure the used interface in the *Configuration* subsection. First 
+choose the interface you want to configure (An USB Ethernet dongle will show
+up as ``ethX``, the Ethernet Extension as ``tfX`` and a USB WIFI dongle
+as ``wlanX`` (X is a number). Dependend on the choosen interface you will get 
+other configuration options:
 
-The *Wired* subsection is only active if you attach a supported USB Ethernet 
-dongle or an Ethernet Master Extension. The USB dongle will show up as ``eth0``, 
-the Ethernet Extension as ``tf0``. To configure an interface, choose it, select 
-if it should be used with a static IP or with DHCP and configure it properly.
-If you have configured everything press the *Save* button.
+**Configure an Ethernet Interface**
 
-Please note that it can take a few seconds to obtain an IP through DHCP or
-to connect to a WIFI network. If the new configuration doesn't immediately
-show up in the *General* subsection you likely just have to wait a little
-bit and press the refresh button again.
+TODO Screenshot Ethernet Interface
+
+After selecting a Ethernet interface, choose between DHCP or static IP 
+configuration and press the *Connect* button.
+
+
+**Configure a WIFI Interface**
+
+TODO Screenshot WIFI before scanning
+
+After selecting a WIFI interface press the *Scan* button to scan for 
+accesspoints. It will take some time to get the scan results. 
+
+TODO Screenshot WIFI after scanning (with secret key etc).
+
+Select the desired access point and enter the secret and choose between DHCP or 
+static IP address. After that press *Connect*. 
+`Supported USB WIFI dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
+can be found in our shop.
+
 
 .. _red_brick_brick_settings_brickd:
 
