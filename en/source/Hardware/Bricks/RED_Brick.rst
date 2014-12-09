@@ -307,7 +307,7 @@ and currently used network interface. The status is updated automatically every
 You can configure the used interface in the *Configuration* subsection. First 
 choose the interface you want to configure (An USB Ethernet dongle will show
 up as ``ethX``, the Ethernet Extension as ``tfX`` and a USB WIFI dongle
-as ``wlanX`` (X is a number). Dependent on the choosen interface you will get 
+as ``wlanX`` (X is a number). Dependent on the selected interface you will get 
 other configuration options:
 
 **Configure an Ethernet Interface**
@@ -321,7 +321,7 @@ configuration and press the *Connect* button.
 After selecting a WIFI interface press the *Scan* button to scan for 
 access points. It will take some time to get the scan results. 
 
-Select the desired access point and enter the secret and choose between DHCP or 
+Select the desired access point and enter the secret and select between DHCP or 
 static IP address. After that press *Connect*. 
 `Supported USB WIFI dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
 can be found in our shop.
