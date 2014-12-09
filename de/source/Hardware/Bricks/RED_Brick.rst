@@ -309,8 +309,6 @@ vorgenommen werden.
    :alt: Screenshot of settings tab showing network configurations.
    :align: center
 
-TODO: Fix Screenshots
-
 Der *Current Network Status* Abschnitt zeigt den Status der konfigurierten und 
 aktuell genutzen Netzwerkschnittstelle an. Der angezeigte Status wird 
 automatisch alle 3 Sekunden aktualisiert.
@@ -323,19 +321,13 @@ Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 
 **Konfiguration einer Ethernet Schnittstelle**
 
-TODO Screenshot Ethernet Interface
-
 Nachdem eine Ethernet Schnittstelle gewählt wurde kann zwischen DHCP oder
 statischer IP gewählt werden. Klicke anschließend *Connect*.
 
 **Konfiguration einer WLAN Schnittstelle**
 
-TODO Screenshot WIFI before scanning
-
 Nachdem eine WLAN Schnittstelle gewählt wurde, können WLAN-Netze durch Klicken
 auf den *Scan* Button gesucht werden. Dies dauert ein paar Sekunden.
-
-TODO Screenshot WIFI after scanning (with secret key etc).
 
 Wähle den gewünschten Accesspoint und gebe den dazugehörigen Key ein. 
 Anschließend muss nur noch zwischen DHCP oder statischer IP Address gewählt 

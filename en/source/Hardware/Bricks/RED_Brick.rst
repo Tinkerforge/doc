@@ -300,8 +300,6 @@ related to networking.
    :alt: Screenshot of settings tab showing network configurations.
    :align: center
 
-TODO: Fix Screenshots
-
 The *Current Network Status* subsection shows you the status of the configured 
 and currently used network interface. The status is updated automatically every
 3 seconds.
@@ -309,25 +307,19 @@ and currently used network interface. The status is updated automatically every
 You can configure the used interface in the *Configuration* subsection. First 
 choose the interface you want to configure (An USB Ethernet dongle will show
 up as ``ethX``, the Ethernet Extension as ``tfX`` and a USB WIFI dongle
-as ``wlanX`` (X is a number). Dependend on the choosen interface you will get 
+as ``wlanX`` (X is a number). Dependent on the choosen interface you will get 
 other configuration options:
 
 **Configure an Ethernet Interface**
 
-TODO Screenshot Ethernet Interface
-
-After selecting a Ethernet interface, choose between DHCP or static IP 
+After selecting an Ethernet interface, choose between DHCP or static IP 
 configuration and press the *Connect* button.
 
 
 **Configure a WIFI Interface**
 
-TODO Screenshot WIFI before scanning
-
 After selecting a WIFI interface press the *Scan* button to scan for 
-accesspoints. It will take some time to get the scan results. 
-
-TODO Screenshot WIFI after scanning (with secret key etc).
+access points. It will take some time to get the scan results. 
 
 Select the desired access point and enter the secret and choose between DHCP or 
 static IP address. After that press *Connect*. 
