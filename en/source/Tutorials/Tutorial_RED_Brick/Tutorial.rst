@@ -251,9 +251,8 @@ and **tfX: Wired** should be selected (X is a number). Select between DHCP or
 a static IP and press **Connect**. After a few seconds the **Current Network 
 Status** should change to **Connected**.
 
-TODO: New Screenshot
 
-.. image:: /Images/Screenshots/red_brick_tutorial_network_general.jpg
+.. image:: /Images/Screenshots/red_brick_tutorial_network.jpg
    :scale: 100 %
    :alt: Screenshot of RED Brick network settings.
    :align: center

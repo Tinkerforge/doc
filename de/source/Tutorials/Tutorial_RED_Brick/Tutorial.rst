@@ -255,9 +255,8 @@ sein. Wähle zwischen DHCP oder einer statischen IP und klicke **Connect**.
 Nach ein paar Sekunden sollte der **Current Network Status** auf **Connected**
 wechseln.
 
-TODO: New Screenshot
 
-.. image:: /Images/Screenshots/red_brick_tutorial_network_general.jpg
+.. image:: /Images/Screenshots/red_brick_tutorial_network.jpg
    :scale: 100 %
    :alt: Screenshot of RED Brick network settings.
    :align: center
