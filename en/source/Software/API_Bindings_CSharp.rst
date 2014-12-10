@@ -14,7 +14,8 @@ The C# bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your C# programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-* ``Tinkerforge.dll``, a precompiled C#/.NET library
+* ``Tinkerforge.dll``, a precompiled C#/.NET library (without debug info)
+* ``Tinkerforge.dll.mdb``, debug info for ``Tinkerforge.dll``
 * ``Tinkerforge.xml``, the API documentation for Visual Studio, MonoDevelop, etc
 * in ``source/`` the source code of ``Tinkerforge.dll``
 * in ``examples/`` the examples for every Brick and Bricklet
