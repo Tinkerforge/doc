@@ -219,12 +219,15 @@ Click on the **Start Upload** Button to upload the file. After that click on
 **Finish**. You should now be able to take a look at the log file
 and see the logged temperatures.
 
-TODO description: View log files!
-
 .. image:: /Images/Screenshots/red_brick_tutorial_view_log.jpg
    :scale: 50 %
    :alt: Screenshot Log Files
    :align: center
+
+You can select log files in the browser view and downloading them to your PC by 
+clicking on **Download**. By the **View** button you can directly take a look 
+inside the log. With the **Delete** button you can delete the log file from the
+RED Brick.
 
 Gain internet access
 --------------------
@@ -243,16 +246,12 @@ Shut the RED Brick down and remove the power before you stack the
 Extension on top of the stack.
 
 After that reconnect power and wait until the enhanced stack has booted.
-Click on "Settings", "Network" and
-"Wired" in the RED Brick tab of the Brick Viewer.
-Choose **tf0** as interface either use DHCP or enter a static
-configuration. Then click on **Save**.
+Click on "Settings". The **Network** section should be opened
+and **tfX: Wired** should be selected (X is a number). Select between DHCP or
+a static IP and press **Connect**. After a few seconds the **Current Network 
+Status** should change to **Connected**.
 
-TODO: Adapt to new Brick Viewer Tab!!!!
-
-Now you can see the configured **tf0** interface in the **General** 
-tab of the network settings. If you use DHCP you may have to click
-**Refresh** a few times until the RED Brick received an IP.
+TODO: New Screenshot
 
 .. image:: /Images/Screenshots/red_brick_tutorial_network_general.jpg
    :scale: 100 %

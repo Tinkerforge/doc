@@ -224,13 +224,13 @@ Klicke auf den **Start Upload** Button um die Datei hochzuladen. Klicke
 anschließend auf **Finish**. Nun können wir der Logdatei des Programms, die 
 gemessenen Temperaturen entnehmen.
 
-TODO description: View log files!
-
 .. image:: /Images/Screenshots/red_brick_tutorial_view_log.jpg
    :scale: 50 %
    :alt: Screenshot Log Files
    :align: center
 
+In der Browseransicht können Log Dateien ausgewählt und mittels des **Download** Buttons auf den PC heruntergeladen werden. Der **View** Button ermöglicht es
+die Log Dateien direkt einzusehen. Soll eine Log Datei auf dem RED Brick gelöscht werden, so ist dies mit dem **Delete** Button möglich.
 
 Zugriff auf das Internet bekommen
 ---------------------------------
@@ -249,16 +249,13 @@ Fahre den RED Brick herunter und entferne die Stromversorgung bevor du die
 Ethernet Extension auf den Stapel steckst.
 
 Nachdem wirder die Stromversorgung angeschlossen wurde und der erweiterte Stapel 
-fertig gebootet hat, klicke auf "Settings",
-"Network" und "Wired" in dem RED Brick Tab des Brick Viewers.
-Wähle **tf0** als Interface und wähle entweder DHCP oder eine statische IP.
-Klicke auf **Save**.
+fertig gebootet hat, klicke auf **Settings**. Der **Network** Abschnitt sollte 
+geöffnet sein und als Interface **tfX: Wired** (X ist eine Zahl) ausgewählt 
+sein. Wähle zwischen DHCP oder einer statischen IP und klicke **Connect**.
+Nach ein paar Sekunden sollte der **Current Network Status** auf **Connected**
+wechseln.
 
-TODO anpassen an neue Version!!!!
-
-In dem **General** Tab wird anschließend das konfigurierte **tf0** Interface
-angezeigt. Falls DHCP verwendet wird, kann es notwendig sein **Refresh** einige 
-male zu klicken bis die empfangene IP Adresse angezeigt wird.
+TODO: New Screenshot
 
 .. image:: /Images/Screenshots/red_brick_tutorial_network_general.jpg
    :scale: 100 %
