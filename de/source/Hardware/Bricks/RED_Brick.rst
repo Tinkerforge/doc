@@ -191,19 +191,19 @@ Erste Schritte / Teste den RED Brick
 ------------------------------------
 
 Mit den folgenden Schritten kann der RED Brick getestet werden.
-
 Ein Schritt für Schritt Tutorial zum RED Brick steht ebenfalls bereit:
 :ref:`RED Brick Tutorial <tutorial_red_brick>`.
 
 Als erstes müssen :ref:`Brick Daemon <brickd>` und :ref:`Brick Viewer <brickv>`
 Software auf einem PC oder Mac installiert werden. Anschließend sollte die 
-Micro-SD-Karte in den :ref:`Micro-SD-Kartenslot <red_brick_micro_sd_card_slot>` des
-RED Bricks gesteckt werden. Dessen Position und eine Übersicht aller
-Schnittstellen des Bricks gibt es im
-:ref:`Hardware Abschnitt <red_brick_hardware>`. Es können `SD Karten mit
+vorbereitet Micro-SD-Karte in den :ref:`Micro-SD-Kartenslot
+<red_brick_micro_sd_card_slot>` des RED Bricks gesteckt werden. Die Position
+des Kartenslot und eine Übersicht aller Schnittstellen des Bricks gibt es in der
+:ref:`Hardware Beschreibung <red_brick_hardware>`. `SD Karten mit
 vorinstalliertem Image <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__ 
-in unserem Shop bestellt werden. Ansonsten
-muss ein :ref:`Image auf eine SD Karte kopiert werden <red_brick_copy_image>`.
+können in unserem Shop bestellt werden. Ansonsten
+kann ein passenden SD Karte aber auch selber vorbereitet werden, siehe den
+:ref:`Image auf SD Karte kopiert <red_brick_copy_image>` Abschnitt.
 
 Danach ist der RED Brick einsatzbereit und kann mit dem PC oder Mac mit einem 
 Mini-USB Kabel verbunden werden.
@@ -233,8 +233,8 @@ werden. Während des Bootvorgangs kann das Starten des LXDE Desktop Environments
 beobachtet werden, das anschließend wie ein ganz normaler Desktop PC verwendet 
 werden kann.
 
-Auf dem Linux kann man sich mittels **tf**:**tf** (Nutzer:Passwort) anmelden.
-Der Nutzer ist sudoer.
+Auf dem Linux kann man sich mittels Nutzer ``tf`` und Passwort ``tf`` anmelden.
+Der ``tf`` Nutzer ist sudoer.
 
 .. note:: Aus Sicherheitsgründen kann es Sinn machen das Passwort zu ändern. Die
           Prozedur ist :ref:`hier <red_brick_change_password>` beschrieben.
@@ -245,15 +245,15 @@ Der Nutzer ist sudoer.
 
 Brick Viewer
 ------------
+
 Dieser Abschnitt beschreibt die Konfiguration des RED Bricks mit der
 :ref:`Brick Viewer <brickv>` Software. Der RED Brick kann ebenfalls über die
 :ref:`RED Brick API <red_brick_programming_interface>` konfiguriert werden (nur 
-für Poweruser gedacht).
-
+für Power User gedacht).
 
 .. image:: /Images/Screenshots/brickv_red_tab_and_labels.jpg
    :scale: 60 %
-   :alt: Screenshot der Tabauswahl und Labeln.
+   :alt: Screenshot der Tabauswahl und Labels.
    :align: center
 
 Die RED Brick Darstellung im Brick Viewer besteht aus verschiedenen Tabs. Jeder
@@ -292,16 +292,19 @@ Die Liste kann folgende Netzwerkschnittstellen enthalten
   :ref:`Ethernet Extension <ethernet_extension>` auf den RED Brick gesteckt
   wird.
 
-Die Statusanzeigen werden alle 3 Sekunden aktualisiert.
+Die Statusanzeigen werden alle 3 Sekunden automatisch aktualisiert.
 
 .. _red_brick_brick_settings:
 
-Settings Tab (Netzwerk, Brick Daemon, Datum/Uhrzeit)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Settings Tab (Netzwerk, Brick Daemon, Datum / Uhrzeit)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _red_brick_brick_settings_network:
 
-Im **Network** Abschnitt dieses Tabs können alle Einstellungen zu Netzwerken
+Netzwerk
+""""""""
+
+Im Network Abschnitt dieses Tabs können alle Einstellungen zu Netzwerken
 vorgenommen werden.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_network.jpg
@@ -319,25 +322,27 @@ wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein USB WIFI Stick
 als ``wlanX`` angezeigt (X ist eine Zahl). Abhängig von der gewählten 
 Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 
-**Konfiguration einer Ethernet Schnittstelle**
+* **Konfiguration einer Ethernet Schnittstelle:**
 
-Nachdem eine Ethernet Schnittstelle gewählt wurde kann zwischen DHCP oder
-statischer IP gewählt werden. Klicke anschließend *Connect*.
+  Nachdem eine Ethernet Schnittstelle gewählt wurde kann zwischen DHCP oder
+  statischer IP gewählt werden. Klicke anschließend *Connect*.
+* **Konfiguration einer WLAN Schnittstelle:**
 
-**Konfiguration einer WLAN Schnittstelle**
+  Nachdem eine WLAN Schnittstelle gewählt wurde, können WLAN-Netze durch Klicken
+  auf den *Scan* Button gesucht werden. Dies dauert ein paar Sekunden.
 
-Nachdem eine WLAN Schnittstelle gewählt wurde, können WLAN-Netze durch Klicken
-auf den *Scan* Button gesucht werden. Dies dauert ein paar Sekunden.
-
-Wähle den gewünschten Access Point und gebe den dazugehörigen Key ein.
-Anschließend muss nur noch zwischen DHCP oder statischer IP Adresse gewählt
-werden. Durch Klicken auf *Connect* wird die Verbindung zum Netzwerk 
-hergestellt. Unterstützte USB WLAN Sticks finden sich in unserem 
-`Shop <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__.
+  Wähle den gewünschten Access Point und gebe den dazugehörigen Key ein.
+  Anschließend muss nur noch zwischen DHCP oder statischer IP Adresse gewählt
+  werden. Durch Klicken auf *Connect* wird die Verbindung zum Netzwerk
+  hergestellt. Unterstützte USB WLAN Sticks finden sich in unserem
+  `Shop <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__.
 
 .. _red_brick_brick_settings_brickd:
 
-Im **Brick Daemon Abschnitt** des Tabs können Einstellungen zum lokalen
+Brick Daemon
+""""""""""""
+
+Im Brick Daemon Abschnitt des Tabs können Einstellungen zum lokalen
 Brick Daemon vorgenommen werden.
 
 
@@ -356,7 +361,10 @@ werden.
 
 .. _red_brick_brick_settings_date:
 
-Im **Date/Time Abschnitt** kann die Uhr des RED Bricks, mit der Uhr des
+Datum / Uhrzeit
+"""""""""""""""
+
+Im Date / Time Abschnitt kann die Uhr des RED Bricks, mit der Uhr des
 angeschlossenen PCs, synchronisiert werden. Es gibt keine Batterie auf dem RED 
 Brick, so dass die Uhr nicht weiterläuft, wenn der RED Brick nicht aktiv ist.
 
@@ -397,8 +405,8 @@ muss nur die entsprechende Schnittstelle gewählt werden und *Connect* geklickt
 werden. Die Schnittstelle ist typischerweise unter Linux ``/dev/ttyACMX`` (X ist
 eine Zahl), unter Windows ``Serial Port X`` (X ist Zahl) mit dem Gerätenamen
 ``RED Brick Serial Console`` und unter OS X ``/dev/tty.usbmodemXYZ``, wobei XYZ
-ein Teil der UID des RED Bricks ist. Mit dem Nutzer **tf** und Passwort
-**tf** kann man sich einloggen. Falls unbekannt ist welche Schnittstelle die 
+ein Teil der UID des RED Bricks ist. Mit dem Nutzer ``tf`` und Passwort
+``tf`` kann man sich einloggen. Falls unbekannt ist welche Schnittstelle die
 richtig ist, kann diese durch Ausprobieren bestimmt werden. Es kann notwendig 
 sein die ENTER Taste zu drücken um die Kommandozeile zu sehen.
 
@@ -441,7 +449,12 @@ Zwei :ref:`Master Extensions <primer_master_extensions>` werden vom RED Brick
 unterstützt: :ref:`Ethernet Extension <ethernet_extension>` und 
 :ref:`RS485 Extension <rs485_extension>`.
 
-**Ethernet Extension**
+Eine Änderung der Einstellungen einer Extension führt zu einem Neustart des
+Brick Daemons, d.h. der RED Brick Tab verschwindet kurz aus dem Brick Viewer
+und taucht kurze Zeit später wieder auf.
+
+Ethernet Extension
+""""""""""""""""""
 
 .. image:: /Images/Screenshots/brickv_red_tab_extension_ethernet.jpg
    :scale: 60 %
@@ -452,7 +465,8 @@ Nur die MAC Adresse der Ethernet Extension kann hier geändert werden. Da diese
 als normale Netzwerkschnittstelle auftaucht, können die Netzwerkeinstellungen im 
 :ref:`Settings Tab <red_brick_brick_settings>` verändert werden.
 
-**RS485 Extension**
+RS485 Extension
+"""""""""""""""
 
 .. image:: /Images/Screenshots/brickv_red_tab_extension_rs485.jpg
    :scale: 60 %
@@ -465,10 +479,6 @@ Brick. Siehe :ref:`RS485 Extension Dokumentation <rs485_configuration>`.
 Wir empfehlen Baudraten von 500000, 250000, 166666, 125000, 100000, 83333, 
 71428, 62500, 55555, 50000, 45454 oder 41666 Baud bei der Nutzung eines RED 
 Bricks.
-
-Eine Änderung der Einstellungen einer Extension führt zu einem Neustart des
-Brick Daemons, d.h. der RED Brick Tab verschwindet kurz aus dem Brick Viewer
-und taucht kurze Zeit später wieder auf.
 
 .. _red_brick_web_interface:
 
@@ -514,6 +524,8 @@ HTML/JavaScript
 Wenn eine HTML Datei mit eingebettetem JavaScript hochgeladen wird, können die 
 JavaScript Bindings genutzt werden. Diese sind direkt im Root Verzeichnis 
 verfügbar.
+
+.. code-block:: html
 
  <script src="/Tinkerforge.js" type='text/javascript'></script>
 
@@ -619,8 +631,8 @@ werden.
 Das **Fast Image** besitzt keine GPU Treiber und es sind keine Bibliotheken für
 grafische Nutzerschnittstellen, kein X Server und kein LXDE installiert. Da 
 diverse Treiber und die grafische Nutzerschnittstelle nicht geladen werden 
-müssen erfolgt der Bootvorgang mit einer Dauer von 10s (TODO korrekt?) 
-deutlich schneller.
+müssen steht mehr RAM Speicher (sonst zwischen CPU und GPU geteilt) zur
+Verfügung und der Bootvorgang erfolgt schneller.
 
 Neue Software kann in beiden Images installiert werden. Siehe die
 `Beschreibung des Versions Tab <red_brick_brickv_versions_tab>`__, 
@@ -629,11 +641,11 @@ wie neue Software installiert wird.
 Eine Liste der vorinstallierten Bibliotheken steht zur Verfügung:
 :ref:`Installierte Bibliotheken (Fast und Fast Image) <red_brick_installed_versions>`.
 
-Der Nutzer **tf** ist der Standardnutzer auf den Images. Beim Einloggen über die
-Konsole oder in LXDE kann dieser Nutzer mit dem Standardpasswort **tf** benutzt
+Der Nutzer ``tf`` ist der Standardnutzer auf den Images. Beim Einloggen über die
+Konsole oder in LXDE kann dieser Nutzer mit dem Standardpasswort ``tf`` benutzt
 werden. Der Nutzer ist ein sudoer, so dass Root-Zugriff mittels::
 
- sudo su
+ sudo -s
 
 erhalten werden kann. Die Images können von der
 :ref:`Download Seite <downloads_red_images>` herunter geladen werden.
@@ -645,10 +657,7 @@ Baue dein eigenes Image
 Bei dieser Anleitung nehmen wir an, dass ein 
 `Debian Linux <https://www.debian.org/>`__ als Host Plattform genutzt wird.
 
-1. RED Brick Git clonen::
-
-    git clone https://github.com/Tinkerforge/red-brick
-
+1. `RED Brick Repository <http://github.com/Tinkerforge/red-brick>`__ von GitHub clonen
 2. In den Ordner ``image`` wechseln, die Datei ``README.rst`` öffnen und die
    dokumentierten Schritte durchführen.
 
@@ -661,31 +670,38 @@ länger dauern.
 Image auf SD Karte kopieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Das
-   :ref:`Full Image oder Fast Image <red_brick_images>` von der RED Brick:
-   :ref:`Download-Seite <downloads_red_images>` herunterladen.
+Zuerst das :ref:`Full Image oder Fast Image <red_brick_images>` von
+:ref:`Download Seite <downloads_red_images>` herunterladen und entpacken und
+eine geeignete Micro-SD-Karte samt Kartenleser zur Hand haben. Wir empfehlen
+eine schnelle Karte (z.B. Class 10, > 30MB/s Lesen) mit genügend Speicherplatz
+(mindestens 8GB).
 
-2. Eine geeignete Micro-SD-Karte suchen. Wir empfehlen eine schnelle Karte
-   (z.B. Class 10, > 30MB/s Lesen) mit genügend Speicherplatz. Die Größe
-   des Images steht ebenfalls auf der Downloadseite.
-3. Das Image auf die SD Karte kopieren:
+Windows
+"""""""
 
-    * Für Windows nutze ein Tool wie Win32DiskImager um das Image auf die Karte zu kopieren.
+Für Windows emfehlen wir ein Tool wie `Win32DiskImager
+<http://sourceforge.net/p/win32diskimager/wiki/Home/>`__ um das Image auf die
+Karte zu kopieren.
 
-        * `Download Link <https://sourceforge.net/projects/win32diskimager/files/latest/download>`__ 
-        * `Dokumentation <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__
+1. Verbinde die SD Karte über den Kartenleser mit dem PC
+2. Starte Win32DiskImager als Administrator
+3. Wähle Image und SD Karte und klicke auf "Write"
 
-    * Auf OS X und Linux
+Linux und Mac OS X
+""""""""""""""""""
 
-        * Verbinde die SD Karte mit dem PC 
-        * Identifiziere den Pfad zu der SD Karte (z.B. dmesg)
-        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=64M
+1. Verbinde die SD Karte über den Kartenleser mit dem PC oder Mac
+2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``dmesg``)
+3. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_0_full.img``) auf die
+   SD Karte (z.B. ``/dev/sdb``) schreiben:
 
-            * Beispiel: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=64M``
+.. code-block:: bash
+
+  sudo dd if=/tmp/red_image_1_0_full.img of=/dev/sdb bs=1M
 
 .. _red_brick_change_password:
 
-Standard Passwort Ändern
+Standard Passwort ändern
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Das Standard-Passwort des Benutzers ``tf`` lautet ``tf``. Um dieses zu ändern 
@@ -720,7 +736,7 @@ Power Button
 
 Der Taster auf dem RED Brick ist ein Power Button. Wenn dieser länger wie 5 
 Sekunden gedrückt wird, so schaltet sich der RED Brick ab. Wenn der Brick
-aus ist, kann dieser über den Button auch wieder eingeschalten werden. Dazu
+aus ist, kann dieser über den Button auch wieder eingeschaltet werden. Dazu
 muss der Button solange gedrückt werden (ca. 3 Sekunden) bis die blaue LED
 an geht. Der Brick bootet anschließend.
 
@@ -732,24 +748,24 @@ LEDs
 Der RED Brick besitzt drei verschiedene LEDs auf der Oberseite. Eine blaue, 
 eine rote und eine grüne LED.
 
-Die blaue LED ist direkt mit der internen Stromversorgung des Prozessors 
-verbunden und leuchtet also immer, wenn der Prozessor mit Strom versorgt ist.
+* Die blaue LED ist direkt mit der internen Stromversorgung des Prozessors
+  verbunden und leuchtet also immer, wenn der Prozessor mit Strom versorgt ist.
 
-Die rote LED zeigt an wenn ein Fehler vorliegt. Wenn die rote LED während des 
-Bootvorgangs dauerhaft leuchtet, so konnte kein Image gefunden werden. Es ist
-entweder keine SD Karte vorhanden oder auf dieser ist kein gültiges Image.
+* Die rote LED zeigt an wenn ein Fehler vorliegt. Wenn die rote LED während des
+  Bootvorgangs dauerhaft leuchtet, so konnte kein Image gefunden werden. Es ist
+  entweder keine SD Karte vorhanden oder auf dieser ist kein gültiges Image.
 
-Die grüne LED zeigt den aktuellen Status. Wenn beim Starten die rote LED
-aus geht und die grüne nicht an, dann konnte Linux nicht korrekt booten.
-Während des Bootvorgangs geht die grüne LED an, nachdem alle Services gestartet
-sind und der Brick bereit ist blinkt diese (Heartbeat).
+* Die grüne LED zeigt den aktuellen Status. Wenn beim Starten die rote LED
+  aus geht und die grüne nicht an, dann konnte Linux nicht korrekt booten.
+  Während des Bootvorgangs geht die grüne LED an, nachdem alle Services gestartet
+  sind und der Brick bereit ist blinkt diese (Heartbeat).
 
 Ein normaler Bootvorgang verläuft wie folgt:
 
-1. Blaue und rote LED sind an, Grüne LED ist aus.
+1. Blaue und rote LED sind an, grüne LED ist aus.
 2. Rote LED geht aus (U-Boot geladen).
 3. Grüne LED geht an (Linux bootet).
-4. Grüne LED blinkt (Heartbeat) (Linux erfolgreich gestartet, alle Services laufen).
+4. Grüne LED blinkt (Heartbeat: Linux erfolgreich gestartet, alle Services laufen).
 
 Die Funktion der grünen und der roten LED kann geändert werden. Diese können zum 
 Beispiel die Ausnutzung der 
@@ -777,8 +793,8 @@ USB 2.0 Host
 ^^^^^^^^^^^^
 
 Der RED Brick ist mit einer Standard 
-`USB 2.0 <http://de.wikipedia.org/wiki/USB>`__ (480Mbps) Typ A Buchse 
-ausgestattet. Mit ihr können USB Geräte mit bis zu 7.5W (5V/1.5A) betrieben 
+`USB-2.0 <http://de.wikipedia.org/wiki/USB>`__ (480Mb/s) Typ A Buchse
+ausgestattet. Mit ihr können USB Geräte mit bis zu 7,5W (5V/1,5A) betrieben
 werden. Ein Kurzschluss-Schutz schützt den RED Brick und das angeschlossene
 Gerät. Sowohl das Full als auch das Fast Image basieren auf Debian Linux und
 unterstützen typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
@@ -841,11 +857,11 @@ GPIO Anschluss
 
 .. note:: 
 
-	Dieser Anschluss ist für fortgeschrittene Nutzer gedacht um eigene Hardware 
-	anzuschließen. Aktuell bieten wir keine Softwareunterstützung zur Nutzung 
-	dieses Anschlusses.
+    Dieser Anschluss ist für fortgeschrittene Nutzer gedacht um eigene Hardware
+    anzuschließen. Aktuell bieten wir keine Softwareunterstützung zur Nutzung
+    dieses Anschlusses.
 
-Der Red Brick ist mit einem 21 Pin, 0.25mm Pitch, FPC GPIO Anschluss
+Der Red Brick ist mit einem 21 Pin (0,25mm Pitch) FPC GPIO Anschluss
 ausgestattet (Molex 502078-2110).
 
 Alle Signale des A10s Prozessors auf Port E sind mit diesem GPIO Anschluss
@@ -890,7 +906,7 @@ Stromversorgung
 Der RED Brick muss mit 5V versorgt werden. Er kann über den 
 Mini-USB Anschluss oder eine 
 :ref:`Step-Down Power Supply <step_down_power_supply>` versorgt werden. Ein 
-einzelner RED Brick benötigt bis zu 1.1 Watt, so dass ein typisches 5W 
+einzelner RED Brick benötigt bis zu 1,1 Watt, so dass ein typisches 5W
 (5V/1A) USB Netzteil ausreicht um diesen und zum Beispiel ein Master Brick
 mit ein paar Bricklets zu versorgen. Bei größeren Aufbauten sollte der
 Strombedarf berechnet werden und eine geeignete Stromversorgung genutzt werden.
@@ -903,12 +919,12 @@ werden, nicht außer acht gelassen werden.
 FAQ
 ---
 
-* F: Ich habe mein RED Brick mit einem Linux PC verbunden. Ich sehe aber kein ``/dev/ttyACM0``
-  Gerät um mich mit der seriellen Konsole zu verbinden.
+* Q: Ich habe mein RED Brick mit einem Linux PC verbunden. Ich sehe aber kein
+  ``/dev/ttyACM0`` Gerät um mich mit der seriellen Konsole zu verbinden.
 * A: Der ``cdc_acm`` Treiber muss geladen werden
 
 
-* F: Die rote und blaue LED sind an, aber nichts passiert.
+* Q: Die rote und blaue LED sind an, aber nichts passiert.
 * A: Der RED Brick bootet nicht. Überprüfe die Micro-SD-Karte.
 
 
@@ -922,8 +938,7 @@ Funktionalität zu implementieren (Statusinformationen bekommen, Programme
 managen, etc.). Diese API ist ggf. für Power User interessant, normale
 Nutzer benötigen diese nicht.
 
-Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte 
-Beschreibung.
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine
+detaillierte Beschreibung.
 
 .. include:: RED_Brick_hlpi.table
-

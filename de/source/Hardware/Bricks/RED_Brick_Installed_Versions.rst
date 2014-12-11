@@ -9,20 +9,20 @@
 
 .. _red_brick_installed_versions:
 
-RED Brick Installierte Bibliotheken und deren Versionen
-=======================================================
+RED Brick - Installierte Bibliotheken und deren Versionen
+=========================================================
 
 Beschreibung
 ------------
 
-Eine vielzahl von verschiedenen Software-Bibliotheken sind bereits auf den 
-RED Brick Images vorinstalliert. Auf dieser seite sind deren Namen und
+Eine Vielzahl von verschiedenen Software-Bibliotheken sind bereits auf den
+RED Brick Images vorinstalliert. Auf dieser Seite sind deren Namen und
 die jeweils installierte Version für die aktuelle Version des
 ``Full`` und des ``Fast`` Images zu finden.
 
 Die Liste der Versionen wird automatisch generiert und ist leider
 nicht vollständig. Bibliotheken werden aus vielen verschiedenen Quellen 
-installiert (Debian Pakete, Pip Pakete, Tarballs etc.). Leider sind nicht alle
+installiert (Debian Pakete, pip Pakete, Tarballs etc.). Leider sind nicht alle
 Quellen einfach parsebar, so dass manche nicht auftauchen.
 
 Andere Bibliotheken installieren
@@ -33,15 +33,16 @@ werden.
 
 Sprachen, die einen Paketmanager besitzen (JavaScript, Perl, PHP, Python, Ruby)
 können die vorinstallierten Paketmanager (``npm``, ``cpanm``, ``pear``, 
-``pip``, ``gem``) über das Console Tab des Brick Viewers nutzen. Für jeden 
+``pip``, ``gem``) über das :ref:`Console Tab des Brick Viewers
+<red_brick_brickv_console>` nutzen. Für jeden
 Paketmanager gibt es im Netz gute Beschreibungen, wie diese zu benutzen sind.
 Selbst wenn diese bisher nicht benutzt wurden, hat man innerhalb von ein paar
 Minuten die gewünschte Bibliothek installiert!
 
-Bei C\# und Visual Basic .NET kann einfach die gewünschte .NET DLL zusammen 
+Bei C# und Visual Basic .NET kann einfach die gewünschte .NET DLL zusammen
 mit dem eigenen Programm hochgeladen werden und als Referenz hinzugefügt 
 werden. Gleiches gilt für Java, wo fehlende JARs mithochgeladen werden können.
-Diese werden automatisch zum Classpath hinzugefügt.
+Diese werden automatisch zum Class Path hinzugefügt.
 
 Die meisten C Bibliotheken sind über das normale Debian Repository verfügbar.
 Nutze ``apt-get`` um diese über das Console Tab zu installieren.

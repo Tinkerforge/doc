@@ -7,8 +7,8 @@
 
 .. _red_brick_program_tab:
 
-RED Brick Program Tab
-=====================
+RED Brick - Program Tab
+=======================
 
 
 Description
@@ -230,7 +230,7 @@ Java
 
 The Tinkerforge.jar Java Bindings are available in
 ``/usr/tinkerforge/bindings/java/``. The file is already added
-to the classpath by default, so you can just import the Tinkerforge
+to the class path by default, so you can just import the Tinkerforge
 classes by the usual means, e.g. ``import com.tinkerforge.IPConnection;``.
 
 * Java Version: Currently there is only one Java version installed.
@@ -246,7 +246,7 @@ classes by the usual means, e.g. ``import com.tinkerforge.IPConnection;``.
     JAR files will be listed in the drop down box.
 * Class Path: You can add files that are added to your class path.
   All JARs that you added in step 2 will automatically be added
-  to the classpath.
+  to the class path.
 * Working Directory: Specify the 
   `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
   of your program. You can use a path that is relative to the

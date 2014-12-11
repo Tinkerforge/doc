@@ -190,19 +190,18 @@ First Steps / Test your RED Brick
 ---------------------------------
 
 With the following instructions you can test your RED Brick.
-
 A full step-by-step tutorial regarding the RED Brick can be found here: 
 :ref:`RED Brick Tutorial <tutorial_red_brick>`.
 
 First install the :ref:`Brick Daemon <brickd>` and the
-:ref:`Brick Viewer <brickv>` software on your PC or Mac. Insert the Micro-SD 
-card into the :ref:`Micro-SD-Card slot <red_brick_micro_sd_card_slot>` of the 
-RED Brick. The location of it and an overview of the different hardware 
-interfaces of the RED Brick is given in the 
-:ref:`Hardware Section <red_brick_hardware>`. You can order a `SD card with 
+:ref:`Brick Viewer <brickv>` software on your PC or Mac. Insert the prepared
+Micro-SD card into the :ref:`Micro-SD-Card slot <red_brick_micro_sd_card_slot>`
+of the RED Brick. The location of the slot and an overview of the different
+hardware interfaces of the RED Brick is given in the
+:ref:`hardware description <red_brick_hardware>`. You can order a `SD card with
 pre-installed image <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__ 
-in our shop. Otherwise you have to 
-:ref:`copy the image to your card <red_brick_copy_image>`. 
+in our shop. Otherwise you can prepare an SD card yourself, see the
+:ref:`copy image to SD card <red_brick_copy_image>` section.
 
 After that your RED Brick is ready to go and can be connected to your PC or Mac 
 with a Mini-USB cable.
@@ -213,7 +212,7 @@ with a Mini-USB cable.
    :align: center
    :target: ../../_images/Bricks/brick_red_mini_usb_800.jpg
 
-If you start the Brick Viewer software and press "connect". A tab should show up
+If you start the Brick Viewer software and press "Connect". A tab should show up
 labeled with "RED Brick". Click on it.
 
 On the left side of the tab you see different additional tabs. The "Overview" 
@@ -230,8 +229,8 @@ mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
 power the Brick you can see the LXDE desktop environment booting. After 
 the boot process you should be able to use it as a normal desktop PC.
 
-You can log in to the underlying linux with **tf**:**tf**
-(user:password). The user is a sudoer.
+You can log in to the underlying Linux with user ``tf`` and password ``tf``.
+The ``tf`` user is a sudoer.
 
 .. note:: For security reasons you may want to change the password. The 
           procedure is documented :ref:`here <red_brick_change_password>`.
@@ -283,16 +282,19 @@ The list can contain the following network interfaces
 * ``tfX`` : This is the Ethernet interface created if you add an 
   :ref:`Ethernet Extension <ethernet_extension>` on top of the RED Brick.
 
-The data in the overview tab is refreshed every 3 seconds.
+The data in the overview tab is automatically refreshed every 3 seconds.
 
 .. _red_brick_brick_settings:
 
-Settings Tab (Network, Brick Daemon, Date/Time)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Settings Tab (Network, Brick Daemon, Date / Time)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _red_brick_brick_settings_network:
 
-In the **Network section** of this tab you can configure settings
+Network
+"""""""
+
+In the Network section of this tab you can configure settings
 related to networking.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_network.jpg
@@ -310,26 +312,26 @@ up as ``ethX``, the Ethernet Extension as ``tfX`` and a USB WIFI dongle
 as ``wlanX`` (X is a number). Dependent on the selected interface you will get 
 other configuration options:
 
-**Configure an Ethernet Interface**
+* **Configure an Ethernet Interface:**
 
-After selecting an Ethernet interface, choose between DHCP or static IP 
-configuration and press the *Connect* button.
+  After selecting an Ethernet interface, choose between DHCP or static IP
+  configuration and press the *Connect* button.
+* **Configure a WIFI Interface:**
 
+  After selecting a WIFI interface press the *Scan* button to scan for
+  access points. It will take some time to get the scan results.
 
-**Configure a WIFI Interface**
-
-After selecting a WIFI interface press the *Scan* button to scan for 
-access points. It will take some time to get the scan results. 
-
-Select the desired access point and enter the secret and select between DHCP or 
-static IP address. After that press *Connect*. 
-`Supported USB WIFI dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
-can be found in our shop.
-
+  Select the desired access point and enter the secret and select between DHCP or
+  static IP address. After that press *Connect*.
+  `Supported USB WIFI dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
+  can be found in our shop.
 
 .. _red_brick_brick_settings_brickd:
 
-In the **Brick Daemon section** of this tab you can configure
+Brick Daemon
+""""""""""""
+
+In the Brick Daemon section of this tab you can configure
 settings related to the local Brick Daemon.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_brickd.jpg
@@ -346,7 +348,10 @@ subsection. The LED trigger for the red and green LED can also be set here.
 
 .. _red_brick_brick_settings_date:
 
-In the **Date/Time section** you can sync the clock of the RED Brick to
+Date / Time
+"""""""""""
+
+In the Date / Time section you can sync the clock of the RED Brick to
 the clock of your PC. There is no battery on the RED Brick, so the
 time won't be incremented if the RED Brick is not powered.
 
@@ -361,9 +366,9 @@ NTP. You only have to configure the timezone, which is saved even if
 the RED Brick is powered down.
 
 If you need the correct time after bootup but you can't guarantee
-or can't obtain internet access, you can also use the 
+or can't obtain Internet access, you can also use the
 :ref:`GPS Bricklet <gps_bricklet>`. You can find a small
-`program on github <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__ 
+`program on GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
 that could be uploaded to the RED Brick to sync the Linux system time with
 the GPS time.
 
@@ -388,7 +393,7 @@ Under Linux the typical interface is ``/dev/ttyACMX`` (X is number) under
 Windows it is ``Serial Port COMX`` (X is number) with device name 
 ``RED Brick Serial Console`` and on OS X usually shows up as 
 ``/dev/tty.usbmodemXYZ`` with XYZ is part of RED Bricks UID. You can log in as 
-user **tf** with password **tf**. If you are not sure what the right port is 
+user ``tf`` with password ``tf``. If you are not sure what the right port is
 test them all, until you see the shell. It might be necessary to press ENTER to 
 see the prompt. 
 
@@ -429,19 +434,25 @@ Two :ref:`Master Extensions <primer_master_extensions>` are supported by the
 RED Brick: :ref:`Ethernet Extension <ethernet_extension>` and 
 :ref:`RS485 Extension <rs485_extension>`.
 
-**Ethernet Extension**
+Changing the settings on either of the Extensions will restart the
+Brick Daemon on the RED Brick, i.e. your RED Brick tab in the Brick
+Viewer will disappear for a few seconds and then pop up again.
+
+Ethernet Extension
+""""""""""""""""""
 
 .. image:: /Images/Screenshots/brickv_red_tab_extension_ethernet.jpg
    :scale: 60 %
    :alt: Screenshot of extension tab showing Ethernet Extension configuration.
    :align: center
 
-Only MAC address of the Ethernet Extension can be changed here.
+Only the MAC address of the Ethernet Extension can be changed here.
 Since the Ethernet Extension shows up as a normal network interface in the
 underlying Linux, you can configure it like any other network interface
 through the :ref:`Settings Tab <red_brick_brick_settings>`.
 
-**RS485 Extension**
+RS485 Extension
+"""""""""""""""
 
 .. image:: /Images/Screenshots/brickv_red_tab_extension_rs485.jpg
    :scale: 60 %
@@ -456,10 +467,6 @@ The recommended baudrates to be used on the RED Brick are 500000, 250000,
 166666, 125000, 100000, 83333, 71428, 62500, 55555, 50000, 45454 or 
 41666 baud.
 
-Changing the settings on either of the Extensions will restart the
-Brick Daemon on the RED Brick, i.e. your RED Brick tab in the Brick 
-Viewer will disappear for a few seconds and then pop up again. 
-
 .. _red_brick_web_interface:
 
 RED Brick Web Interface
@@ -467,7 +474,7 @@ RED Brick Web Interface
 
 If your RED Brick is equipped with a USB WIFI dongle, an Ethernet 
 Extension or has other network connectivity, you can access a
-web interface. The web interface is available at the IP of the
+web interface. The web interface is available at the IP address of the
 RED Brick or the hostname (``red-brick`` by default).
 
 The RED Brick web interface shows the installed programs. You
@@ -504,7 +511,9 @@ HTML/JavaScript
 ^^^^^^^^^^^^^^^
 
 If you upload HTML with embedded JavaScript you can use the JavaScript
-Bindings. They are available in the root directory, import them with::
+Bindings. They are available in the root directory, import them with:
+
+.. code-block:: html
 
  <script src="/Tinkerforge.js" type='text/javascript'></script>
 
@@ -546,11 +555,13 @@ all Python programs::
 
 The default web interface of the RED Brick uses Python/Flask. 
 You can find the code 
-`on github <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__.
+`on GitHub <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__.
 
 It is of course also possible to use templates, static files and so on. You
-can just use them as it is shown in most Flask tutorials. We also have
-a `more complex Flask example <TODO>`__ that uses more features on github.
+can just use them as it is shown in most Flask tutorials.
+
+..
+  We also have a `more complex Flask example <TODO>`__ that uses more features on GitHub.
 
 PHP
 ^^^
@@ -602,40 +613,36 @@ programs on this image.
 
 The **fast image** comes without graphical interface support and has no X, no 
 LXDE and no other graphical libraries pre-installed. GPU drivers are not loaded,
-which means that the RED Brick has more available RAM (the RAM is shared between
-CPU and GPU). It is optimized for a fast boot time and can boot in ~10s 
-(TODO, correct?).
+which means that the RED Brick has more available RAM (RAM is shared between
+CPU and GPU) and will boot faster.
 
 New software can be installed on both images.
 See the `description of the versions tab <red_brick_brickv_versions_tab>`__ 
 on how to install new software.
 
-The list of pre-installed programming language libraries can be found below:
+A list of pre-installed programming language libraries is available:
+:ref:`Full and fast image installed library versions <red_brick_installed_versions>`.
 
-* :ref:`Full and fast image installed library versions <red_brick_installed_versions>`.
-
-If you want to log into the linux system by command line or LXDE, the standard 
-user is **tf** with default password **tf**. The user is a sudoer, i.e.
+If you want to log into the Linux system by command line or LXDE, the standard
+user is ``tf`` with default password ``tf``. The user is a sudoer, i.e.
 you can get root access by calling::
 
- sudo su
+ sudo -s
 
 The images can be downloaded from the :ref:`download page <downloads_red_images>`.
 
 
 .. _red_brick_build_image:
 
-Build your Own Image
+Build your own Image
 ^^^^^^^^^^^^^^^^^^^^
 
 For the building steps we are assuming a `Debian Linux <https://www.debian.org/>`__
 or derivative (Ubuntu etc) as the host platform.
 
-1. Clone RED Brick Git::
-
-    git clone https://github.com/Tinkerforge/red-brick
-
-2. Move into the folder ``image``, open the ``README.rst`` file and execute the
+1. Clone the `RED Brick repository <http://github.com/Tinkerforge/red-brick>`__
+   from GitHub
+2. Change to the ``image`` folder, open the ``README.rst`` file and execute the
    documented  steps.
 
 The build process will take at least 4-6 hours, depending on the processing power
@@ -647,27 +654,33 @@ of your PC it might also take considerably longer.
 Copy Image to SD Card
 ^^^^^^^^^^^^^^^^^^^^^
 
-1. Download the :ref:`full image or the fast image <red_brick_images>` from the
-   RED Brick: :ref:`Download page <downloads_red_images>`.
+Start by downloading the :ref:`full image or fast image <red_brick_images>` from
+the :ref:`download page <downloads_red_images>` and unpack it. You'll also
+need a Micro-SD card and a card reader. We recommend a fast card
+(e.g. Class 10, > 30MB/s read) with enough space (at least 8GB).
 
-2. Choose a suitable Micro-SD card. We recommend a fast SD card
-   (e.g. class 10, > 30MB/s read) with enough space. You can find the size of
-   the image on the download page.
+Windows
+"""""""
 
-3. Transfer the image to the SD card:
+For Windows we recomment a tool like `Win32DiskImager
+<http://sourceforge.net/p/win32diskimager/wiki/Home/>`__ to copy the image to
+the card.
 
-    * On Windows use a tool like Win32DiskImager to transfer the image to the card.
+1. Connect the SD card to the PC using the card reader
+2. Start Win32DiskImager as Administrator
+3. Choose the image and SD card and click "Write"
 
-        * `Download Link <https://sourceforge.net/projects/win32diskimager/files/latest/download>`__ 
-        * `Documentation <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__
+Linux and Mac OS X
+""""""""""""""""""
 
-    * On OS X and Linux
+1. Connect the SD card to the PC or Mac using the card reader
+2. Identify the path of the SD card (e.g. using ``dmesg``)
+3. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_0_full.img``) to the
+   SD card (e.g. ``/dev/sdb``):
 
-        * Connect the SD card to your PC 
-        * Identify the path to your SD card (e.g. dmesg)
-        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=64M
+.. code-block:: bash
 
-            * e.g.: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=64M``
+  dd if=/tmp/red_image_1_0_full.img of=/dev/sdb bs=1M
 
 .. _red_brick_change_password:
 
@@ -713,18 +726,18 @@ LEDs
 
 The RED Brick has three LEDs on the top side: A blue, a red and a green LED.
 
-The blue LED is directly connected to the internal power supply of the 
-processor. The LED is on if the processor is powered.
+* The blue LED is directly connected to the internal power supply of the
+  processor. The LED is on if the processor is powered.
 
-The red LED shows if an error is present. If the red LED stays on during 
-startup, no image could be found. There may be no SD card inserted or there is 
-no valid image on the SD card.
+* The red LED shows if an error is present. If the red LED stays on during
+  startup, no image could be found. There may be no SD card inserted or there is
+  no valid image on the SD card.
 
-The green LED shows the current state. If on startup the red LED is off
-and the green LED does not turn on, Linux couldn't boot properly. During
-boot-time the green LED turns on. After the RED Brick has booted up
-and all of the services are available the green led starts showing a
-heartbeat.
+* The green LED shows the current state. If on startup the red LED is off
+  and the green LED does not turn on, Linux could not boot properly. During
+  boot-time the green LED turns on. After the RED Brick has booted up
+  and all of the services are available the green led starts showing a
+  heartbeat.
 
 To summarize, a proper boot up of the RED Brick will result in the following
 sequence:
@@ -732,10 +745,11 @@ sequence:
 1. Blue and red on, green off (power on).
 2. Red turns off (U-Boot loaded).
 3. Green turns on (Linux boots).
-4. Green starts heartbeat (Linux booted successfully and all services available).
+4. Green starts blinking (heartbeat: Linux booted successfully and all
+   services available).
 
 You can change the function of the green and red LED. They can also 
-:ref:`show cpu or sd card usage <red_brick_brick_settings_brickd>` instead of a 
+:ref:`show CPU or SD card usage <red_brick_brick_settings_brickd>` instead of a
 heartbeat.
 
 .. _red_brick_micro_sd_card_slot:
@@ -754,11 +768,11 @@ A description of the images can be found in the
 
 .. _red_brick_usb_host:
 
-USB-2.0-Host
+USB 2.0 Host
 ^^^^^^^^^^^^
 
 The RED Brick is equipped with a standard 
-`USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mbps) type A jack. It can
+`USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mb/s) type A jack. It can
 power other USB devices with up to 7.5W (5V/1.5A) and is short circuit 
 protected. Both, full and fast image are based on Debian Linux and support 
 typical USB devices like WIFI or Ethernet dongles, webcams, printers, keyboards, 
@@ -809,11 +823,11 @@ such that two RS485 or two Ethernet Extension can't be used.
 The :ref:`WIFI Extension <wifi_extension>` is currently not supported. We 
 recommend to use a USB WIFI dongle to add WIFI connectivity to the RED Brick. 
 
-The Ethernet Extension shows up as a
-normal Ethernet interface in the underlying Linux system.
+The Ethernet Extension shows up as a normal Ethernet interface in the
+underlying Linux system.
 
-A :ref:`Step-Down Power Supply <step_down_power_supply>` can be put below the RED Brick and can 
-power the whole stack.
+A :ref:`Step-Down Power Supply <step_down_power_supply>` can be put below the
+RED Brick and can power the whole stack.
 
 GPIO Header
 ^^^^^^^^^^^
@@ -824,7 +838,7 @@ GPIO Header
    Currently there is no software support for any of the functions of this 
    GPIO connector.
 
-The RED Brick is equipped with a 21 pin, 0.25mm pitch, FPC GPIO connector
+The RED Brick is equipped with a 21 pin (0.25mm pitch) FPC GPIO connector
 (Molex 502078-2110).
 
 All signals of Port E of the A10s processor are connected to this GPIO 

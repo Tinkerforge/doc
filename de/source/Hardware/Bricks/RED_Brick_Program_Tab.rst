@@ -7,8 +7,8 @@
 
 .. _red_brick_program_tab:
 
-RED Brick Program Tab
-=====================
+RED Brick - Program Tab
+=======================
 
 
 Beschreibung
@@ -234,7 +234,7 @@ Java
    :align: center
 
 Die Tinkerforge.jar Bindings sind unter 
-``/usr/tinkerforge/bindings/java/`` installiert. Die Datei ist zum Classpath
+``/usr/tinkerforge/bindings/java/`` installiert. Die Datei ist zum Class Path
 hinzugefügt, so dass die Tinkerforge Klassen nur importiert werden müssen.
 Z.B. mittels ``import com.tinkerforge.IPConnection;``.
 
