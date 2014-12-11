@@ -156,8 +156,8 @@ brick_descriptions = {
     'de': 'Ist Grundlage um Stapel zu bauen und bietet 4 Bricklet Anschlüsse'
     },
 'red': {
-    'en': 'FIXME',
-    'de': 'FIXME'
+    'en': 'Executes user programs standalone',
+    'de': 'Führt Nutzerprogramme eigenständig aus'
     },
 'servo': {
     'en': 'Drives up to 7 RC Servos with max. 3A',
