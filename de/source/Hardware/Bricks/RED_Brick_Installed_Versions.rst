@@ -52,8 +52,8 @@ und können direkt verwendet werden.
 Wenn eine Bibliothek fehlt, die vorinstalliert sein sollte, schreib uns eine
 Email (info@tinkerforge.com). In dieser sollte der Ort stehen an dem wir
 die Bibliothek finden und eine Beschreibung wie man diese installiert. Am 
-einfachsten wäre es, wenn diese direkt in dem Debian wheezy Repository 
-verfügbar wäre.
+einfachsten wäre es, wenn diese direkt im Debian wheezy Repository verfügbar
+wäre.
 
 Installierte Bibliotheken
 -------------------------
@@ -71,4 +71,3 @@ Installierte Bibliotheken
 .. include:: RED_Brick_python_features.table
 
 .. include:: RED_Brick_ruby_features.table
-

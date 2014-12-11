@@ -509,7 +509,7 @@ Bindings. They are available in the root directory, import them with::
  <script src="/Tinkerforge.js" type='text/javascript'></script>
 
 Note that the JavaScript is executed in the browser of the user and not
-on the RED Brick, so you have to connect to the IP of the RED Brick,
+on the RED Brick, so you have to connect to the IP address of the RED Brick,
 not localhost!
 
 Python
@@ -525,7 +525,9 @@ preinstalled on the RED Brick (including
 `Jinja <http://jinja.pocoo.org/>`__).
 
 A minimal flask web interface that can be uploaded to the RED Brick
-is an ``index.py`` with the following content::
+is an ``index.py`` with the following content:
+
+.. code-block:: python
 
  from flask import Flask       # Use Flask framework
  application = Flask(__name__) # Function "application" is used by Apache/wsgi
@@ -555,7 +557,9 @@ PHP
 
 The webserver on the RED Brick is configured to recognize an ``index.php``.
 
-An minimal hello world index.php might look like this::
+An minimal hello world ``index.php`` might look like this:
+
+.. code-block:: php
 
  <?php $greeting = 'Hello World!'; ?>
 
@@ -582,7 +586,7 @@ RED Brick Software Images
 
 The RED Brick software image is stored on a Micro-SD-Card. It is a modified
 `Debian <http://www.debian.org/>`__ image and available in two different 
-versions: The ''full'' and the ''fast'' image. Both images support the 
+versions: The "full" and the "fast" image. Both images support the
 execution of your code and come with the full suite of Tinkerforge
 libraries. 
 
@@ -628,12 +632,12 @@ Build your Own Image
 For the building steps we are assuming a `Debian Linux <https://www.debian.org/>`__
 or derivative (Ubuntu etc) as the host platform.
 
-1. Check out RED Brick Git::
+1. Clone RED Brick Git::
 
     git clone https://github.com/Tinkerforge/red-brick
 
-2. Move into the folder *image*, open the README.rst file and execute the documented 
-   steps.
+2. Move into the folder ``image``, open the ``README.rst`` file and execute the
+   documented  steps.
 
 The build process will take at least 4-6 hours, depending on the processing power
 of your PC it might also take considerably longer.
@@ -644,12 +648,12 @@ of your PC it might also take considerably longer.
 Copy Image to SD Card
 ^^^^^^^^^^^^^^^^^^^^^
 
-1. Download the 
-   :ref:`full image or the fast image <red_brick_images>` from the RED Brick:
-   :ref:`Download page  <downloads>`.
+1. Download the :ref:`full image or the fast image <red_brick_images>` from the
+   RED Brick: :ref:`Download page <downloads>`.
 
-2. Choose a suitable Micro-SD card. We recommend a fast SD card (e.g. class 10, > 30MB/sec. read) 
-   with enough space. You can find the size of the image on the download page.
+2. Choose a suitable Micro-SD card. We recommend a fast SD card
+   (e.g. class 10, > 30MB/s read) with enough space. You can find the size of
+   the image on the download page.
 
 3. Transfer the image to the SD card:
 
@@ -662,9 +666,9 @@ Copy Image to SD Card
 
         * Connect the SD card to your PC 
         * Identify the path to your SD card (e.g. dmesg)
-        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=1M
+        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=64M
 
-            * e.g.: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
+            * e.g.: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=64M``
 
 .. _red_brick_change_password:
 

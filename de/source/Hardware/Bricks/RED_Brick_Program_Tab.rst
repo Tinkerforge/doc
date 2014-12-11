@@ -31,7 +31,7 @@ werden:
 * **Delete**: Löscht das ausgewählte Programm
 
 Nachdem das erste eigene Programm hochgeladen wurde, kann dieses ausgewählt 
-werden. Auf der rechten Seite werden dann Informationen zu dem Programm 
+werden. Auf der rechten Seite werden dann Informationen zum Programm
 angezeigt. Dazu gehört die Programm-Konfiguration, die geändert werden kann
 und die Logs des Programms.
 
@@ -70,7 +70,7 @@ Wizard Schritt 2: Dateien
   und Unterordner hinzu.
 * **Remove**: Löscht die selektierte Datei oder Ordner.
 
-Die hierarchische Struktur die hier definiert wird, wird eins zu eins auf dem
+Die hierarchische Struktur die hier definiert wird, wird eins-zu-eins auf dem
 RED Brick genutzt.
 
 Wenn als Beispiel eine kleine Webseite, die mit Python/Flask geschrieben wurde, 
@@ -89,8 +89,8 @@ mit folgender Struktur hochgeladen werden soll
     * static.css
     * static.js
 
-und sowohl index.py als auch die beiden Ordner in dem Root Verzeichnis seien 
-sollen, muss als erstes die index.py mit **Add files** hinzugefügt werden. 
+und sowohl index.py als auch die beiden Ordner im Root Verzeichnis seien
+sollen, muss als erstes die index.py mit **Add Files** hinzugefügt werden.
 Anschließend muss jedes Unterverzeichnis einzelnd mit **Add Directory** 
 hinzugefügt werden.
 
@@ -98,10 +98,13 @@ Jedes "Add" fügt etwas zum Root Verzeichnis des RED Brick Programms hinzu.
 
 Je nach gewählter Sprache können verschiedene Dateien hochgeladen werden:
 
-* Bei JavaScript, Perl, PHP, Python und Ruby können die Script-Dateien hochgeladen werden (z.B.: .js, .pl, .php, .py, .rb)
-* Bei Java, C# und Visual Basic .NET müssen bereits kompilierte Dateien hochgeladen werden (z.B.: .jar, .class, .exe)
-* Bei C/C++ und Delphi/Lazarus kann eine cross-kompilierte ausführbare Datei (executable) oder eine Makefile mit Source Code hochgeladen werden (siehe folgende Beschreibung)
-
+* Bei JavaScript, Perl, PHP, Python und Ruby können die Script-Dateien
+  hochgeladen werden (z.B.: .js, .pl, .php, .py, .rb)
+* Bei Java, C# und Visual Basic .NET müssen bereits kompilierte Dateien
+  hochgeladen werden (z.B.: .jar, .class, .exe)
+* Bei C/C++ und Delphi/Lazarus kann eine cross-kompilierte ausführbare Datei
+  (Executable) oder eine Makefile mit Source Code hochgeladen werden (siehe
+  folgende Beschreibung)
 
 
 Wizard Schritt 3: Sprachen spezifische Konfiguration
@@ -130,7 +133,7 @@ die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
   es ist der Name der ausführbaren Datei, die während des Kompilierens erstellt 
   wird.
 * Compile From Source: Wird diese Checkbox aktiviert, so wird der Code nach dem
-  Hochladen kompiliert. Eine **Makefile** muss in dem Projekt enthalten sein, damit 
+  Hochladen kompiliert. Eine **Makefile** muss im Projekt enthalten sein, damit
   diese Option genutzt werden kann. Nachfolgend eine Beispiel-Makefile für ein 
   kleines  Projekt, das die Tinkerforge Bindings benutzt und die Datei
   **example.c** kompiliert::
@@ -183,7 +186,7 @@ kompiliert werden.
   ausgeführt. Die Datei kann auch unter Windows mit Visual Studio kompiliert 
   und auf dem RED Brick mit Mono ausgeführt werden, dabei muss allerdings darauf
   geachtet werden, dass keine Windows spezifischen Bibliotheken genutzt werden, 
-  die auf dem   RED Brick nicht verfügbar sind.
+  die auf dem RED Brick nicht verfügbar sind.
 * Working Directory: Spezifiziert das 
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__ 
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
@@ -242,7 +245,7 @@ Z.B. mittels ``import com.tinkerforge.IPConnection;``.
     Class Dateien, die in Schritt 2 hinzugefügt wurden und gibt eine Liste aller
     Klassen die eine "main"-Methode enthalten und genutzt werden können um das 
     Programm zu starten.
-  * JAR File: Wenn eine JAR Datei von dem Programm erstellt wurde, kann auch von
+  * JAR File: Wenn eine JAR Datei vom Programm erstellt wurde, kann auch von
     dieser aus das Programm direkt gestartet werden. Die verfügbaren JAR Dateien
     werden in einer Drop-Down Box gelistet.
 * Class Path: Hier können Dateien zum Class Path hinzugefügt werden. Alle JARs,
@@ -426,7 +429,7 @@ importieren, z.B. ``require 'tinkerforge/ip_connection'``.
 
 * Ruby Version: Aktuell ist nur eine Ruby Interpreter Version auf dem RED Brick
   installiert.
-* Start Mode **Script File** und **Command** stehen zur Verfügung
+* Start Mode **Script File** und **Command** stehen zur Verfügung.
 
   * Start Mode *Script File*: Spezifiziert eine Skriptdatei die vom Ruby 
     Interpreter ausgeführt werden soll.
@@ -539,9 +542,8 @@ kannst du vermutlich einfach **Next** klicken.
 * Standard Input:
  
   * /dev/null: Das Programm nutzt keine Eingaben.
-  * Pipe: Wenn Pipe ausgewählt wird, können Eingaben an das Programm mit dem
-    Brick Viewer (:w
-			Stdio Redirect des Program Tabs) gesendet 
+  * Pipe: Wenn Pipe ausgewählt wird, können Eingaben ans Programm mit dem
+    Brick Viewer (Stdio Redirect des Program Tabs) gesendet
     werden. Viele unserer Beispiele warten auf Eingaben vom Nutzer und reagieren
     nur auf Callbacks. Wenn du Programme dieser Art nutzt wähle *Pipe* als
     Standard Input.
@@ -571,11 +573,11 @@ Wizard Schritt 6: Schedule
    :align: center
 
 * Mode *Never*: Der Scheduler des RED Bricks wird nicht benutzt. Das Programm
-  kann nur manuell in dem Program Tab des Brick Viewers gestartet werden.
+  kann nur manuell im Program Tab des Brick Viewers gestartet werden.
 * Mode *Always*: Der Scheduler versucht immer das Programm am laufen zu halten.
   Wenn das Programm beendet wird, so wird es direkt wieder gestartet. Dies ist
   insbesondere für Kontroll-Programme sinnvoll, die permanent laufen sollen.
-* Mode *Interval*: Hier kann ein Intervall (in Sekunden) definiert werden in dem
+* Mode *Interval*: Hier kann ein Intervall (in Sekunden) definiert werden im
   das Programm ausgeführt werden soll.
 * Mode *Cron*: Nutze `cron <http://de.wikipedia.org/wiki/Cron>`__ um die 
   Programmausführung zu planen. Cron ist ein *zeitbasierter* Aufgaben Scheduler.
@@ -597,15 +599,17 @@ Wizard Schritt 6: Schedule
   Zur Nutzung von Cron ist die aktuelle Uhrzeit notwendig. Der RED Brick verfügt 
   aber über keine Uhr, die weiterläuft wenn der Brick heruntergefahren 
   wurde. Verfügt der RED Brick eine Verbindung zum Internet, so werden Datum und
-  Uhrzeit neu gesetzt (mittels NTP). Sie können auch manuell in dem Date/Time
+  Uhrzeit neu gesetzt (mittels NTP). Sie können auch manuell im Date/Time
   Abschnitt des Settings Tab gesetzt werden. Alternativ kann auch das GPS 
   Bricklet genutzt werden um 
   `die Uhrzeit mittels GPS zu synchronisieren <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__.
 
 * Mode *Once After Startup*: Der Scheduler führt das Programm nur einmal nach 
   dem Hochladen aus.
-* Continue After Error: Der Scheduler startet das Programm nicht neu, wenn es 
-  mit einem Fehler beendet wurde, wenn diese Checkbox deaktiviert wird.
+* Continue After Error: Wenn diese Checkbox nicht aktiviert ist, dann stoppt
+  der Scheduler wenn das Programm mit einem Fehler beendet wurde. Wenn diese
+  Checkbox aktiviert ist, dann werden Fehler ignoriert.
+
 
 Wizard Schritt 7: Zusammenfassung
 ---------------------------------

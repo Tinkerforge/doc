@@ -192,15 +192,15 @@ Erste Schritte / Teste den RED Brick
 
 Mit den folgenden Schritten kann der RED Brick getestet werden.
 
-Ein Schritt für Schritt Tutorial zu dem RED Brick kann hier gefunden werden:
+Ein Schritt für Schritt Tutorial zum RED Brick steht ebenfalls bereit:
 :ref:`RED Brick Tutorial <tutorial_red_brick>`.
 
 Als erstes müssen :ref:`Brick Daemon <brickd>` und :ref:`Brick Viewer <brickv>`
 Software auf einem PC oder Mac installiert werden. Anschließend sollte die 
 Micro-SD-Karte in den :ref:`Micro-SD-Kartenslot <red_brick_micro_sd_card_slot>` des
-RED Bricks gesteckt werden. Die Position von diesem und eine Übersicht über
-alle Schnittstellen des Bricks lässt sich in dem 
-:ref:`Hardware Abschnitt <red_brick_hardware>` finden. Es können `SD Karten mit 
+RED Bricks gesteckt werden. Dessen Position und eine Übersicht aller
+Schnittstellen des Bricks gibt es im
+:ref:`Hardware Abschnitt <red_brick_hardware>`. Es können `SD Karten mit
 vorinstalliertem Image <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__ 
 in unserem Shop bestellt werden. Ansonsten
 muss ein :ref:`Image auf eine SD Karte kopiert werden <red_brick_copy_image>`.
@@ -214,13 +214,13 @@ Mini-USB Kabel verbunden werden.
    :align: center
    :target: ../../_images/Bricks/brick_red_mini_usb_800.jpg
 
-Nachdem die Brick Viewer Software gestartet wurde muss auf "connect" geklickt 
+Nachdem die Brick Viewer Software gestartet wurde muss auf "Connect" geklickt
 werden. Ein Tab (Reiter), beschriftet mit "RED Brick", sollte auftauchen. Diesen
 Tab anklicken.
 
 Auf der linken Seite des Tabs sind weitere Tabs vorhanden. Der "Overview" Tab 
 gibt eine Übersicht über die Auslastung der CPU, die Speicherbelegung und 
-andere Statusinformationen. Erscheinen diese Anzeigen, so beudeted dies, dass 
+andere Statusinformationen. Erscheinen diese Anzeigen, so bedeute dies, dass
 der RED Brick wie erwartet funktioniert und Programme hochgeladen werden 
 können. Im :ref:`Brick Viewer Abschnitt <red_brick_brickv>` wird beschrieben, 
 wie der RED Brick konfiguriert werden kann und wie Programme hochgeladen werden.
@@ -301,19 +301,19 @@ Settings Tab (Netzwerk, Brick Daemon, Datum/Uhrzeit)
 
 .. _red_brick_brick_settings_network:
 
-In dem **Network** Abschnitt dieses Tabs können alle Einstellungen zu Netzwerken
+Im **Network** Abschnitt dieses Tabs können alle Einstellungen zu Netzwerken
 vorgenommen werden.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_network.jpg
    :scale: 60 %
-   :alt: Screenshot of settings tab showing network configurations.
+   :alt: Screenshot des Settings Tabs: Netzwerk Konfiguration.
    :align: center
 
 Der *Current Network Status* Abschnitt zeigt den Status der konfigurierten und 
-aktuell genutzen Netzwerkschnittstelle an. Der angezeigte Status wird 
+aktuell genutzten Netzwerkschnittstelle an. Der angezeigte Status wird
 automatisch alle 3 Sekunden aktualisiert.
 
-Die genutzte Schnittstelle kann in dem *Configuration* Abschnitt konfiguriert 
+Die genutzte Schnittstelle kann im *Configuration* Abschnitt eingestellt
 werden. Als erstes muss die Schnittstelle gewählt werden (Ein USB Ethernet Stick
 wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein USB WIFI Stick 
 als ``wlanX`` angezeigt (X ist eine Zahl). Abhängig von der gewählten 
@@ -329,15 +329,15 @@ statischer IP gewählt werden. Klicke anschließend *Connect*.
 Nachdem eine WLAN Schnittstelle gewählt wurde, können WLAN-Netze durch Klicken
 auf den *Scan* Button gesucht werden. Dies dauert ein paar Sekunden.
 
-Wähle den gewünschten Accesspoint und gebe den dazugehörigen Key ein. 
-Anschließend muss nur noch zwischen DHCP oder statischer IP Address gewählt 
+Wähle den gewünschten Access Point und gebe den dazugehörigen Key ein.
+Anschließend muss nur noch zwischen DHCP oder statischer IP Adresse gewählt
 werden. Durch Klicken auf *Connect* wird die Verbindung zum Netzwerk 
 hergestellt. Unterstützte USB WLAN Sticks finden sich in unserem 
 `Shop <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__.
 
 .. _red_brick_brick_settings_brickd:
 
-In dem **Brick Daemon Abschnitt** des Tabs können Einstellungen zum lokalen 
+Im **Brick Daemon Abschnitt** des Tabs können Einstellungen zum lokalen
 Brick Daemon vorgenommen werden.
 
 
@@ -350,13 +350,13 @@ Zu den Konfigurationsmöglichkeiten gehören die Adresse auf dem der Brick Daemo
 lauscht, der dazugehörige Port, der Port für die Nutzung von Websockets und 
 das Authentifizierungsgeheimnis. WebSockets werden von der Browser-Version der 
 :ref:`JavaScript Bindings <api_bindings_javascript>` verwendet um Bricks und 
-Bricklets zu steuern. Weitere Einstellungen können in dem *Advanced* Abschnitt
-gefunden werden. Die Nutzung der roten und grünen LED kann auch hier 
-konfiguriert werden.
+Bricklets zu steuern. Weitere Einstellungen befinden sich im *Advanced*
+Abschnitt. Die Nutzung der roten und grünen LED kann auch hier konfiguriert
+werden.
 
 .. _red_brick_brick_settings_date:
 
-In dem **Date/Time Abschnitt** kann die Uhr des RED Bricks, mit der Uhr des
+Im **Date/Time Abschnitt** kann die Uhr des RED Bricks, mit der Uhr des
 angeschlossenen PCs, synchronisiert werden. Es gibt keine Batterie auf dem RED 
 Brick, so dass die Uhr nicht weiterläuft, wenn der RED Brick nicht aktiv ist.
 
@@ -382,8 +382,8 @@ mittels GPS Uhrzeit zu synchronisieren.
 Program Tab (Programme hochladen und ausführen)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Beschreibung des Tabs kann auf einer
-:ref:`separaten Seite <red_brick_program_tab>` gefunden werden.
+Die Beschreibung des Tabs befindet auf einer
+:ref:`separaten Seite <red_brick_program_tab>`.
 
 .. _red_brick_brickv_console:
 
@@ -405,15 +405,14 @@ sein die ENTER Taste zu drücken um die Kommandozeile zu sehen.
 Nachfolgend ein Screenshot, das die Konsole bei der Ausführung des Befehls 
 ``htop`` zeigt.
 
-
 .. image:: /Images/Screenshots/brickv_red_tab_console.jpg
    :scale: 60 %
    :alt: Screenshot des Console Tab.
    :align: center
 
-Ein gutes Shell Tutorial kann unter 
+Ein gutes Shell Tutorial steht auf
 `linuxcommand.org <http://linuxcommand.org/lc3_learning_the_shell.php>`__ 
-gefunden werden.
+zur Verfügung.
 
 .. _red_brick_brickv_versions_tab:
 
@@ -478,7 +477,7 @@ RED Brick Web Interface
 
 Wenn der RED Brick mit einem USB WLAN Stick, einer Ethernet Extension oder einer
 anderen Netzwerkverbindung ausgestattet ist, kann auf das Web Interface 
-zugegriffen werden. Das Web Interface is unter der IP Adresse des RED Bricks 
+zugegriffen werden. Das Web Interface ist unter der IP Adresse des RED Bricks
 oder unter dessen Hostnamen (Voreinstellung: ``red-brick``) erreichbar.
 
 Das RED Brick Web Interface zeigt die installierten Programme, deren Logs und
@@ -490,15 +489,15 @@ Konfiguration, als auch die hochgeladenen Dateien.
    :align: center
 
 Neben dem vorinstallierten Web Interface können auch eigene installiert werden.
-Es werden Webanwendungen, die in HTML/Javascript, Python oder PHP geschrieben
+Es werden Webanwendungen, die in HTML/JavaScript, Python oder PHP geschrieben
 sind, unterstützt. Wenn eine ``index.py``, ``index.php`` oder ``index.html`` 
 Datei hochgeladen wird, so wird diese als Index Datei des binary Ordners genutzt.
 
 **Beispiel zur Erklärung:** Es soll eine PHP Webseite entwickelt werden, die 
 Bricks/Bricklets steuert. Dazu wird das PHP Programm ``EXAMPLE`` mit der ID 
-``EXAMPLEID`` hochgeladen, das eine index.php als Startpunkt enthält. Wird 
+``EXAMPLE-ID`` hochgeladen, das eine index.php als Startpunkt enthält. Wird
 anschließend das RED Brick Web Interface aufgerufen und der "Bin" Button der 
-``EXAMPLE`` Anwendung geklickt, so wird der Link zu ``/programs/EXAMPLEID/bin`` 
+``EXAMPLE`` Anwendung geklickt, so wird der Link zu ``/programs/EXAMPLE-ID/bin``
 geöffnet. Dieser Link führt direkt die index.php aus, da diese als Index Datei
 des Verzeichnisses fungiert.
 
@@ -509,7 +508,7 @@ Aktoren, zum Beispiel ein Relay Bricklet, über Buttons gesteuert werden.
 Mit dem RED Brick ist es also sehr einfach Web-Anwendungen zu entwickeln, die
 Hardware steuern.
 
-HTML/Javascript
+HTML/JavaScript
 ^^^^^^^^^^^^^^^
 
 Wenn eine HTML Datei mit eingebettetem JavaScript hochgeladen wird, können die 
@@ -519,8 +518,8 @@ verfügbar.
  <script src="/Tinkerforge.js" type='text/javascript'></script>
 
 Das JavaScript wird im Browser des Benutzers ausgeführt und nicht auf dem RED 
-Brick. Aus diesem Grund muss sich mit der IP des RED Bricks verbunden werden
-und nicht mit localhost!
+Brick. Aus diesem Grund muss sich mit der IP Adresse des RED Bricks verbunden
+werden und nicht mit localhost!
 
 Python
 ^^^^^^
@@ -534,7 +533,9 @@ ist auf dem RED Brick vorinstalliert (beinhaltet
 `Jinja <http://jinja.pocoo.org/>`__).
 
 Ein minimales Flask Web Interface, das auf den RED Brick hochgeladen werden kann,
-ist eine ``index.py`` mit folgenden Inhalt::
+ist eine ``index.py`` mit folgenden Inhalt:
+
+.. code-block:: python
 
  from flask import Flask       # Use Flask framework
  application = Flask(__name__) # Function "application" is used by Apache/wsgi
@@ -552,14 +553,17 @@ Bindings, wie bei jedem Python Programm, eingebunden werden::
  # ...
 
 Das standardmäßig installierte Web Interface auf dem RED Brick nutzt 
-Python/Flask. Der Code kann auf
-`Github <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__
-gefunden werden.
+Python/Flask. Der Code steht auf
+`GitHub <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__
+zur Verfügung.
 
 Es können natürlich auch Templates, statische Dateien und so weiter benutzt 
 werden. Diese können genauso benutzt werden wie in den meisten Flask Tutorials
-gezeigt. Ein `etawas komplexeres Flask Beispiel <TODO>`__, dass mehr
-Features nutzt, liegt ebenfalls auf Github.
+gezeigt.
+
+..
+  Ein `etwas komplexeres Flask Beispiel <TODO>`__, dass mehr
+  Features nutzt, liegt ebenfalls auf GitHub.
 
 PHP
 ^^^
@@ -567,7 +571,9 @@ PHP
 Der Webserver auf dem RED Brick ist dazu eingerichtet eine ``index.php`` zu 
 erkennen.
 
-Eine minimale Hallo Welt index.php könnte wie folgt aussehen::
+Eine minimale Hallo Welt ``index.php`` könnte wie folgt aussehen:
+
+.. code-block:: php
 
  <?php $greeting = 'Hello World!'; ?>
 
@@ -595,7 +601,7 @@ RED Brick Software Images
 
 Das RED Brick Software Image ist auf einer Micro-SD-Karte gespeichert. Es ist 
 ein modifiziertes `Debian <http://debian.org/>`__ Image und in zwei 
-verschiedenen Versionen erhältlich: Das ''Full'' und das ''Fast'' Image. Beide
+verschiedenen Versionen erhältlich: Das "Full" und das "Fast" Image. Beide
 Images unterstützen die Ausführung von eigenen Programmen und verfügen über alle
 notwendigen Tinkerforge Bibliotheken.
 
@@ -620,9 +626,8 @@ Neue Software kann in beiden Images installiert werden. Siehe die
 `Beschreibung des Versions Tab <red_brick_brickv_versions_tab>`__, 
 wie neue Software installiert wird.
 
-Eine Liste der vorinstallierten Bibliotheken kann hier gefunden werden:
-
-* :ref:`Installierte Bibliotheken (Fast und Fast Image) <red_brick_installed_versions>`.
+Eine Liste der vorinstallierten Bibliotheken steht zur Verfügung:
+:ref:`Installierte Bibliotheken (Fast und Fast Image) <red_brick_installed_versions>`.
 
 Der Nutzer **tf** ist der Standardnutzer auf den Images. Beim Einloggen über die
 Konsole oder in LXDE kann dieser Nutzer mit dem Standardpasswort **tf** benutzt
@@ -640,11 +645,11 @@ Baue dein eigenes Image
 Bei dieser Anleitung nehmen wir an, dass ein 
 `Debian Linux <https://www.debian.org/>`__ als Host Plattform genutzt wird.
 
-1. RED Brick Git auschecken::
+1. RED Brick Git clonen::
 
     git clone https://github.com/Tinkerforge/red-brick
 
-2. In den Ordner *image* gehen, die Datei README.rst öffnen und die 
+2. In den Ordner ``image`` wechseln, die Datei ``README.rst`` öffnen und die
    dokumentierten Schritte durchführen.
 
 Das Bauen eines Images kann 4-6 Stunden dauern, abhängig von der 
@@ -661,8 +666,8 @@ Image auf SD Karte kopieren
    :ref:`Download-Seite <downloads>` herunterladen.
 
 2. Eine geeignete Micro-SD-Karte suchen. Wir empfehlen eine schnelle Karte
-   (z.B. Class 10, >30MB/sek. Lesen) mit genügend Speicherplatz. Die Größe 
-   des Images steht ebenfall auf der Downloadseite.
+   (z.B. Class 10, > 30MB/s Lesen) mit genügend Speicherplatz. Die Größe
+   des Images steht ebenfalls auf der Downloadseite.
 3. Das Image auf die SD Karte kopieren:
 
     * Für Windows nutze ein Tool wie Win32DiskImager um das Image auf die Karte zu kopieren.
@@ -674,9 +679,9 @@ Image auf SD Karte kopieren
 
         * Verbinde die SD Karte mit dem PC 
         * Identifiziere den Pfad zu der SD Karte (z.B. dmesg)
-        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=1M
+        * sudo dd if=path_of_your_image.img of=path_to_sdcard bs=64M
 
-            * Beispiel: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=1M``
+            * Beispiel: ``dd if=/tmp/red_full_image.img of=/dev/sdb bs=64M``
 
 .. _red_brick_change_password:
 
@@ -744,7 +749,7 @@ Ein normaler Bootvorgang verläuft wie folgt:
 1. Blaue und rote LED sind an, Grüne LED ist aus.
 2. Rote LED geht aus (U-Boot geladen).
 3. Grüne LED geht an (Linux bootet).
-4. Grüne LED blinkt (heartbeat) (Linux erfolgreich gestartet, alle Services laufen).
+4. Grüne LED blinkt (Heartbeat) (Linux erfolgreich gestartet, alle Services laufen).
 
 Die Funktion der grünen und der roten LED kann geändert werden. Diese können zum 
 Beispiel die Ausnutzung der 
@@ -763,8 +768,8 @@ unterstützt. Wir empfehlen als Minimum eine Class 10 Micro-SD-Karte mit
 einer Leserate von mindestens 30MB/s um schnelle Lese- und 
 Schreibvorgänge zu ermöglichen.
 
-Eine Beschreibung der Images kann in dem
-:ref:`Image Abschnitt <red_brick_images>` gefunden werden.
+Eine Beschreibung der Images befindet sich im
+:ref:`Image Abschnitt <red_brick_images>`.
 
 .. _red_brick_usb_host:
 

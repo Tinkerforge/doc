@@ -79,7 +79,7 @@ Aktoren, wie Relais, ganz nach den eigenen Bedürfnissen aufgebaut werden.
 
 Als zweites kann der Master Brick für Kommunikationsaufgaben genutzt werden.
 Wird ein :ref:`Stapel <primer_stack>` von Bricks aufgebaut so arbeitet der 
-unterste Brick als Master des Stapels und leitet Daten von dem steuernden Gerät 
+unterste Brick als Master des Stapels und leitet Daten vom steuernden Gerät
 an die Platinen des Stapels weiter. Andere Master Bricks im Stapel erkennen, 
 dass sie nicht als Master eingesetzt sind und stellen nur ihre angeschlossenen 
 Bricklets zur Verfügung. Es ist also nur eine USB Verbindung, die des untersten 
