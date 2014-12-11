@@ -642,7 +642,7 @@ download_firmwares_table_head = {
  {1}""",
 'de':
 """.. csv-table::
- :header: "", "Downloads","Version",  "Archiv", "Changelog"
+ :header: "", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
  :widths: 17, 32, 5, 5, 8
 

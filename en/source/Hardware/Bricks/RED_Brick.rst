@@ -620,8 +620,7 @@ you can get root access by calling::
 
  sudo su
 
-The images can be downloaded from the:
-:ref:`download page <downloads>`.
+The images can be downloaded from the :ref:`download page <downloads_red_images>`.
 
 
 .. _red_brick_build_image:
@@ -649,7 +648,7 @@ Copy Image to SD Card
 ^^^^^^^^^^^^^^^^^^^^^
 
 1. Download the :ref:`full image or the fast image <red_brick_images>` from the
-   RED Brick: :ref:`Download page <downloads>`.
+   RED Brick: :ref:`Download page <downloads_red_images>`.
 
 2. Choose a suitable Micro-SD card. We recommend a fast SD card
    (e.g. class 10, > 30MB/s read) with enough space. You can find the size of

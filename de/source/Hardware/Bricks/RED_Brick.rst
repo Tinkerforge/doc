@@ -636,7 +636,7 @@ werden. Der Nutzer ist ein sudoer, so dass Root-Zugriff mittels::
  sudo su
 
 erhalten werden kann. Die Images können von der
-:ref:`Download Seite <downloads>` herunter geladen werden.
+:ref:`Download Seite <downloads_red_images>` herunter geladen werden.
 
 .. _red_brick_build_image:
 
@@ -663,7 +663,7 @@ Image auf SD Karte kopieren
 
 1. Das
    :ref:`Full Image oder Fast Image <red_brick_images>` von der RED Brick:
-   :ref:`Download-Seite <downloads>` herunterladen.
+   :ref:`Download-Seite <downloads_red_images>` herunterladen.
 
 2. Eine geeignete Micro-SD-Karte suchen. Wir empfehlen eine schnelle Karte
    (z.B. Class 10, > 30MB/s Lesen) mit genügend Speicherplatz. Die Größe
