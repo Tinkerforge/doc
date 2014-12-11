@@ -1,30 +1,30 @@
 Mono
 ----
-====================== ================= =========================================================================================== ====
-Name                   Version           Description                                                                                 full
-====================== ================= =========================================================================================== ====
-MathNet.Numerics       3.0.1             Methods and algorithms for numerical computations in science, engineering and every day use |c|
-MySQL_Oracle_Connector 6.8.3             Oracle corporation driver for MySQL                                                         |c|
-OpenTK                 1.1.1631.6093     The Open Toolkit is an advanced, low-level C# library that wraps OpenGL, OpenCL and OpenAL  |c|
-SharpPcap              4.2.0             Packet capture framework based on the famous pcap/WinPcap libraries                         |c|
-XML-RPC.NET            2.5.0             Library for implementing XML-RPC services and clients                                       |c|
-gtk-sharp2             2.12.10-5         GTK# 2.10 suite, CLI bindings for GTK+                                                      |c|
-iTextSharp             5.5.1             Library that provides support of PDF document manipulation                                  |c|
-libmono-2.0-1          3.2.8+dfsg-4+rpi1 Mono JIT library (Default version)                                                          |c|
-libmono-cil-dev        3.2.8+dfsg-4+rpi1 Mono Base Class Libraries (BCL) - Development files                                         |c|
-libmono-profiler       3.2.8+dfsg-4+rpi1 Mono profiler libraries                                                                     |c|
-mono-2.0-gac           3.2.8+dfsg-4+rpi1 Mono GAC tool (for CLI 2.0)                                                                 |c|
-mono-2.0-service       3.2.8+dfsg-4+rpi1 Mono service manager for CLI 2.0                                                            |c|
-mono-4.0-gac           3.2.8+dfsg-4+rpi1 Mono GAC tool (for CLI 4.0)                                                                 |c|
-mono-4.0-service       3.2.8+dfsg-4+rpi1 Mono service manager for CLI 4.0                                                            |c|
-mono-csharp-shell      3.2.8+dfsg-4+rpi1 interactive C# shell                                                                        |c|
-mono-devel             3.2.8+dfsg-4+rpi1 Mono development tools                                                                      |c|
-mono-dmcs              3.2.8+dfsg-4+rpi1 Mono C# 4.0 compiler for CLI 4.0 (transitional package)                                     |c|
-mono-gmcs              3.2.8+dfsg-4+rpi1 Mono C# 2.0 and C# 3.0 compiler for CLI 2.0 (transitional package)                          |c|
-mono-jay               3.2.8+dfsg-4+rpi1 LALR(1) parser generator oriented to Java/CLI                                               |c|
-mono-mcs               3.2.8+dfsg-4+rpi1 Mono C# 2.0 / 3.0 / 4.0 / 5.0  compiler for CLI 2.0 / 4.0 / 4.5                             |c|
-mono-runtime           3.2.8+dfsg-4+rpi1 Mono runtime - default version                                                              |c|
-mono-runtime-sgen      3.2.8+dfsg-4+rpi1 Mono runtime - SGen                                                                         |c|
-mono-utils             3.2.8+dfsg-4+rpi1 Mono utilities                                                                              |c|
-mono-vbnc              2.10-2            Mono Visual Basic Compiler (VB.NET)                                                         |c|
-====================== ================= =========================================================================================== ====
+====================== ================= =========================================================================================== ==== ====
+Name                   Version           Description                                                                                 fast full
+====================== ================= =========================================================================================== ==== ====
+MathNet.Numerics       3.0.1             Methods and algorithms for numerical computations in science, engineering and every day use |c|  |c|
+MySQL_Oracle_Connector 6.8.3             Oracle corporation driver for MySQL                                                         |c|  |c|
+OpenTK                 1.1.1631.6093     The Open Toolkit is an advanced, low-level C# library that wraps OpenGL, OpenCL and OpenAL       |c|
+SharpPcap              4.2.0             Packet capture framework based on the famous pcap/WinPcap libraries                         |c|  |c|
+XML-RPC.NET            2.5.0             Library for implementing XML-RPC services and clients                                       |c|  |c|
+gtk-sharp2             2.12.10-5         GTK# 2.10 suite, CLI bindings for GTK+                                                           |c|
+iTextSharp             5.5.1             Library that provides support of PDF document manipulation                                  |c|  |c|
+libmono-2.0-1          3.2.8+dfsg-4+rpi1 Mono JIT library (Default version)                                                          |c|  |c|
+libmono-cil-dev        3.2.8+dfsg-4+rpi1 Mono Base Class Libraries (BCL) - Development files                                         |c|  |c|
+libmono-profiler       3.2.8+dfsg-4+rpi1 Mono profiler libraries                                                                     |c|  |c|
+mono-2.0-gac           3.2.8+dfsg-4+rpi1 Mono GAC tool (for CLI 2.0)                                                                 |c|  |c|
+mono-2.0-service       3.2.8+dfsg-4+rpi1 Mono service manager for CLI 2.0                                                            |c|  |c|
+mono-4.0-gac           3.2.8+dfsg-4+rpi1 Mono GAC tool (for CLI 4.0)                                                                 |c|  |c|
+mono-4.0-service       3.2.8+dfsg-4+rpi1 Mono service manager for CLI 4.0                                                            |c|  |c|
+mono-csharp-shell      3.2.8+dfsg-4+rpi1 interactive C# shell                                                                        |c|  |c|
+mono-devel             3.2.8+dfsg-4+rpi1 Mono development tools                                                                      |c|  |c|
+mono-dmcs              3.2.8+dfsg-4+rpi1 Mono C# 4.0 compiler for CLI 4.0 (transitional package)                                     |c|  |c|
+mono-gmcs              3.2.8+dfsg-4+rpi1 Mono C# 2.0 and C# 3.0 compiler for CLI 2.0 (transitional package)                          |c|  |c|
+mono-jay               3.2.8+dfsg-4+rpi1 LALR(1) parser generator oriented to Java/CLI                                               |c|  |c|
+mono-mcs               3.2.8+dfsg-4+rpi1 Mono C# 2.0 / 3.0 / 4.0 / 5.0  compiler for CLI 2.0 / 4.0 / 4.5                             |c|  |c|
+mono-runtime           3.2.8+dfsg-4+rpi1 Mono runtime - default version                                                              |c|  |c|
+mono-runtime-sgen      3.2.8+dfsg-4+rpi1 Mono runtime - SGen                                                                         |c|  |c|
+mono-utils             3.2.8+dfsg-4+rpi1 Mono utilities                                                                              |c|  |c|
+mono-vbnc              2.10-2            Mono Visual Basic Compiler (VB.NET)                                                         |c|  |c|
+====================== ================= =========================================================================================== ==== ====
