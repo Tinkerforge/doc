@@ -9,7 +9,7 @@ from tinkerforge.bricklet_temperature import Temperature
 
 HOST = "localhost"
 PORT = 4223
-UID_TEMPERATURE = "qaQ" # Enter Temperature Bricklet UID here
+UID_TEMPERATURE = "XYZ" # Enter Temperature Bricklet UID here
 
 class Window(QtGui.QWidget):
     qtcb_temperature = QtCore.pyqtSignal(int)

@@ -7,7 +7,7 @@ app = application             # Use shortcut for routing
 
 HOST = "localhost"
 PORT = 4223
-UID = "qaQ" # Change to your UID
+UID = "XYZ" # Change to your UID
 
 from tinkerforge.ip_connection import IPConnection
 from tinkerforge.bricklet_temperature import Temperature

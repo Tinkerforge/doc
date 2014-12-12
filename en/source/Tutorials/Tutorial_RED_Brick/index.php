@@ -7,7 +7,7 @@ use Tinkerforge\BrickletTemperature;
 
 const HOST = 'localhost';
 const PORT = 4223;
-const UID = 'qaQ'; // Change to your UID
+const UID = 'XYZ'; // Change to your UID
 
 $ipcon = new IPConnection(); // Create IP connection
 $t = new BrickletTemperature(UID, $ipcon); // Create device object

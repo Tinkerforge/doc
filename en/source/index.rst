@@ -23,6 +23,7 @@ and their concepts:
 * :ref:`First Steps <tutorial_first_steps>`
 * :ref:`Rugged Approach <tutorial_rugged_approach>`
 * :ref:`Authentication <tutorial_authentication>`
+* :ref:`RED Brick <tutorial_red_brick>`
 
 Answers to frequently asked questions can be found in the :ref:`FAQ <faq>`.
 
@@ -32,6 +33,7 @@ Answers to frequently asked questions can be found in the :ref:`FAQ <faq>`.
    Tutorials/Tutorial_Extending/Tutorial
    Tutorials/Tutorial_Rugged/Tutorial
    Tutorials/Tutorial_Authentication/Tutorial
+   Tutorials/Tutorial_RED_Brick/Tutorial
    FAQ
 
 

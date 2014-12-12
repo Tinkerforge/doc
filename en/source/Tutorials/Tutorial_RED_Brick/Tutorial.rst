@@ -8,8 +8,8 @@ RED Brick - Tutorial
 
 The following tutorial will demonstrate how to develop software with the 
 :ref:`RED Brick <red_brick>` together with :ref:`Bricks <primer_bricks>` 
-and :ref:`Bricklets <primer_bricklets>`. A full step by step tutorial that
-shows how Bricks, Bricklets and Extensions are used can be found in the 
+and :ref:`Bricklets <primer_bricklets>`. A full step-by-step tutorial that
+shows how Bricks, Bricklets and Extensions are used is also available:
 :ref:`first steps tutorial <tutorial_first_steps>`.
 
 The RED Brick is the brain of the Tinkerforge building block system.
@@ -21,7 +21,7 @@ of the RED Brick. To keep it simple we will use a small setup
 consisting of a RED Brick, a :ref:`Master Brick <master_brick>` and a 
 :ref:`Temperature Bricklet <temperature_bricklet>`.
 Later in the Tutorial will additionally add an Ethernet Extension to
-get internet access.
+get Internet access.
 
 At first we will test a simple program that prints the temperature
 on your PC and upload and execute it on the RED Brick after that. 
@@ -34,7 +34,7 @@ Brick.
 If you build your application, you might use other Bricks, Bricklets 
 or programming languages, than those used in this example. But the presented 
 concepts and the workflow will be the same.
-	
+
 
 Install necessary software
 --------------------------
@@ -76,7 +76,7 @@ Add Bricks and Bricklets
 Now we can be sure that your RED Brick works. Before adding Bricks/Bricklets,
 you should power the RED Brick down. To shut it down click on 
 **System** located in the right upper corner of the RED Brick tab and choose 
-**shut down**. Wait until all LEDs turn off. After that plug a Master Brick on 
+**Shutdown**. Wait until all LEDs turn off. After that plug a Master Brick on
 top of the RED Brick and connect a Temperature Bricklet 
 Bricklet to it.
 
@@ -108,8 +108,8 @@ execute it.
  :linenos:
  :tab-width: 4
 
-To do this you download the **example_simple.py** Python program and
-replace the UID in the line **UID = "XYZ"** with the UID of your Temperature 
+To do this you download the ``example_simple.py`` Python program and
+replace the UID in the line ``UID = "XYZ"`` with the UID of your Temperature
 Bricklet. You can find it in the **Setup** tab of the Brick Viewer or in the 
 Temperature Bricklet tab.
 
@@ -135,7 +135,6 @@ we need to remove this line.
  :language: python
  :linenos:
  :tab-width: 4
-
 
 Now you can execute it on the RED Brick. The general program uploading procedure
 can be found in the :ref:`RED Brick Brick Viewer description <red_brick_brickv_program>`.
@@ -163,7 +162,7 @@ language. Click on **Next**.
    :alt: Screenshot of RED Brick program upload step 3.
    :align: center
 
-Click on **Add Files** and select the **example_simple_red.py** program. 
+Click on **Add Files** and select the ``example_simple_red.py`` program.
 Click on **Next**.
 
 .. image:: /Images/Screenshots/red_brick_tutorial_upload_4.jpg
@@ -197,9 +196,9 @@ error) to a continuous log file. So no changes are required. Click on
    :alt: Screenshot of RED Brick program upload step 7.
    :align: center
 
-There are many options for scheduling, one of the easist option os to
+There are many options for scheduling, one of the easiest option is to
 schedule a program with a given time interval. Will will choose
-**Interval** as mode with an interval time of 10 minutes (**600 seconds)**.
+**Interval** as mode with an interval time of 10 minutes (**600 seconds**).
 This means that our program will be scheduled every 10 minutes, i.e.
 the temperature will be logged every 10 minutes.
 
@@ -257,8 +256,8 @@ Status** should change to **Connected**.
    :alt: Screenshot of RED Brick network settings.
    :align: center
 
-Now that you have internet access, you can easily do IoT and similar
-applications. Another advantage of internet access is, that the RED Brick
+Now that you have Internet access, you can easily do Internet-of-Things and
+similar applications. Another advantage of Internet access is, that the RED Brick
 will automatically use `NTP <http://en.wikipedia.org/wiki/Network_Time_Protocol>`__ 
 and thus have a correct system time.
 
@@ -335,8 +334,8 @@ HTML/JavaScript, PHP and Python for this purpose.
 
 Please look at the :ref:`RED Brick web interface documentation <red_brick_web_interface>`
 for more information about the web interface. Basically you can call
-your start point index.html, index.php or index.py and it will automatically
-be used as a directory index.
+your start point ``index.html``, ``index.php`` or ``index.py`` and it will
+automatically be used as a directory index.
 
 Our simple Temperature Bicklet program as a web interface looks as follows
 (Python and PHP):
@@ -373,4 +372,3 @@ will be executed automatically:
    :scale: 100 %
    :alt: Screenshot of RED Brick web interface.
    :align: center
-

@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#tutorials-and-faq">Tutorials and FAQ</a> / First steps - Tutorial
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#tutorials-and-faq">Tutorials and FAQ</a> / First Steps - Tutorial
 
 .. _tutorial_first_steps:
 
-First steps - Tutorial
+First Steps - Tutorial
 ======================
 
 The following tutorial will demonstrate how to use

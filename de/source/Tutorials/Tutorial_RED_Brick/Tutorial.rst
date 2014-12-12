@@ -10,8 +10,8 @@ Das folgende Tutorial zeigt wie man mit dem
 :ref:`RED Brick <red_brick>` zusammen mit anderen :ref:`Bricks <primer_bricks>` 
 und :ref:`Bricklets <primer_bricklets>` Software entwickelt. Ein vollständiges
 Schritt-für-Schritt Tutorial, das zeigt wie man Bricks, Bricklets und Extensions
-nutzt kann in dem :ref:`Erste Schritte Tutorial <tutorial_first_steps>` gefunden
-werden.
+nutzt steht mit dem :ref:`Erste Schritte Tutorial <tutorial_first_steps>`
+ebenfalls zur Verfügung.
 
 Der RED Brick kann als Gehirn des Tinkerforge Baukastensystems bezeichnet 
 werden. Ein Programm, welches Bricks und Bricklets steuert, kann auf diesen 
@@ -38,7 +38,7 @@ Bricks.
 Für die eigene Anwendung werden sicher andere Bricks, Bricklets oder eine andere
 Programmiersprache verwendet, als die in diesem Beispiel. Die vorgestellten 
 Konzepte und Abläufe sind aber für alle im wesentlichen die gleichen.
-	
+
 
 Notwendige Software installieren
 --------------------------------
@@ -70,7 +70,7 @@ Mini-USB Kabel mit dem Rechner verbunden.
 Nun starten wir die Brick Viewer Software und klicken auf **Connect**. Ein Tab
 mit **RED Brick** bezeichnet sollte nun auftauchen. Klicke auf diesen. Der Tab
 zeigt Informationen zum Status des RED Bricks. Eine volle Beschreibung zum RED
-Brick Tab der Brick Viewers ist :ref:`hier dokumentiert <red_brick_brickv>`.
+Brick Tab des Brick Viewers ist :ref:`hier dokumentiert <red_brick_brickv>`.
 
 Der RED Brick ist nun bereit!
 
@@ -79,10 +79,10 @@ Bricks und Bricklets hinzufügen
 
 Nun wissen wir das der RED Brick wie erwartet funktioniert. Bevor andere
 Bricks/Bricklets hinzugesteckt werden, sollte der RED Brick heruntergefahren 
-werden. Dazu klickt man in der oberen rechten Ecke auf **System**, wählt 
-**shut down** und wartet bis alle LEDs aus sind. Anschließend stecken wir
-den Master Brick auf den RED Brick und verbinden das Temperature Bricklet mit 
-diesem.
+werden. Dazu klickt man im RED Brick Tab des Brick Viewers in der oberen
+rechten Ecke auf **System**, wählt **Shutdown** und wartet bis alle LEDs aus
+sind. Anschließend stecken wir den Master Brick auf den RED Brick und verbinden
+das Temperature Bricklet mit diesem.
 
 .. image:: /Images/Bricks/brick_red_master_temp_600.jpg
    :scale: 100 %
@@ -113,10 +113,10 @@ führen es aus.
  :linenos:
  :tab-width: 4
 
-Dazu laden wir das **example_simple.py** Python Program herunter und ersetzen
-die UID in der Zeile **UID = "XYZ"** mit der UID des Temperature Bricklets.
+Dazu laden wir das ``example_simple.py`` Python Programm herunter und ersetzen
+die UID in der Zeile ``UID = "XYZ"`` mit der UID des Temperature Bricklets.
 Die UID kann im **Setup** Tab des Brick Viewers oder im Tab des Temperature 
-Bricklets gefunden werden.
+Bricklets ermittelt werden.
 
 Führe dieses Programm auf dem PC aus. Wenn alles wie erwartet funktioniert 
 sollte die aktuelle Temperatur in der Kommandozeile ausgegeben werden.
@@ -132,7 +132,7 @@ funktioniert. Das Beispiel wartet auf eine Benutzereingabe mittels::
 Diese Zeile dient zum verhindern, dass sich die Kommandozeile sofort beendet. 
 Auf dem RED Brick wird es keine Benutzereingabe geben. Wir wollen, dass das 
 Programm nur einmal die gemessene Temperatur ausgibt und sich anschließend 
-beendet. Dazu entferen wir diese Zeile.
+beendet. Dazu entfernen wir diese Zeile.
 
 `Download (example_simple_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_simple_red.py>`__
 
@@ -144,7 +144,7 @@ beendet. Dazu entferen wir diese Zeile.
 Nun können wir das Programm auf dem RED Brick ausführen. Die allgemeine 
 Beschreibung wie Programme hochgeladen werden findet sich in der
 :ref:`RED Brick Brick Viewer Beschreibung <red_brick_brickv_program>`.
-Nachfolgend werden wir nur die notwendigen Schrtte beschreiben:
+Nachfolgend werden wir nur die notwendigen Schritte beschreiben:
 
 .. image:: /Images/Screenshots/red_brick_tutorial_upload_1.jpg
    :scale: 100 %
@@ -168,7 +168,7 @@ Sprache. Anschließend klicken wir auf **Next**.
    :alt: Screenshot des RED Brick Programm Uploads Schritt 3
    :align: center
 
-Wir klicken auf  **Add Files** und wählen das **example_simple_red.py** 
+Wir klicken auf  **Add Files** und wählen das ``example_simple_red.py``
 Programm. Klicke auf **Next**.
 
 .. image:: /Images/Screenshots/red_brick_tutorial_upload_4.jpg
@@ -194,7 +194,7 @@ Umgebungsvariablen, so dass wir einfach wieder auf **Next** klicken.
    :align: center
 
 Wir nutzen Pipe als Standard Input und loggen alle Ausgaben (Standard Output
-und Standard Error) in einer forlaufenden Logdatei. Es sind also wieder keine 
+und Standard Error) in einer fortlaufenden Logdatei. Es sind also wieder keine
 Änderungen notwendig. Wir klicken wieder auf **Next**.
 
 .. image:: /Images/Screenshots/red_brick_tutorial_upload_7.jpg
@@ -229,8 +229,10 @@ gemessenen Temperaturen entnehmen.
    :alt: Screenshot Log Files
    :align: center
 
-In der Browseransicht können Log Dateien ausgewählt und mittels des **Download** Buttons auf den PC heruntergeladen werden. Der **View** Button ermöglicht es
-die Log Dateien direkt einzusehen. Soll eine Log Datei auf dem RED Brick gelöscht werden, so ist dies mit dem **Delete** Button möglich.
+In der Browser-Ansicht können Log Dateien ausgewählt und mittels des **Download**
+Buttons auf den PC heruntergeladen werden. Der **View** Button ermöglicht es
+die Log Dateien direkt einzusehen. Soll eine Log Datei auf dem RED Brick gelöscht
+werden, so ist dies mit dem **Delete** Button möglich.
 
 Zugriff auf das Internet bekommen
 ---------------------------------
@@ -248,22 +250,21 @@ verbunden werden. In diesem Beispiel werden wir eine Ethernet Extension nutzen:
 Fahre den RED Brick herunter und entferne die Stromversorgung bevor du die 
 Ethernet Extension auf den Stapel steckst.
 
-Nachdem wirder die Stromversorgung angeschlossen wurde und der erweiterte Stapel 
+Nachdem wieder die Stromversorgung angeschlossen wurde und der erweiterte Stapel
 fertig gebootet hat, klicke auf **Settings**. Der **Network** Abschnitt sollte 
 geöffnet sein und als Interface **tfX: Wired** (X ist eine Zahl) ausgewählt 
 sein. Wähle zwischen DHCP oder einer statischen IP und klicke **Connect**.
 Nach ein paar Sekunden sollte der **Current Network Status** auf **Connected**
 wechseln.
 
-
 .. image:: /Images/Screenshots/red_brick_tutorial_network.jpg
    :scale: 100 %
    :alt: Screenshot of RED Brick network settings.
    :align: center
 
-Nachdem wir nun Zugriff auf das Internet haben können wir IoT oder ähnliche 
-Anwendungen einfach implementieren. Ein weiterer Vorteil des Internetzugriffs 
-ist, dass das RED Brick automatsch die Systemzeit 
+Nachdem wir nun Zugriff auf das Internet haben können wir Internet-of-Things
+oder ähnliche Anwendungen einfach implementieren. Ein weiterer Vorteil des
+Internetzugriffs ist, dass das RED Brick automatisch die Systemzeit
 mittels `NTP <http://de.wikipedia.org/wiki/Network_Time_Protocol>`__ 
 aktualisieren wird.
 
@@ -282,8 +283,8 @@ Entwicklung von GUI Programmen mit dem RED Brick
 ------------------------------------------------
 
 .. note::
-	Programme mit grafischer Nutzerschnittstelle (GUI) können nur auf dem Full
-	Image ausgeführt werden.
+    Programme mit grafischer Nutzerschnittstelle (GUI) können nur auf dem Full
+    Image ausgeführt werden.
 
 Eine weitere Art von Programmen, die auf dem RED Brick ausgeführt werden können,
 sind Programme mit grafischer Nutzerschnittstelle (GUI), die über die HDMI
@@ -341,7 +342,7 @@ dafür unterstützt.
 Die Beschreibung der 
 :ref:`RED Brick Web Interface Dokumentation <red_brick_web_interface>`
 gibt mehr Informationen dazu. Im wesentlichen kann eine als Startpunkt eines 
-Pfades dienende index.html, index.php oder index.py genutzt werden.
+Pfades dienende ``index.html``, ``index.php`` oder ``index.py`` genutzt werden.
 
 Unser einfaches Temperature Bricklet Programm mit Web Interface sieht wie folgt
 aus (Python und PHP):
@@ -379,4 +380,3 @@ für den die Indexdatei automatisch aufgerufen wird:
    :scale: 100 %
    :alt: Screenshot des RED Brick Web Interface
    :align: center
-
