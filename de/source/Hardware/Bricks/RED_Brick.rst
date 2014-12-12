@@ -10,9 +10,6 @@
 RED Brick
 =========
 
-.. note::
-  Dieses Brick befindet sich noch in Entwicklung und ist noch nicht erhältlich
-
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
@@ -106,20 +103,6 @@ Features
 
 Beschreibung
 ------------
-
-.. note::
-  Dieses Brick befindet sich noch in Entwicklung und ist noch nicht erhältlich. Geplanter Verkaufsstart: Dez 2014.
-
-  Aktuelle Informationen lassen sich in unserem `Blog <http://www.tinkerforge.com/de/blog/>`__ finden. Bisherige Blogposts:
-
-  * `Tinkerforge goes Stand-Alone aka RED Brick <http://www.tinkerforge.com/de/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
-  * `RED Brick Leiterplatten angekommen <http://www.tinkerforge.com/de/blog/2014/4/10/red-brick-leiterplatten-angekommen>`__
-  * `Neuigkeiten zum RED Brick <http://www.tinkerforge.com/de/blog/2014/5/13/neuigkeiten-zum-red-brick>`__
-  * `RED Brick: Tut es? Oder tut es nicht? <http://www.tinkerforge.com/de/blog/2014/5/21/red-brick:-tut-es-oder-tut-es-nicht>`__
-  * `RED Brick Software-Infrastruktur <http://www.tinkerforge.com/de/blog/2014/6/20/red-brick-software-infrastruktur>`__
-  * `RED Brick im EMV Labor <http://www.tinkerforge.com/de/blog/2014/8/28/red-brick-im-emv-labor>`__
-  * `RED Brick Zustandsbericht <http://www.tinkerforge.com/de/blog/2014/10/15/neuigkeiten-zum-red-brick>`__
-  * `RED Brick, der Countdown läuft <http://www.tinkerforge.com/de/blog/2014/11/12/red-brick-der-countdown-laeuft>`__
 
 Der Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) kann
 andere Bricks und :ref:`Bricklets <primer_bricklets>`
@@ -921,7 +904,6 @@ werden, nicht außer acht gelassen werden.
 
 .. _red_brick_faq:
 
-
 FAQ
 ---
 
@@ -932,6 +914,25 @@ FAQ
 * Q: Die rote und blaue LED sind an, aber nichts passiert.
 
   A: Der RED Brick bootet nicht. Überprüfe die Micro-SD-Karte.
+
+
+.. _red_brick_history:
+
+Historie
+--------
+
+Die Entwicklung des RED Bricks hat fast ein Jahr gedauert und ist in
+verschiedenen Blog Posts dokumentuiert:
+
+* `Tinkerforge goes Stand-Alone aka RED Brick <http://www.tinkerforge.com/de/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
+* `RED Brick Leiterplatten angekommen <http://www.tinkerforge.com/de/blog/2014/4/10/red-brick-leiterplatten-angekommen>`__
+* `Neuigkeiten zum RED Brick <http://www.tinkerforge.com/de/blog/2014/5/13/neuigkeiten-zum-red-brick>`__
+* `RED Brick: Tut es? Oder tut es nicht? <http://www.tinkerforge.com/de/blog/2014/5/21/red-brick:-tut-es-oder-tut-es-nicht>`__
+* `RED Brick Software-Infrastruktur <http://www.tinkerforge.com/de/blog/2014/6/20/red-brick-software-infrastruktur>`__
+* `RED Brick im EMV Labor <http://www.tinkerforge.com/de/blog/2014/8/28/red-brick-im-emv-labor>`__
+* `RED Brick Zustandsbericht <http://www.tinkerforge.com/de/blog/2014/10/15/neuigkeiten-zum-red-brick>`__
+* `RED Brick, der Countdown läuft <http://www.tinkerforge.com/de/blog/2014/11/12/red-brick-der-countdown-laeuft>`__
+
 
 .. _red_brick_programming_interface:
 

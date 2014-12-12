@@ -10,9 +10,6 @@
 RED Brick
 =========
 
-.. note::
- This Brick is under development and not yet available.
-
 .. raw:: html
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
@@ -106,20 +103,6 @@ Features
 
 Description
 -----------
-
-.. note::
- This Brick is under development and not yet available. Planned release: Dec. 2014.
-
- You can find news in our `blog <http://www.tinkerforge.com/en/blog/>`__.  Blog posts so far:
-
- * `Tinkerforge goes Stand-Alone aka RED Brick <http://www.tinkerforge.com/en/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
- * `RED Brick circuit boards arrived <http://www.tinkerforge.com/en/blog/2014/4/10/red-brick-circuit-boards-arrived>`__
- * `RED Brick news <http://www.tinkerforge.com/en/blog/2014/5/13/red-brick-news>`__
- * `RED Brick: Does it work? <http://www.tinkerforge.com/en/blog/2014/5/23/red-brick:-does-it-work>`__
- * `RED Brick Software Infrastructure <http://www.tinkerforge.com/en/blog/2014/6/20/red-brick-software-infrastructure>`__
- * `RED Brick in EMC laboratory <http://www.tinkerforge.com/en/blog/2014/8/28/red-brick-in-emc-laboratory>`__
- * `RED Brick status report <http://www.tinkerforge.com/en/blog/2014/10/16/red-brick-status-report>`__
- * `The RED Brick Countdown has started <http://www.tinkerforge.com/en/blog/2014/11/12/the-red-brick-countdown-has-started>`__
 
 The Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) can
 control other Bricks and
@@ -894,7 +877,6 @@ additionally connected USB devices.
 
 .. _red_brick_faq:
 
-
 FAQ
 ---
 
@@ -905,6 +887,24 @@ FAQ
 * Q: The red and blue LED are on. But nothing happens.
 
   A: The RED Brick is not booting. Please check your Micro-SD card.
+
+
+.. _red_brick_history:
+
+History
+-------
+
+The development of the RED Brick took almost a year and is documented in
+several blog posts:
+
+* `Tinkerforge goes Stand-Alone aka RED Brick <http://www.tinkerforge.com/en/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
+* `RED Brick circuit boards arrived <http://www.tinkerforge.com/en/blog/2014/4/10/red-brick-circuit-boards-arrived>`__
+* `RED Brick news <http://www.tinkerforge.com/en/blog/2014/5/13/red-brick-news>`__
+* `RED Brick: Does it work? <http://www.tinkerforge.com/en/blog/2014/5/23/red-brick:-does-it-work>`__
+* `RED Brick Software Infrastructure <http://www.tinkerforge.com/en/blog/2014/6/20/red-brick-software-infrastructure>`__
+* `RED Brick in EMC laboratory <http://www.tinkerforge.com/en/blog/2014/8/28/red-brick-in-emc-laboratory>`__
+* `RED Brick status report <http://www.tinkerforge.com/en/blog/2014/10/16/red-brick-status-report>`__
+* `The RED Brick Countdown has started <http://www.tinkerforge.com/en/blog/2014/11/12/the-red-brick-countdown-has-started>`__
 
 
 .. _red_brick_programming_interface:
