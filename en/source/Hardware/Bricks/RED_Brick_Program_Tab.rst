@@ -51,7 +51,7 @@ Wizard Step 1: General Information
 * Description: The description will be shown in the program, if your program
   is selected.
 * Unique Identifier: If you uncheck *Auto-generate unique identifier* you will
-  have to specify your own identifier. The identifier is mostly used 
+  have to specify your own identifier. The identifier is mostly used
   internally. You can use your own identifier if you want to have a specific
   name of the program folder in the underlying Linux.
 
@@ -64,7 +64,7 @@ Wizard Step 2: Files
    :align: center
 
 * **Add files**: Adds single program files.
-* **Add Directory**: Adds your program directory, the included files 
+* **Add Directory**: Adds your program directory, the included files
   and subdirectories.
 * **Remove**: Removes the selected file or directory.
 
@@ -78,7 +78,7 @@ Python/Flask with the following structure
 
   * index.py
   * templates/
- 
+
     * template1.html
     * template2.html
 
@@ -87,9 +87,9 @@ Python/Flask with the following structure
     * static.css
     * static.js
 
-and you want the index.py as well as the two folders to be in the root 
+and you want the index.py as well as the two folders to be in the root
 directory of your program on the RED Brick, you need to first
-select the index.py with **Add file** and then independently select the 
+select the index.py with **Add file** and then independently select the
 two folders with **Add Directory**.
 
 Every "Add" will add the thing you are selecting to the root directory
@@ -117,13 +117,13 @@ C/C++
    :align: center
 
 The Tinkerforge C/C++ Bindings are preinstalled on the RED Brick
-(compiled as a library libtinkerforge.so, available in ``/usr/lib/``). 
+(compiled as a library libtinkerforge.so, available in ``/usr/lib/``).
 The headers are available in ``/usr/include/tinkerforge``. You can
 directly link against this library (see example below).
 
 * Start Mode: Currently only *Executable* is available as start mode.
 * Executable: Name of the executable that should be called. This is
-  either the name of the cross compiled executable that you are 
+  either the name of the cross compiled executable that you are
   uploading or it is the name of the executable that is created
   during compilation
 * Compile From Source: If you check this checkbox, your code will be
@@ -153,8 +153,8 @@ directly link against this library (see example below).
     	rm -f *.o $(EXE)
 * Make Options: If you compile from source you can also add
   Makefile parameters.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 
@@ -177,13 +177,13 @@ the Tinkerforge.dll in step 2.
 * Executable: Choose the .NET executable from the files that you added
   in step 2. A .NET executable usually has the file ending .exe.
 
-  Your executable will be executed with 
-  `mono <http://www.mono-project.com/>`__, but you can compile 
-  on Windows with Visual Studio, that works without problem. 
-  Make sure that you don't use any Windows specific libraries that 
+  Your executable will be executed with
+  `mono <http://www.mono-project.com/>`__, but you can compile
+  on Windows with Visual Studio, that works without problem.
+  Make sure that you don't use any Windows specific libraries that
   are not available on the RED Brick.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Mono Options: Here you can add options that will be given to
@@ -199,7 +199,7 @@ Delphi/Lazarus
 
 * Start Mode: Currently only *Executable* is available as start mode.
 * Executable: Name of the executable that should be called. This is
-  either the name of the cross compiled executable that you are 
+  either the name of the cross compiled executable that you are
   uploading or it is the name of the executable that is created
   during compilation
 * Compile From Source: If you check this checkbox, your code will be
@@ -215,8 +215,8 @@ Delphi/Lazarus
     packages=tinkerforge
 * Make Options: If you compile from source you can also add
   Makefile parameters.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 
@@ -247,8 +247,8 @@ classes by the usual means, e.g. ``import com.tinkerforge.IPConnection;``.
 * Class Path: You can add files that are added to your class path.
   All JARs that you added in step 2 will automatically be added
   to the class path.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * JVM Options: Here you can add options that will be given to
@@ -280,8 +280,8 @@ JavaScript (Browser/Node.js)
       executed by node.
     * Start Mode *Command*: Specify a command that should be executed
       by node with the **-e** option.
-  * Working Directory: Specify the 
-    `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+  * Working Directory: Specify the
+    `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
     of your program. You can use a path that is relative to the
     root directory of your program. Usually you will leave this as ``.``.
   * Node.js Options: Here you can add options that will be given to
@@ -305,8 +305,8 @@ the correct directory.
 * Start Mode: Currently only **Script File** is available as start mode.
 * Script File: Choose one of the script files that you added in step 2,
   it will be executed by octave.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Octave Options: Here you can add options that will be given to
@@ -335,8 +335,8 @@ directive to import them, e.g.: ``use Tinkerforge::IPConnection;``.
     executed by the Perl interpreter.
   * Start Mode *Command*: Specify a command that should be executed
     by the Perl interpreter with the **-e** option.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Perl Options: Here you can add options that will be given to
@@ -366,11 +366,11 @@ function, e.g.: ``require_once('Tinkerforge/IPConnection.php');``.
   * Start Mode *Web Interface*: If you want to implement a web
     interface with PHP you have to chose this option.
     In this case PHP will be called from Apache, thus there are
-    no other configurations to be made. See 
+    no other configurations to be made. See
     :ref:`RED Brick web interface <red_brick_web_interface>` for
     more informations about the web interface.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * PHP Options: Here you can add options that will be given to
@@ -384,7 +384,7 @@ Python
    :alt: Screenshot of RED Brick Wizard Step 3 (Python).
    :align: center
 
-The Tinkerforge Bindings are installed through 
+The Tinkerforge Bindings are installed through
 `pip <https://pypi.python.org/pypi/pip>`__ and thus
 available. You can import them with the normal ``import``
 statement, e.g.: ``from tinkerforge.ip_connection import IPConnection``.
@@ -402,11 +402,11 @@ statement, e.g.: ``from tinkerforge.ip_connection import IPConnection``.
   * Start Mode *Web Interface*: If you want to implement a web
     interface with Python you have to chose this option.
     In this case Python will be called from Apache/WSGI, thus there are
-    no other configurations to be made. See 
+    no other configurations to be made. See
     :ref:`RED Brick web interface <red_brick_web_interface>` for
     more informations about the web interface.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Python Options: Here you can add options that will be given to
@@ -422,7 +422,7 @@ Ruby
    :align: center
 
 The Tinkerforge Bindings are installed through `gem <https://rubygems.org/>`__
-and thus available. You can use the ``require`` statement to import them, 
+and thus available. You can use the ``require`` statement to import them,
 e.g.: ``require 'tinkerforge/ip_connection'``.
 
 * Ruby Version: Currently there is only one Ruby interpreter version
@@ -434,8 +434,8 @@ e.g.: ``require 'tinkerforge/ip_connection'``.
     executed by the Ruby interpreter.
   * Start Mode *Command*: Specify a command that should be executed
     by the Ruby interpreter with the **-e** option.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Ruby Options: Here you can add options that will be given to
@@ -450,7 +450,7 @@ Shell
    :align: center
 
 The Shell Bindings are available in ``/usr/local/bin``, which is
-in the PATH. In your shell script you can just call ``tinkerforge`` 
+in the PATH. In your shell script you can just call ``tinkerforge``
 without any prefix.
 
 * Shell Version: Currently there is only one bash version available on the
@@ -462,8 +462,8 @@ without any prefix.
     executed by bash.
   * Start Mode *Command*: Specify a command that should be executed
     by bash with the **-c** option.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Shell Options: Here you can add options that will be given to
@@ -477,8 +477,8 @@ Visual Basic .NET
    :alt: Screenshot of RED Brick Wizard Step 3 (Visual Basic .NET).
    :align: center
 
-For Visual Basic .NET the Tinkerforge.dll is available in ``/usr/lib/`` 
-and can thus be found by mono. That means, if you compile your VB.NET 
+For Visual Basic .NET the Tinkerforge.dll is available in ``/usr/lib/``
+and can thus be found by mono. That means, if you compile your VB.NET
 program and you use the Tinkerforge.dll as reference, it will be
 automatically found on the RED Brick. You don't have to add
 the Tinkerforge.dll in step 2.
@@ -488,13 +488,13 @@ the Tinkerforge.dll in step 2.
 * Executable: Choose the .NET executable from the files that you added
   in step 2. A .NET executable usually has the file ending .exe.
 
-  Your executable will be executed with 
-  `mono <http://www.mono-project.com/>`__, but you can compile 
-  on Windows with Visual Studio, that works without problem. 
-  Make sure that you don't use any Windows specific libraries that 
+  Your executable will be executed with
+  `mono <http://www.mono-project.com/>`__, but you can compile
+  on Windows with Visual Studio, that works without problem.
+  Make sure that you don't use any Windows specific libraries that
   are not available on the RED Brick.
-* Working Directory: Specify the 
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__ 
+* Working Directory: Specify the
+  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Mono Options: Here you can add options that will be given to
@@ -528,7 +528,7 @@ it will be equivalent to the following call in  the terminal::
   that you set here available. Environment variables that are
   necessary to start a program in the chosen programming
   language will already be there by default. If you don't know what
-  this means you very likely don't have to touch this setting. 
+  this means you very likely don't have to touch this setting.
 
 Wizard Step 5: Stdio Redirection
 --------------------------------
@@ -540,11 +540,11 @@ Wizard Step 5: Stdio Redirection
 
 In many cases the default values can just leaved as they are. If you don't know
 what the standard input and output is you can likely just click **Next**.
-   
+
 * Standard Input:
- 
+
   * /dev/null: Your program does not have any input.
-  * Pipe: If you choose Pipe you can send input to your program 
+  * Pipe: If you choose Pipe you can send input to your program
     with the Brick Viewer (in the Stdio Redirection section of the
     program tab). Many of our example programs wait for user input
     and only react on callbacks. If your program is of this nature
@@ -578,12 +578,12 @@ Wizard Step 6: Schedule
 * Mode *Never*: The scheduler of the RED Brick will not be used. You can
   start your program manually in the program tab of the Brick Viewer.
 * Mode *Always*: The scheduler will try to always keep your program running.
-  If your program ends it will be restarted immediately. If you have a 
-  controlling program that uses some input to control some output that should 
+  If your program ends it will be restarted immediately. If you have a
+  controlling program that uses some input to control some output that should
   just always do its thing, this mode is the right one for you.
-* Mode *Interval*: Define an interval (in seconds) in which your program 
+* Mode *Interval*: Define an interval (in seconds) in which your program
   should be executed.
-* Mode *Cron*: Use `cron <http://en.wikipedia.org/wiki/Cron>`__ to 
+* Mode *Cron*: Use `cron <http://en.wikipedia.org/wiki/Cron>`__ to
   schedule your program. Cron is a *time-based* job scheduler. You can
   specify things like
 
@@ -592,7 +592,7 @@ Wizard Step 6: Schedule
   * Every minute during the 12th hour of Monday, but only if the day is the 16th of the month: ``* 12 16 * Mon``
 
   As you can see, you can specify quite complex tasks with cron. There
-  is a big number of `cron tutorials <http://www.linuxhelp.net/guides/cron/>`__ 
+  is a big number of `cron tutorials <http://www.linuxhelp.net/guides/cron/>`__
   available on the internet.
 
   Please note that your RED Brick needs to have the current time available for
@@ -600,7 +600,7 @@ Wizard Step 6: Schedule
   when the RED Brick is powered down. Such that the time is lost
   after power down. The time will be automatically set if your RED Brick is
   connected to the Internet (through NTP). You can set it in the Date/Time
-  section of the settings tab and you can use the GPS Bricklet to 
+  section of the settings tab and you can use the GPS Bricklet to
   `sync the Linux system time with the GPS time <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__.
 
 * Mode *Once After Startup*: The scheduler will execute the program only once
@@ -617,7 +617,7 @@ Wizard Step 7: Summary
    :align: center
 
 The summary page shows a summary of the previous made configuration. If you want
-to ask for help regarding the configuration of a program it probably makes 
+to ask for help regarding the configuration of a program it probably makes
 sense to append the content of this summary to your inquiry.
 
 Wizard Step 8: Upload

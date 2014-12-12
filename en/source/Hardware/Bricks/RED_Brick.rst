@@ -11,7 +11,7 @@ RED Brick
 =========
 
 .. note::
- This Brick is under development and not yet available. 
+ This Brick is under development and not yet available.
 
 .. raw:: html
 
@@ -108,7 +108,7 @@ Description
 -----------
 
 .. note::
- This Brick is under development and not yet available. Planned release: Dec. 2014. 
+ This Brick is under development and not yet available. Planned release: Dec. 2014.
 
  You can find news in our `blog <http://www.tinkerforge.com/en/blog/>`__.  Blog posts so far:
 
@@ -121,24 +121,24 @@ Description
  * `RED Brick status report <http://www.tinkerforge.com/en/blog/2014/10/16/red-brick-status-report>`__
  * `The RED Brick Countdown has started <http://www.tinkerforge.com/en/blog/2014/11/12/the-red-brick-countdown-has-started>`__
 
-The Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) can 
-control other Bricks and 
-:ref:`Bricklets <primer_bricklets>`. The programming languages C/C++, C#, 
+The Rapid Embedded Development :ref:`Brick <primer_bricks>` (RED Brick) can
+control other Bricks and
+:ref:`Bricklets <primer_bricklets>`. The programming languages C/C++, C#,
 Delphi/Lazarus, Java, JavaScript, Octave, Perl, PHP, Python, Ruby, Shell
 and Visual Basic .NET can be executed on the Brick.
 
-A program that controls Bricks and Bricklets can be written and tested 
+A program that controls Bricks and Bricklets can be written and tested
 on a normal PC or Mac. Afterwards the program can be transferred to the RED Brick
-by the press of a button and can then be executed without any changes. Multiple 
+by the press of a button and can then be executed without any changes. Multiple
 programs can be executed simultaneously. The execution of programs can be
 scheduled (execution on boot up, every hour, etc.) and monitored.
 
-This approach enables a very easy and very fast solution to realize projects. 
-To our knowledge there is no other solution available that is even remotely 
-comparable. 
+This approach enables a very easy and very fast solution to realize projects.
+To our knowledge there is no other solution available that is even remotely
+comparable.
 
-For each supported programming language the :ref:`Tinkerforge API <api_bindings>` 
-and commonly used software libraries are pre-installed on the system. Other 
+For each supported programming language the :ref:`Tinkerforge API <api_bindings>`
+and commonly used software libraries are pre-installed on the system. Other
 necessary libraries can be installed manually.
 
 The Brick is equipped with a `Micro-HDMI <http://en.wikipedia.org/wiki/HDMI>`__
@@ -146,13 +146,13 @@ connector, which can be used by programs to show a graphical user interface. A
 `USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
 connect WIFI dongles, mouses, keyboards, touchscreens and similar.
 
-With an :ref:`Ethernet Master Extension <ethernet_extension>` the RED Brick can 
-be extended by an Ethernet interface. The 
+With an :ref:`Ethernet Master Extension <ethernet_extension>` the RED Brick can
+be extended by an Ethernet interface. The
 :ref:`RS485 Master Extension <rs485_extension>` can be used to connect
 other remote stacks of Bricks and Bricklets.
 
-Advanced users can use the RED Brick with full access to the underlying 
-`Debian <http://www.debian.org>`__ system. 
+Advanced users can use the RED Brick with full access to the underlying
+`Debian <http://www.debian.org>`__ system.
 The expert user can directly access gpio/spi/i2c pins for individual
 hardware development over a GPIO FPC header.
 
@@ -190,7 +190,7 @@ First Steps / Test your RED Brick
 ---------------------------------
 
 With the following instructions you can test your RED Brick.
-A full step-by-step tutorial regarding the RED Brick can be found here: 
+A full step-by-step tutorial regarding the RED Brick can be found here:
 :ref:`RED Brick Tutorial <tutorial_red_brick>`.
 
 First install the :ref:`Brick Daemon <brickd>` and the
@@ -199,11 +199,11 @@ Micro-SD card into the :ref:`Micro-SD-Card slot <red_brick_micro_sd_card_slot>`
 of the RED Brick. The location of the slot and an overview of the different
 hardware interfaces of the RED Brick is given in the
 :ref:`hardware description <red_brick_hardware>`. You can order a `SD card with
-pre-installed image <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__ 
+pre-installed image <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
 in our shop. Otherwise you can prepare an SD card yourself, see the
 :ref:`copy image to SD card <red_brick_copy_image>` section.
 
-After that your RED Brick is ready to go and can be connected to your PC or Mac 
+After that your RED Brick is ready to go and can be connected to your PC or Mac
 with a Mini-USB cable.
 
 .. image:: /Images/Bricks/brick_red_mini_usb_600.jpg
@@ -215,35 +215,35 @@ with a Mini-USB cable.
 If you start the Brick Viewer software and press "Connect". A tab should show up
 labeled with "RED Brick". Click on it.
 
-On the left side of the tab you see different additional tabs. The "Overview" 
-tab shows information about the CPU load, 
+On the left side of the tab you see different additional tabs. The "Overview"
+tab shows information about the CPU load,
 memory usage and other status information. This view means that your RED Brick
-works as expected and you can start to upload your programs. See the 
+works as expected and you can start to upload your programs. See the
 :ref:`Brick Viewer section <red_brick_brickv>` on how to configure the Brick
 and how to upload your programs.
 
-Users of the :ref:`Full image <red_brick_images>` can test the graphical 
-user interface (HDMI). To do so, connect a monitor to the 
+Users of the :ref:`Full image <red_brick_images>` can test the graphical
+user interface (HDMI). To do so, connect a monitor to the
 :ref:`HDMI port <red_brick_hdmi>` and a USB hub with keyboard and
 mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
-power the Brick you can see the LXDE desktop environment booting. After 
+power the Brick you can see the LXDE desktop environment booting. After
 the boot process you should be able to use it as a normal desktop PC.
 
 You can log in to the underlying Linux with user ``tf`` and password ``tf``.
 The ``tf`` user is a sudoer.
 
-.. note:: For security reasons you may want to change the password. The 
+.. note:: For security reasons you may want to change the password. The
           procedure is documented :ref:`here <red_brick_change_password>`.
-          
+
 
 .. _red_brick_brickv:
 
 Brick Viewer
 ------------
 
-This section describes the configuration of the RED Brick with the 
-:ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by 
-the :ref:`RED Brick API <red_brick_programming_interface>` (only for power 
+This section describes the configuration of the RED Brick with the
+:ref:`Brick Viewer <brickv>` software. The RED Brick can also be configured by
+the :ref:`RED Brick API <red_brick_programming_interface>` (only for power
 users).
 
 .. image:: /Images/Screenshots/brickv_red_tab_and_labels.jpg
@@ -251,19 +251,19 @@ users).
    :alt: Screenshot of tab selection and labels.
    :align: center
 
-The RED Brick representation in Brick Viewer consists of different tabs, each 
+The RED Brick representation in Brick Viewer consists of different tabs, each
 described in detail below. At the top the UID of the RED Brick, the position
 in the stack, the name of the used image, number of timeouts and the word
-*System* is shown. If you click on it, you can restart the Brick Daemon on the 
+*System* is shown. If you click on it, you can restart the Brick Daemon on the
 RED Brick and reboot or shut down the RED Brick itself.
 
 Overview Tab (Status Information)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This tab is selected by default. It shows the uptime of your RED Brick
-and the usage of CPU, memory (RAM) and storage. You can see 
+and the usage of CPU, memory (RAM) and storage. You can see
 the top processes based on CPU or memory usage and the up- and download speed
-of the configured network interfaces. 
+of the configured network interfaces.
 
 .. image:: /Images/Screenshots/brickv_red_tab_overview.jpg
    :scale: 60 %
@@ -275,11 +275,11 @@ The list can contain the following network interfaces
 
 * ``lo``: This is the loopback interface. It is a local interface, used for
   example for the communication between your program and the local Brick Daemon.
-* ``wlanX`` : This is a WIFI interface. It is created if you attach a WIFI 
+* ``wlanX`` : This is a WIFI interface. It is created if you attach a WIFI
   dongle to the :ref:`USB Host connector <red_brick_usb_host>`.
-* ``ethX`` : This is a Ethernet interface. It is created if you attach a 
+* ``ethX`` : This is a Ethernet interface. It is created if you attach a
   Ethernet dongle to the :ref:`USB Host connector <red_brick_usb_host>`.
-* ``tfX`` : This is the Ethernet interface created if you add an 
+* ``tfX`` : This is the Ethernet interface created if you add an
   :ref:`Ethernet Extension <ethernet_extension>` on top of the RED Brick.
 
 The data in the overview tab is automatically refreshed every 3 seconds.
@@ -302,14 +302,14 @@ related to networking.
    :alt: Screenshot of settings tab showing network configurations.
    :align: center
 
-The *Current Network Status* subsection shows you the status of the configured 
+The *Current Network Status* subsection shows you the status of the configured
 and currently used network interface. The status is updated automatically every
 3 seconds.
 
-You can configure the used interface in the *Configuration* subsection. First 
+You can configure the used interface in the *Configuration* subsection. First
 choose the interface you want to configure (An USB Ethernet dongle will show
 up as ``ethX``, the Ethernet Extension as ``tfX`` and a USB WIFI dongle
-as ``wlanX`` (X is a number). Dependent on the selected interface you will get 
+as ``wlanX`` (X is a number). Dependent on the selected interface you will get
 other configuration options:
 
 * **Configure an Ethernet Interface:**
@@ -339,11 +339,11 @@ settings related to the local Brick Daemon.
    :alt: Screenshot of settings tab showing brickd configurations.
    :align: center
 
-The configuration includes the listen address, the corresponding port, port for 
+The configuration includes the listen address, the corresponding port, port for
 web sockets and the authentication secret in the *General* subsection.
-WebSockets are used by the browser version of the 
-:ref:`JavaScript bindings <api_bindings_javascript>` to control Bricks and 
-Bricklets. More low level configurations can be found in the *Advanced* 
+WebSockets are used by the browser version of the
+:ref:`JavaScript bindings <api_bindings_javascript>` to control Bricks and
+Bricklets. More low level configurations can be found in the *Advanced*
 subsection. The LED trigger for the red and green LED can also be set here.
 
 .. _red_brick_brick_settings_date:
@@ -385,17 +385,17 @@ The documentation of the program tab can be found on
 Console Tab (Remote Access)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have attached the RED Brick over its 
+If you have attached the RED Brick over its
 `Mini-USB Connector <red_brick_mini_usb>`__ to your PC it will also register
 a USB serial interface. This serial interface can be used to access the Linux
 shell of the Brick. Select the serial port of the Brick and press *Connect*.
-Under Linux the typical interface is ``/dev/ttyACMX`` (X is number) under 
-Windows it is ``Serial Port COMX`` (X is number) with device name 
-``RED Brick Serial Console`` and on OS X usually shows up as 
-``/dev/tty.usbmodemXYZ`` with XYZ is part of RED Bricks UID. You can log in as 
+Under Linux the typical interface is ``/dev/ttyACMX`` (X is number) under
+Windows it is ``Serial Port COMX`` (X is number) with device name
+``RED Brick Serial Console`` and on OS X usually shows up as
+``/dev/tty.usbmodemXYZ`` with XYZ is part of RED Bricks UID. You can log in as
 user ``tf`` with password ``tf``. If you are not sure what the right port is
-test them all, until you see the shell. It might be necessary to press ENTER to 
-see the prompt. 
+test them all, until you see the shell. It might be necessary to press ENTER to
+see the prompt.
 
 Below you can see a screenshot of the console executing ``htop``.
 
@@ -404,7 +404,7 @@ Below you can see a screenshot of the console executing ``htop``.
    :alt: Screenshot of console tab showing htop.
    :align: center
 
-A good shell tutorial can be found at 
+A good shell tutorial can be found at
 `linuxcommand.org <http://linuxcommand.org/lc3_learning_the_shell.php>`__.
 
 .. _red_brick_brickv_versions_tab:
@@ -413,7 +413,7 @@ Versions Tab (Daemon, Bindings and Libraries)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The versions tab shows version information of the installed Brick Daemon and
-RED Brick API Daemon as well as the installed Bindings and their associated 
+RED Brick API Daemon as well as the installed Bindings and their associated
 libraries.
 
 .. image:: /Images/Screenshots/brickv_red_tab_versions.jpg
@@ -421,17 +421,17 @@ libraries.
    :alt: Screenshot of versions tab.
    :align: center
 
-If you want to use other libraries than the installed ones, you can 
-:ref:`upload <red_brick_brickv_program>` them with your program or use the 
-:ref:`console <red_brick_brickv_console>` to install them via ``apt-get``, 
+If you want to use other libraries than the installed ones, you can
+:ref:`upload <red_brick_brickv_program>` them with your program or use the
+:ref:`console <red_brick_brickv_console>` to install them via ``apt-get``,
 ``pip``, ``pear``, ``npm`` or similar package managers. The listed package
 managers are all installed in all RED Brick images.
 
 Extensions Tab (Configure, Manage)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Two :ref:`Master Extensions <primer_master_extensions>` are supported by the 
-RED Brick: :ref:`Ethernet Extension <ethernet_extension>` and 
+Two :ref:`Master Extensions <primer_master_extensions>` are supported by the
+RED Brick: :ref:`Ethernet Extension <ethernet_extension>` and
 :ref:`RS485 Extension <rs485_extension>`.
 
 Changing the settings on either of the Extensions will restart the
@@ -460,11 +460,11 @@ RS485 Extension
    :align: center
 
 The configuration of the RS485 Extension is the same as it can be
-done through a Master Brick. See the  
+done through a Master Brick. See the
 :ref:`RS485 Extension documentation <rs485_configuration>`.
 
 The recommended baudrates to be used on the RED Brick are 500000, 250000,
-166666, 125000, 100000, 83333, 71428, 62500, 55555, 50000, 45454 or 
+166666, 125000, 100000, 83333, 71428, 62500, 55555, 50000, 45454 or
 41666 baud.
 
 .. _red_brick_web_interface:
@@ -472,7 +472,7 @@ The recommended baudrates to be used on the RED Brick are 500000, 250000,
 RED Brick Web Interface
 -----------------------
 
-If your RED Brick is equipped with a USB WIFI dongle, an Ethernet 
+If your RED Brick is equipped with a USB WIFI dongle, an Ethernet
 Extension or has other network connectivity, you can access a
 web interface. The web interface is available at the IP address of the
 RED Brick or the hostname (``red-brick`` by default).
@@ -488,16 +488,16 @@ uploaded binaries.
 
 Besides the default web interface you can also put your own
 web interfaces on the RED Brick. Currently we support web applications
-written in HTML/JavaScript, Python and PHP. If you upload an ``index.py``, 
-``index.php`` or ``index.html``, the respective file will be used as 
+written in HTML/JavaScript, Python and PHP. If you upload an ``index.py``,
+``index.php`` or ``index.html``, the respective file will be used as
 directory index for the binary folder.
 
-**Example to clarify:** If you want to write a PHP website that controls 
-Bricks/Bricklets you can upload your PHP program ``EXAMPLE`` with id 
-``EXAMPLEID`` that includes an index.php as starting point. If you now 
-go to the RED Brick web interface and click on the "Bin" button for the 
-newly created ``EXAMPLE`` program, you will get a link to 
-``/programs/EXAMPLEID/bin``, which will directly execute the index.php 
+**Example to clarify:** If you want to write a PHP website that controls
+Bricks/Bricklets you can upload your PHP program ``EXAMPLE`` with id
+``EXAMPLEID`` that includes an index.php as starting point. If you now
+go to the RED Brick web interface and click on the "Bin" button for the
+newly created ``EXAMPLE`` program, you will get a link to
+``/programs/EXAMPLEID/bin``, which will directly execute the index.php
 if opened since it will act as index for this directory.
 
 This way you can easily implement a webpage that shows environment information
@@ -524,13 +524,13 @@ not localhost!
 Python
 ^^^^^^
 
-The webserver on the RED Brick (Apache) uses WSGI 
+The webserver on the RED Brick (Apache) uses WSGI
 (`mod_wsgi <https://code.google.com/p/modwsgi/>`__) to interface with
 Python programs. It is configured to recognize an ``index.py`` as the
 starting point for a WSGI script. All of the common Python web frameworks
-support WSGI. The `Flask framework <http://flask.pocoo.org/>`__ is 
-preinstalled on the RED Brick (including 
-`Werkzeug <http://werkzeug.pocoo.org/>`__ and 
+support WSGI. The `Flask framework <http://flask.pocoo.org/>`__ is
+preinstalled on the RED Brick (including
+`Werkzeug <http://werkzeug.pocoo.org/>`__ and
 `Jinja <http://jinja.pocoo.org/>`__).
 
 A minimal flask web interface that can be uploaded to the RED Brick
@@ -553,8 +553,8 @@ all Python programs::
  from tinkerforge.bricklet_temperature import Temperature
  # ...
 
-The default web interface of the RED Brick uses Python/Flask. 
-You can find the code 
+The default web interface of the RED Brick uses Python/Flask.
+You can find the code
 `on GitHub <https://github.com/Tinkerforge/red-brick/blob/master/image/patches/root-fs/common/tmp/index.py>`__.
 
 It is of course also possible to use templates, static files and so on. You
@@ -596,28 +596,28 @@ RED Brick Software Images
 -------------------------
 
 The RED Brick software image is stored on a Micro-SD-Card. It is a modified
-`Debian <http://www.debian.org/>`__ image and available in two different 
+`Debian <http://www.debian.org/>`__ image and available in two different
 versions: The "full" and the "fast" image. Both images support the
 execution of your code and come with the full suite of Tinkerforge
-libraries. 
+libraries.
 
-The **full image** comes with a driver for the GPU 
-and all necessary graphical user interface libraries. 
-It boots an X server and the `LXDE desktop environment <http://www.lxde.org>`__ 
-with auto login. If the program you run on the RED Brick uses a graphical 
+The **full image** comes with a driver for the GPU
+and all necessary graphical user interface libraries.
+It boots an X server and the `LXDE desktop environment <http://www.lxde.org>`__
+with auto login. If the program you run on the RED Brick uses a graphical
 interface it will show up on the desktop. The screen resolution should
-automatically adapt to the preferred resolution of the connected HDMI monitor. 
-If you want to change it, you can configure the screen resolution through LXDE. 
-You don't have to use the HDMI port and can execute non graphical 
+automatically adapt to the preferred resolution of the connected HDMI monitor.
+If you want to change it, you can configure the screen resolution through LXDE.
+You don't have to use the HDMI port and can execute non graphical
 programs on this image.
 
-The **fast image** comes without graphical interface support and has no X, no 
+The **fast image** comes without graphical interface support and has no X, no
 LXDE and no other graphical libraries pre-installed. GPU drivers are not loaded,
 which means that the RED Brick has more available RAM (RAM is shared between
 CPU and GPU) and will boot faster.
 
 New software can be installed on both images.
-See the `description of the versions tab <red_brick_brickv_versions_tab>`__ 
+See the `description of the versions tab <red_brick_brickv_versions_tab>`__
 on how to install new software.
 
 A list of pre-installed programming language libraries is available:
@@ -688,7 +688,7 @@ Change Default Password
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 The default password of user ``tf`` is ``tf``. To change the password open
-the :ref:`console tab <red_brick_brickv_console>`. 
+the :ref:`console tab <red_brick_brickv_console>`.
 Choose the correct serial port and press the *Connect*
 button. You should be logged in as user ``tf`` (if you see nothing press Enter).
 Type ``passwd``. You will be asked for the current password. Type ``tf``. After
@@ -715,9 +715,9 @@ Power Button
 ^^^^^^^^^^^^
 
 The button on the RED Brick is a power button. Press it longer than 5 seconds
-and the RED Brick will turn off immediately. 
+and the RED Brick will turn off immediately.
 If the Brick is off, press the button until the blue LED lights up (ca. 3
-seconds) and the Brick will boot again. 
+seconds) and the Brick will boot again.
 
 .. _red_brick_leds:
 
@@ -748,7 +748,7 @@ sequence:
 4. Green starts blinking (heartbeat: Linux booted successfully and all
    services available).
 
-You can change the function of the green and red LED. They can also 
+You can change the function of the green and red LED. They can also
 :ref:`show CPU or SD card usage <red_brick_brick_settings_brickd>` instead of a
 heartbeat.
 
@@ -758,12 +758,12 @@ Micro-SD-Card Slot
 ^^^^^^^^^^^^^^^^^^
 
 The Linux system and your data is stored on a Micro-SD card. The slot
-is located at the bottom side of the Brick. 
+is located at the bottom side of the Brick.
 Micro-SD (1.0), Micro-SDHC (2.0) and Micro-SDXC (3.0) cards
 are supported. As a minimum we recommend a class 10 Micro-SD Card, with a read
 data rate of 30MB/s as minimum, to ensure fast reads and writes.
 
-A description of the images can be found in the 
+A description of the images can be found in the
 :ref:`image section <red_brick_images>`.
 
 .. _red_brick_usb_host:
@@ -771,21 +771,21 @@ A description of the images can be found in the
 USB 2.0 Host
 ^^^^^^^^^^^^
 
-The RED Brick is equipped with a standard 
+The RED Brick is equipped with a standard
 `USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mb/s) type A jack. It can
-power other USB devices with up to 7.5W (5V/1.5A) and is short circuit 
-protected. Both, full and fast image are based on Debian Linux and support 
-typical USB devices like WIFI or Ethernet dongles, webcams, printers, keyboards, 
-mouses or USB touchscreens. 
+power other USB devices with up to 7.5W (5V/1.5A) and is short circuit
+protected. Both, full and fast image are based on Debian Linux and support
+typical USB devices like WIFI or Ethernet dongles, webcams, printers, keyboards,
+mouses or USB touch screens.
 
-Some Ethernet or WIFI dongles can be directly configured with the Brick Viewer. 
-`Supported dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__ 
+Some Ethernet or WIFI dongles can be directly configured with the Brick Viewer.
+`Supported dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
 can be found in our shop. Other devices might have
-to be configured directly in the Linux system and can't be configured with the 
+to be configured directly in the Linux system and can't be configured with the
 Brick Viewer.
 
 The :ref:`full image <red_brick_images>` supports a graphical user interface,
-which can be controlled by standard USB keyboards, mouses or touchscreens.
+which can be controlled by standard USB keyboards, mouses or touch screens.
 
 
 .. _red_brick_mini_usb:
@@ -793,8 +793,8 @@ which can be controlled by standard USB keyboards, mouses or touchscreens.
 Mini-USB
 ^^^^^^^^
 
-With the Mini-USB connector, the RED Brick can be controlled and configured 
-through the :ref:`Brick Viewer <red_brick_brickv>`. It can also be used to 
+With the Mini-USB connector, the RED Brick can be controlled and configured
+through the :ref:`Brick Viewer <red_brick_brickv>`. It can also be used to
 power the Brick.
 
 
@@ -803,25 +803,25 @@ power the Brick.
 Micro-HDMI
 ^^^^^^^^^^
 
-With the Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ connector 
-(also called type D), all standard HDMI monitors and TVs can be connected to 
-the RED Brick. The connector is only active in the 
-:ref:`full image <red_brick_images>`. HDMI Ethernet Channel (HEC) is not 
+With the Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ connector
+(also called type D), all standard HDMI monitors and TVs can be connected to
+the RED Brick. The connector is only active in the
+:ref:`full image <red_brick_images>`. HDMI Ethernet Channel (HEC) is not
 supported.
 
 
 Brick Stack Connector
 ^^^^^^^^^^^^^^^^^^^^^
 
-The RED Brick can control up to eight other Bricks through the stack 
-connectors. Additionally up to two Master Extensions can be used with the RED 
-Brick. Currently only the :ref:`RS485 Extension <rs485_extension>` all versions 
-of the :ref:`Ethernet Extension <ethernet_extension>` are supported. In a stack 
+The RED Brick can control up to eight other Bricks through the stack
+connectors. Additionally up to two Master Extensions can be used with the RED
+Brick. Currently only the :ref:`RS485 Extension <rs485_extension>` all versions
+of the :ref:`Ethernet Extension <ethernet_extension>` are supported. In a stack
 each Extension can only be present one time,
 such that two RS485 or two Ethernet Extension can't be used.
 
-The :ref:`WIFI Extension <wifi_extension>` is currently not supported. We 
-recommend to use a USB WIFI dongle to add WIFI connectivity to the RED Brick. 
+The :ref:`WIFI Extension <wifi_extension>` is currently not supported. We
+recommend to use a USB WIFI dongle to add WIFI connectivity to the RED Brick.
 
 The Ethernet Extension shows up as a normal Ethernet interface in the
 underlying Linux system.
@@ -832,21 +832,21 @@ RED Brick and can power the whole stack.
 GPIO Header
 ^^^^^^^^^^^
 
-.. note:: 
+.. note::
 
-   This header is intended for advanced users to connect their own hardware. 
-   Currently there is no software support for any of the functions of this 
+   This header is intended for advanced users to connect their own hardware.
+   Currently there is no software support for any of the functions of this
    GPIO connector.
 
 The RED Brick is equipped with a 21 pin (0.25mm pitch) FPC GPIO connector
 (Molex 502078-2110).
 
-All signals of Port E of the A10s processor are connected to this GPIO 
+All signals of Port E of the A10s processor are connected to this GPIO
 connector. These signals can be configured for several functions:
 
 General Purpose Input/Output, Transport Stream Controller (TS), Camera Sensor
-Interface (CSI), Serial Peripheral Interface (SPI), Secure Digital Memory 3.0 
-Card Controller (SDC), Universal Asynchronous Receiver Transmitter (UART), 
+Interface (CSI), Serial Peripheral Interface (SPI), Secure Digital Memory 3.0
+Card Controller (SDC), Universal Asynchronous Receiver Transmitter (UART),
 Interrupt capable. Additionally a I2C (TWI) interface is connected to this GPIO.
 
 ==== ======== =========================================================
@@ -879,13 +879,13 @@ Pin  Signal   Description
 Power Supply
 ^^^^^^^^^^^^
 
-The RED Brick needs to be powered by a 5V supply. It can be powered through 
-the Mini-USB connector or a 
+The RED Brick needs to be powered by a 5V supply. It can be powered through
+the Mini-USB connector or a
 :ref:`Step-Down Power Supply <step_down_power_supply>`. A single RED Brick needs
 up to 1.1 Watts, so that a typical 5W (5V/1A) USB power supply will suffice to
-power it and a Master Brick with a few connected Bricklets. If you use a 
-larger setup, calculate the power requirements and choose a suitable power 
-supply with enough power reserves. Don't forget to add the consumption of 
+power it and a Master Brick with a few connected Bricklets. If you use a
+larger setup, calculate the power requirements and choose a suitable power
+supply with enough power reserves. Don't forget to add the consumption of
 additionally connected USB devices.
 
 

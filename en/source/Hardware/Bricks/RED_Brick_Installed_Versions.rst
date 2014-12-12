@@ -27,10 +27,10 @@ easily parsable, thus they are not all included.
 Installation of other Libraries
 -------------------------------
 
-We made it easy to install other libraries to the RED Brick. 
+We made it easy to install other libraries to the RED Brick.
 
 For the languages with package managers (JavaScript, Perl, PHP, Python, Ruby)
-the package manager (``npm``, ``cpanm``, ``pear``, ``pip``, ``gem``) is 
+the package manager (``npm``, ``cpanm``, ``pear``, ``pip``, ``gem``) is
 pre-installed and you can use it through the :ref:`console tab of the Brick
 Viewer <red_brick_brickv_console>`. Even if you don't have any experience with
 Linux or terminals, you can read up on these package managers and learn how
