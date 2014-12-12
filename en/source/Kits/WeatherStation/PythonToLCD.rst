@@ -312,7 +312,7 @@ Step 5: Everything put together
 
 |step5_intro|
 
-|step5_put_together| (`download <https://raw.github.com/Tinkerforge/weather-station/master/write_to_lcd/python/weather_station.py>`__):
+|step5_put_together| (`download <https://raw.githubusercontent.com/Tinkerforge/weather-station/master/write_to_lcd/python/weather_station.py>`__):
 
 .. literalinclude:: ../../../../../weather-station/write_to_lcd/python/weather_station.py
  :language: python

@@ -27,7 +27,7 @@ Goals
 Source Code
 -----------
 
-`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/vbnet/RemoteSwitch.vb>`__
+`Download <https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/remote_switch/vbnet/RemoteSwitch.vb>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch/vbnet/RemoteSwitch.vb
  :language: vbnet

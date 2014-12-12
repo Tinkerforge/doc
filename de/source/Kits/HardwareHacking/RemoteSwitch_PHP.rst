@@ -27,7 +27,7 @@ Ziele
 Quelltext
 ---------
 
-`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/php/RemoteSwitch.php>`__
+`Download <https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/remote_switch/php/RemoteSwitch.php>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch/php/RemoteSwitch.php
  :language: php

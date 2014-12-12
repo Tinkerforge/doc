@@ -236,7 +236,7 @@ Step 5: Everything put together
 
 |step5_intro|
 
-|step5_put_together| (`download <https://raw.github.com/Tinkerforge/hardware-hacking/master/smoke_detector/ruby/smoke_detector.rb>`__):
+|step5_put_together| (`download <https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/smoke_detector/ruby/smoke_detector.rb>`__):
 
 .. literalinclude:: ../../../../../hardware-hacking/smoke_detector/ruby/smoke_detector.rb
  :language: ruby

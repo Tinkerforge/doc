@@ -200,7 +200,7 @@ don't add data while it is uploaded and thus remove the newly added data
 after the uploading finished.
 
 But if you put everything of the above together
-(`download <https://raw.github.com/Tinkerforge/weather-station/master/xively/python/weather_xively.py>`__),
+(`download <https://raw.githubusercontent.com/Tinkerforge/weather-station/master/xively/python/weather_xively.py>`__),
 you have a working Weather Station that uploads the weather measurements to Xively:
 
 .. literalinclude:: ../../../../../weather-station/xively/python/weather_xively.py

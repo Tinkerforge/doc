@@ -398,7 +398,7 @@ es Möglich die Einheit der Messwerte mit anzuzeigen sofern der Messwert
 nicht zu groß ist. Oder es wäre besser die Graphenbeschriftungen
 anstatt oben auf der linken Seite darzustellen.
 
-Hier der komplette Quelltext (`download <https://raw.github.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
+Hier der komplette Quelltext (`download <https://raw.githubusercontent.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
 
 .. literalinclude:: ../../../../../weather-station/button_control/csharp/WeatherStationButton.cs
  :language: csharp

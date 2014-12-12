@@ -27,7 +27,7 @@ Goals
 Source Code
 -----------
 
-`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/csharp/RemoteSwitch.cs>`__
+`Download <https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/remote_switch/csharp/RemoteSwitch.cs>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch/csharp/RemoteSwitch.cs
  :language: csharp

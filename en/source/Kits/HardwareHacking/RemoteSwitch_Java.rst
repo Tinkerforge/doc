@@ -27,7 +27,7 @@ Goals
 Source Code
 -----------
 
-`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/java/RemoteSwitch.java>`__
+`Download <https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/remote_switch/java/RemoteSwitch.java>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch/java/RemoteSwitch.java
  :language: java

@@ -645,7 +645,7 @@ Schritt 7: Alles zusammen
 |step7_intro|
 
 |step7_together| (`Download
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/android/PowerOutletControl/src/com/tinkerforge/poweroutletcontrol/MainActivity.java>`__):
+<https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/android/PowerOutletControl/src/com/tinkerforge/poweroutletcontrol/MainActivity.java>`__):
 
 .. literalinclude:: ../../../../../hardware-hacking/power_outlet_control_smart_phone/android/PowerOutletControl/src/com/tinkerforge/poweroutletcontrol/MainActivity.java
  :language: java

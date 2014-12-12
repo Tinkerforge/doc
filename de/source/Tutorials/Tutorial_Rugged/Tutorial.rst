@@ -57,7 +57,7 @@ auszutauschen, da das Programm die UID aus der Enumerierung benutzt.
 C#
 --
 
-`Download (ExampleRugged.cs) <https://raw.github.com/Tinkerforge/doc/master/de/source/Tutorials/Tutorial_Rugged/ExampleRugged.cs>`__
+`Download (ExampleRugged.cs) <https://raw.githubusercontent.com/Tinkerforge/doc/master/de/source/Tutorials/Tutorial_Rugged/ExampleRugged.cs>`__
 
 .. literalinclude:: ExampleRugged.cs
  :language: csharp
@@ -67,7 +67,7 @@ C#
 Python
 ------
 
-`Download (example_rugged.py) <https://raw.github.com/Tinkerforge/doc/master/de/source/Tutorials/Tutorial_Rugged/example_rugged.py>`__
+`Download (example_rugged.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/de/source/Tutorials/Tutorial_Rugged/example_rugged.py>`__
 
 .. literalinclude:: example_rugged.py
  :language: python

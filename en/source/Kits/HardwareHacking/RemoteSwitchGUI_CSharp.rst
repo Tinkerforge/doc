@@ -339,7 +339,7 @@ That's it! We are done with our hacked remote switch and all of the goals
 should be met.
 
 Now all of the above put together (`download
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch_gui/csharp/RemoteSwitchGUI.cs>`__):
+<https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/remote_switch_gui/csharp/RemoteSwitchGUI.cs>`__):
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch_gui/csharp/RemoteSwitchGUI.cs
  :language: csharp

@@ -200,7 +200,7 @@ hinzugefügt werden während andere hochgeladen werden.
 Wenn wir alles zusammenfügen erhalten wir eine Serverraum-Überwachung die
 die Messwerte nach Xively hochlädt:
 
-(`download <https://raw.github.com/Tinkerforge/server-room-monitoring/master/xively/server_room_monitoring.py>`__)
+(`download <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/xively/server_room_monitoring.py>`__)
 
 .. literalinclude:: ../../../../../server-room-monitoring/xively/server_room_monitoring.py
  :language: python

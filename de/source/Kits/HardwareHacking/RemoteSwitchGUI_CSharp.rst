@@ -352,7 +352,7 @@ Das ist es! Das C# Programm zum Fernsteuern der gehackten Funksteckdosen ist
 fertig und sollte nun alle gesteckten Ziele erfüllen.
 
 Das gesamte Programm in einem Stück (`download
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch_gui/csharp/RemoteSwitchGUI.cs>`__):
+<https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/remote_switch_gui/csharp/RemoteSwitchGUI.cs>`__):
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch_gui/csharp/RemoteSwitchGUI.cs
  :language: csharp

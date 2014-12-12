@@ -204,7 +204,7 @@ hinzugefügt werden während andere hochgeladen werden.
 
 Wenn wir alles zusammenfügen erhalten wir eine Wetterstation die alle
 Messwerte nach Xively hochlädt
-(`download <https://raw.github.com/Tinkerforge/weather-station/master/xively/python/weather_xively.py>`__):
+(`download <https://raw.githubusercontent.com/Tinkerforge/weather-station/master/xively/python/weather_xively.py>`__):
 
 .. literalinclude:: ../../../../../weather-station/xively/python/weather_xively.py
  :language: python

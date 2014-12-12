@@ -409,7 +409,7 @@ Schritt 5: Alles zusammen
 
 |step5_intro|
 
-|step5_put_together| (`download <https://raw.github.com/Tinkerforge/weather-station/master/write_to_lcd/c/weather_station.c>`__):
+|step5_put_together| (`download <https://raw.githubusercontent.com/Tinkerforge/weather-station/master/write_to_lcd/c/weather_station.c>`__):
 
 .. literalinclude:: ../../../../../weather-station/write_to_lcd/c/weather_station.c
  :language: c

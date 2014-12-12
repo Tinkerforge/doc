@@ -259,7 +259,7 @@ Schritt 5: Alles zusammen
 
 |step5_intro|
 
-|step5_put_together| (`download <https://raw.github.com/Tinkerforge/hardware-hacking/master/smoke_detector/java/SmokeDetector.java>`__):
+|step5_put_together| (`download <https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/smoke_detector/java/SmokeDetector.java>`__):
 
 .. literalinclude:: ../../../../../hardware-hacking/smoke_detector/java/SmokeDetector.java
  :language: java

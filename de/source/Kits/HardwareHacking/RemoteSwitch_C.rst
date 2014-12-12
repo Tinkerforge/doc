@@ -27,7 +27,7 @@ Ziele
 Quelltext
 ---------
 
-`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/c/remote_switch.c>`__
+`Download <https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/remote_switch/c/remote_switch.c>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch/c/remote_switch.c
  :language: c

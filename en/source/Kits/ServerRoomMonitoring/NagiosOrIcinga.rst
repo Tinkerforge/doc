@@ -111,7 +111,7 @@ out the Bricklet and compares the measured temperature with
 the warning and critical thresholds and generates the necessary message and 
 return value
 
-(`download <https://raw.github.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
+(`download <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp.py
  :language: python

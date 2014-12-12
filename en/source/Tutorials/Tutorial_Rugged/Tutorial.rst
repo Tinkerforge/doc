@@ -54,7 +54,7 @@ the program uses the UID from the enumeration.
 C#
 --
 
-`Download (ExampleRugged.cs) <https://raw.github.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_Rugged/ExampleRugged.cs>`__
+`Download (ExampleRugged.cs) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_Rugged/ExampleRugged.cs>`__
 
 .. literalinclude:: ExampleRugged.cs
  :language: csharp
@@ -64,7 +64,7 @@ C#
 Python
 ------
 
-`Download (example_rugged.py) <https://raw.github.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_Rugged/example_rugged.py>`__
+`Download (example_rugged.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_Rugged/example_rugged.py>`__
 
 .. literalinclude:: example_rugged.py
  :language: python

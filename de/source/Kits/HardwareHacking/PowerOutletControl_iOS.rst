@@ -656,9 +656,9 @@ Schritt 7: Alles zusammen
 |step7_intro|
 
 |step7_together| (Downloads: `ViewController.h
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/ios/PowerOutletControl/ViewController.h>`__,
+<https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/ios/PowerOutletControl/ViewController.h>`__,
 `ViewController.m
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/ios/PowerOutletControl/ViewController.m>`__):
+<https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/ios/PowerOutletControl/ViewController.m>`__):
 
 .. literalinclude:: ../../../../../hardware-hacking/power_outlet_control_smart_phone/ios/PowerOutletControl/ViewController.h
  :language: objc

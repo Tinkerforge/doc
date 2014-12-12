@@ -194,7 +194,7 @@ don't add data while it is uploaded and thus remove the newly added data
 after the uploading finished.
 
 But if you put everything of the above together
-(`download <https://raw.github.com/Tinkerforge/server-room-monitoring/master/xively/server_room_monitoring.py>`__),
+(`download <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/xively/server_room_monitoring.py>`__),
 you have a working Server Room Monitoring Kit that uploads the measurements to Xively:
 
 .. literalinclude:: ../../../../../server-room-monitoring/xively/server_room_monitoring.py

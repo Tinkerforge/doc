@@ -651,7 +651,7 @@ Schritt 7: Alles zusammen
 |step7_intro|
 
 |step7_together| (`Download
-<https://raw.github.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/windows_phone/PowerOutletControl/MainPage.xaml.cs>`__):
+<https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/power_outlet_control_smart_phone/windows_phone/PowerOutletControl/MainPage.xaml.cs>`__):
 
 .. literalinclude:: ../../../../../hardware-hacking/power_outlet_control_smart_phone/windows_phone/PowerOutletControl/MainPage.xaml.cs
  :language: csharp

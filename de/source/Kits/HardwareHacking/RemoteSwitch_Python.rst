@@ -27,7 +27,7 @@ Ziele
 Quelltext
 ---------
 
-`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/remote_switch/python/remote_switch.py>`__
+`Download <https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/remote_switch/python/remote_switch.py>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/remote_switch/python/remote_switch.py
  :language: python

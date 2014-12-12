@@ -169,13 +169,13 @@ and put both of the files in ``/var/www/``.
    :align: center
    :target: ../../_images/Kits/weather_station_website_orig.jpg
 
-``weather.html`` (`download <https://raw.github.com/Tinkerforge/weather-station/master/website/php/weather.html>`__):
+``weather.html`` (`download <https://raw.githubusercontent.com/Tinkerforge/weather-station/master/website/php/weather.html>`__):
 
 .. literalinclude:: ../../../../../weather-station/website/php/weather.html
  :language: html
  :tab-width: 4
 
-``WeatherStationWebsite.php`` (`download <https://raw.github.com/Tinkerforge/weather-station/master/website/php/WeatherStationWebsite.php>`__):
+``WeatherStationWebsite.php`` (`download <https://raw.githubusercontent.com/Tinkerforge/weather-station/master/website/php/WeatherStationWebsite.php>`__):
 
 .. literalinclude:: ../../../../../weather-station/website/php/WeatherStationWebsite.php
  :language: php

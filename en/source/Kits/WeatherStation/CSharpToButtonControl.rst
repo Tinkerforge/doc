@@ -393,7 +393,7 @@ graph mode whenever the shown values are not too big. Or perhaps it would
 be better to show the top and bottom values of the graph on the left
 side of the graph instead of the top.
 
-All of the above put together (`download <https://raw.github.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
+All of the above put together (`download <https://raw.githubusercontent.com/Tinkerforge/weather-station/master/button_control/csharp/WeatherStationButton.cs>`__):
 
 .. literalinclude:: ../../../../../weather-station/button_control/csharp/WeatherStationButton.cs
  :language: csharp

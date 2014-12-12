@@ -68,8 +68,8 @@ Images.
  :delim: |
  :widths: 17, 32, 5, 5, 8
 
- Full | `Image <http://download.tinkerforge.com/red_images/full/red_image_1_0_full.img.7z>`__ | 1.0 | `Archiv <http://download.tinkerforge.com/red_images/full/>`__ | `Changelog <https://raw.github.com/Tinkerforge/red-brick/master/image/changelog_full>`__
- Fast | `Image <http://download.tinkerforge.com/red_images/fast/red_image_1_0_fast.img.7z>`__ | 1.0 | `Archiv <http://download.tinkerforge.com/red_images/fast/>`__ | `Changelog <https://raw.github.com/Tinkerforge/red-brick/master/image/changelog_fast>`__
+ Full | `Image <http://download.tinkerforge.com/red_images/full/red_image_1_0_full.img.7z>`__ | 1.0 | `Archiv <http://download.tinkerforge.com/red_images/full/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_full>`__
+ Fast | `Image <http://download.tinkerforge.com/red_images/fast/red_image_1_0_fast.img.7z>`__ | 1.0 | `Archiv <http://download.tinkerforge.com/red_images/fast/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_fast>`__
 
 
 .. _downloads_firmwares_plugins:

@@ -28,7 +28,7 @@ such that it will send an email or text message to you.
 Source Code
 -----------
 
-`Download <https://raw.github.com/Tinkerforge/hardware-hacking/master/doorbell_notifier/python/doorbell_notifier.py>`__
+`Download <https://raw.githubusercontent.com/Tinkerforge/hardware-hacking/master/doorbell_notifier/python/doorbell_notifier.py>`__
 
 .. literalinclude:: ../../../../../hardware-hacking/doorbell_notifier/python/doorbell_notifier.py
  :language: python
