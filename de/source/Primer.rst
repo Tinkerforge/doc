@@ -7,7 +7,7 @@ Einführung
 ==========
 
 Die nachfolgende Beschreibung gibt einen Überblick über die verschiedenen
-Produkte und Konzepte des Tinkerforge Baukastensystems. Detailierte 
+Produkte und Konzepte des Tinkerforge Baukastensystems. Detaillierte
 Beschreibungen über die Funktion und die zur Verfügung stehende API befindet 
 sich in der Dokumentation des jeweiligen Produktes.
 
@@ -78,7 +78,7 @@ Bricks sind 4 x 4cm (1,57 x 1,57") große Module, die über einen Mini-USB
 Anschluss verfügen und über diesen von Geräten, wie zum Beispiel einem 
 (Embedded-) PC, gesteuert werden können. Jedes Brick besitzt eine Aufgabe: Es 
 gibt Bricks für Messaufgaben (z.B. :ref:`IMU Brick <imu_brick>`), zur 
-Kommunikation (z.B. :ref:`Master Brick <master_brick>`) und um Motore zu 
+Kommunikation (z.B. :ref:`Master Brick <master_brick>`) und um Motoren zu
 steuern (z.B. :ref:`DC Brick <dc_brick>`).
 
 Über :ref:`Bricklets <primer_bricklets>` können die Fähigkeiten von

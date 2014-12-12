@@ -138,7 +138,7 @@ Page Sizes and other things to know
 
 Mifare Classic and NFC Forum Type 1 as well as NFC Forum Type 2 have different
 page sizes and a different memory structure. You have to keep track of this
-structure to not accidentially lock a tag.
+structure to not accidentally lock a tag.
 
 **Mifare Classic:**
 
@@ -223,7 +223,7 @@ NFC NDEF Messages
 
 The NFC Forum has specified the NFC Data Exchange Format (NDEF) to 
 transfer messages from NFC tags to smart phones. NDEF Messages
-consist of one or more NDEF Records. Many of te predefined
+consist of one or more NDEF Records. Many of the predefined
 NDEF Records can be understood by any smart phone that is capable
 of NFC communication.
 

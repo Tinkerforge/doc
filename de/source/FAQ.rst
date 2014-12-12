@@ -238,7 +238,7 @@ Eine Anleitung zum Aktualisieren gibt es
 
 **Brick Firmware Version < 2.3:**
 
-Am 26. November 2014 haben wir ein neues SPI-Stack-Protokoll veröffentlich um
+Am 26. November 2014 haben wir ein neues SPI-Stack-Protokoll veröffentlicht um
 Unterstützung für den RED Brick hinzuzufügen. Dieses Protokoll ist nicht
 kompatibel zum alten Protokoll. Um eine fehlerfreie Stack-Kommunikation
 sicherzustellen sollten alle Bricks eine Firmware Version von mindestens

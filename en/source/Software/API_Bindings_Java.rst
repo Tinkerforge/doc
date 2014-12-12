@@ -34,7 +34,7 @@ Installation
 If and how the Java bindings have to be installed depends heavily on how you are
 going to use them. If you are just calling the Java compiler from the command
 line then you can just put the ``Tinkerforge.jar`` file into the same folder
-as the Java code of your program and include it in the classpath.
+as the Java code of your program and include it in the class path.
 
 How the bindings can be used in a certain IDE depends on the specific IDE and
 will be explained in the documentation of the IDE.
@@ -94,12 +94,12 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   private static final String UID = "XYZ"; // Change to your UID
 
 Now we can execute the Java compiler in the ``example_project/`` folder like
-this on Windows (replace ``;`` in classpath with ``:`` on Linux and Mac OS X)::
+this on Windows (replace ``;`` in class path with ``:`` on Linux and Mac OS X)::
 
  javac -cp Tinkerforge.jar;. ExampleConfiguration.java
 
 and run it with the following parameters on Windows (replace ``;`` in
-classpath with ``:`` on Linux and Mac OS X again)::
+class path with ``:`` on Linux and Mac OS X again)::
 
  java -cp Tinkerforge.jar;. ExampleConfiguration
 

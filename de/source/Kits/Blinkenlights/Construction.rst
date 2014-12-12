@@ -87,7 +87,7 @@ Loch.
    :target: ../../_images/Kits/kit_blinkenlights_build_step1_1200.jpg
 
 Die Vorder- und Rückseite der Rückplatte sind unterschiedlich, zu erkennen an
-der Anordung der kleinen Befestigungslöcher.
+der Anordnung der kleinen Befestigungslöcher.
 Die folgende Grafik zeigt die Rückseite der Rückplatte. Die Pixel werden von
 dieser Seite eingesteckt, so dass die Köpfe der Pixel auf der Vorderseite sind.
 Beachte die Startposition der

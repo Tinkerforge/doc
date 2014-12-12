@@ -173,7 +173,7 @@ call has to look like this:
 
 If you did :ref:`not install <api_bindings_mathematica_install_without>` the
 bindings then the ``LoadNETAssembly[]`` call can stay as it is, if you run the
-examples from the unpacked ZIP file fo the bindings. The examples are set up in
+examples from the unpacked ZIP file for the bindings. The examples are set up in
 a ways that the ``LoadNETAssembly[]`` call already points correctly to the
 ``Tinkerforge.dll`` file if the bindings and the examples have been unpacked
 from the ZIP file.
@@ -185,7 +185,7 @@ You can also call ``LoadNETAssembly[]`` with an absolute path to the
 
   LoadNETAssembly["C:\\Absolute\\path\\to\\Tinkerforge.dll"]
 
-Or like this on Linux und Mac OS X:
+Or like this on Linux and Mac OS X:
 
 .. code-block:: mathematica
 

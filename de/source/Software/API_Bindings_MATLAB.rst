@@ -60,7 +60,7 @@ Unter Mac OS X ist es hier::
 
  /Applications/MATLAB_R2014a.app
 
-Dann muss die neue Java Bibliothek noch zu MATLABs Classpath hinzugefügt
+Dann muss die neue Java Bibliothek noch zu MATLABs Class Path hinzugefügt
 werden. Dazu muss der folgenden Datei bearbeitet::
 
  <MATLAB Programmordner>/toolbox/local/classpath.txt
@@ -100,7 +100,7 @@ getestet werden:
   octave_config_info("features").JAVA
 
 Um die Bindings in Octave verfügbar zu machen muss die ``Tinkerforge.jar`` Datei
-aus dem ``octave/`` Ordner zu Octaves Classpath hinzugefügt werden werden. Zum
+aus dem ``octave/`` Ordner zu Octaves Class Path hinzugefügt werden werden. Zum
 Beispiel durch folgenden Octave Befehl unter Windows:
 
 .. code-block:: octave

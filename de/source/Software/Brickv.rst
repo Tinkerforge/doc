@@ -173,7 +173,7 @@ Brick Viewer benötigt eine graphische Benutzeroberfläche. Falls Bricks an
 Linux Rechnern ohne graphische Benutzeroberfläche geflasht werden sollen kann
 ``brick-flash-cmd`` verwendet werden. Es steht als `Debian Packet
 <http://download.tinkerforge.com/tools/brick_flash_cmd/linux/brick-flash-cmd_linux_latest.deb>`__
-zum Downlaod bereit::
+zum Download bereit::
 
  wget http://download.tinkerforge.com/tools/brick_flash_cmd/linux/brick-flash-cmd_linux_latest.deb
  sudo dpkg -i brick-flash-cmd_linux_latest.deb

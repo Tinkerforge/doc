@@ -158,7 +158,7 @@ size possible. Each Brick has up to four connectors for Bricklets. Bricklets
 can be controlled over the USB connection of the connected Brick.
 
 Bricklets are not equipped with processors but possess their own API.
-From the programmer perspective they are handeled as an independent modules.
+From the programmer perspective they are handled as an independent modules.
 On startup a Brick detects connected Bricklets. The Bricklet plugins,
 stored in the `EEPROM <http://en.wikipedia.org/wiki/EEPROM>`__ of the Bricklet,
 are loaded into the flash of the Brick. This adds new functions to the Brick,

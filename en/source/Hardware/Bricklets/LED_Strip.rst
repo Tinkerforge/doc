@@ -163,7 +163,7 @@ If everything went as expected you can now control a LED strip.
 
 .. _led_strip_bricklet_ws28xy:
 
-WS2801, WS2811 und WS2812
+WS2801, WS2811 and WS2812
 -------------------------
 
 The LED Strip Bricklet supports LED strips and pixels equipped with the

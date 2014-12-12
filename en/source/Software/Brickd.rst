@@ -62,7 +62,7 @@ The Brick Daemon configuration is stored in a file using a key-value format:
    /etc/brickd.conf
 
 After changing the configuration file Brick Daemon has to be restarted to pick
-up the chnages:
+up the changes:
 
 * Windows:
 
@@ -91,7 +91,7 @@ configure the WebSocket port in the Brick Daemon configuration file.
 
 The WebSocket port option has ``listen.websocket_port`` as key. An value of
 0 or removing the ``listen.websocket_port`` key disables the WebSocket support.
-Here is the WebSocket part of an example configuration using the recommened
+Here is the WebSocket part of an example configuration using the recommended
 value 4280 as WebSocket port:
 
   .. code-block:: none

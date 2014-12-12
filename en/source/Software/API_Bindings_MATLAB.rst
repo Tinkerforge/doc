@@ -58,7 +58,7 @@ On Mac OS X it is here::
 
  /Applications/MATLAB_R2014a.app
 
-Then the new Java library has to be added to MATLAB's classpath. Edit the
+Then the new Java library has to be added to MATLAB's class path. Edit the
 following file::
 
  <MATLAB program folder>/toolbox/local/classpath.txt
@@ -96,7 +96,7 @@ You can test if Java support is avilable with the following command in Octave:
   octave_config_info("features").JAVA
 
 To make the bindings available in Octave the ``Tinkerforge.jar`` from the
-``octave/`` folder has to be added to Octave's classpath. This can be done with
+``octave/`` folder has to be added to Octave's class path. This can be done with
 the following Octave command on Windows:
 
 .. code-block:: octave

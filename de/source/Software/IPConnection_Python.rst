@@ -52,7 +52,7 @@ API
 
 Prinzipiell kann jede Funktion der Python Bindings
 ``tinkerforge.ip_connection.Error`` Exception werfen, welche ein ``value`` und
-eine ``description`` Property hat. ``value`` kann verschiende Werte haben:
+eine ``description`` Property hat. ``value`` kann verschiedene Werte haben:
 
 * Error.TIMEOUT = -1
 * Error.ALREADY_CONNECTED = -7

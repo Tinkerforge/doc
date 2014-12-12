@@ -159,7 +159,7 @@ den Untertab **Program** aus.
    :alt: Screenshot des RED Brick Programm Uploads Schritt 2
    :align: center
 
-Mit dem **New** Button öffen wir den **New Program** Wizard. Wir geben
+Mit dem **New** Button öffnen wir den **New Program** Wizard. Wir geben
 "Temperature Logger" als Name für das Programm ein und wählen **Python** als
 Sprache. Anschließend klicken wir auf **Next**.
 

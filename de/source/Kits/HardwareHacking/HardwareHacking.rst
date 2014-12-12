@@ -80,7 +80,7 @@ zu hacken und so mit Tinkerforge Modulen zu verbinden. Jeder
 (Embedded-)PC und jedes Smartphone/Tablet kann genutzt werden um mit den
 gehackten Geräten zu interagieren. Interaktion ist über USB sowie über
 WLAN mit Hilfe der :ref:`WIFI Extension <wifi_extension>` möglich. Auch
-eine Ethernetschnittstelle kann mit der 
+eine Ethernet Schnittstelle kann mit der
 :ref:`Ethernet Extension <ethernet_extension>` hinzugefügt werden.
 
 Zwei Funksteckdosen sind in diesem Kit enthalten, so dass direkt mit dem Hacken

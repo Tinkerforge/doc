@@ -166,7 +166,7 @@ Wenn sich durch Kondensation genug flüssiges Wasser auf dem Sensor bildet,
 entsteht ein leitender Pfad auf dem Sensor. Dies führt zu einer Messung von
 0% Luftfeuchtigkeit. Sobald dieses Wasser wieder verdunstet ist nimmt der Sensor 
 seinen normalen Betrieb wieder auf. Für den Einsatz in Umgebungen mit 
-Kondensation empfielt sich eine Montage des Sensors kopfüber. Reicht dies noch 
+Kondensation empfiehlt sich eine Montage des Sensors kopfüber. Reicht dies noch
 nicht aus, so kann der Sensor z.B. durch Schaumstoff geschützt werden.
 
 

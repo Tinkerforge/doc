@@ -138,7 +138,7 @@ Page Größen und andere Dinge die man wissen sollte
 
 Mifare Classic und NFC Forum Typ 1 und 2 haben verschiedene Page Größen und 
 verschiedene Speicher-Strukturen. Wichtig ist diese Struktur zu beachten und 
-nicht versehendlich den Tag zu lock'en.
+nicht versehentlich den Tag zu locken.
 
 **Mifare Classic:**
 
@@ -235,10 +235,10 @@ Wir haben ein Beispielprogramm implementiert welches *Text*, *URI* und
 *Mime Media Type* Records auf NFC Forum Type 1 und 2 Tags schreiben kann.
 
 Das Beispiel ist in Python implementiert, kann aber einfach als 
-Startpunkt für eine implementierung in einer anderen Programmiersprache
+Startpunkt für eine Implementierung in einer anderen Programmiersprache
 verwendet werden.
 
-* `Beispiel auf Github <https://github.com/Tinkerforge/nfc-rfid-bricklet/raw/master/software/examples/python/example_write_ndef_message.py>`__.
+* `Beispiel auf GitHub <https://github.com/Tinkerforge/nfc-rfid-bricklet/raw/master/software/examples/python/example_write_ndef_message.py>`__.
 
 
 .. _nfc_rfid_bricklet_test:

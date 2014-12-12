@@ -66,7 +66,7 @@ Mit dem Color :ref:`Bricklet <primer_bricklets>` können
 `Farbtemperatur <http://de.wikipedia.org/wiki/Farbtemperatur>`__ und die 
 `Beleuchtungsstärke <http://de.wikipedia.org/wiki/Beleuchtungsst%C3%A4rke>`__ einer
 Lichtquelle messen.
-Mit dem Bricklet kann somit die Farbe eines Gegenständes über dessen
+Mit dem Bricklet kann somit die Farbe eines Gegenstandes über dessen
 reflektiertes Licht gemessen werden.
 Um eine gleichmäßige Beleuchtung mit einer definierter Farbtemperatur zu
 erhalten ist das Bricklet mit einer API-schaltbaren LED ausgestattet.
@@ -82,7 +82,7 @@ von Objekten nach deren Farbe.
 
 Der Sensor verfügt über interne Farbfilter zur Messung der Farben Rot, Grün und 
 Blau (RGB). Die obige Grafik stellt die Empfindlichkeit des Sensors für den 
-jeweiligen Farbbereich dar. Neben der Farbinformaton (RGB) gibt der Sensor eine 
+jeweiligen Farbbereich dar. Neben der Farbinformation (RGB) gibt der Sensor eine
 zusätzliche Information aus, genannt "Clear" (C). Dies ist der Sensormesswert 
 ohne einen Farbfilter. R,G,B und C sind jeweils 16Bit Werte. Aus diesen 
 Informationen berechnet das Bricklet die Helligkeit und die Farbtemperatur 

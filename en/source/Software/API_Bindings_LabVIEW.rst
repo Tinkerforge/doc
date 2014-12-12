@@ -36,7 +36,7 @@ Installation
 ------------
 
 To make the bindings work LabVIEW has to be able to find the ``Tinkerforge.dll``.
-If you open an example then LabVIEW will search fo it and ask you if it could
+If you open an example then LabVIEW will search for it and ask you if it could
 not find it. You can avoid this search and ask procedure by putting the
 ``Tinkerforge.dll`` in a folder known to LabVIEW. The easiest option is the
 ``vi.lib`` folder of your LabVIEW installation::

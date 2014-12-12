@@ -92,7 +92,7 @@ Datei in den ``example_project/`` Ordner kopiert werden::
   -> tinkerforge
   -> example-configuration.sh
 
-Damit das Beispiel die nicht installieret ``tinkerforge`` Datei finden kann
+Damit das Beispiel die nicht installierte ``tinkerforge`` Datei finden kann
 muss jedes Auftreten des ``tinkerforge`` Befehls in der
 ``example-configuration.sh`` Datei durch ``./tinkerforge`` ersetzt werden.
 

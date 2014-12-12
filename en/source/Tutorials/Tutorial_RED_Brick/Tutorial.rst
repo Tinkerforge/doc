@@ -228,10 +228,10 @@ clicking on **Download**. By the **View** button you can directly take a look
 inside the log. With the **Delete** button you can delete the log file from the
 RED Brick.
 
-Gain internet access
+Gain Internet Access
 --------------------
 
-To gain internet access on the RED Brick we can either connect a
+To gain Internet access on the RED Brick we can either connect a
 USB WIFI/Ethernet dongle or the Ethernet Extension. In this example we
 will add the :ref:`Ethernet Extension <ethernet_extension>`:
 

@@ -60,7 +60,7 @@ Remote Switch Bricklet
 Features
 --------
 
-* Drahtlose Hausautomatisation
+* Drahtlose Hausautomatisierung
 * Steuert Funksteckdosen (:ref:`Unterstützte Steckdosen <remote_switch_supported_devices>`)
 * Kann Funksteckdosen mit Dimm-Funktion steuern
 

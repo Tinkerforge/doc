@@ -136,7 +136,7 @@ other remote stacks of Bricks and Bricklets.
 
 Advanced users can use the RED Brick with full access to the underlying
 `Debian <http://www.debian.org/>`__ system.
-The expert user can directly access gpio/spi/i2c pins for individual
+The expert user can directly access GPIO/SPI/I2C pins for individual
 hardware development over a GPIO FPC header.
 
 An introduction video is available on Youtube:
@@ -346,7 +346,7 @@ time won't be incremented if the RED Brick is not powered.
    :alt: Screenshot of settings tab showing date/time configurations.
    :align: center
 
-If you have a connection to the internet (trough the Ethernet Extension
+If you have a connection to the Internet (trough the Ethernet Extension
 or a USB WIFI dongle), the date and time are automatically set by
 NTP. You only have to configure the timezone, which is saved even if
 the RED Brick is powered down.
@@ -480,15 +480,15 @@ directory index for the binary folder.
 
 **Example to clarify:** If you want to write a PHP website that controls
 Bricks/Bricklets you can upload your PHP program ``EXAMPLE`` with id
-``EXAMPLEID`` that includes an index.php as starting point. If you now
+``EXAMPLE-ID`` that includes an ``index.php`` as starting point. If you now
 go to the RED Brick web interface and click on the "Bin" button for the
 newly created ``EXAMPLE`` program, you will get a link to
-``/programs/EXAMPLEID/bin``, which will directly execute the index.php
+``/programs/EXAMPLE-ID/bin``, which will directly execute the ``index.php``
 if opened since it will act as index for this directory.
 
-This way you can easily implement a webpage that shows environment information
+This way you can easily implement a web page that shows environment information
 gathered from Temperature/Barometer/Humidity Bricklets or you can
-have a webpage with buttons that control Relay Bricklets, etc.
+have a web page with buttons that control Relay Bricklets, etc.
 
 With the RED Brick it is super simple to write web applications that can
 control hardware.
@@ -648,7 +648,7 @@ need a Micro-SD card and a card reader. We recommend a fast card
 Windows
 """""""
 
-For Windows we recomment a tool like `Win32DiskImager
+For Windows we recommend a tool like `Win32DiskImager
 <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__ to copy the image to
 the card.
 

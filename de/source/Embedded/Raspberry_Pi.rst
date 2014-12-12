@@ -18,7 +18,7 @@ Wege das zu tun.
 
 Es gibt den empfohlenen `New Out of Box Software (NOOBS)
 <http://www.raspberrypi.org/downloads>`__ Weg. Dazu wird einfach die NOOBS ZIP
-Datei herunterladen, auf eine SD Karte enpackt und das Raspberry Pi damit
+Datei herunterladen, auf eine SD Karte entpackt und das Raspberry Pi damit
 gestartet. Dann den Schritten des graphischen Installers folgen und "Raspbian"
 zur Installation auswählen.
 
@@ -28,7 +28,7 @@ es zwei verschiedene Varianten für das Raspberry Pi: Einmal "Raspbian" (armhf)
 und "Soft-Float Debian" (armel). Raspbian nutzt die Hardware Floating Point
 Unit (FPU) des Boards und ist die empfohlene Variante. Dazu muss zuerst
 das neuste `Raspbian Image <http://www.raspberrypi.org/downloads>`__
-heruntergeladen werden und dann den Schitten dieser `Anleitung
+heruntergeladen werden und dann den Schritten dieser `Anleitung
 <http://elinux.org/RPi_Easy_SD_Card_Setup>`__ zum manuelle Einrichten einer
 SD Karte folgen.
 

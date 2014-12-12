@@ -257,7 +257,7 @@ Ohne Programmieraufwand können direkt 433MHz Aktoren wie Funksteckdosen, Dimmer
 oder Hausautomatisierungskomponenten über die Webseite 
 `www.iot-remote.com <http://www.iot-remote.com/>`__ gesteuert werden.
 Die Webseite nutzt JavaScript, das direkt im Browser ausgeführt wird. Es
-erfolgt also nach dem Laden der Webseite und des Javascipts kein Datenaustausch 
+erfolgt also nach dem Laden der Webseite und des JavaScipts kein Datenaustausch
 über einen Server sondern nur zwischen dem lokalen Gerät und der zu steuernden
 Hardware. Für eine offline Nutzung kann die Webseite heruntergeladen werden.
 
@@ -377,7 +377,7 @@ werden:
  --enable-file-cookies
 
 Die Webseite kann bei Lokale Nutzung immer noch den www.iot-remote.com Server
-nutzen um Konfiugrationen zu speichern/laden. Dieser Server kann aber auch leicht
+nutzen um Konfigurationen zu speichern/laden. Dieser Server kann aber auch leicht
 selbst aufgesetzt werden. Dazu müssen folgende Programmteile angepasst werden:
 
 * ``web/js/remote/pages/PageSettings``: ``this.HOST``,  ``this.PORT`` sowie

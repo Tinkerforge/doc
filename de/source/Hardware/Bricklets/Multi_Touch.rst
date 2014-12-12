@@ -157,7 +157,7 @@ Einfache Touchpads können mittels abisolierter Drähte erzeugt werden. Dazu
 wird der Draht mit `Aluminium Klebeband
 <https://www.tinkerforge.com/de/shop/accessories/sensors/aluminum-tape-1m.html>`__
 auf einer Oberfläche festgeklebt. Die Aluminium Fläche dient dann als Touch Pad.
-Da es sich umm eine kapazitive Technologie 
+Da es sich um eine kapazitive Technologie
 handelt können die erzeugten Flächen mit dünnen nicht-leitenden Materialien
 bedeckt werden. Ist die Empfindlichkeit dieser Pads zu hoch kann einfach ein 
 Teil des Klebebands entfernt werden oder die Sensitivität per Software
@@ -188,7 +188,7 @@ Leiterplatten Pads
    :target: ../../_images/Bricklets/cursor_pad_w_cable_1200.jpg
 
 Verschiedene Leiterplatten-Pads werden im Shop angeboten, die als Touchpads
-für das Multi Touch Bricklet genutzt werden können ohne das eigene pads
+für das Multi Touch Bricklet genutzt werden können ohne das eigene Pads
 hergestellt werden müssen.
 
  * `Cursor Pad <https://www.tinkerforge.com/de/shop/cursor-pad.html>`__

@@ -155,7 +155,7 @@ Bewegung zu reagieren.
 Status LED
 ----------
 
-Die blaue LED auf dem Bricklet is an, wenn der Sensor im "Bewegung erkannt"
+Die blaue LED auf dem Bricklet ist an, wenn der Sensor im "Bewegung erkannt"
 Zustand ist. Sie ist aus, wenn der Sensor im "keine Bewegung erkannt" Zustand
 ist.
 

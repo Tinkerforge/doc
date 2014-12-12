@@ -117,7 +117,7 @@ Atmel
 opengl
 CMake
 Crosslink
-Github
+GitHub
 Kicad
 symlink
 Symlink

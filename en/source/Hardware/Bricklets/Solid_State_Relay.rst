@@ -199,7 +199,7 @@ every second with an on-time between 0-1 seconds.
 .. warning::
    High switching frequencies produce heat in the solid state relay. If these 
    frequencies are too high, and there is not enough cooling, the relay can be
-   destroyed. The maximum switching frequency with sufficent cooling is 30Hz.
+   destroyed. The maximum switching frequency with sufficient cooling is 30Hz.
 
 
 .. _solid_state_relay_bricklet_programming_interface:

@@ -195,7 +195,7 @@ Das obige Foto zeigt einen typischen WS2801 LED Steifen. Jedes Modul des Streife
 ist mit einem WS2801 Treiber und einer davon angesteuerten RGB LED ausgestattet.
 Die Signale sind jeweils auf der Eingangsseite (IN) und auf der Ausgangsseite
 (OUT) gekennzeichnet: 5V, CK (Clock), SD (Serial Data) und GND.
-Im Gegensatz zum WS2801 haben die WS2811 und WS2812 Treiber kene Taktleitung.
+Im Gegensatz zum WS2801 haben die WS2811 und WS2812 Treiber keine Taktleitung.
 
 
 .. _led_strip_bricklet_connectivity:
@@ -324,9 +324,8 @@ WS2801 LED Steifen
 
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
 Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem WS2801 
-LED Strifen Beispiel ist der schwarze Draht :led-strip-black:`5V`, grün die
-:led-strip-green:`Taktleitung`,
-rot die :led-strip-red:`Datenleitung` und der
+LED Streifen Beispiel ist der schwarze Draht :led-strip-black:`5V`, grün die
+:led-strip-green:`Taktleitung`, rot die :led-strip-red:`Datenleitung` und der
 blaue Draht ist :led-strip-blue:`Masse`.
 
 Als erstes werden die Takt- und Datenleitung des ersten

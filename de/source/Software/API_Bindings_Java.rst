@@ -35,7 +35,7 @@ Installation
 Ob und wie die Java Bindings installiert werden müssen hängt stark davon ab wie
 sie benutzt werden sollen. Wenn der Java Compiler direkt von der Kommandozeile
 aufgerufen wird genügt es die ``Tinkerforge.jar`` Datei im gleichen Verzeichnis
-wie den Java Quelltext des Programms abzulegen und sie im Classpath mit anzugeben.
+wie den Java Quelltext des Programms abzulegen und sie im Class Path mit anzugeben.
 
 Wie die Bindings in einer bestimmten IDE zu verwenden sind hängt von der IDE ab
 und wird in der Dokumentation der jeweiligen IDE erklärt.
@@ -99,12 +99,12 @@ Brick Viewer ermittelt werden:
 
 Im ``example_project/`` Ordner kann jetzt der Java Compiler mit den folgenden
 Parametern auf Windows aufgerufen werden (für Linux und Mac OS X das ``;`` im
-Classpath durch ``:`` ersetzen)::
+Class Path durch ``:`` ersetzen)::
 
  javac -cp Tinkerforge.jar;. ExampleConfiguration.java
 
 Und ausgeführt wird es mit dem folgenden Befehl (für Linux und Mac OS X wieder
-das ``;`` im Classpath durch ``:`` ersetzen)::
+das ``;`` im Class Path durch ``:`` ersetzen)::
 
  java -cp Tinkerforge.jar;. ExampleConfiguration
 

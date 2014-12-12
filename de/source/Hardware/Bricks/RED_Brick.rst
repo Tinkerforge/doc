@@ -370,7 +370,7 @@ wenn der RED Brick das nächste mal hochfährt.
 Falls die Zeit nach dem booten immer vorhanden sein muss, ein Verbindung zum
 Internet aber nicht garantiert werden kann, dann kann auch das
 :ref:`GPS Bricklet <gps_bricklet>` benutzt werden. Dazu muss nur ein kleines
-`Programm von Github <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
+`Programm von GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
 heruntergeladen und auf den RED Brick geladen werden, um die Uhrzeit
 mittels GPS Uhrzeit zu synchronisieren.
 
@@ -494,10 +494,10 @@ Datei hochgeladen wird, so wird diese als Index Datei des binary Ordners genutzt
 
 **Beispiel zur Erklärung:** Es soll eine PHP Webseite entwickelt werden, die
 Bricks/Bricklets steuert. Dazu wird das PHP Programm ``EXAMPLE`` mit der ID
-``EXAMPLE-ID`` hochgeladen, das eine index.php als Startpunkt enthält. Wird
+``EXAMPLE-ID`` hochgeladen, das eine ``index.php`` als Startpunkt enthält. Wird
 anschließend das RED Brick Web Interface aufgerufen und der "Bin" Button der
 ``EXAMPLE`` Anwendung geklickt, so wird der Link zu ``/programs/EXAMPLE-ID/bin``
-geöffnet. Dieser Link führt direkt die index.php aus, da diese als Index Datei
+geöffnet. Dieser Link führt direkt die ``index.php`` aus, da diese als Index Datei
 des Verzeichnisses fungiert.
 
 Webseiten, die Umwelt-Messungen von einem Temperature/Barometer/Humidity
@@ -922,7 +922,7 @@ Historie
 --------
 
 Die Entwicklung des RED Bricks hat fast ein Jahr gedauert und ist in
-verschiedenen Blog Posts dokumentuiert:
+verschiedenen Blog Posts dokumentiert:
 
 * `Tinkerforge goes Stand-Alone aka RED Brick <http://www.tinkerforge.com/de/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
 * `RED Brick Leiterplatten angekommen <http://www.tinkerforge.com/de/blog/2014/4/10/red-brick-leiterplatten-angekommen>`__
