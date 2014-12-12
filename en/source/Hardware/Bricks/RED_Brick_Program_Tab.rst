@@ -27,7 +27,7 @@ If you start the RED Brick for the first time you will be presented with an
 empty program list and three buttons:
 
 * **Refresh**: Refreshes programs tab
-* **New**: Starts New Program wizard
+* **New**: Starts "New Program" wizard
 * **Delete**: Deletes selected program
 
 After you have uploaded your first program you can select the program and
@@ -50,7 +50,7 @@ Wizard Step 1: General Information
 * Language: Select the language of your program.
 * Description: The description will be shown in the program, if your program
   is selected.
-* Unique Identifier: If you uncheck *Auto-generate unique identifier* you will
+* Unique Identifier: If you uncheck *Auto-Generate Unique Identifier* you will
   have to specify your own identifier. The identifier is mostly used
   internally. You can use your own identifier if you want to have a specific
   name of the program folder in the underlying Linux.
@@ -63,7 +63,7 @@ Wizard Step 2: Files
    :alt: Screenshot of RED Brick Wizard Step 2.
    :align: center
 
-* **Add files**: Adds single program files.
+* **Add Files**: Adds single program files.
 * **Add Directory**: Adds your program directory, the included files
   and subdirectories.
 * **Remove**: Removes the selected file or directory.
@@ -87,9 +87,9 @@ Python/Flask with the following structure
     * static.css
     * static.js
 
-and you want the index.py as well as the two folders to be in the root
+and you want the ``index.py`` as well as the two folders to be in the root
 directory of your program on the RED Brick, you need to first
-select the index.py with **Add file** and then independently select the
+select the ``index.py`` with **Add Files** and then independently select the
 two folders with **Add Directory**.
 
 Every "Add" will add the thing you are selecting to the root directory
@@ -97,9 +97,12 @@ of the RED Brick program.
 
 Depending on the chosen language you have to upload different types of files:
 
-* For JavaScript, Perl, PHP, Python and Ruby you can upload the script files (e.g.: .js, .pl, .php, .py, .rb)
-* For Java, C# and Visual Basic .NET you have to upload already compiled files (e.g.: .jar, .class, .exe)
-* For C/C++ and Delphi/Lazarus you can upload crosscompiled executable or Makefile with source code (see the description in step below)
+* For JavaScript, Perl, PHP, Python and Ruby you can upload the script
+  files (e.g.: ``.js``, ``.pl``, ``.php``, ``.py``, ``.rb``)
+* For Java, C# and Visual Basic .NET you have to upload already compiled
+  files (e.g.: ``.jar``, ``.class``, ``.exe``)
+* For C/C++ and Delphi/Lazarus you can upload cross-compiled executable or
+  Makefile with source code (see the description in step below)
 
 Wizard Step 3: Language Specific Configuration
 ----------------------------------------------
@@ -117,7 +120,7 @@ C/C++
    :align: center
 
 The Tinkerforge C/C++ Bindings are preinstalled on the RED Brick
-(compiled as a library libtinkerforge.so, available in ``/usr/lib/``).
+(compiled as a library ``libtinkerforge.so``, available in ``/usr/lib/``).
 The headers are available in ``/usr/include/tinkerforge``. You can
 directly link against this library (see example below).
 
@@ -128,9 +131,9 @@ directly link against this library (see example below).
   during compilation
 * Compile From Source: If you check this checkbox, your code will be
   compiled upon upload. If you use this option your project must
-  contain a **Makefile**. An example Makefile for a small
+  contain a ``Makefile``. An example Makefile for a small
   project that uses the Tinkerforge Bindings and consists otherwise
-  of the file **example.c** looks as follows::
+  of the file ``example.c`` looks as follows::
 
     # Defines
     CC=g++
@@ -166,16 +169,16 @@ C#
    :alt: Screenshot of RED Brick Wizard Step 3 (C#).
    :align: center
 
-For C# the Tinkerforge.dll is available in ``/usr/lib/`` and can
+For C# the ``Tinkerforge.dll`` is available in ``/usr/lib/`` and can
 thus be found by mono. That means, if you compile your C# program
-and you use the Tinkerforge.dll as reference, it will be
+and you use the ``Tinkerforge.dll`` as reference, it will be
 automatically found on the RED Brick. You don't have to add
-the Tinkerforge.dll in step 2.
+the ``Tinkerforge.dll`` in step 2.
 
 * Mono Version: Currently there is only one mono version installed.
 * Start Mode: Currently only *Executable* is available as start mode.
 * Executable: Choose the .NET executable from the files that you added
-  in step 2. A .NET executable usually has the file ending .exe.
+  in step 2. A .NET executable usually has the file ending ``.exe``.
 
   Your executable will be executed with
   `mono <http://www.mono-project.com/>`__, but you can compile
@@ -204,9 +207,9 @@ Delphi/Lazarus
   during compilation
 * Compile From Source: If you check this checkbox, your code will be
   compiled upon upload. If you use this option your project must
-  contain a **Makefile.fpc**. An example Makefile for a small
+  contain a ``Makefile.fpc``. An example Makefile for a small
   project that uses the Tinkerforge Bindings and has the file
-  **Example.pas** as main unit looks as follows::
+  ``Example.pas`` as main unit looks as follows::
 
     [target]
     programs=Example
@@ -228,14 +231,14 @@ Java
    :alt: Screenshot of RED Brick Wizard Step 3 (Java).
    :align: center
 
-The Tinkerforge.jar Java Bindings are available in
+The ``Tinkerforge.jar`` Java Bindings are available in
 ``/usr/tinkerforge/bindings/java/``. The file is already added
 to the class path by default, so you can just import the Tinkerforge
 classes by the usual means, e.g. ``import com.tinkerforge.IPConnection;``.
 
 * Java Version: Currently there is only one Java version installed.
 * Start Mode: The start modes **Main Class** and **JAR File** are
-  available as start mode.
+  available as start mode:
 
   * Main Class: If you choose main class, the Brick Viewer will parse
     all of the class files that you added in step two and show you
@@ -257,16 +260,20 @@ classes by the usual means, e.g. ``import com.tinkerforge.IPConnection;``.
 JavaScript (Browser/Node.js)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+TODO: wrong image, shows Octave instead of JavaScript
+
 .. image:: /Images/Screenshots/red_brick_wizard_step3_javascript.jpg
    :scale: 60 %
    :alt: Screenshot of RED Brick Wizard Step 3 (JavaScript).
    :align: center
 
 * Client-Side (Browser): If you use client-side JavaScript, there is
-  nothing to configure. You can add your **.html** files in step 2,
+  nothing to configure. You can add your ``.html`` files in step 2,
   which are then available through the
   :ref:`RED Brick web interface <red_brick_web_interface>`. The
-  **Tinkerforge.js** can be used via::
+  ``Tinkerforge.js`` can be used via:
+
+  .. code-block:: html
 
       <script src="/Tinkerforge.js" type='text/javascript'></script>
 * Server-Side (Node.js): If you use Node.js, you can configure the
@@ -274,7 +281,7 @@ JavaScript (Browser/Node.js)
   you can use ``require('tinkerforge')`` to import them.
 
   * Start Mode: The start modes **Script File** and **Command** are
-    available as start mode.
+    available as start mode:
 
     * Start Mode *Script File*: Specify the script file that should be
       executed by node.
@@ -295,8 +302,8 @@ Octave
    :alt: Screenshot of RED Brick Wizard Step 3 (Octave).
    :align: center
 
-For octave the java path to the Tinkerforge.jar is already added
-in the octaverc. This means that in your program you can assume
+For Octave the Java path to the ``Tinkerforge.jar`` is already added
+in the ``octaverc`` file. This means that in your program you can assume
 that ``javaaddpath("Tinkerforge.jar")`` was already called with
 the correct directory.
 
@@ -329,7 +336,7 @@ directive to import them, e.g.: ``use Tinkerforge::IPConnection;``.
 * Perl Version: Currently there is only one Perl interpreter version
   installed on the RED Brick.
 * Start Mode: The start modes **Script File** and **Command** are
-  available as start mode.
+  available as start mode:
 
   * Start Mode *Script File*: Specify the script file that should be
     executed by the Perl interpreter.
@@ -357,7 +364,7 @@ function, e.g.: ``require_once('Tinkerforge/IPConnection.php');``.
 * PHP Version: Currently there is only one PHP interpreter version
   installed on the RED Brick.
 * Start Mode: The start modes **Script File**, **Command** and **Web Interface**
-  are available as start mode.
+  are available as start mode:
 
   * Start Mode *Script File*: Specify the script file that should be
     executed by the PHP interpreter.
@@ -391,7 +398,7 @@ statement, e.g.: ``from tinkerforge.ip_connection import IPConnection``.
 
 * Python Version: You can choose between Python 2 and Python 3.
 * Start Mode: The start modes **Script File**, **Module Name**, **Command** and
-  **Web Interface** are available as start mode.
+  **Web Interface** are available as start mode:
 
   * Start Mode *Script File*: Specify the script file that should be
     executed by the Python interpreter.
@@ -428,7 +435,7 @@ e.g.: ``require 'tinkerforge/ip_connection'``.
 * Ruby Version: Currently there is only one Ruby interpreter version
   installed on the RED Brick.
 * Start Mode: The start modes **Script File** and **Command** are
-  available as start mode.
+  available as start mode:
 
   * Start Mode *Script File*: Specify the script file that should be
     executed by the Ruby interpreter.
@@ -456,7 +463,7 @@ without any prefix.
 * Shell Version: Currently there is only one bash version available on the
   RED Brick.
 * Start Mode: The start modes **Script File** and **Command** are
-  available as start mode.
+  available as start mode:
 
   * Start Mode *Script File*: Specify the script file that should be
     executed by bash.
@@ -477,16 +484,16 @@ Visual Basic .NET
    :alt: Screenshot of RED Brick Wizard Step 3 (Visual Basic .NET).
    :align: center
 
-For Visual Basic .NET the Tinkerforge.dll is available in ``/usr/lib/``
+For Visual Basic .NET the ``Tinkerforge.dll`` is available in ``/usr/lib/``
 and can thus be found by mono. That means, if you compile your VB.NET
-program and you use the Tinkerforge.dll as reference, it will be
+program and you use the ``Tinkerforge.dll`` as reference, it will be
 automatically found on the RED Brick. You don't have to add
-the Tinkerforge.dll in step 2.
+the ``Tinkerforge.dll`` in step 2.
 
 * Mono Version: Currently there is only one mono version installed.
 * Start Mode: Currently only *Executable* is available as start mode.
 * Executable: Choose the .NET executable from the files that you added
-  in step 2. A .NET executable usually has the file ending .exe.
+  in step 2. A .NET executable usually has the file ending ``.exe``.
 
   Your executable will be executed with
   `mono <http://www.mono-project.com/>`__, but you can compile
@@ -511,18 +518,18 @@ Wizard Step 4: Arguments and Environment
 
 * Arguments: Your program will be called with the given arguments.
 
-Please note that you don't have to escape your arguments. If you would
-call your program on the terminal with::
+  Please note that you don't have to escape your arguments. If you would
+  call your program on the terminal with::
 
- ./my_program --setting value1 value2
+    ./my_program --setting value1 value2
 
-You have to add the three arguments **--settings**, **value1**
-and **value2** individually to the argument list.
+  You have to add the three arguments **--settings**, **value1**
+  and **value2** individually to the argument list.
 
-If you only add the one argument **--settings value1 value2**
-it will be equivalent to the following call in  the terminal::
+  If you only add the one argument **--settings value1 value2**
+  it will be equivalent to the following call in  the terminal::
 
- ./my_program --settings\ value1\ value2
+    ./my_program --settings\ value1\ value2
 
 * Environment: Your program will have the environment variables
   that you set here available. Environment variables that are
@@ -593,7 +600,7 @@ Wizard Step 6: Schedule
 
   As you can see, you can specify quite complex tasks with cron. There
   is a big number of `cron tutorials <http://www.linuxhelp.net/guides/cron/>`__
-  available on the internet.
+  available on the Internet.
 
   Please note that your RED Brick needs to have the current time available for
   cron to work. The RED Brick is not equipped with a clock, which is also active

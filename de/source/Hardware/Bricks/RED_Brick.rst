@@ -680,7 +680,7 @@ Linux und Mac OS X
 """"""""""""""""""
 
 1. Verbinde die SD Karte über den Kartenleser mit dem PC oder Mac
-2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``dmesg``)
+2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``dmesg`` oder ``df -h``)
 3. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_0_full.img``) auf die
    SD Karte (z.B. ``/dev/sdb``) schreiben:
 
