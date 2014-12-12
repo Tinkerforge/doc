@@ -114,11 +114,12 @@ bindings = [Binding('Modbus',            'modbus',      'Modbus',      False, Tr
 
 
 class Product:
-    def __init__(self, display_name, url_part, bindings, is_published):
+    def __init__(self, display_name, url_part, bindings, is_published, has_firmware=True):
         self.display_name = display_name
         self.url_part = url_part
         self.bindings = bindings
         self.is_published = is_published
+        self.has_firmware = has_firmware
 
     @property
     def url_part_for_hardware_doc(self):
@@ -181,7 +182,7 @@ bricks = [Brick('DC',      'dc',      bindings, True),
           Brick('Debug',   'debug',   [],       True),
           Brick('IMU',     'imu',     bindings, True),
           Brick('Master',  'master',  bindings, True),
-          Brick('RED',     'red',     bindings, False),
+          Brick('RED',     'red',     bindings, False, has_firmware=False),
           Brick('Servo',   'servo',   bindings, True),
           Brick('Stepper', 'stepper', bindings, True)]
 
@@ -884,14 +885,14 @@ def make_download_firmwares_table():
     bricklet_rows = []
 
     for brick in bricks:
-        if len(brick.bindings) > 0 and brick.is_published:
+        if len(brick.bindings) > 0 and brick.is_published and brick.has_firmware:
             brick_rows.append(brick_row_cell.format(brick.display_name, brick.url_part, brick.url_part_for_git, source_code, archive, *firmware_versions[brick.url_part]))
 
     def handle_bricklet(name, common_url_part, plugin_url_part):
         bricklet_rows.append(bricklet_row_cell.format(name, common_url_part, common_url_part.replace('_', '-').replace('/', '-'), plugin_url_part, source_code, archive, *plugin_versions[plugin_url_part]))
 
     for bricklet in bricklets:
-        if len(bricklet.bindings) > 0 and bricklet.is_published:
+        if len(bricklet.bindings) > 0 and bricklet.is_published and bricklet.has_firmware:
             if bricklet.url_part == 'lcd_20x4':
                 handle_bricklet(bricklet.display_name + ' 1.1', bricklet.url_part, bricklet.url_part + '_v11')
                 handle_bricklet(bricklet.display_name + ' 1.2', bricklet.url_part, bricklet.url_part + '_v12')
