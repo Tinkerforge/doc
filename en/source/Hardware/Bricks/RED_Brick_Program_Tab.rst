@@ -259,8 +259,6 @@ classes by the usual means, e.g. ``import com.tinkerforge.IPConnection;``.
 JavaScript (Browser/Node.js)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO: wrong image, shows Octave instead of JavaScript
-
 .. image:: /Images/Screenshots/red_brick_wizard_step3_javascript.jpg
    :scale: 60 %
    :alt: Screenshot of RED Brick Wizard Step 3 (JavaScript).

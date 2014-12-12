@@ -260,8 +260,6 @@ Z.B. mittels ``import com.tinkerforge.IPConnection;``.
 JavaScript (Browser/Node.js)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TODO: Falsches Bild, zeigt Octave statt JavaScript
-
 .. image:: /Images/Screenshots/red_brick_wizard_step3_javascript.jpg
    :scale: 60 %
    :alt: Screenshot des RED Brick Wizard Schritt 3 (JavaScript).
