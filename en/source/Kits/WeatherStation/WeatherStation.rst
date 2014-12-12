@@ -119,7 +119,7 @@ and a demo application are available. This will give you a starting point into t
 programming with Tinkerforge.
 
 A small video that shows the construction and some applications 
-can be found on Youtube:
+is available on Youtube:
 
 .. raw:: html
 
