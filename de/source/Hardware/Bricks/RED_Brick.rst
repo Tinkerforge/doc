@@ -925,22 +925,21 @@ werden, nicht außer acht gelassen werden.
 FAQ
 ---
 
-* Q: Ich habe mein RED Brick mit einem Linux PC verbunden. Ich sehe aber kein
-  ``/dev/ttyACM0`` Gerät um mich mit der seriellen Konsole zu verbinden.
-* A: Der ``cdc_acm`` Treiber muss geladen werden
+* Q: Ich habe mein RED Brick mit einem Linux PC verbunden. Ich sehe aber
+  kein ``/dev/ttyACM0`` Gerät um mich mit der seriellen Konsole zu verbinden.
 
-
+  A: Der ``cdc_acm`` Treiber muss geladen werden.
 * Q: Die rote und blaue LED sind an, aber nichts passiert.
-* A: Der RED Brick bootet nicht. Überprüfe die Micro-SD-Karte.
 
+  A: Der RED Brick bootet nicht. Überprüfe die Micro-SD-Karte.
 
 .. _red_brick_programming_interface:
 
 Programmierschnittstelle
 ------------------------
 
-Die RED Brick API ist dazu gedacht um für den Brick Viewer die angebotene 
-Funktionalität zu implementieren (Statusinformationen bekommen, Programme 
+Die RED Brick API ist dazu gedacht um für den Brick Viewer die angebotene
+Funktionalität zu implementieren (Statusinformationen bekommen, Programme
 managen, etc.). Diese API ist ggf. für Power User interessant, normale
 Nutzer benötigen diese nicht.
 

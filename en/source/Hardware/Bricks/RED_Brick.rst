@@ -900,11 +900,11 @@ FAQ
 
 * Q: I connected the RED Brick to my Linux PC. Why is there no ``/dev/ttyACM0``
   device to access its serial console?
-* A: The ``cdc_acm`` driver has to be loaded for this to work.
 
-
+  A: The ``cdc_acm`` driver has to be loaded for this to work.
 * Q: The red and blue LED are on. But nothing happens.
-* A: The RED Brick is not booting. Please check your Micro-SD card.
+
+  A: The RED Brick is not booting. Please check your Micro-SD card.
 
 
 .. _red_brick_programming_interface:
