@@ -156,8 +156,8 @@ brick_descriptions = {
     'de': 'Ist Grundlage um Stapel zu bauen und bietet 4 Bricklet Anschlüsse'
     },
 'red': {
-    'en': 'Executes user programs standalone',
-    'de': 'Führt Nutzerprogramme eigenständig aus'
+    'en': 'Executes user programs and controls other Bricks/Bricklets standalone',
+    'de': 'Führt Programme aus und steuert andere Bricks/Bricklets selbständig'
     },
 'servo': {
     'en': 'Drives up to 7 RC Servos with max. 3A',
@@ -181,7 +181,7 @@ bricks = [Brick('DC',      'dc',      bindings, True),
           Brick('Debug',   'debug',   [],       True),
           Brick('IMU',     'imu',     bindings, True),
           Brick('Master',  'master',  bindings, True),
-          Brick('RED',     'red',     bindings, False),
+          Brick('RED',     'red',     bindings, True),
           Brick('Servo',   'servo',   bindings, True),
           Brick('Stepper', 'stepper', bindings, True)]
 
