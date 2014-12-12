@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / <a href="RED_Brick.html">RED Brick</a> / Program Tab
-:FIXME_shoplink: ../../../shop/bricks/red-brick.html
+:shoplink: ../../../shop/bricks/red-brick.html
 
 .. include:: RED_Brick.substitutions
 
@@ -27,7 +27,7 @@ Mit drei Buttons unter der Programmliste können folgende Aktionen durchgeführt
 werden:
 
 * **Refresh**: Aktualisiert die Liste
-* **New**: Startet den "New Program Wizard"
+* **New**: Startet den "New Program" Wizard
 * **Delete**: Löscht das ausgewählte Programm
 
 Nachdem das erste eigene Programm hochgeladen wurde, kann dieses ausgewählt
@@ -52,7 +52,7 @@ Wizard Schritt 1: Einfache Informationen
 * Language: Wählt die Programmiersprache des Programms
 * Description: Der eingegebene Text wird als Beschreibung angezeigt, wenn das
   Programm ausgewählt wird.
-* Unique Identifier: Wenn *Auto-generate unique identifier* abgewählt wird, muss
+* Unique Identifier: Wenn *Auto-Generate Unique Identifier* abgewählt wird, muss
   ein eigener eindeutiger Bezeichner gewählt werden. Dieser wird hauptsächlich
   intern verwendet und dient zum Beispiel zur Benennung des Programmordners
   im Linux System.
@@ -65,14 +65,13 @@ Wizard Schritt 2: Dateien
    :alt: Screenshot der RED Brick Wizard Schritt 2.
    :align: center
 
-* **Add files**: Fügt einzelne Programm-Dateien hinzu.
+* **Add Files**: Fügt einzelne Programm-Dateien hinzu.
 * **Add Directory**: Fügt einzelne Programm-Ordner, deren enthaltenen Dateien
   und Unterordner hinzu.
 * **Remove**: Löscht die selektierte Datei oder Ordner.
 
 Die hierarchische Struktur die hier definiert wird, wird eins-zu-eins auf dem
 RED Brick genutzt.
-
 Wenn als Beispiel eine kleine Webseite, die mit Python/Flask geschrieben wurde,
 mit folgender Struktur hochgeladen werden soll
 
@@ -89,9 +88,9 @@ mit folgender Struktur hochgeladen werden soll
     * static.css
     * static.js
 
-und sowohl index.py als auch die beiden Ordner im Root Verzeichnis seien
-sollen, muss als erstes die index.py mit **Add Files** hinzugefügt werden.
-Anschließend muss jedes Unterverzeichnis einzelnd mit **Add Directory**
+und sowohl ``index.py`` als auch die beiden Ordner im Root Verzeichnis seien
+sollen, muss als erstes die ``index.py`` mit **Add Files** hinzugefügt werden.
+Anschließend muss jedes Unterverzeichnis einzeln mit **Add Directory**
 hinzugefügt werden.
 
 Jedes "Add" fügt etwas zum Root Verzeichnis des RED Brick Programms hinzu.
@@ -99,9 +98,9 @@ Jedes "Add" fügt etwas zum Root Verzeichnis des RED Brick Programms hinzu.
 Je nach gewählter Sprache können verschiedene Dateien hochgeladen werden:
 
 * Bei JavaScript, Perl, PHP, Python und Ruby können die Script-Dateien
-  hochgeladen werden (z.B.: .js, .pl, .php, .py, .rb)
+  hochgeladen werden (z.B.: ``.js``, ``.pl``, ``.php``, ``.py``, ``.rb``)
 * Bei Java, C# und Visual Basic .NET müssen bereits kompilierte Dateien
-  hochgeladen werden (z.B.: .jar, .class, .exe)
+  hochgeladen werden (z.B.: ``.jar``, ``.class``, ``.exe``)
 * Bei C/C++ und Delphi/Lazarus kann eine cross-kompilierte ausführbare Datei
   (Executable) oder eine Makefile mit Source Code hochgeladen werden (siehe
   folgende Beschreibung)
@@ -123,7 +122,7 @@ C/C++
    :align: center
 
 Die Tinkerforge C/C++ Bindings sind auf dem RED Brick vorinstalliert
-(Kompiliert als Bibliothek libtinkerforge.so, verfügbar in ``/usr/lib/``).
+(kompiliert als Bibliothek ``libtinkerforge.so``, verfügbar in ``/usr/lib/``).
 Die Header sind verfügbar in ``/usr/include/tinkerforge``. Es kann direkt gegen
 die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
 
@@ -133,10 +132,10 @@ die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
   es ist der Name der ausführbaren Datei, die während des Kompilierens erstellt
   wird.
 * Compile From Source: Wird diese Checkbox aktiviert, so wird der Code nach dem
-  Hochladen kompiliert. Eine **Makefile** muss im Projekt enthalten sein, damit
+  Hochladen kompiliert. Eine ``Makefile`` muss im Projekt enthalten sein, damit
   diese Option genutzt werden kann. Nachfolgend eine Beispiel-Makefile für ein
   kleines  Projekt, das die Tinkerforge Bindings benutzt und die Datei
-  **example.c** kompiliert::
+  ``example.c`` kompiliert::
 
     # Defines
     CC=g++
@@ -157,7 +156,7 @@ die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
 
     clean:
     	rm -f *.o $(EXE)
-* Make Options: Wenn vom Source kompiliert wird, könnnen hier Makefile Parameter
+* Make Options: Wenn vom Source kompiliert wird, können hier Makefile Parameter
   angegeben werden.
 * Working Directory: Spezifiziert das
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
@@ -172,15 +171,15 @@ C#
    :alt: Screenshot des RED Brick Wizard Schritt 3 (C#).
    :align: center
 
-Die C# Tinkerforge.dll ist in ``/usr/lib/`` verfügbar und wird daher von Mono
-direkt gefunden. Jedes C# Programm, dass die Tinkerforge.dll als Referenz nutzt,
-kann also ohne Angabe der Tinkerforge.dll im vorherigen Schritt (Schritt 2)
+Die C# ``Tinkerforge.dll`` ist in ``/usr/lib/`` verfügbar und wird daher von Mono
+direkt gefunden. Jedes C# Programm, dass die ``Tinkerforge.dll`` als Referenz nutzt,
+kann also ohne Angabe der ``Tinkerforge.dll`` im vorherigen Schritt (Schritt 2)
 kompiliert werden.
 
 * Mono Version: Aktuell ist nur eine Mono Version installiert.
 * Start Mode: Aktuell ist nur *Executable* verfügbar.
 * Executable: Wähle die ausführbare .NET Datei, die in Schritt 2 hinzugefügt
-  wurde. Diese Datei hat typischerweise die Endung .exe.
+  wurde. Diese Datei hat typischerweise die Endung ``.exe``.
 
   Die ausführbare Datei wird mit `Mono <http://www.mono-project.com/>`__
   ausgeführt. Die Datei kann auch unter Windows mit Visual Studio kompiliert
@@ -208,9 +207,9 @@ Delphi/Lazarus
   hochgeladen wurde, oder der Name der ausführbaren Datei die während des
   Kompilieren erstellt wird.
 * Compile From Source: Wird diese Checkbox aktiviert, so wird der Code nach dem
-  Hochladen kompiliert. Es muss eine **Makefile.fpc** enthalten sein, damit
+  Hochladen kompiliert. Es muss eine ``Makefile.fpc`` enthalten sein, damit
   diese Option genutzt werden kann. Eine Beispiel-Makefile für ein kleines
-  Projekt, das die Tinkerforge Bindings und die Datei **Example.pas** als
+  Projekt, das die Tinkerforge Bindings und die Datei ``Example.pas`` als
   Hauptmodul nutzt, sieht wie folgt aus::
 
     [target]
@@ -233,7 +232,7 @@ Java
    :alt: Screenshot des RED Brick Wizard Schritt 3 (Java).
    :align: center
 
-Die Tinkerforge.jar Bindings sind unter
+Die ``Tinkerforge.jar`` Java Bindings sind unter
 ``/usr/tinkerforge/bindings/java/`` installiert. Die Datei ist zum Class Path
 hinzugefügt, so dass die Tinkerforge Klassen nur importiert werden müssen.
 Z.B. mittels ``import com.tinkerforge.IPConnection;``.
@@ -261,16 +260,20 @@ Z.B. mittels ``import com.tinkerforge.IPConnection;``.
 JavaScript (Browser/Node.js)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+TODO: Falsches Bild, zeigt Octave statt JavaScript
+
 .. image:: /Images/Screenshots/red_brick_wizard_step3_javascript.jpg
    :scale: 60 %
    :alt: Screenshot des RED Brick Wizard Schritt 3 (JavaScript).
    :align: center
 
 * Client-Side (Browser): Wenn Client seitiges JavaScript genutzt wird, muss
-  nichts konfiguriert werden. Es mussten nur die **.html** Dateien in Schritt 2
+  nichts konfiguriert werden. Es mussten nur die ``.html`` Dateien in Schritt 2
   zuvor hinzugefügt werden, die dann über das
   :ref:`RED Brick Web Interface <red_brick_web_interface>` verfügbar sind.
-  **Tinkerforge.js** kann genutzt werden mittels::
+  ``Tinkerforge.js`` kann genutzt werden mittels:
+
+  .. code-block:: html
 
       <script src="/Tinkerforge.js" type='text/javascript'></script>
 * Server-Side (Node.js): Wenn Node.js genutzt wird können der Start Mode und
@@ -278,7 +281,7 @@ JavaScript (Browser/Node.js)
   können mittels ``require('tinkerforge')`` importiert werden.
 
   * Start Mode: **Script File** und **Command** sind verfügbar
-    als Start Mode.
+    als Start Mode:
 
     * Start Mode *Script File*: Gebe die Skriptdatei an, die ausgeführt werden
       soll.
@@ -288,7 +291,6 @@ JavaScript (Browser/Node.js)
     `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
     des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
     Typischerweise kann dies bei ``.`` belassen werden.
-
   * Node.js Options: Hier können Optionen hinzugefügt werden, die an Node
     übergeben werden, wenn die Skriptdatei oder das Kommando ausgeführt werden.
 
@@ -300,7 +302,7 @@ Octave
    :alt: Screenshot des RED Brick Wizard Schritt 3 (Octave).
    :align: center
 
-Der Java Pfad zur Tinkerforge.jar ist bereits zur octaverc hinzugefügt worden.
+Der Java Pfad zur ``Tinkerforge.jar`` ist bereits zur ``octaverc`` hinzugefügt worden.
 Das eigene Programm kann daher annehmen, dass ``javaaddpath("Tinkerforge.jar")``
 bereits mit dem korrekten Verzeichnis aufgerufen wurde.
 
@@ -330,7 +332,7 @@ Die Tinkerforge Bindings sind für Perl ebenfalls verfügbar. Nutze die ``use``
 Direktive um sie zu importieren, z.B: ``use Tinkerforge::IPConnection;``.
 
 * Perl Version: Aktuell ist nur eine Version des Perl Interpreters installiert.
-* Start Mode **Script File** und **Command** stehen zur Verfügung.
+* Start Mode **Script File** und **Command** stehen zur Verfügung:
 
   * Start Mode *Script File*: Hier wird die Skriptdatei angegeben, die vom Perl
     Interpreter ausgeführt werden soll.
@@ -360,7 +362,7 @@ Mittels ``require_once`` können diese importiert werden, z.B.:
 * PHP Version: Aktuell ist nur eine PHP Interpreter Version auf dem RED Brick
   installiert.
 * Start Mode **Script File**, **Command** und **Web Interface** stehen zur
-  Verfügung
+  Verfügung:
 
   * Start Mode *Script File*: Spezifiziert die Skriptdatei, die vom PHP
     Interpreter ausgeführt werden soll.
@@ -393,10 +395,10 @@ werden, z.B.: ``from tinkerforge.ip_connection import IPConnection``.
 
 * Python Version: Es kann zwischen Python 2 und Python 3 gewählt werden.
 * Start Mode **Script File**, **Command**, **Module Name** und **Web Interface**
-  stehen zur Verfügung
+  stehen zur Verfügung:
 
   * Start Mode *Script File*: Spezifiziert die Skriptdatei, die vom Python
-    Interpreter ausgefürt werden soll.
+    Interpreter ausgeführt werden soll.
   * Start Mode *Module Name*: Spezifiziert einen Modulnamen, der vom Python
     Interpreter mittels der **-m** Option ausgeführt werden soll
   * Start Mode *Command*: Spezifiziert ein Kommando, welches mittels der **-c**
@@ -476,15 +478,15 @@ Visual Basic .NET
    :alt: Screenshot des RED Brick Wizard Schritt 3 (Visual Basic .NET).
    :align: center
 
-Die Tinkerforge.dll ist unter ``/usr/lib/`` für Visual Basic .NET verfügbar und
+Die ``Tinkerforge.dll`` ist unter ``/usr/lib/`` für Visual Basic .NET verfügbar und
 kann direkt von Mono gefunden werden. Jedes Visual Basic .NET Programm, dass die
-Tinkerforge.dll als Referenz nutzt, kann also ohne Angabe der Tinkerforge.dll im
+``Tinkerforge.dll`` als Referenz nutzt, kann also ohne Angabe der ``Tinkerforge.dll`` im
 zuvorigen Schritt (Schritt 2) kompiliert werden.
 
 * Mono Version: Aktuell ist nur eine Mono Version installiert.
 * Start Mode: Es wird momentan nur *Executable* unterstützt.
 * Executable: Wähle die ausführbare .NET Datei von den in Schritt 2 zuvor
-  gewählten dateien. Die Endung ist typischerweise .exe.
+  gewählten Dateien. Die Endung ist typischerweise ``.exe``.
 
   Die ausführbare Datei wird mit `Mono <http://www.mono-project.com/>`__
   ausgeführt. Die Datei kann unter Windows zuvor mit Visual Studio kompiliert
@@ -509,18 +511,18 @@ Wizard Schritt 4: Argumente und Umgebungsvariablen
 
 * Arguments: Das Programm wird mit den angegebenen Argumenten aufgerufen
 
-Dabei ist zu beachten, dass Argumente nicht escaped werden müssen. Wenn zum
-Beispiel ein Programm mittels::
+  Dabei ist zu beachten, dass Argumente nicht escaped werden müssen. Wenn zum
+  Beispiel ein Programm mittels::
 
- ./my_program --setting value1 value2
+    ./my_program --setting value1 value2
 
-aufgerufen werden soll, so müssen drei Argumente
-**--settings**, **value1** und **value2** einzeln in der Liste angegeben werden.
+  aufgerufen werden soll, so müssen drei Argumente
+  **--settings**, **value1** und **value2** einzeln in der Liste angegeben werden.
 
-Wenn nur ein Argument mit dem Inhalt **--settings value1 value2** übergeben wird
-ist dies gleichbedeutend mit folgendem Programmaufruf::
+  Wenn nur ein Argument mit dem Inhalt **--settings value1 value2** übergeben wird
+  ist dies gleichbedeutend mit folgendem Programmaufruf::
 
- ./my_program --settings\ value1\ value2
+    ./my_program --settings\ value1\ value2
 
 * Environment: Die Umgebungsvariablen, die hier gesetzt werden, sind für das
   Programm verfügbar. Umgebungsvariablen, die zum Programmstart notwendig sind,
@@ -561,7 +563,7 @@ kannst du vermutlich einfach **Next** klicken.
 
 * Standard Error: Für die Ausgabe von Fehlern werden die gleichen Möglichkeiten
   geboten, wie für den Standard Output. Zusätzlich gibt es die Möglichkeit
-  Fehler ebenfalls in das Log des Standard Outputs zu schreiben (redirect).
+  Fehler ebenfalls in das Log des Standard Outputs zu schreiben (Redirect).
 
 
 Wizard Schritt 6: Schedule
@@ -576,7 +578,7 @@ Wizard Schritt 6: Schedule
   kann nur manuell im Program Tab des Brick Viewers gestartet werden.
 * Mode *Always*: Der Scheduler versucht immer das Programm am laufen zu halten.
   Wenn das Programm beendet wird, so wird es direkt wieder gestartet. Dies ist
-  insbesondere für Kontroll-Programme sinnvoll, die permanent laufen sollen.
+  insbesondere für Kontrollprogramme sinnvoll, die permanent laufen sollen.
 * Mode *Interval*: Hier kann ein Intervall (in Sekunden) definiert werden im
   das Programm ausgeführt werden soll.
 * Mode *Cron*: Nutze `cron <http://de.wikipedia.org/wiki/Cron>`__ um die
@@ -597,13 +599,12 @@ Wizard Schritt 6: Schedule
   im Internet.
 
   Zur Nutzung von Cron ist die aktuelle Uhrzeit notwendig. Der RED Brick verfügt
-  aber über keine Uhr, die weiterläuft wenn der Brick heruntergefahren
+  aber über keine Uhr, die weiter läuft wenn der Brick heruntergefahren
   wurde. Verfügt der RED Brick eine Verbindung zum Internet, so werden Datum und
   Uhrzeit neu gesetzt (mittels NTP). Sie können auch manuell im Date/Time
   Abschnitt des Settings Tab gesetzt werden. Alternativ kann auch das GPS
   Bricklet genutzt werden um
   `die Uhrzeit mittels GPS zu synchronisieren <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__.
-
 * Mode *Once After Startup*: Der Scheduler führt das Programm nur einmal nach
   dem Hochladen aus.
 * Continue After Error: Wenn diese Checkbox nicht aktiviert ist, dann stoppt
@@ -630,8 +631,7 @@ Wizard Schritt 8: Upload
    :alt: Screenshot des RED Brick Wizard Schritt 8.
    :align: center
 
-Im letzen Schritt kann der **Start Upload** Button geklickt werden um die
+Im letzten Schritt kann der **Start Upload** Button geklickt werden um die
 ausgewählten Dateien hochzuladen und die Konfiguration zu übernehmen. Das
 Programm wird direkt nach dem Hochladen oder verzögert, je nach dem gewählten
 Scheduling in Schritt 6, ausgeführt.
-
