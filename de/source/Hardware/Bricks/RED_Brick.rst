@@ -160,6 +160,12 @@ zugrundeliegenden `Debian <http://www.debian.org>`__ System nutzen. Ein GPIO FPC
 Steckverbinder ermöglicht den Zugriff auf ausgewählte Prozessorsignale und kann
 genutzt werden um eigene Entwicklungen anzubinden.
 
+Ein Einführungsvideo gibt es auf Youtube:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/BaS06VwU5Tw" frameborder="0" allowfullscreen></iframe></center>
+
 Technische Spezifikation
 ------------------------
 

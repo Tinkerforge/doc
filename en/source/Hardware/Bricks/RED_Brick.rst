@@ -156,8 +156,11 @@ Advanced users can use the RED Brick with full access to the underlying
 The expert user can directly access gpio/spi/i2c pins for individual
 hardware development over a GPIO FPC header.
 
+An introduction video is available on Youtube:
 
+.. raw:: html
 
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/NORpY81Ss6o" frameborder="0" allowfullscreen></iframe></center>
 
 Technical Specifications
 ------------------------
