@@ -281,8 +281,8 @@ Develop a custom RED Brick GUI
 
 Another type of program that the RED Brick can execute is a GUI program
 that is shown on the HDMI output.
-In this example we will add a `Qt <http://pyqt.sourceforge.net/>`__ GUI to the
-simple Temperature Bricklet program.
+In this example we will add a `PyQt <http://sourceforge.net/projects/pyqt/>`__
+GUI to the simple Temperature Bricklet program.
 
 `Download (example_gui_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_gui_red.py>`__
 

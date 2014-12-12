@@ -289,8 +289,8 @@ Entwicklung von GUI Programmen mit dem RED Brick
 Eine weitere Art von Programmen, die auf dem RED Brick ausgeführt werden können,
 sind Programme mit grafischer Nutzerschnittstelle (GUI), die über die HDMI
 Schnittstelle des Bricks angezeigt werden. In diesem Beispiel fügen wir eine
-`Qt <http://pyqt.sourceforge.net/>`__ GUI unserem einfachen Temperature Bricklet
-Programm hinzu.
+`PyQt <http://sourceforge.net/projects/pyqt/>`__ GUI unserem einfachen
+Temperature Bricklet Programm hinzu.
 
 `Download (example_gui_red.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/example_gui_red.py>`__
 

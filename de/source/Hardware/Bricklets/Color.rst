@@ -64,7 +64,7 @@ Mit dem Color :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` die 
 `Farbe <http://de.wikipedia.org/wiki/Farbe>`__,
 `Farbtemperatur <http://de.wikipedia.org/wiki/Farbtemperatur>`__ und die 
-`Beleuchtungsstärke <http://de.wikipedia.org/wiki/Beleuchtungsstärke>`__ einer
+`Beleuchtungsstärke <http://de.wikipedia.org/wiki/Beleuchtungsst%C3%A4rke>`__ einer
 Lichtquelle messen.
 Mit dem Bricklet kann somit die Farbe eines Gegenständes über dessen
 reflektiertes Licht gemessen werden.

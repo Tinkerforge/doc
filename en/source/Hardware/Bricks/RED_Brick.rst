@@ -135,7 +135,7 @@ be extended by an Ethernet interface. The
 other remote stacks of Bricks and Bricklets.
 
 Advanced users can use the RED Brick with full access to the underlying
-`Debian <http://www.debian.org>`__ system.
+`Debian <http://www.debian.org/>`__ system.
 The expert user can directly access gpio/spi/i2c pins for individual
 hardware development over a GPIO FPC header.
 

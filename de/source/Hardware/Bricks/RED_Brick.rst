@@ -601,7 +601,7 @@ RED Brick Software Images
 -------------------------
 
 Das RED Brick Software Image ist auf einer Micro-SD-Karte gespeichert. Es ist
-ein modifiziertes `Debian <http://debian.org/>`__ Image und in zwei
+ein modifiziertes `Debian <http://www.debian.org/>`__ Image und in zwei
 verschiedenen Versionen erhältlich: Das "Full" und das "Fast" Image. Beide
 Images unterstützen die Ausführung von eigenen Programmen und verfügen über alle
 notwendigen Tinkerforge Bibliotheken.
