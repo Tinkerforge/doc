@@ -72,7 +72,6 @@ Wizard Schritt 2: Dateien
 
 Die hierarchische Struktur die hier definiert wird, wird eins-zu-eins auf dem
 RED Brick genutzt.
-
 Wenn als Beispiel eine kleine Webseite, die mit Python/Flask geschrieben wurde,
 mit folgender Struktur hochgeladen werden soll
 

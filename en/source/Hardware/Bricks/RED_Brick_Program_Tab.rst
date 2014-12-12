@@ -70,7 +70,6 @@ Wizard Step 2: Files
 
 Please note that the hierarchical structure that you create here will be used
 on the RED Brick exactly as specified.
-
 For example, if you want to upload a small web page that is written in
 Python/Flask with the following structure
 
