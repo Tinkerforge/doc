@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / RED Brick
-:FIXME_shoplink: ../../../shop/bricks/red-brick.html
+:shoplink: ../../../shop/bricks/red-brick.html
 
 .. include:: RED_Brick.substitutions
 
