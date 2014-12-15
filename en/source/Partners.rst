@@ -5,6 +5,34 @@
 Partners
 ========
 
+
+.. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/codecentric-logo.png
+       :alt: Codecentric logo
+       :align: center
+       :target: http://www.codecentric.de/
+
+  .. container:: partnertext
+
+    .. rubric:: Codecentric
+
+    `Codecentric <http://www.codecentric.de>`__ is a leading IT consulting 
+    company, specialized in agile 
+    software development, performance and continuous delivery. We always focus 
+    on providing the best solution for our customers and are specialized in 
+    custom made software development. Creating effective IT solutions is a 
+    team-effort. A team where everyone is motivated to work together with the 
+    customer and deliver quality software in the shortest possible time. The 
+    experience this takes is shared also outside codecentric, as we believe in 
+    giving back to the community. Besides numerous projects around Continuous 
+    Delivery, Big Data, Performance Solutions, Agile and Enterprise Software 
+    Development we also focus on new and exciting topics like the Internet of 
+    Things.
+
+
 .. container::
 
   .. container:: partnerlogo

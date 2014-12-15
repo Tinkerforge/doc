@@ -5,6 +5,31 @@
 Partner
 =======
 
+.. container::
+
+  .. container:: partnerlogo
+
+    .. image:: /Images/Misc/codecentric-logo.png
+       :alt: Codecentric logo
+       :align: center
+       :target: http://www.codecentric.de/
+
+  .. container:: partnertext
+
+    .. rubric:: Codecentric
+
+    Als Experte für individuelle Software-Entwicklungen ist die 
+    `codecentric AG <http://www.codecentric.de>`__
+    der Vordenker für agile Software-Entwicklung und innovative Technologien in 
+    Deutschland. Wegbereiter zu sein ist ein elementarer Wert bei codecentric. 
+    Wir entwickeln Software-Lösungen der Zukunft – an diesem Anspruch muss sich 
+    jeder unserer rund 250 Mitarbeiter messen lassen. codecentric kombiniert das 
+    Know-how der besten IT-Architekten und Softwareentwickler in Deutschland mit 
+    dem Praxis-Wissen aus zahlreichen Projekten in den Bereichen Continuous 
+    Delivery, Big Data, Performance Solutions, Agile und Enterprise Software 
+    Development. Daneben legen wir auch ein Augenmerk auf neue und spannende 
+    Themenfelder wie das Internet der Dinge.
+
 
 .. container::
 
