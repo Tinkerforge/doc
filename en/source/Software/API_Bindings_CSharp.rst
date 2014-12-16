@@ -46,7 +46,7 @@ depends on the IDE and will be explained in documentation of that IDE.
 The C# bindings are also available as `NuGet package
 <https://www.nuget.org/packages/Tinkerforge/>`__ that can be added in Visual
 Studio C# and MonoDevelop (via `NuGet addin
-<https://github.com/mrward/monodevelop-nuget-addin`__) to your project as
+<https://github.com/mrward/monodevelop-nuget-addin>`__) to your project as
 external reference.
 
 

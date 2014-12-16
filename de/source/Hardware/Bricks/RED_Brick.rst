@@ -624,7 +624,7 @@ müssen steht mehr RAM Speicher (sonst zwischen CPU und GPU geteilt) zur
 Verfügung und der Bootvorgang erfolgt schneller.
 
 Neue Software kann in beiden Images installiert werden. Siehe die
-`Beschreibung des Versions Tab <red_brick_brickv_versions_tab>`__,
+:ref:`Beschreibung des Versions Tab <red_brick_brickv_versions_tab>`,
 wie neue Software installiert wird.
 
 Eine Liste der vorinstallierten Bibliotheken steht zur Verfügung:

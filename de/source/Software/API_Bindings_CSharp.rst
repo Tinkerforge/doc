@@ -48,7 +48,7 @@ IDE erklärt.
 Die C# Bindings sind auch als `NuGet Package
 <https://www.nuget.org/packages/Tinkerforge/>`__ verfügbar, das in Visual
 Studio und MonoDevelop (via `NuGet Addin
-<https://github.com/mrward/monodevelop-nuget-addin`__) zum jeweiligen Projekt
+<https://github.com/mrward/monodevelop-nuget-addin>`__) zum jeweiligen Projekt
 hinzugefügt werden kann.
 
 

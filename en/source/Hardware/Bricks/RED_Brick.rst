@@ -603,7 +603,7 @@ which means that the RED Brick has more available RAM (RAM is shared between
 CPU and GPU) and will boot faster.
 
 New software can be installed on both images.
-See the `description of the versions tab <red_brick_brickv_versions_tab>`__
+See the :ref:`description of the versions tab <red_brick_brickv_versions_tab>`
 on how to install new software.
 
 A list of pre-installed programming language libraries is available:
