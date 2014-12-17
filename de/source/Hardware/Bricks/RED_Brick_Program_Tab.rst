@@ -603,7 +603,7 @@ Wizard Schritt 6: Schedule
   Abschnitt des Settings Tab gesetzt werden. Alternativ kann auch das GPS
   Bricklet genutzt werden um
   `die Uhrzeit mittels GPS zu synchronisieren <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__.
-* Mode *Once After Startup*: Der Scheduler führt das Programm nur einmal nach
+* Mode *Once After Upload*: Der Scheduler führt das Programm nur einmal nach
   dem Hochladen aus.
 * Continue After Error: Wenn diese Checkbox nicht aktiviert ist, dann stoppt
   der Scheduler wenn das Programm mit einem Fehler beendet wurde. Wenn diese

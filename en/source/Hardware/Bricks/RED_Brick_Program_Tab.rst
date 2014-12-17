@@ -607,7 +607,7 @@ Wizard Step 6: Schedule
   section of the settings tab and you can use the GPS Bricklet to
   `sync the Linux system time with the GPS time <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__.
 
-* Mode *Once After Startup*: The scheduler will execute the program only once
+* Mode *Once After Upload*: The scheduler will execute the program only once
   directly after it is uploaded.
 * Continue After Error: If this checkbox is unchecked, the scheduler will stop
   after your program exits with an error. If it is checked errors are ignored.
