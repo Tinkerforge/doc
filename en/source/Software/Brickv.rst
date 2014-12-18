@@ -53,7 +53,7 @@ analog-to-digital converts (ADC) of Bricks (see below).
 .. _brickv_auto_update:
 
 Determine Software Versions / Search for Updates
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------------------
 
 If you have started the Brick Viewer and connected it to
 a Brick Daemon or a Master Extension you can determine the
@@ -74,41 +74,51 @@ to work properly.
 
 If you want, you can update all Bricklets with the click
 on "Auto-Update All Bricklets". Bricks can't be updated automatically,
-you have to update them one by one 
+you have to update them one by one
 (see :ref:`Brick Firmware Flashing <brickv_flash_firmware>`).
-
-
 
 
 .. _brickv_flash_firmware:
 
 Brick Firmware Flashing
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 The recommended tool for flashing of Brick firmwares is Brick Viewer.
 For Linux systems without a graphical desktop there is the ``brick-flash-cmd``
 tool.
 
 Using Brick Viewer
-""""""""""""""""""
+^^^^^^^^^^^^^^^^^^
 
 Flashing of Brick firmwares can be done with Brick Viewer since version 1.1.0.
 The latest firmwares will be downloaded automatically and can be found
 :ref:`here <downloads_firmwares_plugins>` too.
 
-Flashing a Brick requires that it is connected via USB to the PC that runs the
-Brick Viewer.
+Preparation
+"""""""""""
 
-Before you flash a new firmware on a IMU Brick you might want to backup its
-calibration data, because it is lost during the flashing process. This is
-only important if you did your own calibration, because the factory calibration
-can be restored automatically during the flashing process since Brick Viewer
-version 1.1.13.
+Flashing a Brick requires that it is connected via USB to the PC that runs the
+Brick Viewer. Depending on the type of Brick the following hints may apply:
+
+* Before you flash a new firmware on a **IMU Brick** you might want to backup
+  its calibration data, because it is lost during the flashing process. This is
+  only important if you did your own calibration, because the factory calibration
+  can be restored automatically during the flashing process since Brick Viewer
+  version 1.1.13.
+
+* Hardware version 2.0 of the **Master Brick** has a change in its PCB layout
+  that interferes with bootloader mode if a Master Extension such as RS485, WIFI
+  or Ethernet is present in the stack. In this case the Master Extension needs
+  to be disconnected from the stack to make the bootloader mode work correctly.
+  This problem is fixed in hardware version 2.1.
 
 First bring the Brick into the bootloader mode.
 Hold the Erase button, then press the Reset button one time.
 No the blue LED should be off and the Brick should be in the bootloader mode
 (depending on your operating system some sort of Atmel device could be detected).
+
+Serial Port
+"""""""""""
 
 Start the Brick Viewer and click "Flashing":
 
@@ -122,30 +132,30 @@ A Brick in bootloader mode should show up as serial port.
 The "Serial Port" drop-down box shows all detected serial ports. If no port is
 listed try clicking "Refresh". If still no serial port shows up ensure that
 your Brick is in bootloader mode and that it is correctly recognized by your
-operating system.
+operating system:
 
-.. note::
- On Windows you might need to install Atmel driver ``atm6124_cdc.inf`` from the
- drivers subfolder in the Brick Viewer installation folder to make Windows
- detect a Brick in bootloader mode correctly.
+* On **Windows** you might need to install Atmel driver ``atm6124_cdc.inf`` from
+  the drivers subfolder in the Brick Viewer installation folder to make Windows
+  detect a Brick in bootloader mode correctly. Windows 7 and 8 typically auto
+  detect a Brick as "GPS Camera Detect" serial device. This works as well, just
+  select "GPS Camera Detect" as serial port in Brick Viewer.
 
- Windows 7 and 8 typically auto detect a Brick as "GPS Camera Detect" serial
- device. This works as well, just select "GPS Camera Detect" as serial port in
- Brick Viewer.
+* If you have an **old Linux** kernel version you might need to install this
+  `SAM-BA Linux USB kernel driver
+  <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__.
 
-.. note::
- If you have an old Linux kernel you might need to install this
- `SAM-BA Linux USB kernel driver <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__.
-
-.. note::
- Mac OS X might auto detect a Brick as DVB-T device and auto start EyeTV or
- a similar program. Just close EyeTV and proceed with the flash procedure.
+* On **Mac OS X** a Brick might auto detected as DVB-T device and start EyeTV or
+  a similar program automatically is started. Just close EyeTV and proceed with
+  the flash procedure.
 
 Select the correct serial port, typically named as follows:
 
 * Windows: "AT91 USB to Serial Converter" or "GPS Camera Detect"
 * Linux: ``/dev/ttyACM0`` or ``/dev/ttyUSB0``
 * Mac OS X: ``/dev/tty.usbmodemfd131``
+
+Flashing
+""""""""
 
 Select the firmware for your Brick and click "Save". Now the latest firmware
 will be downloaded and written to the Brick, then read back again and verified
@@ -158,7 +168,7 @@ select "Custom..." from the drop-down box and specify a local file via the
 
 
 Using brick-flash-cmd on Linux
-""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Brick Viewer requires a graphical desktop. If you need to flash Bricks
 connected to a Linux system without a graphical desktop you can use the
@@ -190,14 +200,14 @@ Afterwards the Brick should restart automatically and use the new firmware.
 .. _brickv_flash_plugin:
 
 Bricklet Plugin Flashing
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 Flashing of Bricklet plugins into the EEPROM of the Bricklet is
-possible in two different ways. One possibility is to use the 
-"Auto-Update All Bricklets" feature 
+possible in two different ways. One possibility is to use the
+"Auto-Update All Bricklets" feature
 (see :ref:`Determine Software Versions <brickv_auto_update>`).
 
-If you want to flash one distinct Bricklet you can use the flashing window. 
+If you want to flash one distinct Bricklet you can use the flashing window.
 The latest plugins will be downloaded
 automatically and can be found :ref:`here <downloads_firmwares_plugins>` too.
 
@@ -232,7 +242,7 @@ time need to be unique, you can use recognizable names or patterns.
 .. _brickv_adc_calibration:
 
 Brick ADC Calibration
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 If you have problems with inaccurate measurements (e.g. Linear Poti Bricklet
 does not reach the maximum or the voltage measurements in a stack is slightly off)
@@ -256,11 +266,10 @@ the Setup tab of Brick Viewer:
 Choose the port your Poti Bricklet is connected to (A-D).
 Turn your Poti Bricklet completely to the left and press "Calibrate", then turn
 your Poti Bricklet completely to right and press "Calibrate" again. If your ADC
-wasn't calibrated well the gain and offset values should be different then
+was not calibrated well the gain and offset values should be different then
 the default values (4095 and 0).
 
 You can test if the calibration works in
 principle by pressing "Calibrate" when the Poti Bricklet is in the middle position,
 then one of the values has to change (after that you have to recalibrate,
 of course).
-
