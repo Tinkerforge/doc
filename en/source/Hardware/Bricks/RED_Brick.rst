@@ -272,8 +272,8 @@ The data in the overview tab is automatically refreshed every 3 seconds.
 
 .. _red_brick_brick_settings:
 
-Settings Tab (Network, Brick Daemon, Date / Time)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Settings Tab (Network, Brick Daemon, Date / Time, File System)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _red_brick_brick_settings_network:
 
@@ -343,7 +343,7 @@ time won't be incremented if the RED Brick is not powered.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_date.jpg
    :scale: 60 %
-   :alt: Screenshot of settings tab showing date/time configurations.
+   :alt: Screenshot of settings tab showing date / time configurations.
    :align: center
 
 If you have a connection to the Internet (trough the Ethernet Extension
@@ -357,6 +357,26 @@ or can't obtain Internet access, you can also use the
 `program on GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
 that could be uploaded to the RED Brick to sync the Linux system time with
 the GPS time.
+
+.. _red_brick_brick_settings_file_system:
+
+File System
+"""""""""""
+
+In the File System section (added in Brick Viewer 2.2.1) you can expand the
+file system on the Micro-SD card.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_file_system.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing file system expansion.
+   :align: center
+
+Depending on the image size and the capacity of the Micro-SD card you might
+not be using the total capacity of the Micro-SD card. In this case expanding
+the file system will provide you with some extra storage space. If the file
+system uses less than 95% of the Micro-SD card's size then it can be expanded.
+To do this follow the instructions in Brick Viewer.
+
 
 .. _red_brick_brickv_program:
 

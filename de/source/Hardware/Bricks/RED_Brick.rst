@@ -285,8 +285,8 @@ Die Statusanzeigen werden alle 3 Sekunden automatisch aktualisiert.
 
 .. _red_brick_brick_settings:
 
-Settings Tab (Netzwerk, Brick Daemon, Datum / Uhrzeit)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Settings Tab (Netzwerk, Brick Daemon, Datum / Uhrzeit, Dateisystem)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _red_brick_brick_settings_network:
 
@@ -334,7 +334,6 @@ Brick Daemon
 Im Brick Daemon Abschnitt des Tabs können Einstellungen zum lokalen
 Brick Daemon vorgenommen werden.
 
-
 .. image:: /Images/Screenshots/brickv_red_tab_settings_brickd.jpg
    :scale: 60 %
    :alt: Screenshot des Settings Tabs: Brickd Konfiguration.
@@ -359,7 +358,7 @@ Brick, so dass die Uhr nicht weiterläuft, wenn der RED Brick nicht aktiv ist.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_date.jpg
    :scale: 60 %
-   :alt: Screenshot des Settings Tabs: Datum/Uhrzeit Konfiguration.
+   :alt: Screenshot des Settings Tabs: Datum / Uhrzeit Konfiguration.
    :align: center
 
 Wenn eine Verbindung zum Internet besteht (Ethernet Extension oder USB WLAN
@@ -373,6 +372,26 @@ Internet aber nicht garantiert werden kann, dann kann auch das
 `Programm von GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
 heruntergeladen und auf den RED Brick geladen werden, um die Uhrzeit
 mittels GPS Uhrzeit zu synchronisieren.
+
+.. _red_brick_brick_settings_file_system:
+
+Dateisystem
+"""""""""""
+
+Im File System Abschnitt (neu in Brick Viewer 2.2.1) kann das Dateisystem auf
+der Micro-SD-Karte vergößert werden.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_file_system.jpg
+   :scale: 60 %
+   :alt: Screenshot des Settings Tabs: Dateisystem Vergrößerung.
+   :align: center
+
+Abhängig von der Image Größe und der Kapazität der Micro-SD-Karte wird
+möglicherweise nicht die volle Kapazität der Micro-SD-Karte genutzt. In diesem
+Fall kann durch eine Vergrößerung des Dateisystems mehr Speicherplatz nutzbar
+gemacht werden. Wenn das Dateisystem weniger als 95% der Micro-SD-Karte
+einnimmt dann kann es vergrößert werden. Um dies zu tun einfach den Anweisungen
+in Brick Viewer folgen.
 
 .. _red_brick_brickv_program:
 
