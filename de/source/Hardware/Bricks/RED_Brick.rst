@@ -869,7 +869,7 @@ GPIO Anschluss
     anzuschließen. Aktuell bieten wir keine Softwareunterstützung zur Nutzung
     dieses Anschlusses.
 
-Der Red Brick ist mit einem 21 Pin (0,25mm Pitch) FPC GPIO Anschluss
+Der RED Brick ist mit einem 21 Pin (0,25mm Pitch) FPC GPIO Anschluss
 ausgestattet (Molex 502078-2110).
 
 Alle Signale des A10s Prozessors auf Port E sind mit diesem GPIO Anschluss
