@@ -914,6 +914,15 @@ FAQ
 Known Issues
 ------------
 
+**Second Master Extension does not work all the time** (gelöst)
+
+The kernel configuration in image version 1.0 (full and fast) is erroneous.
+This results in the second Master Extension not working all the time if two
+Extension are used at the same time.
+
+Since image version 1.1 (full and fast) the kernel configuration is fixed and
+this problem does not occur anymore.
+
 **C# program crashes on startup** (solved)
 
 Image version 1.0 (full and fast) contain C# bindings, that were compiled for

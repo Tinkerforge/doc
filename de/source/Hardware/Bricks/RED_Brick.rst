@@ -940,6 +940,16 @@ FAQ
 Bekannte Probleme
 -----------------
 
+**Zweite Master Extension funktioniert nicht immer** (gelöst)
+
+Die Kernel Konfiguration in Image Version 1.0 (Full und Fast) ist fehlerhaft.
+Dadurch kann es bei gleichzeitiger Verwendung zweier Master Extension auf dem
+RED Brick dazu kommen, dass die zweite Extension nicht immer richtig
+funktioniert.
+
+Seit Image Version 1.1 (Full und Fast) ist die Kernel Konfiguration korrigiert,
+so dass dort dieses Problem nicht mehr auftritt.
+
 **C# Programm stürzt beim Starten ab** (gelöst)
 
 Image Version 1.0 (Full und Fast) beinhalten C# Bindings, die versehentlich für
@@ -956,9 +966,9 @@ kompiliert, oder in der :ref:`C# Konfiguration
 
 als Mono Option hinzugefügt werden.
 
-Dieses Problem betrifft nur Image Version 1.0 (Full und Fast). Ab Image Version
-1.1 (Full und Fast) sind C# Bindings wieder für CLR Version 2 kompiliert, so
-dass dort dieses Problem nicht mehr auftritt.
+Dieses Problem betrifft nur Image Version 1.0 (Full und Fast). Seit Image
+Version 1.1 (Full und Fast) sind C# Bindings wieder für CLR Version 2
+kompiliert, so dass dort dieses Problem nicht mehr auftritt.
 
 
 **Stapel mit NFC/RFID Bricklet auf RED Brick taucht im Brick Viewer nicht auf** (ungelöst)
