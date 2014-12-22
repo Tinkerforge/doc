@@ -909,6 +909,39 @@ FAQ
   A: The RED Brick is not booting. Please check your Micro-SD card.
 
 
+.. _red_brick_known_issues:
+
+Known Issues
+------------
+
+**C# program crashes on startup** (solved)
+
+Image version 1.0 (full and fast) contain C# bindings, that were compiled for
+CLR version 4. With this C# bindings Mono crashes if the C# program was compiled
+for CLR version 2::
+
+  Missing method .ctor in assembly /usr/lib/Tinkerforge.dll, type System.Runtime.Versioning.TargetFrameworkAttribute
+
+This problem can be avoided by compiling the C# program for CLR version 4 or
+by adding the following line to the Mono options in :ref:`C# configuration
+<red_brick_program_tab_step3_csharp>` of the program::
+
+  --runtime=v4.0
+
+This problem only affect image version 1.0 (full and fast). Since image version
+1.1 (full and fast) the C# bindings are compiled for CLR version 2 again, which
+fixes the problem.
+
+**Stack with NFC/RFID Bricklet on RED Brick does not show up in Brick Viewer** (unsolved)
+
+Problematic setup: Master Brick with NFC/RFID Bricklet and any other Bricklet
+on top of a RED Brick. In this cases on the RED Brick shows up in Brick Viewer
+but none of the Bricks and Bricklets in the stack.
+
+The reason is currently unknown. For the time being the problem can be avoided
+by using the NFC/RFID Bricklet alone on a Brick.
+
+
 .. _red_brick_history:
 
 History

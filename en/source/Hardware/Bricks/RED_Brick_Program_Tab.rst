@@ -103,6 +103,9 @@ Depending on the chosen language you have to upload different types of files:
 * For C/C++ and Delphi/Lazarus you can upload cross-compiled executable or
   Makefile with source code (see the description in step below)
 
+
+.. _red_brick_program_tab_step3:
+
 Wizard Step 3: Language Specific Configuration
 ----------------------------------------------
 
@@ -159,6 +162,8 @@ directly link against this library (see example below).
   `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
+
+.. _red_brick_program_tab_step3_csharp:
 
 C#
 ^^

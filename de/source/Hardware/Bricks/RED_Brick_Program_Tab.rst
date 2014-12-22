@@ -105,6 +105,7 @@ Je nach gewählter Sprache können verschiedene Dateien hochgeladen werden:
   (Executable) oder eine Makefile mit Source Code hochgeladen werden (siehe
   folgende Beschreibung)
 
+.. _red_brick_program_tab_step3:
 
 Wizard Schritt 3: Sprachen spezifische Konfiguration
 ----------------------------------------------------
@@ -162,6 +163,8 @@ die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
   `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
+
+.. _red_brick_program_tab_step3_csharp:
 
 C#
 ^^
