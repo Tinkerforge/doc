@@ -971,15 +971,16 @@ Version 1.1 (Full und Fast) sind C# Bindings wieder für CLR Version 2
 kompiliert, so dass dort dieses Problem nicht mehr auftritt.
 
 
-**Stapel mit NFC/RFID Bricklet auf RED Brick taucht im Brick Viewer nicht auf** (ungelöst)
+**Stapel mit NFC/RFID Bricklet auf RED Brick taucht im Brick Viewer nicht auf** (gelöst)
 
 Problematischer Aufbau: Master Brick mit NFC/RFID Bricklet und irgendeinem
 weiteren Bricklet steckt auf einem RED Brick. Dann taucht nur der RED Brick
 im Brick Viewer auf, aber sonst kein weitere Brick oder Bricklet aus dem
 Stapel.
 
-Die Ursache ist bisher unbekannt. Bis auf Weiteres kann das Problem vermieden
-werden, indem das NFC/RFID Bricklet einzeln an einem Brick betrieben wird.
+Das Problem wird durch eine Inkompatibilität im NFC/RFID Bricklet Plugin
+Version 2.0.0 verursacht. Diese Inkompatibilität ist in Plugin Version 2.0.1
+behoben.
 
 
 .. _red_brick_history:

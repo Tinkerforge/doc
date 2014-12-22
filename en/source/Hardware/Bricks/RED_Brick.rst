@@ -914,7 +914,7 @@ FAQ
 Known Issues
 ------------
 
-**Second Master Extension does not work all the time** (gelöst)
+**Second Master Extension does not work all the time** (solved)
 
 The kernel configuration in image version 1.0 (full and fast) is erroneous.
 This results in the second Master Extension not working all the time if two
@@ -941,14 +941,14 @@ This problem only affect image version 1.0 (full and fast). Since image version
 1.1 (full and fast) the C# bindings are compiled for CLR version 2 again, which
 fixes the problem.
 
-**Stack with NFC/RFID Bricklet on RED Brick does not show up in Brick Viewer** (unsolved)
+**Stack with NFC/RFID Bricklet on RED Brick does not show up in Brick Viewer** (solved)
 
 Problematic setup: Master Brick with NFC/RFID Bricklet and any other Bricklet
 on top of a RED Brick. In this cases on the RED Brick shows up in Brick Viewer
 but none of the Bricks and Bricklets in the stack.
 
-The reason is currently unknown. For the time being the problem can be avoided
-by using the NFC/RFID Bricklet alone on a Brick.
+The problem is caused by an incompatibility in the NFC/RFID Bricklet plugin
+version 2.0.0. The incompatibility is fixed in plugin version 2.0.1.
 
 
 .. _red_brick_history:
