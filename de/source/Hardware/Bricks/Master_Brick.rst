@@ -34,13 +34,13 @@ Master Brick
 	             "Master Brick mit Beschriftung")
 	}}
 	{{
-	    tfdocimg("Bricks/brick_master20_top_100.jpg",
-	             "Bricks/brick_master20_top_800.jpg",
+	    tfdocimg("Bricks/brick_master21_top_100.jpg",
+	             "Bricks/brick_master21_top_800.jpg",
 	             "Master Brick Oberseite")
 	}}
 	{{
-	    tfdocimg("Bricks/brick_master20_bottom_100.jpg",
-	             "Bricks/brick_master20_bottom_800.jpg",
+	    tfdocimg("Bricks/brick_master21_bottom_100.jpg",
+	             "Bricks/brick_master21_bottom_800.jpg",
 	             "Master Brick Unterseite")
 	}}
 	{{
