@@ -272,8 +272,8 @@ The data in the overview tab is automatically refreshed every 3 seconds.
 
 .. _red_brick_brick_settings:
 
-Settings Tab (Network, Brick Daemon, Date / Time, File System)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Settings Tab
+^^^^^^^^^^^^
 
 .. _red_brick_brick_settings_network:
 

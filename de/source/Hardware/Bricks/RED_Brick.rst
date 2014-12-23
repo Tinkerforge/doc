@@ -285,8 +285,8 @@ Die Statusanzeigen werden alle 3 Sekunden automatisch aktualisiert.
 
 .. _red_brick_brick_settings:
 
-Settings Tab (Netzwerk, Brick Daemon, Datum / Uhrzeit, Dateisystem)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Settings Tab
+^^^^^^^^^^^^
 
 .. _red_brick_brick_settings_network:
 
