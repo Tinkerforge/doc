@@ -14,38 +14,33 @@ Master Brick
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricks/brick_master20_tilted_front_350.jpg",
-	               "Bricks/brick_master20_tilted_front_600.jpg",
+	    tfdocstart("Bricks/brick_master21_tilted_front_350.jpg",
+	               "Bricks/brick_master21_tilted_front_800.jpg",
 	               "Master Brick")
 	}}
 	{{
-	    tfdocimg("Bricks/brick_master20_tilted_back_100.jpg",
-	             "Bricks/brick_master20_tilted_back_600.jpg",
-	             "Master Brick")
-	}}
-	{{
 	    tfdocimg("Bricks/brick_master_stack_front_big_100.jpg",
-	             "Bricks/brick_master_stack_front_big_600.jpg",
+	             "Bricks/brick_master_stack_front_big_800.jpg",
                  "Master Brick in Stapel")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_master_stack_back_big_100.jpg",
-	             "Bricks/brick_master_stack_back_big_600.jpg",
+	             "Bricks/brick_master_stack_back_big_800.jpg",
                  "Master Brick im Stapel")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_master_caption_100.jpg",
-	             "Bricks/brick_master_caption_600.jpg",
+	             "Bricks/brick_master_caption_800.jpg",
 	             "Master Brick mit Beschriftung")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_master20_top_100.jpg",
-	             "Bricks/brick_master20_top_600.jpg",
+	             "Bricks/brick_master20_top_800.jpg",
 	             "Master Brick Oberseite")
 	}}
 	{{
 	    tfdocimg("Bricks/brick_master20_bottom_100.jpg",
-	             "Bricks/brick_master20_bottom_600.jpg",
+	             "Bricks/brick_master20_bottom_800.jpg",
 	             "Master Brick Unterseite")
 	}}
 	{{
