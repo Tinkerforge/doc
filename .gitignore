@@ -19,4 +19,4 @@ de/source/Software/Tinkerforge.js
 *.toctree
 *.substitutions
 *.pyc
-source_orig
+!en/source/Hardware/Bricks/RED_Brick_*_features.table

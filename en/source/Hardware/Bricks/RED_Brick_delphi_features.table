@@ -1,0 +1,21 @@
+Delphi
+------
+========================= ============ ========================================== ==== ====
+Name                      Version      Description                                fast full
+========================= ============ ========================================== ==== ====
+fp-units-base-2.6.0       2.6.0-9+rpi1 Free Pascal - base units                   |c|  |c|
+fp-units-db-2.6.0         2.6.0-9+rpi1 Free Pascal - database-library units       |c|  |c|
+fp-units-fcl-2.6.0        2.6.0-9+rpi1 Free Pascal - Free Component Library       |c|  |c|
+fp-units-fv-2.6.0         2.6.0-9+rpi1 Free Pascal - Free Vision units            |c|  |c|
+fp-units-gfx-2.6.0        2.6.0-9+rpi1 Free Pascal - graphics-library units       |c|  |c|
+fp-units-gnome1-2.6.0     2.6.0-9+rpi1 Free Pascal - GNOME 1 units                |c|  |c|
+fp-units-gtk-2.6.0        2.6.0-9+rpi1 Free Pascal - GTK+ 1.2 units               |c|  |c|
+fp-units-gtk2-2.6.0       2.6.0-9+rpi1 Free Pascal - GTK+ 2.x units               |c|  |c|
+fp-units-math-2.6.0       2.6.0-9+rpi1 Free Pascal - math units                   |c|  |c|
+fp-units-misc-2.6.0       2.6.0-9+rpi1 Free Pascal - miscellaneous units          |c|  |c|
+fp-units-multimedia-2.6.0 2.6.0-9+rpi1 Free Pascal - multimedia units             |c|  |c|
+fp-units-net-2.6.0        2.6.0-9+rpi1 Free Pascal - networking units             |c|  |c|
+fp-units-rtl-2.6.0        2.6.0-9+rpi1 Free Pascal - runtime libraries            |c|  |c|
+fp-utils                  2.6.0-9+rpi1 Free Pascal - utilities dependency package |c|  |c|
+fpc                       2.6.0-9+rpi1 Free Pascal - SDK suite dependency package |c|  |c|
+========================= ============ ========================================== ==== ====

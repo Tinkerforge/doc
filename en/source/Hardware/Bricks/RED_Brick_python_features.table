@@ -6,7 +6,6 @@ Name                       Version                     Description              
 libpython2.7               2.7.3-6+deb7u2              Shared Python runtime library (version 2.7)                               |c|  |c|
 libpython3.2               3.2.3-7                     Shared Python runtime library (version 3.2)                               |c|  |c|
 msgpack-python             0.1.10-1                    Python implementation of MessagePack format                               |c|  |c|
-pycrypto                   2.6.1                       Cryptographic modules for Python.                                         |c|  |c|
 python                     2.7.3-4+deb7u1              interactive high-level object-oriented language (default version)         |c|  |c|
 python-gtk2                2.24.0-3+b1                 Python bindings for the GTK+ widget set                                        |c|
 python-gtk2-dev            2.24.0-3                    GTK+ bindings: devel files                                                     |c|
