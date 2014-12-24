@@ -950,6 +950,26 @@ but none of the Bricks and Bricklets in the stack.
 The problem is caused by an incompatibility in the NFC/RFID Bricklet plugin
 version 2.0.0. The incompatibility is fixed in plugin version 2.0.1.
 
+**FPC (Delphi/Lazarus) Library not available on RED Brick** (fix known)
+
+Unfortunately we introduced a bug in the Delphi/Lazarus Bindings through
+a last-minute change. Because of the bug there is no FPC Library installed
+on the RED Brick image (version 1.0 and 1.1). This will be fixed in version 1.2,
+in the meantime you can fix this issue through the console with the following
+commands::
+
+ sudo su
+ # password = tf
+
+ cd /usr/tinkerforge/bindings/delphi/source/
+ sed -i -e 's/BrickRED//g' Makefile.fpc
+ export FPCDIR=/usr/lib/fpc/`ls /usr/lib/fpc/ | grep -E [0-9].[0-9].[0-9] | head -n1`
+ fpcmake
+ make
+ make install
+
+Now the FPC Library should be installed properly and everything should work as
+expected!
 
 .. _red_brick_history:
 
