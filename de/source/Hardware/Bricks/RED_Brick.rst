@@ -1002,6 +1002,9 @@ behoben. In der Zwischenzeit kann das Problem über die Konsole gelöst werden::
 Jetzt sollte die FPC Library ordnungsgemäß installiert sein und alles
 sollte wie erwartet funktionieren!
 
+Dieses Problem tritt nur in Image Version 1.0 und 1.1 auf, es ist seit
+Image Version 1.2 beseitigt (Full und Fast).
+
 .. _red_brick_history:
 
 Historie

@@ -971,6 +971,9 @@ commands::
 Now the FPC Library should be installed properly and everything should work as
 expected!
 
+The problem only affects image version 1.0 and 1.1, it is fixed since image 
+version 1.2 (full and fast).
+
 .. _red_brick_history:
 
 History
