@@ -982,7 +982,7 @@ Das Problem wird durch eine Inkompatibilität im NFC/RFID Bricklet Plugin
 Version 2.0.0 verursacht. Diese Inkompatibilität ist in Plugin Version 2.0.1
 behoben.
 
-**FPC (Delphi/Lazarus) Library ist nicht Verfügbar auf dem RED Brick** (Fix bekannt)
+**FPC (Delphi/Lazarus) Library ist nicht Verfügbar auf dem RED Brick** (gelöst)
 
 Leider hat sich durch eine Laste-Minute-Änderung ein Bug in die Delphi/Lazarus
 Bindings eingeschlichen. Aufgrund dieses Bugs sind keine FPC Libraries auf
@@ -1004,6 +1004,17 @@ sollte wie erwartet funktionieren!
 
 Dieses Problem tritt nur in Image Version 1.0 und 1.1 auf, es ist seit
 Image Version 1.2 beseitigt (Full und Fast).
+
+**Keine Namensauflösung** (Fix bekannt)
+
+In Image Version 1.2 steht Standardmäßig keine Namensauflösung (DNS) zur 
+Verfügung. Das Problem kann über die Konsole gelöst werden::
+
+ sudo su
+ # enter password tf
+
+ echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
 
 .. _red_brick_history:
 

@@ -950,7 +950,7 @@ but none of the Bricks and Bricklets in the stack.
 The problem is caused by an incompatibility in the NFC/RFID Bricklet plugin
 version 2.0.0. The incompatibility is fixed in plugin version 2.0.1.
 
-**FPC (Delphi/Lazarus) Library not available on RED Brick** (fix known)
+**FPC (Delphi/Lazarus) Library not available on RED Brick** (solved)
 
 Unfortunately we introduced a bug in the Delphi/Lazarus Bindings through
 a last-minute change. Because of the bug there is no FPC Library installed
@@ -973,6 +973,17 @@ expected!
 
 The problem only affects image version 1.0 and 1.1, it is fixed since image 
 version 1.2 (full and fast).
+
+**No name resolution** (fix known)
+
+In Image version 1.2 there is no name resolution (DNS) by default. You
+can fix this through the console::
+
+ sudo su
+ # enter password tf
+
+ echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
 
 .. _red_brick_history:
 
