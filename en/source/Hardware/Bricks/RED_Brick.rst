@@ -334,16 +334,16 @@ subsection. The LED trigger for the red and green LED can also be set here.
 
 .. _red_brick_brick_settings_date:
 
-Date / Time
-"""""""""""
+Date/Time
+"""""""""
 
-In the Date / Time section you can sync the clock of the RED Brick to
+In the Date/Time section you can sync the clock of the RED Brick to
 the clock of your PC. There is no battery on the RED Brick, so the
 time won't be incremented if the RED Brick is not powered.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_date.jpg
    :scale: 60 %
-   :alt: Screenshot of settings tab showing date / time configurations.
+   :alt: Screenshot of settings tab showing date and time configurations.
    :align: center
 
 If you have a connection to the Internet (trough the Ethernet Extension

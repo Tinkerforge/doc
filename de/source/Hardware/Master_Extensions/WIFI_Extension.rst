@@ -277,8 +277,8 @@ müssen. Ein Beispiel:
 
 * Hostname: WIFI-Extension
 
-Als nächstes "DHCP" für Connection und "WPA/WPA2" für Encryption auswählen und
-den WPA/WPA2 Schlüssel eingeben. Ein Beispiel:
+Als nächstes "Client: DHCP" für Mode und Address und "WPA/WPA2" für Encryption
+auswählen und den WPA/WPA2 Schlüssel eingeben. Ein Beispiel:
 
 * Key: 1234567890ABCDEF
 
@@ -334,7 +334,7 @@ anderen WLAN Netz in der Nähe verwendet wird. Ein Beispiel:
 
 * SSID: TinkerforgeWLAN
 
-Dann die Connection auf "Access Point: Static IP" stellen und IP, Subnet Mask
+Dann Mode und Address auf "Access Point: Static IP" stellen und IP, Subnet Mask
 und Gateway einstellen. Ein Beispiel:
 
 * IP: 192.168.1.17

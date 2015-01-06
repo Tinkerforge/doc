@@ -269,8 +269,8 @@ having to figure out which dynamic IP address got assigned to it. For example:
 
 * Hostname: WIFI-Extension
 
-Secondly, select "DHCP" for the Connection, "WPA/WPA2" for Encryption and enter
-the WPA/WPA2 key. For example:
+Secondly, select "Client: DHCP" for the Mode and Address, "WPA/WPA2" for
+Encryption and enter the WPA/WPA2 key. For example:
 
 * Key: 1234567890ABCDEF
 
@@ -322,8 +322,8 @@ name that is not already used by another Wi-Fi network near you. For example:
 
 * SSID: TinkerforgeWLAN
 
-Secondly, select "Access Point: Static IP" for the Connection and configure
-IP, Subnet Mask and Gateway. For example:
+Secondly, select "Access Point: Static IP" for the Mode and Address and
+configure IP, Subnet Mask and Gateway. For example:
 
 * IP: 192.168.1.17
 * Subnet Mask: 255.255.255.0

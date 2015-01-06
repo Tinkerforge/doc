@@ -349,16 +349,16 @@ werden.
 
 .. _red_brick_brick_settings_date:
 
-Datum / Uhrzeit
-"""""""""""""""
+Datum/Uhrzeit
+"""""""""""""
 
-Im Date / Time Abschnitt kann die Uhr des RED Bricks, mit der Uhr des
+Im Date/Time Abschnitt kann die Uhr des RED Bricks, mit der Uhr des
 angeschlossenen PCs, synchronisiert werden. Es gibt keine Batterie auf dem RED
 Brick, so dass die Uhr nicht weiterläuft, wenn der RED Brick nicht aktiv ist.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_date.jpg
    :scale: 60 %
-   :alt: Screenshot des Settings Tabs: Datum / Uhrzeit Konfiguration.
+   :alt: Screenshot des Settings Tabs: Datum und Uhrzeit Konfiguration.
    :align: center
 
 Wenn eine Verbindung zum Internet besteht (Ethernet Extension oder USB WLAN
