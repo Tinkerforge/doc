@@ -92,6 +92,8 @@ Weight                            11g
 Resources
 ---------
 
+* TM1637 datasheet (`Download <https://github.com/Tinkerforge/segment-display-4x7-bricklet/raw/master/datasheets/TM1637.pdf>`__)
+* KHN40392ASR1D-2 datasheet (`Download <https://github.com/Tinkerforge/segment-display-4x7-bricklet/raw/master/datasheets/KHN40392ASR1D-2.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/segment-display-4x7-bricklet/raw/master/hardware/segment-display-4x7-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/segment_display_4x7_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/segment-display-4x7-bricklet/zipball/master>`__)
