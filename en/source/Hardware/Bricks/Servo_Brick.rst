@@ -109,8 +109,8 @@ Technical Specifications
 Property                              Value
 ===================================== ============================================================
 Maximum Motor Current (Sum)           3A
-Minimum/Maximum Input Voltage         5V/25V (should be min. 1V above output voltage)
-Output Voltage                        Software adjustable 2V - 9V
+Input Voltage                         5V - 25V (at least 1V above configured output voltage)
+Output Voltage                        2V - 9V (software adjustable)
 ------------------------------------- ------------------------------------------------------------
 ------------------------------------- ------------------------------------------------------------
 Output Period*                        1µs - 65535µs
