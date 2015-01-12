@@ -111,7 +111,7 @@ Technische Spezifikation
 Eigenschaft                           Wert
 ===================================== ============================================================
 Maximaler Motorstrom (Summe)          3A
-Minimale/Maximale Eingangsspannung    5V/25V
+Minimale/Maximale Eingangsspannung    5V/25V (sollte min. 1V höher wie Ausgangsspannung sein)
 Ausgangsspannung                      Über Software einstellbar 2V - 9V
 ------------------------------------- ------------------------------------------------------------
 ------------------------------------- ------------------------------------------------------------

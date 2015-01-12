@@ -109,7 +109,7 @@ Technical Specifications
 Property                              Value
 ===================================== ============================================================
 Maximum Motor Current (Sum)           3A
-Minimum/Maximum Input Voltage         5V/25V
+Minimum/Maximum Input Voltage         5V/25V (should be min. 1V above output voltage)
 Output Voltage                        Software adjustable 2V - 9V
 ------------------------------------- ------------------------------------------------------------
 ------------------------------------- ------------------------------------------------------------
