@@ -974,7 +974,7 @@ expected!
 The problem only affects image version 1.0 and 1.1, it is fixed since image 
 version 1.2 (full and fast).
 
-**No name resolution** (fix known)
+**No name resolution** (solved)
 
 In Image version 1.2 there is no name resolution (DNS) by default. You
 can fix this through the console::
@@ -984,6 +984,8 @@ can fix this through the console::
 
  echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
+The problem only affects image version 1.2, it is fixed since image 
+version 1.3 (full and fast).
 
 .. _red_brick_history:
 

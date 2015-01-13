@@ -1005,7 +1005,7 @@ sollte wie erwartet funktionieren!
 Dieses Problem tritt nur in Image Version 1.0 und 1.1 auf, es ist seit
 Image Version 1.2 beseitigt (Full und Fast).
 
-**Keine Namensauflösung** (Fix bekannt)
+**Keine Namensauflösung** (gelöst)
 
 In Image Version 1.2 steht Standardmäßig keine Namensauflösung (DNS) zur 
 Verfügung. Das Problem kann über die Konsole gelöst werden::
@@ -1015,6 +1015,8 @@ Verfügung. Das Problem kann über die Konsole gelöst werden::
 
  echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
+Dieses Problem tritt nur in Image Version 1.2 auf, es ist seit
+Image Version 1.3 beseitigt (Full und Fast).
 
 .. _red_brick_history:
 
