@@ -90,12 +90,11 @@ In the following we assume that you now the basics of the programming
 language you picked and that the necessary compilers/interpreters are
 already installed.
 
-Download the API bindings for your programming language from the Downloads
-:ref:`page <downloads>` and install them. Installation instructions can
-be found :ref:`here <api_bindings>` and in the ``readme.txt`` supplied with
-the API bindings.
+First, install the API bindings for your programming language. Installation
+instructions for all API bindings can be found :ref:`here
+<api_bindings_install_and_usage>`.
 
-Create a folder for your DC Brick test project.
+Now create a folder for your DC Brick test project.
 Download one of the examples for the DC Brick as a starting point
 from :ref:`here <dc_brick_python_examples>` and place it in the folder.
 
@@ -110,7 +109,7 @@ In this tutorial we take a look at ``example_configuration.py``:
 
 **Line 13** creates an object that allows to control the DC Brick.
 It is necessary to pass the Unique Identifier (UID) of the Brick
-(in this example defined in **Line 6**) and the IPConnection object.
+(in this example defined in **Line 6**) and the ``ipcon`` object.
 Change the UID corresponding to your device! 
 
 .. note::

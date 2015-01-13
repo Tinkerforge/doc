@@ -17,13 +17,12 @@ the Brick are routed back to the caller.
 See also our :ref:`tutorial <tutorial_first_steps>` for more information on how
 everything works together.
 
-Using the Bindings
-------------------
+.. _api_bindings_install_and_usage:
 
-The latest versions of the bindings can be found in the
-:ref:`download section <downloads_bindings_examples>`.
+Installation and Usage
+----------------------
 
-Installation and usage instructions for each programming language:
+Installation and usage instructions for each supported programming language:
 
 * :ref:`C/C++ <api_bindings_c>`
 * :ref:`C/C++ (iOS) <api_bindings_c_ios>`
@@ -42,6 +41,9 @@ Installation and usage instructions for each programming language:
 * :ref:`Ruby <api_bindings_ruby>`
 * :ref:`Shell <api_bindings_shell>`
 * :ref:`Visual Basic .NET <api_bindings_vbnet>`
+
+The latest versions of the bindings can be found in the
+:ref:`download section <downloads_bindings_examples>`.
 
 
 .. _api_bindings_ip_connection:

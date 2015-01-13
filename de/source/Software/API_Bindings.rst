@@ -17,11 +17,10 @@ Pakete werden an den Aufrufer zurückgeleitet.
 Diese :ref:`Tutorial <tutorial_first_steps>` beschreibt wie alles zusammengehört
 und funktioniert.
 
-Verwendung der Bindings
------------------------
+.. _api_bindings_install_and_usage:
 
-Die neusten Versionen der Bindings sind im :ref:`Downloadbereich
-<downloads_bindings_examples>` zu finden.
+Installation und Verwendung
+---------------------------
 
 Anleitungen zur Installation und Verwendung der Bindings für jede unterstütze
 Programmiersprache:
@@ -43,6 +42,9 @@ Programmiersprache:
 * :ref:`Ruby <api_bindings_ruby>`
 * :ref:`Shell <api_bindings_shell>`
 * :ref:`Visual Basic .NET <api_bindings_vbnet>`
+
+Die neusten Versionen der Bindings sind im :ref:`Downloadbereich
+<downloads_bindings_examples>` zu finden.
 
 
 .. _api_bindings_ip_connection:

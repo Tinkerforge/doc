@@ -11,8 +11,8 @@ Die Python Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
-* in ``source/`` den Quelltext der Bindings (inklusive `setuptools
-  <https://pypi.python.org/pypi/setuptools>`__ Installations-Script)
+* in ``source/`` den Quelltext der Bindings (inklusive ``setup.py``
+  Installations-Script)
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 
@@ -27,27 +27,10 @@ Voraussetzungen
 Installation
 ------------
 
-Die Python Bindings können auf zwei Weisen installiert werden: vom
-:ref:`Quelltext <api_bindings_python_install_source>` oder von
-:ref:`PyPI <api_bindings_python_install_pypi>`. Die Bindings können aber auch
+Die Python Bindings können auf zwei Weisen installiert werden: von
+:ref:`PyPI <api_bindings_python_install_pypi>` oder vom
+:ref:`Quelltext <api_bindings_python_install_source>`. Die Bindings können aber auch
 :ref:`ohne Installation <api_bindings_python_install_without>` genutzt werden.
-
-
-.. _api_bindings_python_install_source:
-
-Vom Quelltext
-^^^^^^^^^^^^^
-
-Der ``source/`` Ordner beinhaltet ein `setuptools
-<https://pypi.python.org/pypi/setuptools>`__ Installations-Script:
-``setup.py``. Um die Bindings zu installieren muss nur dieses Script im
-``source/`` Ordner ausgeführt werden. Abhängig von der Art der Python
-Installation muss dies möglicherweise mit ``sudo`` bzw. als Administrator
-ausgeführt werden::
-
- python setup.py install
-
-Dann ist auch schon alles bereit, um Beispiele testen zu können.
 
 
 .. _api_bindings_python_install_pypi:
@@ -63,6 +46,23 @@ Abhängig von der Art der Python Installation muss dies möglicherweise mit
 ``sudo`` bzw. als Administrator ausgeführt werden::
 
  pip install tinkerforge
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können.
+
+
+.. _api_bindings_python_install_source:
+
+Vom Quelltext
+^^^^^^^^^^^^^
+
+Der ``source/`` Ordner beinhaltet ein ``setup.py`` Installations-Script,
+welches die `setuptools <https://pypi.python.org/pypi/setuptools>`__ für Python
+benötigt. Um die Bindings zu installieren muss nur dieses Script im
+``source/`` Ordner ausgeführt werden. Abhängig von der Art der Python
+Installation muss dies möglicherweise mit ``sudo`` bzw. als Administrator
+ausgeführt werden::
+
+ python setup.py install
 
 Dann ist auch schon alles bereit, um Beispiele testen zu können.
 

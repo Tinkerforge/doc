@@ -10,8 +10,8 @@ The Python bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your Python programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-* in ``source/`` the source code of the bindings (including a
-  `setuptools <https://pypi.python.org/pypi/setuptools>`__ install script)
+* in ``source/`` the source code of the bindings (including a ``setup.py``
+  install script)
 * in ``examples/`` the examples for every Brick and Bricklet
 
 
@@ -26,27 +26,11 @@ Requirements
 Installation
 ------------
 
-There are two ways to install the Python bindings: from
-:ref:`source <api_bindings_python_install_source>` or from
-:ref:`PyPI <api_bindings_python_install_pypi>`.
+There are two ways to install the Python bindings:
+from :ref:`PyPI <api_bindings_python_install_pypi>` or
+from :ref:`source <api_bindings_python_install_source>`.
 But the bindings can also be used
 :ref:`without installing <api_bindings_python_install_without>` them first.
-
-
-.. _api_bindings_python_install_source:
-
-From Source
-^^^^^^^^^^^
-
-The ``source/`` directory contains a `setuptools
-<https://pypi.python.org/pypi/setuptools>`__ install script: ``setup.py``.
-To install the bindings just execute the following command in the ``source/``
-directory. Depending on your Python installation you might have to execute this
-with ``sudo`` or as administrator::
-
- python setup.py install
-
-Now you're ready to test the examples.
 
 
 .. _api_bindings_python_install_pypi:
@@ -62,6 +46,22 @@ Depending on your Python installation you might have to execute this with
 ``sudo`` or as administrator::
 
  pip install tinkerforge
+
+Now you're ready to test the examples.
+
+
+.. _api_bindings_python_install_source:
+
+From Source
+^^^^^^^^^^^
+
+The ``source/`` directory contains a ``setup.py`` install script that requires
+the `setuptools <https://pypi.python.org/pypi/setuptools>`__ for Python to be
+installed. To install the bindings just execute the following command in the
+``source/`` directory. Depending on your Python installation you might have to
+execute this with ``sudo`` or as administrator::
+
+ python setup.py install
 
 Now you're ready to test the examples.
 

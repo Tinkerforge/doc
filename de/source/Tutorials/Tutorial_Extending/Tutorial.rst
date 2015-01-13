@@ -89,11 +89,9 @@ Im Folgenden wird angenommen, dass die Grundlagen der gewählten
 Programmiersprache bekannt und die notwendigen Entwicklungswerkzeuge
 bereits installiert sind.
 
-Als erstes müssen API Bindings für die entsprechenden Programmiersprache im
-:ref:`Downloadbereich <downloads>` heruntergeladen und installiert werden.
-Passende Installationsanweisungen finden sich in der allgemeinen Beschreibung
-der :ref:`API Bindings <api_bindings>` und in den ``readme.txt`` Dateien die
-den einzelnen API Bindings beiliegen.
+Als erstes müssen API Bindings für die entsprechenden Programmiersprache
+installiert werden. Passende Anleitungen dazu gibt es
+:ref:`hier <api_bindings_install_and_usage>`.
 
 Erstelle dann einen neuen Ordner für das DC Brick Testprojekt und lade eines
 der :ref:`Beispiele <dc_brick_python_examples>` für den DC Brick als
@@ -109,9 +107,9 @@ Nun folgt ein Blick auf ``example_configuration.py``:
 **Zeile 12** erstellt ein IP Connection Objekt.
 
 **Zeile 14** erzeugt ein DC Brick Objekt über welches der eigentliche DC Brick
-gesteuert werden kann. Dabei müssen die eindeutige Identifikationsnummer (UID) des
-DC Bricks (in diesem Falle steht sie in **Zeile 6**), sowie das ipcon Objekt
-übergeben werden.
+gesteuert werden kann. Dabei müssen die eindeutige Identifikationsnummer (UID)
+des DC Bricks (in diesem Falle steht sie in **Zeile 6**), sowie das ``ipcon``
+Objekt übergeben werden.
 
 .. note::
  Die einfachste Möglichkeit die UID eines Bricks zu ermitteln ist über der
