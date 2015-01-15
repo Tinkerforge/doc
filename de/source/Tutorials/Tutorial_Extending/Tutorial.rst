@@ -40,7 +40,7 @@ Der Brick Daemon bildete eine Brücke zwischen Bricks/Bricklets und den
 programmiersprachenspezifischen API Bindings. Der Brick Viewer bietet eine
 graphische Oberfläche für Testzwecke.
 
-Nach der Installation kann das Basteln losgehen! Schließe als erstes eine
+Nach der Installation kann das Basteln losgehen! Schließe als erstes einen
 Motor und eine Stromversorgung (z.B. eine Batterie) an, wie auf dem folgenden
 Bild zu sehen. Es kann z.B. auch einen Servo Brick und einen Servo anstatt eines
 DC Bricks verwendet werden.
