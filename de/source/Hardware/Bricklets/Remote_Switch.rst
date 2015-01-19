@@ -71,7 +71,7 @@ Beschreibung
 ------------
 
 Das Remote Switch :ref:`Bricklet <primer_bricklets>` ist mit einem
-433MHz Transceiver ausgestattet (433MHz SMA Antenne liegt bei). Es kann genutzt
+433MHz Funkmodul ausgestattet (433MHz SMA Antenne liegt bei). Es kann genutzt
 werden um über einen :ref:`Brick <primer_bricks>` alle Funksteckdosen zu steuern 
 die auf dem PT2262 oder HX2262 IC basieren.
 
