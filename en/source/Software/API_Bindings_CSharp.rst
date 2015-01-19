@@ -49,6 +49,10 @@ Studio C# and MonoDevelop (via `NuGet addin
 <https://github.com/mrward/monodevelop-nuget-addin>`__) to your project as
 external reference.
 
+The NuGet package does neither include the source code of the bindings nor the
+examples. Those are avilable as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
+
 
 Testing an Example
 ------------------

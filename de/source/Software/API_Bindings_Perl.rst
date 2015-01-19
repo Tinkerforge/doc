@@ -28,28 +28,10 @@ Voraussetzungen
 Installation
 ------------
 
-Die Perl Bindings können auf zwei Weisen installiert werden: vom
-:ref:`Quelltext <api_bindings_perl_install_source>` oder von
-:ref:`CPAN <api_bindings_perl_install_cpan>`. Die Bindings können aber auch
-:ref:`ohne Installation <api_bindings_perl_install_without>` genutzt werden.
-
-
-.. _api_bindings_perl_install_source:
-
-Vom Quelltext
-^^^^^^^^^^^^^
-
-Der ``source/`` Ordner beinhaltet ein ``Makefile.PL`` Script. Um die Bindings
-zu installieren müssen folgende Befehle im ``source/`` Ordner ausgeführt werden.
-Abhängig von der Art der Perl Installation muss dies möglicherweise mit
-``sudo`` bzw. als Administrator ausgeführt werden::
-
- perl Makefile.PL
- make
- make test
- make install
-
-Dann ist auch schon alles bereit, um Beispiele testen zu können.
+Die Perl Bindings können auf zwei Weisen installiert werden: von
+:ref:`CPAN <api_bindings_perl_install_cpan>` oder vom
+:ref:`Quelltext <api_bindings_perl_install_source>`. Die Bindings können aber
+auch :ref:`ohne Installation <api_bindings_perl_install_without>` genutzt werden.
 
 
 .. _api_bindings_perl_install_cpan:
@@ -66,6 +48,26 @@ benötigt). Abhängig von der Art der Perl Installation muss dies möglicherweis
 mit ``sudo`` bzw. als Administrator ausgeführt werden::
 
  cpanm Tinkerforge
+
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das CPAN
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
+
+.. _api_bindings_perl_install_source:
+
+Vom Quelltext
+^^^^^^^^^^^^^
+
+Der ``source/`` Ordner beinhaltet ein ``Makefile.PL`` Script. Um die Bindings
+zu installieren müssen folgende Befehle im ``source/`` Ordner ausgeführt werden.
+Abhängig von der Art der Perl Installation muss dies möglicherweise mit
+``sudo`` bzw. als Administrator ausgeführt werden::
+
+ perl Makefile.PL
+ make
+ make test
+ make install
 
 Dann ist auch schon alles bereit, um Beispiele testen zu können.
 

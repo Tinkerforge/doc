@@ -56,7 +56,9 @@ mit ``sudo`` bzw. als Administrator ausgeführt werden::
 
  npm -g install nodejs/tinkerforge.tgz
 
-Dann ist auch schon alles bereit, um Beispiele testen zu können.
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das NPM Package
+beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
 
 Ohne Installation
 """""""""""""""""

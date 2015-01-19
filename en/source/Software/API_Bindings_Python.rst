@@ -47,7 +47,9 @@ Depending on your Python installation you might have to execute this with
 
  pip install tinkerforge
 
-Now you're ready to test the examples.
+Now you're ready to test the examples. The PyPI package does not include the
+examples. Those are avilable as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
 
 
 .. _api_bindings_python_install_source:

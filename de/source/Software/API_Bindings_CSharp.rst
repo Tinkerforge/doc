@@ -51,6 +51,10 @@ Studio und MonoDevelop (via `NuGet Addin
 <https://github.com/mrward/monodevelop-nuget-addin>`__) zum jeweiligen Projekt
 hinzugefügt werden kann.
 
+Das NuGet Package beinhaltet weder den Quelltext der Bindings noch die
+Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
 
 Test eines Beispiels
 --------------------

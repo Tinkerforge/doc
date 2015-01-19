@@ -15,8 +15,8 @@ The Visual Basic .NET bindings allow you to control :ref:`Bricks <primer_bricks>
 * in ``source/`` the source code of ``Tinkerforge.dll``
 * in ``examples/`` the examples for every Brick and Bricklet
 
-The Visual Basic .NET bindings are based on the :ref:`C# bindings <api_bindings_csharp>`.
-Since version 2.0.0 the C# bindings are
+The Visual Basic .NET bindings are based on the :ref:`C# bindings
+<api_bindings_csharp>`. Since version 2.0.0 the C# bindings are
 `CLS <http://en.wikipedia.org/wiki/Common_Language_Specification>`__
 compliant. This allows to use them with all `.NET compatible languages
 <http://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
@@ -34,10 +34,10 @@ Requirements
 Installation
 ------------
 
-If and how the Visual Basic .NET bindings have to be installed depends heavily on how you are
-going to use them. If you are just calling the Visual Basic .NET compiler from the command
-line then you can just put the ``Tinkerforge.dll`` file into the same folder
-as the Visual Basic .NET code of your program.
+If and how the Visual Basic .NET bindings have to be installed depends heavily
+on how you are going to use them. If you are just calling the Visual Basic .NET
+compiler from the command line then you can just put the ``Tinkerforge.dll``
+file into the same folder as the Visual Basic .NET code of your program.
 
 To use the bindings in an IDE you'll probably have to add the
 ``Tinkerforge.dll`` file to the assembly catalog of the IDE. How this is done
@@ -47,11 +47,11 @@ depends on the IDE and will be explained in documentation of that IDE.
 Testing an Example
 ------------------
 
-To test a Visual Basic .NET example :ref:`Brick Daemon <brickd>` and :ref:`Brick Viewer
-<brickv>` have to be installed first. Brick Daemon acts as a proxy between the
-USB interface of the Bricks and the API bindings. Brick Viewer connects to
-Brick Daemon and helps to figure out basic information about the connected
-Bricks and Bricklets.
+To test a Visual Basic .NET example :ref:`Brick Daemon <brickd>` and
+:ref:`Brick Viewer <brickv>` have to be installed first. Brick Daemon acts as
+a proxy between the USB interface of the Bricks and the API bindings. Brick
+Viewer connects to Brick Daemon and helps to figure out basic information about
+the connected Bricks and Bricklets.
 
 MonoDevelop
 ^^^^^^^^^^^

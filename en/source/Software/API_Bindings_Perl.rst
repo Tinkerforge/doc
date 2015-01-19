@@ -27,28 +27,10 @@ Requirements
 Installation
 ------------
 
-There are two ways to install the Perl bindings: from :ref:`source
-<api_bindings_perl_install_source>` or from :ref:`CPAN
-<api_bindings_perl_install_cpan>`. But the bindings can also be used
+There are two ways to install the Perl bindings: from :ref:`CPAN
+<api_bindings_perl_install_cpan>` or from :ref:`source
+<api_bindings_perl_install_source>`. But the bindings can also be used
 :ref:`without installing <api_bindings_perl_install_without>` them first.
-
-
-.. _api_bindings_perl_install_source:
-
-From Source
-^^^^^^^^^^^
-
-The ``source/`` directory contains a ``Makefile.PL`` script.
-To install the bindings just execute the following commands in the ``source/``
-directory. Depending on your Perl installation you might have to execute this
-with ``sudo`` or as administrator::
-
- perl Makefile.PL
- make
- make test
- make install
-
-Now you're ready to test the examples.
 
 
 .. _api_bindings_perl_install_cpan:
@@ -65,6 +47,26 @@ bindings). Depending on your Perl installation you might have to execute this
 with ``sudo`` or as administrator::
 
  cpanm Tinkerforge
+
+Now you're ready to test the examples. The CPAN package does not include the
+examples. Those are avilable as part of the bindings :ref:`ZIP file
+<downloads_bindings_examples>`.
+
+
+.. _api_bindings_perl_install_source:
+
+From Source
+^^^^^^^^^^^
+
+The ``source/`` directory contains a ``Makefile.PL`` script.
+To install the bindings just execute the following commands in the ``source/``
+directory. Depending on your Perl installation you might have to execute this
+with ``sudo`` or as administrator::
+
+ perl Makefile.PL
+ make
+ make test
+ make install
 
 Now you're ready to test the examples.
 

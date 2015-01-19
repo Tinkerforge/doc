@@ -49,7 +49,10 @@ bzw. als Administrator ausgeführt werden::
 
  gem install tinkerforge.gem
 
-Dann ist auch schon alles bereit, um Beispiele testen zu können.
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Der GEM
+beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
+
 
 Ohne Installation
 ^^^^^^^^^^^^^^^^^

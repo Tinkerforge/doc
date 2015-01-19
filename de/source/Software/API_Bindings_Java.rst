@@ -66,6 +66,9 @@ der Bindings, z.B. ``2.1.1``:
     ...
   </project>
 
+Das Maven Package beinhaltet keine Beispiele. Diese sind als Teil der
+:ref:`ZIP Datei <downloads_bindings_examples>` der Bindings verfügbar.
+
 
 Test eines Beispiels
 --------------------

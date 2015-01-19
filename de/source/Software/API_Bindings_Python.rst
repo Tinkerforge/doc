@@ -47,7 +47,9 @@ Abhängig von der Art der Python Installation muss dies möglicherweise mit
 
  pip install tinkerforge
 
-Dann ist auch schon alles bereit, um Beispiele testen zu können.
+Dann ist auch schon alles bereit, um Beispiele testen zu können. Das PyPI
+Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
+<downloads_bindings_examples>` der Bindings verfügbar.
 
 
 .. _api_bindings_python_install_source:
