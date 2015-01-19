@@ -125,8 +125,8 @@ controls a Brick connected to your PC).
 The **Lines 18-23** configure the DC Brick and let the motor run full
 speed forward.
 
-**Line 25** is used to prevent program termination until you
-press enter.
+**Line 25-27** is used to prevent program termination until you
+press enter. After this the motor is stopped before the program ends.
 
 Run this Python script and use it or other examples as a starting point
 for your own project.

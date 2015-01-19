@@ -106,7 +106,7 @@ Nun folgt ein Blick auf ``example_configuration.py``:
 
 **Zeile 12** erstellt ein IP Connection Objekt.
 
-**Zeile 14** erzeugt ein DC Brick Objekt über welches der eigentliche DC Brick
+**Zeile 13** erzeugt ein DC Brick Objekt über welches der eigentliche DC Brick
 gesteuert werden kann. Dabei müssen die eindeutige Identifikationsnummer (UID)
 des DC Bricks (in diesem Falle steht sie in **Zeile 6**), sowie das ``ipcon``
 Objekt übergeben werden.
@@ -124,8 +124,8 @@ steuert, der am PC angeschlossen ist).
 Die **Zeilen 18-23** konfigurieren DC Brick und lassen den Motor mit voller
 Geschwindigkeit vorwärts laufen.
 
-**Zeile 25** sorgt dafür, dass das Programm weiter läuft bis die Enter Taste
-gedrückt wird.
+**Zeile 25-27** sorgt dafür, dass das Programm weiter läuft bis die Enter Taste
+gedrückt wird. Der Motor wird danach abgeschaltet.
 
 Führe diese Python Script aus und verwende es oder eines der anderen Beispiele
 als Ausgangspunkt für ein eigenes Projekt.
@@ -209,7 +209,7 @@ Die **Zeilen 32-33** schalten die Motorsteuerung ein und setzen die
 Beschleunigung auf Maximum. Dadurch kann die Motorgeschwindigkeit den Änderungen
 der Potentiometerposition direkt folgen.
 
-Die **Zeile 35-36** sorgt dafür, dass das Programm weiter läuft bis die Enter
+Die **Zeile 35-37** sorgt dafür, dass das Programm weiter läuft bis die Enter
 Taste gedrückt wird. Der Motor wird danach abgeschaltet.
 
 
