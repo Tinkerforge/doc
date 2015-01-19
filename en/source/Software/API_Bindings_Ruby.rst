@@ -48,7 +48,7 @@ to execute with ``sudo`` or as administrator::
  gem install tinkerforge.gem
 
 Now you're ready to test the examples. The GEM does not include the
-examples. Those are avilable as part of the bindings :ref:`ZIP file
+examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
 Without Installation

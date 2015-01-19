@@ -50,7 +50,7 @@ Studio C# and MonoDevelop (via `NuGet addin
 external reference.
 
 The NuGet package does neither include the source code of the bindings nor the
-examples. Those are avilable as part of the bindings :ref:`ZIP file
+examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
 

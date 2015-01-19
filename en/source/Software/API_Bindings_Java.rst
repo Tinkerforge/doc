@@ -64,7 +64,7 @@ the specific version of the bindings to be used, e.g. ``2.1.1``:
     ...
   </project>
 
-The Maven package does not include the examples. Those are avilable as part of
+The Maven package does not include the examples. Those are available as part of
 the bindings :ref:`ZIP file <downloads_bindings_examples>`.
 
 

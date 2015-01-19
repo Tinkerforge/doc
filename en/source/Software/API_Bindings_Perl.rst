@@ -49,7 +49,7 @@ with ``sudo`` or as administrator::
  cpanm Tinkerforge
 
 Now you're ready to test the examples. The CPAN package does not include the
-examples. Those are avilable as part of the bindings :ref:`ZIP file
+examples. Those are available as part of the bindings :ref:`ZIP file
 <downloads_bindings_examples>`.
 
 
