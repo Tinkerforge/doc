@@ -208,10 +208,9 @@ works as expected and you can start to upload your programs. See the
 :ref:`Brick Viewer section <red_brick_brickv>` on how to configure the Brick
 and how to upload your programs.
 
-Users of the :ref:`Full image <red_brick_images>` can test the graphical
-user interface (HDMI). To do so, connect a monitor to the
-:ref:`HDMI port <red_brick_hdmi>` and a USB hub with keyboard and
-mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
+You can also test the graphical user interface (HDMI). To do so, connect a
+monitor to the :ref:`HDMI port <red_brick_hdmi>` and a USB hub with keyboard
+and mouse to the :ref:`USB port <red_brick_usb_host>` of the RED Brick. If you
 power the Brick you can see the LXDE desktop environment booting. After
 the boot process you should be able to use it as a normal desktop PC.
 
@@ -598,18 +597,19 @@ To control Bricks/Bricklets you can import the Tinkerforge Bindings::
 
 .. _red_brick_images:
 
-RED Brick Software Images
--------------------------
+RED Brick Software Image
+------------------------
 
-The RED Brick software image is stored on a Micro-SD-Card. It is a modified
-`Debian <http://www.debian.org/>`__ image and available in two different
-versions: The "full" and the "fast" image. Both images support the
-execution of your code and come with the full suite of Tinkerforge
-libraries.
+The RED Brick software image is based on `Debian <http://www.debian.org/>`__
+and is stored on a Micro-SD-Card. Previously the image was available in two
+different flavors: The "full" and the "fast" image. Since image version 1.4
+there is only one image (previously known as the full image) with configurable
+services (desktop environment, web server, wireless access point, etc.) that
+allow to customize your image for your individual requirements.
 
-The **full image** comes with a driver for the GPU
-and all necessary graphical user interface libraries.
-It boots an X server and the `LXDE desktop environment <http://www.lxde.org>`__
+The image comes with a driver for the GPU and all necessary graphical user
+interface libraries. If enabled, it boots an X server and the
+`LXDE desktop environment <http://www.lxde.org>`__
 with auto login. If the program you run on the RED Brick uses a graphical
 interface it will show up on the desktop. The screen resolution should
 automatically adapt to the preferred resolution of the connected HDMI monitor.
@@ -617,17 +617,11 @@ If you want to change it, you can configure the screen resolution through LXDE.
 You don't have to use the HDMI port and can execute non graphical
 programs on this image.
 
-The **fast image** comes without graphical interface support and has no X, no
-LXDE and no other graphical libraries pre-installed. GPU drivers are not loaded,
-which means that the RED Brick has more available RAM (RAM is shared between
-CPU and GPU) and will boot faster.
-
-New software can be installed on both images.
-See the :ref:`description of the versions tab <red_brick_brickv_versions_tab>`
-on how to install new software.
+New software can be installed. See the :ref:`description of the versions tab
+<red_brick_brickv_versions_tab>` on how to install new software.
 
 A list of pre-installed programming language libraries is available:
-:ref:`Full and fast image installed library versions <red_brick_installed_versions>`.
+:ref:`Installed library versions <red_brick_installed_versions>`.
 
 If you want to log into the Linux system by command line or LXDE, the standard
 user is ``tf`` with default password ``tf``. The user is a sudoer, i.e.
@@ -660,7 +654,7 @@ of your PC it might also take considerably longer.
 Copy Image to SD Card
 ^^^^^^^^^^^^^^^^^^^^^
 
-Start by downloading the :ref:`full image or fast image <red_brick_images>` from
+Start by downloading the :ref:`image <red_brick_images>` from
 the :ref:`download page <downloads_red_images>` and unpack it. You'll also
 need a Micro-SD card and a card reader. We recommend a fast card
 (e.g. Class 10, > 30MB/s read) with enough space (at least 8GB).
@@ -681,12 +675,12 @@ Linux and Mac OS X
 
 1. Connect the SD card to the PC or Mac using the card reader
 2. Identify the path of the SD card (e.g. using ``dmesg`` oder ``df -h``)
-3. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_0_full.img``) to the
+3. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_4_full.img``) to the
    SD card (e.g. ``/dev/sdb``):
 
 .. code-block:: bash
 
-  dd if=/tmp/red_image_1_0_full.img of=/dev/sdb bs=1M
+  dd if=/tmp/red_image_1_4_full.img of=/dev/sdb bs=1M
 
 .. _red_brick_change_password:
 
@@ -780,18 +774,14 @@ USB 2.0 Host
 The RED Brick is equipped with a standard
 `USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mb/s) type A jack. It can
 power other USB devices with up to 7.5W (5V/1.5A) and is short circuit
-protected. Both, full and fast image are based on Debian Linux and support
-typical USB devices like WIFI or Ethernet dongles, webcams, printers, keyboards,
-mouses or USB touch screens.
+protected. Typical USB devices like WIFI or Ethernet dongles, webcams, printers,
+keyboards, mouses or USB touch screens are supported.
 
 Some Ethernet or WIFI dongles can be directly configured with the Brick Viewer.
 `Supported dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
 can be found in our shop. Other devices might have
 to be configured directly in the Linux system and can't be configured with the
 Brick Viewer.
-
-The :ref:`full image <red_brick_images>` supports a graphical user interface,
-which can be controlled by standard USB keyboards, mouses or touch screens.
 
 
 .. _red_brick_mini_usb:
@@ -811,9 +801,7 @@ Micro-HDMI
 
 With the Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ connector
 (also called type D), all standard HDMI monitors and TVs can be connected to
-the RED Brick. The connector is only active in the
-:ref:`full image <red_brick_images>`. HDMI Ethernet Channel (HEC) is not
-supported.
+the RED Brick. HDMI Ethernet Channel (HEC) is not supported.
 
 
 Brick Stack Connector
@@ -916,16 +904,16 @@ Known Issues
 
 **Second Master Extension does not work all the time** (solved)
 
-The kernel configuration in image version 1.0 (full and fast) is erroneous.
+The kernel configuration in image version 1.0 is erroneous.
 This results in the second Master Extension not working all the time if two
 Extension are used at the same time.
 
-Since image version 1.1 (full and fast) the kernel configuration is fixed and
-this problem does not occur anymore.
+Since image version 1.1 the kernel configuration is fixed and this problem
+does not occur anymore.
 
 **C# program crashes on startup** (solved)
 
-Image version 1.0 (full and fast) contain C# bindings, that were compiled for
+Image version 1.0 contain C# bindings, that were compiled for
 CLR version 4. With this C# bindings Mono crashes if the C# program was compiled
 for CLR version 2::
 
@@ -937,9 +925,8 @@ by adding the following line to the Mono options in :ref:`C# configuration
 
   --runtime=v4.0
 
-This problem only affect image version 1.0 (full and fast). Since image version
-1.1 (full and fast) the C# bindings are compiled for CLR version 2 again, which
-fixes the problem.
+This problem only affect image version 1.0. Since image version 1.1 the
+C# bindings are compiled for CLR version 2 again, which fixes the problem.
 
 **Stack with NFC/RFID Bricklet on RED Brick does not show up in Brick Viewer** (solved)
 
@@ -972,7 +959,7 @@ Now the FPC Library should be installed properly and everything should work as
 expected!
 
 The problem only affects image version 1.0 and 1.1, it is fixed since image 
-version 1.2 (full and fast).
+version 1.2.
 
 **No name resolution** (solved)
 
@@ -985,7 +972,7 @@ can fix this through the console::
  echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
 The problem only affects image version 1.2, it is fixed since image 
-version 1.3 (full and fast).
+version 1.3.
 
 .. _red_brick_history:
 

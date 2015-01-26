@@ -214,19 +214,18 @@ der RED Brick wie erwartet funktioniert und Programme hochgeladen werden
 können. Im :ref:`Brick Viewer Abschnitt <red_brick_brickv>` wird beschrieben,
 wie der RED Brick konfiguriert werden kann und wie Programme hochgeladen werden.
 
-Nutzer des :ref:`Full Image <red_brick_images>` können zusätzlich die grafische
-Nutzerschnittstelle (HDMI) testen. Dazu muss ein Monitor an den
-:ref:`HDMI Anschluss <red_brick_hdmi>` und ein USB Hub mit Tastatur und Maus an
-dem :ref:`USB Anschluss <red_brick_usb_host>` des RED Bricks angeschlossen
-werden. Während des Bootvorgangs kann das Starten des LXDE Desktop Environments
-beobachtet werden, das anschließend wie ein ganz normaler Desktop PC verwendet
-werden kann.
+Zusätzlich kann die grafische Nutzerschnittstelle (HDMI) getestet werden. Dazu
+muss ein Monitor an den :ref:`HDMI Anschluss <red_brick_hdmi>` und ein
+USB Hub mit Tastatur und Maus an dem :ref:`USB Anschluss <red_brick_usb_host>`
+des RED Bricks angeschlossen werden. Während des Bootvorgangs kann das Starten
+des LXDE Desktop Environments beobachtet werden, das anschließend wie ein ganz
+normaler Desktop PC verwendet werden kann.
 
 Auf dem Linux kann man sich mittels Nutzer ``tf`` und Passwort ``tf`` anmelden.
 Der ``tf`` Nutzer ist sudoer.
 
-.. note:: Aus Sicherheitsgründen kann es Sinn machen das Passwort zu ändern. Die
-          Prozedur ist :ref:`hier <red_brick_change_password>` beschrieben.
+.. note:: Aus Sicherheitsgründen kann es sinnvoll sein das Passwort zu ändern.
+          Die Prozedur ist :ref:`hier <red_brick_change_password>` beschrieben.
 
 
 
@@ -616,18 +615,19 @@ werden::
 
 .. _red_brick_images:
 
-RED Brick Software Images
--------------------------
+RED Brick Software Image
+------------------------
 
-Das RED Brick Software Image ist auf einer Micro-SD-Karte gespeichert. Es ist
-ein modifiziertes `Debian <http://www.debian.org/>`__ Image und in zwei
-verschiedenen Versionen erhältlich: Das "Full" und das "Fast" Image. Beide
-Images unterstützen die Ausführung von eigenen Programmen und verfügen über alle
-notwendigen Tinkerforge Bibliotheken.
+Das RED Brick Software Image basiert auf `Debian <http://www.debian.org/>`__
+und ist auf einer Micro-SD-Karte gespeichert. Zu Anfang gab es das Image in
+zwei Varianten: Das "Full" und das "Fast" Image. Seit Image Version 1.4 gibt es
+nur noch ein Image (ehemals das "Full" Image) mit einstellbaren Services
+(Desktop-Umgebung, Web Server, WLAN Access Point, usw.), die es erlauben das
+Image an verschiedenen Anforderugen anzupassen.
 
-Das **Full Image** verfügt über GPU Treiber und besitzt alle notwendigen
-Bibliotheken für die Nutzung von grafischen Nutzerschnittstellen (GUIs). Ein
-X Server startet während des Bootvorgangs und das
+Das Image verfügt über GPU Treiber und besitzt alle notwendigen
+Bibliotheken für die Nutzung von grafischen Nutzerschnittstellen (GUIs).
+Falls aktiviert, startet ein X Server während des Bootvorgangs und das
 `LXDE Desktop Environment <http://www.lxde.org>`__ wird mit Autologin gestartet.
 Wenn das eigene Programm eine grafische Nutzerschnittstelle nutzt, so wird
 diese auf dem Desktop angezeigt. Die Bildschirmauflösung passt sich der
@@ -636,18 +636,11 @@ auch konfiguriert werden. Die HDMI-Schnittstelle muss aber nicht benutzt werden
 und es können auch Programme ohne grafische Nutzerschnittstelle ausgeführt
 werden.
 
-Das **Fast Image** besitzt keine GPU Treiber und es sind keine Bibliotheken für
-grafische Nutzerschnittstellen, kein X Server und kein LXDE installiert. Da
-diverse Treiber und die grafische Nutzerschnittstelle nicht geladen werden
-müssen steht mehr RAM Speicher (sonst zwischen CPU und GPU geteilt) zur
-Verfügung und der Bootvorgang erfolgt schneller.
-
-Neue Software kann in beiden Images installiert werden. Siehe die
-:ref:`Beschreibung des Versions Tab <red_brick_brickv_versions_tab>`,
-wie neue Software installiert wird.
+Neue Software kann installiert werden. Siehe die :ref:`Beschreibung des Versions
+Tab <red_brick_brickv_versions_tab>`, wie neue Software installiert wird.
 
 Eine Liste der vorinstallierten Bibliotheken steht zur Verfügung:
-:ref:`Installierte Bibliotheken (Fast und Fast Image) <red_brick_installed_versions>`.
+:ref:`Installierte Bibliotheken <red_brick_installed_versions>`.
 
 Der Nutzer ``tf`` ist der Standardnutzer auf den Images. Beim Einloggen über die
 Konsole oder in LXDE kann dieser Nutzer mit dem Standardpasswort ``tf`` benutzt
@@ -678,8 +671,8 @@ länger dauern.
 Image auf SD Karte kopieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Zuerst das :ref:`Full Image oder Fast Image <red_brick_images>` von
-:ref:`Download Seite <downloads_red_images>` herunterladen und entpacken und
+Zuerst das :ref:`Image <red_brick_images>` von der
+:ref:`Download Seite <downloads_red_images>` herunterladen, entpacken und
 eine geeignete Micro-SD-Karte samt Kartenleser zur Hand haben. Wir empfehlen
 eine schnelle Karte (z.B. Class 10, > 30MB/s Lesen) mit genügend Speicherplatz
 (mindestens 8GB).
@@ -700,12 +693,12 @@ Linux und Mac OS X
 
 1. Verbinde die SD Karte über den Kartenleser mit dem PC oder Mac
 2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``dmesg`` oder ``df -h``)
-3. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_0_full.img``) auf die
+3. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_4_full.img``) auf die
    SD Karte (z.B. ``/dev/sdb``) schreiben:
 
 .. code-block:: bash
 
-  sudo dd if=/tmp/red_image_1_0_full.img of=/dev/sdb bs=1M
+  sudo dd if=/tmp/red_image_1_4_full.img of=/dev/sdb bs=1M
 
 .. _red_brick_change_password:
 
@@ -804,9 +797,8 @@ Der RED Brick ist mit einer Standard
 `USB-2.0 <http://de.wikipedia.org/wiki/USB>`__ (480Mb/s) Typ A Buchse
 ausgestattet. Mit ihr können USB Geräte mit bis zu 7,5W (5V/1,5A) betrieben
 werden. Ein Kurzschluss-Schutz schützt den RED Brick und das angeschlossene
-Gerät. Sowohl das Full als auch das Fast Image basieren auf Debian Linux und
-unterstützen typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
-Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens.
+Gerät. Typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
+Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens werden unterstüzt.
 
 Manche Ethernet oder WLAN Sticks können direkt über den Brick Viewer
 konfiguriert werden.
@@ -814,10 +806,6 @@ konfiguriert werden.
 bieten wir in unserem Shop an. Andere Geräte müssen ggf. direkt
 im Linux System konfiguriert werden und können nicht vom Brick Viewer
 konfiguriert werden.
-
-Das :ref:`Full Image <red_brick_images>` unterstützt grafische
-Nutzerschnittstellen die per Standard USB Tastatur, Mäusen oder
-Touchscreens gesteuert werden können.
 
 
 .. _red_brick_mini_usb:
@@ -837,9 +825,7 @@ Micro-HDMI
 
 Mit dem Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ Anschluss
 (auch Typ D genannt), können alle Standard HDMI Monitore und Fernseher mit dem
-RED Brick verbunden werden. Der Anschluss ist nur aktiv, wenn das
-:ref:`Full Image <red_brick_images>` genutzt wird. HDMI Ethernet Channel (HEC)
-wird nicht unterstützt.
+RED Brick verbunden werden. HDMI Ethernet Channel (HEC) wird nicht unterstützt.
 
 
 Brick Stapel Stecker
@@ -942,17 +928,17 @@ Bekannte Probleme
 
 **Zweite Master Extension funktioniert nicht immer** (gelöst)
 
-Die Kernel Konfiguration in Image Version 1.0 (Full und Fast) ist fehlerhaft.
+Die Kernel Konfiguration in Image Version 1.0 ist fehlerhaft.
 Dadurch kann es bei gleichzeitiger Verwendung zweier Master Extension auf dem
 RED Brick dazu kommen, dass die zweite Extension nicht immer richtig
 funktioniert.
 
-Seit Image Version 1.1 (Full und Fast) ist die Kernel Konfiguration korrigiert,
-so dass dort dieses Problem nicht mehr auftritt.
+Seit Image Version 1.1 ist die Kernel Konfiguration korrigiert, so dass dort
+dieses Problem nicht mehr auftritt.
 
 **C# Programm stürzt beim Starten ab** (gelöst)
 
-Image Version 1.0 (Full und Fast) beinhalten C# Bindings, die versehentlich für
+Image Version 1.0 beinhalten C# Bindings, die versehentlich für
 CLR Version 4 kompiliert wurde. Mit diesen C# Bindings stürzt Mono ab, wenn
 das C# Programm für CLR Version 2 kompiliert wurde::
 
@@ -966,9 +952,9 @@ kompiliert, oder in der :ref:`C# Konfiguration
 
 als Mono Option hinzugefügt werden.
 
-Dieses Problem betrifft nur Image Version 1.0 (Full und Fast). Seit Image
-Version 1.1 (Full und Fast) sind C# Bindings wieder für CLR Version 2
-kompiliert, so dass dort dieses Problem nicht mehr auftritt.
+Dieses Problem betrifft nur Image Version 1.0. Seit Image Version 1.1
+sind C# Bindings wieder für CLR Version 2 kompiliert, so dass dort dieses
+Problem nicht mehr auftritt.
 
 
 **Stapel mit NFC/RFID Bricklet auf RED Brick taucht im Brick Viewer nicht auf** (gelöst)
@@ -1003,7 +989,7 @@ Jetzt sollte die FPC Library ordnungsgemäß installiert sein und alles
 sollte wie erwartet funktionieren!
 
 Dieses Problem tritt nur in Image Version 1.0 und 1.1 auf, es ist seit
-Image Version 1.2 beseitigt (Full und Fast).
+Image Version 1.2 beseitigt.
 
 **Keine Namensauflösung** (gelöst)
 
@@ -1015,8 +1001,8 @@ Verfügung. Das Problem kann über die Konsole gelöst werden::
 
  echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
-Dieses Problem tritt nur in Image Version 1.2 auf, es ist seit
-Image Version 1.3 beseitigt (Full und Fast).
+Dieses Problem tritt nur in Image Version 1.2 auf, es ist seit Image Version
+1.3 beseitigt.
 
 .. _red_brick_history:
 
