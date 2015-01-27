@@ -178,7 +178,7 @@ dass das Schreiben der Firmware richtig funktioniert hat.
 
 Falls das Flashen fehlschlägt, sollte zunächst überprüft werden, ob die
 richtige serielle Schnittstelle ausgewählt wurde. Wenn Brick Viewer auf Linux
-"No permission to open serial port" meldet, dann liegt dies normaler Weise
+"No permission to open serial port" meldet, dann liegt dies normalerweise
 daran, dass der Nutzer nicht der Gruppe ``dialout`` angehört. Um dieses Problem
 zu beheben kann entweder der Nutzer der Gruppe ``dialout`` hinzugefügt oder
 Brick Viewer als root gestartet werden (``sudo brickv``).
