@@ -114,18 +114,22 @@ zu beachten:
   Master Extension aus dem Stack entfernt werden, damit der Bootloader Modus
   richtig funktioniert. Diese Problem wurde in Hardware Version 2.1 korrigiert.
 
-Zum Flashen muss der Brick in den Bootloader Modus versetzt werden. Dazu muss
-der Erase Knopf am Brick gedrückt gehalten werden während der Brick startet.
-Dazu denn Erase Knopf gedrückt halten und dabei den Reset Knopf einmal
-drücken. Ist der Brick dann im Bootloader Modus leuchtet die blaue LED neben
-der USB Buchse des Bricks nicht. Abhängig vom Betriebssystems des PC kann jetzt
-Atmel Gerät in Form einer seriellen Schnittstelle auftauchen.
+Zum Flashen einer neuen Firmware muss der Brick in den Bootloader Modus
+versetzt werden. Dazu folgende Schritte anwenden:
+
+1. Brick per USB an PC anschließen.
+2. Erase Knopf drücken und gedrückt halten.
+3. Reset Knopf drücken und wieder loslassen.
+4. Erase Knopf wieder loslassen.
+
+Jetzt sollten alle LEDs am Brick aus sein, der Brick sich im Bootloader
+Modus befinden und am PC sollte eine neue seriellen Schnittstelle auftauchen.
 
 Serielle Schnittstelle
 """"""""""""""""""""""
 
-Als nächstes muss der Brick Viewer gestartet und der "Flashing" Dialog geöffnet
-werden:
+Als nächstes muss der Brick Viewer gestartet und der "Updates / Flashing"
+Dialog geöffnet werden:
 
 .. image:: /Images/Screenshots/brickv_flashing_firmware_small.jpg
    :scale: 100 %
@@ -170,9 +174,14 @@ Jetzt noch die richtige Firmware für den Brick auswählen.
 Passend die Einstellungen kann das Flashen per Klick auf den "Save" Knopf
 gestartet werden. Die aktuelle Firmware für den Brick wird heruntergeladen,
 auf den Brick geschrieben und dann wieder zurück gelesen, um sicherzustellen,
-dass das Schreiben der Firmware richtig funktioniert hat. Falls das Flashen
-scheitert, sollte zunächst überprüft werden, ob die richtige serielle
-Schnittstelle ausgewählt wurde.
+dass das Schreiben der Firmware richtig funktioniert hat.
+
+Falls das Flashen fehlschlägt, sollte zunächst überprüft werden, ob die
+richtige serielle Schnittstelle ausgewählt wurde. Wenn Brick Viewer auf Linux
+"No permission to open serial port" meldet, dann liegt dies normaler Weise
+daran, dass der Nutzer nicht der Gruppe ``dialout`` angehört. Um dieses Problem
+zu beheben kann entweder der Nutzer der Gruppe ``dialout`` hinzugefügt oder
+Brick Viewer als root gestartet werden.
 
 Anstatt den Brick Viewer die jeweils neuste Firmware herunterladen zu lassen,
 kann auch "Custom..." als Firmware gewählt werden und dann die zu flashende

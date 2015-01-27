@@ -112,15 +112,21 @@ Brick Viewer. Depending on the type of Brick the following hints may apply:
   to be disconnected from the stack to make the bootloader mode work correctly.
   This problem is fixed in hardware version 2.1.
 
-First bring the Brick into the bootloader mode.
-Hold the Erase button, then press the Reset button one time.
-No the blue LED should be off and the Brick should be in the bootloader mode
-(depending on your operating system some sort of Atmel device could be detected).
+To flash a new firmware the Brick has to be into bootloader mode. Follow
+this steps:
+
+1. Connect the Brick via USB to the PC.
+2. Press and hold the Erase button.
+3. Press and release the Reset button.
+4. Release the Erase button.
+
+Now all LEDs on the Brick should be off, the Brick should be in
+bootloader mode and a new serial port device should be detected on your PC.
 
 Serial Port
 """""""""""
 
-Start the Brick Viewer and click "Flashing":
+Start the Brick Viewer and click "Updates / Flashing":
 
 .. image:: /Images/Screenshots/brickv_flashing_firmware_small.jpg
    :scale: 100 %
@@ -160,7 +166,12 @@ Flashing
 Select the firmware for your Brick and click "Save". Now the latest firmware
 will be downloaded and written to the Brick, then read back again and verified
 to be correctly written. A message box will pop up to inform you about the result.
+
 If the flash process failed, check if you have selected the correct serial port.
+If Brick Viewer on Linux reports "No permission to open serial port" then it
+cannot access the selected serial port. Normally, this is caused by the user
+not being a member of the ``dialout``. The problem can be fixed by adding the
+user to the ``dialout`` group or by running brickv as root.
 
 Instead of letting the Brick Viewer download the latest firmware you can also
 select "Custom..." from the drop-down box and specify a local file via the
