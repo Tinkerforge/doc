@@ -171,7 +171,7 @@ If the flash process failed, check if you have selected the correct serial port.
 If Brick Viewer on Linux reports "No permission to open serial port" then it
 cannot access the selected serial port. Normally, this is caused by the user
 not being a member of the ``dialout``. The problem can be fixed by adding the
-user to the ``dialout`` group or by running brickv as root.
+user to the ``dialout`` group or by running brickv as root (``sudo brickv``).
 
 Instead of letting the Brick Viewer download the latest firmware you can also
 select "Custom..." from the drop-down box and specify a local file via the

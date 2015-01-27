@@ -181,7 +181,7 @@ richtige serielle Schnittstelle ausgewählt wurde. Wenn Brick Viewer auf Linux
 "No permission to open serial port" meldet, dann liegt dies normaler Weise
 daran, dass der Nutzer nicht der Gruppe ``dialout`` angehört. Um dieses Problem
 zu beheben kann entweder der Nutzer der Gruppe ``dialout`` hinzugefügt oder
-Brick Viewer als root gestartet werden.
+Brick Viewer als root gestartet werden (``sudo brickv``).
 
 Anstatt den Brick Viewer die jeweils neuste Firmware herunterladen zu lassen,
 kann auch "Custom..." als Firmware gewählt werden und dann die zu flashende
