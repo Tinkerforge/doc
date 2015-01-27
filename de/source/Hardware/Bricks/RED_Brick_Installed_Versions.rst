@@ -16,7 +16,7 @@ Eine Vielzahl von verschiedenen Software-Bibliotheken sind bereits auf den
 RED Brick Image vorinstalliert. Auf dieser Seite sind deren Namen und
 die jeweils installierte Version für die aktuelle Version des Images zu
 finden. Diese Liste kann auch im :ref:`Versions Tab des Brick Viewers
-<_red_brick_brickv_versions_tab>` eingesehen werden und bezieht sich dort
+<red_brick_brickv_versions_tab>` eingesehen werden und bezieht sich dort
 auf den jeweiligen RED Brick.
 
 Die Liste der Versionen wird automatisch generiert und ist leider

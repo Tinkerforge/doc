@@ -15,7 +15,7 @@ RED Brick - Installed Library Versions
 The RED Brick comes with a plethora of different programming language
 libraries already installed. Below you can find the versions that are
 installed on the latest image. This list can also be viewed from the
-:ref:`versions tab of the Brick Viewer <_red_brick_brickv_versions_tab>` for
+:ref:`versions tab of the Brick Viewer <red_brick_brickv_versions_tab>` for
 the connected RED Brick.
 
 This list of versions is automatically generated and not fully complete.
