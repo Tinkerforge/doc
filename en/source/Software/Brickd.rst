@@ -24,6 +24,14 @@ to a PC to be controlled from a smart phone or over the Internet from
 another PC.
 
 
+Requirements
+------------
+
+* Windows XP or newer
+* Linux with libusb 1.0 or newer
+* Mac OS X 10.8 or newer
+
+
 .. _brickd_installation:
 
 Installation

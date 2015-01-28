@@ -23,6 +23,14 @@ PC auf dem der Benutzercode läuft zu trennen. Dadurch ist das Steuern über ein
 Smartphone oder auch über das Internet möglich.
 
 
+Voraussetzungen
+---------------
+
+* Windows XP oder neuer
+* Linux mit libusb 1.0 oder neuer
+* Mac OS X 10.8 oder neuer
+
+
 .. _brickd_installation:
 
 Installation
