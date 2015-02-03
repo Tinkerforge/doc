@@ -515,6 +515,10 @@ Import/Export
 System Logs
 """""""""""
 
+.. image:: /Images/Screenshots/brickv_red_tab_imexport_system_logs.jpg
+   :scale: 60 %
+   :alt: Screenshot of Import/Export tab showing system logs.
+   :align: center
 TODO
 
 Import
@@ -525,7 +529,7 @@ TODO
 Export
 """"""
 
-.. image:: /Images/Screenshots/brickv_red_tab_export.jpg
+.. image:: /Images/Screenshots/brickv_red_tab_imexport_export.jpg
    :scale: 60 %
    :alt: Screenshot of Import/Export tab showing export.
    :align: center
