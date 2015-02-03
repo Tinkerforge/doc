@@ -318,7 +318,7 @@ Wireless Access Point
 
 In the Wireless Access Point section of this tab, you can turn
 the RED Brick into a wireless access point. This tab is only
-availabe if the :ref:`Access Point service <red_brick_brick_settings_services>`
+available if the :ref:`Access Point service <red_brick_brick_settings_services>`
 is activated and you have connected the `WiFi USB Adapter <https://www.tinkerforge.com/en/shop/accessories/red-brick/wifi-usb-adapter.html>`__
 to the RED Brick USB port.
 
@@ -437,7 +437,7 @@ directly connect from your smart phone or notebook to the RED Brick.
  * Start Desktop Environment: Starting the desktop environment (LXDE) takes
    some time, if you don't use it you can disable it to save boot time
 
- * Start Web Server: The webserver is necessary if you want to use web
+ * Start Web Server: The web server is necessary if you want to use web
    services on the RED Brick. If enabled, it adds about 10 seconds to the 
    boot time!
 
@@ -448,7 +448,7 @@ directly connect from your smart phone or notebook to the RED Brick.
  * Access Point Mode: If access point mode is enabled, you can configure
    the RED Brick to be an :ref:`access point in the settings tab <red_brick_brick_settings_ap>`.
 
-If you chage the services and save the changes, the RED Brick will reboot
+If you change the services and save the changes, the RED Brick will reboot
 and the new configuration will be available after the reboot.
 
 .. _red_brick_brickv_program:
