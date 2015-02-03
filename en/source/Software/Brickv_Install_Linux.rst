@@ -49,7 +49,7 @@ or in a terminal with::
 To install Brick Viewer from the terminal use the following::
 
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
+ sudo apt-get install python python-qt4 python-qt4-gl python-opengl python-serial
  sudo dpkg -i brickv_linux_latest.deb
 
 
@@ -62,7 +62,6 @@ To install Brick Viewer from source, download the source from
 * python
 * python-qt4
 * python-qt4-gl
-* python-qwt5-qt4
 * python-opengl
 * python-serial
 * pyqt4-dev-tools
@@ -70,7 +69,7 @@ To install Brick Viewer from source, download the source from
 On Debian based distributions you install them via ``apt-get``. On other
 distribution you have to search for and install the equivalent packages::
 
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial pyqt4-dev-tools
+ sudo apt-get install python python-qt4 python-qt4-gl python-opengl python-serial pyqt4-dev-tools
 
 First you have to build the Qt ``.ui`` files (you'll need ``pyuic4`` for that),
 change to the folder ``src/`` and run::
@@ -81,19 +80,3 @@ After that you should be able to start brickv from source, change to the folder
 ``src/brickv/`` and start with::
 
  python main.py
-
-
-python-qwt5-qt4 on Debian Wheezy
---------------------------------
-
-Unfortunately Debian has at the time of writing this tutorial problems with
-the ``python-qwt5-qt4`` in Wheezy. If you use Debian Wheezy and you can not
-find ``python-qwt5-qt4`` in the repository, you have to install it from Sid::
-
- sudo echo 'APT::Default-Release "testing";' >> /etc/apt/apt.conf
-
-Then edit ``/etc/apt/sources.list`` and copy your non-``security testing`` lines
-and change the copy from ``wheezy`` to ``sid``. Now you can install the package::
-
- sudo apt-get update
- sudo apt-get -t sid install python-qwt5-qt4

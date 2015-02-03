@@ -53,7 +53,7 @@ Statt mittels eines graphischen Installationsprogramms kann der Brick Viewer
 auch über einen Terminal mittels folgender Befehle installiert werden::
 
  wget http://download.tinkerforge.com/tools/brickv/linux/brickv_linux_latest.deb
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial
+ sudo apt-get install python python-qt4 python-qt4-gl python-opengl python-serial
  sudo dpkg -i brickv_linux_latest.deb
 
 
@@ -67,7 +67,6 @@ Auch hier müssen die benötigten Abhängigkeiten installiert werden:
 * python
 * python-qt4
 * python-qt4-gl
-* python-qwt5-qt4
 * python-opengl
 * python-serial
 * pyqt4-dev-tools
@@ -75,7 +74,7 @@ Auch hier müssen die benötigten Abhängigkeiten installiert werden:
 Auf Debian basierte Distributionen können diese Pakete wie zuvor per ``apt-get``
 installiert werden. Für andere Distributionen sollte es äquivalente Pakete geben::
 
- sudo apt-get install python python-qt4 python-qt4-gl python-qwt5-qt4 python-opengl python-serial pyqt4-dev-tools
+ sudo apt-get install python python-qt4 python-qt4-gl python-opengl python-serial pyqt4-dev-tools
 
 Als erstes müssen die Qt ``.ui`` Dateien übersetzt werden (dafür wird
 ``pyuic4`` benötigt). Dazu in den ``src/`` Ordner innerhalb des entpackten
@@ -87,22 +86,3 @@ Um den Brick Viewer zu starten muss in den ``src/brickv/`` Ordner
 gewechselt und dort folgender Befehl ausgeführt werden::
 
  python main.py
-
-
-python-qwt5-qt4 auf Debian Wheezy
----------------------------------
-
-Unglücklicherweise gibt es bei Debian zum Zeitpunkt des Schreibens dieser
-Anleitung ein Problem mit dem ``python-qwt5-qt4`` Paket in Wheezy.
-Falls Debian Wheezy verwendet wird und ``python-qwt5-qt4`` ist nicht im
-Paket-Repository zu finden, dann kann es aus dem Sid Paket-Repository installiert
-werden::
-
- sudo echo 'APT::Default-Release "testing";' >> /etc/apt/apt.conf
-
-Dann muss ``/etc/apt/sources.list`` bearbeitet und die
-nicht-``security testing`` Zeilen kopiert und von ``wheezy`` auf ``sid``
-verändert werden. Jetzt kann das Paket wie folgt installiert werden::
-
- sudo apt-get update
- sudo apt-get -t sid install python-qwt5-qt4
