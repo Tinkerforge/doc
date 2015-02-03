@@ -549,6 +549,11 @@ TODO
 Import
 """"""
 
+.. image:: /Images/Screenshots/brickv_red_tab_imexport_import.jpg
+   :scale: 60 %
+   :alt: Screenshot of Import/Export tab showing import.
+   :align: center
+
 TODO
 
 Export
