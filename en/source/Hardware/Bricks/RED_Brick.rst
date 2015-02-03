@@ -319,12 +319,14 @@ Wireless Access Point
 .. note::
 
    Wireless Access Point configuration is available in
-   Image Version >= 1.4 and Brick Viewer Version >= 2.2.3.
+   Image version >= 1.4 and Brick Viewer version >= 2.2.2.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg
    :scale: 60 %
    :alt: Screenshot of settings tab showing access point configuration.
    :align: center
+
+TODO
 
 .. _red_brick_brick_settings_brickd:
 
@@ -399,12 +401,18 @@ Services
 .. note::
 
    Services are available in
-   Image Version >= 1.4 and Brick Viewer Version >= 2.2.3.
+   Image version >= 1.4 and Brick Viewer Version >= 2.2.2.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_services.jpg
    :scale: 60 %
    :alt: Screenshot of settings tab showing services.
    :align: center
+
+In the Services section you can enable and disable different services on the
+RED Brick. If you don't need a web server or a desktop environment on your
+RED Brick you can disable them and make the RED Brick boot faster. You can also
+enable the :ref:`wireless access point mode <_red_brick_brick_settings_ap>` to
+directly connect from your smart phone or notebook to the RED Brick.
 
 TODO
 
@@ -510,7 +518,7 @@ Import/Export
 .. note::
 
    Import/Export of programs and logs is available in
-   Brick Viewer Version >= 2.2.3.
+   Brick Viewer version >= 2.2.2.
 
 System Logs
 """""""""""

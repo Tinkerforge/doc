@@ -332,8 +332,8 @@ WLAN Access Point
 
 .. note::
 
-   WLAN Access Point Konfigurations ist verfübar seit
-   Image Version >= 1.4 und Brick Viewer Version >= 2.2.3.
+   WLAN Access Point Konfigurations ist verfügbar seit
+   Image Version >= 1.4 und Brick Viewer Version >= 2.2.2.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg
    :scale: 60 %
@@ -416,13 +416,20 @@ Services
 
 .. note::
 
-   Services sind Verfügbar seit 
-   Image Version >= 1.4 und Brick Viewer Version >= 2.2.3.
+   Services sind verfügbar seit 
+   Image Version >= 1.4 und Brick Viewer Version >= 2.2.2.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_services.jpg
    :scale: 60 %
    :alt: Screenshot des Settings Tabs: Services.
    :align: center
+
+Im Services Abschnitt können verschiedene Services des RED Brick ein- und
+ausgeschaltet werden. Wenn Webserver oder Desktop Umgebung nicht benötigt
+werden können diese abgeschaltet werden wodurch der RED Brick schneller bootet.
+Ebenfalls kann hier der :ref:`WLAN Access Point Modus
+<_red_brick_brick_settings_ap>` eingeschaltet werden wodurch sich Smartphones
+und Notebooks direkt mit dem RED Brick verbinden können.
 
 TODO
 
@@ -526,8 +533,8 @@ Import/Export
 
 .. note::
 
-   Import/Export der Programme und Logs ist Verfübar seit 
-   Brick Viewer Version >= 2.2.3.
+   Import/Export der Programme und Logs ist verfügbar seit
+   Brick Viewer Version >= 2.2.2.
 
 System Logs
 """""""""""
