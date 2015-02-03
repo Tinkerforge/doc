@@ -316,7 +316,15 @@ other configuration options:
 Wireless Access Point
 """""""""""""""""""""
 
-TODO
+.. note::
+
+   Wireless Access Point configuration is available in
+   Image Version >= 1.4 and Brick Viewer Version >= 2.2.3.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing access point configuration.
+   :align: center
 
 .. _red_brick_brick_settings_brickd:
 
@@ -387,6 +395,16 @@ To do this follow the instructions in Brick Viewer.
 
 Services
 """"""""
+
+.. note::
+
+   Services are available in
+   Image Version >= 1.4 and Brick Viewer Version >= 2.2.3.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_services.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing services.
+   :align: center
 
 TODO
 
@@ -489,6 +507,11 @@ The recommended baudrates to be used on the RED Brick are 500000, 250000,
 Import/Export
 ^^^^^^^^^^^^^
 
+.. note::
+
+   Import/Export of programs and logs is available in
+   Brick Viewer Version >= 2.2.3.
+
 System Logs
 """""""""""
 
@@ -501,6 +524,11 @@ TODO
 
 Export
 """"""
+
+.. image:: /Images/Screenshots/brickv_red_tab_export.jpg
+   :scale: 60 %
+   :alt: Screenshot of Import/Export tab showing export.
+   :align: center
 
 TODO
 

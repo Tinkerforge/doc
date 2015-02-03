@@ -330,6 +330,16 @@ Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 WLAN Access Point
 """""""""""""""""
 
+.. note::
+
+   WLAN Access Point Konfigurations ist verfübar seit
+   Image Version >= 1.4 und Brick Viewer Version >= 2.2.3.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg
+   :scale: 60 %
+   :alt: Screenshot des Settings Tab mit Konfiguration des Access Point
+   :align: center
+
 TODO
 
 .. _red_brick_brick_settings_brickd:
@@ -403,6 +413,16 @@ in Brick Viewer folgen.
 
 Services
 """"""""
+
+.. note::
+
+   Services sind Verfügbar seit 
+   Image Version >= 1.4 und Brick Viewer Version >= 2.2.3.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_services.jpg
+   :scale: 60 %
+   :alt: Screenshot des Settings Tabs: Services.
+   :align: center
 
 TODO
 
@@ -504,6 +524,11 @@ Bricks.
 Import/Export
 ^^^^^^^^^^^^^
 
+.. note::
+
+   Import/Export der Programme und Logs ist Verfübar seit 
+   Brick Viewer Version >= 2.2.3.
+
 System Logs
 """""""""""
 
@@ -516,6 +541,11 @@ TODO
 
 Export
 """"""
+
+.. image:: /Images/Screenshots/brickv_red_tab_export.jpg
+   :scale: 60 %
+   :alt: Screenshot odes Import/Export Tabs.
+   :align: center
 
 TODO
 
