@@ -562,8 +562,21 @@ System Logs
    :alt: Screenshot of Import/Export tab showing system logs.
    :align: center
 
-Choose a log file and click ``Refresh`` to download them from the RED Brick
-or ``Save`` to save them on your disk.
+Choose a log file and click ``Refresh`` to download it from the RED Brick and 
+show it in the viewer. With the ``Save`` button you can save it on your disk.
+
+Import
+""""""
+
+.. image:: /Images/Screenshots/brickv_red_tab_imexport_import.jpg
+   :scale: 60 %
+   :alt: Screenshot of Import/Export tab showing import.
+   :align: center
+
+Choose a file you previously exported (see below) and select the
+programs you want to import to your RED Brick. Press ``Import``
+to upload the selected programs.
+
 
 Export
 """"""
@@ -576,26 +589,16 @@ Export
 In the export tab you can select the programs that you want to export
 from the RED Brick. Press ``Export`` to save them on your disk.
 
-The export will contain the configuration of the program, all of the
+The export file will contain the configuration of the program, all of the
 program files as well as the logs that have been accumulated. If your
 program is running and continuously writing files, you may want to
 shut the program down before you export it. Otherwise you might export
 the program with a file that is only partly written.
 
-The programs can the be imported (see below) on a different RED Brick
-or on an updated image.
+With this option programs can be exported and on a different RED Brick be 
+imported (see above).
 
-Import
-""""""
 
-.. image:: /Images/Screenshots/brickv_red_tab_imexport_import.jpg
-   :scale: 60 %
-   :alt: Screenshot of Import/Export tab showing import.
-   :align: center
-
-Choose a file you previously exported (see above) and select the
-programs you want to import to your RED Brick. Press ``Import``
-to upload the selected programs.
 
 .. _red_brick_web_interface:
 

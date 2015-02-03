@@ -330,6 +330,12 @@ Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 WLAN Access Point
 """""""""""""""""
 
+In dem WLAN Access Point Abschnitt kann der RED Brick in einen WLAN Access 
+Point verwandelt werden. Der Tab ist erst verfügbar, wenn der 
+:ref:`Access Point Service <red_brick_brick_settings_services>` aktiviert ist 
+und ein `WLAN USB Adapter <https://www.tinkerforge.com/de/shop/accessories/red-brick/wifi-usb-adapter.html>`__ 
+eingesteckt ist.
+
 .. note::
 
    WLAN Access Point Konfigurations ist verfügbar seit
@@ -340,7 +346,19 @@ WLAN Access Point
    :alt: Screenshot des Settings Tab mit Konfiguration des Access Point
    :align: center
 
-TODO
+Im Access Point Modus stellt der RED Brick einen DHCP und DNS server zur 
+verfügung. Diese geben Geräten, die sich mit dem RED Brick verbinden eine IP 
+Adresse und stellt eine Domain zur verfügung. Die IP SSID, WPA Passphrase 
+(Passwort), DHCP Pool, DNS Domain und andere Optionen die von einem Access Point 
+erwartet werden, können konfiguriert werden.
+
+Die aktuellen DHCP Leases werden angezeigt, so dass verbundene Geräte einfach 
+identifiziert werden können.
+
+Im Access Point Modus ist keine externe Netzwerkinfrastruktur notwendig. 
+Smartphone, Tablet oder Laptop können direkt mit dem RED Brick verbunden werden.
+
+
 
 .. _red_brick_brick_settings_brickd:
 
@@ -426,12 +444,32 @@ Services
 
 Im Services Abschnitt können verschiedene Services des RED Brick ein- und
 ausgeschaltet werden. Wenn Webserver oder Desktop Umgebung nicht benötigt
-werden können diese abgeschaltet werden wodurch der RED Brick schneller bootet.
+werden können diese abgeschaltet werden, wodurch der RED Brick schneller bootet.
 Ebenfalls kann hier der :ref:`WLAN Access Point Modus
-<_red_brick_brick_settings_ap>` eingeschaltet werden wodurch sich Smartphones
+<_red_brick_brick_settings_ap>` eingeschaltet werden, wodurch sich Smartphones
 und Notebooks direkt mit dem RED Brick verbinden können.
 
-TODO
+ * Enable GPU: Aktiviert die Hardwarebeschleunigung für die Grafikausgabe. Wird 
+   diese aktiviert, wird ein Teil des RAMs von der GPU genutzt. Wird HDMI nicht 
+   genutzt empfehlen wir die GPU zu deaktivieren.
+   
+ * Start Desktop Environment: Der Start der Desktopumgebung (LXDE) benötigt
+   Zeit, wird diese nicht benutzt kann sie deaktiviert werden um Bootzeit zu
+   sparen.
+
+ * Start Web Server: Der Webserver ist notwendig wenn Webservices genutzt werden
+   sollen. Diese Option fügt ungefähr 10 Sekunden Bootzeit hinzu.
+   
+ * Show Splash Screen: Falls aktiviert wird ein Splash Screen beim Bootvorgang
+   angezeigt. Ist dieser deaktiviert, so werden Kernelmeldungen angezeigt.
+ 
+ * Access Point Mode: Ist der Acess Point Modus aktiviert, kann der RED Brick 
+   als Access Point genutzt werden (siehe
+   :ref:`Access Point in dem Settings Tab <red_brick_brick_settings_ap>`.
+
+Werden Services geändert und gespeichert, so startet der RED Brick neu. Nach dem 
+Neustart stehen die Änderungen zur Verfügung.
+
 
 .. _red_brick_brickv_program:
 
@@ -544,17 +582,20 @@ System Logs
    :alt: Screenshot des Import/Export Tabs: System Logs.
    :align: center
 
-TODO
+Wähle eine Logdatei und klicke auf ``Refresh``. Die Logdatei wird vom RED Brick
+heruntergeladen und im Brick Viewer angezeigt. Mit ``Save`` kann die Datei 
+gespeichert werden.
 
 Import
 """"""
 
 .. image:: /Images/Screenshots/brickv_red_tab_imexport_import.jpg
    :scale: 60 %
-   :alt: Screenshot of Import/Export tab showing import.
+   :alt: Screenshot des Import/Export Tabs: Import.
    :align: center
 
-TODO
+Wähle ein Datei mit zuvor exportierten Programmen (siehe unten) und wähle die 
+Programme, die importiert werden sollen. Drücke ``Import`` um diese hochzuladen.
 
 Export
 """"""
@@ -564,7 +605,16 @@ Export
    :alt: Screenshot des Import/Export Tabs: Export
    :align: center
 
-TODO
+Im Export Tab können Programme exportiert werden. Drücke ``Export`` um diese auf
+der Festplatte zu speichern.
+
+Die Exportdatei enthält die Konfiguration des Programms, alle Dateien und die 
+Logs die sich über die Zeit angesammelt haben. Wenn das zu exportierende 
+Programm läuft und dauerhaft Dateien schreibt bietet es sich an dieses vor dem 
+Export zu beenden um teilweise geschriebene Dateien zu verindern.
+
+Mit dieser Option können Programme exportiert werden und auf anderen RED Bricks
+importiert(siehe oben) werden.
 
 
 .. _red_brick_web_interface:
