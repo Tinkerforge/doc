@@ -1102,6 +1102,19 @@ can fix this through the console::
 The problem only affects image version 1.2, it is fixed since image 
 version 1.3.
 
+**Ethernet Extension shows up in Extension tab but not in network settings** (solved)
+
+In Image version 1.4 the RED Bricks may have problems finding the driver for the
+Ethernet extension. If you encounter this problem you can fix this through the 
+console::
+
+ sudo su
+ # enter password tf
+
+ ln -s /lib/modules/3.4.103+/kernel/drivers/net/ethernet/wiznet/w5x00.ko /lib/modules/3.4.90+/kernel/drivers/net/ethernet/wiznet/
+
+The problem only affects the RED Brick Image with version 1.4.
+
 .. _red_brick_history:
 
 History
