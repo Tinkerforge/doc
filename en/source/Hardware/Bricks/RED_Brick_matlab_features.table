@@ -1,9 +1,8 @@
 MATLAB/Octave
 -------------
-============= ============== ============================================== ==== ====
-Name          Version        Description                                    fast full
-============= ============== ============================================== ==== ====
-octave        3.6.2-5+deb7u1 GNU Octave language for numerical computations |c|  |c|
-octave-common 3.6.2-5+deb7u1 architecture-independent files for octave      |c|  |c|
-octave-java   1.2.8-6        Java objects manipulation interface for Octave |c|  |c|
-============= ============== ============================================== ==== ====
+============= ======= ============================================== ====
+Name          Version Description                                    full
+============= ======= ============================================== ====
+octave        3.8.2-4 GNU Octave language for numerical computations |c|
+octave-common 3.8.2-4 architecture-independent files for octave      |c|
+============= ======= ============================================== ====

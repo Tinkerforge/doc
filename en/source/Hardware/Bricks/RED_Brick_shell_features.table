@@ -1,8 +1,8 @@
 Shell
 -----
-==== =================== ====================== ==== ====
-Name Version             Description            fast full
-==== =================== ====================== ==== ====
-bash 4.2+dfsg-0.1+deb7u3 GNU Bourne Again SHell |c|  |c|
-dash 0.5.7-3             POSIX-compliant shell  |c|  |c|
-==== =================== ====================== ==== ====
+==== ========== ====================== ====
+Name Version    Description            full
+==== ========== ====================== ====
+bash 4.3-11+b1  GNU Bourne Again SHell |c|
+dash 0.5.7-4+b1 POSIX-compliant shell  |c|
+==== ========== ====================== ====

@@ -1,14 +1,14 @@
 Java
 ----
-================= ========== ==================================================== ==== ====
-Name              Version    Description                                          fast full
-================= ========== ==================================================== ==== ====
-JFreeChart        1.0.17     JFreeChart is a free 100% Java chart library              |c|
-JOGL              2.1.5      Java Bindings for OpenGL                                  |c|
-JScience          4.3.1      Scientific library for Java                          |c|  |c|
-Java8             1.8.0-b132 Java8 Client VM (optimized for arm)                  |c|  |c|
-MySQL_Oracle_JDBC 5.1.30     Oracle corporation JDBC driver for MySQL             |c|  |c|
-OpenCV            2.4.3      OpenCV library for Java                              |c|  |c|
-PDFBox            1.8.5      Open source Java tool for working with PDF documents |c|  |c|
-SQLite_JDBC       3.7.2      JDBC driver for SQLite                               |c|  |c|
-================= ========== ==================================================== ==== ====
+================= ========== ==================================================== ====
+Name              Version    Description                                          full
+================= ========== ==================================================== ====
+JFreeChart        1.0.17     JFreeChart is a free 100% Java chart library         |c|
+JOGL              2.1.5      Java Bindings for OpenGL                             |c|
+JScience          4.3.1      Scientific library for Java                          |c|
+Java8             1.8.0-b132 Java8 Client VM (optimized for arm)                  |c|
+MySQL_Oracle_JDBC 5.1.30     Oracle corporation JDBC driver for MySQL             |c|
+OpenCV            2.4.3      OpenCV library for Java                              |c|
+PDFBox            1.8.5      Open source Java tool for working with PDF documents |c|
+SQLite_JDBC       3.7.2      JDBC driver for SQLite                               |c|
+================= ========== ==================================================== ====
