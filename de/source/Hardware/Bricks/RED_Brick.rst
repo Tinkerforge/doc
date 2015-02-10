@@ -818,17 +818,30 @@ Karte zu kopieren.
 2. Starte Win32DiskImager als Administrator
 3. Wähle Image und SD Karte und klicke auf "Write"
 
-Linux und Mac OS X
-""""""""""""""""""
+Linux
+"""""
 
 1. Verbinde die SD Karte über den Kartenleser mit dem PC oder Mac
-2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``dmesg`` oder ``df -h``)
-3. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_4_full.img``) auf die
+2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``dmesg``)
+3. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_5_full.img``) auf die
    SD Karte (z.B. ``/dev/sdb``) schreiben:
 
 .. code-block:: bash
 
-  sudo dd if=/tmp/red_image_1_4_full.img of=/dev/sdb bs=1M
+  sudo dd bs=1M if=/tmp/red_image_1_5_full.img of=/dev/sdb
+
+Mac OS X
+""""""""
+
+1. Verbinde die SD Karte über den Kartenleser mit dem PC oder Mac
+2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``diskutil list``)
+3. Unmounte die SD Karte (z.B. mit ``diskutil unmountDisk``)
+4. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_5_full.img``) auf die
+   SD Karte (z.B. ``/dev/disk4``) schreiben:
+
+.. code-block:: bash
+
+  sudo dd bs=1m if=/tmp/red_image_1_5_full.img of=/dev/disk4
 
 .. _red_brick_change_password:
 

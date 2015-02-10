@@ -798,17 +798,30 @@ the card.
 2. Start Win32DiskImager as Administrator
 3. Choose the image and SD card and click "Write"
 
-Linux and Mac OS X
-""""""""""""""""""
+Linux
+"""""
 
-1. Connect the SD card to the PC or Mac using the card reader
-2. Identify the path of the SD card (e.g. using ``dmesg`` oder ``df -h``)
-3. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_4_full.img``) to the
+1. Connect the SD card to the PC using the card reader
+2. Identify the path of the SD card (e.g. using ``dmesg``)
+3. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_5_full.img``) to the
    SD card (e.g. ``/dev/sdb``):
 
 .. code-block:: bash
 
-  dd if=/tmp/red_image_1_4_full.img of=/dev/sdb bs=1M
+  sudo dd bs=1M if=/tmp/red_image_1_5_full.img of=/dev/sdb
+
+Mac OS X
+""""""""
+
+1. Connect the SD card to the Mac using the card reader
+2. Identify the path of the SD card (e.g. using ``diskutil list``)
+3. Unmount the SD card (e.g. using ``diskutil unmountDisk``)
+4. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_5_full.img``) to the
+   SD card (e.g. ``/dev/disk4``):
+
+.. code-block:: bash
+
+  sudo dd bs=1m if=/tmp/red_image_1_5_full.img of=/dev/disk4
 
 .. _red_brick_change_password:
 
