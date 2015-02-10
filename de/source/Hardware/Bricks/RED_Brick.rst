@@ -814,34 +814,39 @@ Für Windows emfehlen wir ein Tool wie `Win32DiskImager
 <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__ um das Image auf die
 Karte zu kopieren.
 
-1. Verbinde die SD Karte über den Kartenleser mit dem PC
-2. Starte Win32DiskImager als Administrator
-3. Wähle Image und SD Karte und klicke auf "Write"
+1. Verbinde die SD Karte über den Kartenleser mit dem PC.
+2. Starte Win32DiskImager als Administrator.
+3. Wähle Image und SD Karte und klicke auf "Write".
 
 Linux
 """""
 
-1. Verbinde die SD Karte über den Kartenleser mit dem PC oder Mac
-2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``dmesg``)
+1. Verbinde die SD Karte über den Kartenleser mit dem PC.
+2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``dmesg``) mit diesem
+   Format: ``/dev/sdX``, wobei ``X`` ein Buchstabe ist.
 3. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_5_full.img``) auf die
    SD Karte (z.B. ``/dev/sdb``) schreiben:
 
 .. code-block:: bash
 
-  sudo dd bs=1M if=/tmp/red_image_1_5_full.img of=/dev/sdb
+  sudo dd bs=64M if=/tmp/red_image_1_5_full.img of=/dev/sdb
 
 Mac OS X
 """"""""
 
-1. Verbinde die SD Karte über den Kartenleser mit dem PC oder Mac
-2. Identifiziere den Pfad zu der SD Karte (z.B. mit ``diskutil list``)
-3. Unmounte die SD Karte (z.B. mit ``diskutil unmountDisk``)
-4. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_5_full.img``) auf die
-   SD Karte (z.B. ``/dev/disk4``) schreiben:
+1. Verbinde die SD Karte über den Kartenleser mit dem Mac.
+2. Möglicherweise meldet Mac OS X, dass die SD Karte nicht lesbar ist,
+   ignoriere diese Meldung.
+3. Identifiziere den Pfad zu der SD Karte (z.B. mit ``diskutil list``), er
+   sollte dieses Format haben: ``/dev/diskN``, wobei ``N`` ein Zahl ist.
+4. Unmounte die SD Karte (z.B. mit ``diskutil unmountDisk /dev/diskN``).
+5. Mittels ``dd`` das Image (z.B. ``/tmp/red_image_1_5_full.img``) auf die SD
+   Karte (z.B. ``/dev/disk4``) schreiben, dabei aber ``/dev/rdiskN`` statt
+   ``/dev/diskN`` für erhöhten Durchsatz verwenden:
 
 .. code-block:: bash
 
-  sudo dd bs=1m if=/tmp/red_image_1_5_full.img of=/dev/disk4
+  sudo dd bs=64m if=/tmp/red_image_1_5_full.img of=/dev/rdisk4
 
 .. _red_brick_change_password:
 

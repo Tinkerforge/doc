@@ -794,34 +794,38 @@ For Windows we recommend a tool like `Win32DiskImager
 <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__ to copy the image to
 the card.
 
-1. Connect the SD card to the PC using the card reader
-2. Start Win32DiskImager as Administrator
-3. Choose the image and SD card and click "Write"
+1. Connect the SD card to the PC using the card reader.
+2. Start Win32DiskImager as Administrator.
+3. Choose the image and SD card and click "Write".
 
 Linux
 """""
 
-1. Connect the SD card to the PC using the card reader
-2. Identify the path of the SD card (e.g. using ``dmesg``)
+1. Connect the SD card to the PC using the card reader.
+2. Identify the path of the SD card (e.g. using ``dmesg``) with this format:
+   ``/dev/sdX``, where ``X`` is a letter.
 3. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_5_full.img``) to the
    SD card (e.g. ``/dev/sdb``):
 
 .. code-block:: bash
 
-  sudo dd bs=1M if=/tmp/red_image_1_5_full.img of=/dev/sdb
+  sudo dd bs=64M if=/tmp/red_image_1_5_full.img of=/dev/sdb
 
 Mac OS X
 """"""""
 
-1. Connect the SD card to the Mac using the card reader
-2. Identify the path of the SD card (e.g. using ``diskutil list``)
-3. Unmount the SD card (e.g. using ``diskutil unmountDisk``)
-4. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_5_full.img``) to the
-   SD card (e.g. ``/dev/disk4``):
+1. Connect the SD card to the Mac using the card reader.
+2. Mac OS X might complain that the SD card is not readable, ignore this message.
+3. Identify the path of the SD card (e.g. using ``diskutil list``), it should
+   have this format: ``/dev/diskN``, where ``N`` is a number.
+4. Unmount the SD card (e.g. using ``diskutil unmountDisk /dev/diskN``).
+5. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_5_full.img``) to the
+   SD card (e.g. ``/dev/disk4``), but use ``/dev/rdiskN`` instead of
+   ``/dev/diskN`` for higher throughput:
 
 .. code-block:: bash
 
-  sudo dd bs=1m if=/tmp/red_image_1_5_full.img of=/dev/disk4
+  sudo dd bs=64m if=/tmp/red_image_1_5_full.img of=/dev/rdisk4
 
 .. _red_brick_change_password:
 
