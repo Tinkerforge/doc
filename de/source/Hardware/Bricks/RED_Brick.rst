@@ -1134,7 +1134,7 @@ Verfügung. Das Problem kann über die Konsole gelöst werden::
 Dieses Problem tritt nur in Image Version 1.2 auf, es ist seit Image Version
 1.3 beseitigt.
 
-**Ethernet Extension wird im Extension-Tab angezeigt, aber nicht in den Netzwerkeinstellungen** (solved)
+**Ethernet Extension wird im Extension-Tab angezeigt, aber nicht in den Netzwerkeinstellungen** (gelöst)
 
 In Image Version 1.4 kann der RED Brick Probleme haben den Treiber für die
 Ethernet Extension zu finden. Das Problem kann über die Console gelöst werden::
