@@ -56,7 +56,7 @@ Features
 --------
 
 * 4 channel digital input 
-* Input voltages up to 36V
+* Input voltages up to 36V (DC)
 * Galvanically isolated
 * Groupable
 
@@ -69,7 +69,7 @@ Description
 The Industrial Digital In 4 :ref:`Bricklet <primer_bricklets>` can 
 be used to extend :ref:`Bricks <primer_bricks>` by four galvanically 
 isolated digital inputs. The input voltage can be up to 36 
-`volts <http://en.wikipedia.org/wiki/Volt>`__. 
+`volts <http://en.wikipedia.org/wiki/Volt>`__ (DC).
 
 Input isolation permits the usage without a direct electrical connection, 
 such that ground loops can be prevented and an additional degree of safety is 
@@ -98,7 +98,7 @@ Current Consumption               1mA
 --------------------------------  ------------------------------------------------------------
 Input Type                        Four optocoupled inputs (including 4.7k Ohm series resistor)
 Input Current                     Depending on input voltage, ca. 1mA/5V, ca. 5mA/24V
-Maximum Input Voltage             36V
+Maximum Input Voltage             36V (DC)
 Low Level Voltage                 0-2V
 High Level Voltage                3-36V
 Isolation                         5000Vrms (optocoupler value)
