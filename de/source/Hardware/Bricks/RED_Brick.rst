@@ -848,6 +848,14 @@ Mac OS X
 
   sudo dd bs=64m if=/tmp/red_image_1_5_full.img of=/dev/rdisk4
 
+Falls dies nicht funktioniert (z.B. wenn der RED Brick nicht von der SD Karte
+bootet) dann kann alternativ diese langsamer Methode verwendet werden:
+
+.. code-block:: bash
+
+  sudo dd bs=1m if=/tmp/red_image_1_5_full.img of=/dev/disk4
+
+
 .. _red_brick_change_password:
 
 Standard Passwort ändern

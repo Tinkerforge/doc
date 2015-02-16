@@ -827,6 +827,14 @@ Mac OS X
 
   sudo dd bs=64m if=/tmp/red_image_1_5_full.img of=/dev/rdisk4
 
+If this does not work for you (e.g. the RED Brick does not boot) then you can
+use this slower method instead:
+
+.. code-block:: bash
+
+  sudo dd bs=1m if=/tmp/red_image_1_5_full.img of=/dev/disk4
+
+
 .. _red_brick_change_password:
 
 Change Default Password
