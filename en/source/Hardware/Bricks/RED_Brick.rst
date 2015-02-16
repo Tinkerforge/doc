@@ -430,22 +430,22 @@ RED Brick you can disable them and make the RED Brick boot faster. You can also
 enable the :ref:`wireless access point mode <red_brick_brick_settings_ap>` to
 directly connect from your smart phone or notebook to the RED Brick.
 
- * Enable GPU: Enables hardware acceleration for graphics. If you enable
+ * GPU: Enables hardware acceleration for graphics. If you enable
    this, some parts of the RAM are shared with the GPU. If you don't use HDMI
    we would recommend to disable the GPU.
 
- * Start Desktop Environment: Starting the desktop environment (LXDE) takes
+ * Desktop Environment: Starting the desktop environment (LXDE) takes
    some time, if you don't use it you can disable it to save boot time
 
- * Start Web Server: The web server is necessary if you want to use web
-   services on the RED Brick. If enabled, it adds about 10 seconds to the 
+ * Web Server: The web server is necessary if you want to use web
+   services on the RED Brick. If enabled, it adds about 10 seconds to the
    boot time!
 
- * Show Splash Screen: If enabled, a splash screen is shown on startup
+ * Splash Screen: If enabled, a splash screen is shown on startup
    (during the boot process of the Linux kernel). If disabled you can
    see the kernel messages.
 
- * Access Point Mode: If access point mode is enabled, you can configure
+ * Access Point: If access point mode is enabled, you can configure
    the RED Brick to be an :ref:`access point in the settings tab <red_brick_brick_settings_ap>`.
 
 If you change the services and save the changes, the RED Brick will reboot

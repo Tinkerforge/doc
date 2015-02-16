@@ -449,21 +449,21 @@ Ebenfalls kann hier der :ref:`WLAN Access Point Modus
 <red_brick_brick_settings_ap>` eingeschaltet werden, wodurch sich Smartphones
 und Notebooks direkt mit dem RED Brick verbinden können.
 
- * Enable GPU: Aktiviert die Hardwarebeschleunigung für die Grafikausgabe. Wird 
+ * GPU: Aktiviert die Hardwarebeschleunigung für die Grafikausgabe. Wird
    diese aktiviert, wird ein Teil des RAMs von der GPU genutzt. Wird HDMI nicht 
    genutzt empfehlen wir die GPU zu deaktivieren.
    
- * Start Desktop Environment: Der Start der Desktopumgebung (LXDE) benötigt
+ * Desktop Environment: Der Start der Desktopumgebung (LXDE) benötigt
    Zeit, wird diese nicht benutzt kann sie deaktiviert werden um Bootzeit zu
    sparen.
 
- * Start Web Server: Der Webserver ist notwendig wenn Webservices genutzt werden
+ * Web Server: Der Webserver ist notwendig wenn Webservices genutzt werden
    sollen. Diese Option fügt ungefähr 10 Sekunden Bootzeit hinzu.
    
- * Show Splash Screen: Falls aktiviert wird ein Splash Screen beim Bootvorgang
+ * Splash Screen: Falls aktiviert wird ein Splash Screen beim Bootvorgang
    angezeigt. Ist dieser deaktiviert, so werden Kernelmeldungen angezeigt.
  
- * Access Point Mode: Ist der Acess Point Modus aktiviert, kann der RED Brick 
+ * Access Point: Ist der Acess Point Modus aktiviert, kann der RED Brick
    als Access Point genutzt werden (siehe
    :ref:`Access Point in dem Settings Tab <red_brick_brick_settings_ap>`.
 
