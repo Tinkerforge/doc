@@ -446,7 +446,7 @@ Im Services Abschnitt können verschiedene Services des RED Brick ein- und
 ausgeschaltet werden. Wenn Webserver oder Desktop Umgebung nicht benötigt
 werden können diese abgeschaltet werden, wodurch der RED Brick schneller bootet.
 Ebenfalls kann hier der :ref:`WLAN Access Point Modus
-<_red_brick_brick_settings_ap>` eingeschaltet werden, wodurch sich Smartphones
+<red_brick_brick_settings_ap>` eingeschaltet werden, wodurch sich Smartphones
 und Notebooks direkt mit dem RED Brick verbinden können.
 
  * Enable GPU: Aktiviert die Hardwarebeschleunigung für die Grafikausgabe. Wird 
