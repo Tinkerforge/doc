@@ -67,14 +67,17 @@ Da die Extension selbst die von der API generierten TCP/IP Pakete behandeln kann
 ist es möglich direkt vom Smartphone, Tablet oder (Embedded) PC zu steuern. 
 Der :ref:`Brick Daemon <brickd>` ist nicht mehr notwendig.
 
-Um die Ethernet Extension zu nutzen ist ein :ref:`Master Brick <master_brick>` 
-notwendig. Wenn andere Bricks gesteuert werden sollen, so kann ein 
-:ref:`Stapel <primer_stack>` aus 
-diesen gebaut werden und auf der Master Brick gesteckt werden. Wenn Bricklets 
-verwendet werden sollen, so können diese einfach an den Master Brick oder 
-andere Bricks im Stapel angeschlossen werden. Aus Programmierersicht ist 
-dies absolut transparent, d.h. alle Bricks und Bricklets können so genutzt 
-werden als ob sie direkt per USB mit dem steuernden Gerät verbunden wären.
+Die Ethernet Extension kann zusammen mit einem :ref:`Master Brick <master_brick>` 
+oder einem :ref:`RED Brick <red_brick>` genutzt werden. 
+Wenn andere Bricks gesteuert werden sollen, so kann ein 
+:ref:`Stapel <primer_stack>` aus diesen gebaut werden und auf den Master Brick 
+bzw. RED Brick gesteckt werden. Wenn Bricklets verwendet werden sollen, 
+so können diese einfach an einen beliebigen Brick im Stapel angeschlossen werden 
+(Mit Ausnahme des RED Bricks).
+
+Aus Programmierersicht ist die Nutzung einer Ethernet Extension absolut transparent, 
+d.h. alle Bricks und Bricklets können so genutzt werden als ob sie direkt per USB 
+mit dem steuernden Gerät verbunden wären.
 
 Der benutzte Master Brick muss eine Firmware Version von 2.1.0 oder neuer 
 besitzen um diese Extension nutzen zu können.

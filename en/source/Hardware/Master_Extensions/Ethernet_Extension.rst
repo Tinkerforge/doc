@@ -69,10 +69,11 @@ possible to connect directly from your controlling device
 (mobile phone, tablet, (embedded) PC). A :ref:`Brick Daemon <brickd>` is not 
 necessary.
 
-To use the Ethernet Extension a :ref:`Master Brick <master_brick>` is mandatory.
+To use the Ethernet Extension a :ref:`Master Brick <master_brick>` or
+:ref:`RED Brick <red_brick>` is mandatory.
 If you want to use other Bricks, you can build a stack and plug them also on top
-of the Master Brick. If you want to use Bricklets you can attach them to the Master Brick or
-to other Bricks in the stack. From the programming perspective
+of the Master Brick or RED Brick. If you want to use Bricklets you can attach them to the 
+Bricks in the stack. From the programming perspective
 this is completely transparent, i.e. all Bricks and Bricklets can
 be used exactly the same way as if they were connected to your controlling device via USB.
 
