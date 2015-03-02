@@ -90,7 +90,7 @@ Es kann sein, dass folgende Fehlermeldung unter Linux auftritt::
 
 oder diese unter Windows::
 
- process_begin: CreateProcess(NULL, S -O binary servo-brick.elf servo-brick.bin, ...) failed.
+ process_begin: CreateProcess(NULL, S -O binary joystick-brick.elf joystick-brick.bin, ...) failed.
  make (e=2): The system cannot find the file specified.
 
 Um dies zu korrigieren muss das ``generate_makefile`` Script ein zweites Mal
