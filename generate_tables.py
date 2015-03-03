@@ -123,7 +123,7 @@ class Product:
 
     @property
     def url_part_for_hardware_doc(self):
-        url_part = self.display_name.replace(' ', '_').replace('/', '_').replace('-', '')
+        url_part = self.display_name.replace(' ', '_').replace('/', '_').replace('-', '').replace('2.0', 'V2')
 
         if url_part == 'StepDown_Power_Supply':
             url_part = 'Step_Down'
@@ -132,11 +132,11 @@ class Product:
 
     @property
     def url_part_for_software_doc(self):
-        return self.display_name.replace(' ', '').replace('/', '').replace('-', '')
+        return self.display_name.replace(' ', '').replace('/', '').replace('-', '').replace('2.0', 'V2')
 
     @property
     def url_part_for_git(self):
-        return self.url_part.replace('_', '-').replace('/', '-')
+        return self.url_part.replace('_', '-').replace('/', '-').replace('2.0', 'v2')
 
 
 brick_descriptions = {
@@ -188,6 +188,10 @@ bricks = [Brick('DC',      'dc',      bindings, True),
 
 
 bricklet_descriptions = {
+'accelerometer': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'ambient_light': {
     'en': 'Measures ambient light up to 900lux',
     'de': 'Misst Umgebungslicht bis zu 900Lux'
@@ -196,9 +200,17 @@ bricklet_descriptions = {
     'en': 'Measures voltages up to 45V (DC)',
     'de': 'Misst elektrische Spannungen bis zu 45V (DC)'
     },
+'analog_in_v2': {
+    'en': 'Measures voltages up to 42V (DC)',
+    'de': 'Misst elektrische Spannungen bis zu 42V (DC)'
+    },
 'analog_out': {
     'en': 'Generates configurable voltages up to 5V',
     'de': 'Erzeugt konfigurierbare elektrische Spannungen bis zu 5V'
+    },
+'analog_out_v2': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 'barometer': {
     'en': 'Measures air pressure and altitude changes',
@@ -236,6 +248,10 @@ bricklet_descriptions = {
     'en': 'Two relays to switch AC/DC devices',
     'de': 'Zwei Relais um AC/DC Geräte zu schalten'
     },
+'gas_detector': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'gps': {
     'en': 'Determine position, velocity and altitude',
     'de': 'Bestimmt Position, Geschwindigkeit und Höhe'
@@ -263,6 +279,10 @@ bricklet_descriptions = {
 'industrial_dual_0_20ma': {
     'en': 'Senses two currents between 0 and 20mA (IEC 60381-1)',
     'de': 'Misst zwei Stromquellen zwischen 0 und 20mA (IEC 60381-1)'
+    },
+'industrial_dual_analog_in': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 'industrial_quad_relay': {
     'en': '4 galvanically isolated solid state relays',
@@ -382,52 +402,57 @@ class Bricklet(Product):
     def description(self):
         return bricklet_descriptions[self.url_part][lang]
 
-bricklets = [Bricklet('Ambient Light',            'ambient_light',            bindings, True),
-             Bricklet('Analog In',                'analog_in',                bindings, True),
-             Bricklet('Analog Out',               'analog_out',               bindings, True),
-             Bricklet('Barometer',                'barometer',                bindings, True),
-             Bricklet('Breakout',                 'breakout',                 [],       True),
-             Bricklet('Color',                    'color',                    bindings, True),
-             Bricklet('Current12',                'current12',                bindings, True),
-             Bricklet('Current25',                'current25',                bindings, True),
-             Bricklet('Distance IR',              'distance_ir',              bindings, True),
-             Bricklet('Distance US',              'distance_us',              bindings, True),
-             Bricklet('Dual Button',              'dual_button',              bindings, True),
-             Bricklet('Dual Relay',               'dual_relay',               bindings, True),
-             Bricklet('GPS',                      'gps',                      bindings, True),
-             Bricklet('Hall Effect',              'hall_effect',              bindings, True),
-             Bricklet('Heart Rate',               'heart_rate',               bindings, False),
-             Bricklet('Humidity',                 'humidity',                 bindings, True),
-             Bricklet('Industrial Digital In 4',  'industrial_digital_in_4',  bindings, True),
-             Bricklet('Industrial Digital Out 4', 'industrial_digital_out_4', bindings, True),
-             Bricklet('Industrial Dual 0-20mA',   'industrial_dual_0_20ma',   bindings, True),
-             Bricklet('Industrial Quad Relay',    'industrial_quad_relay',    bindings, True),
-             Bricklet('IO-16',                    'io16',                     bindings, True),
-             Bricklet('IO-4',                     'io4',                      bindings, True),
-             Bricklet('Joystick',                 'joystick',                 bindings, True),
-             Bricklet('LCD 16x2',                 'lcd_16x2',                 bindings, True),
-             Bricklet('LCD 20x4',                 'lcd_20x4',                 bindings, True),
-             Bricklet('LED Strip',                'led_strip',                bindings, True),
-             Bricklet('Line',                     'line',                     bindings, True),
-             Bricklet('Linear Poti',              'linear_poti',              bindings, True),
-             Bricklet('Moisture',                 'moisture',                 bindings, True),
-             Bricklet('Motion Detector',          'motion_detector',          bindings, True),
-             Bricklet('Multi Touch',              'multi_touch',              bindings, True),
-             Bricklet('NFC/RFID',                 'nfc_rfid',                 bindings, True),
-             Bricklet('Piezo Buzzer',             'piezo_buzzer',             bindings, True),
-             Bricklet('Piezo Speaker',            'piezo_speaker',            bindings, True),
-             Bricklet('PTC',                      'ptc',                      bindings, True),
-             Bricklet('Remote Switch',            'remote_switch',            bindings, True),
-             Bricklet('Rotary Encoder',           'rotary_encoder',           bindings, True),
-             Bricklet('Rotary Poti',              'rotary_poti',              bindings, True),
-             Bricklet('Segment Display 4x7',      'segment_display_4x7',      bindings, True),
-             Bricklet('Solid State Relay',        'solid_state_relay',        bindings, True),
-             Bricklet('Sound Intensity',          'sound_intensity',          bindings, True),
-             Bricklet('Temperature',              'temperature',              bindings, True),
-             Bricklet('Temperature IR',           'temperature_ir',           bindings, True),
-             Bricklet('Tilt',                     'tilt',                     bindings, True),
-             Bricklet('Voltage',                  'voltage',                  bindings, True),
-             Bricklet('Voltage/Current',          'voltage_current',          bindings, True)]
+bricklets = [Bricklet('Accelerometer',             'accelerometer',             bindings, False),
+             Bricklet('Ambient Light',             'ambient_light',             bindings, True),
+             Bricklet('Analog In',                 'analog_in',                 bindings, True),
+             Bricklet('Analog In 2.0',             'analog_in_v2',              bindings, False),
+             Bricklet('Analog Out',                'analog_out',                bindings, True),
+             Bricklet('Analog Out 2.0',            'analog_out_v2',             bindings, False),
+             Bricklet('Barometer',                 'barometer',                 bindings, True),
+             Bricklet('Breakout',                  'breakout',                  [],       True),
+             Bricklet('Color',                     'color',                     bindings, True),
+             Bricklet('Current12',                 'current12',                 bindings, True),
+             Bricklet('Current25',                 'current25',                 bindings, True),
+             Bricklet('Distance IR',               'distance_ir',               bindings, True),
+             Bricklet('Distance US',               'distance_us',               bindings, True),
+             Bricklet('Dual Button',               'dual_button',               bindings, True),
+             Bricklet('Dual Relay',                'dual_relay',                bindings, True),
+             Bricklet('Gas Detector',              'gas_detector',              bindings, False),
+             Bricklet('GPS',                       'gps',                       bindings, True),
+             Bricklet('Hall Effect',               'hall_effect',               bindings, True),
+             Bricklet('Heart Rate',                'heart_rate',                bindings, False),
+             Bricklet('Humidity',                  'humidity',                  bindings, True),
+             Bricklet('Industrial Digital In 4',   'industrial_digital_in_4',   bindings, True),
+             Bricklet('Industrial Digital Out 4',  'industrial_digital_out_4',  bindings, True),
+             Bricklet('Industrial Dual 0-20mA',    'industrial_dual_0_20ma',    bindings, True),
+             Bricklet('Industrial Dual Analog In', 'industrial_dual_analog_in', bindings, False),
+             Bricklet('Industrial Quad Relay',     'industrial_quad_relay',     bindings, True),
+             Bricklet('IO-16',                     'io16',                      bindings, True),
+             Bricklet('IO-4',                      'io4',                       bindings, True),
+             Bricklet('Joystick',                  'joystick',                  bindings, True),
+             Bricklet('LCD 16x2',                  'lcd_16x2',                  bindings, True),
+             Bricklet('LCD 20x4',                  'lcd_20x4',                  bindings, True),
+             Bricklet('LED Strip',                 'led_strip',                 bindings, True),
+             Bricklet('Line',                      'line',                      bindings, True),
+             Bricklet('Linear Poti',               'linear_poti',               bindings, True),
+             Bricklet('Moisture',                  'moisture',                  bindings, True),
+             Bricklet('Motion Detector',           'motion_detector',           bindings, True),
+             Bricklet('Multi Touch',               'multi_touch',               bindings, True),
+             Bricklet('NFC/RFID',                  'nfc_rfid',                  bindings, True),
+             Bricklet('Piezo Buzzer',              'piezo_buzzer',              bindings, True),
+             Bricklet('Piezo Speaker',             'piezo_speaker',             bindings, True),
+             Bricklet('PTC',                       'ptc',                       bindings, True),
+             Bricklet('Remote Switch',             'remote_switch',             bindings, True),
+             Bricklet('Rotary Encoder',            'rotary_encoder',            bindings, True),
+             Bricklet('Rotary Poti',               'rotary_poti',               bindings, True),
+             Bricklet('Segment Display 4x7',       'segment_display_4x7',       bindings, True),
+             Bricklet('Solid State Relay',         'solid_state_relay',         bindings, True),
+             Bricklet('Sound Intensity',           'sound_intensity',           bindings, True),
+             Bricklet('Temperature',               'temperature',               bindings, True),
+             Bricklet('Temperature IR',            'temperature_ir',            bindings, True),
+             Bricklet('Tilt',                      'tilt',                      bindings, True),
+             Bricklet('Voltage',                   'voltage',                   bindings, True),
+             Bricklet('Voltage/Current',           'voltage_current',           bindings, True)]
 
 
 extension_descriptions = {

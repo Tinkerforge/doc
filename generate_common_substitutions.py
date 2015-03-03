@@ -16,9 +16,12 @@ bricks = [('DC',      'dc'),
           ('Stepper', 'stepper')]
 
              # display,                    uri
-bricklets = [('Ambient Light',             'ambient_light'),
+bricklets = [('Accelerometer',             'accelerometer'),
+             ('Ambient Light',             'ambient_light'),
              ('Analog In',                 'analog_in'),
+             ('Analog In 2.0',             'analog_in_v2'),
              ('Analog Out',                'analog_out'),
+             ('Analog Out 2.0',            'analog_in_v2'),
              ('Barometer',                 'barometer'),
              ('Breakout',                  'breakout'),
              ('Color',                     'color'),
@@ -28,6 +31,7 @@ bricklets = [('Ambient Light',             'ambient_light'),
              ('Distance US',               'distance_us'),
              ('Dual Button',               'dual_button'),
              ('Dual Relay',                'dual_relay'),
+             ('Gas Detector',              'gas_detector'),
              ('GPS',                       'gps'),
              ('Hall Effect',               'hall_effect'),
              ('Heart Rate',                'heart_rate'),
@@ -35,6 +39,7 @@ bricklets = [('Ambient Light',             'ambient_light'),
              ('Industrial Digital In 4',   'industrial_digital_in_4'),
              ('Industrial Digital Out 4',  'industrial_digital_out_4'),
              ('Industrial Dual 0-20mA',    'industrial_dual_0_20ma'),
+             ('Industrial Dual Analog In', 'industrial_dual_analog_in'),
              ('Industrial Quad Relay',     'industrial_quad_relay'),
              ('IO-16',                     'io16'),
              ('IO-4',                      'io4'),
@@ -305,13 +310,13 @@ def generate(path):
     write_if_changed(os.path.join(path, 'source', 'Software', 'IPConnection_Common.substitutions'), make_ipcon_substitutions())
 
     for brick in bricks:
-        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_')
+        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_').replace('2.0', 'V2')
 
         print 'Generating {0}_Brick.substitutions (Hardware)'.format(name)
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick.substitutions'), make_brick_substitutions(brick))
 
     for bricklet in bricklets:
-        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_')
+        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_').replace('2.0', 'V2')
 
         print 'Generating {0}.substitutions (Hardware)'.format(name)
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '.substitutions'), make_bricklet_substitutions(bricklet))
