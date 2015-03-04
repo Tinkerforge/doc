@@ -2,10 +2,9 @@
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Heart Rate Bricklet
 :FIXME_shoplink: ../../../shop/bricklets/heart-rate-bricklet.html
 
-.. include:: Color.substitutions
+.. include:: Heart_Rate.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
-
 
 .. _heart_rate_bricklet:
 

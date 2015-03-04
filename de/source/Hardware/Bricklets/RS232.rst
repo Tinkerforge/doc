@@ -1,0 +1,56 @@
+
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / RS233 Bricklet
+:FIXME_shoplink: ../../../shop/bricklets/rs232-bricklet.html
+
+.. include:: RS233.substitutions
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
+
+.. _rs233_bricklet:
+
+RS233 Bricklet
+==============
+
+.. note::
+  Diese Bricklet ist noch in Entwicklung!
+
+
+Features
+--------
+
+
+.. _rs233_bricklet_description:
+
+Beschreibung
+------------
+
+
+Technische Spezifikation
+------------------------
+
+
+Ressourcen
+----------
+
+
+.. _rs233_bricklet_test:
+
+Erster Test
+-----------
+
+
+.. _rs233_bricklet_case:
+
+Gehäuse
+-------
+
+
+.. _rs233_bricklet_programming_interface:
+
+Programmierschnittstelle
+------------------------
+
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
+Beschreibung.
+
+.. include:: RS233_hlpi.table

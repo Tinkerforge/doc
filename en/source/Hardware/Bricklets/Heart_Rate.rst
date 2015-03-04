@@ -12,7 +12,7 @@ Heart Rate Bricklet
 ===================
 
 .. note::
- This Bricklet is currently work-in-progress.
+ This Bricklet is currently work-in-progress!
 
 
 Features

@@ -300,6 +300,10 @@ bricklet_descriptions = {
     'en': '2-axis joystick with push-button',
     'de': '2-Achsen Joystick mit Taster'
     },
+'laser_range_finder': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'lcd_16x2': {
     'en': '16x2 character alphanumeric display with blue backlight',
     'de': '16x2 Zeichen alphanumerisches Display'
@@ -319,6 +323,10 @@ bricklet_descriptions = {
 'linear_poti': {
     'en': '59mm linear potentiometer',
     'de': '59mm Linear-Potentiometer'
+    },
+'load_cell': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 'moisture': {
     'en': 'Measures moisture between two probes',
@@ -359,6 +367,10 @@ bricklet_descriptions = {
 'rotary_poti': {
     'en': '300° rotary potentiometer',
     'de': '300° Dreh-Potentiometer'
+    },
+'rs232': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 'segment_display_4x7': {
     'en': 'Four 7-segment displays with switchable colon',
@@ -430,11 +442,13 @@ bricklets = [Bricklet('Accelerometer',             'accelerometer',             
              Bricklet('IO-16',                     'io16',                      bindings, True),
              Bricklet('IO-4',                      'io4',                       bindings, True),
              Bricklet('Joystick',                  'joystick',                  bindings, True),
+             Bricklet('Laser Range Finder',        'laser_range_finder',        bindings, False),
              Bricklet('LCD 16x2',                  'lcd_16x2',                  bindings, True),
              Bricklet('LCD 20x4',                  'lcd_20x4',                  bindings, True),
              Bricklet('LED Strip',                 'led_strip',                 bindings, True),
              Bricklet('Line',                      'line',                      bindings, True),
              Bricklet('Linear Poti',               'linear_poti',               bindings, True),
+             Bricklet('Load Cell',                 'load_cell',                 bindings, False),
              Bricklet('Moisture',                  'moisture',                  bindings, True),
              Bricklet('Motion Detector',           'motion_detector',           bindings, True),
              Bricklet('Multi Touch',               'multi_touch',               bindings, True),
@@ -445,6 +459,7 @@ bricklets = [Bricklet('Accelerometer',             'accelerometer',             
              Bricklet('Remote Switch',             'remote_switch',             bindings, True),
              Bricklet('Rotary Encoder',            'rotary_encoder',            bindings, True),
              Bricklet('Rotary Poti',               'rotary_poti',               bindings, True),
+             Bricklet('RS232',                     'rs232',                     bindings, False),
              Bricklet('Segment Display 4x7',       'segment_display_4x7',       bindings, True),
              Bricklet('Solid State Relay',         'solid_state_relay',         bindings, True),
              Bricklet('Sound Intensity',           'sound_intensity',           bindings, True),
