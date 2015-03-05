@@ -847,6 +847,78 @@ button. You should be logged in as user ``tf`` (if you see nothing press Enter).
 Type ``passwd``. You will be asked for the current password. Type ``tf``. After
 that you can enter your new password.
 
+
+.. _red_brick_change_hdmi_resolution:
+
+Change HDMI Display Resolution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The RED Brick will automatically configure the correct display resolution using
+the `Extended Display Identification Data <http://en.wikipedia.org/wiki/Extended_display_identification_data>`__
+(EDID) interface of the connected display. But EDID only works reliable if the
+display is already connected to HDMI and powered on before the RED Brick boots.
+
+If you connect the display to HDMI or power on the display when the RED Brick
+is already running then EDID might not work and a wrong resolution might be
+configured. The easiest way to fix this is to reboot the RED Brick so that the
+display is connected and powered on before the RED Brick boots.
+
+If you have to connect the display when the RED Brick is already running or the
+automatically configured resolution is wrong for some other reason you can
+manually set the resolution using the ``tf-set-resolution`` tool.
+
+Using tf-set-resolution
+"""""""""""""""""""""""
+
+To change the display resolution open the :ref:`console tab
+<red_brick_brickv_console>`. Choose the correct serial port and press the
+*Connect* button. You should be logged in as user ``tf`` (if you see nothing
+press Enter). Type the following command (you might be asked to enter the
+password for tf, the default password is ``tf``)::
+
+ sudo tf-set-resolution hdmi mode <mode-number>
+
+But instead of ``<mode-number>`` you need to put the number of the mode you
+want to enable. The following manually settable modes are currently supported:
+
+* 0 = 480i
+* 1 = 576i
+* 2 = 480p
+* 3 = 576p
+* 4 = 720p @ 50Hz
+* 5 = 720p @ 60Hz
+* 6 = 1080i @ 50Hz
+* 7 = 1080i @ 60Hz
+* 8 = 1080p @ 24Hz
+* 9 = 1080p @ 50Hz
+* 10 = 1080p @ 60Hz
+* 11 = PAL
+* 12 = PAL (S-Video)
+* 14 = NTSC
+* 15 = NTSC (S-Video)
+* 17 = PAL-M
+* 18 = PAL-M (S-Video)
+* 20 = PAL-NC
+* 21 = PAL-NC (S-Video)
+* 23 = 1080p @ 24Hz (3D)
+* 24 = 720p @ 50Hz (3D)
+* 25 = 720p @ 60Hz (3D)
+* 26 = 1360 x 768 @ 60Hz
+* 27 = 1280 x 1024 @ 60Hz
+* 28 = 800 x 480 @ 60Hz (requires Image version >= 1.6)
+
+If your desired display resolution is not listed as a settable mode above then
+we can extend the kernel tables for this to support it. To do this you need
+to tell us the relevant information for your display. First, ensure that the
+resolution for your display was properly automatically configured on boot. Then
+type the following command::
+
+ dmesg | egrep "(PCLK=|disp clks:)"
+
+and send us an `Email <mailto:info@tinkerforge.com>`__ with the output of that
+command.
+
+
 .. _red_brick_hardware:
 
 Hardware Description

@@ -864,10 +864,88 @@ Standard Passwort ändern
 Das Standard-Passwort des Benutzers ``tf`` lautet ``tf``. Um dieses zu ändern
 öffnet man den :ref:`Console Tab <red_brick_brickv_console>`. Anschließend wählt
 man die korrekte serielle Schnittstelle und klickt auf den *Connect* Button.
-Man wird als Nutzer ``tf`` eingeloggt (Die Enter-Taste drücken falls die Konsole
-nichts anzeigt). Als nächstes gibt man den Befehlt ``passwd`` ein und es wird
+Man wird als Nutzer ``tf`` eingeloggt (die Enter-Taste drücken falls die Konsole
+nichts anzeigt). Als nächstes gibt man den Befehl ``passwd`` ein und es wird
 nach dem aktuellen Passwort gefragt. Man gibt ``tf`` ein. Anschließend
 kann man das neue Passwort eingeben und bestätigen.
+
+
+.. _red_brick_change_hdmi_resolution:
+
+HDMI Monitor Auflösung ändern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Der RED Brick stellt automatisch die richtige Monitor Auflösung für einen
+angeschlossenen Monitor ein. Dazu wird die `Extended Display Identification
+Data <http://de.wikipedia.org/wiki/Extended_Display_Identification_Data>`__
+(EDID) Schnittstelle des Monitor verwendet. Allerdings funktioniert EDID nur
+dann zuverlässig, wenn der Monitor bereits per HDMI anschlossen und
+eingeschaltet ist bevor der RED Brick bootet.
+
+Wenn der Monitor erst an HDMI angeschlossen wird oder erst eingeschaltet wird,
+wenn der RED Brick schon läuft, dann kann es passieren, dass EDID nicht richtig
+funktioniert und eine falsche Auflösung eingestellt wird. Die einfachste
+Möglichkeit dies zu beheben ist es den RED Brick neuzustarten, sodass der
+Monitor bereits angeschlossen und eingeschaltet, wenn der RED Brick bootet.
+
+Wenn dies nicht möglich ist und der Monitor erst angeschlossen oder
+eingeschaltet werden kann, wenn der RED Brick bereits läuft oder die automatisch
+eingestellt Auflösung aus anderen Gründen falsch ist, dann kann die Auflösung
+auch manuell mit dem ``tf-set-resolution`` Tool eingestellt werden.
+
+Mit tf-set-resolution
+"""""""""""""""""""""
+
+Um die Monitor Auflösung zu ändern öffnet man den :ref:`Console Tab
+<red_brick_brickv_console>`. Anschließend wählt man die korrekte serielle
+Schnittstelle und klickt auf den *Connect* Button. Man wird als Nutzer ``tf``
+eingeloggt (die Enter-Taste drücken falls die Konsole nichts anzeigt).
+Als nächstes gibt man den folgenden Befehl ein (möglicherweise wird nach dem
+Passwort für tf gefragt, das Standard-Passwort lautet ``tf``)::
+
+ sudo tf-set-resolution hdmi mode <mode-number>
+
+Anstatt ``<mode-number>`` muss die Nummer des Modus angegeben werden, der
+aktiviert werden soll. Folgenden manuell setzbare Modi werden derzeit
+unterstützt:
+
+* 0 = 480i
+* 1 = 576i
+* 2 = 480p
+* 3 = 576p
+* 4 = 720p @ 50Hz
+* 5 = 720p @ 60Hz
+* 6 = 1080i @ 50Hz
+* 7 = 1080i @ 60Hz
+* 8 = 1080p @ 24Hz
+* 9 = 1080p @ 50Hz
+* 10 = 1080p @ 60Hz
+* 11 = PAL
+* 12 = PAL (S-Video)
+* 14 = NTSC
+* 15 = NTSC (S-Video)
+* 17 = PAL-M
+* 18 = PAL-M (S-Video)
+* 20 = PAL-NC
+* 21 = PAL-NC (S-Video)
+* 23 = 1080p @ 24Hz (3D)
+* 24 = 720p @ 50Hz (3D)
+* 25 = 720p @ 60Hz (3D)
+* 26 = 1360 x 768 @ 60Hz
+* 27 = 1280 x 1024 @ 60Hz
+* 28 = 800 x 480 @ 60Hz (benötigt Image Version >= 1.6)
+
+Wenn die gewünschte Auflösung nicht in der Liste der setzbaren Modi enthalten
+ist, dann können wir die Kernel Tabellen um einen neuen Modus erweitern. Dafür
+müssen wir die relevanten Informationen für den entsprechenden Monitor kennen.
+Als erstes muss sichergestellt werden, dass beim Booten die Auflösung des
+Monitors automatisch richtig eingestellt wurde. Dann den folgenden Befehl
+eingeben::
+
+ dmesg | egrep "(PCLK=|disp clks:)"
+
+und uns eine `E-Mail <mailto:info@tinkerforge.com>`__ mit der Ausgabe des
+Befehls schicken.
 
 
 .. _red_brick_hardware:
