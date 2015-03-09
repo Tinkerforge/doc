@@ -280,12 +280,12 @@ Die Liste kann folgende Netzwerkschnittstellen enthalten
 
 Die Statusanzeigen werden alle 3 Sekunden automatisch aktualisiert.
 
-.. _red_brick_brick_settings:
+.. _red_brick_brickv_settings:
 
 Settings Tab
 ^^^^^^^^^^^^
 
-.. _red_brick_brick_settings_network:
+.. _red_brick_brickv_settings_network:
 
 Netzwerk
 """"""""
@@ -323,7 +323,7 @@ Schnittstelle gibt es verschiedenen Einstellungsoptionen:
   hergestellt. Unterstützte USB WLAN Sticks finden sich in unserem
   `Shop <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__.
 
-.. _red_brick_brick_settings_ap:
+.. _red_brick_brickv_settings_ap:
 
 WLAN Access Point
 """""""""""""""""
@@ -331,7 +331,7 @@ WLAN Access Point
 In dem WLAN Access Point Abschnitt (benötigt Image >= 1.4 und
 Brick Viewer >= 2.2.2) kann der RED Brick in einen WLAN Access
 Point verwandelt werden. Der Tab ist erst verfügbar, wenn der 
-:ref:`Access Point Service <red_brick_brick_settings_services>` aktiviert ist 
+:ref:`Access Point Service <red_brick_brickv_settings_services>` aktiviert ist
 und ein `WLAN USB Adapter <https://www.tinkerforge.com/de/shop/accessories/red-brick/wifi-usb-adapter.html>`__ 
 eingesteckt ist.
 
@@ -342,7 +342,7 @@ eingesteckt ist.
 
 Im Access Point Modus stellt der RED Brick einen DHCP und DNS Server zur
 Verfügung. Diese geben Geräten, die sich mit dem RED Brick verbinden eine IP
-Adresse und stellt eine Domain zur verfügung. Die IP SSID, WPA Passphrase 
+Adresse und stellt eine Domain zur Verfügung. Die IP SSID, WPA Passphrase
 (Passwort), DHCP Pool, DNS Domain und andere Optionen die von einem Access Point 
 erwartet werden, können konfiguriert werden.
 
@@ -354,7 +354,7 @@ Smartphone, Tablet oder Laptop können direkt mit dem RED Brick verbunden werden
 
 
 
-.. _red_brick_brick_settings_brickd:
+.. _red_brick_brickv_settings_brickd:
 
 Brick Daemon
 """"""""""""
@@ -368,14 +368,15 @@ Brick Daemon vorgenommen werden.
    :align: center
 
 Zu den Konfigurationsmöglichkeiten gehören die Adresse auf dem der Brick Daemon
-lauscht, der dazugehörige Port, der Port für die Nutzung von Websockets und
-das Authentifizierungsgeheimnis. WebSockets werden von der Browser-Version der
-:ref:`JavaScript Bindings <api_bindings_javascript>` verwendet um Bricks und
-Bricklets zu steuern. Weitere Einstellungen befinden sich im *Advanced*
-Abschnitt. Die Nutzung der roten und grünen LED kann auch hier konfiguriert
-werden.
+lauscht, der dazugehörige Port, der Port für die Nutzung von WebSockets,
+das Authentifizierungsgeheimnis und weitere Einstellungen u.a. die Funktion der
+roten und grünen LED.
 
-.. _red_brick_brick_settings_date:
+WebSockets werden von der Browser-Version der
+:ref:`JavaScript Bindings <api_bindings_javascript>` verwendet um Bricks und
+Bricklets zu steuern.
+
+.. _red_brick_brickv_settings_date:
 
 Datum/Uhrzeit
 """""""""""""
@@ -401,7 +402,7 @@ Internet aber nicht garantiert werden kann, dann kann auch das
 heruntergeladen und auf den RED Brick geladen werden, um die Uhrzeit
 mittels GPS Uhrzeit zu synchronisieren.
 
-.. _red_brick_brick_settings_file_system:
+.. _red_brick_brickv_settings_file_system:
 
 Dateisystem
 """""""""""
@@ -421,7 +422,7 @@ gemacht werden. Wenn das Dateisystem weniger als 95% der Micro-SD-Karte
 einnimmt dann kann es vergrößert werden. Um dies zu tun einfach den Anweisungen
 in Brick Viewer folgen.
 
-.. _red_brick_brick_settings_services:
+.. _red_brick_brickv_settings_services:
 
 Services
 """"""""
@@ -436,26 +437,22 @@ können verschiedene Services des RED Brick ein- und
 ausgeschaltet werden. Wenn Webserver oder Desktop Umgebung nicht benötigt
 werden können diese abgeschaltet werden, wodurch der RED Brick schneller bootet.
 Ebenfalls kann hier der :ref:`WLAN Access Point Modus
-<red_brick_brick_settings_ap>` eingeschaltet werden, wodurch sich Smartphones
+<red_brick_brickv_settings_ap>` eingeschaltet werden, wodurch sich Smartphones
 und Notebooks direkt mit dem RED Brick verbinden können.
 
- * GPU: Aktiviert die Hardwarebeschleunigung für die Grafikausgabe. Wird
-   diese aktiviert, wird ein Teil des RAMs von der GPU genutzt. Wird HDMI nicht 
-   genutzt empfehlen wir die GPU zu deaktivieren.
-   
- * Desktop Environment: Der Start der Desktopumgebung (LXDE) benötigt
-   Zeit, wird diese nicht benutzt kann sie deaktiviert werden um Bootzeit zu
-   sparen.
-
- * Web Server: Der Webserver ist notwendig wenn Webservices genutzt werden
-   sollen. Diese Option fügt ungefähr 10 Sekunden Bootzeit hinzu.
-   
- * Splash Screen: Falls aktiviert wird ein Splash Screen beim Bootvorgang
-   angezeigt. Ist dieser deaktiviert, so werden Kernelmeldungen angezeigt.
- 
- * Access Point: Ist der Acess Point Modus aktiviert, kann der RED Brick
-   als Access Point genutzt werden (siehe
-   :ref:`Access Point in dem Settings Tab <red_brick_brick_settings_ap>`.
+* GPU: Aktiviert die Hardwarebeschleunigung für die Grafikausgabe. Wird
+  diese aktiviert, wird ein Teil des RAMs von der GPU genutzt. Wird HDMI nicht
+  genutzt empfehlen wir die GPU zu deaktivieren.
+* Desktop Environment: Der Start der Desktopumgebung (LXDE) benötigt
+  Zeit, wird diese nicht benutzt kann sie deaktiviert werden um Bootzeit zu
+  sparen.
+* Web Server: Der Webserver ist notwendig wenn Webservices genutzt werden
+  sollen. Diese Option fügt ungefähr 10 Sekunden Bootzeit hinzu.
+* Splash Screen: Falls aktiviert wird ein Splash Screen beim Bootvorgang
+  angezeigt. Ist dieser deaktiviert, so werden Kernelmeldungen angezeigt.
+* Access Point: Ist der Acess Point Modus aktiviert, kann der RED Brick
+  als Access Point genutzt werden (siehe
+  :ref:`Access Point in dem Settings Tab <red_brick_brickv_settings_ap>`.
 
 Werden Services geändert und gespeichert, so startet der RED Brick neu. Nach dem 
 Neustart stehen die Änderungen zur Verfügung.
@@ -539,7 +536,7 @@ Ethernet Extension
 
 Nur die MAC Adresse der Ethernet Extension kann hier geändert werden. Da diese
 als normale Netzwerkschnittstelle auftaucht, können die Netzwerkeinstellungen im
-:ref:`Settings Tab <red_brick_brick_settings>` verändert werden.
+:ref:`Settings Tab <red_brick_brickv_settings>` verändert werden.
 
 RS485 Extension
 """""""""""""""
@@ -687,6 +684,7 @@ Bindings, wie bei jedem Python Programm, eingebunden werden::
 
  from tinkerforge.ip_connection import IPConnection
  from tinkerforge.bricklet_temperature import Temperature
+
  # ...
 
 Das standardmäßig installierte Web Interface auf dem RED Brick nutzt
@@ -992,7 +990,7 @@ Ein normaler Bootvorgang verläuft wie folgt:
 
 Die Funktion der grünen und der roten LED kann geändert werden. Diese können zum
 Beispiel die Ausnutzung der
-:ref:`CPU oder der SD Karte <red_brick_brick_settings_brickd>` anzeigen,
+:ref:`CPU oder der SD Karte <red_brick_brickv_settings_brickd>` anzeigen,
 anstatt des Heartbeats.
 
 .. _red_brick_micro_sd_card_slot:

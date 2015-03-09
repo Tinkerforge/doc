@@ -269,12 +269,12 @@ The list can contain the following network interfaces
 
 The data in the overview tab is automatically refreshed every 3 seconds.
 
-.. _red_brick_brick_settings:
+.. _red_brick_brickv_settings:
 
 Settings Tab
 ^^^^^^^^^^^^
 
-.. _red_brick_brick_settings_network:
+.. _red_brick_brickv_settings_network:
 
 Network
 """""""
@@ -311,7 +311,7 @@ other configuration options:
   `Supported USB WiFi dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
   can be found in our shop.
 
-.. _red_brick_brick_settings_ap:
+.. _red_brick_brickv_settings_ap:
 
 Wireless Access Point
 """""""""""""""""""""
@@ -319,7 +319,7 @@ Wireless Access Point
 In the Wireless Access Point section (requires Image >= 1.4 and
 Brick Viewer >= 2.2.2) of this tab, you can turn
 the RED Brick into a wireless access point. This tab is only
-available if the :ref:`Access Point service <red_brick_brick_settings_services>`
+available if the :ref:`Access Point service <red_brick_brickv_settings_services>`
 is activated and you have connected the `WiFi USB Adapter
 <https://www.tinkerforge.com/en/shop/accessories/red-brick/wifi-usb-adapter.html>`__
 to the RED Brick USB port.
@@ -341,7 +341,7 @@ If you use the Access Point mode, there is no external network infrastructure
 necessary. Your Smart Phone, Tablet or Laptop can directly connect to the 
 RED Brick.
 
-.. _red_brick_brick_settings_brickd:
+.. _red_brick_brickv_settings_brickd:
 
 Brick Daemon
 """"""""""""
@@ -361,7 +361,7 @@ WebSockets are used by the browser version of the
 Bricklets. More low level configurations can be found in the *Advanced*
 subsection. The LED trigger for the red and green LED can also be set here.
 
-.. _red_brick_brick_settings_date:
+.. _red_brick_brickv_settings_date:
 
 Date/Time
 """""""""
@@ -387,7 +387,7 @@ or can't obtain Internet access, you can also use the
 that could be uploaded to the RED Brick to sync the Linux system time with
 the GPS time.
 
-.. _red_brick_brick_settings_file_system:
+.. _red_brick_brickv_settings_file_system:
 
 File System
 """""""""""
@@ -406,7 +406,7 @@ the file system will provide you with some extra storage space. If the file
 system uses less than 95% of the Micro-SD card's size then it can be expanded.
 To do this follow the instructions in Brick Viewer.
 
-.. _red_brick_brick_settings_services:
+.. _red_brick_brickv_settings_services:
 
 Services
 """"""""
@@ -420,26 +420,23 @@ In the Services section (requires Image >= 1.4 and Brick Viewer >= 2.2.2)
 you can enable and disable different services on the RED Brick.
 If you don't need a web server or a desktop environment on your
 RED Brick you can disable them and make the RED Brick boot faster. You can also
-enable the :ref:`wireless access point mode <red_brick_brick_settings_ap>` to
+enable the :ref:`wireless access point mode <red_brick_brickv_settings_ap>` to
 directly connect from your smart phone or notebook to the RED Brick.
 
- * GPU: Enables hardware acceleration for graphics. If you enable
-   this, some parts of the RAM are shared with the GPU. If you don't use HDMI
-   we would recommend to disable the GPU.
-
- * Desktop Environment: Starting the desktop environment (LXDE) takes
-   some time, if you don't use it you can disable it to save boot time
-
- * Web Server: The web server is necessary if you want to use web
-   services on the RED Brick. If enabled, it adds about 10 seconds to the
-   boot time!
-
- * Splash Screen: If enabled, a splash screen is shown on startup
-   (during the boot process of the Linux kernel). If disabled you can
-   see the kernel messages.
-
- * Access Point: If access point mode is enabled, you can configure
-   the RED Brick to be an :ref:`access point in the settings tab <red_brick_brick_settings_ap>`.
+* GPU: Enables hardware acceleration for graphics. If you enable
+  this, some parts of the RAM are shared with the GPU. If you don't use HDMI
+  we would recommend to disable the GPU.
+* Desktop Environment: Starting the desktop environment (LXDE) takes
+  some time, if you don't use it you can disable it to save boot time
+* Web Server: The web server is necessary if you want to use web
+  services on the RED Brick. If enabled, it adds about 10 seconds to the
+  boot time!
+* Splash Screen: If enabled, a splash screen is shown on startup
+  (during the boot process of the Linux kernel). If disabled you can
+  see the kernel messages.
+* Access Point: If access point mode is enabled, you can configure
+  the RED Brick to be an :ref:`access point in the settings tab
+  <red_brick_brickv_settings_ap>`.
 
 If you change the services and save the changes, the RED Brick will reboot
 and the new configuration will be available after the reboot.
@@ -521,7 +518,7 @@ Ethernet Extension
 Only the MAC address of the Ethernet Extension can be changed here.
 Since the Ethernet Extension shows up as a normal network interface in the
 underlying Linux, you can configure it like any other network interface
-through the :ref:`Settings Tab <red_brick_brick_settings>`.
+through the :ref:`Settings Tab <red_brick_brickv_settings>`.
 
 RS485 Extension
 """""""""""""""
@@ -675,6 +672,7 @@ all Python programs::
 
  from tinkerforge.ip_connection import IPConnection
  from tinkerforge.bricklet_temperature import Temperature
+
  # ...
 
 The default web interface of the RED Brick uses Python/Flask.
@@ -965,7 +963,7 @@ sequence:
    services available).
 
 You can change the function of the green and red LED. They can also
-:ref:`show CPU or SD card usage <red_brick_brick_settings_brickd>` instead of a
+:ref:`show CPU or SD card usage <red_brick_brickv_settings_brickd>` instead of a
 heartbeat.
 
 .. _red_brick_micro_sd_card_slot:
