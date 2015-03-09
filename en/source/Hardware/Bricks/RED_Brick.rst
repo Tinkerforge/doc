@@ -293,7 +293,7 @@ and currently used network interface. The status is updated automatically every
 
 You can configure the used interface in the *Configuration* subsection. First
 choose the interface you want to configure (An USB Ethernet dongle will show
-up as ``ethX``, the Ethernet Extension as ``tfX`` and a USB WIFI dongle
+up as ``ethX``, the Ethernet Extension as ``tfX`` and a USB WiFi dongle
 as ``wlanX`` (X is a number). Dependent on the selected interface you will get
 other configuration options:
 
@@ -301,14 +301,14 @@ other configuration options:
 
   After selecting an Ethernet interface, choose between DHCP or static IP
   configuration and press the *Connect* button.
-* **Configure a WIFI Interface:**
+* **Configure a WiFi Interface:**
 
-  After selecting a WIFI interface press the *Scan* button to scan for
+  After selecting a WiFi interface press the *Scan* button to scan for
   access points. It will take some time to get the scan results.
 
   Select the desired access point and enter the secret and select between DHCP or
   static IP address. After that press *Connect*.
-  `Supported USB WIFI dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
+  `Supported USB WiFi dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
   can be found in our shop.
 
 .. _red_brick_brick_settings_ap:
@@ -316,16 +316,13 @@ other configuration options:
 Wireless Access Point
 """""""""""""""""""""
 
-In the Wireless Access Point section of this tab, you can turn
+In the Wireless Access Point section (requires Image >= 1.4 and
+Brick Viewer >= 2.2.2) of this tab, you can turn
 the RED Brick into a wireless access point. This tab is only
 available if the :ref:`Access Point service <red_brick_brick_settings_services>`
-is activated and you have connected the `WiFi USB Adapter <https://www.tinkerforge.com/en/shop/accessories/red-brick/wifi-usb-adapter.html>`__
+is activated and you have connected the `WiFi USB Adapter
+<https://www.tinkerforge.com/en/shop/accessories/red-brick/wifi-usb-adapter.html>`__
 to the RED Brick USB port.
-
-.. note::
-
-   Wireless Access Point configuration is available in
-   Image version >= 1.4 and Brick Viewer version >= 2.2.2.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg
    :scale: 60 %
@@ -379,7 +376,7 @@ time won't be incremented if the RED Brick is not powered.
    :align: center
 
 If you have a connection to the Internet (trough the Ethernet Extension
-or a USB WIFI dongle), the date and time are automatically set by
+or a USB WiFi dongle), the date and time are automatically set by
 NTP. You only have to configure the timezone, which is saved even if
 the RED Brick is powered down.
 
@@ -395,7 +392,7 @@ the GPS time.
 File System
 """""""""""
 
-In the File System section (added in Brick Viewer 2.2.1) you can expand the
+In the File System section (requires Brick Viewer >= 2.2.1) you can expand the
 file system on the Micro-SD card.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_file_system.jpg
@@ -414,18 +411,14 @@ To do this follow the instructions in Brick Viewer.
 Services
 """"""""
 
-.. note::
-
-   Services are available in
-   Image version >= 1.4 and Brick Viewer Version >= 2.2.2.
-
 .. image:: /Images/Screenshots/brickv_red_tab_settings_services.jpg
    :scale: 60 %
    :alt: Screenshot of settings tab showing services.
    :align: center
 
-In the Services section you can enable and disable different services on the
-RED Brick. If you don't need a web server or a desktop environment on your
+In the Services section (requires Image >= 1.4 and Brick Viewer >= 2.2.2)
+you can enable and disable different services on the RED Brick.
+If you don't need a web server or a desktop environment on your
 RED Brick you can disable them and make the RED Brick boot faster. You can also
 enable the :ref:`wireless access point mode <red_brick_brick_settings_ap>` to
 directly connect from your smart phone or notebook to the RED Brick.
@@ -549,10 +542,8 @@ The recommended baudrates to be used on the RED Brick are 500000, 250000,
 Import/Export
 ^^^^^^^^^^^^^
 
-.. note::
-
-   Import/Export of programs and logs is available in
-   Brick Viewer version >= 2.2.2.
+The Import/Export tab (requires Brick Viewer >= 2.2.2) allows to import/export
+programs and system logs.
 
 System Logs
 """""""""""

@@ -227,8 +227,6 @@ Der ``tf`` Nutzer ist sudoer.
 .. note:: Aus Sicherheitsgründen kann es sinnvoll sein das Passwort zu ändern.
           Die Prozedur ist :ref:`hier <red_brick_change_password>` beschrieben.
 
-
-
 .. _red_brick_brickv:
 
 Brick Viewer
@@ -330,16 +328,12 @@ Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 WLAN Access Point
 """""""""""""""""
 
-In dem WLAN Access Point Abschnitt kann der RED Brick in einen WLAN Access 
+In dem WLAN Access Point Abschnitt (benötigt Image >= 1.4 und
+Brick Viewer >= 2.2.2) kann der RED Brick in einen WLAN Access
 Point verwandelt werden. Der Tab ist erst verfügbar, wenn der 
 :ref:`Access Point Service <red_brick_brick_settings_services>` aktiviert ist 
 und ein `WLAN USB Adapter <https://www.tinkerforge.com/de/shop/accessories/red-brick/wifi-usb-adapter.html>`__ 
 eingesteckt ist.
-
-.. note::
-
-   WLAN Access Point Konfigurations ist verfügbar seit
-   Image Version >= 1.4 und Brick Viewer Version >= 2.2.2.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg
    :scale: 60 %
@@ -412,8 +406,8 @@ mittels GPS Uhrzeit zu synchronisieren.
 Dateisystem
 """""""""""
 
-Im File System Abschnitt (neu in Brick Viewer 2.2.1) kann das Dateisystem auf
-der Micro-SD-Karte vergößert werden.
+Im File System Abschnitt (benötigt Brick Viewer >= 2.2.1) kann das Dateisystem
+auf der Micro-SD-Karte vergrößert werden.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_file_system.jpg
    :scale: 60 %
@@ -432,17 +426,13 @@ in Brick Viewer folgen.
 Services
 """"""""
 
-.. note::
-
-   Services sind verfügbar seit 
-   Image Version >= 1.4 und Brick Viewer Version >= 2.2.2.
-
 .. image:: /Images/Screenshots/brickv_red_tab_settings_services.jpg
    :scale: 60 %
    :alt: Screenshot des Settings Tabs: Services.
    :align: center
 
-Im Services Abschnitt können verschiedene Services des RED Brick ein- und
+Im Services Abschnitt (benötigt Image >= 1.4 und Brick Viewer >= 2.2.2)
+können verschiedene Services des RED Brick ein- und
 ausgeschaltet werden. Wenn Webserver oder Desktop Umgebung nicht benötigt
 werden können diese abgeschaltet werden, wodurch der RED Brick schneller bootet.
 Ebenfalls kann hier der :ref:`WLAN Access Point Modus
@@ -569,10 +559,8 @@ Bricks.
 Import/Export
 ^^^^^^^^^^^^^
 
-.. note::
-
-   Import/Export der Programme und Logs ist verfügbar seit
-   Brick Viewer Version >= 2.2.2.
+Der Import/Export Tab (benötigt Brick Viewer >= 2.2.2) erlaubt es System Logs
+und Programme zu importieren und exportieren.
 
 System Logs
 """""""""""
