@@ -306,7 +306,7 @@ automatisch alle 3 Sekunden aktualisiert.
 
 Die genutzte Schnittstelle kann im *Configuration* Abschnitt eingestellt
 werden. Als erstes muss die Schnittstelle gewählt werden (Ein USB Ethernet Stick
-wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein USB WIFI Stick
+wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein USB WLAN Stick
 als ``wlanX`` angezeigt (X ist eine Zahl). Abhängig von der gewählten
 Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 
@@ -346,8 +346,8 @@ eingesteckt ist.
    :alt: Screenshot des Settings Tab mit Konfiguration des Access Point
    :align: center
 
-Im Access Point Modus stellt der RED Brick einen DHCP und DNS server zur 
-verfügung. Diese geben Geräten, die sich mit dem RED Brick verbinden eine IP 
+Im Access Point Modus stellt der RED Brick einen DHCP und DNS Server zur
+Verfügung. Diese geben Geräten, die sich mit dem RED Brick verbinden eine IP
 Adresse und stellt eine Domain zur verfügung. Die IP SSID, WPA Passphrase 
 (Passwort), DHCP Pool, DNS Domain und andere Optionen die von einem Access Point 
 erwartet werden, können konfiguriert werden.
@@ -400,7 +400,7 @@ Stick), werden Datum und Uhrzeit automatisch mittels NTP gesetzt. Dazu muss nur
 die Zeitzone gesetzt werden. Diese wird gespeichert und wieder hergestellt,
 wenn der RED Brick das nächste mal hochfährt.
 
-Falls die Zeit nach dem booten immer vorhanden sein muss, ein Verbindung zum
+Falls die Zeit nach dem Booten immer vorhanden sein muss, ein Verbindung zum
 Internet aber nicht garantiert werden kann, dann kann auch das
 :ref:`GPS Bricklet <gps_bricklet>` benutzt werden. Dazu muss nur ein kleines
 `Programm von GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
@@ -611,10 +611,10 @@ der Festplatte zu speichern.
 Die Exportdatei enthält die Konfiguration des Programms, alle Dateien und die 
 Logs die sich über die Zeit angesammelt haben. Wenn das zu exportierende 
 Programm läuft und dauerhaft Dateien schreibt bietet es sich an dieses vor dem 
-Export zu beenden um teilweise geschriebene Dateien zu verindern.
+Export zu beenden, um teilweise geschriebene Dateien zu verhindern.
 
 Mit dieser Option können Programme exportiert werden und auf anderen RED Bricks
-importiert(siehe oben) werden.
+importiert (siehe oben) werden.
 
 
 .. _red_brick_web_interface:
@@ -753,7 +753,7 @@ und ist auf einer Micro-SD-Karte gespeichert. Zu Anfang gab es das Image in
 zwei Varianten: Das "Full" und das "Fast" Image. Seit Image Version 1.4 gibt es
 nur noch ein Image (ehemals das "Full" Image) mit einstellbaren Services
 (Desktop-Umgebung, Web Server, WLAN Access Point, usw.), die es erlauben das
-Image an verschiedenen Anforderugen anzupassen.
+Image an verschiedenen Anforderungen anzupassen.
 
 Das Image verfügt über GPU Treiber und besitzt alle notwendigen
 Bibliotheken für die Nutzung von grafischen Nutzerschnittstellen (GUIs).
@@ -810,7 +810,7 @@ eine schnelle Karte (z.B. Class 10, > 30MB/s Lesen) mit genügend Speicherplatz
 Windows
 """""""
 
-Für Windows emfehlen wir ein Tool wie `Win32DiskImager
+Für Windows empfehlen wir ein Tool wie `Win32DiskImager
 <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__ um das Image auf die
 Karte zu kopieren.
 
@@ -1032,7 +1032,7 @@ Der RED Brick ist mit einer Standard
 ausgestattet. Mit ihr können USB Geräte mit bis zu 7,5W (5V/1,5A) betrieben
 werden. Ein Kurzschluss-Schutz schützt den RED Brick und das angeschlossene
 Gerät. Typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
-Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens werden unterstüzt.
+Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens werden unterstützt.
 
 Manche Ethernet oder WLAN Sticks können direkt über den Brick Viewer
 konfiguriert werden.
