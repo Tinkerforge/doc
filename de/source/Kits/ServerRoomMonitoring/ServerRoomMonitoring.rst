@@ -277,7 +277,7 @@ aktuelle Zustand von Nagios abgerufen werden.
    :target: ../../_images/Screenshots/nagios_srm.jpg
 
 Die Standardeinstellung für user:password lautet ``nagiosadmin``:``tf``.
-Das Passwort kann über die Console durch den Befehl geändert werden::
+Das Passwort kann über die Console durch folgenden Befehl geändert werden::
 
  sudo htpasswd -c -b  /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
 
