@@ -239,6 +239,53 @@ Der Aufbau der Basisversion des Kits ist
    Construction
 
 
+.. _starter_kit_server_room_monitoring_red_brick:
+
+RED Brick
+---------
+
+Wenn das Serverraum-Überwachungs Kit zusammen mit einem RED Brick benutzt wird
+kann nagios direkt über den Brick Viewer konfiguriert werden.
+
+.. image:: /Images/Screenshots/brickv_srm_600.jpg
+   :scale: 100 %
+   :alt: Nagios Konfiguration im Brick Viewer
+   :align: center
+   :target: ../../_images/Screenshots/brickv_srm.jpg
+
+Der ``Server Monitoring`` Service ist ab RED Brick Image Version 1.6
+verfügbar. Er kann im ``Services`` Tab aktiviert werden.
+
+Wenn der Server Monitoring Service aktiviert ist, ist es möglich Regeln
+hinzuzufügen. Eine Regel besteht aus einem Bricklet (Temperature, Ambient 
+Light, Humidity or PTC), dessen UID und einer Bereich für warning und
+critical. Es können soviele Regeln hinzugefügt und konfiguriert
+werden wie benötigt.
+
+Es ist zusätzlich möglich automatische Email-Benachrichtigungen für die
+warning/critical Bereiche zu aktivieren. Dazu muss einfach die 
+``Enable E-mail Notification`` checkbox angeklickt werden sowie die
+benötigten Informationen eingetragen werden.
+
+Durch Klicken des ``save`` Buttons wird die Konfiguration auf dem RED Brick
+gespeichert. Nun kann über die Seite ``http://<red-brick-ip>/nagios3/`` der
+aktuelle Zustand von nagios abgerufen werden.
+
+.. image:: /Images/Screenshots/nagios_srm_600.jpg
+   :scale: 100 %
+   :alt: Nagios Webseite
+   :align: center
+   :target: ../../_images/Screenshots/nagios_srm.jpg
+
+Die Standardeinstellung für user:password lautet ``nagiosadmin``:``tf``.
+Das Passwort kann über die console geändert werden durch den Befehl::
+
+ sudo htpasswd -c -b  /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
+
+Jede der Regeln wird in nagios als ein Service angezeigt. Die Übersicht aller
+nagios Services kann über den ``Services`` Link in der Kategorie
+``Current Status`` erreicht werden.
+
 .. _starter_kit_server_room_monitoring_projects:
 
 Projekte

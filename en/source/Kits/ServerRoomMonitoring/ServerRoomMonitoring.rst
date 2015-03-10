@@ -216,6 +216,51 @@ The construction of the basic kit is described
    Construction
 
 
+.. _starter_kit_server_room_monitoring_red_brick:
+
+RED Brick
+---------
+
+If the Server Room Monitoring Kit is used together with a RED Brick,
+nagios can be configured directly through the Brick Viewer.
+
+.. image:: /Images/Screenshots/brickv_srm_600.jpg
+   :scale: 100 %
+   :alt: Nagios configuration in Brick Viewer
+   :align: center
+   :target: ../../_images/Screenshots/brickv_srm.jpg
+
+The Server Monitoring service is available in RED Brick image versions
+>= 1.6. To enable it, go to the services tab and check the Server Monitoring
+checkbox.
+
+If the Server Monitoring service is enabled, it is possible to add rules.
+A rule basically consists of a Bricklet (Temperature, Amibient Light,
+Humidity or PTC) and a warning as well as a critical range. Just add as many
+rules as you need and configure them as required.
+
+You can also configure automatic email notification for each of the
+warning/critical ranges. Just check the ``Enable E-mail Notification`` checkbox
+and add the required information.
+
+Press ``save`` to save the configuration on the RED Brick. You can now visit
+``http://<red-brick-ip>/nagios3/`` to view the current nagios status.
+
+.. image:: /Images/Screenshots/nagios_srm_600.jpg
+   :scale: 100 %
+   :alt: Nagios webpage
+   :align: center
+   :target: ../../_images/Screenshots/nagios_srm.jpg
+
+The default user:password is ``nagiosadmin``:``tf``. You can change the
+password through the console with::
+
+ sudo htpasswd -c -b  /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
+
+Each of the rules will be shown as a service in nagios. An overview over all 
+services is available if you click on ``Services`` in the ``Current Status``
+category.
+
 .. _starter_kit_server_room_monitoring_projects:
 
 Projects

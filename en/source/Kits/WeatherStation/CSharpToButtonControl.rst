@@ -385,7 +385,7 @@ Step 4: Everything put together
 -------------------------------
 
 That's it! Now we have a Weather Station with four different modes
-that can be controlled with the LCD20x4 Bricklet buttons.
+that can be controlled with the LCD 20x4 Bricklet buttons.
 
 This is of course still very elementary. There is lots of room
 for improvement. For example it would be possible to show the unit in

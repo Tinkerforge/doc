@@ -227,8 +227,6 @@ Der ``tf`` Nutzer ist sudoer.
 .. note:: Aus Sicherheitsgründen kann es sinnvoll sein das Passwort zu ändern.
           Die Prozedur ist :ref:`hier <red_brick_change_password>` beschrieben.
 
-
-
 .. _red_brick_brickv:
 
 Brick Viewer
@@ -282,12 +280,12 @@ Die Liste kann folgende Netzwerkschnittstellen enthalten
 
 Die Statusanzeigen werden alle 3 Sekunden automatisch aktualisiert.
 
-.. _red_brick_brick_settings:
+.. _red_brick_brickv_settings:
 
 Settings Tab
 ^^^^^^^^^^^^
 
-.. _red_brick_brick_settings_network:
+.. _red_brick_brickv_settings_network:
 
 Netzwerk
 """"""""
@@ -306,7 +304,7 @@ automatisch alle 3 Sekunden aktualisiert.
 
 Die genutzte Schnittstelle kann im *Configuration* Abschnitt eingestellt
 werden. Als erstes muss die Schnittstelle gewählt werden (Ein USB Ethernet Stick
-wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein USB WIFI Stick
+wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein USB WLAN Stick
 als ``wlanX`` angezeigt (X ist eine Zahl). Abhängig von der gewählten
 Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 
@@ -325,30 +323,26 @@ Schnittstelle gibt es verschiedenen Einstellungsoptionen:
   hergestellt. Unterstützte USB WLAN Sticks finden sich in unserem
   `Shop <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__.
 
-.. _red_brick_brick_settings_ap:
+.. _red_brick_brickv_settings_ap:
 
 WLAN Access Point
 """""""""""""""""
 
-In dem WLAN Access Point Abschnitt kann der RED Brick in einen WLAN Access 
+In dem WLAN Access Point Abschnitt (benötigt Image >= 1.4 und
+Brick Viewer >= 2.2.2) kann der RED Brick in einen WLAN Access
 Point verwandelt werden. Der Tab ist erst verfügbar, wenn der 
-:ref:`Access Point Service <red_brick_brick_settings_services>` aktiviert ist 
+:ref:`Access Point Service <red_brick_brickv_settings_services>` aktiviert ist
 und ein `WLAN USB Adapter <https://www.tinkerforge.com/de/shop/accessories/red-brick/wifi-usb-adapter.html>`__ 
 eingesteckt ist.
-
-.. note::
-
-   WLAN Access Point Konfigurations ist verfügbar seit
-   Image Version >= 1.4 und Brick Viewer Version >= 2.2.2.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg
    :scale: 60 %
    :alt: Screenshot des Settings Tab mit Konfiguration des Access Point
    :align: center
 
-Im Access Point Modus stellt der RED Brick einen DHCP und DNS server zur 
-verfügung. Diese geben Geräten, die sich mit dem RED Brick verbinden eine IP 
-Adresse und stellt eine Domain zur verfügung. Die IP SSID, WPA Passphrase 
+Im Access Point Modus stellt der RED Brick einen DHCP und DNS Server zur
+Verfügung. Diese geben Geräten, die sich mit dem RED Brick verbinden eine IP
+Adresse und stellt eine Domain zur Verfügung. Die IP SSID, WPA Passphrase
 (Passwort), DHCP Pool, DNS Domain und andere Optionen die von einem Access Point 
 erwartet werden, können konfiguriert werden.
 
@@ -358,9 +352,21 @@ identifiziert werden können.
 Im Access Point Modus ist keine externe Netzwerkinfrastruktur notwendig. 
 Smartphone, Tablet oder Laptop können direkt mit dem RED Brick verbunden werden.
 
+.. _red_brick_brickv_settings_server_monitoring:
 
+Serverüberwachung
+"""""""""""""""""
 
-.. _red_brick_brick_settings_brickd:
+FIXME
+
+.. _red_brick_brickv_settings_openhab:
+
+openHAB
+"""""""
+
+FIXME
+
+.. _red_brick_brickv_settings_brickd:
 
 Brick Daemon
 """"""""""""
@@ -374,14 +380,15 @@ Brick Daemon vorgenommen werden.
    :align: center
 
 Zu den Konfigurationsmöglichkeiten gehören die Adresse auf dem der Brick Daemon
-lauscht, der dazugehörige Port, der Port für die Nutzung von Websockets und
-das Authentifizierungsgeheimnis. WebSockets werden von der Browser-Version der
-:ref:`JavaScript Bindings <api_bindings_javascript>` verwendet um Bricks und
-Bricklets zu steuern. Weitere Einstellungen befinden sich im *Advanced*
-Abschnitt. Die Nutzung der roten und grünen LED kann auch hier konfiguriert
-werden.
+lauscht, der dazugehörige Port, der Port für die Nutzung von WebSockets,
+das Authentifizierungsgeheimnis und weitere Einstellungen u.a. die Funktion der
+roten und grünen LED.
 
-.. _red_brick_brick_settings_date:
+WebSockets werden von der Browser-Version der
+:ref:`JavaScript Bindings <api_bindings_javascript>` verwendet um Bricks und
+Bricklets zu steuern.
+
+.. _red_brick_brickv_settings_date:
 
 Datum/Uhrzeit
 """""""""""""
@@ -400,20 +407,20 @@ Stick), werden Datum und Uhrzeit automatisch mittels NTP gesetzt. Dazu muss nur
 die Zeitzone gesetzt werden. Diese wird gespeichert und wieder hergestellt,
 wenn der RED Brick das nächste mal hochfährt.
 
-Falls die Zeit nach dem booten immer vorhanden sein muss, ein Verbindung zum
+Falls die Zeit nach dem Booten immer vorhanden sein muss, ein Verbindung zum
 Internet aber nicht garantiert werden kann, dann kann auch das
 :ref:`GPS Bricklet <gps_bricklet>` benutzt werden. Dazu muss nur ein kleines
 `Programm von GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
 heruntergeladen und auf den RED Brick geladen werden, um die Uhrzeit
 mittels GPS Uhrzeit zu synchronisieren.
 
-.. _red_brick_brick_settings_file_system:
+.. _red_brick_brickv_settings_file_system:
 
 Dateisystem
 """""""""""
 
-Im File System Abschnitt (neu in Brick Viewer 2.2.1) kann das Dateisystem auf
-der Micro-SD-Karte vergößert werden.
+Im File System Abschnitt (benötigt Brick Viewer >= 2.2.1) kann das Dateisystem
+auf der Micro-SD-Karte vergrößert werden.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_file_system.jpg
    :scale: 60 %
@@ -427,45 +434,39 @@ gemacht werden. Wenn das Dateisystem weniger als 95% der Micro-SD-Karte
 einnimmt dann kann es vergrößert werden. Um dies zu tun einfach den Anweisungen
 in Brick Viewer folgen.
 
-.. _red_brick_brick_settings_services:
+.. _red_brick_brickv_settings_services:
 
 Services
 """"""""
-
-.. note::
-
-   Services sind verfügbar seit 
-   Image Version >= 1.4 und Brick Viewer Version >= 2.2.2.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_services.jpg
    :scale: 60 %
    :alt: Screenshot des Settings Tabs: Services.
    :align: center
 
-Im Services Abschnitt können verschiedene Services des RED Brick ein- und
+Im Services Abschnitt (benötigt Image >= 1.4 und Brick Viewer >= 2.2.2)
+können verschiedene Services des RED Brick ein- und
 ausgeschaltet werden. Wenn Webserver oder Desktop Umgebung nicht benötigt
 werden können diese abgeschaltet werden, wodurch der RED Brick schneller bootet.
 Ebenfalls kann hier der :ref:`WLAN Access Point Modus
-<red_brick_brick_settings_ap>` eingeschaltet werden, wodurch sich Smartphones
+<red_brick_brickv_settings_ap>` eingeschaltet werden, wodurch sich Smartphones
 und Notebooks direkt mit dem RED Brick verbinden können.
 
- * GPU: Aktiviert die Hardwarebeschleunigung für die Grafikausgabe. Wird
-   diese aktiviert, wird ein Teil des RAMs von der GPU genutzt. Wird HDMI nicht 
-   genutzt empfehlen wir die GPU zu deaktivieren.
-   
- * Desktop Environment: Der Start der Desktopumgebung (LXDE) benötigt
-   Zeit, wird diese nicht benutzt kann sie deaktiviert werden um Bootzeit zu
-   sparen.
-
- * Web Server: Der Webserver ist notwendig wenn Webservices genutzt werden
-   sollen. Diese Option fügt ungefähr 10 Sekunden Bootzeit hinzu.
-   
- * Splash Screen: Falls aktiviert wird ein Splash Screen beim Bootvorgang
-   angezeigt. Ist dieser deaktiviert, so werden Kernelmeldungen angezeigt.
- 
- * Access Point: Ist der Acess Point Modus aktiviert, kann der RED Brick
-   als Access Point genutzt werden (siehe
-   :ref:`Access Point in dem Settings Tab <red_brick_brick_settings_ap>`.
+* GPU: Aktiviert die Hardwarebeschleunigung für die Grafikausgabe. Wird
+  diese aktiviert, wird ein Teil des RAMs von der GPU genutzt. Wird HDMI nicht
+  genutzt empfehlen wir die GPU zu deaktivieren.
+* Desktop Environment: Der Start der Desktopumgebung (LXDE) benötigt
+  Zeit, wird diese nicht benutzt kann sie deaktiviert werden um Bootzeit zu
+  sparen.
+* Web Server: Der Webserver ist notwendig wenn Webservices genutzt werden
+  sollen. Diese Option fügt ungefähr 10 Sekunden Bootzeit hinzu.
+* Splash Screen: Falls aktiviert wird ein Splash Screen beim Bootvorgang
+  angezeigt. Ist dieser deaktiviert, so werden Kernelmeldungen angezeigt.
+* Access Point: Ist der Acess Point Modus aktiviert, kann der RED Brick
+  als Access Point genutzt werden (siehe
+  :ref:`Access Point in dem Settings Tab <red_brick_brickv_settings_ap>`.
+* Server Monitoring: FIXME
+* openHAB: FIXME
 
 Werden Services geändert und gespeichert, so startet der RED Brick neu. Nach dem 
 Neustart stehen die Änderungen zur Verfügung.
@@ -549,7 +550,7 @@ Ethernet Extension
 
 Nur die MAC Adresse der Ethernet Extension kann hier geändert werden. Da diese
 als normale Netzwerkschnittstelle auftaucht, können die Netzwerkeinstellungen im
-:ref:`Settings Tab <red_brick_brick_settings>` verändert werden.
+:ref:`Settings Tab <red_brick_brickv_settings>` verändert werden.
 
 RS485 Extension
 """""""""""""""
@@ -569,10 +570,8 @@ Bricks.
 Import/Export
 ^^^^^^^^^^^^^
 
-.. note::
-
-   Import/Export der Programme und Logs ist verfügbar seit
-   Brick Viewer Version >= 2.2.2.
+Der Import/Export Tab (benötigt Brick Viewer >= 2.2.2) erlaubt es System Logs
+und Programme zu importieren und exportieren.
 
 System Logs
 """""""""""
@@ -611,10 +610,10 @@ der Festplatte zu speichern.
 Die Exportdatei enthält die Konfiguration des Programms, alle Dateien und die 
 Logs die sich über die Zeit angesammelt haben. Wenn das zu exportierende 
 Programm läuft und dauerhaft Dateien schreibt bietet es sich an dieses vor dem 
-Export zu beenden um teilweise geschriebene Dateien zu verindern.
+Export zu beenden, um teilweise geschriebene Dateien zu verhindern.
 
 Mit dieser Option können Programme exportiert werden und auf anderen RED Bricks
-importiert(siehe oben) werden.
+importiert (siehe oben) werden.
 
 
 .. _red_brick_web_interface:
@@ -628,7 +627,10 @@ zugegriffen werden. Das Web Interface ist unter der IP Adresse des RED Bricks
 oder unter dessen Hostnamen (Voreinstellung: ``red-brick``) erreichbar.
 
 Das RED Brick Web Interface zeigt die installierten Programme, deren Logs und
-Konfiguration, als auch die hochgeladenen Dateien.
+Konfiguration, als auch die hochgeladenen Dateien. Seit Image Version 1.6 werden
+auch die verfügbaren :ref:`openHAB <red_brick_brickv_settings_openhab>` Sitemaps und
+ein Link zur :ref:`Serverüberwachungs <red_brick_brickv_settings_server_monitoring>`
+Webseite mit aufgeführt.
 
 .. image:: /Images/Screenshots/red_brick_web_interface.jpg
    :scale: 40 %
@@ -699,6 +701,7 @@ Bindings, wie bei jedem Python Programm, eingebunden werden::
 
  from tinkerforge.ip_connection import IPConnection
  from tinkerforge.bricklet_temperature import Temperature
+
  # ...
 
 Das standardmäßig installierte Web Interface auf dem RED Brick nutzt
@@ -741,6 +744,7 @@ werden::
 
  require_once('Tinkerforge/IPConnection.php');
  require_once('Tinkerforge/BrickletTemperature.php');
+
  // ...
 
 .. _red_brick_images:
@@ -753,7 +757,7 @@ und ist auf einer Micro-SD-Karte gespeichert. Zu Anfang gab es das Image in
 zwei Varianten: Das "Full" und das "Fast" Image. Seit Image Version 1.4 gibt es
 nur noch ein Image (ehemals das "Full" Image) mit einstellbaren Services
 (Desktop-Umgebung, Web Server, WLAN Access Point, usw.), die es erlauben das
-Image an verschiedenen Anforderugen anzupassen.
+Image an verschiedenen Anforderungen anzupassen.
 
 Das Image verfügt über GPU Treiber und besitzt alle notwendigen
 Bibliotheken für die Nutzung von grafischen Nutzerschnittstellen (GUIs).
@@ -810,7 +814,7 @@ eine schnelle Karte (z.B. Class 10, > 30MB/s Lesen) mit genügend Speicherplatz
 Windows
 """""""
 
-Für Windows emfehlen wir ein Tool wie `Win32DiskImager
+Für Windows empfehlen wir ein Tool wie `Win32DiskImager
 <http://sourceforge.net/p/win32diskimager/wiki/Home/>`__ um das Image auf die
 Karte zu kopieren.
 
@@ -1004,7 +1008,7 @@ Ein normaler Bootvorgang verläuft wie folgt:
 
 Die Funktion der grünen und der roten LED kann geändert werden. Diese können zum
 Beispiel die Ausnutzung der
-:ref:`CPU oder der SD Karte <red_brick_brick_settings_brickd>` anzeigen,
+:ref:`CPU oder der SD Karte <red_brick_brickv_settings_brickd>` anzeigen,
 anstatt des Heartbeats.
 
 .. _red_brick_micro_sd_card_slot:
@@ -1032,7 +1036,7 @@ Der RED Brick ist mit einer Standard
 ausgestattet. Mit ihr können USB Geräte mit bis zu 7,5W (5V/1,5A) betrieben
 werden. Ein Kurzschluss-Schutz schützt den RED Brick und das angeschlossene
 Gerät. Typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
-Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens werden unterstüzt.
+Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens werden unterstützt.
 
 Manche Ethernet oder WLAN Sticks können direkt über den Brick Viewer
 konfiguriert werden.

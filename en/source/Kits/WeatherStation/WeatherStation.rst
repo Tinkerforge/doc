@@ -221,8 +221,8 @@ Construction
 ------------
 
 There is no singular way to build the Weather Station. In the
-following we will show one way to build different extension
-stages. The idea of the Weather Station Starter Kit is, that
+following we will show one way to build different variants.
+The idea of the Weather Station Starter Kit is, that
 it is easily extensible and modifiable. 
 
 For example: You can put the Bricks and Bricklets on spacers
@@ -234,22 +234,22 @@ read out more sensors.
 The utilized PMMA plastic is easy to work with, so you will be able
 to add new holes or slots or similar if needed.
 
-Three extension stages
-^^^^^^^^^^^^^^^^^^^^^^
+Different Variants
+^^^^^^^^^^^^^^^^^^
 
 * :ref:`Basic Weather Station <starter_kit_weather_station_construction_basic>`
 * :ref:`Wi-Fi Weather Station <starter_kit_weather_station_construction_wifi>`
-* :ref:`Raspberry Pi Weather Station <starter_kit_weather_station_construction_rpi>`
+* :ref:`Raspberry Pi Weather Station <starter_kit_weather_station_construction_raspberry_pi>`
 
 .. toctree::
    :hidden:
 
    Construction_Basic
-   Construction_RaspberryPi
    Construction_Wifi
+   Construction_RaspberryPi
 
 RS485, Ethernet, etc.
-^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""
 
 We could also control the Weather Station with the RS485 or
 Ethernet Extension. The setup in this case is the same as with the "Wi-Fi
