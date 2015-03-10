@@ -346,6 +346,11 @@ RED Brick.
 Server Monitoring
 """""""""""""""""
 
+.. image:: /Images/Screenshots/brickv_red_tab_settings_srm.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing Server Monitoring configurations.
+   :align: center
+
 FIXME
 
 .. _red_brick_brickv_settings_openhab:

@@ -357,6 +357,11 @@ Smartphone, Tablet oder Laptop können direkt mit dem RED Brick verbunden werden
 Serverüberwachung
 """""""""""""""""
 
+.. image:: /Images/Screenshots/brickv_red_tab_settings_srm.jpg
+   :scale: 60 %
+   :alt: Screenshot des Settings Tabs: Server Monitoring Konfiguration.
+   :align: center
+
 FIXME
 
 .. _red_brick_brickv_settings_openhab:
