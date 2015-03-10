@@ -4,11 +4,12 @@
 .. _starter_kit_server_room_monitoring_construction:
 
 Construction of Starter Kit: Server Room Monitoring
-=======================================================
+===================================================
 
 The Starter Kit: Server Room Monitoring comes with :ref:`Ambient Light
 Bricklet <ambient_light_bricklet>`, :ref:`PTC Bricklet <ptc_bricklet>`,
 :ref:`Temperature Bricklet<temperature_bricklet>`, 
+:ref:`Humidity Bricklet<temperature_bricklet>`, 
 :ref:`Master Brick <master_brick>`,
 :ref:`Ethernet Extension <ethernet_extension>` and
 Bricklet cables as well as lots of screws, spacers, nuts and washers.
@@ -66,8 +67,8 @@ position of the Ethernet Extension cut-out).
 Screw Back Side to the Side Parts
 ---------------------------------
 
-Next take eight 10mm spacers (thread inside/inside) and short screws and attach 
-them to the position of the PTC and Temperature Bricklet.
+Next take twelve 10mm spacers (thread inside/inside) and short screws and
+attach them to the position of the PTC, Temperature and Humidity Bricklet.
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step3_350.jpg
    :scale: 100 %
@@ -112,10 +113,10 @@ Screw this stack to one of the side parts by four screws.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
 
-PTC and Temperature Bricklet
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PTC, Temperature and Humidity Bricklet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Next attach the PTC Bricklet and the Temperature Bricklet. 
+Next attach the PTC Bricklet, the Temperature Bricklet and the Humidity Bricklet. 
 Use four screws to mount them on the previously installed 
 spacers on the back side part. 
 

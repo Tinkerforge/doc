@@ -8,7 +8,8 @@ Aufbau des Starterkits: Serverraum-Überwachung
 
 Das Starterkit: Serverraum-Überwachung wird mit einem :ref:`Ambient Light 
 Bricklet <ambient_light_bricklet>`, :ref:`PTC Bricklet <ptc_bricklet>`,
-:ref:`Temperature Bricklet<temperature_bricklet>`, 
+:ref:`Temperature Bricklet<temperature_bricklet>`,
+:ref:`Humidity Bricklet<temperature_bricklet>`,
 :ref:`Master Brick <master_brick>`,
 :ref:`Ethernet Extension <ethernet_extension>` sowie
 Bricklet Kabel, Schrauben, Abstandshalter, Muttern und Unterlegscheiben.
@@ -69,9 +70,9 @@ befestigt, wenn die Position des Ausschnitts für die Ethernet Extension
 Rückseite befestigen
 --------------------
 
-Als nächstes werden acht 10mm Abstandshalter (Innen-/Innengewinde) mittels 
-kurzen Schrauben an die Positionen für das PTC und das Temperature Bricklet auf 
-das Rückseitenteil geschraubt.
+Als nächstes werden zwölf 10mm Abstandshalter (Innen-/Innengewinde) mittels 
+kurzen Schrauben an die Positionen für das PTC, Temperature und Humidity
+Bricklet auf das Rückseitenteil geschraubt.
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step3_350.jpg
    :scale: 100 %
@@ -117,10 +118,10 @@ Dieser Stapel wird an ein Seitenteil mittels vier Schrauben geschraubt.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
 
-PTC und Temperature Bricklet
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PTC, Temperature und Humidity Bricklet
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Als nächstes werden PTC und Temperature
+Als nächstes werden PTC, Temperature und Humidity
 Bricklet auf die zuvor installierten 10mm Abstandshalter auf
 dem Rückseitenteil aufgeschraubt. 
 
@@ -158,8 +159,8 @@ Verkabeln und Fertig
 --------------------
 
 Die Bricklet Kabel müssen nun noch zum Master Brick geführt und dort
-angeschlossen werden. Ein Kabelbinder kann genutzt werden um die
-Verkabelung ordnen.
+angeschlossen werden. Ein Kabelbinder kann zur Ordnung der Verkablung
+genutzt werden.
 
 Das nachfolgende Bild zeigt das fertig aufgebaute Kit.
 

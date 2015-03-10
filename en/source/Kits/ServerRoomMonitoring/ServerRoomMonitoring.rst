@@ -87,7 +87,8 @@ Description
 The *Starter Kit: Server Room Monitoring* is an open source kit to
 monitor server room installations. The basic kit is equipped with the following
 Sensors: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
-(monitors room illumination),
+(monitors room illumination), :ref:`Humidity Bricklet <humidity_bricklet>`
+(monitors humidity), 
 :ref:`Temperature Bricklet <temperature_bricklet>` (monitors
 temperature in the server rack) and a
 :ref:`PTC Bricklet <ptc_bricklet>` with attachable Pt100 temperature sensor
@@ -98,7 +99,7 @@ support, are included
 as well. The kits enclosure can be mounted directly in a 19" server rack
 and can be extended by more temperature probes, other modules (e.g. motion
 detector), in- or outputs (to switch computers on/off or to monitor doors) and 
-so on. With the Tinkerforge :ref:`building blocks<primer_products>` you can
+so on. With the Tinkerforge :ref:`building blocks <primer_products>` you can
 flexibly adapt it to your needs.
 
 One or more external controlling devices, such as (Embedded-) PCs, smart phones 
@@ -147,6 +148,7 @@ Illumination                      0lux - 900lux in 0.1lux steps
 Ambient Temperature               -40°C - 85°C in 0.01°C steps
 Pt100 Sensor Probe                -20°C - 450°C
 PTC Bricklet                      0.03125°C (15bit) resolution
+Humidity Bricklet                 0% - 100% relative humidity
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            482 x 92 x 44mm (19.0 x 3.62 x 1.75")
