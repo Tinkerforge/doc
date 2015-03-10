@@ -75,7 +75,7 @@ Features
 
   * e.g. Air Pressure 0.012mbar and Temperature 0.01°C
 
-* Control over USB, Wi-Fi, Ethernet or with Raspberry Pi
+* Control over USB, Wi-Fi and Ethernet or with RED Brick and Raspberry Pi
 * Modifiable: more buttons, more sensors and customized software
 * Demo Application available
 * Internet of Things (IoT) capable
@@ -90,9 +90,10 @@ with high precision.
 It can be controlled by an (Embedded-) PC.
 Control via Wi-Fi is possible if a :ref:`WIFI Extension <wifi_extension>` is 
 added. As alternative the weather station can be controlled over your local 
-network when adding a  :ref:`Ethernet Extension <ethernet_extension>`.
-To use it standalone you can add an embedded board such as the
-:ref:`Raspberry Pi <embedded_raspberry_pi>` which can be mounted in the casing.
+network when adding an :ref:`Ethernet Extension <ethernet_extension>`.
+To use it standalone you can add a :ref:`RED Brick <red_brick>` or another
+embedded board such as a
+:ref:`Raspberry Pi <embedded_raspberry_pi>` which can be mounted in the case.
 Thus Internet of Things applications are a possible with this kit (e.g. see
 :ref:`Xively Example <starter_kit_weather_station_xively>`).
 
@@ -151,8 +152,9 @@ Resources
 * Example Source Code for :ref:`starter_kit_weather_station_xively` (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Example Source Code for :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Example Source Code for :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
+* Example Configuration for :ref:`starter_kit_weather_station_openhab` (`Download <https://github.com/Tinkerforge/weather-station/tree/master/openhab>`__)
 * :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
- 
+
 
 Firmware updating and first tests
 ---------------------------------
@@ -239,6 +241,7 @@ Different Variants
 
 * :ref:`Basic Weather Station <starter_kit_weather_station_construction_basic>`
 * :ref:`Wi-Fi Weather Station <starter_kit_weather_station_construction_wifi>`
+* :ref:`RED Brick Weather Station <starter_kit_weather_station_construction_red_brick>`
 * :ref:`Raspberry Pi Weather Station <starter_kit_weather_station_construction_raspberry_pi>`
 
 .. toctree::
@@ -246,6 +249,7 @@ Different Variants
 
    Construction_Basic
    Construction_Wifi
+   Construction_REDBrick
    Construction_RaspberryPi
 
 RS485, Ethernet, etc.
@@ -276,19 +280,21 @@ Display Environment Measurements on LCD
 
 The most obvious application for the Weather Station Starter Kit is to display
 the measurements of the environment on the LCD 20x4 Bricklet. This can be
-done through three different paths:
+done through four different paths:
 
 * USB connection to PC: Install Brick Daemon and application on PC, connect
   Master Brick of Weather Station to PC via USB.
 * Wi-Fi connection to PC: Install application on PC, connect to
   Weather Station directly over Wi-Fi or through an access point.
+* RED Brick: Use Brick Viewer to upload the application. How this works
+  in detail is described in the :ref:`RED Brick documenation <red_brick_program_tab>`.
 * Raspberry Pi or other embedded board integrated in Weather Station:
   Install Brick Daemon and application on embedded board, connect
   Master Brick of Weather Station to embedded board via USB.
 
 .. batti: link to further enhancement section? how to use rasp with weather station etc.
 
-All three possible solutions can use the same source code.
+All four possible solutions can use the same source code.
 
 Example implementations with step-by-step instructions are available for: |write_to_lcd_examples|.
 
@@ -378,6 +384,32 @@ in :ref:`C# <starter_kit_weather_station_button_control_csharp>`.
    :hidden:
 
    CSharpToButtonControl
+
+
+.. _starter_kit_weather_station_openhab:
+
+Smart Home Integration using openHAB
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Weather Station can be integrated into an `openHAB <http://www.openhab.org/>`__
+managed smart home using the `openHAB Tinkerforge bindings
+<https://github.com/openhab/openhab/wiki/Tinkerforge-Binding/>`__.
+
+.. image:: /Images/Kits/weather_station_openhab_orig.jpg
+   :scale: 100 %
+   :alt: openHAB example sitemap
+   :align: center
+   :target: ../../_images/Kits/weather_station_openhab_orig.jpg
+
+As an example the required :ref:`openHAB configuration steps
+<starter_kit_weather_station_openhab_red_brick>` for the integration are
+demonstrated using a RED Brick.
+
+.. toctree::
+   :hidden:
+
+   OpenHABOnREDBrick
+
 
 Further Enhancements
 --------------------
