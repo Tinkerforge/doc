@@ -73,43 +73,76 @@ Starterkit: Serverraum-Überwachung
 Features
 --------
 
-* Modulare Low-Cost Serverraum-Überwachung 
-* 19" Rack montierbar (1HE)
-* Steuerung und Versorgung über Ethernet (`PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__)
-* Erweiterbar: Falls nötig können Sensoren und Ein-/Ausgabe Module einfach hinzugesteckt werden
-* API für viele Programmiersprachen: |bindings|
-* Open Source Soft- und Hardware
-* `Nagios <http://www.nagios.org/>`__ und `Icinga <https://www.icinga.org/>`__ Unterstützung
+* Modulare Low-Cost Serverraum-Überwachung (19" Rack, 1HE)
+* Erweiterbar: Weitere Sensoren und Ein-/Ausgabe Module können einfach hinzugesteckt werden
+* Stromversorgung per Ethernet (`PoE <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__) oder USB
+* Konfiguration der eigenen Überwachungslösung ohne Programmierung möglich
+* Für Programmierer: APIs für viele Sprachen verfügbar: 
+
+  * |bindings|
+
+* Open Source Soft- und Hardware mit `Nagios <http://www.nagios.org/>`__ und `Icinga <https://www.icinga.org/>`__ Unterstützung
 
 Beschreibung
 ------------
 
 Das *Starterkit: Serverraum-Überwachung* ist ein Open Source Kit um
-Serverraum Installationen zu überwachen. Das Basiskit ist mit folgenden Sensoren
+Serverraum-Installationen zu überwachen. Das Basiskit ist mit folgenden Sensoren
 ausgestattet: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
 (überwacht z.B. die Raumbeleuchtung), :ref:`Humidity Bricklet <humidity_bricklet>`
 (überwacht Luftfeuchtigkeit),
 :ref:`Temperature Bricklet <temperature_bricklet>` (überwacht die Temperatur im
 Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit Pt100 Temperaturfühler
-(z.B. zum Überwachen der Temperatur in einem Server). Ein
-:ref:`Master Brick <master_brick>` und eine :ref:`Ethernet Extension
-<ethernet_extension>`, mit `Power over Ethernet (PoE)
-<https://de.wikipedia.org/wiki/Power_over_Ethernet>`__ Unterstützung, sind ebenfalls
-enthalten. Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werden
-und mittels weiterer Temperatursensoren und anderen Module (z.B. 
-Bewegungsdetektoren, Ein-/Ausgabe Modulen (um Computer ein-/auszuschalten oder 
-um Türen zu überwachen) etc.) erweitert werden. Mit den Tinkerforge
-:ref:`Bausteinen<primer_products>` kann das Kit flexibel an die eigenen 
-Anforderungen angepasst werden.
+(z.B. zum Überwachen der Temperatur in einem Server).
 
-Ein oder mehrere steuernde Geräte, wie z.B. (Embedded-) PCs, Smartphones
-oder Tables, können genutzt werden um die Module per Ethernet auszulesen und zu 
-steuern. Eine Überwachung direkt per Internet ist daher möglich. Das System
-kann per 
+Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werden (1HE). Mit 
+weiteren Modulen des Tinkerforge :ref:`Baukastensystems<primer_products>`, 
+wie zum Beispiel Bewegungsdetektoren, Ein-/Ausgabe Modulen (um Computer 
+ein-/auszuschalten oder um Türen zu überwachen), kann das Kit flexibel an die 
+eigenen Anforderungen angepasst werden.
+
+Eine Nutzung ist auf zwei verschiedene Arten möglich:
+
+1. Nicht-Eigenständige Überwachung (Standardkit)
+
+   Alle Sensoren des Kits können aus der Ferne von anderen Rechnern per Ethernet
+   über die angebotenen APIs (|bindings|) abgefragt werden. Somit können 
+   individuelle Lösungen einfach realisiert werden. Beispiele für
+   :ref:`Bash <starter_kit_server_room_monitoring_simple_monitoring>`,
+   :ref:`Nagios/Icinga <starter_kit_server_room_monitoring_nagios_or_icinga_index>` und
+   :ref:`Xively <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
+   demonstrieren die Nutzungsmöglichkeiten.
+
+2. Eigenständige Überwachung (Standardkit + RED Brick)
+
+   Wird zusätzlich ein :ref:`RED Brick <red_brick>` im Kit verbaut, so kann 
+   das Kit auch ohne externen Rechner betrieben werden. Über die 
+   :ref:`Brick Viewer <brickv>` Software kann, ganz ohne Programmieraufwand, 
+   die eigene Überwachungslösung realisiert werden. 
+	
+   Dazu müssen nur, mittels einfacher Schieberegler, für jeden Sensor 
+   Wertebereiche definiert werden. Wird der definierte Wertebereich verlassen, 
+   so kann unter anderem eine Benachrichtigung per Email erfolgen. 
+   Es können Regeln sowohl für direkt angeschlossene Sensoren, aber auch für 
+   andere, über das Netzwerk verfügbare, Tinkerforge Sensoren konfiguriert 
+   werden. Intern läuft dazu eine Nagios-Installation, die über den Brick Viewer 
+   konfiguriert wird. Das Nagios Webfrontend ist über die Ethernetverbindung des 
+   RED Bricks erreichbar und ermöglicht die Ansicht der aktuellen Messwerte und 
+   eventueller Probleme. Weitere Informationen können 
+   :ref:`hier gefunden werden <>`.
+
+   Erfahrene Nutzer können darüberhinaus die im Hintergrund laufende Nagios 
+   Installation modifizieren und über die Möglichkeiten des Brick Viewers hinaus
+   konfigurieren.
+   
+   
+Die Stromversorgung des Kits kann per 
 `Power over Ethernet (PoE) <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__
-oder USB versorgt werden.
+oder USB (z.B. USB Steckernetzteil) erfolgen.
 
-Die Soft- und Hardware des Kits können modifiziert werden. Das Gehäuse besteht 
+Sowohl Software als auch Hardware des Kits können modifiziert werden. Das 
+Gehäuse besteht, mit Ausnahme der Frontblende die aus eloxiertem Aluminium 
+besteht, 
 aus bastelfreundlichem PMMA in das einfach neue Befestigungslöcher gebohrt
 werden können. Befestigungslöcher für verschiedene
 :ref:`Bricks <primer_bricks>` und
@@ -124,20 +157,6 @@ Folgende Module können direkt befestigt werden:
 :ref:`IO-4 Bricklet <io4_bricklet>`,
 :ref:`Motion Detector Bricklet <motion_detector_bricklet>`,
 und :ref:`Segment Display 4x7 Bricklet<segment_display_4x7_bricklet>`.
-
-Das Kit kann über alle verfügbaren Bindings (|bindings|) erfolgen.
-Beispiel Implementierungen und Anwendungen für die Benutzung mit
-`Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ und
-weitere werden nachfolgend zur Verfügung gestellt.
-
-**Seit dem 22. Januar 2014 wird die Vorderseite des Gehäuses aus
-pulverbeschichteten Aluminium anstatt aus PMMA gefertigt:**
-
-.. image:: /Images/Kits/server_room_monitoring_alu_surface_350.jpg
-   :scale: 100 %
-   :alt: Server Room Monitoring Front Panel made from Aluminum
-   :align: center
-   :target: ../../_images/Kits/server_room_monitoring_alu_surface_600.jpg
 
 Technische Spezifikation
 ------------------------
