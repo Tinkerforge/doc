@@ -341,6 +341,20 @@ If you use the Access Point mode, there is no external network infrastructure
 necessary. Your Smart Phone, Tablet or Laptop can directly connect to the 
 RED Brick.
 
+.. _red_brick_brickv_settings_server_monitoring:
+
+Server Monitoring
+"""""""""""""""""
+
+FIXME
+
+.. _red_brick_brickv_settings_openhab:
+
+openHAB
+"""""""
+
+FIXME
+
 .. _red_brick_brickv_settings_brickd:
 
 Brick Daemon
@@ -355,11 +369,12 @@ settings related to the local Brick Daemon.
    :align: center
 
 The configuration includes the listen address, the corresponding port, port for
-web sockets and the authentication secret in the *General* subsection.
+WebSockets, authentication secret and several other low level configurations
+including the LED trigger for the red and green LED.
+
 WebSockets are used by the browser version of the
 :ref:`JavaScript bindings <api_bindings_javascript>` to control Bricks and
-Bricklets. More low level configurations can be found in the *Advanced*
-subsection. The LED trigger for the red and green LED can also be set here.
+Bricklets.
 
 .. _red_brick_brickv_settings_date:
 
@@ -437,6 +452,8 @@ directly connect from your smart phone or notebook to the RED Brick.
 * Access Point: If access point mode is enabled, you can configure
   the RED Brick to be an :ref:`access point in the settings tab
   <red_brick_brickv_settings_ap>`.
+* Server Monitoring: FIXME
+* openHAB: FIXME
 
 If you change the services and save the changes, the RED Brick will reboot
 and the new configuration will be available after the reboot.
@@ -600,7 +617,10 @@ RED Brick or the hostname (``red-brick`` by default).
 
 The RED Brick web interface shows the installed programs. You
 can view the logs and configs of the programs as well as the
-uploaded binaries.
+uploaded binaries. Since Image version 1.6 the available :ref:`openHAB
+<red_brick_brickv_settings_openhab>` sitemaps and a link to the
+:ref:`server monitoring <red_brick_brickv_settings_server_monitoring>` website
+are included as well.
 
 .. image:: /Images/Screenshots/red_brick_web_interface.jpg
    :scale: 40 %
@@ -710,6 +730,7 @@ To control Bricks/Bricklets you can import the Tinkerforge Bindings::
 
  require_once('Tinkerforge/IPConnection.php');
  require_once('Tinkerforge/BrickletTemperature.php');
+
  // ...
 
 .. _red_brick_images:

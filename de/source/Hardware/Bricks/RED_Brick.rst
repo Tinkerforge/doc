@@ -352,7 +352,19 @@ identifiziert werden können.
 Im Access Point Modus ist keine externe Netzwerkinfrastruktur notwendig. 
 Smartphone, Tablet oder Laptop können direkt mit dem RED Brick verbunden werden.
 
+.. _red_brick_brickv_settings_server_monitoring:
 
+Serverüberwachung
+"""""""""""""""""
+
+FIXME
+
+.. _red_brick_brickv_settings_openhab:
+
+openHAB
+"""""""
+
+FIXME
 
 .. _red_brick_brickv_settings_brickd:
 
@@ -453,6 +465,8 @@ und Notebooks direkt mit dem RED Brick verbinden können.
 * Access Point: Ist der Acess Point Modus aktiviert, kann der RED Brick
   als Access Point genutzt werden (siehe
   :ref:`Access Point in dem Settings Tab <red_brick_brickv_settings_ap>`.
+* Server Monitoring: FIXME
+* openHAB: FIXME
 
 Werden Services geändert und gespeichert, so startet der RED Brick neu. Nach dem 
 Neustart stehen die Änderungen zur Verfügung.
@@ -613,7 +627,10 @@ zugegriffen werden. Das Web Interface ist unter der IP Adresse des RED Bricks
 oder unter dessen Hostnamen (Voreinstellung: ``red-brick``) erreichbar.
 
 Das RED Brick Web Interface zeigt die installierten Programme, deren Logs und
-Konfiguration, als auch die hochgeladenen Dateien.
+Konfiguration, als auch die hochgeladenen Dateien. Seit Image Version 1.6 werden
+auch die verfügbaren :ref:`openHAB <red_brick_brickv_settings_openhab>` Sitemaps und
+ein Link zur :ref:`Serverüberwachungs <red_brick_brickv_settings_server_monitoring>`
+Webseite mit aufgeführt.
 
 .. image:: /Images/Screenshots/red_brick_web_interface.jpg
    :scale: 40 %
@@ -727,6 +744,7 @@ werden::
 
  require_once('Tinkerforge/IPConnection.php');
  require_once('Tinkerforge/BrickletTemperature.php');
+
  // ...
 
 .. _red_brick_images:
