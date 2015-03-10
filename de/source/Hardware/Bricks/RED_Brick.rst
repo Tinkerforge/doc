@@ -364,6 +364,11 @@ FIXME
 openHAB
 """""""
 
+.. image:: /Images/Screenshots/brickv_red_tab_settings_openhab.jpg
+   :scale: 60 %
+   :alt: Screenshot des Settings Tabs: openHAB Konfiguration.
+   :align: center
+
 FIXME
 
 .. _red_brick_brickv_settings_brickd:
