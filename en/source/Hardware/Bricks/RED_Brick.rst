@@ -274,6 +274,8 @@ The data in the overview tab is automatically refreshed every 3 seconds.
 Settings Tab
 ^^^^^^^^^^^^
 
+The Settings tab is subdivided into several sections.
+
 .. _red_brick_brickv_settings_network:
 
 Network
@@ -351,7 +353,9 @@ Server Monitoring
    :alt: Screenshot of settings tab showing Server Monitoring configurations.
    :align: center
 
-FIXME
+The server monitoring functionallity is designed to be used with the
+:ref:`Starter Kit: Server Room Monitoring <starter_kit_server_room_monitoring_red_brick>`.
+For further details see the kit documentation.
 
 .. _red_brick_brickv_settings_openhab:
 
@@ -462,8 +466,11 @@ directly connect from your smart phone or notebook to the RED Brick.
 * Access Point: If access point mode is enabled, you can configure
   the RED Brick to be an :ref:`access point in the settings tab
   <red_brick_brickv_settings_ap>`.
-* Server Monitoring: FIXME
-* openHAB: FIXME
+* Server Monitoring: Enables the `Nagios <http://www.nagios.org/>`__
+  monitoring system, see :ref:`server monitoring in the settings tab
+  <red_brick_brickv_settings_server_monitoring>`.
+* openHAB: Enables the `openHAB <http://www.openhab.org/>`__ runtime, see
+  :ref:`openHAB in the settings tab <red_brick_brickv_settings_openhab>`.
 
 If you change the services and save the changes, the RED Brick will reboot
 and the new configuration will be available after the reboot.

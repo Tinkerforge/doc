@@ -285,6 +285,8 @@ Die Statusanzeigen werden alle 3 Sekunden automatisch aktualisiert.
 Settings Tab
 ^^^^^^^^^^^^
 
+Der Settings Tab ist in verschiedene Unterbereiche aufgeteilt.
+
 .. _red_brick_brickv_settings_network:
 
 Netzwerk
@@ -362,7 +364,9 @@ Serverüberwachung
    :alt: Screenshot des Settings Tabs: Server Monitoring Konfiguration.
    :align: center
 
-FIXME
+Die Serverüberwachungs-Funktion ist für die Zusammenarbeit mit dem
+:ref:`Starterkit: Serverraum-Überwachung <starter_kit_server_room_monitoring_red_brick>`
+entworfen worden. Für weitere Details siehe die Dokumentation des Kits.
 
 .. _red_brick_brickv_settings_openhab:
 
@@ -472,11 +476,14 @@ und Notebooks direkt mit dem RED Brick verbinden können.
   sollen. Diese Option fügt ungefähr 10 Sekunden Bootzeit hinzu.
 * Splash Screen: Falls aktiviert wird ein Splash Screen beim Bootvorgang
   angezeigt. Ist dieser deaktiviert, so werden Kernelmeldungen angezeigt.
-* Access Point: Ist der Acess Point Modus aktiviert, kann der RED Brick
+* Access Point: Ist der Access Point Modus aktiviert, kann der RED Brick
   als Access Point genutzt werden (siehe
-  :ref:`Access Point in dem Settings Tab <red_brick_brickv_settings_ap>`.
-* Server Monitoring: FIXME
-* openHAB: FIXME
+  :ref:`Access Point im Settings Tab <red_brick_brickv_settings_ap>`).
+* Server Monitoring: Aktiviert das `Nagios <http://www.nagios.org/>`__
+  Monitoring System (siehe :ref:`Serverüberwachung im Settings Tab
+  <red_brick_brickv_settings_server_monitoring>`).
+* openHAB: Aktiviert die `openHAB <http://www.openhab.org/>`__ Runtime (siehe
+  :ref:`openHAB im Settings Tab <red_brick_brickv_settings_openhab>`).
 
 Werden Services geändert und gespeichert, so startet der RED Brick neu. Nach dem 
 Neustart stehen die Änderungen zur Verfügung.
