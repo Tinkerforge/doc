@@ -73,13 +73,15 @@ Starter Kit: Server Room Monitoring
 Features
 --------
 
-* Allows Low Cost and Modular Server Room Monitoring 
-* 19" Rack Mountable (1U)
-* Accessible and Powered over Ethernet (`PoE <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__) 
+* Low Cost and Modular Server Room Monitoring (19" Rack, 1U)
 * Expandable: Simply add extra Sensors and I/O modules as needed
-* API for many programming languages: |bindings|
-* Open Source Soft- and Hardware
-* `Nagios <http://www.nagios.org/>`__ and `Icinga <https://www.icinga.org/>`__ supported
+* Powered over Ethernet (`PoE <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__) or USB
+* Configuration of customized solution without programming possible
+* For Programmers: API for many programming languages: 
+
+  * |bindings|
+
+* Open Source Soft- and Hardware with `Nagios <http://www.nagios.org/>`__ and `Icinga <https://www.icinga.org/>`__ support
 
 Description
 -----------
@@ -92,24 +94,48 @@ Sensors: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
 :ref:`Temperature Bricklet <temperature_bricklet>` (monitors
 temperature in the server rack) and a
 :ref:`PTC Bricklet <ptc_bricklet>` with attachable Pt100 temperature sensor
-probe (monitors temperature in a server). A :ref:`Master Brick <master_brick>`
-and a :ref:`Ethernet Extension <ethernet_extension>`, with
-`Power over Ethernet (PoE) <https://en.wikipedia.org/wiki/Power_over_Ethernet>`__
-support, are included
-as well. The kits enclosure can be mounted directly in a 19" server rack
-and can be extended by more temperature probes, other modules (e.g. motion
-detector), in- or outputs (to switch computers on/off or to monitor doors) and 
-so on. With the Tinkerforge :ref:`building blocks <primer_products>` you can
-flexibly adapt it to your needs.
+probe (monitors temperature in a server). 
 
-One or more external controlling devices, such as (Embedded-) PCs, smart phones 
-or tablets, can be used to control the hardware over the Ethernet 
-connection. Monitoring directly over the Internet is possible. Power can
-be supplied with PoE or USB.
+The kits enclosure can be mounted directly in a 19" server rack
+and can be extended by other Tinkerforge 
+:ref:`building blocks <primer_products>`, e.g. more temperature probes, motion
+detector, in- or outputs (to switch computers on/off or to monitor doors), 
+to flexibly adapt the kit to your needs.
 
-The soft- and hardware of the kit can be modified. The casing consists of
-tinker-friendly PMMA, you can drill new holes with 
-simple wood drill. Mounting holes for 
+Two different applications are possible:
+
+1. Non-Stand-Alone Monitoring (Standard Kit)
+
+   The sensors of this kit can be read out via Ethernet by another computer with
+   the offered APIs (|bindings|). This way individual solutions can be realized 
+   easily. Examples for 
+   :ref:`Bash <starter_kit_server_room_monitoring_simple_monitoring>`,
+   :ref:`Nagios/Icinga <starter_kit_server_room_monitoring_nagios_or_icinga_index>` and
+   :ref:`Xively <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
+   demonstrates different possibilities.
+
+2. Stand-Alone Monitoring (Standard Kit + RED Brick)
+
+   With an additional :ref:`RED Brick <red-brick>` external control by another 
+   computer is not necessary. You can realize your own monitoring solution with
+   the :ref:`Brick Viewer <brickv>` without any programming.
+
+   Simply by sliders the value range for each sensor can be defined. If the 
+   sensor value is outside this defined range, you can be notified by email. 
+   Rules can be defined for directly connected sensors but also for other 
+   Tinkerforge sensors available in the network. Internally the defined rules 
+   configure an internally running Nagios. Nagios webfrontend can be reached by 
+   the Ethernet connection of the RED Brick and displays current values and 
+   currrently existing problems. More information can be found 
+   :ref:`here <starter_kit_server_room_monitoring_red_brick>`.
+   
+The kit can be powered by 
+`Power over Ethernet (PoE) <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__
+or USB.
+
+The soft- and hardware of the kit can be modified. The casing, 
+except of the powder coated aluminum front panel, consists of tinker-friendly 
+PMMA, you can drill new holes with simple wood drill. Mounting holes for 
 different :ref:`Bricks <primer_bricks>` and 
 :ref:`Bricklets <primer_bricklets>` are provided, by default you can
 mount:
@@ -122,21 +148,6 @@ mount:
 :ref:`IO-4 Bricklet <io4_bricklet>`,
 :ref:`Motion Detector Bricklet <motion_detector_bricklet>`,
 and :ref:`Segment Display 4x7 Bricklet <segment_display_4x7_bricklet>`
-
-Programming this kit can be done with all of the available
-bindings (|bindings|). Example implementations and applications for the usage with 
-`Nagios <http://www.nagios.org/>`__, `Icinga <https://www.icinga.org/>`__ and 
-other are available (see below). 
-
-**Starting from January 22nd 2014 the front panel of the case is made from powder
-coated aluminum instead of PMMA:**
-
-.. image:: /Images/Kits/server_room_monitoring_alu_surface_350.jpg
-   :scale: 100 %
-   :alt: Server Room Monitoring Front Panel made from Aluminum
-   :align: center
-   :target: ../../_images/Kits/server_room_monitoring_alu_surface_600.jpg
-
 
 Technical Specifications
 ------------------------
@@ -222,7 +233,7 @@ RED Brick
 ---------
 
 If the Server Room Monitoring Kit is used together with a RED Brick,
-nagios can be configured directly through the Brick Viewer.
+Nagios can be configured directly through the Brick Viewer.
 
 .. image:: /Images/Screenshots/brickv_srm_600.jpg
    :scale: 100 %
@@ -235,7 +246,7 @@ The Server Monitoring service is available in RED Brick image versions
 checkbox.
 
 If the Server Monitoring service is enabled, it is possible to add rules.
-A rule basically consists of a Bricklet (Temperature, Amibient Light,
+A rule basically consists of a Bricklet-type (Temperature, Amibient Light,
 Humidity or PTC) and a warning as well as a critical range. Just add as many
 rules as you need and configure them as required.
 
@@ -243,8 +254,8 @@ You can also configure automatic email notification for each of the
 warning/critical ranges. Just check the ``Enable E-mail Notification`` checkbox
 and add the required information.
 
-Press ``save`` to save the configuration on the RED Brick. You can now visit
-``http://<red-brick-ip>/nagios3/`` to view the current nagios status.
+Press ``Save`` to save the configuration on the RED Brick. You can now visit
+``http://<red-brick-ip>/nagios3/`` to view the current Nagios status.
 
 .. image:: /Images/Screenshots/nagios_srm_600.jpg
    :scale: 100 %
@@ -257,7 +268,7 @@ password through the console with::
 
  sudo htpasswd -c -b  /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
 
-Each of the rules will be shown as a service in nagios. An overview over all 
+Each of the rules will be shown as a service in Nagios. An overview over all 
 services is available if you click on ``Services`` in the ``Current Status``
 category.
 
