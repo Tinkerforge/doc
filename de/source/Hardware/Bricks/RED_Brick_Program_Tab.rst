@@ -10,10 +10,6 @@
 RED Brick - Program Tab
 =======================
 
-
-Beschreibung
-------------
-
 Der Program Tab ist der wichtigste Teil in der Brick Viewer Ansicht des RED
 Bricks. Er dient dazu Programme hochzuladen, zu modifizieren und zu verwalten.
 
@@ -34,7 +30,6 @@ Nachdem das erste eigene Programm hochgeladen wurde, kann dieses ausgewählt
 werden. Auf der rechten Seite werden dann Informationen zum Programm
 angezeigt. Dazu gehört die Programm-Konfiguration, die geändert werden kann
 und die Logs des Programms.
-
 
 Ein eigenes Programm kann auf den RED Brick in 8 einfachen Schritten hochgeladen
 werden:

@@ -10,10 +10,6 @@
 RED Brick - Program Tab
 =======================
 
-
-Description
------------
-
 The program tab of the RED Brick tab of the Brick Viewer is the most important
 piece of user interface for the RED Brick. It can help you to upload, modify
 and monitor your programs.
