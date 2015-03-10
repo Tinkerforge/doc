@@ -242,17 +242,17 @@ Verschiedene Aufbauvarianten
 
 * :ref:`Wetterstation (Basisversion) <starter_kit_weather_station_construction_basic>`
 * :ref:`WLAN Wetterstation <starter_kit_weather_station_construction_wifi>`
-* :ref:`Raspberry Pi Wetterstation <starter_kit_weather_station_construction_rpi>`
+* :ref:`Raspberry Pi Wetterstation <starter_kit_weather_station_construction_raspberry_pi>`
 
 .. toctree::
    :hidden:
 
    Construction_Basic
-   Construction_RaspberryPi
    Construction_Wifi
+   Construction_RaspberryPi
 
 RS485, Ethernet, etc.
-^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""
 
 Die Wetterstation kann auch über RS485 oder Ethernet Extension
 gesteuert werden. Der Aufbau ist hierbei der selbe wie bei "WLAN Wetterstation"

@@ -1,7 +1,7 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#konstruktion">Starterkit: Wetterstation</a> / Konstruktion: Raspberry Pi Wetterstation
 
-.. _starter_kit_weather_station_construction_rpi:
+.. _starter_kit_weather_station_construction_raspberry_pi:
 
 Konstruktion: Raspberry Pi Wetterstation
 ========================================
@@ -12,7 +12,7 @@ gesteuert werden. Das Raspberry Pi kann direkt in das Gehäuse eingebaut werden
 auch wenn es nicht einfach ist alles zu integrieren.
 
 Wir installieren einen :ref:`Master Brick <master_brick>`,
-eine :ref:`Step-Down Power Supply <step_down_power_supply>`, ein :ref:`DC Jack
+eine :ref:`Step-Down Power Supply <step_down_power_supply>`, einen :ref:`DC Jack
 Adapter <dc_jack_adapter>` und das Raspberry Pi im Gehäuse.
 Das Raspberry Pi (und der Master Brick) werden über den DC Jack Adapter durch
 die Step-Down Power Supply versorgt. Zur Stromversorgung des Raspberry Pi haben

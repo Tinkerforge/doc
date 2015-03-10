@@ -11,9 +11,10 @@ Construction: Wi-Fi Weather Station
 The Weather Station case is big enough to add a :ref:`WIFI Extension
 <wifi_extension>` for wireless controlling. In this tutorial we will use
 the :ref:`Step-Down Power Supply <step_down_power_supply>` together with
-a :ref:`DC Jack Adapter <dc_jack_adapter>` to power the stack. It would also
-be possible to power the stack with a USB Power Supply, in this case
-Step-Down Power Supply and DC Jack Adapter are not needed.
+a :ref:`DC Jack Adapter <dc_jack_adapter>` to power the stack. It is also
+possible to power the stack with a `USB Power Supply
+<https://www.tinkerforge.com/en/shop/power-supplies/usb-power-supply.html>`__,
+in this case Step-Down Power Supply and DC Jack Adapter are not required.
 
 This is an extension of the :ref:`basic version
 <starter_kit_weather_station_construction_basic>`. You should build the basic
