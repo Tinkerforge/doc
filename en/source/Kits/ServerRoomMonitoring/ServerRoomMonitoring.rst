@@ -247,8 +247,8 @@ checkbox.
 
 If the Server Monitoring service is enabled, it is possible to add rules.
 A rule basically consists of a Bricklet-type (Temperature, Amibient Light,
-Humidity or PTC) and a warning as well as a critical range. Just add as many
-rules as you need and configure them as required.
+Humidity or PTC), the UID and a warning as well as a critical range. Just add 
+as many rules as you need and configure them as required. 
 
 You can also configure automatic email notification for each of the
 warning/critical ranges. Just check the ``Enable E-mail Notification`` checkbox
