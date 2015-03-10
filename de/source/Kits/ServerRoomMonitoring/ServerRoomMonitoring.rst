@@ -119,7 +119,7 @@ Eine Nutzung ist auf zwei verschiedene Arten möglich:
    das Kit auch ohne externen Rechner betrieben werden. Über die 
    :ref:`Brick Viewer <brickv>` Software kann, ganz ohne Programmieraufwand, 
    die eigene Überwachungslösung realisiert werden. 
-	
+
    Dazu müssen nur, mittels einfacher Schieberegler, für jeden Sensor 
    Wertebereiche definiert werden. Wird der definierte Wertebereich verlassen, 
    so kann unter anderem eine Benachrichtigung per Email erfolgen. 
@@ -134,8 +134,7 @@ Eine Nutzung ist auf zwei verschiedene Arten möglich:
    Erfahrene Nutzer können darüberhinaus die im Hintergrund laufende Nagios 
    Installation modifizieren und über die Möglichkeiten des Brick Viewers hinaus
    konfigurieren.
-   
-   
+
 Die Stromversorgung des Kits kann per 
 `Power over Ethernet (PoE) <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__
 oder USB (z.B. USB Steckernetzteil) erfolgen.

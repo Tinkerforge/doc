@@ -116,7 +116,7 @@ Two different applications are possible:
 
 2. Stand-Alone Monitoring (Standard Kit + RED Brick)
 
-   With an additional :ref:`RED Brick <red-brick>` external control by another 
+   With an additional :ref:`RED Brick <red_brick>` external control by another
    computer is not necessary. You can realize your own monitoring solution with
    the :ref:`Brick Viewer <brickv>` without any programming.
 
