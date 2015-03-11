@@ -13,8 +13,8 @@ Starter Kit: Server Room Monitoring
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Kits/server_room_monitoring_alu_front_350.jpg",
-	               "Kits/server_room_monitoring_alu_front_800.jpg",
+	    tfdocstart("Kits/server_room_monitoring_red_1_350.jpg",
+	               "Kits/server_room_monitoring_red_1_800.jpg",
 	               "Server Room Monitoring Kit: Front")
 	}}
 	{{
@@ -28,8 +28,8 @@ Starter Kit: Server Room Monitoring
 	             "Server Room Monitoring Kit")
 	}}
 	{{
-	    tfdocimg("Kits/server_room_monitoring_back_100.jpg",
-	             "Kits/server_room_monitoring_back_800.jpg",
+	    tfdocimg("Kits/server_room_monitoring_red_3_100.jpg",
+	             "Kits/server_room_monitoring_red_3_800.jpg",
 	             "Server Room Monitoring Kit: Back")
 	}}
 	{{
@@ -38,8 +38,8 @@ Starter Kit: Server Room Monitoring
 	             "Server Room Monitoring Kit: In Rack")
 	}}
 	{{
-	    tfdocimg("Kits/server_room_monitoring_front_100.jpg",
-	             "Kits/server_room_monitoring_front_800.jpg",
+	    tfdocimg("Kits/server_room_monitoring_red_2_100.jpg",
+	             "Kits/server_room_monitoring_red_2_800.jpg",
 	             "Server Room Monitoring Kit: Front")
 	}}
 	{{

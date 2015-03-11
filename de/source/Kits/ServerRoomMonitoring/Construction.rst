@@ -181,8 +181,8 @@ Das nachfolgende Bild zeigt das fertig aufgebaute Kit.
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step9.png
 
-.. image:: /Images/Kits/server_room_monitoring_cabling_600.jpg
+.. image:: /Images/Kits/server_room_monitoring_red_4_600.jpg
    :scale: 100 %
    :alt: Serverraum-Überwachungskit: Verkabelung
    :align: center
-   :target: ../../_images/Kits/server_room_monitoring_cabling_1000.jpg
+   :target: ../../_images/Kits/server_room_monitoring_red_4_1000.jpg
