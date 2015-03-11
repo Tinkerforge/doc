@@ -135,7 +135,7 @@ einem Master Brick und allen angeschlossenen Bricks und Bricklets herzustellen.
 Es ist kein Brick Deamon notwendig um diese Extension zu nutzen.
 
 Um den Brick Viewer mit einem drahtlosen Aufbau zu verbinden muss
-die IP Adresse und der konfigurierte Port in dem Setup Tab eingegeben werden.
+die IP Adresse und der konfigurierte Port im Setup Tab eingegeben werden.
 Nach dem Klick auf "Connect" wird dann eine Verbindung zu der WIFI Extension
 und nicht zu dem lokal laufenden Brick Daemon hergestellt.
 

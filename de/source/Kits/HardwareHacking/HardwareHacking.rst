@@ -255,7 +255,7 @@ Gerät zu verbinden muss zuvor folgendes erledigt werden:
 * Finde Löt-Pads die benutzt werden können um eine Spannung zu messen oder zu schalten.
 * Löte Drähte an diese Pads.
 
-In dem :ref:`Hardware Hacking für Anfänger
+Im :ref:`Hardware Hacking für Anfänger
 <starter_kit_hardware_hacking_for_beginners>` Tutorial werden diese Schritte
 genauer erläutert.
 

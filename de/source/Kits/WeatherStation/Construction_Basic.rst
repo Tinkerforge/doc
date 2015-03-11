@@ -21,7 +21,7 @@ Abstandsbolzen, Muttern und Unterlegscheiben.
    :target: ../../_images/Kits/weather_station_content_1200.jpg
 
 Es gibt verschiedene Möglichkeiten die Bricks und Bricklets
-in dem Gehäuse zu befestigen. In dieser Aufbauanleitung stellen wir eine
+im Gehäuse zu befestigen. In dieser Aufbauanleitung stellen wir eine
 Möglichkeit vor. 
 
 Zum einfacheren Verständnis werden nachfolgend Skizzen dargestellt. 

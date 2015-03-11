@@ -44,7 +44,7 @@ und mittels einer 12mm langen Schraube mit dem Seitenteil verbunden. Falls diese
 Mutter nicht in die Aussparung zu passen scheint, muss diese etwas gedreht 
 werden.
 
-Das Ergebnis dieses Arbeitsschritts ist in dem folgenden Bild abgebildet:
+Das Ergebnis dieses Arbeitsschritts ist im folgenden Bild abgebildet:
 
 .. image:: /Images/Kits/server_room_monitoring_construction_step1_350.jpg
    :scale: 100 %

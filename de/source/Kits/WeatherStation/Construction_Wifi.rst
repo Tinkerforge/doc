@@ -46,7 +46,7 @@ Rückseite des Gehäuses geschraubt. Der DC Jack Adapter wird mit einer Mutter
 befestigt.
 
 Wenn alles korrekt verschraubt ist, sollte der DC Jack Adapter in die
-Aussparung in dem Seitenteil passen.
+Aussparung im Seitenteil passen.
 
 .. image:: /Images/Kits/weather_station_construction_wifi_dc_jack_350.jpg
    :scale: 100 %

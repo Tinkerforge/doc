@@ -330,7 +330,7 @@ Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 WLAN Access Point
 """""""""""""""""
 
-In dem WLAN Access Point Abschnitt (benötigt Image >= 1.4 und
+Im WLAN Access Point Abschnitt (benötigt Image >= 1.4 und
 Brick Viewer >= 2.2.2) kann der RED Brick in einen WLAN Access
 Point verwandelt werden. Der Tab ist erst verfügbar, wenn der 
 :ref:`Access Point Service <red_brick_brickv_settings_services>` aktiviert ist
