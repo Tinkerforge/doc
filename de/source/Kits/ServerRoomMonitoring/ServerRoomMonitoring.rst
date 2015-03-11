@@ -103,7 +103,7 @@ eigenen Anforderungen angepasst werden.
 
 Eine Nutzung ist auf zwei verschiedene Arten möglich:
 
-1. Nicht-Eigenständige Überwachung (Standardkit)
+1. **Nicht-Eigenständige Überwachung** (Standardkit)
 
    Alle Sensoren des Kits können aus der Ferne von anderen Rechnern per Ethernet
    über die angebotenen APIs (|bindings|) abgefragt werden. Somit können 
@@ -113,7 +113,7 @@ Eine Nutzung ist auf zwei verschiedene Arten möglich:
    :ref:`Xively <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
    demonstrieren die Nutzungsmöglichkeiten.
 
-2. Eigenständige Überwachung (Standardkit + RED Brick)
+2. **Eigenständige Überwachung** (Standardkit + RED Brick)
 
    Wird zusätzlich ein :ref:`RED Brick <red_brick>` im Kit verbaut, so kann 
    das Kit auch ohne externen Rechner betrieben werden. Über die 

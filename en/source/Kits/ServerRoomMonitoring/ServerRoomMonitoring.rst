@@ -104,7 +104,7 @@ to flexibly adapt the kit to your needs.
 
 Two different applications are possible:
 
-1. Non-stand-alone monitoring (standard kit)
+1. **Non-stand-alone monitoring** (standard kit)
 
    The sensors of the kit are read out via Ethernet or USB by a computer with
    the offered APIs (|bindings|). Individual solutions can be realized with ease.
@@ -114,7 +114,7 @@ Two different applications are possible:
    :ref:`Xively <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
    demonstrate different possibilities.
 
-2. Stand-alone monitoring (standard kit + RED Brick)
+2. **Stand-alone monitoring** (standard kit + RED Brick)
 
    With an additional :ref:`RED Brick <red_brick>` external control 
    by another computer is not necessary anymore. You can configure your own 
