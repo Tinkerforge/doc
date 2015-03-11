@@ -379,7 +379,20 @@ openHAB
    :alt: Screenshot des Settings Tabs: openHAB Konfiguration.
    :align: center
 
-FIXME
+Im `openHAB <http://www.openhab.org/>`__ Abschnitt (benötigt Image >= 1.6 und
+Brick Viewer >= 2.2.3) kann der openHAB Service auf dem RED Brick konfiguriert
+werden. Dieser Abschnitt ist erst verfügbar, wenn der :ref:`openHAB Service
+<red_brick_brickv_settings_services>` aktiviert ist.
+
+Über die *New* und *Delete* Knöpfe können neue ``.items``, ``.rules`` und
+``.sitemap`` Dateien angelegt und bestehende Dateien wieder gelöscht werden.
+Abhängig von der Endung der Datei speichert Brick Viewer sie automatisch im
+richtigen openHAB Konfigurationsverzeichnis.
+
+Nachdem Änderungen einer Konfigurationsdatei vorgenommen wurden können diese
+über den *Apply Changes* Knopf gespeichert oder über den *Discard Changes*
+Knopf verworfen werden. Dateien mit ungespeicherten Änderungen werden als
+``(modified)`` angezeigt.
 
 .. _red_brick_brickv_settings_brickd:
 
