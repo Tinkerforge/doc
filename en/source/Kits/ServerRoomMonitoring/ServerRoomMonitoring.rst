@@ -107,7 +107,7 @@ Two different applications are possible:
 1. Non-stand-alone monitoring (standard kit)
 
    The sensors of the kit are read out via Ethernet or USB by a computer with
-   the offered APIs (|bindings|). Individual solutions can be easily realized 
+   the offered APIs (|bindings|). Individual solutions can be realized with ease.
    Examples for 
    :ref:`Bash <starter_kit_server_room_monitoring_simple_monitoring>`,
    :ref:`Nagios/Icinga <starter_kit_server_room_monitoring_nagios_or_icinga_index>` and
