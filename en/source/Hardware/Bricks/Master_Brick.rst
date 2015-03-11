@@ -101,7 +101,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Bricklet Ports                    4
-Dimensions (W x D x H)            40 x 40 x 16mm (1.57 x 1.57 x 0.63")
+Dimensions (W x D x H)            40 x 40 x 19mm (1.57 x 1.57 x 0.75")
 Weight                            12g
 Current Consumption               68mA
 ================================  ============================================================
