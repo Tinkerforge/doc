@@ -129,7 +129,7 @@ Two different applications are possible:
    webfrontend shows current monitoring values and currrently existing problems. 
    More information can be found in the 
    :ref:`RED Brick section <starter_kit_server_room_monitoring_red_brick>`  
-   of the Server Room Monitoring ducumentation.
+   of the Server Room Monitoring documentation.
 
    Advanced users can easily modify the Nagios installation that runs on the
    RED Brick to change configurations that go beyond the Brick Viewer
