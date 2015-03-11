@@ -126,7 +126,7 @@ Two different applications are possible:
    Rules can be defined for sensors that are directly connected, but also for other 
    Tinkerforge sensors available in the network. The defined rules 
    configure an instance of Nagios that runs on the RED Brick. The Nagios 
-   webfrontend shows current monitoring values and currrently existing problems. 
+   web interface shows current monitoring values and currrently existing problems.
    More information can be found in the 
    :ref:`RED Brick section <starter_kit_server_room_monitoring_red_brick>`  
    of the Server Room Monitoring documentation.
@@ -252,15 +252,15 @@ Brick Viewer >= 2.2.3) go to the :ref:`services tab
 <red_brick_brickv_settings_services>` and tick the Server Monitoring checkbox.
 
 If the Server Monitoring service is enabled, it is possible to add rules.
-A rule basically consists of a Bricklet-type (Temperature, Amibient Light,
+A rule basically consists of a Bricklet-type (Temperature, Ambient Light,
 Humidity or PTC), the UID and a warning as well as a critical range. Just add 
 as many rules as you need and configure them as required. 
 
 You can also configure automatic email notification for each of the
-warning/critical ranges. Just check the ``Enable E-mail Notification`` checkbox
+warning/critical ranges. Just tick the ``Enable Email Notification`` checkbox
 and add the required information.
 
-Press ``Save`` to save the configuration on the RED Brick. You can now visit
+Click *Save* to save the configuration on the RED Brick. You can now visit
 ``http://<red-brick-ip>/nagios3/`` to view the current Nagios status.
 
 .. image:: /Images/Screenshots/nagios_srm_600.jpg

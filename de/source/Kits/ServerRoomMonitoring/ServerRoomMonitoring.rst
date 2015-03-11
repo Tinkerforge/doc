@@ -122,17 +122,17 @@ Eine Nutzung ist auf zwei verschiedene Arten möglich:
 
    Dazu müssen nur, mittels einfacher Schieberegler, für jeden Sensor 
    Wertebereiche definiert werden. Wird der definierte Wertebereich verlassen, 
-   so kann unter anderem eine Benachrichtigung per Email erfolgen. 
+   so kann unter anderem eine Benachrichtigung per E-Mail erfolgen.
    Es können Regeln sowohl für direkt angeschlossene Sensoren, aber auch für 
    andere, über das Netzwerk verfügbare, Tinkerforge Sensoren konfiguriert 
    werden. Intern läuft dazu eine Nagios-Installation, die über den Brick Viewer 
-   konfiguriert wird. Das Nagios Webfrontend ist über die Ethernetverbindung des 
+   konfiguriert wird. Das Nagios Web Interface ist über die Ethernetverbindung des
    RED Bricks erreichbar und ermöglicht die Ansicht der aktuellen Messwerte und 
    eventueller Probleme. Weitere Informationen können im  
    :ref:`RED Brick Kapitel <starter_kit_server_room_monitoring_red_brick>` der
    Serverraum-Überwachungsdokumentation gefunden werden.
 
-   Erfahrene Nutzer können darüberhinaus die im Hintergrund laufende Nagios 
+   Erfahrene Nutzer können darüber hinaus die im Hintergrund laufende Nagios
    Installation modifizieren und über die Möglichkeiten des Brick Viewers hinaus
    konfigurieren.
 
@@ -259,16 +259,16 @@ aktiviert werden.
 
 Wenn der Server Monitoring Service aktiviert ist, ist es möglich Regeln
 hinzuzufügen. Eine Regel besteht aus einem Bricklettyp (Temperature, Ambient 
-Light, Humidity or PTC), dessen UID und einem Wertebereich für Warning und
-Critical. Es können soviele Regeln hinzugefügt und konfiguriert
+Light, Humidity oder PTC), dessen UID und einem Wertebereich für Warning und
+Critical. Es können so viele Regeln hinzugefügt und konfiguriert
 werden wie benötigt.
 
-Es ist zusätzlich möglich automatische Email-Benachrichtigungen für die
+Es ist zusätzlich möglich automatische E-Mail-Benachrichtigungen für die
 Warning/Critical Bereiche zu aktivieren. Dazu muss einfach die 
-``Enable E-mail Notification`` Checkbox angeklickt und die
+``Enable Email Notification`` Checkbox angeklickt und die
 benötigten Informationen eingetragen werden.
 
-Durch Klicken des ``Save`` Buttons wird die Konfiguration auf dem RED Brick
+Durch Klicken des *Save* Buttons wird die Konfiguration auf dem RED Brick
 gespeichert. Nun kann über die Seite ``http://<red-brick-ip>/nagios3/`` der
 aktuelle Zustand von Nagios abgerufen werden.
 

@@ -966,8 +966,7 @@ eingeben::
 
  dmesg | egrep "(PCLK=|disp clks:)"
 
-und uns eine `E-Mail <mailto:info@tinkerforge.com>`__ mit der Ausgabe des
-Befehls schicken.
+und uns eine E-Mail (info@tinkerforge.com) mit der Ausgabe des Befehls schicken.
 
 
 .. _red_brick_hardware:

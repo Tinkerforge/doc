@@ -344,7 +344,7 @@ Rauchmelder auslesen
 Rauchmelder-Netzwerks an einem Punkt auszulesen. Wir werden uns dies zu nutze 
 machen und eigene Aktionen ausführen wenn Rauch erkannt wird. Hierzu hacken
 wir einen drahtlosen Rauchmelder. Als Beispiel könnten wir im Alarmfall eine 
-Email oder Textnachricht verschicken.
+E-Mail oder Textnachricht verschicken.
 
 .. image:: /Images/Kits/hardware_hacking_smoke_detector_finished_350.jpg
    :scale: 100 %

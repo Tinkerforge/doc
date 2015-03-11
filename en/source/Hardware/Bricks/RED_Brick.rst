@@ -943,8 +943,7 @@ type the following command::
 
  dmesg | egrep "(PCLK=|disp clks:)"
 
-and send us an `Email <mailto:info@tinkerforge.com>`__ with the output of that
-command.
+and send us an email (info@tinkerforge.com) with the output of that command.
 
 
 .. _red_brick_hardware:

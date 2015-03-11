@@ -50,7 +50,7 @@ Die Tinkerforge Bindings sind natürlich für alle Sprachen vorinstalliert
 und können direkt verwendet werden.
 
 Wenn eine Bibliothek fehlt, die vorinstalliert sein sollte, schreib uns eine
-Email (info@tinkerforge.com). In dieser sollte der Ort stehen an dem wir
+E-Mail (info@tinkerforge.com). In dieser sollte der Ort stehen an dem wir
 die Bibliothek finden und eine Beschreibung wie man diese installiert. Am
 einfachsten wäre es, wenn diese direkt im Debian wheezy Repository verfügbar
 wäre.

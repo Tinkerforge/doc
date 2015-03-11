@@ -65,7 +65,7 @@ Es können 1kHz Pieptöne in verschiedenen Längen ausgegeben werden.
 Die Ausgabe von Morse Codes ist ebenfalls möglich.
 
 Zum Beispiel können mit dieser Platine Zustände signalisiert werden,
-wie "Email empfangen".
+wie "E-Mail empfangen".
 
 
 Technische Spezifikation
