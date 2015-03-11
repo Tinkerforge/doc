@@ -108,7 +108,7 @@ Two different applications are possible:
 
    The sensors of the kit are read out via Ethernet or USB by a computer with
    the offered APIs (|bindings|). Individual solutions can be easily realized 
-    Examples for 
+   Examples for 
    :ref:`Bash <starter_kit_server_room_monitoring_simple_monitoring>`,
    :ref:`Nagios/Icinga <starter_kit_server_room_monitoring_nagios_or_icinga_index>` and
    :ref:`Xively <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
