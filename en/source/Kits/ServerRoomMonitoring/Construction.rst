@@ -91,10 +91,10 @@ Attach Bricks and Bricklets
 
 Now the Bricks and Bricklets will be attached to the case.
 
-Master Brick and Ethernet Extension
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Master Brick and Ethernet Extension (with RED Brick)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Use four 9mm spacers (thread inside/outside) 
+Use four 12mm spacers (thread inside/outside) 
 and put them between Master Brick and Ethernet Extension (on top). 
 Fix them with 10mm spacers (thread inside/inside) on the bottom side and with 
 screws on the top side of the Ethernet Extension.
@@ -112,6 +112,16 @@ Screw this stack to one of the side parts by four screws.
    :alt: Construction Step 6
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
+
+If you build the kit including a RED Brick, you have to put the RED Brick
+in place of the Master Brick and the Master Brick on top of the Ethernet
+Extension. Each can use the 12mm spacers (thread inside/outside)
+
+.. image:: /Images/Kits/server_room_monitoring_construction_w_red_350.jpg
+   :scale: 100 %
+   :alt: Construction Step 6 with RED Brick
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_w_red.png
 
 PTC, Temperature and Humidity Bricklet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -96,11 +96,11 @@ Bricks und Bricklets einbauen
 
 Jetzt werden die Bricks und Bricklets ans Gehäuse geschraubt.
 
-Master Brick und Ethernet Extension
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Master Brick und Ethernet Extension (mit RED Brick)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Die Ethernet Extension wird auf das Master Brick gesteckt wobei
-jeweils ein 9mm Abstandshalter (Innen-/Außengewinde) dazwischen gesteckt wird. 
+jeweils ein 12mm Abstandshalter (Innen-/Außengewinde) dazwischen gesteckt wird. 
 Anschließend wird jeweils ein 10mm Abstandshalter (Innen-/Innengewinde)
 unten aufgeschraubt und die Master Extension mittels Schrauben befestigt.
 
@@ -117,6 +117,17 @@ Dieser Stapel wird an ein Seitenteil mittels vier Schrauben geschraubt.
    :alt: Arbeitsschritt 6
    :align: center
    :target: ../../_images/Kits/server_room_monitoring_construction_step6.png
+
+Wenn das Kit inklusive RED Brick gebaut wird, sollte der RED Brick unter
+der Ethernet Extension sein und der Master Brick auf der Ethernet Extension.
+beide können mit 12mm Abstandshalter (Innen-/Außengewinde) befestigt
+werden.
+
+.. image:: /Images/Kits/server_room_monitoring_construction_w_red_350.jpg
+   :scale: 100 %
+   :alt: Arbeitsschritt 6 mit RED Brick
+   :align: center
+   :target: ../../_images/Kits/server_room_monitoring_construction_w_red.png
 
 PTC, Temperature und Humidity Bricklet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
