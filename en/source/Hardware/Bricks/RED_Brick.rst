@@ -320,7 +320,7 @@ Wireless Access Point
 
 In the Wireless Access Point section (requires Image >= 1.4 and
 Brick Viewer >= 2.2.2) of this tab, you can turn
-the RED Brick into a wireless access point. This tab is only
+the RED Brick into a wireless access point. This section is only
 available if the :ref:`Access Point service <red_brick_brickv_settings_services>`
 is activated and you have connected the `WiFi USB Adapter
 <https://www.tinkerforge.com/en/shop/accessories/red-brick/wifi-usb-adapter.html>`__
@@ -333,14 +333,14 @@ to the RED Brick USB port.
 
 If you use Access Point mode, the RED Brick will provide a DHCP and DNS server. 
 It will give devices that connect to it an IP address and provide a domain. 
-You can configure the IP SSID, WPA Passphrase, DHCP Pool, DNS domain and other 
-options that you might expect from an access point.
+You can configure the IP address, SSID, WPA passphrase, DHCP pool, DNS domain
+and other options that you might expect from an access point.
 
 It is also possible to show the current DHCP leases, which can help you
 to identify devices that are connected to the RED Brick access point.
 
 If you use the Access Point mode, there is no external network infrastructure
-necessary. Your Smart Phone, Tablet or Laptop can directly connect to the 
+necessary. Your smart phone, tablet or laptop can directly connect to the
 RED Brick.
 
 .. _red_brick_brickv_settings_server_monitoring:
@@ -356,7 +356,7 @@ Server Monitoring
 The server monitoring functionallity (requires Image >= 1.6 and
 Brick Viewer >= 2.2.3) is designed to be used with the
 :ref:`Starter Kit: Server Room Monitoring <starter_kit_server_room_monitoring_red_brick>`.
-For further details see the kit documentation.
+For further details see the documentation of the kit.
 
 .. _red_brick_brickv_settings_openhab:
 
@@ -383,7 +383,7 @@ settings related to the local Brick Daemon.
    :alt: Screenshot of settings tab showing brickd configurations.
    :align: center
 
-The configuration includes the listen address, the corresponding port, port for
+The configuration includes listen address, corresponding port, port for
 WebSockets, authentication secret and several other low level configurations
 including the LED trigger for the red and green LED.
 
@@ -396,7 +396,7 @@ Bricklets.
 Date/Time
 """""""""
 
-In the Date/Time section you can sync the clock of the RED Brick to
+In the Date/Time section you can synchronize the clock of the RED Brick to
 the clock of your PC. There is no battery on the RED Brick, so the
 time won't be incremented if the RED Brick is not powered.
 

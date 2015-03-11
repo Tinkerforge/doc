@@ -244,8 +244,8 @@ Der Aufbau der Basisversion des Kits ist
 RED Brick
 ---------
 
-Wenn das Serverraum-Überwachungs Kit zusammen mit einem RED Brick benutzt wird,
-kann Nagios direkt über den Brick Viewer konfiguriert werden.
+Wenn das Kit zusammen mit einem RED Brick benutzt wird, kann Nagios auf dem
+RED Brick direkt über den Brick Viewer konfiguriert werden.
 
 .. image:: /Images/Screenshots/brickv_srm_600.jpg
    :scale: 100 %
@@ -258,7 +258,7 @@ Viewer >= 2.2.3) kann im :ref:`Services Tab <red_brick_brickv_settings_services>
 aktiviert werden.
 
 Wenn der Server Monitoring Service aktiviert ist, ist es möglich Regeln
-hinzuzufügen. Eine Regel besteht aus einem Bricklettyp (Temperature, Ambient 
+hinzuzufügen. Eine Regel besteht aus dem Typ des Bricklets (Temperature, Ambient
 Light, Humidity oder PTC), dessen UID und einem Wertebereich für Warning und
 Critical. Es können so viele Regeln hinzugefügt und konfiguriert
 werden wie benötigt.
@@ -278,10 +278,10 @@ aktuelle Zustand von Nagios abgerufen werden.
    :align: center
    :target: ../../_images/Screenshots/nagios_srm.jpg
 
-Die Standardeinstellung für user:password lautet ``nagiosadmin``:``tf``.
+Die Standardeinstellung für Username:Password lautet ``nagiosadmin``:``tf``.
 Das Passwort kann über die Console durch folgenden Befehl geändert werden::
 
- sudo htpasswd -c -b  /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
+ sudo htpasswd -c -b /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
 
 Jede der Regeln wird in Nagios als ein Service angezeigt. Die Übersicht aller
 Nagios Services kann über den ``Services`` Link in der Kategorie

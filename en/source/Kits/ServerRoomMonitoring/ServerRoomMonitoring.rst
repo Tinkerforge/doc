@@ -118,7 +118,7 @@ Two different applications are possible:
 
    With an additional :ref:`RED Brick <red_brick>` external control 
    by another computer is not necessary anymore. You can configure your own 
-   monitoring solution with the :ref:`Brick Viewer <brickv>` without any 
+   monitoring solution using just :ref:`Brick Viewer <brickv>` without any
    programming.
 
    The value range for each sensor can be defined with sliders. It is possible
@@ -238,8 +238,8 @@ The construction of the basic kit is described
 RED Brick
 ---------
 
-If the Server Room Monitoring Kit is used together with a RED Brick,
-Nagios can be configured directly through the Brick Viewer.
+If the kit is used together with a RED Brick then Nagios running on the
+RED Brick can be configured directly using Brick Viewer.
 
 .. image:: /Images/Screenshots/brickv_srm_600.jpg
    :scale: 100 %
@@ -252,8 +252,8 @@ Brick Viewer >= 2.2.3) go to the :ref:`services tab
 <red_brick_brickv_settings_services>` and tick the Server Monitoring checkbox.
 
 If the Server Monitoring service is enabled, it is possible to add rules.
-A rule basically consists of a Bricklet-type (Temperature, Ambient Light,
-Humidity or PTC), the UID and a warning as well as a critical range. Just add 
+A rule basically consists of the Bricklet type (Temperature, Ambient Light,
+Humidity or PTC), its UID and a warning as well as a critical range. Just add
 as many rules as you need and configure them as required. 
 
 You can also configure automatic email notification for each of the
@@ -269,10 +269,10 @@ Click *Save* to save the configuration on the RED Brick. You can now visit
    :align: center
    :target: ../../_images/Screenshots/nagios_srm.jpg
 
-The default user:password is ``nagiosadmin``:``tf``. You can change the
+The default username:password is ``nagiosadmin``:``tf``. You can change the
 password through the console with::
 
- sudo htpasswd -c -b  /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
+ sudo htpasswd -c -b /etc/nagios3/htpasswd.users nagiosadmin NEWPASSWORD
 
 Each of the rules will be shown as a service in Nagios. An overview over all 
 services is available if you click on ``Services`` in the ``Current Status``

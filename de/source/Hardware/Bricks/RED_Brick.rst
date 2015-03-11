@@ -332,7 +332,7 @@ WLAN Access Point
 
 Im WLAN Access Point Abschnitt (benötigt Image >= 1.4 und
 Brick Viewer >= 2.2.2) kann der RED Brick in einen WLAN Access
-Point verwandelt werden. Der Tab ist erst verfügbar, wenn der 
+Point verwandelt werden. Dieser Abschnitt ist erst verfügbar, wenn der
 :ref:`Access Point Service <red_brick_brickv_settings_services>` aktiviert ist
 und ein `WLAN USB Adapter <https://www.tinkerforge.com/de/shop/accessories/red-brick/wifi-usb-adapter.html>`__ 
 eingesteckt ist.
@@ -344,8 +344,8 @@ eingesteckt ist.
 
 Im Access Point Modus stellt der RED Brick einen DHCP und DNS Server zur
 Verfügung. Diese geben Geräten, die sich mit dem RED Brick verbinden eine IP
-Adresse und stellt eine Domain zur Verfügung. Die IP SSID, WPA Passphrase
-(Passwort), DHCP Pool, DNS Domain und andere Optionen die von einem Access Point 
+Adresse und stellt eine Domain zur Verfügung. Die IP Adresse, SSID, WPA
+Passwort, DHCP Pool, DNS Domain und andere Optionen die von einem Access Point
 erwartet werden, können konfiguriert werden.
 
 Die aktuellen DHCP Leases werden angezeigt, so dass verbundene Geräte einfach 
