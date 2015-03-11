@@ -128,8 +128,9 @@ Eine Nutzung ist auf zwei verschiedene Arten möglich:
    werden. Intern läuft dazu eine Nagios-Installation, die über den Brick Viewer 
    konfiguriert wird. Das Nagios Webfrontend ist über die Ethernetverbindung des 
    RED Bricks erreichbar und ermöglicht die Ansicht der aktuellen Messwerte und 
-   eventueller Probleme. Weitere Informationen können 
-   :ref:`hier gefunden werden <starter_kit_server_room_monitoring_red_brick>`.
+   eventueller Probleme. Weitere Informationen können im  
+   :ref:`RED Brick Kapitel <starter_kit_server_room_monitoring_red_brick>` der
+   Serverraum-Überwachungsdokumentation gefunden werden.
 
    Erfahrene Nutzer können darüberhinaus die im Hintergrund laufende Nagios 
    Installation modifizieren und über die Möglichkeiten des Brick Viewers hinaus

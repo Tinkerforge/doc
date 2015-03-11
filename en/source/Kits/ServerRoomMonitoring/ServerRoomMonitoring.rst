@@ -86,7 +86,7 @@ Features
 Description
 -----------
 
-The *Starter Kit: Server Room Monitoring* is an open source kit to
+The *Starter Kit: Server Room Monitoring* is an open source kit that can
 monitor server room installations. The basic kit is equipped with the following
 Sensors: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
 (monitors room illumination), :ref:`Humidity Bricklet <humidity_bricklet>`
@@ -104,38 +104,44 @@ to flexibly adapt the kit to your needs.
 
 Two different applications are possible:
 
-1. Non-Stand-Alone Monitoring (Standard Kit)
+1. Non-stand-alone monitoring (standard kit)
 
-   The sensors of this kit can be read out via Ethernet by another computer with
-   the offered APIs (|bindings|). This way individual solutions can be realized 
-   easily. Examples for 
+   The sensors of the kit are read out via Ethernet or USB by a computer with
+   the offered APIs (|bindings|). Individual solutions can be easily realized 
+    Examples for 
    :ref:`Bash <starter_kit_server_room_monitoring_simple_monitoring>`,
    :ref:`Nagios/Icinga <starter_kit_server_room_monitoring_nagios_or_icinga_index>` and
    :ref:`Xively <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>`
-   demonstrates different possibilities.
+   demonstrate different possibilities.
 
-2. Stand-Alone Monitoring (Standard Kit + RED Brick)
+2. Stand-alone monitoring (standard kit + RED Brick)
 
-   With an additional :ref:`RED Brick <red_brick>` external control by another
-   computer is not necessary. You can realize your own monitoring solution with
-   the :ref:`Brick Viewer <brickv>` without any programming.
+   With an additional :ref:`RED Brick <red_brick>` external control 
+   by another computer is not necessary anymore. You can configure your own 
+   monitoring solution with the :ref:`Brick Viewer <brickv>` without any 
+   programming.
 
-   Simply by sliders the value range for each sensor can be defined. If the 
-   sensor value is outside this defined range, you can be notified by email. 
-   Rules can be defined for directly connected sensors but also for other 
-   Tinkerforge sensors available in the network. Internally the defined rules 
-   configure an internally running Nagios. Nagios webfrontend can be reached by 
-   the Ethernet connection of the RED Brick and displays current values and 
-   currrently existing problems. More information can be found 
-   :ref:`here <starter_kit_server_room_monitoring_red_brick>`.
+   The value range for each sensor can be defined with sliders. It is possible
+   to enable email notifications for monitoring values that are out of range.
+   Rules can be defined for sensors that are directly connected, but also for other 
+   Tinkerforge sensors available in the network. The defined rules 
+   configure an instance of Nagios that runs on the RED Brick. The Nagios 
+   webfrontend shows current monitoring values and currrently existing problems. 
+   More information can be found in the 
+   :ref:`RED Brick section <starter_kit_server_room_monitoring_red_brick>`  
+   of the Server Room Monitoring ducumentation.
+
+   Advanced users can easily modify the Nagios installation that runs on the
+   RED Brick to change configurations that go beyond the Brick Viewer
+   possbilities.
    
-The kit can be powered by 
+The kit can be powered through 
 `Power over Ethernet (PoE) <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__
 or USB.
 
 The soft- and hardware of the kit can be modified. The casing, 
 except of the powder coated aluminum front panel, consists of tinker-friendly 
-PMMA, you can drill new holes with simple wood drill. Mounting holes for 
+PMMA, you can drill new holes with a wood drill. Mounting holes for 
 different :ref:`Bricks <primer_bricks>` and 
 :ref:`Bricklets <primer_bricklets>` are provided, by default you can
 mount:
