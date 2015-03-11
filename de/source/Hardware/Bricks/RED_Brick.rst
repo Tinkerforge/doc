@@ -364,7 +364,8 @@ Serverüberwachung
    :alt: Screenshot des Settings Tabs: Server Monitoring Konfiguration.
    :align: center
 
-Die Serverüberwachungs-Funktion ist für die Zusammenarbeit mit dem
+Die Serverüberwachungs-Funktion (benötigt Image >= 1.6 und
+Brick Viewer >= 2.2.3) ist für die Zusammenarbeit mit dem
 :ref:`Starterkit: Serverraum-Überwachung <starter_kit_server_room_monitoring_red_brick>`
 entworfen worden. Für weitere Details siehe die Dokumentation des Kits.
 

@@ -353,7 +353,8 @@ Server Monitoring
    :alt: Screenshot of settings tab showing Server Monitoring configurations.
    :align: center
 
-The server monitoring functionallity is designed to be used with the
+The server monitoring functionallity (requires Image >= 1.6 and
+Brick Viewer >= 2.2.3) is designed to be used with the
 :ref:`Starter Kit: Server Room Monitoring <starter_kit_server_room_monitoring_red_brick>`.
 For further details see the kit documentation.
 

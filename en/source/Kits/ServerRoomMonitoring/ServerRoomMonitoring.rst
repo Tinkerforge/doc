@@ -247,9 +247,9 @@ Nagios can be configured directly through the Brick Viewer.
    :align: center
    :target: ../../_images/Screenshots/brickv_srm.jpg
 
-The Server Monitoring service is available in RED Brick image versions
->= 1.6. To enable it, go to the services tab and check the Server Monitoring
-checkbox.
+To enable the Server Monitoring service (requires RED Brick Image >= 1.6 and
+Brick Viewer >= 2.2.3) go to the :ref:`services tab
+<red_brick_brickv_settings_services>` and tick the Server Monitoring checkbox.
 
 If the Server Monitoring service is enabled, it is possible to add rules.
 A rule basically consists of a Bricklet-type (Temperature, Amibient Light,
