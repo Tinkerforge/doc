@@ -36,4 +36,4 @@ Gehäuses geschraubt werden.
    :align: center
    :target: ../../_images/Kits/weather_station_red_1200.jpg
 
-Jetzt nur noch die Vorderseite auf die Rückseite wieder zusammenschrauben.
+Jetzt nur noch die Vorderseite und Rückseite wieder zusammenschrauben.

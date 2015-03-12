@@ -34,4 +34,4 @@ of the case.
    :align: center
    :target: ../../_images/Kits/weather_station_red_1200.jpg
 
-We can now again mount the front of the case to the back.
+We can now mount the front of the case to the back again.
