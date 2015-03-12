@@ -197,7 +197,7 @@ and the Remote Switch Bricklet.
    :target: ../../_images/Kits/iot_construction_step1.png
 
 If you want to use the Ethernet Extension, you should attach it to the
-Master Brick with 9mm spacers (thread inside/outside).
+Master Brick with 12mm spacers (thread inside/outside).
 
 .. image:: /Images/Kits/iot_construction_ethernet_step1_350.jpg
    :scale: 100 %

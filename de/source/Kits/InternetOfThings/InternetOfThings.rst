@@ -206,7 +206,7 @@ und das Remote Switch Bricklet.
    :target: ../../_images/Kits/iot_construction_step1.png
 
 Wenn die Ethernet Extension verwendet werden soll, kann diese auf mit
-9mm Abstandshaltern (Gewinde innen/außen) auf den Master Brick geschraubt
+12mm Abstandshaltern (Gewinde innen/außen) auf den Master Brick geschraubt
 werden.
 
 .. image:: /Images/Kits/iot_construction_ethernet_step1_350.jpg
