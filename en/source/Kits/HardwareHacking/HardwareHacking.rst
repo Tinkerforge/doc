@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / Starter Kit: Hardware Hacking
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / Starter Kit: Hardware Hacking
 :shoplink: ../../../shop/kits/starter-kit-hardware-hacking.html
 
 .. include:: HardwareHacking.substitutions

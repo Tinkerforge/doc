@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit Visual Basic .NET fernsteuern
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit Visual Basic .NET fernsteuern
 
 .. |ref_set_monoflop| replace:: :vbnet:func:`SetMonoflop() <BrickletIndustrialQuadRelay.SetMonoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``

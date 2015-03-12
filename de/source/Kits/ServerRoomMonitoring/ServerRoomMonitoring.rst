@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#kits">Kits</a> / Starterkit: Serverraum-Überwachung
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / Starterkit: Serverraum-Überwachung
 :shoplink: ../../../shop/kits/starter-kit-server-room-monitoring.html
 
 .. include:: ServerRoomMonitoring.substitutions

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Smart Home Integration mit openHAB und RED Brick
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Smart Home Integration mit openHAB und RED Brick
 
 .. _starter_kit_weather_station_openhab_red_brick:
 

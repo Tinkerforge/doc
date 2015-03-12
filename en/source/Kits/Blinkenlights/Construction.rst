@@ -1,5 +1,5 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/Blinkenlights/Blinkenlights.html">Starter Kit: Blinkenlights</a> / Construction of Starter Kit: Blinkenlights
 
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/Blinkenlights/Blinkenlights.html">Starter Kit: Blinkenlights</a> / Construction of Starter Kit: Blinkenlights
 
 .. role:: led-pixel-red
 

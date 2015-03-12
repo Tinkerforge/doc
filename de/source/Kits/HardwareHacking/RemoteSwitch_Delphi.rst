@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit Delphi fernsteuern
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit Delphi fernsteuern
 
 .. |ref_set_monoflop| replace:: :delphi:func:`SetMonoflop <TBrickletIndustrialQuadRelay.SetMonoflop>`
 .. |bitmask_02| replace:: ``(1 shl 0) or (1 shl 2)``

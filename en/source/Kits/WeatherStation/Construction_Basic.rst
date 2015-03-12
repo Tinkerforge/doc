@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction: Basic Weather Station
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction: Basic Weather Station
 
 .. _starter_kit_weather_station_construction_basic:
 

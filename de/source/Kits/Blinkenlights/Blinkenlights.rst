@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#kits">Kits</a> / Starterkit: Blinkenlights
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starterkits">Starterkits</a> / Starterkit: Blinkenlights
 :shoplink: ../../../shop/kits/starter-kit-blinkenlights.html
 
 

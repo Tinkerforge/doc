@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#kits">Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit Java fernsteuern
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit Java fernsteuern
 
 .. |ref_set_monoflop| replace:: :java:func:`setMonoflop() <BrickletIndustrialQuadRelay::setMonoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
