@@ -30,11 +30,10 @@ Stapel an Rückseite
 Es muss nur der Stapel aus RED Brick und Master Brick auf die Rückseite des
 Gehäuses geschraubt werden.
 
-.. FIXME
-   .. image:: /Images/Kits/weather_station_construction_red_brick_stack_350.jpg
+.. image:: /Images/Kits/weather_station_red_350.jpg
    :scale: 100 %
    :alt: RED Brick Wetterstation Aufbau
    :align: center
-   :target: ../../_images/Kits/weather_station_construction_red_brick_stack_1200.jpg
+   :target: ../../_images/Kits/weather_station_red_1200.jpg
 
 Jetzt nur noch die Vorderseite auf die Rückseite wieder zusammenschrauben.

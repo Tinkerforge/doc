@@ -28,11 +28,10 @@ Stack on Backside
 Just mount the stack consisting of RED Brick and Master Brick to the back side
 of the case.
 
-.. FIXME
-   .. image:: /Images/Kits/weather_station_construction_red_brick_stack_350.jpg
+.. image:: /Images/Kits/weather_station_red_350.jpg
    :scale: 100 %
    :alt: RED Brick Weather Station construction
    :align: center
-   :target: ../../_images/Kits/weather_station_construction_red_brick_stack_1200.jpg
+   :target: ../../_images/Kits/weather_station_red_1200.jpg
 
 We can now again mount the front of the case to the back.
