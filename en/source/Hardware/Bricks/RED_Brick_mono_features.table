@@ -8,7 +8,7 @@ MySQL_Oracle_Connector 6.8.3         Oracle corporation driver for MySQL        
 OpenTK                 1.1.1631.6093 The Open Toolkit is an advanced, low-level C# library that wraps OpenGL, OpenCL and OpenAL  |c|
 SharpPcap              4.2.0         Packet capture framework based on the famous pcap/WinPcap libraries                         |c|
 XML-RPC.NET            2.5.0         Library for implementing XML-RPC services and clients                                       |c|
-gtk-sharp2             2.12.10-5     GTK# 2.10 suite, CLI bindings for GTK+                                                      |c|
+gtk-sharp2             2.12.10-5.1   GTK# 2.10 suite, CLI bindings for GTK+                                                      |c|
 iTextSharp             5.5.1         Library that provides support of PDF document manipulation                                  |c|
 libmono-2.0-1          3.2.8+dfsg-9  Mono JIT library (Default version)                                                          |c|
 libmono-cil-dev        3.2.8+dfsg-9  Mono Base Class Libraries (BCL) - Development files                                         |c|

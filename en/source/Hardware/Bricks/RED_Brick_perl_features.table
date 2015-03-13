@@ -22,7 +22,7 @@ libdbd-sqlite3-perl            1.44-1           Perl DBI driver with a self-cont
 libdigest-hmac-perl            1.03+dfsg-1      module for creating standard message integrity checks                |c|
 libgd-graph-perl               1.48-2           Graph Plotting Module for Perl 5                                     |c|
 libgd-graph3d-perl             0.63-9           Create 3D Graphs with GD and GD::Graph                               |c|
-libgtk2-perl                   2:1.2492-3       Perl interface to the 2.x series of the Gimp Toolkit library         |c|
+libgtk2-perl                   2:1.2492-4       Perl interface to the 2.x series of the Gimp Toolkit library         |c|
 libgtk3-perl                   0.018-1          Perl bindings for the GTK+ graphical user interface library          |c|
 libnet-pcap-perl               0.17-1+b2        Perl binding to the LBL pcap packet capture library                  |c|
 libopengl-perl                 0.6703+dfsg-1+b1 Perl interface providing graphics display using OpenGL               |c|
@@ -38,7 +38,7 @@ libterm-readline-gnu-perl      1.24-2+b1        Perl extension for the GNU ReadL
 libwww-curl-perl               4.17-1+b1        Perl bindings to libcurl                                             |c|
 libxml-simple-perl             2.20-1           Perl module for reading and writing XML                              |c|
 libyaml-perl                   1.13-1           YAML Ain't Markup Language                                           |c|
-perl                           5.20.1-5         Larry Wall's Practical Extraction and Report Language                |c|
-perl-doc                       5.20.1-5         Perl documentation                                                   |c|
+perl                           5.20.2-2         Larry Wall's Practical Extraction and Report Language                |c|
+perl-doc                       5.20.2-2         Perl documentation                                                   |c|
 pmtools                        2.0.0-1          Perl module tools                                                    |c|
 ============================== ================ ==================================================================== ====

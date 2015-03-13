@@ -3,15 +3,16 @@ Python
 ========================== =========================== ========================================================================= ====
 Name                       Version                     Description                                                               full
 ========================== =========================== ========================================================================= ====
-libpython2.7               2.7.8-11                    Shared Python runtime library (version 2.7)                               |c|
+libpython2.7               2.7.9-2                     Shared Python runtime library (version 2.7)                               |c|
 libpython3.4               3.4.2-1                     Shared Python runtime library (version 3.4)                               |c|
 pycrypto                   2.6.1                       Cryptographic modules for Python.                                         |c|
-python                     2.7.8-2                     interactive high-level object-oriented language (default version)         |c|
+pynag                      0.9.1                       Python modules for Nagios plugins and configuration                       |c|
+python                     2.7.8-4                     interactive high-level object-oriented language (default version)         |c|
 python-flask               0.10.1-2                    micro web framework based on Werkzeug, Jinja2 and good intentions         |c|
 python-gtk2                2.24.0-4                    Python bindings for the GTK+ widget set                                   |c|
 python-gtk2-dev            2.24.0-4                    GTK+ bindings: devel files                                                |c|
-python-matplotlib          1.3.1-2                     Python based plotting system in a style similar to Matlab                 |c|
-python-matplotlib-data     1.3.1-2                     Python based plotting system (data package)                               |c|
+python-matplotlib          1.4.2-3.1                   Python based plotting system in a style similar to Matlab                 |c|
+python-matplotlib-data     1.4.2-3.1                   Python based plotting system (data package)                               |c|
 python-msgpack             0.4.2-1                     Python implementation of MessagePack format                               |c|
 python-mysql.connector     1.2.3-2                     pure Python implementation of MySQL Client/Server protocol                |c|
 python-mysqldb             1.2.3-2.1                   Python interface to MySQL                                                 |c|
@@ -20,7 +21,7 @@ python-numpy               1:1.8.2-2                   Numerical Python adds a f
 python-opencv              2.4.9.1+dfsg-1+b1           Python bindings for the computer vision library                           |c|
 python-opengl              3.0.2-1                     Python bindings to OpenGL (Python 2)                                      |c|
 python-pcapy               0.10.8-1                    Python interface to the libpcap packet capture library                    |c|
-python-pip                 1.5.6-4                     alternative Python package installer                                      |c|
+python-pip                 1.5.6-5                     alternative Python package installer                                      |c|
 python-psutil              2.1.1-1+b1                  module providing convenience functions for managing processes             |c|
 python-pycurl              7.19.5-3                    Python bindings to libcurl                                                |c|
 python-pypdf               1:1.13-2                    PDF toolkit implemented solely in Python                                  |c|
@@ -40,11 +41,12 @@ python-sqlite              1.0.1-11                    Python interface to SQLit
 python-sqlitecachec        1.1.4-1                     Fast metadata parser for yum                                              |c|
 python3                    3.4.2-2                     interactive high-level object-oriented language (default python3 version) |c|
 python3-numpy              1:1.8.2-2                   Fast array facility to the Python 3 language                              |c|
-python3-pip                1.5.6-4                     alternative Python package installer - Python 3 version of the package    |c|
+python3-pip                1.5.6-5                     alternative Python package installer - Python 3 version of the package    |c|
 python3-pyqt4              4.11.2+dfsg-1               Python3 bindings for Qt4                                                  |c|
 python3-pyqt4.qtopengl     4.11.2+dfsg-1               Python 3 bindings for Qt4's OpenGL module                                 |c|
 python3-scipy              0.14.0-2                    scientific tools for Python 3                                             |c|
 python3-serial             2.6-1.1                     pyserial - module encapsulating access for the serial port                |c|
 python3-setuptools         5.5.1-1                     Python3 Distutils Enhancements                                            |c|
 python3-sip                4.16.4+dfsg-1               Python 3/C++ bindings generator runtime library                           |c|
+watchdog                   0.8.3                       Filesystem events monitoring                                              |c|
 ========================== =========================== ========================================================================= ====
