@@ -155,7 +155,6 @@ Processor                      Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, N
 Memory                         512MB DDR3 SDRAM, Micro-SD-Card as Flash
 Connectors                     USB-2.0-Host, Micro-HDMI (type D), Mini-USB, Stack connectors, GPIO FPC connector
 -----------------------------  ---------------------------------------------------------------------------------
-
 -----------------------------  ---------------------------------------------------------------------------------
 Dimensions (W x D x H)         40 x 40 x 16mm (1.57 x 1.57 x 0.63")
 Weight                         14g
@@ -381,6 +380,9 @@ directory depending on the file extension.
 After you changed the content of a config file you can click the *Apply Changes*
 button to save the changes or click the *Discard Changes* button to discard
 the changes. Config files with unsaved changes are marked as ``(modified)``.
+
+An openHAB configuration example can be found in the documentation of the
+:ref:`Starter Kit: Weather Station <starter_kit_weather_station_openhab>`.
 
 .. _red_brick_brickv_settings_brickd:
 

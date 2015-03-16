@@ -159,7 +159,6 @@ Prozessor                         Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU
 Speicher                          512MB DDR3 SDRAM, Micro-SD-Karte als Flash Speicher
 Anschlüsse                        USB-2.0-Host, Micro-HDMI (Typ D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
 --------------------------------  --------------------------------------------------------------------------------------
-
 --------------------------------  --------------------------------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
 Gewicht                           14g
@@ -393,6 +392,10 @@ Nachdem Änderungen einer Konfigurationsdatei vorgenommen wurden können diese
 über den *Apply Changes* Knopf gespeichert oder über den *Discard Changes*
 Knopf verworfen werden. Dateien mit ungespeicherten Änderungen werden als
 ``(modified)`` angezeigt.
+
+Ein openHAB Konfigurationsbeispiel ist in der Dokumentation des
+:ref:`Starterkits: Wetterstation <starter_kit_weather_station_openhab>`
+beschrieben.
 
 .. _red_brick_brickv_settings_brickd:
 
