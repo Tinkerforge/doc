@@ -11,6 +11,10 @@ Für diese Projekt setzen wir voraus, dass eine aufgebaut
 vorhanden ist, dass der RED Brick mit mindesten Image Version 1.6 läuft und dass
 mindestens Brick Viewer 2.2.3 installiert ist.
 
+Die in diesem Projekt verwendete openHAB Konfiguration basiert auf einem
+Beispiel von einem der openHAB Entwickler. Das originale Beispiel ist auf
+`GitHub <https://github.com/theoweiss/tinkerforge-RED-Brick>`__ abrufbar.
+
 Ziele
 -----
 

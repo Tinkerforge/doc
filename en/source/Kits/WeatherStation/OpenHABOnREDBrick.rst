@@ -11,6 +11,10 @@ For this project we are assuming, that you have build a
 that your RED Brick is using at least Image version 1.6 and that you have
 at least Brick Viewer 2.2.3 installed.
 
+The openHAB configuration used in this project is based on an example created
+by an openHAB developer. The original example is available on
+`GitHub <https://github.com/theoweiss/tinkerforge-RED-Brick>`__.
+
 Goals
 -----
 
