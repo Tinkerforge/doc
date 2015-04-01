@@ -16,7 +16,8 @@ bricks = [('DC',      'dc'),
           ('Stepper', 'stepper')]
 
              # display,                    uri
-bricklets = [('Accelerometer',             'accelerometer'),
+bricklets = [('AC Current',                'ac_current'),
+             ('Accelerometer',             'accelerometer'),
              ('Ambient Light',             'ambient_light'),
              ('Analog In',                 'analog_in'),
              ('Analog In 2.0',             'analog_in_v2'),
@@ -36,6 +37,7 @@ bricklets = [('Accelerometer',             'accelerometer'),
              ('Hall Effect',               'hall_effect'),
              ('Heart Rate',                'heart_rate'),
              ('Humidity',                  'humidity'),
+             ('Industrial Analog Out',     'industrial_analog_out'),
              ('Industrial Digital In 4',   'industrial_digital_in_4'),
              ('Industrial Digital Out 4',  'industrial_digital_out_4'),
              ('Industrial Dual 0-20mA',    'industrial_dual_0_20ma'),

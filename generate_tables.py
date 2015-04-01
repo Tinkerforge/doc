@@ -188,6 +188,10 @@ bricks = [Brick('DC',      'dc',      bindings, True),
 
 
 bricklet_descriptions = {
+'ac_current': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'accelerometer': {
     'en': 'FIXME',
     'de': 'FIXME'
@@ -267,6 +271,10 @@ bricklet_descriptions = {
 'humidity': {
     'en': 'Measures relative humidity',
     'de': 'Misst relative Luftfeuchtigkeit'
+    },
+'industrial_analog_out': {
+    'en': 'FIXME',
+    'de': 'FIXME'
     },
 'industrial_digital_in_4': {
     'en': '4 galvanically isolated digital inputs',
@@ -414,7 +422,8 @@ class Bricklet(Product):
     def description(self):
         return bricklet_descriptions[self.url_part][lang]
 
-bricklets = [Bricklet('Accelerometer',             'accelerometer',             bindings, False),
+bricklets = [Bricklet('AC Current',                'ac_current',                bindings, False),
+             Bricklet('Accelerometer',             'accelerometer',             bindings, False),
              Bricklet('Ambient Light',             'ambient_light',             bindings, True),
              Bricklet('Analog In',                 'analog_in',                 bindings, True),
              Bricklet('Analog In 2.0',             'analog_in_v2',              bindings, False),
@@ -434,6 +443,7 @@ bricklets = [Bricklet('Accelerometer',             'accelerometer',             
              Bricklet('Hall Effect',               'hall_effect',               bindings, True),
              Bricklet('Heart Rate',                'heart_rate',                bindings, False),
              Bricklet('Humidity',                  'humidity',                  bindings, True),
+             Bricklet('Industrial Analog Out',     'industrial_analog_out',     bindings, False),
              Bricklet('Industrial Digital In 4',   'industrial_digital_in_4',   bindings, True),
              Bricklet('Industrial Digital Out 4',  'industrial_digital_out_4',  bindings, True),
              Bricklet('Industrial Dual 0-20mA',    'industrial_dual_0_20ma',    bindings, True),
