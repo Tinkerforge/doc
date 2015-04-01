@@ -1070,6 +1070,9 @@ ausgestattet. Mit ihr können USB Geräte mit bis zu 7,5W (5V/1,5A) betrieben
 werden. Ein Kurzschluss-Schutz schützt den RED Brick und das angeschlossene
 Gerät. Typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
 Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens werden unterstützt.
+Im Wiki findet sich eine wachsende `Liste von USB Geräten
+<http://www.tinkerunity.org/wiki/index.php/DE/RED_USB>`__ die von Nutzern
+erfolgreich am RED Brick getestet wurden.
 
 Manche Ethernet oder WLAN Sticks können direkt über den Brick Viewer
 konfiguriert werden.

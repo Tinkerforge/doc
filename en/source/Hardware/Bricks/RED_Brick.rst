@@ -1040,8 +1040,11 @@ USB 2.0 Host
 The RED Brick is equipped with a standard
 `USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mb/s) type A jack. It can
 power other USB devices with up to 7.5W (5V/1.5A) and is short circuit
-protected. Typical USB devices like WIFI or Ethernet dongles, webcams, printers,
-keyboards, mouses or USB touch screens are supported.
+protected. Typical USB devices such as WIFI or Ethernet dongles, webcams,
+printers, keyboards, mouses or USB touch screens are supported.
+The wiki has a growing `list of USB devices
+<http://www.tinkerunity.org/wiki/index.php/EN/RED_USB>`__ that users have
+successfully tested with a RED Brick.
 
 Some Ethernet or WIFI dongles can be directly configured with the Brick Viewer.
 `Supported dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
