@@ -200,6 +200,10 @@ bricklet_descriptions = {
     'en': 'Measures ambient light up to 900lux',
     'de': 'Misst Umgebungslicht bis zu 900Lux'
     },
+'ambient_light_v2': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'analog_in': {
     'en': 'Measures voltages up to 45V (DC)',
     'de': 'Misst elektrische Spannungen bis zu 45V (DC)'
@@ -425,6 +429,7 @@ class Bricklet(Product):
 bricklets = [Bricklet('AC Current',                'ac_current',                bindings, False),
              Bricklet('Accelerometer',             'accelerometer',             bindings, False),
              Bricklet('Ambient Light',             'ambient_light',             bindings, True),
+             Bricklet('Ambient Light 2.0',         'ambient_light_v2',          bindings, False),
              Bricklet('Analog In',                 'analog_in',                 bindings, True),
              Bricklet('Analog In 2.0',             'analog_in_v2',              bindings, False),
              Bricklet('Analog Out',                'analog_out',                bindings, True),
