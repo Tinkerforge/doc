@@ -152,6 +152,10 @@ brick_descriptions = {
     'en': 'Full fledged AHRS with 9 degrees of freedom',
     'de': 'Voll ausgestattetes AHRS mit 9 Freiheitsgraden'
     },
+'imu_v2': {
+    'en': 'FIXME',
+    'de': 'FIXME'
+    },
 'master': {
     'en': 'Is the basis to build stacks and has 4 Bricklet Ports',
     'de': 'Ist Grundlage um Stapel zu bauen und bietet 4 Bricklet Anschlüsse'
@@ -181,6 +185,7 @@ class Brick(Product):
 bricks = [Brick('DC',      'dc',      bindings, True),
           Brick('Debug',   'debug',   [],       True),
           Brick('IMU',     'imu',     bindings, True),
+          Brick('IMU 2.0', 'imu_v2',  bindings, False),
           Brick('Master',  'master',  bindings, True),
           Brick('RED',     'red',     bindings, True, has_firmware=False),
           Brick('Servo',   'servo',   bindings, True),

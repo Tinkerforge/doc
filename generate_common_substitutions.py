@@ -10,6 +10,7 @@ lang = 'en'
 bricks = [('DC',      'dc'),
           ('Debug',   'debug'),
           ('IMU',     'imu'),
+          ('IMU 2.0', 'imu_v2'),
           ('Master',  'master'),
           ('RED',     'red'),
           ('Servo',   'servo'),
