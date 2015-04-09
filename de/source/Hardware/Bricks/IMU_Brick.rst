@@ -288,7 +288,7 @@ bei +90° und -90° für jede der Achsen auftreten. Die Grundposition ist (0,0,0
             # Use conjugate of quaternion to rotate coordinates according to base system
             x, y, z, w = self.make_relative_coordinates(-x, -y, -z, w)
 
-            x_angle = int(math.atan2(2.0*(y*z - w*x), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
+            x_angle = int(math.atan2( 2.0*(y*z - w*x), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
             y_angle = int(math.atan2(-2.0*(x*z + w*y), 1.0 - 2.0*(x*x + y*y))*180/math.pi)
             z_angle = int(math.atan2(-2.0*(x*y + w*z), 1.0 - 2.0*(x*x + z*z))*180/math.pi)
 
