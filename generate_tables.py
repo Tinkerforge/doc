@@ -517,10 +517,10 @@ class Extension(Product):
     def description(self):
         return extension_descriptions[self.url_part][lang]
 
-extensions = [Extension('Chibi Extension',    'chibi',    True),
-              Extension('Ethernet Extension', 'ethernet', True),
-              Extension('RS485 Extension',    'rs485',    True),
-              Extension('WIFI Extension',     'wifi',     True)]
+extensions = [Extension('Chibi',    'chibi',    True),
+              Extension('Ethernet', 'ethernet', True),
+              Extension('RS485',    'rs485',    True),
+              Extension('WIFI',     'wifi',     True)]
 
 
 power_supply_descriptions = {
@@ -538,7 +538,7 @@ class PowerSupply(Product):
     def description(self):
         return power_supply_descriptions[self.url_part][lang]
 
-power_supplies = [PowerSupply('Step-Down Power Supply', 'step_down', True)]
+power_supplies = [PowerSupply('Step-Down', 'step_down', True)]
 
 
 accessory_descriptions = {
@@ -740,7 +740,7 @@ source_code_gits_table_head = {
 {2}
  | |
  **Power Supplies** | |
- Step-Down Power Supply | `step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Report Bug <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
+ Step-Down | `step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Report Bug <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
  | |
  **Accessories** | |
  DC Jack Adapter | `dc-adapter.git <https://github.com/Tinkerforge/dc-adapter/>`__ | `Report Bug <https://github.com/Tinkerforge/dc-adapter/issues>`__
@@ -770,7 +770,7 @@ source_code_gits_table_head = {
 {2}
  | |
  **Stromversorgungen** | |
- Step-Down Power Supply | `step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Problem melden <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
+ Step-Down | `step-down-powersupply.git <https://github.com/Tinkerforge/step-down-powersupply/>`__ | `Problem melden <https://github.com/Tinkerforge/step-down-powersupply/issues>`__
  | |
  **Zubehör** | |
  DC Jack Adapter | `dc-adapter.git <https://github.com/Tinkerforge/dc-adapter/>`__ | `Problem melden <https://github.com/Tinkerforge/dc-adapter/issues>`__
