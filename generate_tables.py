@@ -1353,22 +1353,22 @@ device_identifier_table_head = {
 'en':
 """
 .. csv-table::
-   :header: "Device Identifier", "Device Name"
+   :header: "Device Identifier", "Device"
    :widths: 30, 100
 
 """,
 'de':
 """
 .. csv-table::
-   :header: "Device Identifier", "Device Name"
+   :header: "Device Identifier", "Device"
    :widths: 30, 100
 
 """
 }
 
 device_identifier_row = {
-'en': '   "{0}", "{1}"',
-'de': '   "{0}", "{1}"'
+'en': '   "{0}", ":ref:`{1} <{2}>`"',
+'de': '   "{0}", ":ref:`{1} <{2}>`"'
 }
 
 def make_device_identifier_table():
@@ -1377,7 +1377,7 @@ def make_device_identifier_table():
     rows = []
 
     for device_identifier in device_identifiers:
-        rows.append(row.format(device_identifier[0], device_identifier[1]))
+        rows.append(row.format(device_identifier[0], device_identifier[1], device_identifier[2]))
 
     return table_head + '\n'.join(rows) + '\n'
 
