@@ -81,15 +81,10 @@ binding_tutorials = {
 class Binding:
     def __init__(self, display_name, url_part, url_part_for_doc, is_programming_language, is_published):
         self.display_name = display_name
-        self.short_display_name = display_name
         self.url_part = url_part
         self.url_part_for_doc = url_part_for_doc
         self.is_programming_language = is_programming_language
         self.is_published = is_published
-
-        # FIXME: remove short_display_name once index table got refactored to other format
-        if display_name == 'Visual Basic .NET':
-            self.short_display_name = 'VB.NET'
 
     @property
     def tutorial(self):
@@ -1011,55 +1006,6 @@ def make_source_code_gits_table():
 
     return table_head.format('\n'.join(brick_rows), '\n'.join(bricklet_rows), '\n'.join(extension_rows)) + '\n'
 
-def make_index_table_block(devices, category, add_category_to_name=True):
-    if add_category_to_name:
-        row_head = ' :ref:`{0} <{1}_' + category + '>` | '
-        row_cell = ' :ref:`{0} <{1}_' + category + '_{2}>`'
-    else:
-        row_head = ' :ref:`{0} <{1}>` | '
-        row_cell = ' :ref:`{0} <{1}_{2}>`'
-
-    rows = []
-
-    for device in devices:
-        if not device.is_published:
-            continue
-
-        cells = []
-
-        for binding in device.bindings:
-            if binding.is_published:
-                cells.append(row_cell.format(binding.short_display_name, device.url_part, binding.url_part))
-
-        row = row_head.format(device.display_name, device.url_part) + ', '.join(cells)
-        rows.append(row)
-
-    return '\n'.join(rows)
-
-def make_index_table():
-    ipcon_head = ' :ref:`IP Connection <api_bindings_ip_connection>` | '
-    ipcon_cell = ':ref:`{0} <ipcon_{1}>`'
-    ipcon_cell_llproto = ':ref:`{0} <llproto_{1}>`'
-    ipcon_cells = []
-
-    for binding in bindings:
-        if not binding.is_published:
-            continue
-
-        if binding.is_programming_language:
-            ipcon_cells.append(ipcon_cell.format(binding.short_display_name, binding.url_part))
-        else:
-            ipcon_cells.append(ipcon_cell_llproto.format(binding.short_display_name, binding.url_part))
-
-    return index_table_head[lang].format(ipcon_head + ', '.join(ipcon_cells),
-                                         make_index_table_block(bricks, 'brick'),
-                                         make_index_table_block(bricklets, 'bricklet'),
-                                         make_index_table_block(extensions, 'extension'),
-                                         make_index_table_block(power_supplies, 'power_supply'),
-                                         make_index_table_block(accessories, 'accessory', False))
-
-
-
 def make_index_hardware_device(devices, category_url, use_category_content=True, use_category_in_name=True):
     hardware_li = """<li><a class="reference internal" href="Hardware/{1}s/{2}{3}.html">{0}</a></li>"""
     lis = []
@@ -1088,7 +1034,6 @@ def make_index_hardware_device(devices, category_url, use_category_content=True,
             ret += '\n<ul>' +'\n'.join(li_part) + '</ul>\n'
 
     return ret
-
 
 def make_index_hardware():
     index_html = {'en': """
@@ -1121,7 +1066,6 @@ def make_index_hardware():
                                    make_index_hardware_device(extensions, 'Master_Extension', False, False),
                                    make_index_hardware_device(power_supplies, 'Power_Supplie', False, False),
                                    make_index_hardware_device(accessories, 'Accessorie', False, False))
-
 
 def make_index_api_device(devices, category_url, language, use_category_content=True, use_category_in_name=True):
     software_li = """<li><a class="reference internal" href="Software/{1}s/{2}{3}_{4}.html">{0}</a></li>"""
@@ -1438,9 +1382,6 @@ def generate(path):
 
     print('Generating index_api.html')
     write_if_changed(os.path.join(path, 'source', 'index_api.html'), make_index_api())
-
-    print('Generating index_links.table')
-    write_if_changed(os.path.join(path, 'source', 'index_links.table'), make_index_table())
 
     print('Generating Primer_bricks.table')
     write_if_changed(os.path.join(path, 'source', 'Primer_bricks.table'), make_primer_table(bricks, 'brick'))
