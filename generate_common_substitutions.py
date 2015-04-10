@@ -6,74 +6,74 @@ import sys
 
 lang = 'en'
 
-          # display,   uri
-bricks = [('DC',      'dc'),
-          ('Debug',   'debug'),
-          ('IMU',     'imu'),
-          ('IMU 2.0', 'imu_v2'),
-          ('Master',  'master'),
-          ('RED',     'red'),
-          ('Servo',   'servo'),
-          ('Stepper', 'stepper')]
+          # display,        uri
+bricks = [('DC Brick',      'dc'),
+          ('Debug Brick',   'debug'),
+          ('IMU Brick',     'imu'),
+          ('IMU Brick 2.0', 'imu_v2'),
+          ('Master Brick',  'master'),
+          ('RED Brick',     'red'),
+          ('Servo Brick',   'servo'),
+          ('Stepper Brick', 'stepper')]
 
-             # display,                    uri
-bricklets = [('AC Current',                'ac_current'),
-             ('Accelerometer',             'accelerometer'),
-             ('Ambient Light',             'ambient_light'),
-             ('Ambient Light 2.0',         'ambient_light_v2'),
-             ('Analog In',                 'analog_in'),
-             ('Analog In 2.0',             'analog_in_v2'),
-             ('Analog Out',                'analog_out'),
-             ('Analog Out 2.0',            'analog_in_v2'),
-             ('Barometer',                 'barometer'),
-             ('Breakout',                  'breakout'),
-             ('Color',                     'color'),
-             ('Current12',                 'current12'),
-             ('Current25',                 'current25'),
-             ('Distance IR',               'distance_ir'),
-             ('Distance US',               'distance_us'),
-             ('Dual Button',               'dual_button'),
-             ('Dual Relay',                'dual_relay'),
-             ('Gas Detector',              'gas_detector'),
-             ('GPS',                       'gps'),
-             ('Hall Effect',               'hall_effect'),
-             ('Heart Rate',                'heart_rate'),
-             ('Humidity',                  'humidity'),
-             ('Industrial Analog Out',     'industrial_analog_out'),
-             ('Industrial Digital In 4',   'industrial_digital_in_4'),
-             ('Industrial Digital Out 4',  'industrial_digital_out_4'),
-             ('Industrial Dual 0-20mA',    'industrial_dual_0_20ma'),
-             ('Industrial Dual Analog In', 'industrial_dual_analog_in'),
-             ('Industrial Quad Relay',     'industrial_quad_relay'),
-             ('IO-16',                     'io16'),
-             ('IO-4',                      'io4'),
-             ('Joystick',                  'joystick'),
-             ('Laser Range Finder',        'laser_range_finder'),
-             ('LCD 16x2',                  'lcd_16x2'),
-             ('LCD 20x4',                  'lcd_20x4'),
-             ('LED Strip',                 'led_strip'),
-             ('Line',                      'line'),
-             ('Linear Poti',               'linear_poti'),
-             ('Load Cell',                 'load_cell'),
-             ('Moisture',                  'moisture'),
-             ('Motion Detector',           'motion_detector'),
-             ('Multi Touch',               'multi_touch'),
-             ('NFC/RFID',                  'nfc_rfid'),
-             ('Piezo Buzzer',              'piezo_buzzer'),
-             ('Piezo Speaker',             'piezo_speaker'),
-             ('PTC',                       'ptc'),
-             ('Remote Switch',             'remote_switch'),
-             ('Rotary Encoder',            'rotary_encoder'),
-             ('Rotary Poti',               'rotary_poti'),
-             ('RS232',                     'rs232'),
-             ('Segment Display 4x7',       'segment_display_4x7'),
-             ('Solid State Relay',         'solid_state_relay'),
-             ('Sound Intensity',           'sound_intensity'),
-             ('Temperature',               'temperature'),
-             ('Temperature IR',            'temperature_ir'),
-             ('Tilt',                      'tilt'),
-             ('Voltage',                   'voltage'),
-             ('Voltage/Current',           'voltage_current'),
+             # display,                             uri
+bricklets = [('AC Current Bricklet',                'ac_current'),
+             ('Accelerometer Bricklet',             'accelerometer'),
+             ('Ambient Light Bricklet',             'ambient_light'),
+             ('Ambient Light Bricklet 2.0',         'ambient_light_v2'),
+             ('Analog In Bricklet',                 'analog_in'),
+             ('Analog In Bricklet 2.0',             'analog_in_v2'),
+             ('Analog Out Bricklet',                'analog_out'),
+             ('Analog Out Bricklet 2.0',            'analog_in_v2'),
+             ('Barometer Bricklet',                 'barometer'),
+             ('Breakout Bricklet',                  'breakout'),
+             ('Color Bricklet',                     'color'),
+             ('Current12 Bricklet',                 'current12'),
+             ('Current25 Bricklet',                 'current25'),
+             ('Distance IR Bricklet',               'distance_ir'),
+             ('Distance US Bricklet',               'distance_us'),
+             ('Dual Button Bricklet',               'dual_button'),
+             ('Dual Relay Bricklet',                'dual_relay'),
+             ('Gas Detector Bricklet',              'gas_detector'),
+             ('GPS Bricklet',                       'gps'),
+             ('Hall Effect Bricklet',               'hall_effect'),
+             ('Heart Rate Bricklet',                'heart_rate'),
+             ('Humidity Bricklet',                  'humidity'),
+             ('Industrial Analog Out Bricklet',     'industrial_analog_out'),
+             ('Industrial Digital In 4 Bricklet',   'industrial_digital_in_4'),
+             ('Industrial Digital Out 4 Bricklet',  'industrial_digital_out_4'),
+             ('Industrial Dual 0-20mA Bricklet',    'industrial_dual_0_20ma'),
+             ('Industrial Dual Analog In Bricklet', 'industrial_dual_analog_in'),
+             ('Industrial Quad Relay Bricklet',     'industrial_quad_relay'),
+             ('IO-16 Bricklet',                     'io16'),
+             ('IO-4 Bricklet',                      'io4'),
+             ('Joystick Bricklet',                  'joystick'),
+             ('Laser Range Finder Bricklet',        'laser_range_finder'),
+             ('LCD 16x2 Bricklet',                  'lcd_16x2'),
+             ('LCD 20x4 Bricklet',                  'lcd_20x4'),
+             ('LED Strip Bricklet',                 'led_strip'),
+             ('Line Bricklet',                      'line'),
+             ('Linear Poti Bricklet',               'linear_poti'),
+             ('Load Cell Bricklet',                 'load_cell'),
+             ('Moisture Bricklet',                  'moisture'),
+             ('Motion Detector Bricklet',           'motion_detector'),
+             ('Multi Touch Bricklet',               'multi_touch'),
+             ('NFC/RFID Bricklet',                  'nfc_rfid'),
+             ('Piezo Buzzer Bricklet',              'piezo_buzzer'),
+             ('Piezo Speaker Bricklet',             'piezo_speaker'),
+             ('PTC Bricklet',                       'ptc'),
+             ('Remote Switch Bricklet',             'remote_switch'),
+             ('Rotary Encoder Bricklet',            'rotary_encoder'),
+             ('Rotary Poti Bricklet',               'rotary_poti'),
+             ('RS232 Bricklet',                     'rs232'),
+             ('Segment Display 4x7 Bricklet',       'segment_display_4x7'),
+             ('Solid State Relay Bricklet',         'solid_state_relay'),
+             ('Sound Intensity Bricklet',           'sound_intensity'),
+             ('Temperature Bricklet',               'temperature'),
+             ('Temperature IR Bricklet',            'temperature_ir'),
+             ('Tilt Bricklet',                      'tilt'),
+             ('Voltage Bricklet',                   'voltage'),
+             ('Voltage/Current Bricklet',           'voltage_current'),
             ]
 
 ipcon_common = {
@@ -109,7 +109,7 @@ allgemeine Beschreibung.
 brick_test_intro = {
 'en':
 """.. |test_intro| replace::
- To test a {0} Brick you need to have :ref:`Brick Daemon <brickd>` and
+ To test a {0} you need to have :ref:`Brick Daemon <brickd>` and
  :ref:`Brick Viewer <brickv>` installed. Brick Daemon acts as a proxy between
  the USB interface of the Bricks and the API bindings. Brick Viewer connects
  to Brick Daemon. It helps to figure out basic information about the connected
@@ -117,7 +117,7 @@ brick_test_intro = {
 """,
 'de':
 """.. |test_intro| replace::
- Um einen {0} Brick testen zu können müssen zuerst :ref:`Brick Daemon
+ Um einen {0} testen zu können müssen zuerst :ref:`Brick Daemon
  <brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
  arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
  Bindings. Brick Viewer kann sich mit Brick Daemon verbinden, gibt
@@ -130,12 +130,12 @@ brick_test_tab = {
 'en':
 """.. |test_tab| replace::
  Now connect the Brick to the PC over USB, you should see a new tab named
- "{0} Brick" in the Brick Viewer after a moment. Select this tab.
+ "{0}" in the Brick Viewer after a moment. Select this tab.
 """,
 'de':
 """.. |test_tab| replace::
  Wenn der Brick per USB an den PC angeschlossen wird sollte einen Moment später
- im Brick Viewer ein neuer Tab namens "{0} Brick" auftauchen. Wähle diesen Tab
+ im Brick Viewer ein neuer Tab namens "{0}" auftauchen. Wähle diesen Tab
  aus.
 """
 }
@@ -144,15 +144,15 @@ brick_test_pi_ref = {
 'en':
 """.. |test_pi_ref| replace::
  After this test you can go on with writing your own application.
- See the :ref:`Programming Interface <{0}_brick_programming_interface>`
- section for the API of the {1} Brick and examples in different programming
+ See the :ref:`Programming Interface <{1}_brick_programming_interface>`
+ section for the API of the {0} and examples in different programming
  languages.
 """,
 'de':
 """.. |test_pi_ref| replace::
  Nun kann ein eigenes Programm geschrieben werden. Der Abschnitt
- :ref:`Programmierschnittstelle <{0}_brick_programming_interface>` listet die
- API des {1} Bricks und Beispiele in verschiedenen Programmiersprachen auf.
+ :ref:`Programmierschnittstelle <{1}_brick_programming_interface>` listet die
+ API des {0} und Beispiele in verschiedenen Programmiersprachen auf.
 """
 }
 
@@ -168,7 +168,7 @@ The assembly is easiest if you follow the following steps:
 * plug side plates into bottom plate and
 * screw top plate to top spacers.
 
-Below you can see an exploded assembly drawing of the {0} Bricklet case:
+Below you can see an exploded assembly drawing of the {0} case:
 <<<bricklet_case_steps
 """,
 'de':
@@ -182,7 +182,7 @@ Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 * stecke zusammengebaute Seitenteile in Unterteil und
 * schraube Oberteil auf obere Abstandshalter.
 
-Im folgenden befindet sich eine Explosionszeichnung des {0} Bricklet-Gehäuse:
+Im Folgenden befindet sich eine Explosionszeichnung des {0} Gehäuses:
 <<<bricklet_case_steps
 """
 }
@@ -203,7 +203,7 @@ bricklet_case_hint = {
 bricklet_test_intro = {
 'en':
 """.. |test_intro| replace::
- To test a {0} Bricklet you need to have :ref:`Brick Daemon <brickd>` and
+ To test a {0} you need to have :ref:`Brick Daemon <brickd>` and
  :ref:`Brick Viewer <brickv>` installed. Brick Daemon acts as a proxy between
  the USB interface of the Bricks and the API bindings. Brick Viewer connects
  to Brick Daemon. It helps to figure out basic information about the connected
@@ -211,7 +211,7 @@ bricklet_test_intro = {
 """,
 'de':
 """.. |test_intro| replace::
- Um ein {0} Bricklet testen zu können müssen zuerst :ref:`Brick Daemon
+ Um ein {0} testen zu können müssen zuerst :ref:`Brick Daemon
  <brickd>` und :ref:`Brick Viewer <brickv>` installiert werden. Brick Daemon
  arbeitet als Proxy zwischen der USB Schnittstelle der Bricks und den API
  Bindings. Brick Viewer kann sich mit Brick Daemon verbinden, gibt
@@ -223,12 +223,12 @@ bricklet_test_intro = {
 bricklet_test_connect = {
 'en':
 """.. |test_connect| replace::
- Connect the {0} Bricklet to a :ref:`Brick <primer_bricks>`
+ Connect the {0} to a :ref:`Brick <primer_bricks>`
  with a Bricklet Cable
 """,
 'de':
 """.. |test_connect| replace::
- Als nächstes muss das {0} Bricklet mittels eines Bricklet Kabels mit
+ Als nächstes muss das {0} mittels eines Bricklet Kabels mit
  einem :ref:`Brick <primer_bricks>` verbunden werden
 """
 }
@@ -237,12 +237,12 @@ bricklet_test_tab = {
 'en':
 """.. |test_tab| replace::
  If you connect the Brick to the PC over USB, you should see a new tab named
- "{0} Bricklet" in the Brick Viewer after a moment. Select this tab.
+ "{0}" in the Brick Viewer after a moment. Select this tab.
 """,
 'de':
 """.. |test_tab| replace::
  Wenn der Brick per USB an den PC angeschlossen wird sollte einen Moment später
- im Brick Viewer ein neuer Tab namens "{0} Bricklet" auftauchen.
+ im Brick Viewer ein neuer Tab namens "{0}" auftauchen.
  Wähle diesen Tab aus.
 """
 }
@@ -251,15 +251,15 @@ bricklet_test_pi_ref = {
 'en':
 """.. |test_pi_ref| replace::
  After this test you can go on with writing your own application.
- See the :ref:`Programming Interface <{0}_bricklet_programming_interface>`
- section for the API of the {1} Bricklet and examples in different programming
+ See the :ref:`Programming Interface <{1}_bricklet_programming_interface>`
+ section for the API of the {0} and examples in different programming
  languages.
 """,
 'de':
 """.. |test_pi_ref| replace::
  Nun kann ein eigenes Programm geschrieben werden. Der Abschnitt
- :ref:`Programmierschnittstelle <{0}_bricklet_programming_interface>` listet
- die API des {1} Bricklets und Beispiele in verschiedenen
+ :ref:`Programmierschnittstelle <{1}_bricklet_programming_interface>` listet
+ die API des {0} und Beispiele in verschiedenen
  Programmiersprachen auf.
 """
 }
@@ -274,7 +274,7 @@ def make_brick_substitutions(brick):
     substitutions = ''
     substitutions += brick_test_intro[lang].format(brick[0]) + '\n'
     substitutions += brick_test_tab[lang].format(brick[0]) + '\n'
-    substitutions += brick_test_pi_ref[lang].format(brick[1], brick[0])
+    substitutions += brick_test_pi_ref[lang].format(brick[0], brick[1])
 
     return substitutions
 
@@ -284,7 +284,7 @@ def make_bricklet_substitutions(bricklet):
     substitutions += bricklet_test_intro[lang].format(bricklet[0]) + '\n'
     substitutions += bricklet_test_connect[lang].format(bricklet[0]) + '\n'
     substitutions += bricklet_test_tab[lang].format(bricklet[0]) + '\n'
-    substitutions += bricklet_test_pi_ref[lang].format(bricklet[1], bricklet[0]) + '\n'
+    substitutions += bricklet_test_pi_ref[lang].format(bricklet[0], bricklet[1]) + '\n'
     substitutions += bricklet_case_hint[lang] + '\n'
     substitutions += '<<<substitutions\n'
     substitutions += bricklet_case_steps[lang].format(bricklet[0]) + '\n'
@@ -317,13 +317,13 @@ def generate(path):
     write_if_changed(os.path.join(path, 'source', 'Software', 'IPConnection_Common.substitutions'), make_ipcon_substitutions())
 
     for brick in bricks:
-        name = brick[0].replace(' ', '_').replace('-', '').replace('/', '_').replace('2.0', 'V2')
+        name = ' '.join([a for a in brick[0].split(' ') if a != 'Brick']).replace(' ', '_').replace('-', '').replace('/', '_').replace('2.0', 'V2')
 
         print 'Generating {0}_Brick.substitutions (Hardware)'.format(name)
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick.substitutions'), make_brick_substitutions(brick))
 
     for bricklet in bricklets:
-        name = bricklet[0].replace(' ', '_').replace('-', '').replace('/', '_').replace('2.0', 'V2')
+        name = ' '.join([a for a in bricklet[0].split(' ') if a != 'Bricklet']).replace(' ', '_').replace('-', '').replace('/', '_').replace('2.0', 'V2')
 
         print 'Generating {0}.substitutions (Hardware)'.format(name)
         write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '.substitutions'), make_bricklet_substitutions(bricklet))

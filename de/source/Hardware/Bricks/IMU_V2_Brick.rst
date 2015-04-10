@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / IMU 2.0 Brick
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / IMU Brick 2.0
 :FIXME_shoplink: ../../../shop/bricks/imu-v2-brick.html
 
 .. include:: IMU_V2_Brick.substitutions
@@ -7,7 +7,7 @@
 
 .. _imu_v2_brick:
 
-IMU 2.0 Brick
+IMU Brick 2.0
 =============
 
 .. note::

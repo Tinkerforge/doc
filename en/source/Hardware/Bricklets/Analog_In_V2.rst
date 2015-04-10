@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Analog In 2.0 Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Analog In Bricklet 2.0
 :FIXME_shoplink: ../../../shop/bricklets/analog-in-v2-bricklet.html
 
 .. include:: Analog_In_V2.substitutions
@@ -8,7 +8,7 @@
 
 .. _analog_in_v2_bricklet:
 
-Analog In 2.0 Bricklet
+Analog In Bricklet 2.0
 ======================
 
 .. note::
@@ -35,7 +35,7 @@ Resources
 
 .. _analog_in_v2_bricklet_test:
 
-Test your Analog In 2.0 Bricklet
+Test your Analog In Bricklet 2.0
 --------------------------------
 
 

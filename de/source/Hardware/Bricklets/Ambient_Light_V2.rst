@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Ambient Light 2.0 Bricklet
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Ambient Light Bricklet 2.0
 :FIXME_shoplink: ../../../shop/bricklets/ambient-light-v2-bricklet.html
 
 .. include:: Ambient_Light_V2.substitutions
@@ -8,7 +8,7 @@
 
 .. _ambient_light_v2_bricklet:
 
-Ambient Light 2.0 Bricklet
+Ambient Light Bricklet 2.0
 ==========================
 
 .. note::
