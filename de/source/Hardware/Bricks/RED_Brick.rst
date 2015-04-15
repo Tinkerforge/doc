@@ -826,7 +826,7 @@ Baue dein eigenes Image
 Bei dieser Anleitung nehmen wir an, dass ein
 `Debian Linux <https://www.debian.org/>`__ als Host Plattform genutzt wird.
 
-1. `RED Brick Repository <http://github.com/Tinkerforge/red-brick>`__ von GitHub clonen
+1. `RED Brick Repository <https://github.com/Tinkerforge/red-brick>`__ von GitHub clonen
 2. In den Ordner ``image`` wechseln, die Datei ``README.rst`` öffnen und die
    dokumentierten Schritte durchführen.
 

@@ -810,7 +810,7 @@ Build your own Image
 For the building steps we are assuming a `Debian Linux <https://www.debian.org/>`__
 or derivative (Ubuntu etc) as the host platform.
 
-1. Clone the `RED Brick repository <http://github.com/Tinkerforge/red-brick>`__
+1. Clone the `RED Brick repository <https://github.com/Tinkerforge/red-brick>`__
    from GitHub
 2. Change to the ``image`` folder, open the ``README.rst`` file and execute the
    documented  steps.

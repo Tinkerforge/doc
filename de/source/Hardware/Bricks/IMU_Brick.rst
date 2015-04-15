@@ -119,8 +119,8 @@ Stromverbrauch                                                  53mA
 Ressourcen
 ----------
 
-* 3-Achsen Beschleunigungssensor/Kompass LSM303 Datenblatt (`Download <http://www.st.com/web/en/resource/technical/document/datasheet/CD00260288.pdf>`__)
-* 3-Achsen Gyroskop ITG-3200 Datenblatt (`Download <http://invensense.com/mems/gyro/documents/PS-ITG-3200A.pdf>`__)
+* 3-Achsen Beschleunigungssensor/Kompass LSM303 Datenblatt (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/LSM303.pdf>`__)
+* 3-Achsen Gyroskop ITG-3200 Datenblatt (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/ITG3200.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/hardware/imu-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/imu-brick/zipball/master>`__)
@@ -333,8 +333,9 @@ absolute Orientierung im Raum zu ermitteln.
 Häufig wird für diesen Berechnungsprozess ein
 `Kalman Filter <http://de.wikipedia.org/wiki/Kalman-Filter>`__ verwendet.
 Der IMU Brick verwendet allerdings einen Filter der auf
-`diesem Paper <https://imumargalgorithm30042010sohm.googlecode.com/files/An%20efficient%20orientation%20filter%20for%20inertial%20and%20inertialmagnetic%20sensor%20arrays.pdf>`__
-von S. O. Madgwick basiert. Unsere Tests haben gezeigt, dass dieser neuartige
+`diesem Paper <http://www.x-io.co.uk/res/doc/madgwick_internal_report.pdf>`__
+von `S. O. Madgwick <http://www.x-io.co.uk/open-source-imu-and-ahrs-algorithms/>`__
+basiert. Unsere Tests haben gezeigt, dass dieser neuartige
 Filter signifikant bessere Ergebnisse als ein Kalman Filter erzielt. Madgwick
 beschreibt die Arbeitsweise seines Filter so:
 
