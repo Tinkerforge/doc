@@ -1,8 +1,8 @@
 Doc
 ===
 
-This repository contains the Sphinx(http://sphinx-doc.org/) documentation for all Bricks and
-Bricklets.
+This repository contains the Sphinx (http://sphinx-doc.org/) documentation for
+all Bricks and Bricklets.
 
 Usage
 -----
