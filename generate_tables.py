@@ -115,24 +115,9 @@ class Product:
         self.bindings = bindings
         self.is_published = is_published
         self.has_firmware = has_firmware
-
-    @property
-    def url_part_for_hardware_doc(self):
-        url_part = self.display_name.replace(' ', '_').replace('/', '_').replace('-', '').replace('2.0', 'V2')
-
-        if url_part == 'StepDown_Power_Supply':
-            url_part = 'Step_Down'
-
-        return url_part
-
-    @property
-    def url_part_for_software_doc(self):
-        return self.display_name.replace(' ', '').replace('/', '').replace('-', '').replace('2.0', 'V2')
-
-    @property
-    def url_part_for_git(self):
-        return self.url_part.replace('_', '-').replace('/', '-').replace('2.0', 'v2')
-
+        self.url_part_for_hardware_doc = display_name.replace(' ', '_').replace('/', '_').replace('-', '').replace('2.0', 'V2')
+        self.url_part_for_software_doc = display_name.replace(' ', '').replace('/', '').replace('-', '').replace('2.0', 'V2')
+        self.url_part_for_git = url_part.replace('_', '-').replace('/', '-').replace('2.0', 'v2')
 
 brick_descriptions = {
 'dc': {
@@ -173,9 +158,7 @@ class Brick(Product):
     def __init__(self, *args, **kwargs):
         Product.__init__(self, *args, **kwargs)
 
-    @property
-    def description(self):
-        return brick_descriptions[self.url_part][lang]
+        self.description = brick_descriptions[self.url_part][lang]
 
 bricks = [Brick('DC',      'dc',      bindings, True),
           Brick('Debug',   'debug',   [],       True),
@@ -422,9 +405,7 @@ class Bricklet(Product):
     def __init__(self, *args, **kwargs):
         Product.__init__(self, *args, **kwargs)
 
-    @property
-    def description(self):
-        return bricklet_descriptions[self.url_part][lang]
+        self.description = bricklet_descriptions[self.url_part][lang]
 
 bricklets = [Bricklet('AC Current',                'ac_current',                bindings, False),
              Bricklet('Accelerometer',             'accelerometer',             bindings, False),
@@ -508,9 +489,8 @@ class Extension(Product):
     def __init__(self, display_name, url_part, is_published):
         Product.__init__(self, display_name, url_part, [], is_published)
 
-    @property
-    def description(self):
-        return extension_descriptions[self.url_part][lang]
+        self.url_part_for_hardware_doc += '_Extension'
+        self.description = extension_descriptions[self.url_part][lang]
 
 extensions = [Extension('Chibi',    'chibi',    True),
               Extension('Ethernet', 'ethernet', True),
@@ -529,9 +509,10 @@ class PowerSupply(Product):
     def __init__(self, display_name, url_part, is_published):
         Product.__init__(self, display_name, url_part, [], is_published)
 
-    @property
-    def description(self):
-        return power_supply_descriptions[self.url_part][lang]
+        if self.url_part_for_hardware_doc == 'StepDown':
+            self.url_part_for_hardware_doc = 'Step_Down'
+
+        self.description = power_supply_descriptions[self.url_part][lang]
 
 power_supplies = [PowerSupply('Step-Down', 'step_down', True)]
 
@@ -547,9 +528,7 @@ class Accessory(Product):
     def __init__(self, display_name, url_part, is_published):
         Product.__init__(self, display_name, url_part, [], is_published)
 
-    @property
-    def description(self):
-        return accessory_descriptions[self.url_part][lang]
+        self.description = accessory_descriptions[self.url_part][lang]
 
 accessories = [Accessory('DC Jack Adapter', 'dc_jack_adapter', True)]
 
