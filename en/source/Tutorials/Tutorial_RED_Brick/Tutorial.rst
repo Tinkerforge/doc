@@ -232,7 +232,7 @@ Gain Internet Access
 --------------------
 
 To gain Internet access on the RED Brick we can either connect a
-USB WIFI/Ethernet dongle or the Ethernet Extension. In this example we
+USB Wi-Fi/Ethernet dongle or the Ethernet Extension. In this example we
 will add the :ref:`Ethernet Extension <ethernet_extension>`:
 
 .. image:: /Images/Bricks/brick_red_master_temp_eth_600.jpg
@@ -328,7 +328,7 @@ On the RED Brick desktop the simple GUI looks as follows:
 Develop a custom RED Brick web interface
 ----------------------------------------
 
-If your RED Brick has a network interface (WIFI dongle or Ethernet Extension),
+If your RED Brick has a network interface (Wi-Fi dongle or Ethernet Extension),
 you can also use it to display a dynamic web page. Currently we support
 HTML/JavaScript, PHP and Python for this purpose.
 

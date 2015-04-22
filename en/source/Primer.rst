@@ -24,7 +24,7 @@ Our products are divided into five different categories:
   Non-stackable sensor/actuator modules that extend the features of a Brick.
 * :ref:`Master Extensions <primer_master_extensions>`:
   Modules that offers alternatives to the USB interface of 
-  :ref:`Master Bricks <master_brick>` (WIFI, Ethernet, RS485).
+  :ref:`Master Bricks <master_brick>` (Wi-Fi, Ethernet, RS485).
 * :ref:`Power Supplies <primer_power_supplies>`:
   Modules to power a stack of Bricks, plugged below the stack.
 * :ref:`Accessories <primer_accessories>`
@@ -84,13 +84,10 @@ be extended. Dependent on the Brick it has two or four connectors for Bricklets.
 
 Bricks can be assembled into a stack (see 
 :ref:`description of stack concept <primer_stack>`). The USB interface of a 
-Master Brick can be replaced by WIFI, Ethernet or RS485 with 
+Master Brick can be replaced by Wi-Fi, Ethernet or RS485 with
 :ref:`Master Extensions <primer_master_extensions>`. In conjunction with the 
-stack concept all Bricks and Bricklets can be controlled by WIFI or Ethernet 
+stack concept all Bricks and Bricklets can be controlled by Wi-Fi or Ethernet
 instead by USB.
-
-
-
 
 
 .. include:: Primer_bricks.table
@@ -207,7 +204,7 @@ Master Extensions extends the communication interface of Master Bricks.
 There are cable based
 (:ref:`RS485 <rs485_extension>`,  :ref:`Ethernet <ethernet_extension>`) and
 wireless Master Extensions (:ref:`WIFI <wifi_extension>`) available. Instead
-over USB Bricks and Bricklets can be controlled over WIFI or Ethernet. RS485 can
+over USB Bricks and Bricklets can be controlled over Wi-Fi or Ethernet. RS485 can
 be used to interconnect Bricks and Bricklets over larger distances.
 
 From a programming perspective the different interfaces are transparent.

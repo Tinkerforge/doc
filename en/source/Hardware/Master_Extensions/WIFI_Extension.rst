@@ -64,10 +64,10 @@ With this WIFI Extension you can control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` wirelessly over your
 mobile phone, tablet or your PC. For the Master Extension concept please take a look at the general
 :ref:`description <primer_master_extensions>`. The Extension is equipped with a `GainSpan <http://www.gainspan.com>`__
-`GS1011MEES <http://www.gainspan.com/gs1011mees>`__ WIFI module with an internal power amplifier
-which allows for superior range compared to other WIFI modules.
+`GS1011MEES <http://www.gainspan.com/gs1011mees>`__ Wi-Fi module with an internal power amplifier
+which allows for superior range compared to other Wi-Fi modules.
 
-The devices supports two modes. In Full Speed Mode the device WIFI transceiver is always on.
+The devices supports two modes. In Full Speed Mode the device Wi-Fi transceiver is always on.
 New incoming data will be immediately handled. In Low Power Mode the devices is not always on,
 the transceiver enters sleep mode after each message. This leads to a significantly lower power
 consumption and data throughput.
@@ -304,7 +304,7 @@ access point and should show up as a normal access point on your PC.
 
 You can choose Ad Hoc and Access Point mode with DHCP and static IP.
 If you choose DHCP you have to provide the DHCP server! There is no DHCP
-server implementation in the WIFI module. Since that can be quite
+server implementation in the Wi-Fi module. Since that can be quite
 cumbersome to get running, we recommend that you use static IP.
 
 As encryption you can use WEP. WPA is unfortunately not supported in
@@ -399,7 +399,7 @@ LEDs and Connectivity
 The blue power LED will be on permanently if the device is powered.
 The green LED is the status LED (permanently off = error, blink = associating, on = associated).
 
-The WIFI module is equipped with an U.FL connector and an 75 Ohm U.FL to RP-SMA pigtail cable.
+The Wi-Fi module is equipped with an U.FL connector and an 75 Ohm U.FL to RP-SMA pigtail cable.
 Depending on your application it is possible to disconnect the pigtail cable
 and connect your own cable.
 

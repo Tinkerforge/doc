@@ -16,7 +16,7 @@ a :ref:`DC Jack Adapter <dc_jack_adapter>` to power the stack. For details
 about this see the :ref:`Wi-Fi Weather Station
 <starter_kit_weather_station_construction_wifi>` construction section.
 
-.. FIXME: recommend using a Step-Down Power Supply if a WiFi stick should be used as well
+.. FIXME: recommend using a Step-Down Power Supply if a Wi-Fi stick should be used as well
 
 The RED Brick Weather Station is an extension of the :ref:`basic version
 <starter_kit_weather_station_construction_basic>`. You should build the basic

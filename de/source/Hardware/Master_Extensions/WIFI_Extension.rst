@@ -65,10 +65,10 @@ Mit dieser WIFI Extension können :ref:`Bricks <primer_bricks>` und
 Smartphone, Tablet oder PC gesteuert werden.
 Weitere Informationen zum Master Extension Konzept gibt es in der allgemeinen
 :ref:`Beschreibung <primer_master_extensions>`. Die Extension ist mit einem `GainSpan <http://www.gainspan.com>`__
-`GS1011MEES <http://www.gainspan.com/gs1011mees>`__ WIFI Modul mit integriertem Leistungsverstärker ausgestattet
+`GS1011MEES <http://www.gainspan.com/gs1011mees>`__ WLAN Modul mit integriertem Leistungsverstärker ausgestattet
 der eine erweiterte Reichweite im Vergleich zu ähnlichen Modulen erlaubt.
 
-Die Extension unterstützt zwei Modi. Im Full Speed Modus ist der WIFI Transceiver permanent eingeschaltet.
+Die Extension unterstützt zwei Modi. Im Full Speed Modus ist der WLAN Transceiver permanent eingeschaltet.
 Eingehende Daten werden unverzüglich verarbeitet. Im Low Power Mode ist das Modul nicht permanent an,
 der Transceiver geht nach jeder Nachricht in den Schlafmodus.
 Dies führt zu einer drastisch reduzierten Leistungsaufnahme aber auch zu einem deutlich geringeren Datendurchsatz.
@@ -127,7 +127,7 @@ Ressourcen
 
 .. _wifi_network_assembly:
 
-WIFI Netzwerk
+WLAN Netzwerk
 -------------
 
 Die Master Extension erlaubt es eine drahtlose Verbindung zu
@@ -163,7 +163,7 @@ geändert werden.
 
 .. _wifi_configuration:
 
-WIFI Konfiguration
+WLAN Konfiguration
 ------------------
 
 Die WIFI Extension wird über das Tab des Master Bricks im Brick Viewer
@@ -313,7 +313,7 @@ als ganz normaler Access Point auf dem PC angezeigt werden.
 
 Es ist möglich bei beiden Modi zwischen DHCP und statischer IP auszuwählen.
 Falls DHCP ausgewählt wird, muss der DHCP Server von außen bereitgestellt werden!
-Es gibt keine DHCP Server Implementierung auf dem WIFI Modul. Da das aufsetzen
+Es gibt keine DHCP Server Implementierung auf dem WLAN Modul. Da das aufsetzen
 eines DHCP Servers mühselig sein kann, empfehlen wir die Benutzung einer
 statischen IP.
 
@@ -412,8 +412,8 @@ Die blaue LED leuchtet permanent wenn die Extension mit Strom versorgt wird.
 Als Status LED ist eine grüne LED vorhanden (permanent aus = Fehler,
 blinkend = Verbindungsaufbau, permanent an = Verbunden).
 
-Das WIFI Modul ist mit einem U.FL Anschluss und einem 75 Ohm U.FL nach RP-SMA
-Kabel ausgestattet. Abhängig von der Anwendung kann dieses Kabel auch vom WIFI
+Das WLAN Modul ist mit einem U.FL Anschluss und einem 75 Ohm U.FL nach RP-SMA
+Kabel ausgestattet. Abhängig von der Anwendung kann dieses Kabel auch vom WLAN
 Modul getrennt und ein eigenes angeschlossen werden.
 
 Programmierschnittstelle
