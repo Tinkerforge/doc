@@ -11,6 +11,7 @@ from xml.etree.ElementTree import fromstring as etreefromstring
 
 sys.path.append(os.path.join(os.getcwd(), '..', '..', 'generators'))
 from device_identifiers import device_identifiers
+from device_descriptions import brick_descriptions, bricklet_descriptions
 
 lang = 'en'
 
@@ -119,46 +120,19 @@ class Product:
         self.url_part_for_software_doc = display_name.replace(' ', '').replace('/', '').replace('-', '').replace('2.0', 'V2')
         self.url_part_for_git = url_part.replace('_', '-').replace('/', '-').replace('2.0', 'v2')
 
-brick_descriptions = {
-'dc': {
-    'en': 'Drives one brushed DC motor with max. 28V and 5A (peak)',
-    'de': 'Steuert einen DC Motor mit max. 28V und 5A (Peak)'
-    },
-'debug': {
+brick_descriptions['debug'] = {
     'en': 'For Firmware Developers: JTAG and serial console',
     'de': 'Für Firmware Entwickler: JTAG und serielle Konsole'
-    },
-'imu': {
-    'en': 'Full fledged AHRS with 9 degrees of freedom',
-    'de': 'Voll ausgestattetes AHRS mit 9 Freiheitsgraden'
-    },
-'imu_v2': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'master': {
-    'en': 'Is the basis to build stacks and has 4 Bricklet Ports',
-    'de': 'Ist Grundlage um Stapel zu bauen und bietet 4 Bricklet Anschlüsse'
-    },
-'red': {
-    'en': 'Executes user programs and controls other Bricks/Bricklets standalone',
-    'de': 'Führt Programme aus und steuert andere Bricks/Bricklets selbständig'
-    },
-'servo': {
-    'en': 'Drives up to 7 RC Servos with max. 3A',
-    'de': 'Steuert bis zu 7 RC Servos mit max. 3A'
-    },
-'stepper': {
-    'en': 'Drives one bipolar stepper motor with max. 38V and 2.5A per phase',
-    'de': 'Steuert einen bipolaren Schrittmotor mit max. 38V und 2,5A pro Phase'
-    }
 }
+
 
 class Brick(Product):
     def __init__(self, *args, **kwargs):
         Product.__init__(self, *args, **kwargs)
 
-        self.description = brick_descriptions[self.url_part][lang]
+    @property
+    def description(self):
+        return brick_descriptions[self.url_part][lang]
 
 bricks = [Brick('DC',      'dc',      bindings, True),
           Brick('Debug',   'debug',   [],       True),
@@ -170,242 +144,18 @@ bricks = [Brick('DC',      'dc',      bindings, True),
           Brick('Stepper', 'stepper', bindings, True)]
 
 
-bricklet_descriptions = {
-'ac_current': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'accelerometer': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'ambient_light': {
-    'en': 'Measures ambient light up to 900lux',
-    'de': 'Misst Umgebungslicht bis zu 900Lux'
-    },
-'ambient_light_v2': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'analog_in': {
-    'en': 'Measures voltages up to 45V (DC)',
-    'de': 'Misst elektrische Spannungen bis zu 45V (DC)'
-    },
-'analog_in_v2': {
-    'en': 'Measures voltages up to 42V (DC)',
-    'de': 'Misst elektrische Spannungen bis zu 42V (DC)'
-    },
-'analog_out': {
-    'en': 'Generates configurable voltages up to 5V',
-    'de': 'Erzeugt konfigurierbare elektrische Spannungen bis zu 5V'
-    },
-'analog_out_v2': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'barometer': {
-    'en': 'Measures air pressure and altitude changes',
-    'de': 'Misst Luftdruck und Höhenänderungen'
-    },
-'breakout': {
+bricklet_descriptions['breakout'] = {
     'en': 'Makes all Bricklet signals available',
     'de': 'Macht alle Bricklet Signale zugänglich'
-    },
-'color': {
-    'en': 'Measures color (RGB value), illuminance and color temperature',
-    'de': 'Misst Farbe (RGB Wert), Beleuchtungsstärke und Farbtemperatur'
-    },
-'current12': {
-    'en': 'Bidirectional current sensor for up to 12.5A',
-    'de': 'Bidirektionaler Stromsensor für bis zu 12,5A'
-    },
-'current25': {
-    'en': 'Bidirectional current sensor for up to 25A',
-    'de': 'Bidirektionaler Stromsensor für bis zu 25A'
-    },
-'distance_ir': {
-    'en': 'Measures distances up to 150cm with IR light',
-    'de': 'Misst Entfernungen bis zu 150cm mit IR Licht'
-    },
-'distance_us': {
-    'en': 'Measures distances from 2cm to 400cm with ultrasound',
-    'de': 'Misst Entfernungen von 2cm bis 400cm mit Ultraschall'
-    },
-'dual_button': {
-    'en': 'Two tactile buttons with built-in blue LEDs',
-    'de': 'Zwei Taster mit eingebauten blauen LEDs'
-    },
-'dual_relay': {
-    'en': 'Two relays to switch AC/DC devices',
-    'de': 'Zwei Relais um AC/DC Geräte zu schalten'
-    },
-'gas_detector': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'gps': {
-    'en': 'Determine position, velocity and altitude',
-    'de': 'Bestimmt Position, Geschwindigkeit und Höhe'
-    },
-'hall_effect': {
-    'en': 'Detects presence of magnetic field',
-    'de': 'Detektiert Magnetfelder'
-    },
-'heart_rate': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'humidity': {
-    'en': 'Measures relative humidity',
-    'de': 'Misst relative Luftfeuchtigkeit'
-    },
-'industrial_analog_out': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'industrial_digital_in_4': {
-    'en': '4 galvanically isolated digital inputs',
-    'de': '4 galvanisch getrennte digitale Eingänge'
-    },
-'industrial_digital_out_4': {
-    'en': '4 galvanically isolated digital outputs',
-    'de': '4 galvanisch getrennte digitale Ausgänge'
-    },
-'industrial_dual_0_20ma': {
-    'en': 'Senses two currents between 0 and 20mA (IEC 60381-1)',
-    'de': 'Misst zwei Stromquellen zwischen 0 und 20mA (IEC 60381-1)'
-    },
-'industrial_dual_analog_in': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'industrial_quad_relay': {
-    'en': '4 galvanically isolated solid state relays',
-    'de': '4 galvanisch getrennte Solid State Relais'
-    },
-'io16': {
-    'en': '16-channel digital input/output',
-    'de': '16 digitale Ein- und Ausgänge'
-    },
-'io4': {
-    'en': '4-channel digital input/output',
-    'de': '4 digitale Ein- und Ausgänge'
-    },
-'joystick': {
-    'en': '2-axis joystick with push-button',
-    'de': '2-Achsen Joystick mit Taster'
-    },
-'laser_range_finder': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'lcd_16x2': {
-    'en': '16x2 character alphanumeric display with blue backlight',
-    'de': '16x2 Zeichen alphanumerisches Display'
-    },
-'lcd_20x4': {
-    'en': '20x4 character alphanumeric display with blue backlight',
-    'de': '20x4 Zeichen alphanumerisches Display'
-    },
-'led_strip': {
-    'en': 'Controls up to 320 RGB LEDs',
-    'de': 'Steuert bis zu 320 RGB LEDs'
-    },
-'line': {
-    'en': 'Measures the reflectivity of a surface',
-    'de': 'Misst die Reflektivität einer Oberfläche'
-    },
-'linear_poti': {
-    'en': '59mm linear potentiometer',
-    'de': '59mm Linear-Potentiometer'
-    },
-'load_cell': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'moisture': {
-    'en': 'Measures moisture between two probes',
-    'de': 'Misst Feuchtigkeit zwischen zwei Elektroden'
-    },
-'motion_detector': {
-    'en': 'Passive Infrared Motion Sensor, 7m range',
-    'de': 'Passiver Infrarot Bewegungssensor, 7m Reichweite'
-    },
-'multi_touch': {
-    'en': 'Capacitive Touch Sensor for 12 electrodes',
-    'de': 'Kapazitiver Touch Sensor für 12 Elektroden'
-    },
-'nfc_rfid': {
-    'en': 'Reads and writes NFC and RFID tags',
-    'de': 'Liest und schreibt NFC und RFID Tags'
-    },
-'piezo_buzzer': {
-    'en': 'Creates 1kHz beep',
-    'de': 'Erzeugt 1kHz Piepton'
-    },
-'piezo_speaker': {
-    'en': 'Creates beep with configurable frequency',
-    'de': 'Erzeugt Piepton mit konfigurierbarer Frequenz'
-    },
-'ptc': {
-    'en': 'Reads temperatures from Pt100/1000 sensors',
-    'de': 'Liest Temperaturen von Pt100/1000-Sensoren'
-    },
-'remote_switch': {
-    'en': 'Controls remote mains switches',
-    'de': 'Steuert Funksteckdosen'
-    },
-'rotary_encoder': {
-    'en': '360° rotary encoder with push-button',
-    'de': '360° Drehgeber / Drehencoder mit Taster'
-    },
-'rotary_poti': {
-    'en': '300° rotary potentiometer',
-    'de': '300° Dreh-Potentiometer'
-    },
-'rs232': {
-    'en': 'FIXME',
-    'de': 'FIXME'
-    },
-'segment_display_4x7': {
-    'en': 'Four 7-segment displays with switchable colon',
-    'de': 'Vier 7-Segment Anzeigen mit schaltbarem Doppelpunkt'
-    },
-'solid_state_relay': {
-    'en': 'Controls AC and DC Solid State Relays',
-    'de': 'Schaltet AC und DC Halbleiterrelais (Solid State Relais)'
-    },
-'sound_intensity': {
-    'en': 'Measures sound intensity',
-    'de': 'Misst Schallintensität'
-    },
-'temperature': {
-    'en': 'Measures ambient temperature with 0.5°C accuracy',
-    'de': 'Misst Umgebungstemperatur mit 0,5°C Genauigkeit'
-    },
-'temperature_ir': {
-    'en': 'Measures contactless object temperature from -70°C to 380°C',
-    'de': 'Kontaktlose Objekttemperaturmessung von -70°C bis 380°C'
-    },
-'tilt': {
-    'en': 'Detects inclination of Bricklet (tilt switch open/closed)',
-    'de': 'Erkennt Neigung des Bricklets (Neigungsschalter offen/geschlossen)'
-    },
-'voltage': {
-    'en': 'Measures voltages up to 50V (DC)',
-    'de': 'Misst Spannungen bis zu 50V (DC)'
-    },
-'voltage_current': {
-    'en': 'Measure power, voltage and current up to 720W/36V/20A',
-    'de': 'Misst Leistung, Spannung und Strom bis zu 720W/36V/20A'
-    },
 }
 
 class Bricklet(Product):
     def __init__(self, *args, **kwargs):
         Product.__init__(self, *args, **kwargs)
 
-        self.description = bricklet_descriptions[self.url_part][lang]
+    @property
+    def description(self):
+        return bricklet_descriptions[self.url_part][lang]
 
 bricklets = [Bricklet('AC Current',                'ac_current',                bindings, False),
              Bricklet('Accelerometer',             'accelerometer',             bindings, False),
@@ -468,20 +218,20 @@ bricklets = [Bricklet('AC Current',                'ac_current',                
 
 extension_descriptions = {
 'chibi': {
-    'en': 'Wireless Chibi Master Extension',
-    'de': 'Drahtlose Chibi Master Extension'
+    'en': 'Wireless Chibi connection between stacks',
+    'de': 'Drahtlose Chibi Verbindung zwischen Stapeln'
     },
 'ethernet': {
-    'en': 'Cable based Ethernet Master Extension',
-    'de': 'Kabelgebundene Ethernet Master Extension'
+    'en': 'Cable based Ethernet connection between stack and PC',
+    'de': 'Kabelgebundene Ethernet Verbindung zwischen Stapel und PC'
     },
 'rs485': {
-    'en': 'Cable based RS485 Master Extension',
-    'de': 'Kabelgebundene RS485 Master Extension'
+    'en': 'Cable based RS485 connection between stacks',
+    'de': 'Kabelgebundene RS485 Verbindung zwischen Stapeln'
     },
 'wifi': {
-    'en': 'Wireless WIFI Master Extension',
-    'de': 'Drahtlose WIFI Master Extension'
+    'en': 'Wireless Wi-Fi connection between stack and PC',
+    'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'
     }
 }
 
@@ -490,7 +240,10 @@ class Extension(Product):
         Product.__init__(self, display_name, url_part, [], is_published)
 
         self.url_part_for_hardware_doc += '_Extension'
-        self.description = extension_descriptions[self.url_part][lang]
+
+    @property
+    def description(self):
+        return extension_descriptions[self.url_part][lang]
 
 extensions = [Extension('Chibi',    'chibi',    True),
               Extension('Ethernet', 'ethernet', True),
@@ -512,7 +265,9 @@ class PowerSupply(Product):
         if self.url_part_for_hardware_doc == 'StepDown':
             self.url_part_for_hardware_doc = 'Step_Down'
 
-        self.description = power_supply_descriptions[self.url_part][lang]
+    @property
+    def description(self):
+        return power_supply_descriptions[self.url_part][lang]
 
 power_supplies = [PowerSupply('Step-Down', 'step_down', True)]
 
@@ -528,7 +283,9 @@ class Accessory(Product):
     def __init__(self, display_name, url_part, is_published):
         Product.__init__(self, display_name, url_part, [], is_published)
 
-        self.description = accessory_descriptions[self.url_part][lang]
+    @property
+    def description(self):
+        return accessory_descriptions[self.url_part][lang]
 
 accessories = [Accessory('DC Jack Adapter', 'dc_jack_adapter', True)]
 
@@ -587,14 +344,14 @@ primer_table_head = {
 """
 .. csv-table::
    :header: "Name", "Description"
-   :widths: 30, 70
+   :widths: 25, 75
 
 """,
 'de':
 """
 .. csv-table::
    :header: "Name", "Beschreibung"
-   :widths: 30, 70
+   :widths: 25, 75
 
 """
 }
