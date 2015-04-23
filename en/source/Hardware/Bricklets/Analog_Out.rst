@@ -72,8 +72,8 @@ The voltage can be configured directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`__ without any conversion.
 The device is equipped with a 12-bit `Digital-to-Analog Converter (DAC)
 <http://en.wikipedia.org/wiki/Digital-to-analog_converter>`__.
-Instead of generating a voltage it is also possible to choose between a 1k,
-100k or 500k Ohm load resistor to ground (pull-down).
+Instead of generating a voltage it is also possible to choose between a 1kΩ,
+100kΩ or 500kΩ load resistor to ground (pull-down).
 
 
 Technical Specifications

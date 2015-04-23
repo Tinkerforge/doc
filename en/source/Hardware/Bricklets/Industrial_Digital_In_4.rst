@@ -96,7 +96,7 @@ Property                          Value
 Current Consumption               1mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Input Type                        Four optocoupled inputs (including 4.7k Ohm series resistor)
+Input Type                        Four optocoupled inputs (including 4.7kΩ series resistor)
 Input Current                     Depending on input voltage, ca. 1mA/5V, ca. 5mA/24V
 Maximum Input Voltage             36V (DC)
 Low Level Voltage                 0-2V

@@ -399,7 +399,7 @@ LEDs and Connectivity
 The blue power LED will be on permanently if the device is powered.
 The green LED is the status LED (permanently off = error, blink = associating, on = associated).
 
-The Wi-Fi module is equipped with an U.FL connector and an 75 Ohm U.FL to RP-SMA pigtail cable.
+The Wi-Fi module is equipped with an U.FL connector and an 75Ω U.FL to RP-SMA pigtail cable.
 Depending on your application it is possible to disconnect the pigtail cable
 and connect your own cable.
 

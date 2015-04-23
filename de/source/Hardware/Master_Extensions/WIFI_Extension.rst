@@ -412,7 +412,7 @@ Die blaue LED leuchtet permanent wenn die Extension mit Strom versorgt wird.
 Als Status LED ist eine grüne LED vorhanden (permanent aus = Fehler,
 blinkend = Verbindungsaufbau, permanent an = Verbunden).
 
-Das WLAN Modul ist mit einem U.FL Anschluss und einem 75 Ohm U.FL nach RP-SMA
+Das WLAN Modul ist mit einem U.FL Anschluss und einem 75Ω U.FL nach RP-SMA
 Kabel ausgestattet. Abhängig von der Anwendung kann dieses Kabel auch vom WLAN
 Modul getrennt und ein eigenes angeschlossen werden.
 
