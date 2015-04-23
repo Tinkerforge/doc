@@ -34,7 +34,8 @@ Chibi Extension
 .. note::
 
  Die Chibi Extension ist abgekündigt und wird nicht mehr verkauft.
- Derzeit gibt es keine entsprechenden Ersatz.
+ Abhängig vom Einsatzzweck kann die :ref:`WIFI Extension <wifi_extension>`
+ als Ersatz verwendet werden.
 
 
 Features
