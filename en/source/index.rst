@@ -136,6 +136,9 @@ with Tinkerforge:
 * :ref:`starter_kit_blinkenlights`
 * :ref:`starter_kit_iot`
 
+..
+  * :ref:`starter_kit_camera_slider`
+
 .. toctree::
    :hidden:
 
@@ -144,6 +147,7 @@ with Tinkerforge:
    Kits/ServerRoomMonitoring/ServerRoomMonitoring
    Kits/Blinkenlights/Blinkenlights
    Kits/InternetOfThings/InternetOfThings
+   Kits/CameraSlider/CameraSlider
 
 
 .. _index_embedded_boards:
