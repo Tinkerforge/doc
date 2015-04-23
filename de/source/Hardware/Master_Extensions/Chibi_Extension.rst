@@ -31,6 +31,11 @@ Chibi Extension
 	}}
 	{{ tfdocend() }}
 
+.. note::
+
+ Die Chibi Extension ist abgekündigt und wird nicht mehr verkauft.
+ Derzeit gibt es keine entsprechenden Ersatz.
+
 
 Features
 --------

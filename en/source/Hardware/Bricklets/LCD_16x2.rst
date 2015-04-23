@@ -45,6 +45,11 @@ LCD 16x2 Bricklet
 	}}
 	{{ tfdocend() }}
 
+.. note::
+
+ The LCD 16x2 Bricklet is discontinued and is no longer sold. The
+ :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` is the recommended replacement.
+
 
 Features
 --------

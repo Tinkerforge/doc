@@ -45,6 +45,12 @@ Current12 Bricklet
 	}}
 	{{ tfdocend() }}
 
+.. note::
+
+ The Current12 Bricklet is discontinued and is no longer sold. The
+ :ref:`Voltage/Current Bricklet <voltage_current_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------
