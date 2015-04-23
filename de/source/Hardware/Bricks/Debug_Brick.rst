@@ -55,10 +55,15 @@ serielle Konsole zu :ref:`Bricks <primer_bricks>`,
 :ref:`Bricklets <primer_bricklets>` und :ref:`Stapeln <primer_stack>` 
 hinzuzufügen.
 
-.. note::
- Ein Debug Brick kann zum Debuggen der Low Level C Firmware von Bricks und
- Bricklets benutzt werden. Es ist nicht dafür gedacht für PC basierte
- Programmierung genutzt zu werden.
+Ein Debug Brick kann zum Debuggen der Low Level C Firmware von Bricks und
+Bricklets benutzt werden. Es ist nicht dafür gedacht für PC basierte
+Programmierung genutzt zu werden.
+
+In Hardware Version 1.2 wurde der D-Sub 9 Anschluss durch einen Mini-USB Anschluss
+und einen Silicon Labs CP2104 USB-nach-Seriell Wandler ersetzt. Dieser Wandler
+benötigt einen extra Treiber der von der `Silicon Labs
+<https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>`__
+Webseite heruntergeladen werden kann.
 
 
 Technische Spezifikation
@@ -67,11 +72,9 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Abmessungen (B x T x H)           40 x 40 x 8mm (1,57 x 1,57 x 0,31")*
-Gewicht                           18g
+Abmessungen (B x T x H)           40 x 40 x 8mm (1,57 x 1,57 x 0,31")
+Gewicht                           8g
 ================================  ============================================================
-
-\* ohne Stecker
 
 
 Ressourcen
