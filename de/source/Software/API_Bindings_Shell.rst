@@ -7,12 +7,12 @@ Shell - API Bindings
 ====================
 
 Die Shell Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
-:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Shell Scripten
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Shell Skripten
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
-* ``tinkerforge``, ein Python Script, das als Shell Befehl agiert
-* ``tinkerforge-bash-completion.sh``, ein Bash Completion Script
+* ``tinkerforge``, ein Python Skript, das als Shell Befehl agiert
+* ``tinkerforge-bash-completion.sh``, ein Bash Completion Skript
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 Die Shell Bindings basieren auf den :ref:`Python Bindings <api_bindings_python>`.
@@ -54,7 +54,7 @@ abzuändern.
 Bash Completion
 ^^^^^^^^^^^^^^^
 
-Wird Bash als Shell verwendet so kann auch das Bash Completion Script
+Wird Bash als Shell verwendet so kann auch das Bash Completion Skript
 ``tinkerforge-bash-completion.sh`` installiert werden. Dazu die
 ``tinkerforge-bash-completion.sh`` Datei in den ``/etc/bash_completion.d/``
 Ordner kopieren und dann die Bash Completions mit folgendem Befehl neu laden::

@@ -118,17 +118,17 @@ Weight                                 1.6g
 =====================================  ============================================================
 
 
-
 Resources
 ---------
 
 * Schematic (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/hardware/solid-state-relay-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/solid_state_relay_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/zipball/master>`__)
-* Datasheet SSR AC 380V/25A (KS15/D-38Z25-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ks15_ac.pdf?raw=true>`__)
-* Datasheet SSR DC 50V/80A (KS33/D-50D80-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ks33_dc.pdf?raw=true>`__)
-* Datasheet SSR Heatsink (HF92B-120) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/hf92b_heatsink.pdf?raw=true>`__)
-* Datasheet SSR Cover (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ssr_cover.pdf?raw=true>`__)
+* Datasheet SSR AC 380V/25A (KS15/D-38Z25-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ks15_ac.pdf>`__)
+* Datasheet SSR DC 50V/80A (KS33/D-50D80-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ks33_dc.pdf>`__)
+* Datasheet SSR heatsink (HF92B-120) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/hf92b_heatsink.pdf>`__)
+* Datasheet SSR cover (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ssr_cover.pdf>`__)
+
 
 Connectivity
 ------------

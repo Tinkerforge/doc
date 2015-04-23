@@ -48,7 +48,7 @@ Schritt 2: Bricklet Items definieren
 ------------------------------------
 
 Bricks und Bricklets werden in openHAB durch `Items
-<https://github.com/openhab/openhab/wiki/Explanation-of-items>`__ representiert.
+<https://github.com/openhab/openhab/wiki/Explanation-of-items>`__ repräsentiert.
 Diese Items werden in ``.items`` Konfigurationsdateien definiert die auf dem
 RED Brick gespeichert werden. Der Brick Viewer ermöglicht es diese Dateien zu
 bearbeiten. Die :ref:`RED Brick openHAB Dokumentation

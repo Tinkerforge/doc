@@ -77,7 +77,7 @@ as before but also physical objects (things).
 
 The *Starter Kit: Internet of Things* offers an easy access into the
 world of the Internet of Things. It allows to control many devices
-over the internet. For that the kit is equipped with a 
+over the Internet. For that the kit is equipped with a
 :ref:`Remote Switch Bricklet <remote_switch_bricklet>`. It can be
 used to remotely control 433MHz mains switches, dimmers and home automation components.
 You can find a :ref:`list of supported actuators <remote_switch_supported_devices>` 
@@ -366,7 +366,7 @@ server yourself. You have to adjust the following source code parts:
 * ``server/server.py``: ``CONFIGURATION_PATH`` and ``LOCAL_PROXY_PORT``.
 
 The dependencies of the Python server are python-twisted and python-autobahn.
-The server can be startet with Python::
+The server can be started with Python::
 
  python server.py
 

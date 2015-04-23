@@ -228,6 +228,6 @@ It also describes how to port already existing code to the new protocol.
 **Brick Firmware Version < 2.3:**
 
 On November 26th 2014 we released a new SPI stack protocol to add support for 
-the RED Brick. This protocol is not compatible to the old protocol. Pleaes make
+the RED Brick. This protocol is not compatible to the old protocol. Please make
 sure that all Bricks have a firmware version greater or equal to 2.3,
 otherwise the stack communication might not work.

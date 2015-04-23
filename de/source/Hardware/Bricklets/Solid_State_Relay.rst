@@ -125,10 +125,10 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/hardware/solid-state-relay-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/solid_state_relay_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/zipball/master>`__)
-* Datenblatt SSR AC 380V/25A (KS15/D-38Z25-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ks15_ac.pdf?raw=true>`__)
-* Datenblatt SSR DC 50V/80A (KS33/D-50D80-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ks33_dc.pdf?raw=true>`__)
-* Datenblatt SSR Kühlkörper (HF92B-120) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/hf92b_heatsink.pdf?raw=true>`__)
-* Datenblatt SSR Abdeckung (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/blob/master/datasheets/ssr_cover.pdf?raw=true>`__)
+* Datenblatt SSR AC 380V/25A (KS15/D-38Z25-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ks15_ac.pdf>`__)
+* Datenblatt SSR DC 50V/80A (KS33/D-50D80-L) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ks33_dc.pdf>`__)
+* Datenblatt SSR Kühlkörper (HF92B-120) (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/hf92b_heatsink.pdf>`__)
+* Datenblatt SSR Abdeckung (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ssr_cover.pdf>`__)
 
 
 Anschlussmöglichkeit

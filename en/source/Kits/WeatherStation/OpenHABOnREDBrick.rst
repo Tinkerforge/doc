@@ -55,7 +55,7 @@ for details.
 1. Open the openHAB settings tab in Brick Viewer and click the *New* button.
 2. Enter ``weather-station.items`` as name and click the *Create* button.
 3. Copy and paste the ``.items`` template from below into the empty text field.
-4. Replace the UID placholders (e.g. ``<HUMIDITY_UID>``) with the corresponding
+4. Replace the UID placeholders (e.g. ``<HUMIDITY_UID>``) with the corresponding
    UIDs of your Bricklets.
 5. Click the *Apply Changes* button to save the file.
 

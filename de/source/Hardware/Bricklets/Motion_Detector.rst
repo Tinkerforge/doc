@@ -57,7 +57,7 @@ Beschreibung
 ------------
 
 Das Motion Detector :ref:`Bricklet <primer_bricklets>` erweitert 
-:ref:`Bricks <primer>` um einen Passive-Infrared (PIR) Sensor. Es kann benutzt 
+:ref:`Bricks <primer>` um einen Passiv-Infrarot (PIR) Sensor. Es kann benutzt
 werden um Bewegungen von Personen und Tieren zu erkennen. Es hat eine 
 konfigurierbare Reichweite von 3m bis 7m mit einem Erfassungswinkel von 100°.
 

@@ -12,7 +12,7 @@ heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
 * in ``source/`` den Quelltext der Bindings (inklusive ``setup.py``
-  Installations-Script)
+  Installations Skript)
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 
@@ -57,9 +57,9 @@ Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
 Vom Quelltext
 ^^^^^^^^^^^^^
 
-Der ``source/`` Ordner beinhaltet ein ``setup.py`` Installations-Script,
+Der ``source/`` Ordner beinhaltet ein ``setup.py`` Installations Skript,
 welches die `setuptools <https://pypi.python.org/pypi/setuptools>`__ für Python
-benötigt. Um die Bindings zu installieren muss nur dieses Script im
+benötigt. Um die Bindings zu installieren muss nur dieses Skript im
 ``source/`` Ordner ausgeführt werden. Abhängig von der Art der Python
 Installation muss dies möglicherweise mit ``sudo`` bzw. als Administrator
 ausgeführt werden::

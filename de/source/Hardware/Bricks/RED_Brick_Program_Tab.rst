@@ -92,7 +92,7 @@ Jedes "Add" fügt etwas zum Root Verzeichnis des RED Brick Programms hinzu.
 
 Je nach gewählter Sprache können verschiedene Dateien hochgeladen werden:
 
-* Bei JavaScript, Perl, PHP, Python und Ruby können die Script-Dateien
+* Bei JavaScript, Perl, PHP, Python und Ruby können die Skriptdateien
   hochgeladen werden (z.B.: ``.js``, ``.pl``, ``.php``, ``.py``, ``.rb``)
 * Bei Java, C# und Visual Basic .NET müssen bereits kompilierte Dateien
   hochgeladen werden (z.B.: ``.jar``, ``.class``, ``.exe``)

@@ -249,7 +249,7 @@ Dieser Tetris-Klon kann über drei verschiedene Arten gesteuert werden. Als
 erstes können die Buttons im Tab genutzt werden um das Spiel zu steuern.
 Alternativ funktioniert dies auch über die PC Tastatur. 
 Als letzte Möglichkeit kann ein Mutli Touch Bricklet mit
-einem Giant Game Pad oder selstgebauten Elektroden angeschlossen 
+einem Giant Game Pad oder selbstgebauten Elektroden angeschlossen
 werden.
 
 .. image:: /Images/Kits/blinkenlights_demo_tetris_350.jpg

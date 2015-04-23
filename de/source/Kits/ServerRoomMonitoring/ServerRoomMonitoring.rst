@@ -502,7 +502,7 @@ geschlossenen Tür. Ändert sich die Distanz signifikant wurde die Tür geöffne
 
 Um einen passenden Schwellwert für den Check zu ermitteln wird über einen
 längeren Zeitraum die Standardabweichung der Messwerte des Distance IR Bricklets
-ermittelt. Auch dafür stellt Martin Seener ein Script zur Verfügung.
+ermittelt. Auch dafür stellt Martin Seener ein Skript zur Verfügung.
 
 Dieser Check ist der erste in einer `Sammlung
 <https://github.com/martinseener/tinkerforge-nagios-checks>`__ von Nagios Checks
