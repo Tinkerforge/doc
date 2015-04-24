@@ -6,8 +6,7 @@ import sys
 
 import generate_tables
 
-bindings = generate_tables.bindings
-
+binding_infos = generate_tables.binding_infos
 lang = 'en'
 
           # url_part, display_name
@@ -150,7 +149,6 @@ Falls dies nicht der Fall ist sollte
 <<<intro
 """
 }
-
 
 remote_switch_example_line = {
 'en':
@@ -304,7 +302,6 @@ dargestellt.
 <<<goals
 """
 }
-
 
 smoke_detector_example_line = {
 'en':
@@ -663,7 +660,6 @@ smoke_detector_steps = {
 """
 }
 
-
 garage_control_intro = {
 'en':
 """
@@ -879,7 +875,6 @@ garage_control_steps = {
  Das Hauptprogramm in einem Stück
 """
 }
-
 
 power_outlet_control_intro = {
 'en':
@@ -1098,66 +1093,64 @@ power_outlet_control_steps = {
 """
 }
 
-
 def make_substitutions():
     substitutions = ''
 
     formated_binding_names = []
-    for binding in bindings:
-        if binding.is_programming_language and binding.is_published:
-            formated_binding_names.append(binding_name[lang].format(binding.display_name, binding.url_part))
+    for binding_info in binding_infos:
+        if binding_info.is_programming_language and binding_info.is_released:
+            formated_binding_names.append(binding_name[lang].format(binding_info.display_name, binding_info.url_part))
 
     substitutions += binding_names[lang].format(', '.join(formated_binding_names)) + '\n'
 
     example_lines = []
-    for binding in bindings:
-        if binding.url_part in examples and binding.is_programming_language and binding.is_published:
-            example_lines.append(smoke_detector_example_line[lang].format(examples[binding.url_part], binding.url_part))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples and binding_info.is_programming_language and binding_info.is_released:
+            example_lines.append(smoke_detector_example_line[lang].format(examples[binding_info.url_part], binding_info.url_part))
 
     substitutions += smoke_detector_examples[lang].format(', '.join(example_lines))
 
     examples_toctree_lines = []
-    for binding in bindings:
-        if binding.url_part in examples and binding.is_programming_language and binding.is_published:
-            examples_toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding.url_part_for_doc))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples and binding_info.is_programming_language and binding_info.is_released:
+            examples_toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
 
     substitutions += smoke_detector_examples_toctree[lang].format('\n'.join(examples_toctree_lines))
 
     example_download_lines = []
-    for binding in bindings:
-        if binding.url_part in examples and binding.is_programming_language and binding.is_published:
-            example_download_lines.append(smoke_detector_example_download_line[lang].format(examples[binding.url_part], binding.url_part))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples and binding_info.is_programming_language and binding_info.is_released:
+            example_download_lines.append(smoke_detector_example_download_line[lang].format(examples[binding_info.url_part], binding_info.url_part))
 
     substitutions += smoke_detector_example_downloads[lang].format(', '.join(example_download_lines))
 
-
     example_lines = []
-    for binding in bindings:
-        if binding.url_part in examples:
-            example_lines.append(remote_switch_example_line[lang].format(examples[binding.url_part], binding.url_part))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples:
+            example_lines.append(remote_switch_example_line[lang].format(examples[binding_info.url_part], binding_info.url_part))
 
     substitutions += remote_switch_examples[lang].format(', '.join(example_lines))
 
     examples_toctree_lines = []
-    for binding in bindings:
-        if binding.url_part in examples:
-            examples_toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding.url_part_for_doc))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples:
+            examples_toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
 
     substitutions += remote_switch_examples_toctree[lang].format('\n'.join(examples_toctree_lines))
 
     example_download_lines = []
-    for binding in bindings:
-        if binding.url_part in examples:
-            example_download_lines.append(remote_switch_example_download_line[lang].format(examples[binding.url_part], binding.url_part))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples:
+            example_download_lines.append(remote_switch_example_download_line[lang].format(examples[binding_info.url_part], binding_info.url_part))
 
     substitutions += remote_switch_example_downloads[lang].format(', '.join(example_download_lines))
 
     return substitutions
 
-def make_common_substitutions(binding):
+def make_common_substitutions(binding_info):
     substitutions = ''
-    if binding.url_part in examples:
-        substitutions += common_intro[lang].format(examples[binding.url_part], binding.url_part, binding.tutorial)
+    if binding_info.url_part in examples:
+        substitutions += common_intro[lang].format(examples[binding_info.url_part], binding_info.url_part, binding_info.tutorial[lang])
 
     return substitutions
 
@@ -1191,12 +1184,11 @@ def make_smoke_detector_substitutions():
 
 def make_smoke_detector_toctree():
     toctree_lines = []
-    for binding in bindings:
-        if binding.url_part in examples:
-            toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding.url_part_for_doc))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples:
+            toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
 
     return smoke_detector_examples_toctree[lang].format('\n'.join(toctree_lines))
-
 
 def make_remote_switch_substitutions():
     substitutions = ''
@@ -1207,12 +1199,11 @@ def make_remote_switch_substitutions():
 
 def make_remote_switch_toctree():
     toctree_lines = []
-    for binding in bindings:
-        if binding.url_part in examples:
-            toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding.url_part_for_doc))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples:
+            toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
 
     return remote_switch_examples_toctree[lang].format('\n'.join(toctree_lines))
-
 
 def make_garage_control_substitutions():
     substitutions = ''
@@ -1224,7 +1215,6 @@ def make_garage_control_substitutions():
 
     return substitutions
 
-
 def make_power_outlet_control_substitutions():
     substitutions = ''
     substitutions += power_outlet_control_intro[lang] + '\n'
@@ -1234,7 +1224,6 @@ def make_power_outlet_control_substitutions():
     substitutions += '<<<substitutions\n'
 
     return substitutions
-
 
 def write_if_changed(path, content):
     if os.path.exists(path):
@@ -1264,10 +1253,10 @@ def generate(path):
     print 'Generating HardwareHacking.substitutions'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'HardwareHacking.substitutions'), make_substitutions())
 
-    for binding in bindings:
-        if binding.url_part in examples:
-            print 'Generating {0}Common.substitutions (HardwareHacking)'.format(binding.url_part_for_doc)
-            write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding.url_part_for_doc + 'Common.substitutions'), make_common_substitutions(binding))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples:
+            print 'Generating {0}Common.substitutions (HardwareHacking)'.format(binding_info.software_doc_suffix)
+            write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', binding_info.software_doc_suffix + 'Common.substitutions'), make_common_substitutions(binding_info))
 
     print 'Generating AndroidCommon.substitutions (HardwareHacking)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'HardwareHacking', 'AndroidCommon.substitutions'), make_android_common_substitutions())

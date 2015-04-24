@@ -6,7 +6,7 @@ import sys
 
 import generate_tables
 
-bindings = generate_tables.bindings
+binding_infos = generate_tables.binding_infos
 lang = 'en'
 
           # url_part, display_name
@@ -501,32 +501,33 @@ def make_substitutions():
     substitutions = ''
 
     formated_binding_names = []
-    for binding in bindings:
-        if binding.is_programming_language and binding.is_published:
-            formated_binding_names.append(binding_name[lang].format(binding.display_name, binding.url_part))
+    for binding_info in binding_infos:
+        if binding_info.is_programming_language and binding_info.is_released:
+            formated_binding_names.append(binding_name[lang].format(binding_info.display_name, binding_info.url_part))
 
     substitutions += binding_names[lang].format(', '.join(formated_binding_names)) + '\n'
 
     example_lines = []
-    for binding in bindings:
-        if binding.url_part in examples and binding.is_programming_language and binding.is_published:
-            example_lines.append(write_to_lcd_example_line[lang].format(examples[binding.url_part], binding.url_part))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples and binding_info.is_programming_language and binding_info.is_released:
+            example_lines.append(write_to_lcd_example_line[lang].format(examples[binding_info.url_part], binding_info.url_part))
 
     substitutions += write_to_lcd_examples[lang].format(', '.join(example_lines))
 
     example_download_lines = []
-    for binding in bindings:
-        if binding.url_part in examples and binding.is_programming_language and binding.is_published:
-            example_download_lines.append(write_to_lcd_example_download_line[lang].format(examples[binding.url_part], binding.url_part))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples and binding_info.is_programming_language and binding_info.is_released:
+            example_download_lines.append(write_to_lcd_example_download_line[lang].format(examples[binding_info.url_part], binding_info.url_part))
 
     substitutions += write_to_lcd_example_downloads[lang].format(', '.join(example_download_lines))
 
     return substitutions
 
-def make_common_substitutions(binding):
+def make_common_substitutions(binding_info):
     substitutions = ''
-    if binding.url_part in examples:
-        substitutions += common_intro[lang].format(examples[binding.url_part], binding.url_part, binding.tutorial)
+
+    if binding_info.url_part in examples:
+        substitutions += common_intro[lang].format(examples[binding_info.url_part], binding_info.url_part, binding_info.tutorial[lang])
 
     return substitutions
 
@@ -541,9 +542,9 @@ def make_write_to_lcd_substitutions():
 
 def make_write_to_lcd_toctree():
     toctree_lines = []
-    for binding in bindings:
-        if binding.url_part in examples:
-            toctree_lines.append(write_to_lcd_examples_toctree_line[lang].format(binding.url_part_for_doc))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples:
+            toctree_lines.append(write_to_lcd_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
 
     return write_to_lcd_examples_toctree[lang].format('\n'.join(toctree_lines))
 
@@ -575,10 +576,10 @@ def generate(path):
     print 'Generating WeatherStation.substitutions'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WeatherStation.substitutions'), make_substitutions())
 
-    for binding in bindings:
-        if binding.url_part in examples:
-            print 'Generating {0}Common.substitutions (WeatherStation)'.format(binding.url_part_for_doc)
-            write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding.url_part_for_doc + 'Common.substitutions'), make_common_substitutions(binding))
+    for binding_info in binding_infos:
+        if binding_info.url_part in examples:
+            print 'Generating {0}Common.substitutions (WeatherStation)'.format(binding_info.software_doc_suffix)
+            write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', binding_info.software_doc_suffix + 'Common.substitutions'), make_common_substitutions(binding_info))
 
     print 'Generating WriteToLCD.substitutions (WeatherStation)'
     write_if_changed(os.path.join(path, 'source', 'Kits', 'WeatherStation', 'WriteToLCD.substitutions'), make_write_to_lcd_substitutions())

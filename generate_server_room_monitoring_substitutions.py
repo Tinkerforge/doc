@@ -6,7 +6,7 @@ import sys
 
 import generate_tables
 
-bindings = generate_tables.bindings
+binding_infos = generate_tables.binding_infos
 lang = 'en'
 
 binding_name = {
@@ -31,9 +31,9 @@ def make_substitutions():
     substitutions = ''
 
     formated_binding_names = []
-    for binding in bindings:
-        if binding.is_programming_language and binding.is_published:
-            formated_binding_names.append(binding_name[lang].format(binding.display_name, binding.url_part))
+    for binding_info in binding_infos:
+        if binding_info.is_programming_language and binding_info.is_released:
+            formated_binding_names.append(binding_name[lang].format(binding_info.display_name, binding_info.url_part))
 
     substitutions += binding_names[lang].format(', '.join(formated_binding_names)) + '\n'
 

@@ -4,77 +4,10 @@
 import os
 import sys
 
+sys.path.append(os.path.join(os.getcwd(), '..', '..', 'generators'))
+from device_infos import brick_infos, bricklet_infos
+
 lang = 'en'
-
-          # display,        uri
-bricks = [('DC Brick',      'dc'),
-          ('Debug Brick',   'debug'),
-          ('IMU Brick',     'imu'),
-          ('IMU Brick 2.0', 'imu_v2'),
-          ('Master Brick',  'master'),
-          ('RED Brick',     'red'),
-          ('Servo Brick',   'servo'),
-          ('Stepper Brick', 'stepper')]
-
-             # display,                             uri
-bricklets = [('AC Current Bricklet',                'ac_current'),
-             ('Accelerometer Bricklet',             'accelerometer'),
-             ('Ambient Light Bricklet',             'ambient_light'),
-             ('Ambient Light Bricklet 2.0',         'ambient_light_v2'),
-             ('Analog In Bricklet',                 'analog_in'),
-             ('Analog In Bricklet 2.0',             'analog_in_v2'),
-             ('Analog Out Bricklet',                'analog_out'),
-             ('Analog Out Bricklet 2.0',            'analog_in_v2'),
-             ('Barometer Bricklet',                 'barometer'),
-             ('Breakout Bricklet',                  'breakout'),
-             ('Color Bricklet',                     'color'),
-             ('Current12 Bricklet',                 'current12'),
-             ('Current25 Bricklet',                 'current25'),
-             ('Distance IR Bricklet',               'distance_ir'),
-             ('Distance US Bricklet',               'distance_us'),
-             ('Dual Button Bricklet',               'dual_button'),
-             ('Dual Relay Bricklet',                'dual_relay'),
-             ('Gas Detector Bricklet',              'gas_detector'),
-             ('GPS Bricklet',                       'gps'),
-             ('Hall Effect Bricklet',               'hall_effect'),
-             ('Heart Rate Bricklet',                'heart_rate'),
-             ('Humidity Bricklet',                  'humidity'),
-             ('Industrial Analog Out Bricklet',     'industrial_analog_out'),
-             ('Industrial Digital In 4 Bricklet',   'industrial_digital_in_4'),
-             ('Industrial Digital Out 4 Bricklet',  'industrial_digital_out_4'),
-             ('Industrial Dual 0-20mA Bricklet',    'industrial_dual_0_20ma'),
-             ('Industrial Dual Analog In Bricklet', 'industrial_dual_analog_in'),
-             ('Industrial Quad Relay Bricklet',     'industrial_quad_relay'),
-             ('IO-16 Bricklet',                     'io16'),
-             ('IO-4 Bricklet',                      'io4'),
-             ('Joystick Bricklet',                  'joystick'),
-             ('Laser Range Finder Bricklet',        'laser_range_finder'),
-             ('LCD 16x2 Bricklet',                  'lcd_16x2'),
-             ('LCD 20x4 Bricklet',                  'lcd_20x4'),
-             ('LED Strip Bricklet',                 'led_strip'),
-             ('Line Bricklet',                      'line'),
-             ('Linear Poti Bricklet',               'linear_poti'),
-             ('Load Cell Bricklet',                 'load_cell'),
-             ('Moisture Bricklet',                  'moisture'),
-             ('Motion Detector Bricklet',           'motion_detector'),
-             ('Multi Touch Bricklet',               'multi_touch'),
-             ('NFC/RFID Bricklet',                  'nfc_rfid'),
-             ('Piezo Buzzer Bricklet',              'piezo_buzzer'),
-             ('Piezo Speaker Bricklet',             'piezo_speaker'),
-             ('PTC Bricklet',                       'ptc'),
-             ('Remote Switch Bricklet',             'remote_switch'),
-             ('Rotary Encoder Bricklet',            'rotary_encoder'),
-             ('Rotary Poti Bricklet',               'rotary_poti'),
-             ('RS232 Bricklet',                     'rs232'),
-             ('Segment Display 4x7 Bricklet',       'segment_display_4x7'),
-             ('Solid State Relay Bricklet',         'solid_state_relay'),
-             ('Sound Intensity Bricklet',           'sound_intensity'),
-             ('Temperature Bricklet',               'temperature'),
-             ('Temperature IR Bricklet',            'temperature_ir'),
-             ('Tilt Bricklet',                      'tilt'),
-             ('Voltage Bricklet',                   'voltage'),
-             ('Voltage/Current Bricklet',           'voltage_current'),
-            ]
 
 ipcon_common = {
 'en': """
@@ -144,14 +77,14 @@ brick_test_pi_ref = {
 'en':
 """.. |test_pi_ref| replace::
  After this test you can go on with writing your own application.
- See the :ref:`Programming Interface <{1}_brick_programming_interface>`
+ See the :ref:`Programming Interface <{1}_programming_interface>`
  section for the API of the {0} and examples in different programming
  languages.
 """,
 'de':
 """.. |test_pi_ref| replace::
  Nun kann ein eigenes Programm geschrieben werden. Der Abschnitt
- :ref:`Programmierschnittstelle <{1}_brick_programming_interface>` listet die
+ :ref:`Programmierschnittstelle <{1}_programming_interface>` listet die
  API des {0} und Beispiele in verschiedenen Programmiersprachen auf.
 """
 }
@@ -251,14 +184,14 @@ bricklet_test_pi_ref = {
 'en':
 """.. |test_pi_ref| replace::
  After this test you can go on with writing your own application.
- See the :ref:`Programming Interface <{1}_bricklet_programming_interface>`
+ See the :ref:`Programming Interface <{1}_programming_interface>`
  section for the API of the {0} and examples in different programming
  languages.
 """,
 'de':
 """.. |test_pi_ref| replace::
  Nun kann ein eigenes Programm geschrieben werden. Der Abschnitt
- :ref:`Programmierschnittstelle <{1}_bricklet_programming_interface>` listet
+ :ref:`Programmierschnittstelle <{1}_programming_interface>` listet
  die API des {0} und Beispiele in verschiedenen
  Programmiersprachen auf.
 """
@@ -270,24 +203,24 @@ def make_ipcon_substitutions():
 
     return substitutions
 
-def make_brick_substitutions(brick):
+def make_brick_substitutions(brick_info):
     substitutions = ''
-    substitutions += brick_test_intro[lang].format(brick[0]) + '\n'
-    substitutions += brick_test_tab[lang].format(brick[0]) + '\n'
-    substitutions += brick_test_pi_ref[lang].format(brick[0], brick[1])
+    substitutions += brick_test_intro[lang].format(brick_info.long_display_name) + '\n'
+    substitutions += brick_test_tab[lang].format(brick_info.long_display_name) + '\n'
+    substitutions += brick_test_pi_ref[lang].format(brick_info.long_display_name, brick_info.ref_name)
 
     return substitutions
 
-def make_bricklet_substitutions(bricklet):
+def make_bricklet_substitutions(bricklet_info):
     substitutions = ''
     substitutions += '>>>substitutions\n'
-    substitutions += bricklet_test_intro[lang].format(bricklet[0]) + '\n'
-    substitutions += bricklet_test_connect[lang].format(bricklet[0]) + '\n'
-    substitutions += bricklet_test_tab[lang].format(bricklet[0]) + '\n'
-    substitutions += bricklet_test_pi_ref[lang].format(bricklet[0], bricklet[1]) + '\n'
+    substitutions += bricklet_test_intro[lang].format(bricklet_info.long_display_name) + '\n'
+    substitutions += bricklet_test_connect[lang].format(bricklet_info.long_display_name) + '\n'
+    substitutions += bricklet_test_tab[lang].format(bricklet_info.long_display_name) + '\n'
+    substitutions += bricklet_test_pi_ref[lang].format(bricklet_info.long_display_name, bricklet_info.ref_name) + '\n'
     substitutions += bricklet_case_hint[lang] + '\n'
     substitutions += '<<<substitutions\n'
-    substitutions += bricklet_case_steps[lang].format(bricklet[0]) + '\n'
+    substitutions += bricklet_case_steps[lang].format(bricklet_info.long_display_name) + '\n'
 
     return substitutions
 
@@ -316,17 +249,13 @@ def generate(path):
 
     write_if_changed(os.path.join(path, 'source', 'Software', 'IPConnection_Common.substitutions'), make_ipcon_substitutions())
 
-    for brick in bricks:
-        name = ' '.join([a for a in brick[0].split(' ') if a != 'Brick']).replace(' ', '_').replace('-', '').replace('/', '_').replace('2.0', 'V2')
+    for brick_info in brick_infos:
+        print 'Generating {0}.substitutions (Hardware)'.format(brick_info.hardware_doc_name)
+        write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', brick_info.hardware_doc_name + '.substitutions'), make_brick_substitutions(brick_info))
 
-        print 'Generating {0}_Brick.substitutions (Hardware)'.format(name)
-        write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', name + '_Brick.substitutions'), make_brick_substitutions(brick))
-
-    for bricklet in bricklets:
-        name = ' '.join([a for a in bricklet[0].split(' ') if a != 'Bricklet']).replace(' ', '_').replace('-', '').replace('/', '_').replace('2.0', 'V2')
-
-        print 'Generating {0}.substitutions (Hardware)'.format(name)
-        write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', name + '.substitutions'), make_bricklet_substitutions(bricklet))
+    for bricklet_info in bricklet_infos:
+        print 'Generating {0}.substitutions (Hardware)'.format(bricklet_info.hardware_doc_name)
+        write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', bricklet_info.hardware_doc_name + '.substitutions'), make_bricklet_substitutions(bricklet_info))
 
 if __name__ == "__main__":
     generate(os.getcwd())
