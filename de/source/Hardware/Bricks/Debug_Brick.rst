@@ -95,9 +95,10 @@ Ressourcen
 Bekannte Fehler/Probleme
 ------------------------
 
-Bei dem Debug Brick Hardware Version 1.1 sind die GND Pins des JTAG Steckers
-nicht verbunden. Dies kann zu Problemen mit der JTAG Verbindung führen. Die 
-serielle Konsole ist davon nicht betroffen. Das JTAG Problem kann über das 
+Bei dem (nicht mehr verkauften) Debug Brick mit Hardware Version 1.1 sind die 
+GND Pins des JTAG Steckers nicht verbunden. Dies kann zu Problemen mit der JTAG 
+Verbindung führen. Die serielle Konsole ist davon nicht betroffen.
+Das JTAG Problem kann über das 
 Anlöten eines  Drähtchens zwischen einem GND Pin des JTAG Steckers und GND auf 
 der Platine behoben werden. Der Fehler wird in der nächsten Hardwareversion 
 behoben.

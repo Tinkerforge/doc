@@ -94,9 +94,10 @@ Resources
 Known Bugs
 ----------
 
-Debug Brick Hardware Version 1.1 has a design flaw. GND pins of the JTAG 
-connector are not connected. This can lead to debug problems when using the
-JTAG interface. The serial console is not affected. The problem can be fixed
+The (now obsolete) Debug Brick Hardware Version 1.1 has a design flaw. 
+GND pins of the JTAG connector are not connected. 
+This can lead to debug problems when using the JTAG interface. 
+The serial console is not affected. The problem can be fixed
 by soldering a wire from a GND pin of the JTAG connector to a GND pad on the
 board. This issue will be fixed with the next hardware version. 
 
