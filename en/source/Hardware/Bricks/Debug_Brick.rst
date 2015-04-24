@@ -11,24 +11,29 @@ Debug Brick
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricks/brick_debug_tilted_front_350.jpg",
-	               "Bricks/brick_debug_tilted_front_600.jpg",
+	    tfdocstart("Bricks/brick_debug12_tilted_350.jpg",
+	               "Bricks/brick_debug12_tilted_800.jpg",
 	               "Debug Brick")
 	}}
 	{{
-	    tfdocimg("Bricks/brick_debug_tilted_back_100.jpg",
-	             "Bricks/brick_debug_tilted_back_600.jpg",
-	             "Debug Brick")
+	    tfdocimg("Bricks/brick_debug12_w_headers_100.jpg",
+	             "Bricks/brick_debug12_w_headers_800.jpg",
+	             "Debug Brick with headers soldered in")
 	}}
 	{{
-	    tfdocimg("Bricks/brick_debug_top_100.jpg",
-	             "Bricks/brick_debug_top_600.jpg",
+	    tfdocimg("Bricks/brick_debug12_top_100.jpg",
+	             "Bricks/brick_debug12_top_800.jpg",
 	             "Debug Brick top")
 	}}
 	{{
-	    tfdocimg("Bricks/brick_debug_bottom_100.jpg",
-	             "Bricks/brick_debug_bottom_600.jpg",
+	    tfdocimg("Bricks/brick_debug12_bottom_100.jpg",
+	             "Bricks/brick_debug12_bottom_800.jpg",
 	             "Debug Brick bottom")
+	}}
+	{{
+	    tfdocimg("Bricks/brick_debug12_stack_100.jpg",
+	             "Bricks/brick_debug12_stack_800.jpg",
+	             "Debug Brick on stack")
 	}}
 	{{
 	    tfdocimg("Dimensions/debug_brick_dimensions_100.png",
