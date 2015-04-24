@@ -337,7 +337,7 @@ for more information about the web interface. Basically you can call
 your start point ``index.html``, ``index.php`` or ``index.py`` and it will
 automatically be used as a directory index.
 
-Our simple Temperature Bicklet program as a web interface looks as follows
+Our simple Temperature Bricklet program as a web interface looks as follows
 (Python and PHP):
 
 `Download (index.py) <https://raw.githubusercontent.com/Tinkerforge/doc/master/en/source/Tutorials/Tutorial_RED_Brick/index.py>`__

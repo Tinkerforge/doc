@@ -53,7 +53,7 @@ Analog In Bricklet
 
 .. note::
 
- The Analog In Bricklet is discontinued. The more precise
+ The Analog In Bricklet is discontinued and is no longer sold. The more precise
  :ref:`Voltage/Current Bricklet <voltage_current_bricklet>` is the recommended
  replacement.
 

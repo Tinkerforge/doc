@@ -59,9 +59,14 @@ The Debug Brick can be used to add JTAG and serial console debug capabilities
 to :ref:`Bricks <primer_bricks>`,
 :ref:`Bricklets <primer_bricklets>` and :ref:`stacks <primer_stack>`.
 
-.. note::
- You only need the Debug Brick if you want to debug the low level C firmware
- of Bricks or Bricklets. It does not add any features for PC based programming.
+You only need the Debug Brick if you want to debug the low level C firmware
+of Bricks or Bricklets. It does not add any features for PC based programming.
+
+In hardware version 1.2 the D-Sub 9 connector got replaced with a Mini-USB
+connector and a Silicon Labs CP2104 USB-to-serial converter. This
+converter requires and extra driver that can be downloaded from the
+`Silicon Labs <https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>`__
+website.
 
 
 Technical Specifications
@@ -70,11 +75,9 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Dimensions (W x D x H)            40 x 40 x 8mm (1.57 x 1.57 x 0.31")*
-Weight                            18g
+Dimensions (W x D x H)            40 x 40 x 8mm (1.57 x 1.57 x 0.31")
+Weight                            8g
 ================================  ============================================================
-
-\* without connectors
 
 
 Resources
@@ -99,5 +102,3 @@ board. This issue will be fixed with the next hardware version.
    :alt: Debug Brick with Wire
    :align: center
    :target: ../../_images/Bricks/brick_debug_wire_fix_1000.jpg
-
-

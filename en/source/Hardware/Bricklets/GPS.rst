@@ -120,10 +120,10 @@ The connector is short-circuit protected and supplies the antenna with
 Property                          Value
 ================================  ============================================================
 Polarization                      Right-hand circular polarized
-Frequency Received                1.57542GHz +/- 1.023MHz
-Power Supply                      3.0V - 3.6V, 4mA - 20mA
+Frequency Received                1.57542GHz ± 1.023MHz
+Power Supply                      3.0V to 3.6V with 4mA to 20mA
 Gain                              > +15dBi
-Impedance                         50 Ohm
+Impedance                         50Ω
 Noise Figure                      < 1.5dB
 ================================  ============================================================
 

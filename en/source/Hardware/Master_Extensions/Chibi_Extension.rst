@@ -31,6 +31,11 @@ Chibi Extension
 	}}
 	{{ tfdocend() }}
 
+.. note::
+
+ The Chibi Extension is discontinued and is no longer sold. Depending on the
+ use-case the :ref:`WIFI Extension <wifi_extension>` can be a replacement.
+
 
 Features
 --------

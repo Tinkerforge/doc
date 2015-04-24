@@ -119,10 +119,10 @@ Die externe Antennen sollte folgende Anforderungen erfüllen:
 Eigenschaft                       Wert
 ================================  ============================================================
 Polarisation                      Rechtsdrehend polarisiert
-Frequenzbereich                   1,57542GHz +/- 1,023MHz
-Stromversorgung                   3,0V - 3,6V, 4mA - 20mA
+Frequenzbereich                   1,57542GHz ± 1,023MHz
+Stromversorgung                   3,0V bis 3,6V mit 4mA bis 20mA
 Verstärkung                       > +15dBi
-Impedanz                          50 Ohm
+Impedanz                          50Ω
 Rauschfaktor                      < 1,5dB
 ================================  ============================================================
 

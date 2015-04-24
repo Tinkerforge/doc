@@ -126,14 +126,14 @@ Two different applications are possible:
    Rules can be defined for sensors that are directly connected, but also for other 
    Tinkerforge sensors available in the network. The defined rules 
    configure an instance of Nagios that runs on the RED Brick. The Nagios 
-   web interface shows current monitoring values and currrently existing problems.
+   web interface shows current monitoring values and currently existing problems.
    More information can be found in the 
    :ref:`RED Brick section <starter_kit_server_room_monitoring_red_brick>`  
    of the Server Room Monitoring documentation.
 
    Advanced users can easily modify the Nagios installation that runs on the
    RED Brick to change configurations that go beyond the Brick Viewer
-   possbilities.
+   possibilities.
    
 The kit can be powered through 
 `Power over Ethernet (PoE) <https://de.wikipedia.org/wiki/Power_over_Ethernet>`__

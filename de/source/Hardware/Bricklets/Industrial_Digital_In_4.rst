@@ -93,7 +93,7 @@ Eigenschaft                       Wert
 Stromverbrauch                    1mA
 --------------------------------  -----------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------
-Eingangstyp                       Vier opto-gekoppelte Eingänge (4,7k Ohm Vorwiderstand enthalten)
+Eingangstyp                       Vier opto-gekoppelte Eingänge (4,7kΩ Vorwiderstand enthalten)
 Eingangsstrom                     Abhängig von der Eingangsspannung: ca. 1mA/5V, ca. 5mA/24V
 Maximale Eingangsspannung         36V (DC)
 Low Level Spannung                0-2V

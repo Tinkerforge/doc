@@ -12,7 +12,7 @@ heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
 * in ``source/`` den Quelltext der Bindings (installierbar mit ``Makefile.PL``
-  Script)
+  Skript)
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets
 
 
@@ -59,7 +59,7 @@ Package beinhaltet keine Beispiele. Diese sind als Teil der :ref:`ZIP Datei
 Vom Quelltext
 ^^^^^^^^^^^^^
 
-Der ``source/`` Ordner beinhaltet ein ``Makefile.PL`` Script. Um die Bindings
+Der ``source/`` Ordner beinhaltet ein ``Makefile.PL`` Skript. Um die Bindings
 zu installieren müssen folgende Befehle im ``source/`` Ordner ausgeführt werden.
 Abhängig von der Art der Perl Installation muss dies möglicherweise mit
 ``sudo`` bzw. als Administrator ausgeführt werden::

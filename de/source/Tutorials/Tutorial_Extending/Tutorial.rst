@@ -127,7 +127,7 @@ Geschwindigkeit vorwärts laufen.
 **Zeile 25-27** sorgt dafür, dass das Programm weiter läuft bis die Enter Taste
 gedrückt wird. Der Motor wird danach abgeschaltet.
 
-Führe diese Python Script aus und verwende es oder eines der anderen Beispiele
+Führe diese Python Skript aus und verwende es oder eines der anderen Beispiele
 als Ausgangspunkt für ein eigenes Projekt.
 
 .. note::

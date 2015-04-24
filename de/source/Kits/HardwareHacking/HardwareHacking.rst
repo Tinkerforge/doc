@@ -420,7 +420,7 @@ Benachrichtigung durch die Türklingel
 
 In diesem Projekt verbinden wir das Industrial Digital In 4 Bricklet mit einer
 typischen, 12V betriebenen, Türklingel. Sobald jemand klingelt, wird unser
-Python-Script "Ring Ring Ring!" ausgeben. Dieses Projekt kann natürlich
+Python Skript "Ring Ring Ring!" ausgeben. Dieses Projekt kann natürlich
 erweitert werden, so dass eine SMS versendet wird oder dein Telefon klingelt 
 wenn jemand an der Tür ist. Sei kreativ!
 

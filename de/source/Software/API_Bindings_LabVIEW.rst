@@ -46,7 +46,7 @@ ist der ``vi.lib`` Ordern der LabVIEW Installation::
  C:\Programme\National Instruments\LabVIEW 2013\vi.lib\
 
 Dann kann LabVIEW die ``Tinkerforge.dll`` automatisch finden und nicht
-Nachfragen. Allderdings wird LabVIEW möglicherweise darüber warnen, dass
+Nachfragen. Allerdings wird LabVIEW möglicherweise darüber warnen, dass
 die DLL aus einen anderen Ordner geladen wurde. Diese Warnung kann ignoriert
 werden.
 

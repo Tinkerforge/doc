@@ -53,7 +53,7 @@ Oder auch installiert werden::
 
  make install
 
-Wireshark hat viele Abhängigkeiten. Das Configure-Script gibt die
+Wireshark hat viele Abhängigkeiten. Das Configure Skript gibt die
 fehlenden Abhängigkeiten aus. Auf Debian basierten System können
 alle notwendigen Abhängigkeiten wie folgt installiert werden::
 

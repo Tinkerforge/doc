@@ -46,6 +46,12 @@ Piezo Buzzer Bricklet
 	}}
 	{{ tfdocend() }}
 
+.. note::
+
+ Das Piezo Buzzer Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>`
+ empfohlen.
+
 
 Features
 --------

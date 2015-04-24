@@ -89,7 +89,7 @@ support by default. The `Octave Wiki
 <http://wiki.octave.org/Octave_for_Microsoft_Windows>`__ has a guide about
 how to set up Octave for Windows.
 
-You can test if Java support is avilable with the following command in Octave:
+You can test if Java support is available with the following command in Octave:
 
 .. code-block:: octave
 
