@@ -35,13 +35,14 @@ Debug Brick
 	             "Bricks/brick_debug12_stack_800.jpg",
 	             "Debug Brick auf Stapel")
 	}}
+	{{ tfdocend() }}
+
+.. FIXME: veraltet
 	{{
 	    tfdocimg("Dimensions/debug_brick_dimensions_100.png",
 	             "Dimensions/debug_brick_dimensions_600.png",
 	             "Umriss und Bohrplan")
 	}}
-	{{ tfdocend() }}
-
 
 Features
 --------
@@ -86,8 +87,10 @@ Ressourcen
 ----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/debug-brick/raw/master/hardware/debug-schematic.pdf>`__)
-* Umriss und Bohrplan (`Download <../../_images/Dimensions/debug_brick_dimensions.png>`__)
 * Platinenlayout (`Download <https://github.com/Tinkerforge/debug-brick/zipball/master>`__)
+
+.. FIXME: veraltet. gehört ursprünglich zwischen Schaltplan und Platinenlayout
+	* Umriss und Bohrplan (`Download <../../_images/Dimensions/debug_brick_dimensions.png>`__)
 
 Bekannte Fehler/Probleme
 ------------------------

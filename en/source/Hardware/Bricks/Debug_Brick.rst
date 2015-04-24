@@ -35,13 +35,14 @@ Debug Brick
 	             "Bricks/brick_debug12_stack_800.jpg",
 	             "Debug Brick on stack")
 	}}
+	{{ tfdocend() }}
+
+.. FIXME: outdated
 	{{
 	    tfdocimg("Dimensions/debug_brick_dimensions_100.png",
 	             "Dimensions/debug_brick_dimensions_600.png",
 	             "Outline and drilling plan")
 	}}
-	{{ tfdocend() }}
-
 
 Features
 --------
@@ -84,8 +85,10 @@ Resources
 ---------
 
 * Schematic (`Download <https://github.com/Tinkerforge/debug-brick/raw/master/hardware/debug-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/debug_brick_dimensions.png>`__)
 * Design files (`Download <https://github.com/Tinkerforge/debug-brick/zipball/master>`__)
+
+.. FIXME: outdated. originally belongs between Schematic and Design files
+	* Outline and drilling plan (`Download <../../_images/Dimensions/debug_brick_dimensions.png>`__)
 
 
 Known Bugs
