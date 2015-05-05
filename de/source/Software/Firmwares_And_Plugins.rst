@@ -86,11 +86,11 @@ Jetzt sind Compiler und Tools bereit um von der Kommandozeile aus benutzt zu
 werden.
 
 
-Brick Firmware oder Bricklet Plugin kompilieren
------------------------------------------------
+Firmwares und Plugins kompilieren
+---------------------------------
 
 Es folgen detaillierte Beschreibungen wie man den nötigen Quelltext von GitHub
-herunterlädt und diesen kompiliert für:
+herunterlädt und diesen kompiliert:
 
 * :ref:`Brick Firmwares <building_brick_firmware>`
 * :ref:`Bricklet Plugins <building_bricklet_plugin>`

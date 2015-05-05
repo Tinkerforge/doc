@@ -83,11 +83,11 @@ You should see some version information about CMake and make.
 Now the compiler and tools are ready to be used from a terminal.
 
 
-Building a Brick Firmware or a Bricklet Plugin
-----------------------------------------------
+Building Firmwares and Plugins
+------------------------------
 
 There are detailed descriptions about how to get the necessary source code
-from GitHub and how to compile it for:
+from GitHub and how to compile it:
 
 * :ref:`Brick Firmwares <building_brick_firmware>`
 * :ref:`Bricklet Plugins <building_bricklet_plugin>`
