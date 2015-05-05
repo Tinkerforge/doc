@@ -6,7 +6,7 @@
 Brick Daemon Installation auf Mac OS X
 ======================================
 
-**Voraussetzungen**: Mac OS X 10.7 (Lion) oder neuer
+**Voraussetzungen**: Mac OS X 10.8 (Mountain Lion) oder neuer
 
 Der :ref:`Brick Daemon <brickd>` kann mittels einer ``.dmg`` Datei
 installiert werden.
