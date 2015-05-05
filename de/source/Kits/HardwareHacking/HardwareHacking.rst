@@ -326,13 +326,13 @@ Minimalistische Beispiele sind verfügbar in:
 
 |remote_switch_examples|
 
-.. include:: SmokeDetector.toctree
-
 .. toctree::
    :hidden:
 
    RemoteSwitch_HardwareSetup
    RemoteSwitchGUI_CSharp
+
+.. include:: RemoteSwitch.toctree
 
 
 .. _starter_kit_hardware_hacking_smoke_detector:
@@ -365,12 +365,12 @@ Beispielimplementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar f
 
 |smoke_detector_examples|.
 
-.. include:: SmokeDetector.toctree
-
 .. toctree::
    :hidden:
 
    SmokeDetector_HardwareSetup
+
+.. include:: SmokeDetector.toctree
 
 
 .. _starter_kit_hardware_hacking_garage_control:

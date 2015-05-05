@@ -1110,13 +1110,6 @@ def make_substitutions():
 
     substitutions += smoke_detector_examples[lang].format(', '.join(example_lines))
 
-    examples_toctree_lines = []
-    for binding_info in binding_infos:
-        if binding_info.url_part in examples and binding_info.is_programming_language and binding_info.is_released:
-            examples_toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
-
-    substitutions += smoke_detector_examples_toctree[lang].format('\n'.join(examples_toctree_lines))
-
     example_download_lines = []
     for binding_info in binding_infos:
         if binding_info.url_part in examples and binding_info.is_programming_language and binding_info.is_released:
@@ -1130,13 +1123,6 @@ def make_substitutions():
             example_lines.append(remote_switch_example_line[lang].format(examples[binding_info.url_part], binding_info.url_part))
 
     substitutions += remote_switch_examples[lang].format(', '.join(example_lines))
-
-    examples_toctree_lines = []
-    for binding_info in binding_infos:
-        if binding_info.url_part in examples:
-            examples_toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
-
-    substitutions += remote_switch_examples_toctree[lang].format('\n'.join(examples_toctree_lines))
 
     example_download_lines = []
     for binding_info in binding_infos:
