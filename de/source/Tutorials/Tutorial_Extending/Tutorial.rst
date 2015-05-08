@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#tutorials-und-faq">Tutorials und FAQ</a> / Erste Schritte - Tutorial
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#einstieg">Einstieg</a> / Tutorial - Erste Schritte
 
 .. _tutorial_first_steps:
 
-Erste Schritte - Tutorial
+Tutorial - Erste Schritte
 =========================
 
 Das folgende Tutorial demonstriert wie :ref:`Bricks <primer_bricks>`

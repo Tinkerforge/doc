@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#tutorials-and-faq">Tutorials and FAQ</a> / RED Brick - Tutorial
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#getting-started">Getting Started</a> / Tutorial - RED Brick
 
 .. _tutorial_red_brick:
 
-RED Brick - Tutorial
+Tutorial - RED Brick
 ====================
 
 The following tutorial will demonstrate how to develop software with the

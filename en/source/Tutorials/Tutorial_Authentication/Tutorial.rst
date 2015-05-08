@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#tutorials-and-faq">Tutorials and FAQ</a> / Authentication - Tutorial
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#getting-started">Getting Started</a> / Tutorial - Authentication
 
 .. _tutorial_authentication:
 
-Authentication - Tutorial
+Tutorial - Authentication
 =========================
 
 By default no access control is performed on the TCP/IP interface of

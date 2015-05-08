@@ -8,14 +8,14 @@ Dokumentation
 #############
 
 
-.. _index_tutorials:
+.. _index_getting_started:
 
-***************************
-Einstieg, Tutorials und FAQ
-***************************
+********
+Einstieg
+********
 
 Eine allgemeine Beschreibung zu Bricks, Master Extensions Bricklets und den 
-Konzepten befindet sich in der :ref:`Allgemeinen Beschreibung <primer>`.
+Konzepten befindet sich in der allgemeinen :ref:`Einführung <primer>`.
 
 Tutorials führen in die Verwendung von Bricks und Bricklets und deren
 Konzepte ein:

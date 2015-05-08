@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction: Raspberry Pi Weather Station
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction - Raspberry Pi Weather Station
 
 .. _starter_kit_weather_station_construction_raspberry_pi:
 
-Construction: Raspberry Pi Weather Station
-==========================================
+Construction - Raspberry Pi Weather Station
+===========================================
 
 It is possible to control the Weather Station with an embedded board such as
 the :ref:`Raspberry Pi <embedded_raspberry_pi>`. You can put the Raspberry Pi

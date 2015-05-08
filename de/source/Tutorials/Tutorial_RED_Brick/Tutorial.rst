@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#tutorials-and-faq">Tutorials und FAQ</a> / RED Brick - Tutorial
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#einstieg">Einstieg</a> / Tutorial - RED Brick
 
 .. _tutorial_red_brick:
 
-RED Brick - Tutorial
+Tutorial - RED Brick
 ====================
 
 Das folgende Tutorial zeigt wie man mit dem

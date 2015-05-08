@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#tutorials-und-faq">Tutorials und FAQ</a> / Robuster Ansatz - Tutorial
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#einstieg">Einstieg</a> / Tutorial - Robuster Ansatz
 
 .. _tutorial_rugged_approach:
 
-Robuster Ansatz - Tutorial
+Tutorial - Robuster Ansatz
 ==========================
 
 Seit dem neuen Protokoll 2.0 ist es möglich Programme zu schreiben die

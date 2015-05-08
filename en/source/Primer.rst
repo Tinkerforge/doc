@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / Primer
+:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#getting-started">Getting Started</a> / Primer
 
 .. _primer:
 
@@ -13,8 +13,8 @@ product.
 
 .. _primer_products:
 
-Product Overview
-----------------
+Products
+--------
 
 Our products are divided into five different categories:
 

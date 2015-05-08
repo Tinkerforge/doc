@@ -8,14 +8,14 @@ Documentation
 #############
 
 
-.. _index_tutorials:
+.. _index_getting_started:
 
-*****************
-Tutorials and FAQ
-*****************
+***************
+Getting Started
+***************
 
 A general description of Bricks, Master Extensions Bricklets and concepts
-can be found in the :ref:`Primer <primer>`.
+can be found in the :ref:`primer <primer>`.
 
 These Tutorials are an introduction to the usage of Bricks and Bricklets
 and their concepts:

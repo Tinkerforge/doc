@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction: RED Brick Weather Station
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction - RED Brick Weather Station
 
 .. _starter_kit_weather_station_construction_red_brick:
 
-Construction: RED Brick Weather Station
-=======================================
+Construction - RED Brick Weather Station
+========================================
 
 It is possible to control the Weather Station without any external
 (Embedded-) PC by using a :ref:`RED Brick <red_brick>` mounted into the case.

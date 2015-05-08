@@ -1,12 +1,12 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction: Wi-Fi Weather Station
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction - Wi-Fi Weather Station
 
 .. include:: WeatherStation.substitutions
 
 .. _starter_kit_weather_station_construction_wifi:
 
-Construction: Wi-Fi Weather Station
-===================================
+Construction - Wi-Fi Weather Station
+====================================
 
 The Weather Station case is big enough to add a :ref:`WIFI Extension
 <wifi_extension>` for wireless controlling. In this tutorial we will use

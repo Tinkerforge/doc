@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#tutorials-und-faq">Tutorials und FAQ</a> / Authentifizierung - Tutorial
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#einstieg">Einstieg</a> / Tutorial - Authentifizierung
 
 .. _tutorial_authentication:
 
-Authentifizierung - Tutorial
+Tutorial - Authentifizierung
 ============================
 
 Standardmäßig wird auf der TCP/IP Schnittstelle des Brick Daemons und der

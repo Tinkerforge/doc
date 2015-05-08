@@ -1,12 +1,12 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#konstruktion">Starterkit: Wetterstation</a> / Konstruktion: WLAN Wetterstation
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#konstruktion">Starterkit: Wetterstation</a> / Konstruktion - WLAN Wetterstation
 
 .. include:: WeatherStation.substitutions
 
 .. _starter_kit_weather_station_construction_wifi:
 
-Konstruktion: WLAN Wetterstation
-================================
+Konstruktion - WLAN Wetterstation
+=================================
 
 Die Wetterstation ist groß genug um eine :ref:`WIFI Extension <wifi_extension>`
 einzubauen um die Station drahtlos zu steuern. In dieser Anleitung werden wir

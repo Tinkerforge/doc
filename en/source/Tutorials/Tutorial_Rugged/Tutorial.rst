@@ -1,9 +1,9 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#tutorials-and-faq">Tutorials and FAQ</a> / Rugged Approach - Tutorial
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#getting-started">Getting Started</a> / Tutorial - Rugged Approach
 
 .. _tutorial_rugged_approach:
 
-Rugged Approach - Tutorial
+Tutorial - Rugged Approach
 ==========================
 
 With the new Protocol 2.0, it is possible to write programs that are
