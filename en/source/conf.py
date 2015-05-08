@@ -18,6 +18,7 @@ import sys, os, socket
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.append(os.path.abspath('.'))
 
+
 # -- General configuration -----------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
@@ -43,7 +44,6 @@ extensions = ['sphinx.ext.pngmath',
 # Spell Check Stuff
 spelling_lang='en_US'
 spelling_word_list_filename='good_wordlist.txt'
-
 
 # Add any paths that contain templates here, relative to this directory.
 if socket.gethostname() != 'tinkerforge.com':
@@ -167,7 +167,7 @@ html_static_path = ['_static']
 #html_use_modindex = True
 
 # If false, no index is generated.
-#html_use_index = True
+html_use_index = False
 
 # If true, the index is split into individual pages for each letter.
 #html_split_index = False
