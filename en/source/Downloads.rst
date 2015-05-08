@@ -44,9 +44,9 @@ install the Brick Viewer and the Brick Daemon from source.
 Bindings and Examples
 ---------------------
 
-The ZIP for each language contains bindings for all Bricks and Bricklets and all
-available examples for the language. A tutorial on how to use the bindings can
-be found :ref:`here <api_bindings>`.
+The ZIP for each programming language contains bindings for all Bricks and
+Bricklets and all available examples for the language. A tutorial on how to use
+the API bindings can be found :ref:`here <api_bindings>`.
 
 .. include:: Downloads_bindings.table
 
@@ -65,6 +65,7 @@ documentation <red_brick_images>` for more details about the images.
  :widths: 17, 32, 5, 5, 8
 
  RED Brick Image | `Image <http://download.tinkerforge.com/red_images/full/red_image_1_6_full.img.7z>`__ | 1.6 | `Archive <http://download.tinkerforge.com/red_images/full/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_full>`__
+
 
 .. _downloads_firmwares_plugins:
 

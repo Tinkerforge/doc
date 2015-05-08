@@ -190,10 +190,10 @@ empfehlen wir derzeit Octave 3.6, in dieser Version tritt das Problem nicht auf
 und die Bindings funktionieren in vollem Umfang.
 
 
-API Dokumentation und Beispiele
--------------------------------
+API Referenz und Beispiele
+--------------------------
 
-Links zur API Dokumentation der IP Connection, Bricks und Bricklets sowie die
+Links zur API Referenz der IP Connection, Bricks und Bricklets sowie die
 Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
 aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.

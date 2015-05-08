@@ -80,7 +80,7 @@ language documentation for each Brick and Bricklet.
 
 In the following we will compare relevant code snippets from Protocol 1.0
 to equivalents from Protocol 2.0. Keep in mind that you need to use
-the :ref:`newest version of the Bindings <downloads_bindings_examples>` for 
+the :ref:`newest version of the bindings <downloads_bindings_examples>` for
 your programming languages to be able to utilize the new Protocol 2.0 features.
 
 

@@ -187,7 +187,7 @@ korrekt funktionieren auch nachdem alles in das Gehäuse geschraubt wurde.
 .. _starter_kit_weather_station_demo:
 
 Demo Anwendung
-^^^^^^^^^^^^^^
+--------------
 
 Wenn die Hardware korrekt funktioniert kann die Demo Anwendung zum
 Starterkit: Wetterstation getestet werden. Diese implementiert für
@@ -239,8 +239,7 @@ zu befestigen um weitere Sensoren auszulesen.
 Das benutzte PMMA Plastik ist einfach zu bearbeiten, so dass falls benötigt
 eigene Bohrlöcher oder Öffnungen geschaffen werden können.
 
-Verschiedene Aufbauvarianten
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hier sind vier verschiedene Aufbauvarianten:
 
 * :ref:`Wetterstation (Basisversion) <starter_kit_weather_station_construction_basic>`
 * :ref:`WLAN Wetterstation <starter_kit_weather_station_construction_wifi>`
@@ -254,9 +253,6 @@ Verschiedene Aufbauvarianten
    Construction_Wifi
    Construction_REDBrick
    Construction_RaspberryPi
-
-RS485, Ethernet, etc.
-"""""""""""""""""""""
 
 Die Wetterstation kann auch über RS485 oder Ethernet Extension
 gesteuert werden. Der Aufbau ist hierbei der selbe wie bei "WLAN Wetterstation"

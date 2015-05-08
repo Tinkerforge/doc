@@ -124,10 +124,10 @@ Now you're ready to test this example::
 
 .. _api_bindings_shell_links:
 
-API Documentation and Examples
-------------------------------
+API Reference and Examples
+--------------------------
 
-Links to the API documentation for the IP Connection, Bricks and Bricklets as
+Links to the API reference for the IP Connection, Bricks and Bricklets as
 well as the examples from the ZIP file of the bindings are listed in the
 following table. Further project descriptions can be found in the
 :ref:`Starter Kits <index_kits>` section.

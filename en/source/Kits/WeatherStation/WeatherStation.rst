@@ -185,7 +185,7 @@ enclosure.
 .. _starter_kit_weather_station_demo:
 
 Demo Application
-^^^^^^^^^^^^^^^^
+----------------
 
 If the hardware is running correctly you can also try the demo application for 
 this Starter Kit: Weather Station. It implements three of the presented
@@ -236,8 +236,7 @@ read out more sensors.
 The utilized PMMA plastic is easy to work with, so you will be able
 to add new holes or slots or similar if needed.
 
-Different Variants
-^^^^^^^^^^^^^^^^^^
+Here are four different construction variants:
 
 * :ref:`Basic Weather Station <starter_kit_weather_station_construction_basic>`
 * :ref:`Wi-Fi Weather Station <starter_kit_weather_station_construction_wifi>`
@@ -251,9 +250,6 @@ Different Variants
    Construction_Wifi
    Construction_REDBrick
    Construction_RaspberryPi
-
-RS485, Ethernet, etc.
-"""""""""""""""""""""
 
 We could also control the Weather Station with the RS485 or
 Ethernet Extension. The setup in this case is the same as with the "Wi-Fi

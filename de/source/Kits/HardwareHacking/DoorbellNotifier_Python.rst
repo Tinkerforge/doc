@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Benachrichtigung durch die Türklingel in Python
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Benachrichtigung durch die Türklingel mit Python
 
 .. _starter_kit_hardware_hacking_doorbell_notifier_python:
 
-Benachrichtigung durch die Türklingel in Python
-===============================================
+Benachrichtigung durch die Türklingel mit Python
+================================================
 
 .. include:: PythonCommon.substitutions
    :start-after: >>>intro

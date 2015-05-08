@@ -35,7 +35,7 @@ Firmware updating and first tests
 .. _starter_kit_camera_slider_demo:
 
 Demo Application
-^^^^^^^^^^^^^^^^
+----------------
 
 
 Construction
