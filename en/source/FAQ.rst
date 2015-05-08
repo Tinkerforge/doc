@@ -14,9 +14,9 @@ My Program only works if Brick Viewer is running
 ------------------------------------------------
 
 Your program is probably using callbacks, but is not activating them correctly.
-Brick Viewer also uses callbacks and activates them if you select the tab of
-a Brick or Bricklet. Because the callback configuration is global this activates
-the callback for your program to.
+Brick Viewer until version 2.2.3 also used callbacks and activated them if you
+selected the tab of a Brick or Bricklet. Because the callback configuration is
+global this activated the callback for your program too.
 
 To fix this problem you need to activate the callbacks you use in your program
 properly. See the documentation of the callback it tells you how to activate
