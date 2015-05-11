@@ -380,11 +380,6 @@ def make_api_bindings_links_table(binding_info):
     'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Beispiele <{0}_{1}_examples>`'
     }
 
-    bricklet_row = {
-    'en': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Examples <{0}_{1}_examples>`',
-    'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Beispiele <{0}_{1}_examples>`'
-    }
-
     brick_lines = []
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
         if brick_info.is_released and brick_info.has_bindings:
@@ -397,6 +392,50 @@ def make_api_bindings_links_table(binding_info):
 
     return table_head[lang].format(ipcon_row[lang].format(binding_info.url_part),
                                    '\n'.join(brick_lines),
+                                   '\n'.join(bricklet_lines))
+
+def make_llproto_links_table(binding_info):
+    table_head = {
+    'en': """.. csv-table::
+ :header: "", "API"
+ :delim: |
+ :widths: 20, 20
+
+ **Bricks** |
+{0}
+ |
+ **Bricklets** |
+{1}
+""",
+    'de': """.. csv-table::
+ :header: "", "API"
+ :delim: |
+ :widths: 20, 20
+
+ **Bricks** |
+{0}
+ |
+ **Bricklets** |
+{1}
+"""
+    }
+
+    device_row = {
+    'en': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>`',
+    'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>`'
+    }
+
+    brick_lines = []
+    for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
+        if brick_info.is_released and brick_info.has_bindings:
+            brick_lines.append(device_row[lang].format(brick_info.ref_name, binding_info.url_part, brick_info.short_display_name))
+
+    bricklet_lines = []
+    for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
+        if bricklet_info.is_released and bricklet_info.has_bindings:
+            bricklet_lines.append(device_row[lang].format(bricklet_info.ref_name, binding_info.url_part, bricklet_info.short_display_name))
+
+    return table_head[lang].format('\n'.join(brick_lines),
                                    '\n'.join(bricklet_lines))
 
 def make_source_code_gits_table():
@@ -911,11 +950,12 @@ def generate(path):
     write_if_changed(os.path.join(path, 'source', 'Tutorials', 'Tutorial_Authentication', 'Tutorial_authenticate_examples.table'), make_authentication_tutorial_examples_table())
 
     for binding_info in binding_infos:
-        if not binding_info.is_programming_language:
-            continue
-
-        print('Generating API_Bindings_{0}_links.table'.format(binding_info.software_doc_suffix))
-        write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_{0}_links.table'.format(binding_info.software_doc_suffix)), make_api_bindings_links_table(binding_info))
+        if binding_info.is_programming_language:
+            print('Generating API_Bindings_{0}_links.table'.format(binding_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_{0}_links.table'.format(binding_info.software_doc_suffix)), make_api_bindings_links_table(binding_info))
+        else:
+            print('Generating {0}_links.table'.format(binding_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', '{0}_links.table'.format(binding_info.software_doc_suffix)), make_llproto_links_table(binding_info))
 
     print('Generating Bricks.toctree')
     write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks.toctree'), make_devices_toctree(brick_infos, 'Brick'))

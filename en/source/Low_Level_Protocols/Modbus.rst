@@ -113,3 +113,13 @@ with either an empty request if you have no data to transfer or with
 a request with payload if you have data to transfer. This will ensure that
 no messages pile up in the RS485 slave stack and you will get the responses
 to function calls and callbacks with a reasonable latency.
+
+
+API
+---
+
+Links to the API reference for Bricks and Bricklets are listed in the
+following table. Further project descriptions can be found in the
+:ref:`Starter Kits <index_kits>` section.
+
+.. include:: Modbus_links.table

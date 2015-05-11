@@ -343,8 +343,8 @@ header has to be set to ``1`` (0 as integer) for broadcast.
  their UIDs beforehand.
 
 
-Callbacks
-^^^^^^^^^
+General Callbacks
+^^^^^^^^^^^^^^^^^
 
 .. tcpip:function:: CALLBACK_FORCED_ACK
 
@@ -398,3 +398,13 @@ Callbacks
  (as is done in Brick Viewer).
 
  The device identifier numbers can be found :ref:`here <device_identifier>`.
+
+
+Bricks and Bricklets
+^^^^^^^^^^^^^^^^^^^^
+
+Links to the API reference for Bricks and Bricklets are listed in the
+following table. Further project descriptions can be found in the
+:ref:`Starter Kits <index_kits>` section.
+
+.. include:: TCPIP_links.table
