@@ -29,7 +29,7 @@ Features
 Description
 -----------
 
-The IMU 2.0 Brick is the successor of the :ref:`IMU Brick <imu_bick>`. With
+The IMU 2.0 Brick is the successor of the :ref:`IMU Brick <imu_bick>`. It has
 higher resolution sensors, easier recalibration, additional 
 continuous calibration and an **accuracy increase by two orders of magnitude**.
 
