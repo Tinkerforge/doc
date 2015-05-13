@@ -17,21 +17,52 @@ Accelerometer Bricklet
 
 Features
 --------
-
+* 3-axis accelerometer
+* 0.001G steps with 16bit resolution
+* Up to ±16g full-scale range
+* Full 1kHz data rate with callbacks
 
 .. _accelerometer_bricklet_description:
 
 Description
 -----------
 
+The Accelerometer :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` with the
+capability to measure acceleration in x-, y- and z-axis. 
+The measured acceleration can be read out in 
+`G <http://en.wikipedia.org/wiki/G-force#Unit_and_measurement>`__. 
+With configurable events it is possible to react on changing acceleration
+without polling.
+
+Typical applications are TBD.
 
 Technical Specifications
 ------------------------
 
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Sensor                            LIS3DSH
+Current Consumption               TBDmA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Acceleration                      0.001G steps, 16bit resolution
+Shock survivability               10000g
+full-scale range                  ±2g / ±4g / ±6g / ±8g / ±16g dynamically selectable
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")
+Weight                            TBDg
+================================  ============================================================
 
 Resources
 ---------
 
+* LIS3DSH datasheet (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/raw/master/datasheets/LIS3DSH.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/raw/master/hardware/accelerometer-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/accelerometer_bricklet_dimensions.png>`__)
+* Source code and design files (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/zipball/master>`__)
 
 .. _accelerometer_bricklet_test:
 
