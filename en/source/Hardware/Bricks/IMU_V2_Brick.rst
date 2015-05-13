@@ -17,18 +17,76 @@ IMU Brick 2.0
 Features
 --------
 
+* Full fledged IMU/AHRS with 9 degrees of freedom (3-axis each: accelerometer, compass, gyro)
+* No accumulating errors, no gimbal lock!
+* Factory calibrated, continuous calibration during operation
+* Calculates quaternions, linear acceleration, gravity vector as well as roll, pitch and yaw
+* Directly readable by USB, extendable by two Bricklet ports
+* API for many programming languages available
+
 .. _imu_v2_brick_description:
 
 Description
 -----------
 
+The IMU 2.0 Brick is the successor of the :ref:`IMU Brick <imu_bick>`. With
+higher resolution sensors, easier recalibration, additional 
+continuous calibration and an **accuracy increase by two orders of magnitude**.
+
+The IMU 2.0 :ref:`Brick <primer_bricks>` is equipped with a 3-axis 
+accelerometer, magnetometer (compass) and gyroscope and works as a **USB**
+`inertial measurement unit <http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
+It can measure 9 degrees of freedom and computes
+`quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__,
+linear acceleration, gravity vector as well as `roll, pitch and yaw
+<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ information.
+It is a complete `attitude and heading reference system
+<http://en.wikipedia.org/wiki/AHRS>`__.
+
+The API, provided for many :ref:`programming languages <imu_brick_programming_interface>`,
+allows access to the calculated data and also the acceleration, magnetic field 
+and angular velocity of the three axes. If the quaternion representation is 
+used, the IMU 2.0 Brick does not have a 
+`gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__,
+as known from Euler angles.
+
+Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the 
+features of this Brick. For Example a :ref:`GPS Bricklet <gps_bricklet>` can be
+attached to get position information. 
+
+The IMU 2.0 Brick can be use together with other Bricks in a 
+:ref:`stack <primer_stack>`. For example an additional 
+:ref:`Master Brick <master_brick>` with
+:ref:`Master Extension <primer_master_extensions>` allows to replace the USB 
+connection by other cable based (:ref:`RS485 <rs485_extension>`, 
+:ref:`Ethernet <ethernet_extension>`) or wireless (:ref:`WIFI <wifi_extension>`) 
+connections.
 
 Technical Specifications
 ------------------------
 
+===================================================  ============================================================
+Property                                             Value
+===================================================  ============================================================
+Acceleration, Magnetic, Angular Velocity Resolution  14bit, 16bit, 16bit
+Roll, Pitch, Yaw Resolution                          0.01° steps
+Quaternion Resolution                                16bit
+Sampling Rate                                        100Hz
+---------------------------------------------------  ------------------------------------------------------------
+---------------------------------------------------  ------------------------------------------------------------
+Bricklet Ports                                       2
+Dimensions (W x D x H)                               40 x 40 x 16mm (1.57 x 1.57 x 0.63")
+Weight                                               TBDg
+Current Consumption                                  TBDmA
+===================================================  ============================================================
 
 Resources
 ---------
+
+* BNO055 (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/datasheets/BNO055.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/hardware/imu-v2-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/imu_v2_brick_dimensions.png>`__)
+* Source code and design files (`Download <https://github.com/Tinkerforge/imu-v2-brick/zipball/master>`__)
 
 
 Test your IMU Brick 2.0
