@@ -35,7 +35,8 @@ The measured acceleration can be read out in
 With configurable events it is possible to react on changing acceleration
 without polling.
 
-Typical applications are TBD.
+The Bricklet does have an LED that can be turned on trough the API,
+e.g. to show that a specific acceleration was reached.
 
 Technical Specifications
 ------------------------
