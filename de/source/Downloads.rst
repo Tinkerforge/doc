@@ -70,13 +70,23 @@ Dokumentation <red_brick_images>` enthält mehr Details über die Images.
  RED Brick Image | `Image <http://download.tinkerforge.com/red_images/full/red_image_1_6_full.img.7z>`__ | 1.6 | `Archiv <http://download.tinkerforge.com/red_images/full/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_full>`__
 
 
-.. _downloads_firmwares_plugins:
+.. _downloads_firmwares:
 
-Brick Firmwares und Bricklet Plugins
-------------------------------------
+Brick Firmwares
+---------------
 
-Brick Firmwares und Bricklet Plugins können mit dem Brick Viewer aktualisiert
-werden (siehe :ref:`Tutorial für Bricks <brickv_flash_firmware>` und
-:ref:`Tutorial für Bricklets <brickv_flash_plugin>`).
+Brick Firmwares können mit dem Brick Viewer aktualisiert werden (siehe
+:ref:`hier <brickv_flash_firmware>`).
 
 .. include:: Downloads_firmwares.table
+
+
+.. _downloads_plugins:
+
+Bricklet Plugins
+----------------
+
+Bricklet Plugins können mit dem Brick Viewer aktualisiert werden (siehe
+:ref:`hier <brickv_flash_plugin>`).
+
+.. include:: Downloads_plugins.table

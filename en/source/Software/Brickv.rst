@@ -92,7 +92,7 @@ Using Brick Viewer
 
 Flashing of Brick firmwares can be done with Brick Viewer since version 1.1.0.
 The latest firmwares will be downloaded automatically and can be found
-:ref:`here <downloads_firmwares_plugins>` too.
+:ref:`here <downloads_firmwares>` too.
 
 Preparation
 """""""""""
@@ -192,7 +192,7 @@ that you can download and install::
 
 In contrast to Brick Viewer ``brick-flash-cmd`` does not download the firmware
 for the Brick automatically. The latest firmwares can be found
-:ref:`here <downloads_firmwares_plugins>`. Download the one that should be
+:ref:`here <downloads_firmwares>`. Download the one that should be
 flashed, for example the latest Master Brick firmware::
 
  wget http://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin
@@ -220,7 +220,7 @@ possible in two different ways. One possibility is to use the
 
 If you want to flash one distinct Bricklet you can use the flashing window.
 The latest plugins will be downloaded
-automatically and can be found :ref:`here <downloads_firmwares_plugins>` too.
+automatically and can be found :ref:`here <downloads_plugins>` too.
 
 Flashing a Bricklet requires that it is connected to a Brick which is listed in
 your Brick Viewer. A click on the "Flashing" button opens the required dialog:

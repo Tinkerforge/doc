@@ -273,41 +273,64 @@ def make_download_firmwares_table():
 
     table_head = {
     'en': """.. csv-table::
- :header: "", "Downloads", "Version", "Archive", "Changelog"
+ :header: "Brick", "Downloads", "Version", "Archive", "Changelog"
  :delim: |
  :widths: 17, 32, 5, 5, 8
 
- **Bricks** | |
-{0}
- | |
- **Bricklets** | |
-{1}""",
+""",
     'de': """.. csv-table::
- :header: "", "Downloads", "Version", "Archiv", "Changelog"
+ :header: "Brick", "Downloads", "Version", "Archiv", "Changelog"
  :delim: |
  :widths: 17, 32, 5, 5, 8
 
- **Bricks** | |
-{0}
- | |
- **Bricklets** | |
-{1}"""
+"""
     }
 
-    brick_row = ' :ref:`{0} <{1}>` | `Firmware <http://download.tinkerforge.com/firmwares/bricks/{2}/brick_{2}_firmware_{6}_{7}_{8}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/bricks/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
-    bricklet_row = ' :ref:`{0} <{1}>` | `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{2}/bricklet_{2}_firmware_{6}_{7}_{8}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/bricklets/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
-    brick_rows = []
-    bricklet_rows = []
+    row = ' :ref:`{0} <{1}>` | `Firmware <http://download.tinkerforge.com/firmwares/bricks/{2}/brick_{2}_firmware_{6}_{7}_{8}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/bricks/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    rows = []
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
         if brick_info.firmware_url_part != None and brick_info.is_released:
-            brick_rows.append(brick_row.format(brick_info.short_display_name,
-                                               brick_info.ref_name,
-                                               brick_info.firmware_url_part,
-                                               source_code[lang],
-                                               brick_info.git_name,
-                                               archive[lang],
-                                               *firmware_versions[brick_info.firmware_url_part]))
+            firmware_version = firmware_versions.get(brick_info.firmware_url_part, (0,0,0))
+
+            rows.append(row.format(brick_info.short_display_name,
+                                   brick_info.ref_name,
+                                   brick_info.firmware_url_part,
+                                   source_code[lang],
+                                   brick_info.git_name,
+                                   archive[lang],
+                                   *firmware_version))
+
+    return table_head[lang] + '\n'.join(rows) + '\n'
+
+def make_download_plugins_table():
+    archive = {
+    'en': 'Archive',
+    'de': 'Archiv'
+    }
+
+    source_code = {
+    'en': 'Source Code',
+    'de': 'Quelltext'
+    }
+
+    table_head = {
+    'en': """.. csv-table::
+ :header: "Bricklet", "Downloads", "Version", "Archive", "Changelog"
+ :delim: |
+ :widths: 17, 32, 5, 5, 8
+
+""",
+    'de': """.. csv-table::
+ :header: "Bricklet", "Downloads", "Version", "Archiv", "Changelog"
+ :delim: |
+ :widths: 17, 32, 5, 5, 8
+
+"""
+    }
+
+    row = ' :ref:`{0} <{1}>` | `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{2}/bricklet_{2}_firmware_{6}_{7}_{8}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/bricklets/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    rows = []
 
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
         if bricklet_info.firmware_url_part != None and bricklet_info.is_released:
@@ -320,15 +343,17 @@ def make_download_firmwares_table():
                 subversion.append((bricklet_info.short_display_name, bricklet_info.firmware_url_part))
 
             for short_display_name, firmware_url_part in subversion:
-                bricklet_rows.append(bricklet_row.format(short_display_name,
-                                                         bricklet_info.ref_name,
-                                                         firmware_url_part,
-                                                         source_code[lang],
-                                                         bricklet_info.git_name,
-                                                         archive[lang],
-                                                         *plugin_versions[firmware_url_part]))
+                plugin_version = plugin_versions.get(firmware_url_part, (0,0,0))
 
-    return table_head[lang].format('\n'.join(brick_rows), '\n'.join(bricklet_rows)) + '\n'
+                rows.append(row.format(short_display_name,
+                                       bricklet_info.ref_name,
+                                       firmware_url_part,
+                                       source_code[lang],
+                                       bricklet_info.git_name,
+                                       archive[lang],
+                                       *plugin_version))
+
+    return table_head[lang] + '\n'.join(rows) + '\n'
 
 def make_api_bindings_links_table(binding_info):
     table_head = {
@@ -912,6 +937,9 @@ def generate(path):
 
     print('Generating Downloads_firmwares.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_firmwares.table'), make_download_firmwares_table())
+
+    print('Generating Downloads_plugins.table')
+    write_if_changed(os.path.join(path, 'source', 'Downloads_plugins.table'), make_download_plugins_table())
 
     print('Generating Source_Code_gits.table')
     write_if_changed(os.path.join(path, 'source', 'Source_Code_gits.table'), make_source_code_gits_table())
