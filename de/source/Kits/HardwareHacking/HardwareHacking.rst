@@ -303,6 +303,11 @@ Die vollständige Beschreibung des Hardware-Aufbaus ist
 :ref:`hier <starter_kit_hardware_hacking_remote_switch_hardware_setup>`
 zu finden.
 
+.. toctree::
+   :hidden:
+
+   RemoteSwitch_HardwareSetup
+
 Beispiel Apps für :ref:`Android (Java)
 <starter_kit_hardware_hacking_power_outlet_control_android>`,
 :ref:`Windows Phone (C#)
@@ -322,15 +327,14 @@ Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
 Linux (Mono) und Mac OS X (Mono)) ist verfügbar in :ref:`C#
 <starter_kit_hardware_hacking_remote_switch_gui_csharp>`.
 
-Minimalistische Beispiele sind verfügbar in:
-
-|remote_switch_examples|
-
 .. toctree::
    :hidden:
 
-   RemoteSwitch_HardwareSetup
    RemoteSwitchGUI_CSharp
+
+Minimalistische Beispiele sind verfügbar in:
+
+|remote_switch_examples|
 
 .. include:: RemoteSwitch.toctree
 
