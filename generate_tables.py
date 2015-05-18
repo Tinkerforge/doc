@@ -330,16 +330,6 @@ def make_download_firmwares_table():
 
     return table_head[lang].format('\n'.join(brick_rows), '\n'.join(bricklet_rows)) + '\n'
 
-def make_api_bindings_bindings_table():
-    row = '* :ref:`{0} <ipcon_{1}>`'
-    rows = []
-
-    for binding_info in binding_infos:
-        if binding_info.is_programming_language and binding_info.is_released:
-            rows.append(row.format(binding_info.display_name, binding_info.url_part))
-
-    return '\n'.join(rows) + '\n'
-
 def make_api_bindings_links_table(binding_info):
     table_head = {
     'en': """.. csv-table::
@@ -371,8 +361,8 @@ def make_api_bindings_links_table(binding_info):
     }
 
     ipcon_row = {
-    'en': ' :ref:`IP Connection <api_bindings_ip_connection>` | :ref:`API <ipcon_{0}>` | :ref:`Examples <ipcon_{0}_examples>`',
-    'de': ' :ref:`IP Connection <api_bindings_ip_connection>` | :ref:`API <ipcon_{0}>` | :ref:`Beispiele <ipcon_{0}_examples>`'
+    'en': ' IP Connection | :ref:`API <ipcon_{0}>` | :ref:`Examples <ipcon_{0}_examples>`',
+    'de': ' IP Connection | :ref:`API <ipcon_{0}>` | :ref:`Beispiele <ipcon_{0}_examples>`'
     }
 
     device_row = {
@@ -922,9 +912,6 @@ def generate(path):
 
     print('Generating Downloads_firmwares.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_firmwares.table'), make_download_firmwares_table())
-
-    print('Generating API_Bindings_bindings.table')
-    write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_bindings.table'), make_api_bindings_bindings_table())
 
     print('Generating Source_Code_gits.table')
     write_if_changed(os.path.join(path, 'source', 'Source_Code_gits.table'), make_source_code_gits_table())

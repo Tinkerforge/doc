@@ -17,11 +17,6 @@ the Brick are routed back to the caller.
 See also our :ref:`tutorial <tutorial_first_steps>` for more information on how
 everything works together.
 
-.. _api_bindings_install_and_usage:
-
-Installation and Usage
-----------------------
-
 Installation and usage instructions for each supported programming language:
 
 * :ref:`C/C++ <api_bindings_c>`
@@ -42,20 +37,26 @@ Installation and usage instructions for each supported programming language:
 * :ref:`Shell <api_bindings_shell>`
 * :ref:`Visual Basic .NET <api_bindings_vbnet>`
 
+.. toctree::
+   :hidden:
+
+   C/C++ <API_Bindings_C>
+   C/C++ (iOS) <API_Bindings_C_iOS>
+   C# <API_Bindings_CSharp>
+   C# (Windows Phone) <API_Bindings_CSharp_Windows_Phone>
+   Delphi/Lazarus <API_Bindings_Delphi>
+   Java <API_Bindings_Java>
+   Java (Android) <API_Bindings_Java_Android>
+   JavaScript <API_Bindings_JavaScript>
+   LabVIEW <API_Bindings_LabVIEW>
+   Mathematica <API_Bindings_Mathematica>
+   MATLAB/Octave <API_Bindings_MATLAB>
+   Perl <API_Bindings_Perl>
+   PHP <API_Bindings_PHP>
+   Python <API_Bindings_Python>
+   Ruby <API_Bindings_Ruby>
+   Shell <API_Bindings_Shell>
+   Visual Basic .NET <API_Bindings_VBNET>
+
 The latest versions of the bindings can be found in the
 :ref:`download section <downloads_bindings_examples>`.
-
-
-.. _api_bindings_ip_connection:
-
-IP Connection
--------------
-
-The IP Connection manages the TCP/IP communication between the API bindings and
-the :ref:`Brick Daemon <brickd>` or a :ref:`WIFI <wifi_extension>`/:ref:`Ethernet
-<ethernet_extension>` Extension.
-
-It is used by the bindings and implemented for each programming language.
-The corresponding documentation can be found here:
-
-.. include:: API_Bindings_bindings.table

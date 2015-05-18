@@ -92,7 +92,7 @@ already installed.
 
 First, install the API bindings for your programming language. Installation
 instructions for all API bindings can be found :ref:`here
-<api_bindings_install_and_usage>`.
+<api_bindings>`.
 
 Now create a folder for your DC Brick test project.
 Download one of the examples for the DC Brick as a starting point

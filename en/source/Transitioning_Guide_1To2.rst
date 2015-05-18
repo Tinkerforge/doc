@@ -45,7 +45,7 @@ General
 As a first step you need to update all of your Bricklet firmwares and
 Brick plugins. See above for information about the updating procedure.
 
-The IPConnection has several new functions that are implemented for all 
+The IP Connection has several new functions that are implemented for all
 languages, they include:
 
 * connect
@@ -66,8 +66,8 @@ topology of the network of Bricks and Bricklets.
 The registration and triggering of the enumeration callback is now split into
 two steps.
 
-Documentation for these functions can be found in the IPConnection
-documentation for each language, see :ref:`here <api_bindings_ip_connection>`.
+Documentation for these functions can be found in the IP Connection
+documentation for each language, see :ref:`here <api_bindings>`.
 
 Every Brick and Bricklet has the following new functions:
 

@@ -17,11 +17,6 @@ Pakete werden an den Aufrufer zurückgeleitet.
 Diese :ref:`Tutorial <tutorial_first_steps>` beschreibt wie alles zusammengehört
 und funktioniert.
 
-.. _api_bindings_install_and_usage:
-
-Installation und Verwendung
----------------------------
-
 Anleitungen zur Installation und Verwendung der Bindings für jede unterstütze
 Programmiersprache:
 
@@ -43,21 +38,26 @@ Programmiersprache:
 * :ref:`Shell <api_bindings_shell>`
 * :ref:`Visual Basic .NET <api_bindings_vbnet>`
 
+.. toctree::
+   :hidden:
+
+   C/C++ <API_Bindings_C>
+   C/C++ (iOS) <API_Bindings_C_iOS>
+   C# <API_Bindings_CSharp>
+   C# (Windows Phone) <API_Bindings_CSharp_Windows_Phone>
+   Delphi/Lazarus <API_Bindings_Delphi>
+   Java <API_Bindings_Java>
+   Java (Android) <API_Bindings_Java_Android>
+   JavaScript <API_Bindings_JavaScript>
+   LabVIEW <API_Bindings_LabVIEW>
+   Mathematica <API_Bindings_Mathematica>
+   MATLAB/Octave <API_Bindings_MATLAB>
+   Perl <API_Bindings_Perl>
+   PHP <API_Bindings_PHP>
+   Python <API_Bindings_Python>
+   Ruby <API_Bindings_Ruby>
+   Shell <API_Bindings_Shell>
+   Visual Basic .NET <API_Bindings_VBNET>
+
 Die neusten Versionen der Bindings sind im :ref:`Downloadbereich
 <downloads_bindings_examples>` zu finden.
-
-
-.. _api_bindings_ip_connection:
-
-IP Connection
--------------
-
-Die IP Connection kümmert sich um die Kommunikation zwischen einem
-:ref:`Brick Daemon <brickd>` oder einer
-:ref:`WIFI <wifi_extension>`/:ref:`Ethernet <ethernet_extension>` Extension.
-
-Diese wird in den Bindings benutzt und ist für jede unterstütze
-Programmiersprache implementiert. Die dazugehörige Dokumentation ist hier zu
-finden:
-
-.. include:: API_Bindings_bindings.table

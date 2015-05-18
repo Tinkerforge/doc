@@ -91,7 +91,7 @@ bereits installiert sind.
 
 Als erstes müssen API Bindings für die entsprechenden Programmiersprache
 installiert werden. Passende Anleitungen dazu gibt es
-:ref:`hier <api_bindings_install_and_usage>`.
+:ref:`hier <api_bindings>`.
 
 Erstelle dann einen neuen Ordner für das DC Brick Testprojekt und lade eines
 der :ref:`Beispiele <dc_brick_python_examples>` für den DC Brick als

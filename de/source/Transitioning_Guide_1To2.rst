@@ -43,7 +43,7 @@ heruntergeladen werden.
 Allgemein
 ---------
 
-Die IPConnection hat mehrere neue Funktionen die für alle Programmiersprachen
+Die IP Connection hat mehrere neue Funktionen die für alle Programmiersprachen
 implementiert sind, unter anderem:
 
 * connect
@@ -65,9 +65,9 @@ aufzustellen.
 Die Registrierung und das Auslösen des Enumeration Callbacks ist jetzt in zwei
 Schritte unterteilt.
 
-Dokumentation für diese Funktionen kann in der IPConnection Dokumentation
+Dokumentation für diese Funktionen kann in der IP Connection Dokumentation
 für jede Programmiersprache gefunden werden, siehe 
-:ref:`hier <api_bindings_ip_connection>`.
+:ref:`hier <api_bindings>`.
 
 Jedes Brick und Bricklet hat folgende neue Funktionen:
 
