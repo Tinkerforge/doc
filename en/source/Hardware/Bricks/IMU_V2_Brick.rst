@@ -29,11 +29,11 @@ Features
 Description
 -----------
 
-The IMU 2.0 Brick is the successor of the :ref:`IMU Brick <imu_bick>`. It has
+The IMU Brick 2.0 is the successor of the :ref:`IMU Brick <imu_brick>`. It has
 higher resolution sensors, easier recalibration, additional 
 continuous calibration and an **accuracy increase by two orders of magnitude**.
 
-The IMU 2.0 :ref:`Brick <primer_bricks>` is equipped with a 3-axis 
+The IMU :ref:`Brick <primer_bricks>` 2.0 is equipped with a 3-axis
 accelerometer, magnetometer (compass) and gyroscope and works as a **USB**
 `inertial measurement unit <http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
 It can measure 9 degrees of freedom and computes
@@ -46,7 +46,7 @@ It is a complete `attitude and heading reference system
 The API, provided for many :ref:`programming languages <imu_brick_programming_interface>`,
 allows access to the calculated data and also the acceleration, magnetic field 
 and angular velocity of the three axes. If the quaternion representation is 
-used, the IMU 2.0 Brick does not have a 
+used, the IMU Brick 2.0 does not have a
 `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__,
 as known from Euler angles.
 
@@ -54,7 +54,7 @@ Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the
 features of this Brick. For Example a :ref:`GPS Bricklet <gps_bricklet>` can be
 attached to get position information. 
 
-The IMU 2.0 Brick can be use together with other Bricks in a 
+The IMU Brick 2.0 can be use together with other Bricks in a
 :ref:`stack <primer_stack>`. For example an additional 
 :ref:`Master Brick <master_brick>` with
 :ref:`Master Extension <primer_master_extensions>` allows to replace the USB 

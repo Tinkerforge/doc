@@ -27,11 +27,13 @@ Features
 Description
 -----------
 
-The Ambient Light 2.0 :ref:`Bricklet <primer_bricklets>` can be used to
+The Ambient Light :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
-capability to measure ambient light. It is the successor of the :ref:`Ambient Light Bricklet <ambient_light_bricklet>`. The measured illuminance can be read
-out in `lux <http://en.wikipedia.org/wiki/Lux>`__. With configurable events
-it is possible to react on changing illuminance without polling.
+capability to measure ambient light. It is the successor of the
+:ref:`Ambient Light Bricklet <ambient_light_bricklet>`. The measured
+illuminance can be read out in `lux <http://en.wikipedia.org/wiki/Lux>`__.
+With configurable events it is possible to react on changing illuminance
+without polling.
 
 Typical applications are illuminance dependent switching of
 backlights, motors etc.

@@ -43,7 +43,7 @@ Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 Distance (Range, Resolution)      * Range 0-40m, Resolution 1cm
 
-Velocity (Range, Resolution       * Range 0-12.7 m/s, Resolution 0.1m/s
+Velocity (Range, Resolution)      * Range 0-12.7 m/s, Resolution 0.1m/s
                                   * Range 0-31.75 m/s, Resolution 0.25m/s
                                   * Range 0-63.5 m/s, Resolution 0.5m/s
                                   * Range 0-127 m/s, Resolution 1.0m/s

@@ -50,7 +50,7 @@ Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 Acceleration                      0.001G steps, 16bit resolution
 Shock survivability               10000g
-full-scale range                  ±2g / ±4g / ±6g / ±8g / ±16g dynamically selectable
+Full-scale range                  ±2g / ±4g / ±6g / ±8g / ±16g dynamically selectable
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")

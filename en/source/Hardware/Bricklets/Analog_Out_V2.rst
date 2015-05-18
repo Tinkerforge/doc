@@ -25,9 +25,9 @@ Features
 Description
 -----------
 
-The Analog Out :ref:`Bricklet <primer_bricklets>` can be used to
+The Analog Out :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
-capability to generate voltages between 0V and 10V.
+capability to generate voltages between 0V and 12V.
 The voltage can be configured directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`__ without any conversion.
 The device is equipped with a 12-bit `Digital-to-Analog Converter (DAC)

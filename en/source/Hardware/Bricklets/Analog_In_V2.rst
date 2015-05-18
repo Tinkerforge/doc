@@ -26,7 +26,7 @@ Features
 Description
 -----------
 
-The Analog In 2.0 :ref:`Bricklet <primer_bricklets>` can be used to
+The Analog In :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to measure voltages.
 The voltage can be read out in `Volt
