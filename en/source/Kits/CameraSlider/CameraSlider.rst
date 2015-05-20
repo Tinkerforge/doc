@@ -40,3 +40,11 @@ Demo Application
 
 Construction
 ------------
+
+The construction of the kit is described
+:ref:`here <starter_kit_camera_slider_construction>`.
+
+.. toctree::
+   :hidden:
+
+   Details <Construction>
