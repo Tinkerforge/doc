@@ -3,322 +3,284 @@
 
 .. _starter_kit_camera_slider_construction:
 
-
-
-.. BOM::
-
-	a 2x MakerBeam 900mm, black
-	b 2x MakerBeam 60mm, 8pcs, black
-	c 1x MakerBeam 40mm, 8pcs, black
-	d 1x M3 Square Headed Bolts with Hex Hole, 6mm, 250pcs
-	e 1x M3 Square Headed Bolts with Hex Hole, 12mm, 100pcs
-	f 2x M3 Self Locking Nuts, 100pcs
-	g 1x MakerBeam Corner Brackets, 12pcs
-	h 2x MakerBeam L-Brackets, 12pcs
-	i 1x Bearing Set
-	j 1x Hinge Set
-	k 1x 3D printed End Caps, 4pcs
-	l 1x Belt Set
-	m 1x Stepper Motor, Nema 17, 0.43Nm
-	n 1x Stepper Brick
-	o 1x MakerBeam 150mm, 6pcs, black
-
-
-
-	square bolt 6mm: 250 (d) + 10 (j)
-	square bolt 12mm: 100 (e) + 10 (i)
-	lock nuts: 100 (f) + 10 (i)
-	nuts: 10 (i) + 10 (j)
-
-
-
-
-
-	nuts:
-	14, idler side
-	12, stack side
-	16, rails to legs
-	48, slider top shelf
-	12, slider tunnel plates
-	12, lower bearing rails
-	 4, belt grips
-	16, top/bottom bearings
-	 8, left/right bearings
-
-
-
-
-
-
 Construction of Starter Kit: Camera Slider
 ==========================================
 
-The frame consits of two pairs of legs that hold up two long MakerBeams on
-which the slider moves back anf forth. The constructions starts at the legs.
+The kit contains the following parts:
+
+* 2x `MakerBeam 900mm, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-900mm-1-piece-black.html>`__
+* 1x `MakerBeam 150mm, 6pcs, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-150mm-6pcs-black.html>`__
+* 2x `MakerBeam 60mm, 8pcs, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-60mm-8pcs-black.html>`__
+* 1x `MakerBeam 40mm, 8pcs, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-40mm-8pcs-black.html>`__
+* 1x `M3 Square Headed Bolts with Hex Hole, 6mm, 250pcs <https://www.tinkerforge.com/en/shop/makerbeam/nuts-bolts/250-m3-square-headed-bolts-with-hex-hole-6mm.html>`__
+* 1x `M3 Square Headed Bolts with Hex Hole, 12mm, 100pcs <https://www.tinkerforge.com/en/shop/makerbeam/nuts-bolts/100-m3-square-headed-bolts-with-hex-hole-12mm.html>`__
+* 2x `M3 Self Locking Nuts, 100pcs <https://www.tinkerforge.com/en/shop/makerbeam/nuts-bolts/100-m3-self-locking-nuts.html>`__
+* 1x `MakerBeam Corner Brackets, 12pcs <https://www.tinkerforge.com/en/shop/makerbeam/brackets/makerbeam-corner-brackets-12pcs.html>`__
+* 2x `MakerBeam L-Brackets, 12pcs <https://www.tinkerforge.com/en/shop/makerbeam/brackets/makerbeam-l-brackets-12pcs.html>`__
+* 1x `Bearing Set <https://www.tinkerforge.com/en/shop/makerbeam/accessories/bearing-set.html>`__
+* 1x `Hinge Set <https://www.tinkerforge.com/en/shop/makerbeam/accessories/hinge-set.html>`__
+* 1x `3D printed End Caps, 4pcs <https://www.tinkerforge.com/en/shop/makerbeam/accessories/3d-printed-end-caps.html>`__
+* 1x Camera Slider Accessories Kit
+* 1x `Stepper Motor, Nema 17, 0.43Nm <https://www.tinkerforge.com/en/shop/accessories/motors/stepper-motor-nema-17-043nm.html>`__
+* 1x `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__
+* 1x `M3 Hex Key Driver <https://www.tinkerforge.com/en/shop/makerbeam/accessories/m3-hex-key-driver.html>`__
+* 1x `M3 Hex Nut Driver <https://www.tinkerforge.com/en/shop/makerbeam/accessories/m3-hex-nut-driver.html>`__
+
+The Camera Slider consists of two main parts the frame and the cart. The
+constructions starts at the two legs of the frame.
 
 Legs
 ----
 
+Each leg consists of three 60mm MakerBeams connected using two MakerBeam Corner
+Brackets to form an upside down U-shape:
 
+* Insert two 6mm bolts into a 60mm MakerBeam.
+* Fasten a MakerBeam Corner Bracket to the bolts with two lock nuts. Use another
+  MakerBeam as temporary spacer in the corners of the brackets.
 
+Repeat these steps four times two create a U-shaped leg. Then repeated all
+steps for the second leg.
 
-
-
-
-
-Connect three 60mm MakerBeams to two MakerBeam Corner Brackets using  
-
-
-.. image:: /Images/Kits/kit_linear_motion_step1_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step1_350.jpg
    :scale: 100 %
-   :alt: Construction Step 1
+   :alt: MakerBeam with two 6mm bolts
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step1_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step1_1500.jpg
 
-
-.. image:: /Images/Kits/kit_linear_motion_step2_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step2_350.jpg
    :scale: 100 %
-   :alt: Construction Step 2
+   :alt: MakerBeam with corner bracket
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step2_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step2_1500.jpg
 
-
-.. image:: /Images/Kits/kit_linear_motion_step3_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step3_350.jpg
    :scale: 100 %
-   :alt: Construction Step 3
+   :alt: Partial leg with temporary spacer
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step3_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step3_1500.jpg
 
-
-.. image:: /Images/Kits/kit_linear_motion_step6_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step4_350.jpg
    :scale: 100 %
-   :alt: Construction Step 6
+   :alt: Complete leg
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step6_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step4_1500.jpg
 
+Stack Side
+^^^^^^^^^^
 
-.. image:: /Images/Kits/kit_linear_motion_step7_600.jpg
+One leg gets a stack mounting plate attached to it:
+
+* Insert two 6mm bolts into each of the upright MakerBeams of the leg.
+* Fasten the stack mounting plate to the leg with four lock nuts. Ensure that
+  the plate does not overlap the crossbeam of the leg.
+
+.. image:: /Images/Kits/kit_camera_slider_step5_350.jpg
    :scale: 100 %
-   :alt: Construction Step 7
+   :alt: Leg with stack mounting plate
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step7_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step5_1500.jpg
 
+Idler Pulley Side
+^^^^^^^^^^^^^^^^^
 
-.. image:: /Images/Kits/kit_linear_motion_step8_600.jpg
+The other leg gets bearings for the idler pulley attached to it. Start with the
+bearings on the crossbeam of the leg:
+
+* Place two bearings into a copper saddle band clip.
+* Insert two 6mm bolts into the crossbeam of the leg.
+* Fasten the bearing assembly to the middle of crossbeam with two lock nuts.
+
+.. image:: /Images/Kits/kit_camera_slider_step6_350.jpg
    :scale: 100 %
-   :alt: Construction Step 8
+   :alt: Two bearings in a copper saddle band clip
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step8_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step6_1500.jpg
 
+FIXME: New image: Leg with bearing assembly on crossbeam
 
-.. image:: /Images/Kits/kit_linear_motion_step10_600.jpg
+A second bearing assembly gets attached to a 60mm MakerBeam:
+
+* Place two bearings into a copper saddle band clip.
+* Insert two 6mm bolts into a 60mm MakerBeam.
+* Fasten the bearing assembly to the middle of the MakerBeam with two lock nuts.
+* Insert a 6mm bolt into the MakerBeam on each side of the bearing assembly.
+
+The MakerBeam-bearing assembly gets attached to the leg:
+
+* Insert two 6mm bolts into each of the upright MakerBeams of the leg.
+* Fasten the MakerBeam-bearing assembly to the upright MakerBeams using one
+  MakerBeam L-Bracket and four lock nuts each.
+
+.. image:: /Images/Kits/kit_camera_slider_step7_350.jpg
    :scale: 100 %
-   :alt: Construction Step 10
+   :alt: MakerBeam with bearing assembly and 6mm bolts
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step10_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step7_1500.jpg
 
-
-.. image:: /Images/Kits/kit_linear_motion_step11_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step8_350.jpg
    :scale: 100 %
-   :alt: Construction Step 11
+   :alt: Leg with bearings
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step11_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step8_1500.jpg
 
+Frame
+-----
 
-.. image:: /Images/Kits/kit_linear_motion_step14_600.jpg
+The two legs and two 900mm MakerBeams form the Frame:
+
+* Insert two 6mm bolts into each of the upright MakerBeams of the stack leg
+  opposite to the stack mounting plate.
+* Fasten two MakerBeam Corner Brackets to the bolts with two lock nuts each.
+  Ensure that the brackets are flush with the top edge of the MakerBeam.
+* Insert two 6mm bolts into each 900mm MakerBeam.
+* Fit the MakerBeams into the corners of the leg and fasten them with two
+  lock nuts each.
+
+FIXME: New image: Stack leg with corner bracket, 900mm MakerBeams with bolts
+inserted
+
+FIXME: Redo image 9 without stepper motor mounting plate in view
+
+.. image:: /Images/Kits/kit_camera_slider_step9_350.jpg
    :scale: 100 %
-   :alt: Construction Step 14
+   :alt: Bottom view of stack leg with 900mm MakerBeams
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step14_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step9_1500.jpg
 
+FIXME: New image: Like step 11 but with stack leg
 
-Slider
-------
+Next the stepper motor mounting plate gets attached to the frame:
 
-.. image:: /Images/Kits/kit_linear_motion_step4_600.jpg
+* Insert two 6mm bolts into the topside of each 900mm MakerBeam.
+* Fasten the stepper motor mounting plate to the leg with four lock nuts.
+
+.. image:: /Images/Kits/kit_camera_slider_step10_350.jpg
    :scale: 100 %
-   :alt: Construction Step 4
+   :alt: Stepper motor mounting plate
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step4_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step10_1500.jpg
 
+To complete the frame attach the idler pulley leg to the 900mm MakerBeams
+the same way the stack leg got attached.
 
-.. image:: /Images/Kits/kit_linear_motion_step5_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step11_350.jpg
    :scale: 100 %
-   :alt: Construction Step 5
+   :alt: Front view of idler pulley leg with 900mm MakerBeams
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step5_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step11_1500.jpg
 
+Cart
+----
 
-.. image:: /Images/Kits/kit_linear_motion_step12_600.jpg
+The cart rolls on top of the frame using 16 bearing.
+
+Bearings
+^^^^^^^^
+
+The construction starts with attaching 16 bearing to four 60mm MakerBeams:
+
+* Insert two 12mm bolts into a 60mm MakerBeam and fasten each one with a
+  normal nut, not a lock nut. The bolts should be about 7mm from the edge of
+  the Maker beam.
+* Put a bearing onto each bolt and fasten it with a lock nut. Ensure that the
+  bearing is near to the edge of the MakerBeam beam but does not overlap it.
+
+Repeat these steps four times to create four MakerBeams with two bearings each.
+
+.. image:: /Images/Kits/kit_camera_slider_step12_350.jpg
    :scale: 100 %
-   :alt: Construction Step 12
+   :alt: MakerBeam with two 12mm bolts
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step12_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step12_1500.jpg
 
-
-.. image:: /Images/Kits/kit_linear_motion_step13_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step13_350.jpg
    :scale: 100 %
-   :alt: Construction Step 13
+   :alt: MakerBeam with two bearings near to its edges
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step13_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step13_1500.jpg
 
+Two of the four MakerBeams get two additional bearings each. Attach the
+bearings at an 90° angle to the already attached ones the same way the first
+two bearings got attached.
 
-.. image:: /Images/Kits/kit_linear_motion_step15_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step14_350.jpg
    :scale: 100 %
-   :alt: Construction Step 15
+   :alt: MakerBeam with four bearings near to its edges
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step15_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step14_1500.jpg
 
+Add L-brackets to the 2-bearing assemblies:
 
-.. image:: /Images/Kits/kit_linear_motion_step16_600.jpg
+* Insert two 6mm bolts into the MakerBeam opposite the bearings.
+* Fasten two MakerBeam L-Brackets to the bolts with two lock nuts each.
+
+.. image:: /Images/Kits/kit_camera_slider_step15_350.jpg
    :scale: 100 %
-   :alt: Construction Step 16
+   :alt: MakerBeam with two bearings and two L-brackets
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step16_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step16_1500.jpg
 
+Add L-brackets to the 4-bearing assemblies:
 
-.. image:: /Images/Kits/kit_linear_motion_step9_600.jpg
+* Insert two 6mm bolts into a bearing free side of the MakerBeam.
+* Fasten two MakerBeam L-Brackets to the bolts with two lock nuts each. Ensure
+  that the L-bracket is facing away from the two adjacent bearings.
+
+.. image:: /Images/Kits/kit_camera_slider_step16_350.jpg
    :scale: 100 %
-   :alt: Construction Step 9
+   :alt: MakerBeam with four bearings and two L-brackets
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step9_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step16_1500.jpg
 
+Base
+^^^^
 
-.. image:: /Images/Kits/kit_linear_motion_step17_600.jpg
+The base of the cart consists of the four bearing assemblies and two 150mm
+MakerBeams:
+
+* Insert four 6mm bolts into a 150mm MakerBeam.
+* Fasten a 4-bearing and a 2-bearing assembly to the bolts with two lock nuts
+  each. Ensure that bearings on the side of the 4-bearing assembly faces the
+  2-bearing assembly and that the L-brackets are facing away from each other.
+
+These bearings will roll on top and on the sides of the frame.
+
+.. image:: /Images/Kits/kit_camera_slider_step17_350.jpg
    :scale: 100 %
-   :alt: Construction Step 17
+   :alt: Top view of attached bearing assemblies
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step17_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step17_1500.jpg
 
-
-.. image:: /Images/Kits/kit_linear_motion_step18_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step18_350.jpg
    :scale: 100 %
-   :alt: Construction Step 18
+   :alt: Bottom view of attached bearing assemblies
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step18_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step18_1500.jpg
 
-
-.. image:: /Images/Kits/kit_linear_motion_step19_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step19_350.jpg
    :scale: 100 %
-   :alt: Construction Step 19
+   :alt: Bottom view of MakerBeam between bearing assemblies
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step19_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step19_1500.jpg
 
+Attach the remaining bearing assembly the same way the first to got attached.
 
-.. image:: /Images/Kits/kit_linear_motion_step20_600.jpg
+.. image:: /Images/Kits/kit_camera_slider_step28_350.jpg
    :scale: 100 %
-   :alt: Construction Step 20
+   :alt: Bottom view of MakerBeam between bearing assemblies
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step20_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step28_1500.jpg
 
 
-.. image:: /Images/Kits/kit_linear_motion_step21_600.jpg
+
+
+.. image:: /Images/Kits/kit_camera_slider_step29_350.jpg
    :scale: 100 %
-   :alt: Construction Step 21
+   :alt: Bottom view of MakerBeam between bearing assemblies
    :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step21_1500.jpg
+   :target: ../../_images/Kits/kit_camera_slider_step29_1500.jpg
 
 
-.. image:: /Images/Kits/kit_linear_motion_step22_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 22
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step22_1500.jpg
 
 
-.. image:: /Images/Kits/kit_linear_motion_step23_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 23
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step23_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step24_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 24
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step24_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step25_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 25
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step25_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step26_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 26
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step26_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step27_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 27
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step27_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step28_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 28
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step28_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step29_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 29
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step29_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step30_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 30
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step30_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step31_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 31
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step31_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step32_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 32
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step32_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step30_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 33
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step33_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step34_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 34
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step34_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step35_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 35
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step35_1500.jpg
-
-
-.. image:: /Images/Kits/kit_linear_motion_step36_600.jpg
-   :scale: 100 %
-   :alt: Construction Step 36
-   :align: center
-   :target: ../../_images/Kits/kit_linear_motion_step36_1500.jpg
