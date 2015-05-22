@@ -18,7 +18,7 @@ CO2 Bricklet
 Features
 --------
 
-* Measures co2 concentration from 0 to TBD ppm (parts per million)
+* Measures CO2 concentration from 0 to TBD ppm (parts per million)
 
 .. _co2_bricklet_description:
 
@@ -27,11 +27,11 @@ Description
 
 The CO2 :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
-capability to measure 
-`co2 concentration <http://en.wikipedia.org/wiki/CO2>`__. The measured
-co2 concentration can be read out in 
+capability to measure
+`CO2 concentration <http://en.wikipedia.org/wiki/CO2>`__. The measured
+CO2 concentration can be read out in
 `ppm <http://en.wikipedia.org/wiki/Parts-per_notation>`__.
-With configurable events it is possible to react on changing co2
+With configurable events it is possible to react on changing CO2
 concentration without polling.
 
 Typical applications are TBD
@@ -56,9 +56,15 @@ Weight                            TBDg
 Resources
 ---------
 
+.. FIXME:
+  remove empty lines from bullet point list once finished. currently the empty
+  lines are necessary because sphinx expects an empty line before and after a
+  bullet point list
+
 .. * TBD datasheet (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/datasheets/TBD.pdf>`__)
 .. * Schematic (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/hardware/co2-schematic.pdf>`__)
 .. * Outline and drilling plan (`Download <../../_images/Dimensions/co2_bricklet_dimensions.png>`__)
+
 * Source code and design files (`Download <https://github.com/Tinkerforge/co2-bricklet/zipball/master>`__)
 
 .. _co2_bricklet_test:

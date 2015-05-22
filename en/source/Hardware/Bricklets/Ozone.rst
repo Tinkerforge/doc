@@ -27,9 +27,9 @@ Description
 
 The Ozone :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
-capability to measure 
+capability to measure
 `ozone concentration <http://en.wikipedia.org/wiki/Ozone>`__. The measured
-ozone concentration can be read out in 
+ozone concentration can be read out in
 `ppb <http://en.wikipedia.org/wiki/Parts-per_notation>`__.
 With configurable events it is possible to react on changing ozone
 concentration without polling.
@@ -56,9 +56,16 @@ Weight                            TBDg
 Resources
 ---------
 
+.. FIXME:
+  remove empty lines from bullet point list once finished. currently the empty
+  lines are necessary because sphinx expects an empty line before and after a
+  bullet point list
+
 * A051020-SP-61 datasheet (`Download <https://github.com/Tinkerforge/ozone-bricklet/raw/master/datasheets/A051020-SP-61.pdf>`__)
+
 .. * Schematic (`Download <https://github.com/Tinkerforge/ozone-bricklet/raw/master/hardware/ozone-schematic.pdf>`__)
 .. * Outline and drilling plan (`Download <../../_images/Dimensions/ozone_bricklet_dimensions.png>`__)
+
 * Source code and design files (`Download <https://github.com/Tinkerforge/ozone-bricklet/zipball/master>`__)
 
 .. _ozone_bricklet_test:
