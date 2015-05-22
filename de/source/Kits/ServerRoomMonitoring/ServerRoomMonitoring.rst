@@ -236,7 +236,7 @@ Der Aufbau der Basisversion des Kits ist
 .. toctree::
    :hidden:
 
-   Construction
+   Details <Construction>
 
 
 .. _starter_kit_server_room_monitoring_red_brick:
@@ -403,7 +403,7 @@ Die vollständige Projektbeschreibung kann :ref:`hier
 .. toctree::
    :hidden:
 
-   NagiosOrIcinga
+   Details <NagiosOrIcinga>
 
 Der Abschnitt über :ref:`Erweiterungsmöglichkeiten
 <starter_kit_server_room_monitoring_further_enhancements>` beinhaltet weitere
@@ -434,7 +434,7 @@ gefunden werden.
 .. toctree::
    :hidden:
 
-   UploadSensorDataToXively
+   Details <UploadSensorDataToXively>
 
 
 .. _starter_kit_server_room_monitoring_further_enhancements:
@@ -470,7 +470,7 @@ werden.
 .. toctree::
    :hidden:
 
-   ExtendedNagios
+   Details <ExtendedNagios>
 
 
 Remote Ein/Aus Schalter

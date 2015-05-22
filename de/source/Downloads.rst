@@ -1,3 +1,7 @@
+
+:orphan:
+:notoctree:
+
 .. _downloads:
 
 Downloads

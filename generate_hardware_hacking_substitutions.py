@@ -170,9 +170,9 @@ remote_switch_examples = {
 
 remote_switch_examples_toctree_line = {
 'en':
-"""   RemoteSwitch_{0}""",
+"""   Using {0} <RemoteSwitch_{1}>""",
 'de':
-"""   RemoteSwitch_{0}""",
+"""   Mit {0} <RemoteSwitch_{1}>""",
 }
 
 remote_switch_examples_toctree = {
@@ -323,9 +323,9 @@ smoke_detector_examples = {
 
 smoke_detector_examples_toctree_line = {
 'en':
-"""   SmokeDetector_{0}""",
+"""   Using {0} <SmokeDetector_{1}>""",
 'de':
-"""   SmokeDetector_{0}""",
+"""   Mit {0} <SmokeDetector_{1}>""",
 }
 
 smoke_detector_examples_toctree = {
@@ -1172,7 +1172,7 @@ def make_smoke_detector_toctree():
     toctree_lines = []
     for binding_info in binding_infos:
         if binding_info.url_part in examples:
-            toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
+            toctree_lines.append(smoke_detector_examples_toctree_line[lang].format(binding_info.display_name, binding_info.software_doc_suffix))
 
     return smoke_detector_examples_toctree[lang].format('\n'.join(toctree_lines))
 
@@ -1187,7 +1187,7 @@ def make_remote_switch_toctree():
     toctree_lines = []
     for binding_info in binding_infos:
         if binding_info.url_part in examples:
-            toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
+            toctree_lines.append(remote_switch_examples_toctree_line[lang].format(binding_info.display_name, binding_info.software_doc_suffix))
 
     return remote_switch_examples_toctree[lang].format('\n'.join(toctree_lines))
 

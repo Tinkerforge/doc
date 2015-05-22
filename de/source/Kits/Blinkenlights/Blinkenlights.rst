@@ -190,7 +190,7 @@ Die Aufbauanleitung ist
 .. toctree::
    :hidden:
 
-   Construction
+   Details <Construction>
 
 
 .. _starter_kit_blinkenlights_demo_examples:

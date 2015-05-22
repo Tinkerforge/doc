@@ -259,7 +259,7 @@ in-depth guide that explains both steps.
 .. toctree::
    :hidden:
 
-   ForBeginners
+   Details <ForBeginners>
 
 
 Examples
@@ -298,7 +298,7 @@ The full description of the hardware setup can be found
 .. toctree::
    :hidden:
 
-   RemoteSwitch_HardwareSetup
+   Hardware Setup <RemoteSwitch_HardwareSetup>
 
 Example apps for :ref:`Android (Java)
 <starter_kit_hardware_hacking_power_outlet_control_android>`,
@@ -310,9 +310,9 @@ Example apps for :ref:`Android (Java)
 .. toctree::
    :hidden:
 
-   PowerOutletControl_Android
-   PowerOutletControl_WindowsPhone
-   PowerOutletControl_iOS
+   Using Android <PowerOutletControl_Android>
+   Using Windows Phone <PowerOutletControl_WindowsPhone>
+   Using iOS <PowerOutletControl_iOS>
 
 An example implementation of a GUI (compatible to Windows (.NET),
 Linux (Mono) and Mac OS X (Mono)) is available in :ref:`C#
@@ -321,7 +321,7 @@ Linux (Mono) and Mac OS X (Mono)) is available in :ref:`C#
 .. toctree::
    :hidden:
 
-   RemoteSwitchGUI_CSharp
+   Using C# with GUI <RemoteSwitchGUI_CSharp>
 
 Minimalistic examples are available in:
 
@@ -355,14 +355,14 @@ LEDs that light up during an alarm.
 The full description of the hardware setup can be found
 :ref:`here <starter_kit_hardware_hacking_smoke_detector_hardware_setup>`.
 
-Example implementations with step-by-step instructions are available for:
-
-|smoke_detector_examples|
-
 .. toctree::
    :hidden:
 
-   SmokeDetector_HardwareSetup
+   Hardware Setup <SmokeDetector_HardwareSetup>
+
+Example implementations with step-by-step instructions are available for:
+
+|smoke_detector_examples|
 
 .. include:: SmokeDetector.toctree
 
@@ -387,21 +387,24 @@ anymore. This project is based on this
 A small description of the hardware setup can be found
 :ref:`here <starter_kit_hardware_hacking_garage_control_hardware_setup>`.
 
+.. toctree::
+   :hidden:
+
+   Hardware Setup <GarageControl_HardwareSetup>
+
 Example apps for :ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`,
 :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` and
-:ref:`iOS (ObjC)
-<starter_kit_hardware_hacking_garage_control_ios>`
+:ref:`iOS (ObjC) <starter_kit_hardware_hacking_garage_control_ios>`
 are available.
 
 .. toctree::
    :hidden:
 
-   GarageControl_HardwareSetup
-   GarageControl_Android
-   GarageControl_WindowsPhone
-   GarageControl_iOS
+   Using Android <GarageControl_Android>
+   Using Windows Phone <GarageControl_WindowsPhone>
+   Using iOS <GarageControl_iOS>
 
 
 .. _starter_kit_hardware_hacking_doorbell_notifier:
@@ -410,8 +413,8 @@ Is someone at the Door? - Doorbell Notifier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this project one port of the Industrial Digital In 4 Bricklet is connected
-to a typical 12V driven Doorbell. A Python script prints "Ring Ring Ring!" if someone 
-actuates the doorbell. You can extend this project such that it will 
+to a typical 12V driven doorbell. A Python script prints "Ring Ring Ring!" if
+someone actuates the doorbell. You can extend this project such that it will
 send an SMS or let your phone ring if someone is at your door. Be creative! 
 
 .. image:: /Images/Kits/hardware_hacking_doorbell_closed_350.jpg
@@ -423,11 +426,15 @@ send an SMS or let your phone ring if someone is at your door. Be creative!
 Description of the hardware setup and more pictures can be found
 :ref:`here <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup>`.
 
+.. toctree::
+   :hidden:
+
+   Hardware Setup <DoorbellNotifier_HardwareSetup>
+
 An example application is available
 in :ref:`Python <starter_kit_hardware_hacking_doorbell_notifier_python>`.
 
 .. toctree::
    :hidden:
 
-   DoorbellNotifier_HardwareSetup
-   DoorbellNotifier_Python
+   Using Python <DoorbellNotifier_Python>

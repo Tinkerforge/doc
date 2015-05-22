@@ -230,7 +230,7 @@ The construction of the basic kit is described
 .. toctree::
    :hidden:
 
-   Construction
+   Details <Construction>
 
 
 .. _starter_kit_server_room_monitoring_red_brick:
@@ -394,7 +394,7 @@ Find the full project description :ref:`here
 .. toctree::
    :hidden:
 
-   NagiosOrIcinga
+   Details <NagiosOrIcinga>
 
 The section about :ref:`further enhancements
 <starter_kit_server_room_monitoring_further_enhancements>` lists more
@@ -423,7 +423,7 @@ The full project description can be found :ref:`here
 .. toctree::
    :hidden:
 
-   UploadSensorDataToXively
+   Details <UploadSensorDataToXively>
 
 
 .. _starter_kit_server_room_monitoring_further_enhancements:
@@ -459,7 +459,7 @@ The full project description can be found
 .. toctree::
    :hidden:
 
-   ExtendedNagios
+   Details <ExtendedNagios>
 
 
 Remote On/Off Switch

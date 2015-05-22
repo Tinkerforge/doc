@@ -246,10 +246,10 @@ Here are four different construction variants:
 .. toctree::
    :hidden:
 
-   Construction_Basic
-   Construction_Wifi
-   Construction_REDBrick
-   Construction_RaspberryPi
+   Basic <Construction_Basic>
+   With Wi-Fi <Construction_Wifi>
+   With RED Brick <Construction_REDBrick>
+   With Raspberry Pi <Construction_RaspberryPi>
 
 We could also control the Weather Station with the RS485 or
 Ethernet Extension. The setup in this case is the same as with the "Wi-Fi

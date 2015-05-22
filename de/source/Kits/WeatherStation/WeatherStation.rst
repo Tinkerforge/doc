@@ -249,10 +249,10 @@ Hier sind vier verschiedene Aufbauvarianten:
 .. toctree::
    :hidden:
 
-   Construction_Basic
-   Construction_Wifi
-   Construction_REDBrick
-   Construction_RaspberryPi
+   Basisversion <Construction_Basic>
+   Mit WLAN <Construction_Wifi>
+   Mit RED Brick <Construction_REDBrick>
+   Mit Raspberry Pi <Construction_RaspberryPi>
 
 Die Wetterstation kann auch über RS485 oder Ethernet Extension
 gesteuert werden. Der Aufbau ist hierbei der selbe wie bei "WLAN Wetterstation"

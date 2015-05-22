@@ -262,7 +262,7 @@ genauer erläutert.
 .. toctree::
    :hidden:
 
-   ForBeginners
+   Details <ForBeginners>
 
 
 Beispiele
@@ -306,7 +306,7 @@ zu finden.
 .. toctree::
    :hidden:
 
-   RemoteSwitch_HardwareSetup
+   Hardware-Aufbau <RemoteSwitch_HardwareSetup>
 
 Beispiel Apps für :ref:`Android (Java)
 <starter_kit_hardware_hacking_power_outlet_control_android>`,
@@ -319,9 +319,9 @@ sind verfügbar.
 .. toctree::
    :hidden:
 
-   PowerOutletControl_Android
-   PowerOutletControl_WindowsPhone
-   PowerOutletControl_iOS
+   Mit Android <PowerOutletControl_Android>
+   Mit Windows Phone <PowerOutletControl_WindowsPhone>
+   Mit iOS <PowerOutletControl_iOS>
 
 Eine Beispielimplementierung mit GUI (kompatibel mit Windows (.NET),
 Linux (Mono) und Mac OS X (Mono)) ist verfügbar in :ref:`C#
@@ -330,7 +330,7 @@ Linux (Mono) und Mac OS X (Mono)) ist verfügbar in :ref:`C#
 .. toctree::
    :hidden:
 
-   RemoteSwitchGUI_CSharp
+   Mit C# und GUI <RemoteSwitchGUI_CSharp>
 
 Minimalistische Beispiele sind verfügbar in:
 
@@ -365,14 +365,14 @@ Eine ausführliche Beschreibung des Hardware-Aufbaus ist
 :ref:`hier <starter_kit_hardware_hacking_smoke_detector_hardware_setup>` zu
 finden.
 
-Beispielimplementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
-
-|smoke_detector_examples|.
-
 .. toctree::
    :hidden:
 
-   SmokeDetector_HardwareSetup
+   Hardware-Aufbau <SmokeDetector_HardwareSetup>
+
+Beispielimplementierungen mit Schritt-für-Schritt Anleitungen sind verfügbar für:
+
+|smoke_detector_examples|
 
 .. include:: SmokeDetector.toctree
 
@@ -400,21 +400,24 @@ Eine kurze Beschreibung des Hardware-Aufbaus kann
 :ref:`hier <starter_kit_hardware_hacking_garage_control_hardware_setup>`
 gefunden werden.
 
+.. toctree::
+   :hidden:
+
+   Hardware-Aufbau <GarageControl_HardwareSetup>
+
 Beispiel Apps für :ref:`Android (Java)
 <starter_kit_hardware_hacking_garage_control_android>`,
 :ref:`Windows Phone (C#)
 <starter_kit_hardware_hacking_garage_control_windows_phone>` und
-:ref:`iOS (ObjC)
-<starter_kit_hardware_hacking_garage_control_ios>`
+:ref:`iOS (ObjC) <starter_kit_hardware_hacking_garage_control_ios>`
 sind verfügbar.
 
 .. toctree::
    :hidden:
 
-   GarageControl_HardwareSetup
-   GarageControl_Android
-   GarageControl_WindowsPhone
-   GarageControl_iOS
+   Mit Android <GarageControl_Android>
+   Mit Windows Phone <GarageControl_WindowsPhone>
+   Mit iOS <GarageControl_iOS>
 
 
 .. _starter_kit_hardware_hacking_doorbell_notifier:
@@ -434,8 +437,13 @@ wenn jemand an der Tür ist. Sei kreativ!
    :align: center
    :target: ../../_images/Kits/hardware_hacking_doorbell_closed.jpg
 
-Eine Beschreibung des Hardwareaufbaus und mehr Fotos gibt es 
+Eine Beschreibung des Hardware-Aufbaus und mehr Fotos gibt es
 :ref:`hier <starter_kit_hardware_hacking_doorbell_notifier_hardware_setup>`.
+
+.. toctree::
+   :hidden:
+
+   Hardware-Aufbau <DoorbellNotifier_HardwareSetup>
 
 Die Beispielanwendung in Python gibt es
 :ref:`hier <starter_kit_hardware_hacking_doorbell_notifier_python>`.
@@ -443,5 +451,4 @@ Die Beispielanwendung in Python gibt es
 .. toctree::
    :hidden:
 
-   DoorbellNotifier_HardwareSetup
-   DoorbellNotifier_Python
+   Mit Python <DoorbellNotifier_Python>

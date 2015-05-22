@@ -185,7 +185,7 @@ The construction is described
 .. toctree::
    :hidden:
 
-   Construction
+   Details <Construction>
 
 
 .. _starter_kit_blinkenlights_demo_examples:

@@ -81,9 +81,9 @@ write_to_lcd_examples = {
 
 write_to_lcd_examples_toctree_line = {
 'en':
-"""   {0}ToLCD""",
+"""   Using {0} <{1}ToLCD>""",
 'de':
-"""   {0}ToLCD""",
+"""   Mit {0} <{1}ToLCD>""",
 }
 
 write_to_lcd_examples_toctree = {
@@ -544,7 +544,7 @@ def make_write_to_lcd_toctree():
     toctree_lines = []
     for binding_info in binding_infos:
         if binding_info.url_part in examples:
-            toctree_lines.append(write_to_lcd_examples_toctree_line[lang].format(binding_info.software_doc_suffix))
+            toctree_lines.append(write_to_lcd_examples_toctree_line[lang].format(binding_info.display_name, binding_info.software_doc_suffix))
 
     return write_to_lcd_examples_toctree[lang].format('\n'.join(toctree_lines))
 
