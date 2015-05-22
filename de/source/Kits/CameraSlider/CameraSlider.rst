@@ -41,3 +41,11 @@ Demo Anwendung
 
 Konstruktion
 ------------
+
+Der Aufbau des Kits ist :ref:`hier <starter_kit_camera_slider_construction>`
+beschrieben.
+
+.. toctree::
+   :hidden:
+
+   Details <Construction>
