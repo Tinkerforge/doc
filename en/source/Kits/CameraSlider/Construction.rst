@@ -20,7 +20,9 @@ The kit contains the following parts:
 * 1x `Bearing Set <https://www.tinkerforge.com/en/shop/makerbeam/accessories/bearing-set.html>`__
 * 1x `Hinge Set <https://www.tinkerforge.com/en/shop/makerbeam/accessories/hinge-set.html>`__
 * 1x `3D printed End Caps, 4pcs <https://www.tinkerforge.com/en/shop/makerbeam/accessories/3d-printed-end-caps.html>`__
-* 1x Camera Slider Accessories Kit
+* 1x Timing Belt Kit
+* 1x Shaft Reducer 5mm / 3mm
+* 1x Brackets for Camera Slider
 * 1x `Stepper Motor, Nema 17, 0.43Nm <https://www.tinkerforge.com/en/shop/accessories/motors/stepper-motor-nema-17-043nm.html>`__
 * 1x `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__
 * 1x `M3 Hex Key Driver <https://www.tinkerforge.com/en/shop/makerbeam/accessories/m3-hex-key-driver.html>`__
@@ -69,15 +71,15 @@ all steps for the second pair of legs.
 Stack Side
 ^^^^^^^^^^
 
-One pair of legs gets a stack mounting plate attached to it:
+One pair of legs gets a stack bracket attached to it:
 
 * Insert two 6mm bolts into the upright MakerBeam of each leg.
-* Fasten the stack mounting plate to the legs with four lock nuts. Ensure that
-  the plate does not overlap the crossbeam.
+* Fasten the stack bracket to the legs with four lock nuts. Ensure that the
+  bracket does not overlap the crossbeam.
 
 .. image:: /Images/Kits/kit_camera_slider_step5_350.jpg
    :scale: 100 %
-   :alt: Pair of legs with stack mounting plate
+   :alt: Pair of legs with stack bracket
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step5_1500.jpg
 
@@ -119,7 +121,7 @@ A second bearing assembly gets attached to a 60mm MakerBeam:
 The MakerBeam-bearing assembly gets attached to the legs:
 
 * Insert two 6mm bolts into the upright MakerBeams of each leg.
-* Fasten the MakerBeam-bearing assembly to the upright MakerBeams using one
+* Fasten the MakerBeam-bearing assembly to the upright MakerBeams with one
   MakerBeam L-Bracket and four lock nuts each.
 
 .. image:: /Images/Kits/kit_camera_slider_step8_350.jpg
@@ -131,10 +133,15 @@ The MakerBeam-bearing assembly gets attached to the legs:
 Frame
 -----
 
-The legs and two 900mm MakerBeams form the frame:
+The legs and two 900mm MakerBeams form the frame.
+
+Stack Side
+^^^^^^^^^^
+
+Start with the stack-side legs:
 
 * Insert two 6mm bolts into the upright MakerBeam of each stack-side leg
-  opposite to the stack mounting plate.
+  opposite to the stack bracket.
 * Fasten two MakerBeam Corner Brackets to the bolts with two lock nuts each.
   Ensure that the brackets are flush with the top edge of the MakerBeam.
 * Insert two 6mm bolts into each 900mm MakerBeam.
@@ -159,19 +166,22 @@ The legs and two 900mm MakerBeams form the frame:
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step36_1500.jpg
 
-Next the stepper motor mounting plate gets attached to the frame:
+Next the stepper motor bracket gets attached to the frame:
 
 * Insert two 6mm bolts into the top side of each 900mm MakerBeam.
-* Fasten the stepper motor mounting plate to the MakerBeams with four lock nuts.
+* Fasten the stepper motor bracket to the MakerBeams with four lock nuts.
 
 .. image:: /Images/Kits/kit_camera_slider_step10_350.jpg
    :scale: 100 %
-   :alt: Stepper motor mounting plate
+   :alt: Stepper motor bracket
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step10_1500.jpg
 
+Idler Pulley Side
+^^^^^^^^^^^^^^^^^
+
 To complete the frame attach the idler-pulley-side legs to the other end of the
-900mm MakerBeams the same way the stack-side legs got attached.
+900mm MakerBeams, the same way the stack-side legs got attached.
 
 .. image:: /Images/Kits/kit_camera_slider_step11_350.jpg
    :scale: 100 %
@@ -182,7 +192,7 @@ To complete the frame attach the idler-pulley-side legs to the other end of the
 Cart
 ----
 
-The cart rolls on top of the frame using 16 bearing.
+The cart rolls on top of the frame.
 
 Bearing Assemblies
 ^^^^^^^^^^^^^^^^^^
@@ -211,7 +221,7 @@ Repeat these steps four times to create four MakerBeams with two bearings each.
    :target: ../../_images/Kits/kit_camera_slider_step13_1500.jpg
 
 Two of the four MakerBeams get two additional bearings each. Attach the
-bearings at an 90° angle to the already attached ones the same way the first
+bearings at an 90° angle to the already attached ones, the same way the first
 two bearings got attached.
 
 .. image:: /Images/Kits/kit_camera_slider_step14_350.jpg
@@ -263,10 +273,10 @@ Repeat these steps four times to create four L-bracket with a bearing each.
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step34_1500.jpg
 
-Base
-^^^^
+Substructure
+^^^^^^^^^^^^
 
-The base of the cart consists of four bearing assemblies and two 150mm
+The substructure of the cart consists of four bearing assemblies and two 150mm
 MakerBeams:
 
 * Insert four 6mm bolts into a 150mm MakerBeam.
@@ -326,11 +336,11 @@ superstructure can be added:
 * Fit the 900mm MakerBeams of the frame between the bearings.
 * Press each pair of bearing assemblies against the 900mm MakerBeams then
   fasten the loosened lock nuts again. Ensure that the 150mm MakerBeams
-  overhangs the frame equally on both sides.
+  overhang the frame equally on both sides.
 
 .. image:: /Images/Kits/kit_camera_slider_step37_350.jpg
    :scale: 100 %
-   :alt: Aligning cart base on top of 900mm MakerBeams
+   :alt: Aligning cart substructure on top of 900mm MakerBeams
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step37_1500.jpg
 
@@ -348,20 +358,20 @@ Repeat these steps for each corner of the cart.
 
 .. image:: /Images/Kits/kit_camera_slider_step21_350.jpg
    :scale: 100 %
-   :alt: Bottom view of base with 6mm bolts and washer
+   :alt: Bottom view of substructure with 6mm bolts and washer
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step21_1500.jpg
 
 .. image:: /Images/Kits/kit_camera_slider_step22_350.jpg
    :scale: 100 %
-   :alt: Bottom view of base with 1-bearing assembly
+   :alt: Bottom view of substructure with 1-bearing assembly
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step22_1500.jpg
 
 Superstructure
 ^^^^^^^^^^^^^^
 
-The camera will be mounted on top of the cart's superstructure. The
+The camera will be mounted on top of the cart superstructure. The
 construction start with four corner posts:
 
 * Insert four 6mm bolts into a 40mm MakerBeam.
@@ -375,6 +385,200 @@ Repeat these steps four times to create four corner posts.
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step25_1500.jpg
 
+Attach the corner posts to the substructure:
 
+* Insert two 6mm bolts in the side of the 150mm MakerBeam.
+* Fasten a corner post to the bolts with two lock nuts. Ensure that that post
+  sits between the L-brackets of the substructure and that the L-brackets of
+  the post are facing to the outside of the cart.
 
+Repeat these steps for each corner post.
 
+.. image:: /Images/Kits/kit_camera_slider_step41_350.jpg
+   :scale: 100 %
+   :alt: Cart with corner post
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step41_1500.jpg
+
+To complete the superstructure attach the camera bracket to it:
+
+* Insert four 6mm bolts into a 150mm MakerBeam.
+* Fasten the MakerBeam to two corner posts using two lock nuts each.
+
+Repeat these steps for the other two corner posts, then attach the camera
+bracket:
+
+* Insert two 6mm bolts into the top of each MakerBeam.
+* Fasten the camera bracket to the bolts using four lock nuts.
+
+.. image:: /Images/Kits/kit_camera_slider_step40_350.jpg
+   :scale: 100 %
+   :alt: Complete cart
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step40_1500.jpg
+
+Timing Belt
+-----------
+
+In the final step of the construction the stepper motor and the timing belt are
+added to the camera slider.
+
+Pulleys
+^^^^^^^
+
+The drive pulley gets attached to the stepper motor:
+
+* Put a pulley on the stepper motor shaft. Ensure that the part with the
+  threaded holes faces away from the stepper motor and is flush with the end
+  of the shaft.
+* Fasten the pulley to the shaft with two set screws. Ensure that one set
+  screw sits on the flat portion of the shaft.
+* Fasten the stepper motor pulley-side down to the stepper motor bracket with
+  four 6mm bolts.
+
+.. image:: /Images/Kits/kit_camera_slider_step42_350.jpg
+   :scale: 100 %
+   :alt: Bottom view of stepper motor with pulley
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step42_1500.jpg
+
+The idler pulley on the other end of the frame uses a on long M3 bolt as shaft,
+but the pulley has a 5mm hole. A brass shaft reducer reduces the hole to 3mm:
+
+* Press the reducer into the pulley. This is a tight fit. Ensure that the
+  set screws of the pulley are loose and that the reducer does not sit crooked.
+  Then use pliers, a vice, a hammer or a similar tool to apply light force to
+  press the reducer into the pulley.
+* Fasten the two set screws.
+* Install the modified pulley between the two bearing assemblies with a long
+  M3 bolt. You might need to adjust the alignment of the bearings to make the
+  bolt fit properly.
+
+.. image:: /Images/Kits/kit_camera_slider_step27_100.jpg
+   :scale: 100 %
+   :alt: Pulley and shaft reducer
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step27_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step45_100.jpg
+   :scale: 100 %
+   :alt: Pulley with reducer installed
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step45_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step47_350.jpg
+   :scale: 100 %
+   :alt: Idler-pulley-side legs with pulley installed
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step47_1500.jpg
+
+Clamps
+^^^^^^
+
+The timing belt clamp get attached to a 60mm MakerBeam:
+
+* Insert two 6mm bolts into a 60mm MakerBeam.
+* Fasten a L-bracket to each bolt with a lock nut.
+
+.. image:: /Images/Kits/kit_camera_slider_step44_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam with two L-brackets
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step44_1500.jpg
+
+While the cart substructure was built four 12mm bolts with lock nuts were added
+to the bottom side of the cart:
+
+* Realign those 12mm bolts so that one bolt on each side of the cart sits in
+  the middle of the cart.
+* Realign the other two bolts so that the 60mm MakerBeam with the two
+  L-brackets fits onto the four bolts. Ensure that the MakerBeam sits in the
+  middle of the cart.
+
+.. image:: /Images/Kits/kit_camera_slider_step46_350.jpg
+   :scale: 100 %
+   :alt: Bottom view of realigned 12mm bolts
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step46_1500.jpg
+
+Two L-brackets form a timing belt clamp:
+
+* Connect two L-brackets using two 12mm bolts and two lock nuts.
+* Put one end of the timing belt between the L-brackets and fasten it with the
+  lock nuts. Ensure that the smooth side of the belt faces in the same
+  direction as the lock nuts and that the L-brackets face in the direction of
+  the belt end.
+
+Repeat these steps for the other end of the timing belt.
+
+.. image:: /Images/Kits/kit_camera_slider_step48_350.jpg
+   :scale: 100 %
+   :alt: Timing belt clamp
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step48_1500.jpg
+
+Attach the clamps to the 60mm MakerBeam:
+
+* Insert four 12mm bolts into the side of the 60mm MakerBeam.
+* Fasten the clamps to the bolts with two lock nuts each, but do not fully
+  tighten the second clamp to be able to adjust the belt length later. Ensure
+  that the belt forms a loop with no twists and its smooth side facing
+  outwards.
+* Put the MakerBeam-clamp assembly back into the bottom of the cart onto the
+  four 12mm bolts and loop the belt around the drive and the idler pulley.
+
+.. image:: /Images/Kits/kit_camera_slider_step49_350.jpg
+   :scale: 100 %
+   :alt: Timing belt clamps attached to MakerBeam
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step49_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step50_600.jpg
+   :scale: 100 %
+   :alt: Timing belt overview
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step50_1500.jpg
+
+After the timing belt is installed it has to be tensioned:
+
+* Loosen the stepper motor bracket and move it to a position 1cm away from the
+  end of the frame.
+* Reduce the length of the timing belt loop to remove all slack.
+* Fasten the second clamp that was left loose.
+* Tension the timing belt by pushing the stepper motor bracket towards the
+  end of the frame.
+* Fasten the stepper motor bracket again.
+
+.. image:: /Images/Kits/kit_camera_slider_step51_350.jpg
+   :scale: 100 %
+   :alt: Timing belt connected to cart
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step51_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step52_350.jpg
+   :scale: 100 %
+   :alt: Tensioning the timing belt
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step52_1500.jpg
+
+Stepper Brick
+-------------
+
+Almost done. The final step it to add the Stepper Brick and the 3D printed end
+caps:
+
+* Fasten the Stepper Brick to the stack bracket with four 10mm spacers and
+  eight 6mm bolts from the Stepper Brick's mounting kit.
+* Put a 3D printed end cap on each leg.
+
+.. image:: /Images/Kits/kit_camera_slider_step53_350.jpg
+   :scale: 100 %
+   :alt: Stepper Brick on bracket
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step53_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_complete1_600.jpg
+   :scale: 100 %
+   :alt: Complete camera slider
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_complete1_1500.jpg
