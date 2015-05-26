@@ -20,7 +20,9 @@ Das Kit besteht aus den folgenden Teilen:
 * 1x `Lager Set <https://www.tinkerforge.com/de/shop/makerbeam/accessories/bearing-set.html>`__
 * 1x `Gelenk Set <https://www.tinkerforge.com/de/shop/makerbeam/accessories/hinge-set.html>`__
 * 1x `3D gedruckte Endkappen, 4 Stück <https://www.tinkerforge.com/de/shop/makerbeam/accessories/3d-printed-end-caps.html>`__
-* 1x Kameraschlitten Zubehör Kit
+* 1x Zahnriemen Kit
+* 1x Achsreduzierstück 5mm / 3mm
+* 1x Halterungen für Kameraschlitten
 * 1x `Schrittmotor, Nema 17, 0.43Nm <https://www.tinkerforge.com/de/shop/accessories/motors/stepper-motor-nema-17-043nm.html>`__
 * 1x `Stepper Brick <https://www.tinkerforge.com/de/shop/bricks/stepper-brick.html>`__
 * 1x `M3 Inbus Schraubendreher <https://www.tinkerforge.com/de/shop/makerbeam/accessories/m3-hex-key-driver.html>`__
