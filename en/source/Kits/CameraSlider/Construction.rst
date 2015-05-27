@@ -20,9 +20,9 @@ The kit contains the following parts:
 * 1x `Bearing Set <https://www.tinkerforge.com/en/shop/makerbeam/accessories/bearing-set.html>`__
 * 1x `Hinge Set <https://www.tinkerforge.com/en/shop/makerbeam/accessories/hinge-set.html>`__
 * 1x `3D printed End Caps, 4pcs <https://www.tinkerforge.com/en/shop/makerbeam/accessories/3d-printed-end-caps.html>`__
-* 1x Timing Belt with Pulleys
-* 1x Shaft Reducer 5mm / 3mm
-* 1x Brackets for Camera Slider
+* 1x `Timing Belt with Pulleys <https://www.tinkerforge.com/en/shop/accessories/mounting/timing-belt-with-pulleys.html>`__
+* 1x `Shaft Reducer 5mm / 3mm <https://www.tinkerforge.com/en/shop/accessories/mounting/shaft-reducer-5mm-3mm.html>`__
+* 1x `Brackets for Camera Slider <https://www.tinkerforge.com/en/shop/accessories/mounting/brackets-for-camera-slider.html>`__
 * 1x `Stepper Motor, Nema 17, 0.43Nm <https://www.tinkerforge.com/en/shop/accessories/motors/stepper-motor-nema-17-043nm.html>`__
 * 1x `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__ (including `Mini USB Cable 180cm <https://www.tinkerforge.com/en/shop/accessories/cable/mini-usb-cable-180cm.html>`__ and `Mounting Kit 12mm <https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html>`__)
 * 1x `24V 4A AC/DC Power Adapter <https://www.tinkerforge.com/en/shop/power-supplies/24v-4a-ac-dc-power-adapter.html>`__

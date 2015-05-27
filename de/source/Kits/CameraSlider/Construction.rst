@@ -20,11 +20,11 @@ Das Kit besteht aus den folgenden Teilen:
 * 1x `Lager Set <https://www.tinkerforge.com/de/shop/makerbeam/accessories/bearing-set.html>`__
 * 1x `Gelenk Set <https://www.tinkerforge.com/de/shop/makerbeam/accessories/hinge-set.html>`__
 * 1x `3D gedruckte Endkappen, 4 Stück <https://www.tinkerforge.com/de/shop/makerbeam/accessories/3d-printed-end-caps.html>`__
-* 1x Zahnriemen mit Zahnriemenräder
-* 1x Achsreduzierstück 5mm / 3mm
-* 1x Halterungen für Kameraschlitten
+* 1x `Zahnriemen mit Zahnriemenräder <https://www.tinkerforge.com/de/shop/accessories/mounting/timing-belt-with-pulleys.html>`__
+* 1x `Achsreduzierstück 5mm / 3mm <https://www.tinkerforge.com/de/shop/accessories/mounting/shaft-reducer-5mm-3mm.html>`__
+* 1x `Halterungen für Kameraschlitten <https://www.tinkerforge.com/de/shop/accessories/mounting/brackets-for-camera-slider.html>`__
 * 1x `Schrittmotor, Nema 17, 0.43Nm <https://www.tinkerforge.com/de/shop/accessories/motors/stepper-motor-nema-17-043nm.html>`__
-* 1x `Stepper Brick <https://www.tinkerforge.com/de/shop/bricks/stepper-brick.html>`__ (including `Mini USB Kabel 180cm <https://www.tinkerforge.com/de/shop/accessories/cable/mini-usb-cable-180cm.html>`__ and `Befestigungskit 12mm <https://www.tinkerforge.com/de/shop/accessories/mounting/mounting-kit-12mm.html>`__)
+* 1x `Stepper Brick <https://www.tinkerforge.com/de/shop/bricks/stepper-brick.html>`__ (inklusive `Mini USB Kabel 180cm <https://www.tinkerforge.com/de/shop/accessories/cable/mini-usb-cable-180cm.html>`__ und `Befestigungskit 12mm <https://www.tinkerforge.com/de/shop/accessories/mounting/mounting-kit-12mm.html>`__)
 * 1x `24V 4A AC/DC Netzteil <https://www.tinkerforge.com/de/shop/power-supplies/24v-4a-ac-dc-power-adapter.html>`__
 * 1x `M3 Inbus Schraubendreher <https://www.tinkerforge.com/de/shop/makerbeam/accessories/m3-hex-key-driver.html>`__
 * 1x `M3 Sechskant Schraubendreher <https://www.tinkerforge.com/de/shop/makerbeam/accessories/m3-hex-nut-driver.html>`__
