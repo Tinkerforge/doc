@@ -211,7 +211,8 @@ Temperature). Feed ID, API Key and the upload interval have to be configured in
 the demo application. Please take a look at the project description for further
 information
 
-The download link is in the :ref:`resources <starter_kit_weather_station_resources>`.
+The download link is in the :ref:`resources
+<starter_kit_weather_station_resources>` section.
 
 .. image:: /Images/Kits/weather_station_demo_350.jpg
    :scale: 100 %
