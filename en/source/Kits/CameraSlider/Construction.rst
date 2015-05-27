@@ -445,10 +445,11 @@ The drive pulley gets attached to the stepper motor:
 The idler pulley on the other end of the frame uses a on long M3 bolt as shaft,
 but the pulley has a 5mm hole. A brass shaft reducer reduces the hole to 3mm:
 
-* Press the reducer into the pulley. This is a tight fit. Ensure that the
+* Put the reducer into the pulley. This is a tight fit. Ensure that the
   set screws of the pulley are loose and that the reducer does not sit crooked.
-  Then use pliers, a vice, a hammer or a similar tool to apply light force to
-  press the reducer into the pulley.
+  The fit might be so tight that the reducer does not seem to fit at all. In
+  that case use pliers, a vice, a hammer or a similar tool to apply light force
+  to press the reducer into the pulley.
 * Fasten the two set screws.
 * Install the modified pulley between the two bearing assemblies with a long
   M3 bolt. You might need to adjust the alignment of the bearings to make the
@@ -578,11 +579,11 @@ caps:
    :target: ../../_images/Kits/kit_camera_slider_step44_1500.jpg
 
 
-Camera Slider Done
-------------------
+Done!
+-----
 
-Done! The camera slider is now fully assembled. You will also have
-some leftover parts.
+The camera slider is now fully assembled. You will also have some leftover
+parts.
 
 .. image:: /Images/Kits/kit_camera_slider_complete1_600.jpg
    :scale: 100 %
@@ -592,6 +593,6 @@ some leftover parts.
 
 .. image:: /Images/Kits/kit_camera_slider_leftover_600.jpg
    :scale: 100 %
-   :alt: Leftover parts of camer slider
+   :alt: Leftover parts
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_leftover_1500.jpg
