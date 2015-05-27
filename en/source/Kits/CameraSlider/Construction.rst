@@ -20,11 +20,12 @@ The kit contains the following parts:
 * 1x `Bearing Set <https://www.tinkerforge.com/en/shop/makerbeam/accessories/bearing-set.html>`__
 * 1x `Hinge Set <https://www.tinkerforge.com/en/shop/makerbeam/accessories/hinge-set.html>`__
 * 1x `3D printed End Caps, 4pcs <https://www.tinkerforge.com/en/shop/makerbeam/accessories/3d-printed-end-caps.html>`__
-* 1x Timing Belt Kit
+* 1x Timing Belt with Pulleys
 * 1x Shaft Reducer 5mm / 3mm
 * 1x Brackets for Camera Slider
 * 1x `Stepper Motor, Nema 17, 0.43Nm <https://www.tinkerforge.com/en/shop/accessories/motors/stepper-motor-nema-17-043nm.html>`__
-* 1x `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__
+* 1x `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__ (including `Mini USB Cable 180cm <https://www.tinkerforge.com/en/shop/accessories/cable/mini-usb-cable-180cm.html>`__ and `Mounting Kit 12mm <https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html>`__)
+* 1x `24V 4A AC/DC Power Adapter <https://www.tinkerforge.com/en/shop/power-supplies/24v-4a-ac-dc-power-adapter.html>`__
 * 1x `M3 Hex Key Driver <https://www.tinkerforge.com/en/shop/makerbeam/accessories/m3-hex-key-driver.html>`__
 * 1x `M3 Hex Nut Driver <https://www.tinkerforge.com/en/shop/makerbeam/accessories/m3-hex-nut-driver.html>`__
 
@@ -527,6 +528,7 @@ Attach the clamps to the 60mm MakerBeam:
   outwards.
 * Put the MakerBeam-clamp assembly back into the bottom of the cart onto the
   four 12mm bolts and loop the belt around the drive and the idler pulley.
+  Ensure that the part with the threaded holes faces down on both pulleys.
 
 .. image:: /Images/Kits/kit_camera_slider_step40_350.jpg
    :scale: 100 %
