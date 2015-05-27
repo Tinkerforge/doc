@@ -14,9 +14,10 @@ Starterkit: Kameraschlitten
 Features
 --------
 
- * Jederzeit einfach modifizierbar
-   * Mit Makerbeams eigene Halterungen bauen
-   * Weitere Funktionen mittels anderer Bricks und Bricklets
+* Jederzeit einfach modifizierbar
+
+ * Mit Makerbeams eigene Halterungen bauen
+ * Weitere Funktionen mittels anderer Bricks und Bricklets
 
 Beschreibung
 ------------
@@ -35,9 +36,6 @@ Ein Stepper Brick bewegt den Schlitten millimetergenau und kann mit weiteren
 Bricks und Bricklets erweitert werden. So kann zum Beispiel die Kamera 
 automatisch von einem Quad Relay Bricklet ausgelöst werden oder zusammen mit RED 
 Brick und HDMI Display eine autarke Lösung realisiert werden.
-
-
-
 
 
 Technische Spezifikation
