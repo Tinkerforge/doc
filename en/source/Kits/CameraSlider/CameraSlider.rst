@@ -7,6 +7,21 @@
 Starter Kit: Camera Slider
 ==========================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Kits/kit_camera_slider_complete1_350.jpg",
+	               "Kits/kit_camera_slider_complete1_800.jpg",
+	               "Camera Slider: Complete kit")
+	}}
+	{{
+	    tfdocimg("Kits/kit_camera_slider_content_100.jpg",
+	             "Kits/kit_camera_slider_content_800.jpg",
+	             "Camer Slider: Content")
+	}}
+	{{ tfdocend() }}
+
 .. note::
  This kit is currently work-in-progress!
 
