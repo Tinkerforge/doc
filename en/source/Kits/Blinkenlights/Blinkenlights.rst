@@ -199,7 +199,7 @@ Demo Application and Example Projects
    :align: center
    :target: ../../_images/Kits/blinkenlights_demo_setup.jpg
 
-The demo application shows possible applications for this kit. It
+The demo application shows possible use cases for this kit. It
 consists of 6 individual applications each also provided as individual project
 (see below). Each project is represented by its own tab and will be
 started by selecting the corresponding tab. The application supports the
