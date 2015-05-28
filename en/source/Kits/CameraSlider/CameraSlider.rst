@@ -91,6 +91,8 @@ Technical Specifications
 Resources
 ---------
 
+* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
+
 
 Firmware updating and first tests
 ---------------------------------
@@ -133,7 +135,7 @@ the PC where the kit is connected to.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_connection_350.jpg
    :scale: 100 %
-   :alt: Blinkenlights Demo Application Screenshot: Connection
+   :alt: Camera Slider Demo Application Screenshot: Connection
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_demo_connection.jpg
 
@@ -158,13 +160,137 @@ repeated.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_calibration_350.jpg
    :scale: 100 %
-   :alt: Blinkenlights Demo Application Screenshot: Calibration
+   :alt: Camera Slider Demo Application Screenshot: Calibration
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_demo_calibration.jpg
+
+Automatic Power Control
+"""""""""""""""""""""""
+
+With "Automatic Power Control" enabled the demo automatically enables the
+stepper motor power only when the cart is ordered to move to a new position
+and disables the power once the cart has reached that position. This helps to
+reduce power consumption and noise while the cart is not moving.
+
+As a consequence, the cart is not actively held in place by the stepper motor
+while it is not moving. This works just fine if the camera slider is used in
+a horizontal setup. But in a more slanted or even vertical setup the cart
+will move on its own due to gravity. In this case you can disabled "Automatic
+Power Control" and have the stepper motor power constantly enabled to hold
+the cart actively in place at all times.
 
 Linear Motion
 ^^^^^^^^^^^^^
 
+On this tab you can order the cart to move to a new target position with
+configurable velocity, acceleration and deceleration. Use the "Target Position"
+slider to set a new target position or enter its step number. Once the target
+position changed the cart start moving towards it.
+
+The "Forward" and "Backward" buttons work just as the ones on the "Calibration"
+tab.
+
+The target position can only be changed while the cart is standing still. The
+cart can be stopped with the configured deceleration by clicking the "Stop"
+button and with maximum deceleration by clicking the "Full Break" button.
+
+.. image:: /Images/Kits/kit_camera_slider_demo_linear_motion_350.jpg
+   :scale: 100 %
+   :alt: Camera Slider Demo Application Screenshot: Linear Motion
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_demo_linear_motion.jpg
 
 Time Lapse
 ^^^^^^^^^^
+
+On this tap you can configure a moving time-lapse photography setup. The demo
+supports capturing images in equidistant time and distance intervals.
+
+Because there are many different ways to trigger a camera the demo doesn't
+settle for any particular way but allows you to enter a shell command to
+trigger your camera. By default the demo uses the `gphoto2
+<http://www.gphoto.org/>`__ tool that covers a wide range of cameras::
+
+  gphoto2 --capture-image
+
+The Windows and Mac OS X installers include the gphoto2 tool and the Debian
+package for Linux depends on the gphoto2 Debian package.
+
+You can test you individual camera trigger command by clicking the "Test"
+button. The command is executed and the result is shown on the "Log" tab.
+
+.. image:: /Images/Kits/kit_camera_slider_demo_time_lapse_350.jpg
+   :scale: 100 %
+   :alt: Camera Slider Demo Application Screenshot: Time Lapse
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_demo_time_lapse.jpg
+
+Timing and Motion
+"""""""""""""""""
+
+After the "Start" button is clicked the cart moves to the "Start Position" and
+waits for "Initial Delay" seconds before the trigger command is executed for
+the first time. Afterwards the cart moves to the next position and waits
+"Interval" seconds before the trigger command is executed again. This repeats
+until the trigger command has been executed "Image Count" times and the "End
+Position" is reached or the "Abort" button is clicked.
+
+The initial delay and interval handling takes the time into account it takes to
+execute the trigger command and to move the cart to the next position. This
+allows to achieve accurate timing as long as the time it takes to execute the
+trigger command and to move the cart to the next position is not longer than
+the configured interval.
+
+The motion velocity, acceleration and deceleration can be configured on the
+"Linear Motion" tab.
+
+Industrial Quad Relay Bricklet as Trigger
+"""""""""""""""""""""""""""""""""""""""""
+
+Many cameras support external triggers that work basically by shorting out two
+wires. An `Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`__
+can to that to trigger the camera instead of gphoto2.
+
+The Canon EOS camera series uses a 2.5mm 3-pole stereo jack as connector for
+the external focus and shutter trigger. You can find the exact pinout for this
+and several other cameras `here <http://www.doc-diy.net/photo/remote_pinout/>`__.
+
+.. image:: /Images/Kits/kit_camera_slider_iqr_350.jpg
+   :scale: 100 %
+   :alt: Canon EOS external trigger cable
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_iqr_1500.jpg
+
+A trigger script for the Industrial Quad Relay Bricklet can be downloaded
+`here <https://github.com/Tinkerforge/camera-slider/blob/master/demo/starter_kit_camera_slider_demo/trigger_iqr.py>`__.
+To use it you need to have Python and the :ref:`Python API bindings
+<api_bindings_python>` installed. Its command line syntax is as follows::
+
+  python trigger_iqr.py <host> <port> <iqr-uid> <relay> <trigger-duration> <wait-duration>
+
+Here is an example for an Industrial Quad Relay Bricklet with UID ``n5d``
+reachable on localhost at port 4223::
+
+  python trigger_iqr.py localhost 4223 n5d 0 50 1000
+
+The shutter and ground pins of the external trigger cable are connected to
+relay 0. The relay will short out for 50 milliseconds. Afterwards the script
+will wait for 1000 milliseconds so the camera has some time to process and
+store the captured image.
+
+RED Brick Program as Trigger
+""""""""""""""""""""""""""""
+
+If your time lapse setup includes a :ref:`RED Brick <red_brick>` then another
+RED Brick program can be used for the camera trigger logic. A trigger script
+for this can be downloaded
+`here <https://github.com/Tinkerforge/camera-slider/blob/master/demo/starter_kit_camera_slider_demo/trigger_red.py>`__.
+Its command line syntax is as follows::
+
+  python trigger_red.py <host> <port> <red-uid> <program-identifier> <wait-duration>
+
+Here is an example for a RED Brick with UID ``3JpHZL``
+reachable on localhost at port 4223 that starts the program ``trigger-example``
+once and waits 1000 milliseconds afterwards::
+
+  python trigger_iqr.py localhost 4223 3JpHZL trigger-example 1000
