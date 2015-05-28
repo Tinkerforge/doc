@@ -498,6 +498,11 @@ Program Tab (Upload and Execution)
 The documentation of the program tab can be found on
 :ref:`a separate site <red_brick_program_tab>`.
 
+.. image:: /Images/Screenshots/red_brick_program_overview.jpg
+   :scale: 60 %
+   :alt: Screenshot of RED Brick Program tab.
+   :align: center
+
 .. _red_brick_brickv_console:
 
 Console Tab (Remote Access)

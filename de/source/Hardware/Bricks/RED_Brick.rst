@@ -514,6 +514,11 @@ Program Tab (Programme hochladen und ausführen)
 Die Beschreibung des Tabs befindet auf einer
 :ref:`separaten Seite <red_brick_program_tab>`.
 
+.. image:: /Images/Screenshots/red_brick_program_overview.jpg
+   :scale: 60 %
+   :alt: Screenshot des RED Brick Program Tabs.
+   :align: center
+
 .. _red_brick_brickv_console:
 
 Console Tab (Konsole, Fernsteuerung)
