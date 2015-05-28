@@ -20,6 +20,26 @@ Starter Kit: Camera Slider
 	             "Kits/kit_camera_slider_content_800.jpg",
 	             "Camer Slider: Content")
 	}}
+	{{
+	    tfdocimg("Kits/kit_camera_slider_camera1_100.jpg",
+	             "Kits/kit_camera_slider_camera1_800.jpg",
+	             "Camer Slider: With video camera")
+	}}
+	{{
+	    tfdocimg("Kits/kit_camera_slider_camera2_100.jpg",
+	             "Kits/kit_camera_slider_camera2_800.jpg",
+	             "Camer Slider: With camera")
+	}}
+	{{
+	    tfdocimg("Kits/kit_camera_slider_w_lcd1_100.jpg",
+	             "Kits/kit_camera_slider_w_lcd1_800.jpg",
+	             "Camer Slider: With LCD")
+	}}
+	{{
+	    tfdocimg("Kits/kit_camera_slider_w_lcd2_100.jpg",
+	             "Kits/kit_camera_slider_w_lcd2_800.jpg",
+	             "Camer Slider: With LCD")
+	}}
 	{{ tfdocend() }}
 
 .. note::
