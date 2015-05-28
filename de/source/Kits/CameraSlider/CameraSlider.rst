@@ -15,14 +15,13 @@ Features
 --------
 
 * Jederzeit einfach modifizierbar
-
- * Mit Makerbeams eigene Halterungen bauen
- * Weitere Funktionen mittels anderer Bricks und Bricklets
+* Mit MakerBeams eigene Halterungen bauen
+* Weitere Funktionen mittels anderer Bricks und Bricklets
 
 Beschreibung
 ------------
 
-Das Starterkit: Kamerschlitten erlaubt eine schlingerfreie automatische
+Das Starterkit: Kamerschlitten erlaubt eine flüssige automatische
 Bewegung von Foto- und Videokameras. Über die angebotene Demo Anwendung kann
 der Schlitten frei bewegt und Zeitrafferaufnahmen erstellt werden. Mit den
 angebotenen APIs kann der Schlitten aber auch in eigene Projekte integriert
@@ -31,7 +30,7 @@ werden.
 Das Kit ist aus MakerBeams aufgebaut. Andere Beams können ohne großen Aufwand
 befestigt werden, so dass sehr einfach für andere Geräte eigene Halterungen
 konstruiert werden können. Damit wird das Kit zur Achse zum linearen 
-Bewegen von kleinen Lasten (Linearachse).
+Bewegen von Lasten (Linearachse).
 
 Ein Stepper Brick bewegt den Schlitten millimetergenau und kann mit weiteren 
 Bricks und Bricklets erweitert werden. So kann zum Beispiel die Kamera 
@@ -58,6 +57,12 @@ Konstruktion
 
 Der Aufbau des Kits ist :ref:`hier <starter_kit_camera_slider_construction>`
 beschrieben.
+
+.. image:: /Images/Kits/kit_camera_slider_construction_collage_800.jpg
+   :scale: 100 %
+   :alt: Konstruktionscollage des Kameraschlitten Kits
+   :align: center
+   :target: ../CameraSlider/Construction.html
 
 .. toctree::
    :hidden:
