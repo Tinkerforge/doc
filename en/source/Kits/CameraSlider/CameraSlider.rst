@@ -66,12 +66,18 @@ Resources
 Firmware updating and first tests
 ---------------------------------
 
-
 Construction
 ------------
 
 The construction of the kit is described
 :ref:`here <starter_kit_camera_slider_construction>`.
+
+.. image:: /Images/Kits/kit_camera_slider_construction_collage_800.jpg
+   :scale: 100 %
+   :alt: Camera Slider kit construction collage
+   :align: center
+   :target: ../CameraSlider/Construction.html
+
 
 .. toctree::
    :hidden:
