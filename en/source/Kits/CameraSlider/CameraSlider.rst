@@ -18,27 +18,27 @@ Starter Kit: Camera Slider
 	{{
 	    tfdocimg("Kits/kit_camera_slider_content_100.jpg",
 	             "Kits/kit_camera_slider_content_800.jpg",
-	             "Camer Slider: Content")
+	             "Camera Slider: Content")
 	}}
 	{{
 	    tfdocimg("Kits/kit_camera_slider_camera1_100.jpg",
 	             "Kits/kit_camera_slider_camera1_800.jpg",
-	             "Camer Slider: With video camera")
+	             "Camera Slider: With video camera")
 	}}
 	{{
 	    tfdocimg("Kits/kit_camera_slider_camera2_100.jpg",
 	             "Kits/kit_camera_slider_camera2_800.jpg",
-	             "Camer Slider: With camera")
+	             "Camera Slider: With camera")
 	}}
 	{{
 	    tfdocimg("Kits/kit_camera_slider_w_lcd1_100.jpg",
 	             "Kits/kit_camera_slider_w_lcd1_800.jpg",
-	             "Camer Slider: With LCD")
+	             "Camera Slider: With LCD")
 	}}
 	{{
 	    tfdocimg("Kits/kit_camera_slider_w_lcd2_100.jpg",
 	             "Kits/kit_camera_slider_w_lcd2_800.jpg",
-	             "Camer Slider: With LCD")
+	             "Camera Slider: With LCD")
 	}}
 	{{ tfdocend() }}
 
@@ -48,10 +48,36 @@ Starter Kit: Camera Slider
 Features
 --------
 
+* Easy to modify
+* Build your own brackets with MakerBeams
+* Extend functionality of kit with Bricks and Bricklets
+
 
 Description
 -----------
 
+The `Starter Kit: Camera Slider <#>`__ allows an automatic and fluid linear
+motion of photo- and video-camera. With the provided demo application
+you can control the slider freely and you can make automatic time
+laps shoots. An easy API can be used to integrate the camera slider
+into you own project. This means that the kit can be used as a
+general purpose axis for linear motion.
+
+The kit is build from `MakerBeams <https://www.tinkerforge.com/en/shop/makerbeam.html>`__. 
+Other Beams can be attached easily.
+This makes it easy to construct your own brackets that can hold
+other devices. This means that the kit can be used as a
+general purpose axis for linear motion.
+
+A `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__ 
+moves the cart with millimeter precision and it can
+be extended with other Bricks and Bricklets. It is for example possible
+to automatically trigger the camera with a Industrial Quad Relay Bricklet.
+A `RED Brick <https://www.tinkerforge.com/en/shop/bricks/red-brick.html>`__ 
+together with a 
+`HDMI display <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__ 
+can be used to implement an autonomous solution that can be controlled 
+via touchscreen.
 
 Technical Specifications
 ------------------------
