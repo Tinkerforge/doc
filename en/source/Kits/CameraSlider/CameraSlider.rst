@@ -73,7 +73,7 @@ A `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>
 moves the cart with millimeter precision and it can be extended with other 
 `Bricks <https://www.tinkerforge.com/en/shop/bricks.html>`__
 and 
-`Bricklets <https://www.tinkerforge.com/en/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__. 
+`Bricklets <https://www.tinkerforge.com/en/shop/bricklets.html>`__.
 It is for example possible to automatically trigger the camera with a 
 `Industrial Quad Relay Bricklet <https://www.tinkerforge.com/en/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__.
 A `RED Brick <https://www.tinkerforge.com/en/shop/bricks/red-brick.html>`__ 
@@ -103,17 +103,16 @@ Construction
 The construction of the kit is described
 :ref:`here <starter_kit_camera_slider_construction>`.
 
-.. image:: /Images/Kits/kit_camera_slider_construction_collage_800.jpg
-   :scale: 100 %
-   :alt: Camera Slider kit construction collage
-   :align: center
-   :target: ../CameraSlider/Construction.html
-
-
 .. toctree::
    :hidden:
 
    Details <Construction>
+
+.. image:: /Images/Kits/kit_camera_slider_construction_collage_800.jpg
+   :scale: 100 %
+   :alt: Camera Slider kit construction collage
+   :align: center
+   :target: Construction.html
 
 
 .. _starter_kit_camera_slider_demo:

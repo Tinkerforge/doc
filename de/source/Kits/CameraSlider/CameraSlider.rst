@@ -103,16 +103,16 @@ Konstruktion
 Der Aufbau des Kits ist :ref:`hier <starter_kit_camera_slider_construction>`
 beschrieben.
 
-.. image:: /Images/Kits/kit_camera_slider_construction_collage_800.jpg
-   :scale: 100 %
-   :alt: Konstruktionscollage des Kameraschlitten Kits
-   :align: center
-   :target: ../CameraSlider/Construction.html
-
 .. toctree::
    :hidden:
 
    Details <Construction>
+
+.. image:: /Images/Kits/kit_camera_slider_construction_collage_800.jpg
+   :scale: 100 %
+   :alt: Konstruktionscollage des Kameraschlitten Kits
+   :align: center
+   :target: Construction.html
 
 
 .. _starter_kit_camera_slider_demo:
