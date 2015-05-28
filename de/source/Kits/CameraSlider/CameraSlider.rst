@@ -71,9 +71,13 @@ Bewegen von Lasten (Linearachse).
 
 Ein `Stepper Brick <https://www.tinkerforge.com/de/shop/bricks/stepper-brick.html>`__
 bewegt den Schlitten millimetergenau und kann mit weiteren 
-Bricks und Bricklets erweitert werden. So kann zum Beispiel die Kamera 
-automatisch von einem Industrial Quad Relay Bricklet ausgelöst werden oder
-zusammen mit `RED Brick <https://www.tinkerforge.com/de/shop/bricks/red-brick.html>`__
+`Bricks <https://www.tinkerforge.com/de/shop/bricks.html>`__
+und 
+`Bricklets <https://www.tinkerforge.com/de/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__
+erweitert werden. So kann zum Beispiel die Kamera automatisch von einem 
+`Industrial Quad Relay Bricklet <https://www.tinkerforge.com/de/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__
+ausgelöst werden oder zusammen mit 
+`RED Brick <https://www.tinkerforge.com/de/shop/bricks/red-brick.html>`__
 und
 `HDMI Display <https://www.tinkerforge.com/de/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
 eine autarke Lösung realisiert werden.

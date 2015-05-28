@@ -70,9 +70,12 @@ other devices. This means that the kit can be used as a
 general purpose axis for linear motion.
 
 A `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__ 
-moves the cart with millimeter precision and it can
-be extended with other Bricks and Bricklets. It is for example possible
-to automatically trigger the camera with a Industrial Quad Relay Bricklet.
+moves the cart with millimeter precision and it can be extended with other 
+`Bricks <https://www.tinkerforge.com/en/shop/bricks.html>`__
+and 
+`Bricklets <https://www.tinkerforge.com/en/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__. 
+It is for example possible to automatically trigger the camera with a 
+`Industrial Quad Relay Bricklet <https://www.tinkerforge.com/en/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__.
 A `RED Brick <https://www.tinkerforge.com/en/shop/bricks/red-brick.html>`__ 
 together with a 
 `HDMI display <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__ 
