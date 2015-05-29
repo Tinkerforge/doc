@@ -215,8 +215,6 @@ Repeat these steps four times to create four MakerBeams with two bearings each.
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step15_1500.jpg
 
-FIXME: redo image without the second MakerBeam
-
 .. image:: /Images/Kits/kit_camera_slider_step16_350.jpg
    :scale: 100 %
    :alt: MakerBeam with two bearings near to its edges
