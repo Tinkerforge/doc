@@ -606,6 +606,8 @@ Wir empfehlen Baudraten von 500000, 250000, 166666, 125000, 100000, 83333,
 71428, 62500, 55555, 50000, 45454 oder 41666 Baud bei der Nutzung eines RED
 Bricks.
 
+.. _red_brick_brickv_import_export_tab:
+
 Import/Export
 ^^^^^^^^^^^^^
 

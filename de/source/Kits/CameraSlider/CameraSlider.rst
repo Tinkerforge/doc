@@ -66,17 +66,17 @@ werden.
 Das Kit ist aus `MakerBeams <https://www.tinkerforge.com/de/shop/makerbeam.html>`__
 aufgebaut. Andere Beams können ohne großen Aufwand
 befestigt werden, so dass sehr einfach für andere Geräte eigene Halterungen
-konstruiert werden können. Damit wird das Kit zur Achse zum linearen 
+konstruiert werden können. Damit wird das Kit zur Achse zum linearen
 Bewegen von Lasten (Linearachse).
 
 Ein `Stepper Brick <https://www.tinkerforge.com/de/shop/bricks/stepper-brick.html>`__
-bewegt den Schlitten millimetergenau und kann mit weiteren 
+bewegt den Schlitten millimetergenau und kann mit weiteren
 `Bricks <https://www.tinkerforge.com/de/shop/bricks.html>`__
-und 
+und
 `Bricklets <https://www.tinkerforge.com/en/shop/bricklets.html>`__
-erweitert werden. So kann zum Beispiel die Kamera automatisch von einem 
+erweitert werden. So kann zum Beispiel die Kamera automatisch von einem
 `Industrial Quad Relay Bricklet <https://www.tinkerforge.com/de/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__
-ausgelöst werden oder zusammen mit 
+ausgelöst werden oder zusammen mit
 `RED Brick <https://www.tinkerforge.com/de/shop/bricks/red-brick.html>`__
 und
 `HDMI Display <https://www.tinkerforge.com/de/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
@@ -86,11 +86,24 @@ eine autarke Lösung realisiert werden.
 Technische Spezifikation
 ------------------------
 
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Bewegungsbereich                  TBDcm
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           TBDmm (TBD")
+Gewicht                           TBDg
+================================  ============================================================
+
 
 .. _starter_kit_camera_slider_resources:
 
 Ressourcen
 ----------
+
+* Kameraschlitten-Halterungen als FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/camera-slider/tree/master/brackets>`__)
+* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Source Code <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
 
 
 Firmware aktualisieren und erste Tests

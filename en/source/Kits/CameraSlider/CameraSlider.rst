@@ -63,27 +63,37 @@ laps shoots. An easy API can be used to integrate the camera slider
 into you own project. This means that the kit can be used as a
 general purpose axis for linear motion.
 
-The kit is build from `MakerBeams <https://www.tinkerforge.com/en/shop/makerbeam.html>`__. 
+The kit is build from `MakerBeams <https://www.tinkerforge.com/en/shop/makerbeam.html>`__.
 Other Beams can be attached easily.
 This makes it easy to construct your own brackets that can hold
 other devices. This means that the kit can be used as a
 general purpose axis for linear motion.
 
-A `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__ 
-moves the cart with millimeter precision and it can be extended with other 
+A `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__
+moves the cart with millimeter precision and it can be extended with other
 `Bricks <https://www.tinkerforge.com/en/shop/bricks.html>`__
-and 
+and
 `Bricklets <https://www.tinkerforge.com/en/shop/bricklets.html>`__.
-It is for example possible to automatically trigger the camera with a 
+It is for example possible to automatically trigger the camera with a
 `Industrial Quad Relay Bricklet <https://www.tinkerforge.com/en/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__.
-A `RED Brick <https://www.tinkerforge.com/en/shop/bricks/red-brick.html>`__ 
-together with a 
-`HDMI display <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__ 
-can be used to implement an autonomous solution that can be controlled 
+A `RED Brick <https://www.tinkerforge.com/en/shop/bricks/red-brick.html>`__
+together with a
+`HDMI display <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
+can be used to implement an autonomous solution that can be controlled
 via touchscreen.
 
 Technical Specifications
 ------------------------
+
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Motion Range                      TBDcm
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)            TBDmm (TBD")
+Weight                            TBDg
+================================  ============================================================
 
 
 .. _starter_kit_camera_slider_resources:
@@ -91,11 +101,30 @@ Technical Specifications
 Resources
 ---------
 
-* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
+* Camera Slider Brackets as FreeCAD CAD files (`Download <https://github.com/Tinkerforge/camera-slider/tree/master/brackets>`__)
+* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Source Code <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
 
 
 Firmware updating and first tests
 ---------------------------------
+
+As a very first step you should try out and update your Bricks and Bricklets.
+
+For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
+the :ref:`Brick Viewer <brickv_installation>`. Connect the Remote Switch Bricklet
+to the Master Brick and connect it via USB to your PC. Afterwards use Brick
+Viewer to check if all of the firmwares are up to date (Updates / Flashing
+button). If not, you can :ref:`update the Bricks <brickv_flash_firmware>` and
+:ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
+Viewer too:
+
+.. image:: /Images/Kits/kit_camera_slider_update.jpg
+   :scale: 100 %
+   :alt: Camera Slider update in Brick Viewer
+   :align: center
+
+As the next step test the Stepper Brick with the included stepper motor and
+power adapter. After that you can start to assemble the kit!
 
 Construction
 ------------
@@ -237,7 +266,7 @@ Position" is reached or the "Abort" button is clicked.
 The initial delay and interval handling takes the time into account it takes to
 execute the trigger command and to move the cart to the next position. This
 allows to achieve accurate timing as long as the time it takes to execute the
-trigger command and to move the cart to the next position is not longer than
+trigger command and to move the cart to the next position is shorter than
 the configured interval.
 
 The motion velocity, acceleration and deceleration can be configured on the
@@ -293,3 +322,16 @@ reachable on localhost at port 4223 that starts the program ``trigger-example``
 once and waits 1000 milliseconds afterwards::
 
   python trigger_iqr.py localhost 4223 3JpHZL trigger-example 1000
+
+The program can then perform the specific trigger sequence for your time lapse
+setup.
+
+Import on RED Brick
+^^^^^^^^^^^^^^^^^^^
+
+The demo application can also be uploaded to a :ref:`RED Brick <red_brick>`
+for stand-alone use-cases. Download the latest version as `archive for the RED Brick
+<http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__
+and import it as described in the :ref:`RED Brick documentation
+<red_brick_brickv_import_export_tab>`. The demo will then autostart in
+fullscreen mode.
