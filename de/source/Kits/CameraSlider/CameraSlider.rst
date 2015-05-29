@@ -73,7 +73,7 @@ Ein `Stepper Brick <https://www.tinkerforge.com/de/shop/bricks/stepper-brick.htm
 bewegt den Schlitten millimetergenau und kann mit weiteren 
 `Bricks <https://www.tinkerforge.com/de/shop/bricks.html>`__
 und 
-`Bricklets <https://www.tinkerforge.com/de/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__
+`Bricklets <https://www.tinkerforge.com/en/shop/bricklets.html>`__
 erweitert werden. So kann zum Beispiel die Kamera automatisch von einem 
 `Industrial Quad Relay Bricklet <https://www.tinkerforge.com/de/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__
 ausgelöst werden oder zusammen mit 
