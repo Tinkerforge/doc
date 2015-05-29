@@ -57,7 +57,7 @@ Features
 Beschreibung
 ------------
 
-Das Starterkit: Kamerschlitten erlaubt eine flüssige automatische
+Das *Starterkit: Kamerschlitten* erlaubt eine flüssige automatische
 Bewegung von Foto- und Videokameras. Über die angebotene Demo Anwendung kann
 der Schlitten frei bewegt und Zeitrafferaufnahmen erstellt werden. Mit den
 angebotenen APIs kann der Schlitten aber auch in eigene Projekte integriert

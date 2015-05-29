@@ -213,7 +213,7 @@ kit and have connected it directly to your PC via USB "localhost" and "4223" is
 fine. If you extended the kit by
 :ref:`Extensions <primer_master_extensions>` or
 want to control the kit from another PC you have to enter the IP address or
-hostname of the extension or the PC where the kit is connected to. Below the
+hostname of the Extension or the PC where the kit is connected to. Below the
 input boxes is a table which shows you the connected Bricks and Bricklets.
 
 

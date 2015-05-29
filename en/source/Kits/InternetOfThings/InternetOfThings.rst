@@ -134,9 +134,9 @@ Weight                                    130g (assembled kit)
 Resources
 ---------
 
-* Internet of Things kit case FreeCAD CAD files (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/case>`__)
-* iot-remote.com web site (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/web>`__)
-* iot-remote.com server Implementation (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/server>`__)
+* Internet of Things Case as FreeCAD CAD files (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/case>`__)
+* iot-remote.com Web Site (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/web>`__)
+* iot-remote.com Server Implementation (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/server>`__)
 
 Firmware updating and first tests
 ---------------------------------

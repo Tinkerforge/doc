@@ -137,7 +137,7 @@ Gewicht                                    130g (zusammengebautes Kit)
 Ressourcen
 ----------
 
-* Internet of Things Kit Gehäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/case>`__)
+* Internet of Things Gehäuse als FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/case>`__)
 * iot-remote.com Webseite (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/web>`__)
 * iot-remote.com Server Implementierung (`Download <https://github.com/Tinkerforge/internet-of-things/tree/master/server>`__)
 

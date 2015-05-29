@@ -56,10 +56,10 @@ Features
 Description
 -----------
 
-The Starter Kit: Camera Slider allows a automatic and fluid linear
+The *Starter Kit: Camera Slider* allows a automatic and fluid linear
 motion of photo- and video-cameras. With the provided demo application
 you can control the slider freely and make automatic time
-laps shoots. An easy API can be used to integrate the camera slider
+lapse shoots. An easy API can be used to integrate the camera slider
 into you own project. This means that the kit can be used as a
 general purpose axis for linear motion.
 

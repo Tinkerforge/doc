@@ -477,7 +477,7 @@ but the pulley has a 5mm hole. A brass shaft reducer reduces the hole to 3mm:
 Clamps
 ^^^^^^
 
-The timing belt clamp gets attached to a 60mm MakerBeam:
+The timing belt clamps get attached to a 60mm MakerBeam:
 
 * Insert two 6mm bolts into a 60mm MakerBeam.
 * Fasten a L-bracket to each bolt with a lock nut.

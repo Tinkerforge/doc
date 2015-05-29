@@ -151,7 +151,7 @@ Gewicht                           376g
 Ressourcen
 ----------
 
-* Wetterstationsgehäuse als FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
+* Wetterstations-Gehäuse als FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/weather-station/tree/master/case>`__)
 * Beispielquelltexte für :ref:`starter_kit_weather_station_write_to_lcd` (Download: |write_to_lcd_examples_download|)
 * Beispielquelltext für :ref:`starter_kit_weather_station_xively` (Download: `Python <https://github.com/Tinkerforge/weather-station/tree/master/xively/python>`__)
 * Beispielquelltext für :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
