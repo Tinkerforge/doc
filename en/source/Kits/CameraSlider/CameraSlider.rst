@@ -56,9 +56,9 @@ Features
 Description
 -----------
 
-The `Starter Kit: Camera Slider <#>`__ allows an automatic and fluid linear
-motion of photo- and video-camera. With the provided demo application
-you can control the slider freely and you can make automatic time
+The Starter Kit: Camera Slider allows a automatic and fluid linear
+motion of photo- and video-cameras. With the provided demo application
+you can control the slider freely and make automatic time
 laps shoots. An easy API can be used to integrate the camera slider
 into you own project. This means that the kit can be used as a
 general purpose axis for linear motion.
@@ -69,15 +69,12 @@ This makes it easy to construct your own brackets that can hold
 other devices. This means that the kit can be used as a
 general purpose axis for linear motion.
 
-A `Stepper Brick <https://www.tinkerforge.com/en/shop/bricks/stepper-brick.html>`__
+A :ref:`Stepper Brick <stepper_brick>`
 moves the cart with millimeter precision and it can be extended with other
-`Bricks <https://www.tinkerforge.com/en/shop/bricks.html>`__
-and
-`Bricklets <https://www.tinkerforge.com/en/shop/bricklets.html>`__.
+:ref:`Bricks <primer_bricks>` and :ref:`Bricklets <primer_bricklets>`.
 It is for example possible to automatically trigger the camera with a
-`Industrial Quad Relay Bricklet <https://www.tinkerforge.com/en/shop/bricklets/industrial/industrial-quad-relay-bricklet.html>`__.
-A `RED Brick <https://www.tinkerforge.com/en/shop/bricks/red-brick.html>`__
-together with a
+:ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`.
+A :ref:`RED Brick <red_brick>` together with a
 `HDMI display <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
 can be used to implement an autonomous solution that can be controlled
 via touchscreen.
@@ -158,7 +155,7 @@ Before starting you have to configure the host and port. If you use the
 standard kit and have connected it directly to your PC via USB "localhost" and
 "4223" is fine. If you extended the kit by
 :ref:`Extensions <primer_master_extensions>` or want to control the kit from
-another PC you have to enter the IP address or hostname of the extension or
+another PC you have to enter the IP address or hostname of the Extension or
 the PC where the kit is connected to.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_connection_350.jpg
@@ -183,8 +180,8 @@ and maximum position:
 * Click the "Apply" button to finish the calibration process.
 
 Now the demo knows and remembers the current position and the motion range of
-the cart. If the cart is moved manually then the calibration process has to be
-repeated.
+the cart. If the cart is moved manually, e.g. during transport, then the 
+calibration process has to be repeated.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_calibration_350.jpg
    :scale: 100 %

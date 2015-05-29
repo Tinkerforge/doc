@@ -198,7 +198,7 @@ The cart rolls on top of the frame.
 Bearing Assemblies
 ^^^^^^^^^^^^^^^^^^
 
-The construction starts with attaching twelve bearing to four 60mm MakerBeams.
+The construction starts with attaching twelve bearings to four 60mm MakerBeams.
 These bearings will roll on top and on the sides of the frame:
 
 * Insert two 12mm bolts into a 60mm MakerBeam and fasten each one with a
@@ -277,8 +277,8 @@ Repeat these steps four times to create four L-bracket with a bearing each.
 Substructure
 ^^^^^^^^^^^^
 
-The substructure of the cart consists of four bearing assemblies and two 150mm
-MakerBeams:
+The substructure of the cart consists of the previous build four bearing 
+assemblies and two 150mm MakerBeams:
 
 * Insert four 6mm bolts into a 150mm MakerBeam.
 * Fasten a 4-bearing and a 2-bearing assembly to the bolts with two lock nuts
@@ -477,7 +477,7 @@ but the pulley has a 5mm hole. A brass shaft reducer reduces the hole to 3mm:
 Clamps
 ^^^^^^
 
-The timing belt clamp get attached to a 60mm MakerBeam:
+The timing belt clamp gets attached to a 60mm MakerBeam:
 
 * Insert two 6mm bolts into a 60mm MakerBeam.
 * Fasten a L-bracket to each bolt with a lock nut.
@@ -488,7 +488,7 @@ The timing belt clamp get attached to a 60mm MakerBeam:
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step37_1500.jpg
 
-While the cart substructure was built four 12mm bolts with lock nuts were added
+While the cart substructure was built, four 12mm bolts with lock nuts were added
 to the bottom side of the cart:
 
 * Realign those 12mm bolts so that one bolt on each side of the cart sits in
