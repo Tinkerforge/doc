@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/CameraSlider/CameraSlider.html#construction">Starter Kit: Camera Slider</a> / Construction of Starter Kit: Camera Slider
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/CameraSlider/CameraSlider.html#construction">Starter Kit: Camera Slider</a> / Construction - Basic Camera Slider
 
 .. _starter_kit_camera_slider_construction:
 
-Construction of Starter Kit: Camera Slider
-==========================================
+Construction - Basic Camera Slider
+==================================
 
 The kit contains the following parts:
 
@@ -214,6 +214,8 @@ Repeat these steps four times to create four MakerBeams with two bearings each.
    :alt: MakerBeam with two 12mm bolts
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step15_1500.jpg
+
+FIXME: redo image without the second MakerBeam
 
 .. image:: /Images/Kits/kit_camera_slider_step16_350.jpg
    :scale: 100 %

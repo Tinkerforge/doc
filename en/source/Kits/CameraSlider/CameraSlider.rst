@@ -126,19 +126,42 @@ power adapter. After that you can start to assemble the kit!
 Construction
 ------------
 
-The construction of the kit is described
+The construction of the basic kit is described
 :ref:`here <starter_kit_camera_slider_construction>`.
 
 .. toctree::
    :hidden:
 
-   Details <Construction>
+   Basic <Construction>
 
 .. image:: /Images/Kits/kit_camera_slider_construction_collage_800.jpg
    :scale: 100 %
    :alt: Camera Slider kit construction collage
    :align: center
    :target: Construction.html
+
+Instead of using 900mm MakerBeams you can use 1500mm MakerBeams or even connect
+two 1500mm MakerBeams to get up to 3m of motion range. How to modify the frame
+for this is described :ref:`here <starter_kit_camera_slider_construction_longer_frame>`.
+
+.. toctree::
+   :hidden:
+
+   With Longer Frame <Construction_LongerFrame>
+
+FIXME: image of 3m frame
+
+You can also use a RED Brick with an HDMI touchscreen instead of using an
+external PC to control the camera slider. How to add a RED Brick and a
+touchscreen to the frame is described :ref:`here
+<starter_kit_camera_slider_construction_red_brick>`.
+
+.. toctree::
+   :hidden:
+
+   With RED Brick <Construction_REDBrick>
+
+FIXME: image of frame with RED Brick and touchscreen
 
 
 .. _starter_kit_camera_slider_demo:
@@ -329,6 +352,6 @@ Import on RED Brick
 The demo application can also be uploaded to a :ref:`RED Brick <red_brick>`
 for stand-alone use-cases. Download the latest version as `archive for the RED Brick
 <http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__
-and import it as described in the :ref:`RED Brick documentation
-<red_brick_brickv_import_export_tab>`. The demo will then autostart in
-fullscreen mode.
+and import it using the :ref:`RED Brick Import/Export
+<red_brick_brickv_import_export_tab>` tab of Brick Viewer. The demo will then
+autostart in fullscreen mode.
