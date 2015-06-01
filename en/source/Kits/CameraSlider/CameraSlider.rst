@@ -163,7 +163,7 @@ HDMI touchscreen to the frame is described :ref:`here
    :scale: 100 %
    :alt: Camera Slider kit with RED Brick and display
    :align: center
-   :target: Construction_REDBrick.html#starter-kit-camera-slider-construction-red-brick
+   :target: Construction_REDBrick.html
 
 
 .. _starter_kit_camera_slider_demo:
