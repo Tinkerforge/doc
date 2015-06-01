@@ -31,7 +31,7 @@ From the basic kit you should have enough 60mm MakerBeams, 6mm bolts and lock
 nuts leftover. You should only need additional MakerBeam Corner Brackets and
 L-Brackets.
 
-This pair of legs is similar to the original legs of the frame but more
+This extra pair of legs is similar to the original legs of the frame but more
 H-shaped. It consists of three 60mm MakerBeams connected by two MakerBeam
 L-Brackets to form an H-shape that is connected to the frame with two MakerBeam
 Corner Brackets. For the upright parts:
@@ -114,7 +114,7 @@ From the basic kit you should have four 60mm MakerBeams leftover. You should
 only need one additional pack of 60mm MakerBeams and the other parts from the
 list.
 
-Finally you need the 1500mm MakerBeams, straight brackets and an additional
+Finally, you need the 1500mm MakerBeams, straight brackets and an additional
 timing belt:
 
 * 4x `MakerBeam 1500mm, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-1500mm-1-piece-black.html>`__
@@ -154,6 +154,6 @@ Finally, the timing belt has to be extended:
 
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_complete1_350.jpg
    :scale: 100 %
-   :alt: Two timing belts staple together
+   :alt: Complete 3m long frame
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_longer_frame_complete1_1500.jpg
