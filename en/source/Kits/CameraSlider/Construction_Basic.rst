@@ -1,12 +1,12 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/CameraSlider/CameraSlider.html#construction">Starter Kit: Camera Slider</a> / Construction - Basic Camera Slider
 
-.. _starter_kit_camera_slider_construction:
+.. _starter_kit_camera_slider_construction_basic:
 
 Construction - Basic Camera Slider
 ==================================
 
-The kit contains the following parts:
+The basic kit contains the following parts:
 
 * 2x `MakerBeam 900mm, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-900mm-1-piece-black.html>`__
 * 1x `MakerBeam 150mm, 6pcs, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-150mm-6pcs-black.html>`__
@@ -270,7 +270,7 @@ Repeat these steps four times to create four L-bracket with a bearing each.
 
 .. image:: /Images/Kits/kit_camera_slider_step21_350.jpg
    :scale: 100 %
-   :alt: Complete bottom bearing assembly
+   :alt: Complete bottom 1-bearing assembly
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step21_1500.jpg
 

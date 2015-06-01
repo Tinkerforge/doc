@@ -76,7 +76,7 @@ erweitert werden. So kann zum Beispiel die Kamera automatisch von einem
 :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
 ausgelöst werden oder zusammen mit
 :ref:`RED Brick <red_brick>` und
-`HDMI Display <https://www.tinkerforge.com/de/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
+`HDMI Touchscreen <https://www.tinkerforge.com/de/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
 eine autarke Lösung realisiert werden.
 
 
@@ -110,19 +110,44 @@ Firmware aktualisieren und erste Tests
 Konstruktion
 ------------
 
-Der Aufbau des Kits ist :ref:`hier <starter_kit_camera_slider_construction>`
-beschrieben.
+Der Aufbau der Basisversion des Kits ist :ref:`hier
+<starter_kit_camera_slider_construction_basic>` beschrieben.
 
 .. toctree::
    :hidden:
 
-   Details <Construction>
+   Basisversion <Construction_Basic>
 
 .. image:: /Images/Kits/kit_camera_slider_construction_collage_800.jpg
    :scale: 100 %
    :alt: Konstruktionscollage des Kameraschlitten Kits
    :align: center
-   :target: Construction.html
+   :target: Construction_Basic.html
+
+Anstatt 900mm MakerBeams können auch 1500mm MakerBeams oder sogar zwei 1500mm
+MakerBeams hintereinander verwendet werden um einen Bewegungsbereich von bis
+zu 3m zu erreichen. Wie der Rahmen der Basisversion dafür verändert werden kann
+ist :ref:`hier <starter_kit_camera_slider_construction_longer_frame>`
+beschrieben.
+
+.. toctree::
+   :hidden:
+
+   Mit verlängertem Rahmen <Construction_LongerFrame>
+
+FIXME: image of 3m frame
+
+Statt eines externen PCs kann der Kameraschlitten auch über ein RED Brick mit
+HDMI Touchscreen bedient werden. Wie der RED Brick und der Touchscreen am Rahmen
+befestigt werden können ist :ref:`hier
+<starter_kit_camera_slider_construction_red_brick>` beschrieben.
+
+.. toctree::
+   :hidden:
+
+   Mit RED Brick und Touchscreen <Construction_REDBrick>
+
+FIXME: image of frame with RED Brick and touchscreen
 
 
 .. _starter_kit_camera_slider_demo:

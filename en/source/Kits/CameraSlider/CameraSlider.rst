@@ -75,7 +75,7 @@ moves the cart with millimeter precision and it can be extended with other
 It is for example possible to automatically trigger the camera with a
 :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`.
 A :ref:`RED Brick <red_brick>` together with a
-`HDMI display <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
+`HDMI touchscreen <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
 can be used to implement an autonomous solution that can be controlled
 via touchscreen.
 
@@ -127,18 +127,18 @@ Construction
 ------------
 
 The construction of the basic kit is described
-:ref:`here <starter_kit_camera_slider_construction>`.
+:ref:`here <starter_kit_camera_slider_construction_basic>`.
 
 .. toctree::
    :hidden:
 
-   Basic <Construction>
+   Basic <Construction_Basic>
 
 .. image:: /Images/Kits/kit_camera_slider_construction_collage_800.jpg
    :scale: 100 %
    :alt: Camera Slider kit construction collage
    :align: center
-   :target: Construction.html
+   :target: Construction_Basic.html
 
 Instead of using 900mm MakerBeams you can use 1500mm MakerBeams or even connect
 two 1500mm MakerBeams to get up to 3m of motion range. How to modify the frame
@@ -153,13 +153,13 @@ FIXME: image of 3m frame
 
 You can also use a RED Brick with an HDMI touchscreen instead of using an
 external PC to control the camera slider. How to add a RED Brick and a
-touchscreen to the frame is described :ref:`here
+HDMI touchscreen to the frame is described :ref:`here
 <starter_kit_camera_slider_construction_red_brick>`.
 
 .. toctree::
    :hidden:
 
-   With RED Brick <Construction_REDBrick>
+   With RED Brick and Touchscreen <Construction_REDBrick>
 
 FIXME: image of frame with RED Brick and touchscreen
 

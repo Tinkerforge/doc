@@ -1,12 +1,12 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/CameraSlider/CameraSlider.html#construction">Starterkit: Kameraschlitten</a> / Construction of Starter Kit: Camera Slider
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/CameraSlider/CameraSlider.html#konstruktion">Starterkit: Kameraschlitten</a> / Konstruktion - Basis Kameraschlitten
 
-.. _starter_kit_camera_slider_construction:
+.. _starter_kit_camera_slider_construction_basic:
 
-Aufbau des Starterkits: Kameraschlitten
-=======================================
+Konstruktion - Basis Kameraschlitten
+====================================
 
-Das Kit besteht aus den folgenden Teilen:
+Die Basisversion des Kits besteht aus den folgenden Teilen:
 
 * 2x `MakerBeam 900mm, schwarz <https://www.tinkerforge.com/de/shop/makerbeam/beams/makerbeam-900mm-1-piece-black.html>`__
 * 1x `MakerBeam 150mm, 6 Stk., schwarz <https://www.tinkerforge.com/de/shop/makerbeam/beams/makerbeam-150mm-6pcs-black.html>`__
@@ -30,4 +30,4 @@ Das Kit besteht aus den folgenden Teilen:
 * 1x `M3 Sechskant Schraubendreher <https://www.tinkerforge.com/de/shop/makerbeam/accessories/m3-hex-nut-driver.html>`__
 
 Der Kameraschlitten besteht aus zwei Hauptteilen, dem Rahmen und dem Wagen.
-Der Aufbau beginnt mit den zwei Füßen des Rahmens.
+Der Aufbau beginnt mit den zwei Paar Füßen des Rahmens.
