@@ -159,9 +159,11 @@ HDMI touchscreen to the frame is described :ref:`here
 .. toctree::
    :hidden:
 
-   With RED Brick and Touchscreen <Construction_REDBrick>
-
-FIXME: image of frame with RED Brick and touchscreen
+.. image:: /Images/Kits/kit_camera_slider_red_brick_step8_600.jpg
+   :scale: 100 %
+   :alt: Camera Slider kit with RED Brick and display
+   :align: center
+   :target: Construction_REDBrick.html#starter-kit-camera-slider-construction-red-brick
 
 
 .. _starter_kit_camera_slider_demo:
