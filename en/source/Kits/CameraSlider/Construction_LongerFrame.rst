@@ -13,6 +13,8 @@ replace the 900mm MakerBeams with `1500mm MakerBeams
 <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-1500mm-1-piece-black.html>`__.
 The timing belt in the basic kit is long enough for such an extended frame.
 
+.. _starter_kit_camera_slider_construction_longer_frame_extra_legs:
+
 Extra Legs
 ----------
 
@@ -135,9 +137,11 @@ Repeat these steps for the second pair of 1500mm MakerBeams.
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_longer_frame_step5_1500.jpg
 
-Build three extra pairs of legs and connect one to the middle of each 1500mm
-MakerBeam section and one beside their junction. Then replace the long
-MakerBeams in the frame with this 3m long assembly.
+Build three :ref:`extra pairs of legs
+<starter_kit_camera_slider_construction_longer_frame_extra_legs>` and connect
+one to the middle of each 1500mm MakerBeam section and one beside their
+junction. Then replace the long MakerBeams in the frame with this 3m long
+assembly.
 
 Finally, the timing belt has to be extended:
 
@@ -151,6 +155,13 @@ Finally, the timing belt has to be extended:
    :alt: Two timing belts staple together
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_longer_frame_step6_1500.jpg
+
+Done!
+-----
+
+The camera slider frame is now 3m long.
+
+FIXME: image of 3m long frame
 
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_complete1_350.jpg
    :scale: 100 %

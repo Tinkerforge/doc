@@ -350,6 +350,9 @@ once and waits 1000 milliseconds afterwards::
 The program can then perform the specific trigger sequence for your time lapse
 setup.
 
+
+.. _starter_kit_camera_slider_demo_red_brick_import:
+
 Import on RED Brick
 ^^^^^^^^^^^^^^^^^^^
 
