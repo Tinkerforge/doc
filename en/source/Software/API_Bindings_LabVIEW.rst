@@ -116,5 +116,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_LabVIEW>
-   Bricks <Bricks/Bricks_LabVIEW>
-   Bricklets <Bricklets/Bricklets_LabVIEW>
+   Bricks <Bricks_LabVIEW>
+   Bricklets <Bricklets_LabVIEW>

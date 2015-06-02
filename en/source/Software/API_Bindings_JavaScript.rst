@@ -185,5 +185,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_JavaScript>
-   Bricks <Bricks/Bricks_JavaScript>
-   Bricklets <Bricklets/Bricklets_JavaScript>
+   Bricks <Bricks_JavaScript>
+   Bricklets <Bricklets_JavaScript>

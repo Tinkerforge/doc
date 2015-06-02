@@ -114,5 +114,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_PHP>
-   Bricks <Bricks/Bricks_PHP>
-   Bricklets <Bricklets/Bricklets_PHP>
+   Bricks <Bricks_PHP>
+   Bricklets <Bricklets_PHP>

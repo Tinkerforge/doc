@@ -121,5 +121,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_LabVIEW>
-   Bricks <Bricks/Bricks_LabVIEW>
-   Bricklets <Bricklets/Bricklets_LabVIEW>
+   Bricks <Bricks_LabVIEW>
+   Bricklets <Bricklets_LabVIEW>

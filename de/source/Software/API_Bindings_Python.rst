@@ -143,5 +143,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_Python>
-   Bricks <Bricks/Bricks_Python>
-   Bricklets <Bricklets/Bricklets_Python>
+   Bricks <Bricks_Python>
+   Bricklets <Bricklets_Python>

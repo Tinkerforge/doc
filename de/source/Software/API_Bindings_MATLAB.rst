@@ -204,5 +204,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_MATLAB>
-   Bricks <Bricks/Bricks_MATLAB>
-   Bricklets <Bricklets/Bricklets_MATLAB>
+   Bricks <Bricks_MATLAB>
+   Bricklets <Bricklets_MATLAB>

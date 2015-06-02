@@ -125,5 +125,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_CSharp>
-   Bricks <Bricks/Bricks_CSharp>
-   Bricklets <Bricklets/Bricklets_CSharp>
+   Bricks <Bricks_CSharp>
+   Bricklets <Bricklets_CSharp>

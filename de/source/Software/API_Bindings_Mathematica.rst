@@ -242,5 +242,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_Mathematica>
-   Bricks <Bricks/Bricks_Mathematica>
-   Bricklets <Bricklets/Bricklets_Mathematica>
+   Bricks <Bricks_Mathematica>
+   Bricklets <Bricklets_Mathematica>

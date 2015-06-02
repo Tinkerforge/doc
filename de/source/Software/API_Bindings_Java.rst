@@ -129,5 +129,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_Java>
-   Bricks <Bricks/Bricks_Java>
-   Bricklets <Bricklets/Bricklets_Java>
+   Bricks <Bricks_Java>
+   Bricklets <Bricklets_Java>

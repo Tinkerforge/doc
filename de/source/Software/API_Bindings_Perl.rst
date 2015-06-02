@@ -164,5 +164,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_Perl>
-   Bricks <Bricks/Bricks_Perl>
-   Bricklets <Bricklets/Bricklets_Perl>
+   Bricks <Bricks_Perl>
+   Bricklets <Bricklets_Perl>

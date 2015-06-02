@@ -119,5 +119,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_PHP>
-   Bricks <Bricks/Bricks_PHP>
-   Bricklets <Bricklets/Bricklets_PHP>
+   Bricks <Bricks_PHP>
+   Bricklets <Bricklets_PHP>

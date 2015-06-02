@@ -128,5 +128,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_CSharp>
-   Bricks <Bricks/Bricks_CSharp>
-   Bricklets <Bricklets/Bricklets_CSharp>
+   Bricks <Bricks_CSharp>
+   Bricklets <Bricklets_CSharp>

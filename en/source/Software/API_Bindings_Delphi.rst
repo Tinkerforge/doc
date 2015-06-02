@@ -136,5 +136,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_Delphi>
-   Bricks <Bricks/Bricks_Delphi>
-   Bricklets <Bricklets/Bricklets_Delphi>
+   Bricks <Bricks_Delphi>
+   Bricklets <Bricklets_Delphi>

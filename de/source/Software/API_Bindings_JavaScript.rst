@@ -188,5 +188,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_JavaScript>
-   Bricks <Bricks/Bricks_JavaScript>
-   Bricklets <Bricklets/Bricklets_JavaScript>
+   Bricks <Bricks_JavaScript>
+   Bricklets <Bricklets_JavaScript>

@@ -235,5 +235,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_Mathematica>
-   Bricks <Bricks/Bricks_Mathematica>
-   Bricklets <Bricklets/Bricklets_Mathematica>
+   Bricks <Bricks_Mathematica>
+   Bricklets <Bricklets_Mathematica>

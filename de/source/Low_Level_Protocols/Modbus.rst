@@ -127,5 +127,5 @@ following table. Further project descriptions can be found in the
 .. toctree::
    :hidden:
 
-   Bricks <../Software/Bricks/Bricks_Modbus>
-   Bricklets <../Software/Bricklets/Bricklets_Modbus>
+   Bricks <../Software/Bricks_Modbus>
+   Bricklets <../Software/Bricklets_Modbus>

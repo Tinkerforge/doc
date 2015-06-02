@@ -124,5 +124,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_Java>
-   Bricks <Bricks/Bricks_Java>
-   Bricklets <Bricklets/Bricklets_Java>
+   Bricks <Bricks_Java>
+   Bricklets <Bricklets_Java>

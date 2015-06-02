@@ -197,5 +197,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_MATLAB>
-   Bricks <Bricks/Bricks_MATLAB>
-   Bricklets <Bricklets/Bricklets_MATLAB>
+   Bricks <Bricks_MATLAB>
+   Bricklets <Bricklets_MATLAB>

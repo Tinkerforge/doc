@@ -256,5 +256,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_C>
-   Bricks <Bricks/Bricks_C>
-   Bricklets <Bricklets/Bricklets_C>
+   Bricks <Bricks_C>
+   Bricklets <Bricklets_C>

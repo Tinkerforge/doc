@@ -140,5 +140,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_Python>
-   Bricks <Bricks/Bricks_Python>
-   Bricklets <Bricklets/Bricklets_Python>
+   Bricks <Bricks_Python>
+   Bricklets <Bricklets_Python>

@@ -138,5 +138,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_Shell>
-   Bricks <Bricks/Bricks_Shell>
-   Bricklets <Bricklets/Bricklets_Shell>
+   Bricks <Bricks_Shell>
+   Bricklets <Bricklets_Shell>

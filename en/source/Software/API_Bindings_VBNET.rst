@@ -167,5 +167,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_VBNET>
-   Bricks <Bricks/Bricks_VBNET>
-   Bricklets <Bricklets/Bricklets_VBNET>
+   Bricks <Bricks_VBNET>
+   Bricklets <Bricklets_VBNET>

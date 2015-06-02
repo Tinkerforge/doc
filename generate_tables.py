@@ -1002,11 +1002,11 @@ def generate(path):
 
     for binding_info in binding_infos:
         print('Generating Bricks_{0}.toctree'.format(binding_info.software_doc_suffix))
-        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks', 'Bricks_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, brick_infos))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, brick_infos))
 
     for binding_info in binding_infos:
         print('Generating Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix))
-        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets', 'Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, bricklet_infos))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, bricklet_infos))
 
 if __name__ == "__main__":
     generate(os.getcwd())

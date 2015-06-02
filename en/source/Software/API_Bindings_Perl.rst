@@ -161,5 +161,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_Perl>
-   Bricks <Bricks/Bricks_Perl>
-   Bricklets <Bricklets/Bricklets_Perl>
+   Bricks <Bricks_Perl>
+   Bricklets <Bricklets_Perl>

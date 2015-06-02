@@ -125,5 +125,5 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    IP Connection <IPConnection_Ruby>
-   Bricks <Bricks/Bricks_Ruby>
-   Bricklets <Bricklets/Bricklets_Ruby>
+   Bricks <Bricks_Ruby>
+   Bricklets <Bricklets_Ruby>

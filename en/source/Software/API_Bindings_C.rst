@@ -244,5 +244,5 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    IP Connection <IPConnection_C>
-   Bricks <Bricks/Bricks_C>
-   Bricklets <Bricklets/Bricklets_C>
+   Bricks <Bricks_C>
+   Bricklets <Bricklets_C>
