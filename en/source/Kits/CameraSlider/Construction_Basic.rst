@@ -238,6 +238,8 @@ Add L-brackets to the 2-bearing assemblies:
 * Insert four 6mm bolts into the MakerBeam opposite to the bearings.
 * Fasten two MakerBeam L-Brackets to the bolts with two lock nuts each.
 
+Repeat these steps for the second 2-bearing assembly.
+
 .. image:: /Images/Kits/kit_camera_slider_step18_350.jpg
    :scale: 100 %
    :alt: MakerBeam with two bearings and two L-brackets
@@ -249,6 +251,8 @@ Add L-brackets to the 4-bearing assemblies:
 * Insert four 6mm bolts into a bearing-free-side of the MakerBeam.
 * Fasten two MakerBeam L-Brackets to the bolts with two lock nuts each. Ensure
   that the L-brackets are facing away from the two adjacent bearings.
+
+Repeat these steps for the second 4-bearing assembly.
 
 .. image:: /Images/Kits/kit_camera_slider_step19_350.jpg
    :scale: 100 %
@@ -262,7 +266,7 @@ The remaining four bearings are used to lock the cart onto the frame:
   lock nut.
 * Put a bearing onto the bolt and fasten it with a lock nut.
 
-Repeat these steps four times to create four L-bracket with a bearing each.
+Repeat these steps four times to create four L-brackets with a bearing each.
 
 .. image:: /Images/Kits/kit_camera_slider_step20_350.jpg
    :scale: 100 %

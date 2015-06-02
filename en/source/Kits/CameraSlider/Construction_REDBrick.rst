@@ -28,9 +28,17 @@ camers slider contains the following parts:
   Currently the add-on does not include a Micro USB cable to power the display
   and connect it to the RED Brick. For now you have to provide your own.
 
-Touchscreen
------------
+Uprights
+--------
 
+To connect the touchscreen uprights to the frame four 6mm holts have to be
+added to the frame:
+
+* Loosen the bottom lock nuts that fasten the stack-side pair of legs to the
+  long MakerBeams.
+* Partly disconnect the pair of legs from the rest of the frame.
+* Insert two 6mm bolts into each side of the long MakerBeams.
+* Reconnect the stack-side pair of legs to the rest of the frame.
 
 .. image:: /Images/Kits/kit_camera_slider_red_brick_step1_350.jpg
    :scale: 100 %
@@ -38,11 +46,23 @@ Touchscreen
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_red_brick_step1_1500.jpg
 
+The touchscreen will be held at a 45° angle:
+
+* Insert two 6mm bolts into a 60mm MakerBeam.
+* Fasten a MakerBeam 45° Bracket to the bolts with to lock nuts.
+
+Repeat these steps for a second MakerBeam.
+
 .. image:: /Images/Kits/kit_camera_slider_red_brick_step2_350.jpg
    :scale: 100 %
    :alt: MakerBeam with 45° bracket
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_red_brick_step2_1500.jpg
+
+Connect both MakerBeams to the frame:
+
+* Fasten the MakerBeams with their 45° brackets to the bolts in the frame with
+  two lock nuts each. Ensure that the MakerBeams lean towards the Stepper Brick.
 
 .. image:: /Images/Kits/kit_camera_slider_red_brick_step3_350.jpg
    :scale: 100 %
@@ -50,11 +70,30 @@ Touchscreen
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_red_brick_step3_1500.jpg
 
+Holder
+------
+
+The touchscreen holder starts with two 60mm MakerBeams:
+
+* Insert two 6mm bolts into a 60mm MakerBeam.
+* Fasten a MakerBeam Corner Bracket to the bolts with two lock nuts.
+
+Repeat these steps for the second MakerBeam.
+
 .. image:: /Images/Kits/kit_camera_slider_red_brick_step4_350.jpg
    :scale: 100 %
-   :alt: MakerBeam with L-bracket
+   :alt: MakerBeam with corner bracket
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_red_brick_step4_1500.jpg
+
+The touchscreen itself will be connected to two 150mm MakerBeams:
+
+* Insert four 6mm bolts into a 150mm MakerBeam.
+* Fasten two MakerBeam Corner Brackets to the bolts with two lock nuts each.
+* Insert two 12mm bolts in the MakerBeam at 90° to the corner brackets and
+  fasten each one near the ends of the MakerBeam with a lock nut.
+
+Repeat these steps for the second MakerBeam.
 
 .. image:: /Images/Kits/kit_camera_slider_red_brick_step5_350.jpg
    :scale: 100 %
@@ -62,11 +101,26 @@ Touchscreen
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_red_brick_step5_1500.jpg
 
+All four prepared MakerBeams form the holder:
+
+* Insert four 6mm bolts into the side of a prepared 60mm MakerBeam.
+* Fasten the corner brackets of the two prepared 150mm MakerBeams to the bolts
+  with two lock nuts each. Ensure that the 12mm bolts on the 150mm MakerBeams
+  and the corner brackets on the 60mm MakerBeams face into opposite directions.
+
+Repeat these steps for the second prepared 60mm MakerBeam.
+
 .. image:: /Images/Kits/kit_camera_slider_red_brick_step6_350.jpg
    :scale: 100 %
    :alt: Complete touchscreen holder
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_red_brick_step6_1500.jpg
+
+Connect the completed holder to the uprights:
+
+* Insert two 6mm bolts into the bottom side of each of the two uprights.
+* Fasten the MakerBeam Corner Brackets on the holder to the bolts with two lock
+  nuts each.
 
 .. image:: /Images/Kits/kit_camera_slider_red_brick_step7_350.jpg
    :scale: 100 %
@@ -74,6 +128,20 @@ Touchscreen
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_red_brick_step7_1500.jpg
 
+Fit the holder to the touchscreen:
+
+* Realign the four 12mm bolts and the distance between the two 150mm MakerBeams
+  to fit the four holes in the touchscreen.
+* Secure the touchscreen on the four 12mm bolts with four lock nuts. Don't
+  fully tighten the lock nuts to avoid putting to much mechanical stress on
+  the touchscreen.
+
+Finally, add the RED Brick:
+
+* Disconnect the Stepper Brick from the frame.
+* Put the Stepper Brick on top of the RED Brick.
+* Reconnect the stack to the frame.
+* Connect the RED Brick and the touchscreen with the HDMI and the USB cable.
 
 Done!
 -----
@@ -81,7 +149,7 @@ Done!
 The camera slider is stand-alone now and you can upload the :ref:`demo
 application <starter_kit_camera_slider_demo_red_brick_import>` to the RED Brick.
 
-.. image:: /Images/Kits/kit_camera_slider_red_brick_step8_350.jpg
+.. image:: /Images/Kits/kit_camera_slider_red_brick_step8_600.jpg
    :scale: 100 %
    :alt: Camera slider with RED Brick add-on
    :align: center
