@@ -1,4 +1,6 @@
 
+:breadcrumbs: <a href="index.html">Home</a> / Starter Kits
+
 Starter Kits
 ============
 

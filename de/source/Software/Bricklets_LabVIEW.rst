@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#software-labview">Software</a> / LabVIEW - Bricklets
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-labview">Software</a> / LabVIEW - Bricklets
 
 LabVIEW - Bricklets
 ===================

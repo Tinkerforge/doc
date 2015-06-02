@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#software-delphi">Software</a> / Delphi/Lazarus - Bricks
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-delphi">Software</a> / Delphi/Lazarus - Bricks
 
 Delphi/Lazarus - Bricks
 =======================

@@ -1,5 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#software-java">Software</a> / Java - Bricks
+:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-java">Software</a> / Java - Bricks
 
 Java - Bricks
 =============
