@@ -881,18 +881,18 @@ def make_hardware_devices_toctree(device_infos):
 
     return prefix + '\n'.join(lines) + '\n'
 
-def make_software_devices_toctree(binding_info, device_infos):
+def make_software_devices_toctree(binding_info, device_infos, category):
     prefix = """
 .. toctree::
    :hidden:
 
 """
-    line = '   {0} <{1}_{2}>'
+    line = '   {0} <{1}/{2}_{3}>'
     lines = []
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
         if device_info.has_bindings and device_info.is_released:
-            lines.append(line.format(device_info.long_display_name, device_info.software_doc_prefix, binding_info.software_doc_suffix))
+            lines.append(line.format(device_info.long_display_name, category, device_info.software_doc_prefix, binding_info.software_doc_suffix))
 
     return prefix + '\n'.join(lines) + '\n'
 
@@ -1002,11 +1002,11 @@ def generate(path):
 
     for binding_info in binding_infos:
         print('Generating Bricks_{0}.toctree'.format(binding_info.software_doc_suffix))
-        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, brick_infos))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, brick_infos, 'Bricks'))
 
     for binding_info in binding_infos:
         print('Generating Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix))
-        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, bricklet_infos))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, bricklet_infos, 'Bricklets'))
 
 if __name__ == "__main__":
     generate(os.getcwd())
