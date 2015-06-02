@@ -32,4 +32,57 @@ Die Basisversion des Kits besteht aus den folgenden Teilen:
 * 1x `M3 Sechskant Schraubendreher <https://www.tinkerforge.com/de/shop/makerbeam/accessories/m3-hex-nut-driver.html>`__
 
 Der Kameraschlitten besteht aus zwei Hauptteilen, dem Rahmen und dem Wagen.
-Der Aufbau beginnt mit den zwei Paar Füßen des Rahmens.
+Der Aufbau beginnt mit den zwei Paar Beine des Rahmens.
+
+Beine
+-----
+
+Jedes Beinpaar besteht aus drei 60mm MakerBeams die mit zwei MakerBeam
+Eck-Verbindern zu einer auf dem Kopf stehenden U-Form verbunden wurden:
+
+* Schiebe zwei 6mm Schrauben in einen 60mm MakerBeam hinein.
+* Befestige einen MakerBeam Eck-Verbinder mit zwei selbstsichernden Muttern an
+  den Schrauben. Ein anderer MakerBeam dient als temporärer Abstandshalter in
+  der Ecke des Verbinders.
+
+Wiederhole diese Schritte viermal, um ein U-förmiges Beinpaar zu erhalten. Dann
+wiederhole alle Schritte für das zweite Beinpaar.
+
+.. image:: /Images/Kits/kit_camera_slider_step1_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam mit zwei 6mm Schrauben
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step1_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step2_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam mit Eck-Verbinder
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step2_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step3_350.jpg
+   :scale: 100 %
+   :alt: Teil eines Beinpaars mit temporärerm Abstandshalter
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step3_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step4_350.jpg
+   :scale: 100 %
+   :alt: Fertiges Beinpaar
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step4_1500.jpg
+
+Stapel-Seite
+^^^^^^^^^^^^
+
+An ein Beinpaar wird eine Stapel Halterung angebracht:
+
+* Schiebe zwei 6mm Schrauben die die senkrechten MakerBeams jedes Beines hinein.
+* Befestige die Stapel Halterung mit vier selbstsichernden Muttern an den
+  Schrauben. Stelle sicher, dass die Halterung nicht den Querbalken überlappt.
+
+.. image:: /Images/Kits/kit_camera_slider_step5_350.jpg
+   :scale: 100 %
+   :alt: Beinpaar mit Stapel Halterung
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step5_1500.jpg

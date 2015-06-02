@@ -106,6 +106,25 @@ Ressourcen
 Firmware aktualisieren und erste Tests
 --------------------------------------
 
+Im ersten Schritt sollten die Bricks und Bricklets ausprobiert
+und die Firmwares ggf. aktualisiert werden.
+
+Dazu müssen der :ref:`Brick Daemon <brickd_installation>` und der
+:ref:`Brick Viewer <brickv_installation>` installiert werden.
+Schließe das LED Strip Bricklet an den Master Brick an und verbinde es per USB
+mit dem PC. Anschließend kann über den Brick Viewer bestimmt werden, ob alle
+Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
+(:ref:`Bricks aktualisieren <brickv_flash_firmware>`,
+:ref:`Bricklets aktualisieren <brickv_flash_plugin>`):
+
+.. image:: /Images/Kits/kit_camera_slider_update.jpg
+   :scale: 100 %
+   :alt: Kameraschlitten Update im Brick Viewer
+   :align: center
+
+Im nächsten Schritt sollte der Stepper Brick mit Schrittmotor und 24V Netzteil
+wie :ref:`hier <stepper_brick_test>` beschriebengetestet werden. Anschließend
+kann damit begonnen werden das Kit zusammenzubauen.
 
 Konstruktion
 ------------
@@ -147,10 +166,31 @@ befestigt werden können ist :ref:`hier
 
    Mit RED Brick und Touchscreen <Construction_REDBrick>
 
-FIXME: image of frame with RED Brick and touchscreen
+.. image:: /Images/Kits/kit_camera_slider_red_brick_step8_600.jpg
+   :scale: 100 %
+   :alt: Camera Slider kit with RED Brick and display
+   :align: center
+   :target: Construction_REDBrick.html
 
 
 .. _starter_kit_camera_slider_demo:
 
 Demo Anwendung
 --------------
+
+Calibration Tab
+^^^^^^^^^^^^^^^
+
+
+Linear Motion Tab
+^^^^^^^^^^^^^^^^^
+
+
+Time Lapse Tab
+^^^^^^^^^^^^^^
+
+
+.. _starter_kit_camera_slider_demo_red_brick_import:
+
+Auf RED Brick importieren
+^^^^^^^^^^^^^^^^^^^^^^^^^
