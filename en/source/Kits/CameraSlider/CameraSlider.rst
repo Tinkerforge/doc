@@ -121,7 +121,8 @@ Viewer too:
    :align: center
 
 As the next step test the Stepper Brick with the included stepper motor and
-power adapter. After that you can start to assemble the kit!
+24V power adapter as described :ref:`here <stepper_brick_test>`. After that
+you can start to assemble the kit!
 
 Construction
 ------------
@@ -191,8 +192,8 @@ the PC where the kit is connected to.
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_demo_connection.jpg
 
-Calibration
-^^^^^^^^^^^
+Calibration Tab
+^^^^^^^^^^^^^^^
 
 Initially the demo does not know the current position and the motion range of
 the cart. Before you can move the cart around you have to calibrate its minimum
@@ -207,7 +208,7 @@ and maximum position:
 * Click the "Apply" button to finish the calibration process.
 
 Now the demo knows and remembers the current position and the motion range of
-the cart. If the cart is moved manually, e.g. during transport, then the 
+the cart. If the cart is moved manually, e.g. during transport, then the
 calibration process has to be repeated.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_calibration_350.jpg
@@ -231,8 +232,8 @@ will move on its own due to gravity. In this case you can disabled "Automatic
 Power Control" and have the stepper motor power constantly enabled to hold
 the cart actively in place at all times.
 
-Linear Motion
-^^^^^^^^^^^^^
+Linear Motion Tab
+^^^^^^^^^^^^^^^^^
 
 On this tab you can order the cart to move to a new target position with
 configurable velocity, acceleration and deceleration. Use the "Target Position"
@@ -252,8 +253,8 @@ button and with maximum deceleration by clicking the "Full Break" button.
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_demo_linear_motion.jpg
 
-Time Lapse
-^^^^^^^^^^
+Time Lapse Tab
+^^^^^^^^^^^^^^
 
 On this tap you can configure a moving time-lapse photography setup. The demo
 supports capturing images in equidistant time and distance intervals.

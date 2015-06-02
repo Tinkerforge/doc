@@ -44,7 +44,7 @@ Corner Brackets to form an upside down U-shape:
 * Fasten a MakerBeam Corner Bracket to the bolts with two lock nuts. Use another
   MakerBeam as temporary spacer in the corner of the bracket.
 
-Repeat these steps four times two create a U-shaped pair of legs. Then repeat
+Repeat these steps four times to create a U-shaped pair of legs. Then repeat
 all steps for the second pair of legs.
 
 .. image:: /Images/Kits/kit_camera_slider_step1_350.jpg
@@ -76,8 +76,8 @@ Stack Side
 
 One pair of legs gets a stack bracket attached to it:
 
-* Insert two 6mm bolts into the upright MakerBeam of each leg.
-* Fasten the stack bracket to the legs with four lock nuts. Ensure that the
+* Insert two 6mm bolts into the upright MakerBeams of each leg.
+* Fasten the stack bracket to the bolts with four lock nuts. Ensure that the
   bracket does not overlap the crossbeam.
 
 .. image:: /Images/Kits/kit_camera_slider_step5_350.jpg
@@ -283,7 +283,7 @@ Repeat these steps four times to create four L-brackets with a bearing each.
 Substructure
 ^^^^^^^^^^^^
 
-The substructure of the cart consists of the previous build four bearing 
+The substructure of the cart consists of the previous build four bearing
 assemblies and two 150mm MakerBeams:
 
 * Insert four 6mm bolts into a 150mm MakerBeam.
@@ -585,7 +585,6 @@ caps:
    :alt: Stepper Brick on bracket
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step44_1500.jpg
-
 
 Done!
 -----
