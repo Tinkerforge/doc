@@ -183,3 +183,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_JavaScript_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_JavaScript>
+   Bricks <Bricks/Bricks_JavaScript>
+   Bricklets <Bricklets/Bricklets_JavaScript>

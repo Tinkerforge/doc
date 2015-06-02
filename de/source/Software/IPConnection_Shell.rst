@@ -243,6 +243,11 @@ Grundfunktionen
 Fortgeschrittene Funktionen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. toctree::
+   :hidden:
+
+   NetIO_Setup
+
 .. sh:function:: X Ptinkerforge Nlisten A[<option>..]
 
  Der ``listen`` Befehlt wird verwendet um einen TCP/IP Socket zu öffnen der

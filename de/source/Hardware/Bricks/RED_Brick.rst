@@ -514,6 +514,11 @@ Program Tab (Programme hochladen und ausführen)
 Die Beschreibung des Tabs befindet auf einer
 :ref:`separaten Seite <red_brick_program_tab>`.
 
+.. toctree::
+   :hidden:
+
+   Wizard Schritte <RED_Brick_Program_Tab>
+
 .. image:: /Images/Screenshots/red_brick_program_overview.jpg
    :scale: 60 %
    :alt: Screenshot des RED Brick Program Tabs.
@@ -816,6 +821,11 @@ Tab <red_brick_brickv_versions_tab>`, wie neue Software installiert wird.
 
 Eine Liste der vorinstallierten Bibliotheken steht zur Verfügung:
 :ref:`Installierte Bibliotheken <red_brick_installed_versions>`.
+
+.. toctree::
+   :hidden:
+
+   Installierte Bibliotheken <RED_Brick_Installed_Versions>
 
 Der Nutzer ``tf`` ist der Standardnutzer auf den Images. Beim Einloggen über die
 Konsole oder in LXDE kann dieser Nutzer mit dem Standardpasswort ``tf`` benutzt

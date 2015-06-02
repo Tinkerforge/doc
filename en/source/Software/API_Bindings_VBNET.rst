@@ -162,3 +162,10 @@ following table. Further project descriptions can be found in the
 :ref:`Starter Kits <index_kits>` section.
 
 .. include:: API_Bindings_VBNET_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_VBNET>
+   Bricks <Bricks/Bricks_VBNET>
+   Bricklets <Bricklets/Bricklets_VBNET>

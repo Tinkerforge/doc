@@ -135,3 +135,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_Delphi_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_Delphi>
+   Bricks <Bricks/Bricks_Delphi>
+   Bricklets <Bricklets/Bricklets_Delphi>

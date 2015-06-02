@@ -408,3 +408,9 @@ following table. Further project descriptions can be found in the
 :ref:`Starter Kits <index_kits>` section.
 
 .. include:: TCPIP_links.table
+
+.. toctree::
+   :hidden:
+
+   Bricks <../Software/Bricks/Bricks_TCPIP>
+   Bricklets <../Software/Bricklets/Bricklets_TCPIP>

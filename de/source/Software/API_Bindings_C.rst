@@ -251,3 +251,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_C_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_C>
+   Bricks <Bricks/Bricks_C>
+   Bricklets <Bricklets/Bricklets_C>

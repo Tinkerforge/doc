@@ -133,3 +133,10 @@ following table. Further project descriptions can be found in the
 :ref:`Starter Kits <index_kits>` section.
 
 .. include:: API_Bindings_Shell_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_Shell>
+   Bricks <Bricks/Bricks_Shell>
+   Bricklets <Bricklets/Bricklets_Shell>

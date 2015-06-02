@@ -170,3 +170,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_VBNET_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_VBNET>
+   Bricks <Bricks/Bricks_VBNET>
+   Bricklets <Bricklets/Bricklets_VBNET>

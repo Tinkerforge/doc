@@ -1,0 +1,15 @@
+
+Unsere :ref:`Produkte <primer_products>` gliedern sich in fünf verschiedene
+Kategorien:
+
+* :ref:`primer_bricks`
+* :ref:`primer_bricklets`
+* :ref:`primer_master_extensions`
+* :ref:`primer_power_supplies`
+* :ref:`primer_accessories`
+
+Die :ref:`Timeline <timeline>` gibt eine Übersicht über die Historie
+veröffentlichter Hardware und gemachter Entwicklungen.
+
+.. raw:: html
+   :file: index_hardware.html

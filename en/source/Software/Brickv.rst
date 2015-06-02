@@ -26,6 +26,13 @@ Installation
 * :ref:`Linux <brickv_install_linux>`
 * :ref:`Mac OS X <brickv_install_macosx>`
 
+.. toctree::
+   :hidden:
+
+   Windows <Brickv_Install_Windows>
+   Linux <Brickv_Install_Linux>
+   Mac OS X <Brickv_Install_MacOSX>
+
 
 Usage
 -----

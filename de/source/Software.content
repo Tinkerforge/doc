@@ -1,0 +1,18 @@
+
+Die Software umfasst Dienst- und Testprogramme, die API Bindings zur Verwendung
+der Bricks und Bricklets sowie deren Firmwares und Plugins:
+
+* :ref:`brickd`
+* :ref:`brickv`
+* :ref:`api_bindings`
+* :ref:`firmwares_and_plugins`
+
+Diese können im :ref:`Downloadbereich <downloads>` heruntergeladen werden.
+Die :ref:`Quelltexte und Links zu Bug Trackern <source_code>` befinden sich in
+einem eigenen Bereich.
+
+Die Grundlagen der Programmierschnittstelle werden :ref:`hier
+<programming_interface>` beschrieben.
+
+.. raw:: html
+   :file: index_api.html

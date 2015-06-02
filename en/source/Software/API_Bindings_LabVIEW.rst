@@ -111,3 +111,10 @@ following table. Further project descriptions can be found in the
 :ref:`Starter Kits <index_kits>` section.
 
 .. include:: API_Bindings_LabVIEW_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_LabVIEW>
+   Bricks <Bricks/Bricks_LabVIEW>
+   Bricklets <Bricklets/Bricklets_LabVIEW>

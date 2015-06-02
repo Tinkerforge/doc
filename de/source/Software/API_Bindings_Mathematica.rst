@@ -237,3 +237,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_Mathematica_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_Mathematica>
+   Bricks <Bricks/Bricks_Mathematica>
+   Bricklets <Bricklets/Bricklets_Mathematica>

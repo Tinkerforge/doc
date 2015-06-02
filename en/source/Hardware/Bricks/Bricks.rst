@@ -1,0 +1,5 @@
+
+Bricks
+======
+
+.. include:: Bricks.toctree

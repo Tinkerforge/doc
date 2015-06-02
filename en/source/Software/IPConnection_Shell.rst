@@ -225,6 +225,11 @@ Basic Functions
 Advanced Functions
 ^^^^^^^^^^^^^^^^^^
 
+.. toctree::
+   :hidden:
+
+   NetIO_Setup
+
 .. sh:function:: X Ptinkerforge Nlisten A[<option>..]
 
  The ``listen`` command is used to open a TCP/IP socket that accepts ``call``,

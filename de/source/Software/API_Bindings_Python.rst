@@ -138,3 +138,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_Python_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_Python>
+   Bricks <Bricks/Bricks_Python>
+   Bricklets <Bricklets/Bricklets_Python>

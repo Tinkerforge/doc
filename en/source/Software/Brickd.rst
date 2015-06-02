@@ -41,6 +41,13 @@ Installation
 * :ref:`Linux <brickd_install_linux>`
 * :ref:`Mac OS X <brickd_install_macosx>`
 
+.. toctree::
+   :hidden:
+
+   Windows <Brickd_Install_Windows>
+   Linux <Brickd_Install_Linux>
+   Mac OS X <Brickd_Install_MacOSX>
+
 
 Logging
 -------

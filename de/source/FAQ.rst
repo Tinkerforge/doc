@@ -234,8 +234,12 @@ Daemon, der Brick Viewer und die Firmwares/Plugins der Bricks/Bricklets
 auf den neuesten Stand gebraucht werden. Alle Versionen müssen mit
 einer "2" beginnen um miteinander kompatibel zu sein.
 
-Eine Anleitung zum Aktualisieren gibt es
-:ref:`hier <transition_1to2>`.
+Eine Anleitung zum Aktualisieren gibt es :ref:`hier <transition_1to2>`.
+
+.. toctree::
+   :hidden:
+
+   Transitioning_Guide_1To2
 
 **Brick Firmware Version < 2.3:**
 

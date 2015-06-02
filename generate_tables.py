@@ -866,20 +866,33 @@ def make_authentication_tutorial_examples_table():
 
     return '\n'.join(rows) + '\n'
 
-def make_devices_toctree(device_infos, category):
+def make_hardware_devices_toctree(device_infos):
     prefix = """
 .. toctree::
    :hidden:
 
 """
-    line = '   Software/{0}s/{1}_{2}'
+    line = '   {0} <{1}>'
     lines = []
 
-    for binding_info in binding_infos:
-        if binding_info.is_released:
-            for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
-                if device_info.has_bindings:
-                    lines.append(line.format(category, device_info.software_doc_prefix, binding_info.software_doc_suffix))
+    for device_info in sorted(device_infos, key=lambda x: x.long_display_name.lower()):
+        if device_info.is_released:
+            lines.append(line.format(device_info.long_display_name, device_info.hardware_doc_name))
+
+    return prefix + '\n'.join(lines) + '\n'
+
+def make_software_devices_toctree(binding_info, device_infos):
+    prefix = """
+.. toctree::
+   :hidden:
+
+"""
+    line = '   {0} <{1}_{2}>'
+    lines = []
+
+    for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
+        if device_info.has_bindings and device_info.is_released:
+            lines.append(line.format(device_info.long_display_name, device_info.software_doc_prefix, binding_info.software_doc_suffix))
 
     return prefix + '\n'.join(lines) + '\n'
 
@@ -944,6 +957,21 @@ def generate(path):
     print('Generating Source_Code_gits.table')
     write_if_changed(os.path.join(path, 'source', 'Source_Code_gits.table'), make_source_code_gits_table())
 
+    print('Generating Bricks.toctree')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', 'Bricks.toctree'), make_hardware_devices_toctree(brick_infos))
+
+    print('Generating Bricklets.toctree')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', 'Bricklets.toctree'), make_hardware_devices_toctree(bricklet_infos))
+
+    print('Generating Master_Extensions.toctree')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Master_Extensions', 'Master_Extensions.toctree'), make_hardware_devices_toctree(extension_infos))
+
+    print('Generating Power_Supplies.toctree')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Power_Supplies', 'Power_Supplies.toctree'), make_hardware_devices_toctree(power_supply_infos))
+
+    print('Generating Accessories.toctree')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories.toctree'), make_hardware_devices_toctree(accessory_infos))
+
     for brick_info in brick_infos:
         if not brick_info.has_bindings:
             continue
@@ -972,11 +1000,13 @@ def generate(path):
             print('Generating {0}_links.table'.format(binding_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', '{0}_links.table'.format(binding_info.software_doc_suffix)), make_llproto_links_table(binding_info))
 
-    print('Generating Bricks.toctree')
-    write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks.toctree'), make_devices_toctree(brick_infos, 'Brick'))
+    for binding_info in binding_infos:
+        print('Generating Bricks_{0}.toctree'.format(binding_info.software_doc_suffix))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks', 'Bricks_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, brick_infos))
 
-    print('Generating Bricklets.toctree')
-    write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets.toctree'), make_devices_toctree(bricklet_infos, 'Bricklet'))
+    for binding_info in binding_infos:
+        print('Generating Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets', 'Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, bricklet_infos))
 
 if __name__ == "__main__":
     generate(os.getcwd())

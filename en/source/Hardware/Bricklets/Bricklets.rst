@@ -1,0 +1,5 @@
+
+Bricklets
+=========
+
+.. include:: Bricklets.toctree

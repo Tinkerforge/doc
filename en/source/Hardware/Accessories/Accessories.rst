@@ -1,0 +1,5 @@
+
+Accessories
+===========
+
+.. include:: Accessories.toctree

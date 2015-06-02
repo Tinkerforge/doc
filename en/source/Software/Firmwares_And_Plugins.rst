@@ -91,3 +91,9 @@ from GitHub and how to compile it:
 
 * :ref:`Brick Firmwares <building_brick_firmware>`
 * :ref:`Bricklet Plugins <building_bricklet_plugin>`
+
+.. toctree::
+   :hidden:
+
+   Brick Firmwares <FirmwaresAndPlugins_BuildingBrickFirmware>
+   Bricklet Plugins <FirmwaresAndPlugins_BuildingBrickletPlugin>

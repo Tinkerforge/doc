@@ -109,3 +109,10 @@ following table. Further project descriptions can be found in the
 :ref:`Starter Kits <index_kits>` section.
 
 .. include:: API_Bindings_PHP_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_PHP>
+   Bricks <Bricks/Bricks_PHP>
+   Bricklets <Bricklets/Bricklets_PHP>

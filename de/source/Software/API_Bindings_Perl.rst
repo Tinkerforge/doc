@@ -159,3 +159,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_Perl_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_Perl>
+   Bricks <Bricks/Bricks_Perl>
+   Bricklets <Bricklets/Bricklets_Perl>

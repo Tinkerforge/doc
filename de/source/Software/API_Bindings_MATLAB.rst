@@ -199,3 +199,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_MATLAB_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_MATLAB>
+   Bricks <Bricks/Bricks_MATLAB>
+   Bricklets <Bricklets/Bricklets_MATLAB>

@@ -116,3 +116,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_LabVIEW_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_LabVIEW>
+   Bricks <Bricks/Bricks_LabVIEW>
+   Bricklets <Bricklets/Bricklets_LabVIEW>

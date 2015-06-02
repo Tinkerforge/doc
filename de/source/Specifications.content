@@ -1,0 +1,10 @@
+
+Diese Spezifikationen umfassen die :ref:`technischen Daten <technical_data>`
+der verwendeten Steckverbindungen sowie die verschiedenen verwendeten Low-Level
+Protokolle:
+
+* :ref:`llproto_tcpip`
+* :ref:`llproto_modbus`
+
+Ein :ref:`Wireshark Dissector <wireshark_dissector>` für TFP
+(Tinkerforge Protokoll) ist verfügbar.

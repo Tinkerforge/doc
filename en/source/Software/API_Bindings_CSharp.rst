@@ -120,3 +120,10 @@ following table. Further project descriptions can be found in the
 :ref:`Starter Kits <index_kits>` section.
 
 .. include:: API_Bindings_CSharp_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_CSharp>
+   Bricks <Bricks/Bricks_CSharp>
+   Bricklets <Bricklets/Bricklets_CSharp>

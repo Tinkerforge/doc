@@ -120,3 +120,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_Ruby_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_Ruby>
+   Bricks <Bricks/Bricks_Ruby>
+   Bricklets <Bricklets/Bricklets_Ruby>

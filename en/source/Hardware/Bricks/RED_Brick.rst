@@ -498,6 +498,11 @@ Program Tab (Upload and Execution)
 The documentation of the program tab can be found on
 :ref:`a separate site <red_brick_program_tab>`.
 
+.. toctree::
+   :hidden:
+
+   Wizard Steps <RED_Brick_Program_Tab>
+
 .. image:: /Images/Screenshots/red_brick_program_overview.jpg
    :scale: 60 %
    :alt: Screenshot of RED Brick Program tab.
@@ -799,6 +804,11 @@ New software can be installed. See the :ref:`description of the versions tab
 
 A list of pre-installed programming language libraries is available:
 :ref:`Installed library versions <red_brick_installed_versions>`.
+
+.. toctree::
+   :hidden:
+
+   Installed Library Versions <RED_Brick_Installed_Versions>
 
 If you want to log into the Linux system by command line or LXDE, the standard
 user is ``tf`` with default password ``tf``. The user is a sudoer, i.e.

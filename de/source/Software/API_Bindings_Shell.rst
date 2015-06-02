@@ -137,3 +137,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_Shell_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_Shell>
+   Bricks <Bricks/Bricks_Shell>
+   Bricklets <Bricklets/Bricklets_Shell>

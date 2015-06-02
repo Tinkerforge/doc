@@ -225,6 +225,11 @@ Firmwares/Plugins of your Bricks/Bricklets to a version starting with "2".
 To do this you can use the :ref:`transitioning guide <transition_1to2>`. 
 It also describes how to port already existing code to the new protocol.
 
+.. toctree::
+   :hidden:
+
+   Transitioning_Guide_1To2
+
 **Brick Firmware Version < 2.3:**
 
 On November 26th 2014 we released a new SPI stack protocol to add support for 

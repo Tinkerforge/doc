@@ -123,3 +123,10 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
 .. include:: API_Bindings_CSharp_links.table
+
+.. toctree::
+   :hidden:
+
+   IP Connection <IPConnection_CSharp>
+   Bricks <Bricks/Bricks_CSharp>
+   Bricklets <Bricklets/Bricklets_CSharp>
