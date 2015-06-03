@@ -32,13 +32,13 @@ Die Basisversion des Kits besteht aus den folgenden Teilen:
 * 1x `M3 Sechskant Schraubendreher <https://www.tinkerforge.com/de/shop/makerbeam/accessories/m3-hex-nut-driver.html>`__
 
 Der Kameraschlitten besteht aus zwei Hauptteilen, dem Rahmen und dem Wagen.
-Der Aufbau beginnt mit den zwei Paar Beine des Rahmens.
+Der Aufbau beginnt mit den zwei Beinpaaren des Rahmens.
 
 Beine
 -----
 
 Jedes Beinpaar besteht aus drei 60mm MakerBeams die mit zwei MakerBeam
-Eck-Verbindern zu einer auf dem Kopf stehenden U-Form verbunden wurden:
+Eck-Verbindern zu einer auf dem Kopf stehenden U-Form verbunden sind:
 
 * Schiebe zwei 6mm Schrauben in einen 60mm MakerBeam hinein.
 * Befestige einen MakerBeam Eck-Verbinder mit zwei selbstsichernden Muttern am
@@ -75,14 +75,254 @@ wiederhole alle Schritte für das zweite Beinpaar.
 Stapel-Seite
 ^^^^^^^^^^^^
 
-An einem Beinpaar wird eine Stapel Halterung angebracht:
+An einem Beinpaar wird die Stapel-Halterung angebracht:
 
-* Schiebe zwei 6mm Schrauben in die senkrechten MakerBeams jedes Beines hinein.
-* Befestige die Stapel Halterung mit vier selbstsichernden Muttern. Stelle
-  sicher, dass die Halterung nicht den Querbalken überlappt.
+* Schiebe jeweils zwei 6mm Schrauben in die beiden aufrechten MakerBeams des
+  Beinpaares hinein.
+* Befestige die Stapel-Halterung mit vier selbstsichernden Muttern. Achte
+  darauf, dass die Halterung den Querbalken nicht überlappt.
 
 .. image:: /Images/Kits/kit_camera_slider_step5_350.jpg
    :scale: 100 %
-   :alt: Beinpaar mit Stapel Halterung
+   :alt: Beinpaar mit Stapel-Halterung
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step5_1500.jpg
+
+Umlenkrad-Seite
+^^^^^^^^^^^^^^^
+
+Am anderen Beinpaar werden Kugellager für das Umlenkrad angebracht. Beginne mit
+den Kugellagern am Querbalken:
+
+* Platziere zwei Kugellager in eine Kugellager-Halterung aus Kupfer.
+* Schiebe zwei 6mm Schrauben in den Querbalken hinein.
+* Befestige die Kugellager-Baugruppe mit zwei selbstsichernden Muttern mittig
+  am Querbalken.
+
+.. image:: /Images/Kits/kit_camera_slider_step6_350.jpg
+   :scale: 100 %
+   :alt: Zwei Kugellager in einer Kugellager-Halterung
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step6_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step7_350.jpg
+   :scale: 100 %
+   :alt: Beinpaar mit Kugellagern
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step7_1500.jpg
+
+Eine zweite Kugellager-Baugruppe wird an einem 60mm MakerBeam angebracht:
+
+* Platziere zwei Kugellager in eine Kugellager-Halterung aus Kupfer.
+* Schiebe zwei 6mm Schrauben in einen 60mm MakerBeam hinein.
+* Befestige die Kugellager-Baugruppe mit zwei selbstsichernden Muttern mittig
+  am MakerBeam.
+* Schiebe jeweils eine 6mm Schraube zu beiden Seiten der Kugellager-Baugruppe
+  in den MakerBeam hinein.
+
+.. image:: /Images/Kits/kit_camera_slider_step8_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam mit Kugellager-Baugruppe und 6mm Schrauben
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step8_1500.jpg
+
+Die MakerBeam-Kugellager-Baugruppe wird am Beinpaar angebracht:
+
+* Schiebe jeweils zwei 6mm Schrauben in die beiden aufrechten MakerBeams des
+  Beinpaares hinein.
+* Befestige die MakerBeam-Kugellager-Baugruppe an beiden aufrechten MakerBeams
+  mit jeweils einem MakerBeam L-Verbinder und vier selbstsichernden Muttern.
+
+.. image:: /Images/Kits/kit_camera_slider_step9_350.jpg
+   :scale: 100 %
+   :alt: Beinpaar mit mehr Kugellagern
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step9_1500.jpg
+
+Rahmen
+------
+
+Die zwei Beinpaare und zwei 900mm MakerBeams bilden den Rahmen.
+
+Stapel-Seite
+^^^^^^^^^^^^
+
+Beginne mit dem stapel-seitigen Beinpaar:
+
+* Schiebe jeweils zwei 6mm Schrauben in beide aufrechte MakerBeams gegenüber der
+  Stapel-Halterung hinein.
+* Befestige zwei MakerBeam Eck-Verbinder mit jeweils zwei selbstsichernden
+  Muttern an den aufrechten MakerBeams. Achte darauf, dass die Verbinder bündig
+  mit der Oberkante der MakerBeams sind.
+* Schiebe jeweils zwei 6mm Schrauben in beide 900mm MakerBeams hinein.
+* Passe die MakerBeams in die Ecken des stapel-seitigen Beinpaars ein und
+  befestige sie mit jeweils zwei selbstsichernden Muttern.
+
+.. image:: /Images/Kits/kit_camera_slider_step10_350.jpg
+   :scale: 100 %
+   :alt: Stapel-seitiges Beinpaar mit Eck-Verbindern
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step10_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step11_350.jpg
+   :scale: 100 %
+   :alt: Unterseite des stapel-seitigen Beinpaares mit 900mm MakerBeams
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step11_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step12_350.jpg
+   :scale: 100 %
+   :alt: Vorderseite des stapel-seitigen Beinpaares mit 900mm MakerBeams
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step12_1500.jpg
+
+Als nächstes wird die Schrittmotor-Halterung am Rahmen angebracht:
+
+* Schiebe jeweils zwei 6mm Schrauben in die Oberseite beider 900mm MakerBeams
+  hinein.
+* Befestige die Schrittmotor-Halterung an den MakerBeams mit vier
+  selbstsichernden Muttern.
+
+.. image:: /Images/Kits/kit_camera_slider_step13_350.jpg
+   :scale: 100 %
+   :alt: Schrittmotor-Halterung
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step13_1500.jpg
+
+Umlenkrad-Seite
+^^^^^^^^^^^^^^^
+
+Um den Rahmen fertigzustellen muss das umlenkrad-seitige Beinpaar auf die
+gleiche Weise wie das stapel-seitige Beinpaar angebracht werden.
+
+.. image:: /Images/Kits/kit_camera_slider_step14_350.jpg
+   :scale: 100 %
+   :alt: Vorderseite des umlenkrad-seitigen Beinpaares mit 900mm MakerBeams
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step14_1500.jpg
+
+Wagen
+-----
+
+Der Wagen rollt oben auf dem Rahmen.
+
+Kugellager-Baugruppen
+^^^^^^^^^^^^^^^^^^^^^
+
+Der Zusammenbau beginnt damit zwölf Kugellager an vier 60mm MakerBeams
+anzubringen. Diese Kugellager rollen dann oben auf und seitlich am Rahmen:
+
+* Schiebe zwei 12mm Schrauben in einen 60mm MakerBeam hinein und befestige
+  beide mit jeweils einer normalen Mutter, keiner selbstsichernden Mutter. Die
+  Schrauben sollten rund 7mm Abstand zu den Enden des MakerBeams haben.
+* Stecke jeweils ein Kugellager auf beide Schrauben und befestige beide mit
+  jeweils einer selbstsichernden Mutter. Achte darauf, dass die Kugellager nah
+  am Endes des MakerBeams sitzen, aber nicht darüber heraus stehen.
+
+Wiederhole diese Schritte dreimal, um insgesamt vier MakerBeams mit jeweils
+zwei Kugellagern zu erhalten.
+
+.. image:: /Images/Kits/kit_camera_slider_step15_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam mit zwei 12mm Schrauben
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step15_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step16_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam mit zwei Kugellagern nah der Enden
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step16_1500.jpg
+
+An zwei der vier MakerBeams werden noch zwei weitere Kugellager angebracht.
+Bringe diese auf die gleiche Weise wie die ersten zwei Kugellager an, aber um
+90° versetzt.
+
+.. image:: /Images/Kits/kit_camera_slider_step17_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam mit vier Kugellagern nah der Enden
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step17_1500.jpg
+
+Zwei L-Verbinder werden an den 2-Kugellager-Baugruppen angebracht:
+
+* Schiebe vier 6mm Schrauben in den MakerBeam gegenüber der Kugellagern hinein.
+* Befestige zwei MakerBeam L-Verbinder am MakerBeam mit jeweils zwei
+  selbstsichernden Muttern.
+
+Wiederhole diese Schritte für die zweite 2-Kugellager-Baugruppe.
+
+.. image:: /Images/Kits/kit_camera_slider_step18_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam mit zwei Kugellagern und zwei L-Verbindern
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step18_1500.jpg
+
+Zwei L-Verbinder werden an den 4-Kugellager-Baugruppen angebracht:
+
+* Schiebe vier 6mm Schrauben in eine kugellager-freie Seite des MakerBeam
+  hinein.
+* Befestige zwei MakerBeam L-Verbinder am MakerBeam mit jeweils zwei
+  selbstsichernden Muttern. Achte darauf, dass die L-Verbinder von den
+  anliegenden Kugellagern weg zeigen.
+
+Wiederhole diese Schritte für die zweite 4-Kugellager-Baugruppe.
+
+.. image:: /Images/Kits/kit_camera_slider_step19_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam mit vier Kugellagern und zwei L-Verbindern
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step19_1500.jpg
+
+Die restlichen vier Kugellager dienen dazu, den Wagen auf dem Rahmen zu halten:
+
+* Stecke eine 12mm Schraube durch einen L-Verbinder und befestige sie mit einer
+  normalen Mutter, keiner selbstsichernden Mutter.
+* Stecke ein Kugellager auf die Schraube und befestige es mit einer
+  selbstsichernden Mutter.
+
+Wiederhole diese Schritte dreimal, um insgesamt vier L-Verbinder mit jeweils
+einem Kugellager zu erhalten.
+
+.. image:: /Images/Kits/kit_camera_slider_step20_350.jpg
+   :scale: 100 %
+   :alt: L-Verbinder mit 12mm Schraube und normaler Mutter
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step20_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step21_350.jpg
+   :scale: 100 %
+   :alt: Fertige 1-Kugellager-Baugruppe
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step21_1500.jpg
+
+Unterbau
+^^^^^^^^
+
+Der Unterbau des Wagens besteht aus den zuvor gebauten Kugellager-Baugruppen
+und zwei 150mm MakerBeams:
+
+* Schiebe vier 6mm Schrauben in einen 150mm MakerBeam hinein.
+* Befestige eine 4-Kugellager-Baugruppe und eine 2-Kugellager-Baugruppe am
+  MakerBeam mit jeweils zwei selbstsichernden Muttern. Achte darauf, dass die
+  Kugellager auf der Seite der 4-Kugellager-Baugruppe in Richtung der
+  2-Kugellager-Baugruppe zeigen und dass die L-Verbinder von einander weg
+  zeigen.
+
+.. image:: /Images/Kits/kit_camera_slider_step22_350.jpg
+   :scale: 100 %
+   :alt: Oberseite des halbfertigen Unterbaus
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step22_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step23_350.jpg
+   :scale: 100 %
+   :alt: Unterseite des halbfertigen Unterbaus
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step23_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step24_350.jpg
+   :scale: 100 %
+   :alt: Unterseite mit MakerBeam zwischen Kugellager-Baugruppen
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step24_1500.jpg

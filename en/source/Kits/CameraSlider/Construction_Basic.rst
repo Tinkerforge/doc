@@ -44,7 +44,7 @@ Corner Brackets to form an upside down U-shape:
 * Fasten a MakerBeam Corner Bracket to the MakerBeam with two lock nuts. Use
   another MakerBeam as temporary spacer in the corner of the bracket.
 
-Repeat these steps four times to create a U-shaped pair of legs. Then repeat
+Repeat these steps three times to create a U-shaped pair of legs. Then repeat
 all steps for the second pair of legs.
 
 .. image:: /Images/Kits/kit_camera_slider_step1_350.jpg
@@ -74,7 +74,7 @@ all steps for the second pair of legs.
 Stack Side
 ^^^^^^^^^^
 
-One pair of legs gets a stack bracket attached to it:
+One pair of legs gets the stack bracket attached to it:
 
 * Insert two 6mm bolts into the upright MakerBeams of each leg.
 * Fasten the stack bracket to the upright MakerBeams with four lock nuts.
@@ -123,13 +123,13 @@ A second bearing assembly gets attached to a 60mm MakerBeam:
 
 The MakerBeam-bearing assembly gets attached to the legs:
 
-* Insert two 6mm bolts into the upright MakerBeams of each leg.
+* Insert two 6mm bolts into each upright MakerBeam of the pair of legs.
 * Fasten the MakerBeam-bearing assembly to the upright MakerBeams with one
   MakerBeam L-Bracket and four lock nuts each.
 
 .. image:: /Images/Kits/kit_camera_slider_step9_350.jpg
    :scale: 100 %
-   :alt: Pair of legs with bearings
+   :alt: Pair of legs with more bearings
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step9_1500.jpg
 
@@ -205,12 +205,13 @@ The construction starts with attaching twelve bearings to four 60mm MakerBeams.
 These bearings will roll on top and on the sides of the frame:
 
 * Insert two 12mm bolts into a 60mm MakerBeam and fasten each one with a
-  normal nut, not a lock nut. The bolts should be about 7mm from the edge of
-  the MakerBeam.
+  normal nut, not a lock nut. The bolts should be located about 7mm from the
+  ends of the MakerBeam.
 * Put a bearing onto each bolt and fasten it with a lock nut each. Ensure that
-  the bearing is near to the edge of the MakerBeam beam but does not overlap it.
+  the bearing is near to the edge of the MakerBeam but does not protrude beyond
+  it.
 
-Repeat these steps four times to create four MakerBeams with two bearings each.
+Repeat these steps three times to create four MakerBeams with two bearings each.
 
 .. image:: /Images/Kits/kit_camera_slider_step15_350.jpg
    :scale: 100 %
@@ -267,7 +268,7 @@ The remaining four bearings are used to lock the cart onto the frame:
   lock nut.
 * Put a bearing onto the bolt and fasten it with a lock nut.
 
-Repeat these steps four times to create four L-brackets with a bearing each.
+Repeat these steps three times to create four L-brackets with a bearing each.
 
 .. image:: /Images/Kits/kit_camera_slider_step20_350.jpg
    :scale: 100 %
@@ -277,7 +278,7 @@ Repeat these steps four times to create four L-brackets with a bearing each.
 
 .. image:: /Images/Kits/kit_camera_slider_step21_350.jpg
    :scale: 100 %
-   :alt: Complete bottom 1-bearing assembly
+   :alt: Complete 1-bearing assembly
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step21_1500.jpg
 
@@ -295,13 +296,13 @@ assemblies and two 150mm MakerBeams:
 
 .. image:: /Images/Kits/kit_camera_slider_step22_350.jpg
    :scale: 100 %
-   :alt: Top view of attached bearing assemblies
+   :alt: Top view of partial substructure
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step22_1500.jpg
 
 .. image:: /Images/Kits/kit_camera_slider_step23_350.jpg
    :scale: 100 %
-   :alt: Bottom view of attached bearing assemblies
+   :alt: Bottom view of partial substructure
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step23_1500.jpg
 
@@ -386,7 +387,7 @@ construction start with four corner posts:
 * Insert four 6mm bolts into a 40mm MakerBeam.
 * Fasten two L-brackets to the MakerBeam with two lock nuts each.
 
-Repeat these steps four times to create four corner posts.
+Repeat these steps three times to create four corner posts.
 
 .. image:: /Images/Kits/kit_camera_slider_step30_350.jpg
    :scale: 100 %
