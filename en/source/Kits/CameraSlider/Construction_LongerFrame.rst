@@ -39,7 +39,7 @@ L-Brackets to form an H-shape that is connected to the frame with two MakerBeam
 Corner Brackets. For the upright parts:
 
 * Insert two 6mm bolts into a 60mm MakerBeam.
-* Fasten a MakerBeam Corner Bracket to the bolts with two lock nuts.
+* Fasten a MakerBeam Corner Bracket to the MakerBeam with two lock nuts.
 
 Repeat these steps for the second upright part.
 
@@ -52,7 +52,7 @@ Repeat these steps for the second upright part.
 For the crossbeam:
 
 * Insert four 6mm bolts into a 60mm MakerBeam.
-* Fasten two MakerBeam L-Bracket to the bolts with two lock nuts each.
+* Fasten two MakerBeam L-Bracket to the MakerBeam with two lock nuts each.
 
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_step2_350.jpg
    :scale: 100 %
@@ -64,7 +64,7 @@ Connect the three MakerBeams to form an H-shape:
 
 * Insert two 6mm bolts into each MakerBeam on the same side as the corner
   bracket.
-* Fasten the crossbeam to the bolts using four lock nuts.
+* Fasten the crossbeam to the MakerBeams with four lock nuts.
 
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_step3_350.jpg
    :scale: 100 %
@@ -90,7 +90,7 @@ Connect the extra pair of legs to the frame:
 * Disconnect the stack-side pair of legs from the frame.
 * Insert two 6mm bolts into the bottom side of each long MakerBeam.
 * Reconnect the stack-side pair of legs to the frame.
-* Fasten the extra pair of legs to the bolts using four lock nuts.
+* Fasten the extra pair of legs to the long MakerBeams with four lock nuts.
 
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_step4_350.jpg
    :scale: 100 %
@@ -127,7 +127,7 @@ Two 1500mm MakerBeams get connected with a straight bracket:
 
 * Insert two 6mm bolts into each 1500mm MakerBeam.
 * Insert one 6mm bolt into the junction between the MakerBeams.
-* Fasten a MakerBeam Straight Bracket to the bolts with five lock nuts.
+* Fasten a MakerBeam Straight Bracket to the MakerBeams with five lock nuts.
 
 Repeat these steps for the second pair of 1500mm MakerBeams.
 

@@ -41,8 +41,8 @@ Each pair of legs consists of three 60mm MakerBeams connected by two MakerBeam
 Corner Brackets to form an upside down U-shape:
 
 * Insert two 6mm bolts into a 60mm MakerBeam.
-* Fasten a MakerBeam Corner Bracket to the bolts with two lock nuts. Use another
-  MakerBeam as temporary spacer in the corner of the bracket.
+* Fasten a MakerBeam Corner Bracket to the MakerBeam with two lock nuts. Use
+  another MakerBeam as temporary spacer in the corner of the bracket.
 
 Repeat these steps four times to create a U-shaped pair of legs. Then repeat
 all steps for the second pair of legs.
@@ -77,8 +77,8 @@ Stack Side
 One pair of legs gets a stack bracket attached to it:
 
 * Insert two 6mm bolts into the upright MakerBeams of each leg.
-* Fasten the stack bracket to the bolts with four lock nuts. Ensure that the
-  bracket does not overlap the crossbeam.
+* Fasten the stack bracket to the upright MakerBeams with four lock nuts.
+  Ensure that the bracket does not overlap the crossbeam.
 
 .. image:: /Images/Kits/kit_camera_slider_step5_350.jpg
    :scale: 100 %
@@ -145,8 +145,9 @@ Start with the stack-side legs:
 
 * Insert two 6mm bolts into the upright MakerBeam of each stack-side leg
   opposite to the stack bracket.
-* Fasten two MakerBeam Corner Brackets to the bolts with two lock nuts each.
-  Ensure that the brackets are flush with the top edge of the MakerBeam.
+* Fasten two MakerBeam Corner Brackets to the upright MakerBeams with two lock
+  nuts each. Ensure that the brackets are flush with the top edge of the
+  MakerBeams.
 * Insert two 6mm bolts into each 900mm MakerBeam.
 * Fit the MakerBeams into the corners of the pair of stack-side legs and fasten
   them with two lock nuts each.
@@ -236,7 +237,7 @@ two bearings got attached.
 Add L-brackets to the 2-bearing assemblies:
 
 * Insert four 6mm bolts into the MakerBeam opposite to the bearings.
-* Fasten two MakerBeam L-Brackets to the bolts with two lock nuts each.
+* Fasten two MakerBeam L-Brackets to the MakerBeam with two lock nuts each.
 
 Repeat these steps for the second 2-bearing assembly.
 
@@ -249,8 +250,8 @@ Repeat these steps for the second 2-bearing assembly.
 Add L-brackets to the 4-bearing assemblies:
 
 * Insert four 6mm bolts into a bearing-free-side of the MakerBeam.
-* Fasten two MakerBeam L-Brackets to the bolts with two lock nuts each. Ensure
-  that the L-brackets are facing away from the two adjacent bearings.
+* Fasten two MakerBeam L-Brackets to the MakerBeam with two lock nuts each.
+  Ensure that the L-brackets are facing away from the two adjacent bearings.
 
 Repeat these steps for the second 4-bearing assembly.
 
@@ -287,9 +288,10 @@ The substructure of the cart consists of the previous build four bearing
 assemblies and two 150mm MakerBeams:
 
 * Insert four 6mm bolts into a 150mm MakerBeam.
-* Fasten a 4-bearing and a 2-bearing assembly to the bolts with two lock nuts
-  each. Ensure that the bearings on the side of the 4-bearing assembly face the
-  2-bearing assembly and that the L-brackets are facing away from each other.
+* Fasten a 4-bearing and a 2-bearing assembly to the MakerBeam with two lock
+  nuts each. Ensure that the bearings on the side of the 4-bearing assembly
+  face the 2-bearing assembly and that the L-brackets are facing away from each
+  other.
 
 .. image:: /Images/Kits/kit_camera_slider_step22_350.jpg
    :scale: 100 %
@@ -313,7 +315,7 @@ Attach the second pair of bearing assemblies the same way the first pair got
 attached. Then add a second 150mm MakerBeam to the cart:
 
 * Insert eight 6mm bolts into a 150mm MakerBeam.
-* Fasten the four bearing assemblies to the bolts with two lock nuts each.
+* Fasten the four bearing assemblies to the MakerBeam with two lock nuts each.
 
 .. image:: /Images/Kits/kit_camera_slider_step25_350.jpg
    :scale: 100 %
@@ -359,7 +361,7 @@ frame:
 
 * Insert two 6mm bolts into the bottom side of the cart.
 * Add a washer to each bolt.
-* Fasten a 1-bearing assembly to the bolts with two lock nuts.
+* Fasten a 1-bearing assembly to the cart with two lock nuts.
 
 Repeat these steps for each corner of the cart.
 
@@ -382,7 +384,7 @@ The camera will be mounted on top of the cart superstructure. The
 construction start with four corner posts:
 
 * Insert four 6mm bolts into a 40mm MakerBeam.
-* Fasten two L-brackets to the bolts with two lock nuts each.
+* Fasten two L-brackets to the MakerBeam with two lock nuts each.
 
 Repeat these steps four times to create four corner posts.
 
@@ -395,9 +397,9 @@ Repeat these steps four times to create four corner posts.
 Attach the corner posts to the substructure:
 
 * Insert two 6mm bolts in the side of the 150mm MakerBeam.
-* Fasten a corner post to the bolts with two lock nuts. Ensure that that post
-  sits between the L-brackets of the substructure and that the L-brackets of
-  the post are facing to the outside of the cart.
+* Fasten a corner post to the MakerBeam with two lock nuts. Ensure that the
+  post sits between the L-brackets of the substructure and that the L-brackets
+  of the post are facing to the outside of the cart.
 
 Repeat these steps for each corner post.
 
@@ -410,13 +412,13 @@ Repeat these steps for each corner post.
 To complete the superstructure attach the camera bracket to it:
 
 * Insert four 6mm bolts into a 150mm MakerBeam.
-* Fasten the MakerBeam to two corner posts using two lock nuts each.
+* Fasten the MakerBeam to two corner posts with two lock nuts each.
 
 Repeat these steps for the other two corner posts, then attach the camera
 bracket:
 
 * Insert two 6mm bolts into the top of each MakerBeam.
-* Fasten the camera bracket to the bolts using four lock nuts.
+* Fasten the camera bracket to the MakerBeams with four lock nuts.
 
 .. image:: /Images/Kits/kit_camera_slider_step32_350.jpg
    :scale: 100 %
@@ -440,8 +442,8 @@ The drive pulley gets attached to the stepper motor:
   of the shaft.
 * Fasten the pulley to the shaft with two set screws. Ensure that one set
   screw sits on the flat portion of the shaft.
-* Fasten the stepper motor pulley-side down to the stepper motor bracket with
-  four 6mm bolts.
+* Fasten the stepper motor (pulley-side facing downwards) to the stepper
+  motor bracket with four 6mm bolts.
 
 .. image:: /Images/Kits/kit_camera_slider_step33_350.jpg
    :scale: 100 %
@@ -486,7 +488,7 @@ Clamps
 The timing belt clamps get attached to a 60mm MakerBeam:
 
 * Insert two 6mm bolts into a 60mm MakerBeam.
-* Fasten a L-bracket to each bolt with a lock nut.
+* Fasten two L-brackets to the MakerBeam with a lock nut each.
 
 .. image:: /Images/Kits/kit_camera_slider_step37_350.jpg
    :scale: 100 %
@@ -494,8 +496,8 @@ The timing belt clamps get attached to a 60mm MakerBeam:
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step37_1500.jpg
 
-While the cart substructure was built, four 12mm bolts with lock nuts were added
-to the bottom side of the cart:
+While the cart substructure was built, four 12mm bolts with lock nuts were
+added to the bottom side of the cart:
 
 * Realign those 12mm bolts so that one bolt on each side of the cart sits in
   the middle of the cart.
@@ -511,7 +513,7 @@ to the bottom side of the cart:
 
 Two L-brackets form a timing belt clamp:
 
-* Connect two L-brackets using two 12mm bolts and two lock nuts.
+* Connect two L-brackets with two 12mm bolts and two lock nuts.
 * Put one end of the timing belt between the L-brackets and fasten it with the
   lock nuts. Ensure that the smooth side of the belt faces in the same
   direction as the lock nuts and that the L-brackets face in the direction of
@@ -528,13 +530,13 @@ Repeat these steps for the other end of the timing belt.
 Attach the clamps to the 60mm MakerBeam:
 
 * Insert four 12mm bolts into the side of the 60mm MakerBeam.
-* Fasten the clamps to the bolts with two lock nuts each, but do not fully
+* Fasten the clamps to the MakerBeam with two lock nuts each, but do not fully
   tighten the second clamp to be able to adjust the belt length later. Ensure
   that the belt forms a loop with no twists and its smooth side facing
   outwards.
 * Put the MakerBeam-clamp assembly back into the bottom of the cart onto the
-  four 12mm bolts and loop the belt around the drive and the idler pulley.
-  Ensure that the part with the threaded holes faces down on both pulleys.
+  four 12mm bolts and loop the belt around the drive pulley and the idler
+  pulley. Ensure that the pulleys face downwards with their threaded hole part.
 
 .. image:: /Images/Kits/kit_camera_slider_step40_350.jpg
    :scale: 100 %

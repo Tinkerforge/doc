@@ -41,9 +41,9 @@ Jedes Beinpaar besteht aus drei 60mm MakerBeams die mit zwei MakerBeam
 Eck-Verbindern zu einer auf dem Kopf stehenden U-Form verbunden wurden:
 
 * Schiebe zwei 6mm Schrauben in einen 60mm MakerBeam hinein.
-* Befestige einen MakerBeam Eck-Verbinder mit zwei selbstsichernden Muttern an
-  den Schrauben. Ein anderer MakerBeam dient als temporärer Abstandshalter in
-  der Ecke des Verbinders.
+* Befestige einen MakerBeam Eck-Verbinder mit zwei selbstsichernden Muttern am
+  MakerBeam. Ein anderer MakerBeam dient als temporärer Abstandshalter in der
+  Ecke des Verbinders.
 
 Wiederhole diese Schritte viermal, um ein U-förmiges Beinpaar zu erhalten. Dann
 wiederhole alle Schritte für das zweite Beinpaar.
@@ -75,11 +75,11 @@ wiederhole alle Schritte für das zweite Beinpaar.
 Stapel-Seite
 ^^^^^^^^^^^^
 
-An ein Beinpaar wird eine Stapel Halterung angebracht:
+An einem Beinpaar wird eine Stapel Halterung angebracht:
 
-* Schiebe zwei 6mm Schrauben die die senkrechten MakerBeams jedes Beines hinein.
-* Befestige die Stapel Halterung mit vier selbstsichernden Muttern an den
-  Schrauben. Stelle sicher, dass die Halterung nicht den Querbalken überlappt.
+* Schiebe zwei 6mm Schrauben in die senkrechten MakerBeams jedes Beines hinein.
+* Befestige die Stapel Halterung mit vier selbstsichernden Muttern. Stelle
+  sicher, dass die Halterung nicht den Querbalken überlappt.
 
 .. image:: /Images/Kits/kit_camera_slider_step5_350.jpg
    :scale: 100 %
