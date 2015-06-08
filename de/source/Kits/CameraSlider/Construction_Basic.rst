@@ -149,8 +149,8 @@ Stapel-Seite
 
 Beginne mit dem stapel-seitigen Beinpaar:
 
-* Schiebe jeweils zwei 6mm Schrauben in beide aufrechte MakerBeams gegenüber der
-  Stapel-Halterung hinein.
+* Schiebe jeweils zwei 6mm Schrauben in beide aufrechte MakerBeams gegenüber
+  der Stapel-Halterung hinein.
 * Befestige zwei MakerBeam Eck-Verbinder mit jeweils zwei selbstsichernden
   Muttern an den aufrechten MakerBeams. Achte darauf, dass die Verbinder bündig
   mit der Oberkante der MakerBeams sind.
@@ -326,3 +326,320 @@ und zwei 150mm MakerBeams:
    :alt: Unterseite mit MakerBeam zwischen Kugellager-Baugruppen
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step24_1500.jpg
+
+Bringe das zweite Paar Kugellager-Baugruppen auf die gleich Weise an wie das
+erste Paar. Füge dann einen zweiten 150mm MakerBeam hinzu:
+
+* Schiebe acht 6mm Schrauben in einen 150mm MakerBeam hinein.
+* Befestige die vier Kugellager-Baugruppen am MakerBeam mit jeweils zwei
+  selbstsichernden Muttern.
+
+.. image:: /Images/Kits/kit_camera_slider_step25_350.jpg
+   :scale: 100 %
+   :alt: Vier Kugellager-Baugruppen verbunden mit zwei MakerBeams
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step25_1500.jpg
+
+Weitere Schrauben werden angebracht, um später die Zahnriemenklammern
+befestigen zu können:
+
+* Schiebe jeweils zwei 12mm Schrauben in die Unterseite der beiden 150mm
+  MakerBeams hinein und befestige sie mit jeweils einer selbstsichernden Mutter
+  nahe der Mitte des MakerBeams.
+
+.. image:: /Images/Kits/kit_camera_slider_step26_350.jpg
+   :scale: 100 %
+   :alt: Unterseite mit MakerBeam zwischen Kugellager-Baugruppen
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step26_1500.jpg
+
+Kugellager ausrichten
+^^^^^^^^^^^^^^^^^^^^^
+
+Die Kugellager-Baugruppen müssen am Rahmen ausgerichtet werden bevor der Aufbau
+des Wagens angebracht werden kann:
+
+* Löse die sechzehn selbstsichernden Muttern, die die Kugellager-Baugruppen an
+  den 150mm MakerBeams befestigen, so dass die Kugellager-Baugruppen beweglich
+  werden.
+* Setzte den Wagen auf den Rahmen, so dass die 900mm MakerBeams zwischen den
+  Kugellagern laufen.
+* Drücke jedes Paar Kugellager-Baugruppen leicht gegen die 900mm MakerBeams und
+  schraube die zuvor gelösten Muttern wieder fest. Achte darauf, dass die 150mm
+  MakerBeams links und rechts gleichmäßig über den Rahmen hinaus ragen.
+
+.. image:: /Images/Kits/kit_camera_slider_step27_350.jpg
+   :scale: 100 %
+   :alt: Wagen-Unterbau auf 900mm MakerBeams ausrichten
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step27_1500.jpg
+
+Wagen und Rahmen verbinden
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Die übrigen vier 1-Kugellager-Baugruppen werden benutzt, um den Wagen auf dem
+Rahmen zu halten:
+
+* Schiebe zwei 6mm Schrauben in die Unterseite des Wagens hinein.
+* Stecke jeweils eine Unterlegscheibe auf beide Schrauben.
+* Befestige eine 1-Kugellager-Baugruppe am Wagen mit zwei selbstsichernden
+  Muttern.
+
+Wiederhole diese Schritte für alle Ecken des Wagens.
+
+.. image:: /Images/Kits/kit_camera_slider_step28_350.jpg
+   :scale: 100 %
+   :alt: Unterseite des Unterbaus mit 6mm Schrauben und Unterlegscheiben
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step28_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step29_350.jpg
+   :scale: 100 %
+   :alt: Unterseite des Unterbaus mit 1-Kugellager-Baugruppe
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step29_1500.jpg
+
+Aufbau
+^^^^^^
+
+Die Kamera wird auf dem Aufbau des Wagens angebracht. Die Konstruktion beginnt
+mit vier Eckpfosten:
+
+* Schiebe vier 6mm Schrauben in einen 40mm MakerBeam hinein.
+* Befestige zwei L-Verbinder am MakerBeam mit jeweils zwei selbstsichernden
+  Muttern.
+
+Wiederhole diese Schritte dreimal, um insgesamt vier Eckpfosten zu erhalten.
+
+.. image:: /Images/Kits/kit_camera_slider_step30_350.jpg
+   :scale: 100 %
+   :alt: Eckpfosten für Wagenaufbau
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step30_1500.jpg
+
+Befestige die Eckpfosten am Unterbau des Wagens:
+
+* Schiebe zwei 6mm Schrauben in die Seite des 150mm MakerBeams hinein.
+* Befestige einen Eckpfosten am MakerBeam mit zwei selbstsichernden Muttern.
+  Achte darauf, dass der Eckpfosten zwischen den L-Verbindern des Unterbaus
+  sitzt und dass die L-Verbinder des Eckpfosten zur Außenseite des Wagens
+  zeigen.
+
+Wiederhole diese Schritte für alle Eckpfosten.
+
+.. image:: /Images/Kits/kit_camera_slider_step31_350.jpg
+   :scale: 100 %
+   :alt: Wagen mit Eckpfosten
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step31_1500.jpg
+
+Um den Aufbau fertigzustellen muss noch die Kamera-Halterung angebracht werden:
+
+* Schiebe vier 6mm Schrauben in einen 150mm MakerBeam hinein.
+* Befestige den MakerBeam an zwei Eckpfosten mit jeweils zwei selbstsichernden
+  Muttern.
+
+Wiederhole diese Schritte für die anderen beiden Eckpfosten. Bringe dann die
+Kamera-Halterung an:
+
+* Schiebe jeweils zwei 6mm Schrauben in die Oberseite der beiden MakerBeams
+  hinein.
+* Befestige die Kamera-Halterung an den MakerBeams mit vier selbstsichernden
+  Muttern.
+
+.. image:: /Images/Kits/kit_camera_slider_step32_350.jpg
+   :scale: 100 %
+   :alt: Fertiger Wagen
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step32_1500.jpg
+
+Zahnriemen
+----------
+
+Im letzten Schritt der Konstruktion werden der Schrittmotor und der Zahnriemen
+verbaut.
+
+Zahnriemenräder
+^^^^^^^^^^^^^^^
+
+Das Antriebsrad wird am Schrittmotor angebracht:
+
+* Stecke ein Zahnriemenrad auf die Achse des Schrittmotors. Achte darauf, dass
+  der Teil mit den zwei Gewindebohrungen vom Schrittmotor weg zeigt und dass
+  es bündig mit dem Ende der Achse ist.
+* Befestige das Zahnriemenrad mit zwei Madenschrauben auf der Achse. Achte
+  darauf, dass eine Madenschraube auf dem flachen Teil der Achse sitzt.
+* Befestige den Schrittmotor (Zahnriemenrad nach unten) mit vier 6mm Schrauben
+  an der Schrittmotor-Halterung.
+
+.. image:: /Images/Kits/kit_camera_slider_step33_350.jpg
+   :scale: 100 %
+   :alt: Unterseite des Schrittmotors mit Zahnriemenrad
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step33_1500.jpg
+
+Für das Umlenkrad am anderen Ende des Rahmens wird eine lange M3 Schraube als
+Achse verwendet. Das Zahnriemenrad hat aber eine 5mm Bohrung. Mit einem
+Achsreduzierstück aus Messing wird die Bohrung auf 3mm reduziert:
+
+* Stecke das Reduzierstück in die Bohrung des Zahnriemenrads. Dies sollte vom
+  Durchmesser her exakt passen. Achte darauf, dass die Madenschrauben gelöst
+  sind. Falls das Reduzierstück nicht zu passen scheint kann eine Zange, ein
+  Schraubstock, ein Hammer oder ein ähnliches Werkzeug verwendet werden, um das
+  Reduzierstück mit leichtem Druck in das Zahnriemenrad zu drücken.
+* Ziehe die beiden Madenschrauben an.
+* Befestige das modifizierte Zahnriemenrad zwischen den beiden
+  Kugellager-Baugruppen mit einer langen M3 Schraube. Möglicherweise muss die
+  Ausrichtung der Kugellager nachjustiert werden, damit die Schraube richtig
+  passt.
+
+.. image:: /Images/Kits/kit_camera_slider_step34_100.jpg
+   :scale: 100 %
+   :alt: Zahnriemenrad und Achsreduzierstück
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step34_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step35_100.jpg
+   :scale: 100 %
+   :alt: Achsreduzierstück in Zahnriemenrad
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step35_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step36_350.jpg
+   :scale: 100 %
+   :alt: Umlenkrad-seitiges Beinpaar mit Zahnriemenrad
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step36_1500.jpg
+
+Klammern
+^^^^^^^^
+
+Die Zahnriemenklammern werden an einem 60mm MakerBeam angebracht:
+
+* Schiebe zwei 6mm Schrauben in einen 60mm MakerBeam hinein.
+* Befestige zwei L-Verbinder am MakerBeam mit jeweils einer selbstsichernden
+  Mutter.
+
+.. image:: /Images/Kits/kit_camera_slider_step37_350.jpg
+   :scale: 100 %
+   :alt: MakerBeam mit zwei L-Verbindern
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step37_1500.jpg
+
+Als der Unterbau zusammengebaut wurde, wurden vier 12mm Schrauben mit
+selbstsichernden Mutter an der Unterseite des Wagens angebracht:
+
+* Richte diese 12mm Schrauben so aus, dass eine Schraube auf jeder Seite in der
+  Mitte des Wagens sitzt.
+* Richte die anderen beiden Schrauben so aus, dass der 60mm MakerBeam mit den
+  zwei L-Verbindern auf die vier Schrauben passt. Achte darauf, dass der
+  MakerBeam in der Mitte des Wagens sitzt.
+
+.. image:: /Images/Kits/kit_camera_slider_step38_350.jpg
+   :scale: 100 %
+   :alt: Unterseite mit ausgerichteten 12mm Schrauben
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step38_1500.jpg
+
+Zwei L-Verbinder bilden eine Zahnriemenklammer:
+
+* Verbinde zwei L-Verbinder mit zwei 12mm Schrauben und zwei selbstsichernden
+  Muttern.
+* Stecke ein Ende des Zahnriemens zwischen die L-Verbinder und ziehe die
+  selbstsichernden Muttern an. Achte darauf, dass die glatte Seite des
+  Zahnriemens in die gleiche Richtung wie die selbstsichernden Muttern zeigt
+  und dass die L-Verbinder in die gleiche Richtung wie das Endes des
+  Zahnriemens zeigen.
+
+Wiederhole diese Schritte für das andere Endes des Zahnriemens. Die zweite
+Klammer muss ein Spiegelbild der ersten sein. Ziehe außerdem die
+selbstsichernden Muttern der zweiten Klammer nicht vollständig an, um nachher
+noch die Länge des Zahnriemens einstellen zu können.
+
+.. image:: /Images/Kits/kit_camera_slider_step39_350.jpg
+   :scale: 100 %
+   :alt: Zahnriemenklammer
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step39_1500.jpg
+
+Befestige die Zahnriemenklammern am 60mm MakerBeam:
+
+* Schiebe vier 12mm Schrauben in die Seite des 60mm MakerBeams hinein.
+* Befestige die Klammern am MakerBeam mit jeweils zwei selbstsichernden
+  Muttern. Ziehe die selbstsichernden Muttern der zweiten Klammer aber nicht
+  vollständig an, um nachher noch die Länge des Zahnriemens einstellen zu
+  können. Achte darauf, dass der Zahnriemen nicht verdreht ist und die glatte
+  Seite nach außen zeigt.
+* Setze die MakerBeam-Klammer-Baugruppe auf die 12mm Schrauben an der
+  Unterseite des Wagens und führe den Zahnriemen um das Antriebs- und
+  Umlenkrad. Achte darauf, dass beide Zahnriemenräder mit der Seite mit den
+  zwei Gewindebohrungen nach unten zeigen.
+
+.. image:: /Images/Kits/kit_camera_slider_step40_350.jpg
+   :scale: 100 %
+   :alt: Zahnriemenklammern am MakerBeam
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step40_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step41_600.jpg
+   :scale: 100 %
+   :alt: Zahnriemen-Übersicht
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step41_1500.jpg
+
+Nachdem der Zahnriemen eingebaut ist muss es gespannt werden:
+
+* Löse die selbstsichernden Muttern der Schrittmotor-Halterung und positioniere
+  sie 1cm entfernt vom Ende des Rahmens.
+* Reduziere die Länge des Zahnriemens bis dieser nicht mehr durchhängt.
+* Ziehe die losen Schrauben der zweiten Zahnriemenklammer an.
+* Schiebe die Schrittmotor-Halterung in Richtung Ende des Rahmens, um den
+  Zahnriemen zu spannen.
+* Ziehe die selbstsichernden Muttern der Schrittmotor-Halterung wieder an.
+
+.. image:: /Images/Kits/kit_camera_slider_step42_350.jpg
+   :scale: 100 %
+   :alt: Zahnriemen am Wagen angebracht
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step42_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_step43_350.jpg
+   :scale: 100 %
+   :alt: Zahnriemen spannen
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step43_1500.jpg
+
+Stepper Brick
+-------------
+
+Fast fertig. Der letzte Schritt ist den Stepper Brick und die 3D gedruckten
+Endkappen anzubringen:
+
+* Befestige den Stepper Brick an der Stapel-Halterung mit vier 10mm
+  Abstandshaltern und acht 6mm Schrauben aus dem Befestigungskit des Stepper
+  Bricks.
+* Stecke eine 3D gedruckte Endkappe an jedes Bein.
+
+.. image:: /Images/Kits/kit_camera_slider_step44_350.jpg
+   :scale: 100 %
+   :alt: Stepper Brick an Halterung
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_step44_1500.jpg
+
+Fertig!
+-------
+
+Der Kammeraschlitten ist jetzt vollständig zusammengebaut. Es werden auch ein
+paar Teile übrig bleiben.
+
+.. image:: /Images/Kits/kit_camera_slider_complete1_600.jpg
+   :scale: 100 %
+   :alt: Fertiger Kammeraschlitten
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_complete1_1500.jpg
+
+.. image:: /Images/Kits/kit_camera_slider_leftover_600.jpg
+   :scale: 100 %
+   :alt: Übrige Teile
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_leftover_1500.jpg

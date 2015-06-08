@@ -343,7 +343,8 @@ superstructure can be added:
 
 * Loosen the sixteen lock nuts that fasten the bearing assemblies to the 150mm
   MakerBeams to allow sliding the bearing assemblies along the MakerBeams.
-* Fit the 900mm MakerBeams of the frame between the bearings.
+* Put the cart onto the frame and make the 900mm MakerBeams run between the
+  bearings.
 * Press each pair of bearing assemblies against the 900mm MakerBeams then
   fasten the loosened lock nuts again. Ensure that the 150mm MakerBeams
   overhang the frame equally on both sides.
@@ -406,7 +407,7 @@ Repeat these steps for each corner post.
 
 .. image:: /Images/Kits/kit_camera_slider_step31_350.jpg
    :scale: 100 %
-   :alt: Cart with corner post
+   :alt: Cart with corner posts
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_step31_1500.jpg
 
@@ -438,11 +439,11 @@ Pulleys
 
 The drive pulley gets attached to the stepper motor:
 
-* Put a pulley on the stepper motor shaft. Ensure that the part with the
-  threaded holes faces away from the stepper motor and is flush with the end
-  of the shaft.
-* Fasten the pulley to the shaft with two set screws. Ensure that one set
-  screw sits on the flat portion of the shaft.
+* Put a pulley on the stepper motor shaft. Ensure that the part with the two
+  threaded holes faces away from the stepper motor and that it is flush with
+  the end of the shaft.
+* Fasten the pulley to the shaft with two setscrews. Ensure that one setscrew
+  sits on the flat portion of the shaft.
 * Fasten the stepper motor (pulley-side facing downwards) to the stepper
   motor bracket with four 6mm bolts.
 
@@ -456,11 +457,10 @@ The idler pulley on the other end of the frame uses a on long M3 bolt as shaft,
 but the pulley has a 5mm hole. A brass shaft reducer reduces the hole to 3mm:
 
 * Put the reducer into the pulley. This is a tight fit. Ensure that the
-  set screws of the pulley are loose and that the reducer does not sit crooked.
-  The fit might be so tight that the reducer does not seem to fit at all. In
-  that case use pliers, a vice, a hammer or a similar tool to apply light force
-  to press the reducer into the pulley.
-* Fasten the two set screws.
+  setscrews of the pulley are loose. The fit might be so tight that the reducer
+  does not seem to fit at all. In that case use pliers, a vice, a hammer or a
+  similar tool to apply light force to press the reducer into the pulley.
+* Fasten the two setscrews.
 * Install the modified pulley between the two bearing assemblies with a long
   M3 bolt. You might need to adjust the alignment of the bearings to make the
   bolt fit properly.
@@ -520,7 +520,9 @@ Two L-brackets form a timing belt clamp:
   direction as the lock nuts and that the L-brackets face in the direction of
   the belt end.
 
-Repeat these steps for the other end of the timing belt.
+Repeat these steps for the other end of the timing belt. The second clamp has
+to be a mirror image of the first one. Also, do not fully tighten the second
+clamp to be able to adjust the belt length later.
 
 .. image:: /Images/Kits/kit_camera_slider_step39_350.jpg
    :scale: 100 %

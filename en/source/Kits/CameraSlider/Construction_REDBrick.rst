@@ -12,7 +12,6 @@ camera slider contains the following parts:
 
 * 1x `MakerBeam 150mm, 6pcs, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-150mm-6pcs-black.html>`__
 * 1x `MakerBeam 60mm, 8pcs, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-60mm-8pcs-black.html>`__
-* 1x `M3 Square Headed Bolts with Hex Hole, 6mm, 250pcs <https://www.tinkerforge.com/en/shop/makerbeam/nuts-bolts/250-m3-square-headed-bolts-with-hex-hole-6mm.html>`__
 * 1x `M3 Self Locking Nuts, 100pcs <https://www.tinkerforge.com/en/shop/makerbeam/nuts-bolts/100-m3-self-locking-nuts.html>`__
 * 1x `MakerBeam Corner Brackets, 12pcs <https://www.tinkerforge.com/en/shop/makerbeam/brackets/makerbeam-corner-brackets-12pcs.html>`__
 * 1x `MakerBeam 45° Brackets, 12pcs <https://www.tinkerforge.com/en/shop/makerbeam/brackets/makerbeam-45-brackets-12pcs.html>`__
@@ -22,6 +21,9 @@ camera slider contains the following parts:
   `Micro-HDMI Cable 90cm <https://www.tinkerforge.com/en/shop/accessories/cable/micro-hdmi-cable-90cm.html>`__ and
   `Mounting Kit 12mm <https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html>`__)
 * 1x `HDMI Display 5" (800x480 with Touchscreen) <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
+
+The add-on does not include 6mm and 12mm bolts. You should have more than
+enough bolts leftover from the basic kit.
 
 .. note::
 
