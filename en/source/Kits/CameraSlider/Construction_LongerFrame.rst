@@ -30,18 +30,21 @@ extra pair of legs you need the following parts:
 * 1x `3D printed End Caps, 4pcs <https://www.tinkerforge.com/en/shop/makerbeam/accessories/3d-printed-end-caps.html>`__
 
 From the basic kit you should have enough 60mm MakerBeams, 6mm bolts and lock
-nuts leftover. You should only need additional MakerBeam Corner Brackets and
-L-Brackets.
+nuts leftover for one extra pair for legs. You should only need additional
+MakerBeam Corner Brackets, L-Brackets and 3D printed end caps.
+
+Assembly
+^^^^^^^^
 
 This extra pair of legs is similar to the original legs of the frame but more
 H-shaped. It consists of three 60mm MakerBeams connected by two MakerBeam
 L-Brackets to form an H-shape that is connected to the frame with two MakerBeam
-Corner Brackets. For the upright parts:
+Corner Brackets. For the upright MakerBeams:
 
 * Insert two 6mm bolts into a 60mm MakerBeam.
 * Fasten a MakerBeam Corner Bracket to the MakerBeam with two lock nuts.
 
-Repeat these steps for the second upright part.
+Repeat these steps for the second upright MakerBeam.
 
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_step1_350.jpg
    :scale: 100 %
@@ -122,6 +125,9 @@ timing belt:
 * 4x `MakerBeam 1500mm, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-1500mm-1-piece-black.html>`__
 * 1x `MakerBeam Straight Brackets, 12pcs <https://www.tinkerforge.com/en/shop/makerbeam/brackets/makerbeam-straight-brackets-12pcs.html>`__
 * 1x `Timing Belt with Pulleys <https://www.tinkerforge.com/en/shop/accessories/mounting/timing-belt-with-pulleys.html>`__
+
+Assembly
+^^^^^^^^
 
 Two 1500mm MakerBeams get connected with a straight bracket:
 

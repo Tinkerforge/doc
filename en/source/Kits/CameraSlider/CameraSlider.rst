@@ -152,6 +152,12 @@ for this is described :ref:`here <starter_kit_camera_slider_construction_longer_
 
 FIXME: image of 3m frame
 
+.. image:: /Images/Kits/kit_camera_slider_longer_frame_complete1_600.jpg
+   :scale: 100 %
+   :alt: Camera Slider kit with 3m long frame
+   :align: center
+   :target: Construction_LongerFrame.html
+
 You can also use a RED Brick with an HDMI touchscreen instead of using an
 external PC to control the camera slider. How to add a RED Brick and a
 HDMI touchscreen to the frame is described :ref:`here

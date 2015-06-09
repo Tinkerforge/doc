@@ -402,7 +402,7 @@ Wiederhole diese Schritte für alle Ecken des Wagens.
 Aufbau
 ^^^^^^
 
-Die Kamera wird auf dem Aufbau des Wagens angebracht. Die Konstruktion beginnt
+Die Kamera wird auf dem Aufbau des Wagens angebracht. Der Zusammenbau beginnt
 mit vier Eckpfosten:
 
 * Schiebe vier 6mm Schrauben in einen 40mm MakerBeam hinein.
@@ -456,8 +456,8 @@ Kamera-Halterung an:
 Zahnriemen
 ----------
 
-Im letzten Schritt der Konstruktion werden der Schrittmotor und der Zahnriemen
-verbaut.
+Im letzten Schritt des Zusammenbaus werden der Schrittmotor und der Zahnriemen
+angebracht.
 
 Zahnriemenräder
 ^^^^^^^^^^^^^^^

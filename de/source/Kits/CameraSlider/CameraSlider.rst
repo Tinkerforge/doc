@@ -156,6 +156,12 @@ beschrieben.
 
 FIXME: image of 3m frame
 
+.. image:: /Images/Kits/kit_camera_slider_longer_frame_complete1_600.jpg
+   :scale: 100 %
+   :alt: Kameraschlitten Kit mit 3m langem Rahmen
+   :align: center
+   :target: Construction_LongerFrame.html
+
 Statt eines externen PCs kann der Kameraschlitten auch über ein RED Brick mit
 HDMI Touchscreen bedient werden. Wie der RED Brick und der Touchscreen am Rahmen
 befestigt werden können ist :ref:`hier
@@ -168,7 +174,7 @@ befestigt werden können ist :ref:`hier
 
 .. image:: /Images/Kits/kit_camera_slider_red_brick_step8_600.jpg
    :scale: 100 %
-   :alt: Camera Slider kit with RED Brick and display
+   :alt: Kameraschlitten Kit mit RED Brick und Touchscreen
    :align: center
    :target: Construction_REDBrick.html
 
