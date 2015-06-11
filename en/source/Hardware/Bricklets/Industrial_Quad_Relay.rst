@@ -107,6 +107,7 @@ Weight                            8g
 Resources
 ---------
 
+* CPC1020N datasheet (`Download <https://github.com/Tinkerforge/industrial-quad-relay-bricklet/raw/master/datasheets/CPC1020N.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-quad-relay-bricklet/raw/master/hardware/industrial-quad-relay-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_quad_relay_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-quad-relay-bricklet/zipball/master>`__)
