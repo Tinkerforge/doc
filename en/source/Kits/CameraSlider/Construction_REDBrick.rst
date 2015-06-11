@@ -7,8 +7,8 @@ Construction - Adding RED Brick and Touchscreen
 ===============================================
 
 Instead of using an external PC to control the camera slider you can also
-use a RED Brick with an HDMI touchscreen. The RED Brick add-on for the
-camera slider contains the following parts:
+use a :ref:`RED Brick <red_brick>` with an HDMI touchscreen. The RED Brick
+add-on for the camera slider contains the following parts:
 
 * 1x `MakerBeam 150mm, 6pcs, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-150mm-6pcs-black.html>`__
 * 1x `MakerBeam 60mm, 8pcs, black <https://www.tinkerforge.com/en/shop/makerbeam/beams/makerbeam-60mm-8pcs-black.html>`__
@@ -22,13 +22,13 @@ camera slider contains the following parts:
   `Mounting Kit 12mm <https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html>`__)
 * 1x `HDMI Display 5" (800x480 with Touchscreen) <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
 
-The add-on does not include 6mm and 12mm bolts. You should have more than
+The add-on does **not** include 6mm and 12mm bolts. You should have more than
 enough bolts leftover from the basic kit.
 
 .. note::
 
-  Currently the add-on does not include a Micro USB cable to power the display
-  and connect it to the RED Brick. For now you have to provide your own.
+  Currently the add-on does **not** include a Micro USB cable to power the
+  display and connect it to the RED Brick. For now you have to provide your own.
 
 Uprights
 --------
@@ -37,7 +37,7 @@ To connect the touchscreen uprights to the frame four 6mm bolts have to be
 added to the frame:
 
 * Loosen the bottom lock nuts that fasten the stack-side pair of legs to the
-  long MakerBeams.
+  long MakerBeams of the frame.
 * Partly disconnect the pair of legs from the rest of the frame.
 * Insert two 6mm bolts into each side of the long MakerBeams.
 * Reconnect the stack-side pair of legs to the rest of the frame.
@@ -51,7 +51,8 @@ added to the frame:
 The touchscreen will be held at a 45° angle:
 
 * Insert two 6mm bolts into a 60mm MakerBeam.
-* Fasten a MakerBeam 45° Bracket to the MakerBeam with two lock nuts.
+* Fasten a MakerBeam 45° Bracket to the MakerBeam with two lock nuts. Ensure
+  to fasten the 45° part of the bracket to the MakerBeam, not the 90° part.
 
 Repeat these steps for a second MakerBeam.
 
@@ -134,7 +135,7 @@ Connect the completed holder to the uprights:
 Fit the holder to the touchscreen:
 
 * Realign the four 12mm bolts and the distance between the two 150mm MakerBeams
-  to fit the four holes in the touchscreen.
+  to fit the bolts into the four holes of the touchscreen.
 * Secure the touchscreen on the four 12mm bolts with four lock nuts. Don't
   fully tighten the lock nuts to avoid putting to much mechanical stress on
   the touchscreen.
@@ -144,7 +145,8 @@ Finally, add the RED Brick:
 * Disconnect the Stepper Brick from the frame.
 * Put the Stepper Brick on top of the RED Brick.
 * Reconnect the stack to the frame.
-* Connect the RED Brick and the touchscreen with the HDMI and the USB cable.
+* Connect the RED Brick and the touchscreen with the Micro HDMI cable and a
+  Micro USB cable.
 
 Done!
 -----
