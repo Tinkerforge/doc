@@ -185,16 +185,16 @@ The demo application shows two possible uses cases for this kit:
 * Linear motion
 * Moving time-lapse photography
 
-Before starting you have to configure the host and port. If you use the
-standard kit and have connected it directly to your PC via USB "localhost" and
-"4223" is fine. If you extended the kit by
-:ref:`Extensions <primer_master_extensions>` or want to control the kit from
-another PC you have to enter the IP address or hostname of the Extension or
-the PC where the kit is connected to.
+Before starting you have to configure the host and port. If the Stepper Brick
+is connected to your PC over USB then "localhost" and "4223" is fine. If you
+extended the kit with an :ref:`Master Extension <primer_master_extensions>` or
+if you connected the kit to another PC then you have to enter the IP address or
+hostname of the Extension or the other PC where the kit is connected to. Now
+click the "Connect" button to establish the connection.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_connection_350.jpg
    :scale: 100 %
-   :alt: Camera Slider Demo Application Screenshot: Connection
+   :alt: Camera Slider Demo Application Screenshot: Connection Tab
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_demo_connection.jpg
 
@@ -214,12 +214,12 @@ and maximum position:
 * Click the "Apply" button to finish the calibration process.
 
 Now the demo knows and remembers the current position and the motion range of
-the cart. If the cart is moved manually, e.g. during transport, then the
-calibration process has to be repeated.
+the cart. If the cart is moved manually after calibration, e.g. during
+transport, then the calibration process has to be repeated.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_calibration_350.jpg
    :scale: 100 %
-   :alt: Camera Slider Demo Application Screenshot: Calibration
+   :alt: Camera Slider Demo Application Screenshot: Calibration Tab
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_demo_calibration.jpg
 
@@ -247,7 +247,8 @@ slider to set a new target position or enter its step number. Once the target
 position changed the cart start moving towards it.
 
 The "Forward" and "Backward" buttons work just as the ones on the "Calibration"
-tab.
+tab. But this time the cart moves with the configured velocity, acceleration
+and deceleration.
 
 The target position can only be changed while the cart is standing still. The
 cart can be stopped with the configured deceleration by clicking the "Stop"
@@ -255,7 +256,7 @@ button and with maximum deceleration by clicking the "Full Break" button.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_linear_motion_350.jpg
    :scale: 100 %
-   :alt: Camera Slider Demo Application Screenshot: Linear Motion
+   :alt: Camera Slider Demo Application Screenshot: Linear Motion Tab
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_demo_linear_motion.jpg
 
@@ -263,24 +264,24 @@ Time Lapse Tab
 ^^^^^^^^^^^^^^
 
 On this tap you can configure a moving time-lapse photography setup. The demo
-supports capturing images in equidistant time and distance intervals.
+supports capturing images in constant time and distance intervals.
 
 Because there are many different ways to trigger a camera the demo doesn't
 settle for any particular way but allows you to enter a shell command to
-trigger your camera. By default the demo uses the `gphoto2
-<http://www.gphoto.org/>`__ tool that covers a wide range of cameras::
+trigger your camera. By default the demo uses `gphoto2
+<http://www.gphoto.org/>`__ that covers a wide range of cameras::
 
   gphoto2 --capture-image
 
-The Windows and Mac OS X installers include the gphoto2 tool and the Debian
-package for Linux depends on the gphoto2 Debian package.
+The Windows and Mac OS X installers for the demo include the gphoto2 and the
+Debian package for Linux depends on the gphoto2 Debian package.
 
-You can test you individual camera trigger command by clicking the "Test"
+You can test your individual camera trigger command by clicking the "Test"
 button. The command is executed and the result is shown on the "Log" tab.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_time_lapse_350.jpg
    :scale: 100 %
-   :alt: Camera Slider Demo Application Screenshot: Time Lapse
+   :alt: Camera Slider Demo Application Screenshot: Time Lapse Tab
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_demo_time_lapse.jpg
 
@@ -306,17 +307,19 @@ The motion velocity, acceleration and deceleration can be configured on the
 Industrial Quad Relay Bricklet as Trigger
 """""""""""""""""""""""""""""""""""""""""
 
-Many cameras support external triggers that work basically by shorting out two
-wires. An `Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`__
-can to that to trigger the camera instead of gphoto2.
+Many cameras support external triggers that are basically simple switches.
+An :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` can
+act as such as switch to trigger the camera instead of gphoto2.
 
 The Canon EOS camera series uses a 2.5mm 3-pole stereo jack as connector for
 the external focus and shutter trigger. You can find the exact pinout for this
 and several other cameras `here <http://www.doc-diy.net/photo/remote_pinout/>`__.
+With the appropriate cable and an Industrial Quad Relay Bricklet we built our
+own external trigger cable:
 
 .. image:: /Images/Kits/kit_camera_slider_iqr_350.jpg
    :scale: 100 %
-   :alt: Canon EOS external trigger cable
+   :alt: External DIY Canon EOS trigger cable
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_iqr_1500.jpg
 
@@ -356,7 +359,6 @@ once and waits 1000 milliseconds afterwards::
 
 The program can then perform the specific trigger sequence for your time lapse
 setup.
-
 
 .. _starter_kit_camera_slider_demo_red_brick_import:
 

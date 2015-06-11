@@ -86,7 +86,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Bewegungsbereich                  70cm (erweiterbar auf bis zu 275cm)
+Bewegungsspielraum                70cm (erweiterbar auf bis zu 275cm)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           94 x 15 x 4cm (37 x 5.9 x 5.5")
@@ -184,17 +184,179 @@ befestigt werden können ist :ref:`hier
 Demo Anwendung
 --------------
 
+Die Demo Anwendung demonstriert zwei Verwendungsmöglichkeiten für das Kit:
+
+* Linearbewegung
+* Bewegte Zeitrafferaufnahmen
+
+Als Erstes müssen Host und Port eingestellt werden. Wenn der Stepper Brick
+per USB am PC angeschlossen ist, dann ist "localhost" und "4223" schon richtig.
+Wenn das Kit um eine :ref:`Master Extension <primer_master_extensions>`
+erweitert wurde oder an einem anderen PC angeschlossen ist, dann muss als Host
+die IP Adresse oder der Hostname der Extension oder des anderen PCs, an dem
+das Kit angeschlossen ist, angegeben werden. Jetzt auf den "Connect" Knopf
+klicken und die Verbindung herzustellen.
+
+.. image:: /Images/Kits/kit_camera_slider_demo_connection_350.jpg
+   :scale: 100 %
+   :alt: Kameraschlitten Demo Anwendungs Screenshot: Connection Tab
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_demo_connection.jpg
+
 Calibration Tab
 ^^^^^^^^^^^^^^^
 
+Zu Beginn kennt die Demo weder die aktuelle Position des Wagens noch dessen
+Bewegungsspielraum. Bevor die Demo den Wagen bewegen kann muss dessen minimale
+und maximale Position kalibriert werden:
+
+* Wählen den Stepper Brick aus, der am Kameraschlitten angebracht ist.
+* Klicke auf den "Start" Knopf um die Kalibrierung zu beginnen.
+* Nutze die "Forward" und "Backward" Knöpfe um den Wagen zu einem Ende des
+  Rahmens zu fahren. Dann klicke auf den "Set Minimum" Knopf.
+* Nutze die "Forward" und "Backward" Knöpfe um den Wagen zum anderen Ende des
+  Rahmens zu fahren. Dann klicke auf den "Set Maximum" Knopf.
+* Klicke auf den "Apply" Knopf um die Kalibrierung anzuschließen.
+
+Jetzt kennt und speichert sich die Demo die aktuelle Position und den
+Bewegungsspielraum des Wagens. Falls der Wagen nach der Kalibrierung von Hand
+bewegt wird, z.B. beim Transport, dann muss die Kalibrierung wiederholt werden.
+
+.. image:: /Images/Kits/kit_camera_slider_demo_calibration_350.jpg
+   :scale: 100 %
+   :alt: Kameraschlitten Demo Anwendungs Screenshot: Calibration Tab
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_demo_calibration.jpg
+
+Automatic Power Control
+"""""""""""""""""""""""
+
+Wenn "Automatic Power Control" aktiviert ist, dann aktiviert die Demo
+automatisch die Stromversorgung des Schrittmotors nur dann wenn der Wagen sich
+zu einer neuen Position bewegen soll. Die Stromversorgung wird automatisch
+wieder deaktiviert sobald der Wagen die neue Position erreicht hat. Dadurch
+werden der Stromverbrauch und die Motorgeräusche reduziert wenn der Wagen sich
+nicht bewegt.
+
+Daraus ergibt sich, dass der Wagen nicht aktiv durch den Schrittmotor in der
+aktuelle Position gehalten wird, wenn sich der Wagen gerade nicht bewegt.
+Dies ist kein Problem solange der Kameraschlitten in einem waagerechten Aufbau
+verwendet wird. Aber in einem geneigten oder senkrechten Aufbau wird der Wagen
+von der Schwerkraft bewegt werden. In diesem Fall kann "Automatic Power
+Control" abgeschaltet werden, um den Schrittmotor durchgehend mit Strom zu
+versorgen, um den Wagen durchgehend in seiner Position zu halten.
 
 Linear Motion Tab
 ^^^^^^^^^^^^^^^^^
 
+Auf diesem Tab können dem Wagen neue Zielpositionen vorgegeben werden, die dann
+mit der eingestellten Geschwindigkeit und (De-)Beschleunigung angefahren
+werden. Neue Zielpositionen können mit dem "Target Position" Regler oder mit
+dem Eingabefeld rechts daneben vorgegeben werden. Sobald sich die Zielposition
+ändert fährt der Wagen auf die neue Position zu.
+
+Die "Forward" und "Backward" Knöpfe funktionieren genauso wie auf dem
+"Calibration" Tab. Allerdings fährt der Wagen jetzt mit der eingestellten
+Geschwindigkeit und (De-)Beschleunigung.
+
+Die Zielposition kann nur geändert werden, wenn der Wagen stillsteht. Der
+Wagen kann durch einen Klick auf den "Stop" Knopf mit der eingestellten
+Debeschleunigung angehalten werden, oder durch einen Klick auf den "Full Break"
+Knopf mit der maximalen Debeschleunigung.
+
+.. image:: /Images/Kits/kit_camera_slider_demo_linear_motion_350.jpg
+   :scale: 100 %
+   :alt: Kameraschlitten Demo Anwendungs Screenshot: Linear Motion Tab
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_demo_linear_motion.jpg
 
 Time Lapse Tab
 ^^^^^^^^^^^^^^
 
+Auf diesem Tab können bewegte Zeitrafferaufnahmen konfiguriert werden. Die
+Demo unterstützt es Bilder in festen Zeit- und Abstandsintervallen aufzunehmen.
+
+Da es viele verschiedene Arten und Weisen gibt eine Kamera auszulösen, ist in
+der Demo keine bestimmte Art und Weise vorgegeben. Stattdessen kann ein
+Kommandozeilen-Befehl angegeben werden, der dann für das Auslösen der Kamera
+sorgt. Standardmäßig verwendet die Demo `gphoto2 <http://www.gphoto.org/>`__,
+das ein breites Spektrum an Kameras unterstützt::
+
+  gphoto2 --capture-image
+
+Die Windows und Mac OS X Installer der Demo bringen gphoto2 direkt mit und das
+Debian Package für Linux hängt vom Debian gphoto2 Package ab.
+
+Der eingegebene Kommandozeilen-Befehl kann durch einen Klick auf den "Test"
+Knopf getestet werden. Der Befehl wird ausgeführt und das Ergebnis auf dem
+"Log" Tab angezeigt.
+
+.. image:: /Images/Kits/kit_camera_slider_demo_time_lapse_350.jpg
+   :scale: 100 %
+   :alt: Kameraschlitten Demo Anwendungs Screenshot: Time Lapse Tab
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_demo_time_lapse.jpg
+
+Timing and Bewegung
+"""""""""""""""""""
+
+Nach einem Klick auf den "Start" Knopf bewegt sich der Wagen zur "Start
+Position" und wartet durch dort für "Initial Delay" Sekunden bevor der
+Auslösebefehl das erste Mal ausgeführt wird. Danach bewegt sich der Wagen zur
+nächsten Position und wartet dort für "Interval" Sekunden bevor der
+Auslösebefehl erneut ausgeführt wird. Dieser Ablauf wiederholt sich bis der
+Auslösebefehl "Image Count" ausgeführt wurde und die "End Position" erreicht
+ist, oder auf den "Abort" Knopf geklickt wurde.
+
+Bei der Abarbeitung der initialen Verzögerung und des Intervalls wird die Zeit
+berücksichtigt, die die Ausführung des Auslösebefehls und die Bewegung des
+Wagens zur nächsten Position benötigt. Dadurch kann ein möglichst genaues
+Timing erreicht werden, so lange die Zeit für die Ausführung des Auslösebefehls
+und die Bewegung des Wagens zur nächsten Position nicht länger dauert als das
+eingestellte Intervall.
+
+Die Geschwindigkeit und (De-)Beschleunigung des Wagens kann auf dem "Linear
+Motion" Tab eingestellt werden.
+
+Industrial Quad Relay Bricklet als Auslöser
+"""""""""""""""""""""""""""""""""""""""""""
+
+Viele Kameras unterstützen Kabelauslöser die im wesentlichen einfache Schalter
+sind. Ein :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
+kann als Schalter für einen Kabelauslöser verwendet werden, anstatt gphoto2 als
+Auslöser zu verwenden.
+
+Die Canon EOS Kameraserie verwendet einen 3-poligen 2,5mm Stereo-Klinkenbuchse
+als Anschluss für einen Kabelauslöser mit Fokusier- und Auslösefunktion. Eine
+detaillierte Übersicht über die genau Anschlussbelegung der Canon EOS Kameras
+und anderer Kameraserien gibt es `hier
+<http://www.doc-diy.net/photo/remote_pinout/>`__. Mit einem passendem Kabel und
+einem Industrial Quad Relay Bricklet haben wir uns unseren eigenen Kabelauslöser
+gebaut:
+
+.. image:: /Images/Kits/kit_camera_slider_iqr_350.jpg
+   :scale: 100 %
+   :alt: Selbstgebauter Canon EOS Kabelauslöser
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_iqr_1500.jpg
+
+Ein Auslöse-Skript für das Industrial Quad Relay Bricklet kann
+`hier <https://github.com/Tinkerforge/camera-slider/blob/master/demo/starter_kit_camera_slider_demo/trigger_iqr.py>`__
+heruntergeladen werden. Um es nutzen zu können müssen Python und die
+:ref:`Python API Bindings <api_bindings_python>` installiert sein. Seine
+Kommandzeilen-Syntax is wie folgt::
+
+  python trigger_iqr.py <host> <port> <iqr-uid> <relay> <trigger-duration> <wait-duration>
+
+Hier ein Beispiel für ein Industrial Quad Relay Bricklet mit UID ``n5d``
+erreichbar unter localhost an Port 4223::
+
+  python trigger_iqr.py localhost 4223 n5d 0 50 1000
+
+Der Auslöse- und Masse-Pin des Kabelauslöser sind an Relais 0 angeschlossen.
+Das Relais verbindet für 50 Millisekunden die beiden Pins. Danach wartet das
+Skript für 1000 Millisekunden, um der Kamera Zeit zu geben, das aufgenommene
+Bild zu verarbeiten und zu speichern.
 
 .. _starter_kit_camera_slider_demo_red_brick_import:
 
