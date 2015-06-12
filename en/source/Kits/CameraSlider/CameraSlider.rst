@@ -150,8 +150,6 @@ for this is described :ref:`here <starter_kit_camera_slider_construction_longer_
 
    With Longer Frame <Construction_LongerFrame>
 
-FIXME: image of 3m frame
-
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_complete1_600.jpg
    :scale: 100 %
    :alt: Camera Slider kit with 3m long frame
