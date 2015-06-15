@@ -48,6 +48,7 @@ Starter Kit: Camera Slider
 Features
 --------
 
+* Programmable dolly and time-lapse shots
 * Easy to modify
 * Build your own brackets with MakerBeams
 * Extend functionality of kit with Bricks and Bricklets
