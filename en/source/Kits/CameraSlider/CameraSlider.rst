@@ -326,12 +326,13 @@ A trigger script for the Industrial Quad Relay Bricklet can be downloaded
 To use it you need to have Python and the :ref:`Python API bindings
 <api_bindings_python>` installed. Its command line syntax is as follows::
 
-  python trigger_iqr.py <host> <port> <iqr-uid> <relay> <trigger-duration> <wait-duration>
+  python <path>/trigger_iqr.py <host> <port> <iqr-uid> <relay> <trigger-duration> <wait-duration>
 
 Here is an example for an Industrial Quad Relay Bricklet with UID ``n5d``
-reachable on localhost at port 4223::
+reachable on localhost at port 4223. The trigger script was downloaded to
+Karl's Windows desktop before::
 
-  python trigger_iqr.py localhost 4223 n5d 0 50 1000
+  python C:/Users/Karl/Desktop/trigger_iqr.py localhost 4223 n5d 0 50 1000
 
 The shutter and ground pins of the external trigger cable are connected to
 relay 0. The relay will short out for 50 milliseconds. Afterwards the script
@@ -342,18 +343,19 @@ RED Brick Program as Trigger
 """"""""""""""""""""""""""""
 
 If your time lapse setup includes a :ref:`RED Brick <red_brick>` then another
-RED Brick program can be used for the camera trigger logic. A trigger script
-for this can be downloaded
+:ref:`RED Brick program <red_brick_program_tab>` can be used for the camera
+trigger logic. A trigger script for this can be downloaded
 `here <https://github.com/Tinkerforge/camera-slider/blob/master/demo/starter_kit_camera_slider_demo/trigger_red.py>`__.
 Its command line syntax is as follows::
 
-  python trigger_red.py <host> <port> <red-uid> <program-identifier> <wait-duration>
+  python <path>/trigger_red.py <host> <port> <red-uid> <program-identifier> <wait-duration>
 
-Here is an example for a RED Brick with UID ``3JpHZL``
-reachable on localhost at port 4223 that starts the program ``trigger-example``
-once and waits 1000 milliseconds afterwards::
+Here is an example for a RED Brick with UID ``3JpHZL`` reachable on localhost
+at port 4223 that starts the program ``trigger-example`` once and waits 1000
+milliseconds afterwards. The demo for the RED Brick already includes the
+trigger script, so the path to the script can be omitted::
 
-  python trigger_iqr.py localhost 4223 3JpHZL trigger-example 1000
+  python trigger_red.py localhost 4223 3JpHZL trigger-example 1000
 
 The program can then perform the specific trigger sequence for your time lapse
 setup.

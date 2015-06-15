@@ -100,7 +100,7 @@ Ressourcen
 ----------
 
 * Kameraschlitten-Halterungen als FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/camera-slider/tree/master/brackets>`__)
-* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Source Code <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
+* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Quelltext <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
 
 
 Firmware aktualisieren und erste Tests
@@ -123,7 +123,7 @@ Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
    :align: center
 
 Im nächsten Schritt sollte der Stepper Brick mit Schrittmotor und 24V Netzteil
-wie :ref:`hier <stepper_brick_test>` beschriebengetestet werden. Anschließend
+wie :ref:`hier <stepper_brick_test>` beschrieben getestet werden. Anschließend
 kann damit begonnen werden das Kit zusammenzubauen.
 
 Konstruktion
@@ -193,7 +193,7 @@ Wenn das Kit um eine :ref:`Master Extension <primer_master_extensions>`
 erweitert wurde oder an einem anderen PC angeschlossen ist, dann muss als Host
 die IP Adresse oder der Hostname der Extension oder des anderen PCs, an dem
 das Kit angeschlossen ist, angegeben werden. Jetzt auf den "Connect" Knopf
-klicken und die Verbindung herzustellen.
+klicken, um die Verbindung herzustellen.
 
 .. image:: /Images/Kits/kit_camera_slider_demo_connection_350.jpg
    :scale: 100 %
@@ -209,12 +209,12 @@ Bewegungsspielraum. Bevor die Demo den Wagen bewegen kann muss dessen minimale
 und maximale Position kalibriert werden:
 
 * Wählen den Stepper Brick aus, der am Kameraschlitten angebracht ist.
-* Klicke auf den "Start" Knopf um die Kalibrierung zu beginnen.
-* Nutze die "Forward" und "Backward" Knöpfe um den Wagen zu einem Ende des
+* Klicke auf den "Start" Knopf, um die Kalibrierung zu beginnen.
+* Nutze die "Forward" und "Backward" Knöpfe, um den Wagen zu einem Ende des
   Rahmens zu fahren. Dann klicke auf den "Set Minimum" Knopf.
-* Nutze die "Forward" und "Backward" Knöpfe um den Wagen zum anderen Ende des
+* Nutze die "Forward" und "Backward" Knöpfe, um den Wagen zum anderen Ende des
   Rahmens zu fahren. Dann klicke auf den "Set Maximum" Knopf.
-* Klicke auf den "Apply" Knopf um die Kalibrierung anzuschließen.
+* Klicke auf den "Apply" Knopf, um die Kalibrierung anzuschließen.
 
 Jetzt kennt und speichert sich die Demo die aktuelle Position und den
 Bewegungsspielraum des Wagens. Falls der Wagen nach der Kalibrierung von Hand
@@ -230,19 +230,19 @@ Automatic Power Control
 """""""""""""""""""""""
 
 Wenn "Automatic Power Control" aktiviert ist, dann aktiviert die Demo
-automatisch die Stromversorgung des Schrittmotors nur dann wenn der Wagen sich
+automatisch die Stromversorgung des Schrittmotors nur dann, wenn der Wagen sich
 zu einer neuen Position bewegen soll. Die Stromversorgung wird automatisch
 wieder deaktiviert sobald der Wagen die neue Position erreicht hat. Dadurch
-werden der Stromverbrauch und die Motorgeräusche reduziert wenn der Wagen sich
+werden der Stromverbrauch und die Motorgeräusche reduziert, wenn der Wagen sich
 nicht bewegt.
 
 Daraus ergibt sich, dass der Wagen nicht aktiv durch den Schrittmotor in der
 aktuelle Position gehalten wird, wenn sich der Wagen gerade nicht bewegt.
 Dies ist kein Problem solange der Kameraschlitten in einem waagerechten Aufbau
-verwendet wird. Aber in einem geneigten oder senkrechten Aufbau wird der Wagen
+verwendet wird. Aber in einem geneigtem oder senkrechtem Aufbau wird der Wagen
 von der Schwerkraft bewegt werden. In diesem Fall kann "Automatic Power
 Control" abgeschaltet werden, um den Schrittmotor durchgehend mit Strom zu
-versorgen, um den Wagen durchgehend in seiner Position zu halten.
+versorgen und den Wagen durchgehend in seiner Position zu halten.
 
 Linear Motion Tab
 ^^^^^^^^^^^^^^^^^
@@ -251,10 +251,10 @@ Auf diesem Tab können dem Wagen neue Zielpositionen vorgegeben werden, die dann
 mit der eingestellten Geschwindigkeit und (De-)Beschleunigung angefahren
 werden. Neue Zielpositionen können mit dem "Target Position" Regler oder mit
 dem Eingabefeld rechts daneben vorgegeben werden. Sobald sich die Zielposition
-ändert fährt der Wagen auf die neue Position zu.
+ändert bewegt sich der Wagen auf die neue Position zu.
 
 Die "Forward" und "Backward" Knöpfe funktionieren genauso wie auf dem
-"Calibration" Tab. Allerdings fährt der Wagen jetzt mit der eingestellten
+"Calibration" Tab. Allerdings bewegt sich der Wagen jetzt mit der eingestellten
 Geschwindigkeit und (De-)Beschleunigung.
 
 Die Zielposition kann nur geändert werden, wenn der Wagen stillsteht. Der
@@ -299,7 +299,7 @@ Timing and Bewegung
 """""""""""""""""""
 
 Nach einem Klick auf den "Start" Knopf bewegt sich der Wagen zur "Start
-Position" und wartet durch dort für "Initial Delay" Sekunden bevor der
+Position" und wartet dort für "Initial Delay" Sekunden bevor der
 Auslösebefehl das erste Mal ausgeführt wird. Danach bewegt sich der Wagen zur
 nächsten Position und wartet dort für "Interval" Sekunden bevor der
 Auslösebefehl erneut ausgeführt wird. Dieser Ablauf wiederholt sich bis der
@@ -324,7 +324,7 @@ sind. Ein :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
 kann als Schalter für einen Kabelauslöser verwendet werden, anstatt gphoto2 als
 Auslöser zu verwenden.
 
-Die Canon EOS Kameraserie verwendet einen 3-poligen 2,5mm Stereo-Klinkenbuchse
+Die Canon EOS Kameraserie verwendet eine 3-polige 2,5mm Stereo-Klinkenbuchse
 als Anschluss für einen Kabelauslöser mit Fokusier- und Auslösefunktion. Eine
 detaillierte Übersicht über die genau Anschlussbelegung der Canon EOS Kameras
 und anderer Kameraserien gibt es `hier
@@ -338,25 +338,55 @@ gebaut:
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_iqr_1500.jpg
 
-Ein Auslöse-Skript für das Industrial Quad Relay Bricklet kann
+Ein Auslöse-Skript für ein Industrial Quad Relay Bricklet kann
 `hier <https://github.com/Tinkerforge/camera-slider/blob/master/demo/starter_kit_camera_slider_demo/trigger_iqr.py>`__
 heruntergeladen werden. Um es nutzen zu können müssen Python und die
 :ref:`Python API Bindings <api_bindings_python>` installiert sein. Seine
-Kommandzeilen-Syntax is wie folgt::
+Kommandzeilen-Syntax ist wie folgt::
 
-  python trigger_iqr.py <host> <port> <iqr-uid> <relay> <trigger-duration> <wait-duration>
+  python <path>/trigger_iqr.py <host> <port> <iqr-uid> <relay> <trigger-duration> <wait-duration>
 
 Hier ein Beispiel für ein Industrial Quad Relay Bricklet mit UID ``n5d``
-erreichbar unter localhost an Port 4223::
+erreichbar unter localhost an Port 4223. Das Auslöse-Skript wurde zuvor auf
+Karls Windows Desktop heruntergeladen::
 
-  python trigger_iqr.py localhost 4223 n5d 0 50 1000
+  python C:/Users/Karl/Desktop/trigger_iqr.py localhost 4223 n5d 0 50 1000
 
 Der Auslöse- und Masse-Pin des Kabelauslöser sind an Relais 0 angeschlossen.
 Das Relais verbindet für 50 Millisekunden die beiden Pins. Danach wartet das
 Skript für 1000 Millisekunden, um der Kamera Zeit zu geben, das aufgenommene
 Bild zu verarbeiten und zu speichern.
 
+RED Brick Program als Auslöser
+""""""""""""""""""""""""""""""
+
+Wenn der Zeitrafferaufbau einen :ref:`RED Brick <red_brick>` beinhaltet, dann
+kann auch ein anderes :ref:`RED Brick Programm <red_brick_program_tab>` für
+die Auslöselogik sorgen. Ein Auslöse-Skript dafür kann hier
+`hier <https://github.com/Tinkerforge/camera-slider/blob/master/demo/starter_kit_camera_slider_demo/trigger_red.py>`__
+heruntergeladen werden. Seine Kommandzeilen-Syntax ist wie folgt::
+
+  python <path>/trigger_red.py <host> <port> <red-uid> <program-identifier> <wait-duration>
+
+Hier ein Beispiel für ein RED Brick mit UID ``3JpHZL`` erreichbar unter
+localhost an Port 4223, dass das Programm ``trigger-example`` einmal startet
+und danach 1000 Millisekunden wartet. Die Demo für das RED Brick beinhaltet
+das Auslöse-Skript schon, so das der Pfad zu Skript entfallen kann::
+
+  python trigger_red.py localhost 4223 3JpHZL trigger-example 1000
+
+Das Programm kann dann die spezielle Auslösesequenz für den Zeitrafferaufbau
+ausführen.
+
 .. _starter_kit_camera_slider_demo_red_brick_import:
 
 Auf RED Brick importieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Die Demo Anwendung kann zur autarken Verwendung auch auf ein :ref:`RED Brick
+<red_brick>` hochgeladen werden. Lade dazu die aktuelle Version als `Archiv für
+das  RED Brick
+<http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__
+herunter und importiere es mittels des :ref:`RED Brick Import/Export
+<red_brick_brickv_import_export_tab>` Tab des Brick Viewers. Die Demo wird
+dann automatisch im Vollbild starten.
