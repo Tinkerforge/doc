@@ -154,8 +154,6 @@ beschrieben.
 
    Mit verlängertem Rahmen <Construction_LongerFrame>
 
-FIXME: image of 3m frame
-
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_complete1_600.jpg
    :scale: 100 %
    :alt: Kameraschlitten Kit mit 3m langem Rahmen

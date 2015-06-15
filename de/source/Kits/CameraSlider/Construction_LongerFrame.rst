@@ -175,8 +175,6 @@ Fertig!
 
 Der Rahmen des Kammeraschlittens ist jetzt 3m lang.
 
-FIXME: image of 3m long frame
-
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_complete1_600.jpg
    :scale: 100 %
    :alt: Fertiger 3m langer Rahmen
