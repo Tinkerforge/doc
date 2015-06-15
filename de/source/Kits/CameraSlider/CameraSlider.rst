@@ -50,7 +50,7 @@ Starterkit: Kameraschlitten
 Features
 --------
 
-* Automatische Kamerafahrten und Zeitrafferaufnahmen
+* Programmierbare Kamerafahrten und Zeitrafferaufnahmen
 * Jederzeit einfach modifizierbar
 * Mit MakerBeams eigene Halterungen bauen
 * Weitere Funktionen mittels anderer Bricks und Bricklets
