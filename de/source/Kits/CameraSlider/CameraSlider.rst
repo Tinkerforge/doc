@@ -296,6 +296,37 @@ Knopf getestet werden. Der Befehl wird ausgeführt und das Ergebnis auf dem
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_demo_time_lapse.jpg
 
+gphoto2 Support
+"""""""""""""""
+
+Üblicherweise funktioniert gphoto2 direkt unter Linux, benötigt aber etwas
+Vorbereitung unter Windows und Mac OS X.
+
+Unter **Windows** hat der "Time Lapse" Tab oben einen weiteren Knopf namens
+"Start Zadig". `Zadig <http://zadig.akeo.ie/>`__ kann einen USB Treiber für
+eine angeschlossenen Kamera installieren, so dass gphoto2 mit der Kamera
+kommunizieren kann:
+
+* Schließe die Kamera an USB an.
+* Klicke auf den "Start Zadig" Knopf.
+* Wähle in Zadig die angeschlossenen Kamera aus. Möglicherweise wird diese als
+  "Digital Still Camera" aufgeführt.
+* Klicke auf den "Replace Driver" Knopf in Zadig.
+* Schließe Zadig sobald der Treiber ersetzt wurde.
+
+Jetzt sollte gphoto2 mit der Kamera kommunizieren können. Um den installierten
+Treiber wieder zu entfernen muss im Windows Geräte-Manager die Kamera
+ausgewählt und auf den "Deinstallieren" Knopf geklickt werden. Danach die
+Kamera von USB abstecken und wieder anstecken. Windows sollte jetzt wieder den
+vorherigen Treiber verwenden.
+
+Auf **Mac OS X** hat der "Time Lapse" Tab oben zwei weitere Knöpfe namens
+"Enable" und "Disable". Diese deaktivieren und aktivieren Mac OS Xs eigene
+Behandlung für USB Kameras, die mit gphoto2 kollidiert. Klicke auf den "Enable",
+um gphoto2 zu benutzen. Klicke auf den "Disable" Knopf, wenn gphoto2 nicht mehr
+gebraucht wird und Mac OS Xs eigene Behandlung für USB Kameras wieder aktiviert
+werden soll.
+
 Timing and Bewegung
 """""""""""""""""""
 
