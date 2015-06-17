@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / Starter Kit: Camera Slider
-:FIXME_shoplink: ../../../shop/kits/starter-kit-camera-slider.html
+:shoplink: ../../../shop/kits/starter-kit-camera-slider.html
 
 .. _starter_kit_camera_slider:
 
@@ -41,9 +41,6 @@ Starter Kit: Camera Slider
 	             "Camera Slider: With LCD")
 	}}
 	{{ tfdocend() }}
-
-.. note::
- This kit is currently work-in-progress!
 
 Features
 --------

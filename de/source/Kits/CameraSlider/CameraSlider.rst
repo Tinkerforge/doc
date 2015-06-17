@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / Starterkit: Kameraschlitten
-:FIXME_shoplink: ../../../shop/kits/starter-kit-camera-slider.html
+:shoplink: ../../../shop/kits/starter-kit-camera-slider.html
 
 .. _starter_kit_camera_slider:
 
@@ -41,10 +41,6 @@ Starterkit: Kameraschlitten
 	             "Kameraschlitten: Mit LCD")
 	}}
 	{{ tfdocend() }}
-
-
-.. note::
-  Diese Kit ist noch in Entwicklung!
 
 
 Features
