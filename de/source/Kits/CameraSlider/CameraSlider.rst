@@ -80,6 +80,12 @@ ausgelöst werden oder zusammen mit
 `HDMI Touchscreen <https://www.tinkerforge.com/de/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
 eine autarke Lösung realisiert werden.
 
+Das nachfolgende Video zeigt verschiedene Anwendungen und Erweiterungen:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/lg0sdG7tfr4" frameborder="0" allowfullscreen></iframe></center>
+
 
 Technische Spezifikation
 ------------------------

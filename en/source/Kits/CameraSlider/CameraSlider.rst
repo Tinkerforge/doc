@@ -80,6 +80,12 @@ A :ref:`RED Brick <red_brick>` together with a
 can be used to implement an autonomous solution that can be controlled
 via touchscreen.
 
+The following video shows different applications und modifications:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/lg0sdG7tfr4" frameborder="0" allowfullscreen></iframe></center>
+
 Technical Specifications
 ------------------------
 
