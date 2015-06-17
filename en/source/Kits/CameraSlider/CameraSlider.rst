@@ -400,3 +400,9 @@ for stand-alone use-cases. Download the latest version as `archive for the RED B
 and import it using the :ref:`RED Brick Import/Export
 <red_brick_brickv_import_export_tab>` tab of Brick Viewer. The demo will then
 autostart in fullscreen mode.
+
+.. image:: /Images/Kits/kit_camera_slider_w_lcd1_600.jpg
+   :scale: 100 %
+   :alt: Demo on RED Brick
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_w_lcd1_1500.jpg

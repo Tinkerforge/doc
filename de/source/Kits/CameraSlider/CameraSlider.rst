@@ -422,3 +422,9 @@ das  RED Brick
 herunter und importiere es mittels des :ref:`RED Brick Import/Export
 <red_brick_brickv_import_export_tab>` Tab des Brick Viewers. Die Demo wird
 dann automatisch im Vollbild starten.
+
+.. image:: /Images/Kits/kit_camera_slider_w_lcd1_600.jpg
+   :scale: 100 %
+   :alt: Demo auf RED Brick
+   :align: center
+   :target: ../../_images/Kits/kit_camera_slider_w_lcd1_1500.jpg
