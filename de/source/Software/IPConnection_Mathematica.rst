@@ -168,8 +168,8 @@ Grundfunktionen
 
  :param timeout: Integer
 
- Gibt den Timeout zurück, wie er von :mathematica:func:`SetTimeout[] <IPConnection@SetTimeout>`
- gesetzt wurde.
+ Gibt den Timeout zurück, wie er von :mathematica:func:`SetTimeout[]
+ <IPConnection@SetTimeout>` gesetzt wurde.
 
 
 .. mathematica:function:: IPConnection@Enumerate[] -> Null
@@ -250,7 +250,9 @@ Die verfügbaren Events werden im Folgenden beschrieben.
  Mögliche Enumerierungsarten sind:
 
  * IPConnection`ENUMERATIONUTYPEUAVAILABLE (0): Gerät ist verfügbar
-   (Enumerierung vom Benutzer ausgelöst).
+   (Enumerierung vom Benutzer ausgelöst: :mathematica:func:`Enumerate[]
+   <IPConnection@Enumerate>`). Diese Enumerierungsart kann mehrfach für das
+   selbe Gerät auftreten.
  * IPConnection`ENUMERATIONUTYPEUCONNECTED (1): Gerät wurde neu verbunden
    (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde).
    Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration

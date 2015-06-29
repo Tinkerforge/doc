@@ -240,7 +240,9 @@ The available events are described below.
  Possible enumeration types are:
 
  * IPConnection`ENUMERATIONUTYPEUAVAILABLE (0): Device is available
-   (enumeration triggered by user).
+   (enumeration triggered by user: :mathematica:func:`Enumerate[]
+   <IPConnection@Enumerate>`). This enumeration type can occur multiple times
+   for the same device.
  * IPConnection`ENUMERATIONUTYPEUCONNECTED (1): Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous

@@ -260,7 +260,9 @@ described below.
  Possible enumeration types are:
 
  * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Device is available
-   (enumeration triggered by user).
+   (enumeration triggered by user: :py:func:`enumerate()
+   <IPConnection.enumerate>`). This enumeration type can occur multiple times
+   for the same device.
  * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous

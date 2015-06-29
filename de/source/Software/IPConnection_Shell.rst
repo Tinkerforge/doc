@@ -63,7 +63,8 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  * ``--host <host>`` IP Adresse oder Hostname des Verbindungsziels,
    Standard: ``localhost``
  * ``--port <port>`` Port-Nummer des Verbindungsziels, Standard: 4223
- * ``--secret <secret>`` Geheimnis für die Authentifizierung (neu in Version 2.1.0)
+ * ``--secret <secret>`` Geheimnis für die Authentifizierung (neu in
+   Version 2.1.0)
  * ``--item-separator <item-separator>`` Trennzeichen für Array-Einträge,
    Standard: ``,`` (Komma)
  * ``--group-separator <group-separator>`` Trennzeichen für Ausgabegruppen,
@@ -72,12 +73,13 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  * ``--no-symbolic-output`` deaktiviert symbolische Ausgabe von Werten
 
  Alle Befehle, außer die ``--help`` oder ``--version`` Option sind angegeben,
- erstellen eine TCP/IP Verbindung zum gegebenen ``host`` und ``port``. Host und Port
- können auf einen Brick Daemon oder eine WIFI/Ethernet Extension verweisen.
+ erstellen eine TCP/IP Verbindung zum gegebenen ``host`` und ``port``. Host
+ und Port können auf einen Brick Daemon oder eine WIFI/Ethernet Extension
+ verweisen.
 
- Ist die ``--secret`` Option angegeben dann wird ein
- Authentifizierungs-Handshake mit dem verbundenen Brick Daemon
- oder WIFI/Ethernet Extension durchgeführt.
+ Seit Version 2.1.0 kann die ``--secret`` Option angegeben werden, um ein
+ Authentifizierungs-Handshake mit dem verbundenen Brick Daemon oder
+ WIFI/Ethernet Extension durchgeführt.
  Ist der Handshake erfolgreich dann wechselt die Verbindung vom
  nicht-authentifizierten in den authentifizierten Zustand und die Kommunikation
  kann normal weitergeführt werden. Schlägt der Handshake fehl wird die
@@ -186,7 +188,7 @@ Grundfunktionen
  :returns device-identifier: int (hat Symbole)
  :returns enumeration-type: int (hat Symbole)
 
- Der ``enumerate`` Befehl wird verwendet um verbundenen Bricks und Bricklets zu
+ Der ``enumerate`` Befehl wird verwendet, um verbundenen Bricks und Bricklets zu
  entdecken. Der Befehl kennt mehrere Optionen:
 
  * ``--help`` zeigt Hilfe für den ``enumerate`` Befehl an und endet dann
@@ -229,7 +231,8 @@ Grundfunktionen
  Mögliche Enumerierungsarten sind:
 
  * ``available`` = 0, das Gerät ist verfügbar (Enumerierung vom Benutzer
-   ausgelöst).
+   ausgelöst: :sh:func:`tinkerforge enumerate`). Diese Enumerierungsart kann
+   mehrfach für das selbe Gerät auftreten.
  * ``connected`` = 1, das Gerät wurde neu verbunden (Automatisch vom Brick
    gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten,
    dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu

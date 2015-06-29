@@ -215,7 +215,8 @@ beschrieben.
  Mögliche Enumerierungsarten sind:
 
  * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar (Enumerierung vom
-   Benutzer ausgelöst).
+   Benutzer ausgelöst: :delphi:func:`Disconnect <TIPConnection.Disconnect>`).
+   Diese Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
  * IPCON_ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden (automatisch
    vom Brick gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann
    bedeuten, dass das Gerät die vorher eingestellte Konfiguration verloren hat

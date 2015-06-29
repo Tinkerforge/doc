@@ -63,17 +63,20 @@ At first some information about the general command structure:
  * ``--host <host>`` IP address or hostname to connect to, default: ``localhost``
  * ``--port <port>`` port number to connect to, default: 4223
  * ``--secret <secret>`` secret for authentication (new in version 2.1.0)
- * ``--item-separator <item-separator>`` separator for array items, default: ``,`` (comma)
- * ``--group-separator <group-separator>`` separator for output groups, default: ``\n`` (newline)
+ * ``--item-separator <item-separator>`` separator for array items, default:
+   ``,`` (comma)
+ * ``--group-separator <group-separator>`` separator for output groups,
+   default: ``\n`` (newline)
  * ``--no-symbolic-input`` disables symbolic input of values
  * ``--no-symbolic-output`` disables symbolic output of values
 
  All commands, except if the ``--help`` or ``--version`` option is present,
- create a TCP/IP connection to the given ``host`` and ``port``. The host and port
- can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
+ create a TCP/IP connection to the given ``host`` and ``port``. The host and
+ port can refer to a Brick Daemon or to a WIFI/Ethernet Extension.
 
- If the ``--secret`` option is present then an authentication handshake with
- the connected Brick Daemon or WIFI/Ethernet Extension is performed.
+ Since version 2.1.0 the ``--secret`` option can be used to perform an
+ authentication handshake with the connected Brick Daemon or WIFI/Ethernet
+ Extension.
  If the handshake succeeds the connection switches from non-authenticated to
  authenticated state and communication can continue as normal. If the handshake
  fails then the connection gets closed. Authentication can fail if the wrong
@@ -212,7 +215,9 @@ Basic Functions
 
  Possible enumeration types are:
 
- * ``available`` = 0, the device is available (enumeration triggered by user).
+ * ``available`` = 0, the device is available (enumeration triggered by user:
+   :sh:func:`tinkerforge enumerate`). This enumeration type can occur multiple
+   times for the same device.
  * ``connected`` = 1, the device is newly connected (automatically send by Brick
    after establishing a communication connection). This indicates that the
    device has potentially lost its previous configuration and needs to be

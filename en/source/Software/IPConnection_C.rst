@@ -241,7 +241,8 @@ described below.
  Possible enumeration types are:
 
  * IPCON_ENUMERATION_TYPE_AVAILABLE (0): Device is available (enumeration
-   triggered by user).
+   triggered by user: :c:func:`ipcon_enumerate`). This enumeration type can
+   occur multiple times for the same device.
  * IPCON_ENUMERATION_TYPE_CONNECTED (1): Device is newly connected
    (automatically send by Brick after establishing a communication connection).
    This indicates that the device has potentially lost its previous

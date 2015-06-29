@@ -163,8 +163,8 @@ Grundfunktionen
 
 .. matlab:function:: public int IPConnection::getTimeout()
 
- Gibt den Timeout zurück, wie er von :java:func:`setTimeout() <IPConnection::setTimeout>`
- gesetzt wurde.
+ Gibt den Timeout zurück, wie er von :matlab:func:`setTimeout()
+ <IPConnection::setTimeout>` gesetzt wurde.
 
 
 .. matlab:function:: public void IPConnection::enumerate()
@@ -239,7 +239,9 @@ Strukturfeldern werden unterhalb beschrieben.
  Mögliche Enumerierungsarten sind:
 
  * IPConnection.ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar
-   (Enumerierung vom Benutzer ausgelöst).
+   (Enumerierung vom Benutzer ausgelöst: :matlab:func:`enumerate()
+   <IPConnection::enumerate>`). Diese Enumerierungsart kann mehrfach für das
+   selbe Gerät auftreten.
  * IPConnection.ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden
    (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde).
    Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration
@@ -257,8 +259,8 @@ Strukturfeldern werden unterhalb beschrieben.
 
   <device-class>.DEVICE_IDENTIFIER
 
- Zum Beispiel: :java:member:`BrickMaster.DEVICE_IDENTIFIER`
- oder :java:member:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
+ Zum Beispiel: :matlab:member:`BrickMaster.DEVICE_IDENTIFIER`
+ oder :matlab:member:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
 
  In MATLAB kann die ``set()`` Function verwendet werden um diesem Callback eine
  Callback-Function zuzuweisen.

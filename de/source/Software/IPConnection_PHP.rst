@@ -116,8 +116,8 @@ Grundfunktionen
 
 .. php:function:: int IPConnection::getTimeout()
 
- Gibt den Timeout zurück, wie er von
- :php:func:`setTimeout() <IPConnection::setTimeout>` gesetzt wurde.
+ Gibt den Timeout zurück, wie er von :php:func:`setTimeout()
+ <IPConnection::setTimeout>` gesetzt wurde.
 
 
 .. php:function:: void IPConnection::enumerate()
@@ -199,7 +199,9 @@ werden im Folgenden beschrieben.
  Mögliche Enumerierungsarten sind:
 
  * IPConnection::ENUMERATION_TYPE_AVAILABLE (0): Gerät ist verfügbar
-   (Enumerierung vom Benutzer ausgelöst).
+   (Enumerierung vom Benutzer ausgelöst: :php:func:`enumerate()
+   <IPConnection::enumerate>`). Diese Enumerierungsart kann mehrfach für das
+   selbe Gerät auftreten.
  * IPConnection::ENUMERATION_TYPE_CONNECTED (1): Gerät wurde neu verbunden
    (Automatisch vom Brick gesendet nachdem die Kommunikation aufgebaut wurde).
    Dies kann bedeuten, dass das Gerät die vorher eingestellte Konfiguration
