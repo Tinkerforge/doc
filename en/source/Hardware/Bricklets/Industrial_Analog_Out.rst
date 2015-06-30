@@ -21,19 +21,20 @@ Features
 * Simultaneous programmable voltage and current output
 * Outputs voltage between 0V and 10V
 * Outputs current between 0mA and 24mA
-* No external supply necessary
+* No external power supply necessary
 
 
 .. _industrial_analog_out_bricklet_description:
 
 Description
 -----------
-The Industrial Analog Out :ref:`Bricklet <primer_bricklets>` 
-can be used to extend the features of :ref:`Bricks <primer_bricks>` 
+
+The Industrial Analog Out :ref:`Bricklet <primer_bricklets>`
+can be used to extend the features of :ref:`Bricks <primer_bricks>`
 by the capability to output voltage and current.
 
 Voltage and current output are simultaneous. The voltage can
-be given in mV and the current in µV.
+be given in mV and the current in µA.
 
 Technical Specifications
 ------------------------

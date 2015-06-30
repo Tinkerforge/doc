@@ -56,15 +56,9 @@ Weight                            TBDg
 Resources
 ---------
 
-.. FIXME:
-  remove empty lines from bullet point list once finished. currently the empty
-  lines are necessary because sphinx expects an empty line before and after a
-  bullet point list
-
-.. * TBD datasheet (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/datasheets/TBD.pdf>`__)
-.. * Schematic (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/hardware/co2-schematic.pdf>`__)
-.. * Outline and drilling plan (`Download <../../_images/Dimensions/co2_bricklet_dimensions.png>`__)
-
+* TBD datasheet (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/datasheets/TBD.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/hardware/co2-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/co2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/co2-bricklet/zipball/master>`__)
 
 .. _co2_bricklet_test:

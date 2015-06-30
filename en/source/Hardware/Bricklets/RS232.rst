@@ -18,7 +18,7 @@ RS232 Bricklet
 Features
 --------
 
-* Can send and receive serial data
+* Sends and receives serial data
 * Provides RS232 and UART-TTL interface
 * Configurable baudrate, parity, stop bits, word length and flow control
 

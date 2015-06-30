@@ -19,7 +19,7 @@ Features
 --------
 
 * Measures output of load cells
-* Integrates 24 bit ADC for high resolution
+* Integrates 24bit ADC for high resolution
 * Up to 80 weight measurements per second
 
 .. _load_cell_bricklet_description:
@@ -33,7 +33,7 @@ capability to measure load cells.
 
 A load cell that is connected to the Bricklet can be easily calibrated
 with only one known weight. It is possible to measure
-weight differences of few grams in objects that weigh many kgs.
+weight differences of few grams in objects that weigh many kilograms.
 
 Load cells with different weight ranges are available in the shop:
 
@@ -55,7 +55,7 @@ Sensor                            HX711
 Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Resolution                        24 bit 
+Resolution                        24bit
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            30 x 30 x 13mm (1.18 x 1.18 x 0.51")

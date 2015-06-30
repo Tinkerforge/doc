@@ -41,12 +41,12 @@ Property                          Value
 Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Distance (Range, Resolution)      * Range 0-40m, Resolution 1cm
+Distance (Range, Resolution)      * 0-40m, 1cm
 
-Velocity (Range, Resolution)      * Range 0-12.7 m/s, Resolution 0.1m/s
-                                  * Range 0-31.75 m/s, Resolution 0.25m/s
-                                  * Range 0-63.5 m/s, Resolution 0.5m/s
-                                  * Range 0-127 m/s, Resolution 1.0m/s
+Velocity (Range, Resolution)      * 0-12.7 m/s, 0.1m/s
+                                  * 0-31.75 m/s, 0.25m/s
+                                  * 0-63.5 m/s, 0.5m/s
+                                  * 0-127 m/s, 1.0m/s
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")

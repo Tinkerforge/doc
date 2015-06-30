@@ -20,7 +20,7 @@ Features
 
 * Measures ambient light up to 64000 lux
 * Full dynamic range from 0.01 lux to 64000 lux
-* Output in 0.01 lux steps (16 bit effective resolution)
+* Output in 0.01 lux steps (16bit effective resolution)
 
 .. _ambient_light_v2_bricklet_description:
 
@@ -35,8 +35,8 @@ illuminance can be read out in `lux <http://en.wikipedia.org/wiki/Lux>`__.
 With configurable events it is possible to react on changing illuminance
 without polling.
 
-Typical applications are illuminance dependent switching of
-backlights, motors etc.
+Typical applications are illuminance dependent switching of backlights, motors
+etc.
 
 Technical Specifications
 ------------------------

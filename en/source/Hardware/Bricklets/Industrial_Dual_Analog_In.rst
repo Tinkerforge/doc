@@ -18,8 +18,8 @@ Industrial Dual Analog In Bricklet
 Features
 --------
 
-* Independently measures two voltages between -45V and 45V
-* 24 bit resolution
+* Independently measures two voltages between -45V and +45V (DC)
+* 24bit resolution
 * Calibrated to calibration standard at room temperature
 * Full-scale accuracy of 0.1% / ±4mV
 * Up to 976 samples per second
@@ -49,7 +49,7 @@ Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Channels                          2
-Measurement Range                 -45V - 45V
+Measurement Range                 -45V to +45V (DC)
 Resolution                        24bit resolution
 Accuracy                          0.1% / ±4mV full scale
 --------------------------------  ------------------------------------------------------------

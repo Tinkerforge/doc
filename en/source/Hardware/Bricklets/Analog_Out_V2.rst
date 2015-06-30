@@ -30,15 +30,14 @@ extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to generate voltages between 0V and 12V.
 The voltage can be configured directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`__ without any conversion.
-The device is equipped with a 12-bit `Digital-to-Analog Converter (DAC)
+The device is equipped with a 12bit `Digital-to-Analog Converter (DAC)
 <http://en.wikipedia.org/wiki/Digital-to-analog_converter>`__.
 
 For output voltages above 5V, it is necessary to add an external supply voltage.
-The maximum reachable voltage will be the value of the supply voltage. I.e.
-if you want to reach an output voltage of 12V, you need to connect a supply
-voltage of at least 12V.
+The maximum reachable voltage will be the value of the supply voltage. For
+example, if you want to reach an output voltage of 12V, you need to connect a
+supply voltage of at least 12V.
 For output voltages below 5V, you can `connect "5V Out" to "VIN" <TBD>`__.
-
 
 
 Technical Specifications

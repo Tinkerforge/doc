@@ -19,7 +19,7 @@ Features
 --------
 
 * Measures voltages up to 42V (DC)
-* Full-scale resolution of ~10mV 
+* Full-scale resolution of ~10mV
 
 .. _analog_in_v2_bricklet_description:
 
@@ -27,9 +27,8 @@ Description
 -----------
 
 The Analog In :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
-extend the features of :ref:`Bricks <primer_bricks>` by the
-capability to measure voltages.
-The voltage can be read out in `Volt
+extend the features of :ref:`Bricks <primer_bricks>` by the capability to
+measure voltages. The voltage can be read out in `Volt
 <http://en.wikipedia.org/wiki/Volt>`__ directly without conversions necessary.
 
 With configurable events it is possible to react on changing
