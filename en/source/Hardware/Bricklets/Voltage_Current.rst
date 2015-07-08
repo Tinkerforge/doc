@@ -97,7 +97,7 @@ Weight                            10g
 Resources
 ---------
 
-* INA226 Datasheet (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/raw/master/datasheets/ina226.pdf>`__)
+* INA226 datasheet (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/raw/master/datasheets/ina226.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/raw/master/hardware/voltage-current-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/voltage_current_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/zipball/master>`__)

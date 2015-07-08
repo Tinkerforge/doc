@@ -99,7 +99,7 @@ Weight                            15g
 Resources
 ---------
 
-* PN532 Datasheet (`Download <https://github.com/Tinkerforge/nfc-rfid-bricklet/raw/master/datasheets/PN532.pdf>`__)
+* PN532 datasheet (`Download <https://github.com/Tinkerforge/nfc-rfid-bricklet/raw/master/datasheets/PN532.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/nfc-rfid-bricklet/raw/master/hardware/nfc-rfid-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/nfc_rfid_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/nfc-rfid-bricklet/zipball/master>`__)

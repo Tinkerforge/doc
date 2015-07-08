@@ -119,8 +119,8 @@ Stromverbrauch                                                  53mA
 Ressourcen
 ----------
 
-* 3-Achsen Beschleunigungssensor/Kompass LSM303 Datenblatt (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/LSM303.pdf>`__)
-* 3-Achsen Gyroskop ITG-3200 Datenblatt (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/ITG3200.pdf>`__)
+* LSM303 (3-Achsen Beschleunigungssensor/Kompass) Datenblatt (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/LSM303.pdf>`__)
+* ITG-3200 (3-Achsen Gyroskop) Datenblatt (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/ITG3200.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/hardware/imu-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/imu-brick/zipball/master>`__)
@@ -164,8 +164,8 @@ Position konvergieren kann.
 |test_pi_ref|
 
 
-IMU Kalibrierung
-----------------
+Kalibrierung
+------------
 
 Der IMU Brick wird fertig kalibriert ausgeliefert und sollte daher direkt nach
 dem Auspacken funktionieren. Falls es nötig sein sollte ist eine Neukalibrierung

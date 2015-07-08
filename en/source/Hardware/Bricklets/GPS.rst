@@ -93,12 +93,12 @@ Dimensions (W x D x H)            40 x 35 x 12mm (1.57 x 1.38 x 0.47")
 Weight                            12g (without battery)
 ================================  ============================================================
 
-\* Datasheet values
+\* datasheet values
 
 Resources
 ---------
 
-* PA6H Datasheet (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/datasheets/FGPMMOPA6H.pdf>`__)
+* PA6H datasheet (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/datasheets/FGPMMOPA6H.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/gps-bricklet/raw/master/hardware/gps-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/gps_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/gps-bricklet/zipball/master>`__)

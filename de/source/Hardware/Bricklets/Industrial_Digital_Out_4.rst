@@ -99,7 +99,7 @@ Maximaler Ausgangsstrom           25mA (pro Ausgang)
 Isolation                         5000Vrms (Optokoppler Datenblattangabe)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (L x B x H)           40 x 40 x 14mm (1,57 x 1,57 x 0,55")
+Abmessungen (B x T x H)           40 x 40 x 14mm (1,57 x 1,57 x 0,55")
 Gewicht                           10g
 ================================  ============================================================
 
@@ -117,7 +117,6 @@ Anschlussmöglichkeit
 
 Das Industrial Digital Out 4 Bricklet besitzt eine 8 Pol Anschlussklemme.
 Das folgende Bild stellt die Anschlussmöglichkeiten dar:
-
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
    :scale: 100 %

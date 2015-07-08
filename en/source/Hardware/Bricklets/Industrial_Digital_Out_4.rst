@@ -117,7 +117,6 @@ Connectivity
 The Industrial Digital Out 4 Bricklet has an 8 pole terminal.
 Please see the picture below for the pinout.
 
-
 .. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
    :scale: 100 %
    :alt: Industrial Digital Out 4 Pinout
@@ -136,7 +135,6 @@ Test your Industrial Digital Out 4 Bricklet
 Additionally connect a voltage source to power the Bricklet and a load
 you want to switch. For testing purposes we have connected a battery
 and a LED (see picture below).
-
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_setup_600.jpg
    :scale: 100 %

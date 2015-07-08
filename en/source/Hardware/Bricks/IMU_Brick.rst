@@ -118,8 +118,8 @@ Current Consumption                                  53mA
 Resources
 ---------
 
-* 3-axis Accelerometer/Magnetometer LSM303 datasheet (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/LSM303.pdf>`__)
-* 3-axis Gyroscope ITG-3200 datasheet (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/ITG3200.pdf>`__)
+* LSM303 (3-axis accelerometer/magnetometer) datasheet (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/LSM303.pdf>`__)
+* ITG-3200 (3-axis gyroscope) datasheet (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/datasheets/ITG3200.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/imu-brick/raw/master/hardware/imu-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/imu-brick/zipball/master>`__)
@@ -163,8 +163,8 @@ correct position.
 |test_pi_ref|
 
 
-IMU Calibration
----------------
+Calibration
+-----------
 
 The IMU Brick comes factory calibrated and should work out of the box. It is
 however easy to recalibrate, if necessary.

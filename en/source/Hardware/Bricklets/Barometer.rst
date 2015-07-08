@@ -95,7 +95,7 @@ Weight                            2g
 Resources
 ---------
 
-* MS5611 Datasheet (`Download <https://github.com/Tinkerforge/barometer-bricklet/raw/master/datasheets/ms5611-01ba01.pdf>`__)
+* MS5611 datasheet (`Download <https://github.com/Tinkerforge/barometer-bricklet/raw/master/datasheets/ms5611-01ba01.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/barometer-bricklet/raw/master/hardware/barometer-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/barometer_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/barometer-bricklet/zipball/master>`__)
