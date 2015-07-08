@@ -28,15 +28,56 @@ Beschreibung
 Technische Spezifikation
 ------------------------
 
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Sensor                            LIS3DSH
+Stromverbrauch                    TBDmA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Beschleunigung                    0,001g Schritte, 16Bit Auflösung
+Stoßfestigkeit                    10000g
+Messbereich                       ±2g / ±4g / ±6g / ±8g / ±16g per API einstellbar
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           25 x 20 x 5mm (0,98 x 0,79 x 0,19")
+Gewicht                           TBDg
+================================  ============================================================
+
 
 Ressourcen
 ----------
+
+* LIS3DSH Datenblatt (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/raw/master/datasheets/LIS3DSH.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/raw/master/hardware/accelerometer-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/accelerometer_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/zipball/master>`__)
 
 
 .. _accelerometer_bricklet_test:
 
 Erster Test
 -----------
+
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+Wenn alles wie erwartet funktioniert wird die Beschleunigung in g
+angezeigt. Der Graph gibt den zeitlichen Verlauf der Beschleunigung wieder.
+
+Lasse das Bricklet mit allen drei Achsen nacheinander nach unten zeigen. Die
+angezeigte Beschleunigung sollte ca. 1g für die nach unten zeigende Achse
+betragen. Die Beschleunigung für die anderen Achsen sollte nahe 0g sein.
+
+.. image:: /Images/Bricklets/bricklet_accelerometer_brickv.jpg
+   :scale: 100 %
+   :alt: Accelerometer Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_accelerometer_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _accelerometer_bricklet_case:

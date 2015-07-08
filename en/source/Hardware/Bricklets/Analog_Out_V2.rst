@@ -50,7 +50,7 @@ DAC                               MCP4725
 Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Voltage                           0V - 12V*, 12bit resolution
+Voltage                           0V - 12V* in 1mV steps, 12bit resolution
 Maximum Output Current            24mA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -58,7 +58,7 @@ Dimensions (W x D x H)            35 x 30 x 14mm (1.38 x 1.18 x 0.55")
 Weight                            TBDg
 ================================  ============================================================
 
-\* The maximum output voltage depends on the supply voltage.
+\* The maximum output voltage depends on the supply voltage at the VIN terminal.
 
 Resources
 ---------
@@ -68,10 +68,49 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/analog_out_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/analog-out-v2-bricklet/zipball/master>`__)
 
+
+Connectivity
+------------
+
+The Analog Out Bricklet 2.0 has five terminals. A DC voltage source (maximum
+15V) has to be connected to the VIN terminal and the adjacent GND terminal.
+The Bricklet uses this input voltage to created the configurable output voltage
+for the VOUT terminal. The 5V terminal is an additional output with fixed 5V
+you can use to power things. It can also be connected to the VIN terminal.
+
+.. image:: /Images/Bricklets/bricklet_analog_out_v2_vertical_350.jpg
+    :scale: 100 %
+    :alt: Analog Out Bricklet 2.0 Terminals
+    :align: center
+    :target: ../../_images/Bricklets/bricklet_analog_out_v2_vertical_1200.jpg
+
+
 .. _analog_out_v2_bricklet_test:
 
 Test your Analog Out Bricklet 2.0
 ---------------------------------
+
+|test_intro|
+
+|test_connect|.
+Additionally connect a DC voltage source to the Bricklet's VIN and GND
+terminals. For testing purposes connect the 5V output terminal to the VIN
+terminal. The GND terminals are already connected internally.
+
+|test_tab|
+In this tab you can configure the voltage on the VOUT terminal. The maximum
+VOUT voltage is limited by the connected VIN voltage.
+For test purposes, you can measure the VOUT voltage with a voltmeter.
+If everything went as expected the voltage on the voltmeter and the voltage
+you have configured should be identical.
+
+.. image:: /Images/Bricklets/bricklet_analog_out_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Analog Out Bricklet 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_out_v2_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _analog_out_v2_bricklet_case:

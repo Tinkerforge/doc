@@ -28,9 +28,28 @@ Beschreibung
 Technische Spezifikation
 ------------------------
 
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Sensor                            LTR329ALS
+Stromverbrauch                    TBDmA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Beleuchtungsstärke                0Lux - 64000lux in 0,01Lux Schritten, 16Bit Auflösung
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")
+Gewicht                           TBDg
+================================  ============================================================
+
 
 Ressourcen
 ----------
+
+* LTR329ALS Datenblatt (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/raw/master/datasheets/LTR329ALS.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/raw/master/hardware/ambient-light-v2-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/ambient_light_v2_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/zipball/master>`__)
 
 
 .. _ambient_light_v2_bricklet_test:

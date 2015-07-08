@@ -46,7 +46,7 @@ Sensor                            TBD
 Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-CO2 Concentration                 0ppm - TBDppm
+Measurement Range                 0ppm - TBDppm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
@@ -65,6 +65,22 @@ Resources
 
 Test your CO2 Bricklet
 ----------------------
+
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+If everything went as expected the Brick Viewer should look as
+depicted below.
+
+.. image:: /Images/Bricklets/bricklet_co2_brickv.jpg
+   :scale: 100 %
+   :alt: CO2 Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_co2_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _co2_bricklet_case:

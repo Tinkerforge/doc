@@ -28,15 +28,50 @@ Beschreibung
 Technische Spezifikation
 ------------------------
 
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Sensor                            A051020-SP-61
+Stromverbrauch                    TBD
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Messbereich                       0ppb - 250ppb
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessung (W x D x H)             TBD x TBD x TBDmm (TBD x TBD x TBD")
+Gewicht                           TBDg
+================================  ============================================================
+
 
 Ressourcen
 ----------
+
+* A051020-SP-61 Datenblatt (`Download <https://github.com/Tinkerforge/ozone-bricklet/raw/master/datasheets/A051020-SP-61.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/ozone-bricklet/raw/master/hardware/ozone-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/ozone_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ozone-bricklet/zipball/master>`__)
 
 
 .. _ozone_bricklet_test:
 
 Erster Test
 -----------
+
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
+aussehen.
+
+.. image:: /Images/Bricklets/bricklet_ozone_brickv.jpg
+   :scale: 100 %
+   :alt: Ozone Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_ozone_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _ozone_bricklet_case:

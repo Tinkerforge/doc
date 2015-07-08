@@ -48,7 +48,7 @@ Current Consumption                TBDmA
 ---------------------------------  ------------------------------------------------------------
 Minimum detectable particle size   ~0.5µm
 Resolution                         1µg/m³
-Range                              0-500µg/m³
+Measurement Range                  0-500µg/m³
 ---------------------------------  ------------------------------------------------------------
 ---------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)             60 x 50 x 20mm (2.36 x 1.97 x 0.79")
@@ -69,6 +69,22 @@ Resources
 
 Test your Dust Detector Bricklet
 --------------------------------
+
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+If everything went as expected you can now see the dust density in µg/m³ and a
+graph that shows the dust density over time.
+
+.. image:: /Images/Bricklets/bricklet_dust_detector_brickv.jpg
+   :scale: 100 %
+   :alt: Dust Detector in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_dust_detector_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _dust_detector_bricklet_case:

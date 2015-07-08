@@ -51,7 +51,7 @@ Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 Acceleration                      0.001g steps, 16bit resolution
 Shock survivability               10000g
-Full-scale range                  ±2g / ±4g / ±6g / ±8g / ±16g dynamically selectable
+Full-scale range                  ±2g / ±4g / ±6g / ±8g / ±16g selectable with API
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")
@@ -70,6 +70,26 @@ Resources
 
 Test your Accelerometer Bricklet
 --------------------------------
+
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+If everything went as expected you can now see the acceleration in g,
+pitch and roll and a graph that shows the acceleration over time.
+
+Point the Bricklet downwards along its x-, y- and z-axis one by one. The
+acceleration should be around 1g for the axis pointing downwards and around 0g
+for the other axes.
+
+.. image:: /Images/Bricklets/bricklet_accelerometer_brickv.jpg
+   :scale: 100 %
+   :alt: Accelerometer Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_accelerometer_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _accelerometer_bricklet_case:

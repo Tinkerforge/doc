@@ -28,15 +28,59 @@ Beschreibung
 Technische Spezifikation
 ------------------------
 
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Stromverbrauch                    TBDmA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Baudrate                          300 - 230400baud
+Parität                           keine / ungerade / gerade / erzwungen 1 / erzwungen 0
+Stoppbits                         1 / 2
+Wortlänge                         5 / 6 / 7 / 8
+Flusskontrolle                    Software / Hardware / keine
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           45 x 35 x 17mm (1.77 x 1.38 x 0.67")
+Gewicht                           TBDg
+================================  ============================================================
+
 
 Ressourcen
 ----------
+
+* Schaltplan (`Download <https://github.com/Tinkerforge/rs232-bricklet/raw/master/hardware/rs232-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/rs232_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rs232-bricklet/zipball/master>`__)
+
+
+Anschlussmöglichkeiten
+----------------------
 
 
 .. _rs232_bricklet_test:
 
 Erster Test
 -----------
+
+|test_intro|
+
+|test_connect|.
+Verbinde dann den RX1 und TX Pin mit einem Jumper, damit das Bricklet seine
+eigene Ausgabe zurück ließt.
+
+|test_tab|
+Wenn alles wie erwartet funktioniert kann jetzt Text in das Eingabefeld getippt
+und mit Enter abgeschickt werden. Der gleiche Text sollte dann im Textfeld
+darüber auftauchen.
+
+.. image:: /Images/Bricklets/bricklet_rs232_brickv.jpg
+   :scale: 100 %
+   :alt: RS232 Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs232_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _rs232_bricklet_case:

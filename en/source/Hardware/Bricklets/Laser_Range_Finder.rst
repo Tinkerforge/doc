@@ -49,7 +49,7 @@ Velocity (Range, Resolution)      * 0-12.7 m/s, 0.1m/s
                                   * 0-127 m/s, 1.0m/s
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
+Dimensions (W x D x H)            49 x 36 x 48mm (1.93 x 1.42 x 1.89")
 Weight                            TBDg
 ================================  ============================================================
 
@@ -64,6 +64,24 @@ Resources
 
 Test your Laser Range Finder Bricklet
 -------------------------------------
+
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+Click the "Enable Laser" checkbox to enable the laser.
+If everything went as expected you can now see the measured distance
+of the sensor and a graph that shows the distance over time. In the image
+below we slowly moved a hand away from the sensor and to the sensor again.
+
+.. image:: /Images/Bricklets/bricklet_laser_range_finder_brickv.jpg
+   :scale: 100 %
+   :alt: Laser Range Finder in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_laser_range_finder_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _laser_range_finder_bricklet_case:

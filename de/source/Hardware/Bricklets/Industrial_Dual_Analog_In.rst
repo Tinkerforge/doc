@@ -28,9 +28,44 @@ Beschreibung
 Technische Spezifikation
 ------------------------
 
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+A/D-Wandler                       MCP3911
+Stromverbrauch                    TBDmA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Kanäle                            2
+Messbereich                       -45V bis +45V (DC)
+Auflösung                         24Bit
+Genauigkeit                       0,1% / ±4mV über den gesamten Messbereich
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           40 x 40 x 11mm (1,57 x 1,57 x 0,43")
+Gewicht                           TBDg
+================================  ============================================================
+
 
 Ressourcen
 ----------
+
+* MCP3911 Datenblatt (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/raw/master/datasheets/MCP3911.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/raw/master/hardware/industrial-dual-analog-in-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_dual_analog_in_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/zipball/master>`__)
+
+
+Anschlussmöglichkeit
+--------------------
+
+Das Industrial Dual Analog In Bricklet besitzt eine 8 Pol Anschlussklemme.
+Das folgende Bild stellt die Anschlussmöglichkeiten dar:
+
+.. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_caption_600.jpg
+   :scale: 100 %
+   :alt: Industrial Dual Analog In Steckerbelegung
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_caption_1200.jpg
 
 
 .. _industrial_dual_analog_in_bricklet_test:

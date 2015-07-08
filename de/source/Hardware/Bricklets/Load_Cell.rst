@@ -28,15 +28,42 @@ Beschreibung
 Technische Spezifikation
 ------------------------
 
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Sensor                            HX711
+Stromverbrauch                    TBDmA
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Auflösung                         24Bit
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           30 x 30 x 14mm (1,18 x 1,18 x 0,55")
+Gewicht                           TBDg
+================================  ============================================================
+
 
 Ressourcen
 ----------
+
+* HX711 Datenblatt (`Download <https://github.com/Tinkerforge/load-cell-bricklet/raw/master/datasheets/hx711.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/load-cell-bricklet/raw/master/hardware/load-cell-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/load_cell_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/load-cell-bricklet/zipball/master>`__)
+
+
+Anschlussmöglichkeiten
+----------------------
 
 
 .. _load_cell_bricklet_test:
 
 Erster Test
 -----------
+
+
+Kalibrierung
+------------
 
 
 .. _load_cell_bricklet_case:

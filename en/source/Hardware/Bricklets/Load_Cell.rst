@@ -58,22 +58,31 @@ Current Consumption               TBDmA
 Resolution                        24bit
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            30 x 30 x 13mm (1.18 x 1.18 x 0.51")
+Dimensions (W x D x H)            30 x 30 x 14mm (1.18 x 1.18 x 0.55")
 Weight                            TBDg
 ================================  ============================================================
 
 Resources
 ---------
 
-* HX711 Datasheet (`Download <https://github.com/Tinkerforge/load-cell-bricklet/raw/master/datasheets/hx711.pdf>`__)
+* HX711 datasheet (`Download <https://github.com/Tinkerforge/load-cell-bricklet/raw/master/datasheets/hx711.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/load-cell-bricklet/raw/master/hardware/load-cell-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/load_cell_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/load-cell-bricklet/zipball/master>`__)
+
+
+Connectivity
+------------
+
 
 .. _load_cell_bricklet_test:
 
 Test your Load Cell Bricklet
 ----------------------------
+
+
+Calibration
+-----------
 
 
 .. _load_cell_bricklet_case:

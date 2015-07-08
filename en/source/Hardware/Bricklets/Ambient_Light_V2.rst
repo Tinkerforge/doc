@@ -69,6 +69,27 @@ Resources
 Test your Ambient Light Bricklet 2.0
 ------------------------------------
 
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+If everything went as expected you can now see the illuminance in lux,
+a graphical representation of the illuminance and a graph that shows the
+illuminance over time.
+
+A good test for the sensor is to darken the room and
+slowly move a flashlight over the sensor, the graph should then look
+approximately as in the screenshot shown below.
+
+.. image:: /Images/Bricklets/bricklet_ambient_light_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Ambient Light Bricklet 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_ambient_light_v2_brickv.jpg
+
+|test_pi_ref|
+
 
 .. _ambient_light_v2_bricklet_case:
 

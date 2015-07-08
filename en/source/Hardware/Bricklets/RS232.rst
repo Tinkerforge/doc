@@ -41,13 +41,13 @@ Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Baudrate                          300 - 230400baud
-Parity                            None / Odd / Even / Forced Parity 1 / Forced Parity 0
+Parity                            none / odd / even / forced 1 / forced 0
 Stop bits                         1 / 2
 Word length                       5 / 6 / 7 / 8
-Flow control                      Software / Hardware / Off
+Flow control                      Software / Hardware / none
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            45 x 35 x 15mm (1.77 x 1.38 x 0.59")
+Dimensions (W x D x H)            45 x 35 x 17mm (1.77 x 1.38 x 0.67")
 Weight                            TBDg
 ================================  ============================================================
 
@@ -58,10 +58,33 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/rs232_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/rs232-bricklet/zipball/master>`__)
 
+
+Connectivity
+------------
+
+
 .. _rs232_bricklet_test:
 
 Test your RS232 Bricklet
 ------------------------
+
+|test_intro|
+
+|test_connect|.
+Connect the RX1 and TX pins with a jumper to make the Bricklet read back its
+own output.
+
+|test_tab|
+If everything went as expected you can now type some text into the input
+editbox and hit enter. The same text should then show up in the textarea above.
+
+.. image:: /Images/Bricklets/bricklet_rs232_brickv.jpg
+   :scale: 100 %
+   :alt: RS232 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs232_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _rs232_bricklet_case:

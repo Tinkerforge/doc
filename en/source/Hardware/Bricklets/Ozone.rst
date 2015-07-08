@@ -46,7 +46,7 @@ Sensor                            A051020-SP-61
 Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Ozone Concentration               0ppb - 250ppb
+Measurement Range                 0ppb - 250ppb
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
@@ -65,6 +65,22 @@ Resources
 
 Test your Ozone Bricklet
 ------------------------
+
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+If everything went as expected the Brick Viewer should look as
+depicted below.
+
+.. image:: /Images/Bricklets/bricklet_ozone_brickv.jpg
+   :scale: 100 %
+   :alt: Ozone Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_ozone_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _ozone_bricklet_case:

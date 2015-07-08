@@ -50,7 +50,7 @@ Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 Channels                          2
 Measurement Range                 -45V to +45V (DC)
-Resolution                        24bit resolution
+Resolution                        24bit
 Accuracy                          0.1% / ±4mV full scale
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -61,15 +61,48 @@ Weight                            TBDg
 Resources
 ---------
 
-* MCP3911 Datasheet (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/raw/master/datasheets/MCP3911.pdf>`__)
+* MCP3911 datasheet (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/raw/master/datasheets/MCP3911.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/raw/master/hardware/industrial-dual-analog-in-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_dual_analog_in_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/zipball/master>`__)
+
+
+Connectivity
+------------
+
+The Industrial Dual Analog In Bricklet has an 8 pole terminal.
+Please see the picture below for the pinout.
+
+.. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_caption_600.jpg
+   :scale: 100 %
+   :alt: Industrial Dual Analog In Pinout
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_caption_1200.jpg
+
 
 .. _industrial_dual_analog_in_bricklet_test:
 
 Test your Industrial Dual Analog In Bricklet
 --------------------------------------------
+
+|test_intro|
+
+|test_connect|.
+Additionally connect a DC voltage source to the Bricklet. For testing purposes
+connect the 3.3V output pin to the IN0- pin and connect the GND pin to the IN0+
+pin.
+
+|test_tab|
+If everything went as expected you can now see the voltage in Volt
+and a graph that shows the voltage over time.
+
+.. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_brickv.jpg
+   :scale: 100 %
+   :alt: Industrial Dual Analog In Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _industrial_dual_analog_in_bricklet_case:

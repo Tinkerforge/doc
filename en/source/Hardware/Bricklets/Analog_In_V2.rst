@@ -44,7 +44,7 @@ Property                          Value
 Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Voltage                           0V - 42V (DC), 12bit resolution (~10mV)
+Voltage                           0V - 42V (DC) in 1mV steps, 12bit resolution (~10mV)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            35 x 30 x 14mm (1.38 x 1.18 x 0.55")
@@ -59,10 +59,44 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/analog_in_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/analog-in-v2-bricklet/zipball/master>`__)
 
+
+Connectivity
+------------
+
+The Analog In Bricklet 2.0 has five terminals. With these terminals you can access
+the following output signals: 5V, 3.3V as well as GND. The voltage you want
+to measure can be applied between the VIN and the GND terminal.
+
+.. image:: /Images/Bricklets/bricklet_analog_in_v2_vertical_350.jpg
+   :scale: 100 %
+   :alt: Analog In Bricklet 2.0 Terminals
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_in_v2_vertical_1200.jpg
+
+
 .. _analog_in_v2_bricklet_test:
 
 Test your Analog In Bricklet 2.0
 --------------------------------
+
+|test_intro|
+
+|test_connect|.
+Additionally connect a DC voltage source to the Bricklet. For testing purposes
+connect the 5V or 3.3V output terminal to the VIN terminal. The GND terminals
+are already connected internally.
+
+|test_tab|
+If everything went as expected you can now see the voltage in Volt
+and a graph that shows the voltage over time.
+
+.. image:: /Images/Bricklets/bricklet_analog_in_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Analog In Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_in_v2_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _analog_in_v2_bricklet_case:

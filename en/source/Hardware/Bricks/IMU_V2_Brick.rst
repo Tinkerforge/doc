@@ -75,7 +75,7 @@ Sampling Rate                                        100Hz
 ---------------------------------------------------  ------------------------------------------------------------
 ---------------------------------------------------  ------------------------------------------------------------
 Bricklet Ports                                       2
-Dimensions (W x D x H)                               40 x 40 x 16mm (1.57 x 1.57 x 0.63")
+Dimensions (W x D x H)                               40 x 40 x 19mm (1.57 x 1.57 x 0.75")
 Weight                                               TBDg
 Current Consumption                                  TBDmA
 ===================================================  ============================================================
@@ -83,14 +83,48 @@ Current Consumption                                  TBDmA
 Resources
 ---------
 
-* BNO055 (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/datasheets/BNO055.pdf>`__)
+* BNO055 datasheet (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/datasheets/BNO055.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/hardware/imu-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/imu_v2_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/imu-v2-brick/zipball/master>`__)
 
 
+Connectivity
+------------
+
+The following picture depicts the different connection possibilities of the
+IMU Brick 2.0.
+
+.. image:: /Images/Bricks/brick_imu_v2_caption_600.jpg
+   :scale: 100 %
+   :alt: IMU Brick 2.0 with caption
+   :align: center
+   :target: ../../_images/Bricks/brick_imu_v2_caption_800.jpg
+
+
 Test your IMU Brick 2.0
 -----------------------
+
+|test_intro|
+
+|test_tab|
+
+.. image:: /Images/Bricks/imu_v2_brickv.jpg
+   :scale: 100 %
+   :alt: IMU Brick 2.0 in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricks/imu_v2_brickv.jpg
+
+You can see all of the available data form the IMU Brick 2.0. If you hold the
+IMU Brick in the orientation as shown in the image and press
+"Save Orientation", the movements that you make with the IMU Brick should be
+mirrored in the Brick Viewer.
+
+|test_pi_ref|
+
+
+Calibration
+-----------
 
 
 .. _imu_v2_brick_programming_interface:
