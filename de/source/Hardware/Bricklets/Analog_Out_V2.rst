@@ -18,6 +18,9 @@ Analog Out Bricklet 2.0
 Features
 --------
 
+* Erzeugt konfigurierbare elektrische Spannungen zwischen 0V und 12V*
+* Angabe in 1mV Schritten (12Bit Auflösung)
+
 
 .. _analog_out_v2_bricklet_description:
 

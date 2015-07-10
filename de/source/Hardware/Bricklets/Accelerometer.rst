@@ -18,6 +18,11 @@ Accelerometer Bricklet
 Features
 --------
 
+* 3-Achsen Accelerometer
+* 0,001g Schritte mit 16Bit Auflösung
+* Messbereich bis zu ±16g
+* Volle 1kHz Datenrate mit Callbacks
+
 
 .. _accelerometer_bricklet_description:
 

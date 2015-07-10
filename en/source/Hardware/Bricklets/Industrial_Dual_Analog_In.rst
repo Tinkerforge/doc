@@ -19,10 +19,11 @@ Features
 --------
 
 * Independently measures two voltages between -45V and +45V (DC)
-* 24bit resolution
-* Calibrated to calibration standard at room temperature
+* 24bit ADC for high resolution
+* Calibrated
 * Full-scale accuracy of 0.1% / ±4mV
 * Up to 976 samples per second
+
 
 .. _industrial_dual_analog_in_bricklet_description:
 

@@ -18,6 +18,8 @@ Dust Detector Bricklet
 Features
 --------
 
+* Misst Staubdichte zwischen 0 und 500µg/m³
+* Erkennt Partikel ab einer Größe von ~0,5µm
 
 .. _dust_detector_bricklet_description:
 

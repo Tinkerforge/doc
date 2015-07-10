@@ -18,7 +18,8 @@ Analog Out Bricklet 2.0
 Features
 --------
 
-* Generates a configurable voltage between 0V and 12V
+* Generates a configurable voltage between 0V and 12V*
+* Specification in 1mV steps (12bit resolution)
 
 .. _analog_out_v2_bricklet_description:
 

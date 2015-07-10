@@ -18,6 +18,10 @@ Ambient Light Bricklet 2.0
 Features
 --------
 
+* Misst Umgebungslicht bis zu 64000Lux
+* Voller Dynamikumfang von 0,01Lux bis 64000Lux
+* Ausgabe in 0,01Lux Schritten (16Bit effektive Auflösung)
+
 
 .. _ambient_light_v2_bricklet_description:
 
@@ -35,7 +39,7 @@ Sensor                            LTR329ALS
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Beleuchtungsstärke                0Lux - 64000lux in 0,01Lux Schritten, 16Bit Auflösung
+Beleuchtungsstärke                0Lux - 64000Lux in 0,01Lux Schritten, 16Bit Auflösung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")

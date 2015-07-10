@@ -49,12 +49,12 @@ IMU Brick
 Features
 --------
 
-* Full fledged IMU/AHRS with 9 degrees of freedom (3-axis each: accelerometer, compass, gyro)
+* Full fledged IMU/AHRS with 9 degrees of freedom (3-axis each: accelerometer,
+  compass, gyroscope)
 * No accumulating errors, no gimbal lock!
 * Factory calibrated, easy to recalibrate
 * Calculates quaternions as well as roll, pitch and yaw
 * Directly readable by USB, extendable by two Bricklet ports
-* API for many programming languages available
 
 
 .. _imu_brick_description:

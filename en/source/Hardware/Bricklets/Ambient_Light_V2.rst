@@ -18,9 +18,9 @@ Ambient Light Bricklet 2.0
 Features
 --------
 
-* Measures ambient light up to 64000 lux
-* Full dynamic range from 0.01 lux to 64000 lux
-* Output in 0.01 lux steps (16bit effective resolution)
+* Measures ambient light up to 64000lux
+* Full dynamic range from 0.01lux to 64000lux
+* Output in 0.01lux steps (16bit effective resolution)
 
 .. _ambient_light_v2_bricklet_description:
 

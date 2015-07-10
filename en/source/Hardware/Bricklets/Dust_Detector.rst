@@ -19,7 +19,7 @@ Features
 --------
 
 * Measures dust density between 0 and 500µg/m³
-* Measures particle sizes >= ~0.5µm
+* Detects particle with size ~0.5µm and above
 
 .. _dust_detector_bricklet_description:
 

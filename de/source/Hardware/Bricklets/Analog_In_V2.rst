@@ -18,6 +18,9 @@ Analog In Bricklet 2.0
 Features
 --------
 
+* Misst elektrische Spannungen bis zu 42V (DC)
+* Auflösung über den gesamten Messbereich von ~10mV
+
 
 .. _analog_in_v2_bricklet_description:
 
@@ -34,7 +37,7 @@ Eigenschaft                       Wert
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Voltage                           0V - 42V (DC) in 1mV Schritten, 12Bit Auflösung (~10mV)
+Elektrische Spannung              0V - 42V (DC) in 1mV Schritten, 12Bit Auflösung (~10mV)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           35 x 30 x 14mm (1,38 x 1,18 x 0,55")

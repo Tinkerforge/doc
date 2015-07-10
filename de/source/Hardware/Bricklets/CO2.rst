@@ -18,6 +18,8 @@ CO2 Bricklet
 Features
 --------
 
+* Misst CO2 Konzentration von 0 bis TBD ppm (Teil pro Million)
+
 
 .. _co2_bricklet_description:
 

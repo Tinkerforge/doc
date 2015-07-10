@@ -18,9 +18,10 @@ Laser Range Finder Bricklet
 Features
 --------
 
-* Measures distance and velocity
+* Measures distance and velocity with laser light
 * Distance range 0-40m, resolution 1cm
 * Velocity range up to 0-127m/s, resolution up to 0.1m/s
+
 
 .. _laser_range_finder_bricklet_description:
 
@@ -43,10 +44,10 @@ Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 Distance (Range, Resolution)      * 0-40m, 1cm
 
-Velocity (Range, Resolution)      * 0-12.7 m/s, 0.1m/s
-                                  * 0-31.75 m/s, 0.25m/s
-                                  * 0-63.5 m/s, 0.5m/s
-                                  * 0-127 m/s, 1.0m/s
+Velocity (Range, Resolution)      * 0-12.7m/s, 0.1m/s
+                                  * 0-31.75m/s, 0.25m/s
+                                  * 0-63.5m/s, 0.5m/s
+                                  * 0-127m/s, 1.0m/s
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            49 x 36 x 48mm (1.93 x 1.42 x 1.89")

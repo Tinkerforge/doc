@@ -17,6 +17,15 @@ IMU Brick 2.0
 Features
 --------
 
+* Voll ausgestattete IMU/AHRS mit 9 Freiheitsgraden (je 3-Achsen
+  Beschleunigungssensor, Kompass, Gyroskop)
+* Keine akkumulierenden Fehler, kein Gimbal Lock!
+* Werkskalibriert, automatische durchgehende Selbstkalibrierung während des
+  Betriebs
+* Berechnet Quaternionen, lienare Beschleunigung, Schwerkraftvektor sowie
+  Gier- (Heading), Roll- und Nick- (Pitch) Winkel
+* Direkt auslesbar per USB, erweiterbar über zwei Bricklet Anschlüsse
+
 
 .. _imu_v2_brick_description:
 

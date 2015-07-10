@@ -18,6 +18,10 @@ Load Cell Bricklet
 Features
 --------
 
+* Misst die Ausgabe von Wägezelle
+* 24Bit A/D-Wandler für hohe Auflösung
+* Bis zu 80 Gewichts-Messungen pro Sekunde
+
 
 .. _load_cell_bricklet_description:
 

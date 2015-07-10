@@ -19,8 +19,9 @@ Features
 --------
 
 * Measures output of load cells
-* Integrates 24bit ADC for high resolution
+* 24bit ADC for high resolution
 * Up to 80 weight measurements per second
+
 
 .. _load_cell_bricklet_description:
 

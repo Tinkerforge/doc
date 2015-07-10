@@ -18,6 +18,11 @@ Industrial Analog Out Bricklet
 Features
 --------
 
+* Gleichzeitig programmierbarer Spannungs- und Stromausgang
+* Gibt elektrische Spannung zwischen 0V und 10V aus
+* Gibt elektrischen Strom zwischen 0mA und 24mA aus
+* Keine externe Stromversorgung nötig
+
 
 .. _industrial_analog_out_bricklet_description:
 

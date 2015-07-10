@@ -18,6 +18,8 @@ Ozone Bricklet
 Features
 --------
 
+* Misst Ozon Konzentration von 0 bis 250 ppm (Teil pro Milliarde)
+
 
 .. _ozone_bricklet_description:
 

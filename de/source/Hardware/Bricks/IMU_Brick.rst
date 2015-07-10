@@ -49,12 +49,12 @@ IMU Brick
 Features
 --------
 
-* Voll ausgestattete IMU/AHRS mit 9 Freiheitsgraden (je 3-achs Beschleunigungssensor, Kompass, Gyroskop)
+* Voll ausgestattete IMU/AHRS mit 9 Freiheitsgraden (je 3-Achsen
+  Beschleunigungssensor, Kompass, Gyroskop)
 * Keine akkumulierenden Fehler, kein Gimbal Lock!
-* Vorkalibriert, einfach anwendungsspezifisch zu kalibrieren
+* Werkskalibriert, einfach anwendungsspezifisch zu kalibrieren
 * Berechnet Quaternionen sowie Roll-, Nick- (Pitch) und Gier- (Yaw) Winkel
 * Direkt auslesbar per USB, erweiterbar über zwei Bricklet Anschlüsse
-* API für viele Programmiersprachen verfügbar
 
 
 .. _imu_brick_description:
@@ -62,7 +62,7 @@ Features
 Beschreibung
 ------------
 
-Der IMU :ref:`Brick <primer_bricks>` ist mit je einem 3-Achs 
+Der IMU :ref:`Brick <primer_bricks>` ist mit je einem 3-Achsen
 Beschleunigungssensor, Magnetfeldsensor (Kompass) und Gyroskop ausgestattet und
 arbeitet als **USB** 
 `Inertialsensor <http://de.wikipedia.org/wiki/Inertialsensor>`__.

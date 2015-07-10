@@ -18,6 +18,10 @@ RS232 Bricklet
 Features
 --------
 
+* Sendet und empfängt serielle Daten
+* Bietet RS232 und UART-TTL Schnittstelle
+* Einstellbare Baudrate, Parität, Stopbits, Wortlänge und Flusskontrolle
+
 
 .. _rs232_bricklet_description:
 

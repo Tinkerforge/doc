@@ -18,6 +18,12 @@ Industrial Dual Analog In Bricklet
 Features
 --------
 
+* Unabhängig Messung zweier Spanungen zwischen -45V und +45V (DC)
+* 24Bit A/D-Wandler für hohe Auflösung
+* Kalibriert
+* Genaugikeit von 0,1% / ±4mV über den gesamten Messbereich
+* Bis zu 976 Messwerte pro Sekunde
+
 
 .. _industrial_dual_analog_in_bricklet_description:
 

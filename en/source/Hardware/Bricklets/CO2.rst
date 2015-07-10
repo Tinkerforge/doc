@@ -20,6 +20,7 @@ Features
 
 * Measures CO2 concentration from 0 to TBD ppm (parts per million)
 
+
 .. _co2_bricklet_description:
 
 Description

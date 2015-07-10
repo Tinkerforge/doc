@@ -22,6 +22,7 @@ Features
 * Provides RS232 and UART-TTL interface
 * Configurable baudrate, parity, stop bits, word length and flow control
 
+
 .. _rs232_bricklet_description:
 
 Description
@@ -29,7 +30,9 @@ Description
 
 The RS232 :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
-capability to send and receive RS232 data.
+capability to send and receive serial data to comminucate with
+other serial devices.
+
 
 Technical Specifications
 ------------------------

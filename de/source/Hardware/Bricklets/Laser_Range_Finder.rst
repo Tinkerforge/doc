@@ -18,6 +18,10 @@ Laser Range Finder Bricklet
 Features
 --------
 
+* Misst Entfernung unf Geschwindigkeit mit Laser Licht
+* Entfernungs-Messbereich 0-40m mit 1cm Auflösung
+* Geschwindigkeits-Messbereich bis zu 0-127m/s mit bis 0,1m/s Auflösung
+
 
 .. _laser_range_finder_bricklet_description:
 
@@ -36,10 +40,10 @@ Stromverbrauch                        TBDmA
 ------------------------------------  ------------------------------------------------------------
 Entfernung (Bereich, Auflösung)       * 0-40m, 1cm
 
-Geschwindigkeit (Bereich, Auflösung)  * 0-12.7 m/s, 0,1m/s
-                                      * 0-31,75 m/s, 0,25m/s
-                                      * 0-63,5 m/s, 0,5m/s
-                                      * 0-127 m/s, 1,0m/s
+Geschwindigkeit (Bereich, Auflösung)  * 0-12,7m/s, 0,1m/s
+                                      * 0-31,75m/s, 0,25m/s
+                                      * 0-63,5m/s, 0,5m/s
+                                      * 0-127m/s, 1,0m/s
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)               49 x 36 x 48mm (1,93 x 1,42 x 1,89")
