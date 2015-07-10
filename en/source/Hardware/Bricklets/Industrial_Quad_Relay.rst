@@ -122,7 +122,7 @@ Please see the picture below for the pinout.
 
 .. image:: /Images/Bricklets/bricklet_industrial_quad_relay_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Quad Relay 4 Pinout
+   :alt: Industrial Quad Relay 4 Bricklet pinout
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_caption_1200.jpg
 

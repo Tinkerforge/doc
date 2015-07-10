@@ -120,7 +120,7 @@ Das folgende Bild stellt die Anschlussmöglichkeiten dar:
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Digital Out 4 Steckerbelegung
+   :alt: Industrial Digital Out 4 Bricklet Steckerbelegung
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_caption_1200.jpg
 

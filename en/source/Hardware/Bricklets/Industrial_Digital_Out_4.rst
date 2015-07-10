@@ -119,7 +119,7 @@ Please see the picture below for the pinout.
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Digital Out 4 Pinout
+   :alt: Industrial Digital Out 4 Bricklet pinout
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_caption_1200.jpg
 

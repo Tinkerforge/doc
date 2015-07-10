@@ -124,7 +124,7 @@ dieser wie folgt zu beschalten:
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Steckerbelegung
+   :alt: Industrial Digital In 4 Bricklet Steckerbelegung
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_caption_1200.jpg
 

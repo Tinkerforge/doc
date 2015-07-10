@@ -69,7 +69,7 @@ Das folgende Bild stellt die Anschlussmöglichkeiten dar:
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Dual Analog In Steckerbelegung
+   :alt: Industrial Dual Analog In Bricklet Steckerbelegung
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_caption_1200.jpg
 

@@ -76,7 +76,7 @@ Please see the picture below for the pinout.
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Dual Analog In Pinout
+   :alt: Industrial Dual Analog In Bricklet pinout
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_caption_1200.jpg
 

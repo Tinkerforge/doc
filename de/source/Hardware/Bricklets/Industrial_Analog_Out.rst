@@ -72,7 +72,7 @@ Das folgende Bild stellt die Anschlussmöglichkeiten dar:
 
 .. image:: /Images/Bricklets/bricklet_industrial_analog_out_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Analog Out Steckerbelegung
+   :alt: Industrial Analog Out Bricklet Steckerbelegung
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_analog_out_caption_1200.jpg
 
