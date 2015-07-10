@@ -89,6 +89,16 @@ with FPC looks like this::
 
  fpc ExampleConfiguration.pas
 
+Runtime Error 211
+"""""""""""""""""
+
+If you get Runtime Error 211 on starting your program or it prints::
+
+ Threading has been used before cthreads was inizialized.
+
+Then you need to add ``CThreads`` to the front of your ``Uses`` list of your
+program.
+
 
 Lazarus IDE
 ^^^^^^^^^^^
@@ -105,6 +115,23 @@ With Lazarus we can use our ``example_project/`` folder by clicking:
 * Click OK
 
 That's it, now the project can be compiled an executed!
+
+Runtime Error 211
+"""""""""""""""""
+
+If you get Runtime Error 211 on starting your program or it prints::
+
+ Threading has been used before cthreads was initialized.
+
+Then you need to add ``-dUseCThreads`` to the Lazarus compiler options at:
+
+* Project
+* Project Options ...
+* Compiler Options
+* Other
+
+Then recompile the project. If that does not fix the problem then you need to
+add ``CThreads`` to the front of your ``Uses`` list of your program.
 
 
 Delphi IDE
