@@ -61,6 +61,53 @@ Ressourcen
 Anschlussmöglichkeiten
 ----------------------
 
+Das RS232 Bricklet kann auf drei verschiedene Weisen mit seriellen Geräten
+verbunden werden: klassischer D-Sub 9 Stecker, 5er Anschlussklemmenblock oder
+5er Stiftleiste. Es kann aber nur eine dieser Anschlussmöglichkeiten zur
+gleichen Zeit genutzt werden.
+
+.. image:: /Images/Bricklets/bricklet_rs232_caption_600.jpg
+   :scale: 100 %
+   :alt: RS232 Bricklet Steckerbelegung
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_rs232_caption_1200.jpg
+
+D-Sub 9 Stecker
+^^^^^^^^^^^^^^^
+
+Der D-Sub 9 Stecker verwendet `RS-232 <https://en.wikipedia.org/wiki/RS-232>`__
+Signalpegel. Um diesen Anschluss verwenden zu können müssen der RX1 und RX2 Pin
+der Stiftleiste mit einem Jumper verbunden werden.
+
+Der Anschluss verwendet den folgenden Teil der RS-232 Standardbelegung:
+
+=== ================= ===
+Pin Funktion
+=== ================= ===
+2   Eingehende Daten  RX
+3   Ausgehende Daten  TX
+5   Masse             GND
+7   Sendeanforderung  RTS
+8   Sendeerlaubnis    CTS
+=== ================= ===
+
+Anschlussklemmenblock
+^^^^^^^^^^^^^^^^^^^^^
+
+Der 5er Anschlussklemmenblock stellt die gleichen fünf RS-232 Signale (RX, TX,
+RTS, CTS und GND) mit dem gleichen RS-232 Signalpegel bereit wie der D-Sub 9
+Stecker. Um diesen Anschluss verwenden zu können müssen der RX1 und RX2 Pin der
+Stiftleiste mit einem Jumper verbunden werden.
+
+Stiftleiste
+^^^^^^^^^^^
+
+Die 5er Stiftleiste stellt die eingehende Daten (RX1) und ausgehende Daten (TX)
+Signale mit 3,3V TTL Signalpegel bereit, sowie 3,3V und GND. Die Signale RTS
+und CTS sind nicht verfügbar. Um diesen Anschluss verwenden zu können muss der
+Jumper entfernt werden, der die RX1 und RX2 Pins der Stiftleiste verbindet. Der
+Jumper kann seitlich auf dem RX2 Pin geparkt werden.
+
 
 .. _rs232_bricklet_test:
 
