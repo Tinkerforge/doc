@@ -67,6 +67,12 @@ At first some information about the general command structure:
    ``,`` (comma)
  * ``--group-separator <group-separator>`` separator for output groups,
    default: ``\n`` (newline)
+ * ``--array-ellipsis <array-ellipsis>`` ellipsis for arrays, default: ``..``
+   (two dots) (new in version 2.1.5)
+ * ``--no-escaped-input`` disables escaped input of values (new in version
+   2.1.5)
+ * ``--no-escaped-output`` disables escaped output of values (new in version
+   2.1.5)
  * ``--no-symbolic-input`` disables symbolic input of values
  * ``--no-symbolic-output`` disables symbolic output of values
 
@@ -93,6 +99,23 @@ At first some information about the general command structure:
  except before the first one, to separate the output of multiple callback
  invocations. See the section about :ref:`output formatting <ipcon_shell_output>`
  for details.
+
+ Since version 2.1.5 an array ellipsis can be used to specify partial arrays.
+ For example, the :sh:func:`write <rs232-bricklet write>` function of the RS232
+ Bricklet takes an array of 60 characters. Normally, all 60 items have to be
+ specified. With the array ellipsis a partial array can be specified (e.g.
+ ``t,e,s,t,..``) and the missing part will automatically be filled with ``'\0'``
+ characters.
+
+ Since version 2.1.5 escaped input and output is enabled by default. For
+ example, the :sh:func:`write-line <lcd-20x4-bricklet write-line>` function of
+ the LCD 20x4 Bricklet takes a string. This string has to specified in the
+ special character set of the display. For example, the degree sign (°) is
+ represented by a non-ASCII character with value 0xDF. With escaped input
+ enabled the degree sign can be specified as ``"\xDF"`` on the command line.
+ Ensure to quote such strings to stop the shell from interpreting it. With
+ escaped output enabled non-ASCII characters in string values will be
+ represented as ``\x`` escape sequence.
 
  By default symbolic input and output is enabled. For example, the
  :sh:func:`set-i2c-mode <temperature-bricklet set-i2c-mode>` function of the
@@ -216,8 +239,8 @@ Basic Functions
  Possible enumeration types are:
 
  * ``available`` = 0, the device is available (enumeration triggered by user:
-   :sh:func:`tinkerforge enumerate`). This enumeration type can occur multiple
-   times for the same device.
+   :sh:func:`enumerate <tinkerforge enumerate>`). This enumeration type can
+   occur multiple times for the same device.
  * ``connected`` = 1, the device is newly connected (automatically send by Brick
    after establishing a communication connection). This indicates that the
    device has potentially lost its previous configuration and needs to be

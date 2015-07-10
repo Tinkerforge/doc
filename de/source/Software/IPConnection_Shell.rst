@@ -69,6 +69,12 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
    Standard: ``,`` (Komma)
  * ``--group-separator <group-separator>`` Trennzeichen für Ausgabegruppen,
    Standard: ``\n`` (neue Zeile)
+ * ``--array-ellipsis <array-ellipsis>`` Auslassung für Arrays, Standard: ``..``
+   (zwei Punkte) (neu in Version 2.1.5)
+ * ``--no-escaped-input`` deaktiviert escapte Eingabe von Werten (neu in
+   Version 2.1.5)
+ * ``--no-escaped-output`` deaktiviert escapte Ausgabe von Werten (neu in
+   Version 2.1.5)
  * ``--no-symbolic-input`` deaktiviert symbolische Eingabe von Werten
  * ``--no-symbolic-output`` deaktiviert symbolische Ausgabe von Werten
 
@@ -98,6 +104,25 @@ Als erstes einige Information über die allgemeine Struktur der Befehle:
  als einer Zeile ausgegeben, außer der ersten, um die Ausgabe von mehreren
  Callback-Aufrufen zu trennen. Siehe den Abschnitt über
  :ref:`Ausgabeformatierung <ipcon_shell_output>` für mehr Details.
+
+ Seit Version 2.1.5 kann ein Auslassungszeichen für Arrays verwendet
+ werden, um unvollständig Arrays anzugeben. Zum Beispiel nimmt die
+ :sh:func:`write <rs232-bricklet write>` Funktion des RS232 Bricklets einen
+ Array mit 60 Zeichen entgegen. Normalerweise, müssten immer alle 60 Zeichen
+ angegeben werden. Mit einem Auslassungszeichen kann der Array unvollständig
+ angegeben werden (z.B. ``t,e,s,t,..``) und der fehlende Teil wird automatisch
+ mit ``'\0'`` Zeichen aufgefüllt.
+
+ Seit Version 2.1.5 ist die escapte Eingabe und Ausgabe standardmäßig
+ aktiviert. Zum Beispiel nimmt die :sh:func:`write-line
+ <lcd-20x4-bricklet write-line>` Funktion des LCD 20x4 Bricklet einen String
+ entgegen. Dieser muss entsprechend des speziellen Zeichensatzes des LCDs
+ angegeben werden. Zum Beispiel wird das Gradzeichen (°) durch ein nicht-ASCII
+ Zeichen mit dem Wert 0xDF repräsentiert. Mit escapter Eingabe kann diese
+ Zeichen als ``"\xDF"`` im Befehl angegeben werden. Achte darauf solche Strings
+ in Anführungszeichen zu setzen, damit die Shell diesen nicht interpretiert.
+ Bei aktiver escapter Ausgabe werden nicht-ASCII Zeichen in String-Werten als
+ ``\x`` Escape-Sequenzen dargestellt.
 
  Standardmäßig ist die symbolische Eingabe und Ausgabe aktiviert. Zum Beispiel
  kann die :sh:func:`set-i2c-mode <temperature-bricklet set-i2c-mode>` Funktion
@@ -231,8 +256,8 @@ Grundfunktionen
  Mögliche Enumerierungsarten sind:
 
  * ``available`` = 0, das Gerät ist verfügbar (Enumerierung vom Benutzer
-   ausgelöst: :sh:func:`tinkerforge enumerate`). Diese Enumerierungsart kann
-   mehrfach für das selbe Gerät auftreten.
+   ausgelöst: :sh:func:`enumerate <tinkerforge enumerate>`). Diese
+   Enumerierungsart kann mehrfach für das selbe Gerät auftreten.
  * ``connected`` = 1, das Gerät wurde neu verbunden (Automatisch vom Brick
    gesendet nachdem die Kommunikation aufgebaut wurde). Dies kann bedeuten,
    dass das Gerät die vorher eingestellte Konfiguration verloren hat und neu
