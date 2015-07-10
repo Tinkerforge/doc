@@ -89,9 +89,9 @@ Test your Industrial Dual Analog In Bricklet
 |test_intro|
 
 |test_connect|.
-Additionally connect a DC voltage source to the Bricklet. For testing purposes
-connect the 3.3V output pin to the IN0- pin and connect the GND pin to the IN0+
-pin.
+Additionally connect a DC voltage you want to measure to the Bricklet. For
+testing purposes connect the 3.3V output pin to the IN0- pin and connect the
+GND pin to the IN0+ pin.
 
 |test_tab|
 If everything went as expected you can now see the voltage in Volt

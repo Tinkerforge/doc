@@ -61,6 +61,26 @@ Ressourcen
 Erster Test
 -----------
 
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+Wenn alles wie erwartet funktioniert wird die Beleuchtungsstärke in Lux
+angezeigt. Der Graph gibt den zeitlichen Verlauf der Beleuchtungsstärke wieder.
+
+Ein guter Test für den Sensor ist es den Raum abzudunkeln und eine Taschenlampe
+langsam über den Sensor hinweg zu bewegen. Der resultierende Graph sollte
+ungefähr so aussehen wie auf dem folgenden Screenshot.
+
+.. image:: /Images/Bricklets/bricklet_ambient_light_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Ambient Light Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_ambient_light_v2_brickv.jpg
+
+|test_pi_ref|
+
 
 .. _ambient_light_v2_bricklet_case:
 

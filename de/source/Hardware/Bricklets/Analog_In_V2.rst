@@ -71,6 +71,26 @@ und GND kann die zu messende Spannung angelegt werden.
 Erster Test
 -----------
 
+|test_intro|
+
+|test_connect|.
+Als nächstes muss eine zu messende Gleichspannungsquelle mit dem Bricklet
+verbunden werden. Als Test kann z.B. die 5V oder 3,3V Anschlussklemme mit der
+VIN Anschlussklemme verbunden werden. Die beiden GND Anschlussklemmen sind
+intern schon verbunden.
+
+|test_tab|
+Wenn alles wie erwartet funktioniert wird die gemessene Spannung angezeigt.
+Der Graph gibt den zeitlichen Verlauf der Spannung wieder.
+
+.. image:: /Images/Bricklets/bricklet_analog_in_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Analog In Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_in_v2_brickv.jpg
+
+|test_pi_ref|
+
 
 .. _analog_in_v2_bricklet_case:
 

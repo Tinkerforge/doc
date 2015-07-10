@@ -58,10 +58,52 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/analog-out-v2-bricklet/zipball/master>`__)
 
 
+Anschlussmöglichkeit
+--------------------
+
+Das Analog Out Bricklet 2.0 hat fünf Anschlussklemmen. Eine
+Gleichspannungsquelle (maximal 15V) muss an die VIN und die dazugehörige GND
+Anschlussklemme angeschlossen werden. Das Bricklet verwendet diese
+Eingangsspannung um die einstellbare Ausgangsspannung an der VOUT
+Anschlussklemme zu erzeugen. Die 5V Anschlussklemme stellt 5V bereit. Diese
+können z.B. genutzt werden, um die VIN Anschlussklemme zu versorgen.
+
+.. image:: /Images/Bricklets/bricklet_analog_out_v2_vertical_350.jpg
+    :scale: 100 %
+    :alt: Analog Out Bricklet 2.0 Anschlussklemmen
+    :align: center
+    :target: ../../_images/Bricklets/bricklet_analog_out_v2_vertical_1200.jpg
+
+
 .. _analog_out_v2_bricklet_test:
 
 Erster Test
 -----------
+
+|test_intro|
+
+|test_connect|.
+Zusätzlich muss eine Gleichspannungsquelle an die VIN und GND Anschlussklemmen
+des Bricklets angeschlossen werden. Als Test kann die 5V Anschlussklemme mit
+der VIN Anschlussklemme verbunden werden. Die GND Anschlussklemmen sind intern
+bereits verbunden.
+
+|test_tab|
+Auf diesem Tab kann die Ausgangsspannung an der VOUT Anschlussklemme
+eingestellt werden. Die maximale VOUT Ausgangsspannung ist begrenzt durch die
+Eingangsspannung an der VIN Anschlussklemme.
+
+Zu Testzwecken kann die VOUT Ausgangsspannung mit einem Voltmeter gemessen
+werden. Wenn alles wie erwartet funktioniert sollte die eingestellte Spannung
+mit der Messung des Voltmeters übereinstimmen.
+
+.. image:: /Images/Bricklets/bricklet_analog_out_v2_brickv.jpg
+   :scale: 100 %
+   :alt: Analog Out Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_analog_out_v2_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _analog_out_v2_bricklet_case:

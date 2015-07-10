@@ -63,9 +63,9 @@ Resources
 Connectivity
 ------------
 
-The Analog In Bricklet 2.0 has five terminals. With these terminals you can access
-the following output signals: 5V, 3.3V as well as GND. The voltage you want
-to measure can be applied between the VIN and the GND terminal.
+The Analog In Bricklet 2.0 has five terminals. With these terminals you can
+access the following output signals: 5V, 3.3V as well as GND. The voltage you
+want to measure can be applied between the VIN and the GND terminal.
 
 .. image:: /Images/Bricklets/bricklet_analog_in_v2_vertical_350.jpg
    :scale: 100 %
@@ -82,9 +82,9 @@ Test your Analog In Bricklet 2.0
 |test_intro|
 
 |test_connect|.
-Additionally connect a DC voltage source to the Bricklet. For testing purposes
-connect the 5V or 3.3V output terminal to the VIN terminal. The GND terminals
-are already connected internally.
+Additionally connect a DC voltage you want to measure to the Bricklet. For
+testing purposes connect the 5V or 3.3V output terminal to the VIN terminal.
+The GND terminals are already connected internally.
 
 |test_tab|
 If everything went as expected you can now see the voltage in Volt

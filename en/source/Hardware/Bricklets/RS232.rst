@@ -83,7 +83,7 @@ editbox and hit enter. The same text should then show up in the textarea above.
 
 .. image:: /Images/Bricklets/bricklet_rs232_brickv.jpg
    :scale: 100 %
-   :alt: RS232 in Brick Viewer
+   :alt: RS232 Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_rs232_brickv.jpg
 

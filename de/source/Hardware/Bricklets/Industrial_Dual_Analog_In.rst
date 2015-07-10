@@ -79,6 +79,25 @@ Das folgende Bild stellt die Anschlussmöglichkeiten dar:
 Erster Test
 -----------
 
+|test_intro|
+
+|test_connect|.
+Als nächstes muss eine zu messende Gleichspannungsquelle mit dem Bricklet
+verbunden werden. Als Test kann der 3,3V Ausgang mit dem IN0- Eingang und der
+GND Pin mit dem IN0+ Eingang verbunden werden.
+
+|test_tab|
+Wenn alles wie erwartet funktioniert wird die gemessene Spannung angezeigt.
+Der Graph gibt den zeitlichen Verlauf der Spannung wieder.
+
+.. image:: /Images/Bricklets/bricklet_industrial_dual_analog_in_brickv.jpg
+   :scale: 100 %
+   :alt: Industrial Dual Analog In Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_brickv.jpg
+
+|test_pi_ref|
+
 
 .. _industrial_dual_analog_in_bricklet_case:
 

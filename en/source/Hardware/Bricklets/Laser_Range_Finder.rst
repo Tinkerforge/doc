@@ -78,7 +78,7 @@ below we slowly moved a hand away from the sensor and to the sensor again.
 
 .. image:: /Images/Bricklets/bricklet_laser_range_finder_brickv.jpg
    :scale: 100 %
-   :alt: Laser Range Finder in Brick Viewer
+   :alt: Laser Range Finder Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_laser_range_finder_brickv.jpg
 

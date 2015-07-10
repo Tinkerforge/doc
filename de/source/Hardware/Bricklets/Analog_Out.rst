@@ -139,7 +139,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_analog_out_master_1200.jpg
 
 |test_tab|
-Auf diesem Tab kann die Ausgangsspannung am VOUT Pin eingestellt werden.
+Auf diesem Tab kann die Ausgangsspannung an der VOUT Anschlussklemme
+eingestellt werden.
 
 Zu Testzwecken kann die Ausgangsspannung mit einem Voltmeter gemessen
 werden. Wenn alles wie erwartet funktioniert sollte die eingestellte Spannung
@@ -159,7 +160,8 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das Analog Out Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-analog-in-out-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-analog-in-out-bricklet.html>`__
+ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_analog_in_case_build_up_350.jpg
    :scale: 100 %

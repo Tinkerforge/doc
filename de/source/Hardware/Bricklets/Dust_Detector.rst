@@ -61,6 +61,22 @@ Ressourcen
 Erster Test
 -----------
 
+|test_intro|
+
+|test_connect|.
+
+|test_tab|
+Wenn alles wie erwartet funktioniert wird die Staubdichte in µg/m³
+angezeigt. Der Graph gibt den zeitlichen Verlauf der Staubdichte wieder.
+
+.. image:: /Images/Bricklets/bricklet_dust_detector_brickv.jpg
+   :scale: 100 %
+   :alt: Dust Detector Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_dust_detector_brickv.jpg
+
+|test_pi_ref|
+
 
 .. _dust_detector_bricklet_case:
 
