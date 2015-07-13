@@ -18,7 +18,7 @@ Laser Range Finder Bricklet
 Features
 --------
 
-* Misst Entfernung unf Geschwindigkeit mit Laser Licht
+* Misst Entfernung unf Geschwindigkeit mit Laser-Pulsen
 * Entfernungs-Messbereich 0-40m mit 1cm Auflösung
 * Geschwindigkeits-Messbereich bis zu 0-127m/s mit bis 0,1m/s Auflösung
 
@@ -27,6 +27,11 @@ Features
 
 Beschreibung
 ------------
+
+Mit dem Laser Range Finder :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Entfernungen und Geschwindingkeiten messen.
+Dies wird der `Laufzeitmessung <https://de.wikipedia.org/wiki/Laufzeitmessung>`__
+von Laser-Pulsen bewerkstelligt.
 
 
 Technische Spezifikation

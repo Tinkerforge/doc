@@ -31,9 +31,9 @@ Features
 Description
 -----------
 
-The IMU Brick 2.0 is the successor of the :ref:`IMU Brick <imu_brick>`. It has
-higher resolution sensors, easier recalibration, additional
-continuous calibration and an **accuracy increase by two orders of magnitude**.
+The IMU Brick 2.0 is the successor of the :ref:`imu_brick` with
+higher resolution sensors, easier recalibration, additional continuous
+self-calibration and an **accuracy increase by two orders of magnitude**.
 
 The IMU :ref:`Brick <primer_bricks>` 2.0 is equipped with a 3-axis
 accelerometer, magnetometer (compass) and gyroscope and works as a **USB**
@@ -127,6 +127,15 @@ mirrored in the Brick Viewer.
 
 Calibration
 -----------
+
+The IMU Brick 2.0 does continuous self-calibration during usage. It is not
+necessary to start a specific manual calibration process. The IMU can store the
+calibration data to speed-up the self-calibration after each restart. This
+data is initialized at the factory.
+
+Click the "Calibration" button in Brick Viewer to see the current continuous
+self-calibration status. The dialog also allows to update the saved calibration
+data.
 
 
 .. _imu_v2_brick_programming_interface:

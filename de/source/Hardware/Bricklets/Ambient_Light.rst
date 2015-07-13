@@ -72,7 +72,7 @@ ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf
 Helligkeitsänderungen zu reagieren ohne die Werte laufend abzufragen
 (kein Polling notwendig).
 
-Dieses Board kann genutzt werden um z.B. helligkeitsabhängig Beleuchtungen
+Dieses Bricklet kann genutzt werden um z.B. helligkeitsabhängig Beleuchtungen
 oder Motoren zu steuern.
 
 

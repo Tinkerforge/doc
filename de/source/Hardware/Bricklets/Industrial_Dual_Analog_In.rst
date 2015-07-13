@@ -30,6 +30,13 @@ Features
 Beschreibung
 ------------
 
+Mit dem Industrial Dual Analog In :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Spannungen präzise messen. Beide Kanäle des
+Brickles sind kalibriert, so dass die Spannungsmessung sehr verlässlich ist.
+
+Mit konfigurierbaren Events ist es möglich auf Spannungsänderungen zu
+reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
+
 
 Technische Spezifikation
 ------------------------

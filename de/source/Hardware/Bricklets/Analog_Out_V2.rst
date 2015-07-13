@@ -27,6 +27,20 @@ Features
 Beschreibung
 ------------
 
+Das Analog Out :ref:`Bricklet <primer_bricklets>` 2.0 kann genutzt werden
+um :ref:`Bricks <primer_bricks>` mit einem 12Bit `Digital-Analog-Wandler
+<http://de.wikipedia.org/wiki/Digital-Analog-Umsetzer>`__ zu erweitern.
+Mit diesem können elektrische Spannungen von 0V bis 12V* generiert werden.
+Die Spannung kann direkt in `Volt <http://en.wikipedia.org/wiki/Volt>`__
+angegeben werden.
+
+Für Ausgangsspannungen über 5V muss eine zusätzliche externe Spannungsquelle
+angeschlossen werden. Die maximal erreichbare Ausgangsspannung entspricht der
+Versorgungsspannung. Soll z.b. 12V ausgegeben werden, so muss das Bricklet
+auch mit mindestens 12V versorgt werden.
+Für Ausgangsspannungen bis 5V können die :ref:`5V und VIN Anschlussklemmen
+<analog_out_v2_bricklet_connectivity>` verbunden werden.
+
 
 Technische Spezifikation
 ------------------------
@@ -46,7 +60,7 @@ Abmessungen (B x T x H)           35 x 30 x 14mm (1,38 x 1,18 x 0,55")
 Gewicht                           TBDg
 ================================  ============================================================
 
-\* Die maximale Spannung hängt von der Versorgungsspannung am VIN Pin ab.
+\* Die maximale Spannung hängt von der Versorgungsspannung an VIN ab.
 
 
 Ressourcen
@@ -58,6 +72,8 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/analog-out-v2-bricklet/zipball/master>`__)
 
 
+.. _analog_out_v2_bricklet_connectivity:
+
 Anschlussmöglichkeit
 --------------------
 
@@ -66,7 +82,9 @@ Gleichspannungsquelle (maximal 15V) muss an die VIN und die dazugehörige GND
 Anschlussklemme angeschlossen werden. Das Bricklet verwendet diese
 Eingangsspannung um die einstellbare Ausgangsspannung an der VOUT
 Anschlussklemme zu erzeugen. Die 5V Anschlussklemme stellt 5V bereit. Diese
-können z.B. genutzt werden, um die VIN Anschlussklemme zu versorgen.
+können z.B. genutzt werden, um die VIN Anschlussklemme zu versorgen, so dass
+Ausgangsspannung bis zu 5V an VOUT ausgegeben werden können, ohne zusätzliche
+externe Spannungsquelle.
 
 .. image:: /Images/Bricklets/bricklet_analog_out_v2_vertical_350.jpg
     :scale: 100 %

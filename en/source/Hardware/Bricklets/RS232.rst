@@ -19,7 +19,7 @@ Features
 --------
 
 * Sends and receives serial data
-* Provides RS232 and UART-TTL interface
+* Provides RS-232 and UART-TTL interface
 * Configurable baudrate, parity, stop bits, word length and flow control
 
 
@@ -29,9 +29,9 @@ Description
 -----------
 
 The RS232 :ref:`Bricklet <primer_bricklets>` can be used to
-extend the features of :ref:`Bricks <primer_bricks>` by the
-capability to send and receive serial data to comminucate with
-other serial devices.
+extend the features of :ref:`Bricks <primer_bricks>` by the capability to send
+and receive serial data with `RS-232 <https://en.wikipedia.org/wiki/RS-232>`__
+3.3V TTL signal level to comminucate with other serial devices.
 
 
 Technical Specifications
@@ -98,7 +98,7 @@ Terminal Block
 ^^^^^^^^^^^^^^
 
 The 5-way terminal block provides the same five RS-232 signals (RX, TX, RTS,
-CTS and GND) as the D-Sub 9 connector with the same ±15V signal level. To use
+CTS and GND) as the D-Sub 9 connector with the same RS-232 signal level. To use
 this connector the RX1 and RX2 pins on the pin header have to be connected by
 a jumper.
 

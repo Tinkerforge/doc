@@ -70,7 +70,8 @@ Dieser kann 9 Freiheitsgrade messen und berechnet
 `Quaternionen <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
 sowie auch `Roll-, Nick- und Gier-Winkel
 <http://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__. Es ist ein vollständiges
-`Attitude and Heading Reference System <http://de.wikipedia.org/wiki/Attitude_Heading_Reference_System>`__.
+`Attitude and Heading Reference System
+<http://de.wikipedia.org/wiki/Attitude_Heading_Reference_System>`__.
 
 Die API, verfügbar für 
 :ref:`viele Programmiersprachen <imu_brick_programming_interface>`, erlaubt den 
@@ -82,11 +83,10 @@ zur Euler-Winkel Darstellung).
 
 Über zwei Anschlüsse können :ref:`Bricklets <primer_bricklets>` 
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Als Beispiel 
-kann ein :ref:`GPS Bricklet <gps_bricklet>` angeschlossen werden um 
-Positionsdaten zu ermitteln. Ein 
-`Youtube Video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__ zeigt, wie der
-Brick zusammen mit einem :ref:`Barometer Bricklet <barometer_bricklet>` genutzt
-werden kann um die Höhe zu bestimmen.
+kann ein :ref:`gps_bricklet` angeschlossen werden um Positionsdaten zu
+ermitteln. Ein `Youtube Video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__
+zeigt, wie der Brick zusammen mit einem :ref:`Barometer Bricklet
+<barometer_bricklet>` genutzt werden kann um die Höhe zu bestimmen.
 
 Der IMU Brick kann aber auch mit anderen Bricks in einem 
 :ref:`Stapel <primer_stack>` genutzt werden.

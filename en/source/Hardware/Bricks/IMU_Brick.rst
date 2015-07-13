@@ -82,8 +82,7 @@ as known from Euler angles.
 Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the 
 features of this Brick. For Example a :ref:`GPS Bricklet <gps_bricklet>` can be
 attached to get position information. 
-A 
-`Youtube video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__ shows, how the 
+A `Youtube video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__ shows, how the
 Brick can be used together with a :ref:`Barometer Bricklet <barometer_bricklet>` 
 to gain altitude information.
 
@@ -174,7 +173,7 @@ interfering magnetic fields. If you want to operate the IMU Brick near something
 that has a magnetic field (e.g. near a motor), you will have to recalibrate
 the magnetometer in the exact position where it will be used later on!
 
-To calibrate the magnetometer press on "Calibrate" in the Brick Viewer and
+To calibrate the magnetometer click on "Calibrate" in the Brick Viewer and
 choose the "Magnetometer" tab of the new window. Press "Start Calibration"
 and now change the orientation of the IMU Brick until the bias and gain values
 shown in the GUI do not change anymore. Press "Ready" when this is the case

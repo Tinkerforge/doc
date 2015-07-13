@@ -28,17 +28,18 @@ Description
 
 The Analog Out :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
-capability to generate voltages between 0V and 12V.
+capability to generate voltages between 0V and 12V*.
 The voltage can be configured directly in `Volt
 <http://en.wikipedia.org/wiki/Volt>`__ without any conversion.
 The device is equipped with a 12bit `Digital-to-Analog Converter (DAC)
 <http://en.wikipedia.org/wiki/Digital-to-analog_converter>`__.
 
 For output voltages above 5V, it is necessary to add an external supply voltage.
-The maximum reachable voltage will be the value of the supply voltage. For
-example, if you want to reach an output voltage of 12V, you need to connect a
-supply voltage of at least 12V.
-For output voltages below 5V, you can `connect "5V Out" to "VIN" <TBD>`__.
+The maximum reachable output voltage will be the value of the supply voltage.
+For example, if you want to reach an output voltage of 12V, you need to connect
+a supply voltage of at least 12V.
+For output voltages below 5V, you can :ref:`connect the 5V and VIN terminals
+<analog_out_v2_bricklet_connectivity>`.
 
 
 Technical Specifications
@@ -69,6 +70,7 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/analog_out_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/analog-out-v2-bricklet/zipball/master>`__)
 
+.. _analog_out_v2_bricklet_connectivity:
 
 Connectivity
 ------------
@@ -77,7 +79,9 @@ The Analog Out Bricklet 2.0 has five terminals. A DC voltage source (maximum
 15V) has to be connected to the VIN terminal and the adjacent GND terminal.
 The Bricklet uses this input voltage to created the configurable output voltage
 for the VOUT terminal. The 5V terminal is an additional output with fixed 5V
-you can use to power things. It can also be connected to the VIN terminal.
+you can use to power things. It can also be connected to the VIN terminal to
+produce output voltages up to 5V at the VOUT terminal withou the need for an
+additional external power supply.
 
 .. image:: /Images/Bricklets/bricklet_analog_out_v2_vertical_350.jpg
     :scale: 100 %

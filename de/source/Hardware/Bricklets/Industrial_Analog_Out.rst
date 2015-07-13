@@ -29,6 +29,12 @@ Features
 Beschreibung
 ------------
 
+Das Industrial Analog Out :ref:`Bricklet <primer_bricklets>` kann genutzt werden
+um :ref:`Bricks <primer_bricks>` mit einem 12Bit `Digital-Analog-Wandler
+<http://de.wikipedia.org/wiki/Digital-Analog-Umsetzer>`__ zu erweitern.
+Mit diesem können gekoppelte elektrische Spannungen und Ströme generiert werden.
+Die Spannung kann in mV und der Strom in µA angegeben werden.
+
 
 Technische Spezifikation
 ------------------------

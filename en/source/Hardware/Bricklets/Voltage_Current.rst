@@ -116,23 +116,6 @@ load with the terminal marked "OUT". The polarity is marked with "+" and "-".
  reversal!
 
 
-Calibration
------------
-
-The current measurement of the Voltage/Current Bricklet is factory calibrated
-at room temperature. The readings can shift by a few mA if the environment
-is very cold or very hot. In this case you can recalibrate the Bricklet
-with a precise multimeter:
-
-Start the Brick Viewer and set "Gain Multiplier" and "Gain Divisor" to 1, press
-"Save Calibration". Now read the real current measurement from your multimeter
-and put it in the "Gain Multiplier" field. Put the current current measurement
-from the Voltage/Current Bricklet in the "Gain Divisor" field and press
-"Save Calibration" again.
-
-Now the Voltage/Current Bricklet is calibrated for the new environment.
-
-
 .. _voltage_current_bricklet_test:
 
 First Test
@@ -165,6 +148,24 @@ utilizes about 40W power.
    :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.png
 
 |test_pi_ref|
+
+
+Calibration
+-----------
+
+The current measurement of the Voltage/Current Bricklet is factory calibrated
+at room temperature. The readings can shift by a few mA if the environment
+is very cold or very hot. In this case you can recalibrate the Bricklet
+with a precise multimeter:
+
+Start Brick Viewer and set "Gain Multiplier" and "Gain Divisor" to 1, press
+"Save Calibration". Now read the real current measurement from your multimeter
+and put it in the "Gain Multiplier" field. Put the current current measurement
+from the Voltage/Current Bricklet in the "Gain Divisor" field and press
+"Save Calibration" again.
+
+Now the Voltage/Current Bricklet is calibrated for the new environment.
+
 
 .. _voltage_current_bricklet_case:
 

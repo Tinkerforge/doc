@@ -32,6 +32,41 @@ Features
 Beschreibung
 ------------
 
+Der IMU Brick 2.0 ist der Nachfolger des :ref:`imu_brick` mit höher auflösenden
+Sensoren, einfacherer Kalibrierung, zusätzlicher kontinuierlicher
+Selbst-Kalibrierung und einer um **zwei Größenordnungen besseren Genauigkeit**.
+
+Der IMU :ref:`Brick <primer_bricks>` 2.0 ist mit je einem 3-Achsen
+Beschleunigungssensor, Magnetfeldsensor (Kompass) und Gyroskop ausgestattet und
+arbeitet als **USB**
+`Inertialsensor <http://de.wikipedia.org/wiki/Inertialsensor>`__.
+Dieser kann 9 Freiheitsgrade messen und berechnet
+`Quaternionen <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
+sowie auch `Gier-, Roll- und Nick-Winkel
+<http://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__. Es ist ein vollständiges
+`Attitude and Heading Reference System
+<http://de.wikipedia.org/wiki/Attitude_Heading_Reference_System>`__.
+
+Die API, verfügbar für
+:ref:`viele Programmiersprachen <imu_brick_programming_interface>`, erlaubt den
+Zugriff auf die berechneten Daten sowie auf die Beschleunigung, Magnetfeld und
+Winkelgeschwindigkeiten für die drei Achsen. Wenn die Quaternionen-Darstellung
+benutzt wird, ist der IMU Brick
+`Gimbal Lock <http://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei (im Gegensatz
+zur Euler-Winkel Darstellung).
+
+Über zwei Anschlüsse können :ref:`Bricklets <primer_bricklets>`
+angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Als Beispiel
+kann ein :ref:`gps_bricklet` angeschlossen werden um Positionsdaten zu ermitteln.
+
+Der IMU Brick 2.0 kann aber auch mit anderen Bricks in einem
+:ref:`Stapel <primer_stack>` genutzt werden.
+Zum Beispiel kann ein zusätzlicher :ref:`Master Brick <master_brick>` mit
+:ref:`Master Extensions <primer_master_extensions>` genutzt werden,
+um die USB Verbindung durch andere kabelgebundene Schnittstellen
+(:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`)
+oder drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`) zu ersetzen.
+
 
 Technische Spezifikation
 ------------------------
@@ -99,6 +134,16 @@ widergespiegelt werden.
 
 Kalibrierung
 ------------
+
+Der IMU Brick 2.0 führt durchgehend eine Selbst-Kalibrierung durch.
+Es ist nicht notwendig eine gesonderte Kalibrierung von Hand durchzuführen. Die
+IMU kann die Kalibrierungsdaten speichern, um die Selbst-Kalibrierung nach
+einem Neustart zu beschleunigen. Diese Kalibrierungsdaten werden bei der
+Produktion bereits gesetzt.
+
+Klicke den "Calibration" Knopf im Brick Viewer, um den aktuellen Zustand der
+durchgehenden Selbst-Kalibrierung einzusehen. Auf diesem Dialog können auch die
+gespeicherten Kalibrierungsdaten aktualisiert werden.
 
 
 .. _imu_v2_brick_programming_interface:

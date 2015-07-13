@@ -36,7 +36,7 @@ Resources
 .. _oled_128x64_bricklet_test:
 
 Test your OLED 128x64 Bricklet
------------------------------
+------------------------------
 
 
 .. _oled_128x64_bricklet_case:

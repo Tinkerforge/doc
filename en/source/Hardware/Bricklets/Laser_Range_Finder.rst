@@ -18,7 +18,7 @@ Laser Range Finder Bricklet
 Features
 --------
 
-* Measures distance and velocity with laser light
+* Measures distance and velocity with laser pulses
 * Distance range 0-40m, resolution 1cm
 * Velocity range up to 0-127m/s, resolution up to 0.1m/s
 
@@ -30,8 +30,10 @@ Description
 
 The Laser Range Finder :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
-capability to measure distances. The distance is measured with the help
-of a laser pulse and the time of flight principle.
+capability to measure distances and velocity. The distance is measured with
+the help of a laser pulse and the `time-of-flight
+<https://en.wikipedia.org/wiki/Time_of_flight>`__ principle.
+
 
 Technical Specifications
 ------------------------

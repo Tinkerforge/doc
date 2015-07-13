@@ -32,7 +32,7 @@ Description
 
 The Industrial Dual Analog In :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
-capability to measure voltages.
+capability to precisely measure voltages.
 Both channels of the Bricklet are calibrated. The voltage measurement can
 used with an extremely high level of confidence.
 

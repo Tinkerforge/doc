@@ -26,6 +26,17 @@ Features
 Beschreibung
 ------------
 
+Mit dem CO2 :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` die `CO2 Konzentration
+<https://de.wikipedia.org/wiki/Kohlenstoffdioxid>`__ der Luft messen.
+Die gemessene CO2 Konzentration kann in `ppm
+<https://de.wikipedia.org/wiki/Parts_per_million>`__
+ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf
+CO2 Konzentrationsänderungen zu reagieren ohne die Werte laufend abzufragen
+(kein Polling notwendig).
+
+Dieses Bricklet kann genutzt werden TBD.
+
 
 Technische Spezifikation
 ------------------------

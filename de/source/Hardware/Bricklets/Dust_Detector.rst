@@ -26,6 +26,15 @@ Features
 Beschreibung
 ------------
 
+Mit dem Dust Detector :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Staubdichte messen. Die gemessene Staubdichte
+kann in µg/m³ ausgelesen werden.
+Mit konfigurierbaren Events ist es möglich auf Staubdichteänderungen zu
+reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
+
+Typische Anwendungsmöglichkeiten sind die Messung von Zigarettenqualm, Smog,
+Hausstaub, Pollen usw.
+
 
 Technische Spezifikation
 ------------------------

@@ -27,6 +27,14 @@ Features
 Beschreibung
 ------------
 
+Das Analog In :ref:`Bricklet <primer_bricklets>` 2.0 kann benutzt werden
+um :ref:`Bricks <primer_bricks>` die Möglichkeit zu geben elektrische
+Spannungen zu messen. Die gemessene Spannung kann direkt in `Volt
+<http://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.
+
+Mit konfigurierbaren Events ist es möglich auf Spannungsänderungen zu
+reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
+
 
 Technische Spezifikation
 ------------------------

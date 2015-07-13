@@ -117,26 +117,6 @@ und "-" vor der Klemme gekennzeichnet.
  verpolungssicher!
 
 
-Kalibrierung
-------------
-
-Die Strommessung des Voltage/Current Bricklet ist bei Raumtemperatur
-Werkskalibriert worden. Die Messwerte können um wenige mA
-verschieben falls in einer sehr kalten oder sehr warmen Umgebung
-gemessen wird. Mit einem präzisen Multimeter kann dies allerdings
-leicht behoben werden:
-
-Dazu muss zuerst im Brick Viewer für den "Gain Multiplier" und
-"Gain Divisor" 1 eingetragen werden. Dann muss "Save Calibration"
-geklickt werden und danach kann dann der reale Strom
-vom Multimeter abgelesen werden und im Feld "Gain Multiplier"
-eingetragen werden. Im Feld "Gain Divisor" wird der aktuelle
-Messwert des Voltage/Current Bricklet eingetragen. Danach
-noch einmal "Save Calibration" klicken.
-
-Das Voltage/Current Bricklet ist nun für die neue Umgebung kalibriert.
-
-
 .. _voltage_current_bricklet_test:
 
 Erster Test
@@ -171,6 +151,27 @@ und der Motor ungefähr 40W Leistung verbraucht.
    :target: ../../_images/Bricklets/bricklet_voltage_current_brickv.png
 
 |test_pi_ref|
+
+
+Kalibrierung
+------------
+
+Die Strommessung des Voltage/Current Bricklet ist bei Raumtemperatur
+Werkskalibriert worden. Die Messwerte können um wenige mA
+verschieben falls in einer sehr kalten oder sehr warmen Umgebung
+gemessen wird. Mit einem präzisen Multimeter kann dies allerdings
+leicht behoben werden:
+
+Dazu muss zuerst im Brick Viewer für den "Gain Multiplier" und
+"Gain Divisor" 1 eingetragen werden. Dann muss "Save Calibration"
+geklickt werden und danach kann dann der reale Strom
+vom Multimeter abgelesen werden und im Feld "Gain Multiplier"
+eingetragen werden. Im Feld "Gain Divisor" wird der aktuelle
+Messwert des Voltage/Current Bricklet eingetragen. Danach
+noch einmal "Save Calibration" klicken.
+
+Das Voltage/Current Bricklet ist nun für die neue Umgebung kalibriert.
+
 
 .. _voltage_current_bricklet_case:
 

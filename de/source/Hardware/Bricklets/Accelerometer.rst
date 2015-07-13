@@ -29,6 +29,17 @@ Features
 Beschreibung
 ------------
 
+Mit dem Accelerometer :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` Beschleunigung entlang der X- Y- und Z-Achse
+messen. Die gemessene Beschleunigung kann in `g
+<https://de.wikipedia.org/wiki/G-Kraft>`__ ausgelesen werden. Mit
+konfigurierbaren Events ist es möglich auf Beschleunigungsänderungen zu
+reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
+
+Auf dem Bricklet befindet sich eine LED die mittels API ein- und ausgeschaltet
+werden kann, um z.B. anzuzeigen, dass eine bestimmte Beschleunigung erreicht
+wurde.
+
 
 Technische Spezifikation
 ------------------------

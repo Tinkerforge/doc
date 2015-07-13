@@ -31,10 +31,11 @@ Description
 
 The Industrial Analog Out :ref:`Bricklet <primer_bricklets>`
 can be used to extend the features of :ref:`Bricks <primer_bricks>`
-by the capability to output voltage and current.
+by the capability to output voltage and current simultaneous.
+The voltage can be given in mV and the current in µA.
+The device is equipped with a 12-bit `Digital-to-Analog Converter (DAC)
+<http://en.wikipedia.org/wiki/Digital-to-analog_converter>`__.
 
-Voltage and current output are simultaneous. The voltage can
-be given in mV and the current in µA.
 
 Technical Specifications
 ------------------------

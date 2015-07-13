@@ -19,7 +19,7 @@ Features
 --------
 
 * Sendet und empfängt serielle Daten
-* Bietet RS232 und UART-TTL Schnittstelle
+* Bietet RS-232 und UART-TTL Schnittstelle
 * Einstellbare Baudrate, Parität, Stopbits, Wortlänge und Flusskontrolle
 
 
@@ -27,6 +27,11 @@ Features
 
 Beschreibung
 ------------
+
+Mit dem RS232 :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` seriell Daten mit `RS-232
+<https://de.wikipedia.org/wiki/RS-232>`__ und 3,3V TTL Signalpegel
+senden und empfangen, um mit anderen seriellen Geräten zu kommunizieren.
 
 
 Technische Spezifikation
@@ -75,7 +80,7 @@ gleichen Zeit genutzt werden.
 D-Sub 9 Stecker
 ^^^^^^^^^^^^^^^
 
-Der D-Sub 9 Stecker verwendet `RS-232 <https://en.wikipedia.org/wiki/RS-232>`__
+Der D-Sub 9 Stecker verwendet die `RS-232 <https://de.wikipedia.org/wiki/RS-232>`__
 Signalpegel. Um diesen Anschluss verwenden zu können müssen der RX1 und RX2 Pin
 der Stiftleiste mit einem Jumper verbunden werden.
 
