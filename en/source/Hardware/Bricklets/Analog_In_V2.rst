@@ -28,7 +28,8 @@ Description
 
 The Analog In :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the capability to
-measure voltages. The voltage can be read out in `Volt
+measure voltages. It is the successor of the :ref:`analog_in_bricklet`.
+The voltage can be read out in `Volt
 <https://en.wikipedia.org/wiki/Volt>`__ directly without conversions necessary.
 
 With configurable events it is possible to react on changing
@@ -48,7 +49,7 @@ Voltage                           0V - 42V (DC) in 1mV steps, 12bit resolution (
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            35 x 30 x 14mm (1.38 x 1.18 x 0.55")
-Weight                            TBDg
+Weight                            8g
 ================================  ============================================================
 
 

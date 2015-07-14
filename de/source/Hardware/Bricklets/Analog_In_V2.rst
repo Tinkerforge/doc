@@ -29,8 +29,9 @@ Beschreibung
 
 Das Analog In :ref:`Bricklet <primer_bricklets>` 2.0 kann benutzt werden
 um :ref:`Bricks <primer_bricks>` die Möglichkeit zu geben elektrische
-Spannungen zu messen. Die gemessene Spannung kann direkt in `Volt
-<http://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.
+Spannungen zu messen. Es ist der Nachfolger des :ref:`analog_in_bricklet`.
+Die gemessene Spannung kann direkt in `Volt
+<https://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.
 
 Mit konfigurierbaren Events ist es möglich auf Spannungsänderungen zu
 reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
@@ -49,7 +50,7 @@ Elektrische Spannung              0V - 42V (DC) in 1mV Schritten, 12Bit Auflösu
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           35 x 30 x 14mm (1,38 x 1,18 x 0,55")
-Gewicht                           TBDg
+Gewicht                           8g
 ================================  ============================================================
 
 Ressourcen
