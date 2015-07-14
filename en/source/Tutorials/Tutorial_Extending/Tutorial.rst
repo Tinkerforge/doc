@@ -14,7 +14,7 @@ with the :ref:`Programming Interface <programming_interface>`.
 In the first part we use the :ref:`DC Brick <dc_brick>`
 to drive a motor. After this we make the velocity of this motor
 controllable by a rotary
-`potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`__ by attaching
+`potentiometer <https://en.wikipedia.org/wiki/Potentiometer>`__ by attaching
 a :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`. At the end
 we show how to stack Bricks together to reduce wiring and
 communicate over wireless or cable based interfaces.
@@ -68,7 +68,7 @@ and the current used by the motor as "Current Consumption" as well as
 a representation of the current velocity on the right side.
 Different sliders allow you to modify velocity and acceleration
 of the motor as well as the
-`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency
+`PWM <https://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency
 of the driver. After clicking "Enable" you are in control of the motor.
 
 
@@ -79,7 +79,7 @@ The DC Brick and motor are verified to work properly, there is now
 nothing in the way to write a first program that controls the DC Brick.
 
 You can choose one of the :ref:`available <api_bindings>` programming
-languages, in this tutorial we use `Python <http://www.python.org>`__.
+languages, in this tutorial we use `Python <https://www.python.org>`__.
 
 The necessary steps to get everything working are essentially
 the same in all programming language. This tutorial together with the

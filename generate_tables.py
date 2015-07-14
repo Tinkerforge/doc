@@ -61,11 +61,11 @@ binding_infos = \
                 {'en': 'http://www.php.net/manual/en/getting-started.php',
                  'de': 'http://www.php.net/manual/de/getting-started.php'}),
     BindingInfo('Python', 'python', 'Python', True, True,
-                {'en': 'http://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
-                 'de': 'http://www.python.org/about/gettingstarted/'}),
+                {'en': 'https://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
+                 'de': 'https://www.python.org/about/gettingstarted/'}),
     BindingInfo('Ruby', 'ruby', 'Ruby',  True, True,
-                {'en': 'http://www.ruby-lang.org/en/documentation/quickstart/',
-                 'de': 'http://www.ruby-lang.org/de/documentation/quickstart/'}),
+                {'en': 'https://www.ruby-lang.org/en/documentation/quickstart/',
+                 'de': 'https://www.ruby-lang.org/de/documentation/quickstart/'}),
     BindingInfo('Shell', 'shell', 'Shell', True, True,
                 {'en': 'FIXME',
                  'de': 'FIXME'}),

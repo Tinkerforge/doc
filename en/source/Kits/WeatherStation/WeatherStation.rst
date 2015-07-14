@@ -468,7 +468,7 @@ It does not have much functions. The application basically shows bars which will
 be randomly rendered and moved to one side of the LCD.
 With the four big push buttons you can make different sounds and you can choose
 the used instrument from the 
-`General MIDI <http://en.wikipedia.org/wiki/General_MIDI>`__ definition, 
+`General MIDI <https://en.wikipedia.org/wiki/General_MIDI>`__ definition,
 but the game logic is completely missing.
 
 This demonstrator should show that it is possible to implement not only

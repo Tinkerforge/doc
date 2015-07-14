@@ -155,7 +155,7 @@ directly link against this library (see example below).
 * Make Options: If you compile from source you can also add
   Makefile parameters.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 
@@ -186,7 +186,7 @@ the ``Tinkerforge.dll`` in step 2.
   Make sure that you don't use any Windows specific libraries that
   are not available on the RED Brick.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Mono Options: Here you can add options that will be given to
@@ -219,7 +219,7 @@ Delphi/Lazarus
 * Make Options: If you compile from source you can also add
   Makefile parameters.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 
@@ -251,7 +251,7 @@ classes by the usual means, e.g. ``import com.tinkerforge.IPConnection;``.
   All JARs that you added in step 2 will automatically be added
   to the class path.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * JVM Options: Here you can add options that will be given to
@@ -286,7 +286,7 @@ JavaScript (Browser/Node.js)
     * Start Mode *Command*: Specify a command that should be executed
       by node with the **-e** option.
   * Working Directory: Specify the
-    `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+    `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
     of your program. You can use a path that is relative to the
     root directory of your program. Usually you will leave this as ``.``.
   * Node.js Options: Here you can add options that will be given to
@@ -311,7 +311,7 @@ the correct directory.
 * Script File: Choose one of the script files that you added in step 2,
   it will be executed by octave.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Octave Options: Here you can add options that will be given to
@@ -341,7 +341,7 @@ directive to import them, e.g.: ``use Tinkerforge::IPConnection;``.
   * Start Mode *Command*: Specify a command that should be executed
     by the Perl interpreter with the **-e** option.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Perl Options: Here you can add options that will be given to
@@ -375,7 +375,7 @@ function, e.g.: ``require_once('Tinkerforge/IPConnection.php');``.
     :ref:`RED Brick web interface <red_brick_web_interface>` for
     more informations about the web interface.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * PHP Options: Here you can add options that will be given to
@@ -411,7 +411,7 @@ statement, e.g.: ``from tinkerforge.ip_connection import IPConnection``.
     :ref:`RED Brick web interface <red_brick_web_interface>` for
     more informations about the web interface.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Python Options: Here you can add options that will be given to
@@ -440,7 +440,7 @@ e.g.: ``require 'tinkerforge/ip_connection'``.
   * Start Mode *Command*: Specify a command that should be executed
     by the Ruby interpreter with the **-e** option.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Ruby Options: Here you can add options that will be given to
@@ -468,7 +468,7 @@ without any prefix.
   * Start Mode *Command*: Specify a command that should be executed
     by bash with the **-c** option.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Shell Options: Here you can add options that will be given to
@@ -499,7 +499,7 @@ the ``Tinkerforge.dll`` in step 2.
   Make sure that you don't use any Windows specific libraries that
   are not available on the RED Brick.
 * Working Directory: Specify the
-  `working directory <http://en.wikipedia.org/wiki/Working_directory>`__
+  `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
 * Mono Options: Here you can add options that will be given to
@@ -588,7 +588,7 @@ Wizard Step 6: Schedule
   just always do its thing, this mode is the right one for you.
 * Mode *Interval*: Define an interval (in seconds) in which your program
   should be executed.
-* Mode *Cron*: Use `cron <http://en.wikipedia.org/wiki/Cron>`__ to
+* Mode *Cron*: Use `cron <https://en.wikipedia.org/wiki/Cron>`__ to
   schedule your program. Cron is a *time-based* job scheduler. You can
   specify things like
 

@@ -29,9 +29,9 @@ Description
 The CO2 :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to measure
-`CO2 concentration <http://en.wikipedia.org/wiki/CO2>`__ in the air. The
+`CO2 concentration <https://en.wikipedia.org/wiki/CO2>`__ in the air. The
 measured CO2 concentration can be read out in
-`ppm <http://en.wikipedia.org/wiki/Parts-per_notation>`__.
+`ppm <https://en.wikipedia.org/wiki/Parts-per_notation>`__.
 With configurable events it is possible to react on changing CO2
 concentration without polling.
 

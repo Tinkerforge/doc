@@ -66,7 +66,7 @@ Beschreibung
 
 Mit dem Dual Relay :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` um zwei
-`Relais <http://de.wikipedia.org/wiki/Relais>`__ erweitert werden.
+`Relais <https://de.wikipedia.org/wiki/Relais>`__ erweitert werden.
 Jedes Relais besitzt drei Anschlüsse, der mittlere wird zwischen den beiden
 äußeren umgeschaltet. Der Schaltzustand wird jeweils durch eine LED angezeigt.
 Die neue Hardwareversion 1.2 ist mit umfangreicher Schutzbeschaltung gegen
@@ -175,13 +175,11 @@ allgemeinen. Dieses Problem kann z.B. aber auch beim Schalten von
 Leuchtstofflampe auftreten.
 
 Um induktive Lasten sicher schalten zu können wird externe Beschaltung z.B. in
-Form eines `Varistors <http://de.wikipedia.org/wiki/Varistor>`__ oder der
+Form eines `Varistors <https://de.wikipedia.org/wiki/Varistor>`__ oder der
 Kombination eines Widerstandes und eines Kondensators parallel zur Last empfohlen.
 
 Weitere Informationen über Schutzbeschaltung ist
 `hier <http://www.jkmicro.com/inductive_loads.pdf>`__ zu finden.
-
-
 
 
 .. _dual_relay_bricklet_case:

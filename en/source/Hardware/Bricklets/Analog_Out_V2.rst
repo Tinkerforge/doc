@@ -30,9 +30,9 @@ The Analog Out :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to generate voltages between 0V and 12V*.
 The voltage can be configured directly in `Volt
-<http://en.wikipedia.org/wiki/Volt>`__ without any conversion.
+<https://en.wikipedia.org/wiki/Volt>`__ without any conversion.
 The device is equipped with a 12bit `Digital-to-Analog Converter (DAC)
-<http://en.wikipedia.org/wiki/Digital-to-analog_converter>`__.
+<https://en.wikipedia.org/wiki/Digital-to-analog_converter>`__.
 
 For output voltages above 5V, it is necessary to add an external supply voltage.
 The maximum reachable output voltage will be the value of the supply voltage.

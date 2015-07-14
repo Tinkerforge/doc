@@ -69,7 +69,7 @@ used as an altimeter, too. But since the air pressure is changing significantly
 even over a short period time the achievable accuracy is limited. One possible
 solution to achieve higher accuracy and stability of the altitude measurement is
 to perform sensor fusion with the sensor data of an :ref:`IMU Brick <imu_brick>`
-(see `Youtube video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
+(see `Youtube video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
 
 Technical Specifications
@@ -135,12 +135,12 @@ Air Pressure Reading
 ^^^^^^^^^^^^^^^^^^^^
 
 The Barometer Bricklet outputs the air pressure in relation to the altitude of
-the measuring location, known as `QFE <http://en.wikipedia.org/wiki/QFE>`__
+the measuring location, known as `QFE <https://en.wikipedia.org/wiki/QFE>`__
 value in aviation. The weather forecast reports air pressure in relation to mean
 sea level (the value is also temperature-corrected in a special way), known as
-`QFF <http://en.wikipedia.org/wiki/QFF>`__ value in aviation.
+`QFF <https://en.wikipedia.org/wiki/QFF>`__ value in aviation.
 
-With the `barometric formula <http://en.wikipedia.org/wiki/Barometric_formula>`__
+With the `barometric formula <https://en.wikipedia.org/wiki/Barometric_formula>`__
 the QFF value can be approximated based on the the QFE value::
 
  QFF = QFE / [1 - Tg * H / (273.15 + Tfe + Tg * H)] ^ (0.034163 / Tg)
@@ -160,13 +160,13 @@ Altitude Reading
 
 The altitude value for the Barometer Bricklets is by default calculated for a
 reference air pressure of 1013.25 mbar using an approximation of the
-`International Standard Atmosphere <http://en.wikipedia.org/wiki/International_Standard_Atmosphere>`__
+`International Standard Atmosphere <https://en.wikipedia.org/wiki/International_Standard_Atmosphere>`__
 model. An altitude value calculated like this is known as `QNE
-<http://en.wikipedia.org/wiki/Pressure_altitude>`__ value in aviation.
+<https://en.wikipedia.org/wiki/Pressure_altitude>`__ value in aviation.
 
 For a more exact altitude value in relation to mean sea level the reference air
 pressure for the measuring location has to be specified. In aviation the `QNH
-<http://en.wikipedia.org/wiki/QNH>`__ value is used for this purpose. Therefore,
+<https://en.wikipedia.org/wiki/QNH>`__ value is used for this purpose. Therefore,
 this value if often available at airfields. Instead of the QNH value the QFF
 value can be used also. The QFF value has a different temperature-correction
 applied to it compared to the QNH, but the values are similar under normal

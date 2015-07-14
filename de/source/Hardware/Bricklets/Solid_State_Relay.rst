@@ -83,7 +83,7 @@ Beschreibung
 
 Mit dem Solid State Relay :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` um die Fähigkeit erweitert werden
-`Solid State Relais (SSR) <http://de.wikipedia.org/wiki/Relais#Halbleiterrelais>`__
+`Solid State Relais (SSR) <https://de.wikipedia.org/wiki/Relais#Halbleiterrelais>`__
 zu schalten.
 
 Mittels Solid State Relais können große Lasten, galvanisch getrennt
@@ -194,7 +194,7 @@ Geschwindigkeit eines Motors). Das Verhältnis von eingeschalteter Zeit zur
 ausgeschalteter Zeit bestimmt dabei die Leistung der angeschlossenen Last. Die 
 Frequenz sollte dabei konstant sein und nur die eingeschaltete Zeit variiert 
 werden
-(siehe `Pulsweitenmodulation <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__).
+(siehe `Pulsweitenmodulation <https://de.wikipedia.org/wiki/Pulsweitenmodulation>`__).
 
 Beispiel:
 Eine Heizung soll geregelt werden. Da eine Heizung sehr träge reagiert reicht 

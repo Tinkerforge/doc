@@ -71,7 +71,7 @@ Description
 -----------
 
 The Distance US :ref:`Bricklet <primer_bricklets>` is equipped with
-an `ultrasonic distance sensor <http://en.wikipedia.org/wiki/Ultrasonic_sensor>`__
+an `ultrasonic distance sensor <https://en.wikipedia.org/wiki/Ultrasonic_sensor>`__
 and extends :ref:`Bricks <primer_bricks>` by the possibility to measure 
 distances from 2cm to 400cm.
 The measured distance is reported as unitless value, not in mm. This is because

@@ -69,7 +69,7 @@ Description
 The Industrial Digital In 4 :ref:`Bricklet <primer_bricklets>` can 
 be used to extend :ref:`Bricks <primer_bricks>` by four galvanically 
 isolated digital inputs. The input voltage can be up to 36 
-`volts <http://en.wikipedia.org/wiki/Volt>`__ (DC).
+`volts <https://en.wikipedia.org/wiki/Volt>`__ (DC).
 
 Input isolation permits the usage without a direct electrical connection, 
 such that ground loops can be prevented and an additional degree of safety is 

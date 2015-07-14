@@ -71,7 +71,7 @@ Features
 Description
 -----------
 
-The `Internet of Things <http://en.wikipedia.org/wiki/Internet_of_Things>`__
+The `Internet of Things <https://en.wikipedia.org/wiki/Internet_of_Things>`__
 is an evolution of the Internet. It interconnects not only human and computer
 as before but also physical objects (things).
 

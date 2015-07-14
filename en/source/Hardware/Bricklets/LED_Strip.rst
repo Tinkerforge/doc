@@ -105,7 +105,7 @@ the connected :ref:`Brick <primer_bricks>`.
 The API allows to change all LEDs at the same time with a fixed update rate
 of up to 100Hz. A possible application can be found in the 
 :ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`: 
-`Video <http://www.youtube.com/watch?v=mmNRa-lLaXM>`__
+`Video <https://www.youtube.com/watch?v=mmNRa-lLaXM>`__
 
 Brick Daemon 2.0.10 or newer is recommended for this Bricklet.
 
@@ -176,7 +176,7 @@ WS2811 and WS2812 requires LED Strip Bricklet plugin version 2.0.2 or newer.
 The WS28xy chips can control three LEDs independently. Typically a RGB LED
 combined in one package is used. It is controlled over a three or two wire
 chained data bus with clock (WS2801 only), data signal and ground as voltage
-reference (`daisy chain <http://en.wikipedia.org/wiki/Daisy_chain_(electrical_engineering)>`__).
+reference (`daisy chain <https://en.wikipedia.org/wiki/Daisy_chain_(electrical_engineering)>`__).
 Each WS28xy chip has a bus input connected to a controlling
 device such as the LED Strip Bricklet or to a WS28xy predecessor and a
 bus output which can be connected to a subsequent WS28xy chip.

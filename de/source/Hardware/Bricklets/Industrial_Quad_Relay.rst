@@ -68,8 +68,8 @@ Beschreibung
 
 Das Industrial Quad Relay :ref:`Bricklet <primer_bricklets>` kann benutzt werden
 um :ref:`Bricks <primer_bricks>` mit vier galvanisch getrennten Solid State Relais
-zu erweitern. Jedes Relais kann bis zu 1,2 `Ampere <http://en.wikipedia.org/wiki/Ampere>`__
-mit 30 `Volt <http://en.wikipedia.org/wiki/Volt>`__ schalten. 
+zu erweitern. Jedes Relais kann bis zu 1,2 `Ampere <https://en.wikipedia.org/wiki/Ampere>`__
+mit 30 `Volt <https://en.wikipedia.org/wiki/Volt>`__ schalten.
 Die Isolierung des Ausgangs erlaubt eine Nutzung ohne eine direkte elektrische Verbindung,
 so dass Masseschleifen vermieden werden können und eine zusätzliche Sicherheit gewährleistet wird.
 

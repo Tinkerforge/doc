@@ -70,7 +70,7 @@ Das Sound Intensity :ref:`Bricklet <primer_bricklets>` ist mit einer
 Mikrofonkapsel ausgestattet und es kann genutzt werden um die Lautstärke 
 mit :ref:`Bricks <primer_bricks>` zu messen.
 Der zurückgegebene Wert entspricht der `Hüllkurve
-<http://de.wikipedia.org/wiki/H%C3%BCllkurvendemodulator>`__ des Signals der
+<https://de.wikipedia.org/wiki/H%C3%BCllkurvendemodulator>`__ des Signals der
 Mikrofonkapsel.
 
 Es ist möglich Events zu konfigurieren die ausgelöst werden, wenn eine

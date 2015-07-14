@@ -69,7 +69,7 @@ Description
 The Industrial Digital Out 4 :ref:`Bricklet <primer_bricklets>` can be used to
 extend :ref:`Bricks <primer_bricks>` by four galvanically isolated digital outputs.
 The outputs have to be supplied externally with a voltage of up to
-36 `Volt <http://en.wikipedia.org/wiki/Volt>`__. 
+36 `Volt <https://en.wikipedia.org/wiki/Volt>`__.
 Output isolation permits the usage without a direct electric connection, 
 such that ground loops can be prevented and an additional degree of safety is added.
 

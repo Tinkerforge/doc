@@ -83,7 +83,7 @@ Description
 
 The Solid State Relay :ref:`Bricklet <primer_bricklets>` can be used to
 extend :ref:`Bricks <primer_bricks>` by the possibility to switch `solid state
-relays (SSR) <http://en.wikipedia.org/wiki/Solid-state_relay>`__.
+relays (SSR) <https://en.wikipedia.org/wiki/Solid-state_relay>`__.
 
 With solid state relays large loads can be switched while being galvanically isolated.
 Mechanical relays can create switching sparks and other interferences.
@@ -183,7 +183,7 @@ switching.
 PWM / Dimming / Speed Control
 -----------------------------
 
-With `Pulse-width modulation <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__
+With `Pulse-width modulation <https://en.wikipedia.org/wiki/Pulse-width_modulation>`__
 the power of loads connected to the solid state relay can be controlled
 (e.g. brightness of a lamp, speed of a motor). With a fixed frequency the load
 will be switched on for a variable time. Depending on the time the power will be

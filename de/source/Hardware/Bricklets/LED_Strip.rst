@@ -104,7 +104,7 @@ unabhängig voneinander über ein :ref:`Brick <primer_bricks>` zu steuern.
 Mit Hilfe der API können alle LEDs gleichzeitig mit einer festen
 Aktualisierungsrate von bis zu 100Hz gesteuert werden.  Ein Anwendungsbeispiel
 findet man im :ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`:
-`Video <http://www.youtube.com/watch?v=mmNRa-lLaXM>`__
+`Video <https://www.youtube.com/watch?v=mmNRa-lLaXM>`__
 
 Brick Daemon 2.0.10 oder neuer wird für diese Bricklet empfohlen.
 
@@ -178,7 +178,7 @@ sind, gesteuert. Der WS28xy Treiber wird über einen 3- oder 2-Leiter Datenbus,
 bestehend aus einer Datenleitung, einer Taktleitung (nur WS2801) und Masse als
 Referenz, gesteuert. Jeder Treiber verfügt dazu über einen Bus-Eingang und
 einen Bus-Ausgang, so dass die Treiber in Serie hintereinander geschaltet
-werden (`Daisy Chain <http://de.wikipedia.org/wiki/Daisy_chain>`__).
+werden (`Daisy Chain <https://de.wikipedia.org/wiki/Daisy_chain>`__).
 Jeder Bus-Eingang der WS28xy Treiber ist entweder mit einem steuernden Gerät (wie
 z.B. das LED Strip Bricklet) oder mit einem Bus-Ausgang von einem vorherigen 
 WS28xy Treiber verbunden. Da die WS28xy Treiber in Serie geschaltet werden müssen,

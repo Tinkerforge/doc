@@ -63,9 +63,10 @@ Description
 The GPS :ref:`Bricklet <primer_bricklets>` can be used to extend
 :ref:`Bricks <primer_bricks>` by the possibility to
 determine their position via 
-`GPS <http://de.wikipedia.org/wiki/GPS>`__.
+`GPS <https://en.wikipedia.org/wiki/GPS>`__.
 Additionally it is possible to receive movement (direction and velocity),
-altitude (altitude and `geodial separation <http://de.wikipedia.org/wiki/World_Geodetic_System_1984>`__),
+altitude (altitude and `geodial separation
+<https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84>`__),
 as well as high precise time and date information.
 
 The used GPS module is optimized to get a fast fix, has a high input
@@ -107,7 +108,7 @@ Resources
 External Antenna
 ----------------
 
-With an `U.FL <http://en.wikipedia.org/wiki/Hirose_U.FL>`__ connector
+With an `U.FL <https://en.wikipedia.org/wiki/Hirose_U.FL>`__ connector
 external antennas can be attached. This is makes sense if it should be
 mounted at another position than the Bricklet or if the reception should
 be improved. The module detects automatically an external antenna

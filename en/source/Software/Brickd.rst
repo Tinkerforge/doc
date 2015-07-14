@@ -100,7 +100,7 @@ them in the log.
 WebSockets
 ^^^^^^^^^^
 
-`WebSockets <http://en.wikipedia.org/wiki/WebSocket>`__ are supported since
+`WebSockets <https://en.wikipedia.org/wiki/WebSocket>`__ are supported since
 Brick Daemon version 2.1.0 , but disabled by default. To enable it you have to
 configure the WebSocket port in the Brick Daemon configuration file.
 

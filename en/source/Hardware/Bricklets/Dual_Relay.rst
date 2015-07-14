@@ -66,7 +66,7 @@ Description
 
 The Dual Relay :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by two
-`relays <http://en.wikipedia.org/wiki/Relay>`__. Each relay has three
+`relays <https://en.wikipedia.org/wiki/Relay>`__. Each relay has three
 terminals such that the terminal in the middle is electrically connected to
 the terminal left or right depending on the state.
 The state is visualized by a LED. The new hardware version 1.2 is equipped with 
@@ -174,7 +174,7 @@ components. Typical examples for inductive loads are motors and solenoids,
 but these problems can also occur when switching e.g. fluorescent lamps.
 
 If you want to switch an inductive load you need external components,
-e.g. a `Varistor <http://en.wikipedia.org/wiki/Varistor>`__
+e.g. a `varistor <https://en.wikipedia.org/wiki/Varistor>`__
 or a combination of a resistor and a capacitor parallel to the load.
 
 More information about protection circuitries can be found

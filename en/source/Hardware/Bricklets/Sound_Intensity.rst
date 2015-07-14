@@ -69,7 +69,7 @@ Description
 The Sound Intensity :ref:`Bricklet <primer_bricklets>` is equipped
 with a microphone capsule and can be used to measure loudness by
 :ref:`Bricks <primer_bricks>`. The returned value corresponds to the 
-`upper envelop <http://en.wikipedia.org/wiki/Envelope_(waves)>`__
+`upper envelop <https://en.wikipedia.org/wiki/Envelope_(waves)>`__
 of the signal of the microphone capsule.
 
 It is possible to configure events that are triggered if a specified

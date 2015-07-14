@@ -78,7 +78,7 @@ mehr dagegen das erstes eigenes Programm zu schreiben, dass den DC Brick
 steuert.
 
 Dies kann mit jeder der :ref:`unterstützten <api_bindings>` Programmiersprachen
-geschrieben werden. In diesem Tutorial wird `Python <http://www.python.org>`__
+geschrieben werden. In diesem Tutorial wird `Python <https://www.python.org>`__
 verwendet.
 
 Dieses Tutorial sollte es dir ermöglichen, zusammen mit den Beispielen in den 

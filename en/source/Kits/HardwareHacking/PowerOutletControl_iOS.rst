@@ -7,7 +7,7 @@
 .. |connect| replace:: ``ipcon_connect()``
 .. |set_monoflop| replace:: ``industrial_quad_relay_set_monoflop(&relay, selection_mask, 15, 500)``
 .. |ref_get_identity| replace:: :c:func:`industrial_quad_relay_get_identity` function
-.. |async_helper| replace:: a `Grand Central Dispatch (GCD) <http://en.wikipedia.org/wiki/Grand_Central_Dispatch>`__ block
+.. |async_helper| replace:: a `Grand Central Dispatch (GCD) <https://en.wikipedia.org/wiki/Grand_Central_Dispatch>`__ block
 
 .. include:: PowerOutletControl.substitutions
    :start-after: >>>substitutions

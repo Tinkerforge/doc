@@ -913,7 +913,8 @@ Change HDMI Display Resolution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The RED Brick will automatically configure the correct display resolution using
-the `Extended Display Identification Data <http://en.wikipedia.org/wiki/Extended_display_identification_data>`__
+the `Extended Display Identification Data
+<https://en.wikipedia.org/wiki/Extended_display_identification_data>`__
 (EDID) interface of the connected display. But EDID only works reliable if the
 display is already connected to HDMI and powered on before the RED Brick boots.
 
@@ -1055,7 +1056,7 @@ USB 2.0 Host
 ^^^^^^^^^^^^
 
 The RED Brick is equipped with a standard
-`USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ (480Mb/s) type A jack. It can
+`USB-2.0 <https://en.wikipedia.org/wiki/USB>`__ (480Mb/s) type A jack. It can
 power other USB devices with up to 7.5W (5V/1.5A) and is short circuit
 protected. Typical USB devices such as Wi-Fi or Ethernet dongles, webcams,
 printers, keyboards, mouses or USB touch screens are supported.
@@ -1085,7 +1086,7 @@ power the Brick.
 Micro-HDMI
 ^^^^^^^^^^
 
-With the Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ connector
+With the Micro-`HDMI <https://en.wikipedia.org/wiki/HDMI>`__ connector
 (also called type D), all standard HDMI monitors and TVs can be connected to
 the RED Brick. HDMI Ethernet Channel (HEC) is not supported.
 

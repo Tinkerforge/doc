@@ -12,7 +12,7 @@ heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
 * ``nodejs/tinkerforge.tgz``, ein Node.js NPM Package (installierbar mit `npm
-  <https://www.npmjs.org/>`__ Tool)
+  <https://www.npmjs.com/>`__ Tool)
 * in ``nodejs/source/`` den Quelltext für ``tinkerforge.tgz``
 * in ``nodejs/examples/`` die Node.js Beispiele für alle Bricks und Bricklets
 * in ``browser/source/`` den Quelltext der Browser Version der Bindings
@@ -38,13 +38,13 @@ Node.js
 ^^^^^^^
 
 Die Node.js Version der Bindings können mit dem Node.js Package Manager
-`npm <https://www.npmjs.org/>`__ installiert werden, müssen aber nicht.
+`npm <https://www.npmjs.com/>`__ installiert werden, müssen aber nicht.
 
 Vom NPM Package
 """""""""""""""
 
 Für die Verwendung der Bindings mit Node.js steht in NPM Package bereit. Dies
-ist im `Node.js Package Repository <https://www.npmjs.org/package/tinkerforge>`__
+ist im `Node.js Package Repository <https://www.npmjs.com/package/tinkerforge>`__
 verfügbar und kann von dort mit folgendem Befehl global installiert werden.
 Möglicherweise muss dies mit ``sudo`` bzw. als Administrator ausgeführt werden::
 

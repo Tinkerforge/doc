@@ -28,9 +28,9 @@ Description
 The Ozone :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to measure
-`ozone concentration <http://en.wikipedia.org/wiki/Ozone>`__ in the air. The
+`ozone concentration <https://en.wikipedia.org/wiki/Ozone>`__ in the air. The
 measured ozone concentration can be read out in
-`ppb <http://en.wikipedia.org/wiki/Parts-per_notation>`__.
+`ppb <https://en.wikipedia.org/wiki/Parts-per_notation>`__.
 With configurable events it is possible to react on changing ozone
 concentration without polling.
 

@@ -54,7 +54,8 @@ Industrial Dual 0-20mA Bricklet
 Features
 --------
 
-* Precision current sensor, measures `currents between 0 and 22.5mA <http://en.wikipedia.org/wiki/Current_loop>`__
+* Precision current sensor, measures `currents between 0 and 22.5mA
+  <https://en.wikipedia.org/wiki/Current_loop>`__
 * Can read out any IEC 60381-1 type 2 and type 3 sensor 
 * High accuracy (0.15%), resolution (up to 0.172µA) and sample rate (up to 240 SPS)
 * It is possible to detect if a sensor is connected/faulty

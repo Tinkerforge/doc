@@ -65,10 +65,12 @@ Features
 Beschreibung
 ------------
 
-Das Piezo Buzzer :ref:`Bricklet <primer_bricklets>` ermöglicht es
+Das `Piezo Buzzer <https://de.wikipedia.org/wiki/Summer_(Elektronik)>`__
+:ref:`Bricklet <primer_bricklets>` ermöglicht es
 einem :ref:`Bricks <primer_bricks>` akustische Signale abzugeben.
 Es können 1kHz Pieptöne in verschiedenen Längen ausgegeben werden.
-Die Ausgabe von Morse Codes ist ebenfalls möglich.
+Die Ausgabe von `Morsezeichen <https://de.wikipedia.org/wiki/Morsezeichen>`__
+ist ebenfalls möglich.
 
 Zum Beispiel können mit dieser Platine Zustände signalisiert werden,
 wie "E-Mail empfangen".

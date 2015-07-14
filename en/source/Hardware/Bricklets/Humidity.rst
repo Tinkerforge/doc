@@ -67,7 +67,7 @@ Description
 The Humidity :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the
 capability to measure
-`relative humidity <http://en.wikipedia.org/wiki/Relative_humidity>`__.
+`relative humidity <https://en.wikipedia.org/wiki/Relative_humidity>`__.
 The measured humidity can be read out directly in percent, no conversions are
 necessary. With configurable events it is possible to react on changing humidity
 without polling.

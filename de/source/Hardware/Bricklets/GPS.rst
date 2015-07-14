@@ -61,10 +61,10 @@ Beschreibung
 ------------
 Mit dem GPS :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` über 
-`GPS <http://de.wikipedia.org/wiki/GPS>`__ ihre Position bestimmen.
+`GPS <https://de.wikipedia.org/wiki/GPS>`__ ihre Position bestimmen.
 Es ist auch möglich Bewegungsdaten (Richtung und Geschwindigkeit),
 Höheninformationen (Höhe und 
-`Geodial Separation <http://de.wikipedia.org/wiki/World_Geodetic_System_1984>`__),
+`Geodial Separation <https://de.wikipedia.org/wiki/World_Geodetic_System_1984>`__),
 sowie hochgenaue Zeit- und Datumsinformationen zu bekommen.
 
 Das verwendete GPS Modul ist optimiert auf eine sehr kurze Zeit bis
@@ -107,7 +107,7 @@ Ressourcen
 Externe Antenne
 ---------------
 
-Über einen `U.FL <http://en.wikipedia.org/wiki/Hirose_U.FL>`__ Stecker können
+Über einen `U.FL <https://en.wikipedia.org/wiki/Hirose_U.FL>`__ Stecker können
 externe Antennen angeschlossen werden. Dies ist sinnvoll wenn die Antenne
 an einer anderen Position verbaut werden oder wenn der Empfang verbessert
 werden soll. Das Modul erkennt automatisch die externe Antenne und schaltet um.

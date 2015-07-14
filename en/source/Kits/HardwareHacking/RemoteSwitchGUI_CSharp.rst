@@ -42,7 +42,7 @@ Step 1: Create the GUI
 ----------------------
 
 The program will have a simple `Windows Forms
-<http://en.wikipedia.org/wiki/Windows_Forms>`__ GUI that contains four buttons
+<https://en.wikipedia.org/wiki/Windows_Forms>`__ GUI that contains four buttons
 and a list box for status messages:
 
 .. image:: /Images/Kits/hardware_hacking_remote_switch_csharp_gui.jpg

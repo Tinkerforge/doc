@@ -258,7 +258,7 @@ Status** should change to **Connected**.
 
 Now that you have Internet access, you can easily do Internet-of-Things and
 similar applications. Another advantage of Internet access is, that the RED Brick
-will automatically use `NTP <http://en.wikipedia.org/wiki/Network_Time_Protocol>`__
+will automatically use `NTP <https://en.wikipedia.org/wiki/Network_Time_Protocol>`__
 and thus have a correct system time.
 
 This means that you can now add a time to each measured temperature.

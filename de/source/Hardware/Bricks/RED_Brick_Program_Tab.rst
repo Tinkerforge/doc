@@ -155,7 +155,7 @@ die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
 * Make Options: Wenn vom Source kompiliert wird, können hier Makefile Parameter
   angegeben werden.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 
@@ -185,7 +185,7 @@ kompiliert werden.
   geachtet werden, dass keine Windows spezifischen Bibliotheken genutzt werden,
   die auf dem RED Brick nicht verfügbar sind.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * Mono Options: Hier können Optionen angegeben werden, die dem Mono JIT Compiler
@@ -218,7 +218,7 @@ Delphi/Lazarus
 * Make Options: Wenn von Source kompiliert wird können hier Makefile Parameter
   übergeben werden.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 
@@ -249,7 +249,7 @@ Z.B. mittels ``import com.tinkerforge.IPConnection;``.
   die in Schritt 2 hinzugefügt wurden, werden automatisch zum Class Path
   hinzugefügt.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * JVM Options: Hier können Optionen angegeben werden, die der Java Virtual Machine
@@ -284,7 +284,7 @@ JavaScript (Browser/Node.js)
     * Start Mode *Command*: Gebe das Kommando an, welches von Node mittels der
       **-e** Option ausgeführt werden soll.
   * Working Directory: Spezifiziert das
-    `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+    `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
     des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
     Typischerweise kann dies bei ``.`` belassen werden.
   * Node.js Options: Hier können Optionen hinzugefügt werden, die an Node
@@ -308,7 +308,7 @@ bereits mit dem korrekten Verzeichnis aufgerufen wurde.
 * Script File: Es muss eine in Schritt 2 zuvor ausgewählte Datei gewählt werden,
   die ausgeführt werden soll.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * Octave Options: Hier können Optionen dem Octave Interpreter übergeben werden.
@@ -335,7 +335,7 @@ Direktive um sie zu importieren, z.B: ``use Tinkerforge::IPConnection;``.
   * Start Mode *Command*: Spezifiziert ein Kommando, dass vom Perl Interpreter mit
     der **-e** Option ausgeführt werden soll.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * Perl Options: Hier werden Optionen definiert, die an Perl während der
@@ -370,7 +370,7 @@ Mittels ``require_once`` können diese importiert werden, z.B.:
     :ref:`RED Brick Web Interface <red_brick_web_interface>` für weitere
     Informationen zum Web Interface.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * PHP Options: Hier können Optionen hinzugefügt werden, die dem PHP Interpreter
@@ -405,7 +405,7 @@ werden, z.B.: ``from tinkerforge.ip_connection import IPConnection``.
     Siehe :ref:`RED Brick Web Interface <red_brick_web_interface>` für
     weitere Informationen zum Web Interface.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * Python Options: Hier können Optionen angegeben werden, die dem Python
@@ -434,7 +434,7 @@ importieren, z.B. ``require 'tinkerforge/ip_connection'``.
   * Start Mode *Command*: Spezifiziert ein Kommando, das vom Ruby Interpreter
     mit der **-e** Option ausgeführt werden soll.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * Ruby Options: Hier können Optionen dem Ruby Interpreter übergeben werden, wenn
@@ -460,7 +460,7 @@ werden.
   * Start Mode *Command*: Spezifiziert ein Kommando, welches von Bash mittels
     der **-c** Version ausgeführt werden soll.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * Shell Options: Hier können Optionen an Bash während der Ausführung der
@@ -490,7 +490,7 @@ zuvorigen Schritt (Schritt 2) kompiliert werden.
   Dabei muss allerdings darauf geachtet werden, dass keine Windows spezifischen
   Bibliotheken genutzt werden, die auf dem RED Brick nicht verfügbar sind.
 * Working Directory: Spezifiziert das
-  `Arbeitsverzeichnis <http://en.wikipedia.org/wiki/Working_directory>`__
+  `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
 * Mono Options: Hier können Optionen angegeben werden, die dem Mono JIT Compiler
@@ -577,7 +577,7 @@ Wizard Schritt 6: Schedule
   insbesondere für Kontrollprogramme sinnvoll, die permanent laufen sollen.
 * Mode *Interval*: Hier kann ein Intervall (in Sekunden) definiert werden im
   das Programm ausgeführt werden soll.
-* Mode *Cron*: Nutze `cron <http://de.wikipedia.org/wiki/Cron>`__ um die
+* Mode *Cron*: Nutze `cron <https://de.wikipedia.org/wiki/Cron>`__ um die
   Programmausführung zu planen. Cron ist ein *zeitbasierter* Aufgaben Scheduler.
 
   Damit kann man zum Beispiel die Ausführung eines Programms planen, das

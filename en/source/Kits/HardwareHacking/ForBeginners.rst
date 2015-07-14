@@ -23,7 +23,7 @@ General Description
 
 The :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`
 consists of four
-`Solid State Relays <http://en.wikipedia.org/wiki/Solid_state_relay>`__.
+`Solid State Relays <https://en.wikipedia.org/wiki/Solid_state_relay>`__.
 Relays are electromechanical driven switches, which means that you can
 short-circuit a signal controlled by another electrical signal with it. 
 In case of solid state relay the switches are not electromechanical, there are 
@@ -125,7 +125,7 @@ General Description
 ^^^^^^^^^^^^^^^^^^^
 
 The :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` is
-equipped with four `Optocouplers <http://en.wikipedia.org/wiki/Optocoupler>`__.
+equipped with four `optocouplers <https://en.wikipedia.org/wiki/Optocoupler>`__.
 Technically speaking an optocoupler consists of a LED which triggers a 
 phototransistor with light. This way there is no direct electrical connection 
 between the LED and the phototransistor, the circuit is galvanically isolated.
@@ -194,7 +194,7 @@ are wired packages:
    :target: ../../_images/Kits/hardware_hacking_for_beginner_tht_resistor_1500.jpg
 
 Nowadays many products use so called `Surface-Mount Devices (SMD)
-<http://en.wikipedia.org/wiki/Surface-mount_device>`__.
+<https://en.wikipedia.org/wiki/Surface-mount_device>`__.
 These devices can differ in their size extremely. There are very tiny devices
 (e.g. casing 0201: 0.6mm x 0.3mm) or large devices (e.g. casing 2920: 
 7.4mm x 5.1mm). There are resistors, capacitors, inductances and other devices 
@@ -247,8 +247,8 @@ Soldering a wire to a solder pad
 --------------------------------
 
 To solder a wire to a pad, you need a 
-`soldering iron <http://en.wikipedia.org/wiki/Soldering_iron>`__ 
-and `solder <http://en.wikipedia.org/wiki/Solder>`__.
+`soldering iron <https://en.wikipedia.org/wiki/Soldering_iron>`__
+and `solder <https://en.wikipedia.org/wiki/Solder>`__.
 
 Don't be afraid if you have never soldered something! 
 For the Starter Kit: Hardware Hacking you only need to

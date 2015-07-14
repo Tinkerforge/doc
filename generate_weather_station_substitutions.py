@@ -253,7 +253,7 @@ write_to_lcd_steps = {
 
 .. |step3_printf| replace::
  The code above converts a floating point value to a string according to the given
- `format specification <http://en.wikipedia.org/wiki/Printf_format_string>`__.
+ `format specification <https://en.wikipedia.org/wiki/Printf_format_string>`__.
  The result will be at least 6 characters long with 2 decimal places, filled up
  with spaces from the left if it would be shorter than 6 characters otherwise.
 
@@ -411,7 +411,7 @@ write_to_lcd_steps = {
 .. |step3_printf| replace::
  Der obige Ausdruck wandelt eine Fließkommazahl in eine Zeichenkette um,
  gemäß der gegebenen `Formatspezifikation
- <http://en.wikipedia.org/wiki/Printf_format_string>`__. Das Ergebnis ist dann
+ <https://en.wikipedia.org/wiki/Printf_format_string>`__. Das Ergebnis ist dann
  mindestens 6 Zeichen lang mit 2 Nachkommastellen. Fall es weniger als 6 Zeichen
  sind wird von Links mit Leerzeichen aufgefüllt.
 

@@ -32,7 +32,7 @@ Mit dem Ambient Light :ref:`Bricklet <primer_bricklets>` 2.0 können
 :ref:`Bricks <primer_bricks>` die Umgebungshelligkeit messen.
 Es ist der Nachfolger des :ref:`ambient_light_bricklet` mit einem etwa 70x
 größeren Messbereich.
-Die gemessene Helligkeit kann in `Lux <http://de.wikipedia.org/wiki/Lux>`__
+Die gemessene Helligkeit kann in `Lux <https://de.wikipedia.org/wiki/Lux_(Einheit)>`__
 ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf
 Helligkeitsänderungen zu reagieren ohne die Werte laufend abzufragen
 (kein Polling notwendig).

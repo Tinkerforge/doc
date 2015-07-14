@@ -76,7 +76,7 @@ um :ref:`Bricks <primer_bricks>` die Möglichkeit zu geben elektrische
 Spannungen zu messen.
 Der Messbereich beträgt 0V bis 45V (DC) mit hoher Auflösung für kleine Spannungen.
 Die gemessene Spannung kann direkt in `Volt
-<http://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.
+<https://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.
 Mit konfigurierbaren Events ist es möglich auf Spannungsänderungen zu
 reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 

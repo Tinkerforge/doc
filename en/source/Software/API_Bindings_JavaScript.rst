@@ -11,7 +11,7 @@ The JavaScript bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
 * ``nodejs/tinkerforge.tgz``, a Node.js NPM package (installable with `npm
-  <https://www.npmjs.org/>`__ tool)
+  <https://www.npmjs.com/>`__ tool)
 * in ``nodejs/source/`` the source code of ``tinkerforge.tgz``
 * in ``nodejs/examples/`` the Node.js examples for every Brick and Bricklet
 * in ``browser/source/`` the source code of the browser version of the bindings
@@ -37,14 +37,14 @@ Node.js
 ^^^^^^^
 
 The Node.js version of the bindings can be installed with the Node.js Package
-Manager `npm <https://www.npmjs.org/>`__, but you don't have to.
+Manager `npm <https://www.npmjs.com/>`__, but you don't have to.
 
 From NPM Package
 """"""""""""""""
 
 There is a NPM package available for using the Bindings with Node.js. It is
 available from the `Node.js Package Repository
-<https://www.npmjs.org/package/tinkerforge>`__ and can be installed globally
+<https://www.npmjs.com/package/tinkerforge>`__ and can be installed globally
 with the following command which might has to execute with ``sudo`` or as
 administrator::
 
@@ -144,7 +144,7 @@ HTML
 ^^^^
 
 The Browser version of the JavaScript bindings is using `WebSockets
-<http://en.wikipedia.org/wiki/WebSocket>`__.
+<https://en.wikipedia.org/wiki/WebSocket>`__.
 WebSockets are supported by Brick Daemon (since version 2.1.0) and the
 Ethernet Extension (since Master Brick firmware version 2.2.0), but they are
 disabled by default and need to be configured first:

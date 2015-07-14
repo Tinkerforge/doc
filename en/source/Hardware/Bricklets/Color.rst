@@ -61,9 +61,9 @@ Description
 
 The Color :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
-capability to measure `color <http://en.wikipedia.org/wiki/Color>`__,
-`color temperature <http://en.wikipedia.org/wiki/Color_temperature>`__ and
-`illuminance <http://en.wikipedia.org/wiki/Illuminance>`__ of a light source.
+capability to measure `color <https://en.wikipedia.org/wiki/Color>`__,
+`color temperature <https://en.wikipedia.org/wiki/Color_temperature>`__ and
+`illuminance <https://en.wikipedia.org/wiki/Illuminance>`__ of a light source.
 Thus the Bricklet can measure the color of an object via its reflected light.
 To create a defined illumination and color temperature the Bricklet is equipped 
 with a API switchable LED.

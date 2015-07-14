@@ -222,7 +222,7 @@ input boxes is a table which shows you the connected Bricks and Bricklets.
 Tetris
 ^^^^^^
 The demo application implements a typical
-`Tetris <http://en.wikipedia.org/wiki/Tetris>`__ game with all specialties.
+`Tetris <https://en.wikipedia.org/wiki/Tetris>`__ game with all specialties.
 It can be played with:
 
 .. image:: /Images/Kits/kit_blinkenlights_tetris_350.jpg
@@ -273,7 +273,7 @@ Pong
 ^^^^
 
 Like :ref:`Tetris <starter_kit_blinkenlights_tetris>` the
-`Pong <http://en.wikipedia.org/wiki/Pong>`__ can be used with or without front 
+`Pong <https://en.wikipedia.org/wiki/Pong>`__ can be used with or without front
 panel.
 
 The following images show pong with darkness and daylight.

@@ -66,7 +66,7 @@ Beschreibung
 
 Mit dem Humidity :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` die `relative Luftfeuchtigkeit
-<http://de.wikipedia.org/wiki/Relative_Luftfeuchtigkeit>`__ messen.
+<https://de.wikipedia.org/wiki/Relative_Luftfeuchtigkeit>`__ messen.
 Die gemessene Luftfeuchtigkeit kann in Prozent direkt ausgelesen werden.
 Mit konfigurierbaren Events ist es möglich auf veränderte Luftfeuchtigkeit zu
 reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).

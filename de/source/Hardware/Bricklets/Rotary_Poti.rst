@@ -75,7 +75,7 @@ Beschreibung
 ------------
 
 Das Rotary Poti :ref:`Bricklet <primer_bricklets>` ist mit einem
-Dreh-`Potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`__ ausgestattet,
+Dreh-`Potentiometer <https://en.wikipedia.org/wiki/Potentiometer>`__ ausgestattet,
 dessen Position über ein :ref:`Brick <primer_bricks>` ausgelesen werden kann. 
 Zusätzlich können Events konfiguriert werden die ausgelöst werden wenn eine 
 spezifizierte Position erreicht wird.

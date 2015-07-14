@@ -67,7 +67,7 @@ Description
 The Ambient Light :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to measure ambient light. The measured illuminance can be read
-out in `lux <http://en.wikipedia.org/wiki/Lux>`__. With configurable events
+out in `lux <https://en.wikipedia.org/wiki/Lux>`__. With configurable events
 it is possible to react on changing illuminance without polling.
 
 Typical applications are illuminance dependent switching of

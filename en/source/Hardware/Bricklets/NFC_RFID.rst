@@ -65,8 +65,8 @@ Features
 Description
 -----------
 
-The `NFC <http://en.wikipedia.org/wiki/Near_field_communication>`__/
-`RFID <http://en.wikipedia.org/wiki/Rfid>`__ 
+The `NFC <https://en.wikipedia.org/wiki/Near_field_communication>`__/
+`RFID <https://en.wikipedia.org/wiki/Rfid>`__
 :ref:`Bricklet <primer_bricklets>` can be used to 
 extend :ref:`Bricks <primer_bricks>` by the possibility to read
 and write NFC/RFID tags. To do this you only have to place a NFC or RFID 

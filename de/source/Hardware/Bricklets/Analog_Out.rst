@@ -67,9 +67,9 @@ Beschreibung
 
 Das Analog Out :ref:`Bricklet <primer_bricklets>` kann genutzt werden
 um :ref:`Bricks <primer_bricks>` mit einem `Digital-Analog-Wandler
-<http://de.wikipedia.org/wiki/Digital-Analog-Umsetzer>`__ zu erweitern.
+<https://de.wikipedia.org/wiki/Digital-Analog-Umsetzer>`__ zu erweitern.
 Mit diesem können elektrische Spannungen von 0V bis 5V* generiert werden.
-Die Spannung kann direkt in `Volt <http://en.wikipedia.org/wiki/Volt>`__
+Die Spannung kann direkt in `Volt <https://en.wikipedia.org/wiki/Volt>`__
 angegeben werden. Anstatt eine Spannung zu erzeugen kann auch zwischen einem
 1kΩ, 100kΩ oder 500kΩ Lastwiderstand nach Masse (Pull-Down) gewählt werden.
 

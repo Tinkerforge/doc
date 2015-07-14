@@ -77,7 +77,7 @@ capability to measure temperature with Pt100 and Pt1000 sensors.
 Pt100 and Pt1000 sensors of 2-wire, 3-wire or 4-wire type can be used.
 
 The measured temperature can be read out in `°C
-<http://en.wikipedia.org/wiki/Degree_Celsius>`__.
+<https://en.wikipedia.org/wiki/Degree_Celsius>`__.
 With configurable events it is possible to react on changing
 temperatures without polling.
 

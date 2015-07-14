@@ -75,7 +75,7 @@ Description
 -----------
 
 The Linear Poti :ref:`Bricklet <primer_bricklets>` is equipped with
-a linear `potentiometer <http://en.wikipedia.org/wiki/Potentiometer>`__
+a linear `potentiometer <https://en.wikipedia.org/wiki/Potentiometer>`__
 ("fader", "slider"). It can be connected to a
 :ref:`Brick <primer_bricks>`, with which the position of the
 slider can be read out.

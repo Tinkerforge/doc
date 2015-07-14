@@ -32,7 +32,7 @@ The Accelerometer :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to measure acceleration in x-, y- and z-axis.
 The measured acceleration can be read out in
-`g <http://en.wikipedia.org/wiki/G-force#Unit_and_measurement>`__.
+`g <https://en.wikipedia.org/wiki/G-force#Unit_and_measurement>`__.
 With configurable events it is possible to react on changing acceleration
 without polling.
 

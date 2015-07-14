@@ -35,9 +35,9 @@ calls the corresponding function.
 
 The Bricklet function called, is initially stored together with other data
 e.g. UID (together called plugin), in the  
-`EEPROM <http://en.wikipedia.org/wiki/EEPROM>`__ on the Bricklet. 
+`EEPROM <https://en.wikipedia.org/wiki/EEPROM>`__ on the Bricklet.
 At start up, this function (with other Bricklet functions if any) is loaded 
-(as `position independent code <http://en.wikipedia.org/wiki/Position_independent_code>`__) 
+(as `position independent code <https://en.wikipedia.org/wiki/Position_independent_code>`__)
 into the connected Brick Flash 
 (see :ref:`Building a Bricklet plugin <building_bricklet_plugin>`).
 When the Brick calls the corresponding Bricklet function, this function is 

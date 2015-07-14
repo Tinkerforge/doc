@@ -65,7 +65,7 @@ The Piezo Speaker :ref:`Bricklet <primer_bricklets>` can be used to extend
 :ref:`Bricks <primer_bricks>` by the possibility to generate beeps with 
 different frequencies. The available frequency range is
 585Hz to 7100Hz. A beep has a configurable length and it is possible to transmit
-a `Morse Code <http://en.wikipedia.org/wiki/Morse_code>`__ string.
+a `Morse Code <https://en.wikipedia.org/wiki/Morse_code>`__ string.
 
 A typical application is to beep on specific events (e.g. "email received").
 

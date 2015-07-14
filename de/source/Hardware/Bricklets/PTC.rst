@@ -78,7 +78,7 @@ Es können Pt100 und Pt1000 Sensoren vom Typ 2-Leiter, 3-Leiter und 4-Leiter
 verwendet werden.
 
 Die gemessene Temperatur kann in `°C
-<http://de.wikipedia.org/wiki/Grad_Celsius>`__ ausgelesen werden. Zusätzlich
+<https://de.wikipedia.org/wiki/Grad_Celsius>`__ ausgelesen werden. Zusätzlich
 können Events konfiguriert werden die ausgelöst werden wenn eine bestimmte
 Temperatur über- oder unterschritten wird.
 

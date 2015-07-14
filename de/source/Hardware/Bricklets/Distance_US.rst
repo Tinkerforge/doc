@@ -72,7 +72,7 @@ Beschreibung
 
 Das Distance US :ref:`Bricklet <primer_bricklets>` ist mit einem
 `Ultraschall-Entfernungsmesser
-<http://de.wikipedia.org/wiki/Entfernungsmessung#Laufzeitmessung>`__
+<https://de.wikipedia.org/wiki/Entfernungsmessung#Laufzeitmessung>`__
 ausgestattet. :ref:`Bricks <primer_bricks>` können hiermit Entfernungen zwischen 
 2cm und 400cm messen. Die gemessene Entfernung wird als einheitenloser Wert 
 ausgegeben, nicht in mm. Dies liegt daran, dass das Verhältnis von gemessenem 

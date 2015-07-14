@@ -16,9 +16,9 @@ The Mathematica bindings allow you to control :ref:`Bricks <primer_bricks>` and
 
 The Mathematica bindings are based on the :ref:`C# bindings <api_bindings_csharp>`.
 Since version 2.0.0 the C# bindings are
-`CLS <http://en.wikipedia.org/wiki/Common_Language_Specification>`__
+`CLS <https://en.wikipedia.org/wiki/Common_Language_Specification>`__
 compliant. This allows to use them with all `.NET compatible languages
-<http://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
+<https://en.wikipedia.org/wiki/List_of_CLI_languages>`__, such as
 Mathematica's `.NET/Link support
 <http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html>`__.
 It requires the `.NET Framework <http://www.microsoft.com/net>`__ on Windows

@@ -27,7 +27,7 @@ The innards of the Remote Control
 ---------------------------------
 
 If you open your remote control you will see a circuit board like this (how-to
-video `1:31 <http://www.youtube.com/watch?v=hHnhflS3260&t=91>`__):
+video `1:31 <https://www.youtube.com/watch?v=hHnhflS3260&t=91>`__):
 
 .. image:: /Images/Kits/hardware_hacking_remote_open_350.jpg
    :scale: 100 %
@@ -51,7 +51,7 @@ Solder wires to the IC
 Next we have to solder the wires to the HC2262 to connect to the inputs 
 of the remote control. We will solder five wires to the HX2262 IC
 (:ref:`Small soldering tutorial <starter_kit_hardware_hacking_for_beginners_soldering>`,
-how-to video `1:56 <http://www.youtube.com/watch?v=hHnhflS3260&t=116>`__):
+how-to video `1:56 <https://www.youtube.com/watch?v=hHnhflS3260&t=116>`__):
 
 ========== ====== ==========
 Pin Number Signal Wire Color
@@ -92,7 +92,7 @@ Connect wires to the Industrial Quad Relay Bricklet
 Next we will connect these wires (except black) to the Industrial Quad Relay 
 Bricklet.
 Each input of the HX2262 is connected to its own relay. Simply put it into one
-of the two connectors of a relay (how-to video `4:30 <http://www.youtube.com/watch?v=hHnhflS3260&t=270>`__).
+of the two connectors of a relay (how-to video `4:30 <https://www.youtube.com/watch?v=hHnhflS3260&t=270>`__).
 
 ====== ========== =====
 Signal Wire Color Relay
@@ -108,7 +108,7 @@ wire. Since we want to switch to GND, the second connection has to be to GND.
 So we have to connect the black 
 GND wire to all of them. We do this by connecting the black wire to one relay 
 and the other relays will be connected to it by small wires we create of the 
-second black wire (how-to video `5:02 <http://www.youtube.com/watch?v=hHnhflS3260&t=302>`__).
+second black wire (how-to video `5:02 <https://www.youtube.com/watch?v=hHnhflS3260&t=302>`__).
 The next picture depicts the finished work.
 
 .. image:: /Images/Kits/hardware_hacking_remote_soldered_closeup_iqr_top_350.jpg
