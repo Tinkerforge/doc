@@ -43,7 +43,7 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Sensor                            TBD
+Sensor                            SenseAir K30
 Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -57,7 +57,7 @@ Weight                            TBDg
 Resources
 ---------
 
-* TBD datasheet (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/datasheets/TBD.pdf>`__)
+* SenseAir K30 datasheet (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/datasheets/K30_Datasheet.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/co2-bricklet/raw/master/hardware/co2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/co2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/co2-bricklet/zipball/master>`__)
