@@ -18,7 +18,7 @@ Ozone Bricklet
 Features
 --------
 
-* Misst Ozon Konzentration von 0 bis 250 ppb (Teil pro Milliarde)
+* Misst Ozon Konzentration von 0 bis 250 ppb (Teile pro Milliarde)
 
 
 .. _ozone_bricklet_description:
@@ -29,7 +29,7 @@ Beschreibung
 Mit dem Ozone :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` die `Ozon Konzentration
 <https://de.wikipedia.org/wiki/Ozon>`__ der Luft messen.
-Die gemessene Ozon Konzentration kann in `ppm
+Die gemessene Ozon Konzentration kann in `ppb
 <https://de.wikipedia.org/wiki/Parts_per_billion>`__
 ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf
 Ozon Konzentrationsänderungen zu reagieren ohne die Werte laufend abzufragen
