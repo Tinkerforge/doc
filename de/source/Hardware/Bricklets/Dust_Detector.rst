@@ -87,12 +87,6 @@ angezeigt. Der Graph gibt den zeitlichen Verlauf der Staubdichte wieder.
 |test_pi_ref|
 
 
-.. _dust_detector_bricklet_case:
-
-Gehäuse
--------
-
-
 .. _dust_detector_bricklet_programming_interface:
 
 Programmierschnittstelle

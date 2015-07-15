@@ -87,12 +87,6 @@ aussehen.
 |test_pi_ref|
 
 
-.. _co2_bricklet_case:
-
-Gehäuse
--------
-
-
 .. _co2_bricklet_programming_interface:
 
 Programmierschnittstelle

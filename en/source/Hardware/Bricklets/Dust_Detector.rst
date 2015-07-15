@@ -87,12 +87,6 @@ graph that shows the dust density over time.
 |test_pi_ref|
 
 
-.. _dust_detector_bricklet_case:
-
-Case
-----
-
-
 .. _dust_detector_bricklet_programming_interface:
 
 Programming Interface

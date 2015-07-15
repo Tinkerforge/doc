@@ -87,12 +87,6 @@ below we slowly moved a hand away from the sensor and to the sensor again.
 |test_pi_ref|
 
 
-.. _laser_range_finder_bricklet_case:
-
-Case
-----
-
-
 .. _laser_range_finder_bricklet_programming_interface:
 
 Programming Interface

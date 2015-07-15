@@ -90,12 +90,6 @@ wegbewegen einer Hand.
 |test_pi_ref|
 
 
-.. _laser_range_finder_bricklet_case:
-
-Gehäuse
--------
-
-
 .. _laser_range_finder_bricklet_programming_interface:
 
 Programmierschnittstelle

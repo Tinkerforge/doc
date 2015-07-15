@@ -83,12 +83,6 @@ depicted below.
 |test_pi_ref|
 
 
-.. _ozone_bricklet_case:
-
-Case
-----
-
-
 .. _ozone_bricklet_programming_interface:
 
 Programming Interface

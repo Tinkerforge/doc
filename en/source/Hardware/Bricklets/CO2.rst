@@ -84,12 +84,6 @@ depicted below.
 |test_pi_ref|
 
 
-.. _co2_bricklet_case:
-
-Case
-----
-
-
 .. _co2_bricklet_programming_interface:
 
 Programming Interface
