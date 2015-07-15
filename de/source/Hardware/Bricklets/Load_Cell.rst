@@ -36,9 +36,12 @@ selbst viele Kilogramm wiegen.
 
 Im Shop sind Wägezellen für verschiedene Maximalgewichte verfügbar:
 
-* `Wägezelle 5kg <TBD>`
-* `Wägezelle 20kg <TBD>`
-* `Wägezelle 50kg <TBD>`
+* `Wägezelle 5kg CZL635
+  <https://www.tinkerforge.com/de/shop/accessories/sensors/load-cell-5kg-czl635.html>`__
+* `Wägezelle 20kg CZL601
+  <https://www.tinkerforge.com/de/shop/accessories/sensors/load-cell-20kg-czl601.html>`__
+* `Wägezelle 50kg CZL601
+  <https://www.tinkerforge.com/de/shop/accessories/sensors/load-cell-50kg-czl601.html>`__
 
 Auf dem Bricklet befindet sich eine LED die mittels API ein- und ausgeschaltet
 werden kann, um z.B. anzuzeigen, dass das gemessene Gewicht in einem bestimmten

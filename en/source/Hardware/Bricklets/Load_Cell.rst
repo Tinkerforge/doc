@@ -37,9 +37,12 @@ weigh many kilograms.
 
 Load cells with different maximum weights are available in the shop:
 
-* `Load Cell 5kg <TBD>`
-* `Load Cell 20kg <TBD>`
-* `Load Cell 50kg <TBD>`
+* `Load Cell 5kg CZL635
+  <https://www.tinkerforge.com/en/shop/accessories/sensors/load-cell-5kg-czl635.html>`__
+* `Load Cell 20kg CZL601
+  <https://www.tinkerforge.com/en/shop/accessories/sensors/load-cell-20kg-czl601.html>`__
+* `Load Cell 50kg CZL601
+  <https://www.tinkerforge.com/en/shop/accessories/sensors/load-cell-50kg-czl610.html>`__
 
 The Bricklet has an LED that can be turned on trough the API, e.g. to show
 that a weight measurement is in range.
