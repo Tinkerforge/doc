@@ -135,7 +135,7 @@ Schritt 2: Bricklets beim Enumerate initialisieren
                       char position, uint8_t hardware_version[3],
                       uint8_t firmware_version[3], uint16_t device_identifier,
                       uint8_t enumeration_type, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
 
         if(enumeration_type == IPCON_ENUMERATION_TYPE_CONNECTED ||
            enumeration_type == IPCON_ENUMERATION_TYPE_AVAILABLE) {
@@ -188,7 +188,7 @@ Schritt 2: Bricklets beim Enumerate initialisieren
                       char position, uint8_t hardware_version[3],
                       uint8_t firmware_version[3], uint16_t device_identifier,
                       uint8_t enumeration_type, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
 
         if(enumeration_type == IPCON_ENUMERATION_TYPE_CONNECTED ||
            enumeration_type == IPCON_ENUMERATION_TYPE_AVAILABLE) {
@@ -243,7 +243,7 @@ Schritt 3: Messwerte auf dem Display anzeigen
 .. code-block:: c
 
     void cb_illuminance(uint16_t illuminance, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
         char text[30] = {'\0'};
 
         sprintf(text, "Illuminanc %6.2f lx", illuminance/10.0);
@@ -251,7 +251,7 @@ Schritt 3: Messwerte auf dem Display anzeigen
     }
 
     void cb_humidity(uint16_t humidity, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
         char text[30] = {'\0'};
 
         sprintf(text, "Humidity   %6.2f %%", humidity/10.0);
@@ -259,7 +259,7 @@ Schritt 3: Messwerte auf dem Display anzeigen
     }
 
     void cb_air_pressure(int32_t air_pressure, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
         char text[30] = {'\0'};
 
         sprintf(text, "Air Press %7.2f mb", air_pressure/1000.0);
@@ -271,7 +271,7 @@ Schritt 3: Messwerte auf dem Display anzeigen
 .. code-block:: c
 
     void cb_air_pressure(int32_t air_pressure, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
         char text[30] = {'\0'};
 
         sprintf(text, "Air Press %7.2f mb", air_pressure/1000.0);
@@ -290,7 +290,7 @@ Schritt 3: Messwerte auf dem Display anzeigen
 .. code-block:: c
 
     void cb_illuminance(uint16_t illuminance, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
         char text[30] = {'\0'};
 
         sprintf(text, "Illuminanc %6.2f lx", illuminance/10.0);
@@ -298,7 +298,7 @@ Schritt 3: Messwerte auf dem Display anzeigen
     }
 
     void cb_humidity(uint16_t humidity, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
         char text[30] = {'\0'};
 
         sprintf(text, "Humidity   %6.2f %%", humidity/10.0);
@@ -306,7 +306,7 @@ Schritt 3: Messwerte auf dem Display anzeigen
     }
 
     void cb_air_pressure(int32_t air_pressure, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
         char text[30] = {'\0'};
 
         sprintf(text, "Air Press %7.2f mb", air_pressure/1000.0);
@@ -370,7 +370,7 @@ Schritt 4: Fehlerbehandlung und Logging
 .. code-block:: c
 
     void cb_illuminance(uint16_t illuminance, void *user_data) {
-        WeatherStation *ws = (WeatherStation*)user_data;
+        WeatherStation *ws = (WeatherStation *)user_data;
 
         if(ws->lcd_created) {
             char text[30] = {'\0'};
