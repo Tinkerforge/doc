@@ -96,9 +96,9 @@ das über das Solid State Relay Bricklet gesteuert wird.
 
 Im Shop bieten wir zwei passende Solid State Relais an:
 
-* `AC (Wechselstrom) SSR mit einer maximalen Schaltleistung von 25A bei 380V
+* `AC (Wechselstrom) SSR für bis zu 25A bei 380V
   <https://www.tinkerforge.com/de/shop/solid-state-relay-ac-380v-25a.html>`__
-* `DC (Gleichstrom) SSR mit einer maximalen Schaltleistung von 80A bei 50V
+* `DC (Gleichstrom) SSR für bis zu 80A bei 50V
   <https://www.tinkerforge.com/de/shop/solid-state-relay-dc-50v-80a.html>`__
 
 
@@ -122,7 +122,7 @@ Gewicht                                      1,6g
 Ressourcen
 ----------
 
-* SR AC 380V/25A (KS15/D-38Z25-L) Datenblatt (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ks15_ac.pdf>`__)
+* SSR AC 380V/25A (KS15/D-38Z25-L) Datenblatt (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ks15_ac.pdf>`__)
 * SSR DC 50V/80A (KS33/D-50D80-L) Datenblatt (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ks33_dc.pdf>`__)
 * SSR Kühlkörper (HF92B-120) Datenblatt (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/hf92b_heatsink.pdf>`__)
 * SSR Abdeckung Datenblatt (`Download <https://github.com/Tinkerforge/solid-state-relay-bricklet/raw/master/datasheets/ssr_cover.pdf>`__)

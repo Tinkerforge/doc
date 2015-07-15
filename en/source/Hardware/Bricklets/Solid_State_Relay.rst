@@ -95,9 +95,9 @@ is controlled by the Solid State Relay Bricklet.
 
 We offer two compatible solid state relays in our shop:
 
-* `AC (Alternating Current) SSR with a maximum switching capacity of 25A at 380V
+* `AC (Alternating Current) SSR for up to 25A at 380V
   <https://www.tinkerforge.com/en/shop/solid-state-relay-ac-380v-25a.html>`__
-* `DC (Direct Current) SSR with a maximum switching capacity of 80A at 50V
+* `DC (Direct Current) SSR for up to 80A at 50V
   <https://www.tinkerforge.com/en/shop/solid-state-relay-dc-50v-80a.html>`__
 
 
