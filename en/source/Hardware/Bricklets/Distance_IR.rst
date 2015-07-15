@@ -78,6 +78,15 @@ After configuring the attached sensor you can read out the measured distance
 in millimeters. With configurable events it is possible to react on changing
 distances without polling.
 
+Infrared sensors with different distance ranges are available in the shop:
+
+* `Infrared Sensor 4-30cm GP2Y0A41SK0F
+  <https://www.tinkerforge.com/en/shop/accessories/sensors/infrared-sensor-gp2y0a41sk0f.html>`__
+* `Infrared Sensor 10-80cm GP2Y0A21YK0F
+  <https://www.tinkerforge.com/en/shop/accessories/sensors/infrared-sensor-gp2y0a21yk0f.html>`__
+* `Infrared Sensor 20-150cm GP2Y0A02YK0F
+  <https://www.tinkerforge.com/en/shop/accessories/sensors/infrared-sensor-gp2y0a02yk0f.html>`__
+
 Typically these types of sensors are used in robotics to measure distances
 for mapping or localization purposes. But you can also use this sensors in
 other applications, such as a finding out if a door is opened or closed.
@@ -89,15 +98,15 @@ Technical Specifications
 ================================  ==================================================================
 Property                          Value
 ================================  ==================================================================
-Sensor                            GP2Y0A41 or GP2Y0A21 or GP2Y0A02
+Sensor                            GP2Y0A41SK0F or GP2Y0A21YK0F or GP2Y0A02YK0F
 Current Consumption               See sensor datasheet
 --------------------------------  ------------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------------
 Distance                          Depends on attached `Sharp <http://www.sharpsma.com>`__ IR Sensor:
 
-                                  * GP2Y0A41:   4cm -  30cm (1.57" - 11.81")
-                                  * GP2Y0A21:  10cm -  80cm (3.94" - 31.50")
-                                  * GP2Y0A02:  20cm - 150cm (7.87" - 59.06")
+                                  * GP2Y0A41SK0F:   4cm -  30cm (1.57" - 11.81")
+                                  * GP2Y0A21YK0F:  10cm -  80cm (3.94" - 31.50")
+                                  * GP2Y0A02YK0F:  20cm - 150cm (7.87" - 59.06")
 
                                   in 1mm steps, 12bit resolution
 --------------------------------  ------------------------------------------------------------------
@@ -111,9 +120,9 @@ Weight                            2g*
 Resources
 ---------
 
-* GP2Y0A41 datasheet (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/datasheets/GP2Y0A41.pdf>`__)
-* GP2Y0A21 datasheet (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/datasheets/GP2Y0A21.pdf>`__)
-* GP2Y0A02 datasheet (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/datasheets/GP2Y0A02.pdf>`__)
+* GP2Y0A41SK0F datasheet (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/datasheets/GP2Y0A41SK0F.pdf>`__)
+* GP2Y0A21YK0F datasheet (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/datasheets/GP2Y0A21YK0F.pdf>`__)
+* GP2Y0A02YK0F datasheet (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/datasheets/GP2Y0A02YK0F.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/hardware/distir-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dist_ir_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/zipball/master>`__)
@@ -192,12 +201,12 @@ We provide the voltage/distance mappings for the following sensors:
    :header: "Type", "Range", "Mapping File"
    :widths: 15, 25, 10
 
-   "GP2D120*", "4cm - 30cm (1.57"" - 11.81"")",   "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
-   "GP2Y0A41", "4cm - 30cm (1.57"" - 11.81"")",   "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A41.txt>`__"
-   "GP2Y0A21", "10cm - 80cm (3.94"" - 31.50"")",  "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
-   "GP2Y0A02", "20cm - 150cm (7.87"" - 59.06"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A02.txt>`__"
+   "GP2D120*",     "4cm - 30cm (1.57"" - 11.81"")",   "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2D120.txt>`__"
+   "GP2Y0A41SK0F", "4cm - 30cm (1.57"" - 11.81"")",   "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A41.txt>`__"
+   "GP2Y0A21YK0F", "10cm - 80cm (3.94"" - 31.50"")",  "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A21.txt>`__"
+   "GP2Y0A02YK0F", "20cm - 150cm (7.87"" - 59.06"")", "`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/software/calibration/2Y0A02.txt>`__"
 
-\* is no longer sold, replaced by GP2Y0A41
+\* is no longer sold, replaced by GP2Y0A41SK0F
 
 You can write your own voltage/distance mapping for a sensor we
 currently do not offer. Or you can modify an existing mapping file to achieve
