@@ -97,6 +97,28 @@ for the other axes.
 Case
 ----
 
+A `laser-cut case for the Accelerometer Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-accelerometer-bricklet.html>`__
+is available.
+
+.. image:: /Images/Cases/bricklet_accelerometer_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for Accelerometer Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_accelerometer_case_built_up_1000.jpg
+
+.. include:: Accelerometer.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/accelerometer_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Accelerometer Bricklet
+   :align: center
+   :target: ../../_images/Exploded/accelerometer_exploded.png
+
+|bricklet_case_hint|
+
 
 .. _accelerometer_bricklet_programming_interface:
 

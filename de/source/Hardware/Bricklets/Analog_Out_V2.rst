@@ -131,6 +131,28 @@ mit der Messung des Voltmeters übereinstimmen.
 Gehäuse
 -------
 
+Ein `laser-geschnittenes Gehäuse für das Analog Out Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-analog-in-out-v2-bricklet.html>`__
+ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_analog_in_v2_case_build_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Analog Out Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_analog_in_v2_case_build_up_1000.jpg
+
+.. include:: Analog_Out_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/analog_in_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Analog Out Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/analog_in_v2_exploded.png
+
+|bricklet_case_hint|
+
 
 .. _analog_out_v2_bricklet_programming_interface:
 

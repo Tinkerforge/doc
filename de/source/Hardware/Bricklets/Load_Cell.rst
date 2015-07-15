@@ -158,6 +158,28 @@ aktuellen Aufbau kalibriert.
 Gehäuse
 -------
 
+Ein `laser-geschnittenes Gehäuse für das Load Cell Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-load-cell-bricklet.html>`__
+ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_load_cell_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Load Cell Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_load_cell_case_built_up_1000.jpg
+
+.. include:: Load_Cell.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/load_cell_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Load Cell Bricklet
+   :align: center
+   :target: ../../_images/Exploded/load_cell_exploded.png
+
+|bricklet_case_hint|
+
 
 .. _load_cell_bricklet_programming_interface:
 

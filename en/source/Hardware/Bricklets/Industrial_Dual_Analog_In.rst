@@ -111,6 +111,28 @@ and a graph that shows the voltage over time.
 Case
 ----
 
+A `laser-cut case for the Industrial Dual Analog In Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__
+is available.
+
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Industrial Dual Analog In Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
+
+.. include:: Industrial_Dual_Analog_In.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Industrial Dual Analog In Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
+
+|bricklet_case_hint|
+
 
 .. _industrial_dual_analog_in_bricklet_programming_interface:
 

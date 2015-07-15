@@ -168,7 +168,8 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das Analog In Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-analog-in-out-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-analog-in-out-bricklet.html>`__
+ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_analog_in_case_build_up_350.jpg
    :scale: 100 %

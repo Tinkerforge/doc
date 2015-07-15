@@ -140,7 +140,8 @@ Case
 ----
 
 A `laser-cut case for the Ambient Light Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__
+is available.
 
 .. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
    :scale: 100 %
