@@ -116,6 +116,9 @@ und "-" vor der Klemme gekennzeichnet.
  Die Polung beim Anschließen unbedingt beachten! Das Bricklet ist nicht
  verpolungssicher!
 
+Das Bricklet misst die zwischen "+" und "-" der "IN" Klemme anliegende Spannung,
+sowie den Stromfluss vom "+" der "IN" Klemme zum "+" der "OUT" Klemme.
+
 
 .. _voltage_current_bricklet_test:
 

@@ -115,6 +115,10 @@ load with the terminal marked "OUT". The polarity is marked with "+" and "-".
  Keep the polarity in mind! This Bricklet is not protected against polarity 
  reversal!
 
+The Bricklet measures the voltage between "+" and "-" of the "IN" terminal as
+well as the current flow from "+" of the "IN" terminal to "+" of the "OUT"
+terminal.
+
 
 .. _voltage_current_bricklet_test:
 
