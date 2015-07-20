@@ -54,7 +54,7 @@ Debian wheezy repository.
 Updating Mono
 ^^^^^^^^^^^^^
 
-For image version >= 1.7 it is possible to upgrade Mono to version 4.0.2.
+For image version >= 1.7 it is possible to update Mono to version 4.0.2.
 
 To do this a working internet conncetion on the RED Brick is required. Issue
 the following commands from the :ref:`console <red_brick_brickv_console>`
