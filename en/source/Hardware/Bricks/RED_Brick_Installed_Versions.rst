@@ -64,13 +64,13 @@ To remove previously installed Mono version,
 
 .. code-block:: bash
 
-  sudo apt-get remove mono-* libmono-* && sudo apt-get purge mono-* libmono-*
+  sudo apt-get purge mono-* libmono-*
 
 To install Mono version 4.0.2,
 
 .. code-block:: bash
 
-  sudo aptitude install mono-complete=4.0.2.5-0xamarin1
+  sudo apt-get install mono-complete
 
 Installed Libraries
 -------------------
