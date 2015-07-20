@@ -342,6 +342,36 @@ If you use the Access Point mode, there is no external network infrastructure
 necessary. Your smart phone, tablet or laptop can directly connect to the
 RED Brick.
 
+.. _red_brick_brickv_settings_mobile_internet:
+
+Mobile Internet
+"""""""""""""""
+
+In the Mobile Internet section (requires Image >= 1.7 and
+Brick Viewer >= 2.2.5) of this tab, you can configure the RED Brick to connect
+to the internet using a GSM modem. This section is only
+available if the :ref:`Mobile Internet service <red_brick_brickv_settings_services>`
+is activated and you have connected the `GSM Modem
+<https://www.tinkerforge.com/en/shop/accessories/red-brick/gsm-modem.html>`__
+to the RED Brick USB port.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_mobile_internet.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing openHAB configurations.
+   :align: center
+
+If you are currently on Access Point mode and the RED Brick connected to the internet
+using GSM modem then all the devices connected to the RED Brick will be able to use the
+internet through the RED Brick. In this case the RED Brick will be working as a Wi-Fi router.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_mobile_internet_presets.jpg
+   :scale: 60 %
+   :alt: Screenshot of settings tab showing openHAB configurations.
+   :align: center
+
+Well known operator configuration parameters can be loaded as presets using the "Provider Presets"
+button.
+
 .. _red_brick_brickv_settings_server_monitoring:
 
 Server Monitoring
@@ -486,6 +516,10 @@ directly connect from your smart phone or notebook to the RED Brick.
   <red_brick_brickv_settings_server_monitoring>`.
 * openHAB: Enables the `openHAB <http://www.openhab.org/>`__ runtime, see
   :ref:`openHAB in the settings tab <red_brick_brickv_settings_openhab>`.
+* Mobile Internet: If mobile internet feature is enabled, you can configure
+  the RED Brick to connect to the internet using a GSM modem,
+  see :ref:`mobile internet in the settings tab
+  <red_brick_brickv_settings_mobile_internet>`.
 
 If you change the services and save the changes, the RED Brick will reboot
 and the new configuration will be available after the reboot.
