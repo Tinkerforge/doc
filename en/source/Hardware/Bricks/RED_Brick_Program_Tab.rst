@@ -152,12 +152,11 @@ directly link against this library (see example below).
 
     clean:
     	rm -f *.o $(EXE)
-* Make Options: If you compile from source you can also add
-  Makefile parameters.
 * Working Directory: Specify the
   `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
+* Make Options: If you compile from source you can also add make parameters.
 
 .. _red_brick_program_tab_step3_csharp:
 
@@ -206,22 +205,25 @@ Delphi/Lazarus
   uploading or it is the name of the executable that is created
   during compilation
 * Compile From Source: If you check this checkbox, your code will be
-  compiled upon upload. If you use this option your project must
-  contain a ``Makefile.fpc``. An example Makefile for a small
-  project that uses the Tinkerforge Bindings and has the file
-  ``Example.pas`` as main unit looks as follows::
+  compiled upon upload. As build system fpcmake or lazbuild (requires
+  Image >= 1.7 and Brick Viewer >= 2.2.6) can be used:
 
-    [target]
-    programs=Example
+  * For fpcmake your project must contain a ``Makefile.fpc``. An example
+    Makefile for a small project that uses the Tinkerforge Bindings and has
+    the file ``Example.pas`` as main unit looks as follows::
 
-    [require]
-    packages=tinkerforge
-* Make Options: If you compile from source you can also add
-  Makefile parameters.
+     [target]
+     programs=Example
+
+     [require]
+     packages=tinkerforge
+  * For lazbuild your project must contain a Lazarus project file (``*.lpi``).
 * Working Directory: Specify the
   `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the
   root directory of your program. Usually you will leave this as ``.``.
+* Make/Lazbuild Options: If you compile from source you can also add
+  make/lazbuild parameters.
 
 Java
 ^^^^

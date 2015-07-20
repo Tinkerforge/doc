@@ -152,12 +152,12 @@ die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
 
     clean:
     	rm -f *.o $(EXE)
-* Make Options: Wenn vom Source kompiliert wird, können hier Makefile Parameter
-  angegeben werden.
 * Working Directory: Spezifiziert das
   `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
+* Make Options: Wenn vom Source kompiliert wird, können hier make Parameter
+  angegeben werden.
 
 .. _red_brick_program_tab_step3_csharp:
 
@@ -205,22 +205,27 @@ Delphi/Lazarus
   hochgeladen wurde, oder der Name der ausführbaren Datei die während des
   Kompilieren erstellt wird.
 * Compile From Source: Wird diese Checkbox aktiviert, so wird der Code nach dem
-  Hochladen kompiliert. Es muss eine ``Makefile.fpc`` enthalten sein, damit
-  diese Option genutzt werden kann. Eine Beispiel-Makefile für ein kleines
-  Projekt, das die Tinkerforge Bindings und die Datei ``Example.pas`` als
-  Hauptmodul nutzt, sieht wie folgt aus::
+  Hochladen kompiliert. Als Build System kann entwerder fpcmake oder lazbuild
+  (benötigt Image >= 1.7 und Brick Viewer >= 2.2.6) verwendet werden:
 
-    [target]
-    programs=Example
+  * Für fpcmake muss eine ``Makefile.fpc`` enthalten sein, damit
+    diese Option genutzt werden kann. Eine Beispiel-Makefile für ein kleines
+    Projekt, das die Tinkerforge Bindings und die Datei ``Example.pas`` als
+    Hauptmodul nutzt, sieht wie folgt aus::
 
-    [require]
-    packages=tinkerforge
-* Make Options: Wenn von Source kompiliert wird können hier Makefile Parameter
-  übergeben werden.
+      [target]
+      programs=Example
+
+      [require]
+      packages=tinkerforge
+  * Für lazbuild muss eine Lazarus Projektdatei (``*.lpi``) enthalten sein,
+    damit diese Option genutzt werden kann.
 * Working Directory: Spezifiziert das
   `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
   Typischerweise kann dies bei ``.`` belassen werden.
+* Make/Lazbuild Options: Wenn von Source kompiliert wird können hier
+  make/lazbuild Parameter übergeben werden.
 
 Java
 ^^^^
