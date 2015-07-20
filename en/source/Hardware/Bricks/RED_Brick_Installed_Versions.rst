@@ -51,6 +51,27 @@ please write us an email (info@tinkerforge.com). Include a place where we
 can find it and how we can install it. Preferably it is available in the
 Debian wheezy repository.
 
+Updating Mono
+^^^^^^^^^^^^^
+
+For image version >= 1.7 it is possible to upgrade Mono to version 4.0.2.
+
+To do this a working internet conncetion on the RED Brick is required. Issue
+the following commands from the :ref:`console <red_brick_brickv_console>`
+or via a SSH connection to the RED Brick.
+
+To remove previously installed Mono version,
+
+.. code-block:: bash
+
+  sudo apt-get remove mono-* libmono-* && sudo apt-get purge mono-* libmono-*
+
+To install Mono version 4.0.2,
+
+.. code-block:: bash
+
+  sudo aptitude install mono-complete=4.0.2.5-0xamarin1
+
 Installed Libraries
 -------------------
 
