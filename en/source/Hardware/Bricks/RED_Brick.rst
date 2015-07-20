@@ -348,7 +348,7 @@ Mobile Internet
 """""""""""""""
 
 In the Mobile Internet section (requires Image >= 1.7 and
-Brick Viewer >= 2.2.5) of this tab, you can configure the RED Brick to connect
+Brick Viewer >= 2.2.6) of this tab, you can configure the RED Brick to connect
 to the internet using a GSM modem. This section is only
 available if the :ref:`Mobile Internet service <red_brick_brickv_settings_services>`
 is activated and you have connected the `GSM Modem
@@ -357,16 +357,16 @@ to the RED Brick USB port.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_mobile_internet.jpg
    :scale: 60 %
-   :alt: Screenshot of settings tab showing openHAB configurations.
+   :alt: Screenshot of settings tab showing Mobile Internet configurations.
    :align: center
 
-If you are currently on Access Point mode and the RED Brick connected to the internet
+If you are currently on Access Point mode and the RED Brick connected to the Internet
 using GSM modem then all the devices connected to the RED Brick will be able to use the
-internet through the RED Brick. In this case the RED Brick will be working as a Wi-Fi router.
+Internet through the RED Brick. In this case the RED Brick will be working as a Wi-Fi router.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_mobile_internet_presets.jpg
    :scale: 60 %
-   :alt: Screenshot of settings tab showing openHAB configurations.
+   :alt: Screenshot of settings tab showing Mobile Internet configurations.
    :align: center
 
 Well known operator configuration parameters can be loaded as presets using the "Provider Presets"
