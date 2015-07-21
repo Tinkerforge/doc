@@ -157,7 +157,7 @@ Eigenschaft                       Wert
 ================================  ======================================================================================
 Prozessor                         Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
 Speicher                          512MB DDR3 SDRAM, Micro-SD-Karte als Flash Speicher
-Anschlüsse                        USB-2.0-Host, Micro-HDMI (Typ D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
+Anschlüsse                        USB 2.0 Host, Micro-HDMI (Typ D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
 --------------------------------  --------------------------------------------------------------------------------------
 --------------------------------  --------------------------------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
@@ -198,7 +198,7 @@ Mini-USB Kabel verbunden werden.
 
 .. image:: /Images/Bricks/brick_red_mini_usb_600.jpg
    :scale: 100 %
-   :alt: RED Brick mit Mini-USB-Kabel
+   :alt: RED Brick mit Mini-USB Kabel
    :align: center
    :target: ../../_images/Bricks/brick_red_mini_usb_800.jpg
 
@@ -268,10 +268,10 @@ Die Liste kann folgende Netzwerkschnittstellen enthalten
 * ``lo``: Dies ist die sogenannte Loopback-Schnittstelle. Sie ist rein lokal und
   dient unter anderem der Kommunikation zwischen Anwenderprogrammen und dem
   lokalen Brick Daemon.
-* ``wlanX``: Dies ist die WLAN-Schnittstelle. Sie wird erzeugt wenn ein WLAN
+* ``wlanX``: Dies ist die WLAN-Schnittstelle. Sie wird erzeugt wenn ein WLAN USB
   Stick an die :ref:`USB Host Buchse <red_brick_usb_host>` angeschlossen wird.
 * ``ethX``: Dies ist eine Ethernet-Schnittstelle. Sie wird erzeugt wenn ein
-  Ethernet Stick an die :ref:`USB Host Buchse <red_brick_usb_host>`
+  Ethernet USB Stick an die :ref:`USB Host Buchse <red_brick_usb_host>`
   angeschlossen wird.
 * ``tfX``: Ist die Ethernet-Schnittstelle, die erzeugt wird, wenn eine
   :ref:`Ethernet Extension <ethernet_extension>` auf den RED Brick gesteckt
@@ -304,8 +304,8 @@ aktuell genutzten Netzwerkschnittstelle an. Der angezeigte Status wird
 automatisch alle 3 Sekunden aktualisiert.
 
 Die genutzte Schnittstelle kann im *Configuration* Abschnitt eingestellt
-werden. Als erstes muss die Schnittstelle gewählt werden (Ein USB Ethernet Stick
-wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein USB WLAN Stick
+werden. Als erstes muss die Schnittstelle gewählt werden. Ein Ethernet USB Stick
+wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein WLAN USB Stick
 als ``wlanX`` angezeigt (X ist eine Zahl). Abhängig von der gewählten
 Schnittstelle gibt es verschiedenen Einstellungsoptionen:
 
@@ -321,7 +321,7 @@ Schnittstelle gibt es verschiedenen Einstellungsoptionen:
   Wähle den gewünschten Access Point und gebe den dazugehörigen Key ein.
   Anschließend muss nur noch zwischen DHCP oder statischer IP Adresse gewählt
   werden. Durch Klicken auf *Connect* wird die Verbindung zum Netzwerk
-  hergestellt. Unterstützte USB WLAN Sticks finden sich in unserem
+  hergestellt. Unterstützte WLAN USB Sticks finden sich in unserem
   `Shop <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__.
 
 .. _red_brick_brickv_settings_ap:
@@ -333,7 +333,8 @@ Im WLAN Access Point Abschnitt (benötigt Image >= 1.4 und
 Brick Viewer >= 2.2.2) kann der RED Brick in einen WLAN Access
 Point verwandelt werden. Dieser Abschnitt ist erst verfügbar, wenn der
 :ref:`Access Point Service <red_brick_brickv_settings_services>` aktiviert ist
-und ein `WLAN USB Adapter <https://www.tinkerforge.com/de/shop/accessories/red-brick/wifi-usb-adapter.html>`__ 
+und ein `WLAN USB Stick
+<https://www.tinkerforge.com/de/shop/accessories/red-brick/wifi-usb-adapter.html>`__
 eingesteckt ist.
 
 .. image:: /Images/Screenshots/brickv_red_tab_settings_access_point.jpg
@@ -433,7 +434,7 @@ Brick, so dass die Uhr nicht weiterläuft, wenn der RED Brick nicht aktiv ist.
    :alt: Screenshot des Settings Tabs: Datum und Uhrzeit Konfiguration.
    :align: center
 
-Wenn eine Verbindung zum Internet besteht (Ethernet Extension oder USB WLAN
+Wenn eine Verbindung zum Internet besteht (Ethernet Extension oder WLAN USB
 Stick), werden Datum und Uhrzeit automatisch mittels NTP gesetzt. Dazu muss nur
 die Zeitzone gesetzt werden. Diese wird gespeichert und wieder hergestellt,
 wenn der RED Brick das nächste mal hochfährt.
@@ -491,7 +492,7 @@ und Notebooks direkt mit dem RED Brick verbinden können.
   sparen.
 * Web Server: Der Webserver ist notwendig wenn Webservices genutzt werden
   sollen. Diese Option fügt ungefähr 10 Sekunden Bootzeit hinzu.
-* Splash Screen: Falls aktiviert wird ein Splash Screen beim Bootvorgang
+* Splash Screen: Falls aktiviert, wird ein Splash Screen beim Bootvorgang
   angezeigt. Ist dieser deaktiviert, so werden Kernelmeldungen angezeigt.
 * Access Point: Ist der Access Point Modus aktiviert, kann der RED Brick
   als Access Point genutzt werden (siehe
@@ -667,7 +668,7 @@ importiert (siehe oben) werden.
 RED Brick Web Interface
 -----------------------
 
-Wenn der RED Brick mit einem USB WLAN Stick, einer Ethernet Extension oder einer
+Wenn der RED Brick mit einem WLAN USB Stick, einer Ethernet Extension oder einer
 anderen Netzwerkverbindung ausgestattet ist, kann auf das Web Interface
 zugegriffen werden. Das Web Interface ist unter der IP Adresse des RED Bricks
 oder unter dessen Hostnamen (Voreinstellung: ``red-brick``) erreichbar.
@@ -1082,10 +1083,10 @@ USB 2.0 Host
 ^^^^^^^^^^^^
 
 Der RED Brick ist mit einer Standard
-`USB-2.0 <http://de.wikipedia.org/wiki/USB>`__ (480Mb/s) Typ A Buchse
+`USB 2.0 <http://de.wikipedia.org/wiki/USB>`__ (480Mb/s) Typ A Buchse
 ausgestattet. Mit ihr können USB Geräte mit bis zu 7,5W (5V/1,5A) betrieben
 werden. Ein Kurzschluss-Schutz schützt den RED Brick und das angeschlossene
-Gerät. Typische USB Geräte, wie zum Beispiel WLAN oder Ethernet Sticks,
+Gerät. Typische USB Geräte, wie zum Beispiel WLAN oder Ethernet USB Stick,
 Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens werden unterstützt.
 Im Wiki findet sich eine wachsende `Liste von USB Geräten
 <http://www.tinkerunity.org/wiki/index.php/DE/RED_USB>`__ die von Nutzern
@@ -1130,7 +1131,8 @@ unterstützt. Jede Extension kann maximal einmal im Stapel verbaut werden.
 Zwei RS485 oder zwei Ethernet Extensions sind also nicht möglich.
 
 Die :ref:`WIFI Extension <wifi_extension>` wird zur Zeit nicht unterstützt.
-Wir empfehlen die Nutzung eines WLAN Sticks um den RED Brick ins WLAN zu bringen.
+Wir empfehlen die Nutzung eines WLAN USB Sticks um den RED Brick ins WLAN zu
+bringen.
 
 Die Ethernet Extension taucht als normale Ethernet-Schnittstelle des Linux
 Systems auf. Über eine :ref:`Step-Down Power Supply <step_down_power_supply>`

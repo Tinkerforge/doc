@@ -126,8 +126,8 @@ necessary libraries can be installed manually.
 
 The Brick is equipped with a `Micro-HDMI <http://en.wikipedia.org/wiki/HDMI>`__
 connector, which can be used by programs to show a graphical user interface. A
-`USB-2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
-connect Wi-Fi dongles, mouses, keyboards, touchscreens and similar.
+`USB 2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
+connect USB Wi-Fi adapters, mouses, keyboards, touchscreens and similar.
 
 With an :ref:`Ethernet Master Extension <ethernet_extension>` the RED Brick can
 be extended by an Ethernet interface. The
@@ -153,7 +153,7 @@ Property                       Value
 =============================  =================================================================================
 Processor                      Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
 Memory                         512MB DDR3 SDRAM, Micro-SD-Card as Flash
-Connectors                     USB-2.0-Host, Micro-HDMI (type D), Mini-USB, Stack connectors, GPIO FPC connector
+Connectors                     USB 2.0 Host, Micro-HDMI (type D), Mini-USB, Stack connectors, GPIO FPC connector
 -----------------------------  ---------------------------------------------------------------------------------
 -----------------------------  ---------------------------------------------------------------------------------
 Dimensions (W x D x H)         40 x 40 x 16mm (1.57 x 1.57 x 0.63")
@@ -259,10 +259,10 @@ The list can contain the following network interfaces
 
 * ``lo``: This is the loopback interface. It is a local interface, used for
   example for the communication between your program and the local Brick Daemon.
-* ``wlanX`` : This is a Wi-Fi interface. It is created if you attach a Wi-Fi
-  dongle to the :ref:`USB Host connector <red_brick_usb_host>`.
+* ``wlanX`` : This is a Wi-Fi interface. It is created if you attach a Wi-Fi USB
+  adapter to the :ref:`USB host connector <red_brick_usb_host>`.
 * ``ethX`` : This is a Ethernet interface. It is created if you attach a
-  Ethernet dongle to the :ref:`USB Host connector <red_brick_usb_host>`.
+  Ethernet USB adapter to the :ref:`USB host connector <red_brick_usb_host>`.
 * ``tfX`` : This is the Ethernet interface created if you add an
   :ref:`Ethernet Extension <ethernet_extension>` on top of the RED Brick.
 
@@ -293,8 +293,8 @@ and currently used network interface. The status is updated automatically every
 3 seconds.
 
 You can configure the used interface in the *Configuration* subsection. First
-choose the interface you want to configure (An USB Ethernet dongle will show
-up as ``ethX``, the Ethernet Extension as ``tfX`` and a USB Wi-Fi dongle
+choose the interface you want to configure. An Ethernet USB adapter will show
+up as ``ethX``, the Ethernet Extension as ``tfX`` and a Wi-Fi USB adapter
 as ``wlanX`` (X is a number). Dependent on the selected interface you will get
 other configuration options:
 
@@ -309,7 +309,7 @@ other configuration options:
 
   Select the desired access point and enter the secret and select between DHCP or
   static IP address. After that press *Connect*.
-  `Supported USB Wi-Fi dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
+  `Supported Wi-Fi USB adapters <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
   can be found in our shop.
 
 .. _red_brick_brickv_settings_ap:
@@ -449,7 +449,7 @@ time won't be incremented if the RED Brick is not powered.
    :align: center
 
 If you have a connection to the Internet (trough the Ethernet Extension
-or a USB Wi-Fi dongle), the date and time are automatically set by
+or a Wi-Fi USB adapter), the date and time are automatically set by
 NTP. You only have to configure the timezone, which is saved even if
 the RED Brick is powered down.
 
@@ -547,7 +547,7 @@ Console Tab (Remote Access)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you have attached the RED Brick over its
-`Mini-USB Connector <red_brick_mini_usb>`__ to your PC it will also register
+`Mini-USB connector <red_brick_mini_usb>`__ to your PC it will also register
 a USB serial interface. This serial interface can be used to access the Linux
 shell of the Brick. Select the serial port of the Brick and press *Connect*.
 Under Linux the typical interface is ``/dev/ttyACMX`` (X is number) under
@@ -687,7 +687,7 @@ imported (see above).
 RED Brick Web Interface
 -----------------------
 
-If your RED Brick is equipped with a USB Wi-Fi dongle, an Ethernet
+If your RED Brick is equipped with a Wi-Fi USB adapter, an Ethernet
 Extension or has other network connectivity, you can access a
 web interface. The web interface is available at the IP address of the
 RED Brick or the hostname (``red-brick`` by default).
@@ -1089,16 +1089,16 @@ USB 2.0 Host
 ^^^^^^^^^^^^
 
 The RED Brick is equipped with a standard
-`USB-2.0 <https://en.wikipedia.org/wiki/USB>`__ (480Mb/s) type A jack. It can
+`USB 2.0 <https://en.wikipedia.org/wiki/USB>`__ (480Mb/s) type A jack. It can
 power other USB devices with up to 7.5W (5V/1.5A) and is short circuit
-protected. Typical USB devices such as Wi-Fi or Ethernet dongles, webcams,
+protected. Typical USB devices such as Wi-Fi or Ethernet USB adapter, webcams,
 printers, keyboards, mouses or USB touch screens are supported.
 The wiki has a growing `list of USB devices
 <http://www.tinkerunity.org/wiki/index.php/EN/RED_USB>`__ that users have
 successfully tested with a RED Brick.
 
-Some Ethernet or Wi-Fi dongles can be directly configured with the Brick Viewer.
-`Supported dongles <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
+Some Ethernet or Wi-Fi USB adapters can be directly configured with the Brick Viewer.
+`Supported USB adapters <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
 can be found in our shop. Other devices might have
 to be configured directly in the Linux system and can't be configured with the
 Brick Viewer.
@@ -1135,7 +1135,7 @@ each Extension can only be present one time,
 such that two RS485 or two Ethernet Extension can't be used.
 
 The :ref:`WIFI Extension <wifi_extension>` is currently not supported. We
-recommend to use a USB Wi-Fi dongle to add Wi-Fi connectivity to the RED Brick.
+recommend to use a Wi-Fi USB adapter to add Wi-Fi connectivity to the RED Brick.
 
 The Ethernet Extension shows up as a normal Ethernet interface in the
 underlying Linux system.
