@@ -354,6 +354,35 @@ identifiziert werden können.
 Im Access Point Modus ist keine externe Netzwerkinfrastruktur notwendig. 
 Smartphone, Tablet oder Laptop können direkt mit dem RED Brick verbunden werden.
 
+.. _red_brick_brickv_settings_mobile_internet:
+
+Mobile Internet
+"""""""""""""""
+
+Im Mobile Internet Abschnitt (benötigt Image >= 1.7 und Brick Viewer >= 2.2.6)
+kann eine mobile Internet-Verbindung konfiguriert werden. Dieser Abschnitt
+ist erst verfügbar, wenn der :ref:`Mobile Internet Service
+<red_brick_brickv_settings_services>` aktiviert ist und ein `3G USB Stick
+<https://www.tinkerforge.com/de/shop/accessories/red-brick/3g-usb-adapter.html>`__
+eingesteckt ist.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_mobile_internet.jpg
+   :scale: 60 %
+   :alt: Screenshot des Settings Tab mit Konfiguration der mobilen Internet-Verbindung
+   :align: center
+
+Voreinstellungen für verschiedene Mobilfunkbetreiber können über denn "Provider
+Presets" Knopf ausgewählt werden.
+
+.. image:: /Images/Screenshots/brickv_red_tab_settings_mobile_internet_presets.jpg
+   :scale: 60 %
+   :alt: Screenshot des Mobile Internet Provider Presets Dialogs.
+   :align: center
+
+Wenn WLAN Access Point und Mobile Internet gleichzeitig aktive sind, dann teilt
+der RED Brick als WLAN Router seine Internet-Verbindung automatisch mit den
+verbundenen WLAN Teilnehmern.
+
 .. _red_brick_brickv_settings_server_monitoring:
 
 Serverüberwachung
@@ -502,6 +531,9 @@ und Notebooks direkt mit dem RED Brick verbinden können.
   <red_brick_brickv_settings_server_monitoring>`).
 * openHAB: Aktiviert die `openHAB <http://www.openhab.org/>`__ Runtime (siehe
   :ref:`openHAB im Settings Tab <red_brick_brickv_settings_openhab>`).
+* Mobile Internet: Wenn Mobile Internet aktiviert ist, dann kann eine
+  :ref:`mobile Internet-Verbindung im Settings Tab
+  <red_brick_brickv_settings_mobile_internet>` konfiguriert werden.
 
 Werden Services geändert und gespeichert, so startet der RED Brick neu. Nach dem 
 Neustart stehen die Änderungen zur Verfügung.
