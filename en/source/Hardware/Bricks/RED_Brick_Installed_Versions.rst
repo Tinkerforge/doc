@@ -54,23 +54,18 @@ Debian wheezy repository.
 Updating Mono
 ^^^^^^^^^^^^^
 
-For image version >= 1.7 it is possible to update Mono to version 4.0.2.
+For Image version >= 1.7 it is possible to update Mono to version 4, by default
+version 3 is installed. To do this a working Internet connection on the RED
+Brick is required. Issue the following commands from the :ref:`console
+<red_brick_brickv_console>` in Brick Viewer or via a SSH connection to the RED
+Brick::
 
-To do this a working internet conncetion on the RED Brick is required. Issue
-the following commands from the :ref:`console <red_brick_brickv_console>`
-or via a SSH connection to the RED Brick.
+  sudo apt-get update
+  sudo apt-get install mono-devel mono-complete ca-certificates-mono
 
-To remove previously installed Mono version,
-
-.. code-block:: bash
-
-  sudo apt-get purge mono-* libmono-*
-
-To install Mono version 4.0.2,
-
-.. code-block:: bash
-
-  sudo apt-get install mono-complete
+Currently Mono 4 does not come with the Visual Basic .NET compiler ``vbnc``.
+If you want to compile Visual Basic .NET code on the RED Brick then you should
+not update Mono.
 
 Installed Libraries
 -------------------

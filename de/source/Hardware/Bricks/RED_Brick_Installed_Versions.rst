@@ -55,6 +55,22 @@ die Bibliothek finden und eine Beschreibung wie man diese installiert. Am
 einfachsten wäre es, wenn diese direkt im Debian wheezy Repository verfügbar
 wäre.
 
+Mono aktualisieren
+^^^^^^^^^^^^^^^^^^
+
+Ab Image Version 1.7 kann Mono auf Version 4 aktualisiert werden,
+standardmäßig ist Version 3 installiert. Für das Update benötigt der RED Brick
+eine Internet-Verbindung. Es müssen folgende Befehle über den :ref:`Console
+Tab <red_brick_brickv_console>` im Brick Viewer oder eine SSH Verbindung auf
+dem RED Brick ausgeführt werden::
+
+  sudo apt-get update
+  sudo apt-get install mono-devel mono-complete ca-certificates-mono
+
+Im Moment bringt Mono 4 den Visual Basic .NET Compiler ``vbnc`` nicht mit.
+Wenn auf dem RED Brick Visual Basic .NET Quelltext kompiliert werden soll, dann
+sollte im Moment nicht auf Mono 4 aktualisiert werden.
+
 Installierte Bibliotheken
 -------------------------
 
