@@ -36,6 +36,8 @@ selbst viele Kilogramm wiegen.
 
 Im Shop sind Wägezellen für verschiedene Maximalgewichte verfügbar:
 
+* `Wägezelle 1kg CZL635
+  <https://www.tinkerforge.com/de/shop/accessories/sensors/load-cell-1kg-czl635.html>`__
 * `Wägezelle 5kg CZL635
   <https://www.tinkerforge.com/de/shop/accessories/sensors/load-cell-5kg-czl635.html>`__
 * `Wägezelle 20kg CZL601

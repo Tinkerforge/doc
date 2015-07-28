@@ -37,6 +37,8 @@ weigh many kilograms.
 
 Load cells with different maximum weights are available in the shop:
 
+* `Load Cell 1kg CZL635
+  <https://www.tinkerforge.com/en/shop/accessories/sensors/load-cell-1kg-czl635.html>`__
 * `Load Cell 5kg CZL635
   <https://www.tinkerforge.com/en/shop/accessories/sensors/load-cell-5kg-czl635.html>`__
 * `Load Cell 20kg CZL601
