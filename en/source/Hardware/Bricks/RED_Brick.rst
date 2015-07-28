@@ -368,6 +368,9 @@ presets using the "Provider Presets" button.
    :alt: Screenshot of Mobile Internet Provider Presets dialog.
    :align: center
 
+After you click the "Connect" the connection will be established. This might
+take several minutes.
+
 If Wireless Access Point and Mobile Internet are enabled at the same time then
 the RED Brick operates as a Wi-Fi router and shares its Internet connection with
 the connected Wi-Fi clients.

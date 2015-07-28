@@ -379,6 +379,9 @@ Presets" Knopf ausgewählt werden.
    :alt: Screenshot des Mobile Internet Provider Presets Dialogs.
    :align: center
 
+Nach einem Klick auf den "Connect" Knopf wird die Verbindung hergestellt, dies
+kann einige Minuten dauern.
+
 Wenn WLAN Access Point und Mobile Internet gleichzeitig aktive sind, dann teilt
 der RED Brick als WLAN Router seine Internet-Verbindung automatisch mit den
 verbundenen WLAN Teilnehmern.
