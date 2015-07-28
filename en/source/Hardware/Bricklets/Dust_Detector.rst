@@ -19,7 +19,6 @@ Features
 --------
 
 * Measures dust density between 0 and 500µg/m³
-* Detects particle with size ~0.5µm and above
 
 .. _dust_detector_bricklet_description:
 
@@ -46,7 +45,6 @@ Sensor                             GP2Y1010AU
 Current Consumption                TBDmA
 ---------------------------------  ------------------------------------------------------------
 ---------------------------------  ------------------------------------------------------------
-Minimum detectable particle size   ~0.5µm
 Resolution                         1µg/m³
 Measurement Range                  0-500µg/m³
 ---------------------------------  ------------------------------------------------------------

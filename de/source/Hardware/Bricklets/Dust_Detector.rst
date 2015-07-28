@@ -19,7 +19,6 @@ Features
 --------
 
 * Misst Staubdichte zwischen 0 und 500µg/m³
-* Erkennt Partikel ab einer Größe von ~0,5µm
 
 .. _dust_detector_bricklet_description:
 
@@ -46,7 +45,6 @@ Sensor                                GP2Y1010AU
 Stromverbrauch                        TBDmA
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
-Minimale detektierbare Partikelgröße  ~0,5µm
 Auslösung                             1µg/m³
 Messbereich                           0-500µg/m³
 ------------------------------------  ------------------------------------------------------------
