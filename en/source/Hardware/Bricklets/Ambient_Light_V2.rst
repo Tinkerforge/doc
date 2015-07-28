@@ -61,7 +61,7 @@ Resources
 ---------
 
 * LTR329ALS datasheet (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/raw/master/datasheets/LTR329ALS.pdf>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/raw/master/hardware/ambient-light-v2-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/raw/master/hardware/ambient-light-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/ambient_light_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/zipball/master>`__)
 

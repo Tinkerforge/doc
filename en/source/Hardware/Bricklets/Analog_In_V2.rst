@@ -56,7 +56,7 @@ Weight                            8g
 Resources
 ---------
 
-* Schematic (`Download <https://github.com/Tinkerforge/analog-in-v2-bricklet/raw/master/hardware/analog-in-v2-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/analog-in-v2-bricklet/raw/master/hardware/analog_in-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/analog_in_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/analog-in-v2-bricklet/zipball/master>`__)
 

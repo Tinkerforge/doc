@@ -56,7 +56,7 @@ Gewicht                           8g
 Ressourcen
 ----------
 
-* Schaltplan (`Download <https://github.com/Tinkerforge/analog-in-v2-bricklet/raw/master/hardware/analog-in-v2-schematic.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/analog-in-v2-bricklet/raw/master/hardware/analog_in-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/analog_in_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/analog-in-v2-bricklet/zipball/master>`__)
 
