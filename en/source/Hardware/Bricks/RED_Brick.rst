@@ -369,7 +369,10 @@ presets using the "Provider Presets" button.
    :align: center
 
 After you click the "Connect" the connection will be established. This might
-take several minutes.
+take several minutes. It is necessary to enter a SIM Card PIN even if it is not
+necessary. If you have disabled the PIN on your SIM card, enter an arbitrary 
+PIN.
+
 
 If Wireless Access Point and Mobile Internet are enabled at the same time then
 the RED Brick operates as a Wi-Fi router and shares its Internet connection with

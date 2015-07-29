@@ -380,7 +380,9 @@ Presets" Knopf ausgewählt werden.
    :align: center
 
 Nach einem Klick auf den "Connect" Knopf wird die Verbindung hergestellt, dies
-kann einige Minuten dauern.
+kann einige Minuten dauern. Es muss immer ein SIM Karten PIN eingegeben werden.
+Ist die PIN auf der SIM Karte deaktiviert worden, so kann eine beliebige PIN 
+angegeben werden.
 
 Wenn WLAN Access Point und Mobile Internet gleichzeitig aktive sind, dann teilt
 der RED Brick als WLAN Router seine Internet-Verbindung automatisch mit den
