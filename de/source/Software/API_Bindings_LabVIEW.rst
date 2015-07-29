@@ -11,7 +11,8 @@ Die LabVIEW Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
-* ``Tinkerforge.dll``, eine vorkompilierte .NET Bibliothek
+* ``net20/Tinkerforge.dll``, eine vorkompilierte .NET 2.0 Bibliothek
+* ``net40/Tinkerforge.dll``, eine vorkompilierte .NET 2.0 Bibliothek
 * in ``source/`` den Quelltext für ``Tinkerforge.dll``
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets im LabVIEW 2010
   und LabVIEW 2013 Format
@@ -37,8 +38,15 @@ Installation
 ------------
 
 Damit die Bindings funktionieren können muss LabVIEW in der Lage sein die
-``Tinkerforge.dll`` zu finden. Beim Öffnen einen Beispiels wird LabVIEW nach
-der DLL suchen und nachfragen falls sie nicht gefunden werden kann. Dieses
+``Tinkerforge.dll`` zu finden. Abhängig von der verwendeten LabVIEW und Windows
+Version muss entweder die ``Tinkerforge.dll`` aus dem ``net20`` oder ``net40``
+Ordern verwendet werden. Die passende Version kann durch Ausprobieren ermittelt
+werden. Teste zuerst die NET 2.0 Version. Wenn LabVIEW dann Fehlercode 1386
+"Die angegebene .NET-Klasse ist in LabVIEW nicht verfügbar." meldet, dann ist
+die NET 4.0 Version die richtige.
+
+Beim Öffnen einen Beispiels wird LabVIEW nach der ``Tinkerforge.dll``
+suchen und nachfragen falls sie nicht gefunden werden kann. Dieses
 Suchen-und-Nachfragen kann vermieden werden, indem die ``Tinkerforge.dll`` in
 einem LabVIEW bekannten Ordern gespeichert wird. Die einfachsten Möglichkeiten
 ist der ``vi.lib`` Ordern der LabVIEW Installation::

@@ -63,7 +63,7 @@ the ``source/`` folder as well as the ``ExampleConfiguration.pas`` from the
   -> DeviceBase.pas
   -> IPConnection.pas
   -> LEConverter.pas
-  -> SHA1.pas
+  -> SHAone.pas
   -> TimedSemaphore.pas
   -> BrickStepper.pas
   -> ExampleConfiguration.pas

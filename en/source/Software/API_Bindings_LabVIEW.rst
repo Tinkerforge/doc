@@ -10,7 +10,8 @@ The LabVIEW bindings allow you to control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` from your LabVIEW programs. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
-* ``Tinkerforge.dll``, a precompiled .NET library
+* ``net20/Tinkerforge.dll``, a precompiled .NET 2.0 library
+* ``net40/Tinkerforge.dll``, a precompiled .NET 4.0 library
 * in ``source/`` the source code of ``Tinkerforge.dll``
 * in ``examples/`` the examples for every Brick and Bricklet in LabVIEW 2010
   and LabVIEW 2013 format
@@ -36,10 +37,15 @@ Installation
 ------------
 
 To make the bindings work LabVIEW has to be able to find the ``Tinkerforge.dll``.
-If you open an example then LabVIEW will search for it and ask you if it could
-not find it. You can avoid this search and ask procedure by putting the
-``Tinkerforge.dll`` in a folder known to LabVIEW. The easiest option is the
-``vi.lib`` folder of your LabVIEW installation::
+Depending on your LabVIEW and Windows version you either need to use the
+``Tinkerforge.dll`` from the ``net20`` or the ``net40`` folder. Try the NET 2.0
+version first. If LabVIEW reports error code 1386 "The specified .NET class is
+not available in LabVIEW." then you need to use the NET 4.0 version instead.
+
+If you open an example then LabVIEW will search for the ``Tinkerforge.dll`` and
+ask you if it could not find it. You can avoid this search and ask procedure by
+putting the ``Tinkerforge.dll`` in a folder known to LabVIEW. The easiest option
+is the ``vi.lib`` folder of your LabVIEW installation::
 
  C:\Program Files\National Instruments\LabVIEW 2013\vi.lib\
 

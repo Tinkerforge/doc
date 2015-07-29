@@ -65,7 +65,7 @@ Ordner in ein neuen Ordner kopiert werden::
   -> DeviceBase.pas
   -> IPConnection.pas
   -> LEConverter.pas
-  -> SHA1.pas
+  -> SHAone.pas
   -> TimedSemaphore.pas
   -> BrickStepper.pas
   -> ExampleConfiguration.pas
