@@ -38,7 +38,7 @@ libterm-readline-gnu-perl      1.24-2+b1        Perl extension for the GNU ReadL
 libwww-curl-perl               4.17-1+b1        Perl bindings to libcurl                                             |c|
 libxml-simple-perl             2.20-1           Perl module for reading and writing XML                              |c|
 libyaml-perl                   1.13-1           YAML Ain't Markup Language                                           |c|
-perl                           5.20.2-2         Larry Wall's Practical Extraction and Report Language                |c|
-perl-doc                       5.20.2-2         Perl documentation                                                   |c|
+perl                           5.20.2-3+deb8u1  Larry Wall's Practical Extraction and Report Language                |c|
+perl-doc                       5.20.2-3+deb8u1  Perl documentation                                                   |c|
 pmtools                        2.0.0-1          Perl module tools                                                    |c|
 ============================== ================ ==================================================================== ====

@@ -10,21 +10,21 @@ SharpPcap              4.2.0         Packet capture framework based on the famou
 XML-RPC.NET            2.5.0         Library for implementing XML-RPC services and clients                                       |c|
 gtk-sharp2             2.12.10-5.1   GTK# 2.10 suite, CLI bindings for GTK+                                                      |c|
 iTextSharp             5.5.1         Library that provides support of PDF document manipulation                                  |c|
-libmono-2.0-1          3.2.8+dfsg-9  Mono JIT library (Default version)                                                          |c|
-libmono-cil-dev        3.2.8+dfsg-9  Mono Base Class Libraries (BCL) - Development files                                         |c|
-libmono-profiler       3.2.8+dfsg-9  Mono profiler libraries                                                                     |c|
-mono-2.0-gac           3.2.8+dfsg-9  Mono GAC tool (for CLI 2.0)                                                                 |c|
-mono-2.0-service       3.2.8+dfsg-9  Mono service manager for CLI 2.0                                                            |c|
-mono-4.0-gac           3.2.8+dfsg-9  Mono GAC tool (for CLI 4.0)                                                                 |c|
-mono-4.0-service       3.2.8+dfsg-9  Mono service manager for CLI 4.0                                                            |c|
-mono-csharp-shell      3.2.8+dfsg-9  interactive C# shell                                                                        |c|
-mono-devel             3.2.8+dfsg-9  Mono development tools                                                                      |c|
-mono-dmcs              3.2.8+dfsg-9  Mono C# 4.0 compiler for CLI 4.0 (transitional package)                                     |c|
-mono-gmcs              3.2.8+dfsg-9  Mono C# 2.0 and C# 3.0 compiler for CLI 2.0 (transitional package)                          |c|
-mono-jay               3.2.8+dfsg-9  LALR(1) parser generator oriented to Java/CLI                                               |c|
-mono-mcs               3.2.8+dfsg-9  Mono C# 2.0 / 3.0 / 4.0 / 5.0  compiler for CLI 2.0 / 4.0 / 4.5                             |c|
-mono-runtime           3.2.8+dfsg-9  Mono runtime - default version                                                              |c|
-mono-runtime-sgen      3.2.8+dfsg-9  Mono runtime - SGen                                                                         |c|
-mono-utils             3.2.8+dfsg-9  Mono utilities                                                                              |c|
+libmono-2.0-1          3.2.8+dfsg-10 Mono JIT library (Default version)                                                          |c|
+libmono-cil-dev        3.2.8+dfsg-10 Mono Base Class Libraries (BCL) - Development files                                         |c|
+libmono-profiler       3.2.8+dfsg-10 Mono profiler libraries                                                                     |c|
+mono-2.0-gac           3.2.8+dfsg-10 Mono GAC tool (for CLI 2.0)                                                                 |c|
+mono-2.0-service       3.2.8+dfsg-10 Mono service manager for CLI 2.0                                                            |c|
+mono-4.0-gac           3.2.8+dfsg-10 Mono GAC tool (for CLI 4.0)                                                                 |c|
+mono-4.0-service       3.2.8+dfsg-10 Mono service manager for CLI 4.0                                                            |c|
+mono-csharp-shell      3.2.8+dfsg-10 interactive C# shell                                                                        |c|
+mono-devel             3.2.8+dfsg-10 Mono development tools                                                                      |c|
+mono-dmcs              3.2.8+dfsg-10 Mono C# 4.0 compiler for CLI 4.0 (transitional package)                                     |c|
+mono-gmcs              3.2.8+dfsg-10 Mono C# 2.0 and C# 3.0 compiler for CLI 2.0 (transitional package)                          |c|
+mono-jay               3.2.8+dfsg-10 LALR(1) parser generator oriented to Java/CLI                                               |c|
+mono-mcs               3.2.8+dfsg-10 Mono C# 2.0 / 3.0 / 4.0 / 5.0  compiler for CLI 2.0 / 4.0 / 4.5                             |c|
+mono-runtime           3.2.8+dfsg-10 Mono runtime - default version                                                              |c|
+mono-runtime-sgen      3.2.8+dfsg-10 Mono runtime - SGen                                                                         |c|
+mono-utils             3.2.8+dfsg-10 Mono utilities                                                                              |c|
 mono-vbnc              3.8-1         Mono Visual Basic Compiler (VB.NET)                                                         |c|
 ====================== ============= =========================================================================================== ====

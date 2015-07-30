@@ -15,14 +15,16 @@ gdb                    7.7.1+dfsg-5          GNU Debugger                       
 gnuplot                4.6.6-2               Command-line driven interactive plotting program                    |c|
 gnuplot-x11            4.6.6-2               Command-line driven interactive plotting program. X-package         |c|
 gphoto2                2.5.4-1+b1            digital camera command-line client                                  |c|
+iptables               1.4.21-2+b1           administration tools for packet filtering and NAT                   |c|
+libacl1-dev            2.2.52-2              Access control list static libraries and headers                    |c|
 libatlas-base-dev      3.10.2-7              Automatically Tuned Linear Algebra Software, generic static         |c|
 libblas3               1.2.20110419-10       Basic Linear Algebra Reference implementations, shared library      |c|
 libboost-all-dev       1.55.0.2              Boost C++ Libraries development files (ALL) (default version)       |c|
-libc6-dev              2.19-15               GNU C Library: Development Libraries and Header Files               |c|
-libcrypto++-dev        5.6.1-6               General purpose cryptographic library - C++ development             |c|
-libcurl4-openssl-dev   7.38.0-4              development files and documentation for libcurl (OpenSSL flavour)   |c|
-libexpat1-dev          2.1.0-6+b3            XML parsing C library - development kit                             |c|
-libgcrypt11-dev        1.5.4-3+really1.6.2-4 transitional libgcrypt11-dev package                                |c|
+libc6-dev              2.19-18               GNU C Library: Development Libraries and Header Files               |c|
+libcrypto++-dev        5.6.1-6+deb8u1        General purpose cryptographic library - C++ development             |c|
+libcurl4-openssl-dev   7.38.0-4+deb8u2       development files and documentation for libcurl (OpenSSL flavour)   |c|
+libexpat1-dev          2.1.0-6+deb8u1        XML parsing C library - development kit                             |c|
+libgcrypt11-dev        1.5.4-3+really1.6.3-2 transitional libgcrypt11-dev package                                |c|
 libgd2-xpm-dev         2.1.0-5               GD Graphics Library (transitional package)                          |c|
 libgfortran3           4.9.2-10              Runtime library for GNU Fortran applications                        |c|
 libgirepository1.0-dev 1.42.0-2.2            Library for handling GObject introspection data (development files) |c|
@@ -37,19 +39,20 @@ libgtkmm-2.4-dev       1:2.24.4-1.1          C++ wrappers for GTK+ (development 
 libgtkmm-3.0-dev       3.14.0-1              C++ wrappers for GTK+ (development files)                           |c|
 libmpfr-dev            3.1.2-2               multiple precision floating-point computation developers tools      |c|
 libmsgpack-dev         0.5.7-3               binary-based efficient object serialization library                 |c|
-libmysqlclient-dev     5.5.42-1              MySQL database development files                                    |c|
+libmysqlclient-dev     5.5.44-0+deb8u1       MySQL database development files                                    |c|
 libncurses5-dev        5.9+20140913-1+b1     developer's libraries for ncurses                                   |c|
-libopencv-dev          2.4.9.1+dfsg-1+b1     development files for opencv                                        |c|
+libopencv-dev          2.4.9.1+dfsg-1+deb8u1 development files for opencv                                        |c|
 libpcap-dev            1.6.2-2               development library for libpcap (transitional package)              |c|
 libsqlite0-dev         2.8.17-12             SQLite development files                                            |c|
-libsqlite3-dev         3.8.7.1-1             SQLite 3 development files                                          |c|
-libssl-dev             1.0.1k-1              Secure Sockets Layer toolkit - development files                    |c|
+libsqlite3-dev         3.8.7.1-1+deb8u1      SQLite 3 development files                                          |c|
+libssl-dev             1.0.1k-3+deb8u1       Secure Sockets Layer toolkit - development files                    |c|
 libtool                2.4.2-1.11            Generic library support script                                      |c|
-libudev-dev            215-12                libudev development files                                           |c|
+libudev-dev            215-17+deb8u1         libudev development files                                           |c|
 libusb-1.0-0           2:1.0.19-1            userspace USB programming library                                   |c|
 libusb-1.0-0-dev       2:1.0.19-1            userspace USB programming library development files                 |c|
 libxml2-dev            2.9.1+dfsg1-5         Development files for the GNOME XML library                         |c|
+libyaml-dev            0.1.6-3               Fast YAML 1.1 parser and emitter library (development)              |c|
 mathgl                 2.2.2.1-3+b2          library for scientific graphs (utilities and examples)              |c|
 sqlite                 2.8.17-12             command line interface for SQLite                                   |c|
-sqlite3                3.8.7.1-1             Command line interface for SQLite 3                                 |c|
+sqlite3                3.8.7.1-1+deb8u1      Command line interface for SQLite 3                                 |c|
 ====================== ===================== =================================================================== ====

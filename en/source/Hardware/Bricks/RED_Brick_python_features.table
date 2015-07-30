@@ -7,7 +7,7 @@ libpython2.7               2.7.9-2                     Shared Python runtime lib
 libpython3.4               3.4.2-1                     Shared Python runtime library (version 3.4)                               |c|
 pycrypto                   2.6.1                       Cryptographic modules for Python.                                         |c|
 pynag                      0.9.1                       Python modules for Nagios plugins and configuration                       |c|
-python                     2.7.8-4                     interactive high-level object-oriented language (default version)         |c|
+python                     2.7.9-1                     interactive high-level object-oriented language (default version)         |c|
 python-flask               0.10.1-2                    micro web framework based on Werkzeug, Jinja2 and good intentions         |c|
 python-gtk2                2.24.0-4                    Python bindings for the GTK+ widget set                                   |c|
 python-gtk2-dev            2.24.0-4                    GTK+ bindings: devel files                                                |c|
@@ -18,7 +18,7 @@ python-mysql.connector     1.2.3-2                     pure Python implementatio
 python-mysqldb             1.2.3-2.1                   Python interface to MySQL                                                 |c|
 python-netifaces           0.10.4-0.1                  portable network interface information - Python 2.x                       |c|
 python-numpy               1:1.8.2-2                   Numerical Python adds a fast array facility to the Python language        |c|
-python-opencv              2.4.9.1+dfsg-1+b1           Python bindings for the computer vision library                           |c|
+python-opencv              2.4.9.1+dfsg-1+deb8u1       Python bindings for the computer vision library                           |c|
 python-opengl              3.0.2-1                     Python bindings to OpenGL (Python 2)                                      |c|
 python-pcapy               0.10.8-1                    Python interface to the libpcap packet capture library                    |c|
 python-pip                 1.5.6-5                     alternative Python package installer                                      |c|
@@ -29,6 +29,7 @@ python-pywapi              0.3.6-1                     Python wrapper around dif
 python-qt4                 4.11.2+dfsg-1               Python bindings for Qt4                                                   |c|
 python-qt4-gl              4.11.2+dfsg-1               Python bindings for Qt4's OpenGL module                                   |c|
 python-qwt5-qt4            5.2.1~cvs20091107+dfsg-7+b2 Python version of the Qwt5 technical widget library                       |c|
+python-reconfigure         0.1.59+git20140824-1        simple config file management library                                     |c|
 python-scientific          2.9.4-3                     Python modules useful for scientific computing                            |c|
 python-scipy               0.14.0-2                    scientific tools for Python                                               |c|
 python-sciscipy            1.0.1-1                     Python binding of Scilab                                                  |c|

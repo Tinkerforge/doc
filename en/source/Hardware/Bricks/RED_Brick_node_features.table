@@ -1,8 +1,8 @@
 Node.js
 -------
-====== ================ ============================= ====
-Name   Version          Description                   full
-====== ================ ============================= ====
-nodejs 0.10.29~dfsg-1.1 evented I/O for V8 javascript |c|
-npm    1.4.21+ds-2      package manager for Node.js   |c|
-====== ================ ============================= ====
+====== ============== ============================= ====
+Name   Version        Description                   full
+====== ============== ============================= ====
+nodejs 0.10.29~dfsg-2 evented I/O for V8 javascript |c|
+npm    1.4.21+ds-2    package manager for Node.js   |c|
+====== ============== ============================= ====
