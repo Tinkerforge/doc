@@ -141,6 +141,12 @@ IMU kann die Kalibrierungsdaten speichern, um die Selbst-Kalibrierung nach
 einem Neustart zu beschleunigen. Diese Kalibrierungsdaten werden bei der
 Produktion bereits gesetzt.
 
+.. image:: /Images/Screenshots/imu_v2_brick_calibration.jpg
+   :scale: 100 %
+   :alt: IMU Brick 2.0 Kalibrierung im Brick Viewer
+   :align: center
+   :target: ../../_images/Screenshots/imu_v2_brick_calibration.jpg
+
 Klicke den "Calibration" Knopf im Brick Viewer, um den aktuellen Zustand der
 durchgehenden Selbst-Kalibrierung einzusehen. Auf diesem Dialog können auch die
 gespeicherten Kalibrierungsdaten aktualisiert werden.

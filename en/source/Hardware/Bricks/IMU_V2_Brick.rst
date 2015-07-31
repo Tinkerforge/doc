@@ -79,7 +79,7 @@ Sampling Rate                                        100Hz
 Bricklet Ports                                       2
 Dimensions (W x D x H)                               40 x 40 x 19mm (1.57 x 1.57 x 0.75")
 Weight                                               12g
-Current Consumption                                  TBDmA
+Current Consumption                                  415mW (83mA at 5V)
 ===================================================  ============================================================
 
 Resources
@@ -132,6 +132,12 @@ The IMU Brick 2.0 does continuous self-calibration during usage. It is not
 necessary to start a specific manual calibration process. The IMU can store the
 calibration data to speed-up the self-calibration after each restart. This
 data is initialized at the factory.
+
+.. image:: /Images/Screenshots/imu_v2_brick_calibration.jpg
+   :scale: 100 %
+   :alt: IMU Brick 2.0 calibration in Brick Viewer
+   :align: center
+   :target: ../../_images/Screenshots/imu_v2_brick_calibration.jpg
 
 Click the "Calibration" button in Brick Viewer to see the current continuous
 self-calibration status. The dialog also allows to update the saved calibration

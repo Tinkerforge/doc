@@ -110,7 +110,7 @@ Sampling Rate                                        500Hz
 Bricklet Ports                                       2
 Dimensions (W x D x H)                               40 x 40 x 16mm (1.57 x 1.57 x 0.63")
 Weight                                               12g
-Current Consumption                                  53mA
+Current Consumption                                  300mW (60mA at 5V)
 ===================================================  ============================================================
 
 
@@ -167,6 +167,12 @@ Calibration
 
 The IMU Brick comes factory calibrated and should work out of the box. It is
 however easy to recalibrate, if necessary.
+
+.. image:: /Images/Screenshots/imu_brick_calibration.jpg
+   :scale: 60 %
+   :alt: IMU Brick calibration in Brick Viewer
+   :align: center
+   :target: ../../_images/Screenshots/imu_brick_calibration.jpg
 
 The factory calibration has taken place in a room without any significant
 interfering magnetic fields. If you want to operate the IMU Brick near something

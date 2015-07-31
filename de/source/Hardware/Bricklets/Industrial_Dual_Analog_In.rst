@@ -18,7 +18,7 @@ Industrial Dual Analog In Bricklet
 Features
 --------
 
-* Unabhängig Messung zweier Spanungen zwischen -45V und +45V (DC)
+* Unabhängig Messung zweier Spanungen zwischen -35V und +35V (DC)
 * 24Bit A/D-Wandler für hohe Auflösung
 * Kalibriert
 * Genaugikeit von 0,1% / ±4mV über den gesamten Messbereich
@@ -45,11 +45,11 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 A/D-Wandler                       MCP3911
-Stromverbrauch                    TBDmA
+Stromverbrauch                    15mW (3mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Kanäle                            2
-Messbereich                       -45V bis +45V (DC)
+Messbereich                       -35V bis +35V (DC)
 Auflösung                         24Bit
 Genauigkeit                       0,1% / ±4mV über den gesamten Messbereich
 --------------------------------  ------------------------------------------------------------

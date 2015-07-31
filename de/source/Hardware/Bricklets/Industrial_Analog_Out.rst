@@ -19,8 +19,8 @@ Features
 --------
 
 * Gleichzeitig programmierbarer Spannungs- und Stromausgang
-* Gibt elektrische Spannung zwischen 0V und 10V aus
-* Gibt elektrischen Strom zwischen 0mA und 24mA aus
+* Gibt elektrischen Strom zwischen 0mA und 24mA aus (IEC 60381-1)
+* Gibt elektrische Spannung zwischen 0V und 10V aus (IEC 60381-2)
 * Keine externe Stromversorgung nötig
 
 
@@ -43,7 +43,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 D/A-Wandler                       DAC7760
-Stromverbrauch                    TBDmA
+Stromverbrauch                    65mW (13mA bei 5V, ohne Last)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Auflösung                         bis zu 1,2mV / 4,8µA

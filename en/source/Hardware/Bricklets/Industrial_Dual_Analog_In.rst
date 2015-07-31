@@ -18,7 +18,7 @@ Industrial Dual Analog In Bricklet
 Features
 --------
 
-* Independently measures two voltages between -45V and +45V (DC)
+* Independently measures two voltages between -35V and +35V (DC)
 * 24bit ADC for high resolution
 * Calibrated
 * Full-scale accuracy of 0.1% / ±4mV
@@ -46,11 +46,11 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 ADC                               MCP3911
-Current Consumption               TBDmA
+Current Consumption               15mW (3mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Channels                          2
-Measurement Range                 -45V to +45V (DC)
+Measurement Range                 -35V to +35V (DC)
 Resolution                        24bit
 Accuracy                          0.1% / ±4mV full scale
 --------------------------------  ------------------------------------------------------------

@@ -56,7 +56,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Sensor                            HX711
-Current Consumption               TBDmA
+Current Consumption               150mW (28mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Resolution                        24bit
@@ -124,7 +124,7 @@ and a graph that shows the weight over time.
 
 .. image:: /Images/Bricklets/bricklet_load_cell_brickv.jpg
    :scale: 100 %
-   :alt: Load Cell Bricklet im Brick Viewer
+   :alt: Load Cell Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_load_cell_brickv.jpg
 
@@ -138,6 +138,12 @@ Calibration
 
 The Load Cell Bricklet has to be calibrated for the connected load cell and the
 specific setup.
+
+.. image:: /Images/Screenshots/load_cell_bricklet_calibration.jpg
+   :scale: 100 %
+   :alt: Load Cell Bricklet calibration in Brick Viewer
+   :align: center
+   :target: ../../_images/Screenshots/load_cell_bricklet_calibration.jpg
 
 Connect a load cell to the Bricklet as described :ref:`above
 <load_cell_bricklet_connectivity>`. Then start Brick Viewer and click the

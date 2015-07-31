@@ -57,7 +57,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            HX711
-Stromverbrauch                    TBDmA
+Stromverbrauch                    150mW (28mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Auflösung                         24Bit
@@ -143,6 +143,12 @@ Kalibrierung
 
 Das Load Cell Bricklet muss für die angeschlossenen Wägezelle und den
 aktuellen Aufbau kalibriert werden.
+
+.. image:: /Images/Screenshots/load_cell_bricklet_calibration.jpg
+   :scale: 100 %
+   :alt: Load Cell Bricklet Kalibrierung im Brick Viewer
+   :align: center
+   :target: ../../_images/Screenshots/load_cell_bricklet_calibration.jpg
 
 Schließe eine Wägezelle, wie :ref:`oben <load_cell_bricklet_connectivity>`
 beschrieben, an das Load Cell Bricklet an. Starte dann Brick Viewer und klicke

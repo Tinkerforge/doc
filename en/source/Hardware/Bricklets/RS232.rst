@@ -40,7 +40,7 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Current Consumption               25mW (5mA at 5V, idle)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Baudrate                          300 - 230400baud
@@ -150,9 +150,15 @@ is available.
    :align: center
    :target: ../../_images/Cases/bricklet_rs232_case_built_up_1000.jpg
 
-.. include:: RS232.substitutions
-   :start-after: >>>bricklet_case_steps
-   :end-before: <<<bricklet_case_steps
+The assembly is easiest if you follow the following steps:
+
+* Screw spacers to the Bricklet with a washer on top of each mouting hole,
+* screw top plate to top spacers,
+* build up side plates,
+* plug side plates into top plate and
+* screw bottom plate to bottom spacers.
+
+Below you can see an exploded assembly drawing of the RS232 Bricklet case:
 
 .. image:: /Images/Exploded/rs232_exploded_350.png
    :scale: 100 %

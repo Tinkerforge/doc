@@ -96,7 +96,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    1mA (trocken) - 20mA (nass)
+Stromverbrauch                    < 5mW (< 1mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Auflösung                         12Bit
@@ -153,7 +153,7 @@ Ein `laser-geschnittenes Gehäuse für das Moisture Bricklet
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
 * Schraube Abstandshalter an das Bricklet,
-* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte,
+* baue Seitenteile auf mit Bricklet und Sensor in der Mitte,
 * schraube Unterteil an untere Abstandshalter,
 * schraube Oberteil auf obere Abstandshalter.
 

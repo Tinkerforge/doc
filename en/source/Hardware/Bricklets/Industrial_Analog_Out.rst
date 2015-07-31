@@ -19,8 +19,8 @@ Features
 --------
 
 * Simultaneous programmable voltage and current output
-* Outputs voltage between 0V and 10V
-* Outputs current between 0mA and 24mA
+* Outputs voltage between 0V and 10V (IEC 60381-1)
+* Outputs current between 0mA and 24mA (IEC 60381-2)
 * No external power supply necessary
 
 
@@ -44,7 +44,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 DAC                               DAC7760
-Current Consumption               TBDmA
+Current Consumption               65mW (13mA at 5V, without load)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Resolution                        up to 1.2mV / 4.8µA

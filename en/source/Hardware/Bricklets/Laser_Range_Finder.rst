@@ -42,7 +42,8 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Sensor                            LIDAR-Lite
-Current Consumption               TBDmA
+Current Consumption               | 450mW (90mA at 5V, Laser off)
+                                  | 520mW (104mA at 5V, Laser on)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Distance (Range, Resolution)      * 0-40m, 1cm

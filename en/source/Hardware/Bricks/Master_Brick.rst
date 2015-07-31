@@ -103,7 +103,7 @@ Property                          Value
 Bricklet Ports                    4
 Dimensions (W x D x H)            40 x 40 x 19mm (1.57 x 1.57 x 0.75")
 Weight                            12g
-Current Consumption               68mA
+Current Consumption               410mW (82mA at 5V)
 ================================  ============================================================
 
 

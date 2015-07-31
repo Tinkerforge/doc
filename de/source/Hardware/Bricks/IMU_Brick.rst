@@ -171,6 +171,12 @@ Der IMU Brick wird fertig kalibriert ausgeliefert und sollte daher direkt nach
 dem Auspacken funktionieren. Falls es nötig sein sollte ist eine Neukalibrierung
 leicht zu bewerkstelligen.
 
+.. image:: /Images/Screenshots/imu_brick_calibration.jpg
+   :scale: 60 %
+   :alt: IMU Brick Kalibrierung im Brick Viewer
+   :align: center
+   :target: ../../_images/Screenshots/imu_brick_calibration.jpg
+
 Die Werkskalibrierung wurde in einem Raum ohne signifikante magnetische
 Störfelder durchgeführt. Wenn der IMU Brick in der nähe eines magnetische Feldes
 (z.B. das eines Motors) betrieben werden soll, dann sollte das Magnetometer in
