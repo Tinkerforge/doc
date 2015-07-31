@@ -46,7 +46,7 @@ Features
 * Unabhängig Messung zweier Spanungen zwischen -35V und +35V (DC)
 * 24Bit A/D-Wandler für hohe Auflösung
 * Kalibriert
-* Genaugikeit von 0,1% / ±4mV über den gesamten Messbereich
+* Genauigkeit von 0,1% / ±4mV über den gesamten Messbereich
 * Bis zu 976 Messwerte pro Sekunde
 
 
