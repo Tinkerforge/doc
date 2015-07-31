@@ -11,6 +11,36 @@
 Analog Out Bricklet 2.0
 =======================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_analog_out_v2_tilted1_350.jpg",
+	               "Bricklets/bricklet_analog_out_v2_tilted1_600.jpg",
+	               "Analog Out Bricklet 2.0")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_analog_out_v2_tilted2_100.jpg",
+	             "Bricklets/bricklet_analog_out_v2_tilted2_600.jpg",
+	             "Analog Out Bricklet 2.0")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_analog_out_v2_horizontal_100.jpg",
+	             "Bricklets/bricklet_analog_out_v2_horizontal_600.jpg",
+	             "Analog Out Bricklet 2.0")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_analog_out_v2_brickv_100.jpg",
+	             "Bricklets/bricklet_analog_out_v2_brickv.jpg",
+	             "Analog Out Bricklet 2.0 in Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/analog_out_v2_bricklet_dimensions_100.png",
+	             "Dimensions/analog_out_v2_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
  This Bricklet is currently work-in-progress!
 

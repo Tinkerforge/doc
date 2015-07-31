@@ -11,6 +11,41 @@
 Load Cell Bricklet
 ==================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_load_cell_tilted1_350.jpg",
+	               "Bricklets/bricklet_load_cell_tilted1_600.jpg",
+	               "Load Cell Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_load_cell_tilted2_100.jpg",
+	             "Bricklets/bricklet_load_cell_tilted2_600.jpg",
+	             "Load Cell Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_load_cell_horizontal_100.jpg",
+	             "Bricklets/bricklet_load_cell_horizontal_600.jpg",
+	             "Load Cell Bricklet")
+	}}
+	{{
+	    tfdocimg("Cases/bricklet_load_cell_case_built_up_100.jpg",
+	             "Cases/bricklet_load_cell_case_built_up_600.jpg",
+	             "Load Cell Bricklet in case")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_load_cell_brickv_100.jpg",
+	             "Bricklets/bricklet_load_cell_brickv.jpg",
+	             "Load Cell Bricklet in Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/load_cell_bricklet_dimensions_100.png",
+	             "Dimensions/load_cell_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
  This Bricklet is currently work-in-progress!
 

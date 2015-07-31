@@ -11,6 +11,36 @@
 Accelerometer Bricklet
 ======================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_accelerometer_tilted_350.jpg",
+	               "Bricklets/bricklet_accelerometer_tilted_600.jpg",
+	               "Accelerometer Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_accelerometer_horizontal_100.jpg",
+	             "Bricklets/bricklet_accelerometer_horizontal_600.jpg",
+	             "Accelerometer Bricklet")
+	}}
+	{{
+	    tfdocimg("Cases/bricklet_accelerometer_case_built_up_100.jpg",
+	             "Cases/bricklet_accelerometer_case_built_up_600.jpg",
+	             "Accelerometer Bricklet in Case")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_accelerometer_brickv_100.jpg",
+	             "Bricklets/bricklet_accelerometer_brickv.jpg",
+	             "Accelerometer Bricklet in Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/accelerometer_bricklet_dimensions_100.png",
+	             "Dimensions/accelerometer_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
  This Bricklet is currently work-in-progress!
 

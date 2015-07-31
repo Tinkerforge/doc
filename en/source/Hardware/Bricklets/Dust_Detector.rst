@@ -11,6 +11,36 @@
 Dust Detector Bricklet
 ======================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_dust_detector_tilted1_350.jpg",
+	               "Bricklets/bricklet_dust_detector_tilted1_600.jpg",
+	               "Dust Detector Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_dust_detector_tilted2_100.jpg",
+	             "Bricklets/bricklet_dust_detector_tilted2_600.jpg",
+	             "Dust Detector Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_dust_detector_horizontal_100.jpg",
+	             "Bricklets/bricklet_dust_detector_horizontal_600.jpg",
+	             "Dust Detector Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_dust_detector_brickv_100.jpg",
+	             "Bricklets/bricklet_dust_detector_brickv.jpg",
+	             "Dust Detector Bricklet in Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/dust_detector_bricklet_dimensions_100.png",
+	             "Dimensions/dust_detector_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
  This Bricklet is currently work-in-progress!
 
