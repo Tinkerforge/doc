@@ -11,6 +11,36 @@
 Laser Range Finder Bricklet
 ===========================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_laser_range_finder_tilted1_350.jpg",
+	               "Bricklets/bricklet_laser_range_finder_tilted1_600.jpg",
+	               "Laser Range Finder Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_laser_range_finder_tilted2_350.jpg",
+	             "Bricklets/bricklet_laser_range_finder_tilted2_600.jpg",
+	             "Laser Range Finder Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_laser_range_finder_horizontal_100.jpg",
+	             "Bricklets/bricklet_laser_range_finder_horizontal_600.jpg",
+	             "Laser Range Finder Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_laser_range_finder_brickv_100.jpg",
+	             "Bricklets/bricklet_laser_range_finder_brickv.jpg",
+	             "Laser Range Finder Bricklet im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/laser_range_finder_bricklet_dimensions_100.png",
+	             "Dimensions/laser_range_finder_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
   Diese Bricklet ist noch in Entwicklung!
 

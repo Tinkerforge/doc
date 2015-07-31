@@ -11,6 +11,41 @@
 Analog In Bricklet 2.0
 ======================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_analog_in_v2_tilted1_350.jpg",
+	               "Bricklets/bricklet_analog_in_v2_tilted1_600.jpg",
+	               "Analog In Bricklet 2.0")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_analog_in_v2_tilted2_100.jpg",
+	             "Bricklets/bricklet_analog_in_v2_tilted2_600.jpg",
+	             "Analog In Bricklet 2.0")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_analog_in_v2_horizontal_100.jpg",
+	             "Bricklets/bricklet_analog_in_v2_horizontal_600.jpg",
+	             "Analog In Bricklet 2.0")
+	}}
+	{{
+	    tfdocimg("Cases/bricklet_analog_in_v2_case_built_up_100.jpg",
+	             "Cases/bricklet_analog_in_v2_case_built_up_600.jpg",
+	             "Analog In Bricklet 2.0 im Gehäuse")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_analog_in_v2_brickv_100.jpg",
+	             "Bricklets/bricklet_analog_in_v2_brickv.jpg",
+	             "Analog In Bricklet 2.0 im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/analog_in_v2_bricklet_dimensions_100.png",
+	             "Dimensions/analog_in_v2_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
   Diese Bricklet ist noch in Entwicklung!
 

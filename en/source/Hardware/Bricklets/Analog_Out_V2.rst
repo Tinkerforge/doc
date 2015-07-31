@@ -30,6 +30,11 @@ Analog Out Bricklet 2.0
 	             "Analog Out Bricklet 2.0")
 	}}
 	{{
+	    tfdocimg("Cases/bricklet_analog_in_v2_case_built_up_100.jpg",
+	             "Cases/bricklet_analog_in_v2_case_built_up_600.jpg",
+	             "Analog Out Bricklet 2.0 in Gehäuse")
+	}}
+	{{
 	    tfdocimg("Bricklets/bricklet_analog_out_v2_brickv_100.jpg",
 	             "Bricklets/bricklet_analog_out_v2_brickv.jpg",
 	             "Analog Out Bricklet 2.0 in Brick Viewer")

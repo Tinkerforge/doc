@@ -11,6 +11,41 @@
 Analog Out Bricklet 2.0
 =======================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_analog_out_v2_tilted1_350.jpg",
+	               "Bricklets/bricklet_analog_out_v2_tilted1_600.jpg",
+	               "Analog Out Bricklet 2.0")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_analog_out_v2_tilted2_100.jpg",
+	             "Bricklets/bricklet_analog_out_v2_tilted2_600.jpg",
+	             "Analog Out Bricklet 2.0")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_analog_out_v2_horizontal_100.jpg",
+	             "Bricklets/bricklet_analog_out_v2_horizontal_600.jpg",
+	             "Analog Out Bricklet 2.0")
+	}}
+	{{
+	    tfdocimg("Cases/bricklet_analog_in_v2_case_built_up_100.jpg",
+	             "Cases/bricklet_analog_in_v2_case_built_up_600.jpg",
+	             "Analog Out Bricklet 2.0 im Gehäuse")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_analog_out_v2_brickv_100.jpg",
+	             "Bricklets/bricklet_analog_out_v2_brickv.jpg",
+	             "Analog Out Bricklet 2.0 im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/analog_out_v2_bricklet_dimensions_100.png",
+	             "Dimensions/analog_out_v2_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
   Diese Bricklet ist noch in Entwicklung!
 
@@ -135,11 +170,11 @@ Ein `laser-geschnittenes Gehäuse für das Analog Out Bricklet 2.0
 <https://www.tinkerforge.com/de/shop/cases/case-analog-in-out-v2-bricklet.html>`__
 ist verfügbar.
 
-.. image:: /Images/Cases/bricklet_analog_in_v2_case_build_up_350.jpg
+.. image:: /Images/Cases/bricklet_analog_in_v2_case_built_up_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Analog Out Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_analog_in_v2_case_build_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_analog_in_v2_case_built_up_1000.jpg
 
 .. include:: Analog_Out_V2.substitutions
    :start-after: >>>bricklet_case_steps

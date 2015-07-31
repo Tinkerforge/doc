@@ -27,7 +27,7 @@ Ambient Light Bricklet 2.0
 	{{
 	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
 	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
-	             "Ambient Light Bricklet in case")
+	             "Ambient Light Bricklet 2.0 in case")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_ambient_light_v2_brickv_100.jpg",
