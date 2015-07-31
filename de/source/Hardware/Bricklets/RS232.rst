@@ -147,11 +147,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das RS232 Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-rs232-bricklet.html>`__ ist verfügbar.
 
-.. image:: /Images/Cases/bricklet_rs232_case_tilted_350.jpg
+.. image:: /Images/Cases/bricklet_rs232_case_built_up1_350.jpg
    :scale: 100 %
    :alt: Gehäuse für RS232 Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_rs232_case_tilted_1000.jpg
+   :target: ../../_images/Cases/bricklet_rs232_case_built_up1_1000.jpg
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 

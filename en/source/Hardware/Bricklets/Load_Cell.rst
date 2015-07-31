@@ -119,11 +119,11 @@ The Load Cell Bricklet has four terminals. The PWR and GND terminals are for
 the excitation voltage and the IN+ and IN- terminals are for the signal
 measurement.
 
-.. image:: /Images/Bricklets/bricklet_load_cell_vertical_350.jpg
+.. image:: /Images/Bricklets/bricklet_load_cell_horizontal_350.jpg
    :scale: 100 %
    :alt: Load Cell Bricklet terminals
    :align: center
-   :target: ../../_images/Bricklets/bricklet_load_cell_vertical_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_load_cell_horizontal_1200.jpg
 
 A typical load cell will have four or five wires. Check the specification of
 your load cell for its pinout and connect it according to the table below.
@@ -200,11 +200,11 @@ A `laser-cut case for the Load Cell Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-load-cell-bricklet.html>`__
 is available.
 
-.. image:: /Images/Cases/bricklet_load_cell_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_load_cell_case_built_up1_350.jpg
    :scale: 100 %
    :alt: Case for Load Cell Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_load_cell_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_load_cell_case_built_up1_1000.jpg
 
 .. include:: Load_Cell.substitutions
    :start-after: >>>bricklet_case_steps

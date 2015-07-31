@@ -88,11 +88,11 @@ können z.B. genutzt werden, um die VIN Anschlussklemme zu versorgen, so dass
 Ausgangsspannung bis zu 5V an VOUT ausgegeben werden können, ohne zusätzliche
 externe Spannungsquelle.
 
-.. image:: /Images/Bricklets/bricklet_analog_out_v2_vertical_350.jpg
+.. image:: /Images/Bricklets/bricklet_analog_out_v2_horizontal_350.jpg
     :scale: 100 %
     :alt: Analog Out Bricklet 2.0 Anschlussklemmen
     :align: center
-    :target: ../../_images/Bricklets/bricklet_analog_out_v2_vertical_1200.jpg
+    :target: ../../_images/Bricklets/bricklet_analog_out_v2_horizontal_1200.jpg
 
 
 .. _analog_out_v2_bricklet_test:

@@ -86,11 +86,11 @@ Das Load Cell Bricklet hat vier Anschlussklemmen. Die PWR und GND
 Anschlussklemmen sind für die Excitation-Spannung und die IN+ und IN-
 Anschlussklemmen sind für die Signalmessung.
 
-.. image:: /Images/Bricklets/bricklet_load_cell_vertical_350.jpg
+.. image:: /Images/Bricklets/bricklet_load_cell_horizontal_350.jpg
    :scale: 100 %
    :alt: Load Cell Bricklet Anschlussklemmen
    :align: center
-   :target: ../../_images/Bricklets/bricklet_load_cell_vertical_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_load_cell_horizontal_1200.jpg
 
 Eine typsiche Wägezelle hat vier oder fünf Drähte. In der Spezifikation der
 Wägezelle sollte die Belegung der Drähte dokumentiert sein. Schließe die
@@ -170,11 +170,11 @@ Ein `laser-geschnittenes Gehäuse für das Load Cell Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-load-cell-bricklet.html>`__
 ist verfügbar.
 
-.. image:: /Images/Cases/bricklet_load_cell_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_load_cell_case_built_up1_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Load Cell Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_load_cell_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_load_cell_case_built_up1_1000.jpg
 
 .. include:: Load_Cell.substitutions
    :start-after: >>>bricklet_case_steps

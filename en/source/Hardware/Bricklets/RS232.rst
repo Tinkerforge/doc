@@ -189,11 +189,11 @@ A `laser-cut case for the RS232 Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-rs232-bricklet.html>`__
 is available.
 
-.. image:: /Images/Cases/bricklet_rs232_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_rs232_case_built_up1_350.jpg
    :scale: 100 %
    :alt: Case for RS232 Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_rs232_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_rs232_case_built_up1_1000.jpg
 
 The assembly is easiest if you follow the following steps:
 

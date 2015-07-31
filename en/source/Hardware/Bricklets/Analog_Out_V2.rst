@@ -114,11 +114,11 @@ you can use to power things. It can also be connected to the VIN terminal to
 produce output voltages up to 5V at the VOUT terminal withou the need for an
 additional external power supply.
 
-.. image:: /Images/Bricklets/bricklet_analog_out_v2_vertical_350.jpg
+.. image:: /Images/Bricklets/bricklet_analog_out_v2_horizontal_350.jpg
     :scale: 100 %
     :alt: Analog Out Bricklet 2.0 Terminals
     :align: center
-    :target: ../../_images/Bricklets/bricklet_analog_out_v2_vertical_1200.jpg
+    :target: ../../_images/Bricklets/bricklet_analog_out_v2_horizontal_1200.jpg
 
 
 .. _analog_out_v2_bricklet_test:
@@ -158,11 +158,11 @@ A `laser-cut case for the Analog Out Bricklet 2.0
 <https://www.tinkerforge.com/en/shop/cases/case-analog-in-out-v2-bricklet.html>`__
 is available.
 
-.. image:: /Images/Cases/bricklet_analog_in_v2_case_build_up_350.jpg
+.. image:: /Images/Cases/bricklet_analog_in_v2_case_built_up_350.jpg
    :scale: 100 %
    :alt: Case for Analog Out Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_analog_in_v2_case_build_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_analog_in_v2_case_built_up_1000.jpg
 
 .. include:: Analog_Out_V2.substitutions
    :start-after: >>>bricklet_case_steps
