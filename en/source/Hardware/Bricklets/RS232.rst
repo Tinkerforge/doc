@@ -114,7 +114,7 @@ The RS232 Bricklet provides three different ways to connect to other serial
 devices: classic D-Sub 9 (male) connector, 5-way terminal block or 5-way pin
 header. But only one of these connectors can be used at the same time.
 
-.. image:: /Images/Bricklets/bricklet_rs232_horizontal_600.jpg
+.. image:: /Images/Bricklets/bricklet_rs232_horizontal_350.jpg
    :scale: 100 %
    :alt: RS232 Bricklet pinout
    :align: center
