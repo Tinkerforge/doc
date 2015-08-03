@@ -1,6 +1,5 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Analog In Bricklet
-:shoplink: ../../../shop/bricklets/analog-in-bricklet.html
 
 .. include:: Analog_In.substitutions
    :start-after: >>>substitutions
@@ -54,9 +53,8 @@ Analog In Bricklet
 .. note::
 
  Das Analog In Bricklet ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das genauere :ref:`Voltage/Current Bricklet
- <voltage_current_bricklet>` empfohlen.
-
+ Als Ersatz wird das :ref:`Analog In Bricklet 2.0 <analog_in_v2_bricklet>`
+ empfohlen.
 
 Features
 --------

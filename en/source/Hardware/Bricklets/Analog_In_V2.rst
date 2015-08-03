@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Analog In Bricklet 2.0
-:FIXME_shoplink: ../../../shop/bricklets/analog-in-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/analog-in-v2-bricklet.html
 
 .. include:: Analog_In_V2.substitutions
    :start-after: >>>substitutions

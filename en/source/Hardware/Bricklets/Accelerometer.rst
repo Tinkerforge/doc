@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Accelerometer Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/accelerometer-bricklet.html
+:shoplink: ../../../shop/bricklets/accelerometer-bricklet.html
 
 .. include:: Accelerometer.substitutions
    :start-after: >>>substitutions

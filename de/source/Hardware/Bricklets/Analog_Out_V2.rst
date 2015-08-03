@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Analog Out Bricklet 2.0
-:FIXME_shoplink: ../../../shop/bricklets/analog-out-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/analog-out-v2-bricklet.html
 
 .. include:: Analog_Out_V2.substitutions
    :start-after: >>>substitutions

@@ -1,6 +1,5 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Ambient Light Bricklet
-:shoplink: ../../../shop/bricklets/ambient-light-bricklet.html
 
 .. include:: Ambient_Light.substitutions
    :start-after: >>>substitutions
@@ -51,6 +50,12 @@ Ambient Light Bricklet
 	             "Umriss und Bohrplan")
 	}}
 	{{ tfdocend() }}
+
+.. note::
+
+ Das Ambient Light Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Ambient Light Bricklet 2.0 <ambient_light_v2_bricklet>`
+ empfohlen.
 
 
 Features

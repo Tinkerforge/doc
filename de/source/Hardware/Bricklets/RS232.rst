@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / RS232 Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/rs232-bricklet.html
+:shoplink: ../../../shop/bricklets/rs232-bricklet.html
 
 .. include:: RS232.substitutions
    :start-after: >>>substitutions

@@ -1,6 +1,5 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Ambient Light Bricklet
-:shoplink: ../../../shop/bricklets/ambient-light-bricklet.html
 
 .. include:: Ambient_Light.substitutions
    :start-after: >>>substitutions
@@ -50,6 +49,12 @@ Ambient Light Bricklet
 	             "Outline and drilling plan")
 	}}
 	{{ tfdocend() }}
+
+.. note::
+
+ The Ambient Light Bricklet is discontinued and is no longer sold. The
+ :ref:`Ambient Light Bricklet 2.0 <ambient_light_v2_bricklet>` is the recommended
+ replacement.
 
 
 Features

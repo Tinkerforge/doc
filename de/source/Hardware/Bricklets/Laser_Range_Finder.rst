@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Laser Range Finder Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/laser-range-finder-bricklet.html
+:shoplink: ../../../shop/bricklets/laser-range-finder-bricklet.html
 
 .. include:: Laser_Range_Finder.substitutions
    :start-after: >>>substitutions

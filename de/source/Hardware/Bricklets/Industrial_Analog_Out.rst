@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Industrial Analog Out Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/industrial-analog-out-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-analog-out-bricklet.html
 
 .. include:: Industrial_Analog_Out.substitutions
    :start-after: >>>substitutions
