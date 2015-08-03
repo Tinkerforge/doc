@@ -5,6 +5,7 @@ import os
 import sys
 import re
 import urllib2
+import math
 from collections import namedtuple
 
 sys.path.append(os.path.join(os.getcwd(), '..', '..', 'generators'))
@@ -565,7 +566,7 @@ def make_index_hardware_device(device_infos, category):
         lis.append(hardware_li.format(device_info.short_display_name, category, device_info.hardware_doc_name))
 
     if category == 'Bricklets':
-        split = int(len(lis) / 3 + 0.5)
+        split = int(math.ceil(len(lis) / 3.0))
     else:
         split = 15
 
@@ -627,11 +628,11 @@ def make_index_api_device(device_infos, category, language):
     ret = ''
     while len(lis) > 0:
         if category == 'Bricklets':
-            ret += '\n<div class="category_content_inner">\n<ul>' +'\n'.join(lis[:11]) + '</ul>\n</div>'
+            ret += '\n<div class="category_content_inner">\n<ul>' +'\n'.join(lis[:14]) + '</ul>\n</div>'
         else:
-            ret += '\n<ul>' +'\n'.join(lis[:11]) + '</ul>\n'
+            ret += '\n<ul>' +'\n'.join(lis[:14]) + '</ul>\n'
 
-        lis = lis[11:]
+        lis = lis[14:]
 
     return ret
 
