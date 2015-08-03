@@ -440,7 +440,7 @@ Hausautomatisierungskomponenten können somit Fenster temperaturabhängig bewegt
 werden.
 
 **Tageslichtabhänige Jalousiesteuerung:**
-Das :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
+Das :ref:`Ambient Light Bricklet 2.0 <ambient_light_v2_bricklet>`
 ermöglicht die Messung der Helligkeit von 
 Sonnenlicht. Somit könnten Jalousien lichtabhängig gesteuert werden.
 

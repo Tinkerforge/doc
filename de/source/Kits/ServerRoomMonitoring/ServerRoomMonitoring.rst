@@ -88,7 +88,7 @@ Beschreibung
 
 Das *Starterkit: Serverraum-Überwachung* ist ein Open Source Kit um
 Serverraum-Installationen zu überwachen. Das Basiskit ist mit folgenden Sensoren
-ausgestattet: :ref:`Ambient Light Bricklet <ambient_light_bricklet>`
+ausgestattet: :ref:`Ambient Light Bricklet 2.0 <ambient_light_v2_bricklet>`
 (überwacht z.B. die Raumbeleuchtung), :ref:`Humidity Bricklet <humidity_bricklet>`
 (überwacht Luftfeuchtigkeit),
 :ref:`Temperature Bricklet <temperature_bricklet>` (überwacht die Temperatur im
@@ -336,9 +336,9 @@ Enumerierung der Bricks und Bricklets ("Ist alles angeschlossen?"):
  uid=ajC
  connected-uid=6Dct25
  position=d
- hardware-version=1,1,0
- firmware-version=2,0,1
- device-identifier=ambient-light-bricklet
+ hardware-version=2,0,0
+ firmware-version=2,0,0
+ device-identifier=ambient-light_v2-bricklet
  enumeration-type=available
 
 Auslesen der verbundenen Sensoren (die UID ist anzupassen):
@@ -348,8 +348,8 @@ Auslesen der verbundenen Sensoren (die UID ist anzupassen):
  $ tinkerforge --host ServerMonitoring call temperature-bricklet SCT31 get-temperature
  temperature=2487
 
- $ tinkerforge --host ServerMonitoring call ambient-light-bricklet ajC get-illuminance
- illuminance=41
+ $ tinkerforge --host ServerMonitoring call ambient-light-v2-bricklet ajC get-illuminance
+ illuminance=410
 
  $ tinkerforge --host ServerMonitoring call ptc-bricklet fow get-temperature
  temperature=2603

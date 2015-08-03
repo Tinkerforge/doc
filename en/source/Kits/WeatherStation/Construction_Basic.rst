@@ -6,8 +6,8 @@
 Construction - Basic Weather Station
 ====================================
 
-The basic Weather Station Kit comes with :ref:`Ambient Light
-<ambient_light_bricklet>`, :ref:`Barometer <barometer_bricklet>`,
+The basic Weather Station Kit comes with :ref:`Ambient Light 2.0
+<ambient_light_v2_bricklet>`, :ref:`Barometer <barometer_bricklet>`,
 :ref:`Humidity <humidity_bricklet>` and :ref:`LCD 20x4 Bricklet
 <lcd_20x4_bricklet>`, :ref:`Master Brick <master_brick>`, the Weather Station
 case including a replacement side element for a :ref:`DC Jack Adapter

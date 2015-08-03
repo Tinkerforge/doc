@@ -424,7 +424,7 @@ Together with 433MHz home automation components you can open and
 close windows depending on the temperature.
 
 **Daylight dependent blind control:**
-With the :ref:`Ambient Light Bricklet <ambient_light_bricklet>` you
+With the :ref:`Ambient Light Bricklet 2.0 <ambient_light_v2_bricklet>` you
 can measure the light intensity, it allows to control blinds
 dependent on light level.
 
