@@ -50,6 +50,9 @@ Moisture Bricklet
 	             "Bricklets/bricklet_moisture_brickv.jpg",
 	             "Moisture Bricklet in Brick Viewer")
 	}}
+	{{ tfdocend() }}
+
+..
 	{{
 	    tfdocimg("Dimensions/moisture_bricklet_v11_dimensions_100.png",
 	             "Dimensions/moisture_bricklet_v11_dimensions_600.png",

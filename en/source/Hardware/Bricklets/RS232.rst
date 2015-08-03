@@ -49,6 +49,9 @@ RS232 Bricklet
 	             "Bricklets/bricklet_rs232_brickv.jpg",
 	             "RS232 Bricklet in Brick Viewer")
 	}}
+	{{ tfdocend() }}
+
+..
 	{{
 	    tfdocimg("Dimensions/rs232_bricklet_dimensions_100.png",
 	             "Dimensions/rs232_bricklet_dimensions_600.png",

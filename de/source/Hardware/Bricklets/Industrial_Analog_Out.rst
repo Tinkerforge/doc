@@ -29,6 +29,9 @@ Industrial Analog Out Bricklet
 	             "Bricklets/bricklet_industrial_analog_out_brickv.jpg",
 	             "Industrial Analog Out Bricklet im Brick Viewer")
 	}}
+	{{ tfdocend() }}
+
+..
 	{{
 	    tfdocimg("Dimensions/industrial_analog_out_bricklet_dimensions_100.png",
 	             "Dimensions/industrial_analog_out_bricklet_dimensions_600.png",

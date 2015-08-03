@@ -34,6 +34,9 @@ Laser Range Finder Bricklet
 	             "Bricklets/bricklet_laser_range_finder_brickv.jpg",
 	             "Laser Range Finder Bricklet in Brick Viewer")
 	}}
+	{{ tfdocend() }}
+
+..
 	{{
 	    tfdocimg("Dimensions/laser_range_finder_bricklet_dimensions_100.png",
 	             "Dimensions/laser_range_finder_bricklet_dimensions_600.png",
