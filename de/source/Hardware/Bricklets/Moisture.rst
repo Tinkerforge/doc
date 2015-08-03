@@ -16,28 +16,23 @@ Moisture Bricklet
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_moisture_tilted_350.jpg",
-	               "Bricklets/bricklet_moisture_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_moisture_v11_tilted1_350.jpg",
+	               "Bricklets/bricklet_moisture_v11_tilted1_600.jpg",
 	               "Moisture Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_moisture_vertical_100.jpg",
-	             "Bricklets/bricklet_moisture_vertical_600.jpg",
+	    tfdocimg("Bricklets/bricklet_moisture_v11_horizontal_100.jpg",
+	             "Bricklets/bricklet_moisture_v11_horizontal_600.jpg",
 	             "Moisture Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_moisture_horizontal_100.jpg",
-	             "Bricklets/bricklet_moisture_horizontal_600.jpg",
+	    tfdocimg("Bricklets/bricklet_moisture_v11_tilted2_100.jpg",
+	             "Bricklets/bricklet_moisture_v11_tilted2_600.jpg",
 	             "Moisture Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_moisture_tilted_back_100.jpg",
-	             "Bricklets/bricklet_moisture_tilted_back_600.jpg",
-	             "Moisture Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_moisture_case_tilted_front_100.jpg",
-	             "Cases/bricklet_moisture_case_tilted_front_600.jpg",
+	    tfdocimg("Cases/bricklet_moisture_v11_case_built_up_100.jpg",
+	             "Cases/bricklet_moisture_v11_case_built_up_600.jpg",
 	             "Moisture Bricklet im Gehäuse")
 	}}
 	{{
@@ -56,8 +51,8 @@ Moisture Bricklet
 	             "Moisture Bricklet im Brick Viewer")
 	}}
 	{{
-	    tfdocimg("Dimensions/moisture_bricklet_dimensions_100.png",
-	             "Dimensions/moisture_bricklet_dimensions_600.png",
+	    tfdocimg("Dimensions/moisture_bricklet_v11_dimensions_100.png",
+	             "Dimensions/moisture_bricklet_v11_dimensions_600.png",
 	             "Umriss und Bohrplan")
 	}}
 	{{ tfdocend() }}
@@ -66,7 +61,7 @@ Moisture Bricklet
 Features
 --------
 
-* Misst die Feuchtigkeit zwischen zwei Elektroden
+* Misst Erdfeuchtigkeit
 * 12Bit Auflösung
 
 
@@ -76,18 +71,13 @@ Beschreibung
 ------------
 
 Das Moisture :ref:`Bricklet <primer_bricklets>` erweitert 
-:ref:`Bricks <primer_bricks>` und ist dafür gedacht die Feuchtigkeit in Erde zu 
-ermitteln.
-
-Dazu wird Strom durch zwei Elektroden geführt, die zum Beispiel in der Erde stecken. 
-Mit steigender Feuchtigkeit sinkt der Widerstand. Die Veränderung des 
-Widerstandes wird als Feuchtigkeitswert ausgewertet.
-
-Es ist möglich das Bricklet direkt in Erde zu stecken oder zwei Prüfspitzen
-an das Bricklet zu löten.
-
-Das Moisture Bricklet kann auch zum Messen des Füllstands eines Wasserbehälters
+:ref:`Bricks <primer_bricks>` und ist dafür gedacht die Feuchtigkeit in Erde
+zu ermitteln. Es kann aber auch zum Messen des Füllstands eines Wasserbehälters
 genutzt werden.
+
+Seit Hardwareversion 1.1 wird eine kapazitive Messmethode verwendet, da die
+alte Messmethode im offenen Metallkontakten in Hardwareversion 1.0
+:ref:`Korrosionsprobleme <moisture_bricklet_corrosion>` hatte.
 
 
 Technische Spezifikation
@@ -102,8 +92,8 @@ Stromverbrauch                    < 5mW (< 1mA bei 5V)
 Auflösung                         12Bit
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           20 x 45 x 5mm (0,79 x 1,77 x 0,2")
-Gewicht                           3g
+Abmessungen (B x T x H)           25 x 86 x 5mm (0,99 x 3,39 x 0,2")
+Gewicht                           5g
 ================================  ============================================================
 
 
@@ -111,7 +101,7 @@ Ressourcen
 ----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/moisture-bricklet/raw/master/hardware/moisture-schematic.pdf>`__)
-* Umriss und Bohrplan (`Download <../../_images/Dimensions/moisture_bricklet_dimensions.png>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/moisture_bricklet_v11_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/moisture-bricklet/zipball/master>`__)
 
 
@@ -136,6 +126,25 @@ Feuchtegrades angezeigt.
 
 |test_pi_ref|
 
+
+.. _moisture_bricklet_corrosion:
+
+Korrosionsprobleme bei Hardwareversion 1.0
+------------------------------------------
+
+Hardwareversion 1.0 des Moisture Bricklets verwendete eine Messmethode mit
+offenen Metallkontakten, die bei einigen Kunden zu Korrosionsproblemen führte.
+Daher wurde in Hardwareversion 1.1 auf eine kapazitive Messmethode gewechselt,
+die keine offenen Metallkontakte verwendet und aher keine Korrosionsprobleme
+habe kann.
+
+.. image:: /Images/Bricklets/bricklet_moisture_tilted_350.jpg
+   :scale: 100 %
+   :alt: Moisture Bricklet Hardwareversion 1.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_moisture_tilted_1000.jpg
+
+
 .. _moisture_bricklet_case:
 
 Gehäuse
@@ -144,11 +153,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Moisture Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-moisture-bricklet.html>`__ ist verfügbar.
 
-.. image:: /Images/Cases/bricklet_moisture_case_tilted_front_350.jpg
+.. image:: /Images/Cases/bricklet_moisture_v11_case_built_up_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Moisture Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_moisture_case_tilted_front_1000.jpg
+   :target: ../../_images/Cases/bricklet_moisture_v11_case_built_up_1000.jpg
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
@@ -159,11 +168,11 @@ Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
 Im folgenden befindet sich eine Explosionszeichnung des Moisture Bricklet-Gehäuse:
 
-.. image:: /Images/Exploded/moisture_exploded_350.png
+.. image:: /Images/Exploded/moisture_v11_exploded_350.png
    :scale: 100 %
    :alt: Explosionszeichnung für Moisture Bricklet
    :align: center
-   :target: ../../_images/Exploded/moisture_exploded.png
+   :target: ../../_images/Exploded/moisture_v11_exploded.png
 
 |bricklet_case_hint|
 

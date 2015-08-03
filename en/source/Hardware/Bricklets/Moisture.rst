@@ -16,28 +16,23 @@ Moisture Bricklet
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Bricklets/bricklet_moisture_tilted_350.jpg",
-	               "Bricklets/bricklet_moisture_tilted_600.jpg",
+	    tfdocstart("Bricklets/bricklet_moisture_v11_tilted1_350.jpg",
+	               "Bricklets/bricklet_moisture_v11_tilted1_600.jpg",
 	               "Moisture Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_moisture_vertical_100.jpg",
-	             "Bricklets/bricklet_moisture_vertical_600.jpg",
+	    tfdocimg("Bricklets/bricklet_moisture_v11_horizontal_100.jpg",
+	             "Bricklets/bricklet_moisture_v11_horizontal_600.jpg",
 	             "Moisture Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_moisture_horizontal_100.jpg",
-	             "Bricklets/bricklet_moisture_horizontal_600.jpg",
+	    tfdocimg("Bricklets/bricklet_moisture_v11_tilted2_100.jpg",
+	             "Bricklets/bricklet_moisture_v11_tilted2_600.jpg",
 	             "Moisture Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_moisture_tilted_back_100.jpg",
-	             "Bricklets/bricklet_moisture_tilted_back_600.jpg",
-	             "Moisture Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_moisture_case_tilted_front_100.jpg",
-	             "Cases/bricklet_moisture_case_tilted_front_600.jpg",
+	    tfdocimg("Cases/bricklet_moisture_v11_case_built_up_100.jpg",
+	             "Cases/bricklet_moisture_v11_case_built_up_600.jpg",
 	             "Moisture Bricklet in Case")
 	}}
 	{{
@@ -56,8 +51,8 @@ Moisture Bricklet
 	             "Moisture Bricklet in Brick Viewer")
 	}}
 	{{
-	    tfdocimg("Dimensions/moisture_bricklet_dimensions_100.png",
-	             "Dimensions/moisture_bricklet_dimensions_600.png",
+	    tfdocimg("Dimensions/moisture_bricklet_v11_dimensions_100.png",
+	             "Dimensions/moisture_bricklet_v11_dimensions_600.png",
 	             "Outline and drilling plan")
 	}}
 	{{ tfdocend() }}
@@ -66,7 +61,7 @@ Moisture Bricklet
 Features
 --------
 
-* Measures moisture between two probes
+* Measures soil moisture
 * 12bit resolution
 
 
@@ -77,18 +72,13 @@ Description
 
 The Moisture :ref:`Bricklet <primer_bricklets>` is intended to
 measure moisture in soil. It can extend :ref:`Bricks <primer_bricks>` by this
-feature.
+feature. It is also possible to use the Moisture Bricklet as a detector for
+water filling level.
 
-Current is passed through two probes. With a increasing moisture level the
-resistance between the probes will decrease (since water is a better conductor
-than soil). The change in resistance is measured and returned as the moisture
-value.
+Since hardware version 1.1 a capacitive method of measurement is used. The
+previous method of measurement used bare metal contacts that could result
+in a :ref:`corrosion problem <moisture_bricklet_corrosion>`.
 
-You can either stick the Bricklet directly into soil or you can solder two
-probes to the Bricklet and put the probes in soil.
-
-It is also possible to use the Moisture Bricklet as a detector for water
-filling level. 
 
 Technical Specifications
 ------------------------
@@ -102,8 +92,8 @@ Current Consumption               < 5mW (< 1mA at 5V)
 Resolution                        12bit
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            20 x 45 x 5mm (0.79 x 1.77 x 0.2")
-Weight                            3g
+Dimensions (W x D x H)            25 x 86 x 5mm (0.99 x 3.39 x 0.2")
+Weight                            5g
 ================================  ============================================================
 
 
@@ -111,7 +101,7 @@ Resources
 ---------
 
 * Schematic (`Download <https://github.com/Tinkerforge/moisture-bricklet/raw/master/hardware/moisture-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/moisture_bricklet_dimensions.png>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/moisture_bricklet_v11_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/moisture-bricklet/zipball/master>`__)
 
 
@@ -136,6 +126,24 @@ value.
 
 |test_pi_ref|
 
+
+.. _moisture_bricklet_corrosion:
+
+Corrosion problem with hardware version 1.0
+-------------------------------------------
+
+Hardware version 1.0 of the Moisture Bricklets used bare metal contacts to
+measure the soil moisture. Some customers ran into corrosion problems with
+this setup. Because of this, hardware version 1.1 now uses a capacitive
+method of measurement without bare metal contacts. Therefore, corrosion can not
+occur anymore.
+
+.. image:: /Images/Bricklets/bricklet_moisture_tilted_350.jpg
+   :scale: 100 %
+   :alt: Moisture Bricklet hardware version 1.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_moisture_tilted_1000.jpg
+
 .. _moisture_bricklet_case:
 
 Case
@@ -144,11 +152,11 @@ Case
 A `laser-cut case for the Moisture Bricklet
 <https://www.tinkerforge.com/en/shop/cases/case-moisture-bricklet.html>`__ is available.
 
-.. image:: /Images/Cases/bricklet_moisture_case_tilted_front_350.jpg
+.. image:: /Images/Cases/bricklet_moisture_v11_case_built_up_350.jpg
    :scale: 100 %
    :alt: Case for Moisture Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_moisture_case_tilted_front_1000.jpg
+   :target: ../../_images/Cases/bricklet_moisture_v11_case_built_up_1000.jpg
 
 The assembly is easiest if you follow the following steps:
 
@@ -159,11 +167,11 @@ The assembly is easiest if you follow the following steps:
 
 Below you can see an exploded assembly drawing of the Moisture Bricklet case:
 
-.. image:: /Images/Exploded/moisture_exploded_350.png
+.. image:: /Images/Exploded/moisture_v11_exploded_350.png
    :scale: 100 %
    :alt: Exploded assembly drawing for Moisture Bricklet
    :align: center
-   :target: ../../_images/Exploded/moisture_exploded.png
+   :target: ../../_images/Exploded/moisture_v11_exploded.png
 
 |bricklet_case_hint|
 
