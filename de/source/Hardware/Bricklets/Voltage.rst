@@ -48,8 +48,8 @@ Voltage Bricklet
 .. note::
 
  Das Voltage Bricklet ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das genauere :ref:`Voltage/Current Bricklet
- <voltage_current_bricklet>` empfohlen.
+ Als Ersatz wird das :ref:`Analog In Bricklet 2.0 <analog_in_v2_bricklet>`
+ empfohlen.
 
 
 Features
