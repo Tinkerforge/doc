@@ -49,9 +49,6 @@ Analog In Bricklet 2.0
 	}}
 	{{ tfdocend() }}
 
-.. note::
-  Diese Bricklet ist noch in Entwicklung!
-
 
 Features
 --------

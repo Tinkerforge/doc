@@ -39,9 +39,6 @@ Industrial Dual Analog In Bricklet
 	}}
 	{{ tfdocend() }}
 
-.. note::
- This Bricklet is currently work-in-progress!
-
 
 Features
 --------

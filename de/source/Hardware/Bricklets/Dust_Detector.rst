@@ -44,9 +44,6 @@ Dust Detector Bricklet
 	}}
 	{{ tfdocend() }}
 
-.. note::
-  Diese Bricklet ist noch in Entwicklung!
-
 
 Features
 --------
