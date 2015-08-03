@@ -30,8 +30,13 @@ Load Cell Bricklet
 	             "Load Cell Bricklet")
 	}}
 	{{
-	    tfdocimg("Cases/bricklet_load_cell_case_built_up_100.jpg",
-	             "Cases/bricklet_load_cell_case_built_up_600.jpg",
+	    tfdocimg("Cases/bricklet_load_cell_case_built_up1_100.jpg",
+	             "Cases/bricklet_load_cell_case_built_up1_600.jpg",
+	             "Load Cell Bricklet im Gehäuse")
+	}}
+	{{
+	    tfdocimg("Cases/bricklet_load_cell_case_built_up2_100.jpg",
+	             "Cases/bricklet_load_cell_case_built_up2_600.jpg",
 	             "Load Cell Bricklet im Gehäuse")
 	}}
 	{{
