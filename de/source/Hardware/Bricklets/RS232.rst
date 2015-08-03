@@ -116,11 +116,11 @@ verbunden werden: klassischer D-Sub 9 Stecker, 5er Anschlussklemmenblock oder
 5er Stiftleiste. Es kann aber nur eine dieser Anschlussmöglichkeiten zur
 gleichen Zeit genutzt werden.
 
-.. image:: /Images/Bricklets/bricklet_rs232_caption_600.jpg
+.. image:: /Images/Bricklets/bricklet_rs232_horizontal_600.jpg
    :scale: 100 %
    :alt: RS232 Bricklet Steckerbelegung
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_rs232_caption_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_rs232_horizontal_1200.jpg
 
 D-Sub 9 Stecker
 ^^^^^^^^^^^^^^^
