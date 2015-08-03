@@ -15,6 +15,18 @@ lang = 'en'
 
 ToolInfo = namedtuple('ToolInfo', 'display_name url_part')
 
+patched_brick_infos = []
+
+for brick_info in brick_infos:
+    if brick_info.identifier == 18: # IMU Brick 2.0
+        brick_info_list = list(brick_info)
+        brick_info_list[8] = False
+        brick_info = DeviceInfo(*tuple(brick_info_list))
+
+    patched_brick_infos.append(brick_info)
+
+brick_infos = patched_brick_infos
+
 tool_infos = \
 [
     ToolInfo('Brick Daemon', 'brickd'),
