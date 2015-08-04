@@ -72,14 +72,12 @@ Stromverbrauch                        | 450mW (90mA bei 5V, Laser aus)
                                       | 520mW (104mA bei 5V, Laser an)
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
-Entfernung (Bereich, Auflösung)       * 0-40m, 1cm
-
-Geschwindigkeit (Bereich, Auflösung)  * 0-12,7m/s, 0,1m/s
-                                      * 0-31,75m/s, 0,25m/s
-                                      * 0-63,5m/s, 0,5m/s
-                                      * 0-127m/s, 1,0m/s
-
-Abtastrate                            * bis zu 100Hz (abhängig von Entfernung)
+Entfernung (Bereich, Auflösung)       0-40m, 1cm
+Geschwindigkeit (Bereich, Auflösung)  | 0-12,7m/s, 0,1m/s
+                                      | 0-31,75m/s, 0,25m/s
+                                      | 0-63,5m/s, 0,5m/s
+                                      | 0-127m/s, 1,0m/s
+Abtastrate                            bis zu 100Hz (abhängig von Entfernung)
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)               49 x 45 x 36mm (1,93 x 1,77 x 1,42")

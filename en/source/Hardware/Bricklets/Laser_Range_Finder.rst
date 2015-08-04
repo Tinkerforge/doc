@@ -73,14 +73,12 @@ Current Consumption               | 450mW (90mA at 5V, Laser off)
                                   | 520mW (104mA at 5V, Laser on)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Distance (Range, Resolution)      * 0-40m, 1cm
-
-Velocity (Range, Resolution)      * 0-12.7m/s, 0.1m/s
-                                  * 0-31.75m/s, 0.25m/s
-                                  * 0-63.5m/s, 0.5m/s
-                                  * 0-127m/s, 1.0m/s
-
-Sample Rate                       * up to 100Hz (depends on measured range)
+Distance (Range, Resolution)      0-40m, 1cm
+Velocity (Range, Resolution)      | 0-12.7m/s, 0.1m/s
+                                  | 0-31.75m/s, 0.25m/s
+                                  | 0-63.5m/s, 0.5m/s
+                                  | 0-127m/s, 1.0m/s
+Sample Rate                       up to 100Hz (depends on measured range)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            49 x 45 x 36mm (1.93 x 1.77 x 1.42")
