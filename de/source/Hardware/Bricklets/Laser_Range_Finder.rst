@@ -90,6 +90,7 @@ Gewicht                               39g
 Ressourcen
 ----------
 
+* LIDAR-Lite Datenblatt (`Download <https://github.com/Tinkerforge/laser-range-finder-bricklet/raw/master/datasheets/LIDAR-Lite-v1.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/laser-range-finder-bricklet/raw/master/hardware/laser-range-finder-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/laser_range_finder_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/laser-range-finder-bricklet/zipball/master>`__)
