@@ -34,9 +34,6 @@ Dust Detector Bricklet
 	             "Bricklets/bricklet_dust_detector_brickv.jpg",
 	             "Dust Detector Bricklet in Brick Viewer")
 	}}
-	{{ tfdocend() }}
-
-..
 	{{
 	    tfdocimg("Dimensions/dust_detector_bricklet_dimensions_100.png",
 	             "Dimensions/dust_detector_bricklet_dimensions_600.png",

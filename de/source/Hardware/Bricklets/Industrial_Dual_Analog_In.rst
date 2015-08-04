@@ -29,9 +29,6 @@ Industrial Dual Analog In Bricklet
 	             "Bricklets/bricklet_industrial_dual_analog_in_brickv.jpg",
 	             "Industrial Dual Analog In Bricklet im Brick Viewer")
 	}}
-	{{ tfdocend() }}
-
-..
 	{{
 	    tfdocimg("Dimensions/industrial_dual_analog_in_bricklet_dimensions_100.png",
 	             "Dimensions/industrial_dual_analog_in_bricklet_dimensions_600.png",

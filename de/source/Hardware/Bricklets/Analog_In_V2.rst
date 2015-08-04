@@ -39,9 +39,6 @@ Analog In Bricklet 2.0
 	             "Bricklets/bricklet_analog_in_v2_brickv.jpg",
 	             "Analog In Bricklet 2.0 im Brick Viewer")
 	}}
-	{{ tfdocend() }}
-
-..
 	{{
 	    tfdocimg("Dimensions/analog_in_v2_bricklet_dimensions_100.png",
 	             "Dimensions/analog_in_v2_bricklet_dimensions_600.png",

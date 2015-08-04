@@ -34,9 +34,6 @@ Ambient Light Bricklet 2.0
 	             "Bricklets/bricklet_ambient_light_v2_brickv.jpg",
 	             "Ambient Light Bricklet 2.0 im Brick Viewer")
 	}}
-	{{ tfdocend() }}
-
-..
 	{{
 	    tfdocimg("Dimensions/ambient_light_v2_bricklet_dimensions_100.png",
 	             "Dimensions/ambient_light_v2_bricklet_dimensions_600.png",

@@ -34,9 +34,6 @@ Accelerometer Bricklet
 	             "Bricklets/bricklet_accelerometer_brickv.jpg",
 	             "Accelerometer Bricklet im Brick Viewer")
 	}}
-	{{ tfdocend() }}
-
-..
 	{{
 	    tfdocimg("Dimensions/accelerometer_bricklet_dimensions_100.png",
 	             "Dimensions/accelerometer_bricklet_dimensions_600.png",
