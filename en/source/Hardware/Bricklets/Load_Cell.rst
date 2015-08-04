@@ -44,9 +44,6 @@ Load Cell Bricklet
 	             "Bricklets/bricklet_load_cell_brickv.jpg",
 	             "Load Cell Bricklet in Brick Viewer")
 	}}
-	{{ tfdocend() }}
-
-..
 	{{
 	    tfdocimg("Dimensions/load_cell_bricklet_dimensions_100.png",
 	             "Dimensions/load_cell_bricklet_dimensions_600.png",
