@@ -1016,6 +1016,22 @@ type the following command::
 
 and send us an email (info@tinkerforge.com) with the output of that command.
 
+.. _red_brick_examples:
+
+Example Programs
+----------------
+
+Several example programs are available on `GitHub
+<https://github.com/Tinkerforge/red-brick/tree/master/programs>`__:
+
+* `Set GPS time as system time
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__:
+  If you can't use NTP (i.e. the RED Brick does not have Internet access), you
+  can use the GPS Bricklet to set a proper system time.
+* `Synchronize system time via web browser
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/sync_time>`__:
+  If you can't use NTP or a GPS Bricklet to set a proper system time, you can
+  manually synchronize it using your web browser.
 
 .. _red_brick_hardware:
 

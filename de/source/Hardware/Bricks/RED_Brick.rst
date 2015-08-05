@@ -1039,9 +1039,27 @@ eingeben::
 
 und uns eine E-Mail (info@tinkerforge.com) mit der Ausgabe des Befehls schicken.
 
+.. _red_brick_examples:
+
+Beispielprogramme
+-----------------
+
+Auf `GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs>`__
+stehen verschiedene Beispielprogramme zur Verfügung:
+
+* `GPS Uhrzeit als Systemzeit verwenden
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__:
+  Wenn NTP nicht verwendet werden kann, um die Systemzeit zu synchronisieren,
+  z.B. wegen fehlender Internetanbindung, dann kann alternativ dieses Programm
+  verwendet werden, um die Systemzeit mit dem GPS Bricklet zu synchronisieren.
+* `Systemzeit über Webbrowser synchronisieren
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/sync_time>`__:
+  Wenn weder NTP noch GPS zur Synchrionisierung der Systemzeit genutzt werden
+  kann, dann kann über dieses Programm die Systemzeit vom Webbrowser aus
+  synchronisiert werden.
+
 
 .. _red_brick_hardware:
-
 
 Hardwarebeschreibung
 --------------------
