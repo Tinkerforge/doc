@@ -1098,7 +1098,8 @@ The RED Brick is equipped with a standard
 `USB 2.0 <https://en.wikipedia.org/wiki/USB>`__ (480Mb/s) type A jack. It can
 power other USB devices with up to 7.5W (5V/1.5A) and is short circuit
 protected. Typical USB devices such as Wi-Fi or Ethernet USB adapter, webcams,
-printers, keyboards, mouses or USB touch screens are supported.
+printers, keyboards, mouses or USB touch screens are supported, if the required
+drivers are present on the RED Brick.
 The wiki has a growing `list of USB devices
 <http://www.tinkerunity.org/wiki/index.php/EN/RED_USB>`__ that users have
 successfully tested with a RED Brick.
