@@ -31,8 +31,9 @@ to write your program considering the Nagios Developer Guidelines.
 Basic Nagios/Icinga Script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For this example we use the :ref:`Python Bindings <api_bindings_python>`. 
-The script is based on a `Wiki project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/IT_Infrastructure_Monitoring_-_Nagios_Plugin>`__
+For this example we use the :ref:`Python bindings <api_bindings_python>`.
+The script (`download <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
+is based on a `Wiki project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/IT_Infrastructure_Monitoring_-_Nagios_Plugin>`__
 and uses the a Temperature or PTC Bricklet to measure the temperature
 and to warn if high temperatures are detected.
 
@@ -41,8 +42,8 @@ The small script, called ``check_tf_temp.py``, uses the following interface:
 .. code-block:: none
 
  usage: check_tf_temp.py [-h] -u UID -t {temp,ptc} [-H HOST] [-P PORT]
-                        [-m {none,high,low,range}] [-w WARNING] [-c CRITICAL]
-                        [-w2 WARNING2] [-c2 CRITICAL2]
+                         [-m {none,high,low,range}] [-w WARNING] [-c CRITICAL]
+                         [-w2 WARNING2] [-c2 CRITICAL2]
 
  optional arguments:
   -h, --help            show this help message and exit
@@ -89,7 +90,6 @@ temperature is above 27°C:
 
  check_tf_temp.py -H ServerMonitoring -u SCT31 -t temp -m high -w 26 -c 27
 
-
 The following example creates a warning if the temperature is below 10°C or above
 30°C and a critical message if the temperature is below 8°C or above 35°C:
 
@@ -109,9 +109,8 @@ The ``check_tf_temp.py`` script is small and is easy to adapted for other
 Tinkerforge sensors. The ``read`` method is the main part of the script. It reads
 out the Bricklet and compares the measured temperature with
 the warning and critical thresholds and generates the necessary message and 
-return value
-
-(`download <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
+return value. The full script looks like this (`download
+<https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__):
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp.py
  :language: python

@@ -33,7 +33,8 @@ Basis Nagios/Icinga Skript
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Für dieses Beispiel nutzen wir die :ref:`Python Bindings <api_bindings_python>`. 
-Das Skript basiert auf einem 
+Das `Skript <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__
+basiert auf einem
 `Wiki Projekt <http://www.tinkerunity.org/wiki/index.php/EN/Projects/IT_Infrastructure_Monitoring_-_Nagios_Plugin>`__
 und nutzt das Temperature oder PTC Bricklet um die Temperatur zu messen und zu
 warnen falls zu hohe Temperaturen gemessen werden.
@@ -43,8 +44,8 @@ Das kleine Skript, ``check_tf_temp.py`` genannt, besitzt folgende Schnittstelle:
 .. code-block:: none
 
  usage: check_tf_temp.py [-h] -u UID -t {temp,ptc} [-H HOST] [-P PORT]
-                        [-m {none,high,low,range}] [-w WARNING] [-c CRITICAL]
-                        [-w2 WARNING2] [-c2 CRITICAL2]
+                         [-m {none,high,low,range}] [-w WARNING] [-c CRITICAL]
+                         [-w2 WARNING2] [-c2 CRITICAL2]
 
  optional arguments:
   -h, --help            show this help message and exit
@@ -72,7 +73,6 @@ Das kleine Skript, ``check_tf_temp.py`` genannt, besitzt folgende Schnittstelle:
   -c2 CRITICAL2, --critical2 CRITICAL2
                         Critical temperature level (temperatures below this
                         level will trigger a critical message in range mode)
-
 
 Der Großteil der Schnittstelle sollte selbsterklärend sein. Diese unterstützt
 drei Modi:
@@ -111,9 +111,8 @@ Das ``check_tf_temp.py`` Skript kann einfach an andere Tinkerforge Sensoren
 angepasst werden. Die ``read`` Methode ist der Hauptteil des Skripts. Diese liest
 das Bricklet aus und vergleicht die gemessene Temperatur mit den Warning
 und Critical Grenzwerten. Falls notwendig generiert sie eine Meldung und
-den dazu passenden Rückgabewert:
-
-(`download <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
+den dazu passenden Rückgabewert. Das gesamte Skript sieht wie folgt aus (`download
+<https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp_ext.py>`__):
 
 .. literalinclude:: ../../../../../server-room-monitoring/nagios_icinga/check_tf_temp.py
  :language: python
