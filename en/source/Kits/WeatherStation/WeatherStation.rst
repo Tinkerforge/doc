@@ -133,7 +133,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Air Pressure                      10mbar - 1200mbar in 0.012mbar steps
-Illumination                      0lux - 900lux in 0.1lux steps
+Illumination                      0lux - 64000lux in 0.01lux steps
 Relative Humidity                 0% RH - 100% RH in 0.1% RH steps
 Temperature                       -40°C - 85°C in 0.01°C steps
 --------------------------------  ------------------------------------------------------------

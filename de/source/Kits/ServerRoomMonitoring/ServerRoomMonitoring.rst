@@ -149,8 +149,8 @@ werden können. Befestigungslöcher für verschiedene
 :ref:`Bricklets <primer_bricklets>` sind bereits vorhanden.
 Folgende Module können direkt befestigt werden:
 
-:ref:`Analog In Bricklet <analog_in_bricklet>`,
-:ref:`Analog Out Bricklet <analog_in_bricklet>`,
+:ref:`Analog In Bricklet 2.0 <analog_in_v2_bricklet>`,
+:ref:`Analog Out Bricklet 2.0 <analog_in_v2_bricklet>`,
 :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`,
 :ref:`Industrial Digital Out 4 Bricklet <industrial_digital_out_4_bricklet>`,
 :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`,
@@ -164,7 +164,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Beleuchtungsstärke                0Lux - 900Lux in 0,1Lux Schritten
+Beleuchtungsstärke                0Lux - 64000Lux in 0,01Lux Schritten
 Temperatur (Ambient)              -40°C - 85°C in 0,01°C Schritten
 Pt100 Sensor                      -20°C - 450°C
 PTC Bricklet                      0,03125°C (15Bit) Auflösung

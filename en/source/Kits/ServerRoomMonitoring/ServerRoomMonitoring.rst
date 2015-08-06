@@ -146,8 +146,8 @@ different :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` are provided, by default you can
 mount:
 
-:ref:`Analog In Bricklet <analog_in_bricklet>`,
-:ref:`Analog Out Bricklet <analog_in_bricklet>`,
+:ref:`Analog In Bricklet 2.0 <analog_in_v2_bricklet>`,
+:ref:`Analog Out Bricklet 2.0 <analog_in_v2_bricklet>`,
 :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>`,
 :ref:`Industrial Digital Out 4 Bricklet <industrial_digital_out_4_bricklet>`,
 :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`,
@@ -161,7 +161,7 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Illumination                      0lux - 900lux in 0.1lux steps
+Illumination                      0lux - 64000lux in 0.01lux steps
 Ambient Temperature               -40°C - 85°C in 0.01°C steps
 Pt100 Sensor Probe                -20°C - 450°C
 PTC Bricklet                      0.03125°C (15bit) resolution
