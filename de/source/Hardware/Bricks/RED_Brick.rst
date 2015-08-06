@@ -303,7 +303,9 @@ Der *Current Network Status* Abschnitt zeigt den Status der konfigurierten und
 aktuell genutzten Netzwerkschnittstelle an. Der angezeigte Status wird
 automatisch alle 3 Sekunden aktualisiert.
 
-Die genutzte Schnittstelle kann im *Configuration* Abschnitt eingestellt
+Initial ist der RED Brick für keine Schnittstelle konfiguriert. Er wird initial
+von sich aus keine Schnittstelle nutzen, selbst wenn eine vorhanden ist.
+Es muss erst eine Schnittstelle im *Configuration* Abschnitt konfiguriert
 werden. Als erstes muss die Schnittstelle gewählt werden. Ein Ethernet USB Stick
 wird als ``ethX``, eine Ethernet Extension als ``tfX`` und ein WLAN USB Stick
 als ``wlanX`` angezeigt (X ist eine Zahl). Abhängig von der gewählten
@@ -323,6 +325,9 @@ Schnittstelle gibt es verschiedenen Einstellungsoptionen:
   werden. Durch Klicken auf *Connect* wird die Verbindung zum Netzwerk
   hergestellt. Unterstützte WLAN USB Sticks finden sich in unserem
   `Shop <https://www.tinkerforge.com/de/shop/accessories/red-brick.html>`__.
+
+Ab jetzt verbindet sich der RED Brick nach einem Neustart automatisch über
+die konfigurierte Schnittstelle.
 
 .. _red_brick_brickv_settings_ap:
 

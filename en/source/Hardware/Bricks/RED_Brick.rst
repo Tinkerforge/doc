@@ -292,7 +292,9 @@ The *Current Network Status* subsection shows you the status of the configured
 and currently used network interface. The status is updated automatically every
 3 seconds.
 
-You can configure the used interface in the *Configuration* subsection. First
+Initially the RED Brick is not configured for any interface and will not
+automatically connect, even if an interface is available.
+You have to configure an interface in the *Configuration* subsection. First
 choose the interface you want to configure. An Ethernet USB adapter will show
 up as ``ethX``, the Ethernet Extension as ``tfX`` and a Wi-Fi USB adapter
 as ``wlanX`` (X is a number). Dependent on the selected interface you will get
@@ -301,16 +303,20 @@ other configuration options:
 * **Configure an Ethernet Interface:**
 
   After selecting an Ethernet interface, choose between DHCP or static IP
-  configuration and press the *Connect* button.
+  configuration and click the *Connect* button.
 * **Configure a Wi-Fi Interface:**
 
   After selecting a Wi-Fi interface press the *Scan* button to scan for
   access points. It will take some time to get the scan results.
 
   Select the desired access point and enter the secret and select between DHCP or
-  static IP address. After that press *Connect*.
-  `Supported Wi-Fi USB adapters <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
+  static IP address. After that click *Connect*.
+  `Supported Wi-Fi USB adapters
+  <https://www.tinkerforge.com/en/shop/accessories/red-brick.html>`__
   can be found in our shop.
+
+Now the RED Brick will automatically connect with the configured interface
+after a reboot.
 
 .. _red_brick_brickv_settings_ap:
 
