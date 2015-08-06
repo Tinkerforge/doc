@@ -680,13 +680,18 @@ def make_index_api_misc(binding, lang):
     'de': additional_li_en.replace('Usage', 'Benutzung')
     }
 
+    windows_phone = {
+    'en': 'Windows Phone',
+    'de': 'Win Phone'
+    }
+
     if not binding.is_programming_language:
         return llp_html[lang].format(binding.software_doc_suffix)
     else:
         if binding.url_part == 'c':
             add = additional_li[lang].format(binding.software_doc_suffix, 'iOS', 'iOS')
         elif binding.url_part == 'csharp':
-            add = additional_li[lang].format(binding.software_doc_suffix, 'Windows_Phone', 'Windows Phone')
+            add = additional_li[lang].format(binding.software_doc_suffix, 'Windows_Phone', windows_phone[lang])
         elif binding.url_part == 'java':
             add = additional_li[lang].format(binding.software_doc_suffix, 'Android', 'Android')
         else:
@@ -707,7 +712,7 @@ def make_index_api():
         <div class="category_content">
             <h3>Bricks</h3>
             {0}
-            <h3>Misc</h3>
+            <h3>{6}</h3>
             {1}
         </div>
         <div class="category_content">
@@ -789,6 +794,11 @@ def make_index_api():
 </script>
 """
 
+    misc = {
+    'en': 'Miscellaneous',
+    'de': 'Sonstiges'
+    }
+
     html = '<div class="category_api_outer">'
     first = True
 
@@ -805,7 +815,8 @@ def make_index_api():
                                       make_index_api_device(bricklet_infos, 'Bricklets', binding_info.software_doc_suffix),
                                       binding_info.display_name,
                                       binding_info.url_part,
-                                      style)
+                                      style,
+                                      misc[lang])
 
     return html + '</div>' + script_html
 
