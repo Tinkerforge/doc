@@ -117,12 +117,22 @@ accessory_infos = \
                 'de': 'Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz'})
 ]
 
+KitInfo = namedtuple('KitInfo', 'display_name url_part')
+
+kit_infos = \
+[
+    KitInfo({'en': 'Blinkenlights', 'de': 'Blinkenlights'}, 'blinkenlights'),
+    KitInfo({'en': 'Camera Slider', 'de': 'Kameraschlitten'}, 'camera_slider'),
+    KitInfo({'en': 'Weather Station', 'de': 'Wetterstation'}, 'weather_station')
+]
+
 LATEST_VERSIONS_URL = 'http://download.tinkerforge.com/latest_versions.txt'
 
 tool_versions = {}
 bindings_versions = {}
 firmware_versions = {}
 plugin_versions = {}
+kit_versions = {}
 
 def get_latest_version_info():
     print 'Discovering latest versions on tinkerforge.com'
@@ -162,6 +172,8 @@ def get_latest_version_info():
             firmware_versions[parts[1]] = latest_version
         elif parts[0] == 'bricklets':
             plugin_versions[parts[1]] = latest_version
+        elif parts[0] == 'kits':
+            kit_versions[parts[1]] = latest_version
 
 def make_primer_table(device_infos):
     table_head = {
@@ -365,6 +377,45 @@ def make_download_plugins_table():
                                        bricklet_info.git_name,
                                        archive[lang],
                                        *plugin_version))
+
+    return table_head[lang] + '\n'.join(rows) + '\n'
+
+def make_download_kits_table():
+    source_code = {
+    'en': 'Source Code',
+    'de': 'Quelltext'
+    }
+
+    archive = {
+    'en': 'Archive',
+    'de': 'Archiv'
+    }
+
+    table_head = {
+    'en': """.. csv-table::
+ :header: "Starter Kit", "Downloads", "Version", "Archive", "Changelog"
+ :delim: |
+ :widths: 17, 32, 5, 5, 8
+
+""",
+    'de': """.. csv-table::
+ :header: "Starterkit", "Downloads", "Version", "Archiv", "Changelog"
+ :delim: |
+ :widths: 17, 32, 5, 5, 8
+
+"""
+    }
+
+    row = ' :ref:`{0} <starter_kit_{1}>` | `Linux <http://download.tinkerforge.com/kits/{1}/linux/starter-kit-{2}-demo-{5}.{6}.{7}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/{1}/macos/starter_kit_{1}_demo_macos_{5}_{6}_{7}.dmg>`__, `Windows <http://download.tinkerforge.com/kits/{1}/windows/starter_kit_{1}_demo_windows_{5}_{6}_{7}.exe>`__, `{3} <https://github.com/Tinkerforge/{1}/archive/demo-{5}.{6}.{7}.zip>`__ | {5}.{6}.{7} | `{4} <http://download.tinkerforge.com/kits/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{2}/master/demo/changelog>`__'
+    rows = []
+
+    for kit_info in kit_infos:
+        rows.append(row.format(kit_info.display_name[lang],
+                               kit_info.url_part,
+                               kit_info.url_part.replace('_', '-'),
+                               source_code[lang],
+                               archive[lang],
+                               *kit_versions[kit_info.url_part]))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
@@ -977,6 +1028,9 @@ def generate(path):
 
     print('Generating Downloads_plugins.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_plugins.table'), make_download_plugins_table())
+
+    print('Generating Downloads_kits.table')
+    write_if_changed(os.path.join(path, 'source', 'Downloads_kits.table'), make_download_kits_table())
 
     print('Generating Source_Code_gits.table')
     write_if_changed(os.path.join(path, 'source', 'Source_Code_gits.table'), make_source_code_gits_table())
