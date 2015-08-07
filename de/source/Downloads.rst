@@ -94,3 +94,14 @@ Bricklet Plugins können mit dem Brick Viewer aktualisiert werden (siehe
 :ref:`hier <brickv_flash_plugin>`).
 
 .. include:: Downloads_plugins.table
+
+
+.. _downloads_demos:
+
+Starterkit Demos
+----------------
+
+Zu vielen :ref:`Starterkits <index_kits>` gehört auch eine Demo Anwendung die
+dessen Fähigkeiten vorführt.
+
+.. include:: Downloads_kits.table

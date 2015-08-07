@@ -91,3 +91,14 @@ Bricklet plugins can be flashed onto Bricklets with the Brick Viewer (see
 :ref:`here <brickv_flash_plugin>`).
 
 .. include:: Downloads_plugins.table
+
+
+.. _downloads_demos:
+
+Starter Kit Demos
+-----------------
+
+Many :ref:`starter kits <index_kits>` come with demo applications that show
+their features.
+
+.. include:: Downloads_kits.table
