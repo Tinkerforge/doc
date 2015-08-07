@@ -13,8 +13,6 @@ from device_infos import DeviceInfo, brick_infos, bricklet_infos
 
 lang = 'en'
 
-ToolInfo = namedtuple('ToolInfo', 'display_name url_part')
-
 patched_brick_infos = []
 
 for brick_info in brick_infos:
@@ -27,64 +25,66 @@ for brick_info in brick_infos:
 
 brick_infos = patched_brick_infos
 
+ToolInfo = namedtuple('ToolInfo', 'display_name url_part')
+
 tool_infos = \
 [
     ToolInfo('Brick Daemon', 'brickd'),
     ToolInfo('Brick Viewer', 'brickv')
 ]
 
-BindingInfo = namedtuple('BindingInfo', 'display_name url_part software_doc_suffix is_programming_language is_released tutorial')
+BindingsInfo = namedtuple('BindingsInfo', 'display_name url_part software_doc_suffix is_programming_language is_released tutorial')
 
-binding_infos = \
+bindings_infos = \
 [
-    BindingInfo('Modbus', 'modbus', 'Modbus', False, True,
-                {'en': 'FIXME',
-                 'de': 'FIXME'}),
-    BindingInfo('TCP/IP', 'tcpip', 'TCPIP', False, True,
-                {'en': 'FIXME',
-                 'de': 'FIXME'}),
-    BindingInfo('C/C++', 'c', 'C', True, True,
-                {'en': 'http://www.cprogramming.com/',
-                 'de': 'http://www.cprogramming.com/'}), # http://www.c-howto.de/
-    BindingInfo('C#', 'csharp', 'CSharp', True, True,
-                {'en': 'http://csharp.net-tutorials.com/',
-                 'de': 'http://csharp.net-tutorials.com/'}),
-    BindingInfo('Delphi/Lazarus', 'delphi', 'Delphi', True, True,
-                {'en': 'http://www.delphibasics.co.uk/',
-                 'de': 'http://www.delphi-treff.de/tutorials/grundlagen/'}),
-    BindingInfo('Java', 'java', 'Java', True, True,
-                {'en': 'http://docs.oracle.com/javase/tutorial/',
-                 'de': 'http://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
-    BindingInfo('JavaScript',  'javascript', 'JavaScript', True, True,
-                {'en': 'FIXME',
-                 'de': 'FIXME'}),
-    BindingInfo('LabVIEW', 'labview', 'LabVIEW', True, True,
-                {'en': 'FIXME',
-                 'de': 'FIXME'}),
-    BindingInfo('Mathematica', 'mathematica', 'Mathematica', True, True,
-                {'en': 'FIXME',
-                 'de': 'FIXME'}),
-    BindingInfo('MATLAB/Octave', 'matlab', 'MATLAB', True, True,
-                {'en': 'FIXME',
-                 'de': 'FIXME'}),
-    BindingInfo('Perl', 'perl', 'Perl', True, True,
-                {'en': 'FIXME',
-                 'de': 'FIXME'}),
-    BindingInfo('PHP', 'php', 'PHP', True, True,
-                {'en': 'http://www.php.net/manual/en/getting-started.php',
-                 'de': 'http://www.php.net/manual/de/getting-started.php'}),
-    BindingInfo('Python', 'python', 'Python', True, True,
-                {'en': 'https://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
-                 'de': 'https://www.python.org/about/gettingstarted/'}),
-    BindingInfo('Ruby', 'ruby', 'Ruby',  True, True,
-                {'en': 'https://www.ruby-lang.org/en/documentation/quickstart/',
-                 'de': 'https://www.ruby-lang.org/de/documentation/quickstart/'}),
-    BindingInfo('Shell', 'shell', 'Shell', True, True,
-                {'en': 'FIXME',
-                 'de': 'FIXME'}),
-    BindingInfo('Visual Basic .NET', 'vbnet', 'VBNET', True, True,
-                {'en': 'http://howtostartprogramming.com/vb-net/',
-                 'de': 'http://howtostartprogramming.com/vb-net/'}), # http://openbook.galileocomputing.de/vb_net/index.htm
+    BindingsInfo('Modbus', 'modbus', 'Modbus', False, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
+    BindingsInfo('TCP/IP', 'tcpip', 'TCPIP', False, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
+    BindingsInfo('C/C++', 'c', 'C', True, True,
+                 {'en': 'http://www.cprogramming.com/',
+                  'de': 'http://www.cprogramming.com/'}), # http://www.c-howto.de/
+    BindingsInfo('C#', 'csharp', 'CSharp', True, True,
+                 {'en': 'http://csharp.net-tutorials.com/',
+                  'de': 'http://csharp.net-tutorials.com/'}),
+    BindingsInfo('Delphi/Lazarus', 'delphi', 'Delphi', True, True,
+                 {'en': 'http://www.delphibasics.co.uk/',
+                  'de': 'http://www.delphi-treff.de/tutorials/grundlagen/'}),
+    BindingsInfo('Java', 'java', 'Java', True, True,
+                 {'en': 'http://docs.oracle.com/javase/tutorial/',
+                  'de': 'http://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/
+    BindingsInfo('JavaScript',  'javascript', 'JavaScript', True, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
+    BindingsInfo('LabVIEW', 'labview', 'LabVIEW', True, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
+    BindingsInfo('Mathematica', 'mathematica', 'Mathematica', True, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
+    BindingsInfo('MATLAB/Octave', 'matlab', 'MATLAB', True, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
+    BindingsInfo('Perl', 'perl', 'Perl', True, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
+    BindingsInfo('PHP', 'php', 'PHP', True, True,
+                 {'en': 'http://www.php.net/manual/en/getting-started.php',
+                  'de': 'http://www.php.net/manual/de/getting-started.php'}),
+    BindingsInfo('Python', 'python', 'Python', True, True,
+                 {'en': 'https://www.python.org/about/gettingstarted/', # http://getpython3.com/diveintopython3/
+                  'de': 'https://www.python.org/about/gettingstarted/'}),
+    BindingsInfo('Ruby', 'ruby', 'Ruby',  True, True,
+                 {'en': 'https://www.ruby-lang.org/en/documentation/quickstart/',
+                  'de': 'https://www.ruby-lang.org/de/documentation/quickstart/'}),
+    BindingsInfo('Shell', 'shell', 'Shell', True, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
+    BindingsInfo('Visual Basic .NET', 'vbnet', 'VBNET', True, True,
+                 {'en': 'http://howtostartprogramming.com/vb-net/',
+                  'de': 'http://howtostartprogramming.com/vb-net/'}), # http://openbook.galileocomputing.de/vb_net/index.htm
 ]
 
 extension_infos = \
@@ -260,16 +260,16 @@ def make_download_bindings_table():
     row = ' `{0} <http://www.tinkerforge.com/' + lang + '/doc/Software/API_Bindings_{2}.html>`__ | `{4} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{5}_{6}_{7}.zip>`__ | {5}.{6}.{7} | `{3} <http://download.tinkerforge.com/bindings/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
     rows = []
 
-    for binding_info in binding_infos:
-        if not binding_info.is_programming_language or not binding_info.is_released:
+    for bindings_info in bindings_infos:
+        if not bindings_info.is_programming_language or not bindings_info.is_released:
             continue
 
-        rows.append(row.format(binding_info.display_name,
-                               binding_info.url_part,
-                               binding_info.software_doc_suffix,
+        rows.append(row.format(bindings_info.display_name,
+                               bindings_info.url_part,
+                               bindings_info.software_doc_suffix,
                                archive[lang],
                                bindings_and_examples[lang],
-                               *bindings_versions[binding_info.url_part]))
+                               *bindings_versions[bindings_info.url_part]))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
@@ -368,7 +368,7 @@ def make_download_plugins_table():
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
-def make_api_bindings_links_table(binding_info):
+def make_api_bindings_links_table(bindings_info):
     table_head = {
     'en': """.. csv-table::
  :header: "", "API", "Examples"
@@ -411,18 +411,18 @@ def make_api_bindings_links_table(binding_info):
     brick_lines = []
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
         if brick_info.is_released and brick_info.has_bindings:
-            brick_lines.append(device_row[lang].format(brick_info.ref_name, binding_info.url_part, brick_info.short_display_name))
+            brick_lines.append(device_row[lang].format(brick_info.ref_name, bindings_info.url_part, brick_info.short_display_name))
 
     bricklet_lines = []
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
         if bricklet_info.is_released and bricklet_info.has_bindings:
-            bricklet_lines.append(device_row[lang].format(bricklet_info.ref_name, binding_info.url_part, bricklet_info.short_display_name))
+            bricklet_lines.append(device_row[lang].format(bricklet_info.ref_name, bindings_info.url_part, bricklet_info.short_display_name))
 
-    return table_head[lang].format(ipcon_row[lang].format(binding_info.url_part),
+    return table_head[lang].format(ipcon_row[lang].format(bindings_info.url_part),
                                    '\n'.join(brick_lines),
                                    '\n'.join(bricklet_lines))
 
-def make_llproto_links_table(binding_info):
+def make_llproto_links_table(bindings_info):
     table_head = {
     'en': """.. csv-table::
  :header: "", "API"
@@ -456,12 +456,12 @@ def make_llproto_links_table(binding_info):
     brick_lines = []
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
         if brick_info.is_released and brick_info.has_bindings:
-            brick_lines.append(device_row[lang].format(brick_info.ref_name, binding_info.url_part, brick_info.short_display_name))
+            brick_lines.append(device_row[lang].format(brick_info.ref_name, bindings_info.url_part, brick_info.short_display_name))
 
     bricklet_lines = []
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
         if bricklet_info.is_released and bricklet_info.has_bindings:
-            bricklet_lines.append(device_row[lang].format(bricklet_info.ref_name, binding_info.url_part, bricklet_info.short_display_name))
+            bricklet_lines.append(device_row[lang].format(bricklet_info.ref_name, bindings_info.url_part, bricklet_info.short_display_name))
 
     return table_head[lang].format('\n'.join(brick_lines),
                                    '\n'.join(bricklet_lines))
@@ -802,19 +802,19 @@ def make_index_api():
     html = '<div class="category_api_outer">'
     first = True
 
-    for binding_info in binding_infos:
-        if binding_info.is_released:
+    for bindings_info in bindings_infos:
+        if bindings_info.is_released:
             if first:
                 first = False
                 style = ''
             else:
                 style = ' style="display: none;"'
 
-            html += index_html.format(make_index_api_device(brick_infos, 'Bricks', binding_info.software_doc_suffix),
-                                      make_index_api_misc(binding_info, lang),
-                                      make_index_api_device(bricklet_infos, 'Bricklets', binding_info.software_doc_suffix),
-                                      binding_info.display_name,
-                                      binding_info.url_part,
+            html += index_html.format(make_index_api_device(brick_infos, 'Bricks', bindings_info.software_doc_suffix),
+                                      make_index_api_misc(bindings_info, lang),
+                                      make_index_api_device(bricklet_infos, 'Bricklets', bindings_info.software_doc_suffix),
+                                      bindings_info.display_name,
+                                      bindings_info.url_part,
                                       style,
                                       misc[lang])
 
@@ -844,14 +844,14 @@ def make_hlpi_table(device_info):
     row = '   "{0}", ":ref:`API <{1}_{2}_api>`"'
     rows = []
 
-    for binding_info in binding_infos:
-        if not binding_info.is_released:
+    for bindings_info in bindings_infos:
+        if not bindings_info.is_released:
             continue
 
-        if binding_info.is_programming_language:
-            rows.append(row_source[lang].format(binding_info.display_name, device_info.ref_name, binding_info.url_part))
+        if bindings_info.is_programming_language:
+            rows.append(row_source[lang].format(bindings_info.display_name, device_info.ref_name, bindings_info.url_part))
         else:
-            rows.append(row.format(binding_info.display_name, device_info.ref_name, binding_info.url_part))
+            rows.append(row.format(bindings_info.display_name, device_info.ref_name, bindings_info.url_part))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
@@ -884,9 +884,9 @@ def make_authentication_tutorial_examples_table():
     row = '* :ref:`{0} <ipcon_{1}_examples>`'
     rows = []
 
-    for binding_info in binding_infos:
-        if binding_info.is_programming_language and binding_info.is_released:
-            rows.append(row.format(binding_info.display_name, binding_info.url_part))
+    for bindings_info in bindings_infos:
+        if bindings_info.is_programming_language and bindings_info.is_released:
+            rows.append(row.format(bindings_info.display_name, bindings_info.url_part))
 
     return '\n'.join(rows) + '\n'
 
@@ -905,7 +905,7 @@ def make_hardware_devices_toctree(device_infos):
 
     return prefix + '\n'.join(lines) + '\n'
 
-def make_software_devices_toctree(binding_info, device_infos, category):
+def make_software_devices_toctree(bindings_info, device_infos, category):
     prefix = """
 .. toctree::
    :hidden:
@@ -916,7 +916,7 @@ def make_software_devices_toctree(binding_info, device_infos, category):
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
         if device_info.has_bindings and device_info.is_released:
-            lines.append(line.format(device_info.long_display_name, category, device_info.software_doc_prefix, binding_info.software_doc_suffix))
+            lines.append(line.format(device_info.long_display_name, category, device_info.software_doc_prefix, bindings_info.software_doc_suffix))
 
     return prefix + '\n'.join(lines) + '\n'
 
@@ -1016,21 +1016,21 @@ def generate(path):
     print('Generating Tutorial_authenticate_examples.table')
     write_if_changed(os.path.join(path, 'source', 'Tutorials', 'Tutorial_Authentication', 'Tutorial_authenticate_examples.table'), make_authentication_tutorial_examples_table())
 
-    for binding_info in binding_infos:
-        if binding_info.is_programming_language:
-            print('Generating API_Bindings_{0}_links.table'.format(binding_info.software_doc_suffix))
-            write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_{0}_links.table'.format(binding_info.software_doc_suffix)), make_api_bindings_links_table(binding_info))
+    for bindings_info in bindings_infos:
+        if bindings_info.is_programming_language:
+            print('Generating API_Bindings_{0}_links.table'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Software', 'API_Bindings_{0}_links.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_links_table(bindings_info))
         else:
-            print('Generating {0}_links.table'.format(binding_info.software_doc_suffix))
-            write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', '{0}_links.table'.format(binding_info.software_doc_suffix)), make_llproto_links_table(binding_info))
+            print('Generating {0}_links.table'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', '{0}_links.table'.format(bindings_info.software_doc_suffix)), make_llproto_links_table(bindings_info))
 
-    for binding_info in binding_infos:
-        print('Generating Bricks_{0}.toctree'.format(binding_info.software_doc_suffix))
-        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, brick_infos, 'Bricks'))
+    for bindings_info in bindings_infos:
+        print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks'))
 
-    for binding_info in binding_infos:
-        print('Generating Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix))
-        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(binding_info.software_doc_suffix)), make_software_devices_toctree(binding_info, bricklet_infos, 'Bricklets'))
+    for bindings_info in bindings_infos:
+        print('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets'))
 
 if __name__ == "__main__":
     generate(os.getcwd())
