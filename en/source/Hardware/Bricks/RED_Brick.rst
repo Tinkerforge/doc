@@ -1038,6 +1038,15 @@ Several example programs are available on `GitHub
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sync_time>`__:
   If you can't use NTP or a GPS Bricklet to set a proper system time, you can
   manually synchronize it using your web browser.
+* `Get humidity callback reading via SMS
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/sms_humidity>`__:
+  This example demonstrates how Bricklet callback values can be reported
+  via SMS if you have a GSM modem connected to the RED Brick.
+* `Get GPS location from SMS request
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/sms_location>`__:
+  This example demonstrates how GPS location can be reported via SMS if
+  you have a GPS Bricklet and a GSM modem connected to the RED Brick.
+
 
 .. _red_brick_hardware:
 

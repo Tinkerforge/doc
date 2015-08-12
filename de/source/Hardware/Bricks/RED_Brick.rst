@@ -1062,6 +1062,14 @@ stehen verschiedene Beispielprogramme zur Verfügung:
   Wenn weder NTP noch GPS zur Synchrionisierung der Systemzeit genutzt werden
   kann, dann kann über dieses Programm die Systemzeit vom Webbrowser aus
   synchronisiert werden.
+* `Humidity Callback per SMS erhalten
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/sms_humidity>`__:
+  Dieses Beispiel zeigt, wie Bricklet Callback-Werte per SMS weiter geleitet
+  werden können, wenn am RED Brick ein GSM Modem angeschlossen ist.
+* `GPS Position per SMS abfragen
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/sms_location>`__:
+  Dieses Beispiel zeigt, wie die GPS Position per SMS abgefragt werden kann,
+  wenn am RED Brick ein GPS Bricklet und ein GSM Modem angeschlossen sind.
 
 
 .. _red_brick_hardware:
