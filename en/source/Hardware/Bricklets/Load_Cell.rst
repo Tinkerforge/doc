@@ -210,9 +210,12 @@ get an idea on how to mount a load cell in general.
    :align: center
    :target: ../../_images/Misc/scale_w_master_1200.jpg
 
-* Building up the Scale Kit is pretty easy. Start by removing the protective foil from the plastic parts (there is foil on both sides).
+* Building up the Scale Kit is pretty easy. Start by removing the protective
+  foil from the plastic parts (there is foil on both sides).
 
-* Screw the 60mm MakerBeam and the load cell to the top plastic part.
+* Screw the 60mm MakerBeam and the load cell to the top plastic part. Ensure to
+  screw the load cell with the arrow side to the plastic part and that the arrow
+  is pointing away from the plastic part.
 
 .. image:: /Images/Misc/scale_setup_part0_350.jpg
    :scale: 100 %
@@ -226,7 +229,7 @@ get an idea on how to mount a load cell in general.
    :align: center
    :target: ../../_images/Misc/scale_setup_part1_1000.jpg
 
-* Screw the 100mm MakerBeam and the Load cell to the bottom plastic part.
+* Screw the 100mm MakerBeam and the load cell to the bottom plastic part.
 
 .. image:: /Images/Misc/scale_setup_part2_350.jpg
    :scale: 100 %
@@ -260,7 +263,9 @@ get an idea on how to mount a load cell in general.
    :align: center
    :target: ../../_images/Misc/scale_setup_part6_1000.jpg
 
-* Done!
+* Mechanical construction done! Finally, connect the load cell to the Bricklet
+  as described in the :ref:`connectivity <load_cell_bricklet_connectivity>`
+  section.
 
 .. image:: /Images/Misc/scale3_350.jpg
    :scale: 100 %
