@@ -192,6 +192,82 @@ the "Calibrate Weight" button.
 Now the Load Cell Bricklet is calibrated for the connected load cell and the
 specific setup.
 
+.. _load_cell_bricklet_scale_kit:
+
+Scale Kit
+---------
+
+The Scale Kit is build from `MakerBeam <https://www.tinkerforge.com/en/shop/makerbeam.html>`__, 
+a `1kg Load Cell <https://www.tinkerforge.com/en/shop/accessories/sensors/load-cell-1kg-czl635.html>`__ 
+and laser cut plastic parts. It is available in the 
+`Tinkerforge shop <https://www.tinkerforge.com/en/shop/kits/scale-kit.html>`__, 
+but you can also just use the description to 
+get an idea on how to mount a load cell in general.
+
+.. image:: /Images/Misc/scale_w_master_600.jpg
+   :scale: 100 %
+   :alt: Load Cell Bricklet with Master Brick and Scale Kit
+   :align: center
+   :target: ../../_images/Misc/scale_w_master_1200.jpg
+
+* Building up the Scale Kit is pretty easy. Start by removing the protective foil from the plastic parts (there is foil on both sides).
+
+* Screw the 60mm MakerBeam and the load cell to the top plastic part.
+
+.. image:: /Images/Misc/scale_setup_part0_350.jpg
+   :scale: 100 %
+   :alt: Scale Kit part 0
+   :align: center
+   :target: ../../_images/Misc/scale_setup_part0_1000.jpg
+
+.. image:: /Images/Misc/scale_setup_part1_350.jpg
+   :scale: 100 %
+   :alt: Scale Kit part 1
+   :align: center
+   :target: ../../_images/Misc/scale_setup_part1_1000.jpg
+
+* Screw the 100mm MakerBeam and the Load cell to the bottom plastic part.
+
+.. image:: /Images/Misc/scale_setup_part2_350.jpg
+   :scale: 100 %
+   :alt: Scale Kit part 2
+   :align: center
+   :target: ../../_images/Misc/scale_setup_part2_1000.jpg
+
+.. image:: /Images/Misc/scale_setup_part3_350.jpg
+   :scale: 100 %
+   :alt: Scale Kit part 3
+   :align: center
+   :target: ../../_images/Misc/scale_setup_part3_1000.jpg
+
+.. image:: /Images/Misc/scale_setup_part4_350.jpg
+   :scale: 100 %
+   :alt: Scale Kit part 4
+   :align: center
+   :target: ../../_images/Misc/scale_setup_part4_1000.jpg
+
+* Use the double sided tape to attach the round plate to the 60mm MakerBeam.
+
+.. image:: /Images/Misc/scale_setup_part5_350.jpg
+   :scale: 100 %
+   :alt: Scale Kit part 5
+   :align: center
+   :target: ../../_images/Misc/scale_setup_part5_1000.jpg
+
+.. image:: /Images/Misc/scale_setup_part6_350.jpg
+   :scale: 100 %
+   :alt: Scale Kit part 6
+   :align: center
+   :target: ../../_images/Misc/scale_setup_part6_1000.jpg
+
+* Done!
+
+.. image:: /Images/Misc/scale3_350.jpg
+   :scale: 100 %
+   :alt: Build up scale
+   :align: center
+   :target: ../../_images/Misc/scale3_1000.jpg
+
 
 .. _load_cell_bricklet_case:
 
