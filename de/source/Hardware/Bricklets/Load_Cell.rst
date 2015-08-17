@@ -197,6 +197,88 @@ klicke den "Calibrate Weight" Knopf.
 Das Load Cell Bricklet ist nun für die angeschlossenen Wägezelle und den
 aktuellen Aufbau kalibriert.
 
+.. _load_cell_bricklet_scale_kit:
+
+Waagenkit
+---------
+
+Das Waagenkit setzt sich aus `MakerBeam <https://www.tinkerforge.com/de/shop/makerbeam.html>`__,
+einer `1kg Wägezelle <https://www.tinkerforge.com/de/shop/accessories/sensors/load-cell-1kg-czl635.html>`__,
+sowie laser-geschnittenen Plastikteilen zusammen. Es ist im 
+`Tinkerforge Shop <https://www.tinkerforge.com/de/shop/kits/scale-kit.html>`__ verfügbar.
+Die Anleitung kann allerdings auch als Quelle dienen um eine grundsätzliche Idee
+zu bekommen wie der mechanischen Aufbau von Waagen mit einer Wägezelle aussieht.
+
+
+.. image:: /Images/Misc/scale_w_master_600.jpg
+   :scale: 100 %
+   :alt: Load Cell Bricklet mit Master Brick und Waagenkit
+   :align: center
+   :target: ../../_images/Misc/scale_w_master_1200.jpg
+
+* Der Aufbau des Waagenkits ist sehr einfach. Starte mit dem entfernen der 
+  Schutzfolie von den Plastikteilen (die Schutzfolie befindet sich auf beiden Seiten).
+
+* Schraube die 60mm MakerBeam und die Wägezelle auf das obere Plastikteil. Stelle
+  sicher, dass der Pfeil auf der Wägezelle auf der Seite des Plastikteils ist und vom
+  Plastikteil wegzeigt.
+
+.. image:: /Images/Misc/scale_setup_Teil0_350.jpg
+   :scale: 100 %
+   :alt: Waagenkit Teil 0
+   :align: center
+   :target: ../../_images/Misc/scale_setup_Teil0_1000.jpg
+
+.. image:: /Images/Misc/scale_setup_Teil1_350.jpg
+   :scale: 100 %
+   :alt: Waagenkit Teil 1
+   :align: center
+   :target: ../../_images/Misc/scale_setup_Teil1_1000.jpg
+
+* Scraube die 100mm MakerBeam und die Wägezelle an das untere Plastikteil.
+
+.. image:: /Images/Misc/scale_setup_Teil2_350.jpg
+   :scale: 100 %
+   :alt: Waagenkit Teil 2
+   :align: center
+   :target: ../../_images/Misc/scale_setup_Teil2_1000.jpg
+
+.. image:: /Images/Misc/scale_setup_Teil3_350.jpg
+   :scale: 100 %
+   :alt: Waagenkit Teil 3
+   :align: center
+   :target: ../../_images/Misc/scale_setup_Teil3_1000.jpg
+
+.. image:: /Images/Misc/scale_setup_Teil4_350.jpg
+   :scale: 100 %
+   :alt: Waagenkit Teil 4
+   :align: center
+   :target: ../../_images/Misc/scale_setup_Teil4_1000.jpg
+
+* Nutze das doppelseitige Klebeband um die runde Platte an den 60mm MakerBeam zu befestigen.
+
+.. image:: /Images/Misc/scale_setup_Teil5_350.jpg
+   :scale: 100 %
+   :alt: Waagenkit Teil 5
+   :align: center
+   :target: ../../_images/Misc/scale_setup_Teil5_1000.jpg
+
+.. image:: /Images/Misc/scale_setup_Teil6_350.jpg
+   :scale: 100 %
+   :alt: Waagenkit Teil 6
+   :align: center
+   :target: ../../_images/Misc/scale_setup_Teil6_1000.jpg
+
+* Die mechanische Konstruktion ist fertig! Nun kann das Load Cell Bricklet noch
+  wie im, :ref:`Anschlussmöglichkeiten <load_cell_bricklet_connectivity>`-Abschnitt
+  angeschlossen werden.
+
+.. image:: /Images/Misc/scale3_350.jpg
+   :scale: 100 %
+   :alt: Zusammengebaute Waage
+   :align: center
+   :target: ../../_images/Misc/scale3_1000.jpg
+
 
 .. _load_cell_bricklet_case:
 
