@@ -223,51 +223,51 @@ zu bekommen wie der mechanischen Aufbau von Waagen mit einer Wägezelle aussieht
   sicher, dass der Pfeil auf der Wägezelle auf der Seite des Plastikteils ist und vom
   Plastikteil wegzeigt.
 
-.. image:: /Images/Misc/scale_setup_Teil0_350.jpg
+.. image:: /Images/Misc/scale_setup_part0_350.jpg
    :scale: 100 %
    :alt: Waagenkit Teil 0
    :align: center
-   :target: ../../_images/Misc/scale_setup_Teil0_1000.jpg
+   :target: ../../_images/Misc/scale_setup_part0_1000.jpg
 
-.. image:: /Images/Misc/scale_setup_Teil1_350.jpg
+.. image:: /Images/Misc/scale_setup_part1_350.jpg
    :scale: 100 %
    :alt: Waagenkit Teil 1
    :align: center
-   :target: ../../_images/Misc/scale_setup_Teil1_1000.jpg
+   :target: ../../_images/Misc/scale_setup_part1_1000.jpg
 
 * Scraube die 100mm MakerBeam und die Wägezelle an das untere Plastikteil.
 
-.. image:: /Images/Misc/scale_setup_Teil2_350.jpg
+.. image:: /Images/Misc/scale_setup_part2_350.jpg
    :scale: 100 %
    :alt: Waagenkit Teil 2
    :align: center
-   :target: ../../_images/Misc/scale_setup_Teil2_1000.jpg
+   :target: ../../_images/Misc/scale_setup_part2_1000.jpg
 
-.. image:: /Images/Misc/scale_setup_Teil3_350.jpg
+.. image:: /Images/Misc/scale_setup_part3_350.jpg
    :scale: 100 %
    :alt: Waagenkit Teil 3
    :align: center
-   :target: ../../_images/Misc/scale_setup_Teil3_1000.jpg
+   :target: ../../_images/Misc/scale_setup_part3_1000.jpg
 
-.. image:: /Images/Misc/scale_setup_Teil4_350.jpg
+.. image:: /Images/Misc/scale_setup_part4_350.jpg
    :scale: 100 %
    :alt: Waagenkit Teil 4
    :align: center
-   :target: ../../_images/Misc/scale_setup_Teil4_1000.jpg
+   :target: ../../_images/Misc/scale_setup_part4_1000.jpg
 
 * Nutze das doppelseitige Klebeband um die runde Platte an den 60mm MakerBeam zu befestigen.
 
-.. image:: /Images/Misc/scale_setup_Teil5_350.jpg
+.. image:: /Images/Misc/scale_setup_part5_350.jpg
    :scale: 100 %
    :alt: Waagenkit Teil 5
    :align: center
-   :target: ../../_images/Misc/scale_setup_Teil5_1000.jpg
+   :target: ../../_images/Misc/scale_setup_part5_1000.jpg
 
-.. image:: /Images/Misc/scale_setup_Teil6_350.jpg
+.. image:: /Images/Misc/scale_setup_part6_350.jpg
    :scale: 100 %
    :alt: Waagenkit Teil 6
    :align: center
-   :target: ../../_images/Misc/scale_setup_Teil6_1000.jpg
+   :target: ../../_images/Misc/scale_setup_part6_1000.jpg
 
 * Die mechanische Konstruktion ist fertig! Nun kann das Load Cell Bricklet noch
   wie im, :ref:`Anschlussmöglichkeiten <load_cell_bricklet_connectivity>`-Abschnitt
