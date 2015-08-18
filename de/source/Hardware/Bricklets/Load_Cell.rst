@@ -235,7 +235,7 @@ zu bekommen wie der mechanischen Aufbau von Waagen mit einer Wägezelle aussieht
    :align: center
    :target: ../../_images/Misc/scale_setup_part1_1000.jpg
 
-* Scraube die 100mm MakerBeam und die Wägezelle an das untere Plastikteil.
+* Schraube die 100mm MakerBeam und die Wägezelle an das untere Plastikteil.
 
 .. image:: /Images/Misc/scale_setup_part2_350.jpg
    :scale: 100 %
