@@ -10,8 +10,46 @@
 IMU Brick 2.0
 =============
 
-.. note::
-  Dieser Brick ist noch in Entwicklung!
+.. raw:: html
+
+    {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+    {{
+        tfdocstart("Bricks/brick_imu_v2_tilted1_350.jpg",
+                   "Bricks/brick_imu_v2_tilted1_800.jpg",
+                   "IMU Brick 2.0")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_v2_tilted2_100.jpg",
+                 "Bricks/brick_imu_v2_tilted2_800.jpg",
+                 "IMU Brick 2.0")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_v2_front_100.jpg",
+                 "Bricks/brick_imu_v2_front_800.jpg",
+                 "IMU Brick 2.0")
+    }}
+
+    {{
+        tfdocimg("Bricks/brick_imu_v2_caption_100.jpg",
+                 "Bricks/brick_imu_v2_caption_800.jpg",
+                 "IMU Brick 2.0 mit Beschriftung")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_v2_top_100.jpg",
+                 "Bricks/brick_imu_v2_top_800.jpg",
+                 "IMU Brick 2.0 Oberseite")
+    }}
+    {{
+        tfdocimg("Bricks/brick_imu_v2_bottom_100.jpg",
+                 "Bricks/brick_imu_v2_bottom_800.jpg",
+                 "IMU Brick 2.0 Unterseite")
+    }}
+    {{
+        tfdocimg("Dimensions/imu_brick_dimensions_100.png",
+                 "Dimensions/imu_brick_dimensions_600.png",
+                 "Umriss und Bohrplan")
+    }}
+    {{ tfdocend() }}
 
 
 Features
@@ -92,7 +130,7 @@ Ressourcen
 
 * BNO055 Datenblatt (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/datasheets/BNO055.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/hardware/imu-v2-schematic.pdf>`__)
-* Umriss und Bohrplan (`Download <../../_images/Dimensions/imu_v2_brick_dimensions.png>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/imu-v2-brick/zipball/master>`__)
 
 
