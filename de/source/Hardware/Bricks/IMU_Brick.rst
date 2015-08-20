@@ -24,6 +24,11 @@ IMU Brick
                  "IMU Brick")
     }}
     {{
+        tfdocimg("Bricks/brick_imu_v2_front_100.jpg",
+                 "Bricks/brick_imu_v2_front_800.jpg",
+                 "IMU Brick 2.0")
+    }}
+    {{
         tfdocimg("Bricks/brick_imu_caption_100.jpg",
                  "Bricks/brick_imu_caption_600.jpg",
                  "IMU Brick mit Beschriftung")

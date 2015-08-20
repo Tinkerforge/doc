@@ -28,7 +28,6 @@ IMU Brick 2.0
                  "Bricks/brick_imu_v2_front_800.jpg",
                  "IMU Brick 2.0")
     }}
-
     {{
         tfdocimg("Bricks/brick_imu_v2_caption_100.jpg",
                  "Bricks/brick_imu_v2_caption_800.jpg",
