@@ -53,6 +53,10 @@ Then LabVIEW will find the ``Tinkerforge.dll`` automatically and does not ask
 for your support. But LabVIEW might warn that ``Tinkerforge.dll`` was loaded
 from a different folder. This warning can be ignored.
 
+LabVIEW might also warn that is found a ``Tinkerforge.dll`` with a different
+version. If the found version is newer then the one LabVIEW was locking for,
+then you can ignore this warning. Otherwise you should update the LabVIEW
+bindings.
 
 Testing an Example
 ------------------

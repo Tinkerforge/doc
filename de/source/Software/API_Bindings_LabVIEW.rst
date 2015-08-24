@@ -58,6 +58,10 @@ Nachfragen. Allerdings wird LabVIEW möglicherweise darüber warnen, dass
 die DLL aus einen anderen Ordner geladen wurde. Diese Warnung kann ignoriert
 werden.
 
+Es kann sein, dass LabVIEW darüber warnt, dass eine ``Tinkerforge.dll`` mit
+abweichender Versionsnummer gefunden wurde. Wenn die gefundene Versionsnummer
+höher als die gesucht ist, kann diese Warnung ignoriert werden. Andernfalls
+sollten die LabVIEW Bindings aktualisiert werden.
 
 Test eines Beispiels
 --------------------
