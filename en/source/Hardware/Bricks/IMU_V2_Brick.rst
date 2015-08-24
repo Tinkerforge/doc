@@ -101,6 +101,12 @@ connection by other cable based (:ref:`RS485 <rs485_extension>`,
 :ref:`Ethernet <ethernet_extension>`) or wireless (:ref:`WIFI <wifi_extension>`)
 connections.
 
+A comparison video between IMU Brick 1.0 and IMU Brick 2.0 is available on Youtube:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/Aq3SqVen5AQ" frameborder="0" allowfullscreen></iframe></center>
+
 Technical Specifications
 ------------------------
 

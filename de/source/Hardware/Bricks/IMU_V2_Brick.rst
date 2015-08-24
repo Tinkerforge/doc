@@ -105,6 +105,11 @@ um die USB Verbindung durch andere kabelgebundene Schnittstellen
 (:ref:`RS485 <rs485_extension>`, :ref:`Ethernet <ethernet_extension>`)
 oder drahtlose Schnittstellen (:ref:`WLAN <wifi_extension>`) zu ersetzen.
 
+Ein Vergleichsvideo zwischen IMU Brick 1.0 und IMU Brick 2.0 ist auf Youtube verfügbar:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/Aq3SqVen5AQ" frameborder="0" allowfullscreen></iframe></center>
 
 Technische Spezifikation
 ------------------------
