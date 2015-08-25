@@ -13,18 +13,6 @@ from device_infos import DeviceInfo, brick_infos, bricklet_infos
 
 lang = 'en'
 
-patched_brick_infos = []
-
-for brick_info in brick_infos:
-    if brick_info.identifier == 18: # IMU Brick 2.0
-        brick_info_list = list(brick_info)
-        brick_info_list[8] = False
-        brick_info = DeviceInfo(*tuple(brick_info_list))
-
-    patched_brick_infos.append(brick_info)
-
-brick_infos = patched_brick_infos
-
 ToolInfo = namedtuple('ToolInfo', 'display_name url_part')
 
 tool_infos = \
