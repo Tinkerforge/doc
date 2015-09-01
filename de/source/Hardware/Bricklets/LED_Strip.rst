@@ -286,7 +286,7 @@ WS2812B LED Steifen
 
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
 Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem WS2812B
-LED Streifen Beispiel ist der rote Draht :led-strip-black:`5V`, grün die
+LED Streifen Beispiel ist der rote Draht :led-strip-red:`5V`, grün die
 :led-strip-green:`Datenleitungleitung` und der weiße Draht ist 
 :led-strip-white:`Masse`.
 
