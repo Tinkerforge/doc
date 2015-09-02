@@ -16,15 +16,15 @@ Setup and Usage
 ---------------
 
 The proxy is provided as Python script and can be downloaded from its 
-`Brick MQTT Proxy Github Repository <https://github.com/Tinkerforge/brick-mqtt-proxy>`__.
+`Brick MQTT Proxy GitHub Repository <https://github.com/Tinkerforge/brick-mqtt-proxy>`__.
 
 As dependencies the :ref:`Tinkerforge Python API Bindings <api_bindings_python>` 
-and `paho-mqtt <https://pypi.python.org/pypi/paho-mqtt/1.1>`__ has to be 
-installed. On Linux this can be done by:
+and the `Eclipse Paho MQTT Python client library <https://pypi.python.org/pypi/paho-mqtt/1.1>`__
+has to be installed. On Linux this can be done by:
 
 .. code-block:: bash
 
-  pip install tinkerforge paho-mqtt
+  sudo pip install tinkerforge paho-mqtt
 
 Afterwards the proxy can be startet with:
 
@@ -34,7 +34,7 @@ Afterwards the proxy can be startet with:
 
 Enter the following to get a list of command line arguments for host and port 
 configuration for 
-:ref:`Brick Daemon <brickd>` and the broker, data update interval and debug 
+:ref:`Brick Daemon <brickd>` and the MQTT broker, data update interval and debug
 output:
 
 .. code-block:: bash
@@ -54,10 +54,9 @@ the broker and client software under Linux do the following:
 
   sudo apt-get install mosquitto mosquitto-clients
 
-
-Afterwards start the Brick MQTT proxy and execute the following examples. The 
-structure is described :ref:`below <topics_and_payload_structure>`. Keep in mind 
-to change the UID in the path to that of your Bricklet.
+Afterwards start the Brick MQTT Proxy and execute the following examples. The
+structure is described :ref:`below <brick_mqtt_proxy_topics_and_payload_structure>`.
+Keep in mind to change the UID in the path to that of your Bricklet.
 
 .. code-block:: bash
 
@@ -82,21 +81,15 @@ to change the UID in the path to that of your Bricklet.
   # get output voltage
   mosquitto_sub -v -t tinkerforge/bricklet/analog_out_v2/7xwQ9g/output_voltage
 
-  # set output voltage
+  # set output voltage to 2.5V
   mosquitto_pub -t tinkerforge/bricklet/analog_out_v2/7xwQ9g/input_voltage -m '{"voltage":2500}'
 
 
 
-
-
-
-
-
-.. _topics_and_payload_structure:
+.. _brick_mqtt_proxy_topics_and_payload_structure:
 
 Topic and Payload Structure
 ---------------------------
-
 
 The topics are split into device (currently only ``bricklet/``) and
 ``enumerate/`` topics.
@@ -453,8 +446,6 @@ payloads.
                                                                                 |                                      | :tcpip:func:`calibration/set <BrickletVoltageCurrent.set_calibration>`
 
 
-
-
 Adding Support for other Bricks and Bricklets
 ---------------------------------------------
 
@@ -462,5 +453,5 @@ The Brick MQTT Proxy is designed to be easily extendable for other Bricks and
 Bricklets. Take a look in the 
 `source of the script <https://github.com/Tinkerforge/brick-mqtt-proxy/blob/master/brick-mqtt-proxy.py>`__.
 To add other products you will have to implement your own proxy class derived 
-from **DeviceProxy** class. Comments in the code describe the necessary 
+from ``DeviceProxy`` class. Comments in the code describe the necessary
 structure.
