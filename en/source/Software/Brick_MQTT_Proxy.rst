@@ -15,7 +15,49 @@ and translates messages between the :ref:`Tinkerforge TCP/IP Protocol (TFP)
 Setup and Usage
 ---------------
 
-The proxy is provided as Python script... FIXME
+The proxy is provided as Python script and can be downloaded from its 
+`Brick MQTT Proxy Github Repository <https://github.com/Tinkerforge/brick-mqtt-proxy>`__.
+
+As dependencies the :ref:`Tinkerforge Python API Bindings <api_bindings_python>` 
+and `paho-mqtt <https://pypi.python.org/pypi/paho-mqtt/1.1>`__ has to be 
+installed. On Linux this can be done by:
+
+.. code-block:: bash
+
+  pip install tinkerforge paho-mqtt
+
+Afterwards the proxy can be startet with:
+
+.. code-block:: bash
+
+  python brick-mqtt-proxy.py
+
+Enter the following to get a list of command line arguments for host and port 
+configuration for 
+:ref:`Brick Daemon <brickd>` and the broker, data update interval and debug 
+output:
+
+.. code-block:: bash
+
+  python brick-mqtt-proxy.py --help
+
+
+Examples
+^^^^^^^^
+
+In the following examples we use 
+`mosquitto <http://mosquitto.org/documentation/>`__ as broker and client. 
+Other broker and clients can be used similarly. To install
+the broker and client software under Linux do the following:
+
+.. code-block:: bash
+
+  sudo apt-get install mosquitto mosquitto-clients
+
+
+Afterwards start the Brick MQTT proxy and execute the following examples. The 
+structure is described :ref:`below <topics_and_payload_structure>`. Keep in mind 
+to change the UID in the path to that of your Bricklet.
 
 .. code-block:: bash
 
@@ -43,8 +85,18 @@ The proxy is provided as Python script... FIXME
   # set output voltage
   mosquitto_pub -t tinkerforge/bricklet/analog_out_v2/7xwQ9g/input_voltage -m '{"voltage":2500}'
 
+
+
+
+
+
+
+
+.. _topics_and_payload_structure:
+
 Topic and Payload Structure
-----------------------------
+---------------------------
+
 
 The topics are split into device (currently only ``bricklet/``) and
 ``enumerate/`` topics.
@@ -90,7 +142,7 @@ temperature value is published as:
     "temperature": 2343
   }
 
-The proxy subscribes to topics ending in ``/set`` allowing you to change the
+The proxy subscribes to topics ending in ``/set`` allows you to change the
 configuration of a device. For example, to change the configuration of an
 Ambient Light Bricklet 2.0 with UID ``ABC`` the following JSON payload:
 
@@ -399,3 +451,16 @@ payloads.
                                                                                 |                                      | :tcpip:func:`configuration/set <BrickletVoltageCurrent.set_configuration>`
                                                                                 |                                      | :tcpip:func:`calibration <BrickletVoltageCurrent.get_calibration>`
                                                                                 |                                      | :tcpip:func:`calibration/set <BrickletVoltageCurrent.set_calibration>`
+
+
+
+
+Adding Support for other Bricks and Bricklets
+---------------------------------------------
+
+The Brick MQTT Proxy is designed to be easily extendable for other Bricks and 
+Bricklets. Take a look in the 
+`source of the script <https://github.com/Tinkerforge/brick-mqtt-proxy/blob/master/brick-mqtt-proxy.py>`__.
+To add other products you will have to implement your own proxy class derived 
+from **DeviceProxy** class. Comments in the code describe the necessary 
+structure.
