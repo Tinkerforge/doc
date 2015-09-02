@@ -146,7 +146,7 @@ Ambient Light Bricklet 2.0 with UID ``ABC`` the following JSON payload:
     "integration_time": 2
   }
 
-Can be published to:
+Can be published to this topic:
 
 .. code-block:: none
 

@@ -7,7 +7,7 @@ Brick MQTT Proxy
 ================
 
 `MQTT <http://mqtt.org/>`__ ist ein Machine-to-Machine (M2M) und Internet der 
-Dinge (IoT) publish/subscribe Nachrichten-Transport-Protokoll. Der Brick MQTT 
+Dinge (IoT) Publish/Subscribe Nachrichten-Transport-Protokoll. Der Brick MQTT
 Proxy erlaubt den Zugriff auf Bricks und Bricklets über MQTT. Er ist in Python
 geschrieben und Übersetzt Nachrichten zwischen dem 
 :ref:`Tinkerforge TCP/IP Protocol (TFP) <llproto_tcpip>` und MQTT.
@@ -57,8 +57,7 @@ Mosquitto unter Linux zu installieren kann folgende Zeile eingegeben werden:
 
 Anschließend startet man den Brick MQTT Proxy und führt eines der Beispiele aus.
 Die Struktur ist :ref:`nachfolgend beschrieben <brick_mqtt_proxy_topics_and_payload_structure>`.
-Es muss daran gedachten werden die UID im Pfad durch die des eigenen Bricklets
-auszutauschen.
+Denke daran die UID im Topic durch die des eigenen Bricklets auszutauschen.
 
 .. code-block:: bash
 
@@ -87,11 +86,10 @@ auszutauschen.
   mosquitto_pub -t tinkerforge/bricklet/analog_out_v2/7xwQ9g/input_voltage -m '{"voltage":2500}'
 
 
-
 .. _brick_mqtt_proxy_topics_and_payload_structure:
 
-Topic und Payload Struktur
---------------------------
+Topic- und Payload-Struktur
+---------------------------
 
 Die Topics sind geteilt in Device (aktuell nur ``bricklet/``) und
 ``enumerate/`` Topics.
@@ -99,21 +97,21 @@ Die Topics sind geteilt in Device (aktuell nur ``bricklet/``) und
 Devices
 ^^^^^^^
 
-Der Proxy veröffentlicht (publishes) Retained Messages von Value und Configuration
-Änderungen von unterstützen Devices mit dem folgenden Pattern:
+Der Proxy veröffentlicht (publishes) retained Messages von Messwert- und
+Konfigurationsänderungen von unterstützen Devices mit dem folgenden Pattern:
 
 .. code-block:: none
 
   tinkerforge/<prefix>/<uid>/<suffix>
 
-Für ein Temperature Bricklet mit UID ``XYZ`` wird die Temperatur (temperature 
-value) wie folgt published:
+Für ein Temperature Bricklet mit UID ``XYZ`` wird die Temperatur wie folgt
+publishen:
 
 .. code-block:: none
 
   tinkerforge/bricklet/temperature/XYZ/temperature
 
-Der Value- und die Configuration-Information wird als JSON im folgenden Format 
+Messwert- Konfigurations-Information wird als JSON im folgenden Format
 repräsentiert:
 
 .. code-block:: json
@@ -123,13 +121,13 @@ repräsentiert:
     "<key>": <value>
   }
 
-Alle Nachrichten die von dem Proxy published werden enthalten einen UNIX 
-Zeitstempel um das Alter der Information zu verfügung zu stellen. Das Naming und 
-die Bedeutung der key-value Paare ist Gleichbedeutend mit der Payload-Definition
-unseres :ref:`TCP/IP Protokolls <llproto_tcpip>`.
-Alle key-value Paare, die vom Proxy hinzugefügt werden beginnen mit einem 
+Alle Nachrichten die der Proxy published enthalten einen UNIX
+Zeitstempel um das Alter der Information zur Verfügung zu stellen. Das Benennung
+und die Bedeutung der Schlüssel-Wert-Paare ist gleichbedeutend mit der
+Payload-Definition unseres :ref:`TCP/IP Protokolls <llproto_tcpip>`.
+Alle Schlüssel-Wert-Paare, die vom Proxy hinzugefügt werden beginnen mit einem
 Unterstrich um Namenskonflikte zu vermeiden. Als Beispiel wird die gemessene 
-Temperatur eines Temperature Bricklets mit UID ``XYZ`` wie folgt published:
+Temperatur eines Temperature Bricklets mit UID ``XYZ`` wie folgt gepublished:
 
 .. code-block:: json
 
@@ -139,9 +137,8 @@ Temperatur eines Temperature Bricklets mit UID ``XYZ`` wie folgt published:
   }
 
 Topics die auf ``/set`` enden, ermöglichen die Konfiguration eines Devices zu 
-ändern. Um zum Beispiel die Konfiguration eines
-Ambient Light Bricklet 2.0 mit UID ``ABC`` zu ändern wird folgender JSON Payload
-:
+ändern. Um zum Beispiel die Konfiguration eines Ambient Light Bricklet 2.0 mit
+UID ``ABC`` zu ändern wird folgender JSON Payload:
 
 .. code-block:: json
 
@@ -150,44 +147,44 @@ Ambient Light Bricklet 2.0 mit UID ``ABC`` zu ändern wird folgender JSON Payloa
     "integration_time": 2
   }
 
-an folgenden Pfad published:
+unter folgenden Topic gepublished:
 
 .. code-block:: none
 
   tinkerforge/bricklet/ambient_light_v2/ABC/configuration/set
 
-Der Proxy parsed den Payload und ruft die dazugehörigen Konfigurations-Setter 
+Der Proxy parsed den Payload und ruft die dazugehörigen Konfigurations-Funktion
 auf.
 
-Hierbei entsprechen die key-value Paare der Payload-Definition unseres TCP/IP 
-Protokolls. Im Beispiel wird die Illuminance Range auf 32000lux und die 
-Integration Time auf 150ms gesetzt.
+Hierbei entsprechen die Schlüssel-Wert-Paare wieder der Payload-Definition
+unseres TCP/IP  Protokolls. Im Beispiel wird die Illuminance Range auf 32000Lux
+und die  Integration Time auf 150ms gesetzt.
 
 Enumerate
 ^^^^^^^^^
 
-Es gibt drei verschiedene ``enumerate/`` Subtopics auf dem der Proxy Ereignisse
-published:
+Es gibt drei verschiedene ``enumerate/`` Subtopics auf denen der Proxy
+Ereignisse published:
 
 * ``tinkerforge/enumerate/available/<device-topic-prefix>``: Wenn die Liste der
-  verfügbaren Devies mit dem übereinstimmenden Topic-Prefix sich ändert wird eine
-  Retained Message mit der aktualisieren Liste aller nun verfügbaren Devices
-  published.
+  verfügbaren Devices mit übereinstimmenden Topic-Prefix sich ändert wird eine
+  retained Message mit der aktualisieren Liste aller nun verfügbaren Devices
+  gepublished.
 * ``tinkerforge/enumerate/connected/<device-topic-prefix>``: Wenn ein neues 
-  Device mit dem übereinstimmenden Topic-Prefix verbunden wird, so wird eine
-  Nachricht mit Informationen über dieses Device published.
+  Device mit übereinstimmenden Topic-Prefix verbunden wird, so wird eine
+  Nachricht mit Informationen über dieses Device gepublished.
 * ``tinkerforge/enumerate/disconnected/<device-topic-prefix>``: Wenn ein 
-  bekanntes Device mit einem übereinstimmenden Topic-Prefix getrennt wird, so 
-  wird eine Nachricht mit Informationen über dieses Device published.
+  bekanntes Device mit übereinstimmenden Topic-Prefix getrennt wird, so
+  wird eine Nachricht mit Informationen über dieses Device gepublished.
 
-Ein LCD 20x4 Bricklet, dass verbunden wird, wird auf folgenden Pfad published:
+Ein LCD 20x4 Bricklet, dass verbunden wird, wird auf folgenden Topic gepublished:
 
 .. code-block:: none
 
   tinkerforge/enumerate/connected/bricklet/lcd_20x4
 
 Zusätzlich wird die
-Retained Message auf ``tinkerforge/enumerate/available/bricklet/lcd_20x4``
+retained Message auf ``tinkerforge/enumerate/available/bricklet/lcd_20x4``
 aktualisiert. Die Device-Information wird für alle Subtopics in JSON in 
 folgendem Format repräsentiert:
 
@@ -222,7 +219,7 @@ Unterstützte Device Topics
 --------------------------
 
 Die nachfolgende Tabelle zeigt alle aktuell unterstützen Devices mit deren
-Namen, Suffixe und Links. Die Links zeigen auf deren TCP/IP Protokoll 
+Namen, Suffixen und Links. Die Links zeigen auf deren TCP/IP Protokoll
 Dokumentation, aus der die Payload-Definition entnommen werden kann.
 
 .. csv-table::
