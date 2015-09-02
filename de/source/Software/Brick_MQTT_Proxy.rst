@@ -9,7 +9,7 @@ Brick MQTT Proxy
 `MQTT <http://mqtt.org/>`__ ist ein Machine-to-Machine (M2M) und Internet der 
 Dinge (IoT) Publish/Subscribe Nachrichten-Transport-Protokoll. Der Brick MQTT
 Proxy erlaubt den Zugriff auf Bricks und Bricklets über MQTT. Er ist in Python
-geschrieben und Übersetzt Nachrichten zwischen dem 
+geschrieben und übersetzt Nachrichten zwischen dem 
 :ref:`Tinkerforge TCP/IP Protocol (TFP) <llproto_tcpip>` und MQTT.
 
 Setup und Benutzung
@@ -36,7 +36,7 @@ Anschließend kann der Proxy mit folgender Zeile gestartet werden:
 
 Um eine Liste der Kommandozeilen-Parameter für Host- und Porteinstellungen des
 :ref:`Brick Daemon <brickd>` und des MQTT Broker, der Daten Updaterate und
-einer möglichen Debugausgabe zu bekommen muss folgende Zeile eingegeben werden:
+einer möglichen Debugausgabe zu bekommen, muss folgende Zeile eingegeben werden:
 
 .. code-block:: bash
 
@@ -122,7 +122,7 @@ repräsentiert:
   }
 
 Alle Nachrichten die der Proxy published enthalten einen UNIX
-Zeitstempel um das Alter der Information zur Verfügung zu stellen. Das Benennung
+Zeitstempel, um das Alter der Information zur Verfügung zu stellen. Das Benennung
 und die Bedeutung der Schlüssel-Wert-Paare ist gleichbedeutend mit der
 Payload-Definition unseres :ref:`TCP/IP Protokolls <llproto_tcpip>`.
 Alle Schlüssel-Wert-Paare, die vom Proxy hinzugefügt werden beginnen mit einem
