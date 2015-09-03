@@ -111,8 +111,8 @@ getestet werden.
  überschrieben werden.
 
 
-Treiber Installation (Windows 8)
---------------------------------
+Treiber Installation (Windows 8, 8.1 und 10)
+--------------------------------------------
 
-Unter Windows 8 wird kein Treiber mehr benötigt, Windows 8 erkennt die
+Ab Windows 8 wird kein Treiber mehr benötigt, Windows 8 und neuer erkennt die
 Hardware automatisch und korrekt.

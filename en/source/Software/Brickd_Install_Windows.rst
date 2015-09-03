@@ -98,7 +98,7 @@ After a successful installation the Brick should use a driver called
 :ref:`Brick Viewer<brickv>`.
 
 .. note::
- Under Windows 7 it is possible that Windows tries to install the
+ On Windows 7 it is possible that Windows tries to install the
  drivers automatically and you don't have the choice to choose them manually.
  This automatic driver installation can fail without
  your notice. If you don't see Bricks in the Brick Viewer, please check in
@@ -107,8 +107,8 @@ After a successful installation the Brick should use a driver called
  Brick Daemon installation and install the drivers manually.
 
 
-Driver Installation (Windows 8)
-------------------------------------------
+Driver Installation (Windows 8, 8.1 and 10)
+-------------------------------------------
 
-On Windows 8 no driver is needed anymore. Windows 8 recognizes
+Since Windows 8 no driver is needed anymore. Windows 8 and later recognizes
 the hardware automatically and correctly.
