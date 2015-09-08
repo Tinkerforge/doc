@@ -398,6 +398,9 @@ payloads.
 
  :ref:`Motion Detector Bricklet <motion_detector_bricklet>`                     | bricklet/motion_detector             | :tcpip:func:`motion_detected <BrickletMotionDetector.get_motion_detected>`
 
+ :ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>`                         | bricklet/piezo_speaker               | :tcpip:func:`beep/set <BrickletPiezoSpeaker.beep>`
+                                                                                |                                      | :tcpip:func:`morse_code/set <BrickletPiezoSpeaker.morse_code>`
+
  :ref:`PTC Bricklet <ptc_bricklet>`                                             | bricklet/ptc                         | :tcpip:func:`temperature <BrickletPTC.get_temperature>`
                                                                                 |                                      | :tcpip:func:`resistance <BrickletPTC.get_resistance>`
                                                                                 |                                      | :tcpip:func:`sensor_connected <BrickletPTC.is_sensor_connected>`
