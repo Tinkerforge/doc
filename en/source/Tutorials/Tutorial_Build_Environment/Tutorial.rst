@@ -162,7 +162,7 @@ You can view or modify Brick/Bricklet schematics and PCB layouts. All of
 our hardware designs are made with the open source EDA tool 
 `KiCad <http://kicad-pcb.org/>`__.
 
-To open the kicad project file you first have to link in the kicad-libraries
+To open a kicad project file you first have to link in the kicad-libraries
 git (e.g. for the Master Brick)::
 
  cd ~/tf/master-brick/hardware/
@@ -192,7 +192,7 @@ Documentation
 -------------
 
 The documentation is written in
-`Restructured Text <http://docutils.sourceforge.net/rst.html`. It is available
+`Restructured Text <http://docutils.sourceforge.net/rst.html`__. It is available
 in the ``doc``-git in ``~/tf/doc``.
 
 You can build the whole documentation with::
