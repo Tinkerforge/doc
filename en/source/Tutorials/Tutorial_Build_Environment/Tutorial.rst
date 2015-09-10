@@ -39,7 +39,7 @@ If you have an environment set-up with the script above, you can:
 * Modify and compile Brick Viewer/Daemon
 * View and modify schematics and layout files for Bricks and Bricklets (with KiCad)
 * View and modify case CAD files (with FreeCAD).
-* Modify and rebuild the documentation
+* Modify and build the documentation
 
 In the following we will assume that a build environment is set-up with
 the above script.
