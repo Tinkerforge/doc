@@ -109,7 +109,7 @@ To achieve that we first have to add the function the
 
 * `Add function to config <https://github.com/Tinkerforge/generators/commit/dc4dd52c24ab470c5582cfaa0d67690490ec5d0c>`__.
 
-The we have to implement the function in the plugin source code of the
+Then we have to implement the function in the plugin source code of the
 RS232 Bricklet (see above on how to compile Bricklet firmware):
 
 * `Implement function <https://github.com/Tinkerforge/rs232-bricklet/commit/3139edc7d8399c9feb82570fcce061e9c9d27944>`__.
