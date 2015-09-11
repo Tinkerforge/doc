@@ -5,7 +5,6 @@ der Bricks und Bricklets sowie deren Firmwares und Plugins:
 * :ref:`brickd`
 * :ref:`brickv`
 * :ref:`api_bindings`
-* :ref:`firmwares_and_plugins`
 * :ref:`brick_mqtt_proxy`
 
 Diese können im :ref:`Downloadbereich <downloads>` heruntergeladen werden.
