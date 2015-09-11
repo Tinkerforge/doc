@@ -38,8 +38,7 @@ e.g. UID (together called plugin), in the
 `EEPROM <https://en.wikipedia.org/wiki/EEPROM>`__ on the Bricklet.
 At start up, this function (with other Bricklet functions if any) is loaded 
 (as `position independent code <https://en.wikipedia.org/wiki/Position_independent_code>`__)
-into the connected Brick Flash 
-(see :ref:`Building a Bricklet plugin <building_bricklet_plugin>`).
+into the connected Brick Flash.
 When the Brick calls the corresponding Bricklet function, this function is 
 already loaded inside the Bricks Flash. 
 This generic approach makes it possible to have compatibility between all 
