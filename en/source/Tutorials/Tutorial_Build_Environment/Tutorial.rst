@@ -68,7 +68,7 @@ in the Flashing dialog and pick the newly compiled firmware file.
 Bricklet plugins
 ----------------
 
-To compile a Bricklet firmware you first have to link in the ``bricklib``
+To compile a Bricklet plguin you first have to link in the ``bricklib``
 and the ``brickletlib`` and generate the ``Makefile`` 
 (e.g. for the Master Brick)::
 
@@ -104,7 +104,7 @@ The configs can be found in ``~/tf/generators/configs/``.
 Lets pretend that we want to add a ``SetBreakCondition`` API function to
 the RS232 Bricklet to be used in Java.
 
-To achieve that we first have to add the function the 
+To achieve that we first have to add the function to 
 ``bricklet_rs232_config.py`` in ``~/tf/generators/configs/``:
 
 * `Add function to config <https://github.com/Tinkerforge/generators/commit/dc4dd52c24ab470c5582cfaa0d67690490ec5d0c>`__.
@@ -127,8 +127,8 @@ are now also automatically available in the Brick Viewer source code and
 the documentation for the new API was automatically added to the
 ``doc``-git.
 
-Compile Brick Viewer/Daemon
----------------------------
+Brick Viewer/Daemon
+-------------------
 
 The Brick Daemon is available in ``~/tf/brickd/``. You can build it with::
 
@@ -162,7 +162,7 @@ You can view or modify Brick/Bricklet schematics and PCB layouts. All of
 our hardware designs are made with the open source EDA tool 
 `KiCad <http://kicad-pcb.org/>`__.
 
-To open a kicad project file you first have to link in the kicad-libraries
+To open a kicad project file you first have to link in the ``kicad-libraries``
 git (e.g. for the Master Brick)::
 
  cd ~/tf/master-brick/hardware/
