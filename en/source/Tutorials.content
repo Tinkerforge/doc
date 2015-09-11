@@ -6,3 +6,4 @@ and their concepts:
 * :ref:`Rugged Approach <tutorial_rugged_approach>`
 * :ref:`Authentication <tutorial_authentication>`
 * :ref:`RED Brick <tutorial_red_brick>`
+* :ref:`Build Environment Setup <tutorial_build_environment_setup>` (for firmware development)
