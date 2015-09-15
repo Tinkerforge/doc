@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / IMU Brick 2.0
-:FIXME_shoplink: ../../../shop/bricks/imu-v2-brick.html
+:shoplink: ../../../shop/bricks/imu-v2-brick.html
 
 .. include:: IMU_V2_Brick.substitutions
 
@@ -28,7 +28,6 @@ IMU Brick 2.0
                  "Bricks/brick_imu_v2_front_800.jpg",
                  "IMU Brick 2.0")
     }}
-
     {{
         tfdocimg("Bricks/brick_imu_v2_caption_100.jpg",
                  "Bricks/brick_imu_v2_caption_800.jpg",
@@ -61,7 +60,7 @@ Features
 * Werkskalibriert, automatische durchgehende Selbstkalibrierung während des
   Betriebs
 * Berechnet Quaternionen, lienare Beschleunigung, Schwerkraftvektor sowie
-  Gier- (Heading), Roll- und Nick- (Pitch) Winkel
+  unabhängige Gier- (Heading), Roll- und Nick- (Pitch) Winkel
 * Direkt auslesbar per USB, erweiterbar über zwei Bricklet Anschlüsse
 
 
@@ -80,7 +79,7 @@ arbeitet als **USB**
 `Inertialsensor <http://de.wikipedia.org/wiki/Inertialsensor>`__.
 Dieser kann 9 Freiheitsgrade messen und berechnet
 `Quaternionen <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
-sowie auch `Gier-, Roll- und Nick-Winkel
+sowie auch unabhängige `Gier-, Roll- und Nick-Winkel
 <http://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__. Es ist ein vollständiges
 `Attitude and Heading Reference System
 <http://de.wikipedia.org/wiki/Attitude_Heading_Reference_System>`__.

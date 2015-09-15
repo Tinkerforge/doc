@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / IMU Brick 2.0
-:FIXME_shoplink: ../../../shop/bricks/imu-v2-brick.html
+:shoplink: ../../../shop/bricks/imu-v2-brick.html
 
 .. include:: IMU_V2_Brick.substitutions
 
@@ -59,7 +59,7 @@ Features
 * No accumulating errors, no gimbal lock!
 * Factory calibrated, automatic continuous self-calibration during operation
 * Calculates quaternions, linear acceleration, gravity vector as well as
-  heading, roll and pitch
+  independent heading, roll and pitch angles
 * Directly readable by USB, extendable by two Bricklet ports
 
 
@@ -77,8 +77,8 @@ accelerometer, magnetometer (compass) and gyroscope and works as a **USB**
 `inertial measurement unit <http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
 It can measure 9 degrees of freedom and computes
 `quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__,
-linear acceleration, gravity vector as well as `heading, roll and pitch
-<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ information.
+linear acceleration, gravity vector as well as independent `heading, roll and
+pitch <http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ angles.
 It is a complete `attitude and heading reference system
 <http://en.wikipedia.org/wiki/AHRS>`__.
 

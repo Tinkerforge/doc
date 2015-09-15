@@ -248,6 +248,10 @@ Es ist nicht möglich Winkel für alle 3 Achsen zu berechnen die vollständig
 unabhängig sind. Zumindest an den Gimbal Lock Positionen werden Sprünge von
 180° auftreten für gewisse Winkel. Dies ist grundsätzlich nicht anders möglich.
 
+.. note::
+ All dies gilt nur für den alten IMU Brick. Der neue :ref:`IMU Brick 2.0
+ <imu_v2_brick>` gibt seine Orientierung direkt in unabhängig Euler Winkeln an.
+
 Wenn Rotationswinkel für die X, Y und Z Achse in Abhängigkeit zu einer
 definierten Grundposition benötigt werden, dann muss das Quaternion zuerst im
 Bezug auf diese Grundposition rotiert werden bevor die Winkel berechnet werden.

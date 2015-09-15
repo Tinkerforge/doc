@@ -233,6 +233,10 @@ It is not possible to get angles for all 3 axis that are completely independent.
 At least at the gimbal lock positions there will be jumps of 180° for
 some of the angles. This is simply not possible otherwise.
 
+.. note::
+ All of this only applies to old IMU Brick. The new :ref:`IMU Brick 2.0
+ <imu_v2_brick>` directly reports its orientation in independent Euler angles.
+
 If you want rotation angles for the x, y and z axis for a given base
 position, you have to rotate the quaternion according to your base
 position and calculate the angles after that. The following Python example
