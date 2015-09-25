@@ -146,7 +146,7 @@ If the bus is longer than a few meters then some kind of `twisted pair
 <https://en.wikipedia.org/wiki/Twisted_pair>`__ cable is recommended. Common
 telephone cable is often twisted. Even better is Ethernet cable, because it is
 twisted and often shielded. If you use a twisted pair cable, make sure to use
-one twisted pair for A and B, but use another twisted pair for GND.
+the same twisted pair for A and B, but use another twisted pair for GND.
 
 You have to power up the slaves before the master, since the RS485 master
 searches for slaves only at startup. You should now be able to see all

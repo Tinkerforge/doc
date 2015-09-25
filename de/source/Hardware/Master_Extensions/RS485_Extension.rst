@@ -151,8 +151,8 @@ sollte eine Form von `Twisted Pair
 <https://de.wikipedia.org/wiki/Twisted-Pair-Kabel>`__ Kabel verwendet werden.
 Normales Telefonkabel hat häufig verdrillte Aderpaare. Noch besser ist
 Ethernetkabel, da es verdrillt und normalerweise auch geschirmt ist. Wenn
-ein Kabel mit verdrillten Aderpaaren verwendet wird, dann sollte für A und B
-ein Aderpaar verwendet werden und für GND eine anderes Aderpaar.
+ein Kabel mit verdrillten Aderpaaren verwendet wird, dann sollte das gleiche
+Aderpaar für A und B verwendet werden und eine anderes Aderpaar für GND.
 
 Nachdem alles zusammengesteckt ist kann das System gestartet werden. Dabei
 müssen zuerst alle RS485 Slaves gestartet werden bevor der RS485 Master
