@@ -7,7 +7,7 @@ JavaScript - API Bindings
 =========================
 
 Die JavaScript Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
-:ref:`Bricklets <primer_bricklets>` aus selbst erstellen JavaScript Programmen
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen JavaScript Skripten
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
@@ -66,7 +66,7 @@ Ohne Installation
 Die JavaScript Bindings für Node.js müssen nicht unbedingt installiert werden.
 Stattdessen kann auch einfach der ``Tinkerforge/`` Ordner und die
 ``Tinkerforge.js`` Datei vom ``nodejs/source/`` Ordner in den gleichen Ordner
-wie dein JavaScript Programm kopiert werden. Der Abschnitt über den Test eines
+wie dein JavaScript Skript kopiert werden. Der Abschnitt über den Test eines
 Beispiels vermittelt mehr Details darüber.
 
 HTML

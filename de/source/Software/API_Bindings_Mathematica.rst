@@ -7,7 +7,7 @@ Mathematica - API Bindings
 ==========================
 
 Die Mathematica Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
-:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Mathematica Programmen
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Mathematica Notebooks
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 

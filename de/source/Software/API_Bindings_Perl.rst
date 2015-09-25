@@ -7,7 +7,7 @@ Perl - API Bindings
 ===================
 
 Die Perl Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
-:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Perl Programmen
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Perl Skripten
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
@@ -79,7 +79,7 @@ Ohne Installation
 
 Die Perl Bindings müssen nicht unbedingt installiert werden. Stattdessen
 kann auch einfach der ``Tinkerforge/`` Ordner vom ``source/lib/`` Ordner in den
-gleichen Ordner wie dein Perl Programm kopiert werden. Der Abschnitt über den
+gleichen Ordner wie dein Perl Skript kopiert werden. Der Abschnitt über den
 Test eines Beispiels vermittelt mehr Details darüber.
 
 

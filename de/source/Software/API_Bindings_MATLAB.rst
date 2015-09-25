@@ -7,7 +7,7 @@ MATLAB/Octave - API Bindings
 ============================
 
 Die MATLAB/Octave Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
-:ref:`Bricklets <primer_bricklets>` aus selbst erstellen MATLAB/Octave Programmen
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen MATLAB/Octave Skripten
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 

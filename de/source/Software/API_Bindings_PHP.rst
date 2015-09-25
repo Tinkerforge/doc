@@ -7,7 +7,7 @@ PHP - API Bindings
 ==================
 
 Die PHP Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
-:ref:`Bricklets <primer_bricklets>` aus selbst erstellen PHP Programmen
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen PHP Skripten
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
@@ -50,7 +50,7 @@ Ohne Installation
 
 Die Bindings müssen nicht unbedingt installiert werden. Stattdessen kann auch
 einfach der ``Tinkerforge/`` Ordner vom ``source/`` Ordner in den gleichen
-Ordner wie dein PHP Programm kopiert werden. Der Abschnitt über den Test eines
+Ordner wie dein PHP Skript kopiert werden. Der Abschnitt über den Test eines
 Beispiels vermittelt mehr Details darüber.
 
 

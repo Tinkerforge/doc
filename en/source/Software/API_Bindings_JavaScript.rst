@@ -7,7 +7,7 @@ JavaScript - API Bindings
 =========================
 
 The JavaScript bindings allow you to control :ref:`Bricks <primer_bricks>` and
-:ref:`Bricklets <primer_bricklets>` from your JavaScript programs. The
+:ref:`Bricklets <primer_bricklets>` from your JavaScript scripts. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
 * ``nodejs/tinkerforge.tgz``, a Node.js NPM package (installable with `npm
@@ -65,7 +65,7 @@ Without Installation
 
 You can use the JavaScript bindings for Node.js without having to install them.
 Just copy the ``Tinkerforge/`` folder and the ``Tinkerforge.js`` file from the
-``nodejs/source/`` folder in the same folder as your JavaScript program. The
+``nodejs/source/`` folder in the same folder as your JavaScript script. The
 section about testing an example has more details about this.
 
 HTML

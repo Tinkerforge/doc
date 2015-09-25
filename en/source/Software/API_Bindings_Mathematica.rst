@@ -7,7 +7,7 @@ Mathematica - API Bindings
 ==========================
 
 The Mathematica bindings allow you to control :ref:`Bricks <primer_bricks>` and
-:ref:`Bricklets <primer_bricklets>` from your Mathematica programs. The
+:ref:`Bricklets <primer_bricklets>` from your Mathematica notebooks. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
 * ``Tinkerforge.dll``, a precompiled .NET library

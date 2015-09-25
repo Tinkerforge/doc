@@ -7,7 +7,7 @@ Python - API Bindings
 =====================
 
 Die Python Bindings ermöglichen es :ref:`Bricks <primer_bricks>` und
-:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Python Programmen
+:ref:`Bricklets <primer_bricklets>` aus selbst erstellen Python Skripten
 heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
@@ -76,7 +76,7 @@ Ohne Installation
 
 Die Python Bindings müssen nicht unbedingt installiert werden. Stattdessen
 kann auch einfach der ``tinkerforge/`` Ordner vom ``source/`` Ordner in den
-gleichen Ordner wie dein Python Programm kopiert werden und Python wird die
+gleichen Ordner wie dein Python Skript kopiert werden und Python wird die
 Bindings automatisch finden. Der Abschnitt über den Test eines Beispiels
 vermittelt mehr Details darüber.
 

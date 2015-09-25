@@ -7,7 +7,7 @@ MATLAB/Octave - API Bindings
 ============================
 
 The MATLAB/Octave bindings allow you to control :ref:`Bricks <primer_bricks>`
-and :ref:`Bricklets <primer_bricklets>` from your MATLAB/Octave programs. The
+and :ref:`Bricklets <primer_bricklets>` from your MATLAB/Octave scripts. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
 * ``matlab/Tinkerforge.jar``, a precompiled Java library for MATLAB

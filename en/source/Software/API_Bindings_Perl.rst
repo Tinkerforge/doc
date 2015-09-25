@@ -7,7 +7,7 @@ Perl - API Bindings
 ===================
 
 The Perl bindings allow you to control :ref:`Bricks <primer_bricks>` and
-:ref:`Bricklets <primer_bricklets>` from your Perl programs. The
+:ref:`Bricklets <primer_bricklets>` from your Perl scripts. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
 * in ``source/`` the source code of the bindings (installable with
@@ -78,7 +78,7 @@ Without Installation
 
 You can use the bindings without having to install them. Just put the
 ``Tinkerforge/`` folder from ``source/lib/`` folder in the same folder as your
-Perl program. The section about testing an example has more details about this.
+Perl script. The section about testing an example has more details about this.
 
 
 Testing an Example

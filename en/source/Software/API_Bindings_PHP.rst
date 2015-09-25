@@ -7,7 +7,7 @@ PHP - API Bindings
 ==================
 
 The PHP bindings allow you to control :ref:`Bricks <primer_bricks>` and
-:ref:`Bricklets <primer_bricklets>` from your PHP programs. The
+:ref:`Bricklets <primer_bricklets>` from your PHP scripts. The
 :ref:`ZIP file <downloads_bindings_examples>` for the bindings contains:
 
 * ``Tinkerforge.tgz``, a PEAR package (installable with `pear
@@ -48,7 +48,7 @@ Without Installation
 
 You can use the bindings without having to install them. Just copy the
 ``Tinkerforge/`` folder from the ``source/`` folder in the same folder as your
-PHP program. The section about testing an example has more details about this.
+PHP script. The section about testing an example has more details about this.
 
 
 Testing an Example
