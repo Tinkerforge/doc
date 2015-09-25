@@ -135,7 +135,7 @@ Wenn alle RS485 Extensions konfiguriert sind kann das Gesamtsystem
 zusammengebaut werden. Verbinde die benötigten Bricks und Bricklets zu Stapeln.
 Der Master jedes Stapels muss der unterste Brick sein (außer ganz
 unten steckt eine Stromversorgung). Die RS485 Extension kann an einem beliebigen
-Platz oberhalb des Masters gesteckt werden. Verbinde nun die RS485 Extensions
+Platz oberhalb des Masters gesteckt werden. Verkabele nun die RS485 Extensions
 und setzen den Termination Schalter der ersten und letzten RS485 Extension am
 Bus auf "on".
 
@@ -145,7 +145,16 @@ Bus auf "on".
    :align: center
    :target: ../../_images/Extensions/extension_rs485_assembly.jpg
 
-Nachdem alles zusammen gesteckt ist kann das System gestartet werden. Dabei
+Wenn der Bus nur ein paar Meter lang ist spielt das verwendete Kabel
+normalerweise keine Rolle. Wenn der Bus länger als ein paar Meter ist, dann
+sollte eine Form von `Twisted Pair
+<https://de.wikipedia.org/wiki/Twisted-Pair-Kabel>`__ Kabel verwendet werden.
+Normales Telefonkabel hat häufig verdrillte Aderpaare. Noch besser ist
+Ethernetkabel, da es verdrillt und normalerweise auch geschirmt ist. Wenn
+ein Kabel mit verdrillten Aderpaaren verwendet wird, dann sollte für A und B
+ein Aderpaar verwendet werden und für GND eine anderes Aderpaar.
+
+Nachdem alles zusammengesteckt ist kann das System gestartet werden. Dabei
 müssen zuerst alle RS485 Slaves gestartet werden bevor der RS485 Master
 gestartet wird, da der RS485 Master nur direkt nach dem Start nach den Slaves
 sucht. Jetzt sollten alle Bricks und Bricklets des RS485 Buses im Brick Viewer
