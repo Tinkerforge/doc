@@ -311,7 +311,9 @@ the correct directory.
   on the RED Brick.
 * Start Mode: Currently only **Script File** is available as start mode.
 * Script File: Choose one of the script files that you added in step 2,
-  it will be executed by octave.
+  it will be executed by Octave. If you want to use one of our Octave example,
+  make sure to extend it to a :ref:`script file
+  <api_bindings_matlab_octave_function_vs_script_files>` first.
 * Working Directory: Specify the
   `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the

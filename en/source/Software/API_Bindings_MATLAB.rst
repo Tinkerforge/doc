@@ -168,6 +168,27 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
 Now you're ready to test the examples.
 
 
+.. _api_bindings_matlab_octave_function_vs_script_files:
+
+Function vs Script Files
+""""""""""""""""""""""""
+
+The Octave examples are `function files
+<https://www.gnu.org/software/octave/doc/interpreter/Function-Files.html>`__.
+To execute them directly from a terminal, they have to be extended to
+`script files
+<https://www.gnu.org/software/octave/doc/interpreter/Script-Files.html>`__.
+Just add a call to the example function at the end of the example:
+
+.. code-block:: octave
+
+  function octave_example_configuration()
+      % ...
+  end
+
+  octave_example_configuration(); % Add this line
+
+
 .. _api_bindings_matlab_known_problems:
 
 Known Problems

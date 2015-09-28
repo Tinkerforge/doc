@@ -174,6 +174,27 @@ Brick Viewer ermittelt werden:
 Dann ist auch schon alles bereit, um dieses Beispiel testen zu können.
 
 
+.. _api_bindings_matlab_octave_function_vs_script_files:
+
+Function vs Script Dateien
+""""""""""""""""""""""""""
+
+Die Octave Beispiel sind `Function Dateien
+<https://www.gnu.org/software/octave/doc/interpreter/Function-Files.html>`__.
+Um sie direkt von der Kommandozeile ausführen zu können, müssen sie zu
+`Script Dateien
+<https://www.gnu.org/software/octave/doc/interpreter/Script-Files.html>`__
+erweitert werden. Dazu einfach am Ende des Beispiels die Beispiel Funktion
+aufrufen:
+
+.. code-block:: octave
+
+  function octave_example_configuration()
+      % ...
+  end
+
+  octave_example_configuration(); % Add this line
+
 .. _api_bindings_matlab_known_problems:
 
 Bekannte Probleme

@@ -311,7 +311,9 @@ bereits mit dem korrekten Verzeichnis aufgerufen wurde.
   installiert.
 * Start Mode: Aktuell wird nur **Script File** unterstützt.
 * Script File: Es muss eine in Schritt 2 zuvor ausgewählte Datei gewählt werden,
-  die ausgeführt werden soll.
+  die ausgeführt werden soll. Falls eines unserer Octave Beispiele verwendet
+  werden soll, dann muss dieses erst zu einer :ref:`Script Datei
+  <api_bindings_matlab_octave_function_vs_script_files>` erweitert werden.
 * Working Directory: Spezifiziert das
   `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
