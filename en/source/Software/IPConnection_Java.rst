@@ -109,7 +109,9 @@ Basic Functions
 
  Enables or disables auto-reconnect. If auto-reconnect is enabled,
  the IP Connection will try to reconnect to the previously given
- host and port, if the connection is lost.
+ host and port, if the currently existing connection is lost.
+ Therefore, auto-reconnect only does something after a successful
+ :java:func:`connect() <IPConnection::connect>` call.
 
  Default value is *true*.
 

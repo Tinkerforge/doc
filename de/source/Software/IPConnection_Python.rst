@@ -139,7 +139,9 @@ Grundfunktionen
 
  Aktiviert oder deaktiviert Auto-Reconnect. Falls Auto-Reconnect aktiviert
  ist, versucht die IP Connection eine Verbindung zum vorher angegebenen Host
- und Port wieder herzustellen, falls die Verbindung verloren geht.
+ und Port wieder herzustellen, falls die aktuell bestehende Verbindung verloren
+ geht. Auto-Reconnect greift also erst nach einem erfolgreichen Aufruf von
+ :py:func:`connect() <IPConnection.connect>`.
 
  Standardwert ist *True*.
 
