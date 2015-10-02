@@ -103,7 +103,7 @@ After a successful installation the Brick should use a driver called
  This automatic driver installation can fail without
  your notice. If you don't see Bricks in the Brick Viewer, please check in
  the Windows "Device Manager" that the drivers for the connected Bricks are
- installed correctly. If not, please choose the ``drivers\brick`` folder in
+ installed correctly. If not, please choose the ``drivers\brick\win7`` folder in
  Brick Daemon installation and install the drivers manually.
 
 

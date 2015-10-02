@@ -107,7 +107,7 @@ getestet werden.
  fehlschlagen. Falls im Brick Viewer kein Brick angezeigt wird, kann im
  Gerätemanager nachgeschaut werden ob der korrekte Treiber installiert ist.
  Falls dies nicht der Fall ist, kann dort der falsche Treiber mit dem
- richtigen aus dem ``drivers\brick`` Verzeichnis vom Brickd manuell
+ richtigen aus dem ``drivers\brick\win7`` Verzeichnis vom Brickd manuell
  überschrieben werden.
 
 
