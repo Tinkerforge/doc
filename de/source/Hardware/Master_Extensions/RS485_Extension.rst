@@ -11,18 +11,18 @@ RS485 Extension
 
 	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
 	{{
-	    tfdocstart("Extensions/extension_rs485_tilted_350.jpg",
-	               "Extensions/extension_rs485_tilted_600.jpg",
+	    tfdocstart("Extensions/extension_rs485_v11_tilted_350.jpg",
+	               "Extensions/extension_rs485_v11_tilted_600.jpg",
 	               "RS485 Extension")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_rs485_top_100.jpg",
-	             "Extensions/extension_rs485_top_600.jpg",
+	    tfdocimg("Extensions/extension_rs485_v11_top_100.jpg",
+	             "Extensions/extension_rs485_v11_top_600.jpg",
 	             "RS485 Extension Oberseite")
 	}}
 	{{
-	    tfdocimg("Extensions/extension_rs485_bottom_100.jpg",
-	             "Extensions/extension_rs485_bottom_600.jpg",
+	    tfdocimg("Extensions/extension_rs485_v11_bottom_100.jpg",
+	             "Extensions/extension_rs485_v11_bottom_600.jpg",
 	             "RS485 Extension Unterseite")
 	}}
 	{{ tfdocend() }}
@@ -105,11 +105,11 @@ Anschlussmöglichkeit
 
 Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit der RS485 Extension.
 
-.. image:: /Images/Extensions/extension_rs485_caption_600.jpg
+.. image:: /Images/Extensions/extension_rs485_v11_caption_600.jpg
    :scale: 100 %
    :alt: RS485 Extension mit Beschriftung
    :align: center
-   :target: ../../_images/Extensions/extension_rs485_caption_800.jpg
+   :target: ../../_images/Extensions/extension_rs485_v11_caption_800.jpg
 
 
 RS485 Busaufbau
