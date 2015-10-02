@@ -1,11 +1,11 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Ethernet Extension
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Ethernet Master Extension
 :shoplink: ../../../shop/master-extensions/ethernet-master-extension.html
 
 .. _ethernet_extension:
 
-Ethernet Extension
-==================
+Ethernet Master Extension
+=========================
 
 .. raw:: html
 

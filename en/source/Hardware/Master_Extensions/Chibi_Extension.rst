@@ -1,10 +1,10 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Chibi Extension
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Chibi Master Extension
 
 .. _chibi_extension:
 
-Chibi Extension
-===============
+Chibi Master Extension
+======================
 
 .. raw:: html
 

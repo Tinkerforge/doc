@@ -1,11 +1,11 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / WIFI Extension
+:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / WIFI Master Extension
 :shoplink: ../../../shop/master-extensions/wifi-master-extension.html
 
 .. _wifi_extension:
 
-WIFI Extension
-==============
+WIFI Master Extension
+=====================
 
 .. raw:: html
 
