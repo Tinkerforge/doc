@@ -8,8 +8,8 @@ Brick Logger
 
 Der Brick Logger kann Sensordaten von Bricks und Bricklets sammeln und in einer
 `CSV <https://de.wikipedia.org/wiki/CSV_(Dateiformat)>`__ Datei zu späteren
-Auswertung speichern. Welche Daten von welchen Bricklets in welchem Intervall
-und mit welchen Einstellungen gesammelt werden soll kann individuell
+Auswertung speichern. Welche Daten, von welchen Bricklets, in welchem Intervall
+und mit welchen Einstellungen gesammelt werden soll, kann individuell
 eingestellt werden.
 
 Der Brick Logger ist seit Version 2.3.0 Teil von Brick Viewer und kann mit dem
@@ -40,9 +40,9 @@ wenn die entsprechenden Häkchen gesetzt sind.
    :align: center
    :target: ../_images/Screenshots/brick_logger_devices.jpg
 
-Auf dem "Devices" Tab kann eingestellt werden welche Sensordaten gesammelt
+Auf dem "Devices" Tab kann eingestellt werden, welche Sensordaten gesammelt
 werden sollen. Als erstes muss die UID des Bricks oder Bricklets angegeben
-werden. Der "Add Device" Dialog schlägt verbundenen Geräte samt UID vor.
+werden. Der "Add Device" Dialog schlägt verbundenen Geräte, samt UID vor.
 
 Jedes unterstützte Gerät bietet mindestens einen Sensorwert im "Values"
 Abschnitt an, der geloggt werden kann. Standardmäßig ist das Intervall für alle
@@ -51,7 +51,7 @@ nicht geloggt werden wird. Bei einem Intervall von X Sekunden (mit X größer
 als 0) wird der entsprechende Sensorwert alle X Sekunden abgefragt und
 aufgezeichnet.
 
-Wenn ein Gerät Optionen hat, dann werden diesem im "Options" Abschnitt
+Wenn ein Gerät Optionen besitzt, dann werden diesem im "Options" Abschnitt
 aufgelistet. Der Brick Logger kümmert sich automatisch darum, die
 eingestellten Options vorzunehmen.
 
@@ -87,7 +87,7 @@ Der Brick Logger ist auch als `vorkonfiguriertes RED Brick Program
 verfügbar. Siehe die :ref:`RED Brick Dokumentation
 <red_brick_brickv_import_export_tab>` für Details.
 
-Nach dem Import des Programs muss noch die Konfiguration als ``config.json``
+Nach dem Import des Programs muss die Konfiguration als ``config.json``
 zum Program hochgeladen werden. Dabei muss die existierende Konfigurationsdatei
 ersetzt werden. Nach erfolgreichem Upload muss der Brick Logger über den "Exit"
 Knopf des Programs im Brick Viewer beendet werden. Der RED Brick startet den
