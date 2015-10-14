@@ -69,7 +69,8 @@ as single `Python script
 <http://download.tinkerforge.com/tools/brick_logger/brick_logger_latest.zip>`__.
 To use it you need to install the :ref:`Python API bindings
 <api_bindings_python>` and create and save a configuration in Brick Viewer.
-Then you can run it like this (``config.json`` is your saved configuration):
+Then you can run it like this (``config.json`` is your manually saved
+configuration):
 
 .. code-block:: bash
 

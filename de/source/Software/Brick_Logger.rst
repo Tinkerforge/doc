@@ -73,7 +73,7 @@ steht der Brick Logger auch einzeln als `Python Skript
 zur Verfügung. Um es verwenden zu können, müssen die :ref:`Python API Bindings
 <api_bindings_python>` installiert werden und in Brick Viewer eine Konfiguration
 erstellt und gespeichert werden. Dann kann der Brick Logger so gestartet werden
-(``config.json`` ist die gespeicherte Konfiguration):
+(``config.json`` ist eine zuvor händisch gespeicherte Konfiguration):
 
 .. code-block:: bash
 
