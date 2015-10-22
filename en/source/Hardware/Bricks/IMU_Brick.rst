@@ -1,6 +1,5 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / IMU Brick
-:shoplink: ../../../shop/bricks/imu-brick.html
 
 .. include:: IMU_Brick.substitutions
 
@@ -44,6 +43,11 @@ IMU Brick
                  "Outline and drilling plan")
     }}
     {{ tfdocend() }}
+
+.. note::
+
+ The IMU Brick is discontinued and is no longer sold. The
+ :ref:`IMU Brick 2.0 <imu_v2_brick>` is the recommended replacement.
 
 
 Features

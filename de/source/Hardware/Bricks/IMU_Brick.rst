@@ -1,6 +1,5 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / IMU Brick
-:shoplink: ../../../shop/bricks/imu-brick.html
 
 .. include:: IMU_Brick.substitutions
 
@@ -49,6 +48,11 @@ IMU Brick
                  "Umriss und Bohrplan")
     }}
     {{ tfdocend() }}
+
+.. note::
+
+ Der IMU Brick ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird der :ref:`IMU Brick 2.0 <imu_v2_brick>` empfohlen.
 
 
 Features
