@@ -20,25 +20,49 @@ und auch ausgeführt werden. Es gibt auch eine :ref:`Standalone Version
 Konfiguration
 -------------
 
-.. image:: /Images/Screenshots/brick_logger_setup.jpg
+.. image:: /Images/Screenshots/brick_logger_setup_v2_small.jpg
    :scale: 100 %
    :alt: Brick Logger (Setup Tab)
    :align: center
-   :target: ../_images/Screenshots/brick_logger_setup.jpg
+   :target: ../_images/Screenshots/brick_logger_setup_v2.jpg
 
 Alle gesammelten Sensordaten und Debug-Nachrichten sind mit einem Zeitstempel
-versehen. Das Format diese Zeitstempels kann eingestellt werden.
+versehen. Das Format diese Zeitstempels kann eingestellt werden. Der Brick
+Logger bietet verschiedenen Format zur Auswahl:
+
+* **DD.MM.YYYY HH:MM:SS** ist ein typisches deutsches Format, dass automatisch
+  von LibreOffice und Microsoft Office verstanden wird.
+* **DD.MM.YYYY HH:MM:SS,000** ist das gleiche deutsche Format, aber mit
+  Millisekundenauflösung.
+* **MM/DD/YYYY HH:MM:SS** ist ein typisches US-englisches Format, dass
+  automatisch von LibreOffice und Microsoft Office verstanden wird.
+* **MM/DD/YYYY HH:MM:SS.000** ist das gleiche US-englische Format, aber mit
+  Millisekundenauflösung.
+* **ISO 8601** folgt dem `ISO 8601 <https://de.wikipedia.org/wiki/ISO_8601>`__
+  Standard for die Darstellung von Datum und Uhrzeit.
+* **ISO 8601 + Milliseconds** folgt auch dem ISO 8601 Standard, aber mit
+  Millisekundenauflösung.
+* **Unix** `zählt die Sekunden, die seit 1970-01-01T00:00:00Z vergangen sind
+  <https://de.wikipedia.org/wiki/Unixzeit>`__.
+* **Unix + Milliseconds** zählt auch Sekunden, aber mit Millisekundenauflösung.
+* **strftime** ermöglich es ein eigenes Zeitstempelformat mit Pythons `strftime
+  <https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior>`__
+  Syntax zu definieren.
+
+Wenn nicht klar ist, welches Format hier am besten ausgewählt werden sollte,
+dann empfehlen wir entweder **DD.MM.YYYY HH:MM:SS** oder **MM/DD/YYYY HH:MM:SS**
+auszuwählen.
 
 Standardmäßig werden die Sensordaten und Debug-Nachrichten nur auf den "Data"
 und "Debug" Tabs angezeigt. Diese Tabs zeigen jeweils die letzten 1000 Einträge
 an. Zusätzlich werden die Daten und Nachrichten auch in Dateien geschrieben,
 wenn die entsprechenden Häkchen gesetzt sind.
 
-.. image:: /Images/Screenshots/brick_logger_devices.jpg
+.. image:: /Images/Screenshots/brick_logger_devices_v2.jpg
    :scale: 100 %
    :alt: Brick Logger (Devices Tab)
    :align: center
-   :target: ../_images/Screenshots/brick_logger_devices.jpg
+   :target: ../_images/Screenshots/brick_logger_devices_v2.jpg
 
 Auf dem "Devices" Tab kann eingestellt werden, welche Sensordaten gesammelt
 werden sollen. Als erstes muss die UID des Bricks oder Bricklets angegeben
@@ -46,10 +70,12 @@ werden. Der "Add Device" Dialog schlägt verbundenen Geräte, samt UID vor.
 
 Jedes unterstützte Gerät bietet mindestens einen Sensorwert im "Values"
 Abschnitt an, der geloggt werden kann. Standardmäßig ist das Intervall für alle
-Sensorwerte auf 0 Sekunden eingestellt. Dies bedeutet, dass dieser Sensorwert
-nicht geloggt werden wird. Bei einem Intervall von X Sekunden (mit X größer
-als 0) wird der entsprechende Sensorwert alle X Sekunden abgefragt und
-aufgezeichnet.
+Sensorwerte auf 0 eingestellt. Dies bedeutet, dass dieser Sensorwert
+nicht geloggt werden wird. Bei einem Intervall von X Sekunden oder Millisekunden
+(mit X größer als 0) wird der entsprechende Sensorwert alle X Sekunden oder
+Millisekunden abgefragt und aufgezeichnet. Wenn ein Intervall in Millisekunden
+eingestellt wird sollte auch ein Zeitstempelformat mit Millisekundenauflösung
+auf dem "Setup" Tab ausgewählt werden.
 
 Wenn ein Gerät Optionen besitzt, dann werden diesem im "Options" Abschnitt
 aufgelistet. Der Brick Logger kümmert sich automatisch darum, die

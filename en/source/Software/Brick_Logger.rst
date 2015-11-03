@@ -19,35 +19,60 @@ executed from a terminal.
 Configuration
 -------------
 
-.. image:: /Images/Screenshots/brick_logger_setup.jpg
+.. image:: /Images/Screenshots/brick_logger_setup_v2_small.jpg
    :scale: 100 %
    :alt: Brick Logger (Setup Tab)
    :align: center
-   :target: ../_images/Screenshots/brick_logger_setup.jpg
+   :target: ../_images/Screenshots/brick_logger_setup_v2.jpg
 
 All logged sensor data and debug messages are timestamped. The time format can
-be configured.
+be configured. The Brick Logger offers different presets:
+
+* **DD.MM.YYYY HH:MM:SS** is a typical German time format that is automatically
+  recognized by LibreOffice and Microsoft Office.
+* **DD.MM.YYYY HH:MM:SS,000** is the same German time format but with
+  millisecond resolution.
+* **MM/DD/YYYY HH:MM:SS** is a typical US-English time format that is
+  automatically recognized by LibreOffice and Microsoft Office.
+* **MM/DD/YYYY HH:MM:SS.000** is the same US-English time format but with
+  millisecond resolution.
+* **ISO 8601** follows the `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`__
+  standard for representing dates and times.
+* **ISO 8601 + Milliseconds** also follows the ISO 8601 standard but with
+  millisecond resolution.
+* **Unix** `counts the number of seconds that have elapsed since
+  1970-01-01T00:00:00Z <https://en.wikipedia.org/wiki/Unix_time>`__.
+* **Unix + Milliseconds** also counts the number of seconds but with
+  millisecond resolution.
+* **strftime** lets you specify your own time format using the Python `strftime
+  <https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior>`__
+  syntax.
+
+If you are unsure what to choose here then use either **DD.MM.YYYY HH:MM:SS** or
+**MM/DD/YYYY HH:MM:SS**.
 
 By default the sensor data and debug messages are only shown on the "Data" and
 "Debug" tabs. Those tabs only show the latest 1000 entries. Additionally, the
 data and messages will also be written to files if the corresponding check
 boxes are activated.
 
-.. image:: /Images/Screenshots/brick_logger_devices.jpg
+.. image:: /Images/Screenshots/brick_logger_devices_v2.jpg
    :scale: 100 %
    :alt: Brick Logger (Devices Tab)
    :align: center
-   :target: ../_images/Screenshots/brick_logger_devices.jpg
+   :target: ../_images/Screenshots/brick_logger_devices_v2.jpg
 
 The "Devices" tab allows to configure which sensor data should be collected and
 how. First, the UID of the Brick or Bricklet has to be configured. The
 "Add Device" dialog will suggest connected devices including their UID.
 
 Each supported device provides at least one loggable sensor value listed in the
-"Values" section. By default the interval for each sensor value is set to 0
-seconds, which means that the value will not be logged. If the interval is set
-to X (with X larger than 0) then the corresponding sensor value is logged every
-X seconds.
+"Values" section. By default the interval for each sensor value is set to 0,
+which means that the value will not be logged. If the interval is set
+to X seconds or milliseconds (with X larger than 0) then the corresponding
+sensor value is logged every X seconds or milliseconds. If you configure an
+interval in milliseconds then also make sure to choose a time format with
+millisecond resolution on the "Setup" tab.
 
 If the device has options then those are listed in the "Options" section. The
 Brick Logger automatically takes care of applying the selected options.
