@@ -142,11 +142,11 @@ Signal +       IN+              grün, blau
 Signal -       IN-              weiss
 ============== ================ ================================================
 
-Wenn die Wägezelle entsprechend des angebrachten Pfeils belastet wird dann
-sollte ein positives Gewicht gemessen werden. Falls ein negatives Gewicht
-gemessen wird müssen die Drähten an den IN+ und IN- Anschlussklemmen vertauscht
-werden.
-
+Plugin Version 2.0.0 für das Load Cell Bricklet hatte eine Fehler, der zu
+invertierten Gewichtsangaben geführt hat. Um dieses Problem zu vermeiden konnte
+die Drähten an den IN+ und IN- Anschlussklemmen vertauscht werden. Dieser Fehler
+wurde in Version 2.0.1 korrigiert, so dass jetzt die Signaldrähte entsprechend
+der obigen Tabelle angeschlossen werden können.
 
 .. _load_cell_bricklet_test:
 

@@ -139,10 +139,10 @@ Signal +       IN+              green, blue
 Signal -       IN-              white
 ============== ================ ================================================
 
-If you put weight onto the load cell on the end with the arrow facing down you
-should get a positive weight reading. If you get a negative weight reading then
-you need to switch the signal wires connected to the IN+ and IN- terminals.
-
+Plugin version 2.0.0 for the Load Cell Bricklet had a bug that resulted in
+inverted weight measurements. To avoid this you could swap the signal wires
+connected to the IN+ and IN- terminals. This bug was fixed in version 2.0.1 and
+the signal wires can be connected according to the table above now.
 
 .. _load_cell_bricklet_test:
 
