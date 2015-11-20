@@ -120,7 +120,7 @@ Weight                            18g
 Resources
 ---------
 
-* GS1011MEES Homepage (`here <http://www.gainspan.com/gs1011mees>`__)
+* GS1011MEES Homepage (`here <http://www.gainspan.com/gs1011mepsgs1011mees>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/wifi-extension/raw/master/hardware/wifi-extension-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/wifi-extension/zipball/master>`__)
