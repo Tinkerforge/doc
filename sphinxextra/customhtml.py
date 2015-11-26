@@ -16,7 +16,7 @@ class CustomHTMLTranslator(BaseTranslator):
     def visit_desc_parameterlist(self, node):
         if '.mathematicadomain.' in str(node.__class__):
             self.body.append('[')
-        elif '.shelldomain.' not in str(node.__class__):
+        elif '.shelldomain.' not in str(node.__class__) and '.tvpldomain.' not in str(node.__class__):
             self.body.append('<big>(</big>')
 
         self.first_param = 1
@@ -29,7 +29,7 @@ class CustomHTMLTranslator(BaseTranslator):
     def depart_desc_parameterlist(self, node):
         if '.mathematicadomain.' in str(node.__class__):
             self.body.append(']')
-        elif '.shelldomain.' not in str(node.__class__):
+        elif '.shelldomain.' not in str(node.__class__) and '.tvpldomain.' not in str(node.__class__):
             self.body.append('<big>)</big>')
 
     def visit_emphasis(self, node):

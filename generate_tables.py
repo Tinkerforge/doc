@@ -71,6 +71,9 @@ bindings_infos = \
     BindingsInfo('Shell', 'shell', 'Shell', True, True,
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
+    BindingsInfo('Tinkerforge Visual Programming Language (TVPL)', 'tvpl', 'TVPL', True, False,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
     BindingsInfo('Visual Basic .NET', 'vbnet', 'VBNET', True, True,
                  {'en': 'http://howtostartprogramming.com/vb-net/',
                   'de': 'http://howtostartprogramming.com/vb-net/'}), # http://openbook.galileocomputing.de/vb_net/index.htm

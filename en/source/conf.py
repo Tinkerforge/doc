@@ -38,6 +38,7 @@ extensions = ['sphinx.ext.pngmath',
               'sphinxextra.rubydomain',
               'sphinxextra.shelldomain',
               'sphinxextra.tcpipdomain',
+              'sphinxextra.tvpldomain',
               'sphinxextra.vbnetdomain',
               'sphinxcontrib.spelling']
 
