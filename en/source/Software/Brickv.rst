@@ -147,11 +147,12 @@ listed try clicking "Refresh". If still no serial port shows up ensure that
 your Brick is in bootloader mode and that it is correctly recognized by your
 operating system:
 
-* On **Windows** you might need to install Atmel driver ``atm6124_cdc.inf`` from
-  the drivers subfolder in the Brick Viewer installation folder to make Windows
-  detect a Brick in bootloader mode correctly. Windows 7 and 8 typically auto
-  detect a Brick as "GPS Camera Detect" serial device. This works as well, just
-  select "GPS Camera Detect" as serial port in Brick Viewer.
+* On **Windows** XP and Vista you might need to install Atmel driver
+  ``atm6124_cdc.inf`` from the drivers subfolder in the Brick Viewer
+  installation folder to make Windows detect a Brick in bootloader mode
+  correctly. Windows 7, 8, 8.1 and 10 autodetect a Brick as "GPS Camera Detect"
+  or "Bossa Program Port" serial device. This works as well, just select
+  "GPS Camera Detect" or "Bossa Program Port" as serial port in Brick Viewer.
 
 * If you have an **old Linux** kernel version you might need to install this
   `SAM-BA Linux USB kernel driver
@@ -163,7 +164,8 @@ operating system:
 
 Select the correct serial port, typically named as follows:
 
-* Windows: "AT91 USB to Serial Converter" or "GPS Camera Detect"
+* Windows: "AT91 USB to Serial Converter" or "GPS Camera Detect" or
+  "Bossa Program Port"
 * Linux: ``/dev/ttyACM0`` or ``/dev/ttyUSB0``
 * Mac OS X: ``/dev/tty.usbmodemfd131``
 

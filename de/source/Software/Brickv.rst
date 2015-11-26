@@ -151,12 +151,13 @@ der Brick nicht als serielle Schnittstelle auftaucht, befindet sich der Brick
 entweder nicht im Bootloader Modus, oder das Betriebssystem hat ihn nicht
 richtig als serielle Schnittstelle erkannt:
 
-* Auf **Windows** kann es nötig sein den Atmel Treiber ``atm6124_cdc.inf`` aus
-  dem ``drivers`` Unterordner der Brick Viewer Installation zu installieren,
-  damit ein Brick im Bootloader Modus richtig als serielle Schnittstelle
-  erkannt wird. Windows 7 und 8 erkennt einen Brick im Bootloader Modus von
-  sich aus als "GPS Camera  Detect" Gerät. Dies ist auch eine serielle
-  Schnittstelle so das Flashen dennoch möglich ist.
+* Auf **Windows** XP und Vista kann es nötig sein den Atmel Treiber
+  ``atm6124_cdc.inf`` aus dem ``drivers`` Unterordner der Brick Viewer
+  Installation zu installieren, damit ein Brick im Bootloader Modus richtig
+  als serielle Schnittstelle erkannt wird. Windows 7, 8, 8.1 und 10 erkennt
+  einen Brick im Bootloader Modus von sich aus als "GPS Camera  Detect" oder
+  "Bossa Program Port" Gerät. Dies ist auch eine serielle Schnittstelle so
+  das Flashen dennoch möglich ist.
 
 * Für **alte Linux** Kernel Versionen kann es notwendig sein diesen
   `SAM-BA Linux USB Kernel Treiber
@@ -170,7 +171,8 @@ richtig als serielle Schnittstelle erkannt:
 Wird die serielle Schnittstelle des Bricks richtig erkannt muss diese nun im
 Brick Viewer ausgewählt werden, typische Namen sind:
 
-* Windows: "AT91 USB to Serial Converter" oder "GPS Camera Detect"
+* Windows: "AT91 USB to Serial Converter" oder "GPS Camera Detect" oder
+  "Bossa Program Port"
 * Linux: ``/dev/ttyACM0`` oder ``/dev/ttyUSB0``
 * Mac OS X: ``/dev/tty.usbmodemfd131``
 
