@@ -68,25 +68,25 @@ Description
 
 The IMU :ref:`Brick <primer_bricks>` is equipped with a 3-axis 
 accelerometer, magnetometer (compass) and gyroscope and works as a **USB**
-`inertial measurement unit <http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
+`inertial measurement unit <https://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
 It can measure 9 degrees of freedom and computes
-`quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
+`quaternions <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
 as well as `roll, pitch and yaw
-<http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ information.
+<https://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ information.
 It is a complete `attitude and heading reference system
-<http://en.wikipedia.org/wiki/AHRS>`__.
+<https://en.wikipedia.org/wiki/AHRS>`__.
 
 The API, provided for many :ref:`programming languages <imu_brick_programming_interface>`,
 allows access to the calculated data and also the acceleration, magnetic field 
 and angular velocity of the three axes. If the quaternion representation is 
 used, the IMU Brick does not have a 
-`gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__,
+`gimbal lock <https://en.wikipedia.org/wiki/Gimbal_lock>`__,
 as known from Euler angles.
 
 Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the 
 features of this Brick. For Example a :ref:`GPS Bricklet <gps_bricklet>` can be
 attached to get position information. 
-A `Youtube video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__ shows, how the
+A `Youtube video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__ shows, how the
 Brick can be used together with a :ref:`Barometer Bricklet <barometer_bricklet>` 
 to gain altitude information.
 
@@ -213,17 +213,17 @@ Calibration" button, that automatically downloads and imports the factory
 calibration for you.
 
 A video how we calibrate the IMU Bricks can be found:
-`here <http://www.youtube.com/watch?v=JckgemCHvCA>`__.
+`here <https://www.youtube.com/watch?v=JckgemCHvCA>`__.
 
 
 Quaternions vs Euler Angles
 ---------------------------
 
 We highly recommend that you use
-`quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
+`quaternions <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
 in your project rather than Euler angles (`yaw, pitch and roll
-<http://en.wikipedia.org/wiki/Yaw,_pitch,_and_roll>`__), since the latter
-exhibits a `gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__.
+<https://en.wikipedia.org/wiki/Yaw,_pitch,_and_roll>`__), since the latter
+exhibits a `gimbal lock <https://en.wikipedia.org/wiki/Gimbal_lock>`__.
 
 A formula to transform quaternions to rotation matrices can be found in the
 API documentation. Note that Euler angles always have an order in which they
@@ -331,7 +331,7 @@ magnetic field), it is possible to apply sensor fusion to acquire an absolute
 orientation.
 
 For this process often a
-`Kalman Filter <http://en.wikipedia.org/wiki/Kalman_filter>`__ is used.
+`Kalman Filter <https://en.wikipedia.org/wiki/Kalman_filter>`__ is used.
 The filter that is used in the IMU Brick is based on
 `this paper <http://www.x-io.co.uk/res/doc/madgwick_internal_report.pdf>`__
 by `S. O. Madgwick <http://www.x-io.co.uk/open-source-imu-and-ahrs-algorithms/>`__.

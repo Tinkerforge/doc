@@ -67,13 +67,13 @@ Beschreibung
 ------------
 
 Das Temperature IR :ref:`Bricklet <primer_bricklets>` ist mit einem
-`Infrarot Thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`__
+`Infrarot Thermometer <https://en.wikipedia.org/wiki/Infrared_thermometer>`__
 ausgestattet. Es kann die Funktionen von :ref:`Bricks <primer_bricks>`, mit der 
 Möglichkeit kontaktlos Temperatur zu messen, erweitern.
 
 Es ist möglich Objekt- und Umgebungstemperatur in `°C
-<http://en.wikipedia.org/wiki/Degree_Celsius>`__ zu messen. Dabei kann die
-`Emissivität <http://de.wikipedia.org/wiki/Emissionsgrad>`__ des zu messenden
+<https://en.wikipedia.org/wiki/Degree_Celsius>`__ zu messen. Dabei kann die
+`Emissivität <https://de.wikipedia.org/wiki/Emissionsgrad>`__ des zu messenden
 Objekts eingestellt werden (die meisten Infrarot Thermometer können dies
 nicht). Zusätzlich ist es möglich Events zu konfigurieren die ausgelöst werden
 wenn eine bestimmte Temperatur über- oder unterschritten wird.

@@ -74,26 +74,26 @@ Beschreibung
 Der IMU :ref:`Brick <primer_bricks>` ist mit je einem 3-Achsen
 Beschleunigungssensor, Magnetfeldsensor (Kompass) und Gyroskop ausgestattet und
 arbeitet als **USB** 
-`Inertialsensor <http://de.wikipedia.org/wiki/Inertialsensor>`__.
+`Inertialsensor <https://de.wikipedia.org/wiki/Inertialsensor>`__.
 Dieser kann 9 Freiheitsgrade messen und berechnet
-`Quaternionen <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
+`Quaternionen <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
 sowie auch `Roll-, Nick- und Gier-Winkel
-<http://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__. Es ist ein vollständiges
+<https://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__. Es ist ein vollständiges
 `Attitude and Heading Reference System
-<http://de.wikipedia.org/wiki/Attitude_Heading_Reference_System>`__.
+<https://de.wikipedia.org/wiki/Attitude_Heading_Reference_System>`__.
 
 Die API, verfügbar für 
 :ref:`viele Programmiersprachen <imu_brick_programming_interface>`, erlaubt den 
 Zugriff auf die berechneten Daten sowie auf die Beschleunigung, Magnetfeld und 
 Winkelgeschwindigkeiten für die drei Achsen. Wenn die Quaternionen-Darstellung 
 benutzt wird, ist der IMU Brick 
-`Gimbal Lock <http://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei (im Gegensatz 
+`Gimbal Lock <https://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei (im Gegensatz
 zur Euler-Winkel Darstellung).
 
 Über zwei Anschlüsse können :ref:`Bricklets <primer_bricklets>` 
 angeschlossen werden, die die Fähigkeiten des Bricks erweitern. Als Beispiel 
 kann ein :ref:`gps_bricklet` angeschlossen werden um Positionsdaten zu
-ermitteln. Ein `Youtube Video <http://www.youtube.com/watch?v=TaqtzG7lyp0>`__
+ermitteln. Ein `Youtube Video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__
 zeigt, wie der Brick zusammen mit einem :ref:`Barometer Bricklet
 <barometer_bricklet>` genutzt werden kann um die Höhe zu bestimmen.
 
@@ -225,17 +225,17 @@ Knopf verwendet werden. Dadurch wird die entsprechende Werkskalibrierung
 automatisch heruntergeladen und importiert.
 
 Ein Video, das zeigt wie wir die IMU Bricks kalibieren gibt es auf
-`Youtube <http://www.youtube.com/watch?v=JckgemCHvCA>`__.
+`Youtube <https://www.youtube.com/watch?v=JckgemCHvCA>`__.
 
 
 Quaternionen vs Eulerwinkel
 ---------------------------
 
 Wir empfehlen
-`Quaternion <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
+`Quaternion <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
 anstatt Eulerwinkel (`Roll-, Nick- und Gier-Winkel
-<http://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__) zu verwenden, da die
-letzteren einen `Gimbal Lock <http://de.wikipedia.org/wiki/Gimbal_Lock>`__
+<https://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__) zu verwenden, da die
+letzteren einen `Gimbal Lock <https://de.wikipedia.org/wiki/Gimbal_Lock>`__
 erleiden können.
 
 Eine Formel um eine Quaternion in eine Rotationsmatrix umzurechnen findet sich
@@ -338,7 +338,7 @@ Paul Balzer von MechLab Engineering hat zusätzlich
 `Code auf GitHub <https://github.com/MechLabEngineering/TinkerforgeAttitude>`__
 bereit gestellt der die Quaternionen in das Fahrzeugkoordinatensystem nach
 DIN70000 umwandelt. Insbesondere wird dort durchgängig ein
-`rechtshändiges Koordinatensystem <http://de.wikipedia.org/wiki/Rechtssystem_(Mathematik)>`__
+`rechtshändiges Koordinatensystem <https://de.wikipedia.org/wiki/Rechtssystem_(Mathematik)>`__
 verwendet. Mehr Informationen dazu gibt es im 
 `Blog von MachLab Engineering <http://mechlab-engineering.de/2014/03/tinkerforge-imu-zur-lageerkennung-von-fahrzeugen/>`__.
 
@@ -350,7 +350,7 @@ Beschleunigung und Magnetfeld) ist es möglich Sensorfusion zu betreiben, um ein
 absolute Orientierung im Raum zu ermitteln.
 
 Häufig wird für diesen Berechnungsprozess ein
-`Kalman Filter <http://de.wikipedia.org/wiki/Kalman-Filter>`__ verwendet.
+`Kalman Filter <https://de.wikipedia.org/wiki/Kalman-Filter>`__ verwendet.
 Der IMU Brick verwendet allerdings einen Filter der auf
 `diesem Paper <http://www.x-io.co.uk/res/doc/madgwick_internal_report.pdf>`__
 von `S. O. Madgwick <http://www.x-io.co.uk/open-source-imu-and-ahrs-algorithms/>`__

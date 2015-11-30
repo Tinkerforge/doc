@@ -162,7 +162,7 @@ Bricklets verfügen über keinen eigenen Prozessor, verfügen aber über eine ei
 API. Aus Sicht des Programmierers werden sie wie eigenständige Module behandelt. 
 Beim Start erkennt ein Brick die angeschlossenen Bricklets. Die Bricklet Plugins 
 sind auf einem 
-`EEPROM <http://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
+`EEPROM <https://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
 auf dem Bricklet gespeichert und werden zur Ausführung in den Flash des Bricks
 geladen. Nach diesem Vorgang verarbeitet das Brick die API Aufrufe seiner 
 angeschlossenen Bricklets und steuert die Bricklets.

@@ -81,7 +81,8 @@ Features
 
   * |bindings|
 
-* Open Source Soft- und Hardware mit `Nagios <http://www.nagios.org/>`__ und `Icinga <https://www.icinga.org/>`__ Unterstützung
+* Open Source Soft- und Hardware mit `Nagios <https://www.nagios.org/>`__ und
+  `Icinga <https://www.icinga.org/>`__ Unterstützung
 
 Beschreibung
 ------------
@@ -181,10 +182,10 @@ Ressourcen
 ----------
 
 * Serverraum-Überwachung Kit Gehäuse FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/server-room-monitoring/tree/master/case>`__)
-* Beispielquelltext für :ref:`Einfaches Monitoring <starter_kit_server_room_monitoring_simple_monitoring>` (Download: `Shell <https://github.com/Tinkerforge/server-room-monitoring/tree/master/simple_monitoring/check_tf_temp_simple.sh>`__)
-* Beispielquelltext für :ref:`Nagios/Icinga Plugin <starter_kit_server_room_monitoring_nagios_or_icinga_index>` (Download: `Python <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp.py>`__)
-* Beispielquelltext für :ref:`Nagios/Icinga Extended Plugin <starter_kit_server_room_monitoring_extended_nagios_index>` (Download: `Python <https://github.com/Tinkerforge/server-room-monitoring/tree/master/nagios_icinga/check_tf_temp_ext.py>`__)
-* Beispielquelltext für :ref:`Sensordaten an Xively übertragen <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>` (Download: `Python <https://github.com/Tinkerforge/server-room-monitoring/tree/master/xively/server_room_monitoring.py>`__)
+* Beispielquelltext für :ref:`Einfaches Monitoring <starter_kit_server_room_monitoring_simple_monitoring>` (Download: `Shell <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/simple_monitoring/check_tf_temp_simple.sh>`__)
+* Beispielquelltext für :ref:`Nagios/Icinga Plugin <starter_kit_server_room_monitoring_nagios_or_icinga_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
+* Beispielquelltext für :ref:`Nagios/Icinga Extended Plugin <starter_kit_server_room_monitoring_extended_nagios_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp_ext.py>`__)
+* Beispielquelltext für :ref:`Sensordaten an Xively übertragen <starter_kit_server_room_monitoring_upload_sensor_data_to_xively_index>` (Download: `Python <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/xively/server_room_monitoring.py>`__)
 
 Erste Tests, Firmware-Aktualisierung und Konfiguration
 ------------------------------------------------------
@@ -377,7 +378,7 @@ weitere Benutzung gespeichert werden kann.
 Serverraum-Überwachung mit Nagios oder Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Icinga <https://www.icinga.org/>`__ und `Nagios <http://www.nagios.org/>`__ 
+`Icinga <https://www.icinga.org/>`__ und `Nagios <https://www.nagios.org/>`__
 sind Computer Überwachungswerkzeuge. Icinga ist ein Fork von Nagios
 und gilt als rückwärtskompatibel zu Nagios. Die dokumentierten Beispiele 
 beziehen sich auf die Nagios API sind aber ebenfalls mit Icinga kompatibel.

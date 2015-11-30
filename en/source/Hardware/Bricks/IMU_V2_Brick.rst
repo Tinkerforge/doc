@@ -74,19 +74,19 @@ self-calibration and an **accuracy increase by two orders of magnitude**.
 
 The IMU :ref:`Brick <primer_bricks>` 2.0 is equipped with a 3-axis
 accelerometer, magnetometer (compass) and gyroscope and works as a **USB**
-`inertial measurement unit <http://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
+`inertial measurement unit <https://en.wikipedia.org/wiki/Inertial_measurement_unit>`__.
 It can measure 9 degrees of freedom and computes
-`quaternions <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__,
+`quaternions <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__,
 linear acceleration, gravity vector as well as independent `heading, roll and
-pitch <http://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ angles.
+pitch <https://en.wikipedia.org/wiki/File:Rollpitchyawplain.png>`__ angles.
 It is a complete `attitude and heading reference system
-<http://en.wikipedia.org/wiki/AHRS>`__.
+<https://en.wikipedia.org/wiki/AHRS>`__.
 
 The API, provided for many :ref:`programming languages <imu_brick_programming_interface>`,
 allows access to the calculated data and also the acceleration, magnetic field
 and angular velocity of the three axes. If the quaternion representation is
 used, the IMU Brick 2.0 does not have a
-`gimbal lock <http://en.wikipedia.org/wiki/Gimbal_lock>`__,
+`gimbal lock <https://en.wikipedia.org/wiki/Gimbal_lock>`__,
 as known from Euler angles.
 
 Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the

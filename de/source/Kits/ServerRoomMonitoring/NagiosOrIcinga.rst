@@ -6,7 +6,7 @@
 Serverraum-Überwachung mit Nagios oder Icinga
 =============================================
 
-`Icinga <https://www.icinga.org/>`__ und `Nagios <http://www.nagios.org/>`__ 
+`Icinga <https://www.icinga.org/>`__ und `Nagios <https://www.nagios.org/>`__
 sind Computer Überwachungswerkzeuge. Icinga ist ein Fork von Nagios und gilt
 als rückwärtskompatibel zu diesem. Die nachfolgenden Beispielen beziehen
 sich auf die Nagios API sind daher aber auch kompatibel zu Icinga.
@@ -20,7 +20,7 @@ Plugins werden genutzt um überwachende Services zu erzeugen. Dies sind
 Programme mit einem definierten Rückgabewert (z.B. 0=OK, 1=Warning, 2=Critical, 
 3=Unknown). Deren Standardausgabe wird von Nagios genutzt um Informationen
 über deren Zustand zu bekommen. Die
-`Nagios Developer Guidelines <https://www.nagios-plugins.org/doc/guidelines.html>`__
+`Nagios Developer Guidelines <https://nagios-plugins.org/doc/guidelines.html>`__
 geben hier weitere Auskünfte.
 
 Nach der Grundinstallation von Nagios kann damit begonnen werden ein eigens

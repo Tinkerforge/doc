@@ -265,7 +265,7 @@ wechseln.
 Nachdem wir nun Zugriff auf das Internet haben können wir Internet-of-Things
 oder ähnliche Anwendungen einfach implementieren. Ein weiterer Vorteil des
 Internetzugriffs ist, dass das RED Brick automatisch die Systemzeit
-mittels `NTP <http://de.wikipedia.org/wiki/Network_Time_Protocol>`__
+mittels `NTP <https://de.wikipedia.org/wiki/Network_Time_Protocol>`__
 aktualisieren wird.
 
 Somit können wir jeder Messung die entsprechende Uhrzeit zuordnen.

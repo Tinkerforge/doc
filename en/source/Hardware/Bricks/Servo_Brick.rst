@@ -178,7 +178,7 @@ Your setup should look as shown below.
 
 In the left part of the tab you can select the servo
 to control. You can enable and disable it, configure the
-`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ pulse width and
+`PWM <https://en.wikipedia.org/wiki/Pulse-width_modulation>`__ pulse width and
 define the degree range. Additionally you can see the current consumption of
 the servo. Below there are four sliders to control
 the position, velocity and acceleration of the servo. The fourth slider
@@ -260,7 +260,7 @@ the maximum brushless motor current only depends on your selected ESC.
  If you use a ESC with BEC you have to disable it! Otherwise your ESC or
  the Brick can be destroyed. To disable BEC you have to remove the red
  wire from the connector you plug in the Servo Brick
- (`external video tutorial <http://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
+ (`external video tutorial <https://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
 
 .. warning::
  If you use the same power supply for your ESC and the Servo Brick, additionally

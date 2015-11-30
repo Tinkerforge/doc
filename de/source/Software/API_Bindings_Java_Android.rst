@@ -13,8 +13,8 @@ Dingen.
 
 Im Folgenden wird angenommen, dass die Android Entwicklungsumgebung schon
 installiert ist. Für Android-Anfänger empfehlen wir zuerst mit dem
-`Hello World Tutorial
-<http://developer.android.com/resources/tutorials/hello-world.html>`__ von
+`First App Tutorial
+<http://developer.android.com/training/basics/firstapp/index.html>`__ von
 Google zu beginnen.
 
 

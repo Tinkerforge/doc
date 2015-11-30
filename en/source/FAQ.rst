@@ -59,8 +59,8 @@ If the flashing doesn't work: Have you tried a different Bricklet cable?
 
 If the EEPROM on the Bricklet gets corrupted, it is also possible
 that the UID is invalidated. A UID of "1" is invalid. If you can read
-a UID of "1" with the Brick Viewer, you should set a new UID that
-is unique in your System and in Base58.
+a UID of "1" with the Brick Viewer, you should set a new UID that is unique
+in your system and in `Base58 <https://en.wikipedia.org/wiki/Base58>`__.
 
 **Short circuit in Bricklet connector**:
 

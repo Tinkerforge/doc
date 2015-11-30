@@ -14,14 +14,14 @@ Partner
     .. image:: /Images/Misc/codecentric-logo.png
        :alt: Codecentric logo
        :align: center
-       :target: http://www.codecentric.de/
+       :target: https://www.codecentric.de/
 
   .. container:: partnertext
 
     .. rubric:: Codecentric
 
-    Als Experte für individuelle Software-Entwicklungen ist die 
-    `codecentric AG <http://www.codecentric.de>`__
+    Als Experte für individuelle Software-Entwicklungen ist die
+    `codecentric AG <https://www.codecentric.de/>`__
     der Vordenker für agile Software-Entwicklung und innovative Technologien in 
     Deutschland. Wegbereiter zu sein ist ein elementarer Wert bei codecentric. 
     Wir entwickeln Software-Lösungen der Zukunft – an diesem Anspruch muss sich 
@@ -104,13 +104,13 @@ Partner
     .. image:: /Images/Misc/netio-logo.png
        :alt: NetIO Controller App Logo
        :align: center
-       :target: http://netio.davideickhoff.de/
+       :target: http://netio.davideickhoff.de/de/
 
   .. container:: partnertext
 
     .. rubric:: NetIO Controller App
 
-    `NetIO <http://netio.davideickhoff.de/>`__ ist eine Multi-Plattform
+    `NetIO <http://netio.davideickhoff.de/de/>`__ ist eine Multi-Plattform
     Smartphone App, eine universale Fernbedienung für fast alles. Es werden
     Zeichenfolgen über eine Netzwerkverbindung gesendet und empfangen. Die
     Kommunikation ist nicht an ein spezielles Protokoll gebunden, dadurch

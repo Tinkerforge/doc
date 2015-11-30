@@ -40,7 +40,7 @@ bindings_infos = \
                   'de': 'http://csharp.net-tutorials.com/'}),
     BindingsInfo('Delphi/Lazarus', 'delphi', 'Delphi', True, True,
                  {'en': 'http://www.delphibasics.co.uk/',
-                  'de': 'http://www.delphi-treff.de/tutorials/grundlagen/'}),
+                  'de': 'http://www.delphi-treff.de/tutorials/grundlagen-tutorials/'}),
     BindingsInfo('Java', 'java', 'Java', True, True,
                  {'en': 'http://docs.oracle.com/javase/tutorial/',
                   'de': 'http://docs.oracle.com/javase/tutorial/'}), # http://openbook.galileocomputing.de/javainsel/

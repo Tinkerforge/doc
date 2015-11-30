@@ -124,9 +124,9 @@ For each supported programming language the :ref:`Tinkerforge API <api_bindings>
 and commonly used software libraries are pre-installed on the system. Other
 necessary libraries can be installed manually.
 
-The Brick is equipped with a `Micro-HDMI <http://en.wikipedia.org/wiki/HDMI>`__
+The Brick is equipped with a `Micro-HDMI <https://en.wikipedia.org/wiki/HDMI>`__
 connector, which can be used by programs to show a graphical user interface. A
-`USB 2.0 <http://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
+`USB 2.0 <https://en.wikipedia.org/wiki/USB>`__ Host connector can be used to
 connect USB Wi-Fi adapters, mouses, keyboards, touchscreens and similar.
 
 With an :ref:`Ethernet Master Extension <ethernet_extension>` the RED Brick can
@@ -523,7 +523,7 @@ directly connect from your smart phone or notebook to the RED Brick.
 * Access Point: If access point mode is enabled, you can configure
   the RED Brick to be an :ref:`access point in the settings tab
   <red_brick_brickv_settings_ap>`.
-* Server Monitoring: Enables the `Nagios <http://www.nagios.org/>`__
+* Server Monitoring: Enables the `Nagios <https://www.nagios.org/>`__
   monitoring system, see :ref:`server monitoring in the settings tab
   <red_brick_brickv_settings_server_monitoring>`.
 * openHAB: Enables the `openHAB <http://www.openhab.org/>`__ runtime, see

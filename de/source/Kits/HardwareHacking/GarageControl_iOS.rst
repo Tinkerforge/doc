@@ -7,7 +7,7 @@
 .. |connect| replace:: ``ipcon_connect()``
 .. |set_monoflop| replace:: ``industrial_quad_relay_set_monoflop(&relay, 1 << 0, 15, 500)``
 .. |ref_get_identity| replace:: :c:func:`industrial_quad_relay_get_identity` Funktion
-.. |async_helper| replace:: einem `Grand Central Dispatch (GCD) <http://de.wikipedia.org/wiki/Grand_Central_Dispatch>`__ Block
+.. |async_helper| replace:: einem `Grand Central Dispatch (GCD) <https://de.wikipedia.org/wiki/Grand_Central_Dispatch>`__ Block
 
 .. include:: GarageControl.substitutions
    :start-after: >>>substitutions

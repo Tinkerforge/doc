@@ -61,11 +61,11 @@ Beschreibung
 
 Das Analog Out :ref:`Bricklet <primer_bricklets>` 2.0 kann genutzt werden
 um :ref:`Bricks <primer_bricks>` mit einem 12Bit `Digital-Analog-Wandler
-<http://de.wikipedia.org/wiki/Digital-Analog-Umsetzer>`__ zu erweitern.
+<https://de.wikipedia.org/wiki/Digital-Analog-Umsetzer>`__ zu erweitern.
 Es ist der Nachfolger des :ref:`analog_out_bricklet` mit größerem
 Ausgangsspannungsbereich.
 Mit diesem können elektrische Spannungen von 0V bis 12V* generiert werden.
-Die Spannung kann direkt in `Volt <http://en.wikipedia.org/wiki/Volt>`__
+Die Spannung kann direkt in `Volt <https://en.wikipedia.org/wiki/Volt>`__
 angegeben werden.
 
 Für Ausgangsspannungen über 5V muss eine zusätzliche externe Spannungsquelle

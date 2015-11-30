@@ -19,9 +19,9 @@ die Bindings beinhaltet:
 
 Die LabVIEW Bindings basieren auf den :ref:`C# Bindings <api_bindings_csharp>`.
 Seit Version 2.0.0 sind die C# Bindings `CLS
-<http://de.wikipedia.org/wiki/Common_Language_Specification>`__-konform.
+<https://de.wikipedia.org/wiki/Common_Language_Specification>`__-konform.
 Dies erlaubt es die Bindings mit allen `.NET kompatiblen Sprachen
-<http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
+<https://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden, wie
 z.B. LabVIEWs `.NET Unterstützung
 <http://zone.ni.com/reference/en-XX/help/371361K-01/lvcomm/dotnet_pal/>`__.
 

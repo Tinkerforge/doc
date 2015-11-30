@@ -67,14 +67,14 @@ Description
 -----------
 
 The Temperature IR :ref:`Bricklet <primer_bricklets>` is equipped
-with a `infrared thermometer <http://en.wikipedia.org/wiki/Infrared_thermometer>`__.
+with a `infrared thermometer <https://en.wikipedia.org/wiki/Infrared_thermometer>`__.
 It can extend the features of a :ref:`Brick <primer_bricks>` with the capability 
 of contactless temperature measurement.
 
 You can read out object temperature and ambient temperature in
-`°C <http://en.wikipedia.org/wiki/Degree_Celsius>`__.
+`°C <https://en.wikipedia.org/wiki/Degree_Celsius>`__.
 It is possible to define the
-`emissivity <http://en.wikipedia.org/wiki/Emissivity>`__ of the object you
+`emissivity <https://en.wikipedia.org/wiki/Emissivity>`__ of the object you
 want to measure (most infrared thermometers can't do this) .
 With configurable events it is possible to react on changing
 temperatures without polling.

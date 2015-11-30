@@ -74,7 +74,7 @@ Beschreibung
 ------------
 
 Der Servo :ref:`Brick <primer_bricks>` kann bis zu **7**
-`RC Servos <http://de.wikipedia.org/wiki/Servo>`__ mit einem maximalen Strom 
+`RC Servos <https://de.wikipedia.org/wiki/Servo>`__ mit einem maximalen Strom
 von **3A** per **USB** steuern. Eine API für
 :ref:`viele Programmiersprachen <servo_brick_programming_interface>` ermöglichen 
 das Steuern der Position, Geschwindigkeit und Beschleunigung der angeschlossenen
@@ -180,7 +180,7 @@ Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 
 Auf der linke Seite des Tabs kann der einzustellende Servo ausgewählt werden.
 Dieser kann ein- und ausgeschaltet, die zulässige
-`PWM <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Pulsweite
+`PWM <https://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Pulsweite
 eingestellt und der Winkelbereich definiert werden. Zusätzlich wird der
 Stromverbrauch des Servos angezeigt. Weiter unten finden sich vier Regler mit
 denen Position, Geschwindigkeit und Beschleunigung des Servos kontrolliert
@@ -267,7 +267,7 @@ beschränkt.
  dann muss diese unbedingt abgeschaltet werden. Andernfalls kann der ESC oder
  der Servo Brick zerstört werden. Um die BEC abzuschalten darf das rote Kabel
  des ESC nicht an den Servo Brick angeschlossen werden
- (`externes Videotutorial <http://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
+ (`externes Videotutorial <https://www.youtube.com/watch?v=clNvfjhMQ5w>`__).
 
 .. warning::
  Falls die gleiche Stromversorgung für den ESC und den Servo Brick

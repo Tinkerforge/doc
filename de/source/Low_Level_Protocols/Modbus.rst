@@ -17,7 +17,7 @@ can be found :ref:`here <primer_products>`.
 Protocol
 --------
 
-The RS485 Extension uses `Modbus RTU <http://en.wikipedia.org/wiki/Modbus>`__
+The RS485 Extension uses `Modbus RTU <https://en.wikipedia.org/wiki/Modbus>`__
 as the protocol on the RS485 interface.
 
 High level configurations, such as baud rate, parity and stop bits can

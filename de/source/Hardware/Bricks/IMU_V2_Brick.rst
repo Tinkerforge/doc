@@ -76,20 +76,20 @@ Selbst-Kalibrierung und einer um **zwei Größenordnungen besseren Genauigkeit**
 Der IMU :ref:`Brick <primer_bricks>` 2.0 ist mit je einem 3-Achsen
 Beschleunigungssensor, Magnetfeldsensor (Kompass) und Gyroskop ausgestattet und
 arbeitet als **USB**
-`Inertialsensor <http://de.wikipedia.org/wiki/Inertialsensor>`__.
+`Inertialsensor <https://de.wikipedia.org/wiki/Inertialsensor>`__.
 Dieser kann 9 Freiheitsgrade messen und berechnet
-`Quaternionen <http://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
+`Quaternionen <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__
 sowie auch unabhängige `Gier-, Roll- und Nick-Winkel
-<http://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__. Es ist ein vollständiges
+<https://de.wikipedia.org/wiki/Roll-Pitch-Yaw-Winkel>`__. Es ist ein vollständiges
 `Attitude and Heading Reference System
-<http://de.wikipedia.org/wiki/Attitude_Heading_Reference_System>`__.
+<https://de.wikipedia.org/wiki/Attitude_Heading_Reference_System>`__.
 
 Die API, verfügbar für
 :ref:`viele Programmiersprachen <imu_brick_programming_interface>`, erlaubt den
 Zugriff auf die berechneten Daten sowie auf die Beschleunigung, Magnetfeld und
 Winkelgeschwindigkeiten für die drei Achsen. Wenn die Quaternionen-Darstellung
 benutzt wird, ist der IMU Brick
-`Gimbal Lock <http://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei (im Gegensatz
+`Gimbal Lock <https://de.wikipedia.org/wiki/Gimbal_Lock>`__ frei (im Gegensatz
 zur Euler-Winkel Darstellung).
 
 Über zwei Anschlüsse können :ref:`Bricklets <primer_bricklets>`

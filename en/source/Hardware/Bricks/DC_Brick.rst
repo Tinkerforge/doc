@@ -66,7 +66,7 @@ Description
 -----------
 
 With the DC :ref:`Brick <primer_bricks>` you are able to control one 
-`DC brushed motor <http://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`__
+`DC brushed motor <https://en.wikipedia.org/wiki/Brushed_DC_electric_motor>`__
 (max. **28V** and **5A** (peak)) over **USB**. With the provided API for many
 :ref:`programming languages<dc_brick_programming_interface>` you can control the 
 direction, velocity and acceleration of the connected motor.
@@ -171,7 +171,7 @@ Your setup should look as shown below.
 Before you can test your Brick you need to enable the driver chip by ticking the
 "Enable" checkbox. You have three sliders to control
 the velocity (forward and backward), the acceleration and the
-`PWM <http://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency which
+`PWM <https://en.wikipedia.org/wiki/Pulse-width_modulation>`__ frequency which
 is used by the driver chip to control the connected motor.
 
 On the right you see

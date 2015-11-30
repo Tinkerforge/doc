@@ -6,7 +6,7 @@
 Wireshark Dissector
 ===================
 
-`Wireshark <http://www.wireshark.org>`__ is a free and open-source packet 
+`Wireshark <https://www.wireshark.org>`__ is a free and open-source packet
 analyzer. It is used for network troubleshooting, analysis, software and 
 communications protocol development, and education.
 

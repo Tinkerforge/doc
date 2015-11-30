@@ -38,11 +38,11 @@ wird, wird das Datenpaket an den Brick geschickt an dem das Bricklet
 angeschlossen ist. Dieser Brick führt dann die entsprechende Funktion aus.
 
 Die Bricklet Funktion ist anfangs im 
-`EEPROM <http://en.wikipedia.org/wiki/EEPROM>`__ 
+`EEPROM <https://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
 des Bricklets, zusammen mit anderen Daten wie die UID (zusammen genannt Plugin), 
 gespeichert. Beim Booten wird diese Funktion, zusammen mit anderen, in den Flash 
 des angeschlossenen Bricks geladen 
-(`positionsunabhängiger Code <http://de.wikipedia.org/wiki/Position-Independent_Code>`__).
+(`positionsunabhängiger Code <https://de.wikipedia.org/wiki/Position-Independent_Code>`__).
 Beim Aufruf kann diese Funktion nun, genauso wie jede andere Brick Funktion,
 aus dem Flash ausgeführt werden. Dieser Ansatz ermöglicht es eine 
 Kompatibilität zwischen allen Bricks und Bricklets herzustellen.

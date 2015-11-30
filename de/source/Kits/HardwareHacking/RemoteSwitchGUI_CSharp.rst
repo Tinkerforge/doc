@@ -44,7 +44,7 @@ Schritt 1: Die GUI erstellen
 ----------------------------
 
 Das Programm wird ein einfaches `Windows Forms
-<http://en.wikipedia.org/wiki/Windows_Forms>`__ GUI erstellt mit vier Knöpfen
+<https://en.wikipedia.org/wiki/Windows_Forms>`__ GUI erstellt mit vier Knöpfen
 und einer Liste für Statusmeldungen:
 
 .. image:: /Images/Kits/hardware_hacking_remote_switch_csharp_gui.jpg

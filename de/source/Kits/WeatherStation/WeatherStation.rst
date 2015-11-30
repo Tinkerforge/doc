@@ -326,7 +326,7 @@ in :ref:`Python <starter_kit_weather_station_python_to_xively>`.
    PythonToXively
 
 Die Wetterstation in unserem Labor hat den Xively Feed
-`125881 <https://xively.com/feeds/125881>`__. Viel Spass beim
+`125881 <https://personal.xively.com/feeds/125881>`__. Viel Spass beim
 überprüfen unserer Arbeitsbedingungen ;-)!
 
 

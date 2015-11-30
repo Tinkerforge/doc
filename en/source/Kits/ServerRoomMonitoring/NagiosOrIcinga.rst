@@ -6,7 +6,7 @@
 Server Room Monitoring with Nagios or Icinga
 ============================================
 
-`Icinga <https://www.icinga.org/>`__ and `Nagios <http://www.nagios.org/>`__ 
+`Icinga <https://www.icinga.org/>`__ and `Nagios <https://www.nagios.org/>`__
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
 said to be backward compatible to Nagios. In the following examples we are
 referring to the Nagios API to be also compatible with Icinga.
@@ -20,7 +20,7 @@ Plugins are used to create monitoring services. Plugins are programs with
 defined return codes (e.g. 0=OK, 1=Warning, 2=Critical, 3=Unknown). Their 
 standard output is used by Nagios to get information about their state. Please 
 refer to the 
-`Nagios Developer Guidelines <https://www.nagios-plugins.org/doc/guidelines.html>`__
+`Nagios Developer Guidelines <https://nagios-plugins.org/doc/guidelines.html>`__
 for more information.
 
 After the basic installation of Nagios you can start with the 

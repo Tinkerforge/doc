@@ -65,7 +65,7 @@ Falls das EEPROM eines Bricklets korrupt ist, kann auch die UID
 ungültig sein. Eine UID von "1" ist ungültig. Falls mit dem Brick
 Viewer eine "1" als UID von einem Bricklet gelesen werden kann, muss eine
 neue UID gesetzt werden. Diese sollte im ganzen System eindeutig sein
-und muss als `Base58 <http://de.wikipedia.org/wiki/Base58>`__ kodiert sein.
+und muss als `Base58 <https://de.wikipedia.org/wiki/Base58>`__ kodiert sein.
 
 **Kurzschluss im Bricklet-Stecker**:
 

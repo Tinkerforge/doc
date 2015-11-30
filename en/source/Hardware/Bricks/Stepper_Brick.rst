@@ -68,7 +68,7 @@ Description
 -----------
 
 With the Stepper :ref:`Brick <primer_bricks>` one bipolar
-`stepper motor <http://en.wikipedia.org/wiki/Stepper_motor>`__ 
+`stepper motor <https://en.wikipedia.org/wiki/Stepper_motor>`__
 with a maximum current of **2.5A** and a maximum voltage of **38V** per phase
 can be controlled over **USB**.  With the provided API for many 
 :ref:`programming languages <stepper_brick_programming_interface>` you can 

@@ -66,7 +66,7 @@ Beschreibung
 ------------
 
 Mit dem DC :ref:`Brick <primer_bricks>` kann ein
-`Gleichstrommotor <http://de.wikipedia.org/wiki/Gleichstrommaschine>`__
+`Gleichstrommotor <https://de.wikipedia.org/wiki/Gleichstrommaschine>`__
 (max. **28V** und **5A** (Peak)) über **USB** gesteuert werden. Eine API für
 :ref:`viele Programmiersprachen <dc_brick_programming_interface>` ermöglicht 
 das Steuern der Richtung, Geschwindigkeit und Beschleunigung des Motors.
@@ -169,7 +169,7 @@ Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 Als erstes muss das Häkchen für "Enable" gesetzt werden um die Treiberstufe
 zu aktivieren. Es stehen 3 Regler zur Kontrolle der Geschwindigkeit
 (vorwärts und rückwärts), der Beschleunigung und der
-`PWM <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Frequenz zur
+`PWM <https://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Frequenz zur
 Verfügung. Letztere wird von der Treiberstufe benutzt um den angeschlossenen
 Motor anzusteuern.
 

@@ -68,7 +68,7 @@ Beschreibung
 Mit dem Current25 :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` bidirektional Ströme bis zu **25A**
 messen. Der gemessene Strom kann direkt in `Ampere
-<http://de.wikipedia.org/wiki/Ampere>`__ ausgelesen werden.
+<https://de.wikipedia.org/wiki/Ampere>`__ ausgelesen werden.
 Mit konfigurierbaren Events ist es möglich auf Stromänderungen zu
 reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 

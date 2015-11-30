@@ -12,7 +12,7 @@ und :ref:`Bricklets <primer_bricklets>` mit der
 
 Im ersten Teil wird ein :ref:`DC Brick <dc_brick>` verwendet, um einen Motor
 zu steuern. Danach wird der Aufbau erweitert um die Geschwindigkeit des Motors
-über ein Dreh-`Potentiometer <http://de.wikipedia.org/wiki/Potentiometer>`__
+über ein Dreh-`Potentiometer <https://de.wikipedia.org/wiki/Potentiometer>`__
 regeln zu können indem wir ein :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`
 anschließen. Am Ende geht es um das Stapeln von Bricks um Verkabelung zu sparen
 und um die Kommunikation über drahtlose oder kabelgebundene Schnittstellen.
@@ -65,7 +65,7 @@ Auf der rechten Seite wird die externe Eingangsspannung unter "External Voltage"
 der Stromverbrauch des angeschlossenen Motors unter "Current Consumption" und
 die aktuelle Geschwindigkeit als Tachometer angezeigt. Verschiedene Regler auf
 der linken Seite ermöglichen es die Geschwindigkeit, Beschleunigung und
-`PWM <http://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Frequenz für den
+`PWM <https://de.wikipedia.org/wiki/Pulsweitenmodulation>`__ Frequenz für den
 Motor einzustellen. Um die Treiberstufe und damit die Ansteuerung des Motors
 zu aktivieren muss das "Enable" Häkchen gesetzt werden.
 

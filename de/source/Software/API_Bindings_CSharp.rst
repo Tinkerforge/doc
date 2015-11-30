@@ -105,9 +105,9 @@ CLS Konformität
 ---------------
 
 Seit Version 2.0.0 sind die C# Bindings konform zur `Common Language Specification
-<http://de.wikipedia.org/wiki/Common_Language_Specification>`__.
+<https://de.wikipedia.org/wiki/Common_Language_Specification>`__.
 Dies erlaubt es diese Bindings mit allen `.NET kompatiblen Sprachen
-<http://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden.
+<https://de.wikipedia.org/wiki/Liste_von_.NET-Sprachen>`__ zu verwenden.
 Für :ref:`Visual Basic .NET <api_bindings_vbnet>`,
 :ref:`Mathematica <api_bindings_mathematica>` und
 :ref:`LabVIEW (Windows) <api_bindings_labview>` stehen eigene

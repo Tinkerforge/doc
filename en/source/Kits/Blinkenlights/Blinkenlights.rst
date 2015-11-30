@@ -94,8 +94,8 @@ controlled applications. A larger display can be created by
 attaching more LED Pixels to the kit.
 
 A :ref:`demo application <starter_kit_blinkenlights_demo_examples>` implements
-clones of `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ and
-`Pong <http://en.wikipedia.org/wiki/Pong>`__ and includes different non-game
+clones of `Tetris <https://en.wikipedia.org/wiki/Tetris>`__ and
+`Pong <https://en.wikipedia.org/wiki/Pong>`__ and includes different non-game
 applications. For example, it can show customizable scrolling text in
 different colors on the display, it shows rainbows, customizable image sets with
 configurable durations and can warm your heart with a virtual fire.
@@ -104,9 +104,9 @@ by customizable touch pads when using the Multi Touch Bricklet (Giant Game Pad)
 or by Dual Button Bricklet.
 
 The kit name "Blinkenlights" is used in
-`hacker jargon <http://en.wikipedia.org/wiki/Blinkenlights>`__
+`hacker jargon <https://en.wikipedia.org/wiki/Blinkenlights>`__
 to describe blinking lights of network equipment. It is also known from the
-`Project Blinkenlights <http://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
+`Project Blinkenlights <https://en.wikipedia.org/wiki/Project_Blinkenlights>`__.
 
 The following video shows the demo application and the construction in time lapse:
 

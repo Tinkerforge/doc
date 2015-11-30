@@ -129,7 +129,7 @@ Allgemeine Beschreibung
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Das :ref:`Industrial Digital In 4 Bricklet <industrial_digital_in_4_bricklet>` 
-ist mit vier `Optokopplern <http://de.wikipedia.org/wiki/Optokoppler>`__
+ist mit vier `Optokopplern <https://de.wikipedia.org/wiki/Optokoppler>`__
 ausgestattet. Technisch gesehen besteht ein Optokoppler aus einer LED die
 wiederum einen Fototransistor über ihr Licht steuert. Auf diese Art gibt es
 zwischen diesen beiden Bauteilen keine direkte elektrische Verbindung, sie sind
@@ -201,7 +201,7 @@ bedrahtete Gehäuse:
 
 Heutzutage nutzen viele Produkte sogenannte
 `Surface-Mount Devices (SMD)
-<http://en.wikipedia.org/wiki/Surface-mount_device>`__.
+<https://en.wikipedia.org/wiki/Surface-mount_device>`__.
 Diese Gehäuse können in ihrer Größe sehr stark abweichen. Es gibt sehr kleine
 (z.B. Gehäuse 0201: 0.6mm x 0.3mm) oder große Gehäuse 
 (Gehäuse 2920: 7.4mm x 5.1mm). Es gibt Widerstände, Kondensatoren, 
@@ -271,7 +271,7 @@ Einen Draht an ein Pad anzulöten kann in fünf Schritten erfolgen:
 * Warte bis das Zinn abgekühlt ist
 
 Eine Vereinfachung kann es sein wenn man den Draht vorher verzinnt.
-Bei `Youtube <http://www.youtube.com>`__ gibt es eine Menge an How-To Videos
+Bei `Youtube <https://www.youtube.com>`__ gibt es eine Menge an How-To Videos
 zum Thema Löten.
 
 Auch in unserem "Starter Kit: Hardware Hacking" How-To Video kann man erkennen

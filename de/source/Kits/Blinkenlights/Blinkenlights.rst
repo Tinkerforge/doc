@@ -95,8 +95,8 @@ oder Tablet gesteuerte Anwendungen möglich sind. Ein größeres Display kann du
 das Hinzufügen weiterer Pixel realisiert werden.
 
 Eine :ref:`Demo-Anwendung <starter_kit_blinkenlights_demo_examples>` 
-implementiert Klone von `Tetris <http://en.wikipedia.org/wiki/Tetris>`__ und
-`Pong <http://en.wikipedia.org/wiki/Pong>`__ und beinhaltet verschiedene
+implementiert Klone von `Tetris <https://de.wikipedia.org/wiki/Tetris>`__ und
+`Pong <https://de.wikipedia.org/wiki/Pong>`__ und beinhaltet verschiedene
 andere Anwendungen. Zum Beispiel können individuelle scrollende Texte in 
 diversen Farben, Regenbogen oder individuelle Bildsätze mit konfigurierbarer
 Dauer angezeigt werden. Ein virtuelles Feuer erwärmt das Herz auch in den 
@@ -104,10 +104,10 @@ kältesten Wintermonaten. Die Spiele können über eine PC Tastatur gesteuert
 werden aber auch per Multi Touch (Giant Game Pad) oder Dual Button Bricklet.
 
 Der Name des Kits "Blinkenlights" wird im
-`Hackerjargon <http://de.wikipedia.org/wiki/Blinkenlights_%28Jargon%29>`__ 
+`Hackerjargon <https://de.wikipedia.org/wiki/Blinkenlights_%28Jargon%29>`__
 benutzt um blinkende Lampen von Netzwerk-Equipment zu beschreiben. Er ist auch
 über das
-`Blinkenlights Projekt <http://de.wikipedia.org/wiki/Projekt_Blinkenlights>`__
+`Blinkenlights Projekt <https://de.wikipedia.org/wiki/Projekt_Blinkenlights>`__
 bekannt.
 
 Das nachfolgende Video zeigt die Beispiele und den Zusammenbau im Zeitraffer:
@@ -228,7 +228,7 @@ Tetris
 ^^^^^^
 
 Die Demoanwendung implementiert ein typisches 
-`Tetris <http://de.wikipedia.org/wiki/Tetris>`__ mit allen Besonderheiten.
+`Tetris <https://de.wikipedia.org/wiki/Tetris>`__ mit allen Besonderheiten.
 Es kann mit:
 
 .. image:: /Images/Kits/kit_blinkenlights_tetris_350.jpg
@@ -285,7 +285,7 @@ Pong
 ^^^^
 
 Wie :ref:`Tetris <starter_kit_blinkenlights_tetris>` kann
-`Pong <http://en.wikipedia.org/wiki/Pong>`__ mit oder ohne Frontplatte genutzt 
+`Pong <https://de.wikipedia.org/wiki/Pong>`__ mit oder ohne Frontplatte genutzt
 werden.
 
 Die folgenden Bilder zeigen Pong bei Dunkelheit und Tageslicht.

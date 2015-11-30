@@ -146,7 +146,7 @@ HTML
 ^^^^
 
 Die Browser Version der JavaScript Bindings verwendet `WebSockets
-<http://de.wikipedia.org/wiki/WebSocket>`__. WebSockets werden von Brick
+<https://de.wikipedia.org/wiki/WebSocket>`__. WebSockets werden von Brick
 Daemon (seit Version 2.1.0) und der Ethernet Extension (seit Master Brick
 Firmware Version 2.2.0) unterstützt. Sie sind allerdings standardmäßig nicht
 aktiviert und müssen erst konfiguriert werden:

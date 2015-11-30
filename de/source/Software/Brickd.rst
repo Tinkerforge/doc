@@ -101,7 +101,7 @@ WebSockets
 ^^^^^^^^^^
 
 Brick Daemon unterstützt seit Version 2.1.0 `WebSockets
-<http://de.wikipedia.org/wiki/WebSocket>`__. Diese sind
+<https://de.wikipedia.org/wiki/WebSocket>`__. Diese sind
 standardmäßig deaktiviert. Um WebSockets zu aktivieren muss ein
 WebSockets-Port in der Brick Daemon Konfigurationsdatei eingetragen werden.
 

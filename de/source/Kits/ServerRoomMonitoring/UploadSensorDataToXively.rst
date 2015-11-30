@@ -53,7 +53,7 @@ Schritt 2: Das Xively Protokoll verstehen
 
 Eine kurze Recherche in der Xively API Dokumentation zeigt, dass
 ein Datastream über `JSON Pakete
-<https://xively.com/dev/docs/api/communicating/>`__
+<https://personal.xively.com/dev/docs/api/communicating/>`__
 aktualisiert werden können.
 
 Das dort angegebene Beispiel::

@@ -125,10 +125,10 @@ Für jede unterstützte Programmiersprache sind die
 :ref:`Tinkerforge API <api_bindings>` und häufig genutzte Bibliotheken
 vorinstalliert. Weitere Bibliotheken können nachinstalliert werden.
 
-Der Brick ist mit einem `Micro-HDMI <http://de.wikipedia.org/wiki/HDMI>`__
+Der Brick ist mit einem `Micro-HDMI <https://de.wikipedia.org/wiki/HDMI>`__
 Anschluss ausgestattet, so dass auch
 Programme mit grafischer Benutzeroberfläche ausgeführt werden können. Eine
-`USB 2.0 <http://de.wikipedia.org/wiki/USB>`__ Host Schnittstelle kann genutzt
+`USB 2.0 <https://de.wikipedia.org/wiki/USB>`__ Host Schnittstelle kann genutzt
 werden, um Eingabe- und Zeigegeräte, wie Tastaturen, Mäuse oder Touchscreens,
 zu nutzen.
 
@@ -536,7 +536,7 @@ und Notebooks direkt mit dem RED Brick verbinden können.
 * Access Point: Ist der Access Point Modus aktiviert, kann der RED Brick
   als Access Point genutzt werden (siehe
   :ref:`Access Point im Settings Tab <red_brick_brickv_settings_ap>`).
-* Server Monitoring: Aktiviert das `Nagios <http://www.nagios.org/>`__
+* Server Monitoring: Aktiviert das `Nagios <https://www.nagios.org/>`__
   Monitoring System (siehe :ref:`Serverüberwachung im Settings Tab
   <red_brick_brickv_settings_server_monitoring>`).
 * openHAB: Aktiviert die `openHAB <http://www.openhab.org/>`__ Runtime (siehe
@@ -975,7 +975,7 @@ HDMI Monitor Auflösung ändern
 
 Der RED Brick stellt automatisch die richtige Monitor Auflösung für einen
 angeschlossenen Monitor ein. Dazu wird die `Extended Display Identification
-Data <http://de.wikipedia.org/wiki/Extended_Display_Identification_Data>`__
+Data <https://de.wikipedia.org/wiki/Extended_Display_Identification_Data>`__
 (EDID) Schnittstelle des Monitor verwendet. Allerdings funktioniert EDID nur
 dann zuverlässig, wenn der Monitor bereits per HDMI anschlossen und
 eingeschaltet ist bevor der RED Brick bootet.
@@ -1151,7 +1151,7 @@ USB 2.0 Host
 ^^^^^^^^^^^^
 
 Der RED Brick ist mit einer Standard
-`USB 2.0 <http://de.wikipedia.org/wiki/USB>`__ (480Mb/s) Typ A Buchse
+`USB 2.0 <https://de.wikipedia.org/wiki/USB>`__ (480Mb/s) Typ A Buchse
 ausgestattet. Mit ihr können USB Geräte mit bis zu 7,5W (5V/1,5A) betrieben
 werden. Ein Kurzschluss-Schutz schützt den RED Brick und das angeschlossene
 Gerät. Typische USB Geräte, wie zum Beispiel WLAN oder Ethernet USB Stick,
@@ -1184,7 +1184,7 @@ Brick kann auch über diesen mit Strom versorgt werden.
 Micro-HDMI
 ^^^^^^^^^^
 
-Mit dem Micro-`HDMI <http://en.wikipedia.org/wiki/HDMI>`__ Anschluss
+Mit dem Micro-`HDMI <https://en.wikipedia.org/wiki/HDMI>`__ Anschluss
 (auch Typ D genannt), können alle Standard HDMI Monitore und Fernseher mit dem
 RED Brick verbunden werden. HDMI Ethernet Channel (HEC) wird nicht unterstützt.
 

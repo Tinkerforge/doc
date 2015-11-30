@@ -51,7 +51,7 @@ Description
 
 The Chibi Extension is equipped with a 700/800/900MHz radio transceiver.
 Typically this transceiver is used for long range
-`Zigbee <http://en.wikipedia.org/wiki/Zigbee>`__ networks. Unfortunately
+`Zigbee <https://en.wikipedia.org/wiki/Zigbee>`__ networks. Unfortunately
 the Zigbee terms of use do forbid a GPL implementation of the
 Zigbee protocol stack (see `here
 <http://www.freaklabs.org/index.php/blog/zigbee/zigbee-linux-and-the-gpl.html>`__

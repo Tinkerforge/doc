@@ -144,7 +144,7 @@ WebSockets
 """"""""""
 
 Die Ethernet Extension unterstützt seit Master Brick Firmware Version 2.2.0
-`WebSockets <http://de.wikipedia.org/wiki/WebSocket>`__. Die "Max Connections"
+`WebSockets <https://de.wikipedia.org/wiki/WebSocket>`__. Die "Max Connections"
 Einstellung erlaubt die sieben Sockets der Ethernet Extension nach belieben
 zwischen normalen und WebSocket-Verbindungen aufzuteilen.
 

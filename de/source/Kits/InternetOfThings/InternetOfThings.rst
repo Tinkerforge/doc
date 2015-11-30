@@ -71,7 +71,7 @@ Features
 Beschreibung
 ------------
 
-Das `Internet der Dinge <http://de.wikipedia.org/wiki/Internet_der_Dinge>`__ 
+Das `Internet der Dinge <https://de.wikipedia.org/wiki/Internet_der_Dinge>`__
 (engl. Internet of Things (IoT)) stellt eine Evolution des Internets dar und 
 vernetzt nicht nur, wie bisher Menschen und Computer, sondern auch beliebige 
 andere physische Objekte ("Dinge", "things").

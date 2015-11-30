@@ -12,8 +12,8 @@ this page only covers Android specific things.
 
 In the following we assume that you already have the Android development
 environment installed. If you are just starting with Android development,
-you should first complete the `hello world tutorial
-<http://developer.android.com/resources/tutorials/hello-world.html>`__ from
+you should first complete the `first app tutorial
+<http://developer.android.com/training/basics/firstapp/index.html>`__ from
 Google.
 
 

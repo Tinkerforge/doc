@@ -15,13 +15,13 @@ Partners
     .. image:: /Images/Misc/codecentric-logo.png
        :alt: Codecentric logo
        :align: center
-       :target: http://www.codecentric.de/
+       :target: https://www.codecentric.de/
 
   .. container:: partnertext
 
     .. rubric:: Codecentric
 
-    `Codecentric <http://www.codecentric.de>`__ is a leading IT consulting 
+    `Codecentric <https://www.codecentric.de/>`__ is a leading IT consulting
     company, specialized in agile 
     software development, performance and continuous delivery. We always focus 
     on providing the best solution for our customers and are specialized in 
@@ -110,13 +110,13 @@ Partners
     .. image:: /Images/Misc/netio-logo.png
        :alt: NetIO Controller App logo
        :align: center
-       :target: http://netio.davideickhoff.de/
+       :target: http://netio.davideickhoff.de/en/
 
   .. container:: partnertext
 
     .. rubric:: NetIO Controller App
 
-    `NetIO <http://netio.davideickhoff.de/>`__ is a multi platform smart phone
+    `NetIO <http://netio.davideickhoff.de/en/>`__ is a multi platform smart phone
     application, a generic remote controller for almost everything. It simply
     sends and reads strings over a network connection. The communication is not
     fixed to a specific protocol is, this allows to interact with many

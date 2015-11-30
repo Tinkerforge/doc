@@ -6,7 +6,7 @@
 Wireshark Dissector
 ===================
 
-`Wireshark <http://www.wireshark.org>`__ ist ein freies Programm zur Analyse
+`Wireshark <https://www.wireshark.org>`__ ist ein freies Programm zur Analyse
 von Netzwerk-Kommunikationsverbindungen.
 
 Das Werkzeug stellt entweder während oder nach der Aufzeichnung 

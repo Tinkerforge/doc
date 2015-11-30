@@ -222,8 +222,8 @@ With authentication enabled each TCP/IP connection starts in non-authenticated
 state. Before any normal communication can occur an authentication handshake
 has to be performed successfully to switch the connection to authenticated state.
 This handshake uses the `server/client nonce
-<http://en.wikipedia.org/wiki/Cryptographic_nonce>`__ approach utilizing
-`HMAC-SHA1 <http://en.wikipedia.org/wiki/Hmac>`__.
+<https://en.wikipedia.org/wiki/Cryptographic_nonce>`__ approach utilizing
+`HMAC-SHA1 <https://en.wikipedia.org/wiki/Hmac>`__.
 
 The server side of the handshake is handled by the manager of the TCP/IP
 connection. This can either be a Brick Daemon or a Master Brick with a

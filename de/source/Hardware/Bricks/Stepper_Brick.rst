@@ -68,7 +68,7 @@ Beschreibung
 ------------
 
 Mit dem Stepper :ref:`Brick <primer_bricks>` kann einen bipolaren
-`Schrittmotor <http://de.wikipedia.org/wiki/Schrittmotor>`__
+`Schrittmotor <https://de.wikipedia.org/wiki/Schrittmotor>`__
 mit einem maximalen Strom von **2,5A** und einer maximalen Spannung von **38V**
 pro Phase über **USB** gesteuert werden. Eine API für
 :ref:`viele Programmiersprachen <stepper_brick_programming_interface>` ermöglicht 
@@ -210,12 +210,12 @@ Stecker eine Spannung anliegt.
 .. _stepper_brick_decay_mode:
 
 Decay Modi
------------
+----------
 
 Für eine gute Erläuterung der verschiedenen Decay Modi siehe
 `diesen <http://ebldc.com/?p=86/>`__ Blogeintrag (Englisch) von Avayan oder
-`diesen <http://www.schrittmotor-blog.de/?p=51>`__ Blogeintrag (Deutsch) von
-T. Ostermann.
+`diesen <http://www.schrittmotor-blog.de/stromregelung-von-schrittmotoren-auf-das-abschalten-kommt-es-an/>`__
+Blogeintrag (Deutsch) von T. Ostermann.
 
 Der richtige Decay Modus ist unglücklicherweise für jeden Schrittmotor anders.
 Der beste Weg einen guten Decay Modus für deinen Schrittmotor zu ermitteln ist
