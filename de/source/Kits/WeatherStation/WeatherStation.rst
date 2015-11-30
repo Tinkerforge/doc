@@ -471,7 +471,7 @@ Guitar Hero in Java geschrieben. Die Anwendung zeigt zufällig erzeugte Balken
 auf dem LCD an, die sich zu einer Seite bewegen. Über die vier großen 
 Drucktaster lassen sich verschiedene Töne erzeugen und das dafür benutzte
 Instrument lässt sich aus der 
-`General MIDI <http://en.wikipedia.org/wiki/General_MIDI>`__ Definition 
+`General MIDI <https://de.wikipedia.org/wiki/General_MIDI>`__ Definition
 wählen. Die Logik des Spiels fehlt allerdings komplett.
 
 Dieser Demonstrator soll zeigen, dass auch andere Anwendungen als die typischen

@@ -54,11 +54,11 @@ Typically this transceiver is used for long range
 `Zigbee <http://en.wikipedia.org/wiki/Zigbee>`__ networks. Unfortunately
 the Zigbee terms of use do forbid a GPL implementation of the
 Zigbee protocol stack (see `here
-<http://www.freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`__
+<http://www.freaklabs.org/index.php/blog/zigbee/zigbee-linux-and-the-gpl.html>`__
 for more information).
 
 Thus we decided to port the open source `Chibi Wireless Stack
-<http://www.freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`__
+<http://www.freaklabs.org/index.php/blog/embedded/introducingchibi-a-simple-small-wireless-stack-for-open-hardware-hackers-and-enthusiasts.html>`__
 or this extension. It is a
 simple and small protocol stack that is perfectly suited for our use cases.
 

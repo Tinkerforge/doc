@@ -55,11 +55,11 @@ Typischerweise wird dieser für weitreichende `Zigbee
 <http://de.wikipedia.org/wiki/ZigBee>`__ Netzwerke eingesetzt.
 Leider verbieten es die Zigbee Bedingungen eine GPL Implementierung des Zigbee
 Protokoll Stacks (klicke `hier
-<http://www.freaklabs.org/index.php/Blog/Zigbee/Zigbee-Linux-and-the-GPL.html>`__
+<http://www.freaklabs.org/index.php/blog/zigbee/zigbee-linux-and-the-gpl.html>`__
 für weitere Informationen).
 
 Daher haben wir uns dazu entschlossen den Open Source `Chibi Wireless Stack
-<http://www.freaklabs.org/index.php/Blog/Embedded/Introducing...Chibi-A-Simple-Small-Wireless-stack-for-Open-Hardware-Hackers-and-Enthusiasts.html>`__
+<http://www.freaklabs.org/index.php/blog/embedded/introducingchibi-a-simple-small-wireless-stack-for-open-hardware-hackers-and-enthusiasts.html>`__
 für diese Extension zu portieren. Es ist ein einfacher und kleiner Protokoll
 Stack der perfekt geeignet ist für unsere Anwendungen.
 

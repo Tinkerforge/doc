@@ -401,7 +401,7 @@ def make_download_kits_table():
 """
     }
 
-    row = ' :ref:`{0} <starter_kit_{1}>` | `Linux <http://download.tinkerforge.com/kits/{1}/linux/starter-kit-{2}-demo-{5}.{6}.{7}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/{1}/macos/starter_kit_{1}_demo_macos_{5}_{6}_{7}.dmg>`__, `Windows <http://download.tinkerforge.com/kits/{1}/windows/starter_kit_{1}_demo_windows_{5}_{6}_{7}.exe>`__, `{3} <https://github.com/Tinkerforge/{1}/archive/demo-{5}.{6}.{7}.zip>`__ | {5}.{6}.{7} | `{4} <http://download.tinkerforge.com/kits/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{2}/master/demo/changelog>`__'
+    row = ' :ref:`{0} <starter_kit_{1}>` | `Linux <http://download.tinkerforge.com/kits/{1}/linux/starter-kit-{2}-demo-{5}.{6}.{7}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/{1}/macos/starter_kit_{1}_demo_macos_{5}_{6}_{7}.dmg>`__, `Windows <http://download.tinkerforge.com/kits/{1}/windows/starter_kit_{1}_demo_windows_{5}_{6}_{7}.exe>`__, `{3} <https://github.com/Tinkerforge/{2}/archive/demo-{5}.{6}.{7}.zip>`__ | {5}.{6}.{7} | `{4} <http://download.tinkerforge.com/kits/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{2}/master/demo/changelog>`__'
     rows = []
 
     for kit_info in kit_infos:

@@ -133,7 +133,7 @@ Ressourcen
 ----------
 
 * BNO055 Datenblatt (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/datasheets/BNO055.pdf>`__)
-* Schaltplan (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/hardware/imu-v2-schematic.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/hardware/imu-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/imu-v2-brick/zipball/master>`__)
 

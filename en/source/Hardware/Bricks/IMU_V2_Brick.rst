@@ -129,7 +129,7 @@ Resources
 ---------
 
 * BNO055 datasheet (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/datasheets/BNO055.pdf>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/hardware/imu-v2-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/hardware/imu-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/imu-v2-brick/zipball/master>`__)
 
