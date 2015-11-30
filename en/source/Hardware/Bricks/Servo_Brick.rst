@@ -74,7 +74,7 @@ Description
 -----------
 
 The Servo :ref:`Brick <primer_bricks>` is able to control up to **7**
-`RC servos <http://en.wikipedia.org/wiki/Servo_Motor#RC_servos>`__
+`RC servos <https://en.wikipedia.org/wiki/Servo_(radio_control)>`__
 with a maximum current of **3A** over **USB**. With the provided API for many 
 :ref:`programming languages <servo_brick_programming_interface>` you can control 
 the position, velocity and acceleration of the connected servos. The output 
