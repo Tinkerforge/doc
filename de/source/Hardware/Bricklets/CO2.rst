@@ -18,7 +18,7 @@ CO2 Bricklet
 Features
 --------
 
-* Misst CO2 Konzentration von 0 bis TBD ppm (Teile pro Million)
+* Misst CO2 Konzentration von 0 bis 5000 ppm (Teile pro Million)
 
 
 .. _co2_bricklet_description:
@@ -48,7 +48,7 @@ Sensor                            SenseAir K30
 Stromverbrauch                    TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Messbereich                       0ppm - TBDppm
+Messbereich                       0ppm - 5000ppm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessung (W x D x H)             TBD x TBD x TBDmm (TBD x TBD x TBD")
