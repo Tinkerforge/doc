@@ -18,7 +18,7 @@ CO2 Bricklet
 Features
 --------
 
-* Measures CO2 concentration from 0 to 5000 ppm (parts per million)
+* Measures CO2 concentration from 0 to 10000 ppm (parts per million)
 
 
 .. _co2_bricklet_description:
@@ -47,7 +47,7 @@ Sensor                            SenseAir K30
 Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Measurement Range                 0ppm - 5000ppm
+Measurement Range                 0ppm - 10000ppm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
