@@ -11,6 +11,36 @@
 CO2 Bricklet
 ============
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_co2_tilted1_350.jpg",
+	               "Bricklets/bricklet_co2_tilted1_600.jpg",
+	               "CO2 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_co2_tilted2_100.jpg",
+	             "Bricklets/bricklet_co2_tilted2_600.jpg",
+	             "CO2 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_co2_horizontal_100.jpg",
+	             "Bricklets/bricklet_co2_horizontal_600.jpg",
+	             "CO2 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_co2_brickv_100.jpg",
+	             "Bricklets/bricklet_co2_brickv.jpg",
+	             "CO2 Bricklet im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/co2_bricklet_dimensions_100.png",
+	             "Dimensions/co2_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
   Diese Bricklet ist noch in Entwicklung!
 
