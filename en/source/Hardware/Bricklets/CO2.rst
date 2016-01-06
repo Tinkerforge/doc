@@ -47,8 +47,8 @@ CO2 Bricklet
 Features
 --------
 
-* Measures CO2 concentration from 0 to 10000 ppm (parts per million)
-* High accuracy: ±30ppm ±3%
+* Measures CO2 concentration from 0 to 10000ppm (parts per million)
+* High accuracy: ±30ppm (full-scale), ±3% (of reading)
 
 .. _co2_bricklet_description:
 
@@ -78,7 +78,7 @@ Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Measurement Range                 0ppm - 10000ppm
-Accuracy                          ±30ppm ±3%
+Accuracy                          ±30ppm (full-scale), ±3% (of reading)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            60 x 65 x 15mm (2.36 x 2.56 x 0.59")
