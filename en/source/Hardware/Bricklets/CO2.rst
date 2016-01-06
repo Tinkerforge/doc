@@ -48,7 +48,7 @@ Features
 --------
 
 * Measures CO2 concentration from 0 to 10000 ppm (parts per million)
-
+* High accuracy: ±30ppm ±3%
 
 .. _co2_bricklet_description:
 
@@ -64,7 +64,8 @@ measured CO2 concentration can be read out in
 With configurable events it is possible to react on changing CO2
 concentration without polling.
 
-Typical applications are TBD.
+Typical applications are automated ventilation and environmental
+data logging.
 
 Technical Specifications
 ------------------------
@@ -77,10 +78,11 @@ Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Measurement Range                 0ppm - 10000ppm
+Accuracy                          ±30ppm ±3%
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            60 x 65 x 15mm (2.36 x 2.56 x 0.59")
+Weight                            29g
 ================================  ============================================================
 
 Resources
