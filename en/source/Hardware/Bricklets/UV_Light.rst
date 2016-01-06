@@ -54,8 +54,8 @@ The UV Light :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to measure
 `UV Light <https://en.wikipedia.org/wiki/Ultraviolet>`__. The
-measured UV Light can be read out in
-`ppm <https://en.wikipedia.org/wiki/Parts-per_notation>`__.
+measured UV Light can be read out in µW/cm². 1 µW/cm² equals
+0.004 UV Index.
 With configurable events it is possible to react on changing 
 values without polling.
 
