@@ -11,6 +11,31 @@
 UV Light Bricklet
 =================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_uv_light_tilted_350.jpg",
+	               "Bricklets/bricklet_uv_light_tilted_600.jpg",
+	               "UV Ligh Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_uv_light_horizontal_100.jpg",
+	             "Bricklets/bricklet_uv_light_horizontal_600.jpg",
+	             "UV Ligh Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_uv_light_brickv_100.jpg",
+	             "Bricklets/bricklet_uv_light_brickv.jpg",
+	             "UV Ligh Bricklet im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/uv_light_bricklet_dimensions_100.png",
+	             "Dimensions/uv_light_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
   Diese Bricklet ist noch in Entwicklung!
 

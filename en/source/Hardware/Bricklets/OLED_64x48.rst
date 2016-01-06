@@ -11,6 +11,41 @@
 OLED 64x48 Bricklet
 ===================
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_oled_64x48_tilted_350.jpg",
+	               "Bricklets/bricklet_oled_64x48_tilted_600.jpg",
+	               "OLED 64x48 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_oled_64x48_front_100.jpg",
+	             "Bricklets/bricklet_oled_64x48_front_600.jpg",
+	             "OLED 64x48 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_oled_64x48_horizontal_100.jpg",
+	             "Bricklets/bricklet_oled_64x48_horizontal_600.jpg",
+	             "OLED 64x48 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_oled_64x48_bottom_100.jpg",
+	             "Bricklets/bricklet_oled_64x48_bottom_600.jpg",
+	             "OLED 64x48 Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_oled_64x48_brickv_100.jpg",
+	             "Bricklets/bricklet_oled_64x48_brickv.jpg",
+	             "OLED 64x48 Bricklet in Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/oled_64x48_bricklet_dimensions_100.png",
+	             "Dimensions/oled_64x48_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
+	}}
+	{{ tfdocend() }}
+
 .. note::
  This Bricklet is currently work-in-progress!
 
