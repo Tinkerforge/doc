@@ -53,19 +53,47 @@ OLED 64x48 Bricklet
 Features
 --------
 
+* Black/white color OLED
+* Size of 0.69" with a resolution of 64x48
 
 .. _oled_64x48_bricklet_description:
 
 Description
 -----------
 
+The OLED 64x48 :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` with the
+capability to write to a small 64x48 
+`OLED display <https://en.wikipedia.org/wiki/OLED>`__.
+
+High update rates of up to 100Hz are possible.
 
 Technical Specifications
 ------------------------
 
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Current Consumption               TBD
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Resolution                        64x48
+Size                              0.69"
+Color                             Black/White
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)            35 x 20 x 7mm (1.38 x 0.79 x 0.28")
+Weight                            4g
+================================  ============================================================
+
 
 Resources
 ---------
+
+* Display datasheet (`Download <https://github.com/Tinkerforge/oled-64x48-bricklet/raw/master/datasheets/OLED_64X48_Datasheet.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/oled-64x48-bricklet/raw/master/hardware/oled-64x48-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/oled_64x48_bricklet_dimensions.png>`__)
+* Source code and design files (`Download <https://github.com/Tinkerforge/oled-64x48-bricklet/zipball/master>`__)
 
 
 .. _oled_64x48_bricklet_test:
@@ -73,12 +101,24 @@ Resources
 Test your OLED 64x48 Bricklet
 -----------------------------
 
+|test_intro|
 
-.. _oled_64x48_bricklet_case:
+|test_connect|.
 
-Case
-----
+|test_tab|
+If everything went as expected the Brick Viewer should look as
+depicted below.
 
+You can draw and write text to the display. With the slider it is
+also possible to show the available character set on the the OLED.
+
+.. image:: /Images/Bricklets/bricklet_oled_64x48_brickv.jpg
+   :scale: 100 %
+   :alt: OLED 64x48 Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_oled_64x48_brickv.jpg
+
+|test_pi_ref|
 
 .. _oled_64x48_bricklet_programming_interface:
 
