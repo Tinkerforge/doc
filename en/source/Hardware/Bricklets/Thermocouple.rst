@@ -74,14 +74,14 @@ The supported thermocouple types are B, E, J, K, N, R, S and T. It
 is also possible to configure custom gains, with which you can
 read out other thermocouple types or even custom thermocouple types.
 
-Faults such as open circuit and over/under-voltage are
+Faults such as missing thermocouple and over/under-voltage are
 automatically detected and reported.
 
 By default the Bricklet comes with a K-type mini thermocouple 
 connector. The connector uses Alumel for the negative
-Chromel for the positive contact. We can fit the
-Bricklet with a connector that uses different alloys 
-:ref:`see below <thermocouple_bricklet_types>`.
+Chromel for the positive contact. We can also fit the
+Bricklet with a matching connector for other :ref:`thermocouple types
+<thermocouple_bricklet_types>`.
 
 Technical Specifications
 ------------------------
@@ -95,8 +95,7 @@ Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 Measurement Range                 -210°C to +1800°C
 Resolution                        0.01°C
-Accuracy (full-scale)             ±0.15%
-Accuarcy (cold-junction)          ±0.7°C
+Accuracy                          ±0.15% (full-scale), ±0.7°C (cold-junction)
 Supported types                   B, E, J, K, N, R, S and T (custom types possible)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -146,12 +145,12 @@ Thermocouple types
 ------------------
 
 Different thermocouple types use different types of metals for their
-wires. Optimally the connector uses the same type of metal.
+wires. Optimally, the connector on the Bricklet uses the same types of metals.
 
 By default the Bricklet comes with a K-type mini thermocouple 
 connector (Alumel for the negative and Chromel for the positive 
 contact). You can connect any type of thermocouple to the
-Bricklet with a slight increase in error. If you want to use
+Bricklet too, but with a slight increase in error. If you want to use
 a non-K-type thermocouple and you need the best possible performance
 we can fit the Bricklet with different connectors for you:
 
@@ -163,12 +162,13 @@ E     Constantan                    Chromel
 J     Constantan                    Iron
 K     Alumel                        Chromel
 N     Nisil                         Nicrosil
-R/S   Platinum                      Platinum/Rhodium
+R     Platinum                      Platinum/Rhodium
+S     Platinum                      Platinum/Rhodium
 T     Constantan                    Copper
 ====  ============================  ============================
 
 Please contact us before you order, if you need a non-K-type connector.
-Besides K we have T and J-type connectors in stock, the other
+Besides K-type we have T and J-type connectors in stock, other
 connector types have to be ordered first.
 
 .. _thermocouple_bricklet_programming_interface:

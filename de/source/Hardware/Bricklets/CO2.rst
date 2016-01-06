@@ -48,7 +48,8 @@ CO2 Bricklet
 Features
 --------
 
-* Misst CO2 Konzentration von 0 bis 10000 ppm (Teile pro Million)
+* Misst CO2 Konzentration von 0 bis 10000ppm (Teile pro Million)
+* Hohe Genauigkeit von ±30ppm (gesamter Messbereich) und ±3% (Messwert)
 
 
 .. _co2_bricklet_description:
@@ -65,7 +66,8 @@ ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf
 CO2 Konzentrationsänderungen zu reagieren ohne die Werte laufend abzufragen
 (kein Polling notwendig).
 
-Dieses Bricklet kann genutzt werden TBD.
+Dieses Bricklet kann genutzt werden für automatische Lüftungssteuerung,
+Umweltdatenmessung, usw.
 
 
 Technische Spezifikation
@@ -79,10 +81,11 @@ Stromverbrauch                    TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Messbereich                       0ppm - 10000ppm
+Genauigkeit                       ±30ppm (gesamter Messbereich), ±3% (Messwert)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessung (W x D x H)             TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessung (W x D x H)             60 x 65 x 15mm (2,36 x 2,56 x 0,59")
+Gewicht                           29g
 ================================  ============================================================
 
 

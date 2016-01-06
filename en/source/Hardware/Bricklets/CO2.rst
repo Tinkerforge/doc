@@ -48,7 +48,7 @@ Features
 --------
 
 * Measures CO2 concentration from 0 to 10000ppm (parts per million)
-* High accuracy: ±30ppm (full-scale), ±3% (of reading)
+* High accuracy of ±30ppm (full-scale) and ±3% (of reading)
 
 .. _co2_bricklet_description:
 
