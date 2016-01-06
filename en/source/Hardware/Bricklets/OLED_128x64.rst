@@ -89,7 +89,7 @@ Weight                            8g
 Resources
 ---------
 
-* Display datasheet (`Download <https://github.com/Tinkerforge/oled-128x64-bricklet/raw/master/datasheets/OLED_64X48_Datasheet.pdf>`__)
+* Display datasheet (`Download <https://github.com/Tinkerforge/oled-128x64-bricklet/raw/master/datasheets/OLED_128X64_Datasheet.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/oled-128x64-bricklet/raw/master/hardware/oled-128x64-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/oled_128x64_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/oled-128x64-bricklet/zipball/master>`__)
