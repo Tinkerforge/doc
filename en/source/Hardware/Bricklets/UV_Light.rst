@@ -43,7 +43,7 @@ UV Light Bricklet
 Features
 --------
 
-* Measures UV Light concentration in µW/cm² and UV Index
+* Measures UV light intensity in µW/cm² and UV Index
 
 .. _uv_light_bricklet_description:
 
@@ -53,8 +53,8 @@ Description
 The UV Light :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to measure
-`UV Light <https://en.wikipedia.org/wiki/Ultraviolet>`__. The
-measured UV Light can be read out in µW/cm². 1 µW/cm² equals
+`UV light <https://en.wikipedia.org/wiki/Ultraviolet>`__. The
+measured UV light can be read out in µW/cm². 1 µW/cm² equals
 0.004 UV Index.
 With configurable events it is possible to react on changing 
 values without polling.
@@ -94,7 +94,7 @@ Resources
 .. _uv_light_bricklet_test:
 
 Test your UV Light Bricklet
------------------------------
+---------------------------
 
 |test_intro|
 
@@ -126,7 +126,7 @@ A `laser-cut case for the UV Light Bricklet
    :align: center
    :target: ../../_images/Cases/bricklet_ambient_light_case_built_up_1000.jpg
 
-.. include:: UV Light.substitutions
+.. include:: UV_Light.substitutions
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
