@@ -32,17 +32,17 @@ Thermocouple Bricklet
 	{{
 	    tfdocimg("Bricklets/bricklet_thermocouple_w_sensor_100.jpg",
 	             "Bricklets/bricklet_thermocouple_w_sensor_600.jpg",
-	             "Thermocouple Bricklet with sensor")
+	             "Thermocouple Bricklet mit Sensor")
 	}}
 	{{
 	    tfdocimg("Bricklets/bricklet_thermocouple_brickv_100.jpg",
 	             "Bricklets/bricklet_thermocouple_brickv.jpg",
-	             "Thermocouple Bricklet in Brick Viewer")
+	             "Thermocouple Bricklet im Brick Viewer")
 	}}
 	{{
 	    tfdocimg("Dimensions/thermocouple_bricklet_dimensions_100.png",
 	             "Dimensions/thermocouple_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
+	             "Umriss und Bohrplan")
 	}}
 	{{ tfdocend() }}
 
