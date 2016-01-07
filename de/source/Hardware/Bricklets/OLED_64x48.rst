@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / OLED 64x48 Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/oled-64x48-bricklet.html
+:shoplink: ../../../shop/bricklets/oled-64x48-bricklet.html
 
 .. include:: OLED_64x48.substitutions
    :start-after: >>>substitutions

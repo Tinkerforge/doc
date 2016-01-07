@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / UV Light Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/uv-light-bricklet.html
+:shoplink: ../../../shop/bricklets/uv-light-bricklet.html
 
 .. include:: UV_Light.substitutions
    :start-after: >>>substitutions

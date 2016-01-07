@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Thermocouple Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/thermocouple-bricklet.html
+:shoplink: ../../../shop/bricklets/thermocouple-bricklet.html
 
 .. include:: Thermocouple.substitutions
    :start-after: >>>substitutions
