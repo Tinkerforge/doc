@@ -66,9 +66,9 @@ Mit dem Thermocouple :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` Temperaturen mittels eines `Thermoelements
 <https://de.wikipedia.org/wiki/Thermoelement>`__ messen. Die gemessene
 Temperatur kann in `°C
-<https://de.wikipedia.org/wiki/Grad_Celsius>`__ ausgelesen werden. Zusätzlich
-können Events konfiguriert werden die ausgelöst werden wenn eine bestimmte
-Temperatur über- oder unterschritten wird.
+<https://de.wikipedia.org/wiki/Grad_Celsius>`__ ausgelesen werden.
+Mit konfigurierbaren Events ist es möglich auf Temperaturänderungen zu
+reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 
 Die Thermoelementtypen B, E, J, K, N, R, S und T werden unterstützt. Es können
 auch benutzerdefiniert Faktoren eingestellt werden. Dadurch können noch andere

@@ -66,8 +66,8 @@ ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf
 CO2 Konzentrationsänderungen zu reagieren ohne die Werte laufend abzufragen
 (kein Polling notwendig).
 
-Dieses Bricklet kann genutzt werden für automatische Lüftungssteuerung,
-Umweltdatenmessung, usw.
+Dieses Bricklet kann z.B. für automatische Lüftungssteuerung und
+Umweltdatenmessung genutzt werden.
 
 
 Technische Spezifikation

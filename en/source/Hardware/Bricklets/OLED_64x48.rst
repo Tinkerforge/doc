@@ -40,6 +40,11 @@ OLED 64x48 Bricklet
 	             "OLED 64x48 Bricklet in Brick Viewer")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_oled_font_100.png",
+	             "Bricklets/bricklet_oled_font_314.png",
+	             "OLED 64x48 Bricklet font")
+	}}
+	{{
 	    tfdocimg("Dimensions/oled_64x48_bricklet_dimensions_100.png",
 	             "Dimensions/oled_64x48_bricklet_dimensions_600.png",
 	             "Outline and drilling plan")
@@ -63,8 +68,16 @@ Description
 
 The OLED 64x48 :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
-capability to write to a small 64x48 
+capability to display information on a small 64x48
 `OLED display <https://en.wikipedia.org/wiki/OLED>`__.
+
+Because each pixel can be set individually, the display can do graphics. This
+allows for more versatile and detailled drawings on the display, compared to
+the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` with its fixed character
+display.
+
+Additionally, text can easily be drawn onto the display with the embedded
+:ref:`font <oled_64x48_bricklet_font>` of the Bricklet.
 
 High update rates of up to 100Hz are possible.
 
@@ -77,9 +90,9 @@ Property                          Value
 Current Consumption               TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Resolution                        64x48
+Resolution                        64x48 pixel, 13x6 characters
 Size                              0.66"
-Color                             Black/White
+Colors                            Black/White
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            35 x 20 x 7mm (1.38 x 0.79 x 0.28")
@@ -119,6 +132,20 @@ also possible to show the available character set on the the OLED.
    :target: ../../_images/Bricklets/bricklet_oled_64x48_brickv.jpg
 
 |test_pi_ref|
+
+.. _oled_64x48_bricklet_font:
+
+Font
+----
+
+The Bricklet has an embedded font (ASCII subset in green) that allows fast and
+easy text rendering (up to 13x6 characters):
+
+.. image:: /Images/Bricklets/bricklet_oled_font.png
+   :scale: 100 %
+   :alt: OLED 64x48 Bricklet font
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_oled_font.png
 
 .. _oled_64x48_bricklet_programming_interface:
 
