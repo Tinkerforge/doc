@@ -683,14 +683,19 @@ def make_index_api_device(device_infos, category, language):
         if device_info.is_released and device_info.has_bindings:
             lis.append(li.format(device_info.short_display_name, category, device_info.software_doc_prefix, language))
 
+    if category == 'Bricklets':
+        split = int(math.ceil(len(lis) / 4.0))
+    else:
+        split = 15
+
     ret = ''
     while len(lis) > 0:
         if category == 'Bricklets':
-            ret += '\n<div class="category_content_inner">\n<ul>' +'\n'.join(lis[:14]) + '</ul>\n</div>'
+            ret += '\n<div class="category_content_inner">\n<ul>' +'\n'.join(lis[:split]) + '</ul>\n</div>'
         else:
-            ret += '\n<ul>' +'\n'.join(lis[:14]) + '</ul>\n'
+            ret += '\n<ul>' +'\n'.join(lis[:split]) + '</ul>\n'
 
-        lis = lis[14:]
+        lis = lis[split:]
 
     return ret
 
