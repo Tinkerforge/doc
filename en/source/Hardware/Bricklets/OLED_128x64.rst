@@ -81,6 +81,10 @@ Additionally, text can easily be drawn onto the display with the embedded
 
 High update rates of up to 60Hz are possible.
 
+The Bricklet is 40 x 40 mm in size and can be mounted directly on top of any
+Brick.
+
+
 Technical Specifications
 ------------------------
 

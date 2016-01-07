@@ -82,8 +82,8 @@ auf dem Display angezeigt werden.
 
 Hohe Update-Raten bis zu 100Hz sind möglich.
 
-Das Bricklet ist 40 x 40 mm groß und kann dadurch direkt oben auf einen Brick
-geschraubt werden.
+Das Bricklet ist 40 x 40 mm groß und kann dadurch direkt oben auf jeglichen
+Brick geschraubt werden.
 
 
 Technische Spezifikation
