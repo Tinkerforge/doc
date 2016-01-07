@@ -81,6 +81,13 @@ Additionally, text can easily be drawn onto the display with the embedded
 
 High update rates of up to 100Hz are possible.
 
+A demo with the 128x64 pixel version, a Servo Brick and a Rotary Poti Bricklet
+is available on Youtube:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/8RSEs6cKwXc" frameborder="0" allowfullscreen></iframe></center>
+
 Technical Specifications
 ------------------------
 

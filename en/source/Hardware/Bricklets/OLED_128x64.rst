@@ -45,6 +45,11 @@ OLED 128x64 Bricklet
 	             "OLED 128x64 Bricklet font")
 	}}
 	{{
+	    tfdocimg("Bricklets/bricklet_oled_128x64_w_servo_brick_100.jpg",
+	             "Bricklets/bricklet_oled_128x64_w_servo_brick_600.jpg",
+	             "OLED 128x64 Bricklet with servo and poti")
+	}}
+	{{
 	    tfdocimg("Dimensions/oled_128x64_bricklet_dimensions_100.png",
 	             "Dimensions/oled_128x64_bricklet_dimensions_600.png",
 	             "Outline and drilling plan")
@@ -84,6 +89,11 @@ High update rates of up to 60Hz are possible.
 The Bricklet is 40 x 40 mm in size and can be mounted directly on top of any
 Brick.
 
+A demo with a Servo Brick and a Rotary Poti Bricklet is available on Youtube:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/8RSEs6cKwXc" frameborder="0" allowfullscreen></iframe></center>
 
 Technical Specifications
 ------------------------

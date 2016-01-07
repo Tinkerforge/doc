@@ -82,6 +82,13 @@ auf dem Display angezeigt werden.
 
 Hohe Update-Raten bis zu 100Hz sind möglich.
 
+Eine Demo der 128x64 Pixel Version zusammen mit einem Servo Brick und einem
+Rotary Poti Bricklet ist auf Youtube verfügbar:
+
+.. raw:: html
+
+ <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/8RSEs6cKwXc" frameborder="0" allowfullscreen></iframe></center>
+
 Technische Spezifikation
 ------------------------
 
