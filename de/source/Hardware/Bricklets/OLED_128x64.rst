@@ -85,7 +85,7 @@ Zusätzlich kann mit dem eingebetteten :ref:`Zeichensatz
 <oled_128x64_bricklet_font>` des Bricklets aber auch schnell und einfach Text
 auf dem Display angezeigt werden.
 
-Hohe Update-Raten bis zu 100Hz sind möglich.
+Hohe Update-Raten bis zu 60Hz sind möglich.
 
 Das Bricklet ist 40 x 40 mm groß und kann damit auf jeden Brick geschraubt
 werden.
