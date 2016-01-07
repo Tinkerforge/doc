@@ -56,9 +56,6 @@ OLED 128x64 Bricklet
 	}}
 	{{ tfdocend() }}
 
-.. note::
-  Diese Bricklet ist noch in Entwicklung!
-
 
 Features
 --------
