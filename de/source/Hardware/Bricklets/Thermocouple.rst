@@ -97,6 +97,7 @@ Messbereich                       -210°C bis +1800°C
 Auflösung                         0,01°C
 Genauigkeit                       ±0,15% (gesamter Messbereich), ±0,7°C (Cold Junction)
 Unterstütze Typen                 B, E, J, K, N, R, S und T (benutzerdefiniert Typen möglich)
+Anschluss                         Mini-Thermoelementbuchse
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessung (W x D x H)             40 x 30 x 8mm (1,58 x 1,18 x 0,32")

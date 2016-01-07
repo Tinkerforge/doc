@@ -96,7 +96,8 @@ Current Consumption               10mW (2mA at 5V)
 Measurement Range                 -210°C to +1800°C
 Resolution                        0.01°C
 Accuracy                          ±0.15% (full-scale), ±0.7°C (cold-junction)
-Supported types                   B, E, J, K, N, R, S and T (custom types possible)
+Supported Types                   B, E, J, K, N, R, S and T (custom types possible)
+Connector                         mini thermocouple jack
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 30 x 8mm (1.58 x 1.18 x 0.32")
