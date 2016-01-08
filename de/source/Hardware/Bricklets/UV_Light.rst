@@ -113,7 +113,7 @@ UV Index. Der Graph gibt den zeitlichen Verlauf der UV Lichtintensität wieder.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das Ambient Light Bricklet
+Ein `laser-geschnittenes Gehäuse für das UV Light Bricklet
 <https://www.tinkerforge.com/de/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__
 ist verfügbar.
 
@@ -123,7 +123,7 @@ ist verfügbar.
    :align: center
    :target: ../../_images/Cases/bricklet_ambient_light_case_built_up_1000.jpg
 
-.. include:: Ambient_Light.substitutions
+.. include:: UV_Light.substitutions
    :start-after: >>>bricklet_case_steps
    :end-before: <<<bricklet_case_steps
 
