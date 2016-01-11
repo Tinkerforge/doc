@@ -87,7 +87,8 @@ Hohe Update-Raten bis zu 60Hz sind möglich.
 Das Bricklet ist 40 x 40 mm groß und kann damit auf jeden Brick geschraubt
 werden.
 
-Eine `Demo <https://github.com/Tinkerforge/oled-128x64-bricklet/blob/master/software/examples/python/example_draw_servo_poti.py>`__ zusammen mit einem Servo Brick und einem Rotary Poti Bricklet ist
+Eine `Demo <https://github.com/Tinkerforge/oled-128x64-bricklet/blob/master/software/examples/python/example_draw_servo_poti.py>`__
+zusammen mit einem Servo Brick und einem Rotary Poti Bricklet ist
 auf Youtube verfügbar:
 
 .. raw:: html
@@ -153,11 +154,11 @@ Benutzung
 ---------
 
 Bricklets haben leider nur eine kleine Menge an RAM (256 Byte) und Flash
-(4 KByte) zur Verfügung. Dies ist ist nicht genug um zum Beispiel ein 
+(4096 Byte) zur Verfügung. Dies ist ist nicht genug um zum Beispiel ein
 128x64 schwarz/weiß Bild zwischenzuspeichern. Daher können wir keine
-konfortablen APIs wie ``drawLine(xy, xy)`` anbieten.
+konfortablen APIs wie ``draw_line(x1, y1, x2, y2)`` anbieten.
 
-Um auf das OLED Display zu zeichnen empfehlen wir eine Image Libarary
+Um auf das OLED Display zu zeichnen empfehlen wir eine Image Library
 zu nutzen die für eine spezifische Programmiersprache entwickelt wurde
 (zum Beispiel PIL für Python). Dadurch können die Zeichen-Primitiven der
 und Schriftarten der Library verwendet werden und das fertig gezeichnete
@@ -165,9 +166,10 @@ Bild kann dann zum Bricklet übertragen werden.
 
 Wir haben Beispiele für
 
-* C# (mit TODO), 
-* Java (mit TODO) und
-* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_draw_servo_poti.py>`__ (mit `PIL <https://python-pillow.github.io/>`__).
+* `C# <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
+* `Java <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/java/ExampleScribble.java>`__ und
+* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_scribble.py>`__
+  (mit `PIL <https://python-pillow.github.io/>`__).
 
 .. _oled_128x64_bricklet_font:
 

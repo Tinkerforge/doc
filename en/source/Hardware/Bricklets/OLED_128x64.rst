@@ -143,14 +143,13 @@ also possible to show the available character set on the OLED.
 
 |test_pi_ref|
 
-
 Usage
 -----
 
 Unfortunately Bricklets only have a very limited amount of RAM (256 Byte) 
-and flash (4 KByte) available. This is not enough to for example cache a 
+and flash (4096 Byte) available. This is not enough to for example cache a
 whole 128x64 b/w image. Therefore we can not offer convenient APIs like 
-``drawLine(xy, xy)``.
+``draw_line(x1, y1, x2, y2)``.
 
 To draw to the display we recommend that you use an image library that is
 native to your programming language (for example PIL for Python). This
@@ -159,9 +158,10 @@ library and then copy the image buffer to the Bricklet.
 
 We provide examples for
 
-* C# (with TODO), 
-* Java (with TODO) and 
-* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_draw_servo_poti.py>`__ (with `PIL <https://python-pillow.github.io/>`__).
+* `C# <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
+* `Java <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/java/ExampleScribble.java>`__ and
+* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_scribble.py>`__
+  (with `PIL <https://python-pillow.github.io/>`__).
 
 
 .. _oled_128x64_bricklet_font:

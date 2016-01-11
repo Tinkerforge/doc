@@ -79,8 +79,9 @@ auf dem Display angezeigt werden.
 
 Hohe Update-Raten bis zu 100Hz sind möglich.
 
-Eine `Demo <https://github.com/Tinkerforge/oled-128x64-bricklet/blob/master/software/examples/python/example_draw_servo_poti.py>`__ der 128x64 Pixel Version zusammen mit einem Servo Brick und einem
-Rotary Poti Bricklet ist auf Youtube verfügbar:
+Eine `Demo <https://github.com/Tinkerforge/oled-128x64-bricklet/blob/master/software/examples/python/example_draw_servo_poti.py>`__
+der 128x64 Pixel Version zusammen mit einem Servo Brick und einem Rotary Poti
+Bricklet ist auf Youtube verfügbar:
 
 .. raw:: html
 
@@ -138,6 +139,27 @@ werden.
    :target: ../../_images/Bricklets/bricklet_oled_64x48_brickv.jpg
 
 |test_pi_ref|
+
+Benutzung
+---------
+
+Bricklets haben leider nur eine kleine Menge an RAM (256 Byte) und Flash
+(4096 Byte) zur Verfügung. Dies ist ist nicht genug um zum Beispiel ein
+64x48 schwarz/weiß Bild zwischenzuspeichern. Daher können wir keine
+konfortablen APIs wie ``draw_line(x1, y1, x2, y2)`` anbieten.
+
+Um auf das OLED Display zu zeichnen empfehlen wir eine Image Library
+zu nutzen die für eine spezifische Programmiersprache entwickelt wurde
+(zum Beispiel PIL für Python). Dadurch können die Zeichen-Primitiven der
+und Schriftarten der Library verwendet werden und das fertig gezeichnete
+Bild kann dann zum Bricklet übertragen werden.
+
+Wir haben Beispiele für
+
+* `C# <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
+* `Java <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/java/ExampleScribble.java>`__ und
+* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/python/example_scribble.py>`__
+  (mit `PIL <https://python-pillow.github.io/>`__).
 
 .. _oled_64x48_bricklet_font:
 
