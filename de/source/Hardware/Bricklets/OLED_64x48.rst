@@ -79,7 +79,7 @@ auf dem Display angezeigt werden.
 
 Hohe Update-Raten bis zu 100Hz sind möglich.
 
-Eine Demo der 128x64 Pixel Version zusammen mit einem Servo Brick und einem
+Eine `Demo <https://github.com/Tinkerforge/oled-128x64-bricklet/blob/master/software/examples/python/example_draw_servo_poti.py>`__ der 128x64 Pixel Version zusammen mit einem Servo Brick und einem
 Rotary Poti Bricklet ist auf Youtube verfügbar:
 
 .. raw:: html

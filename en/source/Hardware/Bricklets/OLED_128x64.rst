@@ -133,7 +133,7 @@ If everything went as expected the Brick Viewer should look as
 depicted below.
 
 You can draw and write text to the display. With the slider it is
-also possible to show the available character set on the the OLED.
+also possible to show the available character set on the OLED.
 
 .. image:: /Images/Bricklets/bricklet_oled_128x64_brickv.jpg
    :scale: 100 %
@@ -142,6 +142,27 @@ also possible to show the available character set on the the OLED.
    :target: ../../_images/Bricklets/bricklet_oled_128x64_brickv.jpg
 
 |test_pi_ref|
+
+
+Usage
+-----
+
+Unfortunately Bricklets only have a very limited amount of RAM (256 Byte) 
+and flash (4 KByte) available. This is not enough to for example cache a 
+whole 128x64 b/w image. Therefore we can not offer convenient APIs like 
+``drawLine(xy, xy)``.
+
+To draw to the display we recommend that you use an image library that is
+native to your programming language (for example PIL for Python). This
+way you can use all of the available drawing primitives and fonts of the
+library and then copy the image buffer to the Bricklet.
+
+We provide examples for
+
+* C# (with TODO), 
+* Java (with TODO) and 
+* `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_draw_servo_poti.py>`__ (with `PIL <https://python-pillow.github.io/>`__).
+
 
 .. _oled_128x64_bricklet_font:
 

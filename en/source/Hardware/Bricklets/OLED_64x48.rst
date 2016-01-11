@@ -78,7 +78,7 @@ Additionally, text can easily be drawn onto the display with the embedded
 
 High update rates of up to 100Hz are possible.
 
-A demo with the 128x64 pixel version, a Servo Brick and a Rotary Poti Bricklet
+A `demo <https://github.com/Tinkerforge/oled-128x64-bricklet/blob/master/software/examples/python/example_draw_servo_poti.py>`__ with the 128x64 pixel version, a Servo Brick and a Rotary Poti Bricklet
 is available on Youtube:
 
 .. raw:: html
@@ -128,7 +128,7 @@ If everything went as expected the Brick Viewer should look as
 depicted below.
 
 You can draw and write text to the display. With the slider it is
-also possible to show the available character set on the the OLED.
+also possible to show the available character set on the OLED.
 
 .. image:: /Images/Bricklets/bricklet_oled_64x48_brickv.jpg
    :scale: 100 %
