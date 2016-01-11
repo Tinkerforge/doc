@@ -104,6 +104,7 @@ Measurement Range                 Automatically switched
                                   In addition, manually selectable
 
                                   * 0V - 3.30V, ~0.81mV resolution
+Maximum Output Current            150mA (3.3V), 150mA (5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            30 x 25 x 14mm (1.18 x 0.98 x 0.55")

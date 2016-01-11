@@ -74,6 +74,7 @@ Kanäle                            2
 Messbereich                       -35V bis +35V (DC)
 Auflösung                         24Bit
 Genauigkeit                       0,1% / ±4mV über den gesamten Messbereich
+Maximaler Ausgangsstrom           150mA (3,3V), 150mA (5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 11mm (1,57 x 1,57 x 0,43")
