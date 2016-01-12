@@ -20,7 +20,7 @@ RED Brick Add-on für den Kameraschlitten besteht aus den folgenden Teilen:
   `Mini USB Kabel 180cm <https://www.tinkerforge.com/de/shop/accessories/cable/mini-usb-cable-180cm.html>`__,
   `Micro HDMI Kabel 90cm <https://www.tinkerforge.com/de/shop/accessories/cable/micro-hdmi-cable-90cm.html>`__ und
   `Befestigungskit 12mm <https://www.tinkerforge.com/de/shop/accessories/mounting/mounting-kit-12mm.html>`__)
-* 1x `HDMI Display 5" (800x480 mit Touchscreen) <https://www.tinkerforge.com/de/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
+* 1x `HDMI Display 12,7cm (5", 800x480 mit Touchscreen) <https://www.tinkerforge.com/de/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
 
 Das Add-on beinhaltet **keine** 6mm und 12mm Schrauben. Es sollten beim
 Zusammenbau des Kameraschlittens ausreichend Schrauben übrig geblieben sein.

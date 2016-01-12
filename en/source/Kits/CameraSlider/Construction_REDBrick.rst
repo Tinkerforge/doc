@@ -20,7 +20,7 @@ add-on for the camera slider contains the following parts:
   `Mini USB Cable 180cm <https://www.tinkerforge.com/en/shop/accessories/cable/mini-usb-cable-180cm.html>`__,
   `Micro-HDMI Cable 90cm <https://www.tinkerforge.com/en/shop/accessories/cable/micro-hdmi-cable-90cm.html>`__ and
   `Mounting Kit 12mm <https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html>`__)
-* 1x `HDMI Display 5" (800x480 with Touchscreen) <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
+* 1x `HDMI Display 12.7cm (5", 800x480 with Touchscreen) <https://www.tinkerforge.com/en/shop/accessories/red-brick/hdmi-display-5-inch.html>`__
 
 The add-on does **not** include 6mm and 12mm bolts. You should have more than
 enough bolts leftover from the basic kit.
