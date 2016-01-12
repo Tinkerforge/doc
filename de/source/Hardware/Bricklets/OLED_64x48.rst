@@ -56,7 +56,7 @@ Features
 --------
 
 * Schwarz/Weiß OLED
-* Größe von 1.68cm (0,66") mit 64x48 Auflösung
+* Größe von 1,68cm (0,66") mit 64x48 Auflösung
 
 
 .. _oled_64x48_bricklet_description:
