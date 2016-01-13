@@ -159,7 +159,9 @@ library and then copy the image buffer to the Bricklet.
 We provide examples for
 
 * `C# <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
-* `Java <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/java/ExampleScribble.java>`__ and
+* `Java <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/java/ExampleScribble.java>`__,
+* `JavaScript (Node.js) <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/javascript/ExampleScribble.js>`__
+  (with `gm <https://www.npmjs.com/package/gm>`__ and `get-pixels <https://www.npmjs.com/package/get-pixels>`__) and
 * `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_scribble.py>`__
   (with `PIL <https://python-pillow.github.io/>`__).
 
