@@ -187,7 +187,7 @@ def make_primer_table(device_infos):
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
         if device_info.is_released:
-            rows.append(row.format(device_info.short_display_name, device_info.ref_name, device_info.description[lang]))
+            rows.append(row.format(device_info.short_display_name, device_info.ref_name, device_info.description[lang].replace('"', "inch")))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
