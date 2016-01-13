@@ -15,25 +15,38 @@ installiert werden.
 Installer
 ---------
 
-Als erstes muss die Brick Daemon ``.exe`` :ref:`heruntergeladen <downloads_tools>`
-werden. Ein Doppelklick auf die heruntergeladene Datei sollte einen Installer
-starten:
+Als erstes muss die Brick Daemon Installer ``.exe`` :ref:`heruntergeladen
+<downloads_tools>` werden. Ein Doppelklick auf die heruntergeladene Datei
+sollte einen Installer starten:
 
-.. image:: /Images/Screenshots/brickd_windows_1_small.jpg
+.. image:: /Images/Screenshots/brickd_windows_1.jpg
    :scale: 100 %
    :alt: Brickd Installation Schritt 1
    :align: center
    :target: ../_images/Screenshots/brickd_windows_1.jpg
 
-Zwei Aktionen können ausgewählt werden:
+Verschiedene Aktionen können ausgewählt werden:
 
-* **Install Brickd Program** kopiert die Programm-Dateien
-* **Register Brickd Service** installiert den Daemon als Windows Service
+* **Install Brick Daemon** kopiert die Programmdateien.
+* **Register Brick Daemon as Service** installiert den Daemon als automatisch
+  startenden Windows Service. Ohne dies muss der Brick Daemon manuell gestartet
+  werden. Manueller Start ist nur für fortgeschrittene Debugging-Zwecke
+  sinnvoll.
+* **Install/Update Brick Driver** installiert/aktualisiert den USB Treiber für
+  Bricks (nur Windows XP, Vista, 7). Dieser Treiber ist notwendig, um über
+  USB angeschlossene Bricks nutzen zu können.
+* **Install/Update RED Brick Driver** installiert/aktualisiert den USB Treiber
+  für RED Bricks (nur Windows XP, Vista, 7). Dieser Treiber ist notwendig, um
+  über USB angeschlossene RED Bricks nutzen zu können.
+* **Install/Update RED Brick Serial Console Driver** installiert/aktualisiert
+  den Treiber für die serielle Konsole von RED Bricks. Dieser Treiber ist
+  notwendig, um die serielle Konsole von über USB angeschlossenen RED Bricks
+  nutzen zu können.
 
-Typischerweise soll beides ausgeführt werden. Ein Klick auf
+Typischerweise sollen alle Schritte ausgeführt werden. Ein Klick auf
 "Next" startet den Installationsprozess.
 
-.. image:: /Images/Screenshots/brickd_windows_2_small.jpg
+.. image:: /Images/Screenshots/brickd_windows_2.jpg
    :scale: 100 %
    :alt: Brickd Installation Schritt 2
    :align: center
@@ -43,16 +56,20 @@ Als nächstes wird der Installationspfad abgefragt. Dieser kann
 abgeändert werden wenn gewünscht. Die Installation wird mit
 einem Klick auf "Install" gestartet.
 
-Am Ende des Installationsprozess erscheint ein Fenster,
-welches darüber informiert dass der Brick Treiber
-noch installiert werden muss (siehe unten). Nach der
-Installation muss der PC neu gestartet werden.
-
 
 .. _brickd_install_windows_driver:
 
-Treiber Installation (Windows XP, Vista, 7)
--------------------------------------------
+Manuelle Treiber Installation
+-----------------------------
+
+Der Brick Daemon Installer installiert alle nötigen Treiber automatisch, außer
+die entsprechenden Schritte wurden manuell abgewählt. Es kann in seltenen
+Fällen auch vorkommen, dass die automatische Treiberinstallation durch den
+Installer fehlschlägt. In allen diesen Fällen kann es nötig sein den
+entsprechenden Treiber manuelle zu installieren.
+
+Windows XP, Vista, 7
+^^^^^^^^^^^^^^^^^^^^
 
 Abhängig von der Windows Version ist es nötig einen Brick Treiber zu
 installieren. Dieser Treiber muss für jedes Brick einmal installiert
@@ -111,8 +128,8 @@ getestet werden.
  überschrieben werden.
 
 
-Treiber Installation (Windows 8, 8.1 und 10)
---------------------------------------------
+Windows 8, 8.1 und 10
+^^^^^^^^^^^^^^^^^^^^^
 
-Ab Windows 8 wird kein Treiber mehr benötigt, Windows 8 und neuer erkennt die
-Hardware automatisch und korrekt.
+Ab Windows 8 wird kein Treiber für Bricks mehr benötigt, Windows 8 und neuer
+erkennt Bricks automatisch.

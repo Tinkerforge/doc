@@ -15,17 +15,25 @@ installiert werden.
 Installer
 ---------
 
-Als erstes muss die Brick Viewer ``.exe`` :ref:`heruntergeladen <downloads_tools>`
-werden. Ein Doppelklick auf die heruntergeladene Datei sollte einen Installer
-starten:
+Als erstes muss die Brick Viewer Installer ``.exe`` :ref:`heruntergeladen
+<downloads_tools>` werden. Ein Doppelklick auf die heruntergeladene Datei
+sollte einen Installer starten:
 
-.. image:: /Images/Screenshots/brickv_windows_1_small.jpg
+.. image:: /Images/Screenshots/brickv_windows_1.jpg
    :scale: 100 %
    :alt: Brickv Installation Schritt 1
    :align: center
    :target: ../_images/Screenshots/brickv_windows_1.jpg
 
-Ein Klick auf den "Next" Knopf startet den Installationsprozess.
+Verschiedene Aktionen können ausgewählt werden:
+
+* **Install Brick Daemon** kopiert die Programmdateien.
+* **Install/Update Brick Bootloader Driver** installiert/aktualisiert den USB
+  Treiber für Bricks im Bootloader Modus. Dieser Treiber ist notwendig um
+  Brick Firmware Updates in Brick Viewer durchführen zu können.
+
+Typischerweise sollen alle Schritte ausgeführt werden. Ein Klick auf
+"Next" startet den Installationsprozess.
 
 .. image:: /Images/Screenshots/brickv_windows_2_small.jpg
    :scale: 100 %
@@ -33,13 +41,6 @@ Ein Klick auf den "Next" Knopf startet den Installationsprozess.
    :align: center
    :target: ../_images/Screenshots/brickv_windows_2.jpg
 
-Als nächstes kann der Zielordner angegeben werden. Ändere diesen falls nötig
-und klicke "Install".
-
-.. image:: /Images/Screenshots/brickv_windows_3_small.jpg
-   :scale: 100 %
-   :alt: Brickv Installation Schritt 3
-   :align: center
-   :target: ../_images/Screenshots/brickv_windows_3.jpg
-
-Der Installationsprozess ist jetzt abgeschlossen.
+Als nächstes wird der Installationspfad abgefragt. Dieser kann
+abgeändert werden wenn gewünscht. Die Installation wird mit
+einem Klick auf "Install" gestartet.
