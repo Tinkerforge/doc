@@ -35,7 +35,7 @@ Verschiedene Aktionen können ausgewählt werden:
 Typischerweise sollen alle Schritte ausgeführt werden. Ein Klick auf
 "Next" startet den Installationsprozess.
 
-.. image:: /Images/Screenshots/brickv_windows_2_small.jpg
+.. image:: /Images/Screenshots/brickv_windows_2.jpg
    :scale: 100 %
    :alt: Brickv Installation Schritt 2
    :align: center
