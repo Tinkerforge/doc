@@ -9,33 +9,15 @@ Ethernet Master Extension
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Extensions/extension_ethernet_tilted_350.jpg",
-	               "Extensions/extension_ethernet_tilted_600.jpg",
-	               "Ethernet Extension")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet_cable_100.jpg",
-	             "Extensions/extension_ethernet_cable_600.jpg",
-	             "Ethernet Extension with Ethernet cable")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet_side_100.jpg",
-	             "Extensions/extension_ethernet_side_600.jpg",
-	             "Ethernet Extension side view")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet_bottom_100.jpg",
-	             "Extensions/extension_ethernet_bottom_600.jpg",
-	             "Ethernet Extension bottom")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet_top_100.jpg",
-	             "Extensions/extension_ethernet_top_600.jpg",
-	             "Ethernet Extension top")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Extensions/extension_ethernet_tilted_[?|?].jpg     Ethernet Extension
+	Extensions/extension_ethernet_cable_[100|600].jpg  Ethernet Extension with Ethernet cable
+	Extensions/extension_ethernet_side_[100|600].jpg   Ethernet Extension side view
+	Extensions/extension_ethernet_bottom_[?|?].jpg     Ethernet Extension bottom
+	Extensions/extension_ethernet_top_[?|?].jpg        Ethernet Extension top
+
+	{% tfgalleryend %}
 
 Features
 --------

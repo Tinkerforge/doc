@@ -9,38 +9,16 @@ Starter Kit: Camera Slider
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Kits/kit_camera_slider_complete1_350.jpg",
-	               "Kits/kit_camera_slider_complete1_800.jpg",
-	               "Camera Slider: Complete kit")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_content_100.jpg",
-	             "Kits/kit_camera_slider_content_800.jpg",
-	             "Camera Slider: Content")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_camera1_100.jpg",
-	             "Kits/kit_camera_slider_camera1_800.jpg",
-	             "Camera Slider: With video camera")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_camera2_100.jpg",
-	             "Kits/kit_camera_slider_camera2_800.jpg",
-	             "Camera Slider: With camera")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_w_lcd1_100.jpg",
-	             "Kits/kit_camera_slider_w_lcd1_800.jpg",
-	             "Camera Slider: With LCD")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_w_lcd2_100.jpg",
-	             "Kits/kit_camera_slider_w_lcd2_800.jpg",
-	             "Camera Slider: With LCD")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Kits/kit_camera_slider_complete1_[100|800].jpg  Camera Slider: Complete kit
+	Kits/kit_camera_slider_content_[100|800].jpg    Camera Slider: Content
+	Kits/kit_camera_slider_camera1_[100|800].jpg    Camera Slider: With video camera
+	Kits/kit_camera_slider_camera2_[100|800].jpg    Camera Slider: With camera
+	Kits/kit_camera_slider_w_lcd1_[100|800].jpg     Camera Slider: With LCD
+	Kits/kit_camera_slider_w_lcd2_[100|800].jpg     Camera Slider: With LCD
+
+	{% tfgalleryend %}
 
 Features
 --------

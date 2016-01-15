@@ -13,48 +13,18 @@ Distance IR Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_distance_ir_tilted_350.jpg",
-	               "Bricklets/bricklet_distance_ir_tilted_600.jpg",
-	               "Distance IR Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_ir_front_100.jpg",
-	             "Bricklets/bricklet_distance_ir_front_600.jpg",
-	             "Distance IR Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_ir_back_100.jpg",
-	             "Bricklets/bricklet_distance_ir_back_600.jpg",
-	             "Distance IR Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_ir_master_100.jpg",
-	             "Bricklets/bricklet_distance_ir_master_600.jpg",
-	             "Distance IR Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_ir_sensors_100.jpg",
-	             "Bricklets/bricklet_distance_ir_sensors_600.jpg",
-	             "Distance IR Bricklet sensors")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_distance_ir_case_100.jpg",
-	             "Cases/bricklet_distance_ir_case_600.jpg",
-	             "Distance IR Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_ir_brickv_100.jpg",
-	             "Bricklets/bricklet_distance_ir_brickv.jpg",
-	             "Distance IR Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/dist_ir_bricklet_dimensions_100.png",
-	             "Dimensions/dist_ir_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_distance_ir_tilted_[?|?].jpg       Distance IR Bricklet
+	Bricklets/bricklet_distance_ir_front_[?|?].jpg        Distance IR Bricklet
+	Bricklets/bricklet_distance_ir_back_[100|600].jpg     Distance IR Bricklet
+	Bricklets/bricklet_distance_ir_master_[100|600].jpg   Distance IR Bricklet with Master Brick
+	Bricklets/bricklet_distance_ir_sensors_[100|600].jpg  Distance IR Bricklet sensors
+	Cases/bricklet_distance_ir_case_[100|600].jpg         Distance IR Bricklet in Case
+	Bricklets/bricklet_distance_ir_brickv_[100|].jpg      Distance IR Bricklet in Brick Viewer
+	Dimensions/dist_ir_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

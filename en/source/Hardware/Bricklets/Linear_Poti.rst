@@ -13,53 +13,19 @@ Linear Poti Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_linear_poti_tilted_350.jpg",
-	               "Bricklets/bricklet_linear_poti_tilted_600.jpg",
-	               "Linear Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_linear_poti_front_100.jpg",
-	             "Bricklets/bricklet_linear_poti_front_600.jpg",
-	             "Linear Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_linear_poti_vertical_100.jpg",
-	             "Bricklets/bricklet_linear_poti_vertical_600.jpg",
-	             "Linear Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_linear_poti_horizontal_100.jpg",
-	             "Bricklets/bricklet_linear_poti_horizontal_600.jpg",
-	             "Linear Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_linear_poti_knob_100.jpg",
-	             "Bricklets/bricklet_linear_poti_knob_600.jpg",
-	             "Linear Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_linear_poti_master_100.jpg",
-	             "Bricklets/bricklet_linear_poti_master_600.jpg",
-	             "Linear Poti Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_linear_poti_case_100.jpg",
-	             "Cases/bricklet_linear_poti_case_600.jpg",
-	             "Linear Poti Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_linear_poti_brickv_100.jpg",
-	             "Bricklets/bricklet_linear_poti_brickv.jpg",
-	             "Linear Poti Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/linear_poti_bricklet_dimensions_100.png",
-	             "Dimensions/linear_poti_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_linear_poti_tilted_[?|?].jpg           Linear Poti Bricklet
+	Bricklets/bricklet_linear_poti_front_[?|?].jpg            Linear Poti Bricklet
+	Bricklets/bricklet_linear_poti_vertical_[?|?].jpg         Linear Poti Bricklet
+	Bricklets/bricklet_linear_poti_horizontal_[?|?].jpg       Linear Poti Bricklet
+	Bricklets/bricklet_linear_poti_knob_[100|600].jpg         Linear Poti Bricklet
+	Bricklets/bricklet_linear_poti_master_[100|600].jpg       Linear Poti Bricklet with Master Brick
+	Cases/bricklet_linear_poti_case_[100|600].jpg             Linear Poti Bricklet in Case
+	Bricklets/bricklet_linear_poti_brickv_[100|].jpg          Linear Poti Bricklet in Brick Viewer
+	Dimensions/linear_poti_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

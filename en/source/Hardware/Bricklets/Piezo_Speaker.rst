@@ -14,38 +14,16 @@ Piezo Speaker Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_piezo_speaker_tilted_350.jpg",
-	               "Bricklets/bricklet_piezo_speaker_tilted_600.jpg",
-	               "Piezo Speaker Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_piezo_speaker_vertical_100.jpg",
-	             "Bricklets/bricklet_piezo_speaker_vertical_600.jpg",
-	             "Piezo Speaker Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_piezo_speaker_horizontal_100.jpg",
-	             "Bricklets/bricklet_piezo_speaker_horizontal_600.jpg",
-	             "Piezo Speaker Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_piezo_speaker_case_tilted_100.jpg",
-	             "Cases/bricklet_piezo_speaker_case_tilted_600.jpg",
-	             "Piezo Speaker Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_piezo_speaker_brickv_100.jpg",
-	             "Bricklets/bricklet_piezo_speaker_brickv.jpg",
-	             "Piezo Speaker Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/piezo_speaker_bricklet_dimensions_100.png",
-	             "Dimensions/piezo_speaker_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_piezo_speaker_tilted_[?|?].jpg           Piezo Speaker Bricklet
+	Bricklets/bricklet_piezo_speaker_vertical_[?|?].jpg         Piezo Speaker Bricklet
+	Bricklets/bricklet_piezo_speaker_horizontal_[?|?].jpg       Piezo Speaker Bricklet
+	Cases/bricklet_piezo_speaker_case_tilted_[?|?].jpg          Piezo Speaker Bricklet in Case
+	Bricklets/bricklet_piezo_speaker_brickv_[100|].jpg          Piezo Speaker Bricklet in Brick Viewer
+	Dimensions/piezo_speaker_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

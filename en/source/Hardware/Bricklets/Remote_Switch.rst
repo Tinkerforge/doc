@@ -14,48 +14,18 @@ Remote Switch Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_remote_tilted_350.jpg",
-	               "Bricklets/bricklet_remote_tilted_600.jpg",
-	               "Remote Switch Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_remote_vertical_100.jpg",
-	             "Bricklets/bricklet_remote_vertical_600.jpg",
-	             "Remote Switch Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_remote_horizontal_100.jpg",
-	             "Bricklets/bricklet_remote_horizontal_600.jpg",
-	             "Remote Switch Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_remote_tilted_wo_antenna_100.jpg",
-	             "Bricklets/bricklet_remote_tilted_wo_antenna_600.jpg",
-	             "Remote Switch Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_remote_w_antenna_100.jpg",
-	             "Bricklets/bricklet_remote_w_antenna_600.jpg",
-	             "Remote Switch Bricklet und Antenne")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_remote_case_tilted_front_100.jpg",
-	             "Cases/bricklet_remote_case_tilted_front_600.jpg",
-	             "Remote Switch Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_remote_switch_brickv_100.jpg",
-	             "Bricklets/bricklet_remote_switch_brickv.jpg",
-	             "Remote Switch Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/remote_bricklet_dimensions_100.png",
-	             "Dimensions/remote_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_remote_tilted_[?|?].jpg             Remote Switch Bricklet
+	Bricklets/bricklet_remote_vertical_[?|?].jpg           Remote Switch Bricklet
+	Bricklets/bricklet_remote_horizontal_[?|?].jpg         Remote Switch Bricklet
+	Bricklets/bricklet_remote_tilted_wo_antenna_[?|?].jpg  Remote Switch Bricklet
+	Bricklets/bricklet_remote_w_antenna_[100|600].jpg      Remote Switch Bricklet und Antenne
+	Cases/bricklet_remote_case_tilted_front_[?|?].jpg      Remote Switch Bricklet im Gehäuse
+	Bricklets/bricklet_remote_switch_brickv_[100|].jpg     Remote Switch Bricklet in Brick Viewer
+	Dimensions/remote_bricklet_dimensions_[100|600].png    Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

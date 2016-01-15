@@ -9,23 +9,13 @@ RS485 Master Extension
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Extensions/extension_rs485_v11_tilted_350.jpg",
-	               "Extensions/extension_rs485_v11_tilted_600.jpg",
-	               "RS485 Extension")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_rs485_v11_top_100.jpg",
-	             "Extensions/extension_rs485_v11_top_600.jpg",
-	             "RS485 Extension top")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_rs485_v11_bottom_100.jpg",
-	             "Extensions/extension_rs485_v11_bottom_600.jpg",
-	             "RS485 Extension bottom")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Extensions/extension_rs485_v11_tilted_[?|?].jpg  RS485 Extension
+	Extensions/extension_rs485_v11_top_[?|?].jpg     RS485 Extension top
+	Extensions/extension_rs485_v11_bottom_[?|?].jpg  RS485 Extension bottom
+
+	{% tfgalleryend %}
 
 
 Features

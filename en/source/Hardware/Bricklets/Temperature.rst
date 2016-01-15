@@ -13,43 +13,17 @@ Temperature Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_temperature_tilted_350.jpg",
-	               "Bricklets/bricklet_temperature_tilted_600.jpg",
-	               "Temperature Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_temperature_vertical_100.jpg",
-	             "Bricklets/bricklet_temperature_vertical_600.jpg",
-	             "Temperature Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_temperature_horizontal_100.jpg",
-	             "Bricklets/bricklet_temperature_horizontal_600.jpg",
-	             "Temperature Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_temperature_master_100.jpg",
-	             "Bricklets/bricklet_temperature_master_600.jpg",
-	             "Temperature Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
-	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
-	             "Temperature Bricklet in Case")
-	}} 
-	{{
-	    tfdocimg("Bricklets/bricklet_temperature_brickv_100.jpg",
-	             "Bricklets/bricklet_temperature_brickv.jpg",
-	             "Temperature Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/temperature_bricklet_dimensions_100.png",
-	             "Dimensions/temperature_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_temperature_tilted_[?|?].jpg           Temperature Bricklet
+	Bricklets/bricklet_temperature_vertical_[?|?].jpg         Temperature Bricklet
+	Bricklets/bricklet_temperature_horizontal_[?|?].jpg       Temperature Bricklet
+	Bricklets/bricklet_temperature_master_[100|600].jpg       Temperature Bricklet with Master Brick
+	Cases/bricklet_ambient_light_case_built_up_[?|?].jpg      Temperature Bricklet in Case
+	Bricklets/bricklet_temperature_brickv_[100|].jpg          Temperature Bricklet in Brick Viewer
+	Dimensions/temperature_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

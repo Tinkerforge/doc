@@ -13,43 +13,17 @@ OLED 64x48 Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_oled_64x48_tilted_350.jpg",
-	               "Bricklets/bricklet_oled_64x48_tilted_600.jpg",
-	               "OLED 64x48 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_64x48_front_100.jpg",
-	             "Bricklets/bricklet_oled_64x48_front_600.jpg",
-	             "OLED 64x48 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_64x48_horizontal_100.jpg",
-	             "Bricklets/bricklet_oled_64x48_horizontal_600.jpg",
-	             "OLED 64x48 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_64x48_bottom_100.jpg",
-	             "Bricklets/bricklet_oled_64x48_bottom_600.jpg",
-	             "OLED 64x48 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_64x48_brickv_100.jpg",
-	             "Bricklets/bricklet_oled_64x48_brickv.jpg",
-	             "OLED 64x48 Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_font_100.png",
-	             "Bricklets/bricklet_oled_font_314.png",
-	             "OLED 64x48 Bricklet font")
-	}}
-	{{
-	    tfdocimg("Dimensions/oled_64x48_bricklet_dimensions_100.png",
-	             "Dimensions/oled_64x48_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_oled_64x48_tilted_[?|?].jpg           OLED 64x48 Bricklet
+	Bricklets/bricklet_oled_64x48_front_[?|?].jpg            OLED 64x48 Bricklet
+	Bricklets/bricklet_oled_64x48_horizontal_[?|?].jpg       OLED 64x48 Bricklet
+	Bricklets/bricklet_oled_64x48_bottom_[?|?].jpg           OLED 64x48 Bricklet
+	Bricklets/bricklet_oled_64x48_brickv_[100|].jpg          OLED 64x48 Bricklet in Brick Viewer
+	Bricklets/bricklet_oled_font_[100|314].png               OLED 64x48 Bricklet font
+	Dimensions/oled_64x48_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

@@ -10,54 +10,19 @@ Starter Kit: Internet of Things
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-		tfdocstart("Kits/iot_on_table_350.jpg",
-				   "Kits/iot_on_table_800.jpg",
-				   "Starter Kit: Internet of Things")
-	}}
-	{{
-		tfdocimg("Kits/iot_front_350.jpg",
-				 "Kits/iot_front_800.jpg",
-				 "Starter Kit: Internet of Things")
-	}}
-	{{
-		tfdocimg("Kits/iot_back_ethernet_100.jpg",
-				 "Kits/iot_back_ethernet_800.jpg",
-				 "Internet of Things: Back side with Ethernet")
-	}}
-	{{
-		tfdocimg("Kits/iot_rpi_100.jpg",
-				 "Kits/iot_rpi_800.jpg",
-				 "Internet of Things: Connected to Raspberry PI")
-	}}
-	{{
-		tfdocimg("Kits/iot_half_open_100.jpg",
-				 "Kits/iot_half_open_800.jpg",
-				 "Internet of Things: Open")
-	}}
-	{{
-		tfdocimg("Kits/iot_half_open_ethernet_100.jpg",
-				 "Kits/iot_half_open_ethernet_800.jpg",
-				 "Internet of Things: Open with Ethernet")
-	}}
-	{{
-		tfdocimg("Kits/iot_content_100.jpg",
-				 "Kits/iot_content_800.jpg",
-				 "Internet of Things: Content")
-	}}
-	{{
-		tfdocimg("Kits/iot_packaging_open_100.jpg",
-				 "Kits/iot_packaging_open_800.jpg",
-				 "Internet of Things: Packaging")
-	}}
-	{{
-		tfdocimg("Kits/iot_website_iot_remote_switch_100.jpg",
-				 "Kits/iot_website_iot_remote_switch_600.jpg",
-				 "Screenshot of iot-remote.com")
+	{% tfgallery %}
 
-	}}
-	{{ tfdocend() }}
+	Kits/iot_on_table_[100|800].jpg                   Starter Kit: Internet of Things
+	Kits/iot_front_[?|?].jpg                          Starter Kit: Internet of Things
+	Kits/iot_back_ethernet_[100|800].jpg              Internet of Things: Back side with Ethernet
+	Kits/iot_rpi_[100|800].jpg                        Internet of Things: Connected to Raspberry PI
+	Kits/iot_half_open_[100|800].jpg                  Internet of Things: Open
+	Kits/iot_half_open_ethernet_[100|800].jpg         Internet of Things: Open with Ethernet
+	Kits/iot_content_[100|800].jpg                    Internet of Things: Content
+	Kits/iot_packaging_open_[100|800].jpg             Internet of Things: Packaging
+	Kits/iot_website_iot_remote_switch_[100|600].jpg  Screenshot of iot-remote.com
+
+	{% tfgalleryend %}
 
 Features
 --------

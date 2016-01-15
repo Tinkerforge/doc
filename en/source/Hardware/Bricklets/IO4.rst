@@ -13,43 +13,17 @@ IO-4 Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_io4_11_tilted_350.jpg",
-	               "Bricklets/bricklet_io4_11_tilted_600.jpg",
-	               "IO-4 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_io4_11_vertical_100.jpg",
-	             "Bricklets/bricklet_io4_11_vertical_600.jpg",
-	             "IO-4 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_io4_11_horizontal_100.jpg",
-	             "Bricklets/bricklet_io4_11_horizontal_600.jpg",
-	             "IO-4 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_io4_11_master_100.jpg",
-	             "Bricklets/bricklet_io4_11_master_600.jpg",
-	             "IO-4 Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_io4_case_100.jpg",
-	             "Cases/bricklet_io4_case_600.jpg",
-	             "IO-4 Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_io4_brickv_100.jpg",
-	             "Bricklets/bricklet_io4_brickv.jpg",
-	             "IO-4 Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/io4_bricklet_dimensions_100.png",
-	             "Dimensions/io4_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_io4_11_tilted_[?|?].jpg        IO-4 Bricklet
+	Bricklets/bricklet_io4_11_vertical_[?|?].jpg      IO-4 Bricklet
+	Bricklets/bricklet_io4_11_horizontal_[?|?].jpg    IO-4 Bricklet
+	Bricklets/bricklet_io4_11_master_[100|600].jpg    IO-4 Bricklet with Master Brick
+	Cases/bricklet_io4_case_[100|600].jpg             IO-4 Bricklet in Case
+	Bricklets/bricklet_io4_brickv_[100|].jpg          IO-4 Bricklet in Brick Viewer
+	Dimensions/io4_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

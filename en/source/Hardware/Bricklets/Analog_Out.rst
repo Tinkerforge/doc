@@ -13,43 +13,17 @@ Analog Out Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_analog_out_tilted_350.jpg",
-	               "Bricklets/bricklet_analog_out_tilted_600.jpg",
-	               "Analog Out Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_analog_out_vertical_100.jpg",
-	             "Bricklets/bricklet_analog_out_vertical_600.jpg",
-	             "Analog Out Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_analog_out_horizontal_100.jpg",
-	             "Bricklets/bricklet_analog_out_horizontal_600.jpg",
-	             "Analog Out Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_analog_out_master_100.jpg",
-	             "Bricklets/bricklet_analog_out_master_600.jpg",
-	             "Analog Out Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_analog_in_case_build_up_100.jpg",
-	             "Cases/bricklet_analog_in_case_build_up_600.jpg",
-	             "Analog Out Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_analog_out_brickv_100.jpg",
-	             "Bricklets/bricklet_analog_out_brickv.jpg",
-	             "Analog Out Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/analog_out_bricklet_dimensions_100.png",
-	             "Dimensions/analog_out_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_analog_out_tilted_[?|?].jpg           Analog Out Bricklet
+	Bricklets/bricklet_analog_out_vertical_[?|?].jpg         Analog Out Bricklet
+	Bricklets/bricklet_analog_out_horizontal_[?|?].jpg       Analog Out Bricklet
+	Bricklets/bricklet_analog_out_master_[100|600].jpg       Analog Out Bricklet with Master Brick
+	Cases/bricklet_analog_in_case_build_up_[100|600].jpg     Analog Out Bricklet in Case
+	Bricklets/bricklet_analog_out_brickv_[100|].jpg          Analog Out Bricklet in Brick Viewer
+	Dimensions/analog_out_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

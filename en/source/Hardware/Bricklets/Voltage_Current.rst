@@ -13,43 +13,17 @@ Voltage/Current Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_voltage_current_tilted_350.jpg",
-	               "Bricklets/bricklet_voltage_current_tilted_600.jpg",
-	               "Voltage/Current Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_voltage_current_horizontal_100.jpg",
-	             "Bricklets/bricklet_voltage_current_horizontal_600.jpg",
-	             "Voltage/Current Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_voltage_current_vertical_100.jpg",
-	             "Bricklets/bricklet_voltage_current_vertical_600.jpg",
-	             "Voltage/Current Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_voltage_current_setup_100.jpg",
-	             "Bricklets/bricklet_voltage_current_setup_600.jpg",
-	             "Voltage/Current Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_voltage_current_case_100.jpg",
-	             "Cases/bricklet_voltage_current_case_600.jpg",
-	             "Voltage/Current Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_voltage_current_brickv_100.png",
-	             "Bricklets/bricklet_voltage_current_brickv.png",
-	             "Voltage/Current Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/voltage_current_bricklet_dimensions_100.png",
-	             "Dimensions/voltage_current_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_voltage_current_tilted_[?|?].jpg           Voltage/Current Bricklet
+	Bricklets/bricklet_voltage_current_horizontal_[?|?].jpg       Voltage/Current Bricklet
+	Bricklets/bricklet_voltage_current_vertical_[?|?].jpg         Voltage/Current Bricklet
+	Bricklets/bricklet_voltage_current_setup_[?|?].jpg            Voltage/Current Bricklet with Master Brick
+	Cases/bricklet_voltage_current_case_[100|600].jpg             Voltage/Current Bricklet in Case
+	Bricklets/bricklet_voltage_current_brickv_[100|].png          Voltage/Current Bricklet in Brick Viewer
+	Dimensions/voltage_current_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

@@ -14,43 +14,17 @@ Sound Intensity Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_sound_intensity_tilted_350.jpg",
-	               "Bricklets/bricklet_sound_intensity_tilted_600.jpg",
-	               "Sound Intensity Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_sound_intensity_vertical_100.jpg",
-	             "Bricklets/bricklet_sound_intensity_vertical_600.jpg",
-	             "Sound Intensity Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_sound_intensity_horizontal_100.jpg",
-	             "Bricklets/bricklet_sound_intensity_horizontal_600.jpg",
-	             "Sound Intensity Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_sound_intensity_tilted_back_100.jpg",
-	             "Bricklets/bricklet_sound_intensity_tilted_back_600.jpg",
-	             "Sound Intensity Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_sound_intensity_case_tilted_100.jpg",
-	             "Cases/bricklet_sound_intensity_case_tilted_600.jpg",
-	             "Sound Intensity Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_sound_intensity_brickv_100.jpg",
-	             "Bricklets/bricklet_sound_intensity_brickv.jpg",
-	             "Sound Intensity Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/sound_intensity_bricklet_dimensions_100.png",
-	             "Dimensions/sound_intensity_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_sound_intensity_tilted_[?|?].jpg           Sound Intensity Bricklet
+	Bricklets/bricklet_sound_intensity_vertical_[?|?].jpg         Sound Intensity Bricklet
+	Bricklets/bricklet_sound_intensity_horizontal_[?|?].jpg       Sound Intensity Bricklet
+	Bricklets/bricklet_sound_intensity_tilted_back_[?|?].jpg      Sound Intensity Bricklet
+	Cases/bricklet_sound_intensity_case_tilted_[?|?].jpg          Sound Intensity Bricklet in Case
+	Bricklets/bricklet_sound_intensity_brickv_[100|].jpg          Sound Intensity Bricklet in Brick Viewer
+	Dimensions/sound_intensity_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

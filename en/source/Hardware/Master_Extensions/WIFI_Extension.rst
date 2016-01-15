@@ -9,43 +9,17 @@ WIFI Master Extension
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Extensions/extension_wifi_tilted_350.jpg",
-	               "Extensions/extension_wifi_tilted_600.jpg",
-	               "WIFI Extension")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_stack_100.jpg",
-	             "Extensions/extension_wifi_stack_600.jpg",
-	             "WIFI Extension with Master Brick in a stack")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_horizontal_100.jpg",
-	             "Extensions/extension_wifi_horizontal_600.jpg",
-	             "WIFI Extension top")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_bottom_100.jpg",
-	             "Extensions/extension_wifi_bottom_600.jpg",
-	             "WIFI Extension bottom")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_caption_100.jpg",
-	             "Extensions/extension_wifi_caption_600.jpg",
-	             "WIFI Extension with caption")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_ufl_100.jpg",
-	             "Extensions/extension_wifi_ufl_600.jpg",
-	             "U.FL connector of WIFI Extension")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_front_100.jpg",
-	             "Extensions/extension_wifi_front_600.jpg",
-	             "WIFI Extension front")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Extensions/extension_wifi_tilted_[?|?].jpg      WIFI Extension
+	Extensions/extension_wifi_stack_[?|?].jpg       WIFI Extension with Master Brick in a stack
+	Extensions/extension_wifi_horizontal_[?|?].jpg  WIFI Extension top
+	Extensions/extension_wifi_bottom_[?|?].jpg      WIFI Extension bottom
+	Extensions/extension_wifi_caption_[?|?].jpg     WIFI Extension with caption
+	Extensions/extension_wifi_ufl_[100|600].jpg     U.FL connector of WIFI Extension
+	Extensions/extension_wifi_front_[?|?].jpg       WIFI Extension front
+
+	{% tfgalleryend %}
 
 
 Features

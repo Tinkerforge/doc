@@ -14,48 +14,18 @@ Line Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_line_tilted_350.jpg",
-	               "Bricklets/bricklet_line_tilted_600.jpg",
-	               "Line Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_line_vertical_100.jpg",
-	             "Bricklets/bricklet_line_vertical_600.jpg",
-	             "Line Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_line_horizontal_100.jpg",
-	             "Bricklets/bricklet_line_horizontal_600.jpg",
-	             "Line Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_line_tilted_back_100.jpg",
-	             "Bricklets/bricklet_line_tilted_back_600.jpg",
-	             "Line Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_line_case1_tilted_100.jpg",
-	             "Bricklets/bricklet_line_case1_tilted_600.jpg",
-	             "Line Bricklet Mounting Plate Version 1")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_line_case2_tilted1_100.jpg",
-	             "Bricklets/bricklet_line_case2_tilted1_600.jpg",
-	             "Line Bricklet Mounting Plate Version 2")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_line_brickv_100.jpg",
-	             "Bricklets/bricklet_line_brickv.jpg",
-	             "Line Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/line_bricklet_dimensions_100.png",
-	             "Dimensions/line_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_line_tilted_[?|?].jpg           Line Bricklet
+	Bricklets/bricklet_line_vertical_[?|?].jpg         Line Bricklet
+	Bricklets/bricklet_line_horizontal_[?|?].jpg       Line Bricklet
+	Bricklets/bricklet_line_tilted_back_[?|?].jpg      Line Bricklet
+	Cases/bricklet_line_case1_tilted_[?|?].jpg         Line Bricklet Mounting Plate Version 1
+	Cases/bricklet_line_case2_tilted1_[?|?].jpg        Line Bricklet Mounting Plate Version 2
+	Bricklets/bricklet_line_brickv_[100|].jpg          Line Bricklet in Brick Viewer
+	Dimensions/line_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

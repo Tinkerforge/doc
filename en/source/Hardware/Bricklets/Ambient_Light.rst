@@ -12,43 +12,17 @@ Ambient Light Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_ambient_light_tilted_350.jpg",
-	               "Bricklets/bricklet_ambient_light_tilted_600.jpg",
-	               "Ambient Light Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ambient_light_vertical_100.jpg",
-	             "Bricklets/bricklet_ambient_light_vertical_600.jpg",
-	             "Ambient Light Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ambient_light_horizontal_100.jpg",
-	             "Bricklets/bricklet_ambient_light_horizontal_600.jpg",
-	             "Ambient Light Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ambient_light_master_100.jpg",
-	             "Bricklets/bricklet_ambient_light_master_600.jpg",
-	             "Ambient Light Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
-	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
-	             "Ambient Light Bricklet in case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ambient_light_brickv_100.jpg",
-	             "Bricklets/bricklet_ambient_light_brickv.jpg",
-	             "Ambient Light Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/ambient_light_bricklet_dimensions_100.png",
-	             "Dimensions/ambient_light_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_ambient_light_tilted_[?|?].jpg           Ambient Light Bricklet
+	Bricklets/bricklet_ambient_light_vertical_[?|?].jpg         Ambient Light Bricklet
+	Bricklets/bricklet_ambient_light_horizontal_[?|?].jpg       Ambient Light Bricklet
+	Bricklets/bricklet_ambient_light_master_[100|600].jpg       Ambient Light Bricklet with Master Brick
+	Cases/bricklet_ambient_light_case_built_up_[?|?].jpg        Ambient Light Bricklet in case
+	Bricklets/bricklet_ambient_light_brickv_[100|].jpg          Ambient Light Bricklet in Brick Viewer
+	Dimensions/ambient_light_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 .. note::
 
