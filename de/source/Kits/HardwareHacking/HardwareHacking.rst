@@ -11,48 +11,18 @@ Starterkit: Hardware Hacking
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Kits/hardware_hacking_kit_tilted_350.jpg",
-	               "Kits/hardware_hacking_kit_tilted_800.jpg",
-	               "Hardware Hacking: Gelötetes Kit mit Steckdosen")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_remote_finished_100.jpg",
-	             "Kits/hardware_hacking_remote_finished_800.jpg",
-	             "Hardware Hacking: Kit mit Funksteckdosenfernbedienung")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_smoke_detector_finished_100.jpg",
-	             "Kits/hardware_hacking_smoke_detector_finished_800.jpg",
-	             "Hardware Hacking: Kit mit Rauchmelder")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_garage_remote_finished_100.jpg",
-	             "Kits/hardware_hacking_garage_remote_finished_800.jpg",
-	             "Hardware Hacking: Kit Garagentorfernbedienung")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_smoke_detector_and_remote_new_100.jpg",
-	             "Kits/hardware_hacking_smoke_detector_and_remote_new_800.jpg",
-	             "Hardware Hacking: Kit mit Funksteckdosenfernbedienung und Rauchmelder")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_content_100.jpg",
-	             "Kits/hardware_hacking_content_800.jpg",
-	             "Hardware Hacking: Inhalte")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_remote_soldered_closeup_remote_100.jpg",
-	             "Kits/hardware_hacking_remote_soldered_closeup_remote_800.jpg",
-	             "Hardware Hacking: Gehackte Fernbedienung")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_remote_soldered_closeup_iqr_top_100.jpg",
-	             "Kits/hardware_hacking_remote_soldered_closeup_iqr_top_800.jpg",
-	             "Hardware Hacking: Quad Relay Verdrahtung")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Kits/hardware_hacking_kit_tilted_[?|?].jpg                          Hardware Hacking: Gelötetes Kit mit Steckdosen
+	Kits/hardware_hacking_remote_finished_[100|800].jpg                 Hardware Hacking: Kit mit Funksteckdosenfernbedienung
+	Kits/hardware_hacking_smoke_detector_finished_[100|800].jpg         Hardware Hacking: Kit mit Rauchmelder
+	Kits/hardware_hacking_garage_remote_finished_[100|800].jpg          Hardware Hacking: Kit Garagentorfernbedienung
+	Kits/hardware_hacking_smoke_detector_and_remote_new_[100|800].jpg   Hardware Hacking: Kit mit Funksteckdosenfernbedienung und Rauchmelder
+	Kits/hardware_hacking_content_[100|800].jpg                         Hardware Hacking: Inhalte
+	Kits/hardware_hacking_remote_soldered_closeup_remote_[100|800].jpg  Hardware Hacking: Gehackte Fernbedienung
+	Kits/hardware_hacking_remote_soldered_closeup_iqr_top_[?|?].jpg     Hardware Hacking: Quad Relay Verdrahtung
+
+	{% tfgalleryend %}
 
 
 Features

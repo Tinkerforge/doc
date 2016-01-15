@@ -14,43 +14,17 @@ Tilt Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_tilt_tilted_350.jpg",
-	               "Bricklets/bricklet_tilt_tilted_600.jpg",
-	               "Tilt Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_tilt_vertical_100.jpg",
-	             "Bricklets/bricklet_tilt_vertical_600.jpg",
-	             "Tilt Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_tilt_horizontal_100.jpg",
-	             "Bricklets/bricklet_tilt_horizontal_600.jpg",
-	             "Tilt Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_tilt_tilted_back_100.jpg",
-	             "Bricklets/bricklet_tilt_tilted_back_600.jpg",
-	             "Tilt Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_tilt_case_tilted_front_100.jpg",
-	             "Cases/bricklet_tilt_case_tilted_front_600.jpg",
-	             "Tilt Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_tilt_brickv_100.jpg",
-	             "Bricklets/bricklet_tilt_brickv.jpg",
-	             "Tilt Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/tilt_bricklet_dimensions_100.png",
-	             "Dimensions/tilt_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_tilt_tilted_[?|?].jpg           Tilt Bricklet
+	Bricklets/bricklet_tilt_vertical_[?|?].jpg         Tilt Bricklet
+	Bricklets/bricklet_tilt_horizontal_[?|?].jpg       Tilt Bricklet
+	Bricklets/bricklet_tilt_tilted_back_[?|?].jpg      Tilt Bricklet
+	Cases/bricklet_tilt_case_tilted_front_[?|?].jpg    Tilt Bricklet im Gehäuse
+	Bricklets/bricklet_tilt_brickv_[100|].jpg          Tilt Bricklet im Brick Viewer
+	Dimensions/tilt_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

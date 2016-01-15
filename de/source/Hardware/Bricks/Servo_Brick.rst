@@ -12,48 +12,18 @@ Servo Brick
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricks/brick_servo_tilted_front_350.jpg",
-	               "Bricks/brick_servo_tilted_front_600.jpg",
-	               "Servo Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_servo_tilted_back_100.jpg",
-	             "Bricks/brick_servo_tilted_back_600.jpg",
-	             "Servo Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_servo_setup_100.jpg",
-	             "Bricks/brick_servo_setup_600.jpg",
-	             "Servo Brick mit Servo")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_servo_setup_big_100.jpg",
-	             "Bricks/brick_servo_setup_big_600.jpg",
-	             "Servo Brick mit Servos")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_servo_caption_100.jpg",
-	             "Bricks/brick_servo_caption_600.jpg",
-	             "Servo Brick mit Beschriftung")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_servo_top_100.jpg",
-	             "Bricks/brick_servo_top_600.jpg",
-	             "Servo Brick Oberseite")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_servo_bottom_100.jpg",
-	             "Bricks/brick_servo_bottom_600.jpg",
-	             "Servo Brick Unterseite")
-	}}
-	{{
-	    tfdocimg("Dimensions/servo_brick_dimensions_100.png",
-	             "Dimensions/servo_brick_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricks/brick_servo_tilted_front_[?|?].jpg        Servo Brick
+	Bricks/brick_servo_tilted_back_[?|?].jpg         Servo Brick
+	Bricks/brick_servo_setup_[?|?].jpg               Servo Brick mit Servo
+	Bricks/brick_servo_setup_big_[?|?].jpg           Servo Brick mit Servos
+	Bricks/brick_servo_caption_[?|?].jpg             Servo Brick mit Beschriftung
+	Bricks/brick_servo_top_[?|?].jpg                 Servo Brick Oberseite
+	Bricks/brick_servo_bottom_[?|?].jpg              Servo Brick Unterseite
+	Dimensions/servo_brick_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

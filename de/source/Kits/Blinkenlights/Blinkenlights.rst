@@ -10,48 +10,18 @@ Starterkit: Blinkenlights
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Kits/kit_blinkenlights_fire_350.jpg",
-	               "Kits/kit_blinkenlights_fire_600.jpg",
-	               "Blinkenlights: Feuer Simulation")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_fire_daylight_100.jpg",
-	             "Kits/kit_blinkenlights_fire_daylight_600.jpg",
-	             "Blinkenlights: Feuer Simulation bei Tageslicht")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_on_wall_100.jpg",
-	             "Kits/kit_blinkenlights_on_wall_600.jpg",
-	             "Blinkenlights: An der Wand")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_pong_100.jpg",
-	             "Kits/kit_blinkenlights_pong_600.jpg",
-	             "Blinkenlights: Pong")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_pong_daylight_100.jpg",
-	             "Kits/kit_blinkenlights_pong_daylight_600.jpg",
-	             "Blinkenlights: Pong bei Tageslicht")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_tetris_100.jpg",
-	             "Kits/kit_blinkenlights_tetris_600.jpg",
-	             "Blinkenlights: Tetris")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_text_daylight_100.jpg",
-	             "Kits/kit_blinkenlights_text_daylight_600.jpg",
-	             "Blinkenlights: Text-Anzeige")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_rainbow_near_far_dark_100.jpg",
-	             "Kits/kit_blinkenlights_rainbow_near_far_dark_600.jpg",
-	             "Blinkenlights: Regenbogen mit verschiedenen Frontplatten")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Kits/kit_blinkenlights_fire_[100|600].jpg                   Blinkenlights: Feuer Simulation
+	Kits/kit_blinkenlights_fire_daylight_[100|600].jpg          Blinkenlights: Feuer Simulation bei Tageslicht
+	Kits/kit_blinkenlights_on_wall_[100|600].jpg                Blinkenlights: An der Wand
+	Kits/kit_blinkenlights_pong_[100|600].jpg                   Blinkenlights: Pong
+	Kits/kit_blinkenlights_pong_daylight_[100|600].jpg          Blinkenlights: Pong bei Tageslicht
+	Kits/kit_blinkenlights_tetris_[100|600].jpg                 Blinkenlights: Tetris
+	Kits/kit_blinkenlights_text_daylight_[100|600].jpg          Blinkenlights: Text-Anzeige
+	Kits/kit_blinkenlights_rainbow_near_far_dark_[100|600].jpg  Blinkenlights: Regenbogen mit verschiedenen Frontplatten
+
+	{% tfgalleryend %}
 
 Features
 --------

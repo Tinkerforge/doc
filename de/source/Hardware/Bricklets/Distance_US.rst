@@ -14,48 +14,18 @@ Distance US Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_distance_us_tilted_350.jpg",
-	               "Bricklets/bricklet_distance_us_tilted_600.jpg",
-	               "Distance US Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_us_vertical_100.jpg",
-	             "Bricklets/bricklet_distance_us_vertical_600.jpg",
-	             "Distance US Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_us_horizontal_100.jpg",
-	             "Bricklets/bricklet_distance_us_horizontal_600.jpg",
-	             "Distance US Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_us_tilted_back_100.jpg",
-	             "Bricklets/bricklet_distance_us_tilted_back_600.jpg",
-	             "Distance US Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_us_w_sensor_100.jpg",
-	             "Bricklets/bricklet_distance_us_w_sensor_600.jpg",
-	             "Distance US Bricklet mit Sensor")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_distance_us_case_front_100.jpg",
-	             "Cases/bricklet_distance_us_case_front_600.jpg",
-	             "Distance US Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_distance_us_brickv_100.jpg",
-	             "Bricklets/bricklet_distance_us_brickv.jpg",
-	             "Distance US Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/distance_us_bricklet_dimensions_100.png",
-	             "Dimensions/distance_us_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_distance_us_tilted_[?|?].jpg           Distance US Bricklet
+	Bricklets/bricklet_distance_us_vertical_[?|?].jpg         Distance US Bricklet
+	Bricklets/bricklet_distance_us_horizontal_[?|?].jpg       Distance US Bricklet
+	Bricklets/bricklet_distance_us_tilted_back_[?|?].jpg      Distance US Bricklet
+	Bricklets/bricklet_distance_us_w_sensor_[100|600].jpg     Distance US Bricklet mit Sensor
+	Cases/bricklet_distance_us_case_front_[?|?].jpg           Distance US Bricklet im Gehäuse
+	Bricklets/bricklet_distance_us_brickv_[100|].jpg          Distance US Bricklet im Brick Viewer
+	Dimensions/distance_us_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

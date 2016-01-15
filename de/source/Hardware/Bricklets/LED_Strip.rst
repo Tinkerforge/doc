@@ -34,53 +34,19 @@ LED Strip Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_led_strip_tilted_350.jpg",
-	               "Bricklets/bricklet_led_strip_tilted_600.jpg",
-	               "LED Strip Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_led_strip_vertical_100.jpg",
-	             "Bricklets/bricklet_led_strip_vertical_600.jpg",
-	             "LED Strip Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_led_strip_horizontal_100.jpg",
-	             "Bricklets/bricklet_led_strip_horizontal_600.jpg",
-	             "LED Strip Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_led_strip_tilted_back_100.jpg",
-	             "Bricklets/bricklet_led_strip_tilted_back_600.jpg",
-	             "LED Strip Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_led_strip_case_tilted_100.jpg",
-	             "Cases/bricklet_led_strip_case_tilted_600.jpg",
-	             "LED Strip Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_led_strip_50_pixel_100.jpg",
-	             "Bricklets/bricklet_led_strip_50_pixel_600.jpg",
-	             "LED Strip Bricklet mit 50 RGB LED Pixel")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_led_strip_w_reel_100.jpg",
-	             "Bricklets/bricklet_led_strip_w_reel_600.jpg",
-	             "LED Strip Bricklet mit RGB LED Streifen")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_led_strip_brickv_100.jpg",
-	             "Bricklets/bricklet_led_strip_brickv.jpg",
-	             "LED Strip Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/led_strip_bricklet_dimensions_100.png",
-	             "Dimensions/led_strip_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_led_strip_tilted_[?|?].jpg           LED Strip Bricklet
+	Bricklets/bricklet_led_strip_vertical_[?|?].jpg         LED Strip Bricklet
+	Bricklets/bricklet_led_strip_horizontal_[?|?].jpg       LED Strip Bricklet
+	Bricklets/bricklet_led_strip_tilted_back_[?|?].jpg      LED Strip Bricklet
+	Cases/bricklet_led_strip_case_tilted_[?|?].jpg          LED Strip Bricklet im Gehäuse
+	Bricklets/bricklet_led_strip_50_pixel_[100|600].jpg     LED Strip Bricklet mit 50 RGB LED Pixel
+	Bricklets/bricklet_led_strip_w_reel_[100|600].jpg       LED Strip Bricklet mit RGB LED Streifen
+	Bricklets/bricklet_led_strip_brickv_[100|].jpg          LED Strip Bricklet im Brick Viewer
+	Dimensions/led_strip_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

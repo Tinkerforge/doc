@@ -10,54 +10,19 @@ Starterkit: Internet der Dinge
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-		tfdocstart("Kits/iot_on_table_350.jpg",
-				   "Kits/iot_on_table_800.jpg",
-				   "Starterkit: Internet der Dinge")
-	}}
-	{{
-		tfdocimg("Kits/iot_front_100.jpg",
-				 "Kits/iot_front_800.jpg",
-				 "Starterkit: Internet der Dinge")
-	}}
-	{{
-		tfdocimg("Kits/iot_back_ethernet_100.jpg",
-				 "Kits/iot_back_ethernet_800.jpg",
-				 "Internet der Dinge: Rückseite mit Ethernet")
-	}}
-	{{
-		tfdocimg("Kits/iot_rpi_100.jpg",
-				 "Kits/iot_rpi_800.jpg",
-				 "Internet der Dinge: An Raspberry PI")
-	}}
-	{{
-		tfdocimg("Kits/iot_half_open_100.jpg",
-				 "Kits/iot_half_open_800.jpg",
-				 "Internet der Dinge: Offen")
-	}}
-	{{
-		tfdocimg("Kits/iot_half_open_ethernet_100.jpg",
-				 "Kits/iot_half_open_ethernet_800.jpg",
-				 "Internet der Dinge: Offen mit Ethernet")
-	}}
-	{{
-		tfdocimg("Kits/iot_content_100.jpg",
-				 "Kits/iot_content_800.jpg",
-				 "Internet der Dinge: Inhalt")
-	}}
-	{{
-		tfdocimg("Kits/iot_packaging_open_100.jpg",
-				 "Kits/iot_packaging_open_800.jpg",
-				 "Internet der Dinge: Verpackung")
-	}}
-	{{
-		tfdocimg("Kits/iot_website_iot_remote_switch_100.jpg",
-				 "Kits/iot_website_iot_remote_switch_600.jpg",
-				 "Screenshot von iot-remote.com")
+	{% tfgallery %}
 
-	}}
-	{{ tfdocend() }}
+	Kits/iot_on_table_[100|800].jpg                   Starterkit: Internet der Dinge
+	Kits/iot_front_[?|?].jpg                          Starterkit: Internet der Dinge
+	Kits/iot_back_ethernet_[100|800].jpg              Internet der Dinge: Rückseite mit Ethernet
+	Kits/iot_rpi_[100|800].jpg                        Internet der Dinge: An Raspberry PI
+	Kits/iot_half_open_[100|800].jpg                  Internet der Dinge: Offen
+	Kits/iot_half_open_ethernet_[100|800].jpg         Internet der Dinge: Offen mit Ethernet
+	Kits/iot_content_[100|800].jpg                    Internet der Dinge: Inhalt
+	Kits/iot_packaging_open_[100|800].jpg             Internet der Dinge: Verpackung
+	Kits/iot_website_iot_remote_switch_[100|600].jpg  Screenshot von iot-remote.com
+
+	{% tfgalleryend %}
 
 Features
 --------

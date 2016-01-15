@@ -14,63 +14,21 @@ Multi Touch Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_multi_touch_tilted_350.jpg",
-	               "Bricklets/bricklet_multi_touch_tilted_600.jpg",
-	               "Multi Touch Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_multi_touch_vertical_100.jpg",
-	             "Bricklets/bricklet_multi_touch_vertical_600.jpg",
-	             "Multi Touch Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_multi_touch_horizontal_100.jpg",
-	             "Bricklets/bricklet_multi_touch_horizontal_600.jpg",
-	             "Multi Touch Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_multi_touch_tilted_back_100.jpg",
-	             "Bricklets/bricklet_multi_touch_tilted_back_600.jpg",
-	             "Multi Touch Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_multi_touch_case_tilted_100.jpg",
-	             "Cases/bricklet_multi_touch_case_tilted_600.jpg",
-	             "Multi Touch Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/button_pad_w_multi_touch_tilted_100.jpg",
-	             "Bricklets/button_pad_w_multi_touch_tilted_600.jpg",
-	             "Multi Touch Bricklet mit Button Pads")
-	}}
-	{{
-	    tfdocimg("Bricklets/cursor_pad_w_cable_100.jpg",
-	             "Bricklets/cursor_pad_w_cable_600.jpg",
-	             "Cursor Pad mit Kabel")
-	}}
-	{{
-	    tfdocimg("Bricklets/key_pad_w_multi_touch_100.jpg",
-	             "Bricklets/key_pad_w_multi_touch_600.jpg",
-	             "Multi Touch Bricklet mit Key Pad")
-	}}
-	{{
-	    tfdocimg("Bricklets/slider_pad_w_multi_touch_100.jpg",
-	             "Bricklets/slider_pad_w_multi_touch_600.jpg",
-	             "Multi Touch Bricklet mit Slider Pad")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_multi_touch_brickv_100.jpg",
-	             "Bricklets/bricklet_multi_touch_brickv.jpg",
-	             "Multi Touch Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/multi_touch_bricklet_dimensions_100.png",
-	             "Dimensions/multi_touch_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_multi_touch_tilted_[?|?].jpg           Multi Touch Bricklet
+	Bricklets/bricklet_multi_touch_vertical_[?|?].jpg         Multi Touch Bricklet
+	Bricklets/bricklet_multi_touch_horizontal_[?|?].jpg       Multi Touch Bricklet
+	Bricklets/bricklet_multi_touch_tilted_back_[?|?].jpg      Multi Touch Bricklet
+	Cases/bricklet_multi_touch_case_tilted_[?|?].jpg          Multi Touch Bricklet im Gehäuse
+	Bricklets/button_pad_w_multi_touch_tilted_[?|?].jpg       Multi Touch Bricklet mit Button Pads
+	Bricklets/cursor_pad_w_cable_[100|600].jpg                Cursor Pad mit Kabel
+	Bricklets/key_pad_w_multi_touch_[100|600].jpg             Multi Touch Bricklet mit Key Pad
+	Bricklets/slider_pad_w_multi_touch_[100|600].jpg          Multi Touch Bricklet mit Slider Pad
+	Bricklets/bricklet_multi_touch_brickv_[100|].jpg          Multi Touch Bricklet im Brick Viewer
+	Dimensions/multi_touch_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

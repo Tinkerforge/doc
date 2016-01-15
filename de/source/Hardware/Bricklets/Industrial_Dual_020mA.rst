@@ -14,43 +14,17 @@ Industrial Dual 0-20mA Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_industrial_dual_0_20ma_tilted_350.jpg",
-	               "Bricklets/bricklet_industrial_dual_0_20ma_tilted_600.jpg",
-	               "Industrial Dual 0-20mA Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_vertical_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20ma_vertical_600.jpg",
-	             "Industrial Dual 0-20mA Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_horizontal_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20ma_horizontal_600.jpg",
-	             "Industrial Dual 0-20mA Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_sensor_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20ma_sensor_600.jpg",
-	             "Industrial Dual 0-20mA Bricklet mit Umgebungslichtsensor")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_industrial_case_100.jpg",
-	             "Cases/bricklet_industrial_case_600.jpg",
-	             "Industrial Dual 0-20mA Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_dual_0_20ma_brickv_100.jpg",
-	             "Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg",
-	             "Industrial Dual 0-20mA Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/industrial_dual_0_20ma_dimensions_100.png",
-	             "Dimensions/industrial_dual_0_20ma_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_industrial_dual_0_20ma_tilted_[?|?].jpg      Industrial Dual 0-20mA Bricklet
+	Bricklets/bricklet_industrial_dual_0_20ma_vertical_[?|?].jpg    Industrial Dual 0-20mA Bricklet
+	Bricklets/bricklet_industrial_dual_0_20ma_horizontal_[?|?].jpg  Industrial Dual 0-20mA Bricklet
+	Bricklets/bricklet_industrial_dual_0_20ma_sensor_[100|600].jpg  Industrial Dual 0-20mA Bricklet mit Umgebungslichtsensor
+	Cases/bricklet_industrial_case_[100|600].jpg                    Industrial Dual 0-20mA Bricklet im Gehäuse
+	Bricklets/bricklet_industrial_dual_0_20ma_brickv_[100|].jpg     Industrial Dual 0-20mA Bricklet im Brick Viewer
+	Dimensions/industrial_dual_0_20ma_dimensions_[100|600].png      Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

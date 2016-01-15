@@ -11,43 +11,17 @@ IMU Brick
 
 .. raw:: html
 
-    {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-    {{
-        tfdocstart("Bricks/brick_imu_tilted_front_350.jpg",
-                   "Bricks/brick_imu_tilted_front_600.jpg",
-                   "IMU Brick")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_tilted_back_100.jpg",
-                 "Bricks/brick_imu_tilted_back_600.jpg",
-                 "IMU Brick")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_v2_front_100.jpg",
-                 "Bricks/brick_imu_v2_front_800.jpg",
-                 "IMU Brick 2.0")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_caption_100.jpg",
-                 "Bricks/brick_imu_caption_600.jpg",
-                 "IMU Brick mit Beschriftung")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_top_100.jpg",
-                 "Bricks/brick_imu_top_600.jpg",
-                 "IMU Brick Oberseite")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_bottom_100.jpg",
-                 "Bricks/brick_imu_bottom_600.jpg",
-                 "IMU Brick Unterseite")
-    }}
-    {{
-        tfdocimg("Dimensions/imu_brick_dimensions_100.png",
-                 "Dimensions/imu_brick_dimensions_600.png",
-                 "Umriss und Bohrplan")
-    }}
-    {{ tfdocend() }}
+    {% tfgallery %}
+
+	Bricks/brick_imu_tilted_front_[?|?].jpg        IMU Brick
+	Bricks/brick_imu_tilted_back_[?|?].jpg         IMU Brick
+	Bricks/brick_imu_v2_front_[?|?].jpg            IMU Brick 2.0
+	Bricks/brick_imu_caption_[?|?].jpg             IMU Brick mit Beschriftung
+	Bricks/brick_imu_top_[?|?].jpg                 IMU Brick Oberseite
+	Bricks/brick_imu_bottom_[?|?].jpg              IMU Brick Unterseite
+	Dimensions/imu_brick_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 .. note::
 

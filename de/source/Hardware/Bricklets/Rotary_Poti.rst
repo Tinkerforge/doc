@@ -13,53 +13,19 @@ Rotary Poti Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_rotary_poti_tilted_350.jpg",
-	               "Bricklets/bricklet_rotary_poti_tilted_600.jpg",
-	               "Rotary Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_poti_front_100.jpg",
-	             "Bricklets/bricklet_rotary_poti_front_600.jpg",
-	             "Rotary Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_poti_vertical_100.jpg",
-	             "Bricklets/bricklet_rotary_poti_vertical_600.jpg",
-	             "Rotary Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_poti_horizontal_100.jpg",
-	             "Bricklets/bricklet_rotary_poti_horizontal_600.jpg",
-	             "Rotary Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_poti_knob_100.jpg",
-	             "Bricklets/bricklet_rotary_poti_knob_600.jpg",
-	             "Rotary Poti Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_poti_master_100.jpg",
-	             "Bricklets/bricklet_rotary_poti_master_600.jpg",
-	             "Rotary Poti Bricklet mit Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_rotary_poti_case_shallow_100.jpg",
-	             "Cases/bricklet_rotary_poti_case_shallow_600.jpg",
-	             "Rotary Poti Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_poti_brickv_100.jpg",
-	             "Bricklets/bricklet_rotary_poti_brickv.jpg",
-	             "Rotary Poti Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/rotary_poti_bricklet_dimensions_100.png",
-	             "Dimensions/rotary_poti_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_rotary_poti_tilted_[?|?].jpg           Rotary Poti Bricklet
+	Bricklets/bricklet_rotary_poti_front_[?|?].jpg            Rotary Poti Bricklet
+	Bricklets/bricklet_rotary_poti_vertical_[?|?].jpg         Rotary Poti Bricklet
+	Bricklets/bricklet_rotary_poti_horizontal_[?|?].jpg       Rotary Poti Bricklet
+	Bricklets/bricklet_rotary_poti_knob_[100|600].jpg         Rotary Poti Bricklet
+	Bricklets/bricklet_rotary_poti_master_[100|600].jpg       Rotary Poti Bricklet mit Master Brick
+	Cases/bricklet_rotary_poti_case_shallow_[100|600].jpg     Rotary Poti Bricklet im Gehäuse
+	Bricklets/bricklet_rotary_poti_brickv_[100|].jpg          Rotary Poti Bricklet im Brick Viewer
+	Dimensions/rotary_poti_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

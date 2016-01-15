@@ -9,18 +9,12 @@ DC Jack Adapter
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Accessories/dc_jack_adapter_tilted_350.jpg",
-	               "Accessories/dc_jack_adapter_tilted_600.jpg",
-	               "DC Jack Adapter")
-	}}
-	{{
-	    tfdocimg("Accessories/dc_jack_adapter_horizontal_100.jpg",
-	             "Accessories/dc_jack_adapter_horizontal_600.jpg",
-	             "DC Jack Adapter")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Accessories/dc_jack_adapter_tilted_[?|?].jpg      DC Jack Adapter
+	Accessories/dc_jack_adapter_horizontal_[?|?].jpg  DC Jack Adapter
+
+	{% tfgalleryend %}
 
 
 Beschreibung

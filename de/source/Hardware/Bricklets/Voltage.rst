@@ -12,38 +12,16 @@ Voltage Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_voltage_tilted_350.jpg",
-	               "Bricklets/bricklet_voltage_tilted_600.jpg",
-	               "Voltage Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_voltage_vertical_100.jpg",
-	             "Bricklets/bricklet_voltage_vertical_600.jpg",
-	             "Voltage Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_voltage_horizontal_100.jpg",
-	             "Bricklets/bricklet_voltage_horizontal_600.jpg",
-	             "Voltage Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_voltage_master_100.jpg",
-	             "Bricklets/bricklet_voltage_master_600.jpg",
-	             "Voltage Bricklet mit Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_voltage_brickv_100.jpg",
-	             "Bricklets/bricklet_voltage_brickv.jpg",
-	             "Voltage Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/voltage_bricklet_dimensions_100.png",
-	             "Dimensions/voltage_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_voltage_tilted_[?|?].jpg           Voltage Bricklet
+	Bricklets/bricklet_voltage_vertical_[?|?].jpg         Voltage Bricklet
+	Bricklets/bricklet_voltage_horizontal_[?|?].jpg       Voltage Bricklet
+	Bricklets/bricklet_voltage_master_[100|600].jpg       Voltage Bricklet mit Master Brick
+	Bricklets/bricklet_voltage_brickv_[100|].jpg          Voltage Bricklet im Brick Viewer
+	Dimensions/voltage_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 .. note::
 

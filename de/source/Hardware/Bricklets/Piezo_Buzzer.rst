@@ -13,38 +13,16 @@ Piezo Buzzer Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_piezo_buzzer_tilted_350.jpg",
-	               "Bricklets/bricklet_piezo_buzzer_tilted_600.jpg",
-	               "Piezo Buzzer Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_piezo_buzzer_vertical_100.jpg",
-	             "Bricklets/bricklet_piezo_buzzer_vertical_600.jpg",
-	             "Piezo Buzzer Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_piezo_buzzer_horizontal_100.jpg",
-	             "Bricklets/bricklet_piezo_buzzer_horizontal_600.jpg",
-	             "Piezo Buzzer Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_piezo_buzzer_master_100.jpg",
-	             "Bricklets/bricklet_piezo_buzzer_master_600.jpg",
-	             "Piezo Buzzer Bricklet mit Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_piezo_buzzer_brickv_100.jpg",
-	             "Bricklets/bricklet_piezo_buzzer_brickv.jpg",
-	             "Piezo Buzzer Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/piezo_buzzer_bricklet_dimensions_100.png",
-	             "Dimensions/piezo_buzzer_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_piezo_buzzer_tilted_[?|?].jpg           Piezo Buzzer Bricklet
+	Bricklets/bricklet_piezo_buzzer_vertical_[?|?].jpg         Piezo Buzzer Bricklet
+	Bricklets/bricklet_piezo_buzzer_horizontal_[?|?].jpg       Piezo Buzzer Bricklet
+	Bricklets/bricklet_piezo_buzzer_master_[100|600].jpg       Piezo Buzzer Bricklet mit Master Brick
+	Bricklets/bricklet_piezo_buzzer_brickv_[100|].jpg          Piezo Buzzer Bricklet im Brick Viewer
+	Dimensions/piezo_buzzer_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 .. note::
 

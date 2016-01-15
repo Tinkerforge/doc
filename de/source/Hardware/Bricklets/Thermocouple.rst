@@ -13,38 +13,16 @@ Thermocouple Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_thermocouple_tilted1_350.jpg",
-	               "Bricklets/bricklet_thermocouple_tilted1_600.jpg",
-	               "Thermocouple Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_thermocouple_tilted2_100.jpg",
-	             "Bricklets/bricklet_thermocouple_tilted2_600.jpg",
-	             "Thermocouple Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_thermocouple_horizontal_100.jpg",
-	             "Bricklets/bricklet_thermocouple_horizontal_600.jpg",
-	             "Thermocouple Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_thermocouple_w_sensor_100.jpg",
-	             "Bricklets/bricklet_thermocouple_w_sensor_600.jpg",
-	             "Thermocouple Bricklet mit Sensor")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_thermocouple_brickv_100.jpg",
-	             "Bricklets/bricklet_thermocouple_brickv.jpg",
-	             "Thermocouple Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/thermocouple_bricklet_dimensions_100.png",
-	             "Dimensions/thermocouple_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_thermocouple_tilted1_[?|?].jpg          Thermocouple Bricklet
+	Bricklets/bricklet_thermocouple_tilted2_[?|?].jpg          Thermocouple Bricklet
+	Bricklets/bricklet_thermocouple_horizontal_[?|?].jpg       Thermocouple Bricklet
+	Bricklets/bricklet_thermocouple_w_sensor_[100|600].jpg     Thermocouple Bricklet mit Sensor
+	Bricklets/bricklet_thermocouple_brickv_[100|].jpg          Thermocouple Bricklet im Brick Viewer
+	Dimensions/thermocouple_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

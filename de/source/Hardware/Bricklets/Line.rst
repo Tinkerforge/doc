@@ -14,48 +14,18 @@ Line Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_line_tilted_350.jpg",
-	               "Bricklets/bricklet_line_tilted_600.jpg",
-	               "Line Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_line_vertical_100.jpg",
-	             "Bricklets/bricklet_line_vertical_600.jpg",
-	             "Line Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_line_horizontal_100.jpg",
-	             "Bricklets/bricklet_line_horizontal_600.jpg",
-	             "Line Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_line_tilted_back_100.jpg",
-	             "Bricklets/bricklet_line_tilted_back_600.jpg",
-	             "Line Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_line_case1_tilted_100.jpg",
-	             "Bricklets/bricklet_line_case1_tilted_600.jpg",
-	             "Line Bricklet Befestigungsplatte Version 1")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_line_case2_tilted1_100.jpg",
-	             "Bricklets/bricklet_line_case2_tilted1_600.jpg",
-	             "Line Bricklet Befestigungsplatte Version 2")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_line_brickv_100.jpg",
-	             "Bricklets/bricklet_line_brickv.jpg",
-	             "Line Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/line_bricklet_dimensions_100.png",
-	             "Dimensions/line_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_line_tilted_[?|?].jpg           Line Bricklet
+	Bricklets/bricklet_line_vertical_[?|?].jpg         Line Bricklet
+	Bricklets/bricklet_line_horizontal_[?|?].jpg       Line Bricklet
+	Bricklets/bricklet_line_tilted_back_[?|?].jpg      Line Bricklet
+	Cases/bricklet_line_case1_tilted_[?|?].jpg         Line Bricklet Befestigungsplatte Version 1
+	Cases/bricklet_line_case2_tilted1_[?|?].jpg        Line Bricklet Befestigungsplatte Version 2
+	Bricklets/bricklet_line_brickv_[100|].jpg          Line Bricklet im Brick Viewer
+	Dimensions/line_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

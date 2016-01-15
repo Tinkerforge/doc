@@ -14,48 +14,18 @@ Rotary Encoder Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_rotary_encoder_tilted_350.jpg",
-	               "Bricklets/bricklet_rotary_encoder_tilted_600.jpg",
-	               "Rotary Encoder Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_encoder_horizontal_100.jpg",
-	             "Bricklets/bricklet_rotary_encoder_horizontal_600.jpg",
-	             "Rotary Encoder Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_encoder_w_knob_100.jpg",
-	             "Bricklets/bricklet_rotary_encoder_w_knob_600.jpg",
-	             "Rotary Encoder Bricklet und Knopf")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_encoder_tilted_back_wo_knob_100.jpg",
-	             "Bricklets/bricklet_rotary_encoder_tilted_back_wo_knob_600.jpg",
-	             "Rotary Encoder Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_encoder_tilted_wo_knob_100.jpg",
-	             "Bricklets/bricklet_rotary_encoder_tilted_wo_knob_600.jpg",
-	             "Rotary Encoder Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_rotary_poti_case_shallow_100.jpg",
-	             "Cases/bricklet_rotary_poti_case_shallow_600.jpg",
-	             "Rotary Encoder Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rotary_encoder_brickv_100.jpg",
-	             "Bricklets/bricklet_rotary_encoder_brickv.jpg",
-	             "Rotary Encoder Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/rotary_encoder_bricklet_dimensions_100.png",
-	             "Dimensions/rotary_encoder_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_rotary_encoder_tilted_[?|?].jpg               Rotary Encoder Bricklet
+	Bricklets/bricklet_rotary_encoder_horizontal_[?|?].jpg           Rotary Encoder Bricklet
+	Bricklets/bricklet_rotary_encoder_w_knob_[100|600].jpg           Rotary Encoder Bricklet und Knopf
+	Bricklets/bricklet_rotary_encoder_tilted_back_wo_knob_[?|?].jpg  Rotary Encoder Bricklet
+	Bricklets/bricklet_rotary_encoder_tilted_wo_knob_[?|?].jpg       Rotary Encoder Bricklet
+	Cases/bricklet_rotary_poti_case_shallow_[100|600].jpg            Rotary Encoder Bricklet im Gehäuse
+	Bricklets/bricklet_rotary_encoder_brickv_[100|].jpg              Rotary Encoder Bricklet im Brick Viewer
+	Dimensions/rotary_encoder_bricklet_dimensions_[100|600].png      Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

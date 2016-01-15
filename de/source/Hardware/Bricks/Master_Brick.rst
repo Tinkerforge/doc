@@ -12,43 +12,17 @@ Master Brick
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricks/brick_master21_tilted_front_350.jpg",
-	               "Bricks/brick_master21_tilted_front_800.jpg",
-	               "Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master_stack_front_big_100.jpg",
-	             "Bricks/brick_master_stack_front_big_800.jpg",
-                 "Master Brick in Stapel")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master_stack_back_big_100.jpg",
-	             "Bricks/brick_master_stack_back_big_800.jpg",
-                 "Master Brick im Stapel")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master_caption_100.jpg",
-	             "Bricks/brick_master_caption_800.jpg",
-	             "Master Brick mit Beschriftung")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master21_top_100.jpg",
-	             "Bricks/brick_master21_top_800.jpg",
-	             "Master Brick Oberseite")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master21_bottom_100.jpg",
-	             "Bricks/brick_master21_bottom_800.jpg",
-	             "Master Brick Unterseite")
-	}}
-	{{
-	    tfdocimg("Dimensions/master_brick_dimensions_100.png",
-	             "Dimensions/master_brick_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricks/brick_master21_tilted_front_[?|?].jpg      Master Brick
+	Bricks/brick_master_stack_front_big_[?|?].jpg     Master Brick in Stapel
+	Bricks/brick_master_stack_back_big_[?|?].jpg      Master Brick im Stapel
+	Bricks/brick_master_caption_[?|?].jpg             Master Brick mit Beschriftung
+	Bricks/brick_master21_top_[?|?].jpg               Master Brick Oberseite
+	Bricks/brick_master21_bottom_[?|?].jpg            Master Brick Unterseite
+	Dimensions/master_brick_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

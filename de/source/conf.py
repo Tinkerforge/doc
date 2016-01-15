@@ -47,7 +47,9 @@ spelling_lang='de_DE'
 spelling_word_list_filename='good_wordlist.txt'
 
 # Add any paths that contain templates here, relative to this directory.
-if socket.gethostname() != 'tinkerforge.com':
+if os.path.isfile(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'use_mez')):
+    templates_path = ['_templates_mez']
+elif socket.gethostname() != 'tinkerforge.com':
     templates_path = ['_templates_draft']
 else:
     templates_path = ['_templates']
@@ -63,7 +65,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Tinkerforge'
-copyright = u'2011-2015, Olaf Lüke (olaf@tinkerforge.com)'
+copyright = u'2011-2016, Olaf Lüke (olaf@tinkerforge.com)'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -219,3 +221,365 @@ latex_documents = [
 
 # If false, no module index is generated.
 #latex_use_modindex = True
+
+
+
+# -- Monkey patch sphinx ------------------------------------------- ----------
+
+def setup(app):
+    import os
+    from docutils import nodes
+    from sphinx import addnodes
+    from sphinx.environment import BuildEnvironment
+    from sphinx.builders.html import StandaloneHTMLBuilder
+    from sphinx.util import url_re
+    from sphinx.util.nodes import clean_astext
+
+    # hook into StandaloneHTMLBuilder.add_sidebars to add the breadcrumbs function
+    old_add_sidebars = StandaloneHTMLBuilder.add_sidebars
+
+    def monkey_get_breadcrumbs(self, docname, separator): # self == StandaloneHTMLBuilder
+        if not hasattr(self.env, 'monkey_breadcrumbs'):
+            return ''
+
+        if docname not in self.env.monkey_breadcrumbs:
+            return ''
+
+        links = []
+        breadcrumbs = self.env.monkey_breadcrumbs[docname]
+
+        for ref, anchor, title in breadcrumbs[:-1]:
+            ref_parts = os.path.split('/' + ref)
+            links.append('<a href="{0}/{1}.html{2}">{3}</a>'.format(os.path.relpath(ref_parts[0], os.path.split('/' + docname)[0]), ref_parts[1], anchor, title))
+
+        links.append(breadcrumbs[-1][2])
+
+        return separator.join(links)
+
+    def new_add_sidebars(self, pagename, ctx):
+        old_add_sidebars(self, pagename, ctx)
+
+        ctx['breadcrumbs'] = lambda separator: monkey_get_breadcrumbs(self, pagename, separator)
+
+    StandaloneHTMLBuilder.add_sidebars = new_add_sidebars
+
+    # hook into BuildEnvironment.resolve_toctree to modify toctree generation
+    def monkey_get_reverse_toctree(self): # self == BuildEnvironment
+        toctrees = list(self.get_doctree(self.config.master_doc).traverse(addnodes.toctree))
+        master = toctrees[0]
+
+        for toctree in toctrees[1:]:
+            master.extend(toctree.children)
+
+        def expand_toctree(node):
+            expanded = {}
+
+            for entry in node['entries']:
+                title = entry[0]
+                ref = entry[1]
+
+                for toctree in self.tocs[ref].traverse(addnodes.toctree):
+                    for key, value in expand_toctree(toctree).items():
+                        if ref not in expanded:
+                            expanded[ref] = {}
+
+                        if key in expanded[ref]:
+                            raise Exception('Duplicate toctree node ' + key + ' in ' + ref)
+
+                        expanded[ref][key] = value
+
+                if ref not in expanded:
+                    expanded[ref] = None
+
+            return expanded
+
+        expanded_toctree = expand_toctree(master)
+
+        def expand_reverse(node, path):
+            expanded = {}
+
+            for key, value in node.items():
+                if key in expanded:
+                    raise Exception('Duplicate toctree leaf ' + key)
+
+                expanded[key] = path
+
+                if value != None:
+                    for subkey, subvalue in expand_reverse(value, path + [key]).items():
+                        if subkey in expanded:
+                            raise Exception('Duplicate toctree leaf ' + subkey)
+
+                        expanded[subkey] = subvalue
+
+            return expanded
+
+        return expand_reverse(expanded_toctree, [])
+
+    BuildEnvironment.monkey_get_reverse_toctree = monkey_get_reverse_toctree
+
+    old_resolve_toctree = BuildEnvironment.resolve_toctree
+
+    # this code originally comes from sphinx 1.2.2
+    def new_resolve_toctree(self, docname, builder, toctree, prune=True, maxdepth=0,
+                            titles_only=False, collapse=False, includehidden=False):
+        """Resolve a *toctree* node into individual bullet lists with titles
+        as items, returning None (if no containing titles are found) or
+        a new node.
+
+        If *prune* is True, the tree is pruned to *maxdepth*, or if that is 0,
+        to the value of the *maxdepth* option on the *toctree* node.
+        If *titles_only* is True, only toplevel document titles will be in the
+        resulting tree.
+        If *collapse* is True, all branches not containing docname will
+        be collapsed.
+        """
+
+        if toctree.get('hidden', False) and not includehidden:
+            return None
+
+        # photron: prepare reverse toctree lookup to avoid expaning the whole
+        # tree every time. only expand the path to the current document
+        if not hasattr(self, 'monkey_reverse_toctree'):
+            self.monkey_reverse_toctree = self.monkey_get_reverse_toctree()
+        # photron: end
+
+        # For reading the following two helper function, it is useful to keep
+        # in mind the node structure of a toctree (using HTML-like node names
+        # for brevity):
+        #
+        # <ul>
+        #   <li>
+        #     <p><a></p>
+        #     <p><a></p>
+        #     ...
+        #     <ul>
+        #       ...
+        #     </ul>
+        #   </li>
+        # </ul>
+        #
+        # The transformation is made in two passes in order to avoid
+        # interactions between marking and pruning the tree (see bug #1046).
+
+        def _toctree_prune(node, depth, maxdepth):
+            """Utility: Cut a TOC at a specified depth."""
+            for subnode in node.children[:]:
+                if isinstance(subnode, (addnodes.compact_paragraph,
+                                        nodes.list_item)):
+                    # for <p> and <li>, just recurse
+                    _toctree_prune(subnode, depth, maxdepth)
+                elif isinstance(subnode, nodes.bullet_list):
+                    # for <ul>, determine if the depth is too large or if the
+                    # entry is to be collapsed
+                    if maxdepth > 0 and depth > maxdepth:
+                        subnode.parent.replace(subnode, [])
+                    else:
+                        mindepth = 2 # photron: keep the first level expanded, was set to 1 before
+                        # cull sub-entries whose parents aren't 'current'
+                        if (collapse and depth > mindepth and
+                            'iscurrent' not in subnode.parent):
+                            subnode.parent.remove(subnode)
+                        else:
+                            # recurse on visible children
+                            _toctree_prune(subnode, depth+1, maxdepth)
+
+        def _toctree_add_classes(node, depth):
+            """Add 'toctree-l%d' and 'current' classes to the toctree."""
+
+            # photron: start
+            if not hasattr(self, 'monkey_breadcrumbs'):
+                self.monkey_breadcrumbs = {}
+            # photron: end
+
+            for subnode in node.children:
+                if isinstance(subnode, (addnodes.compact_paragraph,
+                                        nodes.list_item)):
+                    # for <p> and <li>, indicate the depth level and recurse
+                    subnode['classes'].append('toctree-l%d' % (depth-1))
+                    _toctree_add_classes(subnode, depth)
+                elif isinstance(subnode, nodes.bullet_list):
+                    # for <ul>, just recurse
+                    _toctree_add_classes(subnode, depth+1)
+                elif isinstance(subnode, nodes.reference):
+                    # for <a>, identify which entries point to the current
+                    # document and therefore may not be collapsed
+                    if subnode['refuri'] == docname:
+                        if not subnode['anchorname']:
+                            # photron: start
+                            breadcrumbs = []
+                            # photron: end
+
+                            # give the whole branch a 'current' class
+                            # (useful for styling it differently)
+                            branchnode = subnode
+                            while branchnode:
+                                branchnode['classes'].append('current')
+                                branchnode = branchnode.parent
+
+                                # photron: collect current path in toctree as breadcrumbs
+                                if branchnode and isinstance(branchnode, nodes.list_item):
+                                    for c in branchnode.traverse(nodes.reference):
+                                        if len(c.children) == 0:
+                                            raise Exception('Missing reference text node id breadcrumbs for ' + docname)
+
+                                        breadcrumbs = [(c['refuri'], c['anchorname'], c.children[0].astext())] + breadcrumbs
+                                        break
+                                # photron: end
+
+                            # photron: sanity check
+                            if docname in self.monkey_breadcrumbs and self.monkey_breadcrumbs[docname] != breadcrumbs:
+                               raise Exception('Different breadcrumbs for ' + docname)
+
+                            self.monkey_breadcrumbs[docname] = breadcrumbs
+                            # photron: end
+
+                        # mark the list_item as "on current page"
+                        if subnode.parent.parent.get('iscurrent'):
+                            # but only if it's not already done
+                            return
+                        while subnode:
+                            subnode['iscurrent'] = True
+                            subnode = subnode.parent
+
+        def _entries_from_toctree(toctreenode, parents,
+                                  separate=False, subtree=False,
+                                  # photron: add forced_expand option to force expansion
+                                  # one sublevel below the path to the current document
+                                  forced_expand=False):
+                                  # photron: end
+            """Return TOC entries for a toctree node."""
+            refs = [(e[0], e[1]) for e in toctreenode['entries']]
+            entries = []
+            for (title, ref) in refs:
+                try:
+                    refdoc = None
+                    if url_re.match(ref):
+                        reference = nodes.reference('', '', internal=False,
+                                                    refuri=ref, anchorname='',
+                                                    *[nodes.Text(title)])
+                        para = addnodes.compact_paragraph('', '', reference)
+                        item = nodes.list_item('', para)
+                        toc = nodes.bullet_list('', item)
+                    elif ref == 'self':
+                        # 'self' refers to the document from which this
+                        # toctree originates
+                        ref = toctreenode['parent']
+                        if not title:
+                            title = clean_astext(self.titles[ref])
+                        reference = nodes.reference('', '', internal=True,
+                                                    refuri=ref,
+                                                    anchorname='',
+                                                    *[nodes.Text(title)])
+                        para = addnodes.compact_paragraph('', '', reference)
+                        item = nodes.list_item('', para)
+                        # don't show subitems
+                        toc = nodes.bullet_list('', item)
+                    else:
+                        if ref in parents:
+                            self.warn(ref, 'circular toctree references '
+                                      'detected, ignoring: %s <- %s' %
+                                      (ref, ' <- '.join(parents)))
+                            continue
+                        refdoc = ref
+                        toc = self.tocs[ref].deepcopy()
+                        self.process_only_nodes(toc, builder, ref)
+                        if title and toc.children and len(toc.children) == 1:
+                            child = toc.children[0]
+                            for refnode in child.traverse(nodes.reference):
+                                if refnode['refuri'] == ref and \
+                                       not refnode['anchorname']:
+                                    refnode.children = [nodes.Text(title)]
+                    if not toc.children:
+                        # empty toc means: no titles will show up in the toctree
+                        self.warn_node(
+                            'toctree contains reference to document %r that '
+                            'doesn\'t have a title: no link will be generated'
+                            % ref, toctreenode)
+                except KeyError:
+                    # this is raised if the included file does not exist
+                    self.warn_node(
+                        'toctree contains reference to nonexisting document %r'
+                        % ref, toctreenode)
+                else:
+                    # if titles_only is given, only keep the main title and
+                    # sub-toctrees
+                    if titles_only:
+                        # delete everything but the toplevel title(s)
+                        # and toctrees
+                        for toplevel in toc:
+                            # nodes with length 1 don't have any children anyway
+                            if len(toplevel) > 1:
+                                subtrees = toplevel.traverse(addnodes.toctree)
+                                toplevel[1][:] = subtrees
+                    # resolve all sub-toctrees
+                    for toctreenode in toc.traverse(addnodes.toctree):
+                        if not (toctreenode.get('hidden', False)
+                                and not includehidden):
+
+                            # photron: use the reverse toctree lookup to only expand
+                            # nodes along the way to the current document
+                            if docname != 'index':
+                                if docname not in self.monkey_reverse_toctree:
+                                    continue
+
+                                if not forced_expand and refdoc not in self.monkey_reverse_toctree[docname]:
+                                    continue
+                            # photron: end
+
+                            # photron: force sublevel for the index and other toplevel documents,
+                            # also force it for one sublevel below the path to the current document
+                            next_forced_expand = \
+                                docname == 'index' or \
+                                len(self.monkey_reverse_toctree[docname]) == 0 or \
+                                refdoc == self.monkey_reverse_toctree[docname][-1]
+                            # photron: end
+
+                            i = toctreenode.parent.index(toctreenode) + 1
+                            for item in _entries_from_toctree(
+                                    toctreenode, [refdoc] + parents,
+                                    subtree=True,
+                                    # photron: start
+                                    forced_expand=next_forced_expand):
+                                    # photron: end
+                                toctreenode.parent.insert(i, item)
+                                i += 1
+                            toctreenode.parent.remove(toctreenode)
+                    if separate:
+                        entries.append(toc)
+                    else:
+                        entries.extend(toc.children)
+            if not subtree and not separate:
+                ret = nodes.bullet_list()
+                ret += entries
+                return [ret]
+            return entries
+
+        maxdepth = maxdepth or toctree.get('maxdepth', -1)
+        if not titles_only and toctree.get('titlesonly', False):
+            titles_only = True
+        if not includehidden and toctree.get('includehidden', False):
+            includehidden = True
+
+        # NOTE: previously, this was separate=True, but that leads to artificial
+        # separation when two or more toctree entries form a logical unit, so
+        # separating mode is no longer used -- it's kept here for history's sake
+        tocentries = _entries_from_toctree(toctree, [], separate=False, forced_expand=True)
+        if not tocentries:
+            return None
+
+        newnode = addnodes.compact_paragraph('', '', *tocentries)
+        newnode['toctree'] = True
+
+        # prune the tree to maxdepth, also set toc depth and current classes
+        _toctree_add_classes(newnode, 1)
+        _toctree_prune(newnode, 1, prune and maxdepth or 0)
+
+        # set the target paths in the toctrees (they are not known at TOC
+        # generation time)
+        for refnode in newnode.traverse(nodes.reference):
+            if not url_re.match(refnode['refuri']):
+                refnode['refuri'] = builder.get_relative_uri(
+                    docname, refnode['refuri']) + refnode['anchorname']
+        return newnode
+
+    BuildEnvironment.resolve_toctree = new_resolve_toctree

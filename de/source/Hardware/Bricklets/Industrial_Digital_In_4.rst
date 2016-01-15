@@ -13,43 +13,17 @@ Industrial Digital In 4 Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_industrial_digital_in_4_tilted_350.jpg",
-	               "Bricklets/bricklet_industrial_digital_in_4_tilted_600.jpg",
-	               "Industrial Digital In 4 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_vertical_100.jpg",
-	             "Bricklets/bricklet_industrial_digital_in_4_vertical_600.jpg",
-	             "Industrial Digital In 4 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_horizontal_100.jpg",
-	             "Bricklets/bricklet_industrial_digital_in_4_horizontal_600.jpg",
-	             "Industrial Digital In 4 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_setup_100.jpg",
-	             "Bricklets/bricklet_industrial_digital_in_4_setup_600.jpg",
-	             "Industrial Digital In 4 Bricklet Setup")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_industrial_case_100.jpg",
-	             "Cases/bricklet_industrial_case_600.jpg",
-	             "Industrial Digital In 4 Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_digital_in_4_brickv_100.jpg",
-	             "Bricklets/bricklet_industrial_digital_in_4_brickv.jpg",
-	             "Industrial Digital In 4 Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/industrial_digital_in_4_bricklet_dimensions_100.png",
-	             "Dimensions/industrial_digital_in_4_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_industrial_digital_in_4_tilted_[?|?].jpg           Industrial Digital In 4 Bricklet
+	Bricklets/bricklet_industrial_digital_in_4_vertical_[?|?].jpg         Industrial Digital In 4 Bricklet
+	Bricklets/bricklet_industrial_digital_in_4_horizontal_[?|?].jpg       Industrial Digital In 4 Bricklet
+	Bricklets/bricklet_industrial_digital_in_4_setup_[?|?].jpg            Industrial Digital In 4 Bricklet Setup
+	Cases/bricklet_industrial_case_[100|600].jpg                          Industrial Digital In 4 Bricklet im Gehäuse
+	Bricklets/bricklet_industrial_digital_in_4_brickv_[100|].jpg          Industrial Digital In 4 Bricklet im Brick Viewer
+	Dimensions/industrial_digital_in_4_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features
