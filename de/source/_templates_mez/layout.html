@@ -3,7 +3,11 @@
 	{% extends "base.html" %}
 	{% load i18n mezzanine_tags staticfiles tftags %}
 
-	{% block meta_title %}{% trans "Home" %}{% endblock %}
+	{% block meta_title %}{% trans "Doc" %}{% endblock %}
+
+	{% block extra_css %}
+	<link rel="stylesheet" href="{% static "css/doc.css" %}">
+	{% endblock %}
 
 	{% block main %}
 {% endraw %}
