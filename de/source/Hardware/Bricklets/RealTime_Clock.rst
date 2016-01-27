@@ -53,4 +53,4 @@ Programmierschnittstelle
 Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
 Beschreibung.
 
-.. include:: Real_Time_Clock_hlpi.table
+.. include:: RealTime_Clock_hlpi.table

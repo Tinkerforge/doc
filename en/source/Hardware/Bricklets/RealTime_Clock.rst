@@ -52,4 +52,4 @@ Programming Interface
 
 See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
-.. include:: Real_Time_Clock_hlpi.table
+.. include:: RealTime_Clock_hlpi.table
