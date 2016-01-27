@@ -1,8 +1,8 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Real-Time Clock Bricklet
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Real-Time Clock Bricklet
 :FIXME_shoplink: ../../../shop/bricklets/real-time-clock-bricklet.html
 
-.. include:: Real_Time_Clock.substitutions
+.. include:: RealTime_Clock.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
@@ -12,7 +12,7 @@ Real-Time Clock Bricklet
 ========================
 
 .. note::
-  Diese Bricklet ist noch in Entwicklung!
+ This Bricklet is currently work-in-progress!
 
 
 Features
@@ -21,36 +21,35 @@ Features
 
 .. _real_time_clock_bricklet_description:
 
-Beschreibung
-------------
+Description
+-----------
 
 
-Technische Spezifikation
+Technical Specifications
 ------------------------
 
 
-Ressourcen
-----------
+Resources
+---------
 
 
 .. _real_time_clock_bricklet_test:
 
-Erster Test
------------
+Test your Real-Time Clock Bricklet
+----------------------------------
 
 
 .. _real_time_clock_bricklet_case:
 
-Gehäuse
--------
+Case
+----
 
 
 .. _real_time_clock_bricklet_programming_interface:
 
-Programmierschnittstelle
-------------------------
+Programming Interface
+---------------------
 
-Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
-Beschreibung.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Real_Time_Clock_hlpi.table
