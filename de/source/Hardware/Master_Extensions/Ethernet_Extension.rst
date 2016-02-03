@@ -28,32 +28,32 @@ Ethernet Master Extension
 	{{
 	    tfdocimg("Extensions/extension_ethernet11_w_poe_stack_100.jpg",
 	             "Extensions/extension_ethernet11_w_poe_stack_800.jpg",
-	             "Ethernet Extension mit PoE on top of Master Brick")
+	             "Ethernet Extension mit PoE auf Master Brick")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_ethernet11_wo_poe_stack_100.jpg",
 	             "Extensions/extension_ethernet11_wo_poe_stack_800.jpg",
-	             "Ethernet Extension ohne PoE on top of Master Brick")
+	             "Ethernet Extension ohne PoE auf Master Brick")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_ethernet11_w_poe_top_100.jpg",
 	             "Extensions/extension_ethernet11_w_poe_top_800.jpg",
-	             "Ethernet Extension mit PoE top")
+	             "Ethernet Extension mit PoE Oberseite")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_ethernet11_wo_poe_top_100.jpg",
 	             "Extensions/extension_ethernet11_wo_poe_top_800.jpg",
-	             "Ethernet Extension ohne PoE top")
+	             "Ethernet Extension ohne PoE Oberseite")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_ethernet11_w_poe_bottom_100.jpg",
 	             "Extensions/extension_ethernet11_w_poe_bottom_800.jpg",
-	             "Ethernet Extension mit PoE top")
+	             "Ethernet Extension mit PoE Unterseite")
 	}}
 	{{
 	    tfdocimg("Extensions/extension_ethernet11_wo_poe_bottom_100.jpg",
 	             "Extensions/extension_ethernet11_wo_poe_bottom_800.jpg",
-	             "Ethernet Extension ohne PoE top")
+	             "Ethernet Extension ohne PoE Unterseite")
 	}}
 	{{ tfdocend() }}
 
