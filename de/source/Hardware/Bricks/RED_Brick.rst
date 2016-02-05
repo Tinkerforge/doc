@@ -480,10 +480,12 @@ wenn der RED Brick das nächste mal hochfährt.
 
 Falls die Zeit nach dem Booten immer vorhanden sein muss, ein Verbindung zum
 Internet aber nicht garantiert werden kann, dann kann auch das
-:ref:`GPS Bricklet <gps_bricklet>` benutzt werden. Dazu muss nur ein kleines
-`Programm von GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
+:ref:`GPS Bricklet <gps_bricklet>` oder das :ref:`Real-Time Clock Bricklet
+<real_time_clock_bricklet>`benutzt werden. Dazu muss nur ein entsprechendes
+kleines `Programm von GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs>`__
 heruntergeladen und auf den RED Brick geladen werden, um die Uhrzeit
-mittels GPS Uhrzeit zu synchronisieren.
+mittels GPS Uhrzeit (``gps_time`` Programm) oder Real-Time Clock Bricklet
+Uhrzeit (``rtc_time`` Programm) zu synchronisieren.
 
 .. _red_brick_brickv_settings_file_system:
 
@@ -1057,11 +1059,17 @@ stehen verschiedene Beispielprogramme zur Verfügung:
   Wenn NTP nicht verwendet werden kann, um die Systemzeit zu synchronisieren,
   z.B. wegen fehlender Internetanbindung, dann kann alternativ dieses Programm
   verwendet werden, um die Systemzeit mit dem GPS Bricklet zu synchronisieren.
+* `Real-Time Clock Bricklets Uhrzeit als Systemzeit verwenden
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/rtc_time>`__:
+  Wenn NTP nicht verwendet werden kann, um die Systemzeit zu synchronisieren,
+  z.B. wegen fehlender Internetanbindung, dann kann alternativ dieses Programm
+  verwendet werden, um die Systemzeit mit dem Real-Time Clock Bricklet zu
+  synchronisieren.
 * `Systemzeit über Webbrowser synchronisieren
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sync_time>`__:
-  Wenn weder NTP noch GPS zur Synchrionisierung der Systemzeit genutzt werden
-  kann, dann kann über dieses Programm die Systemzeit vom Webbrowser aus
-  synchronisiert werden.
+  Wenn weder NTP noch GPS, noch Real-Time Clock Bricklet zur Synchrionisierung
+  der Systemzeit genutzt werden kann, dann kann über dieses Programm die
+  Systemzeit vom Webbrowser aus synchronisiert werden.
 * `Humidity Callback per SMS erhalten
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sms_humidity>`__:
   Dieses Beispiel zeigt, wie Bricklet Callback-Werte per SMS weiter geleitet

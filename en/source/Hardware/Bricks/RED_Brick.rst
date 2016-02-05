@@ -468,10 +468,12 @@ the RED Brick is powered down.
 
 If you need the correct time after bootup but you can't guarantee
 or can't obtain Internet access, you can also use the
-:ref:`GPS Bricklet <gps_bricklet>`. You can find a small
-`program on GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
+:ref:`GPS Bricklet <gps_bricklet>` or the :ref:`Real-Time Clock Bricklet
+<real_time_clock_bricklet>`. You can find a small
+`programs on GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs>`__
 that could be uploaded to the RED Brick to sync the Linux system time with
-the GPS time.
+the GPS time (``gps_time`` program) or the Real-Time Clock's time
+(``rtc_time`` program).
 
 .. _red_brick_brickv_settings_file_system:
 
@@ -1034,10 +1036,14 @@ Several example programs are available on `GitHub
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__:
   If you can't use NTP (i.e. the RED Brick does not have Internet access), you
   can use the GPS Bricklet to set a proper system time.
+* `Set Real-Time Clock Bricklet's time as system time
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/rtc_time>`__:
+  If you can't use NTP (i.e. the RED Brick does not have Internet access), you
+  can use the Real-Time Clock Bricklet Bricklet to set a proper system time.
 * `Synchronize system time via web browser
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sync_time>`__:
-  If you can't use NTP or a GPS Bricklet to set a proper system time, you can
-  manually synchronize it using your web browser.
+  If you can't use NTP or a GPS Bricklet or a Real-Time Clock Bricklet to set a
+  proper system time, you can manually synchronize it using your web browser.
 * `Get humidity callback reading via SMS
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sms_humidity>`__:
   This example demonstrates how Bricklet callback values can be reported
