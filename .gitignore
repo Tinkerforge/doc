@@ -20,3 +20,9 @@ de/source/Software/Tinkerforge.js
 *.substitutions
 *.pyc
 !en/source/Hardware/Bricks/RED_Brick_*_features.table
+pygments-mathematica/build/*
+pygments-mathematica/dist/*
+pygments-mathematica/*.egg-info
+pygments-octave-fixed/build/*
+pygments-octave-fixed/dist/*
+pygments-octave-fixed/*.egg-info
