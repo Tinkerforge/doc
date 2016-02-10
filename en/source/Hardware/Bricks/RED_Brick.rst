@@ -757,7 +757,7 @@ Python
 ^^^^^^
 
 The webserver on the RED Brick (Apache) uses WSGI
-(`mod_wsgi <https://code.google.com/p/modwsgi/>`__) to interface with
+(`mod_wsgi <https://github.com/GrahamDumpleton/mod_wsgi>`__) to interface with
 Python programs. It is configured to recognize an ``index.py`` as the
 starting point for a WSGI script. All of the common Python web frameworks
 support WSGI. The `Flask framework <http://flask.pocoo.org/>`__ is
@@ -838,7 +838,7 @@ allow to customize your image for your individual requirements.
 
 The image comes with a driver for the GPU and all necessary graphical user
 interface libraries. If enabled, it boots an X server and the
-`LXDE desktop environment <http://www.lxde.org>`__
+`LXDE desktop environment <http://lxde.org/>`__
 with auto login. If the program you run on the RED Brick uses a graphical
 interface it will show up on the desktop. The screen resolution should
 automatically adapt to the preferred resolution of the connected HDMI monitor.

@@ -766,8 +766,8 @@ werden und nicht mit localhost!
 Python
 ^^^^^^
 Auf dem Webserver (Apache) des RED Bricks wird WSGI
-(`mod_wsgi <https://code.google.com/p/modwsgi/>`__) von Python genutzt um
-Webseiten darzustellen. Dieser ist konfiguriert um eine ``index.py`` als
+(`mod_wsgi <https://github.com/GrahamDumpleton/mod_wsgi>`__) von Python genutzt
+um Webseiten darzustellen. Dieser ist konfiguriert um eine ``index.py`` als
 Startpunkt für ein WSGI Skript zu nutzen. Alle verbreiteten Python Web
 Frameworks unterstützen WSGI. Das `Flask framework <http://flask.pocoo.org/>`__
 ist auf dem RED Brick vorinstalliert (beinhaltet
@@ -853,7 +853,7 @@ Image an verschiedenen Anforderungen anzupassen.
 Das Image verfügt über GPU Treiber und besitzt alle notwendigen
 Bibliotheken für die Nutzung von grafischen Nutzerschnittstellen (GUIs).
 Falls aktiviert, startet ein X Server während des Bootvorgangs und das
-`LXDE Desktop Environment <http://www.lxde.org>`__ wird mit Autologin gestartet.
+`LXDE Desktop Environment <http://lxde.org/>`__ wird mit Autologin gestartet.
 Wenn das eigene Programm eine grafische Nutzerschnittstelle nutzt, so wird
 diese auf dem Desktop angezeigt. Die Bildschirmauflösung passt sich der
 Voreinstellung des angeschlossenen HDMI Monitors an. Über LXDE kann diese aber

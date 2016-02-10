@@ -169,7 +169,7 @@ We provide examples for
 * `PHP <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/php/ExampleScribble.php>`__
   (with `GD <http://php.net/manual/en/book.image.php>`__),
 * `Python <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/python/example_scribble.py>`__
-  (with `PIL <https://python-pillow.github.io/>`__),
+  (with `PIL <http://python-pillow.org/>`__),
 * `Ruby <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/ruby/example_scribble.rb>`__
   (with `rgd <http://www.rubydoc.info/gems/rgd>`__) and
 * `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/oled-128x64-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.

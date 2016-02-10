@@ -53,8 +53,8 @@ Accuracy                          | ±20ppm (±52.6 seconds per month) non-calib
                                   | down to ±1ppm (±2.6 seconds per month) calibrated*
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD
-Weight                            TBD
+Dimensions (W x D x H)            25 x 25 x 5mm (0.98 x 0.98 x 0.19")
+Weight                            TBDg
 ================================  ============================================================
 
 \* datasheet value
@@ -97,6 +97,8 @@ You can set the Bricklet's date and time you your local time by clicking the
 
 Case
 ----
+
+Coming soon...
 
 .. _real_time_clock_bricklet_programming_interface:
 

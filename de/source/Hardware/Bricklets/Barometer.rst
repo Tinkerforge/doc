@@ -153,7 +153,7 @@ Wert aus QFE Wert approximiert werden::
 * ``Tfe`` ist die Temperatur am Messort in °C
 * ``H`` ist die Höhe des Messortes in Metern
 
-`Hier <http://rechneronline.de/barometer/>`__ gibt es einen Online-Rechner der
+`Hier <https://rechneronline.de/barometer/>`__ gibt es einen Online-Rechner der
 diese Formel berechnet. Die Höhe des Messortes kann leicht mit `Google Maps
 <http://www.mapcoordinates.net/de>`__ bestimmt werden.
 

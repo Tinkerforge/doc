@@ -111,7 +111,7 @@ Ressourcen
 ----------
 
 * Display Datenblatt (`Download <https://github.com/Tinkerforge/oled-64x48-bricklet/raw/master/datasheets/OLED_64X48_Datasheet.pdf>`__)
-* Schaltplan (`Download <https://github.com/Tinkerforge/oled-64x48-bricklet/raw/master/hardware/temperature-schematic.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/oled-64x48-bricklet/raw/master/hardware/oled-64x48-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/oled_64x48_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/oled-64x48-bricklet/zipball/master>`__)
 
@@ -167,7 +167,7 @@ Wir haben Beispiele für
 * `PHP <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/php/ExampleScribble.php>`__
   (mit `GD <http://php.net/manual/de/book.image.php>`__),
 * `Python <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/python/example_scribble.py>`__
-  (mit `PIL <https://python-pillow.github.io/>`__),
+  (mit `PIL <http://python-pillow.org/>`__),
 * `Ruby <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/ruby/example_scribble.rb>`__
   (mit `rgd <http://www.rubydoc.info/gems/rgd>`__) und
 * `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.

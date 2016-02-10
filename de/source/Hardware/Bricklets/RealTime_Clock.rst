@@ -53,8 +53,8 @@ Genauigkeit                       | ±20ppm (±52,6 Sekunden pro Monat) unkalibr
                                   | bis runter zu ±1ppm (±2,6 Sekunden pro Monat) kalibriert*
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD
-Gewicht                           TBD
+Abmessung (W x D x H)             25 x 25 x 5mm (0,98 x 0,98 x 0,19")
+Gewicht                           TBDg
 ================================  ============================================================
 
 \* Datenblattangabe
@@ -97,6 +97,8 @@ das lokale Datum und die lokale Zeit gesetzt werden.
 
 Gehäuse
 -------
+
+Coming soon...
 
 .. _real_time_clock_bricklet_programming_interface:
 
