@@ -249,7 +249,7 @@ def setup(app):
 
         for ref, anchor, title in breadcrumbs[:-1]:
             ref_parts = os.path.split('/' + ref)
-            links.append('<a href="{0}/{1}.html{2}">{3}</a>'.format(os.path.relpath(ref_parts[0], os.path.split('/' + docname)[0]), ref_parts[1], anchor, title))
+            links.append(u'<a href="{0}/{1}.html{2}">{3}</a>'.format(os.path.relpath(ref_parts[0], os.path.split('/' + docname)[0]), ref_parts[1], anchor, title))
 
         links.append(breadcrumbs[-1][2])
 
