@@ -26,12 +26,6 @@ BindingsInfo = namedtuple('BindingsInfo', 'display_name url_part software_doc_su
 
 bindings_infos = \
 [
-    BindingsInfo('Modbus', 'modbus', 'Modbus', False, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
-    BindingsInfo('TCP/IP', 'tcpip', 'TCPIP', False, True,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
     BindingsInfo('C/C++', 'c', 'C', True, True,
                  {'en': 'http://www.cprogramming.com/',
                   'de': 'http://www.cprogramming.com/'}), # http://www.c-howto.de/
@@ -77,6 +71,12 @@ bindings_infos = \
     BindingsInfo('Visual Basic .NET', 'vbnet', 'VBNET', True, True,
                  {'en': 'http://howtostartprogramming.com/vb-net/',
                   'de': 'http://howtostartprogramming.com/vb-net/'}), # http://openbook.galileocomputing.de/vb_net/index.htm
+    BindingsInfo('TCP/IP', 'tcpip', 'TCPIP', False, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
+    BindingsInfo('Modbus', 'modbus', 'Modbus', False, True,
+                 {'en': 'FIXME',
+                  'de': 'FIXME'}),
 ]
 
 extension_infos = \
