@@ -139,9 +139,7 @@ dass auch entfernte Stapel von Bricks und Bricklets vom RED Brick gesteuert
 werden können.
 
 Fortgeschrittene Nutzer können den Brick mit vollem Zugriff auf dem
-zugrundeliegenden `Debian <http://www.debian.org>`__ System nutzen. Ein GPIO FPC
-Steckverbinder ermöglicht den Zugriff auf ausgewählte Prozessorsignale und kann
-genutzt werden um eigene Entwicklungen anzubinden.
+zugrundeliegenden `Debian <http://www.debian.org>`__ System nutzen.
 
 Ein Einführungsvideo gibt es auf Youtube:
 
@@ -157,7 +155,7 @@ Eigenschaft                       Wert
 ================================  ======================================================================================
 Prozessor                         Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
 Speicher                          512MB DDR3 SDRAM, Micro-SD-Karte als Flash Speicher
-Anschlüsse                        USB 2.0 Host, Micro-HDMI (Typ D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
+Anschlüsse                        USB 2.0 Host, Micro-HDMI (Typ D), Mini-USB, Stapelverbinder
 --------------------------------  --------------------------------------------------------------------------------------
 --------------------------------  --------------------------------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
@@ -1215,53 +1213,6 @@ Die Ethernet Extension taucht als normale Ethernet-Schnittstelle des Linux
 Systems auf. Über eine :ref:`Step-Down Power Supply <step_down_power_supply>`
 kann der RED Brick und die anderen Module des Stapels mit Strom versorgt werden.
 Dazu muss dieser nur unter den RED Brick gesteckt werden.
-
-GPIO Anschluss
-^^^^^^^^^^^^^^
-
-.. note::
-
-    Dieser Anschluss ist für fortgeschrittene Nutzer gedacht um eigene Hardware
-    anzuschließen. Aktuell bieten wir keine Softwareunterstützung zur Nutzung
-    dieses Anschlusses.
-
-Der RED Brick ist mit einem 21 Pin (0,25mm Pitch) FPC GPIO Anschluss
-ausgestattet (Molex 502078-2110).
-
-Alle Signale des A10s Prozessors auf Port E sind mit diesem GPIO Anschluss
-verbunden. Diese können für verschiedene Funktionen konfiguriert werden:
-
-General Purpose Input/Output, Transport Stream Controller (TS), Camera Sensor
-Interface (CSI), Serial Peripheral Interface (SPI), Secure Digital Memory 3.0
-Card Controller (SDC), Universal Asynchronous Receiver Transmitter (UART),
-Interrupt. Zusätzlich befindet sich ein I2C (TWI) Interface auf diesen
-Anschluss.
-
-==== ======== =========================================================
-Pin  Signal   Beschreibung
-==== ======== =========================================================
-1    5V       5V Stromversorgung
-2    3V3      3.3V Stromversorgung
-3    PE0      TS Clock, CSI Pixel Clock, SPI Chip Select 0, INT14, GPIO
-4    GND      Masse (Ground)
-5    PE1      TS Error, CSI Sensor Clock, SPI Clock, INT15, GPIO
-6    GND      Masse (Ground)
-7    PE2      TS Sync, CSI Horizontal Sync, SPI MOSI, GPIO
-8    GND      Masse (Ground)
-9    PE3      TS Data Valid, CSI Vertical Sync, SPI MISO, GPIO
-10   GND      Masse (Ground)
-11   PE4      TS Data 0, CSI Data 0, SD Controller Data 0, GPIO
-12   PE5      TS Data 1, CSI Data 1, SD Controller Data 1, GPIO
-13   PE6      TS Data 2, CSI Data 2, SD Controller Data 2, GPIO
-14   PE7      TS Data 3, CSI Data 3, SD Controller Data 3, GPIO
-15   PE8      TS Data 4, CSI Data 4, SD Controller Command, GPIO
-16   PE9      TS Data 5, CSI Data 5, SD Controller Clock, GPIO
-17   PE10     TS Data 6, CSI Data 6, UART TX, GPIO
-18   PE11     TS Data 7, CSI Data 7, UART RX, GPIO
-19   GND      Masse (Ground)
-20   PB15     I2C Takt (mit 2k2 Pullup), GPIO
-21   PB16     I2C Daten (mit 2k2 Pullup), GPIO
-==== ======== =========================================================
 
 
 Stromversorgung

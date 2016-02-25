@@ -136,8 +136,6 @@ other remote stacks of Bricks and Bricklets.
 
 Advanced users can use the RED Brick with full access to the underlying
 `Debian <http://www.debian.org/>`__ system.
-The expert user can directly access GPIO/SPI/I2C pins for individual
-hardware development over a GPIO FPC header.
 
 An introduction video is available on Youtube:
 
@@ -153,7 +151,7 @@ Property                       Value
 =============================  =================================================================================
 Processor                      Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
 Memory                         512MB DDR3 SDRAM, Micro-SD-Card as Flash
-Connectors                     USB 2.0 Host, Micro-HDMI (type D), Mini-USB, Stack connectors, GPIO FPC connector
+Connectors                     USB 2.0 Host, Micro-HDMI (type D), Mini-USB, Stack connectors
 -----------------------------  ---------------------------------------------------------------------------------
 -----------------------------  ---------------------------------------------------------------------------------
 Dimensions (W x D x H)         40 x 40 x 16mm (1.57 x 1.57 x 0.63")
@@ -1186,52 +1184,6 @@ underlying Linux system.
 
 A :ref:`Step-Down Power Supply <step_down_power_supply>` can be put below the
 RED Brick and can power the whole stack.
-
-GPIO Header
-^^^^^^^^^^^
-
-.. note::
-
-   This header is intended for advanced users to connect their own hardware.
-   Currently there is no software support for any of the functions of this
-   GPIO connector.
-
-The RED Brick is equipped with a 21 pin (0.25mm pitch) FPC GPIO connector
-(Molex 502078-2110).
-
-All signals of Port E of the A10s processor are connected to this GPIO
-connector. These signals can be configured for several functions:
-
-General Purpose Input/Output, Transport Stream Controller (TS), Camera Sensor
-Interface (CSI), Serial Peripheral Interface (SPI), Secure Digital Memory 3.0
-Card Controller (SDC), Universal Asynchronous Receiver Transmitter (UART),
-Interrupt capable. Additionally a I2C (TWI) interface is connected to this GPIO.
-
-==== ======== =========================================================
-Pin  Signal   Description
-==== ======== =========================================================
-1    5V       5V Power Supply
-2    3V3      3.3V Power Supply
-3    PE0      TS Clock, CSI Pixel Clock, SPI Chip Select 0, INT14, GPIO
-4    GND      Ground
-5    PE1      TS Error, CSI Sensor Clock, SPI Clock, INT15, GPIO
-6    GND      Ground
-7    PE2      TS Sync, CSI Horizontal Sync, SPI MOSI, GPIO
-8    GND      Ground
-9    PE3      TS Data Valid, CSI Vertical Sync, SPI MISO, GPIO
-10   GND      Ground
-11   PE4      TS Data 0, CSI Data 0, SD Controller Data 0, GPIO
-12   PE5      TS Data 1, CSI Data 1, SD Controller Data 1, GPIO
-13   PE6      TS Data 2, CSI Data 2, SD Controller Data 2, GPIO
-14   PE7      TS Data 3, CSI Data 3, SD Controller Data 3, GPIO
-15   PE8      TS Data 4, CSI Data 4, SD Controller Command, GPIO
-16   PE9      TS Data 5, CSI Data 5, SD Controller Clock, GPIO
-17   PE10     TS Data 6, CSI Data 6, UART TX, GPIO
-18   PE11     TS Data 7, CSI Data 7, UART RX, GPIO
-19   GND      Ground
-20   PB15     I2C Clock (with 2k2 Pullup), GPIO
-21   PB16     I2C Data (with 2k2 Pullup), GPIO
-==== ======== =========================================================
 
 
 Power Supply
