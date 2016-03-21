@@ -11,8 +11,35 @@
 Real-Time Clock Bricklet
 ========================
 
-.. note::
- This Bricklet is currently work-in-progress!
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_real_time_clock_tilted_350.jpg",
+	               "Bricklets/bricklet_real_time_clock_tilted_600.jpg",
+	               "Real-Time Clock Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_real_time_clock_horizontal_100.jpg",
+	             "Bricklets/bricklet_real_time_clock_horizontal_600.jpg",
+	             "Real-Time Clock Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_real_time_clock_red_master_100.jpg",
+	             "Bricklets/bricklet_real_time_clock_red_master_600.jpg",
+	             "Real-Time Clock Bricklet with RED Brick and Master Brick")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_real_time_clock_brickv_100.jpg",
+	             "Bricklets/bricklet_real_time_clock_brickv.jpg",
+	             "Real-Time Clock Bricklet in Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/real_time_clock_bricklet_dimensions_100.png",
+	             "Dimensions/real_time_clock_bricklet_dimensions_600.png",
+	             "Outline and drilling plan")
+	}}
+	{{ tfdocend() }}
 
 
 Features
