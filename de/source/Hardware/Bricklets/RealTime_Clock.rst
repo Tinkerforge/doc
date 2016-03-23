@@ -60,8 +60,9 @@ können :ref:`Bricks <primer_bricks>` Datum und Uhrzeit über lange Zeiträume
 genau halten, auch wenn der Brick nicht durchgehend mit Strom versorgt wird.
 
 Dieses Bricklet kann auch verwendet werden um die Systemzeit eines
-:ref:`RED Bricks <red_brick>` oder :ref:`Raspberry Pis <embedded_raspberry_pi>`
-zu halten.
+:ref:`RED Bricks <red_brick_examples>` (mit diesem `Beispielprogram
+<https://github.com/Tinkerforge/red-brick/tree/master/programs/rtc_time>`__) oder
+:ref:`Raspberry Pis <embedded_raspberry_pi>` zu halten.
 
 Technische Spezifikation
 ------------------------
