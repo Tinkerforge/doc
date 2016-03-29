@@ -9,6 +9,12 @@
 	<link rel="stylesheet" href="{% static "css/doc.css" %}">
 	{% endblock %}
 
+	{% block extra_js %}
+	<script src="{% static "js/jquery-2.1.3.min.js" %}"></script>
+	<script src="{% static "js/language-switcher.js" %}"></script>
+	<script src="{% static "js/doc-scripts.js" %}"></script>
+	{% endblock %}
+
 	{% block main %}
 {% endraw %}
 {% endblock %}
