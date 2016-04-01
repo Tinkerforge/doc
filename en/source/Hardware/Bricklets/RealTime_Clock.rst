@@ -72,11 +72,11 @@ Property                          Value
 ================================  ============================================================
 Sensor                            PCF85263A
 Current Consumption               | < 5mW (< 1mA at 5V)
-                                  | 105µW (320nA at 3.3V) im battery mode*
+                                  | 1.05µW (680nA at 1.55V) im battery mode*
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Date Format                       2000-01-01 to 2099-12-31 including weekday and leap years
-Time Format                       24h with hundredth of a second
+Time Format                       24h with hundredths of a second
 Accuracy                          | ±20ppm (±52.6 seconds per month) non-calibrated
                                   | down to ±1ppm (±2.6 seconds per month) calibrated*
 --------------------------------  ------------------------------------------------------------

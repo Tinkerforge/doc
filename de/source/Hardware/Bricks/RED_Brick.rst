@@ -479,7 +479,7 @@ wenn der RED Brick das nächste mal hochfährt.
 Falls die Zeit nach dem Booten immer vorhanden sein muss, ein Verbindung zum
 Internet aber nicht garantiert werden kann, dann kann auch das
 :ref:`GPS Bricklet <gps_bricklet>` oder das :ref:`Real-Time Clock Bricklet
-<real_time_clock_bricklet>`benutzt werden. Dazu muss nur ein entsprechendes
+<real_time_clock_bricklet>` benutzt werden. Dazu muss nur ein entsprechendes
 kleines `Programm von GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs>`__
 heruntergeladen und auf den RED Brick geladen werden, um die Uhrzeit
 mittels GPS Uhrzeit (``gps_time`` Programm) oder Real-Time Clock Bricklet
