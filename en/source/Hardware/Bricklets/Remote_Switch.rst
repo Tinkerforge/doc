@@ -371,7 +371,8 @@ seconds after it has been plugged in (left one from Intertechno in the image
 below) or it has a button that has to be pushed to enter learning mode (right
 one from ELRO in the image below). While in learning mode you have to send a
 switch-on command to the device with the address and unit that should be
-assigned to the device.
+assigned to the device. Maybe it is necessary to send this command several 
+times until the device leaves the learning mode.
 
 .. image:: /Images/Bricklets/bricklet_remote_it_homeeasy_350.jpg
    :scale: 100 %

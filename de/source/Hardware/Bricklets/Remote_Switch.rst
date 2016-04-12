@@ -372,7 +372,8 @@ automatisch für einige Sekunden nach dem Einstecken im Lernmodus (Intertechno
 Gerät, links im Bild) oder es hat einen Knopf um es in den Lernmodus zu
 versetzen (ELRO Gerät, rechts im Bild). Während das Gerät im Lernmodus ist
 muss ein Einschaltbefehl gesendet werden mit der Adresse und Unit die dem
-Gerät zugewiesen werden soll.
+Gerät zugewiesen werden soll. Gegebenenfalls muss der Einschaltbefehl mehrfach 
+gesendet werden bis das Gerät den Lernmodus verlässt.
 
 
 .. image:: /Images/Bricklets/bricklet_remote_it_homeeasy_350.jpg
