@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Real-Time Clock Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/real-time-clock-bricklet.html
+:shoplink: ../../../shop/bricklets/real-time-clock-bricklet.html
 
 .. include:: RealTime_Clock.substitutions
    :start-after: >>>substitutions
@@ -79,6 +79,8 @@ Date Format                       2000-01-01 to 2099-12-31 including weekday and
 Time Format                       24h with hundredths of a second
 Accuracy                          | ±20ppm (±52.6 seconds per month) non-calibrated
                                   | down to ±1ppm (±2.6 seconds per month) calibrated*
+Battery Type                      SR621SW / 364 / SR60 / S621 / SG1 or LR60 / L621 / AG1
+Battery Dimensions                6.8 x 2.2mm (0.27 x 0.09")
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 25 x 5mm (0.98 x 0.98 x 0.19")
