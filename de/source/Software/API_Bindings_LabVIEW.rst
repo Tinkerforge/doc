@@ -12,7 +12,7 @@ heraus zu steuern. Die :ref:`ZIP Datei <downloads_bindings_examples>` für
 die Bindings beinhaltet:
 
 * ``net20/Tinkerforge.dll``, eine vorkompilierte .NET 2.0 Bibliothek
-* ``net40/Tinkerforge.dll``, eine vorkompilierte .NET 2.0 Bibliothek
+* ``net40/Tinkerforge.dll``, eine vorkompilierte .NET 4.0 Bibliothek
 * in ``source/`` den Quelltext für ``Tinkerforge.dll``
 * in ``examples/`` die Beispiele für alle Bricks und Bricklets im LabVIEW 2010
   und LabVIEW 2013 Format
@@ -38,30 +38,55 @@ Installation
 ------------
 
 Damit die Bindings funktionieren können muss LabVIEW in der Lage sein die
-``Tinkerforge.dll`` zu finden. Abhängig von der verwendeten LabVIEW und Windows
-Version muss entweder die ``Tinkerforge.dll`` aus dem ``net20`` oder ``net40``
-Ordern verwendet werden. Die passende Version kann durch Ausprobieren ermittelt
-werden. Teste zuerst die NET 2.0 Version. Wenn LabVIEW dann Fehlercode 1386
-"Die angegebene .NET-Klasse ist in LabVIEW nicht verfügbar." meldet, dann ist
-die NET 4.0 Version die richtige.
+``Tinkerforge.dll`` zu finden. Die einfachsten Möglichkeiten ist es die
+``Tinkerforge.dll`` im LabVIEW Installationsordner abzulegen. Der
+Standardinstallationsordner für LabVIEW 2015 ist::
 
-Beim Öffnen einen Beispiels wird LabVIEW nach der ``Tinkerforge.dll``
-suchen und nachfragen falls sie nicht gefunden werden kann. Dieses
-Suchen-und-Nachfragen kann vermieden werden, indem die ``Tinkerforge.dll`` in
-einem LabVIEW bekannten Ordern gespeichert wird. Die einfachsten Möglichkeiten
-ist der ``vi.lib`` Ordern der LabVIEW Installation::
+ C:\Programme\National Instruments\LabVIEW 2015\
 
- C:\Programme\National Instruments\LabVIEW 2013\vi.lib\
+Die ``Tinkerforge.dll`` kann auch im gleichen Ordner wie die .vi Datei, die
+diese nutzen soll, abgelegt werden. In beiden Fällen sollte LabVIEW die
+``Tinkerforge.dll`` automatisch finden.
 
-Dann kann LabVIEW die ``Tinkerforge.dll`` automatisch finden und nicht
-Nachfragen. Allerdings wird LabVIEW möglicherweise darüber warnen, dass
-die DLL aus einen anderen Ordner geladen wurde. Diese Warnung kann ignoriert
-werden.
+Die ZIP Datei für die Bindings beinhaltet zwei verschiedene Versionen der
+``Tinkerforge.dll``:
 
-Es kann sein, dass LabVIEW darüber warnt, dass eine ``Tinkerforge.dll`` mit
+* Für LabVIEW 2011 und ältere LabVIEW Versionen sollte die ``Tinkerforge.dll``
+  aus dem ``net20`` Ordner verwendet werden.
+* Für LabVIEW 2012 und neuere LabVIEW Versionen sollte die ``Tinkerforge.dll``
+  aus dem ``net40`` Ordner verwendet werden.
+
+Warnungen
+^^^^^^^^^
+
+LabVIEW warnt möglicherweise darüber, dass die ``Tinkerforge.dll`` aus einen
+anderen Ordner geladen wurde. Diese Warnung kann ignoriert werden.
+
+Es kann auch sein, dass LabVIEW darüber warnt, dass eine ``Tinkerforge.dll`` mit
 abweichender Versionsnummer gefunden wurde. Wenn die gefundene Versionsnummer
 höher als die gesucht ist, kann diese Warnung ignoriert werden. Andernfalls
 sollten die LabVIEW Bindings aktualisiert werden.
+
+Fehlermeldungen
+^^^^^^^^^^^^^^^
+
+Falls LabVIEW Fehler 1386 "Die angegebene .NET-Klasse ist in LabVIEW nicht
+verfügbar." meldet, dann bitte sicherstellen, dass alle ".NET Konstruktor"
+Knoten der .vi Datei richtig eingestellt sind. Per Doppelklick auf einen
+".NET Konstruktor" Knoten den .NET Konstruktor Auswahldialog aufrufen und
+"Tinkerforge" als Assembly auswählen.
+
+Falls der .NET Konstruktor Auswahldialog meldet "Beim Laden der Assembly trat
+ein Fehler auf.", dann bitte im Windows Explorer überprüfen, ob die
+``Tinkerforge.dll`` als von einem anderen Computer stammend markiert ist. Falls
+das der Fall ist, dann verweigert LabVIEW das Laden der ``Tinkerforge.dll``.
+
+Den Eigenschaftendialog der ``Tinkerforge.dll`` im Windows Explorer aufrufen.
+Falls dort unten auf der "Allgemein" Seite ein "Zulassen" Häkchen ist, dann ist
+die Datei blockiert. Ein Klick auf das "Zulassen" Häkchen behebt das Problem
+und nach einem Neustart von LabVIEW sollte die ``Tinkerforge.dll`` jetzt auch
+geladen werden können.
+
 
 Test eines Beispiels
 --------------------
@@ -82,8 +107,8 @@ ausführen. Dafür muss zuerst die ``Example Configuration.vi`` Datei aus dem
  example_project/
   -> Example Configuration.vi
 
-Wenn die Bindings **nicht** in den ``vi.lib`` Ordern der LabVIEW Installation
-kopiert wurden, dann muss auch noch die ``Tinkerforge.dll`` in den
+Wenn die ``Tinkerforge.dll`` **nicht** in den LabVIEW Installationsordner
+kopiert wurde, dann muss auch noch die ``Tinkerforge.dll`` in den
 ``example_project/`` Ordner kopiert werden bevor das Beispiel in LabVIEW
 geöffnet werden kann::
 
