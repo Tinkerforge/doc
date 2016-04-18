@@ -80,7 +80,7 @@ as coming from another computer. If this is the case LabVIEW will refuse to
 load it.
 
 Open the properties dialog of the ``Tinkerforge.dll`` in Windows Explorer. If
-there is an "Unblock" button at the bottom of the the "General" page, then the
+there is an "Unblock" button at the bottom of the "General" page, then the
 file is blocked. Click the "Unblock" button and restart LabVIEW. The problem
 should be fixed now.
 
