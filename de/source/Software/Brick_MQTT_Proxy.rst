@@ -444,11 +444,13 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
 
  :ref:`Tilt Bricklet <tilt_bricklet>`                                           | bricklet/tilt                        | :tcpip:func:`tilt_state <BrickletTilt.get_tilt_state>`
 
+ :ref:`UV Light Bricklet <uv_light_bricklet>`                                   | bricklet/uv_light                    | :tcpip:func:`uv_light <BrickletUVLight.get_uv_light>`
+
  :ref:`Voltage Bricklet <voltage_bricklet>`                                     | bricklet/voltage                     | :tcpip:func:`voltage <BrickletVoltage.get_voltage>`
 
  :ref:`Voltage/Current Bricklet <voltage_current_bricklet>`                     | bricklet/voltage_current             | :tcpip:func:`voltage <BrickletVoltageCurrent.get_voltage>`
                                                                                 |                                      | :tcpip:func:`current <BrickletVoltageCurrent.get_current>`
-                                                                                |                                      | :tcpip:func:`power <BrickletVoltageCurrent.get_current>`
+                                                                                |                                      | :tcpip:func:`power <BrickletVoltageCurrent.get_power>`
                                                                                 |                                      | :tcpip:func:`configuration <BrickletVoltageCurrent.get_configuration>`
                                                                                 |                                      | :tcpip:func:`configuration/set <BrickletVoltageCurrent.set_configuration>`
                                                                                 |                                      | :tcpip:func:`calibration <BrickletVoltageCurrent.get_calibration>`
