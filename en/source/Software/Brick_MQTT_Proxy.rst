@@ -426,11 +426,11 @@ payloads.
                                                                                 |                                      | :tcpip:func:`noise_rejection_filter <BrickletPTC.get_noise_rejection_filter>`
                                                                                 |                                      | :tcpip:func:`noise_rejection_filter/set <BrickletPTC.set_noise_rejection_filter>`
 
- :ref:`Real-Time Clock Bricklet <real_time_clock_bricklet>`                     | bricklet/real_time_clock             | :tcpip:func:`date_time <date_time.get_date_time>`
-                                                                                |                                      | :tcpip:func:`date_time/set <RealTimeClockBricklet.set_date_time>`
-                                                                                |                                      | :tcpip:func:`timestamp <RealTimeClockBricklet.get_timestamp>`
-                                                                                |                                      | :tcpip:func:`offset <RealTimeClockBricklet.get_offset>`
-                                                                                |                                      | :tcpip:func:`offset/set <RealTimeClockBricklet.set_offset>`
+ :ref:`Real-Time Clock Bricklet <real_time_clock_bricklet>`                     | bricklet/real_time_clock             | :tcpip:func:`date_time <BrickletRealTimeClock.get_date_time>`
+                                                                                |                                      | :tcpip:func:`date_time/set <BrickletRealTimeClock.set_date_time>`
+                                                                                |                                      | :tcpip:func:`timestamp <BrickletRealTimeClock.get_timestamp>`
+                                                                                |                                      | :tcpip:func:`offset <BrickletRealTimeClock.get_offset>`
+                                                                                |                                      | :tcpip:func:`offset/set <BrickletRealTimeClock.set_offset>`
 
  :ref:`Remote Switch Bricklet <remote_switch_bricklet>`                         | bricklet/remote_switch               | :tcpip:func:`switching_state <BrickletRemoteSwitch.get_switching_state>`
                                                                                 |                                      | :tcpip:func:`repeats <BrickletRemoteSwitch.get_repeats>`
