@@ -268,6 +268,8 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`averaging <BrickletBarometer.get_averaging>`
                                                                                 |                                      | :tcpip:func:`averaging/set <BrickletBarometer.set_averaging>`
 
+ :ref:`CO2 Bricklet <co2_bricklet>`                                             | bricklet/co2                         | :tcpip:func:`co2_concentration <BrickletCO2.get_co2_concentration>`
+
  :ref:`Current12 Bricklet <current12_bricklet>`                                 | bricklet/current12                   | :tcpip:func:`current <BrickletCurrent12.get_current>`
                                                                                 |                                      | :tcpip:func:`over_current <BrickletCurrent12.is_over_current>`
                                                                                 |                                      | :tcpip:func:`calibrate/set <BrickletCurrent12.calibrate>`
@@ -297,6 +299,9 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`moving_average/set <BrickletDustDetector.set_moving_average>`
 
  :ref:`GPS Bricklet <gps_bricklet>`                                             | bricklet/gps                         | :tcpip:func:`status <BrickletGPS.get_status>`
+                                                                                |                                      | :tcpip:func:`coordinates <BrickletGPS.get_coordinates>`
+                                                                                |                                      | :tcpip:func:`altitude <BrickletGPS.get_altitude>`
+                                                                                |                                      | :tcpip:func:`motion <BrickletGPS.get_motion>`
                                                                                 |                                      | :tcpip:func:`date_time <BrickletGPS.get_date_time>`
                                                                                 |                                      | :tcpip:func:`restart/set <BrickletGPS.restart>`
 
@@ -398,6 +403,16 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
 
  :ref:`Linear Poti Bricklet <line_bricklet>`                                    | bricklet/linear_poti                 | :tcpip:func:`position <BrickletLinearPoti.get_position>`
 
+ :ref:`Load Cell Bricklet <load_cell_bricklet>`                                 | bricklet/load_cell                   | :tcpip:func:`weight <BrickletLoadCell.get_weight>`
+                                                                                |                                      | :tcpip:func:`led_on <BrickletLoadCell.is_led_on>`
+                                                                                |                                      | :tcpip:func:`led_on/set <BrickletLoadCell.led_on>`
+                                                                                |                                      | :tcpip:func:`led_off/set <BrickletLoadCell.led_off>`
+                                                                                |                                      | :tcpip:func:`moving_average <BrickletLoadCell.get_moving_average>`
+                                                                                |                                      | :tcpip:func:`moving_average/set <BrickletLoadCell.set_moving_average>`
+                                                                                |                                      | :tcpip:func:`configuration <BrickletLoadCell.get_configuration>`
+                                                                                |                                      | :tcpip:func:`configuration/set <BrickletLoadCell.set_configuration>`
+                                                                                |                                      | :tcpip:func:`tare/set <BrickletLoadCell.tare>`
+
  :ref:`Moisture Bricklet <moisture_bricklet>`                                   | bricklet/moisture                    | :tcpip:func:`moisture_value <BrickletMoisture.get_moisture_value>`
                                                                                 |                                      | :tcpip:func:`moving_average <BrickletMoisture.get_moving_average>`
                                                                                 |                                      | :tcpip:func:`moving_average/set <BrickletMoisture.set_moving_average>`
@@ -415,6 +430,12 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`noise_rejection_filter <BrickletPTC.get_noise_rejection_filter>`
                                                                                 |                                      | :tcpip:func:`noise_rejection_filter/set <BrickletPTC.set_noise_rejection_filter>`
 
+ :ref:`Real-Time Clock Bricklet <real_time_clock_bricklet>`                     | bricklet/real_time_clock             | :tcpip:func:`date_time <date_time.get_date_time>`
+                                                                                |                                      | :tcpip:func:`date_time/set <RealTimeClockBricklet.set_date_time>`
+                                                                                |                                      | :tcpip:func:`timestamp <RealTimeClockBricklet.get_timestamp>`
+                                                                                |                                      | :tcpip:func:`offset <RealTimeClockBricklet.get_offset>`
+                                                                                |                                      | :tcpip:func:`offset/set <RealTimeClockBricklet.set_offset>`
+
  :ref:`Remote Switch Bricklet <remote_switch_bricklet>`                         | bricklet/remote_switch               | :tcpip:func:`switching_state <BrickletRemoteSwitch.get_switching_state>`
                                                                                 |                                      | :tcpip:func:`repeats <BrickletRemoteSwitch.get_repeats>`
                                                                                 |                                      | :tcpip:func:`repeats/set <BrickletRemoteSwitch.set_repeats>`
@@ -424,6 +445,10 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`switch_socket_c/set <BrickletRemoteSwitch.switch_socket_c>`
 
  :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`                             | bricklet/rotary_poti                 | :tcpip:func:`position <BrickletRotaryPoti.get_position>`
+
+ :ref:`Rotary Encoder Bricklet <rotary_encoder_bricklet>`                       | bricklet/rotary_encoder              | :tcpip:func:`count <BrickletRotaryEncoder.get_count>` (ruft :tcpip:func:`get_count <BrickletRotaryEncoder.get_count>` mit *false* auf)
+                                                                                |                                      | :tcpip:func:`pressed <BrickletRotaryEncoder.is_pressed>`
+                                                                                |                                      | :tcpip:func:`_reset_count/set <BrickletRotaryEncoder.get_count>` (ruft :tcpip:func:`get_count <BrickletRotaryEncoder.get_count>` mit *true* auf)
 
  :ref:`Solid State Relay Bricklet <solid_state_relay_bricklet>`                 | bricklet/solid_state_relay           | :tcpip:func:`state <BrickletSolidStateRelay.get_state>`
                                                                                 |                                      | :tcpip:func:`state/set <BrickletSolidStateRelay.set_state>`
