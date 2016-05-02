@@ -395,6 +395,16 @@ payloads.
                                                                                 |                                      | :tcpip:func:`default_text_counter <BrickletLCD20x4.get_default_text_counter>`
                                                                                 |                                      | :tcpip:func:`default_text_counter/set <BrickletLCD20x4.set_default_text_counter>`
 
+ :ref:`LED Strip Bricklet <led_strip_bricklet>`                                 | bricklet/led_strip                   | :tcpip:func:`rgb_values <BrickletLEDStrip.get_rgb_values>`
+                                                                                |                                      | :tcpip:func:`rgb_values/set <BrickletLEDStrip.set_rgb_values>`
+                                                                                |                                      | :tcpip:func:`frame_duration <BrickletLEDStrip.get_frame_duration>`
+                                                                                |                                      | :tcpip:func:`frame_duration/set <BrickletLEDStrip.set_frame_duration>`
+                                                                                |                                      | :tcpip:func:`supply_voltage <BrickletLEDStrip.get_supply_voltage>`
+                                                                                |                                      | :tcpip:func:`clock_frequency <BrickletLEDStrip.get_clock_frequency>`
+                                                                                |                                      | :tcpip:func:`clock_frequency/set <BrickletLEDStrip.set_clock_frequency>`
+                                                                                |                                      | :tcpip:func:`chip_type <BrickletLEDStrip.get_chip_type>`
+                                                                                |                                      | :tcpip:func:`chip_type/set <BrickletLEDStrip.set_chip_type>`
+
  :ref:`Line Bricklet <line_bricklet>`                                           | bricklet/line                        | :tcpip:func:`reflectivity <BrickletLine.get_reflectivity>`
 
  :ref:`Linear Poti Bricklet <line_bricklet>`                                    | bricklet/linear_poti                 | :tcpip:func:`position <BrickletLinearPoti.get_position>`
@@ -414,6 +424,13 @@ payloads.
                                                                                 |                                      | :tcpip:func:`moving_average/set <BrickletMoisture.set_moving_average>`
 
  :ref:`Motion Detector Bricklet <motion_detector_bricklet>`                     | bricklet/motion_detector             | :tcpip:func:`motion_detected <BrickletMotionDetector.get_motion_detected>`
+
+ :ref:`Multi Touch Bricklet <multi_touch_bricklet>`                             | bricklet/multi_touch                 | :tcpip:func:`touch_state <BrickletMultiTouch.get_touch_state>`
+                                                                                |                                      | :tcpip:func:`electrode_config <BrickletMultiTouch.get_electrode_config>`
+                                                                                |                                      | :tcpip:func:`electrode_config/set <BrickletMultiTouch.set_electrode_config>`
+                                                                                |                                      | :tcpip:func:`electrode_sensitivity <BrickletMultiTouch.get_electrode_sensitivity>`
+                                                                                |                                      | :tcpip:func:`electrode_sensitivity/set <BrickletMultiTouch.set_electrode_sensitivity>`
+                                                                                |                                      | :tcpip:func:`recalibrate/set <BrickletMultiTouch.recalibrate>`
 
  :ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>`                         | bricklet/piezo_speaker               | :tcpip:func:`beep/set <BrickletPiezoSpeaker.beep>`
                                                                                 |                                      | :tcpip:func:`morse_code/set <BrickletPiezoSpeaker.morse_code>`
