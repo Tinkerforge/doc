@@ -17,7 +17,11 @@ Setup und Benutzung
 
 Der Proxy ist ein Python-Skript und kann von seinem
 `Brick MQTT Proxy GitHub Repository <https://github.com/Tinkerforge/brick-mqtt-proxy>`__
-heruntergeladen werden.
+heruntergeladen werden:
+
+.. code-block:: bash
+
+  wget https://raw.githubusercontent.com/Tinkerforge/brick-mqtt-proxy/master/brick-mqtt-proxy.py
 
 Als Abhängigkeiten müssen nur die
 :ref:`Tinkerforge Python API Bindings <api_bindings_python>` 

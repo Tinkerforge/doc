@@ -16,7 +16,11 @@ Setup and Usage
 ---------------
 
 The proxy is provided as Python script and can be downloaded from its 
-`Brick MQTT Proxy GitHub Repository <https://github.com/Tinkerforge/brick-mqtt-proxy>`__.
+`Brick MQTT Proxy GitHub Repository <https://github.com/Tinkerforge/brick-mqtt-proxy>`__:
+
+.. code-block:: bash
+
+  wget https://raw.githubusercontent.com/Tinkerforge/brick-mqtt-proxy/master/brick-mqtt-proxy.py
 
 As dependencies the :ref:`Tinkerforge Python API Bindings <api_bindings_python>` 
 and the `Eclipse Paho MQTT Python client library <https://pypi.python.org/pypi/paho-mqtt/1.1>`__
