@@ -755,7 +755,7 @@ def make_index_api_misc(binding, lang):
 def make_index_api():
     index_html = """
 <div class="category_api">
-    <div class="category_head btn-more btn-more-down">
+    <div class="category_head tf-btn-more tf-btn-more-down">
         <a name="software-{4}"></a>
         {3}
     </div>
@@ -805,15 +805,15 @@ def make_index_api():
             }
         }
 
-        $(".btn-more").parent().find(".category_body").slideUp(duration);
-        $(".btn-more").removeClass("btn-more-up").addClass("btn-more-down");
+        $(".tf-btn-more").parent().find(".category_body").slideUp(duration);
+        $(".tf-btn-more").removeClass("tf-btn-more-up").addClass("tf-btn-more-down");
     }
 
     function toggleContent(parent, duration, forceShow) {
         togglingContent = true;
 
         categoryBody = parent.find(".category_body")
-        btnMore = parent.find(".btn-more")
+        btnMore = parent.find(".tf-btn-more")
 
         if (categoryBody.is(":hidden") || forceShow === true) {
             anchorName = categoryBody.parent().find(".category_head a").attr("name")
@@ -823,16 +823,16 @@ def make_index_api():
                 location.hash = "/" + anchorName + "-open";
             }
 
-            $(".btn-more").parent().find(".category_body").slideUp(duration);
-            $(".btn-more").removeClass("btn-more-up").addClass("btn-more-down");
+            $(".tf-btn-more").parent().find(".category_body").slideUp(duration);
+            $(".tf-btn-more").removeClass("tf-btn-more-up").addClass("tf-btn-more-down");
 
-            btnMore.removeClass("btn-more-down").addClass("btn-more-up");
+            btnMore.removeClass("tf-btn-more-down").addClass("tf-btn-more-up");
 
             // this has to be the last line and after the hash change
             categoryBody.slideDown(duration, function() { togglingContent = false });
         }
         else {
-            btnMore.removeClass("btn-more-up").addClass("btn-more-down");
+            btnMore.removeClass("tf-btn-more-up").addClass("tf-btn-more-down");
 
             if (/software-/.test(location.hash)) {
                 location.hash = "/software-none-open";
