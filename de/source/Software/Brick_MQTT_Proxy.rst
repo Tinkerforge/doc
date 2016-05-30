@@ -23,14 +23,16 @@ heruntergeladen werden:
 
   wget https://raw.githubusercontent.com/Tinkerforge/brick-mqtt-proxy/master/brick-mqtt-proxy.py
 
-Als Abhängigkeiten müssen nur die
-:ref:`Tinkerforge Python API Bindings <api_bindings_python>` 
-und `Eclipse Paho MQTT Python client library <https://pypi.python.org/pypi/paho-mqtt/1.1>`__
-installiert werden. Unter Linux kann dies mit folgendem Befehl geschehen:
+Als Abhängigkeiten müssen der :ref:`Brick Daemon <brick_daemon>`, die
+:ref:`Python API Bindings <api_bindings_python>` und die `Eclipse Paho MQTT
+Python Client Bibliothek <https://pypi.python.org/pypi/paho-mqtt/1.1>`__
+installiert werden. Siehe Brick Daemon und Python API Bindings Dokumentation
+für Installationsanweisungen. Unter Linux kann die Paho MQTT Python Client
+Bibliothek mit folgendem Befehl installiert werden:
 
 .. code-block:: bash
 
-  sudo pip install tinkerforge paho-mqtt
+  sudo pip install paho-mqtt
 
 Anschließend kann der Proxy mit folgender Zeile gestartet werden:
 

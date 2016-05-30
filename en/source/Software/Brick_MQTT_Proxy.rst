@@ -22,13 +22,16 @@ The proxy is provided as Python script and can be downloaded from its
 
   wget https://raw.githubusercontent.com/Tinkerforge/brick-mqtt-proxy/master/brick-mqtt-proxy.py
 
-As dependencies the :ref:`Tinkerforge Python API Bindings <api_bindings_python>` 
-and the `Eclipse Paho MQTT Python client library <https://pypi.python.org/pypi/paho-mqtt/1.1>`__
-has to be installed. On Linux this can be done by:
+As dependencies the :ref:`Brick Daemon <brick_daemon>`, the :ref:`Python API
+Bindings <api_bindings_python>` and the `Eclipse Paho MQTT Python client library
+<https://pypi.python.org/pypi/paho-mqtt/1.1>`__ has to be installed.
+See the Brick Daemon and Python API Bindings documentation about how to install
+them. On Linux the Paho MQTT Python client library can be installed using the
+following command:
 
 .. code-block:: bash
 
-  sudo pip install tinkerforge paho-mqtt
+  sudo pip install paho-mqtt
 
 Afterwards the proxy can be startet with:
 
