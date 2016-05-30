@@ -23,7 +23,7 @@ heruntergeladen werden:
 
   wget https://raw.githubusercontent.com/Tinkerforge/brick-mqtt-proxy/master/brick-mqtt-proxy.py
 
-Als Abhängigkeiten müssen der :ref:`Brick Daemon <brick_daemon>`, die
+Als Abhängigkeiten müssen der :ref:`Brick Daemon <brickd>`, die
 :ref:`Python API Bindings <api_bindings_python>` und die `Eclipse Paho MQTT
 Python Client Bibliothek <https://pypi.python.org/pypi/paho-mqtt/1.1>`__
 installiert werden. Siehe Brick Daemon und Python API Bindings Dokumentation
