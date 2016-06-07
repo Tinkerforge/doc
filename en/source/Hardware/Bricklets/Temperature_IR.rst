@@ -141,7 +141,6 @@ temperature of the room) and the object temperature of the object you point at.
 For accurate object temperature measurements it is possible to configure the
 emissivity of the material you point at.
 Enter 0xFFFF = 65535 for an emissivity of 1.0.
-The default is an emissivity of 0.98 (0.98 * 0xFFFF = 64224).
 
 |test_pi_ref|
 

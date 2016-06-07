@@ -139,7 +139,7 @@ sollte stabil bleiben, außer der Sensor wird z.B. durch Berührung erwärmt.
 
 Für akkurate Messungen der Objekttemperatur ist es möglich die Emissivität
 des zu messenden Materials einzustellen: 0xFFFF = 65535 entspricht einer
-Emissivität von 1,0. Die Standard Emissivität ist 0,98 (0,98 * 0xFFFF = 64224).
+Emissivität von 1,0.
 
 |test_pi_ref|
 
