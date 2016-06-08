@@ -145,7 +145,7 @@ If everything went as expected the Brick Viewer should look as
 depicted below.
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg
-   :scale: 70 %
+   :scale: 100 %
    :alt: Industrial Dual 0-20mA Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg

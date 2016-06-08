@@ -147,7 +147,7 @@ Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
 aussehen.
 
 .. image:: /Images/Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg
-   :scale: 70 %
+   :scale: 100 %
    :alt: Industrial Dual 0-20mA Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_0_20ma_brickv.jpg

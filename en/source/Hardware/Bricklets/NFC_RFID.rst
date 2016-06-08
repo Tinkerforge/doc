@@ -258,7 +258,7 @@ If everything went as expected you can now scan for tags and read/write
 pages.
 
 .. image:: /Images/Bricklets/bricklet_nfc_rfid_brickv.jpg
-   :scale: 70 %
+   :scale: 100 %
    :alt: NFC/RFID Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_nfc_rfid_brickv.jpg

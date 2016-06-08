@@ -115,7 +115,7 @@ Wenn alles wie erwartet funktioniert wird der Luftdruck in mbar angezeigt.
 Der Graph gibt den zeitlichen Verlauf des Luftdrucks wieder.
 
 .. image:: /Images/Bricklets/bricklet_barometer_brickv.jpg
-   :scale: 70 %
+   :scale: 100 %
    :alt: Barometer Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_barometer_brickv.jpg
