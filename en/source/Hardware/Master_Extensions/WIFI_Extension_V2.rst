@@ -1,8 +1,8 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / WIFI Master Extension 2.0
-:shoplink: ../../../shop/master-extensions/wifi-master-extension-v2.html
+:shoplink: ../../../shop/master-extensions/wifi-v2-master-extension.html
 
-.. _wifi_extension_v2:
+.. _wifi_v2_extension:
 
 WIFI Master Extension 2.0
 =========================
@@ -91,7 +91,7 @@ extension.
 The following combinations with other Extensions in a stack are possible
 (regardless of order):
 
-* WIFI / RS485 Master
+* WIFI 2.0 / RS485 Master
 
 Technical Specifications
 ------------------------
@@ -103,11 +103,11 @@ Current Consumption               80mA (transmit), TBDmA (during sleep)
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
 Maximum Concurrent Connections    10
-Modes                             Client, Acces Point and Client/Acces Point concurrently
+Modes                             Client, Access Point and Client/Access Point concurrently
 Tinkerforge Protocols             Full support (TCP/IP, authentication and websockets)
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
-RF Output Power (Typical)         up to 19,5dBm
+RF Output Power (Typical)         up to 19.5dBm
 Security Protocols                WEP, WPA, WPA2
 Supported Standards               IEEE 802.11 b/g/n, with CCK, OFDM and MCS7 modulation
 --------------------------------  -----------------------------------------------------------------------------
@@ -120,13 +120,12 @@ Weight                            12g
 Resources
 ---------
 
-* ESP-WROOM-02 (`homepage <https://espressif.com/en/products/hardware/esp-wroom-02/overview>`__)
+* ESP-WROOM-02 (`Homepage <https://espressif.com/en/products/hardware/esp-wroom-02/overview>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-v2-extension-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
 
-
-.. _wifi_network_assembly:
+.. _wifi_v2_network_assembly:
 
 WIFI Network
 ------------
@@ -158,8 +157,7 @@ has to be changed to
 
  ipcon.connect("192.168.0.25", 4223)
 
-
-.. _wifi_configuration:
+.. _wifi_v2_configuration:
 
 WIFI Configuration
 ------------------
@@ -184,13 +182,13 @@ cases they can stay unchanged.
    :target: ../../_images/Extensions/extension_wifi2_ports.jpg
 
 
-The phy modes
+The PHY modes
 
-* A,
-* B and
+* B,
+* G and
 * N
 
-are available. Phy mode N can't be used if the access point is enabled.
+are available. PHY mode N can't be used if the access point is enabled.
 
 .. image:: /Images/Extensions/extension_wifi2_brickv_phy_mode.jpg
    :scale: 100 %
@@ -199,8 +197,8 @@ are available. Phy mode N can't be used if the access point is enabled.
    :target: ../../_images/Extensions/extension_wifi2_phy_mode.jpg
 
 
-The WIFI Extension 2.0 supports authentication since Master Brick firmware
-version 2.2.0. Authentication is disabled by default. Tick the "Use
+The WIFI Extension 2.0 supports authentication. Authentication is disabled by
+default. Tick the "Use
 Authentication" check box and choose an authentication secret to enable it.
 This secret can be 64 ASCII characters long. After saving the configuration
 and restarting the Master Brick authentication is enabled.
@@ -216,7 +214,7 @@ Master Brick that it knows the authentication secret before normal communication
 can occur. See the :ref:`authentication tutorial <tutorial_authentication>`
 for more information.
 
-The WIFI Extension can operate as 
+The WIFI Extension 2.0 can operate as
 
 * Client,
 * Access Point or 
@@ -231,7 +229,6 @@ The WIFI Extension can operate as
 If you choose both, the two resulting networks are completely
 independent from each other. The Client will have a different MAC as the
 Access Point and there is no routing between the networks.
-
 
 The whole configuration (including client and access point configuration) is
 saved by pressing the "Save WIFI Configuration" button at the bottom.
@@ -259,7 +256,6 @@ In the latter case you have to configure a IP, subnet mask and gateway.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_brickv_client_ip.jpg
 
-
 The SSID of the access point can be up to 32 ASCII characters long.
 
 .. image:: /Images/Extensions/extension_wifi2_brickv_client_ssid.jpg
@@ -267,7 +263,6 @@ The SSID of the access point can be up to 32 ASCII characters long.
    :alt: WIFI Extension 2.0 client SSID configuration
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_brickv_client_ssid.jpg
-
 
 It is possible to connect to open networks as well as networks encrypted
 by WPA/WPA2.
@@ -338,7 +333,7 @@ use a custom MAC address.
    :target: ../../_images/Extensions/extension_wifi2_brickv_ap_channel_hide_ssid_mac.jpg
 
 
-.. _extension_wifi_leds:
+.. _wifi_v2_extension_leds:
 
 LEDs
 ----
@@ -354,7 +349,6 @@ In access point mode it will blink slowly as long as no client is connected.
 If both are enabled, it will blink fast until it is connected to an external access point and
 after that it will blink slowly until a client connects to the access point of the
 WIFI Extension 2.0.
-
 
 
 Programming Interface

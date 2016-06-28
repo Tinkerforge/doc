@@ -68,6 +68,7 @@ The following combinations with other Extensions in a stack are possible
 * RS485 Master / Chibi Slave
 * RS485 Master / Ethernet
 * RS485 Master / WIFI
+* RS485 Master / WIFI 2.0
 * RS485 Slave / Chibi Master
 
 
