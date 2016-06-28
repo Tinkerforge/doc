@@ -92,6 +92,9 @@ extension_infos = \
                 'de': 'Kabelgebundene RS485 Verbindung zwischen Stapeln'}),
     DeviceInfo(None, 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, True, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
+                'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'}),
+    DeviceInfo(None, 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', None, False, False,
+               {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'})
 ]
 

@@ -290,7 +290,7 @@ Access Point Mode Configuration
 
 In Access Point you can either enable DHCP (the WIFI Extension 2.0 will run
 a DHCP server) or static IP. If you choose static IP, please make sure that
-the client uses a ip, subnet mask and gateway which is compatible to the
+the client uses a IP, subnet mask and gateway which is compatible to the
 static WIFI Extension 2.0 network.
 
 .. image:: /Images/Extensions/extension_wifi2_brickv_ap_ip.jpg
