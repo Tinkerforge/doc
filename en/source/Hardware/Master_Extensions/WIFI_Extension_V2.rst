@@ -40,6 +40,11 @@ WIFI Master Extension 2.0
 	             "Extensions/extension_wifi2_bottom_800.jpg",
 	             "WIFI Extension 2.0 bottom")
 	}}
+	{{
+	    tfdocimg("Dimensions/wifi_extension_dimensions_100.png",
+	             "Extensions/wifi_extension_dimensions_600.png",
+	             "WIFI Extension 2.0 dimensions")
+	}}
 	{{ tfdocend() }}
 
 
@@ -116,7 +121,7 @@ Resources
 
 * ESP-WROOM-02 (`homepage <https://espressif.com/en/products/hardware/esp-wroom-02/overview>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-v2-extension-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/wifi_v2_extension_dimensions.png>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
 
 
