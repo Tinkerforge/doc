@@ -55,10 +55,10 @@ Features
 Description
 -----------
 
-With this WIFI Extension 2.0 you can control :ref:`Bricks <primer_bricks>` and
+With the WIFI Extension 2.0 you can control :ref:`Bricks <primer_bricks>` and
 :ref:`Bricklets <primer_bricklets>` wirelessly over your
-mobile phone, tablet or your PC. For the Master Extension concept please take a look at the general
-:ref:`description <primer_master_extensions>`.
+mobile phone, tablet or PC. For an explanation of the Master Extension 
+concept please take a look at the general :ref:`description <primer_master_extensions>`.
 
 ..
  The devices supports two modes. In Full Speed Mode the device Wi-Fi transceiver is always on.
@@ -79,7 +79,7 @@ programming perspective this is completely transparent, i.e. all Bricks and
 Bricklets can be used exactly the same way as if they were connected to your 
 controlling device via USB.
 
-You need a Master Brick with firmware version 1.4.0 or newer to use this 
+You need a Master Brick with firmware version 2.4.0 or newer to use this 
 extension.
 
 The following combinations with other Extensions in a stack are possible
@@ -114,10 +114,10 @@ Weight                            12g
 Resources
 ---------
 
-* ESP-WRROM-02 (`homepage <https://espressif.com/en/products/hardware/esp-wroom-02/overview>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/wifi-extension/raw/master/hardware/wifi-extension-v2-schematic.pdf>`__)
-* Outline and drilling plan (`Download <../../_images/Dimensions/wifi_extension_v2_dimensions.png>`__)
-* Source code and design files (`Download <https://github.com/Tinkerforge/wifi-extension-v2/zipball/master>`__)
+* ESP-WROOM-02 (`homepage <https://espressif.com/en/products/hardware/esp-wroom-02/overview>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-v2-extension-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/wifi_v2_extension_dimensions.png>`__)
+* Source code and design files (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
 
 
 .. _wifi_network_assembly:
@@ -133,8 +133,6 @@ If you want to connect the Brick Viewer with your WIFI setup,
 you have to enter the IP of the WIFI Extension 2.0 and the configured port
 in the Setup Tab. After pressing "Connect" you will not connect to your local
 running Brick Daemon but to your WIFI Extension 2.0.
-
-FIXME IMAGE
 
 .. image:: /Images/Extensions/extension_wifi_brickv.jpg
    :scale: 100 %
@@ -160,208 +158,40 @@ has to be changed to
 WIFI Configuration
 ------------------
 
-To configure the WIFI Extension 2.0 open the Master Brick Tab in the Brick Viewer.
-First of all you have to enter the SSID of your wireless network. The SSID is
-the name of the wireless network to which the WIFI Extension 2.0 should connect to
-in client mode, respectively it is the name of the wireless network the WIFI
-Extension provides in access point mode or ad hoc mode (this section focuses
-on client mode). The SSID can be 32 ASCII characters long (quotation mark is
-not allowed).
+You can configure the WIFI Extension 2.0 through the Master Brick Tab in the
+Brick Viewer.
 
-Then you have to select DHCP or static IP address configuration. In case of
-you want to use DHCP simply select DHCP and configure the port.
-
-.. image:: /Images/Extensions/extension_wifi_connection_dhcp.jpg
+.. image:: /Images/Extensions/extension_wifi2_brickv_complete.jpg
    :scale: 100 %
-   :alt: Configure connection as DHCP
+   :alt: Complete brickv Master Brick tab
    :align: center
-   :target: ../../_images/Extensions/extension_wifi_connection_dhcp.jpg
+   :target: ../../_images/Extensions/extension_wifi2_complete.jpg
 
-If you want to use a static IP address you have to configure that IP and the port.
-Additionally configure the subnet mask and gateway address.
+The first configuration options are the port, websocket port and website port.
+You can change them from the defaults 4223, 4280 and 80 if necessary. In most
+cases they can stay unchanged.
 
-.. image:: /Images/Extensions/extension_wifi_connection_static.jpg
+.. image:: /Images/Extensions/extension_wifi2_brickv_ports.jpg
    :scale: 100 %
-   :alt: Configure connection as static IP
+   :alt: WIFI Extension 2.0 port configuration
    :align: center
-   :target: ../../_images/Extensions/extension_wifi_connection_static.jpg
+   :target: ../../_images/Extensions/extension_wifi2_ports.jpg
 
-We suggest that you use an encrypted network. You can choose between
-WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) and WEP.
 
-For WPA you only have to enter the key (limited to ASCII characters, without
-the quotation mark).
+The phy modes
 
-.. image:: /Images/Extensions/extension_wifi_encryption_wpa.jpg
+* A,
+* B and
+* N
+
+are available. Phy mode N can't be used if the access point is enabled.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_phy_mode.jpg
    :scale: 100 %
-   :alt: Configure WPA encryption
+   :alt: WIFI Extension 2.0 phy mode configuration
    :align: center
-   :target: ../../_images/Extensions/extension_wifi_encryption_wpa.jpg
+   :target: ../../_images/Extensions/extension_wifi2_phy_mode.jpg
 
-For WPA Enterprise configure outer auth (FAST, TLS, TTLS, PEAP),
-inner auth (MSCHAP, GTC), user, password and add the necessary certificates (ca cert, client cert, private key).
-
-.. image:: /Images/Extensions/extension_wifi_encryption_wpa_enterprise.jpg
-   :scale: 100 %
-   :alt: Configure WPA Enterprise encryption
-   :align: center
-   :target: ../../_images/Extensions/extension_wifi_encryption_wpa_enterprise.jpg
-
-For WEP enter the key and the key index. If the key index is unknown it is likely 1.
-Please enter your key in hex notation with the full key length
-(depending on 64bit and 128bit key).
-
-.. image:: /Images/Extensions/extension_wifi_encryption_wep.jpg
-   :scale: 100 %
-   :alt: Configure WEP encryption
-   :align: center
-   :target: ../../_images/Extensions/extension_wifi_encryption_wep.jpg
-
-.. note::
- WEP encryption has been broken and it doesn't provide any real security
- anymore. We strongly suggest to use WPA/WPA2 instead.
-
-If you don't want encryption select "No Encryption".
-
-Finally you have to configure the Power Mode. There are two Power Modes:
-Full Speed and Low Power. In Full Speed mode the device consumes more power,
-but you will be able to transmit much more messages. This will be the typical
-configuration. If you only need to transmit only a few messages per second
-(e.g. if you want to measure temperatures wirelessly, than you might to use
-the Low Power Mode and save energy.
-
-.. image:: /Images/Extensions/extension_wifi_power_mode.jpg
-   :scale: 100 %
-   :alt: Configure Power Mode
-   :align: center
-   :target: ../../_images/Extensions/extension_wifi_power_mode.jpg
-
-.. note::
- The Power Mode is not saved permanently, it will automatically switch back
- to Full Speed on reset of the Master Brick. Because Low Power Mode is not fast enough for the
- initial enumeration after a reset. Therefore, you need to enable Low Power
- Mode after each reset.
-
-At the end, press "Save WIFI Configuration" to save the configuration permanently
-on the WIFI Extension 2.0. If another option besides the Power Mode has be changed
-then the Master Brick has to be restarted to apply the new configuration.
-After restart you should be able to reach the Master Brick by entering the IP
-address and port of the Brick in the Brick Viewer.
-
-Example: Client Mode with dynamic IP Address
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This examples shows how to configure the WIFI Extension 2.0 to connect to a typical
-Wi-Fi access point. This example assumes that the SSID of your access point is
-"MyHomeNetwork" and that it is using WPA/WPA2 encryption with "1234567890ABCDEF"
-as key.
-
-Firstly, enter the SSID (the name of your Wi-Fi network) to connect to. For
-example:
-
-* SSID: MyHomeNetwork
-
-Next, enter a Hostname that you can use to connect to the WIFI Extension 2.0 without
-having to figure out which dynamic IP address got assigned to it. For example:
-
-* Hostname: WIFI-Extension
-
-Secondly, select "Client: DHCP" for the Mode and Address, "WPA/WPA2" for
-Encryption and enter the WPA/WPA2 key. For example:
-
-* Key: 1234567890ABCDEF
-
-Save the WIFI configuration and restart the Master Brick. Now the WIFI Extension 2.0
-should connect to your access point and you should be able to connect to it with
-your program and Brick Viewer using "WIFI-Extension" as host.
-
-
-.. _extension_wifi_adhoc_ap:
-
-Access Point Mode and Ad Hoc Mode
----------------------------------
-
-.. note::
- Access Point and Ad Hoc mode are available in Master Brick firmware
- version 1.3.3 and Brick Viewer version 1.1.8 and newer.
-
-It is possible to communicate with the WIFI Extension 2.0 without an external
-Access Point. To allow that, the WIFI Extension 2.0 implements an
-Access Point and an Ad Hoc mode. Since Ad Hoc mode needs to be specifically
-supported by the device you want to connect with, we recommend the
-use of Access Point mode. In AP mode the WIFI Extension 2.0 simulates an
-access point and should show up as a normal access point on your PC.
-
-.. image:: /Images/Extensions/extension_wifi_connection_adhoc_ap.jpg
-   :scale: 100 %
-   :alt: Configure Ad Hoc or Access Point mode
-   :align: center
-   :target: ../../_images/Extensions/extension_wifi_connection_adhoc_ap.jpg
-
-You can choose Ad Hoc and Access Point mode with DHCP and static IP.
-If you choose DHCP you have to provide the DHCP server! There is no DHCP
-server implementation in the Wi-Fi module. Since that can be quite
-cumbersome to get running, we recommend that you use static IP.
-
-As encryption you can use WEP. WPA is unfortunately not supported in
-Ad Hoc and Access Point mode. The WEP key should be 64 or 128 bit and
-in hexadecimal notation. You can generate valid WEP keys
-`here <http://www.andrewscompanies.com/tools/wep.asp>`__.
-
-Example: Access Point Mode with static IP Address
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This examples shows how to configure the WIFI Extension 2.0 as access point with
-a static IP address and how to connect an Android smart phone to it.
-
-Firstly, select a SSID (the name of the Wi-Fi network). Make sure to use a
-name that is not already used by another Wi-Fi network near you. For example:
-
-* SSID: TinkerforgeWLAN
-
-Secondly, select "Access Point: Static IP" for the Mode and Address and
-configure IP, Subnet Mask and Gateway. For example:
-
-* IP: 192.168.1.17
-* Subnet Mask: 255.255.255.0
-* Gateway: 192.168.1.1
-
-Select "No Encryption" or "WEP" for Encryption. If "WEP" should be used then
-you also have to provide a Key. A 64 or 128 bit WEP key can be generated
-`here <http://www.andrewscompanies.com/tools/wep.asp>`__. The key has to be
-entered in hexadecimal notation.
-
-.. note::
- WEP encryption has been broken and it doesn't provide any real security
- anymore. Unfortunately the WIFI Extension 2.0 doesn't support WPA/WPA2 encryption
- in Ad Hoc and Access Point mode.
-
-Save the WIFI configuration and restart the Master Brick. Now the WIFI Extension 2.0
-should act as an access point.
-
-Thirdly, open the Wi-Fi settings on your Android smart phone and add a new
-network. Enter the SSID of the WIFI Extension 2.0 (default: TinkerforgeWLAN)
-and select "None" or "WEP" for Security, according to the configuration of the
-WIFI Extension 2.0. If you selected WEP you have to enter the generated WEP key as
-Password in hexadecimal notation.
-
-The WIFI Extension 2.0 does not provide its own DHCP server, therefore you have to
-configure a static IP address for your smart phone in the advanced options.
-Change the IP settings from "DHCP" to "Static" and enter IP address, Gateway
-and Network prefix length. For example:
-
-* IP address: 192.168.1.23
-* Gateway: 192.168.1.1
-* Network prefix length: 24
-
-Finally, save the new network configuration and connect to it. Now your smart
-phone should be connected to the access point of the WIFI Extension 2.0.
-
-
-.. _extension_wifi_authentication:
-
-Authentication
---------------
 
 The WIFI Extension 2.0 supports authentication since Master Brick firmware
 version 2.2.0. Authentication is disabled by default. Tick the "Use
@@ -369,25 +199,156 @@ Authentication" check box and choose an authentication secret to enable it.
 This secret can be 64 ASCII characters long. After saving the configuration
 and restarting the Master Brick authentication is enabled.
 
-.. image:: /Images/Extensions/extension_wifi_authentication.jpg
+.. image:: /Images/Extensions/extension_wifi2_brickv_authentication.jpg
    :scale: 100 %
-   :alt: Configure Authentication
+   :alt: WIFI Extension 2.0 phy authentication configuration
    :align: center
-   :target: ../../_images/Extensions/extension_wifi_authentication.jpg
+   :target: ../../_images/Extensions/extension_brickv_wifi2_authentication.jpg
 
 Now every TCP/IP connection to the WIFI Extension 2.0 has to prove to the
 Master Brick that it knows the authentication secret before normal communication
 can occur. See the :ref:`authentication tutorial <tutorial_authentication>`
 for more information.
 
+The WIFI Extension can operate as 
+
+* Client,
+* Access Point or 
+* both at the same time.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_mode.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 phy mode configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_mode.jpg
+
+If you choose both, the two resulting networks are completely
+independent from each other. The Client will have a different MAC as the
+Access Point and there is no routing between the networks.
+
+
+The whole configuration (including client and access point configuration) is
+saved by pressing the "Save WIFI Configuration" button at the bottom.
+
+To see the current status of the WIFI Extension 2.0 press the "Show Status"
+button.
+
+Client Mode Configuration
+-------------------------
+
+In client mode you can set a hostname with up to 32 ASCII characters.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_client_hostname.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 client hostname configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_client_hostname.jpg
+
+The IP can be given by a DHCP server or you can choose to use a static IP. 
+In the latter case you have to configure a IP, subnet mask and gateway.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_client_ip.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 client IP configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_client_ip.jpg
+
+
+The SSID of the access point can be up to 32 ASCII characters long.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_client_ssid.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 client SSID configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_client_ssid.jpg
+
+
+It is possible to connect to open networks as well as networks encrypted
+by WPA/WPA2.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_client_encryption.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 client encryption configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_client_encryption.jpg
+
+If your network is encrypted you can set a password with up to 64
+ASCII characters.
+
+If necessary you can specify a specific BSSID that you of a Access Point
+that you want to connect to and you can use a custom MAC address.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_client_bssid_mac.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 client BSSID and MAC configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_client_bssid_mac.jpg
+
+Access Point Mode Configuration
+-------------------------------
+
+In Access Point you can either enable DHCP (the WIFI Extension 2.0 will run
+a DHCP server) or static IP. If you choose static IP, please make sure that
+the client uses a ip, subnet mask and gateway which is compatible to the
+static WIFI Extension 2.0 network.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_ap_ip.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 AP IP configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_ap_ip.jpg
+
+The SSID can be up to 32 ASCII characters long.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_ap_ssid.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 AP SSID configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_ap_ssid.jpg
+
+In Access Point mode the WIFI Extension 2.0 supports
+
+* WEP,
+* WPA PSK,
+* WPA2 PSK and
+* WPA/WPA2 PSK
+
+as encryption protocols. You can also open a network without encryption.
+If you enable encryption you can set a password with up to 64 ASCII characters.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_ap_encryption.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 AP encryption configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_ap_encryption.jpg
+
+Additionally you can specify a WIFI channel between 1 and 13, hide the SSID and
+use a custom MAC address.
+
+.. image:: /Images/Extensions/extension_wifi2_brickv_ap_channel_hide_ssid_mac.jpg
+   :scale: 100 %
+   :alt: WIFI Extension 2.0 AP channel, hide SSID, and MAC configuration
+   :align: center
+   :target: ../../_images/Extensions/extension_wifi2_brickv_ap_channel_hide_ssid_mac.jpg
+
 
 .. _extension_wifi_leds:
 
-LEDs and Connectivity
----------------------
+LEDs
+----
 
 The blue power LED will be on permanently as long as the device is powered.
-The green LED TODO.
+The green LED is a status LED.
+
+In client mode it will blink fast while trying to connect to a access point and turn on
+if connected.
+
+In access point mode it will blink slowly as long as no client is connected.
+
+If both are enabled, it will blink fast until it is connected to an external access point and
+after that it will blink slowly until a client connects to the access point of the
+WIFI Extension 2.0.
+
 
 
 Programming Interface
