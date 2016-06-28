@@ -51,10 +51,11 @@ WIFI Master Extension 2.0
 Features
 --------
 
-* Control Bricks/Bricklets wirelessly over your mobile phone or tablet
-* Operates with 802.11b/g/n access points, WEP, WPA, WPA2 Personal and Enterprise encryption
-* Equipped with 18dBm power amplifier for extended range
-* External RP-SMA and U.FL antenna connector
+* Controls Bricks/Bricklets wirelessly over a WIFI network 
+* Operates at 802.11b/g/n
+* Supports WPA2 encryption with as client and access point
+* Supports static IP as well as DHCP as client and access point
+* Supports client and access point mode at the same time
 
 
 Description
