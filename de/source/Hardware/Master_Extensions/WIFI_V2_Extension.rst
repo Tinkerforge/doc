@@ -355,7 +355,7 @@ nutzen.
 LEDs
 ----
 
-Die blaue LED ist permanent an, solange die WIFI Extension mit strom versorgt wird.
+Die blaue LED ist permanent an, solange die WIFI Extension mit Strom versorgt wird.
 
 Die grüne LED ist eine Status LED.
 
