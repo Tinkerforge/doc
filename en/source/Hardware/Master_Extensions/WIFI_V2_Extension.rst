@@ -288,7 +288,7 @@ that you want to connect to and you can use a custom MAC address.
 Access Point Mode Configuration
 -------------------------------
 
-In Access Point you can either enable DHCP (the WIFI Extension 2.0 will run
+In Access Point mode you can either enable DHCP (the WIFI Extension 2.0 will run
 a DHCP server) or static IP. If you choose static IP, please make sure that
 the client uses a IP, subnet mask and gateway which is compatible to the
 static WIFI Extension 2.0 network.
