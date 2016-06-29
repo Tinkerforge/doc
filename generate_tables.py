@@ -81,33 +81,33 @@ bindings_infos = \
 
 extension_infos = \
 [
-    DeviceInfo(None, 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, True, False,
+    DeviceInfo(None, 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, True, True, False,
                {'en': 'Wireless Chibi connection between stacks',
                 'de': 'Drahtlose Chibi Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, True, False,
+    DeviceInfo(None, 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, True, True, False,
                {'en': 'Cable based Ethernet connection between stack and PC',
                 'de': 'Kabelgebundene Ethernet Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, True, False,
+    DeviceInfo(None, 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, True, True, False,
                {'en': 'Cable based RS485 connection between stacks',
                 'de': 'Kabelgebundene RS485 Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, True, False,
+    DeviceInfo(None, 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, True, True, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', None, False, False,
+    DeviceInfo(None, 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', None, False, False, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'})
 ]
 
 power_supply_infos = \
 [
-    DeviceInfo(None, 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, True, False,
+    DeviceInfo(None, 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, True, True, False,
                {'en': 'Powers a stack of Bricks with 5V',
                 'de': 'Versorgt einen Stapel von Bricks mit 5V'})
 ]
 
 accessory_infos = \
 [
-    DeviceInfo(None, 'DC Jack Adapter', 'DC Jack Adapter', 'dc_jack_adapter', 'DC_Jack_Adapter', None, 'dc-adapter', None, True, False,
+    DeviceInfo(None, 'DC Jack Adapter', 'DC Jack Adapter', 'dc_jack_adapter', 'DC_Jack_Adapter', None, 'dc-adapter', None, True, True, False,
                {'en': 'Adapter between a 5mm DC jack and 2 Pole Black Connector',
                 'de': 'Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz'})
 ]
@@ -189,7 +189,7 @@ def make_primer_table(device_infos):
     rows = []
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
-        if device_info.is_released:
+        if device_info.is_documented:
             rows.append(row.format(device_info.short_display_name, device_info.ref_name, device_info.description[lang].replace('"', "inch")))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
@@ -313,7 +313,7 @@ def make_download_firmwares_table():
     rows = []
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
-        if brick_info.firmware_url_part != None and brick_info.is_released:
+        if brick_info.firmware_url_part != None and brick_info.is_documented:
             firmware_version = firmware_versions.get(brick_info.firmware_url_part, (0,0,0))
 
             rows.append(row.format(brick_info.short_display_name,
@@ -356,7 +356,7 @@ def make_download_plugins_table():
     rows = []
 
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
-        if bricklet_info.firmware_url_part != None and bricklet_info.is_released:
+        if bricklet_info.firmware_url_part != None and bricklet_info.is_documented:
             subversion = []
 
             if bricklet_info.firmware_url_part == 'lcd_20x4':
@@ -459,12 +459,12 @@ def make_api_bindings_links_table(bindings_info):
 
     brick_lines = []
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
-        if brick_info.is_released and brick_info.has_bindings:
+        if brick_info.is_documented and brick_info.has_bindings:
             brick_lines.append(device_row[lang].format(brick_info.ref_name, bindings_info.url_part, brick_info.short_display_name))
 
     bricklet_lines = []
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
-        if bricklet_info.is_released and bricklet_info.has_bindings:
+        if bricklet_info.is_documented and bricklet_info.has_bindings:
             bricklet_lines.append(device_row[lang].format(bricklet_info.ref_name, bindings_info.url_part, bricklet_info.short_display_name))
 
     return table_head[lang].format(ipcon_row[lang].format(bindings_info.url_part),
@@ -504,12 +504,12 @@ def make_llproto_links_table(bindings_info):
 
     brick_lines = []
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
-        if brick_info.is_released and brick_info.has_bindings:
+        if brick_info.is_documented and brick_info.has_bindings:
             brick_lines.append(device_row[lang].format(brick_info.ref_name, bindings_info.url_part, brick_info.short_display_name))
 
     bricklet_lines = []
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
-        if bricklet_info.is_released and bricklet_info.has_bindings:
+        if bricklet_info.is_documented and bricklet_info.has_bindings:
             bricklet_lines.append(device_row[lang].format(bricklet_info.ref_name, bindings_info.url_part, bricklet_info.short_display_name))
 
     return table_head[lang].format('\n'.join(brick_lines),
@@ -591,23 +591,23 @@ def make_source_code_gits_table():
     accessory_rows = []
 
     for brick_info in sorted(brick_infos, key=lambda x: x.short_display_name.lower()):
-        if brick_info.is_released:
+        if brick_info.is_documented:
             brick_rows.append(row[lang].format(brick_info.short_display_name, brick_info.git_name))
 
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
-        if bricklet_info.is_released:
+        if bricklet_info.is_documented:
             bricklet_rows.append(row[lang].format(bricklet_info.short_display_name, bricklet_info.git_name))
 
     for extension_info in sorted(extension_infos, key=lambda x: x.short_display_name.lower()):
-        if extension_info.is_released:
+        if extension_info.is_documented:
             extension_rows.append(row[lang].format(extension_info.short_display_name, extension_info.git_name))
 
     for power_supply_info in sorted(power_supply_infos, key=lambda x: x.short_display_name.lower()):
-        if power_supply_info.is_released:
+        if power_supply_info.is_documented:
             power_supply_rows.append(row[lang].format(power_supply_info.short_display_name, power_supply_info.git_name))
 
     for accessory_info in sorted(accessory_infos, key=lambda x: x.short_display_name.lower()):
-        if accessory_info.is_released:
+        if accessory_info.is_documented:
             accessory_rows.append(row[lang].format(accessory_info.short_display_name, accessory_info.git_name))
 
     return table_head[lang].format('\n'.join(brick_rows),
@@ -621,7 +621,7 @@ def make_index_hardware_device(device_infos, category):
     lis = []
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
-        if not device_info.is_released:
+        if not device_info.is_documented:
             continue
 
         lis.append(hardware_li.format(device_info.short_display_name, category, device_info.hardware_doc_name))
@@ -683,7 +683,7 @@ def make_index_api_device(device_infos, category, language):
     lis = []
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
-        if device_info.is_released and device_info.has_bindings:
+        if device_info.is_documented and device_info.has_bindings:
             lis.append(li.format(device_info.short_display_name, category, device_info.software_doc_prefix, language))
 
     if category == 'Bricklets':
@@ -954,7 +954,7 @@ def make_hardware_devices_toctree(device_infos):
     lines = []
 
     for device_info in sorted(device_infos, key=lambda x: x.long_display_name.lower()):
-        if device_info.is_released:
+        if device_info.is_documented:
             lines.append(line.format(device_info.long_display_name, device_info.hardware_doc_name))
 
     return prefix + '\n'.join(lines) + '\n'
@@ -969,7 +969,7 @@ def make_software_devices_toctree(bindings_info, device_infos, category):
     lines = []
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
-        if device_info.has_bindings and device_info.is_released:
+        if device_info.has_bindings and device_info.is_documented:
             lines.append(line.format(device_info.long_display_name, category, device_info.software_doc_prefix, bindings_info.software_doc_suffix))
 
     return prefix + '\n'.join(lines) + '\n'
