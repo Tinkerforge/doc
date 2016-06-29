@@ -104,7 +104,7 @@ Stromverbrauch                               80mA (Senden), TBDmA (im Schlafmodu
 -------------------------------------------  -----------------------------------------------------------------------------
 Maximale Anzahl gleichzeitiger Verbindungen  10
 Modi                                         Client, Access Point und Client/Access Point gleichzeitig
-Tinkerforge Protokolle                       Volle Unterstütztung (TCP/IP, Authentifizierung und Websocktes)
+Tinkerforge Protokolle                       Volle Unterstützung (TCP/IP, Authentifizierung und WebSocktes)
 -------------------------------------------  -----------------------------------------------------------------------------
 -------------------------------------------  -----------------------------------------------------------------------------
 RF Ausgangsstärke (typisch)                  bis zu 19.5dBm
@@ -177,7 +177,7 @@ konfiguriert werden.
 
 Die ersten Konfigurationsoptionen sind Port, Websocket Port und Webseiten Port.
 Diese Optionen haben die Standardwerte 4223, 4280 und 80. Falls notwendig können
-die Ports geändert werden, im Normallfall ist eine Umstellung der Ports nicht
+die Ports geändert werden, im Normalfall ist eine Umstellung der Ports nicht
 notwendig.
 
 .. image:: /Images/Extensions/extension_wifi2_brickv_ports.jpg
@@ -283,12 +283,12 @@ WPA/WPA2 verschlüsseltem Netzwerk herzustellen.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_brickv_client_encryption.jpg
 
-Für verschlüsselte Netzwerke kann ein Passwort mit bis zu 64 ASCCI-Zeichen
+Für verschlüsselte Netzwerke kann ein Passwort mit bis zu 64 ASCII-Zeichen
 angegeben werden.
 
 Falls die Verbindung auf einen bestimmten Access Point stattfinden soll,
-kann die entsprechende BSSID eingetragen wernde. Eine angabe eine
-selbsterstellten MAC Adresse ist auch möglich.
+kann die entsprechende BSSID eingetragen werde. Eine Angabe eine
+selbst erstellten MAC Adresse ist auch möglich.
 
 .. image:: /Images/Extensions/extension_wifi2_brickv_client_bssid_mac.jpg
    :scale: 100 %
@@ -299,7 +299,7 @@ selbsterstellten MAC Adresse ist auch möglich.
 Access Point Mode Konfiguration
 -------------------------------
 
-Im Access Pint Modus kann entweder DHCP aktiviert werden (in diesem Fall
+Im Access Point Modus kann entweder DHCP aktiviert werden (in diesem Fall
 führt die WIFI Extension 2.0 einen DHCP Server aus) oder eine statische
 IP genutzt werden.
 
@@ -340,12 +340,12 @@ ASCII-Zeichen eingetragen werden.
    :target: ../../_images/Extensions/extension_wifi2_brickv_ap_encryption.jpg
 
 Zusätzlich kann der WLAN Kanal zwischen 1 und 13 eingestellt werden. Es ist auch
-möglich die SSID zu verstecken sowie eine selbsterstellte MAC Adresse zu
+möglich die SSID zu verstecken sowie eine selbst erstellte MAC Adresse zu
 nutzen.
 
 .. image:: /Images/Extensions/extension_wifi2_brickv_ap_channel_hide_ssid_mac.jpg
    :scale: 100 %
-   :alt: WIFI Extension 2.0 AP channel, hide SSID, und MAC Konfiguration
+   :alt: WIFI Extension 2.0 AP Channel, Hide SSID, und MAC Konfiguration
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_brickv_ap_channel_hide_ssid_mac.jpg
 
@@ -366,7 +366,7 @@ Im Access Point Mode blinkt die LED langsam so lange sich kein Client verbunden 
 
 Falls beide Modi aktiviert sind, blinkt die LED zuerst schnell bis eine Verbindung zum
 externen Access Point hergestellt wurde. Danach blinkt die LED langsam bis ein
-externe Client sich zum Access Point der WIFI Extesnion 2.0 verbindet.
+externe Client sich zum Access Point der WIFI Extension 2.0 verbindet.
 
 Programmierschnittstelle
 ------------------------
