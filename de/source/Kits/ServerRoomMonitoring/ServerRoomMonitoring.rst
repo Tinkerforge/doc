@@ -222,7 +222,7 @@ Als nächstes sollte die Ethernet Extension konfiguriert werden.
 In den folgenden Beispielen ist diese auf den Hostnamen
 "ServerMonitoring" und DHCP konfiguriert. Zur Konfiguration muss der Master 
 Brick Reiter geöffnet werden. Die weitere Konfiguration ist 
-:ref:`hier <ethernet_configuration>` beschrieben.
+:ref:`hier <ethernet_extension_configuration>` beschrieben.
 
 Nach den Tests und der Konfiguration ist sichergestellt, dass die Hardware
 auch nach dem Einbau in das 19" Rack Gehäuse wie gewünscht funktioniert.

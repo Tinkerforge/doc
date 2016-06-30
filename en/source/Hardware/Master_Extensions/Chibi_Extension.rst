@@ -34,7 +34,7 @@ Chibi Master Extension
 .. note::
 
  The Chibi Extension is discontinued and is no longer sold. Depending on the
- use-case the :ref:`WIFI Extension <wifi_extension>` can be a replacement.
+ use-case the :ref:`WIFI Extension 2.0 <wifi_v2_extension>` can be a replacement.
 
 
 Features
@@ -134,7 +134,7 @@ To create a Chibi network, stack the Chibi Extension on top of a Master Brick.
 Connect the Master Brick via USB with your PC and start the Brick Viewer
 software. You should see the Master Brick view
 with the identified Chibi Extension (see image below). Configure the extension
-as slave or master (as described :ref:`here <chibi_configuration>`).
+as slave or master (as described :ref:`here <chibi_extension_configuration>`).
 
 If you have configured all extensions you can build your system. Connect
 Bricks and Bricklets as you like. The Master of each stack has to be the
@@ -147,7 +147,7 @@ searches for slaves only at startup.
 You should now be able to see all connected stacks in the Brick Viewer.
 
 
-.. _chibi_configuration:
+.. _chibi_extension_configuration:
 
 Chibi Configuration
 ^^^^^^^^^^^^^^^^^^^

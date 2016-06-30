@@ -125,7 +125,6 @@ Resourcen
 * Umriss und Borhplan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Quelltext und Platinenlayout (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
 
-.. _wifi_v2_network_assembly:
 
 WLAN Netwerk
 ------------
@@ -161,8 +160,6 @@ muss nach
 geändert werden.
 
 
-.. _wifi_v2_configuration:
-
 WLAN Konfiguration
 ------------------
 
@@ -175,7 +172,12 @@ konfiguriert werden.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_complete.jpg
 
-Die ersten Konfigurationsoptionen sind Port, Websocket Port und Webseiten Port.
+.. _wifi_v2_extension_ports:
+
+Ports
+^^^^^
+
+Die ersten Konfigurationsoptionen sind Port, WebSocket Port und Webseiten Port.
 Diese Optionen haben die Standardwerte 4223, 4280 und 80. Falls notwendig können
 die Ports geändert werden, im Normalfall ist eine Umstellung der Ports nicht
 notwendig.
@@ -185,6 +187,9 @@ notwendig.
    :alt: WIFI Extension 2.0 Port Konfiguration
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_ports.jpg
+
+PHY Modus
+^^^^^^^^^
 
 Die PHY Modi
 
@@ -200,6 +205,11 @@ aktiviert ist
    :alt: WIFI Extension 2.0 PHY Modus Konfiguration
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_phy_mode.jpg
+
+.. _wifi_v2_extension_authentication:
+
+Authentifizierung
+^^^^^^^^^^^^^^^^^
 
 Die WIFI Extension 2.0 unterstützt Authentifizierung. Authentifizierung ist
 standardmäßig deaktiviert. Um
@@ -218,6 +228,9 @@ Bei aktivierter Authentifizierung muss jede TCP/IP Verbindung zur WIFI Extension
 dass sie das Authentifizierungsgeheimnis kennt, bevor normale Kommunikation
 stattfinden kann. Für mehr Informationen zur Authentifizierung siehe das
 dazugehörige :ref:`Tutorial <tutorial_authentication>`.
+
+Betriebsarten
+^^^^^^^^^^^^^
 
 Die WIFI Extension 2.0 kann als
 
@@ -255,7 +268,7 @@ Im Client Mode kann ein Hostname mit bis zu 32 ASCII-Zeichen verwendet werden.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_brickv_client_hostname.jpg
 
-Die IP kann von einem DHCP Server gegeben werden. Alternativ ist es auch möglich
+Die IP kann per DHCP vergeben werden. Alternativ ist es auch möglich
 eine statisch IP einzutragen. In letzterem Fall muss eine IP, eine Subnetzmaske
 sowie ein Gateway angegeben werden.
 
@@ -350,8 +363,6 @@ nutzen.
    :target: ../../_images/Extensions/extension_wifi2_brickv_ap_channel_hide_ssid_mac.jpg
 
 
-.. _wifi_v2_extension_leds:
-
 LEDs
 ----
 
@@ -367,6 +378,7 @@ Im Access Point Mode blinkt die LED langsam so lange sich kein Client verbunden 
 Falls beide Modi aktiviert sind, blinkt die LED zuerst schnell bis eine Verbindung zum
 externen Access Point hergestellt wurde. Danach blinkt die LED langsam bis ein
 externe Client sich zum Access Point der WIFI Extension 2.0 verbindet.
+
 
 Programmierschnittstelle
 ------------------------

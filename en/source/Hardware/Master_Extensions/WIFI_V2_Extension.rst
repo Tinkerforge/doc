@@ -125,7 +125,6 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
 
-.. _wifi_v2_network_assembly:
 
 WIFI Network
 ------------
@@ -157,7 +156,6 @@ has to be changed to
 
  ipcon.connect("192.168.0.25", 4223)
 
-.. _wifi_v2_configuration:
 
 WIFI Configuration
 ------------------
@@ -171,7 +169,12 @@ Brick Viewer.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_complete.jpg
 
-The first configuration options are the port, websocket port and website port.
+.. _wifi_v2_extension_ports:
+
+Ports
+^^^^^
+
+The first configuration options are the port, WebSocket port and website port.
 You can change them from the defaults 4223, 4280 and 80 if necessary. In most
 cases they can stay unchanged.
 
@@ -181,6 +184,8 @@ cases they can stay unchanged.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_ports.jpg
 
+PHY Modes
+^^^^^^^^^
 
 The PHY modes
 
@@ -196,6 +201,10 @@ are available. PHY mode N can't be used if the access point is enabled.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_phy_mode.jpg
 
+.. _wifi_v2_extension_authentication:
+
+Authentication
+^^^^^^^^^^^^^^
 
 The WIFI Extension 2.0 supports authentication. Authentication is disabled by
 default. Tick the "Use
@@ -213,6 +222,9 @@ Now every TCP/IP connection to the WIFI Extension 2.0 has to prove to the
 Master Brick that it knows the authentication secret before normal communication
 can occur. See the :ref:`authentication tutorial <tutorial_authentication>`
 for more information.
+
+Operational Modes
+^^^^^^^^^^^^^^^^^
 
 The WIFI Extension 2.0 can operate as
 
@@ -247,7 +259,7 @@ In client mode you can set a hostname with up to 32 ASCII characters.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_brickv_client_hostname.jpg
 
-The IP can be given by a DHCP server or you can choose to use a static IP. 
+The IP can be obtained using DHCP or you can choose to use a static IP.
 In the latter case you have to configure a IP, subnet mask and gateway.
 
 .. image:: /Images/Extensions/extension_wifi2_brickv_client_ip.jpg
@@ -332,8 +344,6 @@ use a custom MAC address.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_brickv_ap_channel_hide_ssid_mac.jpg
 
-
-.. _wifi_v2_extension_leds:
 
 LEDs
 ----

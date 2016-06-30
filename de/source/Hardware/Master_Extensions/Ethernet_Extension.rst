@@ -137,10 +137,10 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
 
 
-.. _ethernet_configuration:
+.. _ethernet_extension_configuration:
 
 Ethernet Konfiguration
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 Die Ethernet Extension kann in zwei Modi konfiguriert werden: DHCP oder 
 statische IP. Nur im statische IP Modus sind **IP**, **Subnet Mask** und 
@@ -159,10 +159,10 @@ geklickt werden und der Master Brick neu gestartet werden.
    :align: center
    :target: ../../_images/Extensions/extension_ethernet_brickv.jpg
 
-.. _ethernet_configuration_websockets:
+.. _ethernet_extension_websockets:
 
 WebSockets
-""""""""""
+^^^^^^^^^^
 
 Die Ethernet Extension unterstützt seit Master Brick Firmware Version 2.2.0
 `WebSockets <https://de.wikipedia.org/wiki/WebSocket>`__. Die "Max Connections"
@@ -173,10 +173,10 @@ WebSockets werden von der Browser-Version der :ref:`JavaScript Bindings
 <api_bindings_javascript>` verwendet um Bricks und Bricklets zu steuern.
 
 
-.. _ethernet_configuration_authentication:
+.. _ethernet_extension_authentication:
 
 Authentifizierung
-"""""""""""""""""
+^^^^^^^^^^^^^^^^^
 
 Die Ethernet Extension unterstützt seit Master Brick Firmware Version 2.2.0
 Authentifizierung. Diese ist standardmäßig deaktiviert. Um
@@ -192,7 +192,7 @@ dazugehörige :ref:`Tutorial <tutorial_authentication>`.
 
 
 PoE Stromversorgung
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 Um einen Stapel aus Bricks und Bricklets über PoE zu versorgen
 kann zum Beispiel ein PoE Injektor benutzt werden. Die Ethernet 
@@ -211,4 +211,3 @@ Programmierschnittstelle
 ------------------------
 
 Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interface>`.
-

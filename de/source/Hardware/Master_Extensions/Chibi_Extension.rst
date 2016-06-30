@@ -34,7 +34,7 @@ Chibi Master Extension
 .. note::
 
  Die Chibi Extension ist abgekündigt und wird nicht mehr verkauft.
- Abhängig vom Einsatzzweck kann die :ref:`WIFI Extension <wifi_extension>`
+ Abhängig vom Einsatzzweck kann die :ref:`WIFI Extension 2.0 <wifi_v2_extension>`
  als Ersatz verwendet werden.
 
 
@@ -136,7 +136,7 @@ Um ein Chibi Netzwerk aufzubauen muss zuerst die Chibi Extension auf einen
 Master Brick gesteckt werden und der Master Brick über USB mit dem PC verbunden
 werden. Im Brick Viewer sollte jetzt ein Master Brick mit erkannter Chibi
 Extension angezeigt werden. Die Chibi Extension muss jetzt als Master oder
-Slave konfiguriert werden wie :ref:`hier <chibi_configuration>` beschrieben.
+Slave konfiguriert werden wie :ref:`hier <chibi_extension_configuration>` beschrieben.
 
 Wenn alle Chibi Extensions konfiguriert sind kann das Gesamtsystem
 zusammengebaut werden. Verbinde die benötigten Bricks und Bricklets zu Stapeln.
@@ -151,7 +151,7 @@ sucht. Jetzt sollten alle Bricks und Bricklets des Chibi Netzwerkes im Brick
 Viewer angezeigt werden.
 
 
-.. _chibi_configuration:
+.. _chibi_extension_configuration:
 
 Chibi Konfiguration
 ^^^^^^^^^^^^^^^^^^^

@@ -68,8 +68,9 @@ Ethernet/WIFI Extension konfiguriert wird finden sich in den jeweiligen
 Dokumentationsabschnitten:
 
 * :ref:`Brick Daemon: Authentifizierung <brickd_authentication>`
-* :ref:`Ethernet Extension: Authentifizierung <ethernet_configuration_authentication>`
-* :ref:`WIFI Extension: Authentifizierung <extension_wifi_authentication>`
+* :ref:`Ethernet Extension: Authentifizierung <ethernet_extension_authentication>`
+* :ref:`WIFI Extension: Authentifizierung <wifi_extension_authentication>`
+* :ref:`WIFI Extension 2.0: Authentifizierung <wifi_v2_extension_authentication>`
 
 
 Verwendung

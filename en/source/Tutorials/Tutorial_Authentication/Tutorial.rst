@@ -60,8 +60,9 @@ Brick Daemon and Ethernet/WIFI Extension documentation for detail on how to
 configure the authentication secret:
 
 * :ref:`Brick Daemon: Authentication <brickd_authentication>`
-* :ref:`Ethernet Extension: Authentication <ethernet_configuration_authentication>`
-* :ref:`WIFI Extension: Authentication <extension_wifi_authentication>`
+* :ref:`Ethernet Extension: Authentication <ethernet_extension_authentication>`
+* :ref:`WIFI Extension: Authentication <wifi_extension_authentication>`
+* :ref:`WIFI Extension 2.0: Authentication <wifi_v2_extension_authentication>`
 
 
 Usage

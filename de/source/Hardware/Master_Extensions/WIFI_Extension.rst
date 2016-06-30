@@ -125,7 +125,6 @@ Ressourcen
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/wifi-extension/zipball/master>`__)
 
-.. _wifi_network_assembly:
 
 WLAN Netzwerk
 -------------
@@ -161,8 +160,6 @@ muss nach
 geändert werden.
 
 
-.. _wifi_configuration:
-
 WLAN Konfiguration
 ------------------
 
@@ -173,6 +170,9 @@ Client Modus verbinden soll, bzw. der Name des WLAN Netzes das die WIFI
 Extension im Access Point Modus oder Ad Hoc Modus bereitstellt (im Folgenden
 geht es um den Client Modus). Die SSID kann maximal 32 ASCII Zeichen lang sein
 (Anführungszeichen ist nicht erlaubt).
+
+IP Adresse
+^^^^^^^^^^
 
 Dann zwischen DHCP oder statischer IP Adresse wählen. Für den Fall, dass DHCP
 genutzt werden soll muss einfach DHCP ausgewählt werden und der Port definiert
@@ -193,6 +193,9 @@ Zusätzlich ist auch der Port über den kommuniziert werden soll zu konfiguriere
    :alt: Konfiguriere die Verbindung mit statischer IP
    :align: center
    :target: ../../_images/Extensions/extension_wifi_connection_static.jpg
+
+Verschlüsselung
+^^^^^^^^^^^^^^^
 
 Wir empfehlen ein verschlüsseltes Netzwerk zu nutzen.
 WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) und WEP
@@ -220,7 +223,8 @@ hinzugefügt werden.
 
 Um WEP zu benutzen muss ein Schlüssel und ein Schlüssel Index eingegeben werden.
 Ist kein Index bekannt so ist dieser vermutlich 1.
-Der Schlüssel ist hierbei in Hex-Notation einzutragen mit voller Schlüssellänge (abhängig von 64bit und 128bit Schlüssel).
+Der Schlüssel ist hierbei in Hex-Notation einzutragen mit voller Schlüssellänge
+(abhängig von 64bit und 128bit Schlüssel).
 
 .. image:: /Images/Extensions/extension_wifi_encryption_wep.jpg
    :scale: 100 %
@@ -233,6 +237,9 @@ Der Schlüssel ist hierbei in Hex-Notation einzutragen mit voller Schlüssellän
  dringend dazu geraten stattdessen WPA/WPA2 Verschlüsselung zu verwenden.
 
 Soll keine Verschlüsselung genutzt werden muss "No Encryption" gewählt werden.
+
+Power Mode
+^^^^^^^^^^
 
 Nun kann noch der Power Mode konfiguriert werden. Es gibt zwei Modi:
 Full Speed und Low Power. Im Full Speed Modus verbraucht die Extension mehr Leistung
@@ -288,7 +295,6 @@ sollte sich die WIFI Extension zum Access Point verbinden und dann im eigenen
 Programm und im Brick Viewer unter dem eingestellten Hostnamen "WIFI-Extension"
 erreichbar sein.
 
-.. _extension_wifi_adhoc_ap:
 
 Access Point Modus und Ad Hoc Modus
 -----------------------------------
@@ -374,7 +380,7 @@ Dann Speichern und mit dem Netzwerk verbinden. Jetzt sollte das Smartphone mit
 dem Access Point der WIFI Extension verbunden sein.
 
 
-.. _extension_wifi_authentication:
+.. _wifi_extension_authentication:
 
 Authentifizierung
 -----------------
@@ -397,7 +403,6 @@ dass sie das Authentifizierungsgeheimnis kennt, bevor normale Kommunikation
 stattfinden kann. Für mehr Informationen zur Authentifizierung siehe das
 dazugehörige :ref:`Tutorial <tutorial_authentication>`.
 
-.. _extension_wifi_leds:
 
 LEDs und Anschlussmöglichkeiten
 -------------------------------
@@ -416,8 +421,8 @@ Das WLAN Modul ist mit einem U.FL Anschluss und einem 75Ω U.FL nach RP-SMA
 Kabel ausgestattet. Abhängig von der Anwendung kann dieses Kabel auch vom WLAN
 Modul getrennt und ein eigenes angeschlossen werden.
 
+
 Programmierschnittstelle
 ------------------------
 
 Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interface>`.
-

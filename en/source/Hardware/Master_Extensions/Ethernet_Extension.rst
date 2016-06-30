@@ -67,7 +67,6 @@ Features
  * Can power a Stack via Ethernet Cable
 
 
-
 Description
 -----------
 
@@ -133,10 +132,10 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
 
 
-.. _ethernet_configuration:
+.. _ethernet_extension_configuration:
 
 Ethernet Configuration
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 The Ethernet Extension can be configured in two different modes:
 DHCP or static IP. If you use a static IP you have to enter 
@@ -156,10 +155,10 @@ After configuring the Ethernet Extension you have to press the button
    :target: ../../_images/Extensions/extension_ethernet_brickv.jpg
 
 
-.. _ethernet_configuration_websockets:
+.. _ethernet_extension_websockets:
 
 WebSockets
-""""""""""
+^^^^^^^^^^
 
 The Ethernet Extension supports `WebSockets
 <https://en.wikipedia.org/wiki/WebSocket>`__ since Master Brick firmware
@@ -170,10 +169,10 @@ WebSockets are used by the browser version of the :ref:`JavaScript bindings
 <api_bindings_javascript>` to control Bricks and Bricklets.
 
 
-.. _ethernet_configuration_authentication:
+.. _ethernet_extension_authentication:
 
 Authentication
-""""""""""""""
+^^^^^^^^^^^^^^
 
 The Ethernet Extension supports authentication since Master Brick firmware
 version 2.2.0. Authentication is disabled by default. Tick the "Use
@@ -188,7 +187,7 @@ for more information.
 
 
 PoE Power Supply
-^^^^^^^^^^^^^^^^
+----------------
 
 PoE injectors can be used to power Bricks and Bricklets over Ethernet.
 The Ethernet Extension will power the complete stack.

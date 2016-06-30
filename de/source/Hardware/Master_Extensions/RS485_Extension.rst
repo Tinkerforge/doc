@@ -99,8 +99,6 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rs485-extension>`__)
 
 
-.. _rs485_connectivity:
-
 Anschlussmöglichkeit
 --------------------
 
@@ -130,7 +128,8 @@ Master Brick gesteckt werden und der Master Brick über USB, Ethernet oder WLAN
 mit dem PC verbunden
 werden. Im Brick Viewer sollte jetzt ein Master Brick mit erkannter RS485
 Extension angezeigt werden. Die RS485 Extension muss jetzt als Master oder
-Slave konfiguriert werden wie :ref:`hier <rs485_configuration>` beschrieben.
+Slave konfiguriert werden wie :ref:`hier <rs485_extension_configuration>`
+beschrieben.
 
 Wenn alle RS485 Extensions konfiguriert sind kann das Gesamtsystem
 zusammengebaut werden. Verbinde die benötigten Bricks und Bricklets zu Stapeln.
@@ -162,7 +161,7 @@ sucht. Jetzt sollten alle Bricks und Bricklets des RS485 Buses im Brick Viewer
 angezeigt werden.
 
 
-.. _rs485_configuration:
+.. _rs485_extension_configuration:
 
 RS485 Konfiguration
 ^^^^^^^^^^^^^^^^^^^
@@ -227,4 +226,3 @@ Programmierschnittstelle
 ------------------------
 
 Siehe :ref:`Master Brick Dokumentation <master_brick_programming_interface>`.
-

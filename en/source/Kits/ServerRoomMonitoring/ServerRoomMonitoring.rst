@@ -215,7 +215,7 @@ our further examples we configure the hostname to "ServerMonitoring"
 and use DHCP. To do that 
 click on the Master Brick tab and configure it to your needs. More information 
 about the configuration of the Ethernet Extension can be found 
-:ref:`here <ethernet_configuration>`.
+:ref:`here <ethernet_extension_configuration>`.
 
 After testing the hardware and configuration you can be sure that the Bricks 
 and Bricklets have versions that work together and that everything will work if

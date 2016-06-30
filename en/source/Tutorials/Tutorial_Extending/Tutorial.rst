@@ -306,7 +306,7 @@ Extension. Finally, connect the Rotary Poti Bricklet to this new stack.
 
 Now connect each stack separately to your PC and configure it with
 the Brick Viewer as described in the
-:ref:`RS485 documentation <rs485_configuration>`.
+:ref:`RS485 documentation <rs485_extension_configuration>`.
 It is necessary that you power up the slave stacks prior to the master stack.
 
 You should see two Master Bricks, the Rotary

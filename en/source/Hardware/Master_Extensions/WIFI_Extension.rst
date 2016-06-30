@@ -126,8 +126,6 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/wifi-extension/zipball/master>`__)
 
 
-.. _wifi_network_assembly:
-
 WIFI Network
 ------------
 
@@ -159,8 +157,6 @@ has to be changed to
  ipcon.connect("192.168.0.25", 4223)
 
 
-.. _wifi_configuration:
-
 WIFI Configuration
 ------------------
 
@@ -171,6 +167,9 @@ in client mode, respectively it is the name of the wireless network the WIFI
 Extension provides in access point mode or ad hoc mode (this section focuses
 on client mode). The SSID can be 32 ASCII characters long (quotation mark is
 not allowed).
+
+IP Address
+^^^^^^^^^^
 
 Then you have to select DHCP or static IP address configuration. In case of
 you want to use DHCP simply select DHCP and configure the port.
@@ -189,6 +188,9 @@ Additionally configure the subnet mask and gateway address.
    :alt: Configure connection as static IP
    :align: center
    :target: ../../_images/Extensions/extension_wifi_connection_static.jpg
+
+Encryption
+^^^^^^^^^^
 
 We suggest that you use an encrypted network. You can choose between
 WPA/WPA2, WPA Enterprise (EAP-FAST, EAP-TLS, EAP-TTLS, PEAP) and WEP.
@@ -226,6 +228,9 @@ Please enter your key in hex notation with the full key length
  anymore. We strongly suggest to use WPA/WPA2 instead.
 
 If you don't want encryption select "No Encryption".
+
+Power Mode
+^^^^^^^^^^
 
 Finally you have to configure the Power Mode. There are two Power Modes:
 Full Speed and Low Power. In Full Speed mode the device consumes more power,
@@ -279,8 +284,6 @@ Save the WIFI configuration and restart the Master Brick. Now the WIFI Extension
 should connect to your access point and you should be able to connect to it with
 your program and Brick Viewer using "WIFI-Extension" as host.
 
-
-.. _extension_wifi_adhoc_ap:
 
 Access Point Mode and Ad Hoc Mode
 ---------------------------------
@@ -362,7 +365,7 @@ Finally, save the new network configuration and connect to it. Now your smart
 phone should be connected to the access point of the WIFI Extension.
 
 
-.. _extension_wifi_authentication:
+.. _wifi_extension_authentication:
 
 Authentication
 --------------
@@ -384,8 +387,6 @@ Master Brick that it knows the authentication secret before normal communication
 can occur. See the :ref:`authentication tutorial <tutorial_authentication>`
 for more information.
 
-
-.. _extension_wifi_leds:
 
 LEDs and Connectivity
 ---------------------
