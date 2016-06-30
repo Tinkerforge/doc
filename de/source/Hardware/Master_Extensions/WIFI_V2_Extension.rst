@@ -90,7 +90,7 @@ Der benutzte Master Brick sollte eine Firmware Version von 2.4.0 oder neuer besi
 Die folgenden Kombinationen von Extensions in einem Stapel sind möglich.
 Die Reihenfolge im Stapel ist dabei nicht relevant:
 
-* WIFI / RS485 Master
+* WIFI 2.0 / RS485 Master
 
 
 Technische Spezifikation
@@ -126,8 +126,8 @@ Resourcen
 * Quelltext und Platinenlayout (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
 
 
-WLAN Netwerk
-------------
+WLAN Netzwerk
+-------------
 
 Die WIFI Extension 2.0 erlaubt es eine drahtlose Verbindung zu
 einem Master Brick und allen angeschlossenen Bricks und Bricklets herzustellen.
