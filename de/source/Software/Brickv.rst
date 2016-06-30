@@ -14,8 +14,8 @@ eigenen Tab der die Hauptfunktionen abbildet und erlaubt diese zu steuern.
 Darüber hinaus kann der Brick Viewer verwendet werden, um den
 Analog-Digital-Wandler der Bricks zu :ref:`kalibrieren <brickv_adc_calibration>`
 und so deren Messqualität zu verbessern, und um
-:ref:`Brick Firmwares <brickv_flash_firmware>` und
-:ref:`Bricklet Plugins <brickv_flash_plugin>` zu flashen.
+:ref:`Brick Firmwares <brickv_flash_brick_firmware>` und
+:ref:`Bricklet Plugins <brickv_flash_bricklet_plugin>` zu flashen.
 
 
 .. _brickv_installation:
@@ -82,10 +82,10 @@ müssen geupdatet werden damit sie korrekt funktionieren.
 Der Dialog ermöglicht es alle Bricklets gleichzeitig über den Knopf
 "Auto-Update All Bricklets" auf die neuste Softwareversion zu bringen.
 Bricks können nicht automatisch auf den neusten Stand gebracht werden
-(siehe :ref:`Brick Firmware Flashing <brickv_flash_firmware>`).
+(siehe :ref:`Brick Firmware Flashing <brickv_flash_brick_firmware>`).
 
 
-.. _brickv_flash_firmware:
+.. _brickv_flash_brick_firmware:
 
 Brick Firmware Flashing
 -----------------------
@@ -228,7 +228,7 @@ Nach dem Flash-Vorgang startet der Brick automatisch neu und verwendet die
 neue Firmware.
 
 
-.. _brickv_flash_plugin:
+.. _brickv_flash_bricklet_plugin:
 
 Bricklet Plugin Flashing
 ------------------------
@@ -240,7 +240,7 @@ bringen (siehe "Auto-Update All Bricklets" unter
 Bricklets auch einzeln geflasht werden. Die
 jeweils neuste Plugin-Version wird dabei automatisch vom Brick Viewer
 ermittelt und heruntergeladen. Diese können aber auch manuell im
-:ref:`Downloadbereich <downloads_plugins>` heruntergeladen werden.
+:ref:`Downloadbereich <downloads_bricklet_plugins>` heruntergeladen werden.
 
 Um ein Bricklet flashen zu können, muss es an einem Brick angeschlossen sein,
 der im Brick Viewer aufgelistet ist. Ein Klick auf den "Flashing" Knopf im
@@ -270,6 +270,15 @@ werden. Die UID ist Base58 kodiert, die erlaubten Zeichen umfassen
 0-9, a-z und A-Z ohne 0 (Null), I (groß i), O (groß o) und l (klein L).
 Die einzige weitere Einschränkung ist, dass die UIDs aller Bricklets eindeutig
 sind.
+
+
+.. _brickv_flash_extension_firmware:
+
+Master Extension Firmware Flashing
+----------------------------------
+
+.. note::
+  Coming soon!
 
 
 .. _brickv_adc_calibration:

@@ -199,8 +199,8 @@ After this put the Ethernet Extension on top of the Master Brick, connect all
 Bricklets to it and connect it via USB to your PC. 
 Afterwards use Brick Viewer to check if all firmwares are up to 
 date (Updates / Flashing button). If not, you can
-:ref:`update the Bricks <brickv_flash_firmware>` and
-:ref:`update the Bricklets <brickv_flash_plugin>` with the Brick
+:ref:`update the Bricks <brickv_flash_brick_firmware>` and
+:ref:`update the Bricklets <brickv_flash_bricklet_plugin>` with the Brick
 Viewer, too:
 
 .. image:: /Images/Kits/server_room_monitoring_update_350.jpg

@@ -206,8 +206,8 @@ gesteckt und alle Bricklets angeschlossen. Der Master Brick wird per USB
 mit dem PC verbunden. Mit dem Brick Viewer können nun die Module getestet.
 Anschließend kann über den Brick Viewer bestimmt werden, ob alle 
 Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
-(:ref:`Bricks aktualisieren <brickv_flash_firmware>`,
-:ref:`Bricklets aktualisieren <brickv_flash_plugin>`):
+(:ref:`Bricks aktualisieren <brickv_flash_brick_firmware>`,
+:ref:`Bricklets aktualisieren <brickv_flash_bricklet_plugin>`):
 
 .. image:: /Images/Kits/server_room_monitoring_update_350.jpg
    :scale: 100 %

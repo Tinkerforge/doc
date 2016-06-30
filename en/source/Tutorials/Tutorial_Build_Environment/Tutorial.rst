@@ -62,7 +62,7 @@ Then you can build the source with a normal ``make`` call::
 
 The build firmware will be available in the ``software/build/`` directory.
 In this case ``master-brick.bin``. It can be flashed to the Brick with the
-:ref:`Brick Viewer <brickv_flash_firmware>`. Just select "Custom..." 
+:ref:`Brick Viewer <brickv_flash_brick_firmware>`. Just select "Custom..."
 in the Updates/Flashing dialog and pick the newly compiled firmware file.
 
 Bricklet Plugins
@@ -85,7 +85,7 @@ Then you can build the source with a normal ``make`` call::
 
 The build firmware will be available in the ``software/build/`` directory.
 In this case ``temperature-bricklet.bin``. It can be flashed to the Bricklet 
-with the :ref:`Brick Viewer <brickv_flash_firmware>`. Just select "Custom..." 
+with the :ref:`Brick Viewer <brickv_flash_brick_firmware>`. Just select "Custom..."
 in the Updates/Flashing dialog and pick the newly compiled firmware file.
 
 APIs/Bindings

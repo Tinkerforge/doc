@@ -13,7 +13,7 @@ Updating to Protocol 2.0 is quite easy. Start by installing the :ref:`newest
 version <downloads_tools>` of the Brick Daemon and the Brick Viewer.
 
 After that you should start by updating all of your Bricks, you can update
-them one by one as described :ref:`here <brickv_flash_firmware>`.
+them one by one as described :ref:`here <brickv_flash_brick_firmware>`.
 
 To update the Bricklets, there is an automated process. You can fill up one
 of your updated Bricks with Bricklets. Click on "Updates" in the Brick
@@ -30,7 +30,7 @@ on "Auto-Update All Bricklets".
 
 If the auto update does not work, you can of course still update the
 Bricklets individually by using the normal
-:ref:`Bricklet updating process <brickv_flash_plugin>`.
+:ref:`Bricklet updating process <brickv_flash_bricklet_plugin>`.
 
 In the end, everything should have a version that starts with "2". 
 

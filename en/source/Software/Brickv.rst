@@ -13,8 +13,8 @@ view that shows the main features and allows to control them.
 
 Additionally brickv can be used to :ref:`calibrate <brickv_adc_calibration>`
 the analog-to-digital converter (ADC) of the Bricks to improve measurement
-quality and to flash :ref:`Brick firmwares <brickv_flash_firmware>` and
-:ref:`Bricklet plugins <brickv_flash_plugin>`.
+quality and to flash :ref:`Brick firmwares <brickv_flash_brick_firmware>` and
+:ref:`Bricklet plugins <brickv_flash_bricklet_plugin>`.
 
 
 .. _brickv_installation:
@@ -82,10 +82,10 @@ to work properly.
 If you want, you can update all Bricklets with the click
 on "Auto-Update All Bricklets". Bricks can't be updated automatically,
 you have to update them one by one
-(see :ref:`Brick Firmware Flashing <brickv_flash_firmware>`).
+(see :ref:`Brick Firmware Flashing <brickv_flash_brick_firmware>`).
 
 
-.. _brickv_flash_firmware:
+.. _brickv_flash_brick_firmware:
 
 Brick Firmware Flashing
 -----------------------
@@ -99,7 +99,7 @@ Using Brick Viewer
 
 Flashing of Brick firmwares can be done with Brick Viewer since version 1.1.0.
 The latest firmwares will be downloaded automatically and can be found
-:ref:`here <downloads_firmwares>` too.
+:ref:`here <downloads_brick_firmwares>` too.
 
 Preparation
 """""""""""
@@ -201,7 +201,7 @@ that you can download and install::
 
 In contrast to Brick Viewer ``brick-flash`` does not download the firmware
 for the Brick automatically. The latest firmwares can be found
-:ref:`here <downloads_firmwares>`. Download the one that should be
+:ref:`here <downloads_brick_firmwares>`. Download the one that should be
 flashed, for example the latest Master Brick firmware::
 
  wget http://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin
@@ -217,7 +217,7 @@ Now run ``brick-flash`` and provide the serial port and firmware file name::
 Afterwards the Brick should restart automatically and use the new firmware.
 
 
-.. _brickv_flash_plugin:
+.. _brickv_flash_bricklet_plugin:
 
 Bricklet Plugin Flashing
 ------------------------
@@ -257,6 +257,15 @@ new one. Note that the UID has to be in Base58 encoding, valid characters are
 0-9, a-z and A-Z without 0 (zero), I (big i), O (big o) and l (small L).
 The only other restriction is that all Bricklet UIDs you use at the same
 time need to be unique, you can use recognizable names or patterns.
+
+
+.. _brickv_flash_extension_firmware:
+
+Master Extension Firmware Flashing
+----------------------------------
+
+.. note::
+  Coming soon!
 
 
 .. _brickv_adc_calibration:

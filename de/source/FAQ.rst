@@ -53,7 +53,7 @@ defekt oder gar nicht vorhanden ist.
 In diesem Fall sollte es neu neu geflasht werden. Falls ein Brick nicht
 im Brick Viewer auftaucht wenn das Bricklet angesteckt ist, ist es möglich
 das Bricklet anzustecken nachdem das Brick bereits gestartet hat. Danach
-kann das Bricklet wie :ref:`hier <brickv_flash_plugin>` beschrieben
+kann das Bricklet wie :ref:`hier <brickv_flash_bricklet_plugin>` beschrieben
 aktualisiert werden.
 
 Falls das Flashen nicht funktioniert: Schon ein anderes Bricklet Kabel
@@ -87,7 +87,7 @@ Eines meiner Bricks wird im Brick Viewer nicht angezeigt
 Es ist möglich, dass der Brick unbeabsichtigt in den Bootloader
 gebracht wurde. Dies kann man daran erkennen, dass keine der LEDs mehr
 leuchtet. In diesem Fall muss die 
-:ref:`Brick Firmware neu geflasht <brickv_flash_firmware>`
+:ref:`Brick Firmware neu geflasht <brickv_flash_brick_firmware>`
 werden.
 
 **Kurzschluss im Bricklet-Stecker**:

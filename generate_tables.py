@@ -93,7 +93,7 @@ extension_infos = \
     DeviceInfo(None, 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, True, True, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', None, False, False, False,
+    DeviceInfo(None, 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', 'wifi_v2', True, True, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'})
 ]
@@ -127,6 +127,7 @@ tool_versions = {}
 bindings_versions = {}
 firmware_versions = {}
 plugin_versions = {}
+extension_versions = {}
 kit_versions = {}
 
 def get_latest_version_info():
@@ -167,6 +168,8 @@ def get_latest_version_info():
             firmware_versions[parts[1]] = latest_version
         elif parts[0] == 'bricklets':
             plugin_versions[parts[1]] = latest_version
+        elif parts[0] == 'extensions':
+            extension_versions[parts[1]] = latest_version
         elif parts[0] == 'kits':
             kit_versions[parts[1]] = latest_version
 
@@ -283,7 +286,7 @@ def make_download_bindings_table():
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
-def make_download_firmwares_table():
+def make_download_brick_firmwares_table():
     archive = {
     'en': 'Archive',
     'de': 'Archiv'
@@ -326,7 +329,7 @@ def make_download_firmwares_table():
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
-def make_download_plugins_table():
+def make_download_bricklet_plugins_table():
     archive = {
     'en': 'Archive',
     'de': 'Archiv'
@@ -375,6 +378,49 @@ def make_download_plugins_table():
                                        bricklet_info.git_name,
                                        archive[lang],
                                        *plugin_version))
+
+    return table_head[lang] + '\n'.join(rows) + '\n'
+
+def make_download_extension_firmwares_table():
+    archive = {
+    'en': 'Archive',
+    'de': 'Archiv'
+    }
+
+    source_code = {
+    'en': 'Source Code',
+    'de': 'Quelltext'
+    }
+
+    table_head = {
+    'en': """.. csv-table::
+ :header: "Brick", "Downloads", "Version", "Archive", "Changelog"
+ :delim: |
+ :widths: 17, 32, 5, 5, 8
+
+""",
+    'de': """.. csv-table::
+ :header: "Brick", "Downloads", "Version", "Archiv", "Changelog"
+ :delim: |
+ :widths: 17, 32, 5, 5, 8
+
+"""
+    }
+
+    row = ' :ref:`{0} <{1}>` | `Firmware <http://download.tinkerforge.com/firmwares/extensions/{2}/extension_{2}_firmware_{6}_{7}_{8}.zbin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/extensions/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    rows = []
+
+    for extension_info in sorted(extension_infos, key=lambda x: x.short_display_name.lower()):
+        if extension_info.firmware_url_part != None and extension_info.is_documented:
+            extension_version = extension_versions.get(extension_info.firmware_url_part, (0,0,0))
+
+            rows.append(row.format(extension_info.short_display_name,
+                                   extension_info.ref_name,
+                                   extension_info.firmware_url_part,
+                                   source_code[lang],
+                                   extension_info.git_name,
+                                   archive[lang],
+                                   *extension_version))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
 
@@ -1026,11 +1072,14 @@ def generate(path):
     print('Generating Downloads_bindings.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_bindings.table'), make_download_bindings_table())
 
-    print('Generating Downloads_firmwares.table')
-    write_if_changed(os.path.join(path, 'source', 'Downloads_firmwares.table'), make_download_firmwares_table())
+    print('Generating Downloads_brick_firmwares.table')
+    write_if_changed(os.path.join(path, 'source', 'Downloads_brick_firmwares.table'), make_download_brick_firmwares_table())
 
-    print('Generating Downloads_plugins.table')
-    write_if_changed(os.path.join(path, 'source', 'Downloads_plugins.table'), make_download_plugins_table())
+    print('Generating Downloads_bricklet_plugins.table')
+    write_if_changed(os.path.join(path, 'source', 'Downloads_bricklet_plugins.table'), make_download_bricklet_plugins_table())
+
+    print('Generating Downloads_extension_firmwares.table')
+    write_if_changed(os.path.join(path, 'source', 'Downloads_extension_firmwares.table'), make_download_extension_firmwares_table())
 
     print('Generating Downloads_kits.table')
     write_if_changed(os.path.join(path, 'source', 'Downloads_kits.table'), make_download_kits_table())

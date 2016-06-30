@@ -65,7 +65,7 @@ Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 
 Die gebaute Firmware liegt im ``software/build/`` Verzeichnis. In diesem
 Fall ``master-brick.bin``. Sie kann mit dem 
-:ref:`Brick Viewer <brickv_flash_firmware>` auf ein Brick geflasht werden.
+:ref:`Brick Viewer <brickv_flash_brick_firmware>` auf ein Brick geflasht werden.
 Einfach auf "Custom..." im Updates/Flashing-Dialog klicken und die frisch
 kompilierte Firmware auswählen.
 
@@ -91,7 +91,7 @@ Dann kann der Quellcode mit einem narmalen ``make`` Aufruf gebaut werden::
 
 Das gebaute Plugin liegt im ``software/build/`` Verzeichnis. In diesem
 Fall ``temperature-bricklet.bin``. Es kann mit dem 
-:ref:`Brick Viewer <brickv_flash_firmware>` auf ein Bricklet geflasht werden.
+:ref:`Brick Viewer <brickv_flash_brick_firmware>` auf ein Bricklet geflasht werden.
 Einfach auf "Custom..." im Updates/Flashing-Dialog klicken und das frisch
 kompilierte Plugin auswählen.
 

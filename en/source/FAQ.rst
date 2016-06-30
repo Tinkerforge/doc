@@ -51,7 +51,7 @@ on the EEPROM of the Bricklet.
 In this case, you should reflash the Bricklet plugin. If a Brick doesn't
 show up when the Bricklet is connected, you can connect the Bricklet
 after the Brick has started. Then update the Brick as described 
-:ref:`here <brickv_flash_plugin>`. 
+:ref:`here <brickv_flash_bricklet_plugin>`.
 
 If the flashing doesn't work: Have you tried a different Bricklet cable?
 
@@ -81,7 +81,7 @@ One of my Bricks doesn't show up in the Brick Viewer
 It is possible that you accidentally brought your Brick in the
 bootloader mode. You can recognize this by the fact, that the
 LEDs aren't working anymore. In this case you need to 
-:ref:`reflash the Brick firmware <brickv_flash_firmware>`.
+:ref:`reflash the Brick firmware <brickv_flash_brick_firmware>`.
 
 **Short circuit in Bricklet connector**:
 

@@ -32,7 +32,7 @@ History
    "2012", "21", "`PHP bindings <http://www.tinkerforge.com/en/blog/2012/5/9/php-bindings-ready>`__"
    "",     "22", "`Ruby bindings <http://www.tinkerforge.com/en/blog/2012/5/25/ruby-bindings-ready>`__"
    "",     "22", ":ref:`iOS support <api_bindings_c_ios>`"
-   "",     "23", ":ref:`Brick flashing support for Brick Viewer (No SAM-BA needed anymore) <brickv_flash_firmware>`"
+   "",     "23", ":ref:`Brick flashing support for Brick Viewer (No SAM-BA needed anymore) <brickv_flash_brick_firmware>`"
    "",     "26", "`RS485 Extension <http://www.tinkerforge.com/en/blog/2012/6/28/rs485-extension>`__"
    "",     "30", "`Delphi bindings <http://www.tinkerforge.com/en/blog/2012/7/25/delphi-bindings-ready>`__"
    "",     "37", "Complete German translation of documentation"

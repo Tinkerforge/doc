@@ -71,26 +71,37 @@ documentation <red_brick_images>` for more details about the images.
  RED Brick Image | `Image <http://download.tinkerforge.com/red_images/full/red_image_1_8_full.img.7z>`__ | 1.8 | `Archive <http://download.tinkerforge.com/red_images/full/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_full>`__
 
 
-.. _downloads_firmwares:
+.. _downloads_brick_firmwares:
 
 Brick Firmwares
 ---------------
 
 Brick firmwares can be flashed onto Bricks with the Brick Viewer (see
-:ref:`here <brickv_flash_firmware>`).
+:ref:`here <brickv_flash_brick_firmware>`).
 
-.. include:: Downloads_firmwares.table
+.. include:: Downloads_brick_firmwares.table
 
 
-.. _downloads_plugins:
+.. _downloads_bricklet_plugins:
 
 Bricklet Plugins
 ----------------
 
 Bricklet plugins can be flashed onto Bricklets with the Brick Viewer (see
-:ref:`here <brickv_flash_plugin>`).
+:ref:`here <brickv_flash_bricklet_plugin>`).
 
-.. include:: Downloads_plugins.table
+.. include:: Downloads_bricklet_plugins.table
+
+
+.. _downloads_extension_firmwares:
+
+Master Extension Firmwares
+--------------------------
+
+Master Extension firmwares can be flashed onto Master Extensions with the Brick
+Viewer (see :ref:`here <brickv_flash_extension_firmware>`).
+
+.. include:: Downloads_extension_firmwares.table
 
 
 .. _downloads_demos:
