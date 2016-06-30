@@ -100,7 +100,7 @@ Mit Brick Viewer
 Seit Version 1.1.0 kann der Brick Viewer Firmwares auf Bricks flashen. Die
 jeweils neuste Firmwareversion wird dabei automatisch vom Brick Viewer
 ermittelt und heruntergeladen. Diese können aber auch manuell im
-:ref:`Downloadbereich <downloads_firmwares>` heruntergeladen werden.
+:ref:`Downloadbereich <downloads_brick_firmwares>` heruntergeladen werden.
 
 Vorbereitung
 """"""""""""
@@ -210,7 +210,7 @@ zum Download bereit::
 
 Im Gegensatz zum Brick Viewer lädt ``brick-flash`` die Firmware nicht
 automatisch herunter. Die jeweils neusten Firmwares sind :ref:`hier
-<downloads_firmwares>` zu finden. Lade die zu flashende Firmware
+<downloads_brick_firmwares>` zu finden. Lade die zu flashende Firmware
 herunter, z.B. die neuste Master Brick Firmware::
 
  wget http://download.tinkerforge.com/firmwares/bricks/master/brick_master_firmware_latest.bin
