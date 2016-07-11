@@ -48,6 +48,15 @@ WIFI Master Extension
 	{{ tfdocend() }}
 
 
+
+.. note::
+ Die WIFI Extension wurde durch die verbesserte :ref:`WIFI Extension 2.0
+ <wifi_v2_extension>` abgelöst. Die alte WIFI Extension ist noch verfügbar,
+ sollte aber nur dann noch verwendet werden, wenn ein externen Antennenanschluss
+ benötigt wird. Dieser `Blogeintrag <http://www.tinkerforge.com/de/blog/2016/6/30/wifi-extension-2-0-verfuegbar>`__
+ über die WIFI Extension 2.0 beschreibt die Unterschiede genauer.
+
+
 Features
 --------
 
