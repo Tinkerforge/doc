@@ -11,6 +11,32 @@
 CAN Bricklet
 ============
 
+.. raw:: html
+
+	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{{
+	    tfdocstart("Bricklets/bricklet_can_tilted_350.jpg",
+	               "Bricklets/bricklet_can_tilted_600.jpg",
+	               "CAN Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_can_horizontal_100.jpg",
+	             "Bricklets/bricklet_can_horizontal_600.jpg",
+	             "CAN Bricklet")
+	}}
+	{{
+	    tfdocimg("Bricklets/bricklet_can_brickv_100.jpg",
+	             "Bricklets/bricklet_can_brickv.jpg",
+	             "CAN Bricklet im Brick Viewer")
+	}}
+	{{
+	    tfdocimg("Dimensions/can_bricklet_dimensions_100.png",
+	             "Dimensions/can_bricklet_dimensions_600.png",
+	             "Umriss und Bohrplan")
+	}}
+	{{ tfdocend() }}
+
+
 .. note::
   Diese Bricklet ist noch in Entwicklung!
 
