@@ -32,8 +32,8 @@ Features
 	             "RGB LED Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_rgb_led_brickv_100.jpg",
-	             "Bricklets/bricklet_rgb_led_brickv.jpg",
+	    tfdocimg("Bricklets/bricklet_rgb_led_brickv_100.png",
+	             "Bricklets/bricklet_rgb_led_brickv.png",
 	             "RGB LED Bricklet im Brick Viewer")
 	}}
 	{{

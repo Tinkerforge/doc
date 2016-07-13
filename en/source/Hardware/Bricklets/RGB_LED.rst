@@ -25,8 +25,8 @@ RGB LED Bricklet
 	             "RGB LED Bricklet")
 	}}
 	{{
-	    tfdocimg("Bricklets/bricklet_rgb_led_brickv_100.jpg",
-	             "Bricklets/bricklet_rgb_led_brickv.jpg",
+	    tfdocimg("Bricklets/bricklet_rgb_led_brickv_100.png",
+	             "Bricklets/bricklet_rgb_led_brickv.png",
 	             "RGB LED Bricklet in Brick Viewer")
 	}}
 	{{
@@ -55,7 +55,7 @@ Description
 The RGB LED :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to control a RGB LED. Each of the three channels
-(R, G, B) can be controllied individually with 8 bit resolution.
+(red, green, blue) can be controllied individually with 8 bit resolution.
 
 
 Technical Specifications
