@@ -52,7 +52,7 @@ Description
 The RGB LED :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to control a RGB LED. Each of the three channels
-(red, green, blue) can be controllied individually with 8 bit resolution.
+(red, green, blue) can be controlled individually with 8 bit resolution.
 
 
 Technical Specifications
@@ -62,7 +62,8 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 LED                               WS2812B
-Current Consumption               TBDmW (TBDmA at 5V)
+Current Consumption               | Black: 25mW (5mA at 5V)
+                                  | White: 225mW (45mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Luminous intensity (R, G, B)      390-420mcd, 660-720mcd, 180-200mcd
@@ -72,8 +73,8 @@ Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")*
 Weight                            2g
 ================================  ============================================================
 
-\*: Because of a lack of attention on our part the RGB LED Bricklet
-with hardware verison 1.0 was produced with a size of 
+\* Because of a lack of attention on our part the RGB LED Bricklet
+with hardware version 1.0 was produced with a size of
 25 x 17.5 x 5mm (0.98 x 0.69 x 0.19"). It is thus unfortunately not in
 our standard 5mm grid. This will be fixed with version 1.1.
 

@@ -52,7 +52,7 @@ Mit dem CAN :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` Daten auf einem CAN-Bus
 senden und empfangen.
 
-Die Bandraute kann zwischen 10kb/s und 1Mb/s konfiguriert werden. Es
+Die Bandrate kann zwischen 10kbit/s und 1Mbit/s konfiguriert werden. Es
 ist möglich Filter anzuwenden um nur Frames mit einem spezifischen
 Identifier zu empfangen.
 
@@ -63,11 +63,11 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmW (TBDmA bei 5V, Idle)
+Stromverbrauch                    30mW (6mA bei 5V, Idle)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Baudrate                          10kb - 1Mb
-Filter                            Diabled / Accept all / Match / Match data / Match extended
+Baudrate                          10kbit/s - 1Mbit/s
+Filter                            Disabled / Accept All / Match / Match Data / Match Extended
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           45 x 35 x 14mm (1,77 x 1,38 x 0,55")
@@ -111,7 +111,7 @@ den CAN-Bus geschickt werden in der Frame-Tabelle des Brick Viewer angezeigt.
 Gehäuse
 -------
 
-Comming soon...
+Coming soon...
 
 .. _can_bricklet_programming_interface:
 

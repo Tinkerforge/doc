@@ -52,7 +52,7 @@ The CAN :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the capability to send
 and receive CAN data in a `CAN bus <https://en.wikipedia.org/wiki/CAN_bus>`__.
 
-The baudrate can be configured between 10kb/s and 1Mb/s. It is possible
+The baudrate can be configured between 10kbit/s and 1Mbit/s. It is possible
 to apply filters to match for frames with a specific identifier.
 
 
@@ -62,11 +62,11 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmW (TBDmA at 5V, idle)
+Current Consumption               30mW (6mA at 5V, idle)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Baudrate                          10kb - 1Mb
-Filters                           Diabled / Accept all / Match / Match data / Match extended
+Baudrate                          10kbit/s - 1Mbit/s
+Filters                           Disabled / Accept all / Match / Match data / Match extended
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            45 x 35 x 14mm (1.77 x 1.38 x 0.55")
@@ -112,7 +112,7 @@ is send over the connected CAN bus.
 Case
 ----
 
-Comming soon...
+Coming soon...
 
 
 .. _can_bricklet_programming_interface:
