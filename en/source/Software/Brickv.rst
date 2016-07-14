@@ -229,7 +229,7 @@ possible in two different ways. One possibility is to use the
 
 If you want to flash one distinct Bricklet you can use the flashing window.
 The latest plugins will be downloaded
-automatically and can be found :ref:`here <downloads_plugins>` too.
+automatically and can be found :ref:`here <downloads_bricklet_plugins>` too.
 
 Flashing a Bricklet requires that it is connected to a Brick which is listed in
 your Brick Viewer. A click on the "Flashing" button opens the required dialog:

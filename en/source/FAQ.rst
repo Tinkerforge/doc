@@ -102,7 +102,7 @@ Bricks connected to such an USB controller.
 
 Driver updates can be found on `usb3-drivers.com
 <http://www.usb3-drivers.com/renesas-usb3-drivers.html>`__ and `computerbase.de
-<http://www.computerbase.de/downloads/treiber/mainboards/usb-3.0-host-controller-treiber/>`__.
+<https://www.computerbase.de/downloads/treiber/mainboards/usb-3.0-host-controller-treiber/>`__.
 
 
 An Extension does not show up in the Brick Viewer

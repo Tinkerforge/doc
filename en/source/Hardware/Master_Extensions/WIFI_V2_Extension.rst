@@ -121,7 +121,7 @@ Resources
 ---------
 
 * ESP-WROOM-02 (`Homepage <https://espressif.com/en/products/hardware/esp-wroom-02/overview>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-v2-extension-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-extension-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
 

@@ -121,7 +121,7 @@ Resourcen
 ---------
 
 * ESP-WROOM-02 (`Homepage <https://espressif.com/en/products/hardware/esp-wroom-02/overview>`__)
-* Schaltplan (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-v2-extension-schematic.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-extension-schematic.pdf>`__)
 * Umriss und Borhplan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Quelltext und Platinenlayout (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
 
