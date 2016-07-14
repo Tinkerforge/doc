@@ -52,7 +52,7 @@ Mit dem CAN :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` Daten auf einem CAN-Bus
 senden und empfangen.
 
-Die Bandrate kann zwischen 10kbit/s und 1Mbit/s konfiguriert werden. Es
+Die Baudrate kann zwischen 10kbit/s und 1Mbit/s konfiguriert werden. Es
 ist möglich Filter anzuwenden um nur Frames mit einem spezifischen
 Identifier zu empfangen.
 
