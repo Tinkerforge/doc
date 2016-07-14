@@ -121,7 +121,7 @@ mit unterschiedlichen Schiebereglern steuern:
 Gehäuse
 -------
 
-Commong soon...
+Comming soon...
 
 
 .. _rgb_led_bricklet_programming_interface:

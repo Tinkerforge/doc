@@ -37,9 +37,6 @@ RGB LED Bricklet
 	{{ tfdocend() }}
 
 
-.. note::
- This Bricklet is currently work-in-progress!
-
 
 Features
 --------
