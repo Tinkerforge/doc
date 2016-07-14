@@ -122,7 +122,7 @@ different sliders:
 Case
 ----
 
-Comming soon...
+Coming soon...
 
 .. _rgb_led_bricklet_programming_interface:
 
