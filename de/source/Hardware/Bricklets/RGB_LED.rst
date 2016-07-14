@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / RGB LED Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/rgb-led-bricklet.html
+:shoplink: ../../../shop/bricklets/rgb-led-bricklet.html
 
 .. include:: RGB_LED.substitutions
    :start-after: >>>substitutions
@@ -10,10 +10,6 @@
 
 RGB LED Bricklet
 ================
-
-.. note::
-  Diese Bricklet ist noch in Entwicklung!
-
 
 Features
 --------

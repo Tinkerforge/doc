@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / CAN Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/can-bricklet.html
+:shoplink: ../../../shop/bricklets/can-bricklet.html
 
 .. include:: CAN.substitutions
    :start-after: >>>substitutions
