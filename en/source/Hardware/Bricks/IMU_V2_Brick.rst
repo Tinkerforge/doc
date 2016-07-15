@@ -114,7 +114,7 @@ Technical Specifications
 Property                                             Value
 ===================================================  ============================================================
 Acceleration, Magnetic, Angular Velocity Resolution  14bit, 16bit, 16bit
-Heading, Roll, Pitch Resolution                      0.01° steps
+Heading, Roll, Pitch Resolution                      0.0625° steps
 Quaternion Resolution                                16bit
 Sampling Rate                                        100Hz
 ---------------------------------------------------  ------------------------------------------------------------
