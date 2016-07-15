@@ -77,8 +77,8 @@ Weight                            9g
 Resources
 ---------
 
-* CAN Controller datasheet (`Download <https://github.com/Tinkerforge/can-bricklet/raw/master/datasheets/MCP2515.pdf>`__)
-* CAN Transceiver datasheet (`Download <https://github.com/Tinkerforge/can-bricklet/raw/master/datasheets/MCP2562.pdf>`__)
+* MCP2515 (CAN controller) datasheet (`Download <https://github.com/Tinkerforge/can-bricklet/raw/master/datasheets/MCP2515.pdf>`__)
+* MCP2562 (CAN transceiver) datasheet (`Download <https://github.com/Tinkerforge/can-bricklet/raw/master/datasheets/MCP2562.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/can-bricklet/raw/master/hardware/can-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/can_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/can-bricklet/zipball/master>`__)

@@ -42,7 +42,7 @@ Features
 --------
 
 * 1x RGB LED
-* 24 bit color
+* 24 bit color resolution
 
 .. _rgb_led_bricklet_description:
 

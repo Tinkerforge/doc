@@ -39,6 +39,11 @@ Features
 	}}
 	{{ tfdocend() }}
 
+Features
+--------
+
+* 1x RGB LED
+* 24 Bit Farbauflösung
 
 .. _rgb_led_bricklet_description:
 
