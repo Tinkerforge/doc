@@ -464,6 +464,9 @@ payloads.
                                                                                 |                                      | :tcpip:func:`dim_socket_b/set <BrickletRemoteSwitch.dim_socket_b>`
                                                                                 |                                      | :tcpip:func:`switch_socket_c/set <BrickletRemoteSwitch.switch_socket_c>`
 
+ :ref:`RGB LED Bricklet <rgb_led_bricklet>`                                     | bricklet/rgb_led                     | :tcpip:func:`rgb_value <BrickletRGBLED.get_rgb_value>`
+                                                                                |                                      | :tcpip:func:`rgb_value/set <BrickletRGBLED.set_rgb_value>`
+
  :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`                             | bricklet/rotary_poti                 | :tcpip:func:`position <BrickletRotaryPoti.get_position>`
 
  :ref:`Rotary Encoder Bricklet <rotary_encoder_bricklet>`                       | bricklet/rotary_encoder              | :tcpip:func:`count <BrickletRotaryEncoder.get_count>` (calls :tcpip:func:`get_count <BrickletRotaryEncoder.get_count>` with *false*)
