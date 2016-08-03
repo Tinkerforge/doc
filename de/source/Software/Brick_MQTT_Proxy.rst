@@ -392,6 +392,7 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`backlight_off/set <BrickletLCD16x2.backlight_off>`
                                                                                 |                                      | :tcpip:func:`config <BrickletLCD16x2.get_config>`
                                                                                 |                                      | :tcpip:func:`config/set <BrickletLCD16x2.set_config>`
+                                                                                |                                      | :tcpip:func:`custom_character <BrickletLCD16x2.get_custom_character>`
                                                                                 |                                      | :tcpip:func:`custom_character/set <BrickletLCD16x2.set_custom_character>`
                                                                                 |                                      | :tcpip:func:`button_pressed <BrickletLCD16x2.is_button_pressed>`
 
@@ -402,8 +403,11 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`backlight_off/set <BrickletLCD20x4.backlight_off>`
                                                                                 |                                      | :tcpip:func:`config <BrickletLCD20x4.get_config>`
                                                                                 |                                      | :tcpip:func:`config/set <BrickletLCD20x4.set_config>`
+                                                                                |                                      | :tcpip:func:`custom_character <BrickletLCD20x4.get_custom_character>`
                                                                                 |                                      | :tcpip:func:`custom_character/set <BrickletLCD20x4.set_custom_character>`
                                                                                 |                                      | :tcpip:func:`button_pressed <BrickletLCD20x4.is_button_pressed>`
+                                                                                |                                      | :tcpip:func:`default_text <BrickletLCD20x4.get_default_text>`
+                                                                                |                                      | :tcpip:func:`default_text/set <BrickletLCD20x4.set_default_text>`
                                                                                 |                                      | :tcpip:func:`default_text_counter <BrickletLCD20x4.get_default_text_counter>`
                                                                                 |                                      | :tcpip:func:`default_text_counter/set <BrickletLCD20x4.set_default_text_counter>`
 
