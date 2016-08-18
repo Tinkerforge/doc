@@ -355,7 +355,9 @@ payloads.
                                                                                 |                                      | :tcpip:func:`group <BrickletIndustrialQuadRelay.get_group>`
                                                                                 |                                      | :tcpip:func:`group/set <BrickletIndustrialQuadRelay.set_group>`
 
- :ref:`IO-16 Bricklet <io16_bricklet>`                                          | bricklet/io16                        | :tcpip:func:`port/set <BrickletIO16.set_port>`
+ :ref:`IO-16 Bricklet <io16_bricklet>`                                          | bricklet/io16                        | :tcpip:func:`port <BrickletIO16.get_port>`
+                                                                                |                                      | :tcpip:func:`port/set <BrickletIO16.set_port>`
+                                                                                |                                      | :tcpip:func:`port_configuration <BrickletIO16.get_port_configuration>`
                                                                                 |                                      | :tcpip:func:`port_configuration/set <BrickletIO16.set_port_configuration>`
                                                                                 |                                      | :tcpip:func:`port_monoflop/set <BrickletIO16.set_port_monoflop>`
                                                                                 |                                      | :tcpip:func:`selected_values/set <BrickletIO16.set_selected_values>`
