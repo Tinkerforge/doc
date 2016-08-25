@@ -450,6 +450,20 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`electrode_sensitivity/set <BrickletMultiTouch.set_electrode_sensitivity>`
                                                                                 |                                      | :tcpip:func:`recalibrate/set <BrickletMultiTouch.recalibrate>`
 
+ :ref:`OLED 128x64 Bricklet <oled_128x64_bricklet>`                             | bricklet/oled_128x64                 | :tcpip:func:`write/set <BrickletOLED128x64.write>`
+                                                                                |                                      | :tcpip:func:`new_window/set <BrickletOLED128x64.new_window>`
+                                                                                |                                      | :tcpip:func:`clear_display/set <BrickletOLED128x64.clear_display>`
+                                                                                |                                      | :tcpip:func:`write_line/set <BrickletOLED128x64.write_line>`
+                                                                                |                                      | :tcpip:func:`display_configuration <BrickletOLED128x64.get_display_configuration>`
+                                                                                |                                      | :tcpip:func:`display_configuration/set <BrickletOLED128x64.set_display_configuration>`
+
+ :ref:`OLED 64x48 Bricklet <oled_64x48_bricklet>`                               | bricklet/oled_64x48                  | :tcpip:func:`write/set <BrickletOLED64x48.write>`
+                                                                                |                                      | :tcpip:func:`new_window/set <BrickletOLED64x48.new_window>`
+                                                                                |                                      | :tcpip:func:`clear_display/set <BrickletOLED64x48.clear_display>`
+                                                                                |                                      | :tcpip:func:`write_line/set <BrickletOLED64x48.write_line>`
+                                                                                |                                      | :tcpip:func:`display_configuration <BrickletOLED64x48.get_display_configuration>`
+                                                                                |                                      | :tcpip:func:`display_configuration/set <BrickletOLED64x48.set_display_configuration>`
+
  :ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>`                         | bricklet/piezo_speaker               | :tcpip:func:`beep/set <BrickletPiezoSpeaker.beep>`
                                                                                 |                                      | :tcpip:func:`morse_code/set <BrickletPiezoSpeaker.morse_code>`
 
