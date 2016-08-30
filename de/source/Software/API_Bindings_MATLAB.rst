@@ -46,6 +46,11 @@ kann mit folgendem Befehl in MATLAB getestet werden:
 
  version -java
 
+Falls dieser Befehl keine Java Unterstürzung zeigt, dann siehe die MATLAB
+Dokumentation darüber wie `Java für MATLAB
+<http://www.mathworks.com/help/compiler_sdk/java/configure-your-java-environment.html>`__
+eingereichtet werden kann.
+
 Zur Installation der Bindings muss die ``Tinkerforge.jar`` Datei aus dem
 ``matlab/`` Ordner in den MATLAB Programmordner kopiert werden. Unter Windows
 ist dieser für MATLAB R2014a typischerweise hier::

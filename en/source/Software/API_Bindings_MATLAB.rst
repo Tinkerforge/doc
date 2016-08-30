@@ -44,6 +44,10 @@ with the following command in MATLAB:
 
  version -java
 
+If this command doesn't show Java support then see the MATLAB documentation
+about how to configure `Java for MATLAB
+<http://www.mathworks.com/help/compiler_sdk/java/configure-your-java-environment.html>`__.
+
 To install the bindings copy the ``Tinkerforge.jar`` file from the ``matlab/``
 folder to the MATLAB program folder. On Windows this folder is typically
 located here for MATLAB R2014a::
