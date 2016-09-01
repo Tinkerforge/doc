@@ -93,7 +93,7 @@ Windows so aufgerufen werden::
 
 oder so der Mono Compiler auf Linux und Mac OS X::
 
- gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
+ mcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
 
 Alternativ können die Beispiele auch in einer C# IDE deiner Wahl verwendet
 werden, wie z.B. Visual Studio oder MonoDevelop.
