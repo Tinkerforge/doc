@@ -48,30 +48,43 @@ If this command doesn't show Java support then see the MATLAB documentation
 about how to configure `Java for MATLAB
 <http://www.mathworks.com/help/compiler_sdk/java/configure-your-java-environment.html>`__.
 
-To install the bindings copy the ``Tinkerforge.jar`` file from the ``matlab/``
-folder to the MATLAB program folder. On Windows this folder is typically
-located here for MATLAB R2014a::
+To use the bindings MATLAB needs to know where to find the ``Tinkerforge.jar``
+file. There are several ways to archive this, see the `MATLAB documentation
+<http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html>`__
+for more details on all of them.
+The recommended way is to the add the bindings to the preferences folder.
 
- C:\Program Files\MATLAB\R2014a
+Start MATLAB and run the following command to get the path of the preferences
+folder:
 
-On Linux it is here::
+.. code-block:: matlab
 
- /usr/local/matlab/r2014a
+ prefdir(1)
 
-On Mac OS X it is here::
+Preferences folder path examples:
 
- /Applications/MATLAB_R2014a.app
+* Windows: ``C:\Users\<user>\AppData\local\MathWorks\MATLAB\R2016a``
+* Linux: ``/home/<user>/.matlab/R2016a``
+* Mac OS X: ``/Users/<user>/.matlab/R2016a``
 
-Then the new Java library has to be added to MATLAB's class path. Edit the
-following file::
+Copy the ``Tinkerforge.jar`` file from the ``matlab/`` folder to the preferences
+folder. Then the ``Tinkerforge.jar`` file has to be added to MATLAB's class path.
+Edit or create a file named ``javaclasspath.txt`` in the preferences folder
+and add the absolute path to the ``Tinkerforge.jar`` file as a new line to it.
+For example:
 
- <MATLAB program folder>/toolbox/local/classpath.txt
+* Windows: ``C:\Users\<user>\AppData\local\MathWorks\MATLAB\R2016a\Tinkerforge.jar``
+* Linux: ``/home/<user>/.matlab/R2016a/Tinkerforge.jar``
+* Mac OS X: ``/Users/<user>/.matlab/R2016a/Tinkerforge.jar``
 
-and append the following line to it::
+Restart MATLAB and run the following command, it should list the
+``Tinkerforge.jar`` file:
 
- $matlabroot/Tinkerforge.jar
+.. code-block:: matlab
 
-After restarting MATLAB the bindings are ready to use.
+ javaclasspath
+
+The bindings are now ready to use.
 
 Octave
 ^^^^^^
