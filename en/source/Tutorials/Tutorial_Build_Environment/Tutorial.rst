@@ -26,11 +26,6 @@ distribution does not have a package for the ``arm-none-eabi-gcc`` you
 can use the ``gcc-arm-embedded`` compiler 
 `from launchpad <https://launchpad.net/gcc-arm-embedded>`__.
 
-For development on Windows or Mac OS X we recommend that you use a VirtualBox
-image with a shared ``tf/`` directory. Then you can develop on your favorite
-OS with your IDE etc and still use all of the Linux specific infrastructure 
-that is needed for our development environment.
-
 If you have an environment set-up with the script above, you can:
 
 * Modify and compile Brick firmwares

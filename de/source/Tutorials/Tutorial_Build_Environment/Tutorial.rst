@@ -28,11 +28,6 @@ ausgetauscht werden. Falls die Distribution kein Paket für den
 `von Launchpad <https://launchpad.net/gcc-arm-embedded>`__ genutzt
 werden.
 
-Für die Entwicklung auf Windows und Mac OS X empfehlen wir ein VirtualBox
-Image mit einem geteilten ``tf/`` Verzeichnis. Mit diesem Aufbau
-ist es möglich auf Windows und Mac OS X zu entwickeln und gleichzeitig
-unsere Linux-spezifische Infrastruktur zu nutzen.
-
 Mit einer Umgebung welche mit dem obigen Skript aufgesetzt ist, kann man:
 
 * Brick Firmwares verändern und kompilieren
