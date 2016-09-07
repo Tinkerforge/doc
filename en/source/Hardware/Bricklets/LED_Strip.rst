@@ -86,7 +86,7 @@ LED Strip Bricklet
 Features
 --------
 
-* Controls up to 320 RGB LEDs
+* Controls up to 320 RGB or 240 RGBW LEDs
 * All LEDs can be switched independently
 * Update rate of up to 100Hz for each LED possible
 
@@ -97,9 +97,10 @@ Description
 -----------
 
 The LED Strip :ref:`Bricklet <primer_bricklets>` can be used to
-control LED strips and LED pixels that are equipped with the WS2801, WS2811 or
-WS2812 LED driver.
-It is possible to independently control 320 RGB LEDs (960 individual LEDs) over
+control LED strips and LED pixels that are equipped with the WS2801, WS2811,
+WS2812/SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 or
+APA102 (DotStar) LED driver.
+It is possible to independently control 320 RGB or 240 RGBW LEDs (960 individual LEDs) over
 the connected :ref:`Brick <primer_bricks>`.
 
 The API allows to change all LEDs at the same time with a fixed update rate
@@ -116,12 +117,13 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Supported LED Drivers             WS2801, WS2811 and WS2812
+Supported LED Drivers             | WS2801, WS2811, WS2812/SK6812 (NeoPixel RGB),
+                                  | SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
 Current Consumption               1mA (idle), 4mA (active)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Resolution                        8bit per LED
-Maximum Number of LEDs            960 (320 RGB LEDs)*
+Maximum Number of LEDs            960 (320 RGB or 240 RGBW LEDs)*
 Maximum Update Rate               100 updates per second
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -166,6 +168,8 @@ If everything went as expected you can now control a LED strip.
 WS2801, WS2811 and WS2812
 -------------------------
 
+.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
+
 The LED Strip Bricklet supports LED strips and pixels equipped with the
 WS2801, WS2811 or WS2812 driver chip. WS28xy refers to any of these chips.
 
@@ -201,6 +205,8 @@ clock signal.
 
 Connectivity
 ------------
+
+.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
 
 The following image depicts the interfaces of the LED Strip Bricklet.
 
@@ -258,23 +264,23 @@ RAM Constraints
 
 The LED Strip Bricklet needs lots of RAM to store the color data for the LEDs.
 Normally the LED Strip Bricklet would only be able to control up to 80 RGB
-LEDs with the RAM that is available per Bricklet.
+or 60 RGBW LEDs with the RAM that is available per Bricklet.
 
 To circumvent this limitation, the LED Strip Bricklet is able to use the
 RAM of the remaining unconnected Bricklets. This allows to control up to
-320 RGB LEDs with one Master Brick and one LED Strip Bricklet. As described above
+320 RGB or 240 RGBW LEDs with one Master Brick and one LED Strip Bricklet. As described above
 these used ports can't be used by other Bricklets.
 
 The maximum number of controllable LEDs is as follows:
 
-================================  ============================================================
-Free Bricklet Ports               Maximum number of RGB LEDs
-================================  ============================================================
-0                                 80
-1                                 160
-2                                 240
-3                                 320
-================================  ============================================================
+================================  ==================================  ==================================
+Free Bricklet Ports               Maximum number of RGB LEDs          Maximum number of RGBW LEDs
+================================  ==================================  ==================================
+0                                 80                                  60
+1                                 160                                 120
+2                                 240                                 180
+3                                 320                                 240
+================================  ==================================  ==================================
 
 
 .. _led_strip_bricklet_ws2812b_led_strips:
