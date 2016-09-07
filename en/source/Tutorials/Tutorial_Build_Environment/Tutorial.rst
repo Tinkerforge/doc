@@ -46,7 +46,7 @@ To compile a Brick firmware you first have to link in the ``bricklib``
 and generate the ``Makefile`` (e.g. for the Master Brick)::
 
  cd ~/tf/master-brick/software/src/
- ln -s ../../../bricklib/ .
+ ln -sf ../../../bricklib/ .
  cd ~/tf/master-brick/software/
  ./generate_makefile
 
@@ -68,8 +68,8 @@ and the ``brickletlib`` and generate the ``Makefile``
 (e.g. for the Master Brick)::
 
  cd ~/tf/temperature-bricklet/software/src/
- ln -s ../../../bricklib/ .
- ln -s ../../../brickletlib/ .
+ ln -sf ../../../bricklib/ .
+ ln -sf ../../../brickletlib/ .
  cd ~/tf/temperature-bricklet/software/
  ./generate_makefile
 

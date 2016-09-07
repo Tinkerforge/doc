@@ -49,7 +49,7 @@ gesetzt werden sowie eine ``Makefile`` generiert werden (als
 Beispiel für den Master Brick)::
 
  cd ~/tf/master-brick/software/src/
- ln -s ../../../bricklib/ .
+ ln -sf ../../../bricklib/ .
  cd ~/tf/master-brick/software/
  ./generate_makefile
 
@@ -73,8 +73,8 @@ und ``brickletlib`` gesetzt werden sowie eine ``Makefile`` generiert werden
 (als Beispiel für das Temperature Bricklet)::
 
  cd ~/tf/temperature-bricklet/software/src/
- ln -s ../../../bricklib/ .
- ln -s ../../../brickletlib/ .
+ ln -sf ../../../bricklib/ .
+ ln -sf ../../../brickletlib/ .
  cd ~/tf/temperature-bricklet/software/
  ./generate_makefile
 
