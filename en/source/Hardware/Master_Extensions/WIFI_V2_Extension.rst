@@ -353,10 +353,10 @@ the extension. With this interface the current status of the extension can be vi
 and the configuration options as discussed in the previous section can be configured.
 
 .. image:: /Images/Extensions/extension_wifi2_web_interface_status.jpg
-   :scale: 100 %
-   :alt: Status view of the web interface of WIFI Extension 2.0
-   :align: center
-   :target: ../../_images/Extensions/extension_wifi2_web_interface_status.jpg
+  :scale: 100 %
+  :alt: Status view of the web interface of WIFI Extension 2.0
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_web_interface_status.jpg
 
 The "Disable Web Interface" check box in the settings view can be used to enable
 or disable the web interface. When the web interface is disabled it can be enabled
@@ -375,11 +375,11 @@ interface for enabling or disabling the web interface.
 If authentication secret is enabled then the web interface will present the following
 page for user authentication.
 
-	.. image:: /Images/Extensions/extension_wifi2_web_interface_authentication.jpg
-	   :scale: 100 %
-	   :alt: Authentication view of the web interface of WIFI Extension 2.0
-	   :align: center
-	   :target: ../../_images/Extensions/extension_wifi2_web_interface_authentication.jpg
+.. image:: /Images/Extensions/extension_wifi2_web_interface_authentication.jpg
+  :scale: 100 %
+  :alt: Authentication view of the web interface of WIFI Extension 2.0
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_web_interface_authentication.jpg
 
 
 LEDs
