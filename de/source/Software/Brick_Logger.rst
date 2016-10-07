@@ -6,13 +6,14 @@
 Brick Logger
 ============
 
-Der Brick Logger kann Sensordaten von Bricks und Bricklets sammeln und in einer
+Der Brick Logger kann Sensordaten von :ref:`Bricks <primer_bricks>`
+und :ref:`Bricklets <primer_bricklets>` sammeln und in einer
 `CSV <https://de.wikipedia.org/wiki/CSV_(Dateiformat)>`__ Datei zu späteren
 Auswertung speichern. Welche Daten, von welchen Bricklets, in welchem Intervall
 und mit welchen Einstellungen gesammelt werden soll, kann individuell
 eingestellt werden.
-
-Der Brick Logger ist seit Version 2.3.0 Teil von Brick Viewer und kann mit dem
+Der Brick Logger ist seit Version 2.3.0 Teil von :ref:`Brick Viewer <brickv>`
+und kann mit dem
 "Data Logger" Knopf aufgerufen werden. Hier kann der Brick Logger konfiguriert
 und auch ausgeführt werden. Es gibt auch eine :ref:`Standalone Version
 <brick_logger_standalone>` die von der Kommandozeile aus ausgeführt werden kann.

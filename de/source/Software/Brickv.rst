@@ -314,3 +314,11 @@ Ob die Kalibrierung grundsätzlich funktioniert kann dadurch getestet werden,
 dass das Poti Bricklet in Mittelstellung gebracht und dann "Calibrate" geklickt
 wird. Dabei muss sich Gain oder Offset ändern (danach muss der AD-Wandler
 natürlich wieder korrekt kalibriert werden).
+
+
+Brick Logger
+------------
+
+Seit Version 2.3.0 ist ein Logger Teil vom Brick Viewer.
+:ref:`Brick Logger <brick_logger>` kann auch eigenständig betrieben werden.
+Die Dokumentation befindet sich :ref:`hier <brick_logger>`.

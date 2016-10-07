@@ -302,3 +302,12 @@ You can test if the calibration works in
 principle by pressing "Calibrate" when the Poti Bricklet is in the middle position,
 then one of the values has to change (after that you have to recalibrate,
 of course).
+
+
+
+Brick Logger
+------------
+
+Since version 2.3.0 a logger is part of Brick Viewer.
+:ref:`Brick Logger <brick_logger>` can also be used standalone.
+The documentation can be found :ref:`here <brick_logger>`.
