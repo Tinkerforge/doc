@@ -636,7 +636,7 @@ The configuration of the RS485 Extension is the same as it can be
 done through a Master Brick. See the
 :ref:`RS485 Extension documentation <rs485_extension_configuration>`.
 
-The recommended baudrates to be used on the RED Brick are 500000, 250000,
+The supported baudrates that can be used on the RED Brick are 500000, 250000,
 166666, 125000, 100000, 83333, 71428, 62500, 55555, 50000, 45454 or
 41666 baud.
 

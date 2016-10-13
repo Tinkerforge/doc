@@ -650,9 +650,9 @@ RS485 Extension
 Die Konfiguration der RS485 Extension ist identisch zu der mit einem Master
 Brick. Siehe :ref:`RS485 Extension Dokumentation <rs485_extension_configuration>`.
 
-Wir empfehlen Baudraten von 500000, 250000, 166666, 125000, 100000, 83333,
-71428, 62500, 55555, 50000, 45454 oder 41666 Baud bei der Nutzung eines RED
-Bricks.
+Folgende Baudraten werden bei der Nutzung eines RED Bricks unterstüzt: 500000,
+250000, 166666, 125000, 100000, 83333, 71428, 62500, 55555, 50000, 45454 und
+41666 Baud.
 
 .. _red_brick_brickv_import_export_tab:
 
