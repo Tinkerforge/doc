@@ -51,7 +51,7 @@ WIFI Master Extension 2.0
 Features
 --------
 
-* Steuerung von Bricks/Bricklets drahtlos über WLAN Netzwerk 
+* Steuerung von Bricks/Bricklets drahtlos über WLAN Netzwerk
 * Arbeitet mit 802.11b/g/n
 * Unterstützt WPA2-Verschlüsselung als Client und Access Point
 * Unterstützt statische IP sowie DHCP als Client und Access Point
@@ -78,7 +78,7 @@ Smartphone, Tablet oder (Embedded) PC zu steuern. Der :ref:`Brick Daemon <brickd
 
 Um die WIFI Extension zu nutzen ist ein :ref:`Master Brick <master_brick>` notwendig.
 Der :ref:`RED Brick <red_brick>` wird zurzeit nicht unterstützt.
-Wenn andere Bricks gesteuert werden sollen, so kann ein :ref:`Stapel <primer_stack>` 
+Wenn andere Bricks gesteuert werden sollen, so kann ein :ref:`Stapel <primer_stack>`
 aus diesen gebaut werden
 und auf den Master Brick gesteckt werden. Wenn Bricklets verwendet werden sollen,
 so können diese einfach an der Master Brick oder andere Bricks im Stapel angeschlossen werden.
@@ -108,7 +108,7 @@ Tinkerforge Protokolle                       Volle Unterstützung (TCP/IP, Authe
 -------------------------------------------  -----------------------------------------------------------------------------
 -------------------------------------------  -----------------------------------------------------------------------------
 RF Ausgangsstärke (typisch)                  bis zu 19.5dBm
-Sicherheitsprotokolle                        WEP, WPA, WPA2
+Sicherheitsprotokolle                        WPA, WPA2
 Unterstützte Standards                       IEEE 802.11 b/g/n, mit CCK, OFDM und MCS7 Modulation
 -------------------------------------------  -----------------------------------------------------------------------------
 -------------------------------------------  -----------------------------------------------------------------------------
@@ -235,7 +235,7 @@ Betriebsarten
 Die WIFI Extension 2.0 kann als
 
 * Client,
-* Access Point oder 
+* Access Point oder
 * beides gleichzeitig
 
 agieren.
@@ -334,10 +334,9 @@ Die SSID kann bis zu 32 ASCII-Zeichen lang sein.
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_brickv_ap_ssid.jpg
 
-Im Access Point Modus unterstützt die WIFI Extension 2.0 die 
+Im Access Point Modus unterstützt die WIFI Extension 2.0 die
 Verschlüsselungsprotokolle
 
-* WEP,
 * WPA PSK,
 * WPA2 PSK und
 * WPA/WPA2 PSK.
@@ -361,6 +360,42 @@ nutzen.
    :alt: WIFI Extension 2.0 AP Channel, Hide SSID, und MAC Konfiguration
    :align: center
    :target: ../../_images/Extensions/extension_wifi2_brickv_ap_channel_hide_ssid_mac.jpg
+
+
+Web Interface
+-------------
+
+Ab Firmware Version 2.0.1 bietet die Extension ein Web Interface zur Konfiguration
+und Abfrage von Statusinformationen.
+
+.. image:: /Images/Extensions/extension_wifi2_web_interface_status.jpg
+  :scale: 100 %
+  :alt: Statusansicht des Web Interface der WIFI Extension 2.0
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_web_interface_status.jpg
+
+Über die "Disable Web Interface" Checkbox Konfigurationsansicht kann das Web
+Interface aktiviert und deaktiviert werden. Wenn das Web Interface deaktiviert
+ist kann es über Brick Viewer wieder aktiviert werden. Bis einschließlich
+Brick Viewer 2.3.6 muss zum Deaktivieren in das "Website Port" Feld eine 1
+eingetragen werden. Zum Aktivieren des Web Interface muss ein Wert größer 1
+eingetragen werden. ab Brick Viewer 2.3.7 steht hierzu eine eigene Checkbox
+bereit, wie auch im Web Interface.
+
+.. image:: /Images/Extensions/extension_wifi2_web_interface_settings.jpg
+  :scale: 100 %
+  :alt: Konfigurationsansicht des Web Interface der WIFI Extension 2.0
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_web_interface_settings.jpg
+
+Falls die Authentifizierung aktiviert ist, dann fragt das Web Interface das
+Secret mit folgender Seite ab:
+
+.. image:: /Images/Extensions/extension_wifi2_web_interface_authentication.jpg
+  :scale: 100 %
+  :alt: Authentication view of the web interface of WIFI Extension 2.0
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_web_interface_authentication.jpg
 
 
 LEDs

@@ -108,7 +108,7 @@ Tinkerforge Protocols             Full support (TCP/IP, authentication and WebSo
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
 RF Output Power (Typical)         up to 19.5dBm
-Security Protocols                WEP, WPA, WPA2
+Security Protocols                WPA, WPA2
 Supported Standards               IEEE 802.11 b/g/n, with CCK, OFDM and MCS7 modulation
 --------------------------------  -----------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------
@@ -321,7 +321,6 @@ The SSID can be up to 32 ASCII characters long.
 
 In Access Point mode the WIFI Extension 2.0 supports
 
-* WEP,
 * WPA PSK,
 * WPA2 PSK and
 * WPA/WPA2 PSK
