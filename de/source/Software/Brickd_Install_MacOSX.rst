@@ -27,7 +27,7 @@ Ein Klick auf die Datei sollte das Disk Image öffnen:
 
 Danach muss auf ``INSTALL`` geklickt werden, es sollte ein
 Passwort-Abfrage geöffnet werden. Es kann aber auch folgende Fehlermeldung
-angezeigt werden for Brick Daemon 2.0.8 und ältere Versionen angezeigt werden:
+angezeigt werden für Brick Daemon 2.0.8 und ältere Versionen angezeigt werden:
 
 .. image:: /Images/Screenshots/brickd_macos_not_signed_1_small.jpg
    :scale: 100 %
