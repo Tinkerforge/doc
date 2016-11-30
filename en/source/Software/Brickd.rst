@@ -60,6 +60,14 @@ This includes basic information about USB hotplug and TCP/IP connections.
   Event Log filtered for brickd messages.
 * Linux and Mac OS X: Log messages are written to ``/var/log/brickd.log``.
 
+If the default logging configuration has not enough details to debug a problem
+then there is the debug level log. This is not enable by default because it
+drastically increases the mount of log messages and can have an impact on the
+packet routing performance of brickd.
+
+* Windows: The ``logviewer.exe`` tool also includes a Live Debug Log view that
+  connects to the currently running brickd and displays a full debug log.
+
 
 Configuration
 -------------
@@ -178,7 +186,6 @@ Common:
 * ``--version`` shows version number and exits
 * ``--check-config`` checks config file for errors
 * ``--debug`` sets all log levels to debug
-* ``--libusb-debug`` sets libusb log level to debug
 
 Windows only:
 
