@@ -37,26 +37,53 @@ Installation
 ------------
 
 To make the bindings work LabVIEW has to be able to find the ``Tinkerforge.dll``.
-Depending on your LabVIEW and Windows version you either need to use the
-``Tinkerforge.dll`` from the ``net20`` or the ``net40`` folder. Try the NET 2.0
-version first. If LabVIEW reports error code 1386 "The specified .NET class is
-not available in LabVIEW." then you need to use the NET 4.0 version instead.
+The easiest option is to put the ``Tinkerforge.dll`` in the LabVIEW
+installation folder. For example, the default installation folder for LabVIEW
+2015 is::
 
-If you open an example then LabVIEW will search for the ``Tinkerforge.dll`` and
-ask you if it could not find it. You can avoid this search and ask procedure by
-putting the ``Tinkerforge.dll`` in a folder known to LabVIEW. The easiest option
-is the ``vi.lib`` folder of your LabVIEW installation::
+ C:\Program Files\National Instruments\LabVIEW 2015\
 
- C:\Program Files\National Instruments\LabVIEW 2013\vi.lib\
+The ``Tinkerforge.dll`` can also be put in the same folder as the .vi file that
+is going to use it. In both cases LabVIEW should automatically find the
+``Tinkerforge.dll``.
 
-Then LabVIEW will find the ``Tinkerforge.dll`` automatically and does not ask
-for your support. But LabVIEW might warn that ``Tinkerforge.dll`` was loaded
-from a different folder. This warning can be ignored.
+The ZIP file for the bindings contains two different versions of the
+``Tinkerforge.dll``:
 
-LabVIEW might also warn that is found a ``Tinkerforge.dll`` with a different
-version. If the found version is newer then the one LabVIEW was locking for,
+* For LabVIEW 2011 and older LabVIEW versions the ``Tinkerforge.dll`` from the
+  ``net20`` folder should be used.
+* For LabVIEW 2012 and newer LabVIEW versions the ``Tinkerforge.dll`` from the
+  ``net40`` folder should be used.
+
+Warnings
+^^^^^^^^
+
+LabVIEW might warn that the ``Tinkerforge.dll`` was loaded from a different
+folder. This warning can be ignored.
+
+LabVIEW might also warn that it found a ``Tinkerforge.dll`` with a different
+version. If the found version is newer than the one LabVIEW was locking for,
 then you can ignore this warning. Otherwise you should update the LabVIEW
 bindings.
+
+Errors
+^^^^^^
+
+If LabVIEW reports error code 1386 "The specified .NET class is not available
+in LabVIEW." then make sure that all ".NET Constructor" nodes in the .vi file
+are configured correctly. Double click on a ".NET Constructor" node and select
+"Tinkerforge" as the "Assembly".
+
+If the "Select .NET Assembly" dialog says "An error occurred trying to load the
+assembly", then check in Windows Explorer if the ``Tinkerforge.dll`` is marked
+as coming from another computer. If this is the case LabVIEW will refuse to
+load it.
+
+Open the properties dialog of the ``Tinkerforge.dll`` in Windows Explorer. If
+there is an "Unblock" button at the bottom of the "General" page, then the
+file is blocked. Click the "Unblock" button and restart LabVIEW. The problem
+should be fixed now.
+
 
 Testing an Example
 ------------------
@@ -78,9 +105,10 @@ this we copy the ``Example Configuration.vi`` file from the
  example_project/
   -> Example Configuration.vi
 
-If you did **not** copy the bindings to the ``vi.lib`` folder of your LabVIEW
-installation then the ``Tinkerforge.dll`` file has to be copied to the
-``example_project/`` folder as well before the example can be opened in LabVIEW::
+If you did **not** copy the ``Tinkerforge.dll`` to the installation folder of
+your LabVIEW installation then the ``Tinkerforge.dll`` file has to be copied to
+the ``example_project/`` folder as well before the example can be opened in
+LabVIEW::
 
  example_project/
   -> Tinkerforge.dll

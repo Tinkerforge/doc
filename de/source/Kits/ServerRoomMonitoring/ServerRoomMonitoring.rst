@@ -163,8 +163,8 @@ gesteckt und alle Bricklets angeschlossen. Der Master Brick wird per USB
 mit dem PC verbunden. Mit dem Brick Viewer können nun die Module getestet.
 Anschließend kann über den Brick Viewer bestimmt werden, ob alle 
 Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
-(:ref:`Bricks aktualisieren <brickv_flash_firmware>`,
-:ref:`Bricklets aktualisieren <brickv_flash_plugin>`):
+(:ref:`Bricks aktualisieren <brickv_flash_brick_firmware>`,
+:ref:`Bricklets aktualisieren <brickv_flash_bricklet_plugin>`):
 
 .. image:: /Images/Kits/server_room_monitoring_update_350.jpg
    :scale: 100 %
@@ -179,7 +179,7 @@ Als nächstes sollte die Ethernet Extension konfiguriert werden.
 In den folgenden Beispielen ist diese auf den Hostnamen
 "ServerMonitoring" und DHCP konfiguriert. Zur Konfiguration muss der Master 
 Brick Reiter geöffnet werden. Die weitere Konfiguration ist 
-:ref:`hier <ethernet_configuration>` beschrieben.
+:ref:`hier <ethernet_extension_configuration>` beschrieben.
 
 Nach den Tests und der Konfiguration ist sichergestellt, dass die Hardware
 auch nach dem Einbau in das 19" Rack Gehäuse wie gewünscht funktioniert.

@@ -14,7 +14,8 @@ installed from source.
 Debian Package
 --------------
 
-First, download the Brick Daemon ``.deb`` from :ref:`here <downloads_tools>`.
+First, download the correct Brick Daemon ``.deb`` for your architecture from
+:ref:`here <downloads_tools>`.
 Right-click on the file and choose "Open with GDebi Package Installer":
 
 .. image:: /Images/Screenshots/brickd_linux_1_small.jpg
@@ -58,6 +59,10 @@ To install Brick Daemon from the console use the following::
  # On 32bit x86
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_i386.deb
  sudo dpkg -i brickd_linux_latest_i386.deb
+
+ # On RED Brick
+ wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest+redbrick_armhf.deb
+ sudo dpkg -i brickd_linux_latest+redbrick_armhf.deb
 
 The Brick Daemon will be started after the installation and at startup
 automatically.

@@ -58,6 +58,7 @@ The following combinations with other Extensions in a stack are possible
 * RS485 Master / Chibi Slave
 * RS485 Master / Ethernet
 * RS485 Master / WIFI
+* RS485 Master / WIFI 2.0
 * RS485 Slave / Chibi Master
 
 
@@ -88,8 +89,6 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/rs485-extension>`__)
 
 
-.. _rs485_connectivity:
-
 Connectivity
 ------------
 
@@ -116,7 +115,7 @@ To create a RS485 bus, stack the RS485 Extension on top of a Master Brick.
 Connect the Master Brick via USB, Ethernet or WIFI with your PC and start the
 Brick Viewer software. You should see the Master Brick view
 with the identified RS485 Extension (see images below). Configure the extension
-as slave or master (as described :ref:`here <rs485_configuration>`).
+as slave or master (as described :ref:`here <rs485_extension_configuration>`).
 
 If you have configured all extensions you can build your system. Connect
 Bricks and Bricklets as you like. The Master Brick of each stack has to be the
@@ -143,7 +142,7 @@ searches for slaves only at startup. You should now be able to see all
 connected stacks in the Brick Viewer.
 
 
-.. _rs485_configuration:
+.. _rs485_extension_configuration:
 
 RS485 Configuration
 ^^^^^^^^^^^^^^^^^^^

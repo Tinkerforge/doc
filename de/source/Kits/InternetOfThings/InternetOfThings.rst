@@ -118,8 +118,8 @@ Dazu müssen der :ref:`Brick Daemon <brickd_installation>` und der
 Schließe das Remote Switch Bricklet an den Master Brick an und verbinde es per USB 
 mit dem PC. Anschließend kann über den Brick Viewer bestimmt werden, ob alle 
 Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
-(:ref:`Bricks aktualisieren <brickv_flash_firmware>`,
-:ref:`Bricklets aktualisieren <brickv_flash_plugin>`):
+(:ref:`Bricks aktualisieren <brickv_flash_brick_firmware>`,
+:ref:`Bricklets aktualisieren <brickv_flash_bricklet_plugin>`):
 
 .. image:: /Images/Kits/iot_update.jpg
    :scale: 100 %

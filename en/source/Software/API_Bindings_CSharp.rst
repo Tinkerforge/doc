@@ -90,7 +90,7 @@ like this on Windows::
 
 and the Mono Compiler like this on Linux and Mac OS X::
 
- gmcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
+ mcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
 
 Alternatively you can use the C# library and example in an C# IDE of your choice
 such as Visual Studio or MonoDevelop.

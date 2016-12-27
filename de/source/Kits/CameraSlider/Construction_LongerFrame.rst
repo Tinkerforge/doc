@@ -25,7 +25,7 @@ Beinpaar in der Mitte des verlängerten Rahmens anzubringen, um das Gewicht zu
 tragen. Für ein zusätzliches Beinpaar werden folgende Teile benötigt:
 
 * 1x `MakerBeam 60mm, 8 Stk., schwarz <https://www.tinkerforge.com/de/shop/makerbeam/beams/makerbeam-60mm-8pcs-black.html>`__
-* 1x `M3 6mm Inbus-Schrauben mit quadratischem Kopf, 250 Stück <https://www.tinkerforge.com/de/shop/makerbeam/nuts-bolts/250-m3-square-headed-bolts-with-hex-hole-6mm.html>`__
+* 1x `M3 6mm Innensechskant-Schrauben mit quadratischem Kopf, 250 Stück <https://www.tinkerforge.com/de/shop/makerbeam/nuts-bolts/250-m3-square-headed-bolts-with-hex-hole-6mm.html>`__
 * 1x `Selbstsichernde M3 Muttern, 100 Stk <https://www.tinkerforge.com/de/shop/makerbeam/nuts-bolts/100-m3-self-locking-nuts.html>`__
 * 1x `MakerBeam Eck-Verbinder, 12 Stk. <https://www.tinkerforge.com/de/shop/makerbeam/brackets/makerbeam-corner-brackets-12pcs.html>`__
 * 1x `MakerBeam L-Verbinder, 12 Stk. <https://www.tinkerforge.com/de/shop/makerbeam/brackets/makerbeam-l-brackets-12pcs.html>`__
@@ -116,7 +116,7 @@ Beinpaaren verschraubt werden. Für die drei zusätzliche Beinpaare werden die
 folgenden Teile benötigt:
 
 * 2x `MakerBeam 60mm, 8 Stk., schwarz <https://www.tinkerforge.com/de/shop/makerbeam/beams/makerbeam-60mm-8pcs-black.html>`__
-* 1x `M3 6mm Inbus-Schrauben mit quadratischem Kopf, 250 Stück <https://www.tinkerforge.com/de/shop/makerbeam/nuts-bolts/250-m3-square-headed-bolts-with-hex-hole-6mm.html>`__
+* 1x `M3 6mm Innensechskant-Schrauben mit quadratischem Kopf, 250 Stück <https://www.tinkerforge.com/de/shop/makerbeam/nuts-bolts/250-m3-square-headed-bolts-with-hex-hole-6mm.html>`__
 * 1x `Selbstsichernde M3 Muttern, 100 Stk <https://www.tinkerforge.com/de/shop/makerbeam/nuts-bolts/100-m3-self-locking-nuts.html>`__
 * 1x `MakerBeam Eck-Verbinder, 12 Stk. <https://www.tinkerforge.com/de/shop/makerbeam/brackets/makerbeam-corner-brackets-12pcs.html>`__
 * 1x `MakerBeam L-Verbinder, 12 Stk. <https://www.tinkerforge.com/de/shop/makerbeam/brackets/makerbeam-l-brackets-12pcs.html>`__

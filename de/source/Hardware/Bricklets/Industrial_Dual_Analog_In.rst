@@ -98,7 +98,7 @@ Erster Test
 |test_intro|
 
 |test_connect|.
-Als nächstes muss eine zu messende Gleichspannungsquelle mit dem Bricklet
+Anschließend muss eine zu messende Gleichspannungsquelle mit dem Bricklet
 verbunden werden. Als Test kann der 3,3V Ausgang mit dem IN0- Eingang und der
 GND Pin mit dem IN0+ Eingang verbunden werden.
 

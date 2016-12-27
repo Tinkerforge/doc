@@ -78,8 +78,6 @@ other remote stacks of Bricks and Bricklets.
 
 Advanced users can use the RED Brick with full access to the underlying
 `Debian <http://www.debian.org/>`__ system.
-The expert user can directly access GPIO/SPI/I2C pins for individual
-hardware development over a GPIO FPC header.
 
 An introduction video is available on Youtube:
 
@@ -95,7 +93,7 @@ Property                       Value
 =============================  =================================================================================
 Processor                      Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
 Memory                         512MB DDR3 SDRAM, Micro-SD-Card as Flash
-Connectors                     USB 2.0 Host, Micro-HDMI (type D), Mini-USB, Stack connectors, GPIO FPC connector
+Connectors                     USB 2.0 Host, Micro-HDMI (type D), Mini-USB, Stack connectors
 -----------------------------  ---------------------------------------------------------------------------------
 -----------------------------  ---------------------------------------------------------------------------------
 Dimensions (W x D x H)         40 x 40 x 16mm (1.57 x 1.57 x 0.63")
@@ -410,10 +408,12 @@ the RED Brick is powered down.
 
 If you need the correct time after bootup but you can't guarantee
 or can't obtain Internet access, you can also use the
-:ref:`GPS Bricklet <gps_bricklet>`. You can find a small
-`program on GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
+:ref:`GPS Bricklet <gps_bricklet>` or the :ref:`Real-Time Clock Bricklet
+<real_time_clock_bricklet>`. You can find a small
+`programs on GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs>`__
 that could be uploaded to the RED Brick to sync the Linux system time with
-the GPS time.
+the GPS time (``gps_time`` program) or the Real-Time Clock's time
+(``rtc_time`` program).
 
 .. _red_brick_brickv_settings_file_system:
 
@@ -576,9 +576,9 @@ RS485 Extension
 
 The configuration of the RS485 Extension is the same as it can be
 done through a Master Brick. See the
-:ref:`RS485 Extension documentation <rs485_configuration>`.
+:ref:`RS485 Extension documentation <rs485_extension_configuration>`.
 
-The recommended baudrates to be used on the RED Brick are 500000, 250000,
+The supported baudrates that can be used on the RED Brick are 500000, 250000,
 166666, 125000, 100000, 83333, 71428, 62500, 55555, 50000, 45454 or
 41666 baud.
 
@@ -697,7 +697,7 @@ Python
 ^^^^^^
 
 The webserver on the RED Brick (Apache) uses WSGI
-(`mod_wsgi <https://code.google.com/p/modwsgi/>`__) to interface with
+(`mod_wsgi <https://github.com/GrahamDumpleton/mod_wsgi>`__) to interface with
 Python programs. It is configured to recognize an ``index.py`` as the
 starting point for a WSGI script. All of the common Python web frameworks
 support WSGI. The `Flask framework <http://flask.pocoo.org/>`__ is
@@ -778,7 +778,7 @@ allow to customize your image for your individual requirements.
 
 The image comes with a driver for the GPU and all necessary graphical user
 interface libraries. If enabled, it boots an X server and the
-`LXDE desktop environment <http://www.lxde.org>`__
+`LXDE desktop environment <http://lxde.org/>`__
 with auto login. If the program you run on the RED Brick uses a graphical
 interface it will show up on the desktop. The screen resolution should
 automatically adapt to the preferred resolution of the connected HDMI monitor.
@@ -976,10 +976,14 @@ Several example programs are available on `GitHub
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__:
   If you can't use NTP (i.e. the RED Brick does not have Internet access), you
   can use the GPS Bricklet to set a proper system time.
+* `Set Real-Time Clock Bricklet's time as system time
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/rtc_time>`__:
+  If you can't use NTP (i.e. the RED Brick does not have Internet access), you
+  can use the Real-Time Clock Bricklet Bricklet to set a proper system time.
 * `Synchronize system time via web browser
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sync_time>`__:
-  If you can't use NTP or a GPS Bricklet to set a proper system time, you can
-  manually synchronize it using your web browser.
+  If you can't use NTP or a GPS Bricklet or a Real-Time Clock Bricklet to set a
+  proper system time, you can manually synchronize it using your web browser.
 * `Get humidity callback reading via SMS
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sms_humidity>`__:
   This example demonstrates how Bricklet callback values can be reported
@@ -1122,52 +1126,6 @@ underlying Linux system.
 
 A :ref:`Step-Down Power Supply <step_down_power_supply>` can be put below the
 RED Brick and can power the whole stack.
-
-GPIO Header
-^^^^^^^^^^^
-
-.. note::
-
-   This header is intended for advanced users to connect their own hardware.
-   Currently there is no software support for any of the functions of this
-   GPIO connector.
-
-The RED Brick is equipped with a 21 pin (0.25mm pitch) FPC GPIO connector
-(Molex 502078-2110).
-
-All signals of Port E of the A10s processor are connected to this GPIO
-connector. These signals can be configured for several functions:
-
-General Purpose Input/Output, Transport Stream Controller (TS), Camera Sensor
-Interface (CSI), Serial Peripheral Interface (SPI), Secure Digital Memory 3.0
-Card Controller (SDC), Universal Asynchronous Receiver Transmitter (UART),
-Interrupt capable. Additionally a I2C (TWI) interface is connected to this GPIO.
-
-==== ======== =========================================================
-Pin  Signal   Description
-==== ======== =========================================================
-1    5V       5V Power Supply
-2    3V3      3.3V Power Supply
-3    PE0      TS Clock, CSI Pixel Clock, SPI Chip Select 0, INT14, GPIO
-4    GND      Ground
-5    PE1      TS Error, CSI Sensor Clock, SPI Clock, INT15, GPIO
-6    GND      Ground
-7    PE2      TS Sync, CSI Horizontal Sync, SPI MOSI, GPIO
-8    GND      Ground
-9    PE3      TS Data Valid, CSI Vertical Sync, SPI MISO, GPIO
-10   GND      Ground
-11   PE4      TS Data 0, CSI Data 0, SD Controller Data 0, GPIO
-12   PE5      TS Data 1, CSI Data 1, SD Controller Data 1, GPIO
-13   PE6      TS Data 2, CSI Data 2, SD Controller Data 2, GPIO
-14   PE7      TS Data 3, CSI Data 3, SD Controller Data 3, GPIO
-15   PE8      TS Data 4, CSI Data 4, SD Controller Command, GPIO
-16   PE9      TS Data 5, CSI Data 5, SD Controller Clock, GPIO
-17   PE10     TS Data 6, CSI Data 6, UART TX, GPIO
-18   PE11     TS Data 7, CSI Data 7, UART RX, GPIO
-19   GND      Ground
-20   PB15     I2C Clock (with 2k2 Pullup), GPIO
-21   PB16     I2C Data (with 2k2 Pullup), GPIO
-==== ======== =========================================================
 
 
 Power Supply

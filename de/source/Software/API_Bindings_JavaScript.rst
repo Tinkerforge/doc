@@ -152,7 +152,8 @@ Firmware Version 2.2.0) unterstützt. Sie sind allerdings standardmäßig nicht
 aktiviert und müssen erst konfiguriert werden:
 
 * :ref:`Brick Daemon: WebSockets <brickd_websockets>`
-* :ref:`Ethernet Extension: WebSockets <ethernet_configuration_websockets>`
+* :ref:`Ethernet Extension: WebSockets <ethernet_extension_websockets>`
+* :ref:`WIFI Extension 2.0: Ports (WebSocket) <wifi_v2_extension_ports>`
 
 Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks
 getestet. Dafür muss zuerst die ``ExampleConfiguration.html`` Datei aus dem

@@ -132,7 +132,7 @@ Erster Test
 |test_tab|
 
 .. image:: /Images/Bricks/imu_brickv.jpg
-   :scale: 60 %
+   :scale: 100 %
    :alt: IMU Brick im Brick Viewer
    :align: center
    :target: ../../_images/Bricks/imu_brickv.jpg

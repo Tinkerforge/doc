@@ -14,7 +14,7 @@ Distributionen kann er aus dem Quelltext installiert werden.
 Debian Package
 --------------
 
-Als erstes muss das Brick Daemon ``.deb`` von
+Als erstes muss das passende Brick Daemon ``.deb`` von
 der :ref:`Download-Seite <downloads_tools>` heruntergeladen werden.
 Nach einem Rechtsklick auf die Datei kann "Open with GDebi Package Installer"
 ausgewählt werden:
@@ -62,6 +62,10 @@ werden::
  # On 32bit x86
  wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest_i386.deb
  sudo dpkg -i brickd_linux_latest_i386.deb
+
+ # On RED Brick
+ wget http://download.tinkerforge.com/tools/brickd/linux/brickd_linux_latest+redbrick_armhf.deb
+ sudo dpkg -i brickd_linux_latest+redbrick_armhf.deb
 
 Der Brick Daemon wird nach der Installation und beim Hochfahren des Systems
 automatisch gestartet.

@@ -41,4 +41,9 @@ Click on "Next" to start the installation process.
    :target: ../_images/Screenshots/brickv_windows_2.jpg
 
 Next the installation path can be configured.
-Change it if necessary and click "Install" to start the installation process.
+Change it if necessary, but ensure that the path contains ASCII characters only,
+especially avoid umlauts.
+Brick Viewer cannot be started if non-ASCII characters are in the installation
+path, due to a bug in the Python ``pywintypes`` module.
+
+Finally click "Install" to start the installation process.

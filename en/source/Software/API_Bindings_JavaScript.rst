@@ -150,7 +150,8 @@ Ethernet Extension (since Master Brick firmware version 2.2.0), but they are
 disabled by default and need to be configured first:
 
 * :ref:`Brick Daemon: WebSockets <brickd_websockets>`
-* :ref:`Ethernet Extension: WebSockets <ethernet_configuration_websockets>`
+* :ref:`Ethernet Extension: WebSockets <ethernet_extension_websockets>`
+* :ref:`WIFI Extension 2.0: Ports (WebSocket) <wifi_v2_extension_ports>`
 
 As an example let's test the configuration example for the Stepper Brick.
 For this copy the ``ExampleConfiguration.html`` file from the

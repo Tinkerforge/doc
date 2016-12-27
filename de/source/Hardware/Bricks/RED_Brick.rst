@@ -81,9 +81,7 @@ dass auch entfernte Stapel von Bricks und Bricklets vom RED Brick gesteuert
 werden können.
 
 Fortgeschrittene Nutzer können den Brick mit vollem Zugriff auf dem
-zugrundeliegenden `Debian <http://www.debian.org>`__ System nutzen. Ein GPIO FPC
-Steckverbinder ermöglicht den Zugriff auf ausgewählte Prozessorsignale und kann
-genutzt werden um eigene Entwicklungen anzubinden.
+zugrundeliegenden `Debian <http://www.debian.org>`__ System nutzen.
 
 Ein Einführungsvideo gibt es auf Youtube:
 
@@ -99,7 +97,7 @@ Eigenschaft                       Wert
 ================================  ======================================================================================
 Prozessor                         Allwinner A10s, Cortex A8 1GHz, 3D Mali400 GPU, NEON
 Speicher                          512MB DDR3 SDRAM, Micro-SD-Karte als Flash Speicher
-Anschlüsse                        USB 2.0 Host, Micro-HDMI (Typ D), Mini-USB, Stapel Verbinder, GPIO FPC Steckverbinder
+Anschlüsse                        USB 2.0 Host, Micro-HDMI (Typ D), Mini-USB, Stapelverbinder
 --------------------------------  --------------------------------------------------------------------------------------
 --------------------------------  --------------------------------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 16mm (1,57 x 1,57 x 0,63")
@@ -422,10 +420,12 @@ wenn der RED Brick das nächste mal hochfährt.
 
 Falls die Zeit nach dem Booten immer vorhanden sein muss, ein Verbindung zum
 Internet aber nicht garantiert werden kann, dann kann auch das
-:ref:`GPS Bricklet <gps_bricklet>` benutzt werden. Dazu muss nur ein kleines
-`Programm von GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs/gps_time>`__
+:ref:`GPS Bricklet <gps_bricklet>` oder das :ref:`Real-Time Clock Bricklet
+<real_time_clock_bricklet>` benutzt werden. Dazu muss nur ein entsprechendes
+kleines `Programm von GitHub <https://github.com/Tinkerforge/red-brick/tree/master/programs>`__
 heruntergeladen und auf den RED Brick geladen werden, um die Uhrzeit
-mittels GPS Uhrzeit zu synchronisieren.
+mittels GPS Uhrzeit (``gps_time`` Programm) oder Real-Time Clock Bricklet
+Uhrzeit (``rtc_time`` Programm) zu synchronisieren.
 
 .. _red_brick_brickv_settings_file_system:
 
@@ -590,11 +590,11 @@ RS485 Extension
    :align: center
 
 Die Konfiguration der RS485 Extension ist identisch zu der mit einem Master
-Brick. Siehe :ref:`RS485 Extension Dokumentation <rs485_configuration>`.
+Brick. Siehe :ref:`RS485 Extension Dokumentation <rs485_extension_configuration>`.
 
-Wir empfehlen Baudraten von 500000, 250000, 166666, 125000, 100000, 83333,
-71428, 62500, 55555, 50000, 45454 oder 41666 Baud bei der Nutzung eines RED
-Bricks.
+Folgende Baudraten werden bei der Nutzung eines RED Bricks unterstüzt: 500000,
+250000, 166666, 125000, 100000, 83333, 71428, 62500, 55555, 50000, 45454 und
+41666 Baud.
 
 .. _red_brick_brickv_import_export_tab:
 
@@ -706,8 +706,8 @@ werden und nicht mit localhost!
 Python
 ^^^^^^
 Auf dem Webserver (Apache) des RED Bricks wird WSGI
-(`mod_wsgi <https://code.google.com/p/modwsgi/>`__) von Python genutzt um
-Webseiten darzustellen. Dieser ist konfiguriert um eine ``index.py`` als
+(`mod_wsgi <https://github.com/GrahamDumpleton/mod_wsgi>`__) von Python genutzt
+um Webseiten darzustellen. Dieser ist konfiguriert um eine ``index.py`` als
 Startpunkt für ein WSGI Skript zu nutzen. Alle verbreiteten Python Web
 Frameworks unterstützen WSGI. Das `Flask framework <http://flask.pocoo.org/>`__
 ist auf dem RED Brick vorinstalliert (beinhaltet
@@ -793,7 +793,7 @@ Image an verschiedenen Anforderungen anzupassen.
 Das Image verfügt über GPU Treiber und besitzt alle notwendigen
 Bibliotheken für die Nutzung von grafischen Nutzerschnittstellen (GUIs).
 Falls aktiviert, startet ein X Server während des Bootvorgangs und das
-`LXDE Desktop Environment <http://www.lxde.org>`__ wird mit Autologin gestartet.
+`LXDE Desktop Environment <http://lxde.org/>`__ wird mit Autologin gestartet.
 Wenn das eigene Programm eine grafische Nutzerschnittstelle nutzt, so wird
 diese auf dem Desktop angezeigt. Die Bildschirmauflösung passt sich der
 Voreinstellung des angeschlossenen HDMI Monitors an. Über LXDE kann diese aber
@@ -999,11 +999,17 @@ stehen verschiedene Beispielprogramme zur Verfügung:
   Wenn NTP nicht verwendet werden kann, um die Systemzeit zu synchronisieren,
   z.B. wegen fehlender Internetanbindung, dann kann alternativ dieses Programm
   verwendet werden, um die Systemzeit mit dem GPS Bricklet zu synchronisieren.
+* `Real-Time Clock Bricklets Uhrzeit als Systemzeit verwenden
+  <https://github.com/Tinkerforge/red-brick/tree/master/programs/rtc_time>`__:
+  Wenn NTP nicht verwendet werden kann, um die Systemzeit zu synchronisieren,
+  z.B. wegen fehlender Internetanbindung, dann kann alternativ dieses Programm
+  verwendet werden, um die Systemzeit mit dem Real-Time Clock Bricklet zu
+  synchronisieren.
 * `Systemzeit über Webbrowser synchronisieren
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sync_time>`__:
-  Wenn weder NTP noch GPS zur Synchrionisierung der Systemzeit genutzt werden
-  kann, dann kann über dieses Programm die Systemzeit vom Webbrowser aus
-  synchronisiert werden.
+  Wenn weder NTP noch GPS, noch Real-Time Clock Bricklet zur Synchrionisierung
+  der Systemzeit genutzt werden kann, dann kann über dieses Programm die
+  Systemzeit vom Webbrowser aus synchronisiert werden.
 * `Humidity Callback per SMS erhalten
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sms_humidity>`__:
   Dieses Beispiel zeigt, wie Bricklet Callback-Werte per SMS weiter geleitet
@@ -1149,53 +1155,6 @@ Die Ethernet Extension taucht als normale Ethernet-Schnittstelle des Linux
 Systems auf. Über eine :ref:`Step-Down Power Supply <step_down_power_supply>`
 kann der RED Brick und die anderen Module des Stapels mit Strom versorgt werden.
 Dazu muss dieser nur unter den RED Brick gesteckt werden.
-
-GPIO Anschluss
-^^^^^^^^^^^^^^
-
-.. note::
-
-    Dieser Anschluss ist für fortgeschrittene Nutzer gedacht um eigene Hardware
-    anzuschließen. Aktuell bieten wir keine Softwareunterstützung zur Nutzung
-    dieses Anschlusses.
-
-Der RED Brick ist mit einem 21 Pin (0,25mm Pitch) FPC GPIO Anschluss
-ausgestattet (Molex 502078-2110).
-
-Alle Signale des A10s Prozessors auf Port E sind mit diesem GPIO Anschluss
-verbunden. Diese können für verschiedene Funktionen konfiguriert werden:
-
-General Purpose Input/Output, Transport Stream Controller (TS), Camera Sensor
-Interface (CSI), Serial Peripheral Interface (SPI), Secure Digital Memory 3.0
-Card Controller (SDC), Universal Asynchronous Receiver Transmitter (UART),
-Interrupt. Zusätzlich befindet sich ein I2C (TWI) Interface auf diesen
-Anschluss.
-
-==== ======== =========================================================
-Pin  Signal   Beschreibung
-==== ======== =========================================================
-1    5V       5V Stromversorgung
-2    3V3      3.3V Stromversorgung
-3    PE0      TS Clock, CSI Pixel Clock, SPI Chip Select 0, INT14, GPIO
-4    GND      Masse (Ground)
-5    PE1      TS Error, CSI Sensor Clock, SPI Clock, INT15, GPIO
-6    GND      Masse (Ground)
-7    PE2      TS Sync, CSI Horizontal Sync, SPI MOSI, GPIO
-8    GND      Masse (Ground)
-9    PE3      TS Data Valid, CSI Vertical Sync, SPI MISO, GPIO
-10   GND      Masse (Ground)
-11   PE4      TS Data 0, CSI Data 0, SD Controller Data 0, GPIO
-12   PE5      TS Data 1, CSI Data 1, SD Controller Data 1, GPIO
-13   PE6      TS Data 2, CSI Data 2, SD Controller Data 2, GPIO
-14   PE7      TS Data 3, CSI Data 3, SD Controller Data 3, GPIO
-15   PE8      TS Data 4, CSI Data 4, SD Controller Command, GPIO
-16   PE9      TS Data 5, CSI Data 5, SD Controller Clock, GPIO
-17   PE10     TS Data 6, CSI Data 6, UART TX, GPIO
-18   PE11     TS Data 7, CSI Data 7, UART RX, GPIO
-19   GND      Masse (Ground)
-20   PB15     I2C Takt (mit 2k2 Pullup), GPIO
-21   PB16     I2C Daten (mit 2k2 Pullup), GPIO
-==== ======== =========================================================
 
 
 Stromversorgung

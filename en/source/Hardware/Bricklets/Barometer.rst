@@ -93,7 +93,7 @@ If everything went as expected you can now see the air pressure in mbar
 and a graph that shows the air pressure over time.
 
 .. image:: /Images/Bricklets/bricklet_barometer_brickv.jpg
-   :scale: 70 %
+   :scale: 100 %
    :alt: Barometer Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_barometer_brickv.jpg

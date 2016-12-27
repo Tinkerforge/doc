@@ -26,11 +26,6 @@ distribution does not have a package for the ``arm-none-eabi-gcc`` you
 can use the ``gcc-arm-embedded`` compiler 
 `from launchpad <https://launchpad.net/gcc-arm-embedded>`__.
 
-For development on Windows or Mac OS X we recommend that you use a VirtualBox
-image with a shared ``tf/`` directory. Then you can develop on your favorite
-OS with your IDE etc and still use all of the Linux specific infrastructure 
-that is needed for our development environment.
-
 If you have an environment set-up with the script above, you can:
 
 * Modify and compile Brick firmwares
@@ -51,7 +46,7 @@ To compile a Brick firmware you first have to link in the ``bricklib``
 and generate the ``Makefile`` (e.g. for the Master Brick)::
 
  cd ~/tf/master-brick/software/src/
- ln -s ../../../bricklib/ .
+ ln -sf ../../../bricklib/ .
  cd ~/tf/master-brick/software/
  ./generate_makefile
 
@@ -62,7 +57,7 @@ Then you can build the source with a normal ``make`` call::
 
 The build firmware will be available in the ``software/build/`` directory.
 In this case ``master-brick.bin``. It can be flashed to the Brick with the
-:ref:`Brick Viewer <brickv_flash_firmware>`. Just select "Custom..." 
+:ref:`Brick Viewer <brickv_flash_brick_firmware>`. Just select "Custom..."
 in the Updates/Flashing dialog and pick the newly compiled firmware file.
 
 Bricklet Plugins
@@ -73,8 +68,8 @@ and the ``brickletlib`` and generate the ``Makefile``
 (e.g. for the Master Brick)::
 
  cd ~/tf/temperature-bricklet/software/src/
- ln -s ../../../bricklib/ .
- ln -s ../../../brickletlib/ .
+ ln -sf ../../../bricklib/ .
+ ln -sf ../../../brickletlib/ .
  cd ~/tf/temperature-bricklet/software/
  ./generate_makefile
 
@@ -85,7 +80,7 @@ Then you can build the source with a normal ``make`` call::
 
 The build firmware will be available in the ``software/build/`` directory.
 In this case ``temperature-bricklet.bin``. It can be flashed to the Bricklet 
-with the :ref:`Brick Viewer <brickv_flash_firmware>`. Just select "Custom..." 
+with the :ref:`Brick Viewer <brickv_flash_brick_firmware>`. Just select "Custom..."
 in the Updates/Flashing dialog and pick the newly compiled firmware file.
 
 APIs/Bindings

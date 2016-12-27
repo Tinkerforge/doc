@@ -42,5 +42,11 @@ Typischerweise sollen alle Schritte ausgeführt werden. Ein Klick auf
    :target: ../_images/Screenshots/brickv_windows_2.jpg
 
 Als nächstes wird der Installationspfad abgefragt. Dieser kann
-abgeändert werden wenn gewünscht. Die Installation wird mit
-einem Klick auf "Install" gestartet.
+abgeändert werden wenn gewünscht.
+Dabei dürfen allerdings nur ASCII Zeichen verwendet werden, insbesondere können
+keine Umlaute verwendet werden.
+Brick Viewer kann, bedingt durch einen Bug im Python ``pywintypes`` Modul,
+nicht gestartet werden, wenn er in einem Pfad mit nicht-ASCII Zeichen
+installiert wurde.
+
+Die Installation wird mit einem Klick auf "Install" gestartet.

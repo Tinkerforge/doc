@@ -14,7 +14,7 @@ Aktualisieren auf Protokoll 2.0 ist sehr einfach. Zuerst muss die
 installiert werden.
 
 Danach sollten die Bricks aktualisiert werden, der Aktualisierungsprozess
-ist :ref:`hier <brickv_flash_firmware>` beschrieben.
+ist :ref:`hier <brickv_flash_brick_firmware>` beschrieben.
 
 Das Aktualisieren der Bricklets kann automatisiert passieren. Dazu kann
 ein Brick mit nicht-aktualisierten Bricklets bestückt werden. Im Brick Viewer
@@ -30,7 +30,7 @@ Knopf angeklickt werden.
 
 Falls das automatische aktualisieren nicht funktioniert, können die
 Bricklets natürlich auch noch auf die 
-:ref:`herkömmliche Art und Weise <brickv_flash_plugin>` aktualisiert werden.
+:ref:`herkömmliche Art und Weise <brickv_flash_bricklet_plugin>` aktualisiert werden.
 
 Am Ende sollte jede Versionsnummer mit einer "2" beginnen.
 

@@ -128,12 +128,21 @@ library and then copy the image buffer to the Bricklet.
 
 We provide examples for
 
+* `C/C++ <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/c/example_scribble.c>`__
+  (with `libgd <https://libgd.github.io/>`__),
 * `C# <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/csharp/ExampleScribble.cs>`__,
 * `Java <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/java/ExampleScribble.java>`__,
 * `JavaScript (Node.js) <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/javascript/ExampleScribble.js>`__
-  (with `gm <https://www.npmjs.com/package/gm>`__ and `get-pixels <https://www.npmjs.com/package/get-pixels>`__) and
+  (with `gm <https://www.npmjs.com/package/gm>`__ and `get-pixels <https://www.npmjs.com/package/get-pixels>`__),
+* `Perl <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/perl/example_scribble.pl>`__
+  (with `GD <http://search.cpan.org/~lds/GD-2.56/lib/GD.pm>`__),
+* `PHP <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/php/ExampleScribble.php>`__
+  (with `GD <http://php.net/manual/en/book.image.php>`__),
 * `Python <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/python/example_scribble.py>`__
-  (with `PIL <https://python-pillow.github.io/>`__).
+  (with `PIL <http://python-pillow.org/>`__),
+* `Ruby <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/ruby/example_scribble.rb>`__
+  (with `rgd <http://www.rubydoc.info/gems/rgd>`__) and
+* `Visual Basic .NET <https://raw.githubusercontent.com/Tinkerforge/oled-64x48-bricklet/master/software/examples/vbnet/ExampleScribble.vb>`__.
 
 .. _oled_64x48_bricklet_font:
 

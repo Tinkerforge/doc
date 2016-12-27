@@ -71,29 +71,40 @@ Dokumentation <red_brick_images>` enthält mehr Details über die Images.
  :delim: |
  :widths: 17, 32, 5, 5, 8
 
- RED Brick Image | `Image <http://download.tinkerforge.com/red_images/full/red_image_1_7_full.img.7z>`__ | 1.7 | `Archiv <http://download.tinkerforge.com/red_images/full/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_full>`__
+ RED Brick Image | `Image <http://download.tinkerforge.com/red_images/full/red_image_1_8_full.img.7z>`__ | 1.8 | `Archiv <http://download.tinkerforge.com/red_images/full/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/red-brick/master/image/changelog_full>`__
 
 
-.. _downloads_firmwares:
+.. _downloads_brick_firmwares:
 
 Brick Firmwares
 ---------------
 
 Brick Firmwares können mit dem Brick Viewer aktualisiert werden (siehe
-:ref:`hier <brickv_flash_firmware>`).
+:ref:`hier <brickv_flash_brick_firmware>`).
 
-.. include:: Downloads_firmwares.table
+.. include:: Downloads_brick_firmwares.table
 
 
-.. _downloads_plugins:
+.. _downloads_bricklet_plugins:
 
 Bricklet Plugins
 ----------------
 
 Bricklet Plugins können mit dem Brick Viewer aktualisiert werden (siehe
-:ref:`hier <brickv_flash_plugin>`).
+:ref:`hier <brickv_flash_bricklet_plugin>`).
 
-.. include:: Downloads_plugins.table
+.. include:: Downloads_bricklet_plugins.table
+
+
+.. _downloads_extension_firmwares:
+
+Master Extension Firmwares
+--------------------------
+
+Master Extension Firmwares können mit dem Brick Viewer aktualisiert werden
+(siehe :ref:`hier <brickv_flash_extension_firmware>`).
+
+.. include:: Downloads_extension_firmwares.table
 
 
 .. _downloads_demos:

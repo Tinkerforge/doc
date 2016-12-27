@@ -11,11 +11,15 @@ Ethernet Master Extension
 
 	{% tfgallery %}
 
-	Extensions/extension_ethernet_tilted_[?|?].jpg     Ethernet Extension
-	Extensions/extension_ethernet_cable_[100|600].jpg  Ethernet Extension with Ethernet cable
-	Extensions/extension_ethernet_side_[100|600].jpg   Ethernet Extension side view
-	Extensions/extension_ethernet_bottom_[?|?].jpg     Ethernet Extension bottom
-	Extensions/extension_ethernet_top_[?|?].jpg        Ethernet Extension top
+	Extensions/extension_ethernet11_w_and_wo_poe_[100|800].jpg  Ethernet Extension with and without PoE
+	Extensions/extension_ethernet11_w_poe_tilted_[?|?].jpg      Ethernet Extension with PoE
+	Extensions/extension_ethernet11_wo_poe_tilted_[?|?].jpg     Ethernet Extension without PoE
+	Extensions/extension_ethernet11_w_poe_stack_[?|?].jpg       Ethernet Extension with PoE on top of Master Brick
+	Extensions/extension_ethernet11_wo_poe_stack_[?|?].jpg      Ethernet Extension without PoE on top of Master Brick
+	Extensions/extension_ethernet11_w_poe_top_[?|?].jpg         Ethernet Extension with PoE top
+	Extensions/extension_ethernet11_wo_poe_top_[?|?].jpg        Ethernet Extension without PoE top
+	Extensions/extension_ethernet11_w_poe_bottom_[?|?].jpg      Ethernet Extension with PoE bottom
+	Extensions/extension_ethernet11_wo_poe_bottom_[?|?].jpg     Ethernet Extension without PoE bottom
 
 	{% tfgalleryend %}
 
@@ -27,7 +31,6 @@ Features
 * Integrated PoE Power Supply (PD Class 0 for IEEE 802.3af)
 
  * Can power a Stack via Ethernet Cable
-
 
 
 Description
@@ -95,10 +98,10 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
 
 
-.. _ethernet_configuration:
+.. _ethernet_extension_configuration:
 
 Ethernet Configuration
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 The Ethernet Extension can be configured in two different modes:
 DHCP or static IP. If you use a static IP you have to enter 
@@ -118,10 +121,10 @@ After configuring the Ethernet Extension you have to press the button
    :target: ../../_images/Extensions/extension_ethernet_brickv.jpg
 
 
-.. _ethernet_configuration_websockets:
+.. _ethernet_extension_websockets:
 
 WebSockets
-""""""""""
+^^^^^^^^^^
 
 The Ethernet Extension supports `WebSockets
 <https://en.wikipedia.org/wiki/WebSocket>`__ since Master Brick firmware
@@ -132,10 +135,10 @@ WebSockets are used by the browser version of the :ref:`JavaScript bindings
 <api_bindings_javascript>` to control Bricks and Bricklets.
 
 
-.. _ethernet_configuration_authentication:
+.. _ethernet_extension_authentication:
 
 Authentication
-""""""""""""""
+^^^^^^^^^^^^^^
 
 The Ethernet Extension supports authentication since Master Brick firmware
 version 2.2.0. Authentication is disabled by default. Tick the "Use
@@ -150,7 +153,7 @@ for more information.
 
 
 PoE Power Supply
-^^^^^^^^^^^^^^^^
+----------------
 
 PoE injectors can be used to power Bricks and Bricklets over Ethernet.
 The Ethernet Extension will power the complete stack.

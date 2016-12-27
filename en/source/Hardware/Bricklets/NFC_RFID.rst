@@ -121,7 +121,7 @@ structure to not accidentally lock a tag.
 * Sector 0 (pages 0-3) should not be overwritten.
 * The last page in every sector controls the authentication keys for this sector (page 7, 11, 15, ..). Do not overwrite these pages if you don't know what you are doing.
 
-`Adafruit <http://www.adafruit.com>`__ has a quite good description of the structure: 
+`Adafruit <https://www.adafruit.com>`__ has a quite good description of the structure:
 `Link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
 
 **NFC Forum Type 1:**
@@ -232,7 +232,7 @@ If everything went as expected you can now scan for tags and read/write
 pages.
 
 .. image:: /Images/Bricklets/bricklet_nfc_rfid_brickv.jpg
-   :scale: 70 %
+   :scale: 100 %
    :alt: NFC/RFID Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_nfc_rfid_brickv.jpg

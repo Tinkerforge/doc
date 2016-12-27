@@ -91,7 +91,7 @@ Technische Spezifikation
 Eigenschaft                                                     Wert
 ==============================================================  ============================================================
 Beschleunigungs-, Magnetfeld-, Winkelgeschwindigkeitsauflösung  14Bit, 16Bit, 16Bit
-Auflösung der Gier- (Heading), Roll-, Nick- (Pitch) Winkel      0,01° Schritte
+Auflösung der Gier- (Heading), Roll-, Nick- (Pitch) Winkel      0,0625° Schritte
 Quaternionenauflösung                                           16Bit
 Abtastrate                                                      100Hz
 --------------------------------------------------------------  ------------------------------------------------------------

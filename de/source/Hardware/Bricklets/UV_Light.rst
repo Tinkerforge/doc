@@ -69,7 +69,7 @@ Ressourcen
 ----------
 
 * VEML6070 Datenblatt (`Download <https://github.com/Tinkerforge/uv-light-bricklet/raw/master/datasheets/veml6070.pdf>`__)
-* Schaltplan (`Download <https://github.com/Tinkerforge/uv-light-bricklet/raw/master/hardware/thermocouple-schematic.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/uv-light-bricklet/raw/master/hardware/uv-light-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/uv_light_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/uv-light-bricklet/zipball/master>`__)
 

@@ -93,7 +93,7 @@ Wenn alles wie erwartet funktioniert wird der Luftdruck in mbar angezeigt.
 Der Graph gibt den zeitlichen Verlauf des Luftdrucks wieder.
 
 .. image:: /Images/Bricklets/bricklet_barometer_brickv.jpg
-   :scale: 70 %
+   :scale: 100 %
    :alt: Barometer Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_barometer_brickv.jpg
@@ -131,7 +131,7 @@ Wert aus QFE Wert approximiert werden::
 * ``Tfe`` ist die Temperatur am Messort in °C
 * ``H`` ist die Höhe des Messortes in Metern
 
-`Hier <http://rechneronline.de/barometer/>`__ gibt es einen Online-Rechner der
+`Hier <https://rechneronline.de/barometer/>`__ gibt es einen Online-Rechner der
 diese Formel berechnet. Die Höhe des Messortes kann leicht mit `Google Maps
 <http://www.mapcoordinates.net/de>`__ bestimmt werden.
 

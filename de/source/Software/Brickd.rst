@@ -60,6 +60,15 @@ Verbindungen.
   Meldungen im Windows Event Log an.
 * Linux und Mac OS X: Nachrichten werden nach ``/var/log/brickd.log`` geschrieben.
 
+Falls der Standard Logging Einstellung nicht genug Details ausgibt, um ein
+Problem debuggen zu können, dann kann das Debug Log Level aktiviert werden.
+Dies ist standardmäßig nicht aktiviert, da es die Menge der ausgegebenen
+Lognachrichten stark erhöht, so dass es einen Einfluss auf den
+Nachrichtendurchsatz von brickd haben kann.
+
+* Windows: Das ``logviewer.exe`` Tool stellt ebenfalls Live Debug Log Ansicht
+  bereit, die das vollständige Debug Log eines laufenden brickd anzeigt.
+
 
 Konfiguration
 -------------
@@ -185,7 +194,6 @@ Allgemein:
 * ``--version`` zeigt Versionsnummer an
 * ``--check-config`` prüft Konfigurationsdatei auf Fehler
 * ``--debug`` setzt alle Log Level auf Debug
-* ``--libusb-debug`` setzt libusb Log Level auf Debug
 
 Spezifisch für Windows:
 

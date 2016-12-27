@@ -28,11 +28,6 @@ ausgetauscht werden. Falls die Distribution kein Paket für den
 `von Launchpad <https://launchpad.net/gcc-arm-embedded>`__ genutzt
 werden.
 
-Für die Entwicklung auf Windows und Mac OS X empfehlen wir ein VirtualBox
-Image mit einem geteilten ``tf/`` Verzeichnis. Mit diesem Aufbau
-ist es möglich auf Windows und Mac OS X zu entwickeln und gleichzeitig
-unsere Linux-spezifische Infrastruktur zu nutzen.
-
 Mit einer Umgebung welche mit dem obigen Skript aufgesetzt ist, kann man:
 
 * Brick Firmwares verändern und kompilieren
@@ -54,7 +49,7 @@ gesetzt werden sowie eine ``Makefile`` generiert werden (als
 Beispiel für den Master Brick)::
 
  cd ~/tf/master-brick/software/src/
- ln -s ../../../bricklib/ .
+ ln -sf ../../../bricklib/ .
  cd ~/tf/master-brick/software/
  ./generate_makefile
 
@@ -65,7 +60,7 @@ Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 
 Die gebaute Firmware liegt im ``software/build/`` Verzeichnis. In diesem
 Fall ``master-brick.bin``. Sie kann mit dem 
-:ref:`Brick Viewer <brickv_flash_firmware>` auf ein Brick geflasht werden.
+:ref:`Brick Viewer <brickv_flash_brick_firmware>` auf ein Brick geflasht werden.
 Einfach auf "Custom..." im Updates/Flashing-Dialog klicken und die frisch
 kompilierte Firmware auswählen.
 
@@ -78,8 +73,8 @@ und ``brickletlib`` gesetzt werden sowie eine ``Makefile`` generiert werden
 (als Beispiel für das Temperature Bricklet)::
 
  cd ~/tf/temperature-bricklet/software/src/
- ln -s ../../../bricklib/ .
- ln -s ../../../brickletlib/ .
+ ln -sf ../../../bricklib/ .
+ ln -sf ../../../brickletlib/ .
  cd ~/tf/temperature-bricklet/software/
  ./generate_makefile
 
@@ -91,7 +86,7 @@ Dann kann der Quellcode mit einem narmalen ``make`` Aufruf gebaut werden::
 
 Das gebaute Plugin liegt im ``software/build/`` Verzeichnis. In diesem
 Fall ``temperature-bricklet.bin``. Es kann mit dem 
-:ref:`Brick Viewer <brickv_flash_firmware>` auf ein Bricklet geflasht werden.
+:ref:`Brick Viewer <brickv_flash_brick_firmware>` auf ein Bricklet geflasht werden.
 Einfach auf "Custom..." im Updates/Flashing-Dialog klicken und das frisch
 kompilierte Plugin auswählen.
 
