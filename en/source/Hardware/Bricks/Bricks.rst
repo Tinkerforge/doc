@@ -43,6 +43,6 @@ Bricks
        :scale: 100 %
        :alt: IMU Brick 2.0
        :align: center
-       :target:../../_images/Bricks/brick_imu_v2_tilted1_800.jpg
+       :target: ../../_images/Bricks/brick_imu_v2_tilted1_800.jpg
 
 .. include:: Bricks.table
