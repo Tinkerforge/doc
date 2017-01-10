@@ -67,11 +67,11 @@ Bricks
        :align: center
        :target: _images/Bricks/brick_servo_tilted_front_800.jpg
 
-    - .. image:: /Images/Bricks/brick_imuv2_tilted1_front_100.jpg
+    - .. image:: /Images/Bricks/brick_imu_v2_tilted1_100.jpg
        :scale: 100 %
        :alt: IMU Brick 2.0
        :align: center
-       :target: _images/Bricks/brick_imuv2_tilted1_front_800.jpg
+       :target: _images/Bricks/brick_imu_v2_tilted1_800.jpg
 
 
 Bricks sind 4 x 4cm (1,57 x 1,57") große Module, die über einen Mini-USB 
