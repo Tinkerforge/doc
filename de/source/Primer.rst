@@ -192,11 +192,11 @@ Master Extensions
        :align: center
        :target: _images/Extensions/extension_ethernet_tilted_800.jpg
 
-    - .. image:: /Images/Extensions/extension_rs485_tilted_100.jpg
+    - .. image:: /Images/Extensions/extension_rs485_v11_tilted_100.jpg
        :scale: 100 %
        :alt: RS485 Extension
        :align: center
-       :target: _images/Extensions/extension_rs485_tilted_800.jpg
+       :target: _images/Extensions/extension_rs485_v11_tilted_800.jpg
 
     - .. image:: /Images/Extensions/extension_wifi2_tilted_100.jpg
        :scale: 100 %

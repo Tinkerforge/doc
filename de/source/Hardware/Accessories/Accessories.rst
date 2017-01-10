@@ -12,6 +12,6 @@ Zubehör
        :scale: 100 %
        :alt: DC Jack Adapter
        :align: center
-       :target: _images/Accessories/dc_jack_adapter_tilted_800.jpg
+       :target: ../../_images/Accessories/dc_jack_adapter_tilted_800.jpg
 
 .. include:: Accessories.table

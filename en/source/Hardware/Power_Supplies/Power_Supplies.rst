@@ -12,6 +12,6 @@ Power Supplies
        :scale: 100 %
        :alt: Step-Down Power Supply
        :align: center
-       :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
+       :target: ../../_images/Power_Supplies/powersupply_tilted_front_800.jpg
 
 .. include:: Power_Supplies.table
