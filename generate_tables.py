@@ -1005,6 +1005,30 @@ def make_hardware_devices_toctree(device_infos):
 
     return prefix + '\n'.join(lines) + '\n'
 
+def make_hardware_devices_table(device_infos):
+    table_head = {
+    'en': """
+.. csv-table::
+   :header: "Name", "Description"
+   :widths: 25, 75
+
+""",
+    'de': """
+.. csv-table::
+   :header: "Name", "Beschreibung"
+   :widths: 25, 75
+
+"""
+}
+    row = '   ":ref:`{0} <{1}>`", "{2}"'
+    rows = []
+
+    for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
+        if device_info.is_documented:
+            rows.append(row.format(device_info.short_display_name, device_info.ref_name, device_info.description[lang].replace('"', "inch")))
+
+    return table_head[lang] + '\n'.join(rows) + '\n'
+
 def make_software_devices_toctree(bindings_info, device_infos, category):
     prefix = """
 .. toctree::
@@ -1101,6 +1125,21 @@ def generate(path):
 
     print('Generating Accessories.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories.toctree'), make_hardware_devices_toctree(accessory_infos))
+
+    print('Generating Bricks.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', 'Bricks.table'), make_hardware_devices_table(brick_infos))
+
+    print('Generating Bricklets.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', 'Bricklets.table'), make_hardware_devices_table(bricklet_infos))
+
+    print('Generating Master_Extensions.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Master_Extensions', 'Master_Extensions.table'), make_hardware_devices_table(extension_infos))
+
+    print('Generating Power_Supplies.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Power_Supplies', 'Power_Supplies.table'), make_hardware_devices_table(power_supply_infos))
+
+    print('Generating Accessories.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories.table'), make_hardware_devices_table(accessory_infos))
 
     for brick_info in brick_infos:
         if not brick_info.has_bindings:
