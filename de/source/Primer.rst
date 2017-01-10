@@ -43,11 +43,11 @@ Bricks
 
  .. list-table::
 
-  * - .. image:: /Images/Bricks/brick_master_tilted_front_100.jpg
+  * - .. image:: /Images/Bricks/brick_master21_tilted_front_100.jpg
        :scale: 100 %
        :alt: Master Brick
        :align: center
-       :target: _images/Bricks/brick_master_tilted_front_800.jpg
+       :target: _images/Bricks/brick_master21_tilted_front_800.jpg
 
     - .. image:: /Images/Bricks/brick_dc_tilted_front_100.jpg
        :scale: 100 %
@@ -67,17 +67,17 @@ Bricks
        :align: center
        :target: _images/Bricks/brick_servo_tilted_front_800.jpg
 
-    - .. image:: /Images/Bricks/brick_imu_tilted_front_100.jpg
+    - .. image:: /Images/Bricks/brick_imuv2_tilted1_front_100.jpg
        :scale: 100 %
-       :alt: IMU Brick
+       :alt: IMU Brick 2.0
        :align: center
-       :target: _images/Bricks/brick_imu_tilted_front_800.jpg
+       :target: _images/Bricks/brick_imuv2_tilted1_front_800.jpg
 
 
 Bricks sind 4 x 4cm (1,57 x 1,57") große Module, die über einen Mini-USB 
 Anschluss verfügen und über diesen von Geräten, wie zum Beispiel einem 
 (Embedded-) PC, gesteuert werden können. Jedes Brick besitzt eine Aufgabe: Es 
-gibt Bricks für Messaufgaben (z.B. :ref:`IMU Brick <imu_brick>`), zur 
+gibt Bricks für Messaufgaben (z.B. :ref:`IMU Brick 2.0 <imu_v2_brick>`), zur 
 Kommunikation (z.B. :ref:`Master Brick <master_brick>`) und um Motoren zu
 steuern (z.B. :ref:`DC Brick <dc_brick>`).
 
@@ -142,11 +142,11 @@ Bricklets
        :align: center
        :target: _images/Bricklets/bricklet_distance_ir_tilted_800.jpg
 
-    - .. image:: /Images/Bricklets/bricklet_voltage_tilted_100.jpg
+    - .. image:: /Images/Bricklets/bricklet_analog_in_v2_tilted1_100.jpg
        :scale: 100 %
-       :alt: Voltage Bricklet
+       :alt: Analog In Bricklet 2.0
        :align: center
-       :target: _images/Bricklets/bricklet_voltage_tilted_800.jpg
+       :target: _images/Bricklets/bricklet_analog_in_v2_tilted1_800.jpg
 
 Bricklets erweitern die Fähigkeiten von :ref:`Bricks <primer_bricks>`.
 Es gibt Bricklets um physikalische Größen wie Rotation, elektrische Spannung,
@@ -198,18 +198,18 @@ Master Extensions
        :align: center
        :target: _images/Extensions/extension_rs485_tilted_800.jpg
 
-    - .. image:: /Images/Extensions/extension_wifi_tilted_100.jpg
+    - .. image:: /Images/Extensions/extension_wifi2_tilted_100.jpg
        :scale: 100 %
-       :alt: WIFI Extension
+       :alt: WIFI Extension 2.0
        :align: center
-       :target: _images/Extensions/extension_wifi_tilted_800.jpg
+       :target: _images/Extensions/extension_wifi2_tilted_800.jpg
 
 Wird ein :ref:`Master Brick <master_brick>` alleine oder im 
 :ref:`Stapel <primer_stack>` eingesetzt, läuft die Kommunikation über
 seine USB Schnittstelle. Master Extensions erweitern die 
 Kommunikationsmöglichkeiten von Master Bricks. Es gibt kabelgebundene 
 (:ref:`RS485 <rs485_extension>`,  :ref:`Ethernet <ethernet_extension>`) und 
-drahtlose Master Extensions (:ref:`WIFI <wifi_extension>`). Anstatt über USB 
+drahtlose Master Extensions (:ref:`WIFI <wifi_v2_extension>`). Anstatt über USB 
 können Bricks und Bricklets somit über WLAN (WIFI) oder Ethernet gesteuert 
 werden. Über RS485 ist eine Vernetzung untereinander auch über größere Strecken 
 möglich.
