@@ -30,7 +30,7 @@ Features
 * Supports 10/100 Mbit/s Ethernet (1000 Mbit/s compatible)
 * Integrated PoE Power Supply (PD Class 0 for IEEE 802.3af)
 
- * Can power a Stack via Ethernet Cable
+  * Can power a Stack via Ethernet Cable
 
 
 Description

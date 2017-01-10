@@ -31,7 +31,7 @@ Features
 * Unterstützt 10/100 Mbit/s Ethernet (1000 Mbit/s kompatibel)
 * Integrierte PoE Stromversorgung (PD Class 0 für IEEE 802.3af)
 
- * Ermöglicht die Stromversorgung eines Stapels per Ethernetkabel
+  * Ermöglicht die Stromversorgung eines Stapels per Ethernetkabel
 
 
 

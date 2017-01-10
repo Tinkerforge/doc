@@ -47,8 +47,8 @@ Als erstes müssen der: :ref:`Brick Daemon <brickd>` und der
 :ref:`Brick Viewer <brickv>` auf einem PC oder Mac installiert werden.
 Dazu sind die dokumentierten Schritte zu befolgen:
 
- * :ref:`Brick Daemon Installation <brickd_installation>`
- * :ref:`Brick Viewer Installation <brickv_installation>`
+* :ref:`Brick Daemon Installation <brickd_installation>`
+* :ref:`Brick Viewer Installation <brickv_installation>`
 
 Teste den RED Brick
 -------------------
