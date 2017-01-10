@@ -78,7 +78,7 @@ werden. So können zum Beispiel Temperaturen erfasst werden
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/j4MfrewCRe4" frameborder="0" allowfullscreen></iframe></center>
+ <center><iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/j4MfrewCRe4" frameborder="0" allowfullscreen></iframe></center>
 
 
 Technische Spezifikation

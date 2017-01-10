@@ -87,7 +87,7 @@ can be found on Youtube:
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/hHnhflS3260" frameborder="0" allowfullscreen></iframe></center>
+ <center><iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/hHnhflS3260" frameborder="0" allowfullscreen></iframe></center>
 
 Technical Specifications
 ------------------------

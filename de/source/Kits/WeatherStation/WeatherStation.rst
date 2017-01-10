@@ -89,7 +89,7 @@ Ein kurzes Video über den Zusammenbau und einige Anwendungen gibt es auf Youtub
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/uwsseiiu_4A" frameborder="0" allowfullscreen></iframe></center>
+ <center><iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/uwsseiiu_4A" frameborder="0" allowfullscreen></iframe></center>
 
 
 Technische Spezifikation

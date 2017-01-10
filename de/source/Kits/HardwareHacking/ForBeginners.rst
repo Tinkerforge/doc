@@ -279,4 +279,4 @@ wie die Drähte an die Pads gelötet werden (löten startet bei 2:00):
 
 .. raw:: html
 
- <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/hHnhflS3260?start=120" frameborder="0" allowfullscreen></iframe>
+ <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/hHnhflS3260?start=120" frameborder="0" allowfullscreen></iframe>

@@ -58,7 +58,7 @@ is available on Youtube:
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/8RSEs6cKwXc" frameborder="0" allowfullscreen></iframe></center>
+ <center><iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/8RSEs6cKwXc" frameborder="0" allowfullscreen></iframe></center>
 
 Technical Specifications
 ------------------------
