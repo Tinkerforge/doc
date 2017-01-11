@@ -381,20 +381,132 @@ page for user authentication.
   :target: ../../_images/Extensions/extension_wifi2_web_interface_authentication.jpg
 
 
+Mesh
+----
+
+Starting from the firmware version 2.0.4 the WIFI extension 2 supports mesh mode.
+Note that for using the mesh feature properly, Master Brick firmware version
+2.4.2 or higher, Brick Daemon version 2.2.4 or higher and Brick Viewer version
+2.3.7 or higher is required.
+
+Stacks with WIFI extension 2 which are configured in mesh mode can form a mesh
+network. All the devices present in these stacks can be accessed normally.
+
+Some key concepts of mesh mode are:
+
+* Mesh Root Node
+* Mesh Router
+* Mesh Gateway
+
+Each mesh network has at least one root node. Root nodes are entry/exit point of
+the mesh network where data is coming into the the mesh network or going out of
+the mesh network.
+
+Mesh router is a WIFI access point to which the root node connects to reach the
+mesh gateway.
+
+The mesh gateway is basically Brick Daemon which can handle and route data coming
+from the nodes of a mesh network and can also send data into mesh network.
+
+The illustration below represents a simple scenario to understand the system better.
+
+.. image:: /Images/Extensions/extension_wifi2_mesh_example.jpg
+  :scale: 100 %
+  :alt: Example topology of mesh usage
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_mesh_example.jpg
+
+In the illustration above, there is a mesh network with five stacks each with
+a WIFI Extension 2 configured in mesh mode. The root node of this mesh network
+is marked with a red circle. The mesh root node can connect to the WIFI access
+point, "Mesh Router". The "Brick Daemon" machine is running a Brick Daemon that
+supports mesh feature and is reachable via the same network of the "Mesh Router".
+From the perspective of the mesh network this machine is the mesh gateway.
+
+The mesh root node establishes a connection to the mesh gateway which is marked
+with the green lines in the illustration. After that, all the stacks which are
+available in the mesh network are accessible to the "Client" which is connected
+to the Brick Daemon that is running on the "Brick Daemon" machine. This connection
+is marked with the blue lines in the illustration.
+
+Configuration
+^^^^^^^^^^^^^
+
+Every mesh WIFI Extension 2 that is member of a particular mesh network has
+identical configuration.
+
+To form a mesh network first the extension must be configured to be in mesh mode.
+This can be achieved from Brick Viewer by selecting mesh mode.
+
+.. image:: /Images/Extensions/extension_wifi2_mesh_mode.jpg
+  :scale: 100 %
+  :alt: Example topology of mesh usage
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_mesh_mode.jpg
+
+Mesh router configuration must be provided to the node. These are generic
+configuration parameters that are required to configure and connect to a WIFI
+access point.
+
+.. image:: /Images/Extensions/extension_wifi2_mesh_router.jpg
+  :scale: 100 %
+  :alt: Example topology of mesh usage
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_mesh_router.jpg
+
+It must be defined to which mesh network a mesh node belongs to. The
+"Group SSID Prefix" and "Group ID" together defines a mesh network to which
+the mesh node belongs to. The "Mesh Gateway IP" and "Mesh Gateway Port" fields
+define how the mesh gateway can be reached.
+
+.. image:: /Images/Extensions/extension_wifi2_mesh_group.jpg
+  :scale: 100 %
+  :alt: Example topology of mesh usage
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_mesh_group.jpg
+
+Known Bugs
+^^^^^^^^^^
+
+* Mesh router SSID maximum length:
+
+  The maximum applicable mesh router SSID can be 32 characters long but in mesh
+  mode a mesh router SSID of upto 31 characters is valid. This is due to a bug
+  in the Espressif mesh library.
+
+* Dropped packets in non-root mesh node:
+
+  This bug is also in the Espressif mesh library. If a mesh node which is not a
+  root node receives a burst of packets all of these packets are dropped. This is
+  rather a serious bug as it involves data loss. This bug can be easily observed
+  by sending a lot of getter requests to a non-root mesh node and they will have
+  timeouts. Because of this bug, Servo Brick's test feature which is offered by
+  Brick Viewer will fail if the node where the Servo Brick is present is not a
+  mesh root node.
+
+  One work around of this problem is to limit the getter call burst, for example
+  by setting response expected flag of the getter calls or by simply adding a
+  slight delay between the getter calls.
+
+
 LEDs
 ----
 
 The blue power LED will be on permanently as long as the device is powered.
 The green LED is a status LED.
 
-In client mode it will blink fast while trying to connect to a access point and turn on
-if connected.
+In client mode it will blink fast while trying to connect to a access point and
+turn on if connected.
 
 In access point mode it will blink slowly as long as no client is connected.
 
-If both are enabled, it will blink fast until it is connected to an external access point and
-after that it will blink slowly until a client connects to the access point of the
-WIFI Extension 2.0.
+If both are enabled, it will blink fast until it is connected to an external
+access point and after that it will blink slowly until a client connects to the
+access point of the WIFI Extension 2.0.
+
+In mesh mode if the node is trying to establish a connection then the green LED
+will blink rapidly. Once connection is established and the node is operational,
+the green LED will blink slowly with an interval of about 6 seconds.
 
 
 Programming Interface

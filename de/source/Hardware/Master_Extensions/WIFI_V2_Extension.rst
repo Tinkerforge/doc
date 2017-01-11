@@ -398,6 +398,36 @@ Secret mit folgender Seite ab:
   :target: ../../_images/Extensions/extension_wifi2_web_interface_authentication.jpg
 
 
+.. TODO: German mesh documentation.
+
+Mesh
+----
+
+.. image:: /Images/Extensions/extension_wifi2_mesh_example.jpg
+  :scale: 100 %
+  :alt: Example topology of mesh usage
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_mesh_example.jpg
+
+.. image:: /Images/Extensions/extension_wifi2_mesh_mode.jpg
+  :scale: 100 %
+  :alt: Example topology of mesh usage
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_mesh_mode.jpg
+
+.. image:: /Images/Extensions/extension_wifi2_mesh_router.jpg
+  :scale: 100 %
+  :alt: Example topology of mesh usage
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_mesh_router.jpg
+
+.. image:: /Images/Extensions/extension_wifi2_mesh_group.jpg
+  :scale: 100 %
+  :alt: Example topology of mesh usage
+  :align: center
+  :target: ../../_images/Extensions/extension_wifi2_mesh_group.jpg
+
+
 LEDs
 ----
 
@@ -413,6 +443,8 @@ Im Access Point Mode blinkt die LED langsam so lange sich kein Client verbunden 
 Falls beide Modi aktiviert sind, blinkt die LED zuerst schnell bis eine Verbindung zum
 externen Access Point hergestellt wurde. Danach blinkt die LED langsam bis ein
 externe Client sich zum Access Point der WIFI Extension 2.0 verbindet.
+
+.. TODO: German mesh documentation related to LED status.
 
 
 Programmierschnittstelle
