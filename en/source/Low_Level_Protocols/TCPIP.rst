@@ -412,5 +412,5 @@ following table. Further project descriptions can be found in the
 .. toctree::
    :hidden:
 
-   Bricks <../Software/Bricks_TCPIP>
-   Bricklets <../Software/Bricklets_TCPIP>
+   Bricks <Bricks_TCPIP>
+   Bricklets <Bricklets_TCPIP>
