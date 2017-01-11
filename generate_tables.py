@@ -1238,7 +1238,7 @@ def generate(path):
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, brick_infos, 'Brick'))
         else:
             print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
-            write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks', ''))
+            write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks', '../Software/'))
 
             print('Generating Bricks_{0}.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricks_{0}.table'.format(bindings_info.software_doc_suffix)), make_llproto_devices_table(bindings_info, brick_infos, 'Brick'))
@@ -1246,7 +1246,7 @@ def generate(path):
     for bindings_info in bindings_infos:
         if bindings_info.is_programming_language:
             print('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
-            write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets', '../Software/'))
+            write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets', ''))
 
             print('Generating Bricklets_{0}.table'.format(bindings_info.software_doc_suffix))
             write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, bricklet_infos, 'Bricklet'))
