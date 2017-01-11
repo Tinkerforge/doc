@@ -44,7 +44,7 @@
 
    {% if meta is defined and meta['shoplink'] is defined %}
    <div id="shoplink">
-    <a href="{{ meta['shoplink'] }}">{% raw %}{% if g.current_lang == "de" %}Zum Shop{% else %}In Shop{% endif %}{% endraw %}</a>
+    <a href="{{ meta['shoplink'] }}">{% raw %}{% if LANGUAGE_CODE == "de" %}Im Online-Shop kaufen{% else %}Buy from Online Shop{% endif %}{% endraw %}</a>
    </div>
    {% endif %}
    <!--breadcrumbs and shoplink end-->
