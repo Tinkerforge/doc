@@ -32,4 +32,6 @@ Master Extensions
        :align: center
        :target: ../../_images/Extensions/extension_wifi2_tilted_800.jpg
 
+.. include:: ../../Primer_extensions.content
+
 .. include:: Master_Extensions.table

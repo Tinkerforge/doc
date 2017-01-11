@@ -45,4 +45,6 @@ Bricks
        :align: center
        :target: ../../_images/Bricks/brick_imu_v2_tilted1_800.jpg
 
+.. include:: ../../Primer_bricks.content
+
 .. include:: Bricks.table

@@ -1,0 +1,16 @@
+Bricklets can be used to extend the features of
+:ref:`Bricks <primer_bricks>`. There are Bricklets to measure
+physical quantity such as rotation, voltage, current and ambient light
+as well as Bricklets for control purposes such as switching relays, digital
+input/output and alphanumeric output on LCDs.
+
+Unlike Bricks, Bricklets have no fixed size. Each Bricklet has the minimum
+size possible. Each Brick has up to four connectors for Bricklets. Bricklets
+can be controlled over the USB connection of the connected Brick.
+
+Bricklets are not equipped with processors but possess their own API.
+From the programmer perspective they are handled as an independent modules.
+On startup a Brick detects connected Bricklets. The Bricklet plugins,
+stored in the `EEPROM <https://en.wikipedia.org/wiki/EEPROM>`__ of the Bricklet,
+are loaded into the flash of the Brick. This adds new functions to the Brick,
+that can then be used from the PC.

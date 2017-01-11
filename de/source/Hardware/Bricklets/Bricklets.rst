@@ -50,4 +50,6 @@ Bricklets
        :align: center
        :target: ../../_images/Bricklets/bricklet_analog_in_v2_tilted1_800.jpg
 
+.. include:: ../../Primer_bricklets.content
+
 .. include:: Bricklets.table

@@ -14,4 +14,6 @@ Accessories
        :align: center
        :target: ../../_images/Accessories/dc_jack_adapter_tilted_800.jpg
 
+.. include:: ../../Primer_accessories.content
+
 .. include:: Accessories.table

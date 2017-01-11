@@ -1,0 +1,16 @@
+Bricks are 4 x 4cm (1.57 x 1.57") modules that can be controlled by devices, 
+such as (embedded) PCs, over their Mini-USB connector. Every Brick basically 
+performs one task. There are Bricks that perform complex sensor tasks (e.g. 
+:ref:`IMU Brick 2.0 <imu_v2_brick>`), communicate (e.g. 
+:ref:`Master Brick <master_brick>`) and drive motors 
+(e.g. :ref:`DC Brick <dc_brick>`).
+
+With :ref:`Bricklets <primer_bricklets>` the features of Bricks can
+be extended. Dependent on the Brick it has two or four connectors for Bricklets.
+
+Bricks can be assembled into a stack (see 
+:ref:`description of stack concept <primer_stack>`). The USB interface of a 
+Master Brick can be replaced by Wi-Fi, Ethernet or RS485 with
+:ref:`Master Extensions <primer_master_extensions>`. In conjunction with the 
+stack concept all Bricks and Bricklets can be controlled by Wi-Fi or Ethernet
+instead by USB.

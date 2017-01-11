@@ -79,26 +79,7 @@ Bricks
        :align: center
        :target: _images/Bricks/brick_imu_v2_tilted1_800.jpg
 
-
-Bricks sind 4 x 4cm (1,57 x 1,57") große Module, die über einen Mini-USB 
-Anschluss verfügen und über diesen von Geräten, wie zum Beispiel einem 
-(Embedded-) PC, gesteuert werden können. Jedes Brick besitzt eine Aufgabe: Es 
-gibt Bricks für Messaufgaben (z.B. :ref:`IMU Brick 2.0 <imu_v2_brick>`), zur 
-Kommunikation (z.B. :ref:`Master Brick <master_brick>`) und um Motoren zu
-steuern (z.B. :ref:`DC Brick <dc_brick>`).
-
-Über :ref:`Bricklets <primer_bricklets>` können die Fähigkeiten von
-Bricks erweitert werden. Abhängig vom Modell verfügt jeder Brick über zwei oder
-vier Anschlüsse für Bricklets.
-
-Bricks können gestapelt werden, siehe die 
-:ref:`Beschreibung zum Stapelkonzept <primer_stack>`. Die USB
-Schnittstelle eines Master Bricks kann mit 
-:ref:`Master Extensions <primer_master_extensions>` durch
-WLAN, Ethernet oder RS485 ersetzt werden. Zusammen mit dem Stapelkonzept können 
-somit alle Bricks und Bricklets anstatt per USB auch per WLAN oder Ethernet 
-gesteuert werden.
-
+.. include:: Primer_bricks.content
 
 .. include:: Primer_bricks.table
 
@@ -154,25 +135,7 @@ Bricklets
        :align: center
        :target: _images/Bricklets/bricklet_analog_in_v2_tilted1_800.jpg
 
-Bricklets erweitern die Fähigkeiten von :ref:`Bricks <primer_bricks>`.
-Es gibt Bricklets um physikalische Größen wie Rotation, elektrische Spannung,
-elektrischen Strom, Umgebungshelligkeit oder Umgebungstemperatur zu messen.
-Es gibt auch Bricklets für Steuerungsaufgaben wie Relais, digitale Ein- und
-Ausgänge sowie alphanumerische Ausgaben auf LCDs.
-
-Im Gegensatz zu Bricks haben Bricklets keine feste Größe. Jedes Bricklet hat
-die kleinste mögliche Größe. Jeder Brick hat bis zu vier Anschlüsse für
-Bricklets. Über seine USB Verbindung können diese gesteuert werden.
-
-Bricklets verfügen über keinen eigenen Prozessor, verfügen aber über eine eigene 
-API. Aus Sicht des Programmierers werden sie wie eigenständige Module behandelt. 
-Beim Start erkennt ein Brick die angeschlossenen Bricklets. Die Bricklet Plugins 
-sind auf einem 
-`EEPROM <https://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
-auf dem Bricklet gespeichert und werden zur Ausführung in den Flash des Bricks
-geladen. Nach diesem Vorgang verarbeitet das Brick die API Aufrufe seiner 
-angeschlossenen Bricklets und steuert die Bricklets.
-
+.. include:: Primer_bricklets.content
 
 .. include:: Primer_bricklets.table
 
@@ -210,24 +173,7 @@ Master Extensions
        :align: center
        :target: _images/Extensions/extension_wifi2_tilted_800.jpg
 
-Wird ein :ref:`Master Brick <master_brick>` alleine oder im 
-:ref:`Stapel <primer_stack>` eingesetzt, läuft die Kommunikation über
-seine USB Schnittstelle. Master Extensions erweitern die 
-Kommunikationsmöglichkeiten von Master Bricks. Es gibt kabelgebundene 
-(:ref:`RS485 <rs485_extension>`,  :ref:`Ethernet <ethernet_extension>`) und 
-drahtlose Master Extensions (:ref:`WIFI <wifi_v2_extension>`). Anstatt über USB 
-können Bricks und Bricklets somit über WLAN (WIFI) oder Ethernet gesteuert 
-werden. Über RS485 ist eine Vernetzung untereinander auch über größere Strecken 
-möglich.
-
-Aus Programmierersicht sind die verschiedenen Kommunikationsmöglichkeiten 
-transparent. Ein Stapel mit Master Extension verhält sich so als wären alle 
-Bricks einzeln per USB am PC angeschlossen.
-
-Dies bedeutet: Programme können mit allen Bricks einzeln per USB am PC
-angeschlossen entwickelt werden. Wenn später die Bricks gestapelt und über
-eine Master Extension angebunden werden dann funktioniert das zuvor geschrieben
-Programm ohne Änderungen weiter.
+.. include:: Primer_extensions.content
 
 .. include:: Primer_extensions.table
 
@@ -247,18 +193,7 @@ Stromversorgungen
        :align: center
        :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
 
-:ref:`Bricks <primer_bricks>` und :ref:`Bricklets <primer_bricklets>` 
-können über die USB Schnittstelle des Bricks mit Strom versorgt werden. 
-:ref:`Stapel <primer_stack>` können ebenfalls über die USB Verbindung des 
-Masters mit Strom versorgt werden. Diese Möglichkeit ist durch die USB 
-Spezifikation auf 500mA beschränkt. Ein großer Stapel kann einen höheren 
-Stromverbrauch aufweisen.
-
-Die Stromversorgungsmodule können einen Stapel mit mehr als 500mA versorgen. 
-Zusätzlich wird über den Stapel auch die Versorgungsspannung geleitet, so dass
-Bricks im Stapel ihre angeschlossenen Motoren darüber direkt versorgen können
-(z.B. :ref:`DC Brick <dc_brick>`). Stromversorgungsmodule haben die Größe von 
-:ref:`Bricks <primer_bricks>` und werden unter einen Stapel gesteckt.
+.. include:: Primer_power_supplies.content
 
 .. include:: Primer_power_supplies.table
 
@@ -277,6 +212,8 @@ Zubehör
        :alt: DC Jack Adapter
        :align: center
        :target: _images/Accessories/dc_jack_adapter_tilted_800.jpg
+
+.. include:: Primer_accessories.content
 
 .. include:: Primer_accessories.table
 

@@ -1,0 +1,18 @@
+Bricklets erweitern die Fähigkeiten von :ref:`Bricks <primer_bricks>`.
+Es gibt Bricklets um physikalische Größen wie Rotation, elektrische Spannung,
+elektrischen Strom, Umgebungshelligkeit oder Umgebungstemperatur zu messen.
+Es gibt auch Bricklets für Steuerungsaufgaben wie Relais, digitale Ein- und
+Ausgänge sowie alphanumerische Ausgaben auf LCDs.
+
+Im Gegensatz zu Bricks haben Bricklets keine feste Größe. Jedes Bricklet hat
+die kleinste mögliche Größe. Jeder Brick hat bis zu vier Anschlüsse für
+Bricklets. Über seine USB Verbindung können diese gesteuert werden.
+
+Bricklets verfügen über keinen eigenen Prozessor, verfügen aber über eine eigene 
+API. Aus Sicht des Programmierers werden sie wie eigenständige Module behandelt. 
+Beim Start erkennt ein Brick die angeschlossenen Bricklets. Die Bricklet Plugins 
+sind auf einem 
+`EEPROM <https://de.wikipedia.org/wiki/Electrically_Erasable_Programmable_Read-Only_Memory>`__
+auf dem Bricklet gespeichert und werden zur Ausführung in den Flash des Bricks
+geladen. Nach diesem Vorgang verarbeitet das Brick die API Aufrufe seiner 
+angeschlossenen Bricklets und steuert die Bricklets.

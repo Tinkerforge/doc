@@ -14,4 +14,6 @@ Stromversorgungen
        :align: center
        :target: ../../_images/Power_Supplies/powersupply_tilted_front_800.jpg
 
+.. include:: ../../Primer_power_supplies.content
+
 .. include:: Power_Supplies.table
