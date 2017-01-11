@@ -561,6 +561,36 @@ def make_llproto_links_table(bindings_info):
     return table_head[lang].format('\n'.join(brick_lines),
                                    '\n'.join(bricklet_lines))
 
+def make_api_bindings_devices_table(bindings_info, device_infos, category):
+    table_head = {
+    'en': """.. csv-table::
+ :header: "{0}", "API", "Examples"
+ :delim: |
+ :widths: 20, 10, 10
+
+{1}
+""",
+    'de': """.. csv-table::
+ :header: "{0}", "API", "Beispiele"
+ :delim: |
+ :widths: 20, 10, 10
+
+{1}
+"""
+    }
+
+    device_row = {
+    'en': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Examples <{0}_{1}_examples>`',
+    'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Beispiele <{0}_{1}_examples>`'
+    }
+
+    lines = []
+    for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
+        if device_info.is_documented and device_info.has_bindings:
+            lines.append(device_row[lang].format(device_info.ref_name, bindings_info.url_part, device_info.short_display_name))
+
+    return table_head[lang].format(category, '\n'.join(lines))
+
 def make_source_code_gits_table():
     table_head = {
     'en': """.. csv-table::
@@ -1173,9 +1203,15 @@ def generate(path):
         print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
         write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks'))
 
+        print('Generating Bricks_{0}.table'.format(bindings_info.software_doc_suffix))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, brick_infos, 'Brick'))
+
     for bindings_info in bindings_infos:
         print('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
         write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets'))
+
+        print('Generating Bricklets_{0}.table'.format(bindings_info.software_doc_suffix))
+        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, bricklet_infos, 'Bricklet'))
 
 if __name__ == "__main__":
     generate(os.getcwd())
