@@ -47,7 +47,7 @@ kurze Zeiträume signifikant ändern kann ist die erreichbare Genauigkeit begren
 Eine mögliche Lösung um die Genauigkeit und Stabilität der Höhenmessung zu
 steigern ist Sensorfusion mit den Sensordaten eines :ref:`IMU Bricks <imu_brick>`
 durchzuführen (siehe 
-`Youtube video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
+`Youtube Video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
 
 Technische Spezifikation

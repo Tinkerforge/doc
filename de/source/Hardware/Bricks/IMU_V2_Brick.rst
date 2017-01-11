@@ -82,7 +82,7 @@ Ein Vergleichsvideo zwischen IMU Brick 1.0 und IMU Brick 2.0 ist auf Youtube ver
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Aq3SqVen5AQ" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/Aq3SqVen5AQ" frameborder="0" allowfullscreen></iframe>
 
 Technische Spezifikation
 ------------------------

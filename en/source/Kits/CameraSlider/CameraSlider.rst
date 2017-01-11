@@ -59,7 +59,7 @@ The following video shows different applications und modifications:
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/lg0sdG7tfr4" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/lg0sdG7tfr4" frameborder="0" allowfullscreen></iframe>
 
 Technical Specifications
 ------------------------

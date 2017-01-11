@@ -82,7 +82,7 @@ The following video shows the demo application and the construction in time laps
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/mmNRa-lLaXM" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/mmNRa-lLaXM" frameborder="0" allowfullscreen></iframe>
 
 Technical Specifications
 ------------------------

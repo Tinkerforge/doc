@@ -77,7 +77,7 @@ extend the kit. It is for example possible to measure temperature
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/GMKdzA5X1Q4" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/GMKdzA5X1Q4" frameborder="0" allowfullscreen></iframe>
 
 Technical Specifications
 ------------------------
