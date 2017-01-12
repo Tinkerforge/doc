@@ -47,12 +47,7 @@ spelling_lang='de_DE'
 spelling_word_list_filename='good_wordlist.txt'
 
 # Add any paths that contain templates here, relative to this directory.
-if os.path.isfile(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'use_mez')):
-    templates_path = ['_templates_mez']
-elif socket.gethostname() != 'tinkerforge.com':
-    templates_path = ['_templates_draft']
-else:
-    templates_path = ['_templates']
+templates_path = ['_templates']
 
 # The suffix of source filenames.
 source_suffix = '.rst'

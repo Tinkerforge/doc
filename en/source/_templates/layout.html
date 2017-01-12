@@ -1,85 +1,69 @@
-{% raw %}
-{% from "macros.html" import tfheader %}
-{% from "macros.html" import tffooter %}
-{% endraw %}
-
-{% extends '!layout.html' %}
-
-{% block doctype %}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-{% endblock %}
-
-{% block htmltitle %}
-<title>{{ title|striptags|e }} – Tinkerforge</title>
-{% raw %}
-<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='base_tf.css', _external=True) }}" />
-<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='jquery.lightbox-0.5.css', _external=True) }}" />
-<meta name="keywords" content="Tinkerforge, Open Source Hardware, Bricks, Bricklets, USB Controllable, USB Sensing, USB Controlling" />
-<meta name="description" content="Easy-to-use open source hardware. Control motors and sense the environment over USB, Ethernet or Wi-Fi/WLAN with C/C++, C#, Delphi/Lazarus, Java, JavaScript, LabVIEW, Mathematica, MATLAB/Octave, Perl, PHP, Python, Ruby, Shell, Visual Basic .NET or directly over TCP/IP." />
-<meta name="copyright" content="Tinkerforge GmbH" />
-<!--<script type="text/javascript">document.write('<style>.noscript { display: none; }</style>');</script>-->
-{% endraw %}
-{% endblock %}
-
-{% block extrahead %}
-{% raw %}
-<script type="text/javascript" src="{{ url_for('static', filename='jquery.lightbox-0.5.js', _external=True) }}"></script>
-<script type="text/javascript">$(function() { $('#gallery a').lightBox(); });</script>
-<script type="text/javascript">$(function() { $(".sphinxsidebarwrapper").filter(function() { return $.trim($(this).text()).length == 0; }).parent().hide(); });</script>
-{% endraw %}
-{% endblock %}
-
-{% block sidebar1 %}{{ sidebar() }}
-  {% if meta is defined and meta['shoplink'] is defined %}
-  <div id="shoplink_img">
-    <a href="{{ meta['shoplink'] }}"><img alt="Shop" width="32" height="40" src="../../_images/Misc/cart-icon.png" /></a>
-  </div>
-  <div id="shoplink_a">
-    <a href="{{ meta['shoplink'] }}">{% raw %}{% if g.current_lang == "de" %}Zum Shop{% else %}In Shop{% endif %}{% endraw %}</a>
-  </div>
-  {% endif %}
-{% endblock %}
-{% block sidebar2 %}{% endblock %}
-
-{% block relbar1 %}
-<div id="tfcontent">{% if meta is defined and meta['breadcrumbs'] is defined %}<div class="breadcrumbs-container"><div class="breadcrumbs">{{ meta['breadcrumbs'] }}</div></div>{% endif %}
-  <div class="boxContent3">
-{% endblock %}
-
-{% block relbar2 %}
-	<div id="tf_license">
-		{% raw %}
-		{% if g.current_lang == "de" %}
-			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">
-				<img alt="Creative Commons Lizenz" width="88" height="31" style="border-width:0" src="/static/images/cc_license_logo.png" />
-			</a>
-			Der Inhalt dieser Seite ist lizensiert unter der
-			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative Commons Attribution 3.0 Unported Lizenz</a>.
-		{% else %}
-			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
-				<img alt="Creative Commons Licence" width="88" height="31" style="border-width:0" src="/static/images/cc_license_logo.png" />
-			</a>
-			The content of this page is licensed under
-			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
-		{% endif %}
-		{% endraw %}
-	</div>
-  </div>
-</div>
-{% endblock %}
-
-{% block sidebarsourcelink %}{% endblock %}
-{% block sidebarsearch %}{% endblock %}
-
 {% block header %}
 {% raw %}
-{{ tfheader(g.stagingprefix, g.langs, g.username, g.current_lang, request.url, 'doc') }}
+	{% extends "base.html" %}
+	{% load i18n mezzanine_tags staticfiles tftags %}
+
+	{% block meta_title %}{% trans "Doc" %}{% endblock %}
+
+	{% block extra_css %}
+	<link rel="stylesheet" href="{% static "css/doc.css" %}">
+	<link rel="stylesheet" href="{% static "css/pygments.css" %}">
+	{% endblock %}
+
+	{% block extra_js %}
+	<script src="{% static "js/jquery-2.1.3.min.js" %}"></script>
+	<script src="{% static "js/doc-scripts.js" %}"></script>
+	{% endblock %}
+
+	{% block main %}
 {% endraw %}
 {% endblock %}
+
+
+<div class="doc">
+ <div class="tf-container pure-g">
+  <div class="pure-u-1 pure-u-md-1-4 tf-toctreeWrapper">
+   <div class="toctree">
+    {{ toctree(maxdepth=-1, collapse=True, includehidden=True) }}
+   </div>
+  </div>
+  <div class="doc-content pure-u-1 pure-u-md-3-4">
+
+   <!--doc content start-->
+   <div class="pure-u-1 pure-u-md-0">
+     <a id="tf-tocSwitch">
+       <span class="icon"></span>
+       <span class="label">Menu</span>
+     </a>
+   </div>
+
+   <!--breadcrumbs and shoplink start -->
+   <div class="breadcrumbs pure-u-1 pure-u-md-0">
+    {{ breadcrumbs(separator=' / ') }}
+   </div>
+
+   {% if meta is defined and meta['shoplink'] is defined %}
+   <div id="shoplink">
+    <a href="{{ meta['shoplink'] }}">{% raw %}{% if LANGUAGE_CODE == "de" %}Im Online-Shop kaufen{% else %}Buy from Online Shop{% endif %}{% endraw %}</a>
+   </div>
+   {% endif %}
+   <!--breadcrumbs and shoplink end-->
+
+   <div class="document">
+    <div class="documentwrapper">
+     <div class="bodywrapper">
+      <div class="body">
+       {% block body %} {% endblock %}
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
 
 {% block footer %}
 {% raw %}
-{{ tffooter(g.stagingprefix, g.langs, g.current_lang) }}
+	{% endblock %}
 {% endraw %}
 {% endblock %}
