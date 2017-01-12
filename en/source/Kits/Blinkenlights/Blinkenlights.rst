@@ -10,48 +10,18 @@ Starter Kit: Blinkenlights
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Kits/kit_blinkenlights_fire_350.jpg",
-	               "Kits/kit_blinkenlights_fire_600.jpg",
-	               "Blinkenlights: Fire Simulation")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_fire_daylight_100.jpg",
-	             "Kits/kit_blinkenlights_fire_daylight_600.jpg",
-	             "Blinkenlights: Fire Simulation in Daylight")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_on_wall_100.jpg",
-	             "Kits/kit_blinkenlights_on_wall_600.jpg",
-	             "Blinkenlights: On Wall")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_pong_100.jpg",
-	             "Kits/kit_blinkenlights_pong_600.jpg",
-	             "Blinkenlights: Pong")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_pong_daylight_100.jpg",
-	             "Kits/kit_blinkenlights_pong_daylight_600.jpg",
-	             "Blinkenlights: Pong in Daylight")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_tetris_100.jpg",
-	             "Kits/kit_blinkenlights_tetris_600.jpg",
-	             "Blinkenlights: Tetris")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_text_daylight_100.jpg",
-	             "Kits/kit_blinkenlights_text_daylight_600.jpg",
-	             "Blinkenlights: Text Display")
-	}}
-	{{
-	    tfdocimg("Kits/kit_blinkenlights_rainbow_near_far_dark_100.jpg",
-	             "Kits/kit_blinkenlights_rainbow_near_far_dark_600.jpg",
-	             "Blinkenlights: Rainbow with different Front Panel Distances")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Kits/kit_blinkenlights_fire_[100|600].jpg                   Blinkenlights: Fire Simulation
+	Kits/kit_blinkenlights_fire_daylight_[100|600].jpg          Blinkenlights: Fire Simulation in Daylight
+	Kits/kit_blinkenlights_on_wall_[100|600].jpg                Blinkenlights: On Wall
+	Kits/kit_blinkenlights_pong_[100|600].jpg                   Blinkenlights: Pong
+	Kits/kit_blinkenlights_pong_daylight_[100|600].jpg          Blinkenlights: Pong in Daylight
+	Kits/kit_blinkenlights_tetris_[100|600].jpg                 Blinkenlights: Tetris
+	Kits/kit_blinkenlights_text_daylight_[100|600].jpg          Blinkenlights: Text Display
+	Kits/kit_blinkenlights_rainbow_near_far_dark_[100|600].jpg  Blinkenlights: Rainbow with different Front Panel Distances
+
+	{% tfgalleryend %}
 
 Features
 --------
@@ -112,7 +82,7 @@ The following video shows the demo application and the construction in time laps
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/mmNRa-lLaXM" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/mmNRa-lLaXM" frameborder="0" allowfullscreen></iframe>
 
 Technical Specifications
 ------------------------

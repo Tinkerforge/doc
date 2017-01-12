@@ -13,43 +13,17 @@ Dual Relay Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_dual_relay_12_tilted_350.jpg",
-	               "Bricklets/bricklet_dual_relay_12_tilted_600.jpg",
-	               "Dual Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_12_horizontal_100.jpg",
-	             "Bricklets/bricklet_dual_relay_12_horizontal_600.jpg",
-	             "Dual Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_12_front_100.jpg",
-	             "Bricklets/bricklet_dual_relay_12_front_600.jpg",
-	             "Dual Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_master_100.jpg",
-	             "Bricklets/bricklet_dual_relay_master_600.jpg",
-	             "Dual Relay Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_dual_relay_case_100.jpg",
-	             "Cases/bricklet_dual_relay_case_600.jpg",
-	             "Dual Relay Bricklet Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_relay_brickv_100.jpg",
-	             "Bricklets/bricklet_dual_relay_brickv.jpg",
-	             "Dual Relay Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/dual_relay_bricklet_dimensions_100.png",
-	             "Dimensions/dual_relay_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_dual_relay_12_tilted_[?|?].jpg        Dual Relay Bricklet
+	Bricklets/bricklet_dual_relay_12_horizontal_[?|?].jpg    Dual Relay Bricklet
+	Bricklets/bricklet_dual_relay_12_front_[?|?].jpg         Dual Relay Bricklet
+	Bricklets/bricklet_dual_relay_master_[100|600].jpg       Dual Relay Bricklet with Master Brick
+	Cases/bricklet_dual_relay_case_[100|600].jpg             Dual Relay Bricklet Case
+	Bricklets/bricklet_dual_relay_brickv_[100|].jpg          Dual Relay Bricklet in Brick Viewer
+	Dimensions/dual_relay_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

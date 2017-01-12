@@ -9,33 +9,15 @@ Debug Brick
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricks/brick_debug12_tilted_350.jpg",
-	               "Bricks/brick_debug12_tilted_800.jpg",
-	               "Debug Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_debug12_w_headers_100.jpg",
-	             "Bricks/brick_debug12_w_headers_800.jpg",
-	             "Debug Brick with headers soldered in")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_debug12_top_100.jpg",
-	             "Bricks/brick_debug12_top_800.jpg",
-	             "Debug Brick top")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_debug12_bottom_100.jpg",
-	             "Bricks/brick_debug12_bottom_800.jpg",
-	             "Debug Brick bottom")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_debug12_stack_100.jpg",
-	             "Bricks/brick_debug12_stack_800.jpg",
-	             "Debug Brick on stack")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricks/brick_debug12_tilted_[?|?].jpg         Debug Brick
+	Bricks/brick_debug12_w_headers_[100|800].jpg  Debug Brick with headers soldered in
+	Bricks/brick_debug12_top_[?|?].jpg            Debug Brick top
+	Bricks/brick_debug12_bottom_[?|?].jpg         Debug Brick bottom
+	Bricks/brick_debug12_stack_[?|?].jpg          Debug Brick on stack
+
+	{% tfgalleryend %}
 
 .. FIXME: outdated
 	{{

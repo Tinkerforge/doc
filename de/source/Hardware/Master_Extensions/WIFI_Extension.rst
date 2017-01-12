@@ -9,43 +9,17 @@ WIFI Master Extension
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Extensions/extension_wifi_tilted_350.jpg",
-	               "Extensions/extension_wifi_tilted_600.jpg",
-	               "WIFI Extension")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_stack_100.jpg",
-	             "Extensions/extension_wifi_stack_600.jpg",
-	             "WIFI Extension mit Master Brick im Stapel")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_horizontal_100.jpg",
-	             "Extensions/extension_wifi_horizontal_600.jpg",
-	             "WIFI Extension Unterseite")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_bottom_100.jpg",
-	             "Extensions/extension_wifi_bottom_600.jpg",
-	             "WIFI Extension Oberseite")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_caption_100.jpg",
-	             "Extensions/extension_wifi_caption_600.jpg",
-	             "WIFI Extension mit Beschriftung")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_ufl_100.jpg",
-	             "Extensions/extension_wifi_ufl_600.jpg",
-	             "U.FL Connector der WIFI Extension")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi_front_100.jpg",
-	             "Extensions/extension_wifi_front_600.jpg",
-	             "WIFI Extension Vorderseite")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Extensions/extension_wifi_tilted_[?|?].jpg      WIFI Extension
+	Extensions/extension_wifi_stack_[?|?].jpg       WIFI Extension mit Master Brick im Stapel
+	Extensions/extension_wifi_horizontal_[?|?].jpg  WIFI Extension Unterseite
+	Extensions/extension_wifi_bottom_[?|?].jpg      WIFI Extension Oberseite
+	Extensions/extension_wifi_caption_[?|?].jpg     WIFI Extension mit Beschriftung
+	Extensions/extension_wifi_ufl_[100|600].jpg     U.FL Connector der WIFI Extension
+	Extensions/extension_wifi_front_[?|?].jpg       WIFI Extension Vorderseite
+
+	{% tfgalleryend %}
 
 
 

@@ -561,6 +561,66 @@ def make_llproto_links_table(bindings_info):
     return table_head[lang].format('\n'.join(brick_lines),
                                    '\n'.join(bricklet_lines))
 
+def make_api_bindings_devices_table(bindings_info, device_infos, category):
+    table_head = {
+    'en': """.. csv-table::
+ :header: "{0}", "API", "Examples"
+ :delim: |
+ :widths: 20, 10, 10
+
+{1}
+""",
+    'de': """.. csv-table::
+ :header: "{0}", "API", "Beispiele"
+ :delim: |
+ :widths: 20, 10, 10
+
+{1}
+"""
+    }
+
+    device_row = {
+    'en': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Examples <{0}_{1}_examples>`',
+    'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>` | :ref:`Beispiele <{0}_{1}_examples>`'
+    }
+
+    lines = []
+    for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
+        if device_info.is_documented and device_info.has_bindings:
+            lines.append(device_row[lang].format(device_info.ref_name, bindings_info.url_part, device_info.short_display_name))
+
+    return table_head[lang].format(category, '\n'.join(lines))
+
+def make_llproto_devices_table(bindings_info, device_infos, category):
+    table_head = {
+    'en': """.. csv-table::
+ :header: "{0}", "API"
+ :delim: |
+ :widths: 20, 20
+
+{1}
+""",
+    'de': """.. csv-table::
+ :header: "{0}", "API"
+ :delim: |
+ :widths: 20, 20
+
+{1}
+"""
+    }
+
+    device_row = {
+    'en': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>`',
+    'de': ' :ref:`{2} <{0}>` | :ref:`API <{0}_{1}_api>`'
+    }
+
+    lines = []
+    for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
+        if device_info.is_documented and device_info.has_bindings:
+            lines.append(device_row[lang].format(device_info.ref_name, bindings_info.url_part, device_info.short_display_name))
+
+    return table_head[lang].format(category, '\n'.join(lines))
+
 def make_source_code_gits_table():
     table_head = {
     'en': """.. csv-table::
@@ -804,7 +864,7 @@ def make_index_api_misc(binding, lang):
 def make_index_api():
     index_html = """
 <div class="category_api">
-    <div class="category_head btn-more btn-more-down">
+    <div class="category_head tf-btn-more tf-btn-more-down">
         <a name="software-{4}"></a>
         {3}
     </div>
@@ -854,15 +914,15 @@ def make_index_api():
             }
         }
 
-        $(".btn-more").parent().find(".category_body").slideUp(duration);
-        $(".btn-more").removeClass("btn-more-up").addClass("btn-more-down");
+        $(".tf-btn-more").parent().find(".category_body").slideUp(duration);
+        $(".tf-btn-more").removeClass("tf-btn-more-up").addClass("tf-btn-more-down");
     }
 
     function toggleContent(parent, duration, forceShow) {
         togglingContent = true;
 
         categoryBody = parent.find(".category_body")
-        btnMore = parent.find(".btn-more")
+        btnMore = parent.find(".tf-btn-more")
 
         if (categoryBody.is(":hidden") || forceShow === true) {
             anchorName = categoryBody.parent().find(".category_head a").attr("name")
@@ -872,16 +932,16 @@ def make_index_api():
                 location.hash = "/" + anchorName + "-open";
             }
 
-            $(".btn-more").parent().find(".category_body").slideUp(duration);
-            $(".btn-more").removeClass("btn-more-up").addClass("btn-more-down");
+            $(".tf-btn-more").parent().find(".category_body").slideUp(duration);
+            $(".tf-btn-more").removeClass("tf-btn-more-up").addClass("tf-btn-more-down");
 
-            btnMore.removeClass("btn-more-down").addClass("btn-more-up");
+            btnMore.removeClass("tf-btn-more-down").addClass("tf-btn-more-up");
 
             // this has to be the last line and after the hash change
             categoryBody.slideDown(duration, function() { togglingContent = false });
         }
         else {
-            btnMore.removeClass("btn-more-up").addClass("btn-more-down");
+            btnMore.removeClass("tf-btn-more-up").addClass("tf-btn-more-down");
 
             if (/software-/.test(location.hash)) {
                 location.hash = "/software-none-open";
@@ -1005,18 +1065,42 @@ def make_hardware_devices_toctree(device_infos):
 
     return prefix + '\n'.join(lines) + '\n'
 
-def make_software_devices_toctree(bindings_info, device_infos, category):
+def make_hardware_devices_table(device_infos):
+    table_head = {
+    'en': """
+.. csv-table::
+   :header: "Name", "Description"
+   :widths: 25, 75
+
+""",
+    'de': """
+.. csv-table::
+   :header: "Name", "Beschreibung"
+   :widths: 25, 75
+
+"""
+}
+    row = '   ":ref:`{0} <{1}>`", "{2}"'
+    rows = []
+
+    for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
+        if device_info.is_documented:
+            rows.append(row.format(device_info.short_display_name, device_info.ref_name, device_info.description[lang].replace('"', "inch")))
+
+    return table_head[lang] + '\n'.join(rows) + '\n'
+
+def make_software_devices_toctree(bindings_info, device_infos, category, ref_prefix):
     prefix = """
 .. toctree::
    :hidden:
 
 """
-    line = '   {0} <{1}/{2}_{3}>'
+    line = '   {0} <{1}{2}/{3}_{4}>'
     lines = []
 
     for device_info in sorted(device_infos, key=lambda x: x.short_display_name.lower()):
         if device_info.has_bindings and device_info.is_documented:
-            lines.append(line.format(device_info.long_display_name, category, device_info.software_doc_prefix, bindings_info.software_doc_suffix))
+            lines.append(line.format(device_info.long_display_name, ref_prefix, category, device_info.software_doc_prefix, bindings_info.software_doc_suffix))
 
     return prefix + '\n'.join(lines) + '\n'
 
@@ -1102,6 +1186,21 @@ def generate(path):
     print('Generating Accessories.toctree')
     write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories.toctree'), make_hardware_devices_toctree(accessory_infos))
 
+    print('Generating Bricks.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricks', 'Bricks.table'), make_hardware_devices_table(brick_infos))
+
+    print('Generating Bricklets.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Bricklets', 'Bricklets.table'), make_hardware_devices_table(bricklet_infos))
+
+    print('Generating Master_Extensions.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Master_Extensions', 'Master_Extensions.table'), make_hardware_devices_table(extension_infos))
+
+    print('Generating Power_Supplies.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Power_Supplies', 'Power_Supplies.table'), make_hardware_devices_table(power_supply_infos))
+
+    print('Generating Accessories.table')
+    write_if_changed(os.path.join(path, 'source', 'Hardware', 'Accessories', 'Accessories.table'), make_hardware_devices_table(accessory_infos))
+
     for brick_info in brick_infos:
         if not brick_info.has_bindings:
             continue
@@ -1131,12 +1230,32 @@ def generate(path):
             write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', '{0}_links.table'.format(bindings_info.software_doc_suffix)), make_llproto_links_table(bindings_info))
 
     for bindings_info in bindings_infos:
-        print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
-        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks'))
+        if bindings_info.is_programming_language:
+            print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks', ''))
+
+            print('Generating Bricks_{0}.table'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Software', 'Bricks_{0}.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, brick_infos, 'Brick'))
+        else:
+            print('Generating Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricks_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, brick_infos, 'Bricks', '../Software/'))
+
+            print('Generating Bricks_{0}.table'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricks_{0}.table'.format(bindings_info.software_doc_suffix)), make_llproto_devices_table(bindings_info, brick_infos, 'Brick'))
 
     for bindings_info in bindings_infos:
-        print('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
-        write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets'))
+        if bindings_info.is_programming_language:
+            print('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets', ''))
+
+            print('Generating Bricklets_{0}.table'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Software', 'Bricklets_{0}.table'.format(bindings_info.software_doc_suffix)), make_api_bindings_devices_table(bindings_info, bricklet_infos, 'Bricklet'))
+        else:
+            print('Generating Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricklets_{0}.toctree'.format(bindings_info.software_doc_suffix)), make_software_devices_toctree(bindings_info, bricklet_infos, 'Bricklets', '../Software/'))
+
+            print('Generating Bricklets_{0}.table'.format(bindings_info.software_doc_suffix))
+            write_if_changed(os.path.join(path, 'source', 'Low_Level_Protocols', 'Bricklets_{0}.table'.format(bindings_info.software_doc_suffix)), make_llproto_devices_table(bindings_info, bricklet_infos, 'Bricklet'))
 
 if __name__ == "__main__":
     generate(os.getcwd())

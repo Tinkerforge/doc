@@ -13,33 +13,15 @@ Laser Range Finder Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_laser_range_finder_tilted1_350.jpg",
-	               "Bricklets/bricklet_laser_range_finder_tilted1_600.jpg",
-	               "Laser Range Finder Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_laser_range_finder_tilted2_350.jpg",
-	             "Bricklets/bricklet_laser_range_finder_tilted2_600.jpg",
-	             "Laser Range Finder Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_laser_range_finder_bottom_100.jpg",
-	             "Bricklets/bricklet_laser_range_finder_bottom_600.jpg",
-	             "Laser Range Finder Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_laser_range_finder_brickv_100.jpg",
-	             "Bricklets/bricklet_laser_range_finder_brickv.jpg",
-	             "Laser Range Finder Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/laser_range_finder_bricklet_dimensions_100.png",
-	             "Dimensions/laser_range_finder_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_laser_range_finder_tilted1_[?|?].jpg          Laser Range Finder Bricklet
+	Bricklets/bricklet_laser_range_finder_tilted2_[?|?].jpg          Laser Range Finder Bricklet
+	Bricklets/bricklet_laser_range_finder_bottom_[?|?].jpg           Laser Range Finder Bricklet
+	Bricklets/bricklet_laser_range_finder_brickv_[100|].jpg          Laser Range Finder Bricklet in Brick Viewer
+	Dimensions/laser_range_finder_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

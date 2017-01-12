@@ -13,38 +13,16 @@ Barometer Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_barometer_tilted_350.jpg",
-	               "Bricklets/bricklet_barometer_tilted_600.jpg",
-	               "Barometer Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_barometer_vertical_100.jpg",
-	             "Bricklets/bricklet_barometer_vertical_600.jpg",
-	             "Barometer Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_barometer_horizontal_100.jpg",
-	             "Bricklets/bricklet_barometer_horizontal_600.jpg",
-	             "Barometer Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
-	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
-	             "Barometer Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_barometer_brickv_100.jpg",
-	             "Bricklets/bricklet_barometer_brickv.jpg",
-	             "Barometer Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/barometer_bricklet_dimensions_100.png",
-	             "Dimensions/barometer_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_barometer_tilted_[?|?].jpg           Barometer Bricklet
+	Bricklets/bricklet_barometer_vertical_[?|?].jpg         Barometer Bricklet
+	Bricklets/bricklet_barometer_horizontal_[?|?].jpg       Barometer Bricklet
+	Cases/bricklet_ambient_light_case_built_up_[?|?].jpg    Barometer Bricklet in Case
+	Bricklets/bricklet_barometer_brickv_[100|].jpg          Barometer Bricklet in Brick Viewer
+	Dimensions/barometer_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

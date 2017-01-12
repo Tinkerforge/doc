@@ -1,0 +1,17 @@
+If a :ref:`Master Brick <master_brick>` is used on its own or in a 
+:ref:`stack <primer_stack>` communication is done by its USB interface.
+Master Extensions extends the communication interface of Master Bricks.
+There are cable based
+(:ref:`RS485 <rs485_extension>`,  :ref:`Ethernet <ethernet_extension>`) and
+wireless Master Extensions (:ref:`WIFI <wifi_v2_extension>`) available. Instead
+over USB Bricks and Bricklets can be controlled over Wi-Fi or Ethernet. RS485 can
+be used to interconnect Bricks and Bricklets over larger distances.
+
+From a programming perspective the different interfaces are transparent.
+A stack with Master Extension behaves as if every Brick in the stack
+would be directly connected to the PC over an USB connection.
+
+This means: You can develop an application with all modules independently 
+connected to the PC over USB. Later you can stack these
+modules together to stacks, add Master Bricks and cable based or wireless
+Extensions and you can run the previously written code without any changes.

@@ -13,38 +13,16 @@ Barometer Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_barometer_tilted_350.jpg",
-	               "Bricklets/bricklet_barometer_tilted_600.jpg",
-	               "Barometer Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_barometer_vertical_100.jpg",
-	             "Bricklets/bricklet_barometer_vertical_600.jpg",
-	             "Barometer Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_barometer_horizontal_100.jpg",
-	             "Bricklets/bricklet_barometer_horizontal_600.jpg",
-	             "Barometer Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
-	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
-	             "Barometer Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_barometer_brickv_100.jpg",
-	             "Bricklets/bricklet_barometer_brickv.jpg",
-	             "Barometer Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/barometer_bricklet_dimensions_100.png",
-	             "Dimensions/barometer_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_barometer_tilted_[?|?].jpg           Barometer Bricklet
+	Bricklets/bricklet_barometer_vertical_[?|?].jpg         Barometer Bricklet
+	Bricklets/bricklet_barometer_horizontal_[?|?].jpg       Barometer Bricklet
+	Cases/bricklet_ambient_light_case_built_up_[?|?].jpg    Barometer Bricklet im Gehäuse
+	Bricklets/bricklet_barometer_brickv_[100|].jpg          Barometer Bricklet im Brick Viewer
+	Dimensions/barometer_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 Features
 --------
@@ -69,7 +47,7 @@ kurze Zeiträume signifikant ändern kann ist die erreichbare Genauigkeit begren
 Eine mögliche Lösung um die Genauigkeit und Stabilität der Höhenmessung zu
 steigern ist Sensorfusion mit den Sensordaten eines :ref:`IMU Bricks <imu_brick>`
 durchzuführen (siehe 
-`Youtube video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
+`Youtube Video <https://www.youtube.com/watch?v=TaqtzG7lyp0>`__).
 
 
 Technische Spezifikation

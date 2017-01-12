@@ -9,43 +9,17 @@ WIFI Master Extension 2.0
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Extensions/extension_wifi2_tilted_350.jpg",
-	               "Extensions/extension_wifi2_tilted_800.jpg",
-	               "WIFI Extension 2.0")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi2_w_master_100.jpg",
-	             "Extensions/extension_wifi2_w_master_800.jpg",
-	             "WIFI Extension 2.0 mit Master Brick im stack")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi2_tilted_bottom_100.jpg",
-	             "Extensions/extension_wifi2_tilted_bottom_800.jpg",
-	             "WIFI Extension 2.0")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi2_hand_100.jpg",
-	             "Extensions/extension_wifi2_hand_800.jpg",
-	             "WIFI Extension 2.0 in Hand")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi2_top_100.jpg",
-	             "Extensions/extension_wifi2_top_800.jpg",
-	             "WIFI Extension 2.0 Oberseite")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_wifi2_bottom_100.jpg",
-	             "Extensions/extension_wifi2_bottom_800.jpg",
-	             "WIFI Extension 2.0 Unterseite")
-	}}
-	{{
-	    tfdocimg("Dimensions/wifi_extension_dimensions_100.png",
-	             "Extensions/wifi_extension_dimensions_600.png",
-	             "WIFI Extension 2.0 Umriss")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Extensions/extension_wifi2_tilted_[?|?].jpg         WIFI Extension 2.0
+	Extensions/extension_wifi2_w_master_[100|800].jpg   WIFI Extension 2.0 mit Master Brick im stack
+	Extensions/extension_wifi2_tilted_bottom_[?|?].jpg  WIFI Extension 2.0
+	Extensions/extension_wifi2_hand_[100|800].jpg       WIFI Extension 2.0 in Hand
+	Extensions/extension_wifi2_top_[?|?].jpg            WIFI Extension 2.0 Oberseite
+	Extensions/extension_wifi2_bottom_[?|?].jpg         WIFI Extension 2.0 Unterseite
+	Dimensions/wifi_extension_dimensions_[100|600].png  WIFI Extension 2.0 Umriss
+
+	{% tfgalleryend %}
 
 
 Features

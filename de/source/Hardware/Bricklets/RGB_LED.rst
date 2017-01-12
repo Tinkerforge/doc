@@ -16,28 +16,14 @@ Features
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_rgb_led_tilted_350.jpg",
-	               "Bricklets/bricklet_rgb_led_tilted_600.jpg",
-	               "RGB LED Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rgb_led_vertical_100.jpg",
-	             "Bricklets/bricklet_rgb_led_vertical_600.jpg",
-	             "RGB LED Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rgb_led_brickv_100.png",
-	             "Bricklets/bricklet_rgb_led_brickv.png",
-	             "RGB LED Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/rgb_led_bricklet_dimensions_100.png",
-	             "Dimensions/rgb_led_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_rgb_led_tilted_[?|?].jpg           RGB LED Bricklet
+	Bricklets/bricklet_rgb_led_vertical_[?|?].jpg         RGB LED Bricklet
+	Bricklets/bricklet_rgb_led_brickv_[100|].png          RGB LED Bricklet im Brick Viewer
+	Dimensions/rgb_led_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 Features
 --------

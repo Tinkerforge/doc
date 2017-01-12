@@ -13,33 +13,15 @@ Ambient Light Bricklet 2.0
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_ambient_light_v2_tilted_350.jpg",
-	               "Bricklets/bricklet_ambient_light_v2_tilted_600.jpg",
-	               "Ambient Light Bricklet 2.0")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ambient_light_v2_horizontal_100.jpg",
-	             "Bricklets/bricklet_ambient_light_v2_horizontal_600.jpg",
-	             "Ambient Light Bricklet 2.0")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
-	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
-	             "Ambient Light Bricklet 2.0 im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ambient_light_v2_brickv_100.jpg",
-	             "Bricklets/bricklet_ambient_light_v2_brickv.jpg",
-	             "Ambient Light Bricklet 2.0 im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/ambient_light_v2_bricklet_dimensions_100.png",
-	             "Dimensions/ambient_light_v2_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_ambient_light_v2_tilted_[?|?].jpg           Ambient Light Bricklet 2.0
+	Bricklets/bricklet_ambient_light_v2_horizontal_[?|?].jpg       Ambient Light Bricklet 2.0
+	Cases/bricklet_ambient_light_case_built_up_[?|?].jpg           Ambient Light Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_ambient_light_v2_brickv_[100|].jpg          Ambient Light Bricklet 2.0 im Brick Viewer
+	Dimensions/ambient_light_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

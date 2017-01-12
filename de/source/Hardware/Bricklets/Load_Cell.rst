@@ -13,43 +13,17 @@ Load Cell Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_load_cell_tilted1_350.jpg",
-	               "Bricklets/bricklet_load_cell_tilted1_600.jpg",
-	               "Load Cell Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_load_cell_tilted2_100.jpg",
-	             "Bricklets/bricklet_load_cell_tilted2_600.jpg",
-	             "Load Cell Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_load_cell_horizontal_100.jpg",
-	             "Bricklets/bricklet_load_cell_horizontal_600.jpg",
-	             "Load Cell Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_load_cell_case_built_up1_100.jpg",
-	             "Cases/bricklet_load_cell_case_built_up1_600.jpg",
-	             "Load Cell Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_load_cell_case_built_up2_100.jpg",
-	             "Cases/bricklet_load_cell_case_built_up2_600.jpg",
-	             "Load Cell Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_load_cell_brickv_100.jpg",
-	             "Bricklets/bricklet_load_cell_brickv.jpg",
-	             "Load Cell Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/load_cell_bricklet_dimensions_100.png",
-	             "Dimensions/load_cell_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_load_cell_tilted1_[?|?].jpg          Load Cell Bricklet
+	Bricklets/bricklet_load_cell_tilted2_[?|?].jpg          Load Cell Bricklet
+	Bricklets/bricklet_load_cell_horizontal_[?|?].jpg       Load Cell Bricklet
+	Cases/bricklet_load_cell_case_built_up1_[?|?].jpg       Load Cell Bricklet im Gehäuse
+	Cases/bricklet_load_cell_case_built_up2_[?|?].jpg       Load Cell Bricklet im Gehäuse
+	Bricklets/bricklet_load_cell_brickv_[100|].jpg          Load Cell Bricklet im Brick Viewer
+	Dimensions/load_cell_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

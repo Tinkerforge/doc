@@ -9,38 +9,16 @@ Starterkit: Kameraschlitten
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Kits/kit_camera_slider_complete1_350.jpg",
-	               "Kits/kit_camera_slider_complete1_800.jpg",
-	               "Kameraschlitten: Komplettes Kit")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_content_100.jpg",
-	             "Kits/kit_camera_slider_content_800.jpg",
-	             "Kameraschlitten: Inhalt")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_camera1_100.jpg",
-	             "Kits/kit_camera_slider_camera1_800.jpg",
-	             "Kameraschlitten: Mit Videokamera")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_camera2_100.jpg",
-	             "Kits/kit_camera_slider_camera2_800.jpg",
-	             "Kameraschlitten: Mit Kamera")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_w_lcd1_100.jpg",
-	             "Kits/kit_camera_slider_w_lcd1_800.jpg",
-	             "Kameraschlitten: Mit LCD")
-	}}
-	{{
-	    tfdocimg("Kits/kit_camera_slider_w_lcd2_100.jpg",
-	             "Kits/kit_camera_slider_w_lcd2_800.jpg",
-	             "Kameraschlitten: Mit LCD")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Kits/kit_camera_slider_complete1_[100|800].jpg  Kameraschlitten: Komplettes Kit
+	Kits/kit_camera_slider_content_[100|800].jpg    Kameraschlitten: Inhalt
+	Kits/kit_camera_slider_camera1_[100|800].jpg    Kameraschlitten: Mit Videokamera
+	Kits/kit_camera_slider_camera2_[100|800].jpg    Kameraschlitten: Mit Kamera
+	Kits/kit_camera_slider_w_lcd1_[100|800].jpg     Kameraschlitten: Mit LCD
+	Kits/kit_camera_slider_w_lcd2_[100|800].jpg     Kameraschlitten: Mit LCD
+
+	{% tfgalleryend %}
 
 
 Features
@@ -80,7 +58,7 @@ Das nachfolgende Video zeigt verschiedene Anwendungen und Erweiterungen:
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/lg0sdG7tfr4" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/lg0sdG7tfr4" frameborder="0" allowfullscreen></iframe>
 
 
 Technische Spezifikation

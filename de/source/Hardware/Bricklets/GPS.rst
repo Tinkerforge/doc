@@ -13,38 +13,16 @@ GPS Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_gps_tilted_350.jpg",
-	               "Bricklets/bricklet_gps_tilted_600.jpg",
-	               "GPS Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_gps_horizontal_100.jpg",
-	             "Bricklets/bricklet_gps_horizontal_600.jpg",
-	             "GPS Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_gps_battery_100.jpg",
-	             "Bricklets/bricklet_gps_battery_600.jpg",
-	             "GPS Bricklet")
-	}}
-    {{
-	    tfdocimg("Cases/bricklet_gps_case_100.jpg",
-	             "Cases/bricklet_gps_case_600.jpg",
-	             "GPS Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_gps_brickv_100.jpg",
-	             "Bricklets/bricklet_gps_brickv.jpg",
-	             "GPS Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/gps_bricklet_dimensions_100.png",
-	             "Dimensions/gps_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_gps_tilted_[?|?].jpg           GPS Bricklet
+	Bricklets/bricklet_gps_horizontal_[?|?].jpg       GPS Bricklet
+	Bricklets/bricklet_gps_battery_[100|600].jpg      GPS Bricklet
+	Cases/bricklet_gps_case_[100|600].jpg             GPS Bricklet im Gehäuse
+	Bricklets/bricklet_gps_brickv_[100|].jpg          GPS Bricklet im Brick Viewer
+	Dimensions/gps_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 Features
 --------

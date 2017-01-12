@@ -14,48 +14,18 @@ Moisture Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_moisture_v11_tilted1_350.jpg",
-	               "Bricklets/bricklet_moisture_v11_tilted1_600.jpg",
-	               "Moisture Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_moisture_v11_horizontal_100.jpg",
-	             "Bricklets/bricklet_moisture_v11_horizontal_600.jpg",
-	             "Moisture Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_moisture_v11_tilted2_100.jpg",
-	             "Bricklets/bricklet_moisture_v11_tilted2_600.jpg",
-	             "Moisture Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_moisture_v11_case_built_up_100.jpg",
-	             "Cases/bricklet_moisture_v11_case_built_up_600.jpg",
-	             "Moisture Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_moisture_plant1_100.jpg",
-	             "Bricklets/bricklet_moisture_plant1_600.jpg",
-	             "Moisture Bricklet in Erde einer Pflanze")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_moisture_plant2_100.jpg",
-	             "Bricklets/bricklet_moisture_plant2_600.jpg",
-	             "Moisture Bricklet in Erde einer Pflanze")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_moisture_brickv_100.jpg",
-	             "Bricklets/bricklet_moisture_brickv.jpg",
-	             "Moisture Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/moisture_bricklet_v11_dimensions_100.png",
-	             "Dimensions/moisture_bricklet_v11_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_moisture_v11_tilted1_[?|?].jpg          Moisture Bricklet
+	Bricklets/bricklet_moisture_v11_horizontal_[?|?].jpg       Moisture Bricklet
+	Bricklets/bricklet_moisture_v11_tilted2_[?|?].jpg          Moisture Bricklet
+	Cases/bricklet_moisture_v11_case_built_up_[?|?].jpg        Moisture Bricklet im Gehäuse
+	Bricklets/bricklet_moisture_plant1_[100|600].jpg           Moisture Bricklet in Erde einer Pflanze
+	Bricklets/bricklet_moisture_plant2_[100|600].jpg           Moisture Bricklet in Erde einer Pflanze
+	Bricklets/bricklet_moisture_brickv_[100|].jpg              Moisture Bricklet im Brick Viewer
+	Dimensions/moisture_bricklet_v11_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

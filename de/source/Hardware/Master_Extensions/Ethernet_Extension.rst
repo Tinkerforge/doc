@@ -9,53 +9,19 @@ Ethernet Master Extension
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Extensions/extension_ethernet11_w_and_wo_poe_350.jpg",
-	               "Extensions/extension_ethernet11_w_and_wo_poe_800.jpg",
-	               "Ethernet Extension mit und ohne PoE")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet11_w_poe_tilted_100.jpg",
-	             "Extensions/extension_ethernet11_w_poe_tilted_800.jpg",
-	             "Ethernet Extension mit PoE")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet11_wo_poe_tilted_100.jpg",
-	             "Extensions/extension_ethernet11_wo_poe_tilted_800.jpg",
-	             "Ethernet Extension ohne PoE")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet11_w_poe_stack_100.jpg",
-	             "Extensions/extension_ethernet11_w_poe_stack_800.jpg",
-	             "Ethernet Extension mit PoE auf Master Brick")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet11_wo_poe_stack_100.jpg",
-	             "Extensions/extension_ethernet11_wo_poe_stack_800.jpg",
-	             "Ethernet Extension ohne PoE auf Master Brick")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet11_w_poe_top_100.jpg",
-	             "Extensions/extension_ethernet11_w_poe_top_800.jpg",
-	             "Ethernet Extension mit PoE Oberseite")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet11_wo_poe_top_100.jpg",
-	             "Extensions/extension_ethernet11_wo_poe_top_800.jpg",
-	             "Ethernet Extension ohne PoE Oberseite")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet11_w_poe_bottom_100.jpg",
-	             "Extensions/extension_ethernet11_w_poe_bottom_800.jpg",
-	             "Ethernet Extension mit PoE Unterseite")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_ethernet11_wo_poe_bottom_100.jpg",
-	             "Extensions/extension_ethernet11_wo_poe_bottom_800.jpg",
-	             "Ethernet Extension ohne PoE Unterseite")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Extensions/extension_ethernet11_w_and_wo_poe_[100|800].jpg  Ethernet Extension mit und ohne PoE
+	Extensions/extension_ethernet11_w_poe_tilted_[?|?].jpg      Ethernet Extension mit PoE
+	Extensions/extension_ethernet11_wo_poe_tilted_[?|?].jpg     Ethernet Extension ohne PoE
+	Extensions/extension_ethernet11_w_poe_stack_[?|?].jpg       Ethernet Extension mit PoE auf Master Brick
+	Extensions/extension_ethernet11_wo_poe_stack_[?|?].jpg      Ethernet Extension ohne PoE auf Master Brick
+	Extensions/extension_ethernet11_w_poe_top_[?|?].jpg         Ethernet Extension mit PoE Oberseite
+	Extensions/extension_ethernet11_wo_poe_top_[?|?].jpg        Ethernet Extension ohne PoE Oberseite
+	Extensions/extension_ethernet11_w_poe_bottom_[?|?].jpg      Ethernet Extension mit PoE Unterseite
+	Extensions/extension_ethernet11_wo_poe_bottom_[?|?].jpg     Ethernet Extension ohne PoE Unterseite
+
+	{% tfgalleryend %}
 
 
 Features
@@ -65,7 +31,7 @@ Features
 * Unterstützt 10/100 Mbit/s Ethernet (1000 Mbit/s kompatibel)
 * Integrierte PoE Stromversorgung (PD Class 0 für IEEE 802.3af)
 
- * Ermöglicht die Stromversorgung eines Stapels per Ethernetkabel
+  * Ermöglicht die Stromversorgung eines Stapels per Ethernetkabel
 
 
 

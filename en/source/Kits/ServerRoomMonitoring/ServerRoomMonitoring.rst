@@ -11,63 +11,21 @@ Starter Kit: Server Room Monitoring
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Kits/server_room_monitoring_red_1_350.jpg",
-	               "Kits/server_room_monitoring_red_1_800.jpg",
-	               "Server Room Monitoring Kit: Front")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_alu_surface_100.jpg",
-	             "Kits/server_room_monitoring_alu_surface_800.jpg",
-	             "Server Room Monitoring Kit: Surface Aluminum")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_alu_in_hand_100.jpg",
-	             "Kits/server_room_monitoring_alu_in_hand_800.jpg",
-	             "Server Room Monitoring Kit")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_red_3_100.jpg",
-	             "Kits/server_room_monitoring_red_3_800.jpg",
-	             "Server Room Monitoring Kit: Back")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_in_rack3_100.jpg",
-	             "Kits/server_room_monitoring_in_rack3_800.jpg",
-	             "Server Room Monitoring Kit: In Rack")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_red_2_100.jpg",
-	             "Kits/server_room_monitoring_red_2_800.jpg",
-	             "Server Room Monitoring Kit: Front")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_content_100.jpg",
-	             "Kits/server_room_monitoring_content_800.jpg",
-	             "Server Room Monitoring Kit: Content")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_extended_100.jpg",
-	             "Kits/server_room_monitoring_extended_800.jpg",
-	             "Server Room Monitoring Kit: Extended Version")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_iqr_100.jpg",
-	             "Kits/server_room_monitoring_iqr_800.jpg",
-	             "Server Room Monitoring Kit: Switching Power")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_in_rack1_100.jpg",
-	             "Kits/server_room_monitoring_in_rack1_800.jpg",
-	             "Server Room Monitoring Kit: In Rack")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_in_rack2_100.jpg",
-	             "Kits/server_room_monitoring_in_rack2_800.jpg",
-	             "Server Room Monitoring Kit: In Rack")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Kits/server_room_monitoring_red_1_[100|800].jpg        Server Room Monitoring Kit: Front
+	Kits/server_room_monitoring_alu_surface_[100|800].jpg  Server Room Monitoring Kit: Surface Aluminum
+	Kits/server_room_monitoring_alu_in_hand_[100|800].jpg  Server Room Monitoring Kit
+	Kits/server_room_monitoring_red_3_[100|800].jpg        Server Room Monitoring Kit: Back
+	Kits/server_room_monitoring_in_rack3_[100|800].jpg     Server Room Monitoring Kit: In Rack
+	Kits/server_room_monitoring_red_2_[100|800].jpg        Server Room Monitoring Kit: Front
+	Kits/server_room_monitoring_content_[100|800].jpg      Server Room Monitoring Kit: Content
+	Kits/server_room_monitoring_extended_[100|800].jpg     Server Room Monitoring Kit: Extended Version
+	Kits/server_room_monitoring_iqr_[100|800].jpg          Server Room Monitoring Kit: Switching Power
+	Kits/server_room_monitoring_in_rack1_[100|800].jpg     Server Room Monitoring Kit: In Rack
+	Kits/server_room_monitoring_in_rack2_[100|800].jpg     Server Room Monitoring Kit: In Rack
+
+	{% tfgalleryend %}
 
 
 Features

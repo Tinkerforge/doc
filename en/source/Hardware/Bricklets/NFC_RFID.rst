@@ -13,43 +13,17 @@ NFC/RFID Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_nfc_rfid_tilted_350.jpg",
-	               "Bricklets/bricklet_nfc_rfid_tilted_600.jpg",
-	               "NFC/RFID Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_nfc_rfid_w_master_100.jpg",
-	             "Bricklets/bricklet_nfc_rfid_w_master_600.jpg",
-	             "NFC/RFID Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_nfc_rfid_horizontal_100.jpg",
-	             "Bricklets/bricklet_nfc_rfid_horizontal_600.jpg",
-	             "NFC/RFID Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_nfc_rfid_w_keyfob_100.jpg",
-	             "Bricklets/bricklet_nfc_rfid_w_keyfob_600.jpg",
-	             "NFC/RFID Bricklet with keyfob")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_nfc_rfid_case_tilted_100.jpg",
-	             "Cases/bricklet_nfc_rfid_case_tilted_600.jpg",
-	             "NFC/RFID Bricklet with case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_nfc_rfid_brickv_100.jpg",
-	             "Bricklets/bricklet_nfc_rfid_brickv.jpg",
-	             "NFC/RFID Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/nfc_rfid_bricklet_dimensions_100.png",
-	             "Dimensions/nfc_rfid_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_nfc_rfid_tilted_[?|?].jpg           NFC/RFID Bricklet
+	Bricklets/bricklet_nfc_rfid_w_master_[100|600].jpg     NFC/RFID Bricklet with Master Brick
+	Bricklets/bricklet_nfc_rfid_horizontal_[?|?].jpg       NFC/RFID Bricklet
+	Bricklets/bricklet_nfc_rfid_w_keyfob_[100|600].jpg     NFC/RFID Bricklet with keyfob
+	Cases/bricklet_nfc_rfid_case_tilted_[?|?].jpg          NFC/RFID Bricklet with case
+	Bricklets/bricklet_nfc_rfid_brickv_[100|].jpg          NFC/RFID Bricklet in Brick Viewer
+	Dimensions/nfc_rfid_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

@@ -93,10 +93,10 @@ Flags:
   answer message to a function call. If it is different from zero it means that
   an error occurred.
 
- * 0: OK
- * 1: Invalid parameter (index out-of-range or similar)
- * 2: Function not supported
- * Value 3 is not used yet
+  * 0: OK
+  * 1: Invalid parameter (index out-of-range or similar)
+  * 2: Function not supported
+  * Value 3 is not used yet
 
 * Future Use (6 bit): Six possible flags for future use.
 
@@ -412,5 +412,5 @@ following table. Further project descriptions can be found in the
 .. toctree::
    :hidden:
 
-   Bricks <../Software/Bricks_TCPIP>
-   Bricklets <../Software/Bricklets_TCPIP>
+   Bricks <Bricks_TCPIP>
+   Bricklets <Bricklets_TCPIP>

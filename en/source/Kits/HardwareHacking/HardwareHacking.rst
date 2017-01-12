@@ -11,49 +11,18 @@ Starter Kit: Hardware Hacking
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Kits/hardware_hacking_kit_tilted_350.jpg",
-	               "Kits/hardware_hacking_kit_tilted_800.jpg",
-	               "Hardware Hacking: Soldered Kit with Mains Sockets")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_remote_finished_100.jpg",
-	             "Kits/hardware_hacking_remote_finished_800.jpg",
-	             "Hardware Hacking: Kit with Remote Switches")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_smoke_detector_finished_100.jpg",
-	             "Kits/hardware_hacking_smoke_detector_finished_800.jpg",
-	             "Hardware Hacking: Kit with Smoke Detector")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_garage_remote_finished_100.jpg",
-	             "Kits/hardware_hacking_garage_remote_finished_800.jpg",
-	             "Hardware Hacking: Kit with Garage Door Remote")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_smoke_detector_and_remote_new_100.jpg",
-	             "Kits/hardware_hacking_smoke_detector_and_remote_new_800.jpg",
-	             "Hardware Hacking: Kit with Remote Switches and Smoke Detector")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_content_100.jpg",
-	             "Kits/hardware_hacking_content_800.jpg",
-	             "Hardware Hacking: Content")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_remote_soldered_closeup_remote_100.jpg",
-	             "Kits/hardware_hacking_remote_soldered_closeup_remote_800.jpg",
-	             "Hardware Hacking: Remote soldered")
-	}}
-	{{
-	    tfdocimg("Kits/hardware_hacking_remote_soldered_closeup_iqr_top_100.jpg",
-	             "Kits/hardware_hacking_remote_soldered_closeup_iqr_top_800.jpg",
-	             "Hardware Hacking: Quad Relay wiring")
-	}}
+	{% tfgallery %}
 
-	{{ tfdocend() }}
+	Kits/hardware_hacking_kit_tilted_[?|?].jpg                          Hardware Hacking: Soldered Kit with Mains Sockets
+	Kits/hardware_hacking_remote_finished_[100|800].jpg                 Hardware Hacking: Kit with Remote Switches
+	Kits/hardware_hacking_smoke_detector_finished_[100|800].jpg         Hardware Hacking: Kit with Smoke Detector
+	Kits/hardware_hacking_garage_remote_finished_[100|800].jpg          Hardware Hacking: Kit with Garage Door Remote
+	Kits/hardware_hacking_smoke_detector_and_remote_new_[100|800].jpg   Hardware Hacking: Kit with Remote Switches and Smoke Detector
+	Kits/hardware_hacking_content_[100|800].jpg                         Hardware Hacking: Content
+	Kits/hardware_hacking_remote_soldered_closeup_remote_[100|800].jpg  Hardware Hacking: Remote soldered
+	Kits/hardware_hacking_remote_soldered_closeup_iqr_top_[?|?].jpg     Hardware Hacking: Quad Relay wiring
+
+	{% tfgalleryend %}
 
 
 Features
@@ -118,7 +87,7 @@ can be found on Youtube:
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/hHnhflS3260" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/hHnhflS3260" frameborder="0" allowfullscreen></iframe>
 
 Technical Specifications
 ------------------------

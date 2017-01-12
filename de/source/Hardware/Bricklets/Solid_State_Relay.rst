@@ -13,53 +13,19 @@ Solid State Relay Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_ssr_w_ssr_350.jpg",
-	               "Bricklets/bricklet_ssr_w_ssr_600.jpg",
-	               "Solid State Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ssr_w_master_100.jpg",
-	             "Bricklets/bricklet_ssr_w_master_600.jpg",
-	             "Solid State Relay Bricklet mit Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ssr_vertical_100.jpg",
-	             "Bricklets/bricklet_ssr_vertical_600.jpg",
-	             "Solid State Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ssr_tilted_100.jpg",
-	             "Bricklets/bricklet_ssr_tilted_600.jpg",
-	             "Solid State Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ssr_w_cover_100.jpg",
-	             "Bricklets/bricklet_ssr_w_cover_600.jpg",
-	             "Solid State Relay Bricklet mit Abdeckung")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ssr_w_heatsink_tilted_low_100.jpg",
-	             "Bricklets/bricklet_ssr_w_heatsink_tilted_low_600.jpg",
-	             "Solid State Relay Bricklet mit Kühlkörper")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ssr_w_heatsink_tilted_100.jpg",
-	             "Bricklets/bricklet_ssr_w_heatsink_tilted_600.jpg",
-	             "Solid State Relay Bricklet mit Kühlkörper")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_solid_state_relay_brickv_100.jpg",
-	             "Bricklets/bricklet_solid_state_relay_brickv.jpg",
-	             "Solid State Relay Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/solid_state_relay_bricklet_dimensions_100.png",
-	             "Dimensions/solid_state_relay_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_ssr_w_ssr_[100|600].jpg                      Solid State Relay Bricklet
+	Bricklets/bricklet_ssr_w_master_[100|600].jpg                   Solid State Relay Bricklet mit Master Brick
+	Bricklets/bricklet_ssr_vertical_[?|?].jpg                       Solid State Relay Bricklet
+	Bricklets/bricklet_ssr_tilted_[?|?].jpg                         Solid State Relay Bricklet
+	Bricklets/bricklet_ssr_w_cover_[100|600].jpg                    Solid State Relay Bricklet mit Abdeckung
+	Bricklets/bricklet_ssr_w_heatsink_tilted_low_[?|?].jpg          Solid State Relay Bricklet mit Kühlkörper
+	Bricklets/bricklet_ssr_w_heatsink_tilted_[?|?].jpg              Solid State Relay Bricklet mit Kühlkörper
+	Bricklets/bricklet_solid_state_relay_brickv_[100|].jpg          Solid State Relay Bricklet im Brick Viewer
+	Dimensions/solid_state_relay_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

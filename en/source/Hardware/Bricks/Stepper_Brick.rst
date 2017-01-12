@@ -12,43 +12,17 @@ Stepper Brick
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricks/brick_stepper_tilted_front_350.jpg",
-	               "Bricks/brick_stepper_tilted_front_600.jpg",
-	               "Stepper Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_stepper_tilted_back_100.jpg",
-	             "Bricks/brick_stepper_tilted_back_600.jpg",
-	             "Stepper Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_stepper_motor_setup_100.jpg",
-	             "Bricks/brick_stepper_motor_setup_600.jpg",
-	             "Stepper Brick with motor")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_stepper_caption_100.jpg",
-	             "Bricks/brick_stepper_caption_600.jpg",
-	             "Stepper Brick with caption")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_stepper_top_100.jpg",
-	             "Bricks/brick_stepper_top_600.jpg",
-	             "Stepper Brick top")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_stepper_bottom_100.jpg",
-	             "Bricks/brick_stepper_bottom_600.jpg",
-	             "Stepper Brick bottom")
-	}}
-	{{
-	    tfdocimg("Dimensions/stepper_brick_dimensions_100.png",
-	             "Dimensions/stepper_brick_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricks/brick_stepper_tilted_front_[?|?].jpg        Stepper Brick
+	Bricks/brick_stepper_tilted_back_[?|?].jpg         Stepper Brick
+	Bricks/brick_stepper_motor_setup_[?|?].jpg         Stepper Brick with motor
+	Bricks/brick_stepper_caption_[?|?].jpg             Stepper Brick with caption
+	Bricks/brick_stepper_top_[?|?].jpg                 Stepper Brick top
+	Bricks/brick_stepper_bottom_[?|?].jpg              Stepper Brick bottom
+	Dimensions/stepper_brick_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

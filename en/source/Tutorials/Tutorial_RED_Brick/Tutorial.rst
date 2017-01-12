@@ -43,8 +43,8 @@ At first you need to install the :ref:`Brick Daemon <brickd>`
 and the :ref:`Brick Viewer <brickv>` on your PC or Mac.
 Follow the documented steps:
 
- * :ref:`Brick Daemon Installation <brickd_installation>`
- * :ref:`Brick Viewer Installation <brickv_installation>`
+* :ref:`Brick Daemon Installation <brickd_installation>`
+* :ref:`Brick Viewer Installation <brickv_installation>`
 
 Test the RED Brick
 ------------------

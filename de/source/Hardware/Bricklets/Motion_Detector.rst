@@ -14,33 +14,15 @@ Motion Detector Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_motion_detector_tilted_350.jpg",
-	               "Bricklets/bricklet_motion_detector_tilted_600.jpg",
-	               "Motion Detector Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_motion_detector_horizontal_100.jpg",
-	             "Bricklets/bricklet_motion_detector_horizontal_600.jpg",
-	             "Motion Detector Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_motion_detector_case_tilted_100.jpg",
-	             "Cases/bricklet_motion_detector_case_tilted_600.jpg",
-	             "Motion Detector Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_motion_detector_brickv_100.jpg",
-	             "Bricklets/bricklet_motion_detector_brickv.jpg",
-	             "Motion Detector Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/motion_detector_bricklet_dimensions_100.png",
-	             "Dimensions/motion_detector_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_motion_detector_tilted_[?|?].jpg           Motion Detector Bricklet
+	Bricklets/bricklet_motion_detector_horizontal_[?|?].jpg       Motion Detector Bricklet
+	Cases/bricklet_motion_detector_case_tilted_[?|?].jpg          Motion Detector Bricklet in Case
+	Bricklets/bricklet_motion_detector_brickv_[100|].jpg          Motion Detector Bricklet im Brick Viewer
+	Dimensions/motion_detector_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

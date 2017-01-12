@@ -14,38 +14,16 @@ Dual Button Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_dual_button_tilted_350.jpg",
-	               "Bricklets/bricklet_dual_button_tilted_600.jpg",
-	               "Dual Button Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_button_vertical_100.jpg",
-	             "Bricklets/bricklet_dual_button_vertical_600.jpg",
-	             "Dual Button Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_button_horizontal_100.jpg",
-	             "Bricklets/bricklet_dual_button_horizontal_600.jpg",
-	             "Dual Button Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_button_tilted_back_100.jpg",
-	             "Bricklets/bricklet_dual_button_tilted_back_600.jpg",
-	             "Dual Button Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_dual_button_brickv_100.jpg",
-	             "Bricklets/bricklet_dual_button_brickv.jpg",
-	             "Dual Button Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/dual_button_bricklet_dimensions_100.png",
-	             "Dimensions/dual_button_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_dual_button_tilted_[?|?].jpg           Dual Button Bricklet
+	Bricklets/bricklet_dual_button_vertical_[?|?].jpg         Dual Button Bricklet
+	Bricklets/bricklet_dual_button_horizontal_[?|?].jpg       Dual Button Bricklet
+	Bricklets/bricklet_dual_button_tilted_back_[?|?].jpg      Dual Button Bricklet
+	Bricklets/bricklet_dual_button_brickv_[100|].jpg          Dual Button Bricklet im Brick Viewer
+	Dimensions/dual_button_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

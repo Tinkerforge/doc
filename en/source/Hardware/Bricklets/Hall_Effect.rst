@@ -14,38 +14,16 @@ Hall Effect Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_hall_effect_tilted_350.jpg",
-	               "Bricklets/bricklet_hall_effect_tilted_600.jpg",
-	               "Hall Effect Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_hall_effect_vertical_100.jpg",
-	             "Bricklets/bricklet_hall_effect_vertical_600.jpg",
-	             "Hall Effect Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_hall_effect_horizontal_100.jpg",
-	             "Bricklets/bricklet_hall_effect_horizontal_600.jpg",
-	             "Hall Effect Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_hall_effect_tilted_back_100.jpg",
-	             "Bricklets/bricklet_hall_effect_tilted_back_600.jpg",
-	             "Hall Effect Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_hall_effect_brickv_100.jpg",
-	             "Bricklets/bricklet_hall_effect_brickv.jpg",
-	             "Hall Effect Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/hall_effect_bricklet_dimensions_100.png",
-	             "Dimensions/hall_effect_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_hall_effect_tilted_[?|?].jpg           Hall Effect Bricklet
+	Bricklets/bricklet_hall_effect_vertical_[?|?].jpg         Hall Effect Bricklet
+	Bricklets/bricklet_hall_effect_horizontal_[?|?].jpg       Hall Effect Bricklet
+	Bricklets/bricklet_hall_effect_tilted_back_[?|?].jpg      Hall Effect Bricklet
+	Bricklets/bricklet_hall_effect_brickv_[100|].jpg          Hall Effect Bricklet in Brick Viewer
+	Dimensions/hall_effect_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

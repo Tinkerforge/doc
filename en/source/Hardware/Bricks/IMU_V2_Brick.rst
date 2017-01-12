@@ -12,43 +12,17 @@ IMU Brick 2.0
 
 .. raw:: html
 
-    {% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-    {{
-        tfdocstart("Bricks/brick_imu_v2_tilted1_350.jpg",
-                   "Bricks/brick_imu_v2_tilted1_800.jpg",
-                   "IMU Brick 2.0")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_v2_tilted2_100.jpg",
-                 "Bricks/brick_imu_v2_tilted2_800.jpg",
-                 "IMU Brick 2.0")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_v2_front_100.jpg",
-                 "Bricks/brick_imu_v2_front_800.jpg",
-                 "IMU Brick 2.0")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_v2_caption_100.jpg",
-                 "Bricks/brick_imu_v2_caption_800.jpg",
-                 "IMU Brick 2.0 with caption")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_v2_top_100.jpg",
-                 "Bricks/brick_imu_v2_top_800.jpg",
-                 "IMU Brick 2.0 top")
-    }}
-    {{
-        tfdocimg("Bricks/brick_imu_v2_bottom_100.jpg",
-                 "Bricks/brick_imu_v2_bottom_800.jpg",
-                 "IMU Brick 2.0 bottom")
-    }}
-    {{
-        tfdocimg("Dimensions/imu_brick_dimensions_100.png",
-                 "Dimensions/imu_brick_dimensions_600.png",
-                 "Outline and drilling plan")
-    }}
-    {{ tfdocend() }}
+    {% tfgallery %}
+
+	Bricks/brick_imu_v2_tilted1_[?|?].jpg          IMU Brick 2.0
+	Bricks/brick_imu_v2_tilted2_[?|?].jpg          IMU Brick 2.0
+	Bricks/brick_imu_v2_front_[?|?].jpg            IMU Brick 2.0
+	Bricks/brick_imu_v2_caption_[?|?].jpg          IMU Brick 2.0 with caption
+	Bricks/brick_imu_v2_top_[?|?].jpg              IMU Brick 2.0 top
+	Bricks/brick_imu_v2_bottom_[?|?].jpg           IMU Brick 2.0 bottom
+	Dimensions/imu_brick_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features
@@ -105,7 +79,7 @@ A comparison video between IMU Brick 1.0 and IMU Brick 2.0 is available on Youtu
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/Aq3SqVen5AQ" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/Aq3SqVen5AQ" frameborder="0" allowfullscreen></iframe>
 
 Technical Specifications
 ------------------------

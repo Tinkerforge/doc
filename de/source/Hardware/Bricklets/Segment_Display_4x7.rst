@@ -14,38 +14,16 @@ Segment Display 4x7 Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_segment_display_4x7_tilted_350.jpg",
-	               "Bricklets/bricklet_segment_display_4x7_tilted_600.jpg",
-	               "Segment Display 4x7 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_segment_display_4x7_horizontal_100.jpg",
-	             "Bricklets/bricklet_segment_display_4x7_horizontal_600.jpg",
-	             "Segment Display 4x7 Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_segment_display_4x7_case_tilted_100.jpg",
-	             "Cases/bricklet_segment_display_4x7_case_tilted_600.jpg",
-	             "Segment Display 4x7 Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_segment_display_4x7_leds_on_100.jpg",
-	             "Bricklets/bricklet_segment_display_4x7_leds_on_600.jpg",
-	             "Segment Display 4x7 Bricklet aktiv")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_segment_display_4x7_brickv_100.jpg",
-	             "Bricklets/bricklet_segment_display_4x7_brickv.jpg",
-	             "Segment Display 4x7 Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/segment_display_4x7_bricklet_dimensions_100.png",
-	             "Dimensions/segment_display_4x7_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_segment_display_4x7_tilted_[?|?].jpg           Segment Display 4x7 Bricklet
+	Bricklets/bricklet_segment_display_4x7_horizontal_[?|?].jpg       Segment Display 4x7 Bricklet
+	Cases/bricklet_segment_display_4x7_case_tilted_[?|?].jpg          Segment Display 4x7 Bricklet im Gehäuse
+	Bricklets/bricklet_segment_display_4x7_leds_on_[100|600].jpg      Segment Display 4x7 Bricklet aktiv
+	Bricklets/bricklet_segment_display_4x7_brickv_[100|].jpg          Segment Display 4x7 Bricklet im Brick Viewer
+	Dimensions/segment_display_4x7_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

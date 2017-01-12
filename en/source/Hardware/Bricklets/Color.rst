@@ -13,38 +13,16 @@ Color Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_color_tilted_350.jpg",
-	               "Bricklets/bricklet_color_tilted_600.jpg",
-	               "Color Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_color_w_master_100.jpg",
-	             "Bricklets/bricklet_color_w_master_600.jpg",
-	             "Color Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_color_horizontal_100.jpg",
-	             "Bricklets/bricklet_color_horizontal_600.jpg",
-	             "Color Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_color_in_action_100.jpg",
-	             "Bricklets/bricklet_color_in_action_600.jpg",
-	             "Color Bricklet in action")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_color_brickv_100.jpg",
-	             "Bricklets/bricklet_color_brickv.jpg",
-	             "Color Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/color_bricklet_dimensions_100.png",
-	             "Dimensions/color_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_color_tilted_[?|?].jpg           Color Bricklet
+	Bricklets/bricklet_color_w_master_[100|600].jpg     Color Bricklet with Master Brick
+	Bricklets/bricklet_color_horizontal_[?|?].jpg       Color Bricklet
+	Bricklets/bricklet_color_in_action_[100|600].jpg    Color Bricklet in action
+	Bricklets/bricklet_color_brickv_[100|].jpg          Color Bricklet in Brick Viewer
+	Dimensions/color_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

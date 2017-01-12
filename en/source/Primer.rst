@@ -42,11 +42,17 @@ Bricks
 
  .. list-table::
 
-  * - .. image:: /Images/Bricks/brick_master_tilted_front_100.jpg
+  * - .. image:: /Images/Bricks/brick_red_tilted_top_front_100.jpg
+       :scale: 100 %
+       :alt: RED Brick
+       :align: center
+       :target: _images/Bricks/brick_red_tilted_top_front_800.jpg
+
+    - .. image:: /Images/Bricks/brick_master21_tilted_front_100.jpg
        :scale: 100 %
        :alt: Master Brick
        :align: center
-       :target: _images/Bricks/brick_master_tilted_front_800.jpg
+       :target: _images/Bricks/brick_master21_tilted_front_800.jpg
 
     - .. image:: /Images/Bricks/brick_dc_tilted_front_100.jpg
        :scale: 100 %
@@ -66,29 +72,13 @@ Bricks
        :align: center
        :target: _images/Bricks/brick_servo_tilted_front_800.jpg
 
-    - .. image:: /Images/Bricks/brick_imu_tilted_front_100.jpg
+    - .. image:: /Images/Bricks/brick_imu_v2_tilted1_100.jpg
        :scale: 100 %
-       :alt: IMU Brick
+       :alt: IMU Brick 2.0
        :align: center
-       :target: _images/Bricks/brick_imu_tilted_front_800.jpg
+       :target: _images/Bricks/brick_imu_v2_tilted1_800.jpg
 
-Bricks are 4 x 4cm (1.57 x 1.57") modules that can be controlled by devices, 
-such as (embedded) PCs, over their Mini-USB connector. Every Brick basically 
-performs one task. There are Bricks that perform complex sensor tasks (e.g. 
-:ref:`IMU Brick <imu_brick>`), communicate (e.g. 
-:ref:`Master Brick <master_brick>`) and drive motors 
-(e.g. :ref:`DC Brick <dc_brick>`).
-
-With :ref:`Bricklets <primer_bricklets>` the features of Bricks can
-be extended. Dependent on the Brick it has two or four connectors for Bricklets.
-
-Bricks can be assembled into a stack (see 
-:ref:`description of stack concept <primer_stack>`). The USB interface of a 
-Master Brick can be replaced by Wi-Fi, Ethernet or RS485 with
-:ref:`Master Extensions <primer_master_extensions>`. In conjunction with the 
-stack concept all Bricks and Bricklets can be controlled by Wi-Fi or Ethernet
-instead by USB.
-
+.. include:: Primer_bricks.content
 
 .. include:: Primer_bricks.table
 
@@ -138,29 +128,13 @@ Bricklets
        :align: center
        :target: _images/Bricklets/bricklet_distance_ir_tilted_800.jpg
 
-    - .. image:: /Images/Bricklets/bricklet_voltage_tilted_100.jpg
+    - .. image:: /Images/Bricklets/bricklet_analog_in_v2_tilted1_100.jpg
        :scale: 100 %
-       :alt: Voltage Bricklet
+       :alt: Analog In Bricklet 2.0
        :align: center
-       :target: _images/Bricklets/bricklet_voltage_tilted_800.jpg
+       :target: _images/Bricklets/bricklet_analog_in_v2_tilted1_800.jpg
 
-Bricklets can be used to extend the features of
-:ref:`Bricks <primer_bricks>`. There are Bricklets to measure
-physical quantity such as rotation, voltage, current and ambient light
-as well as Bricklets for control purposes such as switching relays, digital
-input/output and alphanumeric output on LCDs.
-
-Unlike Bricks, Bricklets have no fixed size. Each Bricklet has the minimum
-size possible. Each Brick has up to four connectors for Bricklets. Bricklets
-can be controlled over the USB connection of the connected Brick.
-
-Bricklets are not equipped with processors but possess their own API.
-From the programmer perspective they are handled as an independent modules.
-On startup a Brick detects connected Bricklets. The Bricklet plugins,
-stored in the `EEPROM <https://en.wikipedia.org/wiki/EEPROM>`__ of the Bricklet,
-are loaded into the flash of the Brick. This adds new functions to the Brick,
-that can then be used from the PC.
-
+.. include:: Primer_bricklets.content
 
 .. include:: Primer_bricklets.table
 
@@ -186,35 +160,19 @@ Master Extensions
        :align: center
        :target: _images/Extensions/extension_ethernet_tilted_800.jpg
 
-    - .. image:: /Images/Extensions/extension_rs485_tilted_100.jpg
+    - .. image:: /Images/Extensions/extension_rs485_v11_tilted_100.jpg
        :scale: 100 %
        :alt: RS485 Extension
        :align: center
-       :target: _images/Extensions/extension_rs485_tilted_800.jpg
+       :target: _images/Extensions/extension_rs485_v11_tilted_800.jpg
 
-    - .. image:: /Images/Extensions/extension_wifi_tilted_100.jpg
+    - .. image:: /Images/Extensions/extension_wifi2_tilted_100.jpg
        :scale: 100 %
-       :alt: WIFI Extension
+       :alt: WIFI Extension 2.0
        :align: center
-       :target: _images/Extensions/extension_wifi_tilted_800.jpg
+       :target: _images/Extensions/extension_wifi2_tilted_800.jpg
 
-If a :ref:`Master Brick <master_brick>` is used on its own or in a 
-:ref:`stack <primer_stack>` communication is done by its USB interface.
-Master Extensions extends the communication interface of Master Bricks.
-There are cable based
-(:ref:`RS485 <rs485_extension>`,  :ref:`Ethernet <ethernet_extension>`) and
-wireless Master Extensions (:ref:`WIFI <wifi_extension>`) available. Instead
-over USB Bricks and Bricklets can be controlled over Wi-Fi or Ethernet. RS485 can
-be used to interconnect Bricks and Bricklets over larger distances.
-
-From a programming perspective the different interfaces are transparent.
-A stack with Master Extension behaves as if every Brick in the stack
-would be directly connected to the PC over an USB connection.
-
-This means: You can develop an application with all modules independently 
-connected to the PC over USB. Later you can stack these
-modules together to stacks, add Master Bricks and cable based or wireless
-Extensions and you can run the previously written code without any changes.
+.. include:: Primer_extensions.content
 
 .. include:: Primer_extensions.table
 
@@ -234,16 +192,7 @@ Power Supplies
        :align: center
        :target: _images/Power_Supplies/powersupply_tilted_front_800.jpg
 
-:ref:`Bricks <primer_bricks>` and :ref:`Bricklets <primer_bricklets>` can be
-powered by the USB connector of the Brick. :ref:`Stacks <primer_stack>` can 
-also be powered by the master of the stack over its USB connection. This option 
-is limited by the USB specification to 500mA. A large stack may need more power.
-
-To provide greater currents, Power Supplies are available.
-These modules power the stack and can additionally be used to supply the power
-for driver Bricks (e.g. :ref:`DC Brick <dc_brick>`). Power Supplies
-have the same size as :ref:`Bricks <primer_bricks>` and are
-stacked in at the bottom of the stack.
+.. include:: Primer_power_supplies.content
 
 .. include:: Primer_power_supplies.table
 
@@ -262,6 +211,8 @@ Accessories
        :alt: DC Jack Adapter
        :align: center
        :target: _images/Accessories/dc_jack_adapter_tilted_800.jpg
+
+.. include:: Primer_accessories.content
 
 .. include:: Primer_accessories.table
 

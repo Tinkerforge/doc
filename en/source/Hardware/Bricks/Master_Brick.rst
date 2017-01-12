@@ -12,43 +12,17 @@ Master Brick
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricks/brick_master21_tilted_front_350.jpg",
-	               "Bricks/brick_master21_tilted_front_800.jpg",
-	               "Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master_stack_front_big_100.jpg",
-	             "Bricks/brick_master_stack_front_big_800.jpg",
-	             "Master Brick in stack")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master_stack_back_big_100.jpg",
-	             "Bricks/brick_master_stack_back_big_800.jpg",
-                 "Master Brick in stack")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master_caption_100.jpg",
-	             "Bricks/brick_master_caption_800.jpg",
-	             "Master Brick with caption")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master21_top_100.jpg",
-	             "Bricks/brick_master21_top_800.jpg",
-	             "Master Brick top")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_master21_bottom_100.jpg",
-	             "Bricks/brick_master21_bottom_800.jpg",
-	             "Master Brick bottom")
-	}}
-	{{
-	    tfdocimg("Dimensions/master_brick_dimensions_100.png",
-	             "Dimensions/master_brick_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricks/brick_master21_tilted_front_[?|?].jpg      Master Brick
+	Bricks/brick_master_stack_front_big_[?|?].jpg     Master Brick in stack
+	Bricks/brick_master_stack_back_big_[?|?].jpg      Master Brick in stack
+	Bricks/brick_master_caption_[?|?].jpg             Master Brick with caption
+	Bricks/brick_master21_top_[?|?].jpg               Master Brick top
+	Bricks/brick_master21_bottom_[?|?].jpg            Master Brick bottom
+	Dimensions/master_brick_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

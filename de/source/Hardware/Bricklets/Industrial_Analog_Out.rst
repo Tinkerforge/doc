@@ -13,28 +13,14 @@ Industrial Analog Out Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_industrial_analog_out_tilted_350.jpg",
-	               "Bricklets/bricklet_industrial_analog_out_tilted_600.jpg",
-	               "Industrial Analog Out Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_analog_out_horizontal_100.jpg",
-	             "Bricklets/bricklet_industrial_analog_out_horizontal_600.jpg",
-	             "Industrial Analog Out Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_analog_out_brickv_100.jpg",
-	             "Bricklets/bricklet_industrial_analog_out_brickv.jpg",
-	             "Industrial Analog Out Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/industrial_analog_out_bricklet_dimensions_100.png",
-	             "Dimensions/industrial_analog_out_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_industrial_analog_out_tilted_[?|?].jpg           Industrial Analog Out Bricklet
+	Bricklets/bricklet_industrial_analog_out_horizontal_[?|?].jpg       Industrial Analog Out Bricklet
+	Bricklets/bricklet_industrial_analog_out_brickv_[100|].jpg          Industrial Analog Out Bricklet im Brick Viewer
+	Dimensions/industrial_analog_out_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

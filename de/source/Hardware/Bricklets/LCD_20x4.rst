@@ -13,43 +13,17 @@ LCD 20x4 Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_lcd12_20x4_tilted_350.jpg",
-	               "Bricklets/bricklet_lcd12_20x4_tilted_600.jpg",
-	               "LCD 20x4 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_lcd12_20x4_top_100.jpg",
-	             "Bricklets/bricklet_lcd12_20x4_top_600.jpg",
-	             "LCD 20x4 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_lcd_20x4_display_100.jpg",
-	             "Bricklets/bricklet_lcd_20x4_display_600.jpg",
-	             "LCD 20x4 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_lcd_20x4_master_100.jpg",
-	             "Bricklets/bricklet_lcd_20x4_master_600.jpg",
-	             "LCD 20x4 Bricklet mit Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_lcd_20x4_case_100.jpg",
-	             "Cases/bricklet_lcd_20x4_case_600.jpg",
-	             "LCD 20x4 Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_lcd_20x4_brickv_100.jpg",
-	             "Bricklets/bricklet_lcd_20x4_brickv.jpg",
-	             "LCD 20x4 Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/lcd_20x4_bricklet_dimensions_100.png",
-	             "Dimensions/lcd_20x4_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_lcd12_20x4_tilted_[?|?].jpg         LCD 20x4 Bricklet
+	Bricklets/bricklet_lcd12_20x4_top_[?|?].jpg            LCD 20x4 Bricklet
+	Bricklets/bricklet_lcd_20x4_display_[100|600].jpg      LCD 20x4 Bricklet
+	Bricklets/bricklet_lcd_20x4_master_[100|600].jpg       LCD 20x4 Bricklet mit Master Brick
+	Cases/bricklet_lcd_20x4_case_[100|600].jpg             LCD 20x4 Bricklet im Gehäuse
+	Bricklets/bricklet_lcd_20x4_brickv_[100|].jpg          LCD 20x4 Bricklet im Brick Viewer
+	Dimensions/lcd_20x4_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

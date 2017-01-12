@@ -117,9 +117,9 @@ The WebSocket port option has ``listen.websocket_port`` as key. An value of
 Here is the WebSocket part of an example configuration using the recommended
 value 4280 as WebSocket port:
 
-  .. code-block:: none
+.. code-block:: none
 
-    listen.websocket_port = 4280
+  listen.websocket_port = 4280
 
 Afterwards Brick Daemon has to be restarted to pick up the configuration
 change. Now the browser version of the :ref:`JavaScript bindings

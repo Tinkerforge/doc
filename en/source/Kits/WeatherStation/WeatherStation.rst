@@ -11,58 +11,20 @@ Starter Kit: Weather Station
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Kits/weather_station_table_350.jpg",
-	               "Kits/weather_station_table_800.jpg",
-	               "Weather Station: Basic Kit on table")
-	}}
-	{{
-	    tfdocimg("Kits/weather_station_black_table_100.jpg",
-	             "Kits/weather_station_black_table_800.jpg",
-	             "Weather Station (black): Basic Kit on table")
-	}}
-	{{
-	    tfdocimg("Kits/weather_station_wall_far_100.jpg",
-	             "Kits/weather_station_wall_far_800.jpg",
-	             "Weather Station: With Wi-Fi on wall")
-	}}
-	{{
-	    tfdocimg("Kits/weather_station_wall_near_100.jpg",
-	             "Kits/weather_station_wall_near_800.jpg",
-	             "Weather Station: With Wi-Fi on wall")
-	}}
-	{{
-	    tfdocimg("Kits/weather_station_construction_rpi_front_100.jpg",
-	             "Kits/weather_station_construction_rpi_front_800.jpg",
-	             "Weather Station: With Raspberry Pi")
-	}}
-	{{
-	    tfdocimg("Kits/weather_station_demo_100.jpg",
-	             "Kits/weather_station_demo.jpg",
-	             "Weather Station: Demo Application")
-	}}
-	{{
-	    tfdocimg("Kits/weather_station_xively_graphs_100.jpg",
-	             "Kits/weather_station_xively_graphs_800.jpg",
-	             "Weather Station: Xively graphs")
-	}}
-	{{
-	    tfdocimg("Kits/weather_station_lcd_all_100.jpg",
-	             "Kits/weather_station_lcd_all_orig.jpg",
-	             "Weather Station: Different Modes")
-	}}
-	{{
-	    tfdocimg("Kits/weather_station_website_100.jpg",
-	             "Kits/weather_station_website_orig.jpg",
-	             "Weather Station: Embedded in website")
-	}}
-	{{
-	    tfdocimg("Kits/weather_station_buttons_assembled_100.jpg",
-	             "Kits/weather_station_buttons_assembled_800.jpg",
-	             "Weather Station: With big buttons on the left side")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Kits/weather_station_table_[100|800].jpg               Weather Station: Basic Kit on table
+	Kits/weather_station_black_table_[100|800].jpg         Weather Station (black): Basic Kit on table
+	Kits/weather_station_wall_far_[100|800].jpg            Weather Station: With Wi-Fi on wall
+	Kits/weather_station_wall_near_[100|800].jpg           Weather Station: With Wi-Fi on wall
+	Kits/weather_station_construction_rpi_front_[?|?].jpg  Weather Station: With Raspberry Pi
+	Kits/weather_station_demo_[100|].jpg                   Weather Station: Demo Application
+	Kits/weather_station_xively_graphs_[100|800].jpg       Weather Station: Xively graphs
+	Kits/weather_station_lcd_all_[100|orig].jpg            Weather Station: Different Modes
+	Kits/weather_station_website_[100|orig].jpg            Weather Station: Embedded in website
+	Kits/weather_station_buttons_assembled_[100|800].jpg   Weather Station: With big buttons on the left side
+
+	{% tfgalleryend %}
 
 Features
 --------
@@ -124,7 +86,7 @@ is available on Youtube:
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/uwsseiiu_4A" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/uwsseiiu_4A" frameborder="0" allowfullscreen></iframe>
 
 Technical Specifications
 ------------------------

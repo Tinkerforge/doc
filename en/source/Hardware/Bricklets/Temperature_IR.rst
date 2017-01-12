@@ -13,43 +13,17 @@ Temperature IR Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_temperature_ir_tilted_350.jpg",
-	               "Bricklets/bricklet_temperature_ir_tilted_600.jpg",
-	               "Temperature IR Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_temperature_ir_vertical_100.jpg",
-	             "Bricklets/bricklet_temperature_ir_vertical_600.jpg",
-	             "Temperature IR Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_temperature_ir_horizontal_100.jpg",
-	             "Bricklets/bricklet_temperature_ir_horizontal_600.jpg",
-	             "Temperature IR Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_temperature_ir_master_100.jpg",
-	             "Bricklets/bricklet_temperature_ir_master_600.jpg",
-	             "Temperature IR Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_temperature_ir_case_100.jpg",
-	             "Cases/bricklet_temperature_ir_case_600.jpg",
-	             "Temperature IR Bricklet in Case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_temperature_ir_brickv_100.jpg",
-	             "Bricklets/bricklet_temperature_ir_brickv.jpg",
-	             "Temperature IR Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/temperature_ir_bricklet_dimensions_100.png",
-	             "Dimensions/temperature_ir_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_temperature_ir_tilted_[?|?].jpg           Temperature IR Bricklet
+	Bricklets/bricklet_temperature_ir_vertical_[?|?].jpg         Temperature IR Bricklet
+	Bricklets/bricklet_temperature_ir_horizontal_[?|?].jpg       Temperature IR Bricklet
+	Bricklets/bricklet_temperature_ir_master_[100|600].jpg       Temperature IR Bricklet with Master Brick
+	Cases/bricklet_temperature_ir_case_[100|600].jpg             Temperature IR Bricklet in Case
+	Bricklets/bricklet_temperature_ir_brickv_[100|].jpg          Temperature IR Bricklet in Brick Viewer
+	Dimensions/temperature_ir_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

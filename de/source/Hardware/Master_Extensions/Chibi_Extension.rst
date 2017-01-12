@@ -8,28 +8,14 @@ Chibi Master Extension
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Extensions/extension_chibi_tilted_350.jpg",
-	               "Extensions/extension_chibi_tilted_600.jpg",
-	               "Chibi Extension")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_chibi_tilted_complete_100.jpg",
-	             "Extensions/extension_chibi_tilted_complete_600.jpg",
-	             "Chibi Extension")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_chibi_top_100.jpg",
-	             "Extensions/extension_chibi_top_600.jpg",
-	             "Chibi Extension Oberseite")
-	}}
-	{{
-	    tfdocimg("Extensions/extension_chibi_bottom_100.jpg",
-	             "Extensions/extension_chibi_bottom_600.jpg",
-	             "Chibi Extension Unterseite")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Extensions/extension_chibi_tilted_[?|?].jpg           Chibi Extension
+	Extensions/extension_chibi_tilted_complete_[?|?].jpg  Chibi Extension
+	Extensions/extension_chibi_top_[?|?].jpg              Chibi Extension Oberseite
+	Extensions/extension_chibi_bottom_[?|?].jpg           Chibi Extension Unterseite
+
+	{% tfgalleryend %}
 
 .. note::
 

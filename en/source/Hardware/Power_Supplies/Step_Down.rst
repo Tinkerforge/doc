@@ -9,33 +9,15 @@ Step-Down Power Supply
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Power_Supplies/powersupply11_tilted_350.jpg",
-	               "Power_Supplies/powersupply11_tilted_600.jpg",
-	               "Step-Down Power Supply")
-	}}
-	{{
-	    tfdocimg("Power_Supplies/powersupply11_caption_100.jpg",
-	             "Power_Supplies/powersupply11_caption_600.jpg",
-	             "Step-Down Power Supply with caption")
-	}}
-	{{
-	    tfdocimg("Power_Supplies/powersupply11_horizontal_100.jpg",
-	             "Power_Supplies/powersupply11_horizontal_600.jpg",
-	             "Step-Down Power Supply")
-	}}
-	{{
-	    tfdocimg("Power_Supplies/powersupply11_connector_100.jpg",
-	             "Power_Supplies/powersupply11_connector_600.jpg",
-	             "Step-Down Power Supply with connectors")
-	}}
-	{{
-	    tfdocimg("Dimensions/step_down_powersupply_dimensions_100.png",
-	             "Dimensions/step_down_powersupply_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Power_Supplies/powersupply11_tilted_[?|?].jpg              Step-Down Power Supply
+	Power_Supplies/powersupply11_caption_[?|?].jpg             Step-Down Power Supply with caption
+	Power_Supplies/powersupply11_horizontal_[?|?].jpg          Step-Down Power Supply
+	Power_Supplies/powersupply11_connector_[100|600].jpg       Step-Down Power Supply with connectors
+	Dimensions/step_down_powersupply_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

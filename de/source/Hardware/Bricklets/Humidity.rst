@@ -13,43 +13,17 @@ Humidity Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_humidity_tilted_350.jpg",
-	               "Bricklets/bricklet_humidity_tilted_600.jpg",
-	               "Humidity Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_humidity_vertical_100.jpg",
-	             "Bricklets/bricklet_humidity_vertical_600.jpg",
-	             "Humidity Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_humidity_horizontal_100.jpg",
-	             "Bricklets/bricklet_humidity_horizontal_600.jpg",
-	             "Humidity Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_humidity_master_100.jpg",
-	             "Bricklets/bricklet_humidity_master_600.jpg",
-	             "Humidity Bricklet mit Master Brick")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_ambient_light_case_built_up_100.jpg",
-	             "Cases/bricklet_ambient_light_case_built_up_600.jpg",
-	             "Humidity Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_humidity_brickv_100.jpg",
-	             "Bricklets/bricklet_humidity_brickv.jpg",
-	             "Humidity Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/humidity_bricklet_dimensions_100.png",
-	             "Dimensions/humidity_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_humidity_tilted_[?|?].jpg           Humidity Bricklet
+	Bricklets/bricklet_humidity_vertical_[?|?].jpg         Humidity Bricklet
+	Bricklets/bricklet_humidity_horizontal_[?|?].jpg       Humidity Bricklet
+	Bricklets/bricklet_humidity_master_[100|600].jpg       Humidity Bricklet mit Master Brick
+	Cases/bricklet_ambient_light_case_built_up_[?|?].jpg   Humidity Bricklet im Gehäuse
+	Bricklets/bricklet_humidity_brickv_[100|].jpg          Humidity Bricklet im Brick Viewer
+	Dimensions/humidity_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

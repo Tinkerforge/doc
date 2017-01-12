@@ -120,9 +120,9 @@ deaktiviert der WebSocket-Unterstützung. Hier der Authentifizierungsabschnitt
 einer Beispiel-Konfiguration, das dem empfohlenen Wert 4280 als
 WebSockets-Port verwendet:
 
-  .. code-block:: none
+.. code-block:: none
 
-    listen.websocket_port = 4280
+  listen.websocket_port = 4280
 
 Danach muss Brick Daemon neugestartet werden, um die Änderungen an der
 Konfigurationsdatei zu übernehmen. Ab jetzt kann die Browser-Version der

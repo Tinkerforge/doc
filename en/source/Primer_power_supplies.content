@@ -1,0 +1,10 @@
+:ref:`Bricks <primer_bricks>` and :ref:`Bricklets <primer_bricklets>` can be
+powered by the USB connector of the Brick. :ref:`Stacks <primer_stack>` can 
+also be powered by the master of the stack over its USB connection. This option 
+is limited by the USB specification to 500mA. A large stack may need more power.
+
+To provide greater currents, Power Supplies are available.
+These modules power the stack and can additionally be used to supply the power
+for driver Bricks (e.g. :ref:`DC Brick <dc_brick>`). Power Supplies
+have the same size as :ref:`Bricks <primer_bricks>` and are
+stacked in at the bottom of the stack.

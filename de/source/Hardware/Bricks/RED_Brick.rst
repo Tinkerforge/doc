@@ -12,83 +12,25 @@ RED Brick
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricks/brick_red_tilted_top_front_350.jpg",
-	               "Bricks/brick_red_tilted_top_front_800.jpg",
-	               "RED Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_hand_100.jpg",
-	             "Bricks/brick_red_hand_800.jpg",
-	             "RED Brick in einer Hand")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_master_temp_eth_100.jpg",
-	             "Bricks/brick_red_master_temp_eth_800.jpg",
-	             "RED Brick mit Master Brick, Temperature Bricklet und Ethernet Extension")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_w_monitor_100.jpg",
-	             "Bricks/brick_red_w_monitor_800.jpg",
-	             "RED Brick mit Step-Down Power Supply und HDMI-Monitor")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_tilted_top_back_100.jpg",
-	             "Bricks/brick_red_tilted_top_back_800.jpg",
-	             "RED Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_tilted_bottom_front_100.jpg",
-	             "Bricks/brick_red_tilted_bottom_front_800.jpg",
-	             "RED Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_tilted_bottom_back_100.jpg",
-	             "Bricks/brick_red_tilted_bottom_back_800.jpg",
-	             "RED Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_side_front_100.jpg",
-	             "Bricks/brick_red_side_front_800.jpg",
-	             "RED Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_side_back_100.jpg",
-	             "Bricks/brick_red_side_back_800.jpg",
-	             "RED Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_top_100.jpg",
-	             "Bricks/brick_red_top_800.jpg",
-	             "RED Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_bottom_100.jpg",
-	             "Bricks/brick_red_bottom_800.jpg",
-	             "RED Brick")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_big_stack_100.jpg",
-	             "Bricks/brick_red_big_stack_800.jpg",
-	             "RED Brick mit großem Stapel")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_caption_top_100.jpg",
-	             "Bricks/brick_red_caption_top_800.jpg",
-	             "RED Brick mit Beschreibung")
-	}}
-	{{
-	    tfdocimg("Bricks/brick_red_caption_bottom_100.jpg",
-	             "Bricks/brick_red_caption_bottom_800.jpg",
-	             "RED Brick mit Beschreibung")
-	}}
-	{{
-	    tfdocimg("Dimensions/red_brick_dimensions_100.png",
-	             "Dimensions/red_brick_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricks/brick_red_tilted_top_front_[?|?].jpg     RED Brick
+	Bricks/brick_red_hand_[100|800].jpg             RED Brick in einer Hand
+	Bricks/brick_red_master_temp_eth_[100|800].jpg  RED Brick mit Master Brick, Temperature Bricklet und Ethernet Extension
+	Bricks/brick_red_w_monitor_[100|800].jpg        RED Brick mit Step-Down Power Supply und HDMI-Monitor
+	Bricks/brick_red_tilted_top_back_[?|?].jpg      RED Brick
+	Bricks/brick_red_tilted_bottom_front_[?|?].jpg  RED Brick
+	Bricks/brick_red_tilted_bottom_back_[?|?].jpg   RED Brick
+	Bricks/brick_red_side_front_[?|?].jpg           RED Brick
+	Bricks/brick_red_side_back_[100|800].jpg        RED Brick
+	Bricks/brick_red_top_[?|?].jpg                  RED Brick
+	Bricks/brick_red_bottom_[?|?].jpg               RED Brick
+	Bricks/brick_red_big_stack_[?|?].jpg            RED Brick mit großem Stapel
+	Bricks/brick_red_caption_top_[?|?].jpg          RED Brick mit Beschreibung
+	Bricks/brick_red_caption_bottom_[?|?].jpg       RED Brick mit Beschreibung
+	Dimensions/red_brick_dimensions_[100|600].png   Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 
@@ -145,7 +87,7 @@ Ein Einführungsvideo gibt es auf Youtube:
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/BaS06VwU5Tw" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/BaS06VwU5Tw" frameborder="0" allowfullscreen></iframe>
 
 Technische Spezifikation
 ------------------------

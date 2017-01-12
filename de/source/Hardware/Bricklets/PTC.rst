@@ -13,48 +13,18 @@ PTC Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_ptc_tilted_350.jpg",
-	               "Bricklets/bricklet_ptc_tilted_600.jpg",
-	               "PTC Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ptc_vertical_100.jpg",
-	             "Bricklets/bricklet_ptc_vertical_600.jpg",
-	             "PTC Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ptc_horizontal_100.jpg",
-	             "Bricklets/bricklet_ptc_horizontal_600.jpg",
-	             "PTC Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ptc_sensor_100.jpg",
-	             "Bricklets/bricklet_ptc_sensor_600.jpg",
-	             "PTC Bricklet with 3-wire Pt100 RTD")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ptc_jumper_100.jpg",
-	             "Bricklets/bricklet_ptc_jumper_600.jpg",
-	             "PTC Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_ptc_case_100.jpg",
-	             "Cases/bricklet_ptc_case_600.jpg",
-	             "PTC Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_ptc_brickv_100.jpg",
-	             "Bricklets/bricklet_ptc_brickv.jpg",
-	             "PTC Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/ptc_dimensions_100.png",
-	             "Dimensions/ptc_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_ptc_tilted_[?|?].jpg      PTC Bricklet
+	Bricklets/bricklet_ptc_vertical_[?|?].jpg    PTC Bricklet
+	Bricklets/bricklet_ptc_horizontal_[?|?].jpg  PTC Bricklet
+	Bricklets/bricklet_ptc_sensor_[100|600].jpg  PTC Bricklet with 3-wire Pt100 RTD
+	Bricklets/bricklet_ptc_jumper_[100|600].jpg  PTC Bricklet
+	Cases/bricklet_ptc_case_[100|600].jpg        PTC Bricklet im Gehäuse
+	Bricklets/bricklet_ptc_brickv_[100|].jpg     PTC Bricklet im Brick Viewer
+	Dimensions/ptc_dimensions_[100|600].png      Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 Features
 --------

@@ -13,43 +13,17 @@ Industrial Quad Relay Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_industrial_quad_relay_tilted_350.jpg",
-	               "Bricklets/bricklet_industrial_quad_relay_tilted_600.jpg",
-	               "Industrial Quad Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_quad_relay_vertical_100.jpg",
-	             "Bricklets/bricklet_industrial_quad_relay_vertical_600.jpg",
-	             "Industrial Quad Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_quad_relay_horizontal_100.jpg",
-	             "Bricklets/bricklet_industrial_quad_relay_horizontal_600.jpg",
-	             "Industrial Quad Relay Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_quad_relay_setup_100.jpg",
-	             "Bricklets/bricklet_industrial_quad_relay_setup_600.jpg",
-	             "Industrial Quad Relay Bricklet Setup")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_industrial_case_100.jpg",
-	             "Cases/bricklet_industrial_case_600.jpg",
-	             "Industrial Quad Relay Bricklet im Gehäuse")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_industrial_quad_relay_brickv_100.jpg",
-	             "Bricklets/bricklet_industrial_quad_relay_brickv.jpg",
-	             "Industrial Quad Relay Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/industrial_quad_relay_bricklet_dimensions_100.png",
-	             "Dimensions/industrial_quad_relay_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_industrial_quad_relay_tilted_[?|?].jpg           Industrial Quad Relay Bricklet
+	Bricklets/bricklet_industrial_quad_relay_vertical_[?|?].jpg         Industrial Quad Relay Bricklet
+	Bricklets/bricklet_industrial_quad_relay_horizontal_[?|?].jpg       Industrial Quad Relay Bricklet
+	Bricklets/bricklet_industrial_quad_relay_setup_[?|?].jpg            Industrial Quad Relay Bricklet Setup
+	Cases/bricklet_industrial_case_[100|600].jpg                        Industrial Quad Relay Bricklet im Gehäuse
+	Bricklets/bricklet_industrial_quad_relay_brickv_[100|].jpg          Industrial Quad Relay Bricklet im Brick Viewer
+	Dimensions/industrial_quad_relay_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features

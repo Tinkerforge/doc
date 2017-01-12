@@ -12,38 +12,16 @@ Current25 Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_current_tilted_350.jpg",
-	               "Bricklets/bricklet_current_tilted_600.jpg",
-	               "Current25 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_current_horizontal_100.jpg",
-	             "Bricklets/bricklet_current_horizontal_600.jpg",
-	             "Current25 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_current_vertical_100.jpg",
-	             "Bricklets/bricklet_current_vertical_600.jpg",
-	             "Current25 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_current_master_100.jpg",
-	             "Bricklets/bricklet_current_master_600.jpg",
-	             "Current25 Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_current25_brickv_100.jpg",
-	             "Bricklets/bricklet_current25_brickv.jpg",
-	             "Current25 Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/current25_bricklet_dimensions_100.png",
-	             "Dimensions/current25_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_current_tilted_[?|?].jpg             Current25 Bricklet
+	Bricklets/bricklet_current_horizontal_[?|?].jpg         Current25 Bricklet
+	Bricklets/bricklet_current_vertical_[?|?].jpg           Current25 Bricklet
+	Bricklets/bricklet_current_master_[100|600].jpg         Current25 Bricklet with Master Brick
+	Bricklets/bricklet_current25_brickv_[100|].jpg          Current25 Bricklet in Brick Viewer
+	Dimensions/current25_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 .. note::
 

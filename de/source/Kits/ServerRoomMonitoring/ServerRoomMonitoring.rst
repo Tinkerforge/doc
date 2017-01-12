@@ -11,64 +11,21 @@ Starterkit: Serverraum-Überwachung
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
+	{% tfgallery %}
 
-	{{
-	    tfdocstart("Kits/server_room_monitoring_red_1_350.jpg",
-	               "Kits/server_room_monitoring_red_1_800.jpg",
-	               "Serverraum-Überwachungskit: Vorderseite")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_alu_surface_100.jpg",
-	             "Kits/server_room_monitoring_alu_surface_800.jpg",
-	             "Serverraum-Überwachungskit: Oberfläche Aluminium")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_alu_in_hand_100.jpg",
-	             "Kits/server_room_monitoring_alu_in_hand_800.jpg",
-	             "Serverraum-Überwachungskit")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_red_3_100.jpg",
-	             "Kits/server_room_monitoring_red_3_800.jpg",
-	             "Serverraum-Überwachungskit: Rückseite")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_in_rack3_100.jpg",
-	             "Kits/server_room_monitoring_in_rack3_800.jpg",
-	             "Serverraum-Überwachungskit: Im Serverrack")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_red_2_100.jpg",
-	             "Kits/server_room_monitoring_red_2_800.jpg",
-	             "Serverraum-Überwachungskit: Vorderseite")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_content_100.jpg",
-	             "Kits/server_room_monitoring_content_800.jpg",
-	             "Serverraum-Überwachungskit: Inhalt")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_extended_100.jpg",
-	             "Kits/server_room_monitoring_extended_800.jpg",
-	             "Serverraum-Überwachungskit: Erweiterte Version")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_iqr_100.jpg",
-	             "Kits/server_room_monitoring_iqr_800.jpg",
-	             "Serverraum-Überwachungskit: An/Aus-Schalter")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_in_rack1_100.jpg",
-	             "Kits/server_room_monitoring_in_rack1_800.jpg",
-	             "Serverraum-Überwachungskit: Im Serverrack")
-	}}
-	{{
-	    tfdocimg("Kits/server_room_monitoring_in_rack2_100.jpg",
-	             "Kits/server_room_monitoring_in_rack2_800.jpg",
-	             "Serverraum-Überwachungskit: Im Serverrack")
-	}}
-	{{ tfdocend() }}
+	Kits/server_room_monitoring_red_1_[100|800].jpg        Serverraum-Überwachungskit: Vorderseite
+	Kits/server_room_monitoring_alu_surface_[100|800].jpg  Serverraum-Überwachungskit: Oberfläche Aluminium
+	Kits/server_room_monitoring_alu_in_hand_[100|800].jpg  Serverraum-Überwachungskit
+	Kits/server_room_monitoring_red_3_[100|800].jpg        Serverraum-Überwachungskit: Rückseite
+	Kits/server_room_monitoring_in_rack3_[100|800].jpg     Serverraum-Überwachungskit: Im Serverrack
+	Kits/server_room_monitoring_red_2_[100|800].jpg        Serverraum-Überwachungskit: Vorderseite
+	Kits/server_room_monitoring_content_[100|800].jpg      Serverraum-Überwachungskit: Inhalt
+	Kits/server_room_monitoring_extended_[100|800].jpg     Serverraum-Überwachungskit: Erweiterte Version
+	Kits/server_room_monitoring_iqr_[100|800].jpg          Serverraum-Überwachungskit: An/Aus-Schalter
+	Kits/server_room_monitoring_in_rack1_[100|800].jpg     Serverraum-Überwachungskit: Im Serverrack
+	Kits/server_room_monitoring_in_rack2_[100|800].jpg     Serverraum-Überwachungskit: Im Serverrack
+
+	{% tfgalleryend %}
 
 Features
 --------

@@ -13,48 +13,18 @@ RS232 Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_rs232_tilted1_350.jpg",
-	               "Bricklets/bricklet_rs232_tilted1_600.jpg",
-	               "RS232 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rs232_tilted2_100.jpg",
-	             "Bricklets/bricklet_rs232_tilted2_600.jpg",
-	             "RS232 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rs232_tilted3_100.jpg",
-	             "Bricklets/bricklet_rs232_tilted3_600.jpg",
-	             "RS232 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rs232_horizontal_100.jpg",
-	             "Bricklets/bricklet_rs232_horizontal_600.jpg",
-	             "RS232 Bricklet")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_rs232_case_built_up1_100.jpg",
-	             "Cases/bricklet_rs232_case_built_up1_600.jpg",
-	             "RS232 Bricklet in case")
-	}}
-	{{
-	    tfdocimg("Cases/bricklet_rs232_case_built_up2_100.jpg",
-	             "Cases/bricklet_rs232_case_built_up2_600.jpg",
-	             "RS232 Bricklet in case")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_rs232_brickv_100.jpg",
-	             "Bricklets/bricklet_rs232_brickv.jpg",
-	             "RS232 Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/rs232_bricklet_dimensions_100.png",
-	             "Dimensions/rs232_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_rs232_tilted1_[?|?].jpg          RS232 Bricklet
+	Bricklets/bricklet_rs232_tilted2_[?|?].jpg          RS232 Bricklet
+	Bricklets/bricklet_rs232_tilted3_[?|?].jpg          RS232 Bricklet
+	Bricklets/bricklet_rs232_horizontal_[?|?].jpg       RS232 Bricklet
+	Cases/bricklet_rs232_case_built_up1_[?|?].jpg       RS232 Bricklet in case
+	Cases/bricklet_rs232_case_built_up2_[?|?].jpg       RS232 Bricklet in case
+	Bricklets/bricklet_rs232_brickv_[100|].jpg          RS232 Bricklet in Brick Viewer
+	Dimensions/rs232_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

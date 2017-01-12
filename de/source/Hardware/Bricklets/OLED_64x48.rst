@@ -13,43 +13,17 @@ OLED 64x48 Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_oled_64x48_tilted_350.jpg",
-	               "Bricklets/bricklet_oled_64x48_tilted_600.jpg",
-	               "OLED 64x48 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_64x48_front_100.jpg",
-	             "Bricklets/bricklet_oled_64x48_front_600.jpg",
-	             "OLED 64x48 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_64x48_horizontal_100.jpg",
-	             "Bricklets/bricklet_oled_64x48_horizontal_600.jpg",
-	             "OLED 64x48 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_64x48_bottom_100.jpg",
-	             "Bricklets/bricklet_oled_64x48_bottom_600.jpg",
-	             "OLED 64x48 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_64x48_brickv_100.jpg",
-	             "Bricklets/bricklet_oled_64x48_brickv.jpg",
-	             "OLED 64x48 Bricklet im Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_oled_font_100.png",
-	             "Bricklets/bricklet_oled_font_314.png",
-	             "OLED 64x48 Bricklet Zeichensatz")
-	}}
-	{{
-	    tfdocimg("Dimensions/oled_64x48_bricklet_dimensions_100.png",
-	             "Dimensions/oled_64x48_bricklet_dimensions_600.png",
-	             "Umriss und Bohrplan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_oled_64x48_tilted_[?|?].jpg           OLED 64x48 Bricklet
+	Bricklets/bricklet_oled_64x48_front_[?|?].jpg            OLED 64x48 Bricklet
+	Bricklets/bricklet_oled_64x48_horizontal_[?|?].jpg       OLED 64x48 Bricklet
+	Bricklets/bricklet_oled_64x48_bottom_[?|?].jpg           OLED 64x48 Bricklet
+	Bricklets/bricklet_oled_64x48_brickv_[100|].jpg          OLED 64x48 Bricklet im Brick Viewer
+	Bricklets/bricklet_oled_font_[100|314].png               OLED 64x48 Bricklet Zeichensatz
+	Dimensions/oled_64x48_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features
@@ -85,7 +59,7 @@ Bricklet ist auf Youtube verfügbar:
 
 .. raw:: html
 
- <center><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/8RSEs6cKwXc" frameborder="0" allowfullscreen></iframe></center>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/8RSEs6cKwXc" frameborder="0" allowfullscreen></iframe>
 
 Technische Spezifikation
 ------------------------

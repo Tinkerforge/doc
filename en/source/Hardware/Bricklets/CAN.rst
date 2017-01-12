@@ -13,28 +13,14 @@ CAN Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_can_tilted_350.jpg",
-	               "Bricklets/bricklet_can_tilted_600.jpg",
-	               "CAN Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_can_horizontal_100.jpg",
-	             "Bricklets/bricklet_can_horizontal_600.jpg",
-	             "CAN Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_can_brickv_100.jpg",
-	             "Bricklets/bricklet_can_brickv.jpg",
-	             "CAN Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/can_bricklet_dimensions_100.png",
-	             "Dimensions/can_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_can_tilted_[?|?].jpg           CAN Bricklet
+	Bricklets/bricklet_can_horizontal_[?|?].jpg       CAN Bricklet
+	Bricklets/bricklet_can_brickv_[100|].jpg          CAN Bricklet in Brick Viewer
+	Dimensions/can_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features

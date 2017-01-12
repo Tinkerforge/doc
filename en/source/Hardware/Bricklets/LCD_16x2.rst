@@ -12,38 +12,16 @@ LCD 16x2 Bricklet
 
 .. raw:: html
 
-	{% from "macros.html" import tfdocstart, tfdocimg, tfdocend %}
-	{{
-	    tfdocstart("Bricklets/bricklet_lcd_16x2_tilted_350.jpg",
-	               "Bricklets/bricklet_lcd_16x2_tilted_600.jpg",
-	               "LCD 16x2 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_lcd_16x2_apart_100.jpg",
-	             "Bricklets/bricklet_lcd_16x2_apart_600.jpg",
-	             "LCD 16x2 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_lcd_16x2_display_100.jpg",
-	             "Bricklets/bricklet_lcd_16x2_display_600.jpg",
-	             "LCD 16x2 Bricklet")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_lcd_16x2_master_100.jpg",
-	             "Bricklets/bricklet_lcd_16x2_master_600.jpg",
-	             "LCD 16x2 Bricklet with Master Brick")
-	}}
-	{{
-	    tfdocimg("Bricklets/bricklet_lcd_16x2_brickv_100.jpg",
-	             "Bricklets/bricklet_lcd_16x2_brickv.jpg",
-	             "LCD 16x2 Bricklet in Brick Viewer")
-	}}
-	{{
-	    tfdocimg("Dimensions/lcd_16x2_bricklet_dimensions_100.png",
-	             "Dimensions/lcd_16x2_bricklet_dimensions_600.png",
-	             "Outline and drilling plan")
-	}}
-	{{ tfdocend() }}
+	{% tfgallery %}
+
+	Bricklets/bricklet_lcd_16x2_tilted_[?|?].jpg           LCD 16x2 Bricklet
+	Bricklets/bricklet_lcd_16x2_apart_[100|600].jpg        LCD 16x2 Bricklet
+	Bricklets/bricklet_lcd_16x2_display_[100|600].jpg      LCD 16x2 Bricklet
+	Bricklets/bricklet_lcd_16x2_master_[100|600].jpg       LCD 16x2 Bricklet with Master Brick
+	Bricklets/bricklet_lcd_16x2_brickv_[100|].jpg          LCD 16x2 Bricklet in Brick Viewer
+	Dimensions/lcd_16x2_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 .. note::
 
