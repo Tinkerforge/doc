@@ -124,7 +124,7 @@ Grundfunktionen
  Gibt *true* zurück wenn Auto-Reconnect aktiviert ist und *False* sonst.
 
 
-.. vbnet:function:: Sub IPConnection.SetTimeout(ByVal timeout: Integer)
+.. vbnet:function:: Sub IPConnection.SetTimeout(ByVal timeout As Integer)
 
  Setzt den Timeout in Millisekunden für Getter und für Setter die das
  Response-Expected-Flag aktiviert haben.
