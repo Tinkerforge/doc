@@ -574,6 +574,12 @@ def setup(app):
             if not url_re.match(refnode['refuri']):
                 refnode['refuri'] = builder.get_relative_uri(
                     docname, refnode['refuri']) + refnode['anchorname']
+
+                # photron: empty refuri doesn't work in IE, use a # instead
+                if len(refnode['refuri']) == 0:
+                    refnode['refuri'] = '#'
+                # photron: end
+
         return newnode
 
     BuildEnvironment.resolve_toctree = new_resolve_toctree
