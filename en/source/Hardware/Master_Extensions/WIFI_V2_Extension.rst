@@ -453,14 +453,14 @@ Known Bugs
   This bug is also in the Espressif mesh library. If a mesh node which is not a
   root node receives a burst of packets all of these packets are dropped. This is
   rather a serious bug as it involves data loss. This bug can be easily observed
-  by sending a lot of getter requests to a non-root mesh node and they will have
+  by sending a lot of setter requests to a non-root mesh node and they will have
   timeouts. Because of this bug, Servo Brick's test feature which is offered by
   Brick Viewer will fail if the node where the Servo Brick is present is not a
   mesh root node.
 
-  One work around of this problem is to limit the getter call burst, for example
-  by setting response expected flag of the getter calls or by simply adding a
-  slight delay between the getter calls.
+  One work around of this problem is to limit the setter call burst, for example
+  by setting response expected flag of the setter calls or by simply adding a
+  slight delay between the setter calls.
 
 
 LEDs
