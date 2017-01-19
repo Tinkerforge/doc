@@ -48,6 +48,10 @@ header consists of:
    :target: ../_images/Misc/protocol_new.png
 
 The UID is the unique identifier that is given to every Brick and Bricklet.
+In the API bindings the UID is `Base58 <https://en.wikipedia.org/wiki/Base58>`__
+encoded using this alphabet::
+
+  123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ
 
 The *packet length* specifies the length of the complete packet (header and
 payload) in bytes. A packet without a payload has a packet length of 8.
