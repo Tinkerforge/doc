@@ -48,8 +48,8 @@ header consists of:
    :target: ../_images/Misc/protocol_new.png
 
 The UID is the unique identifier that is given to every Brick and Bricklet.
-In the API bindings the UID is `Base58 <https://en.wikipedia.org/wiki/Base58>`__
-encoded using this alphabet::
+In the API bindings the UID is used in `Base58
+<https://en.wikipedia.org/wiki/Base58>`__ encoded form using this alphabet::
 
   123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ
 
