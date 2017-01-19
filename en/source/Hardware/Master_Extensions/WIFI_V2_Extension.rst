@@ -355,34 +355,40 @@ page for user authentication.
   :target: ../../_images/Extensions/extension_wifi2_web_interface_authentication.jpg
 
 
-Mesh
-----
+Mesh Network
+------------
 
-Starting from the firmware version 2.0.4 the WIFI extension 2 supports mesh mode.
+Starting from the firmware version 2.1.0 the WIFI Extension 2.0 supports mesh
+mode.
 Note that for using the mesh feature properly, Master Brick firmware version
-2.4.2 or higher, Brick Daemon version 2.2.4 or higher and Brick Viewer version
+2.4.2 or higher, Brick Daemon version 2.3.0 or higher and Brick Viewer version
 2.3.7 or higher is required.
 
-Stacks with WIFI extension 2 which are configured in mesh mode can form a mesh
-network. All the devices present in these stacks can be accessed normally.
+Stacks with WIFI Extension 2.0 which are configured in mesh mode can form a
+`mesh network <https://en.wikipedia.org/wiki/Mesh_networking>`__.
+All the devices present in these stacks can be accessed normally.
 
 Some key concepts of mesh mode are:
 
-* Mesh Root Node
-* Mesh Router
-* Mesh Gateway
+* Mesh Root Node:
 
-Each mesh network has at least one root node. Root nodes are entry/exit point of
-the mesh network where data is coming into the the mesh network or going out of
-the mesh network.
+  Each mesh network has at least one root node. Root nodes are entry/exit point
+  of the mesh network where data is coming into the the mesh network or going
+  out of the mesh network.
 
-Mesh router is a WIFI access point to which the root node connects to reach the
-mesh gateway.
+* Mesh Router:
 
-The mesh gateway is basically Brick Daemon which can handle and route data coming
-from the nodes of a mesh network and can also send data into mesh network.
+  The mesh router is a Wi-Fi access point to which the root node connects to
+  reach the mesh gateway.
 
-The illustration below represents a simple scenario to understand the system better.
+* Mesh Gateway:
+
+  The mesh gateway is basically :ref:`Brick Daemon <brickd>` which can handle
+  and route data coming from the nodes of a mesh network and can also send data
+  into mesh network.
+
+The illustration below represents a simple scenario to understand the system
+better.
 
 .. image:: /Images/Extensions/extension_wifi2_mesh_example.jpg
   :scale: 100 %
@@ -391,10 +397,10 @@ The illustration below represents a simple scenario to understand the system bet
   :target: ../../_images/Extensions/extension_wifi2_mesh_example.jpg
 
 In the illustration above, there is a mesh network with five stacks each with
-a WIFI Extension 2 configured in mesh mode. The root node of this mesh network
-is marked with a red circle. The mesh root node can connect to the WIFI access
+a WIFI Extension 2.0 configured in mesh mode. The root node of this mesh network
+is marked with a red circle. The mesh root node can connect to the Wi-Fi access
 point, "Mesh Router". The "Brick Daemon" machine is running a Brick Daemon that
-supports mesh feature and is reachable via the same network of the "Mesh Router".
+supports the mesh feature and is reachable via the network of the "Mesh Router".
 From the perspective of the mesh network this machine is the mesh gateway.
 
 The mesh root node establishes a connection to the mesh gateway which is marked
@@ -406,10 +412,10 @@ is marked with the blue lines in the illustration.
 Configuration
 ^^^^^^^^^^^^^
 
-Every mesh WIFI Extension 2 that is member of a particular mesh network has
-identical configuration.
+Every mesh WIFI Extension 2.0 that is member of a particular mesh network has
+to have an identical configuration.
 
-To form a mesh network first the extension must be configured to be in mesh mode.
+To form a mesh network first the Extension must be configured to be in mesh mode.
 This can be achieved from Brick Viewer by selecting mesh mode.
 
 .. image:: /Images/Extensions/extension_wifi2_mesh_mode.jpg
@@ -419,7 +425,7 @@ This can be achieved from Brick Viewer by selecting mesh mode.
   :target: ../../_images/Extensions/extension_wifi2_mesh_mode.jpg
 
 Mesh router configuration must be provided to the node. These are generic
-configuration parameters that are required to configure and connect to a WIFI
+configuration parameters that are required to configure and connect to a Wi-Fi
 access point.
 
 .. image:: /Images/Extensions/extension_wifi2_mesh_router.jpg
@@ -445,7 +451,7 @@ Known Bugs
 * Mesh router SSID maximum length:
 
   The maximum applicable mesh router SSID can be 32 characters long but in mesh
-  mode a mesh router SSID of upto 31 characters is valid. This is due to a bug
+  mode a mesh router SSID of up to 31 characters is valid. This is due to a bug
   in the Espressif mesh library.
 
 * Dropped packets in non-root mesh node:
