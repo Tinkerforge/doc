@@ -1,0 +1,130 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / RS485 Bricklet
+:shoplink: ../../../shop/bricklets/rs485-bricklet.html
+
+.. include:: RS485.substitutions
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
+
+.. _rs485_bricklet:
+
+RS485 Bricklet
+==============
+
+.. raw:: html
+
+	{% tfgallery %}
+
+	Bricklets/bricklet_rs485_tilted1_[?|?].jpg          RS485 Bricklet
+	Bricklets/bricklet_rs485_tilted2_[?|?].jpg          RS485 Bricklet
+	Bricklets/bricklet_rs485_tilted3_[?|?].jpg          RS485 Bricklet
+	Bricklets/bricklet_rs485_horizontal_[?|?].jpg       RS485 Bricklet
+	Cases/bricklet_rs485_case_built_up1_[?|?].jpg       RS485 Bricklet in case
+	Cases/bricklet_rs485_case_built_up2_[?|?].jpg       RS485 Bricklet in case
+	Bricklets/bricklet_rs485_brickv_[100|].jpg          RS485 Bricklet in Brick Viewer
+	Dimensions/rs485_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
+
+
+Features
+--------
+
+* Supports low-level RS485 as well as Modus Slave/Master
+* Sends and receives data via differential RS485
+* Supports full- and half-duplex
+* Configurable baudrate, parity, stop bits, word length and flow control
+
+
+.. _rs485_bricklet_description:
+
+Description
+-----------
+
+The RS485 :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the capability to send
+and receive differential data with `RS-485 <https://en.wikipedia.org/wiki/RS-485>`__.
+
+It supports full- and half-duplex and has configurable termination.
+
+
+Technical Specifications
+------------------------
+
+================================  ============================================================
+Property                          Value
+================================  ============================================================
+Current Consumption               TBDmW (TBDmA at 5V, idle)
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Baudrate                          100 - 2000000baud
+Parity                            none / odd / even
+Stop bits                         1 / 2
+Word length                       5 / 6 / 7 / 8
+Duplex                            Half / Full
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Dimensions (W x D x H)            40 x 40 x 14mm (1.57 x 1.57 x 0.55")
+Weight                            TBDg
+================================  ============================================================
+
+Resources
+---------
+
+* Schematic (`Download <https://github.com/Tinkerforge/rs485-bricklet/raw/master/hardware/rs485-schematic.pdf>`__)
+* Outline and drilling plan (`Download <../../_images/Dimensions/rs485_bricklet_dimensions.png>`__)
+* Source code and design files (`Download <https://github.com/Tinkerforge/rs485-bricklet/zipball/master>`__)
+
+
+Connectivity
+------------
+
+TODO
+
+Duplex and Termination configuration
+------------------------------------
+
+TODO
+
+
+
+.. _rs485_bricklet_test:
+
+Test your RS485 Bricklet
+------------------------
+
+|test_intro|
+
+|test_connect|.
+Connect the RX to the TX pins with a small cable to make the Bricklet read back its
+own output.
+
+|test_tab|
+If everything went as expected you can now type some text into the input
+editbox and hit enter. The same text should then show up in the textarea above.
+
+.. image:: /Images/Bricklets/bricklet_rs485_brickv.jpg
+   :scale: 100 %
+   :alt: RS485 Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs485_brickv.jpg
+
+|test_pi_ref|
+
+
+.. _rs485_bricklet_case:
+
+Case
+----
+
+TBD
+
+
+.. _rs485_bricklet_programming_interface:
+
+Programming Interface
+---------------------
+
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
+
+.. include:: RS485_hlpi.table
