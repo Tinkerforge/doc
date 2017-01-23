@@ -359,22 +359,23 @@ Mesh Network
 ------------
 
 Starting from the firmware version 2.1.0 the WIFI Extension 2.0 supports mesh
-mode.
+network between multiple WIFI Extension 2.0.
 Note that for using the mesh feature properly, Master Brick firmware version
 2.4.2 or higher, Brick Daemon version 2.3.0 or higher and Brick Viewer version
 2.3.7 or higher is required.
 
 Stacks with WIFI Extension 2.0 which are configured in mesh mode can form a
 `mesh network <https://en.wikipedia.org/wiki/Mesh_networking>`__.
-All the devices present in these stacks can be accessed normally.
+All Bricks and Bricklets present in these stacks can be accessed normally via
+the Mesh Gateway.
 
 Some key concepts of mesh mode are:
 
 * Mesh Root Node:
 
-  Each mesh network has at least one root node. Root nodes are entry/exit point
-  of the mesh network where data is coming into the the mesh network or going
-  out of the mesh network.
+  Each mesh network has at least one WIFI Extension 2.0 acting as root node.
+  Root nodes are entry/exit point of the mesh network where data is coming into
+  the the mesh network or going out of the mesh network.
 
 * Mesh Router:
 
@@ -421,7 +422,7 @@ This can be achieved from Brick Viewer by selecting mesh mode.
 
 .. image:: /Images/Extensions/extension_wifi2_mesh_mode.jpg
   :scale: 100 %
-  :alt: Example topology of mesh usage
+  :alt: Select Mesh Mode
   :align: center
   :target: ../../_images/Extensions/extension_wifi2_mesh_mode.jpg
 
@@ -431,18 +432,20 @@ access point.
 
 .. image:: /Images/Extensions/extension_wifi2_mesh_router.jpg
   :scale: 100 %
-  :alt: Example topology of mesh usage
+  :alt: Mesh Router Configuration
   :align: center
   :target: ../../_images/Extensions/extension_wifi2_mesh_router.jpg
 
 It must be defined to which mesh network a mesh node belongs to. The
 "Group SSID Prefix" and "Group ID" together defines a mesh network to which
-the mesh node belongs to. The "Mesh Gateway IP" and "Mesh Gateway Port" fields
-define how the mesh gateway can be reached.
+the mesh node belongs to.
+
+The "Mesh Gateway IP" and "Mesh Gateway Port" fields define how the mesh
+gateway can be reached.
 
 .. image:: /Images/Extensions/extension_wifi2_mesh_group.jpg
   :scale: 100 %
-  :alt: Example topology of mesh usage
+  :alt: Mesh Group and Gateway Configuration
   :align: center
   :target: ../../_images/Extensions/extension_wifi2_mesh_group.jpg
 
@@ -460,8 +463,8 @@ Known Bugs
   This bug is also in the Espressif mesh library. If a mesh node which is not a
   root node receives a burst of packets all of these packets are dropped. This is
   rather a serious bug as it involves data loss. This bug can be easily observed
-  by sending a lot of setter requests to a non-root mesh node and they will have
-  timeouts. Because of this bug, Servo Brick's test feature which is offered by
+  by sending a lot of setter requests to a non-root mesh node and they will all
+  be lost. Because of this bug, Servo Brick's test feature which is offered by
   Brick Viewer will fail if the node where the Servo Brick is present is not a
   mesh root node.
 

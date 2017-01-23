@@ -367,39 +367,123 @@ Secret mit folgender Seite ab:
 
 .. image:: /Images/Extensions/extension_wifi2_web_interface_authentication.jpg
   :scale: 100 %
-  :alt: Authentication view of the web interface of WIFI Extension 2.0
+  :alt: Authentifizierungsansicht des Web Interface der WIFI Extension 2.0
   :align: center
   :target: ../../_images/Extensions/extension_wifi2_web_interface_authentication.jpg
 
 
-.. TODO: German mesh documentation.
+Mesh-Netzwerk
+-------------
 
-Mesh
-----
+Ab Firmware Version 2.1.0 unterstützt die WIFI Extension 2.0 Mesh-Netzwerke
+zwischen mehreren WIFI Extension 2.0.
+Zusätzlich müssen benötigen die beteiligen Master Bricks mindestens Firmware
+Version 2.4.2, der als Mesh Gateway agierenden Brick Daemon mindestens Version
+2.3.0 und Brick Viewer zur Konfiguration mindestens Version 2.3.7.
+
+Stapel mit WIFI Extension 2.0 die auf Mesh Mode konfiguriert sind formen sich
+automatisch zu einem `Mesh-Netzwerk
+<https://de.wikipedia.org/wiki/Vermaschtes_Netz>`__.
+Alle Bricks und Bricklet können über den Mesh Gateway normal angesprochen
+werden.
+
+Wichtige Teile des Mesh-Netzwerks:
+
+* Mesh-Root-Node:
+
+  Jedes Mesh-Netzwerk hat mindestens einen WIFI Extension 2.0 die als Root-Node
+  agiert. Root-Nodes sind die Zugangspunkte zum Mesh-Netzwerks an denen Daten
+  zwischen dem Mesh-Netzwerk und dem restlichen Netzwerk ausgetauscht werden.
+
+* Mesh-Router:
+
+  Der Mesh-Router ist ein WLAN-Access-Point mit dem sich der Root-Node
+  verbindet, um den Mesh-Gateway zu erreichen.
+
+* Mesh-Gateway:
+
+  Der Mesh-Gateway ist eine :ref:`Brick Daemon <brickd>` der den Zugangspunkt
+  der API Bindings zum Mesh-Netzwerk bereitstellt.
+
+Die folgende Illustaration stellt die Topologie eines Mesh-Netzwerks dar.
 
 .. image:: /Images/Extensions/extension_wifi2_mesh_example.jpg
   :scale: 100 %
-  :alt: Example topology of mesh usage
+  :alt: Beispiel-Topologie eines Mesh-Netzwerks
   :align: center
   :target: ../../_images/Extensions/extension_wifi2_mesh_example.jpg
 
+Die Illustration zeigt ein Mesh-Netzwerk mit fünf Stapeln, von denen jeder
+mit einer WIFI Extension 2.0 im Mesh-Mode ausgestattet ist. Der Root-Node ist
+mit einem roten Kreis markiert und stellt die Verbindung des Mesh-Netzwerks
+zum WLAN-Access-Point, dem "Mesh-Router", her. Der dem "Brick Daemon" PC läuft
+Brick Daemon der als Mesh Gateway agiert.
+
+Dr Mesh-Root-Node stellt eine Verbindung zum Mesh-Gateway her, gekennzeichnet
+in grün. Der "Client" verbindet sich zum Brick Daemon der als Mesh-Gateway
+agiert und kann über seine blaue gekennzeichnet Verbindung all Teilnehmer des
+Mesh-Netzwerks erreichen.
+
+Konfiguration
+^^^^^^^^^^^^^
+
+.. note::
+  Die Konfiguration aller WIFI Extension 2.0 in einem bestimmten Mesh-Netzwerk
+  muss identisch sein, andernfalls wird das Mesh-Netzwerk nicht korrekt
+  funktionieren.
+
+Als erstes muss die Extension in den Mesh Mode versetzt werden, mittels Brick
+Viewer.
+
 .. image:: /Images/Extensions/extension_wifi2_mesh_mode.jpg
   :scale: 100 %
-  :alt: Example topology of mesh usage
+  :alt: Mesh Mode auswählen
   :align: center
   :target: ../../_images/Extensions/extension_wifi2_mesh_mode.jpg
 
+Die Mesh-Router-Einstellungen geben an zu welchem WLAN-Access-Point der Root
+Node des Mesh-Netzwerks seine Verbindung herstellen soll.
+
 .. image:: /Images/Extensions/extension_wifi2_mesh_router.jpg
   :scale: 100 %
-  :alt: Example topology of mesh usage
+  :alt: Mesh Router Konfiguration
   :align: center
   :target: ../../_images/Extensions/extension_wifi2_mesh_router.jpg
 
+Die Zugehörigkeit einer WIFI Extension 2.0 zu einem bestimmten Mesh-Netzwerk
+wird über die "Group SSID Prefix" und die "Group ID" festgelegt.
+
+Die "Mesh Gateway IP" und der "Mesh Gateway Port" geben an unter welcher
+Adresse der als Mesh-Gateway agierende Brick Daemon zu erreichen ist.
+
 .. image:: /Images/Extensions/extension_wifi2_mesh_group.jpg
   :scale: 100 %
-  :alt: Example topology of mesh usage
+  :alt: Mesh Group und Gateway Konfiguration
   :align: center
   :target: ../../_images/Extensions/extension_wifi2_mesh_group.jpg
+
+Bekannte Bugs
+^^^^^^^^^^^^^
+
+* Mesh-Router-SSID Maximallänge:
+
+  Eine Mesh-Router-SSID kann bis zu 32 Zeichen lang sein. Aber bedingt durch
+  einen Bug in der Espressif-Mesh-Bibliothek können davon aktuell nur die ersten
+  31 Zeichen genutzt werden.
+
+* Paketverlust bei Nicht-Root-Nodes:
+
+  Dieses Problem betrifft ebenfalls die Espressif-Mesh-Bibliothek. Wenn ein
+  Nicht-Root-Node einen Burst an Paketen empfängt, dann werden alle diese
+  Pakete verworfen. Dies ist ein schwerwiegenderes Problem, da es zu
+  Datenverlust führt. Dieser Bug tritt z.B. auf wenn viele Setter schnell
+  hintereinander für einen Nicht-Root-Node aufgerufen werden. Bedingt durch
+  diesen Bug funktioniert der Servo-Test-Mode im Brick Viewer nicht richtig,
+  wenn der Servo Brick Teil eines Nicht-Root-Node ist
+
+  Ein Workaround für diese Problem ist es Setter Burst zu vermeiden. Zum
+  Beispiel durch Verwendung des Response-Expected-Flags der verwendeten Setter
+  oder durch einfügen einer kleinen Verzögerung zwischen den Setter-Aufrufen.
 
 
 LEDs
@@ -418,7 +502,9 @@ Falls beide Modi aktiviert sind, blinkt die LED zuerst schnell bis eine Verbindu
 externen Access Point hergestellt wurde. Danach blinkt die LED langsam bis ein
 externe Client sich zum Access Point der WIFI Extension 2.0 verbindet.
 
-.. TODO: German mesh documentation related to LED status.
+Im Mesh Mode blinkt die LED schnell bis die Verbindung zum Mesh-Netzwerk
+hergestellt ist. Danach blinkt die LED langsam mit einem Intervall von etwa 6
+Sekunden.
 
 
 Programmierschnittstelle
