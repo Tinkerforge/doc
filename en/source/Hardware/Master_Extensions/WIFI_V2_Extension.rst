@@ -412,8 +412,9 @@ is marked with the blue lines in the illustration.
 Configuration
 ^^^^^^^^^^^^^
 
-Every mesh WIFI Extension 2.0 that is member of a particular mesh network has
-to have an identical configuration.
+.. note::
+  The configuration for all WIFI Extension 2.0 in a particular mesh network has
+  to be identical, otherwise the mesh network will not be able to work properly.
 
 To form a mesh network first the Extension must be configured to be in mesh mode.
 This can be achieved from Brick Viewer by selecting mesh mode.
