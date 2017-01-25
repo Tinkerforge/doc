@@ -402,7 +402,7 @@ Wichtige Teile des Mesh-Netzwerks:
 
 * Mesh-Gateway:
 
-  Der Mesh-Gateway ist eine :ref:`Brick Daemon <brickd>` der den Zugangspunkt
+  Der Mesh-Gateway ist ein :ref:`Brick Daemon <brickd>` der den Zugangspunkt
   der API Bindings zum Mesh-Netzwerk bereitstellt.
 
 Die folgende Illustaration stellt die Topologie eines Mesh-Netzwerks dar.
@@ -419,7 +419,7 @@ mit einem roten Kreis markiert und stellt die Verbindung des Mesh-Netzwerks
 zum WLAN-Access-Point, dem "Mesh-Router", her. Der dem "Brick Daemon" PC läuft
 Brick Daemon der als Mesh Gateway agiert.
 
-Dr Mesh-Root-Node stellt eine Verbindung zum Mesh-Gateway her, gekennzeichnet
+Der Mesh-Root-Node stellt eine Verbindung zum Mesh-Gateway her, gekennzeichnet
 in grün. Der "Client" verbindet sich zum Brick Daemon der als Mesh-Gateway
 agiert und kann über seine blaue gekennzeichnet Verbindung all Teilnehmer des
 Mesh-Netzwerks erreichen.
