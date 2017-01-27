@@ -224,7 +224,53 @@ this documentation is not enough, you can take a look at the
 For convenience, we provide a table that shows which API function parameters
 changes what TCM2130 register.
 
-TODO: Add table
+.. |nbsp| unicode:: 0xA0
+   :trim:
+
+============================== ==================================== ============================= ===============================================
+Function                       Parameter                            Register Name @Address[bits]  Note
+============================== ==================================== ============================= ===============================================
+SetBasicConfiguration          Standstill Current                   ihold @0x10[4..0]             Value is converted to 0-31
+|nbsp|                         Motor Run Current                    irun @0x10[12..8]             Value is converted to 0-31
+|nbsp|                         Standstill Delay Time                iholddelay @0x10[19..16]      Value is converted to 2^18 clock cycles
+|nbsp|                         Power Down Time                      tpowerdown @0x11              Value is converted to 2^18 clock cycles
+|nbsp|                         Stealth Threshold                    tpwmthrs @0x13                Value is converted to time between two steps
+|nbsp|                         Coolstep Threshold                   tcoolthrs @0x14               Value is converted to time between two steps
+|nbsp|                         Classic Threshold                    thigh @0x15                   Value is converted to time between two steps
+|nbsp|                         High Velocity Chopper Mode           vhighchm @0x6C[19]            |nbsp|
+------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
+------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
+SetSpreadcycleConfiguration    Slow Decay Duration                  toff @0x6C[3..0]              |nbsp|
+|nbsp|                         Enable Random Slow Decay             rndtf @0x6C[13]               |nbsp|
+|nbsp|                         Fast Decay Duration                  fd3/hstrt @0x6C[11/6..4]      Used if chm=1, otherwise ignored
+|nbsp|                         Hysteresis Start Value               hstrt @0x6C[6..4]             Used if chm=0, otherwise ignored
+|nbsp|                         Hysteresis End Value                 hend @0x6C[10..7]             Used if chm=0, otherwise ignored
+|nbsp|                         Sinewave Offset                      hend @0x6C[10..7]             Used if chm=1, otherwise ignored
+|nbsp|                         Chopper Mode                         chm @0x6C[14]                 |nbsp|
+|nbsp|                         Comperator Blank Time                tbl @0x6C[16..15]             |nbsp|
+|nbsp|                         Fast Decay Without Comperator        disfdcc @0x6C[12]             |nbsp|
+------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
+------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
+SetStealthConfiguration        Enable Stealth                       en_pwm_mode @0x00[2]          |nbsp|
+|nbsp|                         Amplitude                            pwm_ampl @0x70[7..0]          |nbsp|
+|nbsp|                         Gradient                             pwm_grad @0x70[15..8]         |nbsp|
+|nbsp|                         Enable Autoscale                     pwm_autoscale @0x70[18]       |nbsp|
+|nbsp|                         Force Symmetric                      pwm_symmetric @0x70[19]       |nbsp|
+|nbsp|                         Freewheel Mode                       freewheel @0x70[21..20]       |nbsp|
+------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
+------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
+SetCoolstepConfiguration       Minimum Stallguard Value             semin @0x6D[3..0]             |nbsp|
+|nbsp|                         Maximum Stallguard Value             semax @0x6D[11..8]            |nbsp|
+|nbsp|                         Current Up Step Width                seup @0x6D[7..4]              |nbsp|
+|nbsp|                         Current Down Step Width              sedn @0x6D[14..13]            |nbsp|
+|nbsp|                         Minimum Current                      seimin @0x6D[15]              |nbsp|
+|nbsp|                         Stallguard Threshold Value           sgt @0x6D[22..16]             |nbsp|
+|nbsp|                         Stallguard Mode                      sfilt 0x6D@[24]               |nbsp|
+------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
+------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
+SetMiscConfiguration           Disable Short To Ground Protection   diss2g @0x6C[30]              |nbsp|
+|nbsp|                         Synchronize Phase Frequency          sync @0x6C[23..20]            |nbsp|
+============================== ==================================== ============================= ===============================================
 
 .. _silent_stepper_brick_programming_interface:
 
