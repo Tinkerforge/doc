@@ -82,7 +82,7 @@ Current Consumption               TBDmA
 Resources
 ---------
 
-* DRV8811 datasheet (`Download <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/datasheets/TMC2130_datasheet.pdf>`__)
+* TCM2130 datasheet (`Download <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/datasheets/TMC2130_datasheet.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/hardware/silent-stepper-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/silent_stepper_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/silent-stepper-brick/zipball/master>`__)
