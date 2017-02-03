@@ -29,7 +29,7 @@ Features
 
 * Misst Entfernung unf Geschwindigkeit mit Laser-Pulsen
 * Entfernungs-Messbereich 0-40m mit 1cm Auflösung
-* Geschwindigkeits-Messbereich bis zu 0-127m/s mit bis 0,1m/s Auflösung
+* Messfrequenz bis zu 500Hz.
 
 
 .. _laser_range_finder_bricklet_description:
@@ -49,17 +49,13 @@ Technische Spezifikation
 ====================================  ============================================================
 Eigenschaft                           Wert
 ====================================  ============================================================
-Sensor                                LIDAR-Lite
+Sensor                                LIDAR-Lite (V3)
 Stromverbrauch                        | 450mW (90mA bei 5V, Laser aus)
                                       | 520mW (104mA bei 5V, Laser an)
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
 Entfernung (Bereich, Auflösung)       0-40m, 1cm
-Geschwindigkeit (Bereich, Auflösung)  | 0-12,7m/s, 0,1m/s
-                                      | 0-31,75m/s, 0,25m/s
-                                      | 0-63,5m/s, 0,5m/s
-                                      | 0-127m/s, 1,0m/s
-Abtastrate                            bis zu 100Hz (abhängig von Entfernung)
+Abtastrate                            bis zu 500Hz (abhängig von Entfernung)
 ------------------------------------  ------------------------------------------------------------
 ------------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)               49 x 45 x 36mm (1,93 x 1,77 x 1,42")
