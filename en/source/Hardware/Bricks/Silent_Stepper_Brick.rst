@@ -182,30 +182,75 @@ configurable minimum voltage.
 Modes and Features
 ------------------
 
+Basic Configuration
+^^^^^^^^^^^^^^^^^^^
+
+In most applications you can keep all of the settings as default and only
+configure the basic configuration:
+
+* **Standstill Current**: This value can be used to lower the current during stand still. It takes
+  effect after the Power Down Time and the transition time can be controlled with the Standstill Delay 
+  Time. The unit is in mA and the maximum allowed value is the current motor current.
+
+* **Motor Run Current**: The value is applied as a factor to the max current when the motor is
+  running. Use a value of at least 16 for good microstep performance. The unit is in mA and the 
+  maximum allowed value is the current motor current.
+
+* **Standstill Delay Time**: Controls the duration for motor power down after a motion 
+  as soon as standstill is detected and the Power Down Time is expired. A high Standstill Delay
+  Time results in a smooth transition that avoids motor jerk during power down.
+  The value range is 0 to 307ms
+
+* **Power Down Time**: Sets the delay time after a stand still. 
+  The value range is 0 to 5222ms.
+
+* **Stealth Threshold**: Sets the *upper threshold* for stealth mode in steps/s. The value range is
+  0-65536 steps/s. If the velocity of the motor goes above this value, stealth mode is turned
+  off. Otherwise it is turned on. In stealth mode the torque declines with high speed.
+
+* **Coolstep Threshold**: Sets the *lower threshold* for coolstep mode in steps/s. The value range is
+  0-65536 steps/s. The Coolstep Threshold needs to be above the Stealth Threshold.
+
+* **Classic Threshold**: Sets the *lower threshold* for classic mode. The value range is
+  0-65536 steps/s. In classic mode the stepper becomes more noisy, but the torque is maximized.
+
+* **High Velocity Shopper Mode**: If High Velocity Shopper Mode is enabled, the stepper control
+  is optimized to run the stepper motors at high velocities.
+
+
 Stealth Mode
 ^^^^^^^^^^^^
 
-TODO
+In stelath mode the stepper motor is driven quitely and with little vibrations.
+The mode is usable in low and medium velocities.
 
 Coolstep Mode
 ^^^^^^^^^^^^^
 
-TODO
+In coolstep mode the stepper motor is driven with smart energy optimizations.
+In applications with varying loads, the power consumption is automatically
+reduced during low load times. This means that less heat is generated and
+less cooling is necessary.
 
 Classic Mode
 ^^^^^^^^^^^^
 
-TODO
+In classic mode stealth and coolstep are disabled. The stepper motor is driven
+without any of the advanced features, but in return the torque is maximized.
 
 Spreadcycle
 ^^^^^^^^^^^
 
-TODO
+Spreadcycle is a cycle-by-cycle current control. It has a fast reaction time
+to changes in velocity and motor load. It can be used together with Coolstep
+mode.
 
 Stallguard
 ^^^^^^^^^^
 
-TODO
+Stallguard can be used to measure motor load and for stall
+detection. In coolstep mode the measurement is used to adjust the motor 
+current to the load.
 
 
 Help! I don't understand half of the words
