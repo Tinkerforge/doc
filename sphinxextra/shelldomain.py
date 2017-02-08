@@ -319,12 +319,16 @@ class ShellModulelevel(ShellObject):
     """
 
     def needs_arglist(self):
-        return self.objtype == 'function'
+        return self.objtype in ['function', 'callback']
 
     def get_index_text(self, modname, name_cls):
         if self.objtype == 'function':
             if not modname:
                 return _('%s() (built-in function)') % name_cls[0]
+            return _('%s() (in module %s)') % (name_cls[0], modname)
+        elif self.objtype == 'callback':
+            if not modname:
+                return _('%s() (built-in callback)') % name_cls[0]
             return _('%s() (in module %s)') % (name_cls[0], modname)
         elif self.objtype == 'data':
             if not modname:
@@ -618,6 +622,7 @@ class ShellDomain(Domain):
     label = 'Shell'
     object_types = {
         'function':     ObjType(l_('function'),      'func', 'obj'),
+        'callback':     ObjType(l_('callback'),      'cb', 'obj'),
         'data':         ObjType(l_('data'),          'data', 'obj'),
         'class':        ObjType(l_('class'),         'class', 'obj'),
         'exception':    ObjType(l_('exception'),     'exc', 'obj'),
@@ -630,6 +635,7 @@ class ShellDomain(Domain):
 
     directives = {
         'function':      ShellModulelevel,
+        'callback':      ShellModulelevel,
         'data':          ShellModulelevel,
         'class':         ShellClasslike,
         'exception':     ShellClasslike,
@@ -644,6 +650,7 @@ class ShellDomain(Domain):
         'data':  ShellXRefRole(),
         'exc':   ShellXRefRole(),
         'func':  ShellXRefRole(fix_parens=True),
+        'cb':    ShellXRefRole(fix_parens=True),
         'class': ShellXRefRole(),
         'const': ShellXRefRole(),
         'attr':  ShellXRefRole(),
@@ -720,7 +727,7 @@ class ShellDomain(Domain):
                  'exceptions.' + name in objects:
                 newname = 'exceptions.' + name
             # special case: object methods
-            elif type in ('func', 'meth') and '.' not in name and \
+            elif type in ('func', 'cb', 'meth') and '.' not in name and \
                  'object.' + name in objects:
                 newname = 'object.' + name
         if newname is not None:
