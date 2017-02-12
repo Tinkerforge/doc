@@ -27,7 +27,7 @@ Laser Range Finder Bricklet
 Features
 --------
 
-* Misst Entfernung unf Geschwindigkeit mit Laser-Pulsen
+* Misst Entfernung und Geschwindigkeit mit Laser-Pulsen
 * Entfernungs-Messbereich 0-40m mit 1cm Auflösung
 * Messfrequenz bis zu 500Hz.
 
