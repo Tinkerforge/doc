@@ -188,6 +188,8 @@ werden als erstes aufgeführt. Über *System* kann der Brick Daemon auf dem RED
 Brick neugestartet werden, oder aber der RED Brick selber neugestartet oder
 heruntergefahren werden.
 
+.. TODO: Tinkerforge software update German documentation.
+
 Overview Tab (Statusinformation)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -293,10 +295,10 @@ Adresse und stellt eine Domain zur Verfügung. Die IP Adresse, SSID, WPA
 Passwort, DHCP Pool, DNS Domain und andere Optionen die von einem Access Point
 erwartet werden, können konfiguriert werden.
 
-Die aktuellen DHCP Leases werden angezeigt, so dass verbundene Geräte einfach 
+Die aktuellen DHCP Leases werden angezeigt, so dass verbundene Geräte einfach
 identifiziert werden können.
 
-Im Access Point Modus ist keine externe Netzwerkinfrastruktur notwendig. 
+Im Access Point Modus ist keine externe Netzwerkinfrastruktur notwendig.
 Smartphone, Tablet oder Laptop können direkt mit dem RED Brick verbunden werden.
 
 .. _red_brick_brickv_settings_mobile_internet:
@@ -326,7 +328,7 @@ Presets" Knopf ausgewählt werden.
 
 Nach einem Klick auf den "Connect" Knopf wird die Verbindung hergestellt, dies
 kann einige Minuten dauern. Es muss immer ein SIM Karten PIN eingegeben werden.
-Ist die PIN auf der SIM Karte deaktiviert worden, so kann eine beliebige PIN 
+Ist die PIN auf der SIM Karte deaktiviert worden, so kann eine beliebige PIN
 angegeben werden.
 
 Wenn WLAN Access Point und Mobile Internet gleichzeitig aktive sind, dann teilt
@@ -487,7 +489,7 @@ und Notebooks direkt mit dem RED Brick verbinden können.
   :ref:`mobile Internet-Verbindung im Settings Tab
   <red_brick_brickv_settings_mobile_internet>` konfiguriert werden.
 
-Werden Services geändert und gespeichert, so startet der RED Brick neu. Nach dem 
+Werden Services geändert und gespeichert, so startet der RED Brick neu. Nach dem
 Neustart stehen die Änderungen zur Verfügung.
 
 
@@ -613,7 +615,7 @@ System Logs
    :align: center
 
 Wähle eine Logdatei und klicke auf ``Refresh``. Die Logdatei wird vom RED Brick
-heruntergeladen und im Brick Viewer angezeigt. Mit ``Save`` kann die Datei 
+heruntergeladen und im Brick Viewer angezeigt. Mit ``Save`` kann die Datei
 gespeichert werden.
 
 Import
@@ -624,7 +626,7 @@ Import
    :alt: Screenshot des Import/Export Tabs: Import.
    :align: center
 
-Wähle ein Datei mit zuvor exportierten Programmen (siehe unten) und wähle die 
+Wähle ein Datei mit zuvor exportierten Programmen (siehe unten) und wähle die
 Programme, die importiert werden sollen. Drücke ``Import`` um diese hochzuladen.
 
 Export
@@ -638,9 +640,9 @@ Export
 Im Export Tab können Programme exportiert werden. Drücke ``Export`` um diese auf
 der Festplatte zu speichern.
 
-Die Exportdatei enthält die Konfiguration des Programms, alle Dateien und die 
-Logs die sich über die Zeit angesammelt haben. Wenn das zu exportierende 
-Programm läuft und dauerhaft Dateien schreibt bietet es sich an dieses vor dem 
+Die Exportdatei enthält die Konfiguration des Programms, alle Dateien und die
+Logs die sich über die Zeit angesammelt haben. Wenn das zu exportierende
+Programm läuft und dauerhaft Dateien schreibt bietet es sich an dieses vor dem
 Export zu beenden, um teilweise geschriebene Dateien zu verhindern.
 
 Mit dieser Option können Programme exportiert werden und auf anderen RED Bricks
@@ -1256,7 +1258,7 @@ Image Version 1.2 beseitigt.
 
 **Keine Namensauflösung** (gelöst)
 
-In Image Version 1.2 steht Standardmäßig keine Namensauflösung (DNS) zur 
+In Image Version 1.2 steht Standardmäßig keine Namensauflösung (DNS) zur
 Verfügung. Das Problem kann über die Konsole gelöst werden::
 
  sudo su

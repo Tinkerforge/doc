@@ -181,6 +181,36 @@ in the stack, the name of the used image, number of timeouts and the word
 *System* is shown. If you click on it, you can restart the Brick Daemon on the
 RED Brick and reboot or shut down the RED Brick itself.
 
+Update Tinkerforge Software
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Starting from Brick Viewer version 2.3.8 it is possible to update Tinkerforge
+software (Brick Viewer and Tinkerforge bindings) present in the RED Brick. The
+update process can be initiated from the ``System`` menu.
+
+.. image:: /Images/Screenshots/brickv_red_update_tf_software_menu.jpg
+   :scale: 60 %
+   :alt: Screenshot of Tinkerforge software update menu.
+   :align: center
+
+If there are updates available they will be reported.
+
+.. image:: /Images/Screenshots/brickv_red_update_tf_software_report.jpg
+   :scale: 60 %
+   :alt: Screenshot of Tinkerforge software update report.
+   :align: center
+
+Upon user confirmation the update process will start.
+
+.. image:: /Images/Screenshots/brickv_red_update_tf_software_progress.jpg
+   :scale: 60 %
+   :alt: Screenshot of Tinkerforge software update progress.
+   :align: center
+
+The only requirement for this update feature is a working internet connection
+on the system on which the Brick Viewer is running. The RED Brick doesn't require
+an active internet connection for the update feature to work.
+
 Overview Tab (Status Information)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -276,8 +306,8 @@ to the RED Brick USB port.
    :alt: Screenshot of settings tab showing access point configuration.
    :align: center
 
-If you use Access Point mode, the RED Brick will provide a DHCP and DNS server. 
-It will give devices that connect to it an IP address and provide a domain. 
+If you use Access Point mode, the RED Brick will provide a DHCP and DNS server.
+It will give devices that connect to it an IP address and provide a domain.
 You can configure the IP address, SSID, WPA passphrase, DHCP pool, DNS domain
 and other options that you might expect from an access point.
 
@@ -316,7 +346,7 @@ presets using the "Provider Presets" button.
 
 After you click the "Connect" the connection will be established. This might
 take several minutes. It is necessary to enter a SIM Card PIN even if it is not
-necessary. If you have disabled the PIN on your SIM card, enter an arbitrary 
+necessary. If you have disabled the PIN on your SIM card, enter an arbitrary
 PIN.
 
 
@@ -598,7 +628,7 @@ System Logs
    :alt: Screenshot of Import/Export tab showing system logs.
    :align: center
 
-Choose a log file and click ``Refresh`` to download it from the RED Brick and 
+Choose a log file and click ``Refresh`` to download it from the RED Brick and
 show it in the viewer. With the ``Save`` button you can save it on your disk.
 
 Import
@@ -631,7 +661,7 @@ program is running and continuously writing files, you may want to
 shut the program down before you export it. Otherwise you might export
 the program with a file that is only partly written.
 
-With this option programs can be exported and on a different RED Brick be 
+With this option programs can be exported and on a different RED Brick be
 imported (see above).
 
 
@@ -1216,7 +1246,7 @@ commands::
 Now the FPC Library should be installed properly and everything should work as
 expected!
 
-The problem only affects image version 1.0 and 1.1, it is fixed since image 
+The problem only affects image version 1.0 and 1.1, it is fixed since image
 version 1.2.
 
 **No name resolution** (solved)
@@ -1229,13 +1259,13 @@ can fix this through the console::
 
  echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
-The problem only affects image version 1.2, it is fixed since image 
+The problem only affects image version 1.2, it is fixed since image
 version 1.3.
 
 **Ethernet Extension shows up in Extension tab but not in network settings** (solved)
 
 In Image version 1.4 the RED Bricks may have problems finding the driver for the
-Ethernet extension. If you encounter this problem you can fix this through the 
+Ethernet extension. If you encounter this problem you can fix this through the
 console::
 
  sudo su
