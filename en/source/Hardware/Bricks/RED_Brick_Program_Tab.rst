@@ -131,27 +131,16 @@ directly link against this library (see example below).
   compiled upon upload. If you use this option your project must
   contain a ``Makefile``. An example Makefile for a small
   project that uses the Tinkerforge Bindings and consists otherwise
-  of the file ``example.c`` looks as follows::
+  of the file ``example.c`` looks as follows:
 
-    # Defines
-    CC=g++
-    CFLAGS=-c -Wall -I/usr/include/tinkerforge
-    LIBS=-ltinkerforge -lpthread
-    EXE=example
-    SOURCES=example.c
-    OBJECTS=$(SOURCES:.c=.o)
+  `Download (Makefile) <https://github.com/Tinkerforge/doc/raw/master/en/source/Hardware/Bricks/Makefile>`__,
+  `Download (example.c) <https://github.com/Tinkerforge/doc/raw/master/en/source/Hardware/Bricks/example.c>`__
 
-    # Build Rules
-    all: $(SOURCES) $(EXE)
+  .. literalinclude:: Makefile
+   :language: makefile
+   :linenos:
+   :tab-width: 4
 
-    .c.o:
-    	$(CC) $(CFLAGS) $< -o $@
-
-    $(EXE): $(OBJECTS)
-    	$(CC) $(OBJECTS) -o $(EXE) $(LIBS)
-
-    clean:
-    	rm -f *.o $(EXE)
 * Working Directory: Specify the
   `working directory <https://en.wikipedia.org/wiki/Working_directory>`__
   of your program. You can use a path that is relative to the

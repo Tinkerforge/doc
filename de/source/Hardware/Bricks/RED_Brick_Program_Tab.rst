@@ -131,27 +131,16 @@ die Bibliothek gelinkt werden (siehe das nachfolgende Beispiel).
   Hochladen kompiliert. Eine ``Makefile`` muss im Projekt enthalten sein, damit
   diese Option genutzt werden kann. Nachfolgend eine Beispiel-Makefile für ein
   kleines  Projekt, das die Tinkerforge Bindings benutzt und die Datei
-  ``example.c`` kompiliert::
+  ``example.c`` kompiliert:
 
-    # Defines
-    CC=g++
-    CFLAGS=-c -Wall -I/usr/include/tinkerforge
-    LIBS=-ltinkerforge -lpthread
-    EXE=example
-    SOURCES=example.c
-    OBJECTS=$(SOURCES:.c=.o)
+  `Download (Makefile) <https://github.com/Tinkerforge/doc/raw/master/en/source/Hardware/Bricks/Makefile>`__,
+  `Download (example.c) <https://github.com/Tinkerforge/doc/raw/master/en/source/Hardware/Bricks/example.c>`__
 
-    # Build Rules
-    all: $(SOURCES) $(EXE)
+  .. literalinclude:: Makefile
+   :language: makefile
+   :linenos:
+   :tab-width: 4
 
-    .c.o:
-    	$(CC) $(CFLAGS) $< -o $@
-
-    $(EXE): $(OBJECTS)
-    	$(CC) $(OBJECTS) -o $(EXE) $(LIBS)
-
-    clean:
-    	rm -f *.o $(EXE)
 * Working Directory: Spezifiziert das
   `Arbeitsverzeichnis <https://en.wikipedia.org/wiki/Working_directory>`__
   des Programms. Dieser Pfad ist relativ zum Root Verzeichnis des Programms.
