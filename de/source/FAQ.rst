@@ -208,9 +208,11 @@ Schnittstelle im Brick Viewer auswählen.
 **Master Brick 2.0 im Stack mit Master Extension**:
 
 Master Brick Hardware Version 2.0 hat eine Änderung im Leiterplattenlayout die
-den Bootloader Modus stört, wenn eine Master Extension wie WIFI, RS485 oder
+den Bootloader Modus stört, wenn eine Master Extension wie WIFI (2.0), RS485 oder
 Ethernet im Stack vorhanden ist. In diesem Fall muss die Master Extension aus
 dem Stack entfernt werden, damit der Bootloader Modus richtig funktioniert.
+
+Dieses Problem wurde in Master Brick Hardware Version 2.1 wieder behoben.
 
 **/dev/ttyACM0 ist nicht zugreifbar für User (auf Linux)**:
 
