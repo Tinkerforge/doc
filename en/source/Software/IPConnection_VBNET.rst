@@ -167,11 +167,11 @@ done by appending your callback handler to the corresponding event:
 
 .. code-block:: vbnet
 
-    Sub Callback(ByVal sender As IPConnection, ByVal value As Short)
+    Sub MyCallback(ByVal sender As IPConnection, ByVal value As Short)
         Console.WriteLine("Value: {0}", value)
     End Sub
 
-    AddHandler ipcon.Example, AddressOf Callback
+    AddHandler ipcon.ExampleCallback, AddressOf MyCallback
 
 The available events are described below.
 
@@ -218,7 +218,7 @@ The available events are described below.
  or :vbnet:attr:`BrickletAmbientLight.DEVICE_IDENTIFIER`.
 
 
-.. vbnet:function:: Event IPConnection.Connected(ByVal sender As IPConnection, ByVal connectReason As Short)
+.. vbnet:function:: Event IPConnection.ConnectedCallback(ByVal sender As IPConnection, ByVal connectReason As Short)
 
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
@@ -229,7 +229,7 @@ The available events are described below.
    auto-reconnect.
 
 
-.. vbnet:function:: Event IPConnection.Disconnected(ByVal sender As IPConnection, ByVal disconnectReason As Short)
+.. vbnet:function:: Event IPConnection.DisconnectedCallback(ByVal sender As IPConnection, ByVal disconnectReason As Short)
 
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or from a WIFI/Ethernet Extension, possible reasons are:

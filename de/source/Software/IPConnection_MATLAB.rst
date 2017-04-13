@@ -185,11 +185,11 @@ Callback-Name und die Callback-Funktion. Hier ein Beispiel in MATLAB:
 
 .. code-block:: matlab
 
-    function cb_example(e)
+    function my_callback(e)
         fprintf('Parameter: %s\\n', e.param);
     end
 
-    set(ipcon, 'ExampleCallback', @(h, e) cb_example(e));
+    set(ipcon, 'ExampleCallback', @(h, e) my_callback(e));
 
 Die Octave Java Unterstützung unterscheidet sich hier von MATLAB, die "set"
 Funktion kann hier nicht verwendet werden. Die Registrierung wird in Octave
@@ -198,11 +198,11 @@ ein Beispiel in Octave:
 
 .. code-block:: octave
 
-    function cb_example(e)
+    function my_callback(e)
         fprintf("Parameter: %s\\n", e.param);
     end
 
-    ipcon.addExampleCallback(@cb_example);
+    ipcon.addExampleCallback(@my_callback);
     
 Es ist möglich mehrere Callback-Funktion hinzuzufügen und auch mit einem
 korrespondierenden "remove*Callback" wieder zu entfernen.

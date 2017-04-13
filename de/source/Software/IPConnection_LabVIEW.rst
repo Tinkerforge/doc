@@ -266,7 +266,7 @@ Die verfügbaren Events werden im Folgenden beschrieben.
  oder :labview:sym:`BrickletAmbientLight.DEVICE_IDENTIFIER <BrickletAmbientLight.DEVICE_IDENTIFIER>`.
 
 
-.. labview:function:: event IPConnection.Connected(sender, connectReason)
+.. labview:function:: event IPConnection.ConnectedCallback(sender, connectReason)
 
  :input sender: .NET Refnum (IPConnection)
  :input connectReason: Int16
@@ -281,7 +281,7 @@ Die verfügbaren Events werden im Folgenden beschrieben.
    Auto-Reconnect.
 
 
-.. labview:function:: event IPConnection.Disconnected(sender, disconnectReason)
+.. labview:function:: event IPConnection.DisconnectedCallback(sender, disconnectReason)
 
  :input sender: .NET Refnum (IPConnection)
  :input disconnectReason: Int16
