@@ -35,10 +35,6 @@ can be controlled over **USB**.  With the provided API for many
 :ref:`programming languages <stepper_brick_programming_interface>` you can 
 control the direction, velocity and acceleration of the connected motor.
 
-The maximum driving current and the 
-:ref:`decay mode <stepper_brick_decay_mode>` can also be controlled.
-The current consumption and power supply voltage can be measured by the API.
-
 Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the 
 features of this Brick. It can also be used together with other Bricks in a
 :ref:`stack <primer_stack>`. For example an additional 
@@ -53,9 +49,11 @@ directly to the Brick (black connector) or by the stack internal power supply.
 If an external power supply is connected the Brick automatically switches to 
 this power supply.
 
-It is possible to drive stepper motors completely noiseless.
+It is possible to run the Silent Stepper Brick in a variety of different modes.
+The stepper motor can be driven completely noiseless (Stealth Mode), with
+smart energy optimizations (Coolstep Mode) or with maximized torque 
+(Classic mode).
 
-TODO: Stealth, Coolstep, Spreadcycle, etc.?
 
 Technical Specifications
 ------------------------
