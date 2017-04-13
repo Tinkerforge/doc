@@ -34,6 +34,7 @@ with a maximum current of **1.6A** and a maximum voltage of **46V** per phase
 can be controlled over **USB**.  With the provided API for many 
 :ref:`programming languages <stepper_brick_programming_interface>` you can 
 control the direction, velocity and acceleration of the connected motor.
+Step modes of the motor can be choosen between full-step and 1/256-steps.
 
 Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the 
 features of this Brick. It can also be used together with other Bricks in a
@@ -52,7 +53,8 @@ this power supply.
 It is possible to run the Silent Stepper Brick in a variety of different modes.
 The stepper motor can be driven completely noiseless (Stealth Mode), with
 smart energy optimizations (Coolstep Mode) or with maximized torque 
-(Classic mode).
+(Classic mode). The Silent Stepper Brick can be configured to switch between 
+these modes automatically dependend on motor velocity.
 
 
 Technical Specifications
@@ -186,9 +188,12 @@ Basic Configuration
 In most applications you can keep all of the settings as default and only
 configure the basic configuration:
 
-* **Standstill Current**: This value can be used to lower the current during stand still. It takes
-  effect after the Power Down Time and the transition time can be controlled with the Standstill Delay 
-  Time. The unit is in mA and the maximum allowed value is the current motor current.
+* **Standstill Current**: This value can be used to lower the current during stand still. This might
+  be reasonable to reduce the heating of the motor and the Brick. When the motor is in standstill 
+  the configured motor phase current will be driven until the configured 
+  Power Down Time is elapsed. After that the phase current will be reduced to the standstill 
+  current. The elapsed time for this reduction can be configured with the Standstill Delay Time.
+  The unit is in mA and the maximum allowed value is the configured maximum motor current.
 
 * **Motor Run Current**: The value is applied as a factor to the max current when the motor is
   running. Use a value of at least 16 for good microstep performance. The unit is in mA and the 

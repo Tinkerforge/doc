@@ -17,6 +17,12 @@ Silent Stepper Brick
 Features
 --------
 
+* Steuert einen bipolaren Schrittmotor über USB (max. **46V**, **1.6A** pro Phase)
+* Lautloser Betrieb von Schrittmotoren
+* Position, Geschwindigkeit und Beschleunigung sind steuerbar
+* Schrittmotor-Auflösung von Vollschritt bis zu 1/256-Schritt
+* Erweiterbar über zwei Bricklet-Anschlüsse
+
 .. _silent_stepper_brick_description:
 
 Beschreibung
