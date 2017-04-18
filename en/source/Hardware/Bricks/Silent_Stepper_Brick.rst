@@ -82,7 +82,7 @@ Current Consumption               TBDmA
 Resources
 ---------
 
-* TCM2130 datasheet (`Download <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/datasheets/TMC2130_datasheet.pdf>`__)
+* TMC2130 datasheet (`Download <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/datasheets/TMC2130_datasheet.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/hardware/silent-stepper-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/silent_stepper_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/silent-stepper-brick/zipball/master>`__)
@@ -118,7 +118,7 @@ TODO: Add Silent Stepper Brick image
 
 .. image:: /Images/Bricks/brick_stepper_motor_setup_600.jpg
    :scale: 100 %
-   :alt: Stepper Brick with motor
+   :alt: Silent Stepper Brick with motor
    :align: center
    :target: ../../_images/Bricks/brick_stepper_motor_setup_1200.jpg
 
@@ -154,7 +154,7 @@ Beneath you can configure the minimum input voltage, which allows for
 undervoltage signals if the voltage is too low. In the bottom right the
 motor current can be configured according to the connected motor.
 
-At the very bottom all of the Basic, Stealth, Coolste, Spreadcycle and Misc
+At the very bottom all of the Basic, Stealth, Coolstep, Spreadcycle and Misc
 configurations can be set. The last tab shows the current status of the
 driver.
 
@@ -178,8 +178,8 @@ The red LED is enabled if the input voltage is below the user
 configurable minimum voltage.
 
 
-Modes and Features
-------------------
+Modes and their Features
+------------------------
 
 Basic Configuration
 ^^^^^^^^^^^^^^^^^^^
@@ -194,9 +194,12 @@ configure the basic configuration:
   current. The elapsed time for this reduction can be configured with the Standstill Delay Time.
   The unit is in mA and the maximum allowed value is the configured maximum motor current.
 
-* **Motor Run Current**: The value is applied as a factor to the max current when the motor is
-  running. Use a value of at least 16 for good microstep performance. The unit is in mA and the 
-  maximum allowed value is the current motor current.
+* **Motor Run Current**: The value sets the motor current when the motor is running. 
+  Use a value of at least one half of the global maximum motor current for a good 
+  microstep performance. The unit is in mA and the maximum allowed value is the current 
+  motor current. The API maps the entered value to 1/32 ... 32/32 of the maximum
+  motor current. This value should be used to change the motor current during motor movement,
+  whereas the global maximum motor current should not be changed while the motor is moving.
 
 * **Standstill Delay Time**: Controls the duration for motor power down after a motion 
   as soon as standstill is detected and the Power Down Time is expired. A high Standstill Delay
@@ -251,14 +254,14 @@ Stallguard
 ^^^^^^^^^^
 
 Stallguard can be used to measure motor load and for stall
-detection. In coolstep mode the measurement is used to adjust the motor 
-current to the load.
+detection. In coolstep mode the measurement is used internally to adjust the 
+motor current to the load.
 
 
 Help! I don't understand half of the words
 ------------------------------------------
 
-The TCM2130 is a powerful stepper motor driver. Unfortunately this comes with
+The used TMC2130 is a powerful stepper motor driver. Unfortunately this comes with
 lots of modes, features and configuration possibilites. In our experience,
 you can leave all of the configurations but the Basic Configurations 
 (first tab in Brick Viewer) as default. We did choose sane default values for
@@ -266,10 +269,10 @@ all of the configurations.
 
 If you want to understand all of the features in detail and the description in
 this documentation is not enough, you can take a look at the
-`TCM2130 datasheet <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/datasheets/TMC2130_datasheet.pdf>`__.
+`TMC2130 datasheet <https://github.com/Tinkerforge/silent-stepper-brick/raw/master/datasheets/TMC2130_datasheet.pdf>`__.
 
 For convenience, we provide a table that shows which API function parameters
-changes what TCM2130 register.
+changes what TMC2130 register.
 
 .. |nbsp| unicode:: 0xA0
    :trim:

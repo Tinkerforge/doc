@@ -104,7 +104,7 @@ Ressourcen
 Anschlussmöglichkeit
 --------------------
 
-Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeit des
+Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeiten des
 Stepper Bricks.
 
 .. image:: /Images/Bricks/brick_stepper_caption_600.jpg
@@ -154,7 +154,7 @@ Weiter unten kann die Schrittmodus (Voll-, Halb-, Viertel- und Achtelschritt)
 eingestellt sowie eine Vollbremsung ausgelöst werden, die den Motor sofort
 anhält.
 
-Alternative kann der Schrittmotor auch zu einer bestimmten Position (gemessen
+Alternativ kann der Schrittmotor auch zu einer bestimmten Position (gemessen
 in Schritten) gefahren werden. Dazu einfach bei "Drive To" die Position eingeben
 und "Go" klicken. Der Schrittmotor kann ebenfalls eine bestimmte Anzahl Schritte
 gefahren werden. Bei diesen beiden Fahrweisen werden auch die Einstellungen für
@@ -177,7 +177,7 @@ Stromversorgung
 Der angeschlossene Motor kann über den schwarzen Stromversorgungsstecker auf
 der Platine extern versorgt werden. Alternativ kann eine :ref:`Stromversorgung
 <primer_power_supplies>` unter den Brick gesteckt werden.
-Der Brick schaltet von selbst auf extern Versorgungen um, wenn am schwarzen
+Der Brick schaltet von selbst auf die externe Versorgung um, wenn am schwarzen
 Stecker eine Spannung anliegt.
 
 
