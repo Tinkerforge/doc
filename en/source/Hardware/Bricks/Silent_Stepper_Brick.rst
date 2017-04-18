@@ -34,7 +34,7 @@ with a maximum current of **1.6A** and a maximum voltage of **46V** per phase
 can be controlled over **USB**.  With the provided API for many 
 :ref:`programming languages <stepper_brick_programming_interface>` you can 
 control the direction, velocity and acceleration of the connected motor.
-Step modes of the motor can be choosen between full-step and 1/256-steps.
+Step modes of the motor can be chosen between full-step and 1/256-steps.
 
 Two :ref:`Bricklet <primer_bricklets>` ports can be used to extend the 
 features of this Brick. It can also be used together with other Bricks in a
