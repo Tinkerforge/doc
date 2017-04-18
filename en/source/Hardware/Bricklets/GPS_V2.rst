@@ -109,11 +109,9 @@ Impedance                         50Ω
 Noise Figure                      < 1.5dB (TODO)
 ================================  ============================================================
 
-We supply three different compatible GPS antennas:
-
-* TODO,
-* TODO and
-* TODO.
+A compatible antenna is included with the Bricklet and attached to the bottom. You can
+disconnect the U.FL connector and connect your own antenna. A compatible antenna with a long
+lead is `available in the shop <TODO>`.
 
 .. _gps_v2_bricklet_test:
 
