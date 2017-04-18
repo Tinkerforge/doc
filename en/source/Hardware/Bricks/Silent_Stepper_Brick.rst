@@ -126,11 +126,11 @@ TODO: Add Silent Stepper Brick image
 
 TODO: Add Silent Stepper Brick image
 
-.. image:: /Images/Bricks/stepper_brickv.jpg
+.. image:: /Images/Bricks/silent_stepper_brickv.jpg
    :scale: 100 %
-   :alt: Stepper Brick in Brick Viewer
+   :alt: Silent Stepper Brick in Brick Viewer
    :align: center
-   :target: ../../_images/Bricks/stepper_brickv.jpg
+   :target: ../../_images/Bricks/silent_stepper_brickv.jpg
 
 In the left part of the GUI you can enable the driver and control
 the velocity, acceleration and deceleration of the stepper. Below
