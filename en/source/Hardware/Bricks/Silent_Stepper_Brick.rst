@@ -21,7 +21,7 @@ Features
 * Noiseless operation of stepper motors
 * Position, velocity and acceleration controllable
 * Stepper resolution from full-step to 1/256-step
-* Extendable via two Bricklets ports
+* Extendable via two Bricklet ports
 
 .. _silent_stepper_brick_description:
 
@@ -150,7 +150,7 @@ until reaching the maximum velocity and decelerate before reaching the
 specified position.
 
 On the right side the current position and remaining steps are shown
-as well as the stack and external voltages.
+as well as the stack voltage and the voltage of the external power-connector (black).
 Below is a graphical representation of the velocity of the stepper.
 Beneath you can configure the minimum input voltage, which allows for
 undervoltage signals if the voltage is too low. In the bottom right the
@@ -166,10 +166,11 @@ driver.
 Power Supply
 ------------
 
-The connected stepper can be powered through the black on-board power-connector
+The connected stepper motor can be powered through the black on-board power-connector
 or through a :ref:`Power Supply <primer_power_supplies>` in the
 stack. The Brick switches automatically to the on-board power-connector when
-a voltage is measured there.
+a voltage is measured there and no external voltage is detected on the power-connector.
+The black power connector is always prioritzed.
 
 
 Error LED
@@ -224,8 +225,8 @@ configure the basic configuration:
 Stealth Mode
 ^^^^^^^^^^^^
 
-In stelath mode the stepper motor is driven quitely and with little vibrations.
-The mode is usable in low and medium velocities.
+In stealth mode the stepper motor is driven quitely and with little vibrations.
+The mode is usable for low and medium velocities.
 
 Coolstep Mode
 ^^^^^^^^^^^^^
