@@ -142,8 +142,8 @@ depicted below.
 Fix LED
 -------
 
-The green LED labeled "Fix" indicates that status of the position data. The
-LED blinks during fix aquisition and is turned on if a fix is achieved.
+The green LED labeled "Fix" indicates the status of the position data. The
+LED blinks during fix acquisition and is turned on if a fix is achieved.
 
 If the GPS module is battery powered the LED is turned off to save power.
 
