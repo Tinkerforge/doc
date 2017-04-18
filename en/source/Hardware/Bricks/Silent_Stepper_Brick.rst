@@ -13,6 +13,19 @@ Silent Stepper Brick
 .. note::
  This Brick is currently work-in-progress!
 
+.. raw:: html
+
+	{% tfgallery %}
+
+	Bricks/brick_silent_stepper_tilted_[?|?].jpg              Silent Stepper Brick
+	Bricks/brick_silent_stepper_tilted_back_[?|?].jpg         Silent Stepper Brick
+	Bricks/brick_silent_stepper_motor_setup_[?|?].jpg         Silent Stepper Brick with motor
+	Bricks/brick_silent_stepper_caption_[?|?].jpg             Silent Stepper Brick with caption
+	Bricks/brick_silent_stepper_top_[?|?].jpg                 Silent Stepper Brick top
+	Bricks/brick_silent_stepper_bottom_[?|?].jpg              Silent Stepper Brick bottom
+	Dimensions/silent_stepper_brick_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 Features
 --------
@@ -95,13 +108,11 @@ Connectivity
 The following picture depicts the different connection possibilities of the
 Stepper Brick.
 
-TODO: Add silent stepper images
-
-.. image:: /Images/Bricks/brick_stepper_caption_600.jpg
+.. image:: /Images/Bricks/brick_silent_stepper_caption_600.jpg
    :scale: 100 %
-   :alt: Stepper Brick with caption
+   :alt: Silent Stepper Brick with caption
    :align: center
-   :target: ../../_images/Bricks/brick_stepper_caption_800.jpg
+   :target: ../../_images/Bricks/brick_silent_stepper_caption_800.jpg
 
 .. _silent_stepper_brick_test:
 
@@ -114,13 +125,11 @@ Connect a stepper motor to the Brick and a suitable power supply
 (see :ref:`here <stepper_brick_connectivity>`). Your setup should look
 like below.
 
-TODO: Add Silent Stepper Brick image
-
-.. image:: /Images/Bricks/brick_stepper_motor_setup_600.jpg
+.. image:: /Images/Bricks/brick_silent_stepper_motor_setup_600.jpg
    :scale: 100 %
    :alt: Silent Stepper Brick with motor
    :align: center
-   :target: ../../_images/Bricks/brick_stepper_motor_setup_1200.jpg
+   :target: ../../_images/Bricks/brick_silent_stepper_motor_setup_1200.jpg
 
 |test_tab|
 
