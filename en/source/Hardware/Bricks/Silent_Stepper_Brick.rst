@@ -87,8 +87,8 @@ Maximum Acceleration              0 to 65535, configurable as limit, in steps/sÂ
 --------------------------------  ------------------------------------------------------------
 Bricklet Ports                    2
 Dimensions (W x D x H)            40 x 40 x 17mm (1.57 x 1.57 x 0.67")
-Weight                            TBDg
-Current Consumption               TBDmA
+Weight                            19g
+Current Consumption               59mA
 ================================  ============================================================
 
 

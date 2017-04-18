@@ -83,8 +83,8 @@ Maximale Beschleunigung           0 bis 65535, einstellbares Limit, in Schritte/
 --------------------------------  ------------------------------------------------------------
 Bricklet Anschlüsse               2
 Abmessungen (B x T x H)           40 x 40 x 17mm (1.57 x 1.57 x 0.67")
-Gewicht                           TBDg
-Stromverbrauch                    TBDmA
+Gewicht                           19g
+Stromverbrauch                    59mA
 ================================  ============================================================
 
 Ressourcen
