@@ -124,8 +124,6 @@ TODO: Add Silent Stepper Brick image
 
 |test_tab|
 
-TODO: Add Silent Stepper Brick image
-
 .. image:: /Images/Bricks/silent_stepper_brickv.jpg
    :scale: 100 %
    :alt: Silent Stepper Brick in Brick Viewer
