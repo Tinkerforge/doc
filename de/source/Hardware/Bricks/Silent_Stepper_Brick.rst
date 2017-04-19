@@ -212,7 +212,7 @@ Nur diese Einstellungen müssen meist angepasst werden:
   0-65536 Schritte/s. Im Classic Modus wird der Schrittmotor geräuschvoll aber das Drehmoment wird 
   maximiert.
 
-* **High Velocity Shopper Mode**: Wernn der High Velocity Shopper Mode aktiviert wird, optimiert der 
+* **High Velocity Shopper Mode**: Wenn der High Velocity Shopper Mode aktiviert wird, optimiert der 
   Schrittmotortreiber die Ansteuerung des Motors für hohe Geschwindigkeiten.
 
 
