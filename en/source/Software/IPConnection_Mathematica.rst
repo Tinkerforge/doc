@@ -202,9 +202,9 @@ done by appending your callback handler to the corresponding event:
 
 .. code-block:: mathematica
 
-    Callback[sender_,value_]:=Print["Value: "<>ToString[value]]
+    MyCallback[sender_,value_]:=Print["Value: "<>ToString[value]]
 
-    AddEventHandler[ipcon@Example,Callback]
+    AddEventHandler[ipcon@ExampleCallback,MyCallback]
 
 For further information about event handling using .NET/Link see the
 corresponding Mathematica `.NET/Link documentation
@@ -265,7 +265,7 @@ The available events are described below.
  or :mathematica:sym:`BrickletAmbientLight`DEVICEUIDENTIFIER <BrickletAmbientLight`DEVICEUIDENTIFIER>`.
 
 
-.. mathematica:function:: event IPConnection@Connected[sender, connectReason]
+.. mathematica:function:: event IPConnection@ConnectedCallback[sender, connectReason]
 
  :param sender: NETObject[IPConnection]
  :param connectReason: Integer
@@ -279,7 +279,7 @@ The available events are described below.
    auto-reconnect.
 
 
-.. mathematica:function:: event IPConnection@Disconnected[sender, disconnectReason]
+.. mathematica:function:: event IPConnection@DisconnectedCallback[sender, disconnectReason]
 
  :param sender: NETObject[IPConnection]
  :param disconnectReason: Integer

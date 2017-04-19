@@ -13,6 +13,19 @@ Silent Stepper Brick
 .. note::
   Dieser Brick ist noch in Entwicklung!
 
+.. raw:: html
+
+	{% tfgallery %}
+
+	Bricks/brick_silent_stepper_tilted_[?|?].jpg              Silent Stepper Brick
+	Bricks/brick_silent_stepper_tilted_back_[?|?].jpg         Silent Stepper Brick
+	Bricks/brick_silent_stepper_motor_setup_[?|?].jpg         Silent Stepper Brick mit Schrittmotor
+	Bricks/brick_silent_stepper_caption_[?|?].jpg             Silent Stepper Brick mit Beschriftung
+	Bricks/brick_silent_stepper_top_[?|?].jpg                 Silent Stepper Brick Oberseite
+	Bricks/brick_silent_stepper_bottom_[?|?].jpg              Silent Stepper Brick Unterseite
+	Dimensions/silent_stepper_brick_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 Features
 --------
@@ -70,8 +83,8 @@ Maximale Beschleunigung           0 bis 65535, einstellbares Limit, in Schritte/
 --------------------------------  ------------------------------------------------------------
 Bricklet Anschlüsse               2
 Abmessungen (B x T x H)           40 x 40 x 17mm (1.57 x 1.57 x 0.67")
-Gewicht                           TBDg
-Stromverbrauch                    TBDmA
+Gewicht                           19g
+Stromverbrauch                    59mA
 ================================  ============================================================
 
 Ressourcen
@@ -89,11 +102,11 @@ Anschlussmöglichkeit
 
 Das folgende Bild zeigt die verschiedenen Anschlussmöglichkeiten des Silent Stepper Bricks.
 
-.. image:: /Images/Bricks/brick_stepper_caption_600.jpg
+.. image:: /Images/Bricks/brick_silent_stepper_caption_600.jpg
    :scale: 100 %
-   :alt: Stepper Brick mit Beschreibung
+   :alt: Silent Stepper Brick mit Beschreibung
    :align: center
-   :target: ../../_images/Bricks/brick_stepper_caption_800.jpg
+   :target: ../../_images/Bricks/brick_silent_stepper_caption_800.jpg
 
 .. _silent_stepper_brick_test:
 
@@ -107,11 +120,11 @@ Verbinde einen Schrittmotor mit dem Brick und eine passende Stromversorgung an
 den Brick an (see :ref:`here <stepper_brick_connectivity>`). 
 Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 
-.. image:: /Images/Bricks/brick_stepper_motor_setup_600.jpg
+.. image:: /Images/Bricks/brick_silent_stepper_motor_setup_600.jpg
    :scale: 100 %
    :alt: Silent Stepper Brick mit Motor
    :align: center
-   :target: ../../_images/Bricks/brick_stepper_motor_setup_1200.jpg
+   :target: ../../_images/Bricks/brick_silent_stepper_motor_setup_1200.jpg
 
 |test_tab|
 

@@ -170,12 +170,12 @@ done by appending your callback handler to the corresponding event:
 
 .. code-block:: csharp
 
-    void Callback(IPConnection sender, int value)
+    void MyCallback(IPConnection sender, int value)
     {
         System.Console.WriteLine("Value: " + value);
     }
 
-    ipcon.Example += Callback;
+    ipcon.ExampleCallback += MyCallback;
 
 The available events are described below.
 
@@ -223,7 +223,7 @@ The available events are described below.
  or :csharp:member:`BrickletAmbientLight.DEVICE_IDENTIFIER <BrickletAmbientLight::DEVICE_IDENTIFIER>`.
 
 
-.. csharp:function:: public event IPConnection::Connected(IPConnection sender, short connectReason)
+.. csharp:function:: public event IPConnection::ConnectedCallback(IPConnection sender, short connectReason)
 
  This event is triggered whenever the IP Connection got connected to a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:
@@ -234,7 +234,7 @@ The available events are described below.
    auto-reconnect.
 
 
-.. csharp:function:: public event IPConnection::Disconnected(IPConnection sender, short disconnectReason)
+.. csharp:function:: public event IPConnection::DisconnectedCallback(IPConnection sender, short disconnectReason)
 
  This event is triggered whenever the IP Connection got disconnected from a
  Brick Daemon or to a WIFI/Ethernet Extension, possible reasons are:

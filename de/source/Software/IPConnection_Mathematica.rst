@@ -211,9 +211,9 @@ passenden Event:
 
 .. code-block:: mathematica
 
-    Callback[sender_,value_]:=Print["Value: "<>ToString[value]]
+    MyCallback[sender_,value_]:=Print["Value: "<>ToString[value]]
 
-    AddEventHandler[ipcon@Example,Callback]
+    AddEventHandler[ipcon@ExampleCallback,MyCallback]
 
 Weitere Informationen über Event-Behandlung mittels .NET/Link sind in der
 entsprechende Mathematica `.NET/Link Dokumentation
@@ -276,7 +276,7 @@ Die verfügbaren Events werden im Folgenden beschrieben.
  oder :mathematica:sym:`BrickletAmbientLight`DEVICEUIDENTIFIER <BrickletAmbientLight`DEVICEUIDENTIFIER>`.
 
 
-.. mathematica:function:: event IPConnection@Connected[sender, connectReason]
+.. mathematica:function:: event IPConnection@ConnectedCallback[sender, connectReason]
 
  Dieser Event wird ausgelöst wenn die IP Connection eine Verbindung
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension aufgebaut hat,
@@ -288,7 +288,7 @@ Die verfügbaren Events werden im Folgenden beschrieben.
    Auto-Reconnect.
 
 
-.. mathematica:function:: event IPConnection@Disconnected[sender, disconnectReason]
+.. mathematica:function:: event IPConnection@DisconnectedCallback[sender, disconnectReason]
 
  Dieser Event wird aufgerufen wenn die Verbindung der IP Connection
  zu einem Brick Daemon oder einer WIFI/Ethernet Extension getrennt wurde,

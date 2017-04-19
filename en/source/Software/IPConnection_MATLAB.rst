@@ -181,11 +181,11 @@ it looks like this in MATLAB:
 
 .. code-block:: matlab
 
-    function cb_example(e)
+    function my_callback(e)
         fprintf('Parameter: %s\n', e.param);
     end
 
-    set(ipcon, 'ExampleCallback', @(h, e) cb_example(e));
+    set(ipcon, 'ExampleCallback', @(h, e) my_callback(e));
 
 Due to a difference in the Octave Java support the "set" function cannot be
 used in Octave. The registration is done with "add*Callback" functions of the
@@ -193,11 +193,11 @@ IP Connection object. It looks like this in Octave:
 
 .. code-block:: octave
 
-    function cb_example(e)
+    function my_callback(e)
         fprintf("Parameter: %s\n", e.param);
     end
 
-    ipcon.addExampleCallback(@cb_example);
+    ipcon.addExampleCallback(@my_callback);
 
 It is possible to add several callback functions and to remove them with the
 corresponding "remove*Callback" function.
