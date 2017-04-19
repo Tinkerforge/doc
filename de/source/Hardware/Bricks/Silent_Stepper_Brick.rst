@@ -30,7 +30,7 @@ Silent Stepper Brick
 Features
 --------
 
-* Steuert einen bipolaren Schrittmotor über USB (max. **46V**, **1.6A** pro Phase)
+* Steuert einen bipolaren Schrittmotor über USB (max. **46V**, **1,6A** pro Phase)
 * Lautloser Betrieb von Schrittmotoren
 * Position, Geschwindigkeit und Beschleunigung sind steuerbar
 * Schrittmotor-Auflösung von Vollschritt bis zu 1/256-Schritt
@@ -40,13 +40,14 @@ Features
 
 Beschreibung
 ------------
+
 Der Silent Stepper :ref:`Brick <primer_bricks>` kann einen bipolaren
 `Schrittmotor <https://de.wikipedia.org/wiki/Schrittmotor>`__ mit einem 
-maximalen Phasenstrom von **1.6A** und einer maximalen Spannung von **46V**
+maximalen Phasenstrom von **1,6A** und einer maximalen Spannung von **46V**
 per **USB** steuern. Die API des Bricks ist für verschiedene  
 :ref:`Programmiersprachen <stepper_brick_programming_interface>` verfügbar und kann
 Richtung, Geschwindigkeit und Beschleunigung des angeschlossenen Schrittmotors steuern.
-Der Motor kann im Vollschritt bis zu 1/256-Schrittmodus betrieben werden.
+Die Schrittweite kann zwischen Vollschritt und 1/256-Schrittmodus gewählt werden.
 
 Über zwei Anschlüsse können :ref:`Bricklets <primer_bricklets>` angeschlossen werden, die die
 Fähigkeiten des Bricks erweitern. Der Silent Stepper Brick kann mit anderen Bricks in einem
@@ -182,7 +183,7 @@ Die rote LED leuchtet wenn die Versorgungsspannung unter das einstellbaren
 Minimum fällt.
 
 
-Modis und deren Eigenschaften
+Modi und deren Eigenschaften
 -----------------------------
 
 Basic Configuration (Grundeinstellungen)
@@ -253,7 +254,7 @@ Spreadcycle
 ^^^^^^^^^^^
 
 Spreadcycle kann zusammen mit dem Coolstep Modus verwendet werden. Es handelt sich dabei um eine
-andere Art der Stromregelung die eine schellere Reaktionszeit auf sich änderne Motorlasten und
+andere Art der Stromregelung die eine schnellere Reaktionszeit auf sich ändernde Motorlasten und
 Geschwindigkeiten besitzt.
 
 Stallguard
@@ -267,7 +268,7 @@ Hilfe! Ich verstehe die Hälfte der Wörter nicht
 
 Der verwendete TMC2130 ist ein sehr mächtiger Motortreiber. Leider besitzt dieser 
 daher auch viele Modi, Features und Einstellungsmöglichkeiten. In den meisten 
-Anwendungen sollte es ausreichen nut die Grundeinstellungen (Basic Configuration, 
+Anwendungen sollte es ausreichen nur die Grundeinstellungen (Basic Configuration,
 erster Tab im Brick Viewer) anzupassen. 
 
 Wenn alle Eigenschaften des Treibers im Detail verstanden werden sollen empfehlen 

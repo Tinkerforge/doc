@@ -67,7 +67,7 @@ It is possible to run the Silent Stepper Brick in a variety of different modes.
 The stepper motor can be driven completely noiseless (Stealth Mode), with
 smart energy optimizations (Coolstep Mode) or with maximized torque 
 (Classic mode). The Silent Stepper Brick can be configured to switch between 
-these modes automatically dependend on motor velocity.
+these modes automatically dependent on motor velocity.
 
 
 Technical Specifications
@@ -177,7 +177,7 @@ The connected stepper motor can be powered through the black on-board power-conn
 or through a :ref:`Power Supply <primer_power_supplies>` in the
 stack. The Brick switches automatically to the on-board power-connector when
 a voltage is measured there and no external voltage is detected on the power-connector.
-The black power connector is always prioritzed.
+The black power connector is always prioritized.
 
 
 Error LED
@@ -235,7 +235,7 @@ configure the basic configuration:
 Stealth Mode
 ^^^^^^^^^^^^
 
-In stealth mode the stepper motor is driven quitely and with little vibrations.
+In stealth mode the stepper motor is driven quietly and with little vibrations.
 The mode is usable for low and medium velocities.
 
 Coolstep Mode
@@ -271,7 +271,7 @@ Help! I don't understand half of the words
 ------------------------------------------
 
 The used TMC2130 is a powerful stepper motor driver. Unfortunately this comes with
-lots of modes, features and configuration possibilites. In our experience,
+lots of modes, features and configuration possibilities. In our experience,
 you can leave all of the configurations but the Basic Configurations 
 (first tab in Brick Viewer) as default. We did choose sane default values for
 all of the configurations.
@@ -307,7 +307,7 @@ SetSpreadcycleConfiguration    Slow Decay Duration                  toff @0x6C[3
 |nbsp|                         Sinewave Offset                      hend @0x6C[10..7]             Used if chm=1, otherwise ignored
 |nbsp|                         Chopper Mode                         chm @0x6C[14]                 |nbsp|
 |nbsp|                         Comperator Blank Time                tbl @0x6C[16..15]             |nbsp|
-|nbsp|                         Fast Decay Without Comperator        disfdcc @0x6C[12]             |nbsp|
+|nbsp|                         Fast Decay Without Comparator        disfdcc @0x6C[12]             |nbsp|
 ------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
 ------------------------------ ------------------------------------ ----------------------------- -----------------------------------------------
 SetStealthConfiguration        Enable Stealth                       en_pwm_mode @0x00[2]          |nbsp|
