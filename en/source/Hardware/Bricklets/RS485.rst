@@ -90,6 +90,44 @@ TODO
 
 .. _rs485_bricklet_test:
 
+Modbus Functions
+----------------
+
+The Bricklet can be configured to operate on Modbus master/slave mode. In this
+mode Modbus specific protocol messages can be sent and received. A Modbus master
+can send a request to a Modbus slave connected to the bus. These Modbus functions
+are based on callbacks.
+
+To better understand the general concept a scenario is described:
+
+- In this scenario two RS485 Bricklets are present on the bus. One operating in
+  Modbus master mode and the other in Modbus slave mode.
+
+- The Modbus master wants to read 4 registers starting from address 2 from Modbus
+  slave at address 8.
+
+- The master registers the *modbus_master_read_holding_registers_response*
+  callback which will be called when the slave sends a response to the master.
+  On the other hand the Bricklet that is operating in slave mode registers the
+  *modbus_slave_read_holding_registers_request* callback which will be invoked
+  when a corresponding request is received.
+
+- The master calls the function *modbus_master_read_holding_registers*.
+  Parameters of this function specifies the slave address, starting address and
+  the number of registers to read. This function sends the request on the bus.
+
+- On the slave side the registered callback is invoked with the parameters which
+  specifies that the master wants to read 4 registers starting from address 2.
+
+- The slave calls the function *modbus_slave_answer_read_holding_registers_request*
+  with the requested data which sends the response on the bus.
+
+- Upon receiving the response from the slave the *modbus_master_read_holding_registers_response*
+  callback is invoked on the master side with the data provided by the slave.
+
+For details of these functions refer to the :ref:`programming interface <rs485_bricklet_programming_interface>`
+section.
+
 Test your RS485 Bricklet
 ------------------------
 
