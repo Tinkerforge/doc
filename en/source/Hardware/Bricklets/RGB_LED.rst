@@ -61,8 +61,8 @@ Weight                            2g
 
 \* Because of a lack of attention on our part the RGB LED Bricklet
 with hardware version 1.0 was produced with a size of
-25 x 17.5 x 5mm (0.98 x 0.69 x 0.19"). It is thus unfortunately not in
-our standard 5mm grid. This will be fixed with version 1.1.
+25 x 17.5 x 5mm (0.98 x 0.69 x 0.19"). It is was unfortunately not in
+our standard 5mm grid. This was fixed with version 1.1.
 
 Resources
 ---------
