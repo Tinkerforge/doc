@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Silent Stepper Brick
-:FIXME_shoplink: ../../../shop/bricks/silent-stepper-brick.html
+:shoplink: ../../../shop/bricks/silent-stepper-brick.html
 
 .. include:: Silent_Stepper_Brick.substitutions
 
@@ -9,9 +9,6 @@
 
 Silent Stepper Brick
 ====================
-
-.. note::
- This Brick is currently work-in-progress!
 
 .. raw:: html
 
@@ -69,6 +66,11 @@ smart energy optimizations (Coolstep Mode) or with maximized torque
 (Classic mode). The Silent Stepper Brick can be configured to switch between 
 these modes automatically dependent on motor velocity.
 
+A comparison video between Stepper Brick and Silent Stepper Brick is available on Youtube:
+
+.. raw:: html
+
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/LvtlM_T8XKE" frameborder="0" allowfullscreen></iframe>
 
 Technical Specifications
 ------------------------

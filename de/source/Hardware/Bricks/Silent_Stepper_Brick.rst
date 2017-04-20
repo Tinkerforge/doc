@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Silent Stepper Brick
-:FIXME_shoplink: ../../../shop/bricks/silent-stepper-brick.html
+:shoplink: ../../../shop/bricks/silent-stepper-brick.html
 
 .. include:: Silent_Stepper_Brick.substitutions
 
@@ -9,9 +9,6 @@
 
 Silent Stepper Brick
 ====================
-
-.. note::
-  Dieser Brick ist noch in Entwicklung!
 
 .. raw:: html
 
@@ -66,6 +63,12 @@ Der Silent Stepper Brick kann in verschiedenen Modi betrieben werden. Im Stealth
 ist der Motor vollständig lautlos, im Coolstep Modus wird Energie gespart und im Classic Modus
 bietet der Motor maximalen Drehmoment. Der Silent Stepper Brick kann konfiguriert werden,
 abhängig von der Motorgeschwindigkeit, automatisch zwischen diesen Modi zu wechseln.
+
+Ein Vergleichsvideo zwischen Stepper Brick und Silent Stepper Brick ist auf Youtube verfügbar:
+
+.. raw:: html
+
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/LvtlM_T8XKE" frameborder="0" allowfullscreen></iframe>
 
 Technische Spezifikation
 ------------------------
