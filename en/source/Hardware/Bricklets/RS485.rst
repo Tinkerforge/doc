@@ -86,10 +86,6 @@ Duplex and Termination configuration
 
 TODO
 
-
-
-.. _rs485_bricklet_test:
-
 Modbus Functions
 ----------------
 
@@ -127,6 +123,8 @@ To better understand the general concept a scenario is described:
 
 For details of these functions refer to the :ref:`programming interface <rs485_bricklet_programming_interface>`
 section.
+
+.. _rs485_bricklet_test:
 
 Test your RS485 Bricklet
 ------------------------
