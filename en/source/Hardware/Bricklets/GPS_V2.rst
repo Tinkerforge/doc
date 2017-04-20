@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / GPS Bricklet 2.0
-:shoplink: ../../../shop/bricklets/gps-v2-bricklet.html
+:FIXME_shoplink: ../../../shop/bricklets/gps-v2-bricklet.html
 
 .. include:: GPS_V2.substitutions
    :start-after: >>>substitutions
@@ -11,7 +11,11 @@
 GPS Bricklet 2.0
 ================
 
-.. raw:: html
+.. note::
+  This Bricklet is currently work-in-progress!
+
+..
+	.. raw:: html
 
 	{% tfgallery %}
 
@@ -75,7 +79,7 @@ Update Rate                       10Hz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 35 x 12mm (1.57 x 1.38 x 0.47")
-Weight                            TBDg (without battery and antenna)
+Weight                            TBDg (with battery and antenna)
 ================================  ============================================================
 
 \* datasheet values
@@ -96,22 +100,11 @@ The GPS Bricklet 2.0 does not have an internal antenna. An external antenna has 
 `U.FL <https://en.wikipedia.org/wiki/Hirose_U.FL>`__ connector.
 
 The connector is short-circuit protected and supplies the antenna with 
-3.3V/TODOmA. The external antenna should fulfill the following requirements:
-
-================================  ============================================================
-Property                          Value
-================================  ============================================================
-Polarization                      Right-hand circular polarized (TODO)
-Frequency Received                1.57542GHz ± 1.023MHz (TODO)
-Power Supply                      3.0V to 3.6V with 4mA to 20mA (TODO)
-Gain                              > +15dBi (TODO)
-Impedance                         50Ω
-Noise Figure                      < 1.5dB (TODO)
-================================  ============================================================
+3.3V/20mA. 
 
 A compatible antenna is included with the Bricklet and attached to the bottom. You can
 disconnect the U.FL connector and connect your own antenna. A compatible antenna with a long
-lead is `available in the shop <TODO>`.
+lead is `available in the shop <TODO>`__.
 
 .. _gps_v2_bricklet_test:
 
