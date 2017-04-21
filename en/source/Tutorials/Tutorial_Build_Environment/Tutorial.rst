@@ -167,6 +167,13 @@ Then you can open the project with KiCad::
 
  kicad ~/tf/master-brick/hardware/master.pro
 
+The KISYS3DMOD path has to be adapted in order to view the circuit board with the 3D-Viewer of kiCAD:
+
+1. Click on Preferences
+2. Click on Configure Paths
+3. Change the KISYS3DMOD path to ``$HOME/tf/kicad-libraries/3d/`` (the path has to be specified as absolute)
+4. Restart kiCad
+
 KiCad is also available for Windows and Mac OS X.
 
 Case CAD Files

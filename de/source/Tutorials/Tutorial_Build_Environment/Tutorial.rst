@@ -178,6 +178,13 @@ Dann kann das Projekt mit KiCad geöffnet werden::
 
  kicad ~/tf/master-brick/hardware/master.pro
 
+Um sich die Leiterkarte mit dem 3D-Viewer von kiCad anzusehen muss der KISYS3DMOD Pfad angepasst werden:
+
+1. Klicke auf Preferences
+2. Klicke auf Configure Paths
+3. Ändern des KISYS3DMOD Pfades auf ``$HOME/tf/kicad-libraries/3d/`` (Der Pfad muss in kiCad absolut angegeben werden)
+4. kiCad neustarten
+
 KiCad funktioniert auch auf Windows und Mac OS X.
 
 Gehäuse CAD Dateien
