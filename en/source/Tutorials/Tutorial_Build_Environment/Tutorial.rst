@@ -176,6 +176,16 @@ The KISYS3DMOD path has to be adapted in order to view the circuit board with th
 
 KiCad is also available for Windows and Mac OS X.
 
+Create 3D Models
+----------------
+
+In the hardware folders of the bricks and bricklet are ``*.step`` - files.
+These were createt using the FreeCAD script `StepUp Tools <https://sourceforge.net/projects/kicadstepup/>`__.
+
+ToDo: HowTo Steps
+
+The complete documentation can be found `here <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__.
+
 Case CAD Files
 --------------
 

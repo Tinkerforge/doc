@@ -187,6 +187,26 @@ Um sich die Leiterkarte mit dem 3D-Viewer von KiCad anzusehen muss der KISYS3DMO
 
 KiCad funktioniert auch auf Windows und Mac OS X.
 
+3D Modelle erzeugen
+-------------------
+
+Im Hardwareordner der Bricks und Bricklets befinden sich ``*.step`` - Dateien der Bricks und Bricklets.
+Diese wurden erzeugt mit dem FreeCAD Skript `StepUp Tools <https://sourceforge.net/projects/kicadstepup/>`__.
+
+Um das Skript zu benutzen müssen einige Änderungen vorgenommen werden:
+
+1. Erzeugen der Datei  ``ksu-config.ini`` im Home-Verzeichnis. Die Datei wird beim ersten Starten des Skripts mit Inhalt gefüllt.
+2. Einen Symlink auf das ``kicad-libraries``-git setzten (Beispiel: siehe oben)
+3. Ändern des KISYS3DMOD Pfades auf ``$HOME/tf/kicad-libraries/3d/`` (Der Pfad muss in KiCad absolut angegeben werden)
+4. Kopieren des `Skriptes <https://github.com/Tinkerforge/kicad-libraries/blob/master/3d/Scripts/kicad-StepUp-tools.FCMacro>`__ in den Ordner, in welchem sich die umzuwandelnde ``*.kicad-pcb`` befindet.
+5. Das Skript einmal starten mit: ``freecad kicad-StepUp-tools.FCMacro #brickname#``
+6. Anpassen des ``prefix3D`` Pfades in der ``ksu-config.ini`` Datei zu ``$HOME/tf/kicad-libraries/3d/`` (Hier auch wieder als absoluten Pfad!)
+7. Das Skript erneut starten.
+
+Das Skript erzeugt eine ``*.step`` und eine ``*.FCStd`` - Projektdatei.
+
+Die Vollständige Dokumentation findet sich `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__.
+
 Gehäuse CAD Dateien
 -------------------
 
