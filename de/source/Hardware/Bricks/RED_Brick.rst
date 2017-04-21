@@ -188,7 +188,35 @@ werden als erstes aufgeführt. Über *System* kann der Brick Daemon auf dem RED
 Brick neugestartet werden, oder aber der RED Brick selber neugestartet oder
 heruntergefahren werden.
 
-.. TODO: Tinkerforge software update German documentation.
+Update Tinkerforge Software
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Seit Brick Viewer Version 2.3.8 ist es möglich die Tinkerforge Software
+(Brick Viewer und die Tinkerforge Bindings) auf dem RED Brick upzudaten.
+Der Updateprozess kann im ``System`` Menü gestartet werden.
+
+.. image:: /Images/Screenshots/brickv_red_update_tf_software_menu.jpg
+   :scale: 60 %
+   :alt: Screenshot des Tinkerforge Software Update Menüs.
+   :align: center
+
+Falls Updates vorhanden sind werden diese gemeldet.
+
+.. image:: /Images/Screenshots/brickv_red_update_tf_software_report.jpg
+   :scale: 60 %
+   :alt: Screenshot des Tinkerforge Software Update Reports.
+   :align: center
+
+Nach der Bestätigung vom Nutzer startet das Update.
+
+.. image:: /Images/Screenshots/brickv_red_update_tf_software_progress.jpg
+   :scale: 60 %
+   :alt: Screenshot des Tinkerforge Software Update Prozesses.
+   :align: center
+
+Einzige Bedingung für das Updaten ist eine funktionierende Internetverbindung auf
+dem System auf dem der Brick Viewer läuft. Der RED Brick benötigt keine aktive
+Internetverbindung dafür.
 
 Overview Tab (Statusinformation)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
