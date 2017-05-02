@@ -191,7 +191,7 @@ heruntergefahren werden.
 Update Tinkerforge Software
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Seit Brick Viewer Version 2.3.8 ist es möglich die Tinkerforge Software
+Seit Brick Viewer Version 2.3.9 ist es möglich die Tinkerforge Software
 (Brick Viewer und die Tinkerforge Bindings) auf dem RED Brick upzudaten.
 Der Updateprozess kann im ``System`` Menü gestartet werden.
 

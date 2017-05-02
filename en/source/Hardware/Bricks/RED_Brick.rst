@@ -184,7 +184,7 @@ RED Brick and reboot or shut down the RED Brick itself.
 Update Tinkerforge Software
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Starting from Brick Viewer version 2.3.8 it is possible to update Tinkerforge
+Starting from Brick Viewer version 2.3.9 it is possible to update Tinkerforge
 software (Brick Viewer and Tinkerforge bindings) present in the RED Brick. The
 update process can be initiated from the ``System`` menu.
 
