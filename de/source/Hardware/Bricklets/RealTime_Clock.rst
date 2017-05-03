@@ -18,6 +18,7 @@ Real-Time Clock Bricklet
 	Bricklets/bricklet_real_time_clock_tilted_[?|?].jpg           Real-Time Clock Bricklet
 	Bricklets/bricklet_real_time_clock_horizontal_[?|?].jpg       Real-Time Clock Bricklet
 	Bricklets/bricklet_real_time_clock_red_master_[100|600].jpg   Real-Time Clock Bricklet mit RED Brick und Master Brick
+	Cases/bricklet_real_time_clock_case_built_up_[?|?].jpg        Real-Time Clock Bricklet im Gehäuse
 	Bricklets/bricklet_real_time_clock_brickv_[100|].jpg          Real-Time Clock Bricklet im Brick Viewer
 	Dimensions/real_time_clock_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -110,7 +111,28 @@ das lokale Datum und die lokale Zeit gesetzt werden.
 Gehäuse
 -------
 
-Coming soon...
+Ein `laser-geschnittenes Gehäuse für das Real-Time Clock Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-real-time-clock-bricklet.html>`__
+ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_real_time_clock_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Real-Time Clock Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_real_time_clock_case_built_up_1000.jpg
+
+.. include:: RealTime_Clock.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/real_time_clock_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Real-Time Clock Bricklet
+   :align: center
+   :target: ../../_images/Exploded/real_time_clock_exploded.png
+
+|bricklet_case_hint|
+
 
 .. _real_time_clock_bricklet_programming_interface:
 

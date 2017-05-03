@@ -17,6 +17,8 @@ CAN Bricklet
 
 	Bricklets/bricklet_can_tilted_[?|?].jpg           CAN Bricklet
 	Bricklets/bricklet_can_horizontal_[?|?].jpg       CAN Bricklet
+	Cases/bricklet_can_case_built_up1_[?|?].jpg       CAN Bricklet im Gehäuse
+	Cases/bricklet_can_case_built_up2_[?|?].jpg       CAN Bricklet im Gehäuse
 	Bricklets/bricklet_can_brickv_[100|].jpg          CAN Bricklet im Brick Viewer
 	Dimensions/can_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -97,7 +99,28 @@ den CAN-Bus geschickt werden in der Frame-Tabelle des Brick Viewer angezeigt.
 Gehäuse
 -------
 
-Coming soon...
+Ein `laser-geschnittenes Gehäuse für das CAN Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-can-bricklet.html>`__
+ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_can_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für CAN Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_can_case_built_up1_1000.jpg
+
+.. include:: CAN.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/can_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für CAN Bricklet
+   :align: center
+   :target: ../../_images/Exploded/can_exploded.png
+
+|bricklet_case_hint|
+
 
 .. _can_bricklet_programming_interface:
 

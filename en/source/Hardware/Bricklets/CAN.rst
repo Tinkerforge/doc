@@ -17,6 +17,8 @@ CAN Bricklet
 
 	Bricklets/bricklet_can_tilted_[?|?].jpg           CAN Bricklet
 	Bricklets/bricklet_can_horizontal_[?|?].jpg       CAN Bricklet
+	Cases/bricklet_can_case_built_up1_[?|?].jpg       CAN Bricklet in Case
+	Cases/bricklet_can_case_built_up2_[?|?].jpg       CAN Bricklet in Case
 	Bricklets/bricklet_can_brickv_[100|].jpg          CAN Bricklet in Brick Viewer
 	Dimensions/can_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -98,7 +100,27 @@ is send over the connected CAN bus.
 Case
 ----
 
-Coming soon...
+A `laser-cut case for the CAN Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-can-bricklet.html>`__
+is available.
+
+.. image:: /Images/Cases/bricklet_can_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Case for CAN Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_can_case_built_up1_1000.jpg
+
+.. include:: CAN.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/can_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for CAN Bricklet
+   :align: center
+   :target: ../../_images/Exploded/can_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _can_bricklet_programming_interface:

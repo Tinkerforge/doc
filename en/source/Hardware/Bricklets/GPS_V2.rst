@@ -14,17 +14,19 @@ GPS Bricklet 2.0
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-	.. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklets_gps_v2_tilted_[?|?].jpg           GPS Bricklet 2.0
-	Bricklets/bricklets_gps_v2_horizontal_[?|?].jpg       GPS Bricklet 2.0
-	Bricklets/bricklets_gps_v2_battery_[100|600].jpg      GPS Bricklet 2.0
-	Cases/bricklets_gps_v2_case_[100|600].jpg             GPS Bricklet 2.0 in Case
-	Bricklets/bricklets_gps_v2_brickv_[100|].jpg          GPS Bricklet 2.0 in Brick Viewer
-	Dimensions/gps_v2_bricklet_dimensions_[100|600].png   Outline and drilling plan
+	Bricklets/bricklet_gps_v2_tilted_[?|?].jpg           GPS Bricklet 2.0
+	Bricklets/bricklet_gps_v2_tilted_back_[?|?].jpg      GPS Bricklet 2.0
+	Bricklets/bricklet_gps_v2_top_[?|?].jpg              GPS Bricklet 2.0 top
+	Bricklets/bricklet_gps_v2_bottom_[?|?].jpg           GPS Bricklet 2.0 bottom
+	Cases/bricklet_gps_v2_case_built_up1_[100|600].jpg   GPS Bricklet 2.0 in Case
+	Cases/bricklet_gps_v2_case_built_up2_[100|600].jpg   GPS Bricklet 2.0 in Case
+	Cases/bricklet_gps_v2_case_built_up3_[100|600].jpg   GPS Bricklet 2.0 in Case
+	Bricklets/bricklet_gps_v2_brickv_[100|].jpg          GPS Bricklet 2.0 in Brick Viewer
+	Dimensions/gps_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
 
@@ -119,11 +121,11 @@ Test your GPS Bricklet 2.0
 If everything went as expected the Brick Viewer should look as
 depicted below.
 
-.. image:: /Images/Bricklets/bricklets_gps_v2_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_gps_v2_brickv.jpg
  :scale: 100 %
  :alt: GPS Bricklet 2.0 in Brick Viewer
  :align: center
- :target: ../../_images/Bricklets/bricklets_gps_v2_brickv.jpg
+ :target: ../../_images/Bricklets/bricklet_gps_v2_brickv.jpg
 
 |test_pi_ref|
 
@@ -143,29 +145,26 @@ If the GPS module is battery powered the LED is turned off to save power.
 Case
 ----
 
-TBD
+A `laser-cut case for the GPS Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-gps-v2-bricklet.html>`__ is available.
 
-..
-	A `laser-cut case for the GPS Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-gps-bricklet.html>`__ is available.
+.. image:: /Images/Cases/bricklet_gps_v2_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Case for GPS Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_gps_v2_case_built_up1_1000.jpg
 
-	.. image:: /Images/Cases/bricklets_gps_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for GPS Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklets_gps_v2_case_1000.jpg
+.. include:: GPS_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. include:: GPS_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. image:: /Images/Exploded/gps_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for GPS Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/gps_v2_exploded.png
 
-	.. image:: /Images/Exploded/gps_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for GPS Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/gps_v2_exploded.png
-
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _gps_v2_bricklet_programming_interface:

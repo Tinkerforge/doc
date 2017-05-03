@@ -14,18 +14,17 @@ RS485 Bricklet
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-	.. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_rs485_tilted1_[?|?].jpg          RS485 Bricklet
-	Bricklets/bricklet_rs485_tilted2_[?|?].jpg          RS485 Bricklet
-	Bricklets/bricklet_rs485_tilted3_[?|?].jpg          RS485 Bricklet
-	Bricklets/bricklet_rs485_horizontal_[?|?].jpg       RS485 Bricklet
+	Bricklets/bricklet_rs485_tilted_[?|?].jpg           RS485 Bricklet
+	Bricklets/bricklet_rs485_top_[?|?].jpg              RS485 Bricklet
+	Bricklets/bricklet_rs485_bottom_[?|?].jpg           RS485 Bricklet
 	Cases/bricklet_rs485_case_built_up1_[?|?].jpg       RS485 Bricklet in case
 	Cases/bricklet_rs485_case_built_up2_[?|?].jpg       RS485 Bricklet in case
 	Bricklets/bricklet_rs485_brickv_[100|].jpg          RS485 Bricklet in Brick Viewer
+	Bricklets/bricklet_rs485_brickv_modbus_[100|].jpg   RS485 Bricklet in Brick Viewer
 	Dimensions/rs485_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
@@ -83,12 +82,35 @@ Resources
 Connectivity
 ------------
 
-TODO
+In Full-Duplex mode you have to connect TX+, TX-, RX+, RX- and GND. 
+
+In Half-Duplex mode TX+ / RX+ and TX- / RX- are shorted, so you can connect 
+either TX+ / TX- / GND or RX+ / RX- / GND. You can also use this to chain-connect
+other devices.
+
+.. image:: /Images/Bricklets/bricklet_rs485_connectivity_600.jpg
+   :scale: 100 %
+   :alt: RS485 Bricklet connection possibilitiess 
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs485_connectivity_1000.jpg
 
 Duplex and Termination configuration
 ------------------------------------
 
-TODO
+The DIP switch on the Bricklet can be used to configure duplex and termination
+configuration.
+
+You can configure between Full-Duplex and Half-Duplex and you can enable or disable
+a XXX ohm termination resistor.
+
+.. image:: /Images/Bricklets/bricklet_rs485_dip_800.jpg
+   :scale: 100 %
+   :alt: RS485 Bricklet DIP settings 
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs485_dip_1200.jpg
+
+A legend of the different configuration possibilities can also be found in the bottom
+of the Bricklet.
 
 Modbus Functions
 ----------------
@@ -128,6 +150,15 @@ To better understand the general concept a scenario is described:
 For details of these functions refer to the :ref:`programming interface <rs485_bricklet_programming_interface>`
 section.
 
+All of the available Modbus functions can also be used in Brick Viewer:
+
+.. image:: /Images/Bricklets/bricklet_rs485_brickv_modbus.jpg
+   :scale: 100 %
+   :alt: RS485 Bricklet in Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs485_brickv_modbus.jpg
+
+
 .. _rs485_bricklet_test:
 
 Test your RS485 Bricklet
@@ -157,8 +188,27 @@ editbox and hit enter. The same text should then show up in the textarea above.
 Case
 ----
 
-TBD
+A `laser-cut case for the RS485 Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-rs485-bricklet.html>`__
+is available.
 
+.. image:: /Images/Cases/bricklet_rs485_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Case for RS485 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_rs485_case_built_up1_1000.jpg
+
+.. include:: RS485.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/rs485_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for RS485 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/rs485_exploded.png
+
+|bricklet_case_hint|
 
 .. _rs485_bricklet_programming_interface:
 
