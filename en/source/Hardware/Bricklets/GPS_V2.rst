@@ -62,6 +62,13 @@ sensitivity (-165dBm) and a update rate of 10Hz suitable for drones or the like.
 Internal interference canceller rejects RF interference from other devices
 like Bluetooth or Wi-Fi.
 
+A 25mmx25mm patch antenna with high gain is permanently attached to the bottom side 
+of the Bricklet and connected by a U.FL connector. You can remove the connector and
+connect your own external antenna.
+
+A CR1025 coin cell battery is also included. It is used as a battery backup for
+the last satellite position data. With this information a fix can be obtained faster
+if the power was lost.
 
 
 Technical Specifications
@@ -81,7 +88,7 @@ Update Rate                       10Hz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 35 x 12mm (1.57 x 1.38 x 0.47")
-Weight                            TBDg (with battery and antenna)
+Weight                            20g (with battery and antenna)
 ================================  ============================================================
 
 \* datasheet values
@@ -104,9 +111,12 @@ The GPS Bricklet 2.0 does not have an internal antenna. An external antenna has 
 The connector is short-circuit protected and supplies the antenna with 
 3.3V/20mA. 
 
-A compatible antenna is included with the Bricklet and attached to the bottom. You can
+A compatible 25mmx25mm patch antenna is included with the Bricklet and attached to the bottom. You can
 disconnect the U.FL connector and connect your own antenna. A compatible antenna with a long
 lead is `available in the shop <TODO>`__.
+
+The antenna should always look upwards, so if you use the antenna that is attached to the bottom
+you need to mount the Bricklet accordingly.
 
 .. _gps_v2_bricklet_test:
 
@@ -166,6 +176,15 @@ A `laser-cut case for the GPS Bricklet 2.0
 
 |bricklet_case_hint|
 
+The case has a hole for a `U.FL to SMA adapter cable <https://www.tinkerforge.com/en/shop/gps-pigtail-cable.html>`__
+that can be used to connect an external SMA antenna instead of the antenna
+that is glued to the bottom of the Bricklet.
+
+.. image:: /Images/Cases/bricklet_gps_v2_case_built_up3_350.jpg
+   :scale: 100 %
+   :alt: Case for GPS Bricklet 2.0 with SMA connector
+   :align: center
+   :target: ../../_images/Cases/bricklet_gps_v2_case_built_up3_1000.jpg
 
 .. _gps_v2_bricklet_programming_interface:
 

@@ -33,10 +33,11 @@ RS485 Bricklet
 Features
 --------
 
-* Supports low-level RS485 as well as Modus Slave/Master
-* Sends and receives data via differential RS485
+* Supports low-level RS485 as well as Modbus RTU Slave/Master
+* Modbus RTU implementation is fully compliant for read and write of coils and registers
 * Supports full- and half-duplex
-* Configurable baudrate, parity, stop bits, word length and flow control
+* Configurable baudrate, parity, stop bits and word length
+* A 120 ohm termination can be enabeld and disabled
 
 
 .. _rs485_bricklet_description:
@@ -49,6 +50,13 @@ extend the features of :ref:`Bricks <primer_bricks>` by the capability to send
 and receive differential data with `RS-485 <https://en.wikipedia.org/wiki/RS-485>`__.
 
 It supports full- and half-duplex and has configurable termination.
+
+You can use the Bricklet in RS485, Modbus RTU Master and Modbus RTU Slave mode.
+
+In RS485 mode you can send and receive arbitrary data. The Modbus modes are fully
+Modbus compliant. In Modbus RTU Master mode you can write and read any coils/registers 
+from a slave. In Modbus RTU Slave mode you can provide data for coil/register reads 
+and you receive the  data the a Modbus Master writes to the coils/registers.
 
 
 Technical Specifications
@@ -68,7 +76,7 @@ Duplex                            Half / Full
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 14mm (1.57 x 1.57 x 0.55")
-Weight                            TBDg
+Weight                            13g
 ================================  ============================================================
 
 Resources
@@ -101,7 +109,7 @@ The DIP switch on the Bricklet can be used to configure duplex and termination
 configuration.
 
 You can configure between Full-Duplex and Half-Duplex and you can enable or disable
-a XXX ohm termination resistor.
+a 120 ohm termination resistor.
 
 .. image:: /Images/Bricklets/bricklet_rs485_dip_800.jpg
    :scale: 100 %
