@@ -22,9 +22,9 @@ GPS Bricklet 2.0
 	Bricklets/bricklet_gps_v2_tilted_back_[?|?].jpg      GPS Bricklet 2.0
 	Bricklets/bricklet_gps_v2_top_[?|?].jpg              GPS Bricklet 2.0 top
 	Bricklets/bricklet_gps_v2_bottom_[?|?].jpg           GPS Bricklet 2.0 bottom
-	Cases/bricklet_gps_v2_case_built_up1_[100|600].jpg   GPS Bricklet 2.0 in Case
-	Cases/bricklet_gps_v2_case_built_up2_[100|600].jpg   GPS Bricklet 2.0 in Case
-	Cases/bricklet_gps_v2_case_built_up3_[100|600].jpg   GPS Bricklet 2.0 in Case
+	Cases/bricklet_gps_v2_case_built_up1_[?|?].jpg       GPS Bricklet 2.0 in Case
+	Cases/bricklet_gps_v2_case_built_up2_[?|?].jpg       GPS Bricklet 2.0 in Case
+	Cases/bricklet_gps_v2_case_built_up3_[?|?].jpg       GPS Bricklet 2.0 in Case
 	Bricklets/bricklet_gps_v2_brickv_[100|].jpg          GPS Bricklet 2.0 in Brick Viewer
 	Dimensions/gps_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
