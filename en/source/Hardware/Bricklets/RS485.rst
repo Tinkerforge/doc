@@ -58,6 +58,8 @@ Modbus compliant. In Modbus RTU Master mode you can write and read any coils/reg
 from a slave. In Modbus RTU Slave mode you can provide data for coil/register reads 
 and you receive the data that a Modbus Master writes to the coils/registers.
 
+The RS485 Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
