@@ -113,7 +113,7 @@ The connector is short-circuit protected and supplies the antenna with
 
 A compatible 25mmx25mm patch antenna is included with the Bricklet and attached to the bottom. You can
 disconnect the U.FL connector and connect your own antenna. A compatible antenna with a long
-lead is `available in the shop <TODO>`__.
+lead is `available in the shop <https://www.tinkerforge.com/en/shop/gps-antenna-sma-300cm.html>`__.
 
 The antenna should always look upwards, so if you use the antenna that is attached to the bottom
 you need to mount the Bricklet accordingly.
@@ -177,14 +177,14 @@ A `laser-cut case for the GPS Bricklet 2.0
 |bricklet_case_hint|
 
 The case has a hole for a `U.FL to SMA adapter cable <https://www.tinkerforge.com/en/shop/gps-pigtail-cable.html>`__
-that can be used to connect an external SMA antenna instead of the antenna
+that can be used to connect an `external SMA antenna <https://www.tinkerforge.com/en/shop/gps-antenna-sma-300cm.html>`__ instead of the antenna
 that is glued to the bottom of the Bricklet.
 
-.. image:: /Images/Cases/bricklet_gps_v2_case_built_up3_350.jpg
+.. image:: /Images/Bricklets/bricklet_gps_v2_case_with_sma_antenna_600.jpg
    :scale: 100 %
-   :alt: Case for GPS Bricklet 2.0 with SMA connector
+   :alt: GPS Bricklet 2.0 with SMA connector and antenna
    :align: center
-   :target: ../../_images/Cases/bricklet_gps_v2_case_built_up3_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_gps_v2_case_with_sma_antenna_1200.jpg
 
 .. _gps_v2_bricklet_programming_interface:
 
