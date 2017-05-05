@@ -56,7 +56,7 @@ You can use the Bricklet in RS485, Modbus RTU Master and Modbus RTU Slave mode.
 In RS485 mode you can send and receive arbitrary data. The Modbus modes are fully
 Modbus compliant. In Modbus RTU Master mode you can write and read any coils/registers 
 from a slave. In Modbus RTU Slave mode you can provide data for coil/register reads 
-and you receive the  data the a Modbus Master writes to the coils/registers.
+and you receive the data that a Modbus Master writes to the coils/registers.
 
 
 Technical Specifications
