@@ -14,15 +14,17 @@ GPS Bricklet 2.0
 .. note::
   Dieses Bricklet befindet sich aktuell in der Entwicklung!
 
-..
-	.. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_gps_v2_tilted_[?|?].jpg           GPS Bricklet 2.0
-	Bricklets/bricklet_gps_v2_horizontal_[?|?].jpg       GPS Bricklet 2.0
-	Bricklets/bricklet_gps_v2_battery_[100|600].jpg      GPS Bricklet 2.0
-	Cases/bricklet_gps_v2_case_[100|600].jpg             GPS Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_gps_v2_tilted_back_[?|?].jpg      GPS Bricklet 2.0
+	Bricklets/bricklet_gps_v2_top_[?|?].jpg              GPS Bricklet 2.0 Oberseite
+	Bricklets/bricklet_gps_v2_bottom_[?|?].jpg           GPS Bricklet 2.0 Unterseite
+	Cases/bricklet_gps_v2_case_built_up1_[?|?].jpg       GPS Bricklet 2.0 im Gehäuse
+	Cases/bricklet_gps_v2_case_built_up2_[?|?].jpg       GPS Bricklet 2.0 im Gehäuse
+	Cases/bricklet_gps_v2_case_built_up3_[?|?].jpg       GPS Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_gps_v2_brickv_[100|].jpg          GPS Bricklet 2.0 im Brick Viewer
 	Dimensions/gps_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -59,6 +61,16 @@ liefert mit 10Hz Updatefrequenz auch schnell genug Daten für Drohnen o.ä.
 Eine interne Störunterdrückung verbessert den Empfang wenn Bluetooth- 
 oder WLAN-Geräte in der Nähe sind.
 
+Eine 25mmx25mm große Patch-Antenne mit großer Verstärkung ist permanent auf
+der Unterseite befestigt und über einen U.FL Stecker mit dem GPS Modul
+verbunden. Der Stecker kann entfernt werden um eine andere externe Antenne
+anzuschließen.
+
+Eine CR1025 Knopfzellenbatterie wird mit dem Bricklet ausgeliefert. Die Batterie
+wird genutzt um Positionsinformationen zu speichern wenn die Stromversorgung
+wegfällt. Mit den gespeicherten Informationen kann ein Fix schneller wieder
+hergestellt werden wenn die Stromversorgung wieder zur Verfügung steht.
+
 Technische Spezifikation
 ------------------------
 
@@ -76,7 +88,7 @@ Update-Rate                       10Hz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 35 x 12mm (1,57 x 1,38 x 0,47")
-Gewicht                           TBDg (mit Batterie und Antenne)
+Gewicht                           20g (mit Batterie und Antenne)
 ================================  ============================================================
 
 \* Datenblattangaben
@@ -99,11 +111,13 @@ angeschlossen werden.
 
 Der Stecker ist Kurzschlussfest und versorgt die Antenne mit 3.3V/20mA
 
-Eine kompatible Antenne gehört zum Lieferumfang des Bricklets, sie ist
+Eine 25mmx25mm Patch-Antenne gehört zum Lieferumfang des Bricklets, sie ist
 an der Unterseite des Bricklets befestigt. Es ist möglich den U.FL Stecker
 der Antenne zu entfernen und eine andere Antenne zu nutzen. Eine kompatible
-Antenne mit langem Kabel gibt es `bei uns im Shop <TODO>`__.
+Antenne mit langem Kabel gibt es `bei uns im Shop <https://www.tinkerforge.com/de/shop/gps-antenna-sma-300cm.html>`__.
 
+Für guten Empfang muss das Bricklet so befestigt werden, dass die Antenne
+nach oben zeigt.
 
 .. _gps_v2_bricklet_test:
 
@@ -118,11 +132,11 @@ Erster Test
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
 aussehen.
 
-.. image:: /Images/Bricklets/bricklet_gps_brickv.jpg
+.. image:: /Images/Bricklets/bricklet_gps_v2_brickv.jpg
  :scale: 100 %
- :alt: GPS Bricklet im Brick Viewer
+ :alt: GPS Bricklet 2.0 im Brick Viewer
  :align: center
- :target: ../../_images/Bricklets/bricklet_gps_brickv.jpg
+ :target: ../../_images/Bricklets/bricklet_gps_v2_brickv.jpg
 
 |test_pi_ref|
 
@@ -144,29 +158,36 @@ sparen.
 Gehäuse
 -------
 
-TBD
+Ein `laser-geschnittenes Gehäuse für das GPS Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-gps-v2-bricklet.html>`__ ist verfügbar.
 
-..
-	Ein `laser-geschnittenes Gehäuse für das GPS Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-gps-v2-bricklet.html>`__ ist verfügbar.
+.. image:: /Images/Cases/bricklet_gps_v2_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für GPS Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_gps_v2_case_built_up1_1000.jpg
 
-	.. image:: /Images/Cases/bricklet_gps_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für GPS Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_gps_v2_case_1000.jpg
+.. include:: GPS_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. include:: GPS_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. image:: /Images/Exploded/gps_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für GPS Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/gps_v2_exploded.png
 
-	.. image:: /Images/Exploded/gps_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für GPS Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/gps_v2_exploded.png
+|bricklet_case_hint|
 
-	|bricklet_case_hint|
+Das Gehäuse hat ein Loch für einen `U.FL nach SMA Adapter Kabel <https://www.tinkerforge.com/de/shop/gps-pigtail-cable.html>`__
+welches genutzt werden kann um eine `externe SMA Antenne <https://www.tinkerforge.com/de/shop/gps-antenna-sma-300cm.html>`__
+anzuschließen.
+
+.. image:: /Images/Bricklets/bricklet_gps_v2_case_with_sma_antenna_600.jpg
+   :scale: 100 %
+   :alt: GPS Bricklet 2.0 mit SMA-Stecker und Antenne
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_gps_v2_case_with_sma_antenna_1200.jpg
 
 
 .. _gps_v2_bricklet_programming_interface:
