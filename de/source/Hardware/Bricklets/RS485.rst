@@ -1,0 +1,235 @@
+
+:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / RS485 Bricklet
+:FIXME_shoplink: ../../../shop/bricklets/rs485-bricklet.html
+
+.. include:: RS485.substitutions
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
+
+.. _rs485_bricklet:
+
+RS485 Bricklet
+==============
+
+.. note::
+  This Bricklet is currently work-in-progress!
+
+.. raw:: html
+
+	{% tfgallery %}
+
+	Bricklets/bricklet_rs485_tilted_[?|?].jpg           RS485 Bricklet
+	Bricklets/bricklet_rs485_top_[?|?].jpg              RS485 Bricklet
+	Bricklets/bricklet_rs485_bottom_[?|?].jpg           RS485 Bricklet
+	Cases/bricklet_rs485_case_built_up1_[?|?].jpg       RS485 Bricklet in case
+	Cases/bricklet_rs485_case_built_up2_[?|?].jpg       RS485 Bricklet in case
+	Bricklets/bricklet_rs485_brickv_[100|].jpg          RS485 Bricklet in Brick Viewer
+	Bricklets/bricklet_rs485_brickv_modbus_[100|].jpg   RS485 Bricklet in Brick Viewer
+	Dimensions/rs485_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
+
+
+Features
+--------
+
+* Unterstützt low-level RS485 sowie Modbus RTU Slave/Master
+* Modbus RTU Implemtierung Standardkonform für alle Read/Write Funktionen von Coils und Registern
+* Unterstützt Halb- Und Voll-Duplex
+* Konfigurierbare Baudrate, Parität, Stopbits aund Wortlänge
+* Eine 120 Ohm Terminierung kann ein- und ausgestellt werden
+
+
+.. _rs485_bricklet_description:
+
+Beschreibung
+------------
+
+Mit dem RS485 :ref:`Bricklet <primer_bricklets>` können 
+:ref:`Bricks <primer_bricks>` differentielle Daten über 
+`RS-485 <https://en.wikipedia.org/wiki/RS-485>`__ empfangen und senden.
+
+Es unterstützt Halb- und Voll-Duplex und hat eine konfigurierbare Terminierung.
+
+Das Bricklet hat drei Modi:
+
+* RS485,
+* Modbus RTU Master und
+* Modbus RTU Slave.
+
+Im RS485-Modus können beliebige Daten empfangen und gesendet werden. Die Modbus-Modi
+sind Modbus-Standardkonform. Im  Modbus RTU Master-Modus können beliebige Coils/Register
+von einem Slave gelesen und gesetzt werden. Im Modbus RTU Slave-Modus ist möglich Daten
+für Coils/Register bereitzustellen und über eine Modbus-Master Schreibeoperation
+zu empfangen.
+
+
+Technische Spezifikation
+------------------------
+
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Stromverbrauch                    TBDmW (TBDmA bei 5V, Idle)
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Baudrate                          100 - 2000000baud
+Parität                           keine / ungerade / gerade
+Stoppbits                         1 / 2
+Wortlänge                         5 / 6 / 7 / 8
+Duplex                            Halb / Voll
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           40 x 40 x 14mm (1.57 x 1.57 x 0.55")
+Gewicht                           13g
+================================  ============================================================
+
+Ressourcen
+----------
+
+* Schaltplan (`Download <https://github.com/Tinkerforge/rs485-bricklet/raw/master/hardware/rs485-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/rs485_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rs485-bricklet/zipball/master>`__)
+
+
+Anschlussmöglichkeiten
+----------------------
+
+Im Voll-Duplex Modus müssen TX+, TX-, RX+, RX- und GND verbunden werden.
+
+Im Halb-Duplex Modus sind TX+ / RX+ und TX- / RX- gebrückt, es reicht also entweder
+TX+ / TX- / GND oder RX+ / RX- / GND zu verbinden. Es ist auch möglich darüber eine
+Kette von Modbus Geräten zu verbinden.
+
+.. image:: /Images/Bricklets/bricklet_rs485_connectivity_600.jpg
+   :scale: 100 %
+   :alt: RS485 Bricklet Verbindungsmöglichkeiten
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs485_connectivity_1000.jpg
+
+Duplex und Terminierung
+-----------------------
+
+Mit dem DIP-Schalter auf dem Bricklet können Duplex und Terminierung konfiguriert
+werden.
+
+Es kann zwischen Voll- und Halb-Duplex gewählt werden und eine 120 Ohm
+Terminierung kann ein- und aus-geschaltet werden.
+
+.. image:: /Images/Bricklets/bricklet_rs485_dip_800.jpg
+   :scale: 100 %
+   :alt: RS485 Bricklet DIP-Schalter Einstellungen
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs485_dip_1200.jpg
+
+Eine Legende mit den unterschiedlichen Konfigurationsmöglichkeiten befindet sich auch
+auf der Unterseite des Bricklets.
+
+Modbus Funktionen
+-----------------
+
+Im Modbus Master/Slave-Modus können Modbus Nachrichten gesendet und empfangen
+werden. Zum Beispiel kann ein Modbus Master eine Anfrage an einen Modbus Slave
+senden. Die Modbus Funktionen basieren auf Callbacks.
+
+Zum besseren Verständnis des generellen Konzepts Beschreiben wir hier ein
+Szenario:
+
+- In diesem Szenario sind zwei RS485 Bricklets im Bus. Eins ist im Modbus 
+  Master-Modus und das andere ist im Modbus Slave-Modus.
+
+- Der Modbus Master liest 4 Register mit Startaddresse 2 vom Modbus Slave
+  mit Adresse 8.
+
+- Dazu registriert der Master den *modbus_master_read_holding_registers_response*
+  Callback welcher ausgeführt wird, wenn der Slave auf eine Anfrage des Masters
+  antwortet. Das Bricklet welches im Slave-Modus operiert muss sich auf den
+  *modbus_slave_read_holding_registers_request* registrieren. Dieser
+  wird bei Empfangen einer Anfrage aufgerufen.
+
+- Der Master ruf die Funktion *modbus_master_read_holding_registers* auf.
+  Die Parameter der Funktion bestehen aus einer Slave Addresse, einer
+  Register Startadresse und der zahl der zu lesenden Register. Diese Funktion
+  sendet die Anfrage auf dem Bus.
+
+- Auf der Slave-Seite wird der registrierte Callback aufgerufen, die Parameter
+  zeigen dass der Master 4 Register mit Startadresse 2 lesen möchte.
+
+- Der Slave ruft die Funktion *modbus_slave_answer_read_holding_registers_request*
+  mit den angeforderten Daten auf, diese sendet die Antwort auf dem Bus.
+
+- Nach Empfang der Antwort wird beim Master der Callback 
+  *modbus_master_read_holding_registers_response* aufgerufen mit den angeforderten
+  Daten aufgerufen.
+
+Für Details dieser Funktionen siehe :ref:`programming interface <rs485_bricklet_programming_interface>`.
+
+Alle Verfügbaren Modbus Funktionen können auch über den Brick Viewer ausprobiert werden:
+
+.. image:: /Images/Bricklets/bricklet_rs485_brickv_modbus.jpg
+   :scale: 100 %
+   :alt: RS485 Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs485_brickv_modbus.jpg
+
+
+.. _rs485_bricklet_test:
+
+Erster Test
+-----------
+
+|test_intro|
+
+|test_connect|.
+Verbinde dann den RR und TX Pin mit einem kleinen Kabel, damit das Bricklet seine
+eigene Ausgabe zurück ließt.
+
+|test_tab|
+Wenn alles wie erwartet funktioniert kann jetzt Text in das Eingabefeld getippt
+und mit Enter abgeschickt werden. Der gleiche Text sollte dann im Textfeld
+darüber auftauchen.
+
+.. image:: /Images/Bricklets/bricklet_rs485_brickv.jpg
+   :scale: 100 %
+   :alt: RS485 Bricklet im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs485_brickv.jpg
+
+|test_pi_ref|
+
+
+.. _rs485_bricklet_case:
+
+Gehäuse
+-------
+
+Ein `laser-geschnittenes Gehäuse für das RS485 Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-rs485-bricklet.html>`__ ist verfügbar.
+
+.. image:: /Images/Cases/bricklet_rs485_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für RS485 Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_rs485_case_built_up1_1000.jpg
+
+.. include:: RS485.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
+
+.. image:: /Images/Exploded/rs485_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für RS485 Bricklet
+   :align: center
+   :target: ../../_images/Exploded/rs485_exploded.png
+
+|bricklet_case_hint|
+
+.. _rs485_bricklet_programming_interface:
+
+Programmierschnittstelle
+------------------------
+
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
+Beschreibung.
+
+.. include:: RS485_hlpi.table
