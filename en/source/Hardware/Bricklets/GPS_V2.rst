@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / GPS Bricklet 2.0
-:FIXME_shoplink: ../../../shop/bricklets/gps-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/gps-v2-bricklet.html
 
 .. include:: GPS_V2.substitutions
    :start-after: >>>substitutions
