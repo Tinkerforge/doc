@@ -81,7 +81,6 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 GPS Module Chipset                GlobalTop Firefly X1
-Current Consumption               25mA (acquisition), 24mA (tracking)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Sensitivity                       -148dBm (acquisition), -165dBm (tracking)*
@@ -92,6 +91,7 @@ Update Rate                       10Hz
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 35 x 12mm (1.57 x 1.38 x 0.47")
 Weight                            20g (with battery and antenna)
+Current Consumption               approx. 73mA
 ================================  ============================================================
 
 \* datasheet values
