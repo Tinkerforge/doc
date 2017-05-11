@@ -11,9 +11,6 @@
 GPS Bricklet 2.0
 ================
 
-.. note::
-  Dieses Bricklet befindet sich aktuell in der Entwicklung!
-
 .. raw:: html
 
 	{% tfgallery %}
