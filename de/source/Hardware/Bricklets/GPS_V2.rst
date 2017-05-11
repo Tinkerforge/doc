@@ -33,7 +33,7 @@ GPS Bricklet 2.0
 Features
 --------
 
-* Unterstützt GPS und GLONASS gleichzeitig (später auch Galileo durch software update)
+* Unterstützt GPS und GLONASS gleichzeitig (später auch Galileo durch Softwareupdate)
 * Empfängt Bewegungs-, Positions-, Höhen- und Zeitdaten sowie PPS-Signal
 * Elevation, Azimuth und SNR für jeden GPS/GLONASS Satelliten abfragbar.
 * 99 Kanäle, 10Hz Update-Rate
@@ -50,7 +50,7 @@ Mit dem GPS :ref:`Bricklet <primer_bricklets>` 2.0 können
 Es ist auch möglich Bewegungsdaten (Richtung und Geschwindigkeit),
 Höheninformationen (Höhe und 
 `Geodial Separation <https://de.wikipedia.org/wiki/World_Geodetic_System_1984>`__),
-sowie hochgenaue Zeit- und Datumsinformationen mit PPS-Signal zu bekommen.
+sowie hochgenaue Zeit- und Datumsinformationen mit PPS-Signal zu erhalten.
 
 Aktuelle Werte für Elevation, Azimuth und SNR können für jeden GPS und GLONASS
 Satelliten ausgelesen werden.
@@ -61,15 +61,15 @@ liefert mit 10Hz Updatefrequenz auch schnell genug Daten für Drohnen o.ä.
 Eine interne Störunterdrückung verbessert den Empfang wenn Bluetooth- 
 oder WLAN-Geräte in der Nähe sind.
 
-Eine 25mmx25mm große Patch-Antenne mit großer Verstärkung ist permanent auf
+Eine 25mmx25mm große aktive Patch-Antenne mit großer Verstärkung ist permanent auf
 der Unterseite befestigt und über einen U.FL Stecker mit dem GPS Modul
-verbunden. Der Stecker kann entfernt werden um eine andere externe Antenne
+verbunden. Die Steckverbindung kann gelöst werden um eine andere externe Antenne
 anzuschließen.
 
 Eine CR1025 Knopfzellenbatterie wird mit dem Bricklet ausgeliefert. Die Batterie
 wird genutzt um Positionsinformationen zu speichern wenn die Stromversorgung
 wegfällt. Mit den gespeicherten Informationen kann ein Fix schneller wieder
-hergestellt werden wenn die Stromversorgung wieder zur Verfügung steht.
+hergestellt werden, wenn die Stromversorgung wieder zur Verfügung steht.
 
 Das GPS Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
@@ -108,7 +108,7 @@ Ressourcen
 Externe Antenne
 ---------------
 
-Das GPS Bricklet 2.0 hat keine interne Antenne. Eine externe Antenna muss 
+Das GPS Bricklet 2.0 hat keine interne Antenne. Eine externe Antenne muss 
 über einen `U.FL <https://en.wikipedia.org/wiki/Hirose_U.FL>`__ Stecker 
 angeschlossen werden.
 
@@ -152,7 +152,7 @@ Fix LED
 Die grüne "Fix" LED zeigt den Status der Positionsdaten an. Die LED blinkt
 solange kein Fix vorhanden ist und geht an sobald ein Fix erreicht ist.
 
-Wenn das GPS-Modul per Batterie betrieben wird, geht die LED aus um strom zu
+Wenn das GPS-Modul per Batterie betrieben wird, geht die LED aus um Strom zu
 sparen.
 
 
