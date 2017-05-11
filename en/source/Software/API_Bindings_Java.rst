@@ -23,7 +23,7 @@ The Java library has no external dependencies.
 Requirements
 ------------
 
-* Java JDK 1.5 or newer
+* Java JDK 1.6 or newer
 
 
 .. _api_bindings_java_install:
