@@ -81,33 +81,33 @@ bindings_infos = \
 
 extension_infos = \
 [
-    DeviceInfo(None, 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, True, True, False,
+    DeviceInfo(None, 'Chibi Extension', 'Chibi', 'chibi_extension', 'Chibi_Extension', None, 'chibi-extension', None, False, True, True, False,
                {'en': 'Wireless Chibi connection between stacks',
                 'de': 'Drahtlose Chibi Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, True, True, False,
+    DeviceInfo(None, 'Ethernet Extension', 'Ethernet', 'ethernet_extension', 'Ethernet_Extension', None, 'ethernet-extension', None, False, True, True, False,
                {'en': 'Cable based Ethernet connection between stack and PC',
                 'de': 'Kabelgebundene Ethernet Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, True, True, False,
+    DeviceInfo(None, 'RS485 Extension', 'RS485', 'rs485_extension', 'RS485_Extension', None, 'rs485-extension', None, False, True, True, False,
                {'en': 'Cable based RS485 connection between stacks',
                 'de': 'Kabelgebundene RS485 Verbindung zwischen Stapeln'}),
-    DeviceInfo(None, 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, True, True, False,
+    DeviceInfo(None, 'WIFI Extension', 'WIFI', 'wifi_extension', 'WIFI_Extension', None, 'wifi-extension', None, False, True, True, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'}),
-    DeviceInfo(None, 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', 'wifi_v2', True, True, False,
+    DeviceInfo(None, 'WIFI Extension 2.0', 'WIFI 2.0', 'wifi_v2_extension', 'WIFI_V2_Extension', None, 'wifi-v2-extension', 'wifi_v2', False, True, True, False,
                {'en': 'Wireless Wi-Fi connection between stack and PC',
                 'de': 'Drahtlose WLAN Verbindung zwischen Stapel und PC'})
 ]
 
 power_supply_infos = \
 [
-    DeviceInfo(None, 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, True, True, False,
+    DeviceInfo(None, 'Step-Down Power Supply', 'Step-Down', 'step_down_power_supply', 'Step_Down', None, 'step-down-powersupply', None, False, True, True, False,
                {'en': 'Powers a stack of Bricks with 5V',
                 'de': 'Versorgt einen Stapel von Bricks mit 5V'})
 ]
 
 accessory_infos = \
 [
-    DeviceInfo(None, 'DC Jack Adapter', 'DC Jack Adapter', 'dc_jack_adapter', 'DC_Jack_Adapter', None, 'dc-adapter', None, True, True, False,
+    DeviceInfo(None, 'DC Jack Adapter', 'DC Jack Adapter', 'dc_jack_adapter', 'DC_Jack_Adapter', None, 'dc-adapter', None, False, True, True, False,
                {'en': 'Adapter between a 5mm DC jack and 2 Pole Black Connector',
                 'de': 'Adapter zwischen einem 5mm DC Stecker und 2 Pin Stecker Schwarz'})
 ]
@@ -355,7 +355,7 @@ def make_download_bricklet_plugins_table():
 """
     }
 
-    row = ' :ref:`{0} <{1}>` | `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{2}/bricklet_{2}_firmware_{6}_{7}_{8}.bin>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{6}.{7}.{8}.zip>`__ | {6}.{7}.{8} | `{5} <http://download.tinkerforge.com/firmwares/bricklets/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
+    row = ' :ref:`{0} <{1}>` | `Plugin <http://download.tinkerforge.com/firmwares/bricklets/{2}/bricklet_{2}_firmware_{7}_{8}_{9}.{6}>`__, `{3} <https://github.com/Tinkerforge/{4}/archive/v{7}.{8}.{9}.zip>`__ | {7}.{8}.{9} | `{5} <http://download.tinkerforge.com/firmwares/bricklets/{2}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{4}/master/software/changelog>`__'
     rows = []
 
     for bricklet_info in sorted(bricklet_infos, key=lambda x: x.short_display_name.lower()):
@@ -377,6 +377,7 @@ def make_download_bricklet_plugins_table():
                                        source_code[lang],
                                        bricklet_info.git_name,
                                        archive[lang],
+                                       'zbin' if bricklet_info.has_comcu else 'bin',
                                        *plugin_version))
 
     return table_head[lang] + '\n'.join(rows) + '\n'
