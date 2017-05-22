@@ -42,7 +42,7 @@ with the following command in MATLAB:
 
 .. code-block:: matlab
 
- version -java
+ java -version
 
 If this command doesn't show Java support then see the MATLAB documentation
 about how to configure `Java for MATLAB
