@@ -44,7 +44,7 @@ kann mit folgendem Befehl in MATLAB getestet werden:
 
 .. code-block:: matlab
 
- java -version
+ version -java
 
 Falls dieser Befehl keine Java Unterstürzung zeigt, dann siehe die MATLAB
 Dokumentation darüber wie `Java für MATLAB
