@@ -6,7 +6,7 @@
 Tutorial - Build-Umgebung aufsetzen 
 ===================================
 
-Fast alles was wir bei Tinkerforge machen ist Open Soruce. Inklusive aller
+Fast alles was wir bei Tinkerforge machen ist Open Source. Inklusive aller
 Generatoren, Quelltexten, Schaltpläne, Layouts und CAD Entwürfe, welche das
 Baukastensystem, bestehend aus Bricks und Bricklets, ausmachen.
 
@@ -16,7 +16,7 @@ Einen guten Überblick über unsere Open Source Projekte erlaubt unser
 Wir bieten ein Skript an, welches eine Build-Umgebung für das
 komplette Tinkerforge Ökosystem aufsetzt:
 
-* `build_environment_setup.sh <https://github.com/Tinkerforge/generators/blob/master/build_environment_setup.sh>`__https://www.tinkerforge.com/en/doc/Tutorials/Tutorial_Build_Environment/Tutorial.html
+* `build_environment_setup.sh <https://github.com/Tinkerforge/generators/blob/master/build_environment_setup.sh>`__
 
 Das Skript wurde mit einem Ubuntu 15.04 VirtualBox Image von `osboxes.org
 <http://www.osboxes.org/>`__ getestet. Es sollte auf allen aktuellen Debian
