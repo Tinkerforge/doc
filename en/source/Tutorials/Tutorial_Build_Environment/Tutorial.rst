@@ -180,7 +180,7 @@ Create 3D Models
 ----------------
 
 In the hardware folders of the bricks and bricklet are ``*.step`` - files.
-These were createt using the FreeCAD script `StepUp Tools <https://sourceforge.net/projects/kicadstepup/>`__.
+These were created using the FreeCAD script `StepUp Tools <https://sourceforge.net/projects/kicadstepup/>`__.
 
 ToDo: HowTo Steps
 

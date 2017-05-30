@@ -16,7 +16,7 @@ Einen guten Überblick über unsere Open Source Projekte erlaubt unser
 Wir bieten ein Skript an, welches eine Build-Umgebung für das
 komplette Tinkerforge Ökosystem aufsetzt:
 
-* `build_environment_setup.sh <https://github.com/Tinkerforge/generators/blob/master/build_environment_setup.sh>`__
+* `build_environment_setup.sh <https://github.com/Tinkerforge/generators/blob/master/build_environment_setup.sh>`__https://www.tinkerforge.com/en/doc/Tutorials/Tutorial_Build_Environment/Tutorial.html
 
 Das Skript wurde mit einem Ubuntu 15.04 VirtualBox Image von `osboxes.org
 <http://www.osboxes.org/>`__ getestet. Es sollte auf allen aktuellen Debian
@@ -193,7 +193,7 @@ KiCad funktioniert auch auf Windows und Mac OS X.
 Im Hardwareordner der Bricks und Bricklets befinden sich ``*.step`` - Dateien der Bricks und Bricklets.
 Diese wurden erzeugt mit dem FreeCAD Skript `StepUp Tools <https://sourceforge.net/projects/kicadstepup/>`__.
 
-Um das Skript zu benutzen müssen einige Änderungen vorgenommen werden:
+Um das Skript benutzen zu können, müssen einige Änderungen vorgenommen werden:
 
 1. Erzeugen der Datei  ``ksu-config.ini`` im Home-Verzeichnis. Die Datei wird beim ersten Starten des Skripts mit Inhalt gefüllt.
 2. Einen Symlink auf das ``kicad-libraries``-git setzten (Beispiel: siehe oben)
