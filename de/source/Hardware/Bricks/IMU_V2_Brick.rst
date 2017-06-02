@@ -110,6 +110,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/hardware/imu-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/imu-v2-brick/zipball/master>`__)
+* 3D Modell (`Download STEP <http://download.tinkerforge.com/3d/bricks/imu_v2/imu.step>`__ | `Download FreeCAD <http://download.tinkerforge.com/3d/bricks/imu_v2/imu.FCStd>`__)
 
 
 Anschlussmöglichkeit

@@ -106,7 +106,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/imu-v2-brick/raw/master/hardware/imu-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/imu_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/imu-v2-brick/zipball/master>`__)
-
+* 3D model (`Download STEP <http://download.tinkerforge.com/3d/bricks/imu_v2/imu.step>`__ | `Download FreeCAD <http://download.tinkerforge.com/3d/bricks/imu_v2/imu.FCStd>`__)
 
 Connectivity
 ------------
