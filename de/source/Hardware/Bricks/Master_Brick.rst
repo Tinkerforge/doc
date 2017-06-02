@@ -89,7 +89,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/master-brick/raw/master/hardware/master-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/master_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/master-brick/zipball/master>`__)
-
+* 3D Modell(`Download STEP <http://download.tinkerforge.com/3d/bricks/master/master.step>`__ | `Download FreeCAD <http://download.tinkerforge.com/3d/bricks/master/master.FCStd>`__)
 
 .. _master_brick_connectivity:
 
