@@ -87,7 +87,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/rs485-bricklet/raw/master/hardware/rs485-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/rs485_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/rs485-bricklet/zipball/master>`__)
-* 3D model(`Download STEP <http://download.tinkerforge.com/3d/bricklets/rs485/rs485.step>`__ | `Download FreeCAD <http://download.tinkerforge.com/3d/bricklets/rs485/rs485.FCStd>`__)
+* 3D model (`Download STEP <http://download.tinkerforge.com/3d/bricklets/rs485/rs485.step>`__ | `Download FreeCAD <http://download.tinkerforge.com/3d/bricklets/rs485/rs485.FCStd>`__)
 
 
 Connectivity
