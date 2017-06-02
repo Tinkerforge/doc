@@ -70,6 +70,7 @@ Ressourcen
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/debug-brick/raw/master/hardware/debug-schematic.pdf>`__)
 * Platinenlayout (`Download <https://github.com/Tinkerforge/debug-brick/zipball/master>`__)
+* 3D Modell(`Download STEP <http://download.tinkerforge.com/3d/bricks/debug/debug.step>`__ | `Download FreeCAD <http://download.tinkerforge.com/3d/bricks/debug/debug.FCStd>`__)
 
 .. FIXME: veraltet. gehört ursprünglich zwischen Schaltplan und Platinenlayout
 	* Umriss und Bohrplan (`Download <../../_images/Dimensions/debug_brick_dimensions.png>`__)
