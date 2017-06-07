@@ -182,15 +182,15 @@ Basic Functions
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. perl:function:: IPConnection->register_callback($id, $callback)
+.. perl:function:: IPConnection->register_callback($callback_id, $function)
 
- :param $id: int
- :param $callback: string
+ :param $callback_id: int
+ :param $function: string
  :rtype: undef
 
- Registers a callback with ID ``$id`` to the function named ``$callback``.
+ Registers the given ``$function`` name with the given ``$callback_id``.
 
- The available IDs with corresponding callback function signatures
+ The available callback IDs with corresponding function signatures
  are described below.
 
 

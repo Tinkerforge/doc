@@ -172,13 +172,13 @@ Basic Functions
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. rb:function:: IPConnection#register_callback(id) { |param [, ...]| block } -> nil
+.. rb:function:: IPConnection#register_callback(callback_id) { |param [, ...]| block } -> nil
 
- :param id: int
+ :param callback_id: int
 
- Registers a callback with ID ``id`` to the block ``callback``.
+ Registers the given ``block`` with the given ``callback_id``.
 
- The available IDs with corresponding callback function signatures
+ The available callback IDs with corresponding function signatures
  are described below.
 
 

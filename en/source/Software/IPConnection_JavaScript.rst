@@ -192,14 +192,14 @@ Basic Functions
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. javascript:function:: IPConnection.on(id, callback)
+.. javascript:function:: IPConnection.on(callback_id, function)
 
- :param id: int
- :param callback: function
+ :param callback_id: int
+ :param function: function
 
- Registers a callback with ID ``id`` to the function ``callback``.
+ Registers the given ``function`` with the given ``callback_id``.
 
- The available IDs with corresponding callback function signatures
+ The available callback IDs with corresponding function signatures
  are described below.
 
 

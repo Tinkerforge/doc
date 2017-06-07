@@ -136,11 +136,12 @@ Basic Functions
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. php:function:: void IPConnection::registerCallback(int $id, callable $callback, mixed $userData = NULL)
+.. php:function:: void IPConnection::registerCallback(int $callback_id, callable $function, mixed $user_data = NULL)
 
- Registers a callback with ID ``$id`` to the function ``$callback``.
+ Registers the given ``$function`` with the given ``$callback_id``. The
+ optional ``$user_data`` will be passed as the last parameter to the ``$function``.
 
- The available IDs with corresponding callback function signatures
+ The available callback IDs with corresponding function signatures
  are described below.
 
 

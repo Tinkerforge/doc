@@ -203,15 +203,15 @@ Basic Functions
 Callback Configuration Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. py:function:: IPConnection.register_callback(id, callback)
+.. py:function:: IPConnection.register_callback(callback_id, function)
 
- :param id: int
- :param callback: callable
+ :param callback_id: int
+ :param function: callable
  :rtype: None
 
- Registers a callback with ID ``id`` to the function ``callback``.
+ Registers the given ``function`` with the given ``callback_id``.
 
- The available IDs with corresponding callback function signatures
+ The available callback IDs with corresponding function signatures
  are described below.
 
 
