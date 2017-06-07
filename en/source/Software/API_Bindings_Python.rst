@@ -18,7 +18,7 @@ The Python bindings allow you to control :ref:`Bricks <primer_bricks>` and
 Requirements
 ------------
 
-* Python 2.5 or newer, Python 3 is also supported
+* Python 2.6 or newer, Python 3 is also supported
 
 
 .. _api_bindings_python_install:

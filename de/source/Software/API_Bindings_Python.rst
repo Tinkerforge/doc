@@ -19,7 +19,7 @@ die Bindings beinhaltet:
 Voraussetzungen
 ---------------
 
-* Python 2.5 oder neuer, Python 3 wird auch unterstützt
+* Python 2.6 oder neuer, Python 3 wird auch unterstützt
 
 
 .. _api_bindings_python_install:
