@@ -97,6 +97,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/stepper-brick/raw/master/hardware/stepper-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/stepper_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/stepper-brick/zipball/master>`__)
+* 3D model (Download: `STEP <http://download.tinkerforge.com/3d/bricks/stepper/stepper.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/stepper/stepper.FCStd>`__)
 
 
 .. _stepper_brick_connectivity:

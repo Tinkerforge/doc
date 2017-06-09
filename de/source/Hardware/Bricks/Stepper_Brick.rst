@@ -97,6 +97,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/stepper-brick/raw/master/hardware/stepper-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/stepper_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/stepper-brick/zipball/master>`__)
+* 3D Modell (Download: `STEP <http://download.tinkerforge.com/3d/bricks/stepper/stepper.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/stepper/stepper.FCStd>`__)
 
 
 .. _stepper_brick_connectivity:
