@@ -1,8 +1,8 @@
 Shell
 -----
-==== ========== ====================== ====
-Name Version    Description            full
-==== ========== ====================== ====
-bash 4.3-11+b1  GNU Bourne Again SHell |c|
-dash 0.5.7-4+b1 POSIX-compliant shell  |c|
-==== ========== ====================== ====
+==== ============= ====================== ====
+Name Version       Description            full
+==== ============= ====================== ====
+bash 4.3-11+deb8u1 GNU Bourne Again SHell |c|
+dash 0.5.7-4+b1    POSIX-compliant shell  |c|
+==== ============= ====================== ====

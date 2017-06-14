@@ -4,7 +4,7 @@ Perl
 Name                           Version          Description                                                          full
 ============================== ================ ==================================================================== ====
 RPC::Simple                    1.002            Perl classes to handle simple asynchronous RPC calls with  call-back |c|
-Thread::Queue                  3.07             Thread-safe queues                                                   |c|
+Thread::Queue                  3.12             Thread-safe queues                                                   |c|
 cpanminus                      1.7014-1         script to get, unpack, build and install modules from CPAN           |c|
 libcrypt-blowfish-perl         2.14-1+b2        Blowfish cryptography for Perl                                       |c|
 libcrypt-des-perl              2.07-1+b2        Perl DES encryption module                                           |c|
@@ -17,7 +17,7 @@ libcrypt-openssl-random-perl   0.04-2+b1        module to access the OpenSSL pse
 libcrypt-openssl-rsa-perl      0.28-2+b1        module for RSA encryption using OpenSSL                              |c|
 libcrypt-passwdmd5-perl        1.3-10           interoperable MD5-based crypt() for perl                             |c|
 libcrypt-util-perl             0.11-3           lightweight Crypt/Digest convenience API                             |c|
-libdbd-mysql-perl              4.028-2+b1       Perl5 database interface to the MySQL database                       |c|
+libdbd-mysql-perl              4.028-2+deb8u2   Perl5 database interface to the MySQL database                       |c|
 libdbd-sqlite2-perl            2:0.36-2+b1      Perl DBI driver with a self-contained RDBMS (SQLite2 version)        |c|
 libdbd-sqlite3-perl            1.44-1           Perl DBI driver with a self-contained RDBMS                          |c|
 libdigest-hmac-perl            1.03+dfsg-1      module for creating standard message integrity checks                |c|
@@ -39,7 +39,7 @@ libterm-readline-gnu-perl      1.24-2+b1        Perl extension for the GNU ReadL
 libwww-curl-perl               4.17-1+b1        Perl bindings to libcurl                                             |c|
 libxml-simple-perl             2.20-1           Perl module for reading and writing XML                              |c|
 libyaml-perl                   1.13-1           YAML Ain't Markup Language                                           |c|
-perl                           5.20.2-3+deb8u3  Larry Wall's Practical Extraction and Report Language                |c|
-perl-doc                       5.20.2-3+deb8u3  Perl documentation                                                   |c|
+perl                           5.20.2-3+deb8u7  Larry Wall's Practical Extraction and Report Language                |c|
+perl-doc                       5.20.2-3+deb8u7  Perl documentation                                                   |c|
 pmtools                        2.0.0-1          Perl module tools                                                    |c|
 ============================== ================ ==================================================================== ====

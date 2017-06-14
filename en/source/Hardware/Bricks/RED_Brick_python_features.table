@@ -3,10 +3,8 @@ Python
 ========================== =========================== ========================================================================= ====
 Name                       Version                     Description                                                               full
 ========================== =========================== ========================================================================= ====
-libpython2.7               2.7.9-2                     Shared Python runtime library (version 2.7)                               |c|
+libpython2.7               2.7.9-2+deb8u1              Shared Python runtime library (version 2.7)                               |c|
 libpython3.4               3.4.2-1                     Shared Python runtime library (version 3.4)                               |c|
-pycrypto                   2.6.1                       Cryptographic modules for Python.                                         |c|
-pynag                      0.9.1                       Python modules for Nagios plugins and configuration                       |c|
 python                     2.7.9-1                     interactive high-level object-oriented language (default version)         |c|
 python-flask               0.10.1-2                    micro web framework based on Werkzeug, Jinja2 and good intentions         |c|
 python-gtk2                2.24.0-4                    Python bindings for the GTK+ widget set                                   |c|
@@ -49,5 +47,4 @@ python3-scipy              0.14.0-2                    scientific tools for Pyth
 python3-serial             2.6-1.1                     pyserial - module encapsulating access for the serial port                |c|
 python3-setuptools         5.5.1-1                     Python3 Distutils Enhancements                                            |c|
 python3-sip                4.16.4+dfsg-1               Python 3/C++ bindings generator runtime library                           |c|
-watchdog                   0.8.3                       Filesystem events monitoring                                              |c|
 ========================== =========================== ========================================================================= ====
