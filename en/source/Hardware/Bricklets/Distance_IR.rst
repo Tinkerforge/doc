@@ -152,7 +152,7 @@ with a Brick to your PC with has :ref:`Brick Daemon <brickd>` and the
 Press "connect" in the Brick Viewer and you should see the Distance IR tab.
 Click on it.
 
-Select the "Distance IR Bricklet" tab, press the "File.." button and choose a
+Select the "Distance IR Bricklet" tab, press the "Browse" button and choose a
 voltage/distance mapping file. After this press the "Save" button to write the
 data onto the Bricklet. The sampling points from the mapping file are
 interpolated by a spline to get equidistant sampling points for the whole

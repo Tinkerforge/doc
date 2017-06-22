@@ -154,7 +154,7 @@ Um die Spannung/Distanz Abbildung auf dem Bricklet zu speichern muss es über
 einen Brick an einen PC angeschlossen werden auf dem der :ref:`Brick Daemon
 <brickd>` und der :ref:`Brick Viewer <brickv>` laufen.
 
-Wähle den "Distance IR Bricklet" Tab aus, klicke auf den "File.." Knopf und
+Wähle den "Distance IR Bricklet" Tab aus, klicke auf den "Browse" Knopf und
 wähle die passende Spannung/Distanz Abbildungsdatei aus. Dann klicke auf den
 "Save" Knopf um die Abbildung auf dem Bricklet zu speichern. Dabei wird aus
 den Stützwerten der Abbildungsdatei eine Spline interpoliert um äquidistante
