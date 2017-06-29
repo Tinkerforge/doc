@@ -87,7 +87,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/master-brick/raw/master/hardware/master-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/master_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/master-brick/zipball/master>`__)
-* 3D model (`View Online <http://a360.co/2spaP0V>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/master/master.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/master/master.FCStd>`__)
+* 3D model (`View online <http://a360.co/2spaP0V>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/master/master.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/master/master.FCStd>`__)
 
 
 .. _master_brick_connectivity:
