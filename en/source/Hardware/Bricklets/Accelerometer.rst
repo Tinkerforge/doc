@@ -74,6 +74,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/raw/master/hardware/accelerometer-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/accelerometer_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/zipball/master>`__)
+* 3D model (`View online <http://a360.co/2surksj>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/accelerometer/accelerometer.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/accelerometer/accelerometer.FCStd>`__)
 
 .. _accelerometer_bricklet_test:
 
