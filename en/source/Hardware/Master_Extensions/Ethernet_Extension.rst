@@ -92,8 +92,9 @@ Weight                            22g
 Resources
 ---------
 
-* W5200 Datasheet (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/datasheets/W5200.pdf>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/ethernet-extension-schematic.pdf>`__)
+* W5500 Datasheet (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/datasheets/W5500.pdf>`__)
+* Schematic PoE Version (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/poe/ethernet-extension-poe-schematic.pdf>`__)
+* Schematic non PoE Version (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/wo_poe/ethernet-extension-wopoe-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/ethernet_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
 
