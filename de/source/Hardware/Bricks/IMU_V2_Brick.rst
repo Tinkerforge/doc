@@ -33,7 +33,7 @@ Features
 * Keine akkumulierenden Fehler, kein Gimbal Lock!
 * Werkskalibriert, automatische durchgehende Selbstkalibrierung während des
   Betriebs
-* Berechnet Quaternionen, lienare Beschleunigung, Schwerkraftvektor sowie
+* Berechnet Quaternionen, lineare Beschleunigung, Schwerkraftvektor sowie
   unabhängige Gier- (Heading), Roll- und Nick- (Pitch) Winkel
 * Direkt auslesbar per USB, erweiterbar über zwei Bricklet Anschlüsse
 
