@@ -98,8 +98,7 @@ Ressourcen
 ----------
 
 * W5500 Datenblatt (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/datasheets/W5500.pdf>`__)
-* Schaltplan Version mit PoE (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/poe/ethernet-extension-poe-schematic.pdf>`__)
-* Schaltplan Version ohne PoE(`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/wo_poe/ethernet-extension-wopoe-schematic.pdf>`__)
+* Schaltplan (Download: `Mit PoE <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/poe/ethernet-extension-poe-schematic.pdf>`__, `Ohne PoE <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/wo_poe/ethernet-extension-wopoe-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/ethernet_extension_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
 

@@ -93,8 +93,7 @@ Resources
 ---------
 
 * W5500 Datasheet (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/datasheets/W5500.pdf>`__)
-* Schematic PoE Version (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/poe/ethernet-extension-poe-schematic.pdf>`__)
-* Schematic non PoE Version (`Download <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/wo_poe/ethernet-extension-wopoe-schematic.pdf>`__)
+* Schematic (Download: `With PoE <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/poe/ethernet-extension-poe-schematic.pdf>`__, `Without PoE <https://github.com/Tinkerforge/ethernet-extension/raw/master/hardware/wo_poe/ethernet-extension-wopoe-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/ethernet_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/ethernet-extension>`__)
 
