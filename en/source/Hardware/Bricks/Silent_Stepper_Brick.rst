@@ -225,10 +225,10 @@ configure the basic configuration:
   0-65536 steps/s. If the velocity of the motor goes above this value, stealth mode is turned
   off. Otherwise it is turned on. In stealth mode the torque declines with high speed.
 
-* **Coolstep Threshold**: Sets the *lower threshold* for coolstep mode in steps/s. The value range is
+* **Coolstep Threshold**: Sets the *lower threshold* for Coolstep mode in steps/s. The value range is
   0-65536 steps/s. The Coolstep Threshold needs to be above the Stealth Threshold.
 
-* **Classic Threshold**: Sets the *lower threshold* for classic mode. The value range is
+* **Classic Threshold**: Sets the *lower threshold* for Classic mode. The value range is
   0-65536 steps/s. In classic mode the stepper becomes more noisy, but the torque is maximized.
 
 * **High Velocity Shopper Mode**: If High Velocity Shopper Mode is enabled, the stepper control
@@ -244,7 +244,7 @@ The mode is usable for low and medium velocities.
 Coolstep Mode
 ^^^^^^^^^^^^^
 
-In coolstep mode the stepper motor is driven with smart energy optimizations.
+In Coolstep mode the stepper motor is driven with smart energy optimizations.
 In applications with varying loads, the power consumption is automatically
 reduced during low load times. This means that less heat is generated and
 less cooling is necessary.
@@ -252,7 +252,7 @@ less cooling is necessary.
 Classic Mode
 ^^^^^^^^^^^^
 
-In classic mode stealth and coolstep are disabled. The stepper motor is driven
+In Classic mode Stealth and Coolstep are disabled. The stepper motor is driven
 without any of the advanced features, but in return the torque is maximized.
 
 Spreadcycle
@@ -266,7 +266,7 @@ Stallguard
 ^^^^^^^^^^
 
 Stallguard can be used to measure motor load and for stall
-detection. In coolstep mode the measurement is used internally to adjust the 
+detection. In Coolstep mode the measurement is used internally to adjust the
 motor current to the load.
 
 
