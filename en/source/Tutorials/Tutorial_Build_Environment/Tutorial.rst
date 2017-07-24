@@ -192,7 +192,7 @@ Before using the script a few things have to be adapted:
 6. Adapt the ``prefix3D`` path in ``ksu-config.ini`` file to ``$HOME/tf/kicad-libraries/3d/`` (absolute again!)
 7. Run the script again
 
-The script creates a ``*.step`` and a ``*.FCStd`` -`project file.
+The script creates a ``*.step`` and a ``*.FCStd`` -project file.
 
 The complete documentation can be found `here <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__.
 
