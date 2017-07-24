@@ -495,8 +495,8 @@ def make_api_bindings_links_table(bindings_info):
     }
 
     ipcon_row = {
-    'en': ' IP Connection | :ref:`API <ipcon_{0}>` | :ref:`Examples <ipcon_{0}_examples>`',
-    'de': ' IP Connection | :ref:`API <ipcon_{0}>` | :ref:`Beispiele <ipcon_{0}_examples>`'
+    'en': ' IP Connection | :ref:`API <ipcon_{0}_api>` | :ref:`Examples <ipcon_{0}_examples>`',
+    'de': ' IP Connection | :ref:`API <ipcon_{0}_api>` | :ref:`Beispiele <ipcon_{0}_examples>`'
     }
 
     device_row = {
