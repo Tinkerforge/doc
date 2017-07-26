@@ -32,9 +32,9 @@ Features
 
 * Unterstützt low-level RS485 sowie Modbus RTU Master/Slave
 * Modbus RTU Implementierung Standardkonform für alle Read/Write Funktionen von Coils und Registern
-* Unterstützt Halb- Und Voll-Duplex
+* Unterstützt Halb- und Voll-Duplex
 * Konfigurierbare Baudrate, Parität, Stoppbits und Wortlänge
-* Optionale 120 Ohm Terminierung
+* Schaltbare 120 Ohm Terminierung
 
 
 .. _rs485_bricklet_description:
@@ -141,7 +141,7 @@ Modbus Master-Modus und das andere ist im Modbus Slave-Modus.
 1. Der Modbus Master liest 4 Register mit Startadresse 2 vom Modbus Slave
    mit Adresse 8.
 2. Dazu registriert der Master den *modbus_master_read_holding_registers_response*
-   Callback welcher ausgeführt wird, wenn der Slave auf eine Anfrage des Masters
+   Callback, welcher ausgeführt wird, wenn der Slave auf eine Anfrage des Masters
    antwortet. Das Bricklet welches im Slave-Modus operiert muss sich auf den
    *modbus_slave_read_holding_registers_request* registrieren. Dieser
    wird bei Empfangen einer Anfrage aufgerufen.

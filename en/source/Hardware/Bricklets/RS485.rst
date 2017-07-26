@@ -34,7 +34,7 @@ Features
 * Modbus RTU implementation is fully compliant for reading and writing of coils and registers
 * Supports full- and half-duplex
 * Configurable baudrate, parity, stop bits and word length
-* Optional 120 Ohm termination
+* Switchable 120 Ohm termination
 
 
 .. _rs485_bricklet_description:
