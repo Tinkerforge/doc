@@ -30,11 +30,11 @@ RS485 Bricklet
 Features
 --------
 
-* Supports low-level RS485 as well as Modbus RTU Slave/Master
-* Modbus RTU implementation is fully compliant for read and write of coils and registers
+* Supports low-level RS485 as well as Modbus RTU master/slave
+* Modbus RTU implementation is fully compliant for reading and writing of coils and registers
 * Supports full- and half-duplex
 * Configurable baudrate, parity, stop bits and word length
-* A 120 ohm termination can be enabeld and disabled
+* Optional 120 Ohm termination
 
 
 .. _rs485_bricklet_description:
@@ -48,12 +48,12 @@ and receive differential data with `RS-485 <https://en.wikipedia.org/wiki/RS-485
 
 It supports full- and half-duplex and has configurable termination.
 
-You can use the Bricklet in RS485, Modbus RTU Master and Modbus RTU Slave mode.
+You can use the Bricklet in RS485, Modbus RTU master and Modbus RTU slave mode.
 
 In RS485 mode you can send and receive arbitrary data. The Modbus modes are fully
-Modbus compliant. In Modbus RTU Master mode you can write and read any coils/registers 
-from a slave. In Modbus RTU Slave mode you can provide data for coil/register reads 
-and you receive the data that a Modbus Master writes to the coils/registers.
+Modbus compliant. In Modbus RTU master mode you can write and read any coils/registers
+from a slave. In Modbus RTU slave mode you can provide data for coil/register reads
+and you receive the data that a Modbus master writes to the coils/registers.
 
 The RS485 Bricklet has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
@@ -67,11 +67,11 @@ Property                          Value
 Current Consumption               TBDmW (TBDmA at 5V, idle)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Baudrate                          100 - 2000000baud
+Baudrate                          100 - 2000000 baud
 Parity                            none / odd / even
 Stop bits                         1 / 2
 Word length                       5 / 6 / 7 / 8
-Duplex                            Half / Full
+Duplex                            half / full
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 14mm (1.57 x 1.57 x 0.55")
@@ -90,15 +90,15 @@ Resources
 Connectivity
 ------------
 
-In Full-Duplex mode you have to connect TX+, TX-, RX+, RX- and GND. 
+In full-duplex mode you have to connect TX+, TX-, RX+, RX- and GND.
 
-In Half-Duplex mode TX+ / RX+ and TX- / RX- are shorted, so you can connect 
+In half-duplex mode TX+ / RX+ and TX- / RX- are shorted, so you can connect
 either TX+ / TX- / GND or RX+ / RX- / GND. You can also use this to chain-connect
 other devices.
 
 .. image:: /Images/Bricklets/bricklet_rs485_connectivity_600.jpg
    :scale: 100 %
-   :alt: RS485 Bricklet connection possibilitiess 
+   :alt: RS485 Bricklet connection possibilities
    :align: center
    :target: ../../_images/Bricklets/bricklet_rs485_connectivity_1000.jpg
 
@@ -109,51 +109,45 @@ The DIP switch on the Bricklet can be used to configure duplex and termination
 configuration.
 
 You can configure between Full-Duplex and Half-Duplex and you can enable or disable
-a 120 ohm termination resistor.
+a 120 Ohm termination resistor.
 
 .. image:: /Images/Bricklets/bricklet_rs485_dip_800.jpg
    :scale: 100 %
-   :alt: RS485 Bricklet DIP settings 
+   :alt: RS485 Bricklet DIP settings
    :align: center
    :target: ../../_images/Bricklets/bricklet_rs485_dip_1200.jpg
 
 A legend of the different configuration possibilities can also be found in the bottom
 of the Bricklet.
 
-Modbus Functions
-----------------
+Modbus RTU Functions
+--------------------
 
-The Bricklet can be configured to operate on Modbus master/slave mode. In this
+The Bricklet can be configured to operate on Modbus RTU master/slave mode. In this
 mode Modbus specific protocol messages can be sent and received. A Modbus master
 can send a request to a Modbus slave connected to the bus. These Modbus functions
 are based on callbacks.
 
-To better understand the general concept a scenario is described:
+To better understand the general concept a scenario is described. In this
+scenario two RS485 Bricklets are present on the bus. One operating in Modbus
+master mode and the other in Modbus slave mode:
 
-- In this scenario two RS485 Bricklets are present on the bus. One operating in
-  Modbus master mode and the other in Modbus slave mode.
-
-- The Modbus master wants to read 4 registers starting from address 2 from Modbus
-  slave at address 8.
-
-- The master registers the *modbus_master_read_holding_registers_response*
-  callback which will be called when the slave sends a response to the master.
-  On the other hand the Bricklet that is operating in slave mode registers the
-  *modbus_slave_read_holding_registers_request* callback which will be invoked
-  when a corresponding request is received.
-
-- The master calls the function *modbus_master_read_holding_registers*.
-  Parameters of this function specifies the slave address, starting address and
-  the number of registers to read. This function sends the request on the bus.
-
-- On the slave side the registered callback is invoked with the parameters which
-  specifies that the master wants to read 4 registers starting from address 2.
-
-- The slave calls the function *modbus_slave_answer_read_holding_registers_request*
-  with the requested data which sends the response on the bus.
-
-- Upon receiving the response from the slave the *modbus_master_read_holding_registers_response*
-  callback is invoked on the master side with the data provided by the slave.
+1. The Modbus master wants to read 4 registers starting from address 2 from Modbus
+   slave at address 8.
+2. The master registers the *modbus_master_read_holding_registers_response*
+   callback which will be called when the slave sends a response to the master.
+   The Bricklet that is operating in slave mode registers the
+   *modbus_slave_read_holding_registers_request* callback which will be called
+   when a corresponding request is received.
+3. The master calls the function *modbus_master_read_holding_registers*.
+   Parameters of this function specifies the slave address, starting address and
+   the number of registers to read. This function sends the request on the bus.
+4. On the slave side the registered callback is invoked with the parameters which
+   specifies that the master wants to read 4 registers starting from address 2.
+5. The slave calls the function *modbus_slave_answer_read_holding_registers_request*
+   with the requested data which sends the response on the bus.
+6. Upon receiving the response from the slave the *modbus_master_read_holding_registers_response*
+   callback is called on the master side with the data provided by the slave.
 
 For details of these functions refer to the :ref:`programming interface <rs485_bricklet_programming_interface>`
 section.
@@ -175,7 +169,7 @@ Test your RS485 Bricklet
 |test_intro|
 
 |test_connect|.
-Connect the RX to the TX pins with a small cable to make the Bricklet read back its
+Connect the RX to the TX pins with a cable to make the Bricklet read back its
 own output.
 
 |test_tab|
