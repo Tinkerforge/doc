@@ -57,7 +57,7 @@ Das Bricklet hat drei Modi:
 Im RS485-Modus können beliebige Daten empfangen und gesendet werden. Die Modbus-Modi
 sind Modbus-Standardkonform. Im  Modbus RTU Master-Modus können beliebige Coils/Register
 von einem Slave gelesen und gesetzt werden. Im Modbus RTU Slave-Modus ist möglich Daten
-für Coils/Register bereitzustellen und über eine Modbus-Master Schreibeoperation
+für Coils/Register bereitzustellen und über eine Modbus-Master Schreiboperation
 zu empfangen.
 
 Das RS485 Bricklet hat einen 7 Pol Bricklet Stecker und wird

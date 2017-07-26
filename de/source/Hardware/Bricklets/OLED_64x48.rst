@@ -120,7 +120,7 @@ Benutzung
 Bricklets haben leider nur eine kleine Menge an RAM (256 Byte) und Flash
 (4096 Byte) zur Verfügung. Dies ist ist nicht genug um zum Beispiel ein
 64x48 schwarz/weiß Bild zwischenzuspeichern. Daher können wir keine
-konfortablen APIs wie ``draw_line(x1, y1, x2, y2)`` anbieten.
+komfortablen APIs wie ``draw_line(x1, y1, x2, y2)`` anbieten.
 
 Um auf das OLED Display zu zeichnen empfehlen wir eine Image Library
 zu nutzen die für eine spezifische Programmiersprache entwickelt wurde
