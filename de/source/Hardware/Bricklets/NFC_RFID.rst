@@ -122,7 +122,7 @@ nicht versehentlich den Tag zu locken.
 * Sektor 0 (Seiten 0-3) sollte nicht überschrieben werden.
 * Die letzte Seite jedes Sektors steuert den Zugriff (Seite 7, 11, 15, ..). Diese Seite sollte nur überschrieben werden, wenn man weiß was man tut.
 
-`Adafruit <http://www.adafruit.com>`__ hat eine recht gute Beschreibung der Speicherstruktur: 
+`Adafruit <https://www.adafruit.com>`__ hat eine recht gute Beschreibung der Speicherstruktur:
 `Link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
 
 **NFC Forum Typ 1:**

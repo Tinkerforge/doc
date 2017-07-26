@@ -135,7 +135,7 @@ Projekt hinzugefügt werden:
 * Füge ``ws2_32.lib;advapi32.lib;`` hinzu
 
 Ältere Versionen von Visual Studio bringen kein ``stdint.h`` mit. Eine kompatible
-Version gibt es `hier <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
+Version gibt es `hier <https://github.com/chemeris/msinttypes/blob/master/stdint.h>`__.
 Falls nötig diese herunterladen und im ``example_project/`` Ordner speichern.
 
 Das waren alle nötigen Änderungen, jetzt kann das Projekt kompiliert und

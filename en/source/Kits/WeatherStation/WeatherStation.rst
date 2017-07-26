@@ -61,7 +61,7 @@ Thus Internet of Things applications are a possible with this kit (e.g. see
 
 There are several example projects available, e.g. the measurements can be 
 displayed on the 20x4 character LCD, they can be shown on a
-website or uploaded to `Xively (Cosm) <https://xively.com/>`__. 
+website or uploaded to `Xively <https://www.xively.com/>`__.
 With the four buttons of the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` 
 it is possible to control different modes.
 
@@ -166,7 +166,7 @@ Bricklet or in the application. In some modes the buttons can be pressed
 multiple times, such that other measurements will be shows. 
 
 Finally the Xively projects lets you upload your measurements.
-At first you have to register on `xively.com <https://xively.com>`__.
+At first you have to register on `xively.com <https://www.xively.com>`__.
 Next you have to create a Feed ID, API key and four
 channels to Upload the values (AirPressure, AmbientLight, Humidity and 
 Temperature). Feed ID, API Key and the upload interval have to be configured in 
@@ -265,7 +265,7 @@ Example implementations with step-by-step instructions are available for: |write
 Internet of Things / Connect to Xively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Xively <https://xively.com/>`__ is a service that provides the possibility to
+`Xively <https://www.xively.com/>`__ is a service that provides the possibility to
 analyze and visualize the "Internet of Things". They can store a history of our
 Weather Station data and we get pretty graphs:
 
@@ -374,7 +374,7 @@ Further Enhancements
 --------------------
 
 If you modded, extended or improved your Weather Station in any way and you
-have published your results on our `Wiki <http://www.tinkerunity.org/wiki/>`__,
+have published your results on our `Wiki <https://www.tinkerunity.org/wiki/>`__,
 on your blog or similar: Please give us a notice. We would love to add a link
 to your project here!
 

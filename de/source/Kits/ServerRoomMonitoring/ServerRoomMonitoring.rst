@@ -39,7 +39,7 @@ Features
   * |bindings|
 
 * Open Source Soft- und Hardware mit `Nagios <https://www.nagios.org/>`__ und
-  `Icinga <https://www.icinga.org/>`__ Unterstützung
+  `Icinga <https://www.icinga.com/>`__ Unterstützung
 
 Beschreibung
 ------------
@@ -335,7 +335,7 @@ weitere Benutzung gespeichert werden kann.
 Serverraum-Überwachung mit Nagios oder Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Icinga <https://www.icinga.org/>`__ und `Nagios <https://www.nagios.org/>`__
+`Icinga <https://www.icinga.com/>`__ und `Nagios <https://www.nagios.org/>`__
 sind Computer Überwachungswerkzeuge. Icinga ist ein Fork von Nagios
 und gilt als rückwärtskompatibel zu Nagios. Die dokumentierten Beispiele 
 beziehen sich auf die Nagios API sind aber ebenfalls mit Icinga kompatibel.
@@ -373,7 +373,7 @@ Nagios/Icinga Beispiele.
 Sensordaten an Xively übertragen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Bei `Xively <https://xively.com/>`__ handelt es sich um einen Dienst, der die
+Bei `Xively <https://www.xively.com/>`__ handelt es sich um einen Dienst, der die
 Möglichkeit bietet das "Internet der Dinge" zu analysieren und zu visualisieren.
 Der Dienst kann dazu genutzt werden verschiedene Geräte über das Internet
 miteinander zu verbinden. Er kann eine Historie von Messwerten speichern und

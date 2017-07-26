@@ -1136,7 +1136,7 @@ Gerät. Typische USB Geräte, wie zum Beispiel WLAN oder Ethernet USB Stick,
 Webcams, Drucker, Tastaturen, Mäuse und USB Touchscreens werden unterstützt,
 sofern die nötigen Treiber auf dem RED Brick vorhanden sind.
 Im Wiki findet sich eine wachsende `Liste von USB Geräten
-<http://www.tinkerunity.org/wiki/index.php/DE/RED_USB>`__ die von Nutzern
+<https://www.tinkerunity.org/wiki/index.php/DE/RED_USB>`__ die von Nutzern
 erfolgreich am RED Brick getestet wurden.
 
 Manche Ethernet oder WLAN Sticks können direkt über den Brick Viewer
@@ -1317,14 +1317,14 @@ Historie
 Die Entwicklung des RED Bricks hat fast ein Jahr gedauert und ist in
 verschiedenen Blog Posts dokumentiert:
 
-* `Tinkerforge goes Stand-Alone aka RED Brick <http://www.tinkerforge.com/de/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
-* `RED Brick Leiterplatten angekommen <http://www.tinkerforge.com/de/blog/2014/4/10/red-brick-leiterplatten-angekommen>`__
-* `Neuigkeiten zum RED Brick <http://www.tinkerforge.com/de/blog/2014/5/13/neuigkeiten-zum-red-brick>`__
-* `RED Brick: Tut es? Oder tut es nicht? <http://www.tinkerforge.com/de/blog/2014/5/21/red-brick:-tut-es-oder-tut-es-nicht>`__
-* `RED Brick Software-Infrastruktur <http://www.tinkerforge.com/de/blog/2014/6/20/red-brick-software-infrastruktur>`__
-* `RED Brick im EMV Labor <http://www.tinkerforge.com/de/blog/2014/8/28/red-brick-im-emv-labor>`__
-* `RED Brick Zustandsbericht <http://www.tinkerforge.com/de/blog/2014/10/15/neuigkeiten-zum-red-brick>`__
-* `RED Brick, der Countdown läuft <http://www.tinkerforge.com/de/blog/2014/11/12/red-brick-der-countdown-laeuft>`__
+* `Tinkerforge goes Stand-Alone aka RED Brick <https://www.tinkerforge.com/de/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
+* `RED Brick Leiterplatten angekommen <https://www.tinkerforge.com/de/blog/2014/4/10/red-brick-leiterplatten-angekommen>`__
+* `Neuigkeiten zum RED Brick <https://www.tinkerforge.com/de/blog/2014/5/13/neuigkeiten-zum-red-brick>`__
+* `RED Brick: Tut es? Oder tut es nicht? <https://www.tinkerforge.com/de/blog/2014/5/21/red-brick:-tut-es-oder-tut-es-nicht>`__
+* `RED Brick Software-Infrastruktur <https://www.tinkerforge.com/de/blog/2014/6/20/red-brick-software-infrastruktur>`__
+* `RED Brick im EMV Labor <https://www.tinkerforge.com/de/blog/2014/8/28/red-brick-im-emv-labor>`__
+* `RED Brick Zustandsbericht <https://www.tinkerforge.com/de/blog/2014/10/15/neuigkeiten-zum-red-brick>`__
+* `RED Brick, der Countdown läuft <https://www.tinkerforge.com/de/blog/2014/11/12/red-brick-der-countdown-laeuft>`__
 
 
 .. _red_brick_programming_interface:

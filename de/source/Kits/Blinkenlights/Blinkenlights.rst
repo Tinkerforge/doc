@@ -514,6 +514,6 @@ Zusätzliche Erweiterungen
 -------------------------
 
 Mods, Erweiterungen und Verbesserungen des Blinkenlight Kits veröffentlicht in
-unserem `Wiki <http://www.tinkerunity.org/wiki/>`__,
+unserem `Wiki <https://www.tinkerunity.org/wiki/>`__,
 in einem Blog oder ähnlich würden hier gerne vorstellen. Bitte kontaktiert uns und 
 wir verlinken es hier!

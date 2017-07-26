@@ -21,7 +21,7 @@ Beispiele
 ---------
 
 Der folgende Beispielcode ist `Public Domain (CC0 1.0)
-<http://creativecommons.org/publicdomain/zero/1.0/deed.de>`__.
+<https://creativecommons.org/publicdomain/zero/1.0/deed.de>`__.
 
 Enumerate
 ^^^^^^^^^

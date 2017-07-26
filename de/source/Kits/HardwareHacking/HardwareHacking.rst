@@ -358,7 +358,7 @@ wir das Garagentor über eine kleine App mit dem Smartphone steuern können,
 so dass die Fernbedienung nicht mehr mitgenommen werden muss.
 
 Dieses Projekt basiert auf diesem
-`Wiki-Projekt <http://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__.
+`Wiki-Projekt <https://www.tinkerunity.org/wiki/index.php/EN/Projects/Android_Garagedoor_Control>`__.
 
 .. image:: /Images/Kits/hardware_hacking_garage_remote_finished_350.jpg
    :scale: 100 %

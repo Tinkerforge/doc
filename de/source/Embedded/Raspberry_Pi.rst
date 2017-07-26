@@ -75,8 +75,7 @@ Soft-Float Debian (armel)
 Wurde Debian **ohne** Hardware Floating Point Unit Unterstützung installiert,
 so muss der :ref:`Brick Daemon <brickd>` selbst kompiliert werden.
 
-Als erstes muss der Quelltext von der 
-`Download Seite <http://www.tinkerforge.com/en/doc/Downloads.html#tools>`__
+Als erstes muss der Quelltext von der :ref:`Download Seite <downloads_tools>`
 heruntergeladen werden und im ``home`` Verzeichnis platziert werden.
 
 Danach müssen folgende Schritte ausgeführt werden::

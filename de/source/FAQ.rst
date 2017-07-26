@@ -110,7 +110,7 @@ angeschlossen sind.
 
 Treiberupdates gibt es auf `usb3-drivers.com
 <http://www.usb3-drivers.com/renesas-usb3-drivers.html>`__ und `computerbase.de
-<http://www.computerbase.de/downloads/treiber/mainboards/usb-3.0-host-controller-treiber/>`__.
+<https://www.computerbase.de/downloads/treiber/mainboards/usb-3.0-host-controller-treiber/>`__.
 
 
 Eine Extension wird im Brick Viewer nicht angezeigt

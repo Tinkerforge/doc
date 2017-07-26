@@ -81,7 +81,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/step-down-powersupply/raw/master/hardware/step-down-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/step_down_powersupply_dimensions.png>`__)
 * Project design files (`Download <https://github.com/Tinkerforge/step-down-powersupply/zipball/master>`__)
-* 3D model (`View online <http://a360.co/2s95Th9>`__ | Download: `STEP <http://download.tinkerforge.com/3d/power_supplies/step_down/step-down.step>`__, `FreeCAD <http://download.tinkerforge.com/power_supplies/step_down/step-down.FCStd>`__)
+* 3D model (`View online <http://a360.co/2s95Th9>`__ | Download: `STEP <http://download.tinkerforge.com/3d/power_supplies/step_down/step-down.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/power_supplies/step_down/step-down.FCStd>`__)
 
 
 Connectivity

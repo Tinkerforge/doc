@@ -6,7 +6,7 @@
 Server Room Monitoring with Nagios or Icinga
 ============================================
 
-`Icinga <https://www.icinga.org/>`__ and `Nagios <https://www.nagios.org/>`__
+`Icinga <https://www.icinga.com/>`__ and `Nagios <https://www.nagios.org/>`__
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
 said to be backward compatible to Nagios. In the following examples we are
 referring to the Nagios API to be also compatible with Icinga.
@@ -33,7 +33,7 @@ Basic Nagios/Icinga Script
 
 For this example we use the :ref:`Python bindings <api_bindings_python>`.
 The script (`download <https://raw.githubusercontent.com/Tinkerforge/server-room-monitoring/master/nagios_icinga/check_tf_temp.py>`__)
-is based on a `Wiki project <http://www.tinkerunity.org/wiki/index.php/EN/Projects/IT_Infrastructure_Monitoring_-_Nagios_Plugin>`__
+is based on a `Wiki project <https://www.tinkerunity.org/wiki/index.php/EN/Projects/IT_Infrastructure_Monitoring_-_Nagios_Plugin>`__
 and uses the a Temperature or PTC Bricklet to measure the temperature
 and to warn if high temperatures are detected.
 

@@ -50,7 +50,7 @@ Programmierung genutzt zu werden.
 In Hardware Version 1.2 wurde der D-Sub 9 Anschluss durch einen Mini-USB Anschluss
 und einen Silicon Labs CP2104 USB-nach-Seriell Wandler ersetzt. Dieser Wandler
 benötigt einen extra Treiber der von der `Silicon Labs
-<https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>`__
+<https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers>`__
 Webseite heruntergeladen werden kann.
 
 

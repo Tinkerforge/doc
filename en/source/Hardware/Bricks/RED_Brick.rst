@@ -1108,7 +1108,7 @@ protected. Typical USB devices such as Wi-Fi or Ethernet USB adapter, webcams,
 printers, keyboards, mouses or USB touch screens are supported, if the required
 drivers are present on the RED Brick.
 The wiki has a growing `list of USB devices
-<http://www.tinkerunity.org/wiki/index.php/EN/RED_USB>`__ that users have
+<https://www.tinkerunity.org/wiki/index.php/EN/RED_USB>`__ that users have
 successfully tested with a RED Brick.
 
 Some Ethernet or Wi-Fi USB adapters can be directly configured with the Brick Viewer.
@@ -1283,14 +1283,14 @@ History
 The development of the RED Brick took almost a year and is documented in
 several blog posts:
 
-* `Tinkerforge goes Stand-Alone aka RED Brick <http://www.tinkerforge.com/en/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
-* `RED Brick circuit boards arrived <http://www.tinkerforge.com/en/blog/2014/4/10/red-brick-circuit-boards-arrived>`__
-* `RED Brick news <http://www.tinkerforge.com/en/blog/2014/5/13/red-brick-news>`__
-* `RED Brick: Does it work? <http://www.tinkerforge.com/en/blog/2014/5/23/red-brick:-does-it-work>`__
-* `RED Brick Software Infrastructure <http://www.tinkerforge.com/en/blog/2014/6/20/red-brick-software-infrastructure>`__
-* `RED Brick in EMC laboratory <http://www.tinkerforge.com/en/blog/2014/8/28/red-brick-in-emc-laboratory>`__
-* `RED Brick status report <http://www.tinkerforge.com/en/blog/2014/10/16/red-brick-status-report>`__
-* `The RED Brick Countdown has started <http://www.tinkerforge.com/en/blog/2014/11/12/the-red-brick-countdown-has-started>`__
+* `Tinkerforge goes Stand-Alone aka RED Brick <https://www.tinkerforge.com/en/blog/2014/2/21/tinkerforge-goes-stand-alone-aka-red-brick>`__
+* `RED Brick circuit boards arrived <https://www.tinkerforge.com/en/blog/2014/4/10/red-brick-circuit-boards-arrived>`__
+* `RED Brick news <https://www.tinkerforge.com/en/blog/2014/5/13/red-brick-news>`__
+* `RED Brick: Does it work? <https://www.tinkerforge.com/en/blog/2014/5/23/red-brick:-does-it-work>`__
+* `RED Brick Software Infrastructure <https://www.tinkerforge.com/en/blog/2014/6/20/red-brick-software-infrastructure>`__
+* `RED Brick in EMC laboratory <https://www.tinkerforge.com/en/blog/2014/8/28/red-brick-in-emc-laboratory>`__
+* `RED Brick status report <https://www.tinkerforge.com/en/blog/2014/10/16/red-brick-status-report>`__
+* `The RED Brick Countdown has started <https://www.tinkerforge.com/en/blog/2014/11/12/the-red-brick-countdown-has-started>`__
 
 
 .. _red_brick_programming_interface:

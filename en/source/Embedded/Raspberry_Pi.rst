@@ -72,8 +72,7 @@ Soft-Float Debian (armel)
 If you have installed an Debian **without** hardware floating point unit support,
 you have to compile :ref:`Brick Daemon <brickd>` from source.
 
-First you have to download the source code from the 
-`download page <http://www.tinkerforge.com/en/doc/Downloads.html#tools>`__
+First you have to download the source code from the :ref:`download page <downloads_tools>`
 and put it under the ``home`` directory.
 
 After this you have to execute the following steps::

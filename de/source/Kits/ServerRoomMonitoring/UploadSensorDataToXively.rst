@@ -6,7 +6,7 @@
 Sensordaten nach Xively hochladen
 =================================
 
-Bei `Xively <https://xively.com/>`__ handelt es sich um einen Dienst, der die
+Bei `Xively <https://www.xively.com/>`__ handelt es sich um einen Dienst, der die
 Möglichkeit bietet das "Internet der Dinge" zu analysieren und zu visualisieren.
 Der Dienst kann dazu genutzt werden verschiedene Geräte über das Internet
 miteinander zu verbinden. Er kann eine Historie von Messwerten speichern und
@@ -32,7 +32,7 @@ Schritt 1: Erstelle und Konfiguriere einen Xively Account
 ---------------------------------------------------------
 
 Um Xively benutzen zu können, muss zuerst ein Xively Account angelegt werden.
-Dazu muss `xively.com <https://xively.com>`__ besucht werden und sich
+Dazu muss `xively.com <https://www.xively.com>`__ besucht werden und sich
 eingeloggt werden.
 
 Klicke auf "+ Device" und gebe eine Beschreibung des Devices ein.

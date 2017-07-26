@@ -21,7 +21,7 @@ Beispiele
 ---------
 
 Der folgende Beispielcode ist `Public Domain (CC0 1.0)
-<http://creativecommons.org/publicdomain/zero/1.0/deed.de>`__.
+<https://creativecommons.org/publicdomain/zero/1.0/deed.de>`__.
 
 Enumerate (Node.js)
 ^^^^^^^^^^^^^^^^^^^
@@ -47,7 +47,7 @@ Enumerate (HTML)
 ^^^^^^^^^^^^^^^^
 
 `Download (ExampleEnumerate.html) <https://github.com/Tinkerforge/generators/raw/master/javascript/ExampleEnumerate.html>`__,
-`Test (ExampleEnumerate.html) <http://www.tinkerforge.com/de/doc/Software/Examples/JavaScript/IPConnection_JavaScript_ExampleEnumerate.html>`__
+`Test (ExampleEnumerate.html) <https://www.tinkerforge.com/de/doc/Software/Examples/JavaScript/IPConnection_JavaScript_ExampleEnumerate.html>`__
 
 .. literalinclude:: IPConnection_JavaScript_ExampleEnumerate.html
  :language: html
@@ -58,7 +58,7 @@ Authenticate (HTML)
 ^^^^^^^^^^^^^^^^^^^
 
 `Download (ExampleAuthenticate.html) <https://github.com/Tinkerforge/generators/raw/master/javascript/ExampleAuthenticate.html>`__,
-`Test (ExampleAuthenticate.html) <http://www.tinkerforge.com/de/doc/Software/Examples/JavaScript/IPConnection_JavaScript_ExampleAuthenticate.html>`__
+`Test (ExampleAuthenticate.html) <https://www.tinkerforge.com/de/doc/Software/Examples/JavaScript/IPConnection_JavaScript_ExampleAuthenticate.html>`__
 
 .. literalinclude:: IPConnection_JavaScript_ExampleAuthenticate.html
  :language: html

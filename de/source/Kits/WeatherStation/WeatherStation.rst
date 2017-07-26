@@ -62,7 +62,7 @@ sind somit möglich (siehe z.B. das
 
 Für die Wetterstation sind verschiedene Beispielprojekte verfügbar, so können 
 die Messwerte auf einem 20x4 Zeichen LCD angezeigt, 
-auf einer Webseite oder z.B. auf `Xively (Cosm) <https://xively.com/>`__ 
+auf einer Webseite oder z.B. auf `Xively <https://www.xively.com/>`__
 hochgeladen werden. Über vier Taster auf dem 
 :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` kann zwischen 
 verschiedenen Modi umgeschaltet werden.
@@ -168,7 +168,7 @@ Die Anzeige kann hierbei über die vier Taster des LCD 20x4 Bricklets oder
 ein mehrfaches Drücken des Tasters der Sensor geändert werden.
 
 Zum Schluss bietet das Xively Projekt die Möglichkeit die Messwerte 
-hochzuladen. Dazu muss sich auf `xively.com <https://xively.com>`__
+hochzuladen. Dazu muss sich auf `xively.com <https://www.xively.com>`__
 registriert werden. Anschließend können dort Feed ID und API Key 
 sowie für jeden Sensor ein Channel angelegt werden 
 (AirPressure, AmbientLight, Humidity und Temperature).
@@ -268,7 +268,7 @@ Beispielanwendungen mit Schritt-für-Schritt Anleitungen existieren für: |write
 Internet der Dinge / Xively Anbindung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Xively <https://xively.com/>`__ ist ein Service der die Möglichkeit bietet
+`Xively <https://www.xively.com/>`__ ist ein Service der die Möglichkeit bietet
 das "Internet der Dinge" zu analysieren und zu visualisieren. Dieser kann eine
 Historie der Wetterstationsdaten speichern, sowie nette Graphen zeichnen:
 

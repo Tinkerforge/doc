@@ -40,7 +40,7 @@ Features
   * |bindings|
 
 * Open Source Soft- and Hardware with `Nagios <https://www.nagios.org/>`__ and
-  `Icinga <https://www.icinga.org/>`__ support
+  `Icinga <https://www.icinga.com/>`__ support
 
 Description
 -----------
@@ -327,7 +327,7 @@ degree Celsius and how to save it in a variable for further use.
 Server Room Monitoring with Nagios or Icinga
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Icinga <https://www.icinga.org/>`__ and `Nagios <https://www.nagios.org/>`__
+`Icinga <https://www.icinga.com/>`__ and `Nagios <https://www.nagios.org/>`__
 are computer system monitoring tools. Icinga is a fork of Nagios and is 
 said to be backward compatible to Nagios. In the following examples we are
 referring to the Nagios API to be also compatible with Icinga.
@@ -365,7 +365,7 @@ Nagios/Icinga examples.
 Upload Sensor Data to Xively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Xively <https://xively.com/>`__ is a service that provides the possibility to
+`Xively <https://www.xively.com/>`__ is a service that provides the possibility to
 analyze and visualize the "Internet of Things". It can be used to interconnect
 different devices over the Internet and can store a history of 
 measured values and can display it with pretty graphs.
@@ -392,7 +392,7 @@ Further Enhancements
 
 If you have modded, extended or improved the kit
 in any way and you have published your results on our 
-`Wiki <http://www.tinkerunity.org/wiki/>`__, on your blog or similar: 
+`Wiki <https://www.tinkerunity.org/wiki/>`__, on your blog or similar:
 Please give us a notice. We would love to add a link to your project here!
 
 

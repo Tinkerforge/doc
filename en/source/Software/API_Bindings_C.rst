@@ -130,7 +130,7 @@ Then ``ws2_32.lib`` (WinSock2) and ``advapi32.lib`` have to included by clicking
 * Add ``ws2_32.lib;advapi32.lib;``
 
 Older version of Visual Studio don't come with ``stdint.h``. A compatible
-version can be found `here <http://msinttypes.googlecode.com/svn/trunk/stdint.h>`__.
+version can be found `here <https://github.com/chemeris/msinttypes/blob/master/stdint.h>`__.
 If necessary download it to the ``example_project/`` folder.
 
 That's it, now the project can be compiled an executed!

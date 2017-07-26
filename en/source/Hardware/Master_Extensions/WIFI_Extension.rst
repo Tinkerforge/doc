@@ -26,7 +26,7 @@ WIFI Master Extension
  The WIFI Extension has been superseded by the superior :ref:`WIFI Extension 2.0
  <wifi_v2_extension>`. The old WIFI Extension is still available, but you should
  only use it if you need an external antenna connector. See the `blog post
- <http://www.tinkerforge.com/en/blog/2016/6/30/wifi-extension-2-0-available>`__
+ <https://www.tinkerforge.com/en/blog/2016/6/30/wifi-extension-2-0-available>`__
  about the WIFI Extension 2.0 for a more detailed comparison.
 
 

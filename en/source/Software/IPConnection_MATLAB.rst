@@ -21,7 +21,7 @@ Examples
 --------
 
 The example code below is `Public Domain (CC0 1.0)
-<http://creativecommons.org/publicdomain/zero/1.0/>`__.
+<https://creativecommons.org/publicdomain/zero/1.0/>`__.
 
 Enumerate (MATLAB)
 ^^^^^^^^^^^^^^^^^^

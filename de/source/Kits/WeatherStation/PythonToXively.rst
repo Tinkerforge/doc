@@ -28,7 +28,7 @@ Schritt 1: Erstelle und Konfiguriere einen Xively Account
 ---------------------------------------------------------
 
 Um Xively benutzen zu können, muss zuerst ein Xively Account angelegt werden.
-Dazu muss `xively.com <https://xively.com>`__ besucht werden und sich
+Dazu muss `xively.com <https://www.xively.com>`__ besucht werden und sich
 eingeloggt werden.
 
 Klicke auf "+ Device" und gebe eine Beschreibung des Devices ein.

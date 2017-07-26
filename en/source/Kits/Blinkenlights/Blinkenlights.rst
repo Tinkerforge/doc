@@ -491,6 +491,6 @@ Further Enhancements
 --------------------
 
 If you modded, extended or improved your Blinkenlights installation in any way and you
-have published your results on our `Wiki <http://www.tinkerunity.org/wiki/>`__,
+have published your results on our `Wiki <https://www.tinkerunity.org/wiki/>`__,
 on your blog or similar: Please give us a notice. We would love to add a link
 to your project here!

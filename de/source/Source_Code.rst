@@ -20,7 +20,7 @@ Um es der Community einfach zu machen Patches einzusenden und Probleme zu melden
 sind alle `Tinkerforge Projekte <https://github.com/Tinkerforge>`__ auf GitHub
 gehostet.
 
-Weiterführenden Informationen über git sind `hier <http://git-scm.com/>`__ zu
+Weiterführenden Informationen über git sind `hier <https://git-scm.com/>`__ zu
 finden. Unsere Projekte können wie folgt geclonet werden::
 
  git clone git://github.com/Tinkerforge/PROJECT.git

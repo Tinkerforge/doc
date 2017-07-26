@@ -48,7 +48,7 @@ of Bricks or Bricklets. It does not add any features for PC based programming.
 In hardware version 1.2 the D-Sub 9 connector got replaced with a Mini-USB
 connector and a Silicon Labs CP2104 USB-to-serial converter. This
 converter requires an extra driver that can be downloaded from the
-`Silicon Labs <https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx>`__
+`Silicon Labs <https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers>`__
 website.
 
 

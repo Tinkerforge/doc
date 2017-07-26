@@ -384,7 +384,7 @@ Interaktion mit anderen Dingen
 Das Kit kann mit den verschiedensten anderen "Dingen" kommunizieren.
 Am einfachsten lassen sich andere Bricks und Bricklets des Baukastensystems 
 nutzen. Über produktspezifische Schnittstellen oder Online-Services wie
-`Xively <https://xively.com/>`__, `Cumulocity <http://www.cumulocity.com/>`__,
+`Xively <https://www.xively.com/>`__, `Cumulocity <http://www.cumulocity.com/>`__,
 `Carriots <http://www.carriots.com/>`__, oder ähnliche lässt sich aber auch ohne 
 viel Aufwand mit anderen Geräten interagieren. Nachfolgend stellen wir einige 
 Beispiele vor:

@@ -270,7 +270,7 @@ def make_download_bindings_table():
 """
     }
 
-    row = ' `{0} <http://www.tinkerforge.com/' + lang + '/doc/Software/API_Bindings_{2}.html>`__ | `{4} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{5}_{6}_{7}.zip>`__ | {5}.{6}.{7} | `{3} <http://download.tinkerforge.com/bindings/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
+    row = ' :ref:`{0} <api_bindings_{1}>` | `{3} <http://download.tinkerforge.com/bindings/{1}/tinkerforge_{1}_bindings_{4}_{5}_{6}.zip>`__ | {4}.{5}.{6} | `{2} <http://download.tinkerforge.com/bindings/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/generators/master/{1}/changelog.txt>`__'
     rows = []
 
     for bindings_info in bindings_infos:
@@ -279,7 +279,6 @@ def make_download_bindings_table():
 
         rows.append(row.format(bindings_info.display_name,
                                bindings_info.url_part,
-                               bindings_info.software_doc_suffix,
                                archive[lang],
                                bindings_and_examples[lang],
                                *bindings_versions[bindings_info.url_part]))

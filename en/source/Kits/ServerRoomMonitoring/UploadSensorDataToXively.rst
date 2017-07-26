@@ -6,7 +6,7 @@
 Upload Sensor Data to Xively
 ============================
 
-`Xively <https://xively.com/>`__ is a service that provides the possibility to
+`Xively <https://www.xively.com/>`__ is a service that provides the possibility to
 analyze and visualize the "Internet of Things". It can be used to interconnect
 different devices over the Internet and can store a history of 
 measured values and can display it with pretty graphs.
@@ -29,7 +29,7 @@ Step 1: Create and configure Xively account
 -------------------------------------------
 
 To use Xively, we first have to create a Xively account.
-Go to `xively.com <https://xively.com>`__ and sign up.
+Go to `xively.com <https://www.xively.com>`__ and sign up.
 
 Click on "+ Device" and add a description of your device.
 Next add a new channel ("+ Add Channel").
