@@ -43,7 +43,7 @@ Description
 The RS232 :ref:`Bricklet <primer_bricklets>` can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the capability to send
 and receive serial data with `RS-232 <https://en.wikipedia.org/wiki/RS-232>`__
-3.3V TTL signal level to comminucate with other serial devices.
+3.3V TTL signal level to communicate with other serial devices.
 
 
 Technical Specifications
@@ -164,7 +164,7 @@ is available.
 
 The assembly is easiest if you follow the following steps:
 
-* Screw spacers to the Bricklet with a washer on top of each mouting hole,
+* Screw spacers to the Bricklet with a washer on top of each mounting hole,
 * screw top plate to top spacers,
 * build up side plates,
 * plug side plates into top plate and

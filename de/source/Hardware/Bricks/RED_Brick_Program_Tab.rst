@@ -473,7 +473,7 @@ Visual Basic .NET
 Die ``Tinkerforge.dll`` ist unter ``/usr/lib/`` für Visual Basic .NET verfügbar und
 kann direkt von Mono gefunden werden. Jedes Visual Basic .NET Programm, dass die
 ``Tinkerforge.dll`` als Referenz nutzt, kann also ohne Angabe der ``Tinkerforge.dll`` im
-zuvorigen Schritt (Schritt 2) kompiliert werden.
+vorigen Schritt (Schritt 2) kompiliert werden.
 
 * Mono Version: Aktuell ist nur eine Mono Version installiert.
 * Start Mode: Es wird momentan nur *Executable* unterstützt.

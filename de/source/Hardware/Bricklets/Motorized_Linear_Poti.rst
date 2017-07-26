@@ -60,14 +60,14 @@ Gewicht                           TBDg
 ================================  ============================================================
 
 
-
-Resources
----------
+Ressourcen
+----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/motorized-linear-poti-bricklet/raw/master/hardware/motorized-linear-poti-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/motorized_linear_poti_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/motorized-linear-poti-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+
 
 .. _motorized_linear_poti_bricklet_test:
 
@@ -89,10 +89,11 @@ Wenn alles wie erwartet funktioniert ... TBD.
 
 |test_pi_ref|
 
+
 .. _motorized_linear_poti_bricklet_case:
 
-Case
-----
+Gehäuse
+-------
 
 ..
 	Ein `laser-geschnittenes Gehäuse für das Motorized Linear Poti Bricklet 
@@ -100,7 +101,7 @@ Case
 
 	.. image:: /Images/Cases/bricklet_motorized_linear_poti_case_350.jpg
 	   :scale: 100 %
-	   :alt: Case for Motorized Linear Poti Bricklet
+	   :alt: Gehäuse für Motorized Linear Poti Bricklet
 	   :align: center
 	   :target: ../../_images/Cases/bricklet_motorized_linear_poti_case_1000.jpg
 
@@ -110,7 +111,7 @@ Case
 
 	.. image:: /Images/Exploded/motorized_linear_poti_exploded_350.png
 	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Motorized Linear Poti Bricklet
+	   :alt: Explosionszeichnung für Motorized Linear Poti Bricklet
 	   :align: center
 	   :target: ../../_images/Exploded/motorized_linear_poti_exploded.png
 

@@ -34,7 +34,7 @@ You can choose the actions of the installer:
   Bricks (only Windows XP, Vista, 7). This driver is required if you want to
   use Bricks connected to USB.
 * **Install/Update RED Brick Driver** will install/update the USB driver
-  for RED Bricks (nur Windows XP, Vista, 7). This driver is required if you
+  for RED Bricks (only Windows XP, Vista, 7). This driver is required if you
   want to use RED Bricks connected to USB.
 * **Install/Update RED Brick Serial Console Driver** will install/update
   the driver for the serial console of RED Bricks. This driver is required if
@@ -59,7 +59,7 @@ Manual Driver Installation
 --------------------------
 
 The Brick Daemon installer automatically installs all necessary drivers, except
-the corresponding step were deselected toring installation. There are rare cases
+the corresponding step were deselected during installation. There are rare cases
 in which the automatic driver installation fails. In all this cases it can be
 necessary to manually install the required drivers.
 

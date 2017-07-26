@@ -91,7 +91,7 @@ The Analog Out Bricklet 2.0 has five terminals. A DC voltage source (maximum
 The Bricklet uses this input voltage to created the configurable output voltage
 for the VOUT terminal. The 5V terminal is an additional output with fixed 5V
 you can use to power things. It can also be connected to the VIN terminal to
-produce output voltages up to 5V at the VOUT terminal withou the need for an
+produce output voltages up to 5V at the VOUT terminal without the need for an
 additional external power supply.
 
 .. image:: /Images/Bricklets/bricklet_analog_out_v2_horizontal_350.jpg

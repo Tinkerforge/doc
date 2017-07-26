@@ -38,7 +38,7 @@ Beschreibung
 ------------
 
 Mit dem Laser Range Finder :ref:`Bricklet <primer_bricklets>` können
-:ref:`Bricks <primer_bricks>` Entfernungen und Geschwindingkeiten messen.
+:ref:`Bricks <primer_bricks>` Entfernungen und Geschwindigkeiten messen.
 Dies wird mit einer `Laufzeitmessung <https://de.wikipedia.org/wiki/Laufzeitmessung>`__
 von Laser-Pulsen bewerkstelligt.
 

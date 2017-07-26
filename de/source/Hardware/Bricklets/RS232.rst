@@ -168,7 +168,7 @@ Ein `laser-geschnittenes Gehäuse für das RS232 Bricklet
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
 * Schraube Abstandshalter an das Bricklet mit einer Unterlegscheibe an der
-  Oberseite jeder Besfestigungsbohrung,
+  Oberseite jeder Befestigungsbohrung,
 * schraube Oberteil auf obere Abstandshalter,
 * baue Seitenteile auf,
 * stecke zusammengebaute Seitenteile in Oberteil und

@@ -91,8 +91,8 @@ Gewicht                                      12g
 ===========================================  =============================================================================
 
 
-Resourcen
----------
+Ressourcen
+----------
 
 * ESP-WROOM-02 (`Homepage <https://espressif.com/en/products/hardware/esp-wroom-02/overview>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-extension-schematic.pdf>`__)
@@ -405,7 +405,7 @@ Wichtige Teile des Mesh-Netzwerks:
   Der Mesh-Gateway ist ein :ref:`Brick Daemon <brickd>` der den Zugangspunkt
   der API Bindings zum Mesh-Netzwerk bereitstellt.
 
-Die folgende Illustaration stellt die Topologie eines Mesh-Netzwerks dar.
+Die folgende Illustration stellt die Topologie eines Mesh-Netzwerks dar.
 
 .. image:: /Images/Extensions/extension_wifi2_mesh_example.jpg
   :scale: 100 %

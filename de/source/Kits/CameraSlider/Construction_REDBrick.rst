@@ -38,7 +38,7 @@ Um die Stützen für den Touchscreen anbringen zu können, müssen vier 6mm
 Schrauben am Rahmen angebracht werden:
 
 * Löse die unteren selbstsichernden Muttern, die das stapel-seitige Beinpaar an
-  den langen MakerBeams the Rahmens befestigt.
+  den langen MakerBeams des Rahmens befestigt.
 * Trenne das Beinpaar soweit vom Rest des Rahmens, dass die langen MakerBeams
   rund 1cm vom Querbalken des Beinpaares entfernt sind.
 * Schiebe jeweils zwei 6mm Schrauben in die Seiten der langen MakerBeams hinein.
@@ -65,7 +65,7 @@ Wiederhole diese Schritte für einen zweiten MakerBeam.
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_red_brick_step2_1500.jpg
 
-Bringe beide MakerBeams am Rahem an:
+Bringe beide MakerBeams am Rahmen an:
 
 * Befestige die MakerBeams mit ihren 45° Verbindern am Rahmen mit jeweils
   zwei selbstsichernden Muttern. Achte darauf, dass die MakerBeams in Richtung
@@ -116,7 +116,7 @@ Alle vier vorbereiteten MakerBeams bilden den Halter:
 * Schiebe vier 6mm Schrauben in die Seite einen der vorbereiteten 60mm
   MakerBeams.
 * Befestige die Eck-Verbinder der vorbereiteten 150mm MakerBeams am
-  vorbereiteten 60mm MakerBeams mit jeweils zeri selbstsichernden Muttern.
+  vorbereiteten 60mm MakerBeams mit jeweils zwei selbstsichernden Muttern.
   Achte darauf, dass die 12mm Schrauben der 150mm MakerBeams und die
   Eck-Verbinder der 60mm MakerBeams von einander weg zeigen.
 

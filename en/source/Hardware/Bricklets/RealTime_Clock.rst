@@ -41,7 +41,7 @@ Description
 The battery-backed Real-Time Clock :ref:`Bricklet <primer_bricklets>` can be
 used to extend the features of :ref:`Bricks <primer_bricks>` with the
 capability to accurately keep date and time over long time periods even if
-the Brick is not constanly powered.
+the Brick is not constantly powered.
 
 This Bricklet can also be used to keep the system time of a :ref:`RED Brick
 <red_brick>` (using this `example program <https://github.com/Tinkerforge/red-brick/tree/master/programs/rtc_time>`__)

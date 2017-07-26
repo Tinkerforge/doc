@@ -190,7 +190,7 @@ folgende Reihenfolge eingehalten werden:
 * Stecke Vorderteil des Gehäuses in Unterteil
 * Schraube Master Brick und Remote Switch Bricklet zur Unterseite
 * Klebe rutschfeste Gummifüsse an Unterseite
-* Verbinde Master Brick udn Remote Switch Bricklet mit Bricklet Kabel
+* Verbinde Master Brick und Remote Switch Bricklet mit Bricklet Kabel
 * Schraube Antenne an Remote Switch Bricklet
 
 .. image:: /Images/Kits/iot_construction_step2_350.jpg
@@ -283,7 +283,7 @@ Typ C (Schalter):
 **Steuern eines Geräts**
 
 Geräte können durch Klicken auf den jeweiligen Eintrag in der Liste
-gesteuert werden. Als Beispiel nachfolgend die Steuerungssseite eines
+gesteuert werden. Als Beispiel nachfolgend die Steuerungsseite eines
 Typ A Schalters.
 
 .. image:: /Images/Kits/iot_website_iot_remote_switch_350.jpg

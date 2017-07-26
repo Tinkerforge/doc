@@ -60,7 +60,6 @@ Weight                            TBDg
 ================================  ============================================================
 
 
-
 Resources
 ---------
 
@@ -68,6 +67,7 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/motorized_linear_poti_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/motorized-linear-poti-bricklet/zipball/master>`__)
 * 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+
 
 .. _motorized_linear_poti_bricklet_test:
 

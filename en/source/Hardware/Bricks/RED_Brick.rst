@@ -207,9 +207,9 @@ Upon user confirmation the update process will start.
    :alt: Screenshot of Tinkerforge software update progress.
    :align: center
 
-The only requirement for this update feature is a working internet connection
+The only requirement for this update feature is a working Internet connection
 on the system on which the Brick Viewer is running. The RED Brick doesn't require
-an active internet connection for the update feature to work.
+an active Internet connection for the update feature to work.
 
 Overview Tab (Status Information)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

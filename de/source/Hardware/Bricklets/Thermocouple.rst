@@ -144,8 +144,8 @@ ist verfügbar.
 Thermoelementtypen
 ------------------
 
-Die verschiedenenen Thermoelementtypen unterscheiden sich durch die Metalle
-aus denen sie gefertigt sind. Im Optiomalfall ist der Anschluss des
+Die verschiedenen Thermoelementtypen unterscheiden sich durch die Metalle
+aus denen sie gefertigt sind. Im optimalen Fall ist der Anschluss des
 Thermoelements am Bricklet aus den gleichen Metallen gefertigt wie das
 Thermoelement selbst.
 

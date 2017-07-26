@@ -60,14 +60,14 @@ Gewicht                           TBDg
 ================================  ============================================================
 
 
-
-Resources
----------
+Ressourcen
+----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/dual-relay-v2-bricklet/raw/master/hardware/dual-relay-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/dual_relay_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/dual-relay-v2-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+
 
 .. _dual_relay_v2_bricklet_test:
 
@@ -89,10 +89,11 @@ Wenn alles wie erwartet funktioniert ... TBD.
 
 |test_pi_ref|
 
+
 .. _dual_relay_v2_bricklet_case:
 
-Case
-----
+Gehäuse
+-------
 
 ..
 	Ein `laser-geschnittenes Gehäuse für das Dual Relay Bricklet 2.0 
@@ -100,7 +101,7 @@ Case
 
 	.. image:: /Images/Cases/bricklet_dual_relay_v2_case_350.jpg
 	   :scale: 100 %
-	   :alt: Case for Dual Relay Bricklet 2.0
+	   :alt: Gehäuse für Dual Relay Bricklet 2.0
 	   :align: center
 	   :target: ../../_images/Cases/bricklet_dual_relay_v2_case_1000.jpg
 
@@ -110,7 +111,7 @@ Case
 
 	.. image:: /Images/Exploded/dual_relay_v2_exploded_350.png
 	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Dual Relay Bricklet 2.0
+	   :alt: Explosionszeichnung für Dual Relay Bricklet 2.0
 	   :align: center
 	   :target: ../../_images/Exploded/dual_relay_v2_exploded.png
 

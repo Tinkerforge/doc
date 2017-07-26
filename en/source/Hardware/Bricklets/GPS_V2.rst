@@ -59,7 +59,7 @@ sensitivity (-165dBm) and a update rate of 10Hz suitable for drones or the like.
 Internal interference canceller rejects RF interference from other devices
 like Bluetooth or Wi-Fi.
 
-A 25mmx25mm active patch antenna with high gain is permanently attached to the bottom side 
+A 25 x 25mm active patch antenna with high gain is permanently attached to the bottom side
 of the Bricklet and connected by a U.FL connector. You can remove the connector and
 connect your own external antenna.
 

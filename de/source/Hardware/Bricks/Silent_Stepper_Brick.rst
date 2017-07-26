@@ -42,7 +42,7 @@ Der Silent Stepper :ref:`Brick <primer_bricks>` kann einen bipolaren
 `Schrittmotor <https://de.wikipedia.org/wiki/Schrittmotor>`__ mit einem 
 maximalen Phasenstrom von **1,6A** und einer maximalen Spannung von **46V**
 per **USB** steuern. Die API des Bricks ist für verschiedene  
-:ref:`Programmiersprachen <stepper_brick_programming_interface>` verfügbar und kann
+:ref:`Programmiersprachen <silent_stepper_brick_programming_interface>` verfügbar und kann
 Richtung, Geschwindigkeit und Beschleunigung des angeschlossenen Schrittmotors steuern.
 Die Schrittweite kann zwischen Vollschritt und 1/256-Schrittmodus gewählt werden.
 
@@ -122,7 +122,7 @@ Erster Test
 |test_intro|
 
 Verbinde einen Schrittmotor mit dem Brick und eine passende Stromversorgung an
-den Brick an (see :ref:`here <stepper_brick_connectivity>`). 
+den Brick an (siehe :ref:`here <silent_stepper_brick_connectivity>`).
 Der Aufbau sollte dem im folgenden Bild ähnlich sehen.
 
 .. image:: /Images/Bricks/brick_silent_stepper_motor_setup_600.jpg

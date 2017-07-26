@@ -60,14 +60,14 @@ Gewicht                           TBDg
 ================================  ============================================================
 
 
-
-Resources
----------
+Ressourcen
+----------
 
 * Schaltplan (`Download <https://github.com/Tinkerforge/rgb-led-matrix-bricklet/raw/master/hardware/rgb-led-matrix-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rgb_led_matrix_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rgb-led-matrix-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+
 
 .. _rgb_led_matrix_bricklet_test:
 
@@ -89,10 +89,11 @@ Wenn alles wie erwartet funktioniert ... TBD.
 
 |test_pi_ref|
 
+
 .. _rgb_led_matrix_bricklet_case:
 
-Case
-----
+Gehäuse
+-------
 
 ..
 	Ein `laser-geschnittenes Gehäuse für das RGB LED Matrix Bricklet 
@@ -100,7 +101,7 @@ Case
 
 	.. image:: /Images/Cases/bricklet_rgb_led_matrix_case_350.jpg
 	   :scale: 100 %
-	   :alt: Case for RGB LED Matrix Bricklet
+	   :alt: Gehäuse für RGB LED Matrix Bricklet
 	   :align: center
 	   :target: ../../_images/Cases/bricklet_rgb_led_matrix_case_1000.jpg
 
@@ -110,7 +111,7 @@ Case
 
 	.. image:: /Images/Exploded/rgb_led_matrix_exploded_350.png
 	   :scale: 100 %
-	   :alt: Exploded assembly drawing for RGB LED Matrix Bricklet
+	   :alt: Explosionszeichnung für RGB LED Matrix Bricklet
 	   :align: center
 	   :target: ../../_images/Exploded/rgb_led_matrix_exploded.png
 

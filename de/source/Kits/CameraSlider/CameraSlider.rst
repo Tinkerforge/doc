@@ -354,7 +354,7 @@ Ein Auslöse-Skript für ein Industrial Quad Relay Bricklet kann
 `hier <https://github.com/Tinkerforge/camera-slider/blob/master/demo/starter_kit_camera_slider_demo/trigger_iqr.py>`__
 heruntergeladen werden. Um es nutzen zu können müssen Python und die
 :ref:`Python API Bindings <api_bindings_python>` installiert sein. Seine
-Kommandzeilen-Syntax ist wie folgt::
+Kommandozeilen-Syntax ist wie folgt::
 
   python <path>/trigger_iqr.py <host> <port> <iqr-uid> <relay> <trigger-duration> <wait-duration>
 
@@ -369,14 +369,14 @@ Das Relais verbindet für 50 Millisekunden die beiden Pins. Danach wartet das
 Skript für 1000 Millisekunden, um der Kamera Zeit zu geben, das aufgenommene
 Bild zu verarbeiten und zu speichern.
 
-RED Brick Program als Auslöser
-""""""""""""""""""""""""""""""
+RED Brick Programm als Auslöser
+"""""""""""""""""""""""""""""""
 
 Wenn der Zeitrafferaufbau einen :ref:`RED Brick <red_brick>` beinhaltet, dann
 kann auch ein anderes :ref:`RED Brick Programm <red_brick_program_tab>` für
 die Auslöselogik sorgen. Ein Auslöse-Skript dafür kann hier
 `hier <https://github.com/Tinkerforge/camera-slider/blob/master/demo/starter_kit_camera_slider_demo/trigger_red.py>`__
-heruntergeladen werden. Seine Kommandzeilen-Syntax ist wie folgt::
+heruntergeladen werden. Seine Kommandozeilen-Syntax ist wie folgt::
 
   python <path>/trigger_red.py <host> <port> <red-uid> <program-identifier> <wait-duration>
 

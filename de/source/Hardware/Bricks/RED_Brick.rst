@@ -1037,7 +1037,7 @@ stehen verschiedene Beispielprogramme zur Verfügung:
   synchronisieren.
 * `Systemzeit über Webbrowser synchronisieren
   <https://github.com/Tinkerforge/red-brick/tree/master/programs/sync_time>`__:
-  Wenn weder NTP noch GPS, noch Real-Time Clock Bricklet zur Synchrionisierung
+  Wenn weder NTP noch GPS, noch Real-Time Clock Bricklet zur Synchronisierung
   der Systemzeit genutzt werden kann, dann kann über dieses Programm die
   Systemzeit vom Webbrowser aus synchronisiert werden.
 * `Humidity Callback per SMS erhalten

@@ -58,7 +58,7 @@ liefert mit 10Hz Updatefrequenz auch schnell genug Daten für Drohnen o.ä.
 Eine interne Störunterdrückung verbessert den Empfang wenn Bluetooth- 
 oder WLAN-Geräte in der Nähe sind.
 
-Eine 25mmx25mm große aktive Patch-Antenne mit großer Verstärkung ist permanent auf
+Eine 25 x 25mm große aktive Patch-Antenne mit großer Verstärkung ist permanent auf
 der Unterseite befestigt und über einen U.FL Stecker mit dem GPS Modul
 verbunden. Die Steckverbindung kann gelöst werden um eine andere externe Antenne
 anzuschließen.

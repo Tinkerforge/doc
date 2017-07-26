@@ -629,12 +629,12 @@ Endkappen anzubringen:
 Fertig!
 -------
 
-Der Kammeraschlitten ist jetzt vollständig zusammengebaut. Es werden auch ein
+Der Kameraschlitten ist jetzt vollständig zusammengebaut. Es werden auch ein
 paar Teile übrig bleiben.
 
 .. image:: /Images/Kits/kit_camera_slider_complete1_600.jpg
    :scale: 100 %
-   :alt: Fertiger Kammeraschlitten
+   :alt: Fertiger Kameraschlitten
    :align: center
    :target: ../../_images/Kits/kit_camera_slider_complete1_1500.jpg
 

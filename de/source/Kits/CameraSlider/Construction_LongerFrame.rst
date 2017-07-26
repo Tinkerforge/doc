@@ -173,7 +173,7 @@ Als letzter Schritt muss noch der Zahnriemen verlängert werden:
 Fertig!
 -------
 
-Der Rahmen des Kammeraschlittens ist jetzt 3m lang.
+Der Rahmen des Kameraschlittens ist jetzt 3m lang.
 
 .. image:: /Images/Kits/kit_camera_slider_longer_frame_complete1_600.jpg
    :scale: 100 %

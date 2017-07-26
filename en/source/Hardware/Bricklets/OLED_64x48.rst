@@ -43,7 +43,7 @@ capability to display information on a small 64x48
 `OLED display <https://en.wikipedia.org/wiki/OLED>`__.
 
 Because each pixel can be set individually, the display can do graphics. This
-allows for more versatile and detailled drawings on the display, compared to
+allows for more versatile and detailed drawings on the display, compared to
 the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` with its fixed character
 display.
 
