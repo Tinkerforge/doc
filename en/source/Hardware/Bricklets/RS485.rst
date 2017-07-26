@@ -1,6 +1,6 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / RS485 Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/rs485-bricklet.html
+:shoplink: ../../../shop/bricklets/rs485-bricklet.html
 
 .. include:: RS485.substitutions
    :start-after: >>>substitutions
@@ -10,9 +10,6 @@
 
 RS485 Bricklet
 ==============
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 
