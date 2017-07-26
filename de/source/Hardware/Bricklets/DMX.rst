@@ -119,9 +119,10 @@ Case
 
 .. _dmx_bricklet_programming_interface:
 
-Programming Interface
----------------------
+Programmierschnittstelle
+------------------------
 
-See :ref:`Programming Interface <programming_interface>` for a detailed description.
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
+Beschreibung.
 
 .. include:: DMX_hlpi.table

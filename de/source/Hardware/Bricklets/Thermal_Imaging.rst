@@ -119,9 +119,10 @@ Case
 
 .. _thermal_imaging_bricklet_programming_interface:
 
-Programming Interface
----------------------
+Programmierschnittstelle
+------------------------
 
-See :ref:`Programming Interface <programming_interface>` for a detailed description.
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
+Beschreibung.
 
 .. include:: Thermal_Imaging_hlpi.table
