@@ -45,6 +45,11 @@ extensions = ['sphinx.ext.pngmath',
 # Spell Check Stuff
 spelling_lang='de_DE'
 spelling_word_list_filename='good_wordlist.txt'
+spelling_ignore_pypi_package_names = False
+spelling_ignore_wiki_words = False
+spelling_ignore_acronyms = False
+spelling_ignore_python_builtins = False
+spelling_ignore_importable_modules = False
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
