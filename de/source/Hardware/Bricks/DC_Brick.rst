@@ -99,6 +99,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/dc-brick/raw/master/hardware/dc-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/dc_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/dc-brick/zipball/master>`__)
+* 3D Modell (`Online ansehen <http://a360.co/2tPgt1E>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/dc/dc.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/dc/dc.FCStd>`__)
 
 
 .. _dc_brick_connectivity:
