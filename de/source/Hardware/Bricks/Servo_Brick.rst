@@ -107,6 +107,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/servo-brick/raw/master/hardware/servo-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/servo_brick_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/servo-brick/zipball/master>`__)
+* 3D Modell (`Online ansehen <http://a360.co/2vPa4AZ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/servo/servo.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/servo/servo.FCStd>`__)
 
 
 .. _servo_brick_connectivity:
