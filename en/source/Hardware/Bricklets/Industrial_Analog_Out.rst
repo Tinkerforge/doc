@@ -77,7 +77,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-analog-out-bricklet/raw/master/hardware/industrial-analog-out-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_analog_out_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-analog-out-bricklet/zipball/master>`__)
-
+* 3D model (`View online <http://a360.co/2tRuWX0>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_analog_out/industrial-analog-out.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_analog_out/industrial-analog-out.FCStd>`__)
 
 Connectivity
 ------------

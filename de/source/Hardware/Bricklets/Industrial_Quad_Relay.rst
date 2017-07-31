@@ -85,6 +85,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-quad-relay-bricklet/raw/master/hardware/industrial-quad-relay-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_quad_relay_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-quad-relay-bricklet/zipball/master>`__)
+* 3D Modell (`Online ansehen <http://a360.co/2tWD9NL>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_quad_relay/industrial-quad-relay.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_quad_relay/industrial-quad-relay.FCStd>`__)
 
 
 Anschlussmöglichkeit

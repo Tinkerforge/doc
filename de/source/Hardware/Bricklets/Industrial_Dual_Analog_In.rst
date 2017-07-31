@@ -75,6 +75,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/raw/master/hardware/industrial_dual_analog_in-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_dual_analog_in_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/zipball/master>`__)
+* 3D Modell (`Online ansehen <http://a360.co/2tQIdz0>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_dual_analog_in/industrial_dual_analog_in.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_dual_analog_in/industrial_dual_analog_in.FCStd>`__)
 
 
 Anschlussmöglichkeit
