@@ -75,6 +75,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/raw/master/hardware/voltage-current-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/voltage_current_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/voltage-current-bricklet/zipball/master>`__)
+* 3D Modell (`Online ansehen <http://a360.co/2woON0G>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/voltage_current/voltage-current.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/voltage_current/voltage-current.FCStd>`__)
 
 
 Anschlussmöglichkeit

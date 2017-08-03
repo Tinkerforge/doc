@@ -71,6 +71,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/rgb-led-bricklet/raw/master/hardware/rgb-led-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rgb_led_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rgb-led-bricklet/zipball/master>`__)
+* 3D Modell (`Online ansehen <http://a360.co/2vm0XdE>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb_led/rgb-led.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb_led/rgb-led.FCStd>`__)
 
 
 .. _rgb_led_bricklet_test:

@@ -80,6 +80,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/analog-out-v2-bricklet/raw/master/hardware/analog-out-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/analog_out_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/analog-out-v2-bricklet/zipball/master>`__)
+* 3D Modell (`Online ansehen <http://a360.co/2vs4gj4>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/analog_out_v2/analog-out.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/analog_out_v2/analog-out.FCStd>`__)
 
 .. _analog_out_v2_bricklet_connectivity:
 

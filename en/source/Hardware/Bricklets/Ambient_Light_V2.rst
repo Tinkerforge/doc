@@ -73,6 +73,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/raw/master/hardware/ambient-light-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/ambient_light_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/zipball/master>`__)
+* 3D model (`View online <http://a360.co/2vsjJ2O>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/ambient_light_v2/ambient-light.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/ambient_light_v2/ambient-light.FCStd>`__)
 
 .. _ambient_light_v2_bricklet_test:
 
