@@ -11,11 +11,12 @@ Step-Down Power Supply
 
 	{% tfgallery %}
 
-	Power_Supplies/powersupply11_tilted_[?|?].jpg              Step-Down Power Supply
-	Power_Supplies/powersupply11_caption_[?|?].jpg             Step-Down Power Supply mit Beschriftung
-	Power_Supplies/powersupply11_horizontal_[?|?].jpg          Step-Down Power Supply
-	Power_Supplies/powersupply11_connector_[100|600].jpg       Step-Down Power Supply mit Steckern
-	Dimensions/step_down_powersupply_dimensions_[100|600].png  Umriss und Bohrplan
+	Power_Supplies/powersupply11_tilted_[?|?].jpg                       Step-Down Power Supply
+	Power_Supplies/powersupply11_caption_[?|?].jpg                      Step-Down Power Supply mit Beschriftung
+	Power_Supplies/powersupply11_horizontal_[?|?].jpg                   Step-Down Power Supply
+	Power_Supplies/powersupply11_connector_[100|600].jpg                Step-Down Power Supply mit Steckern
+	Power_Supplies/powersupply13_reverse_polarity_protection_[?|?].jpg  Step-Down Power Supply Schutzschaltung
+	Dimensions/step_down_powersupply_dimensions_[100|600].png           Umriss und Bohrplan
 
 	{% tfgalleryend %}
 
@@ -58,6 +59,9 @@ Ein :ref:`Master Brick <master_brick>` kann den Stromverbrauch und die Spannung
 der externen Stromversorgung messen. Ströme unter 200mA könne nicht
 zufriedenstellend gemessen werden.
 
+Seit Hardware Version 1.3 hat die Step-Down Power Supply Verpolungsschutz auf 
+beiden Steckern und ist auch gegen eine versehentliche Vertauschung der Stecker
+abgesichert.
 
 Technische Spezifikation
 ------------------------

@@ -11,11 +11,12 @@ Step-Down Power Supply
 
 	{% tfgallery %}
 
-	Power_Supplies/powersupply11_tilted_[?|?].jpg              Step-Down Power Supply
-	Power_Supplies/powersupply11_caption_[?|?].jpg             Step-Down Power Supply with caption
-	Power_Supplies/powersupply11_horizontal_[?|?].jpg          Step-Down Power Supply
-	Power_Supplies/powersupply11_connector_[100|600].jpg       Step-Down Power Supply with connectors
-	Dimensions/step_down_powersupply_dimensions_[100|600].png  Outline and drilling plan
+	Power_Supplies/powersupply11_tilted_[?|?].jpg                       Step-Down Power Supply
+	Power_Supplies/powersupply11_caption_[?|?].jpg                      Step-Down Power Supply with caption
+	Power_Supplies/powersupply11_horizontal_[?|?].jpg                   Step-Down Power Supply
+	Power_Supplies/powersupply11_connector_[100|600].jpg                Step-Down Power Supply with connectors
+	Power_Supplies/powersupply13_reverse_polarity_protection_[?|?].jpg  Step-Down Power Supply protection circuit
+	Dimensions/step_down_powersupply_dimensions_[100|600].png           Outline and drilling plan
 
 	{% tfgalleryend %}
 
@@ -54,6 +55,10 @@ The possible input voltage range is 6V to 27V DC. A
 :ref:`Master Brick <master_brick>` can measure the current consumption of the
 stack and the voltage of the external power source. Currents below 200mA can
 not be measured satisfactorily.
+
+Starting with hardware version 1.3 the Step-Down Power Supply is reverse 
+polarity protected on both connectors, as well as protected against an 
+accidental "connector swap".
 
 
 Technical Specifications
