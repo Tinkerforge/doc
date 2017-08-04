@@ -20,7 +20,7 @@ The Shell bindings are based on the :ref:`Python bindings <api_bindings_python>`
 Requirements
 ------------
 
-* Python 2.5 or newer with ``argparse`` module, Python 3 is also supported
+* Python 2.6 or newer with ``argparse`` module, Python 3 is also supported
 
 
 .. _api_bindings_shell_install:

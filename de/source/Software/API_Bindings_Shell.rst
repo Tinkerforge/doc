@@ -21,7 +21,7 @@ Die Shell Bindings basieren auf den :ref:`Python Bindings <api_bindings_python>`
 Voraussetzungen
 ---------------
 
-* Python 2.5 oder neuer mit ``argparse`` Modul, Python 3 wird auch unterstützt
+* Python 2.6 oder neuer mit ``argparse`` Modul, Python 3 wird auch unterstützt
 
 
 .. _api_bindings_shell_install:
