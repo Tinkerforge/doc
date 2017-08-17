@@ -28,7 +28,7 @@ Konfiguration
    :target: ../_images/Screenshots/brick_logger_setup_v2.jpg
 
 Alle gesammelten Sensordaten und Debug-Nachrichten sind mit einem Zeitstempel
-versehen. Das Format diese Zeitstempels kann eingestellt werden. Der Brick
+versehen. Das Format dieses Zeitstempels kann eingestellt werden. Der Brick
 Logger bietet verschiedenen Format zur Auswahl:
 
 * **DD.MM.YYYY HH:MM:SS** ist ein typisches deutsches Format, dass automatisch
