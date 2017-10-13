@@ -392,7 +392,9 @@ openHAB
 
 Im `openHAB <http://www.openhab.org/>`__ Abschnitt (benötigt Image >= 1.6 und
 Brick Viewer >= 2.2.3) kann der openHAB Service auf dem RED Brick konfiguriert
-werden. Dieser Abschnitt ist erst verfügbar, wenn der :ref:`openHAB Service
+werden. Ab Image >= 1.10 und Brick Viewer >= 2.3.11 wird openHAB2 verwendet.
+
+Dieser Abschnitt ist erst verfügbar, wenn der :ref:`openHAB Service
 <red_brick_brickv_settings_services>` aktiviert ist.
 
 Über die *New* und *Delete* Knöpfe können neue ``.items``, ``.rules`` und
@@ -1251,7 +1253,6 @@ Dieses Problem betrifft nur Image Version 1.0. Seit Image Version 1.1
 sind C# Bindings wieder für CLR Version 2 kompiliert, so dass dort dieses
 Problem nicht mehr auftritt.
 
-
 **Stapel mit NFC/RFID Bricklet auf RED Brick taucht im Brick Viewer nicht auf** (gelöst)
 
 Problematischer Aufbau: Master Brick mit NFC/RFID Bricklet und irgendeinem
@@ -1309,7 +1310,31 @@ Ethernet Extension zu finden. Das Problem kann über die Console gelöst werden:
 
  ln -s /lib/modules/3.4.103+/kernel/drivers/net/ethernet/wiznet/w5x00.ko /lib/modules/3.4.90+/kernel/drivers/net/ethernet/wiznet/
 
-Dieses Problem tritt nur in Image Version 1.4 auf.
+Dieses Problem tritt nur in Image Version 1.4 auf, es ist seit Image Version
+1.5 beseitigt.
+
+**Display Auflösung kann nicht geändert werden** (offen)
+
+In Image Version 1.10 steht durch das Kernel Update von 3.4 auf 4.13 das
+``tf-set-resolution`` Tool nicht mehr zur Verfügung.
+Die Auflösung eines angeschlossenen Display kann daher derzeit nicht geändert
+werden.
+
+**openHAB2 meldet fehlende OSGi Pakete** (offen)
+
+In Image Version 1.10 wird openHAB2 verwendet, dass nach der ersten Aktivierung
+selbst noch OSGi Pakete nachinstalliert.
+Wenn diese Nachinstallation durch einen Neustart des RED Bricks unterbrochen
+wird oder keine Internet-Verbindung am RED Brick vorhanden ist, dann kommt
+openHAB2 in diesen Zustand.
+
+Diese Problem kann vermieden werden indem sichergestellt wird, dass bei der
+ersten Aktivierung des openHAB Services Internet-Verbindung am RED Brick
+vorhanden ist und der RED Brick dann nicht während der Nachinstallation
+neugestartet wird.
+Der Zustand der Nachinstallation kann auf dem openHAB Webinterface verfolgt
+werden.
+
 
 .. _red_brick_history:
 

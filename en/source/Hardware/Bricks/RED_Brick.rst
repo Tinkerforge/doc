@@ -382,8 +382,11 @@ openHAB
 
 In the `openHAB <http://www.openhab.org/>`__ section (requires Image >= 1.6 and
 Brick Viewer >= 2.2.3) of this tab you can configure the openHAB service
-running on the RED Brick. This section is only available if the :ref:`openHAB
-service <red_brick_brickv_settings_services>` is activated.
+running on the RED Brick. Since Image >= 1.10 and Brick Viewer >= 2.3.11
+openHAB2 is used.
+
+This section is only available if the :ref:`openHAB service
+<red_brick_brickv_settings_services>` is activated.
 
 Using the *New* and *Delete* buttons you can create new ``.items``, ``.rules``
 and ``.sitemap`` config files and delete existing config files. Brick Viewer
@@ -1274,7 +1277,29 @@ console::
 
  ln -s /lib/modules/3.4.103+/kernel/drivers/net/ethernet/wiznet/w5x00.ko /lib/modules/3.4.90+/kernel/drivers/net/ethernet/wiznet/
 
-The problem only affects the RED Brick Image with version 1.4.
+The problem only affects the RED Brick Image with version 1.4, it is fixed
+since image version 1.5.
+
+**Display resolution cannot be changed** (open)
+
+In Image version 1.10 the ``tf-set-resolution`` tool isn't available anymore,
+because of the Kernel upgrade vom 3.4 to 4.13.
+Therefore, the resolution of a connected display cannot be changed at the
+moment.
+
+**openHAB2 reports missing OSGi packages** (open)
+
+In Image version 1.10 openHAB2 is used. After its first activation it installed
+some OSGi packages on its own. If this installation is aborted by a restart of
+the RED Brick, or if no Internet connection was available, then openHAB2 can
+end up in this situation.
+
+This problem can be avoided by making sure that an Internet connection is
+available if the openHAB service is enabled for the first time and that the
+RED Brick is not restarted during the installation process.
+The progress of the installation process can be monitored on the opneHAB
+webinterface.
+
 
 .. _red_brick_history:
 
