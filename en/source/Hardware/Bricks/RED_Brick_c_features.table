@@ -1,58 +1,64 @@
 C/C++
 -----
-====================== ============================ =================================================================== ====
-Name                   Version                      Description                                                         full
-====================== ============================ =================================================================== ====
-autoconf               2.69-8                       automatic configure script builder                                  |c|
-automake               1:1.14.1-4+deb8u1            Tool for generating GNU Standards-compliant Makefiles               |c|
-bison                  2:3.0.2.dfsg-2               YACC-compatible parser generator                                    |c|
-cmake                  3.0.2-1+deb8u1               cross-platform, open-source make system                             |c|
-flex                   2.5.39-8+deb8u2              fast lexical analyzer generator                                     |c|
-freeglut3              2.8.1-2                      OpenGL Utility Toolkit                                              |c|
-g++                    4:4.9.2-2                    GNU C++ compiler                                                    |c|
-gcc                    4:4.9.2-2                    GNU C compiler                                                      |c|
-gdb                    7.7.1+dfsg-5                 GNU Debugger                                                        |c|
-gnuplot                4.6.6-2                      Command-line driven interactive plotting program                    |c|
-gnuplot-x11            4.6.6-2                      Command-line driven interactive plotting program. X-package         |c|
-gphoto2                2.5.4-1+b1                   digital camera command-line client                                  |c|
-iptables               1.4.21-2+b1                  administration tools for packet filtering and NAT                   |c|
-libacl1-dev            2.2.52-2                     Access control list static libraries and headers                    |c|
-libatlas-base-dev      3.10.2-7                     Automatically Tuned Linear Algebra Software, generic static         |c|
-libblas3               1.2.20110419-10              Basic Linear Algebra Reference implementations, shared library      |c|
-libboost-all-dev       1.55.0.2                     Boost C++ Libraries development files (ALL) (default version)       |c|
-libc6-dev              2.19-18+deb8u9               GNU C Library: Development Libraries and Header Files               |c|
-libcrypto++-dev        5.6.1-6+deb8u3               General purpose cryptographic library - C++ development             |c|
-libcurl4-openssl-dev   7.38.0-4+deb8u5              development files and documentation for libcurl (OpenSSL flavour)   |c|
-libexpat1-dev          2.1.0-6+deb8u3               XML parsing C library - development kit                             |c|
-libgcrypt11-dev        1.5.4-3+really1.6.3-2+deb8u2 transitional libgcrypt11-dev package                                |c|
-libgd2-xpm-dev         2.1.0-5+deb8u9               GD Graphics Library (transitional package)                          |c|
-libgfortran3           4.9.2-10                     Runtime library for GNU Fortran applications                        |c|
-libgirepository1.0-dev 1.42.0-2.2                   Library for handling GObject introspection data (development files) |c|
-libgmp-dev             2:6.0.0+dfsg-6               Multiprecision arithmetic library developers tools                  |c|
-libgphoto2-dev         2.5.4-1.1+b2                 gphoto2 digital camera library (development files)                  |c|
-libgphoto2-l10n        2.5.4-1.1                    gphoto2 digital camera library - localized messages                 |c|
-libgphoto2-port10      2.5.4-1.1+b2                 gphoto2 digital camera port library                                 |c|
-libgsl0-dev            1.16+dfsg-2                  GNU Scientific Library (GSL) -- development package                 |c|
-libgtk-3-dev           3.14.5-1+deb8u1              development files for the GTK+ library                              |c|
-libgtk2.0-dev          2.24.25-3+deb8u1             development files for the GTK+ library                              |c|
-libgtkmm-2.4-dev       1:2.24.4-1.1                 C++ wrappers for GTK+ (development files)                           |c|
-libgtkmm-3.0-dev       3.14.0-1                     C++ wrappers for GTK+ (development files)                           |c|
-libmpfr-dev            3.1.2-2                      multiple precision floating-point computation developers tools      |c|
-libmsgpack-dev         0.5.7-3                      binary-based efficient object serialization library                 |c|
-libmysqlclient-dev     5.5.55-0+deb8u1              MySQL database development files                                    |c|
-libncurses5-dev        5.9+20140913-1+b1            developer's libraries for ncurses                                   |c|
-libopencv-dev          2.4.9.1+dfsg-1+deb8u1        development files for opencv                                        |c|
-libpcap-dev            1.6.2-2                      development library for libpcap (transitional package)              |c|
-libsqlite0-dev         2.8.17-12                    SQLite development files                                            |c|
-libsqlite3-dev         3.8.7.1-1+deb8u2             SQLite 3 development files                                          |c|
-libssl-dev             1.0.1t-1+deb8u6              Secure Sockets Layer toolkit - development files                    |c|
-libtool                2.4.2-1.11                   Generic library support script                                      |c|
-libudev-dev            215-17+deb8u7                libudev development files                                           |c|
-libusb-1.0-0           2:1.0.19-1                   userspace USB programming library                                   |c|
-libusb-1.0-0-dev       2:1.0.19-1                   userspace USB programming library development files                 |c|
-libxml2-dev            2.9.1+dfsg1-5+deb8u4         Development files for the GNOME XML library                         |c|
-libyaml-dev            0.1.6-3                      Fast YAML 1.1 parser and emitter library (development)              |c|
-mathgl                 2.2.2.1-3+b2                 library for scientific graphs (utilities and examples)              |c|
-sqlite                 2.8.17-12                    command line interface for SQLite                                   |c|
-sqlite3                3.8.7.1-1+deb8u2             Command line interface for SQLite 3                                 |c|
-====================== ============================ =================================================================== ====
+========================== ============================ =================================================================== ====
+Name                       Version                      Description                                                         full
+========================== ============================ =================================================================== ====
+apache2                    2.4.25-3+deb9u3              Apache HTTP Server                                                  |c|
+autoconf                   2.69-10                      automatic configure script builder                                  |c|
+automake                   1:1.15-6                     Tool for generating GNU Standards-compliant Makefiles               |c|
+bison                      2:3.0.4.dfsg-1+b1            YACC-compatible parser generator                                    |c|
+cmake                      3.7.2-1                      cross-platform, open-source make system                             |c|
+default-libmysqlclient-dev 1.0.2                        MySQL database development files (metapackage)                      |c|
+flex                       2.6.1-1.3                    fast lexical analyzer generator                                     |c|
+freeglut3                  2.8.1-3                      OpenGL Utility Toolkit                                              |c|
+g++                        4:6.3.0-4                    GNU C++ compiler                                                    |c|
+gcc                        4:6.3.0-4                    GNU C compiler                                                      |c|
+gdb                        7.12-6                       GNU Debugger                                                        |c|
+gnuplot                    5.0.5+dfsg1-6+deb9u1         Command-line driven interactive plotting program, version 5         |c|
+gnuplot-x11                5.0.5+dfsg1-6+deb9u1         Command-line driven interactive plotting program. X-package         |c|
+gphoto2                    2.5.11-1                     digital camera command-line client                                  |c|
+iptables                   1.6.0+snapshot20161117-6     administration tools for packet filtering and NAT                   |c|
+libacl1-dev                2.2.52-3+b1                  Access control list static libraries and headers                    |c|
+libapache2-mod-wsgi        4.5.11-1                     Python WSGI adapter module for Apache                               |c|
+libatlas-base-dev          3.10.3-1+b1                  Automatically Tuned Linear Algebra Software, generic static         |c|
+libblas3                   3.7.0-2                      Basic Linear Algebra Reference implementations, shared library      |c|
+libboost-all-dev           1.62.0.1                     Boost C++ Libraries development files (ALL) (default version)       |c|
+libc6-dev                  2.24-11+deb9u1               GNU C Library: Development Libraries and Header Files               |c|
+libcrypto++-dev            5.6.4-7                      General purpose cryptographic library - C++ development             |c|
+libcurl4-openssl-dev       7.52.1-5+deb9u1              development files and documentation for libcurl (OpenSSL flavour)   |c|
+libexpat1-dev              2.2.0-2+deb9u1               XML parsing C library - development kit                             |c|
+libgcrypt11-dev            1.5.4-3+really1.7.6-2+deb9u2 transitional libgcrypt11-dev package                                |c|
+libgfortran3               6.3.0-18                     Runtime library for GNU Fortran applications                        |c|
+libgirepository1.0-dev     1.50.0-1+b1                  Library for handling GObject introspection data (development files) |c|
+libgmp-dev                 2:6.1.2+dfsg-1               Multiprecision arithmetic library developers tools                  |c|
+libgphoto2-dev             2.5.12-1                     gphoto2 digital camera library (development files)                  |c|
+libgphoto2-l10n            2.5.12-1                     gphoto2 digital camera library - localized messages                 |c|
+libgphoto2-port12          2.5.12-1                     gphoto2 digital camera port library                                 |c|
+libgtk-3-dev               3.22.11-1                    development files for the GTK+ library                              |c|
+libgtk2.0-dev              2.24.31-2                    development files for the GTK+ library                              |c|
+libgtkmm-2.4-dev           1:2.24.5-1                   C++ wrappers for GTK+ (development files)                           |c|
+libgtkmm-3.0-dev           3.22.0-1                     C++ wrappers for GTK+ (development files)                           |c|
+libmpfr-dev                3.1.5-1                      multiple precision floating-point computation developers tools      |c|
+libmsgpack-dev             1.4.2-4                      binary-based efficient object serialization library                 |c|
+libncurses5-dev            6.0+20161126-1+deb9u1        developer's libraries for ncurses                                   |c|
+libnl-3-200                3.2.27-2                     library for dealing with netlink sockets                            |c|
+libnl-3-dev                3.2.27-2                     development library and headers for libnl-3                         |c|
+libnl-genl-3-200           3.2.27-2                     library for dealing with netlink sockets - generic netlink          |c|
+libnl-genl-3-dev           3.2.27-2                     development library and headers for libnl-genl-3                    |c|
+libopencv-dev              2.4.9.1+dfsg1-2              development files for opencv                                        |c|
+libpcap-dev                1.8.1-3                      development library for libpcap (transitional package)              |c|
+libqmi-proxy               1.16.2-1                     Proxy to communicate with QMI ports                                 |c|
+libsqlite0-dev             2.8.17-14                    SQLite 2 development files                                          |c|
+libsqlite3-dev             3.16.2-5                     SQLite 3 development files                                          |c|
+libssl-dev                 1.1.0f-3                     Secure Sockets Layer toolkit - development files                    |c|
+libtool                    2.4.6-2                      Generic library support script                                      |c|
+libudev-dev                232-25+deb9u1                libudev development files                                           |c|
+libusb-1.0-0               2:1.0.21-1                   userspace USB programming library                                   |c|
+libusb-1.0-0-dev           2:1.0.21-1                   userspace USB programming library development files                 |c|
+libvpx4                    1.6.1-3                      VP8 and VP9 video codec (shared library)                            |c|
+libxml2-dev                2.9.4+dfsg1-2.2+deb9u1       Development files for the GNOME XML library                         |c|
+libyaml-dev                0.1.7-2                      Fast YAML 1.1 parser and emitter library (development)              |c|
+mathgl                     2.3.4-1.1+b1                 library for scientific graphs (utilities and examples)              |c|
+sqlite                     2.8.17-14                    command line interface for SQLite 2                                 |c|
+sqlite3                    3.16.2-5                     Command line interface for SQLite 3                                 |c|
+========================== ============================ =================================================================== ====
