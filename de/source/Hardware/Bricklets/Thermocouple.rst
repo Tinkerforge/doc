@@ -56,7 +56,9 @@ Standardmäßig wird das Bricklet mit einem K-Typ Mini-Thermoelementanschluss
 ausgeliefert. Dieser Anschluss verwendet Alumel für den negativen und Chromel
 für den positiven Kontakt. Auf Wunsch können wir das Bricklet auch mit passendem
 Anschluss für andere :ref:`Thermoelementtypen <thermocouple_bricklet_types>`
-liefern.
+ausstatten. Es kann Typ J, T, E, U und N gewählt werden. Ist der gewünschte 
+Anschluss nicht dabei, so kann das Bricklet auch mit zwei isolieren 20cm Drähten 
+geliefert werden. Somit kann auch ein eigener Anschluss angeschlossen werden.
 
 Technische Spezifikation
 ------------------------
