@@ -87,6 +87,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/rs485-extension/raw/master/hardware/rs485-extension-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rs485_extension_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rs485-extension>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2xZEGER>`__ | Download: `STEP <http://download.tinkerforge.com/3d/extensions/rs485/rs485.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/extensions/rs485/rs485.FCStd>`__)
 
 
 Anschlussmöglichkeit

@@ -98,6 +98,8 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/wifi-v2-extension/raw/master/hardware/wifi-extension-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/wifi_extension_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/wifi-v2-extension/zipball/master>`__)
+* 3D model (`View online <http://autode.sk/2xfpGhI>`__ | Download: `STEP <http://download.tinkerforge.com/3d/extensions/wifi_v2/wifi-extension.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/extensions/wifi_v2/wifi-extension.FCStd>`__)
+
 
 
 WIFI Network
