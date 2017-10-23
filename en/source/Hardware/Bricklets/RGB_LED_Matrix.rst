@@ -67,7 +67,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/rgb-led-matrix-bricklet/raw/master/hardware/rgb-led-matrix-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/rgb_led_matrix_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/rgb-led-matrix-bricklet/zipball/master>`__)
-* 3D model (`View online <http://a360.co/2wosJ6k>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb_led_matrix/rgb-led-matrix.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb_led_matrix/rgb-led-matrix.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2xZlMJ4>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb_led_matrix/rgb-led-matrix.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb_led_matrix/rgb-led-matrix.FCStd>`__)
 
 .. _rgb_led_matrix_bricklet_test:
 

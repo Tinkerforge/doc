@@ -105,7 +105,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/servo-brick/raw/master/hardware/servo-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/servo_brick_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/servo-brick/zipball/master>`__)
-* 3D model (`View online <http://a360.co/2vPa4AZ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/servo/servo.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/servo/servo.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2xf1bkz>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/servo/servo.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/servo/servo.FCStd>`__)
 
 .. _servo_brick_connectivity:
 

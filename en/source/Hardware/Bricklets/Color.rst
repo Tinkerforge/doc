@@ -93,7 +93,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/color-bricklet/raw/master/hardware/color-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/color_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/color-bricklet/zipball/master>`__)
-* 3D model (`View online <http://a360.co/2u77XLP>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/color/color.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/color/color.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2gATqlY>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/color/color.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/color/color.FCStd>`__)
 
 
 .. _color_bricklet_test:

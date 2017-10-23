@@ -77,7 +77,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/barometer-bricklet/raw/master/hardware/barometer-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/barometer_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/barometer-bricklet/zipball/master>`__)
-* 3D model (`View online <http://a360.co/2wo7RMu>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/barometer/barometer.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/barometer/barometer.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2yDASIN>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/barometer/barometer.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/barometer/barometer.FCStd>`__)
 
 
 .. _barometer_bricklet_test:

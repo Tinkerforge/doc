@@ -90,7 +90,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/rs485-bricklet/raw/master/hardware/rs485-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rs485_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rs485-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://a360.co/2sYOPNU>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rs485/rs485.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rs485/rs485.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2gCAxzh>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rs485/rs485.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rs485/rs485.FCStd>`__)
 
 
 Anschlussmöglichkeiten

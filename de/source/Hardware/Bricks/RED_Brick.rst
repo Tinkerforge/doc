@@ -112,7 +112,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/red-brick/raw/master/hardware/red-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/red_brick_dimensions.png>`__)
 * Linux Image und Platinenlayout (`Download <https://github.com/Tinkerforge/red-brick/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://a360.co/2vPoEbK>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/red/red.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/red/red.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2xfLZ6J>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/red/red.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/red/red.FCStd>`__)
 
 
 .. _red_brick_test:
