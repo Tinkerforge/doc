@@ -80,6 +80,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/raw/master/hardware/temperature-ir-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/temperature_ir_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/zipball/master>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2gCkUHZ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/temperature_ir/temperature-ir.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/temperature_ir/temperature-ir.FCStd>`__)
 
 
 .. _temperature_ir_bricklet_test:
