@@ -31,8 +31,11 @@ Humidity Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Misst die relative Luftfeuchtigkeit
+ * Ausgabe in 0,01% RH Schritten (14Bit Auflösung)
+* Misst die Temperatur
+ * Ausgabe in 0,01°C Schritten (14Bit Auflösung)
+* Internes Heizelement, interne Kompensation
 
 
 .. _humidity_v2_bricklet_description:
@@ -40,7 +43,22 @@ Features
 Beschreibung
 ------------
 
-TBD
+Mit dem Humidity V2 :ref:`Bricklet <primer_bricklets>` können
+:ref:`Bricks <primer_bricks>` die `relative Luftfeuchtigkeit
+<https://de.wikipedia.org/wiki/Relative_Luftfeuchtigkeit>`__ und 
+die `Temperatur <https://de.wikipedia.org/wiki/Temperatur>`__ messen.
+Die gemessene Luftfeuchtigkeit kann in Prozent, die Temperatur direkt in °C
+ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf eine 
+veränderte Luftfeuchtigkeit oder Temperatur zu reagieren ohne die Werte 
+laufend abzufragen (kein Polling notwendig).
+
+Der Sensor kompensiert die gemessene Luftfeuchtigkeit intern mit dem eigenen 
+Temperatursensor. Ein per API schaltbares Heizelement, welches direkt im Sensor 
+integriert ist, kann dazu genutzt werden um bei extremer Feuchtigkeit den Sensor 
+zu trocknen.
+
+Typische Anwendungen sind der Aufbau einer Wetterstation oder in
+Umweltmessungen.
 
 
 Technische Spezifikation
@@ -49,13 +67,15 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
+Sensor                            HDC1080
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Relative Luftfeuchtigkeit (RH)    0% RH - 100% RH in 0,01% RH Schritten, 14Bit Auflösung
+Temperatur                        -20°C- 85°C in 0,01°C, 14Bit Auflösung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
+Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")
 Gewicht                           TBDg
 ================================  ============================================================
 
@@ -63,6 +83,7 @@ Gewicht                           TBDg
 Ressourcen
 ----------
 
+* HDC1080 Datenblatt (`Download <https://github.com/Tinkerforge/humidity-v2-bricklet/raw/master/datasheets/hdc1080.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/humidity-v2-bricklet/raw/master/hardware/humidity-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/humidity_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/humidity-v2-bricklet/zipball/master>`__)
@@ -78,7 +99,11 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert wird die gemessen relative
+Luftfeuchtigkeit des Sensors angezeigt.
+Der Graph gibt den zeitlichen Verlauf der Luftfeuchtigkeit wieder.
+Das folgende Bild entstand durch Ausatmen auf den Sensor. Die Luftfeuchtigkeit
+steigt durch die feuchte Atemluft und fällt dann wieder ab.
 
 .. image:: /Images/Bricklets/bricklet_humidity_v2_brickv.jpg
    :scale: 100 %
@@ -115,6 +140,16 @@ Gehäuse
 	   :target: ../../_images/Exploded/humidity_v2_exploded.png
 
 	|bricklet_case_hint|
+
+
+Troubleshooting
+---------------
+Bei extremer Feuchtigkeit kann es sein, dass die Messwerte über einen 
+längeren Zeitraum verfälscht ausgegeben werden. In diesem Fall kann über 
+Aktivierung des internen Heizelements der Sensor getrocknet werden.
+
+Allgemein sollte der Sensor vor direkter Feuchtigkeit geschützt verbaut werden.
+
 
 
 .. _humidity_v2_bricklet_programming_interface:
