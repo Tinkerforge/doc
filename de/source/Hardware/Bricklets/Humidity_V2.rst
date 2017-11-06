@@ -52,7 +52,7 @@ ausgelesen werden. Mit konfigurierbaren Events ist es möglich auf eine
 veränderte Luftfeuchtigkeit oder Temperatur zu reagieren ohne die Werte 
 laufend abzufragen (kein Polling notwendig).
 
-Der Sensor kompensiert die gemessene Luftfeuchtigkeit intern mit dem eigenen 
+Der Sensor kompensiert die gemessene Luftfeuchtigkeit intern mit dem 
 Temperatursensor. Ein per API schaltbares Heizelement, welches direkt im Sensor 
 integriert ist, kann dazu genutzt werden um bei extremer Feuchtigkeit den Sensor 
 zu trocknen.
@@ -73,6 +73,8 @@ Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 Relative Luftfeuchtigkeit (RH)    0% RH - 100% RH in 0,01% RH Schritten, 14Bit Auflösung
 Temperatur                        -20°C- 85°C in 0,01°C, 14Bit Auflösung
+Genauigkeiten                     +-2% (typisch) für Luftfeuchtigkeitsmessung
+                                  +-0.2°C (typisch) für Temperaturmessung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")
