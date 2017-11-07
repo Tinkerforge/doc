@@ -31,10 +31,8 @@ Humidity Bricklet 2.0
 Features
 --------
 
-* Misst die relative Luftfeuchtigkeit
- * Ausgabe in 0,01% RH Schritten (14Bit Auflösung)
-* Misst die Temperatur
- * Ausgabe in 0,01°C Schritten (14Bit Auflösung)
+* Misst relative Luftfeuchtigkeit und Temperatur
+* Ausgabe in 0,01%RH / 0,01°C Schritten (14Bit Auflösung)
 * Internes Heizelement, interne Kompensation
 
 
@@ -43,7 +41,7 @@ Features
 Beschreibung
 ------------
 
-Mit dem Humidity V2 :ref:`Bricklet <primer_bricklets>` können
+Mit dem Humidity :ref:`Bricklet <primer_bricklets>` 2.0 können
 :ref:`Bricks <primer_bricks>` die `relative Luftfeuchtigkeit
 <https://de.wikipedia.org/wiki/Relative_Luftfeuchtigkeit>`__ und 
 die `Temperatur <https://de.wikipedia.org/wiki/Temperatur>`__ messen.
@@ -71,10 +69,10 @@ Sensor                            HDC1080
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Relative Luftfeuchtigkeit (RH)    0% RH - 100% RH in 0,01% RH Schritten, 14Bit Auflösung
-Temperatur                        -20°C- 85°C in 0,01°C, 14Bit Auflösung
+Relative Luftfeuchtigkeit (RH)    0% RH - 100%RH in 0,01%RH Schritten, 14Bit Auflösung
+Temperatur                        -20°C- 85°C in 0,01°C Schritten, 14Bit Auflösung
 Genauigkeiten                     +-2% (typisch) für Luftfeuchtigkeitsmessung
-                                  +-0.2°C (typisch) für Temperaturmessung
+                                  +-0,2°C (typisch) für Temperaturmessung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")
@@ -121,27 +119,24 @@ steigt durch die feuchte Atemluft und fällt dann wieder ab.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Humidity Bricklet 2.0 
-	<https://www.tinkerforge.com/de/shop/cases/case-humidity-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Humidity Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-ambient-light-barometer-humidity-temperature-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_humidity_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Humidity Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_humidity_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_ambient_light_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Humidity Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_ambient_light_case_built_up_1000.jpg
 
-	.. include:: Humidity_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Temperature.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/humidity_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Humidity Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/humidity_v2_exploded.png
-
-	|bricklet_case_hint|
+.. image:: /Images/Exploded/ambient_light_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Humidity Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/ambient_light_exploded.png
 
 
 Troubleshooting
