@@ -31,8 +31,10 @@ Motorized Linear Poti Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Linear Potentiometer with 100mm fader travel
+* Fader position can be controlled by user and with a motor
+* No additional power supply necessary
+* Automatic calibration
 
 
 .. _motorized_linear_poti_bricklet_description:
@@ -40,7 +42,18 @@ Features
 Description
 -----------
 
-TBD
+The Motorized Linear Poti :ref:`Bricklet <primer_bricklets>` is equipped with
+a motor controllable 100mm linear `potentiometer <https://en.wikipedia.org/wiki/Potentiometer>`__.
+It can be connected to a :ref:`Brick <primer_bricks>`
+
+The position of the potentiometer ranges from 0 (slider down) to 100 (slider up). A user
+can change the position of the potentiometer and it is possible to drive the potentiometer 
+to any position with an integrated motor.
+
+You can configure the potentiometer to hold the position. In this case it automatically
+drives back to the set-point when a user changes the position. If it is not configured
+to hold a position, the Bricklet will only drive to the set-point once and after that
+the user can control the position again.
 
 
 Technical Specifications
@@ -52,11 +65,14 @@ Property                          Value
 Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Fader Travel                      100mm
+
+Mounting hole size                M3
+Distance between mounting holes   120mm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            145 x 20 x 28mm (5.70 x 0.79 x 1.10")
+Weight                            67g
 ================================  ============================================================
 
 
@@ -79,7 +95,8 @@ Test your Motorized Linear Poti Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now control the position of the
+potentiometer with the GUI.
 
 .. image:: /Images/Bricklets/bricklet_motorized_linear_poti_brickv.jpg
    :scale: 100 %
