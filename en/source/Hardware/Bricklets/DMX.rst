@@ -31,8 +31,11 @@ DMX Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Supports DMX slave and master
+* Has male and female XLR connector
+* All 512 channels available
+* Can be used to monitor existing DMX network without interference 
+* Switchable 120 Ohm termination
 
 
 .. _dmx_bricklet_description:
@@ -40,8 +43,20 @@ Features
 Description
 -----------
 
-TBD
+The DMX :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the capability of a
+DMX slave or master.
 
+In master mode the Bricklet can control up to 512 channels with the maximum
+possible DMX speed. Frames can be send with a fixed frame rate to achieve smooth
+animations. Frames are double buffered to increase performance.
+
+In slave mode the Bricklet can receive all 512 channels. It can react to any of
+the channels or also be used for monitoring in an existing DMX network without
+any interference.
+
+The Bricklet comes with a male and female connector as well as a user switchable
+120 ohm termination.
 
 Technical Specifications
 ------------------------
@@ -52,11 +67,13 @@ Property                          Value
 Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Modes                             Master / Slave
+Channels                          512
+Frame Rate                        Up to 44Hz at 512 channels (higher with less channels)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            60 x 50 x 30mm (2.36 x 1.97 x 1.18")
+Weight                            30g
 ================================  ============================================================
 
 
@@ -79,7 +96,7 @@ Test your DMX Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+You can now change between master/slave mode and send/receive DMX data.
 
 .. image:: /Images/Bricklets/bricklet_dmx_brickv.jpg
    :scale: 100 %
