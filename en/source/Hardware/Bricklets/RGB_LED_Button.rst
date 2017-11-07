@@ -31,8 +31,9 @@ RGB LED Button Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* High quality 15mm x 15mm button
+* Adjustable RGB LED backlight
+* Replacable/user-printable cap inlay 
 
 
 .. _rgb_led_button_bricklet_description:
@@ -40,8 +41,18 @@ Features
 Description
 -----------
 
-TBD
+The RGB LED :ref:`Bricklet <primer_bricklets>` is eqiupped with an adjustable
+RGB backlit button. It can extend :ref:`Bricks <primer_bricks>`.
 
+You can read the current state of the button (pressed/released) and
+adjust the color of the LED. The red, green and blue part of the LED can be 
+controlled with 8 bit resolution each.
+
+A white inlay is attached below the cap. This inlay can be replaced by a
+custom printed inlay (for example a power sign or an arrow or similar).
+
+It is also possible to use events. This allows to react to button presses
+without polling.
 
 Technical Specifications
 ------------------------
@@ -52,11 +63,13 @@ Property                          Value
 Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+LED Resolution                    8 bit
+Button size                       15 x 15mm
+Cap size                          17.4 x 17.4mm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            25 x 25 x 30mm (0.98 x 0.98 x 1.18")
+Weight                            7g
 ================================  ============================================================
 
 
@@ -79,7 +92,7 @@ Test your RGB LED Button Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+You can now see button presses in the GUI and control the backlight RGB LED.
 
 .. image:: /Images/Bricklets/bricklet_rgb_led_button_brickv.jpg
    :scale: 100 %
