@@ -124,7 +124,86 @@ If everything went as expected you can now see the thermal image and configure t
 High Contrast Image vs Temperature Image
 ----------------------------------------
 
-TODO: Explain AGC, binning, spotmeter, dampening factor, clip limit, empty counts (with ROI)
+The Thermal Imaging Bricklet supports two type of image stream modes with
+different use cases.
+
+**High Contrast Image**:
+
+In High Contrast Image mode the Bricklet provides a 60x80 pixel image with a
+frame rate of 8.6Hz. Every pixel is a grey-scale representation and
+has a resolution of 8 bit.
+
+This mode is used in FLIR based thermal imaging cameras that are 
+available on the market. The data can be used for visualizations and it can be 
+directly drawn to a display as is.
+
+For the High Contrast Image mode the high dynamic range of the sensor
+is collapsed with a histogram-based non-linear mapping function. This filtering
+is necessary for visualizations. If the data would be unfiltered, it could 
+not be used for visualizations. With a temperature range from 
+-273°C and 6279°C a common temperature image with small changes in the range of
+20°C-30°C the changes would not be visible at all.
+
+The 8 bit data of each pixel does not contain any temperature information anymore.
+However, even in High Contrast Image mode you can still use the spotmeter.
+
+For the spotmeter you can define a region within the 60x80 pixel matrix. For this
+region you can then get the minimum, maximum and mean temperature for every frame.
+You can also define the spotmeter region to be only one pixel (to get the exact
+temperature of this pixel).
+
+In this mode you can configure different parameters:
+
+* **Dampening Factor**: This parameter is the amount of temporal dampening applied to the HEQ 
+  (history equalization) transformation function. An IIR filter of the form 
+  (N/256) * previous + ((256-N)/256) * current is applied, and the HEQ dampening factor 
+  represents the value N in the equation, i.e., a value that applies to the amount of
+  influence the previous HEQ transformation function has on the current function. The 
+  lower the value of N the higher the influence of the current video frame whereas
+  the higher the value of N the more influence the previous damped transfer function has.
+
+* **Clip Limit Low**: This parameter defines an artificial population that is added to 
+  every non-empty histogram bin. In other words, if the Clip Limit Low is set to L, a bin 
+  with an actual population of X will have an effective population of L + X. Any empty bin 
+  that is nearby a populated bin will be given an artificial population of L. The effect of
+  higher values is to provide a more linear transfer function; lower values provide a more
+  non-linear (equalized) transfer function.
+
+* **Clip Limit High**: This parameter defines the maximum number of pixels allowed 
+  to accumulate in any given histogram bin. Any additional pixels in a given bin are clipped.
+  The effect of this parameter is to limit the influence of highly-populated bins on the 
+  resulting HEQ transformation function.
+
+* **Empty Counts**: This parameter specifies the maximum number of pixels in a bin that will be 
+  interpreted as an empty bin. Histogram bins with this number of pixels or less will be 
+  processed as an empty bin.
+
+Additionally a region of interest can be defined. The algorithms configured by the above
+parameters will only be applied for the specified region. This region can be defined
+to exclude parts of the image that are not to be analyzed and would otherwise distort
+the data.
+
+Use this mode if you need any form of visualization of the data.
+
+**Temperature Image**:
+
+In Temperature Image mode the Bricklet provides a 60x80 pixel image with a
+frame rate of 4.5Hz. Every pixel in this image is a temperature measurement with a
+resolution of 16 bit.
+
+The Thermal Imaging Bricklet has two configurable temperature ranges for the
+Temperature Image mode:
+
+* -273°C to 627°C with a resolution of 0.01°
+* -273°C to 6279°C with a resolution of 0.1°
+
+If you don't need to measure temperatures above 627°C you should always use the first
+range to increase the resolution.
+
+The data can be directly used for scientific calculations or to 
+analyze absolute temperature changes.
+
+Use this mode if you want to work with actual temperature data.
 
 
 .. _thermal_imaging_bricklet_case:
