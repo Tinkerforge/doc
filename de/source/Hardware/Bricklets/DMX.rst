@@ -31,8 +31,11 @@ DMX Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Unterstützt DMX Slave und Master
+* Verfügt über XLR Buchse und Stecker
+* Alle 512 DMX Kanäle verfügbar
+* Kann genutzt werden um bestehende DMX Netzwerke zu überwachen
+* Schaltbare 120 Ohm Termination
 
 
 .. _dmx_bricklet_description:
@@ -40,7 +43,20 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das DMX :ref:`Bricklet <primer_bricklets>` können :ref:`Bricks <primer_bricks>` 
+als DMX Slave oder Master eingesetzt werden.
+
+Im Master Modus kann das Bricklet bis zu 512 Kanäle mit der maximal möglichen
+DMX Geschwindigkeit gesteuert werden. Frames können mit einer festen Frame-Rate
+gesendet werden um gleichmäßige Animationen zu erzeugen. Die Frames sind
+double-buffered um die Performance zu erhöhen.
+
+Im Slave Modus kann das Bricklet alle 512 Kanäle empfangen. Es kann auf jeden 
+dieser Kanäle reagiert werden. Es ist auch möglich ein exisitierendes DMX Netzwerk 
+ohne Beeinflussung zu überwachen.
+
+Das Bricklet ist mit einer XLR Buchse und Stecker ausgestattet und verfügt über eine
+schaltbare 120 Ohm Terminierung.
 
 
 Technische Spezifikation
@@ -52,11 +68,13 @@ Eigenschaft                       Wert
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Modis                             Master / Slave
+Kanäle                            512
+Frame Rate                        Bis zu 44Hz bei 512 Kanälen (höher bei weniger Kanälen)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Größe (B x T x H)                 60 x 50 x 30mm (2.36 x 1.97 x 1.18")
+Gewicht                            30g
 ================================  ============================================================
 
 
@@ -79,7 +97,8 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Nun kann zwischen Master/Slave Modus umgeschaltet werden und Daten können je nach Modus
+gesendet oder empfangen werden.
 
 .. image:: /Images/Bricklets/bricklet_dmx_brickv.jpg
    :scale: 100 %
