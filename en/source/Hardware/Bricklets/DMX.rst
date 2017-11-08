@@ -33,7 +33,7 @@ Features
 
 * Supports DMX slave and master
 * Has male and female XLR connector
-* All 512 channels available
+* All 512 DMX channels available
 * Can be used to monitor existing DMX network without interference 
 * Switchable 120 Ohm termination
 
