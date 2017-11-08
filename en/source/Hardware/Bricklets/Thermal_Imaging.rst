@@ -80,8 +80,11 @@ Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Resolution                        60x80
-Frame Rate                        High Contrast Image: 8.6Hz
-                                  Temperature Image: 4.5Hz
+Frame Rate                        8.6Hz (High Contrast Image), 4.5Hz (Temperature Image)
+Field of View                     51° horizontal, 66° diagonal
+Depth of Field                    10cm to infinity
+Thermal Sensitivity               < 50mK (0.05°C)
+Radiometric accuracy              +/-5°C or 5% (typical)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 9mm (1.57 x 1.57 x 0.35")

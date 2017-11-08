@@ -83,8 +83,11 @@ Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Auflösung                         60x80
-Bildrate (Frame Rate)             High Contrast Image: 8.6Hz
-                                  Temperature Image: 4.5Hz
+Bildrate (Frame Rate)             8,6Hz (High Contrast Image); 4,5Hz (Temperature Image)
+Blickfeld (Field of View)         51° Horizontal, 66° Diagonal
+Tiefenschärfe                     10cm bis unendlich
+Thermale Sensitivität             < 50mK (0,05°C)
+Radiometrische Genauigkeit        +/-5°C or 5% (typisch)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 9mm (1.57 x 1.57 x 0.35")
