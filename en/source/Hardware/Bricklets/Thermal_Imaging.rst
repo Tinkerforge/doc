@@ -181,7 +181,7 @@ In this mode you can configure different parameters:
 Additionally a region of interest can be defined. The algorithms configured by the above
 parameters will only be applied for the specified region. This region can be defined
 to exclude parts of the image that are not to be analyzed and would otherwise distort
-the data.
+the data. As an example it might be interesting to exclude a hot spot in the image.
 
 Use this mode if you need any form of visualization of the data.
 
@@ -194,10 +194,10 @@ resolution of 16 bit.
 The Thermal Imaging Bricklet has two configurable temperature ranges for the
 Temperature Image mode:
 
-* -273°C to 627°C with a resolution of 0.01°
-* -273°C to 6279°C with a resolution of 0.1°
+* -273°C to 381°C with a resolution of 0.01°C
+* -273°C to 6279°C with a resolution of 0.1°C
 
-If you don't need to measure temperatures above 627°C you should always use the first
+If you don't need to measure temperatures above 381°C you should always use the first
 range to increase the resolution.
 
 The data can be directly used for scientific calculations or to 

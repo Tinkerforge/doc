@@ -122,6 +122,97 @@ Wenn alles wie erwartet funktioniert sollte nun ein Wärmebild dargestellt werde
 |test_pi_ref|
 
 
+.. _thermal_imaging_bricklet_high_contrast_vs_temperature:
+
+High Contrast Image vs Temperature Image
+----------------------------------------
+
+Das Thermal Imaging Bricklet unterstützt zwei Bildstream Modis mit verschiedenen
+Anwendungsmöglichkeiten.
+
+**High Contrast Image**:
+
+Im High Contrast Image Modus stellt das Bricklet ein 60x80 Pixel Bild mit einer
+Bildrate von 8.6Hz. Jedes Pixel ist eine Grauwert-Darstellung und hat eine
+Auflösung von 8-Bit.
+
+Dieser Modus wird von FLIR basierten Wärmebildkameras genutzt, die auf dem Markt
+verfügbar sind. Die Daten können für Visualisierungen genutzt werden oder direkt
+auf ein Display dargestellt werden.
+
+Für den High Contrast Image Modus wird der hohe Dynamikumfang des Sensors 
+zusammengefasst mit einer Histogramm-basierten nichtlinearen Abbildungsfunktion.
+Diese Filterung ist notwendig für Visualisierungen. Wären die Daten ungefiltert, 
+so könnten diese nicht für Visualisierungen genutzt werden. Mit einem 
+Temperaturbereich von -273°C bis 6279°C wären typische Temperaturänderungen im
+Bild von 20°C-30°C nicht sichtbar.
+
+Die 8-Bit Daten jedes Pixels enthält dafür aber keine Temperaturinformationen mehr.
+Dafür gibt es aber die Möglichkeit, auch im High Contrast Image Modus, das Spotmeter
+zu nutzen.
+
+Für das Spotmeter kann eine Region innerhalb der 60x80 Pixel Matrix definiert werden.
+In dieser Region wird die Minimum-, Maximum- und die Durchschnitttemperatur für 
+jedes Bild berechnet. Es ist auch möglich die Spotmeter-Region als nur ein Pixel
+zu definieren um genau für dieses Pixel die Temperatur zu erhalten.
+
+In diesem Modus können verschiedene Parameter konfiguriert werden:
+
+
+* **Dampening Factor**: Dieser Parameter stellt die Stärke der zeitlichen Dämpfung dar, 
+	die auf der HEQ (history equalization) Transformationsfunktion angewendet wird. 
+	Ein IIR-Filter der Form (N/256) * transformation_zuvor + ((256-N)/256) * transformation_aktuell 
+	wird dort angewendet. Der HEQ Dämpfungsfaktor stellt dabei den Wert N in der Gleichung dar. 
+	Der Faktor stellt also ein, wie stark der Einfluss der vorherigen HEQ Transformation 
+	auf die aktuelle ist. Umso niedriger der Wert von N um so größer ist der Einfluss des 
+	aktuellen Bildes. Umso größer der Wert von N umso kleiner ist der Einfluss der vorherigen 
+	Dämpfungs-Transferfunktion.
+
+* **Clip Limit Low**: Dieser Parameter definiert einen künstliche Menge, 
+	die jeder nicht leeren Histogrammklasse hinzugefügt wird. Wenn *Clip Limit Low* mit L dargestellt 
+	wird, so erhält jede Klasse mit der aktuellen Menge X die effektive Menge L + X. Jede Klasse, die 
+	nahe einer gefüllten Klasse ist erhält die Menge L. Der Effekt von höheren Werten ist eine stärkere
+	lineare Transferfunktion bereitzustellen. Niedrigere Werte führen zu einer nichtlinearen
+	Transferfunktion.
+
+* **Clip Limit High**: Dieser Parameter definiert die maximale Anzahl
+    von Pixeln, die sich in jeder Histogrammklasse sammeln dürfen. Jedes weitere Pixel wird verworfen.
+	Der Effekt dieses Parameters ist den Einfluss von stark gefüllten Klassen in der HEQ Transformation
+	zu beschränken.
+
+* **Empty Counts**: Dieser Parameter spezifiziert die maximale Anzahl von Pixeln in einer Klasse, damit
+    die Klasse als leere Klasse interpretiert wird. Jede Histogrammklasse mit dieser Anzahl an Pixeln oder
+	weniger wird als leere Klasse behandelt.
+
+Zusätzlich kann eine *Region of Interest* definiert werden. Der Algorithmus, der mit den obigen Parametern
+konfiguriert wird, arbeitet dann nur auf dieser Region. Diese Region kann definiert werden um Teile des Bildes
+von der Analyse auszuschließen und daher die Daten nicht verzerren kann. Dies ist zum Beispiel interessant,
+wenn irgendwo im Bild ein heißer Bereich ausgeschlossen werden soll.
+
+Dieser Modus sollte genutzt werden, wenn Daten visualisiert werden sollen.
+
+**Temperature Image**:
+
+Im Temperature Image Modus stellt das Bricklet ein 60x80 Pixel Bild mit einer Bildrate von 4.5Hz
+zur Verfügung. Jeder Pixel in dem Bild ist eine Temperaturmessung mit einer Auflösung von
+16-Bit.
+
+Das Thermal Imaging Bricklet hat zwei konfigurierbare Temperaturbereiche für den 
+Temperature Image Modus:
+
+* -273°C to 381°C mit einer Auflösung von 0.01°C
+* -273°C to 6279°C mit einer Auflösung von 0.1°C
+
+Müssen keine Temperaturen über 381°C sollte der erste Messbereich gewählt werden um die
+Auflösung zu erhöhen.
+
+Die Daten können für wissenschaftliche Berechnungen oder zur Analyse von 
+Temperaturänderungen genutzt werden.
+
+Dieser Modus sollte genutzt werden, wenn mit wirklichen Temperaturdaten gearbeitet
+werden soll.
+
+
 .. _thermal_imaging_bricklet_case:
 
 Gehäuse
