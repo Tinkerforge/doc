@@ -36,7 +36,7 @@ Features
 * Uses FLIR Lepton **with radiometry and shutter**
 * High Contrast Image with 8.6Hz and 8 bit resolution (for display)
 * Temperature Image with 4.5Hz and 16 bit resolution (for scientific calculations)
-* Definable spotmeter with min, mean, max temperature measurement
+* Definable spotmeter with min, max, mean temperature measurement
 * Automatic shutter control
 
 
@@ -64,7 +64,7 @@ cameras that are available on the market.
 
 In Temperature Image mode the Bricklet provides an image stream with 4.5Hz and 16 bit
 resolution. In the image data each pixel represents one 16 bit temperature value between
--273°C and 6279°C with a resolution of 0.1°C or a value between -273°C and 627°C with a 
+-273°C and 6279°C with a resolution of 0.1°C or a value between -273°C and 381°C with a 
 resolution of 0.01°C (depending on the resolution configuration). This mode can be
 used for scientific calculations and to analyze absolute temperature changes.
 

@@ -31,8 +31,13 @@ Thermal Imaging Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* 80x60 Pixel Wärmebildkamera
+* Messbereich -273°C bis 6279°C
+* Nutzt FLIR Lepton **mit Radometry und Shutter**
+* High Contrast Bild mit 8.6Hz und 8 Bit Auflösung (zum darstellen)
+* Temperatur Bild mit 4.5Hz und 16 Bit Auflösung (für wissenschaftliche Berechnungen)
+* Definierbares Spotmeter mit Min-, Max-, Durchschnitts-Temperaturberechnung
+* Automatische Shutter-Steuerung
 
 
 .. _thermal_imaging_bricklet_description:
@@ -40,7 +45,32 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Thermal Imaging :ref:`Bricklet <primer_bricklets>` ist mit einer
+60x80 Pixel `Wärmebildkamera <https://de.wikipedia.org/wiki/W%C3%A4rmebildkamera>`__
+ausgestattet. Das Bricklet kann mit :ref:`Bricks <primer_bricks>` verbunden werden.
+
+Das Bricklet nutzt einen FLIR Lepton Sensor mit Radiometrie und Shutter. Der Sensor
+kann Temperaturen zwischen -273°C bis zu 6279°C mit einer Auflösung von 80x60 Pixel
+messen.
+
+Ein Spotmeter kann definiert werden um Minimum-, Durchschnitts und Maximaltemperatur
+für eine definierte Region im Bild zu messen.
+
+Das Bricklet unterstützt zwei Modi: High Contrast Image und Temperature Image.
+
+Im High Contrast Image Modus streamt das Bricklet Bilddaten mit 8.6Hz und 8 Bit
+Auflösung. Die Bilddaten sind Grauwerte, der hohe Dynamikbereich des Sensors
+ist zusammengefasst um zur Anzeige geeignet zu sein. Dieser Modus wird von
+Wärmebildkameras, die auf dem Markt verfügbar sind, genutzt.
+
+Im Termperature Image Modus streamt das Bricklet Daten mit 4.5Hz und 16 Bit
+Auflösung. In den Bilddaten stellt jeder 16 Bit Wert eine Temperatur zwischen
+-273°C und 6279°C mit einer Auflösung von 0.1°C oder einen Wert -273°C und 381°C 
+mit einer Auflösung von 0.01°C (abhängig von der Auflösungs-Konfiguration). 
+Dieser Modus kann für wissenschaftliche Berechnungen und der Analyse von
+Temperaturänderungen genutzt werden.
+
+Der Shutter wird vom Bricklet automatisch gesteuert.
 
 
 Technische Spezifikation
@@ -52,11 +82,13 @@ Eigenschaft                       Wert
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Auflösung                         60x80
+Bildrate (Frame Rate)             High Contrast Image: 8.6Hz
+                                  Temperature Image: 4.5Hz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           40 x 40 x 9mm (1.57 x 1.57 x 0.35")
+Gewicht                           8g
 ================================  ============================================================
 
 
@@ -79,7 +111,7 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert sollte nun ein Wärmebild dargestellt werden.
 
 .. image:: /Images/Bricklets/bricklet_thermal_imaging_brickv.jpg
    :scale: 100 %
