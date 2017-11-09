@@ -66,8 +66,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/rgb-led-button-bricklet/raw/master/hardware/rgb-led-button-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/rgb_led_button_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rgb-led-button-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
-
+* 3D Modell (`Online ansehen <http://autode.sk/2zqJEtU>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb_led_button/rgb-button-bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb_led_button/rgb-button-bricklet.FCStd>`__)
 
 .. _rgb_led_button_bricklet_test:
 

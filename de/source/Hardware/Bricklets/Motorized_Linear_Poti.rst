@@ -66,7 +66,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/motorized-linear-poti-bricklet/raw/master/hardware/motorized-linear-poti-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/motorized_linear_poti_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/motorized-linear-poti-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2ztZjZo>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/motorized_linear_poti/motorized-poti.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/motorized_linear_poti/motorized-poti.FCStd>`__)
 
 
 .. _motorized_linear_poti_bricklet_test:

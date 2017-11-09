@@ -79,7 +79,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/rgb-led-button-bricklet/raw/master/hardware/rgb-led-button-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/rgb_led_button_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/rgb-led-button-bricklet/zipball/master>`__)
-* 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2zqJEtU>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb_led_button/rgb-button-bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb_led_button/rgb-button-bricklet.FCStd>`__)
 
 
 .. _rgb_led_button_bricklet_test:
