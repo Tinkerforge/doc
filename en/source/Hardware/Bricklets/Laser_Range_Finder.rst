@@ -70,6 +70,8 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/laser-range-finder-bricklet/raw/master/hardware/laser-range-finder-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/laser_range_finder_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/laser-range-finder-bricklet/zipball/master>`__)
+* 3D model (`View online <http://autode.sk/2hfjrUH>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/laser_range_finder/laser-range-finder.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/laser_range_finder/laser-range-finder.FCStd>`__)
+
 
 .. _laser_range_finder_bricklet_test:
 
