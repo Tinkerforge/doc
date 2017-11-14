@@ -60,7 +60,8 @@ The Bricklet supports two image modes: High Contrast Image and Temperature Image
 In High Contrast Image mode the Bricklet provides an image stream with 8.6Hz and 8 bit
 resolution. The image data is grey-scale, the high dynamic range of the sensor
 is collapsed to be appropriate for display. This mode is used in thermal imaging
-cameras that are available on the market.
+cameras that are available on the market. Typically the grey-scale data is converted
+in a pseudo-color image by a lookup table.
 
 In Temperature Image mode the Bricklet provides an image stream with 4.5Hz and 16 bit
 resolution. In the image data each pixel represents one 16 bit temperature value between

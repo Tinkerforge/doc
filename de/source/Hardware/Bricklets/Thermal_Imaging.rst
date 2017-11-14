@@ -61,7 +61,8 @@ Das Bricklet unterstützt zwei Modi: High Contrast Image und Temperature Image.
 Im High Contrast Image Modus streamt das Bricklet Bilddaten mit 8.6Hz und 8 Bit
 Auflösung. Die Bilddaten sind Grauwerte, der hohe Dynamikbereich des Sensors
 ist zusammengefasst um zur Anzeige geeignet zu sein. Dieser Modus wird von
-Wärmebildkameras, die auf dem Markt verfügbar sind, genutzt.
+Wärmebildkameras, die auf dem Markt verfügbar sind, genutzt. Üblicherweise werden
+die Grauwerte mittels einer Lookuptable auf Falschfarben abgebildet.
 
 Im Termperature Image Modus streamt das Bricklet Daten mit 4.5Hz und 16 Bit
 Auflösung. In den Bilddaten stellt jeder 16 Bit Wert eine Temperatur zwischen
