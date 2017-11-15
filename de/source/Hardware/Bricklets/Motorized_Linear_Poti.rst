@@ -31,8 +31,10 @@ Motorized Linear Poti Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Schiebepotentiometer mit 100mm Weg
+* Knopfposition kann vom Nutzer und vom integrierten Motor gesteuert werden
+* Keine zusätzliche Stromversorgung notwendig
+* Automatische Kalibrierung
 
 
 .. _motorized_linear_poti_bricklet_description:
@@ -40,24 +42,40 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Motorized Linear Poti :ref:`Bricklet <primer_bricklets>` ist mit einem 100mm
+`Schiebepotentiometer <https://de.wikipedia.org/wiki/Potentiometer>`__ ausgestattet das
+von dem integrierten Motor gesteuert werden kann. Das Bricklet kann mit 
+:ref:`Bricks <primer_bricks>` verbunden werden.
+
+Die Position des Potentiometers reicht von 0 (Schiebeknopf unten) bis zu 100
+(Schiebeknopf oben). Der Nutzer kann die Position vom Knopf ändern, die Position
+kann aber auch vom integrierten Motor geändert werden.
+
+Das Potentiometer kann konfiguriert werden, die Position zu halten. In diesem Fall
+fährt das Potentiometer selbstständig wieder zu der Ausgangsposition zurück, wenn der
+Nutzer die Position ändert. Wenn das Potentiometer nicht dazu konfiguriert wurde die Position
+zu halten, lässt sich der Schiebeknopf nach dem Anfahren der Position bewegen und verändert
+seine Position von selbst nicht.
 
 
 Technische Spezifikation
 ------------------------
 
-================================  ============================================================
-Eigenschaft                       Wert
-================================  ============================================================
-Stromverbrauch                    TBDmA
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
-================================  ============================================================
+====================================  ============================================================
+Eigenschaft                           Wert
+====================================  ============================================================
+Stromverbrauch                        TBDmA
+------------------------------------  ------------------------------------------------------------
+------------------------------------  ------------------------------------------------------------
+Schiebeweg                            100mm
+
+Befestigungsgewinde am Potentiometer  M3
+Abstand zwischen den Gewinden         120mm
+------------------------------------  ------------------------------------------------------------
+------------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)               145 x 20 x 28mm (5.70 x 0.79 x 1.10")
+Gewicht                               67g
+====================================  ============================================================
 
 
 Ressourcen
@@ -79,7 +97,8 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert kann nun die Position des Potentiometers
+geändert werden.
 
 .. image:: /Images/Bricklets/bricklet_motorized_linear_poti_brickv.jpg
    :scale: 100 %
