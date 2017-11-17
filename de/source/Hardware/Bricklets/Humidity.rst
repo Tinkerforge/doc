@@ -25,6 +25,11 @@ Humidity Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Humidity Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Humidity Bricklet 2.0 <humidity_v2_bricklet>`
+ empfohlen.
 
 Features
 --------

@@ -24,6 +24,11 @@ DMX Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Shopeintrag sowie Brick Viewer und Bindings Support für das DMX Bricklet
+ werden spätestens am Dienstag den 21. November veröffentlicht. Wir bitten um ein
+ wenig Geduld.
 
 Features
 --------

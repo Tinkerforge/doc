@@ -22,6 +22,11 @@ Thermal Imaging Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Shop entry as well as Brick Viewer and Bindings support for the Thermal Imaging Bricklet
+ will be released on Tuesday, November 21st at the latest. Thank you for your 
+ patience!
 
 Features
 --------

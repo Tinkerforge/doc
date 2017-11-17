@@ -25,6 +25,11 @@ Motorized Linear Poti Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Shopeintrag sowie Brick Viewer und Bindings Support für das Motorized Linear Poti Bricklet
+ werden spätestens am Dienstag den 21. November veröffentlicht. Wir bitten um ein
+ wenig Geduld.
 
 Features
 --------
