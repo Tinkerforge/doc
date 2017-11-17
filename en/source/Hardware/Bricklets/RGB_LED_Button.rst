@@ -49,7 +49,7 @@ You can read the current state of the button (pressed/released) and
 adjust the color of the LED. The red, green and blue part of the LED can be 
 controlled with 8 bit resolution each.
 
-A white inlay is attached below the cap. This inlay can be replaced by a
+A white inlay is attached below the cap. This paper inlay can be replaced by a
 custom printed inlay (for example a power sign or an arrow or similar).
 
 It is also possible to use events. This allows to react to button presses

@@ -32,8 +32,9 @@ RGB LED Button Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Qualitativer 15x15mm Taster
+* Einstellbare RGB LED Hintergrundbeleuchtung
+* Austauschbares/bedruckbares Tasterinnenteil
 
 
 .. _rgb_led_button_bricklet_description:
@@ -41,7 +42,21 @@ Features
 Beschreibung
 ------------
 
-TBD
+
+Das RGB LED :ref:`Bricklet <primer_bricklets>` ist mit einem Taster ausgestattet,
+dessen Hintergrundbeleuchtung per Software gesteuert werden kann.
+Das Bricklet erweitert :ref:`Bricks <primer_bricks>`.
+
+Der Zustand der Tasters (gedrückt, nicht gedrückt) kann ausgelesen werden und die 
+Farbe der LED kann gesteuert werden. Der Rot-, Grün- und Blauanteil der LED
+kann jeweils mit 8 Bit Auflösung gesteuert werden.
+
+Ein weißes Innenteil liegt unter der Tasterkappe. Dieses Innenteil kann
+durch ein eigenes gedrucktes Papier-Innenteil ausgetauscht werden. Somit kann der
+Taster zum Beispiel mit einem Pfeil oder ähnliches beschriftet werden.
+
+Um nicht den Zustand des Tasters dauernd abfragen zu müssen (pollen) können
+auch Event genutzt werden.
 
 
 Technische Spezifikation
@@ -53,11 +68,13 @@ Eigenschaft                       Wert
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+LED Auflösung                     8 bit
+Tastergröße                       15 x 15mm
+Kappengröße                       17,4 x 17,4mm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           25 x 25 x 30mm (0,98 x 0,98 x 1,18")
+Gewicht                           7g
 ================================  ============================================================
 
 
@@ -79,7 +96,8 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert können nun in der GUI die Farbe der Hintergrundbeleuchtung
+eingestellt und der Zustand des Tasters abgelesen werden.
 
 .. image:: /Images/Bricklets/bricklet_rgb_led_button_brickv.jpg
    :scale: 100 %
