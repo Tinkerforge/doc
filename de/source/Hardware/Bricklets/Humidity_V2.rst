@@ -10,18 +10,12 @@
 Humidity Bricklet 2.0
 =====================
 
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_humidity_v2_tilted_[?|?].jpg           Humidity Bricklet 2.0
 	Bricklets/bricklet_humidity_v2_horizontal_[?|?].jpg       Humidity Bricklet 2.0
-	Bricklets/bricklet_humidity_v2_master_[100|600].jpg       Humidity Bricklet 2.0 mit Master Brick
-	Cases/bricklet_humidity_v2_case_[100|600].jpg             Humidity Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_humidity_v2_brickv_[100|].jpg          Humidity Bricklet 2.0 im Brick Viewer
 	Dimensions/humidity_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 

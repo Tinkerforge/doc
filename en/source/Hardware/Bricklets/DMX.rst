@@ -10,18 +10,15 @@
 DMX Bricklet
 ============
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_dmx_tilted_[?|?].jpg           DMX Bricklet
-	Bricklets/bricklet_dmx_horizontal_[?|?].jpg       DMX Bricklet
-	Bricklets/bricklet_dmx_master_[100|600].jpg       DMX Bricklet with Master Brick
-	Cases/bricklet_dmx_case_[100|600].jpg             DMX Bricklet with case
+	Bricklets/bricklet_dmx_tilted1_[?|?].jpg          DMX Bricklet
+	Bricklets/bricklet_dmx_tilted2_[?|?].jpg          DMX Bricklet
+	Bricklets/bricklet_dmx_front_[?|?].jpg            DMX Bricklet
+	Bricklets/bricklet_dmx_back_[?|?].jpg             DMX Bricklet
+	Bricklets/bricklet_dmx_top_[?|?].jpg              DMX Bricklet
 	Bricklets/bricklet_dmx_brickv_[100|].jpg          DMX Bricklet in Brick Viewer
 	Dimensions/dmx_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -110,6 +107,8 @@ You can now change between master/slave mode and send/receive DMX data.
 
 Case
 ----
+
+Coming soon...
 
 ..
 	A `laser-cut case for the DMX Bricklet

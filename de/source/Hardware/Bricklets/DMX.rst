@@ -10,18 +10,15 @@
 DMX Bricklet
 ============
 
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_dmx_tilted_[?|?].jpg           DMX Bricklet
-	Bricklets/bricklet_dmx_horizontal_[?|?].jpg       DMX Bricklet
-	Bricklets/bricklet_dmx_master_[100|600].jpg       DMX Bricklet mit Master Brick
-	Cases/bricklet_dmx_case_[100|600].jpg             DMX Bricklet im Gehäuse
+	Bricklets/bricklet_dmx_tilted1_[?|?].jpg          DMX Bricklet
+	Bricklets/bricklet_dmx_tilted2_[?|?].jpg          DMX Bricklet
+	Bricklets/bricklet_dmx_front_[?|?].jpg            DMX Bricklet
+	Bricklets/bricklet_dmx_back_[?|?].jpg             DMX Bricklet
+	Bricklets/bricklet_dmx_top_[?|?].jpg              DMX Bricklet
 	Bricklets/bricklet_dmx_brickv_[100|].jpg          DMX Bricklet im Brick Viewer
 	Dimensions/dmx_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -113,6 +110,8 @@ gesendet oder empfangen werden.
 
 Gehäuse
 -------
+
+Folgt in Kürze...
 
 ..
 	Ein `laser-geschnittenes Gehäuse für das DMX Bricklet 

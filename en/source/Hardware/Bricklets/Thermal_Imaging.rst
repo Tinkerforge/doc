@@ -10,18 +10,13 @@
 Thermal Imaging Bricklet
 ========================
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_thermal_imaging_tilted_[?|?].jpg           Thermal Imaging Bricklet
 	Bricklets/bricklet_thermal_imaging_horizontal_[?|?].jpg       Thermal Imaging Bricklet
-	Bricklets/bricklet_thermal_imaging_master_[100|600].jpg       Thermal Imaging Bricklet with Master Brick
-	Cases/bricklet_thermal_imaging_case_[100|600].jpg             Thermal Imaging Bricklet with case
+	Bricklets/bricklet_thermal_imaging_lepton_[?|?].jpg           Thermal Imaging Bricklet
 	Bricklets/bricklet_thermal_imaging_brickv_[100|].jpg          Thermal Imaging Bricklet in Brick Viewer
 	Dimensions/thermal_imaging_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -214,6 +209,8 @@ Use this mode if you want to work with actual temperature data.
 
 Case
 ----
+
+Coming soon...
 
 ..
 	A `laser-cut case for the Thermal Imaging Bricklet

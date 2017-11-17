@@ -10,18 +10,14 @@
 RGB LED Button Bricklet
 ========================
 
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_rgb_led_button_tilted_[?|?].jpg           RGB LED Button Bricklet
-	Bricklets/bricklet_rgb_led_button_horizontal_[?|?].jpg       RGB LED Button Bricklet
-	Bricklets/bricklet_rgb_led_button_master_[100|600].jpg       RGB LED Button Bricklet mit Master Brick
-	Cases/bricklet_rgb_led_button_case_[100|600].jpg             RGB LED Button Bricklet im Gehäuse
+	Bricklets/bricklet_rgb_led_button_bottom_[?|?].jpg           RGB LED Button Bricklet oben
+	Bricklets/bricklet_rgb_led_button_top_[?|?].jpg              RGB LED Button Bricklet unten
+	Bricklets/bricklet_rgb_led_button_finger_[?|?].jpg           RGB LED Button Bricklet mit Finger
 	Bricklets/bricklet_rgb_led_button_brickv_[100|].jpg          RGB LED Button Bricklet im Brick Viewer
 	Dimensions/rgb_led_button_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -93,6 +89,8 @@ Wenn alles wie erwartet funktioniert ... TBD.
 
 Gehäuse
 -------
+
+Folgt in Kürze...
 
 ..
 	Ein `laser-geschnittenes Gehäuse für das RGB LED Button Bricklet 

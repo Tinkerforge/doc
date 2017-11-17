@@ -10,18 +10,14 @@
 RGB LED Button Bricklet
 ========================
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_rgb_led_button_tilted_[?|?].jpg           RGB LED Button Bricklet
-	Bricklets/bricklet_rgb_led_button_horizontal_[?|?].jpg       RGB LED Button Bricklet
-	Bricklets/bricklet_rgb_led_button_master_[100|600].jpg       RGB LED Button Bricklet with Master Brick
-	Cases/bricklet_rgb_led_button_case_[100|600].jpg             RGB LED Button Bricklet with case
+	Bricklets/bricklet_rgb_led_button_bottom_[?|?].jpg           RGB LED Button Bricklet bottom
+	Bricklets/bricklet_rgb_led_button_top_[?|?].jpg              RGB LED Button Bricklet top
+	Bricklets/bricklet_rgb_led_button_finger_[?|?].jpg           RGB LED Button Bricklet with finger
 	Bricklets/bricklet_rgb_led_button_brickv_[100|].jpg          RGB LED Button Bricklet in Brick Viewer
 	Dimensions/rgb_led_button_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -107,6 +103,8 @@ You can now see button presses in the GUI and control the backlight RGB LED.
 
 Case
 ----
+
+Coming soon...
 
 ..
 	A `laser-cut case for the RGB LED Button Bricklet

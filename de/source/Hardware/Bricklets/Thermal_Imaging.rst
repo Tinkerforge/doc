@@ -10,18 +10,13 @@
 Thermal Imaging Bricklet
 ========================
 
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_thermal_imaging_tilted_[?|?].jpg           Thermal Imaging Bricklet
 	Bricklets/bricklet_thermal_imaging_horizontal_[?|?].jpg       Thermal Imaging Bricklet
-	Bricklets/bricklet_thermal_imaging_master_[100|600].jpg       Thermal Imaging Bricklet mit Master Brick
-	Cases/bricklet_thermal_imaging_case_[100|600].jpg             Thermal Imaging Bricklet im Gehäuse
+	Bricklets/bricklet_thermal_imaging_lepton_[?|?].jpg           Thermal Imaging Bricklet
 	Bricklets/bricklet_thermal_imaging_brickv_[100|].jpg          Thermal Imaging Bricklet im Brick Viewer
 	Dimensions/thermal_imaging_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -33,7 +28,7 @@ Features
 
 * 80x60 Pixel Wärmebildkamera
 * Messbereich -273°C bis 6279°C
-* Nutzt FLIR Lepton **mit Radometry und Shutter**
+* Nutzt FLIR Lepton **mit Radiometry und Shutter**
 * High Contrast Bild mit 8.6Hz und 8 Bit Auflösung (zum darstellen)
 * Temperatur Bild mit 4.5Hz und 16 Bit Auflösung (für wissenschaftliche Berechnungen)
 * Definierbares Spotmeter mit Min-, Max-, Durchschnitts-Temperaturberechnung
@@ -221,6 +216,8 @@ werden soll.
 
 Gehäuse
 -------
+
+Folgt in Kürze...
 
 ..
 	Ein `laser-geschnittenes Gehäuse für das Thermal Imaging Bricklet 

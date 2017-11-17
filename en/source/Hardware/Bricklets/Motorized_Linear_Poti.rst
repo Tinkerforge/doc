@@ -10,18 +10,16 @@
 Motorized Linear Poti Bricklet
 ==============================
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_motorized_linear_poti_tilted_[?|?].jpg           Motorized Linear Poti Bricklet
-	Bricklets/bricklet_motorized_linear_poti_horizontal_[?|?].jpg       Motorized Linear Poti Bricklet
-	Bricklets/bricklet_motorized_linear_poti_master_[100|600].jpg       Motorized Linear Poti Bricklet with Master Brick
-	Cases/bricklet_motorized_linear_poti_case_[100|600].jpg             Motorized Linear Poti Bricklet with case
+	Bricklets/bricklet_motorized_linear_poti_tilted1_[?|?].jpg          Motorized Linear Poti Bricklet
+	Bricklets/bricklet_motorized_linear_poti_tilted2_[?|?].jpg          Motorized Linear Poti Bricklet
+	Bricklets/bricklet_motorized_linear_poti_motor_[?|?].jpg            Motorized Linear Poti Bricklet
+	Bricklets/bricklet_motorized_linear_poti_bottom_[?|?].jpg           Motorized Linear Poti Bricklet
+	Bricklets/bricklet_motorized_linear_poti_side_[?|?].jpg             Motorized Linear Poti Bricklet
+	Bricklets/bricklet_motorized_linear_poti_front_[?|?].jpg            Motorized Linear Poti Bricklet
 	Bricklets/bricklet_motorized_linear_poti_brickv_[100|].jpg          Motorized Linear Poti Bricklet in Brick Viewer
 	Dimensions/motorized_linear_poti_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -111,6 +109,8 @@ potentiometer with the GUI.
 
 Case
 ----
+
+Coming soon...
 
 ..
 	A `laser-cut case for the Motorized Linear Poti Bricklet
