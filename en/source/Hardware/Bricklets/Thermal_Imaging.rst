@@ -100,7 +100,8 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/thermal-imaging-bricklet/raw/master/hardware/thermal-imaging-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/thermal_imaging_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/thermal-imaging-bricklet/zipball/master>`__)
-* 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2zkvQ5b>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.FCStd>`__)
+
 
 .. _thermal_imaging_bricklet_test:
 
