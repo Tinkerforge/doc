@@ -163,30 +163,30 @@ zu definieren um genau für dieses Pixel die Temperatur zu erhalten.
 In diesem Modus können verschiedene Parameter konfiguriert werden:
 
 
-* **Dampening Factor**: Dieser Parameter stellt die Stärke der zeitlichen Dämpfung dar, 
-	die auf der HEQ (history equalization) Transformationsfunktion angewendet wird. 
-	Ein IIR-Filter der Form (N/256) * transformation_zuvor + ((256-N)/256) * transformation_aktuell 
-	wird dort angewendet. Der HEQ Dämpfungsfaktor stellt dabei den Wert N in der Gleichung dar. 
-	Der Faktor stellt also ein, wie stark der Einfluss der vorherigen HEQ Transformation 
-	auf die aktuelle ist. Umso niedriger der Wert von N um so größer ist der Einfluss des 
-	aktuellen Bildes. Umso größer der Wert von N umso kleiner ist der Einfluss der vorherigen 
-	Dämpfungs-Transferfunktion.
+* **Dampening Factor**: Dieser Parameter stellt die Stärke der zeitlichen Dämpfung dar,
+  die auf der HEQ (history equalization) Transformationsfunktion angewendet wird.
+  Ein IIR-Filter der Form (N/256) * transformation_zuvor + ((256-N)/256) * transformation_aktuell
+  wird dort angewendet. Der HEQ Dämpfungsfaktor stellt dabei den Wert N in der Gleichung dar.
+  Der Faktor stellt also ein, wie stark der Einfluss der vorherigen HEQ Transformation
+  auf die aktuelle ist. Umso niedriger der Wert von N um so größer ist der Einfluss des
+  aktuellen Bildes. Umso größer der Wert von N umso kleiner ist der Einfluss der vorherigen
+  Dämpfungs-Transferfunktion.
 
-* **Clip Limit Low**: Dieser Parameter definiert einen künstliche Menge, 
-	die jeder nicht leeren Histogrammklasse hinzugefügt wird. Wenn *Clip Limit Low* mit L dargestellt 
-	wird, so erhält jede Klasse mit der aktuellen Menge X die effektive Menge L + X. Jede Klasse, die 
-	nahe einer gefüllten Klasse ist erhält die Menge L. Der Effekt von höheren Werten ist eine stärkere
-	lineare Transferfunktion bereitzustellen. Niedrigere Werte führen zu einer nichtlinearen
-	Transferfunktion.
+* **Clip Limit Low**: Dieser Parameter definiert einen künstliche Menge,
+  die jeder nicht leeren Histogrammklasse hinzugefügt wird. Wenn *Clip Limit Low* mit L dargestellt
+  wird, so erhält jede Klasse mit der aktuellen Menge X die effektive Menge L + X. Jede Klasse, die
+  nahe einer gefüllten Klasse ist erhält die Menge L. Der Effekt von höheren Werten ist eine stärkere
+  lineare Transferfunktion bereitzustellen. Niedrigere Werte führen zu einer nichtlinearen
+  Transferfunktion.
 
 * **Clip Limit High**: Dieser Parameter definiert die maximale Anzahl
-    von Pixeln, die sich in jeder Histogrammklasse sammeln dürfen. Jedes weitere Pixel wird verworfen.
-	Der Effekt dieses Parameters ist den Einfluss von stark gefüllten Klassen in der HEQ Transformation
-	zu beschränken.
+  von Pixeln, die sich in jeder Histogrammklasse sammeln dürfen. Jedes weitere Pixel wird verworfen.
+  Der Effekt dieses Parameters ist den Einfluss von stark gefüllten Klassen in der HEQ Transformation
+  zu beschränken.
 
 * **Empty Counts**: Dieser Parameter spezifiziert die maximale Anzahl von Pixeln in einer Klasse, damit
-    die Klasse als leere Klasse interpretiert wird. Jede Histogrammklasse mit dieser Anzahl an Pixeln oder
-	weniger wird als leere Klasse behandelt.
+  die Klasse als leere Klasse interpretiert wird. Jede Histogrammklasse mit dieser Anzahl an Pixeln oder
+  weniger wird als leere Klasse behandelt.
 
 Zusätzlich kann eine *Region of Interest* definiert werden. Der Algorithmus, der mit den obigen Parametern
 konfiguriert wird, arbeitet dann nur auf dieser Region. Diese Region kann definiert werden um Teile des Bildes
