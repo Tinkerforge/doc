@@ -65,7 +65,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ============================================================
 Sensor                            HDC1080
-Stromverbrauch                    TBDmA
+Stromverbrauch                    28,5mW (5,7mA bei 5V, ohne Heizelement)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Relative Luftfeuchtigkeit (RH)    0% RH - 100%RH in 0,01%RH Schritten, 14Bit Auflösung
