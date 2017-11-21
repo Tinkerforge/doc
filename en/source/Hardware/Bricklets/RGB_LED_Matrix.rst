@@ -18,6 +18,7 @@ RGB LED Matrix Bricklet
 	Bricklets/bricklet_rgb_led_matrix_w_cable_[?|?].jpg          RGB LED Matrix Bricklet with cable
 	Bricklets/bricklet_rgb_led_matrix_horizontal_[?|?].jpg       RGB LED Matrix Bricklet
 	Bricklets/bricklet_rgb_led_matrix_detail_[?|?].jpg           RGB LED Matrix Bricklet
+	Bricklets/bricklet_rgb_led_matrix_w_power_[?|?].jpg          RGB LED Matrix Bricklet
 	Bricklets/bricklet_rgb_led_matrix_brickv_[100|].jpg          RGB LED Matrix Bricklet in Brick Viewer
 	Dimensions/rgb_led_matrix_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -62,8 +63,8 @@ Current Consumption               39mW (7.8mA at 5V) plus external 5V input for 
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Matrix Size                       8x8
-LED Resolution                    8 bit
-Cable length                      15cm
+LED Resolution                    8 bit per channel
+Cable Length                      15cm
 
 Input Voltage                     5V
 Max Input Current                 Each RGB LED can pull up to 20mA per color,

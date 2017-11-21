@@ -68,7 +68,7 @@ Current Consumption (LEDs off)    31mW (6.2mA at 5V)
 Current Consumption (LEDs on)     207mW (41.4mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-LED Resolution                    8 bit
+LED Resolution                    8 bit per channel
 Inlay size                        14 x 14mm
 Button size                       15 x 15mm
 Cap size                          17.4 x 17.4mm
