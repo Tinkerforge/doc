@@ -64,7 +64,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 Sensor                            HDC1080
-Current Consumption               TBDmA
+Current Consumption               28.5mW (5.7mA at 5V, without heater)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Relative Humidity (RH)            0% RH - 100%RH in 0.01%RH steps, 14 bit resolution
