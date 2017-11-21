@@ -40,7 +40,7 @@ Features
 Beschreibung
 ------------
 
-Das DMX :ref:`Bricklet <primer_bricklets>` können :ref:`Bricks <primer_bricks>` 
+Mit dem DMX :ref:`Bricklet <primer_bricklets>` können :ref:`Bricks <primer_bricks>` 
 als DMX Slave oder Master eingesetzt werden.
 
 Im Master Modus kann das Bricklet bis zu 512 Kanäle mit der maximal möglichen
