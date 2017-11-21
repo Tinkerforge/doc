@@ -62,7 +62,7 @@ Stromverbrauch                    39mW (7,8mA bei 5V) zuzüglich externer 5V Ein
 --------------------------------  -------------------------------------------------------------
 --------------------------------  -------------------------------------------------------------
 Matrix-Größe                      8x8
-LED Auflösung                     8-Bit
+LED Auflösung                     8-Bit pro Kanal
 Kabellänge                        15cm
 
 Eingangsspannung                  5V

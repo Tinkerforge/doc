@@ -41,7 +41,7 @@ Description
 -----------
 
 The Thermal Imaging :ref:`Bricklet <primer_bricklets>` is equipped with a
-60x80 pixel `thermal imaging camera <https://en.wikipedia.org/wiki/Thermographic_camera>`__.
+80x60 pixel `thermal imaging camera <https://en.wikipedia.org/wiki/Thermographic_camera>`__.
 It can be connected to a :ref:`Brick <primer_bricks>`.
 
 The Bricklet uses a FLIR Lepton sensor with radiometry and shutter. It can
@@ -75,12 +75,12 @@ Property                          Value
 Current Consumption               546mW (109.2mA at 5V, running)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Resolution                        60x80
+Resolution                        80x60
 Frame Rate                        8.6Hz (High Contrast Image), 4.5Hz (Temperature Image)
 Field of View                     51° horizontal, 66° diagonal
 Depth of Field                    10cm to infinity
 Thermal Sensitivity               < 50mK (0.05°C)
-Radiometric accuracy              +/-5°C or 5% (typical)
+Radiometric accuracy              ±5°C or 5% (typical)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 9mm (1.57 x 1.57 x 0.35")
