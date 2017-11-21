@@ -86,6 +86,48 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rgb-led-button-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <http://autode.sk/2zqJEtU>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb_led_button/rgb-button-bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb_led_button/rgb-button-bricklet.FCStd>`__)
 
+Taster-Knopfbeschriftung
+------------------------
+
+Das RGB LED Button Bricklet besteht aus vier Teilen:
+
+* Bricklet mit Taster und RGB LED,
+* Weißes Kappeninnenteil,
+* Kappeneinlage (optional, 14x14mm) und
+* Transparente Kappe.
+
+.. image:: /Images/Bricklets/bricklet_rgb_led_button_disassembled_800.jpg
+   :scale: 100 %
+   :alt: RGB LED Button Bricklet zerlegt
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rgb_led_button_disassembled_1200.jpg
+
+Es können sehr einfach eigene Kappeneinlagen hergestellt werden. Zum Beispiel können Symbole
+mit einem Drucker auf eine durchsichtige Folie gedruckt werden. Die Einlage sollte eine Größe
+von 14x14mm haben und zwischen dem weißen Kappeninnenteil und der transparenten Kappe gelegt werden.
+
+Anstatt einer Folie kann natürlich auch einfaches Papier verwendet werden, dies
+beeinflusst aber die LED Helligkeit ein wenig.
+
+Im nachfolgenden Foto haben wir drei verschiedene RGB LED Button Bricklets mit drei verschiedenen
+Einlagen einmal bei Umgebungslicht und einmal bei Dunkelheit abgebildet. Die Symbole wurden auf
+eine Folie mittels Laserdrucker gedruckt.
+
+.. image:: /Images/Bricklets/bricklet_rgb_led_button_3on_bright_600.jpg
+   :scale: 100 %
+   :alt: RGB LED Button Bricklets mit Einlagen
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rgb_led_button_3on_bright_1000.jpg
+
+.. image:: /Images/Bricklets/bricklet_rgb_led_button_3on_dark_600.jpg
+   :scale: 100 %
+   :alt: RGB LED Button Bricklets mit Einlagen in Dunkelheit
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rgb_led_button_3on_dark_1000.jpg
+
+
+
+
 .. _rgb_led_button_bricklet_test:
 
 Erster Test
