@@ -65,6 +65,7 @@ Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 LED Resolution                    8 bit
+Inlay size                        14 x 14mm
 Button size                       15 x 15mm
 Cap size                          17.4 x 17.4mm
 --------------------------------  ------------------------------------------------------------
@@ -81,6 +82,44 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/rgb_led_button_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/rgb-led-button-bricklet/zipball/master>`__)
 * 3D model (`View online <http://autode.sk/2zqJEtU>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rgb_led_button/rgb-button-bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rgb_led_button/rgb-button-bricklet.FCStd>`__)
+
+
+Button Inlay
+------------
+
+The RGB LED Button Bricklet consists of four parts:
+
+* Bricklet with button and RGB LED,
+* White cap,
+* Inlay (optional, 14x14mm) and
+* Transparent cap.
+
+.. image:: /Images/Bricklets/bricklet_rgb_led_button_disassembled_800.jpg
+   :scale: 100 %
+   :alt: RGB LED Button Bricklet disassembled
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rgb_led_button_disassembled_1200.jpg
+
+You can easily print your own inlays (size for perfect fit is 14x14mm). Put them between the 
+white and the transparent cap.
+
+For best results you can print the inlay on a transparent foil. A simple piece
+of white paper works too, but the LED brightness decreases a little bit.
+
+Below you can find an example of three RGB LED Button Bricklets with different inlays with
+and without anbient light.
+
+.. image:: /Images/Bricklets/bricklet_rgb_led_button_3on_bright_600.jpg
+   :scale: 100 %
+   :alt: RGB LED Button Bricklets with inlays
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rgb_led_button_3on_bright_1000.jpg
+
+.. image:: /Images/Bricklets/bricklet_rgb_led_button_3on_dark_600.jpg
+   :scale: 100 %
+   :alt: RGB LED Button Bricklets with inlays in darkness
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rgb_led_button_3on_dark_1000.jpg
 
 
 .. _rgb_led_button_bricklet_test:
