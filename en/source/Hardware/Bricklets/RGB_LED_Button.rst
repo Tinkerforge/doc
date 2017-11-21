@@ -107,7 +107,7 @@ For best results you can print the inlay on a transparent foil. A simple piece
 of white paper works too, but the LED brightness decreases a little bit.
 
 Below you can find an example of three RGB LED Button Bricklets with different inlays with
-and without anbient light.
+and without ambient light.
 
 .. image:: /Images/Bricklets/bricklet_rgb_led_button_3on_bright_600.jpg
    :scale: 100 %
