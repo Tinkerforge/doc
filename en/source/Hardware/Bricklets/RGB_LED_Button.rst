@@ -1,5 +1,5 @@
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / RGB LED Button Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/rgb-led-button-bricklet.html
+:shoplink: ../../../shop/bricklets/rgb-led-button-bricklet.html
 
 .. include:: RGB_LED_Button.substitutions
    :start-after: >>>substitutions
@@ -23,11 +23,6 @@ RGB LED Button Bricklet
 
 	{% tfgalleryend %}
 
-.. note::
-
- Shop entry as well as Brick Viewer and Bindings support for the RGB LED Button Bricklet
- will be released on Tuesday, November 21st at the latest. Thank you for your 
- patience!
 
 Features
 --------

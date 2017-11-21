@@ -1,5 +1,5 @@
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / DMX Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/dmx-bricklet.html
+:shoplink: ../../../shop/bricklets/dmx-bricklet.html
 
 .. include:: DMX.substitutions
    :start-after: >>>substitutions
@@ -24,11 +24,6 @@ DMX Bricklet
 
 	{% tfgalleryend %}
 
-.. note::
-
- Shopeintrag sowie Brick Viewer und Bindings Support für das DMX Bricklet
- werden spätestens am Dienstag den 21. November veröffentlicht. Wir bitten um ein
- wenig Geduld.
 
 Features
 --------

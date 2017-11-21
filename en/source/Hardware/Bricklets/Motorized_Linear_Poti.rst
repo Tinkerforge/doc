@@ -1,5 +1,5 @@
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Motorized Linear Poti Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/motorized-linear-poti-bricklet.html
+:shoplink: ../../../shop/bricklets/motorized-linear-poti-bricklet.html
 
 .. include:: Motorized_Linear_Poti.substitutions
    :start-after: >>>substitutions
@@ -25,11 +25,6 @@ Motorized Linear Poti Bricklet
 
 	{% tfgalleryend %}
 
-.. note::
-
- Shop entry as well as Brick Viewer and Bindings support for the Motorized Linear Poti Bricklet
- will be released on Tuesday, November 21st at the latest. Thank you for your 
- patience!
 
 Features
 --------

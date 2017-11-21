@@ -1,5 +1,5 @@
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Humidity Bricklet 2.0
-:FIXME_shoplink: ../../../shop/bricklets/humidity-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/humidity-v2-bricklet.html
 
 .. include:: Humidity_V2.substitutions
    :start-after: >>>substitutions
@@ -21,11 +21,6 @@ Humidity Bricklet 2.0
 
 	{% tfgalleryend %}
 
-.. note::
-
- Shop entry as well as Brick Viewer and Bindings support for the Humidity Bricklet 2.0
- will be released on Tuesday, November 21st at the latest. Thank you for your 
- patience!
 
 Features
 --------

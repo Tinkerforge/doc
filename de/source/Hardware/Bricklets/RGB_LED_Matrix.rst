@@ -1,5 +1,5 @@
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / RGB LED Matrix Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/rgb-led-matrix-bricklet.html
+:shoplink: ../../../shop/bricklets/rgb-led-matrix-bricklet.html
 
 .. include:: RGB_LED_Matrix.substitutions
    :start-after: >>>substitutions
@@ -15,6 +15,7 @@ RGB LED Matrix Bricklet
 	{% tfgallery %}
 
 	Bricklets/bricklet_rgb_led_matrix_tilted_[?|?].jpg           RGB LED Matrix Bricklet
+	Bricklets/bricklet_rgb_led_matrix_w_cable_[?|?].jpg          RGB LED Matrix Bricklet mit Kabel
 	Bricklets/bricklet_rgb_led_matrix_horizontal_[?|?].jpg       RGB LED Matrix Bricklet
 	Bricklets/bricklet_rgb_led_matrix_detail_[?|?].jpg           RGB LED Matrix Bricklet
 	Bricklets/bricklet_rgb_led_matrix_brickv_[100|].jpg          RGB LED Matrix Bricklet im Brick Viewer
@@ -22,11 +23,6 @@ RGB LED Matrix Bricklet
 
 	{% tfgalleryend %}
 
-.. note::
-
- Shopeintrag sowie Brick Viewer und Bindings Support für das RGB LED Matrix Bricklet
- werden spätestens am Dienstag den 21. November veröffentlicht. Wir bitten um ein
- wenig Geduld.
 
 Features
 --------
@@ -67,6 +63,7 @@ Stromverbrauch                    39mW (7,8mA bei 5V) zuzüglich externer 5V Ein
 --------------------------------  -------------------------------------------------------------
 Matrix-Größe                      8x8
 LED Auflösung                     8-Bit
+Kabellänge                        15cm
 
 Eingangsspannung                  5V
 Maximaler Eingangsstrom           Jede RGB LED kann bis zu 20mA pro Farbe verbrauchen, dies

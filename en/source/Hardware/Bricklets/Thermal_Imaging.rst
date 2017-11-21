@@ -1,5 +1,5 @@
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Thermal Imaging Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/thermal-imaging-bricklet.html
+:shoplink: ../../../shop/bricklets/thermal-imaging-bricklet.html
 
 .. include:: Thermal_Imaging.substitutions
    :start-after: >>>substitutions
@@ -22,11 +22,6 @@ Thermal Imaging Bricklet
 
 	{% tfgalleryend %}
 
-.. note::
-
- Shop entry as well as Brick Viewer and Bindings support for the Thermal Imaging Bricklet
- will be released on Tuesday, November 21st at the latest. Thank you for your 
- patience!
 
 Features
 --------
