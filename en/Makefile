@@ -54,6 +54,7 @@ html: generate
 	if [ ! -d $(BUILDDIR)/html/_images/Screenshots ]; then ln -s `pwd`/source/Images/Screenshots $(BUILDDIR)/html/_images/Screenshots; fi;
 	if [ ! -d $(BUILDDIR)/html/_images/Software ]; then ln -s `pwd`/source/Images/Software $(BUILDDIR)/html/_images/Software; fi;
 	if [ ! -d $(BUILDDIR)/html/_images/Tutorial ]; then ln -s `pwd`/source/Images/Tutorial $(BUILDDIR)/html/_images/Tutorial; fi;
+	if [ ! -d $(BUILDDIR)/html/_images/Videos ]; then ln -s `pwd`/source/Images/Videos $(BUILDDIR)/html/_images/Videos; fi;
 
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo

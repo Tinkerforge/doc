@@ -55,6 +55,14 @@ custom printed inlay (for example a power sign or an arrow or similar).
 It is also possible to use events. This allows to react to button presses
 without polling.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_rgb_led_button_video_ready.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_rgb_led_button_video_ready.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_rgb_led_button_video_ready.webm" type="video/webm">
+	</video> 
+
 Technical Specifications
 ------------------------
 
