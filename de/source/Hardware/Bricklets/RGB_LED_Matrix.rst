@@ -54,6 +54,13 @@ Das Bricklet wird mit einem 15cm Anschlusskabel geliefert. Über das Kabel
 muss eine externe 5V Versorgung angeschlossen werden. 
 Die LEDs können nicht über den Brickletanschluss versorgt werden.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_rgb_led_matrix_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_rgb_led_matrix_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_rgb_led_matrix_video.webm" type="video/webm">
+	</video>
 
 Technische Spezifikation
 ------------------------
