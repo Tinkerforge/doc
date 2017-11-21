@@ -16,6 +16,7 @@ RGB LED Matrix Bricklet
 
 	Bricklets/bricklet_rgb_led_matrix_tilted_[?|?].jpg           RGB LED Matrix Bricklet
 	Bricklets/bricklet_rgb_led_matrix_w_cable_[?|?].jpg          RGB LED Matrix Bricklet mit Kabel
+	Bricklets/bricklet_rgb_led_matrix_rainbow_[?|?].jpg          RGB LED Matrix Bricklet
 	Bricklets/bricklet_rgb_led_matrix_horizontal_[?|?].jpg       RGB LED Matrix Bricklet
 	Bricklets/bricklet_rgb_led_matrix_detail_[?|?].jpg           RGB LED Matrix Bricklet
 	Bricklets/bricklet_rgb_led_matrix_w_power_[?|?].jpg          RGB LED Matrix Bricklet
