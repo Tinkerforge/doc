@@ -47,7 +47,7 @@ Description
 
 The Motorized Linear Poti :ref:`Bricklet <primer_bricklets>` is equipped with
 a motor controllable 100mm linear `potentiometer <https://en.wikipedia.org/wiki/Potentiometer>`__.
-It can be connected to a :ref:`Brick <primer_bricks>`
+It can be connected to a :ref:`Brick <primer_bricks>`.
 
 The position of the potentiometer ranges from 0 (slider down) to 100 (slider up). A user
 can change the position of the potentiometer and it is possible to drive the potentiometer 
