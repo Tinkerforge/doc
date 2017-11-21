@@ -62,8 +62,8 @@ Current Consumption               39mW (7.8mA at 5V) plus external 5V input for 
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Matrix Size                       8x8
-LED Resolution                    8 bit
-Cable length                      15cm
+LED Resolution                    8 bit per channel
+Cable Length                      15cm
 
 Input Voltage                     5V
 Max Input Current                 Each RGB LED can pull up to 20mA per color,

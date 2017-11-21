@@ -29,8 +29,8 @@ Features
 * 80x60 Pixel Wärmebildkamera
 * Messbereich -273°C bis 6279°C
 * Nutzt FLIR Lepton **mit Radiometry und Shutter**
-* High Contrast Bild mit 8.6Hz und 8 Bit Auflösung (zum darstellen)
-* Temperatur Bild mit 4.5Hz und 16 Bit Auflösung (für wissenschaftliche Berechnungen)
+* High Contrast Bild mit 8,6Hz und 8 Bit Auflösung (zum darstellen)
+* Temperatur Bild mit 4,5Hz und 16 Bit Auflösung (für wissenschaftliche Berechnungen)
 * Definierbares Spotmeter mit Min-, Max-, Durchschnitts-Temperaturberechnung
 * Automatische Shutter-Steuerung
 
@@ -53,16 +53,16 @@ für eine definierte Region im Bild zu messen.
 
 Das Bricklet unterstützt zwei Modi: High Contrast Image und Temperature Image.
 
-Im High Contrast Image Modus streamt das Bricklet Bilddaten mit 8.6Hz und 8 Bit
+Im High Contrast Image Modus streamt das Bricklet Bilddaten mit 8,6Hz und 8 Bit
 Auflösung. Die Bilddaten sind Grauwerte, der hohe Dynamikbereich des Sensors
 ist zusammengefasst um zur Anzeige geeignet zu sein. Dieser Modus wird von
 Wärmebildkameras, die auf dem Markt verfügbar sind, genutzt. Üblicherweise werden
 die Grauwerte mittels einer Lookuptable auf Falschfarben abgebildet.
 
-Im Termperature Image Modus streamt das Bricklet Daten mit 4.5Hz und 16 Bit
+Im Termperature Image Modus streamt das Bricklet Daten mit 4,5Hz und 16 Bit
 Auflösung. In den Bilddaten stellt jeder 16 Bit Wert eine Temperatur zwischen
--273°C und 6279°C mit einer Auflösung von 0.1°C oder einen Wert -273°C und 381°C 
-mit einer Auflösung von 0.01°C (abhängig von der Auflösungs-Konfiguration). 
+-273°C und 6279°C mit einer Auflösung von 0,1°C oder einen Wert -273°C und 381°C
+mit einer Auflösung von 0,01°C (abhängig von der Auflösungs-Konfiguration).
 Dieser Modus kann für wissenschaftliche Berechnungen und der Analyse von
 Temperaturänderungen genutzt werden.
 
@@ -78,12 +78,12 @@ Eigenschaft                       Wert
 Stromverbrauch                    546mW (109,2mA bei 5V, laufend)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Auflösung                         60x80
+Auflösung                         80x60
 Bildrate (Frame Rate)             8,6Hz (High Contrast Image); 4,5Hz (Temperature Image)
 Blickfeld (Field of View)         51° Horizontal, 66° Diagonal
 Tiefenschärfe                     10cm bis unendlich
 Thermale Sensitivität             < 50mK (0,05°C)
-Radiometrische Genauigkeit        +/-5°C or 5% (typisch)
+Radiometrische Genauigkeit        ±5°C or 5% (typisch)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 9mm (1.57 x 1.57 x 0.35")

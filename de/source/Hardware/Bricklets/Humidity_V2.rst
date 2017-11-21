@@ -68,10 +68,10 @@ Sensor                            HDC1080
 Stromverbrauch                    28,5mW (5,7mA bei 5V, ohne Heizelement)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Relative Luftfeuchtigkeit (RH)    0% RH - 100%RH in 0,01%RH Schritten, 14Bit Auflösung
-Temperatur                        -20°C- 85°C in 0,01°C Schritten, 14Bit Auflösung
-Genauigkeiten                     +-2% (typisch) für Luftfeuchtigkeitsmessung
-                                  +-0,2°C (typisch) für Temperaturmessung
+Relative Luftfeuchtigkeit (RH)    0%RH bis 100%RH in 0,01%RH Schritten, 14Bit Auflösung
+Temperatur                        -20°C bis 85°C in 0,01°C Schritten, 14Bit Auflösung
+Genauigkeiten                     ±2% (typisch) für Luftfeuchtigkeitsmessung
+                                  ±0,2°C (typisch) für Temperaturmessung
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 15 x 5mm (0,98 x 0,59 x 0,19")

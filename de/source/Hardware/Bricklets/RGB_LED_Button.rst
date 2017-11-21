@@ -27,7 +27,7 @@ RGB LED Button Bricklet
 Features
 --------
 
-* Qualitativer 15x15mm Taster
+* Qualitativ hochwertiger 15x15mm Taster
 * Einstellbare RGB LED Hintergrundbeleuchtung
 * Austauschbares/bedruckbares Tasterinnenteil
 
@@ -64,7 +64,7 @@ Stromverbrauch (LEDs aus)         31mW (6,2mA bei 5V)
 Stromverbrauch (LEDs an)          207mW (41,4mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-LED Auflösung                     8 bit
+LED Auflösung                     8 Bit pro Kanal
 Einlagengröße (Beschriftung)      14 x 14mm
 Tastergröße                       15 x 15mm
 Kappengröße                       17,4 x 17,4mm

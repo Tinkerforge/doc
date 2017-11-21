@@ -62,10 +62,10 @@ Sensor                            HDC1080
 Current Consumption               28.5mW (5.7mA at 5V, without heater)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Relative Humidity (RH)            0% RH - 100%RH in 0.01%RH steps, 14 bit resolution
-Temperature                       -20°C- 85°C in 0.01°C steps, 14 bit resolution
-Accuracy                          +-2% (typical) for humidity
-                                  +-0.2°C (typical) for temperature
+Relative Humidity (RH)            0%RH to 100%RH in 0.01%RH steps, 14 bit resolution
+Temperature                       -20°C to 85°C in 0.01°C steps, 14 bit resolution
+Accuracy                          ±2% (typical) for humidity
+                                  ±0.2°C (typical) for temperature
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            25 x 15 x 5mm (0.98 x 0.59 x 0.19")
