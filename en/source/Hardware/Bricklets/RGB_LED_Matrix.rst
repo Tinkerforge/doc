@@ -48,8 +48,9 @@ A frame rate of 120 Hz can be achieved. Frames can be send with a fixed frame
 rate to achieve smooth animations. They are double buffered to increase
 performance and avoid flicker.
 
-An external 5V power supply has to be connected to the terminal blocks. The LEDs
-can not be powered through the Bricklet connector.
+The Bricklet is equipped with a 15cm cable, which has to be connected to an 
+external 5V power supply. The LEDs can not be powered through the Bricklet 
+connector.
 
 Technical Specifications
 ------------------------

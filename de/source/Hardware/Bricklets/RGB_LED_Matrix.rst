@@ -48,8 +48,9 @@ Es kann eine maximale Framerate von 120 Hz erreicht werden. Die Frames können m
 festen Framerate gesendet werden um gleichmäßige Animationen zu erlauben. Frames verfügen
 über einen Double-Buffer um die Performance zu steigern und ein Flackern zu verhindern.
 
-Eine externe 5V Versorgung ist notwendig und muss an der Anschlussklemme des Bricklets
-angeschlossen werden. Die LEDs können nicht über den Brickletanschluss versorgt werden.
+Das Bricklet wird mit einem 15cm Anschlusskabel geliefert. Über das Kabel
+muss eine externe 5V Versorgung angeschlossen werden. 
+Die LEDs können nicht über den Brickletanschluss versorgt werden.
 
 
 Technische Spezifikation
