@@ -126,7 +126,7 @@ data from the Thermal Imaging Bricklet.
 
 .. raw:: html
 
- <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/GJ-VV9k92fI" frameborder="0" allowfullscreen></iframe>
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/xb44krsgmaM" frameborder="0" allowfullscreen></iframe>
 
 .. _thermal_imaging_bricklet_test:
 
