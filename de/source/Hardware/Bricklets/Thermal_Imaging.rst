@@ -68,6 +68,14 @@ Temperaturänderungen genutzt werden.
 
 Der Shutter wird vom Bricklet automatisch gesteuert.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_thermal_imaging_short_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_thermal_imaging_short_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_thermal_imaging_short_video.webm" type="video/webm">
+	</video>
+
 
 Technische Spezifikation
 ------------------------
