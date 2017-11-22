@@ -53,6 +53,13 @@ Taster zum Beispiel mit einem Pfeil oder ähnliches beschriftet werden.
 Um nicht den Zustand des Tasters dauernd abfragen zu müssen (pollen) können
 auch Event genutzt werden.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_rgb_led_button_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_rgb_led_button_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_rgb_led_button_video.webm" type="video/webm">
+	</video> 
 
 Technische Spezifikation
 ------------------------

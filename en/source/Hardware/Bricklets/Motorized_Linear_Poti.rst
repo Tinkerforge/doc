@@ -53,6 +53,13 @@ drives back to the set-point when a user changes the position. If it is not conf
 to hold a position, the Bricklet will only drive to the set-point once and after that
 the user can control the position again.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_motorized_linear_poti_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_motorized_linear_poti_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_motorized_linear_poti_video.webm" type="video/webm">
+	</video> 
 
 Technical Specifications
 ------------------------

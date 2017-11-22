@@ -55,6 +55,13 @@ Nutzer die Position ändert. Wenn das Potentiometer nicht dazu konfiguriert wurd
 zu halten, lässt sich der Schiebeknopf nach dem Anfahren der Position bewegen und verändert
 seine Position von selbst nicht.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_motorized_linear_poti_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_motorized_linear_poti_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_motorized_linear_poti_video.webm" type="video/webm">
+	</video>
 
 Technische Spezifikation
 ------------------------
