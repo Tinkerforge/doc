@@ -108,6 +108,30 @@ Ressourcen
 * 3D Modell (`Online ansehen <http://autode.sk/2zkvQ5b>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.FCStd>`__)
 
 
+.. _thermal_imaging_bricklet_demo_video:
+
+Demo Video
+----------
+
+Im folgenden Video ist ein Thermal Imaging Bricklet im Einsatz zu sehen.
+Wir filmen ein Küchenspühle mit einer warmen Tasse Kaffee. Dann stellen
+wir warmes wasser an und danach auf kalt und wieder zurück.
+
+Man kann sehen das anfangs der die warme Tasse Kaffe das wärmste Objekt
+im Bildausschnitt ist. Nach dem wir das warme Wasser aufdrehen wird dieses
+langsam wärmer als die Tasse. Wenn wir dann den Wasserhahn wieder auf kalt
+stellen wird es wieder kälter etc.
+
+Zusätzlich kann man in der Küchenspühle einen Vortex sehen, der sich
+durch das wechseln von warm und kalt im Wasser bildet.
+
+Das Wärmebild im Video wurde aus den :ref:`High Contrast <thermal_imaging_bricklet_high_contrast_vs_temperature>`
+Daten des Thermal Imaging Bricklet erstellt.
+
+.. raw:: html
+
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/GJ-VV9k92fI" frameborder="0" allowfullscreen></iframe>
+
 .. _thermal_imaging_bricklet_test:
 
 Erster Test

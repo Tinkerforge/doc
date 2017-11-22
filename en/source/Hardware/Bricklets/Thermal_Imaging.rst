@@ -106,6 +106,28 @@ Resources
 * 3D model (`View online <http://autode.sk/2zkvQ5b>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.FCStd>`__)
 
 
+.. _thermal_imaging_bricklet_demo_video:
+
+Demo Video
+----------
+
+In the following video you can see the Thermal Imaging Bricklet in action.
+We film a kitchen sink with a warm cup of coffee. Then we turn warm water on
+and then change from to cold and back to warm.
+
+You can see that first the cup of coffee is the warmest object in the frame.
+The water slowly gets warmer then the coffee after we turn on the tap. When 
+we turn the tap to cold it gets colder again.
+
+You can also see the vortex between hot and cold water the forms in the sink.
+
+The Thermal part of the video is the :ref:`High Contrast <thermal_imaging_bricklet_high_contrast_vs_temperature>` 
+data from the Thermal Imaging Bricklet.
+
+.. raw:: html
+
+ <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/GJ-VV9k92fI" frameborder="0" allowfullscreen></iframe>
+
 .. _thermal_imaging_bricklet_test:
 
 Test your Thermal Imaging Bricklet
