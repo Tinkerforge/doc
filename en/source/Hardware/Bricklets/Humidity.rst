@@ -1,6 +1,5 @@
 
 :breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Humidity Bricklet
-:shoplink: ../../../shop/bricklets/humidity-bricklet.html
 
 .. include:: Humidity.substitutions
    :start-after: >>>substitutions
