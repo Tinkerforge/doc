@@ -114,7 +114,7 @@ Demo Video
 ----------
 
 Im folgenden Video ist ein Thermal Imaging Bricklet im Einsatz zu sehen.
-Wir filmen ein Küchenspühle mit einer warmen Tasse Kaffee. Dann stellen
+Wir filmen eine Küchenspühle mit einer warmen Tasse Kaffee. Dann stellen
 wir warmes wasser an und danach auf kalt und wieder zurück.
 
 Man kann sehen das anfangs der die warme Tasse Kaffe das wärmste Objekt
