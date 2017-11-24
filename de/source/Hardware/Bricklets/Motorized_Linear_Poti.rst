@@ -120,29 +120,36 @@ geändert werden.
 Gehäuse
 -------
 
-Folgt in Kürze...
+Ein `laser-geschnittenes Gehäuse für das Motorized Linear Poti Bricklet 
+<https://www.tinkerforge.com/de/shop/cases/case-motorized-linear-poti-bricklet.html>`__ ist verfügbar.
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Motorized Linear Poti Bricklet 
-	<https://www.tinkerforge.com/de/shop/cases/case-motorized-linear-poti-bricklet.html>`__ ist verfügbar.
+.. image:: /Images/Cases/bricklet_motorized_linear_poti_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Motorized Linear Poti Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_motorized_linear_poti_case_built_up1_800.jpg
 
-	.. image:: /Images/Cases/bricklet_motorized_linear_poti_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Motorized Linear Poti Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_motorized_linear_poti_case_1000.jpg
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-	.. include:: Motorized_Linear_Poti.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+* Schraube 12mm Schrauben auf Unterteil mit Mutter,
+* schraube Bricklet auf 12mm Schrauben mit noch einer Mutter,
+* stecke die zwei kleinen Teile der Rückseite in Unterteil,
+* stecke eines der Seitenteile ein,
+* stecke kleines Teil der Vorderseite in das Seitenteil,
+* schraube 12mm und 10mm Abstandshalter an kleine Teile auf beiden Seiten,
+* stecke linkes und rechtes Teil ein,
+* stecke anderes Seitenteil ein und
+* stecke Oberteil oben drauf und schraub es fest.
 
-	.. image:: /Images/Exploded/motorized_linear_poti_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Motorized Linear Poti Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/motorized_linear_poti_exploded.png
+Im Folgenden befindet sich eine Explosionszeichnung des Motorized Linear Poti Bricklet Gehäuses:
 
-	|bricklet_case_hint|
+.. image:: /Images/Exploded/motorized_linear_poti_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Motorized Linear Poti Bricklet
+   :align: center
+   :target: ../../_images/Exploded/motorized_linear_poti_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _motorized_linear_poti_bricklet_programming_interface:

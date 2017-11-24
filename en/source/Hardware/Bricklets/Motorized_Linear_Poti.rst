@@ -118,29 +118,36 @@ potentiometer with the GUI.
 Case
 ----
 
-Coming soon...
+A `laser-cut case for the Motorized Linear Poti Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-motorized-linear-poti-bricklet.html>`__ is available.
 
-..
-	A `laser-cut case for the Motorized Linear Poti Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-motorized-linear-poti-bricklet.html>`__ is available.
+.. image:: /Images/Cases/bricklet_motorized_linear_poti_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Case for Motorized Linear Poti Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_motorized_linear_poti_case_built_up1_800.jpg
 
-	.. image:: /Images/Cases/bricklet_motorized_linear_poti_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Motorized Linear Poti Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_motorized_linear_poti_case_1000.jpg
+The assembly is easiest if you follow the following steps:
 
-	.. include:: Motorized_Linear_Poti.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+* Screw 12mm screws to bottom plate with nut,
+* screw bricklet on 12mm screws with another nut,
+* attach the two small plates from the backside of the bricklet to the bottom plate,
+* attach one of the side plates,
+* attach small plate from the frontside of the bricklet to the side plate,
+* screw 12mm and 10mm spacer to small plates at both sides,
+* attach left and right plate,
+* attach other side plate and
+* attach top plate and screw it to spacers.
 
-	.. image:: /Images/Exploded/motorized_linear_poti_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Motorized Linear Poti Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/motorized_linear_poti_exploded.png
+Below you can see an exploded assembly drawing of the Motorized Linear Poti Bricklet case:
 
-	|bricklet_case_hint|
+.. image:: /Images/Exploded/motorized_linear_poti_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Motorized Linear Poti Bricklet
+   :align: center
+   :target: ../../_images/Exploded/motorized_linear_poti_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _motorized_linear_poti_bricklet_programming_interface:

@@ -109,29 +109,32 @@ You can now change between master/slave mode and send/receive DMX data.
 Case
 ----
 
-Coming soon...
+A `laser-cut case for the DMX Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-dmx-bricklet.html>`__ is available.
 
-..
-	A `laser-cut case for the DMX Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-dmx-bricklet.html>`__ is available.
+.. image:: /Images/Cases/bricklet_dmx_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Case for DMX Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_dmx_case_built_up1_800.jpg
 
-	.. image:: /Images/Cases/bricklet_dmx_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for DMX Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_dmx_case_1000.jpg
+The assembly is easiest if you follow the following steps:
 
-	.. include:: DMX.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+* Build up side plates,
+* plug side plates into bottom plate and
+* screw 12mm screw with nut to the bottom plate
+* screw spacers to the Bricklet,
+* screw top plate to top spacers.
 
-	.. image:: /Images/Exploded/dmx_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for DMX Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/dmx_exploded.png
+Below you can see an exploded assembly drawing of the DMX Bricklet case:
 
-	|bricklet_case_hint|
+.. image:: /Images/Exploded/dmx_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for DMX Bricklet
+   :align: center
+   :target: ../../_images/Exploded/dmx_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _dmx_bricklet_programming_interface:

@@ -249,29 +249,32 @@ werden soll.
 Gehäuse
 -------
 
-Folgt in Kürze...
+Ein `laser-geschnittenes Gehäuse für das Thermal Imaging Bricklet 
+<https://www.tinkerforge.com/de/shop/cases/case-thermal-imaging-bricklet.html>`__ ist verfügbar.
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Thermal Imaging Bricklet 
-	<https://www.tinkerforge.com/de/shop/cases/case-thermal-imaging-bricklet.html>`__ ist verfügbar.
+.. image:: /Images/Cases/bricklet_thermal_imaging_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Thermal Imaging Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_thermal_imaging_case_built_up1_800.jpg
 
-	.. image:: /Images/Cases/bricklet_thermal_imaging_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Thermal Imaging Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_thermal_imaging_case_1000.jpg
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-	.. include:: Thermal_Imaging.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+* schraube 12mm Schrauben mit Mutter an Oberteil 
+* Baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Oberteil,
+* Schraube 10mm Abstandshalter an das Bricklet und,
+* schraube Unterteil auf Abstandshalter.
 
-	.. image:: /Images/Exploded/thermal_imaging_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Thermal Imaging Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/thermal_imaging_exploded.png
+Im Folgenden befindet sich eine Explosionszeichnung des Thermal Imaging Bricklet Gehäuses:
 
-	|bricklet_case_hint|
+.. image:: /Images/Exploded/thermal_imaging_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Thermal Imaging Bricklet
+   :align: center
+   :target: ../../_images/Exploded/thermal_imaging_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _thermal_imaging_bricklet_programming_interface:
