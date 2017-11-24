@@ -121,9 +121,9 @@ A `laser-cut case for the DMX Bricklet
 The assembly is easiest if you follow the following steps:
 
 * Build up side plates,
-* plug side plates into bottom plate and
+* plug side plates into bottom plate,
 * screw 12mm screw with nut to the bottom plate
-* screw spacers to the Bricklet,
+* screw spacers to the Bricklet and
 * screw top plate to top spacers.
 
 Below you can see an exploded assembly drawing of the DMX Bricklet case:
