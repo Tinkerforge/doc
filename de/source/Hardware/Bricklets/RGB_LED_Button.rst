@@ -159,29 +159,33 @@ eingestellt und der Zustand des Tasters abgelesen werden.
 Gehäuse
 -------
 
-Folgt in Kürze...
+Ein `laser-geschnittenes Gehäuse für das RGB LED Button Bricklet 
+<https://www.tinkerforge.com/de/shop/cases/case-rgb-led-button-bricklet.html>`__ ist verfügbar.
 
-..
-	Ein `laser-geschnittenes Gehäuse für das RGB LED Button Bricklet 
-	<https://www.tinkerforge.com/de/shop/cases/case-rgb-led-button-bricklet.html>`__ ist verfügbar.
+.. image:: /Images/Cases/bricklet_rgb_led_button_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für RGB LED Button Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_rgb_led_button_case_built_up_800.jpg
 
-	.. image:: /Images/Cases/bricklet_rgb_led_button_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für RGB LED Button Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_rgb_led_button_case_1000.jpg
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-	.. include:: RGB_LED_Button.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+* Scraube 2x10mm Abstandshalter and Unterseite des Bricklets,
+* schraube Unterteil an Abstandshalter,
+* schraube 2x9mm und 1x10mm Abstandshalter an Unterteil,
+* baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Unterteil und
+* schraube Oberteil auf obere Abstandshalter.
 
-	.. image:: /Images/Exploded/rgb_led_button_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für RGB LED Button Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/rgb_led_button_exploded.png
+Im Folgenden befindet sich eine Explosionszeichnung des RGB LED Button Bricklet Gehäuses:
 
-	|bricklet_case_hint|
+.. image:: /Images/Exploded/rgb_led_button_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für RGB LED Button Bricklet
+   :align: center
+   :target: ../../_images/Exploded/rgb_led_button_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _rgb_led_button_bricklet_programming_interface:

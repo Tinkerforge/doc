@@ -153,29 +153,33 @@ You can now see button presses in the GUI and control the backlight RGB LED.
 Case
 ----
 
-Coming soon...
+A `laser-cut case for the RGB LED Button Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-rgb-led-button-bricklet.html>`__ is available.
 
-..
-	A `laser-cut case for the RGB LED Button Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-rgb-led-button-bricklet.html>`__ is available.
+.. image:: /Images/Cases/bricklet_rgb_led_button_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for RGB LED Button Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_rgb_led_button_case_built_up_800.jpg
 
-	.. image:: /Images/Cases/bricklet_rgb_led_button_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for RGB LED Button Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_rgb_led_button_case_1000.jpg
+The assembly is easiest if you follow the following steps:
 
-	.. include:: RGB_LED_Button.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+* Screw 2x10mm spacers to bottom of Bricklet (use two diagonal wholes),
+* screw bottom plate to spacers,
+* screw 2x9mm and 1x10mm spacers to bottom plate,
+* build up side plates,
+* plug side plates into bottom plate and
+* screw top plate to top spacers.
 
-	.. image:: /Images/Exploded/rgb_led_button_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for RGB LED Button Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/rgb_led_button_exploded.png
+Below you can see an exploded assembly drawing of the RGB LED Button Bricklet case:
 
-	|bricklet_case_hint|
+.. image:: /Images/Exploded/rgb_led_button_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for RGB LED Button Bricklet
+   :align: center
+   :target: ../../_images/Exploded/rgb_led_button_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _rgb_led_button_bricklet_programming_interface:

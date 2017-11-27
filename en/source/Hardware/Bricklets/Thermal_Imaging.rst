@@ -241,29 +241,33 @@ Use this mode if you want to work with actual temperature data.
 Case
 ----
 
-Coming soon...
+A `laser-cut case for the Thermal Imaging Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-thermal-imaging-bricklet.html>`__ is available.
 
-..
-	A `laser-cut case for the Thermal Imaging Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-thermal-imaging-bricklet.html>`__ is available.
+.. image:: /Images/Cases/bricklet_thermal_imaging_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Case for Thermal Imaging Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_thermal_imaging_case_built_up1_800.jpg
 
-	.. image:: /Images/Cases/bricklet_thermal_imaging_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Thermal Imaging Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_thermal_imaging_case_1000.jpg
+The assembly is easiest if you follow the following steps:
 
-	.. include:: Thermal_Imaging.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+* screw 12mm screw with nut to the top plate
+* Build up side plates,
+* plug side plates into top plate,
+* screw 10mm spacers to the Bricklet and
+* screw bottom plate to spacers.
 
-	.. image:: /Images/Exploded/thermal_imaging_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Thermal Imaging Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/thermal_imaging_exploded.png
+Below you can see an exploded assembly drawing of the Thermal Imaging Bricklet case:
 
-	|bricklet_case_hint|
+
+.. image:: /Images/Exploded/thermal_imaging_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Thermal Imaging Bricklet
+   :align: center
+   :target: ../../_images/Exploded/thermal_imaging_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _thermal_imaging_bricklet_programming_interface:

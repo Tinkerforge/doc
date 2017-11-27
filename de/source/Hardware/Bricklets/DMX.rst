@@ -111,29 +111,33 @@ gesendet oder empfangen werden.
 Gehäuse
 -------
 
-Folgt in Kürze...
+Ein `laser-geschnittenes Gehäuse für das DMX Bricklet 
+<https://www.tinkerforge.com/de/shop/cases/case-dmx-bricklet.html>`__ ist verfügbar.
 
-..
-	Ein `laser-geschnittenes Gehäuse für das DMX Bricklet 
-	<https://www.tinkerforge.com/de/shop/cases/case-dmx-bricklet.html>`__ ist verfügbar.
+.. image:: /Images/Cases/bricklet_dmx_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für DMX Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_dmx_case_built_up1_800.jpg
 
-	.. image:: /Images/Cases/bricklet_dmx_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für DMX Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_dmx_case_1000.jpg
 
-	.. include:: DMX.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-	.. image:: /Images/Exploded/dmx_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für DMX Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/dmx_exploded.png
+* Baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Unterteil,
+* schraube 12mm Schrauben mit Mutter an Unterteil
+* Schraube Abstandshalter an das Bricklet und,
+* schraube Oberteil auf obere Abstandshalter.
 
-	|bricklet_case_hint|
+Im Folgenden befindet sich eine Explosionszeichnung des DMX Bricklet Gehäuses:
+
+.. image:: /Images/Exploded/dmx_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für DMX Bricklet
+   :align: center
+   :target: ../../_images/Exploded/dmx_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _dmx_bricklet_programming_interface:
