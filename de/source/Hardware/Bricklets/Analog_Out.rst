@@ -1,6 +1,5 @@
 
 :breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Analog Out Bricklet
-:shoplink: ../../../shop/bricklets/analog-out-bricklet.html
 
 .. include:: Analog_Out.substitutions
    :start-after: >>>substitutions
@@ -25,6 +24,11 @@ Analog Out Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Analog Out Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Analog Out Bricklet 2.0 <analog_out_v2_bricklet>`
+ empfohlen.
 
 Features
 --------
