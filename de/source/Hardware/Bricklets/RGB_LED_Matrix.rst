@@ -54,6 +54,9 @@ Das Bricklet wird mit einem 15cm Anschlusskabel geliefert. Über das Kabel
 muss eine externe 5V Versorgung angeschlossen werden. 
 Die LEDs können nicht über den Brickletanschluss versorgt werden.
 
+Das RGB LED Matrix Bricklet hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
 .. raw:: html
  
 	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>

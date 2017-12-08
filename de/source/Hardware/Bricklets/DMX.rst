@@ -55,6 +55,8 @@ ohne Beeinflussung zu überwachen.
 Das Bricklet ist mit einer XLR Buchse und Stecker ausgestattet und verfügt über eine
 schaltbare 120 Ohm Terminierung.
 
+Das DMX Bricklet hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------

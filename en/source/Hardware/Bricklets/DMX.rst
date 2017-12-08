@@ -56,6 +56,9 @@ any interference.
 The Bricklet comes with a male and female connector as well as a user switchable
 120 ohm termination.
 
+The DMX Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
+
 Technical Specifications
 ------------------------
 

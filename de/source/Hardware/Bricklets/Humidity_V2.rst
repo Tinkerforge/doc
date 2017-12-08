@@ -51,6 +51,9 @@ zu trocknen.
 Typische Anwendungen sind der Aufbau einer Wetterstation oder in
 Umweltmessungen.
 
+Das Humidity Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
 
 Technische Spezifikation
 ------------------------
