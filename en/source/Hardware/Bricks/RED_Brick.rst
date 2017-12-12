@@ -108,7 +108,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/red-brick/raw/master/hardware/red-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/red_brick_dimensions.png>`__)
 * Linux image and hardware design files (`Download <https://github.com/Tinkerforge/red-brick/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2xfLZ6J>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/red/red.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/red/red.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2iTFL7d>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricks/red/red.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricks/red/red.FCStd>`__)
 
 .. _red_brick_test:
 
