@@ -93,7 +93,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/oled-128x64-bricklet/raw/master/hardware/oled-128x64-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/oled_128x64_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/oled-128x64-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2hEabJM>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/oled_128x64/oled-128x64.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/oled_128x64/oled-128x64.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2BWH38V>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/oled_128x64/oled-128x64.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/oled_128x64/oled-128x64.FCStd>`__)
 
 
 .. _oled_128x64_bricklet_test:

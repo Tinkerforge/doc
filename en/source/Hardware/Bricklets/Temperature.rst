@@ -74,7 +74,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/temperature-bricklet/raw/master/hardware/temperature-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/temperature_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/temperature-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2gCmYzG>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/temperature/temperature.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/temperature/temperature.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2iSRJ0y>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/temperature/temperature.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/temperature/temperature.FCStd>`__)
 
 
 

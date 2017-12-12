@@ -84,7 +84,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/dmx-bricklet/raw/master/hardware/dmx-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dmx_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/dmx-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2yJPLu6>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/dmx/dmx.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/dmx/dmx.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2C4Vatz>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/dmx/dmx.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/dmx/dmx.FCStd>`__)
 
 
 .. _dmx_bricklet_test:

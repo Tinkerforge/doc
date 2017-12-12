@@ -108,7 +108,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/thermal-imaging-bricklet/raw/master/hardware/thermal-imaging-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/thermal_imaging_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/thermal-imaging-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2zkvQ5b>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2BUaYhK>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/thermal_imaging/thermal-imaging.FCStd>`__)
 
 
 .. _thermal_imaging_bricklet_demo_video:

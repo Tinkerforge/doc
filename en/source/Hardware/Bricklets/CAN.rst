@@ -72,7 +72,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/can-bricklet/raw/master/hardware/can-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/can_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/can-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2yCi7Wa>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/can/can.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/can/can.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2kpRE4X>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/can/can.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/can/can.FCStd>`__)
 
 
 

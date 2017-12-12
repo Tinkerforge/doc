@@ -75,7 +75,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/raw/master/hardware/industrial_dual_analog_in-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_dual_analog_in_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-dual-analog-in-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2gAUPJg>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_dual_analog_in/industrial_dual_analog_in.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_dual_analog_in/industrial_dual_analog_in.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2BDCOCP>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_dual_analog_in/industrial_dual_analog_in.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_dual_analog_in/industrial_dual_analog_in.FCStd>`__)
 
 
 Connectivity

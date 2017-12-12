@@ -96,7 +96,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/hardware/distir-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dist_ir_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2hEziMv>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_ir/distir.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_ir/distir.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2iV5En8>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_ir/distir.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_ir/distir.FCStd>`__)
 
 
 .. _distance_ir_bricklet_test:

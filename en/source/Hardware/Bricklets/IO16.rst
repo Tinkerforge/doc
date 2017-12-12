@@ -90,7 +90,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/io16-bricklet/raw/master/hardware/io-16-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/io16_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/io16-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2xZ2zaG>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/io16/io-16.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/io16/io-16.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2BePBLK>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/io16/io-16.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/io16/io-16.FCStd>`__)
 
 
 

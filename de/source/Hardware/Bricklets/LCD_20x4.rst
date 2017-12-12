@@ -81,7 +81,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/lcd-20x4-bricklet/raw/master/hardware/lcd-20x4-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/lcd_20x4_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/lcd-20x4-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2hDgw8p>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/lcd_20x4/lcd-20x4.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/lcd_20x4/lcd-20x4.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2BeYMM8>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/lcd_20x4/lcd-20x4.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/lcd_20x4/lcd-20x4.FCStd>`__)
 
 
 .. _lcd_20x4_bricklet_test:

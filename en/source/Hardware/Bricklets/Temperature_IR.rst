@@ -81,7 +81,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/raw/master/hardware/temperature-ir-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/temperature_ir_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/temperature-ir-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2gCkUHZ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/temperature_ir/temperature-ir.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/temperature_ir/temperature-ir.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2BcGJWF>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/temperature_ir/temperature-ir.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/temperature_ir/temperature-ir.FCStd>`__)
 
 
 

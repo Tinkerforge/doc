@@ -73,7 +73,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/moisture-bricklet/raw/master/hardware/moisture-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/moisture_bricklet_v11_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/moisture-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2xfSGpz>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/moisture/moisture.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/moisture/moisture.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2BcPjEW>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/moisture/moisture.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/moisture/moisture.FCStd>`__)
 
 
 .. _moisture_bricklet_test:

@@ -72,7 +72,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/uv-light-bricklet/raw/master/hardware/uv-light-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/uv_light_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/uv-light-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2AbIiTN>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2BfEWjJ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.FCStd>`__)
 
 .. _uv_light_bricklet_test:
 

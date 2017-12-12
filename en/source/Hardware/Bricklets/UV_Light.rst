@@ -72,7 +72,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/uv-light-bricklet/raw/master/hardware/uv-light-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/uv_light_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/uv-light-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2AbIiTN>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2BfEWjJ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.FCStd>`__)
 
 .. _uv_light_bricklet_test:
 
