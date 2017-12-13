@@ -263,6 +263,7 @@ payloads.
                                                                                 |                                      | :tcpip:func:`imu_temperature <BrickIMU.get_imu_temperature>`
                                                                                 |                                      | :tcpip:func:`acceleration_range <BrickIMU.get_acceleration_range>`
                                                                                 |                                      | :tcpip:func:`magnetometer_range <BrickIMU.get_magnetometer_range>`
+                                                                                |                                      | :tcpip:func:`get_calibration/set <BrickIMU.get_calibration>`
                                                                                 |                                      | :tcpip:func:`is_orientation_calculation_on <BrickIMU.is_orientation_calculation_on>`
                                                                                 |                                      | :tcpip:func:`is_status_led_enabled <BrickIMU.is_status_led_enabled>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickIMU.get_chip_temperature>`
@@ -272,7 +273,6 @@ payloads.
                                                                                 |                                      | :tcpip:func:`acceleration_range/set <BrickIMU.set_acceleration_range>`
                                                                                 |                                      | :tcpip:func:`magnetometer_range/set <BrickIMU.set_magnetometer_range>`
                                                                                 |                                      | :tcpip:func:`calibration/set <BrickIMU.set_calibration>`
-                                                                                |                                      | :tcpip:func:`get_calibration/set <BrickIMU.get_calibration>` (calls :tcpip:func:`get_calibration <BrickIMU.get_calibration>` with the parameters provided by the *get_calibration/set* topic and the output of the getter being published to the *calibration* topic)
                                                                                 |                                      | :tcpip:func:`orientation_calculation_on/set <BrickIMU.orientation_calculation_on>`
                                                                                 |                                      | :tcpip:func:`orientation_calculation_off/set <BrickIMU.orientation_calculation_off>`
                                                                                 |                                      | :tcpip:func:`enable_status_led/set <BrickIMU.enable_status_led>`
@@ -288,7 +288,6 @@ payloads.
                                                                                 |                                      | :tcpip:func:`magnetic_field <BrickIMUV2.get_magnetic_field>`
                                                                                 |                                      | :tcpip:func:`angular_velocity <BrickIMUV2.get_angular_velocity>`
                                                                                 |                                      | :tcpip:func:`temperature <BrickIMUV2.get_temperature>`
-                                                                                |                                      | :tcpip:func:`save_calibration <BrickIMUV2.save_calibration>`
                                                                                 |                                      | :tcpip:func:`sensor_configuration <BrickIMUV2.get_sensor_configuration>`
                                                                                 |                                      | :tcpip:func:`sensor_fusion_mode <BrickIMUV2.get_sensor_fusion_mode>`
                                                                                 |                                      | :tcpip:func:`is_status_led_enabled <BrickIMUV2.is_status_led_enabled>`
@@ -303,85 +302,25 @@ payloads.
 
  :ref:`Master Brick <master_brick>`                                             | brick/master                         | :tcpip:func:`stack_voltage <BrickMaster.get_stack_voltage>`
                                                                                 |                                      | :tcpip:func:`stack_current <BrickMaster.get_stack_current>`
-                                                                                |                                      | :tcpip:func:`is_rs485_present <BrickMaster.is_rs485_present>`
-                                                                                |                                      | :tcpip:func:`rs485_address <BrickMaster.get_rs485_address>`
-                                                                                |                                      | :tcpip:func:`rs485_error_log <BrickMaster.get_rs485_error_log>`
-                                                                                |                                      | :tcpip:func:`rs485_configuration <BrickMaster.get_rs485_configuration>`
-                                                                                |                                      | :tcpip:func:`is_wifi_present <BrickMaster.is_wifi_present>`
-                                                                                |                                      | :tcpip:func:`wifi_configuration <BrickMaster.get_wifi_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi_encryption <BrickMaster.get_wifi_encryption>`
-                                                                                |                                      | :tcpip:func:`wifi_status <BrickMaster.get_wifi_status>`
-                                                                                |                                      | :tcpip:func:`wifi_power_mode <BrickMaster.get_wifi_power_mode>`
-                                                                                |                                      | :tcpip:func:`wifi_buffer_info <BrickMaster.get_wifi_buffer_info>`
-                                                                                |                                      | :tcpip:func:`wifi_regulatory_domain <BrickMaster.get_wifi_regulatory_domain>`
                                                                                 |                                      | :tcpip:func:`usb_voltage <BrickMaster.get_usb_voltage>`
-                                                                                |                                      | :tcpip:func:`long_wifi_key <BrickMaster.get_long_wifi_key>`
-                                                                                |                                      | :tcpip:func:`wifi_hostname <BrickMaster.get_wifi_hostname>`
-                                                                                |                                      | :tcpip:func:`is_ethernet_present <BrickMaster.is_ethernet_present>`
-                                                                                |                                      | :tcpip:func:`ethernet_configuration <BrickMaster.get_ethernet_configuration>`
-                                                                                |                                      | :tcpip:func:`ethernet_status <BrickMaster.get_ethernet_status>`
-                                                                                |                                      | :tcpip:func:`ethernet_websocket_configuration <BrickMaster.get_ethernet_websocket_configuration>`
-                                                                                |                                      | :tcpip:func:`ethernet_authentication_secret <BrickMaster.get_ethernet_authentication_secret>`
-                                                                                |                                      | :tcpip:func:`wifi_authentication_secret <BrickMaster.get_wifi_authentication_secret>`
                                                                                 |                                      | :tcpip:func:`connection_type <BrickMaster.get_connection_type>`
-                                                                                |                                      | :tcpip:func:`is_wifi2_present <BrickMaster.is_wifi2_present>`
-                                                                                |                                      | :tcpip:func:`wifi2_authentication_secret <BrickMaster.get_wifi2_authentication_secret>`
-                                                                                |                                      | :tcpip:func:`wifi2_configuration <BrickMaster.get_wifi2_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi2_status <BrickMaster.get_wifi2_status>`
-                                                                                |                                      | :tcpip:func:`wifi2_client_configuration <BrickMaster.get_wifi2_client_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi2_client_hostname <BrickMaster.get_wifi2_client_hostname>`
-                                                                                |                                      | :tcpip:func:`wifi2_client_password <BrickMaster.get_wifi2_client_password>`
-                                                                                |                                      | :tcpip:func:`wifi2_ap_configuration <BrickMaster.get_wifi2_ap_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi2_ap_password <BrickMaster.get_wifi2_ap_password>`
-                                                                                |                                      | :tcpip:func:`wifi2_firmware_version <BrickMaster.get_wifi2_firmware_version>`
-                                                                                |                                      | :tcpip:func:`is_wifi2_status_led_enabled <BrickMaster.is_wifi2_status_led_enabled>`
-                                                                                |                                      | :tcpip:func:`wifi2_mesh_configuration <BrickMaster.get_wifi2_mesh_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi2_mesh_router_ssid <BrickMaster.get_wifi2_mesh_router_ssid>`
-                                                                                |                                      | :tcpip:func:`wifi2_mesh_router_password <BrickMaster.get_wifi2_mesh_router_password>`
-                                                                                |                                      | :tcpip:func:`wifi2_mesh_common_status <BrickMaster.get_wifi2_mesh_common_status>`
-                                                                                |                                      | :tcpip:func:`wifi2_mesh_client_status <BrickMaster.get_wifi2_mesh_client_status>`
-                                                                                |                                      | :tcpip:func:`wifi2_mesh_ap_status <BrickMaster.get_wifi2_mesh_ap_status>`
                                                                                 |                                      | :tcpip:func:`is_status_led_enabled <BrickMaster.is_status_led_enabled>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickMaster.get_chip_temperature>`
-                                                                                |                                      | :tcpip:func:`extension_type/set <BrickMaster.set_extension_type>`
-                                                                                |                                      | :tcpip:func:`get_extension_type/set <BrickMaster.get_extension_type>` (calls :tcpip:func:`get_extension_type <BrickMaster.get_extension_type>` with the parameters provided by the *get_extension_type/set* topic and the output of the getter being published to the *extension_type* topic)
-                                                                                |                                      | :tcpip:func:`rs485_address/set <BrickMaster.set_rs485_address>`
-                                                                                |                                      | :tcpip:func:`rs485_slave_address/set <BrickMaster.set_rs485_slave_address>`
-                                                                                |                                      | :tcpip:func:`get_rs485_slave_address/set <BrickMaster.get_rs485_slave_address>` (calls :tcpip:func:`get_rs485_slave_address <BrickMaster.get_rs485_slave_address>` with the parameters provided by the *get_rs485_slave_address/set* topic and the output of the getter being published to the *rs485_slave_address* topic)
-                                                                                |                                      | :tcpip:func:`rs485_configuration/set <BrickMaster.set_rs485_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi_configuration/set <BrickMaster.set_wifi_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi_encryption/set <BrickMaster.set_wifi_encryption>`
-                                                                                |                                      | :tcpip:func:`refresh_wifi_status/set <BrickMaster.set_refresh_wifi_status>`
-                                                                                |                                      | :tcpip:func:`wifi_certificate/set <BrickMaster.set_wifi_certificate>`
-                                                                                |                                      | :tcpip:func:`get_wifi_certificate/set <BrickMaster.get_wifi_certificate>` (calls :tcpip:func:`get_wifi_certificate <BrickMaster.get_wifi_certificate>` with the parameters provided by the *get_wifi_certificate/set* topic and the output of the getter being published to the *wifi_certificate* topic)
-                                                                                |                                      | :tcpip:func:`wifi_power_mode/set <BrickMaster.set_wifi_power_mode>`
-                                                                                |                                      | :tcpip:func:`wifi_regulatory_domain/set <BrickMaster.set_wifi_regulatory_domain>`
-                                                                                |                                      | :tcpip:func:`long_wifi_key/set <BrickMaster.set_long_wifi_key>`
-                                                                                |                                      | :tcpip:func:`wifi_hostname/set <BrickMaster.set_wifi_hostname>`
-                                                                                |                                      | :tcpip:func:`ethernet_configuration/set <BrickMaster.set_ethernet_configuration>`
-                                                                                |                                      | :tcpip:func:`ethernet_hostname/set <BrickMaster.set_ethernet_hostname>`
-                                                                                |                                      | :tcpip:func:`ethernet_mac_address/set <BrickMaster.set_ethernet_mac_address>`
-                                                                                |                                      | :tcpip:func:`ethernet_websocket_configuration/set <BrickMaster.set_ethernet_websocket_configuration>`
-                                                                                |                                      | :tcpip:func:`ethernet_authentication_secret/set <BrickMaster.set_ethernet_authentication_secret>`
-                                                                                |                                      | :tcpip:func:`wifi_authentication_secret/set <BrickMaster.set_wifi_authentication_secret>`
-                                                                                |                                      | :tcpip:func:`wifi2_authentication_secret/set <BrickMaster.set_wifi2_authentication_secret>`
-                                                                                |                                      | :tcpip:func:`wifi2_configuration/set <BrickMaster.set_wifi2_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi2_client_configuration/set <BrickMaster.set_wifi2_client_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi2_client_hostname/set <BrickMaster.set_wifi2_client_hostname>`
-                                                                                |                                      | :tcpip:func:`wifi2_client_password/set <BrickMaster.set_wifi2_client_password>`
-                                                                                |                                      | :tcpip:func:`wifi2_ap_configuration/set <BrickMaster.set_wifi2_ap_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi2_ap_password/set <BrickMaster.set_wifi2_ap_password>`
-                                                                                |                                      | :tcpip:func:`save_wifi2_configuration/set <BrickMaster.save_wifi2_configuration>` (calls :tcpip:func:`save_wifi2_configuration <BrickMaster.save_wifi2_configuration>` with the parameters provided by the *save_wifi2_configuration/set* topic and the output of the getter being published to the *save_wifi2_configuration* topic)
-                                                                                |                                      | :tcpip:func:`enable_wifi2_status_led/set <BrickMaster.enable_wifi2_status_led>`
-                                                                                |                                      | :tcpip:func:`disable_wifi2_status_led/set <BrickMaster.disable_wifi2_status_led>`
-                                                                                |                                      | :tcpip:func:`wifi2_mesh_configuration/set <BrickMaster.set_wifi2_mesh_configuration>`
-                                                                                |                                      | :tcpip:func:`wifi2_mesh_router_ssid/set <BrickMaster.set_wifi2_mesh_router_ssid>`
-                                                                                |                                      | :tcpip:func:`wifi2_mesh_router_password/set <BrickMaster.set_wifi2_mesh_router_password>`
                                                                                 |                                      | :tcpip:func:`enable_status_led/set <BrickMaster.enable_status_led>`
                                                                                 |                                      | :tcpip:func:`disable_status_led/set <BrickMaster.disable_status_led>`
                                                                                 |                                      | :tcpip:func:`reset/set <BrickMaster.reset>`
 
- :ref:`Servo Brick <servo_brick>`                                               | brick/servo                          | :tcpip:func:`output_voltage <BrickServo.get_output_voltage>`
+ :ref:`Servo Brick <servo_brick>`                                               | brick/servo                          | :tcpip:func:`is_enabled <BrickServo.is_enabled>`
+                                                                                |                                      | :tcpip:func:`position <BrickServo.get_position>`
+                                                                                |                                      | :tcpip:func:`current_position <BrickServo.get_current_position>`
+                                                                                |                                      | :tcpip:func:`velocity <BrickServo.get_velocity>`
+                                                                                |                                      | :tcpip:func:`current_velocity <BrickServo.get_current_velocity>`
+                                                                                |                                      | :tcpip:func:`acceleration <BrickServo.get_acceleration>`
+                                                                                |                                      | :tcpip:func:`output_voltage <BrickServo.get_output_voltage>`
+                                                                                |                                      | :tcpip:func:`pulse_width <BrickServo.get_pulse_width>`
+                                                                                |                                      | :tcpip:func:`degree <BrickServo.get_degree>`
+                                                                                |                                      | :tcpip:func:`period <BrickServo.get_period>`
+                                                                                |                                      | :tcpip:func:`servo_current <BrickServo.get_servo_current>`
                                                                                 |                                      | :tcpip:func:`overall_current <BrickServo.get_overall_current>`
                                                                                 |                                      | :tcpip:func:`stack_input_voltage <BrickServo.get_stack_input_voltage>`
                                                                                 |                                      | :tcpip:func:`external_input_voltage <BrickServo.get_external_input_voltage>`
@@ -389,23 +328,13 @@ payloads.
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickServo.get_chip_temperature>`
                                                                                 |                                      | :tcpip:func:`enable/set <BrickServo.enable>`
                                                                                 |                                      | :tcpip:func:`disable/set <BrickServo.disable>`
-                                                                                |                                      | :tcpip:func:`is_enabled/set <BrickServo.is_enabled>` (calls :tcpip:func:`is_enabled <BrickServo.is_enabled>` with the parameters provided by the *is_enabled/set* topic and the output of the getter being published to the *is_enabled* topic)
                                                                                 |                                      | :tcpip:func:`position/set <BrickServo.set_position>`
-                                                                                |                                      | :tcpip:func:`get_position/set <BrickServo.get_position>` (calls :tcpip:func:`get_position <BrickServo.get_position>` with the parameters provided by the *get_position/set* topic and the output of the getter being published to the *position* topic)
-                                                                                |                                      | :tcpip:func:`get_current_position/set <BrickServo.get_current_position>` (calls :tcpip:func:`get_current_position <BrickServo.get_current_position>` with the parameters provided by the *get_current_position/set* topic and the output of the getter being published to the *current_position* topic)
                                                                                 |                                      | :tcpip:func:`velocity/set <BrickServo.set_velocity>`
-                                                                                |                                      | :tcpip:func:`get_velocity/set <BrickServo.get_velocity>` (calls :tcpip:func:`get_velocity <BrickServo.get_velocity>` with the parameters provided by the *get_velocity/set* topic and the output of the getter being published to the *velocity* topic)
-                                                                                |                                      | :tcpip:func:`get_current_velocity/set <BrickServo.get_current_velocity>` (calls :tcpip:func:`get_current_velocity <BrickServo.get_current_velocity>` with the parameters provided by the *get_current_velocity/set* topic and the output of the getter being published to the *current_velocity* topic)
                                                                                 |                                      | :tcpip:func:`acceleration/set <BrickServo.set_acceleration>`
-                                                                                |                                      | :tcpip:func:`get_acceleration/set <BrickServo.get_acceleration>` (calls :tcpip:func:`get_acceleration <BrickServo.get_acceleration>` with the parameters provided by the *get_acceleration/set* topic and the output of the getter being published to the *acceleration* topic)
                                                                                 |                                      | :tcpip:func:`output_voltage/set <BrickServo.set_output_voltage>`
                                                                                 |                                      | :tcpip:func:`pulse_width/set <BrickServo.set_pulse_width>`
-                                                                                |                                      | :tcpip:func:`get_pulse_width/set <BrickServo.get_pulse_width>` (calls :tcpip:func:`get_pulse_width <BrickServo.get_pulse_width>` with the parameters provided by the *get_pulse_width/set* topic and the output of the getter being published to the *pulse_width* topic)
                                                                                 |                                      | :tcpip:func:`degree/set <BrickServo.set_degree>`
-                                                                                |                                      | :tcpip:func:`get_degree/set <BrickServo.get_degree>` (calls :tcpip:func:`get_degree <BrickServo.get_degree>` with the parameters provided by the *get_degree/set* topic and the output of the getter being published to the *degree* topic)
                                                                                 |                                      | :tcpip:func:`period/set <BrickServo.set_period>`
-                                                                                |                                      | :tcpip:func:`get_period/set <BrickServo.get_period>` (calls :tcpip:func:`get_period <BrickServo.get_period>` with the parameters provided by the *get_period/set* topic and the output of the getter being published to the *period* topic)
-                                                                                |                                      | :tcpip:func:`get_servo_current/set <BrickServo.get_servo_current>` (calls :tcpip:func:`get_servo_current <BrickServo.get_servo_current>` with the parameters provided by the *get_servo_current/set* topic and the output of the getter being published to the *servo_current* topic)
                                                                                 |                                      | :tcpip:func:`enable_status_led/set <BrickServo.enable_status_led>`
                                                                                 |                                      | :tcpip:func:`disable_status_led/set <BrickServo.disable_status_led>`
                                                                                 |                                      | :tcpip:func:`reset/set <BrickServo.reset>`
@@ -850,6 +779,10 @@ payloads.
                                                                                 |                                      | :tcpip:func:`status_led_config/set <BrickletRGBLEDMatrix.set_status_led_config>`
                                                                                 |                                      | :tcpip:func:`reset/set <BrickletRGBLEDMatrix.reset>`
 
+ :ref:`Rotary Encoder Bricklet <rotary_encoder_bricklet>`                       | bricklet/rotary_encoder              | :tcpip:func:`count <BrickletRotaryEncoder.get_count>` (calls :tcpip:func:`get_count <BrickletRotaryEncoder.get_count>` with *false*)
+                                                                                |                                      | :tcpip:func:`get_count/set <BrickletRotaryEncoder.get_count>` (calls :tcpip:func:`get_count <BrickletRotaryEncoder.get_count>` with the parameters provided by the *get_count/set* topic and the output of the getter being published to the *count* topic)
+                                                                                |                                      | :tcpip:func:`pressed <BrickletRotaryEncoder.is_pressed>`
+
  :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`                             | bricklet/rotary_poti                 | :tcpip:func:`position <BrickletRotaryPoti.get_position>`
 
  :ref:`RS232 Bricklet <rs232_bricklet>`                                         | bricklet/rs232                       | :tcpip:func:`read <BrickletRS232.read>`
@@ -879,10 +812,6 @@ payloads.
                                                                                 |                                      | :tcpip:func:`buffer_config/set <BrickletRS485.set_buffer_config>`
                                                                                 |                                      | :tcpip:func:`status_led_config/set <BrickletRS485.set_status_led_config>`
                                                                                 |                                      | :tcpip:func:`reset/set <BrickletRS485.reset>`
-
- :ref:`Rotary Encoder Bricklet <rotary_encoder_bricklet>`                       | bricklet/rotary_encoder              | :tcpip:func:`count <BrickletRotaryEncoder.get_count>` (calls :tcpip:func:`get_count <BrickletRotaryEncoder.get_count>` with *false*)
-                                                                                |                                      | :tcpip:func:`get_count/set <BrickletRotaryEncoder.get_count>` (calls :tcpip:func:`get_count <BrickletRotaryEncoder.get_count>` with the parameters provided by the *get_count/set* topic and the output of the getter being published to the *count* topic)
-                                                                                |                                      | :tcpip:func:`pressed <BrickletRotaryEncoder.is_pressed>`
 
  :ref:`Solid State Relay Bricklet <solid_state_relay_bricklet>`                 | bricklet/solid_state_relay           | :tcpip:func:`state <BrickletSolidStateRelay.get_state>`
                                                                                 |                                      | :tcpip:func:`state/set <BrickletSolidStateRelay.set_state>`
