@@ -204,13 +204,17 @@ RS485 Busmodifikation
 
 Wenn etwas am Bus verändert werden soll, z.B. neue Bricks oder Bricklets
 hinzufügen, dann muss der betroffene Stapel zuerst von seiner
-Stromversorgung trennen. Nachdem die Änderungen vorgenommen wurden kann der Stapel
-wieder an seine Stromversorgung angeschlossen. Falls der Stapel ein RS485
-Slave ist, dann muss auch der dazugehörige RS485 Master neu gestartet werden,
-da dieser nur beim Start seine zugehörigen RS485 Slaves sucht und die
-Kommunikation mit ihnen aufnimmt. Den Neustart des RS485 Masters kann
-durch Drücken seines Reset Knopfes erreicht werden, bzw. durch ein kurzes Trennen
-seiner USB Verbindung.
+Stromversorgung getrennt werden. Nachdem die Änderung vorgenommen wurde kann der Stapel
+wieder an seine Stromversorgung angeschlossen werden. 
+
+Seit Master Brick Firmware Version 2.4.6 ist das Verhalten nach einem
+Neustart wie folgt:
+
+* Wenn der Stapel eines RS485-Masters neugestartet wird, senden alle Bricks/Bricklets
+  des RS485-Netzwerkes nochmal ihre initiale Enumerierung.
+
+* Wenn der Stapel eines RS485-Slaves neugestartet wird, senden nur die Bricks/Bricklets
+  im Stapel des Slaves ihre initiale Enumerierung nochmal.
 
 
 Programmierschnittstelle

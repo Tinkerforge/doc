@@ -191,12 +191,17 @@ RS485 Bus Modification
 ^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to change something in your bus, e.g. add new Bricks or
-Bricklets, you have to power down the stack you would like to change.
-Change it and repower it. If the stack was slave in the RS485 bus, you
-also have to reset the RS485 master (it only searches for new
-Bricks and Bricklets on startup).
-This can be achieved by a power cycle or pressing the reset
-button on the Master Brick.
+Bricklets, you have to power down the stack you would like to change,
+change it and repower it. 
+
+The following is true with Master Brick firmware version 2.4.6 and above:
+
+* If you restart the RS485 Master, every Brick/Bricklet of the RS485
+  network will send the initial enumeration message again.
+
+* If you restart the RS485 Slave, only the Bricks/Bricklets that
+  are connected to this stack will send the  initial enumeration 
+  message again.
 
 
 Programming Interface
