@@ -239,6 +239,23 @@ analyze absolute temperature changes.
 Use this mode if you want to work with actual temperature data.
 
 
+.. _thermal_imaging_flir:
+
+Thermal by FLIR
+---------------
+The Tinkerforge Thermal Imaging Bricklet is equipped with a 
+`Lepton <http://www.flir.com/cores/lepton/>`__ thermal
+imaging sensor. Tinkerforge is part of the Thermal by FLIR
+program (please note the logo on the front side of the Bricklet). Thermal by FLIR is a program 
+where FLIR is working with leading integrators to support development and 
+marketing of products that include FLIR thermal sensors.  The goal of the program 
+is aligned with FLIR's mission of innovating the sixth sense to saves lives and 
+livelihoods.
+
+FLIR has created a central site at `lepton.flir.com <https://lepton.flir.com/>`__
+to support the Lepton maker community.
+
+
 .. _thermal_imaging_bricklet_case:
 
 Case
