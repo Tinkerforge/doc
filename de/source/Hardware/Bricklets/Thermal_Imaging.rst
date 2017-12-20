@@ -247,6 +247,26 @@ Dieser Modus sollte genutzt werden, wenn mit wirklichen Temperaturdaten gearbeit
 werden soll.
 
 
+.. _thermal_imaging_flir:
+
+Thermal by FLIR
+---------------
+Das Tinkerforge Thermal Imaging Bricklet ist mit einer
+`Lepton <http://www.flir.com/cores/lepton/>`__ Wärmebildkamera
+ausgestattet. Tinkerforge ist Teil des Thermal by FLIR programms
+(daher auch das Logo auf dem Bricklet). Thermal by FLIR ist ein
+programm bei dem FLIR mit Entwicklern zusammenarbeitet um die Entwicklung
+und die Vermarktung von FLIR Sensoren zu unterstützen. Das Ziel dieses
+Programms gehört zur FLIR's Mission den sechsten Sinn zu entwickeln und
+Leben und Existenzen zu retten.
+
+Über die Webseite `lepton.flir.com <https://lepton.flir.com/>`__ unterstützt
+FLIR die Lepton Maker Community.
+
+
+.. _thermal_imaging_bricklet_case:
+
+
 .. _thermal_imaging_bricklet_case:
 
 Gehäuse
