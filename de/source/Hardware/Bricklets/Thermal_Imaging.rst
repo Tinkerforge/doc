@@ -27,7 +27,7 @@ Features
 --------
 
 * 80x60 Pixel Wärmebildkamera
-* Messbereich -273°C bis 6279°C
+* Messbereich -10°C bis 450°C
 * Nutzt FLIR Lepton **mit Radiometry und Shutter**
 * High Contrast Bild mit 8,6Hz und 8 Bit Auflösung (zum darstellen)
 * Temperatur Bild mit 4,5Hz und 16 Bit Auflösung (für wissenschaftliche Berechnungen)
@@ -45,7 +45,7 @@ Das Thermal Imaging :ref:`Bricklet <primer_bricklets>` ist mit einer
 ausgestattet. Das Bricklet kann mit :ref:`Bricks <primer_bricks>` verbunden werden.
 
 Das Bricklet nutzt einen FLIR Lepton Sensor mit Radiometrie und Shutter. Der Sensor
-kann Temperaturen zwischen -273°C bis zu 6279°C mit einer Auflösung von 80x60 Pixel
+kann Temperaturen zwischen -10°C bis zu 450°C mit einer Auflösung von 80x60 Pixel
 messen.
 
 Ein Spotmeter kann definiert werden um Minimum-, Durchschnitts und Maximaltemperatur
@@ -61,7 +61,7 @@ die Grauwerte mittels einer Lookuptable auf Falschfarben abgebildet.
 
 Im Termperature Image Modus streamt das Bricklet Daten mit 4,5Hz und 16 Bit
 Auflösung. In den Bilddaten stellt jeder 16 Bit Wert eine Temperatur zwischen
--273°C und 6279°C mit einer Auflösung von 0,1°C oder einen Wert -273°C und 381°C
+-10°C und 450°C mit einer Auflösung von 0,1°C oder einen Wert -10°C und 140°C
 mit einer Auflösung von 0,01°C (abhängig von der Auflösungs-Konfiguration).
 Dieser Modus kann für wissenschaftliche Berechnungen und der Analyse von
 Temperaturänderungen genutzt werden.
@@ -178,7 +178,7 @@ Für den High Contrast Image Modus wird der hohe Dynamikumfang des Sensors
 zusammengefasst mit einer Histogramm-basierten nichtlinearen Abbildungsfunktion.
 Diese Filterung ist notwendig für Visualisierungen. Wären die Daten ungefiltert, 
 so könnten diese nicht für Visualisierungen genutzt werden. Mit einem 
-Temperaturbereich von -273°C bis 6279°C wären typische Temperaturänderungen im
+Temperaturbereich von -10°C bis 450°C wären typische Temperaturänderungen im
 Bild von 20°C-30°C nicht sichtbar.
 
 Die 8-Bit Daten jedes Pixels enthält dafür aber keine Temperaturinformationen mehr.
@@ -234,8 +234,8 @@ zur Verfügung. Jeder Pixel in dem Bild ist eine Temperaturmessung mit einer Auf
 Das Thermal Imaging Bricklet hat zwei konfigurierbare Temperaturbereiche für den 
 Temperature Image Modus:
 
-* -273°C to 381°C mit einer Auflösung von 0.01°C
-* -273°C to 6279°C mit einer Auflösung von 0.1°C
+* -10°C to 140°C mit einer Auflösung von 0.01°C
+* -10°C to 450°C mit einer Auflösung von 0.1°C
 
 Müssen keine Temperaturen über 381°C sollte der erste Messbereich gewählt werden um die
 Auflösung zu erhöhen.
