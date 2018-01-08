@@ -905,6 +905,14 @@ Linux
 
   sudo dd bs=64M if=/tmp/red_image_1_5_full.img of=/dev/sdb
 
+ 
+4. Es kann notwendig sein den Puffer zu leeren, falls nicht alle Daten 
+   geschrieben wurden. Dies ist mit folgenden Befehl möglich:
+
+.. code-block:: bash
+
+  sudo sync
+
 Mac OS X
 """"""""
 

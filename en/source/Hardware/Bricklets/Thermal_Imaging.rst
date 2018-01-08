@@ -27,7 +27,7 @@ Features
 --------
 
 * 80x60 pixel thermal imaging camera
-* Measurement range -273°C to 6279°C 
+* Measurement range -10°C to 450°C 
 * Uses FLIR Lepton **with radiometry and shutter**
 * High Contrast Image with 8.6Hz and 8 bit resolution (for display)
 * Temperature Image with 4.5Hz and 16 bit resolution (for scientific calculations)
@@ -45,7 +45,7 @@ The Thermal Imaging :ref:`Bricklet <primer_bricklets>` is equipped with a
 It can be connected to a :ref:`Brick <primer_bricks>`.
 
 The Bricklet uses a FLIR Lepton sensor with radiometry and shutter. It can
-measure a temperature range of -273°C up to 6279°C with a resolution of 80x60 pixel.
+measure a temperature range of -10°C up to 450°C with a resolution of 80x60 pixel.
 
 A spotmeter can be set to measure the minimum, mean and maximum temperature
 of a user defined region in the image.
@@ -60,7 +60,7 @@ in a pseudo-color image by a lookup table.
 
 In Temperature Image mode the Bricklet provides an image stream with 4.5Hz and 16 bit
 resolution. In the image data each pixel represents one 16 bit temperature value between
--273°C and 6279°C with a resolution of 0.1°C or a value between -273°C and 381°C with a 
+-10°C and 450°C with a resolution of 0.1°C or a value between -10°C and 140°C with a 
 resolution of 0.01°C (depending on the resolution configuration). This mode can be
 used for scientific calculations and to analyze absolute temperature changes.
 
@@ -174,7 +174,7 @@ For the High Contrast Image mode the high dynamic range of the sensor
 is collapsed with a histogram-based non-linear mapping function. This filtering
 is necessary for visualizations. If the data would be unfiltered, it could 
 not be used for visualizations. With a temperature range from 
--273°C and 6279°C a common temperature image with small changes in the range of
+-10°C and 450°C a common temperature image with small changes in the range of
 20°C-30°C the changes would not be visible at all.
 
 The 8 bit data of each pixel does not contain any temperature information anymore.
@@ -227,8 +227,8 @@ resolution of 16 bit.
 The Thermal Imaging Bricklet has two configurable temperature ranges for the
 Temperature Image mode:
 
-* -273°C to 381°C with a resolution of 0.01°C
-* -273°C to 6279°C with a resolution of 0.1°C
+* -10°C to 140°C with a resolution of 0.01°C
+* -10°C to 450°C with a resolution of 0.1°C
 
 If you don't need to measure temperatures above 381°C you should always use the first
 range to increase the resolution.
@@ -237,6 +237,23 @@ The data can be directly used for scientific calculations or to
 analyze absolute temperature changes.
 
 Use this mode if you want to work with actual temperature data.
+
+
+.. _thermal_imaging_flir:
+
+Thermal by FLIR
+---------------
+The Tinkerforge Thermal Imaging Bricklet is equipped with a 
+`Lepton <http://www.flir.com/cores/lepton/>`__ thermal
+imaging sensor. Tinkerforge is part of the Thermal by FLIR
+program (please note the logo on the front side of the Bricklet). Thermal by FLIR is a program 
+where FLIR is working with leading integrators to support development and 
+marketing of products that include FLIR thermal sensors.  The goal of the program 
+is aligned with FLIR's mission of innovating the sixth sense to saves lives and 
+livelihoods.
+
+FLIR has created a central site at `lepton.flir.com <https://lepton.flir.com/>`__
+to support the Lepton maker community.
 
 
 .. _thermal_imaging_bricklet_case:

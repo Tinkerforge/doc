@@ -890,6 +890,13 @@ Linux
 .. code-block:: bash
 
   sudo dd bs=64M if=/tmp/red_image_1_5_full.img of=/dev/sdb
+ 
+4. It might be possible to empty the buffer, to get sure that everything 
+   is written to the card. This can be done by:
+
+.. code-block:: bash
+
+  sudo sync
 
 Mac OS X
 """"""""
