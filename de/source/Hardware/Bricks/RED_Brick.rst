@@ -978,6 +978,9 @@ auch manuell mit dem ``tf-set-resolution`` Tool eingestellt werden.
 Mit tf-set-resolution
 """""""""""""""""""""
 
+.. note:: In image version 1.10 **tf-set-resolution** ist nicht mehr verfügbar.
+          Weitere informationen finden sie :ref:`hier <red_brick_known_issues>`.
+
 Um die Monitor Auflösung zu ändern öffnet man den :ref:`Console Tab
 <red_brick_brickv_console>`. Anschließend wählt man die korrekte serielle
 Schnittstelle und klickt auf den *Connect* Button. Man wird als Nutzer ``tf``

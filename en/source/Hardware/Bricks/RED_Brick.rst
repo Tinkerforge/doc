@@ -958,6 +958,10 @@ manually set the resolution using the ``tf-set-resolution`` tool.
 Using tf-set-resolution
 """""""""""""""""""""""
 
+.. note:: Starting from image version 1.10 the tool **tf-set-resolution**
+          is not available anymore. More information available
+          :ref:`here <red_brick_known_issues>` section.
+
 To change the display resolution open the :ref:`console tab
 <red_brick_brickv_console>`. Choose the correct serial port and press the
 *Connect* button. You should be logged in as user ``tf`` (if you see nothing
