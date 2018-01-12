@@ -42,6 +42,8 @@ Beschreibung
 
 TBD
 
+Das Outdoor Weather Bricklet hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
