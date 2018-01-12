@@ -49,6 +49,8 @@ The voltage can be read out in `Volt
 With configurable events it is possible to react on changing
 voltages without polling.
 
+The Analog In Bricklet 3.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------

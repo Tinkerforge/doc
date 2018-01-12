@@ -56,6 +56,8 @@ Objekts eingestellt werden (die meisten Infrarot Thermometer können dies
 nicht). Zusätzlich ist es möglich Events zu konfigurieren die ausgelöst werden
 wenn eine bestimmte Temperatur über- oder unterschritten wird.
 
+Das Temperature IR Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------

@@ -50,6 +50,8 @@ Die gemessene Spannung kann direkt in `Volt
 Mit konfigurierbaren Events ist es möglich auf Spannungsänderungen zu
 reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
 
+Das Analog In Bricklet 3.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------

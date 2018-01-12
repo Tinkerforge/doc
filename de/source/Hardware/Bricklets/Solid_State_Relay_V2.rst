@@ -71,6 +71,8 @@ Im Shop bieten wir zwei passende Solid State Relais an:
 * `DC (Gleichstrom) SSR für bis zu 80A bei 50V
   <https://www.tinkerforge.com/de/shop/solid-state-relay-dc-50v-80a.html>`__
 
+Das Solid State Relay Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
