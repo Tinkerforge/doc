@@ -9,7 +9,10 @@
 .. _solid_state_relay_v2_bricklet:
 
 Solid State Relay Bricklet 2.0
-==========================
+==============================
+
+.. note::
+  This Bricklet is currently under development.
 
 ..
 	.. raw:: html
