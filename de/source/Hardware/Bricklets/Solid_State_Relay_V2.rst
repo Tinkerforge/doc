@@ -51,7 +51,7 @@ Features
 Beschreibung
 ------------
 
-Mit dem Solid State Relay :ref:`Bricklet <primer_bricklets>` können
+Mit dem Solid State Relay :ref:`Bricklet <primer_bricklets>` 2.0 können
 :ref:`Bricks <primer_bricks>` um die Fähigkeit erweitert werden
 `Solid State Relais (SSR) <https://de.wikipedia.org/wiki/Relais#Halbleiterrelais>`__
 zu schalten.

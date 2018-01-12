@@ -51,7 +51,7 @@ Features
 Description
 -----------
 
-The Solid State Relay :ref:`Bricklet <primer_bricklets>` can be used to
+The Solid State Relay :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
 extend :ref:`Bricks <primer_bricks>` by the possibility to switch `solid state
 relays (SSR) <https://en.wikipedia.org/wiki/Solid-state_relay>`__.
 
