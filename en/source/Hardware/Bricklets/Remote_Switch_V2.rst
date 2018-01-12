@@ -12,6 +12,9 @@
 Remote Switch Bricklet 2.0
 ==========================
 
+.. note::
+  This Bricklet is currently under development.
+
 ..
 	.. raw:: html
 
@@ -48,6 +51,8 @@ extend :ref:`Bricks <primer_bricks>` by the possibility to
 control remote mains switches that are based on the PT2262 and HX2262 ICs.
 
 House code as well as receiver code can be configured with the API.
+
+The Bricklet can also be used as a receiver for the remotes.
 
 Technical Specifications
 ------------------------

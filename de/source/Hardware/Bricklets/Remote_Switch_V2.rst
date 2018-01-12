@@ -11,6 +11,9 @@
 Remote Switch Bricklet 2.0
 ==========================
 
+.. note::
+  Dieses Bricklet befindet sich aktuell in der Entwicklung.
+
 ..
 	.. raw:: html
 
@@ -48,6 +51,8 @@ die auf dem PT2262 oder HX2262 IC basieren.
 
 Housecode und Receivercode der zu schaltenden Steckdose können über die
 API konfiguriert werden.
+
+Das Bricklet kann auch als Empfänger der Fernbedienungen genutzt werden.
 
 Technische Spezifikation
 ------------------------
