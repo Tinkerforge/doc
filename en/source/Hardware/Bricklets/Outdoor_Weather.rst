@@ -31,8 +31,9 @@ Outdoor Weather Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Receives data from outdoor weather station and indoor sensors
+* Measures Temperature, Humidity, Wind/Gust speed, Wind direction and Rainfall
+* Can use up to 255 weather stations/sensors simultaneously
 
 
 .. _outdoor_weather_bricklet_description:
@@ -40,10 +41,30 @@ Features
 Description
 -----------
 
-TBD
+The Outdoor Weather :ref:`Bricklet <primer_bricklets>` is equipped
+with a 433MHz receiver capable of receiving data from outdoor weather stations.
+It can be connecetd to a :ref:`Bricks <primer_bricks>`.
+
+It currently supports `Outdoor Weather Station XXX <TBD>`__ which measures
+
+* Temperature (°C)
+* Humidity (%rel)
+* Wind/Gust speed (m/s)
+* Wind direction (16 directions)
+* Rainfall (mm)
+
+and `Sensor YYY <TBD>`__ which measures
+
+* Temperature (°C)
+* Humidity (%rel)
+
+The weather station is meant to be put outside (somewhere where it can measure the rain/wind).
+The sensor can be used inside or outside. You can use up to 255 weather station and up to
+255 sensors simultaneously.
 
 The Outdoor Weather Bricklet has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
+
 
 Technical Specifications
 ------------------------
@@ -57,7 +78,7 @@ Current Consumption               TBDmA
 P TBD                             V TBD
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
+Dimensions (W x D x H)            40 x 35 x 5mm (1.58 x 1.38 x 0.2")
 Weight                            TBDg
 ================================  ============================================================
 
@@ -65,6 +86,7 @@ Weight                            TBDg
 Resources
 ---------
 
+* 433MHz receiver RFM210LCF (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/raw/master/datasheets/RFM210LCF.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/raw/master/hardware/outdoor-weather-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/outdoor_weather_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/zipball/master>`__)
@@ -81,7 +103,9 @@ Test your Outdoor Weather Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now see the latest received data of your
+weather stations and sensors. It takes about ~45 seconds until the first data
+shows up when you start the weather station or Bricklet for the first time.
 
 .. image:: /Images/Bricklets/bricklet_outdoor_weather_brickv.jpg
    :scale: 100 %
