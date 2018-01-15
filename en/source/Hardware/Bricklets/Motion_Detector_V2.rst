@@ -30,7 +30,7 @@ Features
 --------
 
 * Passive Infrared Motion Sensor
-* Detects motion in distances of up to TBDm (configurable)
+* Detects motion in distances of up to 12m (sensitivity configurable)
 * High sensing angle (120°)
 * Fresnel lens has controllable backlight
 
@@ -42,12 +42,14 @@ Description
 The Motion Detector :ref:`Bricklet <primer_bricklets>` is equipped
 with a passive infrared (PIR) sensor. It can be used to extend 
 :ref:`Bricks <primer_bricks>` to sense movement of people and animals. 
-It has a configurable detection range of TBDm to TBDm with a sensing angle of 120°.
+It has a configurable detection range of up to 12m with a sensing angle of 120°.
 
 By using configurable events it is possible to react on detected motion without
 polling.
 
-TODO: LEDs etc
+The fresnel lens has a blue backlight with controllable intensity. The backlight
+can be used as an indicator for detected motion or as a general purpose indication
+light.
 
 The Motion Detector Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
@@ -61,7 +63,6 @@ Property                          Value
 Current Consumption               TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Detection Range                   TBD-TBDm (configurable)
 Sensing Angle                     120°
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -73,6 +74,8 @@ Weight                            TBDg
 Resources
 ---------
 
+* PIR Sensor AS612 (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/raw/master/datasheets/AS612.pdf>`__)
+* Fresnel Lens S8002-2W (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/raw/master/datasheets/S8002-2w.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/raw/master/hardware/motion-detector-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/motion_detector_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/zipball/master>`__)
@@ -85,7 +88,7 @@ Test your Motion Detector Bricklet 2.0
 
 |test_intro|
 
-|test_connect|. Attach the motion detector on top of the Bricklet.
+|test_connect|.
 
 |test_tab|
 If everything went as expected you can now see when a motion is detected.
