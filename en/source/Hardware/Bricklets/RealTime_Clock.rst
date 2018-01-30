@@ -79,7 +79,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/real-time-clock-bricklet/raw/master/hardware/rtc-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/real_time_clock_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/real-time-clock-bricklet/zipball/master>`__)
-
+* 3D model (`View online <http://autode.sk/2BFtoCC>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rtc/rtc.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rtc/rtc.FCStd>`__)
 
 .. _real_time_clock_bricklet_test:
 
