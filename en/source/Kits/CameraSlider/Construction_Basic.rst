@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/CameraSlider/CameraSlider.html#construction">Starter Kit: Camera Slider</a> / Construction - Basic Camera Slider
-
 .. _starter_kit_camera_slider_construction_basic:
 
 Construction - Basic Camera Slider

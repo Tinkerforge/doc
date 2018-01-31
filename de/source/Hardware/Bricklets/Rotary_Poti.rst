@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Rotary Poti Bricklet
 :shoplink: ../../../shop/bricklets/rotary-poti-bricklet.html
 
 .. include:: Rotary_Poti.substitutions

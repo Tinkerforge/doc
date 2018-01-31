@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Mains Switches using Ruby
-
 .. |ref_set_monoflop| replace:: :rb:func:`#set_monoflop <BrickletIndustrialQuadRelay#set_monoflop>` 
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 

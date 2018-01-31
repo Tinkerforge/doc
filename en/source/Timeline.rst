@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#hardware">Hardware</a> / Timeline
-
 .. _timeline:
 
 Timeline

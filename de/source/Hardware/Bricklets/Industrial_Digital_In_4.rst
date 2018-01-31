@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Industrial Digital In 4 Bricklet
 :shoplink: ../../../shop/bricklets/industrial-digital-in-4-bricklet.html
 
 .. include:: Industrial_Digital_In_4.substitutions

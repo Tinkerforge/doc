@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Industrial Dual Analog In Bricklet
 :shoplink: ../../../shop/bricklets/industrial-dual-analog-in-bricklet.html
 
 .. include:: Industrial_Dual_Analog_In.substitutions

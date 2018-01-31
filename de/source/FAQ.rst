@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Startseite</a> / <a href="index.html#einstieg">Einstieg</a> / FAQ
-
 .. _faq:
 
 FAQ

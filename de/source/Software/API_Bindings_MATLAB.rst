@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-matlab">Software</a> / MATLAB/Octave - API Bindings
-
 .. _api_bindings_matlab:
 
 MATLAB/Octave - API Bindings

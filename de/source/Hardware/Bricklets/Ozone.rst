@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Ozone Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/ozone-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/ozone-bricklet.html
 
 .. include:: Ozone.substitutions
    :start-after: >>>substitutions

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#getting-started">Getting Started</a> / Tutorial - Authentication
-
 .. _tutorial_authentication:
 
 Tutorial - Authentication

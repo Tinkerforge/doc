@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / LCD 16x2 Bricklet
-
 .. include:: LCD_16x2.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions

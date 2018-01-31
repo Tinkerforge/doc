@@ -1,5 +1,5 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Outdoor Weather Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/outdoor-weather-bricklet.html
+
+:DISABLED_shoplink: ../../../shop/bricklets/outdoor-weather-bricklet.html
 
 .. include:: Outdoor_Weather.substitutions
    :start-after: >>>substitutions

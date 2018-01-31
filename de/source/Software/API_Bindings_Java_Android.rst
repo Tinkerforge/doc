@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-java">Software</a> / Java (Android) - API Bindings
-
 .. _api_bindings_java_android:
 
 Java (Android) - API Bindings

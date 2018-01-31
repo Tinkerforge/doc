@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Remote Switch Bricklet 2.0
-.. :shoplink: ../../../shop/bricklets/remote-switch-v2-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/remote-switch-v2-bricklet.html
 
 .. include:: Remote_Switch_V2.substitutions
    :start-after: >>>substitutions

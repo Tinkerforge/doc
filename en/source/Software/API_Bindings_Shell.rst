@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-shell">Software</a> / Shell - API Bindings
-
 .. _api_bindings_shell:
 
 Shell - API Bindings

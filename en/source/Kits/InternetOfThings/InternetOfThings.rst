@@ -1,7 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / Starter Kit: Internet of Things
 :shoplink: ../../../shop/kits/starter-kit-internet-of-things.html
-
 
 .. _starter_kit_iot:
 

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-csharp">Software</a> / C# - API Bindings
-
 .. _api_bindings_csharp:
 
 C# - API Bindings

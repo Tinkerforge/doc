@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / DC Brick
 :shoplink: ../../../shop/bricks/dc-brick.html
 
 .. include:: DC_Brick.substitutions

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-tvpl">Software</a> / Tinkerforge Visual Programming Language (TVPL) - API Bindings
-
 .. _api_bindings_tvpl:
 
 Tinkerforge Visual Programming Language (TVPL) - API Bindings

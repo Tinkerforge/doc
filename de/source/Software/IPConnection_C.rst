@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-c">Software</a> / C/C++ - IP Connection
-
 .. |ref_api_bindings| replace:: :ref:`C/C++ API Bindings <api_bindings_c>`
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_c_install>`
 .. |bindings_name| replace:: C/C++

@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / <a href="RED_Brick.html">RED Brick</a> / Program Tab
 :shoplink: ../../../shop/bricks/red-brick.html
 
 .. include:: RED_Brick.substitutions

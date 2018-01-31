@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction - Raspberry Pi Weather Station
-
 .. _starter_kit_weather_station_construction_raspberry_pi:
 
 Construction - Raspberry Pi Weather Station

@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Hall Effect Bricklet
 :shoplink: ../../../shop/bricklets/hall-effect-bricklet.html
 
 .. include:: Hall_Effect.substitutions

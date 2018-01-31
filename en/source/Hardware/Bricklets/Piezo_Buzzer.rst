@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Piezo Buzzer Bricklet
-
 .. include:: Piezo_Buzzer.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions

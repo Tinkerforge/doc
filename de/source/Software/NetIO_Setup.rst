@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software">Software</a> / NetIO Controller App Setup
-
 .. _netio_setup:
 
 NetIO Controller App Setup

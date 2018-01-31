@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-javascript">Software</a> / JavaScript - API Bindings
-
 .. _api_bindings_javascript:
 
 JavaScript - API Bindings

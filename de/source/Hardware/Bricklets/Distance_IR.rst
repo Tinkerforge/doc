@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Distance IR Bricklet
 :shoplink: ../../../shop/bricklets/distance-ir-bricklet.html
 
 .. include:: Distance_IR.substitutions

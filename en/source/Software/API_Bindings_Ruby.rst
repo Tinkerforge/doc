@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-ruby">Software</a> / Ruby - API Bindings
-
 .. _api_bindings_ruby:
 
 Ruby - API Bindings

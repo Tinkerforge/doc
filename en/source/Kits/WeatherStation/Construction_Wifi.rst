@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html#construction">Starter Kit: Weather Station</a> / Construction - Wi-Fi Weather Station
-
 .. include:: WeatherStation.substitutions
 
 .. _starter_kit_weather_station_construction_wifi:

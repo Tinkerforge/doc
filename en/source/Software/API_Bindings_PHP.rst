@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-php">Software</a> / PHP - API Bindings
-
 .. _api_bindings_php:
 
 PHP - API Bindings

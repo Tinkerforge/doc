@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Motion Detector Bricklet
 :shoplink: ../../../shop/bricklets/motion-detector-bricklet.html
 
 .. include:: Motion_Detector.substitutions

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#spezifikationen">Spezifikationen</a> / Modbus Protokoll
-
 .. _llproto_modbus:
 
 Modbus Protokoll

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#specifications">Spezifikationen</a> / Wireshark Dissector
-
 .. _wireshark_dissector:
 
 Wireshark Dissector

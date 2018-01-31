@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Analog In Bricklet
-
 .. include:: Analog_In.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions

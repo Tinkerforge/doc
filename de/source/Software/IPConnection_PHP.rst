@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-php">Software</a> / PHP - IP Connection
-
 .. |ref_api_bindings| replace:: :ref:`PHP API Bindings <api_bindings_php>`
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_php_install>`
 .. |bindings_name| replace:: PHP

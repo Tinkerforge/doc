@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-csharp">Software</a> / C# (Windows Phone) - API Bindings
-
 .. _api_bindings_csharp_windows_phone:
 
 C# (Windows Phone) - API Bindings

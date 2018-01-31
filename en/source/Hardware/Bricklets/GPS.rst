@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / GPS Bricklet
 :shoplink: ../../../shop/bricklets/gps-bricklet.html
 
 .. include:: GPS.substitutions

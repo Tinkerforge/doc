@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / NFC Bricklet
-.. :shoplink: ../../../shop/bricklets/nfc-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/nfc-bricklet.html
 
 .. include:: NFC.substitutions
    :start-after: >>>substitutions

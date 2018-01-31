@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / RS485 Master Extension
 :shoplink: ../../../shop/master-extensions/rs485-master-extension.html
 
 .. _rs485_extension:

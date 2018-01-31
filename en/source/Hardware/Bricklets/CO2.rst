@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / CO2 Bricklet
 :shoplink: ../../../shop/bricklets/co2-bricklet.html
 
 .. include:: CO2.substitutions

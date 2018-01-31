@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-csharp">Software</a> / C# - IP Connection
-
 .. |ref_api_bindings| replace:: :ref:`C# API bindings <api_bindings_csharp>`
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_csharp_install>`
 .. |bindings_name| replace:: C#

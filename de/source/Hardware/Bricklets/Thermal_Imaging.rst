@@ -1,4 +1,4 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Thermal Imaging Bricklet
+
 :shoplink: ../../../shop/bricklets/thermal-imaging-bricklet.html
 
 .. include:: Thermal_Imaging.substitutions

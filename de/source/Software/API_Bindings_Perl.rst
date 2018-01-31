@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-perl">Software</a> / Perl - API Bindings
-
 .. _api_bindings_perl:
 
 Perl - API Bindings

@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Moisture Bricklet
 :shoplink: ../../../shop/bricklets/moisture-bricklet.html
 
 .. include:: Moisture.substitutions

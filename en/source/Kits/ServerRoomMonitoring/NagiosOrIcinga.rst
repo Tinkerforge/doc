@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/ServerRoomMonitoring/ServerRoomMonitoring.html">Starter Kit: Server Room Monitoring</a> / Server Room Monitoring with Nagios or Icinga
-
 .. _starter_kit_server_room_monitoring_nagios_or_icinga:
 
 Server Room Monitoring with Nagios or Icinga

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-labview">Software</a> / LabVIEW - API Bindings
-
 .. _api_bindings_labview:
 
 LabVIEW - API Bindings

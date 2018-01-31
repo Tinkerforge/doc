@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-labview">Software</a> / LabVIEW - IP Connection
-
 .. |ref_api_bindings| replace:: :ref:`LabVIEW API Bindings <api_bindings_labview>`
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_labview_install>`
 .. |bindings_name| replace:: LabVIEW

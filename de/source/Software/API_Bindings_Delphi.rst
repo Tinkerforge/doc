@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-delphi">Software</a> / Delphi/Lazarus - API Bindings
-
 .. _api_bindings_delphi:
 
 Delphi/Lazarus - API Bindings

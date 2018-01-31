@@ -1,7 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/Blinkenlights/Blinkenlights.html">Starterkit: Blinkenlights</a> / Aufbau des Starterkits: Blinkenlights
-
-
 .. role:: led-pixel-red
 
 .. role:: led-pixel-green

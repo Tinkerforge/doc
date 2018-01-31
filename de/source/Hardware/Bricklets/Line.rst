@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Line Bricklet
 :shoplink: ../../../shop/bricklets/line-bricklet.html
 
 .. include:: Line.substitutions

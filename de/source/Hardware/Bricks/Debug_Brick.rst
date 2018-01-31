@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Debug Brick
 :shoplink: ../../../shop/bricks/debug-brick.html
 
 .. _debug_brick:

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-delphi">Software</a> / Delphi/Lazarus - IP Connection
-
 .. |ref_api_bindings| replace:: :ref:`Delphi/Lazarus API Bindings <api_bindings_delphi>`
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_delphi_install>`
 .. |bindings_name| replace:: Delphi/Lazarus

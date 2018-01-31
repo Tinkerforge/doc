@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / AC Current Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/ac-current-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/ac-current-bricklet.html
 
 .. include:: AC_Current.substitutions
    :start-after: >>>substitutions

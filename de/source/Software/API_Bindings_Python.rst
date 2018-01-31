@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-python">Software</a> / Python - API Bindings
-
 .. _api_bindings_python:
 
 Python - API Bindings

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-c">Software</a> / C/C++ (iOS) - API Bindings
-
 .. _api_bindings_c_ios:
 
 C/C++ (iOS) - API Bindings

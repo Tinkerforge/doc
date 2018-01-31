@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Temperature IR Bricklet 2.0
-.. :shoplink: ../../../shop/bricklets/temperature-ir-v2-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/temperature-ir-v2-bricklet.html
 
 .. include:: Temperature_IR_V2.substitutions
    :start-after: >>>substitutions

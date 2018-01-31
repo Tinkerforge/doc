@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Control Remote Mains Switches using C# with GUI
-
 .. _starter_kit_hardware_hacking_remote_switch_gui_csharp:
 
 Control Remote Mains Switches using C# with GUI

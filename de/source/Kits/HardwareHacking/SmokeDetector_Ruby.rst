@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Rauchmelder mit Ruby auslesen
-
 .. |ref_CALLBACK_ENUMERATE| replace:: :rb:attr:`::CALLBACK_ENUMERATE <IPConnection::CALLBACK_ENUMERATE>`
 .. |ref_CALLBACK_CONNECTED| replace:: :rb:attr:`::CALLBACK_CONNECTED <IPConnection::CALLBACK_CONNECTED>`
 .. |callback| replace:: Callback

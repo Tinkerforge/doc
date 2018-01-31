@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/ServerRoomMonitoring/ServerRoomMonitoring.html">Starter Kit: Server Room Monitoring</a> / Upload Sensor Data to Xively
-
 .. _starter_kit_server_room_monitoring_upload_sensor_data_to_xively:
 
 Upload Sensor Data to Xively

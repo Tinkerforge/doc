@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-perl">Software</a> / Perl - IP Connection
-
 .. |ref_api_bindings| replace:: :ref:`Perl API Bindings <api_bindings_perl>`
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_perl_install>`
 .. |bindings_name| replace:: Perl

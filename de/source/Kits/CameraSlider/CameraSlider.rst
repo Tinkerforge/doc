@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / Starterkit: Kameraschlitten
 :shoplink: ../../../shop/kits/starter-kit-camera-slider.html
 
 .. _starter_kit_camera_slider:

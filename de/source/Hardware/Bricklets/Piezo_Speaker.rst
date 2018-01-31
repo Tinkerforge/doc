@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Piezo Speaker Bricklet
 :shoplink: ../../../shop/bricklets/piezo-speaker-bricklet.html
 
 .. include:: Piezo_Speaker.substitutions

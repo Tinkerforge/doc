@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/ServerRoomMonitoring/ServerRoomMonitoring.html">Starterkit: Serverraum-Überwachung</a> / Erweitertes Nagios Beispiel
-
 .. _starter_kit_server_room_monitoring_extended_nagios:
 
 Erweitertes Nagios Beispiel

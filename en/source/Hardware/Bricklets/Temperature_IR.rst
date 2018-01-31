@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Temperature IR Bricklet
 :shoplink: ../../../shop/bricklets/temperature-ir-bricklet.html
 
 .. include:: Temperature_IR.substitutions

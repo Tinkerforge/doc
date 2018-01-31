@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Distance US Bricklet
 :shoplink: ../../../shop/bricklets/distance-us-bricklet.html
 
 .. include:: Distance_US.substitutions

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / Embedded Boards
-
 Embedded Boards
 ===============
 

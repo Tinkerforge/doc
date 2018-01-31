@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-tcpip">Software</a> / TCP/IP Protokoll
-
 .. _llproto_tcpip:
 
 TCP/IP Protokoll
