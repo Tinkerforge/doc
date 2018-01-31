@@ -21,6 +21,12 @@ GPS Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das GPS Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`GPS Bricklet 2.0 <gps_v2_bricklet>`
+ empfohlen.
+
 Features
 --------
 

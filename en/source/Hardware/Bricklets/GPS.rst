@@ -23,6 +23,12 @@ GPS Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The GPS Bricklet is discontinued and is no longer sold. The
+ :ref:`GPS Bricklet 2.0 <gps_v2_bricklet>` is the recommended
+ replacement.
+
 Features
 --------
 
