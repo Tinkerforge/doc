@@ -23,8 +23,7 @@ sys.path.append(os.path.abspath('../..'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.pngmath',
-              'sphinxextra.customhtml',
+extensions = ['sphinxextra.customhtml',
               'sphinxextra.csharpdomain',
               'sphinxextra.delphidomain',
               'sphinxextra.labviewdomain',
@@ -223,7 +222,12 @@ latex_documents = [
 #latex_use_modindex = True
 
 
-# -- Monkey patch sphinx ------------------------------------------- ----------
+# -- Options for gettext output -----------------------------------------------
+
+gettext_auto_build = False
+
+
+# -- Monkey patch sphinx ------------------------------------------------------
 
 def setup(app):
     import os
@@ -319,11 +323,9 @@ def setup(app):
 
     BuildEnvironment.monkey_get_reverse_toctree = monkey_get_reverse_toctree
 
-    old_resolve_toctree = BuildEnvironment.resolve_toctree
-
     # this code originally comes from sphinx 1.2.2
-    def new_resolve_toctree_122(self, docname, builder, toctree, prune=True, maxdepth=0,
-                                titles_only=False, collapse=False, includehidden=False):
+    def new_resolve_toctree_v122(self, docname, builder, toctree, prune=True, maxdepth=0,
+                                 titles_only=False, collapse=False, includehidden=False):
         """Resolve a *toctree* node into individual bullet lists with titles
         as items, returning None (if no containing titles are found) or
         a new node.
@@ -363,13 +365,13 @@ def setup(app):
         # The transformation is made in two passes in order to avoid
         # interactions between marking and pruning the tree (see bug #1046).
 
-        def _toctree_prune(node, depth, maxdepth):
+        def _toctree_prune_v122(node, depth, maxdepth):
             """Utility: Cut a TOC at a specified depth."""
             for subnode in node.children[:]:
                 if isinstance(subnode, (addnodes.compact_paragraph,
                                         nodes.list_item)):
                     # for <p> and <li>, just recurse
-                    _toctree_prune(subnode, depth, maxdepth)
+                    _toctree_prune_v122(subnode, depth, maxdepth)
                 elif isinstance(subnode, nodes.bullet_list):
                     # for <ul>, determine if the depth is too large or if the
                     # entry is to be collapsed
@@ -383,9 +385,9 @@ def setup(app):
                             subnode.parent.remove(subnode)
                         else:
                             # recurse on visible children
-                            _toctree_prune(subnode, depth+1, maxdepth)
+                            _toctree_prune_v122(subnode, depth+1, maxdepth)
 
-        def _toctree_add_classes(node, depth):
+        def _toctree_add_classes_v122(node, depth):
             """Add 'toctree-l%d' and 'current' classes to the toctree."""
 
             # photron: start
@@ -398,10 +400,10 @@ def setup(app):
                                         nodes.list_item)):
                     # for <p> and <li>, indicate the depth level and recurse
                     subnode['classes'].append('toctree-l%d' % (depth-1))
-                    _toctree_add_classes(subnode, depth)
+                    _toctree_add_classes_v122(subnode, depth)
                 elif isinstance(subnode, nodes.bullet_list):
                     # for <ul>, just recurse
-                    _toctree_add_classes(subnode, depth+1)
+                    _toctree_add_classes_v122(subnode, depth+1)
                 elif isinstance(subnode, nodes.reference):
                     # for <a>, identify which entries point to the current
                     # document and therefore may not be collapsed
@@ -443,12 +445,12 @@ def setup(app):
                             subnode['iscurrent'] = True
                             subnode = subnode.parent
 
-        def _entries_from_toctree(toctreenode, parents,
-                                  separate=False, subtree=False,
-                                  # photron: add forced_expand option to force expansion
-                                  # one sublevel below the path to the current document
-                                  forced_expand=False):
-                                  # photron: end
+        def _entries_from_toctree_v122(toctreenode, parents,
+                                       separate=False, subtree=False,
+                                       # photron: add forced_expand option to force expansion
+                                       # one sublevel below the path to the current document
+                                       forced_expand=False):
+                                       # photron: end
             """Return TOC entries for a toctree node."""
             refs = [(e[0], e[1]) for e in toctreenode['entries']]
             entries = []
@@ -537,7 +539,7 @@ def setup(app):
                             # photron: end
 
                             i = toctreenode.parent.index(toctreenode) + 1
-                            for item in _entries_from_toctree(
+                            for item in _entries_from_toctree_v122(
                                     toctreenode, [refdoc] + parents,
                                     subtree=True,
                                     # photron: start
@@ -565,7 +567,10 @@ def setup(app):
         # NOTE: previously, this was separate=True, but that leads to artificial
         # separation when two or more toctree entries form a logical unit, so
         # separating mode is no longer used -- it's kept here for history's sake
-        tocentries = _entries_from_toctree(toctree, [], separate=False, forced_expand=True)
+        tocentries = _entries_from_toctree_v122(toctree, [], separate=False,
+                                                # photron: add forced_expand option to force expansion
+                                                forced_expand=True)
+                                                # photron: end
         if not tocentries:
             return None
 
@@ -573,8 +578,8 @@ def setup(app):
         newnode['toctree'] = True
 
         # prune the tree to maxdepth, also set toc depth and current classes
-        _toctree_add_classes(newnode, 1)
-        _toctree_prune(newnode, 1, prune and maxdepth or 0)
+        _toctree_add_classes_v122(newnode, 1)
+        _toctree_prune_v122(newnode, 1, prune and maxdepth or 0)
 
         # set the target paths in the toctrees (they are not known at TOC
         # generation time)
@@ -590,16 +595,9 @@ def setup(app):
 
         return newnode
 
-
-    # --- TODO: MONKEY PATCH ME! ---
-
-    # This is currently the unchanged source code taken from sphinx.
-    # This still needs to be patched for the breadcrumbs etc before 
-    # we can use sphinx 1.5 on the server
-
     # this code originally comes from sphinx 1.5.3
-    def new_resolve_toctree_153(self, docname, builder, toctree, prune=True, maxdepth=0,
-                        titles_only=False, collapse=False, includehidden=False):
+    def new_resolve_toctree_v153(self, docname, builder, toctree, prune=True, maxdepth=0,
+                                 titles_only=False, collapse=False, includehidden=False):
         """Resolve a *toctree* node into individual bullet lists with titles
         as items, returning None (if no containing titles are found) or
         a new node.
@@ -613,6 +611,14 @@ def setup(app):
         """
         if toctree.get('hidden', False) and not includehidden:
             return None
+
+        # photron: prepare reverse toctree lookup to avoid expaning the whole
+        # tree every time. only expand the path to the current document
+        if not hasattr(self.env, 'monkey_reverse_toctree'):
+            self.env.monkey_reverse_toctree = self.env.monkey_get_reverse_toctree()
+        # photron: end
+
+        from sphinx.util.nodes import process_only_nodes
 
         # For reading the following two helper function, it is useful to keep
         # in mind the node structure of a toctree (using HTML-like node names
@@ -634,28 +640,56 @@ def setup(app):
 
         toctree_ancestors = self.get_toctree_ancestors(docname)
 
-        def _toctree_add_classes(node, depth):
+        def _toctree_add_classes_v153(node, depth):
             """Add 'toctree-l%d' and 'current' classes to the toctree."""
+
+            # photron: start
+            if not hasattr(self.env, 'monkey_breadcrumbs'):
+                self.env.monkey_breadcrumbs = {}
+            # photron: end
+
             for subnode in node.children:
                 if isinstance(subnode, (addnodes.compact_paragraph,
                                         nodes.list_item)):
                     # for <p> and <li>, indicate the depth level and recurse
                     subnode['classes'].append('toctree-l%d' % (depth - 1))
-                    _toctree_add_classes(subnode, depth)
+                    _toctree_add_classes_v153(subnode, depth)
                 elif isinstance(subnode, nodes.bullet_list):
                     # for <ul>, just recurse
-                    _toctree_add_classes(subnode, depth + 1)
+                    _toctree_add_classes_v153(subnode, depth + 1)
                 elif isinstance(subnode, nodes.reference):
                     # for <a>, identify which entries point to the current
                     # document and therefore may not be collapsed
                     if subnode['refuri'] == docname:
                         if not subnode['anchorname']:
+                            # photron: start
+                            breadcrumbs = []
+                            # photron: end
+
                             # give the whole branch a 'current' class
                             # (useful for styling it differently)
                             branchnode = subnode
                             while branchnode:
                                 branchnode['classes'].append('current')
                                 branchnode = branchnode.parent
+
+                                # photron: collect current path in toctree as breadcrumbs
+                                if branchnode and isinstance(branchnode, nodes.list_item):
+                                    for c in branchnode.traverse(nodes.reference):
+                                        if len(c.children) == 0:
+                                            raise Exception('Missing reference text node id breadcrumbs for ' + docname)
+
+                                        breadcrumbs = [(c['refuri'], c['anchorname'], c.children[0].astext())] + breadcrumbs
+                                        break
+                                # photron: end
+
+                            # photron: sanity check
+                            if docname in self.env.monkey_breadcrumbs and self.env.monkey_breadcrumbs[docname] != breadcrumbs:
+                               raise Exception('Different breadcrumbs for ' + docname)
+
+                            self.env.monkey_breadcrumbs[docname] = breadcrumbs
+                            # photron: end
+
                         # mark the list_item as "on current page"
                         if subnode.parent.parent.get('iscurrent'):
                             # but only if it's not already done
@@ -664,8 +698,12 @@ def setup(app):
                             subnode['iscurrent'] = True
                             subnode = subnode.parent
 
-        def _entries_from_toctree(toctreenode, parents,
-                                  separate=False, subtree=False):
+        def _entries_from_toctree_v153(toctreenode, parents,
+                                       separate=False, subtree=False,
+                                       # photron: add forced_expand option to force expansion
+                                       # one sublevel below the path to the current document
+                                       forced_expand=False):
+                                       # photron: end
             """Return TOC entries for a toctree node."""
             refs = [(e[0], e[1]) for e in toctreenode['entries']]
             entries = []
@@ -742,10 +780,32 @@ def setup(app):
                     for subtocnode in toc.traverse(addnodes.toctree):
                         if not (subtocnode.get('hidden', False) and
                                 not includehidden):
+
+                            # photron: use the reverse toctree lookup to only expand
+                            # nodes along the way to the current document
+                            if docname != 'index':
+                                if docname not in self.env.monkey_reverse_toctree:
+                                    continue
+
+                                if not forced_expand and refdoc not in self.env.monkey_reverse_toctree[docname]:
+                                    continue
+                            # photron: end
+
+                            # photron: force sublevel for the index and other toplevel documents,
+                            # also force it for one sublevel below the path to the current document
+                            next_forced_expand = \
+                                docname == 'index' or \
+                                len(self.env.monkey_reverse_toctree[docname]) == 0 or \
+                                refdoc == self.env.monkey_reverse_toctree[docname][-1]
+                            # photron: end
+
                             i = subtocnode.parent.index(subtocnode) + 1
-                            for item in _entries_from_toctree(
+                            for item in _entries_from_toctree_v153(
                                     subtocnode, [refdoc] + parents,
-                                    subtree=True):
+                                    subtree=True,
+                                    # photron: start
+                                    forced_expand=next_forced_expand):
+                                    # photron: end
                                 subtocnode.parent.insert(i, item)
                                 i += 1
                             subtocnode.parent.remove(subtocnode)
@@ -768,7 +828,10 @@ def setup(app):
         # NOTE: previously, this was separate=True, but that leads to artificial
         # separation when two or more toctree entries form a logical unit, so
         # separating mode is no longer used -- it's kept here for history's sake
-        tocentries = _entries_from_toctree(toctree, [], separate=False)
+        tocentries = _entries_from_toctree_v153(toctree, [], separate=False,
+                                               # photron: add forced_expand option to force expansion
+                                               forced_expand=True)
+                                               # photron: end
         if not tocentries:
             return None
 
@@ -788,7 +851,7 @@ def setup(app):
         newnode['toctree'] = True
 
         # prune the tree to maxdepth, also set toc depth and current classes
-        _toctree_add_classes(newnode, 1)
+        _toctree_add_classes_v153(newnode, 1)
         self._toctree_prune(newnode, 1, prune and maxdepth or 0, collapse)
 
         if len(newnode[-1]) == 0:  # No titles found
@@ -800,59 +863,41 @@ def setup(app):
             if not url_re.match(refnode['refuri']):
                 refnode['refuri'] = builder.get_relative_uri(
                     docname, refnode['refuri']) + refnode['anchorname']
+
+                # photron: empty refuri doesn't work in IE, use a # instead
+                if len(refnode['refuri']) == 0:
+                    refnode['refuri'] = '#'
+                # photron: end
+
         return newnode
 
-
-    if LooseVersion(sphinx.__version__) < LooseVersion("1.5.0"):
-        BuildEnvironment.resolve_toctree = new_resolve_toctree_122
-    else:
-
-        # Note: The old resolve_toctree function was refactored into 
-        # three functions (see below for the other two functions).
-        # They also now use 'self.env.metadata' which is not in the
-        # BuildEnvironment. 
-
-        # For now we just leave the resolve_toctree unpatched, so 
-        # we can build the documentation locally. The toctree is not
-        # super important for local testing.
-
-        return
-
-        BuildEnvironment.resolve_toctree = new_resolve_toctree_153
-
-        def new_get_toctree_ancestors(self, docname):
-            from six import iteritems
-            parent = {}
-            for p, children in iteritems(self.toctree_includes):
-                for child in children:
-                    parent[child] = p
-            ancestors = []
-            d = docname
-            while d in parent and d not in ancestors:
-                ancestors.append(d)
-                d = parent[d]
-            return ancestors
-
-        def new__toctree_prune(self, node, depth, maxdepth, collapse=False):
-            """Utility: Cut a TOC at a specified depth."""
-            for subnode in node.children[:]:
-                if isinstance(subnode, (addnodes.compact_paragraph,
-                                        nodes.list_item)):
-                    # for <p> and <li>, just recurse
-                    self._toctree_prune(subnode, depth, maxdepth, collapse)
-                elif isinstance(subnode, nodes.bullet_list):
-                    # for <ul>, determine if the depth is too large or if the
-                    # entry is to be collapsed
-                    if maxdepth > 0 and depth > maxdepth:
-                        subnode.parent.replace(subnode, [])
+    # this code originally comes from sphinx 1.5.3
+    def new_toctree_prune_v153(self, node, depth, maxdepth, collapse=False):
+        """Utility: Cut a TOC at a specified depth."""
+        for subnode in node.children[:]:
+            if isinstance(subnode, (addnodes.compact_paragraph,
+                                    nodes.list_item)):
+                # for <p> and <li>, just recurse
+                self._toctree_prune(subnode, depth, maxdepth, collapse)
+            elif isinstance(subnode, nodes.bullet_list):
+                # for <ul>, determine if the depth is too large or if the
+                # entry is to be collapsed
+                if maxdepth > 0 and depth > maxdepth:
+                    subnode.parent.replace(subnode, [])
+                else:
+                    mindepth = 2 # photron: keep the first level expanded, was set to 1 before
+                    # cull sub-entries whose parents aren't 'current'
+                    if (collapse and depth > mindepth and
+                        'iscurrent' not in subnode.parent):
+                        subnode.parent.remove(subnode)
                     else:
-                        # cull sub-entries whose parents aren't 'current'
-                        if (collapse and depth > 1 and
-                                'iscurrent' not in subnode.parent):
-                            subnode.parent.remove(subnode)
-                        else:
-                            # recurse on visible children
-                            self._toctree_prune(subnode, depth + 1, maxdepth, collapse)
+                        # recurse on visible children
+                        self._toctree_prune(subnode, depth + 1, maxdepth, collapse)
 
-        BuildEnvironment.get_toctree_ancestors = new_get_toctree_ancestors
-        BuildEnvironment._toctree_prune = new__toctree_prune
+    if LooseVersion(sphinx.__version__) < LooseVersion('1.5.0'):
+        BuildEnvironment.resolve_toctree = new_resolve_toctree_v122
+    else:
+        from sphinx.environment.managers.toctree import Toctree
+
+        Toctree.resolve_toctree = new_resolve_toctree_v153
+        Toctree._toctree_prune = new_toctree_prune_v153
