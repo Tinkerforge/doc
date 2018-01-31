@@ -78,7 +78,7 @@ Stepper Brick can be found. If it is connected locally to USB then ``localhost``
 and 4223 is correct. The ``UID`` value has to be changed to the UID of the
 connected Stepper Brick, which you can figure out using Brick Viewer:
 
-.. code-block:: csharp
+.. code-block:: vbnet
 
   Const HOST As String = "localhost"
   Const PORT As Integer = 4223
@@ -124,7 +124,7 @@ Stepper Brick can be found. If it is connected locally to USB then ``localhost``
 and 4223 is correct. The ``UID`` value has to be changed to the UID of the
 connected Stepper Brick, which you can figure out using Brick Viewer:
 
-.. code-block:: csharp
+.. code-block:: vbnet
 
   Const HOST As String = "localhost"
   Const PORT As Integer = 4223
