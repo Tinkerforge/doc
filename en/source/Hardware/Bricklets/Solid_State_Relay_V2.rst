@@ -122,7 +122,7 @@ connected to the power supply has to be connected to the "+" pole of the SSR.
 .. _solid_state_relay_v2_bricklet_test:
 
 Test your Solid State Relay Bricklet 2.0
-------------------------------------
+----------------------------------------
 
 |test_intro|
 

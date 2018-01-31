@@ -93,7 +93,7 @@ Resources
 .. _temperature_ir_v2_bricklet_test:
 
 Test your Temperature IR Bricklet 2.0
----------------------------------
+-------------------------------------
 
 |test_intro|
 
