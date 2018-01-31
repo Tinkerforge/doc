@@ -23,6 +23,8 @@ from sphinx.util.nodes import make_refnode
 from sphinx.util.compat import Directive
 from sphinx.util.docfields import TypedField
 
+from sphinxextra.utils import fixup_index_entry
+
 # Olaf: add [\[\]]*, remove \b to allow java arrays, add \. to allow Class1.Class2
 #_identifier_re = re.compile(r'\b(~?[a-zA-Z_][a-zA-Z0-9_]*)\b')
 _identifier_re = re.compile(r'\b(~?[a-zA-Z_][a-zA-Z0-9_\.]*[\[\]]*)')
@@ -858,7 +860,7 @@ class JavaObject(ObjectDescription):
 
         indextext = self.get_index_text(name)
         if indextext:
-            self.indexnode['entries'].append(('single', indextext, name, name))
+            self.indexnode['entries'].append(fixup_index_entry(('single', indextext, name, name)))
 
     def before_content(self):
         lastname = self.names and self.names[-1]
