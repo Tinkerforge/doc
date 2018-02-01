@@ -1,6 +1,6 @@
 
 Perl - Bricklets
-=================
+================
 
 Links to the API reference for the Bricklets as
 well as the examples from the ZIP file of the bindings are listed in the
