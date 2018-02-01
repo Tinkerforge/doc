@@ -163,4 +163,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_Perl>
    Bricks <Bricks_Perl>
+   Bricks (Abgekündigt) <Bricks_Perl_Discontinued>
    Bricklets <Bricklets_Perl>
+   Bricklets (Abgekündigt) <Bricklets_Perl_Discontinued>

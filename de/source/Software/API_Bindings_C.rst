@@ -255,4 +255,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_C>
    Bricks <Bricks_C>
+   Bricks (Abgekündigt) <Bricks_C_Discontinued>
    Bricklets <Bricklets_C>
+   Bricklets (Abgekündigt) <Bricklets_C_Discontinued>

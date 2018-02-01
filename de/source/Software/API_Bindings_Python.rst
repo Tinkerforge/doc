@@ -142,4 +142,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_Python>
    Bricks <Bricks_Python>
+   Bricks (Abgekündigt) <Bricks_Python_Discontinued>
    Bricklets <Bricklets_Python>
+   Bricklets (Abgekündigt) <Bricklets_Python_Discontinued>

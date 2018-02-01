@@ -113,4 +113,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_PHP>
    Bricks <Bricks_PHP>
+   Bricks (Discontinued) <Bricks_PHP_Discontinued>
    Bricklets <Bricklets_PHP>
+   Bricklets (Discontinued) <Bricklets_PHP_Discontinued>

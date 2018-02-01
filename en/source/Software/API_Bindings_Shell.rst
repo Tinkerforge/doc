@@ -137,4 +137,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_Shell>
    Bricks <Bricks_Shell>
+   Bricks (Discontinued) <Bricks_Shell_Discontinued>
    Bricklets <Bricklets_Shell>
+   Bricklets (Discontinued) <Bricklets_Shell_Discontinued>

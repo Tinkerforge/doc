@@ -128,4 +128,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_Java>
    Bricks <Bricks_Java>
+   Bricks (Abgekündigt) <Bricks_Java_Discontinued>
    Bricklets <Bricklets_Java>
+   Bricklets (Abgekündigt) <Bricklets_Java_Discontinued>

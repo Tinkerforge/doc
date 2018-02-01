@@ -126,4 +126,6 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    Bricks <Bricks_Modbus>
+   Bricks (Discontinued) <Bricks_Modbus_Discontinued>
    Bricklets <Bricklets_Modbus>
+   Bricklets (Discontinued) <Bricklets_Modbus_Discontinued>

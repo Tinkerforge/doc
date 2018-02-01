@@ -160,4 +160,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_Perl>
    Bricks <Bricks_Perl>
+   Bricks (Discontinued) <Bricks_Perl_Discontinued>
    Bricklets <Bricklets_Perl>
+   Bricklets (Discontinued) <Bricklets_Perl_Discontinued>

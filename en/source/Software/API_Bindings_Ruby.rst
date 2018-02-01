@@ -117,4 +117,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_Ruby>
    Bricks <Bricks_Ruby>
+   Bricks (Discontinued) <Bricks_Ruby_Discontinued>
    Bricklets <Bricklets_Ruby>
+   Bricklets (Discontinued) <Bricklets_Ruby_Discontinued>

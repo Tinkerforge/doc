@@ -157,4 +157,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_LabVIEW>
    Bricks <Bricks_LabVIEW>
+   Bricks (Abgekündigt) <Bricks_LabVIEW_Discontinued>
    Bricklets <Bricklets_LabVIEW>
+   Bricklets (Abgekündigt) <Bricklets_LabVIEW_Discontinued>

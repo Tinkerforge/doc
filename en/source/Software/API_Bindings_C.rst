@@ -243,4 +243,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_C>
    Bricks <Bricks_C>
+   Bricks (Discontinued) <Bricks_C_Discontinued>
    Bricklets <Bricklets_C>
+   Bricklets (Discontinued) <Bricklets_C_Discontinued>

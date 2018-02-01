@@ -166,4 +166,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_VBNET>
    Bricks <Bricks_VBNET>
+   Bricks (Discontinued) <Bricks_VBNET_Discontinued>
    Bricklets <Bricklets_VBNET>
+   Bricklets (Discontinued) <Bricklets_VBNET_Discontinued>

@@ -124,4 +124,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_CSharp>
    Bricks <Bricks_CSharp>
+   Bricks (Discontinued) <Bricks_CSharp_Discontinued>
    Bricklets <Bricklets_CSharp>
+   Bricklets (Discontinued) <Bricklets_CSharp_Discontinued>

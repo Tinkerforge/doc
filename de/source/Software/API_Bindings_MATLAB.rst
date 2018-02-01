@@ -243,4 +243,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_MATLAB>
    Bricks <Bricks_MATLAB>
+   Bricks (Abgekündigt) <Bricks_MATLAB_Discontinued>
    Bricklets <Bricklets_MATLAB>
+   Bricklets (Abgekündigt) <Bricklets_MATLAB_Discontinued>

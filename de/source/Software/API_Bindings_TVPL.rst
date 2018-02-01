@@ -33,4 +33,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    Bricks <Bricks_TVPL>
+   Bricks (Abgekündigt) <Bricks_TVPL_Discontinued>
    Bricklets <Bricklets_TVPL>
+   Bricklets (Abgekündigt) <Bricklets_TVPL_Discontinued>

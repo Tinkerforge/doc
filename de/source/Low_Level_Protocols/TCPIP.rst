@@ -415,4 +415,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    Bricks <Bricks_TCPIP>
+   Bricks (Abgekündigt) <Bricks_TCPIP_Discontinued>
    Bricklets <Bricklets_TCPIP>
+   Bricklets (Abgekündigt) <Bricklets_TCPIP_Discontinued>

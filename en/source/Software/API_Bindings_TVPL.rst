@@ -33,4 +33,6 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    Bricks <Bricks_TVPL>
+   Bricks (Discontinued) <Bricks_TVPL_Discontinued>
    Bricklets <Bricklets_TVPL>
+   Bricklets (Discontinued) <Bricklets_TVPL_Discontinued>

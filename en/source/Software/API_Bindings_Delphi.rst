@@ -162,4 +162,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_Delphi>
    Bricks <Bricks_Delphi>
+   Bricks (Discontinued) <Bricks_Delphi_Discontinued>
    Bricklets <Bricklets_Delphi>
+   Bricklets (Discontinued) <Bricklets_Delphi_Discontinued>

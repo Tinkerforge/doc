@@ -188,4 +188,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_JavaScript>
    Bricks <Bricks_JavaScript>
+   Bricks (Abgekündigt) <Bricks_JavaScript_Discontinued>
    Bricklets <Bricklets_JavaScript>
+   Bricklets (Abgekündigt) <Bricklets_JavaScript_Discontinued>

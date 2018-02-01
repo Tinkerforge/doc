@@ -234,4 +234,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_MATLAB>
    Bricks <Bricks_MATLAB>
+   Bricks (Discontinued) <Bricks_MATLAB_Discontinued>
    Bricklets <Bricklets_MATLAB>
+   Bricklets (Discontinued) <Bricklets_MATLAB_Discontinued>

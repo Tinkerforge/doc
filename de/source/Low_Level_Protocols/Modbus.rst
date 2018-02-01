@@ -126,4 +126,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
    :hidden:
 
    Bricks <Bricks_Modbus>
+   Bricks (Abgekündigt) <Bricks_Modbus_Discontinued>
    Bricklets <Bricklets_Modbus>
+   Bricklets (Abgekündigt) <Bricklets_Modbus_Discontinued>

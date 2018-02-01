@@ -169,4 +169,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_Delphi>
    Bricks <Bricks_Delphi>
+   Bricks (Abgekündigt) <Bricks_Delphi_Discontinued>
    Bricklets <Bricklets_Delphi>
+   Bricklets (Abgekündigt) <Bricklets_Delphi_Discontinued>

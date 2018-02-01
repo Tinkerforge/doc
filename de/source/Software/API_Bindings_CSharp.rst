@@ -127,4 +127,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_CSharp>
    Bricks <Bricks_CSharp>
+   Bricks (Abgekündigt) <Bricks_CSharp_Discontinued>
    Bricklets <Bricklets_CSharp>
+   Bricklets (Abgekündigt) <Bricklets_CSharp_Discontinued>

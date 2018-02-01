@@ -415,4 +415,6 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    Bricks <Bricks_TCPIP>
+   Bricks (Discontinued) <Bricks_TCPIP_Discontinued>
    Bricklets <Bricklets_TCPIP>
+   Bricklets (Discontinued) <Bricklets_TCPIP_Discontinued>
