@@ -266,9 +266,6 @@ FLIR die Lepton Maker Community.
 
 .. _thermal_imaging_bricklet_case:
 
-
-.. _thermal_imaging_bricklet_case:
-
 Gehäuse
 -------
 
