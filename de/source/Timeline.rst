@@ -17,9 +17,6 @@ Informationen über zukünftige Entwicklungen finden sich in unserem `Forum
 <https://www.tinkerunity.org/forum>`__ und können aus der Historie unserer
 Projekte auf `GitHub <https://github.com/Tinkerforge>`__ herausgelesen werden.
 
-Historie
---------
-
 .. note:: Die Timeline wird nicht mehr aktualisiert. Wir berichten in unserem
           `Blog <https://www.tinkerforge.com/de/blog>`__ über unsere aktuellen
           Projekte und Produkte.

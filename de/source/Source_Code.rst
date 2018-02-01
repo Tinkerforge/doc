@@ -18,6 +18,9 @@ Um es der Community einfach zu machen Patches einzusenden und Probleme zu melden
 sind alle `Tinkerforge Projekte <https://github.com/Tinkerforge>`__ auf GitHub
 gehostet.
 
+Wo bekomme ich die Quelltexte her?
+----------------------------------
+
 Weiterführenden Informationen über git sind `hier <https://git-scm.com/>`__ zu
 finden. Unsere Projekte können wie folgt geclonet werden::
 
@@ -27,7 +30,6 @@ Im Folgenden ist eine Liste aller Tinkerforge Projekt Repositories und
 dazugehörigen Bug Trackern.
 
 .. include:: Source_Code_gits.table
-
 
 Wo und wie kann ich Problem melden?
 -----------------------------------
