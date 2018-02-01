@@ -2,8 +2,7 @@
 TCP/IP - Bricklets
 ==================
 
-Links zur API Referenz der Bricklets sowie den
-Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle
+Links zur API Referenz der Bricklets sind in der folgenden Tabelle
 aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 über :ref:`Starterkits <index_kits>`.
 
