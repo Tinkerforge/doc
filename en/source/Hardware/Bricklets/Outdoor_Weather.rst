@@ -48,7 +48,7 @@ It can be connecetd to a :ref:`Bricks <primer_bricks>`.
 It currently supports `Outdoor Weather Station XXX <TBD>`__ which measures
 
 * Temperature (°C)
-* Humidity (%rel)
+* Humidity (%RH)
 * Wind/Gust speed (m/s)
 * Wind direction (16 directions)
 * Rainfall (mm)
@@ -56,7 +56,7 @@ It currently supports `Outdoor Weather Station XXX <TBD>`__ which measures
 and `Sensor YYY <TBD>`__ which measures
 
 * Temperature (°C)
-* Humidity (%rel)
+* Humidity (%RH)
 
 The weather station is meant to be put outside (somewhere where it can measure the rain/wind).
 The sensor can be used inside or outside. You can use up to 255 weather station and up to
