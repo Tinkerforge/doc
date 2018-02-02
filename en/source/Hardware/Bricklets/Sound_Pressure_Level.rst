@@ -60,7 +60,7 @@ Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
 Weight                            TBDg
 ================================  ============================================================
 
-* Valid for the range of 100Hz to 8kHz. For details see :ref:`below <sound_pressure_level_bricklet_accuracy>`.
+\* Valid for the range of 100Hz to 8kHz. For details see :ref:`below <sound_pressure_level_bricklet_accuracy>`.
 
 Resources
 ---------
