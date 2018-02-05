@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-matlab">Software</a> / MATLAB/Octave - API Bindings
-
 .. _api_bindings_matlab:
 
 MATLAB/Octave - API Bindings
@@ -245,4 +243,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_MATLAB>
    Bricks <Bricks_MATLAB>
+   Bricks (Abgekündigt) <Bricks_MATLAB_Discontinued>
    Bricklets <Bricklets_MATLAB>
+   Bricklets (Abgekündigt) <Bricklets_MATLAB_Discontinued>

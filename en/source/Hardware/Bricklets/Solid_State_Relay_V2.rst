@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Solid State Relay Bricklet 2.0
-.. :shoplink: ../../../shop/bricklets/solid-state-relay-v2-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/solid-state-relay-v2-bricklet.html
 
 .. include:: Solid_State_Relay_V2.substitutions
    :start-after: >>>substitutions
@@ -122,7 +121,7 @@ connected to the power supply has to be connected to the "+" pole of the SSR.
 .. _solid_state_relay_v2_bricklet_test:
 
 Test your Solid State Relay Bricklet 2.0
-------------------------------------
+----------------------------------------
 
 |test_intro|
 

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-csharp">Software</a> / C# - API Bindings
-
 .. _api_bindings_csharp:
 
 C# - API Bindings
@@ -129,4 +127,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_CSharp>
    Bricks <Bricks_CSharp>
+   Bricks (Abgekündigt) <Bricks_CSharp_Discontinued>
    Bricklets <Bricklets_CSharp>
+   Bricklets (Abgekündigt) <Bricklets_CSharp_Discontinued>

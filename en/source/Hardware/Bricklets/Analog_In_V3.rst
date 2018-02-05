@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Analog In Bricklet 3.0
-.. :shoplink: ../../../shop/bricklets/analog-in-v3-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/analog-in-v3-bricklet.html
 
 .. include:: Analog_In_V3.substitutions
    :start-after: >>>substitutions

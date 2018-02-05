@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using Python to upload weather data to Xively
-
 .. _starter_kit_weather_station_python_to_xively:
 
 Using Python to upload weather data to Xively

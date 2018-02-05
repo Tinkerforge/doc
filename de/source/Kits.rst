@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Startseite</a> / Starterkits
-
 Starterkits
 ===========
 

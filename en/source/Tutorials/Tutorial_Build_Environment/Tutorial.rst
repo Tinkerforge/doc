@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#getting-started">Getting Started</a> / Tutorial - Build Environment Setup
-
 .. _tutorial_build_environment_setup:
 
 Tutorial - Build Environment Setup

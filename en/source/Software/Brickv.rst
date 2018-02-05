@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / Brick Viewer (brickv)
-
 .. _brickv:
 
 Brick Viewer (brickv)

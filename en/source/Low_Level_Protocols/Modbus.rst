@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#specifications">Specifications</a> / Modbus Protocol
-
 .. _llproto_modbus:
 
 Modbus Protocol
@@ -128,4 +126,6 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    Bricks <Bricks_Modbus>
+   Bricks (Discontinued) <Bricks_Modbus_Discontinued>
    Bricklets <Bricklets_Modbus>
+   Bricklets (Discontinued) <Bricklets_Modbus_Discontinued>

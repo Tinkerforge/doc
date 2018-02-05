@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#einstieg">Einstieg</a> / Tutorial - Robuster Ansatz
-
 .. _tutorial_rugged_approach:
 
 Tutorial - Robuster Ansatz

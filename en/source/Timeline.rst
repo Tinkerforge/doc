@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#hardware">Hardware</a> / Timeline
-
 .. _timeline:
 
 Timeline
@@ -17,9 +15,6 @@ The release of new software versions are not announced here, but in a central
 Information about future developments can be found in our `forum
 <https://www.tinkerunity.org/forum>`__ and can be figured out from the
 history of our projects on `GitHub <https://github.com/Tinkerforge>`__.
-
-History
--------
 
 .. note:: The timeline is not updated anymore. See our `blog
           <https://www.tinkerforge.com/en/blog>`__ for news and updates on our

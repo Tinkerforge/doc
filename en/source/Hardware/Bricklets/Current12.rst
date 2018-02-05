@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Current12 Bricklet
 
 .. include:: Current12.substitutions
    :start-after: >>>substitutions

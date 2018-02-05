@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Analog Out Bricklet
-
 .. include:: Analog_Out.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions

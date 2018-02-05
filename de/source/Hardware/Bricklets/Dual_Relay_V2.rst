@@ -1,5 +1,5 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Dual Relay Bricklet 2.0
-:FIXME_shoplink: ../../../shop/bricklets/dual-relay-v2-bricklet.html
+
+:DISABLED_shoplink: ../../../shop/bricklets/dual-relay-v2-bricklet.html
 
 .. include:: Dual_Relay_V2.substitutions
    :start-after: >>>substitutions

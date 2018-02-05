@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / OLED 128x64 Bricklet
 :shoplink: ../../../shop/bricklets/oled-128x64-bricklet.html
 
 .. include:: OLED_128x64.substitutions

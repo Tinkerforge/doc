@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / Getting Started
-
 Getting Started
 ===============
 

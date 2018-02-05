@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Read out Smoke Detectors using C
-
 .. |ref_CALLBACK_ENUMERATE| replace:: :c:data:`IPCON_CALLBACK_ENUMERATE`
 .. |ref_CALLBACK_CONNECTED| replace:: :c:data:`IPCON_CALLBACK_CONNECTED`
 .. |callback| replace:: callback

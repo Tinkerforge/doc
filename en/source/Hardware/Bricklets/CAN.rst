@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / CAN Bricklet
 :shoplink: ../../../shop/bricklets/can-bricklet.html
 
 .. include:: CAN.substitutions

@@ -1,4 +1,4 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Thermal Imaging Bricklet
+
 :shoplink: ../../../shop/bricklets/thermal-imaging-bricklet.html
 
 .. include:: Thermal_Imaging.substitutions
@@ -262,9 +262,6 @@ Leben und Existenzen zu retten.
 
 Über die Webseite `lepton.flir.com <https://lepton.flir.com/>`__ unterstützt
 FLIR die Lepton Maker Community.
-
-
-.. _thermal_imaging_bricklet_case:
 
 
 .. _thermal_imaging_bricklet_case:

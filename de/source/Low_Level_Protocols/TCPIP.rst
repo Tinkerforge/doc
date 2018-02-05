@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-tcpip">Software</a> / TCP/IP Protokoll
-
 .. _llproto_tcpip:
 
 TCP/IP Protokoll
@@ -404,12 +402,12 @@ General Callbacks
  The device identifier numbers can be found :ref:`here <device_identifier>`.
 
 
-Bricks and Bricklets
+Bricks und Bricklets
 ^^^^^^^^^^^^^^^^^^^^
 
-Links to the API reference for Bricks and Bricklets are listed in the
-following table. Further project descriptions can be found in the
-:ref:`Starter Kits <index_kits>` section.
+Links zur API Referenz der Bricks und Bricklets sind in der folgenden Tabelle
+aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
+über :ref:`Starterkits <index_kits>`.
 
 .. include:: TCPIP_links.table
 
@@ -417,4 +415,6 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    Bricks <Bricks_TCPIP>
+   Bricks (Abgekündigt) <Bricks_TCPIP_Discontinued>
    Bricklets <Bricklets_TCPIP>
+   Bricklets (Abgekündigt) <Bricklets_TCPIP_Discontinued>

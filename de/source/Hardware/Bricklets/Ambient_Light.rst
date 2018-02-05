@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Ambient Light Bricklet
-
 .. include:: Ambient_Light.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions

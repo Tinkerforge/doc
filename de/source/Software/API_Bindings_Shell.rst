@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-shell">Software</a> / Shell - API Bindings
-
 .. _api_bindings_shell:
 
 Shell - API Bindings
@@ -143,4 +141,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_Shell>
    Bricks <Bricks_Shell>
+   Bricks (Abgekündigt) <Bricks_Shell_Discontinued>
    Bricklets <Bricklets_Shell>
+   Bricklets (Abgekündigt) <Bricklets_Shell_Discontinued>

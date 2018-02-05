@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-java">Software</a> / Java - API Bindings
-
 .. _api_bindings_java:
 
 Java - API Bindings
@@ -130,4 +128,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_Java>
    Bricks <Bricks_Java>
+   Bricks (Abgekündigt) <Bricks_Java_Discontinued>
    Bricklets <Bricklets_Java>
+   Bricklets (Abgekündigt) <Bricklets_Java_Discontinued>

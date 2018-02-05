@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Heart Rate Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/heart-rate-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/heart-rate-bricklet.html
 
 .. include:: Heart_Rate.substitutions
    :start-after: >>>substitutions

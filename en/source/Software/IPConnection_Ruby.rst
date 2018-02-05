@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-ruby">Software</a> / Ruby - IP Connection
-
 .. |ref_api_bindings| replace:: :ref:`Ruby API bindings <api_bindings_ruby>`
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_ruby_install>`
 .. |bindings_name| replace:: Ruby

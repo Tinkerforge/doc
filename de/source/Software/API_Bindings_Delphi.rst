@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-delphi">Software</a> / Delphi/Lazarus - API Bindings
-
 .. _api_bindings_delphi:
 
 Delphi/Lazarus - API Bindings
@@ -171,4 +169,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_Delphi>
    Bricks <Bricks_Delphi>
+   Bricks (Abgekündigt) <Bricks_Delphi_Discontinued>
    Bricklets <Bricklets_Delphi>
+   Bricklets (Abgekündigt) <Bricklets_Delphi_Discontinued>

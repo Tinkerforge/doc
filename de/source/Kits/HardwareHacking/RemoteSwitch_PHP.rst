@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit PHP fernsteuern
-
 .. |ref_set_monoflop| replace:: :php:func:`setMonoflop() <BrickletIndustrialQuadRelay::setMonoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#getting-started">Getting Started</a> / <a href="faq.html">FAQ</a> / Transitioning from Protocol 1.0 to Protocol 2.0
-
 .. _transition_1to2:
 
 Transitioning from Protocol 1.0 to Protocol 2.0

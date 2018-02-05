@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-python">Software</a> / Python - IP Connection
-
 .. |ref_api_bindings| replace:: :ref:`Python API Bindings <api_bindings_python>`
 .. |ref_install_guide| replace:: :ref:`Installationanleitung <api_bindings_python_install>`
 .. |bindings_name| replace:: Python

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-tvpl">Software</a> / Tinkerforge Visual Programming Language (TVPL) - API Bindings
-
 .. _api_bindings_tvpl:
 
 Tinkerforge Visual Programming Language (TVPL) - API Bindings
@@ -35,4 +33,6 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    Bricks <Bricks_TVPL>
+   Bricks (Discontinued) <Bricks_TVPL_Discontinued>
    Bricklets <Bricklets_TVPL>
+   Bricklets (Discontinued) <Bricklets_TVPL_Discontinued>

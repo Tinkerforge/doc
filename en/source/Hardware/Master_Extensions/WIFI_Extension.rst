@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / WIFI Master Extension
 :shoplink: ../../../shop/master-extensions/wifi-master-extension.html
 
 .. _wifi_extension:

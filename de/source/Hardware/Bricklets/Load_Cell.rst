@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Load Cell Bricklet
 :shoplink: ../../../shop/bricklets/load-cell-bricklet.html
 
 .. include:: Load_Cell.substitutions

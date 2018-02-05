@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starterkit: Wetterstation</a> / Mit Visual Basic .NET auf das LCD 20x4 Bricklet schreiben
-
 .. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection.EnumerateCallback>`
 .. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection.Connected>`
 .. |callback| replace:: Callback

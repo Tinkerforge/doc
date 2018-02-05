@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Funksteckdosen mit Python fernsteuern
-
 .. |ref_set_monoflop| replace:: :py:func:`set_monoflop() <BrickletIndustrialQuadRelay.set_monoflop>`
 .. |bitmask_02| replace:: ``(1 << 0) | (1 << 2)``
 

@@ -1,4 +1,4 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Motorized Linear Poti Bricklet
+
 :shoplink: ../../../shop/bricklets/motorized-linear-poti-bricklet.html
 
 .. include:: Motorized_Linear_Poti.substitutions

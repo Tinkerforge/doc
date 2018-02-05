@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Gas Detector Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/gas-detector-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/gas-detector-bricklet.html
 
 .. include:: Gas_Detector.substitutions
    :start-after: >>>substitutions

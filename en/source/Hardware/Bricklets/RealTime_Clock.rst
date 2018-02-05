@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Real-Time Clock Bricklet
 :shoplink: ../../../shop/bricklets/real-time-clock-bricklet.html
 
 .. include:: RealTime_Clock.substitutions

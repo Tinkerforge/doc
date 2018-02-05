@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starterkit: Hardware Hacking</a> / Garagentor mit Windows Phone fernsteuern
-
 .. |name| replace:: Windows Phone
 .. |ref_CALLBACK_ENUMERATE| replace:: :csharp:func:`EnumerateCallback <IPConnection::EnumerateCallback>`
 .. |ref_connect| replace:: :csharp:func:`Connect() <IPConnection::Connect>`

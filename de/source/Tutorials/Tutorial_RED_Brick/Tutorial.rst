@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#einstieg">Einstieg</a> / Tutorial - RED Brick
-
 .. _tutorial_red_brick:
 
 Tutorial - RED Brick

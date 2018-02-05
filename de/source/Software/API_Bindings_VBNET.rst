@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-vbnet">Software</a> / Visual Basic .NET - API Bindings
-
 .. _api_bindings_vbnet:
 
 Visual Basic .NET - API Bindings
@@ -176,4 +174,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_VBNET>
    Bricks <Bricks_VBNET>
+   Bricks (Abgekündigt) <Bricks_VBNET_Discontinued>
    Bricklets <Bricklets_VBNET>
+   Bricklets (Abgekündigt) <Bricklets_VBNET_Discontinued>

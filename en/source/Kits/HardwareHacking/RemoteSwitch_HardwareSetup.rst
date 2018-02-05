@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Remote Mains Switches Hardware Setup
-
 .. _starter_kit_hardware_hacking_remote_switch_hardware_setup:
 
 Remote Mains Switches Hardware Setup

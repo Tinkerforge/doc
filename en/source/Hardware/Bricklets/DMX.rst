@@ -1,5 +1,5 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / DMX Bricklet
-:shoplink: ../../../shop/bricklets/dmx-bricklet.html
+
+:DISABLED_shoplink: ../../../shop/bricklets/dmx-bricklet.html
 
 .. include:: DMX.substitutions
    :start-after: >>>substitutions

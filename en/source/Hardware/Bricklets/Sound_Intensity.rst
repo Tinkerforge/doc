@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Sound Intensity Bricklet
 :shoplink: ../../../shop/bricklets/sound-intensity-bricklet.html
 
 .. include:: Sound_Intensity.substitutions

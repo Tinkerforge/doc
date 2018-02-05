@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / Starter Kit: Weather Station
 :shoplink: ../../../shop/kits/starter-kit-weather-station.html
 
 .. include:: WeatherStation.substitutions
@@ -283,9 +282,6 @@ in :ref:`Python <starter_kit_weather_station_python_to_xively>`.
    :hidden:
 
    PythonToXively
-
-The Weather Station in our laboratory has the Xively feed 
-`125881 <https://personal.xively.com/feeds/125881>`__.
 
 
 .. _starter_kit_weather_station_website:

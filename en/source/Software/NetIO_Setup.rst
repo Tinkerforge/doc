@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software">Software</a> / NetIO Controller App Setup
-
 ..
 .. CHANGES TO THIS PAGE HAVE TO BE APPLIED TO NetIO_ProjectDescription.txt AND
 .. http://netio.davideickhoff.de/projects/270 AS WELL

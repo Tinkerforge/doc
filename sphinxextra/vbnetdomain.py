@@ -23,6 +23,8 @@ from sphinx.util.nodes import make_refnode
 from sphinx.util.compat import Directive
 from sphinx.util.docfields import Field, GroupedField, TypedField
 
+from sphinxextra.utils import fixup_index_entry
+
 
 # REs for Visual Basic .NET signatures
 vbnet_sig_re = re.compile(
@@ -226,8 +228,7 @@ class VisualBasicNETObject(ObjectDescription):
 
         indextext = self.get_index_text(modname, name_cls)
         if indextext:
-            self.indexnode['entries'].append(('single', indextext,
-                                              fullname, fullname))
+            self.indexnode['entries'].append(fixup_index_entry(('single', indextext, fullname, fullname)))
 
     def before_content(self):
         # needed for automatic qualification of members (reset in subclasses)

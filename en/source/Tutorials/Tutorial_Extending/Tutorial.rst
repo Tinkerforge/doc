@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#getting-started">Getting Started</a> / Tutorial - First Steps
-
 .. _tutorial_first_steps:
 
 Tutorial - First Steps

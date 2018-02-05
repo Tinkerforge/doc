@@ -1,4 +1,4 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / RGB LED Matrix Bricklet
+
 :shoplink: ../../../shop/bricklets/rgb-led-matrix-bricklet.html
 
 .. include:: RGB_LED_Matrix.substitutions

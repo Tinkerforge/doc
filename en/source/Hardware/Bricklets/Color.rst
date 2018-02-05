@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Color Bricklet
 :shoplink: ../../../shop/bricklets/color-bricklet.html
 
 .. include:: Color.substitutions

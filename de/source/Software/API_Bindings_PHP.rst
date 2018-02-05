@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-php">Software</a> / PHP - API Bindings
-
 .. _api_bindings_php:
 
 PHP - API Bindings
@@ -120,4 +118,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_PHP>
    Bricks <Bricks_PHP>
+   Bricks (Abgekündigt) <Bricks_PHP_Discontinued>
    Bricklets <Bricklets_PHP>
+   Bricklets (Abgekündigt) <Bricklets_PHP_Discontinued>

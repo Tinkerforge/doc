@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#spezifikationen">Spezifikationen</a> / Modbus Protokoll
-
 .. _llproto_modbus:
 
 Modbus Protokoll
@@ -118,9 +116,9 @@ to function calls and callbacks with a reasonable latency.
 API
 ---
 
-Links to the API reference for Bricks and Bricklets are listed in the
-following table. Further project descriptions can be found in the
-:ref:`Starter Kits <index_kits>` section.
+Links zur API Referenz der Bricks und Bricklets sind in der folgenden Tabelle
+aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
+über :ref:`Starterkits <index_kits>`.
 
 .. include:: Modbus_links.table
 
@@ -128,4 +126,6 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    Bricks <Bricks_Modbus>
+   Bricks (Abgekündigt) <Bricks_Modbus_Discontinued>
    Bricklets <Bricklets_Modbus>
+   Bricklets (Abgekündigt) <Bricklets_Modbus_Discontinued>

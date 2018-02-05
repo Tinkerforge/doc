@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-javascript">Software</a> / JavaScript - IP Connection
-
 .. |ref_api_bindings| replace:: :ref:`JavaScript API bindings <api_bindings_javascript>`
 .. |ref_install_guide| replace:: :ref:`installation guide <api_bindings_javascript_install>`
 .. |bindings_name| replace:: JavaScript

@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Pressure Bricklet
-:FIXME_shoplink: ../../../shop/bricklets/pressure-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/pressure-bricklet.html
 
 .. include:: Pressure.substitutions
    :start-after: >>>substitutions

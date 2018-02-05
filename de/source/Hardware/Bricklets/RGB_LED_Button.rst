@@ -1,4 +1,4 @@
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / RGB LED Button Bricklet
+
 :shoplink: ../../../shop/bricklets/rgb-led-button-bricklet.html
 
 .. include:: RGB_LED_Button.substitutions

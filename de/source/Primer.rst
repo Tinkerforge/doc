@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Startseite</a> / <a href="index.html#einstieg">Einstieg</a> / Einführung
-
 .. _primer:
 
 Einführung
@@ -149,13 +147,7 @@ Master Extensions
 
  .. list-table::
 
-  * - .. image:: /Images/Extensions/extension_chibi_tilted_100.jpg
-       :scale: 100 %
-       :alt: Chibi Extension
-       :align: center
-       :target: _images/Extensions/extension_chibi_tilted_800.jpg
-
-    - .. image:: /Images/Extensions/extension_ethernet_tilted_100.jpg
+  * - .. image:: /Images/Extensions/extension_ethernet_tilted_100.jpg
        :scale: 100 %
        :alt: Ethernet Extension
        :align: center

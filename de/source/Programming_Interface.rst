@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Startseite</a> / <a href="index.html#software">Software</a> / Programmierschnittstelle
-
 .. _programming_interface:
 
 Programmierschnittstelle

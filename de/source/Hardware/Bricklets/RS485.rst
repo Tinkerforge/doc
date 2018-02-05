@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / RS485 Bricklet
 :shoplink: ../../../shop/bricklets/rs485-bricklet.html
 
 .. include:: RS485.substitutions

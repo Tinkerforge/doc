@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-python">Software</a> / Python - API Bindings
-
 .. _api_bindings_python:
 
 Python - API Bindings
@@ -141,4 +139,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_Python>
    Bricks <Bricks_Python>
+   Bricks (Discontinued) <Bricks_Python_Discontinued>
    Bricklets <Bricklets_Python>
+   Bricklets (Discontinued) <Bricklets_Python_Discontinued>

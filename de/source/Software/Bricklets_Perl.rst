@@ -1,8 +1,6 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-perl">Software</a> / Perl - Bricklets
-
 Perl - Bricklets
-=================
+================
 
 Links zur API Referenz der Bricklets sowie den
 Beispiele aus der ZIP Datei der Bindings sind in der folgenden Tabelle

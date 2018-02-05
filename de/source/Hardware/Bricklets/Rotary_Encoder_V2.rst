@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Rotary Encoder Bricklet 2.0
-.. :shoplink: ../../../shop/bricklets/rotary-encoder-v2-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/rotary-encoder-v2-bricklet.html
 
 .. include:: Rotary_Encoder_V2.substitutions
    :start-after: >>>substitutions

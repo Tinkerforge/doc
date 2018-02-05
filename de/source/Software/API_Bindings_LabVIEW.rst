@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-labview">Software</a> / LabVIEW - API Bindings
-
 .. _api_bindings_labview:
 
 LabVIEW - API Bindings
@@ -159,4 +157,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_LabVIEW>
    Bricks <Bricks_LabVIEW>
+   Bricks (Abgekündigt) <Bricks_LabVIEW_Discontinued>
    Bricklets <Bricklets_LabVIEW>
+   Bricklets (Abgekündigt) <Bricklets_LabVIEW_Discontinued>

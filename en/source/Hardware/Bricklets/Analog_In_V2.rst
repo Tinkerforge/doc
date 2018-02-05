@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Analog In Bricklet 2.0
 :shoplink: ../../../shop/bricklets/analog-in-v2-bricklet.html
 
 .. include:: Analog_In_V2.substitutions

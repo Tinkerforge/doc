@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / GPS Bricklet
 :shoplink: ../../../shop/bricklets/gps-bricklet.html
 
 .. include:: GPS.substitutions
@@ -23,6 +22,12 @@ GPS Bricklet
 	Dimensions/gps_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The GPS Bricklet is discontinued and is no longer sold. The
+ :ref:`GPS Bricklet 2.0 <gps_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------

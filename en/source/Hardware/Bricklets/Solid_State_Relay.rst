@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Solid State Relay Bricklet
 :shoplink: ../../../shop/bricklets/solid-state-relay-bricklet.html
 
 .. include:: Solid_State_Relay.substitutions

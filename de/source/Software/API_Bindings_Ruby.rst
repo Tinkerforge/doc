@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-ruby">Software</a> / Ruby - API Bindings
-
 .. _api_bindings_ruby:
 
 Ruby - API Bindings
@@ -126,4 +124,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_Ruby>
    Bricks <Bricks_Ruby>
+   Bricks (Abgekündigt) <Bricks_Ruby_Discontinued>
    Bricklets <Bricklets_Ruby>
+   Bricklets (Abgekündigt) <Bricklets_Ruby_Discontinued>

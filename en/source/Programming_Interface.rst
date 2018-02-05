@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#software">Software</a> / Programming Interface
-
 .. _programming_interface:
 
 Programming Interface

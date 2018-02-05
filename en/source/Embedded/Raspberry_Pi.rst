@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#embedded-boards">Embedded Boards</a> / Raspberry Pi
-
 .. _embedded_raspberry_pi:
 
 Raspberry Pi

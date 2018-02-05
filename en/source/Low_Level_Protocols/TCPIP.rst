@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-tcpip">Software</a> / TCP/IP Protocol
-
 .. _llproto_tcpip:
 
 TCP/IP Protocol
@@ -417,4 +415,6 @@ following table. Further project descriptions can be found in the
    :hidden:
 
    Bricks <Bricks_TCPIP>
+   Bricks (Discontinued) <Bricks_TCPIP_Discontinued>
    Bricklets <Bricklets_TCPIP>
+   Bricklets (Discontinued) <Bricklets_TCPIP_Discontinued>

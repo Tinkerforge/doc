@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / LED Strip Bricklet
 :shoplink: ../../../shop/bricklets/led-strip-bricklet.html
 
 

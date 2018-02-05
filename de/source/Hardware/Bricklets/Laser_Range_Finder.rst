@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Laser Range Finder Bricklet
 :shoplink: ../../../shop/bricklets/laser-range-finder-bricklet.html
 
 .. include:: Laser_Range_Finder.substitutions

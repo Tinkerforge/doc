@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Dust Detector Bricklet
 :shoplink: ../../../shop/bricklets/dust-detector-bricklet.html
 
 .. include:: Dust_Detector.substitutions

@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / NFC/RFID Bricklet
 :shoplink: ../../../shop/bricklets/nfc-rfid-bricklet.html
 
 .. include:: NFC_RFID.substitutions

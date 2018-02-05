@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Linear Poti Bricklet
 :shoplink: ../../../shop/bricklets/linear-poti-bricklet.html
 
 .. include:: Linear_Poti.substitutions

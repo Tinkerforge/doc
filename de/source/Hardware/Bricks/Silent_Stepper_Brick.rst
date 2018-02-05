@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#hardware">Hardware</a> / Silent Stepper Brick
 :shoplink: ../../../shop/bricks/silent-stepper-brick.html
 
 .. include:: Silent_Stepper_Brick.substitutions

@@ -1,5 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Dual Relay Bricklet
 :shoplink: ../../../shop/bricklets/dual-relay-bricklet.html
 
 .. include:: Dual_Relay.substitutions

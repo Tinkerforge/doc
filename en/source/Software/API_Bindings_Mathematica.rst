@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-mathematica">Software</a> / Mathematica - API Bindings
-
 .. _api_bindings_mathematica:
 
 Mathematica - API Bindings
@@ -236,4 +234,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_Mathematica>
    Bricks <Bricks_Mathematica>
+   Bricks (Discontinued) <Bricks_Mathematica_Discontinued>
    Bricklets <Bricklets_Mathematica>
+   Bricklets (Discontinued) <Bricklets_Mathematica_Discontinued>

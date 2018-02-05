@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Home</a> / <a href="../index.html#software-perl">Software</a> / Perl - API Bindings
-
 .. _api_bindings_perl:
 
 Perl - API Bindings
@@ -162,4 +160,6 @@ following table. Further project descriptions can be found in the
 
    IP Connection <IPConnection_Perl>
    Bricks <Bricks_Perl>
+   Bricks (Discontinued) <Bricks_Perl_Discontinued>
    Bricklets <Bricklets_Perl>
+   Bricklets (Discontinued) <Bricklets_Perl_Discontinued>

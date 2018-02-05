@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../index.html">Startseite</a> / <a href="../index.html#software-javascript">Software</a> / JavaScript - API Bindings
-
 .. _api_bindings_javascript:
 
 JavaScript - API Bindings
@@ -190,4 +188,6 @@ aufgelistet. Anleitungen für weiterführende Projekte finden sich im Abschnitt
 
    IP Connection <IPConnection_JavaScript>
    Bricks <Bricks_JavaScript>
+   Bricks (Abgekündigt) <Bricks_JavaScript_Discontinued>
    Bricklets <Bricklets_JavaScript>
+   Bricklets (Abgekündigt) <Bricklets_JavaScript_Discontinued>

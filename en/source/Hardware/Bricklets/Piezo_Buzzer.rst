@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Piezo Buzzer Bricklet
-
 .. include:: Piezo_Buzzer.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -26,7 +24,7 @@ Piezo Buzzer Bricklet
 .. note::
 
  The Piezo Buzzer Bricklet is discontinued and is no longer sold. The
- :ref:`Piezo Speaker Bricklet <piezo_Speaker_bricklet>` is the recommended
+ :ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>` is the recommended
  replacement.
 
 

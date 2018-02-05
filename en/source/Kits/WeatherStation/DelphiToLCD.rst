@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/WeatherStation/WeatherStation.html">Starter Kit: Weather Station</a> / Using Delphi to write to LCD 20x4 Bricklet
-
 .. |ref_CALLBACK_ENUMERATE| replace:: :delphi:func:`OnEnumerate <TIPConnection.OnEnumerate>`
 .. |ref_CALLBACK_CONNECTED| replace:: :delphi:func:`OnConnected <TIPConnection.OnConnected>`
 .. |callback| replace:: callback

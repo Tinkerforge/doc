@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#starter-kits">Starter Kits</a> / <a href="../../Kits/HardwareHacking/HardwareHacking.html">Starter Kit: Hardware Hacking</a> / Read out Smoke Detectors using Visual Basic .NET
-
 .. |ref_CALLBACK_ENUMERATE| replace:: :vbnet:func:`EnumerateCallback <IPConnection.EnumerateCallback>`
 .. |ref_CALLBACK_CONNECTED| replace:: :vbnet:func:`Connected <IPConnection.Connected>`
 .. |callback| replace:: callback

@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Startseite</a> / <a href="../../index.html#starterkits">Starterkits</a> / <a href="../../Kits/ServerRoomMonitoring/ServerRoomMonitoring.html">Starterkit: Serverraum-Überwachung</a> / Aufbau des Starterkits: Serverraum-Überwachung
-
 .. _starter_kit_server_room_monitoring_construction:
 
 Aufbau des Starterkits: Serverraum-Überwachung

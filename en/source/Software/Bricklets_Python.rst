@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#software-python">Software</a> / Python - Bricklets
-
 Python - Bricklets
 ==================
 
@@ -9,6 +7,6 @@ well as the examples from the ZIP file of the bindings are listed in the
 following table. Further project descriptions can be found in the
 :ref:`Starter Kits <index_kits>` section.
 
-.. include:: Bricklets_C.table
+.. include:: Bricklets_Python.table
 
 .. include:: Bricklets_Python.toctree

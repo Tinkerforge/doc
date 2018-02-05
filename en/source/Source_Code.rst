@@ -1,6 +1,4 @@
 
-:breadcrumbs: <a href="index.html">Home</a> / <a href="index.html#software">Software</a> / Source Code and Bug Tracking
-
 .. _source_code:
 
 Source Code and Bug Tracking
@@ -19,6 +17,9 @@ you can help us in the development effort and most importantly report bugs.
 To make it easy for the community to commit patches and report bugs, all
 of the `Tinkerforge projects <https://github.com/Tinkerforge>`__ are hosted
 on GitHub.
+
+Where do I get the Source Code?
+-------------------------------
 
 If you don't know git, you can find information `here <https://git-scm.com/>`__.
 Our projects can be cloned with::

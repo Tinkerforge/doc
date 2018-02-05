@@ -1,6 +1,5 @@
 
-:breadcrumbs: <a href="../../index.html">Home</a> / <a href="../../index.html#hardware">Hardware</a> / Temperature IR Bricklet 2.0
-.. :shoplink: ../../../shop/bricklets/temperature-ir-v2-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/temperature-ir-v2-bricklet.html
 
 .. include:: Temperature_IR_V2.substitutions
    :start-after: >>>substitutions
@@ -93,7 +92,7 @@ Resources
 .. _temperature_ir_v2_bricklet_test:
 
 Test your Temperature IR Bricklet 2.0
----------------------------------
+-------------------------------------
 
 |test_intro|
 
