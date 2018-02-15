@@ -73,6 +73,8 @@ Gewicht                           TBDg
 Ressourcen
 ----------
 
+* PIR Sensor AS612 (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/raw/master/datasheets/AS612.pdf>`__)
+* Fresnel Lens S8002-2W (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/raw/master/datasheets/S8002-2w.pdf>`__)
 * Schaltplan (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/raw/master/hardware/motion-detector-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/motion_detector_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/zipball/master>`__)
