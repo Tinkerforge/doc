@@ -977,7 +977,7 @@ auch manuell mit dem ``tf-set-resolution`` Tool eingestellt werden.
 Mit tf-set-resolution
 """""""""""""""""""""
 
-.. note:: In Image version 1.10 **tf-set-resolution** ist nicht mehr verfügbar.
+.. note:: In Image version 1.10 ist **tf-set-resolution** nicht mehr verfügbar.
           Weitere Informationen befinden sich :ref:`hier <red_brick_known_issues>`.
 
 Um die Monitor Auflösung zu ändern öffnet man den :ref:`Console Tab
