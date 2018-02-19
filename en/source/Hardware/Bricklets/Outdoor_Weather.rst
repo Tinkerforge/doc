@@ -86,6 +86,7 @@ Weight                            TBDg
 Resources
 ---------
 
+* Instruction manual WS-6147 (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/raw/master/datasheets/WS-6147.pdf>`__)
 * 433MHz receiver RFM210LCF (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/raw/master/datasheets/RFM210LCF.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/raw/master/hardware/outdoor-weather-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/outdoor_weather_bricklet_dimensions.png>`__)
