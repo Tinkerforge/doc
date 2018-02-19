@@ -43,7 +43,7 @@ Description
 
 The Outdoor Weather :ref:`Bricklet <primer_bricklets>` is equipped
 with a 433MHz receiver capable of receiving data from outdoor weather stations.
-It can be connecetd to a :ref:`Bricks <primer_bricks>`.
+It can be connected to a :ref:`Brick <primer_bricks>`.
 
 It currently supports `Outdoor Weather Station XXX <TBD>`__ which measures
 

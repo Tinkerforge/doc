@@ -165,7 +165,7 @@ functions you have to keep track of this structure to not accidentally lock a ta
 * Does not have pages, uses a file system instead.
 * Currently we support access to the capability container and ndef record.
 * Select page 3 to access the capability container.
-* Select page 4 to acces the Ndef record.
+* Select page 4 to access the Ndef record.
 
 Identifying, Reading and Writing tags
 -------------------------------------
@@ -205,9 +205,9 @@ If a tag is selected you can read and write without calling *ReaderRequestTagID*
 again as long as the tag isn't removed from the proximity of the 
 NFC Bricklet.
 
-Instead of of *ReaderRequestPage* or *ReaderWritePage* you can also use 
+Instead of *ReaderRequestPage* or *ReaderWritePage* you can also use 
 *ReaderRequestNdef* or *ReaderWriteNdef* to directly write Ndef messages
-to an apropriate space instead of low-level pages.
+to an appropriate space instead of low-level pages.
 
 **Special Case for Mifare Classic**
 
