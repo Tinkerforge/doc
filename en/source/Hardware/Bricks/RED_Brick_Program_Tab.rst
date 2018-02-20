@@ -498,6 +498,8 @@ the ``Tinkerforge.dll`` in step 2.
   the mono JIT compiler.
 
 
+.. _red_brick_program_tab_step4:
+
 Wizard Step 4: Arguments and Environment
 ----------------------------------------
 
@@ -524,8 +526,14 @@ Wizard Step 4: Arguments and Environment
 * Environment: Your program will have the environment variables
   that you set here available. Environment variables that are
   necessary to start a program in the chosen programming
-  language will already be there by default. If you don't know what
-  this means you very likely don't have to touch this setting.
+  language will already be there by default.
+
+  If your program has a GUI then you need to add the environment variable
+  **DISPLAY** with a value of **:0**, otherwise your program cannot show a
+  window on the desktop.
+
+  If you don't know what this means you very likely don't have to touch this
+  setting.
 
 Wizard Step 5: Stdio Redirection
 --------------------------------

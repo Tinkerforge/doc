@@ -491,6 +491,7 @@ vorigen Schritt (Schritt 2) kompiliert werden.
 * Mono Options: Hier können Optionen angegeben werden, die dem Mono JIT Compiler
   übergeben werden.
 
+.. _red_brick_program_tab_step4:
 
 Wizard Schritt 4: Argumente und Umgebungsvariablen
 --------------------------------------------------
@@ -517,8 +518,14 @@ Wizard Schritt 4: Argumente und Umgebungsvariablen
 
 * Environment: Die Umgebungsvariablen, die hier gesetzt werden, sind für das
   Programm verfügbar. Umgebungsvariablen, die zum Programmstart notwendig sind,
-  sind bereits voreingestellt. Falls du dir unsicher bist was diese bedeuten,
-  ist es sehr wahrscheinlich das du hier nichts anpassen musst.
+  sind bereits voreingestellt.
+
+  Falls dein Programm ein GUI hat, dann muss die Umgebungsvariable **DISPLAY** auf
+  dem Wert :0 gesetzt werden, damit dein Programm ein Fenster auf dem Desktop
+  anzeigen kann.
+
+  Falls du dir unsicher bist was diese bedeuten, ist es sehr wahrscheinlich das
+  du hier nichts anpassen musst.
 
 Wizard Schritt 5: Stdio Umleitung
 ---------------------------------

@@ -248,3 +248,11 @@ Unterstützung für den RED Brick hinzuzufügen. Dieses Protokoll ist nicht
 kompatibel zum alten Protokoll. Um eine fehlerfreie Stack-Kommunikation
 sicherzustellen sollten alle Bricks eine Firmware Version von mindestens
 2.3 haben.
+
+
+Mein GUI Programm funktioniert auf dem RED Brick nicht
+------------------------------------------------------
+
+Die **DISPLAY** Umgebungsvariable muss auf **:0** gesetzt werden in
+:ref:`Schritt 4 des Programm Wizards <red_brick_program_tab_step4>` im
+Brick Viewer.

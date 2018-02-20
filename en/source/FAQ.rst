@@ -236,3 +236,10 @@ On November 26th 2014 we released a new SPI stack protocol to add support for
 the RED Brick. This protocol is not compatible to the old protocol. Please make
 sure that all Bricks have a firmware version greater or equal to 2.3,
 otherwise the stack communication might not work.
+
+
+My GUI program doesn't work on the RED Brick
+--------------------------------------------
+
+You need to set the **DISPLAY** environment variable to **:0** in :ref:`step 4
+of the programm upload wizard <red_brick_program_tab_step4>` in Brick Viewer.
