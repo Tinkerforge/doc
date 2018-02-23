@@ -13,20 +13,16 @@ Temperature IR Bricklet 2.0
 .. note::
   This Bricklet is currently under development.
 
-..
-	.. raw:: html
+.. raw:: html
 
-		{% tfgallery %}
+	{% tfgallery %}
 
-		Bricklets/bricklet_temperature_ir_v2_tilted_[?|?].jpg           Temperature IR Bricklet 2.0
-		Bricklets/bricklet_temperature_ir_v2_vertical_[?|?].jpg         Temperature IR Bricklet 2.0
-		Bricklets/bricklet_temperature_ir_v2_horizontal_[?|?].jpg       Temperature IR Bricklet 2.0
-		Bricklets/bricklet_temperature_ir_v2_master_[100|600].jpg       Temperature IR Bricklet 2.0 with Master Brick
-		Cases/bricklet_temperature_ir_v2_case_[100|600].jpg             Temperature IR Bricklet 2.0 in Case
-		Bricklets/bricklet_temperature_ir_v2_brickv_[100|].jpg          Temperature IR Bricklet 2.0 in Brick Viewer
-		Dimensions/temperature_ir_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
+	Bricklets/bricklet_temperature_ir_v2_tilted_[?|?].jpg           Temperature IR Bricklet 2.0
+	Bricklets/bricklet_temperature_ir_v2_top_[?|?].jpg              Temperature IR Bricklet 2.0
+	Bricklets/bricklet_temperature_ir_v2_brickv_[100|].jpg          Temperature IR Bricklet 2.0 in Brick Viewer
+	Dimensions/temperature_ir_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
-		{% tfgalleryend %}
+	{% tfgalleryend %}
 
 
 Features

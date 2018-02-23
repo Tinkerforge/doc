@@ -13,15 +13,13 @@ Outdoor Weather Bricklet
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_outdoor_weather_tilted_[?|?].jpg           Outdoor Weather Bricklet
-	Bricklets/bricklet_outdoor_weather_horizontal_[?|?].jpg       Outdoor Weather Bricklet
-	Bricklets/bricklet_outdoor_weather_master_[100|600].jpg       Outdoor Weather Bricklet mit Master Brick
-	Cases/bricklet_outdoor_weather_case_[100|600].jpg             Outdoor Weather Bricklet im Gehäuse
+	Bricklets/bricklet_outdoor_weather_top_[?|?].jpg              Outdoor Weather Bricklet
+	Bricklets/bricklet_outdoor_weather_front_[?|?].jpg            Outdoor Weather Bricklet mit Master Brick
 	Bricklets/bricklet_outdoor_weather_brickv_[100|].jpg          Outdoor Weather Bricklet im Brick Viewer
 	Dimensions/outdoor_weather_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 

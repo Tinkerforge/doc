@@ -11,21 +11,18 @@
 Rotary Encoder Bricklet 2.0
 ===========================
 
-..
-	.. raw:: html
+.. raw:: html
 
-		{% tfgallery %}
+	{% tfgallery %}
 
-		Bricklets/bricklet_rotary_encoder_v2_tilted_[?|?].jpg               Rotary Encoder Bricklet 2.0
-		Bricklets/bricklet_rotary_encoder_v2_horizontal_[?|?].jpg           Rotary Encoder Bricklet 2.0
-		Bricklets/bricklet_rotary_encoder_v2_w_knob_[100|600].jpg           Rotary Encoder Bricklet 2.0 and knob
-		Bricklets/bricklet_rotary_encoder_v2_tilted_back_wo_knob_[?|?].jpg  Rotary Encoder Bricklet 2.0
-		Bricklets/bricklet_rotary_encoder_v2_tilted_wo_knob_[?|?].jpg       Rotary Encoder Bricklet 2.0
-		Cases/bricklet_rotary_poti_case_shallow_[100|600].jpg               Rotary Encoder Bricklet 2.0 in Case
-		Bricklets/bricklet_rotary_encoder_v2_brickv_[100|].jpg              Rotary Encoder Bricklet 2.0 in Brick Viewer
-		Dimensions/rotary_encoder_v2_bricklet_dimensions_[100|600].png      Outline and drilling plan
+	Bricklets/bricklet_rotary_encoder_v2_tilted_[?|?].jpg               Rotary Encoder Bricklet 2.0
+	Bricklets/bricklet_rotary_encoder_v2_top_[?|?].jpg                  Rotary Encoder Bricklet 2.0
+	Bricklets/bricklet_rotary_encoder_v2_w_knob_[100|600].jpg           Rotary Encoder Bricklet 2.0 and knob
+	Bricklets/bricklet_rotary_encoder_v2_side_[?|?].jpg                 Rotary Encoder Bricklet 2.0
+	Bricklets/bricklet_rotary_encoder_v2_brickv_[100|].jpg              Rotary Encoder Bricklet 2.0 in Brick Viewer
+	Dimensions/rotary_encoder_v2_bricklet_dimensions_[100|600].png      Outline and drilling plan
 
-		{% tfgalleryend %}
+	{% tfgalleryend %}
 
 
 Features

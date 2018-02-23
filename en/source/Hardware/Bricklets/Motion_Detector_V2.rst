@@ -11,18 +11,18 @@
 Motion Detector Bricklet 2.0
 ============================
 
-..
-	.. raw:: html
+.. raw:: html
 
-		{% tfgallery %}
+	{% tfgallery %}
 
-		Bricklets/bricklet_motion_detector_v2_tilted_[?|?].jpg           Motion Detector Bricklet 2.0
-		Bricklets/bricklet_motion_detector_v2_horizontal_[?|?].jpg       Motion Detector Bricklet 2.0
-		Cases/bricklet_motion_detector_v2_case_tilted_[?|?].jpg          Motion Detector Bricklet 2.0 in Case
-		Bricklets/bricklet_motion_detector_v2_brickv_[100|].jpg          Motion Detector Bricklet 2.0 in Brick Viewer
-		Dimensions/motion_detector_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
+	Bricklets/bricklet_motion_detector_v2_tilted_[?|?].jpg           Motion Detector Bricklet 2.0
+	Bricklets/bricklet_motion_detector_v2_side_[?|?].jpg             Motion Detector Bricklet 2.0
+	Bricklets/bricklet_motion_detector_v2_bottom_[?|?].jpg           Motion Detector Bricklet 2.0
+	Bricklets/bricklet_motion_detector_v2_top_[?|?].jpg              Motion Detector Bricklet 2.0
+	Bricklets/bricklet_motion_detector_v2_brickv_[100|].jpg          Motion Detector Bricklet 2.0 in Brick Viewer
+	Dimensions/motion_detector_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
-		{% tfgalleryend %}
+	{% tfgalleryend %}
 
 
 Features

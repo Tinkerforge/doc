@@ -13,21 +13,17 @@ Remote Switch Bricklet 2.0
 .. note::
   Dieses Bricklet befindet sich aktuell in der Entwicklung.
 
-..
-	.. raw:: html
+.. raw:: html
 
-		{% tfgallery %}
+	{% tfgallery %}
 
-		Bricklets/bricklet_remote_switch_v2_tilted_[?|?].jpg             Remote Switch Bricklet 2.0
-		Bricklets/bricklet_remote_switch_v2_vertical_[?|?].jpg           Remote Switch Bricklet 2.0
-		Bricklets/bricklet_remote_switch_v2_horizontal_[?|?].jpg         Remote Switch Bricklet 2.0
-		Bricklets/bricklet_remote_switch_v2_tilted_wo_antenna_[?|?].jpg  Remote Switch Bricklet 2.0
-		Bricklets/bricklet_remote_switch_v2_w_antenna_[100|600].jpg      Remote Switch Bricklet 2.0 und Antenne
-		Cases/bricklet_remote_switch_v2_case_tilted_front_[?|?].jpg      Remote Switch Bricklet 2.0 in Case
-		Bricklets/bricklet_remote_switch_v2_brickv_[100|].jpg     Remote Switch Bricklet 2.0 im Brick Viewer
-		Dimensions/remote_switch_v2_bricklet_dimensions_[100|600].png    Umriss und Bohrplan
+	Bricklets/bricklet_remote_switch_v2_tilted_[?|?].jpg             Remote Switch Bricklet 2.0
+	Bricklets/bricklet_remote_switch_v2_side_[?|?].jpg               Remote Switch Bricklet 2.0
+	Bricklets/bricklet_remote_switch_v2_top_[?|?].jpg                Remote Switch Bricklet 2.0
+	Bricklets/bricklet_remote_switch_v2_brickv_[100|].jpg            Remote Switch Bricklet 2.0 im Brick Viewer
+	Dimensions/remote_switch_v2_bricklet_dimensions_[100|600].png    Umriss und Bohrplan
 
-		{% tfgalleryend %}
+	{% tfgalleryend %}
 
 
 Features

@@ -13,19 +13,17 @@ Analog In Bricklet 3.0
 .. note::
   Dieses Bricklet befindet sich aktuell in der Entwicklung.
 
-..
-	.. raw:: html
+.. raw:: html
 
-		{% tfgallery %}
+	{% tfgallery %}
 
-		Bricklets/bricklet_analog_in_v3_tilted1_[?|?].jpg          Analog In Bricklet 3.0
-		Bricklets/bricklet_analog_in_v3_tilted2_[?|?].jpg          Analog In Bricklet 3.0
-		Bricklets/bricklet_analog_in_v3_horizontal_[?|?].jpg       Analog In Bricklet 3.0
-		Cases/bricklet_analog_in_v3_case_built_up_[?|?].jpg        Analog In Bricklet 3.0 im Gehäuse
-		Bricklets/bricklet_analog_in_v3_brickv_[100|].jpg          Analog In Bricklet 3.0 im Brick Viewer
-		Dimensions/analog_in_v3_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+	Bricklets/bricklet_analog_in_v3_tilted_[?|?].jpg           Analog In Bricklet 3.0
+	Bricklets/bricklet_analog_in_v3_terminals_[?|?].jpg        Analog In Bricklet 3.0
+	Bricklets/bricklet_analog_in_v3_top_[?|?].jpg              Analog In Bricklet 3.0
+	Bricklets/bricklet_analog_in_v3_brickv_[100|].jpg          Analog In Bricklet 3.0 im Brick Viewer
+	Dimensions/analog_in_v3_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
-		{% tfgalleryend %}
+	{% tfgalleryend %}
 
 
 Features

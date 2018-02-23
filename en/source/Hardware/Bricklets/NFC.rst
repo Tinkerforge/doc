@@ -13,20 +13,18 @@ NFC Bricklet
 .. note::
   This Bricklet is currently under development.
 
-..
-	.. raw:: html
+.. raw:: html
 
-		{% tfgallery %}
+	{% tfgallery %}
 
-		Bricklets/bricklet_nfc_tilted_[?|?].jpg           NFC Bricklet
-		Bricklets/bricklet_nfc_w_master_[100|600].jpg     NFC Bricklet with Master Brick
-		Bricklets/bricklet_nfc_horizontal_[?|?].jpg       NFC Bricklet
-		Bricklets/bricklet_nfc_w_keyfob_[100|600].jpg     NFC Bricklet with keyfob
-		Cases/bricklet_nfc_case_tilted_[?|?].jpg          NFC Bricklet with case
-		Bricklets/bricklet_nfc_brickv_[100|].jpg          NFC Bricklet in Brick Viewer
-		Dimensions/nfc_bricklet_dimensions_[100|600].png  Outline and drilling plan
+	Bricklets/bricklet_nfc_tilted_[?|?].jpg           NFC Bricklet
+	Bricklets/bricklet_nfc_front_[100|600].jpg        NFC Bricklet
+	Bricklets/bricklet_nfc_top_[?|?].jpg              NFC Bricklet
+	Bricklets/bricklet_nfc_w_keyfob_[100|600].jpg     NFC Bricklet with keyfob
+	Bricklets/bricklet_nfc_brickv_[100|].jpg          NFC Bricklet in Brick Viewer
+	Dimensions/nfc_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
-		{% tfgalleryend %}
+	{% tfgalleryend %}
 
 
 Features
