@@ -43,7 +43,7 @@ The Outdoor Weather :ref:`Bricklet <primer_bricklets>` is equipped
 with a 433MHz receiver capable of receiving data from outdoor weather stations.
 It can be connected to a :ref:`Brick <primer_bricks>`.
 
-It currently supports `Outdoor Weather Station XXX <TBD>`__ which measures
+It currently supports `Outdoor Weather Station WS-6147 <https://www.tinkerforge.com/en/shop/outdoor-weather-station-ws-6147>`__ which measures
 
 * Temperature (°C)
 * Humidity (%RH)
@@ -51,7 +51,7 @@ It currently supports `Outdoor Weather Station XXX <TBD>`__ which measures
 * Wind direction (16 directions)
 * Rainfall (mm)
 
-and `Sensor YYY <TBD>`__ which measures
+and `Temperature/Humidity Sensor TH-6148 <https://www.tinkerforge.com/en/shop/temperature-humidity-sensor-th-6148>`__ which measures
 
 * Temperature (°C)
 * Humidity (%RH)
