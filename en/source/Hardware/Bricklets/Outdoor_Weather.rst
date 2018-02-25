@@ -63,6 +63,13 @@ The sensor can be used inside or outside. You can use up to 255 weather station 
 The Outdoor Weather Bricklet has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_outdoor_weather_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_outdoor_weather_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_outdoor_weather_video.webm" type="video/webm">
+	</video>
 
 Technical Specifications
 ------------------------

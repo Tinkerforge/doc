@@ -65,6 +65,14 @@ Daten von bis zu 255 Wetterstationen und zusätzlich von über 255 Sensoren zu e
 Das Outdoor Weather Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_outdoor_weather_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_outdoor_weather_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_outdoor_weather_video.webm" type="video/webm">
+	</video>
+
 Technische Spezifikation
 ------------------------
 
