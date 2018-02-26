@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/nfc-bricklet.html
+shoplink: ../../../shop/bricklets/nfc-bricklet.html
 
 .. include:: NFC.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 NFC Bricklet
 ============
-
-.. note::
-  This Bricklet is currently under development.
 
 .. raw:: html
 
@@ -63,7 +60,7 @@ Technical Specifications
 Property                          Value
 ================================  ============================================================
 NFC IC                            PN7150
-Current Consumption               TBD
+Current Consumption (idle)        24mW (~5mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Supported tags                    Mifare Classic, NFC Forum Type 1, 2, 3 and 4
@@ -71,8 +68,8 @@ Supported modes                   Read/Write tag, P2P, Card Emulation
 Operating Frequency               13.56 MHz
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD
-Weight                            TBDg
+Dimensions (W x D x H)            85 x 50 x 7mm (3.35 x 1.97 x 0.28")
+Weight                            18g
 ================================  ============================================================
 
 
