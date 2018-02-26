@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/rotary-encoder-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/rotary-encoder-v2-bricklet.html
 
 .. include:: Rotary_Encoder_V2.substitutions
    :start-after: >>>substitutions
@@ -57,7 +57,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Stromverbrauch                    34mW
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Anzahl Schritten pro Rotation     24 (Winkel pro Schritt: 15°)
@@ -67,7 +67,7 @@ Taster Bewegungsdistanz           0,5mm
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           30 x 25 x 23mm (1,18 x 0,98 x 0,9")*
-Gewicht                           TBDg*
+Gewicht                           6g*
 ================================  ============================================================
 
 \* ohne Knopf

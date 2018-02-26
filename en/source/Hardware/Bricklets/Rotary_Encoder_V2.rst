@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/rotary-encoder-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/rotary-encoder-v2-bricklet.html
 
 .. include:: Rotary_Encoder_V2.substitutions
    :start-after: >>>substitutions
@@ -58,7 +58,7 @@ Technical Specifications
 ==================================  ============================================================
 Property                            Value
 ==================================  ============================================================
-Current Consumption                 TBDmA
+Current Consumption                 34mW
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
 Number of Steps per Rotation        24 (step angle 15°)
@@ -68,7 +68,7 @@ Button Travel Distance              0.5mm
 ----------------------------------  ------------------------------------------------------------
 ----------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)              30 x 25 x 23mm (1.18 x 0.98 x 0.9")*
-Weight                              TBDg*
+Weight                              6g*
 ==================================  ============================================================
 
 \* without knob
