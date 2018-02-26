@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/remote-switch-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/remote-switch-v2-bricklet.html
 
 .. include:: Remote_Switch_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Remote Switch Bricklet 2.0
 ==========================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell in der Entwicklung.
 
 .. raw:: html
 
@@ -60,7 +57,7 @@ Technische Spezifikation
 Eigenschaft                       Wert
 ================================  ===============================================================================================
 Funkmodul                         RFM69HW
-Stromverbrauch                    TBDmA (inaktiv), TBDmA (senden)
+Stromverbrauch                    113mW (inaktiv), 231mW (senden)
 --------------------------------  -----------------------------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------------------------
 Funkfrequenz                      433MHz
@@ -68,7 +65,7 @@ Unterstütze Funksteckdosen        Alle auf PT2262 und HX2262 basierenden (:ref:
 --------------------------------  -----------------------------------------------------------------------------------------------
 --------------------------------  -----------------------------------------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 40 x 5mm (0,98 x 1,58 x 0,2")*
-Gewicht                           TBDg*
+Gewicht                           8g*
 ================================  ===============================================================================================
 
 \* ohne Antenne

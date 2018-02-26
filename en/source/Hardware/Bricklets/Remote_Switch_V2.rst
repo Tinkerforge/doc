@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/remote-switch-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/remote-switch-v2-bricklet.html
 
 .. include:: Remote_Switch_V2.substitutions
    :start-after: >>>substitutions
@@ -10,9 +10,6 @@
 
 Remote Switch Bricklet 2.0
 ==========================
-
-.. note::
-  This Bricklet is currently under development.
 
 .. raw:: html
 
@@ -60,7 +57,7 @@ Technical Specifications
 Property                          Value
 ================================  ========================================================================================
 Radio Module                      RFM69HW
-Current Consumption               TBDmA (idle), TBDmA (sending)
+Current Consumption               113mW (idle), 231mW (sending)
 --------------------------------  ----------------------------------------------------------------------------------------
 --------------------------------  ----------------------------------------------------------------------------------------
 Radio Frequency                   433MHz
@@ -68,7 +65,7 @@ Supported Remote Mains Switches   All based on PT2262 and HX2262, (:ref:`complet
 --------------------------------  ----------------------------------------------------------------------------------------
 --------------------------------  ----------------------------------------------------------------------------------------
 Dimensions (W x D x H)            25 x 40 x 5mm (0.98 x 1.58 x 0.2")*
-Weight                            TBDg*
+Weight                            8g*
 ================================  ========================================================================================
 
 \* without antenna
