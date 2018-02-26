@@ -29,7 +29,7 @@ Features
 --------
 
 * Passiver Infrarot Bewegungssensor
-* Erkennt Bewegungen in einer Distanz von bis zu TBDm (konfigurierbar)
+* Erkennt Bewegungen in einer Distanz von bis zu 12m (konfigurierbar)
 * Hoher Erfassungswinkel (120°)
 * Fresnellinse hat konfigurierbare Hintergrundbeleuchtung
 
