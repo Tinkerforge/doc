@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/analog-in-v3-bricklet.html
+:shoplink: ../../../shop/bricklets/analog-in-v3-bricklet.html
 
 .. include:: Analog_In_V3.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Analog In Bricklet 3.0
 ======================
-
-.. note::
-  This Bricklet is currently under development.
 
 .. raw:: html
 
@@ -55,7 +52,7 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmW (TBDmA at TBDV)
+Current Consumption               70mW (14mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Voltage                           0V - 42V (DC) in 1mV steps, 12bit resolution (~10mV)
@@ -63,7 +60,7 @@ Maximum Output Current            150mA (3.3V), 150mA (5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            35 x 30 x 14mm (1.38 x 1.18 x 0.55")
-Weight                            TBDg
+Weight                            8g
 ================================  ============================================================
 
 
