@@ -37,7 +37,7 @@ Beschreibung
 
 Das Analog In :ref:`Bricklet <primer_bricklets>` 3.0 kann benutzt werden
 um :ref:`Bricks <primer_bricks>` die Möglichkeit zu geben elektrische
-Spannungen zu messen. Es ist der Nachfolger des :ref:`analog_in_bricklet`.
+Spannungen zu messen. Es ist der Nachfolger des :ref:`analog_in_v2_bricklet`.
 Die gemessene Spannung kann direkt in `Volt
 <https://de.wikipedia.org/wiki/Volt>`__ ausgelesen werden.
 
