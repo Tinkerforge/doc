@@ -1,5 +1,5 @@
 
-shoplink: ../../../shop/bricklets/nfc-bricklet.html
+:shoplink: ../../../shop/bricklets/nfc-bricklet.html
 
 .. include:: NFC.substitutions
    :start-after: >>>substitutions
