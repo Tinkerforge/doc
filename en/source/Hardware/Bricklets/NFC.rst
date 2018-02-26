@@ -274,12 +274,6 @@ First Test
 
 |test_connect|.
 
-.. image:: /Images/Bricklets/bricklet_nfc_w_master_600.jpg
-   :scale: 100 %
-   :alt: NFC Bricklet with tag 
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_nfc_w_master_1200.jpg
-
 |test_tab|
 
 If everything went as expected you can now scan for tags and read/write

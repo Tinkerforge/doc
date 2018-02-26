@@ -130,13 +130,7 @@ Erster Test
 
 |test_intro|
 
-|test_connect| (siehe folgendes Bild).
-
-.. image:: /Images/Bricklets/bricklet_ssr_v2_w_master_600.jpg
-   :scale: 100 %
-   :alt: Solid State Relay verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_ssr_v2_w_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild

@@ -121,13 +121,7 @@ Test your Solid State Relay Bricklet 2.0
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. image:: /Images/Bricklets/bricklet_ssr_v2_w_master_600.jpg
-   :scale: 100 %
-   :alt: Master Brick with connected Solid State Relay Bricklet 2.0
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_ssr_v2_w_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected the Brick Viewer should look as

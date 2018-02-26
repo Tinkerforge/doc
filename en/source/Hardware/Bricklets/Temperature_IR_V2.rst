@@ -92,13 +92,7 @@ Test your Temperature IR Bricklet 2.0
 
 |test_intro|
 
-|test_connect| (see picture below).
-
-.. image:: /Images/Bricklets/bricklet_temperature_ir_v2_master_600.jpg
-   :scale: 100 %
-   :alt: Temperature IR Bricklet 2.0 connected to Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_temperature_ir_v2_master_1200.jpg
+|test_connect|.
 
 |test_tab|
 If everything went as expected the Brick Viewer should look as
