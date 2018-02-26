@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/temperature-ir-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/temperature-ir-v2-bricklet.html
 
 .. include:: Temperature_IR_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Temperature IR Bricklet 2.0
 ===========================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell in der Entwicklung.
 
 .. raw:: html
 
@@ -61,7 +58,7 @@ Technische Spezifikation
 Eigenschaft                          Wert
 ===================================  =====================================================================
 Sensor                               MLX90614ESF-BAA
-Stromverbrauch                       TBDmA
+Stromverbrauch                       32mA
 -----------------------------------  ---------------------------------------------------------------------
 -----------------------------------  ---------------------------------------------------------------------
 Objekttemperatur                     -70°C bis 380°C in 0,1°C Schritten (16Bit Auflösung)
@@ -70,7 +67,7 @@ Genauigkeit                          0,5°C über einen weiten Temperaturbereich
 -----------------------------------  ---------------------------------------------------------------------
 -----------------------------------  ---------------------------------------------------------------------
 Abmessungen (B x T x H)              25 x 20 x 7mm (0,98 x 0,79 x 0,27")
-Gewicht                              TBDg
+Gewicht                              3g
 ===================================  =====================================================================
 
 
