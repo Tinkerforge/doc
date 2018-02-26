@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/motion-detector-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/motion-detector-v2-bricklet.html
 
 .. include:: Motion_Detector_V2.substitutions
    :start-after: >>>substitutions
@@ -59,7 +59,7 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Stromverbrauch (LEDs aus)         10mW
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Erkennungsreichweite              bis zu 12m (konfigurierbar)
@@ -67,7 +67,7 @@ Erfassungswinkel                  120°
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           25 x 45 x 30mm (0,98 x 1,78 x 1,18")
-Gewicht                           TBDg
+Gewicht                           6g
 ================================  ============================================================
 
 
