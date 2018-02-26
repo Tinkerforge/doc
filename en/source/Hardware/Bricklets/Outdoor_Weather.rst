@@ -95,7 +95,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/raw/master/hardware/outdoor-weather-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/outdoor_weather_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2E2p4U7>`__ | Download: `STEP <http://download.tinkerforge.com/3d/outdoor-weather/outdoor_weather_bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/outdoor-weather/outdoor_weather_bricklet.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2E2p4U7>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/outdoor-weather/outdoor_weather_bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/outdoor-weather/outdoor_weather_bricklet.FCStd>`__)
 
 
 .. _outdoor_weather_bricklet_test:
