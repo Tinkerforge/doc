@@ -83,11 +83,11 @@ Das Analog In Bricklet 3.0 hat fünf Anschlussklemmen. Über diese sind folgende
 Ausgangssignale verfügbar: 5V, 3,3V sowie GND. Zwischen der VIN Anschlussklemme
 und GND kann die zu messende Spannung angelegt werden.
 
-.. image:: /Images/Bricklets/bricklet_analog_in_v3_horizontal_350.jpg
+.. image:: /Images/Bricklets/bricklet_analog_in_v3_top_350.jpg
    :scale: 100 %
    :alt: Analog In Bricklet 3.0 Anschlussklemmen
    :align: center
-   :target: ../../_images/Bricklets/bricklet_analog_in_v3_horizontal_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_analog_in_v3_top_1200.jpg
 
 
 .. _analog_in_v3_bricklet_test:

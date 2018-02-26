@@ -83,11 +83,11 @@ The Analog In Bricklet 3.0 has five terminals. With these terminals you can
 access the following output signals: 5V, 3.3V as well as GND. The voltage you
 want to measure can be applied between the VIN and the GND terminal.
 
-.. image:: /Images/Bricklets/bricklet_analog_in_v3_horizontal_350.jpg
+.. image:: /Images/Bricklets/bricklet_analog_in_v3_top_350.jpg
    :scale: 100 %
    :alt: Analog In Bricklet 3.0 Terminals
    :align: center
-   :target: ../../_images/Bricklets/bricklet_analog_in_v3_horizontal_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_analog_in_v3_top_1200.jpg
 
 
 .. _analog_in_v3_bricklet_test:
