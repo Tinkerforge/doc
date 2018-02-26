@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/solid-state-relay-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/solid-state-relay-v2-bricklet.html
 
 .. include:: Solid_State_Relay_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Solid State Relay Bricklet 2.0
 ==============================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell in der Entwicklung.
 
 .. raw:: html
 
@@ -74,14 +71,14 @@ Technische Spezifikation
 ===========================================  ============================================================
 Eigenschaft                                  Wert
 ===========================================  ============================================================
-Stromverbrauch                               TBD
+Stromverbrauch                               31mW
 -------------------------------------------  ------------------------------------------------------------
 -------------------------------------------  ------------------------------------------------------------
 Notwendiger Kontaktabstand des SSR Eingangs  25,4mm (1")
 -------------------------------------------  ------------------------------------------------------------
 -------------------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)                      19 x 33,4 x 5mm (0,75 x 1,31 x 0,2")
-Gewicht                                      TBDg
+Gewicht                                      2g
 ===========================================  ============================================================
 
 

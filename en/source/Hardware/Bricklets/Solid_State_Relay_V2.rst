@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/solid-state-relay-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/solid-state-relay-v2-bricklet.html
 
 .. include:: Solid_State_Relay_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Solid State Relay Bricklet 2.0
 ==============================
-
-.. note::
-  This Bricklet is currently under development.
 
 .. raw:: html
 
@@ -71,14 +68,14 @@ Technical Specification
 =====================================  ============================================================
 Property                               Value
 =====================================  ============================================================
-Current Consumption                    TBDmA
+Current Consumption                    31mW
 -------------------------------------  ------------------------------------------------------------
 -------------------------------------  ------------------------------------------------------------
 Necessary Contact Space of SSR Input   25.4mm (1")
 -------------------------------------  ------------------------------------------------------------
 -------------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)                 19 x 33.4 x 5mm (0.75 x 1.31 x 0.2")
-Weight                                 TBDg
+Weight                                 2g
 =====================================  ============================================================
 
 
