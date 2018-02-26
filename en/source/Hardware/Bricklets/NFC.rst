@@ -8,7 +8,7 @@
 .. _nfc_bricklet:
 
 NFC Bricklet
-=================
+============
 
 .. note::
   This Bricklet is currently under development.
@@ -31,7 +31,7 @@ Features
 --------
 
 * Can read and write NFC Forum Type 1, 2, 3, 4 and Mifare Classic tags.
-* Ndef definitions can be directly read/written with API.
+* NDEF definitions can be directly read/written with API.
 * Supports NFC P2P mode
 * Supports card emulation mode
 * Range is restricted to 10cm (3.94")
@@ -48,7 +48,7 @@ and write NFC tags. To do this you only have to place a NFC
 tag in the proximity (up to 10cm) of the Bricklet.
 
 NFC Forum Type 1, 2, 3, 4 and Mifare Classic tags are supported. Direct page
-access is available and it is possible to directly read/write Ndef messages
+access is available and it is possible to directly read/write NDEF messages
 through the API.
 
 The Bricklet also supports Card Emulation as well as NFC P2P communication.

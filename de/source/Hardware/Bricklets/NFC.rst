@@ -30,8 +30,8 @@ NFC Bricklet
 Features
 --------
 
-* Liest und schreibt NFC Forum Type 1, 2, 3, 4 und Mifare Classic tags.
-* Ndef Begriffe können direkt mit API gelesen und geschrieben werden.
+* Liest und schreibt NFC Forum Type 1, 2, 3, 4 und Mifare Classic Tags.
+* NDEF Datensätze können direkt mit API gelesen und geschrieben werden.
 * Unterstützt NFC P2P Betriebsmodi
 * Unterstützt Kartenemulations Betriebsmodi
 * Reichweite ist auf 10cm begrenzt (3.94")
@@ -47,8 +47,8 @@ erweitert die Funktionalität der :ref:`Bricks <primer_bricks>` indem es die Mö
 bietet NFC tags zu lesen und zu schreiben. Dafür muss lediglich ein NFC tag
 in der Nähe (bis zu 10cm) des Bricklets platziert werden.
 
-Unterstützt werden NFC Forum Type 1, 2, 3, 4 und Mifare Classic tags. Ein direkter
-Seitenzugriff ist verfügbar und es ist möglich Ndef Mitteilungen direkt über das
+Unterstützt werden NFC Forum Type 1, 2, 3, 4 und Mifare Classic Tags. Ein direkter
+Seitenzugriff ist verfügbar und es ist möglich NDEF Mitteilungen direkt über das
 API zu lesen oder zu schreiben.
 
 Das Bricklet unterstützt außerdem Kartenemulation sowie auch NFC P2P Kommunikation.
@@ -89,7 +89,7 @@ Ressourcen
 Kompatibilität
 --------------
 
-Das Bricklet sollte mit jedem Tag funktionieren des zu Mifare Classic, NFC
+Das Bricklet sollte mit jedem Tag funktionieren das zu Mifare Classic, NFC
 Forum Typ 1, 2, 3 oder 4 kompatibel ist. Die folgenden Tags wurden von uns getestet:
 
 **Mifare Classic:**
@@ -126,7 +126,7 @@ Meist unterstützt wird Typ 3 und 4.
 Page Größen und andere Dinge die man wissen sollte
 --------------------------------------------------
 
-Mifare Classic und NFC Forum Typ x Tags haben verschiedene Page Größen und
+Mifare Classic und NFC Forum Typ x Tags haben verschiedene Page-Größen und
 verschiedene Speicher-Strukturen. Wenn die Low Level Page Schreibfunktion
 verwendet wird muss diese Struktur beachtet werden, um nicht versehentlich den Tag zu locken.
 
@@ -137,7 +137,7 @@ verwendet wird muss diese Struktur beachtet werden, um nicht versehentlich den T
 * Sektor 0 (Seiten 0-3) sollte nicht überschrieben werden.
 * Die letzte Seite jedes Sektors steuert den Zugriff (Seite 7, 11, 15, ..). Diese Seite sollte nur überschrieben werden, wenn man weiß was man tut.
 
-`Adafruit <https://www.adafruit.com>`__ has a quite good description of the structure:
+`Adafruit <https://www.adafruit.com>`__ hat eine gute Beschreibung der Struktur:
 `Link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
 
 **NFC Forum Typ 1:**
@@ -207,7 +207,7 @@ Nachdem ein Tag selektiert wurde kann diese ohne Aufrufe von *ReaderRequestTagID
 gelesen/geschrieben werden solange das Tag nicht aus der Nähe des NFC/RFID
 Bricklets entfernt wurde.
 
-Anstelle von *ReaderREquestPage* oder *ReaderWritePage* kann auch *ReaderREquestNdef*
+Anstelle von *ReaderRequestPage* oder *ReaderWritePage* kann auch *ReaderRequestNdef*
 oder *ReaderWriteNdef* verwendet werden, um Ndef MASSAGES innerhalb eines angemessenen
 Platzes direkt zu schreiben anstatt auf Low-Level Pages.
 
@@ -282,7 +282,8 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_nfc_w_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert kann nun nach Tags gescannt werden und Seiten
+gelesen/geschrieben werden.
 
 .. image:: /Images/Bricklets/bricklet_nfc_brickv.jpg
    :scale: 100 %
@@ -297,6 +298,8 @@ Wenn alles wie erwartet funktioniert ... TBD.
 
 Gehäuse
 -------
+
+TBD
 
 ..
 	Ein `laser-geschnittenes Gehäuse für das NFC Bricklet
