@@ -42,12 +42,13 @@ Beschreibung
 Das Motion Detector :ref:`Bricklet <primer_bricklets>` erweitert 
 :ref:`Bricks <primer>` um einen Passiv-Infrarot (PIR) Sensor. Es kann benutzt
 werden um Bewegungen von Personen und Tieren zu erkennen. Es hat eine 
-konfigurierbare Reichweite von TBDm bis TBDm mit einem Erfassungswinkel von 120°.
+konfigurierbare Reichweite von bis zu 12m mit einem Erfassungswinkel von 120°.
 
 Es ist auch möglich Events zu nutzen. Dadurch ist möglich auf eine
 Bewegungserkennung zu reagieren ohne zu pollen.
 
-TODO: LEDs etc
+Die Fresnel Linse kann über blaue LEDs beleuchtet werden. Die Helligkeit ist per API 
+einstellbar und kann dazu genutzt werden um eine erkannte Bewegung anzuzeigen.
 
 Das Motion Detector Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
@@ -61,7 +62,7 @@ Eigenschaft                       Wert
 Stromverbrauch                    TBDmA
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Erkennungsreichweite              TBD-TBDm (konfigurierbar)
+Erkennungsreichweite              bis zu 12m (konfigurierbar)
 Erfassungswinkel                  120°
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
@@ -88,8 +89,7 @@ Erster Test
 
 |test_intro|
 
-|test_connect|. Anschließend muss der Bewegungssensor auf das Bricklet gesteckt
-werden.
+|test_connect|.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert wird nun eine erkannte Bewegung
