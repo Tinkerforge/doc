@@ -32,6 +32,7 @@ Features
 * Drahtlose Hausautomatisierung
 * Steuert Funksteckdosen (:ref:`Unterstützte Steckdosen <remote_switch_v2_supported_devices>`)
 * Kann Funksteckdosen mit Dimm-Funktion steuern
+* Kann Funksteckdosen-Fernbedienungen auslesen
 
 
 .. _remote_switch_v2_bricklet_description:
@@ -382,7 +383,11 @@ das rechte Kodierrad (1-16) auf 1 für den Devicecode.
 Nutzung als Empfänger
 ---------------------
 
-TODO
+Funksteckdosen werden üblicherweise mit dazugehörigen Fernbedienungen geliefert.
+Diese Fernbedienungen kann das Remote Switch Bricklet 2.0 auslesen.
+
+Dazu muss das Bricklet für einen Empfang des jeweiligen Typs konfiguriert werden.
+Anschließend können die empfangenen Signale ausgelesen werden.
 
 
 .. _remote_switch_v2_bricklet_case:

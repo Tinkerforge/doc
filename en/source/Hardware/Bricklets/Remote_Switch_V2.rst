@@ -33,6 +33,7 @@ Features
 * Wireless house automation
 * Controls remote mains switches (:ref:`supported devices <remote_switch_v2_supported_devices>`)
 * Can control remote mains switches with dimming function
+* Can read out the remotes of remote mains switches
 
 
 .. _remote_switch_v2_bricklet_description:
@@ -381,8 +382,11 @@ and the right code wheel (1-16) is set to 1 for the device code.
 Usage as Receiver
 -----------------
 
-TODO
+Typically remote mains switches come with a remote. The signals of these remotes 
+can be read out with the Remote Switch Bricklet 2.0.
 
+For that the Bricklet has to be configured to receive the signals of the corresponding
+addressing type. After that the received data can be read out.
 
 .. _remote_switch_v2_bricklet_case:
 
