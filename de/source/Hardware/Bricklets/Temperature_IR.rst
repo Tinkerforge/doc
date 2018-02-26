@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/temperature-ir-bricklet.html
-
 .. include:: Temperature_IR.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,6 +21,12 @@ Temperature IR Bricklet
 	Dimensions/temperature_ir_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das Temperature IR Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Temperature IR Bricklet 2.0 <temperature_ir_v2_bricklet>`
+ empfohlen.
 
 
 Features
