@@ -27,6 +27,12 @@ Rotary Encoder Bricklet
 	{% tfgalleryend %}
 
 
+.. note::
+
+ The Rotary Encoder Bricklet is discontinue. The
+ :ref:`Rotary Encoder Bricklet 2.0 <rotary_encoder_v2_bricklet>` is the recommended
+ replacement.
+
 Features
 --------
 

@@ -26,6 +26,11 @@ Rotary Encoder Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Rotary Encoder Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`Rotary Encoder Bricklet 2.0 <rotary_encoder_v2_bricklet>`
+ empfohlen.
 
 Features
 --------

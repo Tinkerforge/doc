@@ -23,6 +23,11 @@ Analog In Bricklet 2.0
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Analog In Bricklet 2.0 ist abgekündigt.
+ Als Ersatz wird das :ref:`Analog In Bricklet 3.0 <analog_in_v3_bricklet>`
+ empfohlen.
 
 Features
 --------

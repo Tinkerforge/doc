@@ -26,6 +26,11 @@ Solid State Relay Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Solid State Relay Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`Solid State Relay Bricklet 2.0 <solid_state_relay_v2_bricklet>`
+ empfohlen.
 
 Features
 --------
