@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/outdoor-weather-bricklet.html
+:shoplink: ../../../shop/bricklets/outdoor-weather-bricklet.html
 
 .. include:: Outdoor_Weather.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Outdoor Weather Bricklet
 ========================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 
@@ -77,16 +74,18 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Current Consumption               53mW
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Max. number of WS-6147            255
+Max. number of TH-6148            255
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 35 x 5mm (1.58 x 1.38 x 0.2")
-Weight                            TBDg
+Weight*                           10g
 ================================  ============================================================
 
+\* without antenna
 
 Resources
 ---------

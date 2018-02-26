@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/outdoor-weather-bricklet.html
+:shoplink: ../../../shop/bricklets/outdoor-weather-bricklet.html
 
 .. include:: Outdoor_Weather.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Outdoor Weather Bricklet
 ========================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -79,16 +76,18 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Stromverbrauch                    53mW
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Max. Anzahl von WS-6147           255
+Max. Anzahl von TH-6148           255
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 35 x 5mm (1.56 x 1.38 x 0.2")
-Gewicht                           TBDg
+Gewicht*                          10g
 ================================  ============================================================
 
+\* ohne Antenne
 
 Ressourcen
 ----------
