@@ -44,7 +44,7 @@ Das Outdoor Weather :ref:`Bricklet <primer_bricklets>` ist mit einem
 Außen-Wetterstation zu empfangen. Das Bricklet kann mit einem
 :ref:`Brick <primer_bricks>` verbunden werden.
 
-Es unterstützt derzeit die `Außen-Wetterstation WS-6147 <https://www.tinkerforge.com/de/shop/outdoor-weather-station-ws-6147>`__ welche folgende Daten misst und sendet
+Es unterstützt derzeit die `Außen-Wetterstation WS-6147 <https://www.tinkerforge.com/de/shop/outdoor-weather-station-ws-6147>`__, welche folgende Daten misst und sendet
 
 * Temperatur (C°)
 * Luftfeuchtigkeit (%RH)
@@ -57,10 +57,10 @@ und der `Temperatur/Luftfeuchte Sensor TH-6148 <https://www.tinkerforge.com/de/s
 * Temperatur (C°)
 * Luftfeuchtigkeit (%RH)
 
-Die Wetterstation ist dafür ausgelgt im Außenbereich genutzt zu werden (Es
-sollte so angebracht sein, dass es den Regen/Wind messen kann). Der Sensor wiederum
-kann im Innen- sowie im Außenbereich verwendet werden. Man besitzt die Möglichkeit 
-Daten von bis zu 255 Wetterstationen und zusätzlich von über 255 Sensoren zu empfangen.
+Die Außen-Wetterstation WS-6147 ist dafür ausgelegt im Außenbereich genutzt zu werden (sie
+sollte so angebracht sein, dass es den Regen/Wind messen kann). Der TH-6148 Sensor wiederum
+kann im Innen- sowie im Außenbereich verwendet werden. Es können die Daten von bis zu 
+255 Außen-Wetterstationen und bis zu 255 Sensoren gleichzeitig empfangen werden.
 
 Das Outdoor Weather Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
@@ -113,7 +113,7 @@ Erster Test
 |test_tab|
 Wenn alles wie erwartet funktioniert können die zuletzt übermittelten Daten 
 der Wetterstation sowie der Sensoren angesehen werden. Bei der ersten
-Inbetriebnahme kann es bis zu 45 Sekunden dauern bis die ersten Daten übertragen
+Inbetriebnahme kann es ca. 45 Sekunden dauern bis die ersten Daten übertragen
 und auf dem Monitor zu sehen sind.
 
 .. image:: /Images/Bricklets/bricklet_outdoor_weather_brickv.jpg

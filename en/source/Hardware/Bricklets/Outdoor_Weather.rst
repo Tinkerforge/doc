@@ -56,9 +56,9 @@ and `Temperature/Humidity Sensor TH-6148 <https://www.tinkerforge.com/en/shop/te
 * Temperature (°C)
 * Humidity (%RH)
 
-The weather station is meant to be put outside (somewhere where it can measure the rain/wind).
-The sensor can be used inside or outside. You can use up to 255 weather station and up to
-255 sensors simultaneously.
+The Outdoor Weather Station WS-6147 is meant to be put outside (somewhere where it can measure the rain/wind).
+The TH-6148 sensor can be used inside or outside. You can use up to 255 Outdoor Weather Stations and up to
+255 Sensors simultaneously.
 
 The Outdoor Weather Bricklet has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
