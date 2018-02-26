@@ -36,7 +36,7 @@ Description
 
 The Analog In :ref:`Bricklet <primer_bricklets>` 3.0 can be used to
 extend the features of :ref:`Bricks <primer_bricks>` by the capability to
-measure voltages. It is the successor of the :ref:`analog_in_bricklet`.
+measure voltages. It is the successor of the :ref:`analog_in_v2_bricklet`.
 The voltage can be read out in `Volt
 <https://en.wikipedia.org/wiki/Volt>`__ directly without conversions necessary.
 
