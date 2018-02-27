@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/rotary-encoder-bricklet.html
-
 .. include:: Rotary_Encoder.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -28,7 +26,7 @@ Rotary Encoder Bricklet
 
 .. note::
 
- Das Rotary Encoder Bricklet ist abgekündigt.
+ Das Rotary Encoder Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Rotary Encoder Bricklet 2.0 <rotary_encoder_v2_bricklet>`
  empfohlen.
 
