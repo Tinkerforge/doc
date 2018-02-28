@@ -41,7 +41,8 @@ Das Outdoor Weather :ref:`Bricklet <primer_bricklets>` ist mit einem
 Außen-Wetterstation zu empfangen. Das Bricklet kann mit einem
 :ref:`Brick <primer_bricks>` verbunden werden.
 
-Es unterstützt derzeit die `Außen-Wetterstation WS-6147 <https://www.tinkerforge.com/de/shop/outdoor-weather-station-ws-6147>`__, welche folgende Daten misst und sendet
+Es unterstützt derzeit die `Außen-Wetterstation WS-6147 <https://www.tinkerforge.com/de/shop/outdoor-weather-station-ws-6147.html>`__,
+welche folgende Daten misst und sendet
 
 * Temperatur (C°)
 * Luftfeuchtigkeit (%RH)
@@ -49,7 +50,7 @@ Es unterstützt derzeit die `Außen-Wetterstation WS-6147 <https://www.tinkerfor
 * Windrichtung (16 unterschiedliche Richtungen)
 * Niederschlag (mm)
 
-und der `Temperatur/Luftfeuchte Sensor TH-6148 <https://www.tinkerforge.com/de/shop/temperature-humidity-sensor-th-6148>`__ misst
+und der `Temperatur/Luftfeuchte Sensor TH-6148 <https://www.tinkerforge.com/de/shop/temperature-humidity-sensor-th-6148.html>`__ misst
 
 * Temperatur (C°)
 * Luftfeuchtigkeit (%RH)
