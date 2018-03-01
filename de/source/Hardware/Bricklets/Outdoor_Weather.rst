@@ -16,7 +16,8 @@ Outdoor Weather Bricklet
 
 	Bricklets/bricklet_outdoor_weather_tilted_[?|?].jpg           Outdoor Weather Bricklet
 	Bricklets/bricklet_outdoor_weather_top_[?|?].jpg              Outdoor Weather Bricklet
-	Bricklets/bricklet_outdoor_weather_front_[?|?].jpg            Outdoor Weather Bricklet mit Master Brick
+	Bricklets/bricklet_outdoor_weather_front_[?|?].jpg            Outdoor Weather Bricklet
+	Cases/bricklet_outdoor_weather_case_built_up_[?|?].jpg        Outdoor Weather Bricklet im Gehäuse
 	Bricklets/bricklet_outdoor_weather_brickv_[100|].jpg          Outdoor Weather Bricklet im Brick Viewer
 	Dimensions/outdoor_weather_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -130,27 +131,26 @@ und auf dem Monitor zu sehen sind.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Outdoor Weather Bricklet 
-	<https://www.tinkerforge.com/de/shop/cases/case-outdoor-weather-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Outdoor Weather Bricklet 
+<https://www.tinkerforge.com/de/shop/cases/case-outdoor-weather-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_outdoor_weather_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Outdoor Weather Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_outdoor_weather_case_1000.jpg
+.. image:: /Images/Cases/bricklet_outdoor_weather_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Outdoor Weather Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_outdoor_weather_case_built_up_1000.jpg
 
-	.. include:: Outdoor_Weather.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Outdoor_Weather.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/outdoor_weather_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Outdoor Weather Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/outdoor_weather_exploded.png
+.. image:: /Images/Exploded/outdoor_weather_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Outdoor Weather Bricklet
+   :align: center
+   :target: ../../_images/Exploded/outdoor_weather_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _outdoor_weather_bricklet_programming_interface:
