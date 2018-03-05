@@ -50,4 +50,4 @@ Betriebssystem wie Android, iOS und Windows Phone verfügbar.
 
 .. note::
  Dieses :ref:`Tutorial <tutorial_first_steps>` vermittelt weitere Informationen
- wie diese Konzept verwendet werden kann.
+ wie dieses Konzept verwendet werden kann.
