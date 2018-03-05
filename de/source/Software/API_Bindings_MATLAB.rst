@@ -217,11 +217,11 @@ aufrufen:
 Bekannte Probleme
 -----------------
 
-In Octave 3.8 funktioniert die Invoke Funktion nicht und wirft eine
-``java.lang.UnsatisfiedLinkError`` Exception. Die Invoke Funktion erlaubt es
-von Java aus Octave Funktionen aufzurufen. Dies wird von den Bindings für
-Callbacks benutzt. Dies bedeutet, dass in Octave 3.8 keine Callbacks verwendet
-werden können. Eine `Diskussion
+In Bindings Version 2.0.13 oder älter in Octave 3.8 funktioniert die Invoke
+Funktion nicht und wirft eine ``java.lang.UnsatisfiedLinkError`` Exception.
+Die Invoke Funktion erlaubt es von Java aus Octave Funktionen aufzurufen.
+Dies wird von den Bindings für Callbacks benutzt. Dies bedeutet, dass in
+Octave 3.8 keine Callbacks verwendet werden können. Eine `Diskussion
 <http://octave.1599824.n4.nabble.com/Problem-with-invoke-call-from-Java-td4664495.html>`__
 auf der Octave Mailing Liste hat noch zu keinem Erfolg geführt. Daher
 empfehlen wir derzeit Octave 3.6, in dieser Version tritt das Problem nicht auf

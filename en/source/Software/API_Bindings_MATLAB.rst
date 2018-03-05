@@ -209,10 +209,10 @@ Just add a call to the example function at the end of the example:
 Known Problems
 --------------
 
-In Octave 3.8 the Invoke function throws an ``java.lang.UnsatisfiedLinkError``
-exception. The Invoke function is allows to call Octave functions from Java.
-The bindings use this for callbacks. This means that you cannot use callbacks
-in Octave 3.8. A `discussion
+In bindings version 2.0.13 or older in Octave 3.8 the Invoke function throws
+an ``java.lang.UnsatisfiedLinkError`` exception. The Invoke function is required
+to call Octave functions from Java. The bindings use this for callbacks.
+This means that you cannot use callbacks in Octave 3.8. A `discussion
 <http://octave.1599824.n4.nabble.com/Problem-with-invoke-call-from-Java-td4664495.html>`__
 on the Octave mailing list didn't come to a conclusion of fix for this yet.
 Because of this we recommend Octave 3.6 for now. This version is not affected
