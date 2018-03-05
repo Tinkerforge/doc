@@ -14,5 +14,5 @@ Bricks einzeln per USB am PC angeschlossen.
 
 Dies bedeutet: Programme können mit allen Bricks einzeln per USB am PC
 angeschlossen entwickelt werden. Wenn später die Bricks gestapelt und über
-eine Master Extension angebunden werden dann funktioniert das zuvor geschrieben
+eine Master Extension angebunden werden, dann funktioniert das zuvor geschriebene
 Programm ohne Änderungen weiter.
