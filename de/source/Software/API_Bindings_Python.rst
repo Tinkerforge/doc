@@ -109,7 +109,7 @@ Brick Viewer ermittelt werden:
 
 Wenn die Bindings vom :ref:`Quelltext <api_bindings_python_install_source>` oder
 von :ref:`PyPI <api_bindings_python_install_pypi>` installiert wurden, dann kann
-das Beispiele jetzt direkt ausgeführt werden::
+das Beispiel jetzt direkt ausgeführt werden::
 
  python example_configuration.py
 
