@@ -24,6 +24,12 @@ Motion Detector Bricklet
 	{% tfgalleryend %}
 
 
+.. note::
+
+ The Motion Detector Bricklet is discontinued. The
+ :ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>` is the recommended
+ replacement.
+
 Features
 --------
 

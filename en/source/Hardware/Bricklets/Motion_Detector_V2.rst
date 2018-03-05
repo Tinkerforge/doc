@@ -15,12 +15,15 @@ Motion Detector Bricklet 2.0
 
 	{% tfgallery %}
 
-	Bricklets/bricklet_motion_detector_v2_tilted_[?|?].jpg           Motion Detector Bricklet 2.0
-	Bricklets/bricklet_motion_detector_v2_side_[?|?].jpg             Motion Detector Bricklet 2.0
-	Bricklets/bricklet_motion_detector_v2_bottom_[?|?].jpg           Motion Detector Bricklet 2.0
-	Bricklets/bricklet_motion_detector_v2_top_[?|?].jpg              Motion Detector Bricklet 2.0
-	Bricklets/bricklet_motion_detector_v2_brickv_[100|].jpg          Motion Detector Bricklet 2.0 in Brick Viewer
-	Dimensions/motion_detector_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
+	Bricklets/bricklet_motion_detector_v2_tilted_[?|?].jpg             Motion Detector Bricklet 2.0
+	Bricklets/bricklet_motion_detector_v2_side_[?|?].jpg               Motion Detector Bricklet 2.0
+	Bricklets/bricklet_motion_detector_v2_bottom_[?|?].jpg             Motion Detector Bricklet 2.0
+	Bricklets/bricklet_motion_detector_v2_top_[?|?].jpg                Motion Detector Bricklet 2.0
+	Bricklets/bricklet_motion_detector_v2_tilted_black_lense_[?|?].jpg Motion Detector Bricklet 2.0 (black lense)
+	Cases/bricklet_motion_detector_v2_case_built_up_[?|?].jpg          Motion Detector Bricklet 2.0 in case
+	Cases/bricklet_motion_detector_v2_case_be_built_up_[100|].jpg      Motion Detector Bricklet 2.0 in case (black)
+	Bricklets/bricklet_motion_detector_v2_brickv_[100|].jpg            Motion Detector Bricklet 2.0 in Brick Viewer
+	Dimensions/motion_detector_v2_bricklet_dimensions_[100|600].png    Outline and drilling plan
 
 	{% tfgalleryend %}
 
@@ -52,6 +55,16 @@ light.
 
 The Motion Detector Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
+
+Backlight in action:
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_motion_detector_v2_video.mp4"  type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_motion_detector_v2_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_motion_detector_v2_video.webm" type="video/webm">
+	</video>
 
 Technical Specifications
 ------------------------
@@ -109,27 +122,26 @@ If everything went as expected you can now see when a motion is detected.
 Case
 ----
 
-..
-	A `laser-cut case for the Motion Detector Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-motion-detector-v2-bricklet.html>`__ is available.
+A `laser-cut case for the Motion Detector Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-motion-detector-v2-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_motion_detector_v2_case_tilted_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Motion Detector Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_motion_detector_v2_case_tilted_1000.jpg
+.. image:: /Images/Cases/bricklet_motion_detector_v2_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for Motion Detector Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_motion_detector_v2_case_built_up_1000.jpg
 
-	.. include:: Motion_Detector_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Motion_Detector_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/motion_detector_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Motion Detector Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/motion_detector_v2_exploded.png
+.. image:: /Images/Exploded/motion_detector_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Motion Detector Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/motion_detector_v2_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _motion_detector_v2_bricklet_programming_interface:

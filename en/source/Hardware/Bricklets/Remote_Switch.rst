@@ -26,6 +26,11 @@ Remote Switch Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Remote Switch Bricklet is discontinued. The
+ :ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------

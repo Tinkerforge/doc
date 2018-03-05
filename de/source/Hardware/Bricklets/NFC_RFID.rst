@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/nfc-rfid-bricklet.html
-
 .. include:: NFC_RFID.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,6 +21,12 @@ NFC/RFID Bricklet
 	Dimensions/nfc_rfid_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das NFC/RFID Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`NFC Bricklet <nfc_bricklet>`
+ empfohlen.
 
 
 Features

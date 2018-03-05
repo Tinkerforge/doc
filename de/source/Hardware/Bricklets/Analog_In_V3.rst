@@ -70,7 +70,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/analog-in-v3-bricklet/raw/master/hardware/analog_in-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/analog_in_v3_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/analog-in-v3-bricklet/zipball/master>`__)
-* 3D Modell (TBD)
+* 3D Modell (`Online ansehen <http://autode.sk/2Ew7gh0>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/analog_in_v3/analog_in.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/analog_in_v3/analog_in.FCStd>`__)
 
 
 Anschlussmöglichkeit

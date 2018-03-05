@@ -16,7 +16,8 @@ Outdoor Weather Bricklet
 
 	Bricklets/bricklet_outdoor_weather_tilted_[?|?].jpg           Outdoor Weather Bricklet
 	Bricklets/bricklet_outdoor_weather_top_[?|?].jpg              Outdoor Weather Bricklet
-	Bricklets/bricklet_outdoor_weather_front_[?|?].jpg            Outdoor Weather Bricklet with Master Brick
+	Bricklets/bricklet_outdoor_weather_front_[?|?].jpg            Outdoor Weather Bricklet
+	Cases/bricklet_outdoor_weather_case_built_up_[?|?].jpg        Outdoor Weather Bricklet in case
 	Bricklets/bricklet_outdoor_weather_brickv_[100|].jpg          Outdoor Weather Bricklet in Brick Viewer
 	Dimensions/outdoor_weather_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -40,7 +41,7 @@ The Outdoor Weather :ref:`Bricklet <primer_bricklets>` is equipped
 with a 433MHz receiver capable of receiving data from outdoor weather stations.
 It can be connected to a :ref:`Brick <primer_bricks>`.
 
-It currently supports `Outdoor Weather Station WS-6147 <https://www.tinkerforge.com/en/shop/outdoor-weather-station-ws-6147>`__ which measures
+It currently supports `Outdoor Weather Station WS-6147 <https://www.tinkerforge.com/en/shop/outdoor-weather-station-ws-6147.html>`__ which measures
 
 * Temperature (°C)
 * Humidity (%RH)
@@ -48,7 +49,7 @@ It currently supports `Outdoor Weather Station WS-6147 <https://www.tinkerforge.
 * Wind direction (16 directions)
 * Rainfall (mm)
 
-and `Temperature/Humidity Sensor TH-6148 <https://www.tinkerforge.com/en/shop/temperature-humidity-sensor-th-6148>`__ which measures
+and `Temperature/Humidity Sensor TH-6148 <https://www.tinkerforge.com/en/shop/temperature-humidity-sensor-th-6148.html>`__ which measures
 
 * Temperature (°C)
 * Humidity (%RH)
@@ -95,7 +96,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/raw/master/hardware/outdoor-weather-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/outdoor_weather_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/outdoor-weather-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2E2p4U7>`__ | Download: `STEP <http://download.tinkerforge.com/3d/outdoor-weather/outdoor_weather_bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/outdoor-weather/outdoor_weather_bricklet.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2E2p4U7>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/outdoor-weather/outdoor_weather_bricklet.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/outdoor-weather/outdoor_weather_bricklet.FCStd>`__)
 
 
 .. _outdoor_weather_bricklet_test:
@@ -126,27 +127,26 @@ shows up when you start the weather station or Bricklet for the first time.
 Case
 ----
 
-..
-	A `laser-cut case for the Outdoor Weather Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-outdoor-weather-bricklet.html>`__ is available.
+A `laser-cut case for the Outdoor Weather Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-outdoor-weather-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_outdoor_weather_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Outdoor Weather Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_outdoor_weather_case_1000.jpg
+.. image:: /Images/Cases/bricklet_outdoor_weather_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for Outdoor Weather Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_outdoor_weather_case_built_up_1000.jpg
 
-	.. include:: Outdoor_Weather.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Outdoor_Weather.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/outdoor_weather_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Outdoor Weather Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/outdoor_weather_exploded.png
+.. image:: /Images/Exploded/outdoor_weather_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Outdoor Weather Bricklet
+   :align: center
+   :target: ../../_images/Exploded/outdoor_weather_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _outdoor_weather_bricklet_programming_interface:

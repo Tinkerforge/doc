@@ -1,5 +1,5 @@
 
-shoplink: ../../../shop/bricklets/nfc-bricklet.html
+:shoplink: ../../../shop/bricklets/nfc-bricklet.html
 
 .. include:: NFC.substitutions
    :start-after: >>>substitutions
@@ -15,9 +15,10 @@ NFC Bricklet
 	{% tfgallery %}
 
 	Bricklets/bricklet_nfc_tilted_[?|?].jpg           NFC Bricklet
-	Bricklets/bricklet_nfc_front_[100|600].jpg        NFC Bricklet
+	Bricklets/bricklet_nfc_front_[?|?].jpg            NFC Bricklet
 	Bricklets/bricklet_nfc_top_[?|?].jpg              NFC Bricklet
-	Bricklets/bricklet_nfc_w_keyfob_[100|600].jpg     NFC Bricklet with keyfob
+	Bricklets/bricklet_nfc_w_keyfob_[?|?].jpg         NFC Bricklet with keyfob
+	Cases/bricklet_nfc_case_built_up_[?|?].jpg        NFC Bricklet with keyfob
 	Bricklets/bricklet_nfc_brickv_[100|].jpg          NFC Bricklet in Brick Viewer
 	Dimensions/nfc_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -290,36 +291,33 @@ pages etc.
 Case
 ----
 
-TBD
+A `laser-cut case for the NFC Bricklet
+<https://www.tinkerforge.com/en/shop/cases/case-nfc-bricklet.html>`__ is available.
 
-..
-	A `laser-cut case for the NFC Bricklet
-	<https://www.tinkerforge.com/en/shop/cases/case-nfc-bricklet.html>`__ is available.
+.. image:: /Images/Cases/bricklet_nfc_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for NFC Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_nfc_case_built_up_1000.jpg
 
-	.. image:: /Images/Cases/bricklet_nfc_case_tilted_350.jpg
-	   :scale: 100 %
-	   :alt: Case for NFC Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_nfc_case_tilted_1000.jpg
+The assembly is easiest if you follow the following steps:
 
-	The assembly is easiest if you follow the following steps:
+* Put long screws through bottom plate,
+* put Bricklet on plate and fasten screws with spacers,
+* build up side plates,
+* plug side plates in bottom plate,
+* add top plate onto side plates and
+* add screws to top plate.
 
-	* Put long screws through bottom plate,
-	* put Bricklet on plate and fasten screws with spacers,
-	* build up side plates,
-	* plug side plates in bottom plate,
-	* add top plate onto side plates and
-	* add screws to top plate.
+Below you can see an exploded assembly drawing of the NFC Bricklet case:
 
-	Below you can see an exploded assembly drawing of the NFC Bricklet case:
+.. image:: /Images/Exploded/nfc_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for NFC Bricklet
+   :align: center
+   :target: ../../_images/Exploded/nfc_exploded.png
 
-	.. image:: /Images/Exploded/nfc_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for NFC Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/nfc_exploded.png
-
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _nfc_bricklet_programming_interface:

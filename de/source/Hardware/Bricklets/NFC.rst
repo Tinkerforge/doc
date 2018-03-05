@@ -16,8 +16,9 @@ NFC Bricklet
 
 	Bricklets/bricklet_nfc_tilted_[?|?].jpg           NFC Bricklet
 	Bricklets/bricklet_nfc_front_[?|?].jpg            NFC Bricklet
-	Bricklets/bricklet_nfc_top_[100|600].jpg          NFC Bricklet
-	Bricklets/bricklet_nfc_w_keyfob_[100|600].jpg     NFC Bricklet mit NFC-Tag
+	Bricklets/bricklet_nfc_top_[?|?].jpg              NFC Bricklet
+	Bricklets/bricklet_nfc_w_keyfob_[?|?].jpg         NFC Bricklet mit NFC-Tag
+	Cases/bricklet_nfc_case_built_up_[?|?].jpg        NFC Bricklet im Gehäuse
 	Bricklets/bricklet_nfc_brickv_[100|].jpg          NFC Bricklet im Brick Viewer
 	Dimensions/nfc_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -80,7 +81,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/nfc-bricklet/raw/master/hardware/nfc-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/nfc_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/nfc-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2BKd1ED>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/nfc/nfc-bricklet.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/nfc/nfc-bricklet.FCStd>`__)
 
 
 Kompatibilität
@@ -290,29 +291,32 @@ gelesen/geschrieben werden.
 Gehäuse
 -------
 
-TBD
+Ein `laser-geschnittenes Gehäuse für das NFC Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-nfc-bricklet.html>`__ ist verfügbar.
 
-..
-	Ein `laser-geschnittenes Gehäuse für das NFC Bricklet
-	<https://www.tinkerforge.com/de/shop/cases/case-nfc-bricklet.html>`__ ist verfügbar.
+.. image:: /Images/Cases/bricklet_nfc_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für NFC Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_nfc_case_built_up_1000.jpg
 
-	.. image:: /Images/Cases/bricklet_nfc_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für NFC Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_nfc_case_1000.jpg
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-	.. include:: NFC.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+* Stecke lange schrauben durch Unterteil,
+* stecke Bricklet auf Unterteil und schraube es mit Abstandshaltern fest,
+* baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Unterteil und
+* schraube Oberteil mit kleinen Schrauben zum Unterteil. 
 
-	.. image:: /Images/Exploded/nfc_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für NFC Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/nfc_exploded.png
+Im folgenden befindet sich eine Explosionszeichnung des NFC Bricklet-Gehäuse:
 
-	|bricklet_case_hint|
+.. image:: /Images/Exploded/nfc_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für NFC Bricklet
+   :align: center
+   :target: ../../_images/Exploded/nfc_exploded.png
+
+|bricklet_case_hint|
 
 
 .. _nfc_bricklet_programming_interface:
