@@ -445,6 +445,8 @@ payloads.
                                                                                 |                                      | :tcpip:func:`moving_average <BrickletAnalogInV2.get_moving_average>`
                                                                                 |                                      | :tcpip:func:`moving_average/set <BrickletAnalogInV2.set_moving_average>`
 
+ :ref:`Analog In Bricklet 3.0 <analog_in_v3_bricklet>`                          | bricklet/analog_in_v3                | :tcpip:func:`voltage <BrickletAnalogInV3.get_voltage>`
+
  :ref:`Analog Out Bricklet <analog_out_bricklet>`                               | bricklet/analog_out                  | :tcpip:func:`voltage <BrickletAnalogOut.get_voltage>`
                                                                                 |                                      | :tcpip:func:`voltage/set <BrickletAnalogOut.set_voltage>`
                                                                                 |                                      | :tcpip:func:`mode <BrickletAnalogOut.get_mode>`
@@ -683,6 +685,8 @@ payloads.
 
  :ref:`Motion Detector Bricklet <motion_detector_bricklet>`                     | bricklet/motion_detector             | :tcpip:func:`motion_detected <BrickletMotionDetector.get_motion_detected>`
 
+ :ref:`Motion Detector Bricklet 2.0 <motion_detector_bricklet_v2>`              | bricklet/motion_detector_v2          | :tcpip:func:`motion_detected <BrickletMotionDetectorV2.get_motion_detected>`
+
  :ref:`Motorized Linear Poti Bricklet <motorized_linear_poti_bricklet>`         | bricklet/motorized_linear_poti       | :tcpip:func:`position <BrickletMotorizedLinearPoti.get_position>`
                                                                                 |                                      | :tcpip:func:`motor_position <BrickletMotorizedLinearPoti.get_motor_position>`
                                                                                 |                                      | :tcpip:func:`status_led_config <BrickletMotorizedLinearPoti.get_status_led_config>`
@@ -727,6 +731,11 @@ payloads.
  :ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>`                         | bricklet/piezo_speaker               | :tcpip:func:`beep/set <BrickletPiezoSpeaker.beep>`
                                                                                 |                                      | :tcpip:func:`morse_code/set <BrickletPiezoSpeaker.morse_code>`
 
+ :ref:`Outdoor Weather Bricklet <outdoor_weather_bricklet>`                     | bricklet/outdoor_weather             | :tcpip:func:`station_identifiers <BrickletOutdoorWeather.get_station_identifiers>`
+                                                                                |                                      | :tcpip:func:`station_data/set <BrickletOutdoorWeather.get_station_data>` (calls :tcpip:func:`get_station_data <BrickletOutdoorWeather.get_station_data>` with the parameters provided by the *get_station_data/set* topic and the output of the getter being published to the *station_data* topic)
+                                                                                |                                      | :tcpip:func:`sensor_identifiers <BrickletOutdoorWeather.get_sensor_identifiers>`
+                                                                                |                                      | :tcpip:func:`sensor_data/set <BrickletOutdoorWeather.get_sensor_data>` (calls :tcpip:func:`get_sensor_data <BrickletOutdoorWeather.get_sensor_data>` with the parameters provided by the *get_sensor_data/set* topic and the output of the getter being published to the *sensor_data* topic)
+
  :ref:`PTC Bricklet <ptc_bricklet>`                                             | bricklet/ptc                         | :tcpip:func:`temperature <BrickletPTC.get_temperature>`
                                                                                 |                                      | :tcpip:func:`resistance <BrickletPTC.get_resistance>`
                                                                                 |                                      | :tcpip:func:`sensor_connected <BrickletPTC.is_sensor_connected>`
@@ -748,6 +757,14 @@ payloads.
                                                                                 |                                      | :tcpip:func:`switch_socket_b/set <BrickletRemoteSwitch.switch_socket_b>`
                                                                                 |                                      | :tcpip:func:`dim_socket_b/set <BrickletRemoteSwitch.dim_socket_b>`
                                                                                 |                                      | :tcpip:func:`switch_socket_c/set <BrickletRemoteSwitch.switch_socket_c>`
+
+:ref:`Remote Switch Bricklet 2.0 <remote_switch_bricklet_v2>`                   | bricklet/remote_switch_v2            | :tcpip:func:`switching_state <BrickletRemoteSwitchV2.get_switching_state>`
+                                                                                |                                      | :tcpip:func:`repeats <BrickletRemoteSwitchV2.get_repeats>`
+                                                                                |                                      | :tcpip:func:`repeats/set <BrickletRemoteSwitchV2.set_repeats>`
+                                                                                |                                      | :tcpip:func:`switch_socket_a/set <BrickletRemoteSwitchV2.switch_socket_a>`
+                                                                                |                                      | :tcpip:func:`switch_socket_b/set <BrickletRemoteSwitchV2.switch_socket_b>`
+                                                                                |                                      | :tcpip:func:`dim_socket_b/set <BrickletRemoteSwitchV2.dim_socket_b>`
+                                                                                |                                      | :tcpip:func:`switch_socket_c/set <BrickletRemoteSwitchV2.switch_socket_c>`
 
  :ref:`RGB LED Bricklet <rgb_led_bricklet>`                                     | bricklet/rgb_led                     | :tcpip:func:`rgb_value <BrickletRGBLED.get_rgb_value>`
                                                                                 |                                      | :tcpip:func:`rgb_value/set <BrickletRGBLED.set_rgb_value>`
@@ -780,6 +797,10 @@ payloads.
  :ref:`Rotary Encoder Bricklet <rotary_encoder_bricklet>`                       | bricklet/rotary_encoder              | :tcpip:func:`count <BrickletRotaryEncoder.get_count>` (calls :tcpip:func:`get_count <BrickletRotaryEncoder.get_count>` with *false*)
                                                                                 |                                      | :tcpip:func:`get_count/set <BrickletRotaryEncoder.get_count>` (calls :tcpip:func:`get_count <BrickletRotaryEncoder.get_count>` with the parameters provided by the *get_count/set* topic and the output of the getter being published to the *count* topic)
                                                                                 |                                      | :tcpip:func:`pressed <BrickletRotaryEncoder.is_pressed>`
+
+ :ref:`Rotary Encoder Bricklet 2.0 <rotary_encoder_bricklet_v2>`                | bricklet/rotary_encoder_v2           | :tcpip:func:`count <BrickletRotaryEncoderV2.get_count>` (calls :tcpip:func:`get_count <BrickletRotaryEncoderV2.get_count>` with *false*)
+                                                                                |                                      | :tcpip:func:`get_count/set <BrickletRotaryEncoderV2.get_count>` (calls :tcpip:func:`get_count <BrickletRotaryEncoderV2.get_count>` with the parameters provided by the *get_count/set* topic and the output of the getter being published to the *count* topic)
+                                                                                |                                      | :tcpip:func:`pressed <BrickletRotaryEncoderV2.is_pressed>`
 
  :ref:`Rotary Poti Bricklet <rotary_poti_bricklet>`                             | bricklet/rotary_poti                 | :tcpip:func:`position <BrickletRotaryPoti.get_position>`
 
@@ -816,6 +837,10 @@ payloads.
                                                                                 |                                      | :tcpip:func:`monoflop <BrickletSolidStateRelay.get_monoflop>`
                                                                                 |                                      | :tcpip:func:`monoflop/set <BrickletSolidStateRelay.set_monoflop>`
 
+ :ref:`Solid State Relay Bricklet 2.0 <solid_state_relay_bricklet_v2>`          | bricklet/solid_state_relay_v2        | :tcpip:func:`state <BrickletSolidStateRelayV2.get_state>`
+                                                                                |                                      | :tcpip:func:`state/set <BrickletSolidStateRelayV2.set_state>`
+                                                                                |                                      | :tcpip:func:`monoflop <BrickletSolidStateRelayV2.get_monoflop>`
+                                                                                |                                      | :tcpip:func:`monoflop/set <BrickletSolidStateRelayV2.set_monoflop>`
 
  :ref:`Sound Intensity Bricklet <sound_intensity_bricklet>`                     | bricklet/sound_intensity             | :tcpip:func:`intensity <BrickletSoundIntensity.get_intensity>`
 
@@ -827,6 +852,11 @@ payloads.
                                                                                 |                                      | :tcpip:func:`object_temperature <BrickletTemperatureIR.get_object_temperature>`
                                                                                 |                                      | :tcpip:func:`emissivity <BrickletTemperatureIR.get_emissivity>`
                                                                                 |                                      | :tcpip:func:`emissivity/set <BrickletTemperatureIR.set_emissivity>`
+
+ :ref:`Temperature IR Bricklet 2.0 <temperature_ir_bricklet_v2>`                | bricklet/temperature_ir_v2           | :tcpip:func:`ambient_temperature <BrickletTemperatureIRV2.get_ambient_temperature>`
+                                                                                |                                      | :tcpip:func:`object_temperature <BrickletTemperatureIRV2.get_object_temperature>`
+                                                                                |                                      | :tcpip:func:`emissivity <BrickletTemperatureIRV2.get_emissivity>`
+                                                                                |                                      | :tcpip:func:`emissivity/set <BrickletTemperatureIRV2.set_emissivity>`
 
  :ref:`Thermal Imaging Bricklet <thermal_imaging_bricklet>`                     | bricklet/thermal_imaging             | :tcpip:func:`high_contrast_image <BrickletThermalImaging.get_high_contrast_image>`
                                                                                 |                                      | :tcpip:func:`temperature_image <BrickletThermalImaging.get_>`
