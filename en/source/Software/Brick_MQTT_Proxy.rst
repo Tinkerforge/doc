@@ -382,7 +382,7 @@ payloads.
                                                                                 |                                      | :tcpip:func:`disable_status_led/set <BrickSilentStepper.disable_status_led>`
                                                                                 |                                      | :tcpip:func:`reset/set <BrickSilentStepper.reset>`
 
-:ref:`Stepper Brick <stepper_brick>`                                            | brick/stepper                        | :tcpip:func:`max_velocity <BrickStepper.get_max_velocity>`
+ :ref:`Stepper Brick <stepper_brick>`                                           | brick/stepper                        | :tcpip:func:`max_velocity <BrickStepper.get_max_velocity>`
                                                                                 |                                      | :tcpip:func:`current_velocity <BrickStepper.get_current_velocity>`
                                                                                 |                                      | :tcpip:func:`speed_ramping <BrickStepper.get_speed_ramping>`
                                                                                 |                                      | :tcpip:func:`steps <BrickStepper.get_steps>`
