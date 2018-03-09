@@ -3,7 +3,7 @@ Ruby
 ============ ============== ====================================================================================================== ====
 Name         Version        Description                                                                                            full
 ============ ============== ====================================================================================================== ====
-bundler      1.16.0         The best way to manage your application's dependencies                                                 |c|
+bundler      1.16.1         The best way to manage your application's dependencies                                                 |c|
 curb         0.9.4          Ruby libcurl bindings                                                                                  |c|
 distribution 0.7.3          Distribution                                                                                           |c|
 god          0.13.7         Process monitoring framework.                                                                          |c|
@@ -14,7 +14,7 @@ mysql2       0.4.10         A simple, fast Mysql library for Ruby, binding to li
 plotrb       0.0.1          Plotrb is a plotting tool in Ruby, built on Vega and D3, and is part of the SciRuby Project.           |c|
 prawn        2.2.2, 0.8.4   A fast and nimble PDF generator for Ruby                                                               |c|
 rake         12.3.0, 10.5.0 Rake is a Make-like program implemented in Ruby                                                        |c|
-rubocop      0.51.0         Automatic Ruby code style checking tool.                                                               |c|
+rubocop      0.53.0         Automatic Ruby code style checking tool.                                                               |c|
 ruby-full    1:2.3.3        Ruby full installation (default version)                                                               |c|
 ruby-pcap    0.7.9          Ruby interface to LBL Packet Capture library.                                                          |c|
 rubyvis      0.6.1          Rubyvis                                                                                                |c|

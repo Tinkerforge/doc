@@ -3,7 +3,7 @@ Python
 =========================== ======================== ========================================================================= ====
 Name                        Version                  Description                                                               full
 =========================== ======================== ========================================================================= ====
-libpython2.7                2.7.13-2                 Shared Python runtime library (version 2.7)                               |c|
+libpython2.7                2.7.13-2+deb9u2          Shared Python runtime library (version 2.7)                               |c|
 python                      2.7.13-2                 interactive high-level object-oriented language (default version)         |c|
 python-flask                0.12.1-1                 micro web framework based on Werkzeug and Jinja2 - Python 2.7             |c|
 python-gtk2                 2.24.0-5.1               Python bindings for the GTK+ widget set                                   |c|
