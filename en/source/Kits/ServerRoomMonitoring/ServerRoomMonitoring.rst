@@ -110,7 +110,7 @@ mount:
 :ref:`Industrial Digital Out 4 Bricklet <industrial_digital_out_4_bricklet>`,
 :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`,
 :ref:`IO-4 Bricklet <io4_bricklet>`,
-:ref:`Motion Detector Bricklet <motion_detector_bricklet>`,
+:ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`,
 and :ref:`Segment Display 4x7 Bricklet <segment_display_4x7_bricklet>`
 
 Technical Specifications
@@ -400,7 +400,7 @@ Please give us a notice. We would love to add a link to your project here!
 Motion Detector and Error Code Display
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The casing has already the necessary cut-outs for a :ref:`Motion Detector Bricklet <motion_detector_bricklet>`
+The casing has already the necessary cut-outs for a :ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`
 and a :ref:`Segment Display 4x7 Bricklet <segment_display_4x7_bricklet>`. Use a Motion 
 Detector Bricklet to detect motion in your server room. An additional Segment 
 Display 4x7 Bricklet can be used to show error code information on the case.

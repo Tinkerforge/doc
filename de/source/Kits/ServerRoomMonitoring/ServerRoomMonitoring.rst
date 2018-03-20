@@ -112,7 +112,7 @@ Folgende Module können direkt befestigt werden:
 :ref:`Industrial Digital Out 4 Bricklet <industrial_digital_out_4_bricklet>`,
 :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>`,
 :ref:`IO-4 Bricklet <io4_bricklet>`,
-:ref:`Motion Detector Bricklet <motion_detector_bricklet>`,
+:ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`,
 und :ref:`Segment Display 4x7 Bricklet<segment_display_4x7_bricklet>`.
 
 Technische Spezifikation
@@ -408,9 +408,9 @@ Bitte gebt uns Bescheid, wir verlinken hier gerne eure Projekte.
 Bewegungsmelder und Fehlercode Anzeige
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Das 19" Gehäuse ist bereits mit Aussparungen für ein :ref:`Motion Detector Bricklet <motion_detector_bricklet>`
+Das 19" Gehäuse ist bereits mit Aussparungen für ein :ref:`Motion Detector Bricklet 2.0 <motion_detector_v2_bricklet>`
 und ein :ref:`Segment Display 4x7 Bricklet <segment_display_4x7_bricklet>`
-versehen. Das Motion Detector Bricklet kann dazu genutzt werden Bewegung im
+versehen. Das Motion Detector Bricklet 2.0 kann dazu genutzt werden Bewegung im
 Server Raum zu detektieren. Mittels des Segment Display 4x7 Bricklets können
 spezifische Fehlercodes angezeigt werden.
 
