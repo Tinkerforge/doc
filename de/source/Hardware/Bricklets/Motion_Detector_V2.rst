@@ -47,7 +47,7 @@ Das Motion Detector :ref:`Bricklet <primer_bricklets>` erweitert
 werden um Bewegungen von Personen und Tieren zu erkennen. Es hat eine 
 konfigurierbare Reichweite von bis zu 12m mit einem Erfassungswinkel von 120°.
 
-Es ist auch möglich Events zu nutzen. Dadurch ist möglich auf eine
+Es ist auch möglich Events zu nutzen. Dadurch ist es möglich auf eine
 Bewegungserkennung zu reagieren ohne zu pollen.
 
 Die Fresnel Linse kann über blaue LEDs beleuchtet werden. Die Helligkeit ist per API 
