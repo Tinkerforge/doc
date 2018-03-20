@@ -117,32 +117,31 @@ Enter 0xFFFF = 65535 for an emissivity of 1.0.
 Case
 ----
 
-..
-	A `laser-cut case for the Temperature IR Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-temperature-ir-v2-bricklet.html>`__ is available.
+A `laser-cut case for the Temperature IR Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-temperature-ir-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_temperature_ir_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Temperature IR Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_temperature_ir_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_temperature_ir_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Temperature IR Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_temperature_ir_case_1000.jpg
 
-	The assembly is easiest if you follow the following steps:
+The assembly is easiest if you follow the following steps:
 
-	* Screw Bricklet to top plate with spacers at the bottom and long screws from the top,
-	* build up side plates,
-	* plug side plates into top plate and
-	* screw bottom plate to bottom spacers.
+* Screw Bricklet to top plate with spacers at the bottom and long screws from the top,
+* build up side plates,
+* plug side plates into top plate and
+* screw bottom plate to bottom spacers.
 
-	Below you can see an exploded assembly drawing of the Temperature IR Bricklet 2.0 case:
+Below you can see an exploded assembly drawing of the Temperature IR Bricklet 2.0 case:
 
-	.. image:: /Images/Exploded/temperature_ir_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Temperature IR Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/temperature_ir_v2_exploded.png
+.. image:: /Images/Exploded/temperature_ir_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Temperature IR Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/temperature_ir_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _temperature_ir_v2_bricklet_programming_interface:

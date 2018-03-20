@@ -109,27 +109,26 @@ the corresponding count.
 Case
 ----
 
-..
-	A `laser-cut case for the Rotary Encoder Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-rotary-poti-bricklet.html>`__ is available.
+A `laser-cut case for the Rotary Encoder Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-rotary-poti-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_rotary_poti_case_shallow_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Rotary Encoder Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_rotary_poti_case_shallow_1000.jpg
+.. image:: /Images/Cases/bricklet_rotary_poti_case_shallow_350.jpg
+   :scale: 100 %
+   :alt: Case for Rotary Encoder Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_rotary_poti_case_shallow_1000.jpg
 
-	.. include:: Rotary_Encoder_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Rotary_Encoder_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/rotary_poti_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Rotary Encoder Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/rotary_poti_exploded.png
+.. image:: /Images/Exploded/rotary_poti_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Rotary Encoder Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/rotary_poti_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _rotary_encoder_v2_bricklet_programming_interface:

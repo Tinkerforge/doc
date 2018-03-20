@@ -117,28 +117,27 @@ and a graph that shows the voltage over time.
 Case
 ----
 
-..
-	A `laser-cut case for the Analog In Bricklet 3.0
-	<https://www.tinkerforge.com/en/shop/cases/case-analog-in-out-v3-bricklet.html>`__
-	is available.
+A `laser-cut case for the Analog In Bricklet 3.0
+<https://www.tinkerforge.com/en/shop/cases/case-analog-in-out-v2-bricklet.html>`__
+is available.
 
-	.. image:: /Images/Cases/bricklet_analog_in_v3_case_built_up_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Analog In Bricklet 3.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_analog_in_v3_case_built_up_1000.jpg
+.. image:: /Images/Cases/bricklet_analog_in_v2_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Case for Analog In Bricklet 3.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_analog_in_v2_case_built_up_1000.jpg
 
-	.. include:: Analog_In_V3.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Analog_In_V3.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/analog_in_v3_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Analog In Bricklet 3.0
-	   :align: center
-	   :target: ../../_images/Exploded/analog_v3_in_exploded.png
+.. image:: /Images/Exploded/analog_in_v2_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Analog In Bricklet 3.0
+   :align: center
+   :target: ../../_images/Exploded/analog_v2_in_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _analog_in_v3_bricklet_programming_interface:

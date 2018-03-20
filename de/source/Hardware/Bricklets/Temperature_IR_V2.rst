@@ -115,32 +115,31 @@ Emissivität von 1,0.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Temperature IR Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-temperature-ir-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Temperature IR Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-temperature-ir-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_temperature_ir_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Temperature IR Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_temperature_ir_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_temperature_ir_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Temperature IR Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_temperature_ir_case_1000.jpg
 
-	Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-	* Schraube Bricklet an Oberteil mit Abstandshalter von unten und den langen Schrauben von oben,
-	* baue Seitenteile auf,
-	* stecke zusammengebaute Seitenteile in Oberteil und
-	* schraube Unterteil auf unteren Abstandshalter.
+* Schraube Bricklet an Oberteil mit Abstandshalter von unten und den langen Schrauben von oben,
+* baue Seitenteile auf,
+* stecke zusammengebaute Seitenteile in Oberteil und
+* schraube Unterteil auf unteren Abstandshalter.
 
-	Im folgenden befindet sich eine Explosionszeichnung des Temperature IR Bricklet 2.0-Gehäuse:
+Im folgenden befindet sich eine Explosionszeichnung des Temperature IR Bricklet 2.0-Gehäuse:
 
-	.. image:: /Images/Exploded/temperature_ir_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Temperature IR Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/temperature_ir_v2_exploded.png
+.. image:: /Images/Exploded/temperature_ir_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Temperature IR Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/temperature_ir_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _temperature_ir_v2_bricklet_programming_interface:

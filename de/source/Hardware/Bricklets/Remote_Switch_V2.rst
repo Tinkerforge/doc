@@ -393,33 +393,32 @@ Anschließend können die empfangenen Signale ausgelesen werden.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-remote-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Remote Switch Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-remote-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_remote_case_tilted_front_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Remote Switch Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_remote_case_tilted_front_1000.jpg
+.. image:: /Images/Cases/bricklet_remote_case_tilted_front_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Remote Switch Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_remote_case_tilted_front_1000.jpg
 
-	Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-	* Schraube Abstandshalter an das Bricklet,
-	* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte (das Antennenteil
-	  ist leicht asymmetrisch, der breitere Rand gehört von außen gesehen nach unten),
-	* schraube Unterteil an untere Abstandshalter,
-	* schraube Oberteil auf obere Abstandshalter.
+* Schraube Abstandshalter an das Bricklet,
+* baue Seitenteile auf mit Bricklet uns Sensor in der Mitte (das Antennenteil
+  ist leicht asymmetrisch, der breitere Rand gehört von außen gesehen nach unten),
+* schraube Unterteil an untere Abstandshalter,
+* schraube Oberteil auf obere Abstandshalter.
 
-	Im folgenden befindet sich eine Explosionszeichnung des Remote Switch Bricklet 2.0-Gehäuse:
+Im folgenden befindet sich eine Explosionszeichnung des Remote Switch Bricklet 2.0-Gehäuse:
 
-	.. image:: /Images/Exploded/remote_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Remote Switch Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/remote_exploded.png
+.. image:: /Images/Exploded/remote_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Remote Switch Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/remote_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _remote_switch_v2_bricklet_programming_interface:

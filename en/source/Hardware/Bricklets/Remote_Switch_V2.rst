@@ -390,33 +390,32 @@ addressing type. After that the received data can be read out.
 Case
 ----
 
-..
-	A `laser-cut case for the Remote Switch Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-remote-bricklet.html>`__ is available.
+A `laser-cut case for the Remote Switch Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-remote-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_remote_case_tilted_front_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Remote Switch Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_remote_case_tilted_front_1000.jpg
+.. image:: /Images/Cases/bricklet_remote_case_tilted_front_350.jpg
+   :scale: 100 %
+   :alt: Case for Remote Switch Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_remote_case_tilted_front_1000.jpg
 
-	The assembly is easiest if you follow the following steps:
+The assembly is easiest if you follow the following steps:
 
-	* Screw spacers to the Bricklet,
-	* build up side plates and put them around Bricklet (the antenna plate is slightly
-	  asymmetric, the wider margin goes to the bottom side, when viewed from the outside),
-	* screw bottom plate to bottom spacers,
-	* screw top plate to top spacers.
+* Screw spacers to the Bricklet,
+* build up side plates and put them around Bricklet (the antenna plate is slightly
+  asymmetric, the wider margin goes to the bottom side, when viewed from the outside),
+* screw bottom plate to bottom spacers,
+* screw top plate to top spacers.
 
-	Below you can see an exploded assembly drawing of the Temperature IR Bricklet case:
+Below you can see an exploded assembly drawing of the Temperature IR Bricklet case:
 
-	.. image:: /Images/Exploded/remote_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Remote Switch Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/remote_exploded.png
+.. image:: /Images/Exploded/remote_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Remote Switch Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/remote_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _remote_switch_v2_bricklet_programming_interface:
