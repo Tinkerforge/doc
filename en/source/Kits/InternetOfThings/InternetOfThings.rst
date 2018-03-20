@@ -41,9 +41,9 @@ as before but also physical objects (things).
 The *Starter Kit: Internet of Things* offers an easy access into the
 world of the Internet of Things. It allows to control many devices
 over the Internet. For that the kit is equipped with a
-:ref:`Remote Switch Bricklet <remote_switch_bricklet>`. It can be
+:ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>`. It can be
 used to remotely control 433MHz mains switches, dimmers and home automation components.
-You can find a :ref:`list of supported actuators <remote_switch_supported_devices>` 
+You can find a :ref:`list of supported actuators <remote_switch_v2_supported_devices>` 
 in the documentation of the Bricklet.
 
 With the :ref:`API Bindings <api_bindings>` it is possible to control the
@@ -57,7 +57,7 @@ with your own cloud or with a Raspberry Pi. The website
 access to wireless actuators from any web-enabled device.
 
 The kit basically consists of a :ref:`Master Brick <master_brick>` and a
-:ref:`Remote Switch Bricklet <remote_switch_bricklet>` which is
+:ref:`Remote Switch Bricklet 2.0 <remote_switch_bricklet_v2>` which is
 equipped with a 433MHz transceiver. Over the USB connection of the
 Master Brick you can control remote control mains switches or similar.
 An (Embedded-)PC (e.g. Raspberry Pi) either does the switching itself
@@ -71,6 +71,10 @@ extend the kit. It is for example possible to measure temperature
 :ref:`Temperature IR <temperature_ir_bricklet>` or
 :ref:`PTC Bricklet <ptc_bricklet>`) or to react on movements
 (:ref:`Motion Detector Bricklet <motion_detector_bricklet>`).
+
+This Kit was updated on March 20th 2018. We updated the Remote Switch Bricklet
+to version 2.0 and the Bricklet cable to the 7p-10p variety. All of the
+software was udpated to be compatible to both versions.
 
 
 .. raw:: html
@@ -107,7 +111,7 @@ Firmware updating and first tests
 As a very first step you should try out and update your Bricks and Bricklets.
 
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
-the :ref:`Brick Viewer <brickv_installation>`. Connect the Remote Switch Bricklet 
+the :ref:`Brick Viewer <brickv_installation>`. Connect the Remote Switch Bricklet 2.0 
 to the Master Brick and connect it via USB to your PC. Afterwards use Brick 
 Viewer to check if all of the firmwares are up to date (Updates / Flashing 
 button). If not, you can :ref:`update the Bricks <brickv_flash_brick_firmware>` and
@@ -119,7 +123,7 @@ Viewer too:
    :alt: Internet of Things update in Brick Viewer
    :align: center
 
-As the next step test the Remote Switch Bricklet with a remotely controlled
+As the next step test the Remote Switch Bricklet 2.0 with a remotely controlled
 mains switch. After that you can start to assemble the kit!
 
 
@@ -127,7 +131,7 @@ Construction
 ------------
 
 The Starter Kit: Internet of Things comes with :ref:`Master Brick <master_brick>`,
-:ref:`Remote Switch Bricklet <remote_switch_bricklet>`, a 6cm Bricklet cable,
+:ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>`, a 6cm Bricklet cable,
 two mounting kits and self-adhesive non-slip rubber feet.
 
 Building the case can be done in four easy steps.
@@ -151,7 +155,7 @@ Step 1: Use mounting kit
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Screw the 10mm spacers (thread inside/inside) to the Master Brick
-and the Remote Switch Bricklet.
+and the Remote Switch Bricklet 2.0.
 
 .. image:: /Images/Kits/iot_construction_step1_350.jpg
    :scale: 100 %
@@ -172,14 +176,14 @@ Step 2: Screw to bottom
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Now screw the Master Brick (with or without Ethernet Extension) and the 
-Remote Switch Bricklet to the bottom part of the case. You should use 
+Remote Switch Bricklet 2.0 to the bottom part of the case. You should use 
 the following sequence:
 
 * Plug front part of case into bottom part
-* Screw Master Brick and Remote Switch Bricklet to bottom part
+* Screw Master Brick and Remote Switch Bricklet 2.0 to bottom part
 * Add self-adhesive non-slip rubber feet to bottom part
-* Add Bricklet cable between Master Brick and Remote Switch Bricklet
-* Screw antenna to Remote Switch Bricklet
+* Add Bricklet cable between Master Brick and Remote Switch Bricklet 2.0
+* Screw antenna to Remote Switch Bricklet 2.0
 
 .. image:: /Images/Kits/iot_construction_step2_350.jpg
    :scale: 100 %
@@ -225,12 +229,12 @@ The web site is very easy to use. With "+ New Remote..." you can add
 new devices. There are four types: A (Switch), B (Switch), B (Dimmer),
 C (Switch). The types can be configured dependent on the actuators
 that will be controlled (see :ref:`list of supported
-actuators <remote_switch_supported_devices>`).
+actuators <remote_switch_v2_supported_devices>`).
 
 Depending on the actuator there are different forms to fill. A precise
 description of the actuator types can be found in the 
-:ref:`documentation <remote_switch_bricklet_addressing_types>` of
-the Remote Switch Bricklet.
+:ref:`documentation <remote_switch_v2_bricklet_addressing_types>` of
+the Remote Switch Bricklet 2.0.
 
 Type A (Switch):
 
@@ -343,7 +347,7 @@ Develop your own programs
 Beside the direct usage of `www.iot-remote.com <http://www.iot-remote.com/>`__
 it is of course also possible to develop your own programs. The basis
 of this is the 
-:ref:`API of the Remote Switch Bricklets <remote_switch_bricklet_programming_interface>`.
+:ref:`API of the Remote Switch Bricklets <remote_switch_v2_bricklet_programming_interface>`.
 The API is available for many different programming languages. The 
 documentation of the API does have example applications for all
 of the programing languages that we support. Those examples are
@@ -359,7 +363,7 @@ you can use the :ref:`Ethernet Master Extension <ethernet_extension>`. With
 the Ethernet Master Extension it is possible to directly communicate with
 the kit by a smart phone or tablet. The case of the IoT kit does have the
 necessary slits to accommodate the Extension. The documentation has
-:ref:`more information <remote_switch_supported_devices>` regarding the
+:ref:`more information <remote_switch_v2_supported_devices>` regarding the
 usage of the Ethernet Extension.
 
 

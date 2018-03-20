@@ -42,11 +42,11 @@ andere physische Objekte ("Dinge", "things").
 Das *Starterkit: Internet der Dinge* bietet einen einfachen Einstieg in die Welt
 des Internets der Dinge und ermöglicht es, nahezu beliebige Geräte über das
 Internet zu steuern. Dazu ist das Kit mit einem 
-:ref:`Remote Switch Bricklet <remote_switch_bricklet>`
+:ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>`
 ausgestattet über das verschiedenste 433MHz Funksteckdosen, Funkdimmer und 
 Hausautomatisationskomponenten gesteuert werden können. In der Dokumentation
 des Bricklets gibt es eine
-:ref:`Liste der unterstützten Funkaktoren <remote_switch_supported_devices>`.
+:ref:`Liste der unterstützten Funkaktoren <remote_switch_v2_supported_devices>`.
 
 Über die :ref:`API Bindings <api_bindings>` können diese Funkaktoren von 
 jedem (Embedded-) PC, Smartphone oder Tablet über das Internet gesteuert werden. 
@@ -58,7 +58,7 @@ Möglichkeit zur Verfügung diese Aktoren von jedem internetfähigen Gerät zu
 steuern.
 
 Das Kit besteht im wesentlichen aus einem :ref:`Master Brick <master_brick>`
-und einem :ref:`Remote Switch Bricklet <remote_switch_bricklet>`,
+und einem :ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>`,
 welches mit einem 433MHz Sender ausgestattet ist. Über die USB
 Verbindung des Master Bricks können somit Steckdosen o.ä. gesteuert werden.
 Ein angeschlossener (Embedded-) PC (z.B. Raspberry Pi) kann direkt die Steuerung
@@ -73,6 +73,9 @@ werden. So können zum Beispiel Temperaturen erfasst werden
 :ref:`PTC Bricklet <ptc_bricklet>`) oder auf Bewegungen reagiert werden
 (:ref:`Motion Detector Bricklet <motion_detector_bricklet>`).
 
+Dieses Kit wurde am 20. März 2018 aktualisiert. Das Kit kommt ab sofort mit
+der neuen Version 2.0 des Remote Switch Bricklet und das Bricklet-Kabel ist
+von der 7p-10p Variante. Die komplette Software ist kompatibel zu beiden Versionen.
 
 .. raw:: html
 
@@ -127,7 +130,7 @@ Firmwares aktuell sind. Falls nicht so sollten diese aktualisiert werden
    
 Im nächsten Schritt sollte das Remote Switch Bricklet mit einer Funksteckdose
 getestet werden. Eine Anleitung zu den Konfigurationsmöglichkeiten
-ist :ref:`hier <remote_switch_bricklet_addressing_types>` zu finden.
+ist :ref:`hier <remote_switch_v2_bricklet_addressing_types>` zu finden.
 Anschließend kann damit begonnen werden das Kit zusammenzubauen.
 
 
@@ -135,7 +138,7 @@ Konstruktion
 ------------
 
 Das Starterkit: Internet der Dinge wird mit einem :ref:`Master Brick <master_brick>`,
-einem :ref:`Remote Switch Bricklet <remote_switch_bricklet>`, einem 6cm 
+einem :ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>`, einem 6cm 
 Bricklet Kabel, zwei Befestigungskits und vier rutschfeste Gummifüsse 
 ausgeliefert.
 
@@ -240,10 +243,10 @@ Geräte und bietet Zugriff auf deren Steuerung.
 Über "+ New Remote..." können neue Geräte hinzugefügt werden. Es gibt vier 
 Typen: A (Schalter), B (Schalter), B (Dimmer), C (Schalter). Der einzustellende 
 Typ ist nur von dem zu steuernden Aktor abhängig (siehe :ref:`Liste der unterstützten
-Aktoren <remote_switch_supported_devices>`).
+Aktoren <remote_switch_v2_supported_devices>`).
 
 Je nach Aktor sind verschiedene Angaben zu machen. Eine genauere Beschreibung
-befindet sich in der :ref:`Dokumentation <remote_switch_bricklet_addressing_types>`
+befindet sich in der :ref:`Dokumentation <remote_switch_v2_bricklet_addressing_types>`
 des Remote Switch Bricklets:
 
 Typ A (Schalter):
@@ -360,7 +363,7 @@ Eigene Programme Entwickeln
 Neben der direkten Nutzung von 
 `www.iot-remote.com <http://www.iot-remote.com/>`__ kann das Kit natürlich auch
 in eigenen Anwendungen verwendet werden. Grundlage hierzu bildet die 
-:ref:`API des Remote Switch Bricklets <remote_switch_bricklet_programming_interface>`,
+:ref:`API des Remote Switch Bricklets <remote_switch_v2_bricklet_programming_interface>`,
 die für verschiedene Programmiersprachen zur Verfügung steht. Die API 
 Dokumentation der jeweiligen Sprache enthält zusätzlich kleine Beispielprogramme
 die als Startpunkte für die eigenen Entwicklungen dienen können.
@@ -374,7 +377,7 @@ verzichten, bietet sich der Einsatz einer
 Somit kann direkt mit dem Kit kommuniziert werden. Im Gehäuse ist Platz für 
 eine Ethernet Master Extension vorgesehen. Diese muss nur auf das Master Brick gesteckt 
 werden. In der Dokumentation gibt es :ref:`weitere Informationen zur Nutzung der
-Ethernet Extension <remote_switch_supported_devices>`.
+Ethernet Extension <remote_switch_v2_supported_devices>`.
 
 Interaktion mit anderen Dingen
 ------------------------------
