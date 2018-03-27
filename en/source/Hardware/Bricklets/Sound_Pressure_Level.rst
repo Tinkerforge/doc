@@ -71,7 +71,7 @@ Resources
 * 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
 
-.. _sound_pressure_level_bricklet_accuracy
+.. _sound_pressure_level_bricklet_accuracy:
 
 Accuracy and Calibration
 ------------------------
