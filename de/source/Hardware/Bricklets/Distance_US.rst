@@ -77,6 +77,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/distance-us-bricklet/raw/master/hardware/distance-us-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/distance_us_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/distance-us-bricklet/zipball/master>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2Ie3TvY>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_us/distance_us.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_us/distance_us.FCStd>`__)
 
 
 .. _distance_us_bricklet_test:
