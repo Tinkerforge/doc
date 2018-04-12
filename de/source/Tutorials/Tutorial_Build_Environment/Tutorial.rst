@@ -77,13 +77,55 @@ und ``brickletlib`` gesetzt werden sowie eine ``Makefile`` generiert werden
  ./generate_makefile
 
 
-Dann kann der Quellcode mit einem narmalen ``make`` Aufruf gebaut werden::
+Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 
  cd ~/tf/temperature-bricklet/software/build
  make
 
 Das gebaute Plugin liegt im ``software/build/`` Verzeichnis. In diesem
 Fall ``temperature-bricklet.bin``. Es kann mit dem 
+:ref:`Brick Viewer <brickv_flash_brick_firmware>` auf ein Bricklet geflasht werden.
+Einfach auf "Custom..." im Updates/Flashing-Dialog klicken und das frisch
+kompilierte Plugin auswählen.
+
+
+Bricklet mit Co-Prozessor Firmwares
+-----------------------------------
+
+Wir ersetzen aktuell alle alten Bricklets mit EEPROMs durch neue Bricklets
+mit Co-Prozessor. Die alten Bricklets nutzten Plugins, welche vom Brick aus
+einem EEPROM geladen wurden (siehe oben).
+
+Die neuen Bricklets werden anders gehandhabt.
+
+Zum kompilieren von Co-Prozessor Bricklet Firmwares muss zuerst ein Symlink 
+zur ``bricklib2`` gesetzt sowie eine ``Makefile`` generiert werden 
+(als Beispiel für das Humidity Bricklet 2.0)::
+
+ cd ~/tf/humidity-v2-bricklet/software/src/
+ ln -sf ../../../bricklib2/ .
+ cd ~/tf/humidity-v2-bricklet/software/
+ ./generate_makefile
+
+Das Co-Prozessor Bricklet baut automatisch seinen eigenen Bootloader sowie
+Bootstrapper mit. Dafür müssen die gits ``brickletboot_xmc`` und 
+``bootstrapper_xmc`` geklont werden. Die Buildumgebung geht davon aus das
+diese gits auf dem selben Verzeichnislevel liegen wie die gits der
+Bricks aund Bricklets. In der Standardumgebung ist dies ``~/tf/``.
+Für diese gits muss auch ein Symlink auf die ``bricklib2`` gesetzt werden::
+
+ cd ~/tf/brickletboot_xmc/software/src/
+ ln -sf ../../../bricklib2/ .
+ cd ~/tf/bootstrapper_xmc/software/src/
+ ln -sf ../../../bricklib2/ .
+
+Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
+
+ cd ~/tf/temperature-bricklet/software/build
+ make
+
+Das gebaute Plugin liegt im ``software/build/`` Verzeichnis. In diesem
+Fall ``humidity-v2-bricklet.zbin``. Es kann mit dem 
 :ref:`Brick Viewer <brickv_flash_brick_firmware>` auf ein Bricklet geflasht werden.
 Einfach auf "Custom..." im Updates/Flashing-Dialog klicken und das frisch
 kompilierte Plugin auswählen.

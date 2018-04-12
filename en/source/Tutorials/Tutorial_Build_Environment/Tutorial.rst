@@ -63,7 +63,7 @@ Bricklet Plugins
 
 To compile a Bricklet plugin you first have to link in the ``bricklib``
 and the ``brickletlib`` and generate the ``Makefile`` 
-(e.g. for the Master Brick)::
+(e.g. for the Temperature Bricklet)::
 
  cd ~/tf/temperature-bricklet/software/src/
  ln -sf ../../../bricklib/ .
@@ -78,6 +78,45 @@ Then you can build the source with a normal ``make`` call::
 
 The build firmware will be available in the ``software/build/`` directory.
 In this case ``temperature-bricklet.bin``. It can be flashed to the Bricklet 
+with the :ref:`Brick Viewer <brickv_flash_brick_firmware>`. Just select "Custom..."
+in the Updates/Flashing dialog and pick the newly compiled firmware file.
+
+Bricklet with Co-Processor Firmwares
+------------------------------------
+
+We are currently replacing all of the old Bricklets with EEPROM by new Bricklets
+that have a Co-Processor. The old Bricklets use plugins that are loaded by
+Bricks from an EEPROM (see above).
+
+The new Bricklets have to be setup differently.
+
+To compile a Co-Processor Bricklet firmware you first have to link in the 
+``bricklib2`` and generate the ``Makefile`` (e.g. for the Humidity Bricklet 2.0)::
+
+ cd ~/tf/humidity-v2-bricklet/software/src/
+ ln -sf ../../../bricklib2/ .
+ cd ~/tf/humidity-v2-bricklet/software/
+ ./generate_makefile
+
+The Co-Processor Bricklets automatically compile there own bootstrapper and
+bootloader. You have to clone the ``brickletboot_xmc`` and 
+``bootstrapper_xmc`` gits. The build files assume that they are available
+at the same directory level as the bricklet git itself. In the standard build
+environment this is in ``~/tf/``. Please make sure to also symlink the
+``bricklib2`` for these gits::
+
+ cd ~/tf/brickletboot_xmc/software/src/
+ ln -sf ../../../bricklib2/ .
+ cd ~/tf/bootstrapper_xmc/software/src/
+ ln -sf ../../../bricklib2/ .
+
+Then you can build the source with a normal ``make`` call::
+
+ cd ~/tf/humidity-v2-bricklet/software/build
+ make
+
+The build firmware will be available in the ``software/build/`` directory.
+In this case ``humidity-v2-bricklet.zbin``. It can be flashed to the Bricklet 
 with the :ref:`Brick Viewer <brickv_flash_brick_firmware>`. Just select "Custom..."
 in the Updates/Flashing dialog and pick the newly compiled firmware file.
 
