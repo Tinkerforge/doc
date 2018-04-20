@@ -31,8 +31,10 @@ Sound Pressure Level Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Measures sound pressure level in dB(A/B/C/D/Z) and ITU-R 468
+* Measures spectrum with up to 512 bins and up to 80 samples per second
+* Frequency range 40Hz to 40960Hz
+* Noise floor 30dB, maximum 120dB
 
 
 .. _sound_pressure_level_bricklet_description:
@@ -40,8 +42,21 @@ Features
 Description
 -----------
 
-TBD
+The Sound Pressure Level :ref:`Bricklet <primer_bricklets>` can be used to
+extend the features of :ref:`Bricks <primer_bricks>` by the
+capability to measure 
+`sound pressure level <https://en.wikipedia.org/wiki/Sound_pressure#Sound_pressure_level>`__ and
+sound `spectrum <https://en.wikipedia.org/wiki/Spectrogram>`__. The measured sound
+pressure level can be returned weighted by the 
+`frequency-weighting standards <https://en.wikipedia.org/wiki/A-weighting>`__
+A, B, C, D, ITU-R 468 and flat weighting (Z).
 
+The sensor can be used to measure loudness of music, construction sites, street noises and
+other environmenstal noises in a variety of weighting standards. It is also possible to
+determine the frequency composition.
+
+The Sound Pressure Level Bricklet has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
@@ -49,15 +64,15 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Current Consumption               50mW (10mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 dB(X) Accuracy*                   +-5dB, +-5% maximum full-scale error
 Measurement Range                 30dB - 120dB
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            25 x 25 x 6mm (0.98 x 0.98 x 0.24")
+Weight                            2.6g
 ================================  ============================================================
 
 \* Valid for the range of 100Hz to 8kHz. For details see :ref:`below <sound_pressure_level_bricklet_accuracy>`.
@@ -115,7 +130,7 @@ Test your Sound Pressure Level Bricklet
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now see the spectrum and decibel value.
 
 .. image:: /Images/Bricklets/bricklet_sound_pressure_level_brickv.jpg
    :scale: 100 %
