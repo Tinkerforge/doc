@@ -141,6 +141,33 @@ If everything went as expected you can now see the spectrum and decibel value.
 |test_pi_ref|
 
 
+.. _sound_pressure_level_bricklet_examples:
+
+Examples
+--------
+
+Guitar music:
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls loop>
+	  <source src="../../_images/Videos/sound_pressure_level_guitar.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/sound_pressure_level_guitar.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/sound_pressure_level_guitar.webm" type="video/webm">
+	</video>
+
+
+Moving sine wave:
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls loop>
+	  <source src="../../_images/Videos/sound_pressure_level_moving_sine_wave.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/sound_pressure_level_moving_sine_wave.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/sound_pressure_level_moving_sine_wave.webm" type="video/webm">
+	</video>
+
+
 .. _sound_pressure_level_bricklet_case:
 
 Case
