@@ -63,6 +63,8 @@ The Bricklet has the standard status LED and an additional info LED
 that can be turned on trough the API, e.g. to show that a weight
 measurement is in range.
 
+The Load Cell Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------

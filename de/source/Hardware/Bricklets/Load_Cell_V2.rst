@@ -62,6 +62,8 @@ Auf dem Bricklet befindet sich eine LED die mittels API ein- und ausgeschaltet
 werden kann, um z.B. anzuzeigen, dass das gemessene Gewicht in einem bestimmten
 Bereich liegt.
 
+Das Load Cell Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
