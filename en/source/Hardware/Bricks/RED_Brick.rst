@@ -866,59 +866,13 @@ the :ref:`download page <downloads_red_images>` and unpack it. You'll also
 need a Micro-SD card and a card reader. We recommend a fast card
 (e.g. Class 10, > 30MB/s read) with enough space (at least 8GB).
 
-Windows
-"""""""
+We recommend `Etcher <https://etcher.io/>`__ for writing the image to a
+Micro-SD card:
 
-For Windows we recommend a tool like `Win32DiskImager
-<http://sourceforge.net/p/win32diskimager/wiki/Home/>`__ to copy the image to
-the card.
-
-1. Connect the SD card to the PC using the card reader.
-2. Start Win32DiskImager as Administrator.
-3. Choose the image and SD card and click "Write".
-
-Linux
-"""""
-
-1. Connect the SD card to the PC using the card reader.
-2. Identify the path of the SD card (e.g. using ``dmesg``) with this format:
-   ``/dev/sdX``, where ``X`` is a letter.
-3. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_5_full.img``) to the
-   SD card (e.g. ``/dev/sdb``):
-
-.. code-block:: bash
-
-  sudo dd bs=64M if=/tmp/red_image_1_5_full.img of=/dev/sdb
- 
-4. It might be possible to empty the buffer, to get sure that everything 
-   is written to the card. This can be done by:
-
-.. code-block:: bash
-
-  sudo sync
-
-Mac OS X
-""""""""
-
-1. Connect the SD card to the Mac using the card reader.
-2. Mac OS X might complain that the SD card is not readable, ignore this message.
-3. Identify the path of the SD card (e.g. using ``diskutil list``), it should
-   have this format: ``/dev/diskN``, where ``N`` is a number.
-4. Unmount the SD card (e.g. using ``diskutil unmountDisk /dev/diskN``).
-5. Use ``dd`` to write the image (e.g. ``/tmp/red_image_1_5_full.img``) to the
-   SD card (e.g. ``/dev/disk4``), but use ``/dev/rdiskN`` instead of
-   ``/dev/diskN`` for higher throughput:
-
-.. code-block:: bash
-
-  sudo dd bs=64m if=/tmp/red_image_1_5_full.img of=/dev/rdisk4
-
-If this does not work for you (e.g. the RED Brick does not boot) then you can
-use this slower method instead:
-
-.. code-block:: bash
-
-  sudo dd bs=1m if=/tmp/red_image_1_5_full.img of=/dev/disk4
+1. Start Etcher
+2. Select the unpacked image
+3. Select the Micro-SD card
+4. Click "Flash!" to write the image
 
 
 .. _red_brick_change_password:
