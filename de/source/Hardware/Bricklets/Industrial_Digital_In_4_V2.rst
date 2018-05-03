@@ -88,8 +88,8 @@ Ressourcen
 
 .. _industrial_digital_in_4_v2_bricklet_connectivity:
 
-Anschlussmöglichkeit
---------------------
+Anschlussmöglichkeiten
+----------------------
 
 Das Industrial Digital In 4 Bricklet 2.0 besitzt eine 8 Pol Anschlussklemme. 
 Diese führt die vier Eingänge nach außen. Jeder Eingang ist mit einer LED
@@ -100,15 +100,15 @@ TODO: Neues Foto
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Digital In 4 Bricklet Steckerbelegung
+   :alt: Industrial Digital In 4 Bricklet 2.0 Steckerbelegung
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_caption_1200.jpg
 
 
 .. _industrial_digital_in_4_v2_bricklet_leds:
 
-Status LEDs
------------
+Channel Status LEDs
+-------------------
 
 TODO: Übersetzung
 
