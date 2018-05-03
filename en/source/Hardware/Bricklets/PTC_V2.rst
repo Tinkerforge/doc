@@ -82,6 +82,7 @@ Weight                            9g
 Resources
 ---------
 
+* MAX31865 datasheet (`Download <https://github.com/Tinkerforge/ptc-v2-bricklet/raw/master/datasheets/MAX31865.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/ptc-v2-bricklet/raw/master/hardware/ptc-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/ptc_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/ptc-v2-bricklet/zipball/master>`__)
