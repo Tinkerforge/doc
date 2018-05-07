@@ -1,0 +1,196 @@
+
+:DISABLED_shoplink: ../../../shop/bricklets/rs232-v2-bricklet.html
+
+.. include:: RS232_V2.substitutions
+   :start-after: >>>substitutions
+   :end-before: <<<substitutions
+
+.. _rs232_v2_bricklet:
+
+RS232 Bricklet 2.0
+==================
+
+.. note::
+  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
+
+..
+    .. raw:: html
+
+	{% tfgallery %}
+
+	Bricklets/bricklet_rs232_v2_tilted_[?|?].jpg           RS232 Bricklet 2.0
+	Bricklets/bricklet_rs232_v2_horizontal_[?|?].jpg       RS232 Bricklet 2.0
+	Bricklets/bricklet_rs232_v2_master_[100|600].jpg       RS232 Bricklet 2.0 mit Master Brick
+	Cases/bricklet_rs232_v2_case_[100|600].jpg             RS232 Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_rs232_v2_brickv_[100|].jpg          RS232 Bricklet 2.0 im Brick Viewer
+	Dimensions/rs232_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
+
+
+Features
+--------
+
+* Sendet und empfängt serielle Daten
+* Bietet RS-232 und UART-TTL Schnittstelle
+* Einstellbare Baudrate, Parität, Stopbits, Wortlänge und Flusskontrolle
+
+
+.. _rs232_v2_bricklet_description:
+
+Beschreibung
+------------
+
+Mit dem RS232 :ref:`Bricklet <primer_bricklets>` 2.0 können
+:ref:`Bricks <primer_bricks>` seriell Daten mit `RS-232
+<https://de.wikipedia.org/wiki/RS-232>`__ und 3,3V TTL Signalpegel
+senden und empfangen, um mit anderen seriellen Geräten zu kommunizieren.
+
+Das RS232 Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
+Technische Spezifikation
+------------------------
+
+================================  ============================================================
+Eigenschaft                       Wert
+================================  ============================================================
+Stromverbrauch                    47mW (9.4mA bei 5V, Idle)
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Baudrate                          200 - 2000000baud
+Parität                           keine / ungerade / gerade
+Stoppbits                         1 / 2
+Wortlänge                         5 / 6 / 7 / 8
+Flusskontrolle                    Software / Hardware / keine
+--------------------------------  ------------------------------------------------------------
+--------------------------------  ------------------------------------------------------------
+Abmessungen (B x T x H)           45 x 35 x 17mm (1,77 x 1,38 x 0,67")
+Gewicht                           19g
+================================  ============================================================
+
+
+Ressourcen
+----------
+
+* Schaltplan (`Download <https://github.com/Tinkerforge/rs232-v2-bricklet/raw/master/hardware/rs232-v2-schematic.pdf>`__)
+* Umriss und Bohrplan (`Download <../../_images/Dimensions/rs232_v2_bricklet_dimensions.png>`__)
+* Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/rs232-v2-bricklet/zipball/master>`__)
+* 3D Modell (`Online ansehen <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+
+
+Anschlussmöglichkeiten
+----------------------
+
+Das RS232 Bricklet 2.0 kann auf drei verschiedene Weisen mit seriellen Geräten
+verbunden werden: klassischer D-Sub 9 Stecker, 5er Anschlussklemmenblock oder
+5er Stiftleiste. Es kann aber nur eine dieser Anschlussmöglichkeiten zur
+gleichen Zeit genutzt werden.
+
+TODO: Bild neu machen
+
+.. image:: /Images/Bricklets/bricklet_rs232_horizontal_350.jpg
+   :scale: 100 %
+   :alt: RS232 Bricklet Steckerbelegung
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_rs232_horizontal_1200.jpg
+
+D-Sub 9 Stecker
+^^^^^^^^^^^^^^^
+
+Der D-Sub 9 Stecker verwendet die `RS-232 <https://de.wikipedia.org/wiki/RS-232>`__
+Signalpegel. Um diesen Anschluss verwenden zu können müssen der RX1 und RX2 Pin
+der Stiftleiste mit einem Jumper verbunden werden.
+
+Der Anschluss verwendet den folgenden Teil der RS-232 Standardbelegung:
+
+=== ================= ===
+Pin Funktion
+=== ================= ===
+2   Eingehende Daten  RX
+3   Ausgehende Daten  TX
+5   Masse             GND
+7   Sendeanforderung  RTS
+8   Sendeerlaubnis    CTS
+=== ================= ===
+
+Anschlussklemmenblock
+^^^^^^^^^^^^^^^^^^^^^
+
+Der 5er Anschlussklemmenblock stellt die gleichen fünf RS-232 Signale (RX, TX,
+RTS, CTS und GND) mit dem gleichen RS-232 Signalpegel bereit wie der D-Sub 9
+Stecker. Um diesen Anschluss verwenden zu können müssen der RX1 und RX2 Pin der
+Stiftleiste mit einem Jumper verbunden werden.
+
+Stiftleiste
+^^^^^^^^^^^
+
+Die 5er Stiftleiste stellt die eingehende Daten (RX1) und ausgehende Daten (TX)
+Signale mit 3,3V TTL Signalpegel bereit, sowie 3,3V und GND. Die Signale RTS
+und CTS sind nicht verfügbar. Um diesen Anschluss verwenden zu können muss der
+Jumper entfernt werden, der die RX1 und RX2 Pins der Stiftleiste verbindet. Der
+Jumper kann seitlich auf dem RX2 Pin geparkt werden.
+
+
+.. _rs232_v2_bricklet_test:
+
+Erster Test
+-----------
+
+|test_intro|
+
+|test_connect|.
+Verbinde dann den RX1 und TX Pin mit einem Jumper, damit das Bricklet seine
+eigene Ausgabe zurück ließt.
+
+|test_tab|
+Wenn alles wie erwartet funktioniert kann jetzt Text in das Eingabefeld getippt
+und mit Enter abgeschickt werden. Der gleiche Text sollte dann im Textfeld
+darüber auftauchen.
+
+.. image:: /Images/Bricklets/bricklet_rs232_v2_brickv.jpg
+   :scale: 100 %
+   :alt: RS232 Bricklet 2.0 im Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_rs232_v2_brickv.jpg
+
+|test_pi_ref|
+
+
+.. _rs232_v2_bricklet_case:
+
+Gehäuse
+-------
+
+..
+	Ein `laser-geschnittenes Gehäuse für das RS232 Bricklet 2.0
+	<https://www.tinkerforge.com/de/shop/cases/case-rs232-v2-bricklet.html>`__ ist verfügbar.
+
+	.. image:: /Images/Cases/bricklet_rs232_v2_case_350.jpg
+	   :scale: 100 %
+	   :alt: Gehäuse für RS232 Bricklet 2.0
+	   :align: center
+	   :target: ../../_images/Cases/bricklet_rs232_v2_case_1000.jpg
+
+	.. include:: RS232_V2.substitutions
+	   :start-after: >>>bricklet_case_steps
+	   :end-before: <<<bricklet_case_steps
+
+	.. image:: /Images/Exploded/rs232_v2_exploded_350.png
+	   :scale: 100 %
+	   :alt: Explosionszeichnung für RS232 Bricklet 2.0
+	   :align: center
+	   :target: ../../_images/Exploded/rs232_v2_exploded.png
+
+	|bricklet_case_hint|
+
+
+.. _rs232_v2_bricklet_programming_interface:
+
+Programmierschnittstelle
+------------------------
+
+Siehe :ref:`Programmierschnittstelle <programming_interface>` für eine detaillierte
+Beschreibung.
+
+.. include:: RS232_V2_hlpi.table
