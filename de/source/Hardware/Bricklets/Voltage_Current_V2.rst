@@ -50,6 +50,8 @@ zwischen Spannungsversorgung (z.B. Batterie) und Last (z.B. Motor) eingebaut.
 In akkubetriebenen Systemen können über die bidirektionale Strommessung
 Aussagen über den Ladezustand des Akkus getroffen werden.
 
+Das Voltage/Current Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
+mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
