@@ -94,6 +94,10 @@ and show other status information through the API.
 
 Duty Cycle Prescaler and Frequency Integration Time
 ---------------------------------------------------
+
+The Bricklet has two important configurations per channel:
+
+
 **Duty Cycle Prescaler**: Prescaler for internal clock.
 
 Internally the Bricklet uses a 96MHz clock. The prescaler is a divider for
