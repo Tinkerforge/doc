@@ -31,17 +31,33 @@ Industrial Counter Bricklet
 Features
 --------
 
-* 4 channel frequency counter 
-* Count, duty cycle, period and frequency per channel
-* Frequency range from 0.05Hz to 4MHz
-
+* 4 channel galvanically isolated frequency counter 
+* Measures count, duty cycle, period, frequency and value per channel
+* Frequency range from 0.03Hz to 4MHz
+* Time resolution up to 10.4ns and frequency resolution up to 0.03Hz
 
 .. _industrial_counter_bricklet_description:
 
 Description
 -----------
 
-TBD
+The Industrial Counter :ref:`Bricklet <primer_bricklets>` can 
+be used to extend :ref:`Bricks <primer_bricks>` by four frequency
+counter channels.
+
+The Bricklet has an integrated edge counter and it can measure 
+duty cycle, period, frequency and value per channel. The frequency can 
+be as high as 4MHz.
+
+The edge counter can count rising edges, falling edges or both. The
+direction of the count (up or down) is configurable. It is also possible
+to use the value of one channel as the direction (e.g. high = up, low = down)
+for another channel.
+
+All 4 channels are galvanically isolated.
+
+Example applications for the Bricklet are reading of a PWM signal and
+reading of sensors that have edge counts or frequency as output.
 
 The Industrial Counter Bricklet has a 7 pole Bricklet connector and
 is connected to a Brick with a ``7p-10p`` Bricklet cable.
@@ -63,8 +79,10 @@ High Level Voltage                10-26V
 Isolation                         3750Vrms (optocoupler value)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Minimum Input Frequency           0.05Hz
+Minimum Input Frequency           0.03Hz
 Maximum Input Frequency           4Mhz
+Time resolution                   up to 10.4ns (Duty Cycle Prescaler set to 1)
+Frequency resolution              up to 0.03Hz (Frequency Integration Time set to 32768ms)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
@@ -101,11 +119,11 @@ The Bricklet has two important configurations per channel:
 **Duty Cycle Prescaler**: Prescaler for internal clock.
 
 Internally the Bricklet uses a 96MHz clock. The prescaler is a divider for
-this internal clock. If the input frequency is too small, the internal
+this internal clock. If the input frequency is smaller than 1465Hz, the internal
 counter can overflow and the frequency measurement becomes distorted. In this
 case the prescaler needs to be increased.
 
-If your frequency is above 1465Hz, you can always use a prescaler of 1. If your frequency
+If your frequency is above 1465Hz, you can always use a prescaler of 1. If your input frequency
 is below 1465Hz, you can look at the list below for the prescaler that gives you the
 highest resolution for a given frequency.
 
@@ -129,31 +147,31 @@ highest resolution for a given frequency.
 
 **Frequency Integration Time**: Time that is used to calculate the frequency.
 
-The frequency is calculated by dividing the integration tine with the
-number of edges seen in this time. Example: If the Frequency Integration Time
+The frequency is calculated by dividing the number of edges by the integration time.
+Example: If the Frequency Integration Time
 is set to 2048ms and the Bricklet sees 40960 edge changes in this time, the
 resulting frequency is 20kHz (40960 edges divided by 2.048 seconds).
 
 For the frequency integration to work, the frequency integration time
 needs to be higher then the period of the measured frequency.
 
-The update rate of the frequency correponds to the Frequency Integration Time.
-So a small integration time means that the value is udated more often. If
+The update rate of the frequency corresponds to the Frequency Integration Time.
+So a small integration time means that the value is updated more often. If
 (for example) you change the Frequency Integration Time to 4096ms, it will take
 ~4 seconds until you get a proper frequency for the first time and the value
 will be updated every 4 seconds.
 
 The resolution of the measured frequency increases with increased integration time:
 
-* 128ms: 7.81 Hz
-* 256ms: 3.90 Hz
-* 512ms: 1.95 Hz
-* 1024ms: 0.98 Hz
-* 2048ms: 0.49 Hz
-* 4096ms: 0.24 Hz
-* 8192ms: 0.12 Hz
-* 16384ms: 0.06 Hz
-* 32768ms: 0.03 Hz
+* 128ms: 7.81Hz
+* 256ms: 3.90Hz
+* 512ms: 1.95Hz
+* 1024ms: 0.98Hz
+* 2048ms: 0.49Hz
+* 4096ms: 0.24Hz
+* 8192ms: 0.12Hz
+* 16384ms: 0.06Hz
+* 32768ms: 0.03Hz
 
 
 Count, Duty Cycle, Period, Frequency, Value
@@ -167,9 +185,9 @@ or both edges. The direction of the counting (up or down) can be configured. For
 channel 0 and 3 it is also possible to use another channel as the input for counting
 up or down.
 
-**Duty Cycle**: Is the percentage of time that the signal is high in a cycle.
+**Duty Cycle**: Is the percentage that the signal is high in a cycle.
 
-**Period**: Is the duration of time for one cycle.
+**Period**: Is the duration of one cycle.
 
 **Frequency**: Is the frequency of the signal measured over a longer time period.
 
@@ -183,11 +201,34 @@ the frequency will stay stable while the period and duty cycle will show the jit
 If the resolution of the period is high enough, the frequency of the signal is
 stable and there is no jitter, the frequency will be equal to 1/period.
 
+Below you can find an oscilloscope screenshot that shows the different measurements of
+a 12kHz signal with 60% duty cycle
+
+.. image:: /Images/Bricklets/bricklet_industrial_counter_duty_period_freq.jpg
+   :scale: 100 %
+   :alt: Count, Duty Cycle, Period and Frequency shown on oscilloscope
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_counter_duty_period_freq.jpg
+
+and the corresponding Brick Viewer screenshot of the same signal connected to the
+Industrial Counter Bricklet.
+
+.. image:: /Images/Bricklets/bricklet_industrial_counter_duty_period_freq_brickv.jpg
+   :scale: 100 %
+   :alt: Count, Duty Cycle, Period and Frequency shown on Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_counter_duty_period_freq_brickv.jpg
+
 
 External Count Direction
 ------------------------
 
-TBD
+The count direction (up or down) can be configured and changed on-the-fly for each channel.
+Channel 0 additionally supports to use the input of channel 2 as direction. You can configure
+channel 0 to count up if the value of channel 2 is high and down if the value is low and the other
+way around.
+
+Additionally channel 3 can use channel 1 as direction input in the same manner.
 
 .. _industrial_counter_bricklet_test:
 
