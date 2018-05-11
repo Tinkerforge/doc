@@ -100,6 +100,8 @@ Resources
 
 
 
+.. _industrial_counter_bricklet_channel_status_led:
+
 Channel Status LEDs
 -------------------
 
@@ -110,6 +112,8 @@ By default the channel status LEDs are on if the corresponding channel
 is high and off otherwise. You can also turn each LED individually on/off
 and show other status information through the API.
 
+
+.. _industrial_counter_bricklet_duty_cycle_prescaler_and_frequency_integration_time:
 
 Duty Cycle Prescaler and Frequency Integration Time
 ---------------------------------------------------
@@ -175,6 +179,8 @@ The resolution of the measured frequency increases with increased integration ti
 * 32768ms: 0.03Hz
 
 
+.. _industrial_counter_bricklet_count_duty_period_frequency:
+
 Count, Duty Cycle, Period, Frequency, Value
 -------------------------------------------
 
@@ -220,6 +226,8 @@ Industrial Counter Bricklet.
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_counter_duty_period_freq_brickv.jpg
 
+
+.. _industrial_counter_bricklet_external_count_direction:
 
 External Count Direction
 ------------------------
