@@ -110,8 +110,11 @@ TODO: Neues Foto
 Channel Status LEDs
 -------------------
 
-TODO: Übersetzung
+Das Bricklet verfügt über eine standard Status-LED und vier weitere LEDs
+(jeweils eine für jeden Eingang)
 
+Standardmäßig zeigen die Status-LEDs den jeweiligen Zustand des Eingangs an.
+Die Funktion der LEDs können aber auch per API geändert werden.
 
 .. _industrial_digital_in_4_v2_bricklet_test:
 
@@ -123,7 +126,8 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert sollte der aktuelle Zustand der Eingänge angezeigt 
+werden. Ist nichts mit dem Bricklet verbunden, so sollten alle Eingänge logisch "low" sein.
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_v2_brickv.jpg
    :scale: 100 %

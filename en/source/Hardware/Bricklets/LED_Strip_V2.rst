@@ -130,26 +130,26 @@ If everything went as expected you can now control a LED strip.
 
 .. _led_strip_v2_bricklet_ws28xy:
 
-WS2801, WS2811 and WS2812
--------------------------
+Supported LEDs
+--------------
 
-.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
 
 The LED Strip Bricklet 2.0 supports LED strips and pixels equipped with the
-WS2801, WS2811 or WS2812 driver chip. WS28xy refers to any of these chips.
+WS2801, WS2811 or WS2812, SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), 
+LPD8806 and APA102 (DotStar) driver ICs. *Driver ICs* refers to any of these chips.
 
 You have to configure which of this driver chips you want to use with the
 Brick Viewer or the ``set_chip_type()`` function of the LED Strip Bricklet 2.0.
 
-The WS28xy chips can control three LEDs independently. Typically a RGB LED
+The driver ICs can control up to four LEDs independently. Typically a RGB(W) LED
 combined in one package is used. It is controlled over a three or two wire
-chained data bus with clock (WS2801 only), data signal and ground as voltage
+chained data bus with clock, data signal and ground as voltage
 reference (`daisy chain <https://en.wikipedia.org/wiki/Daisy_chain_(electrical_engineering)>`__).
-Each WS28xy chip has a bus input connected to a controlling
-device such as the LED Strip Bricklet 2.0 or to a WS28xy predecessor and a
-bus output which can be connected to a subsequent WS28xy chip.
+Each Driver has a bus input connected to a controlling
+device such as the LED Strip Bricklet 2.0 or to a driver predecessor and a
+bus output which can be connected to a subsequent LED driver.
 Since it is a chained bus, a single bus output has to be connected only
-to a single bus input. The bus is indexed beginning with the first WS28xy on the
+to a single bus input. The bus is indexed beginning with the first LED driver on the
 LED Strip Bricklet 2.0 (API index 0).
 
 .. image:: /Images/Bricklets/bricklet_led_strip_strip_example_600.jpg
@@ -170,8 +170,6 @@ clock signal.
 Connectivity
 ------------
 
-.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
-
 The following image depicts the interfaces of the LED Strip Bricklet 2.0.
 
 TODO: Update image?
@@ -182,27 +180,28 @@ TODO: Update image?
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
-As described in the :ref:`WS28xy section <led_strip_v2_bricklet_ws28xy>` above,
-the Bricklet supports LED strips and pixels with WS2801, WS2811 or WS2812 driver.
+As described in the :ref:`Supported LEDs section <led_strip_v2_bricklet_ws28xy>` above,
+the Bricklet supports LED strips and pixels with WS2801, WS2811, WS2812, 
+SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar) driver.
 The terminal labeled with "Output" has to be connected with the input of
-the first WS28xy driver.
+the first LED driver.
 
 The output terminal consists of four signals:
 
-* "DAT" is the data signal line to the WS28xy chip. It has to be connected to
-  the data input of the first WS28xy chip. Unfortunately there is no
+* "DAT" is the data signal line to the LED driver chip. It has to be connected to
+  the data input of the first driver chip. Unfortunately there is no
   general label on LED pixels or on LED strips for this input. Sometimes the 
   signal is marked with SD (Serial Data) or DI (Data Input). It is also 
   possible that the input of the pixel or strip is not marked, but the output 
   is marked (DO, Data Output). If the output is marked, the non 
   marked other side has to be the input.
 
-* "CLK" is the clock signal line to the WS2801 chip. It has to be connected 
-  with the clock input of the first WS2801 chip. This input is typically labeled
+* "CLK" is the clock signal line to the driver chip. It has to be connected 
+  with the clock input of the first LED driver chip. This input is typically labeled
   with CLK, CK or CI (Clock Input). If only the output is labeled it can be 
   labeled with CO (Clock Output).
 
-  The WS2811 and WS2812 chips don't have a clock signal, leave the "CLK"
+  The WS2811, WS2812 and SK6812 chips don't have a clock signal, leave the "CLK"
   terminal unconnected form them.
 
 * "-" is the ground signal line. Ground is necessary to give a reference for the
@@ -225,8 +224,8 @@ The input terminal consisting of two signals:
 
 .. _led_strip_v2_bricklet_ws2812b_led_strips:
 
-WS2812B LED Strips
-------------------
+LED Strips with Clock Signal (e.g. WS2812B)
+-------------------------------------------
 
 There is no general color code for LED strips. Especially sometimes the color 
 codes are against any agreements. In this WS2812B LED strip example the red 
@@ -246,8 +245,6 @@ by connecting a cable between the strip and the power supply for each supply
 point. This will reduce the resistance and minimize the conduction losses.
 See the following image as an example for it.
 
-TODO: New image?
-
 .. image:: /Images/Bricklets/bricklet_led_strip_ws2812b_wiring_600.png
    :scale: 100 %
    :alt: LED Strip Bricklet 2.0 wiring for WS2812B LED Strip
@@ -257,8 +254,8 @@ TODO: New image?
 
 .. _led_strip_v2_bricklet_ws2801_led_strips:
 
-WS2801 LED Strips
------------------
+LED Strips without Clock signal (e.g. WS2801)
+---------------------------------------------
 
 There is no general color code for LED strips. Especially sometimes the color 
 codes are against any agreements. In this WS2801 LED strip example the black 
@@ -278,8 +275,6 @@ feed power to the strip at least every two meters. This can be done
 by connecting a cable between the strip and the power supply for each supply 
 point. This will reduce the resistance and minimize the conduction losses.
 See the following image as an example for it.
-
-TODO: New image?
 
 .. image:: /Images/Bricklets/bricklet_led_strip_strip_wiring_600.jpg
    :scale: 100 %
@@ -311,8 +306,6 @@ Typically each bunch has power supply wires at the beginning and the end
 of the bunch. Connect these over additional wires to the power supply. 
 You can unite nearby wires. This will reduce the resistance and minimize the 
 conduction losses.
-
-TODO: New image?
 
 .. image:: /Images/Bricklets/bricklet_led_strip_pixel_wiring_800.jpg
    :scale: 100 %

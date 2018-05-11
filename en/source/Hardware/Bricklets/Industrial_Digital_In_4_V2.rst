@@ -114,7 +114,7 @@ Channel Status LEDs
 -------------------
 
 The Bricklet has the standard status LED with four additional LEDs (one
-for each channel).
+for each input).
 
 By default the channel status LEDs are on if the corresponding channel
 is high and off otherwise. You can also turn each LED individually on/off
@@ -131,7 +131,8 @@ Test your Industrial Digital In 4 Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected the current state of the inputs should be displayed. If nothing is
+connected to the Bricklet all inputs should be logical low.
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_v2_brickv.jpg
    :scale: 100 %

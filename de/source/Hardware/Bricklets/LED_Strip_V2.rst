@@ -130,30 +130,31 @@ Wenn alles wie erwartet funktioniert, kann nun ein LED Steifen gesteuert werden.
 
 .. _led_strip_v2_bricklet_ws28xy:
 
-WS2801, WS2811 und WS2812
--------------------------
+Unterstützte LEDs
+-----------------
 
-.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
 
-Es werden LED Streifen und Pixel unterstützt, die mit dem WS2801, WS2811 oder
-WS2812 Treiber ausgestattet sind. Im Weiteren bezieht sich WS28xy auf alle
-diese drei Treiber.
+Es werden LED Streifen und Pixel unterstützt, die mit dem WS2801, WS2811, WS2812 
+SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 oder APA102 (DotStar) 
+
+Treiber ausgestattet sind. Im Weiteren bezieht sich *LED Treiber* auf alle
+diese Treiber.
 
 Der verwendete Treiber muss über Brick Viewer oder die ``set_chip_type()``
 Funktion des LED Strip Bricklets 2.0 eingestellt werden.
 
-Der WS28xy Treiber kann bis zu drei LEDs unabhängig voneinander steuern.
-Typischerweise werden RGB LEDs, die in einem Gehäuse zusammen untergebracht 
-sind, gesteuert. Der WS28xy Treiber wird über einen 3- oder 2-Leiter Datenbus,
-bestehend aus einer Datenleitung, einer Taktleitung (nur WS2801) und Masse als
+Der LED Treiber kann bis zu vier LEDs unabhängig voneinander steuern.
+Typischerweise werden RGB(W) LEDs, die in einem Gehäuse zusammen untergebracht 
+sind, gesteuert. Der LED Treiber wird über einen 3- oder 2-Leiter Datenbus,
+bestehend aus einer Datenleitung, einer Taktleitung und Masse als
 Referenz, gesteuert. Jeder Treiber verfügt dazu über einen Bus-Eingang und
 einen Bus-Ausgang, so dass die Treiber in Serie hintereinander geschaltet
 werden (`Daisy Chain <https://de.wikipedia.org/wiki/Daisy_chain>`__).
-Jeder Bus-Eingang der WS28xy Treiber ist entweder mit einem steuernden Gerät (wie
+Jeder Bus-Eingang der LED Treiber ist entweder mit einem steuernden Gerät (wie
 z.B. das LED Strip Bricklet 2.0) oder mit einem Bus-Ausgang von einem vorherigen 
-WS28xy Treiber verbunden. Da die WS28xy Treiber in Serie geschaltet werden müssen,
+LED Treiber verbunden. Da die LED Treiber in Serie geschaltet werden müssen,
 darf jeder Bus-Ausgang höchstens mit einem Bus-Eingang verbunden werden. Der
-Bus wird beginnend beim ersten WS28xy Treiber indiziert (API Index 0).
+Bus wird beginnend beim ersten LED Treiber indiziert (API Index 0).
 
 .. image:: /Images/Bricklets/bricklet_led_strip_strip_example_600.jpg
    :scale: 100 %
@@ -173,7 +174,6 @@ Im Gegensatz zum WS2801 haben die WS2811 und WS2812 Treiber keine Taktleitung.
 Anschlussmöglichkeit
 --------------------
 
-.. FIXME: add SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 and APA102 (DotStar)
 
 Das nachfolgende Bild stellt die Schnittstellen des LED Strip Bricklet 2.0 dar:
 
@@ -185,27 +185,27 @@ TODO: Neues Bild?
    :align: center
    :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
 
-Wie im :ref:`WS28xy Abschnitt <led_strip_v2_bricklet_ws28xy>` beschrieben,
-unterstützt das Bricklet LED Steifen und Pixel, die mit WS2801, WS2811 oder
-WS2812 Treiber-ICs ausgestattet sind.
-Die mit "Output" beschrifteten Klemmen müssen mit dem Eingang
-des ersten WS28xy Treiber-ICs verbunden werden.
+Wie im :ref:`Unterstützte LEDs Abschnitt <led_strip_v2_bricklet_ws28xy>` beschrieben,
+unterstützt das Bricklet LED Steifen und Pixel, die mit WS2801, WS2811,
+WS2812, SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 oder APA102 (DotStar)
+Treiber-ICs ausgestattet sind. Die mit "Output" beschrifteten Klemmen müssen mit dem Eingang
+des ersten LED Treiber-ICs verbunden werden.
 
 Die Klemme ist mit folgenden Signalen belegt:
 
-* "DAT" ist die Datenleitung zum WS28xy Chip. Sie muss mit dem Dateneingang des
-  ersten WS28xy Chips verbunden werden. Leider gibt es keine allgemeingültige
+* "DAT" ist die Datenleitung zum LED Treiber Chip. Sie muss mit dem Dateneingang des
+  ersten LED Treiber Chips verbunden werden. Leider gibt es keine allgemeingültige
   Beschriftung für LED Steifen und Pixel. Manchmal ist das Signal mit SD
   (Serial Data) oder DI (Data Input) beschriftet. Es ist ebenfalls möglich, dass
   nur der Ausgang beschriftet ist (z.B. DO, Data Output). Bei der anderen Seite
   muss es sich also folglich um den Eingang handeln.
 
-* "CLK" ist die Taktleitung zum WS2801 Chip. Sie muss mit dem Takteingang des 
-  ersten WS2801 Chips verbunden werden. Dieser Eingang ist typischerweise mit
+* "CLK" ist die Taktleitung zum LED Treiber Chip. Sie muss mit dem Takteingang des 
+  ersten LED Treiber Chips verbunden werden. Dieser Eingang ist typischerweise mit
   CLK, CK oder CI (Clock Input) beschriftet. Falls nur der Ausgang beschriftet
   ist findet man Beschriftungen wie CO (Clock Output).
 
-  Die WS2811 und WS2812 Treiber-ICs haben keine Taktleitung, für diese muss die
+  Die WS2811, WS2812 und SK6812 Treiber-ICs haben keine Taktleitung, für diese muss die
   "CLK" Klemme offen gelassen werden.
 
 * "-" ist die Masseleitung. Masse ist notwendig um eine Spannungsreferenz zu 
@@ -228,8 +228,8 @@ Die Eingangsklemme verfügt über zwei Signale:
 
 .. _led_strip_v2_bricklet_ws2812b_led_strips:
 
-WS2812B LED Steifen
--------------------
+LED Streifen mit Taktleitung (z.B. WS2812B)
+-------------------------------------------
 
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
 Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem WS2812B
@@ -265,8 +265,8 @@ TODO: Neues Bild?
 
 .. _led_strip_v2_bricklet_ws2801_led_strips:
 
-WS2801 LED Steifen
-------------------
+LED Steifen ohne Taktleitung (z.B. WS2801)
+------------------------------------------
 
 Es existiert keine allgemeine farbliche Kennzeichnung für LED Streifen.
 Insbesondere verstoßen die Farben oftmals gegen Konventionen. In diesem WS2801 
@@ -290,8 +290,6 @@ Wir empfehlen mindestens alle 2 Meter neu einzuspeisen. Dazu kann zum Beispiel
 pro Einspeisepunkt ein eigenes Kabel zur Stromversorgung geführt werden. 
 Somit wird der elektrische Widerstand reduziert und Leitungsverluste minimiert.
 Das nachfolgende Bild zeigt ein Beispiel.
-
-TODO: Neues Bild?
 
 .. image:: /Images/Bricklets/bricklet_led_strip_strip_wiring_600.jpg
    :scale: 100 %
@@ -324,8 +322,6 @@ und Ende des Bündels. Diese sollten über zusätzliche Kabel mit der
 Stromversorgung verbunden werden. Benachbarte Drähte können auch zusammengefasst
 werden. Diese Maßnahme reduziert den elektrischen Widerstand und minimiert
 die Leitungsverluste der Stromversorgung.
-
-TODO: Neues Bild?
 
 .. image:: /Images/Bricklets/bricklet_led_strip_pixel_wiring_800.jpg
    :scale: 100 %
