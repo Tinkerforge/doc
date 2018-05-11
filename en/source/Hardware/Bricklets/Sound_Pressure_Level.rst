@@ -53,7 +53,7 @@ A, B, C, D, ITU-R 468 and flat weighting (Z).
 
 The sensor can be used to measure loudness of music, construction sites, street noises and
 other environmenstal noises in a variety of weighting standards. It is also possible to
-determine the frequency composition.
+determine the frequency composition (spectrum).
 
 The Sound Pressure Level Bricklet has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
@@ -96,10 +96,10 @@ The Bricklet is calibrated against a sound pressure level meter with
 response with up to 1.5dB deviation in the range of 100Hz to 8kHz.
 
 We add another 2dB for small variations in the mounting and the small
-whole in the Bricklet etc to reach the specification of +-5dB.
+hole in the Bricklet etc to reach the specification of +-5dB.
 
 For frequencies from 8kHz to 20kHz the deviation in frequency response
-increases significantly. We calibrated this range in accordance to the
+increases significantly. We compensated this range in accordance to the
 ICS43432 datasheet, but we can't give any guarantees in this range. We
 were not able to compare this to a "ground truth"-value, since most
 professional sound pressure level meters only measure up to 8kHz.
