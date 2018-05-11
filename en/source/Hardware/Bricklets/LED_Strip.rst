@@ -104,7 +104,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/led-strip-bricklet/raw/master/hardware/led-strip-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/led_strip_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/led-strip-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2BfXSyW>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/led_strip/led_strip.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/led_strip/led_strip.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2BfXSyW>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/led_strip/led-strip.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/led_strip/led-strip.FCStd>`__)
 
 
 .. _led_strip_bricklet_test:

@@ -92,7 +92,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/raw/master/hardware/motion-detector-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/motion_detector_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/motion-detector-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2sBeApm>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/motion_detector_v2/motion_detector.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/motion_detector_v2/motion_detector.FCStd>`__)
+* 3D model (`View online <http://autode.sk/2sBeApm>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/motion_detector_v2/motion-detector-v2.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/motion_detector_v2/motion-detector-v2.FCStd>`__)
 
 
 .. _motion_detector_v2_bricklet_test:
