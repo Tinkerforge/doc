@@ -71,10 +71,10 @@ Ressourcen
 ----------
 
 * LTR329ALS Datenblatt (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/raw/master/datasheets/LTR329ALS.pdf>`__)
-* Schaltplan (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/raw/master/hardware/ambient-light-schematic.pdf>`__)
+* Schaltplan (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/raw/master/hardware/ambient-light-v2-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/ambient_light_v2_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2BVGBaN>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/ambient_light_v2/ambient-light.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/ambient_light_v2/ambient-light.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2BVGBaN>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/ambient_light_v2/ambient-light-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/ambient_light_v2/ambient-light-v2.FCStd>`__)
 
 
 .. _ambient_light_v2_bricklet_test:

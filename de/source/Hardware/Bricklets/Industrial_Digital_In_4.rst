@@ -85,7 +85,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/industrial-digital-in-4-bricklet/raw/master/hardware/industrial-digital-in-4-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_digital_in_4_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-digital-in-4-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <http://autode.sk/2iTLPfN>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_digital_in_4/industrial-di4.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_digital_in_4/industrial-di4.FCStd>`__)
+* 3D Modell (`Online ansehen <http://autode.sk/2iTLPfN>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_digital_in_4/industrial-digital-in-4.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_digital_in_4/industrial-digital-in-4.FCStd>`__)
 
 
 Anschlussmöglichkeit
