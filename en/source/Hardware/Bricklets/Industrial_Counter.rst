@@ -96,7 +96,8 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-counter-bricklet/raw/master/hardware/industrial-counter-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_counter_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-counter-bricklet/zipball/master>`__)
-* 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2rzxZ72>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_counter/industrial-counter.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_counter/industrial-counter.FCStd>`__)
+
 
 
 Channel Status LEDs

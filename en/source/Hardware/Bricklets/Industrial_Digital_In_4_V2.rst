@@ -85,7 +85,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/industrial-digital-in-4-v2-bricklet/raw/master/hardware/industrial-digital-in-4-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/industrial_digital_in_4_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-digital-in-4-v2-bricklet/zipball/master>`__)
-* 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2rG0jVB>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_digital_in_4_v2/industrial-digital-in-4-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_digital_in_4_v2/industrial-digital-in-4-v2.FCStd>`__)
 
 
 .. _industrial_digital_in_4_v2_bricklet_connectivity:
