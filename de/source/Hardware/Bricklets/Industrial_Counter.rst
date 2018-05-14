@@ -31,8 +31,11 @@ Industrial Counter Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Frequenzzähler mit 4 galvanisch isolierten Kanälen
+* Konfigurierbarer Flankenzähler pro Kanal
+* Misst Tastverhältnis, Frequenz und Zustand pro Kanal
+* Frequenzmessung im Bereich von 0,03Hz bis 4MHz
+* Zeitauflösung bis zu 10,4ns und Frequenzauflösung bis zu 0,03Hz
 
 
 .. _industrial_counter_bricklet_description:
@@ -40,24 +43,53 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Industrial Counter :ref:`Bricklet <primer_bricklets>` kann genutzt
+werden um :ref:`Bricks <primer_bricks>` um vier unabhängige Frequenzzähler zu erweitern.
 
+Das Bricklet verfügt über einen integrierten Flankenzähler, der Tastverhältnis, 
+Periode und die Frequenz getrennt pro Kanal messen kann. Frequenzen bis zu
+4MHz können vom Bricklet verarbeitet werden.
+
+Der Frequenzzähler kann steigende, fallende und beide Flankenwechsel zählen. Die 
+Richtung der Zählers (hoch oder runter) ist einstellbar. Es ist auch möglich einen
+Kanal als Richtungseingang für einen anderen Zähler zu nutzen 
+(z.B. high = zählt hoch, low = zählt runter).
+
+Alle 4 Kanäle sind galavanisch voneinander getrennt.
+
+Beispielanwendungen für das Bricklet ist das Auslesen eines PWM-Signals
+oder das Auslesen von Sensoren, die über einen Flankenzähler- oder einen 
+Frequenzausgang verfügen.
+
+Das Industrial Counter Bricklet hat einen 7 Pol Bricklet Stecker und wird mit einem
+``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 
 Technische Spezifikation
 ------------------------
 
-================================  ============================================================
+================================  ==============================================================
 Eigenschaft                       Wert
-================================  ============================================================
-Stromverbrauch                    TBDmA
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
---------------------------------  ------------------------------------------------------------
---------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
-================================  ============================================================
+================================  ==============================================================
+Stromverbrauch                    100mW (20mA bei 5V)
+--------------------------------  --------------------------------------------------------------
+--------------------------------  --------------------------------------------------------------
+Eingangstyp                       Vier Optokoppler-Eingänge (mit 2.7kΩ Serienwiderstand)
+Eingangsstrom                     Abhängig von der Eingangsspannung, ca. 3.85mA/12V, 8.3mA/24V
+Maximale Eingangsspannung         26V (DC)
+Low Level Spannung                0-2V
+High Level Spannun                10-26V
+Isolation                         3750Vrms (Optokoppler-Wert)
+--------------------------------  ---------------------------------------------------------------
+--------------------------------  ---------------------------------------------------------------
+Minimale Eingangsfrequenz         0.03MHz
+Maximale Eingangsfrequenz         4MHz
+Zeit-Auflösung                    bis zu 10.4ns (Duty Cycle Prescaler auf 1 gesetzt)
+Frequenz-Auflösung                bis zu 0.03Hz (Frequenz-Integrationsszeit auf 32768ms gesetzt)
+--------------------------------  --------------------------------------------------------------
+--------------------------------  --------------------------------------------------------------
+Abmessungen (B x T x H)           40 x 40 x 11mm (1.57 x 1.57 x 0.43")
+Gewicht                           8.4g
+================================  ==============================================================
 
 
 Ressourcen
@@ -67,6 +99,139 @@ Ressourcen
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/industrial_counter_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/industrial-counter-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <https://autode.sk/2rzxZ72>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/industrial_counter/industrial-counter.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/industrial_counter/industrial-counter.FCStd>`__)
+
+.. _industrial_counter_bricklet_channel_status_led:
+
+Kanal Status LEDs
+-----------------
+
+Das Bricklet verfügt über die standard Status-LED sowie vier weitere LEDs (eine pro Kanal).
+
+Standardmäßig leuchten die LEDs, wenn der dazugehörige Kanal high ist und umgekehrt.
+Die LEDs können aber auch per API ein/-ausgeschaltet werden um andere Statusinformationen
+anzuzeigen.
+
+
+.. _industrial_counter_bricklet_duty_cycle_prescaler_and_frequency_integration_time:
+
+Duty Cycle Prescaler und Frequency Integration Time
+---------------------------------------------------
+
+Das Bricklet verfügt über zwei Konfigurationen pro Kanal:
+
+
+**Duty Cycle Prescaler**: Prescaler für die interne Clock.
+
+Intern nutzt das Bricklet eine 96Mhz Clock. Der Prescaler ist ein Teiler für diese Clock. Wenn
+die Eingangsfrequenz kleiner ist wie 1465Hz, kann der interne Zähler überlaufen (Overflow)
+und die Frequenzmessung wird verzerrt. In diesem Fall muss der Prescaler erhöht werden.
+
+Ist die Frequenz über 1465Hz, kann der Prescaler immer auf 1 gesetzt werden.
+Ist die Eingangsfrequenz unter 1465Hz, kann die untere Tabelle genutzt werden um einen Prescaler zu wählen, 
+der die höchste Auflösung ermöglicht.
+
+* 1: Minimale Frequenz 1465Hz, Auflösung 10.4ns
+* 2: Minimale Frequenz 733Hz, Auflösung 20.8ns
+* 4: Minimale Frequenz 367Hz, Auflösung 41.6ns
+* 8: Minimale Frequenz 184Hz, Auflösung 83.3ns
+* 16: Minimale Frequenz 92Hz, Auflösung 166.6ns
+* 32: Minimale Frequenz 46Hz, Auflösung 333.3ns
+* 64: Minimale Frequenz 23Hz, Auflösung 0.66us
+* 12: Minimale Frequenz 12Hz, Auflösung 1.33us
+* 256: Minimale Frequenz 6Hz, Auflösung 2.66us
+* 512: Minimale Frequenz 3Hz, Auflösung 5.33us
+* 1024: Minimale Frequenz 2Hz, Auflösung 10.66us
+* 2048: Minimale Frequenz 0.7Hz, Auflösung 21.33us
+* 4096: Minimale Frequenz 0.36Hz, Auflösung 42.66us
+* 8192: Minimale Frequenz 0.18Hz, Auflösung 85.33us
+* 16384: Minimale Frequenz 0.09Hz, Auflösung 170.66us
+* 32768: Minimale Frequenz 0.045Hz, Auflösung 341.33us
+
+
+**Frequency Integration Time**: Zeit die genutzt wird um die Frequenz zu berechnen.
+
+Die Frequenz wird berechnet indem die Anzahl der Flanken in der gewählten Integrationszeit
+ermittelt wird. Beispiel: Die Frequency Integration Time ist auf 2048ms gesetzt und das Bricklet
+sieht 40960 Flankenwechsel in dieser Zeit. Die ermittelte Frequenz beträgt dann 20kHz 
+(40960 Flanken geteilt durch 2.048 Sekunden).
+
+Damit die Frequenzermittlung korrekt funktioniert muss die Frequency Integration Time größer sein
+wie die Periode der gemessenen Frequenz.
+
+Die Aktualisierungsrate der Frequenz ist abhängig von der Frequency Integration Time.
+Eine kleine Integration Time führt zu einer häufigeren Aktualisierung. Wird die Zeit zum Beispiel
+auf 4096ms gesetzt, so wird die Frequenz nur alle ~4 Sekunden aktualisiert.
+
+Die Auflösung der gemessenen Frequenz erhöht sich mit steigender Integrationszeit:
+
+* 128ms: 7.81Hz
+* 256ms: 3.90Hz
+* 512ms: 1.95Hz
+* 1024ms: 0.98Hz
+* 2048ms: 0.49Hz
+* 4096ms: 0.24Hz
+* 8192ms: 0.12Hz
+* 16384ms: 0.06Hz
+* 32768ms: 0.03Hz
+
+
+.. _industrial_counter_bricklet_count_duty_period_frequency:
+
+Count, Duty Cycle, Period, Frequency, Value
+-------------------------------------------
+
+Das Industrial Counter Bricklet misst fünf verschiedene Dinge:
+
+
+**Count**: Dieser Wert ist gleich der Anzahl der gemessenen Flankenwechsel. Das Bricklet kann steigende, 
+fallende oder beide Flankenwechsel zählen. Die Richtung des Zählens (hoch oder runter) kann 
+eingestellt werden. Für Kanal 0 und 3 ist es möglich einen anderen Kanal als Steuerungseingang für die 
+Zählrichtung zu nutzen.
+
+**Duty Cycle**: Ist der prozentuale Anteil des Signals der *high* ist pro Periode.
+
+**Period**: Ist die Dauer eine Periode.
+
+**Frequency**: Ist die Frequenz des Signals, gemessen über eine längere Zeit.
+
+**Value**: Ist der aktuelle Zustand des Kanals (entweder high oder low).
+
+Duty Cycle und Periode werden jeweils für den letzten Zyklus ausgegeben. Die Frequenz wird
+über die konfigurierte Frequency Integration Time berechnet. Wenn die Zyklen einen Jitter
+besitzen, so zeigen nur Period und Duty Cycle diesen Jitter. Frequency bleibt stabil.
+
+Wenn die Auflösung der Periode hoch genug und die Frequenz stabil ist, so ist
+die berechnete Frequenz gleich 1/Period.
+
+Der nachfolgende Oszilloskop Screenshot zeigt verschiedene Messungen eines 12kHz signals mit 60% Tastverhältnis
+
+.. image:: /Images/Bricklets/bricklet_industrial_counter_duty_period_freq.jpg
+   :scale: 100 %
+   :alt: Count, Duty Cycle, Period and Frequency shown on oscilloscope
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_counter_duty_period_freq.jpg
+
+sowie ein Brick Viewer Sceenshot des selben Signals mit einem 
+Industrial Counter Bricklet.
+
+.. image:: /Images/Bricklets/bricklet_industrial_counter_duty_period_freq_brickv.jpg
+   :scale: 100 %
+   :alt: Count, Duty Cycle, Period and Frequency shown on Brick Viewer
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_counter_duty_period_freq_brickv.jpg
+
+
+.. _industrial_counter_bricklet_external_count_direction:
+
+External Count Direction
+------------------------
+
+Die Zählrichtung (hoch oder runter) kann konfiguriert und jederzeit geändert werden. Kanal 0
+erlaubt es zusätzlich Kanal 2 als Richtungssteuerungseingang zu verwenden. In diesem Fall
+wird der Zähler von Kanal 0 inkrementiert (hoch zählen), wenn Kanal 2 *high* ist und dekrementiert
+(runter zählen) wenn Kanal 2 *low* ist.
+
+Für Kanal 3 kann Kanal 1 in gleicher Weise als Richtungseingang verwendet werden.
 
 
 .. _industrial_counter_bricklet_test:
@@ -79,7 +244,8 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert können nun die Kanäle konfiguriert werden und
+es sollten die dazugehörigen Zähler angezeigt werden.
 
 .. image:: /Images/Bricklets/bricklet_industrial_counter_brickv.jpg
    :scale: 100 %

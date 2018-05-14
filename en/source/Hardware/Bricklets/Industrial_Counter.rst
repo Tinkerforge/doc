@@ -32,7 +32,8 @@ Features
 --------
 
 * 4 channel galvanically isolated frequency counter 
-* Measures count, duty cycle, period, frequency and value per channel
+* Configurable edge count per channel
+* Measures duty cycle, period and frequency per channel
 * Frequency range from 0.03Hz to 4MHz
 * Time resolution up to 10.4ns and frequency resolution up to 0.03Hz
 
@@ -198,7 +199,7 @@ up or down.
 
 **Frequency**: Is the frequency of the signal measured over a longer time period.
 
-**Value**: Is the current value of the channel (either high or low).
+**Value**: Is the current state of the channel (either high or low).
 
 
 Duty Cycle and Period are always given for the last cycle seen. The frequency is calculated
