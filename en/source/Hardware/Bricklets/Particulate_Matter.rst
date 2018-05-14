@@ -34,7 +34,7 @@ Features
 * Measures Particulate Matter concentration
 * Measures in µg/m³ for differenz sizes
 * Distinguishable particle sizes: PM1.0, PM2.5 and PM10
-* Integrated radiator for air flow
+* Integrated fan for air flow
 
 .. _particulate_matter_bricklet_description:
 

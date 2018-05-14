@@ -31,8 +31,10 @@ Particulate Matter Bricklet
 Features
 --------
 
-* TBD
-* TBD
+* Misst die Feinstaubkonzentration
+* Messungen in µg/m³ für verschiedene Partikelgrößen
+* Unterscheidbare Partikelgrößen: PM1.0, PM2.5 and PM10
+* Integrierter Lüfter zur Erzeugung eines Luftstroms
 
 
 .. _particulate_matter_bricklet_description:
@@ -40,7 +42,12 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Particulate Matter :ref:`Bricklet <primer_bricklets>` kann genutzt werden um die 
+Eigenschaften eines :ref:`Bricks <primer_bricks>` um die Möglichkeit Feinstaub zu messen 
+zu erweitern.
+
+Das Bricklet unterstützt die Größenklassen PM1.0, PM2.5 und PM10. Zusätzlich ist es möglich
+die Anzahl der Partikel in 100ml Luft in den Größen 0,3µm, 0,5µm, 1,0µm, 2,5µm, 5,0µm und 10,0µm.
 
 Das Particulate Matter Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
@@ -51,14 +58,16 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Sensor                            PMS7003
+Stromverbrauch                    388mW (77.6mA bei 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Feinstaubkonzentration            PM1.0, PM2.5, PM10
+Partikelzählung                   0,3µm, 0,5µm, 1,0µm, 2,5µm, 5,0µm, 10,0µm (in 100ml Luft)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           70 x 40 x 15mm (2,76 x 1,57 x 0,59")
+Gewicht                           36,3g
 ================================  ============================================================
 
 
@@ -81,7 +90,7 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert wird nun die Feinstaubkonzentration angezeigt.
 
 .. image:: /Images/Bricklets/bricklet_particulate_matter_brickv.jpg
    :scale: 100 %
