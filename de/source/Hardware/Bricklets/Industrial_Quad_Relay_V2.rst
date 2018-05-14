@@ -104,8 +104,12 @@ TODO: Bild aktualisieren
 Channel Status LEDs
 -------------------
 
-TODO: Übersetzung
+Das Bricklet verfügt über dei Standard LED sowie vier weitere LEDs (jeweils eine pro
+Relais).
 
+Standardmäßig stellen die vier LEDs den Status der jeweiligen Relais dar. Über die API
+können die LEDs aber auch manuell gesteuert werden und zum Beispiel andere Statusinformationen
+anzeigen.
 
 .. _industrial_quad_relay_v2_bricklet_test:
 
