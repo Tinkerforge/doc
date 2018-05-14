@@ -92,10 +92,10 @@ Resources
 * GP2Y0A41SK0F datasheet (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/datasheets/GP2Y0A41SK0F.pdf>`__)
 * GP2Y0A21YK0F datasheet (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/datasheets/GP2Y0A21YK0F.pdf>`__)
 * GP2Y0A02YK0F datasheet (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/datasheets/GP2Y0A02YK0F.pdf>`__)
-* Schematic (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/hardware/distir-schematic.pdf>`__)
+* Schematic (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/raw/master/hardware/distance-ir-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dist_ir_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/distance-ir-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2iV5En8>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_ir/distir.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_ir/distir.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2rIh6qT>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_ir/distance-ir.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_ir/distance-ir.FCStd>`__)
 
 
 .. _distance_ir_bricklet_test:
