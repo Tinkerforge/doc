@@ -176,9 +176,8 @@ S     Platinum                      Platinum/Rhodium
 T     Constantan                    Copper
 ====  ============================  ============================
 
-Please contact us before you order, if you need a non-K-type connector.
-Besides K-type we have T and J-type connectors in stock, other
-connector types have to be ordered first.
+In our shop different connectors can be choosen. If the necessary connector
+can't be selected, please contact us before your order.
 
 
 .. _thermocouple_v2_bricklet_programming_interface:

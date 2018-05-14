@@ -146,6 +146,38 @@ Gehäuse
 	|bricklet_case_hint|
 
 
+
+.. _thermocouple_bricklet_types:
+
+Thermoelement Typen
+-------------------
+
+Je nach Thermoelement-Art werden verschiedene Metalle für die Drähte verwendet. Optimalerweise
+nutzt der Stecker des Bricklets die gleichen Metalle.
+
+Normalerweise ist das Bricklet mit einer Mini K-Typ Thermoelement-Buchse ausgestattet 
+(Alumel für den negative und Chromel für den positiven Anschluss). Es können auch andere 
+Thermoelemente an die Buchse angeschlossen werden, allerdings führt dieses zu einem kleinen 
+Messfehler. Aus diesem Grund bieten wir für andere Thermoelemente andere Buchsen an:
+
+====  ============================  ============================
+Typ   Negativer Kontakt             Positiver Kontakt
+====  ============================  ============================
+B     Platin/Rhodium                Platin/Rhodium
+E     Konstantan                    Chromel
+J     Konstantan                    Eisel
+K     Alumel                        Chromel
+N     Nisil                         Nicrosil
+R     Platin                        Platin/Rhodium
+S     Platin                        Platin/Rhodium
+T     Konstantan                    Kupfer
+====  ============================  ============================
+
+Wenn eine andere Buchse, wie der K-Typ verwendet werden soll, so kann im Shop
+direkt der passende Typ gewählt werden. Ist dieser nicht dabei, können wir auf 
+Anfrage das Bricklet mit der korrekten Buchse ausstatten.
+
+
 .. _thermocouple_v2_bricklet_programming_interface:
 
 Programmierschnittstelle
