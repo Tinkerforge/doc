@@ -1,5 +1,5 @@
 
-:shoplink: ../../../shop/bricklets/moisture-bricklet.html
+:DISABLED_shoplink: ../../../shop/bricklets/moisture-bricklet.html
 
 .. include:: Moisture.substitutions
    :start-after: >>>substitutions
