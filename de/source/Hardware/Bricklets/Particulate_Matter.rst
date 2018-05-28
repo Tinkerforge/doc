@@ -13,14 +13,14 @@ Particulate Matter Bricklet
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_particulate_matter_tilted_[?|?].jpg           Particulate Matter Bricklet
-	Bricklets/bricklet_particulate_matter_horizontal_[?|?].jpg       Particulate Matter Bricklet
-	Bricklets/bricklet_particulate_matter_master_[100|600].jpg       Particulate Matter Bricklet mit Master Brick
+	Bricklets/bricklet_particulate_matter_top_[?|?].jpg              Particulate Matter Bricklet
+	Bricklets/bricklet_particulate_matter_front_[?|?].jpg            Particulate Matter Bricklet
+	Bricklets/bricklet_particulate_matter_tilted2_[?|?].jpg          Particulate Matter Bricklet
 	Cases/bricklet_particulate_matter_case_[100|600].jpg             Particulate Matter Bricklet im Gehäuse
 	Bricklets/bricklet_particulate_matter_brickv_[100|].jpg          Particulate Matter Bricklet im Brick Viewer
 	Dimensions/particulate_matter_bricklet_dimensions_[100|600].png  Umriss und Bohrplan

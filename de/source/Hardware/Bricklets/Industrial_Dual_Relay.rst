@@ -13,14 +13,15 @@ Industrial Dual Relay Bricklet
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_industrial_dual_relay_tilted_[?|?].jpg           Industrial Dual Relay Bricklet
-	Bricklets/bricklet_industrial_dual_relay_horizontal_[?|?].jpg       Industrial Dual Relay Bricklet
-	Bricklets/bricklet_industrial_dual_relay_master_[100|600].jpg       Industrial Dual Relay Bricklet mit Master Brick
+	Bricklets/bricklet_industrial_dual_relay_front_[?|?].jpg            Industrial Dual Relay Bricklet
+	Bricklets/bricklet_industrial_dual_relay_top_[?|?].jpg              Industrial Dual Relay Bricklet
+	Bricklets/bricklet_industrial_dual_relay_tilted2_[?|?].jpg          Industrial Dual Relay Bricklet
+	Bricklets/bricklet_industrial_dual_relay_side_[?|?].jpg             Industrial Dual Relay Bricklet
 	Cases/bricklet_industrial_dual_relay_case_[100|600].jpg             Industrial Dual Relay Bricklet im Gehäuse
 	Bricklets/bricklet_industrial_dual_relay_brickv_[100|].jpg          Industrial Dual Relay Bricklet im Brick Viewer
 	Dimensions/industrial_dual_relay_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
