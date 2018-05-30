@@ -21,7 +21,6 @@ Industrial Quad Relay Bricklet 2.0
 	Bricklets/bricklet_industrial_quad_relay_v2_tilted2_[?|?].jpg          Industrial Quad Relay Bricklet 2.0
 	Bricklets/bricklet_industrial_quad_relay_v2_side_[?|?].jpg             Industrial Quad Relay Bricklet 2.0
 	Bricklets/bricklet_industrial_quad_relay_v2_top_[?|?].jpg              Industrial Quad Relay Bricklet 2.0
-	Cases/bricklet_industrial_quad_relay_v2_case_[100|600].jpg             Industrial Quad Relay Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_industrial_quad_relay_v2_brickv_[100|].jpg          Industrial Quad Relay Bricklet 2.0 im Brick Viewer
 	Dimensions/industrial_quad_relay_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -92,13 +91,11 @@ Anschlussmöglichkeiten
 Das Industrial Quad Relay Bricklet besitzt eine 8 Pol Anschlussklemme.
 Das nachfolgende Bild erklärt die Pinbelegung:
 
-TODO: Bild aktualisieren
-
-.. image:: /Images/Bricklets/bricklet_industrial_quad_relay_caption_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_quad_relay_v2_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Quad Relay 4 2.0 Pinbelegung
+   :alt: Industrial Quad Relay 4 2.0 Anschlussmöglichkeiten
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_caption_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_v2_caption_1200.jpg
 
 
 Channel Status LEDs
@@ -120,8 +117,6 @@ Erster Test
 
 |test_connect|.
 Für einen einfachen Test schließen wir eine Batterie und eine LED an (siehe nachfolgendes Bild).
-
-TODO: Bild aktualisieren
 
 .. image:: /Images/Bricklets/bricklet_industrial_quad_relay_setup_600.jpg
    :scale: 100 %

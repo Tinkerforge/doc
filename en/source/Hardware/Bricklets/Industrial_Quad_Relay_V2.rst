@@ -21,7 +21,6 @@ Industrial Quad Relay Bricklet 2.0
 	Bricklets/bricklet_industrial_quad_relay_v2_tilted2_[?|?].jpg          Industrial Quad Relay Bricklet 2.0
 	Bricklets/bricklet_industrial_quad_relay_v2_side_[?|?].jpg             Industrial Quad Relay Bricklet 2.0
 	Bricklets/bricklet_industrial_quad_relay_v2_top_[?|?].jpg              Industrial Quad Relay Bricklet 2.0
-	Cases/bricklet_industrial_quad_relay_v2_case_[100|600].jpg             Industrial Quad Relay Bricklet 2.0 with case
 	Bricklets/bricklet_industrial_quad_relay_v2_brickv_[100|].jpg          Industrial Quad Relay Bricklet 2.0 in Brick Viewer
 	Dimensions/industrial_quad_relay_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -91,13 +90,11 @@ Connectivity
 The Industrial Quad Relay Bricklet has an 8 pole terminal.
 Please see the picture below for the pinout.
 
-TODO: Update image
-
-.. image:: /Images/Bricklets/bricklet_industrial_quad_relay_caption_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_quad_relay_v2_caption_600.jpg
    :scale: 100 %
-   :alt: Industrial Quad Relay 4 Bricklet 2.0 pinout
+   :alt: Industrial Quad Relay 4 Bricklet 2.0 connectivity
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_caption_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_v2_caption_1200.jpg
 
 .. _industrial_quad_relay_v2_bricklet_test:
 
@@ -119,8 +116,6 @@ Test your Industrial Quad Relay Bricklet 2.0
 |test_connect|.
 For a simple test we will connect a battery and a LED to test the Bricklet
 (see picture below).
-
-TODO: Update image
 
 .. image:: /Images/Bricklets/bricklet_industrial_quad_relay_setup_600.jpg
    :scale: 100 %
