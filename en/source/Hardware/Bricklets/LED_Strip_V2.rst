@@ -33,14 +33,13 @@ LED Strip Bricklet 2.0
 .. note::
   This Bricklet is currently work-in-progress!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_led_strip_v2_tilted_[?|?].jpg           LED Strip Bricklet 2.0
-	Bricklets/bricklet_led_strip_v2_horizontal_[?|?].jpg       LED Strip Bricklet 2.0
-	Bricklets/bricklet_led_strip_v2_master_[100|600].jpg       LED Strip Bricklet 2.0 with Master Brick
+	Bricklets/bricklet_led_strip_v2_tilted2_[?|?].jpg          LED Strip Bricklet 2.0
+	Bricklets/bricklet_led_strip_v2_top_[?|?].jpg              LED Strip Bricklet 2.0
 	Cases/bricklet_led_strip_v2_case_[100|600].jpg             LED Strip Bricklet 2.0 with case
 	Bricklets/bricklet_led_strip_v2_brickv_[100|].jpg          LED Strip Bricklet 2.0 in Brick Viewer
 	Dimensions/led_strip_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan

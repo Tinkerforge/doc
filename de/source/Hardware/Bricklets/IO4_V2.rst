@@ -13,14 +13,13 @@ IO-4 Bricklet 2.0
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_io4_v2_tilted_[?|?].jpg           IO-4 Bricklet 2.0
-	Bricklets/bricklet_io4_v2_horizontal_[?|?].jpg       IO-4 Bricklet 2.0
-	Bricklets/bricklet_io4_v2_master_[100|600].jpg       IO-4 Bricklet 2.0 mit Master Brick
+	Bricklets/bricklet_io4_v2_tilted2_[?|?].jpg          IO-4 Bricklet 2.0
+	Bricklets/bricklet_io4_v2_top_[?|?].jpg              IO-4 Bricklet 2.0
 	Cases/bricklet_io4_v2_case_[100|600].jpg             IO-4 Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_io4_v2_brickv_[100|].jpg          IO-4 Bricklet 2.0 im Brick Viewer
 	Dimensions/io4_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
