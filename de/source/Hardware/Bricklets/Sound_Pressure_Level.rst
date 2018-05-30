@@ -13,14 +13,13 @@ Sound Pressure Level Bricklet
 .. note::
   Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
-..
-    .. raw:: html
+.. raw:: html
 
 	{% tfgallery %}
 
 	Bricklets/bricklet_sound_pressure_level_tilted_[?|?].jpg           Sound Pressure Level Bricklet
-	Bricklets/bricklet_sound_pressure_level_horizontal_[?|?].jpg       Sound Pressure Level Bricklet
-	Bricklets/bricklet_sound_pressure_level_master_[100|600].jpg       Sound Pressure Level Bricklet mit Master Brick
+	Bricklets/bricklet_sound_pressure_level_bottom_[?|?].jpg           Sound Pressure Level Bricklet
+	Bricklets/bricklet_sound_pressure_level_top_[?|?].jpg              Sound Pressure Level Bricklet
 	Cases/bricklet_sound_pressure_level_case_[100|600].jpg             Sound Pressure Level Bricklet im Gehäuse
 	Bricklets/bricklet_sound_pressure_level_brickv_[100|].jpg          Sound Pressure Level Bricklet im Brick Viewer
 	Dimensions/sound_pressure_level_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
