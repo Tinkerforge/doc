@@ -100,13 +100,11 @@ depending on the switching state of the relay.
 * If the relay is switched off, then SW is connected to B
 * If the relay is switched on, then SW is connected to A
 
-TODO: Update image
-
-.. image:: /Images/Bricklets/bricklet_dual_relay_connection_350.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_dual_relay_connectivity_350.jpg
    :scale: 100 %
-   :alt: Dual Relay Bricklet, visualization of the switch
+   :alt: Industrial Dual Relay Bricklet connectivity
    :align: center
-   :target: ../../_images/Bricklets/bricklet_dual_relay_connection_700.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_dual_relay_connectivity_800.jpg
 
 
 .. _industrial_dual_relay_bricklet_test:
