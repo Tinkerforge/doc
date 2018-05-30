@@ -20,7 +20,8 @@ PTC Bricklet 2.0
 	Bricklets/bricklet_ptc_v2_tilted_[?|?].jpg           PTC Bricklet 2.0
 	Bricklets/bricklet_ptc_v2_tilted2_[?|?].jpg          PTC Bricklet 2.0
 	Bricklets/bricklet_ptc_v2_top_[?|?].jpg              PTC Bricklet 2.0
-	Cases/bricklet_ptc_v2_case_[100|600].jpg             PTC Bricklet 2.0 im Gehäuse
+	Bricklets/bricklet_ptc_v2_sensor_[?|?].jpg           PTC Bricklet 2.0 mit 2-wire Pt100 RTD
+	Bricklets/bricklet_ptc_v2_jumper_[?|?].jpg           PTC Bricklet 2.0 mit Jumper
 	Bricklets/bricklet_ptc_v2_brickv_[100|].jpg          PTC Bricklet 2.0 im Brick Viewer
 	Dimensions/ptc_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -98,13 +99,11 @@ Konfiguriere die Jumper für Pt100/Pt1000 Sensor und für 2/3/4-Leiter Typ
 wie unten dargestellt. Die rot markierten Stifte der Stiftleisten müssen für
 den korrespondierenden Sensortyp mit einem Jumper überbrückt werden.
 
-TODO: Bild aktualisieren?
-
-.. image:: /Images/Bricklets/bricklet_ptc_pt_wire_600.jpg
+.. image:: /Images/Bricklets/bricklet_ptc_v2_pt_wire_600.jpg
    :scale: 100 %
    :alt: PTC Bricklet 2.0 Jumper-Konfiguration
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_pt_wire_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_v2_pt_wire_1000.jpg
 
 .. _ptc_v2_bricklet_connectivity:
 
@@ -114,13 +113,11 @@ Anschlussmöglichkeiten
 Die folgenden Verbindungsdiagramme zeigen wie
 Widerstandsthermometer vom Typ 2/3/4-Leiter angeschlossen werden können:
 
-TODO: Bild aktualisieren?
-
-.. image:: /Images/Bricklets/bricklet_ptc_connectivity_600.jpg
+.. image:: /Images/Bricklets/bricklet_ptc_v2_connectivity_600.jpg
    :scale: 100 %
    :alt: PTC Bricklet 2.0 Verbindungsdiagramme
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_connectivity_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_v2_connectivity_1000.jpg
 
 Zusätzlich muss die Leiteranzahl mit Hilfe der API gesetzt werden.
 
@@ -135,13 +132,11 @@ Erster Test
 |test_connect| sowie ein Pt100/1000 Sensor angeschlossen werden (siehe folgendes Bild).
 In diesem Beispiel wird ein 3-Leiter Pt100 Sensor verwendet.
 
-TODO: Bild aktualisieren?
-
-.. image:: /Images/Bricklets/bricklet_ptc_sensor_600.jpg
+.. image:: /Images/Bricklets/bricklet_ptc_v2_sensor_600.jpg
    :scale: 100 %
-   :alt: PTC Bricklet mit 3-Leiter Pt100 Sensor
+   :alt: PTC Bricklet mit 2-Leiter Pt100 Sensor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_sensor_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_v2_sensor_1200.jpg
 
 |test_tab|
 Wenn alles wie erwartet funktioniert sollte der Tab wie im folgenden Bild
@@ -164,27 +159,26 @@ steigen (oder fallen wenn es im Raum sehr warm ist).
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das PTC Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-ptc-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das PTC Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-ptc-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_ptc_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für PTC Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_ptc_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_ptc_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für PTC Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_ptc_case_1000.jpg
 
-	.. include:: PTC_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: PTC_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/ptc_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für PTC Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/ptc_v2_exploded.png
+.. image:: /Images/Exploded/ptc_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für PTC Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/ptc_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _ptc_v2_bricklet_programming_interface:

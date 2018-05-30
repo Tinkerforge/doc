@@ -20,7 +20,8 @@ PTC Bricklet 2.0
 	Bricklets/bricklet_ptc_v2_tilted_[?|?].jpg           PTC Bricklet 2.0
 	Bricklets/bricklet_ptc_v2_tilted2_[?|?].jpg          PTC Bricklet 2.0
 	Bricklets/bricklet_ptc_v2_top_[?|?].jpg              PTC Bricklet 2.0
-	Cases/bricklet_ptc_v2_case_[100|600].jpg             PTC Bricklet 2.0 with case
+	Bricklets/bricklet_ptc_v2_sensor_[?|?].jpg           PTC Bricklet 2.0 with 2-wire Pt100 RTD
+	Bricklets/bricklet_ptc_v2_jumper_[?|?].jpg           PTC Bricklet 2.0 with jumper
 	Bricklets/bricklet_ptc_v2_brickv_[100|].jpg          PTC Bricklet 2.0 in Brick Viewer
 	Dimensions/ptc_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -97,13 +98,11 @@ Configure the jumper for Pt100/Pt1000 sensor and 2/3/4-wire type as
 shown below. The pins of the pin headers that are marked red have to be closed
 by a jumper for the corresponding sensor type.
 
-TODO: Update image?
-
-.. image:: /Images/Bricklets/bricklet_ptc_pt_wire_600.jpg
+.. image:: /Images/Bricklets/bricklet_ptc_v2_pt_wire_600.jpg
    :scale: 100 %
    :alt: PTC Bricklet 2.0 jumper configuration
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_pt_wire_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_v2_pt_wire_1000.jpg
 
 .. _ptc_v2_bricklet_connectivity:
 
@@ -113,13 +112,11 @@ Connectivity
 See below for connection diagrams for 2/3/4-wire type resistance temperature
 device.
 
-TODO: Update image?
-
-.. image:: /Images/Bricklets/bricklet_ptc_connectivity_600.jpg
+.. image:: /Images/Bricklets/bricklet_ptc_v2_connectivity_600.jpg
    :scale: 100 %
    :alt: PTC Bricklet 2.0 connection diagram
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_connectivity_1000.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_v2_connectivity_1000.jpg
 
 Additionally the number of wires has to be set with the API.
 
@@ -131,15 +128,13 @@ Test your PTC Bricklet 2.0
 |test_intro|
 
 |test_connect|  and attach a Pt100/1000 sensor (see picture below).
-In this example we use a 3-wire Pt100 sensor.
+In this example we use a 2-wire Pt100 sensor.
 
-TODO: Update image
-
-.. image:: /Images/Bricklets/bricklet_ptc_sensor_600.jpg
+.. image:: /Images/Bricklets/bricklet_ptc_v2_sensor_600.jpg
    :scale: 100 %
    :alt: PTC Bricklet 2.0 connected to 2-wire Pt100 sensor
    :align: center
-   :target: ../../_images/Bricklets/bricklet_ptc_sensor_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_ptc_v2_sensor_1200.jpg
 
 |test_tab|
 If everything went as expected the Brick Viewer should look as
@@ -162,27 +157,26 @@ temperature rising (or falling if it is extremely warm in your room).
 Case
 ----
 
-..
-	A `laser-cut case for the PTC Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-ptc-v2-bricklet.html>`__ is available.
+A `laser-cut case for the PTC Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-ptc-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_ptc_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for PTC Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_ptc_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_ptc_case_350.jpg
+   :scale: 100 %
+   :alt: Case for PTC Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_ptc_case_1000.jpg
 
-	.. include:: PTC_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: PTC_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/ptc_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for PTC Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/ptc_v2_exploded.png
+.. image:: /Images/Exploded/ptc_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for PTC Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/ptc_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _ptc_v2_bricklet_programming_interface:
