@@ -342,27 +342,26 @@ rate is too high.
 Case
 ----
 
-..
-	A `laser-cut case for the LED Strip Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-led-strip-v2-bricklet.html>`__ is available.
+A `laser-cut case for the LED Strip Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-led-strip-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_led_strip_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for LED Strip Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_led_strip_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_led_strip_case_tilted_350.jpg
+   :scale: 100 %
+   :alt: Case for LED Strip Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_led_strip_case_tilted_1000.jpg
 
-	.. include:: LED_Strip_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: LED_Strip.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/led_strip_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for LED Strip Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/led_strip_v2_exploded.png
+.. image:: /Images/Exploded/led_strip_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for LED Strip Bricklet
+   :align: center
+   :target: ../../_images/Exploded/led_strip_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _led_strip_v2_bricklet_programming_interface:

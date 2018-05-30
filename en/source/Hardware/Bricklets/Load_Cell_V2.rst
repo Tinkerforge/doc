@@ -254,27 +254,26 @@ get an idea on how to mount a load cell in general.
 Case
 ----
 
-..
-	A `laser-cut case for the Load Cell Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-load-cell-v2-bricklet.html>`__ is available.
+A `laser-cut case for the Load Cell Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-load-cell-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_load_cell_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Load Cell Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_load_cell_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_load_cell_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Case for Load Cell Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_load_cell_case_built_up1_1000.jpg
 
-	.. include:: Load_Cell_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Load_Cell.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/load_cell_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Load Cell Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/load_cell_v2_exploded.png
+.. image:: /Images/Exploded/load_cell_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Load Cell Bricklet
+   :align: center
+   :target: ../../_images/Exploded/load_cell_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _load_cell_v2_bricklet_programming_interface:
