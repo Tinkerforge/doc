@@ -40,7 +40,6 @@ LED Strip Bricklet 2.0
 	Bricklets/bricklet_led_strip_v2_tilted_[?|?].jpg           LED Strip Bricklet 2.0
 	Bricklets/bricklet_led_strip_v2_tilted2_[?|?].jpg          LED Strip Bricklet 2.0
 	Bricklets/bricklet_led_strip_v2_top_[?|?].jpg              LED Strip Bricklet 2.0
-	Cases/bricklet_led_strip_v2_case_[100|600].jpg             LED Strip Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_led_strip_v2_brickv_[100|].jpg          LED Strip Bricklet 2.0 im Brick Viewer
 	Dimensions/led_strip_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -176,13 +175,11 @@ Anschlussmöglichkeit
 
 Das nachfolgende Bild stellt die Schnittstellen des LED Strip Bricklet 2.0 dar:
 
-TODO: Neues Bild?
-
-.. image:: /Images/Bricklets/bricklet_led_strip_connection_350.jpg
+.. image:: /Images/Bricklets/bricklet_led_strip_v2_connectivity_350.jpg
    :scale: 100 %
-   :alt: LED Strip Bricklet 2.0 Interface Description
+   :alt: LED Strip Bricklet 2.0 Anschlussbeschreibung
    :align: center
-   :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
+   :target: ../../_images/Bricklets/bricklet_led_strip_v2_connectivity_800.jpg
 
 Wie im :ref:`Unterstützte LEDs Abschnitt <led_strip_v2_bricklet_ws28xy>` beschrieben,
 unterstützt das Bricklet LED Steifen und Pixel, die mit WS2801, WS2811,
@@ -252,8 +249,6 @@ Wir empfehlen mindestens alle 2 Meter neu einzuspeisen. Dazu kann zum Beispiel
 pro Einspeisepunkt ein eigenes Kabel zur Stromversorgung geführt werden. 
 Somit wird der elektrische Widerstand reduziert und Leitungsverluste minimiert.
 Das nachfolgende Bild zeigt ein Beispiel.
-
-TODO: Neues Bild?
 
 .. image:: /Images/Bricklets/bricklet_led_strip_ws2812b_wiring_600.png
    :scale: 100 %

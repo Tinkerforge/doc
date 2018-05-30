@@ -40,7 +40,6 @@ LED Strip Bricklet 2.0
 	Bricklets/bricklet_led_strip_v2_tilted_[?|?].jpg           LED Strip Bricklet 2.0
 	Bricklets/bricklet_led_strip_v2_tilted2_[?|?].jpg          LED Strip Bricklet 2.0
 	Bricklets/bricklet_led_strip_v2_top_[?|?].jpg              LED Strip Bricklet 2.0
-	Cases/bricklet_led_strip_v2_case_[100|600].jpg             LED Strip Bricklet 2.0 with case
 	Bricklets/bricklet_led_strip_v2_brickv_[100|].jpg          LED Strip Bricklet 2.0 in Brick Viewer
 	Dimensions/led_strip_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -173,11 +172,11 @@ The following image depicts the interfaces of the LED Strip Bricklet 2.0.
 
 TODO: Update image?
 
-.. image:: /Images/Bricklets/bricklet_led_strip_connection_350.jpg
+.. image:: /Images/Bricklets/bricklet_led_strip_v2_connectivity_350.jpg
    :scale: 100 %
    :alt: LED Strip Bricklet 2.0 Interface Description
    :align: center
-   :target: ../../_images/Bricklets/bricklet_led_strip_connection_800.jpg
+   :target: ../../_images/Bricklets/bricklet_led_strip_v2_connectivity_800.jpg
 
 As described in the :ref:`Supported LEDs section <led_strip_v2_bricklet_ws28xy>` above,
 the Bricklet supports LED strips and pixels with WS2801, WS2811, WS2812, 
