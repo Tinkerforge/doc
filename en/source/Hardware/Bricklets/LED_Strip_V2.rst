@@ -170,8 +170,6 @@ Connectivity
 
 The following image depicts the interfaces of the LED Strip Bricklet 2.0.
 
-TODO: Update image?
-
 .. image:: /Images/Bricklets/bricklet_led_strip_v2_connectivity_350.jpg
    :scale: 100 %
    :alt: LED Strip Bricklet 2.0 Interface Description
