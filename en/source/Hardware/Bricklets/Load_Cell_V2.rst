@@ -20,7 +20,6 @@ Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_tilted_[?|?].jpg           Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_tilted2_[?|?].jpg          Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_top_[?|?].jpg              Load Cell Bricklet 2.0
-	Cases/bricklet_load_cell_v2_case_[100|600].jpg             Load Cell Bricklet 2.0 with case
 	Bricklets/bricklet_load_cell_v2_brickv_[100|].jpg          Load Cell Bricklet 2.0 in Brick Viewer
 	Dimensions/load_cell_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -101,13 +100,11 @@ The Load Cell Bricklet 2.0 has four terminals. The PWR and GND terminals are for
 the excitation voltage and the IN+ and IN- terminals are for the signal
 measurement.
 
-TODO: Photo of new Bricklet
-
-.. image:: /Images/Bricklets/bricklet_load_cell_horizontal_350.jpg
+.. image:: /Images/Bricklets/bricklet_load_cell_v2_top_350.jpg
    :scale: 100 %
    :alt: Load Cell Bricklet 2.0 terminals
    :align: center
-   :target: ../../_images/Bricklets/bricklet_load_cell_horizontal_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_load_cell_v2_top_1200.jpg
 
 A typical load cell will have four or five wires. Check the specification of
 your load cell for its pinout and connect it according to the table below.
@@ -153,8 +150,6 @@ Calibration
 
 The Load Cell Bricklet 2.0 has to be calibrated for the connected load cell and the
 specific setup.
-
-TODO: New image?
 
 .. image:: /Images/Screenshots/load_cell_bricklet_calibration.jpg
    :scale: 100 %

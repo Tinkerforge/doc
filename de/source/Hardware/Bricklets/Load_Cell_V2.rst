@@ -20,7 +20,6 @@ Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_tilted_[?|?].jpg           Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_tilted2_[?|?].jpg          Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_top_[?|?].jpg              Load Cell Bricklet 2.0
-	Cases/bricklet_load_cell_v2_case_[100|600].jpg             Load Cell Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_load_cell_v2_brickv_[100|].jpg          Load Cell Bricklet 2.0 im Brick Viewer
 	Dimensions/load_cell_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -100,13 +99,11 @@ Das Load Cell Bricklet 2.0 hat vier Anschlussklemmen. Die PWR und GND
 Anschlussklemmen sind für die Excitation-Spannung und die IN+ und IN-
 Anschlussklemmen sind für die Signalmessung.
 
-TODO: Neues Bild
-
-.. image:: /Images/Bricklets/bricklet_load_cell_horizontal_350.jpg
+.. image:: /Images/Bricklets/bricklet_load_cell_v2_top_350.jpg
    :scale: 100 %
    :alt: Load Cell Bricklet 2.0 Anschlussklemmen
    :align: center
-   :target: ../../_images/Bricklets/bricklet_load_cell_horizontal_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_load_cell_v2_top_1200.jpg
 
 Eine typsiche Wägezelle hat vier oder fünf Drähte. In der Spezifikation der
 Wägezelle sollte die Belegung der Drähte dokumentiert sein. Schließe die
@@ -154,8 +151,6 @@ Kalibrierung
 
 Das Load Cell Bricklet 2.0 muss für die angeschlossenen Wägezelle und den
 aktuellen Aufbau kalibriert werden.
-
-TODO: Neues Bild?
 
 .. image:: /Images/Screenshots/load_cell_bricklet_calibration.jpg
    :scale: 100 %
