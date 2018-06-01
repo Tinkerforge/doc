@@ -156,27 +156,74 @@ Weitere Informationen über Schutzbeschaltung ist
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Industrial Dual Relay Bricklet
-	<https://www.tinkerforge.com/de/shop/cases/case-industrial-dual-relay-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Industrial Dual Relay Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-industrial-dual-relay-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_industrial_dual_relay_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Industrial Dual Relay Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_industrial_dual_relay_case_1000.jpg
+.. image:: /Images/Cases/bricklet_industrial_dual_relay_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Industrial Dual Relay Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_dual_relay_case_1000.jpg
 
-	.. include:: Industrial_Dual_Relay.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+Das Gehäuse des Industrial Dual Relay Bricklet wird inklusive Kabelbinder für eine
+Zugentlastung und WAGO Verbindungsklemmen zum Verbinden von Leitungen
+ausgeliefert. Das Gehäuse ist groß genug um sowohl die Zugentlastung als
+auch die WAGO Klemmen im Gehäuse unterzubringen. 
 
-	.. image:: /Images/Exploded/industrial_dual_relay_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Industrial Dual Relay Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/industrial_dual_relay_exploded.png
+Der interne Aufbau kann wie folgt aussehen (mit einem bzw. beiden Relais
+angeschlossen):
 
-	|bricklet_case_hint|
+.. image:: /Images/Cases/bricklet_industrial_dual_relay_case_top1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Industrial Dual Relay Bricklet mit einem Relais angeschlossen
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_dual_relay_case_top1_1000.jpg
+
+.. image:: /Images/Cases/bricklet_industrial_dual_relay_case_top2_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Industrial Dual Relay Bricklet mit zwei Relais angeschlossen
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_dual_relay_case_top2_1000.jpg
+
+Der Außenleiter (braun) wird über das Industrial Dual Relay Bricklet geschaltet.
+Der Schutzleiter (grün-gelb), sowie der Neutralleiter (blau), werden
+mit den WAGO Klemmen durchgeschleift.
+
+Dabei ist unbedingt zu beachten, dass der Schutzleiter länger als die anderen
+beiden Leitungen seien sollte. So ist sichergestellt, das dieser bei
+überbeanspruchter oder beschädigter Zugentlastung als letztes abreißt.
+Wir empfehlen die folgenden Leitungs- bzw. Abisolier-Längen:
+
+.. image:: /Images/Cases/bricklet_dual_relay_case_cables_350.jpg
+   :scale: 100 %
+   :alt: Empfohlene Kabellängen
+   :align: center
+   :target: ../../_images/Cases/bricklet_dual_relay_case_cable_1000.jpg
+
+Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
+
+* Abstandshalter an Bricklet schrauben
+* Bricklet an Unterteil mit Abstandshalter schrauben
+* Seitenteile (inklusive Zugentlastung) aufbauen
+* zusammengebaute Seitenteile in Unterteil stecken
+* Verkabelung und WAGO Klemmen hinzufügen
+* Kabel mit Kabelbinder für Zugentlastung festziehen
+* Oberteil auf oberen Abstandshalter schrauben
+
+.. warning:: Niemals im geöffneten Gehäuse unter Spannung arbeiten!
+
+
+Die genaue Anordnung der Teile kann der folgenden Explosionszeichnung des Industrial Dual 
+Relay Bricklet-Gehäuses entnommen werden:
+
+.. image:: /Images/Exploded/dual_relay_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Industrial Dual Relay Bricklet
+   :align: center
+   :target: ../../_images/Exploded/dual_relay_exploded.png
+
+|bricklet_case_hint|
+
 
 
 .. _industrial_dual_relay_bricklet_programming_interface:
