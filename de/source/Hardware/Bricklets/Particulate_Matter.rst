@@ -106,27 +106,26 @@ Wenn alles wie erwartet funktioniert wird nun die Feinstaubkonzentration angezei
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Particulate Matter Bricklet
-	<https://www.tinkerforge.com/de/shop/cases/case-particulate-matter-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Particulate Matter Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-particulate-matter-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_particulate_matter_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Particulate Matter Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_particulate_matter_case_1000.jpg
+.. image:: /Images/Cases/bricklet_particulate_matter_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Particulate Matter Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_particulate_matter_case_1000.jpg
 
-	.. include:: Particulate_Matter.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Particulate_Matter.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/particulate_matter_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Particulate Matter Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/particulate_matter_exploded.png
+.. image:: /Images/Exploded/particulate_matter_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Particulate Matter Bricklet
+   :align: center
+   :target: ../../_images/Exploded/particulate_matter_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _particulate_matter_bricklet_programming_interface:
