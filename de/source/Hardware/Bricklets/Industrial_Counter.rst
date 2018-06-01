@@ -85,11 +85,11 @@ Minimale Eingangsfrequenz         0.03MHz
 Maximale Eingangsfrequenz         4MHz
 Zeit-Auflösung                    bis zu 10.4ns (Duty Cycle Prescaler auf 1 gesetzt)
 Frequenz-Auflösung                bis zu 0.03Hz (Frequenz-Integrationsszeit auf 32768ms gesetzt)
---------------------------------  --------------------------------------------------------------
---------------------------------  --------------------------------------------------------------
+--------------------------------  ---------------------------------------------------------------
+--------------------------------  ---------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 11mm (1.57 x 1.57 x 0.43")
 Gewicht                           8.4g
-================================  ==============================================================
+================================  ===============================================================
 
 
 Ressourcen
@@ -153,7 +153,7 @@ der die höchste Auflösung ermöglicht.
 Die Frequenz wird berechnet indem die Anzahl der Flanken in der gewählten Integrationszeit
 ermittelt wird. Beispiel: Die Frequency Integration Time ist auf 2048ms gesetzt und das Bricklet
 sieht 40960 Flankenwechsel in dieser Zeit. Die ermittelte Frequenz beträgt dann 20kHz 
-(40960 Flanken geteilt durch 2.048 Sekunden).
+(40960 Flanken geteilt durch 2,048 Sekunden).
 
 Damit die Frequenzermittlung korrekt funktioniert muss die Frequency Integration Time größer sein
 wie die Periode der gemessenen Frequenz.
@@ -261,27 +261,26 @@ es sollten die dazugehörigen Zähler angezeigt werden.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Industrial Counter Bricklet
-	<https://www.tinkerforge.com/de/shop/cases/case-industrial-counter-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Industrial Counter Bricklet
+<https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_industrial_counter_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Industrial Counter Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_industrial_counter_case_1000.jpg
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Industrial Counter Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
 
-	.. include:: Industrial_Counter.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Industrial_Counter.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/industrial_counter_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Industrial Counter Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/industrial_counter_exploded.png
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Industrial Counter Bricklet
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _industrial_counter_bricklet_programming_interface:
