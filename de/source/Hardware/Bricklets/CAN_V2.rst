@@ -20,7 +20,6 @@ CAN Bricklet 2.0
 	Bricklets/bricklet_can_v2_tilted_[?|?].jpg           CAN Bricklet 2.0
 	Bricklets/bricklet_can_v2_tilted2_[?|?].jpg          CAN Bricklet 2.0
 	Bricklets/bricklet_can_v2_top_[?|?].jpg              CAN Bricklet 2.0
-	Cases/bricklet_can_v2_case_[100|600].jpg             CAN Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_can_v2_brickv_[100|].jpg          CAN Bricklet 2.0 im Brick Viewer
 	Dimensions/can_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -106,27 +105,26 @@ is send over the connected CAN bus.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das CAN Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-can-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das CAN Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-can-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_can_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für CAN Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_can_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_can_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für CAN Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_can_built_up1_case_1000.jpg
 
-	.. include:: CAN_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: CAN_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/can_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für CAN Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/can_v2_exploded.png
+.. image:: /Images/Exploded/can_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für CAN Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/can_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _can_v2_bricklet_programming_interface:
