@@ -23,6 +23,7 @@ Particulate Matter Bricklet
 	Bricklets/bricklet_particulate_matter_tilted2_[?|?].jpg          Particulate Matter Bricklet
 	Cases/bricklet_particulate_matter_case_[?|?].jpg                 Particulate Matter Bricklet im Gehäuse
 	Cases/bricklet_particulate_matter_case_side_[?|?].jpg            Particulate Matter Bricklet im Gehäuse
+	Bricklets/bricklet_particulate_matter_brickv_[100|].jpg          Particulate Matter Bricklet im Brick Viewer
 	Dimensions/particulate_matter_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
