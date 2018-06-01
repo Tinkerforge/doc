@@ -171,27 +171,26 @@ Sich ändernder Sinuston:
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Sound Pressure Level Bricklet 
-	<https://www.tinkerforge.com/de/shop/cases/case-sound-pressure-level-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Sound Pressure Level Bricklet 
+<https://www.tinkerforge.com/de/shop/cases/case-sound-pressure-level-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_sound_pressure_level_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Sound Pressure Level Bricklet
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_sound_pressure_level_case_1000.jpg
+.. image:: /Images/Cases/bricklet_sound_pressure_level_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Sound Pressure Level Bricklet
+   :align: center
+   :target: ../../_images/Cases/bricklet_sound_pressure_level_case_1000.jpg
 
-	.. include:: Sound_Pressure_Level.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Sound_Pressure_Level.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/sound_pressure_level_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Sound Pressure Level Bricklet
-	   :align: center
-	   :target: ../../_images/Exploded/sound_pressure_level_exploded.png
+.. image:: /Images/Exploded/sound_pressure_level_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Sound Pressure Level Bricklet
+   :align: center
+   :target: ../../_images/Exploded/sound_pressure_level_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _sound_pressure_level_bricklet_programming_interface:
