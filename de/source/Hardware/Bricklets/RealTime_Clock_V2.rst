@@ -19,7 +19,6 @@ Real-Time Clock Bricklet 2.0
 
 	Bricklets/bricklet_real_time_clock_v2_tilted_[?|?].jpg           Real-Time Clock Bricklet 2.0
 	Bricklets/bricklet_real_time_clock_v2_top_[?|?].jpg              Real-Time Clock Bricklet 2.0
-	Cases/bricklet_real_time_clock_v2_case_[100|600].jpg             Real-Time Clock Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_real_time_clock_v2_brickv_[100|].jpg          Real-Time Clock Bricklet 2.0 im Brick Viewer
 	Dimensions/real_time_clock_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -115,27 +114,26 @@ das lokale Datum und die lokale Zeit gesetzt werden.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Real-Time Clock Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-real-time-clock-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Real-Time Clock Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-real-time-clock-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_real_time_clock_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Real-Time Clock Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_real_time_clock_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_real_time_clock_case_built_up_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Real-Time Clock Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_real_time_clock_case_built_up_1000.jpg
 
-	.. include:: RealTime_Clock_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: RealTime_Clock_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/real_time_clock_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Real-Time Clock Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/real_time_clock_v2_exploded.png
+.. image:: /Images/Exploded/real_time_clock_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Real-Time Clock Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/real_time_clock_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _real_time_clock_v2_bricklet_programming_interface:
