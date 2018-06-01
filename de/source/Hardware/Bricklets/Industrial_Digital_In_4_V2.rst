@@ -21,7 +21,6 @@ Industrial Digital In 4 Bricklet 2.0
 	Bricklets/bricklet_industrial_digital_in_4_v2_tilted2_[?|?].jpg          Industrial Digital In 4 Bricklet 2.0
 	Bricklets/bricklet_industrial_digital_in_4_v2_side_[?|?].jpg             Industrial Digital In 4 Bricklet 2.0
 	Bricklets/bricklet_industrial_digital_in_4_v2_top_[?|?].jpg              Industrial Digital In 4 Bricklet 2.0
-	Cases/bricklet_industrial_digital_in_4_v2_case_[100|600].jpg             Industrial Digital In 4 Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_industrial_digital_in_4_v2_brickv_[100|].jpg          Industrial Digital In 4 Bricklet 2.0 im Brick Viewer
 	Dimensions/industrial_digital_in_4_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -96,13 +95,11 @@ Diese führt die vier Eingänge nach außen. Jeder Eingang ist mit einer LED
 innerhalb des Optokopplers verbunden. Um einen Eingang zu nutzen ist 
 dieser wie folgt zu beschalten:
 
-TODO: Neues Foto
-
-.. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_caption_600.jpg
+.. image:: /Images/Bricklets/bricklet_industrial_digital_in_4_v2_caption_600.jpg
    :scale: 100 %
    :alt: Industrial Digital In 4 Bricklet 2.0 Steckerbelegung
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_caption_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_in_4_v2_caption_1200.jpg
 
 
 .. _industrial_digital_in_4_v2_bricklet_leds:
@@ -143,27 +140,26 @@ werden. Ist nichts mit dem Bricklet verbunden, so sollten alle Eingänge logisch
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das Industrial Digital In 4 Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-industrial-digital-in-4-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das Industrial Digital In 4 Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_industrial_digital_in_4_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für Industrial Digital In 4 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_industrial_digital_in_4_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für Industrial Digital In 4 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
 
-	.. include:: Industrial_Digital_In_4_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Industrial_Digital_In_4.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/industrial_digital_in_4_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für Industrial Digital In 4 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/industrial_digital_in_4_v2_exploded.png
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für Industrial Digital In 4 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _industrial_digital_in_4_v2_bricklet_programming_interface:
