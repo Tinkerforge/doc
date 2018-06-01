@@ -20,7 +20,6 @@ IO-4 Bricklet 2.0
 	Bricklets/bricklet_io4_v2_tilted_[?|?].jpg           IO-4 Bricklet 2.0
 	Bricklets/bricklet_io4_v2_tilted2_[?|?].jpg          IO-4 Bricklet 2.0
 	Bricklets/bricklet_io4_v2_top_[?|?].jpg              IO-4 Bricklet 2.0
-	Cases/bricklet_io4_v2_case_[100|600].jpg             IO-4 Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_io4_v2_brickv_[100|].jpg          IO-4 Bricklet 2.0 im Brick Viewer
 	Dimensions/io4_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -94,18 +93,6 @@ Erster Test
 |test_intro|
 
 |test_connect|.
-In unserem Testaufbau ist eine LED über einen Vorwiderstand angeschlossen,
-mit Anode an Pin 3 und Kathode an einen GND Pin.
-Zusätzlich ist noch ein Schiebeschalter angeschlossen der Pin 0 mit GND
-verbinden kann (siehe folgendes Bild).
-
-TODO: Bild machen
-
-.. image:: /Images/Bricklets/bricklet_io4_master_600.jpg
-   :scale: 100 %
-   :alt: IO-4 Bricklet verbunden mit Master Brick
-   :align: center
-   :target: ../../_images/Bricklets/bricklet_io4_master_1200.jpg
 
 |test_tab|
 
@@ -119,56 +106,36 @@ TODO: Screenshot machen
 
 |test_pi_ref|
 
-Hier kann die "Debounce Period" eingestellt werden, dies ist die Entprellperiode
-für die Interrupt Callbacks. Ein Beispiel: Wenn die Entprellperiode auf 100 gestellt
-wird, werden Interrupts maximal alle 100ms ausgelöst. Dies ist notwendig wenn
-etwas prellendes (z.B. ein Taster) an das IO-4 Bricklet angeschlossen wird.
-Der optimale Wert kann im Brick Viewer ermittelt und dann später im eigenen
-Programm verwendet werden.
-
-Unter der Einstellung für die Entprellperiode können die einzelnen Pins
-konfiguriert werden. Jeder Pin kann als Eingang oder Ausgang betrieben werden.
+Jeder Channel kann als Eingang oder Ausgang betrieben werden.
 Für Eingangspins kann zusätzlich ein Pull-Up geschaltet werden. Die aktuelle
-Konfiguration und der Zustand der Pins ist dann in der Tabelle weiter unten
-aufgelistet.
+Konfiguration und der Zustand der Channel wird in der Tabelle aufgelistet.
 
-Um die LED leuchten zu lassen muss Pin 3 als Ausgang konfiguriert und auf
-logisch 1 (High) gestellt werden. Um den Schiebeschalter zu testen muss Pin 0
-als Eingang mit Pull-Up konfiguriert werden. Der Pull-Up ist nötig um einen
-stabilen Zustand zu erreichen wenn der Schiebeschalter Pin 0 nicht mit GND
-verbindet. In der Tabelle sollte sich jetzt der Zustand des Pins ändern wenn
-der Schiebeschalter umgeschaltet wird.
-
-Wenn kein Schalter oder eine LED zu Hand ist kann auch ein Voltmeter verwendet
-werden um Änderungen an Ausgangspins zu messen. Interrupts an Eingangspins können
-auch mit Hilfe einer Büroklammer erzeugt werden.
 
 .. _io4_v2_bricklet_case:
 
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das IO-4 Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-io4-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das IO-4 Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-io4-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_io4_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für IO-4 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_io4_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_io4_case_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für IO-4 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_io4_case_1000.jpg
 
-	.. include:: IO4_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: IO4_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/io4_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für IO-4 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/io4_v2_exploded.png
+.. image:: /Images/Exploded/io4_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für IO-4 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/io4_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _io4_v2_bricklet_programming_interface:
