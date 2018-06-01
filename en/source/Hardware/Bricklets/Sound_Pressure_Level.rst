@@ -20,7 +20,8 @@ Sound Pressure Level Bricklet
 	Bricklets/bricklet_sound_pressure_level_tilted_[?|?].jpg           Sound Pressure Level Bricklet
 	Bricklets/bricklet_sound_pressure_level_bottom_[?|?].jpg           Sound Pressure Level Bricklet
 	Bricklets/bricklet_sound_pressure_level_top_[?|?].jpg              Sound Pressure Level Bricklet
-	Cases/bricklet_sound_pressure_level_case_[100|600].jpg             Sound Pressure Level Bricklet with case
+	Cases/bricklet_sound_pressure_level_case_[?|?].jpg                 Sound Pressure Level Bricklet with case
+	Cases/bricklet_sound_pressure_level_case_hand_[?|?].jpg            Sound Pressure Level Bricklet with case
 	Bricklets/bricklet_sound_pressure_level_brickv_[100|].jpg          Sound Pressure Level Bricklet in Brick Viewer
 	Dimensions/sound_pressure_level_bricklet_dimensions_[100|600].png  Outline and drilling plan
 

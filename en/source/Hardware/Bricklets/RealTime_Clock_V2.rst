@@ -19,6 +19,7 @@ Real-Time Clock Bricklet 2.0
 
 	Bricklets/bricklet_real_time_clock_v2_tilted_[?|?].jpg           Real-Time Clock Bricklet 2.0
 	Bricklets/bricklet_real_time_clock_v2_top_[?|?].jpg              Real-Time Clock Bricklet 2.0
+	Cases/bricklet_real_time_clock_v2_case_[?|?].jpg                 Real-Time Clock Bricklet 2.0 in case
 	Bricklets/bricklet_real_time_clock_v2_brickv_[100|].jpg          Real-Time Clock Bricklet 2.0 in Brick Viewer
 	Dimensions/real_time_clock_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -119,11 +120,11 @@ Case
 A `laser-cut case for the Real-Time Clock Bricklet 2.0
 <https://www.tinkerforge.com/en/shop/cases/case-real-time-clock-bricklet.html>`__ is available.
 
-.. image:: /Images/Cases/bricklet_real_time_clock_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_real_time_clock_v2_case_350.jpg
    :scale: 100 %
    :alt: Case for Real-Time Clock Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_real_time_clock_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_real_time_clock_v2_case_1000.jpg
 
 .. include:: RealTime_Clock_V2.substitutions
    :start-after: >>>bricklet_case_steps

@@ -22,6 +22,7 @@ PTC Bricklet 2.0
 	Bricklets/bricklet_ptc_v2_top_[?|?].jpg              PTC Bricklet 2.0
 	Bricklets/bricklet_ptc_v2_sensor_[?|?].jpg           PTC Bricklet 2.0 with 2-wire Pt100 RTD
 	Bricklets/bricklet_ptc_v2_jumper_[?|?].jpg           PTC Bricklet 2.0 with jumper
+	Cases/bricklet_ptc_v2_case_[?|?].jpg                 PTC Bricklet 2.0 in case
 	Bricklets/bricklet_ptc_v2_brickv_[100|].jpg          PTC Bricklet 2.0 in Brick Viewer
 	Dimensions/ptc_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -160,11 +161,11 @@ Case
 A `laser-cut case for the PTC Bricklet 2.0
 <https://www.tinkerforge.com/en/shop/cases/case-ptc-bricklet.html>`__ is available.
 
-.. image:: /Images/Cases/bricklet_ptc_case_350.jpg
+.. image:: /Images/Cases/bricklet_ptc_v2_case_350.jpg
    :scale: 100 %
    :alt: Case for PTC Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_ptc_case_1000.jpg
+   :target: ../../_images/Cases/bricklet_ptc_v2_case_1000.jpg
 
 .. include:: PTC_V2.substitutions
    :start-after: >>>bricklet_case_steps

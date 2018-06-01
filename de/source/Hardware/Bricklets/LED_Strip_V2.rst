@@ -40,6 +40,7 @@ LED Strip Bricklet 2.0
 	Bricklets/bricklet_led_strip_v2_tilted_[?|?].jpg           LED Strip Bricklet 2.0
 	Bricklets/bricklet_led_strip_v2_tilted2_[?|?].jpg          LED Strip Bricklet 2.0
 	Bricklets/bricklet_led_strip_v2_top_[?|?].jpg              LED Strip Bricklet 2.0
+	Cases/bricklet_led_strip_v2_case_[?|?].jpg                 LED Strip Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_led_strip_v2_brickv_[100|].jpg          LED Strip Bricklet 2.0 im Brick Viewer
 	Dimensions/led_strip_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -362,11 +363,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das LED Strip Bricklet 2.0
 <https://www.tinkerforge.com/de/shop/cases/case-led-strip-bricklet.html>`__ ist verfügbar.
 
-.. image:: /Images/Cases/bricklet_led_strip_case_tilted_350.jpg
+.. image:: /Images/Cases/bricklet_led_strip_v2_case_350.jpg
    :scale: 100 %
    :alt: Gehäuse für LED Strip Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_led_strip_case_tilted_1000.jpg
+   :target: ../../_images/Cases/bricklet_led_strip_v2_case_1000.jpg
 
 .. include:: LED_Strip.substitutions
    :start-after: >>>bricklet_case_steps

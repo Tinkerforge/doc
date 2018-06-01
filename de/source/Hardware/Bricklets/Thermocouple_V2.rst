@@ -21,6 +21,7 @@ Thermocouple Bricklet 2.0
 	Bricklets/bricklet_thermocouple_v2_tilted2_[?|?].jpg          Thermocouple Bricklet 2.0
 	Bricklets/bricklet_thermocouple_v2_side_[?|?].jpg             Thermocouple Bricklet 2.0
 	Bricklets/bricklet_thermocouple_v2_top_[?|?].jpg              Thermocouple Bricklet 2.0
+	Cases/bricklet_thermocouple_v2_case_[?|?].jpg                 Thermocouple Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_thermocouple_v2_brickv_[100|].jpg          Thermocouple Bricklet 2.0 im Brick Viewer
 	Dimensions/thermocouple_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -125,11 +126,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Thermocouple Bricklet 2.0
 <https://www.tinkerforge.com/de/shop/cases/case-thermocouple-bricklet.html>`__ ist verfügbar.
 
-.. image:: /Images/Cases/bricklet_thermocouple_case_built_up_350.jpg
+.. image:: /Images/Cases/bricklet_thermocouple_v2_case_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Thermocouple Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_thermocouple_case_built_up_1000.jpg
+   :target: ../../_images/Cases/bricklet_thermocouple_v2_case_1000.jpg
 
 .. include:: Thermocouple_V2.substitutions
    :start-after: >>>bricklet_case_steps

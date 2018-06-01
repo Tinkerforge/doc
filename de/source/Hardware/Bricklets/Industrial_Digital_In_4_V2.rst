@@ -21,6 +21,8 @@ Industrial Digital In 4 Bricklet 2.0
 	Bricklets/bricklet_industrial_digital_in_4_v2_tilted2_[?|?].jpg          Industrial Digital In 4 Bricklet 2.0
 	Bricklets/bricklet_industrial_digital_in_4_v2_side_[?|?].jpg             Industrial Digital In 4 Bricklet 2.0
 	Bricklets/bricklet_industrial_digital_in_4_v2_top_[?|?].jpg              Industrial Digital In 4 Bricklet 2.0
+	Cases/bricklet_industrial_digital_in_4_v2_case_[?|?].jpg                 Industrial Digital In 4 Bricklet 2.0 im Gehäuse
+	Cases/bricklet_industrial_digital_in_4_v2_case2_[?|?].jpg                Industrial Digital In 4 Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_industrial_digital_in_4_v2_brickv_[100|].jpg          Industrial Digital In 4 Bricklet 2.0 im Brick Viewer
 	Dimensions/industrial_digital_in_4_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -143,11 +145,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Industrial Digital In 4 Bricklet 2.0
 <https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
 
-.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+.. image:: /Images/Cases/bricklet_industrial_digital_in_4_v2_case_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Industrial Digital In 4 Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
+   :target: ../../_images/Cases/bricklet_industrial_digital_in_4_v2_case_1000.jpg
 
 .. include:: Industrial_Digital_In_4.substitutions
    :start-after: >>>bricklet_case_steps

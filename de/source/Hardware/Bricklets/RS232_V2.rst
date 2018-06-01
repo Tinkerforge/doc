@@ -23,8 +23,8 @@ RS232 Bricklet 2.0
 	Bricklets/bricklet_rs232_v2_tilted2_[?|?].jpg          RS232 Bricklet 2.0
 	Bricklets/bricklet_rs232_v2_tilted3_[?|?].jpg          RS232 Bricklet 2.0
 	Bricklets/bricklet_rs232_v2_front_[?|?].jpg            RS232 Bricklet 2.0
-	Cases/bricklet_rs232_case_built_up1_[?|?].jpg          RS232 Bricklet 2.0 im Gehäuse
-	Cases/bricklet_rs232_case_built_up2_[?|?].jpg          RS232 Bricklet 2.0 im Gehäuse
+	Cases/bricklet_rs232_v2_case_[?|?].jpg                 RS232 Bricklet 2.0 im Gehäuse
+	Cases/bricklet_rs232_v2_case2_[?|?].jpg                RS232 Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_rs232_v2_brickv_[100|].jpg          RS232 Bricklet 2.0 im Brick Viewer
 	Dimensions/rs232_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -166,11 +166,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das RS232 Bricklet 2.0
 <https://www.tinkerforge.com/de/shop/cases/case-rs232-bricklet.html>`__ ist verfügbar.
 
-.. image:: /Images/Cases/bricklet_rs232_case_built_up1_350.jpg
+.. image:: /Images/Cases/bricklet_rs232_v2_case_350.jpg
    :scale: 100 %
    :alt: Gehäuse für RS232 Bricklet 2.0
    :align: center
-   :target: ../../_images/Cases/bricklet_rs232_case_built_up1_1000.jpg
+   :target: ../../_images/Cases/bricklet_rs232_v2_case_1000.jpg
 
 .. include:: RS232_V2.substitutions
    :start-after: >>>bricklet_case_steps

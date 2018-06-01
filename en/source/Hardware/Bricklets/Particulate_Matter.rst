@@ -21,7 +21,8 @@ Particulate Matter Bricklet
 	Bricklets/bricklet_particulate_matter_top_[?|?].jpg              Particulate Matter Bricklet
 	Bricklets/bricklet_particulate_matter_front_[?|?].jpg            Particulate Matter Bricklet
 	Bricklets/bricklet_particulate_matter_tilted2_[?|?].jpg          Particulate Matter Bricklet
-	Cases/bricklet_particulate_matter_case_[100|600].jpg             Particulate Matter Bricklet with case
+	Cases/bricklet_particulate_matter_case_[?|?].jpg                 Particulate Matter Bricklet with case
+	Cases/bricklet_particulate_matter_case_side_[?|?].jpg            Particulate Matter Bricklet with case
 	Bricklets/bricklet_particulate_matter_brickv_[100|].jpg          Particulate Matter Bricklet in Brick Viewer
 	Dimensions/particulate_matter_bricklet_dimensions_[100|600].png  Outline and drilling plan
 

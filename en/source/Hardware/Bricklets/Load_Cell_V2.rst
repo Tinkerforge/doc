@@ -20,6 +20,7 @@ Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_tilted_[?|?].jpg           Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_tilted2_[?|?].jpg          Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_top_[?|?].jpg              Load Cell Bricklet 2.0
+	Cases/bricklet_load_cell_v2_case_[?|?].jpg                 Load Cell Bricklet 2.0 in case
 	Bricklets/bricklet_load_cell_v2_brickv_[100|].jpg          Load Cell Bricklet 2.0 in Brick Viewer
 	Dimensions/load_cell_v2_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -257,11 +258,11 @@ Case
 A `laser-cut case for the Load Cell Bricklet 2.0
 <https://www.tinkerforge.com/en/shop/cases/case-load-cell-bricklet.html>`__ is available.
 
-.. image:: /Images/Cases/bricklet_load_cell_case_built_up1_350.jpg
+.. image:: /Images/Cases/bricklet_load_cell_v2_case_350.jpg
    :scale: 100 %
    :alt: Case for Load Cell Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_load_cell_case_built_up1_1000.jpg
+   :target: ../../_images/Cases/bricklet_load_cell_v2_case_1000.jpg
 
 .. include:: Load_Cell.substitutions
    :start-after: >>>bricklet_case_steps

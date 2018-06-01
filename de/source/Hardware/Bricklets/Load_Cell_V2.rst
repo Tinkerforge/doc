@@ -20,6 +20,7 @@ Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_tilted_[?|?].jpg           Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_tilted2_[?|?].jpg          Load Cell Bricklet 2.0
 	Bricklets/bricklet_load_cell_v2_top_[?|?].jpg              Load Cell Bricklet 2.0
+	Cases/bricklet_load_cell_v2_case_[?|?].jpg                 Load Cell Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_load_cell_v2_brickv_[100|].jpg          Load Cell Bricklet 2.0 im Brick Viewer
 	Dimensions/load_cell_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -259,11 +260,11 @@ Gehäuse
 Ein `laser-geschnittenes Gehäuse für das Load Cell Bricklet 2.0
 <https://www.tinkerforge.com/de/shop/cases/case-load-cell-bricklet.html>`__ ist verfügbar.
 
-.. image:: /Images/Cases/bricklet_load_cell_case_built_up1_350.jpg
+.. image:: /Images/Cases/bricklet_load_cell_v2_case_350.jpg
    :scale: 100 %
    :alt: Gehäuse für Load Cell Bricklet
    :align: center
-   :target: ../../_images/Cases/bricklet_load_cell_case_built_up1_1000.jpg
+   :target: ../../_images/Cases/bricklet_load_cell_v2_case_1000.jpg
 
 .. include:: Load_Cell.substitutions
    :start-after: >>>bricklet_case_steps
