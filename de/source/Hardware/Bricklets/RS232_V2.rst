@@ -23,7 +23,8 @@ RS232 Bricklet 2.0
 	Bricklets/bricklet_rs232_v2_tilted2_[?|?].jpg          RS232 Bricklet 2.0
 	Bricklets/bricklet_rs232_v2_tilted3_[?|?].jpg          RS232 Bricklet 2.0
 	Bricklets/bricklet_rs232_v2_front_[?|?].jpg            RS232 Bricklet 2.0
-	Cases/bricklet_rs232_v2_case_[100|600].jpg             RS232 Bricklet 2.0 im Gehäuse
+	Cases/bricklet_rs232_case_built_up1_[?|?].jpg          RS232 Bricklet 2.0 im Gehäuse
+	Cases/bricklet_rs232_case_built_up2_[?|?].jpg          RS232 Bricklet 2.0 im Gehäuse
 	Bricklets/bricklet_rs232_v2_brickv_[100|].jpg          RS232 Bricklet 2.0 im Brick Viewer
 	Dimensions/rs232_v2_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -89,13 +90,11 @@ verbunden werden: klassischer D-Sub 9 Stecker, 5er Anschlussklemmenblock oder
 5er Stiftleiste. Es kann aber nur eine dieser Anschlussmöglichkeiten zur
 gleichen Zeit genutzt werden.
 
-TODO: Bild neu machen
-
-.. image:: /Images/Bricklets/bricklet_rs232_horizontal_350.jpg
+.. image:: /Images/Bricklets/bricklet_rs232_v2_top_350.jpg
    :scale: 100 %
    :alt: RS232 Bricklet Steckerbelegung
    :align: center
-   :target: ../../_images/Bricklets/bricklet_industrial_rs232_horizontal_1200.jpg
+   :target: ../../_images/Bricklets/bricklet_rs232_v2_top_1200.jpg
 
 D-Sub 9 Stecker
 ^^^^^^^^^^^^^^^
@@ -164,27 +163,26 @@ darüber auftauchen.
 Gehäuse
 -------
 
-..
-	Ein `laser-geschnittenes Gehäuse für das RS232 Bricklet 2.0
-	<https://www.tinkerforge.com/de/shop/cases/case-rs232-v2-bricklet.html>`__ ist verfügbar.
+Ein `laser-geschnittenes Gehäuse für das RS232 Bricklet 2.0
+<https://www.tinkerforge.com/de/shop/cases/case-rs232-bricklet.html>`__ ist verfügbar.
 
-	.. image:: /Images/Cases/bricklet_rs232_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Gehäuse für RS232 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_rs232_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_rs232_case_built_up1_350.jpg
+   :scale: 100 %
+   :alt: Gehäuse für RS232 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_rs232_case_built_up1_1000.jpg
 
-	.. include:: RS232_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: RS232_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/rs232_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Explosionszeichnung für RS232 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/rs232_v2_exploded.png
+.. image:: /Images/Exploded/rs232_exploded_350.png
+   :scale: 100 %
+   :alt: Explosionszeichnung für RS232 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/rs232_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _rs232_v2_bricklet_programming_interface:
