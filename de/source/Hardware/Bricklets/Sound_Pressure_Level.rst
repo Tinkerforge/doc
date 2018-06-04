@@ -43,13 +43,13 @@ Beschreibung
 ------------
 
 Mit dem Sound Pressure Level :ref:`Bricklet <primer_bricklets>` können :ref:`Bricks <primer_bricks>` den
-`Schalldruckpegel  <https://de.wikipedia.org/wiki/Schalldruckpegel>`__ und das Geräusch-
+`Schalldruckpegel <https://de.wikipedia.org/wiki/Schalldruckpegel>`__ und das Geräusch-
 `Spektrum <https://de.wikipedia.org/wiki/Spektrogramm>`__ messen. Der gemessene Schalldruckpegel kann als
-`bewerteter Schalldruckpegel<https://de.wikipedia.org/wiki/Bewerteter_Schalldruckpegel>`__ mittels
+`bewerteter Schalldruckpegel <https://de.wikipedia.org/wiki/Bewerteter_Schalldruckpegel>`__ mittels
 A, B, C, D, ITU-R 468 und flacher Gewichtung (Z) gewichtet werden.
 
-Das Bricklet kann genutzt werden um die Lautstärke zum Beispiel von Musik, auf Baustellen, Straßengeräusche
-und anderen Umgebungsgeräuschen in verschiedenen Gewichtungen messen. Zusätzlich ist es möglich die 
+Das Bricklet kann genutzt werden um die Lautstärke zum Beispiel von Musik, Baustellen, Straßengeräuschen
+und von anderen Umgebungsgeräuschen in verschiedenen Gewichtungen zu messen. Zusätzlich ist es möglich die 
 Frequenzzusammensetzung zu bestimmen (Spektrum).
 
 Das Sound Pressure Level Bricklet hat einen 7 Pol Bricklet Stecker und wird mit einem ``7p-10p`` Bricklet 
@@ -89,7 +89,7 @@ Genauigkeit und Kalibrierung
 
 Das Bricklet ist gegen ein Schallpegelmessgerät mit 1.5dB Genauigkeit kalibriert.
 Das verwendete MEMS Mikrofon hat einen Frequenzgang mit bis zu 1.5dB Abweichung
-im Bereich von 100Hz to 8kHz.
+im Bereich von 100Hz bis 8kHz.
 
 Zu den 1.5dB haben wir weitere 2dB für kleine Abweichungen in der Befestigung 
 und in der Mikrofon-Bohrung addiert um so auf +-5dB zu kommen.
@@ -100,7 +100,7 @@ ICS43432 Datenblattes angegebenen Werte kompensiert. Wir können aber keine
 Garantien dazu geben. Ein Vergleich mit anderen professionellen Schallpegelmessgeräten
 liefert keine Information dazu, da diese meist nur bis 8kHz messen.
 
-Zusätzlich ist der Frequenzgang zwischen Mikrofon und Mikrofon verschieden. Um dieses
+Zusätzlich ist der Frequenzgang zwischen zwei Mikrofonen verschieden. Um dieses
 zu kompensieren müsste jedes einzelne Bricklet in einer reflexionsfreien Schallkammer
 vermessen werden. Dies ist für ein Bricklet nicht ökonomisch. Diese Abweichung wird von
 uns mit einem zusätzlichen maximalen 5% Full-Scale Error berücksichtigt.
