@@ -48,7 +48,7 @@ Eigenschaften eines :ref:`Bricks <primer_bricks>` um die Möglichkeit Feinstaub 
 zu erweitern.
 
 Das Bricklet unterstützt die Größenklassen PM1.0, PM2.5 und PM10. Zusätzlich ist es möglich
-die Anzahl der Partikel in 100ml Luft in den Größen 0,3µm, 0,5µm, 1,0µm, 2,5µm, 5,0µm und 10,0µm.
+die Anzahl der Partikel in 100ml Luft in den Größen 0,3µm, 0,5µm, 1,0µm, 2,5µm, 5,0µm und 10,0µm zu messen.
 
 Das Particulate Matter Bricklet hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
