@@ -51,7 +51,7 @@ Periode und die Frequenz getrennt pro Kanal messen kann. Frequenzen bis zu
 4MHz können vom Bricklet verarbeitet werden.
 
 Der Frequenzzähler kann steigende, fallende und beide Flankenwechsel zählen. Die 
-Richtung der Zählers (hoch oder runter) ist einstellbar. Es ist auch möglich einen
+Richtung des Zählers (hoch oder runter) ist einstellbar. Es ist auch möglich einen
 Kanal als Richtungseingang für einen anderen Zähler zu nutzen 
 (z.B. high = zählt hoch, low = zählt runter).
 
@@ -77,19 +77,19 @@ Eingangstyp                       Vier Optokoppler-Eingänge (mit 2.7kΩ Serien
 Eingangsstrom                     Abhängig von der Eingangsspannung, ca. 3.85mA/12V, 8.3mA/24V
 Maximale Eingangsspannung         26V (DC)
 Low Level Spannung                0-2V
-High Level Spannun                10-26V
+High Level Spannung               10-26V
 Isolation                         3750Vrms (Optokoppler-Wert)
---------------------------------  ---------------------------------------------------------------
---------------------------------  ---------------------------------------------------------------
+--------------------------------  --------------------------------------------------------------
+--------------------------------  --------------------------------------------------------------
 Minimale Eingangsfrequenz         0.03MHz
 Maximale Eingangsfrequenz         4MHz
 Zeit-Auflösung                    bis zu 10.4ns (Duty Cycle Prescaler auf 1 gesetzt)
 Frequenz-Auflösung                bis zu 0.03Hz (Frequenz-Integrationsszeit auf 32768ms gesetzt)
---------------------------------  ---------------------------------------------------------------
---------------------------------  ---------------------------------------------------------------
+--------------------------------  --------------------------------------------------------------
+--------------------------------  --------------------------------------------------------------
 Abmessungen (B x T x H)           40 x 40 x 11mm (1.57 x 1.57 x 0.43")
 Gewicht                           8.4g
-================================  ===============================================================
+================================  ==============================================================
 
 
 Ressourcen
@@ -188,7 +188,7 @@ fallende oder beide Flankenwechsel zählen. Die Richtung des Zählens (hoch oder
 eingestellt werden. Für Kanal 0 und 3 ist es möglich einen anderen Kanal als Steuerungseingang für die 
 Zählrichtung zu nutzen.
 
-**Duty Cycle**: Ist der prozentuale Anteil des Signals der *high* ist pro Periode.
+**Duty Cycle**: Ist der prozentuale Anteil des Signals pro Periode der *high* ist.
 
 **Period**: Ist die Dauer eine Periode.
 
@@ -203,7 +203,8 @@ besitzen, so zeigen nur Period und Duty Cycle diesen Jitter. Frequency bleibt st
 Wenn die Auflösung der Periode hoch genug und die Frequenz stabil ist, so ist
 die berechnete Frequenz gleich 1/Period.
 
-Der nachfolgende Oszilloskop Screenshot zeigt verschiedene Messungen eines 12kHz signals mit 60% Tastverhältnis
+Die nachfolgenden Screenshots zeigen verschiedene Messungen eines 12kHz Signals 
+mit 60% Tastverhältnis mit einem Oszilloskop
 
 .. image:: /Images/Bricklets/bricklet_industrial_counter_duty_period_freq.jpg
    :scale: 100 %
@@ -211,8 +212,7 @@ Der nachfolgende Oszilloskop Screenshot zeigt verschiedene Messungen eines 12kHz
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_counter_duty_period_freq.jpg
 
-sowie ein Brick Viewer Sceenshot des selben Signals mit einem 
-Industrial Counter Bricklet.
+sowie das selbe Signal mit dem Industiral Counter Bricklet über den Brick Viewer. 
 
 .. image:: /Images/Bricklets/bricklet_industrial_counter_duty_period_freq_brickv.jpg
    :scale: 100 %
