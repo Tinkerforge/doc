@@ -40,10 +40,10 @@ Features
 Beschreibung
 ------------
 
-Mit dem Load Cell :ref:`Bricklet <primer_bricklets>` 2.0 können Bricks
+Mit dem Load Cell :ref:`Bricklet <primer_bricklets>` 2.0 können 
 :ref:`Bricks <primer_bricks>` Wägezellen auslesen. Für die Kalibrierung der
 Wägezelle wird nur ein einziges bekanntes Gewicht benötigt. Es ist möglich
-Gewichtsunterschiede von wenige Gramm zwischen Objekten zu bestimmen die
+Gewichtsunterschiede von wenigen Gramm zwischen Objekten zu bestimmen die
 selbst viele Kilogramm wiegen.
 
 Im Shop sind Wägezellen für verschiedene Maximalgewichte verfügbar:
@@ -128,7 +128,7 @@ Erster Test
 |test_intro|
 
 |test_connect|.
-Als nächstes muss eine eine Wägezelle :ref:`angeschlossen
+Als nächstes muss eine Wägezelle :ref:`angeschlossen
 <load_cell_bricklet_connectivity>` und :ref:`kalibriert
 <load_cell_bricklet_calibration>` werden.
 
