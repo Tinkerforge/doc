@@ -39,7 +39,7 @@ Features
 Beschreibung
 ------------
 
-Mit dem batteriegepufferte Real-Time Clock :ref:`Bricklet <primer_bricklets>` 2.0
+Mit dem batteriegepuffertem Real-Time Clock :ref:`Bricklet <primer_bricklets>` 2.0
 können :ref:`Bricks <primer_bricks>` Datum und Uhrzeit über lange Zeiträume
 genau halten, auch wenn der Brick nicht durchgehend mit Strom versorgt wird.
 
@@ -98,7 +98,7 @@ Erster Test
 Wenn alles wie erwartet funktioniert wird Datum und Zeit des Bricklets sowie
 das lokale Datum und die lokale Zeit angezeigt
 
-Datum und Zeit des Bricklets können mit dem "Save Local" Knopf auf die
+Datum und Zeit des Bricklets können mit dem "Save Local" Knopf auf
 das lokale Datum und die lokale Zeit gesetzt werden.
 
 .. image:: /Images/Bricklets/bricklet_real_time_clock_v2_brickv.jpg
