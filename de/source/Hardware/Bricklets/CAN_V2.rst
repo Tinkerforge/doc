@@ -29,7 +29,7 @@ CAN Bricklet 2.0
 Features
 --------
 
-* Sendet und empfängt Daten über einen CAN-Bus.
+* Sendet und empfängt Daten über einen CAN-Bus
 * Konfigurierbare Baudrate, Modi und Filter
 
 
@@ -85,11 +85,11 @@ Erster Test
 |test_intro|
 
 |test_connect|.
-Connect a CAN device to the CAN-L, CAN-H and GND terminals.
+Verbinde ein CAN Gerät an die CAN-L, CAN-H und GND Anschlussklemme.
 
 |test_tab|
-If everything went as expected you can now see the data that
-is send over the connected CAN bus.
+Wenn alles wie erwartet funktioniert, können die Daten ausgelesen werden die
+über den verbundeteten CAN-Bus geschickt werden.
 
 .. image:: /Images/Bricklets/bricklet_can_v2_brickv.jpg
    :scale: 100 %
