@@ -134,8 +134,7 @@ Unterstützte LEDs
 
 
 Es werden LED Streifen und Pixel unterstützt, die mit dem WS2801, WS2811, WS2812 
-SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 oder APA102 (DotStar) 
-
+SK6812 (NeoPixel RGB), SK6812RGBW (NeoPixel RGBW), LPD8806 oder APA102 (DotStar)
 Treiber ausgestattet sind. Im Weiteren bezieht sich *LED Treiber* auf alle
 diese Treiber.
 
@@ -237,7 +236,7 @@ LED Streifen Beispiel ist der rote Draht :led-strip-red:`5V`, grün die
 Als erstes wird die Datenleitung des ersten
 LED Streifens und Masse der Spannungsversorgung mit dem LED Strip Bricklet 2.0
 verbunden. Dabei muss darauf geachtet werden, dass der 
-Daten\ **eingang** des ersten Streifen mit 
+Daten\ **eingang** des ersten Streifens mit dem
 Daten\ **ausgang** des LED Strip Bricklets 2.0 verbunden wird.
 
 Falls die Spannung der Versorgung gemessen werden soll, müssen die 5V der
@@ -272,7 +271,7 @@ blaue Draht ist :led-strip-blue:`Masse`.
 Als erstes werden die Takt- und Datenleitung des ersten
 LED Streifens und Masse der Spannungsversorgung mit dem LED Strip Bricklet 2.0
 verbunden. Dabei muss darauf geachtet werden, dass der Takt- und
-Daten\ **eingang** des ersten Streifen mit dem Takt- und
+Daten\ **eingang** des ersten Streifens mit dem Takt- und
 Daten\ **ausgang** des LED Strip Bricklet 2.0 verbunden wird.
 
 Falls die Spannung der Versorgung gemessen werden soll, müssen die 5V der
@@ -336,7 +335,7 @@ benötigt. Eine feste Aktualisierungsrate kann einfach mit einer
 korrekt konfigurierten Framelänge und dem ``FrameStarted`` Callback erreicht
 werden. Die Framelänge stellt die Zeit in ms dar, die zwischen zwei
 Frames verstreicht. Der ``FrameStarted`` Callback wird ausgelöst sobald eine
-Übertragung des Frames auf die LEDs started (Die Frames sind Double-Buffered).
+Übertragung des Frames auf die LEDs startet (Die Frames sind Double-Buffered).
 
 Wenn als Beispiel eine Aktualisierungsrate von 20 Frames pro Sekunde
 erreicht werden soll, sollte die Framelänge auf 50ms gesetzt werden.
