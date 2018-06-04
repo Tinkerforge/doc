@@ -43,7 +43,7 @@ Beschreibung
 ------------
 
 Das Industrial Digital In 4 :ref:`Bricklet <primer_bricklets>` 2.0 kann benutzt werden
-um :ref:`Bricks <primer_bricks>` mit vier digitale Eingängen zu erweitern.
+um :ref:`Bricks <primer_bricks>` mit vier digitalen Eingängen zu erweitern.
 Die Eingangsspannung kann bis zu 36 `Volt <https://de.wikipedia.org/wiki/Volt>`__ (DC) betragen.
 Die galvanische Trennung der Eingänge erlaubt eine Benutzung ohne direkte elektrische
 Verbindung, so dass Masseschleifen vermieden werden können und eine zusätzliche Sicherheit
