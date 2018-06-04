@@ -127,7 +127,7 @@ aussehen.
    :align: center
    :target: ../../_images/Bricklets/bricklet_industrial_dual_relay_brickv.jpg
 
-Durch klicken der beiden Knöpfe werden die Relais umgeschaltet die
+Durch klicken der beiden Knöpfe werden die Relais umgeschaltet. Dies
 ist durch ein Klickgeräusch hörbar und durch LEDs neben den Relais auch sichtbar.
 
 |test_pi_ref|
@@ -135,16 +135,16 @@ ist durch ein Klickgeräusch hörbar und durch LEDs neben den Relais auch sichtb
 
 .. _industrial_dual_relay_inductive_load_switching:
 
-Schalten Induktiver Lasten
+Schalten induktiver Lasten
 --------------------------
 
 Ohne externe Beschaltung kann das Schalten induktiver Lasten Störungen im
-System verursachen die zu Fehlfunktionen oder Schäden an Komponenten führen
+System verursachen, die zu Fehlfunktionen oder Schäden an Komponenten führen
 können. Typische Beispiele für induktive Lasten sind Motoren und Spulen im
 allgemeinen. Dieses Problem kann z.B. aber auch beim Schalten von
-Leuchtstofflampe auftreten.
+Leuchtstofflampen auftreten.
 
-Um induktive Lasten sicher schalten zu können wird externe Beschaltung z.B. in
+Um induktive Lasten sicher schalten zu können wird eine externe Beschaltung z.B. in
 Form eines `Varistors <https://de.wikipedia.org/wiki/Varistor>`__ oder der
 Kombination eines Widerstandes und eines Kondensators parallel zur Last empfohlen.
 
