@@ -84,7 +84,7 @@ Anschlussmöglichkeiten
 ----------------------
 
 Das Voltage/Current Bricklet 2.0 wird einfach zwischen Stromversorgung und der 
-Last eingebaut. Schließe an die Klemme beschriftet mit "IN" die 
+Last eingebaut. Schließe an die Klemme, beschriftet mit "IN", die 
 Stromversorgung an. An die Klemme "OUT" die Last. Die Polung ist mit "+" 
 und "-" vor der Klemme gekennzeichnet.
 
@@ -148,7 +148,7 @@ leicht behoben werden:
 Starte Brick Viewer und klicke auf den "Calibration..."-Button und folge den Schritten
 die in der GUI beschrieben sind. 
 
-Die Spannung kann auch kalibriert werden, nach unsere
+Die Spannung kann auch kalibriert werden, nach unserer
 Erfahrung erreicht die Spannungsmessung allerdings auch komplett ohne Kalibrierung
 bereits eine Genauigkeit von 0,5%.
 
