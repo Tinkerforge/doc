@@ -32,6 +32,7 @@ Features
 * 4-channel digital input/output
 * Fixed 3.3V logic voltage
 * Configurable pull-ups and interrupts
+* PWM output with frequency up to 32MHz
 
 
 .. _io4_v2_bricklet_description:

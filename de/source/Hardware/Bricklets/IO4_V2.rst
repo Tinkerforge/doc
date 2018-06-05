@@ -32,6 +32,7 @@ Features
 * 4 digitale Ein- und Ausgänge
 * 3,3V Logikspannung
 * Konfigurierbare Pull-Ups und Interrupts
+* PWM-Ausgabe mit einer Frequenz bis zu 32MHz
 
 
 .. _io4_v2_bricklet_description:
