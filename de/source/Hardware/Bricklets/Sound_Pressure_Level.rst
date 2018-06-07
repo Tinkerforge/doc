@@ -139,7 +139,7 @@ Wenn alles wie erwartet funktioniert sollte nun das Spektrum und der Dezibel-Wer
 .. _sound_pressure_level_bricklet_beispiele:
 
 Beispiele
---------
+---------
 
 Gitarrenmusik:
 
@@ -161,9 +161,6 @@ Sich ändernder Sinuston:
 	  <source src="../../_images/Videos/sound_pressure_level_moving_sine_wave.ogg" type="video/ogg">
 	  <source src="../../_images/Videos/sound_pressure_level_moving_sine_wave.webm" type="video/webm">
 	</video>
-
-
-.. _sound_pressure_level_bricklet_case:
 
 
 
