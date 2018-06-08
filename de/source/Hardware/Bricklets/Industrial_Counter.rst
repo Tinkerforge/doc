@@ -21,7 +21,6 @@ Industrial Counter Bricklet
 	Bricklets/bricklet_industrial_counter_tilted2_[?|?].jpg          Industrial Counter Bricklet
 	Bricklets/bricklet_industrial_counter_side_[?|?].jpg             Industrial Counter Bricklet
 	Bricklets/bricklet_industrial_counter_top_[?|?].jpg              Industrial Counter Bricklet
-	Cases/bricklet_industrial_counter_case_[100|600].jpg             Industrial Counter Bricklet im Gehäuse
 	Bricklets/bricklet_industrial_counter_brickv_[100|].jpg          Industrial Counter Bricklet im Brick Viewer
 	Dimensions/industrial_counter_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
