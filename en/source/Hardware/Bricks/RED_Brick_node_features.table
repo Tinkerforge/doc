@@ -3,5 +3,5 @@ Node.js
 ====== =================== ================================================= ====
 Name   Version             Description                                       full
 ====== =================== ================================================= ====
-nodejs 8.10.0-1nodesource1 Node.js event-based server-side javascript engine |c|
+nodejs 8.11.2-1nodesource1 Node.js event-based server-side javascript engine |c|
 ====== =================== ================================================= ====
