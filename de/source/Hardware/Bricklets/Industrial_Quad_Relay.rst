@@ -25,6 +25,12 @@ Industrial Quad Relay Bricklet
 	{% tfgalleryend %}
 
 
+.. note::
+
+ Das Industrial Quad Relay Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Industrial Quad Relay Bricklet 2.0 <industrial_quad_relay_v2_bricklet>`
+ empfohlen.
+
 Features
 --------
 

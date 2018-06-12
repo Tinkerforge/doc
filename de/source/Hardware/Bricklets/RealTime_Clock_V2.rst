@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/real-time-clock-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/real-time-clock-v2-bricklet.html
 
 .. include:: RealTime_Clock_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Real-Time Clock Bricklet 2.0
 ============================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

@@ -24,7 +24,7 @@ Current25 Bricklet
 .. note::
 
  The Current25 Bricklet is discontinued and is no longer sold. The
- :ref:`Voltage/Current Bricklet <voltage_current_bricklet>` is the recommended
+ :ref:`Voltage/Current Bricklet 2.0 <voltage_current_v2_bricklet>` is the recommended
  replacement.
 
 

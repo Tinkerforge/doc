@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/industrial-digital-in-4-bricklet.html
-
 .. include:: Industrial_Digital_In_4.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -24,6 +22,11 @@ Industrial Digital In 4 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Industrial Digital In 4 Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Industrial Digital In 4 Bricklet 2.0 <industrial_digital_in_4_v2_bricklet>`
+ empfohlen.
 
 Features
 --------

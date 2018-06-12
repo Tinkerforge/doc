@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-counter-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-counter-bricklet.html
 
 .. include:: Industrial_Counter.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Industrial Counter Bricklet
 ===========================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

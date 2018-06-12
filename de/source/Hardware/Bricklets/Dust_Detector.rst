@@ -22,6 +22,12 @@ Dust Detector Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Dust Detector Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`Particulate Matter Bricklet <particulate_matter_bricklet>`
+ empfohlen.
+
 
 Features
 --------

@@ -22,6 +22,12 @@ Dust Detector Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Dust Detector Bricklet is discontinued. The
+ :ref:`Particulate Matter Bricklet <particulate_matter_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

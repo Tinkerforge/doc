@@ -47,6 +47,12 @@ LED Strip Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das LED Strip Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`LED Strip Bricklet 2.0 <led_strip_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

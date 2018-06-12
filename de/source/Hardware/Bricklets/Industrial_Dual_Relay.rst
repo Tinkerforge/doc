@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-dual-relay-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-dual-relay-bricklet.html
 
 .. include:: Industrial_Dual_Relay.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Industrial Dual Relay Bricklet
 ==============================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

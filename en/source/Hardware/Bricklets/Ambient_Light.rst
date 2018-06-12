@@ -1,5 +1,4 @@
 
-
 .. include:: Ambient_Light.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions

@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
 
 .. include:: IO4_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 IO-4 Bricklet 2.0
 =================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

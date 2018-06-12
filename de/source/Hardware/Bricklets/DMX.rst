@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/dmx-bricklet.html
+:shoplink: ../../../shop/bricklets/dmx-bricklet.html
 
 .. include:: DMX.substitutions
    :start-after: >>>substitutions

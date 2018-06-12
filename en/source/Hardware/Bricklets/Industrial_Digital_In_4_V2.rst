@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-digital-in-4-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-digital-in-4-v2-bricklet.html
 
 .. include:: Industrial_Digital_In_4_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Industrial Digital In 4 Bricklet 2.0
 ====================================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

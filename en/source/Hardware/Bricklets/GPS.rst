@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/gps-bricklet.html
-
 .. include:: GPS.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions

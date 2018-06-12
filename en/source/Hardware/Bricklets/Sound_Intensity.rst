@@ -25,6 +25,12 @@ Sound Intensity Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Sound Intensity Bricklet is discontinued. The
+ :ref:`Sound Pressure Level Bricklet <sound_pressure_level_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

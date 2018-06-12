@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/led-strip-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/led-strip-v2-bricklet.html
 
 
 .. role:: led-strip-red
@@ -29,9 +29,6 @@
 
 LED Strip Bricklet 2.0
 ======================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

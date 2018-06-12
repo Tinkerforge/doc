@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/load-cell-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/load-cell-v2-bricklet.html
 
 .. include:: Load_Cell_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Load Cell Bricklet 2.0
 ======================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

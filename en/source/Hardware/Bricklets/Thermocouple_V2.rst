@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/thermocouple-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/thermocouple-v2-bricklet.html
 
 .. include:: Thermocouple_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Thermocouple Bricklet 2.0
 =========================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

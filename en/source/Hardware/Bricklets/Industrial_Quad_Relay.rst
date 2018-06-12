@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/industrial-quad-relay-bricklet.html
-
 .. include:: Industrial_Quad_Relay.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,6 +21,12 @@ Industrial Quad Relay Bricklet
 	Dimensions/industrial_quad_relay_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Industrial Quad Relay Bricklet is discontinued and is no longer sold. The
+ :ref:`Industrial Quad Relay Bricklet 2.0 <industrial_quad_relay_v2_bricklet>` is the recommended
+ replacement.
 
 
 Features
