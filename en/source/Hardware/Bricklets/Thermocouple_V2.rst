@@ -57,7 +57,7 @@ By default the Bricklet comes with a K-type mini thermocouple
 connector. The connector uses Alumel for the negative
 Chromel for the positive contact. We can also fit the
 Bricklet with a matching connector for other :ref:`thermocouple types
-<thermocouple_bricklet_types>`. You can choose type J,T,E,U and N. 
+<thermocouple_v2_bricklet_types>`. You can choose type J,T,E,U and N.
 Another option is to choose the wire option. Then you will get the Bricklet 
 without any connector but with two 20cm isolated wires. This way you can 
 connect your own connector to it.
@@ -144,7 +144,7 @@ A `laser-cut case for the Thermocouple Bricklet 2.0
 |bricklet_case_hint|
 
 
-.. _thermocouple_bricklet_types:
+.. _thermocouple_v2_bricklet_types:
 
 Thermocouple types
 ------------------

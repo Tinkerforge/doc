@@ -34,7 +34,6 @@ Features
 * Unterstützt Kartenemulations Betriebsmodi
 * Reichweite ist auf 10cm begrenzt (3.94")
 
-
 .. _nfc_bricklet_description:
 
 Beschreibung
@@ -142,7 +141,7 @@ verwendet wird muss diese Struktur beachtet werden, um nicht versehentlich den T
 
 * Page Größe 8 Byte
 * Pages 0-2 sind für die Zugriffskontrolle reserviert. Diese Pages sollten 
-nicht überschrieben werden, wenn man nicht weiß was man tut.
+  nicht überschrieben werden, wenn man nicht weiß was man tut.
 * Page 15 ist reserviert und kann nicht geschrieben werden.
 
 **NFC Forum Typ 2:**
@@ -150,8 +149,8 @@ nicht überschrieben werden, wenn man nicht weiß was man tut.
 * Page Größe 4 Byte
 * Page 0-1 ist nur lesbar und enthält die Tag ID.
 * Page 3-4 und die letzten zwei Pages (Die Page-Nummern hängen von der 
-Größe des Tags ab) enthalten die Lock-Bits. Diese sollten nur überschrieben
-werden, wenn man weiß was man tut.
+  Größe des Tags ab) enthalten die Lock-Bits. Diese sollten nur überschrieben
+  werden, wenn man weiß was man tut.
 
 **NFC Forum Typ 3:**
 

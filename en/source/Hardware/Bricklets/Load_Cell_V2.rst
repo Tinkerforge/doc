@@ -149,7 +149,7 @@ and a graph that shows the weight over time.
 |test_pi_ref|
 
 
-.. _load_cell_bricklet_v2_calibration:
+.. _load_cell_v2_bricklet_calibration:
 
 Calibration
 -----------
@@ -159,7 +159,7 @@ specific setup.
 
 .. image:: /Images/Screenshots/load_cell_bricklet_calibration.jpg
    :scale: 100 %
-   :alt: Load Cell Bricklet  2.0calibration in Brick Viewer
+   :alt: Load Cell Bricklet 2.0 calibration in Brick Viewer
    :align: center
    :target: ../../_images/Screenshots/load_cell_bricklet_calibration.jpg
 

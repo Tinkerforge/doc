@@ -150,7 +150,7 @@ angezeigt. Der Graph gibt den zeitlichen Verlauf des Gewichts wieder.
 |test_pi_ref|
 
 
-.. _load_cell_bricklet_v2_calibration:
+.. _load_cell_v2_bricklet_calibration:
 
 Kalibrierung
 ------------
@@ -174,7 +174,7 @@ klicke den "Calibrate Weight" Knopf.
 Das Load Cell Bricklet 2.0 ist nun für die angeschlossenen Wägezelle und den
 aktuellen Aufbau kalibriert.
 
-.. _load_cell_bricklet_v2_scale_kit:
+.. _load_cell_v2_bricklet_scale_kit:
 
 Waagenkit
 ---------
