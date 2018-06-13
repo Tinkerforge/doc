@@ -254,8 +254,8 @@ gelesen/geschrieben werden.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das NFC/RFID Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-nfc-rfid-bricklet.html>`__ ist verfügbar.
+Ein laser-geschnittenes Gehäuse für das NFC/RFID Bricklet war verfügbar, wird
+aber nicht mehr verkauft.
 
 .. image:: /Images/Cases/bricklet_nfc_rfid_case_tilted_350.jpg
    :scale: 100 %

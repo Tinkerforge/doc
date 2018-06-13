@@ -140,7 +140,7 @@ Case
 ----
 
 A `laser-cut case for the Industrial Quad Relay Bricklet 2.0
-<https://www.tinkerforge.com/en/shop/cases/case-industrial-quad-relay-v2-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_industrial_case_350.jpg
    :scale: 100 %
