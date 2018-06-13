@@ -104,7 +104,7 @@ Basic Functions
  Can return the following states:
 
  * IPCON_CONNECTION_DISCONNECTED (0): No connection is established.
- * IPCON_CONNECTION_CONNETED (1): A connection to the Brick Daemon or the
+ * IPCON_CONNECTION_CONNECTED (1): A connection to the Brick Daemon or the
    WIFI/Ethernet Extension  is established.
  * IPCON_CONNECTION_PENDING (2): IP Connection is currently trying to connect.
 

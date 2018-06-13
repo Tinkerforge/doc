@@ -172,7 +172,7 @@ S     Platinum                      Platinum/Rhodium
 T     Constantan                    Copper
 ====  ============================  ============================
 
-In our shop different connectors can be choosen. If the necessary connector
+In our shop different connectors can be chosen. If the necessary connector
 can't be selected, please contact us before your order.
 
 

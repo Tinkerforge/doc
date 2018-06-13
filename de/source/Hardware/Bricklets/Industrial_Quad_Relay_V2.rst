@@ -95,10 +95,10 @@ Das nachfolgende Bild erklärt die Pinbelegung:
    :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_v2_caption_1200.jpg
 
 
-Channel Status LEDs
+Kanal Status LEDs
 -------------------
 
-Das Bricklet verfügt über dei Standard LED sowie vier weitere LEDs (jeweils eine pro
+Das Bricklet verfügt über die Standard LED sowie vier weitere LEDs (jeweils eine pro
 Relais).
 
 Standardmäßig stellen die vier LEDs den Status der jeweiligen Relais dar. Über die API

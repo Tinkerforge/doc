@@ -31,7 +31,7 @@ Features
 
 * Misst die Feinstaubkonzentration
 * Messungen in µg/m³ für verschiedene Partikelgrößen
-* Unterscheidbare Partikelgrößen: PM1.0, PM2.5 and PM10
+* Unterscheidbare Partikelgrößen: PM1.0, PM2.5 und PM10
 * Integrierter Lüfter zur Erzeugung eines Luftstroms
 
 

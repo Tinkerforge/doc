@@ -97,7 +97,7 @@ Basic Functions
  Can return the following states:
 
  * IPConnection.CONNECTION_DISCONNECTED (0): No connection is established.
- * IPConnection.CONNECTION_CONNETED (1): A connection to the Brick Daemon or the
+ * IPConnection.CONNECTION_CONNECTED (1): A connection to the Brick Daemon or the
    WIFI/Ethernet Extension  is established.
  * IPConnection.CONNECTION_PENDING (2): IP Connection is currently trying to connect.
 

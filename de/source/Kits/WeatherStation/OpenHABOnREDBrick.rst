@@ -83,7 +83,7 @@ Erzeuge eine neue Config Datei (wie in Schritt 1 beschrieben) namens
 
 * Die "Weather Station LCD Init From Backlight" Rule schreibt den fixen
   Teil des Textes auf das Display und schaltet die Hintergrundbeleuchtung ein.
-* Die "Weather Station LCD Update \*" Rules aktualisieren die angezeigen
+* Die "Weather Station LCD Update \*" Rules aktualisieren die angezeigten
   Messwerte wenn sie sich ändern.
 * Die "Weather Station LCD Backlight" Rule schaltet die Hintergrundbeleuchtung
   ein und aus, wenn Knopf 0 am LCD 20x4 Bricklet gedrückt wird.

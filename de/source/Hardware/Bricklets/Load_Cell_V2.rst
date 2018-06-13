@@ -111,7 +111,7 @@ Anschlussklemmen sind für die Signalmessung.
    :align: center
    :target: ../../_images/Bricklets/bricklet_load_cell_v2_top_1200.jpg
 
-Eine typsiche Wägezelle hat vier oder fünf Drähte. In der Spezifikation der
+Eine typische Wägezelle hat vier oder fünf Drähte. In der Spezifikation der
 Wägezelle sollte die Belegung der Drähte dokumentiert sein. Schließe die
 Wägezelle entsprechend der folgenden Tabelle an.
 

@@ -111,7 +111,7 @@ dieser wie folgt zu beschalten:
 
 .. _industrial_digital_in_4_v2_bricklet_leds:
 
-Channel Status LEDs
+Kanal Status LEDs
 -------------------
 
 Das Bricklet verfügt über eine standard Status-LED und vier weitere LEDs

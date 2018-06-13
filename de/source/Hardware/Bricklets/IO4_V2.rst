@@ -104,9 +104,9 @@ TODO: Screenshot machen
 
 |test_pi_ref|
 
-Jeder Channel kann als Eingang oder Ausgang betrieben werden.
+Jeder Kanal kann als Eingang oder Ausgang betrieben werden.
 Für Eingangspins kann zusätzlich ein Pull-Up geschaltet werden. Die aktuelle
-Konfiguration und der Zustand der Channel wird in der Tabelle aufgelistet.
+Konfiguration und der Zustand der Kanal wird in der Tabelle aufgelistet.
 
 
 .. _io4_v2_bricklet_case:

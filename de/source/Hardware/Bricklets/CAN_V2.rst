@@ -86,7 +86,7 @@ Verbinde ein CAN Gerät an die CAN-L, CAN-H und GND Anschlussklemme.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert, können die Daten ausgelesen werden die
-über den verbundeteten CAN-Bus geschickt werden.
+über den verbundenen CAN-Bus geschickt werden.
 
 .. image:: /Images/Bricklets/bricklet_can_v2_brickv.jpg
    :scale: 100 %

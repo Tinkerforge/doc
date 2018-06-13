@@ -25,7 +25,7 @@ Industrial Dual Analog In Bricklet
 Features
 --------
 
-* Unabhängig Messung zweier Spanungen zwischen -35V und +35V (DC)
+* Unabhängig Messung zweier Spannungen zwischen -35V und +35V (DC)
 * 24Bit A/D-Wandler für hohe Auflösung
 * Kalibriert
 * Genauigkeit von 0,1% / ±4mV über den gesamten Messbereich
@@ -39,7 +39,7 @@ Beschreibung
 
 Mit dem Industrial Dual Analog In :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` Spannungen präzise messen. Beide Kanäle des
-Brickles sind kalibriert, so dass die Spannungsmessung sehr verlässlich ist.
+Bricklets sind kalibriert, so dass die Spannungsmessung sehr verlässlich ist.
 
 Mit konfigurierbaren Events ist es möglich auf Spannungsänderungen zu
 reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).

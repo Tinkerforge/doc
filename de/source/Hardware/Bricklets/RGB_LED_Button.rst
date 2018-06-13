@@ -173,7 +173,7 @@ Ein `laser-geschnittenes Gehäuse für das RGB LED Button Bricklet
 
 Der Aufbau ist am einfachsten wenn die folgenden Schritte befolgt werden:
 
-* Scraube 2x10mm Abstandshalter and Unterseite des Bricklets,
+* Schraube 2x10mm Abstandshalter und Unterseite des Bricklets,
 * schraube Unterteil an Abstandshalter,
 * schraube 2x9mm und 1x10mm Abstandshalter an Unterteil,
 * baue Seitenteile auf,

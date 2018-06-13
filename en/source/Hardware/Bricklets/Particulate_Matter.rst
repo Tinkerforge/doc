@@ -30,7 +30,7 @@ Features
 --------
 
 * Measures Particulate Matter concentration
-* Measures in µg/m³ for differenz sizes
+* Measures in µg/m³ for different sizes
 * Distinguishable particle sizes: PM1.0, PM2.5 and PM10
 * Integrated fan for air flow
 

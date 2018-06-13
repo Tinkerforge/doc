@@ -163,9 +163,9 @@ functions you have to keep track of this structure to not accidentally lock a ta
 **NFC Forum Type 4:**
 
 * Does not have pages, uses a file system instead.
-* Currently we support access to the capability container and ndef record.
+* Currently we support access to the capability container and NDEF record.
 * Select page 3 to access the capability container.
-* Select page 4 to access the Ndef record.
+* Select page 4 to access the NDEF record.
 
 Identifying, Reading and Writing tags
 -------------------------------------
@@ -206,7 +206,7 @@ again as long as the tag isn't removed from the proximity of the
 NFC Bricklet.
 
 Instead of *ReaderRequestPage* or *ReaderWritePage* you can also use 
-*ReaderRequestNdef* or *ReaderWriteNdef* to directly write Ndef messages
+*ReaderRequestNDEF* or *ReaderWriteNDEF* to directly write NDEF messages
 to an appropriate space instead of low-level pages.
 
 **Special Case for Mifare Classic**
@@ -233,11 +233,11 @@ Card Emulation
 
 To use card emulation you first have to change the mode to *MODE_CARDEMU*.
 
-Starting from *CARDEMU_STATE_IDLE* you can set the Ndef with *CardemuWriteNdef*.
+Starting from *CARDEMU_STATE_IDLE* you can set the NDEF with *CardemuWriteNDEF*.
 After that call *CardemuStartDiscovery*. If a phone is now brought near to
 the NFC Bricklet the state will change to *CARDEMU_STATE_DISCOVER_READY*.
 
-Call *CardemuStartTransfer* to transfer to previously set Ndef message to
+Call *CardemuStartTransfer* to transfer to previously set NDEF message to
 the phone.
 
 Peer-To-Peer Mode
@@ -245,15 +245,15 @@ Peer-To-Peer Mode
 
 To use P2P you first have to change the mode to *MODE_P2P*.
 
-Starting from *P2P_STATE_IDLE* you can set the Ndef with *P2PWriteNdef*.
+Starting from *P2P_STATE_IDLE* you can set the NDEF with *P2PWriteNDEF*.
 After that call *P2PStartDiscovery*. If a phone is now brought near to
 the NFC Bricklet the state will change to *P2P_STATE_DISCOVER_READY*.
 
 Call *P2PStartTransfer* with parameter 1 to transfer to previously set 
-Ndef message to the phone or with parameter 2 to read an Ndef message
+NDEF message to the phone or with parameter 2 to read an NDEF message
 from the phone.
 
-In the second case you can read the Ndef message with *P2PReadNdef*.
+In the second case you can read the NDEF message with *P2PReadNDEF*.
 
 NFC NDEF Messages
 -----------------
@@ -264,7 +264,7 @@ consist of one or more NDEF Records. Many of the predefined
 NDEF Records can be understood by any smart phone that is capable
 of NFC communication.
 
-TODO: Add link to examples using Ndef message.
+TODO: Add link to examples using NDEF message.
 
 
 .. _nfc_bricklet_test:
