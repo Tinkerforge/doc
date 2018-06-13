@@ -108,6 +108,7 @@ as long as you breath and fall again afterwards.
 
 |test_pi_ref|
 
+
 .. _humidity_bricklet_case:
 
 Case

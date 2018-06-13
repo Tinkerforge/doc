@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _multi_touch_bricklet:
 
 Multi Touch Bricklet

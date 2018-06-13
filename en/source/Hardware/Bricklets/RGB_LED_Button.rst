@@ -8,7 +8,7 @@
 .. _rgb_led_button_bricklet:
 
 RGB LED Button Bricklet
-========================
+=======================
 
 .. raw:: html
 
@@ -133,7 +133,7 @@ transparent foil.
 .. _rgb_led_button_bricklet_test:
 
 Test your RGB LED Button Bricklet
-----------------------------------
+---------------------------------
 
 |test_intro|
 

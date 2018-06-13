@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _segment_display_4x7_bricklet:
 
 Segment Display 4x7 Bricklet
@@ -44,6 +43,7 @@ used to control four 7-segment displays and a colon by a
 can be controlled independently. It is also possible to configure the
 brightness of the segments. Besides the possibility of controlling each segment
 independently, the API offers a user configurable counter.
+
 
 Technical Specifications
 ------------------------
@@ -97,6 +97,7 @@ individual segments.
    :target: ../../_images/Bricklets/bricklet_segment_display_4x7_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _segment_display_4x7_bricklet_case:
 

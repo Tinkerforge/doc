@@ -40,6 +40,7 @@ Features
 
 Beschreibung
 ------------
+
 Mit dem GPS :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` über 
 `GPS <https://de.wikipedia.org/wiki/GPS>`__ ihre Position bestimmen.
@@ -53,6 +54,7 @@ zum ersten Fix, verfügt über eine hohe Empfindlichkeit (-165dBm) und
 liefert mit 10Hz Updatefrequenz auch schnell genug Daten für Drohnen o.ä. 
 Eine interne Störunterdrückung verbessert den Empfang wenn Bluetooth- 
 oder WLAN-Geräte in der Nähe sind.
+
 
 Technische Spezifikation
 ------------------------

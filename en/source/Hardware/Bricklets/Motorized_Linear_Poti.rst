@@ -94,7 +94,6 @@ Resources
 * 3D model (`View online <http://autode.sk/2BEJDo3>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/motorized_linear_poti/motorized-poti.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/motorized_linear_poti/motorized-poti.FCStd>`__)
 
 
-
 .. _motorized_linear_poti_bricklet_test:
 
 Test your Motorized Linear Poti Bricklet
@@ -115,6 +114,7 @@ potentiometer with the GUI.
    :target: ../../_images/Bricklets/bricklet_motorized_linear_poti_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _motorized_linear_poti_bricklet_case:
 

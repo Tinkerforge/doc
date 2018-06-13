@@ -11,7 +11,21 @@ Ozone Bricklet
 ==============
 
 .. note::
-  Diese Bricklet ist noch in Entwicklung!
+  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
+
+..
+    .. raw:: html
+
+	{% tfgallery %}
+
+	Bricklets/bricklet_ozone_tilted_[?|?].jpg           Ozone Bricklet
+	Bricklets/bricklet_ozone_horizontal_[?|?].jpg       Ozone Bricklet
+	Bricklets/bricklet_ozone_master_[100|600].jpg       Ozone Bricklet mit Master Brick
+	Cases/bricklet_ozone_case_[100|600].jpg             Ozone Bricklet im Gehäuse
+	Bricklets/bricklet_ozone_brickv_[100|].jpg          Ozone Bricklet im Brick Viewer
+	Dimensions/ozone_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
+
+	{% tfgalleryend %}
 
 
 Features
@@ -50,7 +64,7 @@ Stromverbrauch                    TBD
 Messbereich                       0ppb - 250ppb
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessung (W x D x H)             TBD x TBD x TBDmm (TBD x TBD x TBD")
+Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
 Gewicht                           TBDg
 ================================  ============================================================
 
@@ -84,6 +98,34 @@ aussehen.
    :target: ../../_images/Bricklets/bricklet_ozone_brickv.jpg
 
 |test_pi_ref|
+
+
+.. _ozone_bricklet_case:
+
+Gehäuse
+-------
+
+..
+	Ein `laser-geschnittenes Gehäuse für das Ozone Bricklet
+	<https://www.tinkerforge.com/de/shop/cases/case-ozone-bricklet.html>`__ ist verfügbar.
+
+	.. image:: /Images/Cases/bricklet_ozone_case_350.jpg
+	   :scale: 100 %
+	   :alt: Gehäuse für Ozone Bricklet
+	   :align: center
+	   :target: ../../_images/Cases/bricklet_ozone_case_1000.jpg
+
+	.. include:: Ozone.substitutions
+	   :start-after: >>>bricklet_case_steps
+	   :end-before: <<<bricklet_case_steps
+
+	.. image:: /Images/Exploded/ozone_exploded_350.png
+	   :scale: 100 %
+	   :alt: Explosionszeichnung für Ozone Bricklet
+	   :align: center
+	   :target: ../../_images/Exploded/ozone_exploded.png
+
+	|bricklet_case_hint|
 
 
 .. _ozone_bricklet_programming_interface:

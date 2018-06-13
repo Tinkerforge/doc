@@ -136,6 +136,7 @@ der Batterie geändert werden können.
 
 |test_pi_ref|
 
+
 .. _industrial_digital_in_4_bricklet_case:
 
 Gehäuse

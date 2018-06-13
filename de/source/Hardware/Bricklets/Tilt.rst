@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _tilt_bricklet:
 
 Tilt Bricklet
@@ -87,6 +86,7 @@ des Tilt Bricklet angezeigt.
    :target: ../../_images/Bricklets/bricklet_tilt_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _tilt_bricklet_case:
 

@@ -80,6 +80,7 @@ A comparison video between IMU Brick 1.0 and IMU Brick 2.0 is available on Youtu
 
  <iframe class="youtube" width="640" height="360" src="https://www.youtube-nocookie.com/embed/Aq3SqVen5AQ" frameborder="0" allowfullscreen></iframe>
 
+
 Technical Specifications
 ------------------------
 
@@ -97,6 +98,7 @@ Dimensions (W x D x H)                               40 x 40 x 19mm (1.57 x 1.57
 Weight                                               12g
 Current Consumption                                  415mW (83mA at 5V)
 ===================================================  ============================================================
+
 
 Resources
 ---------

@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _dual_button_bricklet:
 
 Dual Button Bricklet

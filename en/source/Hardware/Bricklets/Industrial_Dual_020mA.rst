@@ -24,6 +24,7 @@ Industrial Dual 0-20mA Bricklet
 
 	{% tfgalleryend %}
 
+
 Features
 --------
 
@@ -128,6 +129,7 @@ depicted below.
 Interact with the sensor to see the current changing in the Brick Viewer.
 
 |test_pi_ref|
+
 
 .. _industrial_dual_0_20ma_bricklet_case:
 

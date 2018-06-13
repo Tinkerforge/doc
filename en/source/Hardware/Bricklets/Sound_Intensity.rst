@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _sound_intensity_bricklet:
 
 Sound Intensity Bricklet
@@ -99,6 +98,7 @@ intensity.
    :target: ../../_images/Bricklets/bricklet_sound_intensity_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _sound_intensity_bricklet_case:
 

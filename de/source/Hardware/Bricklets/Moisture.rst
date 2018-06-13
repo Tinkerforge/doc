@@ -3,7 +3,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _moisture_bricklet:
 
 Moisture Bricklet

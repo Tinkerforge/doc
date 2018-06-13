@@ -104,6 +104,7 @@ the corresponding count.
 
 |test_pi_ref|
 
+
 .. _rotary_encoder_bricklet_case:
 
 Case

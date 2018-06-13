@@ -36,6 +36,7 @@ Features
 * Sends and receives data through CAN bus
 * Configurable baudrate, modes and filters
 
+
 .. _can_bricklet_description:
 
 Description

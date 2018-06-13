@@ -69,6 +69,7 @@ mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
 	  <source src="../../_images/Videos/bricklet_load_cell_v2_video.webm" type="video/webm">
 	</video>
 
+
 Technische Spezifikation
 ------------------------
 

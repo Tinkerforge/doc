@@ -74,7 +74,6 @@ Resources
 * 3D model (`View online <https://autode.sk/2KeTiSi>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/can_v2/can-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/can_v2/can-v2.FCStd>`__)
 
 
-
 .. _can_v2_bricklet_test:
 
 Test your CAN Bricklet 2.0

@@ -85,6 +85,7 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/humidity-v2-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <http://autode.sk/2BecZsp>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/humidity_v2/humidity-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/humidity_v2/humidity-v2.FCStd>`__)
 
+
 .. _humidity_v2_bricklet_test:
 
 Erster Test

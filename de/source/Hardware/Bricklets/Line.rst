@@ -5,11 +5,10 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _line_bricklet:
 
 Line Bricklet
-====================
+=============
 
 .. raw:: html
 

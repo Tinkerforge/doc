@@ -129,6 +129,7 @@ state with the Brick Viewer.
 
 |test_pi_ref|
 
+
 .. _industrial_digital_out_4_bricklet_case:
 
 Case

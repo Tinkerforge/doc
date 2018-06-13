@@ -9,7 +9,7 @@
 .. _piezo_speaker_bricklet:
 
 Piezo Speaker Bricklet
-========================
+======================
 
 .. raw:: html
 
@@ -75,11 +75,10 @@ Resources
 * 3D model (`View online <http://autode.sk/2BfnHz6>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/piezo_speaker/piezo-speaker.FCStd>`__)
 
 
-
 .. _piezo_speaker_bricklet_test:
 
 Test your Piezo Speaker Bricklet
-----------------------------------
+--------------------------------
 
 |test_intro|
 
@@ -95,6 +94,7 @@ If everything went as expected you can now generate beeps.
    :target: ../../_images/Bricklets/bricklet_piezo_speaker_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _piezo_speaker_bricklet_case:
 

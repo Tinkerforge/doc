@@ -216,8 +216,8 @@ language.
 
 .. _nfc_rfid_bricklet_test:
 
-First Test
-----------
+Test your NFC/RFID Bricklet
+---------------------------
 
 |test_intro|
 

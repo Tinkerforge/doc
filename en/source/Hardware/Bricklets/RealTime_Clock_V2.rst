@@ -83,7 +83,6 @@ Resources
 * 3D model (`View online <https://autode.sk/2HQg0zb>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/real_time_clock_v2/real-time-clock-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/real_time_clock_v2/real-time-clock-v2.FCStd>`__)
 
 
-
 .. _real_time_clock_v2_bricklet_test:
 
 Test your Real-Time Clock Bricklet 2.0

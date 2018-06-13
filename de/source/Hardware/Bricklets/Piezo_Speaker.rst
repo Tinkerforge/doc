@@ -9,7 +9,7 @@
 .. _piezo_speaker_bricklet:
 
 Piezo Speaker Bricklet
-========================
+======================
 
 .. raw:: html
 
@@ -97,6 +97,7 @@ Wenn alles wie erwartet funktioniert wird können nun Töne erzeugt werden.
    :target: ../../_images/Bricklets/bricklet_piezo_speaker_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _piezo_speaker_bricklet_case:
 

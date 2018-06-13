@@ -101,6 +101,7 @@ angezeigt.
 
 |test_pi_ref|
 
+
 .. _sound_intensity_bricklet_case:
 
 Gehäuse

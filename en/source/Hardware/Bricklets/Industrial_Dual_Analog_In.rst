@@ -67,6 +67,7 @@ Dimensions (W x D x H)            40 x 40 x 11mm (1.57 x 1.57 x 0.43")
 Weight                            9g
 ================================  ============================================================
 
+
 Resources
 ---------
 
@@ -113,12 +114,6 @@ and a graph that shows the voltage over time.
    :target: ../../_images/Bricklets/bricklet_industrial_dual_analog_in_brickv.jpg
 
 |test_pi_ref|
-
-
-.. _industrial_dual_analog_in_bricklet_calibration:
-
-Calibration
------------
 
 
 .. _industrial_dual_analog_in_bricklet_case:

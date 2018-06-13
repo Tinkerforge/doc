@@ -132,6 +132,7 @@ im Brick Viewer ändern.
 
 |test_pi_ref|
 
+
 .. _industrial_dual_0_20ma_bricklet_case:
 
 Gehäuse

@@ -67,9 +67,6 @@ a stack is used, the connected motors can also be powered through the stack.
 The Brick switches automatically to the external power supply if connected.
 
 
-
-
-
 Technical Specifications
 ------------------------
 

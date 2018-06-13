@@ -63,7 +63,6 @@ values the Bricklet computes two additional values: illuminance and color
 temperature each with 16bit resolution.
 
 
-
 Technical Specifications
 ------------------------
 

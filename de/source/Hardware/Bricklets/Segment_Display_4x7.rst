@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _segment_display_4x7_bricklet:
 
 Segment Display 4x7 Bricklet
@@ -99,6 +98,7 @@ nun ein-/ausgeschaltet werden.
    :target: ../../_images/Bricklets/bricklet_segment_display_4x7_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _segment_display_4x7_bricklet_case:
 

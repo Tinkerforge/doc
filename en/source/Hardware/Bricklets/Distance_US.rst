@@ -51,6 +51,7 @@ With configurable events it is possible to react on changing distances without
 polling. Typical applications can be found in robotics, usage as light barrier
 alternative and so on.
 
+
 Technical Specifications
 ------------------------
 
@@ -80,7 +81,6 @@ Resources
 * 3D model (`View online <https://autode.sk/2Ie3TvY>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/distance_us/distance_us.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/distance_us/distance_us.FCStd>`__)
 
 
-
 .. _distance_us_bricklet_test:
 
 Test your Distance US Bricklet
@@ -100,6 +100,7 @@ If everything went as expected you can now see the measured distance.
    :target: ../../_images/Bricklets/bricklet_distance_us_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _distance_us_bricklet_case:
 

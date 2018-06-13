@@ -25,7 +25,6 @@ DMX Bricklet
 	{% tfgalleryend %}
 
 
-
 Features
 --------
 
@@ -106,6 +105,7 @@ You can now change between master/slave mode and send/receive DMX data.
    :target: ../../_images/Bricklets/bricklet_dmx_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _dmx_bricklet_case:
 

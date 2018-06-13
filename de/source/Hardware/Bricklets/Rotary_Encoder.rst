@@ -3,7 +3,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _rotary_encoder_bricklet:
 
 Rotary Encoder Bricklet
@@ -103,6 +102,7 @@ Encoderzählstand angezeigt.
    :target: ../../_images/Bricklets/bricklet_rotary_encoder_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _rotary_encoder_bricklet_case:
 

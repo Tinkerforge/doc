@@ -34,6 +34,7 @@ Features
 * Unterstützt Kartenemulations Betriebsmodi
 * Reichweite ist auf 10cm begrenzt (3.94")
 
+
 .. _nfc_bricklet_description:
 
 Beschreibung

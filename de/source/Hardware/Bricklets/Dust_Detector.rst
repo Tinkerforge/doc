@@ -34,6 +34,7 @@ Features
 
 * Misst Staubdichte zwischen 0 und 500µg/m³
 
+
 .. _dust_detector_bricklet_description:
 
 Beschreibung

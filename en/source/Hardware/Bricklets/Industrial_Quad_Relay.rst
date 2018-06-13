@@ -108,7 +108,7 @@ Please see the picture below for the pinout.
 .. _industrial_quad_relay_bricklet_test:
 
 Test your Industrial Quad Relay Bricklet
--------------------------------------------
+----------------------------------------
 
 |test_intro|
 
@@ -135,6 +135,7 @@ state with the Brick Viewer.
    :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _industrial_quad_relay_bricklet_case:
 

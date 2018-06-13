@@ -26,6 +26,7 @@ GPS Bricklet 2.0
 
 	{% tfgalleryend %}
 
+
 Features
 --------
 
@@ -100,7 +101,6 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/gps_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/gps-v2-bricklet/zipball/master>`__)
 * 3D model (`View online <http://autode.sk/2BgLPRK>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/gps_v2/gps-v2.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/gps_v2/gps-v2.FCStd>`__)
-
 
 External Antenna
 ----------------

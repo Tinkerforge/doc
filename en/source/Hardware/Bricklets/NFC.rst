@@ -269,8 +269,8 @@ TODO: Add link to examples using NDEF message.
 
 .. _nfc_bricklet_test:
 
-First Test
-----------
+Test your NFC Bricklet
+----------------------
 
 |test_intro|
 

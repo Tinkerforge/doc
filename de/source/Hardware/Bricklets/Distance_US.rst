@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _distance_us_bricklet:
 
 Distance US Bricklet
@@ -50,6 +49,7 @@ Versorgungsspannung abhängt. Abweichungen in der Versorgungsspannung führen zu
 Abweichungen in den gemessenen Entfernungswerten.
 Mit konfigurierbaren Events ist es möglich auf veränderte Distanzmessung
 zu reagieren ohne die Werte laufend abzufragen (kein Polling notwendig).
+
 
 Technische Spezifikation
 ------------------------
@@ -99,6 +99,7 @@ Wenn alles wie erwartet funktioniert wird die Entfernungsmessung angezeigt.
    :target: ../../_images/Bricklets/bricklet_distance_us_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _distance_us_bricklet_case:
 

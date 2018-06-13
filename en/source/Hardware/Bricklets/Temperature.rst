@@ -76,7 +76,6 @@ Resources
 * 3D model (`View online <http://autode.sk/2iSRJ0y>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/temperature/temperature.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/temperature/temperature.FCStd>`__)
 
 
-
 .. _temperature_bricklet_test:
 
 Test your Temperature Bricklet

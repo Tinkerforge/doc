@@ -75,7 +75,6 @@ Weight                            3g
 ================================  ============================================================
 
 
-
 Resources
 ---------
 
@@ -108,6 +107,7 @@ and fall again.
    :target: ../../_images/Bricklets/bricklet_humidity_v2_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _humidity_v2_bricklet_case:
 

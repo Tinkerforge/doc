@@ -142,6 +142,7 @@ by connecting and disconnecting the battery.
 
 |test_pi_ref|
 
+
 .. _industrial_digital_in_4_bricklet_case:
 
 Case

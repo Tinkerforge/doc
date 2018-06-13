@@ -80,7 +80,6 @@ Resources
 * 3D model (`View online <http://autode.sk/2BEB8sU>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/hall_effect/hall_effect.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/hall_effect/hall_effect.FCStd>`__)
 
 
-
 .. _hall_effect_bricklet_test:
 
 Test your Hall Effect Bricklet

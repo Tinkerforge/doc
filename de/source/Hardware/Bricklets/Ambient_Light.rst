@@ -110,6 +110,7 @@ ungefähr so aussehen wie auf dem folgenden Screenshot.
 
 |test_pi_ref|
 
+
 .. _ambient_light_bricklet_case:
 
 Gehäuse

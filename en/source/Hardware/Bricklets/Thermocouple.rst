@@ -66,6 +66,7 @@ Another option is to choose the wire option. Then you will get the Bricklet
 without any connector but with two 20cm isolated wires. This way you can 
 connect your own connector to it.
 
+
 Technical Specifications
 ------------------------
 
@@ -87,6 +88,7 @@ Dimensions (W x D x H)            40 x 30 x 8mm (1.58 x 1.18 x 0.32")
 Weight                            8g
 ================================  ============================================================
 
+
 Resources
 ---------
 
@@ -94,6 +96,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/thermocouple-bricklet/raw/master/hardware/thermocouple-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/thermocouple_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/thermocouple-bricklet/zipball/master>`__)
+
 
 .. _thermocouple_bricklet_test:
 
@@ -115,6 +118,7 @@ depicted below.
    :target: ../../_images/Bricklets/bricklet_thermocouple_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _thermocouple_bricklet_case:
 

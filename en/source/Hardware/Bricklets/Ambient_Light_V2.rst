@@ -74,6 +74,7 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/ambient-light-v2-bricklet/zipball/master>`__)
 * 3D model (`View online <http://autode.sk/2BVGBaN>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/ambient_light_v2/ambient-light-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/ambient_light_v2/ambient-light-v2.FCStd>`__)
 
+
 .. _ambient_light_v2_bricklet_test:
 
 Test your Ambient Light Bricklet 2.0

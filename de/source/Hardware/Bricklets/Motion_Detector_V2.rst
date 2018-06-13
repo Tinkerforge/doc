@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _motion_detector_v2_bricklet:
 
 Motion Detector Bricklet 2.0
@@ -115,7 +114,6 @@ angezeigt.
    :target: ../../_images/Bricklets/bricklet_motion_detector_v2_brickv.jpg
 
 |test_pi_ref|
-
 
 
 .. _motion_detector_v2_bricklet_case:

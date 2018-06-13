@@ -8,7 +8,7 @@
 .. _rgb_led_button_bricklet:
 
 RGB LED Button Bricklet
-========================
+=======================
 
 .. raw:: html
 
