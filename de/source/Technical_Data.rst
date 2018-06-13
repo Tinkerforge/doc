@@ -164,8 +164,8 @@ Bricklet Stecker 10 Pol
    "10", "IO_4",		"I/O 4"
 
 
-Bricklet Stecker 7 P
---------------------
+Bricklet Stecker 7 Pol
+----------------------
 
 .. csv-table:: 
    :header: "Pin", "Funktion", "Beschreibung"
