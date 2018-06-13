@@ -23,6 +23,12 @@ Thermocouple Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Thermocouple Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`Thermocouple Bricklet 2.0 <thermocouple_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

@@ -23,6 +23,12 @@ Real-Time Clock Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Real-Time Clock Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`Real-Time Clock Bricklet 2.0 <real_time_clock_v2_bricklet>`
+ empfohlen.
+
 
 Features
 --------

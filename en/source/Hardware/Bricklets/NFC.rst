@@ -134,7 +134,8 @@ functions you have to keep track of this structure to not accidentally lock a ta
 * Page size 16 byte.
 * 4 pages build one sector.
 * Sector 0 (pages 0-3) should not be overwritten.
-* The last page in every sector controls the authentication keys for this sector (page 7, 11, 15, ..). Do not overwrite these pages if you don't know what you are doing.
+* The last page in every sector controls the authentication keys for this sector
+  (page 7, 11, 15, ..). Do not overwrite these pages if you don't know what you are doing.
 
 `Adafruit <https://www.adafruit.com>`__ has a quite good description of the structure:
 `Link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
@@ -142,19 +143,22 @@ functions you have to keep track of this structure to not accidentally lock a ta
 **NFC Forum Type 1:**
 
 * Page size 8 byte.
-* pages 0-2 are reserved for lock control. Do not overwrite these pages if you don't know what you are doing.
+* pages 0-2 are reserved for lock control. Do not overwrite these pages if you
+  don't know what you are doing.
 * page 15 is reserved and can not be written.
 
 **NFC Forum Type 2:**
 
 * Page size 4 byte.
 * Page 0-1 are read only and contains the tag ID.
-* Page 3-4 and the last two pages (page number depends on the size of the tag) contain lock bits. Do not overwrite these pages if you don't know what you are doing.
+* Page 3-4 and the last two pages (page number depends on the size of the tag)
+  contain lock bits. Do not overwrite these pages if you don't know what you are doing.
 
 **NFC Forum Type 3:**
 
 * Page 0 contains attribute information.
-* The other pages may be read-only. You can look up if it can be written in the attribute information.
+* The other pages may be read-only. You can look up if it can be written in the
+  attribute information.
 
 **NFC Forum Type 4:**
 

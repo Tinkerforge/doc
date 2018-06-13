@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/industrial-digital-in-4-bricklet.html
-
 .. include:: Industrial_Digital_In_4.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,6 +21,12 @@ Industrial Digital In 4 Bricklet
 	Dimensions/industrial_digital_in_4_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Industrial Digital In 4 Bricklet is discontinued and is no longer sold. The
+ :ref:`Industrial Digital In 4 Bricklet 2.0 <industrial_digital_in_4_v2_bricklet>` is the recommended
+ replacement.
 
 
 Features

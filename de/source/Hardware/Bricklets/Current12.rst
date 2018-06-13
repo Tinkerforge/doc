@@ -24,7 +24,7 @@ Current12 Bricklet
 .. note::
 
  Das Current12 Bricklet ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das :ref:`Voltage/Current Bricklet <voltage_current_bricklet>`
+ Als Ersatz wird das :ref:`Voltage/Current Bricklet 2.0 <voltage_current_v2_bricklet>`
  empfohlen.
 
 

@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/particulate-matter-bricklet.html
+:shoplink: ../../../shop/bricklets/particulate-matter-bricklet.html
 
 .. include:: Particulate_Matter.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Particulate Matter Bricklet
 ===========================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

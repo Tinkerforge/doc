@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-counter-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-counter-bricklet.html
 
 .. include:: Industrial_Counter.substitutions
    :start-after: >>>substitutions
@@ -10,9 +10,6 @@
 Industrial Counter Bricklet
 ===========================
 
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
-
 .. raw:: html
 
 	{% tfgallery %}
@@ -21,7 +18,6 @@ Industrial Counter Bricklet
 	Bricklets/bricklet_industrial_counter_tilted2_[?|?].jpg          Industrial Counter Bricklet
 	Bricklets/bricklet_industrial_counter_side_[?|?].jpg             Industrial Counter Bricklet
 	Bricklets/bricklet_industrial_counter_top_[?|?].jpg              Industrial Counter Bricklet
-	Cases/bricklet_industrial_counter_case_[100|600].jpg             Industrial Counter Bricklet im Gehäuse
 	Bricklets/bricklet_industrial_counter_brickv_[100|].jpg          Industrial Counter Bricklet im Brick Viewer
 	Dimensions/industrial_counter_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
@@ -63,6 +59,14 @@ Frequenzausgang verfügen.
 
 Das Industrial Counter Bricklet hat einen 7 Pol Bricklet Stecker und wird mit einem
 ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_industrial_counter_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_industrial_counter_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_industrial_counter_video.webm" type="video/webm">
+	</video>
 
 Technische Spezifikation
 ------------------------

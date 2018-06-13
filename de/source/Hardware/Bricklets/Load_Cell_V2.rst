@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/load-cell-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/load-cell-v2-bricklet.html
 
 .. include:: Load_Cell_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Load Cell Bricklet 2.0
 ======================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -63,6 +60,14 @@ Bereich liegt.
 
 Das Load Cell Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_load_cell_v2_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_load_cell_v2_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_load_cell_v2_video.webm" type="video/webm">
+	</video>
 
 Technische Spezifikation
 ------------------------
@@ -145,7 +150,7 @@ angezeigt. Der Graph gibt den zeitlichen Verlauf des Gewichts wieder.
 |test_pi_ref|
 
 
-.. _load_cell_bricklet_v2_calibration:
+.. _load_cell_v2_bricklet_calibration:
 
 Kalibrierung
 ------------
@@ -169,7 +174,7 @@ klicke den "Calibrate Weight" Knopf.
 Das Load Cell Bricklet 2.0 ist nun für die angeschlossenen Wägezelle und den
 aktuellen Aufbau kalibriert.
 
-.. _load_cell_bricklet_v2_scale_kit:
+.. _load_cell_v2_bricklet_scale_kit:
 
 Waagenkit
 ---------

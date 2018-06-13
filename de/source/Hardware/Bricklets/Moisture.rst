@@ -1,6 +1,4 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/moisture-bricklet.html
-
 .. include:: Moisture.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -25,6 +23,10 @@ Moisture Bricklet
 	Dimensions/moisture_bricklet_v11_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
+.. note::
+
+ Das Moisture Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Momentan gibt es keinen empfohlenen Ersatz.
 
 
 Features
@@ -105,7 +107,7 @@ Korrosionsprobleme bei Hardwareversion 1.0
 Hardwareversion 1.0 des Moisture Bricklets verwendete eine Messmethode mit
 offenen Metallkontakten, die bei einigen Kunden zu Korrosionsproblemen führte.
 Daher wurde in Hardwareversion 1.1 auf eine kapazitive Messmethode gewechselt,
-die keine offenen Metallkontakte verwendet und aher keine Korrosionsprobleme
+die keine offenen Metallkontakte verwendet und daher keine Korrosionsprobleme
 habe kann.
 
 .. image:: /Images/Bricklets/bricklet_moisture_tilted_350.jpg

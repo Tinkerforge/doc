@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/sound-pressure-level-bricklet.html
+:shoplink: ../../../shop/bricklets/sound-pressure-level-bricklet.html
 
 .. include:: Sound_Pressure_Level.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Sound Pressure Level Bricklet
 =============================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -139,7 +136,7 @@ Wenn alles wie erwartet funktioniert sollte nun das Spektrum und der Dezibel-Wer
 .. _sound_pressure_level_bricklet_beispiele:
 
 Beispiele
---------
+---------
 
 Gitarrenmusik:
 
@@ -161,9 +158,6 @@ Sich ändernder Sinuston:
 	  <source src="../../_images/Videos/sound_pressure_level_moving_sine_wave.ogg" type="video/ogg">
 	  <source src="../../_images/Videos/sound_pressure_level_moving_sine_wave.webm" type="video/webm">
 	</video>
-
-
-.. _sound_pressure_level_bricklet_case:
 
 
 

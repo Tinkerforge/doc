@@ -24,6 +24,12 @@ IO-4 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The IO-4 Bricklet is discontinued. The
+ :ref:`IO-4 Bricklet 2.0 <io4_v2_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------

@@ -3,7 +3,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _ambient_light_bricklet:
 
 Ambient Light Bricklet

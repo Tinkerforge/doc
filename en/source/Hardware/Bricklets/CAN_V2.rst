@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/can-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/can-v2-bricklet.html
 
 .. include:: CAN_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 CAN Bricklet 2.0
 ================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

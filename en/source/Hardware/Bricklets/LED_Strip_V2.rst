@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/led-strip-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/led-strip-v2-bricklet.html
 
 
 .. role:: led-strip-red
@@ -29,9 +29,6 @@
 
 LED Strip Bricklet 2.0
 ======================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 
@@ -74,6 +71,13 @@ of up to 100Hz. A possible application can be found in the
 
 The LED Strip Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
 Brick with a ``7p-10p`` Bricklet cable.
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_led_strip_v2_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_led_strip_v2_video.ogg" type="video/ogg">
+	</video>
 
 Technical Specifications
 ------------------------

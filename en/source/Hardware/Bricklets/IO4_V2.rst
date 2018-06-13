@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
 
 .. include:: IO4_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 IO-4 Bricklet 2.0
 =================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 
@@ -32,6 +29,7 @@ Features
 * 4-channel digital input/output
 * Fixed 3.3V logic voltage
 * Configurable pull-ups and interrupts
+* PWM output with frequency up to 32MHz
 
 
 .. _io4_v2_bricklet_description:

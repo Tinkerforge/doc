@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/sound-pressure-level-bricklet.html
+:shoplink: ../../../shop/bricklets/sound-pressure-level-bricklet.html
 
 .. include:: Sound_Pressure_Level.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Sound Pressure Level Bricklet
 =============================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 

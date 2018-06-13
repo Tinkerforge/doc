@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-counter-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-counter-bricklet.html
 
 .. include:: Industrial_Counter.substitutions
    :start-after: >>>substitutions
@@ -10,9 +10,6 @@
 Industrial Counter Bricklet
 ===========================
 
-.. note::
-  This Bricklet is currently work-in-progress!
-
 .. raw:: html
 
 	{% tfgallery %}
@@ -21,7 +18,6 @@ Industrial Counter Bricklet
 	Bricklets/bricklet_industrial_counter_tilted2_[?|?].jpg          Industrial Counter Bricklet
 	Bricklets/bricklet_industrial_counter_side_[?|?].jpg             Industrial Counter Bricklet
 	Bricklets/bricklet_industrial_counter_top_[?|?].jpg              Industrial Counter Bricklet
-	Cases/bricklet_industrial_counter_case_[100|600].jpg             Industrial Counter Bricklet with case
 	Bricklets/bricklet_industrial_counter_brickv_[100|].jpg          Industrial Counter Bricklet in Brick Viewer
 	Dimensions/industrial_counter_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
@@ -62,6 +58,14 @@ reading of sensors that have edge counts or frequency as output.
 
 The Industrial Counter Bricklet has a 7 pole Bricklet connector and
 is connected to a Brick with a ``7p-10p`` Bricklet cable.
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_industrial_counter_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_industrial_counter_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_industrial_counter_video.webm" type="video/webm">
+	</video>
 
 Technical Specifications
 ------------------------

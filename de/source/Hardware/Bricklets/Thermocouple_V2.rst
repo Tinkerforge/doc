@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/thermocouple-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/thermocouple-v2-bricklet.html
 
 .. include:: Thermocouple_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Thermocouple Bricklet 2.0
 =========================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -58,7 +55,7 @@ erkannt und gemeldet.
 Standardmäßig wird das Bricklet mit einem K-Typ Mini-Thermoelementanschluss
 ausgeliefert. Dieser Anschluss verwendet Alumel für den negativen und Chromel
 für den positiven Kontakt. Auf Wunsch können wir das Bricklet auch mit passendem
-Anschluss für andere :ref:`Thermoelementtypen <thermocouple_bricklet_types>`
+Anschluss für andere :ref:`Thermoelementtypen <thermocouple_v2_bricklet_types>`
 ausstatten. Es kann Typ J, T, E, U und N gewählt werden. Ist der gewünschte 
 Anschluss nicht dabei, so kann das Bricklet auch mit zwei isolierten 20cm Drähten 
 geliefert werden. Somit kann auch ein eigener Anschluss angeschlossen werden.
@@ -146,7 +143,7 @@ Ein `laser-geschnittenes Gehäuse für das Thermocouple Bricklet 2.0
 
 
 
-.. _thermocouple_bricklet_types:
+.. _thermocouple_v2_bricklet_types:
 
 Thermoelement Typen
 -------------------

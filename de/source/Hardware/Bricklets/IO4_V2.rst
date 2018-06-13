@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
 
 .. include:: IO4_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 IO-4 Bricklet 2.0
 =================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -32,6 +29,7 @@ Features
 * 4 digitale Ein- und Ausgänge
 * 3,3V Logikspannung
 * Konfigurierbare Pull-Ups und Interrupts
+* PWM-Ausgabe mit einer Frequenz bis zu 32MHz
 
 
 .. _io4_v2_bricklet_description:

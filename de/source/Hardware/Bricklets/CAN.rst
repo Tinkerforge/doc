@@ -23,6 +23,11 @@ CAN Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das CAN Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`CAN Bricklet 2.0 <can_v2_bricklet>`
+ empfohlen.
 
 Features
 --------
