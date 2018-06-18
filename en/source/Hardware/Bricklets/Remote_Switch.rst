@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _remote_switch_bricklet:
 
 Remote Switch Bricklet

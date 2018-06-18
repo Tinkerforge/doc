@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/load-cell-bricklet.html
-
 .. include:: Load_Cell.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,6 +21,12 @@ Load Cell Bricklet
 	Dimensions/load_cell_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Load Cell is discontinued and is no longer sold. The
+ :ref:`Load Cell 2.0 <load_cell_v2_bricklet>` is the recommended
+ replacement.
 
 
 Features
@@ -75,6 +79,7 @@ Resolution                        24bit
 Dimensions (W x D x H)            30 x 30 x 14mm (1.18 x 1.18 x 0.55")
 Weight                            7g
 ================================  ============================================================
+
 
 Resources
 ---------

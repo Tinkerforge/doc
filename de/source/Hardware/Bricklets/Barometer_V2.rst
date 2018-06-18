@@ -73,7 +73,7 @@ Auflösung                         0,0075mbar / 6,25cm
 Genauigkeit (0-65°C vor OPC)      ± 1,1mbar
 Genauigkeit (0-65°C nach OPC)     ± 0,2mbar
 
-Temperaturberech                  -40 - 85°C
+Temperaturbereich                 -40 - 85°C
 Auflösung                         0,01°C
 Genauigkeit                       ± 1,5°C
 --------------------------------  ------------------------------------------------------------

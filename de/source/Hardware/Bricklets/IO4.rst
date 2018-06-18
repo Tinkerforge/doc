@@ -24,6 +24,11 @@ IO-4 Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das IO-4 Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`IO-4 Bricklet 2.0 <io4_v2_bricklet>`
+ empfohlen.
 
 Features
 --------
@@ -142,6 +147,7 @@ werden um Änderungen an Ausgangspins zu messen. Interrupts an Eingangspins kön
 auch mit Hilfe einer Büroklammer erzeugt werden.
 
 |test_pi_ref|
+
 
 .. _io4_bricklet_case:
 

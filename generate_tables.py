@@ -65,9 +65,9 @@ bindings_infos = \
     BindingsInfo('Shell', 'shell', 'Shell', True, True,
                  {'en': 'FIXME',
                   'de': 'FIXME'}),
-    BindingsInfo('Tinkerforge Visual Programming Language (TVPL)', 'tvpl', 'TVPL', True, False,
-                 {'en': 'FIXME',
-                  'de': 'FIXME'}),
+    #BindingsInfo('Tinkerforge Visual Programming Language (TVPL)', 'tvpl', 'TVPL', True, False,
+    #             {'en': 'FIXME',
+    #              'de': 'FIXME'}),
     BindingsInfo('Visual Basic .NET', 'vbnet', 'VBNET', True, True,
                  {'en': 'http://howtostartprogramming.com/vb-net/',
                   'de': 'http://howtostartprogramming.com/vb-net/'}), # http://openbook.galileocomputing.de/vb_net/index.htm
@@ -1153,7 +1153,7 @@ def make_device_identifier_table():
     rows = []
 
     for device_info in sorted(brick_infos + bricklet_infos, key=lambda x: x.identifier):
-        if device_info.identifier != None:
+        if device_info.is_documented and device_info.identifier != None:
             rows.append(row.format(device_info.identifier, device_info.long_display_name, device_info.ref_name))
 
     return table_head[lang] + '\n'.join(rows) + '\n'

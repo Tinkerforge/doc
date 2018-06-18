@@ -24,7 +24,7 @@ Voltage Bricklet
 .. note::
 
  Das Voltage Bricklet ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das :ref:`Analog In Bricklet 2.0 <analog_in_v2_bricklet>`
+ Als Ersatz wird das :ref:`Analog In Bricklet 3.0 <analog_in_v3_bricklet>`
  empfohlen.
 
 

@@ -108,6 +108,7 @@ from left left to right and back to left.
 
 |test_pi_ref|
 
+
 .. _rotary_poti_bricklet_case:
 
 Case

@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/voltage-current-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/voltage-current-v2-bricklet.html
 
 .. include:: Voltage_Current_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Voltage/Current Bricklet 2.0
 ============================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 

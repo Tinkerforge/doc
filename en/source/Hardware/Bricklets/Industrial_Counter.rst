@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-counter-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-counter-bricklet.html
 
 .. include:: Industrial_Counter.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Industrial Counter Bricklet
 ===========================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 
@@ -61,6 +58,14 @@ reading of sensors that have edge counts or frequency as output.
 
 The Industrial Counter Bricklet has a 7 pole Bricklet connector and
 is connected to a Brick with a ``7p-10p`` Bricklet cable.
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_industrial_counter_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_industrial_counter_video.ogg" type="video/ogg">
+	  <source src="../../_images/Videos/bricklet_industrial_counter_video.webm" type="video/webm">
+	</video>
 
 Technical Specifications
 ------------------------

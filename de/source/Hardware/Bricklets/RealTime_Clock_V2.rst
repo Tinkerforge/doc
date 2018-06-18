@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/real-time-clock-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/real-time-clock-v2-bricklet.html
 
 .. include:: RealTime_Clock_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Real-Time Clock Bricklet 2.0
 ============================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -70,7 +67,7 @@ Batterietyp                       SR621SW / 364 / SR60 / S621 / SG1 oder LR60 / 
 Batterieabmessung                 6,8 x 2,2mm (0,27 x 0,09")
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessung (W x D x H)             25 x 25 x 5mm (0,98 x 0,98 x 0,19")
+Abmessungen (W x D x H)           25 x 25 x 5mm (0,98 x 0,98 x 0,19")
 Gewicht                           3g
 ================================  ============================================================
 

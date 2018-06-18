@@ -8,7 +8,7 @@
 .. _rgb_led_button_bricklet:
 
 RGB LED Button Bricklet
-========================
+=======================
 
 .. raw:: html
 
@@ -29,7 +29,7 @@ Features
 
 * High quality 15mm x 15mm button
 * Adjustable RGB LED backlight
-* Replacable/user-printable cap inlay 
+* Replaceable/user-printable cap inlay
 
 
 .. _rgb_led_button_bricklet_description:
@@ -37,7 +37,7 @@ Features
 Description
 -----------
 
-The RGB LED :ref:`Bricklet <primer_bricklets>` is eqiupped with an adjustable
+The RGB LED :ref:`Bricklet <primer_bricklets>` is equipped with an adjustable
 RGB backlit button. It can extend :ref:`Bricks <primer_bricks>`.
 
 You can read the current state of the button (pressed/released) and
@@ -133,7 +133,7 @@ transparent foil.
 .. _rgb_led_button_bricklet_test:
 
 Test your RGB LED Button Bricklet
-----------------------------------
+---------------------------------
 
 |test_intro|
 

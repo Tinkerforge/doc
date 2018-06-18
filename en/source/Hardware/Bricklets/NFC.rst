@@ -134,7 +134,8 @@ functions you have to keep track of this structure to not accidentally lock a ta
 * Page size 16 byte.
 * 4 pages build one sector.
 * Sector 0 (pages 0-3) should not be overwritten.
-* The last page in every sector controls the authentication keys for this sector (page 7, 11, 15, ..). Do not overwrite these pages if you don't know what you are doing.
+* The last page in every sector controls the authentication keys for this sector
+  (page 7, 11, 15, ..). Do not overwrite these pages if you don't know what you are doing.
 
 `Adafruit <https://www.adafruit.com>`__ has a quite good description of the structure:
 `Link <https://learn.adafruit.com/adafruit-pn532-rfid-nfc/mifare>`__
@@ -142,26 +143,29 @@ functions you have to keep track of this structure to not accidentally lock a ta
 **NFC Forum Type 1:**
 
 * Page size 8 byte.
-* pages 0-2 are reserved for lock control. Do not overwrite these pages if you don't know what you are doing.
+* pages 0-2 are reserved for lock control. Do not overwrite these pages if you
+  don't know what you are doing.
 * page 15 is reserved and can not be written.
 
 **NFC Forum Type 2:**
 
 * Page size 4 byte.
 * Page 0-1 are read only and contains the tag ID.
-* Page 3-4 and the last two pages (page number depends on the size of the tag) contain lock bits. Do not overwrite these pages if you don't know what you are doing.
+* Page 3-4 and the last two pages (page number depends on the size of the tag)
+  contain lock bits. Do not overwrite these pages if you don't know what you are doing.
 
 **NFC Forum Type 3:**
 
 * Page 0 contains attribute information.
-* The other pages may be read-only. You can look up if it can be written in the attribute information.
+* The other pages may be read-only. You can look up if it can be written in the
+  attribute information.
 
 **NFC Forum Type 4:**
 
 * Does not have pages, uses a file system instead.
-* Currently we support access to the capability container and ndef record.
+* Currently we support access to the capability container and NDEF record.
 * Select page 3 to access the capability container.
-* Select page 4 to access the Ndef record.
+* Select page 4 to access the NDEF record.
 
 Identifying, Reading and Writing tags
 -------------------------------------
@@ -202,7 +206,7 @@ again as long as the tag isn't removed from the proximity of the
 NFC Bricklet.
 
 Instead of *ReaderRequestPage* or *ReaderWritePage* you can also use 
-*ReaderRequestNdef* or *ReaderWriteNdef* to directly write Ndef messages
+*ReaderRequestNDEF* or *ReaderWriteNDEF* to directly write NDEF messages
 to an appropriate space instead of low-level pages.
 
 **Special Case for Mifare Classic**
@@ -229,11 +233,11 @@ Card Emulation
 
 To use card emulation you first have to change the mode to *MODE_CARDEMU*.
 
-Starting from *CARDEMU_STATE_IDLE* you can set the Ndef with *CardemuWriteNdef*.
+Starting from *CARDEMU_STATE_IDLE* you can set the NDEF with *CardemuWriteNDEF*.
 After that call *CardemuStartDiscovery*. If a phone is now brought near to
 the NFC Bricklet the state will change to *CARDEMU_STATE_DISCOVER_READY*.
 
-Call *CardemuStartTransfer* to transfer to previously set Ndef message to
+Call *CardemuStartTransfer* to transfer to previously set NDEF message to
 the phone.
 
 Peer-To-Peer Mode
@@ -241,15 +245,15 @@ Peer-To-Peer Mode
 
 To use P2P you first have to change the mode to *MODE_P2P*.
 
-Starting from *P2P_STATE_IDLE* you can set the Ndef with *P2PWriteNdef*.
+Starting from *P2P_STATE_IDLE* you can set the NDEF with *P2PWriteNDEF*.
 After that call *P2PStartDiscovery*. If a phone is now brought near to
 the NFC Bricklet the state will change to *P2P_STATE_DISCOVER_READY*.
 
 Call *P2PStartTransfer* with parameter 1 to transfer to previously set 
-Ndef message to the phone or with parameter 2 to read an Ndef message
+NDEF message to the phone or with parameter 2 to read an NDEF message
 from the phone.
 
-In the second case you can read the Ndef message with *P2PReadNdef*.
+In the second case you can read the NDEF message with *P2PReadNDEF*.
 
 NFC NDEF Messages
 -----------------
@@ -260,13 +264,13 @@ consist of one or more NDEF Records. Many of the predefined
 NDEF Records can be understood by any smart phone that is capable
 of NFC communication.
 
-TODO: Add link to examples using Ndef message.
+TODO: Add link to examples using NDEF message.
 
 
 .. _nfc_bricklet_test:
 
-First Test
-----------
+Test your NFC Bricklet
+----------------------
 
 |test_intro|
 

@@ -107,6 +107,7 @@ entstanden.
 
 |test_pi_ref|
 
+
 .. _rotary_poti_bricklet_case:
 
 Gehäuse

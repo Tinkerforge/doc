@@ -85,7 +85,6 @@ Resources
 * 3D model (`View online <http://autode.sk/2BcGJWF>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/temperature_ir/temperature-ir.step>`__,  `FreeCAD <http://download.tinkerforge.com/3d/bricklets/temperature_ir/temperature-ir.FCStd>`__)
 
 
-
 .. _temperature_ir_bricklet_test:
 
 Test your Temperature IR Bricklet

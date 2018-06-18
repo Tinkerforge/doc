@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/dmx-bricklet.html
+:shoplink: ../../../shop/bricklets/dmx-bricklet.html
 
 .. include:: DMX.substitutions
    :start-after: >>>substitutions
@@ -23,7 +23,6 @@ DMX Bricklet
 	Dimensions/dmx_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
-
 
 
 Features
@@ -106,6 +105,7 @@ You can now change between master/slave mode and send/receive DMX data.
    :target: ../../_images/Bricklets/bricklet_dmx_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _dmx_bricklet_case:
 

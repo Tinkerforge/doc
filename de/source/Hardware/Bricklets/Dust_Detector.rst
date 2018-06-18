@@ -22,11 +22,18 @@ Dust Detector Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Dust Detector Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`Particulate Matter Bricklet <particulate_matter_bricklet>`
+ empfohlen.
+
 
 Features
 --------
 
 * Misst Staubdichte zwischen 0 und 500µg/m³
+
 
 .. _dust_detector_bricklet_description:
 

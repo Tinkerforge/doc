@@ -25,7 +25,7 @@ Analog In Bricklet
 .. note::
 
  Das Analog In Bricklet ist abgekündigt und wird nicht mehr verkauft.
- Als Ersatz wird das :ref:`Analog In Bricklet 2.0 <analog_in_v2_bricklet>`
+ Als Ersatz wird das :ref:`Analog In Bricklet 3.0 <analog_in_v3_bricklet>`
  empfohlen.
 
 Features
@@ -132,6 +132,7 @@ Der Graph gibt den zeitlichen Verlauf der Spannung wieder.
    :target: ../../_images/Bricklets/bricklet_analog_in_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _analog_in_bricklet_case:
 

@@ -116,7 +116,6 @@ If everything went as expected you can now see when a motion is detected.
 |test_pi_ref|
 
 
-
 .. _motion_detector_v2_bricklet_case:
 
 Case

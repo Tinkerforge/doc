@@ -44,9 +44,9 @@ humidity can be read out directly in percent and the temperature directly in °C
 With configurable events it is possible to react on changing humidity or temperature
 without polling.
 
-The sensor compensates the measured humidity internaly with the current temperature.
+The sensor compensates the measured humidity internally with the current temperature.
 A heater is integrated into the sensor and it can be turned on through the API. It
-can be used to dry the sensor in extremly wet environments.
+can be used to dry the sensor in extremely wet environments.
 
 A weather station is a typical application for this sensor. It can also be
 used in drying applications, environment monitoring etc.
@@ -75,11 +75,10 @@ Weight                            3g
 ================================  ============================================================
 
 
-
 Resources
 ---------
 
-* HDC1080 Datenblatt (`Download <https://github.com/Tinkerforge/humidity-v2-bricklet/raw/master/datasheets/hdc1080.pdf>`__)
+* HDC1080 datasheet (`Download <https://github.com/Tinkerforge/humidity-v2-bricklet/raw/master/datasheets/hdc1080.pdf>`__)
 * Schematic (`Download <https://github.com/Tinkerforge/humidity-v2-bricklet/raw/master/hardware/humidity-v2-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/humidity_v2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/humidity-v2-bricklet/zipball/master>`__)
@@ -108,6 +107,7 @@ and fall again.
    :target: ../../_images/Bricklets/bricklet_humidity_v2_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _humidity_v2_bricklet_case:
 

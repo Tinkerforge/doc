@@ -145,8 +145,8 @@ Beschreibung
 
 .. _connector_bricklet:
 
-Bricklet Stecker
-----------------
+Bricklet Stecker (10 Pol)
+-------------------------
 
 .. csv-table:: 
    :header: "Pin", "Funktion", "Beschreibung"
@@ -162,6 +162,24 @@ Bricklet Stecker
    "08", "IO_2",		"I/O 2"
    "09", "IO_3",		"I/O 3"
    "10", "IO_4",		"I/O 4"
+
+Falls nicht anders angegeben, sind alle Signale 3,3V basiert.
+
+
+Bricklet Stecker (7 Pol)
+------------------------
+
+.. csv-table:: 
+   :header: "Pin", "Funktion", "Beschreibung"
+   :widths: 25, 50, 250
+
+   "01", "5V",			"5V Signal, verbunden mit 5V des Stapels"
+   "02", "GND",			"Masse"
+   "03", "3.3V",		"3,3V bereitgestellt vom Brick"
+   "04", "CS",			"SPI Chip Select"
+   "05", "CLK",			"SPI Serial Clock"
+   "06", "MOSI",		"SPI Master Output, Slave Input"
+   "07", "MISO",		"SPI Master Input, Slave Output"
 
 Falls nicht anders angegeben, sind alle Signale 3,3V basiert.
 

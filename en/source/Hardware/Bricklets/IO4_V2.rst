@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
 
 .. include:: IO4_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 IO-4 Bricklet 2.0
 =================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 
@@ -117,7 +114,7 @@ Case
 ----
 
 A `laser-cut case for the IO-4 Bricklet 2.0
-<https://www.tinkerforge.com/en/shop/cases/case-io4-bricklet.html>`__ is available.
+<https://www.tinkerforge.com/en/shop/cases/case-io-4-bricklet.html>`__ is available.
 
 .. image:: /Images/Cases/bricklet_io4_case_350.jpg
    :scale: 100 %

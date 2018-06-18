@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/ptc-bricklet.html
-
 .. include:: PTC.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -24,6 +22,12 @@ PTC Bricklet
 	Dimensions/ptc_dimensions_[100|600].png      Umriss und Bohrplan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das PTC Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`PTC Bricklet 2.0 <ptc_v2_bricklet>`
+ empfohlen.
 
 Features
 --------
@@ -145,6 +149,7 @@ Wenn der Sensor in die Hand genommen wird sollte die angezeigte Temperatur
 steigen (oder fallen wenn es im Raum sehr warm ist).
 
 |test_pi_ref|
+
 
 .. _ptc_bricklet_case:
 

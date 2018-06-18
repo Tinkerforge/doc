@@ -25,7 +25,7 @@ Analog In Bricklet
 .. note::
 
  The Analog In Bricklet is discontinued and is no longer sold. The
- :ref:`Analog In Bricklet 2.0 <analog_in_v2_bricklet>` is the recommended
+ :ref:`Analog In Bricklet 3.0 <analog_in_v3_bricklet>` is the recommended
  replacement.
 
 
@@ -136,6 +136,7 @@ and a graph that shows the voltage over time.
    :target: ../../_images/Bricklets/bricklet_analog_in_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _analog_in_bricklet_case:
 

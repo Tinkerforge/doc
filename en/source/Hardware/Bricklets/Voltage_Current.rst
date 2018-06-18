@@ -96,8 +96,8 @@ terminal.
 
 .. _voltage_current_bricklet_test:
 
-First Test
-----------
+Test your Voltage/Current Bricklet
+----------------------------------
 
 |test_intro|
 

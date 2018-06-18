@@ -66,6 +66,7 @@ Dimensions (W x D x H)            25 x 20 x 5mm (0.98 x 0.79 x 0.19")
 Weight                            2g
 ================================  ============================================================
 
+
 Resources
 ---------
 
@@ -74,6 +75,7 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/accelerometer_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/accelerometer-bricklet/zipball/master>`__)
 * 3D model (`View online <http://autode.sk/2kpdWE3>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/accelerometer/accelerometer.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/accelerometer/accelerometer.FCStd>`__)
+
 
 .. _accelerometer_bricklet_test:
 

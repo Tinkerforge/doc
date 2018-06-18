@@ -25,7 +25,7 @@ Current12 Bricklet
 .. note::
 
  The Current12 Bricklet is discontinued and is no longer sold. The
- :ref:`Voltage/Current Bricklet <voltage_current_bricklet>` is the recommended
+ :ref:`Voltage/Current Bricklet 2.0 <voltage_current_v2_bricklet>` is the recommended
  replacement.
 
 
@@ -35,6 +35,7 @@ Features
 * Measures currents up to **12.5A**
 * Measures direction of current
 * Output in 1mA steps (12bit resolution)
+
 
 .. _current12_bricklet_description:
 

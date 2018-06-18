@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _rotary_encoder_v2_bricklet:
 
 Rotary Encoder Bricklet 2.0
@@ -81,7 +80,6 @@ Ressourcen
 * 3D Modell (`Online ansehen <http://autode.sk/2EHoGaC>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/rotary_encoder_v2/rotary-encoder-v2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/rotary_encoder_v2/rotary-encoder-v2.FCStd>`__)
 
 
-
 .. _rotary_encoder_v2_bricklet_test:
 
 Erster Test
@@ -102,6 +100,7 @@ Encoderzählstand angezeigt.
    :target: ../../_images/Bricklets/bricklet_rotary_encoder_v2_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _rotary_encoder_v2_bricklet_case:
 

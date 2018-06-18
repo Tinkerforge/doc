@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/dmx-bricklet.html
+:shoplink: ../../../shop/bricklets/dmx-bricklet.html
 
 .. include:: DMX.substitutions
    :start-after: >>>substitutions
@@ -49,7 +49,7 @@ gesendet werden um gleichmäßige Animationen zu erzeugen. Die Frames sind
 double-buffered um die Performance zu erhöhen.
 
 Im Slave Modus kann das Bricklet alle 512 Kanäle empfangen. Es kann auf jeden 
-dieser Kanäle reagiert werden. Es ist auch möglich ein exisitierendes DMX Netzwerk 
+dieser Kanäle reagiert werden. Es ist auch möglich ein existierendes DMX Netzwerk
 ohne Beeinflussung zu überwachen.
 
 Das Bricklet ist mit einer XLR Buchse und Stecker ausgestattet und verfügt über eine

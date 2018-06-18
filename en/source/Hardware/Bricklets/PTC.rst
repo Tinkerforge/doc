@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/ptc-bricklet.html
-
 .. include:: PTC.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -24,6 +22,12 @@ PTC Bricklet
 	Dimensions/ptc_dimensions_[100|600].png      Outline and drilling plan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The PTC Bricklet is discontinued and is no longer sold. The
+ :ref:`PTC Bricklet 2.0 <ptc_v2_bricklet>` is the recommended
+ replacement.
 
 Features
 --------
@@ -72,6 +76,7 @@ Fault Detection                   Open RTD element, RTD value out-of-range, shor
 Dimensions (W x D x H)            35 x 30 x 15mm (1.38 x 1.18 x 0.59")
 Weight                            8g
 ================================  ============================================================
+
 
 Resources
 ---------

@@ -1,6 +1,4 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/moisture-bricklet.html
-
 .. include:: Moisture.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -25,6 +23,11 @@ Moisture Bricklet
 	Dimensions/moisture_bricklet_v11_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Moisture Bricklet is discontinued and is no longer sold. Currently there
+ is not is the recommended replacement.
 
 
 Features

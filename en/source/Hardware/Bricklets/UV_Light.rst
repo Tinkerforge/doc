@@ -64,6 +64,7 @@ Dimensions (W x D x H)            25 x 15 x 5mm (0.98 x 0.59 x 0.19")
 Weight                            2g
 ================================  ============================================================
 
+
 Resources
 ---------
 
@@ -93,6 +94,7 @@ depicted below.
    :target: ../../_images/Bricklets/bricklet_uv_light_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _uv_light_bricklet_case:
 

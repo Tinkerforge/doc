@@ -109,6 +109,7 @@ by moving the potentiometer from bottom to top and back to bottom.
 
 |test_pi_ref|
 
+
 .. _linear_poti_bricklet_case:
 
 Case

@@ -27,6 +27,7 @@ Features
 
 * Misst UV Lichtintensität in µW/cm² und UV Index
 
+
 .. _uv_light_bricklet_description:
 
 Beschreibung
@@ -73,6 +74,7 @@ Ressourcen
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/uv-light-bricklet/zipball/master>`__)
 * 3D Modell (`Online ansehen <http://autode.sk/2BfEWjJ>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/uv_light/uv-light.FCStd>`__)
 
+
 .. _uv_light_bricklet_test:
 
 Erster Test
@@ -91,6 +93,8 @@ UV Index. Der Graph gibt den zeitlichen Verlauf der UV Lichtintensität wieder.
    :alt: UV Light Bricklet im Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_uv_light_brickv.jpg
+
+|test_pi_ref|
 
 
 .. _uv_light_bricklet_case:

@@ -95,7 +95,6 @@ Resources
 
 
 
-
 .. _motorized_linear_poti_bricklet_test:
 
 Test your Motorized Linear Poti Bricklet
@@ -117,6 +116,7 @@ potentiometer with the GUI.
 
 |test_pi_ref|
 
+
 .. _motorized_linear_poti_bricklet_case:
 
 Case
@@ -134,10 +134,10 @@ A `laser-cut case for the Motorized Linear Poti Bricklet
 The assembly is easiest if you follow the following steps:
 
 * Screw 12mm screws to bottom plate with nut,
-* screw bricklet on 12mm screws with another nut,
-* attach the two small plates from the backside of the bricklet to the bottom plate,
+* screw Bricklet on 12mm screws with another nut,
+* attach the two small plates from the backside of the Bricklet to the bottom plate,
 * attach one of the side plates,
-* attach small plate from the frontside of the bricklet to the side plate,
+* attach small plate from the frontside of the Bricklet to the side plate,
 * screw 12mm and 10mm spacer to small plates at both sides,
 * attach left and right plate,
 * attach other side plate and

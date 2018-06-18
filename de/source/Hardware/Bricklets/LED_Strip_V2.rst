@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/led-strip-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/led-strip-v2-bricklet.html
 
 
 .. role:: led-strip-red
@@ -29,9 +29,6 @@
 
 LED Strip Bricklet 2.0
 ======================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -74,6 +71,13 @@ findet man im :ref:`Starter Kit: Blinken Lights <starter_kit_blinkenlights>`:
 
 Das LED Strip Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
+.. raw:: html
+ 
+	<video class="align-center" max-width="100%" width="100%" height="auto" controls autoplay loop>
+	  <source src="../../_images/Videos/bricklet_led_strip_v2_video.mp4" type="video/mp4">
+	  <source src="../../_images/Videos/bricklet_led_strip_v2_video.ogg" type="video/ogg">
+	</video>
 
 Technische Spezifikation
 ------------------------

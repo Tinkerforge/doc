@@ -11,7 +11,21 @@ Ozone Bricklet
 ==============
 
 .. note::
- This Bricklet is currently work-in-progress!
+  This Bricklet is currently work-in-progress!
+
+..
+    .. raw:: html
+
+	{% tfgallery %}
+
+	Bricklets/bricklet_ozone_tilted_[?|?].jpg           Ozone Bricklet
+	Bricklets/bricklet_ozone_horizontal_[?|?].jpg       Ozone Bricklet
+	Bricklets/bricklet_ozone_master_[100|600].jpg       Ozone Bricklet with Master Brick
+	Cases/bricklet_ozone_case_[100|600].jpg             Ozone Bricklet with case
+	Bricklets/bricklet_ozone_brickv_[100|].jpg          Ozone Bricklet in Brick Viewer
+	Dimensions/ozone_bricklet_dimensions_[100|600].png  Outline and drilling plan
+
+	{% tfgalleryend %}
 
 
 Features
@@ -51,6 +65,7 @@ Measurement Range                 0ppb - 250ppb
 Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
 Weight                            TBDg
 ================================  ============================================================
+
 
 Resources
 ---------

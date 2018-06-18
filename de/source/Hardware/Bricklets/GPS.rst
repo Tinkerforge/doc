@@ -40,6 +40,7 @@ Features
 
 Beschreibung
 ------------
+
 Mit dem GPS :ref:`Bricklet <primer_bricklets>` können
 :ref:`Bricks <primer_bricks>` über 
 `GPS <https://de.wikipedia.org/wiki/GPS>`__ ihre Position bestimmen.
@@ -53,6 +54,7 @@ zum ersten Fix, verfügt über eine hohe Empfindlichkeit (-165dBm) und
 liefert mit 10Hz Updatefrequenz auch schnell genug Daten für Drohnen o.ä. 
 Eine interne Störunterdrückung verbessert den Empfang wenn Bluetooth- 
 oder WLAN-Geräte in der Nähe sind.
+
 
 Technische Spezifikation
 ------------------------
@@ -146,8 +148,8 @@ die Positionsdaten sind gültig.
 Gehäuse
 -------
 
-Ein `laser-geschnittenes Gehäuse für das GPS Bricklet
-<https://www.tinkerforge.com/de/shop/cases/case-gps-bricklet.html>`__ ist verfügbar.
+Ein laser-geschnittenes Gehäuse für das GPS Bricklet war verfügbar, wird
+aber nicht mehr verkauft.
 
 .. image:: /Images/Cases/bricklet_gps_case_350.jpg
    :scale: 100 %

@@ -29,6 +29,7 @@ Features
 * Measures CO2 concentration from 0 to 10000ppm (parts per million)
 * High accuracy of ±30ppm (full-scale) and ±3% (of reading)
 
+
 .. _co2_bricklet_description:
 
 Description
@@ -65,6 +66,7 @@ Dimensions (W x D x H)            60 x 65 x 15mm (2.36 x 2.56 x 0.59")
 Weight                            29g
 ================================  ============================================================
 
+
 Resources
 ---------
 
@@ -73,6 +75,7 @@ Resources
 * Outline and drilling plan (`Download <../../_images/Dimensions/co2_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/co2-bricklet/zipball/master>`__)
 * 3D model (`View online <https://autode.sk/2E2cT4z>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/co2/co2.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/co2/co2.FCStd>`__)
+
 
 .. _co2_bricklet_test:
 

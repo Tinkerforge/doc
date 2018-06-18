@@ -72,7 +72,7 @@ Resources
 .. _moisture_v2_bricklet_test:
 
 Test your Moisture Bricklet 2.0
-----------------------------------
+-------------------------------
 
 |test_intro|
 

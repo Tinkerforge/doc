@@ -62,8 +62,8 @@ We offer two compatible solid state relays in our shop:
   <https://www.tinkerforge.com/en/shop/solid-state-relay-dc-50v-80a.html>`__
 
 
-Technical Specification
------------------------
+Technical Specifications
+------------------------
 
 =====================================  ============================================================
 Property                               Value

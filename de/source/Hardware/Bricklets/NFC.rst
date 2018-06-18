@@ -142,7 +142,7 @@ verwendet wird muss diese Struktur beachtet werden, um nicht versehentlich den T
 
 * Page Größe 8 Byte
 * Pages 0-2 sind für die Zugriffskontrolle reserviert. Diese Pages sollten 
-nicht überschrieben werden, wenn man nicht weiß was man tut.
+  nicht überschrieben werden, wenn man nicht weiß was man tut.
 * Page 15 ist reserviert und kann nicht geschrieben werden.
 
 **NFC Forum Typ 2:**
@@ -150,8 +150,8 @@ nicht überschrieben werden, wenn man nicht weiß was man tut.
 * Page Größe 4 Byte
 * Page 0-1 ist nur lesbar und enthält die Tag ID.
 * Page 3-4 und die letzten zwei Pages (Die Page-Nummern hängen von der 
-Größe des Tags ab) enthalten die Lock-Bits. Diese sollten nur überschrieben
-werden, wenn man weiß was man tut.
+  Größe des Tags ab) enthalten die Lock-Bits. Diese sollten nur überschrieben
+  werden, wenn man weiß was man tut.
 
 **NFC Forum Typ 3:**
 
@@ -161,9 +161,9 @@ werden, wenn man weiß was man tut.
 **NFC Forum Typ 4:**
 
 * Hat keine Pages, nutzt stattdessen ein Dateisystem.
-* Derzeit unterstützen wir den Zugriff zu dem __ und Ndef Record.
+* Derzeit unterstützen wir den Zugriff zu dem __ und NDEF Record.
 * Page 3 auswählen, um auf das Capability Container zu zugreifen.
-* Page 4 auswählen, um auf das Ndef REcord zu zugreifen.
+* Page 4 auswählen, um auf das NDEF Record zu zugreifen.
 
 Tags Erkennen, Lesen und Schreiben
 ----------------------------------
@@ -205,8 +205,8 @@ Nachdem ein Tag selektiert wurde kann diese ohne Aufrufe von *ReaderRequestTagID
 gelesen/geschrieben werden solange das Tag nicht aus der Nähe des NFC/RFID
 Bricklets entfernt wurde.
 
-Anstelle von *ReaderRequestPage* oder *ReaderWritePage* kann auch *ReaderRequestNdef*
-oder *ReaderWriteNdef* verwendet werden, um Ndef MASSAGES innerhalb eines angemessenen
+Anstelle von *ReaderRequestPage* oder *ReaderWritePage* kann auch *ReaderRequestNDEF*
+oder *ReaderWriteNDEF* verwendet werden, um NDEF MASSAGES innerhalb eines angemessenen
 Platzes direkt zu schreiben anstatt auf Low-Level Pages.
 
 **Spezialfall für Mifare Classic**
@@ -234,26 +234,26 @@ Kartenemulation
 
 Um die Kartenemulation zu nutzen muss zunächst auf den Modus *MODE_CARDEMU* gewechselt werden.
 
-Nach dem Start von *CARDEMU_STATE_IDEL* kann das Ndef mit *CardemuWriteNdef* eingestellt werden.
-Danch muss *CardemuStartDiscovery* aufgefrufen werden. Sobald nun ein Telefon in die
+Nach dem Start von *CARDEMU_STATE_IDEL* kann das NDEF mit *CardemuWriteNDEF* eingestellt werden.
+Danach muss *CardemuStartDiscovery* aufgerufen werden. Sobald nun ein Telefon in die
 Nähe des NFC Bricklet gebracht wird wechselt der Zustand auf *CARDEMU_STATE_DISCOVER_READY*.
 
-Mit *CardemuStartTransfer* wird die zuvor festgelegte Ndef Massage auf das Telefon übertragen.
+Mit *CardemuStartTransfer* wird die zuvor festgelegte NDEF Massage auf das Telefon übertragen.
 
 Peer-To-Peer Modus
 ------------------
 
 Damit das P2P genutzt werden kann, muss auf den Modus *MODE_P2P* gewechselt werden.
 
-Nach dem Start von *P2P_STATE_IDLE* kann das Ndef mit *P2PWriteNdef* eingestellt werden.
-Danch muss *P2PStartDiscovery* aufgefrufen werden. Sobald nun ein Telefon in die
+Nach dem Start von *P2P_STATE_IDLE* kann das NDEF mit *P2PWriteNDEF* eingestellt werden.
+Danach muss *P2PStartDiscovery* aufgerufen werden. Sobald nun ein Telefon in die
 Nähe des NFC Bricklet gebracht wird wechselt der Zustand auf *P2P_STATE_DISCOVER_READY*.
 
-Mit *CardemuStartTransfer* und dem Parameter 1 wird die zuvor festgelegte Ndef
-Massage auf das Telefon übertragen. Mit dem Parameter 2 kann eine Ndef Massage auf
+Mit *CardemuStartTransfer* und dem Parameter 1 wird die zuvor festgelegte NDEF
+Massage auf das Telefon übertragen. Mit dem Parameter 2 kann eine NDEF Massage auf
 Telefon gelesen werden.
 
-Die Ndef Massage kann auch über *P2PReadNdef* gelesen werden.
+Die NDEF Massage kann auch über *P2PReadNDEF* gelesen werden.
 
 NFC NDEF Messages
 -----------------

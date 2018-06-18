@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/load-cell-bricklet.html
-
 .. include:: Load_Cell.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -23,6 +21,12 @@ Load Cell Bricklet
 	Dimensions/load_cell_bricklet_dimensions_[100|600].png  Umriss und Bohrplan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ Das Load Cell Bricklet ist abgekündigt und wird nicht mehr verkauft.
+ Als Ersatz wird das :ref:`Load Cell Bricklet 2.0 <load_cell_v2_bricklet>`
+ empfohlen.
 
 
 Features
@@ -103,7 +107,7 @@ Anschlussklemmen sind für die Signalmessung.
    :align: center
    :target: ../../_images/Bricklets/bricklet_load_cell_horizontal_1200.jpg
 
-Eine typsiche Wägezelle hat vier oder fünf Drähte. In der Spezifikation der
+Eine typische Wägezelle hat vier oder fünf Drähte. In der Spezifikation der
 Wägezelle sollte die Belegung der Drähte dokumentiert sein. Schließe die
 Wägezelle entsprechend der folgenden Tabelle an.
 

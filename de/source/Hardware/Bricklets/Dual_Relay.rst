@@ -24,6 +24,12 @@ Dual Relay Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das Dual Relay Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`Industrial Dual Relay Bricklet <industrial_dual_relay_bricklet>`
+ empfohlen.
+
 
 Features
 --------
@@ -83,7 +89,7 @@ Ressourcen
 * Schaltplan (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/hardware/dual-relay-schematic.pdf>`__)
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/dual_relay_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/zipball/master>`__)
-* 3D Modell (`Online ansehen <https://autode.sk/2pLtx4b>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/dual_relay/dual_relay.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/dual_relay/dual_relay.FCStd>`__)
+* 3D Modell (`Online ansehen <https://autode.sk/2pLtx4b>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/dual_relay/dual-relay.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/dual_relay/dual-relay.FCStd>`__)
 
 
 

@@ -22,6 +22,12 @@ Dust Detector Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Dust Detector Bricklet is discontinued. The
+ :ref:`Particulate Matter Bricklet <particulate_matter_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------
@@ -87,7 +93,7 @@ graph that shows the dust density over time.
 
 .. image:: /Images/Bricklets/bricklet_dust_detector_brickv.jpg
    :scale: 100 %
-   :alt: Dust Detector in Brick Viewer
+   :alt: Dust Detector Bricklet in Brick Viewer
    :align: center
    :target: ../../_images/Bricklets/bricklet_dust_detector_brickv.jpg
 

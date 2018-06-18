@@ -216,8 +216,8 @@ language.
 
 .. _nfc_rfid_bricklet_test:
 
-First Test
-----------
+Test your NFC/RFID Bricklet
+---------------------------
 
 |test_intro|
 
@@ -248,8 +248,8 @@ pages.
 Case
 ----
 
-A `laser-cut case for the NFC/RFID Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-nfc-rfid-bricklet.html>`__ is available.
+A laser-cut case for the NFC/RFID Bricklet was available, but is not sold
+any longer.
 
 .. image:: /Images/Cases/bricklet_nfc_rfid_case_tilted_350.jpg
    :scale: 100 %

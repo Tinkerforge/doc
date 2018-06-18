@@ -88,6 +88,7 @@ Ressourcen
 * Umriss und Bohrplan (`Download <../../_images/Dimensions/oled_64x48_bricklet_dimensions.png>`__)
 * Quelltexte und Platinenlayout (`Download <https://github.com/Tinkerforge/oled-64x48-bricklet/zipball/master>`__)
 
+
 .. _oled_64x48_bricklet_test:
 
 Erster Test

@@ -35,6 +35,7 @@ Features
 * Resolution 0.0075mbar / 6.25cm
 * Range 260 to 1260mbar
 
+
 .. _barometer_v2_bricklet_description:
 
 Description

@@ -107,6 +107,7 @@ Der Graph ist durch hoch und runter bewegen des Sliders entstanden.
 
 |test_pi_ref|
 
+
 .. _linear_poti_bricklet_case:
 
 Gehäuse

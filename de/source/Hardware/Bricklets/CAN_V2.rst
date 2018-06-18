@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/can-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/can-v2-bricklet.html
 
 .. include:: CAN_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 CAN Bricklet 2.0
 ================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -89,7 +86,7 @@ Verbinde ein CAN Gerät an die CAN-L, CAN-H und GND Anschlussklemme.
 
 |test_tab|
 Wenn alles wie erwartet funktioniert, können die Daten ausgelesen werden die
-über den verbundeteten CAN-Bus geschickt werden.
+über den verbundenen CAN-Bus geschickt werden.
 
 .. image:: /Images/Bricklets/bricklet_can_v2_brickv.jpg
    :scale: 100 %

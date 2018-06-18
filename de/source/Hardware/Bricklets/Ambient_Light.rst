@@ -3,7 +3,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _ambient_light_bricklet:
 
 Ambient Light Bricklet
@@ -110,6 +109,7 @@ ungefähr so aussehen wie auf dem folgenden Screenshot.
    :target: ../../_images/Bricklets/bricklet_ambient_light_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _ambient_light_bricklet_case:
 

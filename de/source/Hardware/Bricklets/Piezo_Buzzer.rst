@@ -3,7 +3,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _piezo_buzzer_bricklet:
 
 Piezo Buzzer Bricklet

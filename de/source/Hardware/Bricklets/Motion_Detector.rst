@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _motion_detector_bricklet:
 
 Motion Detector Bricklet

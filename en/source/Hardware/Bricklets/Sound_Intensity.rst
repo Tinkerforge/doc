@@ -5,7 +5,6 @@
    :start-after: >>>substitutions
    :end-before: <<<substitutions
 
-
 .. _sound_intensity_bricklet:
 
 Sound Intensity Bricklet
@@ -24,6 +23,12 @@ Sound Intensity Bricklet
 	Dimensions/sound_intensity_bricklet_dimensions_[100|600].png  Outline and drilling plan
 
 	{% tfgalleryend %}
+
+.. note::
+
+ The Sound Intensity Bricklet is discontinued. The
+ :ref:`Sound Pressure Level Bricklet <sound_pressure_level_bricklet>` is the recommended
+ replacement.
 
 
 Features
@@ -93,6 +98,7 @@ intensity.
    :target: ../../_images/Bricklets/bricklet_sound_intensity_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _sound_intensity_bricklet_case:
 

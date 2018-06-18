@@ -23,12 +23,18 @@ CAN Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ Das CAN Bricklet ist abgekündigt.
+ Als Ersatz wird das :ref:`CAN Bricklet 2.0 <can_v2_bricklet>`
+ empfohlen.
 
 Features
 --------
 
 * Sendet und empfängt Daten über einen CAN-Bus.
 * Konfigurierbare Baudrate, Modi und Filter
+
 
 .. _can_bricklet_description:
 
@@ -96,6 +102,7 @@ den CAN-Bus geschickt werden in der Frame-Tabelle des Brick Viewer angezeigt.
    :target: ../../_images/Bricklets/bricklet_can_brickv.jpg
 
 |test_pi_ref|
+
 
 .. _can_bricklet_case:
 

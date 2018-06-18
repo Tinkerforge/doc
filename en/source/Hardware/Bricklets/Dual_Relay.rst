@@ -24,6 +24,12 @@ Dual Relay Bricklet
 
 	{% tfgalleryend %}
 
+.. note::
+
+ The Dual Relay Bricklet is discontinued. The
+ :ref:`Industrial Dual Relay Bricklet <industrial_dual_relay_bricklet>` is the recommended
+ replacement.
+
 
 Features
 --------
@@ -83,7 +89,7 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/raw/master/hardware/dual-relay-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/dual_relay_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/dual-relay-bricklet/zipball/master>`__)
-* 3D model (`View online <https://autode.sk/2pLtx4b>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/dual_relay/dual_relay.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/dual_relay/dual_relay.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2pLtx4b>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/dual_relay/dual-relay.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/dual_relay/dual-relay.FCStd>`__)
 
 
 

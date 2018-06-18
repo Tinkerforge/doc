@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/industrial-quad-relay-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/industrial-quad-relay-v2-bricklet.html
 
 .. include:: Industrial_Quad_Relay_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Industrial Quad Relay Bricklet 2.0
 ==================================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -98,10 +95,10 @@ Das nachfolgende Bild erklärt die Pinbelegung:
    :target: ../../_images/Bricklets/bricklet_industrial_quad_relay_v2_caption_1200.jpg
 
 
-Channel Status LEDs
+Kanal Status LEDs
 -------------------
 
-Das Bricklet verfügt über dei Standard LED sowie vier weitere LEDs (jeweils eine pro
+Das Bricklet verfügt über die Standard LED sowie vier weitere LEDs (jeweils eine pro
 Relais).
 
 Standardmäßig stellen die vier LEDs den Status der jeweiligen Relais dar. Über die API
@@ -142,7 +139,7 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das Industrial Quad Relay Bricklet 2.0
-<https://www.tinkerforge.com/de/shop/cases/case-industrial-quad-relay-v2-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-industrial-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_industrial_case_350.jpg
    :scale: 100 %

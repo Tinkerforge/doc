@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/gps-bricklet.html
-
 .. include:: GPS.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -151,8 +149,8 @@ position data is valid.
 Case
 ----
 
-A `laser-cut case for the GPS Bricklet
-<https://www.tinkerforge.com/en/shop/cases/case-gps-bricklet.html>`__ is available.
+A laser-cut case for the GPS Bricklet was available, but is not sold
+any longer.
 
 .. image:: /Images/Cases/bricklet_gps_case_350.jpg
    :scale: 100 %

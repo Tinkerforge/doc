@@ -92,7 +92,6 @@ Resources
 * 3D model (`View online <http://autode.sk/2BePBLK>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/io16/io16.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/io16/io16.FCStd>`__)
 
 
-
 .. _io16_bricklet_test:
 
 Test your IO-16 Bricklet

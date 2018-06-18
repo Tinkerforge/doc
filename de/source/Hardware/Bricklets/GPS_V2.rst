@@ -26,6 +26,7 @@ GPS Bricklet 2.0
 
 	{% tfgalleryend %}
 
+
 Features
 --------
 
@@ -40,6 +41,7 @@ Features
 
 Beschreibung
 ------------
+
 Mit dem GPS :ref:`Bricklet <primer_bricklets>` 2.0 können
 :ref:`Bricks <primer_bricks>` über 
 `GPS <https://de.wikipedia.org/wiki/GPS>`__ ihre Position bestimmen.
@@ -69,6 +71,7 @@ hergestellt werden, wenn die Stromversorgung wieder zur Verfügung steht.
 
 Das GPS Bricklet 2.0 hat einen 7 Pol Bricklet Stecker und wird
 mit einem ``7p-10p`` Bricklet Kabel mit einem Brick verbunden.
+
 
 Technische Spezifikation
 ------------------------

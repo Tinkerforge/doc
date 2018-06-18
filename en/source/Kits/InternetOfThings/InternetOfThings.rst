@@ -57,7 +57,7 @@ with your own cloud or with a Raspberry Pi. The website
 access to wireless actuators from any web-enabled device.
 
 The kit basically consists of a :ref:`Master Brick <master_brick>` and a
-:ref:`Remote Switch Bricklet 2.0 <remote_switch_bricklet_v2>` which is
+:ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>` which is
 equipped with a 433MHz transceiver. Over the USB connection of the
 Master Brick you can control remote control mains switches or similar.
 An (Embedded-)PC (e.g. Raspberry Pi) either does the switching itself

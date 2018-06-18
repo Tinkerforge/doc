@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
+:shoplink: ../../../shop/bricklets/io4-v2-bricklet.html
 
 .. include:: IO4_V2.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 IO-4 Bricklet 2.0
 =================
-
-.. note::
-  Dieses Bricklet befindet sich aktuell noch in der Entwicklung!
 
 .. raw:: html
 
@@ -107,9 +104,9 @@ TODO: Screenshot machen
 
 |test_pi_ref|
 
-Jeder Channel kann als Eingang oder Ausgang betrieben werden.
+Jeder Kanal kann als Eingang oder Ausgang betrieben werden.
 Für Eingangspins kann zusätzlich ein Pull-Up geschaltet werden. Die aktuelle
-Konfiguration und der Zustand der Channel wird in der Tabelle aufgelistet.
+Konfiguration und der Zustand der Kanal wird in der Tabelle aufgelistet.
 
 
 .. _io4_v2_bricklet_case:
@@ -118,7 +115,7 @@ Gehäuse
 -------
 
 Ein `laser-geschnittenes Gehäuse für das IO-4 Bricklet 2.0
-<https://www.tinkerforge.com/de/shop/cases/case-io4-bricklet.html>`__ ist verfügbar.
+<https://www.tinkerforge.com/de/shop/cases/case-io-4-bricklet.html>`__ ist verfügbar.
 
 .. image:: /Images/Cases/bricklet_io4_case_350.jpg
    :scale: 100 %

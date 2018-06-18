@@ -1,5 +1,5 @@
 
-:DISABLED_shoplink: ../../../shop/bricklets/sound-pressure-level-bricklet.html
+:shoplink: ../../../shop/bricklets/sound-pressure-level-bricklet.html
 
 .. include:: Sound_Pressure_Level.substitutions
    :start-after: >>>substitutions
@@ -9,9 +9,6 @@
 
 Sound Pressure Level Bricklet
 =============================
-
-.. note::
-  This Bricklet is currently work-in-progress!
 
 .. raw:: html
 
@@ -52,7 +49,7 @@ pressure level can be returned weighted by the
 A, B, C, D, ITU-R 468 and flat weighting (Z).
 
 The sensor can be used to measure loudness of music, construction sites, street noises and
-other environmenstal noises in a variety of weighting standards. It is also possible to
+other environmental noises in a variety of weighting standards. It is also possible to
 determine the frequency composition (spectrum).
 
 The Sound Pressure Level Bricklet has a 7 pole Bricklet connector and is connected to a
@@ -106,7 +103,7 @@ professional sound pressure level meters only measure up to 8kHz.
 
 Additionally, the frequency response changes between microphones. To
 calibrate this we would have to calibrate in an anechoic chamber for
-each Bricklet. This is not economically feasable for a Bricklet.
+each Bricklet. This is not economically feasible for a Bricklet.
 We account for this with an additional absolute maximum 5% full-scale
 error.
 

@@ -133,6 +133,6 @@ And a mounting plate with configurable distance:
 Programming Interface
 ---------------------
 
-See :ref:` Programming Interface <programming_interface>` for a detailed description.
+See :ref:`Programming Interface <programming_interface>` for a detailed description.
 
 .. include:: Line_hlpi.table
