@@ -91,7 +91,8 @@ Resources
 * Schematic (`Download <https://github.com/Tinkerforge/motorized-linear-poti-bricklet/raw/master/hardware/motorized-linear-poti-schematic.pdf>`__)
 * Outline and drilling plan (`Download <../../_images/Dimensions/motorized_linear_poti_bricklet_dimensions.png>`__)
 * Source code and design files (`Download <https://github.com/Tinkerforge/motorized-linear-poti-bricklet/zipball/master>`__)
-* 3D model (`View online <http://autode.sk/2BEJDo3>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/motorized_linear_poti/motorized-poti.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/motorized_linear_poti/motorized-poti.FCStd>`__)
+* 3D model (`View online <https://autode.sk/2t6TFYR>`__ | Download: `STEP <http://download.tinkerforge.com/3d/bricklets/motorized_linear_poti/motorized-linear-poti.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/bricklets/motorized_linear_poti/motorized-linear-poti.FCStd>`__)
+
 
 
 
