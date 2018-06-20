@@ -245,7 +245,7 @@ Um das Skript benutzen zu können, müssen einige Änderungen vorgenommen werden
 
 Das Skript erzeugt eine ``*.step`` und eine ``*.FCStd`` - Projektdatei.
 
-Die Vollständige Dokumentation findet sich `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__.
+Die vollständige Dokumentation findet sich `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__.
 
 Gehäuse CAD Dateien
 -------------------
