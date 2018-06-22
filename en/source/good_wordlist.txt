@@ -236,3 +236,15 @@ EEPROM
 RFID
 NFC
 IMU
+IPConnection
+DMX
+macOS
+TBD
+QFF
+QFE
+QNH
+NeoPixel
+DotStar
+LIDAR
+frontside
+extendable
