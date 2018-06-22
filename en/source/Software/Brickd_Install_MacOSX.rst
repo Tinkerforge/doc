@@ -1,10 +1,10 @@
 
-.. _brickd_install_macosx:
+.. _brickd_install_macos:
 
-Brick Daemon Installation on Mac OS X
-=====================================
+Brick Daemon Installation on macOS
+==================================
 
-**Requirements**: Mac OS X 10.8 (Mountain Lion) or newer
+**Requirements**: macOS 10.8 (Mountain Lion) or newer
 
 The :ref:`Brick Daemon <brickd>` can be installed from a ``.dmg`` file.
 
@@ -26,13 +26,13 @@ following error message instead for Brick Daemon 2.0.8 and older versions:
 
 .. image:: /Images/Screenshots/brickd_macos_not_signed_1_small.jpg
    :scale: 100 %
-   :alt: Brickd installation: Error message on Mac OS X Mountain Lion
+   :alt: Brickd installation: Error message on macOS Mountain Lion
    :align: center
    :target: ../_images/Screenshots/brickd_macos_not_signed_1.jpg
 
-Since Mac OS X Mountain Lion only signed software can be installed by default.
+Since macOS Mountain Lion only signed software can be installed by default.
 Brick Daemon and its installer are signed since version 2.0.9. For 2.0.8 and
-older versions Mac OS X might show you the error message saying that the
+older versions macOS might show you the error message saying that the
 installer is broken when you try to install it. To install 2.0.8 or older you
 need to lower your system security settings to allow installing unsigned
 software by clicking:
@@ -41,11 +41,11 @@ software by clicking:
 * Security & Privacy
 * Allow applications downloaded from: Anywhere
 
-Now click ``INSTALL`` again. Mac OS X Mountain Lion might show this warning:
+Now click ``INSTALL`` again. macOS Mountain Lion might show this warning:
 
 .. image:: /Images/Screenshots/brickd_macos_not_signed_2_small.jpg
    :scale: 100 %
-   :alt: Brickd installation: Warning message on Mac OS X Mountain Lion
+   :alt: Brickd installation: Warning message on macOS Mountain Lion
    :align: center
    :target: ../_images/Screenshots/brickd_macos_not_signed_2.jpg
 

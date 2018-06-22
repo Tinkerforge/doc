@@ -25,8 +25,8 @@ Voraussetzungen
 ---------------
 
 * Windows XP oder neuer
-* Linux mit libusb 1.0 oder neuer
-* Mac OS X 10.8 oder neuer
+* Linux mit libusb 1.0.6 oder neuer
+* macOS 10.8 (Mountain Lion) oder neuer
 
 
 .. _brickd_installation:
@@ -36,14 +36,14 @@ Installation
 
 * :ref:`Windows <brickd_install_windows>`
 * :ref:`Linux <brickd_install_linux>`
-* :ref:`Mac OS X <brickd_install_macosx>`
+* :ref:`macOS <brickd_install_macos>`
 
 .. toctree::
    :hidden:
 
    Windows <Brickd_Install_Windows>
    Linux <Brickd_Install_Linux>
-   Mac OS X <Brickd_Install_MacOSX>
+   macOS <Brickd_Install_MacOSX>
 
 
 Logging
@@ -56,7 +56,7 @@ Verbindungen.
 * Windows: Nachrichten werden im Windows Event Log angezeigt. Das
   ``logviewer.exe`` Tool (Teil der brickd Installation) zeigt die brickd
   Meldungen im Windows Event Log an.
-* Linux und Mac OS X: Nachrichten werden nach ``/var/log/brickd.log`` geschrieben.
+* Linux und macOS: Nachrichten werden nach ``/var/log/brickd.log`` geschrieben.
 
 Falls der Standard Logging Einstellung nicht genug Details ausgibt, um ein
 Problem debuggen zu können, dann kann das Debug Log Level aktiviert werden.
@@ -78,7 +78,7 @@ Brick Daemon verwendet eine Konfigurationsdatei mit Schlüssel-Wert Format:
 
    C:\Program Files\Tinkerforge\Brickd\brickd.ini
 
-* Linux und Mac OS X: Die Konfigurationsdatei heißt ``brickd.conf`` und ist hier
+* Linux und macOS: Die Konfigurationsdatei heißt ``brickd.conf`` und ist hier
   gespeichert::
 
    /etc/brickd.conf
@@ -94,7 +94,7 @@ werden um die Änderungen zu übernehmen:
 
    sudo /etc/init.d/brickd restart
 
-* Mac OS X::
+* macOS::
 
    sudo launchctl stop com.tinkerforge.brickd
    sudo launchctl start com.tinkerforge.brickd
@@ -178,7 +178,7 @@ den Kommandozeilenparameter `--version`:
 
    brickd --version
 
-* Mac OS X::
+* macOS::
 
    /usr/libexec/brickd.app/Contents/MacOS/brickd --version
 

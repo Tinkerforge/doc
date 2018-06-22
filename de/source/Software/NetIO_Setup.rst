@@ -174,9 +174,9 @@ Um die Temperatur in °C anstatt °C/100 ausgeben zu können muss der Wert durch
  echo "scale=2; 2168/100" | bc
 
 Diese Kommandozeile gibt ``21.68`` aus benötigt aber eine geeignet Shell wie sie
-typischerweise auf Linux und Mac OS X, aber nicht auf Windows, zu finden ist.
+typischerweise auf Linux und macOS, aber nicht auf Windows, zu finden ist.
 Um also solche Formatierung der Ausgabe durchzuführen ist es ratsam
-``tinkerforge listen`` auf Linux oder Mac OS X zu starten. Es funktioniert
+``tinkerforge listen`` auf Linux oder macOS zu starten. Es funktioniert
 natürlich auf auf Windows erfordert es dann aber mit den Einschränkungen der
 Windows Eingabeaufforderung umzugehen.
 

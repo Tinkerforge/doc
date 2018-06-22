@@ -33,7 +33,7 @@ eingebunden werden können. Wir bieten keine vorkompilierte Bibliothek an, da
 dies zu viel Aufwand wäre alle möglichen Kombinationen von Architekturen und
 Betriebssystem zu versorgen. Die Bindings sollten aber auf den meisten
 Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
-POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
+POSIX Systeme, wie Linux und macOS, usw.) lauffähig sein.
 
 Da es keine vorkompilierte Bibliothek für die C/C++ Bindings gibt, gibt es in
 diese Sinne auch nichts zu installieren. Die empfohlene Art und Weise die
@@ -81,7 +81,7 @@ GCC
 ^^^
 
 Die einzige Abhängigkeit auf Unix-artigen Systemen ist pthreads. Somit sieht der
-Befehl um das Beispiel mit GCC unter Linux und Mac OS X zu kompilieren wie
+Befehl um das Beispiel mit GCC unter Linux und macOS zu kompilieren wie
 folgt aus::
 
  gcc -pthread -o example *.c
@@ -180,7 +180,7 @@ werden::
 Dies weist Qt Creator an, dass dies eine Konsolenanwendung namens
 "example_configuration" ist. Sie ist gegen die ``ws2_32`` und ``advapi32``
 Bibliothekeb auf Windows gelinkt und verwendet pthreads auf Unix
-(Linux, Mac OS X, etc).
+(Linux, macOS, etc).
 
 Bevor das Programm jetzt gestartet werden kann muss noch der Haken bei
 "Run in terminal" auf dem Tab für die Run Konfiguration des Projekts gesetzt

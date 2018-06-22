@@ -22,14 +22,14 @@ Installation
 
 * :ref:`Windows <brickv_install_windows>`
 * :ref:`Linux <brickv_install_linux>`
-* :ref:`Mac OS X <brickv_install_macosx>`
+* :ref:`macOS <brickv_install_macos>`
 
 .. toctree::
    :hidden:
 
    Windows <Brickv_Install_Windows>
    Linux <Brickv_Install_Linux>
-   Mac OS X <Brickv_Install_MacOSX>
+   macOS <Brickv_Install_MacOSX>
 
 
 Usage
@@ -156,7 +156,7 @@ operating system:
   `SAM-BA Linux USB kernel driver
   <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__.
 
-* On **Mac OS X** a Brick might auto detected as DVB-T device and start EyeTV or
+* On **macOS** a Brick might auto detected as DVB-T device and start EyeTV or
   a similar program automatically is started. Just close EyeTV and proceed with
   the flash procedure.
 
@@ -165,7 +165,7 @@ Select the correct serial port, typically named as follows:
 * Windows: "AT91 USB to Serial Converter" or "GPS Camera Detect" or
   "Bossa Program Port"
 * Linux: ``/dev/ttyACM0`` or ``/dev/ttyUSB0``
-* Mac OS X: ``/dev/tty.usbmodemfd131``
+* macOS: ``/dev/tty.usbmodemfd131``
 
 Flashing
 """"""""

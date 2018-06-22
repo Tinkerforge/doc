@@ -29,7 +29,7 @@ Installation
 The Shell bindings can be installed, but can also be used without installation.
 
 To install the bindings copy the ``tinkerforge`` file to a folder that is in
-the ``PATH``. For example, this folder on Linux and Mac OS X::
+the ``PATH``. For example, this folder on Linux and macOS::
 
  /usr/local/bin/
 
@@ -69,7 +69,7 @@ Brick Daemon and helps to figure out basic information about the connected
 Bricks and Bricklets.
 
 All examples are meant for typical Unix shells such as Bash. They will work
-on Linux and Mac OS X as they are. There are Bash ports for Windows that allow
+on Linux and macOS as they are. There are Bash ports for Windows that allow
 to run the examples unmodified, too.
 
 As an example let's test the configuration example for the Stepper Brick.

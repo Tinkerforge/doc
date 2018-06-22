@@ -172,8 +172,8 @@ by 100. This can be done with the ``bc`` command::
  echo "scale=2; 2168/100" | bc
 
 This command line prints ``21.68`` and requires a decent shell as typically
-available on Linux and Mac OS X, but not on Windows. So to do output formating
-like this requires to run ``tinkerforge listen`` on Linux or Mac OS X. Windows
+available on Linux and macOS, but not on Windows. So to do output formating
+like this requires to run ``tinkerforge listen`` on Linux or macOS. Windows
 will work too, but you have to work around the limitations of its command
 prompt.
 

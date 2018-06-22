@@ -20,13 +20,13 @@ compliant. This allows to use them with all `.NET compatible languages
 Mathematica's `.NET/Link support
 <http://reference.wolfram.com/language/NETLink/tutorial/CallingNETFromTheWolframLanguage.html>`__.
 It requires the `.NET Framework <http://www.microsoft.com/net>`__ on Windows
-and the `Mono Framework <http://www.mono-project.com/>`__ on Linux and Mac OS X.
+and the `Mono Framework <http://www.mono-project.com/>`__ on Linux and macOS.
 
 
 Requirements
 ------------
 
-* Mathematica 5.0 or newer on Windows, Linux or Mac OS X with .NET/Link support
+* Mathematica 5.0 or newer on Windows, Linux or macOS with .NET/Link support
 
 
 .. _api_bindings_mathematica_install:
@@ -57,7 +57,7 @@ On Linux it's located here (for Mathematica 10 replace ``9.0`` by ``10.0``)::
 
  /usr/local/Wolfram/Mathematica/9.0/AddOns/Applications/
 
-And on Mac OS X it's located here::
+And on macOS it's located here::
 
  /Applications/Mathematica.app/AddOns/Applications/
 
@@ -71,7 +71,7 @@ Like this on Linux::
 
  /usr/local/Wolfram/Mathematica/9.0/AddOns/Applications/Tinkerforge/assembly/Tinkerforge.dll
 
-And like this on Mac OS X::
+And like this on macOS::
 
  /Applications/Mathematica.app/AddOns/Applications/Tinkerforge/assembly/Tinkerforge.dll
 
@@ -101,7 +101,7 @@ On Linux it's located here (for Mathematica 10 replace ``9.0`` by ``10.0``)::
 
  /usr/local/Wolfram/Mathematica/9.0/SystemFiles/Links/NETLink/
 
-And on Mac OS X it's located here::
+And on macOS it's located here::
 
  /Applications/Mathematica.app/SystemFiles/Links/NETLink/
 
@@ -183,7 +183,7 @@ You can also call ``LoadNETAssembly[]`` with an absolute path to the
 
   LoadNETAssembly["C:\\Absolute\\path\\to\\Tinkerforge.dll"]
 
-Or like this on Linux and Mac OS X:
+Or like this on Linux and macOS:
 
 .. code-block:: mathematica
 

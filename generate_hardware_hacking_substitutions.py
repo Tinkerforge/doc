@@ -513,7 +513,7 @@ smoke_detector_steps = {
 .. |step4_sleep_in_c| replace::
  There is no portable sleep function in C. On Windows ``windows.h`` declares
  a ``Sleep`` function that takes the duration in milliseconds. On POSIX
- systems such as Linux and Mac OS X there is a ``sleep`` function declared
+ systems such as Linux and macOS there is a ``sleep`` function declared
  in ``unistd.h`` that takes the duration in seconds.
 
 .. |step4_connect_afterwards| replace::
@@ -632,7 +632,7 @@ smoke_detector_steps = {
 .. |step4_sleep_in_c| replace::
  Es gibt keine portable Sleep Funktion in C. Auf Windows deklariert `windows.h``
  eine ``Sleep`` Funktion die die Wartedauer in Millisekunden übergeben bekommt.
- Auf POSIX Systemen wie Linux und Mac OS X gibt es eine ``sleep`` Funktion
+ Auf POSIX Systemen wie Linux und macOS gibt es eine ``sleep`` Funktion
  deklariert in ``unistd.h`` die die Wartedauer in Sekunden übergeben bekommt.
 
 .. |step4_connect_afterwards| replace::

@@ -142,7 +142,7 @@ Is the Brick Daemon running? You can check in the list of processes
 if the Daemon is running (e.g. in the task manager on Windows).
 
 If it isn't running but it is installed correctly, you can 
-try to restart the service (Windows) or daemon (Mac OS X
+try to restart the service (Windows) or daemon (macOS
 and Linux). The service/daemon should also be started automatically 
 on startup.
 

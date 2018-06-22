@@ -67,7 +67,7 @@ hochgeladen werden. Über vier Taster auf dem
 verschiedenen Modi umgeschaltet werden.
 
 Ein Teil dieser Beispielprojekte ist in einer Demo-Anwendung implementiert 
-worden. Diese ist für Windows, Linux und Mac OS X verfügbar und kann benutzt
+worden. Diese ist für Windows, Linux und macOS verfügbar und kann benutzt
 werden um die Station zu testen.
 
 Das Kit ermöglicht es nach eigenen Wünschen sowohl Soft- als auch Hardware
@@ -118,7 +118,7 @@ Ressourcen
 * Beispielquelltext für :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Beispielquelltext für :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
 * Beispielkonfiguration für :ref:`starter_kit_weather_station_openhab` (`Download <https://github.com/Tinkerforge/weather-station/tree/master/openhab>`__)
-* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Quelltext <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
+* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `macOS <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Quelltext <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
 
 Firmware aktualisieren und erste Tests
 --------------------------------------

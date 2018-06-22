@@ -67,7 +67,7 @@ Preferences-Ordner Beispielpfade:
 
 * Windows: ``C:\Users\<user>\AppData\local\MathWorks\MATLAB\R2016a``
 * Linux: ``/home/<user>/.matlab/R2016a``
-* Mac OS X: ``/Users/<user>/.matlab/R2016a``
+* macOS: ``/Users/<user>/.matlab/R2016a``
 
 Kopiere die ``Tinkerforge.jar`` Datei vom ``matlab/`` Ordner in den
 Preferences-Ordner. Dann muss die ``Tinkerforge.jar`` Datei zu MATLABs
@@ -77,7 +77,7 @@ im Preferences-Ordner anlegen bzw. bearbeiten und den absoluten Pfad zur
 
 * Windows: ``C:\Users\<User>\AppData\local\MathWorks\MATLAB\R2016a\Tinkerforge.jar``
 * Linux: ``/home/<User>/.matlab/R2016a/Tinkerforge.jar``
-* Mac OS X: ``/Users/<User>/.matlab/R2016a/Tinkerforge.jar``
+* macOS: ``/Users/<User>/.matlab/R2016a/Tinkerforge.jar``
 
 Start MATLAB neu und führe folgenden Befehl aus, er sollte die
 ``Tinkerforge.jar`` Datei mit auflisten:

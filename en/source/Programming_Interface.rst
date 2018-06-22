@@ -43,7 +43,7 @@ This generic approach makes it possible to have compatibility between all
 Bricks and Bricklets, including future ones.
 
 The Programming Interface is available for Windows, Linux and 
-Mac OS X as well as mobile operating systems, such as Android,
+macOS as well as mobile operating systems, such as Android,
 iOS and Windows Phone.
 
 .. note::

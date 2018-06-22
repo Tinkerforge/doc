@@ -225,7 +225,7 @@ Um sich die Leiterkarte mit dem 3D-Viewer von KiCad anzusehen muss der KISYS3DMO
 3. Ändern des KISYS3DMOD Pfades auf ``$HOME/tf/kicad-libraries/3d/`` (Der Pfad muss in KiCad absolut angegeben werden)
 4. KiCad neustarten
 
-KiCad funktioniert auch auf Windows und Mac OS X.
+KiCad funktioniert auch auf Windows und macOS.
 
 3D Modelle erzeugen
 -------------------
@@ -259,7 +259,7 @@ Bricklets mit folgendem Befehl geöffent werden::
 
  freecad ~/tf/cases/ambient_light/ambient_light.fcstd
 
-FreeCAD funktioniert auch auf Windows und Mac OS X.
+FreeCAD funktioniert auch auf Windows und macOS.
 
 Dokumentation
 -------------

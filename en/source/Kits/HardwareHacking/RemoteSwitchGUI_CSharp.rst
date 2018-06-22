@@ -13,7 +13,7 @@ an :ref:`Industrial Quad Relay Bricklet <industrial_quad_relay_bricklet>` as
 described :ref:`here <starter_kit_hardware_hacking_remote_switch_hardware_setup>`.
 
 A demo application based on this project is available
-(Download: `Windows, Linux, Mac OS X
+(Download: `Windows, Linux, macOS
 <https://github.com/Tinkerforge/hardware-hacking/raw/master/remote_switch_gui/csharp/RemoteSwitchGUI.exe>`__):
 
 * On Windows it requires the `.NET Framework
@@ -22,8 +22,8 @@ A demo application based on this project is available
 * On Linux it requires the `Mono Runtime for Linux
   <http://www.mono-project.com/Mono:Linux>`__, but you probably have this
   installed already, too.
-* On Mac OS X it requires the `Mono Runtime for Mac OS X
-  <http://www.mono-project.com/Mono:OSX>`__. Since Mac OS 10.8 you also have to
+* On macOS it requires the `Mono Runtime for macOS
+  <http://www.mono-project.com/Mono:OSX>`__. Since macOS 10.8 you also have to
   install `XQuartz <http://xquartz.macosforge.org/>`__ to make the Mono Runtime
   work properly. Now you can start it with ``mono RemoteSwitchGUI.exe`` from a
   terminal window.

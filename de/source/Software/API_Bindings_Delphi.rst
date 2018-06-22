@@ -31,7 +31,7 @@ eingebunden werden können. Wir bieten keine vorkompilierte Bibliothek an, da
 dies zu viel Aufwand wäre alle möglichen Kombinationen von Architekturen und
 Betriebssystem zu versorgen. Die Bindings sollten aber auf den meisten
 Architekturen (ARM, x86, etc.) und den meisten Betriebssystemen (Windows und
-POSIX Systeme, wie Linux und Mac OS X, usw.) lauffähig sein.
+POSIX Systeme, wie Linux und macOS, usw.) lauffähig sein.
 
 Da es keine vorkompilierte Bibliothek für die Delphi/Lazarus Bindings gibt, gibt es in
 diese Sinne auch nichts zu installieren. Die empfohlene Art und Weise die

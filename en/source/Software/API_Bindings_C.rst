@@ -33,7 +33,7 @@ We do not offer a precompiled library, since it would be a
 pain in the ass to provide them for all combinations of architectures and
 operating systems. This means, the
 bindings should work on most architectures (ARM, x86, etc.) and on most
-operating systems (Windows and POSIX systems, such as Linux and Mac OS X, etc.).
+operating systems (Windows and POSIX systems, such as Linux and macOS, etc.).
 
 Because there is no precompiled library for the C/C++ bindings there is nothing
 to install as such. The recommended way of using the bindings is to include their
@@ -79,7 +79,7 @@ GCC
 ^^^
 
 The only dependency on Unix-like systems is pthreads, therefore a
-compilation of the example with GCC on Linux and Mac OS X looks like this::
+compilation of the example with GCC on Linux and macOS looks like this::
 
  gcc -pthread -o example *.c
 
@@ -172,7 +172,7 @@ Copy and paste the following lines into it and save the result::
 
 This tells Qt Creator that this is an console application named
 "example_configuration". It is linked to the ``ws2_32`` and ``advapi32``
-libraries on Windows and uses pthreads on Unix (Linux, Mac OS X, etc).
+libraries on Windows and uses pthreads on Unix (Linux, macOS, etc).
 
 Before stating the program you need to tick the "Run in terminal" check box on
 the project's run configuration tab, otherwise its output will not be visible.

@@ -30,7 +30,7 @@ project hassle-free. We do not offer a precompiled library, since it would be
 a pain in the ass to provide them for all combinations of architectures and
 operating systems. This means, the bindings should work on most architectures
 (ARM, x86, etc.) and on most operating systems (Windows and POSIX systems such
-as Linux and Mac OS X, etc.).
+as Linux and macOS, etc.).
 
 Because there is no precompiled library for the Delphi/Lazarus bindings there is nothing
 to install as such. The recommended way of using the bindings is to include their
