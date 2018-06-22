@@ -46,10 +46,10 @@ Beschreibung
 Das *Starterkit: Serverraum-Überwachung* ist ein Open Source Kit um
 Serverraum-Installationen zu überwachen. Das Basiskit ist mit folgenden Sensoren
 ausgestattet: :ref:`Ambient Light Bricklet 2.0 <ambient_light_v2_bricklet>`
-(überwacht z.B. die Raumbeleuchtung), :ref:`Humidity Bricklet <humidity_bricklet>`
+(überwacht z.B. die Raumbeleuchtung), :ref:`Humidity Bricklet 2.0 <humidity_v2_bricklet>`
 (überwacht Luftfeuchtigkeit),
 :ref:`Temperature Bricklet <temperature_bricklet>` (überwacht die Temperatur im
-Rack) und ein :ref:`PTC Bricklet <ptc_bricklet>` mit Pt100 Temperaturfühler
+Rack) und ein :ref:`PTC Bricklet 2.0 <ptc_v2_bricklet>` mit Pt100 Temperaturfühler
 (z.B. zum Überwachen der Temperatur in einem Server).
 
 Das Kit-Gehäuse kann direkt in einem 19" Server Rack befestigt werden (1HE). Mit 
@@ -124,8 +124,8 @@ Eigenschaft                       Wert
 Beleuchtungsstärke                0Lux - 64000Lux in 0,01Lux Schritten
 Temperatur (Ambient)              -40°C - 85°C in 0,01°C Schritten
 Pt100 Sensor                      -20°C - 450°C
-PTC Bricklet                      0,03125°C (15Bit) Auflösung
-Humidity Bricklet                 0% - 100% relative Luftfeuchtigkeit
+PTC Bricklet 2.0                  0,03125°C (15Bit) Auflösung
+Humidity Bricklet 2.0             0% - 100% relative Luftfeuchtigkeit
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Abmessungen (L x B x H)           482 x 92 x 44mm (19.0 x 3.62 x 1.75")
@@ -152,10 +152,10 @@ und deren Firmware gegebenenfalls aktualisiert werden.
 Dazu muss der :ref:`Brick Daemon <brickd_installation>` und
 der :ref:`Brick Viewer <brickv_installation>` installiert werden.
 
-Als nächstes sollte das PTC Bricklet konfiguriert und der 
+Als nächstes sollte das PTC Bricklet 2.0 konfiguriert und der 
 Temperaturfühler (2-Leiter) angeschlossen werden. Wie dies funktioniert
-ist :ref:`hier <ptc_bricklet_jumper_configuration>` und
-:ref:`hier <ptc_bricklet_connectivity>` dokumentiert.
+ist :ref:`hier <ptc_v2_bricklet_jumper_configuration>` und
+:ref:`hier <ptc_v2_bricklet_connectivity>` dokumentiert.
 
 Anschließend wird die Ethernet Extension auf den Master Brick
 gesteckt und alle Bricklets angeschlossen. Der Master Brick wird per USB

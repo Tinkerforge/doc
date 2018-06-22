@@ -47,11 +47,11 @@ Description
 The *Starter Kit: Server Room Monitoring* is an open source kit that can
 monitor server room installations. The basic kit is equipped with the following
 Sensors: :ref:`Ambient Light Bricklet 2.0 <ambient_light_v2_bricklet>`
-(monitors room illumination), :ref:`Humidity Bricklet <humidity_bricklet>`
+(monitors room illumination), :ref:`Humidity Bricklet 2.0 <humidity_v2_bricklet>`
 (monitors humidity), 
 :ref:`Temperature Bricklet <temperature_bricklet>` (monitors
 temperature in the server rack) and a
-:ref:`PTC Bricklet <ptc_bricklet>` with attachable Pt100 temperature sensor
+:ref:`PTC Bricklet 2.0 <ptc_v2_bricklet>` with attachable Pt100 temperature sensor
 probe (monitors temperature in a server). 
 
 The kits enclosure can be mounted directly in a 19" server rack
@@ -122,8 +122,8 @@ Property                          Value
 Illumination                      0lux - 64000lux in 0.01lux steps
 Ambient Temperature               -40°C - 85°C in 0.01°C steps
 Pt100 Sensor Probe                -20°C - 450°C
-PTC Bricklet                      0.03125°C (15bit) resolution
-Humidity Bricklet                 0% - 100% relative humidity
+PTC Bricklet 2.0                  0.03125°C (15bit) resolution
+Humidity Bricklet 2.0             0% - 100% relative humidity
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
 Dimensions (W x D x H)            482 x 92 x 44mm (19.0 x 3.62 x 1.75")
@@ -148,9 +148,9 @@ As a very first step you should try out and update your Bricks and Bricklets.
 
 For that you need to install the :ref:`Brick Daemon <brickd_installation>` and
 the :ref:`Brick Viewer <brickv_installation>`. At next you should
-configure the PTC Bricklet and attach the temperature probe (2-wire).
-documented :ref:`here <ptc_bricklet_jumper_configuration>` and 
-:ref:`here <ptc_bricklet_connectivity>`.
+configure the PTC Bricklet 2.0 and attach the temperature probe (2-wire).
+documented :ref:`here <ptc_v2_bricklet_jumper_configuration>` and 
+:ref:`here <ptc_v2_bricklet_connectivity>`.
 
 After this put the Ethernet Extension on top of the Master Brick, connect all
 Bricklets to it and connect it via USB to your PC. 
