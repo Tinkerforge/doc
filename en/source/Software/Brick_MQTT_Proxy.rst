@@ -531,11 +531,11 @@ payloads.
                                                                                 |                                      | :tcpip:func:`motion <BrickletGPSV2.get_motion>`
                                                                                 |                                      | :tcpip:func:`date_time <BrickletGPSV2.get_date_time>`
                                                                                 |                                      | :tcpip:func:`satellite_system_status <BrickletGPSV2.get_satellite_system_status>`
+                                                                                |                                      | :tcpip:func:`satellite_status <BrickletGPSV2.get_satellite_status>`
                                                                                 |                                      | :tcpip:func:`fix_led_config <BrickletGPSV2.get_fix_led_config>`
                                                                                 |                                      | :tcpip:func:`sbas_config <BrickletGPSV2.get_sbas_config>`
                                                                                 |                                      | :tcpip:func:`status_led_config <BrickletGPSV2.get_status_led_config>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickletGPSV2.get_chip_temperature>`
-                                                                                |                                      | :tcpip:func:`get_satellite_status/set <BrickletGPSV2.get_satellite_status>` (calls :tcpip:func:`get_satellite_status <BrickletGPSV2.get_satellite_status>` with the parameters provided by the *get_satellite_status/set* topic and the output of the getter being published to the *satellite_status* topic)
                                                                                 |                                      | :tcpip:func:`restart/set <BrickletGPSV2.restart>`
                                                                                 |                                      | :tcpip:func:`fix_led_config/set <BrickletGPSV2.set_fix_led_config>`
                                                                                 |                                      | :tcpip:func:`sbas_config/set <BrickletGPSV2.set_sbas_config>`
