@@ -731,10 +731,8 @@ payloads.
  :ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>`                         | bricklet/piezo_speaker               | :tcpip:func:`beep/set <BrickletPiezoSpeaker.beep>`
                                                                                 |                                      | :tcpip:func:`morse_code/set <BrickletPiezoSpeaker.morse_code>`
 
- :ref:`Outdoor Weather Bricklet <outdoor_weather_bricklet>`                     | bricklet/outdoor_weather             | :tcpip:func:`station_identifiers <BrickletOutdoorWeather.get_station_identifiers>`
-                                                                                |                                      | :tcpip:func:`station_data/set <BrickletOutdoorWeather.get_station_data>` (calls :tcpip:func:`get_station_data <BrickletOutdoorWeather.get_station_data>` with the parameters provided by the *get_station_data/set* topic and the output of the getter being published to the *station_data* topic)
-                                                                                |                                      | :tcpip:func:`sensor_identifiers <BrickletOutdoorWeather.get_sensor_identifiers>`
-                                                                                |                                      | :tcpip:func:`sensor_data/set <BrickletOutdoorWeather.get_sensor_data>` (calls :tcpip:func:`get_sensor_data <BrickletOutdoorWeather.get_sensor_data>` with the parameters provided by the *get_sensor_data/set* topic and the output of the getter being published to the *sensor_data* topic)
+ :ref:`Outdoor Weather Bricklet <outdoor_weather_bricklet>`                     | bricklet/outdoor_weather             | :tcpip:func:`station_data <BrickletOutdoorWeather.get_station_data>`
+                                                                                |                                      | :tcpip:func:`sensor_data <BrickletOutdoorWeather.get_sensor_data>`
 
  :ref:`PTC Bricklet <ptc_bricklet>`                                             | bricklet/ptc                         | :tcpip:func:`temperature <BrickletPTC.get_temperature>`
                                                                                 |                                      | :tcpip:func:`resistance <BrickletPTC.get_resistance>`
