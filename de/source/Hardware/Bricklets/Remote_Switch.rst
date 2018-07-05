@@ -1,6 +1,4 @@
 
-:shoplink: ../../../shop/bricklets/remote-switch-bricklet.html
-
 .. include:: Remote_Switch.substitutions
    :start-after: >>>substitutions
    :end-before: <<<substitutions
@@ -27,7 +25,7 @@ Remote Switch Bricklet
 
 .. note::
 
- Das Remote switch Bricklet ist abgekündigt.
+ Das Remote switch Bricklet ist abgekündigt und wird nicht mehr verkauft.
  Als Ersatz wird das :ref:`Remote Switch Bricklet 2.0 <remote_switch_v2_bricklet>`
  empfohlen.
 
