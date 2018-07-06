@@ -225,7 +225,7 @@ Um sich die Leiterkarte mit dem 3D-Viewer von KiCad anzusehen muss der KISYS3DMO
 3. Ändern des KISYS3DMOD Pfades auf ``$HOME/tf/kicad-libraries/3d/`` (Der Pfad muss in KiCad absolut angegeben werden)
 4. KiCad neustarten
 
-KiCad funktioniert auch auf Windows und Mac OS X.
+KiCad funktioniert auch auf Windows und macOS.
 
 3D Modelle erzeugen
 -------------------
@@ -245,7 +245,7 @@ Um das Skript benutzen zu können, müssen einige Änderungen vorgenommen werden
 
 Das Skript erzeugt eine ``*.step`` und eine ``*.FCStd`` - Projektdatei.
 
-Die Vollständige Dokumentation findet sich `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__.
+Die vollständige Dokumentation findet sich `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__.
 
 Gehäuse CAD Dateien
 -------------------
@@ -259,7 +259,7 @@ Bricklets mit folgendem Befehl geöffent werden::
 
  freecad ~/tf/cases/ambient_light/ambient_light.fcstd
 
-FreeCAD funktioniert auch auf Windows und Mac OS X.
+FreeCAD funktioniert auch auf Windows und macOS.
 
 Dokumentation
 -------------

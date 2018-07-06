@@ -31,7 +31,7 @@ Die Shell Bindings können installiert werden, können aber auch ohne Installati
 verwendet werden.
 
 Zur Installation wird die ``tinkerforge`` Datei in einen Ordner kopiert der
-sich im PATH befindet. Das kann unter Linux und Mac OS X folgender Ordner sein::
+sich im PATH befindet. Das kann unter Linux und macOS folgender Ordner sein::
 
  /usr/local/bin/
 
@@ -73,7 +73,7 @@ Bindings. Brick Viewer kann sich mit Brick Daemon verbinden und gibt
 Informationen über die angeschlossenen Bricks und Bricklets aus.
 
 Alle Beispiele sind für typische Unix Shells wie z.B. Bash gemacht. Sie
-funktionieren auf Linux und Mac OS X so wie sie sind. Es gibt Portierungen von
+funktionieren auf Linux und macOS so wie sie sind. Es gibt Portierungen von
 Bash für Windows, die es ermöglichen die Beispiele unverändert auszuführen.
 
 Als Beispiel wird im Folgenden das Konfigurationsbeispiel des Stepper Bricks

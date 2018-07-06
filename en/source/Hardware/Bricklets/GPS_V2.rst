@@ -111,7 +111,7 @@ The GPS Bricklet 2.0 does not have an internal antenna. An external antenna has 
 The connector is short-circuit protected and supplies the antenna with 
 3.3V/20mA. 
 
-A compatible 25mmx25mm patch antenna is included with the Bricklet and attached to the bottom. You can
+A compatible 25 x 25mm patch antenna is included with the Bricklet and attached to the bottom. You can
 disconnect the U.FL connector and connect your own antenna. A compatible antenna with a long
 lead is `available in the shop <https://www.tinkerforge.com/en/shop/gps-antenna-sma-300cm.html>`__.
 

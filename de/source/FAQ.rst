@@ -152,7 +152,7 @@ Läuft der Brick Daemon? Dies kann man in der Liste der laufenden
 Prozesse nachsehen (zum Beispiel im Task Manager unter Windows).
 
 Falls er nicht läuft aber korrekt installiert ist, ist es möglich
-den Service (Windows) oder den Daemon (Mac OS X und Linux) neu zu starten.
+den Service (Windows) oder den Daemon (macOS und Linux) neu zu starten.
 Der Brick Daemon wird auch automatisch beim Rechnerneustart gestartet.
 
 **WIFI Extension**:

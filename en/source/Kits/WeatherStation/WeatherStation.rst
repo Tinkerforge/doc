@@ -64,7 +64,7 @@ website or uploaded to `Xively <https://www.xively.com/>`__.
 With the four buttons of the :ref:`LCD 20x4 Bricklet <lcd_20x4_bricklet>` 
 it is possible to control different modes.
 
-A demo application, available for Windows, Linux and Mac OS X, implements
+A demo application, available for Windows, Linux and macOS, implements
 some of these example projects and can be used to test the station.
 
 The kit allows to modify soft- and hardware. The casing consists of
@@ -114,7 +114,7 @@ Resources
 * Example Source Code for :ref:`starter_kit_weather_station_website` (Download: `PHP <https://github.com/Tinkerforge/weather-station/tree/master/website/php>`__)
 * Example Source Code for :ref:`starter_kit_weather_station_button_control` (Download: `C# <https://github.com/Tinkerforge/weather-station/tree/master/button_control/csharp>`__)
 * Example Configuration for :ref:`starter_kit_weather_station_openhab` (`Download <https://github.com/Tinkerforge/weather-station/tree/master/openhab>`__)
-* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
+* :ref:`starter_kit_weather_station_demo` (Download: `Windows <http://download.tinkerforge.com/kits/weather_station/windows/starter_kit_weather_station_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/weather_station/linux/starter-kit-weather-station-demo_linux_latest.deb>`__, `macOS <http://download.tinkerforge.com/kits/weather_station/macos/starter_kit_weather_station_demo_macos_latest.dmg>`__, `Source Code <https://github.com/Tinkerforge/weather-station/tree/master/demo>`__)
 
 
 Firmware updating and first tests

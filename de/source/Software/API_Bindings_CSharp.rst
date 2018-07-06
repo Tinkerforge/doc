@@ -89,7 +89,7 @@ Windows so aufgerufen werden::
 
  csc /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
 
-oder so der Mono Compiler auf Linux und Mac OS X::
+oder so der Mono Compiler auf Linux und macOS::
 
  mcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
 

@@ -80,7 +80,7 @@ Ressourcen
 ----------
 
 * Kameraschlitten-Halterungen als FreeCAD CAD Dateien (`Download <https://github.com/Tinkerforge/camera-slider/tree/master/brackets>`__)
-* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-camera-slider-demo_linux_latest.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Quelltext <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
+* :ref:`starter_kit_camera_slider_demo` (Download: `Windows <http://download.tinkerforge.com/kits/camera_slider/windows/starter_kit_camera_slider_demo_windows_latest.exe>`__, `Linux <http://download.tinkerforge.com/kits/camera_slider/linux/starter-kit-camera-slider-demo_linux_latest.deb>`__, `macOS <http://download.tinkerforge.com/kits/camera_slider/macos/starter_kit_camera_slider_demo_macos_latest.dmg>`__, `RED Brick <http://download.tinkerforge.com/kits/camera_slider/red_brick/starter_kit_camera_slider_demo_red_brick_latest.tfrba>`__, `Quelltext <https://github.com/Tinkerforge/camera-slider/tree/master/demo>`__)
 
 
 Firmware aktualisieren und erste Tests
@@ -262,7 +262,7 @@ das ein breites Spektrum an Kameras unterstützt::
 
   gphoto2 --capture-image
 
-Die Windows und Mac OS X Installer der Demo bringen gphoto2 direkt mit und das
+Die Windows und macOS Installer der Demo bringen gphoto2 direkt mit und das
 Debian Package für Linux hängt vom Debian gphoto2 Package ab.
 
 Der eingegebene Kommandozeilen-Befehl kann durch einen Klick auf den "Test"
@@ -279,7 +279,7 @@ gphoto2 Support
 """""""""""""""
 
 Üblicherweise funktioniert gphoto2 direkt unter Linux, benötigt aber etwas
-Vorbereitung unter Windows und Mac OS X.
+Vorbereitung unter Windows und macOS.
 
 Unter **Windows** hat der "Time Lapse" Tab oben einen weiteren Knopf namens
 "Start Zadig". `Zadig <http://zadig.akeo.ie/>`__ kann einen USB Treiber für
@@ -299,11 +299,11 @@ ausgewählt und auf den "Deinstallieren" Knopf geklickt werden. Danach die
 Kamera von USB abstecken und wieder anstecken. Windows sollte jetzt wieder den
 vorherigen Treiber verwenden.
 
-Auf **Mac OS X** hat der "Time Lapse" Tab oben zwei weitere Knöpfe namens
-"Enable" und "Disable". Diese deaktivieren und aktivieren Mac OS Xs eigene
+Auf **macOS** hat der "Time Lapse" Tab oben zwei weitere Knöpfe namens
+"Enable" und "Disable". Diese deaktivieren und aktivieren macOS eigene
 Behandlung für USB Kameras, die mit gphoto2 kollidiert. Klicke auf den "Enable",
 um gphoto2 zu benutzen. Klicke auf den "Disable" Knopf, wenn gphoto2 nicht mehr
-gebraucht wird und Mac OS Xs eigene Behandlung für USB Kameras wieder aktiviert
+gebraucht wird und macOS eigene Behandlung für USB Kameras wieder aktiviert
 werden soll.
 
 Timing and Bewegung

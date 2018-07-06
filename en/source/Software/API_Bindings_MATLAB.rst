@@ -63,7 +63,7 @@ Preferences folder path examples:
 
 * Windows: ``C:\Users\<user>\AppData\local\MathWorks\MATLAB\R2016a``
 * Linux: ``/home/<user>/.matlab/R2016a``
-* Mac OS X: ``/Users/<user>/.matlab/R2016a``
+* macOS: ``/Users/<user>/.matlab/R2016a``
 
 Copy the ``Tinkerforge.jar`` file from the ``matlab/`` folder to the preferences
 folder. Then the ``Tinkerforge.jar`` file has to be added to MATLAB's class path.
@@ -73,7 +73,7 @@ For example:
 
 * Windows: ``C:\Users\<user>\AppData\local\MathWorks\MATLAB\R2016a\Tinkerforge.jar``
 * Linux: ``/home/<user>/.matlab/R2016a/Tinkerforge.jar``
-* Mac OS X: ``/Users/<user>/.matlab/R2016a/Tinkerforge.jar``
+* macOS: ``/Users/<user>/.matlab/R2016a/Tinkerforge.jar``
 
 Restart MATLAB and run the following command, it should list the
 ``Tinkerforge.jar`` file:

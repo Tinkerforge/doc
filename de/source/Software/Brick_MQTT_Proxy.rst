@@ -234,13 +234,13 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
  :ref:`DC Brick <dc_brick>`                                                     | brick/dc                             | :tcpip:func:`velocity <BrickDC.get_velocity>`
                                                                                 |                                      | :tcpip:func:`current_velocity <BrickDC.get_current_velocity>`
                                                                                 |                                      | :tcpip:func:`acceleration <BrickDC.get_acceleration>`
-                                                                                |                                      | :tcpip:func:`is_enabled <BrickDC.is_enabled>`
+                                                                                |                                      | :tcpip:func:`enabled <BrickDC.is_enabled>`
                                                                                 |                                      | :tcpip:func:`pwm_frequency <BrickDC.get_pwm_frequency>`
                                                                                 |                                      | :tcpip:func:`stack_input_voltage <BrickDC.get_stack_input_voltage>`
                                                                                 |                                      | :tcpip:func:`external_input_voltage <BrickDC.get_external_input_voltage>`
                                                                                 |                                      | :tcpip:func:`current_consumption <BrickDC.get_current_consumption>`
                                                                                 |                                      | :tcpip:func:`drive_mode <BrickDC.get_drive_mode>`
-                                                                                |                                      | :tcpip:func:`is_status_led_enabled <BrickDC.is_status_led_enabled>`
+                                                                                |                                      | :tcpip:func:`status_led_enabled <BrickDC.is_status_led_enabled>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickDC.get_chip_temperature>`
                                                                                 |                                      | :tcpip:func:`velocity/set <BrickDC.set_velocity>`
                                                                                 |                                      | :tcpip:func:`acceleration/set <BrickDC.set_acceleration>`
@@ -255,7 +255,7 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
 
  :ref:`IMU Brick <imu_brick>`                                                   | brick/imu                            | :tcpip:func:`orientation <BrickIMU.get_orientation>`
                                                                                 |                                      | :tcpip:func:`quaternion <BrickIMU.get_quaternion>`
-                                                                                |                                      | :tcpip:func:`are_leds_on <BrickIMU.are_leds_on>`
+                                                                                |                                      | :tcpip:func:`leds_on <BrickIMU.are_leds_on>`
                                                                                 |                                      | :tcpip:func:`convergence_speed <BrickIMU.get_convergence_speed>`
                                                                                 |                                      | :tcpip:func:`acceleration <BrickIMU.get_acceleration>`
                                                                                 |                                      | :tcpip:func:`magnetic_field <BrickIMU.get_magnetic_field>`
@@ -265,8 +265,8 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`acceleration_range <BrickIMU.get_acceleration_range>`
                                                                                 |                                      | :tcpip:func:`magnetometer_range <BrickIMU.get_magnetometer_range>`
                                                                                 |                                      | :tcpip:func:`get_calibration/set <BrickIMU.get_calibration>`
-                                                                                |                                      | :tcpip:func:`is_orientation_calculation_on <BrickIMU.is_orientation_calculation_on>`
-                                                                                |                                      | :tcpip:func:`is_status_led_enabled <BrickIMU.is_status_led_enabled>`
+                                                                                |                                      | :tcpip:func:`orientation_calculation_on <BrickIMU.is_orientation_calculation_on>`
+                                                                                |                                      | :tcpip:func:`status_led_enabled <BrickIMU.is_status_led_enabled>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickIMU.get_chip_temperature>`
                                                                                 |                                      | :tcpip:func:`leds_on/set <BrickIMU.leds_on>`
                                                                                 |                                      | :tcpip:func:`leds_off/set <BrickIMU.leds_off>`
@@ -284,14 +284,14 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`gravity_vector <BrickIMUV2.get_gravity_vector>`
                                                                                 |                                      | :tcpip:func:`quaternion <BrickIMUV2.get_quaternion>`
                                                                                 |                                      | :tcpip:func:`all_data <BrickIMUV2.get_all_data>`
-                                                                                |                                      | :tcpip:func:`are_leds_on <BrickIMUV2.are_leds_on>`
+                                                                                |                                      | :tcpip:func:`leds_on <BrickIMUV2.are_leds_on>`
                                                                                 |                                      | :tcpip:func:`acceleration <BrickIMUV2.get_acceleration>`
                                                                                 |                                      | :tcpip:func:`magnetic_field <BrickIMUV2.get_magnetic_field>`
                                                                                 |                                      | :tcpip:func:`angular_velocity <BrickIMUV2.get_angular_velocity>`
                                                                                 |                                      | :tcpip:func:`temperature <BrickIMUV2.get_temperature>`
                                                                                 |                                      | :tcpip:func:`sensor_configuration <BrickIMUV2.get_sensor_configuration>`
                                                                                 |                                      | :tcpip:func:`sensor_fusion_mode <BrickIMUV2.get_sensor_fusion_mode>`
-                                                                                |                                      | :tcpip:func:`is_status_led_enabled <BrickIMUV2.is_status_led_enabled>`
+                                                                                |                                      | :tcpip:func:`status_led_enabled <BrickIMUV2.is_status_led_enabled>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickIMUV2.get_chip_temperature>`
                                                                                 |                                      | :tcpip:func:`leds_on/set <BrickIMUV2.leds_on>`
                                                                                 |                                      | :tcpip:func:`leds_off/set <BrickIMUV2.leds_off>`
@@ -305,13 +305,13 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`stack_current <BrickMaster.get_stack_current>`
                                                                                 |                                      | :tcpip:func:`usb_voltage <BrickMaster.get_usb_voltage>`
                                                                                 |                                      | :tcpip:func:`connection_type <BrickMaster.get_connection_type>`
-                                                                                |                                      | :tcpip:func:`is_status_led_enabled <BrickMaster.is_status_led_enabled>`
+                                                                                |                                      | :tcpip:func:`status_led_enabled <BrickMaster.is_status_led_enabled>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickMaster.get_chip_temperature>`
                                                                                 |                                      | :tcpip:func:`enable_status_led/set <BrickMaster.enable_status_led>`
                                                                                 |                                      | :tcpip:func:`disable_status_led/set <BrickMaster.disable_status_led>`
                                                                                 |                                      | :tcpip:func:`reset/set <BrickMaster.reset>`
 
- :ref:`Servo Brick <servo_brick>`                                               | brick/servo                          | :tcpip:func:`is_enabled <BrickServo.is_enabled>`
+ :ref:`Servo Brick <servo_brick>`                                               | brick/servo                          | :tcpip:func:`enabled <BrickServo.is_enabled>`
                                                                                 |                                      | :tcpip:func:`position <BrickServo.get_position>`
                                                                                 |                                      | :tcpip:func:`current_position <BrickServo.get_current_position>`
                                                                                 |                                      | :tcpip:func:`velocity <BrickServo.get_velocity>`
@@ -325,7 +325,7 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`overall_current <BrickServo.get_overall_current>`
                                                                                 |                                      | :tcpip:func:`stack_input_voltage <BrickServo.get_stack_input_voltage>`
                                                                                 |                                      | :tcpip:func:`external_input_voltage <BrickServo.get_external_input_voltage>`
-                                                                                |                                      | :tcpip:func:`is_status_led_enabled <BrickServo.is_status_led_enabled>`
+                                                                                |                                      | :tcpip:func:`status_led_enabled <BrickServo.is_status_led_enabled>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickServo.get_chip_temperature>`
                                                                                 |                                      | :tcpip:func:`enable/set <BrickServo.enable>`
                                                                                 |                                      | :tcpip:func:`disable/set <BrickServo.disable>`
@@ -346,7 +346,7 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`steps <BrickSilentStepper.get_steps>`
                                                                                 |                                      | :tcpip:func:`remaining_steps <BrickSilentStepper.get_remaining_steps>`
                                                                                 |                                      | :tcpip:func:`motor_current <BrickSilentStepper.get_motor_current>`
-                                                                                |                                      | :tcpip:func:`is_enabled <BrickSilentStepper.is_enabled>`
+                                                                                |                                      | :tcpip:func:`enabled <BrickSilentStepper.is_enabled>`
                                                                                 |                                      | :tcpip:func:`basic_configuration <BrickSilentStepper.get_basic_configuration>`
                                                                                 |                                      | :tcpip:func:`current_position <BrickSilentStepper.get_current_position>`
                                                                                 |                                      | :tcpip:func:`target_position <BrickSilentStepper.get_target_position>`
@@ -360,7 +360,7 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`driver_status <BrickSilentStepper.get_driver_status>`
                                                                                 |                                      | :tcpip:func:`time_base <BrickSilentStepper.get_time_base>`
                                                                                 |                                      | :tcpip:func:`all_data <BrickSilentStepper.get_all_data>`
-                                                                                |                                      | :tcpip:func:`is_status_led_enabled <BrickSilentStepper.is_status_led_enabled>`
+                                                                                |                                      | :tcpip:func:`status_led_enabled <BrickSilentStepper.is_status_led_enabled>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickSilentStepper.get_chip_temperature>`
                                                                                 |                                      | :tcpip:func:`max_velocity/set <BrickSilentStepper.set_max_velocity>`
                                                                                 |                                      | :tcpip:func:`speed_ramping/set <BrickSilentStepper.set_speed_ramping>`
@@ -391,7 +391,7 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`steps <BrickStepper.get_steps>`
                                                                                 |                                      | :tcpip:func:`remaining_steps <BrickStepper.get_remaining_steps>`
                                                                                 |                                      | :tcpip:func:`motor_current <BrickStepper.get_motor_current>`
-                                                                                |                                      | :tcpip:func:`is_enabled <BrickStepper.is_enabled>`
+                                                                                |                                      | :tcpip:func:`enabled <BrickStepper.is_enabled>`
                                                                                 |                                      | :tcpip:func:`current_position <BrickStepper.get_current_position>`
                                                                                 |                                      | :tcpip:func:`target_position <BrickStepper.get_target_position>`
                                                                                 |                                      | :tcpip:func:`step_mode <BrickStepper.get_step_mode>`
@@ -399,10 +399,10 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`external_input_voltage <BrickStepper.get_external_input_voltage>`
                                                                                 |                                      | :tcpip:func:`current_consumption <BrickStepper.get_current_consumption>`
                                                                                 |                                      | :tcpip:func:`decay <BrickStepper.get_decay>`
-                                                                                |                                      | :tcpip:func:`is_sync_rect <BrickStepper.is_sync_rect>`
+                                                                                |                                      | :tcpip:func:`sync_rect <BrickStepper.is_sync_rect>`
                                                                                 |                                      | :tcpip:func:`time_base <BrickStepper.get_time_base>`
                                                                                 |                                      | :tcpip:func:`all_data <BrickStepper.get_all_data>`
-                                                                                |                                      | :tcpip:func:`is_status_led_enabled <BrickStepper.is_status_led_enabled>`
+                                                                                |                                      | :tcpip:func:`status_led_enabled <BrickStepper.is_status_led_enabled>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickStepper.get_chip_temperature>`
                                                                                 |                                      | :tcpip:func:`max_velocity/set <BrickStepper.set_max_velocity>`
                                                                                 |                                      | :tcpip:func:`speed_ramping/set <BrickStepper.set_speed_ramping>`
@@ -534,11 +534,11 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
                                                                                 |                                      | :tcpip:func:`motion <BrickletGPSV2.get_motion>`
                                                                                 |                                      | :tcpip:func:`date_time <BrickletGPSV2.get_date_time>`
                                                                                 |                                      | :tcpip:func:`satellite_system_status <BrickletGPSV2.get_satellite_system_status>`
+                                                                                |                                      | :tcpip:func:`satellite_status <BrickletGPSV2.get_satellite_status>`
                                                                                 |                                      | :tcpip:func:`fix_led_config <BrickletGPSV2.get_fix_led_config>`
                                                                                 |                                      | :tcpip:func:`sbas_config <BrickletGPSV2.get_sbas_config>`
                                                                                 |                                      | :tcpip:func:`status_led_config <BrickletGPSV2.get_status_led_config>`
                                                                                 |                                      | :tcpip:func:`chip_temperature <BrickletGPSV2.get_chip_temperature>`
-                                                                                |                                      | :tcpip:func:`get_satellite_status/set <BrickletGPSV2.get_satellite_status>` (calls :tcpip:func:`get_satellite_status <BrickletGPSV2.get_satellite_status>` with the parameters provided by the *get_satellite_status/set* topic and the output of the getter being published to the *satellite_status* topic)
                                                                                 |                                      | :tcpip:func:`restart/set <BrickletGPSV2.restart>`
                                                                                 |                                      | :tcpip:func:`fix_led_config/set <BrickletGPSV2.set_fix_led_config>`
                                                                                 |                                      | :tcpip:func:`sbas_config/set <BrickletGPSV2.set_sbas_config>`
@@ -734,10 +734,8 @@ Dokumentation, aus der die Payload-Definition entnommen werden kann.
  :ref:`Piezo Speaker Bricklet <piezo_speaker_bricklet>`                         | bricklet/piezo_speaker               | :tcpip:func:`beep/set <BrickletPiezoSpeaker.beep>`
                                                                                 |                                      | :tcpip:func:`morse_code/set <BrickletPiezoSpeaker.morse_code>`
 
- :ref:`Outdoor Weather Bricklet <outdoor_weather_bricklet>`                     | bricklet/outdoor_weather             | :tcpip:func:`station_identifiers <BrickletOutdoorWeather.get_station_identifiers>`
-                                                                                |                                      | :tcpip:func:`station_data/set <BrickletOutdoorWeather.get_station_data>` (calls :tcpip:func:`get_station_data <BrickletOutdoorWeather.get_station_data>` with the parameters provided by the *get_station_data/set* topic and the output of the getter being published to the *station_data* topic)
-                                                                                |                                      | :tcpip:func:`sensor_identifiers <BrickletOutdoorWeather.get_sensor_identifiers>`
-                                                                                |                                      | :tcpip:func:`sensor_data/set <BrickletOutdoorWeather.get_sensor_data>` (calls :tcpip:func:`get_sensor_data <BrickletOutdoorWeather.get_sensor_data>` with the parameters provided by the *get_sensor_data/set* topic and the output of the getter being published to the *sensor_data* topic)
+ :ref:`Outdoor Weather Bricklet <outdoor_weather_bricklet>`                     | bricklet/outdoor_weather             | :tcpip:func:`station_data <BrickletOutdoorWeather.get_station_data>`
+                                                                                |                                      | :tcpip:func:`sensor_data <BrickletOutdoorWeather.get_sensor_data>`
 
  :ref:`PTC Bricklet <ptc_bricklet>`                                             | bricklet/ptc                         | :tcpip:func:`temperature <BrickletPTC.get_temperature>`
                                                                                 |                                      | :tcpip:func:`resistance <BrickletPTC.get_resistance>`

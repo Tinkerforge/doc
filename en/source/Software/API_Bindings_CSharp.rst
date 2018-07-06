@@ -86,7 +86,7 @@ like this on Windows::
 
  csc /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
 
-and the Mono Compiler like this on Linux and Mac OS X::
+and the Mono Compiler like this on Linux and macOS::
 
  mcs /target:exe /out:Example.exe /reference:Tinkerforge.dll ExampleConfiguration.cs
 

@@ -99,12 +99,12 @@ Brick Viewer ermittelt werden:
   private static final String UID = "XYZ"; // Change to your UID
 
 Im ``example_project/`` Ordner kann jetzt der Java Compiler mit den folgenden
-Parametern auf Windows aufgerufen werden (für Linux und Mac OS X das ``;`` im
+Parametern auf Windows aufgerufen werden (für Linux und macOS das ``;`` im
 Class Path durch ``:`` ersetzen)::
 
  javac -cp Tinkerforge.jar;. ExampleConfiguration.java
 
-Und ausgeführt wird es mit dem folgenden Befehl (für Linux und Mac OS X wieder
+Und ausgeführt wird es mit dem folgenden Befehl (für Linux und macOS wieder
 das ``;`` im Class Path durch ``:`` ersetzen)::
 
  java -cp Tinkerforge.jar;. ExampleConfiguration

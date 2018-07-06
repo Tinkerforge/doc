@@ -8,7 +8,7 @@ import urllib2
 import math
 from collections import namedtuple
 
-sys.path.append(os.path.join(os.getcwd(), '..', '..', 'generators'))
+sys.path.append(os.path.join(os.path.split(__file__)[0], '../generators'))
 from device_infos import DeviceInfo, brick_infos, bricklet_infos
 
 lang = 'en'
@@ -307,9 +307,9 @@ def make_download_tools_table():
 """
     }
 
-    row_brickd = ' :ref:`{0} <{1}>` | Linux (`amd64 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_amd64.deb>`__, `i386 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_i386.deb>`__, `armhf <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_armhf.deb>`__, `RED Brick <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}+redbrick_armhf.deb>`__), `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
-    row_brick_logger = ' :ref:`{0} <{1}>` | `Linux, Mac OS X, Windows <http://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.zip>`__, `RED Brick <http://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.tfrba>`__, `{2} <https://github.com/Tinkerforge/brickv/archive/brick-logger-{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/brickv/master/src/changelog.brick-logger>`__'
-    row_other = ' :ref:`{0} <{1}>` | `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
+    row_brickd = ' :ref:`{0} <{1}>` | Linux (`amd64 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_amd64.deb>`__, `i386 <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_i386.deb>`__, `armhf <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_armhf.deb>`__, `RED Brick <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}+redbrick_armhf.deb>`__), `macOS <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
+    row_brick_logger = ' :ref:`{0} <{1}>` | `Linux, macOS, Windows <http://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.zip>`__, `RED Brick <http://download.tinkerforge.com/tools/{1}/{1}_{4}_{5}_{6}.tfrba>`__, `{2} <https://github.com/Tinkerforge/brickv/archive/brick-logger-{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/brickv/master/src/changelog.brick-logger>`__'
+    row_other = ' :ref:`{0} <{1}>` | `Linux <http://download.tinkerforge.com/tools/{1}/linux/{1}-{4}.{5}.{6}_all.deb>`__, `macOS <http://download.tinkerforge.com/tools/{1}/macos/{1}_macos_{4}_{5}_{6}.dmg>`__, `Windows <http://download.tinkerforge.com/tools/{1}/windows/{1}_windows_{4}_{5}_{6}.exe>`__, `{2} <https://github.com/Tinkerforge/{1}/archive/v{4}.{5}.{6}.zip>`__ | {4}.{5}.{6} | `{3} <http://download.tinkerforge.com/tools/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{1}/master/src/changelog>`__'
     rows = []
 
     for tool_info in tool_infos:
@@ -534,7 +534,7 @@ def make_download_kits_table():
 """
     }
 
-    row = ' :ref:`{0} <starter_kit_{1}>` | `Linux <http://download.tinkerforge.com/kits/{1}/linux/starter-kit-{2}-demo-{5}.{6}.{7}_all.deb>`__, `Mac OS X <http://download.tinkerforge.com/kits/{1}/macos/starter_kit_{1}_demo_macos_{5}_{6}_{7}.dmg>`__, `Windows <http://download.tinkerforge.com/kits/{1}/windows/starter_kit_{1}_demo_windows_{5}_{6}_{7}.exe>`__, `{3} <https://github.com/Tinkerforge/{2}/archive/demo-{5}.{6}.{7}.zip>`__ | {5}.{6}.{7} | `{4} <http://download.tinkerforge.com/kits/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{2}/master/demo/changelog>`__'
+    row = ' :ref:`{0} <starter_kit_{1}>` | `Linux <http://download.tinkerforge.com/kits/{1}/linux/starter-kit-{2}-demo-{5}.{6}.{7}_all.deb>`__, `macOS <http://download.tinkerforge.com/kits/{1}/macos/starter_kit_{1}_demo_macos_{5}_{6}_{7}.dmg>`__, `Windows <http://download.tinkerforge.com/kits/{1}/windows/starter_kit_{1}_demo_windows_{5}_{6}_{7}.exe>`__, `{3} <https://github.com/Tinkerforge/{2}/archive/demo-{5}.{6}.{7}.zip>`__ | {5}.{6}.{7} | `{4} <http://download.tinkerforge.com/kits/{1}/>`__ | `Changelog <https://raw.githubusercontent.com/Tinkerforge/{2}/master/demo/changelog>`__'
     rows = []
 
     for kit_info in kit_infos:

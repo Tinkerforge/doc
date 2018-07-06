@@ -72,46 +72,6 @@ automatisch gestartet.
 Aus Quelltext
 -------------
 
-Um den Brick Daemon aus dem Quelltext zu installieren, muss
-der `Quellcode von GitHub <https://github.com/Tinkerforge/brickd>`__
-geclont/heruntergeladen werden::
-
- git clone https://github.com/Tinkerforge/brickd
-
-Brick Daemon benutzt die Tinkerforge daemonlib. Deren `Quellcode von GitHub
-<https://github.com/Tinkerforge/daemonlib>`__ muss in den ``src/`` Ordner des
-brickd Clones geclont/heruntergeladen werden::
-
- cd src/
- git clone https://github.com/Tinkerforge/daemonlib
-
-Es müssen folgende Abhängigkeiten installiert werden:
-
-* libusb-1.0
-* libudev (optional für USB Hotplug)
-* pm-utils (optional für Suspend/Resume Behandlung)
-
-Auf Debian basierten Distributionen können die Abhängigkeiten mit apt-get
-installiert werden::
-
- sudo apt-get install build-essential pkg-config libusb-1.0-0-dev libudev-dev pm-utils
-
-Auf Fedora können die Abhängigkeiten mit yum installiert werden::
-
- sudo yum groupinstall "Development Tools"
- sudo yum install libusb1-devel libudev-devel pm-utils-devel
-
-Auf anderen Distributionen muss nach den äquivalenten Paketen gesucht werden.
-
-Der Brick Daemon kann mit den folgenden Befehlen compiliert und installiert
-werden::
-
- cd src/brickd/
- make
- sudo make install
-
-Die folgenden Befehle registrieren brickd für Autostart auf Debian basierten
-Distributionen und starten brickd::
-
- sudo update-rc.d brickd defaults
- sudo /etc/init.d/brickd start
+In dieser `README <https://github.com/Tinkerforge/brickd/blob/master/README.rst>`__
+sind die nötigen Schritte beschrieben, um den Brick Daemon aus dem Quelltext zu
+installieren.

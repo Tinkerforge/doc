@@ -211,7 +211,7 @@ The KISYS3DMOD path has to be adapted in order to view the circuit board with th
 3. Change the KISYS3DMOD path to ``$HOME/tf/kicad-libraries/3d/`` (the path has to be specified as absolute)
 4. Restart KiCad
 
-KiCad is also available for Windows and Mac OS X.
+KiCad is also available for Windows and macOS.
 
 Create 3D Models
 ----------------
@@ -245,7 +245,7 @@ Bricklet with::
 
  freecad ~/tf/cases/ambient_light/ambient_light.fcstd
 
-FreeCAD is also available for Windows and Mac OS X.
+FreeCAD is also available for Windows and macOS.
 
 Documentation
 -------------

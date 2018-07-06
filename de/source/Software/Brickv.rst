@@ -23,14 +23,14 @@ Installation
 
 * :ref:`Windows <brickv_install_windows>`
 * :ref:`Linux <brickv_install_linux>`
-* :ref:`Mac OS X <brickv_install_macosx>`
+* :ref:`macOS <brickv_install_macos>`
 
 .. toctree::
    :hidden:
 
    Windows <Brickv_Install_Windows>
    Linux <Brickv_Install_Linux>
-   Mac OS X <Brickv_Install_MacOSX>
+   macOS <Brickv_Install_MacOSX>
 
 
 Verwendung
@@ -162,7 +162,7 @@ richtig als serielle Schnittstelle erkannt:
   <http://www.embedded-it.de/en/microcontroller/eNet-sam7X.php>`__
   zu installieren, damit ein Brick im Bootloader Modus richtig funktioniert.
 
-* Auf **Mac OS X** kann einen Brick im Bootloader Modus als DVB-T Stick erkannt
+* Auf **macOS** kann einen Brick im Bootloader Modus als DVB-T Stick erkannt
   und automatisch EyeTV oder ein ähnliches Programm gestartet werden. Dann
   einfach EyeTV schließen und mit dem Flash-Vorgang fortfahren.
 
@@ -172,7 +172,7 @@ Brick Viewer ausgewählt werden, typische Namen sind:
 * Windows: "AT91 USB to Serial Converter" oder "GPS Camera Detect" oder
   "Bossa Program Port"
 * Linux: ``/dev/ttyACM0`` oder ``/dev/ttyUSB0``
-* Mac OS X: ``/dev/tty.usbmodemfd131``
+* macOS: ``/dev/tty.usbmodemfd131``
 
 Flashen
 """""""

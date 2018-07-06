@@ -1,10 +1,10 @@
 
-.. _brickd_install_macosx:
+.. _brickd_install_macos:
 
-Brick Daemon Installation auf Mac OS X
-======================================
+Brick Daemon Installation auf macOS
+===================================
 
-**Voraussetzungen**: Mac OS X 10.8 (Mountain Lion) oder neuer
+**Voraussetzungen**: macOS 10.8 (Mountain Lion) oder neuer
 
 Der :ref:`Brick Daemon <brickd>` kann mittels einer ``.dmg`` Datei
 installiert werden.
@@ -29,13 +29,13 @@ angezeigt werden für Brick Daemon 2.0.8 und ältere Versionen angezeigt werden:
 
 .. image:: /Images/Screenshots/brickd_macos_not_signed_1_small.jpg
    :scale: 100 %
-   :alt: Brickd Installation: Fehlermeldung unter Mac OS X Mountain Lion
+   :alt: Brickd Installation: Fehlermeldung unter macOS Mountain Lion
    :align: center
    :target: ../_images/Screenshots/brickd_macos_not_signed_1.jpg
 
-Seit Mac OS X Mountain Lion kann ausschließlich signierte Software installiert
+Seit macOS Mountain Lion kann ausschließlich signierte Software installiert
 werden. Der Brick Daemon Installer ist erst seit Version 2.0.9 signiert. Für
-Version 2.0.8 und älter kann es passieren, dass Mac OS X beim Versuch den
+Version 2.0.8 und älter kann es passieren, dass macOS beim Versuch den
 Installer zu starten die obige Fehlermeldung anzeigt. Um Version 2.0.8 oder
 älter installieren zu können müssen die Sicherheitseinstellungen kurzzeitig
 abgeschwächt werden, unter:
@@ -44,12 +44,12 @@ abgeschwächt werden, unter:
 * Sicherheit
 * Programme aus folgenden Quellen erlauben: Keine Einschränkungen
 
-Jetzt noch einmal auf ``INSTALL`` klicken. Möglicherweise zeigt Mac OS X
+Jetzt noch einmal auf ``INSTALL`` klicken. Möglicherweise zeigt macOS
 Mountain Lion die folgende Warnung an:
 
 .. image:: /Images/Screenshots/brickd_macos_not_signed_2_small.jpg
    :scale: 100 %
-   :alt: Brickd installation: Warnung auf Mac OS X Mountain Lion
+   :alt: Brickd installation: Warnung auf macOS Mountain Lion
    :align: center
    :target: ../_images/Screenshots/brickd_macos_not_signed_2.jpg
 

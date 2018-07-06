@@ -95,12 +95,12 @@ connected Stepper Brick, which you can figure out using Brick Viewer:
   private static final String UID = "XYZ"; // Change to your UID
 
 Now we can execute the Java compiler in the ``example_project/`` folder like
-this on Windows (replace ``;`` in class path with ``:`` on Linux and Mac OS X)::
+this on Windows (replace ``;`` in class path with ``:`` on Linux and macOS)::
 
  javac -cp Tinkerforge.jar;. ExampleConfiguration.java
 
 and run it with the following parameters on Windows (replace ``;`` in
-class path with ``:`` on Linux and Mac OS X again)::
+class path with ``:`` on Linux and macOS again)::
 
  java -cp Tinkerforge.jar;. ExampleConfiguration
 

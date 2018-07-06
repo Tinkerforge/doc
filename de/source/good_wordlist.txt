@@ -262,3 +262,5 @@ UIDs
 WebSocket
 WebSockets
 Stoppbits
+IPConnection
+DMX
