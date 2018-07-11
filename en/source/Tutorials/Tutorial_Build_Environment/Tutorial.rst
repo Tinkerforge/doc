@@ -37,6 +37,28 @@ If you have an environment set-up with the script above, you can:
 In the following we will assume that a build environment is set-up with
 the above script.
 
+Docker
+------
+
+The ``build_environment_setup.sh`` script will create a complete build environment
+on the local system. Internally at Tinkerforge we use a build environment inside a
+Docker container for the Brick/Bricklet firmwares and Brick Daemon. This ensures
+reproducible builds across all PCs and also the Jenkins build/test server.
+
+If you have the ``tinkerforge/build_environment_c`` docker container installed, the
+Makefiles of the firmwares will detect that and automatically compile with the docker
+container.
+
+You can install the docker container with::
+
+ apt-get install docker.io        # For Debian based distributions
+ sudo usermod -aG docker <USER>   # Replace <USER> by the user that should be able to compile
+                                  # through docker. You have to log in/out once after this
+ docker pull tinkerforge/build_environment_c
+
+If you want to compile Brick/Bricklet firmware with the docker container, the only 
+dependency for the host system is GNU make.
+
 Brick Firmwares
 ---------------
 
@@ -45,12 +67,10 @@ and generate the ``Makefile`` (e.g. for the Master Brick)::
 
  cd ~/tf/master-brick/software/src/
  ln -sf ../../../bricklib/ .
- cd ~/tf/master-brick/software/
- ./generate_makefile
 
 Then you can build the source with a normal ``make`` call::
 
- cd ~/tf/master-brick/software/build
+ cd ~/tf/master-brick/software
  make
 
 The build firmware will be available in the ``software/build/`` directory.
@@ -68,12 +88,10 @@ and the ``brickletlib`` and generate the ``Makefile``
  cd ~/tf/temperature-bricklet/software/src/
  ln -sf ../../../bricklib/ .
  ln -sf ../../../brickletlib/ .
- cd ~/tf/temperature-bricklet/software/
- ./generate_makefile
 
 Then you can build the source with a normal ``make`` call::
 
- cd ~/tf/temperature-bricklet/software/build
+ cd ~/tf/temperature-bricklet/software
  make
 
 The build firmware will be available in the ``software/build/`` directory.
@@ -95,8 +113,6 @@ To compile a Co-Processor Bricklet firmware you first have to link in the
 
  cd ~/tf/humidity-v2-bricklet/software/src/
  ln -sf ../../../bricklib2/ .
- cd ~/tf/humidity-v2-bricklet/software/
- ./generate_makefile
 
 The Co-Processor Bricklets automatically compile there own bootstrapper and
 bootloader. You have to clone the ``brickletboot_xmc`` and 
@@ -112,7 +128,7 @@ environment this is in ``~/tf/``. Please make sure to also symlink the
 
 Then you can build the source with a normal ``make`` call::
 
- cd ~/tf/humidity-v2-bricklet/software/build
+ cd ~/tf/humidity-v2-bricklet/software
  make
 
 The build firmware will be available in the ``software/build/`` directory.
