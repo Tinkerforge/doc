@@ -39,6 +39,29 @@ Mit einer Umgebung welche mit dem obigen Skript aufgesetzt ist, kann man:
 Im folgenden gehen wir davon aus das eine Build-Umgebung mit dem obigen
 Skript aufgesetzt wurde.
 
+Docker
+------
+
+Das ``build_environment_setup.sh``-Skript erstellt eine komplette Build-Umgebung auf
+dem lokalen System. Intern bei Tinkerforge nutzen wir eine Build-Umgebung in einem
+Docker-Container für alle Brick/Bricklet Firmwares und den Brick Daemon. Dies stellt
+sicher, dass die Builds auf allen PCs und auch auf dem Jenkins Build/Test Server
+reproduzierbar sind.
+
+Wenn der ``tinkerforge/build_environment_c`` Docker-Container installiert ist, wird
+dies von den Makefiles der Firmwares automatisch erkannt und die Kompilierung findet 
+über den Docker-Container statt.
+
+Unser Docker-Container kann wie folgt installiert werden::
+
+ apt-get install docker.io        # For Debian based distributions
+ sudo usermod -aG docker <USER>   # Replace <USER> by the user that should be able to compile
+                                  # through docker. You have to log in/out once after this
+ docker pull tinkerforge/build_environment_c
+
+Wenn die Brick/Bricklet Firmwares mit dem Docker-Container kompiliert werden, ist
+die einzige Abhängigkeit für das Host-System GNU make.
+
 Brick Firmwares
 ---------------
 
@@ -48,12 +71,10 @@ Beispiel für den Master Brick)::
 
  cd ~/tf/master-brick/software/src/
  ln -sf ../../../bricklib/ .
- cd ~/tf/master-brick/software/
- ./generate_makefile
 
 Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 
- cd ~/tf/master-brick/software/build
+ cd ~/tf/master-brick/software
  make
 
 Die gebaute Firmware liegt im ``software/build/`` Verzeichnis. In diesem
@@ -73,13 +94,10 @@ und ``brickletlib`` gesetzt werden sowie eine ``Makefile`` generiert werden
  cd ~/tf/temperature-bricklet/software/src/
  ln -sf ../../../bricklib/ .
  ln -sf ../../../brickletlib/ .
- cd ~/tf/temperature-bricklet/software/
- ./generate_makefile
-
 
 Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 
- cd ~/tf/temperature-bricklet/software/build
+ cd ~/tf/temperature-bricklet/software
  make
 
 Das gebaute Plugin liegt im ``software/build/`` Verzeichnis. In diesem
@@ -104,8 +122,6 @@ zur ``bricklib2`` gesetzt sowie eine ``Makefile`` generiert werden
 
  cd ~/tf/humidity-v2-bricklet/software/src/
  ln -sf ../../../bricklib2/ .
- cd ~/tf/humidity-v2-bricklet/software/
- ./generate_makefile
 
 Das Co-Prozessor Bricklet baut automatisch seinen eigenen Bootloader sowie
 Bootstrapper mit. Dafür müssen die gits ``brickletboot_xmc`` und 
@@ -121,7 +137,7 @@ Für diese gits muss auch ein Symlink auf die ``bricklib2`` gesetzt werden::
 
 Dann kann der Quellcode mit einem normalen ``make`` Aufruf gebaut werden::
 
- cd ~/tf/temperature-bricklet/software/build
+ cd ~/tf/temperature-bricklet/software
  make
 
 Das gebaute Plugin liegt im ``software/build/`` Verzeichnis. In diesem
