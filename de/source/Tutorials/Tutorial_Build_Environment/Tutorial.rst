@@ -230,7 +230,7 @@ KiCad funktioniert auch auf Windows und macOS.
 3D Modelle erzeugen
 -------------------
 
-Im Hardwareordner der Bricks und Bricklets befinden sich ``*.step`` - Dateien der Bricks und Bricklets.
+Im Hardwareordner der Bricks und Bricklets befinden sich ``*.step`` und ``*.FCStd`` - Dateien der Bricks und Bricklets.
 Diese wurden erzeugt mit dem FreeCAD Skript `StepUp Tools <https://sourceforge.net/projects/kicadstepup/>`__.
 
 Um das Skript benutzen zu können, müssen einige Änderungen vorgenommen werden:
@@ -239,13 +239,20 @@ Um das Skript benutzen zu können, müssen einige Änderungen vorgenommen werden
 2. Einen Symlink auf das ``kicad-libraries``-git setzten (Beispiel: siehe oben)
 3. Ändern des KISYS3DMOD Pfades auf ``$HOME/tf/kicad-libraries/3d/`` (Der Pfad muss in KiCad absolut angegeben werden)
 4. Kopieren des `Skriptes <https://github.com/Tinkerforge/kicad-libraries/blob/master/3d/Scripts/kicad-StepUp-tools.FCMacro>`__ in den Ordner, in welchem sich die umzuwandelnde ``*.kicad-pcb`` befindet.
-5. Das Skript einmal starten mit: ``freecad kicad-StepUp-tools.FCMacro #brickname#``
+5. Das Skript einmal starten mit::
+
+ freecad kicad-StepUp-tools.FCMacro #brick(let)name#
+
 6. Anpassen des ``prefix3D`` Pfades in der ``ksu-config.ini`` Datei zu ``$HOME/tf/kicad-libraries/3d/`` (Hier auch wieder als absoluten Pfad!)
 7. Das Skript erneut starten.
 
 Das Skript erzeugt eine ``*.step`` und eine ``*.FCStd`` - Projektdatei.
 
-Die vollständige Dokumentation findet sich `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__.
+Das FreeCAD Makro ``kicad-StepUp-tools.FCMacro`` kann auch direkt in FreeCAD geöffnet werden um damit die erforderlichen ``*.wrl`` und ``*.step`` - Dateien zu erzeugen, die benötigt werden um im 3d Viewer von KiCad korrekt angezeigt zu werden (*.wrl) sowie die (*.step) für die 
+Ausführung des Scriptes. Mithilfe des Makros kann auch einfach die X/Y/Z-Achsen Ausrichtung vorgenommen werden sowie KiCad footprints laden, die als Basis dienen können für selbst erstellte 3D-Modelle.
+
+Die vollständige Dokumentation findet sich `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__. Desweiteren gibt es `hier <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-cheat-sheet.pdf>`__ 
+ein Cheat-Sheet mit einer Kurzübersicht über die wichtigsten Funktionen.
 
 Gehäuse CAD Dateien
 -------------------

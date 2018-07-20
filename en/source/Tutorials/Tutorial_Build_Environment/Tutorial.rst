@@ -216,7 +216,7 @@ KiCad is also available for Windows and macOS.
 Create 3D Models
 ----------------
 
-In the hardware folders of the bricks and bricklet are ``*.step`` - files.
+In the hardware folders of the bricks and bricklet are ``*.step`` and ``*.FCStd`` - files.
 These were created using the FreeCAD script `StepUp Tools <https://sourceforge.net/projects/kicadstepup/>`__.
 
 Before using the script a few things have to be adapted:
@@ -225,13 +225,20 @@ Before using the script a few things have to be adapted:
 2. Set a symlink to ``kicad-libraries``-git (example: see above)
 3. Change the KISYS3DMOD path to ``$HOME/tf/kicad-libraries/3d/`` (all paths have to be absolute in KiCad!)
 4. Copy the `script <https://github.com/Tinkerforge/kicad-libraries/blob/master/3d/Scripts/kicad-StepUp-tools.FCMacro>`__ into the folder where the ``*.kicad-pcb`` is you would convert to 3d.
-5. Run the script once with ``freecad kicad-StepUp-tools.FCMacro #brickname#``
+5. Run the script once with::
+
+ freecad kicad-StepUp-tools.FCMacro #brick(let)name#
+
 6. Adapt the ``prefix3D`` path in ``ksu-config.ini`` file to ``$HOME/tf/kicad-libraries/3d/`` (absolute again!)
 7. Run the script again
 
 The script creates a ``*.step`` and a ``*.FCStd`` -project file.
 
-The complete documentation can be found `here <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__.
+The FreeCAD Macro ``kicad-StepUp-tools.FCMacro`` can be opened directly in FreeCAD for generating the required ``*.wrl`` und ``*.step`` - files. The (*.wrl) file is needed for displaying the model in KiCad 3D Viewer and the (*.step) file for 
+running the script. It is very easy to align the X/Y/Z axis with the macro. It is also possible to load KiCad footprints which can be used as starting point for self made 3d models. 
+
+The complete documentation can be found `here <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-starter-Guide.pdf>`__. A cheat-sheet with a short overview about
+the most important functions can be found `here <https://github.com/Tinkerforge/kicad-libraries/raw/master/3d/Scripts/kicadStepUp-cheat-sheet.pdf>`__.
 
 Case CAD Files
 --------------
