@@ -118,7 +118,7 @@ Erster Test
    :target: ../../_images/Bricklets/bricklet_distance_ir_master_1200.jpg
 
 |test_tab|
-Wenn alles wie erwartet funktioniert wird die gemessen Distanz und die
+Wenn alles wie erwartet funktioniert wird die gemessene Distanz und die
 Ausgangsspannung des Sensors angezeigt.
 Der Graph gibt den zeitlichen Verlauf der Distanz wieder.
 Das folgende Bild entstand durch langsames auf den Sensor zu und wieder
