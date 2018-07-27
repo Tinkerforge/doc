@@ -31,8 +31,10 @@ Industrial Digital Out 4 Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* 4 channel digital output
+* Output voltages up to 36V
+* Galvanically isolated
+* Status LED per channel
 
 
 .. _industrial_digital_out_4_v2_bricklet_description:
@@ -40,7 +42,15 @@ Features
 Description
 -----------
 
-TBD
+The Industrial Digital Out 4 :ref:`Bricklet <primer_bricklets>` 2.0 can be used to
+extend :ref:`Bricks <primer_bricks>` by four galvanically isolated digital outputs.
+The outputs have to be supplied externally with a voltage of up to
+36 `Volt <https://en.wikipedia.org/wiki/Volt>`__.
+Output isolation permits the usage without a direct electric connection, 
+such that ground loops can be prevented and an additional degree of safety is added.
+
+Typical applications are the interfacing of industrial controllers, such as PLC's or frequency converters,
+or the usage in environments were electrical ground levels can not be connected.
 
 
 Technical Specifications
@@ -49,14 +59,17 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Current Consumption               30mW (6mA at 5V)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+External Voltage Supply           Up to 36V
+Output Type                       Four operational amplifier outputs
+Maximum Output Current            25mA (per output pin)
+Isolation                         5000Vrms (optocoupler value)
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            40 x 40 x 14mm (1.57 x 1.57 x 0.55")
+Weight                            10g
 ================================  ============================================================
 
 
@@ -68,6 +81,20 @@ Resources
 * Source code and design files (`Download <https://github.com/Tinkerforge/industrial-digital-out-4-v2-bricklet/zipball/master>`__)
 * 3D model (`View online <TBD>`__ | Download: `STEP <http://download.tinkerforge.com/3d/TBD/TBD.step>`__, `FreeCAD <http://download.tinkerforge.com/3d/TBD/TBD.FCStd>`__)
 
+Connectivity
+------------
+
+The Industrial Digital Out 4 Bricklet 2.0 has an 8 pole terminal.
+Please see the picture below for the pinout.
+
+TODO: Update image
+
+.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_caption_600.jpg
+   :scale: 100 %
+   :alt: Industrial Digital Out 4 Bricklet 2.0 pinout
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_caption_1200.jpg
+
 
 .. _industrial_digital_out_4_v2_bricklet_test:
 
@@ -77,9 +104,19 @@ Test your Industrial Digital Out 4 Bricklet 2.0
 |test_intro|
 
 |test_connect|.
+Additionally connect a voltage source to power the Bricklet and a load
+you want to switch. For testing purposes we have connected a battery
+and a LED (see picture below).
+
+.. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_setup_600.jpg
+   :scale: 100 %
+   :alt: Industrial Digital Out 4 Bricklet setup
+   :align: center
+   :target: ../../_images/Bricklets/bricklet_industrial_digital_out_4_setup_1200.jpg
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can switch the LED by changing the output
+state with the Brick Viewer.
 
 .. image:: /Images/Bricklets/bricklet_industrial_digital_out_4_v2_brickv.jpg
    :scale: 100 %
@@ -95,27 +132,26 @@ If everything went as expected ... TBD.
 Case
 ----
 
-..
-	A `laser-cut case for the Industrial Digital Out 4 Bricklet 2.0
-	<https://www.tinkerforge.com/en/shop/cases/case-industrial-digital-out-4-v2-bricklet.html>`__ is available.
+A `laser-cut case for the Industrial Digital Out 4 Bricklet 2.0
+<https://www.tinkerforge.com/en/shop/cases/case-industrial-bricklet.html>`__ is available.
 
-	.. image:: /Images/Cases/bricklet_industrial_digital_out_4_v2_case_350.jpg
-	   :scale: 100 %
-	   :alt: Case for Industrial Digital Out 4 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Cases/bricklet_industrial_digital_out_4_v2_case_1000.jpg
+.. image:: /Images/Cases/bricklet_industrial_case_350.jpg
+   :scale: 100 %
+   :alt: Case for Industrial Digital Out 4 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Cases/bricklet_industrial_case_1000.jpg
 
-	.. include:: Industrial_Digital_Out_4_V2.substitutions
-	   :start-after: >>>bricklet_case_steps
-	   :end-before: <<<bricklet_case_steps
+.. include:: Industrial_Digital_Out_4_V2.substitutions
+   :start-after: >>>bricklet_case_steps
+   :end-before: <<<bricklet_case_steps
 
-	.. image:: /Images/Exploded/industrial_digital_out_4_v2_exploded_350.png
-	   :scale: 100 %
-	   :alt: Exploded assembly drawing for Industrial Digital Out 4 Bricklet 2.0
-	   :align: center
-	   :target: ../../_images/Exploded/industrial_digital_out_4_v2_exploded.png
+.. image:: /Images/Exploded/industrial_exploded_350.png
+   :scale: 100 %
+   :alt: Exploded assembly drawing for Industrial Digital Out 4 Bricklet 2.0
+   :align: center
+   :target: ../../_images/Exploded/industrial_exploded.png
 
-	|bricklet_case_hint|
+|bricklet_case_hint|
 
 
 .. _industrial_digital_out_4_v2_bricklet_programming_interface:
