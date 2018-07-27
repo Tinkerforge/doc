@@ -31,8 +31,8 @@ Dual Button Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Two tactile buttons with built-in blue LEDs
+* LED auto-toggle possible
 
 
 .. _dual_button_v2_bricklet_description:
@@ -40,7 +40,15 @@ Features
 Description
 -----------
 
-TBD
+The Dual Button :ref:`Bricklet <primer_bricklets>` 2.0 is equipped with
+two buttons and can extend :ref:`Bricks <primer_bricks>`. Both buttons have a 
+built-in blue LED. You can read the current state of the button 
+(pressed/released) and of the LED (on/off). You can turn the LED on/off yourself 
+or enable auto-toggle. In auto-toggle mode the LEDs are toggled between on/off 
+with each button press.
+
+It is also possible to use events. This allows to react to button presses
+without polling.
 
 
 Technical Specifications
@@ -49,14 +57,17 @@ Technical Specifications
 ================================  ============================================================
 Property                          Value
 ================================  ============================================================
-Current Consumption               TBDmA
+Current Consumption               27mW (5.4mA at 5V) + 3mW per active LED
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-P TBD                             V TBD
+Button Type                       Tactile Button with LED
+Button Operating Force            150gf
+Button Travel Distance            2.5mm
+LED Color                         Blue
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Dimensions (W x D x H)            TBD x TBD x TBDmm (TBD x TBD x TBD")
-Weight                            TBDg
+Dimensions (W x D x H)            45 x 20 x 10mm (1.77 x 0.79 x 0.39")
+Weight                            5.5g
 ================================  ============================================================
 
 
@@ -79,7 +90,8 @@ Test your Dual Button Bricklet 2.0
 |test_connect|.
 
 |test_tab|
-If everything went as expected ... TBD.
+If everything went as expected you can now see button presses and
+change the state of the LED.
 
 .. image:: /Images/Bricklets/bricklet_dual_button_v2_brickv.jpg
    :scale: 100 %

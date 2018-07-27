@@ -31,8 +31,8 @@ Dual Button Bricklet 2.0
 Features
 --------
 
-* TBD
-* TBD
+* Zwei Taster mit eingebauten blauen LEDs
+* Auto-Toggle der LEDs möglich
 
 
 .. _dual_button_v2_bricklet_description:
@@ -40,7 +40,16 @@ Features
 Beschreibung
 ------------
 
-TBD
+Das Dual Button :ref:`Bricklet <primer_bricklets>` 2.0 ist mit zwei
+Drucktastern ausgestattet und kann :ref:`Bricks <primer_bricks>` um diese 
+erweitern. Beide Taster haben eine eingebaute blaue LED. Der
+aktuelle Zustand der Taster (gedrückt/nicht gedrückt) und der LEDs (an/aus) kann
+jederzeit ausgelesen werden. Es ist möglich die LEDs selbst an/aus zu schalten
+sowie Auto-Toggle zu aktivieren. Im Auto-Toggle Modus werden die LEDs
+automatisch bei jedem Tastendruck umgeschaltet.
+
+Es ist auch möglich Events zu nutzen. Dadurch kann auf einen
+Tastendruck reagiert werden ohne zu pollen.
 
 
 Technische Spezifikation
@@ -49,14 +58,17 @@ Technische Spezifikation
 ================================  ============================================================
 Eigenschaft                       Wert
 ================================  ============================================================
-Stromverbrauch                    TBDmA
+Stromverbrauch                    27mW (5.4mA bei 5V) + 3mW pro aktiver LED
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-E TBD                             W TBD
+Taster Typ                        Drucktaster mit LED
+Taster Betätigungskraft           150gf
+Taster Bewegungsdistanz           2,5mm
+LED Farbe                         Blau
 --------------------------------  ------------------------------------------------------------
 --------------------------------  ------------------------------------------------------------
-Abmessungen (B x T x H)           TBD x TBD x TBDmm (TBD x TBD x TBD")
-Gewicht                           TBDg
+Abmessungen (B x T x H)           45 x 20 x 10mm (1,77 x 0,79 x 0,39")
+Gewicht                           5.5g
 ================================  ============================================================
 
 
@@ -79,7 +91,8 @@ Erster Test
 |test_connect|.
 
 |test_tab|
-Wenn alles wie erwartet funktioniert ... TBD.
+Wenn alles wie erwartet funktioniert können nun Tastendrücke beobachtet 
+werden sowie die Zustände der LEDs verändert werden.
 
 .. image:: /Images/Bricklets/bricklet_dual_button_v2_brickv.jpg
    :scale: 100 %
