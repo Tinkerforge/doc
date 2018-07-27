@@ -50,6 +50,8 @@ with each button press.
 It is also possible to use events. This allows to react to button presses
 without polling.
 
+The Dual Button Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------

@@ -62,6 +62,8 @@ Typically these types of sensors are used in robotics to measure distances
 for mapping or localization purposes. But you can also use this sensors in
 other applications, such as a finding out if a door is opened or closed.
 
+The Distance IR Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------

@@ -52,6 +52,8 @@ such that ground loops can be prevented and an additional degree of safety is ad
 Typical applications are the interfacing of industrial controllers, such as PLC's or frequency converters,
 or the usage in environments were electrical ground levels can not be connected.
 
+The Industrial Digital Out 4 Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------

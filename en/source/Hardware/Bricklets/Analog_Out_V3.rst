@@ -56,6 +56,8 @@ a supply voltage of at least 12V.
 For output voltages below 5V, you can :ref:`connect the 5V and VIN terminals
 <analog_out_v3_bricklet_connectivity>`.
 
+The Analog Out Bricklet 3.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------

@@ -49,6 +49,8 @@ The measured temperature can be read out in `°C
 With configurable events it is possible to react on changing
 temperatures without polling.
 
+The Temperature Bricklet 2.0 has a 7 pole Bricklet connector and is connected to a
+Brick with a ``7p-10p`` Bricklet cable.
 
 Technical Specifications
 ------------------------
